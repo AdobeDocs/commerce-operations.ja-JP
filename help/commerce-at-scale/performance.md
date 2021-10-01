@@ -1,7 +1,7 @@
 ---
-title: AEM Performance Optimizations
+title: AEM Performance Optimization
 description: デフォルトのAdobe Experience Manager設定を最適化して、Adobeコマースで高い負荷をサポートします。
-source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
+source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -9,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# デフォルト設定から読み込まれるAEMのパフォーマンスが最適化されます。
+# AEMパフォーマンス最適化
 
 AEM Dispatcher は、高速で動的な環境の実現に役立つリバースプロキシです。 Apache HTTP Server などの静的 HTML サーバーの一部として機能し、可能な限り多くのサイトコンテンツを静的リソースの形式で保存（「キャッシュ」）します。 このアプローチは、AEMページレンダリング機能とAdobeCommerce GraphQL サービスにできるだけアクセスする必要性を最小限に抑えることを目的としています。 ページの多くを静的 HTML、CSS、JS として提供することで、ユーザーにパフォーマンスのメリットを提供し、環境のインフラストラクチャ要件を軽減できます。 ユーザー間で同じように繰り返される可能性が高いページまたはクエリは、キャッシュの対象として考慮する必要があります。
 

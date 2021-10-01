@@ -1,7 +1,7 @@
 ---
-title: Adobeコマースのパフォーマンスの最適化
+title: Adobeコマースパフォーマンスの最適化
 description: Adobe Experience Managerを CMS として使用するように、Adobeコマースプロジェクトを準備するには、いくつかのデフォルト設定を変更します。
-source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
+source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
