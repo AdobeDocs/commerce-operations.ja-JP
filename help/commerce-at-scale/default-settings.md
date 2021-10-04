@@ -1,13 +1,13 @@
 ---
 title: Adobeコマースパフォーマンスの最適化
 description: Adobe Experience Managerを CMS として使用するように、Adobeコマースプロジェクトを準備するには、いくつかのデフォルト設定を変更します。
-source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
+exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
-
 
 # Adobeコマースのパフォーマンスの最適化
 
@@ -40,7 +40,7 @@ Fastly オリジンシールドは、AdobeCommerce 管理 Fastly 設定バック
 
 Fastly オリジンシールドを有効にすると、Fastly Image Optimizer も有効にできます。 このサービスは、Adobeコマースに製品カタログ画像を格納する場合、リソースを集中的に消費するすべての製品カタログ画像変換処理を Fastly にオフロードし、Adobeコマースのオリジンからオフロードできます。 また、エッジの場所で画像が変換され、Adobeコマース元に戻る要求の数を減らすことで待ち時間をなくすので、ページ読み込み時間に対するエンドユーザーの応答時間も改善されます。
 
-Fastly 画像の最適化は、Fastly 設定の「Enable deep image optimization」で有効にできますが、オリジンシールドが有効化された後にのみ有効です。 Fastly 画像の最適化の設定について詳しくは、Adobeコマースの [ 開発者向けドキュメント ](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) を参照してください。
+Fastly 画像の最適化は、Fastly 設定の「Enable deep image optimization」で有効にできますが、オリジンシールドが有効になった後にのみ有効です。 Fastly 画像の最適化の設定について詳しくは、Adobeコマースの [ 開発者向けドキュメント ](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) を参照してください。
 
 ![コマース管理での Fastly 画像の最適化設定のスクリーンショットAdobe](../assets/commerce-at-scale/image-optimization.svg)
 
@@ -73,4 +73,4 @@ stage:
 
 標準の Pro アーキテクチャでは、3 つのノードがあり、各ノードには完全なテクニカルスタックが含まれます。 分割層アーキテクチャに変換すると、次の変更が 6 ノード以上になります。そのうち 3 つは、Elasticsearch、マリア DB、レディス、その他のコアサービスを含んでいる。web トラフィックを処理する他の 3 は、phpfpm と NGINX を含む。 分割層を使用すると、より大きな拡張性を実現できます。データベースを含むコアノードは、垂直方向にスケーリングできます。web ノードは、水平および垂直方向に拡大でき、高負荷アクティビティの設定期間に対して、インフラストラクチャをオンデマンドで拡張する柔軟性が大きく、追加のリソースが必要なノード上でも大幅に高くなります。
 
-サイトへの負荷が大きいことが原因で、分割層アーキテクチャに切り替えることを決定した場合は、これを有効にする手順について、カスタマーサクセスマネージャーにディスカッションを行う必要があります。
+サイトへの負荷が大きいことが原因で、分割層アーキテクチャに切り替える決定が下された場合は、これを有効にする手順について、カスタマーサクセスマネージャーにディスカッションを行う必要があります。
