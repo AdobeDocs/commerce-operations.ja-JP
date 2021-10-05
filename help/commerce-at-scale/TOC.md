@@ -1,9 +1,9 @@
 ---
 user-guide-title: 規模に応じたコマースエクスペリエンスの提供
 user-guide-description: Adobe Experience Managerとの Commerce を使用して、エクスペリエンスを大規模にAdobeする方法を説明します。
-source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
+source-git-commit: e75ee47ace11903326ba25a6e3c8007512fe42e6
 workflow-type: tm+mt
-source-wordcount: '41'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,3 +18,4 @@ ht-degree: 0%
 - [Adobeコマースのパフォーマンスの最適化](default-settings.md)
 - [パフォーマンステストのヒント](launch.md)
 - [まとめ](conclusion.md)
+- [ボブの隠しファイル](bob.md)
