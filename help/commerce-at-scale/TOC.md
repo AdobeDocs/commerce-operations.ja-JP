@@ -1,7 +1,7 @@
 ---
 user-guide-title: 規模に応じたコマースエクスペリエンスの提供
-user-guide-description: Adobe Experience Managerとの Commerce を使用して、エクスペリエンスを大規模にAdobeする方法を説明します。
-source-git-commit: e75ee47ace11903326ba25a6e3c8007512fe42e6
+user-guide-description: Adobe CommerceとAdobe Experience Managerを使用して、エクスペリエンスを大規模に配信する方法を説明します。
+source-git-commit: b4a42bc51d283d75f4dcb7780db326f54416ee8e
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -15,7 +15,6 @@ ht-degree: 0%
 - [効果的なキャッシュの計画](caching.md)
 - [AEMパフォーマンス最適化](performance.md)
 - [インフラストラクチャの連携](infrastructure.md)
-- [Adobeコマースのパフォーマンスの最適化](default-settings.md)
+- [Adobe Commerceのパフォーマンス最適化](default-settings.md)
 - [パフォーマンステストのヒント](launch.md)
 - [まとめ](conclusion.md)
-- [ボブの隠しファイル](bob.md)
