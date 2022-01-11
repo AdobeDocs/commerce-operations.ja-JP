@@ -2,9 +2,9 @@
 title: パフォーマンスの最適化Recommendations
 description: 次の推奨事項に従って、Adobe Commerce実装のパフォーマンスを最適化します。
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: a7ccb83cbcfc2f12882fa8d8a879118db2b20ede
+source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1289'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ ElasticsearchはAdobe Commerceバージョン 2.4 以降で必要になります
 
 ### Adobe Commerceの更新を保持
 
-Adobe Commerceを最新バージョンで実行する場合、常にパフォーマンスが向上します。 新しいバージョンがリリースされるたびにAdobe Commerceを最新の状態に保つことができない場合でも、 [アップグレード](../../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf) Adobe Commerceでパフォーマンスが大幅に最適化された場合。
+Adobe Commerceを最新バージョンで実行する場合、常にパフォーマンスが向上します。 新しいバージョンがリリースされるたびにAdobe Commerceを最新の状態に保つことができない場合でも、 [アップグレード](../../../upgrade/overview.md) Adobe Commerceでパフォーマンスが大幅に最適化された場合。
 
 例えば、2020 年、Adobeは Redis 層の最適化をリリースし、非効率性の多くの問題、接続の問題、Redis とAdobe Commerce間の不要なデータ転送を修正しました。 2.3 と 2.4 の間の全体的なパフォーマンスは夜と日です。Redis の最適化のため、買い物かご、チェックアウト、同時使用ユーザーの数が大幅に改善されました。
 
