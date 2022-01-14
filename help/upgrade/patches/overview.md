@@ -1,9 +1,9 @@
 ---
 title: パッチの動作
 description: Adobe CommerceおよびMagento Open Source用の様々なタイプのパッチとその動作について説明します。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 38b054bbae8ba116557ce367c8397c646c837558
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ AdobeエンジニアリングチームがAdobe CommerceまたはMagento Open Sou
 カスタムパッチを作成するには：
 
 1. の作成 `patches/composer` ローカルプロジェクトのディレクトリ。
-1. パッチに使用する GitHub コミットまたはプル要求を特定します。 この例では、 [`2d31571`](https://github.com/magento/magento2/commit/) コミット、GitHub の問題にリンク [#6474](https://github.com/magento/magento2/issues/6474).
+1. パッチに使用する GitHub コミットまたはプル要求を特定します。 この例では、 [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) コミット、GitHub の問題にリンク [#6474](https://github.com/magento/magento2/issues/6474).
 1. を追加します。 `.patch` または `.diff` コミット URL の拡張子。 用途 `.diff` を使用します。 例： [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
 1. ページをファイルとしてに保存します。 `patches/composer` ディレクトリ。 例： `github-issue-6474.diff`.
 1. ファイルを編集し、を削除します。 `app/code/<VENDOR>/<PACKAGE>` すべてのパスから、 `vendor/<VENDOR>/<PACKAGE>` ディレクトリ。
@@ -78,11 +78,12 @@ index c8a6fef58d31..7d01c195791e 100644
 +++ b/view/frontend/web/js/view/payment/iframe.js
 @@ -154,6 +154,7 @@ define(
               */
-              clearTimeout: function () {
-                  clearTimeout(this.timeoutId);
-                  this.fail();
-                  return this;
-            },
+             clearTimeout: function () {
+                 clearTimeout(this.timeoutId);
++                this.fail();
+ 
+                 return this;
+             },
 ```
 
 ## パッチの適用
