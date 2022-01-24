@@ -1,19 +1,19 @@
 ---
-title: アップグレード互換性ツールの実行
-description: 次の手順に従って、Adobe Commerceプロジェクトでアップグレード互換性ツールを実行します。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: を実行します。 [!DNL Upgrade Compatibility Tool]
+description: 次の手順に従って、 [!DNL Upgrade Compatibility Tool] をAdobe Commerceプロジェクトに追加します。
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1559'
 ht-degree: 0%
 
 ---
 
 
-# アップグレード互換性ツールの実行
+# を実行します。 [!DNL Upgrade Compatibility Tool]
 
-アップグレード互換性ツールは、Adobe Commerceカスタマイズ済みのインスタンスを特定のバージョンと照合するために、その中にインストールされているすべてのモジュールを分析するコマンドラインツールです。 最新バージョンのAdobe Commerceにアップグレードする前に対処する必要がある重要な問題、エラーおよび警告のリストを返します。
+この [!DNL Upgrade Compatibility Tool] は、Adobe Commerceカスタマイズ済みのインスタンスを、そのインスタンスにインストールされているすべてのモジュールを分析することで、特定のバージョンと照合するコマンドラインツールです。 最新バージョンのAdobe Commerceにアップグレードする前に対処する必要がある重要な問題、エラーおよび警告のリストを返します。
 
-アップグレード互換性ツールは、新しいバージョンのAdobe Commerceにアップグレードする前にコードで修正する必要がある潜在的な問題を特定します。
+この [!DNL Upgrade Compatibility Tool] は、Adobe Commerceの新しいバージョンにアップグレードする前にコードで修正する必要がある潜在的な問題を特定します。
 
 ## 以下を使用： `upgrade:check` command
 
@@ -27,7 +27,7 @@ bin/uct upgrade:check <dir>
 >
 >この `<dir>` 値は、Adobe Commerceインスタンスが配置されるディレクトリです。
 
-この `upgrade:check` コマンドは、アップグレード互換性ツールを実行し、Adobe Commerceにインストールされているすべてのモジュールを分析することで、カスタマイズ済みのインスタンスを特定のバージョンと照合します。 Adobe Commerceの最新バージョンにアップグレードする前に対処する必要がある、重要な問題、エラーおよび警告のリストを返します。
+この `upgrade:check` コマンドを実行 [!DNL Upgrade Compatibility Tool] およびは、Adobe Commerceにインストールされているすべてのモジュールを分析することで、カスタマイズされたインスタンスを特定のバージョンと照合します。 Adobe Commerceの最新バージョンにアップグレードする前に対処する必要がある、重要な問題、エラーおよび警告のリストを返します。
 
 >[!WARNING]
 >
@@ -41,7 +41,7 @@ bin/uct upgrade:check <dir>
 
 ### Recommendations `upgrade:check` command
 
-- アップグレード互換性ツールを実行するには、2GB 以上の RAM が必要です。 この設定は、メモリ不足による問題を回避するために推奨されます。 アップグレード互換性ツールで、 `upgrade:check` 低いコマンド `memory_limit` 設定。
+- この [!DNL Upgrade Compatibility Tool] を実行するには、2GB 以上の RAM が必要です。 この設定は、メモリ不足による問題を回避するために推奨されます。 この [!DNL Upgrade Compatibility Tool] を実行すると、質問が表示されます。 `upgrade:check` 低いコマンド `memory_limit` 設定。
 - 次を指定： `-m` 特定のモジュールに対してツールを実行するオプション：
 
    ```bash
@@ -55,7 +55,7 @@ bin/uct upgrade:check <dir>
 
 ### 以下を使用： `--help` オプション
 
-アップグレード互換性ツールのコマンドの一般的なオプションとヘルプを確認するには、次のコマンドを実行します。
+次の手順で [!DNL Upgrade Compatibility Tool] コマンドの一般的なオプションとヘルプ：
 
 ```bash
 bin/uct --help
@@ -75,7 +75,7 @@ bin/uct upgrade:check --help
 - `--json-output-path[=JSON-OUTPUT-PATH]`:出力を JSON 形式で書き出すファイルのパス。
 - `--html-output-path[=HTML-OUTPUT-PATH]`:出力を書き出すファイルのパスをHTML形式で指定します。
 - `--min-issue-level`:レポートに表示する最小問題レベル。 デフォルトはです。 [警告].
-- `--ignore-current-version-compatibility-issues`:アップグレード互換性ツールレポートに既知の重要な問題、エラー、警告を含めない場合は、このオプションを使用します。
+- `--ignore-current-version-compatibility-issues`:既知の重要な問題、エラーおよび警告を [!DNL Upgrade Compatibility Tool] レポート。
 - `--context=CONTEXT`:実行コンテキスト。 このオプションは統合の目的で使用され、実行結果には影響しません。
 - `-h, --help`:特定のコマンドのヘルプを表示します。 コマンドを指定しない場合、 `list` コマンドはデフォルトの結果です。
 - `-q, --quiet`:コマンドの実行中にメッセージを出力しない。
@@ -86,7 +86,7 @@ bin/uct upgrade:check --help
 
 ### 出力
 
-アップグレード互換性ツールは、実行した分析の結果、重大度、エラーコードおよびエラーの説明を指定する各ファイルの問題のリストを含むレポートをエクスポートします。
+分析を実行した結果、 [!DNL Upgrade Compatibility Tool] は、各ファイルの重大度、エラーコードおよびエラーの説明を指定した問題のリストを含むレポートをエクスポートします。
 
 次の例を参照してください。
 
@@ -128,7 +128,7 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 
 >[!NOTE]
 >
->デフォルトでは、アップグレード互換性ツールは、レポートを次の 2 つの異なる形式でエクスポートします。 `json` および `html`.
+>デフォルトでは、 [!DNL Upgrade Compatibility Tool] では、次の 2 つの異なる形式でレポートがエクスポートされます。 `json` および `html`.
 
 #### JSON
 
@@ -190,7 +190,7 @@ bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
 
 ### 以下を使用： `--ignore-current-version-compatibility-issues` オプション
 
-アップグレード互換性ツールを使用すると、 `upgrade:check` 命令 `--ignore-current-version-compatibility-issues` 」オプションを使用する場合は、新しい問題または不明な重要な問題、エラー、警告のみが表示されます。 アップグレード互換性ツールレポートに既知の重要な問題、エラー、警告を含めない場合は、このオプションを使用します。
+この [!DNL Upgrade Compatibility Tool] を使用すると、 `upgrade:check` 命令 `--ignore-current-version-compatibility-issues` 」オプションを使用する場合は、新しい問題または不明な重要な問題、エラー、警告のみが表示されます。 既知の重要な問題、エラーおよび警告を [!DNL Upgrade Compatibility Tool] レポート。
 
 ```bash
 bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
@@ -206,13 +206,13 @@ A _バニラ_ インストールは、特定のリリースバージョンの指
 
 この `bin/uct core:code:changes` コマンドは、システムに vanilla インスタンスが存在するかどうかを確認します。 バニラインストールを初めて使用する場合は、インタラクティブなコマンドラインの質問が表示され、 [Adobe Commerceリポジトリ](https://repo.magento.com/).
 
-アップグレード互換性ツールコマンドを `--vanilla-dir` Adobe Commerce vanilla インストールディレクトリを指定するオプション。
+以下を実行すると、 [!DNL Upgrade Compatibility Tool] コマンドを `--vanilla-dir` Adobe Commerce vanilla インストールディレクトリを指定するオプション。
 
 詳しくは、 [バニラインスタンスのデプロイ](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) トピックを参照してください。
 
 ## 以下を使用： `list` command
 
-使用可能なアップグレード互換性ツールの一覧を返すには、次のコマンドを実行します。
+リストを返すには [!DNL Upgrade Compatibility Tool] 使用可能なコマンド、次のコマンドを実行します。
 
 ```bash
 bin/uct list
@@ -238,7 +238,7 @@ bin/uct core:code:changes <dir> <vanilla dir>
 引数は次のようになります。
 
 - `<dir>`:Adobe Commerceインストールディレクトリ。
-- `<vanilla dir>`:Adobe Commerce vanilla のインストールディレクトリ。
+- `<vanilla dir>`:Adobe Commerce vanilla インストールディレクトリ。
 
 このコマンドを実行する際には、いくつかの制限があります。
 
@@ -279,7 +279,7 @@ bin/uct upgrade:check <dir> -c 2.4.3
 
 ## GraphQL スキーマの互換性の検証
 
-アップグレード互換性ツールには、2 つの GraphQL エンドポイントを紹介し、それらのエンドポイント間で重大な変更や危険な変更を探しているスキーマを比較するオプションも用意されています。
+この [!DNL Upgrade Compatibility Tool] また、2 つの GraphQL エンドポイントを紹介し、それらのエンドポイント間で重大な変更や危険な変更を探してスキーマを比較するオプションも提供されています。
 
 ```bash
 bin/uct graphql:compare <schema1> <schema2>
@@ -312,7 +312,7 @@ bin/uct graphql:compare <schema1> <schema2>
 
 詳しくは、 [開発者情報](../upgrade-compatibility-tool/developer.md) を参照してください。
 
-PhpStorm プラグインを使用して、実行設定でアップグレード互換性ツールを実行できます。 詳しくは、 [アップグレード互換性ツール実行設定](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) トピックを参照してください。
+次を実行できます。 [!DNL Upgrade Compatibility Tool] PhpStorm プラグインを介した run 設定を含む 詳しくは、 [[!DNL Upgrade Compatibility Tool] 設定を実行](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) トピックを参照してください。
 
 ## トラブルシューティング
 

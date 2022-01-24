@@ -1,31 +1,31 @@
 ---
-title: アップグレード互換性ツールの概要
-description: アップグレード互換性ツールと、Adobe Commerceプロジェクトで役立つ情報について説明します。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: の概要 [!DNL Upgrade Compatibility Tool]
+description: 詳しくは、 [!DNL Upgrade Compatibility Tool] Adobe Commerceプロジェクトに役立つ情報です。
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
 
 
-# アップグレード互換性ツールの概要
+# の概要 [!DNL Upgrade Compatibility Tool]
 
 >[!NOTE]
 >
->アップグレード互換性ツールは、Adobe Commerceインスタンスでのみ使用できます。
+>この [!DNL Upgrade Compatibility Tool] は、Adobe Commerceインスタンスでのみ使用できます。
 
-アップグレード互換性ツールは、Adobe Commerceカスタマイズ済みのインスタンスを特定のバージョンと照合するコマンドラインツールです。このツールには、インストールされているすべてのモジュールとコアコードを分析します。 最新バージョンのAdobe Commerceにアップグレードする前に対処する必要がある重要な問題、エラーおよび警告のリストを返します。 また、新しいバージョンのAdobe Commerceにアップグレードする前にコードで修正する必要がある潜在的な問題も識別します。
+この [!DNL Upgrade Compatibility Tool] は、Adobe Commerceカスタマイズ済みのインスタンスを特定のバージョンと照合するために、インストールされているすべてのモジュールとコアコードを分析するコマンドラインツールです。 最新バージョンのAdobe Commerceにアップグレードする前に対処する必要がある重要な問題、エラーおよび警告のリストを返します。 また、新しいバージョンのAdobe Commerceにアップグレードする前にコードで修正する必要がある潜在的な問題も識別します。
 
-アップグレード互換性ツールを使用すると、コアコードがカスタマイズされた機能にいつ変更されたかを特定できます。 詳しくは、 [ツールを実行](../upgrade-compatibility-tool/run.md) トピックを参照してください。
+この [!DNL Upgrade Compatibility Tool] では、いつコアコードがカスタマイズされた機能に変更されたかを識別できます。 詳しくは、 [ツールを実行](../upgrade-compatibility-tool/run.md) トピックを参照してください。
 
 これは、Adobe Commerceバージョンのリリースごとに、Composer パッケージとして配布されます。 詳しくは、 [開発者](../upgrade-compatibility-tool/developer.md) トピックを参照してください。
 
-詳しくは、 [インストール](../upgrade-compatibility-tool/install.md) を参照してください。
+詳しくは、 [インストール](../upgrade-compatibility-tool/install.md) を使用して [!DNL Upgrade Compatibility Tool].
 
-## アップグレード互換性ツールの改善に役立つ
+## 改善に役立つ [!DNL Upgrade Compatibility Tool]
 
-アップグレード互換性ツールチームとの連携については、エンジニアリングSlackチャネルにお問い合わせください [アップグレード互換性ツール](https://magentocommeng.slack.com/archives/C019Y143U9F).
+を [!DNL Upgrade Compatibility Tool] チーム、エンジニアリングSlackチャネルでお問い合わせください [[!DNL Upgrade Compatibility Tool]](https://magentocommeng.slack.com/archives/C019Y143U9F).
 
 >[!NOTE]
 >

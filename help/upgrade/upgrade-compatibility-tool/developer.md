@@ -1,17 +1,17 @@
 ---
-title: アップグレード互換性ツール開発者情報
-description: API インデックス統合を使用してアップグレード互換性ツールをカスタマイズします。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: '[!DNL Upgrade Compatibility Tool] 開発者情報'
+description: のカスタマイズ [!DNL Upgrade Compatibility Tool] API インデックスの統合を使用する。
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
 
 
-# アップグレード互換性ツール開発者情報
+# [!DNL Upgrade Compatibility Tool] 開発者情報
 
-このトピックには、Adobe Commerceコードを緊密に連携し、アップグレード互換性ツールに関する詳細情報を学びたい開発者向けの情報が含まれています。 この知識を使用して、ツールのコンポーネントをカスタマイズできます。
+このトピックには、Adobe Commerceコードを緊密に連携し、 [!DNL Upgrade Compatibility Tool]. この知識を使用して、ツールのコンポーネントをカスタマイズできます。
 
 ## Adobe Commerce API インデックスの統合
 
@@ -29,7 +29,7 @@ Adobe Commerce API インデックスとの統合は、次の方法でおこな�
 
 `sut\Domain\MRay\MRayInterface : "@sut_mray_mock"`
 
-前の例では、アップグレード互換性ツールは `@sut_mray_mock` を `MRayInterface` 実装。 次の `api()` および `modules()` メソッドは次のファイルから取得されます。
+前の例では、 [!DNL Upgrade Compatibility Tool] uses `@sut_mray_mock` を `MRayInterface` 実装。 次の `api()` および `modules()` メソッドは次のファイルから取得されます。
 
 - `dev/mray_mock_files/api.json`
 - `dev/mray_mock_files/modules.json`
@@ -117,7 +117,7 @@ Adobe Commerce API インデックスとの統合は、次の方法でおこな�
 - 特定された問題の数
 - 特定された問題の重大度
 
-アップグレード互換性ツールは、以下の複雑性スコアの式に従ってこのスコアを計算します。
+この [!DNL Upgrade Compatibility Tool] 以下の複雑度スコアの数式に従って、このスコアを計算します。
 
 ### 複雑性スコアの式
 

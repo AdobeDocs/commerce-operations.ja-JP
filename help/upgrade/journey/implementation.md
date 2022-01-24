@@ -1,10 +1,10 @@
 ---
 title: アップグレード実装
 description: Adobe CommerceプロジェクトとMagento Open Sourceプロジェクトのアップグレード実装の様々なフェーズについて説明します。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '877'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 - **ターゲットリリースの範囲**— [コマース DevDocs](https://devdocs.magento.com) パートナーリリースウェビナーには、target のアップグレードに関して知っておく必要のあるすべての詳細情報が記載されています。
 
-- **アップグレード互換性ツールの結果** — このツールを使用すると、現在のコードを対象バージョンのコードと比較し、対処する必要のあるすべての問題のレポートを作成することで、アップグレードを迅速かつ簡単におこなうことができます。 詳しくは、 [アップグレード互換性ツール](../upgrade-compatibility-tool/overview.md). レポートの主な詳細は次のとおりです。
+- **[!DNL Upgrade Compatibility Tool]結果** — このツールを使用すると、現在のコードを対象バージョンのコードと比較し、対処する必要のあるすべての問題のレポートを作成することで、アップグレードを迅速かつ簡単におこなうことができます。 詳しくは、 [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). レポートの主な詳細は次のとおりです。
 
    - 現在インストールされているバージョン
    - ターゲットバージョンをアップグレード

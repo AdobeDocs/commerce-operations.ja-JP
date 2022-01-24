@@ -1,38 +1,38 @@
 ---
-title: アップグレード互換性ツールのインストール
-description: 次の手順に従って、Adobe Commerceプロジェクトのアップグレード互換性ツールをインストールします。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: のインストール [!DNL Upgrade Compatibility Tool]
+description: 次の手順に従って、 [!DNL Upgrade Compatibility Tool] Adobe Commerceプロジェクト用
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
 
 
-# アップグレード互換性ツールのインストール
+# のインストール [!DNL Upgrade Compatibility Tool]
 
-アップグレード互換性ツールは、Adobe Commerceカスタマイズ済みのインスタンスを特定のバージョンと照合するために、その中にインストールされているすべてのモジュールを分析するコマンドラインツールです。 最新バージョンのAdobe Commerceにアップグレードする前に対処する必要があるエラーと警告のリストを返します。
+この [!DNL Upgrade Compatibility Tool] は、Adobe Commerceカスタマイズ済みのインスタンスを、そのインスタンスにインストールされているすべてのモジュールを分析することで、特定のバージョンと照合するコマンドラインツールです。 最新バージョンのAdobe Commerceにアップグレードする前に対処する必要があるエラーと警告のリストを返します。
 
 ## ワークフロー
 
-次の図は、アップグレード互換性ツールを実行する際に期待されるワークフローを示しています。
+次の図は、 [!DNL Upgrade Compatibility Tool]:
 
-![アップグレード互換性ツールの図](../../assets/upgrade-guide/mvp-diagram-v3.png)
+![[!DNL Upgrade Compatibility Tool] 図](../../assets/upgrade-guide/mvp-diagram-v3.png)
 
-## アップグレード互換性ツールは誰のためのものですか？
+## 誰が [!DNL Upgrade Compatibility Tool] ?
 
 次の使用例では、Adobe Commerceパートナーがクライアントのインスタンスをアップグレードする際の一般的なプロセスを示します。
 
-1. パートナーのソフトウェアエンジニアが、アップグレード互換性ツールパッケージを [Adobe Commerceリポジトリ](https://repo.magento.com/) 最新のAdobe Commerceリリースのベータ段階で実行されます。 詳しくは、 [アップグレード互換性ツールのダウンロード](../upgrade-compatibility-tool/install.md#download-the-upgrade-compatibility-tool) トピックを参照してください。
+1. パートナーのソフトウェアエンジニアが [!DNL Upgrade Compatibility Tool] パッケージ [Adobe Commerceリポジトリ](https://repo.magento.com/) 最新のAdobe Commerceリリースのベータ段階で実行されます。 詳しくは、 [をダウンロードします。 [!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/install.md#download-the-upgrade-compatibility-tool) トピックを参照してください。
 1. ソフトウェアエンジニアは、現在インストールされているAdobe Commerceの特定のバージョンのバニラインスタンスを生成します。 詳しくは、 [コントリビューターガイド](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) を参照してください。 `instance` コマンドを使用してバニラインストールを生成します。
 1. ソフトウェアエンジニアは、インベントリモジュールとカタログモジュールに、カスタマイズされた複数の領域が壊れていることを確認し、X の複雑なスコアを獲得します。 [開発者](../upgrade-compatibility-tool/developer.md) ガイドを参照してください。
 1. この情報を使用して、ソフトウェアエンジニアはアップグレードの複雑さを理解し、この情報をパートナーのアカウントマネージャに返すことができます。
 1. アカウントマネージャーは、Adobe Commerceのアップグレードのタイムラインとコストを作成し、マネージャーの承認を得ることができます。
 1. 管理者の承認を得て、ソフトウェアエンジニアは、必要なコード変更を行い、破損したモジュールを修正します。
-1. ソフトウェアエンジニアは、Adobe Commerceのプレリリースでもう一度アップグレード互換性ツールを実行し、新しい問題がなく、ベータ段階で見つかった問題をコードが変更されたことで修正しました。
+1. ソフトウェアエンジニアが [!DNL Upgrade Compatibility Tool] Adobe Commerceのプレリリースで、新しい問題がなく、そのコードが変更されてベータ段階で見つかった問題が修正されたことを確認しました。
 1. すべてのテストがチェックアウトされ、ソフトウェアエンジニアがこのコードをステージング環境にプッシュします。回帰テストでは、すべてのテストが緑であることが確認され、Adobe Commerceのプレリリース日と同じ日に最新のAdobe Commerceバージョンを実稼動環境にリリースできます。
 
-   ![互換性ツールのオーディエンスをアップグレード](../../assets/upgrade-guide/audience-uct-v3.png)
+   ![[!DNL Upgrade Compatibility Tool] audience](../../assets/upgrade-guide/audience-uct-v3.png)
 
 >[!NOTE]
 >
@@ -44,13 +44,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->アップグレード互換性ツールは、任意のオペレーティングシステムで実行できます。 Adobe Commerceインスタンスが配置されているアップグレード互換性ツールを実行する必要はありません。 アップグレード互換性ツールでAdobe Commerceインスタンスのソースコードにアクセスできる必要があります。 例えば、あるサーバーにこのツールをインストールし、別のサーバー上のAdobe Commerceインストールにこのツールをポイントすることができます。
+>次を実行できます。 [!DNL Upgrade Compatibility Tool] （任意のオペレーティングシステム）。 を実行する必要はありません。 [!DNL Upgrade Compatibility Tool] Adobe Commerceインスタンスの場所 ～に必要だ [!DNL Upgrade Compatibility Tool] Adobe Commerceインスタンスのソースコードにアクセスできるようにする。 例えば、あるサーバーにこのツールをインストールし、別のサーバー上のAdobe Commerceインストールにこのツールをポイントすることができます。
 
-大きなモジュールやファイルを含むAdobe Commerceインスタンスに対してアップグレード互換性ツールを実行している場合、ツールには大量の RAM（少なくとも 2GB の RAM）が必要になる場合があります。
+を実行している場合、 [!DNL Upgrade Compatibility Tool] 大きなモジュールやファイルを持つAdobe Commerceインスタンスに対しては、このツールに大量の RAM（2GB 以上の RAM）が必要になる場合があります。
 
 ### 推奨されるアクション
 
-Adobe Commerceのベストプラクティスでは、同じ名前の 2 つのモジュールを使用しないことをお勧めします。 この場合、アップグレード互換性ツールにはセグメント化エラーが表示されます。
+Adobe Commerceのベストプラクティスでは、同じ名前の 2 つのモジュールを使用しないことをお勧めします。 この場合、 [!DNL Upgrade Compatibility Tool] セグメント化障害エラーを示します。
 
 このエラーを回避するには、 `bin` コマンドと追加オプション `-m`:
 
@@ -62,19 +62,19 @@ bin/uct upgrade:check /<dir>/<instance-name> --coming-version=2.4.1 -m /vendor/<
 >
 >この `<dir>` 値は、Adobe Commerceインスタンスが配置されるディレクトリです。
 
-この `-m` 「 」オプションを使用すると、アップグレード互換性ツールで各特定のモジュールを個別に分析でき、Adobe Commerceインスタンスで同じ名前の 2 つのモジュールが発生するのを防ぐことができます。
+この `-m` オプションを使用すると、 [!DNL Upgrade Compatibility Tool] Adobe Commerceインスタンス内で同じ名前の 2 つのモジュールが発生するのを防ぐために、特定の各モジュールを個別に分析する。
 
-また、このコマンドオプションを使用すると、アップグレード互換性ツールで、次の複数のモジュールを含むフォルダを分析できます。
+このコマンドオプションを使用すると、 [!DNL Upgrade Compatibility Tool] 複数のモジュールを含むフォルダーを分析するには：
 
 ```bash
 bin/uct upgrade:check /<dir>/<instance-name> --coming-version=2.4.1 -m /vendor/<vendor-name>/
 ```
 
-この推奨事項は、アップグレード互換性ツールの実行時に発生する可能性のあるメモリの問題にも役立ちます。
+この推奨事項は、 [!DNL Upgrade Compatibility Tool].
 
-## アップグレード互換性ツールのダウンロード
+## をダウンロードします。 [!DNL Upgrade Compatibility Tool]
 
-アップグレード互換性ツールをダウンロードするには、次のコマンドを実行します。
+次の手順で [!DNL Upgrade Compatibility Tool]、次のコマンドを実行します。
 
 ```bash
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
@@ -82,7 +82,7 @@ composer create-project magento/upgrade-compatibility-tool uct --repository http
 
 ## インストール
 
-アップグレード互換性ツールをインストールするには、必要な前提条件をインストールする必要があります。
+をインストールするには、以下を実行します。 [!DNL Upgrade Compatibility Tool]を使用する場合は、必要な前提条件をインストールする必要があります。
 
 * Adobe Commerceアクセスキー
 * コンポーザー
@@ -90,7 +90,7 @@ composer create-project magento/upgrade-compatibility-tool uct --repository http
 
 ### Adobe Commerceアクセスキー
 
-必ず [Adobe Commerceアクセスキー](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) をクリックして、アップグレード互換性ツールをダウンロードして使用します。 Adobe Commerceアクセスキーを `auth.json` 次の場所にあるファイル `~/.composer` デフォルトでは。
+必ず [Adobe Commerceアクセスキー](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) をダウンロードして使用するには、以下を実行します。 [!DNL Upgrade Compatibility Tool]. Adobe Commerceアクセスキーを `auth.json` 次の場所にあるファイル `~/.composer` デフォルトでは。
 
 >[!WARNING]
 >
@@ -111,11 +111,11 @@ composer create-project magento/upgrade-compatibility-tool uct --repository http
 
 ### コンポーザー
 
-アップグレード互換性ツールリポジトリを複製してを実行します。 `composer install` をターミナルに追加して、依存関係をインストールします。
+のクローン [!DNL Upgrade Compatibility Tool] リポジトリと実行 `composer install` をターミナルに追加して、依存関係をインストールします。
 
 >[!WARNING]
 >
->この **Adobe Commerceアクセスキー** が正しく構成されていない場合、アップグレード互換性ツールはインストールされず、 `composer install` コマンドを使用します。
+>この **Adobe Commerceアクセスキー** が正しく設定されていない場合は、 [!DNL Upgrade Compatibility Tool] はインストールされず、実行時にエラーが発生します `composer install` コマンドを使用します。
 
 ### Node.js
 
@@ -125,4 +125,4 @@ Node.js をインストールするには、Node.js [ドキュメント](https:/
 
 Adobeでは、拡張機能のベンダーに問い合わせて、Adobe Commerce 2.4.x との互換性が完全にあるかどうかを確認することをお勧めします。
 
-詳しくは、 [ツールを実行](../upgrade-compatibility-tool/run.md) を参照してください。
+詳しくは、 [ツールを実行](../upgrade-compatibility-tool/run.md) : [!DNL Upgrade Compatibility Tool].

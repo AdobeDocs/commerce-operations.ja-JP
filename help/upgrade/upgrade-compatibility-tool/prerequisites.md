@@ -1,19 +1,19 @@
 ---
-title: アップグレード互換性ツールの前提条件
-description: 'Adobe Commerceプロジェクトのアップグレード互換性ツールを実行するために必要な要件をシステムが満たしていることを確認します。 '
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: '[!DNL Upgrade Compatibility Tool] 前提条件'
+description: 'システムが、 [!DNL Upgrade Compatibility Tool] Adobe Commerceプロジェクト用 '
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
 
 
-# アップグレード互換性ツールの前提条件
+# [!DNL Upgrade Compatibility Tool] 前提条件
 
-アップグレード互換性ツールを実行すると、必要な作業を特定できます **前** Adobe Commerceのバージョンをアップグレードしています。
+の実行 [!DNL Upgrade Compatibility Tool] が、 **前** Adobe Commerceのバージョンをアップグレードしています。
 
-アップグレード互換性ツールを実行するための最小要件は次のとおりです。
+を実行するための最小要件 [!DNL Upgrade Compatibility Tool] 次の場合：
 
 | **要件** | **制約** |
 |----------------|-----------------|
@@ -24,6 +24,6 @@ ht-degree: 0%
 | Adobe Commerce Access キー | なし |
 | Adobe Commerce （Open Source または Enterprise） | なし |
 
-アップグレード互換性ツールは、任意のオペレーティングシステムで実行できます。 Adobe Commerceインスタンスが配置されているアップグレード互換性ツールを実行する必要はありません。
+次を実行できます。 [!DNL Upgrade Compatibility Tool] （任意のオペレーティングシステム）。 を実行する必要はありません。 [!DNL Upgrade Compatibility Tool] Adobe Commerceインスタンスの場所
 
-アップグレード互換性ツールでAdobe Commerceインスタンスのソースコードにアクセスできる必要があります。 例えば、あるサーバーにインストールし、別のサーバー上のAdobe Commerceインストール場所を示すことができます。 詳しくは、 [インストール](../upgrade-compatibility-tool/install.md) トピックを参照してください。
+～に必要だ [!DNL Upgrade Compatibility Tool] Adobe Commerceインスタンスのソースコードにアクセスできるようにする。 例えば、あるサーバーにインストールし、別のサーバー上のAdobe Commerceインストール場所を示すことができます。 詳しくは、 [インストール](../upgrade-compatibility-tool/install.md) トピックを参照してください。

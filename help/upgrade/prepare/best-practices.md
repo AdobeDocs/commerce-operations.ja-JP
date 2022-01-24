@@ -1,9 +1,9 @@
 ---
 title: ベストプラクティス
 description: Adobeが推奨するベストプラクティスを使用して、Adobe CommerceおよびMagento Open Sourceプロジェクトのアップグレードプロセスを管理します。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Adobe Commerceの機能が継続的に拡張されるので、利用可能な最
 
 - 以下を確認します。 [リリースノート](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) を参照して、新しいバージョンの範囲と影響を理解してください。
 
-- 以下を使用： [アップグレード互換性ツール](../upgrade-compatibility-tool/overview.md) を参照してください。
+- 以下を使用： [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) を参照してください。
 
 - サードパーティの拡張機能を使用している場合は、アップグレード先のバージョンとの互換性を検証します。
 

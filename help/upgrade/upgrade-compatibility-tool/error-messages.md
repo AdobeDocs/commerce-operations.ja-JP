@@ -1,17 +1,17 @@
 ---
-title: アップグレード互換性ツールのエラーメッセージ
-description: Adobe Commerceプロジェクトでアップグレード互換性ツールを使用する際に発生するエラーメッセージについて詳しく説明します。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: '[!DNL Upgrade Compatibility Tool] エラーメッセージ'
+description: を使用する際に発生するエラーメッセージの詳細を説明します [!DNL Upgrade Compatibility Tool] をAdobe Commerceプロジェクトに追加します。
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '3759'
+source-wordcount: '3747'
 ht-degree: 0%
 
 ---
 
 
-# アップグレード互換性ツールのエラーメッセージ
+# [!DNL Upgrade Compatibility Tool] エラーメッセージ
 
-このエラーメッセージリファレンスは、アップグレード互換性ツールの実行中に発生する可能性のあるエラーに関する情報を提供します。
+このエラーメッセージリファレンスは、 [!DNL Upgrade Compatibility Tool].
 
 エラーメッセージは、レベル（重要な問題、エラー、警告）とタイプ（コアコード、カスタムコード、GraphQL スキーマ）別に分類されます。 各タイプには、次の情報が含まれます。
 

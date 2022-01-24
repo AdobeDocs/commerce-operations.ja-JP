@@ -1,9 +1,9 @@
 ---
 user-guide-title: アップグレードガイド
 user-guide-description: Adobe CommerceまたはMagento Open Sourceアプリケーションのアップグレードが非常に重要な理由と、アップグレードを計画し実行する方法を説明します。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '122'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 - パッチ {#patches}
    - [パッチの仕組み](patches/overview.md)
    - [パッチの適用](patches/apply.md)
-- アップグレード互換性ツール {#upgrade-compatibility-tool}
+- [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
    - [概要](upgrade-compatibility-tool/overview.md)
    - [前提条件](upgrade-compatibility-tool/prerequisites.md)
    - [インストール](upgrade-compatibility-tool/install.md)
@@ -46,5 +46,5 @@ ht-degree: 0%
    - [アップグレードのメンテナンスモードオプション](troubleshooting/maintenance-mode-options.md)
 - リソース {#resources}
    - [推奨読み物](resources/recommended-reading.md)
-   - [2022 年の推奨アップグレードパス](resources/recommended-upgrade-paths-2022.md)
+   - [Adobe Commerce 2.4.4 以降を使用したプラットフォームの最新化](resources/recommended-upgrade-paths-2022.md)
    - [アップグレード計画のチェックリスト](https://support.magento.com/hc/en-us/articles/360057968951)
