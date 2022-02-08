@@ -2,7 +2,7 @@
 title: パフォーマンスの最適化Recommendations
 description: 次の推奨事項に従って、Adobe Commerce実装のパフォーマンスを最適化します。
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 0%
@@ -103,7 +103,7 @@ Message Queue Framework（MQF；メッセージキューフレームワーク）
 
 >[!NOTE]
 >
-> Adobe Commerce on cloud infrastructure では、既に上記のインフラストラクチャとアーキテクチャの最適化がすべて適用されています。ただし、DNS ルックアップは範囲外なので、この最適化は除きます。
+> Adobe Commerce on cloud infrastructure では、DNS ルックアップが範囲外なので、上記のインフラストラクチャとアーキテクチャの最適化がすべて既に適用されています。
 
 ### 検索
 
@@ -115,7 +115,7 @@ ElasticsearchはAdobe Commerceバージョン 2.4 以降で必要になります
 
 ### ヘッドレスアーキテクチャ
 
-次の内容を詳しく説明する個別の節があります。 [頭のない](../../architecture/headless/adobe-commerce.md) はと異なるオプションです。 要約すると、ストアフロントレイヤーがプラットフォーム自体から分離されます。 引き続き同じバックエンドですが、Adobe Commerceはリクエストを直接処理する代わりに、GraphQL API を介したカスタムストアフロントのみをサポートします。
+次の内容を詳しく説明する別の節があります。 [頭のない](../../architecture/headless/adobe-commerce.md) はと異なるオプションです。 要約すると、ストアフロントレイヤーがプラットフォーム自体から分離されます。 引き続き同じバックエンドですが、Adobe Commerceはリクエストを直接処理する代わりに、GraphQL API を介したカスタムストアフロントのみをサポートします。
 
 ### Adobe Commerceの更新を保持
 

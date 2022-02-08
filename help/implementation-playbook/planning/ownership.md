@@ -1,23 +1,23 @@
 ---
-title: 責任及び所有
-description: プロジェクトの役割と責務を定義し、Adobe・コマースの導入を成功に導きます。
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+title: 責任及び所有権
+description: Adobe Commerceの実装を成功に導くためのプロジェクト上の役割と責務を定義する。
+exl-id: 206b6e3b-6dee-442e-a2ba-7867b2494b75
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
 
 ---
 
+# 責任と所有権
 
-# 責任と所有
+While executing a big project, everything often seems to be going fine at first. The project roadmap is detailed and comprehensive with clear milestones. 資源計画とステークホルダー・コミットメントが実施されている。 However, soon things may start falling apart with missed deadlines and forgotten tasks.
 
-大きなプロジェクトを実行する際、最初は何もかもうまくいっているようです。 プロジェクトのロードマップは詳細で包括的で、明確なマイルストーンを備えています。 資源計画と関係者のコミットメントが実施されている。 しかし、間もなく締め切りを逃し、忘れられたタスクで物事が崩れ始めるかもしれません。
-
-これは、多くの場合、プロジェクトの役割と責任に関する明確性が欠如しているために発生します。 明確な役割と責任は、あらゆるプロジェクトにとって重要な成功要因です。 これらがないと、プロジェクトはすぐに脱線し、関係者は時間/予算超過で例外的な方法を使用して管理を試み続けます。
+これは、多くの場合、プロジェクトの役割と責務に関する明確性が欠けているために発生します。 役割と責務を明確に果たすことが、あらゆるプロジェクトにとって重要な成功要因です。 Without them, projects can quickly get derailed and stakeholders are left trying to manage through exceptional methods with time/budget overrun.
 
 
-## 我々はどのようにして共同作業を行うのか？
+## 我々は共同でどのように協力するのか？
 
-[ プロジェクト範囲 ](../project-scope/deliverables.md) の節で説明したように、責任、責任、相談、情報に基づく (RACI) マトリックスは、プロジェクトの各段階で所有権と責任を定義し、文書化する便利なツールです。 マトリックス内では、プロジェクト内のすべてのタスク、マイルストーンおよび決定は、特定の役割または個人にマッピングされます。 各チームメンバーや関係者が自分の特定の役割を確実に理解できるようにすることで、プロジェクト管理のプロセスを合理化できます。 これは、プロジェクトの計画段階で定義し、各関係者が受け入れる必要があります。
+A Responsible, Accountable, Consulted, and Informed (RACI) matrix—like we mentioned in the [project scoping](../project-scope/deliverables.md) section—is a useful tool that defines and documents ownership and responsibility at each stage of the project. マトリックス内では、プロジェクト内のすべてのタスク、マイルストーンおよび決定が、特定の役割または個人にマッピングされます。 各チームメンバーや関係者が自分の役割を確実に理解できるようにすることで、プロジェクト管理によるプロセスの合理化に役立ちます。 これは、プロジェクトの計画段階で定義し、各関係者が受け入れる必要があります。
 
 ![RACI フレームワークを説明する表](../../assets/playbooks/raci.svg)

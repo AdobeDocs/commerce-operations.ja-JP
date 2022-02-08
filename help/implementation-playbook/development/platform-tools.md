@@ -1,28 +1,28 @@
 ---
-title: プラットフォームツール
-description: Platform Commerce 実装に推奨されるAdobeツールを選択します。
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+title: Platform ツール
+description: Adobe Commerce実装に推奨されるプラットフォームツールを選択します。
+exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%
 
 ---
 
+# Platform ツール
 
-# プラットフォームツール
+e コマースサイトを干渉なしに実行し続けるために十分に考慮し、厳格にテストする必要がある側面が不足することはありません。 データの保存、プログラミング、キャッシュ、セキュリティなど、サイトのあらゆる側面に対応する適切なソリューションを特定する必要があるだけでなく、スムーズに動作し、効率的に構築、最適化できるプラットフォームの配信を確実に行う適切なプロセスが必要です。
 
-e コマースサイトを干渉なしに実行し続けるために十分に考慮し、厳格にテストする必要がある側面の不足はありません。 Not only must you identify the right solutions to tackle every aspect of the site—from data storage and programming to caching and security—but you need the right process to ensure the delivery of a platform that both runs smoothly and can be built and optimized efficiently.
+この節では、Adobe Commerceの多くの実装でテストおよび実行されたツール、ソリューション、プロセス、方法論について説明するだけでなく、特定のビジネスニーズや目標に最適なソリューションに関する推奨事項についても説明します。
 
-このセクションでは、多数のAdobe・コマースの実装でテストおよび実行されたツール、ソリューション、プロセス、方法論について説明するだけでなく、特定のビジネス・ニーズと目標に最も適したソリューションに関する推奨事項についても説明します。
+次の表に、プラットフォーム上でのパフォーマンスを向上させるためにAdobe Commerce内で使用できる、推奨されるソリューションを示します。
 
-次の表に、プラットフォーム上でのパフォーマンスを向上させるためにAdobeコマース内で使用できる、推奨されるソリューションを示します。
-
-| Purpose | Tool |
+| 目的 | ツール |
 |------------------------------------------|-------------------------|
-| Database | MySQL、MariaDB、Percona |
+| データベース | MySQL、MariaDB、Percona |
 | プログラミング言語 | PHP, JS, HTML, LESS CSS |
 | 統合開発環境 (IDE) | Eclipse、PHPStorm |
-| Web サーバー | Nginx、Apache |
+| Web サーバー | Nginx(Apache) |
 | キャッシュサービス | ワニス・レディス |
 | 検索サービス | Elasticsearch |
 | メッセージキューサービス | RabbitMQ |
@@ -30,43 +30,43 @@ e コマースサイトを干渉なしに実行し続けるために十分に考
 
 ## データベース
 
-There are three different tools that we use depending on the needs of the brand. MySQL は、ストアが極端な負荷を処理することを期待していない場合、Adobeコマースデータベースとして優れたベースラインソリューションです。
+ブランドのニーズに応じて使用するツールは 3 種類あります。 MySQL は、ストアで極端な負荷に対処できないと考えられる場合、Adobe Commerceデータベースとして優れたベースラインソリューションです。
 
-MariaDB はコミュニティに焦点を当て、純粋なパフォーマンスよりも機能に関心を持つユーザーに適しています。 MariaDB supports a large array of database engines, disk encryption, complex horizontal interconnectivity, and scaling features, which could be interesting for large Adobe Commerce stores.
+MariaDB はコミュニティに焦点を当て、純粋なパフォーマンスよりも機能に関心を持つユーザーにとって、より優れた機能を提供します。 MariaDB は、大規模なAdobe Commerceストアで興味深い可能性のある、大規模なデータベースエンジン、ディスク暗号化、複雑な水平相互接続、スケーリング機能をサポートしています。
 
-Percona は、パフォーマンスとピーク負荷の処理を中心とした MySQL のフォークです。 Choose MariaDB if you need more quality of life and DevOps features. Go for Percona if your goal is to gain high-load performance in large-scale datasets.
+Percona は MySQL のフォークで、パフォーマンスとピーク負荷の処理を中心にしています。 より多くの QOL と DevOps 機能が必要な場合は、MariaDB を選択します。 大規模なデータセットで高負荷パフォーマンスを実現することを目標としている場合は、Percona をご利用ください。
 
 ## プログラミング言語
 
-Adobeコマースは PHP ベースのアプリケーションで、最新のリリースは常に最新の安定した PHP バージョンと互換性があります ( 例えば、Adobeコマースバージョン 2.4 では PHP 7.4 を使用することを推奨します )。 より高いセキュリティとパフォーマンスを得るために、PHP を設定して要求処理の速度と効率を最大限に高める際には、いくつかの要因を考慮する必要があります。 Adobeコマース Web ストアフロントは、HTML、JavaScript、LESS CSS プリプロセッサーを使用して構築されています。
+Adobe Commerceは PHP ベースのアプリケーションで、最新のリリースは常に最新の安定した PHP バージョンと互換性があります ( たとえば、Adobe Commerceバージョン 2.4 では PHP 7.4 を使用することをお勧めします )。 より高いセキュリティとパフォーマンスを得るために、PHP を設定する際に、要求処理の速度と効率を最大にするには、いくつかの要因を考慮する必要があります。 Adobe Commerce Web ストアフロントは、HTML、JavaScript、LESS CSS プリプロセッサーを使用して構築されています。
 
 ## Web サーバー
 
-Adobeコマースは、Nginx および Apache Web サーバーを完全にサポートします。 Adobeコマースには、次の両方の推奨設定ファイルのサンプルが用意されています。
+Adobe Commerceは Nginx および Apache Web サーバーを完全にサポートしています。 Adobe Commerceには、両方の推奨設定ファイルのサンプルが用意されています。
 
 - **Nginx**—`<magento_home>/nginx.conf.sample`
-- **Apache** —`<magento_home>.htaccess.sample`
+- **Apache**—`<magento_home>.htaccess.sample`
 
-Nginx サンプルには、パフォーマンスを向上させるための設定が含まれ、再構成が必要ないように設計されています。
+Nginx サンプルには、パフォーマンスを向上させるための設定が含まれ、再構成が少なくて済むように設計されています。
 
 ## キャッシュサービス
 
-Adobeコマースは、Redis、Memcache、filesystem、データベースなど、キャッシュとセッションデータを保存する多数のオプションを提供します。 複数の Web ノードを持つ設定では、Redis が最適なオプションです。
+Adobe Commerceには、Redis、Memcache、filesystem、database など、キャッシュとセッションのデータを保存する多くのオプションが用意されています。 複数の Web ノードを持つ設定では、Redis が最適なオプションです。
 
-ストアのフルページキャッシュサーバーとして Vanrish を使用することを強くお勧めします。 Adobeコマースは、パフォーマンスに関する推奨設定をすべて含む、Vanrish 用のサンプル設定ファイルを配布しています。
+ストアのフルページキャッシュサーバーとして Vanrish を使用することを強くお勧めします。 Adobe Commerceは、パフォーマンスに関する推奨設定をすべて含む、Warnish 用のサンプル設定ファイルを配布しています。
 
-## Search services
+## 検索サービス
 
-Adobeコマースバージョン 2.4 以降の場合、カタログ検索ソリューションとしてElasticsearchを使用するように、すべてのインストールを設定する必要があります。 Elasticsearchは、カタログ内の製品をすばやく詳細検索できます。 Elasticsearch is optional for releases prior to 2.4, but it’s recommended.
+Adobe Commerceバージョン 2.4 以降の場合、カタログ検索ソリューションとしてElasticsearchを使用するように、すべてのインストールを設定する必要があります。 Elasticsearchは、カタログ内の製品に関する迅速で詳細な検索を提供します。 Elasticsearchは 2.4 より前のリリースではオプションですが、お勧めします。
 
 ## メッセージキューサービス
 
-メッセージキューは、メッセージの送信者と受信者が互いに接触しない非同期通信メカニズムを提供する。 RabbitMQ is an open-source message broker that offers a reliable, highly available, scalable, and portable messaging system.
+メッセージキューは、メッセージの送信者と受信者が互いに連絡を取らない非同期通信メカニズムを提供する。 RabbitMQ は、信頼性が高く、可用性が高く、拡張性が高く、ポータブルなメッセージングシステムを提供するオープンソースのメッセージブローカーです。
 
 ## セキュリティツール
 
-[Adobe・コマース・セキュリティ・スキャン・ツール ](https://docs.magento.com/user-guide/magento/security-scan.html) を使用すると、ストア Web サイトを定期的に監視し、セキュリティ上の既知のリスク、マルウェア、最新でないソフトウェアの更新を受け取ることができます。 通常、このツールの使用は、ユーザー受け入れテスト (UAT) を開始する際に開始します。 Commerce Security Scan Tool は、無料ですべての実装とAdobeCommerce のバージョンで利用できますが、AdobeCommerce の他に、CI/CD プロセス中および各リリース前に使用できる選択肢があります。
+この [Adobe Commerce Security Scan Tool](https://docs.magento.com/user-guide/magento/security-scan.html) を使用すると、ストアの Web サイトを定期的に監視し、既知のセキュリティリスク、マルウェア、最新のソフトウェアの更新を受け取ることができます。 通常、このツールの使用は、ユーザー受け入れテスト (UAT) を開始する際に開始します。 Besides the Adobe Commerce Security Scan tool, which is free and available for all implementations and versions of Adobe Commerce, there are other choices that can be used during the CI/CD process and before each release.
 
-SonarQube は、コードの技術品質を分析および測定するために設計された、オープンソースの品質管理プラットフォームです。 SonarQube は、コードのバグ、構文エラー、脆弱性に関する完全なレポートを提供するだけでなく、コードの修正方法や例も提供しています。 SonarQube は、CI/CD 環境で、デプロイ前にコードを分析できるツールとして使用するのに最適です。
+SonarQube は、コードの技術的品質を分析および測定するために設計された、オープンソースの品質管理プラットフォームです。 SonarQube では、コードのバグ、構文エラー、脆弱性に関する完全なレポートを提供できるだけでなく、コードの修正方法や例を提供しています。 SonarQube is perfect to use in a CI/CD environment as a tool capable of analyzing the code before it’s deployed.
 
-Zed Attack Proxy(ZAP) は、世界中の何千ものペンテスターが使用する無料のセキュリティテストツールです。 ZAP は OWASP によって開発され、手動セキュリティテストに最も優れたツールの 1 つです。
+Zed Attack Proxy(ZAP) は、世界中の何千ものペンテスターが使用する無料のセキュリティテストツールです。 ZAP は OWASP が開発し、手動のセキュリティテストに最も優れたツールの 1 つです。
