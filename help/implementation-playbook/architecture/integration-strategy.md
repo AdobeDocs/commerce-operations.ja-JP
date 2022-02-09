@@ -2,9 +2,9 @@
 title: Adobe Commerce統合戦略
 description: Adobe Commerce実装の統合戦略とオプションを確認します。
 exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 1e545d8d5554e73f522469e526ed098395db9075
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adobe Commerce GraphQL API は、次のような他のストアフロントとの統合に使用できる、包括的なストアフロントカバレッジを提供します。
 
-- Experience Manaber や Bloomreach などのデジタルエクスペリエンスAdobe(DXP)
+- Adobe Experience Managerや Bloomreach などのデジタルエクスペリエンスプラットフォーム (DXP)
 - Drupal や WordPress などのコンテンツ管理システム (CMS)
 - Adobe Commerce、PWA Studio、Vue Storefront などの最新のカスタムストアフロントアプリケーション
 
