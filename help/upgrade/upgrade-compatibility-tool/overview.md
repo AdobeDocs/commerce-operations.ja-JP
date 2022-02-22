@@ -1,9 +1,9 @@
 ---
 title: の概要 [!DNL Upgrade Compatibility Tool]
 description: 詳しくは、 [!DNL Upgrade Compatibility Tool] Adobe Commerceプロジェクトに役立つ情報です。
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: e6b6c61aa3fc7c3f22e3a1450b43015f1a7ffed7
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,16 +21,20 @@ ht-degree: 0%
 
 これは、Adobe Commerceバージョンのリリースごとに、Composer パッケージとして配布されます。 詳しくは、 [開発者](../upgrade-compatibility-tool/developer.md) トピックを参照してください。
 
-詳しくは、 [インストール](../upgrade-compatibility-tool/install.md) を使用して [!DNL Upgrade Compatibility Tool].
+詳しくは、 [インストール](../upgrade-compatibility-tool/install.md) の最初の手順のトピック [!DNL Upgrade Compatibility Tool].
 
 ## 改善に役立つ [!DNL Upgrade Compatibility Tool]
 
-を [!DNL Upgrade Compatibility Tool] チーム、エンジニアリングSlackチャネルでお問い合わせください [[!DNL Upgrade Compatibility Tool]](https://magentocommeng.slack.com/archives/C019Y143U9F).
+を [!DNL Upgrade Compatibility Tool] チーム、エンジニアリングSlackチャネルでお問い合わせください [[!DNL Upgrade Compatibility Tool]](https://magentocommeng.slack.com/archives/C019Y143U9F). ツールの改善に役立つフィードバック、問題、提案をお聞かせください。
 
->[!NOTE]
->
->ツールの改善に役立つフィードバック、問題、提案をお聞かせください。
+この [!DNL Upgrade Compatibility Tool] で定義されたルールを使用 [コーディング規格](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html) プロジェクトがAdobe Commerceのベストプラクティスに従っていること、およびの改善と拡張に役立っていることを確認する [!DNL Upgrade Compatibility Tool].
 
-互換性分析を改善する方法をご存じですか？ 次を確認します。 [投稿](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html) ページを参照してください。
+詳しくは、 [投稿](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html)  このプロジェクトへの投稿の詳細については、トピックを参照してください。
 
-詳しくは、 [リソース](https://devdocs.magento.com/community/resources/resources.html) ページを参照してください。
+## リソース
+
+Adobe Commerceのアップグレードを理解できるよう、以下のリソースを開発しました。
+
+- [アップグレードガイド](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
+- [今後のリリース](https://devdocs.magento.com/release/)
+- [コミュニティリソース](https://devdocs.magento.com/community/resources/resources.html) ページを参照してください。
