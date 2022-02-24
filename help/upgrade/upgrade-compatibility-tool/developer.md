@@ -1,9 +1,9 @@
 ---
-title: '[!DNL Upgrade Compatibility Tool] 開発者情報'
+title: '"[!DNL Upgrade Compatibility Tool] 開発者情報»'
 description: のカスタマイズ [!DNL Upgrade Compatibility Tool] API インデックスの統合を使用する。
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: 97295df89fda393c8cf8675f8f4be92ac6f38a6a
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
