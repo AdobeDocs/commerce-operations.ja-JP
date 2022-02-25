@@ -1,9 +1,9 @@
 ---
 title: パッチの動作
 description: Adobe CommerceおよびMagento Open Source用の様々なタイプのパッチとその動作について説明します。
-source-git-commit: 38b054bbae8ba116557ce367c8397c646c837558
+source-git-commit: 06ac3169a5e3813e4f50246f54f91998e14b5985
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -91,8 +91,8 @@ index c8a6fef58d31..7d01c195791e 100644
 次のいずれかの方法でパッチを適用できます。
 
 - [品質パッチツール](https://devdocs.magento.com/quality-patches/tool.html)
-- [コマンドライン](../patches/apply.md#command-line)
-- [コンポーザー](../patches/apply.md#composer)
+- [コマンドライン](/help/upgrade/patches/apply.md#command-line)
+- [コンポーザー](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
