@@ -1,9 +1,9 @@
 ---
 title: Git ベースのインストールのアップグレード
 description: Git リポジトリから複製したAdobe CommerceまたはMagento Open Sourceのインストールをアップグレードします。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 7bcfbc4483f4b6d4c1a5e852adbd1cd81bc136b7
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '126'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,7 @@ ht-degree: 0%
 
 貢献している開発者の場合は、アップグレードするには：
 
-1. サーバーにログインします。
-
-1. 次に切り替え： [ファイルシステム所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-
-1. アプリケーションを複製したディレクトリに移動します。 例：
-
-   ```bash
-   cd /var/www/magento2
-   ```
+{{$include /help/_includes/server-login.md}}
 
 1. 変更を `composer.json` ファイルを上書きする理由は、次の手順で上書きされるからです。
 

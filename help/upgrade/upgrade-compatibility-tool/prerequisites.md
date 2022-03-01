@@ -1,15 +1,17 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] 前提条件»'
 description: 'システムが、 [!DNL Upgrade Compatibility Tool] Adobe Commerceプロジェクト用 '
-source-git-commit: 97295df89fda393c8cf8675f8f4be92ac6f38a6a
+source-git-commit: 2e2f55ff659c36ffce7cf26224d5ceb61e53c42d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '134'
 ht-degree: 0%
 
 ---
 
 
 # [!DNL Upgrade Compatibility Tool] 前提条件
+
+{{commerce-only}}
 
 の実行 [!DNL Upgrade Compatibility Tool] が、 **前** Adobe Commerceのバージョンをアップグレードしています。
 
@@ -22,7 +24,7 @@ ht-degree: 0%
 | Node.js | [Node.js](https://nodejs.org/) (`^12.22.0`, `^14.17.0`または `>=16.0.0`) |
 | メモリ制限 | 2GB 以上の RAM |
 | Adobe Commerce Access キー | なし |
-| Adobe Commerce （Open Source または Enterprise） | なし |
+| Adobe Commerce | なし |
 
 次を実行できます。 [!DNL Upgrade Compatibility Tool] （任意のオペレーティングシステム）。 を実行する必要はありません。 [!DNL Upgrade Compatibility Tool] Adobe Commerceインスタンスの場所
 

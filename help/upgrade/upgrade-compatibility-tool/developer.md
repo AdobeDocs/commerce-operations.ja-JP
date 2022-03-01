@@ -1,15 +1,17 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] 開発者情報»'
 description: のカスタマイズ [!DNL Upgrade Compatibility Tool] API インデックスの統合を使用する。
-source-git-commit: 97295df89fda393c8cf8675f8f4be92ac6f38a6a
+source-git-commit: 317a044e66fe796ff66b9d8cf7b308f741eb82c1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
 
 
 # [!DNL Upgrade Compatibility Tool] 開発者情報
+
+{{commerce-only}}
 
 このトピックには、Adobe Commerceコードを緊密に連携し、 [!DNL Upgrade Compatibility Tool]. この知識を使用して、ツールのコンポーネントをカスタマイズできます。
 
