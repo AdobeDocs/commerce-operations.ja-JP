@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] 前提条件»'
 description: 'システムが、 [!DNL Upgrade Compatibility Tool] Adobe Commerceプロジェクト用 '
-source-git-commit: 2e2f55ff659c36ffce7cf26224d5ceb61e53c42d
+source-git-commit: c4769b555df49ed2f0b2fffbeaf458c5a64816ba
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -29,3 +29,5 @@ ht-degree: 0%
 次を実行できます。 [!DNL Upgrade Compatibility Tool] （任意のオペレーティングシステム）。 を実行する必要はありません。 [!DNL Upgrade Compatibility Tool] Adobe Commerceインスタンスの場所
 
 ～に必要だ [!DNL Upgrade Compatibility Tool] Adobe Commerceインスタンスのソースコードにアクセスできるようにする。 例えば、あるサーバーにインストールし、別のサーバー上のAdobe Commerceインストール場所を示すことができます。 詳しくは、 [インストール](../upgrade-compatibility-tool/install.md) トピックを参照してください。
+
+を実行している場合、 [!DNL Upgrade Compatibility Tool] 大きなモジュールやファイルを持つAdobe Commerceインスタンスに対しては、このツールに大量の RAM（2GB 以上の RAM）が必要になる場合があります。
