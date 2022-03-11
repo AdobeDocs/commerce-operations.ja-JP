@@ -1,7 +1,7 @@
 ---
 title: アップグレードプロセスの概要
 description: ストアフロントの安全性と効率的な運用を維持するAdobe CommerceおよびMagento Open Sourceプロジェクトのアップグレード方法について説明します。
-source-git-commit: 8f983e6791da852350fa061fd3119abcdaa03cbf
+source-git-commit: 18f5e9c96377e0299fdc776a69393f2ceef3618b
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 0%
@@ -76,7 +76,7 @@ _それで…なぜアップグレードするの？_
 
 Adobe: [リリーススケジュール](https://devdocs.magento.com/release/) 毎年、マーチャントの計画プロセスを容易にし、各パッチリリースサイクルをアップグレードすることをお勧めします。 PCI に準拠したままにするには、マーチャントは最新のパッチまたはセキュリティパッチを使用する必要があります。 以下のタイムラインは、2022 年のメジャーリリースおよび EOL イベントを示しています。
 
-![](../assets/upgrade-guide/2022-release-timeline.jpg)
+![](../assets/upgrade-guide/2022-release-timeline.png)
 
 注意すべき重要なイベントは次のとおりです。
 
