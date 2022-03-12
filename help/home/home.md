@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;home;popular topics
 title: ホーム
 description: Adobe Commerceの運用製品ドキュメントのインデックスを参照します。
-source-git-commit: 3637e81bf3951d0130941613d88488405073e7e1
+source-git-commit: 63ceb5bad64a7ed5bce3ad2af76966eb6883d62e
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
@@ -12,18 +12,7 @@ ht-degree: 0%
 
 # Adobe Commerce Operational Guides
 
-このページには、Adobe CommerceおよびMagento Open Sourceのすべての運用ガイドへのリンクが含まれています。
-
-## 最新情報
-
-次の表に、新しいトピックや既存のトピックに対する大幅な更新など、最近の変更点を示します。
-
-| 説明 | タイプ |
-|------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 追加済み [情報](../upgrade/upgrade-compatibility-tool/overview.md) アップグレード互換性ツールのルールの定義方法について | 大幅な更新 |
-| 古いアップグレード互換性ツールを削除しました [エラーコード](../upgrade/upgrade-compatibility-tool/error-messages.md). | 技術 |
-
-## ガイド
+Adobe CommerceおよびMagento Open Sourceプラットフォームにデプロイされたコマースプロジェクトを開発、デプロイ、維持するための概念、プロセス、ツール、ベストプラクティスに関する実用的な情報を入手します。
 
 <table>
 <tr>
@@ -63,7 +52,7 @@ ht-degree: 0%
 <tr>
   <td valign="top">
     <a href="../upgrade/overview.md">
-      <img alt="アップグレード" src="../assets/icons/download-cloud.svg" width="40" height="40"/>
+      <img alt="アップグレード" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong>アップグレード</strong></a>
@@ -129,3 +118,12 @@ ht-degree: 0%
   </td>
 </tr>
 </table>
+
+## 最新情報
+
+新しいドキュメントと既存ドキュメントの重要な更新について説明します。
+
+| 変更 | タイプ |
+|----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| 追加済み [情報](../upgrade/upgrade-compatibility-tool/overview.md) アップグレード互換性ツールのルールの定義方法について | 大幅な更新 |
+| 古いアップグレード互換性ツールを削除しました [エラーコード](../upgrade/upgrade-compatibility-tool/error-messages.md). | 技術 |
