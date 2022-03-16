@@ -1,27 +1,27 @@
 ---
 title: クラウドインフラストラクチャの地域
-description: Review diagrams that show the AWS and Azure regions available for Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Adobe Commerceで使用可能なAWSおよび Azure 地域を示す図を確認します。
+exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '62'
 ht-degree: 0%
 
 ---
 
+# クラウド地域
 
-# Cloud regions
+以下の節では、クラウドインフラストラクチャ上のAdobe Commerceで使用できる様々なAWSおよび Azure 地域について詳しく説明します。
 
-The following sections provide details about the different AWS and Azure regions that available for Adobe Commerce on cloud infrastructure.
+## AWS
 
-## AWS リージョン
-
-![AWS リージョンを示す図](../../../assets/playbooks/aws-regions.svg)
+![AWS地域を示す図](../../../assets/playbooks/aws-regions.svg)
 
 >[!NOTE]
 >
-> Only on-premises in China and Russia.
+> 中国とロシアでのオンプレミスのみ。
 
-## Azure リージョン
+## Azure 地域
 
 ![Azure 地域を示す図](../../../assets/playbooks/azure-regions.svg)
 

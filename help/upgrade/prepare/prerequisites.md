@@ -3,7 +3,7 @@ title: 前提条件
 description: 前提条件の手順を完了して、Adobe CommerceまたはMagento Open Sourceプロジェクトのアップグレードを準備します。
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---

@@ -1,23 +1,23 @@
 ---
 title: コマースチェックリスト
-description: eコマースプロジェクトの整理に役立つ便利なチェックリストを見つけます。
-source-git-commit: 9901503a124011ea8ada6b77a6947b5c5dbadbdf
+description: e コマースプロジェクトの整理に役立つ便利なチェックリストを見つけます。
+exl-id: 4b5e5bca-7b5b-46e7-b3eb-ef6289d238ed
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%
 
 ---
 
-
 # コマースのチェックリストとテンプレート
 
 このページのテンプレートとチェックリストを使用して、コマースプロジェクトを整理します。
 
-## コマースのチェックリスト
+## コマースチェックリスト
 
-リンクをクリックして、チェックリストをダウンロードします。
+チェックリストをダウンロードするには、次のリンクをクリックします。
 
-- [満期](../../assets/playbooks/checklists/maturity.pptx)
+- [成熟度](../../assets/playbooks/checklists/maturity.pptx)
 - [運用開始](../../assets/playbooks/checklists/go-live.pptx)
 - [パフォーマンス](../../assets/playbooks/checklists/performance.pptx)
 - [コマースプラットフォームの移行](../../assets/playbooks/checklists/commerce-platform-migration.pptx)
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 - [ワークショップ前のアンケートの要件](../../assets/playbooks/templates/requirements-questionnaire.pptx)
 - [コマース戦略ドキュメント](../../assets/playbooks/templates/commerce-strategy-document.pptx)
-- [eコマースの運用準備](../../assets/playbooks/templates/ecommerce-operational-readiness.pptx)
-- [eコマースプラットフォームの機能](../../assets/playbooks/templates/ecommerce-platform-features.pptx)
-- [商人の自己サイト評価](../../assets/playbooks/templates/merchant-self-site-assessment.pptx)
+- [e コマース運用準備](../../assets/playbooks/templates/ecommerce-operational-readiness.pptx)
+- [e コマースプラットフォームの機能](../../assets/playbooks/templates/ecommerce-platform-features.pptx)
+- [商人の自己サイトの評価](../../assets/playbooks/templates/merchant-self-site-assessment.pptx)
 - [使用例](../../assets/playbooks/templates/use-case.pptx)

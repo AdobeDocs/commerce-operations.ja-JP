@@ -3,7 +3,7 @@ title: のインストール [!DNL Upgrade Compatibility Tool]
 description: 次の手順に従って、 [!DNL Upgrade Compatibility Tool] Adobe Commerceプロジェクト用
 source-git-commit: 218b099caa883f66ddda48407fb789e51fedc203
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---

@@ -20,7 +20,7 @@ e コマースサイトを干渉なしに実行し続けるために十分に考
 | 目的 | ツール |
 |------------------------------------------|-------------------------|
 | データベース | MySQL、MariaDB、Percona |
-| プログラミング言語 | PHP, JS, HTML, LESS CSS |
+| プログラミング言語 | PHP, JS,HTML, LESS CSS |
 | 統合開発環境 (IDE) | Eclipse、PHPStorm |
 | Web サーバー | Nginx(Apache) |
 | キャッシュサービス | ワニス・レディス |
@@ -65,8 +65,8 @@ Adobe Commerceバージョン 2.4 以降の場合、カタログ検索ソリュ�
 
 ## セキュリティツール
 
-この [Adobe Commerce Security Scan Tool](https://docs.magento.com/user-guide/magento/security-scan.html) を使用すると、ストアの Web サイトを定期的に監視し、既知のセキュリティリスク、マルウェア、最新のソフトウェアの更新を受け取ることができます。 通常、このツールの使用は、ユーザー受け入れテスト (UAT) を開始する際に開始します。 Besides the Adobe Commerce Security Scan tool, which is free and available for all implementations and versions of Adobe Commerce, there are other choices that can be used during the CI/CD process and before each release.
+この [Adobe Commerce Security Scan Tool](https://docs.magento.com/user-guide/magento/security-scan.html) を使用すると、ストアの Web サイトを定期的に監視し、既知のセキュリティリスク、マルウェア、最新のソフトウェアの更新を受け取ることができます。 通常、このツールの使用は、ユーザー受け入れテスト (UAT) を開始する際に開始します。 Adobe Commerceのすべての実装およびバージョンで無料で利用できるAdobe Commerce Security Scan ツールに加えて、CI/CD プロセス中および各リリース前に使用できる他の選択肢があります。
 
-SonarQube は、コードの技術的品質を分析および測定するために設計された、オープンソースの品質管理プラットフォームです。 SonarQube では、コードのバグ、構文エラー、脆弱性に関する完全なレポートを提供できるだけでなく、コードの修正方法や例を提供しています。 SonarQube is perfect to use in a CI/CD environment as a tool capable of analyzing the code before it’s deployed.
+SonarQube は、コードの技術的品質を分析および測定するために設計された、オープンソースの品質管理プラットフォームです。 SonarQube では、コードのバグ、構文エラー、脆弱性に関する完全なレポートを提供できるだけでなく、コードの修正方法や例を提供しています。 SonarQube は、CI/CD 環境で、デプロイ前にコードを分析できるツールとして使用するのに最適です。
 
 Zed Attack Proxy(ZAP) は、世界中の何千ものペンテスターが使用する無料のセキュリティテストツールです。 ZAP は OWASP が開発し、手動のセキュリティテストに最も優れたツールの 1 つです。

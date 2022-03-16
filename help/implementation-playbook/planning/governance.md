@@ -1,49 +1,49 @@
 ---
-title: Project Governance
-description: Apply our project governance recommendations to your Adobe Commerce implementation.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+title: プロジェクトガバナンス
+description: プロジェクトガバナンスに関する推奨事項をAdobe Commerceの実装に適用します。
+exl-id: adf53a2a-1673-441a-84d3-4cdda47d6aa5
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
 
 ---
 
-
 # プロジェクトガバナンス
 
-Project governance is an oversight function aligned with the organization’s governance structure and encompasses the project life cycle. It provides the project manager and team with structure, processes, decision-making models, and tools for managing and controlling the project, while also ensuring the successful delivery of the project. プロジェクトガバナンスは、特に複雑で戦略的なプロジェクトにとって重要な要素です。
+プロジェクトガバナンスは、組織のガバナンス構造と連携し、プロジェクトのライフサイクルを包含する監視機能です。 プロジェクトマネージャーとチームに、プロジェクトの構造、プロセス、意思決定モデル、プロジェクトを管理および制御するためのツールを提供し、また、プロジェクトの配信を成功に導きます。 プロジェクトガバナンスは、特に複雑で戦略的なプロジェクトにとって重要な要素です。
 
-ガバナンスモデルは、カスタムで効果的な慣行を定義、ドキュメント、伝達し、プロジェクトを制御し、成功を確実にするために各レベルで定期的に表示する包括的な方法を提供します。 It contains a framework for making decisions; defines roles, responsibilities, and liabilities for the accomplishment of the project; and governs the effectiveness. ガバナンスの構造は、実行チームからエグゼクティブ管理に至るまで、アクティビティ、レポート、エスカレーション、および情報フローを定義します。
+ガバナンスモデルは、カスタムおよび効果的なプラクティスを定義、ドキュメント、伝達し、プロジェクトを制御し、成功を確実にするためにあらゆるレベルで定期的に表示する包括的な方法を提供します。 決定を下すためのフレームワークが含まれます。プロジェクトの成果に対する役割、責任、責任を定義する。有効性を管理する。 ガバナンス構造は、実行チームからエグゼクティブ管理に至るまで、アクティビティ、レポート、エスカレーション、および情報フローを定義するまで、まとめられます。
 
 ![プロジェクトガバナンスの解説図](../../assets/playbooks/project-governance.svg)
 
-At various levels, the teams look into specific sprint and project metrics to understand the progress and take corrective actions as necessary. これらのスプリントレベルの指標には、各スプリントの速度とバーンダウンが含まれます。
+チームは様々なレベルで、特定のスプリントとプロジェクト指標を調べて進捗を把握し、必要に応じて是正措置を講じます。 これらのスプリントレベルの指標には、各スプリントの速度とバーンダウンが含まれます。
 
-## Regular meeting details
+## 定期的な会議の詳細
 
-- 四半期別のビジネスレビュー
+- 四半期ごとのビジネスレビュー
 
-   - 成長エスカレーション戦略の議論
+   - 成長のエスカレーション戦略について話し合う
 
-   - 現在の成功と目標を強調
+   - 現在の成功と目標を強調表示
 
-   - 今後の四半期に必要な結果に基づいて調整
+   - 今後の四半期に必要な結果に基づいて整列
 
 - 月次運営委員会
 
    - プロジェクトの進行状況の調整とレビュー
 
-   - 主要な影響項目に対する意思決定（存在する場合）
+   - 重要な影響項目に関する意思決定（存在する場合）
 
-   - 電通は顧客満足度を確保し、問題を記録し、対処
+   - 電通は顧客満足度を保証し、問題を記録し、対処します
 
 - 週次プロジェクト委員会
 
-   - 目標、計画、組織の決定
+   - 目標、計画、週の組織を決定
 
    - 必要に応じてアーキテクチャの決定を行う
 
-   - Review &amp; act on project status reports
+   - プロジェクトステータスレポートの確認と操作
 
    - プラットフォームと機能のデモ
 
@@ -51,15 +51,15 @@ At various levels, the teams look into specific sprint and project metrics to un
 
 - 毎日の会議
 
-   - 現在のスプリント/ボード/未払いのチケットを含む、アクション項目について議論し、フォローアップする
+   - 現在のスプリント/ボード/未処理のチケットを含む、アクション項目について議論し、フォローアップします
 
    - プロジェクトの進行状況の監視
 
-## Performance KPIs
+## パフォーマンス KPI
 
-Apart from the sprint metrics, it is also essential to measure project and quality performance KPIs. Not only does this help to ensure the level of quality throughout the plan, but it keeps the team on track and prevents the project from going off the rails.
+スプリントの指標に加え、プロジェクトと品質の KPI を測定することも重要です。 これは、計画全体の品質レベルを確保するのに役立つだけでなく、チームを常に軌道に乗せ、プロジェクトが軌道から外れるのを防ぎます。
 
-## Storyboard and velocity
+## ストーリーボードと速度
 
 ![かんばんボードの例](../../assets/playbooks/kanban-board-chart.svg)
 
@@ -67,12 +67,12 @@ Apart from the sprint metrics, it is also essential to measure project and quali
 
 ![スプリントとリリースのバーンダウンチャートの例](../../assets/playbooks/sprint-release-burndown.svg)
 
-課題や変更は、プロジェクトの期間中、常に発生します。 課題が発生した場合に、適切な担当者が追跡、測定、ピボットを行えるようにすることで、目標を達成し、その結果に満足できるプロジェクトからの出発確率が高まります。
+課題や変更は、プロジェクトの期間中、常に発生します。 課題が発生した際に、適切な担当者が追跡、測定およびピボットできるようにすることで、目標を満たし、結果に満足したプロジェクトから生じる可能性が高まります。
 
 <table>
 <thead>
   <tr>
-    <th>主要なパフォーマンス測定</th>
+    <th>主要なパフォーマンスの測定</th>
     <th>単位</th>
     <th>レポートされる指標</th>
   </tr>
@@ -81,22 +81,22 @@ Apart from the sprint metrics, it is also essential to measure project and quali
   <tr>
     <td>テスト範囲</td>
     <td>%</td>
-    <td>テストケースで扱われるテスト可能な要件の数 VS ベースラインでテスト可能な要件の合計</td>
+    <td>テストケースで扱われるテスト可能な要件の数と基本的なテスト可能な要件の合計</td>
   </tr>
   <tr>
     <td>欠陥密度</td>
     <td>%</td>
-    <td># of valid Defects found VS Total of Test cases executed</td>
+    <td>検出された有効な欠陥の数と実行されたテストケースの合計</td>
   </tr>
   <tr>
     <td>SIT/UAT/実稼動環境への欠陥の漏れ</td>
     <td>%</td>
-    <td>生産で報告された不具合と生産で報告された不具合+ QA+UAT で報告された不具合</td>
+    <td>生産で報告された不具合と、生産で報告された不具合+ QA+UAT で報告された不具合</td>
   </tr>
   <tr>
-    <td>テストの効果</td>
+    <td>テスト効果</td>
     <td>%</td>
-    <td>発生した有効な欠陥/発生した有効な欠陥です。</td>
+    <td>発生した有効な欠陥/発生した有効な欠陥リジェクトされた欠陥</td>
   </tr>
   <tr>
     <td>コード品質</td>

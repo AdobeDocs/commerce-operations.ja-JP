@@ -3,7 +3,7 @@ title: モジュールの更新エラー後にロールバック
 description: モジュールの更新エラーが発生した場合は、Adobe CommerceまたはMagento Open Sourceのアップグレードをトラブルシューティングします。
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '93'
 ht-degree: 0%
 
 ---

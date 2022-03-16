@@ -3,7 +3,7 @@ title: '"[!DNL Upgrade Compatibility Tool] 前提条件»'
 description: 'システムが、 [!DNL Upgrade Compatibility Tool] Adobe Commerceプロジェクト用 '
 source-git-commit: c4769b555df49ed2f0b2fffbeaf458c5a64816ba
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---

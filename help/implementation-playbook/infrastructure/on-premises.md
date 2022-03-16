@@ -11,31 +11,31 @@ ht-degree: 0%
 
 # Adobe Commerceオンプレミスインフラ
 
-The motivations for starting a new Adobe Commerce implementation or moving an existing on-premises Adobe Commerce implementation to the cloud are numerous, but the most common strategic drivers are reducing capital expenditure, decreasing ongoing cost, improving scalability and elasticity, improving time-to-market, and attaining improvements in security and compliance.
+新しいAdobe Commerceの実装を開始したり、既存のオンプレミスAdobe Commerceの実装をクラウドに移行したりする動機は多数ありますが、最も一般的な戦略的要因は、設備投資の削減、継続的なコストの削減、拡張性と弾力性の向上、市場投入時間の向上、セキュリティとコンプライアンスの向上です。
 
 次の図は、AWSインフラストラクチャにAdobe Commerceをオンプレミスでデプロイするための参照アーキテクチャを示しています。 Azure、Google Cloud、Alibaba Cloud などの他のクラウドプロバイダーは、同様のインフラストラクチャ設計と相同サービスを共有しています。
 
-![Diagram showing self-hosted Adobe Commerce infrastructure on third-party cloud services](../../assets/playbooks/on-premises-infrastructure.svg)
+![サードパーティのクラウドサービスで自己ホストされているAdobe Commerceインフラストラクチャを示す図](../../assets/playbooks/on-premises-infrastructure.svg)
 
 ここでは、上に示したインフラストラクチャの各側面の役割と機能について詳しく説明します。
 
 1. Amazon Route 53 は DNS 設定を提供します。
 
-1. AWS WAF is a web application firewall that protects Adobe Commerce against common web exploits.
+1. AWS WAF は、一般的な Web の弱点を悪用してAdobe Commerceを保護する Web アプリケーションファイアウォールです。
 
 1. Amazon CloudFront は、静的および動的な Web コンテンツの配信を高速化する高速なコンテンツ配信ネットワーク (CDN) です。
 
 1. 最初の Elastic Load Balancing アプリケーションロードバランサーは、複数のアベイラビリティーゾーンのAWS Auto Scaling グループ内の Varnish インスタンス間でトラフィックを分散します。
 
-1. Vanish Cache は、HTTP リバースプロキシをキャッシュする Web アプリケーションアクセラレータです。 The enterprise version, available via AWS marketplace, is recommended as it has better features to support cloud backends and cache-purging across dynamic hosts.
+1. Vanish Cache は、HTTP リバースプロキシをキャッシュする Web アプリケーションアクセラレータです。 AWS Marketplace で利用可能なエンタープライズバージョンは、動的ホスト間でのクラウドバックエンドとキャッシュのパージをサポートするための機能が強化されたので、お勧めします。
 
-1. The second Elastic Load Balancing application load balancer distributes traffic from Varnish Cache across the AWS Auto Scaling group of Adobe Commerce instances in multiple Availability Zones.
+1. 2 つ目の Elastic Load Balancing アプリケーションロードバランサーは、複数のアベイラビリティーゾーンにあるAdobe CommerceインスタンスのAWS Auto Scaling グループ全体に Vanish Cache からのトラフィックを分配します。
 
-1. 最新バージョンのMagento Open SourceまたはAdobe CommerceをAmazon EC2 インスタンスにインストールします。 インストールは、Adobe Commerceアプリケーション、Nginx Web サーバー、PHP で構成されます。 Build the Amazon Machine Image (AMI) to launch new instances in an Auto Scaling group.
+1. 最新バージョンのMagento Open SourceまたはAdobe CommerceをAmazon EC2 インスタンスにインストールします。 インストールは、Adobe Commerceアプリケーション、Nginx Web サーバー、PHP で構成されます。 Amazon機械画像 (AMI) を作成して、自動スケーリンググループの新しいインスタンスを起動します。
 
 1. AmazonElasticsearchサービスは、Adobe Commerceカタログ検索用のElasticsearch管理サービスです。
 
-1. Amazon ElastiCache for Redis provides a caching layer for database.
+1. Amazon ElastiCache for Redis は、データベース用のキャッシュ層を提供します。
 
 1. Amazon Aurora または AmazonRDS を使用して、データベース管理（高可用性およびマルチマスター設定を含む）をシンプル化します。
 
@@ -45,7 +45,7 @@ The motivations for starting a new Adobe Commerce implementation or moving an ex
 
 ## クラウドサービス
 
-In addition to providing a supporting technology platform for the enablement of DevOps processes on AWS around your Adobe Commerce environment, AWS provides a collection of services that can provide (in the absence of) or augment your existing software configuration management (SCM) solutions. これには、AWSCodeCommit、AWSCodeBuild、AWSCodePipeline、AWSCodeDeploy が含まれます。この AWSCodeDeploy では、管理されたソース管理、ビルド、継続的統合/継続的デプロイメント (CI/CD)、デプロイメントサービスを実行できます。
+AWSは、Adobe Commerce環境におけるAWSでの DevOps プロセスを有効にするためのサポートテクノロジープラットフォームを提供するほか、（がない場合に）提供したり、既存のソフトウェア設定管理 (SCM) ソリューションを拡張したりできるサービスの集まりを提供します。 これには、AWSCodeCommit、AWSCodeBuild、AWSCodePipeline、AWSCodeDeploy が含まれます。この AWSCodeDeploy では、管理されたソース管理、ビルド、継続的統合/継続的デプロイメント (CI/CD)、デプロイメントサービスを実行できます。
 
 ## クラウドの移行
 

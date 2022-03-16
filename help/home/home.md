@@ -5,7 +5,7 @@ description: Adobe Commerceの運用製品ドキュメントのインデック�
 source-git-commit: 63ceb5bad64a7ed5bce3ad2af76966eb6883d62e
 workflow-type: tm+mt
 source-wordcount: '205'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

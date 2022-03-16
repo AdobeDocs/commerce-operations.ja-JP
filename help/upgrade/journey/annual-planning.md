@@ -3,7 +3,7 @@ title: 年間アップグレード計画
 description: Adobe CommerceまたはMagento Open Sourceプロジェクトの年間アップグレード計画を作成する際のヒントを確認します。
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---

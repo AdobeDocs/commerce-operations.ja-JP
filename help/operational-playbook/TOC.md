@@ -1,19 +1,19 @@
 ---
-user-guide-title: 操作用プレイブック
-user-guide-description: ビジネスを運用上の準備をして、e コマースサイトを成功に導く方法を学びます。
+user-guide-title: オペレーショナルプレイブック
+user-guide-description: e コマースサイトを成功させるために、ビジネスの運営をどのように準備すればよいかについて学習します。
 source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 
 
-# 操作用プレイブック {#operational-playbook}
+# オペレーショナルプレイブック {#operational-playbook}
 
 - [概要](overview.md)
 - コマース {#intro}
-   - [Adobeコマース](intro/commerce.md)
+   - [Adobe Commerce](intro/commerce.md)
    - [e コマースとは](intro/ecommerce.md)
    - [ビジネスモデル](intro/business-model.md)
    - [コマース操作](intro/operations.md)
@@ -25,26 +25,26 @@ ht-degree: 0%
    - [計画](leadership/planning.md)
 - 解決策 {#solution}
    - [サービスとしてのソフトウェア (SaaS)](solution/software-service.md)
-   - [PaaS（サービスとしてのプラットフォーム）](solution/platform-service.md)
+   - [サービスとしてのプラットフォーム (PaaS)](solution/platform-service.md)
    - [オンプレミスホスティング](solution/on-premises.md)
    - [クラウドとオンプレミスの比較](solution/hosting-comparison.md)
    - [サードパーティ統合](solution/integrations.md)
    - [アップグレード、バックアップ、メンテナンス](solution/maintenance.md)
-- 戦略 {#strategy}
+- 方法 {#strategy}
    - [コマース戦略](strategy/commerce.md)
    - [フォーカス](strategy/focus.md)
    - [コンテンツ戦略](strategy/content.md)
-   - [満期](strategy/maturity.md)
+   - [成熟度](strategy/maturity.md)
 - プロセス {#process}
    - [注文管理](process/order-management.md)
-   - [プロジェクト計画](process/project-plan.md)
+   - [プロジェクトプラン](process/project-plan.md)
    - [プロジェクトの範囲](process/project-scope.md)
    - [プロジェクト管理](process/project-management.md)
    - [DACI モデル](process/project-management-framework.md)
-   - [アジャイルスクラムの手法](process/agile-scrum.md)
+   - [アジャイルスクラム手法](process/agile-scrum.md)
    - [一般的なプロジェクトワークショップ](process/project-workshops.md)
    - [テスト](process/testing.md)
-- ユーザー {#people}
+- 人 {#people}
    - [チーム](people/teams.md)
    - [チーム構造](people/team-structure.md)
    - [組織構造](people/organizational-structure.md)
@@ -54,12 +54,12 @@ ht-degree: 0%
    - [文化](people/culture.md)
    - [プロジェクトチーム](people/project-teams.md)
 - 製品 {#product}
-   - [受注管理システム](product/order-management-systems.md)
-   - [出荷と受渡](product/shipping-fulfillment.md)
-   - [支払ゲートウェイ](product/payment-gateways.md)
+   - [オーダー管理システム](product/order-management-systems.md)
+   - [発送と達成](product/shipping-fulfillment.md)
+   - [支払いゲートウェイ](product/payment-gateways.md)
    - [価格](product/pricing.md)
    - [製品画像](product/images.md)
-   - [チェックアウトのフローとプロセス](product/checkout.md)
+   - [チェックアウトフローとプロセス](product/checkout.md)
    - [動的な価格管理](product/dynamic-pricing.md)
    - [プロモーション](product/promotions.md)
    - [キャンペーン管理](product/campaign-management.md)

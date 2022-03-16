@@ -3,7 +3,7 @@ title: 現在の検索エンジンはサポートされていません
 description: サポートされていない検索エンジンに関するエラーが発生した場合は、Adobe CommerceまたはMagento Open Sourceのアップグレードをトラブルシューティングします。
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---

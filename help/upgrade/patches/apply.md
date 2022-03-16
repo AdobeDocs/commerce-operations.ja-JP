@@ -3,7 +3,7 @@ title: パッチの適用
 description: Adobe CommerceまたはMagento Open Sourceプロジェクトにパッチを適用する方法について説明します。
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
