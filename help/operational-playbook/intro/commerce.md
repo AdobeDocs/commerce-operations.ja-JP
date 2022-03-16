@@ -1,15 +1,15 @@
 ---
-title: Adobe Commerceについて
+title: Adobe Commerce
 description: Adobe Commerceの説明
 exl-id: 130bae23-8a22-4523-abe2-8dc97b3881d2
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerce
+# Adobe Commerceについて
 
 Adobe Commerceはオープンコマースイノベーションの主要なプラットフォームです。 Adobe Commerceは、毎年、1000 億ドルを超えるグロスグッド商品を取り扱っています。 Adobe Commerceは、お客様に独自の魅力的なショッピングエクスペリエンス、標準搭載の機能、無制限のカスタマイズ機能、柔軟なヘッドレスアーキテクチャ、シームレスなサードパーティ統合を提供します。
 

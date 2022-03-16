@@ -1,9 +1,9 @@
 ---
-title: モジュールと拡張機能の管理
+title: モジュールと拡張機能の管理（開発者）
 description: Adobe CommerceおよびMagento Open Sourceモジュールと拡張機能は、コマンドラインインターフェイスと Composer パッケージマネージャーを使用して管理します。
-source-git-commit: 7bcfbc4483f4b6d4c1a5e852adbd1cd81bc136b7
+source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '143'
 ht-degree: 2%
 
 ---
