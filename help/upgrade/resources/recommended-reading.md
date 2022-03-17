@@ -1,9 +1,9 @@
 ---
 title: アップグレードの推奨読み取り
 description: Adobe CommerceまたはMagento Open Sourceのアップグレードを計画する際に推奨される読みを確認します。
-source-git-commit: 01ece828514da11459010f2633e370dd53e4e82e
+source-git-commit: 9700c0066d2f765ff22419f6b61beda4cf1e61bc
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ ht-degree: 0%
             <li><a href="https://helpx.adobe.com/security/products/magento/apsb22-12.html">Adobeセキュリティ情報</a></li>
             <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">Devblog</a></li>
             <li><a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">リリースノート</a></li>
-            <li><a href="https://solutionpartners.adobe.com/solution-partners.html">ソリューションパートナーポータル</a> （有効なログインを持つパートナーの場合）</li>
+            <li><a href="https://solutionpartners.adobe.com/solution-partners.html">ソリューションパートナーポータル</a></li>
           </ul>
         </td>
       <td><strong>ツール</strong>
         <ul>
             <li><a href="https://magento.com/tech-resources/downloads">Adobe Commerceバージョンのダウンロード</li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">PHPStorm プラグインでのアップグレード互換性ツールの使用方法</a> （ビデオ）</li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">アップグレード互換性ツール PhpStorm プラグイン</a> （ビデオ）</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en">アップグレード互換性ツール</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityToolSlackチャネル</a></li>
             <li><a href="https://devdocs.magento.com/quality-patches/usage.html">品質パッチツール</a></li>
@@ -60,7 +60,7 @@ ht-degree: 0%
       <td><strong>リソースのアップグレード</strong>
         <ul>
              <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-upgrade-paths-2022.html?lang=en">2022 推奨アップグレードパス</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html">2.4 アップグレードガイド</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf">2.4 アップグレードガイド</a> (PDF)</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 テクニカルアップグレードワークショップの録画</a></li>
             <li><a href="https://support.magento.com/hc/en-us/articles/360034120932">プレリリースへのアクセス</a></li>
             <li><a href="https://devdocs.magento.com/release/beta-program.html">ベータプログラムの概要</a></li>
