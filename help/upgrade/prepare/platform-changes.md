@@ -1,7 +1,7 @@
 ---
 title: プラットフォームの変更の確認
 description: Adobe CommerceまたはMagento Open Sourceプロジェクトのアップグレードを準備する際に、リリースでの主なプラットフォーム変更点について説明します。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 2b6410781d4ebb4815ff81c9719612692d176fff
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # アップグレード前にプラットフォームの変更を確認する
 
-Adobe Commerce 2.4.4 は 2022 年 3 月 8 日に一般公開され、パートナーが準備を開始する際にベータコードを利用できるようになります。 2.4.4 リリースは一意です。これは、多くのプラットフォームアップデートが含まれているからです。 PHP 8.1 と、次のようなキーフレームワークのアップグレードを組み合わせて使用します。
+Adobe Commerce 2.4.4 は 2022 年 4 月 12 日に一般公開され、3 月 29 日より、Adobe Commerceのお客様およびパートナー向けのプレリリースアクセス権が付与されます。 2.4.4 リリースは一意です。これは、多くのプラットフォームアップデートが含まれているからです。 PHP 8.1 と、次のようなキーフレームワークのアップグレードを組み合わせて使用します。
 
 - PHP 7.3 のサポートの削除
 - Elasticsearchの代わりに OpenSearch をサポート
