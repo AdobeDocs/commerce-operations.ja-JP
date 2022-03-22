@@ -2,10 +2,10 @@
 title: Adobe Commerceについて
 description: Adobe Commerceの説明
 exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 219cbe839e40afa19b3754a9d5929074ed238920
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,9 +26,9 @@ Adobe Commerceは、商人に独自の魅力的なショッピングエクスペ
 
 ## あらゆる場所でシームレスなショッピングを実行
 
-コマースの成長は、顧客のニーズがどこにあっても満たされることで加速されます。 リーチを拡大し、新しいチャネル、地域に成長し、1 つのプラットフォームで企業と消費者の両方にオンラインで販売します。 どこでも、いつでも、好きなだけ買い物にコマースを顧客に提供します。
+コマースの成長は、お客様のニーズに応えることで加速されます。 リーチを拡大し、新しいチャネル、地域に成長し、1 つのプラットフォームで企業と消費者の両方にオンラインで販売します。 どこでも、いつでも、好きなだけ買い物にコマースを顧客に提供します。
 
-- モバイルコマース
+- Mobile commerce
 - B2B エコマース
 - PWA Studio
 - グローバル展開
@@ -42,7 +42,7 @@ Adobe Commerceは、商人に独自の魅力的なショッピングエクスペ
 
 - ビジネスインテリジェンス
 - 送料
-- 在庫管理
+- Inventory management
 - 注文管理とカスタマーサービス
 
 ## 自信を持って運用
