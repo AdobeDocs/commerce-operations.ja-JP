@@ -1,9 +1,9 @@
 ---
 title: を実行します。 [!DNL Upgrade Compatibility Tool]
 description: 次の手順に従って、 [!DNL Upgrade Compatibility Tool] をAdobe Commerceプロジェクトに追加します。
-source-git-commit: ee80753da5327ebf593e007e3b4316e2b01c5a61
+source-git-commit: ba077f5d5429f2971dfbca8edd8ebd5ea44922c8
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1885'
 ht-degree: 0%
 
 ---
@@ -73,10 +73,10 @@ bin/uct upgrade:check --help
 
 - `-m, --module-path[=MODULE-PATH]`:分析するモジュールのパス
 - `-a, --current-version[=CURRENT-VERSION]`:省略した場合は、現在のAdobe CommerceバージョンのAdobe Commerceインストールのバージョンが使用されます。
-- `-c, --coming-version[=COMING-VERSION]`:省略した場合、Target Adobe Commerceバージョン、最新リリースバージョンのAdobe Commerceが使用されます。
+- `-c, --coming-version[=COMING-VERSION]`:省略した場合、Target Adobe Commerceバージョン、最新リリースバージョンのAdobe Commerceが使用されます。 使用可能なすべてのAdobe Commerceバージョンの一覧を示します。
 - `--json-output-path[=JSON-OUTPUT-PATH]`:出力を JSON 形式で書き出すファイルのパス。
 - `--html-output-path[=HTML-OUTPUT-PATH]`:出力を書き出すファイルのパスをHTML形式で指定します。
-- `--min-issue-level`:レポートに表示する最小問題レベル。 デフォルトはです。 [警告].
+- `--min-issue-level`:レポートに表示する最小問題レベル。 デフォルトのレベルは [警告].
 - `-i, --ignore-current-version-compatibility-issues`:既知の重要な問題、エラーおよび警告を [!DNL Upgrade Compatibility Tool] レポート。
 - `--context=CONTEXT`:実行コンテキスト。 このオプションは統合の目的で使用され、実行結果には影響しません。
 - `-h, --help`:特定のコマンドのヘルプを表示します。 コマンドを指定しない場合、 `list` コマンドはデフォルトの結果です。
@@ -267,6 +267,10 @@ bin/uct core:code:changes <dir> <vanilla dir>
 ```bash
 bin/uct upgrade:check <dir> -c 2.4.3
 ```
+
+>[!NOTE]
+>
+>このパラメーターは、使用可能なすべてのAdobe Commerceバージョンのリストを提供します。
 
 ここで、
 
