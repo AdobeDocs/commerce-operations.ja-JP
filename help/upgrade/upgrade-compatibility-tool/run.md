@@ -1,9 +1,9 @@
 ---
 title: を実行します。 [!DNL Upgrade Compatibility Tool]
 description: 次の手順に従って、 [!DNL Upgrade Compatibility Tool] をAdobe Commerceプロジェクトに追加します。
-source-git-commit: ba077f5d5429f2971dfbca8edd8ebd5ea44922c8
+source-git-commit: fbe47245623469a93cce5cc5a83baf467a007bc4
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '1883'
 ht-degree: 0%
 
 ---
@@ -206,7 +206,7 @@ bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
 
 A _バニラ_ インストールは、特定のリリースバージョンの指定したバージョンタグまたはブランチのクリーンインストールです。
 
-この `bin/uct core:code:changes` コマンドは、システムに vanilla インスタンスが存在するかどうかを確認します。 バニラインストールを初めて使用する場合は、インタラクティブなコマンドラインの質問が表示され、 [Adobe Commerceリポジトリ](https://repo.magento.com/).
+この `bin/uct core:code:changes` コマンドは、システムに vanilla インスタンスが存在するかどうかを確認します。 バニラインストールを初めて使用する場合は、Adobe Commerceリポジトリ (`https://repo.magento.com/`) をクリックします。
 
 以下を実行すると、 [!DNL Upgrade Compatibility Tool] コマンドを `--vanilla-dir` Adobe Commerce vanilla インストールディレクトリを指定するオプション。
 
@@ -240,7 +240,7 @@ bin/uct core:code:changes <dir> <vanilla dir>
 引数は次のようになります。
 
 - `<dir>`:Adobe Commerceインストールディレクトリ。
-- `<vanilla dir>`:Adobe Commerce vanilla のインストールディレクトリ。
+- `<vanilla dir>`:Adobe Commerce vanilla インストールディレクトリ。
 
 このコマンドを実行する際には、いくつかの制限があります。
 
