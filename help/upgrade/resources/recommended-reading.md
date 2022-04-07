@@ -1,10 +1,10 @@
 ---
 title: アップグレードの推奨読み取り
-description: Adobe CommerceまたはMagento Open Sourceのアップグレードを計画する際に推奨される読みを確認します。
-source-git-commit: de3ab30a0831f6bbf92313c568ac624212868afe
+description: Adobe Commerce または Magento Open Source のアップグレードの計画時に推奨ドキュメントを確認してください。
+source-git-commit: 1cecdf89df9a870d57347468ce9220f74d46cd73
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 0%
+source-wordcount: '446'
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,6 @@ ht-degree: 0%
             <li><a href="https://marketplace.magento.com/magento-live-search.html">ライブ検索</a></li>
             <li><a href="https://marketplace.magento.com/magento-payment-services.html">支払いサービス</a></li>
             <li><a href="https://marketplace.magento.com/magento-product-recommendations.html">製品Recommendations</a></li>
-            <li><a href="https://developer.adobe.com/commerce/pwa-studio/guides/upgrading-versions">アップグレードPWA Studio</a></li>
           </ul>
       </td>
     </tr>
@@ -77,7 +76,13 @@ ht-degree: 0%
             <li><a href="https://devdocs.magento.com/release/availability.html">ソフトウェアの可用性</a></li>
           </ul>
       </td>
-      <td></td>
+      <td><strong>ストアフロントエクスペリエンス</strong>
+        <p>お客様向けの独自のエクスペリエンスを構築するために使用できる、最新のストアフロントテクノロジーについて説明します。</p>
+          <ul>
+            <li><a href="https://developer.adobe.com/commerce/pwa-studio/">PWA Studio</a></li>
+            <li><a href="https://developer.adobe.com/commerce/pwa-studio/guides/upgrading-versions">アップグレードPWA Studio</a></li>
+          </ul>
+      </td>
     </tr>
   </tbody>
 </table>
