@@ -1,50 +1,51 @@
 ---
 user-guide-title: アップグレードガイド
 user-guide-description: Adobe Commerce または Magento Open Source アプリケーションのアップグレードが非常に重要な理由と、アップグレードを計画し実行する方法を学習します。
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d4aac5687b299603f763b7fee14c768c67754e63
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 22%
+source-wordcount: '124'
+ht-degree: 21%
 
 ---
 
 
 # アップグレードガイド {#upgrade-guide}
 
-- [アップグレードプロセスの概要](overview.md)
-- ジャーニーのアップグレード {#journey}
-   - [ジャーニー相](journey/phases.md)
-   - [プロジェクトの開始](journey/project-launch.md)
-   - [年間計画](journey/annual-planning.md)
-   - [実装](journey/implementation.md)
-- 準備 {#prepare}
-   - [ベストプラクティス](prepare/best-practices.md)
-   - [プラットフォームの変更の確認](prepare/platform-changes.md)
-   - [アップグレードの前提条件](prepare/prerequisites.md)
-   - [アップグレード範囲の理解](prepare/scope.md)
-- 実装 {#implementation}
-   - [アップグレードの実行](implementation/perform-upgrade.md)
-- モジュールと拡張機能 {#modules}
-   - [モジュールのアップグレード](modules/upgrade.md)
-   - [モジュールの管理](modules/manage.md)
-- パッチ {#patches}
-   - [パッチの仕組み](patches/overview.md)
-   - [パッチの適用](patches/apply.md)
+- [Overview of the upgrade process](overview.md)
+- {#journey}
+   - [Journey phases](journey/phases.md)
+   - [Project launch](journey/project-launch.md)
+   - [Annual planning](journey/annual-planning.md)
+   - [Implementation](journey/implementation.md)
+- {#prepare}
+   - [Best practices](prepare/best-practices.md)
+   - [Review platform changes](prepare/platform-changes.md)
+   - [Complete upgrade prerequisites](prepare/prerequisites.md)
+   - [Understand upgrade scope](prepare/scope.md)
+- {#implementation}
+   - [Perform an upgrade](implementation/perform-upgrade.md)
+- {#modules}
+   - [Upgrade modules](modules/upgrade.md)
+   - [Manage modules](modules/manage.md)
+- {#patches}
+   - [How patches work](patches/overview.md)
+   - [Apply patches](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
-   - [概要](upgrade-compatibility-tool/overview.md)
-   - [前提条件](upgrade-compatibility-tool/prerequisites.md)
-   - [インストール](upgrade-compatibility-tool/install.md)
-   - [ツールを実行](upgrade-compatibility-tool/run.md)
-   - [開発者情報](upgrade-compatibility-tool/developer.md)
-   - [エラーメッセージ](upgrade-compatibility-tool/error-messages.md)
-- 貢献する開発者 {#developer}
-   - [Git ベースのインストールのアップグレード](developer/git-installs.md)
-   - [モジュールの管理](developer/manage-modules.md)
-- トラブルシューティング {#troubleshooting}
-   - [現在の検索エンジンはサポートされていません](troubleshooting/search-engine-not-supported.md)
-   - [モジュールの更新エラー後にロールバック](troubleshooting/roll-back-after-update-failure.md)
-   - [アップグレードのメンテナンスモードオプション](troubleshooting/maintenance-mode-options.md)
-- リソース {#resources}
-   - [推奨読み物](resources/recommended-reading.md)
-   - [Adobe Commerce 2.4.4 以降を使用したプラットフォームの最新化](resources/recommended-upgrade-paths-2022.md)
-   - [アップグレード計画のチェックリスト](https://support.magento.com/hc/en-us/articles/360057968951)
+   - [Overview](upgrade-compatibility-tool/overview.md)
+   - [Prerequisites](upgrade-compatibility-tool/prerequisites.md)
+   - [Install](upgrade-compatibility-tool/install.md)
+   - [Run the tool](upgrade-compatibility-tool/run.md)
+   - [ [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
+   - [Developer information](upgrade-compatibility-tool/developer.md)
+   - [Error messages](upgrade-compatibility-tool/error-messages.md)
+- {#developer}
+   - [Upgrade a git-based installation](developer/git-installs.md)
+   - [Manage modules](developer/manage-modules.md)
+- {#troubleshooting}
+   - [Current search engine not supported](troubleshooting/search-engine-not-supported.md)
+   - [Roll back after module update failure](troubleshooting/roll-back-after-update-failure.md)
+   - [Maintenance mode options for upgrade](troubleshooting/maintenance-mode-options.md)
+- {#resources}
+   - [Recommended reading](resources/recommended-reading.md)
+   - [Modernizing your platform with Adobe Commerce 2.4.4+](resources/recommended-upgrade-paths-2022.md)
+   - [](https://support.magento.com/hc/en-us/articles/360057968951)
