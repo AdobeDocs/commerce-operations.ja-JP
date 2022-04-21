@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;home;popular topics
 title: ホーム
 description: Adobe Commerceの運用製品ドキュメントのインデックスを参照します。
-source-git-commit: 29b8d64cd700531f04166ad20694fa342ea0e186
+source-git-commit: bca5208cb5a53ac839c666cb42f2124de5d96be2
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 2%
+source-wordcount: '212'
+ht-degree: 1%
 
 ---
 
@@ -127,3 +127,4 @@ Adobe CommerceおよびMagento Open Sourceプラットフォームにデプロ�
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | 追加済み [情報](../upgrade/upgrade-compatibility-tool/overview.md) アップグレード互換性ツールのルールの定義方法について | 大幅な更新 |
 | 古いアップグレード互換性ツールを削除しました [エラーコード](../upgrade/upgrade-compatibility-tool/error-messages.md). | 技術 |
+| 移動済み [サイト全体分析ツールガイド](../tools/site-wide-analysis-tool/intro.md) から [devdocs.magento.com](https://devdocs.magento.com/tools/site-wide-analysis.html) Experience Leagueに | 新規 |
