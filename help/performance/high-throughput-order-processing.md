@@ -1,9 +1,9 @@
 ---
 title: 高スループットの注文処理
 description: Adobe CommerceまたはMagento Open Sourceのデプロイメントに合わせて、注文の配置とチェックアウトエクスペリエンスを最適化します。
-source-git-commit: 0a902d7fe967bbcee5019fea83e5be66ce2aefd0
+source-git-commit: c4c52baa9e04a4e935ccc29fcce2ac2745a454ee
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,10 @@ ht-degree: 0%
 次のモジュールセットを **高スループット順序処理**:
 
 - [AsyncOrder](#asynchronous-order-placement) — キューを使用してオーダーを非同期的に処理します。
-- [NegotiableQuoteAsyncOrder](#negotiable-quote-asyn-order)- NegotiableQuote 保存注文項目を非同期的に処理します。
-- [DeferredTotalCalculation](#deferred-total-calculation) — チェックアウトが開始されるまで、注文の合計の計算を遅延します。
+- [延期合計計算](#deferred-total-calculation) — チェックアウトが開始されるまで、注文の合計の計算を遅延します。
+- [見積もり読み込み時の在庫チェック](#disable-inventory-check) — 買い物かご項目の在庫検証をスキップする場合に選択します。
 
-すべての機能は独立して動作します。 すべての機能を同時に使用することも、任意の組み合わせで機能を有効/無効にすることもできます。
-
-コマンドラインインターフェイスを使用してこれらの機能を有効にするか、 `app/etc/env.php` ファイルを、 [_モジュールリファレンスガイド_][mrg].
+すべてのフィーチャー（AsyncOrder、遅延合計計算、および在庫チェック）は、独立して動作します。 3 つの機能をすべて同時に使用することも、任意の組み合わせで機能を有効/無効にすることもできます。
 
 ## 非同期の注文プレースメント
 
@@ -30,7 +28,9 @@ ht-degree: 0%
 - **使用可能な製品** — 注文ステータスが _保留中_&#x200B;製品数が調整され、注文の詳細が記載された E メールが顧客に送信され、成功した注文の詳細が **注文件数と返品数** 並べ替えなど、実行可能なオプションを含むリスト。
 - **在庫切れまたは供給不足の製品** — 注文ステータスが _却下_」をクリックすると、製品数が調整されず、問題に関する注文の詳細が記載された E メールが顧客に送信され、却下された注文の詳細が **注文件数と返品数** リストに追加されます。
 
-AsyncOrder を有効にするには：
+コマンドラインインターフェイスを使用してこれらの機能を有効にするか、 `app/etc/env.php` ファイルを、 [_モジュールリファレンスガイド_][mrg].
+
+**AsyncOrder を有効にするには**:
 
 AsyncOrder は、コマンドラインインターフェイスを使用して有効にすることができます。
 
@@ -49,7 +49,7 @@ bin/magento setup:config:set --checkout-async 1
 
 詳しくは、 [AsyncOrder] 内 _モジュールリファレンスガイド_.
 
-AsyncOrder を無効にするには：
+**AsyncOrder を無効にするには**:
 
 >[!WARNING]
 >
@@ -109,7 +109,7 @@ AsyncOrder モジュールを有効にすると、次の REST エンドポイン
 
 開発者は、特定の支払い方法を非同期注文配置から明示的に除外できます。その際、 `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` 配列。 除外された支払い方法を使用する注文は、同期的に処理されます。
 
-## 交渉可能見積非同期注文
+### 交渉可能見積非同期注文
 
 この _交渉可能見積非同期注文_ B2B モジュールを使用すると、 `NegotiableQuote` 機能。 AsyncOrder と NegotiableQuote を有効にする必要があります。
 
@@ -117,9 +117,9 @@ AsyncOrder モジュールを有効にすると、次の REST エンドポイン
 
 この _延期合計計算_ モジュールは、買い物かごに対して要求されるまで、または最終的なチェックアウト手順の間に合計計算を延期することで、チェックアウトプロセスを最適化します。 有効にすると、顧客が買い物かごに商品を追加したときの小計のみが計算されます。
 
-DeferredTotalCalculation は次のとおりです **無効** デフォルトでは。
+DeferredTotalCalculation は次のとおりです **無効** デフォルトでは。 コマンドラインインターフェイスを使用してこれらの機能を有効にするか、 `app/etc/env.php` ファイルを、 [_モジュールリファレンスガイド_][mrg].
 
-DeferredTotalCalculation を有効にするには、次の手順に従います。
+**DeferredTotalCalculation を有効にするには**:
 
 DeferredTotalCalculation は、コマンドラインインターフェイスを使用して有効にできます。
 
@@ -136,7 +136,7 @@ bin/magento setup:config:set --deferred-total-calculating 1
    ]
 ```
 
-DeferredTotalCalculation を無効にするには、次の手順に従います。
+**DeferredTotalCalculation を無効にするには**:
 
 DeferredTotalCalculation は、コマンドラインインターフェイスを使用して無効にできます。
 
@@ -165,9 +165,7 @@ DeferredTotalCalculation が有効な場合、製品を買い物かごに追加�
 
 無効にした場合、製品を買い物かごに追加する際に在庫チェックが実行されません。 この在庫チェックをスキップした場合、在庫切れのシナリオによっては他のタイプのエラーが発生する場合があります。 在庫チェック _常に_ は、無効な場合でも、注文の配置手順で発生します。
 
-買い物かごへの読み込みの在庫を有効にする **有効** デフォルトでは。
-
-買い物かごの読み込み時に在庫チェックを無効にするには、 **[!UICONTROL Enable Inventory Check On Cart Load]** から `No` （管理 UI）を参照してください。 詳しくは、 [グローバルオプションの設定][global] および [カタログ在庫][inventory] 内 _ユーザーガイド_.
+**買い物かごへの読み込み時の在庫の確認を有効にする** デフォルトでは有効（はいに設定）です。 買い物かごの読み込み時に在庫チェックを無効にするには、 **[!UICONTROL Enable Inventory Check On Cart Load]** から `No` 管理 UI で **ストア** > **設定** > **カタログ** > **在庫** > **在庫オプション** 」セクションに入力します。 詳しくは、 [グローバルオプションの設定][global] および [カタログ在庫][inventory] 内 _ユーザーガイド_.
 
 <!-- link definitions -->
 
