@@ -1,9 +1,9 @@
 ---
 title: モジュールと拡張機能のアップグレード
 description: コマンドラインインターフェイスと Composer を使用して、Adobe CommerceおよびMagento Open Sourceモジュールと拡張機能をアップグレードします。
-source-git-commit: 70f1bda91023526fbc0024b6a6fef93c7633ecc2
+source-git-commit: 28ce8cca3bb1780ee1466cc2c1b2143e923fe768
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -50,3 +50,12 @@ ht-degree: 0%
 Adobeがすべて削除されました [VBEs](https://devdocs.magento.com/extensions/vendor/) 2.4.4.ベンダーは、Adobe Commerce Marketplace で引き続きこれらの拡張機能をサポートします。
 
 Adobe CommerceおよびMagento Open Source2.4.4 以降でこれらの拡張機能を引き続き使用する場合は、 `composer.json` ファイル _前_ 2.4.4 にアップグレードします。使用するパッケージ名とバージョンについては、ベンダーにお問い合わせください。
+
+詳しくは、次のAdobe Commerce Marketplace リストを参照してください。
+
+- [Amazon Pay](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
+- [Dotdigital](https://marketplace.magento.com/dotdigital-dotdigital-magento2-os-package.html)
+- [クラルナ](https://marketplace.magento.com/klarna-m2-klarna.html)
+- [頂点](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
+- [ヨトポ](https://marketplace.magento.com/yotpo-module-yotpo.html)
+
