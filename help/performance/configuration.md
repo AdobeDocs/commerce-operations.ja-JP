@@ -1,7 +1,7 @@
 ---
 title: 設定のベストプラクティス
 description: これらのベストプラクティスを使用して、Adobe CommerceまたはMagento Open Sourceのデプロイメントの応答時間を最適化します。
-source-git-commit: 09c4d0e09354230c8779b930f085d8c7c131b85b
+source-git-commit: 20c4f55162b25be8906562c395abf4671437992b
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 設定のベストプラクティス
 
-Commerceo は、ページの応答時間を改善し、より高いスループットを提供するために使用できる多くの設定とツールを提供します。
+Commerce には、ページの応答時間を改善し、より高いスループットを提供するために使用できる多くの設定およびツールが用意されています。
 
 ## Cron ジョブ
 
