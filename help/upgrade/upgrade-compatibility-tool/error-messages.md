@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] エラーメッセージ»'
 description: を使用する際に発生するエラーメッセージの詳細を説明します [!DNL Upgrade Compatibility Tool] をAdobe Commerceプロジェクトに追加します。
-source-git-commit: 9bdf64177b4cecab5dd3562fef0bcc507a57ccf0
+source-git-commit: d62299d23d73b8566ed1c9b9739ca59fb0535d6f
 workflow-type: tm+mt
-source-wordcount: '3816'
+source-wordcount: '3756'
 ht-degree: 4%
 
 ---
@@ -141,16 +141,6 @@ GraphQL スキーマの重要な問題は、スキーマ項目がターゲット
 | 5026 | 使用しない `"text/javascript"` type 属性 | パブリックメンバーのみを使用します。 |
 | 5028 | の保護されたメンバーおよびプライベートメンバーへのアクセス `Block` クラスは、phtml テンプレートでは廃止されています | パブリックメンバーのみを使用します。 |
 | 5031 | 古いメソッドを含む | 用途 `getConnection()` メソッドを使用します。 |
-| 5032 | `loadLayout` メソッドは非推奨です | 用途 `\Magento\Framework\View\Layout\Builder::build` 代わりに、 |
-| 5033 | `renderLayout` メソッドは非推奨です | 用途 `\Magento\Framework\Controller\ResultInterface::renderResult` 代わりに、 |
-| 5034 | `_redirect` メソッドは非推奨です | 用途 `\Magento\Backend\Model\View\Result\Redirect::render` 代わりに、 |
-| 5035 | `_forward` メソッドは非推奨です | 用途 `\Magento\Backend\Model\View\Result\Forward::forward` 代わりに、 |
-| 5036 | `_setActiveMenu` メソッドは非推奨です | 用途 `\Magento\Backend\Model\View\Result\Page::setActiveMenu` 代わりに、 |
-| 5037 | `_addBreadcrumb` メソッドは非推奨です | 用途 `\Magento\Backend\Model\View\Result\Page::addBreadcrumb` 代わりに、 |
-| 5038 | `_addContent` メソッドは非推奨です | 用途 `\Magento\Backend\Model\View\Result\Page::addContent` 代わりに、 |
-| 5039 | `_addLeft` メソッドは非推奨です | 用途 `\Magento\Backend\Model\View\Result\Page::addLeft` 代わりに、 |
-| 5040 | `_addJs` メソッドは非推奨です | 用途 `\Magento\Backend\Model\View\Result\Page::addJs` 代わりに、 |
-| 5041 | `_moveBlockToContainer` メソッドは非推奨です | 用途 `\Magento\Backend\Model\View\Result\Page::moveBlockToContainer` 代わりに、 |
 | 5042 | PHP クラス参照の形式が正しくありません | クラスがキャメルケースの文字、数字のみを使用し、先頭のスラッシュを使用しないことを確認します。 |
 | 5043 | モジュール参照の形式が正しくありません | モジュールが文字、数字、アンダースコアのみを使用して参照され、先頭のスラッシュを使用しないことを確認します。 |
 | 5044 | クラス `Zend_Db_Select` が制限されています | 推奨される置換： `\Magento\Framework\DB\Select`. |
