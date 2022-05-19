@@ -1,258 +1,259 @@
 ---
-title: '"[!DNL Upgrade Compatibility Tool] エラーメッセージ»'
-description: を使用する際に発生するエラーメッセージの詳細を説明します [!DNL Upgrade Compatibility Tool] をAdobe Commerceプロジェクトに追加します。
-source-git-commit: d62299d23d73b8566ed1c9b9739ca59fb0535d6f
+title: '[!DNL Upgrade Compatibility Tool]'
+description: ' [!DNL Upgrade Compatibility Tool] '
+source-git-commit: a13b0ea5aa109ce2f5d33e0966b194d64bad5d0c
 workflow-type: tm+mt
-source-wordcount: '3756'
+source-wordcount: '3782'
 ht-degree: 4%
 
 ---
 
 
-# [!DNL Upgrade Compatibility Tool] エラーメッセージ
+# [!DNL Upgrade Compatibility Tool]
 
 {{commerce-only}}
 
-このエラーメッセージリファレンスは、 [!DNL Upgrade Compatibility Tool].
+[!DNL Upgrade Compatibility Tool]
 
-エラーメッセージは、レベル（重要な問題、エラー、警告）とタイプ（コアコード、カスタムコード、GraphQL スキーマ）別に分類されます。 各タイプには、次の情報が含まれます。
+Error messages are categorized by level (critical issues, errors, and warnings) and type (core code, custom code, and GraphQL schemas). Each type contains the following information:
 
-- **エラーコード**:Adobe Commerceがエラーメッセージに ID を割り当てました。
-- **エラーの説明**:エラーの原因の概要を示す説明。
-- **エラーが発生しました**:該当する場合、は、エラーのトラブルシューティングと解決に関するガイダンスを提供します。
+- ****
+- ****
+- ****
 
-## 重要な問題
+## Critical issues
 
-### コアコード
+### Core code
 
-これらのエラーは、一部のコアファイルが見つからないか、元のファイルと一致しない場合に報告されます。
+These errors are reported when some of the core files are missing or do not match the original.
 
-| エラーコード | エラーの説明 | 推奨アクション |
+| Error code | Error description | Suggested action |
 | --- | --- | --- |
-| 2001 年 | コアファイルが見つかりませんでした | を実行します。 `composer install` コマンドを使用して、プロジェクトのルートディレクトリからアクセスできます。 |
-| 2002 年 | コアファイルが変更されました | を実行します。 `composer install` コマンドを使用して、プロジェクトのルートディレクトリからアクセスできます。 |
-| 2003 年 | コンポーザーの依存関係がインストールされていません | コンポーザーの依存関係が見つからないと、問題が発生する可能性があります。 を実行して依存関係を復元 `composer require package_name`. |
-| 2005 年 | コアフォルダが見つかりませんでした | を実行します。 `composer install` コマンドを使用して、プロジェクトのルートディレクトリからアクセスできます。 |
+| 2001 | Core file was not found | `composer install` |
+| 2002 | Core file was modified | `composer install` |
+| 2003 | Composer dependency is not installed | Missing composer dependency may potentially result in issues. `composer require package_name` |
+| 2005 | Core folder was not found | `composer install` |
 
 {style=&quot;table-layout:auto&quot;}
 
-### カスタムコード
+### Custom code
 
-重大なエラーは、ターゲットのAdobe Commerceバージョンに存在しないエンティティをカスタムコードが参照している場合に発生します。 これらのエラーは、重要なコーディング規格が壊れた場合にも報告されます。
+Critical errors are raised when the custom code is referencing entities that are not present in the target Adobe Commerce version. These errors are also reported when critical coding standards have been broken.
 
-| エラーコード | エラーの説明 | 推奨アクション |
+| Error code | Error description | Suggested action |
 | --- | --- | --- |
-| 1110 | 存在しないAdobe Commerceクラス/インターフェイスのインスタンス化 | としてマークされたクラスを使用するようにコードを更新 `@api`. 存在しないAdobe Commerceクラス/インターフェイスをインスタンス化しています。 |
-| 1111 | 存在しないAdobe Commerceクラスからの拡張 | 拡張クラスがコードベースに存在しなくなりました。 Adobe Commerceの機能を拡張する方法として、継承はお勧めしません。 としてマークされたクラスを使用するようにコードを更新 `@api`. |
-| 1112 | 存在しないAdobe Commerceクラスのインポート | としてマークされたクラスを使用するようにコードを更新 `@api`. |
-| 1113 | 存在しないAdobe Commerceクラスを読み込み中 | としてマークされたクラスを使用するようにコードを更新 `@api`. |
-| 1114 | 存在しないAdobe Commerceクラスの使用 | としてマークされたクラスを使用するようにコードを更新 `@api`. |
-| 1214 | 存在しないAdobe Commerce定数の使用 | 代わりに、カスタムコード内で必要な値のプライベート定数を導入して使用することを検討してください。 |
-| 1215 | 存在しないAdobe Commerce定数の上書き | 代わりに、カスタムコード内で必要な値のプライベート定数を導入して使用することを検討してください。 |
-| 1216 | 存在しないAdobe Commerce定数の割り当て | 代わりに、カスタムコード内で必要な値のプライベート定数を導入して使用することを検討してください。 |
-| 1312 | インポート済みの存在しないAdobe Commerceインターフェイス | 継承を削除するか、カスタマイズの範囲で導入されたインターフェイスに置き換えることを検討してください。 |
-| 1314 | 存在しないAdobe Commerceインターフェイスを使用しました | 継承を削除するか、カスタマイズの範囲で導入されたインターフェイスに置き換えることを検討してください。 |
-| 1317 | 継承された存在しないAdobe Commerceインターフェイス | 継承を削除するか、カスタマイズの範囲で導入されたインターフェイスに置き換えることを検討してください。 |
-| 1318 | 実装されていないAdobe Commerceインターフェイス | 継承を削除するか、カスタマイズの範囲で導入されたインターフェイスに置き換えることを検討してください。 |
-| 1410 | 存在しないAdobe Commerceメソッドを呼び出す | としてマークされたクラスを使用するようにコードを更新 `@api`. |
-| 1514 | 存在しないAdobe Commerceプロパティの使用 | としてマークされたクラスを使用するようにコードを更新 `@api`. |
-| 1515 | 存在しないAdobe Commerceプロパティを上書きしています | としてマークされたクラスを使用するようにコードを更新 `@api`. |
-| 1516 | 存在しないAdobe Commerceプロパティの割り当て | としてマークされたクラスを使用するようにコードを更新 `@api`. 1 つのクラス内でのみ使用できる場合は、プロパティのアクセスレベルを private に更新します。 |
-| 5002 | 開始 PHP タグは、ファイル内の最初のコンテンツでなければなりません | PHP の開始タグの前に、ファイル内にコンテンツがないことを確認します。 |
-| 5003 | 関数は非推奨（廃止予定）になりました | エラーメッセージに提示された置換を使用します。 メッセージが置換を提案しない場合は、代替の関数または実装を選択するために、詳細なレビューが必要です。 |
-| 5005 | PHP 構文エラー | PHP 構文の標準に準拠するには、コードを更新する必要があります。 |
-| 5072 | Magento2 の設計違反の可能性があります。 一般的なMagento1.x の構造を検出しました。 | 構築をMagento2 標準に更新。 |
-| 5076 | PHP 7 以降で予約されているので、名前空間で使用できません | 名前空間の予約語を、予約されていないキーワードで置き換えます。 |
-| 5077 | PHP 7 以降で予約されているため、クラス名として使用できません | 予約済みのクラス名を予約されていない名前に置き換えます。 |
+| 1110 | Instantiating non-existent Adobe Commerce class/interface | `@api`Instantiating non-existent Adobe Commerce class/interface. |
+| 1111 | Extending from non-existent Adobe Commerce class | The extended class is no longer present in the codebase. Inheritance is not recommended way of extending Adobe Commerce functionality. `@api` |
+| 1112 | Importing non-existent Adobe Commerce class | `@api` |
+| 1113 | Loading non-existent Adobe Commerce class | `@api` |
+| 1114 | Using non-existent Adobe Commerce class | `@api` |
+| 1214 | Using non-existent Adobe Commerce constant | Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1215 | Overriding non-existent Adobe Commerce constant | Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1216 | Assignation of non-existent Adobe Commerce constant | Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1312 | Imported non-existent Adobe Commerce interface | Consider removing the inheritance or replacing it with the interface introduced in the scope of the customization. |
+| 1314 | Used non-existent Adobe Commerce interface | Consider removing the inheritance or replacing it with the interface introduced in the scope of the customization. |
+| 1317 | Inherited non-existent Adobe Commerce interface | Consider removing the inheritance or replacing it with the interface introduced in the scope of the customization. |
+| 1318 | Implemented non-existent Adobe Commerce interface | Consider removing the inheritance or replacing it with the interface introduced in the scope of the customization. |
+| 1410 | Call non-existent Adobe Commerce method | `@api` |
+| 1514 | Using non-existent Adobe Commerce property | `@api` |
+| 1515 | Overriding non-existent Adobe Commerce property | `@api` |
+| 1516 | Assignation of non-existent Adobe Commerce property | `@api`Update the property access level to private if it can be used within a single class only. |
+| 5002 | The opening PHP tag must be the first content in the file | Ensure there is no content in the file before the PHP opening tag. |
+| 5003 | Function has been deprecated | Use a replacement suggested in the error message. If the message does not suggest a replacement, a close review is needed to select an alternative function or implementation. |
+| 5005 | PHP syntax error | The code must be updated to comply with the PHP syntax standards. |
+| 5072 | Possible Magento 2 design violation. Detected a typical Magento 1.x construction | Update construction to Magento 2 standards. |
+| 5076 | Cannot use in namespace as it is reserved since PHP 7 | Replace the reserved word in the namespace with a non-reserved keyword. |
+| 5077 | Cannot use as class name as it is reserved since PHP 7 | Replace the reserved class name with a non-reserved name. |
 
 {style=&quot;table-layout:auto&quot;}
 
-### GraphQL スキーマ
+### GraphQL Schema
 
-GraphQL スキーマの重要な問題は、スキーマ項目がターゲットバージョンに存在しない場合に発生します。
+GraphQL Schema critical issues are raised if the schema items are not present in the target version.
 
-| エラーコード | エラーの説明 | 推奨アクション |
+| Error code | Error description | Suggested action |
 | --- | --- | --- |
-| 3101 | タイプが削除されました | このフィールドを参照しているすべてのクエリをリストします。 これらのクエリがカスタマイズの実装で使用されているかどうかを確認します。 変更したクエリインターフェイスを処理するようにクライアントコードを更新します。 |
-| 3102 | 和集合から削除されたタイプ | GraphQL リクエストの構築または応答処理の実装で和集合タイプが使用される場合は、更新が必要な場合があります。 |
-| 3103 | 削除されたフィールド | カスタマイズコードベースでフィールドが参照されているかどうかを確認します。 新しいフィールドタイプを正しく処理するように実装を調整します。 |
-| 3105 | 実装済みのインターフェイスが削除されました | 削除されたインターフェイスを実装するタイプが、カスタマイズで使用されているかどうかを確認します。 削除されたインターフェイスに依存している場合は、実装を更新する必要がある場合があります。 |
-| 3106 | 列挙から値が削除されました | 削除された列挙値が GraphQL リクエストの構築または応答処理の実装で使用される場合は、更新が必要な場合があります。 |
-| 3107 | 引数が削除されました | フィールドがカスタマイズコードベースで使用されているかどうかを確認します。 このフィールドの引数を削除します。 |
-| 3109 | 削除されたディレクティブ | ディレクティブがカスタマイズコードベースで使用されているかどうかを確認します。 実装を調整して、ディレクティブへの参照を削除します。 |
-| 3110 | ディレクティブ引数が削除されました | ディレクティブがカスタマイズコードベースで使用されているかどうかを確認します。 ディレクティブ引数を削除します。 |
-| 3111 | 繰り返し可能なディレクティブが削除されました | ディレクティブがカスタマイズコードベースで使用されているかどうかを確認します。 インターフェイスの変更に対処するように実装を調整します。 |
-| 3112 | ディレクティブの場所が削除されました | ディレクティブがカスタマイズコードベースで使用されているかどうかを確認します。 インターフェイスの変更に対処するように実装を調整します。 |
-| 3201 | 変更された種類 | このフィールドを参照しているすべてのクエリをリストします。 これらのクエリがカスタマイズの実装で使用されているかどうかを確認します。 変更したクエリインターフェイスを処理するようにクライアントコードを更新します。 |
-| 3203 | フィールド変更の種類 | カスタマイズコードベースでフィールドが参照されているかどうかを確認します。 新しいフィールドタイプを正しく処理するように実装を調整します。 |
-| 3207 | 引数の種類が変更されました | フィールドがカスタマイズコードベースで使用されているかどうかを確認します。 このフィールドの引数のタイプを更新します。 |
-| 3303 | 必須入力フィールドが追加されました | このフィールドを含むクエリをカスタマイズに使用する場合は、フィールドをリクエストに追加する必要があります。 |
-| 3307 | 必須の引数が追加されました | フィールドがカスタマイズコードベースで使用されているかどうかを確認します。 フィールドを使用する際は、新しい必須引数を指定する必要があります。 |
-| 3310 | 必須のディレクティブ引数が追加されました | ディレクティブがカスタマイズコードベースで使用されているかどうかを確認します。 ディレクティブ引数を追加します。 |
+| 3101 | Type was removed | List all queries that are referencing this field. Check if these queries are used by the customization implementation. Update the client code to handle the changed query interface. |
+| 3102 | Type removed from union | If the union type is used in the GraphQL request constructing or response processing implementation it may need to be updated. |
+| 3103 | Field removed | Check if the field is referenced in the customization codebase. Adjust the implementation to correctly handle the new field type. |
+| 3105 | Implemented interface removed | Check if the type implementing the removed interface is used in the customization. The implementation may need to be updated if it is relying on the removed interface. |
+| 3106 | Value removed from enum | If the removed enum value is used in the GraphQL request constructing or response processing implementation it may need to be updated. |
+| 3107 | Argument removed | Check if the field is used in the customization codebase. Remove the argument for this field. |
+| 3109 | Directive removed | Check if the directive is used in the customization codebase. Adjust the implementation to remove the reference to the directive. |
+| 3110 | Directive argument removed | Check if the directive is used in the customization codebase. Remove the directive argument. |
+| 3111 | Directive repeatable removed | Check if the directive is used in the customization codebase. Adjust the implementation to handle the interface changes. |
+| 3112 | Directive location removed | Check if the directive is used in the customization codebase. Adjust the implementation to handle the interface changes. |
+| 3201 | Type changed kind | List all queries that are referencing this field. Check if these queries are used by the customization implementation. Update the client code to handle the changed query interface. |
+| 3203 | Field changed kind | Check if the field is referenced in the customization codebase. Adjust the implementation to correctly handle the new field type. |
+| 3207 | Argument changed kind | Check if the field is used in the customization codebase. Update the argument type for this field. |
+| 3303 | Required input field added | The field should be added to the request if the query including this field is used for the customization. |
+| 3307 | Required argument added | Check if the field is used in the customization codebase. The new required argument should be specified when using the field. |
+| 3310 | Required directive argument added | Check if the directive is used in the customization codebase. Add the directive argument. |
 
 {style=&quot;table-layout:auto&quot;}
 
-## エラー
+## Errors
 
-### カスタムコード
+### Custom code
 
-カスタムコードエラーは、カスタムコードが、未考慮/マークされたAdobe Commerceエントリポイントを使用している場合に発生します `@api`. このようなエントリポイントの保持された動作は保証されません。 カスタマイズは次の要素に依存する必要があります。 `@api` エントリポイントを使用します。 非 API Adobe Commerceコードに基づく機能は、アップグレード後にテストする必要があります。 これらのエラーは、大規模なコーディング標準が壊れた場合にも報告されます。
+`@api`The preserved behavior of such entry points is not guaranteed. `@api`The functionality that is based on non-API Adobe Commerce code should be tested after the upgrade. These errors are also reported when major coding standards have been broken.
 
-| エラーコード | エラーの説明 | 推奨アクション |
+| Error code | Error description | Suggested action |
 | --- | --- | --- |
-| 1104 | API インターフェイスを継承する非 API クラスの使用 | とマークされていないクラス `@api` を変更できます。 とマークされたインターフェイスに依存するように、コードの更新を検討してください。 `@api` 代わりに、 それ以外の場合は、この実装に依存する機能は、アップグレード後にテストする必要があります。 |
-| 1121 | 非Adobe Commerce API クラスからの拡張 | 拡張クラスがコードベースに存在しなくなりました。 Adobe Commerceの機能を拡張する方法として、継承はお勧めしません。 としてマークされたクラスを使用するようにコードを更新 `@api`. |
-| 1122 | 非Adobe Commerce API クラスの読み込み | 拡張クラスがコードベースに存在しなくなりました。 としてマークされたクラスを使用するようにコードを更新 `@api`. それ以外の場合は、この実装に依存する機能は、アップグレード後にテストする必要があります。 |
-| 1123 | 非Adobe Commerce API クラスの読み込み | 拡張クラスがコードベースに存在しなくなりました。 としてマークされたクラスを使用するようにコードを更新 `@api`. それ以外の場合は、この実装に依存する機能は、アップグレード後にテストする必要があります。 |
-| 1124 | 非Adobe Commerce API クラスの使用 | 拡張クラスがコードベースに存在しなくなりました。 としてマークされたクラスを使用するようにコードを更新 `@api`. それ以外の場合は、この実装に依存する機能は、アップグレード後にテストする必要があります。 |
-| 1224 | 非Adobe Commerce API 定数の使用 | としてマークされていない定数 `@api` を変更できます。 代わりに、カスタムコード内で必要な値のプライベート定数を導入して使用することを検討してください。 |
-| 1225 | 非Adobe Commerce API 定数の上書き | としてマークされていない定数 `@api` を変更できます。 代わりに、カスタムコード内で必要な値のプライベート定数を導入して使用することを検討してください。 |
-| 1226 | 非Adobe Commerce API 定数の割り当て | としてマークされていない定数 `@api` を変更できます。 代わりに、カスタムコード内で必要な値のプライベート定数を導入して使用することを検討してください。 |
-| 1322 | Adobe Commerce以外の API インターフェイスが読み込まれました | インターフェイスが `@api` を変更できます。 この継承を削除するか、またはとマークされたAdobe Commerceインターフェイスから継承に置き換えることを検討してください。 `@api` または、カスタマイズコードの範囲で導入されたインターフェイス。 |
-| 1324 | 使用されている非Adobe Commerce API インターフェイス | インターフェイスが `@api` を変更できます。 この継承を削除するか、またはとマークされたAdobe Commerceインターフェイスから継承に置き換えることを検討してください。 `@api` または、カスタマイズコードの範囲で導入されたインターフェイス。 |
-| 1327 | 継承された非Adobe Commerce API インターフェイス | としてマークされていない定数 `@api` を変更できます。 代わりに、カスタムコード内で必要な値のプライベート定数を導入して使用することを検討してください。 |
-| 1328 | 非Adobe Commerce API インターフェイスを実装しました。 | インターフェイスが `@api` を変更できます。 この継承を削除するか、またはとマークされたAdobe Commerceインターフェイスから継承に置き換えることを検討してください。 `@api` または、カスタマイズコードの範囲で導入されたインターフェイス。 |
-| 1420 | 非Adobe Commerce API クラス/インターフェイスのインスタンス化 | とマークされていないクラス `@api` を変更できます。 とマークされたインターフェイスに依存するように、コードの更新を検討してください。 `@api` 代わりに、 それ以外の場合は、この実装に依存する機能は、アップグレード後にテストする必要があります。 また、クラスのインスタンスを取得する場合は、 ID を使用することをお勧めします。 クラスの新しいインスタンスが必要な場合は、ファクトリの使用を検討します。 |
-| 1428 | 実装の詳細に依存している可能性があります。 | とマークされていないクラス `@api` を変更できます。 とマークされたインターフェイスに依存するように、コードの更新を検討してください。 `@api` 代わりに、 それ以外の場合は、この実装に依存する機能は、アップグレード後にテストする必要があります。 |
-| 1429 | 非Adobe Commerce API メソッドを呼び出す | 次のマークが付いていないメソッド `@api` またはが API クラス/インターフェイス内で宣言されていない場合は、変更できます。 メソッドのインターフェイスが新しいバージョンで更新されなくても、動作や出力が異なる場合があります。 インターフェイスメソッドに依存することを検討します。 それ以外の場合は、この実装に依存する機能は、アップグレード後にテストする必要があります。 |
-| 1449 | （実装に存在する）非インターフェイスメソッドの呼び出し | インターフェイスで宣言されていないメソッドは変更できます。 インターフェイスメソッドに依存することを検討します。 それ以外の場合は、この実装に依存する機能は、アップグレード後にテストする必要があります。 |
-| 1524 | 非Adobe Commerce API プロパティの使用 | としてマークされていないプロパティの値 `@api` を変更できます。 代わりに、 API インターフェイスメソッドを利用することを検討してください。 |
-| 1525 | 非Adobe Commerce API プロパティの上書き | としてマークされていないプロパティの値 `@api` を変更できます。 代わりに、 API インターフェイスメソッドを利用することを検討してください。 |
-| 1526 | 非Adobe Commerce API プロパティの割り当て | としてマークされていないプロパティの値 `@api` を変更できます。 代わりに、 API インターフェイスメソッドを利用することを検討してください。 |
-| 5004 | 引数のない関数は非推奨です | 入力を渡して、関数の最初の引数として検証します。 |
-| 5007 | 特定の関数は使用しない | これらの関数は使用しないでください。 |
-| 5009 | テンプレートディレクティブからメソッドが呼び出されない場合があります。 スカラー配列アクセスのみが許可されます | テンプレートからメソッドの呼び出しを削除します。 |
-| 5010 | テンプレート `@vars` コメントブロックに無効な JSON が含まれています | 無効な JSON を修正しました。 |
-| 5011 | テンプレート `@vars` コメントブロックに無効なラベルが含まれています | 無効なラベルを修正しました。 |
-| 5012 | テンプレート `@vars` コメントブロックにテンプレートで使用されている変数がありません | 欠落している変数を@varsコメントブロックに追加します。 |
-| 5013 | 無効な html 要素で自己終了タグを使用しない | 代わりに、終了タグを使用してください。 |
-| 5014 | この `"active"` 属性が古い | アクティブなモジュールのリストは、デプロイメント設定で定義されます。 |
-| 5015 | この `<param>` ノードは古くなりました | 用途 `<argument name="..." xsi:type="...">` 代わりに、 |
-| 5016 | この `<instance>` ノードは古くなりました | 用途 `<argument name="..." xsi:type="object">` 代わりに、 |
-| 5017 | この `<array>` ノードは古くなりました | 用途 `<argument name="..." xsi:type="array">` 代わりに、 |
-| 5018 | この `<item key="...">` ノードは古くなりました | 用途 `<item name="..." xsi:type="...">` 代わりに、 |
-| 5019 | この `<value>` ノードは古くなりました | 代わりに、実際の値をテキストリテラルとして指定します。 |
-| 5020 | 古いノード： `<supported_blocks>` | 置き換える `<supported_containers>`. |
-| 5021 | 古いノード： `<block_name>` | 置き換える `<container_name>`. |
-| 5022 | ファクトリ名が検出されました | ウィジェットタイプは/で始めることはできません。 |
-| 5023 | 行に古い ACL 構造が検出されました | lib/internal/Magento/Framework/Acl/etc/acl.xsdを確認します。 |
-| 5024 | 行に古いメニュー構造が検出されました | app/code/Magento/Backend/etc/menu.xsdを確認します。 |
-| 5025 | ファイルで古いシステム構成構造が検出されました | app/code/Magento/Config/etc/system_file.xsdを確認します。 |
-| 5026 | 使用しない `"text/javascript"` type 属性 | パブリックメンバーのみを使用します。 |
-| 5028 | の保護されたメンバーおよびプライベートメンバーへのアクセス `Block` クラスは、phtml テンプレートでは廃止されています | パブリックメンバーのみを使用します。 |
-| 5031 | 古いメソッドを含む | 用途 `getConnection()` メソッドを使用します。 |
-| 5042 | PHP クラス参照の形式が正しくありません | クラスがキャメルケースの文字、数字のみを使用し、先頭のスラッシュを使用しないことを確認します。 |
-| 5043 | モジュール参照の形式が正しくありません | モジュールが文字、数字、アンダースコアのみを使用して参照され、先頭のスラッシュを使用しないことを確認します。 |
-| 5044 | クラス `Zend_Db_Select` が制限されています | 推奨される置換： `\Magento\Framework\DB\Select`. |
-| 5045 | クラス `Zend_Db_Adapter_Pdo_Mysql` が制限されています | 推奨される置換： `\Magento\Framework\DB\Adapter\Pdo\Mysql`. |
-| 5046 | クラス `Magento\Framework\Serialize\Serializer\Serialize` が制限されています | 推奨される置換： `Magento\Framework\Serialize\SerializerInterface`. |
-| 5047 | クラス `ArrayObject` が制限されています | 推奨される置換：カスタムクラス（拡張元） `ArrayObject` 上書きされた serialize/unserialize メソッドを使用します。 |
-| 5048 | クラス `Magento\Framework\View\Element\UiComponent\ArrayObjectFactory` が制限されています | 推奨される置換：カスタムクラスを作成するファクトリ（から拡張） `ArrayObject` 上書きされた serialize/unserialize メソッドを使用します。 |
-| 5050 | 参照されているブロックが削除されます | ブロックへの参照を削除します。 |
-| 5051 | `output="toHtml"` は古い | 用途 `output="1"`. |
-| 5052 | クラス `\Magento\Framework\View\Element\Text\ListText` は、レイアウトで使用されなくなりました | クラスを削除 `\Magento\Framework\View\Element\Text\ListText` レイアウトから。 |
-| 5053 | レイアウト指示を介したメソッドの呼び出し `<action>` 許可されていません | での不適切なメソッドの使用を避ける `<action>`. |
-| 5054 | `helper` 属性が次の値を含む `/` | 削除 `/` ヘルパー属性から。 |
-| 5055 | `helper` 属性に次が含まれていません `::` | 追加 `::` ヘルパー属性に追加します。 |
-| 5056 | インストールスクリプトは古い | module\のetc/db_schema.xmlファイルで宣言型スキーマアプローチを使用します。 |
-| 5057 | InstallSchema スクリプトは古い | module\のetc/db_schema.xmlファイルで宣言型スキーマアプローチを使用します。 |
-| 5058 | InstallData スクリプトは古い | モジュールの Setup/Patch/Data ディレクトリで、データパッチアプローチを使用します。 |
-| 5059 | インストールスクリプトは古い | モジュールの Setup フォルダーに InstallData クラスを作成します。 |
-| 5060 | アップグレードスクリプトは古い | module\のetc/db_schema.xmlファイルで宣言型スキーマアプローチを使用します。 |
-| 5061 | UpgradeSchema スクリプトは古い | module\のetc/db_schema.xmlファイルで宣言型スキーマアプローチを使用します。 |
-| 5062 | UpgradeData スクリプトは古い | モジュールの Setup/Patch/Data ディレクトリで、データパッチアプローチを使用します。 |
-| 5063 | アップグレードスクリプトは古い | モジュールの Setup/Patch/Data ディレクトリで、データパッチアプローチを使用します。 |
-| 5064 | 繰り返しスクリプトは廃止されました | モジュールの Setup フォルダーに Recurring クラスを作成します。 |
-| 5065 | 「data」は無効なディレクトリにあります | モジュールの Setup/Patch/Data フォルダー内にデータパッチを作成してデータのアップグレードを行うか、モジュールのetc/db_schema.xmlファイルで宣言型スキーマアプローチを使用してスキーマの変更を行います。 |
-| 5066 | &#39;sql&#39;は無効なディレクトリにあります | モジュールの Setup/Patch/Data フォルダー内にデータパッチを作成してデータのアップグレードを行うか、モジュールのetc/db_schema.xmlファイルで宣言型スキーマアプローチを使用してスキーマの変更を行います。 |
-| 5067 | XPath で識別されたノードは古いものです | エラーで指定された古い XML を更新する必要があります。 エラーメッセージに示された提案に従います。 |
-| 5068 | 指令 `{{htmlescape}}` は古い | 用途 `{{var}}` 代わりに、 |
-| 5069 | 指令 `{{escapehtml}}` は古い | 用途 `{{var}}` 代わりに、 |
-| 5070 | 3 番目のパラメーターは、 `getChildHtml()` | への呼び出しから 3 番目のパラメーターを削除 `getChildHtml()`. |
-| 5071 | 4 番目のパラメーターは、 `getChildHtml()` | への呼び出しから 4 番目のパラメーターを削除 `getChildHtml()`. |
-| 5073 | スラッシュ付きの従来のテーブル名は、直接のテーブル名に固定する必要があります | 代わりに、ダイレクトテーブル名を使用します。 |
-| 5075 | アプリケーションモジュールは、テストモジュールのクラスを使用しないでください | テストモジュールからクラスの使用を削除します。 |
-| 5078 | クラスはコンストラクタで要求する必要があります。要求しない場合、コンパイラはこれらのクラスを見つけて生成できません | クラスをコンストラクタに追加します。 |
-| 5079 | var クラス変数の使用はお勧めしません | 「var」を使用してクラス変数を宣言しないでください。 |
-| 5080 | 可能な未加工 SQL 文が検出されました | 代わりに、リポジトリまたはデータパッチを使用します。 |
-| 5081 | テンプレートでのヘルパーの使用はお勧めしません | 代わりに、ViewModel を使用します。 |
-| 5082 | テンプレートでの$this の使用は廃止されました | 代わりに$block を使用してください。 |
-| 5083 | 翻訳関数の最初の引数として定数を使用することはできません | 代わりに、文字列リテラルを使用します。 |
-| 5085 | 特定の関数は使用しない | 代わりに、メッセージに提案された代替関数を使用します。 |
-| 5087 | PHP のバージョン間の互換性の問題 | メッセージに表示された提案に従い、 [移行ガイド](https://www.php.net/manual/en/migration81.php). |
-| 5088 | 必須のパラメーターの後に見つかったオプションのパラメーター | オプションのパラメーターの後に必要なパラメーターを移動します。 |
-| 5089 | メソッドの表示 `final private` 見つかりました | メソッドの表示を次の値に変更 `final private` のみ `private`. |
-| 5090 | マジックメソッド `__set_state` が次のように定義されていません： `static` | マジックメソッド `__set_state` は、次のように定義する必要があります。 `static`. |
-| 5091 | 次を持つクラス `__toString()` 継承しない方法 `Stringable` インターフェイス | 追加 `Stringable` ～とのクラスインターフェイス `__toString()` メソッド。 |
-| 5092 | `is_resource()` メソッドは、現在オブジェクトを返す関数に使用されます。 | 変更 `is_resource()` から `instanceof` オブジェクト。 |
-| 6001 | `jQuery.andSelf()` 削除済み | 用途 `jQuery.addBack()`. |
-| 6002 | jQuery `$.bind` および `$.unbind` 非推奨 | 用途 `$.on` および `$.off` 代わりに、 |
-| 6003 | イベントをサブスクライブする jQuery メソッドは廃止されているので、使用しないでください | 用途 `.on("event name", fn)` メソッドを使用して、このイベントをサブスクライブする必要があります。 |
-| 6003 | イベントイベントをトリガーする jQuery メソッドは廃止されたので、使用しないでください | 用途 `.trigger("event name")` メソッドを使用して、このイベントにトリガーを設定する必要があります。 |
-| 6004 | jQuery `$.delegate` および `$.undelegate` 非推奨 | 用途 `$.on` および `$.off` 代わりに、 |
-| 6005 | (`jQuery.load()` / `jQuery.unload()` / `jQuery.error()`) が削除されました | (`.on("load", fn)` / `.on("unload", fn)` / `.on("error", fn)`) を使用します。 |
-| 6006 | `jQuery.size()` 削除済み | 用途 `jQuery.length`. |
-| 6007 | `jQuery.trim` は非推奨です | 用途 `String.prototype.trim`. |
-| 6008 | (`addButton`, `addContextToolbar`, `addMenuItem`, `addSidebar`, `file_browser_callback`, `insert_button_items`、「inlite」テーマ、「モバイル」テーマ、「モダン」テーマが削除されました | tinymce5 と互換性を持つようにコードを更新しました。 |
-| 6009 | `jQuery.isFunction()` は非推奨です | ほとんどの場合、 [typeof x === &quot;function&quot;]. |
-| 6009 | `jQuery.type()` は非推奨です | 次のような適切なタイプに置き換えます [typeof x === &quot;function&quot;]. |
-| 6009 | `jQuery.isArray()` は非推奨です | 代わりに、ネイティブの Array.isArray メソッドを使用します。 |
-| 6009 | `jQuery.parseJSON()` は非推奨です | JSON 文字列を解析するには、代わりにネイティブの JSON.parse メソッドを使用します。 |
-| 6010 | (`jQuery.expr[":"]`, `jQuery.expr.filters`) は非推奨です | 代わりに、jQuery.expr.pusidos を使用します。 |
+| 1104 | Using non-API class that is inheriting API interface | `@api``@api`Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1121 | Extending from non-Adobe Commerce API class | The extended class is no longer present in the codebase. Inheritance is not recommended way of extending Adobe Commerce functionality. `@api` |
+| 1122 | Importing non-Adobe Commerce API class | The extended class is no longer present in the codebase. `@api`Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1123 | Loading non-Adobe Commerce API class | The extended class is no longer present in the codebase. `@api`Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1124 | Using non-Adobe Commerce API class | The extended class is no longer present in the codebase. `@api`Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1224 | Using non-Adobe Commerce API constant | `@api`Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1225 | Overriding non-Adobe Commerce API constant | `@api`Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1226 | Assignation of non-Adobe Commerce API constant | `@api`Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1322 | Imported non-Adobe Commerce API interface | `@api``@api` |
+| 1324 | Used non-Adobe Commerce API interface | `@api``@api` |
+| 1327 | Inherited non-Adobe Commerce API interface | `@api`Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1328 | Implemented non-Adobe Commerce API interface | `@api``@api` |
+| 1420 | Instantiating non-Adobe Commerce API class/interface | `@api``@api`Otherwise, the functionality relying on this implementation should be tested after the upgrade. Also, the recommended way of retrieving an instance of the class is using DI. Consider using a factory if a new instance of the class is required. |
+| 1428 | Possible dependency on implementation details. | `@api``@api`Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1429 | Call non-Adobe Commerce API methods | `@api`Even if the interface of the method is not updated in the new version, its behaviour or output can be different. Consider relying on an interface method. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1449 | Call to non-interface method (that is present in implementation) | Methods that are not declared in the interface may be changed. Consider relying on an interface method. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1524 | Using non-Adobe Commerce API property | `@api`Consider relying on the API interface method instead. |
+| 1525 | Overriding non-Adobe Commerce API property | `@api`Consider relying on the API interface method instead. |
+| 1526 | Assignation of non-Adobe Commerce API property | `@api`Consider relying on the API interface method instead. |
+| 5004 | Function without argument has been deprecated | Pass the input to validate as the first argument of the function. |
+| 5007 | The use of certain functions is discouraged | Avoid using these functions. |
+| 5009 | Template directives may not invoke methods. Only scalar array access is allowed | Remove method invocations from the template. |
+| 5010 | `@vars` | Fix invalid JSON. |
+| 5011 | `@vars` | Fix invalid label. |
+| 5012 | `@vars` | Add missing variable to @vars comment block. |
+| 5013 | Avoid using self-closing tag with non-void html element | Use close tag instead. |
+| 5014 | `"active"` | The list of active modules is defined in deployment configuration. |
+| 5015 | `<param>` | `<argument name="..." xsi:type="...">` |
+| 5016 | `<instance>` | `<argument name="..." xsi:type="object">` |
+| 5017 | `<array>` | `<argument name="..." xsi:type="array">` |
+| 5018 | `<item key="...">` | `<item name="..." xsi:type="...">` |
+| 5019 | `<value>` | Instead, provide the actual value as a text literal. |
+| 5020 | `<supported_blocks>` | `<supported_containers>` |
+| 5021 | `<block_name>` | `<container_name>` |
+| 5022 | Factory name detected | Widget type should not begin with /. |
+| 5023 | Obsolete ACL structure detected in line | Check lib/internal/Magento/Framework/Acl/etc/acl.xsd. |
+| 5024 | Obsolete menu structure detected in line | Check app/code/Magento/Backend/etc/menu.xsd. |
+| 5025 | Obsolete system configuration structure detected in file | Check app/code/Magento/Config/etc/system_file.xsd. |
+| 5026 | `"text/javascript"` | Use only public members. |
+| 5028 | `Block` | Use only public members. |
+| 5031 | Contains obsolete method | `getConnection()` |
+| 5042 | Incorrect format of PHP class reference | Check that class is referenced using only camelCased letters, numbers, and no leading slash. |
+| 5043 | Incorrect format of module reference | Check that module is referenced using only letters, numbers, underscores, and no leading slash. |
+| 5044 | `Zend_Db_Select` | `\Magento\Framework\DB\Select` |
+| 5045 | `Zend_Db_Adapter_Pdo_Mysql` | `\Magento\Framework\DB\Adapter\Pdo\Mysql` |
+| 5046 | `Magento\Framework\Serialize\Serializer\Serialize` | `Magento\Framework\Serialize\SerializerInterface` |
+| 5047 | `ArrayObject` | `ArrayObject` |
+| 5048 | `Magento\Framework\View\Element\UiComponent\ArrayObjectFactory` | `ArrayObject` |
+| 5050 | The block being referenced is removed | Remove reference to block. |
+| 5051 | `output="toHtml"` | `output="1"` |
+| 5052 | `\Magento\Framework\View\Element\Text\ListText` | `\Magento\Framework\View\Element\Text\ListText` |
+| 5053 | `<action>` | `<action>` |
+| 5054 | `helper``/` | `/` |
+| 5055 | `helper``::` | `::` |
+| 5056 | Install scripts are obsolete | Use declarative schema approach in module\&#39;s etc/db_schema.xml file. |
+| 5057 | InstallSchema scripts are obsolete | Use declarative schema approach in module\&#39;s etc/db_schema.xml file. |
+| 5058 | InstallData scripts are obsolete | Use data patches approach in module\&#39;s Setup/Patch/Data dir. |
+| 5059 | Install scripts are obsolete | Create a class InstallData in the module\&#39;s Setup folder. |
+| 5060 | Upgrade scripts are obsolete | Use declarative schema approach in module\&#39;s etc/db_schema.xml file. |
+| 5061 | UpgradeSchema scripts are obsolete | Use declarative schema approach in module\&#39;s etc/db_schema.xml file. |
+| 5062 | UpgradeData scripts are obsolete | Use data patches approach in module\&#39;s Setup/Patch/Data dir. |
+| 5063 | Upgrade scripts are obsolete | Use data patches approach in the module\&#39;s Setup/Patch/Data dir. |
+| 5064 | Recurring scripts are obsolete | Create class Recurring in the module\&#39;s Setup folder. |
+| 5065 | &#39;data&#39; is in an invalid directory | Create a data patch within module&#39;s Setup/Patch/Data folder for data upgrades or use declarative schema approach in module&#39;s etc/db_schema.xml file for schema changes. |
+| 5066 | &#39;sql&#39; is in an invalid directory | Create a data patch within module&#39;s Setup/Patch/Data folder for data upgrades or use declarative schema approach in module&#39;s etc/db_schema.xml file for schema changes. |
+| 5067 | Nodes identified by XPath are obsolete | Obsolete XML pointed out in the error should be updated. Follow the suggestions from the error message. |
+| 5068 | `{{htmlescape}}` | `{{var}}` |
+| 5069 | `{{escapehtml}}` | `{{var}}` |
+| 5070 | `getChildHtml()` | `getChildHtml()` |
+| 5071 | `getChildHtml()` | `getChildHtml()` |
+| 5073 | Legacy table names with slash must be fixed to direct table names | Use direct table name instead. |
+| 5075 | Application modules should not use classes from test modules | Remove usage of classes from test modules. |
+| 5078 | Class must be requested in constructor, otherwise compiler will not be able to find and generate these classes | Add class to constructor. |
+| 5079 | Use of var class variables is discouraged | Avoid using &#39;var&#39; to declare class variable. |
+| 5080 | Possible raw SQL statement detected | Use repositories or data patches instead. |
+| 5081 | The use of helpers in templates is discouraged | Use ViewModel instead. |
+| 5082 | The use of $this in templates is deprecated | Use $block instead. |
+| 5083 | Constants are not allowed as the first argument of translation function | Use string literal instead. |
+| 5085 | The use of certain functions is discouraged | Use the alternative function advised on the message instead. |
+| 5087 | PHP cross-version compatibility issue | [](https://www.php.net/manual/en/migration81.php) |
+| 5088 | Optional parameters found after required ones | Move required parameters after optional ones. |
+| 5089 | `final private` | `final private``private` |
+| 5090 | `__set_state``static` | `__set_state``static` |
+| 5091 | `__toString()``Stringable` | `Stringable``__toString()` |
+| 5092 | `is_resource()` | `is_resource()``instanceof` |
+| 6001 | `jQuery.andSelf()` | `jQuery.addBack()` |
+| 6002 | `$.bind``$.unbind` | `$.on``$.off` |
+| 6003 | jQuery method to subscribe to event is deprecated and shouldn&#39;t be used | `.on("event name", fn)` |
+| 6003 | jQuery method to trigger event is deprecated and shouldn&#39;t be used | `.trigger("event name")` |
+| 6004 | `$.delegate``$.undelegate` | `$.on``$.off` |
+| 6005 | `jQuery.load()``jQuery.unload()``jQuery.error()` | `.on("load", fn)``.on("unload", fn)``.on("error", fn)` |
+| 6006 | `jQuery.size()` | `jQuery.length` |
+| 6007 | `jQuery.trim` | `String.prototype.trim` |
+| 6008 | `addButton``addContextToolbar``addMenuItem``addSidebar``file_browser_callback``insert_button_items` | Update code to be compatible with tinymce5. |
+| 6009 | `jQuery.isFunction()` | [] |
+| 6009 | `jQuery.type()` | [] |
+| 6009 | `jQuery.isArray()` | Use the native Array.isArray method instead. |
+| 6009 | `jQuery.parseJSON()` | To parse JSON strings, use the native JSON.parse method instead. |
+| 6010 | `jQuery.expr[":"]``jQuery.expr.filters` | Use jQuery.expr.pseudos instead. |
 
 {style=&quot;table-layout:auto&quot;}
 
-## 警告
+## Warnings
 
-### コアコード
+### Core code
 
-これらの警告は、コアコードベースに小さな不整合がある場合に報告されます。
+These warnings are reported when there are minor inconsistencies in the core codebase.
 
-| エラーコード | エラーの説明 | 推奨アクション |
+| Error code | Error description | Suggested action |
 | --- | --- | --- |
-| 2004 年 | コンポーザーの依存関係のバージョンが一致しません | 問題は、Etalon と実際のプロジェクトで、Composer の依存関係のバージョンが異なることを示しています。 実行による依存関係の更新 `composer update <package_name>`. |
+| 2004 | Composer dependency version mismatch | Issue indicates that Composer dependency version in etalon and actual project is different. `composer update <package_name>` |
 
 {style=&quot;table-layout:auto&quot;}
 
-### カスタムコード
+### Custom code
 
-非推奨のコードへの参照が検出されると、カスタムコードの警告が発生します。 このような参照は、サポートされている拡張点に置き換える必要があります。 に注意を払う `@see` recommendations 用の非推奨項目の注釈。 これらのエラーは、小規模なコーディング規格が壊れた場合にも報告されます。
+Custom code warnings are raised when the references to deprecated code are detected. Such references should be replaced with the supported extension points. `@see`These errors are also reported when minor coding standards have been broken.
 
-| エラーコード | エラーの説明 | 推奨アクション |
+| Error code | Error description | Suggested action |
 | --- | --- | --- |
-| 1131 | Adobe Commerceからの拡張 ``@deprecated`` クラス | 拡張クラスは、今後のバージョンで削除されます。 Adobe Commerceの機能を拡張する方法として、継承はお勧めしません。 としてマークされたクラスを使用するようにコードを更新 `@api`. |
-| 1132 | Adobe Commerceの読み込み `@deprecated` クラス | 拡張クラスは、今後のバージョンで削除されます。 としてマークされたAdobe Commerceクラスの使用を検討します。 `@api` 代わりに、 |
-| 1133 | Adobe Commerceを読み込み中 `@deprecated` クラス | 拡張クラスは、今後のバージョンで削除されます。 としてマークされたAdobe Commerceクラスの使用を検討します。 `@api` 代わりに、 |
-| 1134 | Adobe Commerceの使用 `@deprecated` クラス | 拡張クラスは、今後のバージョンで削除されます。 としてマークされたAdobe Commerceクラスの使用を検討します。 `@api` 代わりに、 |
-| 1234 | Adobe Commerceの使用 `@deprecated` 定数 | 非推奨の定数は、今後のバージョンで削除されます。 としてマークされた定数の使用を検討してください `@api` または、実装内のプライベート定数を使用します。 |
-| 1235 | Adobe Commerceの上書き `@deprecated` 定数 | 非推奨の定数は、今後のバージョンで削除されます。 としてマークされた定数の使用を検討してください `@api` または、実装内のプライベート定数を使用します。 |
-| 1236 | Adobe Commerceの譲渡 `@deprecated` 定数 | 非推奨の定数は、今後のバージョンで削除されます。 としてマークされた定数の使用を検討してください `@api` または、実装内のプライベート定数を使用します。 |
-| 1332 | 読み込まれたAdobe Commerce `@deprecated` インターフェイス | 非推奨（廃止予定）のインターフェイスは、今後のバージョンで削除されます。 としてマークされたインターフェイスまたはクラスの使用を検討してください `@api` 代わりに、 |
-| 1334 | 使用済みAdobe Commerce `@deprecated` インターフェイス | 非推奨（廃止予定）のインターフェイスは、今後のバージョンで削除されます。 としてマークされたインターフェイスまたはクラスの使用を検討してください `@api` 代わりに、 |
-| 1337 | Adobe Commerceから継承 `@deprecated` インターフェイス | 非推奨（廃止予定）のインターフェイスは、今後のバージョンで削除されます。 インターフェイスの継承を削除する場合は、 `@api` または実装内で導入されたインターフェイスを使用することをお勧めします。 |
-| 1338 | Adobe Commerceの実装 `@deprecated` インターフェイス | 非推奨（廃止予定）のインターフェイスは、今後のバージョンで削除されます。 インターフェイスの継承を削除する場合は、 `@api` または実装内で導入されたインターフェイスを使用することをお勧めします。 |
-| 1430 | 宣言されていない dataobject メソッドを呼び出す | 宣言されていないマジックメソッドは変更される可能性があります。 代わりに、インターフェイスメソッドに依存することを検討してください。 |
-| 1439 | Adobe Commerceを呼び出す `@deprecated` メソッド | 非推奨（廃止予定）のメソッドは今後のバージョンで削除されます。 代わりに、API インターフェイスで宣言されたメソッドに依存することを検討してください。 |
-| 1534 | Adobe Commerceの使用 `@deprecated` プロパティ | 非推奨（廃止予定）のメソッドは今後のバージョンで削除されます。 代わりに、API インターフェイスで宣言されたメソッドに依存することを検討してください。 |
-| 1535 | Adobe Commerceの上書き `@deprecated` プロパティ | 非推奨のプロパティは、今後のバージョンで削除されます。 API インターフェイスで宣言されたメソッドに依存するか、代わりに実装内のプライベートプロパティを使用することを検討してください。 |
-| 1536 | Adobe Commerceの譲渡 `@deprecated` プロパティ | 非推奨（廃止予定）のメソッドは今後のバージョンで削除されます。 代わりに、API インターフェイスで宣言されたメソッドに依存することを検討してください。 |
-| 5006 | プロキシとインターセプタは、コンストラクタで明示的に要求されてはなりません | 元のクラスは、コンストラクターパラメーターの型として宣言する必要があります。 インターセプター/プロキシクラスは、フレームワークの依存関係インジェクション実装によって渡されます。 |
-| 5074 | 非推奨のメソッドの使用 `getResource()` 宛先（保存、読み込み、削除）のデータが検出されました。 | 代わりに、リポジトリを使用します。 |
-| 5086 | 定数に対して表示が宣言されていません | すべての定数の表示を宣言します。 |
+| 1131 | ``@deprecated`` | The extended class will be removed in upcoming versions. Inheritance is not recommended way of extending Adobe Commerce functionality. `@api` |
+| 1132 | `@deprecated` | The extended class will be removed in upcoming versions. `@api` |
+| 1133 | `@deprecated` | The extended class will be removed in upcoming versions. `@api` |
+| 1134 | `@deprecated` | The extended class will be removed in upcoming versions. `@api` |
+| 1234 | `@deprecated` | The deprecated constant will be removed in upcoming versions. `@api` |
+| 1235 | `@deprecated` | The deprecated constant will be removed in upcoming versions. `@api` |
+| 1236 | `@deprecated` | The deprecated constant will be removed in upcoming versions. `@api` |
+| 1332 | `@deprecated` | The deprecated interface will be removed in upcoming versions. `@api` |
+| 1334 | `@deprecated` | The deprecated interface will be removed in upcoming versions. `@api` |
+| 1337 | `@deprecated` | The deprecated interface will be removed in upcoming versions. `@api` |
+| 1338 | `@deprecated` | The deprecated interface will be removed in upcoming versions. `@api` |
+| 1430 | Call not declared dataobject method | The magic methods that are not declared may be changed. Consider relying on interface methods instead. |
+| 1439 | `@deprecated` | The deprecated method will be removed in upcoming versions. Consider relying on methods declared in API interfaces instead. |
+| 1440 | Method signature mismatch | A call or override of core method is detected with parameters, arguments or return type that does not match the method signature. |
+| 1534 | `@deprecated` | The deprecated method will be removed in upcoming versions. Consider relying on methods declared in API interfaces instead. |
+| 1535 | `@deprecated` | The deprecated property will be removed in upcoming versions. Consider relying on methods declared in API interfaces or using a private property within your implementation instead. |
+| 1536 | `@deprecated` | The deprecated method will be removed in upcoming versions. Consider relying on methods declared in API interfaces instead. |
+| 5006 | Proxies and interceptors MUST never be explicitly requested in constructors | The original class should be declared as a type of the constructor parameter. The Interceptor/Proxy class will be passed by the framework dependency injection implementation. |
+| 5074 | `getResource()` | Use a repository instead. |
+| 5086 | Visibility is not declared on a constant | Declare the visibility on all constants. |
 
 {style=&quot;table-layout:auto&quot;}
 
-### GraphQL スキーマ
+### GraphQL Schema
 
-GraphQL スキーマの警告は、新しいバージョンで追加の項目がスキーマに追加されると発生します。 実装を確認して、リクエストに使用する必要があるかどうかを確認することをお勧めします。
+GraphQL Schema warnings are raised when the additional items are added to the schema in the new version. It is recommended to review the implementation to see if they should be used for requests.
 
-| エラーコード | エラーの説明 | 推奨アクション |
+| Error code | Error description | Suggested action |
 | --- | --- | --- |
-| 3206 | 引数のデフォルト値が変更されました | カスタマイズでクエリを使用する場合は、引数の値を明示的に指定する必要がある場合があります。 |
-| 3302 | 和集合に追加されたタイプ | タイプが和集合に追加されました。 この和集合タイプを返すクエリの結果を実装処理で調べ、追加したタイプを処理できることを確認します。 |
-| 3304 | 追加されたオプションの入力フィールド | オプションの入力フィールドが追加されました。 実装を確認してください。 |
-| 3305 | 実装済みのインターフェイスが追加されました | フィールドは、実装で考慮できる詳細情報を受け入れるか、提供することができます。 |
-| 3306 | 列挙に追加された値 | 列挙に値が追加されました。 クライアントが列挙の値に switch ステートメントを含み、デフォルトのケースを含まない場合、この変更によって予期しない動作が発生する可能性があります。 |
-| 3308 | オプションの引数が追加されました | クエリがカスタマイズで新しい引数を使用している場合は、リクエストに追加する必要がある場合があります。 |
+| 3206 | Argument default value changed | If the query is used in the customization the argument value may have to be specified explicitly. |
+| 3302 | Type added to union | The type was added to the union. Check the implementation processing the result of the query returning this union type and ensure it is able to handle the added type. |
+| 3304 | Optional input field added | Optional input field added. Check the implementation to ensure. |
+| 3305 | Implemented interface added | The field can accept/provide more information that can be considered in the implementation. |
+| 3306 | Value added to enum | A value was added to an enum. If clients contain a switch statement on the enum&#39;s value and do not include a default case, this change might cause unexpected behavior. |
+| 3308 | Optional argument added | If the query is using a new argument in the customization it may need to be added to the request. |
 
 {style=&quot;table-layout:auto&quot;}
