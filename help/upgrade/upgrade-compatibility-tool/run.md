@@ -1,9 +1,9 @@
 ---
 title: を実行します。 [!DNL Upgrade Compatibility Tool]
 description: 次の手順に従って、 [!DNL Upgrade Compatibility Tool] をAdobe Commerceプロジェクトに追加します。
-source-git-commit: fbe47245623469a93cce5cc5a83baf467a007bc4
+source-git-commit: d5811225d695c44cc8f67ae01cf688fe6382dc23
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '2030'
 ht-degree: 0%
 
 ---
@@ -162,7 +162,15 @@ bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
 
 #### HTML
 
-HTMLファイルには、特定された問題と分析の概要のリストも含まれています。 また、次の 4 つの異なるグラフが含まれます。
+HTMLファイルには、分析の概要と、特定された問題のリストも含まれています。
+
+![HTMLレポート — 概要](../../assets/upgrade-guide/uct-html-summary.png)
+
+特定された問題を、 [!DNL Upgrade Compatibility Tool] 分析：
+
+![HTMLレポート — 詳細](../../assets/upgrade-guide/uct-html-details.png)
+
+HTMLレポートには、次の 4 つの異なるグラフも含まれます。
 
 - **問題の重要度別のモジュール**:モジュール別の重大度の配分を表示します。
 - **問題の重要度別のファイル**:ファイル別の重大度を表示します。
@@ -171,9 +179,21 @@ HTMLファイルには、特定された問題と分析の概要のリストも�
 
 これらのグラフでは、最も問題が発生したパーツや、アップグレードを実行するためにより多くの作業が必要なパーツを（一目で）特定できます。
 
-![HTMLレポート — 概要](../../assets/upgrade-guide/uct-html-summary.png)
+![HTMLレポート — 図](../../assets/upgrade-guide/uct-html-diagrams.png)
 
-![HTMLレポート — 詳細](../../assets/upgrade-guide/uct-html-details.png)
+最小問題レベル ( デフォルトでは、 [警告]) をクリックします。
+
+右上隅にドロップダウンがあり、必要に応じて別のドロップダウンを選択できます。 識別された問題のリストは、それに応じてフィルタリングされます。
+
+![HTMLレポート — ドロップダウンの使用方法](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
+
+問題レベルが低い問題は削除されますが、通知が表示されるので、モジュールごとに識別された問題を常に把握できます。
+
+また、図は、 `Modules with relative sizes and issues`( `min-issue-level` 最初に設定されました。
+
+異なる結果を表示する場合は、コマンドを再実行して、 `--min-issue-level` オプション。
+
+![HTMLレポート — バブルチャート図](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
 
 このレポートを別の出力フォルダーにエクスポートするには、次の手順を実行します。
 
@@ -240,7 +260,7 @@ bin/uct core:code:changes <dir> <vanilla dir>
 引数は次のようになります。
 
 - `<dir>`:Adobe Commerceインストールディレクトリ。
-- `<vanilla dir>`:Adobe Commerce vanilla インストールディレクトリ。
+- `<vanilla dir>`:Adobe Commerce vanilla のインストールディレクトリ。
 
 このコマンドを実行する際には、いくつかの制限があります。
 
@@ -341,8 +361,8 @@ bin/uct graphql:compare <schema1> <schema2>
 この [!DNL Upgrade Compatibility Tool] は、結果と、デフォルトでプロジェクトで特定されたすべての問題を含むレポートを提供します。 結果を最適化して、アップグレードを完了するために修正する必要がある問題に焦点を当てることができます。
 
 - オプションを使用 `--ignore-current-version-compatibility-issues`：現在のAdobe Commerceバージョンに対する既知の重要な問題、エラーおよび警告をすべて抑制します。 アップグレード先のバージョンに対してのみエラーが発生します。
-- を `--min-issue-level` オプションを選択すると、最小の問題レベルを設定して、アップグレードに関する最も重要な問題のみを優先するのに役立ちます。 特定のベンダー、モジュール、またはディレクトリのみを分析する場合は、パスをオプションとして指定することもできます。
-- を実行します。 `bin` コマンドと追加オプション `-m`. これにより、 [!DNL Upgrade Compatibility Tool] 特定のモジュールを個別に分析し、 [!DNL Upgrade Compatibility Tool].
+- を `--min-issue-level` オプションを選択すると、最小の問題レベルを設定して、アップグレードに関する最も重要な問題のみを優先するのに役立ちます。
+- 特定のベンダー、モジュール、またはディレクトリのみを分析する場合は、パスをオプションとして指定することもできます。 を実行します。 `bin` コマンドと追加オプション `-m`. これにより、 [!DNL Upgrade Compatibility Tool] 特定のモジュールを個別に分析し、 [!DNL Upgrade Compatibility Tool].
 
 ### Adobe Commerceのベストプラクティスに従う
 
