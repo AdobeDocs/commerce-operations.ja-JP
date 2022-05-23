@@ -1,9 +1,9 @@
 ---
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
-source-git-commit: fd51f40ce8f0dfab5970414d4d243aee13ba9c0a
+source-git-commit: 07587717002b1aa9ab3102f5e6c078c43679a31e
 workflow-type: tm+mt
-source-wordcount: '34'
+source-wordcount: '36'
 ht-degree: 0%
 
 ---
@@ -17,3 +17,5 @@ ht-degree: 0%
    - [インストール](site-wide-analysis-tool/installation.md)
    - [アクセス方法](site-wide-analysis-tool/access.md)
    - [ステータス属性](site-wide-analysis-tool/status.md)
+   - [「機能」タブ](site-wide-analysis-tool/features-tabs.md)
+
