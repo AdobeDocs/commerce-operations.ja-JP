@@ -1,9 +1,9 @@
 ---
-title: のインストール [!DNL Upgrade Compatibility Tool]
+title: をダウンロードします。 [!DNL Upgrade Compatibility Tool]
 description: 次の手順に従って、 [!DNL Upgrade Compatibility Tool] Adobe Commerceプロジェクト用
-source-git-commit: 218b099caa883f66ddda48407fb789e51fedc203
+source-git-commit: 5ff08d231269ea0bcb69f8c80aa546b171a5e4a0
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 0%
 
 この [!DNL Upgrade Compatibility Tool] は、Adobe Commerceカスタマイズ済みのインスタンスを、そのインスタンスにインストールされているすべてのモジュールを分析することで、特定のバージョンと照合するコマンドラインツールです。 最新バージョンのAdobe Commerceにアップグレードする前に対処する必要があるエラーと警告のリストを返します。
 
+## 前提条件
+
+をインストールするには、以下を実行します。 [!DNL Upgrade Compatibility Tool]を使用する場合は、必要な前提条件をインストールする必要があります。
+
+詳しくは、 [前提条件](../upgrade-compatibility-tool/prerequisites.md) を参照してください。
+
 ## をダウンロードします。 [!DNL Upgrade Compatibility Tool]
 
 次の手順で [!DNL Upgrade Compatibility Tool]、次のコマンドを実行します。
@@ -22,18 +28,6 @@ ht-degree: 0%
 ```bash
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
-
-## インストール
-
-をインストールするには、以下を実行します。 [!DNL Upgrade Compatibility Tool]を使用する場合は、必要な前提条件をインストールする必要があります。
-
-* Adobe Commerceアクセスキー
-* コンポーザー
-* Node.js
-
-## 前提条件
-
-詳しくは、 [前提条件](../upgrade-compatibility-tool/prerequisites.md) を参照してください。
 
 ### Adobe Commerceアクセスキー
 
@@ -58,11 +52,11 @@ composer create-project magento/upgrade-compatibility-tool uct --repository http
 
 ### コンポーザー
 
-のクローン [!DNL Upgrade Compatibility Tool] リポジトリと実行 `composer install` をターミナルに追加して、依存関係をインストールします。
+をダウンロードします。 [!DNL Upgrade Compatibility Tool] リポジトリと実行 `composer install` をターミナルに追加して、依存関係をインストールします。
 
 >[!WARNING]
 >
->この **Adobe Commerceアクセスキー** が正しく設定されていない場合は、 [!DNL Upgrade Compatibility Tool] はインストールされず、実行時にエラーが発生します `composer install` コマンドを使用します。
+>この **Adobe Commerceアクセスキー** が正しく設定されていない場合、 [!DNL Upgrade Compatibility Tool] 実行時に `composer create-project` コマンドを実行すると失敗します。
 
 ### Node.js
 

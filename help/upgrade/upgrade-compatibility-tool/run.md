@@ -1,9 +1,9 @@
 ---
 title: を実行します。 [!DNL Upgrade Compatibility Tool]
 description: 次の手順に従って、 [!DNL Upgrade Compatibility Tool] をAdobe Commerceプロジェクトに追加します。
-source-git-commit: d5811225d695c44cc8f67ae01cf688fe6382dc23
+source-git-commit: 64b061f3b2f93827bfdb904a6faddbd21f4da5e6
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2057'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ bin/uct upgrade:check <dir>
 
 次を実行できます。 `core:code:changes` コマンドを使用して、特定のAdobe Commerceインスタンスのコアコードの変更のみを分析できます。 詳しくは、 [コアコードの変更点](../upgrade-compatibility-tool/run.md#use-the-core:code:changes-command) 」セクションに入力します。
 
-一方、 `graphql:compare` コマンドを使用して、2 つの GraphQL スキーマを比較し、それら間で変更があるかどうかを確認できます。 詳しくは、 [GraphQL スキーマの互換性の検証](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) 」セクションに入力します。
+以下を使用して、 `graphql:compare` コマンドを使用して、2 つの GraphQL スキーマを比較し、それら間で変更があるかどうかを確認できます。 詳しくは、 [GraphQL スキーマの互換性の検証](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) 」セクションに入力します。
 
 ### Recommendations `upgrade:check` command
 
@@ -317,6 +317,10 @@ bin/uct upgrade:check <dir> -c 2.4.3
 bin/uct refactor <dir>
 ```
 
+引数は次のようになります。
+
+- `<dir>`:Adobe Commerceインストールディレクトリ。
+
 ## GraphQL スキーマの互換性の検証
 
 この [!DNL Upgrade Compatibility Tool] また、2 つの GraphQL エンドポイントを紹介し、それらのエンドポイント間で重大な変更や危険な変更を探してスキーマを比較するオプションも提供されています。
@@ -350,9 +354,10 @@ bin/uct graphql:compare <schema1> <schema2>
  *   [WARNING] OPTIONAL_INPUT_FIELD_ADDED: An optional field sku on input type ProductAttributeSortInput was added.
 ```
 
-詳しくは、 [開発者情報](../upgrade-compatibility-tool/developer.md) を参照してください。
-
 次を実行できます。 [!DNL Upgrade Compatibility Tool] PhpStorm プラグインを介した run 設定を含む 詳しくは、 [[!DNL Upgrade Compatibility Tool] 設定を実行](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) トピックを参照してください。
+
+参照 [ビデオチュートリアル](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) (06:30)を参照し、 [!DNL Upgrade Compatibility Tool] MagentoPHPStorm プラグイン
+
 
 ## 推奨されるアクション
 

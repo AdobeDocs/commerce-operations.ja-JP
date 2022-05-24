@@ -1,7 +1,7 @@
 ---
 user-guide-title: アップグレードガイド
 user-guide-description: Adobe Commerce または Magento Open Source アプリケーションのアップグレードが非常に重要な理由と、アップグレードを計画し実行する方法を学習します。
-source-git-commit: ea5de44ab40b873fa30393359dd714534bd789e3
+source-git-commit: 84c24627c00ecea97e29bf0cb023ddf2dc285aeb
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 20%
@@ -32,12 +32,12 @@ ht-degree: 20%
    - [パッチの仕組み](patches/overview.md)
    - [パッチの適用](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
-   - [概要](upgrade-compatibility-tool/overview.md)
+   - [[!DNL Upgrade Compatibility Tool] 概要](upgrade-compatibility-tool/overview.md)
    - [前提条件](upgrade-compatibility-tool/prerequisites.md)
    - [インストール](upgrade-compatibility-tool/install.md)
    - [ツールを実行](upgrade-compatibility-tool/run.md)
+   - [関連ツール](upgrade-compatibility-tool/related-tools.md)
    - [の統合 [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
-   - [開発者情報](upgrade-compatibility-tool/developer.md)
    - [エラーメッセージ](upgrade-compatibility-tool/error-messages.md)
 - 貢献する開発者 {#developer}
    - [Git ベースのインストールのアップグレード](developer/git-installs.md)
