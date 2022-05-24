@@ -1,9 +1,9 @@
 ---
 title: インストールガイド
 description: このガイドを使用して、 [!DNL Site-Wide Analysis Tool] （Web サイト用）
-source-git-commit: de2fb829def2cf94c452a06a219d7f29885c8f9f
+source-git-commit: a694de861fcc681d864ffb2c405b2366b32bba41
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ bin/magento module:status Magento_ServicesConnector
 1. インストールを確認します。
 
    ```bash
-   scheduler -v
+   ./scheduler -v
    ```
 
    ```bash
@@ -253,7 +253,7 @@ bin/magento module:status Magento_ServicesConnector
 
 ### サービス {#service}
 
-1. systemd ユニットファイルの作成 `(/etc/systemd/system/scheduler.service)` を次の設定に置き換えます ( `<filesystemowner>` エージェントがインストールされているディレクトリを所有する Unix ユーザー )
+1. systemd ユニットファイルの作成 `(/etc/systemd/system/scheduler.service)` を次の設定に置き換えます ( `<filesystemowner>` ( エージェントとAdobe Commerceソフトウェアがインストールされているディレクトリを所有する Unix ユーザー ) エージェントをルートユーザーとしてダウンロードした場合は、ディレクトリとネストされたファイルの所有者を変更します。
 
    ```config
    [Unit]
