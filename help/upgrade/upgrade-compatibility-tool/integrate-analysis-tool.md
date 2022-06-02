@@ -1,9 +1,9 @@
 ---
 title: '" [!DNL Site-Wide Analysis Tool]"'
 description: 次の手順に従って、 [!DNL Upgrade Compatibility Tool] からの報告 [!DNL Site-Wide Analysis Tool] ダッシュボードをAdobe Commerceプロジェクトに貼り付けます。
-source-git-commit: 5ff08d231269ea0bcb69f8c80aa546b171a5e4a0
+source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # の統合 [!DNL Site-Wide Analysis Tool]
 
-この [!DNL Site-Wide Analysis Tool] では、Adobe Commerceのインストールに対するセキュリティと操作性を確保するため24/7、リアルタイムでのパフォーマンス監視、レポートおよび推奨事項を提供します。
+この [!DNL Site-Wide Analysis Tool] では、Adobe Commerceインスタンスのセキュリティと操作性を確保するため24/7、リアルタイムでのパフォーマンス監視、レポートおよび推奨事項を提供しています。
 
-この [!DNL Upgrade Compatibility Tool] が [!DNL Site-Wide Analysis Tool] 非技術者が [!DNL Upgrade Compatibility Tool] そして、 [HTMLレポート](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/run.html?lang=en#output) 各ファイルの重大度、エラーコード、エラーの説明を指定する問題のリストが含まれています。
+この [!DNL Upgrade Compatibility Tool] が [!DNL Site-Wide Analysis Tool] 非技術者が [!DNL Upgrade Compatibility Tool] そして、 [レポート](../upgrade-compatibility-tool/reports.md) 各ファイルの問題のリストを含んでいます。
 
 詳しくは、 [[!DNL Site-Wide Analysis Tool] ユーザーガイド](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) を参照してください。
 

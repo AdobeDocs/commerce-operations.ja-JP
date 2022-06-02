@@ -1,10 +1,10 @@
 ---
 user-guide-title: アップグレードガイド
 user-guide-description: Adobe Commerce または Magento Open Source アプリケーションのアップグレードが非常に重要な理由と、アップグレードを計画し実行する方法を学習します。
-source-git-commit: 84c24627c00ecea97e29bf0cb023ddf2dc285aeb
+source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 20%
+source-wordcount: '145'
+ht-degree: 19%
 
 ---
 
@@ -32,13 +32,16 @@ ht-degree: 20%
    - [パッチの仕組み](patches/overview.md)
    - [パッチの適用](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
-   - [[!DNL Upgrade Compatibility Tool] 概要](upgrade-compatibility-tool/overview.md)
+   - [概要](upgrade-compatibility-tool/overview.md)
    - [前提条件](upgrade-compatibility-tool/prerequisites.md)
-   - [インストール](upgrade-compatibility-tool/install.md)
-   - [ツールを実行](upgrade-compatibility-tool/run.md)
+   - 以下を使用： [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
+      - [コマンドラインインターフェイスでツールを実行する](upgrade-compatibility-tool/run.md)
+      - [との統合 [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
+      - [PHPStorm プラグイン内でMagentoを実行](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
+   - レポート {#reporting}
+      - [レポート](upgrade-compatibility-tool/reports.md)
+      - [エラーメッセージ](upgrade-compatibility-tool/error-messages.md)
    - [関連ツール](upgrade-compatibility-tool/related-tools.md)
-   - [の統合 [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
-   - [エラーメッセージ](upgrade-compatibility-tool/error-messages.md)
 - 貢献する開発者 {#developer}
    - [Git ベースのインストールのアップグレード](developer/git-installs.md)
    - [モジュールの管理](developer/manage-modules.md)
