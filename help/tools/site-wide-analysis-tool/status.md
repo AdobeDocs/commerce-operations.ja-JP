@@ -1,7 +1,7 @@
 ---
 title: ステータス属性
 description: 様々なステータス情報については、 [!DNL Site-Wide Analysis Tool].
-source-git-commit: 1222d1c87de26ce95c4eefaa9d2a9c3731e1b3cf
+source-git-commit: 01d4e800c31615494e6e3f20adfbf3d35fabcce9
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -19,6 +19,3 @@ ht-degree: 0%
 **[!UICONTROL Health Index Bar]**:サイト全体の正常性を 0 ～ 100 の範囲で測定します。0 は最悪で、100 は完全な正常性です。 アクティブなレコメンデーションの量と優先度の重み係数に基づいて計算されます。
 
 **[!UICONTROL Download Recommendations Report]**:Recommendationsレポートは、プロジェクトに適用可能なパーソナライズされたレコメンデーションを提供します。 このセクションをクリックすると、PDFレポートをダウンロードできます。
-
-
-
