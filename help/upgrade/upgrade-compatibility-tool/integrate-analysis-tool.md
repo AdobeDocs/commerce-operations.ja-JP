@@ -1,7 +1,7 @@
 ---
 title: '" [!DNL Site-Wide Analysis Tool]"'
 description: 次の手順に従って、 [!DNL Upgrade Compatibility Tool] からの報告 [!DNL Site-Wide Analysis Tool] ダッシュボードをAdobe Commerceプロジェクトに貼り付けます。
-source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
+source-git-commit: c70e431035f0e0b2c495715563faf6be46aa514e
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -31,4 +31,4 @@ ht-degree: 0%
 
 ![UCT SWAT ウィジェット — 結果](../../assets/upgrade-guide/uct-swat-results.png)
 
-クリック **[!UICONTROL Download Report]** を取得する [!DNL Upgrade Compatibility Tool] HTMLレポートを作成し、詳細を確認します。
+クリック **[!UICONTROL Download Report]** を取得する [!DNL Upgrade Compatibility Tool] [HTMLレポート](../upgrade-compatibility-tool/reports.md#html-report) 詳細を確認します。
