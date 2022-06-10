@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] レポート»'
 description: 次の手順に従って、 [!DNL Upgrade Compatibility Tool] をAdobe Commerceプロジェクトに追加します。
-source-git-commit: 7ec999f9122eb0707ac6c37b7b49f9c423945318
+source-git-commit: 1ce02c3215b01f64e86383938a257514f0e4257c
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 - *重大なエラーの合計*:検出された重大なエラーの数。
 - *合計エラー数*:見つかったエラーの数。
 - *合計警告数*:見つかった警告の数。
+- *メモリのピーク使用量*:最大メモリ量 [!DNL Upgrade Compatibility Tool] 実行中に到達しました。
 
 次のコマンドラインインターフェイスの例を参照してください。
 
