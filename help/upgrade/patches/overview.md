@@ -1,9 +1,9 @@
 ---
 title: パッチの動作
 description: Adobe CommerceおよびMagento Open Source用の様々なタイプのパッチとその動作について説明します。
-source-git-commit: 06ac3169a5e3813e4f50246f54f91998e14b5985
+source-git-commit: 45a44d98f149b4b9a1fbb4ac0bcea3eb372f49a8
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 - 変更を開始するライン番号と変更するライン数。
 - スワップインする新しいコード。
 
-次の場合に [patch](https://en.wikipedia.org/wiki/Patch_(Unix)) プログラムが実行され、このファイルが読み込まれ、指定された変更がファイルに対して行われます。
+パッチプログラムを実行すると、このファイルが読み込まれ、指定された変更がファイルに対して行われます。
 
 パッチには次の 3 つのタイプがあります。
 
