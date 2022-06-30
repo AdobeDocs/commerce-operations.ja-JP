@@ -1,9 +1,9 @@
 ---
 title: '" [!DNL Site-Wide Analysis Tool]"'
 description: 次の手順に従って、 [!DNL Upgrade Compatibility Tool] からの報告 [!DNL Site-Wide Analysis Tool] ダッシュボードをAdobe Commerceプロジェクトに貼り付けます。
-source-git-commit: 0d4ccc8c2e1a470b5fb3a7d59e81230e8986c257
+source-git-commit: 1fc12289125a5954243e177a0c21505234eb2e81
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,7 @@ ht-degree: 0%
 
 クリック **[!UICONTROL Download Report]** を取得する [!DNL Upgrade Compatibility Tool] [HTMLレポート](../upgrade-compatibility-tool/reports.md#html-report) 詳細を確認します。
 
-実行時に [!DNL Upgrade Compatibility Tool] から [!DNL Site-Wide Analysis Tool] レポートには、プロジェクトのバージョンと最新のリリースバージョンとの比較結果が表示されます。
+
+>[!NOTE]
+>
+> の実行 [!DNL Upgrade Compatibility Tool] から [!DNL Site-Wide Analysis Tool] により結果が最適化され、target のアップグレードにとって新しく重要な問題に焦点を当てるのに役立ちます。 使用する [`--ignore-current-version-compatibility-errors`](run.md#optimize-your-results) 「 」オプションを選択すると、常に、プロジェクトのバージョンと最新のリリースバージョンを比較した結果が表示されます。
