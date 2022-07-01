@@ -1,7 +1,7 @@
 ---
 title: 前提条件
 description: 前提条件の手順を完了して、Adobe CommerceまたはMagento Open Sourceプロジェクトのアップグレードを準備します。
-source-git-commit: ea5de44ab40b873fa30393359dd714534bd789e3
+source-git-commit: 0729e84adabcded6d50cf28a7525b97fd50d45f5
 workflow-type: tm+mt
 source-wordcount: '1477'
 ht-degree: 0%
@@ -176,7 +176,7 @@ Adobe Commerce 2.4 には、一部のデータをシリアル化から JSON に�
 1. 変数を設定します。
 
    ```bash
-   export DATA_CONVERTER_BATCH_SIZE 100000
+   export DATA_CONVERTER_BATCH_SIZE=100000
    ```
 
    >[!NOTE]
