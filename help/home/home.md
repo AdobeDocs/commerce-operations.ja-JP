@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;home;popular topics
 title: ホーム
 description: Adobe Commerceの運用製品ドキュメントのインデックスを参照します。
-source-git-commit: e38d4f1c3e7618e77afb638f4a996cd7e5ebdbd5
+source-git-commit: 8b40946fc65d9089de752376abbd31e37f60c541
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '206'
 ht-degree: 1%
 
 ---
@@ -59,11 +59,11 @@ Adobe CommerceおよびMagento Open Sourceプラットフォームにデプロ�
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/extensions/">
-       <img alt="拡張機能" src="../assets/icons/extension.svg" width="40" height="40"/>
+    <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html">
+       <img alt="コマンドラインツールリファレンス" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/extensions/"><strong>拡張機能</strong></a>
+      <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html"><strong>コマンドラインツールリファレンス</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -84,14 +84,6 @@ Adobe CommerceおよびMagento Open Sourceプラットフォームにデプロ�
   </td>
 </tr>
 <tr>
-  <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html">
-       <img alt="コマンドラインツールリファレンス" src="../assets/icons/page-rule.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html"><strong>コマンドラインツールリファレンス</strong></a>
-    </div>
-  </td>
   <td valign="top">
     <a href="../implementation-playbook/overview.md">
       <img alt="実装" src="../assets/icons/play.svg" width="40" height="40"/>
