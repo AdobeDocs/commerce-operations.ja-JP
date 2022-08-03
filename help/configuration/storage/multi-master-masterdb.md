@@ -1,7 +1,7 @@
 ---
 title: マスターデータベースを自動的に構成する
 description: 分割データベースソリューションの自動設定に関するガイダンスを参照してください。
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 1%
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # マスターデータベースを自動的に構成する
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 
