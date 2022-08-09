@@ -1,9 +1,9 @@
 ---
 title: アップグレードの実行
 description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceプロジェクトをアップグレードします。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3c3966a904b0568e0255020d8880d348c357ea95
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,28 @@ ht-degree: 0%
    ```
 
    詳しくは、 [メンテナンスモードを有効または無効にする](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) 」を参照してください。 オプションで、 [カスタムメンテナンスモードページ](https://devdocs.magento.com/guides/v2.4/comp-mgr/trouble/cman/maint-mode.html).
+
+1. メッセージキューコンシューマーなどの非同期プロセスの実行中にアップグレードプロセスを開始すると、データが破損する可能性があります。 データの破損を防ぐには、すべての cron ジョブを無効にします。
+
+   _Adobe Commerce on cloud infrastructure:_
+
+   ```bash
+   ./vendor/bin/ece-tools cron:disable
+   ```
+
+   _Magento Open Source:_
+
+   ```bash
+   bin/magento cron:remove
+   ```
+
+1. すべてのメッセージキューコンシューマーを手動で起動し、すべてのメッセージが消費されるようにします。
+
+   ```bash
+   bin/magento cron:run --group=consumers
+   ```
+
+   cron ジョブが完了するのを待ちます。 ジョブのステータスを監視するには、プロセスビューアを使用するか、 `ps aux | grep 'bin/magento queue'` すべてのプロセスが完了するまで、コマンドを複数回実行します。
 
 1. のバックアップを作成する `composer.json` ファイル。
 
