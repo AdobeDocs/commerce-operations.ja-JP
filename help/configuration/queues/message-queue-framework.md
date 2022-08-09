@@ -1,7 +1,7 @@
 ---
 title: メッセージキュー：概要
 description: メッセージキューのフレームワークと、Adobe CommerceおよびMagento Open Sourceアプリケーションでの動作についてお読みください。
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # メッセージキュー：概要
 
-Message Queue Framework（MQF；メッセージキューフレームワーク）は、 [モジュール](https://glossary.magento.com/module) メッセージをキューに公開する場合。 また、非同期でメッセージを受信するコンシューマーも定義します。 MQF は [RabbitMQ](http://www.rabbitmq.com) メッセージを送受信するためのスケーラブルなプラットフォームを提供するメッセージングブローカーとして。 また、配信されなかったメッセージを保存するメカニズムも含まれています。 RabbitMQ は、Advanced Message Queuing Protocol(AMQP)0.9.1 の仕様に基づいています。
+Message Queue Framework（MQF；メッセージキューフレームワーク）は、 [モジュール](https://glossary.magento.com/module) メッセージをキューに公開する場合。 また、非同期でメッセージを受信するコンシューマーも定義します。 MQF は [RabbitMQ](https://www.rabbitmq.com) メッセージを送受信するためのスケーラブルなプラットフォームを提供するメッセージングブローカーとして。 また、配信されなかったメッセージを保存するメカニズムも含まれています。 RabbitMQ は、Advanced Message Queuing Protocol(AMQP)0.9.1 の仕様に基づいています。
 
 次の図に、メッセージキューフレームワークを示します。
 

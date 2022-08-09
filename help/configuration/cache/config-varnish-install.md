@@ -1,9 +1,9 @@
 ---
 title: ワニスを取り付ける
 description: Vanish のインストールに関するアドバイスを参照してください。
-source-git-commit: 688db9fcc9cd196d1560e49719b03ef32d13870d
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Vanish ソフトウェアのインストールは、このガイドの範囲外です。 Vanish のインストールの詳細については、次を参照してください。
 
-- [インストール wiki](http://wiki.mikejung.biz/Varnish)
+- [インストールガイド](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
 - [ワニスの取り付けガイド](https://www.varnish-cache.org/docs)
-- [Vanish (Tecmint) の取り付け方法](http://www.tecmint.com/install-varnish-cache-web-accelerator)
+- [Vanish (Tecmint) の取り付け方法](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
 
 >[!INFO]
 >

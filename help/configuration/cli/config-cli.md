@@ -1,9 +1,9 @@
 ---
 title: コマンドラインツール
 description: Commerce コマンドラインツールを使用して、インストールタスクと設定タスクを実行します。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Commerce には 1 つのコマンドラインインターフェイス (CLI) が�
 - CLI は拡張可能なため、サード・パーティの開発者は CLI に「プラグイン」できます。 これにより、ユーザーの学習曲線をなくすこともできます。
 - 無効なモジュールのコマンドは表示されません。
 
-このトピックでは、CLI を使用したAdobe CommerceおよびMagento Open Sourceソフトウェアの設定について説明します。 コマースのインストールについて詳しくは、 [インストールの概要](https://devdocs.magento.com/guides/2.4/install-gde/bk-install-guide.html) 内 _インストールガイド_.
+このトピックでは、CLI を使用したAdobe CommerceおよびMagento Open Sourceソフトウェアの設定について説明します。 コマースのインストールについて詳しくは、 [インストールフロー](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) 内 _インストールガイド_.
 
 ## 前提条件
 

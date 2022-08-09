@@ -1,9 +1,9 @@
 ---
 title: キャッシュタイプ
 description: キャッシュフロントエンドをキャッシュタイプに関連付けます。
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -67,10 +67,11 @@ ht-degree: 0%
 
 場所
 
-- `<frontend_type>` は、低レベルのフロントエンドキャッシュタイプです。 互換性のあるクラスの名前を指定 [Zend\Cache\Core](https://framework.zend.com/apidoc/1.7/Zend_Cache/Zend_Cache_Core.html).
-
-   省略した場合 `<frontend_type>`, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) が使用されます。
+- `<frontend_type>` は、低レベルのフロントエンドキャッシュタイプです。 互換性のあるクラスの名前を指定 `Zend\Cache\Core`.
+省略した場合 `<frontend_type>`, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) が使用されます。
 
 - `<frontend_option>`, `<frontend_option_value>` は、Commerce フレームワークが作成時にフロントエンドキャッシュに連想配列として渡すオプションの名前と値です。
-- `<backend_type>` は、低レベルのバックエンドキャッシュタイプです。 互換性のあるクラスの名前を指定 [Zend_Cache_Backend](https://framework.zend.com/apidoc/1.7/Zend_Cache/Zend_Cache_Backend/Zend_Cache_Backend.html) そしてこの事件は [Zend_Cache_Backend_Interface](https://framework.zend.com/apidoc/1.6/Zend_Cache/Zend_Cache_Backend/Zend_Cache_Backend_Interface.html).
+- `<backend_type>` は、低レベルのバックエンドキャッシュタイプです。 互換性のあるクラスの名前を指定 `Zend_Cache_Backend` そしてこの事件は `Zend_Cache_Backend_Interface`.
 - `<backend_option>` および `<backend_option_value>` は、作成時にバックエンドキャッシュに連想配列として渡される Commerce フレームワークのオプションの名前と値です。
+
+詳しくは、 [Laminas のドキュメント](https://docs.laminas.dev/) を参照してください。

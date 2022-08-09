@@ -1,7 +1,7 @@
 ---
 title: 詳細 [!DNL JavaScript] バンドル
 description: JavaScript のバンドルによって、サーバーリクエストのサイズと頻度を減らす方法について説明します。
-source-git-commit: 09c4d0e09354230c8779b930f085d8c7c131b85b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '2137'
 ht-degree: 0%
@@ -88,7 +88,7 @@ Slow 3G 接続では、クリーンなホームページのすべてのバンド
 
 - [nodejs](https://nodejs.org/en/download/)
 - [r.js](http://requirejs.org/docs/optimization.html#download)
-- [[!DNL PhantomJS]](http://phantomjs.org/) （オプション）
+- [[!DNL PhantomJS]](https://phantomjs.org/) （オプション）
 
 ### サンプルコード
 

@@ -1,7 +1,7 @@
 ---
 title: 設定のベストプラクティス
 description: これらのベストプラクティスを使用して、Adobe CommerceまたはMagento Open Sourceのデプロイメントの応答時間を最適化します。
-source-git-commit: 20c4f55162b25be8906562c395abf4671437992b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
@@ -76,7 +76,7 @@ MariaDB 10.4 でのインデックス再作成は、他の MariaDB や [!DNL MyS
 
 ### バンドルのヒント
 
-* 縮小化とバンドル ( [r.js](http://requirejs.org/)) をクリックします。 [!DNL Commerce] 組み込みのメカニズムは最適ではなく、代替手段として提供されています。
+* 縮小化とバンドル ( [r.js](https://requirejs.org/)) をクリックします。 [!DNL Commerce] 組み込みのメカニズムは最適ではなく、代替手段として提供されています。
 * JS バンドルを使用する代わりに、HTTP2 プロトコルをアクティブ化する方法を使用できます。 このプロトコルには、ほぼ同じ利点があります。
 * JS ファイルと CSS ファイルの結合などの非推奨の設定は、ページのHEADセクションで同期的に読み込まれる JS 用にのみ設計されているので、使用しないことをお勧めします。 この方法を使用すると、バンドルが発生し、requireJS ロジックが正しく機能しなくなる場合があります。
 

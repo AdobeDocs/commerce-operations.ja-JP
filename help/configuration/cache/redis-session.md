@@ -1,9 +1,9 @@
 ---
 title: セッションストレージに Redis を使用
 description: セッションストレージ用に Redis を設定する方法を説明します。
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '724'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-redis-timeout | timeout | 接続タイムアウト（秒）。 | 2.5 |
 | session-save-redis-persistent-id | persistent_identifier | 永続的な接続を有効にする一意の文字列（例：sess-db0）。<br>[phpredis と php-fpm に関する既知の問題](https://github.com/phpredis/phpredis/issues/70). |
 | session-save-redis-db | データベース | 一意の Redis データベース番号。データの損失から保護することをお勧めします。<br><br>**重要**:Redis を複数のタイプのキャッシュに使用する場合、データベースの数が異なる必要があります。 デフォルトのキャッシュデータベース番号を 0 に、ページキャッシュデータベース番号を 1 に、セッションストレージデータベース番号を 2 に割り当てることをお勧めします。 | 0 |
-| session-save-redis-compression-threshold | compression_threshold | 圧縮を無効にするには 0 に設定します ( [suhosin.session.encrypt =オン](https://suhosin.org/stories/howtos.html)) をクリックします。<br>[64 KB を超える文字列に関する既知の問題](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
+| session-save-redis-compression-threshold | compression_threshold | 圧縮を無効にするには 0 に設定します ( `suhosin.session.encrypt = On`) をクリックします。<br>[64 KB を超える文字列に関する既知の問題](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | オプション：gzip、lzf、lz4 または snappy。 | gzip |
 | session-save-redis-log-level | log_level | を次のいずれかに設定し、最も詳細でないものから最も詳細なものまで順に表示します。<ul><li>0 ( 緊急：最も重大なエラーのみ )<li>1 ( アラート：即時対応が必要です )<li>2 ( 重要：アプリケーションコンポーネントを使用できません )<li>3 ( エラー：ランタイムエラー（重要ではないが、監視が必要）<li>4 ( 警告：追加情報（推奨）<li>5 ( 通知：正常だが有意な状態 )<li>6 ( 情報：情報メッセージ )<li>7 ( デバッグ：開発またはテストに関する最も多い情報 )</ul> | 1 |
 | session-save-redis-max-concurrency | max_concurrency | 1 つのセッションでロックを待機できるプロセスの最大数。 大規模な実稼働クラスタの場合は、PHP プロセスの数の 10%以上に設定します。 | 6 |
