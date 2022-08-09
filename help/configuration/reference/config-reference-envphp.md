@@ -1,9 +1,9 @@
 ---
 title: env.php リファレンス
 description: env.php ファイルの値のリストを参照してください。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 7ecd54b40690ec046e9a3d46a6ef9ad44ffaf4ab
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,7 @@ ht-degree: 0%
 | `cron` | cron ジョブの有効化または無効化 |
 | `crypt` | 暗号化関数の暗号化キー |
 | `db` | データベース接続設定 |
+| `default_connection` | メッセージキューのデフォルト接続 |
 | `directories` | コマースディレクトリのマッピング設定 |
 | `downloadable_domains` | ダウンロード可能ドメインのリスト |
 | `install` | インストール日 |
@@ -168,6 +169,19 @@ Commerce では、パスワードやその他の機密データを保護する�
   ]
 ]
 ```
+
+## default_connection
+
+メッセージキューのデフォルト接続を定義します。 値は `db`, `amqp`、またはのようなカスタムキューシステム `redismq`. 次の値以外の値を指定した場合： `db`に設定する場合は、最初にメッセージキューソフトウェアをインストールして設定する必要があります。 そうしないと、メッセージは正しく処理されません。
+
+```conf
+'queue' => [
+    'default_connection' => 'amqp'
+]
+```
+
+If `queue/default_connection` がシステムで指定されている `env.php` ファイルの場合、この接続は、 `queue_topology.xml`, `queue_publisher.xml` または `queue_consumer.xml` ファイル。
+例えば、 `queue/default_connection` が `amqp` in `env.php` しかし `db` モジュールのキュー設定 XML ファイルで接続が指定されている場合、モジュールは MySQL をメッセージブローカーとして使用します。
 
 ## ディレクトリ
 

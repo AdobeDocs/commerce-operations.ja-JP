@@ -1,9 +1,9 @@
 ---
 title: インデクサーの管理
 description: コマースインデクサーの表示および管理方法の例を参照してください。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: dd84039be22b6bd25d57912615d64bad91970926
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,6 @@ bin/magento indexer:status [indexer]
 ```
 
 ここで、 `[indexer]` は、スペースで区切られたインデクサーのリストです。 省略 `[indexer]` をクリックして、すべてのインデクサーのステータスを表示します。
-
 
 サンプル結果：
 
@@ -120,8 +119,9 @@ Catalog Search index has been rebuilt successfully in <time>
 - `Catalog Search Fulltext` は、ストアビューで並行できます。
 - `Category Product` は、ストアビューで並行できます。
 - `Catalog Price` は、Web サイトや顧客グループに比べて優れています。
+- `Catalog Permissions` は、顧客グループに比べて優れています。
 
-並列化を使用する場合は、製品価格インデクサに使用可能な次元のモードの 1 つを設定する必要があります。
+並列化を使用するには、製品価格インデクサで使用可能な次元モードの 1 つを設定します。
 
 - `none` （デフォルト）
 - `website`
@@ -133,6 +133,11 @@ Catalog Search index has been rebuilt successfully in <time>
 ```bash
 bin/magento indexer:set-dimensions-mode catalog_product_price website
 ```
+
+カタログ権限に並列化を使用するには、カタログ権限インデクサーで使用可能な次元モードの 1 つを設定します。
+
+- `none` （デフォルト）
+- `customer_group`
 
 または、現在のモードを確認するには、次の手順を実行します。
 
