@@ -1,9 +1,9 @@
 ---
 title: 高スループットの注文処理
 description: Adobe CommerceまたはMagento Open Sourceのデプロイメントに合わせて、注文の配置とチェックアウトエクスペリエンスを最適化します。
-source-git-commit: 4ce6f01ab6c3e0bb408657727b65bcb2f84dd954
+source-git-commit: 6afdb941ce3753af02bde3dddd4e66414f488957
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
@@ -166,6 +166,21 @@ DeferredTotalCalculation が有効な場合、製品を買い物かごに追加�
 無効にした場合、製品を買い物かごに追加する際に在庫チェックが実行されません。 この在庫チェックをスキップした場合、在庫切れのシナリオによっては他のタイプのエラーが発生する場合があります。 在庫チェック _常に_ は、無効な場合でも、注文の配置手順で発生します。
 
 **買い物かごへの読み込み時の在庫の確認を有効にする** デフォルトでは有効（はいに設定）です。 買い物かごの読み込み時に在庫チェックを無効にするには、 **[!UICONTROL Enable Inventory Check On Cart Load]** から `No` 管理 UI で **ストア** > **設定** > **カタログ** > **在庫** > **在庫オプション** 」セクションに入力します。 詳しくは、 [グローバルオプションの設定][global] および [カタログ在庫][inventory] 内 _ユーザーガイド_.
+
+## 負荷分散
+
+MySQL データベースと Redis インスタンスのセカンダリ接続を有効にすると、異なるノード間で負荷を分散するのに役立ちます。
+
+Adobe Commerceは、複数のデータベースまたは Redis インスタンスを非同期で読み取ることができます。 クラウドインフラストラクチャで Commerce を使用している場合は、 [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) および [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) 値 `.magento.env.yaml` ファイル。 読み取り/書き込みトラフィックを処理する必要があるノードは 1 つだけなので、変数を `true` その結果、読み取り専用トラフィックのセカンダリ接続が作成されます。 値を `false` 既存の読み取り専用接続配列を `env.php` ファイル。
+
+例 `.magento.env.yaml` ファイル：
+
+```yaml
+stage:
+  deploy:
+    MYSQL_USE_SLAVE_CONNECTION: true
+    REDIS_USE_SLAVE_CONNECTION: true
+```
 
 <!-- link definitions -->
 
