@@ -1,9 +1,9 @@
 ---
 title: 「 [!DNL Upgrade Compatibility Tool]"
 description: 次の手順に従って、 [!DNL Upgrade Compatibility Tool] ( Adobe Commerceプロジェクトのコマンドラインインターフェイス ) を使用します。
-source-git-commit: a0bb188eea38688c5bfe68e8c6bb7b3d040f5e0a
+source-git-commit: 038cb256cb19c253ae9c0375258a555601428847
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1145'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,7 @@ chmod +x ./uct/bin/uct
 | **コマンド** | **説明** |
 |----------------|-----------------|
 | `upgrade:check` | このコマンドは、 [!DNL Upgrade Compatibility Tool] に含まれるすべてのモジュールを分析する。 |
+| `dbschema:diff` | このコマンドは、指定した 2 つのAdobe Commerceバージョン間のデータベーススキーマのすべての違いを表示します。 |
 | `core:code:changes` | このコマンドは、現在のAdobe Commerceのインストールと、バニラのクリーンインストールを比較します。 |
 | `refactor` | このコマンドを実行すると、一部の問題が自動的に修正されます。 |
 | `graphql:compare` | このコマンドは、2 つの GraphQL エンドポイントを紹介し、それらのスキーマを比較するオプションを提供します。 |
@@ -88,6 +89,41 @@ bin/uct upgrade:check <dir> -c 2.4.3
 - これを明示的に指定する必要があります。この値のみを指定しても、機能しません。
 - 引用符を付けずにタグバージョンを指定します（一重引用符も二重引用符も付けません）。 ~~&#39;2.4.1-develop&#39;~~.
 - 現在インストールしているバージョンより古いバージョンを提供したり、現在サポートされている最も古いバージョンである 2.3 より古いバージョンを提供したりしないでください。
+
+## 以下を使用： `dbschema:diff` command
+
+2 つのAdobe Commerceバージョンのデータベーススキーマの違いを取得できます。
+
+```bash
+bin/uct dbschema:diff <current-version> <target-version>
+```
+
+引数は次のようになります。
+
+- `<current-version>`:比較対象の任意のAdobe Commerceバージョン。
+- `<target-version>`:また、比較の対象となるAdobe Commerceのバージョンも含まれます。
+
+実行例：
+
+```bash
+bin/uct dbschema:diff 2.4.3 2.4.3-p3
+
+DB schema differences between versions 2.4.3 and 2.4.3-p3:
+
+Table klarna_payments_quote constraint QUOTE_ID_KLARNA_PAYMENTS_QUOTE_QUOTE_ID_QUOTE_ENTITY_ID is present only in version 2.4.3-p3
+Table klarna_payments_quote index KLARNA_PAYMENTS_QUOTE_SESSION_ID is present only in version 2.4.3-p3
+Table customer_entity column session_cutoff is present only in version 2.4.3-p3
+Table customer_visitor column session_id length value is different. 2.4.3: "64", 2.4.3-p3: "1"
+Table customer_visitor column session_id comment value is different. 2.4.3: "Session ID", 2.4.3-p3: "Deprecated: Session ID value no longer used"
+Table customer_visitor column created_at is present only in version 2.4.3-p3
+Table oauth_consumer column secret length value is different. 2.4.3: "32", 2.4.3-p3: "128"
+Table oauth_token column secret length value is different. 2.4.3: "32", 2.4.3-p3: "128"
+Table admin_user_session column session_id nullable value is different. 2.4.3: "false", 2.4.3-p3: "true"
+Table admin_user_session column session_id length value is different. 2.4.3: "128", 2.4.3-p3: "1"
+Table admin_user_session column session_id comment value is different. 2.4.3: "Session ID value", 2.4.3-p3: "Deprecated: Session ID value no longer used"
+
+Total detected differences between version 2.4.3 and 2.4.3-p3: 11
+```
 
 ## 以下を使用： `core:code:changes` command
 
