@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] 要件"'
 description: 'システムが、 [!DNL Upgrade Compatibility Tool] ( Adobe Commerceプロジェクトのコマンドラインインターフェイス ) を使用します。 '
-source-git-commit: 7ec999f9122eb0707ac6c37b7b49f9c423945318
+source-git-commit: 167e0e7554e912aeef276a34daeaff29d7762009
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,31 @@ ht-degree: 0%
 | コンポーザー | 不明な要件はありません。 |
 | Node.js | Node.js のバージョン `^12.22.0`, `^14.17.0`または `>=16.0.0` ( [Node.js のインストール](https://nodejs.dev/learn/how-to-install-nodejs)) |
 | メモリ制限 | 2GB 以上の RAM。 |
+
+[!DNL Upgrade Compatibility Tool] が必要です [PCNTL](https://www.php.net/manual/en/book.pcntl.php) および実行用のその他の PHP 拡張。 必要な PHP 拡張をチェックするには、 `composer check-platform-reqs` コマンド：
+
+```bash
+# Example output of `composer check-platform-reqs` command for UCT 2.2.6 and PHP 7.4:
+
+$ composer check-platform-reqs
+Checking platform requirements for packages in the vendor dir
+ext-ctype     *         success provided by symfony/polyfill-ctype
+ext-dom       20031129  success
+ext-filter    7.4.30    success
+ext-json      7.4.30    success
+ext-libxml    7.4.30    success
+ext-mbstring  *         success provided by symfony/polyfill-mbstring
+ext-openssl   7.4.30    success
+ext-pcntl     7.4.30    success
+ext-pcre      7.4.30    success
+ext-phar      7.4.30    success
+ext-simplexml 7.4.30    success
+ext-tokenizer 7.4.30    success
+ext-xml       7.4.30    success
+ext-xmlwriter 7.4.30    success
+ext-zip       1.15.6    success
+php           7.4.30    success
+```
 
 Adobe Commerceは Linux オペレーティングシステムでのみサポートされています。 次を実行できます。 [!DNL Upgrade Compatibility Tool] （Linux OS の場合） を実行する必要はありません。 [!DNL Upgrade Compatibility Tool] Adobe Commerceインスタンスの場所
 
