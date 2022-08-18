@@ -1,9 +1,9 @@
 ---
 title: 'ツール '
 description: これらのツールを使用してAdobe Commerceストアを最適化します。
-source-git-commit: de2fb829def2cf94c452a06a219d7f29885c8f9f
+source-git-commit: 06e663e01c93c919ae8979d5d9101538eac6c13d
 workflow-type: tm+mt
-source-wordcount: '65'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -20,3 +20,4 @@ ht-degree: 0%
 
 * [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
 * [[!DNL Quality Patches Tool]](https://devdocs.magento.com/quality-patches/tool.html)
+* [[!DNL Observation for Adobe Commerce]](../tools/observation-for-adobe-commerce/intro.md)
