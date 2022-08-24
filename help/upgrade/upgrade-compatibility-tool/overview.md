@@ -1,9 +1,9 @@
 ---
 title: 「 [!DNL Upgrade Compatibility Tool]"
 description: 詳しくは、 [!DNL Upgrade Compatibility Tool] Adobe Commerceプロジェクトに役立つ情報です。
-source-git-commit: 9b0f97d36092d2a1057cdc905671cda8540881c9
+source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,12 @@ ht-degree: 0%
 次の図に、 [!DNL Upgrade Compatibility Tool]:
 
 ![[!DNL Upgrade Compatibility Tool] 図](../../assets/upgrade-guide/uct-diagram-v5.png)
+
+## [!DNL Upgrade Compatibility Tool] デモ
+
+このビデオで [!DNL Upgrade Compatibility Tool]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/341245?quality=12)
 
 ## 改善に役立つ [!DNL Upgrade Compatibility Tool]
 
