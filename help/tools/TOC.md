@@ -1,9 +1,9 @@
 ---
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
-source-git-commit: 1b9f57460f5b336c4ccacef01709c696acbc8316
+source-git-commit: 2ad429bf3676055f3ae199450f75906afc6542e5
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -46,3 +46,26 @@ ht-degree: 0%
    - [「セキュリティ」タブ](observation-for-adobe-commerce/security-tab.md)
    - [「情報」タブ](observation-for-adobe-commerce/oac-infra.md)
    - [Adobe Commerceの監視の使用方法](observation-for-adobe-commerce/how-to-use.md)
+- データ移行ツール {#data-migration}
+   - [移行の仕組み](data-migration-tool/how-migration-works.md)
+   - [ベストプラクティス](data-migration-tool/best-practices.md)
+   - [サポートされているバージョン](data-migration-tool/supported-versions.md)
+   - 基本事項 {#basics}
+      - [プランの作成](data-migration-tool/create-plan.md)
+      - [前提条件](data-migration-tool/prerequisites.md)
+      - [インストール](data-migration-tool/install.md)
+      - [アップグレード](data-migration-tool/upgrade.md)
+      - [設定](data-migration-tool/configure.md)
+      - [カスタマイズ](data-migration-tool/customize.md)
+      - [技術仕様](data-migration-tool/technical-specification.md)
+   - データの移行 {#migrate-data}
+      - [概要](data-migration-tool/migrate-data/overview.md)
+      - [設定](data-migration-tool/migrate-data/settings.md)
+      - [データ](data-migration-tool/migrate-data/data.md)
+      - [変更点](data-migration-tool/migrate-data/delta.md)
+      - [フォローアップ](data-migration-tool/migrate-data/follow-up.md)
+      - [手動での移行が必要なデータ](data-migration-tool/migrate-data/manual.md)
+      - [データ移行後の手順](data-migration-tool/migrate-data/post-migration.md)
+   - リソース {#resources}
+      - [トラブルシューティング](https://support.magento.com/hc/en-us/articles/360033020451)
+      - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
