@@ -63,7 +63,7 @@ ht-degree: 0%
 ![移行フロー](../../assets/data-migration/migration_flow.png)
 
 <!-- Link definitions -->
-[[!DNL Data Migration Tool] 技術仕様 ]:technical-specification.md
+[[!DNL Data Migration Tool] 技術仕様 ]: technical-specification.md
 
 [Migration Modes]: ../../assets/data-migration/MigrationModes2.png
 
