@@ -1,9 +1,9 @@
 ---
 title: 「 [!DNL Upgrade Compatibility Tool]"
 description: 次の手順に従って、 [!DNL Upgrade Compatibility Tool] ( Adobe Commerceプロジェクトのコマンドラインインターフェイス ) を使用します。
-source-git-commit: c10afb6632fa4e77f46b540c2b89f54b9cab430c
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1072'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ bin/uct core:code:changes <dir> <vanilla dir>
 引数は次のようになります。
 
 - `<dir>`:Adobe Commerceインストールディレクトリ。
-- `<vanilla dir>`:Adobe Commerce vanilla のインストールディレクトリ。
+- `<vanilla dir>`:Adobe Commerce vanilla インストールディレクトリ。
 
 次に使用できるオプション： `core:code:changes` コマンド：
 
@@ -156,7 +156,7 @@ A _バニラ_ インストールは、特定のリリースバージョンの指
 
 以下を実行すると、 [!DNL Upgrade Compatibility Tool] コマンドを `--vanilla-dir` Adobe Commerce vanilla インストールディレクトリを指定するオプション。
 
-詳しくは、 [バニラインスタンスのデプロイ](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) トピックを参照してください。
+詳しくは、 [バニラインスタンスのデプロイ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/#deploy-vanilla-magento-open-source-instance) トピックを参照してください。
 
 ## 以下を使用： `refactor` command
 
@@ -249,7 +249,7 @@ bin/uct upgrade:check --help
 ## Adobe Commerceのベストプラクティスに従う
 
 - 同じ名前の 2 つのモジュールを使用しないでください。
-- フォローAdobe Commerce [コーディング規格](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html).
+- フォローAdobe Commerce [コーディング規格](https://developer.adobe.com/commerce/php/coding-standards/).
 - Adobe Commerce 2.4 [アップグレードガイド](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) ベストプラクティス。
 
 ## 結果の最適化

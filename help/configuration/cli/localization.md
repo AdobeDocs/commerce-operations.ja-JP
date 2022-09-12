@@ -1,9 +1,9 @@
 ---
 title: 翻訳辞書と言語パッケージ
 description: 翻訳辞書を生成し、言語パッケージを構築する方法を説明します。
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -284,7 +284,7 @@ Commerce アプリケーションが `en_GB` パッケージの場合、次の�
    ```php
    <?php
    /**
-    * Copyright © Magento, Inc. All rights reserved.
+    * Copyright &copy; Magento, Inc. All rights reserved.
     * See COPYING.txt for license details.
     */
    
@@ -302,7 +302,7 @@ Commerce アプリケーションが `en_GB` パッケージの場合、次の�
    ```xml
    <?xml version="1.0"?>
    /**
-   * Copyright © Magento, Inc. All rights reserved.
+   * Copyright &copy; Magento, Inc. All rights reserved.
    * See COPYING.txt for license details.
    */
    
@@ -315,16 +315,14 @@ Commerce アプリケーションが `en_GB` パッケージの場合、次の�
 
 <!-- link definitions -->
 
-[Translate theme strings]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translate_theory.html
-[翻訳の概要]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html
-[Community Engineering contributions]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#translations-project
-[翻訳辞書]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-dictionaries
+[翻訳の概要]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
+[翻訳辞書]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
 [翻訳を設定します]: https://docs.magento.com/user-guide/stores/store-language-add.html?Highlight=translation
-[言語パッケージの詳細を表示]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-languagepack
+[言語パッケージの詳細を表示]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html
-[登録者]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/component-registration.html
+[登録者]: https://developer.adobe.com/commerce/php/development/build/component-registration/
 [&#39;de_de&#39;]: https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php
-[&#39;composer.json&#39;]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/composer-integration.html
-[&#39;registration.php&#39;]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/component-registration.html
+[&#39;composer.json&#39;]: https://developer.adobe.com/commerce/php/development/build/composer-integration/
+[&#39;registration.php&#39;]: https://developer.adobe.com/commerce/php/development/build/component-registration/
 [Magento\Test\Integrity\App\Language\CircularDependencyTest]: https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php

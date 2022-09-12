@@ -1,7 +1,7 @@
 ---
 title: Vanish の設定と使用
 description: Vanish がファイルを保存し、HTTP トラフィックを改善する方法を理解します。
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 0%
@@ -144,7 +144,7 @@ Vanish キャッシュは、次を使用して Commerce で機能します。
 
 <!-- Link Definitions -->
 
-[データベース]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/cache/partial-caching/database-caching.html
+[データベース]: https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/
 [ザビッグワニスの絵]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
 [ワニスキャッシュ]: https://varnish-cache.org
 [ワニス起動オプション]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options

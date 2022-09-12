@@ -1,9 +1,9 @@
 ---
 title: デプロイメントフロー
-description: '実稼動環境にAdobe CommerceまたはMagento Open Sourceをデプロイするために必要な手順について説明します。 '
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+description: 実稼動環境にAdobe CommerceまたはMagento Open Sourceをデプロイするために必要な手順について説明します。
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ bin/magento setup:di:compile
 
 ## オートローダーの更新
 
-コンパイルが完了したら、 [APCu が有効になっています](https://devdocs.magento.com/guides/v2.4/performance-best-practices/software.html#php-settings) オートローダを更新します。
+コンパイルが完了したら、 [APCu が有効になっています](../performance/software.md#php-settings) オートローダを更新します。
 
 オートローダーを更新するには：
 
@@ -82,7 +82,7 @@ bin/magento setup:static-content:deploy
 
 静的コンテンツがデプロイされていない場合、 [!DNL Commerce] は、リストに記載されているすべての操作をその場で実行し、応答時間が大幅に増加します。
 
-様々なオプションを使用して、ストアサイズと達成のニーズに基づいてデプロイメント操作をカスタマイズできます。 最も一般的なのは、コンパクトなデプロイ戦略です。 詳しくは、 [静的ファイルのデプロイメント戦略](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-static-deploy-strategies.html)
+様々なオプションを使用して、ストアサイズと達成のニーズに基づいてデプロイメント操作をカスタマイズできます。 最も一般的なのは、コンパクトなデプロイ戦略です。 詳しくは、 [静的ファイルのデプロイメント戦略](../configuration/cli/static-view-file-strategy.md)
 
 静的コンテンツをデプロイするには：
 

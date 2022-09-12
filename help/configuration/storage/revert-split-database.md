@@ -1,9 +1,9 @@
 ---
 title: 分割データベースを元に戻す
 description: 非推奨の分割データベース実装から単一のデータベース実装に戻します。
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 ## 作業内容の検証
 
-単一のデータベースの実装が正しく動作していることを確認するには、次のタスクを実行し、データが `magento_main` データベーステーブルを [phpMyAdmin](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/optional.html#install-optional-phpmyadmin):
+単一のデータベースの実装が正しく動作していることを確認するには、次のタスクを実行し、データが `magento_main` データベーステーブルを [phpMyAdmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 1. 外部キーが復元されたことを確認します。 例えば、 `QUOTE_STORE_ID_STORE_STORE_ID` キー `quote` データベーステーブル。
 1. 顧客がストアフロントから注文を行えることを確認します。

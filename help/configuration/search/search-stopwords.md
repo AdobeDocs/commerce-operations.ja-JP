@@ -1,9 +1,9 @@
 ---
 title: 検索ストップワードの設定
 description: CSV ファイルを使用してAdobe Commerceのストップワードを管理する方法を説明します。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ OpenSearch とのストップワードの使用Elasticsearchについて詳し�
 
 **ストップワードを編集するには**:
 
-1. Commerce サーバーにログインするか、 [ファイルシステム所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Commerce サーバーにログインするか、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
 1. テキストエディターを使用して、 `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` ディレクトリ。
 
    CSV ファイルは命名規則を使用します `stopwords_<locale_code>.csv`. 例えば、ドイツ語のストップワードファイルの名前はです。 `stopwords_de_DE.csv`.
@@ -60,7 +60,7 @@ OpenSearch とのストップワードの使用Elasticsearchについて詳し�
 
 **ロケールのストップワードを追加するには**:
 
-1. Commerce サーバーにログインするか、 [ファイルシステム所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Commerce サーバーにログインするか、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
 
 1. テキストエディタを使用して、という名前のストップワードファイルを作成します。 `stopwords_<locale_code>.csv` 内 `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` ディレクトリ。
 
@@ -125,7 +125,7 @@ OpenSearch とのストップワードの使用Elasticsearchについて詳し�
 
 ## モジュールからディレクトリを変更するには
 
-1. [モジュールの作成](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/module-file-structure.html)
+1. [モジュールの作成](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
 1. モジュール内 `etc/di.xml` 手順を追加します。
 
    ```xml

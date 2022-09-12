@@ -1,9 +1,9 @@
 ---
 title: ソフトウェアRecommendations
 description: Adobe CommerceおよびMagento Open Sourceのデプロイメントの最適なパフォーマンスに関連する推奨ソフトウェアのリストを確認します。
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
@@ -13,18 +13,18 @@ ht-degree: 0%
 
 の本番用インスタンスには、次のソフトウェアが必要です。 [!DNL Commerce]:
 
-* [PHP](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html)
+* [PHP](../installation/system-requirements.md)
 * Nginx と [PHP-FPM](https://php-fpm.org/)
-* [[!DNL MySQL]](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html)
-* [[!DNL Elasticsearch] または OpenSearch](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html)
+* [[!DNL MySQL]](../installation/prerequisites/database/mysql.md)
+* [[!DNL Elasticsearch] または OpenSearch](../installation/prerequisites/search-engine/overview.md)
 
 マルチサーバ展開の場合や、ビジネスの拡張を計画しているマーチャントの場合は、次の操作をお勧めします。
 
-* [[!DNL Varnish] キャッシュ](https://devdocs.magento.com/guides/v2.4/config-guide/varnish/config-varnish.html)
-* [レディス](https://devdocs.magento.com/guides/v2.4/config-guide/redis/redis-session.html) （2.0.6 以降）
-* Redis のインスタンスを [デフォルトキャッシュ](https://devdocs.magento.com/guides/v2.4/config-guide/redis/redis-pg-cache.html) （このインスタンスをページキャッシュに使用しないでください）
+* [[!DNL Varnish] キャッシュ](../configuration/cache/config-varnish.md)
+* [レディス](../configuration/cache/redis-session.md) （2.0.6 以降）
+* Redis のインスタンスを [デフォルトキャッシュ](../configuration/cache/redis-pg-cache.md) （このインスタンスをページキャッシュに使用しないでください）
 
-詳しくは、 [システム要件](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) 」を参照してください。
+詳しくは、 [システム要件](../installation/system-requirements.md) 」を参照してください。
 
 ## オペレーティングシステム
 
@@ -157,7 +157,7 @@ opcache.max_accelerated_files=60000
 
 #### APCU
 
-を有効にすることをお勧めします。 [PHP APCu 拡張機能](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) および [設定 `composer` それを支える](https://devdocs.magento.com/guides/v2.4/performance-best-practices/deployment-flow.html#preprocess-dependency-injection-instructions) 最高のパフォーマンスを得るために最適化する。 この拡張機能は、開かれたファイルのファイルの場所をキャッシュします。これにより、 [!DNL Commerce] ページ、Ajax 呼び出し、エンドポイントを含むサーバー呼び出し。
+を有効にすることをお勧めします。 [PHP APCu 拡張機能](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) および [設定 `composer` それを支える](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) 最高のパフォーマンスを得るために最適化する。 この拡張機能は、開かれたファイルのファイルの場所をキャッシュします。これにより、 [!DNL Commerce] ページ、Ajax 呼び出し、エンドポイントを含むサーバー呼び出し。
 
 の `apcu.ini` ファイルに次の情報を含めます。
 
@@ -208,7 +208,7 @@ Magentoでは、 [!DNL Varnish] をストアのフルページキャッシュサ
 * **猶予モード** を使用して、 [!DNL Varnish] ：オブジェクトをキャッシュに保持して有効期間 (TTL) を超えて、この古いコンテンツを提供する場合 ( [!DNL Commerce] は正常でないか、新しいコンテンツがまだ取得されていない場合は除きます。
 * **SAINT モード** 不正なブラックリストを表示 [!DNL Commerce] サーバーの設定可能な時間。 その結果、異常なバックエンドは、 [!DNL Varnish] をロードバランサーとして使用します。
 
-詳しくは、 [詳細 [!DNL Varnish] 設定](https://devdocs.magento.com/guides/v2.4/config-guide/varnish/config-varnish-advanced.html) これらの機能の実装の詳細については、を参照してください。
+詳しくは、 [詳細 [!DNL Varnish] 設定](../configuration/cache/config-varnish-advanced.md) これらの機能の実装の詳細については、を参照してください。
 
 ### アセットのパフォーマンスの最適化
 

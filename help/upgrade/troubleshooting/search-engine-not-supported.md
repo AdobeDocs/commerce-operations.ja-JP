@@ -1,9 +1,9 @@
 ---
 title: 現在の検索エンジンはサポートされていません
 description: サポートされていない検索エンジンに関するエラーが発生した場合は、Adobe CommerceまたはMagento Open Sourceのアップグレードをトラブルシューティングします。
-source-git-commit: 96534d5307062aa4fda8f6433630d2d39e2848e7
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -54,10 +54,10 @@ bin/magento config:show catalog/search/engine
 
 このプロセスの手引きとして、次のリソースを使用します。
 
-- [インストールとElasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html)
+- [インストールとElasticsearch](../../configuration/search/overview-search.md)
 - [インストールElasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- 使用するElasticsearchの設定 [nginx](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-nginx.html) または [Apache](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-apache.html)
-- [Magentoを設定してElasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html)
+- 使用するElasticsearchの設定 [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) または [Apache](../../installation/prerequisites/search-engine/configure-apache.md)
+- [設定Elasticsearch](../../configuration/search/configure-search-engine.md)
 
 検索エンジンを設定してインデックスを再作成した後、2.4 にアップグレードする準備が整いました。
 
@@ -71,8 +71,8 @@ bin/magento config:show catalog/search/engine
 
    >[!NOTE]
    >
-   >Elasticsearchには JDK 1.8 以降が必要です。 詳しくは、 [Java Software Development Kit(JDK) のインストール](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#prereq-java) をクリックして、インストールされている JDK のバージョンを確認します。
+   >Elasticsearchには JDK 1.8 以降が必要です。 詳しくは、 [Java Software Development Kit(JDK) のインストール](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) をクリックして、インストールされている JDK のバージョンを確認します。
 
-1. [Magentoを設定してElasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html) とインデックスを再作成します。
+1. [設定Elasticsearch](../../configuration/search/configure-search-engine.md) とインデックスを再作成します。
 
 検索エンジンを設定してインデックスを再作成した後、2.4 にアップグレードする準備が整いました。

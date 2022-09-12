@@ -1,9 +1,9 @@
 ---
 title: 分割データベースの検証
 description: コマース分割データベースの構成が正しく機能していることを確認する方法を説明します。
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 - コマース [見積もり](https://glossary.magento.com/quote) データベース：11 テーブル
 - コマース販売データベース：55 テーブル
 
-分割データベースが正しく動作していることを確認するには、次のタスクを実行し、データがデータベーステーブルに追加されていることを、 [phmyadmin](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/optional.html#install-optional-phpmyadmin):
+分割データベースが正しく動作していることを確認するには、次のタスクを実行し、データがデータベーステーブルに追加されていることを、 [phmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 | 検証内容 | 検証方法 |
 | -------------- | ------------- |
@@ -30,4 +30,4 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->2 つの追加のデータベースインスタンスを手動でバックアップする必要があります。 Commerce は、メインデータベースインスタンスのみをバックアップします。 この [`magento setup:backup --db`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html) コマンドおよび管理オプションでは、追加のテーブルはバックアップされません。
+>2 つの追加のデータベースインスタンスを手動でバックアップする必要があります。 Commerce は、メインデータベースインスタンスのみをバックアップします。 この [`magento setup:backup --db`](../../installation/tutorials/backup.md) コマンドおよび管理オプションでは、追加のテーブルはバックアップされません。

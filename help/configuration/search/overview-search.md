@@ -1,9 +1,9 @@
 ---
 title: 検索エンジンの概要
 description: Adobe CommerceとMagento Open Sourceの検索エンジンオプションの概要。
-source-git-commit: 52c472bf80942339b511292243b5da9babf829d9
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
@@ -25,10 +25,9 @@ ht-degree: 0%
 
 <!-- Link Definitions -->
 
-[検索エンジンの前提条件]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html
-[検索エンジン用に nginx を設定する]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-nginx.html
-[検索エンジン用に Apache を設定]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html
+[検索エンジンの前提条件]: ../../installation/prerequisites/search-engine/overview.md
+[検索エンジン用に nginx を設定する]: ../../installation/prerequisites/search-engine/configure-nginx.md
+[検索エンジン用に Apache を設定]: ../../installation/prerequisites/search-engine/configure-apache.md
 [Elasticsearch]: https://www.elastic.co
-[Elasticsearch documentation]: https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
-[Commerce ソフトウェアのインストール]: https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-install.html
+[Commerce ソフトウェアのインストール]: ../../installation/composer.md
 [OpenSearch]: https://opensearch.org/docs/latest/opensearch/install/index/

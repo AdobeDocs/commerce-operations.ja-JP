@@ -1,7 +1,7 @@
 ---
 title: レイアウトファイルの変換
 description: XML レイアウトファイルを変換します。
-source-git-commit: 02f02393878d04b4a0fcdae256ac1ac5dd13b7f6
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 対応する XSLT(Extensible Stylesheet Language Transformations) スタイルシートを更新する場合は、このコマンドを使用してレイアウト XML ファイルを更新します。
 
-- [レイアウトの手順](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/xml-instructions.html)
-- [レイアウトファイルの種類](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-types.html)
+- [レイアウトの手順](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
+- [レイアウトファイルの種類](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
 
 コマンドオプション：
 

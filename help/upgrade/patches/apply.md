@@ -1,9 +1,9 @@
 ---
 title: パッチの適用
 description: Adobe CommerceまたはMagento Open Sourceプロジェクトにパッチを適用する方法について説明します。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Composer を使用してカスタムパッチを適用するには：
 コマンドラインからパッチを適用するには、次の手順に従います。
 
 1. ローカルファイルを `<Magento_root>` FTP、SFTP、SSH、または通常のトランスポート方法を使用して、サーバー上のディレクトリに保存する必要があります。
-1. サーバーに、 [管理者ユーザー](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli.html#config-install-cli-first) ファイルが正しいディレクトリにあることを確認します。
+1. サーバーに、 [管理者ユーザー](../../configuration/cli/config-cli.md#prerequisites) ファイルが正しいディレクトリにあることを確認します。
 1. コマンドラインインターフェイスで、パッチ拡張に従って次のコマンドを実行します。
 
    ```bash

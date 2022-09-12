@@ -1,9 +1,9 @@
 ---
 title: 「 [!UICONTROL Summary] タブ"
 description: 詳しくは、 [!UICONTROL Summary] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: 22df5b80262fbc98f3dd929ec8fdf6f697734c9b
+source-git-commit: 5bcb834bc563c52cd5b169b9f4f20dab31d404cd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2637'
 ht-degree: 0%
 
 ---
@@ -181,7 +181,7 @@ ht-degree: 0%
 * &#39;%self-leave%&#39;) を&#39;susp_node&#39;として
 * &#39;%members = 3/3 （結合/合計%&#39;） （&#39;3of3&#39;として）
 * &#39;%members = 2/3 （結合/合計%&#39;） (&#39;2of3&#39;)
-* &#39;%members = 2/2%&#39;) （&#39;2of2&#39;として） （&#39;2of2&#39;として） &#39;1of2&#39;として&#39;%members = 1/2%&#39;) （&#39;1of3&#39;として&#39;%members = 1/3%&#39;）
+* &#39;%members = 2/2%&#39;) （&#39;2of2&#39;として） * &#39;%members = 1/2%&#39;) （&#39;1of2&#39;として） * &#39;%members = 1/3%&#39;) （&#39;1of3&#39;として）
 * &#39;%members = 1/1%&#39;) を&#39;1of1&#39;として&#39;
 * &#39;%\[ 注意\] /usr/sbin/mysqld (mysqld 10.%) を&#39;sql_restart&#39;として
 * &#39;%Quorum:「no_node_count」として、完全な状態：%」を持つノードがありません
@@ -228,7 +228,7 @@ ht-degree: 0%
 * &#39;%1062 \[\ERROR\] InnoDB:%&#39;) (&#39;sql_1062_e&#39;)
 * &#39;%\[ 注記\] WSREP:メモリマップをディスクにフラッシュしています…%&#39;) を&#39;mem_map_flush&#39;として
 * &#39;%Internal MariaDB エラーコード：1146%) を&#39;sql_1146&#39;として
-* &#39;%Internal MariaDB エラーコード：1062%) as &#39;sql_1062&#39; ・ &#39;%1062 \[ 警告\] InnoDB:%&#39;) as &#39;sql_1062_w&#39;
+* &#39;%Internal MariaDB エラーコード：1062%) を&#39;sql_1062&#39;として* &#39;%1062 \[ 警告\] InnoDB:%&#39;) を&#39;sql_1062_w&#39;として
 * &#39;%Internal MariaDB エラーコード：1064%) を&#39;sql_1064&#39;として
 * &#39;%InnoDB:&#39;assertion_err&#39;としてのアサーションエラー (file%&#39;)
 * &#39;%mysqld_safe 現在実行中のプロセスの数：0%) を&#39;mysql_oom&#39;として
@@ -289,7 +289,7 @@ PHP プロセスの動作は、 [設定](https://www.php.net/manual/en/install.f
 
 ![php エラー](../../assets/tools/php-errors.jpg)
 
-この **[!UICONTROL PHP errors]** frame は、選択した期間内のワーカーに対する PHP エラーの数を示します。 詳しくは、 [Adobe Commerce PHP 設定](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+この **[!UICONTROL PHP errors]** frame は、選択した期間内のワーカーに対する PHP エラーの数を示します。 詳しくは、 [Adobe Commerce PHP 設定](../../installation/prerequisites/php-settings.md).
 
 **PHP エラーとメッセージ**
 
@@ -309,7 +309,7 @@ PHP プロセスの動作は、 [設定](https://www.php.net/manual/en/install.f
 
 ![php プロセス](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/), a [!UICONTROL FastCGI Process Manager] 使用者 [!DNL Nginx]. 必要システム構成については、 [Adobe Commerceバージョンにマッピングされた PHP バージョンの要件](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html). この **[!UICONTROL PHP processes]** frame は、選択したタイムラインの特定の時点で実行されている PHP プロセスの数を示します。
+[PHP-FPM](https://php-fpm.org/), a [!UICONTROL FastCGI Process Manager] 使用者 [!DNL Nginx]. 必要システム構成については、 [Adobe Commerceバージョンにマッピングされた PHP バージョンの要件](../../installation/system-requirements.md). この **[!UICONTROL PHP processes]** frame は、選択したタイムラインの特定の時点で実行されている PHP プロセスの数を示します。
 
 ## [!UICONTROL Secondary processes]
 

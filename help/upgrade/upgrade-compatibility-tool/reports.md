@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] レポート»'
 description: 次の手順に従って、 [!DNL Upgrade Compatibility Tool] をAdobe Commerceプロジェクトに追加します。
-source-git-commit: 1ce02c3215b01f64e86383938a257514f0e4257c
+source-git-commit: 147ecbc66eaf370e7ffaad0b6fce8b41f40b70df
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -127,7 +127,7 @@ bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
 
 引数は次のようになります。
 
-- `<dir>`: {{site.data.var.ee}} インストールディレクトリ。
+- `<dir>`:Adobe Commerceインストールディレクトリ。
 - `[=HTML-OUTPUT-PATH]`:書き出すパスディレクトリ `.html` 出力ファイル。
 
 >[!NOTE]

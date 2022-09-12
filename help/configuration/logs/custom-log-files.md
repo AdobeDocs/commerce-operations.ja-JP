@@ -3,7 +3,7 @@ title: カスタムログファイルに書き込む
 description: カスタムログファイルの設定について説明します。
 contributor_name: Atwix
 contributor_link: https://www.atwix.com/
-source-git-commit: 2c12c6ea6e7b6ffeb07bbda17ded34e39de6656a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
@@ -32,9 +32,9 @@ ht-degree: 0%
 
 ## カスタムログファイルを `di.xml`
 
-この例では、 [仮想タイプ](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types) ログに記録する `debug` 標準のログファイルではなくカスタムログファイルにメッセージを書き込む `/var/log/debug.log`.
+この例では、 [仮想タイプ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) ログに記録する `debug` 標準のログファイルではなくカスタムログファイルにメッセージを書き込む `/var/log/debug.log`.
 
-1. 内 `di.xml` モジュールのファイル、カスタムログファイルを [仮想タイプ](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types).
+1. 内 `di.xml` モジュールのファイル、カスタムログファイルを [仮想タイプ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomDebug" type="Magento\Framework\Logger\Handler\Base">
@@ -46,7 +46,7 @@ ht-degree: 0%
 
    この `name` 値 `Magento\Payment\Model\Method\MyCustomDebug` は一意である必要があります。
 
-1. 別のハンドラーでハンドラーを定義する [仮想タイプ](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types) ユニークな `name`:
+1. 別のハンドラーでハンドラーを定義する [仮想タイプ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) ユニークな `name`:
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -58,7 +58,7 @@ ht-degree: 0%
    </virtualType>
    ```
 
-1. を挿入 `MyCustomLogger` [仮想タイプ](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types) 内 `Magento\Payment\Model\Method\Logger` オブジェクト：
+1. を挿入 `MyCustomLogger` [仮想タイプ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 内 `Magento\Payment\Model\Method\Logger` オブジェクト：
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -117,7 +117,7 @@ ht-degree: 0%
    }
    ```
 
-1. このクラスのハンドラーを [仮想タイプ](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types) モジュールの `di.xml` ファイル。
+1. このクラスのハンドラーを [仮想タイプ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) モジュールの `di.xml` ファイル。
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">

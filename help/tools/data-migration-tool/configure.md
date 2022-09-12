@@ -1,9 +1,9 @@
 ---
 title: の設定 [!DNL Data Migration Tool]
 description: 2 つの方法で [!DNL Data Migration Tool] Magento1 とMagento2 の間でデータを転送する。
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 次の手順で [!DNL Data Migration Tool] 移行の場合：
 
-1. Magentoサーバーに、 [ファイルシステム所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. アプリケーションサーバーに、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
 
 1. 次のディレクトリに移動します。
 

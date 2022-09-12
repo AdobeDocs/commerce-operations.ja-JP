@@ -1,9 +1,9 @@
 ---
 title: 分割データベースパフォーマンスソリューション
 description: Adobe CommerceとMagento Open Sourceの分割データベースソリューションについて
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Adobe Commerceでは、3 つのマスターデータベースと設定可能な�
 
    >[!WARNING]
    >
-   >2 つの追加のデータベースインスタンスを手動でバックアップする必要があります。 Commerce は、メインデータベースインスタンスのみをバックアップします。 この [`magento setup:backup --db`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html) コマンドおよび管理オプションでは、追加のテーブルはバックアップされません。
+   >2 つの追加のデータベースインスタンスを手動でバックアップする必要があります。 Commerce は、メインデータベースインスタンスのみをバックアップします。 この [`magento setup:backup --db`](../../installation/tutorials/backup.md) コマンドおよび管理オプションでは、追加のテーブルはバックアップされません。
 
 ## 前提条件
 

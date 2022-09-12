@@ -1,9 +1,9 @@
 ---
 title: マスターデータベースの手動構成
 description: 分割データベースソリューションの手動設定に関するガイダンスを参照してください。
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Adobeでは、現在のデータベースとファイルシステムをバック
 
 **システムをバックアップするには**:
 
-1. コマースサーバーに、 [ファイルシステム所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. コマースサーバーに、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
 1. 次のコマンドを入力します。
 
    ```bash
@@ -476,7 +476,7 @@ SET foreign_key_checks = 1;
 
 デプロイメント設定を更新するには：
 
-1. コマースサーバーに、 [ファイルシステム所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. コマースサーバーに、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
 1. デプロイメント設定のバックアップ：
 
    ```bash

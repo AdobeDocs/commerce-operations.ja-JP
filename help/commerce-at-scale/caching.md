@@ -2,9 +2,9 @@
 title: 効果的なキャッシュ計画
 description: 負荷がかかっているサイトを確実に成功させるには、キャッシュに関する推奨ベンチマークを参照してください。
 exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
-source-git-commit: 87e379aff4ec57f15ce914a13b4e9bc2769e6d1c
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -31,4 +31,4 @@ ht-degree: 0%
 
 この初期計画が完了すると、技術的な設定が開始され、これらの要件に基づいてキャッシュを設定できます。
 
-キャッシュの TTL 内でコンテンツが更新され、ライブにする必要がある場合でも、ほとんどの場合、 [AEM dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) および [Adobe Commerce](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean) そのコンテンツ用に選択的にキャッシュする。つまり、緊急の変更が直ちに反映されます。 手動でキャッシュをクリアするプロセスも、事前に計画およびテストして、一部のコンテンツに対して手動で更新を強制する必要がある場合は、サイトの Runbook 操作にドキュメント化し、それに関与する方法とユーザーを明確にします。
+キャッシュの TTL 内でコンテンツが更新され、ライブにする必要がある場合でも、ほとんどの場合、 [AEM dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) および [Adobe Commerce](../configuration//cli/manage-cache.md#clean-and-flush-cache-types) そのコンテンツ用に選択的にキャッシュする。つまり、緊急の変更が直ちに反映されます。 手動でキャッシュをクリアするプロセスも、事前に計画およびテストして、一部のコンテンツに対して手動で更新を強制する必要がある場合は、サイトの Runbook 操作にドキュメント化し、それに関与する方法とユーザーを明確にします。

@@ -1,9 +1,9 @@
 ---
 title: キャッシュの管理
 description: キャッシュの種類を管理し、キャッシュのステータスを表示します。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Current status:
 
 >[!INFO]
 >
->バージョン 2.2 以降では、実稼働モードでのコマースの実行中に、コマンドラインを使用してのみキャッシュタイプを有効または無効にできます。 コマースを開発者モードで実行している場合は、コマンドラインを使用して、または手動でキャッシュタイプを有効または無効にできます。 その前に、手動で `<magento_root>/app/etc/env.php` 書き込み可能な [ファイルシステム所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+>バージョン 2.2 以降では、実稼働モードでのコマースの実行中に、コマンドラインを使用してのみキャッシュタイプを有効または無効にできます。 コマースを開発者モードで実行している場合は、コマンドラインを使用して、または手動でキャッシュタイプを有効または無効にできます。 その前に、手動で `<magento_root>/app/etc/env.php` 書き込み可能な [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
 
 クリーンアップ ( _フラッシュ_ または _更新_) キャッシュタイプを作成する場合は、コマンドラインまたは管理者を使用します。
 

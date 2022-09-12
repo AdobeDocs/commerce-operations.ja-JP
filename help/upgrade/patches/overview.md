@@ -1,9 +1,9 @@
 ---
 title: パッチの動作
 description: Adobe CommerceおよびMagento Open Source用の様々なタイプのパッチとその動作について説明します。
-source-git-commit: 45a44d98f149b4b9a1fbb4ac0bcea3eb372f49a8
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->実稼動環境にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることを強くお勧めします。 また、パッチを適用する前に、データをバックアップすることを強くお勧めします。 詳しくは、 [ファイル・システムのバックアップとロールバック](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>実稼動環境にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることを強くお勧めします。 また、パッチを適用する前に、データをバックアップすることを強くお勧めします。 詳しくは、 [ファイル・システムのバックアップとロールバック](../../installation/tutorials/backup.md).
 
 パッチ（または差分）ファイルは、次の点に注意するテキストファイルです。
 

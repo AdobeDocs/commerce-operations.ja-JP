@@ -1,9 +1,9 @@
 ---
 title: cron ジョブの設定と実行
 description: cron ジョブの管理方法を説明します。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Commerce アプリケーションは、異なる設定で実行できる cron �
 
 >[!WARNING]
 >
->- インストールとアップグレードの際の問題を回避するため、PHP のコマンドライン設定と PHP Web サーバーのプラグイン設定の両方に同じ PHP 設定を適用することを強くお勧めします。 詳しくは、 [必要な PHP 設定](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+>- インストールとアップグレードの際の問題を回避するため、PHP のコマンドライン設定と PHP Web サーバーのプラグイン設定の両方に同じ PHP 設定を適用することを強くお勧めします。 詳しくは、 [必要な PHP 設定](../../installation/prerequisites/php-settings.md).
 >- マルチノードシステムでは、crontab は 1 つのノードでのみ実行できます。 これは、パフォーマンスや拡張性に関する理由から複数の Web ノードを設定した場合にのみ当てはまります。
 
 
@@ -58,7 +58,7 @@ Commerce crontab は内部にあります `#~ MAGENTO START` および `#~ MAGEN
 
 Commerce crontab を作成するには：
 
-1. にログインするか、に切り替えます。 [ファイルシステム所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. にログインするか、に切り替えます。 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
 1. Commerce のインストールディレクトリに移動します。
 1. 次のコマンドを入力します。
 
@@ -100,7 +100,7 @@ Commerce アプリケーションをアンインストールする前に、Comme
 
 Commerce crontab を削除するには：
 
-1. としてログインするか、に切り替えます。 [ファイルシステム所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. としてログインするか、に切り替えます。 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
 1. Commerce のインストールディレクトリに移動します。
 1. 次のコマンドを入力します。
 

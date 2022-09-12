@@ -1,9 +1,9 @@
 ---
 title: 検索エンジンの設定
 description: 検索エンジンをAdobe CommerceとMagento Open Sourceで設定
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ ht-degree: 0%
 
    続行：
 
-   - [検索エンジン用に Apache を設定](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html)
-   - [検索エンジン用に nginx を設定する](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-nginx.html)
+   - [検索エンジン用に Apache を設定](../../installation/prerequisites/search-engine/configure-apache.md)
+   - [検索エンジン用に nginx を設定する](../../installation/prerequisites/search-engine/configure-nginx.md)
 
    または、
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 - 検索エンジンサーバーが実行中であることを確認します。
 - サーバーが Commerce とは異なるホスト上にある場合は、Commerce サーバーにログインし、検索エンジンホストに ping を送信します。 ネットワーク接続の問題を解決し、接続を再度テストします。
 - スタックトレースと例外をElasticsearchまたは OpenSearch を開始したコマンドウィンドウを調べます。 続行する前に、それらを解決する必要があります。 特に、を使用して検索エンジンを起動したことを確認してください。 `root` 権限。
-- 必ず [UNIX ファイアウォールと SELinux](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#firewall-selinux) は両方とも無効になっているか、検索エンジンとコマースが相互に通信できるようにルールを設定しています。
+- 必ず [UNIX ファイアウォールと SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) は両方とも無効になっているか、検索エンジンとコマースが相互に通信できるようにルールを設定しています。
 - の値を検証します。 **Elasticsearchサーバーのホスト名** フィールドに入力します。 サーバーが使用可能であることを確認します。 代わりに、サーバーの IP アドレスを試すことができます。
 - 以下を使用： `netstat -an | grep <listen-port>` コマンドを使用して、 **Elasticsearchサーバーポート** フィールドが別のプロセスで使用されていません。
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 コマンドラインを使用してインデックスを再作成するには：
 
-1. コマースサーバーに、 [ファイルシステム所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. コマースサーバーに、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
 1. 次のいずれかのコマンドを入力します。
 
    次のコマンドを入力して、カタログ検索インデックスのインデックスを再作成します。

@@ -1,9 +1,9 @@
 ---
 title: 設定のベストプラクティス
 description: これらのベストプラクティスを使用して、Adobe CommerceまたはMagento Open Sourceのデプロイメントの応答時間を最適化します。
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Commerce には、ページの応答時間を改善し、より高いスルー�
 
 ## Cron ジョブ
 
-でのすべての非同期操作 [!DNL Commerce] は、Linux を使用して実行されます。 `cron` コマンドを使用します。 詳しくは、 [cron の設定と実行](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) を設定してください。
+でのすべての非同期操作 [!DNL Commerce] は、Linux を使用して実行されます。 `cron` コマンドを使用します。 詳しくは、 [cron の設定と実行](../configuration/cli/configure-cron-jobs.md) を設定してください。
 
 ## インデクサー
 
@@ -40,7 +40,7 @@ MariaDB 10.4 でのインデックス再作成は、他の MariaDB や [!DNL MyS
 
 >[!WARNING]
 >
->この **[!UICONTROL Developer]** タブとオプションは、 [開発者モード](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html). [Adobe Commerce an cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) はをサポートしていません `Developer` モード。
+>この **[!UICONTROL Developer]** タブとオプションは、 [開発者モード](../configuration/cli/set-mode.md). [Adobe Commerce an cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) はをサポートしていません `Developer` モード。
 
 ## 遅延在庫更新
 
@@ -66,7 +66,7 @@ MariaDB 10.4 でのインデックス再作成は、他の MariaDB や [!DNL MyS
 
 >[!INFO]
 >
->この **[!UICONTROL Developer]** タブとオプションは、 [開発者モード](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html). [Adobe [!DNL Commerce] クラウドインフラストラクチャ](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) はをサポートしていません `Developer` モード。
+>この **[!UICONTROL Developer]** タブとオプションは、 [開発者モード](../configuration/cli/set-mode.md). [Adobe [!DNL Commerce] クラウドインフラストラクチャ](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) はをサポートしていません `Developer` モード。
 
 次をアクティブ化すると、 **[!UICONTROL Enable [!DNL JavaScript] Bundling]** 」オプションを使用すると、Commerce はすべての JS リソースを、ストアフロントページに読み込まれた 1 つまたは複数のバンドルに結合できます。 JS をバンドルすると、サーバーへのリクエスト数が少なくなり、ページのパフォーマンスが向上します。 また、最初の呼び出しでブラウザーが JS リソースをキャッシュし、それらを以降の参照で再利用するのにも役立ちます。 また、このオプションは、すべての JS がテキストとして読み込まれるので、遅延評価をもたらします。 ページ上で特定のアクションがトリガーされた後にのみ、コードの分析と評価を開始します。 ただし、最初の呼び出しですべての JS コンテンツが読み込まれるので、最初のページ読み込み時間が非常に重要なストアでは、この設定はお勧めしません。
 

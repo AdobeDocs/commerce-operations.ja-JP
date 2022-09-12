@@ -1,9 +1,9 @@
 ---
 title: アプリケーションモード
 description: コマースアプリケーションは、必要に応じて異なるモードで動作します。 使用可能なアプリケーションモードの詳細なリストを表示します。
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,6 @@ Commerce が実行時に静的ファイルをオンデマンドで動的に見�
 
 メンテナンス、アップグレード、または設定タスクの完了中にサイトをオフラインにするには、コマースアプリケーションをメンテナンスモードで実行します。 メンテナンスモードでは、サイトは訪問者をデフォルトの `Service Temporarily Unavailable` ページ。
 
-次の項目を作成できます。 [カスタムメンテナンスページ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html)、メンテナンスモードを手動で有効または無効にし、許可された IP アドレスからの訪問者がストアを通常どおり表示できるようにメンテナンスモードを設定します。 詳しくは、 [メンテナンスモードの有効化と無効化](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html).
+次の項目を作成できます。 [カスタムメンテナンスページ](../../upgrade/troubleshooting/maintenance-mode-options.md)、メンテナンスモードを手動で有効または無効にし、許可された IP アドレスからの訪問者がストアを通常どおり表示できるようにメンテナンスモードを設定します。 詳しくは、 [メンテナンスモードの有効化と無効化](../../installation/tutorials/maintenance-mode.md).
 
 クラウドインフラストラクチャで Commerce を使用している場合、コマースアプリケーションはデプロイフェーズ中にメンテナンスモードで実行されます。 デプロイメントが正常に完了すると、Commerce アプリケーションは実稼動モードでの実行に戻ります。 詳しくは、 [デプロイメントフック](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-hook) 内 _Commerce Cloudガイド_.

@@ -1,9 +1,9 @@
 ---
 title: 「 [!DNL Upgrade Compatibility Tool]"
 description: 詳しくは、 [!DNL Upgrade Compatibility Tool] Adobe Commerceプロジェクトに役立つ情報です。
-source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -45,15 +45,15 @@ ht-degree: 0%
 
 を [!DNL Upgrade Compatibility Tool] チーム、エンジニアリングSlackチャネルでお問い合わせください [#upgrade-compatibility-tool](https://magentocommeng.slack.com/archives/C019Y143U9F). ツールの改善に役立つフィードバック、問題、提案をお聞かせください。
 
-この [!DNL Upgrade Compatibility Tool] で定義されたルールを使用 [コーディング規格](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html) プロジェクトがAdobe Commerceのベストプラクティスに従っていること、およびの改善と拡張に役立っていることを確認する [!DNL Upgrade Compatibility Tool].
+この [!DNL Upgrade Compatibility Tool] で定義されたルールを使用 [コーディング規格](https://developer.adobe.com/commerce/php/coding-standards/) プロジェクトがAdobe Commerceのベストプラクティスに従っていること、およびの改善と拡張に役立っていることを確認する [!DNL Upgrade Compatibility Tool].
 
-詳しくは、 [投稿](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html) トピックを参照してください。
+詳しくは、 [投稿](https://developer.adobe.com/commerce/php/coding-standards/contributing/) トピックを参照してください。
 
 ## リソース
 
 Adobe Commerceのアップグレードについて理解するには、次のリソースを参照してください。
 
-- この [アップグレードガイド](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) では、一般的なAdobe CommerceまたはMagento Open Sourceアップグレードのジャーニーの概要と、そのジャーニーに従うためのベストプラクティスを示します。
+- この [アップグレードガイド](../overview.md) では、一般的なAdobe CommerceまたはMagento Open Sourceアップグレードのジャーニーの概要と、そのジャーニーに従うためのベストプラクティスを示します。
 - この [今後のリリース](https://devdocs.magento.com/release/) ページには、予定されているリリースおよび今後のリリースの日付が表示されます。
 - この [コミュニティリソース](https://developer.adobe.com/commerce/contributor/community/) ページは、ディスカッションを開始するか、詳細を見つける場所です。
 - 次を確認します。 [関連ツール](../upgrade-compatibility-tool/related-tools.md) ページを参照してください。

@@ -1,9 +1,9 @@
 ---
 title: データ移行設定
 description: を使用して、Magento1 からMagento2 への設定の移行を開始する方法を説明します。 [!DNL Data Migration Tool].
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 開始する前に、次の手順に従って準備を行います。
 
-1. Magento2 インスタンスでサーバーにログインします。 [ファイルシステムの所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. アプリケーションサーバーに、 [ファイルシステム所有者](../../../installation/prerequisites/file-system/overview.md).
 
-1. Magento2 に変更 `/bin` ディレクトリに追加するか、システムの PATH に追加されていることを確認します。
+1. を `/bin` ディレクトリに追加するか、システムに追加されていることを確認します。 `PATH`.
 
 >[!NOTE]
 >
@@ -53,15 +53,15 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 設定の移行時に、システム設定を無視、名前変更、または変更できます。 この場合、 `settings.xml` ファイル。
 
-1. Magento2 インスタンスでサーバーにログインし、またはに切り替えます。 [ファイルシステム所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. アプリケーションサーバーに、 [ファイルシステム所有者](../../../installation/prerequisites/file-system/overview.md).
 
 1. 次のディレクトリに移動します。
 
    ```bash
-   cd <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
+   cd <your application 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
    ```
 
-   例えば、Magento2 が `/var/www/html`、 `settings.xml.dist` ファイルは、次のいずれかのディレクトリにあります。
+   例えば、アプリケーションが `/var/www/html`、 `settings.xml.dist` ファイルは、次のいずれかのディレクトリにあります。
 
    * `/var/www/html/vendor/magento/data-migration-tool/etc/opensource-to-commerce`
 

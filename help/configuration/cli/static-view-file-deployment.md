@@ -1,9 +1,9 @@
 ---
 title: 静的ビューファイルのデプロイ
 description: 実稼働モードで Commerce ファイルシステムに静的ファイルを書き込む方法を説明します。
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->_開発者モードのみ_:新しいモジュールをインストールまたは有効にすると、新しい JavaScript、CSS、レイアウトなどが読み込まれる場合があります。 静的ファイルの問題を回避するには、古いファイルを消去して、新しいモジュールに対するすべての変更を確実に取得する必要があります。 生成された静的ビューファイルは、いくつかの方法で消去できます。 参照： [静的ファイルのキャッシュトピックをクリーンアップして詳細を確認](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/cache_for_frontdevs.html#clean_static_cache) を参照してください。
+>_開発者モードのみ_:新しいモジュールをインストールまたは有効にすると、新しい JavaScript、CSS、レイアウトなどが読み込まれる場合があります。 静的ファイルの問題を回避するには、古いファイルを消去して、新しいモジュールに対するすべての変更を確実に取得する必要があります。 生成された静的ビューファイルは、いくつかの方法で消去できます。 参照： [静的ファイルのキャッシュトピックをクリーンアップして詳細を確認](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) を参照してください。
 
 **静的ビューファイルを配置するには**:
 
-1. Commerce サーバーに、またはとしてログインします。 [ファイルシステムの所有者に切り替え](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Commerce サーバーに、またはとしてログインします。 [ファイルシステムの所有者に切り替え](../../installation/prerequisites/file-system/overview.md).
 1. のコンテンツを削除 `<magento_root>/pub/static`( ただし、 `.htaccess` ファイル。 このファイルは削除しないでください。
 1. 静的ビューファイル展開ツールを実行する `<magento_root>/bin/magento setup:static-content:deploy`.
 
@@ -158,7 +158,7 @@ New version of deployed files: 1466711110
 
 ## 静的ビューファイル展開ツールのトラブルシューティング
 
-[最初にコマースソフトウェアをインストールします](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html);そうしないと、静的ビューファイル展開ツールを実行できません。
+[最初にコマースソフトウェアをインストールします](../../installation/overview.md);そうしないと、静的ビューファイル展開ツールを実行できません。
 
 **症状**:静的ビューファイル配置ツールを実行すると、次のエラーが表示されます。
 
@@ -170,9 +170,9 @@ ERROR: You need to install the Commerce application before running this utility.
 
 次の手順を実行します。
 
-1. 次を使用して Commerce ソフトウェアをインストールします。 [コマンドライン](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli.html).
-1. Commerce サーバーに、またはとしてログインします。 [切り替え](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html)：ファイルシステムの所有者。
-1. のコンテンツを削除 `<magento_root>/pub/static` ディレクトリ（を除く） `.htaccess` ファイル。 このファイルは削除しないでください。
+1. 次を使用して Commerce ソフトウェアをインストールします。 [コマンドライン](../../installation/composer.md).
+1. アプリケーションサーバーに、またはとしてログインします。 [切り替え](../../installation/prerequisites/file-system/overview.md)：ファイルシステムの所有者。
+1. のコンテンツを削除 `<app_root>/pub/static` ディレクトリ（を除く） `.htaccess` ファイル。 このファイルは削除しないでください。
 1. 静的ビューファイルのデプロイ： `bin/magento setup:static-content:deploy`
 
 ## 静的コンテンツデプロイメントツールをカスタマイズする開発者向けヒント

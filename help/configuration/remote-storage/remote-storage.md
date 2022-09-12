@@ -1,9 +1,9 @@
 ---
 title: リモートストレージの構成
 description: オンプレミスのコマースアプリケーション用にリモートストレージモジュールを構成する方法を説明します。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,5 @@ PHP の使用禁止のネイティブ関数のリストは、 [Magentoコーデ�
 <!-- link definitions -->
 
 [import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html
-[nginx-module]: http://nginx.org/en/docs/http/ngx_http_image_filter_module.html
 [Magentoコーディング規格]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php
-[setup]: https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-deployment.html#instgde-cli-subcommands-configphp
+[setup]: ../../installation/tutorials/deployment.md

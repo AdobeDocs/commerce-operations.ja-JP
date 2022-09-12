@@ -1,9 +1,9 @@
 ---
-title: '"[!DNL Data Migration Tool] 前提条件"'
+title: "[!DNL Data Migration Tool] 前提条件"
 description: 「 [!DNL Data Migration Tool] Magento1 とMagento2 の間でデータを転送する。」
-source-git-commit: 87298a6dfd783fed264f275495a3ad72374eb9f6
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 ## Magento2 系
 
-* 次の条件を満たすようにMagento2 システムを設定します。 [システム要件](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
+* 次の条件を満たすようにMagento2 システムを設定します。 [システム要件](../../installation/system-requirements.md).
 
    既存のMagento1 システムと少なくとも一致するトポロジと設計を使用します。
 
-* [インストールMagento2](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html).
+* [インストールMagento2](../../installation/overview.md).
 
 ## Cron
 

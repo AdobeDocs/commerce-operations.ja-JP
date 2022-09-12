@@ -1,9 +1,9 @@
 ---
 title: 実稼動システムの設定
 description: コマースアプリケーションの実稼動システムを設定する方法を説明します。
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 
    作成 `auth.json` を選択します。
 
-   `auth.json` は、 [認証キー](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+   `auth.json` は、 [認証キー](../../installation/prerequisites/authentication-keys.md).
 
    次に例を示します。
 

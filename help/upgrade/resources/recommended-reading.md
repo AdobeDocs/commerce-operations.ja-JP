@@ -1,10 +1,10 @@
 ---
 title: アップグレードの推奨読み取り
 description: Adobe Commerce または Magento Open Source のアップグレードの計画時に推奨ドキュメントを確認してください。
-source-git-commit: 1cecdf89df9a870d57347468ce9220f74d46cd73
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 2%
+source-wordcount: '420'
+ht-degree: 3%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 2%
           <ul>
             <li><a href="https://magento.com/tech-resources/downloads">Adobe Commerceバージョンのダウンロード</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">アップグレード互換性ツール PhpStorm プラグイン</a> （ビデオ）</li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en">アップグレード互換性ツール</a></li>
+            <li><a href="../upgrade-compatibility-tool/overview.md">アップグレード互換性ツール</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityToolSlackチャネル</a></li>
             <li><a href="https://devdocs.magento.com/quality-patches/usage.html">品質パッチツール</a></li>
           </ul>
@@ -64,15 +64,15 @@ ht-degree: 2%
       <td><strong>リソースのアップグレード</strong>
         <p>ストアフロントを安全に保ち、効率的に動作させます。 Adobeの広範な技術ドキュメントを確認して、Adobe CommerceまたはMagento Open Sourceのアップグレードに備えます。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-upgrade-paths-2022.html?lang=en">2022 推奨アップグレードパス</a></li>
+            <li><a href="recommended-upgrade-paths-2022.md">2022 推奨アップグレードパス</a></li>
             <li><a href="../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf">2.4 アップグレードガイド</a> (PDF)</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 テクニカルアップグレードワークショップの録画</a></li>
             <li><a href="https://support.magento.com/hc/en-us/articles/360034120932">プレリリースへのアクセス</a></li>
             <li><a href="https://devdocs.magento.com/release/beta-program.html">ベータプログラムの概要</a></li>
-            <li><a href="https://devdocs.magento.com/contributor-guide/backward-compatible-development/index.html">後方互換性のない開発</a></li>
+            <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/">後方互換性のない開発</a></li>
             <li><a href="https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html">後方互換性のない変更</a></li>
             <li><a href="https://support.magento.com/hc/en-us/articles/360057968951-Upgrade-plan-checklist-for-Adobe-Commerce">アップグレード計画チェックリスト</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/best-practices.html?lang=en">アップグレードのベストプラクティス</a></li>
+            <li><a href="../prepare/best-practices.md">アップグレードのベストプラクティス</a></li>
             <li><a href="https://devdocs.magento.com/release/availability.html">ソフトウェアの可用性</a></li>
           </ul>
       </td>

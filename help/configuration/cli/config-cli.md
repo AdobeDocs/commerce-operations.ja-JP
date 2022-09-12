@@ -1,9 +1,9 @@
 ---
 title: コマンドラインツール
 description: Commerce コマンドラインツールを使用して、インストールタスクと設定タスクを実行します。
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,15 @@ Commerce には 1 つのコマンドラインインターフェイス (CLI) が�
 - CLI は拡張可能なため、サード・パーティの開発者は CLI に「プラグイン」できます。 これにより、ユーザーの学習曲線をなくすこともできます。
 - 無効なモジュールのコマンドは表示されません。
 
-このトピックでは、CLI を使用したAdobe CommerceおよびMagento Open Sourceソフトウェアの設定について説明します。 コマースのインストールについて詳しくは、 [インストールフロー](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) 内 _インストールガイド_.
+このトピックでは、CLI を使用したAdobe CommerceおよびMagento Open Sourceソフトウェアの設定について説明します。 コマースのインストールについて詳しくは、 [インストールフロー](../../installation/overview.md) 内 _インストールガイド_.
 
 ## 前提条件
 
 CLI を使用する前に、次の点を確認します。
 
-1. システムが、 [必要システム構成](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) 内 _インストールガイド_.
-1. 前提条件のタスクをすべて完了しました ( [前提条件](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/prereq-overview.html) 内 _インストールガイド_.
-1. Commerce サーバーにログインした後、Commerce ファイルシステムに書き込む権限を持つユーザーに切り替えます。 詳しくは、 [ファイルシステムの所有者に切り替え](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html) 内 _インストールガイド_.
+1. システムが、 [必要システム構成](../../installation/system-requirements.md) 内 _インストールガイド_.
+1. 前提条件のタスクをすべて完了しました ( [前提条件](../../installation/prerequisites/overview.md) 内 _インストールガイド_.
+1. Commerce サーバーにログインした後、Commerce ファイルシステムに書き込む権限を持つユーザーに切り替えます。 詳しくは、 [ファイルシステムの所有者に切り替え](../../installation/prerequisites/file-system/overview.md) 内 _インストールガイド_.
 
 ## コマンドの実行
 

@@ -1,9 +1,9 @@
 ---
 title: のアップグレード [!DNL Data Migration Tool]
 description: をアップグレードする方法を説明します。 [!DNL Data Migration Tool] Magento1 とMagento2 の間でデータを転送する。
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ### Magentoソフトウェアのアップグレード
 
-まだおこなっていない場合は、 [Magento・ソフトウェアのアップグレード](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html).
+まだおこなっていない場合は、 [Magento・ソフトウェアのアップグレード](../../upgrade/overview.md).
 
 ### バックアップ `vendor/magento/data-migration-tool` directory
 
@@ -56,8 +56,8 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 ## のアップグレード [!DNL Data Migration Tool]
 
-1. Magentoサーバーにとしてログインするか、に切り替えます。 [ファイルシステムの所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Magento2 のルートディレクトリに変更します。
+1. アプリケーションサーバーにとしてログインするか、に切り替えます。 [ファイルシステムの所有者](../../installation/prerequisites/file-system/overview.md).
+1. アプリケーションのルートディレクトリに移動します。
 1. 次のコマンドを入力します。
 
    ```bash

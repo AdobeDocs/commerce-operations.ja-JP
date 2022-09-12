@@ -1,9 +1,9 @@
 ---
 title: ベストプラクティス
 description: Adobeが推奨するベストプラクティスを使用して、Adobe CommerceおよびMagento Open Sourceプロジェクトのアップグレードプロセスを管理します。
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ Adobe Commerceインスタンスをアップグレードする際の作業レベ
 
 プロジェクトの作業を開始した時点から、現在の作業による今後のアップグレードの影響を検討する必要があります。 常に、Adobe Commerce開発のベストプラクティスに従ってください。
 
-- [開発のベストプラクティス](https://devdocs.magento.com/guides/v2.4/ext-best-practices/bk-ext-best-practices.html)
-- [コーディング規格](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html)
+- [開発のベストプラクティス](https://developer.adobe.com/commerce/php/best-practices/)
+- [コーディング規格](https://developer.adobe.com/commerce/php/coding-standards/)
 
 Adobe Commerce Extensibility プラットフォームの導入を開始します（まだおこなっていない場合）。 このプラットフォームでは、SaaS に似たアップグレード性を維持しながら、プロセスの効率的なカスタマイズ、システムの統合、新しい機能の導入が可能です。 主な特長は次のとおりです。
 
@@ -80,7 +80,7 @@ Adobe Commerceの機能が継続的に拡張されるので、利用可能な最
 
 ### アップグレード後のテスト
 
-テストとは、最も時間がかかるアップグレードの段階です。 その結果、このプロセスはできるだけ自動化される必要があります。 コアテストツールを使用することで、メリットを得ることができます。 この [アプリケーションテストガイド](https://devdocs.magento.com/guides/v2.4/test/testing.html) 詳細を示します。
+テストとは、最も時間がかかるアップグレードの段階です。 その結果、このプロセスはできるだけ自動化される必要があります。 コアテストツールを使用することで、メリットを得ることができます。 この [アプリケーションテストガイド](https://developer.adobe.com/commerce/testing/guide/) 詳細を示します。
 
 実稼動環境に移行する前に、ステージング環境を使用してアップグレードのテストと検証をおこないます。
 

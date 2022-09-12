@@ -1,9 +1,9 @@
 ---
 title: 移行の概要
 description: を使用してMagento1 からMagento2 へのデータ移行を開始する方法を説明します。 [!DNL Data Migration Tool].
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ### 最初の手順
 
-1. ファイル・システムへの書き込み権限を持つユーザーとしてアプリケーション・サーバにログインするか、切り替えます。 詳しくは、 [ファイルシステムの所有者に切り替え](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. ファイル・システムへの書き込み権限を持つユーザーとしてアプリケーション・サーバにログインするか、切り替えます。 詳しくは、 [ファイルシステムの所有者に切り替え](../../../installation/prerequisites/file-system/overview.md).
 
    bash シェルを使用する場合は、次の構文を使用して、ファイルシステムの所有者に切り替え、同時にコマンドを入力できます。
 
@@ -58,8 +58,6 @@ ht-degree: 0%
    - `cd <magento_root>/bin` を実行します。 `./magento <command name>`
    - `<magento_root>/bin/magento <command name>`
    - `<magento_root>` は、Web サーバーの docroot のサブディレクトリです。
-
-ここで説明するコマンド引数に加えて、 [一般的な引数](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common)
 
 ### コマンド構文
 

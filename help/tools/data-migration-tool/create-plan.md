@@ -1,9 +1,9 @@
 ---
 title: データ移行プランの作成
 description: 次の手順に従って、データ移行計画を作成し、Magento1 からMagento2 へのアップグレードを確実に成功させます。
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -116,6 +116,6 @@ Magento2 のサイトがMagento1 の最新の状態になり、正常に機能�
 1. Magento2 ストアを使用する準備が整いました。 自分と顧客は、すべてのアクティビティを再開できます。
 
 <!-- LINK ADDRESSES -->
-[Magentoの必要システム構成]: https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html
+[Magentoの必要システム構成]: ../../installation/system-requirements.md
 [Commerce Marketplace]: https://marketplace.magento.com
-[設定ガイド]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html
+[設定ガイド]: ../../configuration/cli/manage-indexers.md

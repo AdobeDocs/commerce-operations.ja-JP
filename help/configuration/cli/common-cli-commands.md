@@ -1,9 +1,9 @@
 ---
 title: 共通コマンド
 description: 一般的な Commerce CLI コマンドと使用方法のサンプリングを表示します。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -44,10 +44,10 @@ bin/magento help cache:enable
 | [`magento dev:tests:run`](../cli/unit-tests.md) | 自動テストの実行 |
 | [`magento dev:xml:convert`](../cli/convert-layout-files.md) | レイアウト XML ファイルを更新して、新しい XSLT(Extensible Stylesheet Language Transformations) スタイルシートに一致させる |
 | [`magento setup:perf:generate-fixtures`](../cli/generate-data.md) | パフォーマンステストに使用するデータを生成します。 |
-| [`magento sampledata:install`](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html) | コマースアプリケーションをインストールした後に、オプションのサンプルデータをインストールします。<br><br>サンプルデータについて詳しくは、 [オプションのサンプルデータ](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html). |
+| [`magento sampledata:install`](../../installation/sample-data/overview.md) | コマースアプリケーションをインストールした後に、オプションのサンプルデータをインストールします。<br><br>サンプルデータについて詳しくは、 [オプションのサンプルデータ](../../installation/sample-data/overview.md). |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | バックエンド設定の管理 |
-| [`magento admin:user:{create/unlock}`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-admin.html) | 管理者ユーザーを作成/編集/ロック解除します。 |
-| [`magento dev:template-hints:{enable/disable}`](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/debug-theme.html) | 開発者テンプレートのヒントを有効または無効にします。 |
+| [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | 管理者ユーザーを作成/編集/ロック解除します。 |
+| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | 開発者テンプレートのヒントを有効または無効にします。 |
 
 ## 一般的な引数
 

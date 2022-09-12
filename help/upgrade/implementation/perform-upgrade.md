@@ -1,9 +1,9 @@
 ---
 title: アップグレードの実行
 description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceプロジェクトをアップグレードします。
-source-git-commit: 3c3966a904b0568e0255020d8880d348c357ea95
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 >
 >GitHub リポジトリを複製した場合は、この方法を使用してアップグレードしないでください。 代わりに、 [Git ベースのインストールのアップグレード](../developer/git-installs.md) を参照してください。
 
-以下の手順は、Composer を使用してアップグレードする方法を示しています。 Adobe Commerce 2.4.2 では、Composer 2 のサポートが導入されました。 &lt;2.4.1 からアップグレードする場合は、まず Composer 1 を使用して、Composer 2 と互換性のあるバージョン（例：2.4.2）にアップグレードする必要があります _前_ 2.4.2 以降のアップグレードの場合は、Composer 2 にアップグレードします。 さらに、 [サポート対象バージョン](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) PHP の
+以下の手順は、Composer を使用してアップグレードする方法を示しています。 Adobe Commerce 2.4.2 では、Composer 2 のサポートが導入されました。 &lt;2.4.1 からアップグレードする場合は、まず Composer 1 を使用して、Composer 2 と互換性のあるバージョン（例：2.4.2）にアップグレードする必要があります _前_ 2.4.2 以降のアップグレードの場合は、Composer 2 にアップグレードします。 さらに、 [サポート対象バージョン](../../installation/system-requirements.md) PHP の
 
 >[!WARNING]
 >
@@ -42,7 +42,7 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-   詳しくは、 [メンテナンスモードを有効または無効にする](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) 」を参照してください。 オプションで、 [カスタムメンテナンスモードページ](https://devdocs.magento.com/guides/v2.4/comp-mgr/trouble/cman/maint-mode.html).
+   詳しくは、 [メンテナンスモードを有効または無効にする](../../installation/tutorials/maintenance-mode.md) 」を参照してください。 オプションで、 [カスタムメンテナンスモードページ](../troubleshooting/maintenance-mode-options.md).
 
 1. メッセージキューコンシューマーなどの非同期プロセスの実行中にアップグレードプロセスを開始すると、データが破損する可能性があります。 データの破損を防ぐには、すべての cron ジョブを無効にします。
 
@@ -253,7 +253,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-updat
 
 アプリケーションが  `We're sorry, an error has occurred while generating this email.` エラー：
 
-1. リセット [ファイルシステムの所有権と権限](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html) を使用して `root` 権限。
+1. リセット [ファイルシステムの所有権と権限](../../installation/prerequisites/file-system/configure-permissions.md) を使用して `root` 権限。
 1. 次のディレクトリをクリアします。
    - `var/cache/`
    - `var/page_cache/`

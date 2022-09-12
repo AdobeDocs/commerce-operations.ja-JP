@@ -1,9 +1,9 @@
 ---
 title: アップグレード範囲について
 description: Adobe Commerce、Magento Open Sourceのカスタムモジュール、またはサードパーティの拡張機能に影響を与える可能性のある、リリースにおける後方互換性のない変更について説明します。
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Adobe Commerce Marketplace の新しい互換性ポリシーにより、 _すべ
 
 ## カスタムモジュール
 
-すべてのカスタムモジュールは、アップグレード先のターゲットバージョンと照合する必要があります。 これは、アップグレードの最も時間とリソースを消費するプロセスです。 カスタムモジュールを評価する際は、後方互換性のない変更を探し、コントローラの分解などの新しい慣行に注意する必要があります。 詳しくは、 [リリースノート](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). また、フォローしていることを確認してください [ベストプラクティス](https://devdocs.magento.com/guides/v2.4/ext-best-practices/extension-coding/common-programming-bp.html) モジュール開発用。
+すべてのカスタムモジュールは、アップグレード先のターゲットバージョンと照合する必要があります。 これは、アップグレードの最も時間とリソースを消費するプロセスです。 カスタムモジュールを評価する際は、後方互換性のない変更を探し、コントローラの分解などの新しい慣行に注意する必要があります。 詳しくは、 [リリースノート](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). また、フォローしていることを確認してください [ベストプラクティス](https://developer.adobe.com/commerce/php/best-practices/extensions/) モジュール開発用。
 
 ## [!DNL Upgrade Compatibility Tool]
 

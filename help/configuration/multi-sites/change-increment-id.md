@@ -1,9 +1,9 @@
 ---
 title: 増分 ID を変更
 description: Commerce データベースエンティティの増分 ID を変更します。
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 - Adobe Commerce（オンプレミス）:2.x.x
 - Adobe Commerce on cloud infrastructure:2.x.x
-- MySQL: [サポート対象のバージョン]
+- MySQL: [サポート対象のバージョン](../../installation/prerequisites/database/mysql.md)
 
 ## 増分 ID を変更する必要がある状況
 
@@ -75,4 +75,4 @@ ALTER TABLE sequence_order_1 AUTO_INCREMENT = 2000;
 
 [PayPal ゲートウェイがリクエストを拒否しました — 請求書の重複の問題]: https://support.magento.com/hc/en-us/articles/115002457473
 [DB バックアップの作成]: https://support.magento.com/hc/en-us/articles/360003254334
-[サポート対象のバージョン]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html
+[サポート対象のバージョン]

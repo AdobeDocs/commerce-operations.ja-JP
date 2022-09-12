@@ -1,9 +1,9 @@
 ---
 title: 操作モードの設定
 description: Adobe Commerce操作モードの設定について説明します。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ pub/static
 
 ## 現在のモードを表示
 
-これを行う最も簡単な方法は、このコマンドを [ファイルシステム所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html). ホスティングを共有している場合は、プロバイダーがサーバーにログインするために提供するユーザーです。 プライベートサーバーがある場合、通常は Commerce サーバー上のローカルユーザーアカウントです。
+これを行う最も簡単な方法は、このコマンドを [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md). ホスティングを共有している場合は、プロバイダーがサーバーにログインするために提供するユーザーです。 プライベートサーバーがある場合、通常は Commerce サーバー上のローカルユーザーアカウントです。
 
 コマンドの使用：
 

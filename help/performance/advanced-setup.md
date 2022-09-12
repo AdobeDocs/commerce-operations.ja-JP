@@ -1,9 +1,9 @@
 ---
 title: 詳細設定
 description: 大量のデータを処理する大規模なエンタープライズシステムに関するベストプラクティスと推奨事項の確認
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 多数の製品 SKU、Web サイト、顧客グループ、共有カタログは、製品価格およびカタログルールのインデクサーの実行時間に影響します。 これは、デフォルトでは、すべての Web サイトがすべての顧客グループ（共有カタログ）に割り当てられるからです。
 
-インデックス作成時間を短縮するには、 [特定の Web サイトを顧客グループから除外（共有カタログ）](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexer-optimization.html#customer-group-limitations-by-websites).
+インデックス作成時間を短縮するには、 [特定の Web サイトを顧客グループから除外（共有カタログ）](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
 
 ## Redis の設定
 
@@ -56,7 +56,7 @@ Magento Open SourceとAdobe [!DNL Commerce] が実装したメッセージキュ
 
 >[!WARNING]
 >
->データベース分割機能は次のとおりです。 [非推奨](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) (Adobe Commerceのバージョン 2.4.2)。 詳しくは、 [分割データベースから単一のデータベースに戻す](https://devdocs.magento.com/guides/v2.4/config-guide/revert-split-database.html).
+>データベース分割機能は次のとおりです。 [非推奨](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) (Adobe Commerceのバージョン 2.4.2)。 詳しくは、 [分割データベースから単一のデータベースに戻す](../configuration/storage/revert-split-database.md).
 
 Adobe Commerceでは、ビジネスの成長に伴うニーズに合わせて拡張性の高いデータベースストレージを構成できます。 特定のドメインを扱う 3 つの異なるマスターデータベースを設定できます。
 
@@ -95,7 +95,7 @@ bin/magento setup:db-schema:add-slave
 マスター・データベースを分割し、スレーブ・データベースを設定した後、 [!DNL Commerce] は、特定のデータベースへの接続を自動的に規制し、リクエストのタイプ (POST、PUT、GETなど ) とデータリソースに基づいて判断を下します。 If [!DNL Commerce] または、拡張機能がGETリクエストに対して書き込み操作を実行すると、接続がスレーブデータベースからマスターデータベースに自動的に切り替えられます。 マスターデータベースでも同じように機能します。チェックアウト関連のテーブルを操作すると、すべてのクエリが特定のデータベースにリダイレクトされます。 一方、カタログ関連のクエリはすべてメインデータベースに送られます。
 
 設定の詳細と複数のマスター/スレーブ設定の利点については、
-[分割データベースパフォーマンスソリューション](https://devdocs.magento.com/guides/v2.4/config-guide/multi-master/multi-master.html).
+[分割データベースパフォーマンスソリューション](../configuration/storage/multi-master.md).
 
 ## メディアコンテンツを提供
 

@@ -1,9 +1,9 @@
 ---
 title: カスタム cron ジョブと cron グループの設定（チュートリアル）
 description: この詳しい手順のチュートリアルを使用して、カスタム cron ジョブを作成します。
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ cron ジョブを実行すると、行が `cron_schedule` cron ジョブの名�
 
 - Commerce アプリケーションがにインストールされている `/var/www/html/magento2`
 - Commerce データベースのユーザー名とパスワードは両方とも `magento`
-- すべてのアクションは、 [ファイルシステム所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html)
+- すべてのアクションは、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)
 
 ## 手順 1:サンプルモジュールの取得
 
@@ -31,7 +31,7 @@ cron ジョブを実行すると、行が `cron_schedule` cron ジョブの名�
 
 **サンプルモジュールを取得するには**:
 
-1. コマースサーバーに、 [ファイルシステム所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. コマースサーバーに、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
 1. コマースアプリケーションのルートにないディレクトリ（ホームディレクトリなど）に変更します。
 1. のクローン [`magento2-samples` リポジトリ][samples].
 

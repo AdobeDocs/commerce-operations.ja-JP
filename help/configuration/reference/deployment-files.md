@@ -1,9 +1,9 @@
 ---
 title: デプロイメント用の設定ファイル
 description: Commerce アプリケーションをインストールするための設定ファイルの動作を理解します。
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,9 @@ Adobe Commerceには、コンポーネントを簡単にカスタマイズし、
 
 例：
 
-- コンポーネントをアンインストール： [`bin/magento setup:uninstall`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall.html)
+- コンポーネントをアンインストール： [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
 - コンポーネントのステータスの確認： [`bin/magento module:status`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#modulestatus)
-- コンポーネントを有効または無効にする： [`bin/magento module:disable`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html#instgde-cli-subcommands-enable-disable), [`bin/magento module:enable`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html#instgde-cli-subcommands-enable-disable).
+- コンポーネントを有効または無効にする： [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md).
 
 > _config.php_
 

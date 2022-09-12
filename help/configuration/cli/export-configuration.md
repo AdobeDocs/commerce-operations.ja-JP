@@ -1,7 +1,7 @@
 ---
 title: 書き出し設定
 description: Adobe Commerceの設定を設定ファイル（設定ダンプとも呼ばれます）にエクスポートします。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
@@ -47,6 +47,6 @@ bin/magento app:config:dump scopes themes
 
 に書き込まれる機密設定を設定するには `env.php`、 [`bin/magento config:sensitive:set`](set-configuration-values.md#set-values) コマンドを使用します。
 
-設定値は、 [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) モジュールの [`di.xml`](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/configuration/sensitive-and-environment-settings.html#how-to-specify-values-as-sensitive-or-system-specific) ファイル。
+設定値は、 [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) モジュールの [`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific) ファイル。
 
 を使用する際に追加のシステム設定を書き出すには `config_types`を使用する場合は、 [`bin/magento config:set`](set-configuration-values.md#set-values) コマンドを使用します。

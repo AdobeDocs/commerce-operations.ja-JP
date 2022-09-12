@@ -1,9 +1,9 @@
 ---
 title: 開発環境Recommendations
 description: ローカルのAdobe CommerceまたはMagento Open Source開発環境を設定する際の推奨パフォーマンスについて説明します。
-source-git-commit: 87b353b408ecd7f55cea5b4775a0c8523952abc0
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -47,5 +47,5 @@ VM で開発し、Magentoページの読み込みに 2 秒以上かかる場合�
 
 <!-- Link definitions -->
 
-[キャッシュをクリーンアップする]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean
-[キャッシュを無効にする]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-en
+[キャッシュをクリーンアップする]: ../configuration/cli/manage-cache.md#clean-and-flush-cache-types
+[キャッシュを無効にする]: ../configuration/cli/manage-cache.md#enable-or-disable-cache-types

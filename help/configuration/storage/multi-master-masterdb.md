@@ -1,9 +1,9 @@
 ---
 title: マスターデータベースを自動的に構成する
 description: 分割データベースソリューションの自動設定に関するガイダンスを参照してください。
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '358'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## Adobe Commerceソフトウェアのインストール
 
-Adobe Commerceソフトウェアをインストールした後は、いつでも分割データベースを有効にすることができます。つまり、チェックアウトデータと注文データが既に存在するAdobe Commerceシステムに、分割データベースを追加することができます。 Adobe Commerce README または [インストールガイド](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html) をクリックし、1 つのマスターデータベースを使用してAdobe Commerceソフトウェアをインストールします。
+Adobe Commerceソフトウェアをインストールした後は、いつでも分割データベースを有効にすることができます。つまり、チェックアウトデータと注文データが既に存在するAdobe Commerceシステムに、分割データベースを追加することができます。 Adobe Commerce README または [インストールガイド](../../installation/overview.md) をクリックし、1 つのマスターデータベースを使用してAdobe Commerceソフトウェアをインストールします。
 
 ## 追加のマスターデータベースを設定する
 

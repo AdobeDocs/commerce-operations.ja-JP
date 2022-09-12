@@ -1,9 +1,9 @@
 ---
 title: のインストール [!DNL Data Migration Tool]
 description: をインストールする方法を説明します。 [!DNL Data Migration Tool] Magento1 とMagento2 の間でデータを転送する。
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -45,10 +45,10 @@ cd <your Magento 2 clone directory>
 git branch
 ```
 
-現在、 `develop` ブランチの場合は、 <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/dev_downgrade.html">解放枝</a> 続行する前に
+現在、 `develop` ブランチの場合は、 [解放枝](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) 続行する前に
 
-まだMagento・ソフトウェアをインストールしていない場合は、 [今すぐインストール](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html).
-GitHub リポジトリのクローンを作成する場合は、リリースタグを確認してください ( [（寄稿者）Magentoリポジトリの複製](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/dev_install.html).
+Adobe CommerceまたはMagento Open Sourceソフトウェアをまだインストールしていない場合は、 [今すぐインストール](../../installation/prerequisites/commerce.md).
+GitHub リポジトリのクローンを作成する場合は、リリースタグを確認してください ( [(Contributor)GitHub リポジトリのクローン](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
 
 ## のリリースバージョンの検索 [!DNL Data Migration Tool]
 
@@ -70,8 +70,8 @@ GitHub リポジトリのクローンを作成する場合は、リリースタ�
 
 をインストールするには、以下を実行します。 [!DNL Data Migration Tool]を更新する必要があります `composer.json` をMagentoのルートインストールディレクトリに追加し、 [!DNL Data Migration Tool] パッケージ。
 
-1. Magentoサーバーに、 [ファイルシステム所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Magento2 のルートディレクトリに変更します。
+1. アプリケーションサーバーに、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
+1. アプリケーションのルートディレクトリに移動します。
 1. 次のコマンドを入力します。
 
    ```bash
@@ -94,14 +94,14 @@ GitHub リポジトリのクローンを作成する場合は、リリースタ�
    composer require magento/data-migration-tool:2.2.0
    ```
 
-1. プロンプトが表示されたら、 [認証キー](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html). 公開鍵はユーザ名です。秘密鍵はパスワードです。
+1. プロンプトが表示されたら、 [認証キー](../../installation/prerequisites/authentication-keys.md). 公開鍵はユーザ名です。秘密鍵はパスワードです。
 
 ### GitHub からのインストール
 
-GitHub リポジトリからMagento2 を複製した場合は、次の手順に従って [!DNL Data Migration Tool].
+GitHub リポジトリを複製した場合は、次の手順に従って、 [!DNL Data Migration Tool].
 
-1. Magentoサーバーに、 [ファイルシステム所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Magento2 のルートディレクトリに変更します。
+1. アプリケーションサーバーに、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
+1. アプリケーションのルートディレクトリに移動します。
 1. 次のコマンドを入力します。
 
    ```bash

@@ -1,9 +1,9 @@
 ---
 title: 変更を移行
 description: を使用して、前回のMagento1 のデータ移行以降に変更されたデータのみを移行する方法を説明します。 [!DNL Data Migration Tool].
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,8 @@ ht-degree: 0%
 
 開始する前に、次の手順に従って準備を行います。
 
-1. としてMagentoサーバーにログイン [ファイルシステムの所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Magento `/bin` ディレクトリに追加するか、システムの PATH に追加されていることを確認します。
+1. アプリケーションサーバーに次のようにログインします。 [ファイルシステムの所有者](../../../installation/prerequisites/file-system/overview.md).
+1. を `/bin` ディレクトリに追加するか、システムに追加されていることを確認します。 `PATH`.
 
 詳しくは、 [最初の手順](overview.md#first-steps) 」の節を参照してください。
 

@@ -1,9 +1,9 @@
 ---
 title: ファイルシステムのアクセス権限
 description: 開発および実稼動システム用にコマースアプリケーションファイルシステムの所有者または所有者を設定する方法を参照してください。
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # ファイルシステムのアクセス権限
 
-このセクションでは、開発および本番システム用にコマースファイルシステムの所有者または所有者を設定する方法について説明します。 続行する前に、 [ファイル・システムの所有権と権限の概要](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+このセクションでは、開発および本番システム用にコマースファイルシステムの所有者または所有者を設定する方法について説明します。 続行する前に、 [ファイル・システムの所有権と権限の概要](../../installation/prerequisites/file-system/overview.md).
 
-ここでは、コマースの開発と実稼動システムに焦点を当てます。 Commerce をインストールする場合は、 [プリインストールの所有権と権限を設定](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+ここでは、コマースの開発と実稼動システムに焦点を当てます。 Commerce をインストールする場合は、 [プリインストールの所有権と権限を設定](../../installation/prerequisites/file-system/configure-permissions.md).
 
 以降のセクションでは、1 つまたは 2 つのファイル・システム・オーナーの要件について説明します。 つまり、
 
@@ -103,7 +103,7 @@ Web サーバーのユーザーのグループからファイルおよびディ�
 
 ### オプションで設定 `magento_umask`
 
-詳しくは、 [オプションで umask を設定](https://devdocs.magento.com/guides/v2.4/install-gde/install/post-install-umask.html) 内 _インストールガイド_.
+詳しくは、 [オプションで umask を設定](../../installation/next-steps/set-umask.md) 内 _インストールガイド_.
 
 ## プライベート・ホスティングの本番ファイル・システムの所有権（2 人のユーザー）
 
@@ -121,7 +121,7 @@ Web サーバーのユーザーのグループからファイルおよびディ�
    >
    >コマンドラインユーザーは、 _ファイルシステム所有者_.
 
-これらのユーザーは同じファイルにアクセスする必要があるので、 [共有グループ](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html#mage-owner-about-group) 彼らが属する 以下の手順は、既に実行済みであることを前提としています。
+これらのユーザーは同じファイルにアクセスする必要があるので、 [共有グループ](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) 彼らが属する 以下の手順は、既に実行済みであることを前提としています。
 
 次のセクションのいずれかを参照してください。
 

@@ -1,9 +1,9 @@
 ---
 title: 概要
 description: Adobe CommerceまたはMagento Open Sourceのデプロイメントのパフォーマンスを最適化するには、次のベストプラクティスに従います。
-source-git-commit: 4baa58b440eab0d33a86388198670292a4119381
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---
@@ -15,5 +15,5 @@ ht-degree: 0%
 
 ## 前提
 
-* を使用してAdobe CommerceまたはMagento Open Sourceをインストールした [コンポーザー](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html).
+* を使用してAdobe CommerceまたはMagento Open Sourceをインストールした [コンポーザー](../installation/composer.md).
 * このインストールを使用して、Adobe CommerceまたはMagento Open Sourceの実稼動インスタンスを実行します。
