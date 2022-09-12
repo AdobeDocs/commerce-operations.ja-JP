@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;home;popular topics
 title: ホーム
 description: Adobe Commerceの運用製品ドキュメントのインデックスを参照します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 64e697a357e10005d02abeca13bd09c8a823bc00
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '155'
 ht-degree: 2%
 
 ---
@@ -42,10 +42,10 @@ Adobe CommerceおよびMagento Open Sourceプラットフォームにデプロ�
   </td>
   <td valign="top">
     <a href="../tools/data-migration-tool/how-migration-works.md">
-      <img alt="移行" src="../assets/icons/move-to.svg" width="40" height="40"/>
+      <img alt="データ移行" src="../assets/icons/move-to.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>移行</strong></a>
+      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>データ移行</strong></a>
     </div>
   </td>
 </tr>
@@ -117,6 +117,5 @@ Adobe CommerceおよびMagento Open Sourceプラットフォームにデプロ�
 
 | 変更 | タイプ |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 追加済み [情報](../upgrade/upgrade-compatibility-tool/overview.md) アップグレード互換性ツールのルールの定義方法について | 大幅な更新 |
-| 古いアップグレード互換性ツールを削除しました [エラーコード](../upgrade/upgrade-compatibility-tool/error-messages.md). | 技術 |
-| 移動済み [サイト全体分析ツールガイド](../tools/site-wide-analysis-tool/intro.md) から [devdocs.magento.com](https://devdocs.magento.com/tools/site-wide-analysis.html) Experience Leagueに | 新規 |
+| を移動しました。 [オンプレミスインストールガイド](../installation/overview.md) から [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) Experience Leagueに | 新規 |
+| を移動しました。 [データ移行ガイド](../tools/data-migration-tool/how-migration-works.md) から [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html) Experience Leagueに | 新規 |
