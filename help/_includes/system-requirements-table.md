@@ -1,8 +1,8 @@
 ---
-source-git-commit: 34c7fca1ee676f1eb96256c55121771370702410
+source-git-commit: ec60f7f2baecbdfe40971d17abe61aa52e30d1bd
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 65%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 # 必要システム構成
@@ -644,4 +644,4 @@ ht-degree: 65%
 
 >[!NOTE]
 >
->クラウドインフラストラクチャ上のAdobe CommerceのElasticsearchバージョンのサポートと互換性は、クラウドインフラストラクチャ上にデプロイされたサービスバージョンによって決まり、まれにAdobe Commerceオンプレミスデプロイメントでサポートされるバージョンと異なる場合があります。
+>クラウドインフラストラクチャ上のAdobe Commerceのサービスバージョンと互換性のサポートは、クラウドインフラストラクチャ上にデプロイされたバージョンによって決まり、Adobe Commerceオンプレミスデプロイメントでサポートされるバージョンとは異なる場合があります。 クラウドインフラストラクチャ上のAdobe Commerceにデプロイされた、サポートされるソフトウェアとサービスについて詳しくは、 [サポートされるソフトウェアとサービス](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-arch-software).
