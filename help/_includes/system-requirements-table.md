@@ -1,8 +1,8 @@
 ---
-source-git-commit: ec60f7f2baecbdfe40971d17abe61aa52e30d1bd
+source-git-commit: b86cd1ee5a46917e383d79c6b5fa4194691dd6d2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '236'
+ht-degree: 63%
 
 ---
 # 必要システム構成
@@ -642,6 +642,6 @@ ht-degree: 0%
   </tbody>
 </table>
 
->[!NOTE]
+>[!IMPORTANT]
 >
->クラウドインフラストラクチャ上のAdobe Commerceのサービスバージョンと互換性のサポートは、クラウドインフラストラクチャ上にデプロイされたバージョンによって決まり、Adobe Commerceオンプレミスデプロイメントでサポートされるバージョンとは異なる場合があります。 クラウドインフラストラクチャ上のAdobe Commerceにデプロイされた、サポートされるソフトウェアとサービスについて詳しくは、 [サポートされるソフトウェアとサービス](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-arch-software).
+>クラウドインフラストラクチャ上のAdobe Commerceのサービスバージョンと互換性のサポートは、クラウドインフラストラクチャ上にデプロイされたバージョンによって決まり、Adobe Commerceオンプレミスデプロイメントでサポートされるバージョンとは異なる場合があります。 詳しくは、 [サポートされるソフトウェアとサービス](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-arch-software) 内 _クラウドガイド_.
