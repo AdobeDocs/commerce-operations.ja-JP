@@ -1,9 +1,9 @@
 ---
 title: 前提条件
 description: 前提条件の手順を完了して、Adobe CommerceまたはMagento Open Sourceプロジェクトのアップグレードを準備します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -97,12 +97,8 @@ Adobeでは、開くファイルを設定することをお勧めします [制�
 1. 制限をに設定します。 `65536`.
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
-
-   >[!NOTE]
-   >
-   > オープンファイルの ulimit の構文は、使用する UNIX シェルによって異なります。 上記の設定は、Bash シェルで CentOS および Ubuntu で動作します。 ただし、Mac OS の場合、正しい設定は ulimit -S 65532です。 詳細は、のマニュアルページまたはオペレーティングシステムのリファレンスを参照してください。
 
 Bash シェルに値を設定するには、次の手順を実行します。
 
@@ -111,7 +107,7 @@ Bash シェルに値を設定するには、次の手順を実行します。
 1. 次の行を追加します。
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
 
 1. 変更を `.bashrc` ファイルを開き、テキストエディタを終了します。
