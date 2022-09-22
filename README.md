@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5a950079e8b445ef363217c085da92f0991a3a7f
+source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '538'
 ht-degree: 5%
 
 ---
@@ -62,7 +62,7 @@ Adobe Experience Cloudソリューションの製品チーム、プログラム�
 ## テンプレート
 
 この `_jekyll` ディレクトリには、テンプレート化されたトピックと必要なアセットが含まれています。
-Liquid テンプレート言語を使用するテンプレートは、 `_jekyll` ディレクトリをHTMLファイルとして。
+Liquid テンプレート言語を使用するテンプレートは、 `_jekyll/templated` ディレクトリをHTMLファイルとして。
 この `_jekyll/_data` ディレクトリには、テンプレートのレンダリングに使用されるデータを含むファイルが含まれます。
 
 すべてのテンプレートをレンダリングするには：
@@ -80,7 +80,6 @@ _scripts/render
 > **注意：** スクリプトを `_jekyll` ディレクトリ。
 > **注意：** このスクリプトを実行するには、Ruby がインストールされている必要があります。
 
-スクリプトはレンダリングを実行し、レンダリングされたファイルを `_jekyll/_rendered` ディレクトリをHTML・ファイルとしてコピーし、 `help/_includes` ディレクトリ： `.md` ファイル。
-
+スクリプトはレンダリングを実行し、レンダリングされたテンプレートを `help/_includes/templated` ディレクトリ。
 
 詳しくは、ジキルのドキュメントを参照してください。 [データファイル](https://jekyllrb.com/docs/datafiles, [液体フィルター](https://jekyllrb.com/docs/liquid/filters/)、およびその他の機能。

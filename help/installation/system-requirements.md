@@ -1,7 +1,7 @@
 ---
 title: 必要システム構成
 description: このリファレンスを使用して、Adobe CommerceとMagento Open Sourceのリリースでテストされた、必要なソフトウェアの依存関係を特定します。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 例えば、2.4.3 は MariaDB 10.4 で完全にテストされています。Adobeでは、2.4.3 にアップグレードする前に MariaDB 10.4 にアップグレードすることをお勧めします。
 
-{{$include /help/_includes/system-requirements-table.md}}
+{{$include /help/_includes/templated/system-requirements-table.md}}
 
 ## その他
 
