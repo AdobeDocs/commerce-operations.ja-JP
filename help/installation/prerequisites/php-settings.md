@@ -1,7 +1,7 @@
 ---
 title: PHP 設定
 description: 以下の手順に従って、必要な PHP 拡張をインストールし、Adobe CommerceとMagento Open Sourceのオンプレミスインストールに必要な PHP 設定を構成します。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: df8240b71efe992bc1c0655aa30c32778297a3c6
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 0%
@@ -42,7 +42,7 @@ CentOS では、 [追加の手順が必要になる場合があります](https:
 
 Adobe CommerceとMagento Open Sourceには、一連の拡張機能をインストールする必要があります。
 
-{{$include /help/_includes/php-extensions.md}}
+{{$include /help/_includes/templated/php-extensions.md}}
 
 インストールされている拡張機能を検証するには：
 

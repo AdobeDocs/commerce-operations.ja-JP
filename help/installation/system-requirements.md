@@ -1,7 +1,7 @@
 ---
 title: 必要システム構成
 description: このリファレンスを使用して、Adobe CommerceとMagento Open Sourceのリリースでテストされた、必要なソフトウェアの依存関係を特定します。
-source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
+source-git-commit: df8240b71efe992bc1c0655aa30c32778297a3c6
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -39,7 +39,7 @@ RedHat Enterprise Linux(RHEL)、CentOS、Ubuntu、Debian などの Linux ディ�
 >
 >この [PHP のインストール手順](prerequisites/php-settings.md) には、これらの拡張機能をインストールする手順が含まれています。
 
-{{$include /help/_includes/php-extensions.md}}
+{{$include /help/_includes/templated/php-extensions.md}}
 
 参照： [公式の PHP ドキュメント](https://php.net/manual/en/extensions.php) インストールの詳細については、を参照してください。
 
