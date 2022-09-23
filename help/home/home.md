@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;home;popular topics
 title: ホーム
 description: Adobe Commerceの運用製品ドキュメントのインデックスを参照します。
-source-git-commit: 64e697a357e10005d02abeca13bd09c8a823bc00
+source-git-commit: 8605fa5c791a48c112efa997b14d7bffe5f3028c
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '162'
 ht-degree: 2%
 
 ---
@@ -59,11 +59,11 @@ Adobe CommerceおよびMagento Open Sourceプラットフォームにデプロ�
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html">
        <img alt="コマンドラインツールリファレンス" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html"><strong>コマンドラインツールリファレンス</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>コマンドラインツールリファレンス</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -117,5 +117,6 @@ Adobe CommerceおよびMagento Open Sourceプラットフォームにデプロ�
 
 | 変更 | タイプ |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| を移動しました。 [オンプレミスインストールガイド](../installation/overview.md) から [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) Experience Leagueに | 新規 |
-| を移動しました。 [データ移行ガイド](../tools/data-migration-tool/how-migration-works.md) から [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html) Experience Leagueに | 新規 |
+| を移動しました。 [コマンドラインツールリファレンス](../reference/commerce.md) から [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html). | 新規 |
+| を移動しました。 [オンプレミスインストールガイド](../installation/overview.md) から [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html). | 新規 |
+| を移動しました。 [データ移行ガイド](../tools/data-migration-tool/how-migration-works.md) から [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html). | 新規 |
