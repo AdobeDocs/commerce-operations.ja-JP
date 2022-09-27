@@ -1,7 +1,7 @@
 ---
 title: Vanish の設定と使用
 description: Vanish がファイルを保存し、HTTP トラフィックを改善する方法を理解します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Vanish キャッシュは、次を使用して Commerce で機能します。
 
 - [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) Magento2 GitHub リポジトリから
 - `.htaccess` Commerce で提供される Apache 用の分散設定ファイル
-- `default.vcl` 次を使用して生成される Vanrish の設定 [管理者](../cache/config-varnish-magento.md)
+- `default.vcl` 次を使用して生成される Vanrish の設定 [管理者](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
 このトピックでは、前の一覧の既定のオプションのみを扱います。 複雑なシナリオでキャッシュを設定する方法は他にも多数あります（例えば、コンテンツ配信ネットワークを使用）。これらの方法は、このガイドの範囲外です。

@@ -1,7 +1,7 @@
 ---
 title: 高度なワニス構成
 description: ヘルスチェック、猶予、SAINT モードなど、高度な Vanrish 機能を設定します。
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Commerce では、次のデフォルトのヘルスチェックが定義され�
 
 ### Commerce バックエンドが正常な場合
 
-ヘルスチェックがコマースバックエンドが正常であると判断した場合、Vanrish は猶予期間に残っている時間を確認します。 デフォルトの猶予期間は 300 秒ですが、マーチャントは [管理者](https://glossary.magento.com/admin) の説明に従って、 [Vanish を使用するように Commerce を設定](config-varnish-magento.md). 猶予期間が期限切れになっていない場合、Vanrish は古いコンテンツを配信し、Commerce サーバーからオブジェクトを非同期的に更新します。 猶予期間が終了した場合、Vanrish は古いコンテンツを提供し、Commerce バックエンドからオブジェクトを同期的に更新します。
+ヘルスチェックがコマースバックエンドが正常であると判断した場合、Vanrish は猶予期間に残っている時間を確認します。 デフォルトの猶予期間は 300 秒ですが、マーチャントは [管理者](https://glossary.magento.com/admin) の説明に従って、 [Vanish を使用するように Commerce を設定](configure-varnish-commerce.md). 猶予期間が期限切れになっていない場合、Vanrish は古いコンテンツを配信し、Commerce サーバーからオブジェクトを非同期的に更新します。 猶予期間が終了した場合、Vanrish は古いコンテンツを提供し、Commerce バックエンドからオブジェクトを同期的に更新します。
 
 Vanish が古いオブジェクトを提供する最大時間は、猶予期間（デフォルトでは 300 秒）と TTL 値 ( デフォルトでは86400秒 ) の合計です。
 

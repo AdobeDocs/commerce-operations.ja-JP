@@ -1,7 +1,7 @@
 ---
 user-guide-title: 設定ガイド
 user-guide-description: Adobe CommerceまたはMagento Open Sourceアプリケーションの機能とサービスを設定します。
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d451ea025a6f4fc8a4a9f15ca83896a63058a3a0
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -44,7 +44,7 @@ ht-degree: 0%
       - [ワニスの概要](cache/config-varnish.md)
       - [ワニスを取り付ける](cache/config-varnish-install.md)
       - [Web サーバー](cache/config-varnish-server.md)
-      - [Commerce アプリケーションの設定](cache/config-varnish-magento.md)
+      - [Commerce アプリケーションの設定](cache/configure-varnish-commerce.md)
       - [高度なワニス構成](cache/config-varnish-advanced.md)
       - [キャッシュの消去](cache/use-varnish-cache.md)
       - [複数の Vanrish インスタンスをキャッシュクリアする](cache/use-multiple-varnish-cache.md)
