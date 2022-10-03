@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;home;popular topics
 title: ホーム
 description: Adobe Commerceの運用製品ドキュメントのインデックスを参照します。
-source-git-commit: 8605fa5c791a48c112efa997b14d7bffe5f3028c
+source-git-commit: e247b0bd2765e425da033f32ab99f79cfe6cc0b2
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,11 +17,11 @@ Adobe CommerceおよびMagento Open Sourceプラットフォームにデプロ�
 <table>
 <tr>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">
       <img alt="リリース情報" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html"><strong>リリース情報</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>リリース情報</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -117,6 +117,7 @@ Adobe CommerceおよびMagento Open Sourceプラットフォームにデプロ�
 
 | 変更 | タイプ |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| を移動しました。 [リリース情報ガイド](../release/roadmap.md) から [devdocs.magento.com](https://devdocs.magento.com/release/versions.html). | 新規 |
 | を移動しました。 [コマンドラインツールリファレンス](../reference/commerce.md) から [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html). | 新規 |
 | を移動しました。 [オンプレミスインストールガイド](../installation/overview.md) から [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html). | 新規 |
 | を移動しました。 [データ移行ガイド](../tools/data-migration-tool/how-migration-works.md) から [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html). | 新規 |
