@@ -1,7 +1,7 @@
 ---
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
-source-git-commit: ead062ac2f5dbf07293aef2a5a5d9f1f21255402
+source-git-commit: ea89232bba442add673a0024753f7a5dfdc8d1f8
 workflow-type: tm+mt
 source-wordcount: '9233'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->詳しくは、 [パッチの適用](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) を参照してください。 詳しくは、 [利用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) リリース済みのパッチの完全なリストを確認するには、『ソフトウェアアップデートガイド』を参照してください。
+>詳しくは、 [パッチの適用](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) を参照してください。 詳しくは、 [利用可能なパッチ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) リリース済みのパッチの完全なリストを確認するには、『ソフトウェアアップデートガイド』を参照してください。
 
 >[!INFO]
 >
@@ -542,4 +542,3 @@ ht-degree: 0%
 * **MDVA-30052** (*Adobe Commerceの場合 >=2.3.2-p2 &lt;2.3.5.5*) — プライベートコンテンツ（ローカルストレージ）が正しく入力されず、パフォーマンスの問題が発生していた問題を修正しました。
 * **MDVA-30131** (*Adobe Commerceの場合 >=2.3.4 &lt;2.3.6> || 2.4.0*) — レイヤーナビゲーションで、 *いいえ* ブール型製品属性の値は、階層型ナビゲーションに含まれません ( [!DNL Elasticsearch] は検索エンジンとして使用されました。
 * **MDVA-35514** (*Adobe Commerceの場合 >=2.4.0 &lt;2.4.1*) — 発送ラベルを作成し、パッケージの作成モーダルウィンドウで発注された製品をパッケージに追加する際の問題を修正しました。
-

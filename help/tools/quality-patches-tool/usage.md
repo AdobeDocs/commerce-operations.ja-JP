@@ -1,7 +1,7 @@
 ---
 title: 使用状況
 description: 使用方法 [!DNL Quality Patches Tool].
-source-git-commit: 83fa1c77dd6105f4c97f697fd6636773d94fb5ee
+source-git-commit: 7ce26f10b92632c077d37ae03d68594ba2444098
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 0%
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 
 >[!INFO]
-> 
->詳しくは、 [個々のパッチの適用](#apply-individual-patches) を参照してください。 詳しくは、 [利用可能なパッチ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) リリース済みのパッチの完全なリストを確認する。
+>
+>詳しくは、 [個々のパッチの適用](#apply-individual-patches) を参照してください。 詳しくは、 [利用可能なパッチ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) リリース済みのパッチの完全なリストを確認する。
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ ht-degree: 0%
 ## インストール
 
 >[!INFO]
-> 
+>
 >まだインストールされていない場合は、 [[!DNL Git]](https://github.com/git-guides/install-git) または [パッチ](https://man7.org/linux/man-pages/man1/patch.1.html) インストール前 [!DNL Quality Patches Tool]. を `magento/quality-patches` Composer パッケージを `composer.json` ファイル：
 
 ```bash
@@ -72,7 +72,7 @@ Adobe Commerce 2.3.5。
    - `Recommended replacement`  — 非推奨のパッチに対する推奨の置き換えであるパッチ。
 
 >[!INFO]
-> 
+>
 >Adobe CommerceまたはMagento Open Sourceの新しいバージョンにアップグレードした後、そのパッチが新しいバージョンに含まれていない場合は、パッチを再適用する必要があります。 詳しくは、 [アップグレード後にパッチを再適用](#re-apply-patches-after-an-upgrade).
 
 ## 個々のパッチの適用 {#apply-individual-patches}
