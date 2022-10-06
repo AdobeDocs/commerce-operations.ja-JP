@@ -1,9 +1,9 @@
 ---
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
-source-git-commit: ea89232bba442add673a0024753f7a5dfdc8d1f8
+source-git-commit: bb1cb17b75a799409336068967c9d0facefeaf41
 workflow-type: tm+mt
-source-wordcount: '9233'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,21 @@ ht-degree: 0%
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.21 {#v1-1-21}
+
+* **ACSD-46809** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.6) — 多数の製品ソースを割り当てるとエラーが発生する問題を修正しました。
+* **ACSD-46856** (Adobe CommerceおよびMagento Open Source>=2.4.0 &lt;2.4.6) - [ システム ] > [ 構成 ] > [ インポート ] > [ アドバンスドプライシング ] から、パフォーマンス更新階層の価格を向上させます。
+* **ACSD-46541** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.4.4) — 注文項目が削除された場合に管理者ユーザーがクレジットメモを作成できない問題を修正しました。
+* **ACSD-46581** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) — 買い物かごの国を選択した後も推定税額が更新されない問題を修正しました。
+* **ACSD-46618** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) — 製品リストウィジェットがログインしている顧客に対してキャッシュされた価格を正しく表示しない問題を修正しました。
+* **ACSD-46674** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) — 画像タイプのカスタムオプションが顧客の電子メールにHTMLとして表示される問題を修正しました。
+* **ACSD-46988** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.6) - GraphQL「currency」API リクエストがカスタム通貨の NULL 値を返す問題を修正しました。
+* **ACSD-47076** (Adobe CommerceとMagento Open Source>=2.4.1 &lt;2.4.5) — ストアフロントで Vimeo ビデオを再生できない問題を修正しました。
+* **ACSD-45071** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.4.4) — 読み込み時にデフォルトのソースが製品に追加される問題を修正しました。
+* **AC-3023** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) - DHL スキームを最新バージョン 10.0 に更新します。
+* 更新済みのパッチ：MDVA-42584.
+* 交換済みのパッチ：ACSD-45241、MDVA-36572。
 
 ## v1.1.20 {#v1-1-20}
 
