@@ -1,9 +1,9 @@
 ---
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
-source-git-commit: 3914a9bb185a18fa80497630f8a6e09b58bdec22
+source-git-commit: 5e8e2730a0cc30997365bd70c4409e0eb8923dfb
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 0%
    - [「赤」タブ](observation-for-adobe-commerce/redis-tab.md)
    - [「 MySQL 」タブ](observation-for-adobe-commerce/mysql-tab.md)
    - [「PHP」タブ](observation-for-adobe-commerce/php-tab.md)
+   - [「ボット」タブ](observation-for-adobe-commerce/bots.md)
    - [「デプロイ」タブ](observation-for-adobe-commerce/deploy-tab.md)
    - [「アラート」タブ](observation-for-adobe-commerce/alerts-tab.md)
    - [「WAF」タブ](observation-for-adobe-commerce/waf-tab.md)
