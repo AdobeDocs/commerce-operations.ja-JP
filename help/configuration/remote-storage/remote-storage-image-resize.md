@@ -1,24 +1,28 @@
 ---
 title: リモートストレージの画像のサイズ変更を設定
 description: サーバー側の画像のサイズ変更を設定して、ディスクリソースを最適化します。
-source-git-commit: 96fe0c5eeaa029347c829c39547ee5e473c8d04d
+source-git-commit: 7fc5d561baa3c2a4aab160a35a1c8a302a62a3b1
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '247'
 ht-degree: 1%
 
 ---
 
 # リモートストレージの画像のサイズ変更を設定
 
-デフォルトでは、 [!DNL Commerce] は、アプリケーション側での画像のサイズ変更をサポートします。 ただし、リモート・ストレージ・モジュールを有効にすると、Nginx を使用してイメージのサイズ変更をサーバ側にオフロードし、ディスク・リソースを節約し、ディスク使用量を最適化できます。
+デフォルトでは、Adobe Commerceはアプリケーション側での画像のサイズ変更をサポートしています。 ただし、リモート・ストレージ・モジュールを有効にすると、Nginx を使用してイメージのサイズ変更をサーバ側にオフロードし、ディスク・リソースを節約し、ディスク使用量を最適化できます。
 
 次の図は、Nginx が画像を取得し、サイズ変更し、キャッシュに保存する方法を示しています。 サイズ変更は、高さや幅など、URL に含まれるパラメーターによって決まります。
 
 ![画像のサイズ変更](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
-## での URL フォーマットの設定 [!DNL Commerce]
+>[!TIP]
+>
+>Adobe Commerce on cloud infrastructure プロジェクトについては、 [クラウドインフラストラクチャ上のコマース用のリモートストレージの設定](cloud-support.md)
 
-サーバー側で画像のサイズを変更するには、画像の高さ、幅、場所 (URL) の引数を指定するように Commerce を設定する必要があります。
+## Adobe Commerceでの URL 形式の設定
+
+サーバー側で画像のサイズを変更するには、Adobe Commerceを設定して、画像の高さ、幅、場所 (URL) の引数を指定する必要があります。
 
 **サーバー側の画像のサイズ変更用に Commerce を設定するには**:
 
