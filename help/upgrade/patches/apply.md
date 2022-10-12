@@ -1,9 +1,9 @@
 ---
 title: パッチの適用
 description: Adobe CommerceまたはMagento Open Sourceプロジェクトにパッチを適用する方法について説明します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 次のいずれかの方法でパッチを適用できます。
 
-- [品質パッチツール](https://devdocs.magento.com/quality-patches/tool.html)
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
 - [コマンドライン](../patches/apply.md#command-line)
 - [コンポーザー](../patches/apply.md#composer)
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->公式の品質パッチを適用するには、 [品質パッチツール](https://devdocs.magento.com/quality-patches/tool.html). カスタムパッチをデプロイする前に、必ず包括的なテストを実行してください。
+>公式の品質パッチを適用するには、 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}。 カスタムパッチをデプロイする前に、必ず包括的なテストを実行してください。
 
 Composer を使用してカスタムパッチを適用するには：
 

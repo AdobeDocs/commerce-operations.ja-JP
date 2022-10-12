@@ -1,7 +1,7 @@
 ---
 title: パッチの動作
 description: Adobe CommerceおよびMagento Open Source用の様々なタイプのパッチとその動作について説明します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 1a18a445cb104420dd9b853b7c4d42ce3bddf2ac
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 0%
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 個々のパッチには、特定の問題に対する影響の低い品質の修正が含まれています。 これらの修正は、最も新しくサポートされたマイナーバージョン（2.4.x など）に適用されますが、以前のサポートされたマイナーバージョン（2.3.x など）には適用されません。 Adobeは、必要に応じて個々のパッチをリリースします。
 
-以下を使用： [品質パッチツール](https://devdocs.magento.com/quality-patches/tool.html) 個々のパッチを適用する場合。
+以下を使用： [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)個々のパッチを適用する場合は、{target=&quot;_blank&quot;}。
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ index c8a6fef58d31..7d01c195791e 100644
              clearTimeout: function () {
                  clearTimeout(this.timeoutId);
 +                this.fail();
- 
+
                  return this;
              },
 ```
@@ -90,7 +90,7 @@ index c8a6fef58d31..7d01c195791e 100644
 
 次のいずれかの方法でパッチを適用できます。
 
-- [品質パッチツール](https://devdocs.magento.com/quality-patches/tool.html)
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
 - [コマンドライン](/help/upgrade/patches/apply.md#command-line)
 - [コンポーザー](/help/upgrade/patches/apply.md#composer)
 
