@@ -1,7 +1,7 @@
 ---
 title: カリフォルニア州消費者プライバシー法 (CCPA)
 description: カリフォルニア州消費者プライバシー法 (CCPA) について説明します。CCPA は、カリフォルニア州の消費者の個人情報を収集、保存および使用する方法を決定するための権利を拡張します。
-source-git-commit: 495dfd515759e4df507479de57118586eac14fda
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
@@ -24,7 +24,7 @@ CCPA は、消費者に次の新しい権限を付与します。
 - **オプトアウトする権限** 個人情報の販売に関する
 - **非差別権** CCPA の下でプライバシー権を行使した価格又はサービスに関して
 
-## CCPA 準拠ガイド
+## CCPA への準拠
 
 CCPA 準拠計画の策定と実装には、調整された作業が必要です。 マーチャントに対し、部門をまたいだチームを組み立て、 [CCPA 準拠ガイド](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) 会社を規制に準拠させる 開発者は、プロセスの手順 2 ～ 5 を重視して、関係者に招待される場合があります。 詳しくは、 [CCPA 準拠ガイド](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) を参照してください。
 
@@ -48,5 +48,5 @@ CCPA 準拠計画の策定と実装には、調整された作業が必要です
 
 技術情報については、サポートするAdobe CommerceまたはMagento Open Sourceの各バージョンに適用される個人情報リファレンスのデータフロー図およびデータベースエンティティのマッピングを参照してください。
 
-- [個人情報リファレンス（バージョン 2.x）](data-m2.md)
-- [個人情報リファレンス（バージョン 1.x）](data-m1.md)
+- [お客様の個人情報に関するリファレンス（バージョン 2.x）](data-m2.md)
+- [お客様の個人情報に関するリファレンス（バージョン） 1.x](data-m1.md)
