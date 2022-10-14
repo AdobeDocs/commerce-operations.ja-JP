@@ -1,9 +1,9 @@
 ---
-title: 'ツール '
+title: ツール
 description: これらのツールを使用してAdobe Commerceストアを最適化します。
-source-git-commit: 630b840f7b2b762172bc085246bb3e3e7b10e7b9
+source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
-source-wordcount: '65'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,6 @@ ht-degree: 0%
 ## ガイドの内容
 
 * [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
-* [[!DNL Quality Patches Tool]](https://devdocs.magento.com/quality-patches/tool.html)
+* [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
 * [[!DNL Observation for Adobe Commerce]](../tools/observation-for-adobe-commerce/intro.md)
 * [[!DNL Data Migration Tool]](data-migration-tool/how-migration-works.md)

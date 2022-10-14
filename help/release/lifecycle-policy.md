@@ -1,7 +1,7 @@
 ---
 title: ソフトウェアライフサイクルポリシー
 description: Adobe Commerceリリースのソフトウェアサポート終了の主な日付について説明します。
-source-git-commit: 79f36e3728e6bc436e8093bd4051143a48e681d6
+source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 Adobe Commerce 2.4 以降のリリースの場合：
 
-- ライフサイクルポリシーをより効率的に行うため、Adobeは、PHP バージョンのサポート終了日までの 2.4 リリース行に対して、品質の修正を提供します。 お客様は、次の連絡先に問い合わせて品質の修正にアクセスできます [Adobe Commerceサポート](https://developer.adobe.com/commerce/contributor/community/support/) または自己奉仕を通じて [品質パッチツール](https://devdocs.magento.com/quality-patches/tool.html) もし、そのバージョンが品質サポートの対象となる場合に限ります。 Adobe Commerceのリリースラインのソフトウェアサポート終了日については、次の表を参照してください。
+- ライフサイクルポリシーをより効率的に行うため、Adobeは、PHP バージョンのサポート終了日までの 2.4 リリース行に対して、品質の修正を提供します。 お客様は、次の連絡先に問い合わせて品質の修正にアクセスできます [Adobe Commerceサポート](https://developer.adobe.com/commerce/contributor/community/support/) または自己奉仕を通じて [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;} を返します。 Adobe Commerceのリリースラインのソフトウェアサポート終了日については、次の表を参照してください。
 
 - Adobeは、最新のパッチまたはセキュリティパッチリリースを通じてのみセキュリティ修正を提供します。お客様のバージョンが品質サポートの対象となっている場合でも同様です。 品質の修正とは異なり、セキュリティ修正は、サポートされるマイナーリリース内の以前のマイナーリリースや以前のパッチリリースにバックポートできません。
 
