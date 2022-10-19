@@ -1,9 +1,9 @@
 ---
 title: リリーススケジュール
 description: 特定のバージョンのAdobe Commerceが、ベータ版、プレリリース版および一般リリースに対して予定されている場合について説明します。
-source-git-commit: c0609aef52f6c8c24a6ccb036b9d44bed9b3c597
+source-git-commit: 77ef9c276306700a9ff62795d05075e8731f5d5a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,8 @@ Adobeは、Adobe CommerceおよびMagento Open Sourceのサポート対象リリ
 | 2022 年 6 月<br>機能リリース | \-\- | \-\- | \-\- | 2022 年 6 月 22 日 |
 | 2022 年 8 月<br>機能+パッチリリース+セキュリティパッチリリース | 2.4.5<br>2.4.4-p1<br>2.4.3-p3<br>2.3.7-p4<sup>1</sup> | \-\- | 2022 年 7 月 27 日 | 2022 年 8 月 10 日 |
 | 2022 年 10 月<br>機能+セキュリティパッチリリース | 2.4.5-p1<sup>2</sup><br>2.4.4-p2 | \-\- | 2022 年 9 月 28 日 | 2022 年 10 月 11 日 |
+| 2023 年 1 月<br>機能リリース | \-\- | \-\- | \-\- | 2023 年 1 月 18 日 |
+| 2023 年 3 月<br>機能+パッチリリース+セキュリティパッチリリース | 2.4.6<br>2.4.5-p2<br>2.4.4-p3 | 2023 年 1 月 | 2023 年 2 月 29 日 | 2023 年 3 月 15 日 |
 
 <sup>\-\ — このリリースに適用されない項目を示します。</sup><br>
 <sup>1 これは、2.3.x リリース行の最後のパッチリリースです。 2.3.x のリリース行は、2022 年 9 月に End of Support(EOS) に達します。</sup><br>
@@ -32,10 +34,6 @@ Adobeは、Adobe CommerceおよびMagento Open Sourceのサポート対象リリ
 >[!TIP]
 >
 >パッチおよびセキュリティパッチリリースは、コアコードベースをアップグレードして、プラットフォームの安全、信頼性、パフォーマンスを維持する機会です。 機能リリースは、隔月におこなわれます。 機能リリースは、コアコードベースとは独立し、外部モジュールまたは拡張機能を通じて使用できます。 既存の独立した機能に対する更新は、機能リリースの間にリリースされ、機能が既に実装されている場合は自動的にはおこなわれません。
-
->[!NOTE]
->
->次の項目を導入しました： [新しいポリシー](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) これは、サポートされるリリースラインに適用されます。 2022 年リリースカレンダーおよびライフサイクルポリシーの背後にある新しい戦略の詳細については、 [ブログ](https://business.adobe.com/blog/how-to/accelerating-innovation-through-simplified-release-strategy).
 
 ## 早期アクセス
 
