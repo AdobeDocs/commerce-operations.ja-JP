@@ -1,17 +1,22 @@
 ---
-source-git-commit: d36beb2e963a28d7a98d61dab94ddc67cb2f40ab
+source-git-commit: 27779307682b7fb4f4abd597772a25700f6bf132
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1907'
 ht-degree: 0%
 
 ---
 # 互換性
 
+<!--This include content is automatically generated using the compatibility-mde.html
+template and the "_data/release/mde.yml" data file. To update the content,
+add new information to the data file. Follow the instructions in the README instructions to generate
+the updated content: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates-->
+
 **サポート** -Adobeで完全にテストされ、サポートされているバージョン。
 
-**互換**  — またはとの互換性が確認されたがサポートされていないバージョン。
+**互換** - Adobe CommerceまたはMagento Open Sourceとの互換性が確認されたがサポートされていないバージョン。
 
-**サポートなし**  — コマースまたはバージョンのリリースと互換性のないMagento。
+**サポートなし** - Adobe CommerceまたはMagento Open Sourceリリースと互換性のないバージョン。
 
 <table style="table-layout:auto">
   <thead>
@@ -815,6 +820,73 @@ ht-degree: 0%
       <td>互換</span>
       </td>
       <td>サポート</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="15">チャネルマネージャ</th>
+    </tr>
+    <tr>
+      <td>Channel Manager 1.1.0</td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Channel Manager 1.0.0</td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
       </td>
     </tr>
   </tbody>
