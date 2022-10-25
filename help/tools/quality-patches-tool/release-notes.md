@@ -1,9 +1,9 @@
 ---
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
-source-git-commit: bb1cb17b75a799409336068967c9d0facefeaf41
+source-git-commit: e9ba2d0ad8568c40335e8643ef0070d9e2bb9b3f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '9581'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,14 @@ ht-degree: 0%
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.22 {#v1-1-22}
+
+* **ACSD-47444** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.3) - _ブール型の値の配列オフセットにアクセスしようとしています_ PHP 7.4 の既知の製品に対して、存在しない特定のカテゴリパスにアクセスする際にエラーが発生しました。
+* **ACSD-47332** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) - 00:00 ～ 00:59 UTC の間で実行した場合にのみ報告されるエラーで cron が失敗する問題を修正しました。
+* **ACSD-47280** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) — 特定のスコープで共有カタログ機能を無効にしても正しく機能しない問題を修正しました。
+* **ACSD-47106** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.6) — 会社作成ページで値を新しいカスタム属性に保存できない問題を修正しました。
+* 更新されたパッチ：ACSD-45143。
 
 ## v1.1.21 {#v1-1-21}
 
