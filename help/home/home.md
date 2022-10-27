@@ -2,7 +2,7 @@
 keywords: Adobe Commerce;home;popular topics
 title: ホーム
 description: Adobe Commerceの運用製品ドキュメントのインデックスを参照します。
-source-git-commit: 441bbcf15901b9ca547780eb6f3a20efc8025d91
+source-git-commit: 80163ec1c40a19ea4eb138c3753b08daa231dc41
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 2%
@@ -126,4 +126,4 @@ Adobe CommerceおよびMagento Open Sourceプラットフォームにデプロ�
 | 変更 | タイプ |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
 | を移動しました。 [セキュリティおよびコンプライアンスガイド](../security-and-compliance/overview.md) から [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html). | 新規 |
-| を移動しました。 [リリース情報ガイド](../release/roadmap.md) から [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | 新規 |
+| を移動しました。 [リリース情報ガイド](../release/release-notes/overview.md) から [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | 新規 |

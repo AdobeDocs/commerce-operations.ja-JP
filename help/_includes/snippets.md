@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2c12c6ea6e7b6ffeb07bbda17ded34e39de6656a
+source-git-commit: 74cb55f4552bc1b2dace37d9a6f7e68939d1c262
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
@@ -40,3 +40,15 @@ ht-degree: 0%
 >データベース分割機能は次のとおりです。 [非推奨](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187?_ga=2.128934671.2024864496.1657558157-1596100530.1657558157) (Adobe Commerceのバージョン 2.4.2)。 詳しくは、 [分割データベースから単一のデータベースに戻す](/help/configuration/storage/revert-split-database.md).
 
 <!-- End of Configuration guide snippets -->
+
+## 後方互換性のない変更 {#bics}
+
+>[!NOTE]
+>
+>Adobe CommerceおよびMagento Open Sourceリリースには、後方互換性のない変更 (BIC) が含まれている場合があります。 後方互換性のない変更を確認するには、 [BIC リファレンス](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). 後方互換性のない主な問題については、 [BIC ハイライト](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). すべてのリリースでメジャー BIC が導入されているわけではありません。
+
+## CVE 通知 {#cve-notice}
+
+>[!NOTE]
+>
+>2.3.2 リリース以降、アドビは、外部の関係者から報告された各セキュリティバグと共に、インデックス付きの Common Velwability and Exposures(CVE) 番号を割り当てて公開します。 これにより、ユーザーは、デプロイメントにおける宛ててがない脆弱性をより簡単に識別できます。 CVE 識別子について詳しくは、 [CVE](https://cve.mitre.org/).
