@@ -2,7 +2,7 @@
 title: Adobe Commerce Global Reference Architecture
 description: グローバルリファレンスアーキテクチャを活用して、Adobe Commerceの実装を最大限に活用します。
 exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: f713e07b57705e8720c773f9f762a357c173e29d
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
@@ -10,6 +10,8 @@ ht-degree: 0%
 ---
 
 # グローバルリファレンスアーキテクチャ (GRA)
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410528/?quality=12&learn=on)
 
 複数のブランドに複数のサイトを持つ企業を複数の現地市場（通貨、言語、メディア、共有カタログ、ユニーク買い物かご）で運営し、同じ機能と統合を実装する際に不要なコストを避けたい場合は、グローバルリファレンスアーキテクチャ (GRA) が常に最適です。
 
