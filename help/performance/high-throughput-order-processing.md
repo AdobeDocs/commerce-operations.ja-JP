@@ -1,9 +1,9 @@
 ---
 title: 高スループットの注文処理
 description: Adobe CommerceまたはMagento Open Sourceのデプロイメントに合わせて、注文の配置とチェックアウトエクスペリエンスを最適化します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 45ffa6487d94feba3d6c2a6d5d938108b1fef91d
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ bin/magento setup:config:set --checkout-async 0
 AsyncOrder は、限られた [!DNL Commerce] 機能。
 
 | カテゴリ | サポートされる機能 |
-|---------------- | -----------------------|
+|------------------|--------------------------------------------------------------------------|
 | チェックアウトタイプ | OnePage チェックアウト<br>標準チェックアウト<br>B2B 交渉可能見積書 |
 | 支払い方法 | 小切手/送金<br>配送中の現金<br>Braintree<br>PayPal PayFlow Pro |
 | 発送方法 | すべての発送方法がサポートされています。 |
@@ -184,8 +184,8 @@ stage:
 
 <!-- link definitions -->
 
-[global]: https://docs.magento.com/user-guide/catalog/inventory-options-global.html
-[inventory]: https://docs.magento.com/user-guide/configuration/catalog/inventory.html
+[global]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/global-options.html
+[inventory]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html
 [mrg]: https://developer.adobe.com/commerce/php/module-reference/
 [AsyncOrder]: https://developer.adobe.com/commerce/php/module-reference/module-async-order/
 [DeferredTotalCalculting]: https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/
