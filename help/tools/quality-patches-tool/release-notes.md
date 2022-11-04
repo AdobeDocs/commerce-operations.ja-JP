@@ -1,9 +1,9 @@
 ---
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
-source-git-commit: e9ba2d0ad8568c40335e8643ef0070d9e2bb9b3f
+source-git-commit: 6d0b5515792afe33eab440290413b84d251796cc
 workflow-type: tm+mt
-source-wordcount: '9581'
+source-wordcount: '9752'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,18 @@ ht-degree: 0%
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.23 {#v1-1-23}
+
+* **ACSD-47179** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) — 特定の範囲へのアクセスが制限された管理者が製品レビューを削除できない問題を修正しました。
+* **ACSD-47107** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.5) — カタログ価格ルールの割引がカスタム製品オプションに適用される問題を修正しました。
+* **ACSD-47232** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) — 管理で合計重み付け条件を持つクーポンを適用できない問題を修正しました。
+* **ACSD-46519** (Adobe CommerceとMagento Open Source>=2.4.1 &lt;2.4.6) - GraphQL categoryList 要求がアンカーカテゴリに対して誤った product_count を返す問題を修正しました。
+* **ACSD-47027** (Adobe CommerceおよびMagento Open Source>=2.4.2 &lt;2.4.6) - updateCompanyRole GraphQL 要求が遅い問題を修正しました。
+* **ACSD-47666** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) — 管理者/システム/権限/ユーザーの役割/役割のユーザーグリッドでフィルター機能が動作しない問題を修正しました。
+* **ACSD-47497** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) — 管理者の下の設定で「サービス」タブが表示されない問題を修正しました。
+* 更新されたパッチ：ACSD-47743。
+* 交換済みのパッチ：MDVA-42807.
 
 ## v1.1.22 {#v1-1-22}
 
