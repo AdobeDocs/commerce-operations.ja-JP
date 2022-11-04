@@ -1,9 +1,9 @@
 ---
 title: インストールガイド
 description: このガイドを使用して、 [!DNL Site-Wide Analysis Tool] （Web サイト用）
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 434fb9eb9570f183d9bf9d4b56b8e56a69e8005d
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Adobe Commerceをオンプレミスでインストールしている場合、こ
 
 ## [!DNL Commerce Services Connector]
 
-エージェントには [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) お使いのシステムにインストールする拡張機能および [設定済み](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) と API キーを組み合わせました。 拡張機能がインストールされていることを確認するには、次のコマンドを実行します。
+エージェントには [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) お使いのシステムにインストールする拡張機能および [設定済み](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) と API キーを組み合わせました。 拡張機能がインストールされていることを確認するには、次のコマンドを実行します。
 
 ```bash
 bin/magento module:status Magento_ServicesConnector
@@ -83,7 +83,7 @@ bin/magento module:status Magento_ServicesConnector
 
 1. クリック **[!UICONTROL Delete]** をクリックします。
 
-1. [設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) 新しい API キー。
+1. [設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 新しい API キー。
 
 >[!IMPORTANT]
 >
@@ -109,7 +109,7 @@ bin/magento module:status Magento_ServicesConnector
    bin/magento setup:upgrade
    ```
 
-1. [API キーの設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) 拡張機能をシステムに接続する場合。
+1. [API キーの設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 拡張機能をシステムに接続する場合。
 
 ## エージェントのインストール
 

@@ -1,10 +1,10 @@
 ---
 title: Adobe CommerceとMagento Open Sourceのリリースノート
 description: 特定のAdobe CommerceおよびMagento Open Sourceリリースの情報の場所について説明します。
-source-git-commit: 3096f6820589fc7830d6439b4a76228ee47cd9d3
+source-git-commit: d63d1dd03cbf166f6fbce1df7113d1e861363f28
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 1%
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">支払いサービス</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">製品Recommendations</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html?lang=en">クイックチェックアウト</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">サービスコネクタ</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html">サービスコネクタ</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html?lang=en">ストアの達成</a></li>
           </ul>
         </td>
