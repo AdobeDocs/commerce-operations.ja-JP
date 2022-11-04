@@ -1,9 +1,9 @@
 ---
 title: サンプルデータ Git リポジトリーの複製
 description: Git リポジトリーを複製してAdobe CommerceおよびMagento Open Sourceサンプルデータをインストールするには、次の手順に従います。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -73,12 +73,10 @@ SSH プロトコルを使用してサンプルデータ GitHub リポジトリ�
 
    次の `2.4-develop` Magento Open SourceGitHub リポジトリのブランチ。Sample Data ブランチは、 `2.4-develop`.
 
-   次の `2.4.3` Magento Open SourceGitHub リポジトリのブランチ。Sample Data ブランチは、 `2.4.3`.
-
-   正しいブランチをチェックアウトするには、サンプルのデータリポジトリのルートディレクトリから次のコマンドを実行します ( 必要に応じて `2.4.3` ブランチ ):
+   正しいブランチをチェックアウトするには、サンプルのデータリポジトリのルートディレクトリから次のコマンドを実行します ( 必要に応じて `2.4-develop` ブランチ ):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. 置換文字列 `<app_root>`.
@@ -129,12 +127,10 @@ HTTPS プロトコルを使用してサンプルデータ GitHub リポジトリ
 
    次の `2.4-develop` Magento Open SourceGitHub リポジトリのブランチ。Sample Data ブランチは、 `2.4-develop`.
 
-   次の `2.4.3` Magento Open SourceGitHub リポジトリのブランチ。Sample Data ブランチは、 `2.4.3`.
-
-   正しいブランチをチェックアウトするには、サンプルのデータリポジトリのルートディレクトリから次のコマンドを実行します ( 必要に応じて `2.4.3` ブランチ ):
+   正しいブランチをチェックアウトするには、サンプルのデータリポジトリのルートディレクトリから次のコマンドを実行します ( 必要に応じて `2.4-develop` ブランチ ):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. 置換文字列 `<magento_root>`.

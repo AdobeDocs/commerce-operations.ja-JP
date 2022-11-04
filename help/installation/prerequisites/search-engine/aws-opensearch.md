@@ -1,7 +1,7 @@
 ---
 title: AWS OpenSearch
 description: Adobe CommerceとMagento Open SourceのオンプレミスインストールでAWS OpenSearch Web サービスを設定するには、次の手順に従います。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # AWS OpenSearch
 
-Adobe CommerceおよびMagento Open Source2.4.3 では、Amazon OpenSearch Service クラスターの使用がサポートされています。 このサービスは、AmazonElasticsearchサービスの後継サービスです。 ここでは、AWS OpenSearch を使用するように Commerce を設定する方法と、ローカルElasticsearchまたは OpenSearch インスタンスからAWS OpenSearch クラスターにデータを移行する方法について説明します。
+Adobe CommerceおよびMagento Open Source2.4.5 では、Amazon OpenSearch Service クラスターの使用がサポートされます。 このサービスは、AmazonElasticsearchサービスの後継サービスです。 ここでは、AWS OpenSearch を使用するように Commerce を設定する方法と、ローカルElasticsearchまたは OpenSearch インスタンスからAWS OpenSearch クラスターにデータを移行する方法について説明します。
 
 ## AWS OpenSearch サービスドメインの作成
 

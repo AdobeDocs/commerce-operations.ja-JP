@@ -1,9 +1,9 @@
 ---
 title: オンプレミスでの迅速なインストールを開始
 description: 所有しているインフラストラクチャにAdobe CommerceまたはMagento Open Sourceをインストールするには、次の手順に従います。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -95,32 +95,32 @@ Adobe CommerceまたはMagento Open Sourceのメタパッケージを取得す�
 
    >[!NOTE]
    >
-   >Adobe Commerceのお客様は、GA(General Availability) の日付の 2 週間前に、2.4.x および 2.3.x のパッチにアクセスできます。 リリース前のパッケージは、Composer でのみ使用できます。 開発者ポータルまたは GitHub のプレリリースには、GA になるまでアクセスできません。 Composer でこれらのパッケージが見つからない場合は、Adobe Commerceサポートにお問い合わせください。
+   >Adobe Commerceのお客様は、GA(General Availability) の日付の 2 週間前にパッチにアクセスできます。 リリース前のパッケージは、Composer でのみ使用できます。 開発者ポータルまたは GitHub のプレリリースには、GA になるまでアクセスできません。 Composer でこれらのパッケージが見つからない場合は、Adobe Commerceサポートにお問い合わせください。
 
 ### 例 — マイナーリリース
 
-マイナーリリースには、新機能、品質修正およびセキュリティ修正が含まれています。 Composer を使用してマイナーリリースを指定します。 例えば、Adobe Commerce 2.4.3 メタパッケージを指定するには、次のようにします。
+マイナーリリースには、新機能、品質修正およびセキュリティ修正が含まれています。 Composer を使用してマイナーリリースを指定します。 例えば、Adobe Commerce 2.4.5 のメタパッケージを指定するには、次のようにします。
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
 ```
 
 ### 例 — 品質パッチ
 
-品質パッチには主に機能が含まれる _および_ セキュリティの修正。 ただし、後方互換性のある新しい機能を含めることもできます。 Composer を使用して、品質パッチをダウンロードします。 例えば、Adobe Commerce 2.4.3 メタパッケージを指定するには、次のようにします。
+品質パッチには主に機能が含まれる _および_ セキュリティの修正。 ただし、後方互換性のある新しい機能を含めることもできます。 Composer を使用して、品質パッチをダウンロードします。 例えば、Adobe Commerce 2.4.5 のメタパッケージを指定するには、次のようにします。
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
 ```
 
 ### 例 — セキュリティパッチ
 
 セキュリティパッチにはセキュリティ修正のみが含まれています。 これらは、アップグレードプロセスをより迅速かつ容易にするように設計されています。
 
-セキュリティパッチでは、Composer の命名規則を使用します `2.4.3-px`. Composer を使用してパッチを指定します。 例えば、Adobe Commerce 2.4.3-p1 メタパッケージをダウンロードするには、次のようにします。
+セキュリティパッチでは、Composer の命名規則を使用します `2.4.5-px`. Composer を使用してパッチを指定します。 例えば、Adobe Commerce 2.4.5-p1 メタパッケージをダウンロードするには、次のようにします。
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3-p1 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5-p1 <install-directory-name>
 ```
 
 ## ファイルの権限の設定
