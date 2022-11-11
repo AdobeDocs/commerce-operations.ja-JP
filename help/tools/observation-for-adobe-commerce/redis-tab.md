@@ -1,9 +1,9 @@
 ---
 title: 「 [!UICONTROL Redis] タブ"
 description: 詳しくは、 [!UICONTROL Redis] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: f4379d0b89a6ea6d2f2a5a02c505581d4d54708f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ![Redis ノードの概要](../../assets/tools/observation-for-adobe-commerce/redis-tab-1.jpg)
 
-この **[!UICONTROL Redis Node summary]** は、環境内のすべてのノードを含みます。 この例には、共有ステージング用のノードが含まれます。 実稼動環境には 1 つのプライマリと 2 つのセカンダリが存在し、ステージング環境には 1 つのプライマリと 2 つのセカンダリが存在します。
+この **[!UICONTROL Redis Node summary]** は、環境内のすべてのノードを含みます。 上記の例には、共有ステージング用のノードが含まれています。 実稼動環境には 1 つのプライマリと 2 つのセカンダリが存在し、ステージング環境には 1 つのプライマリと 2 つのセカンダリが存在します。
 
 ## [!UICONTROL Redis node detail]
 
@@ -56,10 +56,10 @@ ht-degree: 0%
 
 ![前回の db 保存以降の変更を修正](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis] はメモリ常駐型で、情報をストレージに保存します。 この **[!UICONTROL Redis changes since last db save]** frame は、最後のデータベースがストレージに保存されてから発生したメモリに対する変更の数を示します。 [この情報](https://redis.io/docs/manual/persistence/) 説明 [!DNL Redis's] 永続性。
+[!DNL Redis] はメモリ常駐型で、情報をストレージに保存します。 この **[!UICONTROL Redis changes since last db save]** frame は、最後のデータベースがストレージに保存されてから発生したメモリに対する変更の数を示します。 参照： [Redis の永続性](https://redis.io/docs/manual/persistence/) 詳細は [!DNL Redis's] 永続性。
 
 ## [!UICONTROL Redis synchronization from Log]
 
 ![ログからの Redis 同期](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
 
-この **[!UICONTROL Redis synchronization from Log]** frame は、次の間に発生したエラーに焦点を当てます。 [!DNL Redis] 同期または同期の問題が原因で発生するエラー。 詳しくは、 [Redis ドキュメント](https://redis.io/docs/).
+この **[!UICONTROL Redis synchronization from Log]** frame は、次の間に発生したエラーに焦点を当てます。 [!DNL Redis] 同期または同期の問題が原因で発生するエラー。 詳しくは、 [!DNL Redis]（を参照） [[!DNL Redis] ドキュメント](https://redis.io/docs/).

@@ -1,9 +1,9 @@
 ---
 title: 「 [!UICONTROL PHP] タブ"
-description: 詳しくは、 [!UICONTROL PHP] [!DNS 監視 (Adobe Commerce)] のタブ。
-source-git-commit: f71fc3b2a66a4cc0b0d7865138184135e4a874e0
+description: 詳しくは、 [!UICONTROL PHP] タブ [!DNL Observation for Adobe Commerce].
+source-git-commit: 28055eb09235912c66c637990e2081a70e1c7808
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ![PHP プロセスのロード](../../assets/tools/php-process-load.jpg)
 
-このフレームは、選択した期間の PHP-FPM プロセスからの CPU 負荷を示します。
+この **[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** frame は、選択した期間の PHP-FPM プロセスからの CPU 負荷を示します。
 
 ## [!UICONTROL PHP Memory detail]
 
@@ -106,7 +106,7 @@ ht-degree: 0%
 * &#39;%1062 \[ERROR\] InnoDB:%&#39;) (&#39;sql_1062_e&#39;)
 * &#39;%[注意] WSREP:メモリマップをディスクにフラッシュしています…%&#39;) を&#39;mem_map_flush&#39;として
 * &#39;%Internal MariaDB エラーコード：1146%) を&#39;sql_1146&#39;として
-* &#39;%Internal MariaDB エラーコード：1062%) as &#39;sql_1062&#39; ・ &#39;%1062 [警告] InnoDB:%&#39;) を&#39;sql_1062_w&#39;として
+* &#39;%Internal MariaDB エラーコード：1062%) (&#39;sql_1062&#39; * &#39;%1062) [警告] InnoDB:%&#39;) を&#39;sql_1062_w&#39;として
 * &#39;%Internal MariaDB エラーコード：1064%) を&#39;sql_1064&#39;として
 * &#39;%InnoDB:&#39;assertion_err&#39;としてのアサーションエラー (file%&#39;)
 * &#39;%mysqld_safe 現在実行中のプロセスの数：0%) を&#39;mysql_oom&#39;として

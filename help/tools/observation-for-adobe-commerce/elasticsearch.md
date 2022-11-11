@@ -1,9 +1,9 @@
 ---
 title: 「 [!UICONTROL Elasticsearch] タブ"
 description: 詳しくは、 [!UICONTROL Elasticsearch] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: 2427a18ea67833bc50912ef78be29d4320b5b205
+source-git-commit: b3cc9033eb9445af3edafd8c7ae9809dbb8174fc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ![アクティブなプライマリの破片](../../assets/tools/active-primary-shards.jpg)
 
-この **[!UICONTROL Active Primary Shards]** フレームには、選択したアカウントのアクティブなプライマリシャードの数に応じて異なる数が表示されます [!DNL Elasticsearch] サービス。
+この **[!UICONTROL Active Primary Shards]** frame は、選択したアカウントのアクティブなプライマリシャードの数に応じて異なる数を表示します [!DNL Elasticsearch] サービス。
 
 送信者 [!DNL Elasticsearch]:最終的なガイド [2.x]:
 
@@ -33,19 +33,19 @@ ht-degree: 0%
 
 ![クラスタ内のアクティブなシャード](../../assets/tools/active-shards-in-cluster.jpg)
 
-**[!UICONTROL Active Shards in Cluster]**  — 内のすべてのプライマリとレプリカのシャード [!DNL Elasticsearch] クラスター。
+この **[!UICONTROL Active Shards in Cluster]** frame は、 [!DNL Elasticsearch] クラスター。
 
 ## [!UICONTROL Index health - this will show the index name and color status]
 
 ![インデックスの正常性](../../assets/tools/index-health.jpg)
 
-このフレームには、インデックス名とインデックスの色の状態数が表示されます。 表を下にスクロールすると、同じインデックス名が黄色と赤色のステータスで表示されます。 27 インデックス名の後に続く数値は、ステータスの色の数です。 0 の場合、選択した期間中に、その色のステータスのインデックスのインスタンスは存在しませんでした。
+このフレームは、インデックス名とインデックスの色の状態数を示します。 表を下にスクロールすると、同じインデックス名が黄色と赤色のステータスで表示されます。 27 インデックス名の後に続く数値は、ステータスの色の数です。 0 の場合、選択した期間では、その色のステータスのインデックスのインスタンスは存在しませんでした。
 
 ## [!UICONTROL Elasticsearch Status by node information]
 
 ![Elasticsearchステータス](../../assets/tools/elasticsearch-status-by-node.jpg)
 
-この **[!UICONTROL Elasticsearch Status by node information]** frame は、 [!DNL Elasticsearch] ノードごとに色別にクラスターステータス。 これは、 [!DNL Elasticsearch] クラスターは、選択した期間中のステータスを返します。
+この **[!UICONTROL Elasticsearch Status by node information]** frame は、 [!DNL Elasticsearch] 色別およびノード別のクラスターステータス。 これは、 [!DNL Elasticsearch] クラスターは、選択した期間中のステータスを返します。
 
 ## [!UICONTROL Elasticsearch index information]
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ![Elasticsearchプロセス CPU](../../assets/tools/elasticsearch-process-cpu.jpg)
 
-この **[!UICONTROL Elasticsearch process CPU %]** frame は、 [!DNL Elasticsearch] 選択した期間で処理します。
+この **[!UICONTROL Elasticsearch process CPU %]** frame は、CPU の割合を [!DNL Elasticsearch] 選択した期間で処理します。
 
 ## [!UICONTROL Elasticsearch Memory garbage collection]
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 ![Elasticsearchエラー](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
 
-この **[!UICONTROL Elasticsearch Errors]** フレームは次のエラーを表示します： [!DNL Elasticsearch] 空き領域が不足した場合、黄から赤に切り替える場合、すべてのシャードが失敗した場合、検索に関するパラメータの問題が発生した場合、バージョンエラー、すべてのノードが使用できない場合。
+この **[!UICONTROL Elasticsearch Errors]** frame はエラーを表示します [!DNL Elasticsearch] 空き領域が不足した場合、黄から赤に切り替える場合、すべてのシャードが失敗した場合、検索に関するパラメータの問題が発生した場合、バージョンエラー、すべてのノードが使用できない場合。
 
 ## [!UICONTROL Elasticsearch Unassigned Shards]:
 

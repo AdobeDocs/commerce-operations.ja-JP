@@ -1,18 +1,18 @@
 ---
 title: '"使用を開始：アカウントと期間の選択»'
 description: を使用し始める方法を学ぶ [!DNL Observation for Adobe Commerce] アカウントと期間を選択してネットワークを使用します。
-source-git-commit: 7058d114c31a45a3f66dcff265d1bafc4e01de41
+source-git-commit: 86e990e18955cce8ed0917c72ddbe99d8cb3f333
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---
 
 # アカウントと期間の選択：
 
-クリック時に [!UICONTROL Observation for Adobe Commerce] アイコン [!DNL Observation for Adobe Commerce] お節介が開きます。
+をクリックしたとき、 [!UICONTROL Observation for Adobe Commerce] アイコン [!DNL Observation for Adobe Commerce] お節介が開きます。
 
-1. をクリックします。 **アカウントを選択** ドロップダウン。 次の項目が表示されない場合、 **アカウントを選択** ドロップダウンが表示され、アクセス権がない可能性があります。 リクエスト [ここ](https://adobe.sharepoint.com/sites/MG/it/IT%20Services%20Wiki/Requesting%20access%20to%20Magento%20Commerce%20New%20Relic.aspx):
+1. をクリックします。 **アカウントを選択** ドロップダウン。 次の項目が表示されない場合、 **アカウントを選択** ドロップダウンが表示され、アクセス権がない可能性があります。 クリック [ここ](https://adobe.sharepoint.com/sites/MG/it/IT%20Services%20Wiki/Requesting%20access%20to%20Magento%20Commerce%20New%20Relic.aspx) をクリックしてアクセスをリクエストします。
 
    ![アカウントを選択](../../assets/tools/observation-for-adobe-commerce/start-using-1.jpeg)
 

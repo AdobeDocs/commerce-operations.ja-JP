@@ -1,9 +1,9 @@
 ---
 title: 「 [!UICONTROL Summary] タブ"
 description: 詳しくは、 [!UICONTROL Summary] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: 5bcb834bc563c52cd5b169b9f4f20dab31d404cd
+source-git-commit: 5058441eb64d59b3e1aa329603a87f75c826996e
 workflow-type: tm+mt
-source-wordcount: '2637'
+source-wordcount: '2655'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 ### トランザクションのタイプ：
 
-**Web:** トランザクションは HTTP リクエストで開始されます。 ほとんどの組織では、これらは顧客中心のインタラクションを表すので、監視する最も重要なトランザクションとなります。
+**Web:** Web トランザクションは、HTTP リクエストで開始されます。 ほとんどの組織では、これらは顧客中心のインタラクションを表すので、監視する最も重要なトランザクションとなります。
 
 **非 Web:** Web リクエストでは、Web 以外のトランザクションは開始されません。 これには、非 Web ワーカープロセス、バックグラウンドプロセス、スクリプト、メッセージキューアクティビティ、その他のタスクを含めることができます。
 
-を見る **[!UICONTROL Transaction Overview]** フレームでは、平均 APDEX スコアが 0.76 の約 53,000 件のトランザクションが発生し、その 95%が 2.313 秒未満で発生していました。 これは、短い期間に APDEX ヒットが発生した場合に、より厳しい期間が現在の平均からの偏差を示す可能性があるフレームです。
+を見ると **[!UICONTROL Transaction Overview]** 上のフレームでは、平均 APDEX スコアが 0.76 の約 53,000 件のトランザクションが発生し、その 95%が 2.313 秒未満で発生していました。 これは、短い期間に APDEX ヒットが発生した場合に、より厳しい期間が現在の平均からの偏差を示す可能性があるフレームです。
 
 ## [!UICONTROL 404 page errors frame]
 
@@ -39,13 +39,13 @@ ht-degree: 0%
 
 ![ストレージの空きフレームの割合](../../assets/tools/percent-of-storage-free.jpg)
 
-この **[!UICONTROL % of Storage Free]** frame は、クラスタのすべてのノードにわたるストレージマウントの平均空き率を表示します。 例えば、3 つのノードクラスターがある場合、\&lt;mount point=&quot;&quot;>, \&lt;environment name=&quot;&quot;>. 3 つのノード間で分散が生じる場合、このフレームはごまかしになる可能性があります。 平方偏差の例は、 `/data/mysql` 3 つのノードクラスタでは、マウントポイントフリーの値が異なりました。 下に枠がある [!UICONTROL MySQL] マウントポイントをノード名でファセット化し、より正確に `/data/mysql` 各ノード上のストレージは、実際には空きです。
+この **[!UICONTROL % of Storage Free]** frame は、クラスタのすべてのノードにわたるストレージマウントの平均空き率を表示します。 例えば、3 つのノードクラスタがある場合、フレームには\&lt;mount point=&quot;&quot;>, \&lt;environment name=&quot;&quot;>. 3 つのノード間で分散が生じる場合、このフレームはごまかしになる可能性があります。 平方偏差の例は、 `/data/mysql` 3 つのノードクラスタでは、マウントポイントフリーの値が異なりました。 下に枠がある [!UICONTROL MySQL] マウントポイントをノード名でファセット化し、より正確に `/data/mysql` 各ノード上のストレージは、実際には空きです。
 
 ## [!UICONTROL % of system memory that is free frame]
 
 ![空きフレームのシステムメモリの割合](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
 
-このフレームは、各ノードで空きメモリの量をノードごとに表示します。
+この **空きのシステムメモリの割合 (%)** frame は、各ノードで空きメモリの量をノードごとに表示します。
 
 ## [!UICONTROL Swap memory free in bytes]
 
@@ -57,19 +57,19 @@ ht-degree: 0%
 
 ![ホスト別の CPU パーセント](../../assets/tools/cpu-percent-by-host.jpg)
 
-すべての環境とノードの集計がに表示されます。 **[!UICONTROL CPU % by host]** フレーム 実稼動以外の環境の選択を解除する必要があります。 実稼動環境のすべてのノードが存在しない場合は、注意が必要です。 この記事では、CPU 使用率の高さに関するヒントを示します。 [New Relic on Adobe Commerceを使用したパフォーマンスのトラブルシューティング](https://support.magento.com/hc/en-us/articles/360042149832#high_cpu_usage).
+すべての環境とノードの集計がに表示されます。 **[!UICONTROL CPU % by host]** フレーム 実稼動以外の環境の選択を解除する必要があります。 また、実稼動環境のすべてのノードが存在しない場合も注意してください。 CPU 使用率の高さに関するヒントについては、 [New Relic on Adobe Commerceを使用したパフォーマンスのトラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
 ![期間中のアラート](../../assets/tools/alerts-during-timeframe.jpg)
 
-この **[!UICONTROL Alerts during timeframe]** を含むすべてのアラートを表示します。 [!UICONTROL Managed Alerts] Adobe Commerce Support によって追加されました。
+この **[!UICONTROL Alerts during timeframe]** を含むすべてのアラートを表示します。 [!UICONTROL Managed Alerts] Adobe Commerceサポートによって追加されました。
 
 ## [!UICONTROL CPU Usage]
 
 ![CPU 使用率](../../assets/tools/cpu-usage.jpg)
 
-この **[!UICONTROL CPU Usage]** フレームが空白の場合は、 [!DNL New Relic] が有効になっていません。 サイトがスターターにある場合、この情報は表示されません。 サイトが Pro 上にある場合は、サポートチケットを開いて、 [!DNL New Relic Infrastructure] を有効にします。
+この **[!UICONTROL CPU Usage]** フレームが空白の場合は、 [!DNL New Relic] が有効になっていません。 サイトがスターターにある場合、この情報は表示されません。 サイトが Pro 上にある場合は、 [サポートチケット](https://experienceleague.corp.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en) 持っている [!DNL New Relic Infrastructure] を有効にします。
 
 ## [!UICONTROL Average Response Time]
 
@@ -87,13 +87,13 @@ ht-degree: 0%
 
 ![応答コード](../../assets/tools/response-code.jpg)
 
-この **[!UICONTROL Response Code]** frame は、web トラフィックとリクエストの応答コードを示す適切な指標です。 これは [!DNL New Relic] 取引データを取り扱い、それは次のように切り取られます。 `httpResponseCode` と答えた。
+この **[!UICONTROL Response Code]** frame は、web トラフィックとリクエストの応答コードを示す適切な指標です。 これは [!DNL New Relic's] 取引データを取り扱い、それは次のように切り取られます。 `httpResponseCode` と答えた。
 
 ## [!UICONTROL Web Traffic volume compared with one week ago Magento Managed Alerts Information]
 
 ![1 週間前と比較した web トラフィックの量](../../assets/tools/web-traffic-volume-compared.jpg)
 
-このフレームには、現在のボリュームと比較した 1 週間前の Web トラフィックの量が表示されます。
+このフレームには、過去 1 週間と現在の週の比較対象のウェブトラフィック量が表示されます。
 
 ## [!UICONTROL Deployment Log Entries]
 
@@ -105,9 +105,9 @@ ht-degree: 0%
 
 ![デプロイメント状態](../../assets/tools/deployment-state.jpg)
 
-この **[!UICONTROL Deployment State]** フレームファセット特定のデプロイメントフレーズをデプロイログから取得します。 次に、ログおよびファセット名でカウントされるフレーズの例を示します。
+この **[!UICONTROL Deployment State]** フレームファセット：デプロイログからの特定のデプロイメントフェーズ。 次に、ログおよびファセット名にカウントされるフェーズの例を示します。
 
-**デプロイメントログフレーズ：**
+**デプロイメントログのフェーズ：**
 
 * &#39;%generate command%&#39;を&#39;start_gen&#39;として開始中&#39;
 * &#39;%git apply /app/vendor/magento/ece-tools/patches%&#39;)&#39;apply_patches&#39;
@@ -122,13 +122,13 @@ ht-degree: 0%
 
 ![IP 頻度](../../assets/tools/ip-frequency.jpg)
 
-この **[!UICONTROL IP Frequency]** フレームは、各 IP に対するステータス（「MISS」および「PASS」）を [!DNL Fastly] ログ。 これらのステータスの Web リクエストは、元のサーバーに到達し、サーバーに読み込みが追加されます。 頻度の上位 20 件のアドレスが表示されます。 このフレームは、Web サイト上の IP 攻撃や大量の負荷の発生元を検出するために使用できます。
+この **[!UICONTROL IP Frequency]** フレームは、各 IP に対するステータス（「MISS」および「PASS」）を [!DNL Fastly] ログ。 これらのステータスの Web リクエストはオリジンサーバーに到達し、サーバーに読み込みが追加されます。 頻度の上位 20 件のアドレスが表示されます。 このフレームは、Web サイト上の IP 攻撃や大量の負荷の発生元を検出するために使用できます。
 
 ## [!UICONTROL IP Response – top 20 URLs in duration]
 
 ![ip 応答 — 期間内の上位 20 個の URL](../../assets/tools/ip-response-top-20-urls.jpg)
 
-このフレームには、応答時間が最も長い URL が表示されます。 応答時間が最も長い大きな画像ファイルやページ、API、またはページを示す場合があります。
+この **[!UICONTROL IP Response – top 20 URLs in duration]** frame は、応答時間が最も長い URL を表示します。 応答時間が最も長い大きな画像ファイルやページ、API、またはページを示す場合があります。
 
 ## [!UICONTROL API Calls by IP]
 
@@ -164,13 +164,13 @@ ht-degree: 0%
 
 ![ノードによる nginx アクセス](../../assets/tools/nginx-access-by-node.jpg)
 
-この **[!UICONTROL Nginx access by node]** frame は、 `access.log` ノード別。 負荷が均等に分布しているかどうかを確認すると便利です。 多くの場合、ノードがドロップしたときに表示されます。 これは、サイト全体の負荷も表示されます。
+この **[!UICONTROL Nginx access by node]** frame は、 `access.log` ノード別。 負荷が均等に分布しているかどうかを確認すると便利です。 多くの場合、ノードがドロップしたときに表示されます。 また、サイト全体の負荷も表示されます。
 
 ## [!UICONTROL Galera Log]
 
 ![galera ログ](../../assets/tools/galera-log.jpg)
 
-[Galera](https://galeracluster.com/library/galera-documentation.pdf) は、データベースクラスタに使用されます。 このフレームは、 [!UICONTROL Galera] クラスター。 これらのシグナルは、クラスターの開始と終了のノードに焦点を当てます。これは、データベースのデータの整合性を維持する通常の動作です。 ノードは、 [!UICONTROL Galera] クラスターの状態の変更。
+[[!DNL Galera]](https://galeracluster.com/library/galera-documentation.pdf) は、データベースクラスタに使用されます。 このフレームは、 [!UICONTROL Galera] クラスター。 このシグナルは、クラスターに入るノードとクラスターから出るノードに焦点を当てます。これは、データベースのデータの整合性を維持する通常の動作です。 ノードは、 [!UICONTROL Galera] クラスターの状態の変更。
 
 **リスト [!UICONTROL Galera] 状態の変更：**
 
@@ -256,9 +256,9 @@ ht-degree: 0%
 
 ![ログからの redis 同期](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[レディス](https://redis.io/docs/about/) は、データベース、キャッシュ、およびメッセージブローカとして使用されるオープンソース（BSD ライセンス）のメモリ内データ構造ストアです。 設定に応じて、データベースおよびセッションのキャッシュを実行できます。 この **[!UICONTROL Redis synchronization from Log]** 枠が～に焦点を合わせる [Redis の同期](https://redis.io/docs/manual/replication/). が [!DNL Redis] データセットに含まれる場合は、同期に関する問題が発生する可能性が高くなります（同期を維持するデータが増えます）。
+[[!DNL Redis]](https://redis.io/docs/about/) は、データベース、キャッシュ、およびメッセージブローカとして使用されるオープンソース（BSD ライセンス）のメモリ内データ構造ストアです。 設定に応じて、データベースおよびセッションのキャッシュを実行できます。 この **[!UICONTROL Redis synchronization from Log]** 枠が～に焦点を合わせる [[!DNL Redis] 同期](https://redis.io/docs/manual/replication/). が [!DNL Redis] データセットに含まれる場合は、同期に問題が発生する可能性が高くなります（同期を維持するデータが多くなります）。
 
-**[!DNL Redis]エラーとメッセージ**
+**[!DNL Redis]エラーとメッセージ：**
 
 * &#39;%SLAVE 同期：デバイス%&#39;にスペースが残っていません ) （スペース）
 * &#39;%Server started, Redis version%&#39;) as &#39;serv_start&#39;
@@ -283,7 +283,7 @@ ht-degree: 0%
 
 ![PHP プロセスの状態](../../assets/tools/php-process-states.jpg)
 
-PHP プロセスの動作は、 [設定](https://www.php.net/manual/en/install.fpm.configuration.php). 設定は複雑で、多くの変数とオプションがあります。 この **[!UICONTROL PHP process states]** frame は、PHP プロセスが終了して再起動されるタイミングを理解するのに役立ちます。
+PHP プロセスの動作は、 [設定](https://www.php.net/manual/en/install.fpm.configuration.php). 設定は複雑で、多くの変数とオプションがあります。 この **[!UICONTROL PHP process states]** frame を使用すると、PHP プロセスが終了して再起動されるタイミングを把握できます。
 
 ### [!UICONTROL PHP errors]
 
@@ -291,7 +291,7 @@ PHP プロセスの動作は、 [設定](https://www.php.net/manual/en/install.f
 
 この **[!UICONTROL PHP errors]** frame は、選択した期間内のワーカーに対する PHP エラーの数を示します。 詳しくは、 [Adobe Commerce PHP 設定](../../installation/prerequisites/php-settings.md).
 
-**PHP エラーとメッセージ**
+**PHP のエラーとメッセージ：**
 
 * &#39;%worker_connections not not sourt %&#39;) as &#39;worker&#39;
 * &#39;%PHP 致命的なエラー：許可されているメモリサイズです。%&#39;) を&#39;mem_size&#39;として
@@ -309,31 +309,31 @@ PHP プロセスの動作は、 [設定](https://www.php.net/manual/en/install.f
 
 ![php プロセス](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/), a [!UICONTROL FastCGI Process Manager] 使用者 [!DNL Nginx]. 必要システム構成については、 [Adobe Commerceバージョンにマッピングされた PHP バージョンの要件](../../installation/system-requirements.md). この **[!UICONTROL PHP processes]** frame は、選択したタイムラインの特定の時点で実行されている PHP プロセスの数を示します。
+[PHP-FPM](https://php-fpm.org/) は [!UICONTROL FastCGI Process Manager] 使用者 [!DNL Nginx]. 必要システム構成については、 [Adobe Commerceバージョンにマッピングされた PHP バージョンの要件](../../installation/system-requirements.md). この **[!UICONTROL PHP processes]** frame は、選択したタイムラインの特定の時点で実行されている PHP プロセスの数を示します。
 
 ## [!UICONTROL Secondary processes]
 
 ![セカンダリプロセス](../../assets/tools/secondary-processes.jpg)
 
-セカンダリのプロセスは、サイトの応答に影響を与える可能性があります。 この **[!UICONTROL Secondary processes]** frame は、サイトに負荷を追加する可能性のあるプロセスを示すことができます。 データベースは主に、最も多くのセカンダリ・プロセスを実行しています。
+セカンダリのプロセスは、サイトの応答に影響を与える可能性があります。 この **[!UICONTROL Secondary processes]** frame は、サイトに負荷を追加する可能性のあるプロセスを示します。 データベースは主に、最も多くのセカンダリ・プロセスを実行しています。
 
 ## [!UICONTROL Traffic vs Week Ago]
 
 ![トラフィック vs 週間前](../../assets/tools/traffic-vs-week-ago.jpg)
 
-この **[!UICONTROL Traffic vs Week Ago]** frame は、 [!DNL Fastly] (「MISS」、「PASS」) キャッシュステータスのログ。 これらのリクエストは、接触チャネルサーバーに負荷を追加します。 このフレームは、同じ期間で、1 週間前とは異なる Web リクエストの量を表示します。
+この **[!UICONTROL Traffic vs Week Ago]** frame は、 [!DNL Fastly] (「MISS」、「PASS」) キャッシュステータスのログ。 これらのリクエストは、接触チャネルサーバーに負荷を追加します。 このフレームは、現在の週と過去 1 週間の同じ期間の比較 Web リクエスト量を表示します。
 
 ## [!UICONTROL Fastly Cache]
 
 ![Fastly キャッシュ](../../assets/tools/fastly-cache.jpg)
 
-この **[!UICONTROL Fastly Cache]** frame は、Fastly ログからのリクエストのキャッシュステータスの集計ビューを表示します。 「エラー」をクリックすると、リクエスト内のエラーの割合が表示されます。 これは、通常、元のサーバーがページリクエストに対して十分な速さで応答しない場合に増加します。
+この **[!UICONTROL Fastly Cache]** frame は、 [!DNL Fastly] ログ。 「エラー」を選択した場合は、リクエスト内のエラーの割合が表示されます。 これは、通常、オリジンサーバーがページリクエストに対して十分な速さで応答しない場合に増加します。
 
 ## [!UICONTROL Page Rendering]
 
 ![ページレンダリング](../../assets/tools/page-rendering.jpg)
 
-この **[!UICONTROL Page Rendering]** frame は、 [!DNL New Relic] 前の週の同じ期間と比較して
+この **[!UICONTROL Page Rendering]** frame は、 [!DNL New Relic] を同じ期間の前の週と比較します。
 
 ## [!UICONTROL Page loading detail]
 
@@ -359,7 +359,7 @@ PHP プロセスの動作は、 [設定](https://www.php.net/manual/en/install.f
 
 ![注文トランザクションのデフォルト](../../assets/tools/order-transactions-default.jpg)
 
-この **[!UICONTROL Order transactions (default?)]** フレームがトランザクションを検索 `request.headers.host` name = &#39;WebTransaction/Action/checkout/onpage/success&#39;のトランザクションから。 注文の成功 URL が異なる場合、このフレームにはデータが含まれません。
+この **[!UICONTROL Order transactions (default?)]** フレームがトランザクションを検索 `request.headers.host` 取引から。name = `WebTransaction/Action/checkout/onepage/success`. 注文の成功 URL が異なる場合、このフレームにはデータが含まれません。
 
 ## [!UICONTROL Elasticsearch Index information]
 

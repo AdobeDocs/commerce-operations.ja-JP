@@ -1,9 +1,9 @@
 ---
 title: 「 [!UICONTROL MySQL] タブ"
 description: 詳しくは、 [!UICONTROL MySQL] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: 8c9753fe5b9038978859cc101d53f897267ecfe9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2030'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ![ノード別の MySQL%の空きストレージ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)
 
-MySQL に割り当てられたストレージのストレージが不足しているため、多くの問題が発生します (`datadir` MySQL 構成設定。デフォルトは `/data/mysql`) または `tmpdir` 空き容量が不足しています。 デフォルト `tmpdir` （MySQL 設定）は `/tmp`. このフレームでは、 `/, /tmp` （別のマウントとして定義されている場合）と `/data/mysql` %の空きストレージ。 MySQL バージョン 5.7（MariaDB バージョン 10.2）以降、非圧縮 tmp テーブルは、 `/data/mysql` ファイルのディレクトリ (ibtmp1)。 このファイルは、デフォルトでは制限なしで自動的に展開されます。 これはテーブル領域なので、サイズは減少せず、MySQL の再起動時に 12MB にリセットされます。
+MySQL に割り当てられたストレージのストレージが不足しているため、多くの問題が発生します (`datadir` MySQL 構成設定。デフォルトは `/data/mysql`) または `tmpdir` 空き容量が不足しています。 デフォルト `tmpdir` （MySQL 設定）は `/tmp`. この **[!UICONTROL MySQL% free storage by node]** フレームは `/, /tmp` （別のマウントとして定義されている場合）と `/data/mysql` 空きストレージの割合。 MySQL バージョン 5.7（MariaDB バージョン 10.2）以降、非圧縮 `tmp` テーブルは `tmp` テーブル領域 `/data/mysql` ファイルのディレクトリ (ibtmp1)。 このファイルは、デフォルトでは制限なしで自動的に展開されます。 これはテーブル領域なので、サイズは減少せず、MySQL の再起動時に 12MB にリセットされます。
 
 ## [!UICONTROL MySQL Connections by Node]
 
@@ -38,13 +38,13 @@ MySQL に割り当てられたストレージのストレージが不足して�
 
 ![MySQL がシャットダウンし、起動する](../../assets/tools/observation-for-adobe-commerce/mysql-tab-5.jpg)
 
-この **[!UICONTROL MySQL shutdowns and starts]** frame は、ノードのシャットダウンが発生した場合に検出します。 [!DNL Galera] ノードは削除され、自己排除されます [!DNL Galera] ノード。 これにより、通常は MySQL サービスが再起動します。
+この **[!UICONTROL MySQL shutdowns and starts]** frame は、ノードのシャットダウンが発生した場合に検出します。 この [!DNL Galera] ノードは削除され、自己排除されます [!DNL Galera] ノード。 これにより、通常は MySQL サービスが再起動します。
 
 ## [!UICONTROL Galera log]
 
 ![Galera ログ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-6.jpg)
 
-この **[!UICONTROL Galera log]** frame は、以下に関する MySQL ログからの特定のシグナルの数を表示します。 [!DNL Galera] ノード、状態、状態の変化 [!DNL Galera] クラスター。
+この **[!UICONTROL Galera log]** frame は、MySQL ログから以下に示す特定のシグナルの数を示します。 [!DNL Galera] ノード、状態、状態の変化 [!DNL Galera] クラスター。
 
 * &#39;%1047 WSREP は、&#39;node_not_prep_for_use&#39;として、アプリケーション使用用のノードをまだ準備していません%&#39;)
 * &#39;%\[ERROR\] WSREP:次の読み取りに失敗しました：wsrep_sst_xtrabackup-v2%) を&#39;xtrabackup_read_fail&#39;として使用する
@@ -198,7 +198,7 @@ MySQL に割り当てられたストレージのストレージが不足して�
 
 ![データベースエラー](../../assets/tools/observation-for-adobe-commerce/mysql-tab-17.jpg)
 
-この **[!UICONTROL Database Errors]** frame は、様々なデータベースを示します [警告とエラー](https://mariadb.com/kb/en/mariadb-error-codes/).
+この **[!UICONTROL Database Errors]** frame は、様々なデータベースを示します [警告とエラー](https://mariadb.com/kb/en/mariadb-error-codes/):
 
 * &#39;%一時テーブルに割り当てられたメモリサイズが、&#39;temp_tbl_buff_pool&#39;として innodb_buffer_pool_size%&#39;の 20%を超えています
 * &#39;%\[ERROR\] WSREP:rbr write fail%) を&#39;rbr_write_fail&#39;として
@@ -227,7 +227,7 @@ MySQL に割り当てられたストレージのストレージが不足して�
 * &#39;%1062 \[ERROR\] InnoDB:%&#39;) (&#39;sql_1062_e&#39;)
 * &quot;%[注意] WSREP:メモリマップをディスクにフラッシュしています…%&#39;) を&#39;mem_map_flush&#39;として
 * &#39;%Internal MariaDB エラーコード：1146%) を&#39;sql_1146&#39;として
-* &#39;%Internal MariaDB エラーコード：1062%) as &#39;sql_1062&#39; ・ &#39;%1062 [警告] InnoDB:%&#39;) を&#39;sql_1062_w&#39;として
+* &#39;%Internal MariaDB エラーコード：1062%) (&#39;sql_1062&#39; * &#39;%1062) [警告] InnoDB:%&#39;) を&#39;sql_1062_w&#39;として
 * &#39;%Internal MariaDB エラーコード：1064%) を&#39;sql_1064&#39;として
 * &#39;%InnoDB:&#39;assertion_err&#39;としてのアサーションエラー (file%&#39;)
 * &#39;%mysqld_safe 現在実行中のプロセスの数：0%) を&#39;mysql_oom&#39;として

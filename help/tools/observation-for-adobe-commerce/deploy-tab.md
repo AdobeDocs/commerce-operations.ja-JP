@@ -1,9 +1,9 @@
 ---
 title: 「 [!UICONTROL Deploy] タブ"
 description: 詳しくは、 [!UICONTROL Deploy] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: b95a35ee64cd8e844a51a9ff699eceb9c3a9266c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1114'
 ht-degree: 0%
 
 ---
