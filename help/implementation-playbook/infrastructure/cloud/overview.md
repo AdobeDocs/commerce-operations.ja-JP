@@ -2,9 +2,9 @@
 title: クラウドインフラストラクチャの概要
 description: クラウドインフラストラクチャ上のAdobe Commerceについて説明します。
 exl-id: 94cf1505-0853-4e01-ba55-befc1117fbdb
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,6 @@ Adobe Commerceのその他のメリットは次のとおりです。
 
 - Git はリポジトリ内のコードです。 ローカル分岐、便利なステージング領域、自動ビルドとデプロイによる複数のワークフローを使用して、効率的な迅速な開発と継続的なデプロイを実現します。
 
-- Platform-as-a-Service(PaaS) は、PHP、MySQL、Redis、RabbitMQ、Elasticsearchテクノロジーを含む、事前にプロビジョニングされたインフラストラクチャを提供します。
+- Platform-as-a-Service(PaaS) は、PHP、MySQL、Redis を含む、事前にプロビジョニングされたインフラストラクチャを提供します。 [!DNL RabbitMQ]、 、Elasticsearchテクノロジー。
 
 - AWSまたは Azure のクラウドホスティングは、基盤となる Infrastructure-as-a-Service(IaaS) を強化し、オンラインセールスおよび小売業のための拡張性と安全な環境を提供します。

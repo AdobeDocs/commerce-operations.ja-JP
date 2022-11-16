@@ -1,9 +1,9 @@
 ---
 title: Amazon Message Queue の設定
 description: AWS MQ サービスを使用するように Commerce を設定する方法を説明します。
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -65,20 +65,20 @@ async.V1.inventory.bulk-product-source-unassign.POST
 async.V1.inventory.bulk-product-source-transfer.POST
 ```
 
-のデフォルト設定 `InventoryCatalog` は RabbitMQ にメッセージを公開しません。デフォルトの動作では、同じユーザースレッドでアクションを実行します。 次の情報を `InventoryCatalog` メッセージを公開するには、有効にします。 `cataloginventory/bulk_operations/async`. 管理者から、に移動します。 **ストア** /設定 > **カタログ** > **在庫** /管理者の一括操作とセット  `Run asynchronously`から **はい**.
+のデフォルト設定 `InventoryCatalog` にメッセージを公開しません [!DNL RabbitMQ];デフォルトの動作では、同じユーザースレッドでアクションを実行します。 次の情報を `InventoryCatalog` メッセージを公開するには、有効にします。 `cataloginventory/bulk_operations/async`. 管理者から、に移動します。 **ストア** /設定 > **カタログ** > **在庫** /管理者の一括操作とセット  `Run asynchronously`から **はい**.
 
 ## メッセージキューのテスト
 
-Commerce から RabbitMQ に送信されるメッセージをテストするには：
+Commerce からに送信されるメッセージをテストするには [!DNL RabbitMQ]:
 
-1. キューを監視するには、AWSの RabbitMQ Web コンソールにログインします。
+1. にログインします。 [!DNL RabbitMQ] キューを監視するAWSの web コンソール
 1. 管理者で、製品を作成します。
 1. 在庫ソースを作成します。
 1. 有効にする **ストア** /設定 > **カタログ** > **在庫** /管理者の一括操作/非同期で実行。
 1. に移動します。 **カタログ** /製品。 グリッドから、上で作成した製品を選択し、 **在庫ソースの割り当て**.
 1. クリック **保存して閉じる** をクリックしてプロセスを完了します。
 
-   これで、RabbitMQ Web コンソールにメッセージが表示されます。
+   これで、 [!DNL RabbitMQ] web コンソール。
 
 1. を開始します。 `async.operations.all` メッセージキューコンシューマー。
 
@@ -86,5 +86,5 @@ Commerce から RabbitMQ に送信されるメッセージをテストするに�
    bin/magento queue:consumers:start async.operations.all
    ```
 
-これで、キューに格納されたメッセージが RabbitMQ Web コンソールで処理されるのがわかります。
+これで、キューに登録されたメッセージが [!DNL RabbitMQ] web コンソール。
 管理で、製品の在庫ソースが変更されたことを確認します。

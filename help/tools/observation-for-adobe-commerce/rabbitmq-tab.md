@@ -1,22 +1,22 @@
 ---
-title: 「 [!UICONTROL RabbitMQ] タブ"
-description: 詳しくは、 [!UICONTROL RabbitMQ] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+title: 「 [!UICONTROL [!DNL RabbitMQ]] tab"
+description: 詳しくは、 [!UICONTROL [!DNL RabbitMQ]] タブ [!DNL Observation for Adobe Commerce].
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
-# この [!UICONTROL RabbitMQ] タブ
+# この [!UICONTROL [!DNL RabbitMQ]] タブ
 
-この **[!UICONTROL RabbitMQ]** タブには、 [!DNL RabbitMQ] シグナル。
+この **[!UICONTROL [!DNL RabbitMQ]]** タブには、 [!DNL RabbitMQ] シグナル。
 
-## [!UICONTROL RabbitMQ Infrastructure events]
+## [!UICONTROL [!DNL RabbitMQ] Infrastructure events]
 
-![RabbitMQ Infrastructure イベント](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
+![[!DNL RabbitMQ] インフラストラクチャイベント](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
 
-この **[!UICONTROL RabbitMQ Infrastructure events]** frame は、 [!DNL RabbitMQ] 選択した期間内に発生した
+この **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** frame は、 [!DNL RabbitMQ] 選択した期間内に発生した
 
 * %Response [エラー] ノードの場合 [rabbit@host1]:%&#39;からの予期しない http 応答 ) （&#39;unexpected_resp_node1&#39;として）
 * &#39;%応答 [エラー] ノードの場合 [rabbit@host2]:%&#39;からの予期しない http 応答 ) (&#39;unexpected_resp_node2&#39;)
@@ -37,18 +37,18 @@ ht-degree: 0%
 * &#39;%Entity が変更されました：version/management%) を&#39;rmq_entity_modified_ver_mgt&#39;として
 * &#39;%Entity が変更されました：version/management%) を&#39;rmq_entity_modified_ver_mgt&#39;として
 
-## [!UICONTROL RabbitMQ service start/stop signals]
+## [!UICONTROL [!DNL RabbitMQ] service start/stop signals]
 
-![RabbitMQ サービスの開始/停止シグナル](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
+![[!DNL RabbitMQ] サービス開始/停止シグナル](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
 
 このフレームには [!DNL RabbitMQ] 選択した期間に発生したサービス開始/停止シグナル：
 
-* &#39;%RabbitMQ が停止を要求されました…%&#39;) を&#39;rabbitmq_stop&#39;として
-* &#39;%RabbitMQ%&#39;を&#39;rabbitmq_start&#39;として開始中&#39;
+* &#39;%[!DNL RabbitMQ] 停止を求められました…%&#39;) を&#39;rabbitmq_stop&#39;として
+* &#39;%Starting [!DNL RabbitMQ]%&#39;) を&#39;rabbitmq_start&#39;として
 
-## [!UICONTROL RabbitMQ errors]
+## [!UICONTROL [!DNL RabbitMQ] errors]
 
-![RabbitMQ エラー](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-3.jpeg)
+![[!DNL RabbitMQ] エラー](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-3.jpeg)
 
 このフレームには [!DNL RabbitMQ] 選択した期間中に発生したエラー：
 
@@ -58,9 +58,9 @@ ht-degree: 0%
 * &#39;%Connection attempt from disallowed node%&#39;) as &#39;disallowed_node&#39;
 * &#39;%closing AMQP connection%&#39;) を&#39;rmq_err_amqp_conn&#39;として
 
-## [!UICONTROL RabbitMQ node status]
+## [!UICONTROL [!DNL RabbitMQ] node status]
 
-![RabbitMQ ノードのステータス](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
+![[!DNL RabbitMQ] ノードステータス](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
 
 * &#39;%rabbit on node rabbit@host1 down%&#39;) を&#39;rmq_node1_down&#39;として&#39;
 * &#39;%rabbit on node rabbit@host2 down%&#39;)&#39;rmq_node2_down&#39;
@@ -69,47 +69,47 @@ ht-degree: 0%
 * &#39;%rabbit on node rabbit@host2 up%&#39;) を&#39;rmq_node2_up&#39;として&#39;
 * &#39;%rabbit on node rabbit@host3 up%&#39;) を&#39;rmq_node3_up&#39;として&#39;
 
-## [!UICONTROL RabbitMQ Message High-Level Summary status by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]
 
-![RabbitMQ メッセージの概要ステータス（キュー別）](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
+![[!DNL RabbitMQ] キュー別メッセージの概要ステータス](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
 
-この **[!UICONTROL RabbitMQ Message High-Level Summary status by Queue]** グラフには、 [!DNL RabbitMQ] 選択した期間のキュー。
+この **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** グラフには、 [!DNL RabbitMQ] 選択した期間のキュー。
 
-## [!UICONTROL RabbitMQ Message Detail Summary]
+## [!UICONTROL [!DNL RabbitMQ] Message Detail Summary]
 
-![RabbitMQ メッセージの詳細の概要](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
+![[!DNL RabbitMQ] メッセージの詳細の概要](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
 
 * &#39;%report.ERROR:Cron ジョブ consumer_runner にエラーがあります：NOT_FOUND - queue%なし ) を&#39;queue_err&#39;として
 * &#39;%report.ERROR:Cron ジョブ consumer_runner にエラーがあります：NOT_FOUND - queue%なし ) を&#39;queue_err&#39;として
 * &#39;%authenticated and granted access to vhost%&#39;) (&#39;auth&#39;)
 * &#39;%closing AMQP connection%&#39;) を&#39;close_conn&#39;として
 
-## [!UICONTROL RabbitMQ Queue Consumption MB]
+## [!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]
 
-![RabbitMQ キュー消費 MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
+![[!DNL RabbitMQ] キュー消費 MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
 
-この **[!UICONTROL RabbitMQ Queue Consumption MB]** グラフは、それぞれの [!DNL RabbitMQ] 選択した期間にキューを追加します。
+この **[!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]** グラフは、それぞれの [!DNL RabbitMQ] 選択した期間にキューを追加します。
 
-## [!UICONTROL RabbitMQ Published Messages by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]
 
-![RabbitMQ 公開メッセージ（キュー別）](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
+![[!DNL RabbitMQ] 公開済みメッセージ（キュー別）](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
 
-この **[!UICONTROL RabbitMQ Published Messages by Queue]** グラフは、それぞれの [!DNL RabbitMQ] 選択した期間にキューを追加します。
+この **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** グラフは、それぞれの [!DNL RabbitMQ] 選択した期間にキューを追加します。
 
-## [!UICONTROL RabbitMQ Published Message Throughput by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]
 
-![RabbitMQ 公開済みメッセージのスループット（キュー別）](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
+![[!DNL RabbitMQ] キュー別の公開済みメッセージのスループット](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
 
-この **[!UICONTROL RabbitMQ Published Message Throughput by Queue]** グラフには、1 秒あたりの平均公開済みメッセージ数が表示されます [!DNL RabbitMQ] 選択した期間にキューを追加します。
+この **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** グラフには、1 秒あたりの平均公開済みメッセージ数が表示されます [!DNL RabbitMQ] 選択した期間にキューを追加します。
 
-## [!UICONTROL RabbitMQ Total Message Throughput by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]
 
-![RabbitMQ：キュー別の合計メッセージスループット](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
+![[!DNL RabbitMQ] キュー別の合計メッセージスループット](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
 
-この **[!UICONTROL RabbitMQ Total Message Throughput by Queue]** グラフは、1 秒あたりの平均メッセージ総数を示します [!DNL RabbitMQ] 選択した期間にキューを追加します。
+この **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** グラフは、1 秒あたりの平均メッセージ総数を示します [!DNL RabbitMQ] 選択した期間にキューを追加します。
 
-## [!UICONTROL RabbitMQ Consumers by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Consumers by Queue]
 
-![RabbitMQ コンシューマー（キュー別）](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
+![[!DNL RabbitMQ] キュー別消費者](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
 
-この **[!UICONTROL RabbitMQ Consumers by Queue]** グラフは、それぞれの平均消費者総数を示します [!DNL RabbitMQ] 選択した期間にキューを追加します。
+この **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** グラフは、それぞれの平均消費者総数を示します [!DNL RabbitMQ] 選択した期間にキューを追加します。

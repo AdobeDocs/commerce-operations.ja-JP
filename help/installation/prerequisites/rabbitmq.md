@@ -1,9 +1,9 @@
 ---
 title: メッセージブローカー
-description: 以下の手順に従って、Adobe CommerceとMagento Open Sourceのオンプレミスインストールに必要なメッセージブローカーソフトウェア（RabbitMQ など）をインストールし、設定します。
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+description: 次の手順に従って、必要な Message Broker ソフトウェア ( [!DNL RabbitMQ]) を使用して、Adobe CommerceとMagento Open Sourceのオンプレミスでのインストールを行います。
+source-git-commit: 1233d2e1d80a3228626be3e20f1bd826b1283523
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -11,22 +11,22 @@ ht-degree: 0%
 
 # メッセージブローカー
 
-Adobe Commerceは RabbitMQ オープンソースメッセージブローカーを使用します。 高い可用性と拡張性を備え、ポータブルなメッセージングシステムを提供します。
+Adobe Commerceは [!DNL RabbitMQ] オープンソースのメッセージブローカー。 高い可用性と拡張性を備え、ポータブルなメッセージングシステムを提供します。
 
 メッセージキューは、メッセージの送信者と受信者が互いに連絡を取らない非同期通信メカニズムを提供する。 また、メッセージキューと同時に通信する必要もありません。 送信者がメッセージをキューに入れると、受信者がメッセージを受け取るまで保存されます。
 
 メッセージキューシステムは、Adobe CommerceまたはMagento Open Sourceをインストールする前に確立する必要があります。 基本的なシーケンスは次のとおりです。
 
-1. RabbitMQ およびその他の前提条件をインストールします。
-1. RabbitMQ をAdobe CommerceまたはMagento Open Sourceに接続します。
+1. インストール [!DNL RabbitMQ] およびその前提条件
+1. 接続 [!DNL RabbitMQ] Adobe CommerceまたはMagento Open Sourceに
 
 >[!NOTE]
 >
->MySQL または RabbitMQ を使用してメッセージキューを処理できます。 メッセージキューシステムの設定について詳しくは、 [メッセージキュー：概要](https://developer.adobe.com/commerce/php/development/components/message-queues/). Adobe Commerceで Bulk API を使用している場合、メッセージキューのシステム設定では、デフォルトで RabbitMQ をメッセージブローカーとして使用します。 詳しくは、 [メッセージキューコンシューマーを開始](../../configuration/cli/start-message-queues.md) を参照してください。
+>MySQL または [!DNL RabbitMQ] メッセージキューの処理用。 メッセージキューシステムの設定について詳しくは、 [メッセージキュー：概要](https://developer.adobe.com/commerce/php/development/components/message-queues/). Adobe Commerceで Bulk API を使用している場合、メッセージキューのシステム設定はデフォルトで [!DNL RabbitMQ] メッセージブローカーとして 詳しくは、 [メッセージキューコンシューマーを開始](../../configuration/cli/start-message-queues.md) を参照してください。
 
-## Ubuntu に RabbitMQ をインストール
+## インストール [!DNL RabbitMQ] Ubuntu で
 
-Ubuntu 16 に RabbitMQ をインストールするには、次のコマンドを入力します。
+をインストールするには [!DNL RabbitMQ] Ubuntu 16 で、次のコマンドを入力します。
 
 ```bash
 sudo apt install -y rabbitmq-server
@@ -34,34 +34,34 @@ sudo apt install -y rabbitmq-server
 
 このコマンドは、必要な Erlang パッケージもインストールします。
 
-古いバージョンの Ubuntu がある場合、RabbitMQ は、Web サイトからパッケージをインストールすることをお勧めします。
+古いバージョンの Ubuntu がある場合、 [!DNL RabbitMQ] では、Web サイトからパッケージをインストールすることをお勧めします。
 
 1. .deb パッケージのダウンロード先 [rabbitmq-server](https://www.rabbitmq.com/download.html).
 1. パッケージのインストール先 `dpkg`.
 
 参照： [Debian/Ubuntu へのインストール](https://www.rabbitmq.com/install-debian.html) を参照してください。
 
-## CentOS での RabbitMQ のインストール
+## インストール [!DNL RabbitMQ] CentOS で
 
 ### Erlang のインストール
 
-RabbitMQ は Erlang プログラミング言語を使用して記述されました。RabbitMQ と同じシステムにインストールする必要があります。
+[!DNL RabbitMQ] は Erlang プログラミング言語を使用して書かれていましたが、この言語はと同じシステムにインストールする必要があります。 [!DNL RabbitMQ].
 
 詳しくは、 [手動インストール](https://www.erlang-solutions.com/downloads/) を参照してください。
 
-詳しくは、 [RabbitMQ/Erlang バージョンマトリックス](https://www.rabbitmq.com/which-erlang.html) をクリックして、正しいバージョンをインストールします。
+詳しくは、 [[!DNL RabbitMQ]/Erlang バージョンのマトリックス](https://www.rabbitmq.com/which-erlang.html) をクリックして、正しいバージョンをインストールします。
 
-### RabbitMQ のインストール
+### インストール [!DNL RabbitMQ]
 
-RabbitMQ サーバーは CentOS に含まれていますが、バージョンは古いことが多いです。 RabbitMQ では、Web サイトからパッケージをインストールすることをお勧めします。
+この [!DNL RabbitMQ] サーバーは CentOS に含まれていますが、多くの場合、古いバージョンです。 [!DNL RabbitMQ] では、Web サイトからパッケージをインストールすることをお勧めします。
 
-サポートされている最新バージョンを取得するには、 RabbitMQ のインストールページを参照してください。 Adobe CommerceおよびMagento Open Source2.3 および 2.4 では、RabbitMQ 3.8.x がサポートされています。
+詳しくは、 [!DNL RabbitMQ] サポートされている最新バージョンを取得するには、インストールページを使用します。 Adobe CommerceとMagento Open Source2.3 および 2.4 のサポート [!DNL RabbitMQ] 3.8.x.
 
 参照： [RPM ベースの Linux へのインストール](https://www.rabbitmq.com/install-rpm.html) を参照してください。
 
-## RabbitMQ の設定
+## 設定 [!DNL RabbitMQ]
 
-RabbitMQ の設定と管理については、公式の RabbitMQ ドキュメントを参照してください。 次の項目に注意してください。
+公式のレビュー [!DNL RabbitMQ] 設定および管理に関するドキュメント [!DNL RabbitMQ]. 次の項目に注意してください。
 
 * 環境変数
 * ポートアクセス
@@ -69,9 +69,9 @@ RabbitMQ の設定と管理については、公式の RabbitMQ ドキュメン�
 * ブローカーの起動と停止
 * システム制限
 
-## RabbitMQ と共にインストールし、接続します。
+## 次を使用してインストール [!DNL RabbitMQ] と接続します。
 
-Adobe CommerceまたはMagento Open Source _後_ RabbitMQ をインストールする場合は、インストール中に次のコマンドラインパラメーターを追加します。
+Adobe CommerceまたはMagento Open Source _後_ インストール [!DNL RabbitMQ]をクリックし、インストール時に次のコマンドラインパラメーターを追加します。
 
 ```bash
 --amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"
@@ -81,16 +81,16 @@ Adobe CommerceまたはMagento Open Source _後_ RabbitMQ をインストール�
 
 | パラメータ | 説明 |
 |--- |--- |
-| `--amqp-host` | RabbitMQ がインストールされているホスト名。 |
-| `--amqp-port` | RabbitMQ への接続に使用するポート。 デフォルトはです。 `5672`. |
-| `--amqp-user` | RabbitMQ に接続するためのユーザー名。 デフォルトのユーザーを使用しない `guest`. |
-| `--amqp-password` | RabbitMQ に接続するためのパスワード。 デフォルトのパスワードを使用しない `guest`. |
-| `--amqp-virtualhost` | RabbitMQ に接続するための仮想ホスト。 デフォルトはです。 `/`. |
-| `--amqp-ssl` | RabbitMQ に接続するかどうかを示します。 デフォルトはです。 `false`. 値を true に設定した場合、詳しくは SSL の設定を参照してください。 |
+| `--amqp-host` | ホスト名 [!DNL RabbitMQ] がインストールされている。 |
+| `--amqp-port` | 接続に使用するポート [!DNL RabbitMQ]. デフォルトはです。 `5672`. |
+| `--amqp-user` | 接続するユーザー名 [!DNL RabbitMQ]. デフォルトのユーザーを使用しない `guest`. |
+| `--amqp-password` | 接続用のパスワード [!DNL RabbitMQ]. デフォルトのパスワードを使用しない `guest`. |
+| `--amqp-virtualhost` | 接続する仮想ホスト [!DNL RabbitMQ]. デフォルトはです。 `/`. |
+| `--amqp-ssl` | 接続するかどうかを示します [!DNL RabbitMQ]. デフォルトはです。 `false`. 値を true に設定した場合、詳しくは SSL の設定を参照してください。 |
 
-## RabbitMQ を接続
+## 接続 [!DNL RabbitMQ]
 
-既にAdobe CommerceまたはMagento Open Sourceがインストールされていて、RabbitMQ に接続する場合は、 `queue` セクション `<install_directory>/app/etc/env.php` ファイルの内容が次のようになります。
+既にAdobe CommerceまたはMagento Open Sourceがインストールされていて、接続先となる場合 [!DNL RabbitMQ]、 `queue` セクション `<install_directory>/app/etc/env.php` ファイルの内容が次のようになります。
 
 ```php
 'queue' =>
@@ -106,13 +106,13 @@ Adobe CommerceまたはMagento Open Source _後_ RabbitMQ をインストール�
   ),
 ```
 
-RabbitMQ の設定値は、 `bin/magento setup:config:set` コマンド：
+また、 [!DNL RabbitMQ] 設定値を `bin/magento setup:config:set` コマンド：
 
 ```bash
 bin/magento setup:config:set --amqp-host="rabbitmq.example.com" --amqp-port="11213" --amqp-user="magento" --amqp-password="magento" --amqp-virtualhost="/"
 ```
 
-コマンドの実行後、または `<install_directory>/app/etc/env.php` AMQP 構成値を持つファイル、実行 `bin/magento setup:upgrade` をクリックして、RabbitMQ で必要なキューと交換を作成します。
+コマンドの実行後、または `<install_directory>/app/etc/env.php` AMQP 構成値を持つファイル、実行 `bin/magento setup:upgrade` 変更を適用し、必要なキューと交換を [!DNL RabbitMQ].
 
 ## SSL の設定
 
@@ -140,4 +140,4 @@ SSL のサポートを設定するには、 `ssl` および `ssl_options` パラ
 
 ## メッセージキューのコンシューマーを開始
 
-Adobe Commerceと RabbitMQ を接続したら、メッセージキューコンシューマーを開始する必要があります。 詳しくは、 [メッセージキューの設定](../../configuration/cli/start-message-queues.md) 」を参照してください。
+Adobe Commerceと [!DNL RabbitMQ]メッセージキューのコンシューマーを開始する必要があります。 詳しくは、 [メッセージキューの設定](../../configuration/cli/start-message-queues.md) 」を参照してください。

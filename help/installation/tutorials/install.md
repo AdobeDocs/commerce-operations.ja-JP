@@ -1,9 +1,9 @@
 ---
 title: Adobe Commerceのインストール
 description: 所有しているインフラストラクチャにAdobe CommerceまたはMagento Open Sourceをインストールするには、次の手順に従います。
-source-git-commit: 46302eb8e8fd9bb7c9e7fbf990abb149bedd0ff4
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '2118'
+source-wordcount: '2106'
 ht-degree: 0%
 
 ---
@@ -132,16 +132,16 @@ Adobe Commerceバージョン 2.2.8 以降では、インストール中また�
 | `--elasticsearch-username` | 認証するユーザー ID | いいえ（認証が有効になっていない場合） |
 | `--elasticsearch-password` | 認証するパスワード | いいえ（認証が有効になっていない場合） |
 
-**RabbitMQ 設定オプション：**
+**[!DNL RabbitMQ]設定オプション：**
 
 | 名前 | 値 | 必須？ |
 |--- |--- |--- |
-| `--amqp-host` | 次を使用しない `--amqp` オプションを指定します。 RabbitMQ のインストールと設定について詳しくは、 RabbitMQ のインストールを参照してください。<br><br>RabbitMQ がインストールされているホスト名。 | いいえ |
-| `--amqp-port` | RabbitMQ への接続に使用するポート。 デフォルト値は 5672 です。 | いいえ |
-| `--amqp-user` | RabbitMQ に接続するためのユーザー名。 デフォルトのユーザーを使用しない `guest`. | いいえ |
-| `--amqp-password` | RabbitMQ に接続するためのパスワード。 デフォルトのパスワードを使用しない `guest`. | いいえ |
-| `--amqp-virtualhost` | RabbitMQ に接続するための仮想ホスト。 デフォルトはです。 `/`. | いいえ |
-| `--amqp-ssl` | RabbitMQ に接続するかどうかを示します。 デフォルトはです。 `false`. RabbitMQ 用の SSL の設定については、 RabbitMQ を参照してください。 | いいえ |
+| `--amqp-host` | 次を使用しない `--amqp` オプション ( [!DNL RabbitMQ]. 詳しくは、 [!DNL RabbitMQ] インストールと設定の詳細については、を参照してください。 [!DNL RabbitMQ].<br><br>ホスト名 [!DNL RabbitMQ] がインストールされている。 | いいえ |
+| `--amqp-port` | 接続に使用するポート [!DNL RabbitMQ]. デフォルト値は 5672 です。 | いいえ |
+| `--amqp-user` | 接続するユーザー名 [!DNL RabbitMQ]. デフォルトのユーザーを使用しない `guest`. | いいえ |
+| `--amqp-password` | 接続用のパスワード [!DNL RabbitMQ]. デフォルトのパスワードを使用しない `guest`. | いいえ |
+| `--amqp-virtualhost` | 接続する仮想ホスト [!DNL RabbitMQ]. デフォルトはです。 `/`. | いいえ |
+| `--amqp-ssl` | 接続するかどうかを示します [!DNL RabbitMQ]. デフォルトはです。 `false`. 詳しくは、 [!DNL RabbitMQ] の SSL 設定に関する情報 [!DNL RabbitMQ]. | いいえ |
 | `--consumers-wait-for-messages` | コンシューマーはキューからのメッセージを待つ必要がありますか？ 1 — はい、0 — いいえ | いいえ |
 
 **リモートストレージオプション：**

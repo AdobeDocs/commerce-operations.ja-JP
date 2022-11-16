@@ -1,9 +1,9 @@
 ---
 title: アプリケーションの設定
 description: Adobe CommerceおよびMagento Open Sourceのオンプレミスデプロイメントに必要なインストール後の設定について説明します。
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Adobe CommerceとMagento Open Sourceには電子メールサーバーが必要�
 
 バージョン 2.3.0 以降、Adobe CommerceおよびMagento Open Sourceにはメッセージキュー機能が含まれています。 以前のバージョンでは、Adobe Commerceでのみ使用できます。
 
-* [RabbitMQ](../../configuration/queues/message-queue-framework.md)
+* [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 
 ## Adobe Commerceのみの設定
 

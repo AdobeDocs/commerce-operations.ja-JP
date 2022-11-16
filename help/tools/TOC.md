@@ -1,9 +1,9 @@
 ---
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
-source-git-commit: 5e8e2730a0cc30997365bd70c4409e0eb8923dfb
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
    - [「アラート」タブ](observation-for-adobe-commerce/alerts-tab.md)
    - [「WAF」タブ](observation-for-adobe-commerce/waf-tab.md)
    - [「 CDN 」タブ](observation-for-adobe-commerce/cdn-tab.md)
-   - [「 RabbitMQ 」タブ](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [この [!DNL RabbitMQ] タブ](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [「 Cron 」タブ](observation-for-adobe-commerce/cron-tab.md)
    - [「インデックス作成」タブ](observation-for-adobe-commerce/indexing-tab.md)
    - [「クイックビュー」タブ](observation-for-adobe-commerce/oac-quickview-tab.md)

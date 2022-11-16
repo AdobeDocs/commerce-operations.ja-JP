@@ -2,9 +2,9 @@
 title: Adobe Commerce統合戦略
 description: Adobe Commerce実装の統合戦略とオプションを確認します。
 exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
-source-git-commit: 1e545d8d5554e73f522469e526ed098395db9075
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -47,4 +47,4 @@ Adobe Commerceには、次の 3 つの柔軟な統合オプションが用意さ
 
 ![Adobe Commerce統合オプション](../../assets/playbooks/integration-options.svg)
 
-通常、リアルタイム統合が必要ですが、一部のシナリオでは必要ありません。 Adobe Commerceは、非同期プロセスを有効にするメッセージバスとして RabbitMQ をネイティブにサポートしています。非同期プロセスは、リアルタイムで交換する必要がない一部のデータで、非同期に処理するバッチファイル交換または REST バッチデータ処理 API で更新することをお勧めします。
+通常、リアルタイム統合が必要ですが、一部のシナリオでは必要ありません。 Adobe Commerceネイティブサポート [!DNL RabbitMQ] 非同期プロセスを有効にするメッセージバスとして。非同期プロセスを有効にすることをお勧めします。これは、リアルタイムで交換する必要がない一部のデータで、非同期に処理するためにバッチファイル交換または REST バッチデータ処理 API で更新することをお勧めします。

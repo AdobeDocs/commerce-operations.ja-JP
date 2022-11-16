@@ -2,9 +2,9 @@
 title: パフォーマンスの最適化Recommendations
 description: 次の推奨事項に従って、Adobe Commerce実装のパフォーマンスを最適化します。
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Vanish のフルページキャッシュメモリの無効化は有効ですが�
 
 ### メッセージキュー
 
-Message Queue Framework（MQF；メッセージキューフレームワーク）は、モジュールがキューにメッセージを公開できるシステムです。 また、非同期でメッセージを受信するコンシューマーも定義します。 Adobe Commerceは、メッセージングブローカーとして RabbitMQ をサポートし、メッセージの送受信に拡張性の高いプラットフォームを提供します。
+Message Queue Framework（MQF；メッセージキューフレームワーク）は、モジュールがキューにメッセージを公開できるシステムです。 また、非同期でメッセージを受信するコンシューマーも定義します。 Adobe Commerceサポート [!DNL RabbitMQ] メッセージを送受信するためのスケーラブルなプラットフォームを提供するメッセージングブローカーとして。
 
 ### パフォーマンスのテストと監視
 

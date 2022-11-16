@@ -2,9 +2,9 @@
 title: プラットフォーム開発の原則
 description: Adobe Commerceを使用する際の、基本的なプラットフォーム開発原則を理解します。
 exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,6 @@ Adobe Commerce on cloud infrastructure は、Adobe Commerceソフトウェア用
 
 ![Adobe Commerceコンポーネントの情報グラフィック](../../assets/playbooks/commerce-cloud.svg)
 
-Adobe Commerce on cloud infrastructure は、PHP、MySQL、Redis、RabbitMQ、Elasticsearchテクノロジーを含む、事前にプロビジョニングされたインフラストラクチャを提供します。コードの変更が Platform as a Service(PaaS) 環境にプッシュされるたびに、効率的に迅速な開発と継続的なデプロイをおこなうための、自動ビルドとデプロイ操作を備えた Git ベースのワークフロー。高度にカスタマイズ可能な環境設定ファイルおよびツールオンラインの販売/小売業向けに、拡張性と安全性に優れた環境を提供する、AWSのホスティング。
+Adobe Commerce on cloud infrastructure は、PHP、MySQL、Redis を含む、事前にプロビジョニングされたインフラストラクチャを提供します。 [!DNL RabbitMQ]、およびElasticsearch技術コードの変更が Platform as a Service(PaaS) 環境にプッシュされるたびに、効率的に迅速な開発と継続的なデプロイをおこなうための、自動ビルドとデプロイ操作を備えた Git ベースのワークフロー。高度にカスタマイズ可能な環境設定ファイルおよびツールオンラインの販売/小売業向けに、拡張性と安全性に優れた環境を提供する、AWSのホスティング。
 
 ![Adobe Commerceコンポーネントの情報グラフィック](../../assets/playbooks/cloud-tech-stack.svg)
