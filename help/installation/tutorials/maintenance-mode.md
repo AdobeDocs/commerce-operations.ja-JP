@@ -1,9 +1,9 @@
 ---
 title: メンテナンスモードを有効または無効にする
 description: 次の手順に従って、メンテナンスのためにAdobe CommerceまたはMagento Open Sourceのデプロイメントが停止している場合に顧客に表示する内容をカスタマイズします。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: bc025217ed7bc2195c0a2d919139abe13d184259
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -81,9 +81,10 @@ bin/magento maintenance:allow-ips <ip address> .. <ip address> [--none]
 
 ## マルチストアの設定
 
-複数のストアを設定し、それぞれが異なるレイアウトとローカライズされたコンテンツを持つ場合は、それぞれに対してスキンを作成し、 `pub/errors/{name}` 場所 `{name}` はストアコードです。 ストアと Web サイトを同じインスタンスで区別するには、 `pub/errors/{type}-{name}` 場所 `{type}` 次のいずれか `store` または `website` と `MAGE_RUN_TYPE` を設定します。
+<!-- To set up multiple stores, each with a different layout and localized content, create a skin for each and put it into `pub/errors/{name}` where `{name}` is the store code. To distinguish between stores and websites with the same instance, use `pub/errors/{type}-{name}` where `{type}` is either `store` or `website` and matches the `MAGE_RUN_TYPE` in your server configuration. Another option is to pass the `$_GET['skin']` parameter to the intended processor. This method requires a specific configuration on your server. -->
+<!-- Replace the line below with the commented text after https://github.com/magento/magento2/pull/35095 is merged. -->
 
-もう 1 つのオプションは、 `$_GET['skin']` パラメータを指定します。 このメソッドを使用するには、サーバー上で特定の設定をおこなう必要があります。
+複数のストアを設定する場合は、それぞれ異なるレイアウトとローカライズされたコンテンツを持つストアを設定するには、 `$_GET['skin']` パラメータを指定します。
 
 次の例では、 `503` エラーテンプレートファイルを入力します。コンテンツのローカライズが必要です。
 
