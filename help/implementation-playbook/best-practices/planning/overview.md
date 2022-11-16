@@ -4,9 +4,9 @@ description: Adobe Commerceプロジェクトの計画段階に関する実装�
 role: Developer, Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: 78308f9cb3d2ebe8af41c42f9bb146409367ab6c
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -67,12 +67,13 @@ ht-degree: 0%
 
 ## **セールスとマーケティング**
 
-- [製品買い物かごの上限に関するベストプラクティ&#x200B;ス](product-cart.md)
+- [製品買い物かごの上限に関するベストプラクティス](product-cart.md)
 - [プロモーション設定のベストプラクティス](product-cart-promotions.md)
 
 ## **プロジェクト範囲**
 
 - [パートナーのエスカレーション](partner-escalation.md)
+- [支払ストレージ処理](payment-processing-storage.md)
 
 ## **購入拡張機能**
 
