@@ -1,7 +1,7 @@
 ---
 title: env.php リファレンス
 description: env.php ファイルの値のリストを参照してください。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: fe5e16d44213d1864a62230029e9e206eecd1717
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
@@ -185,7 +185,7 @@ If `queue/default_connection` がシステムで指定されている `env.php` 
 
 ## ディレクトリ
 
-Web サーバーが Commerce アプリを `/pub` ディレクトリ [セキュリティの向上][change-docroot-to-pub].
+Web サーバーが Commerce アプリを `/pub` ディレクトリ [セキュリティの向上](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -219,7 +219,7 @@ Commerce アプリケーションのインストール日です。
 
 ロックプロバイダーの設定は、 `lock` ノード。
 
-詳細情報： [プロバイダ構成をロック][lock-provider-config].
+詳細情報： [プロバイダ構成をロック](../../installation/tutorials/lock-provider.md).
 
 ## MAGE_MODE
 
@@ -299,6 +299,4 @@ x-frame-options ヘッダーは、このノードを使用して設定できま�
 
 <!-- Link definitions -->
 
-[change-docroot-to-pub]: ../../installation/tutorials/docroot.md
-[lock-provider-config]: ../../installation/tutorials/lock-provider.md
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/

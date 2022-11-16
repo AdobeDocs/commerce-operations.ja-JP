@@ -1,9 +1,9 @@
 ---
 title: 「 [!UICONTROL Summary] タブ"
 description: 詳しくは、 [!UICONTROL Summary] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: 808018aca0630f725eebdd279b9314e2ee80eccc
+source-git-commit: 61d0de370cbfa02f5fcc7d20ad283c54357294a3
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2653'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 ![CPU 使用率](../../assets/tools/cpu-usage.jpg)
 
-この **[!UICONTROL CPU Usage]** フレームが空白の場合は、 [!DNL New Relic] が有効になっていません。 サイトがスターターにある場合、この情報は表示されません。 サイトが Pro 上にある場合は、 [サポートチケット](https://experienceleague.corp.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en) 持っている [!DNL New Relic Infrastructure] を有効にします。
+この **[!UICONTROL CPU Usage]** フレームが空白の場合は、 [!DNL New Relic] が有効になっていません。 サイトがスターターにある場合、この情報は表示されません。 サイトが Pro 上にある場合は、 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) 持っている [!DNL New Relic Infrastructure] を有効にします。
 
 ## [!UICONTROL Average Response Time]
 
