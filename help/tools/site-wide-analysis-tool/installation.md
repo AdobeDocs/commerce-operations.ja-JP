@@ -1,7 +1,7 @@
 ---
 title: インストールガイド
 description: このガイドを使用して、 [!DNL Site-Wide Analysis Tool] （Web サイト用）
-source-git-commit: 434fb9eb9570f183d9bf9d4b56b8e56a69e8005d
+source-git-commit: 23ad424a913c5ee58f4092aae008a47fe37b5382
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
@@ -57,13 +57,17 @@ Adobe Commerceをオンプレミスでインストールしている場合、こ
 
 - Bash/shell ユーティリティ
 
-   - `grep`
+   - `php`
+
+   - `wget`
 
    - `awk`
 
    - `nice`
 
    - `grep`
+
+   - `openssl`
 
 ## [!DNL Commerce Services Connector]
 
@@ -185,7 +189,7 @@ bin/magento module:status Magento_ServicesConnector
       curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
-   1. ランチャーアーカイブをインパックします。
+   1. ランチャーアーカイブを解凍します。
 
       ```bash
       tar -xf launcher.linux-arm64.tar.gz
