@@ -1,9 +1,9 @@
 ---
 title: 実装開発フェーズ
 description: Adobe Commerceプロジェクトの開発段階に関する実装のベストプラクティスについて説明します。
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: c717d45525c7893fa2c38183326534e0fa4ee0c6
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -70,3 +70,4 @@ ht-degree: 0%
 - [CSS および JS ファイルの最適化](optimize-css-js-files.md)
 - [よりレスポンシブなサイトに向けて画像を最適化する](image-optimization.md)
 - [クラウドインフラストラクチャ上のAdobe Commerceのベストプラクティスのトラブルシューティン&#x200B;グ](troubleshooting.md)
+- [データベーステーブルを変更するタイミングと方法を理解す&#x200B;る](modifying-core-and-third-party-tables.md)
