@@ -1,7 +1,7 @@
 ---
 title: ソフトウェアRecommendations
 description: Adobe CommerceおよびMagento Open Sourceのデプロイメントの最適なパフォーマンスに関連する推奨ソフトウェアのリストを確認します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8572cc8702d6f7e9c40b64110a9ba18aa5784f44
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 0%
@@ -34,13 +34,15 @@ ht-degree: 0%
 >
 >net.ipv4.tcp_tw_reuse を有効にしても、着信接続には影響しません。
 
-```terminal
+```text
 net.ipv4.tcp_tw_reuse = 1
 ```
 
 カーネルパラメータ `net.core.somaxconn` は、接続を待機するオープンソケットの最大数を制御します。 この値は 1024 まで安全に増やすことができますが、この値を処理するサーバーの機能と関連付ける必要があります。 このカーネルパラメータを有効にするには、 `/etc/sysctl.conf`:
 
-`net.core.somaxconn = 1024`
+```text
+net.core.somaxconn = 1024
+```
 
 ## PHP
 
@@ -121,7 +123,9 @@ Magento Open SourceとAdobe Commerce:
 
 すべての [!DNL Commerce] データまたはコードをディスクにダンプしない場合は、次のようにメモリ制限を設定します。
 
-`memory_limit=1G`
+```text
+memory_limit=1G
+```
 
 デバッグの場合は、この値を 2G に増やします。
 
