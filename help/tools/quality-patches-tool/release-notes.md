@@ -1,9 +1,9 @@
 ---
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
-source-git-commit: 6d0b5515792afe33eab440290413b84d251796cc
+source-git-commit: aad242e3a458e40fb1977399649ffe3e31696cd3
 workflow-type: tm+mt
-source-wordcount: '9752'
+source-wordcount: '10066'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,22 @@ ht-degree: 0%
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.24 {#v1-1-24}
+
+* **ACSD-45168** (Adobe CommerceおよびMagento Open Source>=2.4.2 &lt;2.4.6) - SEO に対応する URL が *url_key* 属性は、store-view レベルで上書きされます。
+* **ACSD-46865** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.6) — 非同期インデックス作成が有効な場合に出荷とクレジットメモのグリッドが入力されない問題を修正しました。
+* **ACSD-47004** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.6) - VAT ID のない請求先住所に VAT が適用されない問題を修正しました。
+* **ACSD-47803** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) — 在庫切れの設定可能な製品スウォッチが使用可能な状態で表示される問題を修正しました。
+* **ACSD-47137** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.6) - pub/media フォルダーが非常に大きい場合の画像ギャラリーの読み込み速度が向上します。
+* **ACSD-46770** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) - *E メールの注文確認* がオフになっている。
+* **ACSD-47955** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.6) - GraphQL で買い物かごの割引が正しく表示されない問題を修正しました。
+* **ACSD-46617** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) - *チェックアウトを続行* ボタンは、小計が設定済みの *最小注文額*.
+* **ACSD-47079** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.5) - REST APIPOST/rest/V1/inventory/source-items を使用して下位製品の在庫ステータスが変更された場合に、複合製品（バンドル、グループ化、設定可能）の在庫ステータスが更新されない問題を修正しました。
+* **ACSD-47336** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) — 修正点 *問題が発生しました。* コマース管理で通知を破棄する際にエラーが発生しました。
+* **ACSD-47559** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6 の場合 ) - 「 Preview Email Template 」領域が完全に表示されない問題を修正しました。
+* **ACSD-47920** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) - Rest API を介してゲストユーザーとして注文を行える問題を修正しました。 *ゲストによるチェックアウトを許可* がオフになっている。
+* 交換済みのパッチ：MDVA-39305、MDVA-42855。
 
 ## v1.1.23 {#v1-1-23}
 
@@ -465,7 +481,7 @@ ht-degree: 0%
 * **MDVA-31236** (*Adobe Commerceの場合 >=2.4.0 &lt;2.4.2.2*) — カスタムリソースにアクセスできる管理者が 2FA を設定したりログインしたりできない問題を修正しました。
 * **MDVA-30845** (*Adobe Commerceの場合 >=2.3.5 &lt;2.3.7>*) - *申し訳ありませんが、現時点でこの注文に使用できる見積もりはありません* UPS XML/USPS/DHL に接続できない場合、エラーが表示され、他の発送方法は使用できません。
 * **MDVA-32133** (*Adobe Commerceの場合 >=2.4.0 &lt;2.4.1*) — 場合によってはメディアギャラリーがページビルダーから読み込まれない問題を修正しました。
-* **MDVA-12304** (*Adobe Commerceの場合 >=2.3.0 &lt;2.4.2.2*) - cookie の最大数を 50 から 200 に増やします。
+* **MDVA-12304** (*(Adobe Commerceの場合 )=2.3.0 以降*) - cookie の最大数を 50 から 200 に増やします。
 * **MDVA-32632** (*Adobe Commerceの場合 >=2.3.2 &lt;2.3.5>*) — 注文が支払いシステムに表示されるが、Adobe Commerceには表示されない問題を修正しました。
 * **MDVA-32449** (*Adobe Commerceの場合 >=2.3.0 &lt;2.3.6> || 2.4.0 || >=2.4.1 &lt;2.4.2 （B2B 拡張機能を使用）*) — 注文履歴の読み込みが非常に遅い、または読み込みがまったく行われない問題を修正しました。
 * **MDVA-32739** (*Adobe Commerceの場合 >=2.3.0 &lt;2.4.2.2*) — 非同期電子メール通知を有効にすると、古いセールスメールが送信される問題を修正しました。
