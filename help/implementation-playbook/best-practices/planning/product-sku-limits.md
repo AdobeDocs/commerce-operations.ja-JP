@@ -4,9 +4,9 @@ description: サイトのパフォーマンスを最大化するために、製�
 role: Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: 3a187ae8c066e56df0d7f4981d26ffb934f64576
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,11 @@ ht-degree: 0%
 
 # 製品 SKU 設定のベストプラクティス
 
-パフォーマンスを最大限に高めるために、効果的な製品在庫管理単位 (SKU) の推奨最大数は 1,000 万です。 この有効な製品の最大数は、次のように計算されます。
+パフォーマンスを最大限に高めるために、有効な製品在庫管理単位 (SKU) の推奨最大数は 2 億 4200 万です。 この有効な製品の最大数は、次のように計算されます。
 
-`Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups`
+```text
+Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups
+```
 
 有効な SKU の数が上限を超えると、製品データの取得が遅くなり、管理操作が完了するまでの時間が長くなります。
 
