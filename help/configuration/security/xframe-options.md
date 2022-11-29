@@ -1,9 +1,9 @@
 ---
 title: X-Frame-Options ヘッダー
 description: X-Frame-Options を使用して、ページのレンダリングを制御します。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: db696b8ca501d128db655c5ebb161c654c6378a7
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,13 @@ ht-degree: 0%
 
 ## 実装方法 `X-Frame-Options`
 
-次の値を設定： `X-Frame-Options` in `<magento_root>/app/etc/env.php`. デフォルト値は次のとおりです。
+次の値を設定： `X-Frame-Options` in `<project-root>/app/etc/env.php`. デフォルト値は次のように設定されます。
 
 ```php
 'x-frame-options' => 'SAMEORIGIN',
 ```
+
+変更を `env.php` ファイルを有効にします。
 
 >[!TIP]
 >
@@ -44,10 +46,8 @@ ht-degree: 0%
 
 次の例では、HTTP プロトコルを使用して Commerce サーバーに接続できる任意のマシンから実行できる curl を使用します。
 
-次のコマンドを使用します。
-
 ```bash
-curl -I -v --location-trusted '<your storefront URL>'
+curl -I -v --location-trusted '<storefront-URL>'
 ```
 
 を探します。 `X-Frame-Options` の値を含める必要があります。
