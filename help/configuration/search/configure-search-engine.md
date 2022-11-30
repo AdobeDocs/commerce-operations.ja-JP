@@ -1,9 +1,9 @@
 ---
 title: 検索エンジンの設定
 description: 検索エンジンをAdobe CommerceとMagento Open Sourceで設定
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 66681f06c15907a5d25e71005c27785f0745ed63
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 このセクションでは、Adobe CommerceとMagento Open SourceでElasticsearchまたは OpenSearch をテストするために選択する必要がある最小の設定について説明します。 バージョン 2.4.4 および 2.4.3-p2 以降では、ラベルの付いたすべてのフィールド **Elasticsearch** は OpenSearch にも適用されます。
 
-検索エンジンの設定について詳しくは、 [ユーザーガイド](https://docs.magento.com/user-guide/catalog/search-elasticsearch.html).
+検索エンジンの設定について詳しくは、 [ユーザーガイド](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## 管理者から検索エンジンを設定する
 
