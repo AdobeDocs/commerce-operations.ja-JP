@@ -1,9 +1,9 @@
 ---
 title: 前提条件
 description: 前提条件の手順を完了して、Adobe CommerceまたはMagento Open Sourceプロジェクトのアップグレードを準備します。
-source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
+source-git-commit: 6782498985d4fd6540b0481e2567499f74d04d97
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,7 @@ Adobe CommerceまたはMagento Open Sourceを実行するために必要な事�
 
 - すべてのソフトウェアを更新
 - サポートされている検索エンジンがインストールされていることを確認します。
+- データベーステーブル形式の変換
 - 開くファイルの制限を設定する
 - Cron ジョブが実行中であることを確認します。
 - 設定 `DATA_CONVERTER_BATCH_SIZE`
@@ -29,6 +30,10 @@ Adobe CommerceまたはMagento Open Sourceを実行するために必要な事�
 この [システム要件](../../installation/system-requirements.md) Adobe CommerceとMagento Open Sourceリリースでテストされたサードパーティソフトウェアのバージョンを正確に説明します。
 
 環境内のすべてのシステム要件と依存関係を更新していることを確認します。 PHP を参照 [7.4](https://www.php.net/manual/en/migration74.php), PHP [8.0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php)、および [必要な PHP 設定](../../installation/prerequisites/php-settings.md#php-settings).
+
+>[!NOTE]
+>
+>Adobe Commerce on cloud infrastructure Pro プロジェクトの場合、 [サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) ステージング環境と実稼動環境でサービスをインストールまたは更新するためのチケット。 必要なサービスの変更を示し、更新した `.magento.app.yaml` および `services.yaml` ファイルと PHP のバージョンをチケット内で指定します。 Cloud インフラストラクチャチームがプロジェクトを更新するまでに最大 48 時間かかる場合があります。 詳しくは、 [サポートされるソフトウェアとサービス](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
 
 ## サポートされている検索エンジンがインストールされていることを確認します。
 
@@ -63,13 +68,13 @@ Adobe CommerceとMagento Open Sourceがソフトウェアを使用するには�
 
 参照： [アップグレードElasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) データのバックアップ、移行に関する潜在的な問題の検出、アップグレードのテストを実稼動環境にデプロイする前に行う手順について詳しくは、 現在のバージョンのElasticsearchに応じて、完全なクラスターの再起動が必要な場合と不要な場合があります。
 
-Elasticsearchには JDK 1.8 以降が必要です。 詳しくは、 [Java Software Development Kit(JDK) のインストール](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) をクリックして、インストールされている JDK のバージョンを確認します。
+Elasticsearchには Java Development Kit(JDK)1.8 以降が必要です。 詳しくは、 [Java Software Development Kit(JDK) のインストール](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) をクリックして、インストールされている JDK のバージョンを確認します。
 
 [設定Elasticsearch](../../configuration/search/configure-search-engine.md) では、サポート対象のバージョンにElasticsearch2 を更新した後に実行する必要があるタスクについて説明します。
 
 ### OpenSearch
 
-OpenSearch は、Elasticsearch7.10.2のオープンソースのフォークで、Elasticsearchのライセンスの変更に従っています。 Adobe CommerceとMagento Open Sourceの次のリリースでは、OpenSearch のサポートが導入されています。
+OpenSearch は、Elasticsearch7.10.2のオープンソースのフォークで、Elasticsearchのライセンスの変更に続いています。 Adobe CommerceとMagento Open Sourceの次のリリースでは、OpenSearch のサポートが導入されています。
 
 - 2.4.4
 - 2.4.3-p2
@@ -79,11 +84,15 @@ OpenSearch は、Elasticsearch7.10.2のオープンソースのフォークで�
 
 OpenSearch には JDK 1.8 以降が必要です。 詳しくは、 [Java Software Development Kit(JDK) のインストール](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) をクリックして、インストールされている JDK のバージョンを確認します。
 
-[Magentoを設定してElasticsearch](../../configuration/search/configure-search-engine.md) では、検索エンジンを変更した後に実行する必要があるタスクについて説明します。
+[検索エンジンの設定](../../configuration/search/configure-search-engine.md) では、検索エンジンを変更した後に実行する必要があるタスクについて説明します。
 
 ### サードパーティの拡張機能
 
 拡張機能と 2.4 への完全な互換性があるかどうかについては、検索エンジンのベンダーにお問い合わせいただくことをお勧めします。
+
+## データベーステーブル形式の変換
+
+すべてのデータベーステーブルの形式は、次の形式から変換する必要があります： `COMPACT` から `DYNAMIC`. また、次のストレージエンジンタイプを変換する必要があります： `MyISAM` から `InnoDB`. 詳しくは、 [ベストプラクティス](../../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md).
 
 ## 開くファイルの制限を設定する
 
@@ -116,9 +125,9 @@ Bash シェルに値を設定するには、次の手順を実行します。
 >
 >この場合、 `pcre.recursion_limit` プロパティを `php.ini` ファイルを作成する必要があります。
 
-## cron ジョブが実行中であることを確認します。
+## Cron ジョブが実行中であることを確認します。
 
-UNIX タスクスケジューラ `cron` は、毎日のAdobe CommerceおよびMagento Open Sourceの運用にとって重要です。 インデックスの再作成、ニュースレター、電子メール、サイトマップなどのスケジュールを設定します。 いくつかの機能を使用するには、ファイルシステムの所有者として少なくとも 1 つの cron ジョブを実行する必要があります。
+UNIX タスクスケジューラ `cron` は、毎日のAdobe CommerceおよびMagento Open Sourceの運用にとって重要です。 インデックス再作成、ニュースレター、電子メール、サイトマップなどのスケジュールを設定します。 いくつかの機能を使用するには、ファイルシステムの所有者として少なくとも 1 つの cron ジョブを実行する必要があります。
 
 cron ジョブが正しく設定されていることを確認するには、ファイルシステムの所有者として次のコマンドを入力して crontab を確認します。
 
@@ -177,7 +186,7 @@ Adobe Commerce 2.4 には、一部のデータをシリアル化から JSON に�
 
    >[!NOTE]
    >
-   > `DATA_CONVERTER_BATCH_SIZE` メモリが必要です。最初にテストしないで、大きな値（約 1GB）に設定しないでください。
+   > `DATA_CONVERTER_BATCH_SIZE` メモリが必要です。最初にテストしないで、大きな値（約 1 GB）に設定しないでください。
 
 1. アップグレードが完了したら、変数の設定を解除できます。
 
@@ -191,7 +200,7 @@ Adobe Commerce 2.4 には、一部のデータをシリアル化から JSON に�
 
 ファイルシステム内のディレクトリは、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md) グループ化します。
 
-ファイルシステムの権限が正しく設定されていることを確認するには、アプリケーションサーバーにログインするか、ホスティングプロバイダーのファイルマネージャーアプリケーションを使用します。
+ファイルシステムの権限が正しく設定されていることを確認するには、アプリケーションサーバーにログインするか、ホスティングプロバイダーの File Manager アプリケーションを使用します。
 
 例えば、アプリケーションが `/var/www/html/magento2`:
 
