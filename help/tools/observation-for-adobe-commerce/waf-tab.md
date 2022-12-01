@@ -1,55 +1,55 @@
 ---
-title: 「 [!UICONTROL WAF] タブ"
-description: 詳しくは、 [!UICONTROL WAF] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: 431bc7c06e76b061a94026aa380d8be88d227099
+title: 「 [!DNL WAF] タブ"
+description: 詳しくは、 [!DNL WAF] タブ [!DNL Observation for Adobe Commerce].
+source-git-commit: d3d178c333e6f1436a96993611930cb12cd66a71
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '160'
 ht-degree: 0%
 
 ---
 
-# この [!UICONTROL WAF] タブ
+# この [!DNL WAF] タブ
 
-この **[!UICONTROL WAF]** 「 」タブには、ファイアウォールによって通過およびブロックされたトラフィックが表示されます。
+この **[!DNL WAF]** タブには、通過およびブロックされたトラフィックが表示されます [!DNL firewall].
 
-## [!UICONTROL WAF traffic summary]
+## [!DNL WAF traffic summary]
 
 ![WAF トラフィックの概要](../../assets/tools/observation-for-adobe-commerce/waf-1.png)
 
-この **[!UICONTROL WAF traffic summary]** frame は、ファイアウォールが通過、ログ、ブロック、および失敗したトラフィックの数を示します。
+この **[!DNL WAF traffic summary]** frame は、 [!DNL firewall].
 
-## [!UICONTROL WAF Top 10 blocked IP Addresses]
+## [!DNL WAF Top 10 blocked IP Addresses]
 
 ![WAF 上位 10 のブロック IP アドレス](../../assets/tools/observation-for-adobe-commerce/waf-2.png)
 
-この **[!UICONTROL WAF Top 10 blocked IP Addresses]** frame には、ファイアウォールによってブロックされた IP アドレスの上位 10 件が表示されます。
+この **[!DNL WAF Top 10 blocked IP Addresses]** フレームには、 [!DNL firewall].
 
-## [!UICONTROL WAF Top 10 countries for blocked requests]
+## [!DNL WAF Top 10 countries for blocked requests]
 
 ![ブロックされた要求の上位 10 カ国](../../assets/tools/observation-for-adobe-commerce/waf-3.jpg)
 
-この **[!UICONTROL WAF Top 10 countries for blocked requests]** frame は、ファイアウォールによってブロックされた要求に対する上位 10 の国に対するブロックされた要求の数を表示します。
+この **[!DNL WAF Top 10 countries for blocked requests]** frame は、上位 10 の国に対するブロックされた要求の数を示します。 [!DNL firewall].
 
-## [!UICONTROL WAF Top 10 logged IP Addresses]
+## [!DNL WAF Top 10 logged IP Addresses]
 
 ![WAF 上位 10 件のログに記録された IP アドレス](../../assets/tools/observation-for-adobe-commerce/waf-4.jpg)
 
-この **[!UICONTROL WAF Top 10 logged IP Addresses]** frame には、ファイアウォールによってログに記録された上位 10 件の IP アドレスが表示されます。
+この **[!DNL WAF Top 10 logged IP Addresses]** フレームには、上位 10 件のログに記録された IP アドレスが [!DNL firewall].
 
-## [!UICONTROL Top 10 WAF Rules Executed and Logged by IP address]
+## [!DNL Top 10 WAF Rules Executed and Logged by IP address]
 
 ![IP アドレスで実行および記録される上位 10 の WAF ルール](../../assets/tools/observation-for-adobe-commerce/waf-5.jpg)
 
-この **[!UICONTROL Top 10 WAF Rules Executed and Logged by IP address]** frame は、最も頻繁に一致するファイアウォールルールの上位 10 位の IP アドレスを示します。
+この **[!DNL Top 10 WAF Rules Executed and Logged by IP address]** frame は、最も頻繁に一致する上位 10 の IP アドレスを示します [!DNL firewall] ルール。
 
-## [!UICONTROL WAF Logged Details]
+## [!DNL WAF Logged Details]
 
 ![WAF ログの詳細](../../assets/tools/observation-for-adobe-commerce/waf-6.jpg)
 
-この **[!UICONTROL WAF Logged Details]** frame は、タイムスタンプ、市区町村、地域、データセンターなどの詳細を含む、ファイアウォールによってログに記録されたリクエストを表示します。
+この **[!DNL WAF Logged Details]** フレームには、 [!DNL firewall]（タイムスタンプ、市区町村、地域、データセンターなどの詳細を含む）
 
-## [!UICONTROL WAF Blocked Details]
+## [!DNL WAF Blocked Details]
 
 ![WAF ブロックの詳細](../../assets/tools/observation-for-adobe-commerce/waf-7.jpg)
 
-この **[!UICONTROL WAF Blocked Details]** frame は、タイムスタンプ、市区町村、地域、データセンターなどの詳細を含む、ファイアウォールによってブロックされた要求を表示します。
+この **[!DNL WAF Blocked Details]** フレームは、 [!DNL firewall]（タイムスタンプ、市区町村、地域、データセンターなどの詳細を含む）
