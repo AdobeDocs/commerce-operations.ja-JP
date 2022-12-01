@@ -2,7 +2,7 @@
 title: 要件チェックリスト
 description: Adobe Commerceの実装に備えるのに役立つ、包括的な質問のリストを使用します。
 exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: d18be812626723e203d2308be8c3f9783a19b43b
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -205,7 +205,7 @@ ht-degree: 0%
 
 - Adobe Commerceと統合されるのは、どの注文管理システムですか？ ( 例：Microsoft Dynamics、SAP、Retail Pro)
 
-- Adobe Commerceと統合する製品在庫管理システムを教えてください。 ( 例：アキネオ、インリバー、ブルーストーン )
+- Adobe Commerceと統合する製品情報管理システムを教えてください。 ( 例：アキネオ、インリバー、ブルーストーン )
 
 - Adobe Commerceと統合する顧客関係管理システムはどれですか？ ( 例：ハブスポット、Salesforce、Klaviyo)
 
