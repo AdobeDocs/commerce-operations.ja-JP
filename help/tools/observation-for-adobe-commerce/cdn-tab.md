@@ -1,9 +1,9 @@
 ---
 title: 「 [!UICONTROL CDN] タブ"
 description: 詳しくは、 [!UICONTROL CDN] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: 424c832ba7580e5d766dea33e3b776eaca7a0d77
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '699'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ![選択した期間に対する Fastly キャッシュの平均応答時間（秒）](../../assets/tools/observation-for-adobe-commerce/cdn-tab-9.png)
 
-このフレームは、キャッシュ可能なリクエストの期間を秒単位で表示します。つまり、 `cache_response` が MISS の場合は、選択した時間のキャッシュされなかった応答の平均が表示されます。
+このフレームは、キャッシュ可能なリクエストの期間を秒単位で表示します。つまり、 `cache_response` は [!UICONTROL MISS]の場合は、選択した時間に対する、キャッシュされなかった応答の平均が表示されます。
 
 ## [!UICONTROL Fastly Cache Average Response for selected time period in seconds, faceted by POP]
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ![リクエスト — 1 週間前と比較して選択された期間以降](../../assets/tools/observation-for-adobe-commerce/cdn-tab-12.png)
 
-このフレームは、上部の「合計リクエスト数」の概要ボックスに似ていますが、前の週のリクエスト数が表示されます。 これらはすべてのリクエストであり、キャッシュ可能なリクエスト ( `is_cacheable` が true の場合は除く )。
+このフレームは、 [!UICONTROL Total Requests] が最上位に表示されますが、これには前の週のリクエスト数が表示されます。 これらはすべてのリクエストであり、キャッシュ可能なリクエスト ( `is_cacheable` が true の場合は除く )。
 
 ## [!UICONTROL Response Count]
 
