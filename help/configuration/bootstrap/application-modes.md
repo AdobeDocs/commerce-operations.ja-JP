@@ -1,9 +1,9 @@
 ---
 title: アプリケーションモード
 description: コマースアプリケーションは、必要に応じて異なるモードで動作します。 使用可能なアプリケーションモードの詳細なリストを表示します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[Adobe Commerce an cloud infrastructure](https://devdocs.magento.com/cloud/bk-cloud.html) は、実稼動モードとメンテナンスモードのみをサポートしています。
+>[Adobe Commerce an cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) は、実稼動モードとメンテナンスモードのみをサポートしています。
 
 ## デフォルトモード
 
@@ -71,4 +71,4 @@ Commerce が実行時に静的ファイルをオンデマンドで動的に見�
 
 次の項目を作成できます。 [カスタムメンテナンスページ](../../upgrade/troubleshooting/maintenance-mode-options.md)、メンテナンスモードを手動で有効または無効にし、許可された IP アドレスからの訪問者がストアを通常どおり表示できるようにメンテナンスモードを設定します。 詳しくは、 [メンテナンスモードの有効化と無効化](../../installation/tutorials/maintenance-mode.md).
 
-クラウドインフラストラクチャで Commerce を使用している場合、コマースアプリケーションはデプロイフェーズ中にメンテナンスモードで実行されます。 デプロイメントが正常に完了すると、Commerce アプリケーションは実稼動モードでの実行に戻ります。 詳しくは、 [デプロイメントフック](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-hook) 内 _Commerce Cloudガイド_.
+クラウドインフラストラクチャで Commerce を使用している場合、コマースアプリケーションはデプロイフェーズ中にメンテナンスモードで実行されます。 デプロイメントが正常に完了すると、Commerce アプリケーションは実稼動モードでの実行に戻ります。 詳しくは、 [デプロイメントフック](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) 内 _Commerce on Cloud Infrastructure ガイド_.

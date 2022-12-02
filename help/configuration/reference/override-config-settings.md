@@ -1,9 +1,9 @@
 ---
 title: 設定の上書き
 description: 環境変数を使用して設定を上書きする方法を説明します。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->以下を確認します。 [環境の設定](https://devdocs.magento.com/cloud/env/variables-intro.html) トピック _Commerce Cloudガイド_ を参照してください。
+>以下を確認します。 [環境の設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) トピック _Commerce on Cloud Infrastructure ガイド_.
 
 ## 環境変数
 
@@ -253,6 +253,6 @@ $_ENV['CONFIG__DEFAULT__GENERAL__STORE_INFORMATION__MERCHANT_VAT_NUMBER'] = '123
 >
 >- を使用して、 `$_ENV` 配列、 `variables_order = "EGPCS"`（環境、取得、投稿、Cookie、サーバー） `php.ini` ファイル。 詳しくは、 [PHP ドキュメント](https://www.php.net/manual/en/ini.core.php).
 >
->- クラウドインフラストラクチャ上のAdobe Commerceの場合、 [Project Web インターフェイス](https://devdocs.magento.com/cloud/project/project-webint-basic.html#project-conf-env-var)を使用する場合は、変数名の前にを付ける必要があります。 `env:`. 例：
+>- クラウドインフラストラクチャ上のAdobe Commerceの場合、 [Project Web インターフェイス](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project)を使用する場合は、変数名の前にを付ける必要があります。 `env:`. 例：
 >
->![環境変数の例](https://devdocs.magento.com/common/images/cloud/cloud_env_var_example.png)
+>![環境変数の例](../../assets/configuration/cloud-console-envvariable.png)

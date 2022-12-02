@@ -1,9 +1,9 @@
 ---
 title: クラウドインフラストラクチャ上のコマース用リモートストレージ
 description: クラウドインフラストラクチャ上のAdobe Commerceのリモートストレージを設定する方法に関するガイダンスを参照してください。
-source-git-commit: 9a5993c9a65ad210f1a9682734730f235bbc3d44
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 リモートストレージソリューションをクラウドインフラストラクチャ上のAdobe Commerceプロジェクトで使用する場合は、 [Amazon S3](https://docs.fastly.com/en/guides/amazon-s3) 指導 _Fastly_ Fastly 画像の最適化がAWS S3 で確実に機能するようにするドキュメント。
 
-準備を整えて [Fastly 認証情報](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds). Pro プロジェクトでは、SSH を使用してサーバーに接続し、 `/mnt/shared/fastly_tokens.txt` ファイル。 ステージング環境と実稼動環境には、一意の資格情報が割り当てられます。 各環境の資格情報を取得する必要があります。
+準備を整えて [Fastly 認証情報](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#get-fastly-credentials). Pro プロジェクトでは、SSH を使用してサーバーに接続し、 `/mnt/shared/fastly_tokens.txt` ファイル。 ステージング環境と実稼動環境には、一意の資格情報が割り当てられます。 各環境の資格情報を取得する必要があります。
 
 次のタスクを使用して、クラウドプロジェクトのリモートストレージの設定を続行します。
 

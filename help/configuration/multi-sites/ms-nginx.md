@@ -1,9 +1,9 @@
 ---
 title: Nginx で複数の Web サイトを設定
 description: Nginx で複数の Web サイトを設定するには、このチュートリアルに従います。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
    ホスト環境で複数の Web サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーにお問い合わせください。
 
-   クラウドインフラストラクチャ上にAdobe Commerceを設定するには、追加のタスクが必要です。 このトピックで説明したタスクを完了した後、 [複数の Web サイトまたはストアを設定する](https://devdocs.magento.com/cloud/project/project-multi-sites.html) 内 _Commerce Cloudガイド_.
+   クラウドインフラストラクチャ上にAdobe Commerceを設定するには、追加のタスクが必要です。 このトピックで説明したタスクを完了した後、 [複数の Web サイトまたはストアを設定する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 内 _Commerce on Cloud Infrastructure ガイド_.
 
 - 1 つの仮想ホストファイルで複数のドメインを受け入れるか、Web サイトごとに 1 つの仮想ホストを使用します。仮想ホストの構成ファイルは、 `/etc/nginx/sites-available`.
 - 次を使用する `nginx.conf.sample` Commerce で提供され、このチュートリアルで説明する変更のみが含まれます。
@@ -265,8 +265,8 @@ bin/magento cache:clean config full_page
 1. 次の形式で静的ルートを追加します。
 
    ```conf
-   <ip address> french.mysite.mg
-   <ip address> german.mysite.mg
+   <ip-address> french.mysite.mg
+   <ip-address> german.mysite.mg
    ```
 
 1. ブラウザーで次の URL のいずれかに移動します。
@@ -280,7 +280,7 @@ bin/magento cache:clean config full_page
 >[!INFO]
 >
 >- ホスト環境で複数の Web サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーにお問い合わせください。
->- クラウドインフラストラクチャ上にAdobe Commerceを設定するには、追加のタスクが必要です。参照 [複数のクラウド Web サイトまたはストアを設定する](https://devdocs.magento.com/cloud/project/project-multi-sites.html) 内 _Commerce Cloudガイド_.
+>- クラウドインフラストラクチャ上にAdobe Commerceを設定するには、追加のタスクが必要です。参照 [複数のクラウド Web サイトまたはストアを設定する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 内 _Commerce on Cloud Infrastructure ガイド_.
 
 
 ### トラブルシューティング

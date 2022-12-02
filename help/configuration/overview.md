@@ -1,9 +1,9 @@
 ---
 title: 設定ガイドの概要
 description: Adobe CommerceまたはMagento Open Sourceアプリケーション用に設定可能なすべての機能とサービスについて説明します。
-source-git-commit: 573b407bf29fd4dea2c0e9a52593f65fa64ffa2d
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -29,4 +29,4 @@ ht-degree: 0%
 
 ## クラウド設定
 
-[!DNL Commerce on cloud infrastructure] は [設定ファイルのセット](https://devdocs.magento.com/cloud/env/environments.html) を更新するには、 [!DNL Commerce] ホスト環境のアプリケーション機能およびサービス。 Adobeのクラウドでホストされる環境には固有の性質があるので、常に [クラウドガイド](https://devdocs.magento.com/cloud/bk-cloud.html) を参照してください。
+[!DNL Commerce on cloud infrastructure] は [設定ファイルのセット](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) をクリックして、ホスト環境の Commerce アプリケーション機能およびサービスを更新します。 Adobeクラウドでホストされる環境には固有の特性があるので、常に [クラウドガイド](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) を参照してください。

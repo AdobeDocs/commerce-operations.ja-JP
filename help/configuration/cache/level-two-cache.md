@@ -1,9 +1,9 @@
 ---
 title: L2 キャッシュの設定
 description: L2 キャッシュを設定する方法を説明します。
-source-git-commit: 2ef8b48fab84221c8e6423f41126bbee37706809
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Commerce は、ハッシュ化されたデータバージョンを Redis に格�
 
 >[!INFO]
 >
->クラウドインフラストラクチャ上のAdobe Commerceの場合、 [変数をデプロイ](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_backend) L2 キャッシュ設定用。
+>クラウドインフラストラクチャ上のAdobe Commerceの場合、 [変数をデプロイ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) L2 キャッシュ設定用。
 
 ## 設定例
 

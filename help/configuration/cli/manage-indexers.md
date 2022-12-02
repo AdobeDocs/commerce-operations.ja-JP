@@ -1,9 +1,9 @@
 ---
 title: インデクサーの管理
 description: コマースインデクサーの表示および管理方法の例を参照してください。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -220,7 +220,7 @@ Catalog Search:                                    Update on Save
 
 >[!INFO]
 >
->インデクサーモードを切り替える前に、Web サイトを [維持](../../installation/tutorials/maintenance-mode.md) モードと [cron ジョブを無効にする](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs). これにより、データベースのロックに影響を受けなくなります。
+>インデクサーモードを切り替える前に、Web サイトを [維持](../../installation/tutorials/maintenance-mode.md) モードと [cron ジョブを無効にする](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). これにより、データベースのロックに影響を受けなくなります。
 
 インデクサー設定を指定するには：
 

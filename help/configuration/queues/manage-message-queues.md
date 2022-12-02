@@ -1,9 +1,9 @@
 ---
 title: メッセージキューの管理
 description: Adobe Commerceのコマンドラインからメッセージキューを管理する方法を説明します。
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Cron ジョブは、コンシューマーを再起動するデフォルトのメ
 
 >[!INFO]
 >
->Adobe Commerceストアがクラウドプラットフォームでホストされている場合、 [`CRON_CONSUMERS_RUNNER`](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner) を設定するには、以下を実行します。 `consumers_runner` cron ジョブ。
+>Adobe Commerceストアがクラウドプラットフォームでホストされている場合、 [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) を設定するには、以下を実行します。 `consumers_runner` cron ジョブ。
 
 ### 特定の設定
 
@@ -82,6 +82,6 @@ Cron ジョブは、コンシューマーを再起動するデフォルトのメ
 
    >[!INFO]
    >
-   >Adobe Commerceストアがクラウドプラットフォームでホストされている場合、 [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://devdocs.magento.com/cloud/env/variables-deploy.html#consumers_wait_for_max_messages) コンシューマーがメッセージキューからのメッセージを処理する方法を設定する場合。
+   >Adobe Commerceストアがクラウドプラットフォームでホストされている場合、 [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) コンシューマーがメッセージキューからのメッセージを処理する方法を設定する場合。
 
 詳しくは、 [メッセージキューコンシューマーを開始](../cli/start-message-queues.md).
