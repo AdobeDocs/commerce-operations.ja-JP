@@ -4,9 +4,9 @@ description: Adobe Commerce 2.3.5 からアップグレードするためのAdob
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 1abe86197de68336e10c50cab7ad38eebb098aeb
+source-git-commit: 071e88c6a07df0f74b6d4b09cce858710c9332cc
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 この記事では、バージョン 2.3.4 以前からAdobe Commerce 2.3.5 にアップグレードする際にデータベースを準備する方法について説明します。
 
-このアップグレードでは、サポートチームがAdobe Commerceの要件を満たすために、クラウドインフラストラクチャ上の MariaDB を MariaDB 10.0 から 10.2 にアップグレードする必要があります。 Adobe Commerceバージョン 2.3.5 以降。
+このアップグレードでは、Adobe Commerceバージョン 2.3.5 以降の要件を満たすために、サポートチームがクラウドインフラストラクチャ上の MariaDB を MariaDB 10.0 から 10.2 にアップグレードする必要があります。
 
 ## 影響を受ける製品およびバージョン
 
@@ -24,77 +24,118 @@ Adobe Commerceバージョン 2.3.4 以前および MariaDB バージョン 10.0
 
 ## アップグレード用のデータベースの準備
 
-Adobe Commerceサポートチームがアップグレードプロセスを開始する前に、データベースを準備する必要があります。そのためには、以下の場所にあるすべてのテーブルの形式を変換します。 `COMPACT` から `DYNAMIC`. また、次のストレージエンジンタイプを変換する必要があります： `MyISAM` から `InnoDB`.
+Adobe Commerceサポートチームがアップグレードプロセスを開始する前に、データベーステーブルを変換してデータベースを準備します。
 
-データベースを変換するプランとスケジュールを作成する際は、次のガイドラインに従ってください。
+- 行の形式の変換元 `COMPACT` から `DYNAMIC`
+- ストレージエンジンの変換元 `MyISAM` から `InnoDB`
+
+変換を計画およびスケジュールする際は、次の点に注意してください。
 
 - 変換元 `COMPACT` から `DYNAMIC` 大規模なデータベースの場合、テーブルには数時間かかる場合があります。
 
-- データの破損を防ぐには、サイトがライブ状態のときに変換を実行しないでください。
+- データの破損を防ぐには、実稼働サイトで変換作業を完了しないでください。
 
 - サイトのトラフィックが少ない期間に、コンバージョン作業を完了します。
 
-- サイトの切り替え先 [メンテナンスモード](../../../installation/tutorials/maintenance-mode.md) 実行前 `ALTER` コマンド
+- サイトの切り替え先 [メンテナンスモード](../../../installation/tutorials/maintenance-mode.md) データベーステーブルを変換するコマンドを実行する前に、次の手順を実行します。
 
-### データベーステーブルの変換
+### データベーステーブルの行形式を変換
 
-クラスター内の 1 つのノードでテーブルを変換できます。 変更は、クラスター内の他のコアノードにレプリケートされます。
+クラスター内の 1 つのノードでテーブルを変換できます。 変更は、他のサービスノードに自動的にレプリケートされます。
 
 1. クラウドインフラストラクチャ環境のAdobe Commerceから、SSH を使用してノード 1 に接続します。
 
 1. MariaDB にログインします。
 
-1. テーブル形式を変換します。
+1. コンパクトからダイナミックフォーマットに変換するテーブルを指定します。
 
-   - コンパクトからダイナミックフォーマットに変換するテーブルを指定します。
+   ```mysql
+   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
+   ```
 
-      ```mysql
-      SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
-      ```
+1. 表のサイズを決定して、変換処理のスケジュールを設定します。
 
-   - 表のサイズを決定して、変換処理のスケジュールを設定します。
+   ```mysql
+   SELECT table_schema as 'Database', table_name AS 'Table', round(((data_length + index_length) / 1024 / 1024), 2) 'Size in MB' FROM information_schema.TABLES ORDER BY (data_length + index_length) DESC;
+   ```
 
-      ```mysql
-      SELECT table_schema as 'Database', table_name AS 'Table', round(((data_length + index_length) / 1024 / 1024), 2) 'Size in MB' FROM information_schema.TABLES ORDER BY (data_length + index_length) DESC;
-      ```
+   大きいテーブルは、変換に時間がかかります。 テーブルを確認し、優先度とテーブルサイズで変換作業をバッチ処理して、必要なメンテナンスウィンドウの計画に役立てます。
 
-      大きいテーブルは、変換に時間がかかります。 必要なメンテナンスウィンドウのタイミングを計画するために、テーブルのバッチをどの順序で変換するかに関して、サイトをメンテナンスモードに切り替えたり、サイトから切り替えたりする際には、適切に計画を立てる必要があります
+1. すべてのテーブルを一度に 1 つずつ動的形式に変換します。
 
-   - すべてのテーブルを一度に 1 つずつ動的形式に変換します。
+   ```mysql
+   ALTER TABLE [ table name here ] ROW_FORMAT=DYNAMIC;
+   ```
 
-      ```mysql
-      ALTER TABLE [ table name here ] ROW_FORMAT=DYNAMIC;
-      ```
+### データベーステーブルストレージ形式の変換
 
-1. テーブルストレージエンジンを更新します。
+クラスター内の 1 つのノードでテーブルを変換できます。 変更は、他のサービスノードに自動的にレプリケートされます。
 
-   - 使用するテーブルの識別 `MyISAM` ストレージ。
+ストレージ形式の変換プロセスは、Adobe Commerce Starter プロジェクトとAdobe Commerce Pro プロジェクトで異なります。
 
-      ```mysql
-      SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
-      ```
+- スターターアーキテクチャの場合は、MySQL を使用します。 `ALTER` コマンドを使用して形式を変換します。
+- Pro アーキテクチャでは、MySQL を使用します。 `CREATE` および `SELECT` を使用してデータベーステーブルを作成するコマンド `InnoDB` データを保存し、既存のテーブルから新しいテーブルにコピーします。 このメソッドは、変更がクラスター内のすべてのノードにレプリケートされることを保証します。
 
-   - 使用するテーブルを変換 `MyISAM` ～への保管 `InnoDB` ストレージ。
+**Adobe Commerce Pro プロジェクト用のテーブルストレージ形式の変換**
 
-      ```mysql
-      ALTER TABLE [ table name here ] ENGINE=InnoDB;
-      ```
+1. 使用するテーブルの識別 `MyISAM` ストレージ。
 
-1. 変換処理を確認します。
+   ```mysql
+   SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+   ```
 
-   変換処理の完了後に行ったコードデプロイメントによって、一部のテーブルが元の設定に戻る場合があるので、この手順が必要です。
+1. すべてのテーブルの変換先 `InnoDB` ストレージフォーマットを一度に 1 つずつ。
 
-   - MariaDB バージョン 10.2 へのスケジュールされたアップグレードの前日に、データベースにログインし、クエリを実行して形式とストレージエンジンを確認します。
-
-      ```mysql
-      SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
-      ```
+   - 名前の競合を防ぐために、既存のテーブルの名前を変更します。
 
       ```mysql
-      SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+      RENAME TABLE <existing_table> <table_old>;
       ```
 
-   - テーブルが元に戻されている場合は、手順を繰り返して、テーブルフォーマットとストレージエンジンを変更します。
+   - を使用するテーブルの作成 `InnoDB` 既存のテーブルのデータを使用したストレージ。
+
+      ```mysql
+      CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
+      ```
+
+   - 新しいテーブルに必要なデータがすべて含まれていることを確認します。
+
+   - 名前を変更した元のテーブルを削除します。
+
+
+**Adobe Commerce Starter プロジェクト用のテーブルストレージ形式の変換**
+
+1. 使用するテーブルの識別 `MyISAM` ストレージ。
+
+   ```mysql
+   SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+   ```
+
+1. 使用するテーブルを変換 `MyISAM` ～への保管 `InnoDB` ストレージ。
+
+   ```mysql
+   ALTER TABLE [ table name here ] ENGINE=InnoDB;
+   ```
+
+### データベース変換の検証
+
+MariaDB バージョン 10.2 へのスケジュールされたアップグレードの前日に、すべてのテーブルに正しい行フォーマットとストレージエンジンが含まれていることを確認します。 変換処理の完了後にコードをデプロイすると、一部のテーブルが元の設定に戻る場合があるので、検証が必要です。
+
+1. データベースにログインします。
+
+1. まだ `COMPACT` 行の書式。
+
+   ```mysql
+   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
+   ```
+
+1. まだ `MyISAM` ストレージ形式
+
+   ```mysql
+   SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+   ```
+
+1. テーブルが元に戻されている場合は、手順を繰り返して、テーブル行のフォーマットとストレージエンジンを変更します。
 
 ## 追加情報
 
