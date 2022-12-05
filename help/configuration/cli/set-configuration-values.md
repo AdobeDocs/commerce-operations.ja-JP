@@ -1,7 +1,7 @@
 ---
 title: 設定値の設定
 description: 設定値を設定し、管理でロックされている値を変更する方法について説明します。
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: cb8edb8de8f8419e9992b180ea927ba55cbd839b
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -133,8 +133,8 @@ bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path value
 | --- | --- |
 | `--scope` | 設定の範囲。 指定できる値は次のとおりです。 `default`, `website`または `store`. デフォルトはです。 `default`. |
 | `--scope-code` | 設定のスコープコード（Web サイトコードまたはストアビューコード） |
-| `-le or --lock-env` | 値をロックして管理で編集できなくするか、管理で既にロックされている設定を変更します。 このコマンドは、値を `<Commerce base dir>/app/etc/env.php` ファイル。 |
-| `-lc or --lock-config` | 値をロックして管理で編集できなくするか、管理で既にロックされている設定を変更します。 このコマンドは、値を `<Commerce base dir>/app/etc/config.php` ファイル。 この `--lock-config` オプションが上書きされます `--lock-env` 両方のオプションを指定した場合。 |
+| `-e or --lock-env` | 値をロックして管理で編集できなくするか、管理で既にロックされている設定を変更します。 このコマンドは、値を `<Commerce base dir>/app/etc/env.php` ファイル。 |
+| `-c or --lock-config` | 値をロックして管理で編集できなくするか、管理で既にロックされている設定を変更します。 このコマンドは、値を `<Commerce base dir>/app/etc/config.php` ファイル。 この `--lock-config` オプションが上書きされます `--lock-env` 両方のオプションを指定した場合。 |
 | `path` | _必須_. 設定パス |
 | `value` | _必須_. 設定の値 |
 
