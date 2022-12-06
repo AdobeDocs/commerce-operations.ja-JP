@@ -1,9 +1,9 @@
 ---
 title: 「 [!UICONTROL [!DNL RabbitMQ]] tab"
 description: 詳しくは、 [!UICONTROL [!DNL RabbitMQ]] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: e59b8db21c449fcf91466df7482849a0454bfe3e
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -18,24 +18,24 @@ ht-degree: 0%
 
 この **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** frame は、 [!DNL RabbitMQ] 選択した期間内に発生した
 
-* %Response [エラー] ノードの場合 [rabbit@host1]:%&#39;からの予期しない http 応答 ) （&#39;unexpected_resp_node1&#39;として）
-* &#39;%応答 [エラー] ノードの場合 [rabbit@host2]:%&#39;からの予期しない http 応答 ) (&#39;unexpected_resp_node2&#39;)
-* &#39;%応答 [エラー] ノードの場合 [rabbit@host3]:%&#39;からの予期しない http 応答 ) (&#39;unexpected_resp_node3&#39;)
-* &#39;%応答 [エラー] ノードの場合 [rabbit@host3]:Get &quot;http://localhost:15672/api/healthchecks/node/rabbit@host3&quot;:「node3_timeout_exceeded」としてのコンテキストデッドライン超過%)
-* &#39;%応答 [エラー] ノードの場合 [rabbit@host1]:Get &quot;http://localhost:15672/api/healthchecks/node/rabbit@host1&quot;:「node1_timeout_exceeded」としてのコンテキストのデッドラインが%を超えました
-* &#39;%応答 [エラー] ノードの場合 [rabbit@host2]:Get &quot;http://localhost:15672/api/healthchecks/node/rabbit@host2&quot;:「node2_timeout_exceeded」としてのコンテキストデッドライン超過%)
-* &#39;%401 Unauthorized%&#39;) (&#39;401_unauth&#39;)
-* &#39;%401 Unauthorized%&#39;) (&#39;401_unauth&#39;)
-* %サービスが再開されました：rabbitmq-server%) を&#39;rmq_service_restart&#39;として
-* &#39;%応答 [失敗] ノードの場合 [rabbit@host1]:nodedown%) を&#39;rmq_node1_down&#39;として
-* &#39;%応答 [失敗] ノードの場合 [rabbit@host2]:nodedown%) を&#39;rmq_node2_down&#39;として
-* &#39;%応答 [失敗] ノードの場合 [rabbit@host2]:nodedown%) を&#39;rmq_node2_down&#39;として
-* &#39;%Entity が変更されました：exchange/bindings.destination%&#39;) を&#39;rmq_entity_modified&#39;として使用する
-* &#39;%Entity が変更されました：exchange/bindings.destination%&#39;) を&#39;rmq_entity_modified&#39;として使用する
-* &#39;%Entity が変更されました：queue/exclusive%) を&#39;rmq_entity_created_q_exclusive&quot;%エンティティが変更されました：queue/auto_delete%) を&#39;rmq_entity_q_delete&#39;として
-* &#39;%Entity が変更されました：queue/durable%) を&#39;rmq_entity_modified_q_durable&#39;として
-* &#39;%Entity が変更されました：version/management%) を&#39;rmq_entity_modified_ver_mgt&#39;として
-* &#39;%Entity が変更されました：version/management%) を&#39;rmq_entity_modified_ver_mgt&#39;として
+* `%Response [error] for node [rabbit@host1]: unexpected http response from%`) `unexpected_resp_node1`
+* `%Response [error] for node [rabbit@host2]: unexpected http response from%`) `unexpected_resp_node2`
+* `%Response [error] for node [rabbit@host3]: unexpected http response from%`) `unexpected_resp_node3`
+* `%Response [error] for node [rabbit@host3]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host3": context deadline exceeded%`) `node3_timeout_exceeded`
+* `%Response [error] for node [rabbit@host1]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host1": context deadline exceeded%`) `node1_timeout_exceeded`
+* `%Response [error] for node [rabbit@host2]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host2": context deadline exceeded%`) `node2_timeout_exceeded`
+* `%401 Unauthorized%`) `401_unauth`
+* `%401 Unauthorized%`) `401_unauth`
+* `%Service restarted: rabbitmq-server%`) `rmq_service_restart`
+* `%Response [failed] for node [rabbit@host1]: nodedown%`) `rmq_node1_down`
+* `%Response [failed] for node [rabbit@host2]: nodedown%`) `rmq_node2_down`
+* `%Response [failed] for node [rabbit@host2]: nodedown%`) `rmq_node2_down`
+* `%Entity modified: exchange/bindings.destination%`) `rmq_entity_modified`
+* `%Entity modified: exchange/bindings.destination%`) `rmq_entity_modified`
+* `%Entity modified: queue/exclusive%`) `rmq_entity_created_q_exclusive` `%Entity modified: queue/auto_delete%`) `rmq_entity_q_delete`
+* `%Entity modified: queue/durable%`) `rmq_entity_modified_q_durable`
+* `%Entity modified: version/management%`) `rmq_entity_modified_ver_mgt`
+* `%Entity modified: version/management%`) `rmq_entity_modified_ver_mgt`
 
 ## [!UICONTROL [!DNL RabbitMQ] service start/stop signals]
 
@@ -43,8 +43,8 @@ ht-degree: 0%
 
 このフレームには [!DNL RabbitMQ] 選択した期間に発生したサービス開始/停止シグナル：
 
-* &#39;%[!DNL RabbitMQ] 停止を求められました…%&#39;) を&#39;rabbitmq_stop&#39;として
-* &#39;%Starting [!DNL RabbitMQ]%&#39;) を&#39;rabbitmq_start&#39;として
+* `%RabbitMQ is asked to stop...%`) `rabbitmq_stop`
+* `%Starting RabbitMQ%`) `rabbitmq_start`
 
 ## [!UICONTROL [!DNL RabbitMQ] errors]
 
@@ -52,22 +52,22 @@ ht-degree: 0%
 
 このフレームには [!DNL RabbitMQ] 選択した期間中に発生したエラー：
 
-* &#39;%exit （理由 {case_clause,timeout}、stacktrace {rabbit_mgmt_wm_healthchecks%}）を&#39;exit_timeout&#39;として&#39;
-* &#39;%client は予期せず TCP 接続を閉じました%&#39;) （&#39;client_closed_tcp_conn&#39;として）
-* &#39;%at 未定義の終了です。理由は、context shutdown_error%&#39;でシャットダウンされています )&#39;undef_exit&#39;として&#39;
-* &#39;%Connection attempt from disallowed node%&#39;) as &#39;disallowed_node&#39;
-* &#39;%closing AMQP connection%&#39;) を&#39;rmq_err_amqp_conn&#39;として
+* `%exit with reason {case_clause,timeout} and stacktrace {rabbit_mgmt_wm_healthchecks%}` as `exit_timeout`
+* `%client unexpectedly closed TCP connection%`) `client_closed_tcp_conn`
+* `%at undefined exit with reason shutdown in context shutdown_error%`) `undef_exit`
+* `%Connection attempt from disallowed node%`) `disallowed_node`
+* `%closing AMQP connection%`) `rmq_err_amqp_conn`
 
 ## [!UICONTROL [!DNL RabbitMQ] node status]
 
 ![[!DNL RabbitMQ] ノードステータス](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
 
-* &#39;%rabbit on node rabbit@host1 down%&#39;) を&#39;rmq_node1_down&#39;として&#39;
-* &#39;%rabbit on node rabbit@host2 down%&#39;)&#39;rmq_node2_down&#39;
-* &#39;%rabbit on node rabbit@host3 down%&#39;)&#39;rmq_node3_down&#39;
-* &#39;%rabbit on node rabbit@host1 up%&#39;) を&#39;rmq_node1_up&#39;として&#39;&#39;
-* &#39;%rabbit on node rabbit@host2 up%&#39;) を&#39;rmq_node2_up&#39;として&#39;
-* &#39;%rabbit on node rabbit@host3 up%&#39;) を&#39;rmq_node3_up&#39;として&#39;
+* `%rabbit on node rabbit@host1 down%`) `rmq_node1_down`
+* `%rabbit on node rabbit@host2 down%`) `rmq_node2_down`
+* `%rabbit on node rabbit@host3 down%`) `rmq_node3_down`
+* `%rabbit on node rabbit@host1 up%`) `rmq_node1_up`
+* `%rabbit on node rabbit@host2 up%`) `rmq_node2_up`
+* `%rabbit on node rabbit@host3 up%`) `rmq_node3_up`
 
 ## [!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]
 
@@ -79,10 +79,10 @@ ht-degree: 0%
 
 ![[!DNL RabbitMQ] メッセージの詳細の概要](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
 
-* &#39;%report.ERROR:Cron ジョブ consumer_runner にエラーがあります：NOT_FOUND - queue%なし ) を&#39;queue_err&#39;として
-* &#39;%report.ERROR:Cron ジョブ consumer_runner にエラーがあります：NOT_FOUND - queue%なし ) を&#39;queue_err&#39;として
-* &#39;%authenticated and granted access to vhost%&#39;) (&#39;auth&#39;)
-* &#39;%closing AMQP connection%&#39;) を&#39;close_conn&#39;として
+* `%report.ERROR: Cron Job consumers_runner has an error: NOT_FOUND - no queue%`) `queue_err`
+* `%report.ERROR: Cron Job consumers_runner has an error: NOT_FOUND - no queue%`) `queue_err`
+* `%authenticated and granted access to vhost%`) `auth`
+* `%closing AMQP connection%`) `close_conn`
 
 ## [!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]
 
