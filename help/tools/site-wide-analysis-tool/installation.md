@@ -1,9 +1,9 @@
 ---
 title: インストールガイド
 description: このガイドを使用して [!DNL Site-Wide Analysis Tool] （Web サイト用）
-source-git-commit: bfcedda38f91f5dba8880bb1593ad40a6e3f8041
+source-git-commit: 5603d0feee6ec9dd5e8b534a0e64df274d7ab84d
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >学ぶ [有効にする方法](../site-wide-analysis-tool/access.md) の [!DNL Site-Wide Analysis Tool] レポートを生成します。
 
-Adobe Commerceをオンプレミスでインストールしている場合、このツールを使用するには、インフラストラクチャにエージェントをインストールする必要があります。 クラウドインフラストラクチャプロジェクト上のAdobe Commerceにエージェントをインストールする必要はありません。
+Adobe Commerceをオンプレミスでインストールしている場合は、このツールを使用するために、インフラストラクチャにエージェントをインストールします。 クラウドインフラストラクチャプロジェクト上のAdobe Commerceにエージェントをインストールする必要はありません。
 
 ## エージェント
 
@@ -36,7 +36,7 @@ Adobe Commerceをオンプレミスでインストールしている場合、こ
 
 >[!INFO]
 >
->エージェントは、複数ノードのAdobe Commerceインストールをサポートします。 各ノードにエージェントをインストールして設定する必要があります。
+>エージェントは、複数ノードのAdobe Commerceインストールをサポートします。 各ノードにエージェントをインストールして設定します。
 
 ## 必要システム構成
 
@@ -44,7 +44,7 @@ Adobe Commerceをオンプレミスでインストールしている場合、こ
 
 - オペレーティングシステム
 
-   - [!DNL Linux x86-64] 次のような配分： [!DNL RedHat Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian]、類似
+   - [!DNL Linux x86-64] 次のような配分： [!DNL Red Hat® Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian]、類似
    >[!IMPORTANT]
    >
    >Adobe Commerceはではサポートされていません [!DNL Microsoft Windows] または [!DNL macOS].
@@ -81,7 +81,11 @@ bin/magento module:status Magento_ServicesConnector
 
 1. Web サイトを [メンテナンスモード](../../installation/tutorials/maintenance-mode.md).
 
-1. ログイン [accounts.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
+1. ログイン [account.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
+
+   >[!NOTE]
+   >
+   > アカウントへのアクセスに問題がある場合は、 [Adobe Commerceサポートまたはクラウドアカウントにログインできません](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) 」を参照してください。
 
 1. クリック **[!UICONTROL API Portal]**.
 
@@ -146,7 +150,7 @@ bin/magento module:status Magento_ServicesConnector
    Success exit.
    ```
 
-1. エージェントをダウンロードしてインストールした後、次の操作を行う必要があります。 [実行するように設定](#run-the-agent) 次のいずれかの方法を使用します。
+1. エージェントをダウンロードしてインストールした後、 [実行するように設定](#run-the-agent) 次のいずれかの方法を使用します。
 
    - [サービス](#service) （ルートアクセス権を持っている場合に推奨）
 
@@ -257,7 +261,7 @@ bin/magento module:status Magento_ServicesConnector
 
 ### サービス {#service}
 
-1. systemd ユニットファイルの作成 `(/etc/systemd/system/scheduler.service)` を次の設定に置き換えます ( `<filesystemowner>` ( エージェントとAdobe Commerceソフトウェアがインストールされているディレクトリを所有する Unix ユーザー ) エージェントをルートユーザーとしてダウンロードした場合は、ディレクトリとネストされたファイルの所有者を変更します。
+1. systemd ユニットファイルの作成 `(/etc/systemd/system/scheduler.service)` を次の設定に置き換えます ( `<filesystemowner>` エージェントとAdobe Commerceソフトウェアがインストールされているディレクトリを所有する UNIX®ユーザー ) エージェントをルートユーザーとしてダウンロードした場合は、ディレクトリとネストされたファイルの所有者を変更します。
 
    ```config
    [Unit]
