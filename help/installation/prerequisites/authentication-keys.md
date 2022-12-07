@@ -1,9 +1,9 @@
 ---
 title: 認証キーの取得
 description: repo.magento.com でAdobe CommerceおよびMagento Open Sourceコンポーザーパッケージにアクセスするための資格情報を取得するには、次の手順に従います。
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: d209d3f7fde55f7495488f2cbeeebf21024875ed
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,15 @@ ht-degree: 0%
 
 この `repo.magento.com` リポジトリは、Adobe CommerceおよびMagento Open Sourceおよびサードパーティ Composer パッケージが格納され、認証が必要な場所です。 Commerce Marketplaceアカウントを使用して、32 文字のペアを生成します *認証キー* をクリックして、リポジトリにアクセスします。
 
->[!NOTE]
+Adobe CommerceおよびMagento Open Sourceパッケージへのアクセス権を付与するには、それらのパッケージへのアクセス権を付与された MAGEID に関連付けられたキーを使用する必要があります。 MAGEID は通常、Adobe Commerceアカウントのプライマリ連絡先で、クラウドインフラストラクチャプロジェクトのAdobe Commerceのプロジェクト所有者とは限りません。
+
+>[!TIP]
 >
->Adobe CommerceおよびMagento Open Sourceパッケージへのアクセス権を付与するには、それらのパッケージへのアクセス権を付与された MAGEID に関連付けられたキーを使用する必要があります。 MAGEID は通常、 **請求連絡先** Adobe Commerceアカウント上で、常に **プロジェクト所有者** Adobe Commerce on cloud infrastructure プロジェクトの 次の場合に [エラー](https://support.magento.com/hc/en-us/articles/360040296392)の場合は、パッケージへのアクセス権限がないか、アカウント上の未処理の請求書が原因でアクセス権限が期限切れになっている可能性があります。 連絡先 [Adobe Commerceサポート](https://support.magento.com/hc/en-us) を参照してください。
+>次の場合に [エラー](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)の場合は、パッケージへのアクセス権限がないか、アカウント上の未処理の請求書が原因でアクセス権限が期限切れになっている可能性があります。
+>
+>* アカウントのプライマリ連絡先担当者の場合は、アカウントに未処理の請求書が一覧に表示されていないことを確認します。
+>* プライマリ連絡先が提供するキーが機能せず、アカウントに未処理の請求書がない場合は、担当者にお問い合わせください [Adobe Commerceサポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) プライマリ連絡先の MAGEID の使用に関するサポート
+
 
 認証キーを作成するには：
 
