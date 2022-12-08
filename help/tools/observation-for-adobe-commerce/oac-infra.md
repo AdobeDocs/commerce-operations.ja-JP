@@ -1,17 +1,17 @@
 ---
-title: 「 [!UICONTROL Infra] タブ"
-description: この [!UICONTROL Infra] 「 」タブでは、インフラストラクチャの問題と原因を分離できます。
-source-git-commit: b0d80d97f60b24bc801063dc484f3a495cf0a036
+title: 「 [!DNL Infra] タブ"
+description: この [!DNL Infra] 「 」タブでは、インフラストラクチャの問題と原因を分離できます。
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# この [!UICONTROL Infra] タブ
+# この [!DNL Infra] タブ
 
-この **[!UICONTROL Infra]** 「 」タブでは、インフラストラクチャの問題と原因を分離できます。 「 」タブに表示されるフレームについて詳しく説明します。
+この **[!DNL Infra]** 「 」タブでは、インフラストラクチャの問題と原因を分離できます。 「 」タブに表示されるフレームについて詳しく説明します。
 
 ## [!UICONTROL Service Alerts – Infrastructure Alerts by Application name]
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ![マウント別の i ノード使用量](../../assets/tools/observation-for-adobe-commerce/inode-usage-mount.jpg)
 
-この **[!UICONTROL Inode usage by mount]** frame は、選択した期間をまたいだマウント別の inode 使用量を示します。 空き容量が多い場合でも、ノードが inode を使い果たした場合は、使用可能なストレージが不足していることが示されます。 ファイル（特に小さいファイル）を削除すると、領域が解放され、inode が使用可能になります。
+この **[!UICONTROL Inode usage by mount]** フレーム表示 [!DNL inode] 選択した期間をまたいだマウント別の使用状況。 ノードが使い果たした場合は、ストレージの空き容量が多い可能性がありますが、 [!DNL inodes]に設定すると、使用可能なストレージが不足していることが示されます。 ファイル（特に小さいファイル）を削除すると、空き容量が増え、 [!DNL inodes] 使用可能
 
 ## [!UICONTROL vCPU tier view over timeline GREATER 2 weeks]
 

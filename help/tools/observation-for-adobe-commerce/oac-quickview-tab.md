@@ -1,7 +1,7 @@
 ---
-title: 「 [!UICONTROL QuickView] タブ"
-description: '[QuickView] タブでは、ディスク容量が低い場合やサーバー使用量が多い場合など、さまざまなアラートの種類について説明します。'
-source-git-commit: 4d700c04be5cd1ec2dc1c43c627feeed93f0fbee
+title: 「 [!DNL QuickView] タブ"
+description: この [!DNL QuickView] 「 」タブでは、ディスク容量が低い場合やサーバー使用率が低い場合など、表示されるさまざまなアラートの種類について説明します。
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -9,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# この [!UICONTROL QuickView] タブ
+# この [!DNL QuickView] タブ
 
 この **[!UICONTROL QuickView]** 「 」タブでは、ディスク容量が低い場合やサーバー使用率が低い場合など、表示されるさまざまなアラートの種類について説明します。 さらに、タブのフレームについて述べた。
 
