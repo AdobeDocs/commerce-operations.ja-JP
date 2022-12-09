@@ -1,9 +1,9 @@
 ---
 title: インストールガイド
 description: このガイドを使用して [!DNL Site-Wide Analysis Tool] （Web サイト用）
-source-git-commit: 5603d0feee6ec9dd5e8b534a0e64df274d7ab84d
+source-git-commit: 696f1624fe43fdd637b374b880667d35daca04de
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Adobe Commerceをオンプレミスでインストールしている場合は、
 エージェントには [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) お使いのシステムにインストールする拡張機能および [設定済み](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) と API キーを組み合わせました。 拡張機能がインストールされていることを確認するには、次のコマンドを実行します。
 
 ```bash
-bin/magento module:status Magento_ServicesConnector
+bin/magento module:status Magento_ServicesId
 ```
 
 拡張機能をインストールし、別のサービスの既存の API キーを使用して設定した場合は、 **API キーを再生成する必要があります** エージェントのAdobe Commerce Admin で更新します。
@@ -102,19 +102,25 @@ bin/magento module:status Magento_ServicesConnector
 1. 拡張機能を `composer.json` ファイルを作成し、インストールします。
 
    ```bash
-   composer require magento/services-connector:1.*
+   composer require magento/services-id
    ```
 
 1. 拡張機能を有効にします。
 
    ```bash
-   bin/magento module:enable Magento_ServicesConnector
+   bin/magento module:enable Magento_ServicesId
    ```
 
 1. データベーススキーマを更新します。
 
    ```bash
    bin/magento setup:upgrade
+   ```
+
+1. キャッシュをクリアします。
+
+   ```bash
+   bin/magento cache:clean
    ```
 
 1. [API キーの設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 拡張機能をシステムに接続する場合。
