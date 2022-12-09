@@ -1,9 +1,9 @@
 ---
 title: 「 [!UICONTROL Security] タブ"
 description: 詳しくは、 [!UICONTROL Security] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: 5e4babd14bb918db7f894b7ca6a0344a4652704c
+source-git-commit: 297c3fed4c0f7ad1a3cb40addef1d33fa8d41525
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -33,24 +33,24 @@ ht-degree: 0%
 
 ## [!UICONTROL POST activities]
 
-この **[!UICONTROL POST activities]** frame は、サイトのPOSTアクティビティを示し、 [!DNL Fastly] ログ。 また、IP アドレスからアクセスされる URL も表示されます。
+この **[!UICONTROL POST activities]** frame は、 `POST` サイトの活動、ファセット `client_ip` から [!DNL Fastly] ログ。 また、IP アドレスからアクセスされる URL も表示されます。
 
 ![POST — アクティビティ](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 
-この **POSTアクティビティの概要テーブル** frame は、サイトの要約されたPOSTアクティビティを示し、 [!DNL Fastly] ログ。 また、IP アドレスからアクセスされる URL の数も表示されます。 カウントは、選択した期間のものです。
+この **[!UICONTROL POST activities summary table]** フレームに要約された内容が表示されます `POST` サイトの活動、ファセット `client_ip` から [!DNL Fastly] ログ。 また、IP アドレスからアクセスされる URL の数も表示されます。 カウントは、選択した期間のものです。
 
 ![POST — アクティビティ — 概要](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 
 ## [!UICONTROL POST activities details table]
 
-この **[!UICONTROL POST activities details table]** frame は、次の場所からサイトのPOSTアクティビティを表示します。 [!DNL Fastly] ログ。 また、 [!DNL Fastly] ログに記録して、これらのリクエストを確認します。 最後の 2000 件のリクエストに制限されます。
+この **[!UICONTROL POST activities details table]** frame は、 `POST` サイトのアクティビティ [!DNL Fastly] ログ。 また、 [!DNL Fastly] ログに記録して、これらのリクエストを確認します。 最後の 2000 件のリクエストに制限されます。
 ![POST — アクティビティ — 詳細](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
 
 ## [!UICONTROL Guest Carts activities]
 
-この **[!UICONTROL Guest Carts activities]** frame は、選択した期間内のゲストカートアクティビティの数を、IP アドレスとアクセスされた URL でファセット化して表示します。 客車はカーディング攻撃に使用される場合がある。 このフレームは、ゲストカート URL にアクセスしたリクエストの合計数を示します。
+この **[!UICONTROL Guest Carts activities]** frame は、選択した期間内のゲストカートアクティビティの数を、IP アドレスとアクセスされた URL でファセット化して表示します。 客車はカーディング攻撃に使用される場合がある。 このフレームは、ゲストカートの URL にアクセスした要求の合計数を示します。
 
 ![guest-carts-activities](../../assets/tools/observation-for-adobe-commerce/guest-carts-activities.jpg)
 
