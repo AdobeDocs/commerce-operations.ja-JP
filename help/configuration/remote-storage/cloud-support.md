@@ -1,9 +1,9 @@
 ---
 title: クラウドインフラストラクチャ上のコマース用リモートストレージ
 description: クラウドインフラストラクチャ上のAdobe Commerceのリモートストレージを設定する方法に関するガイダンスを参照してください。
-source-git-commit: 0653d90d92e264b62fcc648f2b1307c013e9be54
+source-git-commit: 2080950852e3c4e6da556733e56f68e0e8005530
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ stage:
 magento-cloud variable:create --level environment --name REMOTE_STORAGE --json true --inheritable false --value '{"driver":"aws-s3","prefix":"uat","config":{"bucket":"aws-bucket-id","region":"eu-west-1","key":"optional-key","secret":"optional-secret"}}'
 ```
 
-これにより、 `REMOTE_STORAGE` 変数に指定された JSON 設定を入力します。 この `REMOTE_STORAGE` 変数は、JSON 文字列を受け取ってリモートストレージを設定します。 以下に、JSON の設定例を示します。
+これにより、 `REMOTE_STORAGE` 変数に指定された JSON 設定を入力します。 この `REMOTE_STORAGE` 変数は、JSON 文字列を受け取ってリモートストレージを設定します。 次に、JSON の設定例を示します。
 
 ```json
 {
