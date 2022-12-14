@@ -2,9 +2,9 @@
 title: Adobe Commerce
 description: Adobe Commerceの説明
 exl-id: 130bae23-8a22-4523-abe2-8dc97b3881d2
-source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
+source-git-commit: 1611a8cab95ec24a1420fac31958853e28033af6
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Adobe Commerceはオンプレミスでホストできます。 そのため、�
 Adobe Commerceは、次の追加機能を備えた完全な機能を備えた e コマースソリューションです。
 
 - B2B 機能（引用、カスタムカタログなど）、および購入者の役割と権限の管理
-- ビジュアライゼーションとカスタム Report Builder を備えたMagentoBI ダッシュボード
+- ビジュアライゼーションとカスタム Report Builder を使用したAdobe Commerceレポートダッシュボード
 - Magentoチャット (powered by dotdigital)
 - 高度なマーケティングツール
 - [!DNL Product Recommendations] Adobe Senseiを活用
