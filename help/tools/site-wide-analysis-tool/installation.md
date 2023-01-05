@@ -1,9 +1,9 @@
 ---
 title: インストールガイド
 description: このガイドを使用して [!DNL Site-Wide Analysis Tool] （Web サイト用）
-source-git-commit: 696f1624fe43fdd637b374b880667d35daca04de
+source-git-commit: 0c27d4cf5854161e14a482912941cd144ca654f7
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -381,27 +381,27 @@ cron スケジュールを更新します。
    rm -rf swat-agent
    ```
 
-## 設定ファイルを上書き
+## トラブルシューティング
 
-環境変数を使用して、インストール時に設定ファイルで指定した値を上書きできます。 これにより、以前のバージョンのエージェントとの下位互換性が維持されます。 推奨値については、次の表を参照してください。
+### アクセスキーが正しく解析されません
 
-| プロパティ | 説明 |
-| --- | --- |
-| `SWAT_AGENT_APP_NAME` | エージェントのインストール時に指定した会社またはサイト名 |
-| `SWAT_AGENT_APPLICATION_PHP_PATH` | PHP CLI インタプリタのパス ( 通常は `/usr/bin/php`) |
-| `SWAT_AGENT_APPLICATION_MAGENTO_PATH` | Adobe Commerceアプリケーションがインストールされているルートディレクトリ ( 通常は `/var/www/html`) |
-| `SWAT_AGENT_APPLICATION_DB_USER` | Adobe Commerceインストール用のデータベースユーザー |
-| `SWAT_AGENT_APPLICATION_DB_PASSWORD` | Adobe Commerceのインストールで指定したユーザーのデータベースパスワード |
-| `SWAT_AGENT_APPLICATION_DB_HOST` | Adobe Commerceインストール用のデータベースホスト |
-| `SWAT_AGENT_APPLICATION_DB_NAME` | Adobe Commerceインストールのデータベース名 |
-| `SWAT_AGENT_APPLICATION_DB_PORT` | Adobe Commerceインストール用のデータベースポート ( 通常は `3306`) |
-| `SWAT_AGENT_APPLICATION_DB_TABLE_PREFIX` | Adobe Commerceインストール用の表プレフィックス ( デフォルト値： `empty`) |
-| `SWAT_AGENT_APPLICATION_DB_REPLICATED` | Adobe Commerceのインストールにセカンダリデータベースインスタンスがあるかどうか ( 通常は `false`) |
-| `SWAT_AGENT_APPLICATION_CHECK_REGISTRY_PATH` | エージェントの一時ディレクトリ ( 通常は `/usr/local/swat-agent/tmp`) |
-| `SWAT_AGENT_RUN_CHECKS_ON_START` | 最初の実行時にデータを収集する ( 通常 `1`) |
-| `SWAT_AGENT_LOG_LEVEL` | 重大度 ( 通常は `error`) |
-| `SWAT_AGENT_ENABLE_AUTO_UPGRADE` | 自動アップグレードを有効にする（アップグレード後に再起動が必要）オプションが無効な場合、エージェントはアップグレードを確認しません。 `true` または `false`) |
-| `SWAT_AGENT_IS_SANDBOX=false` | サンドボックスモードを有効にして、ステージング環境でエージェントを使用する |
+アクセスキーが正しく解析されない場合、次のエラーが表示される場合があります。
+
+```terminal
+ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
+FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
+```
+
+このエラーを解決するには、次の手順を試してください。
+
+1. 実行する [スクリプトインストール](#scripted)、出力を保存し、エラーの出力を確認します。
+1. 生成された `config.yaml` ファイルを開き、コマースインスタンスと PHP へのパスが正しいことを確認します。
+1. スケジューラーを実行しているユーザーが [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md) UNIX グループまたははファイルシステムの所有者と同じユーザーです。
+1. 必ず [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) キーが正しくインストールされていることを確認し、拡張機能をシステムに接続するためにキーを更新してみてください。
+1. [アンインストール](#uninstall) キーを更新し、を使用して再インストールした後のエージェント [インストールスクリプト](#scripted).
+1. スケジューラーを実行し、同じエラーが引き続き表示されるかどうかを確認します。
+1. それでも同じエラーが発生する場合は、 `config.yaml` をクリックして、サポートチケットをデバッグし開きます。
+
 
 >[!INFO]
 >
