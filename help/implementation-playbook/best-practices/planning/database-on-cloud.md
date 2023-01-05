@@ -4,9 +4,9 @@ description: クラウドインフラストラクチャにAdobe Commerceをデ�
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,6 @@ DDL 文を実行する必要がある場合は、Web サイトをメンテナン
 
 ## 追加情報
 
-- [InnoDB と MYISAM の主な違いは何ですか。](http://www.expertphp.in/article/what-are-the-main-differences-between-innodb-and-myisam)
+- [MySQL ストレージエンジン](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [Adobe Commerce 2.3.5 MariaDB のアップグレードの前提条件](../maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [データベースのパフォーマンスの問題を解決するためのベストプラクティス](../maintenance/resolve-database-performance-issues.md)

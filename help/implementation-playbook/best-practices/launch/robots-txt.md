@@ -4,7 +4,7 @@ description: Adobe Commerceサイトに関する手順を Web クローラーに
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
@@ -107,11 +107,11 @@ ht-degree: 0%
 
 >[!TIP]
 >
->サポートが必要な場合は、 [Adobe Commerceサポートチケットを送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.md#submit-ticket).
+>サポートが必要な場合は、 [Adobe Commerceサポートチケットを送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## 追加情報
 
 - [Web サイト、ストア、ストア表示について](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
 - [Web サイトの追加](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
 - [Fastly を使用してAdobe Commerceサイトの悪意のあるトラフィックをブロックします](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
-- [robots.txt が、クラウドインフラストラクチャ 2.3.x 上のAdobe Commerceで 404 エラーを返す](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.md)
+- [robots.txt が、クラウドインフラストラクチャ 2.3.x 上のAdobe Commerceで 404 エラーを返す](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)

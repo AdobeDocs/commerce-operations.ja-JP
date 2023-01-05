@@ -1,9 +1,9 @@
 ---
 title: 実装メンテナンスフェーズ
 description: Adobe Commerceプロジェクトのメンテナンスフェーズに関する実装のベストプラクティスについて説明します。
-source-git-commit: 46c06a74f221877391196894abc1f5f217c5b073
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,7 @@ ht-degree: 0%
 - [フロントエンドパフォーマンスの監査](frontend-performance.md)
 - [準備完了、設定、保守](https://business.adobe.com/blog/basics/ready-set-maintain)
 - [SWAT ツールを使用して、Adobe Commerceのセキュリティと操作性を確保する](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) - CTAG デッキ
-- New Relic
-- ログ
-- ディスク容量
+- [New Relicとヘルスの通知を使用して、クラウドインフラストラクチャにデプロイされたAdobe Commerceサイトのパフォーマンス、ディスク容量、ログを監視します](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)
 
 ## データベース管理
 
@@ -53,14 +51,15 @@ ht-degree: 0%
 - [インデックスの再作成方法](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
 - [インデクサーの設定のベストプラクティス&#x200B;](indexer-configuration.md)
 - [注文処理の設定のベストプラクティス](order-processing-configuration.md)
-- CTAG デッキ
-- プロモーションや休日の間に計画されたトラフィック増加に対するアップサイズを計画する — CTAG デッキのコンテンツ
+
+<!-- Asset not yet integrated from CTAG deck:
+- Plan upsizing for planned traffic increases during promotions or holidays -->
 
 ## 設定
 
 - [実稼動サイトで管理者の更新をスケジュールする](scheduling-admin-updates-in-production.md)
 
-- ピークシーズンとプロモーション期間の計画（アップサイズ） - CTAG デッキコンテンツ
+<!-- Asset not yet integrated from CTAG deck: Planning for peak season and promotional periods (upsizing)-->
 
 ## バグの修正
 

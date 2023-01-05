@@ -4,9 +4,9 @@ description: 支払いの詳細を安全に処理および保存する方法を�
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 124eaf6e7b465b320d3d7e6a3694130edb93f187
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 支払い処理と保存のベストプラクティス
 
-維持に関する主要な原則の 1 つ [PCI コンプライアンス](https://nam04.safelinks.protection.outlook.com/GetUrlReputation) は、クレジットカードの支払いを適切に処理および保存するための戦略を持っています。
+維持に関する主要な原則の 1 つ [PCI コンプライアンス](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) は、クレジットカードの支払いを適切に処理および保存するための戦略を持っています。
 
 Adobe Commerceへのカード所有者データの格納は **厳禁** これは、支払いカード業界のデータセキュリティ標準 (PCI-DSS) に基づく商人としての義務を侵害する可能性があります。 当社の共有責任モデルと商業債務のガイドラインの詳細は、 [Adobe Commerceの共有責任ガイド](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) Adobeセキュリティセンター
 

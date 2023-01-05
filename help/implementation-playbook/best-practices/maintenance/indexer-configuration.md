@@ -4,9 +4,9 @@ description: インデクサー設定のベストプラクティスに従って�
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ Adobe Commerceには次の 2 種類のインデクサーモードがあります
 - インデックス設定を確認します。
 - インデクサーをに設定します。 _[!UICONTROL Update on Schedule]_大規模なサイト、頻繁な更新と大量のトラフィックを含むサイトの場合に使用します。 詳しくは、 [インデックス管理](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
 - フォロー [パフォーマンスのベストプラクティス](../../../performance/configuration.md) インデックス管理用。
+
+>[!IMPORTANT]
+>
+>この [!DNL Customer Grid] は、 [!UICONTROL Update on Save] オプション。 このインデックスは `Update by Schedule` オプション。
 
 ## 追加情報
 

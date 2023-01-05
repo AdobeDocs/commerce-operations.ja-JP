@@ -1,9 +1,9 @@
 ---
 title: 実装開発フェーズ
 description: Adobe Commerceプロジェクトの開発段階に関する実装のベストプラクティスについて説明します。
-source-git-commit: c717d45525c7893fa2c38183326534e0fa4ee0c6
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
@@ -27,18 +27,15 @@ ht-degree: 0%
 
 ### コードのレビュー、結合、テスト
 
-- ガイドラインと標準
-
 <!--Assets not yet integrated
+- Guidelines and standards
   - [Development best practices](https://wiki.corp.adobe.com/x/nT4ykw)
   - [Code Review](https://wiki.corp.adobe.com/x/qT4ykw)
   - [Debugging Magento 2](https://wiki.corp.adobe.com/x/nz4ykw) (wiki)
 -->
 - [CSS および JS ファイルの最適化](optimize-css-js-files.md)
 - [非公開コンテンツブロックのベストプラクティス](private-content-block-configuration.md)
-
-- カスタムコードを追加
-   - [拡張機能開発者向けのベストプラクティス](https://developer.adobe.com/commerce/php/best-practices/)
+- [拡張機能開発者向けのベストプラクティス](https://developer.adobe.com/commerce/php/best-practices/)
 
 <!--Assets not yet integrated
 
@@ -61,13 +58,13 @@ ht-degree: 0%
 
 ### ローカルおよびステージング環境の設定
 
-- [クラウドインフラストラクチャ上の開発ワークフロー](https://devdocs.magento.com/cloud/architecture/pro-develop-deploy-workflow.html)  — クラウドガイドから追加
+- [クラウドインフラストラクチャ上の開発ワークフロー](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
 
 ## コード、結合、テスト
 
-- [ビルドとデプロイメントのベストプラクティス](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices)
+- [ビルドとデプロイメントのベストプラクティス](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html)
 - [静的コンテンツのデプロイメント — クラウド](static-content-deployment.md)
 - [CSS および JS ファイルの最適化](optimize-css-js-files.md)
 - [よりレスポンシブなサイトに向けて画像を最適化する](image-optimization.md)
-- [クラウドインフラストラクチャ上のAdobe Commerceのベストプラクティスのトラブルシューティン&#x200B;グ](troubleshooting.md)
-- [データベーステーブルを変更するタイミングと方法を理解す&#x200B;る](modifying-core-and-third-party-tables.md)
+- [クラウドインフラストラクチャ上のAdobe Commerceのベストプラクティスのトラブルシューティング](troubleshooting.md)
+- [データベーステーブルを変更するタイミングと方法を理解する](modifying-core-and-third-party-tables.md)

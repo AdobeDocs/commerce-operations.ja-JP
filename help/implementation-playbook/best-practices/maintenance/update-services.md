@@ -4,7 +4,7 @@ description: クラウドインフラストラクチャのテクノロジース�
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Adobe Commerceが使用するサービスとコンポーネントを、提供終
 
 スタータープランのお客様は、サービスのアップグレード時にセルフサービスを利用できます。 参照： [サービスバージョンの変更](https://devdocs.magento.com/cloud/project/services.html#change-service-version) を参照してください。
 
-Pro プランのお客様は、自社のサービスのアップグレードでのみセルフサービスを利用できます [統合環境](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md). 実稼動環境でサービスをアップグレードする場合は、 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) アップグレードをリクエストしています。
+Pro プランのお客様は、自社のサービスのアップグレードでのみセルフサービスを利用できます [統合環境](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). 実稼動環境でサービスをアップグレードする場合は、 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) アップグレードをリクエストしています。
 
 >[!WARNING]
 >
