@@ -1,7 +1,7 @@
 ---
-source-git-commit: c6b2c0715ae7ddd1a5f64facba6fbd2919875850
+source-git-commit: da1cbeba30059be1b71c18ef08dd1f7ab4674a78
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1957'
 ht-degree: 0%
 
 ---
@@ -820,6 +820,73 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>互換</span>
       </td>
       <td>サポート</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="15">カタログサービス</th>
+    </tr>
+    <tr>
+      <td>Catalog Service 1.1</td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Catalog Service 1.0</td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
       </td>
     </tr>
   </tbody>
