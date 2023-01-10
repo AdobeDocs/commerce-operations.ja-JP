@@ -1,7 +1,7 @@
 ---
 title: セッションストレージに memcached を使用
 description: コマースセッションストレージに memcached を使用する方法を説明します。
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Memcached は、汎用の分散メモリキャッシュシステムです。 多くの場合、RAM 内のデータとオブジェクトをキャッシュして、動的なデータベース駆動型 Web サイトを高速化し、外部データソース（データベースや API など）を読み取る回数を減らすために使用されます。
 
-Memcached は、複数のマシンに分散できる大きなハッシュテーブルを提供します。 テーブルがいっぱいになると、以降の挿入では、最近使用された (LRU) 順に古いデータがパージされます。 このハッシュテーブルのサイズは、多くの場合非常に大きいです。 ( 出典： [memcached.org](http://memcached.org/))
+Memcached は、複数のマシンに分散できる大きなハッシュテーブルを提供します。 テーブルがいっぱいになると、以降の挿入では、最近使用された (LRU) 順に古いデータがパージされます。 このハッシュテーブルのサイズは、多くの場合非常に大きいです。 ( 出典： [memcached.org](https://www.memcached.org/))
 
 コマースは、セッションストレージに memcached を使用しますが、ページキャッシュには使用しません。 ページのキャッシュについては、 [レディス](../cache/redis-pg-cache.md) または [ワニス](../cache/config-varnish.md).
 
@@ -39,7 +39,7 @@ Memcached は、複数のマシンに分散できる大きなハッシュテー�
    ),
    ```
 
-   memcached には、このガイドの範囲外のオプションのスタートアップパラメーターがあります。 これらに関する詳細は、 [memcached](https://php.net/manual/en/memcached.sessions.php) ドキュメント、ソースコード、および変更
+   memcached には、このガイドの範囲外のオプションのスタートアップパラメーターがあります。 これらに関する詳細は、 [memcached](https://www.php.net/manual/en/memcached.sessions.php) ドキュメント、ソースコード、および変更
 
 1. 次の節に進みます。
 
@@ -80,5 +80,5 @@ Memcached は、複数のマシンに分散できる大きなハッシュテー�
    STAT items:3:outofmemory 0
    STAT items:3:tailrepairs 0
    
-   [Look at the keys in more detail](http://www.darkcoding.net/software/memcached-list-all-keys/)
+   [Look at the keys in more detail](https://darkcoding.net/software/memcached-list-all-keys/)
    ```

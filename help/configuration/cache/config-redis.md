@@ -1,9 +1,9 @@
 ---
 title: Redis を設定
 description: Redis の機能の概要を把握し、Redis の設定を開始します。
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Redis インスタンスを要件に合わせて最適化するには、各セ�
 
 キャッシュインスタンスの場合は、コマースキャッシュ全体を保存するのに十分な大きさになるようにインスタンスを設定します。 サイズの要件は、製品数や店舗表示数など、様々な要因によって異なります。 開始点として、ファイルシステム上のキャッシュフォルダーのサイズを使用できます。 例えば、 `var/cache` ファイルシステム上のフォルダーは 5 GB です。少なくとも 5 GB の Redis インスタンスを設定して起動します。 コマースキャッシュを復元できるので、キャッシュインスタンスに永続性は必要ありません。 詳しくは、 [Redis キャッシュガイド](https://redis.io/docs/manual/eviction/).
 
-パフォーマンスチューニングの場合、非同期削除に対して次の設定を有効にすることもできます。 これらの設定は、Redis の動作を変更しません。 関連トピック [レディアスニュース](http://antirez.com/news/93) ：非同期削除の詳細を参照してください。
+パフォーマンスチューニングの場合、非同期削除に対して次の設定を有効にできます。 これらの設定は、Redis の動作を変更しません。
 
 ```ini
 lazyfree-lazy-eviction yes

@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Upgrade Compatibility Tool] 要件"
 description: システムが、 [!DNL Upgrade Compatibility Tool] ( Adobe Commerceプロジェクトのコマンドラインインターフェイス ) を使用します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 |----------------|-----------------|
 | PHP バージョン | >= 7.3 |
 | コンポーザー | 不明な要件はありません。 |
-| Node.js | Node.js のバージョン `^12.22.0`, `^14.17.0`または `>=16.0.0` ( [Node.js のインストール](https://nodejs.dev/learn/how-to-install-nodejs)) |
+| Node.js | Node.js のバージョン `^12.22.0`, `^14.17.0`または `>=16.0.0` ( [Node.js のインストール](https://nodejs.dev/en/learn/how-to-install-nodejs/)) |
 | メモリ制限 | 2GB 以上の RAM。 |
 
 [!DNL Upgrade Compatibility Tool] が必要です [PCNTL](https://www.php.net/manual/en/book.pcntl.php) および実行用のその他の PHP 拡張。 必要な PHP 拡張をチェックするには、 `composer check-platform-reqs` コマンド：

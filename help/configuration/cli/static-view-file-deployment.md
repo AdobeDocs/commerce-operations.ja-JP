@@ -1,7 +1,7 @@
 ---
 title: 静的ビューファイルのデプロイ
 description: 実稼働モードで Commerce ファイルシステムに静的ファイルを書き込む方法を説明します。
-source-git-commit: 4fe6d6a76a5d4849d4f96b61b95a9a3dae7fc76a
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 0%
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 | オプション | 説明 | 必須？ |
 | ------ | ----------- | --------- |
-| `<languages>` | スペースで区切られた [ISO-639](http://www.loc.gov/standards/iso639-2/php/code_list.php) 静的ビューファイルを出力する言語コード。 ( デフォルトは `en_US`.)<br>次のコマンドを実行してリストを検索します。 `bin/magento info:language:list` | いいえ |
+| `<languages>` | スペースで区切られた [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) 静的ビューファイルを出力する言語コード。 ( デフォルトは `en_US`.)<br>次のコマンドを実行してリストを検索します。 `bin/magento info:language:list` | いいえ |
 | `--language (-l)` | 指定した言語のファイルのみを生成します。 デフォルトでは、オプションは指定されていませんが、すべての ISO-639 言語コードのファイルを生成します。 一度に 1 つの言語コードの名前を指定できます。 デフォルト値は **すべて**.<br>例： `--language en_US --language es_ES` | いいえ |
 | `--exclude-language` | 指定した言語コードのファイルを生成します。 デフォルトでは、オプションが指定されていない場合、何も除外されません。 1 つの言語コードの名前を指定するか、言語コードのコンマ区切りリストを指定できます。 デフォルト値は **なし**. | いいえ |
 | `--theme <theme>` | 静的コンテンツをデプロイするテーマ。 デフォルト値は **すべて**.<br>例： `--theme Magento/blank --theme Magento/luma` | いいえ |

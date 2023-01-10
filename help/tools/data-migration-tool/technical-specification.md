@@ -1,7 +1,7 @@
 ---
 title: '"[!DNL Data Migration Tool] 技術仕様書'
 description: 「 [!DNL Data Migration Tool] Magento1 とMagento2 の間でデータを転送する際に拡張する方法」
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: c56cc6d97f69770aa718333c02514ab3cfce774c
 workflow-type: tm+mt
 source-wordcount: '2085'
 ht-degree: 0%
@@ -264,7 +264,7 @@ class StageClass implements StageInterface
 
 データステージでロールバックがサポートされている場合は、 `RollbackInterface` インターフェイス。
 
-実行中のステップのビジュアライゼーションは、Symfony の ProgressBar コンポーネントによって提供されます ( [プログレスバー](http://symfony.com/doc/current/components/console/helpers/progressbar.html)) をクリックします。 このコンポーネントには、LogLevelProcessor としてアクセスします。
+実行中のステップのビジュアライゼーションは、Symfony の ProgressBar コンポーネントによって提供されます ( [プログレスバー](https://symfony.com/doc/current/components/console/helpers/progressbar.html)) をクリックします。 このコンポーネントには、LogLevelProcessor としてアクセスします。
 
 主な使用方法は次のとおりです。
 
