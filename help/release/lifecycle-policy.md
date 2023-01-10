@@ -1,10 +1,10 @@
 ---
 title: ソフトウェアライフサイクルポリシー
-description: Adobe Commerceリリースのソフトウェアサポート終了の主な日付について説明します。
+description: Adobe Commerce リリースのソフトウェアサポート終了の主な日付について説明します。
 source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
 source-wordcount: '368'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
@@ -39,30 +39,30 @@ Adobe Commerce 2.4 以降のリリースの場合：
 <thead>
   <tr>
     <th colspan="2"></th>
-    <th colspan="4">2022 年</th>
-    <th colspan="4">2023 年</th>
-    <th colspan="4">2024 年</th>
+    <th colspan="4">2022</th>
+    <th colspan="4">2023</th>
+    <th colspan="4">2024</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>コマース</td>
     <td>PHP</td>
-    <td>第 1 四半期</td>
-    <td>第 2 四半期</td>
-    <td>第 3 四半期</td>
-    <td>第 4 四半期</td>
-    <td>第 1 四半期</td>
-    <td>第 2 四半期</td>
-    <td>第 3 四半期</td>
-    <td>第 4 四半期</td>
-    <td>第 1 四半期</td>
-    <td>第 2 四半期</td>
-    <td>第 3 四半期</td>
-    <td>第 4 四半期</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
   </tr>
   <tr>
-    <td>2.4.0～2.4.3</td>
+    <td>2.4.0 - 2.4.3</td>
     <td style="text-align:center">7.4</td>
     <td colspan="3" style="background-color:#67ac68;"></td>
     <td style="background-color:#cd3c3c;">11 月</td>

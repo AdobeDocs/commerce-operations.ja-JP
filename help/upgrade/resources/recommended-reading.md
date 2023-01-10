@@ -1,6 +1,6 @@
 ---
 title: アップグレードの推奨読み取り
-description: Adobe Commerce または Magento Open Source のアップグレードの計画時に推奨ドキュメントを確認してください。
+description: Adobe Commerce または Magento Open Source のアップグレードを計画する際の推奨ドキュメントを確認してください。
 source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
 source-wordcount: '423'

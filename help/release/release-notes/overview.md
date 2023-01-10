@@ -1,10 +1,10 @@
 ---
 title: Adobe CommerceとMagento Open Sourceのリリースノート
-description: 特定のAdobe CommerceおよびMagento Open Sourceリリースの情報の場所について説明します。
+description: 特定の Adobe Commerce および Magento Open Source リリースの情報の入手先について説明します。
 source-git-commit: d63d1dd03cbf166f6fbce1df7113d1e861363f28
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '400'
+ht-degree: 4%
 
 ---
 

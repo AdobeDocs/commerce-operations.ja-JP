@@ -1,10 +1,10 @@
 ---
 title: リリーススケジュール
-description: 特定のバージョンのAdobe Commerceが、ベータ版、プレリリース版および一般リリースに対して予定されている場合について説明します。
+description: Adobe Commerce の特定のバージョンのベータ版、プレリリース版および一般提供版の予定されている時期について説明します。
 source-git-commit: 261aecd7d217e5c2e22f1a6c97242baa2923af60
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
