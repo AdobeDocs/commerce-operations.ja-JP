@@ -1,7 +1,7 @@
 ---
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 9f6110d359ffb31b04ebef369b82c25d4d0b9058
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '236'
 ht-degree: 63%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 63%
   </thead>
   <tbody>
     <tr>
-      <td>コンポーザー</td>
+      <td><span class="uicontrol">コンポーザー</span></td>
       <td>
             2.2
       </td>
@@ -64,7 +64,7 @@ ht-degree: 63%
       </td>
     </tr>
     <tr>
-      <td>Elasticsearch</td>
+      <td><span class="uicontrol">Elasticsearch</span></td>
       <td>
             7.17
       </td>
@@ -100,7 +100,7 @@ ht-degree: 63%
       </td>
     </tr>
     <tr>
-      <td>OpenSearch</td>
+      <td><span class="uicontrol">OpenSearch</span></td>
       <td>
             1.2
       </td>
@@ -126,17 +126,17 @@ ht-degree: 63%
           —
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
     </tr>
     <tr>
-      <td>MariaDB</td>
+      <td><span class="uicontrol">MariaDB</span></td>
       <td>
             10.4
       </td>
@@ -172,7 +172,7 @@ ht-degree: 63%
       </td>
     </tr>
     <tr>
-      <td>MySQL</td>
+      <td><span class="uicontrol">MySQL</span></td>
       <td>
             8.0
       </td>
@@ -204,11 +204,11 @@ ht-degree: 63%
             8.0
       </td>
       <td>
-            5.7、8.0
+            5.7, 8.0
       </td>
     </tr>
     <tr>
-      <td>PHP</td>
+      <td><span class="uicontrol">PHP</span></td>
       <td>
             8.1
       </td>
@@ -244,7 +244,7 @@ ht-degree: 63%
       </td>
     </tr>
     <tr>
-      <td>[!DNL RabbitMQ]</td>
+      <td><span class="uicontrol">RabbitMQ</span></td>
       <td>
             3.9
       </td>
@@ -280,7 +280,7 @@ ht-degree: 63%
       </td>
     </tr>
     <tr>
-      <td>レディス</td>
+      <td><span class="uicontrol">レディス</span></td>
       <td>
             6.2
       </td>
@@ -316,7 +316,7 @@ ht-degree: 63%
       </td>
     </tr>
     <tr>
-      <td>ワニス</td>
+      <td><span class="uicontrol">ワニス</span></td>
       <td>
             7.0
       </td>
@@ -352,7 +352,7 @@ ht-degree: 63%
       </td>
     </tr>
     <tr>
-      <td>Apache</td>
+      <td><span class="uicontrol">Apache</span></td>
       <td>
             2.4
       </td>
@@ -388,7 +388,7 @@ ht-degree: 63%
       </td>
     </tr>
     <tr>
-      <td>nginx</td>
+      <td><span class="uicontrol">nginx</span></td>
       <td>
             1.18
       </td>
@@ -424,7 +424,7 @@ ht-degree: 63%
       </td>
     </tr>
     <tr>
-      <td>AWS Aurora (MySQL)</td>
+      <td><span class="uicontrol">AWS Aurora (MySQL)</span></td>
       <td>
             8.0
       </td>
@@ -450,17 +450,17 @@ ht-degree: 63%
             5.7
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
     </tr>
     <tr>
-      <td>AWS S3</td>
+      <td><span class="uicontrol">AWS S3</span></td>
       <td>
             ✔️
       </td>
@@ -489,14 +489,14 @@ ht-degree: 63%
             ✔️
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
     </tr>
     <tr>
-      <td>AWS MQ</td>
+      <td><span class="uicontrol">AWS MQ</span></td>
       <td>
             3.9.13
       </td>
@@ -522,17 +522,17 @@ ht-degree: 63%
             3.8.11
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
     </tr>
     <tr>
-      <td>AWS ElastiCache</td>
+      <td><span class="uicontrol">AWS ElastiCache</span></td>
       <td>
             レディス 6
       </td>
@@ -558,17 +558,17 @@ ht-degree: 63%
             レディス 6
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
     </tr>
     <tr>
-      <td>AWSElasticsearch</td>
+      <td><span class="uicontrol">AWSElasticsearch</span></td>
       <td>
             7.9
       </td>
@@ -594,17 +594,17 @@ ht-degree: 63%
             7.9
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
     </tr>
     <tr>
-      <td>AWS OpenSearch</td>
+      <td><span class="uicontrol">AWS OpenSearch</span></td>
       <td>
             1.2
       </td>
@@ -612,31 +612,31 @@ ht-degree: 63%
             1.2
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
     </tr>
   </tbody>
