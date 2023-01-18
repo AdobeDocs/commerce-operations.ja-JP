@@ -4,15 +4,18 @@ description: クラウドインフラストラクチャにデプロイされたA
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: 0866272e02a7a223d35e14842bfb42a827e0468d
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 
 # MySQL スレーブ接続を設定するためのベストプラクティス
+
+>!![NOTE]
+この記事には、人種差別、性差別、または圧迫的なソフトウェア用語が含まれ、読者が傷ついたり、傷ついたり、不快に感じたりする恐れがあるので、まだ業界標準のソフトウェア用語が含まれています。 Adobeは、コード、ドキュメントおよびユーザーエクスペリエンスからこれらの用語を削除する作業を進めています。
 
 クラウドインフラストラクチャ Pro アーキテクチャにデプロイされたAdobe Commerceサイトの場合、Adobeは、デフォルトで、データベースに対して MYSQL スレーブ接続を有効にすることをお勧めします。
 
@@ -24,7 +27,7 @@ Adobe Commerceは、複数のデータベースを非同期で読み取ること
 
 ## MySQL スレーブ接続の設定
 
-MYSQL スレーブ接続の設定は、 [MYSQL_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) クラウドインフラストラクチャ環境設定ファイルのAdobe Commerceに変数をデプロイする `.magento.env.yaml`. この変数をに設定します。 `true` 接続を有効にします。
+MYSQL スレーブ接続の設定は、 [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) クラウドインフラストラクチャ環境設定ファイルのAdobe Commerceに変数をデプロイする `.magento.env.yaml`. この変数をに設定します。 `true` 接続を有効にします。
 
 MySQL スレーブ接続を有効にするには：
 
@@ -45,6 +48,3 @@ MySQL スレーブ接続を有効にするには：
 - [環境変数](https://devdocs.magento.com/cloud/env/variables-intro.html)
 - [クラウドインフラストラクチャ上のAdobe Commerceでの MySQL の高負荷ボトルネック](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.html?lang=en)
 - [クラウドインフラストラクチャ上のAdobe Commerceのデータベースのベストプラクティス](database-on-cloud.md)
-
->!![NOTE]
-この記事には、人種差別、性差別、または圧制的なソフトウェア用語が含まれ、読者に傷つき、傷つき、傷つき、または歓迎されないと感じさせる可能性があるので、私たちは認識しています。 Adobeは、コード、ドキュメントおよびユーザーエクスペリエンスからこれらの用語を削除する作業を進めています。
