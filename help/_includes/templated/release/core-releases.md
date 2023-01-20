@@ -1,8 +1,8 @@
 ---
-source-git-commit: a2747c1d62c4a22179c1177e7c4e76e028f66cea
+source-git-commit: 4391091cce32618dc02b0bddb62ff9d16dd12f10
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '953'
+ht-degree: 9%
 
 ---
 # リリース済みバージョン
@@ -52,9 +52,9 @@ ht-degree: 0%
   </tbody>
 </table>
 
-## 2.4.0～2.4.3
+## 2.4.0-2.4.3
 
-2.4.0～2.4.3 リリース行のサポートは 2022 年 11 月 28 日に終了します。
+2.4.0～2.4.3 リリース行のサポートは 2022 年 11 月 28 日に終了しました。
 
 <table>
   <thead>
