@@ -1,9 +1,9 @@
 ---
 user-guide-title: 設定ガイド
 user-guide-description: Adobe CommerceまたはMagento Open Sourceアプリケーションの機能とサービスを設定します。
-source-git-commit: 31f9ff21a848e248d2c3da7cfb3cfc8bfd5785be
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
@@ -145,3 +145,4 @@ ht-degree: 0%
       + [分割データベースの検証](storage/multi-master-verify.md)
       + [データベースレプリケーション](storage/multi-master-replication.md)
       + [単一のデータベースに戻す](storage/revert-split-database.md)
++ [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

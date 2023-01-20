@@ -1,10 +1,10 @@
 ---
 user-guide-title: 大規模なコマースエクスペリエンスを配信
 user-guide-description: Adobe Commerce と Adobe Experience Manager を使用して、エクスペリエンスを大規模に配信する方法を学習します。
-source-git-commit: b4a42bc51d283d75f4dcb7780db326f54416ee8e
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '41'
-ht-degree: 58%
+source-wordcount: '51'
+ht-degree: 47%
 
 ---
 
@@ -18,3 +18,4 @@ ht-degree: 58%
 - [Adobe Commerce Performance Optimization](default-settings.md)
 - [パフォーマンステストのヒント](launch.md)
 - [まとめ](conclusion.md)
+- [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

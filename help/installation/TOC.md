@@ -1,9 +1,9 @@
 ---
 user-guide-title: インストールガイド
 user-guide-description: オンプレミスデプロイメント用にAdobe CommerceとMagento Open Sourceをインストールする方法を説明します。
-source-git-commit: 949ef8d2036ceeef3cc892a5063ddecc2586a6a9
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
@@ -66,3 +66,4 @@ ht-degree: 0%
    - [Commerce をアンインストールまたは再インストール](tutorials/uninstall.md)
    - [テーマのアンインストール](tutorials/themes.md)
    - [データベーススキーマのアップグレード](tutorials/database-upgrade.md)
+- [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

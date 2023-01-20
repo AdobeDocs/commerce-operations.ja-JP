@@ -1,9 +1,9 @@
 ---
 user-guide-title: パフォーマンスのベストプラクティス
 user-guide-description: 推奨事項を使用して、Adobe CommerceまたはMagento Open Source実稼動のデプロイメントのパフォーマンスを最適化します。
-source-git-commit: 4baa58b440eab0d33a86388198670292a4119381
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '46'
+source-wordcount: '56'
 ht-degree: 0%
 
 ---
@@ -22,3 +22,4 @@ ht-degree: 0%
 - 高度な概念 {#performance-best-practices}
    - [詳細設定](advanced-setup.md)
    - [詳細 [!DNL JavaScript] 束縛](advanced-js-bundling.md)
+- [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
