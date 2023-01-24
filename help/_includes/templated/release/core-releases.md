@@ -1,15 +1,36 @@
 ---
-source-git-commit: 4391091cce32618dc02b0bddb62ff9d16dd12f10
+source-git-commit: 0de0d58da491b3fac449c16a6a7328bbaffbcd38
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 9%
+source-wordcount: '560'
+ht-degree: 19%
 
 ---
 # リリース済みバージョン
 
-## 2.4.4-2.4.6
+## 2.4.6
 
-2.4.4～2.4.6 リリース行のサポートは 2024 年 11 月 25 日に終了します。
+2.4.6 リリース行のサポートは 2026 年 3 月 14 日に終了します。
+
+<table>
+  <thead>
+    <tr>
+      <th>パッチバージョン</th>
+      <th>リリース日</th><th>リリースノート</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>2.4.6</td>
+        <td>2023 年 3 月 15 日</td>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">リリースノート</a><br>
+          </td>
+    </tr><!-- patch_releases -->
+  </tbody>
+</table>
+
+## 2.4.5
+
+2.4.5 リリース行のサポートは 2025 年 8 月 9 日に終了します。
 
 <table>
   <thead>
@@ -22,31 +43,46 @@ ht-degree: 9%
     <tr>
         <td>2.4.5-p1</td>
         <td>2022 年 10 月 11 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-5-p1.html">リリースノート</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p1.html">リリースノート</a><br>
           </td>
     </tr>
     <tr>
         <td>2.4.5</td>
         <td>2022 年 8 月 10 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-5.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-5.html">Magento Open Sourceリリースノート</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">リリースノート</a><br>
           </td>
+    </tr><!-- patch_releases -->
+  </tbody>
+</table>
+
+## 2.4.4
+
+2.4.4 リリース行のサポートは 2025 年 4 月 13 日に終了します。
+
+<table>
+  <thead>
+    <tr>
+      <th>パッチバージョン</th>
+      <th>リリース日</th><th>リリースノート</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
         <td>2.4.4-p2</td>
         <td>2022 年 10 月 11 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-4-p2.html">リリースノート</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p2.html">リリースノート</a><br>
           </td>
     </tr>
     <tr>
         <td>2.4.4-p1</td>
         <td>2022 年 8 月 10 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-4-p1.html">リリースノート</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p1.html">リリースノート</a><br>
           </td>
     </tr>
     <tr>
         <td>2.4.4</td>
         <td>2022 年 4 月 13 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-4.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-4.html">Magento Open Sourceリリースノート</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html">リリースノート</a><br>
           </td>
     </tr><!-- patch_releases -->
   </tbody>
@@ -67,31 +103,31 @@ ht-degree: 9%
     <tr>
         <td>2.4.3-p3</td>
         <td>2022 年 8 月 10 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-3-p3.html">リリースノート</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-3-p3.html">リリースノート</a><br>
           </td>
     </tr>
     <tr>
         <td>2.4.3-p2</td>
         <td>2022 年 4 月 13 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-3-p2.html">リリースノート</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-3-p2.html">リリースノート</a><br>
           </td>
     </tr>
     <tr>
         <td>2.4.3-p1</td>
         <td>2021 年 10 月 13 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-3-p1.html">リリースノート</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-3-p1.html">リリースノート</a><br>
           </td>
     </tr>
     <tr>
         <td>2.4.3</td>
         <td>2021 年 8 月 11 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-3.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-3.html">Magento Open Sourceリリースノート</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/commerce-2-4-3.html">Adobe Commerceリリースノート</a><br>
           </td>
     </tr>
     <tr>
         <td>2.4.2-p2</td>
         <td>2021 年 8 月 11 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-2-p2.html">リリースノート</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-2-p2.html">リリースノート</a><br>
           </td>
     </tr>
     <tr>
@@ -103,7 +139,7 @@ ht-degree: 9%
     <tr>
         <td>2.4.2</td>
         <td>2021 年 2 月 10 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-2.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html">Magento Open Sourceリリースノート</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-2.html">リリースノート</a><br>
           </td>
     </tr>
     <tr>
@@ -115,7 +151,7 @@ ht-degree: 9%
     <tr>
         <td>2.4.1</td>
         <td>2020 年 10 月 16 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-1.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-1.html">Magento Open Sourceリリースノート</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-1.html">リリースノート</a><br>
           </td>
     </tr>
     <tr>
@@ -127,7 +163,7 @@ ht-degree: 9%
     <tr>
         <td>2.4.0</td>
         <td>2020 年 7 月 29 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/release-notes-2-4-0-commerce.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/release-notes-2-4-0-open-source.html">Magento Open Sourceリリースノート</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-0.html">リリースノート</a><br>
           </td>
     </tr><!-- patch_releases -->
   </tbody>
@@ -172,7 +208,7 @@ ht-degree: 9%
     <tr>
         <td>2.3.7</td>
         <td>2021 年 5 月 12 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/open-source-2-3-7.html">Magento Open Sourceリリースノート</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html">Adobe Commerceリリースノート</a><br>
           </td>
     </tr>
     <tr>
@@ -184,7 +220,7 @@ ht-degree: 9%
     <tr>
         <td>2.3.6</td>
         <td>2020 年 10 月 16 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/open-source-2-3-6.html">Magento Open Sourceリリースノート</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html">Adobe Commerceリリースノート</a><br>
           </td>
     </tr>
     <tr>
@@ -208,7 +244,7 @@ ht-degree: 9%
     <tr>
         <td>2.3.5</td>
         <td>2020 年 4 月 29 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-open-source.html">Magento Open Sourceリリースノート</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">Adobe Commerceリリースノート</a><br>
           </td>
     </tr>
     <tr>
@@ -220,7 +256,7 @@ ht-degree: 9%
     <tr>
         <td>2.3.4</td>
         <td>2020 年 1 月 29 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-open-source.html">Magento Open Sourceリリースノート</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html">Adobe Commerceリリースノート</a><br>
           </td>
     </tr>
     <tr>
@@ -232,25 +268,25 @@ ht-degree: 9%
     <tr>
         <td>2.3.3</td>
         <td>2019 年 10 月 9 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-open-source.html">Magento Open Sourceリリースノート</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">Adobe Commerceリリースノート</a><br>
           </td>
     </tr>
     <tr>
         <td>2.3.2</td>
         <td>2019 年 6 月 26 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2OpenSource.html">Magento Open Sourceリリースノート</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html">Adobe Commerceリリースノート</a><br>
           </td>
     </tr>
     <tr>
         <td>2.3.1</td>
         <td>2019 年 3 月 27 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1OpenSource.html">Magento Open Sourceリリースノート</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html">Adobe Commerceリリースノート</a><br>
           </td>
     </tr>
     <tr>
         <td>2.3.0</td>
         <td>2018 年 11 月 29 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0OpenSource.html">Magento Open Sourceリリースノート</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html">Adobe Commerceリリースノート</a><br>
           </td>
     </tr><!-- patch_releases -->
   </tbody>
@@ -264,81 +300,57 @@ ht-degree: 9%
   <thead>
     <tr>
       <th>パッチバージョン</th>
-      <th>リリース日</th><th>リリースノート</th>
+      <th>リリース日</th>
     </tr>
   </thead>
   <tbody>
     <tr>
         <td>2.2.11</td>
         <td>2020 年 1 月 29 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/release-notes-2-2-11-commerce.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/release-notes-2-2-11-open-source.html">Magento Open Sourceリリースノート</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.10</td>
         <td>2019 年 10 月 9 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/release-notes-2-2-10-commerce.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/release-notes-2-2-10-open-source.html">Magento Open Sourceリリースノート</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.9</td>
         <td>2019 年 6 月 26 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.9EE.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.9CE.html">Magento Open Sourceリリースノート</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.8</td>
         <td>2019 年 3 月 27 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.8EE.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.8CE.html">Magento Open Sourceリリースノート</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.7</td>
         <td>2018 年 11 月 29 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.7EE.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.7CE.html">Magento Open Sourceリリースノート</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.6</td>
         <td>2018 年 9 月 19 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.6EE.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.6CE.html">Magento Open Sourceリリースノート</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.5</td>
         <td>2018 年 6 月 28 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.5EE.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.5CE.html">Magento Open Sourceリリースノート</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.4</td>
         <td>2018 年 5 月 3 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.4EE.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.4CE.html">Magento Open Sourceリリースノート</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.3</td>
         <td>2018 年 2 月 28 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.3EE.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.3CE.html">Magento Open Sourceリリースノート</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.2</td>
         <td>2017 年 12 月 13 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.2EE.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.2CE.html">Magento Open Sourceリリースノート</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.1</td>
         <td>2017 年 11 月 8 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.1EE.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.1CE.html">Magento Open Sourceリリースノート</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.0</td>
         <td>2017 年 9 月 27 日</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.0EE.html">Adobe Commerceリリースノート</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.0CE.html">Magento Open Sourceリリースノート</a><br>
-          </td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
