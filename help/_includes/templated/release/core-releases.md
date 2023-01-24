@@ -1,8 +1,8 @@
 ---
-source-git-commit: 0de0d58da491b3fac449c16a6a7328bbaffbcd38
+source-git-commit: b990a133f69191e8164ef1da16238938cd535183
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 19%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 # リリース済みバージョン
@@ -121,7 +121,7 @@ ht-degree: 19%
     <tr>
         <td>2.4.3</td>
         <td>2021 年 8 月 11 日</td>
-          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/commerce-2-4-3.html">Adobe Commerceリリースノート</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-3.html">Adobe Commerceリリースノート</a><br>
           </td>
     </tr>
     <tr>

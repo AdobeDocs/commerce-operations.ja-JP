@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;home;popular topics
 title: ホーム
 description: Adobe Commerceの運用製品ドキュメントのインデックスを参照します。
-source-git-commit: f66183c3dc01e0f8c049edf767cd6c74aae1a1cf
+source-git-commit: a1e74edb232b818dea9a2723bf506fac49acbd9f
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -119,12 +119,4 @@ Adobe CommerceおよびMagento Open Sourceプラットフォームにデプロ�
 </tr>
 </table>
 
-## 最新情報
-
-新しいドキュメントと既存ドキュメントの重要な更新について説明します。
-
-| 変更 | タイプ |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
-| すべてを説明する新しいトピックを追加しました [メッセージキューコンシューマー](../configuration/queues/consumers.md). | 新規 |
-| 追加済み [説明](../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md) クラウドインフラストラクチャ上のAdobe Commerceのデータベーステーブルストレージ形式を変換する場合 Pro projects を参照してください。 | 更新済み |
-| 追加済み [説明](../configuration/remote-storage/cloud-support.md) クラウドインフラストラクチャプロジェクトでAdobe Commerceのリモートストレージを有効にする場合。 | 更新済み |
+{{$include /help/_includes/templated/whats-new.md}}
