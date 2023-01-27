@@ -1,9 +1,9 @@
 ---
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
-source-git-commit: 2754ce0c8e27d51777924f4640b81628fbb2ea81
+source-git-commit: 230e457a783707c2447fab046a6d139ac97a20c5
 workflow-type: tm+mt
-source-wordcount: '10379'
+source-wordcount: '10584'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,17 @@ ht-degree: 0%
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.26 {#v1-1-26}
+
+* **ACSD-47937** (Adobe CommerceおよびMagento Open Source2.4.4 の場合 ) || >=2.4.5 &lt;2.4.6) — アプリケーションレベルのキャッシュが原因で価格下落通知が送信されない場合がある問題を修正しました。
+* **ACSD-48661** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) — 会社の与信限度額が 999 を超える場合、コンマ区切り文字は検証エラーによる会社の保存を妨げる問題を修正しました。
+* **ACSD-48773** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) — 報酬ポイントの E メールテンプレートが間違ったストアから取り出される問題を修正しました。
+* **ACSD-48587** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) -HTMLウィジェットの一致ルールで、製品の一致する特殊文字が表示されない問題を修正しました。
+* **ACSD-48212** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.6) — 製品の読み込みによって製品が間違ったソースに割り当てられる問題を修正しました。
+* **ACSD-47988** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.6) — 製品の書き出しで、page builder の製品説明からHTMLタグがトリミングされる問題を修正しました。
+* **ACSD-48366** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.6) — 製品の画像が「Back to Stock」の電子メールテンプレートに表示されない問題を修正しました。
+* **ACSD-48417** (Adobe CommerceおよびMagento Open Source>=2.4.5 &lt;2.4.7) — 製品のスケジュール変更を作成して別の製品を保存した後に SQL エラーが表示される問題を修正しました。
 
 ## v1.1.25 {#v1-1-25}
 
@@ -43,7 +54,7 @@ ht-degree: 0%
 * **ACSD-47803** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) — 在庫切れの設定可能な製品スウォッチが使用可能な状態で表示される問題を修正しました。
 * **ACSD-47137** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.6) - pub/media フォルダーが非常に大きい場合の画像ギャラリーの読み込み速度が向上します。
 * **ACSD-46770** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) - *E メールの注文確認* がオフになっている。
-* **ACSD-47955** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.6) - GraphQL で買い物かごの割引が正しく表示されない問題を修正しました。
+* **ACSD-47955** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.6) - GraphQLで買い物かごの割引が正しく表示されない問題を修正しました。
 * **ACSD-46617** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) - *チェックアウトを続行* ボタンは、小計が設定済みの *最小注文額*.
 * **ACSD-47079** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.5) - REST APIPOST/rest/V1/inventory/source-items を使用して下位製品の在庫ステータスが変更された場合に、複合製品（バンドル、グループ化、設定可能）の在庫ステータスが更新されない問題を修正しました。
 * **ACSD-47336** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) — 修正点 *問題が発生しました。* コマース管理で通知を破棄する際にエラーが発生しました。
@@ -56,7 +67,7 @@ ht-degree: 0%
 * **ACSD-47179** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) — 特定の範囲へのアクセスが制限された管理者が製品レビューを削除できない問題を修正しました。
 * **ACSD-47107** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.5) — カタログ価格ルールの割引がカスタム製品オプションに適用される問題を修正しました。
 * **ACSD-47232** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) — 管理で合計重み付け条件を持つクーポンを適用できない問題を修正しました。
-* **ACSD-46519** (Adobe CommerceとMagento Open Source>=2.4.1 &lt;2.4.6) - GraphQL categoryList 要求がアンカーカテゴリに対して誤った product_count を返す問題を修正しました。
+* **ACSD-46519** (Adobe CommerceとMagento Open Source>=2.4.1 &lt;2.4.6) - GraphQL categoryList リクエストがアンカーカテゴリに対して誤った product_count を返す問題を修正しました。
 * **ACSD-47027** (Adobe CommerceおよびMagento Open Source>=2.4.2 &lt;2.4.6) - updateCompanyRole GraphQL 要求が遅い問題を修正しました。
 * **ACSD-47666** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) — 管理者/システム/権限/ユーザーの役割/役割のユーザーグリッドでフィルター機能が動作しない問題を修正しました。
 * **ACSD-47497** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) — 管理者の下の設定で「サービス」タブが表示されない問題を修正しました。
@@ -134,7 +145,7 @@ ht-degree: 0%
 
 * **MDVA-44703** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.3 &lt;2.4.4*) — 注文件数レポートの注文の合計で、制限された管理者ユーザーに対して誤って計算される問題を修正しました。
 * **MDVA-44940** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.3 &lt;2.4.4*) — 管理者からカテゴリを保存する際に発生する SQL エラーを修正します。
-* **MDVA-44562** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.0 &lt;2.4.2-p2*) — デフォルト以外のストア表示からのGraphQL要求にもかかわらず、見積もり項目のデフォルト以外のストア ID がデフォルトのストア ID で上書きされる問題を修正しました。
+* **MDVA-44562** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.0 &lt;2.4.2-p2*) — デフォルト以外のストア表示から GraphQL 要求が発生したにもかかわらず、見積もり項目のデフォルト以外のストア ID がデフォルトのストア ID で上書きされる問題を修正しました。
 * **MDVA-43167** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.2 &lt;2.4.4.4*) — 管理者ユーザーがすべての注文を選択した場合に、複数ページに対して管理者の注文グリッドの一括アクションが適用されない問題を修正しました。
 * **MDVA-44044** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.0 &lt;2.4.2-p2*) — 製品が新しい Web サイトに割り当てられた後、カテゴリページに表示されない問題を修正しました。
 * **MDVA-42509** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.3 &lt;2.4.4*) - CSV をアップロードして注文をすばやく実行できなかった結果、 *Cookie を送信できません* エラー。
@@ -161,7 +172,7 @@ ht-degree: 0%
 * **MDVA-43178** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.3-p2 &lt;2.4.5*) — カスタムストアの顧客トークンをGraphQLで取得できない問題を修正しました。
 * **MDVA-43859** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.1 &lt;2.4.5*) — エラーが *customerId =のエンティティはありません* は、削除された顧客がログインしようとしたときに記録されます。
 * **MDVA-44147** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.2 &lt;2.4.5*) - GraphQL要求が要求リストを返さない問題を修正しました。
-* **MDVA-44505** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.1 &lt;2.4.3*) - GraphQL Applying Reword Points が総計を更新しない問題、および注文の配置中にストアのクレジットが複数回適用される問題を修正しました。
+* **MDVA-44505** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.1 &lt;2.4.3*) - GraphQL 適用報酬ポイントが総計を更新しない問題と、注文の配置中にストアクレジットが複数回適用される問題を修正しました。
 * 更新済みのパッチ：MDVA-29148、MDVA-36464-V5、MDVA-42584、MDVA-39993-V2。
 
 ## v1.1.13 {#v1-1-13}
@@ -217,7 +228,7 @@ ht-degree: 0%
 * **MDVA-38728** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.2 &lt;2.4.5*) — 一括属性の更新で、変更後にデフォルトストアの URL の書き換えが作成される問題を修正しました。 *製品の表示*.
 * **MDVA-43091** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.3 &lt;2.4.4*) — バックエンドで管理者からバンドル製品を注文するとエラーが発生する問題を修正しました *この製品には小数を使用できません*.
 * **MDVA-40816** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.0 &lt;2.4.5*) — 関連する製品ルールに、ルール条件で定義されていないカテゴリの製品が表示される問題を修正しました。
-* **MDVA-41305** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.2 &lt;2.4.5*) - GraphQL mutation がウィッシュリストに追加した後、設定可能な製品オプションを返さない問題を修正しました。
+* **MDVA-41305** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.2 &lt;2.4.5*) - GraphQL ミューテーションがウィッシュリストに追加した後、設定可能な製品オプションを返さない問題を修正しました。
 * **MDVA-39181** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.1 &lt;2.4.5*) — 関連する製品ルールに、ルール条件で定義されていないカテゴリの製品が表示される問題を修正しました。
 * **MDVA-42584** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.2 &lt;2.4.3*) - 「読み込み」または「API」を使用して数量と在庫のステータスを変更した後に、バックエンドの設定可能な在庫のステータスが更新されない問題を修正しました。
 * **MDVA-40175** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.0 &lt;2.4.3*) - *クリックして発送方法を変更* では、並べ替え時に、管理で発送方法を選択するラジオボタンは表示されません。
@@ -244,7 +255,7 @@ ht-degree: 0%
 * **MDVA-41215** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.0 &lt;2.4.4*) — ユーザーが *mage-messages* cookie を設定します（既に存在するが、新しいメッセージは存在しない場合）。
 * **MDVA-41139** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.3 &lt;2.4.4*) — いずれかのソースに対して単純な製品の qty=0 の場合に、製品の読み込み後に設定可能な製品が在庫切れになる問題を修正しました。
 * **MDVA-42326** (*Adobe Commerceの場合は、Magento Open Source>=2.3.6 &lt;=2.3.7-p2 || >=2.4.1 &lt;2.4.4*) — 永続的な買い物かごが有効になっている場合でも、セッションのタイムアウト後に顧客がチェックアウト時にエラーが発生する問題を修正しました。
-* **MDVA-42341** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.2 &lt;2.4.4.4*) - `categoryList` リクエストに Store ヘッダーがある場合、GraphQLクエリは結果をフィルタリングしません。
+* **MDVA-42341** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.2 &lt;2.4.4.4*) - `categoryList` GraphQL クエリは、リクエストに Store ヘッダーがある場合、結果をフィルタリングしません。
 * **MDVA-38393** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.0 &lt;2.4.4*) — 設定可能な製品の単純な製品名が変更されると、カタログルールが機能しなくなる問題を修正しました。
 * **MDVA-39153** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.2 &lt;2.4.4.4*) — 管理での並べ替え中に割引額が正しく計算されない問題を修正しました。
 * 更新済みのパッチ：MDVA-28993、MDVA-41061、MDVA-35984。
@@ -253,14 +264,14 @@ ht-degree: 0%
 
 * **MDVA-39711** (*Adobe CommerceとMagento Open Sourceの場合 >=2.3.0 &lt;2.4.3*) - Web サイトを削除した後、管理者ユーザーが顧客のグリッドにアクセスできない問題を修正しました。
 * **MDVA-40311** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.2-p2 &lt;2.4.4.4*) — 管理者ユーザーがエラーメッセージを受け取る問題を修正しました *無効なセキュリティまたはフォームキーです。 ページを更新してください* 管理者にログインした後、カスタム管理パスが設定され、秘密鍵が有効になっている場合。
-* **MDVA-41631** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.1 &lt;2.4.4*) — オプションを使用せずに注文情報を取得しようとするとエラーが発生する問題を修正しました *電話* GraphQLを通じて価値を創出
+* **MDVA-41631** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.1 &lt;2.4.4*) — オプションを使用せずに注文情報を取得しようとするとエラーが発生する問題を修正しました *電話* の値を GraphQL 経由で取得する必要があります。
 * **MDVA-27239** (*Adobe CommerceとMagento Open Sourceの場合 >=2.3.0 &lt;2.3.6*) — クロス販売製品が表示されない問題を修正しました。
 * 更新済みのパッチ：MDVA-37068、MDVA-35254、MDVA-41164、MDVA-37916、MDVA-37478、MDVA-34551、MDVA-31791。
 
 ## v1.1.6 {#v1-1-6}
 
 * **MDVA-40550** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.5 &lt;2.4.4*) — インデックス再作成中にフロントエンドで製品が見つからない問題を修正しました。
-* **MDVA-40120** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.1 &lt;2.4.4*) - DESC/ASC による GraphQL 並べ替えが、関連性や価格が同じ製品で機能しない問題を修正しました。
+* **MDVA-40120** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.1 &lt;2.4.4*) - GraphQLでの DESC/ASC による並べ替えが、関連性や価格が同じ製品で動作しない問題を修正しました。
 * **MDVA-41399** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.3 &lt;2.4.2*) — 管理者ユーザーが *買い物かごを管理* 顧客がウィッシュリストに製品を追加した場合は、ページを表示します。
 * **MDVA-40609** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.2 &lt;2.4.3*) — 無効になっている製品データが `cataloginventory_stock_status` インデックステーブル、無効な製品数量が正しく表示されていません。
 * **MDVA-39031** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.1 &lt;2.4.4*) - GraphQLを使用して買い物かごに製品を追加できる（その製品がターゲット Web サイトに割り当てられていない場合でも）問題を修正しました。
@@ -318,7 +329,7 @@ ht-degree: 0%
 * **MDVA-39966** (*Adobe Commerceの場合はMagento Open Source>=2.3.0 &lt;=2.3.5-p2 || >=2.4.0 &lt;=2.4.0-p1*) — 誤ったロケールのデプロイに関する問題を修正しました。
 * **MDVA-38852** (*Adobe Commerceの場合はMagento Open Source>=2.3.0 &lt;=2.3.5-p2*) — 複数の並列注文がある場合にパフォーマンスが大幅に低下する更新に対して、カタログ在庫がデザイン別にテーブルをロックする問題を修正しました。
 * **MDVA-39986** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.1 &lt;2.4.3*) — ユーザーが Safari ブラウザーを使用してMacOSの管理画面で注文できない問題を修正しました。
-* **MDVA-38447** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.2 &lt;2.4.4.4*) — 次の 2 つの問題を修正しました。ここで、 *個別には表示されません* 設定可能な子製品は、GraphQL 応答で返され、カテゴリフィルターを使用して GraphQL 製品クエリ用に MySQL クエリを最適化します。
+* **MDVA-38447** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.2 &lt;2.4.4.4*) — 次の 2 つの問題を修正しました。ここで、 *個別には表示されません* 設定可能な子製品は、GraphQL応答で返され、カテゴリフィルターを使用してGraphQL製品クエリ用の MySQL クエリを最適化します。
 * **MDVA-40134** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.2 &lt;2.4.3*) - 「共有カタログ」が有効な場合に GraphQL が関連製品を返さない問題を修正しました。
 * **MDVA-39935** (*Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.1 &lt;2.4.4*) - GraphQLが Web サイトレベルで無効になっている設定可能な子製品を返す問題を修正しました。
 
@@ -351,7 +362,7 @@ ht-degree: 0%
 * **MDVA-37082** (*Adobe Commerceの場合 >=2.3.0 &lt;2.4.3.3*) — グループ化された製品のカスタム在庫を保存すると、フロントエンドに製品が在庫切れになる問題を修正しました。
 * **MDVA-36572** (*Adobe Commerceの場合 >=2.3.5 &lt;2.4.3.3*) — クレジットメモの更新により、データベース内で重複する製品予約の更新がおこなわれなくなった問題を修正しました。
 * **MDVA-38132** (*Adobe Commerceの場合 >=2.3.3 &lt;2.4.3.3*) - *リダイレクトが多すぎます* エラー。
-* **MDVA-38270** (*Adobe Commerceの場合 >=2.4.1 &lt;2.4.3.3*) - GraphQL の注文合計にギフトカード情報が表示されない問題を修正しました。
+* **MDVA-38270** (*Adobe Commerceの場合 >=2.4.1 &lt;2.4.3.3*) - GraphQLでの注文合計にギフトカード情報が表示されない問題を修正しました。
 
 ## v1.0.24 {#v1-0-24}
 
@@ -425,7 +436,7 @@ ht-degree: 0%
 * **MDVA-32655** (*Adobe Commerceの場合 >=2.3.0 &lt;2.4.3.3*) — 誤った *進行中* 正しいメッセージのステータス *完了* 消費者向けメッセージ `quoteItemCleaner` 複数の製品を削除した後。
 * **MDVA-34102** (*Adobe Commerceの場合 >=2.3.0 &lt;2.4.3.3*) — 管理領域の製品グリッドおよび製品の編集ページの無効化された製品に対するデフォルト在庫の数がゼロになっているのを修正します。
 * **MDVA-35286** (*Adobe Commerceの場合 >=2.4.0 &lt;2.4.2.2*) — 顧客が買い物かごに製品をバンドルし、複数のアドレスのチェックアウトからオンページチェックアウトに切り替えた場合にエラーが発生する問題を修正しました。
-* **MDVA-35312** (*Adobe Commerceの場合 >=2.4.1-p1 &lt;2.4.2.2*) — 空の GraphQL 要求の場合の応答コード 500 を修正しました。
+* **MDVA-35312** (*Adobe Commerceの場合 >=2.4.1-p1 &lt;2.4.2.2*) — 空のGraphQLリクエストの場合の応答コード 500 を修正しました。
 * **MDVA-34189** (*Adobe Commerceの場合 >=2.3.4 &lt;2.4.3.3*) - 503 の最初のバイトのタイムアウトを修正しました。 [!DNL Visual Merchandiser] は、管理カテゴリページの読み込み時にクエリを実行します。
 * **MDVA-34695** (*Adobe Commerceの場合 >=2.3.0 &lt;2.4.1*) — 負の修正 `children_count` カテゴリの削除後。
 
@@ -456,7 +467,7 @@ ht-degree: 0%
 * **MDVA-33482** (*(Adobe Commerce ^2.3.5 用 )*) — 部分的な請求書に対してクレジット・メモを生成すると、その部分的な請求書に対する税金ではなく、合計注文に対する税金が発生する問題を修正します。
 * **MDVA-33393** (*Adobe Commerceの場合 >=2.3.0 &lt;2.4.2.2*) — エラーを修正します。 *指定された countryId が存在しません*.
 * **MDVA-33632** (*Adobe Commerceの場合 >=2.3.0 &lt;2.3.7>*) — 例外メッセージの場所を修正します。 *この製品は在庫切れです* 在庫切れの製品を再注文しようとすると、が管理者ユーザーに表示されるようになりました。
-* **MDVA-34469** (*Adobe Commerceの場合 >=2.4.1 &lt;2.4.2.2*) — 複数のストア表示を使用している場合に、顧客の買い物かご上のGraphQLの突然変異が失敗する問題を修正しました。
+* **MDVA-34469** (*Adobe Commerceの場合 >=2.4.1 &lt;2.4.2.2*) — 顧客の買い物かごで複数のストア表示を使用すると GraphQL の突然変異が失敗する問題を修正しました。
 * **MDVA-33976** (*Adobe Commerceの場合 >=2.3.0 &lt;2.3.7>*) — バンドル製品から 2 番目のオプションを削除した後に、ストアフロントにバンドル製品が在庫切れと表示される問題を修正しました。
 * **MDVA-33894** (*(Adobe Commerceの場合 ) 2.4.0 &lt;2.4.1、B2B 拡張機能付き*) — 複数の製品や SKU の大文字と小文字の区別を追加および削除するなど、クイックオーダー機能に関する複数の問題を修正しました。
 * **MDVA-27664** (*Adobe Commerceの場合 >=2.3.4 &lt;2.3.6>*) — エラーが表示される原因となる顧客登録フォームの問題を修正します。 *エラー — 生年月日を今日よりも大きくすることはできません。*
@@ -474,7 +485,7 @@ ht-degree: 0%
 * **MDVA-24201** (*Adobe Commerceの場合 >=2.3.0 &lt;2.3.5>*) — 価格が手動で再インデックスするまで予約済み買い物かごの価格ルールを反映しない問題を修正しました。
 * **MDVA-32694** (*Adobe Commerceの場合 >=2.3.0 &lt;2.3.6> || >= 2.4.0 &lt;2.4.2*) — 管理者ユーザーが、デフォルト以外のストアに関連している場合に、製品をネゴシエーション可能な見積もりに追加できない問題を修正しました。
 * **MDVA-33516** (*Adobe Commerceの場合 >=2.3.0 &lt;2.3.6>*) — 購買依頼リストでバンドル製品を編集するとエラーが発生する問題を修正しました。
-* **MDVA-33975** (*Adobe Commerceの場合 >=2.3.4 &lt;2.4.2.2*) - GraphQL リクエストの価格計算に関連する複数の問題を修正しました。
+* **MDVA-33975** (*Adobe Commerceの場合 >=2.3.4 &lt;2.4.2.2*) - GraphQLリクエストの価格計算に関連する複数の問題を修正します。
 
 ## v1.0.13 {#v1-0-13}
 
@@ -586,7 +597,7 @@ ht-degree: 0%
 * **MDVA-30106** (*(Adobe Commerce ^2.3.0 用 )*) — チェックアウト時の支払いが *NULL のプロパティ「length」を読み取れません* JS コンソールでエラーが発生しました。
 * **MDVA-28656** (*Adobe Commerceの場合 >=2.3.1 &lt;2.3.6> || >=2.4.0 &lt;2.4.2*) — 支払い情報が不要な注文（100%割引など）で、注文に対して請求書が作成された場合に、注文ステータスが「 *クローズ* を使用します。
 * **MDVA-30209** (*Adobe Commerce 2.3.0 - 2.3.3-p1 の場合*) — 顧客がアカウント情報を更新した場合に顧客グループがデフォルトに変更される問題を修正しました。
-* **MDVA-30123** (*Adobe Commerceの場合 >=2.3.4 &lt;2.4.2.2*) — 属性オプションラベルが GraphQL クエリで正しく翻訳されない問題を修正しました。
+* **MDVA-30123** (*Adobe Commerceの場合 >=2.3.4 &lt;2.4.2.2*) — 属性オプションラベルがGraphQLクエリで正しく翻訳されない問題を修正しました。
 * **MDVA-29996** (*Adobe Commerceの場合 >=2.3.3 &lt;2.4.2.2*) — カテゴリ権限を有効にした後、カテゴリページがフルページキャッシュでキャッシュされない問題を修正しました。
 * **MDVA-30164** (*Adobe Commerceの場合 >=2.3.1 &lt;2.4.2.2*) — カスタム顧客属性が存在する場合に、顧客レコードを顧客グリッドからエクスポートできない問題を修正しました。
 * **MDVA-30444** (*Adobe Commerceの場合 >=2.3.0 &lt;2.4.1*) - GraphQLを使用しておこなわれた注文に対して確認 E メールが送信されない問題を修正しました。
