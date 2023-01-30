@@ -4,9 +4,9 @@ description: Adobe Commerce 2.3.5 用の拡張 Redis キャッシュ実装を使
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: 12de523cc7ea1486c894d54efe6944d92d87ded0
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,11 @@ stage:
 >[!NOTE]
 >
 > を使用して、コマンドラインからローカルクラウド環境にインストールされている ece-tools のバージョンを確認します。 `composer show magento/ece-tools` コマンドを使用します。 必要に応じて、 [ece-tools バージョンを更新](https://devdocs.magento.com/cloud/project/ece-tools-update.html).
+
+>[!WARNING]
+>
+>実行 _not_ クラウドインフラストラクチャプロジェクトの Redis スレーブ接続を [スケールアーキテクチャ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). これにより、Redis 接続エラーが発生します。 詳しくは、 [レディスの構成指導](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) 内 _クラウドインフラストラクチャ上のコマース_ ガイド。
+
 
 ### オンプレミスデプロイメント用の設定
 
