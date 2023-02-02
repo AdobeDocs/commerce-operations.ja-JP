@@ -1,9 +1,9 @@
 ---
 title: 開発環境Recommendations
 description: ローカルのAdobe CommerceまたはMagento Open Source開発環境を設定する際の推奨パフォーマンスについて説明します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ## 無効にする代わりにキャッシュを消去する
 
-多くの開発者は、開発者インスタンス上のすべてのキャッシュを無効にする傾向があります。 すべてのキャッシュを無効にせずに、キャッシュのみをクリーニングすることをお勧めします。 [!DNL Commerce] 次の場合により効率的に実行 [キャッシュをクリーンアップする] 完全に無効にする代わりに、を使用します。 ほとんどのタイプのキャッシュは、開発時に無効化されることはほとんどありません。
+多くの開発者は、開発者インスタンス上のすべてのキャッシュを無効にする傾向があります。 すべてのキャッシュを無効にせずに、キャッシュのみをクリーニングすることをお勧めします。 [!DNL Commerce] 次の場合により効率的に実行 [キャッシュをクリーンアップする](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) 完全に無効にする代わりに、を使用します。 ほとんどのタイプのキャッシュは、開発時に無効化されることはほとんどありません。
 
-次の場合、 [キャッシュを無効にする]を無効にする場合は、開発インスタンスでページキャッシュとブロックキャッシュのみを無効にすることをお勧めします。 テスト中にすべてのキャッシュを必ず有効にしてください。
+次の場合、 [キャッシュを無効にする](../configuration/cli/manage-cache.md#enable-or-disable-cache-types)を無効にする場合は、開発インスタンスでページキャッシュとブロックキャッシュのみを無効にすることをお勧めします。 テスト中にすべてのキャッシュを必ず有効にしてください。
 
 ## 開発モードで回避するコマンド
 
@@ -44,8 +44,3 @@ ht-degree: 0%
 ## 仮想マシンでの通常のページ読み込み時間
 
 VM で開発し、Magentoページの読み込みに 2 秒以上かかる場合は、環境設定を確認します。
-
-<!-- Link definitions -->
-
-[キャッシュをクリーンアップする]: ../configuration/cli/manage-cache.md#clean-and-flush-cache-types
-[キャッシュを無効にする]: ../configuration/cli/manage-cache.md#enable-or-disable-cache-types

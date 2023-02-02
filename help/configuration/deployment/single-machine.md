@@ -1,10 +1,10 @@
 ---
 title: 単一マシンの導入
 description: コマンドラインを使用して、実稼動サーバー上に Commerce に更新をデプロイする方法を説明します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## 前提
 
-- Commerce をインストールしているのは [コンポーザー].
+- Commerce をインストールしているのは [コンポーザー](../../installation/composer.md).
 - サーバーに直接更新を適用しています。
 
 >[!WARNING]
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## デプロイメントの手順
 
-1. 実稼動サーバーに、 [ファイルシステム所有者][file-owner].
+1. 実稼動サーバーに、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
 
 1. Commerce ベースディレクトリにディレクトリを変更します。
 
@@ -92,5 +92,3 @@ ht-degree: 1%
 <!-- link definitions -->
 
 [install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
-[composer]: ../../installation/composer.md
-[file-owner]: ../../installation/prerequisites/file-system/overview.md

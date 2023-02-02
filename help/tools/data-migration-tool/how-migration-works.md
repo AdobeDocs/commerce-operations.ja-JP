@@ -1,7 +1,7 @@
 ---
 title: データ移行の仕組み
 description: 用語、ワークフロー図、手順など、Magento1 とMagento2 の間のデータ移行プロセスについて説明します。
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 0%
@@ -62,14 +62,7 @@ ht-degree: 0%
 
 ![移行フロー](../../assets/data-migration/migration_flow.png)
 
-<!-- Link definitions -->
-[[!DNL Data Migration Tool] 技術仕様 ]: technical-specification.md
-
-[Migration Modes]: ../../assets/data-migration/MigrationModes2.png
-
-[Migration Overview]: ../../assets/data-migration/MigrationOverview2.png
-
-[Migration Steps]: ../../assets/data-migration/MigrationSteps2.png
+[[!DNL Data Migration Tool] 技術仕様 ]:technical-specification.md
 
 Magento1.x という世界の#1コマースプラットフォームから未来のMagento2 への移行をご検討いただけたことをうれしく思います。 このプロセスの詳細を、移行と呼ばれる方法で共有できることをうれしく思います。
 

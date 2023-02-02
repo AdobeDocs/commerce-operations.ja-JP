@@ -1,9 +1,9 @@
 ---
 title: データ移行プランの作成
 description: 次の手順に従って、データ移行計画を作成し、Magento1 からMagento2 へのアップグレードを確実に成功させます。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '900'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 * 既存のMagento1 システムと少なくとも一致するトポロジと設計を使用して、Magento2 ハードウェアシステムをセットアップします
 
-* Magento2.x（このリリースのすべてのモジュール）と [!DNL Data Migration Tool] に会うシステムで [Magentoの必要システム構成]
+* Magento2.x（このリリースのすべてのモジュール）と [!DNL Data Migration Tool] に会うシステムで [システム要件](../../installation/system-requirements.md)
 
 * カスタムで [!DNL Data Migration Tool] 一部のデータ（CMS ページ、セールスルールなど）を移行する必要がない場合や、移行中にMagentoのカスタマイズを変換する場合に使用するコード。 詳しくは、 [!DNL Data Migration Tool]&#39;s [技術仕様](technical-specification.md) 移行が内部からどのように動作するかをより深く理解する
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
    一部の拡張機能に移行するデータが含まれている場合は、Magento2 に適合したこれらの拡張機能をインストールする必要が生じる場合があります。 Magento2 データベースで拡張子の構造が異なる場合は、 [!DNL Data Migration Tool].
 
-1. すべてのMagento2.x のインデクサーを再インデックス化します。 詳しくは、 [設定ガイド].
+1. すべてのMagento2.x のインデクサーを再インデックス化します。 詳しくは、 [インデクサーの管理](../../configuration/cli/manage-indexers.md) 内 _設定ガイド_.
 
 ## 手順 5:移行されたデータに変更を加えます（必要に応じて）。
 
@@ -116,6 +116,5 @@ Magento2 のサイトがMagento1 の最新の状態になり、正常に機能�
 1. Magento2 ストアを使用する準備が整いました。 自分と顧客は、すべてのアクティビティを再開できます。
 
 <!-- LINK ADDRESSES -->
-[Magentoの必要システム構成]: ../../installation/system-requirements.md
+
 [Commerce Marketplace]: https://marketplace.magento.com
-[設定ガイド]: ../../configuration/cli/manage-indexers.md
