@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ![移行フロー](../../assets/data-migration/migration_flow.png)
 
-[[!DNL Data Migration Tool] 技術仕様 ]:technical-specification.md
+[[!DNL Data Migration Tool] 技術仕様 ]: technical-specification.md
 
 Magento1.x という世界の#1コマースプラットフォームから未来のMagento2 への移行をご検討いただけたことをうれしく思います。 このプロセスの詳細を、移行と呼ばれる方法で共有できることをうれしく思います。
 
