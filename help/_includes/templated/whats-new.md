@@ -1,7 +1,7 @@
 ---
-source-git-commit: a0b8a6131d9bccb819c846c873d2044da4009989
+source-git-commit: e7c10f28e241e47af8722fd41da0a9e86709b871
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,69 @@ ht-degree: 0%
 
 新しいドキュメントと既存ドキュメントの重要な更新について説明します。
 
+### 2023 年 1 月 28 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>公開済み <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">リリースノート</a> (1.1.26 Quality Patches Tool(QPT) パッケージリリース用 )</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/08210f356354d20adf7360d18e2ddba9fe9a565a">08210f</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023 年 1 月 24 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新された <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html">リリーススケジュール</a> および <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html">ソフトウェアライフサイクルポリシー</a> 2023 年のトピック。</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/979a6d481021eb26121e79974b2ce6e9280d51c3">979a6d</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023 年 1 月 24 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce 2.4.6 beta 2 のリリースノートを追加しました。 詳しくは、 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">Adobe Commerce 2.4.6 リリースノート</a>.</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/af347fea185d2a3c02180216feb2fd13f5868081">af347f</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
 ### 2023 年 1 月 20 日
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>説明</th>
@@ -33,7 +93,7 @@ ht-degree: 0%
 
 ### 2023 年 1 月 11 日
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>説明</th>
@@ -53,7 +113,7 @@ ht-degree: 0%
 
 ### 2023 年 1 月 10 日
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>説明</th>
@@ -73,7 +133,7 @@ ht-degree: 0%
 
 ### 2022 年 12 月 21 日
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>説明</th>
@@ -93,7 +153,7 @@ ht-degree: 0%
 
 ### 2022 年 12 月 16 日
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>説明</th>
@@ -113,7 +173,7 @@ ht-degree: 0%
 
 ### 2022 年 12 月 2 日
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>説明</th>
@@ -133,7 +193,7 @@ ht-degree: 0%
 
 ### 2022 年 12 月 1 日
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>説明</th>
