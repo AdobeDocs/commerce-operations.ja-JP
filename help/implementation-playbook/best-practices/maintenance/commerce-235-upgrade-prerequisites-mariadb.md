@@ -4,19 +4,19 @@ description: Adobe Commerce 2.3.5 からアップグレードするためのAdob
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 35efea20181b112e97bfae803c8d0168cfc88dfc
+source-git-commit: bc38dd658401d3cd4c64159b1b2b2efe89979a93
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
 
 
-# Adobe Commerce 2.3.5 アップグレードの前提条件
+# MariaDB のアップグレードの前提条件
 
-この記事では、バージョン 2.3.4 以前からAdobe Commerce 2.3.5 にアップグレードする際にデータベースを準備する方法について説明します。
+Adobe Commerce 2.3.4 以前から新しいバージョンにアップグレードするには、クラウドインフラストラクチャ上の MariaDB サービスをバージョン 10.0 または 10.2 からバージョン 10.3 または 10.4 にアップグレードする必要があります。 この記事では、MariaDB の要件に準拠するようにデータベースを更新する方法を説明します。
 
-このアップグレードでは、Adobe Commerceバージョン 2.3.5 以降の要件を満たすために、サポートチームがクラウドインフラストラクチャ上の MariaDB を MariaDB 10.0 から 10.2 にアップグレードする必要があります。
+データベースを準備したら、Adobe Commerceサポートチケットを送信して、Adobe Commerceのアップグレードプロセスに進む前に、クラウドインフラストラクチャ上の MariaDB サービスのバージョンを更新します。
 
 ## 影響を受ける製品およびバージョン
 
@@ -27,7 +27,7 @@ Adobe Commerceバージョン 2.3.4 以前および MariaDB バージョン 10.0
 Adobe Commerceサポートチームがアップグレードプロセスを開始する前に、データベーステーブルを変換してデータベースを準備します。
 
 - 行の形式の変換元 `COMPACT` から `DYNAMIC`
-- ストレージエンジンの変換元 `MyISAM` から `InnoDB`
+- 次のストレージエンジンを変更： `MyISAM` から `InnoDB`
 
 変換を計画およびスケジュールする際は、次の点に注意してください。
 
@@ -137,6 +137,12 @@ MariaDB バージョン 10.2 へのスケジュールされたアップグレー
 
 1. テーブルが元に戻されている場合は、手順を繰り返して、テーブル行のフォーマットとストレージエンジンを変更します。
 
+## ストレージエンジンの変更
+
+詳しくは、 [MyISAM テーブルを InnoDB に変換](../planning/database-on-cloud.md).
+
 ## 追加情報
 
-[クラウドインフラストラクチャ上のAdobe Commerceのデータベースのベストプラクティス](../planning/database-on-cloud.md)
+- [クラウドインフラストラクチャ上のAdobe Commerceのデータベースのベストプラクティス](../planning/database-on-cloud.md)
+- [Cloud 上のAdobe Commerceの MariaDB を 10.0 から 12.0 に更新しました。](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10.0-to-10.2-for-magento-commerce-cloud.html)
+

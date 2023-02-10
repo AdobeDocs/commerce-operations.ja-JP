@@ -1,11 +1,11 @@
 ---
 user-guide-title: 実装プレイブック
-user-guide-description: 成功する Adobe Commerce サイトの計画と実装の戦略について学習します。
+user-guide-description: 成功するAdobe Commerceサイトの計画と実装の戦略について説明します。
 mini-toc-levels: 3
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+source-git-commit: 5559d412ab58d392098cfff7a4cabb473c38cb0d
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 6%
+source-wordcount: '255'
+ht-degree: 0%
 
 ---
 
@@ -110,6 +110,6 @@ ht-degree: 6%
       - [実稼動サイトで管理者の更新をスケジュールする](best-practices/maintenance/scheduling-admin-updates-in-production.md)
       - [サービスを更新](best-practices/maintenance/update-services.md)
       - [アップグレードチェックリスト](best-practices/maintenance/upgrade-checklist.md)
-      - [データベースのパフォーマンスの問題を解決&#x200B;する](best-practices/maintenance/resolve-database-performance-issues.md)
-      - [Adobe Commerce 2.3.5 MariaDB のアップグレードの前提条件&#x200B;](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
+      - [データベースのパフォーマンスの問題を解決](best-practices/maintenance/resolve-database-performance-issues.md)
+      - [MariaDB のアップグレードの前提条件](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
