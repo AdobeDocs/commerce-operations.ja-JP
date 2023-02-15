@@ -1,7 +1,7 @@
 ---
-source-git-commit: 23d55385046de18b238c90f6a99be692f1ce7561
+source-git-commit: 27e7a262fd1d8092045f5ebe2f88caaec37a6b0d
 workflow-type: tm+mt
-source-wordcount: '19853'
+source-wordcount: '29783'
 ht-degree: 0%
 
 ---
@@ -10,7 +10,7 @@ ht-degree: 0%
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**バージョン**:1.40.0
+**バージョン**:1.42.0
 
 このリファレンスには、 `magento-cloud` コマンドラインツールを使用します。
 最初のリストは、 `magento-cloud list` コマンドを使用して
@@ -83,13 +83,6 @@ magento-cloud bot [--party] [--parrot]
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -106,14 +99,42 @@ magento-cloud bot [--party] [--parrot]
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -144,13 +165,6 @@ cc
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -167,14 +181,42 @@ cc
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -208,13 +250,6 @@ magento-cloud decode [-P|--property PROPERTY] [--] <value>
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -231,14 +266,42 @@ magento-cloud decode [-P|--property PROPERTY] [--] <value>
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -281,13 +344,6 @@ URL を stdout に出力します。
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -304,14 +360,42 @@ URL を stdout に出力します。
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -322,7 +406,7 @@ URL を stdout に出力します。
 コマンドのヘルプを表示します
 
 ```bash
-help [--format FORMAT] [--raw] [--] [<command_name>]
+magento-cloud help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 
 
@@ -354,13 +438,6 @@ help [--format FORMAT] [--raw] [--] [<command_name>]
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -377,14 +454,42 @@ help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -412,13 +517,6 @@ magento-cloud legacy-migrate [--no-backup]
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -435,14 +533,42 @@ magento-cloud legacy-migrate [--no-backup]
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -453,9 +579,15 @@ magento-cloud legacy-migrate [--no-backup]
 コマンドを一覧表示
 
 ```bash
-list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
+magento-cloud list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
 ```
 
+
+### `command`
+
+実行するコマンド
+
+- 必須
 
 ### `namespace`
 
@@ -476,13 +608,83 @@ list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
 - デフォルト： `txt`
 - 値が必要です
 
+### `--all`
+
+隠しコマンドを含むすべてのコマンドを表示
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--help`, `-h`
+
+このヘルプメッセージを表示
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--verbose`, `-v|-vv|-vvv`
+
+メッセージの詳細度を上げる
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--version`, `-V`
+
+このアプリケーションバージョンを表示
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--yes`, `-y`
+
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no`, `-n`
+
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
+
+- デフォルト： `false`
+- 値を受け入れない
+
 
 ## `multi`
 
 複数のプロジェクトでコマンドを実行する
 
 ```bash
-magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--reverse] [--] <cmd>
+magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--reverse] [--] <cmd> (<cmd>)...
 ```
 
 
@@ -490,7 +692,10 @@ magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--rever
 
 実行するコマンド
 
+- デフォルト： `[]`
+
 - 必須
+- 配列
 
 ### `--projects`, `-p`
 
@@ -526,13 +731,6 @@ magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--rever
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -549,14 +747,42 @@ magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--rever
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -567,7 +793,7 @@ magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--rever
 Web UI を開く
 
 ```bash
-magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 ### `--browser`
@@ -591,7 +817,7 @@ URL を stdout に出力します。
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -604,13 +830,6 @@ URL を stdout に出力します。
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -631,14 +850,42 @@ URL を stdout に出力します。
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -659,13 +906,6 @@ magento-cloud welcome
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -682,14 +922,42 @@ magento-cloud welcome
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -710,13 +978,6 @@ magento-cloud winky
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -733,14 +994,42 @@ magento-cloud winky
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -751,7 +1040,7 @@ magento-cloud winky
 アクティビティのキャンセル
 
 ```bash
-magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -762,14 +1051,14 @@ magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--
 
 ### `--type`
 
-タイプでフィルター（デフォルトのアクティビティを選択する場合）。 1 つの値を指定した場合、コンマまたは空白で分割されます。
+タイプでフィルター（デフォルトのアクティビティを選択する場合）。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。 %文字は、例えば&#39;%var%&#39;で変数関連のアクティビティを選択します。
 
 - デフォルト： `[]`
 - 値が必要です
 
 ### `--exclude-type`
 
-タイプ別に除外（デフォルトのアクティビティを選択する場合） 1 つの値を指定した場合、コンマまたは空白で分割されます。
+タイプ別に除外（デフォルトのアクティビティを選択する場合） リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。 %文字は、タイプを除外するワイルドカードとして使用できます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -789,7 +1078,7 @@ magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -802,13 +1091,6 @@ magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -829,14 +1111,42 @@ magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -847,7 +1157,7 @@ magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--
 単一のアクティビティの詳細情報の表示
 
 ```bash
-magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
+magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
 ```
 
 
@@ -864,21 +1174,21 @@ magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-typ
 
 ### `--type`
 
-タイプでフィルター（デフォルトのアクティビティを選択する場合）。 1 つの値を指定した場合、コンマまたは空白で分割されます。
+タイプでフィルター（デフォルトのアクティビティを選択する場合）。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。 %文字は、例えば&#39;%var%&#39;で変数関連のアクティビティを選択します。
 
 - デフォルト： `[]`
 - 値が必要です
 
 ### `--exclude-type`
 
-タイプ別に除外（デフォルトのアクティビティを選択する場合） 1 つの値を指定した場合、コンマまたは空白で分割されます。
+タイプ別に除外（デフォルトのアクティビティを選択する場合） リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。 %文字は、タイプを除外するワイルドカードとして使用できます。
 
 - デフォルト： `[]`
 - 値が必要です
 
 ### `--state`
 
-状態でフィルター（デフォルトのアクティビティを選択する場合）:in_progress、pending、complete または cancelled。 1 つの値を指定した場合、コンマまたは空白で分割されます。
+状態でフィルター（デフォルトのアクティビティを選択する場合）:in_progress、pending、complete または cancelled。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -911,7 +1221,7 @@ magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-typ
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -923,14 +1233,14 @@ magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-typ
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -956,13 +1266,6 @@ magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-typ
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -979,14 +1282,42 @@ magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-typ
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -997,7 +1328,7 @@ magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-typ
 環境またはプロジェクトのアクティビティのリストの取得
 
 ```bash
-magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -1012,14 +1343,14 @@ act
 
 ### `--type`, `-t`
 
-タイプでアクティビティをフィルター単一の値を指定した場合、コンマまたは空白で分割されます。
+タイプでアクティビティをフィルターリストに単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。 %文字は、例えば&#39;%var%&#39;で変数関連のアクティビティを選択します。
 
 - デフォルト： `[]`
 - 値が必要です
 
 ### `--exclude-type`, `-x`
 
-タイプ別にアクティビティを除外します。 1 つの値を指定した場合、コンマまたは空白で分割されます。
+タイプ別にアクティビティを除外します。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。 %文字は、タイプを除外するワイルドカードとして使用できます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -1039,7 +1370,7 @@ act
 
 ### `--state`
 
-状態でアクティビティをフィルター：in_progress、pending、complete または cancelled。 1 つの値を指定した場合、コンマまたは空白で分割されます。
+状態でアクティビティをフィルター：in_progress、pending、complete または cancelled。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -1066,14 +1397,14 @@ act
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：id*, created*, description*, progress*, state*, result*, completed, environments, type （* =デフォルトの列） 「+」文字は、デフォルト列のプレースホルダーとして使用できます。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -1100,7 +1431,7 @@ act
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -1113,13 +1444,6 @@ act
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1140,14 +1464,42 @@ act
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1158,7 +1510,7 @@ act
 アクティビティのログを表示
 
 ```bash
-magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -1183,21 +1535,21 @@ magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [
 
 ### `--type`
 
-タイプでフィルター（デフォルトのアクティビティを選択する場合）。 1 つの値を指定した場合、コンマまたは空白で分割されます。
+タイプでフィルター（デフォルトのアクティビティを選択する場合）。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。 %文字は、例えば&#39;%var%&#39;で変数関連のアクティビティを選択します。
 
 - デフォルト： `[]`
 - 値が必要です
 
 ### `--exclude-type`
 
-タイプ別に除外（デフォルトのアクティビティを選択する場合） 1 つの値を指定した場合、コンマまたは空白で分割されます。
+タイプ別に除外（デフォルトのアクティビティを選択する場合） リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。 %文字は、タイプを除外するワイルドカードとして使用できます。
 
 - デフォルト： `[]`
 - 値が必要です
 
 ### `--state`
 
-状態でフィルター（デフォルトのアクティビティを選択する場合）:in_progress、pending、complete または cancelled。 1 つの値を指定した場合、コンマまたは空白で分割されます。
+状態でフィルター（デフォルトのアクティビティを選択する場合）:in_progress、pending、complete または cancelled。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -1237,7 +1589,7 @@ magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -1250,13 +1602,6 @@ magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1277,14 +1622,42 @@ magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1295,7 +1668,7 @@ magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [
 認証済み cURL リクエストをMagentoCloud API で実行する
 
 ```bash
-magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [--] [<path>]
+magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [--] [<path>]
 ```
 
 
@@ -1313,6 +1686,12 @@ API パス
 ### `--data`, `-d`
 
 送信するデータ
+
+- 値が必要です
+
+### `--json`
+
+送信する JSON データ
 
 - 値が必要です
 
@@ -1365,13 +1744,6 @@ curl グロビングを有効にする（ —globoff フラグを削除）
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -1388,14 +1760,42 @@ curl グロビングを有効にする（ —globoff フラグを削除）
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1406,7 +1806,7 @@ curl グロビングを有効にする（ —globoff フラグを削除）
 アプリの設定を表示
 
 ```bash
-magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--property`, `-P`
@@ -1430,7 +1830,7 @@ magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project 
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -1459,13 +1859,6 @@ magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project 
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -1482,14 +1875,42 @@ magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project 
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1500,7 +1921,7 @@ magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project 
 プロジェクト内のアプリのリスト
 
 ```bash
-magento-cloud apps [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud apps [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -1523,7 +1944,7 @@ apps
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -1535,14 +1956,14 @@ apps
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：name*, type*, disk, path, size （* =デフォルトの列） 「+」文字は、デフォルト列のプレースホルダーとして使用できます。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -1557,13 +1978,6 @@ apps
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1584,14 +1998,42 @@ apps
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1612,13 +2054,6 @@ magento-cloud auth:api-token-login
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -1635,14 +2070,42 @@ magento-cloud auth:api-token-login
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1688,13 +2151,6 @@ URL を stdout に出力します。
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -1711,14 +2167,42 @@ URL を stdout に出力します。
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1729,7 +2213,7 @@ URL を stdout に出力します。
 アカウント情報を表示
 
 ```bash
-magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [--] [<property>]
+magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--] [<property>]
 ```
 
 
@@ -1760,14 +2244,14 @@ magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -1782,13 +2266,6 @@ magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1809,14 +2286,42 @@ magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1856,13 +2361,6 @@ logout
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -1879,14 +2377,42 @@ logout
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1912,13 +2438,6 @@ auth:login
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -1935,14 +2454,42 @@ auth:login
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1953,19 +2500,26 @@ auth:login
 MagentoCloud API へのリクエスト用の OAuth 2 アクセストークンの取得
 
 ```bash
-magento-cloud auth:token
+magento-cloud auth:token [-H|--header] [-W|--no-warn]
 ```
 
-### `--help`, `-h`
+### `--header`, `-H`
 
-このヘルプメッセージを表示
+トークンの先頭に「Authorization:RFC 6750 ヘッダーを作成する Bearer &quot;
 
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
+### `--no-warn`, `-W`
 
-メッセージを出力しない
+デフォルトで stderr に出力される警告を抑制します。 このオプションは、他の役に立つ可能性のあるメッセージを非表示にするので、標準のリダイレクトよりも優先されます。
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--help`, `-h`
+
+このヘルプメッセージを表示
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1986,14 +2540,42 @@ magento-cloud auth:token
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2004,7 +2586,7 @@ magento-cloud auth:token
 プロジェクトのBlackfire.io 統合を設定します
 
 ```bash
-magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOKEN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOKEN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--server_id`
@@ -2027,7 +2609,7 @@ magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOK
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -2052,9 +2634,92 @@ magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOK
 - デフォルト： `false`
 - 値を受け入れない
 
+### `--verbose`, `-v|-vv|-vvv`
+
+メッセージの詳細度を上げる
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--version`, `-V`
+
+このアプリケーションバージョンを表示
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--yes`, `-y`
+
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no`, `-n`
+
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
 ### `--quiet`, `-q`
 
 メッセージを出力しない
+
+- デフォルト： `false`
+- 値を受け入れない
+
+
+## `blue-green:conclude`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ アルファ ]&lt;/> 青/緑のデプロイメントを終了する
+
+```bash
+magento-cloud blue-green:conclude [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--project`, `-p`
+
+プロジェクト ID または URL
+
+- 値が必要です
+
+### `--host`
+
+非推奨（廃止予定）のオプション。廃止
+
+- 値が必要です
+
+### `--environment`, `-e`
+
+環境 ID
+
+- 値が必要です
+
+### `--help`, `-h`
+
+このヘルプメッセージを表示
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2075,14 +2740,236 @@ magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOK
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
+
+- デフォルト： `false`
+- 値を受け入れない
+
+
+## `blue-green:deploy`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ アルファ ]&lt;/> 青/緑のデプロイメントを実行
+
+```bash
+magento-cloud blue-green:deploy [--routing-percentage ROUTING-PERCENTAGE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--routing-percentage`
+
+最新バージョンのルーティングの割合を設定します
+
+- デフォルト： `100`
+- 値が必要です
+
+### `--project`, `-p`
+
+プロジェクト ID または URL
+
+- 値が必要です
+
+### `--host`
+
+非推奨（廃止予定）のオプション。廃止
+
+- 値が必要です
+
+### `--environment`, `-e`
+
+環境 ID
+
+- 値が必要です
+
+### `--help`, `-h`
+
+このヘルプメッセージを表示
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--verbose`, `-v|-vv|-vvv`
+
+メッセージの詳細度を上げる
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--version`, `-V`
+
+このアプリケーションバージョンを表示
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--yes`, `-y`
+
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no`, `-n`
+
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
+
+- デフォルト： `false`
+- 値を受け入れない
+
+
+## `blue-green:enable`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ アルファ ]&lt;/> 青/緑のデプロイメントを有効にする
+
+```bash
+magento-cloud blue-green:enable [-%|--routing-percentage ROUTING-PERCENTAGE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--routing-percentage`, `-%`
+
+最新バージョンのルーティングの割合を設定します
+
+- デフォルト： `100`
+- 値が必要です
+
+### `--project`, `-p`
+
+プロジェクト ID または URL
+
+- 値が必要です
+
+### `--host`
+
+非推奨（廃止予定）のオプション。廃止
+
+- 値が必要です
+
+### `--environment`, `-e`
+
+環境 ID
+
+- 値が必要です
+
+### `--help`, `-h`
+
+このヘルプメッセージを表示
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--verbose`, `-v|-vv|-vvv`
+
+メッセージの詳細度を上げる
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--version`, `-V`
+
+このアプリケーションバージョンを表示
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--yes`, `-y`
+
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no`, `-n`
+
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2093,7 +2980,7 @@ magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOK
 プロジェクトに SSL 証明書を追加します
 
 ```bash
-magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--cert`
@@ -2123,7 +3010,7 @@ magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--pr
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -2148,13 +3035,6 @@ magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--pr
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -2171,14 +3051,42 @@ magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--pr
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2189,7 +3097,7 @@ magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--pr
 プロジェクトから証明書を削除
 
 ```bash
-magento-cloud certificate:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <id>
+magento-cloud certificate:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <id>
 ```
 
 
@@ -2207,7 +3115,7 @@ magento-cloud certificate:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -2232,13 +3140,6 @@ magento-cloud certificate:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -2255,14 +3156,42 @@ magento-cloud certificate:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2273,7 +3202,7 @@ magento-cloud certificate:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 証明書を表示
 
 ```bash
-magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [--] <id>
+magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--] <id>
 ```
 
 
@@ -2304,20 +3233,13 @@ magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2338,14 +3260,42 @@ magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2356,7 +3306,7 @@ magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p
 プロジェクト証明書のリスト
 
 ```bash
-magento-cloud certificate:list [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud certificate:list [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -2438,14 +3388,14 @@ certs
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：created、domains、expires、id、issuer。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -2465,20 +3415,13 @@ certs
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2499,14 +3442,42 @@ certs
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2517,7 +3488,7 @@ certs
 コミットの詳細を表示
 
 ```bash
-magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--] [<commit>]
+magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--] [<commit>]
 ```
 
 
@@ -2542,7 +3513,7 @@ magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -2586,13 +3557,6 @@ magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -2609,14 +3573,42 @@ magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2627,7 +3619,7 @@ magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host
 リストのコミット
 
 ```bash
-magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
+magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
 ```
 
 
@@ -2656,7 +3648,7 @@ commits
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -2668,14 +3660,14 @@ commits
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：作成者、日付、sha、概要。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -2701,13 +3693,6 @@ commits
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -2724,14 +3709,42 @@ commits
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2742,7 +3755,7 @@ commits
 リモートデータベースのローカルダンプを作成する
 
 ```bash
-magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 
@@ -2829,7 +3842,7 @@ gzip を使用してダンプを圧縮
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -2864,13 +3877,6 @@ gzip を使用してダンプを圧縮
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -2887,14 +3893,42 @@ gzip を使用してダンプを圧縮
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2905,7 +3939,7 @@ gzip を使用してダンプを圧縮
 データベースのディスク使用量の見積もり
 
 ```bash
-magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
+magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--bytes`, `-B`
@@ -2930,7 +3964,7 @@ magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -2954,14 +3988,14 @@ magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：max、percent_used、used。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -2986,13 +4020,6 @@ magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -3009,14 +4036,42 @@ magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3027,7 +4082,7 @@ magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host
 リモートデータベースで SQL を実行
 
 ```bash
-magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
+magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
 ```
 
 
@@ -3067,7 +4122,7 @@ environment:sql
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -3102,13 +4157,6 @@ environment:sql
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -3125,14 +4173,42 @@ environment:sql
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3143,7 +4219,7 @@ environment:sql
 プロジェクトに新しいドメインを追加
 
 ```bash
-magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3180,7 +4256,7 @@ magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -3205,13 +4281,6 @@ magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -3228,14 +4297,42 @@ magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3246,7 +4343,7 @@ magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project
 プロジェクトからドメインを削除
 
 ```bash
-magento-cloud domain:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3264,7 +4361,7 @@ magento-cloud domain:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] 
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -3289,13 +4386,6 @@ magento-cloud domain:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] 
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -3312,14 +4402,42 @@ magento-cloud domain:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] 
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3330,7 +4448,7 @@ magento-cloud domain:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] 
 ドメインの詳細情報を表示
 
 ```bash
-magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [--] [<name>]
+magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--] [<name>]
 ```
 
 
@@ -3347,14 +4465,14 @@ magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [--columns C
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -3381,20 +4499,13 @@ magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [--columns C
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3415,14 +4526,42 @@ magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [--columns C
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3433,7 +4572,7 @@ magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [--columns C
 すべてのドメインのリストを取得する
 
 ```bash
-magento-cloud domains [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud domains [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -3443,14 +4582,14 @@ domains
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：name*, ssl*, created_at*, updated_at （* =デフォルトの列） 「+」文字は、デフォルト列のプレースホルダーとして使用できます。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -3470,20 +4609,13 @@ domains
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3504,14 +4636,42 @@ domains
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3522,7 +4682,7 @@ domains
 ドメインの更新
 
 ```bash
-magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3559,7 +4719,7 @@ magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--proj
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -3584,13 +4744,6 @@ magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--proj
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -3607,14 +4760,42 @@ magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--proj
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3625,7 +4806,7 @@ magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--proj
 環境のアクティブ化
 
 ```bash
-magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
 
@@ -3651,7 +4832,7 @@ magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [--h
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -3682,13 +4863,6 @@ magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [--h
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -3705,14 +4879,42 @@ magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [--h
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3723,7 +4925,7 @@ magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [--h
 環境の分岐
 
 ```bash
-magento-cloud branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
+magento-cloud branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
 ```
 
 
@@ -3776,7 +4978,7 @@ branch
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -3813,13 +5015,6 @@ branch
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -3836,14 +5031,42 @@ branch
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3881,13 +5104,6 @@ checkout
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -3904,14 +5120,42 @@ checkout
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3922,7 +5166,7 @@ checkout
 環境の API で認証済み cURL リクエストを実行する
 
 ```bash
-magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -3940,6 +5184,12 @@ API パス
 ### `--data`, `-d`
 
 送信するデータ
+
+- 値が必要です
+
+### `--json`
+
+送信する JSON データ
 
 - 値が必要です
 
@@ -3993,7 +5243,7 @@ curl グロビングを有効にする（ —globoff フラグを削除）
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -4006,13 +5256,6 @@ curl グロビングを有効にする（ —globoff フラグを削除）
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4033,14 +5276,42 @@ curl グロビングを有効にする（ —globoff フラグを削除）
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4048,10 +5319,10 @@ curl グロビングを有効にする（ —globoff フラグを削除）
 
 ## `environment:delete`
 
-環境の削除
+1 つ以上の環境の削除
 
 ```bash
-magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--inactive] [--merged] [--type TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--type TYPE] [-t|--only-type ONLY-TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [--inactive] [--merged] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
 
@@ -4062,7 +5333,7 @@ environment:deactivate
 
 ### `environment`
 
-削除する環境。 %文字はワイルドカードとして使用できます。 1 つの値を指定した場合、コンマまたは空白で分割されます。
+削除する環境。 %文字はワイルドカードとして使用できます。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 
@@ -4070,52 +5341,59 @@ environment:deactivate
 
 ### `--delete-branch`
 
-リモート Git ブランチを削除します
+Git ブランチ（非アクティブな環境）を削除
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-delete-branch`
 
-リモート Git ブランチを削除しないでください
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--inactive`
-
-非アクティブな環境をすべて削除
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--merged`
-
-すべての結合環境を削除
+Git ブランチ（非アクティブな環境）を削除しない
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--type`
 
-削除する環境タイプ 1 つの値を指定した場合、コンマまたは空白で分割されます。
+タイプのすべての環境を削除します（選択した他の環境に追加します）リストに単一の値 ( 例：&quot;a,b,c&quot;) コンマや空白で区切られます。
+
+- デフォルト： `[]`
+- 値が必要です
+
+### `--only-type`, `-t`
+
+特定の型の環境のみを削除するリストが単一の値 ( 例：&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
 
 ### `--exclude`
 
-削除しない環境。 %文字はワイルドカードとして使用できます。 1 つの値を指定した場合、コンマまたは空白で分割されます。
+削除しない環境。 %文字はワイルドカードとして使用できます。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
 
 ### `--exclude-type`
 
-削除しない環境タイプ 1 つの値を指定した場合、コンマまたは空白で分割されます。
+削除しない環境タイプリストに単一の値 ( 例：&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
+
+### `--inactive`
+
+非アクティブな環境をすべて削除（選択した他の環境に追加）
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--merged`
+
+すべての結合環境を削除（他の選択した環境に追加）
+
+- デフォルト： `false`
+- 値を受け入れない
 
 ### `--project`, `-p`
 
@@ -4125,7 +5403,7 @@ environment:deactivate
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -4156,13 +5434,6 @@ environment:deactivate
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -4179,14 +5450,42 @@ environment:deactivate
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4197,7 +5496,7 @@ environment:deactivate
 環境の HTTP アクセス設定の更新
 
 ```bash
-magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 
@@ -4233,7 +5532,7 @@ HTTP Basic 認証資格情報（「username:password」形式）。 0 を使用�
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -4264,13 +5563,6 @@ HTTP Basic 認証資格情報（「username:password」形式）。 0 を使用�
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -4287,14 +5579,42 @@ HTTP Basic 認証資格情報（「username:password」形式）。 0 を使用�
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4305,7 +5625,7 @@ HTTP Basic 認証資格情報（「username:password」形式）。 0 を使用�
 環境のプロパティの読み取りまたは設定
 
 ```bash
-magento-cloud environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
+magento-cloud environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
 ```
 
 
@@ -4340,14 +5660,14 @@ environment:metadata
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -4367,7 +5687,7 @@ environment:metadata
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -4398,13 +5718,6 @@ environment:metadata
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -4421,14 +5734,42 @@ environment:metadata
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4439,7 +5780,7 @@ environment:metadata
 パブリック Git リポジトリーから環境を初期化します
 
 ```bash
-magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <url>
+magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <url>
 ```
 
 
@@ -4463,7 +5804,7 @@ Git リポジトリへの URL
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -4494,13 +5835,6 @@ Git リポジトリへの URL
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -4517,14 +5851,42 @@ Git リポジトリへの URL
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4535,7 +5897,7 @@ Git リポジトリへの URL
 環境のリストの取得
 
 ```bash
-magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -4585,21 +5947,21 @@ env
 
 ### `--type`
 
-環境タイプでリストをフィルターします。 1 つの値を指定した場合、コンマまたは空白で分割されます。
+環境タイプでリストをフィルターします。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：id*, title*, status*, type*, created, machine_name, updated （* =デフォルトの列） 「+」文字は、デフォルト列のプレースホルダーとして使用できます。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -4619,20 +5981,13 @@ env
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4653,14 +6008,42 @@ env
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4671,7 +6054,7 @@ env
 環境のログの読み取り
 
 ```bash
-magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [--] [<type>]
+magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<type>]
 ```
 
 
@@ -4712,7 +6095,7 @@ logs
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -4734,16 +6117,15 @@ logs
 
 - 値が必要です
 
+### `--instance`, `-I`
+
+インスタンス ID
+
+- 値が必要です
+
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4764,14 +6146,42 @@ logs
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4782,7 +6192,7 @@ logs
 環境の結合
 
 ```bash
-magento-cloud merge [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
+magento-cloud merge [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 
@@ -4804,7 +6214,7 @@ merge
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -4835,13 +6245,6 @@ merge
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -4858,14 +6261,42 @@ merge
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4876,7 +6307,7 @@ merge
 コードを環境にプッシュ
 
 ```bash
-magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--branch] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
+magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
 ```
 
 
@@ -4974,7 +6405,7 @@ push
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -4997,13 +6428,6 @@ push
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -5020,14 +6444,42 @@ push
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5038,7 +6490,7 @@ push
 環境の再デプロイ
 
 ```bash
-magento-cloud redeploy [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud redeploy [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 
@@ -5054,7 +6506,7 @@ redeploy
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -5085,13 +6537,6 @@ redeploy
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -5108,14 +6553,42 @@ redeploy
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5126,7 +6599,7 @@ redeploy
 環境の関係を表示
 
 ```bash
-magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
+magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
 ```
 
 
@@ -5161,7 +6634,7 @@ relationships
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -5190,13 +6663,6 @@ relationships
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -5213,14 +6679,42 @@ relationships
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5231,7 +6725,7 @@ relationships
 scp を使用して現在の環境との間でファイルをコピーする
 
 ```bash
-magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
+magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
 ```
 
 
@@ -5263,7 +6757,7 @@ scp
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -5285,6 +6779,12 @@ scp
 
 - 値が必要です
 
+### `--instance`, `-I`
+
+インスタンス ID
+
+- 値が必要です
+
 ### `--identity-file`, `-i`
 
 使用する SSH ID（秘密鍵）
@@ -5294,13 +6794,6 @@ scp
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5321,14 +6814,42 @@ scp
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5361,13 +6882,6 @@ magento-cloud environment:set-remote <environment> [<branch>]
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -5384,14 +6898,42 @@ magento-cloud environment:set-remote <environment> [<branch>]
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5402,7 +6944,7 @@ magento-cloud environment:set-remote <environment> [<branch>]
 現在の環境に対する SSH
 
 ```bash
-magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
+magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
 ```
 
 
@@ -5441,7 +6983,7 @@ SSH URL のみを出力します。
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -5463,6 +7005,12 @@ SSH URL のみを出力します。
 
 - 値が必要です
 
+### `--instance`, `-I`
+
+インスタンス ID
+
+- 値が必要です
+
 ### `--identity-file`, `-i`
 
 使用する SSH ID（秘密鍵）
@@ -5472,13 +7020,6 @@ SSH URL のみを出力します。
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5499,14 +7040,42 @@ SSH URL のみを出力します。
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5517,7 +7086,7 @@ SSH URL のみを出力します。
 環境のコードやデータを親から同期する
 
 ```bash
-magento-cloud sync [--rebase] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
+magento-cloud sync [--rebase] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
 ```
 
 
@@ -5549,7 +7118,7 @@ sync
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -5580,13 +7149,6 @@ sync
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -5603,14 +7165,42 @@ sync
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5621,7 +7211,7 @@ sync
 環境のパブリック URL の取得
 
 ```bash
-magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -5657,7 +7247,7 @@ URL を stdout に出力します。
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -5670,13 +7260,6 @@ URL を stdout に出力します。
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5697,14 +7280,42 @@ URL を stdout に出力します。
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5715,7 +7326,7 @@ URL を stdout に出力します。
 環境で Xdebug へのトンネルを開きます。
 
 ```bash
-magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 
@@ -5738,7 +7349,7 @@ xdebug
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -5760,6 +7371,12 @@ xdebug
 
 - 値が必要です
 
+### `--instance`, `-I`
+
+インスタンス ID
+
+- 値が必要です
+
 ### `--identity-file`, `-i`
 
 使用する SSH ID（秘密鍵）
@@ -5769,13 +7386,6 @@ xdebug
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5796,14 +7406,42 @@ xdebug
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5814,7 +7452,7 @@ xdebug
 単一の統合アクティビティの詳細情報の表示
 
 ```bash
-magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<integration>] [<activity>]
+magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<integration>] [<activity>]
 ```
 
 
@@ -5842,7 +7480,7 @@ magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PR
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -5854,14 +7492,14 @@ magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PR
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -5887,13 +7525,6 @@ magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PR
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -5910,14 +7541,42 @@ magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PR
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5928,7 +7587,7 @@ magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PR
 統合のアクティビティのリストの取得
 
 ```bash
-magento-cloud i:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud i:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -5949,14 +7608,14 @@ integration:activities
 
 ### `--type`
 
-タイプでアクティビティをフィルタリングします。 1 つの値を指定した場合、コンマまたは空白で分割されます。
+タイプでアクティビティをフィルタリングします。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
 
 ### `--exclude-type`, `-x`
 
-タイプ別にアクティビティを除外します。 1 つの値を指定した場合、コンマまたは空白で分割されます。
+タイプ別にアクティビティを除外します。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。 %文字は、タイプを除外するワイルドカードとして使用できます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -5976,7 +7635,7 @@ integration:activities
 
 ### `--state`
 
-アクティビティを状態でフィルタリングします。 1 つの値を指定した場合、コンマまたは空白で分割されます。
+アクティビティを状態でフィルタリングします。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -5987,16 +7646,23 @@ integration:activities
 
 - 値が必要です
 
+### `--incomplete`, `-i`
+
+不完全なアクティビティのみをリスト
+
+- デフォルト： `false`
+- 値を受け入れない
+
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：id*, created*, description*, type*, state*, result*, completed （* =デフォルトの列） 「+」文字は、デフォルト列のプレースホルダーとして使用できます。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -6023,7 +7689,7 @@ integration:activities
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -6036,13 +7702,6 @@ integration:activities
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6063,14 +7722,42 @@ integration:activities
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6081,7 +7768,7 @@ integration:activities
 統合アクティビティのログの表示
 
 ```bash
-magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<integration>] [<activity>]
+magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<integration>] [<activity>]
 ```
 
 
@@ -6117,7 +7804,7 @@ magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -6134,13 +7821,6 @@ magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -6157,14 +7837,42 @@ magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6175,12 +7883,12 @@ magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [
 プロジェクトへの統合の追加
 
 ```bash
-magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--type`
 
-統合のタイプ (「bitbucket」、「bitbucket_server」、「github」、「gitlab」、「webhook」、「health.email」、「health.pagerduty」、「health.slack」、「health.webhook」、「script」)
+統合のタイプ (「bitbucket」、「bitbucket_server」、「gitlab」、「webhook」、「health.email」、「health.pagerduty」、「health.slack」、「script」、「newrelic」、「splunk」、「sumologic」、「syslog」)
 
 - 値が必要です
 
@@ -6198,7 +7906,7 @@ magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username US
 
 ### `--token`
 
-統合のアクセストークン
+統合の認証またはアクセストークン
 
 - 値が必要です
 
@@ -6211,6 +7919,12 @@ Bitbucket OAuth 消費者キー
 ### `--secret`
 
 Bitbucket OAuth 消費者シークレット
+
+- 値が必要です
+
+### `--license-key`
+
+New Relic Logs のライセンスキー
 
 - 値が必要です
 
@@ -6270,7 +7984,7 @@ GitLab:結合リクエストのデータを複製
 
 ### `--pull-requests-clone-parent-data`
 
-プル要求に対する親環境のデータのクローン
+取り込むリクエストの親環境のデータをクローンします。
 
 - デフォルト： `true`
 - 値が必要です
@@ -6298,7 +8012,7 @@ GitLab:結合リクエストのデータを複製
 
 ### `--url`
 
-ウェブフック：JSON データを受け取るための URL
+統合の URL または API エンドポイント
 
 - 値が必要です
 
@@ -6367,6 +8081,77 @@ PagerDuty ルーティングキー
 
 - 値が必要です
 
+### `--category`
+
+フィルタリングに使用する Sumo ロジックカテゴリ
+
+- 値が必要です
+
+### `--index`
+
+Splunk のインデックス
+
+- 値が必要です
+
+### `--sourcetype`
+
+Splunk イベントソースタイプ
+
+- 値が必要です
+
+### `--protocol`
+
+Syslog トランスポートプロトコル (&#39;tcp&#39;、&#39;udp&#39;、&#39;tls&#39;)
+
+- デフォルト： `tls`
+- 値が必要です
+
+### `--syslog-host`
+
+Syslog リレー/コレクタホスト
+
+- 値が必要です
+
+### `--syslog-port`
+
+Syslog リレー/コレクタポート
+
+- 値が必要です
+
+### `--facility`
+
+Syslog 機能
+
+- デフォルト： `1`
+- 値が必要です
+
+### `--message-format`
+
+Syslog メッセージ形式（「rfc3164」または「rfc5424」）
+
+- デフォルト： `rfc5424`
+- 値が必要です
+
+### `--auth-mode`
+
+認証モード（「prefix」または「structured_data」）
+
+- デフォルト： `prefix`
+- 値が必要です
+
+### `--auth-token`
+
+認証トークン
+
+- 値が必要です
+
+### `--verify-tls`
+
+HTTPS 証明書の検証を有効にするかどうか（推奨）
+
+- デフォルト： `true`
+- 値が必要です
+
 ### `--project`, `-p`
 
 プロジェクト ID または URL
@@ -6375,7 +8160,7 @@ PagerDuty ルーティングキー
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -6400,13 +8185,6 @@ PagerDuty ルーティングキー
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -6423,14 +8201,42 @@ PagerDuty ルーティングキー
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6441,7 +8247,7 @@ PagerDuty ルーティングキー
 プロジェクトからの統合の削除
 
 ```bash
-magento-cloud integration:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
 
@@ -6458,7 +8264,7 @@ magento-cloud integration:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -6483,13 +8289,6 @@ magento-cloud integration:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -6506,14 +8305,42 @@ magento-cloud integration:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6524,7 +8351,7 @@ magento-cloud integration:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 統合の詳細の表示
 
 ```bash
-magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<id>]
+magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<id>]
 ```
 
 
@@ -6541,14 +8368,14 @@ magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [--co
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -6568,20 +8395,13 @@ magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [--co
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6602,14 +8422,42 @@ magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [--co
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6620,7 +8468,7 @@ magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [--co
 プロジェクト統合のリストを表示
 
 ```bash
-magento-cloud integrations [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud integrations [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -6630,14 +8478,14 @@ integrations
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：id、summary、type。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -6657,20 +8505,13 @@ integrations
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6691,14 +8532,42 @@ integrations
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6709,7 +8578,7 @@ integrations
 統合の更新
 
 ```bash
-magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
 
@@ -6720,7 +8589,7 @@ magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username
 
 ### `--type`
 
-統合のタイプ (「bitbucket」、「bitbucket_server」、「github」、「gitlab」、「webhook」、「health.email」、「health.pagerduty」、「health.slack」、「health.webhook」、「script」)
+統合のタイプ (「bitbucket」、「bitbucket_server」、「gitlab」、「webhook」、「health.email」、「health.pagerduty」、「health.slack」、「script」、「newrelic」、「splunk」、「sumologic」、「syslog」)
 
 - 値が必要です
 
@@ -6738,7 +8607,7 @@ magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username
 
 ### `--token`
 
-統合のアクセストークン
+統合の認証またはアクセストークン
 
 - 値が必要です
 
@@ -6751,6 +8620,12 @@ Bitbucket OAuth 消費者キー
 ### `--secret`
 
 Bitbucket OAuth 消費者シークレット
+
+- 値が必要です
+
+### `--license-key`
+
+New Relic Logs のライセンスキー
 
 - 値が必要です
 
@@ -6838,7 +8713,7 @@ GitLab:結合リクエストのデータを複製
 
 ### `--url`
 
-ウェブフック：JSON データを受け取るための URL
+統合の URL または API エンドポイント
 
 - 値が必要です
 
@@ -6907,6 +8782,77 @@ PagerDuty ルーティングキー
 
 - 値が必要です
 
+### `--category`
+
+フィルタリングに使用する Sumo ロジックカテゴリ
+
+- 値が必要です
+
+### `--index`
+
+Splunk のインデックス
+
+- 値が必要です
+
+### `--sourcetype`
+
+Splunk イベントソースタイプ
+
+- 値が必要です
+
+### `--protocol`
+
+Syslog トランスポートプロトコル (&#39;tcp&#39;、&#39;udp&#39;、&#39;tls&#39;)
+
+- デフォルト： `tls`
+- 値が必要です
+
+### `--syslog-host`
+
+Syslog リレー/コレクタホスト
+
+- 値が必要です
+
+### `--syslog-port`
+
+Syslog リレー/コレクタポート
+
+- 値が必要です
+
+### `--facility`
+
+Syslog 機能
+
+- デフォルト： `1`
+- 値が必要です
+
+### `--message-format`
+
+Syslog メッセージ形式（「rfc3164」または「rfc5424」）
+
+- デフォルト： `rfc5424`
+- 値が必要です
+
+### `--auth-mode`
+
+認証モード（「prefix」または「structured_data」）
+
+- デフォルト： `prefix`
+- 値が必要です
+
+### `--auth-token`
+
+認証トークン
+
+- 値が必要です
+
+### `--verify-tls`
+
+HTTPS 証明書の検証を有効にするかどうか（推奨）
+
+- デフォルト： `true`
+- 値が必要です
+
 ### `--project`, `-p`
 
 プロジェクト ID または URL
@@ -6915,7 +8861,7 @@ PagerDuty ルーティングキー
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -6940,13 +8886,6 @@ PagerDuty ルーティングキー
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -6963,14 +8902,42 @@ PagerDuty ルーティングキー
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6981,7 +8948,7 @@ PagerDuty ルーティングキー
 既存の統合の検証
 
 ```bash
-magento-cloud integration:validate [-p|--project PROJECT] [--host HOST] [--] [<id>]
+magento-cloud integration:validate [-p|--project PROJECT] [--] [<id>]
 ```
 
 
@@ -6998,20 +8965,13 @@ magento-cloud integration:validate [-p|--project PROJECT] [--host HOST] [--] [<i
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7032,14 +8992,42 @@ magento-cloud integration:validate [-p|--project PROJECT] [--host HOST] [--] [<i
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7177,13 +9165,6 @@ Git を使用して、現在のディレクトリをビルドHEADに複製しま
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -7200,14 +9181,42 @@ Git を使用して、現在のディレクトリをビルドHEADに複製しま
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7253,13 +9262,6 @@ clean
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -7276,14 +9278,42 @@ clean
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7315,9 +9345,169 @@ dir
 - デフォルト： `false`
 - 値を受け入れない
 
+### `--verbose`, `-v|-vv|-vvv`
+
+メッセージの詳細度を上げる
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--version`, `-V`
+
+このアプリケーションバージョンを表示
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--yes`, `-y`
+
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no`, `-n`
+
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
 ### `--quiet`, `-q`
 
 メッセージを出力しない
+
+- デフォルト： `false`
+- 値を受け入れない
+
+
+## `metrics:disk-usage`
+
+サービスのディスク使用量を表示
+
+```bash
+magento-cloud disk [-s|--service SERVICE] [--type TYPE] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-B|--bytes] [-1|--latest] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+```
+
+
+```bash
+disk
+```
+
+### `--service`, `-s`
+
+サービス名
+
+- 値が必要です
+
+### `--type`
+
+サービスの種類（サービス名が指定されていない場合）。例：mysql、pgsql、mongodb など。 タイプのバージョンは不要です。
+
+- 値が必要です
+
+### `--range`, `-r`
+
+時間範囲。 指標は、終了時刻 (—to) まで、この期間で読み込まれます。 次の単位を指定できます。時間 (h)、分 (m)、秒 (s) のいずれかです。 最小 &lt;comment>5 分&lt;/comment>，最大 &lt;comment>8 時間&lt;/comment> （プロジェクトに応じて）デフォルト &lt;comment>10m&lt;/comment>.
+
+- 値が必要です
+
+### `--interval`, `-i`
+
+時間間隔。 デフォルトでは、範囲の除算に設定されます。 次の単位を指定できます。時間 (h)、分 (m)、秒 (s) のいずれかです。 最小 &lt;comment>1 分&lt;/comment>，最大 &lt;comment>1 時間&lt;/comment>.
+
+- 値が必要です
+
+### `--to`
+
+終了時間。 デフォルトは現在です。
+
+- 値が必要です
+
+### `--bytes`, `-B`
+
+サイズをバイト単位で表示
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--latest`, `-1`
+
+最新の単一のデータポイントのみを表示
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--project`, `-p`
+
+プロジェクト ID または URL
+
+- 値が必要です
+
+### `--host`
+
+非推奨（廃止予定）のオプション。廃止
+
+- 値が必要です
+
+### `--environment`, `-e`
+
+環境 ID
+
+- 値が必要です
+
+### `--format`
+
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
+
+- デフォルト： `table`
+- 値が必要です
+
+### `--columns`, `-c`
+
+表示する列。 使用可能な列: timestamp *、used *、limit *、percent *、ipercent *、ilimit、interval、ipercent (* = デフォルト列)。 文字「+」は、デフォルトの列のプレースホルダーとして使用できます。 リストが単一の値 (例: 「a, b, c」) として指定されている場合、コンマや空白で分割されます。
+
+- デフォルト： `[]`
+- 値が必要です
+
+### `--no-header`
+
+テーブルヘッダーを出力しない
+
+- デフォルト： `false`
+- 値を受け付けません
+
+### `--date-fmt`
+
+日付形式 (PHP 日付形式文字列)
+
+- デフォルト： `c`
+- 値が必要です
+
+### `--help`, `-h`
+
+このヘルプメッセージを表示
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7338,14 +9528,42 @@ dir
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7356,7 +9574,7 @@ dir
 rsync を使用して、マウントからファイルをダウンロード
 
 ```bash
-magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--all`, `-a`
@@ -7421,7 +9639,7 @@ magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -7443,6 +9661,12 @@ magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--
 
 - 値が必要です
 
+### `--instance`, `-I`
+
+インスタンス ID
+
+- 値が必要です
+
 ### `--identity-file`, `-i`
 
 使用する SSH ID（秘密鍵）
@@ -7452,13 +9676,6 @@ magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7479,14 +9696,42 @@ magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7497,7 +9742,7 @@ magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--
 マウントのリストを取得
 
 ```bash
-magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER]
+magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 
@@ -7521,14 +9766,14 @@ mounts
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：定義、パス。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -7548,7 +9793,7 @@ mounts
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -7570,16 +9815,15 @@ mounts
 
 - 値が必要です
 
+### `--instance`, `-I`
+
+インスタンス ID
+
+- 値が必要です
+
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7600,14 +9844,42 @@ mounts
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7618,7 +9890,7 @@ mounts
 マウントのディスク使用量を確認します。
 
 ```bash
-magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER]
+magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 ### `--bytes`, `-B`
@@ -7637,14 +9909,14 @@ magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns C
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：available, max, mounts, percent_used, sizes, used. リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -7670,7 +9942,7 @@ magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns C
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -7692,16 +9964,15 @@ magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns C
 
 - 値が必要です
 
+### `--instance`, `-I`
+
+インスタンス ID
+
+- 値が必要です
+
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7722,14 +9993,42 @@ magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns C
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7740,7 +10039,7 @@ magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns C
 rsync を使用してファイルをマウントにアップロード
 
 ```bash
-magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--source`
@@ -7791,7 +10090,7 @@ magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--ex
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -7813,6 +10112,12 @@ magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--ex
 
 - 値が必要です
 
+### `--instance`, `-I`
+
+インスタンス ID
+
+- 値が必要です
+
 ### `--identity-file`, `-i`
 
 使用する SSH ID（秘密鍵）
@@ -7826,13 +10131,6 @@ magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--ex
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -7849,14 +10147,42 @@ magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--ex
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7867,7 +10193,7 @@ magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--ex
 プロジェクトのビルドキャッシュをクリアする
 
 ```bash
-magento-cloud project:clear-build-cache [-p|--project PROJECT] [--host HOST]
+magento-cloud project:clear-build-cache [-p|--project PROJECT]
 ```
 
 ### `--project`, `-p`
@@ -7878,20 +10204,13 @@ magento-cloud project:clear-build-cache [-p|--project PROJECT] [--host HOST]
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7912,14 +10231,42 @@ magento-cloud project:clear-build-cache [-p|--project PROJECT] [--host HOST]
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7930,7 +10277,7 @@ magento-cloud project:clear-build-cache [-p|--project PROJECT] [--host HOST]
 プロジェクトの API で認証済み cURL リクエストを実行する
 
 ```bash
-magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [--] [<path>]
+magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--] [<path>]
 ```
 
 
@@ -7948,6 +10295,12 @@ API パス
 ### `--data`, `-d`
 
 送信するデータ
+
+- 値が必要です
+
+### `--json`
+
+送信する JSON データ
 
 - 値が必要です
 
@@ -8001,20 +10354,13 @@ curl グロビングを有効にする（ —globoff フラグを削除）
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8035,14 +10381,42 @@ curl グロビングを有効にする（ —globoff フラグを削除）
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8053,7 +10427,7 @@ curl グロビングを有効にする（ —globoff フラグを削除）
 プロジェクトをローカルに複製
 
 ```bash
-magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [--host HOST] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
+magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
 ```
 
 
@@ -8099,7 +10473,7 @@ get
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -8112,13 +10486,6 @@ get
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8139,14 +10506,42 @@ get
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8157,7 +10552,7 @@ get
 プロジェクトのプロパティを読み取る、または設定する
 
 ```bash
-magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
+magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
 ```
 
 
@@ -8192,14 +10587,14 @@ project:metadata
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -8219,7 +10614,7 @@ project:metadata
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -8244,13 +10639,6 @@ project:metadata
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -8267,14 +10655,42 @@ project:metadata
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8285,7 +10701,7 @@ project:metadata
 すべてのアクティブなプロジェクトのリストを取得する
 
 ```bash
-magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [-c|--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
 
@@ -8300,7 +10716,7 @@ pro
 
 ### `--pipe`
 
-プロジェクト ID の単純なリストを出力します。 これにより、ページネーションが無効になります。
+プロジェクト ID の単純なリストを出力します。 ページネーションを無効にします。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8347,27 +10763,26 @@ pro
 
 ### `--page`
 
-ページ番号（1 から開始）
+ページ番号。 これにより、設定や —count にもかかわらず、ページネーションが有効になります。 —pipe を指定した場合は無視されます。
 
-- デフォルト： `1`
 - 値が必要です
 
-### `--count`
+### `--count`, `-c`
 
-1 ページに表示するプロジェクトの数。 既定値は、端子の高さに基づいて設定されます。 0 を使用すると、ページネーションが無効になります。
+1 ページに表示するプロジェクトの数。 0 を使用すると、ページネーションが無効になります。 —page が指定されている場合は無視されます。
 
 - 値が必要です
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
 ### `--columns`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：id*, title*, region*, created_at, endpoint, organization_id, organization_label, organization_name, region_label, status, ui_url （* =デフォルトの列）. 「+」文字は、デフォルト列のプレースホルダーとして使用できます。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -8393,13 +10808,6 @@ pro
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -8416,14 +10824,42 @@ pro
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8450,13 +10886,6 @@ magento-cloud project:set-remote [<project>]
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -8473,14 +10902,42 @@ magento-cloud project:set-remote [<project>]
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8491,7 +10948,7 @@ magento-cloud project:set-remote [<project>]
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 非推奨 ]&lt;/> プロジェクトから変数を削除
 
 ```bash
-magento-cloud project:variable:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud project:variable:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -8509,7 +10966,7 @@ magento-cloud project:variable:delete [-p|--project PROJECT] [--host HOST] [-W|-
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -8534,13 +10991,6 @@ magento-cloud project:variable:delete [-p|--project PROJECT] [--host HOST] [-W|-
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -8557,14 +11007,42 @@ magento-cloud project:variable:delete [-p|--project PROJECT] [--host HOST] [-W|-
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8575,7 +11053,7 @@ magento-cloud project:variable:delete [-p|--project PROJECT] [--host HOST] [-W|-
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 非推奨 ]&lt;/> プロジェクトの変数を表示
 
 ```bash
-magento-cloud project:variable:get [--pipe] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<name>]
+magento-cloud project:variable:get [--pipe] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<name>]
 ```
 
 
@@ -8608,14 +11086,14 @@ project:variable:list
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -8635,20 +11113,13 @@ project:variable:list
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8669,14 +11140,42 @@ project:variable:list
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8687,7 +11186,7 @@ project:variable:list
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 非推奨 ]&lt;/> プロジェクトの変数を設定する
 
 ```bash
-magento-cloud pvset [--json] [--no-visible-build] [--no-visible-runtime] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name> <value>
+magento-cloud pvset [--json] [--no-visible-build] [--no-visible-runtime] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name> <value>
 ```
 
 
@@ -8737,7 +11236,7 @@ pvset
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -8762,13 +11261,6 @@ pvset
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -8785,14 +11277,42 @@ pvset
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8803,7 +11323,7 @@ pvset
 プロジェクトリポジトリ内のファイルを読み取る
 
 ```bash
-magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] <path>
+magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] <path>
 ```
 
 
@@ -8827,7 +11347,7 @@ magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST]
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -8840,13 +11360,6 @@ magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST]
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8867,14 +11380,42 @@ magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST]
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8885,7 +11426,7 @@ magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST]
 プロジェクトリポジトリ内のファイルのリスト
 
 ```bash
-magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -8929,7 +11470,7 @@ magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -8942,13 +11483,6 @@ magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8969,14 +11503,42 @@ magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8987,7 +11549,7 @@ magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit
 プロジェクトリポジトリ内のディレクトリまたはファイルを読み取る
 
 ```bash
-magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -9015,7 +11577,7 @@ read
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -9028,13 +11590,6 @@ read
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9055,14 +11610,42 @@ read
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9073,7 +11656,7 @@ read
 ルートに関する詳細情報の表示
 
 ```bash
-magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<route>]
+magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<route>]
 ```
 
 
@@ -9123,7 +11706,7 @@ magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--ref
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -9152,13 +11735,6 @@ magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--ref
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -9175,14 +11751,42 @@ magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--ref
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9193,7 +11797,7 @@ magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--ref
 環境のすべてのルートのリスト
 
 ```bash
-magento-cloud routes [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<environment>]
+magento-cloud routes [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<environment>]
 ```
 
 
@@ -9221,14 +11825,14 @@ environment:routes
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：route*、type*、to*、url （* =デフォルトの列）。 「+」文字は、デフォルト列のプレースホルダーとして使用できます。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -9248,7 +11852,7 @@ environment:routes
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -9261,13 +11865,6 @@ environment:routes
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9288,14 +11885,42 @@ environment:routes
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9327,13 +11952,6 @@ local:install
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -9350,14 +11968,42 @@ local:install
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9387,14 +12033,14 @@ magento-cloud self:stats [-p|--page PAGE] [-c|--count COUNT] [--format FORMAT] [
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
 ### `--columns`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列: アセット、日付、ダウンロード、リリース。 リストが単一の値 (例: 「a, b, c」) として指定されている場合、コンマや空白で分割されます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -9404,11 +12050,11 @@ magento-cloud self:stats [-p|--page PAGE] [-c|--count COUNT] [--format FORMAT] [
 テーブルヘッダーを出力しない
 
 - デフォルト： `false`
-- 値を受け入れない
+- 値を受け付けません
 
 ### `--date-fmt`
 
-日付の形式（PHP の日付形式文字列）
+日付形式 (PHP 日付形式文字列)
 
 - デフォルト： `c`
 - 値が必要です
@@ -9416,13 +12062,6 @@ magento-cloud self:stats [-p|--page PAGE] [-c|--count COUNT] [--format FORMAT] [
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9443,14 +12082,42 @@ magento-cloud self:stats [-p|--page PAGE] [-c|--count COUNT] [--format FORMAT] [
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9514,13 +12181,6 @@ update
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -9537,14 +12197,42 @@ update
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9555,7 +12243,7 @@ update
 プロジェクト内のサービスのリスト
 
 ```bash
-magento-cloud services [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud services [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -9578,7 +12266,7 @@ services
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -9590,14 +12278,14 @@ services
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：ディスク、名前、サイズ、タイプ。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -9612,13 +12300,6 @@ services
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9639,14 +12320,42 @@ services
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9657,7 +12366,7 @@ services
 MongoDB からデータのバイナリアーカイブダンプを作成する
 
 ```bash
-magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9705,7 +12414,7 @@ gzip を使用してダンプを圧縮
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -9728,13 +12437,6 @@ gzip を使用してダンプを圧縮
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -9751,14 +12453,42 @@ gzip を使用してダンプを圧縮
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9769,7 +12499,7 @@ gzip を使用してダンプを圧縮
 MongoDB からのデータのエクスポート
 
 ```bash
-magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9823,7 +12553,7 @@ mongoexport
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -9846,13 +12576,6 @@ mongoexport
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -9869,14 +12592,42 @@ mongoexport
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9887,7 +12638,7 @@ mongoexport
 データのバイナリアーカイブダンプを MongoDB に復元
 
 ```bash
-magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9921,7 +12672,7 @@ mongorestore
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -9944,13 +12695,6 @@ mongorestore
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -9967,14 +12711,42 @@ mongorestore
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9985,7 +12757,7 @@ mongorestore
 MongoDB シェルの使用
 
 ```bash
-magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -10019,7 +12791,7 @@ JavaScript フラグメントをシェルに渡す
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -10042,13 +12814,6 @@ JavaScript フラグメントをシェルに渡す
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -10065,14 +12830,42 @@ JavaScript フラグメントをシェルに渡す
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -10083,7 +12876,7 @@ JavaScript フラグメントをシェルに渡す
 Redis CLI へのアクセス
 
 ```bash
-magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
+magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
 ```
 
 
@@ -10117,7 +12910,7 @@ Redis コマンドに追加する引数
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -10140,13 +12933,6 @@ Redis コマンドに追加する引数
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -10163,14 +12949,42 @@ Redis コマンドに追加する引数
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -10197,13 +13011,6 @@ magento-cloud session:switch [<id>]
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -10220,14 +13027,42 @@ magento-cloud session:switch [<id>]
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -10238,7 +13073,7 @@ magento-cloud session:switch [<id>]
 環境のスナップショットを作成する
 
 ```bash
-magento-cloud backup [--live] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
+magento-cloud backup [--live] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 
@@ -10277,7 +13112,7 @@ environment:backup
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -10301,16 +13136,16 @@ environment:backup
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--help`, `-h`
+### `--unsafe`
 
-このヘルプメッセージを表示
+非推奨のオプション：を使用します。代わりに live を使用します。
 
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
+### `--help`, `-h`
 
-メッセージを出力しない
+このヘルプメッセージを表示
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -10331,14 +13166,42 @@ environment:backup
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -10349,7 +13212,7 @@ environment:backup
 環境の使用可能なスナップショットのリスト
 
 ```bash
-magento-cloud snapshots [--limit LIMIT] [--start START] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud snapshots [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -10369,7 +13232,7 @@ backup:list
 
 ### `--limit`
 
-リストに表示するスナップショット数を制限
+[非推奨]  — このオプションは未使用です
 
 - 値が必要です
 
@@ -10381,14 +13244,14 @@ backup:list
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -10415,7 +13278,7 @@ backup:list
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -10428,13 +13291,6 @@ backup:list
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -10455,14 +13311,42 @@ backup:list
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -10473,7 +13357,7 @@ backup:list
 環境スナップショットの復元
 
 ```bash
-magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
+magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
 ```
 
 
@@ -10512,7 +13396,7 @@ backup:restore
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -10543,13 +13427,6 @@ backup:restore
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -10566,14 +13443,42 @@ backup:restore
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -10584,7 +13489,7 @@ backup:restore
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ベータ版 ]&lt;/> ソース操作を実行します
 
 ```bash
-magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <operation>
+magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <operation>
 ```
 
 
@@ -10609,7 +13514,7 @@ magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] 
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -10640,13 +13545,6 @@ magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] 
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -10663,14 +13561,42 @@ magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] 
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -10711,13 +13637,6 @@ magento-cloud ssh-cert:info [--no-refresh] [-P|--property PROPERTY] [--date-fmt 
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -10734,14 +13653,42 @@ magento-cloud ssh-cert:info [--no-refresh] [-P|--property PROPERTY] [--date-fmt 
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -10783,13 +13730,6 @@ magento-cloud ssh-cert:load [--refresh-only] [--new] [--new-key]
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -10806,14 +13746,42 @@ magento-cloud ssh-cert:load [--refresh-only] [--new] [--new-key]
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -10846,13 +13814,6 @@ magento-cloud ssh-key:add [--name NAME] [--] [<path>]
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -10869,14 +13830,42 @@ magento-cloud ssh-key:add [--name NAME] [--] [<path>]
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -10903,13 +13892,6 @@ magento-cloud ssh-key:delete [<id>]
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -10926,14 +13908,42 @@ magento-cloud ssh-key:delete [<id>]
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -10944,7 +13954,7 @@ magento-cloud ssh-key:delete [<id>]
 アカウント内の SSH キーのリストを取得する
 
 ```bash
-magento-cloud ssh-keys [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud ssh-keys [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -10954,14 +13964,14 @@ ssh-keys
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：id*、title*、path*、fingerprint（* =デフォルトの列）。 「+」文字は、デフォルト列のプレースホルダーとして使用できます。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -10980,13 +13990,6 @@ ssh-keys
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -11003,14 +14006,42 @@ ssh-keys
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -11021,7 +14052,7 @@ ssh-keys
 配信登録プロパティの読み取りまたは変更
 
 ```bash
-magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<property>] [<value>]
+magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<property>] [<value>]
 ```
 
 
@@ -11050,14 +14081,14 @@ magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FOR
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -11077,20 +14108,13 @@ magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FOR
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -11111,14 +14135,42 @@ magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FOR
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -11129,7 +14181,7 @@ magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FOR
 SSH トンネルを閉じる
 
 ```bash
-magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 ### `--all`, `-a`
@@ -11147,7 +14199,7 @@ magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|-
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -11170,13 +14222,6 @@ magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|-
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -11193,14 +14238,42 @@ magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|-
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -11211,7 +14284,7 @@ magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|-
 SSH トンネルの関係情報を表示
 
 ```bash
-magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
 ```
 
 ### `--property`, `-P`
@@ -11235,7 +14308,7 @@ base64 でエンコードされた JSON として出力
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -11253,14 +14326,14 @@ base64 でエンコードされた JSON として出力
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
 ### `--columns`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -11275,13 +14348,6 @@ base64 でエンコードされた JSON として出力
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -11302,14 +14368,42 @@ base64 でエンコードされた JSON として出力
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -11320,7 +14414,7 @@ base64 でエンコードされた JSON として出力
 SSH トンネルのリスト
 
 ```bash
-magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -11343,7 +14437,7 @@ tunnels
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -11361,14 +14455,14 @@ tunnels
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -11383,13 +14477,6 @@ tunnels
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -11410,14 +14497,42 @@ tunnels
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -11428,7 +14543,7 @@ tunnels
 アプリの関係に対して SSH トンネルを開く
 
 ```bash
-magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--gateway-ports`, `-g`
@@ -11446,7 +14561,7 @@ magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [--host HO
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -11475,13 +14590,6 @@ magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [--host HO
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -11498,14 +14606,42 @@ magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [--host HO
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -11516,7 +14652,7 @@ magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [--host HO
 1 つのアプリに対する単一の SSH トンネルを開く
 
 ```bash
-magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--port`
@@ -11540,7 +14676,7 @@ magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PRO
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -11575,13 +14711,6 @@ magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PRO
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -11598,14 +14727,42 @@ magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PRO
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -11616,7 +14773,7 @@ magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PRO
 プロジェクトにユーザーを追加する
 
 ```bash
-magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<email>]
+magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
 ```
 
 
@@ -11640,7 +14797,7 @@ magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -11665,13 +14822,6 @@ magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -11688,14 +14838,42 @@ magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -11706,7 +14884,7 @@ magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W
 プロジェクトからのユーザーの削除
 
 ```bash
-magento-cloud user:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <email>
+magento-cloud user:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <email>
 ```
 
 
@@ -11724,7 +14902,7 @@ magento-cloud user:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [-
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -11749,13 +14927,6 @@ magento-cloud user:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [-
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -11772,14 +14943,42 @@ magento-cloud user:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [-
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -11790,7 +14989,7 @@ magento-cloud user:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [-
 ユーザーの役割の表示
 
 ```bash
-magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
+magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
 ```
 
 
@@ -11825,7 +15024,7 @@ user:role
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -11862,13 +15061,6 @@ user:role
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -11885,14 +15077,42 @@ user:role
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -11903,7 +15123,7 @@ user:role
 プロジェクトユーザーのリスト
 
 ```bash
-magento-cloud users [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud users [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -11913,14 +15133,14 @@ users
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：メール、id、名前、役割。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -11940,20 +15160,13 @@ users
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -11974,14 +15187,42 @@ users
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -11992,7 +15233,7 @@ users
 プロジェクトのユーザーの役割を更新
 
 ```bash
-magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<email>]
+magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
 ```
 
 
@@ -12016,7 +15257,7 @@ magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] 
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -12041,13 +15282,6 @@ magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] 
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -12064,14 +15298,42 @@ magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] 
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -12082,7 +15344,7 @@ magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] 
 変数の作成
 
 ```bash
-magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--prefix PREFIX] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<name>]
+magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--prefix PREFIX] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<name>]
 ```
 
 
@@ -12165,7 +15427,7 @@ magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -12196,13 +15458,6 @@ magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -12219,14 +15474,42 @@ magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -12237,7 +15520,7 @@ magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [
 変数の削除
 
 ```bash
-magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12261,7 +15544,7 @@ magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [--host 
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -12292,13 +15575,6 @@ magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [--host 
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -12315,14 +15591,42 @@ magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [--host 
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -12333,7 +15637,7 @@ magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [--host 
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 非推奨 ]&lt;/> 有効な環境レベル変数を無効にする
 
 ```bash
-magento-cloud variable:disable [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:disable [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12351,7 +15655,7 @@ magento-cloud variable:disable [-p|--project PROJECT] [--host HOST] [-e|--enviro
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -12382,13 +15686,6 @@ magento-cloud variable:disable [-p|--project PROJECT] [--host HOST] [-e|--enviro
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -12405,14 +15702,42 @@ magento-cloud variable:disable [-p|--project PROJECT] [--host HOST] [-e|--enviro
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -12423,7 +15748,7 @@ magento-cloud variable:disable [-p|--project PROJECT] [--host HOST] [-e|--enviro
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 非推奨 ]&lt;/> 無効な環境レベル変数を有効にする
 
 ```bash
-magento-cloud variable:enable [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:enable [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12441,7 +15766,7 @@ magento-cloud variable:enable [-p|--project PROJECT] [--host HOST] [-e|--environ
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -12472,13 +15797,6 @@ magento-cloud variable:enable [-p|--project PROJECT] [--host HOST] [-e|--environ
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -12495,14 +15813,42 @@ magento-cloud variable:enable [-p|--project PROJECT] [--host HOST] [-e|--environ
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -12513,7 +15859,7 @@ magento-cloud variable:enable [-p|--project PROJECT] [--host HOST] [-e|--environ
 変数の表示
 
 ```bash
-magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
+magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
 ```
 
 
@@ -12541,14 +15887,14 @@ vget
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -12568,7 +15914,7 @@ vget
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -12592,13 +15938,6 @@ vget
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -12615,14 +15954,42 @@ vget
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -12633,7 +16000,7 @@ vget
 リスト変数
 
 ```bash
-magento-cloud variable:list [-l|--level LEVEL] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud variable:list [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -12654,14 +16021,14 @@ var
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：is_enabled、level、name、value リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -12681,7 +16048,7 @@ var
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -12694,13 +16061,6 @@ var
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -12721,14 +16081,42 @@ var
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -12739,7 +16127,7 @@ var
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 非推奨 ]&lt;/> 環境の変数を設定する
 
 ```bash
-magento-cloud vset [--json] [--disabled] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name> <value>
+magento-cloud vset [--json] [--disabled] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name> <value>
 ```
 
 
@@ -12782,7 +16170,7 @@ vset
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -12813,13 +16201,6 @@ vset
 - デフォルト： `false`
 - 値を受け入れない
 
-### `--quiet`, `-q`
-
-メッセージを出力しない
-
-- デフォルト： `false`
-- 値を受け入れない
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 メッセージの詳細度を上げる
@@ -12836,14 +16217,42 @@ vset
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -12854,7 +16263,7 @@ vset
 変数の更新
 
 ```bash
-magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12925,7 +16334,7 @@ magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -12956,9 +16365,118 @@ magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [
 - デフォルト： `false`
 - 値を受け入れない
 
+### `--verbose`, `-v|-vv|-vvv`
+
+メッセージの詳細度を上げる
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--version`, `-V`
+
+このアプリケーションバージョンを表示
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--yes`, `-y`
+
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no`, `-n`
+
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
 ### `--quiet`, `-q`
 
 メッセージを出力しない
+
+- デフォルト： `false`
+- 値を受け入れない
+
+
+## `version:list`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ アルファ ]&lt;/> 環境のバージョンのリスト
+
+```bash
+magento-cloud versions [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+```
+
+
+```bash
+versions
+```
+
+### `--project`, `-p`
+
+プロジェクト ID または URL
+
+- 値が必要です
+
+### `--host`
+
+非推奨（廃止予定）のオプション。廃止
+
+- 値が必要です
+
+### `--environment`, `-e`
+
+環境 ID
+
+- 値が必要です
+
+### `--format`
+
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
+
+- デフォルト： `table`
+- 値が必要です
+
+### `--columns`, `-c`
+
+表示する列。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
+
+- デフォルト： `[]`
+- 値が必要です
+
+### `--no-header`
+
+テーブルヘッダーを出力しない
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--help`, `-h`
+
+このヘルプメッセージを表示
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -12979,14 +16497,42 @@ magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -12997,7 +16543,7 @@ magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [
 デプロイ済みのすべてのワーカーのリストを取得する
 
 ```bash
-magento-cloud workers [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud workers [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -13020,7 +16566,7 @@ workers
 
 ### `--host`
 
-プロジェクトの API ホスト名
+非推奨（廃止予定）のオプション。廃止
 
 - 値が必要です
 
@@ -13032,14 +16578,14 @@ workers
 
 ### `--format`
 
-出力形式（「table」、「csv」、「tsv」または「plain」）
+出力形式は次のとおりです。テーブル、csv、tsv、またはプレーン
 
 - デフォルト： `table`
 - 値が必要です
 
-### `--columns`
+### `--columns`, `-c`
 
-表示する列（コンマ区切りのリストまたは複数の値）
+表示する列。 使用可能な列：コマンド、名前、タイプ。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -13054,13 +16600,6 @@ workers
 ### `--help`, `-h`
 
 このヘルプメッセージを表示
-
-- デフォルト： `false`
-- 値を受け入れない
-
-### `--quiet`, `-q`
-
-メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -13081,14 +16620,42 @@ workers
 
 ### `--yes`, `-y`
 
-はい/いいえの質問に対しては「はい」と答えます。インタラクションを無効にする
+確認の質問に対しては「はい」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`
+
+インタラクティブな質問をしないでください。デフォルト値を受け入れます。 環境変数を使用する場合と同じです。 &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-ansi`
+
+ANSI 出力を無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
 
 ### `--no`, `-n`
 
-はい/いいえの質問に対しては「いいえ」と答えます。インタラクションを無効にする
+確認の質問に対しては「いいえ」と答えます。他の質問に対するデフォルト値を受け入れるインタラクションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
 
 - デフォルト： `false`
 - 値を受け入れない
