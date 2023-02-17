@@ -1,11 +1,10 @@
 ---
 title: Security.txt
 description: セキュリティ研究者が脆弱性を報告する際に役立つ情報を提供する方法を説明します。
-contributor_name: Kalpesh Mehta from Corra
-contributor_link: https://partners.magento.com/portal/details/partner/id/70/
-source-git-commit: 27c3914540a0574fa4ff58df50d5cd2c71fb6670
+badge: label="Corra から Kalpesh Mehta に寄稿" type="Informative" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="Kalpesh Mehta"
+source-git-commit: bcb995ea417423b0cbc59c035ba5fdedbce3310e
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

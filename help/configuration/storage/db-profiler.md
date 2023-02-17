@@ -1,11 +1,10 @@
 ---
 title: データベース・プロファイラの構成
 description: データベース・プロファイラの出力を構成する方法の例を参照してください。
-contributor_name: Atish Goswami
-contributor_link: http://atishgoswami.com
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+badge: label="Contributed by Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
+source-git-commit: bcb995ea417423b0cbc59c035ba5fdedbce3310e
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
