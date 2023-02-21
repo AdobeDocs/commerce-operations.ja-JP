@@ -1,7 +1,7 @@
 ---
 title: リファレンスアーキテクチャ
 description: Adobe CommerceおよびMagento Open Sourceのデプロイメントで推奨されるリファレンスアーキテクチャの図を確認します。
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -53,7 +53,7 @@ ht-degree: 0%
 * スレーブ DB を使用して迅速なリカバリを可能にし、データのバックアップを行うことを検討します。
 * 低トラフィックのサイトでは、DB に画像を保存できます
 
-### 検索
+### 検索 {#search-heading}
 
 * 検索トラフィックに基づいてインスタンス数を調整
 
