@@ -1,7 +1,7 @@
 ---
-source-git-commit: fbd09a0e4bfe267bec36800ce0e7e4cccb5bd8f3
+source-git-commit: 449c6952a742b717c4dacb8bb6c89d8e6f12b5b0
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 0%
 ## 実装のベストプラクティスの新機能
 
 このページには、表示したいと思われる最近の変更が含まれています。 このリストからは、コピー編集などのマイナーな更新がすべて除外されます。
+
+### 2023 年 2 月 11 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>実行する最小要件の説明を更新しました <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html">データベースのアップグレード</a> MariaDB の更新に関する関連リソースを追加しました。</p>
+</td>
+      <td>ベストプラクティス</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0efeef6f3d5276f42e4a67fe55f6108a399f45fb">0efeef</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 2023 年 1 月 31 日
 
