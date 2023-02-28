@@ -4,7 +4,7 @@ description: カスタムコードや拡張機能の更新が必要になる可�
 source-git-commit: 47b5782504d905ea04c423f47e4f4ce0afc47db0
 workflow-type: tm+mt
 source-wordcount: '18'
-ht-degree: 77%
+ht-degree: 0%
 
 ---
 

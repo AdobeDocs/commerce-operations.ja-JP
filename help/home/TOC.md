@@ -1,10 +1,10 @@
 ---
 user-guide-title: 運用ガイド
-user-guide-description: Adobe Commerce または Magento Open Source アプリケーションの保守の運用面について説明します。
+user-guide-description: Adobe Commerceまたはアプリケーションの保守に関する運用上の側面について説明します。Magento Open Source
 source-git-commit: 035c60de7234e15c0ace3ffbf60aa771587c432c
 workflow-type: tm+mt
 source-wordcount: '118'
-ht-degree: 17%
+ht-degree: 0%
 
 ---
 
