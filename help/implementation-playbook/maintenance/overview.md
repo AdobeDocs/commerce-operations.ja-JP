@@ -2,9 +2,9 @@
 title: メンテナンスとサポートの概要
 description: 新しく起動したAdobe Commerce実装を適切に保守およびサポートします。
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
-source-git-commit: 514426d622ba47b8a7e517368132c86c9236b63a
+source-git-commit: 10d65d3453e260e105c1e90acbdfe678ca15c4e3
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ ht-degree: 0%
 
 Adobe Commerceをデプロイする場合、メンテナンスおよびサポート戦略に含める内容を考えることが重要です。
 Adobe Commerceライセンスには、エキスパートサポートが含まれています。 エキスパートサポートとAdobeサポート計画の詳細については、 [Adobeサポートプラン](https://business.adobe.com/customers/consulting-services/premier-support.html).
-Adobeサポートプランに加えて、従来のMagentoサポート用語もあります。 お客様に適用されるサポートサービスを理解するには、契約を参照して、お客様が持っているサポート契約を確認するか、カスタマーサクセスマネージャー (CSM) にお問い合わせください。
+Adobeサポートプランに加えて、従来のMagentoサポート用語もあります。 お客様に適用されるサポートサービスを理解するには、契約を参照して、お客様が持っているサポート契約を確認するか、Adobeアカウントチームにお問い合わせください。
