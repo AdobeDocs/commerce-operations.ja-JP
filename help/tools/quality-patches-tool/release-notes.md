@@ -1,9 +1,9 @@
 ---
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
-source-git-commit: 76ff1bbcc3a1ca8f73dfdd2ba4f516a201986f62
+source-git-commit: f1c6c816695e01fc30d0ab0a7a9c43122a130cb5
 workflow-type: tm+mt
-source-wordcount: '10848'
+source-wordcount: '11145'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,22 @@ ht-degree: 0%
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.28 {#v1-1-28}
+
+* **ACSD-48204** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.3) - 「はい」/「いいえ」属性に基づいて作成されたカタログ価格ルールで、選択した範囲が考慮されない問題を修正しました。
+* **ACSD-47704** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) — バンドルされた製品が在庫品の価格のみを表示していた問題を修正しました。
+* **ACSD-49370** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) - *日時* 製品属性に *FilterMatchTypeInput* GraphQLスキーマにを入力します。
+* **ACSD-48807** (Adobe CommerceとMagento Open Source>=2.4.1 &lt;2.4.7) — 顧客の製品レビューがGraphQL経由のストレビューでフィルタリングされない問題を修正しました。
+* **ACSD-49433** (Adobe CommerceとMagento Open Source>=2.4.3 &lt;2.4.7) — ギフトカードの買い物かごに開封額の小計としてデフォルトの金額が表示される問題を修正しました。
+* **ACSD-48866** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) — カテゴリの RSS フィードをリクエストする際にエラーが発生する問題を修正しました。
+* **ACSD-48784** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) — 顧客セグメントの価格が顧客グループ間で誤ってキャッシュされる問題を修正しました。
+* **ACSD-48857** (Adobe CommerceとMagento Open Source>=2.4.3 &lt;2.4.7) - Page Builder での編集後にユーザーが変更を保存できない問題を修正しました。
+* **ACSD-49065** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) — カスタム在庫にのみ割り当てられた場合に見積もり項目が管理画面に表示されない問題を修正しました。
+* **ACSD-49179** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) — 店舗ごとに異なる通貨がある場合に、注文レポートに誤った金額が表示される問題を修正しました。
+* **ACSD-49286** (Adobe CommerceとMagento Open Source>=2.4.3 &lt;2.4.7) — ページに複数の製品ウィジェットが存在する場合に、製品が買い物かごに 2 回追加される問題を修正しました。
+* **ACSD-49574** (Adobe Commerce>=2.4.4 &lt;2.4.7 の場合 ) - GraphQLを使用して買い物かご内でギフトカード製品の更新をサポートする機能を追加しました。
+* 更新されたパッチ：ACSD-48694。
 
 ## v1.1.27 {#v1-1-27}
 
