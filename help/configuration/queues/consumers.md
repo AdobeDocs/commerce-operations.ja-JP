@@ -1,9 +1,9 @@
 ---
 title: メッセージキューコンシューマー
 description: Adobe CommerceおよびMagento Open Sourceメッセージキューの消費者（関連する機能やシステム設定を含む）について説明します。
-source-git-commit: 2eecaab32b090cfd3c1a8e8832027d3531cf0edc
+source-git-commit: 1006a5761849b1d455469c6dfcb79a66cb90ec40
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '950'
 ht-degree: 0%
 
 ---
@@ -71,5 +71,7 @@ ht-degree: 0%
 | 共有カタログ内の各製品の価格を更新します。 必須 [**[!UICONTROL Shared Catalogs]**](https://docs.magento.com/user-guide/catalog/catalog-shared.html) オプションが有効になっている場合は、管理システム設定で有効になります。 |  |  |  |
 | `quoteItemCleaner` | + | + |  |
 | 商品がカタログから削除されたり、買い物かごから削除されたりした場合に、無効または非アクティブな価格見積もりを削除します。 必須 [**[!UICONTROL Quotes]**](https://docs.magento.com/user-guide/sales/quotes.html) オプションが有効になっている場合は、管理システム設定で有効になります。 |  |  |  |
+| `sales.rule.quote.trigger.recollect` | + | + | + |
+| アクティブな買い物かごを更新して、買い物かごの価格ルールの変更を反映します。 更新時に必須 [**[!UICONTROL Catalog price rules]**](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog.html). |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
