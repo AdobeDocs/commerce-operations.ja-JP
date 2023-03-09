@@ -1,10 +1,10 @@
 ---
 user-guide-title: リリース情報
 user-guide-description: Adobe CommerceとMagento Open Sourceのリリース
-source-git-commit: c08c48b0dc01867ba0a67871d01f1150f43242e4
+source-git-commit: 841c6861c6b7a7341f334ba449b6270b31a34e94
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 15%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,15 +31,15 @@ ht-degree: 15%
       - [2.4.1](release-notes/open-source/2-4-1.md)
       - [2.4.0](release-notes/open-source/2-4-0.md)
    - セキュリティパッチリリース {#security-patches}
-   - [2.4.5-p2](release-notes/security/2-4-5-p2.md)
-   - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
-   - [2.4.4-p3](release-notes/security/2-4-4-p3.md)
-   - [2.4.4-p2](release-notes/security/2-4-4-p2.md)
-   - [2.4.4-p1](release-notes/security/2-4-4-p1.md)
-   - [2.4.3-p3](release-notes/security/2-4-3-p3.md)
-   - [2.4.3-p2](release-notes/security/2-4-3-p2.md)
-   - [2.4.3-p1](release-notes/security/2-4-3-p1.md)
-   - [2.4.2-p2](release-notes/security/2-4-2-p2.md)
+      - [2.4.5-p2](release-notes/security/2-4-5-p2.md)
+      - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
+      - [2.4.4-p3](release-notes/security/2-4-4-p3.md)
+      - [2.4.4-p2](release-notes/security/2-4-4-p2.md)
+      - [2.4.4-p1](release-notes/security/2-4-4-p1.md)
+      - [2.4.3-p3](release-notes/security/2-4-3-p3.md)
+      - [2.4.3-p2](release-notes/security/2-4-3-p2.md)
+      - [2.4.3-p1](release-notes/security/2-4-3-p1.md)
+      - [2.4.2-p2](release-notes/security/2-4-2-p2.md)
 - [リリース済みバージョン](versions.md)
 - [機能（バージョン別）](features.md)
 - [製品の可用性](product-availability.md)
