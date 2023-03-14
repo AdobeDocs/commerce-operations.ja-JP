@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4391091cce32618dc02b0bddb62ff9d16dd12f10
+source-git-commit: a1f99f839f11ab42356b87a69398999bb03cd544
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2674'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ ht-degree: 0%
 
 この `composer.json` ファイルはパッケージのリストを宣言し、 `composer.lock` ファイルには、Adobe CommerceまたはMagento Open Sourceのインストールに使用するパッケージの完全なリスト（各パッケージの完全版とその依存関係）が格納されます。
 
-次の参照ドキュメントは、 `composer.lock` ファイルに含まれ、Adobe Commerce on cloud infrastructure 2.4.4 に含まれる必要なパッケージをカバーします。
+次の参照ドキュメントは、 `composer.lock` ファイルに含まれ、Adobe Commerce on cloud infrastructure 2.4.6 に含まれる必要なパッケージをカバーします。
 
 ## 依存関係
 
-`magento/magento-cloud-metapackage 2.4.4` には次の依存関係があります。
+`magento/magento-cloud-metapackage 2.4.6` には次の依存関係があります。
 
 ```config
 fastly/magento2: ^1.2.34
 magento/ece-tools: ^2002.1.0
-magento/module-paypal-on-boarding: ~100.4.0
-magento/product-enterprise-edition: >=2.4.4 <2.4.5
+magento/module-paypal-on-boarding: ~100.5.0
+magento/product-enterprise-edition: >=2.4.6 <2.4.7
 ```
 
 ## サードパーティライセンス
@@ -51,10 +51,17 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   <tbody>
   <tr>
     <td>
-      <a href="https://github.com/elastic/elasticsearch-php.git">elasticsearch/elasticsearch</a>
+      elasticsearch/elasticsearch
     </td>
     <td>ライブラリ</td>
     <td>Elasticsearch用 PHP クライアント</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/opensearch-project/opensearch-php.git">opensearch-project/opensearch-php</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>OpenSearch 用 PHP クライアント</td>
   </tr>
   </tbody>
 </table>
@@ -103,7 +110,7 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
       <a href="https://github.com/wikimedia/less.php.git">wikimedia/less.php</a>
     </td>
     <td>ライブラリ</td>
-    <td>LESS http://lesscss.orgの JavaScript バージョンの PHP ポート（元々 Josh Schmidt が管理）</td>
+    <td>LESS プロセッサの PHP ポート</td>
   </tr>
   </tbody>
 </table>
@@ -170,13 +177,6 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/colinmollenhour/Cm_Cache_Backend_Redis.git">colinmollenhour/cache-backend-redis</a>
-    </td>
-    <td>magento-module</td>
-    <td>Redis を使用する Zend_Cache バックエンドは、タグを完全にサポートします。</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/colinmollenhour/php-redis-session-abstract.git">colinmollenhour/php-redis-session-abstract</a>
     </td>
     <td>ライブラリ</td>
@@ -187,7 +187,14 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
       <a href="https://github.com/fastly/fastly-magento2.git">fastly/magento2</a>
     </td>
     <td>magento2-module</td>
-    <td>Magento2.3.x の Fastly CDN Module | 2.4.x</td>
+    <td>Magento2.4.x の Fastly CDN Module</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/firebase/php-jwt.git">firebase/php-jwt</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>PHP で JSON Web Tokens(JWT) をエンコードおよびデコードする簡単なライブラリです。 現在の仕様に準拠する必要があります。</td>
   </tr>
   <tr>
     <td>
@@ -219,17 +226,17 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/laminas/laminas-crypt.git">laminas/laminas-crypt</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>強力な暗号化ツールとパスワードのハッシュ</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/laminas/laminas-db.git">laminas/laminas-db</a>
     </td>
     <td>ライブラリ</td>
     <td>データベース抽象レイヤー、SQL の抽象化、結果セットの抽象化、RowDataGateway と TableDataGateway の実装</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-dependency-plugin.git">laminas/laminas-dependency-plugin</a>
-    </td>
-    <td>composer-plugin</td>
-    <td>zendframework および zfcampus パッケージを、Laminas Project に相当するものに置き換えます。</td>
   </tr>
   <tr>
     <td>
@@ -257,7 +264,21 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
       <a href="https://github.com/laminas/laminas-feed.git">ラミナ/ラミナフィード</a>
     </td>
     <td>ライブラリ</td>
-    <td>は、RSS および Atom フィードを使用する機能を提供します</td>
+    <td>は、RSS および Atom フィードを作成および使用する機能を提供します</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-file.git">laminas/laminas-file</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>PHP クラスファイルを見つけます。</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-filter.git">ラミナ/ラミナフィルター</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>データとファイルをプログラムでフィルターおよび標準化する</td>
   </tr>
   <tr>
     <td>
@@ -265,6 +286,13 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
     </td>
     <td>ライブラリ</td>
     <td>ハイパーテキスト転送プロトコル (HTTP) 要求を実行するための簡単なインターフェイスを提供</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-i18n.git">ラミナ/ラミナ —i18n</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>アプリケーションの翻訳を提供し、国際値をフィルターおよび検証します</td>
   </tr>
   <tr>
     <td>
@@ -314,6 +342,20 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
     </td>
     <td>ライブラリ</td>
     <td>MVC アプリケーション、コントローラ、プラグインを含む Laminas のイベント駆動型 MVC レイヤ</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-oauth.git">ラミナ/ラミナ/OAuth</a>
+    </td>
+    <td>ライブラリ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-permissions-acl.git">laminas/laminas-permissions-acl</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>権限管理のための軽量で柔軟なアクセス制御リスト (ACL) 実装を提供</td>
   </tr>
   <tr>
     <td>
@@ -423,6 +465,27 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tbody>
 </table>
 
+### BSD-3-Clause-Modification
+
+<table>
+  <thead>
+    <tr>
+      <th>名前</th>
+      <th>タイプ</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      <a href="https://github.com/colinmollenhour/Cm_Cache_Backend_Redis.git">colinmollenhour/cache-backend-redis</a>
+    </td>
+    <td>magento-module</td>
+    <td>Redis を使用する Zend_Cache バックエンドは、タグを完全にサポートします。</td>
+  </tr>
+  </tbody>
+</table>
+
 ### LGPL-2.1-or-later
 
 <table>
@@ -434,6 +497,13 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
     </tr>
   </thead>
   <tbody>
+  <tr>
+    <td>
+      <a href="https://github.com/ezyang/htmlpurifier.git">ezyang/htmlprifier</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>PHP で記述された標準準拠HTMLフィルタ</td>
+  </tr>
   <tr>
     <td>
       <a href="https://github.com/php-amqplib/php-amqplib.git">php-amqplib/php-amqplib</a>
@@ -499,6 +569,13 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/composer/class-map-generator.git">composer/class-map-generator</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>PHP コードをスキャンし、クラスマップを生成するためのユーティリティ。</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/composer/composer.git">composer/composer</a>
     </td>
     <td>ライブラリ</td>
@@ -541,6 +618,27 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/doctrine/annotations.git">ドクトリン/注釈</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>Docblock 注釈パーサー</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/doctrine/deprecations.git">教義/非推奨</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>トリガー_error(E_USER_DEPRECATED) または PSR-3 ログの上の小さなレイヤー。すべての廃止を無効にするか、パッケージに対して選択的にオプションを指定します。</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/doctrine/lexer.git">doctrin/lexer</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>PHP Doctrion Lexer パーサーライブラリは、トップダウン、再帰的な降下パーサーで使用できます。</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/endroid/qr-code.git">endroid/qr-code</a>
     </td>
     <td>ライブラリ</td>
@@ -559,13 +657,6 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
     </td>
     <td>ライブラリ</td>
     <td>guzzle/RingPHP （廃止）のフォークは、elasticsearch-php で使用されます。</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/fgrosse/PHPASN1.git">fgrosse/phpasn1</a>
-    </td>
-    <td>ライブラリ</td>
-    <td>ITU-T X.690 エンコーディング規則を使用して任意の ASN.1 構造をエンコードおよびデコードできる PHP フレームワーク。</td>
   </tr>
   <tr>
     <td>
@@ -730,6 +821,13 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/php-fig/cache.git">psr/cache</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>ライブラリのキャッシュ用の共通インターフェイス</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/php-fig/container.git">psr/container</a>
     </td>
     <td>ライブラリ</td>
@@ -828,6 +926,13 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/Seldaek/signal-handler.git">seld/signal-handler</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>シンプルな UNIX シグナルハンドラーで、シグナルがサポートされていない場合に警告なく失敗し、クロスプラットフォーム開発が容易になる</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/Spomky-Labs/aes-key-wrap.git">spomky-labs/aes-key-wrap</a>
     </td>
     <td>ライブラリ</td>
@@ -835,17 +940,17 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/Spomky-Labs/base64url.git">spomky-labs/base64url</a>
-    </td>
-    <td>ライブラリ</td>
-    <td>Base 64 URL の安全なエンコード/デコード PHP ライブラリ</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/Spomky-Labs/otphp.git">spomky-labs/otphp</a>
     </td>
     <td>ライブラリ</td>
     <td>RFC 4226(HOTP Algorithm) および RFC 6238(TOTP Algorithm) に従って 1 回限りのパスワードを生成し、Google Authenticator と互換性を持つ PHP ライブラリ</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/Spomky-Labs/pki-framework.git">spomky-labs/pki-framework</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>公開鍵インフラストラクチャを管理するための PHP フレームワーク。 これには、X.509 公開鍵証明書、属性証明書、証明書要求、および証明書パス検証が含まれます。</td>
   </tr>
   <tr>
     <td>
@@ -867,13 +972,6 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
     </td>
     <td>ライブラリ</td>
     <td>CSS セレクターを XPath 式に変換します</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/symfony/debug.git">symfony/debug</a>
-    </td>
-    <td>ライブラリ</td>
-    <td>PHP コードのデバッグを容易にするツールを提供します。</td>
   </tr>
   <tr>
     <td>
@@ -926,13 +1024,6 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/http-client-contracts.git">symfony/http-client-contracts</a>
-    </td>
-    <td>ライブラリ</td>
-    <td>HTTP クライアントに関連する一般的な抽象概念</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/symfony/http-foundation.git">symfony/http-foundation</a>
     </td>
     <td>ライブラリ</td>
@@ -947,10 +1038,24 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/intl.git">symfony/intl</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>ICU ライブラリからの追加データを含む C intl 拡張用の PHP 置き換えレイヤーを提供します。</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/symfony/polyfill-ctype.git">symfony/polyfill-ctype</a>
     </td>
     <td>ライブラリ</td>
     <td>ctype 関数の Symfony ポリフィル</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/polyfill-intl-grapheme.git">symfony/polyfill-intl-grapheme</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>Symfony intl の文字素関数のポリフィル_*</td>
   </tr>
   <tr>
     <td>
@@ -1028,6 +1133,13 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
     </td>
     <td>ライブラリ</td>
     <td>書き込みサービスに関連する一般的な抽象概念</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/string.git">symfony/string</a>
+    </td>
+    <td>ライブラリ</td>
+    <td>文字列、UTF-8 コードポイント、および文字素クラスタを統合的に扱う、オブジェクト指向 API を提供します。</td>
   </tr>
   <tr>
     <td>
