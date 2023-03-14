@@ -1,9 +1,9 @@
 ---
 title: 前提条件
-description: 前提条件の手順を完了して、Adobe CommerceまたはMagento Open Sourceプロジェクトのアップグレードを準備します。
-source-git-commit: 6782498985d4fd6540b0481e2567499f74d04d97
+description: 前提条件の手順を完了して、Adobe Commerceプロジェクトのアップグレードを準備します。
+source-git-commit: 45c544a5ec9a17ad631fce55e322e2949ecdd3c2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1639'
 ht-degree: 0%
 
 ---
@@ -11,23 +11,23 @@ ht-degree: 0%
 
 # アップグレードの前提条件
 
-Adobe CommerceまたはMagento Open Sourceを実行するために必要な事項を理解することが重要です。 まず、 [システム要件](../../installation/system-requirements.md) アップグレード先のバージョンの
+Adobe Commerceの実行に何が必要かを理解することが重要です。 まず、 [システム要件](../../installation/system-requirements.md) アップグレード先のバージョンの
 
 必要システム構成を確認した後、システムをアップグレードする前に、次の前提条件を満たす必要があります。
 
-- すべてのソフトウェアを更新
-- サポートされている検索エンジンがインストールされていることを確認します。
-- データベーステーブル形式の変換
-- 開くファイルの制限を設定する
-- Cron ジョブが実行中であることを確認します。
-- 設定 `DATA_CONVERTER_BATCH_SIZE`
-- ファイルシステムの権限の検証
-- を `pub/` ディレクトリルート
-- Composer の更新プラグインをインストールします。
+* すべてのソフトウェアを更新
+* サポートされている検索エンジンがインストールされていることを確認します。
+* データベーステーブル形式の変換
+* 開くファイルの制限を設定する
+* Cron ジョブが実行中であることを確認します。
+* 設定 `DATA_CONVERTER_BATCH_SIZE`
+* ファイルシステムの権限の検証
+* を `pub/` ディレクトリルート
+* Composer の更新プラグインをインストールします。
 
 ## すべてのソフトウェアを更新
 
-この [システム要件](../../installation/system-requirements.md) Adobe CommerceとMagento Open Sourceリリースでテストされたサードパーティソフトウェアのバージョンを正確に説明します。
+この [システム要件](../../installation/system-requirements.md) Adobe Commerceリリースでテストされたサードパーティソフトウェアのバージョンを正確に説明します。
 
 環境内のすべてのシステム要件と依存関係を更新していることを確認します。 PHP を参照 [7.4](https://www.php.net/manual/en/migration74.php), PHP [8.0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php)、および [必要な PHP 設定](../../installation/prerequisites/php-settings.md#php-settings).
 
@@ -37,7 +37,7 @@ Adobe CommerceまたはMagento Open Sourceを実行するために必要な事�
 
 ## サポートされている検索エンジンがインストールされていることを確認します。
 
-Adobe CommerceとMagento Open Sourceがソフトウェアを使用するには、Elasticsearchまたは OpenSearch をインストールする必要があります。
+Adobe Commerceでは、Elasticsearchを使用するために、ソフトウェアまたは OpenSearch をインストールする必要があります。
 
 **2.3.x から 2.4 にアップグレードする場合** 2.3.x インスタンスで、カタログ検索エンジンとして MySQL、Elasticsearch、またはサードパーティの拡張機能を使用しているかどうかを確認する必要があります。 結果によって、必要な作業が決まります _前_ 2.4 へのアップグレード
 
@@ -45,9 +45,9 @@ Adobe CommerceとMagento Open Sourceがソフトウェアを使用するには�
 
 コマンドラインまたは管理者を使用して、カタログ検索エンジンを決定できます。
 
-- 次を入力します。 `bin/magento config:show catalog/search/engine` コマンドを使用します。 このコマンドは、 `mysql`, `elasticsearch` ( これはElasticsearch2 が設定されていることを示します )。 `elasticsearch5`, `elasticsearch6`, `elasticsearch7`またはカスタム値。サードパーティの検索エンジンがインストールされていることを示します。 値： `elasticsearch7` は、Elasticsearch7 または OpenSearch がインストールされていることを示します。
+* 次を入力します。 `bin/magento config:show catalog/search/engine` コマンドを使用します。 このコマンドは、 `mysql`, `elasticsearch` ( これはElasticsearch2 が設定されていることを示します )。 `elasticsearch5`, `elasticsearch6`, `elasticsearch7`またはカスタム値。サードパーティの検索エンジンがインストールされていることを示します。 2.4.6 より前のバージョンでは、 `elasticsearch7` Elasticsearch7 または OpenSearch エンジンの値。 バージョン 2.4.6 以降では、 `opensearch` OpenSearch エンジンの値。
 
-- 管理者から、 **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** フィールドに入力します。
+* 管理者から、 **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** フィールドに入力します。
 
 次の節では、2.4.0 にアップグレードする前に実行する必要のあるアクションについて説明します。
 
@@ -55,40 +55,120 @@ Adobe CommerceとMagento Open Sourceがソフトウェアを使用するには�
 
 2.4 以降、MySQL はサポート対象のカタログ検索エンジンではなくなりました。 アップグレードする前に、Elasticsearchまたは OpenSearch をインストールして設定する必要があります。 このプロセスの手引きとして、次のリソースを使用します。
 
-- [インストールとElasticsearch](../../configuration/search/overview-search.md)
-- [インストールElasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- 設定 [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) または [Apache](../../installation/prerequisites/search-engine/configure-apache.md) 検索エンジンを使用する
-- [コマースでElasticsearchを使用するように設定](../../configuration/search/configure-search-engine.md) と再インデックス
+* [インストールとElasticsearch](../../configuration/search/overview-search.md)
+* [インストールElasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
+* 設定 [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) または [Apache](../../installation/prerequisites/search-engine/configure-apache.md) 検索エンジンを使用する
+* [コマースでElasticsearchを使用するように設定](../../configuration/search/configure-search-engine.md) と再インデックス
 
 一部のサードパーティカタログ検索エンジンは、Adobe Commerce検索エンジンの上で動作します。 ベンダーに問い合わせて、拡張機能を更新する必要があるかどうかを判断してください。
 
-### Elasticsearch
+#### MariaDB
 
-2.4.0 にアップグレードする前に、Elasticsearch7.6 以降または OpenSearch 1.2 をインストールして設定する必要があります。Adobeは、Elasticsearch2.x、5.x および 6.x をサポートしなくなりました。
+{{$include /help/_includes/maria-db-config.md}}
+
+### 検索エンジン
+
+2.4.0 にアップグレードする前に、Elasticsearch7.6 以降または OpenSearch 1.2 をインストールして設定する必要があります。Adobeは、Elasticsearch2.x、5.x および 6.x をサポートしなくなりました。 [検索エンジンの設定](../../configuration/search/configure-search-engine.md) 内 _設定ガイド_ サポート対象のバージョンにアップグレードした後にElasticsearchを実行する必要があるタスクについて説明します。
 
 参照： [アップグレードElasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) データのバックアップ、移行に関する潜在的な問題の検出、アップグレードのテストを実稼動環境にデプロイする前に行う手順について詳しくは、 現在のバージョンのElasticsearchに応じて、完全なクラスターの再起動が必要な場合と不要な場合があります。
 
 Elasticsearchには Java Development Kit(JDK)1.8 以降が必要です。 詳しくは、 [Java Software Development Kit(JDK) のインストール](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) をクリックして、インストールされている JDK のバージョンを確認します。
 
-[設定Elasticsearch](../../configuration/search/configure-search-engine.md) では、サポート対象のバージョンにElasticsearch2 を更新した後に実行する必要があるタスクについて説明します。
+#### OpenSearch
 
-### OpenSearch
+OpenSearch は、Elasticsearch7.10.2のオープンソースのフォークで、Elasticsearchのライセンスの変更に続いています。 Adobe Commerceの次のリリースでは、OpenSearch のサポートが導入されています。
 
-OpenSearch は、Elasticsearch7.10.2のオープンソースのフォークで、Elasticsearchのライセンスの変更に続いています。 Adobe CommerceとMagento Open Sourceの次のリリースでは、OpenSearch のサポートが導入されています。
+* 2.4.6 （OpenSearch は別のモジュールと設定を持っています）
+* 2.4.5
+* 2.4.4
+* 2.4.3-p2
+* 2.3.7-p3
 
-- 2.4.4
-- 2.4.3-p2
-- 2.3.7-p3
-
-以下が可能です。 [Elasticsearchから OpenSearch への移行](opensearch-migration.md) 上記のバージョン（またはそれ以降）のAdobe CommerceまたはMagento Open Sourceにアップグレードする場合にのみ有効です。
+以下が可能です。 [Elasticsearchから OpenSearch への移行](opensearch-migration.md) 上記（またはそれ以降）のバージョンのAdobe Commerceにアップグレードする場合にのみ有効です。
 
 OpenSearch には JDK 1.8 以降が必要です。 詳しくは、 [Java Software Development Kit(JDK) のインストール](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) をクリックして、インストールされている JDK のバージョンを確認します。
 
 [検索エンジンの設定](../../configuration/search/configure-search-engine.md) では、検索エンジンを変更した後に実行する必要があるタスクについて説明します。
 
+#### アップグレードElasticsearch
+
+Elasticsearch8.x のサポートは、Adobe Commerce 2.4.6 で導入されました。次の手順は、Elasticsearchを 7.x から 8.x にアップグレードする例を示しています。
+
+1. Elasticsearch7.x サーバーを 8.x にアップグレードし、が起動して実行されていることを確認します。 詳しくは、 [Elasticsearch文書](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+
+1. を有効にします。 `id_field_data` フィールドで次の設定を `elasticsearch.yml` ファイルを作成し、Elasticsearch8.x サービスを再起動します。
+
+   ```yaml
+   indices:
+     id_field_data:
+       enabled: true
+   ```
+
+   >[!INFO]
+   >
+   >Elasticsearch8.x をサポートするために、Adobe Commerce 2.4.6 では `indices.id_field_data` プロパティはデフォルトで、 `_id` フィールド `docvalue_fields` プロパティ。
+
+1. Adobe Commerceプロジェクトのルートディレクトリで、Composer の依存関係を更新して、 `Magento_Elasticsearch7` モジュールとインストール `Magento_Elasticsearch8` モジュール。
+
+   ```bash
+   composer update magento/module-elasticsearch-8 --update-with-all-dependencies
+   ```
+
+1. プロジェクトコンポーネントを更新します。
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+1. [設定Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) 内 [!DNL Admin].
+
+1. カタログインデックスを再インデックスします。
+
+   ```bash
+   bin/magento indexer:reindex catalogsearch_fulltext
+   ```
+
+1. 有効なキャッシュタイプからすべての項目を削除します。
+
+   ```bash
+   bin/magento cache:clean
+   ```
+
+#### ダウングレードElasticsearch
+
+誤ってサーバー上のElasticsearchのバージョンをアップグレードした場合や、他の理由でダウングレードする必要がある場合は、Adobe Commerceプロジェクトの依存関係も更新する必要があります。 例えば、Elasticsearch8.x から 7.x にダウングレードするには、次のようにします。
+
+1. Elasticsearch8.x サーバーを 7.x にダウングレードし、が起動して実行されていることを確認します。 詳しくは、 [Elasticsearch文書](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+
+1. Adobe Commerceプロジェクトのルートディレクトリで、Composer の依存関係を更新して、 `Magento_Elasticsearch8` モジュールとそのコンポーザーの依存関係とインストール `Magento_Elasticsearch7` モジュール。
+
+   ```bash
+   composer remove magento/module-elasticsearch-8
+   ```
+
+1. プロジェクトコンポーネントを更新します。
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+1. [設定Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) 内 [!DNL Admin].
+
+1. カタログインデックスを再インデックスします。
+
+   ```bash
+   bin/magento indexer:reindex catalogsearch_fulltext
+   ```
+
+1. 有効なキャッシュタイプからすべての項目を削除します。
+
+   ```bash
+   bin/magento cache:clean
+   ```
+
 ### サードパーティの拡張機能
 
-拡張機能と 2.4 への完全な互換性があるかどうかについては、検索エンジンのベンダーにお問い合わせいただくことをお勧めします。
+拡張機能とAdobe Commerceリリースの互換性が完全にあるかどうかについては、検索エンジンのベンダーに問い合わせることをお勧めします。
 
 ## データベーステーブル形式の変換
 
@@ -127,7 +207,7 @@ Bash シェルに値を設定するには、次の手順を実行します。
 
 ## Cron ジョブが実行中であることを確認します。
 
-UNIX タスクスケジューラ `cron` は、毎日のAdobe CommerceおよびMagento Open Sourceの運用にとって重要です。 インデックス再作成、ニュースレター、電子メール、サイトマップなどのスケジュールを設定します。 いくつかの機能を使用するには、ファイルシステムの所有者として少なくとも 1 つの cron ジョブを実行する必要があります。
+UNIX タスクスケジューラ `cron` は、毎日のAdobe Commerce操作にとって重要です。 インデックス再作成、ニュースレター、電子メール、サイトマップなどのスケジュールを設定します。 いくつかの機能を使用するには、ファイルシステムの所有者として少なくとも 1 つの cron ジョブを実行する必要があります。
 
 cron ジョブが正しく設定されていることを確認するには、ファイルシステムの所有者として次のコマンドを入力して crontab を確認します。
 
@@ -163,15 +243,15 @@ Adobe Commerce 2.4 には、一部のデータをシリアル化から JSON に�
 
 次の表が最も影響を受けます。
 
-- `catalogrule`
-- `core_config_data`
-- `magento_reward_history`
-- `quote_payment`
-- `quote`
-- `sales_order_payment`
-- `sales_order`
-- `salesrule`
-- `url_rewrite`
+* `catalogrule`
+* `core_config_data`
+* `magento_reward_history`
+* `quote_payment`
+* `quote`
+* `sales_order_payment`
+* `sales_order`
+* `salesrule`
+* `url_rewrite`
 
 大量のデータがある場合は、環境変数の値を設定してパフォーマンスを向上させることができます。 `DATA_CONVERTER_BATCH_SIZE`. デフォルトでは、値はに設定されています。 `50,000`.
 
@@ -196,7 +276,7 @@ Adobe Commerce 2.4 には、一部のデータをシリアル化から JSON に�
 
 ## ファイルシステムの権限の検証
 
-セキュリティ上の理由から、Adobe CommerceとMagento Open Sourceにはファイルシステムに対する特定の権限が必要です。 権限は _[所有権](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. 所有権によって、ファイル・システム上で誰がアクションを実行できるかが決まります。権限は、ユーザーが実行できる操作を決定します。
+セキュリティ上の理由から、Adobe Commerceにはファイルシステムに対する特定の権限が必要です。 権限は _[所有権](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. 所有権によって、ファイル・システム上で誰がアクションを実行できるかが決まります。権限は、ユーザーが実行できる操作を決定します。
 
 ファイルシステム内のディレクトリは、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md) グループ化します。
 
@@ -246,10 +326,10 @@ drwxrws---. 29 magento_user apache   4096 Jun  7 07:53 vendor
 
 サンプル出力の説明については、次を参照してください。
 
-- ほとんどのファイルは `-rw-rw----`は、 `660`
-- `drwxrwx---` = `770`
-- `-rw-rw-rw-` = `666`
-- ファイルシステムの所有者は、 `magento_user`
+* ほとんどのファイルは `-rw-rw----`は、 `660`
+* `drwxrwx---` = `770`
+* `-rw-rw-rw-` = `666`
+* ファイルシステムの所有者は、 `magento_user`
 
 詳細を確認するには、次のコマンドを入力します。
 
@@ -257,7 +337,7 @@ drwxrws---. 29 magento_user apache   4096 Jun  7 07:53 vendor
 ls -la /var/www/html/magento2/pub
 ```
 
-Adobe CommerceとMagento Open Sourceは、静的ファイルアセットをのサブディレクトリにデプロイするので、 `pub`では、そこで権限と所有権も検証することをお勧めします。
+これは、Adobe Commerceがのサブディレクトリに静的ファイルアセットをデプロイするからです `pub`では、そこで権限と所有権も検証することをお勧めします。
 
 詳しくは、 [ファイル・システムの権限と所有権](../../installation/prerequisites/file-system/overview.md).
 

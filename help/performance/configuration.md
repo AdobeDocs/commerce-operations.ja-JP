@@ -1,9 +1,9 @@
 ---
 title: 設定のベストプラクティス
 description: これらのベストプラクティスを使用して、Adobe CommerceまたはMagento Open Sourceのデプロイメントの応答時間を最適化します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5b455cb1285ce764a0517008fb8b692f3899066d
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '1348'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,9 @@ Commerce には、ページの応答時間を改善し、より高いスルー�
 
 インデクサーは **[!UICONTROL Update on Save]** または **[!UICONTROL Update on Schedule]** モード。 この **[!UICONTROL Update on Save]** mode は、カタログや他のデータが変更されるたびに、即座にインデックスを作成します。 このモードでは、ストアでの更新操作と参照操作が少ないことを前提としています。 高負荷時に大きな遅延が生じ、データが使用できなくなる可能性があります。 次を使用することをお勧めします。 **スケジュールに従って更新** 実稼動環境のモードです。データの更新に関する情報を保存し、特定の cron ジョブを通じてバックグラウンドの一部によるインデックス作成を実行するからです。 各 [!DNL Commerce] インデクサーが別々に  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** 設定ページを開きます。
 
-MariaDB 10.4 でのインデックス再作成は、他の MariaDB や [!DNL MySQL] バージョン。 回避策として、デフォルトの MariaDB 設定を変更し、次のパラメーターを設定することをお勧めします。
-
-* [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
-* [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
+>[!TIP]
+>
+>MariaDB 10.4 および 10.6 でのインデックス再作成は、他の MariaDB や [!DNL MySQL] バージョン。 デフォルトの MariaDB 設定を変更することをお勧めします。これについては、 [インストールの前提条件](../installation/prerequisites/database/mysql.md).
 
 ## キャッシュ
 
@@ -49,6 +48,10 @@ MariaDB 10.4 でのインデックス再作成は、他の MariaDB や [!DNL MyS
 >[!INFO]
 >
 >このオプションは、 **[!UICONTROL Backorder with any mode]** がアクティブ化されている。
+
+>[!INFO]
+>
+>このオプションは、 [非同期の注文プレースメント](high-throughput-order-processing.md#asynchronous-order-placement) ～と組み合わせて [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html).
 
 ## クライアント側の最適化設定
 
@@ -80,6 +83,18 @@ MariaDB 10.4 でのインデックス再作成は、他の MariaDB や [!DNL MyS
 * JS バンドルを使用する代わりに、HTTP2 プロトコルをアクティブ化する方法を使用できます。 このプロトコルには、ほぼ同じ利点があります。
 * JS ファイルと CSS ファイルの結合などの非推奨の設定は、ページのHEADセクションで同期的に読み込まれる JS 用にのみ設計されているので、使用しないことをお勧めします。 この方法を使用すると、バンドルが発生し、requireJS ロジックが正しく機能しなくなる場合があります。
 
+## 顧客セグメントの検証
+
+多数の [顧客セグメント](https://docs.magento.com/user-guide/marketing/customer-segments.html) 顧客のログインや買い物かごへの製品の追加など、顧客の操作によってパフォーマンスが大幅に低下する場合があります。
+
+顧客アクショントリガー顧客セグメントの検証プロセス。これは、パフォーマンスの低下を引き起こす可能性がある原因です。 デフォルトでは、Adobe Commerceは各セグメントをリアルタイムで検証し、一致する顧客セグメントと一致しない顧客セグメントを定義します。
+
+パフォーマンスの低下を避けるために、 **[!UICONTROL Real-time Check if Customer is Matched by Segment]** システム設定オプション **いいえ** ：単一の結合条件 SQL クエリで顧客セグメントを検証します。
+
+この最適化を有効にするには、に移動します。 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Customer Configuration] > [!UICONTROL Customer Segments] >[!UICONTROL Real-time Check if Customer is Matched by Segment]**.
+
+この設定により、システムに多数の顧客セグメントがある場合の、顧客セグメント検証のパフォーマンスが向上します。 ただし、では機能しません。 [分割データベース](../configuration/storage/multi-master.md) 実装するか、登録されているお客様がいない場合。
+
 ## データベースメンテナンススケジュール {#database}
 
 ステージングインスタンスと実稼動インスタンスに対して、定期的なデータベースバックアップを実行することをお勧めします。 バックアップ・オペレーションの I/O 負荷が高い性質が原因で、バックアップの速度が低下し、潜在的な問題が発生する可能性があります。 複数の環境に対して同時にデータベース・プロセスを実行すると、使用可能なリソースの競合が原因で実行に時間がかかる場合があります。
@@ -87,3 +102,24 @@ MariaDB 10.4 でのインデックス再作成は、他の MariaDB や [!DNL MyS
 パフォーマンスを向上させるために、バックアップを連続して、1 回ずつ、オフピーク時に実行するようにスケジュールします。 この方法では、I/O の競合を回避し、特に小規模なインスタンス、大規模なデータベースなどで、完了までの時間を短縮できます。
 
 例えば、実稼動データベースのバックアップをスケジュールし、ストアの訪問数が少なくなった場合にステージングデータベースをスケジュールすることをお勧めします。
+
+## グリッド内の製品数の制限
+
+大きなカタログでの製品グリッドのパフォーマンスを向上させるには、グリッド内の製品数を **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Admin] > [!UICONTROL Admin Grids] >[!UICONTROL Limit Number of Products in Grid]** システム構成設定。
+
+このシステム構成設定は、既定では無効になっています。 有効にすると、グリッド内の商品の数を特定の値に制限できます。 **[!UICONTROL Records Limit]** はカスタマイズ可能な設定で、次のデフォルトの最小値を持ちます： `20000`.
+次の場合に **[!UICONTROL Limit Number of Products in Grid]** の設定が有効で、グリッド内の製品数がレコード数の制限を超える場合は、レコード数の制限を超えるコレクションが返されます。 この制限に達すると、見つかったレコードの合計数、選択したレコードの数およびページネーション要素は、グリッドヘッダーに表示されません。
+
+グリッド内の製品の総数が制限されている場合、製品グリッドのマスアクションには影響しません。 製品グリッドプレゼンテーションレイヤーにのみ影響します。 例えば、 `20000` グリッド内の製品の場合、ユーザーは **[!UICONTROL Select All]**、を選択します。 **[!UICONTROL Update attributes]** マスアクションを実行し、一部の属性を更新します。 その結果、すべての製品が更新され、 `20000` レコード。
+
+製品グリッドの制限は、UI コンポーネントで使用される製品コレクションにのみ影響します。 その結果、すべての製品グリッドがこの制限の影響を受けるわけではありません。 を使用しているユーザーのみ `Magento\Catalog\Ui\DataProvider\Product\ProductCollection`.
+次のページでのみ、製品グリッドのコレクションを制限できます。
+
+* カタログ製品グリッド
+* 関連製品/アップセル/クロスセル製品グリッドの追加
+* 製品をバンドル製品に追加
+* 製品をグループ製品に追加
+* 管理注文作成ページ
+
+製品グリッドを制限しない場合は、結果収集の項目数をより少なくするために、より正確にフィルターを使用することをお勧めします。 **[!UICONTROL Records Limit]**.
+

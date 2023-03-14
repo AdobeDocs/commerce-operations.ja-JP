@@ -1,9 +1,9 @@
 ---
 title: 検索エンジンの前提条件
 description: 次の手順に従って、Adobe CommerceとMagento Open Sourceのオンプレミスインストールで、サポートされている検索エンジンソフトウェアをインストールして設定します。
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: d3cfd97450164d38fd340b538099739601573d64
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe CommerceとMagento Open Source2.4 以降では、すべてのインスト�
 
 ## サポートされているバージョン
 
-Adobe CommerceまたはMagento Open Source2.4.4 をインストールする前に、Elasticsearchまたは OpenSearch をインストールして設定する必要があります。
+Adobe Commerce 2.4.4 以降をインストールする前に、Elasticsearchまたは OpenSearch をインストールして設定する必要があります。
 
 詳しくは、 [必要システム構成](../../system-requirements.md) を参照してください。
 
@@ -164,4 +164,4 @@ Elasticsearchには JDK 1.8 以降が必要です。 詳しくは、 [Java Softw
 
 ## その他のリソース
 
-詳しくは、 [Elasticsearch文書](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html).
+詳しくは、 [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) または [OpenSearch](https://opensearch.org/docs/latest/) ドキュメント。

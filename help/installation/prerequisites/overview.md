@@ -1,10 +1,10 @@
 ---
 title: オンプレミスインストールの前提条件
 description: Adobe CommerceとMagento Open Sourceのオンプレミスインストールに必要なソフトウェアの依存関係について詳しく説明します。
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 1%
+source-wordcount: '334'
+ht-degree: 0%
 
 ---
 
@@ -100,7 +100,15 @@ owners.
 
 MySQL をインストールまたはアップグレードするには、 [MySQL](database/mysql.md).
 
-### Elasticsearchまたは OpenSearch
+### 検索エンジン
+
+OpenSearch のインストールを確認するには：
+
+```bash
+curl -XGET '<opensearch-hostname>:<opensearch-port>'
+```
+
+インストールをElasticsearchするには：
 
 ```bash
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'

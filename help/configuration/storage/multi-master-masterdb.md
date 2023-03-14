@@ -1,10 +1,10 @@
 ---
 title: マスターデータベースを自動的に構成する
 description: 分割データベースソリューションの自動設定に関するガイダンスを参照してください。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: d029d1ac66bff2ac34b22b2d3b8aafbfc062e082
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -101,7 +101,7 @@ Adobe Commerceソフトウェアをインストールした後は、いつでも
 bin/magento setup:db-schema:split-quote --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
-以下に例を挙げます。
+例：
 
 ```bash
 bin/magento setup:db-schema:split-quote --host="localhost" --dbname="magento_quote" --username="magento_quote" --password="magento_quote"
@@ -121,10 +121,14 @@ Migration has been finished successfully!
 bin/magento setup:db-schema:split-sales --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
-以下に例を挙げます。
+例：
 
 ```bash
 bin/magento setup:db-schema:split-sales --host="localhost" --dbname="magento_sales" --username="magento_sales" --password="magento_sales"
+```
+
+```bash
+bin/magento setup:upgrade
 ```
 
 次のメッセージが表示され、設定が正常に完了したことを確認します。

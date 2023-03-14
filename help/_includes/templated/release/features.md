@@ -1,8 +1,8 @@
 ---
-source-git-commit: c6b2c0715ae7ddd1a5f64facba6fbd2919875850
+source-git-commit: d1af1ffe584b18cbc6c664cab31283c13f36c25e
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 9%
+source-wordcount: '184'
+ht-degree: 8%
 
 ---
 # コマースの機能
@@ -21,6 +21,14 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <th style="border-style:none;">2.4</th>
     </tr>
     <tr>
+      <td>Adobe Sensei（B2C および B2B）を活用したライブ検索</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
       <td>販売者が買い物を支援</td>
       <td></td>
       <td></td>
@@ -29,7 +37,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Adobe Senseiを活用したライブ検索</td>
+      <td>Adobe Commerce用 Channel Manager</td>
       <td></td>
       <td></td>
       <td></td>
@@ -37,7 +45,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Adobe Senseiを活用した製品Recommendations</td>
+      <td>Adobe Senseiを利用した製品Recommendations（B2C および B2B）</td>
       <td></td>
       <td></td>
       <td></td>
@@ -45,7 +53,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Page Builder でのコンテンツ管理のドラッグ&amp;ドロップ</td>
+      <td>ページビルダーのドラッグ&amp;ドロップによるコンテンツ管理</td>
       <td></td>
       <td></td>
       <td></td>
@@ -61,27 +69,11 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>支払サービスの柔軟な支払いオプション</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>+</td>
-    </tr>
-    <tr>
       <td>AmazonSales Channel</td>
       <td></td>
       <td></td>
       <td>+</td>
       <td>+</td>
-      <td>+</td>
-    </tr>
-    <tr>
-      <td>チャネルマネージャ (Walmart Marketplace)</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td>+</td>
     </tr>
     <tr>
@@ -94,14 +86,6 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
     </tr>
     <tr>
       <td>即時購入</td>
-      <td></td>
-      <td></td>
-      <td>+</td>
-      <td>+</td>
-      <td>+</td>
-    </tr>
-    <tr>
-      <td>支払の統合Braintree</td>
       <td></td>
       <td></td>
       <td>+</td>
@@ -127,6 +111,14 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <th style="border-style:none;">2.4</th>
     </tr>
     <tr>
+      <td>支払いサービス</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
       <td>メディアギャラリーとアセット管理の強化</td>
       <td></td>
       <td></td>
@@ -135,7 +127,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>オンラインピックアップインストア (BOPIS) を購入</td>
+      <td>Walmart Technologies によるAdobe Commerceのフルフィルメントの保存</td>
       <td></td>
       <td></td>
       <td></td>
@@ -143,7 +135,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>店舗達成（高度なオムニチャネル達成）</td>
+      <td>オンラインピックアップインストア (BOPIS) を購入</td>
       <td></td>
       <td></td>
       <td></td>
@@ -175,11 +167,19 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Adobe Commerce Reporting</td>
+      <td>Business Intelligence</td>
       <td></td>
       <td>+</td>
       <td>+</td>
       <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Adobe Commerceのカタログサービス</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td>+</td>
     </tr>
     <tr>
@@ -188,14 +188,6 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
       <td>+</td>
       <td>+</td>
-      <td>+</td>
-    </tr>
-    <tr>
-      <td>支払いサービスのレポートと紐付けダッシュボード</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td>+</td>
     </tr>
   </tbody>
@@ -209,7 +201,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <th style="border-style:none;">2.4</th>
     </tr>
     <tr>
-      <td>サイト全体の分析ツール</td>
+      <td>サイト全体分析ツール</td>
       <td></td>
       <td></td>
       <td></td>
@@ -237,19 +229,11 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
+      <td>+</td>
       <td>+</td>
     </tr>
     <tr>
-      <td>PHP 8.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>+</td>
-    </tr>
-    <tr>
-      <td>PHP 7.4</td>
+      <td>非同期の注文処理</td>
       <td></td>
       <td></td>
       <td></td>
@@ -257,11 +241,11 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>PHP 7.3</td>
+      <td>PHP 8.1 （2.4.4 以降）</td>
       <td></td>
       <td></td>
       <td></td>
-      <td>+</td>
+      <td></td>
       <td>+</td>
     </tr>
     <tr>
@@ -297,14 +281,6 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>宣言スキーマによるインストールとアップグレードの容易化</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>+</td>
-      <td>+</td>
-    </tr>
-    <tr>
       <td>セキュリティツール：/ 2FA、ReCAPTCHA、ACL、WAF</td>
       <td></td>
       <td></td>
@@ -313,7 +289,31 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>コマース最適化クラウド</td>
+      <td>Adobe CommerceのAdobe I/Oイベント</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce用Adobe Developer App Builder</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce optimized cloud</td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>クラウドインフラストラクチャに関するAdobe Commerceの監視</td>
       <td></td>
       <td>+</td>
       <td>+</td>

@@ -1,9 +1,9 @@
 ---
 title: リリーススケジュール
 description: 特定のバージョンのAdobe Commerceが、ベータ版、プレリリース版および一般リリースに対して予定されている場合について説明します。
-source-git-commit: 18338316c78e9c2ef87614044e65517b1f11b16d
+source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Adobeは、Adobe Commerceのサポートされる各リリース行のセキュ�
 | 2023 年 8 月機能+セキュリティパッチリリース | 2.4.6-p2<br>2.4.5-p4<br>2.4.4-p5 | 2023 年 7 月 26 日 | 2023 年 8 月 9 日 |
 | 2023 年 10 月機能+ベータ版パッチリリース+セキュリティパッチリリース | 2.4.7-beta2<br>2.4.6-p3<br>2.4.5-p5<br>2.4.4-p6 | 2023 年 9 月 27 日 | 2023 年 10 月 11 日 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 <sup>\-\ — このリリースに適用されない項目を示します。</sup><br>
 <sup>1 ベータ版は 2023 年 1 月に予定されています</sup><br>
@@ -39,7 +39,7 @@ Adobeは、Adobe Commerceのサポートされる各リリース行のセキュ�
 
 プレリリースは、一般公開の 2 週間前にAdobe Commerceのマーチャントとすべてのパートナーが利用できる一般公開コードです。 これにより、一般リリースの前にコードを迅速にデプロイできます。
 
-詳しくは、 [ベータプログラム](beta-program.md).
+詳しくは、 [ベータ版リリース](beta.md).
 
 ## リリースタイプ
 

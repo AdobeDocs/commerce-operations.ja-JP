@@ -1,9 +1,9 @@
 ---
 title: 現在の検索エンジンはサポートされていません
 description: サポートされていない検索エンジンに関するエラーが発生した場合は、Adobe CommerceまたはMagento Open Sourceのアップグレードをトラブルシューティングします。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Your current search engine, <Engine Name>, is not supported. You must install a 
 bin/magento config:show catalog/search/engine
 ```
 
-返される値が `mysql` または `elasticsearch`.
+返される値が `mysql`, `elasticsearch`または `elasticsearch6`.
 
 >[!WARNING]
 >
@@ -54,14 +54,14 @@ bin/magento config:show catalog/search/engine
 
 このプロセスの手引きとして、次のリソースを使用します。
 
-- [インストールとElasticsearch](../../configuration/search/overview-search.md)
-- [インストールElasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- 使用するElasticsearchの設定 [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) または [Apache](../../installation/prerequisites/search-engine/configure-apache.md)
-- [設定Elasticsearch](../../configuration/search/configure-search-engine.md)
+- [検索エンジンのインストールと設定](../../configuration/search/overview-search.md)
+- [検索エンジンの設定](../../configuration/search/configure-search-engine.md)
 
 検索エンジンを設定してインデックスを再作成した後、2.4 にアップグレードする準備が整いました。
 
 ## 検索エンジンが `elasticsearch`
+
+Elasticsearch6 以前のはサポートされなくなりました。
 
 値： `elasticsearch` は、Elasticsearch2.x を使用するようにAdobe CommerceまたはMagento Open Sourceのダウンレベルバージョンが設定されていることを示します。このバージョンのElasticsearchはサポートされなくなりました。
 

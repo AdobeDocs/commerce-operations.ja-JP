@@ -1,7 +1,7 @@
 ---
-source-git-commit: 23d55385046de18b238c90f6a99be692f1ce7561
+source-git-commit: 177f301802e1ab1d0560ee98594b8128440efa7c
 workflow-type: tm+mt
-source-wordcount: '14684'
+source-wordcount: '17239'
 ht-degree: 0%
 
 ---
@@ -10,7 +10,7 @@ ht-degree: 0%
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**バージョン**:2.4.5
+**バージョン**:2.4.6-beta2
 
 このリファレンスには、 `bin/magento` コマンドラインツールを使用します。
 最初のリストは、 `bin/magento list` コマンドを使用して
@@ -23,6 +23,158 @@ ht-degree: 0%
 >[!NOTE]
 >
 >この参照は、アプリケーションのコードベースから生成されます。 コンテンツを変更するには、 [codebase](https://github.com/magento) リポジトリを作成し、変更をレビュー用に送信します。 もう 1 つの方法は、次の操作です。 _フィードバックを提供_ （右上にあるリンクを見つけます）。 貢献のガイドラインについては、 [コード貢献](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+
+## `_complete`
+
+シェルの完了候補を示す内部コマンド
+
+```bash
+bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-S|--symfony SYMFONY]
+```
+
+### `--shell`, `-s`
+
+シェルタイプ (&quot;bash&quot;)
+
+- 値が必要です
+
+### `--input`, `-i`
+
+入力トークンの配列（例： COMP_WORDS や argv）
+
+- デフォルト： `[]`
+- 値が必要です
+
+### `--current`, `-c`
+
+カーソルが置かれている「入力」配列のインデックス（例： COMP_CWORD）
+
+- 値が必要です
+
+### `--symfony`, `-S`
+
+完了スクリプトのバージョン
+
+- 値が必要です
+
+### `--help`, `-h`
+
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--verbose`, `-v|-vv|-vvv`
+
+メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--version`, `-V`
+
+このアプリケーションバージョンを表示
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制（または無効 —no-ansi）にします
+
+- 値を受け入れない
+
+### `--no-ansi`
+
+「 —ansi」オプションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`, `-n`
+
+インタラクティブな質問をしない
+
+- デフォルト： `false`
+- 値を受け入れない
+
+
+## `completion`
+
+シェル完了スクリプトをダンプします
+
+```bash
+bin/magento completion [--debug] [--] [<shell>]
+```
+
+
+### `shell`
+
+シェルのタイプ ( 例：&quot;bash&quot;) の場合、&quot;$SHELL&quot; env var の値は、この値が指定されていない場合に使用されます
+
+
+### `--debug`
+
+完了デバッグログの末尾を表示
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--help`, `-h`
+
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--verbose`, `-v|-vv|-vvv`
+
+メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--version`, `-V`
+
+このアプリケーションバージョンを表示
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制（または無効 —no-ansi）にします
+
+- 値を受け入れない
+
+### `--no-ansi`
+
+「 —ansi」オプションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`, `-n`
+
+インタラクティブな質問をしない
+
+- デフォルト： `false`
+- 値を受け入れない
+
 
 ## `help`
 
@@ -56,7 +208,7 @@ bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -84,14 +236,13 @@ bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -109,7 +260,7 @@ ANSI 出力を無効にする
 リストコマンド
 
 ```bash
-bin/magento list [--raw] [--format FORMAT] [--] [<namespace>]
+bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 ```
 
 
@@ -132,18 +283,16 @@ bin/magento list [--raw] [--format FORMAT] [--] [<namespace>]
 - デフォルト： `txt`
 - 値が必要です
 
+### `--short`
 
-## `admin:adobe-ims:disable`
+コマンドの引数の説明をスキップするには
 
-Adobe IMSモジュールを無効にする
-
-```bash
-bin/magento admin:adobe-ims:disable
-```
+- デフォルト： `false`
+- 値を受け入れない
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -171,14 +320,70 @@ bin/magento admin:adobe-ims:disable
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`, `-n`
+
+インタラクティブな質問をしない
+
+- デフォルト： `false`
+- 値を受け入れない
+
+
+## `admin:adobe-ims:disable`
+
+Adobe IMSモジュールを無効にする
+
+```bash
+bin/magento admin:adobe-ims:disable
+```
+
+### `--help`, `-h`
+
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--verbose`, `-v|-vv|-vvv`
+
+メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--version`, `-V`
+
+このアプリケーションバージョンを表示
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制（または無効 —no-ansi）にします
+
+- 値を受け入れない
+
+### `--no-ansi`
+
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -225,7 +430,7 @@ bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -253,14 +458,13 @@ bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -283,7 +487,7 @@ bin/magento admin:adobe-ims:info
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -311,14 +515,13 @@ bin/magento admin:adobe-ims:info
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -341,7 +544,7 @@ bin/magento admin:adobe-ims:status
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -369,14 +572,13 @@ bin/magento admin:adobe-ims:status
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -435,7 +637,7 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -463,14 +665,13 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -500,7 +701,7 @@ bin/magento admin:user:unlock <username>
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -528,14 +729,13 @@ bin/magento admin:user:unlock <username>
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -559,7 +759,7 @@ bin/magento app:config:dump [<config-types>...]
 
 ### `config-types`
 
-設定タイプのスペース区切りリストを表示するか、すべてをダンプする場合は省略します。 [スコープ、テーマ、システム、i18n]
+設定タイプのスペース区切りリストを表示するか、すべてをダンプする場合は省略します。 [スコープ、システム、テーマ、i18n]
 
 - デフォルト： `[]`
 
@@ -567,7 +767,7 @@ bin/magento app:config:dump [<config-types>...]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -595,14 +795,13 @@ bin/magento app:config:dump [<config-types>...]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -625,7 +824,7 @@ bin/magento app:config:import
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -653,14 +852,13 @@ bin/magento app:config:import
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -683,7 +881,7 @@ bin/magento app:config:status
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -711,14 +909,13 @@ bin/magento app:config:status
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -765,7 +962,7 @@ bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNA
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -793,14 +990,13 @@ bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNA
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -838,7 +1034,7 @@ bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -866,14 +1062,13 @@ bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -911,7 +1106,7 @@ bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -939,14 +1134,13 @@ bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -984,7 +1178,7 @@ bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1012,14 +1206,13 @@ bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1057,7 +1250,7 @@ bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1085,14 +1278,13 @@ bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1121,7 +1313,7 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1149,14 +1341,13 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1193,7 +1384,7 @@ bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1221,14 +1412,13 @@ bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1251,7 +1441,7 @@ bin/magento catalog:product:attributes:cleanup
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1279,14 +1469,13 @@ bin/magento catalog:product:attributes:cleanup
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1316,7 +1505,7 @@ y\n
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1344,14 +1533,13 @@ y\n
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1406,7 +1594,7 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1434,14 +1622,13 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1511,7 +1698,7 @@ section/group/field_name 形式の設定パス
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1539,14 +1726,13 @@ section/group/field_name 形式の設定パス
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1589,7 +1775,7 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1617,14 +1803,13 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1661,7 +1846,7 @@ bin/magento cron:install [-f|--force] [-d|--non-optional]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1689,14 +1874,13 @@ bin/magento cron:install [-f|--force] [-d|--non-optional]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1719,7 +1903,7 @@ bin/magento cron:remove
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1747,14 +1931,13 @@ bin/magento cron:remove
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1789,7 +1972,7 @@ bin/magento cron:run [--group GROUP] [--bootstrap BOOTSTRAP]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1817,14 +2000,13 @@ bin/magento cron:run [--group GROUP] [--bootstrap BOOTSTRAP]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1847,7 +2029,7 @@ bin/magento customer:hash:upgrade
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1875,14 +2057,13 @@ bin/magento customer:hash:upgrade
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1919,7 +2100,7 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1947,14 +2128,13 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1977,7 +2157,7 @@ bin/magento deploy:mode:show
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2005,14 +2185,13 @@ bin/magento deploy:mode:show
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2042,7 +2221,7 @@ bin/magento dev:di:info <class>
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2070,14 +2249,13 @@ bin/magento dev:di:info <class>
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2100,7 +2278,7 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2128,14 +2306,13 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2158,7 +2335,7 @@ bin/magento dev:email:override-compatibility-check
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2186,14 +2363,13 @@ bin/magento dev:email:override-compatibility-check
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2216,7 +2392,7 @@ bin/magento dev:profiler:disable
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2244,14 +2420,13 @@ bin/magento dev:profiler:disable
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2280,7 +2455,7 @@ bin/magento dev:profiler:enable [<type>]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2308,14 +2483,13 @@ bin/magento dev:profiler:enable [<type>]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2338,7 +2512,7 @@ bin/magento dev:query-log:disable
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2366,14 +2540,13 @@ bin/magento dev:query-log:disable
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2417,7 +2590,7 @@ bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2445,14 +2618,13 @@ bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2512,7 +2684,7 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2540,14 +2712,13 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2570,7 +2741,7 @@ bin/magento dev:template-hints:disable
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2598,14 +2769,13 @@ bin/magento dev:template-hints:disable
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2628,7 +2798,7 @@ bin/magento dev:template-hints:enable
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2656,14 +2826,13 @@ bin/magento dev:template-hints:enable
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2686,7 +2855,7 @@ bin/magento dev:template-hints:status
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2714,14 +2883,13 @@ bin/magento dev:template-hints:status
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2759,7 +2927,7 @@ PHPUnit の追加引数。 例：&quot;-c&#39;—filter=MyTest&#39;&quot; （ス
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2787,14 +2955,13 @@ PHPUnit の追加引数。 例：&quot;-c&#39;—filter=MyTest&#39;&quot; （ス
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2831,7 +2998,7 @@ bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2859,14 +3026,13 @@ bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2909,7 +3075,7 @@ XML ファイルを上書き
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2937,14 +3103,13 @@ XML ファイルを上書き
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2976,7 +3141,7 @@ bin/magento downloadable:domains:add [<domains>...]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3004,14 +3169,13 @@ bin/magento downloadable:domains:add [<domains>...]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3043,7 +3207,7 @@ bin/magento downloadable:domains:remove [<domains>...]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3071,14 +3235,13 @@ bin/magento downloadable:domains:remove [<domains>...]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3101,7 +3264,7 @@ bin/magento downloadable:domains:show
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3129,14 +3292,13 @@ bin/magento downloadable:domains:show
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3159,7 +3321,7 @@ bin/magento encryption:payment-data:update
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3187,14 +3349,13 @@ bin/magento encryption:payment-data:update
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3236,7 +3397,7 @@ bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<dire
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3264,14 +3425,13 @@ bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<dire
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3321,7 +3481,7 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3349,14 +3509,13 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3396,7 +3555,7 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3424,14 +3583,13 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3454,7 +3612,7 @@ bin/magento indexer:info
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3482,14 +3640,13 @@ bin/magento indexer:info
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3521,7 +3678,7 @@ bin/magento indexer:reindex [<index>...]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3549,14 +3706,13 @@ bin/magento indexer:reindex [<index>...]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3588,7 +3744,7 @@ bin/magento indexer:reset [<index>...]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3616,14 +3772,13 @@ bin/magento indexer:reset [<index>...]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3657,7 +3812,7 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3685,14 +3840,13 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3729,7 +3883,7 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3757,14 +3911,13 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3796,7 +3949,7 @@ bin/magento indexer:show-dimensions-mode [<indexer>...]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3824,14 +3977,13 @@ bin/magento indexer:show-dimensions-mode [<indexer>...]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3863,7 +4015,7 @@ bin/magento indexer:show-mode [<index>...]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3891,14 +4043,13 @@ bin/magento indexer:show-mode [<index>...]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3930,7 +4081,7 @@ bin/magento indexer:status [<index>...]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3958,14 +4109,13 @@ bin/magento indexer:status [<index>...]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3988,7 +4138,7 @@ bin/magento info:adminuri
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4016,14 +4166,13 @@ bin/magento info:adminuri
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4046,7 +4195,7 @@ bin/magento info:backups:list
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4074,14 +4223,13 @@ bin/magento info:backups:list
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4104,7 +4252,7 @@ bin/magento info:currency:list
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4132,14 +4280,13 @@ bin/magento info:currency:list
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4169,7 +4316,7 @@ bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4197,14 +4344,13 @@ bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4234,7 +4380,7 @@ bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4262,14 +4408,13 @@ bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4299,7 +4444,7 @@ bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4327,14 +4472,13 @@ bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4357,7 +4501,7 @@ bin/magento info:language:list
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4385,14 +4529,13 @@ bin/magento info:language:list
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4415,7 +4558,7 @@ bin/magento info:timezone:list
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4443,14 +4586,13 @@ bin/magento info:timezone:list
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4489,7 +4631,7 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4517,14 +4659,13 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4575,7 +4716,7 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4603,14 +4744,13 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4643,7 +4783,7 @@ bin/magento inventory-geonames:import <countries>...
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4671,14 +4811,13 @@ bin/magento inventory-geonames:import <countries>...
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4730,7 +4869,7 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4758,14 +4897,13 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4801,7 +4939,7 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4829,14 +4967,13 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4872,7 +5009,7 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4900,14 +5037,13 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4936,7 +5072,7 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4964,14 +5100,13 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4994,7 +5129,7 @@ bin/magento media-content:sync
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5022,14 +5157,13 @@ bin/magento media-content:sync
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5052,7 +5186,7 @@ bin/magento media-gallery:sync
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5080,14 +5214,13 @@ bin/magento media-gallery:sync
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5110,7 +5243,7 @@ bin/magento module:config:status
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5138,14 +5271,13 @@ bin/magento module:config:status
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5204,7 +5336,7 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5232,14 +5364,13 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5298,7 +5429,7 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5326,14 +5457,13 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5385,7 +5515,7 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5413,14 +5543,13 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5501,7 +5630,7 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5529,14 +5658,13 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5582,7 +5710,7 @@ bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revis
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5610,14 +5738,13 @@ bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revis
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5640,7 +5767,7 @@ bin/magento queue:consumers:list
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5668,14 +5795,70 @@ bin/magento queue:consumers:list
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--no-interaction`, `-n`
+
+インタラクティブな質問をしない
+
+- デフォルト： `false`
+- 値を受け入れない
+
+
+## `queue:consumers:restart`
+
+MessageQueue コンシューマーの再起動
+
+```bash
+bin/magento queue:consumers:restart
+```
+
+### `--help`, `-h`
+
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--quiet`, `-q`
+
+メッセージを出力しない
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--verbose`, `-v|-vv|-vvv`
+
+メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--version`, `-V`
+
+このアプリケーションバージョンを表示
+
+- デフォルト： `false`
+- 値を受け入れない
+
+### `--ansi`
+
+ANSI 出力を強制（または無効 —no-ansi）にします
+
+- 値を受け入れない
+
+### `--no-ansi`
+
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5742,7 +5925,7 @@ PID を保存するためのファイルパス（このオプションは廃止�
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5770,14 +5953,13 @@ PID を保存するためのファイルパス（このオプションは廃止�
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5800,7 +5982,7 @@ bin/magento remote-storage:sync
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5828,14 +6010,13 @@ bin/magento remote-storage:sync
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5865,7 +6046,7 @@ composer の更新を実行せずに composer.json を更新
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5893,14 +6074,13 @@ composer の更新を実行せずに composer.json を更新
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5930,7 +6110,7 @@ composer の更新を実行せずに composer.json を更新
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5958,14 +6138,13 @@ composer の更新を実行せずに composer.json を更新
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5988,7 +6167,7 @@ bin/magento sampledata:reset
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6016,14 +6195,13 @@ bin/magento sampledata:reset
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6046,7 +6224,7 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6074,14 +6252,13 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6104,7 +6281,7 @@ bin/magento security:recaptcha:disable-for-user-login
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6132,14 +6309,13 @@ bin/magento security:recaptcha:disable-for-user-login
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6175,7 +6351,7 @@ bin/magento security:tfa:google:set-secret <user> <secret>
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6203,14 +6379,13 @@ bin/magento security:tfa:google:set-secret <user> <secret>
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6233,7 +6408,7 @@ bin/magento security:tfa:providers
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6261,14 +6436,13 @@ bin/magento security:tfa:providers
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6304,7 +6478,7 @@ bin/magento security:tfa:reset <user> <provider>
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6332,14 +6506,13 @@ bin/magento security:tfa:reset <user> <provider>
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6389,7 +6562,7 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6417,14 +6590,13 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6442,14 +6614,8 @@ ANSI 出力を無効にする
 デプロイメント設定を作成または変更します
 
 ```bash
-bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:config:set [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--id_salt ID_SALT] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
-
-### `--backend-frontname`
-
-バックエンドの frontname （見つからない場合は自動生成されます）
-
-- 値が必要です
 
 ### `--enable-debug-logging`
 
@@ -6460,6 +6626,18 @@ bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-d
 ### `--enable-syslog-logging`
 
 syslog ログを有効にする
+
+- 値が必要です
+
+### `--backend-frontname`
+
+バックエンドの frontname （見つからない場合は自動生成されます）
+
+- 値が必要です
+
+### `--id_salt`
+
+GraphQl Salt
 
 - 値が必要です
 
@@ -6956,7 +7134,7 @@ Zookeeper がロックを保存するパス。 デフォルトのパスは次の
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6984,14 +7162,13 @@ Zookeeper がロックを保存するパス。 デフォルトのパスは次の
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7020,7 +7197,7 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7048,14 +7225,13 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7105,7 +7281,7 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7133,14 +7309,13 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7170,7 +7345,7 @@ bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7198,14 +7373,13 @@ bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7241,7 +7415,7 @@ bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7269,14 +7443,13 @@ bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7305,7 +7478,7 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7333,14 +7506,13 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7363,7 +7535,7 @@ bin/magento setup:di:compile
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7391,14 +7563,13 @@ bin/magento setup:di:compile
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7416,14 +7587,8 @@ ANSI 出力を無効にする
 Magento
 
 ```bash
-bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--id_salt ID_SALT] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
-
-### `--backend-frontname`
-
-バックエンドの frontname （見つからない場合は自動生成されます）
-
-- 値が必要です
 
 ### `--enable-debug-logging`
 
@@ -7434,6 +7599,18 @@ bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debu
 ### `--enable-syslog-logging`
 
 syslog ログを有効にする
+
+- 値が必要です
+
+### `--backend-frontname`
+
+バックエンドの frontname （見つからない場合は自動生成されます）
+
+- 値が必要です
+
+### `--id_salt`
+
+GraphQl Salt
 
 - 値が必要です
 
@@ -8008,7 +8185,7 @@ Magento管理 URL とフォームの「セキュリティキー」機能を使�
 
 ### `--search-engine`
 
-検索エンジン。 値：elasticsearch5, elasticsearch6, elasticsearch7
+検索エンジン。 値：elasticsearch5, elasticsearch7, elasticsearch8, opensearch
 
 - 値が必要です
 
@@ -8051,6 +8228,48 @@ Elasticsearchインデックスのプレフィックス。
 ### `--elasticsearch-timeout`
 
 Elasticsearchサーバーのタイムアウト。
+
+- 値が必要です
+
+### `--opensearch-host`
+
+OpenSearch サーバーホスト。
+
+- 値が必要です
+
+### `--opensearch-port`
+
+OpenSearch サーバーポート。
+
+- 値が必要です
+
+### `--opensearch-enable-auth`
+
+認証を有効にするには、1 に設定します。 （デフォルトは 0、無効）
+
+- 値が必要です
+
+### `--opensearch-username`
+
+OpenSearch ユーザー名。 HTTP 認証が有効な場合にのみ適用されます
+
+- 値が必要です
+
+### `--opensearch-password`
+
+OpenSearch パスワード。 HTTP 認証が有効な場合にのみ適用されます
+
+- 値が必要です
+
+### `--opensearch-index-prefix`
+
+OpenSearch インデックスのプレフィックス。
+
+- 値が必要です
+
+### `--opensearch-timeout`
+
+OpenSearch サーバーがタイムアウトしました。
 
 - 値が必要です
 
@@ -8127,7 +8346,7 @@ Magentoのインストールは、ドライランモードで実行されます
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8155,14 +8374,13 @@ Magentoのインストールは、ドライランモードで実行されます
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8199,7 +8417,7 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8227,14 +8445,13 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8281,7 +8498,7 @@ var/backups 内の db バックアップ・ファイルのベース名
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8309,14 +8526,13 @@ var/backups 内の db バックアップ・ファイルのベース名
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8508,7 +8724,7 @@ HTMLファイルを縮小しない。
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8536,14 +8752,13 @@ HTMLファイルを縮小しない。
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8626,7 +8841,7 @@ Magento管理 URL とフォームの「セキュリティキー」機能を使�
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8654,14 +8869,13 @@ Magento管理 URL とフォームの「セキュリティキー」機能を使�
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8690,7 +8904,7 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8718,14 +8932,13 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8787,7 +9000,7 @@ Magentoのインストールは、ドライランモードで実行されます
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8815,14 +9028,13 @@ Magentoのインストールは、ドライランモードで実行されます
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8845,7 +9057,7 @@ bin/magento store:list
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8873,14 +9085,13 @@ bin/magento store:list
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8903,7 +9114,7 @@ bin/magento store:website:list
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8931,14 +9142,13 @@ bin/magento store:website:list
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8985,7 +9195,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9013,14 +9223,13 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9084,7 +9293,7 @@ vcl を書き込むファイルのパス
 
 ### `--help`, `-h`
 
-このヘルプメッセージを表示
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9112,14 +9321,13 @@ vcl を書き込むファイルのパス
 
 ### `--ansi`
 
-ANSI 出力を強制
+ANSI 出力を強制（または無効 —no-ansi）にします
 
-- デフォルト： `false`
 - 値を受け入れない
 
 ### `--no-ansi`
 
-ANSI 出力を無効にする
+「 —ansi」オプションを無効にする
 
 - デフォルト： `false`
 - 値を受け入れない

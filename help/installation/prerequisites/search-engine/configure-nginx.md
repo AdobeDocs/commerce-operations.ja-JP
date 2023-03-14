@@ -1,9 +1,9 @@
 ---
 title: 検索エンジン用に Nginx を設定する
 description: Nginx Web サーバーを使用して検索エンジンを構成し、Adobe CommerceとMagento Open Sourceのオンプレミスインストールを行うには、次の手順に従います。
-source-git-commit: a0f2c6480edcda5540ca83835580d18f401de72f
+source-git-commit: d3cfd97450164d38fd340b538099739601573d64
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2.4.4 で OpenSearch のサポートが追加されました。OpenSearch は互換性のあるElasticsearchの分岐です。 Elasticsearch7 を設定するすべての手順は、OpenSearch に適用されます。 詳しくは、 [Elasticsearchを OpenSearch に移行](../../../upgrade/prepare/opensearch-migration.md) を参照してください。
+>2.4.4 で OpenSearch のサポートが追加されました。OpenSearch は互換性のあるElasticsearchの分岐です。 詳しくは、 [Elasticsearchを OpenSearch に移行](../../../upgrade/prepare/opensearch-migration.md) を参照してください。
 
-この節では、nginx を *安全でない* プロキシを使用して、Adobe CommerceまたはMagento Open Sourceがこのサーバーで実行している検索エンジンを使用できるようにします。 この節では、HTTP 基本認証の設定については説明しません。これについては、 [nginx との安全な通信](#secure-communication-with-nginx).
+この節では、nginx を *安全でない* プロキシを使用して、Adobe Commerceがこのサーバーで実行されている検索エンジンを使用できるようにします。 この節では、HTTP 基本認証の設定については説明しません。これについては、 [nginx との安全な通信](#secure-communication-with-nginx).
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ include /etc/nginx/conf.d/*.conf;
 
 ## nginx との安全な通信
 
-このセクションでは、 [HTTP 基本認証](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) セキュリティで保護されたプロキシを使用します。 TLS と HTTP Basic 認証を併用すると、Elasticsearch、Adobe Commerce、Magento Open Sourceサーバーとの通信が傍受されるのを防ぐことができます。
+このセクションでは、 [HTTP 基本認証](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) セキュリティで保護されたプロキシを使用します。 TLS と HTTP Basic 認証を併用すると、Elasticsearch、OpenSearch、またはお使いのアプリケーションサーバーとの通信が傍受されるのを防ぐことができます。
 
 Nginx は HTTP Basic 認証をネイティブにサポートしているので、例えば、HTTP Basic 認証をオーバーにすることをお勧めします。 [ダイジェスト認証](https://www.nginx.com/resources/wiki/modules/auth_digest/)：実稼動環境ではお勧めしません。
 

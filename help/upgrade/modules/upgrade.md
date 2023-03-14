@@ -1,9 +1,9 @@
 ---
 title: モジュールと拡張機能のアップグレード
 description: コマンドラインインターフェイスと Composer を使用して、Adobe CommerceおよびMagento Open Sourceモジュールと拡張機能をアップグレードします。
-source-git-commit: c619bff9785d22298bc49e2ac9874480ff7a320b
+source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 Adobeがすべて削除されました [VBEs](https://devdocs.magento.com/extensions/vendor/) 2.4.4.ベンダーは、Adobe Commerce Marketplace で引き続きこれらの拡張機能をサポートします。
 
-Adobe CommerceおよびMagento Open Source2.4.4 以降でこれらの拡張機能を引き続き使用する場合は、 `composer.json` ファイル _前_ 2.4.4 にアップグレードします。使用するパッケージ名とバージョンについては、ベンダーにお問い合わせください。
+これらの拡張機能をAdobe Commerce 2.4.4 以降で引き続き使用する場合は、 `composer.json` ファイル _前_ 2.4.4 にアップグレードします。使用するパッケージ名とバージョンについては、ベンダーにお問い合わせください。
 
 詳しくは、次のAdobe Commerce Marketplace リストを参照してください。
 

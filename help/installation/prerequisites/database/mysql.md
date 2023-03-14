@@ -1,9 +1,9 @@
 ---
 title: MySQL ガイドライン
 description: MySQL と MariaDB をインストールして、Adobe CommerceとMagento Open Sourceのオンプレミスインストール用に設定するには、次の手順に従います。
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: c65217cd277be5226681ef239d6a3cf34c251a9f
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe _強く_ では、データベースを設定する際に、次の標準�
 
 >[!WARNING]
 >
->Adobe CommerceとMagento Open Sourceは現在 `CREATE TEMPORARY TABLE` 取引内の明細書 ( [互換性がない](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) データベース実装では、GTID ベースのレプリケーションを使用します ( 例： [Google Cloud SQL 第 2 世代インスタンス](https://cloud.google.com/sql/docs/features#differences). Cloud SQL 8.0 の場合は、MySQL を代わりに使用すると考えてください。
+>Adobe Commerceは現在 `CREATE TEMPORARY TABLE` 取引内の明細書 ( [互換性がない](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) データベース実装では、GTID ベースのレプリケーションを使用します ( 例： [Google Cloud SQL 第 2 世代インスタンス](https://cloud.google.com/sql/docs/features#differences). Cloud SQL 8.0 の場合は、MySQL を代わりに使用すると考えてください。
 
 >[!NOTE]
 >
@@ -198,7 +198,4 @@ MySQL データベースインスタンスを設定するには：
 >
 >Adobe Commerce on cloud infrastructure プロジェクトの場合、 `explicit_defaults_for_timestamp` MySQL (MariaDB) の設定のデフォルト値はです。 _オフ_.
 
-MariaDB 10.4 でのインデックス再作成は、他の MariaDB または MySQL バージョンと比べて時間がかかります。 インデックスの再作成を高速化するには、次の MariaDB 設定パラメーターを設定することをお勧めします。
-
-* optimizer_switch=&#39;rowid_filter=off&#39;
-* optimizer_use_condition_selectivity = 1
+{{$include /help/_includes/maria-db-config.md}}

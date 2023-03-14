@@ -2,9 +2,9 @@
 title: パフォーマンスの最適化Recommendations
 description: 次の推奨事項に従って、Adobe Commerce実装のパフォーマンスを最適化します。
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
+source-git-commit: 821ef18c1b0f00a6b9574be968ad76f0c230335c
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Message Queue Framework（MQF；メッセージキューフレームワーク）
 
 ### 検索 {#search-heading}
 
-ElasticsearchはAdobe Commerceバージョン 2.4 以降で必要になりますが、2.4 以前のバージョンで有効にすることもお勧めします。
+Adobe Commerceバージョン 2.4 以降ではElasticsearch（または OpenSearch）が必要になりますが、2.4 以前のバージョンで有効にすることもお勧めします。
 
 ## オペレーティングモデル
 

@@ -1,9 +1,9 @@
 ---
 title: 機密性の高いシステム固有のパス
 description: システム固有の設定値と機密設定値の一覧を参照してください。
-source-git-commit: 019d638403f2dc3e170a56842335da203126d8a6
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '3711'
+source-wordcount: '3702'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 0%
 | HTTP のみを使用 | `web/cookie/cookie_httponly` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) |
 | Cookie 制限モード | `web/cookie/cookie_restriction` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### 通貨の設定に関する機密性とシステム固有のパス
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | エラーの電子メール受信者 | `currency/import/error_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### メールアドレスを機密性の高いパスとシステム固有のパスに保存
 
@@ -82,7 +82,7 @@ ht-degree: 0%
 | 送信者名 | `trans_email/ident_custom2/name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 | 送信者の E メール | `trans_email/ident_custom2/email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### 連絡先の機密性が高く、システム固有のパス
 
@@ -94,22 +94,22 @@ ht-degree: 0%
 | メール送信者 | `contact/email/sender_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 | メールテンプレート | `contact/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-### New Relic のレポート機密性の高いシステム固有のパス
+### New Relicでの機密性の高いシステム固有のパスのレポート作成
 
-これらの設定値は、 **ストア** /設定/ **設定** > **一般** > **New Relic レポート**.
+これらの設定値は、 **ストア** /設定/ **設定** > **一般** > **New Relic Reporting**.
 
 | 名前 | 設定パス | コマースのみ？ | 暗号化？ | システム固有？ | 敏感？ |
 |--------------|--------------|--------------|--------------|--------------|--------------|
-| New Relic アカウント ID | `newrelicreporting/general/account_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
-| New Relic アプリケーション ID | `newrelicreporting/general/app_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
+| New Relicアカウント ID | `newrelicreporting/general/account_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
+| New Relic Application ID | `newrelicreporting/general/app_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 | New Relic API キー | `newrelicreporting/general/api` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![暗号化済み](/help/assets/configuration/cloud-enc.png) |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 | インサイト API キー | `newrelicreporting/general/insights_insert_key` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![暗号化済み](/help/assets/configuration/cloud-enc.png) |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 | New Relic API URL | `newrelicreporting/general/api_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) | ![機密](/help/assets/configuration/cloud-sens.png) |
 | インサイト API URL | `newrelicreporting/general/insights_api_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## お客様は、カテゴリーに依存するパスとシステム固有のパスを使用
 
@@ -123,7 +123,7 @@ ht-degree: 0%
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | デフォルトの電子メールドメイン | `customer/create_account/email_domain` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## カタログカテゴリ
 
@@ -149,8 +149,22 @@ ht-degree: 0%
 | ElasticsearchHTTP ユーザ名 | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) |
 | ElasticsearchHTTP パスワード | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) |
 | Elasticsearchサーバーのタイムアウト | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) |
+| ElasticsearchHTTP ユーザ名 | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| ElasticsearchHTTP パスワード | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| Elasticsearchサーバーのタイムアウト | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| OpenSearch Server ホスト名 | `catalog/search/opensearch_server_hostname` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) | ![機密](/help/assets/configuration/cloud-sens.png) |
+| OpenSearch サーバーポート | `catalog/search/opensearch_server_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) | ![機密](/help/assets/configuration/cloud-sens.png) |
+| OpenSearch インデックスのプレフィックス | `catalog/search/opensearch_index_prefix` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) | ![機密](/help/assets/configuration/cloud-sens.png) |
+| OpenSearch HTTP Auth の有効化 | `catalog/search/opensearch_enable_auth` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| OpenSearch HTTP ユーザー名 | `catalog/search/opensearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| OpenSearch HTTP パスワード | `catalog/search/opensearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| OpenSearch Server タイムアウト | `catalog/search/opensearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
+
+>[!NOTE]
+>
+>OpenSearch 設定は、Adobe Commerce 2.4.6 で導入されました。
 
 ### インベントリに依存するパスとシステム固有のパス
 
@@ -160,7 +174,7 @@ ht-degree: 0%
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Google API キー | `cataloginventory/source_selection_distance_based_google/api_key` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![暗号化済み](/help/assets/configuration/cloud-enc.png) |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### XML サイトマップの機密パスとシステム固有のパス
 
@@ -170,7 +184,7 @@ ht-degree: 0%
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | エラーの電子メール受信者 | `sitemap/generate/error_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 販売カテゴリ
 
@@ -190,7 +204,7 @@ ht-degree: 0%
 | 住所行 2 | `shipping/origin/street_line2` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 | ライブアカウント | `carriers/ups/is_account_live` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### セールスメールの機密性が高く、システム固有のパス
 
@@ -208,7 +222,7 @@ ht-degree: 0%
 | クレジットメモコメントの電子メールコピーの送信先 | `sales_email/creditmemo_comment/copy_to` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 | ピックアップ準備完了メールコピーの送信先 | `sales_email/temando_pickup/copy_to` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### チェックアウトの機密性が高いパスとシステム固有のパス
 
@@ -218,7 +232,7 @@ ht-degree: 0%
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | 支払い失敗メールコピーの送信先 | `checkout/payment_failed/copy_to` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Google API の機密パスとシステム固有のパス
 
@@ -228,7 +242,7 @@ ht-degree: 0%
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | コンテナ ID | `google/analytics/container_id` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### 配信方法に応じたパスとシステム固有のパス
 
@@ -259,7 +273,7 @@ ht-degree: 0%
 | ゲートウェイ URL | `carriers/dhl/gateway_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 | サンドボックスモード | `carriers/fedex/sandbox_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### セールスに関する機密性の高いパスとシステム固有のパス
 
@@ -279,7 +293,7 @@ ht-degree: 0%
 | RMA コメントの電子メールコピーの送付先 | `sales_email/magento_rma_comment/copy_to` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 | RMA コメントの電子メールコピーの送付先 | `sales_email/magento_rma_customer_comment/copy_to` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Google API パス
 
@@ -289,7 +303,7 @@ ht-degree: 0%
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | アカウント番号 | `google/analytics/account` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 詳細カテゴリ
 
@@ -304,7 +318,7 @@ ht-degree: 0%
 | カスタム管理 URL | `admin/url/custom` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 | カスタム管理パス | `admin/url/custom_path` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### システムに依存するパスとシステムに固有のパス
 
@@ -316,7 +330,7 @@ ht-degree: 0%
 | アクセスリスト | `system/full_page_cache/varnish/access_list` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 | エラーメール送信者 | `system/magento_scheduled_import_export_log/error_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### 開発者に依存するパスとシステムに固有のパス
 
@@ -326,7 +340,7 @@ ht-degree: 0%
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | 許可される IP（コンマ区切り） | `dev/restrict/allow_ips` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 詳細カテゴリ
 
@@ -343,7 +357,7 @@ ht-degree: 0%
 | バックエンドホスト | `system/full_page_cache/varnish/backend_host` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) | ![機密](/help/assets/configuration/cloud-sens.png) |
 | バックエンドポート | `system/full_page_cache/varnish/backend_port` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### 開発者パス
 
@@ -353,7 +367,7 @@ ht-degree: 0%
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | JS エラーをセッションストレージキーに記録 | `dev/js/session_storage_key` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 支払いに関する機密性の高いパスとシステム固有のパス
 
@@ -365,7 +379,7 @@ ht-degree: 0%
 |--------------|--------------|--------------|--------------|
 | 商家の国 | `paypal/general/merchant_country` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 >[!INFO]
 >
@@ -386,7 +400,7 @@ ht-degree: 0%
 | デバッグモード | `payment/paypal_billing_agreement/debug` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) |
 | SFTP 資格情報 | `payment_all_paypal/express_checkout/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### PayPal Payflow Pro 機密性の高いシステム固有のパス
 
@@ -405,7 +419,7 @@ ht-degree: 0%
 | SFTP 資格情報 | `payment_all_paypal/paypal_payflowpro/settings_paypal_payflow/settings_paypal_payflow_advanced/paypal_payflow_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) |
 | クレジットカード設定 | `payment_all_paypal/paypal_payflowpro/settings_paypal_payflow/heading_cc` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### PayPal Payflow Link 機密性の高いパスとシステム固有のパス
 
@@ -422,7 +436,7 @@ ht-degree: 0%
 | デバッグモード | `payment/payflow_express/debug` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) |
 | SFTP 資格情報 | `payment_all_paypal/payflow_link/settings_payflow_link/settings_payflow_link_advanced/payflow_link_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### PayPal Payments Pro 機密性の高いシステム固有のパス
 
@@ -437,7 +451,7 @@ ht-degree: 0%
 | サンドボックスモード | `paypal/wpp/sandbox_flag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) |
 | SFTP 資格情報 | `payment_all_paypal/payments_pro_hosted_solution_without_bml/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### PayPal Payments Pro ホスト型およびシステム固有のパス
 
@@ -447,7 +461,7 @@ ht-degree: 0%
 | SFTP 資格情報 | `payment_all_paypal/payments_pro_hosted_solution/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 | SFTP 資格情報 | `payment_au/paypal_group_all_in_one/payments_pro_hosted_solution_au/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Braintreeに依存するパスとシステムに固有のパス
 
@@ -462,7 +476,7 @@ ht-degree: 0%
 | 電話 | `payment/braintree/descriptor_phone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 | URL | `payment/braintree/descriptor_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![システム固有](/help/assets/configuration/cloud-env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### 小切手/通貨注文パス
 
@@ -471,7 +485,7 @@ ht-degree: 0%
 | 小切手の送信先 | `payment/checkmo/mailing_address` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 | 小切手の送信先 | `payment_us/checkmo/mailing_address` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### 国際パス
 
@@ -864,4 +878,4 @@ ht-degree: 0%
 | リモート管理者のインストール ID | `payment_it/worldpay/admin_installation_id` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 | トランザクション用の MD5 シークレット | `payment_it/worldpay/md5_secret` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

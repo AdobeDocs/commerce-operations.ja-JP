@@ -1,8 +1,8 @@
 ---
-source-git-commit: b29d19aefcea15e2242f5ac6d5850aff063a68c8
+source-git-commit: 1ca3d530051b0f59084bf370951f8f0b03dcfc28
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 69%
+source-wordcount: '271'
+ht-degree: 70%
 
 ---
 # 必要システム構成
@@ -13,8 +13,11 @@ ht-degree: 69%
       <th>
         ソフトウェアの依存関係
       </th>
+      <th>2.4.6</th>
+      <th>2.4.5-p2</th>
       <th>2.4.5-p1</th>
       <th>2.4.5</th>
+      <th>2.4.4-p3</th>
       <th>2.4.4-p2</th>
       <th>2.4.4-p1</th>
       <th>2.4.4</th>
@@ -29,6 +32,15 @@ ht-degree: 69%
   <tbody>
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
       <td>
             2.2
       </td>
@@ -66,6 +78,15 @@ ht-degree: 69%
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
+            8.4
+      </td>
+      <td>
+            7.17
+      </td>
+      <td>
+            7.17
+      </td>
+      <td>
             7.17
       </td>
       <td>
@@ -102,6 +123,15 @@ ht-degree: 69%
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
+            2.5
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
             1.2
       </td>
       <td>
@@ -137,6 +167,15 @@ ht-degree: 69%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+            10.6
+      </td>
+      <td>
+            10.4
+      </td>
+      <td>
+            10.4
+      </td>
       <td>
             10.4
       </td>
@@ -177,31 +216,40 @@ ht-degree: 69%
             8.0
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
+      </td>
+      <td>
+            8.0*
+      </td>
+      <td>
+            8.0*
+      </td>
+      <td>
+            8.0*
       </td>
       <td>
             5.7, 8.0
@@ -209,6 +257,15 @@ ht-degree: 69%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
+      <td>
+            8.1
+      </td>
+      <td>
+            8.1
+      </td>
+      <td>
+            8.1
+      </td>
       <td>
             8.1
       </td>
@@ -261,6 +318,15 @@ ht-degree: 69%
             3.9
       </td>
       <td>
+            3.9
+      </td>
+      <td>
+            3.9
+      </td>
+      <td>
+            3.9
+      </td>
+      <td>
             3.8
       </td>
       <td>
@@ -281,6 +347,15 @@ ht-degree: 69%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td>
+            7.0
+      </td>
+      <td>
+            6.2
+      </td>
+      <td>
+            6.2
+      </td>
       <td>
             6.2
       </td>
@@ -318,10 +393,19 @@ ht-degree: 69%
     <tr>
       <td><span class="uicontrol">[!DNL Varnish]</span></td>
       <td>
+            7.1
+      </td>
+      <td>
+            7.1
+      </td>
+      <td>
             7.0
       </td>
       <td>
             7.0
+      </td>
+      <td>
+            7.1
       </td>
       <td>
             7.0
@@ -353,6 +437,15 @@ ht-degree: 69%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Apache]</span></td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
       <td>
             2.4
       </td>
@@ -422,9 +515,27 @@ ht-degree: 69%
       <td>
             1.18
       </td>
+      <td>
+            1.18
+      </td>
+      <td>
+            1.18
+      </td>
+      <td>
+            1.18
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
       <td>
             8.0
       </td>
@@ -489,6 +600,15 @@ ht-degree: 69%
             ✔️
       </td>
       <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
           --
       </td>
       <td>
@@ -497,6 +617,15 @@ ht-degree: 69%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
+      <td>
+            3.9.16
+      </td>
+      <td>
+            3.9.13
+      </td>
+      <td>
+            3.9.13
+      </td>
       <td>
             3.9.13
       </td>
@@ -534,6 +663,15 @@ ht-degree: 69%
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
       <td>
+            Redis 6.2
+      </td>
+      <td>
+            レディス 6
+      </td>
+      <td>
+            レディス 6
+      </td>
+      <td>
             レディス 6
       </td>
       <td>
@@ -570,10 +708,19 @@ ht-degree: 69%
     <tr>
       <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
       <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
             7.9
       </td>
       <td>
             7.9
+      </td>
+      <td>
+          --
       </td>
       <td>
             7.9
@@ -605,6 +752,15 @@ ht-degree: 69%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
       <td>
             1.2
       </td>
@@ -645,3 +801,7 @@ ht-degree: 69%
 >[!IMPORTANT]
 >
 >クラウドインフラストラクチャ上のAdobe Commerceのサービスバージョンと互換性のサポートは、クラウドインフラストラクチャ上にデプロイされたバージョンによって決まり、Adobe Commerceオンプレミスデプロイメントでサポートされるバージョンとは異なる場合があります。 詳しくは、 [サポートされるソフトウェアとサービス](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) 内 _クラウドガイド_.
+
+>[!NOTE]
+>
+><sup>*</sup>Adobe Commerce 2.4.5 以前では、MySQL 8.0.28 以前のみがサポートされています。

@@ -2,9 +2,9 @@
 title: クラウドインフラストラクチャテクノロジ
 description: クラウドインフラストラクチャ上のAdobe Commerceで使用するテクノロジーのコレクションについて詳しく見てみましょう。
 exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 683ce0a72aca0319ade2e4ccfd7a8e541a228156
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,8 @@ ht-degree: 0%
 - **レディス**:1 台のサーバがアクティブで、残りの 2 台がレプリカとして存在する VM ごとに 1 台のサーバ。
 
 - **Elasticsearch**— Adobe Commerceバージョン 2.2.x 以降を検索します。
+
+- **OpenSearch**— Adobe Commerceバージョン 2.4.6 以降を検索します。
 
 - **Galera** — 各データベースの一意の ID に対して 3 つの自動増分設定を持つ、ノードごとに 1 つの MariaDB MySQL データベースを持つデータベースクラスタ。
 

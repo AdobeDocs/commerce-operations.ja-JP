@@ -1,9 +1,9 @@
 ---
 title: Adobe CommerceとMagento Open Sourceのリリースノート
 description: 特定のAdobe CommerceおよびMagento Open Sourceリリースの情報の場所について説明します。
-source-git-commit: d63d1dd03cbf166f6fbce1df7113d1e861363f28
+source-git-commit: da6741586d0fb8e029ee5a9342e1299176df298e
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ ht-degree: 0%
         <p>Adobe CommerceおよびMagento Open Sourceソフトウェアを簡単に検索および使用できるように設計されたツールの最新の改善点について説明します。</p>
           <ul>
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">AdobeAPP Builder 開発者用の API メッシュ</a></li>
+            <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe CommerceのAdobe I/Oイベント</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">品質パッチツール</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">サイト全体分析ツール</a></li>
             <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">アップグレード互換性ツール</a></li>

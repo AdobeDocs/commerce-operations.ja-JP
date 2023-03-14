@@ -1,9 +1,9 @@
 ---
 title: Elasticsearchから OpenSearch への移行
 description: Adobe CommerceとMagento Open Sourceのオンプレミスインストールに使用する検索エンジンの置き換えについて説明します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 OpenSearch は、Elasticsearchのライセンス変更後に作成されたElasticsearch7.10.2のオープンソースフォークです。
 
-2.4.4、2.4.3-p2、2.3.7-p3 の時点で、Adobe CommerceとMagento Open Sourceは OpenSearch をサポートしています。 オンプレミスでのインストールでは、クラウドインフラストラクチャ上のAdobe Commerceではサポートされなくなりましたが、Elasticsearchは引き続きサポートされます。
+2.4.4、2.4.3-p2、2.3.7-p3 の時点で、Adobe CommerceとMagento Open Sourceは OpenSearch をサポートしています。 オンプレミスでのインストールでは、クラウドインフラストラクチャ上のAdobe Commerceではサポートされなくなりましたが、Elasticsearchは引き続きサポートされます。 バージョン 2.4.6 以降 OpenSearch には、管理者設定の独自のモジュールとフィールドがあります。
 
 ## 移行パス
 

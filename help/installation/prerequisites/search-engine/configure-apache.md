@@ -1,9 +1,9 @@
 ---
 title: 検索エンジン用に Apache を設定
 description: Apache Web サーバーと共に検索エンジンを設定し、Adobe CommerceとMagento Open Sourceのオンプレミスインストールを行うには、次の手順に従います。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: d3cfd97450164d38fd340b538099739601573d64
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2.4.4 で OpenSearch のサポートが追加されました。OpenSearch は互換性のあるElasticsearchの分岐です。 Elasticsearch7 を設定するすべての手順は、OpenSearch に適用されます。 詳しくは、 [Elasticsearchを OpenSearch に移行](../../../upgrade/prepare/opensearch-migration.md) を参照してください。
+>2.4.4 で OpenSearch のサポートが追加されました。OpenSearch は互換性のあるElasticsearchの分岐です。 詳しくは、 [Elasticsearchを OpenSearch に移行](../../../upgrade/prepare/opensearch-migration.md) を参照してください。
 
-この節では、Apache を *安全でない* プロキシを使用して、Adobe CommerceまたはMagento Open Sourceがこのサーバーで実行している検索エンジンを使用できるようにします。 この節では、HTTP 基本認証の設定については説明しません。これについては、 [Apache との安全な通信](#secure-communication-with-apache).
+この節では、Apache を *安全でない* プロキシを使用して、Adobe Commerceがこのサーバーで実行されている検索エンジンを使用できるようにします。 この節では、HTTP 基本認証の設定については説明しません。これについては、 [Apache との安全な通信](#secure-communication-with-apache).
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### Apache との安全な通信
 
-このセクションでは、 [HTTP 基本認証](https://httpd.apache.org/docs/2.2/howto/auth.html). TLS と HTTP Basic 認証を併用すると、Elasticsearchやアプリケーションサーバーとの通信が傍受されるのを防ぐことができます。
+このセクションでは、 [HTTP 基本認証](https://httpd.apache.org/docs/2.2/howto/auth.html). TLS と HTTP Basic 認証を併用すると、Elasticsearch、OpenSearch、またはお使いのアプリケーションサーバーとの通信が傍受されるのを防ぐことができます。
 
 この節では、Apache サーバーにアクセスできるユーザーを指定する方法について説明します。
 
@@ -188,7 +188,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
        Allow from all
    
        AuthType Basic
-       AuthName "Elastic Server"
+       AuthName "Elasticsearch Server" # or OpenSearch Server
        AuthBasicProvider file
        AuthUserFile /usr/local/apache/password/.htpasswd_elasticsearch
        Require valid-user

@@ -1,10 +1,10 @@
 ---
 user-guide-title: リリース情報
-user-guide-description: Adobe CommerceとMagento Open Sourceのリリース
-source-git-commit: 841c6861c6b7a7341f334ba449b6270b31a34e94
+user-guide-description: Adobe Commerceのパッチとサービスに関するすべてのリリース情報に 1 か所でアクセスできます。
+source-git-commit: 1ca3d530051b0f59084bf370951f8f0b03dcfc28
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '92'
+ht-degree: 15%
 
 ---
 
@@ -43,8 +43,7 @@ ht-degree: 0%
 - [リリース済みバージョン](versions.md)
 - [機能（バージョン別）](features.md)
 - [製品の可用性](product-availability.md)
-- [製品ロードマップ](product-roadmap.md)
-- [ベータプログラム](beta-program.md)
+- [ベータリリース](beta.md)
 - 計画とポリシー {#planning}
    - [ライフサイクルポリシー](lifecycle-policy.md)
    - [バージョン管理ポリシー](versioning-policy.md)

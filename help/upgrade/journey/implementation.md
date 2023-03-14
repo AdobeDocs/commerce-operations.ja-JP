@@ -1,9 +1,9 @@
 ---
 title: アップグレード実装
-description: Adobe CommerceプロジェクトとMagento Open Sourceプロジェクトのアップグレード実装の様々なフェーズについて説明します。
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+description: Adobe Commerceプロジェクトのアップグレード実装の様々なフェーズについて説明します。
+source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '824'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 詳細な分析に含めることのできる項目を次に示します。
 
-- **ターゲットリリースの範囲**— [コマース DevDocs](https://devdocs.magento.com) パートナーリリースウェビナーには、target のアップグレードに関して知っておく必要のあるすべての詳細情報が記載されています。
+- **ターゲットリリースの範囲**— [Experience League](../../release/release-notes/overview.md) パートナーリリースウェビナーには、target のアップグレードに関して知っておく必要のあるすべての詳細情報が記載されています。
 
 - **[!DNL Upgrade Compatibility Tool]結果** — このツールを使用すると、現在のコードを対象バージョンのコードと比較し、対処する必要のあるすべての問題のレポートを作成することで、アップグレードを迅速かつ簡単におこなうことができます。 詳しくは、 [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). レポートの主な詳細は次のとおりです。
 
@@ -38,13 +38,13 @@ ht-degree: 1%
 
    | サービス | 現在のバージョン | へのアップグレード | メモ |
    |-----------------|-----------------|------------|----------------------------------------------------------|
-   | PHP | 7.2.33 | 8.1 |  |
-   | レディス | 5.05 | 6.0 |  |
-   | [!DNL RabbitMQ] | 3.7 | 3.8 | 現在は使用されていませんが、使用を検討する必要があります |
-   | MariaDB （クラウド） | 10.2.33 | 10.4 |  |
-   | MySQL | 8.0 |  |  |
-   | コンポーザー | 1.9.2 | 2.0 |  |
-   | Elasticsearch | 7.7 | 7.10 |  |
+   | PHP | 7.4 | 8.1 |  |
+   | レディス | 6.0 | 6.2 |  |
+   | [!DNL RabbitMQ] | 3.8 | 3.9 | 現在は使用されていませんが、使用を検討する必要があります |
+   | MariaDB （クラウド） | 10.4 | 10.6 |  |
+   | MySQL | 8.0 | -/-/ |  |
+   | コンポーザー | 1.9.2 | 2.2 |  |
+   | Elasticsearch | 7.10 | 7.17 |  |
 
 - **拡張機能とサードパーティモジュール** — このテーブルテンプレートを使用して、拡張機能のステータスとカスタマイズを理解し、戦略的な決定をおこない、アクションを定義できます。 これは、Adobe CommerceやMagento Open Sourceに固有の拡張機能を置き換えて、プロジェクトの複雑さを最小限に抑える機会です。 以下を使用： `bin/magento module:status` コマンドを使用して、モジュールと拡張機能のリストを表示できます。
 
@@ -60,7 +60,7 @@ ht-degree: 1%
 
 - **更新が必要な composer.json 内のコンポーザーパッケージと依存関係。**
 
-さらに、パートナーは [Adobe Commerce Beta Program](https://devdocs.magento.com/release/beta-program.html) プレリリース版の機会に応じて、今後のリリースのコードに早期にアクセスできます。 コードに早期にアクセスできるので、GA(General Availability) の日付までにアップグレードを完了するのに十分な時間を開発者が用意できます。 ベータ版コードは通常、GA 日の 5 週間前にリリースされ、プレリリースは 2 週間前にリリースされます。 バージョン 2.4.4 では、Adobeは GA 日の 5 ヶ月前にベータコードのリリースを開始したので（2022 年 3 月 8 日）、パートナーは今すぐそのアップグレードの準備を開始できます。 [プログラムへの新規登録](https://community.magento.com/t5/Magento-DevBlog/BREAKING-NEWS-2-4-4-beta-releases-are-coming-soon/ba-p/484310).
+さらに、パートナーは [Adobe Commerceベータリリース](../../release/beta.md) プレリリース版の機会に応じて、今後のリリースのコードに早期にアクセスできます。 コードに早期にアクセスできるので、GA(General Availability) の日付までにアップグレードを完了するのに十分な時間を開発者が用意できます。 ベータ版コードは通常、GA 日の 5 週間前にリリースされ、プレリリースは 2 週間前にリリースされます。
 
 ## 開発と QA
 
@@ -84,4 +84,4 @@ UAT は、アップグレードの最後の段階の 1 つで、サイトの確�
 
 サイトの起動後は、Analytics データ、Google Search Console およびその他のリソースを調べて、予期しない問題がなく、すべて期待どおりに動作していることを確認します。
 
-適切に設計された監視ツールを使用して、パフォーマンスに目を向けるのは常に良いアイデアです。 サイトのパフォーマンスを監視するツールや手段は多数あるので、組織と適切に組み合わせるツールや手段を必ず選択してください。 クラウドインフラストラクチャ管理システムを使用しているAdobe Commerceのお客様には、 [New Relic](https://devdocs.magento.com/cloud/project/new-relic.html) サイトのパフォーマンスを監視する。
+適切に設計された監視ツールを使用して、パフォーマンスに目を向けるのは常に良いアイデアです。 サイトのパフォーマンスを監視するツールや手段は多数あるので、組織と適切に組み合わせるツールや手段を必ず選択してください。 クラウドインフラストラクチャ管理システムを使用しているAdobe Commerceのお客様には、 [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) サイトのパフォーマンスを監視する。

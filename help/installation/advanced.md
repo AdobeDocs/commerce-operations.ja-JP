@@ -1,9 +1,9 @@
 ---
 title: 高度なオンプレミスインストール
 description: Adobe Commerceの高度なインストールシナリオ、または所有しているインフラストラクチャのMagento Open Sourceについて説明します。
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '2327'
+source-wordcount: '2406'
 ht-degree: 0%
 
 ---
@@ -127,7 +127,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 | `--admin-lastname` | 管理者ユーザーの姓。 | はい |
 | `--admin-email` | 管理者ユーザーの電子メールアドレス。 | はい |
 | `--admin-user` | 管理者ユーザー名。 | はい |
-| `--admin-password` | 管理者ユーザーのパスワード。 パスワードは 7 文字以上で、英字および数字を少なくとも 1 文字含める必要があります。 より長く、より複雑なパスワードを使用することをお勧めします。 パスワード文字列全体を一重引用符で囲みます。 例：`--admin-password='A0b9%t3g'` | はい |
+| `--admin-password` | 管理者ユーザーのパスワード。 パスワードは 7 文字以上で、英字および数字を少なくとも 1 文字含める必要があります。 より長く、より複雑なパスワードを使用することをお勧めします。 パスワード文字列全体を一重引用符で囲みます。 例： `--admin-password='A0b9%t3g'` | はい |
 
 **サイトおよびデータベースの構成オプション：**
 
@@ -161,14 +161,21 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 | 名前 | 値 | 必須？ |
 |--- |--- |--- |
-| `--search-engine` | 検索エンジンとして使用するElasticsearchまたは OpenSearch のバージョン。 指定できる値は次のとおりです。 `elasticsearch7`, `elasticsearch6`、および `elasticsearch5`. デフォルトはです。 `elasticsearch7`. OpenSearch を使用するには、次を指定します。 `elasticsearch7`. Elasticsearch5 は非推奨（廃止予定）となったので、お勧めしません。 | いいえ |
-| `--elasticsearch-host` | 検索エンジンが実行されているホスト名または IP アドレス。 デフォルトはです。 `localhost`. | いいえ |
-| `--elasticsearch-port` | 受信 HTTP リクエストのポート。 デフォルトはです。 `9200`. | いいえ |
-| `--elasticsearch-index-prefix` | 検索エンジンインデックスを識別するプレフィックス。 デフォルトはです。 `magento2`. | いいえ |
+| `--search-engine` | 検索エンジンとして使用するElasticsearchまたは OpenSearch のバージョン。 デフォルトはです。 `elasticsearch7`. Elasticsearch5 は非推奨（廃止予定）となったので、お勧めしません。 | いいえ |
+| `--elasticsearch-host` | Elasticsearchが実行されているホスト名または IP アドレス。 デフォルトはです。 `localhost`. | いいえ |
+| `--elasticsearch-port` | 受信 HTTP リクエストのElasticsearchポート。 デフォルトはです。 `9200`. | いいえ |
+| `--elasticsearch-index-prefix` | Elasticsearch検索インデックスを識別するプレフィックス。 デフォルトはです。 `magento2`. | いいえ |
 | `--elasticsearch-timeout` | システムがタイムアウトするまでの秒数。 デフォルトはです。 `15`. | いいえ |
-| `--elasticsearch-enable-auth` | 検索エンジンサーバーでの認証を有効にします。 デフォルトはです。 `false`. | いいえ |
-| `--elasticsearch-username` | 検索エンジンを認証するためのユーザー ID | いいえ（認証が有効になっていない場合） |
-| `--elasticsearch-password` | 検索エンジンを認証するためのパスワード | いいえ（認証が有効になっていない場合） |
+| `--elasticsearch-enable-auth` | 認証サーバーでのElasticsearchを有効にします。 デフォルトはです。 `false`. | いいえ |
+| `--elasticsearch-username` | サーバーに対して認証するElasticsearchID。 | いいえ（認証が有効になっていない場合） |
+| `--elasticsearch-password` | Elasticsearchserver に対して認証するパスワード。 | いいえ（認証が有効になっていない場合） |
+| `--opensearch-host` | OpenSearch が実行されているホスト名または IP アドレス。 デフォルトはです。 `localhost`. | いいえ |
+| `--opensearch-port` | 受信 HTTP リクエストの OpenSearch ポート。 デフォルトはです。 `9200`. | いいえ |
+| `--opensearch-index-prefix` | OpenSearch 検索インデックスを識別するプレフィックス。 デフォルトはです。 `magento2`. | いいえ |
+| `--opensearch-timeout` | システムがタイムアウトするまでの秒数。 デフォルトはです。 `15`. | いいえ |
+| `--opensearch-enable-auth` | OpenSearch サーバーでの認証を有効にします。 デフォルトはです。 `false`. | いいえ |
+| `--opensearch-username` | OpenSearch サーバーに対して認証するユーザー ID。 | いいえ（認証が有効になっていない場合） |
+| `--opensearch-password` | OpenSearch サーバーに対する認証用のパスワード。 | いいえ（認証が有効になっていない場合） |
 
 **[!DNL RabbitMQ]設定オプション：**
 
@@ -231,7 +238,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 * デフォルトの言語は `en_US` （米国英語）
 * デフォルトの通貨は米ドルです
 * デフォルトのタイムゾーンは米国中部（アメリカ/シカゴ）です。
-* OpenSearch 1.2 がにインストールされている `es-host.example.com` とは、ポート 9200 で接続します。
+* OpenSearch 1.2 がにインストールされている `os-host.example.com` とは、ポート 9200 で接続します。
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -239,8 +246,8 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \
 --admin-user=admin --admin-password=admin123 --language=en_US \
 --currency=USD --timezone=America/Chicago --use-rewrites=1 \
---search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
---elasticsearch-port=9200
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200
 ```
 
 インストールが成功したことを示す次の表示に示すメッセージです。
@@ -261,8 +268,8 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=1 \
---search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
---elasticsearch-port=9200
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200
 ```
 
 インストールが成功した場合は、次のようなメッセージが表示されます。
@@ -303,7 +310,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 * 販売注文増分プレフィックスを使用できます `ORD$` ( 特殊文字が含まれるので [`$`]の場合、値を二重引用符で囲む必要があります )
 * セッションデータはデータベースに保存されます
 * サーバー書き換えを使用
-* Elasticsearch7 は `es-host.example.com` とは、ポート 9200 で接続します。
+* OpenSearch がにインストールされている `os-host.example.com` とは、ポート 9200 で接続します。
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -312,8 +319,8 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --admin-user=admin --admin-password=admin123 --language=en_US \
 --currency=USD --timezone=America/Chicago --cleanup-database \
 --sales-order-increment-prefix="ORD$" --session-save=db --use-rewrites=1 \
---search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
---elasticsearch-port=9200
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200
 ```
 
 >[!NOTE]

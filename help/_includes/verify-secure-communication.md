@@ -1,8 +1,8 @@
 ---
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 1%
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 # 通信がセキュリティで保護されていることを確認します
@@ -68,8 +68,8 @@ Connection: keep-alive
 
 ## 管理での HTTP 基本認証の設定
 
-同じタスクを実行します ( [検索エンジンの設定](../configuration/search/configure-search-engine.md) *例外* クリック **[!UICONTROL Yes]** から **[!UICONTROL Enable Elasticsearch HTTP Auth]** の一覧を開き、指定したフィールドにユーザー名とパスワードを入力します。
+同じタスクを実行します ( [検索エンジンの設定](../configuration/search/configure-search-engine.md) *例外* クリック **[!UICONTROL Yes]** から **[!UICONTROL Enable HTTP Auth]** の一覧を開き、指定したフィールドにユーザー名とパスワードを入力します。
 
 クリック **[!UICONTROL Test Connection]** 正常に動作するようにし、 **[!UICONTROL Save Config]**.
 
-続行する前に、Magentoキャッシュをフラッシュし、インデックスを再作成する必要があります。
+続行する前に、キャッシュをフラッシュしてインデックスを再作成する必要があります。

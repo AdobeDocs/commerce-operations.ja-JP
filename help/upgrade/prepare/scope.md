@@ -1,9 +1,9 @@
 ---
 title: アップグレード範囲について
 description: Adobe Commerce、Magento Open Sourceのカスタムモジュール、またはサードパーティの拡張機能に影響を与える可能性のある、リリースにおける後方互換性のない変更について説明します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Adobe Commerce Marketplace の新しい互換性ポリシーにより、 _すべ
 
 ### ツールをダウンロード
 
-ツールをダウンロードするには、Composer を使用します。 PHP 7.3 以降、少なくとも 2GB の RAM、Node.js（GraphQL 互換性を確認している場合）、およびAdobe Commerceライセンスが必要です。
+ツールをダウンロードするには、Composer を使用します。 PHP 7.3 以降、少なくとも 2GB の RAM、Node.js(GraphQLの互換性を確認している場合 )、Adobe Commerceライセンスが必要です。
 
 ```bash
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
@@ -54,7 +54,7 @@ bin/uct upgrade:check <dir> -c <coming version>
 
 >[!NOTE]
 >
-> この `<dir>` 引数は、コードベースが保存されるディレクトリです。 この `-c` オプションは、コードベースと指定したバージョン（例：2.4.4）を比較します。
+> この `<dir>` 引数は、コードベースが保存されるディレクトリです。 この `-c` オプションは、コードベースと指定したバージョンを比較します。
 
 チームが対処する最も重要な問題を特定するには、次の手順に従います。
 
