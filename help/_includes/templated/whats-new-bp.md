@@ -1,7 +1,7 @@
 ---
-source-git-commit: 449c6952a742b717c4dacb8bb6c89d8e6f12b5b0
+source-git-commit: a5d7167375328bebc6c9287731ff7bb9f74037a1
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 0%
 ## 実装のベストプラクティスの新機能
 
 このページには、表示したいと思われる最近の変更が含まれています。 このリストからは、コピー編集などのマイナーな更新がすべて除外されます。
+
+### 2023 年 3 月 10 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新済み <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">Redis 設定のベストプラクティス</a> キャッシュをセッションから分離し、圧縮を使用する方法に関する情報を含む</p>
+</td>
+      <td>ベストプラクティス</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f9d46893a25569b9cb00b45ab285758b3b74b410">f9d468</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 2023 年 2 月 11 日
 
@@ -27,46 +47,6 @@ ht-degree: 0%
 </td>
       <td>ベストプラクティス</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0efeef6f3d5276f42e4a67fe55f6108a399f45fb">0efeef</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 2023 年 1 月 31 日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>ソース</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>追加された <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">警告</a> Adobe Commerce Pro と Starter プロジェクトの間の Redis 設定の違いについて</p>
-<p><i>asrar7787 によるコミュニティの貢献</i></p></td>
-      <td>ベストプラクティス</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/78">78</a> （プルリクエスト）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2023 年 1 月 20 日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>ソース</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>SQL クエリ構文エラーを修正しました。 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html">アップグレードの前提条件</a> ベストプラクティスのトピックを参照してください。</p>
-<p><i>Zifius によるコミュニティ貢献</i></p></td>
-      <td>ベストプラクティス</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/77">77</a> （プルリクエスト）</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
