@@ -1,7 +1,7 @@
 ---
-source-git-commit: dbfb4dadf5033eb580d3d47e9b2055ddeb316461
+source-git-commit: f918da5f205b23a2e11faaa06fb0572ca72cdaa4
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -1139,6 +1139,25 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   <tbody>
     <tr>
       <th colspan="9">クイックチェックアウト</th>
+    </tr>
+    <tr>
+      <td>クイックチェックアウト 1.8.0</td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
     </tr>
     <tr>
       <td>クイックチェックアウト 1.7.0</td>
