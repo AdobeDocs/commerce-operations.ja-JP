@@ -1,7 +1,7 @@
 ---
 title: 前提条件
 description: 前提条件の手順を完了して、Adobe Commerceプロジェクトのアップグレードを準備します。
-source-git-commit: 45c544a5ec9a17ad631fce55e322e2949ecdd3c2
+source-git-commit: 5f86717d79569cac3f95a4c10a55b48f92858466
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 0%
@@ -111,7 +111,7 @@ Elasticsearch8.x のサポートは、Adobe Commerce 2.4.6 で導入されまし
 1. Adobe Commerceプロジェクトのルートディレクトリで、Composer の依存関係を更新して、 `Magento_Elasticsearch7` モジュールとインストール `Magento_Elasticsearch8` モジュール。
 
    ```bash
-   composer update magento/module-elasticsearch-8 --update-with-all-dependencies
+   composer require magento/module-elasticsearch-8 --update-with-all-dependencies
    ```
 
 1. プロジェクトコンポーネントを更新します。
