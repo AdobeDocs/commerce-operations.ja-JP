@@ -1,9 +1,9 @@
 ---
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
-source-git-commit: f1c6c816695e01fc30d0ab0a7a9c43122a130cb5
+source-git-commit: b71819d123856d03dab872a1652b325ffe7178a6
 workflow-type: tm+mt
-source-wordcount: '11145'
+source-wordcount: '11561'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,27 @@ ht-degree: 0%
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.29 {#v1-1-29}
+
+* **ACSD-49389** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) — 注文の受け取り準備ができていない場合に API から受け取り準備完了の E メールが送信される問題を修正しました。
+* **ACSD-49822** (Adobe Commerce >=2.3.7 &lt;2.4.7) - [!UICONTROL Requisition List] ページが [!UICONTROL Print Requisition List].
+* **ACSD-48771** (Adobe CommerceおよびMagento Open Source>=2.4.5 &lt;2.4.7) - column-block コンテンツタイプを古いバージョンからアップグレードする際の問題を修正しました。 [!DNL Page Builder] バージョン。
+* **ACSD-49464** (Adobe Commerce>=2.3.7 &lt;2.4.7) - orderId が異なる場合に請求書、出荷およびクレジットメモがアーカイブから戻されない問題を修正しました。
+* **ACSD-49773** (Adobe CommerceおよびMagento Open Source>=2.4.2 &lt;2.4.6) - AWS S3 をリモートストレージとして使用した場合に製品の書き出しが失敗する問題を修正しました。
+* **ACSD-49748** (Adobe Commerce>=2.3.7 &lt;2.4.7) — 招待メールを送信できない問題を修正しました。
+* **ACSD-49502** (Adobe Commerce >=2.4.3 &lt;2.4.7 の場合 ) — ダウンロード可能な製品にステージング更新が適用された後、ダウンロード可能なリンクが適切に更新されない問題を修正しました。
+* **ACSD-49527** (Adobe Commerce >=2.4.2 &lt;2.4.7) - GraphQLの会社の役割でページネーションが正しく表示されない問題を修正しました。
+* **ACSD-49706** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) — 値が選択されていない場合にビジュアルスウォッチ属性のデフォルト値が保存される問題を修正しました。
+* **ACSD-49835** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.7) — 複数選択属性のストアレベルで、「デフォルトを使用」チェックボックスの値が正しく保存されない問題を修正しました。
+* **ACSD-49898** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.6) — バンドルされた製品の価格が 1,000 を超える場合に、製品グリッドが例外をスローする問題を修正しました。
+* **ACSD-50234** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.5) — で注文があった場合に確認 E メールに誤った顧客名が表示される問題を修正しました。 [!DNL PayPal].
+* **ACSD-49960** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.7) — 顧客の注文グリッドで、日付によるフィルタリングが機能しない問題を修正しました。
+* **ACSD-49849** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.6) — お客様の電子メールが [!DNL PayPal] 次と共に注文する際に電子メールを送信 [!DNL PayPal Express] GraphQL経由
+* **ACSD-49839** (Adobe Commerce >=2.3.7 &lt;2.4.7) - SKU で製品が一重引用符または二重引用符を使用している場合に、共有カタログの価格と構造が管理でエラーをスローする問題を修正しました。
+* **ACSD-49970** (Adobe CommerceおよびMagento Open Source>=2.4.5 &lt;2.4.7) - GraphQLエラーの誤った処理を修正しました。 [!DNL New Relic] レポートがオンになっている。
+* **ACSD-50260** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.7) - GraphQL製品の検索結果が 10,000 個の結果に制限される問題を修正しました。
+* **ACSD-48813** (Adobe CommerceとMagento Open Source>=2.4.3 &lt;2.4.7) — 属性の検索の重み付けに基づいて検索で関連する結果が表示されない問題を修正しました。
 
 ## v1.1.28 {#v1-1-28}
 
