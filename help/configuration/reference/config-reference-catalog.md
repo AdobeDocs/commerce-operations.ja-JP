@@ -1,9 +1,9 @@
 ---
 title: カタログ設定パスの参照
 description: カタログ設定値の一覧を参照してください。
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+source-git-commit: e4b7ea70b96143629b245409537459ad259393e0
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,7 @@ ht-degree: 0%
 | 検索Recommendations数 | `catalog/search/search_recommendations_count` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 各レコメンデーションの結果数を表示 | `catalog/search/search_recommendations_count_results_enabled` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 一致する最小キーワード数 | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 「カテゴリ/製品」URL の書き換えを生成 | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | よく読まれる検索語句 | `catalog/seo/search_terms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 製品 URL サフィックス | `catalog/seo/product_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | カテゴリ URL サフィックス | `catalog/seo/category_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -115,7 +116,7 @@ ht-degree: 0%
 | アップセル製品を表示 | `catalog/magento_targetrule/upsell_position_behavior` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | アップセル製品リストの製品のローテーションモード | `catalog/magento_targetrule/upsell_rotation_mode` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 在庫パス
 
@@ -145,7 +146,7 @@ ht-degree: 0%
 | 計算モード | `cataloginventory/source_selection_distance_based_google/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 値 | `cataloginventory/source_selection_distance_based_google/value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Visual Merchandiser のパス
 
@@ -158,7 +159,7 @@ ht-degree: 0%
 | 色属性コード | `visualmerchandiser/options/color_attribute_code` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 色の順序 | `visualmerchandiser/options/color_order` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## XML サイトマップのパス
 
@@ -182,7 +183,7 @@ ht-degree: 0%
 | 最大ファイルサイズ | `sitemap/limit/max_file_size` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Robots.txt への送信を有効にする | `sitemap/search_engines/submission_robots` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## RSS フィードのパス
 
@@ -198,7 +199,7 @@ ht-degree: 0%
 | トップレベルカテゴリ | `rss/catalog/category` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顧客の注文ステータスの通知 | `rss/order/status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 友達への電子メールのパス
 
@@ -213,4 +214,4 @@ ht-degree: 0%
 | 1 時間で送信される最大製品数 | `sendfriend/email/max_per_hour` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 送信制限 | `sendfriend/email/check_by` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
