@@ -1,9 +1,9 @@
 ---
 title: 「 [!DNL Upgrade Compatibility Tool]"
 description: 次の手順に従って、 [!DNL Upgrade Compatibility Tool] ( Adobe Commerceプロジェクトのコマンドラインインターフェイス ) を使用します。
-source-git-commit: e704748a7ceaa58a5a8d7004c81ac766dec4e7f1
+source-git-commit: 653d755023f96c0a6acc312f74fd4a0292f13a73
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ chmod +x ./uct/bin/uct
 | `dbschema:diff` | このコマンドは、指定した 2 つのAdobe Commerceバージョン間のデータベーススキーマのすべての違いを表示します。 |
 | `core:code:changes` | このコマンドは、現在のAdobe Commerceのインストールと、バニラのクリーンインストールを比較します。 |
 | `refactor` | このコマンドを実行すると、一部の問題が自動的に修正されます。 |
-| `graphql:compare` | このコマンドは、2 つの GraphQL エンドポイントを紹介し、それらのスキーマを比較するオプションを提供します。 |
+| `graphql:compare` | このコマンドは、2 つのGraphQLエンドポイントを紹介し、それらのスキーマを比較するオプションを提供します。 |
 | `list` | このコマンドは、 [!DNL Upgrade Compatibility Tool] 使用可能なコマンド |
 | `help` | このコマンドは、使用可能なすべての `help`オプション [!DNL Upgrade Compatibility Tool]. このコマンドは、前のコマンドのオプションと同様に実行できます。 |
 
@@ -136,7 +136,7 @@ bin/uct core:code:changes <dir> <vanilla dir>
 引数は次のようになります。
 
 - `<dir>`:Adobe Commerceインストールディレクトリ。
-- `<vanilla dir>`:Adobe Commerce vanilla のインストールディレクトリ。
+- `<vanilla dir>`:Adobe Commerce vanilla インストールディレクトリ。
 
 次に使用できるオプション： `core:code:changes` コマンド：
 
@@ -182,7 +182,7 @@ bin/uct refactor <dir>
 
 ## 以下を使用： `graphql:compare` command
 
-このコマンドは、 [!DNL Upgrade Compatibility Tool] 2 つの GraphQL エンドポイントを紹介し、それらのエンドポイント間で重大で危険な変更があるかどうかをスキーマを比較するには、次の手順を実行します。
+このコマンドは、 [!DNL Upgrade Compatibility Tool] 2 つのGraphQLエンドポイントを紹介し、そのスキーマを比較して、間に重大で危険な変更がないかを調べるには、次のようにします。
 
 ```bash
 bin/uct graphql:compare <schema1> <schema2>
@@ -207,7 +207,7 @@ bin/uct graphql:compare <schema1> <schema2>
 bin/uct list
 ```
 
-## 以下を使用： `--help` command
+## 以下を使用： `help` command
 
 次の手順で [!DNL Upgrade Compatibility Tool] コマンドの一般的なオプションとヘルプ：
 
@@ -260,6 +260,7 @@ bin/uct upgrade:check --help
 - 同じ名前の 2 つのモジュールを使用しないでください。
 - フォローAdobe Commerce [コーディング規格](https://developer.adobe.com/commerce/php/coding-standards/).
 - Adobe Commerce 2.4 [アップグレードガイド](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) ベストプラクティス。
+- を実行します。 [!DNL Upgrade Compatibility Tool] から [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) 対象 [Adobe Commerce an cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} プロジェクト。
 
 ## 結果の最適化
 
