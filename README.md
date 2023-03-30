@@ -1,17 +1,17 @@
 ---
-source-git-commit: d17847a7151c5e88f763b334e1ee659ca3ca6bcf
+source-git-commit: 4b767014f325bef7e07cea11d01089206bf44caf
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 5%
+source-wordcount: '475'
+ht-degree: 0%
 
 ---
-# Adobe Commerceユーザードキュメント
+# Adobe Commerce技術ドキュメント
 
 コミュニティやドキュメントチーム以外のAdobe従業員からの投稿を歓迎します。
 
 ## Adobeオープンソース行動規範
 
-このプロジェクトでは、[アドビオープンソース行動規範](code-of-conduct.md) または [.NET Foundation 行動規範](https://dotnetfoundation.org/code-of-conduct)を採用しています。詳しくは、[投稿](contributing.md)の記事を参照してください。
+このプロジェクトでは、 [Adobeオープンソース行動規範](code-of-conduct.md) または [.NET Foundation 行動規範](https://dotnetfoundation.org/code-of-conduct). 詳しくは、 [貢献](contributing.md) 記事。
 
 ## Adobeコンテンツへの投稿について
 
@@ -33,7 +33,7 @@ Adobeコミュニティのメンバーが新しい記事を作成したり、大
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
 -->
 
-### 従業員からの大きな変更Adobe
+### Adobe従業員からの大きな変更
 
 Adobe Experience Cloudソリューションの製品チーム、プログラムマネージャーまたは開発者で、技術記事の投稿や作成が職務となっている場合は、次のプライベートリポジトリを使用する必要があります。 `https://git.corp.adobe.com/AdobeDocs`.
 
@@ -51,13 +51,6 @@ Adobe Experience Cloudソリューションの製品チーム、プログラム�
 
 * [Markdown の基本](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [印刷可能な Markdown の早見表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## ラベル
-
-公開リポジトリでは、プルリクエストに自動ラベルが割り当てられ、プルリクエストのワークフローを管理したり、プルリクエストの処理状況を知らせたりできます。
-
-* **変更が作成者に送信されました**:保留中のプル要求について作成者に通知されました。
-* **ready-to-merge**:プルリクエストレビューチームによるレビューの準備が整いました。
 
 ## テンプレート
 
