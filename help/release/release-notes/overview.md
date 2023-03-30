@@ -1,7 +1,7 @@
 ---
 title: Adobe CommerceとMagento Open Sourceのリリースノート
 description: 特定のAdobe CommerceおよびMagento Open Sourceリリースの情報の場所について説明します。
-source-git-commit: da6741586d0fb8e029ee5a9342e1299176df298e
+source-git-commit: 14724592f7dbc116b0fa71b755d7f4f711d94fb2
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
@@ -24,9 +24,9 @@ ht-degree: 0%
         <p>機能強化、セキュリティ、バグ修正、既知の問題など、Adobe CommerceとMagento Open Sourceの最新の改善点について説明します。</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">後方互換性のない変更</a></li>
-            <li><a href="commerce/2-4-5.md">Adobe Commerce</a></li>
-            <li><a href="open-source/2-4-5.md">Magento Open Source</a></li>
-            <li><a href="security/2-4-5-p1.md">セキュリティパッチ</a></li>
+            <li><a href="commerce/2-4-6.md">Adobe Commerce</a></li>
+            <li><a href="open-source/2-4-6.md">Magento Open Source</a></li>
+            <li><a href="security/2-4-5-p2.md">セキュリティパッチ</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobeセキュリティ情報</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">Adobe Commerce用 B2B</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/release-notes.html">Inventory management</a></li>
