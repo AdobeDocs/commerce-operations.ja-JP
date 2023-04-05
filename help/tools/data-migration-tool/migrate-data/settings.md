@@ -1,9 +1,9 @@
 ---
 title: データ移行設定
 description: を使用して、Magento1 からMagento2 への設定の移行を開始する方法を説明します。 [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 >[!NOTE]
 >
->このコマンドでは、すべての設定が移行されるわけではありません。 Magento2 のすべての設定を確認します。 [管理者](https://glossary.magento.com/admin) 先に進む前に
+>このコマンドでは、すべての設定が移行されるわけではありません。 先に進む前に、Magento2 管理ですべての設定を確認します。
 
 
 この `Migration completed` 設定が正常に転送された後に、メッセージが表示されます。

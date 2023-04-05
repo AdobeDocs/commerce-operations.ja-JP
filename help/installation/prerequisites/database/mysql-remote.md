@@ -1,9 +1,9 @@
 ---
 title: リモート MySQL データベース接続を設定する
 description: 次の手順に従って、Adobe CommerceとMagento Open Sourceのオンプレミスインストールでリモートデータベース接続を設定します。
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Web ノードがデータベース・サーバに接続できるようにする�
    GRANT ALL ON <local database name>.* TO <remote web node username>@<remote web node server ip address> IDENTIFIED BY '<database user password>';
    ```
 
-   以下に例を挙げます。
+   例：
 
    ```shell
    GRANT ALL ON magento_remote.* TO dbuser@192.0.2.50 IDENTIFIED BY 'dbuserpassword';
@@ -154,7 +154,7 @@ Web サーバーがクラスター化されている場合は、各 Web サー�
 
 Adobe CommerceまたはMagento Open Sourceをインストールする場合は、次の情報を指定する必要があります。
 
-* ベース [URL](https://glossary.magento.com/url) ( 別名 *ストアアドレス*) は、 *web ノード*
+* ベース URL( *ストアアドレス*) は、 *web ノード*
 * データベースホストは *リモートデータベースサーバ* IP アドレス（データベース・サーバがクラスタ化されている場合はロード・バランサ）
 * データベースのユーザー名： *ローカル web ノード* アクセス権を付与したデータベースユーザー
 * データベースのパスワードは、ローカル Web ノードのユーザーのパスワードです

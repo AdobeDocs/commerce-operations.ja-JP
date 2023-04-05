@@ -1,10 +1,10 @@
 ---
 user-guide-title: オペレーショナルプレイブック
-user-guide-description: e コマースサイトを成功させるために、ビジネスの運営をどのように準備すればよいかについて学習します。
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+user-guide-description: 企業が e コマースサイトを成功に導くための運用上の準備を整える方法を学びます。
+source-git-commit: ed6b9cb5acd35ce8213fafddcd00be1c32127a86
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 12%
+source-wordcount: '143'
+ht-degree: 0%
 
 ---
 
@@ -72,4 +72,5 @@ ht-degree: 12%
    - [クリックして収集](product/click-collect.md)
    - [PWA](product/progressive-web-app.md)
 - [チェックリストとテンプレート](checklists-templates/home.md)
+- [用語集](glossary.md)
 - [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

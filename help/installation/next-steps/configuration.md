@@ -1,9 +1,9 @@
 ---
 title: アプリケーションの設定
 description: Adobe CommerceおよびMagento Open Sourceのオンプレミスデプロイメントに必要なインストール後の設定について説明します。
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Apache Web サーバーを使用する場合、ページを正しく表示する
 
 複数の Web ノードがある場合、 *できません* web ノード間で同期がおこなわれないので、アプリケーションのデフォルトのファイルキャッシュを使用します。 つまり、1 つの Web ノード上のアクティビティは、その Web ノードのファイルシステムにのみ書き込まれます。 後続のアクティビティを別の Web ノードで実行すると、不要なファイルが書き込まれたり、エラーが発生したりする場合があります。
 
-代わりに、 [レディス](../../configuration/cache/config-redis.md) デフォルトの [キャッシュ](https://glossary.magento.com/cache) ページキャッシュに保存されます。
+代わりに、 [レディス](../../configuration/cache/config-redis.md) デフォルトのキャッシュとページキャッシュの両方に対して。
 
 ## サーバー設定
 

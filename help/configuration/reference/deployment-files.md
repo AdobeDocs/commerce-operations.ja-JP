@@ -1,9 +1,9 @@
 ---
 title: デプロイメント用の設定ファイル
 description: Commerce アプリケーションをインストールするための設定ファイルの動作を理解します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Adobe Commerceには、コンポーネントを簡単にカスタマイズし、
 
 [Magento\Framework\App\DeploymentConfig](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) は、これらのセクションへのアクセスを提供するだけですが、拡張はできません。
 
-次の階層レベルでは、各セグメントの項目は [モジュール](https://glossary.magento.com/module) 無効なモジュールを除くすべてのモジュールの設定ファイルをマージして取得するシーケンス定義。
+次の階層レベルでは、各セグメントの項目は、無効なモジュールを除き、すべてのモジュールの設定ファイルを結合して取得されるモジュールシーケンス定義に従って並べ替えられます。
 
 次の節では、デプロイメント設定の構造と内容について説明します。
 
@@ -78,6 +78,6 @@ return array (
 
 値 `1` または `0` モジュールが有効か無効かを示します。
 
-無効なモジュールは、Commerce アプリケーションで認識されません。つまり、マージ設定、依存関係インジェクション、イベント、プラグインなどには参加しません。 無効なモジュールでは [店頭](https://glossary.magento.com/storefront) または [管理者](https://glossary.magento.com/admin) ルーティングに影響を及ぼさない。
+無効なモジュールは、Commerce アプリケーションで認識されません。つまり、マージ設定、依存関係インジェクション、イベント、プラグインなどには参加しません。 無効になったモジュールはストアフロントや管理者を変更せず、ルーティングにも影響しません。
 
 無効モジュールとコードベース内の無効モジュールの唯一の実用的な違いは、無効モジュールがオートローダによって見つかり、そのクラスと定数が他のコードで再利用できる点です。

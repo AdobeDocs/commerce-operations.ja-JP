@@ -1,9 +1,9 @@
 ---
 title: 必要システム構成
 description: このリファレンスを使用して、Adobe CommerceとMagento Open Sourceのリリースでテストされた、必要なソフトウェアの依存関係を特定します。
-source-git-commit: 61a477ec6118e4a228ddbb956e613fa3bec9c91c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Adobe CommerceおよびMagento Open Sourceでは、一部の操作に次のシ�
 
 ### SSL
 
-- 有効な [セキュリティ証明書](https://glossary.magento.com/security-certificate) は HTTPS に必要です。
+- HTTPS には有効なセキュリティ証明書が必要です。
 - 自己署名 SSL 証明書はサポートされていません。
 - トランスポート層セキュリティ (TLS) の要件 — PayPal および `repo.magento.com` どちらも TLS 1.2 以降が必要です。
 

@@ -1,9 +1,9 @@
 ---
 title: データ移行のフォローアップ
 description: Magento1 からMagento2 へのデータ移行が成功したこと、およびすべての機能が期待どおりに動作していることを検証する方法について説明します。
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Magento1 の一部の動作とロジックは、Magento2 では実装が異な�
 
 ### 顧客セグメントの再保存 [Adobe Commerceのみ]
 
-移行後、顧客セグメントは [管理者](https://glossary.magento.com/admin) パネルを使用して操作を開始します。
+移行後に、顧客セグメントを導入および実行するには、Admin Panel から再保存する必要があります。
 
 ### タイムゾーンの設定
 

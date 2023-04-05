@@ -1,9 +1,9 @@
 ---
 title: オプションのソフトウェア
 description: Adobe CommerceとMagento Open Sourceのオンプレミスインストールをサポートするためにインストールできるオプションのソフトウェアの詳細を説明します。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ NTP をインストールして構成するには、次の手順に従います�
 
 ## phpinfo.php を作成します。
 
-この [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) ファイルに～に関する多くの情報が表示される [PHP](https://glossary.magento.com/php) とその拡張子。
+この [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) ファイルは、PHP とその拡張に関する多くの情報を表示します。
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ phpinfo();
 
 詳しくは、 [phpinfo マニュアルページ](https://www.php.net/manual/en/function.phpinfo.php).
 
-結果を表示するには、次を入力します [URL](https://glossary.magento.com/url) ブラウザーの場所または住所フィールドで、次の操作を実行します。
+結果を表示するには、ブラウザーの場所またはアドレスフィールドに次の URL を入力します。
 
 ```http
 http://<web server host or IP>/phpinfo.php

@@ -1,16 +1,16 @@
 ---
 title: キャッシュオプション
 description: 低レベルのキャッシュストレージへのアクセスを設定します。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
 
 # 低レベルキャッシュオプション
 
-Commerce アプリケーションは低レベルを使用します [キャッシュ](https://glossary.magento.com/cache) [前線](https://glossary.magento.com/frontend) および [バックエンド](https://glossary.magento.com/backend) キャッシュストレージへのアクセスを提供する。
+Commerce アプリケーションは、低レベルのキャッシュフロントエンドとバックエンドを使用して、キャッシュストレージへのアクセスを提供します。
 
 ## 低レベルのフロントエンドキャッシュ
 

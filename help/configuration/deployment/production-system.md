@@ -1,9 +1,9 @@
 ---
 title: 実稼動システムの設定
 description: コマースアプリケーションの実稼動システムを設定する方法を説明します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 生産マシンを設定する手順は、次のとおりです。
 
-1. Commerce をインストールした後、またはソース管理から取り込んだ後、本番サーバーにとしてログインするか、に切り替えます。 [ファイルシステム所有者](https://glossary.magento.com/magento-file-system-owner).
+1. Commerce をインストールした後、またはソース管理から取り出した後、本番サーバにファイルシステムの所有者としてログインするか、ファイルシステムの所有者に切り替えます。
 1. 作成 `~/.ssh/.composer/auth.json` まだおこなっていない場合は、
 
    ディレクトリを作成します。

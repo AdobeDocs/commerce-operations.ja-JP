@@ -1,9 +1,9 @@
 ---
 title: 分割データベースの検証
 description: コマース分割データベースの構成が正しく機能していることを確認する方法を説明します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 設定後、マスター・データベースは次のように構成されます。
 
 - メインコマースデータベース：369 テーブル
-- コマース [見積もり](https://glossary.magento.com/quote) データベース：11 テーブル
+- コマース見積もりデータベース：11 テーブル
 - コマース販売データベース：55 テーブル
 
 分割データベースが正しく動作していることを確認するには、次のタスクを実行し、データがデータベーステーブルに追加されていることを、 [phmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):

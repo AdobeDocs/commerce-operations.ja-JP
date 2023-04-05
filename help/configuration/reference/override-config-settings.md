@@ -1,9 +1,9 @@
 ---
 title: 設定の上書き
 description: 環境変数を使用して設定を上書きする方法を説明します。
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1225'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ ht-degree: 0%
 
 データベースからこれらの値を取得する手順は、次のとおりです。
 
-1. として開発システムにログインします。 [ファイルシステム所有者](https://glossary.magento.com/magento-file-system-owner) もしあなたがまだそうしていなければ
+1. ファイルシステムの所有者として開発システムにログインします（まだログインしていない場合）。
 1. 次のコマンドを入力します。
 
    ```bash

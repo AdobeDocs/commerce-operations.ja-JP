@@ -1,9 +1,9 @@
 ---
 title: Vanish を使用したキャッシュの消去
 description: キャッシュの消去が Vanrish と連携する仕組みと、それをAdobe Commerceアプリケーションの Web キャッシュアクセラレーターとして使用する方法を説明します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## ワニスのパージ
 
-基準 [Vanish 文書](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html)「A」 *パージ* は、 [キャッシュ](https://glossary.magento.com/cache) それを変種と一緒に捨てなさい」 ワニスのパージは、キャッシュのクリーンコマンド ( または **フラッシュMagentoキャッシュ** （管理者）。
+基準 [Vanish 文書](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html)「A」 *パージ* キャッシュからオブジェクトを選択し、そのバリアントと共に破棄すると、何が起こるかを示します。 ワニスのパージは、キャッシュのクリーンコマンド ( または **フラッシュMagentoキャッシュ** （管理者）。
 
 実際、Commerce キャッシュをクリーンアップ、フラッシュ、または更新すると、Vanish も削除されます。
 
 Commerce と連携するように Vanrish をインストールして設定した後、次の操作を行うと、Varnish がパージされる場合があります。
 
-- の保守 [web サイト](https://glossary.magento.com/website).
+- Web サイトの保守。
 
    例えば、次の場所の管理者でおこなった操作の例です。
 
@@ -47,7 +47,7 @@ Commerce は、Vanish ホストを [`magento setup:config:set`](https://devdocs.
 
 パラメーターの形式は、 `<hostname or ip>:<listen port>`を指定し、 `<listen port>` ポート 80 の場合。
 
-以下に例を挙げます。
+例：
 
 ```bash
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081

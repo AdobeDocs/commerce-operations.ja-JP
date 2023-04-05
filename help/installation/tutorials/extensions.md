@@ -1,9 +1,9 @@
 ---
 title: 拡張機能のインストール
 description: 次の手順に従って、Adobe CommerceまたはMagento Open Source拡張機能をインストールします。
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -16,12 +16,12 @@ Adobe CommerceとMagento Open Sourceの動作を拡張またはカスタマイ�
 拡張機能には以下が含まれます。
 
 - モジュール (Adobe CommerceおよびMagento Open Source機能の拡張 )
-- テーマ ( 外観を変更する [店頭](https://glossary.magento.com/storefront) 管理者 )
+- テーマ（ストアフロントと管理者の外観と操作性を変更する）
 - 言語パッケージ（ストアフロントと管理者をローカライズ）
 
 >[!TIP]
 >
->このトピックでは、コマンドラインを使用して、Commerce Marketplaceから購入した拡張機能をインストールする方法について説明します。 同じ手順で _任意_ 拡張必要なのは、拡張機能の [コンポーザー](https://glossary.magento.com/composer) 名前とバージョン。 検索するには、拡張機能の `composer.json` ファイルを作成し、 `"name"` および `"version"`.
+>このトピックでは、コマンドラインを使用して、Commerce Marketplaceから購入した拡張機能をインストールする方法について説明します。 同じ手順で _任意_ 拡張必要なのは、拡張機能のコンポーザーの名前とバージョンだけです。 検索するには、拡張機能の `composer.json` ファイルを作成し、 `"name"` および `"version"`.
 
 インストール前に、次の作業を行うことができます。
 
@@ -85,7 +85,7 @@ Adobe CommerceとMagento Open Sourceの動作を拡張またはカスタマイ�
    composer require <component-name>:<version>
    ```
 
-   以下に例を挙げます。
+   例：
 
    ```bash
    composer require j2t/module-payplug:2.0.2

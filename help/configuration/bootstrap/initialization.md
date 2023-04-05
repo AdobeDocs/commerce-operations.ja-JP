@@ -1,9 +1,9 @@
 ---
 title: アプリケーションの初期化とブートストラップ
 description: コマースアプリケーションの初期化とブートストラップのロジックについてお読みください。
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '863'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ bootstrap オブジェクトは、Commerce アプリケーションがキャッ�
 
 ### メディアリソースのエントリポイント
 
-[Magento\MediaStorage\App\Media][media] は、データベースからメディアリソース（つまり、メディアストレージにアップロードされたファイル）を取得します。 データベースが [メディアストレージ](https://glossary.magento.com/media-storage).
+[Magento\MediaStorage\App\Media][media] は、データベースからメディアリソース（つまり、メディアストレージにアップロードされたファイル）を取得します。 データベースがメディアストレージとして設定される際に使用されます。
 
 `\Magento\Core\App\Media` は、構成済みのデータベースストレージ内のメディアファイルを検索し、次の場所に書き込みます。 `pub/static` ディレクトリにコピーし、その内容を返します。 エラーの場合は、ヘッダーにステータスコード (HTTP 404（見つかりません）) が返され、コンテンツは返されません。
 

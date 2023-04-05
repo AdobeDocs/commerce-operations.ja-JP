@@ -1,9 +1,9 @@
 ---
 title: 設定タイプ
 description: 設定タイプを作成または拡張します。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## 設定タイプの拡張
 
-既存の設定タイプを拡張するには、 [モジュール](https://glossary.magento.com/module).
+既存の設定タイプを拡張するには、モジュール内に設定ファイルを作成するだけで済みます。
 
 例えば、イベント監視者を追加するには、 `app/code/{VendorName}/{ModuleName}/etc/events.xml` そして新しい監視者を宣言する
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 - XSD 検証スキーマ
 - XML 設定ファイル
 
-例えば、 [アダプタ](https://glossary.magento.com/adapter) 拡張機能を有効にして、そのサーバーでエンティティのインデックスを作成する方法を設定する新しい検索サーバーの場合は、次を作成します。
+例えば、拡張機能がそのサーバーでエンティティのインデックスを作成する方法を設定できる新しい検索サーバー用のアダプタを導入するには、次を作成します。
 
 - ローダ
 - XSD スキーマファイル

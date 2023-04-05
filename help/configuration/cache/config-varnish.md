@@ -1,9 +1,9 @@
 ---
 title: Vanish の設定と使用
 description: Vanish がファイルを保存し、HTTP トラフィックを改善する方法を理解します。
-source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Vanish の詳細については、次を参照してください。
 
 Web サーバーがアセットを返すと、キャッシュ可能なアセットは Varnish に保存されます。 これらのアセットに対する以降の要求は、Vanish で処理されます（つまり、要求は Web サーバーに到達しません）。 Vanrish はキャッシュされたコンテンツを非常に迅速に返します。 結果は、応答時間が短くなり、コンテンツがユーザーに返されるのに要する時間が短くなり、コマースで満たす必要のある要求の数が少なくなります。
 
-Vanish でキャッシュされたアセットは、設定可能な間隔で有効期限が切れるか、同じアセットの新しいバージョンに置き換えられます。 また、 [管理者](https://glossary.magento.com/magento-admin) または [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) コマンドを使用します。
+Vanish でキャッシュされたアセットは、設定可能な間隔で有効期限が切れるか、同じアセットの新しいバージョンに置き換えられます。 キャッシュは、管理者または [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) コマンドを使用します。
 
 ## プロセスの概要
 
@@ -97,7 +97,7 @@ Vanish キャッシュは、次を使用して Commerce で機能します。
 
 最初のブラウザー要求時に、キャッシュ可能なアセットが Varnish からクライアントブラウザーに配信され、ブラウザーにキャッシュされます。
 
-また、Vanish は [エンティティ](https://glossary.magento.com/entity) 静的アセットのタグ (ETag)。 ETag は、 [静的ファイル](https://glossary.magento.com/static-files) サーバー上で変更します。 その結果、静的アセットは、サーバー上で変更がおこなわれるとき（ブラウザーからの新しいリクエスト時またはクライアントがブラウザーキャッシュを更新したとき）に、クライアントに送信されます。通常は、F5 キーまたは Ctrl + F5 キーを押します。
+また、Vanish は静的アセットにエンティティタグ (ETag) を使用します。 ETag は、サーバ上で静的ファイルが変更されるタイミングを判断する手段を提供します。 その結果、静的アセットは、サーバー上で変更がおこなわれるとき（ブラウザーからの新しいリクエスト時またはクライアントがブラウザーキャッシュを更新したとき）に、クライアントに送信されます。通常は、F5 キーまたは Ctrl + F5 キーを押します。
 
 詳しくは、以降の節で説明します。
 

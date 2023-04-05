@@ -1,9 +1,9 @@
 ---
 title: キャッシュポイズニングを防ぐ
 description: コマースストアフロントでページキャッシュ中毒を防ぐ方法を説明します。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # キャッシュポイズニングを防ぐ
 
-このトピックでは、を防ぐ方法について説明します [キャッシュ](https://glossary.magento.com/cache) Microsoft Internet Information Server(IIS)Web サーバーを使用している場合に中毒 _キャッシュ中毒_ は、同じサイトの異なるページを含むようにキャッシュコンテンツを変更する方法です。 例えば、問題のないページ ( 例えば、 [店頭](https://glossary.magento.com/storefront) ホームページ ) で始まり、DoS(DoS) が発生する可能性があります。 悪意のあるページ URL は Vanish または Redis によってキャッシュされるため、名前は _ページキャッシュ中毒_.
+このトピックでは、Microsoft Internet Information Server(IIS)Web サーバーを使用する場合に、キャッシュポイズンを防ぐ方法について説明します。 _キャッシュ中毒_ は、同じサイトの異なるページを含むようにキャッシュコンテンツを変更する方法です。 例えば、問題のないページ（ストアフロントのホームページなど）の代わりに HTTP 404（見つかりません）エラーページを挿入すると、サービス拒否 (DoS) が発生する可能性があります。 悪意のあるページ URL は Vanish または Redis によってキャッシュされるため、名前は _ページキャッシュ中毒_.
 
 この種の攻撃は、Web サーバーログにエラーを生じさせないので、検出が困難な場合があります。
 

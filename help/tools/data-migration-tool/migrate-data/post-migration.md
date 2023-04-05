@@ -1,9 +1,9 @@
 ---
 title: データ移行後の手順
 description: を使用した後に実行する手順を説明します。 [!DNL Data Migration Tool] データをMagento1 からMagento2 に移行する場合
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '77'
+source-wordcount: '74'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 移行を完了し、新しいMagento2 サイトを十分にテストした後、次のタスクを実行します。
 
-* Magento1 をメンテナンスモードにし、すべてを永久に停止します [管理者](https://glossary.magento.com/admin) アクティビティ
+* Magento1 をメンテナンスモードにし、すべての管理アクティビティを恒久的に停止します
 
 * Magento2 cron ジョブを開始
 

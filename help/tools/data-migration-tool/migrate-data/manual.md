@@ -1,9 +1,9 @@
 ---
 title: 手動での移行が必要なデータ
-description: 'Magento1 からMagento2 へのデータ移行中に手動で移行する必要があるデータとその方法について説明します。 '
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+description: Magento1 からMagento2 へのデータ移行中に手動で移行する必要があるデータとその方法について説明します。
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 * メディア
 
-* [ストアフロント](https://glossary.magento.com/storefront) デザイン
+* ストアフロントデザイン
 
-* [管理者](https://glossary.magento.com/admin) ユーザーアカウント
+* 管理者ユーザーアカウント
 
 * アクセス制御リスト (ACL)
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 1. 右側のウィンドウで、 **メディアのストレージ設定**.
 
-1. 次の **メディアデータベースを選択** リストで、 [メディアストレージ](https://glossary.magento.com/media-storage) データベース。
+1. 次の **メディアデータベースを選択** 「 」リストで、メディアストレージデータベースの名前をクリックします。
 
 1. クリック **同期**.
 
@@ -48,15 +48,15 @@ ht-degree: 0%
 
 ### ファイルシステム内のメディアファイル
 
-すべてのメディアファイル ( 製品、カテゴリ、 [WYSIWYG](https://glossary.magento.com/wysiwyg) エディターなど ) は、 `<your Magento 1 install dir>/media` から `<your Magento 2 install dir>/pub/media`.
+すべてのメディアファイル（製品、カテゴリ、WYSIWYG エディターなどの画像）は、 `<your Magento 1 install dir>/media` から `<your Magento 2 install dir>/pub/media`.
 
-ただし、 *not* コピー `.htaccess` Magento1 のファイル `media` フォルダー。 Magento2 には独自の `.htaccess` それは保存するべきです。
+ただし、 *not* コピー `.htaccess` Magento1 にあるファイル `media` フォルダー。 Magento2 には独自の `.htaccess` それは保存するべきです。
 
 ## ストアフロントデザイン
 
-* ファイルのデザイン (CSS、JS、テンプレート、 [XML](https://glossary.magento.com/xml) レイアウト ) の場所と形式を変更しました
+* ファイルのデザイン（CSS、JS、テンプレート、XML レイアウト）で場所と形式が変更されました
 
-* [レイアウト](https://glossary.magento.com/layout) データベースに保存された更新。 のMagento1 管理から配置 [CMS](https://glossary.magento.com/cms) ページ、CMS ウィジェット [カテゴリ](https://glossary.magento.com/category) ページと製品ページ
+* レイアウト更新はデータベースに保存されます。 CMS ページ、CMS ウィジェット、カテゴリページ、製品ページのMagento1 管理を通じて配置
 
 ## アクセス制御リスト (ACL)
 

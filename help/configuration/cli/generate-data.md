@@ -1,10 +1,10 @@
 ---
 title: パフォーマンステスト用のデータを生成
 description: パフォーマンステストに使用する大量のデータを生成する方法を説明します。
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 9%
+source-wordcount: '749'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 作成するデータの量は _プロファイル_ （小、中、大、特大）。 プロファイルは、 `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` ディレクトリ。
 
-例：`/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
+例： `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
 次の図は、 _小_ プロファイル：
 
@@ -61,7 +61,7 @@ bin/magento setup:perf:generate-fixtures <path-to-profile>
 
 ここで、 `<path-to-profile>` プロファイルの絶対ファイルシステムパスと名前を指定します。
 
-以下に例を挙げます。
+例：
 
 ```bash
 bin/magento setup:perf:generate-fixtures /var/www/html/magento2/setup/performance-toolkit/profiles/ce/small.xml
@@ -100,7 +100,7 @@ Generating simple products...  done in <time>
 
 ### 管理者ユーザー
 
-生成 [admin](https://glossary.magento.com/admin) ユーザー。 [XML](https://glossary.magento.com/xml) プロファイルノード：
+管理者ユーザーを生成します。 XML プロファイルノード：
 
 ```xml
 <!-- Number of admin users -->
@@ -124,7 +124,7 @@ Generating simple products...  done in <time>
 
 ### 製品のバンドル
 
-バンドル製品を生成します。 生成されたバンドルの選択は、 [カタログ](https://glossary.magento.com/catalog). 製品は、カテゴリや Web サイトごとに均等に分散されます。 If  `assign_entities_to_all_websites` プロファイルを `1`. 製品はすべての Web サイトに割り当てられます。
+バンドル製品を生成します。 生成されたバンドルの選択は、カタログに個別に表示されません。 製品は、カテゴリや Web サイトごとに均等に分散されます。 If  `assign_entities_to_all_websites` プロファイルを `1`. 製品はすべての Web サイトに割り当てられます。
 
 XML プロファイルノード：
 
@@ -162,7 +162,7 @@ XML プロファイルノード：
 
 ### カテゴリ
 
-カテゴリを生成します。 If `assign_entities_to_all_websites` が `0`の場合、すべてのカテゴリはルートカテゴリごとに均等に分散されます。そうでない場合、すべてのカテゴリが 1 つのルートに割り当てられます [カテゴリ](https://glossary.magento.com/category).
+カテゴリを生成します。 If `assign_entities_to_all_websites` が `0`の場合、すべてのカテゴリはルートカテゴリごとに均等に分散されます。それ以外の場合、すべてのカテゴリが 1 つのルートカテゴリに割り当てられます。
 
 XML プロファイルノード：
 
@@ -231,7 +231,7 @@ XML プロファイルノード：
    </configurable_products>
    ```
 
-- 動的に作成されたに基づいて製品を生成 [属性セット](https://glossary.magento.com/attribute-set) 指定した数の属性とオプションを持つ
+- 指定した数の属性とオプションを持つ動的に作成された属性セットに基づいて、製品を生成します。
 
    ```xml
    <configurable_products>

@@ -1,9 +1,9 @@
 ---
 title: Web サーバーの設定
 description: Vanrish と連携するように Web サーバーを設定する方法を説明します。
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -196,7 +196,7 @@ backend default {
 
 ## HTTP 応答ヘッダーの検証
 
-Vanish がページを提供していることを確認するには、 [HTML](https://glossary.magento.com/html) 任意のページから返された応答ヘッダー。
+これで、Vanrish がページを提供していることを確認するには、任意のページから返されたHTML応答ヘッダーを調べます。
 
 ヘッダーを確認する前に、開発者モードに Commerce を設定する必要があります。 その方法はいくつかあり、最も簡単な方法は次のとおりです。 `.htaccess` （コマースアプリケーションのルート）をクリックします。 また、 [`magento deploy:mode:set`](../cli/set-mode.md) コマンドを使用します。
 
@@ -235,7 +235,7 @@ Web ブラウザーで、任意のコマースページに移動します。
 
 ### HTML応答ヘッダーを見る
 
-ブラウザーの使用を含め、応答ヘッダーを確認する方法はいくつかあります [プラグイン](https://glossary.magento.com/plug-in) またはブラウザの検査官
+ブラウザープラグインやブラウザーインスペクターの使用など、応答ヘッダーを見る方法はいくつかあります。
 
 次の例では、 `curl`. このコマンドは、HTTP を使用して Commerce サーバーにアクセスできる任意のマシンから入力できます。
 
@@ -243,7 +243,7 @@ Web ブラウザーで、任意のコマースページに移動します。
 curl -I -v --location-trusted '<your Commerce base URL>'
 ```
 
-以下に例を挙げます。
+例：
 
 ```bash
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'

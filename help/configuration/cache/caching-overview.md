@@ -1,9 +1,9 @@
 ---
 title: キャッシュの設定
 description: キャッシュと、Adobe CommerceおよびMagento Open Sourceアプリケーションのキャッシュメカニズムの設定方法について説明します。
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 [!DNL Commerce] では、デフォルトのファイルシステムキャッシュの代替オプションを設定できます。 このガイドでは、これらの代替策の一部を説明します。すなわち
 
-- 次の設定を行います [キャッシュ](https://glossary.magento.com/cache) メカニズム [!DNL Commerce] 設定：
+- で次のキャッシュメカニズムを設定します。 [!DNL Commerce] 設定：
 
    - [データベース](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
    - [レディス](config-redis.md)
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 - 提供されたの変更 `default` キャッシュフロントエンド —
 
-   次の項目のみを変更します。 `<magento_root>/app/etc/di.xml` ファイル、Commerce アプリケーションのグローバル [依存注入](https://glossary.magento.com/dependency-injection) 設定。
+   次の項目のみを変更します。 `<magento_root>/app/etc/di.xml` ファイル：Commerce アプリケーションのグローバル依存関係インジェクション設定。
 
 - 独自のカスタムキャッシュフロントエンドの設定 —
 

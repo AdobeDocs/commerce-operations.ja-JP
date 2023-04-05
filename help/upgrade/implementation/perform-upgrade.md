@@ -1,9 +1,9 @@
 ---
 title: アップグレードの実行
 description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceプロジェクトをアップグレードします。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ソフトウェアをインストールした場合は、次の方法でAdobe CommerceまたはMagento Open Sourceアプリケーションをコマンドラインからアップグレードできます。
 
-- のダウンロード [メタパッケージ](https://glossary.magento.com/metapackage) の使用 `composer create-project` コマンドを使用します。
+- を使用したメタパッケージのダウンロード `composer create-project` コマンドを使用します。
 - 圧縮アーカイブをインストールしています。
 
 >[!NOTE]

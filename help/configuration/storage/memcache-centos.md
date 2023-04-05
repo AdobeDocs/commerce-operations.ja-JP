@@ -1,9 +1,9 @@
 ---
 title: CentOS での memcached の設定
 description: CentOS に memcached をインストールして設定します。
-source-git-commit: 65060d067bbbfe139736df3800688ce897cb17be
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ Web サーバーが memcached を認識することを確認するには、次�
 
 1. Web ブラウザーでそのページに移動します。
 
-   例：`http://192.0.2.1/phpinfo.php`
+   例： `http://192.0.2.1/phpinfo.php`
 
 1. memcache が次のように表示されていることを確認します。
 
@@ -113,7 +113,7 @@ memcache が表示されない場合は、Web サーバーを再起動し、ブ�
 
 ### MySQL データベースと PHP スクリプトから成る memcache テストを作成する
 
-このテストでは、MySQL データベース、テーブル、およびデータを使用して、データベースデータを取得して memcache に保存できることを確認します。 PHP スクリプトは、最初に [キャッシュ](https://glossary.magento.com/cache). 結果が存在しない場合は、スクリプトはデータベースに対してクエリを実行します。 元のデータベースでクエリが処理された後、スクリプトは、 `set` コマンドを使用します。
+このテストでは、MySQL データベース、テーブル、およびデータを使用して、データベースデータを取得して memcache に保存できることを確認します。 PHP スクリプトは、まずキャッシュを検索します。 結果が存在しない場合は、スクリプトはデータベースに対してクエリを実行します。 元のデータベースでクエリが処理された後、スクリプトは、 `set` コマンドを使用します。
 
 [このテストの詳細](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
 

@@ -1,9 +1,9 @@
 ---
 title: 複数の Web サイト、ストア、管理者での表示の設定
 description: 追加の Web サイト、ストア、表示をコマース管理で設定します。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 手順 1:ルートカテゴリの作成
 
-ルートカテゴリの作成は任意ですが、その方法については、 [イベント](https://glossary.magento.com/event) 各 Web サイトに一意のルートカテゴリを割り当てたい。 必要に応じて、追加のカテゴリを作成できます。
+ルートカテゴリの作成は任意ですが、各 Web サイトに一意のルートカテゴリを割り当てる場合は、このチュートリアルで作成する方法を示します。 必要に応じて、追加のカテゴリを作成できます。
 
 ルートカテゴリを作成するには：
 

@@ -1,9 +1,9 @@
 ---
 title: セキュリティを向上させるために docroot を変更
 description: Adobe CommerceやMagento Open Sourceオンプレミスのファイルシステムへの不正なブラウザベースのアクセスを防ぎます。
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ server {
 
 ## 5.ストアフロントを確認します。
 
-次に移動： [店頭](https://glossary.magento.com/storefront) が Web ブラウザーに表示され、すべてが機能していることを確認します。
+Web ブラウザーのストアフロントに移動して、すべてが機能していることを確認します。
 
 1. Web ブラウザーを開き、アドレスバーにサーバーのホスト名または IP アドレスを入力します。 例： `http://192.168.33.10`.
 

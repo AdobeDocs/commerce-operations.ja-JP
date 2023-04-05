@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Data Migration Tool] 技術仕様書'
 description: 「 [!DNL Data Migration Tool] Magento1 とMagento2 の間でデータを転送する際に拡張する方法」
-source-git-commit: c56cc6d97f69770aa718333c02514ab3cfce774c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2079'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 0%
 │       │   ├── Data.php
 │       │   ├── Delta.php
 │       │   └── Settings.php
-│       ├── ResourceModel                   --- contains [adapter](https://glossary.magento.com/adapter) for connection to data storage and classes to work with structured data
+│       ├── ResourceModel                   --- contains adapter for connection to data storage and classes to work with structured data
 │       │   ├── Adapter
 │       │   │   └── Mysql.php
 │       │   ├── AbstractCollection.php
@@ -75,7 +75,7 @@ ht-degree: 0%
 │       │   ├── Source.php
 │       │   └── Structure.php
 │       ├── Config.php
-│       ├── [Exception](https://glossary.magento.com/exception).php
+│       ├── Exception.php
 │       └── Step                            --- functionality for migrating specific data
 │           ├── Eav
 │           │   ├── Data.php
@@ -342,7 +342,7 @@ $this->progress->finish();
 
 #### マッピングステップ
 
-マップステップは、ほとんどのデータをMagento1 からMagento2 に転送します。 この手順は、map.xml ファイル ( `etc/` ディレクトリ ) に書き込まれます。 ファイルは、ソース (Magento1) と宛先 (Magento2) のデータ構造の違いを記述しています。 Magento1 に、一部の [拡張](https://glossary.magento.com/extension) これはMagento2 に存在しないので、ここに配置して、マップステップで無視することができます。 それ以外の場合は、エラーメッセージが表示されます。
+マップステップは、ほとんどのデータをMagento1 からMagento2 に転送します。 この手順は、map.xml ファイル ( `etc/` ディレクトリ ) に書き込まれます。 ファイルは、ソース (Magento1) と宛先 (Magento2) のデータ構造の違いを記述しています。 Magento1 に、Magento2 に存在しない拡張機能に属するテーブルやフィールドが含まれる場合、これらのエンティティをここに配置して、マップステップで無視することができます。 それ以外の場合は、エラーメッセージが表示されます。
 
 マップファイルの形式は次のとおりです。
 
@@ -464,7 +464,7 @@ Magento1 とMagento2 のデータソースにアクセスし、そのデータ�
 
 ## ログ
 
-移行プロセスの出力を実装し、可能なすべてのレベルを制御するために、Magentoで使用される PSR ロガーが適用されます。 `\Migration\Logger\Logger` ログ機能を提供するために、クラスが実装されました。 ロガーを使用するには、コンストラクターを介して挿入する必要があります [依存注入](https://glossary.magento.com/dependency-injection).
+移行プロセスの出力を実装し、可能なすべてのレベルを制御するために、Magentoで使用される PSR ロガーが適用されます。 `\Migration\Logger\Logger` ログ機能を提供するために、クラスが実装されました。 ロガーを使用するには、コンストラクタ依存関係インジェクションを使用してロガーを挿入する必要があります。
 
 ```php
 class SomeClass

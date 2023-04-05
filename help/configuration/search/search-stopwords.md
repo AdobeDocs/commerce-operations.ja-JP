@@ -1,9 +1,9 @@
 ---
 title: 検索ストップワードの設定
 description: CSV ファイルを使用してAdobe Commerceのストップワードを管理する方法を説明します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ OpenSearch とのストップワードの使用Elasticsearchについて詳し�
 
 ストップワードは、 `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` ディレクトリ。 Adobe CommerceとMagento Open Sourceには、デフォルトのロケールのストップワードを含む 1 つの CSV ファイルと、追加のファイルが付属しています。 `stopwords.csv`：別の CSV ファイルで表されないロケールのストップワードを含む
 
-ストップワードファイルのデフォルトの有効期間 [キャッシュ](https://glossary.magento.com/cache) は 15 分です。
+stopwords ファイルのキャッシュのデフォルトの有効期間は 15 分です。
 
 ### 既存のロケールのストップワードを編集
 
@@ -54,7 +54,7 @@ OpenSearch とのストップワードの使用Elasticsearchについて詳し�
       php <magento_root>/bin/magento cache:clean config
       ```
 
-1. 検索結果を確認するには、 [店頭](https://glossary.magento.com/storefront).
+1. ストアフロントで用語を検索して、結果を確認します。
 
 ### 新しいロケールのストップワードを作成
 

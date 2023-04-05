@@ -1,9 +1,9 @@
 ---
 title: のインストール [!DNL Data Migration Tool]
 description: をインストールする方法を説明します。 [!DNL Data Migration Tool] Magento1 とMagento2 の間でデータを転送する。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ### Composer メタパッケージ
 
-を使用してMagentoソフトウェアをダウンロードした場合 [コンポーザー](https://glossary.magento.com/composer) metapackage で、次のコマンドを入力します。
+Composer のメタパッケージを使用してMagentoソフトウェアをダウンロードした場合は、次のコマンドを入力します。
 
 ```bash
 php <magento_root>/bin/magento --version

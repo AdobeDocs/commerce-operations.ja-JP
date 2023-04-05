@@ -1,9 +1,9 @@
 ---
 title: 最終検証
 description: Vanrish の設定が、Adobe Commerceアプリケーションで動作するように正しく設定されていることを確認します。
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 まず、 [開発者モード](../cli/set-mode.md#change-to-developer-mode);そうしないと、ヘッダーは表示されません。
 
-以下に例を挙げます。
+例：
 
 ```bash
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
@@ -39,7 +39,7 @@ X-Magento-Cache-Debug: MISS
 
 ## ページ読み込み時間の確認
 
-Vanish が機能している場合、キャッシュ可能なブロックを含む Commerce ページは 150 ms 未満で読み込まれます。 そのようなページの例として、正面ドアや [店頭](https://glossary.magento.com/storefront) [カテゴリ](https://glossary.magento.com/category) ページ。
+Vanish が機能している場合、キャッシュ可能なブロックを含む Commerce ページは 150 ms 未満で読み込まれます。 このようなページの例としては、前面のカテゴリページや店舗のカテゴリページがあります。
 
 ブラウザーインスペクターを使用して、ページ読み込み時間を測定します。
 
@@ -66,7 +66,7 @@ Vanish が機能している場合、キャッシュ可能なブロックを含�
 
 次を確認します。 `<magento_root>/var/page_cache` ディレクトリが空です：
 
-1. Commerce サーバーにログインするか、 [ファイルシステム所有者](https://glossary.magento.com/magento-file-system-owner).
+1. コマースサーバーにログインするか、ファイルシステムの所有者に切り替えます。
 1. 次のコマンドを入力します。
 
    ```bash

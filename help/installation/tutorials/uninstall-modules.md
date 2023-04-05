@@ -1,9 +1,9 @@
 ---
 title: モジュールのアンインストール
 description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceモジュールをアンインストールします。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このコマンドは、 `composer.json` ファイル。 をアンインストールした場合、 [モジュール](https://glossary.magento.com/module) は _not_ で定義 `composer.json` このコマンドは、依存関係をチェックせずにモジュールをアンインストールします。 このコマンドは実行します _not_&#x200B;ただし、ファイルシステムからモジュールのコードを削除します。 モジュールのコードを削除するには、ファイルシステムツールを使用する必要があります ( 例： `rm -rf <path to module>`) をクリックします。 別の方法として、次の操作を実行できます。 [無効](manage-modules.md) 非コンポーザーモジュール。
+>このコマンドは、 `composer.json` ファイル。 次のモジュールをアンインストールした場合： _not_ で定義 `composer.json` このコマンドは、依存関係をチェックせずにモジュールをアンインストールします。 このコマンドは実行します _not_&#x200B;ただし、ファイルシステムからモジュールのコードを削除します。 モジュールのコードを削除するには、ファイルシステムツールを使用する必要があります ( 例： `rm -rf <path to module>`) をクリックします。 別の方法として、次の操作を実行できます。 [無効](manage-modules.md) 非コンポーザーモジュール。
 
 コマンドの使用：
 
@@ -30,7 +30,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
 
 module uninstall コマンドは、次のタスクを実行します。
 
-1. 指定したモジュールがコードベースに存在し、パッケージが次のようにインストールされていることを確認します。 [コンポーザー](https://glossary.magento.com/composer).
+1. 指定したモジュールがコードベースに存在し、Composer によってインストールされたパッケージであることを確認します。
 
    このコマンドは機能します _のみ_ と、コンポーザーパッケージとして定義されたモジュール。
 
@@ -60,7 +60,7 @@ module uninstall コマンドは、次のタスクを実行します。
    >
    >モジュールのアンインストール _常に_ 実行 `composer remove`. この `--remove-data` オプションは、モジュールの `Uninstall` クラス。
 
-1. 次をクリーンアップ： [キャッシュ](https://glossary.magento.com/cache).
+1. キャッシュをクリーンします。
 1. 生成されたクラスを更新します。
 1. If `--clear-static-content` が指定され、クリーン [生成された静的ビューファイル](../../configuration/cli/static-view-file-deployment.md).
 1. メンテナンスモードからストアを削除します。
@@ -73,7 +73,7 @@ magento module:uninstall Magento_SampleMinimal
         Magento_SampleModifyContent
 ```
 
-その代わりに、モジュールファイルシステムのバックアップ後に両方のモジュールをアンインストールする方法があります。 `pub/media` ファイルとデータベース・テーブル ( _not_ モジュールの削除 [データベーススキーマ](https://glossary.magento.com/database-schema) またはデータ：
+その代わりに、モジュールファイルシステムのバックアップ後に両方のモジュールをアンインストールする方法があります。 `pub/media` ファイルとデータベース・テーブル ( _not_ モジュールのデータベーススキーマまたはデータの削除：
 
 ```bash
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db

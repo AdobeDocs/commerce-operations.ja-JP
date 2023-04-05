@@ -1,9 +1,9 @@
 ---
 title: 言語パッケージのアンインストール
 description: 次の手順に従って、Adobe CommerceまたはMagento Open Source言語パッケージをアンインストールします。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 このセクションでは、1 つ以上の言語パッケージをアンインストールする方法について説明します。また、オプションで、言語パッケージのコードをファイルシステムから含めます。 最初にバックアップを作成して、後でデータを復元できます。
 
-このコマンドは、アンインストールします *のみ* 言語パッケージ `composer.json`;言い換えれば、 [コンポーザー](https://glossary.magento.com/composer) パッケージ。 次に、 [言語パッケージ](https://glossary.magento.com/language-package) は Composer パッケージではありません。言語パッケージコードをファイルシステムから削除して、手動でアンインストールする必要があります。
+このコマンドは、アンインストールします *のみ* 言語パッケージ `composer.json`;つまり、Composer パッケージとして提供される言語パッケージです。 言語パッケージが Composer パッケージでない場合は、ファイルシステムから言語パッケージコードを削除して、手動でアンインストールする必要があります。
 
 バックアップは、 [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンドを使用します。
 
@@ -31,7 +31,7 @@ bin/magento i18n:uninstall [-b|--backup-code] {language package name} ... {langu
 
 1. If `--backup code` を指定した場合は、ファイル・システムをバックアップします ( `var` および `pub/static` ディレクトリ ) `var/backups/<timestamp>_filesystem.tgz`
 1. を使用して、コードベースから言語パッケージファイルを削除します。 `composer remove`.
-1. 次をクリーンアップ： [キャッシュ](https://glossary.magento.com/cache).
+1. キャッシュをクリーンします。
 
 例えば、別の言語パッケージが依存する言語パッケージをアンインストールしようとすると、次のメッセージが表示されます。
 

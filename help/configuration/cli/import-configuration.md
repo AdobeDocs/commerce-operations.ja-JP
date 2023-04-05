@@ -1,9 +1,9 @@
 ---
 title: 設定ファイルからデータを読み込む
 description: Adobe Commerceの設定を設定ファイルから読み込みます。
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Nothing to import
 
 Commerce は、 `system` 配列を `config.php` または `env.php` ファイルを読み込む代わりに、ファイルを読み込むことをお勧めします。これは、いくつかの前処理アクションと後処理アクションが必要になるからです。
 
-例えば、設定パスの値 `web/secure/base_url` は、 [バックエンド](https://glossary.magento.com/backend) モデル。
+例えば、設定パスの値 `web/secure/base_url` は、バックエンドモデルで検証する必要があります。
 
 #### バックエンドモデル
 
@@ -94,7 +94,7 @@ Commerce は、 `system` 配列を `config.php` または `env.php` ファイル
 
 >[!INFO]
 >
->ルートはインポートしません [カテゴリ](https://glossary.magento.com/category) ストアに関連付けられています。 コマースを使用して、ルートカテゴリをストアに関連付ける必要があります [管理者](https://glossary.magento.com/admin).
+>ストアに関連付けられたルートカテゴリはインポートされません。 コマース管理を使用して、ルートカテゴリをストアに関連付ける必要があります。
 
 ### テーマの設定
 
@@ -105,7 +105,7 @@ Commerce は、 `system` 配列を `config.php` または `env.php` ファイル
 配列のキーは完全なテーマパスです。 `area` + `theme path`
 
 例： `frontend/Magento/luma`.
-`frontend` 領域および `Magento/luma` が [テーマ](https://glossary.magento.com/theme) パス。
+`frontend` 領域および `Magento/luma` はテーマのパスです。
 
 配列の値は、テーマに関するデータです。コード、タイトル、パス、親 id
 

@@ -1,9 +1,9 @@
 ---
 title: Ubuntu で memcached を設定する
 description: Ubuntu に memcached をインストールして設定します。
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ memcached が Web サーバーによって認識されることを確認する�
 
 ### memcached がデータをキャッシュできることを確認します
 
-このテストでは、PHP スクリプトを使用して、memcached が [キャッシュ](https://glossary.magento.com/cache) データ。
+このテストでは、PHP スクリプトを使用して、memcached がキャッシュデータを保存および取得できることを確認します。
 
 このテストの詳細については、 [Ubuntu での Memcache のインストールと使用の方法のチュートリアル](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
 

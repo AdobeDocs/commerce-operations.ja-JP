@@ -1,9 +1,9 @@
 ---
 title: アップグレードのメンテナンスモードオプション
-description: 'アップグレードの実行中にAdobe CommerceまたはMagento Open Sourceストアフロントに表示されるカスタムメンテナンスモードページを作成します。 '
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+description: アップグレードの実行中にAdobe CommerceまたはMagento Open Sourceストアフロントに表示されるカスタムメンテナンスモードページを作成します。
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ body
 
 トラフィックをカスタムメンテナンスページにリダイレクトするには：
 
-1. テキストエディターを使用して [nginx](https://glossary.magento.com/nginx) サーバーブロックを含む設定ファイル。
+1. テキストエディターを使用して、サーバーブロックを含む nginx 設定ファイルを開きます。
 1. 次の内容をサーバーブロック (`server` は、明確にするためにのみ表示されます。2 つ目のサーバーブロックを追加しないでください )。
 
    次の許可リストでは、Magentoがにインストールされているシステムの IP アドレス 192.0.2.110 と 192.0.2.115 を設定します。 `/var/www/html/magento2`:

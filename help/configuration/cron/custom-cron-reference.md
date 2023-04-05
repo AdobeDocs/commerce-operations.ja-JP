@@ -1,9 +1,9 @@
 ---
 title: カスタム cron ジョブと cron グループの参照
 description: cron グループを使用して cron をカスタマイズする方法を説明します。
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Cron リファレンスのカスタマイズ
 
-このトピックでは、crontabs を設定し、カスタムモジュール用の cron グループを任意で設定する方法について説明します。 カスタム [モジュール](https://glossary.magento.com/module) は、定期的にタスクをスケジュールする必要があります。そのモジュール用に crontab を設定する必要があります。 A _crontab_ は cron ジョブ設定です。
+このトピックでは、crontabs を設定し、カスタムモジュール用の cron グループを任意で設定する方法について説明します。 カスタムモジュールが定期的にタスクをスケジュールする必要がある場合は、そのモジュール用の crontab を設定する必要があります。 A _crontab_ は cron ジョブ設定です。
 
 必要に応じて、カスタムグループを設定できます。カスタムグループでは、他の cron ジョブとは別に、そのグループで定義された cron ジョブを個別に実行できます。
 
@@ -38,7 +38,8 @@ A _cron グループ_ は、一度に複数のプロセスに対して cron を�
 1 つのグループの場合、ファイルには次の内容が含まれている必要があります。
 
 ```xml
-<config>
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="<group_name>">
         <job name="<job_name>" instance="<classpath>" method="<method>">
             <schedule><time></schedule>
@@ -60,7 +61,8 @@ A _cron グループ_ は、一度に複数のプロセスに対して cron を�
 結果 `crontab.xml` との 2 つのグループは、次のようになります。
 
 ```xml
-<config>
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="default">
         <job name="<job_1_name>" instance="<classpath>" method="<method_name>">
             <schedule>* * * * *</schedule>
@@ -84,7 +86,7 @@ A _cron グループ_ は、一度に複数のプロセスに対して cron を�
 
 ### Cron グループオプションの指定
 
-新しいグループを宣言し、その設定オプションを指定できます ( すべてが [ストア表示](https://glossary.magento.com/store-view) 範囲 ) を使用 `cron_groups.xml` ファイル：
+新しいグループを宣言し、その設定オプション（すべてストア表示範囲で実行）を `cron_groups.xml` ファイル：
 
 ```text
 <your component base dir>/<vendorname>/module-<name>/etc/cron_groups.xml
@@ -93,7 +95,8 @@ A _cron グループ_ は、一度に複数のプロセスに対して cron を�
 以下に、 `cron_groups.xml` ファイル：
 
 ```xml
-<config>
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/cron_groups.xsd">
     <group id="<group_name>">
         <schedule_generate_every>1</schedule_generate_every>
         <schedule_ahead_for>4</schedule_ahead_for>

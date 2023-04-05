@@ -1,9 +1,9 @@
 ---
 title: 移行の概要
 description: を使用してMagento1 からMagento2 へのデータ移行を開始する方法を説明します。 [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 1. **禁止** Magento1 管理 ( 受注管理（出荷、請求書の作成、クレジット・メモ）を除く ) で変更を行う
 1. **禁止** コードを変更する
-1. **禁止** Magento2 管理者で変更を加え、 [店頭](https://glossary.magento.com/storefront)
+1. **禁止** Magento2 の Admin とストアフロントで変更を行う
 
 >[!TIP]
 >

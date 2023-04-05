@@ -1,9 +1,9 @@
 ---
 title: データベーススキーマとデータのアップグレード
 description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceデータベーススキーマをアップグレードします。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## データベーススキーマとデータのアップグレード
 
-を引き起こすアクションを実行するときは常に [データベーススキーマ](https://glossary.magento.com/database-schema) データを変更する場合は、この節で説明するコマンドを実行して更新する必要があります。 理由の一部を次に示します。
+データベースのスキーマまたはデータを変更するアクションを実行する場合は、この節で説明するコマンドを実行して更新する必要があります。 理由の一部を次に示します。
 
 * コマンドラインを使用してアプリケーションをアップグレードしました
 * コマンドラインを使用してコンポーネントをインストールまたは更新した

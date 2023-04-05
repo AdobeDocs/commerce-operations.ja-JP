@@ -1,9 +1,9 @@
 ---
 title: マスターデータベースの手動構成
 description: 分割データベースソリューションの手動設定に関するガイダンスを参照してください。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Commerce アプリケーションが既に実稼動環境にある場合、ま�
 
 データベースを手動で分割するには、次の作業が必要です。
 
-- を作成します。 [checkout](https://glossary.magento.com/checkout) OMS(Order Management System) データベース
+- チェックアウトおよび注文管理システム (OMS) データベースの作成
 - 次の一連の SQL スクリプトを実行します。
 
    - 外部キーを削除
@@ -62,7 +62,7 @@ Adobeでは、現在のデータベースとファイルシステムをバック
 
 ## 追加のマスターデータベースを設定する
 
-この項では、セールス用のデータベース・インスタンスを作成する方法と、 [見積もり](https://glossary.magento.com/quote) テーブル。
+この項では、販売テーブルと見積テーブルのデータベース・インスタンスを作成する方法を説明します。
 
 **販売および OMS 見積データベースを作成するには**:
 
@@ -211,7 +211,7 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
    source <path>/<script>.sql
    ```
 
-   以下に例を挙げます。
+   例：
 
    ```shell
    source /root/sql-scripts/1_foreign-sales.sql
@@ -336,7 +336,7 @@ ALTER TABLE quote_item DROP FOREIGN KEY QUOTE_ITEM_STORE_ID_STORE_STORE_ID;
 1. 次の場合： `mysql >` プロンプトが表示されたら、次のようにスクリプトを実行します。
    `source <path>/<script>.sql`
 
-   以下に例を挙げます。
+   例：
 
    ```shell
    source /root/sql-scripts/2_foreign-key-quote.sql
@@ -462,7 +462,7 @@ SET foreign_key_checks = 1;
    source <path>/<script>.sql
    ```
 
-   以下に例を挙げます。
+   例：
 
    ```shell
    source /root/sql-scripts/3_drop-tables.sql
@@ -549,7 +549,7 @@ SET foreign_key_checks = 1;
 
 ## 参照スクリプト
 
-このセクションでは、影響を受けるテーブルの完全なリストを、何らかの操作を行わずに印刷するスクリプトを実行できます。 データベースを手動で分割する前に、これらを使用して影響を受けるテーブルを確認できます。これは、 [データベーススキーマ](https://glossary.magento.com/database-schema).
+このセクションでは、影響を受けるテーブルの完全なリストを、何らかの操作を行わずに印刷するスクリプトを実行できます。 データベースを手動で分割する前に、データベースを使用して、影響を受けるテーブルを確認できます。これは、データベーススキーマをカスタマイズする拡張機能を使用する場合に役立ちます。
 
 次のスクリプトを使用するには：
 

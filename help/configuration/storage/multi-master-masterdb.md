@@ -1,9 +1,9 @@
 ---
 title: マスターデータベースを自動的に構成する
 description: 分割データベースソリューションの自動設定に関するガイダンスを参照してください。
-source-git-commit: d029d1ac66bff2ac34b22b2d3b8aafbfc062e082
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 このトピックでは、次の方法でデータベース分割ソリューションの使用を開始する方法について説明します。
 
 1. 1 つのマスターデータベース ( `magento`)
-1. 用に 2 つの追加のマスターデータベースを作成する [checkout](https://glossary.magento.com/checkout) および OMS （名前付き） `magento_quote` および `magento_sales`)
+1. チェックアウトおよび OMS 用の 2 つの追加のマスター・データベースの作成 ( 名前： `magento_quote` および `magento_sales`)
 1. チェックアウトおよび販売データベースを使用するためのAdobe Commerceの設定
 
 >[!INFO]

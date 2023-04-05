@@ -4,9 +4,9 @@ description: ストアフロントのパフォーマンスを最適化するた�
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 非公開コンテンツブロックに `_isScopePrivate` 変数を使用する場合、ブロックはキャッシュできません。 プライベートブロックはキャッシュされないので、Adobe Commerceは顧客の要求ごとに同じデータを取得する必要があり、サーバーの読み込みが増加します。
 
-を使用する代わりに、 `_isScopePrivate` 変数は、非公開コンテンツ用に、ユーザーに依存しないデータを表示するブロックとテンプレートを作成します。 このデータは、Adobe Commerceでユーザー固有のデータに置き換えられます [UI コンポーネント](https://glossary.magento.com/ui-component/)：事前レンダリングデータをより効率的に処理します。 手順については、 [非公開コンテンツ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) 内 _[!DNL Commerce PHP Extensions Guide]_.
+を使用する代わりに、 `_isScopePrivate` 変数は、非公開コンテンツ用に、ユーザーに依存しないデータを表示するブロックとテンプレートを作成します。 このデータは、Adobe Commerce UI コンポーネントによってユーザー固有のデータに置き換えられ、このコンポーネントによって、レンダリング前のデータをより効率的に処理できます。 手順については、 [非公開コンテンツ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) 内 _[!DNL Commerce PHP Extensions Guide]_.
 
 ## 影響を受ける製品およびバージョン
 

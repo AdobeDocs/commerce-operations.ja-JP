@@ -1,9 +1,9 @@
 ---
 title: 変更を移行
 description: を使用して、前回のMagento1 のデータ移行以降に変更されたデータのみを移行する方法を説明します。 [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 増分移行ツールでは、deltalog テーブル（プレフィックス付き）がインストールされます `m2_cl_*`) およびトリガー（変更を追跡するため）を、 [データの移行](data.md). これらのデタログ表とトリガーは、最後にデータを移行した時点以降にMagento1 でおこなわれた変更のみを移行するために必要です。 次の変更がおこなわれました。
 
-* 顧客がを通じて追加したデータ [店頭](https://glossary.magento.com/storefront) （顧客プロファイルの作成済みの注文、レビュー、変更）
+* ストアフロントを通じて顧客が追加したデータ（顧客プロファイルでの注文、レビュー、変更の作成）
 
-* 内の注文、製品、カテゴリを持つすべての操作 [管理者](https://glossary.magento.com/magento-admin) パネル
+* 管理パネル内の注文、製品、カテゴリを持つすべての操作
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ bin/magento migrate:delta [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 内 `Delta` mode, [!DNL Data Migration Tool] は、Magento独自のモジュールによってのみ作成されたデータを移行し、サードパーティ開発者によるコードや拡張に対する責任を負いません。 これらの拡張機能がストアフロントデータベースにデータを作成し、商人がこのデータをMagento2 — [!DNL Data Migration Tool] を適切に作成および変更する必要があります。
 
-次の場合、 [拡張](https://glossary.magento.com/extension) には独自のテーブルがあり、差分移行に伴う変更を追跡する必要があります。次の手順に従います。
+拡張機能に独自のテーブルがあり、差分移行に伴う変更を追跡する必要がある場合は、次の手順に従います。
 
 1. 追跡するテーブルを `deltalog.xml` ファイル
 1. 追加の delta クラスを作成し、 `Migration\App\Step\AbstractDelta`

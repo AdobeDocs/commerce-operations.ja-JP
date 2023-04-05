@@ -1,9 +1,9 @@
 ---
 title: 設定値の設定
 description: 設定値を設定し、管理でロックされている値を変更する方法について説明します。
-source-git-commit: cb8edb8de8f8419e9992b180ea927ba55cbd839b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 - Commerce をインストールする前に、デフォルトのスコープの設定値のみを設定できます。これは、有効なスコープのみであるからです。
 
-- Commerce をインストールした後、任意の Web サイトまたは [ストア表示](https://glossary.magento.com/store-view) 範囲。
+- Commerce をインストールした後、任意の Web サイトまたはストア表示範囲の設定値を設定できます。
 
 次のコマンドを使用します。
 

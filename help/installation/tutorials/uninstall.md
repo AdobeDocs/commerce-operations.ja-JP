@@ -1,9 +1,9 @@
 ---
 title: Adobe Commerceのアンインストールまたは再インストール
 description: 次の手順に従って、Adobe CommerceとMagento Open Sourceのオンプレミスインストールをアンインストールして再インストールします。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ bin/magento setup:uninstall
 
 デフォルトでは、 `bin/magento setup:upgrade` は、コンパイル済みのコードとキャッシュをクリアします。 通常、 `bin/magento setup:upgrade` コンポーネントを更新するには、各コンポーネントに異なるコンパイル済みクラスを必要とする場合があります。
 
-ただし、場合によっては（特に実稼動環境にデプロイする場合）、コンパイル済みのコードをクリアしないようにしたい場合があります。これには時間がかかる可能性があります。 ( [キャッシュ](https://glossary.magento.com/cache) はクリアされます )。 次の手順で [データベーススキーマ](https://glossary.magento.com/database-schema) およびデータ *なし* コンパイル済みコードを消去する場合は、次のように入力します。
+ただし、場合によっては（特に実稼動環境にデプロイする場合）、コンパイル済みのコードをクリアしないようにしたい場合があります。これには時間がかかる可能性があります。 （キャッシュはクリアされます）。 データベーススキーマとデータを更新するには *なし* コンパイル済みコードを消去する場合は、次のように入力します。
 
 ```bash
 bin/magento setup:upgrade --keep-generated

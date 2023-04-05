@@ -1,9 +1,9 @@
 ---
 title: 翻訳辞書と言語パッケージ
 description: 翻訳辞書を生成し、言語パッケージを構築する方法を説明します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1503'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 翻訳辞書を生成
 
-次の項目を生成できます。 [翻訳辞書] 既存の文字列のカスタマイズ、カスタムモジュール内の単語や語句の翻訳、テーマのローカライズ、作成を行うには [言語パッケージ](https://glossary.magento.com/language-package).
+次の項目を生成できます。 [翻訳辞書] 既存の文字列をカスタマイズするには、カスタムモジュール内の単語や語句を翻訳し、テーマをローカライズするか、言語パッケージを作成します。
 
 翻訳を開始するには、コマンドを使用して、既存のすべての語句を収集したリストで辞書の CSV ファイルを生成します。
 
@@ -139,7 +139,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 で言語パッケージを宣言する場合 `language.xml` 設定ファイルを使用する場合は、このパッケージの言語継承のシーケンスを指定する必要があります。
 
-言語の継承により、 _子_ 既存の翻訳に基づく _親_. 子の翻訳は親を上書きします。 ただし、子翻訳のアップロードや表示に失敗した場合や、フレーズや単語が欠落している場合は、親が使用されます [ロケール](https://glossary.magento.com/locale). [言語パッケージの継承の例](#example-of-language-inheritance).
+言語の継承により、 _子_ 既存の翻訳に基づく _親_. 子の翻訳は親を上書きします。 ただし、子翻訳のアップロードや表示に失敗した場合や、フレーズや単語が欠落している場合は、親ロケールが使用されます。 [言語パッケージの継承の例](#example-of-language-inheritance).
 
 パッケージを宣言するには、次の情報を指定します。
 
@@ -247,7 +247,7 @@ Commerce アプリケーションが `en_GB` パッケージの場合、次の�
 
 1. 言語パッケージ用のディレクトリを作成します。
 
-   例：`/var/www/html/magento2/app/i18n/ExampleCorp/xx_yy`
+   例： `/var/www/html/magento2/app/i18n/ExampleCorp/xx_yy`
 
 1. このディレクトリに、以下のすべてを追加します。
 

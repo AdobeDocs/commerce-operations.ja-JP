@@ -1,9 +1,9 @@
 ---
 title: の設定 [!DNL Data Migration Tool]
 description: 2 つの方法で [!DNL Data Migration Tool] Magento1 とMagento2 の間でデータを転送する。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ TLS プロトコルを使用して（つまり、公開/秘密鍵を使用して
 
 マッピング・ファイルを使用する手順は、次のとおりです。
 
-1. コピー元 `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` から `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` をクリックし、 `.dist` [拡張](https://glossary.magento.com/extension).
+1. コピー元 `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` から `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` をクリックし、 `.dist` 拡張子。
 
 1. で新しくコピーしたファイルのパスを更新します。 `<options>` のノード `config.xml`. 更新されたパスは、次のいずれかである必要があります。
 

@@ -1,9 +1,9 @@
 ---
 title: オンプレミスでの迅速なインストールを開始
 description: 所有しているインフラストラクチャにAdobe CommerceまたはMagento Open Sourceをインストールするには、次の手順に従います。
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # オンプレミスでの迅速なインストールを開始
 
-当社は [コンポーザー](https://getcomposer.org/) :Adobe CommerceとMagento Open Sourceのコンポーネントとその依存関係を管理します。 Composer を使用したAdobe CommerceとMagento Open Sourceの取得 [メタパッケージ](https://glossary.magento.com/metapackage) には次の利点があります。
+当社は [コンポーザー](https://getcomposer.org/) :Adobe CommerceとMagento Open Sourceのコンポーネントとその依存関係を管理します。 Composer を使用してAdobe CommerceとMagento Open Sourceのメタパッケージを取得すると、次の利点があります。
 
 - サードパーティライブラリをソースコードと一緒にバンドルせずに再利用する
 - 堅牢な依存関係管理を備えたコンポーネントベースのアーキテクチャを使用することで、拡張機能の競合と互換性の問題を減らす

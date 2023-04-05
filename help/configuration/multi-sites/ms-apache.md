@@ -1,9 +1,9 @@
 ---
 title: Apache で複数の Web サイトを設定
 description: Apache で複数の Web サイトを設定するには、このチュートリアルに従います。
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 我々は、以下を想定する。
 
-必要に応じて、既存の `index.php` Web サイトのエントリポイントスクリプトまたは [ストア表示](https://glossary.magento.com/store-view) に追加します。
+必要に応じて、既存の `index.php` web サイトまたはストア表示のエントリポイントスクリプトを次のように追加します。
 
 - 開発マシン（ノート PC、仮想マシンなど）で作業している
 

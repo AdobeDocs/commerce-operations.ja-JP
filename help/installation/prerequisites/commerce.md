@@ -1,9 +1,9 @@
 ---
 title: Adobe Commerceソフトウェアの入手
 description: Adobe CommerceおよびMagento Open Sourceソフトウェアのダウンロード方法
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -62,4 +62,4 @@ UNIX システムには `root` Web サーバ、PHP などのソフトウェア�
 
 実行 *not* web サーバーのドキュメントルートに、 `root` ユーザーを設定する必要があります。
 
-必要な操作 `root` 作成する権限 [ファイルシステム所有者](file-system/overview.md) その所有者を web サーバーのグループに追加します。 次を使用する [ファイルシステム所有者](https://glossary.magento.com/magento-file-system-owner) 走る `bin/magento` コマンドをコマンドラインから実行し、cron ジョブを設定します。cron ジョブは、タスクをスケジュールします。
+必要な操作 `root` 作成する権限 [ファイルシステム所有者](file-system/overview.md) その所有者を web サーバーのグループに追加します。 ファイルシステムの所有者を使用して、 `bin/magento` コマンドをコマンドラインから実行し、cron ジョブを設定します。cron ジョブは、タスクをスケジュールします。

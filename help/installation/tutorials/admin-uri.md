@@ -1,9 +1,9 @@
 ---
 title: 管理 URI を表示または変更する
 description: Adobe CommerceまたはMagento Open Source管理アプリケーションの URI を表示および変更するには、次の手順に従います。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 管理 URI を表示
 
-このセクションでは、コマンドラインを使用して [管理者](https://glossary.magento.com/admin) Uniform Resource Identifier ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)) をクリックします。
+このセクションでは、コマンドラインを使用して Admin Uniform Resource Identifier ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)) をクリックします。
 
 コマンドオプション：
 

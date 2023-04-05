@@ -1,9 +1,9 @@
 ---
 title: デプロイの前提条件
 description: 開発、ビルドまたは実稼動システムに Commerce をデプロイするための前提条件のリストを参照してください。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 - 次のすべて：
 
-   - 同じ [ファイルシステム所有者](https://glossary.magento.com/magento-file-system-owner) すべてのシステムでのユーザー名
+   - すべてのシステムで同じファイルシステム所有者のユーザー名を設定する
    - Web サーバーがすべてのシステムで同じユーザーとして実行されていることを確認します。
    - ファイルシステムの所有者が、すべてのシステムの Web サーバグループに存在することを確認します
 

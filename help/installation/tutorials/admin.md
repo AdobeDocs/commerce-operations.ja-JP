@@ -1,9 +1,9 @@
 ---
 title: 管理者アカウントの作成、編集、ロック解除
 description: Adobe CommerceまたはMagento Open Source管理アプリケーションの管理者アカウントを管理するには、次の手順に従います。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 - [デプロイメント設定の作成](deployment.md)
 - [少なくともMagento_Authorization モジュールとMagento_User モジュールを有効にする](manage-modules.md)
-- を作成します。 [データベーススキーマ](https://glossary.magento.com/database-schema)
+- データベーススキーマの作成
 
 >[!NOTE]
 >

@@ -1,9 +1,9 @@
 ---
 title: 検索エンジン用に Nginx を設定する
 description: Nginx Web サーバーを使用して検索エンジンを構成し、Adobe CommerceとMagento Open Sourceのオンプレミスインストールを行うには、次の手順に従います。
-source-git-commit: d3cfd97450164d38fd340b538099739601573d64
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ include /etc/nginx/conf.d/*.conf;
 
 ### プロキシとしての nginx の設定
 
-このセクションでは、 [nginx](https://glossary.magento.com/nginx) サーバー。
+このセクションでは、nginx サーバにアクセスできるユーザーを指定する方法について説明します。
 
 1. テキストエディターを使用したファイルの作成 `/etc/nginx/conf.d/magento_es_auth.conf` を次の内容で指定します。
 

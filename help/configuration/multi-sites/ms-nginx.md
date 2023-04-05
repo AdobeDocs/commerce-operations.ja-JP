@@ -1,9 +1,9 @@
 ---
 title: Nginx で複数の Web サイトを設定
 description: Nginx で複数の Web サイトを設定するには、このチュートリアルに従います。
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ nginx を使用した複数の Web サイトのセットアップロードマッ
 
 ## 手順 2:nginx 仮想ホストの作成
 
-この手順では、 [店頭](https://glossary.magento.com/storefront). Web サイトを使用することも、ストア表示を使用することもできます。ストアビューを使用する場合は、それに応じてパラメータ値を調整する必要があります。 この節のタスクは、 `sudo` 権限。
+この手順では、ストアフロントに Web サイトを読み込む方法について説明します。 Web サイトを使用することも、ストア表示を使用することもできます。ストアビューを使用する場合は、それに応じてパラメータ値を調整する必要があります。 この節のタスクは、 `sudo` 権限。
 
 1 つだけを使用して [nginx 仮想ホストファイル](#step-2-create-nginx-virtual-hosts)を使用すると、nginx の設定をシンプルでクリーンな状態に保つことができます。 複数の仮想ホストファイルを使用すると、各ストアをカスタマイズできます ( `french.mysite.mg` 例えば )。
 

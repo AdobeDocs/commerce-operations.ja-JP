@@ -1,9 +1,9 @@
 ---
 title: 静的ビューファイルのデプロイ
 description: 実稼働モードで Commerce ファイルシステムに静的ファイルを書き込む方法を説明します。
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-静的ビューファイル展開コマンドを使用すると、書き込みが可能です [静的ファイル](https://glossary.magento.com/static-files) コマースソフトウェアが [実稼動モード](../bootstrap/application-modes.md#production-mode).
+静的ビューファイル展開コマンドを使用すると、コマースソフトウェアが [実稼動モード](../bootstrap/application-modes.md#production-mode).
 
 用語 _静的ビューファイル_ は、次を指します。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 | `--language (-l)` | 指定した言語のファイルのみを生成します。 デフォルトでは、オプションは指定されていませんが、すべての ISO-639 言語コードのファイルを生成します。 一度に 1 つの言語コードの名前を指定できます。 デフォルト値は **すべて**.<br>例： `--language en_US --language es_ES` | いいえ |
 | `--exclude-language` | 指定した言語コードのファイルを生成します。 デフォルトでは、オプションが指定されていない場合、何も除外されません。 1 つの言語コードの名前を指定するか、言語コードのコンマ区切りリストを指定できます。 デフォルト値は **なし**. | いいえ |
 | `--theme <theme>` | 静的コンテンツをデプロイするテーマ。 デフォルト値は **すべて**.<br>例： `--theme Magento/blank --theme Magento/luma` | いいえ |
-| `--exclude-theme <theme>` | 静的コンテンツをデプロイする際に除外するテーマ。 デフォルト値は **なし**.<br>例：`--exclude-theme Magento/blank` | いいえ |
+| `--exclude-theme <theme>` | 静的コンテンツをデプロイする際に除外するテーマ。 デフォルト値は **なし**.<br>例： `--exclude-theme Magento/blank` | いいえ |
 | `--area (-a)` | 指定した領域に対してのみファイルを生成します。 デフォルトでは、オプションは指定されていませんが、すべての領域に対してファイルを生成します。 有効な値は次のとおりです。 `adminhtml` および `frontend`. デフォルト値は **すべて**.<br>例： `--area adminhtml` | いいえ |
 | `--exclude-area` | 指定した領域に対してファイルを生成しないでください。 デフォルトでは、オプションが指定されていない場合、何も除外されません。 デフォルト値は **なし**. | いいえ |
 | `--jobs (-j)` | 指定したジョブ数を使用して並列処理を有効にします。 デフォルトは 0 です（並列処理では実行しない）。 デフォルト値は **0**. | いいえ |

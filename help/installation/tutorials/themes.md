@@ -1,9 +1,9 @@
 ---
 title: テーマのアンインストール
 description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceテーマをアンインストールします。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # テーマのアンインストール
 
-このコマンドを使用する前に、テーマの相対パスを把握しておく必要があります。 テーマは、のサブディレクトリに配置されます。 `<magento_root>/app/design/<area name>`. テーマのパスは、領域 ( `frontend` （ストアフロントテーマの場合）または `adminhtml` ( [管理者](https://glossary.magento.com/magento-admin) テーマ )。
+このコマンドを使用する前に、テーマの相対パスを把握しておく必要があります。 テーマは、のサブディレクトリに配置されます。 `<magento_root>/app/design/<area name>`. テーマのパスは、領域 ( `frontend` （ストアフロントテーマの場合）または `adminhtml` （管理テーマ用）。
 
-例えば、Luma へのパス [テーマ](https://glossary.magento.com/theme) Adobe CommerceとMagento Open Source `frontend/Magento/luma`.
+例えば、Adobe CommerceとMagento Open Sourceで提供される Luma テーマへのパスが `frontend/Magento/luma`.
 
 テーマについて詳しくは、 [テーマ構造](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 このセクションでは、1 つ以上のテーマをアンインストールする方法について説明します。その際に、必要に応じてファイルシステムからテーマのコードを含めます。 最初にバックアップを作成して、後でデータを復元できます。
 
-このコマンドは、アンインストールします *のみ* 指定されたテーマ `composer.json`;言い換えれば、次のように提供されるテーマ [コンポーザー](https://glossary.magento.com/composer) パッケージ。 テーマが Composer パッケージでない場合は、次の方法で手動でアンインストールする必要があります。
+このコマンドは、アンインストールします *のみ* 指定されたテーマ `composer.json`;つまり、コンポーザーパッケージとして提供されるテーマです。 テーマが Composer パッケージでない場合は、次の方法で手動でアンインストールする必要があります。
 
 * の更新 `parent` ノード情報 `theme.xml` をクリックして、テーマへの参照を削除します。
 * ファイルシステムからテーマコードを削除する。
@@ -61,7 +61,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 1. テーマを `theme` データベーステーブル。
 1. 次を使用して、コードベースからテーマを削除する `composer remove`.
-1. 次をクリーンアップ： [キャッシュ](https://glossary.magento.com/cache).
+1. キャッシュをクリーンします。
 1. 生成されたクラスをクリーン
 1. If `--clear-static-content` が指定され、クリーン [生成された静的ビューファイル](../../configuration/cli/static-view-file-deployment.md).
 
@@ -102,4 +102,4 @@ Disabling maintenance mode
 
 >[!NOTE]
 >
->次をアンインストールするには： [管理者](https://glossary.magento.com/admin) テーマの場合は、コンポーネントの [依存注入](https://glossary.magento.com/dependency-injection) 設定 `<component root directory>/etc/di.xml`.
+>管理テーマをアンインストールするには、コンポーネントの依存関係挿入設定から削除する必要もあります。 `<component root directory>/etc/di.xml`.

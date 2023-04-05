@@ -1,9 +1,9 @@
 ---
 title: 検索エンジンの前提条件
 description: 次の手順に従って、Adobe CommerceとMagento Open Sourceのオンプレミスインストールで、サポートされている検索エンジンソフトウェアをインストールして設定します。
-source-git-commit: d3cfd97450164d38fd340b538099739601573d64
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '786'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 検索エンジンの前提条件
 
-Adobe CommerceとMagento Open Source2.4 以降では、すべてのインストールでを使用するように設定する必要があります [Elasticsearch](https://www.elastic.co) または [OpenSearch](https://opensearch.org/) を [カタログ](https://glossary.magento.com/catalog) 検索ソリューション。
+Adobe CommerceとMagento Open Source2.4 以降では、すべてのインストールでを使用するように設定する必要があります [Elasticsearch](https://www.elastic.co) または [OpenSearch](https://opensearch.org/) をカタログ検索ソリューションとして使用する。
 
 >[!NOTE]
 >
