@@ -1,9 +1,9 @@
 ---
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
-source-git-commit: b71819d123856d03dab872a1652b325ffe7178a6
+source-git-commit: ef501b34947f24f8028bd5876bd4a167551e03ec
 workflow-type: tm+mt
-source-wordcount: '11561'
+source-wordcount: '11914'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,25 @@ ht-degree: 0%
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.30 {#v1-1-30}
+
+* **ACSD-50336** (Adobe CommerceとMagento Open Source>=2.4.4-p1 &lt;2.4.4-p3) — 製品が在庫に戻ったり価格が変更されたりした場合に製品アラート e メールが送信されない問題を修正しました。
+* **ACSD-50367** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) — 値のない複数選択の顧客住所属性が作成された場合に、顧客住所の書き出しが機能しない問題を修正しました。
+* **ACSD-49877** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) — モバイルでビデオの自動再生が機能しない問題を修正しました [!DNL Safari] ビデオがリモートビデオファイルに直接リンクされていて、ストリーミングサービスに直接リンクされていないとき。
+* **ACSD-50165** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) — エラーを修正します。 *ファイルを削除できません。 警告！リンク解除：そのようなファイルまたはディレクトリはありません* 管理者から JS/CSS キャッシュをフラッシュする際に
+* **ACSD-49737** (Adobe CommerceとMagento Open Source>=2.4.1-p1 &lt;2.4.7) — カードの支払い失敗後に、クーポンが誤って使用されていた問題を修正しました。
+* **ACSD-50814** (Adobe CommerceとMagento Open Source>=2.4.6 &lt;2.4.7) — 管理者ユーザーがクレジットメモを作成できない問題を修正しました。
+* **ACSD-50116** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) — 管理者ユーザーがサブカテゴリのレベル 3 以下に対して URL の書き換えを作成できない問題を修正しました。
+* **ACSD-49513** (Adobe CommerceとMagento Open Source>=2.4.3 &lt;2.4.5) - 0 バイトファイルが原因でリモートストレージの同期が失敗する問題を修正しました。
+* **ACSD-46683** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) — 送料が表示される問題を修正します。 *まだ計算されていません*.
+* **ACSD-49129** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.6) - *[!UICONTROL content]* 属性（base64 イメージコード）が `rest/V1/products/sku/media` 製品メディア API 応答。
+* **ACSD-50276** (Adobe Commerce >=2.4.0 &lt;2.4.7 の場合 ) — 複数選択の顧客属性が作成された場合に、顧客登録フォームがストアフロントで機能しない問題を修正しました。
+* **ACSD-50527** (Adobe Commerce >=2.3.7 &lt;2.4.7 の場合 ) — 空の動的ブロックを含むページを保存する際に発生するエラーを修正します。
+* **ACSD-49973** (Adobe CommerceおよびMagento Open Source>=2.4.4 &lt;2.4.5) - GraphQLを介したバンドル製品の取得パフォーマンスが向上しました。
+* **BB2B-2598** (Adobe CommerceおよびMagento Open Source>=2.4.4 &lt;2.4.7 の場合 )- [!UICONTROL availableStores], [!UICONTROL countries], [!UICONTROL country], [!UICONTROL currency]、および [!UICONTROL storeConfig] GraphQLクエリ。
+* MDVA-42806、ACSD-48627、ACSD-46815の新しいバージョンを追加しました。
+* ACSD-49773、ACSD-47179、ACSD-48300のパッチメタデータを更新しました。
 
 ## v1.1.29 {#v1-1-29}
 
