@@ -1,9 +1,9 @@
 ---
 title: インデクサーの管理
 description: コマースインデクサーの表示および管理方法の例を参照してください。
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: a7ead687c681914d90e9ed2680c8f7494eba74d4
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -120,6 +120,10 @@ Catalog Search index has been rebuilt successfully in <time>
 - `Category Product` は、ストアビューで並行できます。
 - `Catalog Price` は、Web サイトや顧客グループに比べて優れています。
 - `Catalog Permissions` は、顧客グループに比べて優れています。
+
+>[!INFO]
+>
+>「カタログ検索のフルテキスト」と「カテゴリ製品」の並列化は、デフォルトで有効になっています。
 
 並列化を使用するには、製品価格インデクサで使用可能な次元モードの 1 つを設定します。
 
