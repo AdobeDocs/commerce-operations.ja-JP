@@ -2,9 +2,9 @@
 title: クラウドインフラストラクチャの地域
 description: Adobe Commerceで使用可能なAWSおよび Azure 地域を示す図を確認します。
 exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: d387ca9f3c7ce3b0c8ce254cc1c056e5b244ed34
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '72'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## AWS
 
-![AWS地域を示す図](../../../assets/playbooks/aws-regions.svg)
+![AWS地域を示す図](../../../assets/playbooks/aws-regions.png)
 
 >[!NOTE]
 >
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 ## Azure 地域
 
-![Azure 地域を示す図](../../../assets/playbooks/azure-regions.svg)
+![Azure 地域を示す図](../../../assets/playbooks/azure-regions.png)
 
 >[!NOTE]
 >
-> 中国とロシアでのオンプレミスのみ。
+> 中国とロシアでのオンプレミスのみ。 統合環境を必要とするすべてのマーチャントは、米国の地域を使用する必要があります。
