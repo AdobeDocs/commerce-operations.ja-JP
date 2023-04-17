@@ -2,9 +2,9 @@
 user-guide-title: 実装プレイブック
 user-guide-description: 成功するAdobe Commerceサイトの計画と実装の戦略について説明します。
 mini-toc-levels: 3
-source-git-commit: 5559d412ab58d392098cfff7a4cabb473c38cb0d
+source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,13 @@ ht-degree: 0%
       - [ヘッドレスアーキテクチャ](architecture/headless/adobe-commerce.md)
 - インフラストラクチャと導入 {#infrastructure}
    - [概要](infrastructure/overview.md)
-   - [オンプレミスインフラストラクチャ](infrastructure/on-premises.md)
+   - 自己ホスト {#self-hosting}
+      - [概要](infrastructure/self-hosting/overview.md)
+      - [オンプレミスインフラストラクチャ](infrastructure/self-hosting/on-premises.md)
+      - [セキュリティの概念](infrastructure/self-hosting/security-concepts.md)
+      - [テレメトリとツールの監視](infrastructure/self-hosting/monitoring-tools.md)
+      - [災害復旧のアイデア](infrastructure/self-hosting/disaster-recovery-ideas.md)
+      - [パフォーマンスのヒント](infrastructure/self-hosting/performance-tips.md)
    - クラウドインフラストラクチャ {#cloud}
       - [概要](infrastructure/cloud/overview.md)
       - [地域](infrastructure/cloud/regions.md)
