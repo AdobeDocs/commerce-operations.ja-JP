@@ -7,9 +7,9 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 66abe9f234aa44f7e07cc024607eeb6591a99d07
+source-git-commit: ab099b2a8a353c2462424831cf8100e7e281b1be
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ CDN は、Adobe Commerceプロジェクト用に最適化された安全な配�
 
 ## すべてのプル要求に対してAdobe Commerceと PHP のコーディング規格に従う必要がある
 
-Adobe Commerceは [コーディング規格](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. これらは、ソフトウェア開発の種類に関係なく、同様のパターン、スタイル、および期待されるデザインに従うことを保証します。 これが従うべき絶対的な要件は、Adobe Commerceのコードベースに貢献する際に必要となるものです。 しかし、カスタム開発のこの手法に従えば、すべての開発者、現在、将来に対して確実な基盤を築くことができます。 すべてのプルリクエストにコード標準を渡す必要がある場合、誰もが同じ一貫した開発パターンを理解し、期待できるようにします。
+Adobe Commerceは [コーディング規格](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. これらは、ソフトウェア開発の種類に関係なく、同様のパターン、スタイル、および期待されるデザインに従うことを保証します。 Adobe Commerceのコードベースに貢献する場合は、これが必須です。 ただし、カスタム開発でこの方法に従うことを選択する場合は、現在と将来の両方のすべての開発者に対して、確実な基礎を確立します。 すべてのプルリクエストにコード標準を渡す必要がある場合、誰もが同じ一貫した開発パターンを理解し、期待できるようにします。
 
 Adobe Commerceのコーディング規格に従うために、他の基盤として PHP の基本的なコーディング規格が使用されます。 開発者ガイドで、従う必要のある標準と、許容可能な偏差について明確に定義する必要があります。 ただし、フォールバックは、次の場所にある公に管理されているガイドに対するものです。 [PHP-FIG](https://www.php-fig.org){target="_blank"}.
 

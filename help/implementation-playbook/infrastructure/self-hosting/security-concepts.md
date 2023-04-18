@@ -7,7 +7,7 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 0d5c2d3ae44008142797c7ac91530a9df98ae004
+source-git-commit: cca195c20ddcba634a8fc39c0867e0ae28f43683
 workflow-type: tm+mt
 source-wordcount: '1571'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 読み取り専用ファイル・システム
 
-読み取り専用ファイルシステムの概念は、 [クラウドインフラのAdobe Commerce](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. これにより、悪役の使用する 1 つの主要な領域が完全に削除されます。 多くの悪用は、検出を避けるために、Commerce アプリケーションに存在すると想定されるファイルを変更することを利用しています。 不良アクターは、作成する代わりに、既存のファイルの内容を変更して、予期しないアクションを実行します。 ファイルシステムを読み取り専用にすると、この攻撃ベクトルが大幅に減少します。
+読み取り専用ファイルシステムの概念は、 [Adobe Commerce an cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. これにより、悪役の使用する 1 つの主要な領域が完全に削除されます。 多くの悪用は、検出を避けるために、Commerce アプリケーションに存在すると想定されるファイルを変更することを利用しています。 不良アクターは、作成する代わりに、既存のファイルの内容を変更して、予期しないアクションを実行します。 ファイルシステムを読み取り専用にすると、この攻撃ベクトルが大幅に減少します。
 
 ## TWO Factor 認証およびパスワードマネージャを使用
 
