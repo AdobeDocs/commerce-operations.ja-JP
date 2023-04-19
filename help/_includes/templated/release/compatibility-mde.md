@@ -1,7 +1,7 @@
 ---
-source-git-commit: ce2bb441829c81a032142182dcf84515e76c91b4
+source-git-commit: aa37cc2dff54825f21b0358be540cb954dd5c598
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---
@@ -489,7 +489,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="9">チャネルマネージャ</th>
     </tr>
     <tr>
-      <td>Channel Manager 1.4.0</td>
+      <td>Channel Manager 2.0.0</td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -1364,6 +1364,106 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>サポート</span>
       </td>
       <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="9">Adobe Commerceのフルフィルメントを保存</th>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.4.0 のストアフルフィルメント</td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.3.0 のストアフルフィルメント</td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.2.0 のストアフルフィルメント</td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.1.0 のストアフルフィルメント</td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.1.0 のストアフルフィルメント</td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
       </td>
       <td>サポートなし</span>
       </td>
