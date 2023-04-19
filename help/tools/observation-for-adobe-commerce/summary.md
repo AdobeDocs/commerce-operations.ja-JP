@@ -1,7 +1,7 @@
 ---
 title: 「 [!UICONTROL Summary] タブ"
 description: 詳しくは、 [!UICONTROL Summary] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: 61d0de370cbfa02f5fcc7d20ad283c54357294a3
+source-git-commit: 1d4e6ee745b656f0bc291a479e1d5bac5c8504e3
 workflow-type: tm+mt
 source-wordcount: '2653'
 ht-degree: 0%
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ![ホスト別の CPU パーセント](../../assets/tools/cpu-percent-by-host.jpg)
 
-すべての環境とノードの集計がに表示されます。 **[!UICONTROL CPU % by host]** フレーム 実稼動以外の環境の選択を解除する必要があります。 また、実稼動環境のすべてのノードが存在しない場合も注意してください。 CPU 使用率の高さに関するヒントについては、 [New Relic on Adobe Commerceを使用したパフォーマンスのトラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
+すべての環境とノードの集計がに表示されます。 **[!UICONTROL CPU % by host]** フレーム 実稼動以外の環境の選択を解除する必要があります。 また、実稼動環境のすべてのノードが存在しない場合も注意してください。 CPU 使用率の高さに関するヒントについては、 [Adobe CommerceでのNew Relicを使用したパフォーマンスのトラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -363,7 +363,7 @@ PHP プロセスの動作は、 [設定](https://www.php.net/manual/en/install.f
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![elasticsearch インデックス情報](../../assets/tools/elasticsearch-index-information.jpg)
+![elasticsearch インデックス情報](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
 **[Elasticsearchステータス：](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
 
