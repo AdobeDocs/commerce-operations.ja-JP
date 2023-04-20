@@ -1,9 +1,9 @@
 ---
 title: メッセージキューコンシューマー
 description: Adobe CommerceおよびMagento Open Sourceメッセージキューの消費者（関連する機能やシステム設定を含む）について説明します。
-source-git-commit: 1006a5761849b1d455469c6dfcb79a66cb90ec40
+source-git-commit: f9db986510a3ec8e62b9d628da40fdfd9741479f
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,8 @@ ht-degree: 0%
 | の個々のタスクにメッセージを作成します [バルク操作](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)（品目のインポートまたはエクスポート、一括価格での価格変更、倉庫への製品の割り当てなど）。 必須 [**[!UICONTROL Admin bulk operations]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html?#admin-bulk-operations) オプションが&#x200B;**[!UICONTROL Run asynchronously]**」をクリックします。 |  |  |  |
 | `codegeneratorProcessor` | + | + | + |
 | バックグラウンドでクーポンを非同期的に生成します。 を使用するために必要 [バッチクーポン生成](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html#method-2%3A-generate-a-batch-of-coupons) 機能。 |  |  |  |
+| `commerce.eventing.event.publish` | + | + |  |
+| で優先度として登録されたイベントを確認します。 [Adobe CommerceのAdobe I/Oイベント](https://developer.adobe.com/commerce/events/get-started/). |
 | `exportProcessor` | + | + | + |
 | 次の期間中に接続のタイムアウトを防ぐ [書き出し](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html) 大規模なデータセット（200,000 個の製品など）の |  |  |  |
 | `inventoryQtyCounter` | + | + |  |
