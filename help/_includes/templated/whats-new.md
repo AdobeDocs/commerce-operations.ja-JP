@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7dca677d6bde3f2700de5dc527a0f581e06032ad
+source-git-commit: 8bf5cb032671bbb1cd6ff05d4a26c699592d33db
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1058'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 0%
 ## 最新情報
 
 新しいドキュメントと既存ドキュメントの重要な更新について説明します。
+
+### 2023 年 4 月 20 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>2.4.6 の既知の問題に対して新しくリリースされたパッチに関する情報を追加しました。 詳しくは、 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Adobe CommerceとMagento Open Sourceのリリースノート</a>.</p>
+</td>
+      <td>技術</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fdbb0959b615689eba3068bc93c4c9876c7a7972">fdbb09</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p>次に関する情報を追加しました： <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard.html">セキュリティセンターウィジェット</a> （サイト全体の評価ツールダッシュボード）</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1e84ee6db07ec9080971de22a24fe8a7d8705916">1e84ee</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023 年 4 月 18 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>追加された <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/self-hosting/overview.html">新しいセクション</a> パフォーマンス、セキュリティ、監視、災害復旧などの自己ホスト型の概念について</p>
+</td>
+      <td>新規トピック</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/699c512de9c6d28ba354f02b4db76975eb5410a9">699c51</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023 年 4 月 13 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>公開済み <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">リリースノート</a> 1.1.30 Quality Patches Tool(QPT) パッケージリリースの場合。</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/84ed7dd2c24eef437d6719d9758da43423347eeb">84ed7d</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2023 年 4 月 6 日
 
