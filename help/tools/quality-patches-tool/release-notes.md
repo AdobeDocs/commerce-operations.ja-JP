@@ -1,9 +1,10 @@
 ---
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
-source-git-commit: 760f7f5e2e27dba8e77e564230ab3f1cf374dac2
+exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '11946'
+source-wordcount: '11947'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->詳しくは、 [パッチの適用](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) を参照してください。 詳しくは、 [利用可能なパッチ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) リリース済みのパッチの完全なリストを確認するには、『ソフトウェアアップデートガイド』を参照してください。
+>詳しくは、 [パッチの適用](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) を参照してください。 詳しくは、 [[!DNL Quality Patches Tool]:パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) リリース済みのパッチの完全なリストを確認するには、『ソフトウェアアップデートガイド』を参照してください。
 
 >[!INFO]
 >

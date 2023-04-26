@@ -1,9 +1,10 @@
 ---
 title: 使用状況
 description: 使用方法 [!DNL Quality Patches Tool].
-source-git-commit: e35469adb1b3278cf787416e1bc829fae9979efc
+exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->詳しくは、 [個々のパッチの適用](#apply-individual-patches) を参照してください。 詳しくは、 [利用可能なパッチ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) リリース済みのパッチの完全なリストを確認する。
+>詳しくは、 [個々のパッチの適用](#apply-individual-patches) を参照してください。 詳しくは、 [[!DNL Quality Patches Tool]:パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) リリース済みのパッチの完全なリストを確認する。
 
 >[!WARNING]
 >
@@ -60,7 +61,7 @@ Adobe Commerce 2.3.5。
 ステータステーブルには、以下が含まれます。
 
 - **タイプ**:
-   - `Optional` — [!DNL Quality Patches Tool] そして [クラウドパッチ](https://devdocs.magento.com/cloud/project/project-patch.html) パッケージは、Adobe CommerceおよびMagento Open Sourceのインストールではオプションです。
+   - `Optional` — [!DNL Quality Patches Tool] そして [Commerce on Cloud Infrastructure Guide > Apply patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) パッケージは、Adobe CommerceおよびMagento Open Sourceのインストールではオプションです。
    - `Deprecated` —Adobeは個々のパッチを非推奨にしました。 パッチを適用した場合は、そのパッチを元に戻すことをお勧めします。 元に戻す操作では、パッチもステータステーブルから削除されます。
 
 - **ステータス**:
@@ -81,7 +82,7 @@ Adobe Commerce 2.3.5。
 
 >[!WARNING]
 >
->実稼動環境にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることをお勧めします。 また、パッチを適用する前にデータをバックアップすることをお勧めします。 詳しくは、 [ファイル・システムのバックアップとロールバック](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>実稼動環境にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることをお勧めします。 また、パッチを適用する前にデータをバックアップすることをお勧めします。 詳しくは、 [ファイル・システム、メディア、データベースのバックアップとロールバック](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 1 つのパッチを適用するには、次のコマンドを実行します。 `MAGETWO-XXXX` は、ステータステーブルで指定されたパッチ ID です。
 
@@ -109,7 +110,7 @@ Adobe Commerce 2.3.5。
 
 >[!WARNING]
 >
->実稼動環境にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることをお勧めします。 また、パッチを適用する前にデータをバックアップすることをお勧めします。 詳しくは、 [ファイル・システムのバックアップとロールバック](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>実稼動環境にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることをお勧めします。 また、パッチを適用する前にデータをバックアップすることをお勧めします。 詳しくは、 [ファイル・システム、メディア、データベースのバックアップとロールバック](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 1 つのパッチを元に戻すには、次のコマンドを実行します。 `MAGETWO-XXXX` は、ステータステーブルで指定されたパッチ ID です。
 
