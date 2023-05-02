@@ -1,13 +1,13 @@
 ---
 title: インデクサーの管理
 description: コマースインデクサーの表示および管理方法の例を参照してください。
-source-git-commit: a7ead687c681914d90e9ed2680c8f7494eba74d4
+exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
+source-git-commit: beee479caeb4145d759c105012ffc8b6b55a6e39
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '663'
 ht-degree: 0%
 
 ---
-
 
 # インデクサーの管理
 
@@ -37,6 +37,9 @@ catalog_product_price                    Product Price
 catalogsearch_fulltext                   Catalog Search
 salesrule_rule                           Sales Rule
 ```
+
+>[!NOTE]
+> ライブ検索、カタログサービスまたは製品Recommendationsを使用するAdobe Commerceのマーチャントは、 [SaaS ベースの価格インデックス作成](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-index/index.html).
 
 ## インデクサーの状態の表示
 
