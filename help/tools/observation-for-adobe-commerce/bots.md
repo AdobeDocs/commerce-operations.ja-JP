@@ -1,9 +1,10 @@
 ---
-title: 「 [!UICONTROL bots] タブ"
+title: この [!UICONTROL bots] タブ
 description: 詳しくは、 [!UICONTROL bots] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: e135b8ab8b4f13de614299dd3c41c0cab52fefb2
+exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
+source-git-commit: 043389dc6d86228e459ac2c3592f391e85aa8f68
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1862'
 ht-degree: 0%
 
 ---
@@ -150,3 +151,11 @@ ht-degree: 0%
 ![ページビューの待ち時間は、このグラフにスパイクとして表示されます。](../../assets/tools/observation-for-adobe-commerce/pageview-latency.png)
 
 * この **[!UICONTROL Pageview Latency will show as spikes on this graph:]** frame は、 [!DNL bot] トラフィック。
+
+## [!UICONTROL Experimental Potential Malicious Bots] frame
+
+![試行用悪意のあるボットフレーム](../../assets/tools/observation-for-adobe-commerce/experimental-potential-malicious-bots-frame.jpg)
+
+この **[!UICONTROL Experimental Potential Malicious Bots]** frame は、10 個の複雑なクエリを個別に実行します。 悪意のある IP 要求署名を検出し、その結果を集計し、合計し、降順に並べ替えます。 クエリには、CVE の悪用と他の悪意のある要求の多数のデータ署名が含まれています。 セキュリティの修正やパッチによってブロックされ、サイトに対する脅威でない場合でも、要求は Web サイトで処理する必要があります。 リクエストの量は、短時間でかなり多くなる場合があります。 このフレームには、IP アドレスからの要求の合計は表示されず、要求が疑わしい意図を持っていたことを示すシグナルを含む要求が表示されます。
+
+トラフィックが疑わしいもので、トラフィックが有効なリクエストを配信する可能性のあるコンテンツ分散ネットワーク (CDN) アドレスから発生していないことを確認します。 リクエストが CDN IP アドレスからのものであると判断された場合は、そのサービスサプライヤーに連絡して、ネットワークを介した疑わしいトラフィックをブロックしてください。 アドレスまたはリクエスト URL をブロックする必要がある場合は、 [に対するAdobe Commerceの悪意のあるトラフィックをブロックする [!DNL Fastly] レベル](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html) ( Adobe Commerce Support Knowledge Base )。
