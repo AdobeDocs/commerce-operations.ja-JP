@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
+source-git-commit: 205a0b67fab14a313d28355eed668d60ce477e64
 workflow-type: tm+mt
-source-wordcount: '11947'
+source-wordcount: '12066'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ ht-degree: 0%
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.31 {#v1-1-31}
+
+* **ACSD-50345** (Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.3 &lt;2.4.4 || >=2.4.4-p1 &lt;2.4.6) — 支払い失敗の送信後に Recaptcha v2 が再読み込みされない問題を修正しました。
+* **ACSD-50817** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) - Cron ジョブを最適化します `sales_clean_quotes` をクリックして、より速く実行します。
+* **ACSD-49392** (Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7) — バンドルされた製品の一部返金後に注文ステータスがクローズ済みに変わる問題を修正しました。
+* **ACSD-51036** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.5) — 同時 REST API 呼び出し中に競合状態が発生すると、 [!UICONTROL Items Ordered] 表。
+* **ACSD-50858** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.7) — バナーのコンテンツを読み込む際のパフォーマンスが向上しました。
+* MDVA-39305-v2、ACSD-45169の新しいバージョンを追加しました。
+* ACSD-50260-v2 パッチを更新しました。
 
 ## v1.1.30 {#v1-1-30}
 
