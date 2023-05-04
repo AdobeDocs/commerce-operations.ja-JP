@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8bf5cb032671bbb1cd6ff05d4a26c699592d33db
+source-git-commit: 0b9213db01cce14938e560ae576cf8ea543e4da7
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 0%
 ## 最新情報
 
 新しいドキュメントと既存ドキュメントの重要な更新について説明します。
+
+### 2023 年 4 月 21 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>追加された <code class="language-plaintext highlighter-rouge">commerce.eventing.event.publish</code> メッセージキューコンシューマー <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html">参照テーブル</a>.</p>
+</td>
+      <td>技術</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2f9bfcf9a8232cbe659062a9b1bc88eda3d9158c">2f9bfc</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2023 年 4 月 20 日
 
