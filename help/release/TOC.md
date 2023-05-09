@@ -1,7 +1,9 @@
 ---
 user-guide-title: リリース情報
 user-guide-description: Adobe Commerceのパッチとサービスに関するすべてのリリース情報に 1 か所でアクセスできます。
-source-git-commit: 1ca3d530051b0f59084bf370951f8f0b03dcfc28
+feature: Release Notes
+recommendations: noDisplay, noCatalog
+source-git-commit: 3ecac271a4c86162c07ce89b9e5664c2293ad07b
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 15%
