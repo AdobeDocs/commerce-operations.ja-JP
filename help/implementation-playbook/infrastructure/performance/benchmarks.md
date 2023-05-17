@@ -2,9 +2,9 @@
 title: パフォーマンスベンチマーク
 description: AdobeクラウドインフラストラクチャでホストされるAdobe Commerce実装のパフォーマンスベンチマーク結果を確認します。
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
-source-git-commit: 09a42dc68836b34eab2c9d90879b897729cd1b09
+source-git-commit: eeb7146a8051e8692ebf974d65db75a4999cf2e6
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,7 @@ Adobe Commerceインスタンスに対して実行する JMeter 読み込みプ�
    - vCPU 216 （72 x 3 ノード）
    - メモリ 432 GiB （144 x 3 ノード）
    - ネットワーク帯域幅 768 Gbps （256 x 3 ノード）
+   - EBS 帯域幅57000 Mbps (19000 x 3 ノード )
    - プロビジョニング済みストレージ 100 GB
 
 - **サービスノードの仕様**
