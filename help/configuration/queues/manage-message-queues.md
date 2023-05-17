@@ -1,13 +1,13 @@
 ---
 title: メッセージキューの管理
 description: Adobe Commerceのコマンドラインからメッセージキューを管理する方法を説明します。
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
+source-git-commit: caca8df48c498977f830082ef27d9afb6220ae92
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
-
 
 # メッセージキューの管理
 
@@ -74,7 +74,7 @@ Cron ジョブは、コンシューマーを再起動するデフォルトのメ
 - `cron_run` - `consumers_runner` cron ジョブ ( デフォルト= `true`) をクリックします。
 - `max_messages`  — 各コンシューマーが処理する必要があるメッセージの最大数（デフォルトは=） `10000`) をクリックします。 お勧めしませんが、0 を使用して、消費者が終了するのを防ぐことができます。 詳しくは、 [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) コンシューマーがメッセージキューからのメッセージを処理する方法を設定する場合。
 - `consumers`  — 実行するコンシューマーを指定する文字列の配列。 空の配列が実行されます *すべて* 消費者
-- `multiple_processes`  — 実行するコンシューマーをプロセス数で指定するキーと値のペアの配列。
+- `multiple_processes`  — 実行するコンシューマーをプロセス数で指定するキーと値のペアの配列。 Commerce 2.4.4 以降でサポートされます。
 
    >[!INFO]
    >
