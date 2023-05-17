@@ -1,13 +1,13 @@
 ---
 title: デプロイメント用の設定ファイル
 description: Commerce アプリケーションをインストールするための設定ファイルの動作を理解します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
+source-git-commit: dd990800551dd2ba35ebc7d2bc04edeb1b183d6f
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
-
 
 # デプロイメント用の設定ファイル
 
@@ -17,9 +17,6 @@ Adobe Commerceには、コンポーネントを簡単にカスタマイズし、
 このファイルには、インストールされたモジュール、テーマ、言語パッケージの一覧が含まれています。および共有設定
 
    このファイルをチェックインしてソース管理を行い、開発、ステージング、実稼動の各システムで使用します。
-
-   2.2 リリース以降、 `app/etc/config.php` ファイルが `.gitignore` ファイル。
-これは容易にするために行われた [パイプラインのデプロイメント](../deployment/technical-details.md).
 
 - `app/etc/env.php` には、インストール環境に固有の設定が含まれます。
 
