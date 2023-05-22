@@ -1,13 +1,14 @@
 ---
 title: Web サーバーの設定
 description: Vanrish と連携するように Web サーバーを設定する方法を説明します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Cache, Install, Logs
+exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%
 
 ---
-
 
 # Web サーバーの設定
 

@@ -1,13 +1,14 @@
 ---
 title: 一般的な設定パスの参照
 description: 一般的な設定値と詳細な設定値の一覧を参照してください。
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+feature: Configuration, Observability, Roles/Permissions, System
+exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '965'
 ht-degree: 0%
 
 ---
-
 
 # 一般的および高度な設定パスのリファレンス
 
@@ -54,7 +55,7 @@ ht-degree: 0%
 | VAT 番号 | `general/store_information/merchant_vat_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
 | シングルストアモードを有効にする | `general/single_store_mode/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Web パス
 
@@ -86,7 +87,7 @@ ht-degree: 0%
 | JavaScript が無効な場合に通知を表示 | `web/browser_capabilities/javascript` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ローカルストレージが無効な場合に通知を表示 | `web/browser_capabilities/local_storage` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### 通貨設定パス
 
@@ -111,7 +112,7 @@ ht-degree: 0%
 | エラーメール送信者 | `currency/import/error_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | エラーメールテンプレート | `currency/import/error_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### 連絡先のパス
 
@@ -124,7 +125,7 @@ ht-degree: 0%
 | メール送信者 | `contact/email/sender_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | メールテンプレート | `contact/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### レポートのパス
 
@@ -135,7 +136,7 @@ ht-degree: 0%
 | 年度累計開始 | `reports/dashboard/ytd_start` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 今月の開始 | `reports/dashboard/mtd_start` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### コンテンツ管理パス
 
@@ -149,19 +150,19 @@ ht-degree: 0%
 | 階層メタデータの有効化 | `cms/hierarchy/metadata_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 階層メニューのデフォルトのレイアウト | `cms/hierarchy/menu_layout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-### New Relic レポートパス
+### New Relicレポートパス
 
-これらの設定値は、 **ストア** /設定/ **設定** > **一般** > **New Relic レポート**.
+これらの設定値は、 **ストア** /設定/ **設定** > **一般** > **New Relic Reporting**.
 
 | 名前 | 設定パス | コマースのみ？ |
 |--------------|--------------|--------------|
-| New Relic 統合の有効化 | `newrelicreporting/general/enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| New Relic アプリケーション名 | `newrelicreporting/general/app_name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| New Relic統合の有効化 | `newrelicreporting/general/enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| New Relic Application Name | `newrelicreporting/general/app_name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Cron を有効にする | `newrelicreporting/cron/enable_cron` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 詳細カテゴリ
 
@@ -203,7 +204,7 @@ ht-degree: 0%
 | 大文字と小文字を区別 | `admin/captcha/case_sensitive` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 有効なアクション | `admin/magento_logging/actions` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### システムパス
 
@@ -271,7 +272,7 @@ ht-degree: 0%
 | 頻度 | `system/magento_scheduled_import_export_log/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | エラーメールテンプレート | `system/magento_scheduled_import_export_log/error_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### 開発者パス
 
@@ -301,4 +302,4 @@ ht-degree: 0%
 | 非同期インデックス作成 | `dev/grid/async_indexing` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ユーザー定義属性をキャッシュ | `dev/caching/cache_user_defined_attributes` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

@@ -1,13 +1,14 @@
 ---
 title: 検索エンジンの概要
 description: Adobe CommerceとMagento Open Sourceの検索エンジンオプションの概要。
-source-git-commit: 6d2efee51d740583a4606ffa61c972a4020d124b
+feature: Configuration, Search
+exl-id: 0ea78ca2-0bca-4d61-980a-02fb7da04553
+source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
 
 ---
-
 
 # 検索エンジンの概要
 

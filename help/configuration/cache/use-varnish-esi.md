@@ -2,13 +2,14 @@
 title: Vanish ESI ブロック
 description: Edge Side のインクルードと、それらを使用して Web ページを埋め込む方法について説明します。
 badge: label="Contributed by Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
-source-git-commit: 90544452f5f0834e096ead6ea3df64dcb5eaea11
+feature: Configuration, Cache
+exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%
 
 ---
-
 
 # Vanish ESI ブロック
 

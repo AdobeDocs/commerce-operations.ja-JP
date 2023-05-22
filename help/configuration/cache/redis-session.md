@@ -1,13 +1,14 @@
 ---
 title: セッションストレージに Redis を使用
 description: セッションストレージ用に Redis を設定する方法を説明します。
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+feature: Configuration, Cache
+exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 1%
 
 ---
-
 
 # セッションストレージに Redis を使用
 
@@ -133,4 +134,3 @@ redis-cli ping
 ### 圧縮データの検査
 
 圧縮されたセッションデータとページキャッシュを調べるには、 [RESP.app](https://flathub.org/apps/details/app.resp.RESP) は、Commerce 2 セッションとページのキャッシュの自動解凍をサポートし、PHP セッションデータを人間が読み取り可能な形式で表示します。
-

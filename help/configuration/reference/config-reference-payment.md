@@ -1,13 +1,14 @@
 ---
 title: 支払設定パスの参照
 description: 設定可能な支払い方法の値のリストを表示します。
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+feature: Configuration, Payments
+exl-id: f3e356aa-7262-4d99-9ed4-d77cbd93708c
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '4133'
+source-wordcount: '4100'
 ht-degree: 0%
 
 ---
-
 
 # 支払設定パスの参照
 
@@ -84,7 +85,7 @@ ht-degree: 0%
 | スケジュールされた取得 | `payment_all_paypal/express_checkout/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal Merchant Pages スタイル | `payment_all_paypal/express_checkout/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## PayPal Payments Pro
 
@@ -95,7 +96,7 @@ ht-degree: 0%
 | スケジュールされた取得 | `payment_all_paypal/payments_pro_hosted_solution/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | スケジュールされた取得 | `payment_all_paypal/payments_pro_hosted_solution_without_bml/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Payments Pro Hosted Solution（英国）
 
@@ -112,7 +113,7 @@ ht-degree: 0%
 | 適用国の支払い元 | `payment/hosted_pro/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | SSL 検証の有効化 | `payment/hosted_pro/verify_peer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## PayPal Payflow Pro
 
@@ -154,7 +155,7 @@ ht-degree: 0%
 | CVV エントリが必要 | `payment/payflow_advanced/csc_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | メール送信の確認 | `payment/payflow_advanced/email_confirmation` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## PayPal ペイフローリンク
 
@@ -176,7 +177,7 @@ ht-degree: 0%
 | 並べ替え順 | `payment/payflow_link/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 支払いアクション | `payment/payflow_link/payment_action` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 小計チェックアウトパスなし
 
@@ -190,7 +191,7 @@ ht-degree: 0%
 | 特定の国からの支払い | `payment/free/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 並べ替え順 | `payment/free/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 配送時現金支払いパス
 
@@ -206,7 +207,7 @@ ht-degree: 0%
 | 最大注文合計 | `payment/cashondelivery/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 並べ替え順 | `payment/cashondelivery/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 銀行振替支払いパス
 
@@ -222,7 +223,7 @@ ht-degree: 0%
 | 最大注文合計 | `payment/banktransfer/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 並べ替え順 | `payment/banktransfer/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 通貨注文のパスを確認または変更
 
@@ -238,7 +239,7 @@ ht-degree: 0%
 | 最大注文合計 | `payment/checkmo/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 並べ替え順 | `payment/checkmo/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 発注書のパス
 
@@ -253,7 +254,7 @@ ht-degree: 0%
 | 最大注文合計 | `payment/purchaseorder/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 並べ替え順 | `payment/purchaseorder/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 国際パス
 
@@ -1401,4 +1402,4 @@ ht-degree: 0%
 | 特定の国からの支払い | `payment_us/eway/specificcountry` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 並べ替え順 | `payment_us/eway/sort_order` |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

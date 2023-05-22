@@ -1,7 +1,9 @@
 ---
 title: キャッシュの設定
 description: キャッシュと、Adobe CommerceおよびMagento Open Sourceアプリケーションのキャッシュメカニズムの設定方法について説明します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Cache
+exl-id: 6effa069-c043-411a-b161-01210be17391
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%

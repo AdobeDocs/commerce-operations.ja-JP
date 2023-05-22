@@ -1,13 +1,14 @@
 ---
 title: セキュア cron PHP
 description: ブラウザーで cron.php ファイルを実行できるユーザーを制限します。
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+feature: Configuration, Security
+exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
+source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # セキュア cron PHP
 
@@ -180,7 +181,7 @@ systemctl restart nginx
 
 1. データベースに、Commerce データベースユーザーまたは `root`.
 
-   以下に例を挙げます。
+   例：
 
    ```bash
    mysql -u magento -p
@@ -192,7 +193,7 @@ systemctl restart nginx
    use <database-name>;
    ```
 
-   以下に例を挙げます。
+   例：
 
    ```shell
    use magento;
@@ -275,7 +276,7 @@ Apache Web サーバーを使用している場合は、 `.htaccess` ファイ�
      </Files>
    ```
 
-   以下に例を挙げます。
+   例：
 
    ```conf
    ## Deny access to cron.php
@@ -302,7 +303,7 @@ Apache Web サーバーを使用している場合は、 `.htaccess` ファイ�
 
 - `<group name>` は任意の有効な cron グループ名です（オプション）
 
-以下に例を挙げます。
+例：
 
 ```http
 https://magento.example.com/magento2/pub/cron.php?group=index

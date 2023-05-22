@@ -1,13 +1,14 @@
 ---
 title: 検索エンジンの設定
 description: Adobe CommerceとMagento Open Sourceのオンプレミスデプロイメント用に検索エンジンを設定します。
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+feature: Configuration, Search
+exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
+source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
 
 ---
-
 
 # 検索エンジンの設定
 
@@ -114,4 +115,3 @@ ht-degree: 0%
    >[!INFO]
    >
    >キャッシュとは異なり、インデクサーは cron ジョブで更新されます。 確認 [cron が有効になっています](../cli/configure-cron-jobs.md) 検索エンジンを使用する前に
-

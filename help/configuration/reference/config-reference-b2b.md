@@ -1,13 +1,14 @@
 ---
 title: B2B 拡張機能の設定パスの参照
 description: B2B 関連の設定値の一覧を参照してください。
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+feature: Configuration, B2B, Companies, Payments, Quotes
+exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
-
 
 # B2B 拡張機能の設定パスの参照
 
@@ -44,7 +45,7 @@ _これは、Adobe Commerce用 B2B がインストールされているインス
 | 該当する支払い方法 | `btob/default_b2b_payment_methods/applicable_payment_methods` |  |  |  |
 | 支払い方法 | `btob/default_b2b_payment_methods/available_payment_methods` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 顧客カテゴリ
 
@@ -88,7 +89,7 @@ _これは、Adobe Commerce用 B2B がインストールされているインス
 | 返金済みメールテンプレート | `company/email/credit_refunded_email_template` |  |  |  |
 | 元に戻されたメールテンプレート | `company/email/credit_reverted_email_template` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### 購買依頼リストのパス
 
@@ -98,7 +99,7 @@ _これは、Adobe Commerce用 B2B がインストールされているインス
 | -------------- | -------------- | -------------- | -------------- | -------------- |
 | 購買依頼リストの数 | `requisitionlist/general/number_requisition_lists` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 販売カテゴリ
 
@@ -121,7 +122,7 @@ _これは、Adobe Commerce用 B2B がインストールされているインス
 | 見積もりメールのコピーの送信先 | `sales_email/quote/copy_to` |  |  | ![機密](/help/assets/configuration/cloud-sens.png) |
 | 見積もりのメールコピー方法の送信 | `sales_email/quote/copy_method` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### パスを引用符で囲む
 
@@ -140,7 +141,7 @@ _これは、Adobe Commerce用 B2B がインストールされているインス
 | アップロード用のファイル形式 | `quote/attached_files/file_formats` |  |  |  |
 | 最大ファイルサイズ | `quote/attached_files/maximum_file_size` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 支払い方法のパス
 
@@ -257,4 +258,4 @@ _これは、Adobe Commerce用 B2B がインストールされているインス
 | 最大注文合計 | `payment/it/companycredit/max_order_total` |  |  |  |
 | 並べ替え順 | `payment/it/companycredit/sort_order` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

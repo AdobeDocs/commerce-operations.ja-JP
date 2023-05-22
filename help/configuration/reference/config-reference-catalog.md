@@ -1,13 +1,14 @@
 ---
 title: カタログ設定パスの参照
 description: カタログ設定値の一覧を参照してください。
-source-git-commit: e4b7ea70b96143629b245409537459ad259393e0
+feature: Configuration, Catalogs
+exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 0%
 
 ---
-
 
 # カタログ設定パスの参照
 

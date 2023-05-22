@@ -1,14 +1,15 @@
 ---
 title: データベース・プロファイラの構成
 description: データベース・プロファイラの出力を構成する方法の例を参照してください。
+feature: Configuration, Storage
 badge: label="Contributed by Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
-source-git-commit: bcb995ea417423b0cbc59c035ba5fdedbce3310e
+exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
 
 ---
-
 
 # データベース・プロファイラの構成
 

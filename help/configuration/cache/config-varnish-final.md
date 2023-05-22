@@ -1,13 +1,14 @@
 ---
 title: 最終検証
 description: Vanrish の設定が、Adobe Commerceアプリケーションで動作するように正しく設定されていることを確認します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Cache
+exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
-
 
 # ワニス構成の最終検証
 
@@ -82,4 +83,4 @@ Vanish が機能している場合、キャッシュ可能なブロックを含�
 
 >[!TIP]
 >
->503（バックエンドの取得に失敗）エラーが発生した場合は、 [503（サービスを利用できない）エラーのトラブルシューティング](https://support.magento.com/hc/en-us/articles/360034631211) 内 _Adobe Commerce Help Center_.
+>503（バックエンドの取得に失敗）エラーが発生した場合は、 [503（サービスを利用できない）エラーのトラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) 内 _Adobe Commerce Help Center_.

@@ -1,13 +1,14 @@
 ---
 title: 複数の Vanrish インスタンスを使用したキャッシュのクリア
 description: キャッシュの消去が複数の Vanish インスタンスでどのように動作するかを説明します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+feature: Configuration, Cache
+exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # 複数の Vanrish インスタンスをキャッシュクリアする
 
@@ -23,7 +24,7 @@ Commerce は、Vanish ホストを [`magento setup:config:set`](../../installati
 
 パラメーターの形式は、 `<hostname or ip>:<listen port>`を指定し、 `<listen port>` ポート 80 の場合。
 
-以下に例を挙げます。
+例：
 
 ```bash
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080

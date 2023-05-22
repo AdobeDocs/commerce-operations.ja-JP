@@ -1,13 +1,14 @@
 ---
 title: 顧客設定パスのリファレンス
 description: 顧客の設定値のリストを参照してください。
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+feature: Configuration, Customers
+exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
-
 
 # 顧客設定パスのリファレンス
 
@@ -30,7 +31,7 @@ ht-degree: 0%
 | 配信停止メール送信者 | `newsletter/subscription/un_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | メールテンプレートの購読解除 | `newsletter/subscription/un_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 顧客設定パス
 
@@ -100,7 +101,7 @@ ht-degree: 0%
 | CAPTCHA で使用されるシンボル | `customer/captcha/symbols` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 大文字と小文字を区別 | `customer/captcha/case_sensitive` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## ウィッシュリストのパス
 
@@ -117,7 +118,7 @@ ht-degree: 0%
 | メールテキストの長さ制限 | `wishlist/email/text_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ウィッシュリストの概要を表示 | `wishlist/wishlist_link/use_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 招待パス
 
@@ -134,7 +135,7 @@ ht-degree: 0%
 | 顧客招待メール送信者 | `magento_invitation/email/identity` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 顧客招待メールテンプレート | `magento_invitation/email/template` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## ポイントパスの報奨
 
@@ -168,7 +169,7 @@ ht-degree: 0%
 | 報酬ポイントの有効期限警告メール | `magento_reward/notification/expiry_warning_template` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | （日）前の有効期限警告 | `magento_reward/notification/expiry_day_before` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## プロモーションパス
 
@@ -190,7 +191,7 @@ ht-degree: 0%
 | コードサフィックス | `promo/auto_generated_coupon_codes/suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | X 文字ごとにダッシュ | `promo/auto_generated_coupon_codes/dash` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## ギフトレジストリパス
 
@@ -208,7 +209,7 @@ ht-degree: 0%
 | メールテンプレート | `magento_giftregistry/update_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | メール送信者 | `magento_giftregistry/update_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 永続的な買い物かごパス
 
@@ -229,4 +230,4 @@ ht-degree: 0%
 | 最近表示した製品を保持 | `persistent/options/recently_viewed` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顧客グループのメンバーシップとセグメント化を保持 | `persistent/options/customer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

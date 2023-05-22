@@ -1,13 +1,14 @@
 ---
 title: セールス構成パスの参照
 description: 販売構成値の一覧を参照してください。
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+feature: Configuration, Checkout, Gift, Shipping/Delivery, Taxes
+exl-id: 7981f78a-5e5f-422c-9bff-54022e1fb9f3
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1473'
 ht-degree: 0%
 
 ---
-
 
 # セールス構成パスの参照
 
@@ -66,7 +67,7 @@ ht-degree: 0%
 | 製品レベルでの RMA の有効化 | `sales/magento_rma/enabled_on_product` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | ストアの住所を使用 | `sales/magento_rma/use_store_address` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## セールスメールのパス
 
@@ -139,7 +140,7 @@ ht-degree: 0%
 | ヘッダーに注文 ID を表示 | `sales_pdf/shipment/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ヘッダーに注文 ID を表示 | `sales_pdf/creditmemo/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 税パス
 
@@ -188,7 +189,7 @@ ht-degree: 0%
 | FPT に税を適用 | `tax/weee/apply_vat` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | FPT を小計に含める | `tax/weee/include_in_subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## チェックアウトパス
 
@@ -213,7 +214,7 @@ ht-degree: 0%
 | 支払い失敗テンプレート | `checkout/payment_failed/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 支払い失敗メールコピー方法の送信 | `checkout/payment_failed/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 配送設定のパス
 
@@ -224,7 +225,7 @@ ht-degree: 0%
 | カスタム発送ポリシーの適用 | `shipping/shipping_policy/enable_shipping_policy` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 発送ポリシー | `shipping/shipping_policy/shipping_policy_content` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 複数配送設定のパス
 
@@ -235,7 +236,7 @@ ht-degree: 0%
 | 複数の住所への発送を許可 | `multishipping/options/checkout_multiple` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 複数の住所への出荷に許可される最大数量 | `multishipping/options/checkout_multiple_maximum_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 配信メソッドのパス
 
@@ -381,7 +382,7 @@ ht-degree: 0%
 | 該当しない場合はメソッドを表示 | `carriers/dhl/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 並べ替え順 | `carriers/dhl/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Google API パス
 
@@ -407,7 +408,7 @@ ht-degree: 0%
 | コンバージョン値のタイプ | `google/adwords/conversion_value_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | コンバージョン値 | `google/adwords/conversion_value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## ギフトカードのパス
 
@@ -432,4 +433,4 @@ ht-degree: 0%
 | 新しいプールサイズ | `giftcard/giftcardaccount_general/pool_size` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 低コードプールしきい値 | `giftcard/giftcardaccount_general/pool_threshold` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

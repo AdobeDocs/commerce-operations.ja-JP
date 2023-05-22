@@ -1,13 +1,14 @@
 ---
 title: デプロイの前提条件
 description: 開発、ビルドまたは実稼動システムに Commerce をデプロイするための前提条件のリストを参照してください。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Deploy
+exl-id: 9ea0eeff-e0f8-4532-887c-5d7f07d89ddd
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
 
 ---
-
 
 # 開発、ビルドおよび実稼動システムの前提条件
 

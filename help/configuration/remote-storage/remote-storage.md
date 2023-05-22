@@ -1,7 +1,9 @@
 ---
 title: リモートストレージの構成
 description: オンプレミスのコマースアプリケーション用にリモートストレージモジュールを構成する方法を説明します。
-source-git-commit: 9a5993c9a65ad210f1a9682734730f235bbc3d44
+feature: Configuration, Storage
+exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%

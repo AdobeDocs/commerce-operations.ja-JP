@@ -1,13 +1,14 @@
 ---
 title: サービス設定パスの参照
 description: サービス設定値の一覧を参照してください。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+feature: Configuration, Services
+exl-id: 77818c54-21ae-4a66-81bf-468bd7d09cda
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '156'
 ht-degree: 0%
 
 ---
-
 
 # サービス設定パスの参照
 
@@ -24,7 +25,7 @@ ht-degree: 0%
 | デフォルトの応答文字セット | `webapi/soap/charset` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 匿名ゲストによるアクセスを許可 | `webapi/webapisecurity/allow_insecure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## OAuth パス
 
@@ -40,4 +41,4 @@ ht-degree: 0%
 | OAuth 消費者資格情報 HTTP Post maxredirects | `oauth/consumer/post_maxredirects` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | OAuth 消費者資格情報 HTTP Post タイムアウト | `oauth/consumer/post_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

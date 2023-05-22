@@ -1,7 +1,9 @@
 ---
 title: 静的コンテンツキャッシュ
 description: 静的コンテンツの署名と、この機能を有効または無効にする方法を理解できます。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Cache, SCD
+exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%

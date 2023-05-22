@@ -1,13 +1,14 @@
 ---
 title: コマース用の Vanrish の設定
 description: Commerce アプリケーションの Vanrish 構成ファイルを更新および管理する方法を説明します。
-source-git-commit: d451ea025a6f4fc8a4a9f15ca83896a63058a3a0
+feature: Configuration, Cache, SCD
+exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
 
 ---
-
 
 # Vanish を使用するように Commerce アプリケーションを設定する
 
@@ -62,7 +63,7 @@ Vanish 構成ファイルを管理から書き出すには、次の手順に従�
 
 1. Adobeが開くことをお勧めします `default.vcl` をクリックし、 `acl purge` を Vanish ホストの IP アドレスに追加します。 （複数のホストを別々の行で指定することも、 CIDR 表記を使用することもできます）。
 
-   以下に例を挙げます。
+   例：
 
    ```conf
     acl purge {

@@ -1,7 +1,9 @@
 ---
 title: 単一マシンの導入
 description: コマンドラインを使用して、実稼動サーバー上に Commerce に更新をデプロイする方法を説明します。
-source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
+feature: Configuration, Deploy
+exl-id: ca73309c-7584-4506-99de-dd933651eeb6
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%

@@ -1,14 +1,15 @@
 ---
 title: Security.txt
 description: セキュリティ研究者が脆弱性を報告する際に役立つ情報を提供する方法を説明します。
+feature: Configuration, Security
 badge: label="Corra から Kalpesh Mehta に寄稿" type="Informative" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="Kalpesh Mehta"
-source-git-commit: bcb995ea417423b0cbc59c035ba5fdedbce3310e
+exl-id: ddafd03c-77b2-42e8-b593-7d655d08e9c3
+source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
-
 
 # セキュリティ TXT ファイル
 

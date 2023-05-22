@@ -1,7 +1,9 @@
 ---
 title: L2 キャッシュの設定
 description: L2 キャッシュを設定する方法を説明します。
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+feature: Configuration, Cache
+exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -82,7 +84,7 @@ Adobeでは、 [`cache preload`](redis-pg-cache.md#redis-preload-feature) 特徴
 
 古いキャッシュは L2 キャッシュでのみ機能します。 古いキャッシュがある場合、新しいキャッシュが並行処理で生成されている間に、古いキャッシュを送信できます。 古いキャッシュを有効にするには、 `'use_stale_cache' => true` を L2 キャッシュの最上位の設定に追加します。
 
-Adobeでは、 `use_stale_cache` オプションは、次のように、最もメリットのあるキャッシュタイプにのみ使用できます。
+Adobeでは、 `use_stale_cache` オプションは、次のように、最もメリットのあるキャッシュタイプに対してのみ使用できます。
 
 - `block_html`
 - `config_integration_api`

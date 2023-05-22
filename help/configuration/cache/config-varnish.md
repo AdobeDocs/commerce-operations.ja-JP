@@ -1,13 +1,14 @@
 ---
 title: Vanish の設定と使用
 description: Vanish がファイルを保存し、HTTP トラフィックを改善する方法を理解します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Cache
+exl-id: 57614878-e349-43bb-b22b-1aa321907be1
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
 
 ---
-
 
 # ワニスを設定
 
