@@ -1,11 +1,19 @@
 ---
-source-git-commit: 20ebf9dc6c7a1aac1d183ed31b1a80a674d633f1
+source-git-commit: 45b3f12d3ea333624a0a8a872b1eb412a98fda6d
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 70%
+source-wordcount: '289'
+ht-degree: 66%
 
 ---
 # 必要システム構成
+
+>[!IMPORTANT]
+>
+>クラウドインフラストラクチャ上のAdobe Commerceのサービスバージョンと互換性のサポートは、クラウドインフラストラクチャ上にデプロイされたバージョンによって決まり、Adobe Commerceオンプレミスデプロイメントでサポートされるバージョンとは異なる場合があります。 詳しくは、 [サポートされるソフトウェアとサービス](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) 内 _クラウドガイド_. 例えば、Elasticsearch7.17 はオンプレミスデプロイメント用に 2.4.4 でサポートされていますが、Open Search 1.2 はクラウドインフラストラクチャでサポートされています。
+
+>[!NOTE]
+>
+><sup>*</sup>Adobe Commerce 2.4.5 以前では、MySQL 8.0.28 以前のみがサポートされています。
 
 <table style="table-layout:auto">
   <thead>
@@ -797,11 +805,3 @@ ht-degree: 70%
     </tr>
   </tbody>
 </table>
-
->[!IMPORTANT]
->
->クラウドインフラストラクチャ上のAdobe Commerceのサービスバージョンと互換性のサポートは、クラウドインフラストラクチャ上にデプロイされたバージョンによって決まり、Adobe Commerceオンプレミスデプロイメントでサポートされるバージョンとは異なる場合があります。 詳しくは、 [サポートされるソフトウェアとサービス](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) 内 _クラウドガイド_.
-
->[!NOTE]
->
-><sup>*</sup>Adobe Commerce 2.4.5 以前では、MySQL 8.0.28 以前のみがサポートされています。
