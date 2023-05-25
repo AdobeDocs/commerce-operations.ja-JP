@@ -1,26 +1,26 @@
 ---
-title: Adobe Commerce 2.3.5 MariaDB のアップグレードの前提条件
-description: Adobe Commerce 2.3.5 からアップグレードするためのAdobe Commerceデータベースの準備方法を説明します。
+title: Adobe Commerce MariaDB のアップグレードの前提条件
+description: MariaDB を以前のバージョンからアップグレードするためのAdobe Commerceデータベースの準備方法を説明します。
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: bc38dd658401d3cd4c64159b1b2b2efe89979a93
+exl-id: b86e471f-e81f-416b-a321-7aa1ac73d27c
+source-git-commit: 73663659dd1b3305bf8c9a167852b24dc1016e7d
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
 
-
 # MariaDB のアップグレードの前提条件
 
-Adobe Commerce 2.3.4 以前から新しいバージョンにアップグレードするには、クラウドインフラストラクチャ上の MariaDB サービスをバージョン 10.0 または 10.2 からバージョン 10.3 または 10.4 にアップグレードする必要があります。 この記事では、MariaDB の要件に準拠するようにデータベースを更新する方法を説明します。
+クラウドインフラストラクチャ上の MariaDB サービスをバージョン 10.0 または 10.2 からバージョン 10.3、10.4、10.5 にアップグレードします。MariaDB バージョン 10.3 以降では、データベースで動的テーブル行形式を使用する必要があり、Adobe Commerceではテーブルに InnoDB ストレージエンジンを使用します。 この記事では、MariaDB の要件に準拠するようにデータベースを更新する方法を説明します。
 
 データベースを準備したら、Adobe Commerceサポートチケットを送信して、Adobe Commerceのアップグレードプロセスに進む前に、クラウドインフラストラクチャ上の MariaDB サービスのバージョンを更新します。
 
 ## 影響を受ける製品およびバージョン
 
-Adobe Commerceバージョン 2.3.4 以前および MariaDB バージョン 10.0 以前を含む、クラウドインフラストラクチャ上のAdobe Commerce。
+MariaDB バージョン 10.3 以前のクラウドインフラストラクチャ上のAdobe Commerce。
 
 ## アップグレード用のデータベースの準備
 
@@ -119,7 +119,7 @@ Adobe Commerceサポートチームがアップグレードプロセスを開始
 
 ### データベース変換の検証
 
-MariaDB バージョン 10.2 へのスケジュールされたアップグレードの前日に、すべてのテーブルに正しい行フォーマットとストレージエンジンが含まれていることを確認します。 変換処理の完了後にコードをデプロイすると、一部のテーブルが元の設定に戻る場合があるので、検証が必要です。
+MariaDB バージョン 10.3、10.4、または 10.6 へのスケジュールされたアップグレードの前日に、すべてのテーブルに正しい行フォーマットとストレージエンジンが含まれていることを確認します。 変換処理の完了後にコードをデプロイすると、一部のテーブルが元の設定に戻る場合があるので、検証が必要です。
 
 1. データベースにログインします。
 
@@ -145,4 +145,3 @@ MariaDB バージョン 10.2 へのスケジュールされたアップグレー
 
 - [クラウドインフラストラクチャ上のAdobe Commerceのデータベースのベストプラクティス](../planning/database-on-cloud.md)
 - [Cloud 上のAdobe Commerceの MariaDB を 10.0 から 12.0 に更新しました。](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10.0-to-10.2-for-magento-commerce-cloud.html)
-
