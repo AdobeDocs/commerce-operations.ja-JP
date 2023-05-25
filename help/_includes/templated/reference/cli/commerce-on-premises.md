@@ -1,5 +1,5 @@
 ---
-source-git-commit: a1f99f839f11ab42356b87a69398999bb03cd544
+source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
 workflow-type: tm+mt
 source-wordcount: '19443'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 **バージョン**:2.4.6
 
 このリファレンスには、 `bin/magento` コマンドラインツールを使用します。
-最初のリストは、 `bin/magento list` コマンドを使用して
+最初のリストは、 `bin/magento list` Adobe Commerceで
 以下を使用： [CLI コマンドの追加](https://developer.adobe.com/commerce/php/development/cli-commands/) カスタム CLI コマンドの追加に関するガイド
 
 >[!NOTE]

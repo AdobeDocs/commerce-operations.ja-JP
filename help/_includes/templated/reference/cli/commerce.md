@@ -1,7 +1,7 @@
 ---
-source-git-commit: 27e7a262fd1d8092045f5ebe2f88caaec37a6b0d
+source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
 workflow-type: tm+mt
-source-wordcount: '29783'
+source-wordcount: '29786'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 **バージョン**:1.42.0
 
 このリファレンスには、 `magento-cloud` コマンドラインツールを使用します。
-最初のリストは、 `magento-cloud list` コマンドを使用して
+最初のリストは、 `magento-cloud list` クラウドインフラストラクチャ上のAdobe Commerceでコマンドを実行します。
 
 >[!NOTE]
 >
@@ -7984,7 +7984,7 @@ GitLab:結合リクエストのデータを複製
 
 ### `--pull-requests-clone-parent-data`
 
-取り込むリクエストの親環境のデータをクローンします。
+プル要求に対する親環境のデータのクローン
 
 - デフォルト： `true`
 - 値が必要です
@@ -9486,7 +9486,7 @@ disk
 
 ### `--columns`, `-c`
 
-表示する列。 使用可能な列: timestamp *、used *、limit *、percent *、ipercent *、ilimit、interval、ipercent (* = デフォルト列)。 文字「+」は、デフォルトの列のプレースホルダーとして使用できます。 リストが単一の値 (例: 「a, b, c」) として指定されている場合、コンマや空白で分割されます。
+表示する列。 使用可能な列：timestamp*, used*, limit*,%*, ipercent*, ilimit, interval, iused （* =デフォルトの列） 「+」文字は、デフォルト列のプレースホルダーとして使用できます。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -9496,11 +9496,11 @@ disk
 テーブルヘッダーを出力しない
 
 - デフォルト： `false`
-- 値を受け付けません
+- 値を受け入れない
 
 ### `--date-fmt`
 
-日付形式 (PHP 日付形式文字列)
+日付の形式（PHP の日付形式文字列）
 
 - デフォルト： `c`
 - 値が必要です
@@ -12040,7 +12040,7 @@ magento-cloud self:stats [-p|--page PAGE] [-c|--count COUNT] [--format FORMAT] [
 
 ### `--columns`
 
-表示する列。 使用可能な列: アセット、日付、ダウンロード、リリース。 リストが単一の値 (例: 「a, b, c」) として指定されている場合、コンマや空白で分割されます。
+表示する列。 使用可能な列：アセット、日付、ダウンロード、リリース。 リストが単一の値 (&quot;a,b,c&quot;) コンマや空白で区切られます。
 
 - デフォルト： `[]`
 - 値が必要です
@@ -12050,11 +12050,11 @@ magento-cloud self:stats [-p|--page PAGE] [-c|--count COUNT] [--format FORMAT] [
 テーブルヘッダーを出力しない
 
 - デフォルト： `false`
-- 値を受け付けません
+- 値を受け入れない
 
 ### `--date-fmt`
 
-日付形式 (PHP 日付形式文字列)
+日付の形式（PHP の日付形式文字列）
 
 - デフォルト： `c`
 - 値が必要です
