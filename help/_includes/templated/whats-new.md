@@ -1,7 +1,7 @@
 ---
-source-git-commit: f33946c77f378fc54b7fa06d3a2fd6a5108cf846
+source-git-commit: f7302ddd61b354eec4da8c9a1596ca18f38ba7b3
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 0%
 ## 最新情報
 
 新しいドキュメントと既存ドキュメントの重要な更新について説明します。
+
+### 2023 年 5 月 26 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>追加された <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/uct.html"><code class="language-plaintext highlighter-rouge">bin/uct</code> CLI リファレンス</a>.</p>
+</td>
+      <td>新規トピック</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d00e8cb4ebce9cbda0218ef75f44d2ff0ec45bad">d00e8c</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2023 年 5 月 13 日
 
