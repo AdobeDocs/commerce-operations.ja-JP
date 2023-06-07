@@ -1,9 +1,10 @@
 ---
 title: インストールガイド
-description: このガイドを使用して [!DNL Site-Wide Analysis Tool] （Web サイト用）
-source-git-commit: 0c27d4cf5854161e14a482912941cd144ca654f7
+description: このガイドを使用して、 [!DNL Site-Wide Analysis Tool] （Web サイト用）
+exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
+source-git-commit: 4210746509be99bb3c943906c99f70ea420ba74a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -183,7 +184,7 @@ bin/magento module:status Magento_ServicesId
    1. ランチャーアーカイブをダウンロードします。
 
       ```bash
-      curl -O https://updater.swat.magento.com/launcher/launcher.linux-amd64.tar.gz
+      curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-amd64.tar.gz
       ```
 
    1. ランチャーアーカイブを解凍します。
@@ -196,7 +197,7 @@ bin/magento module:status Magento_ServicesId
    1. ランチャーアーカイブをダウンロードします。
 
       ```bash
-      curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
+      curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
    1. ランチャーアーカイブを解凍します。
@@ -389,7 +390,7 @@ cron スケジュールを更新します。
 
 ```terminal
 ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
-FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
+FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.adobe.com/linux-amd64.json: 403 Forbidden
 ```
 
 このエラーを解決するには、次の手順を試してください。
@@ -402,6 +403,12 @@ FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/
 1. スケジューラーを実行し、同じエラーが引き続き表示されるかどうかを確認します。
 1. それでも同じエラーが発生する場合は、 `config.yaml` をクリックして、サポートチケットをデバッグし開きます。
 
+### *SIGFAULT* エラー
+
+次の項目が *SIGFAULT* バイナリを実行中にエラーが発生した場合は、Adobe Commerceおよびエージェントファイルのファイル所有者として、これを実行しない可能性があります。
+解決するには、エージェントディレクトリ内の、Adobe Commerceファイルが持つファイル所有者と同じユーザーを持つすべてのファイルと、そのユーザーの下でバイナリを実行する必要があるかどうかを確認してください。
+以下を使用して、 `chown` コマンドを使用して、ファイルの所有者を変更し、適切なユーザーに切り替えます。
+デーモン化メカニズム（Cron または System.d）が適切なユーザーでプロセスを実行していることを確認します。
 
 >[!INFO]
 >
