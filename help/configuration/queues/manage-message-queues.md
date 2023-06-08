@@ -2,9 +2,9 @@
 title: メッセージキューの管理
 description: Adobe Commerceのコマンドラインからメッセージキューを管理する方法を説明します。
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: caca8df48c498977f830082ef27d9afb6220ae92
+source-git-commit: 8dce1f1e961ec02d7783a7423a51a7d4567dce79
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Cron ジョブは、コンシューマーを再起動するデフォルトのメ
 >
 >詳しくは、 [cron の設定と実行](../cli/configure-cron-jobs.md) を使用する方法の詳細 `cron` コマースを使用します。
 
-また、 [スーパーバイザー](http://supervisord.org/index.html) プロセスのステータスを監視する。 マネージャーは、必要に応じて、コマンドラインを使用してプロセスを再起動できます。
+また、 [スーパーバイザー](https://supervisord.readthedocs.io/en/latest/) プロセスのステータスを監視する。 マネージャーは、必要に応じて、コマンドラインを使用してプロセスを再起動できます。
 
 ## 設定
 
@@ -76,12 +76,12 @@ Cron ジョブは、コンシューマーを再起動するデフォルトのメ
 - `consumers`  — 実行するコンシューマーを指定する文字列の配列。 空の配列が実行されます *すべて* 消費者
 - `multiple_processes`  — 実行するコンシューマーをプロセス数で指定するキーと値のペアの配列。 Commerce 2.4.4 以降でサポートされます。
 
-   >[!INFO]
-   >
-   >MySQL 操作のキューで複数のコンシューマーを実行することはお勧めしません。 詳しくは、 [メッセージキューを MySQL から AMQP に変更](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) を参照してください。
+  >[!INFO]
+  >
+  >MySQL 操作のキューで複数のコンシューマーを実行することはお勧めしません。 詳しくは、 [メッセージキューを MySQL から AMQP に変更](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) を参照してください。
 
-   >[!INFO]
-   >
-   >Adobe Commerceストアがクラウドプラットフォームでホストされている場合、 [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) コンシューマーがメッセージキューからのメッセージを処理する方法を設定する場合。
+  >[!INFO]
+  >
+  >Adobe Commerceストアがクラウドプラットフォームでホストされている場合、 [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) コンシューマーがメッセージキューからのメッセージを処理する方法を設定する場合。
 
 詳しくは、 [メッセージキューコンシューマーを開始](../cli/start-message-queues.md).
