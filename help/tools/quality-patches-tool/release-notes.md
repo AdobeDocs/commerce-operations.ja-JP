@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 205a0b67fab14a313d28355eed668d60ce477e64
+source-git-commit: 86f95d8fff53ab0857a3a276ba785ad26eb71241
 workflow-type: tm+mt
-source-wordcount: '12066'
+source-wordcount: '12426'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,25 @@ ht-degree: 0%
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.32 {#v1-1-32}
+
+* **ACSD-49628** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) - [!UICONTROL Page Builder's] 複数のエラーが発生すると、管理者はコンテンツ権限を持たずに製品を保存できなくなります。
+* **ACSD-51305** (Adobe CommerceとMagento Open Source>=2.4.6 &lt;2.4.7) - GraphQLの応答で在庫切れの設定可能な子製品が使用できない問題を修正しました。
+* **ACSD-50621** (Adobe Commerce >=2.3.7 &lt;2.4.7) - [!UICONTROL Tier Prices] 複数の web サイト環境で編集を試みると、共有カタログ内の異なる web サイトが表示されない。
+* **ACSD-51041** (Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.7 &lt;2.4.0 || >=2.4.1 &lt;2.4.6) — 価格インデクサーのパフォーマンスを向上させます。
+* **ACSD-51379** (Adobe CommerceおよびMagento Open Source>=2.3.7 &lt;2.4.7) — ページテキストコンテンツが [!UICONTROL Page Builder] は保存されません。
+* **ACSD-49480** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.6) — 買い物かごに 1 つの買い物かごの価格ルールのみが適用される問題を修正しました。
+* **ACSD-51230** (Adobe Commerce>=2.3.7 &lt;2.4.7) — 単純製品の一部払い戻しが注文から処理された場合にギフトカードのアカウントが削除される問題を修正しました。
+* **ACSD-51238** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.7) — 設定可能な製品の更新時や価格の編集時に在庫ソースが削除される問題を修正しました。
+* **ACSD-50794** (Adobe Commerce>=2.4.1 &lt;2.4.7 の場合 ) - GraphQLを使用してギフトメッセージやギフト用ラッピングの詳細を削除した際に、データベースで更新されない問題を修正しました。
+* **ACSD-51528** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.7) - *x_forwarded_for* 列の値が null の場合 *sales_order* 表。
+* **ACSD-50849** (Adobe Commerce >=2.4.4 &lt;2.4.6 の場合 ) — キャッシュをクリアした後に新しい製品をカテゴリに追加すると、既存の製品の位置と選択が一致しない問題を修正しました。
+* **ACSD-51294** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.7) - GTM/GA の価格、数量、税、送料、売上高が文字列としてに送信される問題を修正しました。 [!DNL Google Analytics] と GTM。
+* **ACSD-51204** (Adobe CommerceとMagento Open Source>=2.4.3 &lt;2.4.7) — クレジットメモを作成した後、完全販売された製品が在庫に戻らない問題を修正しました。
+* **ACSD-51291** (Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.4 &lt;2.4.4-p4 || >=2.4.5 &lt;2.4.5-p3) - 1 つの Web サイトへのアクセス権を持つ制限付き管理者が、複数の Web サイトに割り当てられた製品に画像やビデオを追加できる問題を修正しました。
+* ACSD-50336の新しいバージョンを追加しました。
+* パッチ ACSD-49970を交換してください。
 
 ## v1.1.31 {#v1-1-31}
 
