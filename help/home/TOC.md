@@ -1,7 +1,7 @@
 ---
 user-guide-title: 運用ガイド
 user-guide-description: Adobe Commerceまたはアプリケーションの保守に関する運用上の側面について説明します。Magento Open Source
-source-git-commit: 6291b6c9e062509e9bb2069050d455783fb06c7a
+source-git-commit: dbd13fd60ae20576e4499ad2a17d5490cf8c7bc3
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 - [アップグレード](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
 - [パフォーマンスのベストプラクティス](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/overview.html)
 - [ツール](https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html)
-- [コマンドラインツール](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html)
+- [コマンドラインツール](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
 - [実装プレイブック](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html)
 - [オペレーショナルプレイブック](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
 - [規模でのコマース](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/overview.html)

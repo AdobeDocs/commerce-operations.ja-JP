@@ -1,17 +1,17 @@
 ---
 title: Nginx
 description: Nginx Web サーバーをインストールして、Adobe CommerceとMagento Open Sourceのオンプレミスインストール用に設定するには、次の手順に従います。
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
+source-git-commit: 9ebf10bd3296495e33c91d930be023ea0124ff62
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
 
-
 # Nginx
 
-Adobe Commerceは nginx 1.18 ( または [最新のメインラインバージョン](https://nginx.org/en/linux_packages.html#mainline)) をクリックします。 最新バージョンの `php-fpm`.
+Adobe Commerceは nginx 1.x ( または [最新のメインラインバージョン](https://nginx.org/en/linux_packages.html#mainline)) をクリックします。 最新バージョンの `php-fpm`.
 
 インストール手順は、使用しているオペレーティングシステムによって異なります。 詳しくは、 [PHP](../php-settings.md) 」を参照してください。
 

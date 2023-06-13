@@ -1,7 +1,7 @@
 ---
-source-git-commit: f7302ddd61b354eec4da8c9a1596ca18f38ba7b3
+source-git-commit: 36ebf825705e3ffb26d595d39df8339ab1ca3c6f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,102 @@ ht-degree: 0%
 ## 最新情報
 
 新しいドキュメントと既存ドキュメントの重要な更新について説明します。
+
+### 2023 年 6 月 14 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>ベータ版に関する以下のドキュメントを追加しました。<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html">Adobe Commerce CLI（オンプレミス、ベータ版）</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html">Magento Open SourceCLI（ベータ版）</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html">Adobe Commerceパッケージ（ベータ版）</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/cloud-beta.html">Adobe Commerce用クラウドパッケージ（ベータ版）</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html">Magento Open Sourceパッケージ（ベータ版）</a></p>
+</td>
+      <td>新規トピック</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/165a7f99fa173b17e436c07dc1fbcf9323478762">165a7f</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p>ベータ版の <a href="https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html">GraphQL API 用アプリケーションサーバー</a>.</p>
+</td>
+      <td>新規トピック</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6fe8d69933b7b2260a33b55bb2b12609addd3c90">6fe8d6</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p>更新された <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html">製品の可用性と互換性の表</a> および <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">リリースノートの概要</a> （2023 年 6 月リリース）</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/95032071bca59ad1466aed16033a871d820c40b3">950320</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p>以下のパッチに関するリリースノートを公開しました。<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7-beta1</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p1.html">2.4.6-p1</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p3.html">2.4.5-p3</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p4.html">2.4.4-p4</a></p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/14ab6c2495ffb2ddd6321cd0fbb317df6fd866b3">14ab6c</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p>更新された <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">システム要件</a> 2023 年 6 月にリリースされたパッチの場合。</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/84a82a6806e43a928be7e6743457d8fc9288338e">84a82a</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p>新しい <code class="language-plaintext highlighter-rouge">saveConfigProcessor</code> <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html">消費者</a> をサポートするために追加された <a href="https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#asynchronous-configuration-save"><code class="language-plaintext highlighter-rouge">AsyncConfig</code></a> モジュール。</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/702b7f73d1bd315528c332418ed3a5f2666c3efc">702b7f</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p>新しい <a href="https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#asynchronous-configuration-save">AsyncConfig モジュール</a> は、パフォーマンスの向上に役立ちます。</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/146231fb1b559e6043b8610da02c2015b2f77d6c">146231</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023 年 6 月 13 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>公開済み <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">リリースノート</a> 1.1.32 Quality Patches Tool(QPT) パッケージリリースの場合。</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/96f6107732880601f3788ae73bebef3039aa85c3">96f610</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023 年 6 月 8 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>追加された <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/access.html">説明</a> を使用して、ツールのドメインからサイト全体分析ツールにアクセスする場合 (<code class="language-plaintext highlighter-rouge">https://supportinsights.adobe.com/commerce</code>) をクリックします。</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/051fe7707cef593027bcff93ae39adfc5cf1af3c">051fe7</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 2023 年 5 月 26 日
 
@@ -67,112 +163,6 @@ ht-degree: 0%
 </td>
       <td>メジャーアップデート</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7f30857b612d027dfce26fac1f947006f28ecfa6">7f3085</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 2023 年 4 月 21 日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>ソース</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>追加された <code class="language-plaintext highlighter-rouge">commerce.eventing.event.publish</code> メッセージキューコンシューマー <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html">参照テーブル</a>.</p>
-</td>
-      <td>技術</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2f9bfcf9a8232cbe659062a9b1bc88eda3d9158c">2f9bfc</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2023 年 4 月 20 日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>ソース</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>2.4.6 の既知の問題に対して新しくリリースされたパッチに関する情報を追加しました。 詳しくは、 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Adobe CommerceとMagento Open Sourceのリリースノート</a>.</p>
-</td>
-      <td>技術</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fdbb0959b615689eba3068bc93c4c9876c7a7972">fdbb09</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p>次に関する情報を追加しました： <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard.html">セキュリティセンターウィジェット</a> （サイト全体の評価ツールダッシュボード）</p>
-</td>
-      <td>メジャーアップデート</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1e84ee6db07ec9080971de22a24fe8a7d8705916">1e84ee</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2023 年 4 月 18 日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>ソース</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>追加された <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/self-hosting/overview.html">新しいセクション</a> パフォーマンス、セキュリティ、監視、災害復旧などの自己ホスト型の概念について</p>
-</td>
-      <td>新規トピック</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/699c512de9c6d28ba354f02b4db76975eb5410a9">699c51</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2023 年 4 月 13 日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>ソース</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>公開済み <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">リリースノート</a> 1.1.30 Quality Patches Tool(QPT) パッケージリリースの場合。</p>
-</td>
-      <td>メジャーアップデート</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/84ed7dd2c24eef437d6719d9758da43423347eeb">84ed7d</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2023 年 4 月 6 日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>ソース</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>追加済み <a href="https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/glossary.html">用語集</a>. https://glossary.magento.comから移行されました。</p>
-</td>
-      <td>新規トピック</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d9b7659e5d4c3770956f0c2a96e5c97a3dc2af19">d9b765</a> （コミット）</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->

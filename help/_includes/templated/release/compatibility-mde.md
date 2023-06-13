@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2663f59480d05e945d092caa4c93783fc209d25e
+source-git-commit: f98c0edd3ca2b8b907974717bb5d81304097f46a
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1318'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   <thead>
     <tr>
       <th> </th>
+      <th>バージョン 2.4.7-beta1</th>
       <th>バージョン 2.4.6</th>
       <th>バージョン 2.4.5</th>
       <th>バージョン 2.4.4</th>
@@ -34,10 +35,12 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </thead>
   <tbody>
     <tr>
-      <th colspan="9">AmazonSales Channel</th>
+      <th colspan="10">AmazonSales Channel</th>
     </tr>
     <tr>
       <td>AmazonSales Channel4.4.4</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -57,6 +60,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>AmazonSales Channel4.4.3</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -76,6 +81,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>AmazonSales Channel4.4.2</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -95,6 +102,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>AmazonSales Channel4.4.1</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -114,6 +123,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>AmazonSales Channel4.4.0</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -133,6 +144,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>AmazonSales Channel4.3.0</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -152,6 +165,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>AmazonSales Channel4.2.0</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>互換</span>
@@ -171,6 +186,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>AmazonSales Channel4.1.0</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポートなし</span>
@@ -191,10 +208,80 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">B2B</th>
+      <th colspan="10">Audience Activation</th>
+    </tr>
+    <tr>
+      <td>Audience Activation1.0.1</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Audience Activation1.0.0</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="10">B2B</th>
+    </tr>
+    <tr>
+      <td>B2B 1.4.0</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
     </tr>
     <tr>
       <td>B2B 1.3.5</td>
+      <td>サポート</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>互換</span>
@@ -216,6 +303,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>B2B 1.3.4</td>
       <td>互換</span>
       </td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>互換</span>
@@ -233,6 +322,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>B2B 1.3.3</td>
+      <td>互換</span>
+      </td>
       <td>互換</span>
       </td>
       <td>互換</span>
@@ -258,6 +349,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>互換</span>
       </td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>互換</span>
@@ -271,6 +364,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>B2B 1.3.1</td>
+      <td>互換</span>
+      </td>
       <td>互換</span>
       </td>
       <td>互換</span>
@@ -300,6 +395,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>互換</span>
       </td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>互換</span>
@@ -309,6 +406,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>B2B 1.2.0</td>
+      <td>互換</span>
+      </td>
       <td>互換</span>
       </td>
       <td>互換</span>
@@ -342,16 +441,20 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>互換</span>
       </td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">カタログサービス</th>
+      <th colspan="10">カタログサービス</th>
     </tr>
     <tr>
       <td>Catalog Service 1.7</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -371,6 +474,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Catalog Service 1.6</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -390,6 +495,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Catalog Service 1.5</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -409,6 +516,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Catalog Service 1.4</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -428,6 +537,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Catalog Service 1.3</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -447,6 +558,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Catalog Service 1.1</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -466,6 +579,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Catalog Service 1.0</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -486,10 +601,12 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">チャネルマネージャ</th>
+      <th colspan="10">チャネルマネージャ</th>
     </tr>
     <tr>
       <td>Channel Manager 2.0.0</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -511,6 +628,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Channel Manager 1.1.0</td>
       <td>サポートなし</span>
       </td>
+      <td>サポートなし</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -528,6 +647,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Channel Manager 1.0.0</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -548,10 +669,164 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">Inventory management</th>
+      <th colspan="10">Experience Platformコネクタ</th>
+    </tr>
+    <tr>
+      <td>Experience Platformコネクタ 2.2.0</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platformコネクタ 2.1.1</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platformコネクタ 2.1.0</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platformコネクタ 2.0.1</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platformコネクタ 2.0.0</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platformコネクタ 1.0.0</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="10">Inventory management</th>
+    </tr>
+    <tr>
+      <td>Inventory management 1.2.7-beta1</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
     </tr>
     <tr>
       <td>Inventory management 1.2.6</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>互換</span>
@@ -573,6 +848,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Inventory management 1.2.5</td>
       <td>互換</span>
       </td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>互換</span>
@@ -590,6 +867,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Inventory management 1.2.4</td>
+      <td>互換</span>
+      </td>
       <td>互換</span>
       </td>
       <td>互換</span>
@@ -615,6 +894,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>互換</span>
       </td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>互換</span>
@@ -628,6 +909,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Inventory management 1.2.2</td>
+      <td>互換</span>
+      </td>
       <td>互換</span>
       </td>
       <td>互換</span>
@@ -657,6 +940,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>互換</span>
       </td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>互換</span>
@@ -666,6 +951,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Inventory management 1.2.0</td>
+      <td>互換</span>
+      </td>
       <td>互換</span>
       </td>
       <td>互換</span>
@@ -699,16 +986,20 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>互換</span>
       </td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">ライブ検索</th>
+      <th colspan="10">ライブ検索</th>
     </tr>
     <tr>
       <td>ライブ検索 3.0.1</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -728,6 +1019,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>ライブ検索 2.0.5</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -747,6 +1040,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>ライブ検索 2.0.4</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -766,6 +1061,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>ライブ検索 2.0.3</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -785,6 +1082,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>ライブ検索 2.0.0</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -818,11 +1117,15 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>互換</span>
       </td>
+      <td>互換</span>
+      </td>
       <td>サポートなし</span>
       </td>
     </tr>
     <tr>
       <td>ライブ検索 1.2.0</td>
+      <td>互換</span>
+      </td>
       <td>互換</span>
       </td>
       <td>互換</span>
@@ -856,16 +1159,41 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>互換</span>
       </td>
+      <td>互換</span>
+      </td>
       <td>サポートなし</span>
       </td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">Page Builder</th>
+      <th colspan="10">Page Builder</th>
+    </tr>
+    <tr>
+      <td>Page Builder 1.7.4-beta1</td>
+      <td>互換</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
     </tr>
     <tr>
       <td>Page Builder 1.7.3</td>
+      <td>サポートなし</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポートなし</span>
@@ -887,6 +1215,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Page Builder 1.7.2</td>
       <td>サポートなし</span>
       </td>
+      <td>サポートなし</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポートなし</span>
@@ -904,6 +1234,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Page Builder 1.7.1</td>
+      <td>サポートなし</span>
+      </td>
       <td>サポートなし</span>
       </td>
       <td>サポートなし</span>
@@ -929,6 +1261,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>サポートなし</span>
       </td>
+      <td>サポートなし</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポートなし</span>
@@ -942,6 +1276,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Page Builder 1.6.0</td>
+      <td>サポートなし</span>
+      </td>
       <td>サポートなし</span>
       </td>
       <td>サポートなし</span>
@@ -971,6 +1307,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>サポートなし</span>
       </td>
+      <td>サポートなし</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポートなし</span>
@@ -980,6 +1318,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Page Builder 1.4.0</td>
+      <td>サポートなし</span>
+      </td>
       <td>サポートなし</span>
       </td>
       <td>サポートなし</span>
@@ -1015,21 +1355,23 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>サポートなし</span>
       </td>
+      <td>サポートなし</span>
+      </td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">支払いサービス</th>
+      <th colspan="10">支払いサービス</th>
     </tr>
     <tr>
       <td>支払いサービス 2.0.0</td>
-      <td>サポート</span>
+      <td>互換</span>
       </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
       </td>
-      <td>互換性がありません</span>
+      <td>サポート</span>
       </td>
       <td>互換性がありません</span>
       </td>
@@ -1037,11 +1379,15 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>互換性がありません</span>
       </td>
-      <td></span>
+      <td>互換性がありません</span>
+      </td>
+      <td>サポートなし</span>
       </td>
     </tr>
     <tr>
       <td>支払いサービス 1.6.0</td>
+      <td>サポートなし</span>
+      </td>
       <td>サポートなし</span>
       </td>
       <td>サポート</span>
@@ -1061,6 +1407,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>支払いサービス 1.5.4</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -1080,6 +1428,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>支払いサービス 1.5.3</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -1099,6 +1449,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>支払いサービス 1.5.2</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -1118,6 +1470,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>支払いサービス 1.5.1</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -1137,6 +1491,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>支払いサービス 1.5.0</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -1156,6 +1512,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>支払いサービス 1.4.1</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -1175,6 +1533,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>支払いサービス 1.4.0</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -1195,448 +1555,12 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">クイックチェックアウト</th>
-    </tr>
-    <tr>
-      <td>クイックチェックアウト 1.8.0</td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>クイックチェックアウト 1.7.0</td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>クイックチェックアウト 1.6.0</td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>クイックチェックアウト 1.5.0</td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>クイックチェックアウト 1.4.0</td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>クイックチェックアウト 1.3.0</td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>クイックチェックアウト 1.2.0</td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>クイックチェックアウト 1.1.0</td>
-      <td>サポート</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>クイックチェックアウト 1.0.0</td>
-      <td>サポート</span>
-      </td>
-      <td>互換</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <th colspan="9">Adobe Commerceのフルフィルメントを保存</th>
-    </tr>
-    <tr>
-      <td>Adobe Commerce 1.4.0 のストアフルフィルメント</td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Adobe Commerce 1.3.0 のストアフルフィルメント</td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Adobe Commerce 1.2.0 のストアフルフィルメント</td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Adobe Commerce 1.1.0 のストアフルフィルメント</td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Adobe Commerce 1.1.0 のストアフルフィルメント</td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <th colspan="9">Experience Platformコネクタ</th>
-    </tr>
-    <tr>
-      <td>Experience Platformコネクタ 2.2.0</td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Experience Platformコネクタ 2.1.1</td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Experience Platformコネクタ 2.1.0</td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Experience Platformコネクタ 2.0.1</td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Experience Platformコネクタ 2.0.0</td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Experience Platformコネクタ 1.0.0</td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <th colspan="9">Audience Activation</th>
-    </tr>
-    <tr>
-      <td>Audience Activation1.0.1</td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Audience Activation1.0.0</td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポート</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-      <td>サポートなし</span>
-      </td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <th colspan="9">製品Recommendations</th>
+      <th colspan="10">製品Recommendations</th>
     </tr>
     <tr>
       <td>製品Recommendations 5.0</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -1656,6 +1580,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>製品Recommendations 4.0.1</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -1675,6 +1601,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>製品Recommendations 4.0.0</td>
+      <td>互換</span>
+      </td>
       <td>サポート</span>
       </td>
       <td>サポート</span>
@@ -1710,9 +1638,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>互換</span>
       </td>
+      <td>互換</span>
+      </td>
     </tr>
     <tr>
       <td>製品Recommendations 3.3.6</td>
+      <td>互換</span>
+      </td>
       <td>互換</span>
       </td>
       <td>互換</span>
@@ -1748,9 +1680,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>互換</span>
       </td>
+      <td>互換</span>
+      </td>
     </tr>
     <tr>
       <td>製品Recommendations 3.3.3</td>
+      <td>互換</span>
+      </td>
       <td>互換</span>
       </td>
       <td>互換</span>
@@ -1786,6 +1722,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>互換</span>
       </td>
+      <td>互換</span>
+      </td>
     </tr>
     <tr>
       <td>製品Recommendations 3.3.1</td>
@@ -1804,6 +1742,312 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>互換</span>
       </td>
       <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="10">クイックチェックアウト</th>
+    </tr>
+    <tr>
+      <td>クイックチェックアウト 1.8.0</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>クイックチェックアウト 1.7.0</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>クイックチェックアウト 1.6.0</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>クイックチェックアウト 1.5.0</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>クイックチェックアウト 1.4.0</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>クイックチェックアウト 1.3.0</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>クイックチェックアウト 1.2.0</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>クイックチェックアウト 1.1.0</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>クイックチェックアウト 1.0.0</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="10">Adobe Commerceのフルフィルメントを保存</th>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.4.0 のストアフルフィルメント</td>
+      <td>互換</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.3.0 のストアフルフィルメント</td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.2.0 のストアフルフィルメント</td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.1.0 のストアフルフィルメント</td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.1.0 のストアフルフィルメント</td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポートなし</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポート</span>
+      </td>
+      <td>サポートなし</span>
       </td>
     </tr>
   </tbody>

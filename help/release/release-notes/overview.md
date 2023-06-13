@@ -2,9 +2,9 @@
 title: Adobe CommerceとMagento Open Sourceのリリースノート
 description: 特定のAdobe CommerceおよびMagento Open Sourceリリースの情報の場所について説明します。
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 073eec9ce841febf7653c82543eac57068576d03
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ ht-degree: 0%
         <p>機能強化、セキュリティ、バグ修正、既知の問題など、Adobe CommerceとMagento Open Sourceの最新の改善点について説明します。</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">後方互換性のない変更</a></li>
-            <li><a href="commerce/2-4-6.md">Adobe Commerce</a></li>
-            <li><a href="open-source/2-4-6.md">Magento Open Source</a></li>
-            <li><a href="security/2-4-5-p2.md">セキュリティパッチ</a></li>
+            <li><a href="commerce/2-4-7.md">Adobe Commerce</a></li>
+            <li><a href="open-source/2-4-7.md">Magento Open Source</a></li>
+            <li><a href="security/2-4-6-p1.md">セキュリティパッチ</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobeセキュリティ情報</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">Adobe Commerce用 B2B</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/release-notes.html">Inventory management</a></li>
@@ -47,6 +47,7 @@ ht-degree: 0%
       <td><strong>Adobe Commerce向けサービス</strong>
         <p>Adobe CommerceおよびMagento Open Source拡張機能として利用できる革新的なコマースサービスの最新の改善点について説明します。</p>
           <ul>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">AmazonSales Channel</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">カタログサービス</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">チャネルマネージャー（Walmart Marketplace セールス）</a></li>
@@ -64,6 +65,7 @@ ht-degree: 0%
           <ul>
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">AdobeAPP Builder 開発者用の API メッシュ</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe CommerceのAdobe I/Oイベント</a></li>
+            <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">管理 UI SDK</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">品質パッチツール</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">サイト全体分析ツール</a></li>
             <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">アップグレード互換性ツール</a></li>

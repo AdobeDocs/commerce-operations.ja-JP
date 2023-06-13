@@ -1,13 +1,13 @@
 ---
 title: 設定のベストプラクティス
 description: これらのベストプラクティスを使用して、Adobe CommerceまたはMagento Open Sourceのデプロイメントの応答時間を最適化します。
-source-git-commit: 5b455cb1285ce764a0517008fb8b692f3899066d
+exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
+source-git-commit: 1d7f5f58f8c21013c2ab0d68ab93a125ba0f3764
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1448'
 ht-degree: 0%
 
 ---
-
 
 # 設定のベストプラクティス
 
@@ -40,6 +40,31 @@ Commerce には、ページの応答時間を改善し、より高いスルー�
 >[!WARNING]
 >
 >この **[!UICONTROL Developer]** タブとオプションは、 [開発者モード](../configuration/cli/set-mode.md). [Adobe Commerce an cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) はをサポートしていません `Developer` モード。
+
+## 非同期設定の保存 [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7-beta1 でのみ使用可能"}
+
+ストアレベルの設定が多数のプロジェクトの場合、ストア設定を保存すると、非常に長い時間がかかるか、タイムアウトになる場合があります。 この _非同期設定_ モジュールは、コンシューマーを使用してメッセージキュー内の保存を処理する cron ジョブを実行することで、非同期設定保存を有効にします。 AsyncConfig は **無効** デフォルトでは。
+
+AsyncConfig は、コマンドラインインターフェイスを使用して有効にできます。
+
+```bash
+bin/magento setup:config:set --config-async 1
+```
+
+この `set` コマンドは次の内容を `app/etc/env.php` ファイル：
+
+```conf
+...
+   'config' => [
+       'async' => 1
+   ]
+```
+
+次のコンシューマーを起動して、キュー内のメッセージの先入れ先出しベースでの処理を開始します。
+
+```bash
+bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
+```
 
 ## 遅延在庫更新
 
@@ -122,4 +147,3 @@ Commerce には、ページの応答時間を改善し、より高いスルー�
 * 管理注文作成ページ
 
 製品グリッドを制限しない場合は、結果収集の項目数をより少なくするために、より正確にフィルターを使用することをお勧めします。 **[!UICONTROL Records Limit]**.
-
