@@ -1,13 +1,14 @@
 ---
 title: 現在の検索エンジンはサポートされていません
 description: サポートされていない検索エンジンに関するエラーが発生した場合は、Adobe CommerceまたはMagento Open Sourceのアップグレードをトラブルシューティングします。
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+feature: Upgrade, Search
+exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
 
 ---
-
 
 # 現在の検索エンジンはサポートされていません
 
@@ -34,13 +35,11 @@ bin/magento config:show catalog/search/engine
 >
 >このエラーが発生した場合は、インストールの状態が不整合になり、管理者にアクセスできなくなります。 このエラーを解決する前に、以前のバージョンに戻すことをお勧めします。 これをおこなうには、次のいずれかのコマンドを実行します。
 >
->
-```bash
+>```bash
 >composer require-commerce magento/product-enterprise-edition=<version>
 >```
 >
->
-```bash
+>```bash
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >

@@ -1,13 +1,14 @@
 ---
 title: ソフトウェアRecommendations
 description: Adobe CommerceおよびMagento Open Sourceのデプロイメントの最適なパフォーマンスに関連する推奨ソフトウェアのリストを確認します。
-source-git-commit: 8572cc8702d6f7e9c40b64110a9ba18aa5784f44
+feature: Best Practices, Install
+exl-id: b091a733-7655-4e91-a988-93271872c5d5
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 0%
 
 ---
-
 
 # ソフトウェアの推奨事項
 
@@ -196,7 +197,7 @@ Magentoは、Nginx および Apache Web サーバーを完全にサポートし�
 | パラメータ | デフォルト | 説明 |
 |--- | --- | ---|
 | `innodb_buffer_pool_instances` | 8 | 複数のスレッドが同じインスタンスにアクセスしようとする際の問題を回避するために、デフォルト値は 8 に設定されています。 |
-| `innodb_buffer_pool_size` | 128 MB | 上記の複数のプールインスタンスと組み合わせると、1024 MB のデフォルトのメモリ割り当てを意味します。 合計サイズは、すべてのバッファプールで割られます。 最も効率を高めるには、 `innodb_buffer_pool_instances` および `innodb_buffer_pool_size` したがって、各バッファプールインスタンスは少なくとも 1 GB です。 |
+| `innodb_buffer_pool_size` | 128MB | 上記の複数のプールインスタンスと組み合わせると、1024 MB のデフォルトのメモリ割り当てを意味します。 合計サイズは、すべてのバッファプールで割られます。 最も効率を高めるには、 `innodb_buffer_pool_instances` および `innodb_buffer_pool_size` したがって、各バッファプールインスタンスは少なくとも 1 GB です。 |
 | `max_connections` | 150 | の値 `max_connections` パラメータは、アプリケーションサーバーで設定された PHP スレッドの総数と関連付ける必要があります。 小規模の場合は 300、中規模の場合は 1000 を推奨します。 |
 | `innodb_thread_concurrency` | 0 | この設定に最適な値は、次の式で計算する必要があります。 `innodb_thread_concurrency = 2 * (NumCPUs + NumDisks)` |
 
