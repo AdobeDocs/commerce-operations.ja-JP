@@ -1,5 +1,5 @@
 ---
-source-git-commit: adb585771fb1353614ea600117f18ba8b55b65f0
+source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -56,7 +56,7 @@ bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [
 
 ### `--help`, `-h`
 
-指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、\&lt;info>リスト\&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -126,7 +126,7 @@ bin/uct completion [--debug] [--] [<shell>]
 
 ### `--help`, `-h`
 
-指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、\&lt;info>リスト\&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -205,7 +205,7 @@ bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ### `--help`, `-h`
 
-指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、\&lt;info>リスト\&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -289,7 +289,7 @@ bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 
 ### `--help`, `-h`
 
-指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、\&lt;info>リスト\&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -353,7 +353,7 @@ bin/uct refactor <path>
 
 ### `--help`, `-h`
 
-指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、\&lt;info>リスト\&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -428,7 +428,7 @@ Adobe Commerce vanilla インストールディレクトリ。
 
 ### `--help`, `-h`
 
-指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、\&lt;info>リスト\&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -499,7 +499,7 @@ bin/uct dbschema:diff <current-version> <target-version>
 
 ### `--help`, `-h`
 
-指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、\&lt;info>リスト\&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -575,7 +575,7 @@ bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 
 ### `--help`, `-h`
 
-指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、\&lt;info>リスト\&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -683,7 +683,7 @@ Adobe Commerceインストールディレクトリ。
 
 ### `--help`, `-h`
 
-指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、 &lt;info>リスト&lt;/info> command
+指定したコマンドのヘルプを表示します。 コマンドが指定されていない場合は、\&lt;info>リスト\&lt;/info> command
 
 - デフォルト： `false`
 - 値を受け入れない
