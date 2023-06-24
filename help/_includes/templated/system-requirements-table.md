@@ -1,15 +1,11 @@
 ---
-source-git-commit: 0167c2dc9862c88cc26acf820058e7ed300d6582
+source-git-commit: e790327231f6d6ad97a03460f361e5fb63b27a37
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 70%
+source-wordcount: '287'
+ht-degree: 86%
 
 ---
 # 必要システム構成
-
->[!IMPORTANT]
->
->クラウドインフラストラクチャ上のAdobe Commerceのサービスバージョンと互換性のサポートは、クラウドインフラストラクチャ上にデプロイされたバージョンによって決まり、Adobe Commerceオンプレミスデプロイメントでサポートされるバージョンとは異なる場合があります。 詳しくは、 [サポートされるソフトウェアとサービス](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) 内 _クラウドガイド_. 例えば、Elasticsearch7.17 はオンプレミスデプロイメント用に 2.4.4 でサポートされていますが、Open Search 1.2 はクラウドインフラストラクチャでサポートされています。
 
 >[!NOTE]
 >
