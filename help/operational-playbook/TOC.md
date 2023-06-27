@@ -1,7 +1,8 @@
 ---
 user-guide-title: オペレーショナルプレイブック
 user-guide-description: 企業が e コマースサイトを成功に導くための運用上の準備を整える方法を学びます。
-source-git-commit: ed6b9cb5acd35ce8213fafddcd00be1c32127a86
+feature: Best Practices
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%

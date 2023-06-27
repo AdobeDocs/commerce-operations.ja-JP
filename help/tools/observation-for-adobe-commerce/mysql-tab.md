@@ -1,7 +1,9 @@
 ---
-title: 「 [!UICONTROL MySQL] タブ"
+title: この [!UICONTROL MySQL] タブ
 description: 詳しくは、 [!UICONTROL MySQL] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: 8c9753fe5b9038978859cc101d53f897267ecfe9
+exl-id: 1d8dd07c-15fd-4ffd-ad10-0d886bf1579e
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '2030'
 ht-degree: 0%
@@ -76,7 +78,7 @@ MySQL に割り当てられたストレージのストレージが不足して�
 
 ![データベースのパフォーマンス](../../assets/tools/observation-for-adobe-commerce/mysql-tab-8.jpg)
 
-この **[!UICONTROL Database performance]** frame は、特定のリクエスト時のデータベースのパフォーマンスを表示します。 グラフの下の色付きのアイコンで各指標をクリックすると、それらの指標を確認できます。 多くの指標が [New Relic を使用した MySQL データベースのパフォーマンスの監視](https://newrelic.com/blog/how-to-relic/how-to-monitor-mysql) がこのフレームに見つかります。
+この **[!UICONTROL Database performance]** frame は、特定のリクエスト時のデータベースのパフォーマンスを表示します。 グラフの下の色付きのアイコンで各指標をクリックすると、それらの指標を確認できます。 多くの指標が [New Relicでの MySQL データベースのパフォーマンスの監視](https://newrelic.com/blog/how-to-relic/how-to-monitor-mysql) がこのフレームに見つかります。
 
 * average(query.queriesPerSecond)
 * average(query.slowQueriesPerSecond)
@@ -280,4 +282,3 @@ MySQL に割り当てられたストレージのストレージが不足して�
 ![データベース mysql-slow.log](../../assets/tools/observation-for-adobe-commerce/mysql-tab-24.jpg)
 
 この **[!UICONTROL Database mysql-slow.log]** frame は、 `mysql-slow.log` ファイルの数を指定できます。
-

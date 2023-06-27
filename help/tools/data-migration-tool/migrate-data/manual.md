@@ -1,13 +1,14 @@
 ---
 title: 手動での移行が必要なデータ
 description: Magento1 からMagento2 へのデータ移行中に手動で移行する必要があるデータとその方法について説明します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
 
 ---
-
 
 # 手動での移行が必要なデータ
 
@@ -50,7 +51,7 @@ ht-degree: 0%
 
 すべてのメディアファイル（製品、カテゴリ、WYSIWYG エディターなどの画像）は、 `<your Magento 1 install dir>/media` から `<your Magento 2 install dir>/pub/media`.
 
-ただし、 *not* コピー `.htaccess` Magento1 にあるファイル `media` フォルダー。 Magento2 には独自の `.htaccess` それは保存するべきです。
+ただし、 *not* コピー `.htaccess` Magento1 のファイル `media` フォルダー。 Magento2 には独自の `.htaccess` それは保存するべきです。
 
 ## ストアフロントデザイン
 

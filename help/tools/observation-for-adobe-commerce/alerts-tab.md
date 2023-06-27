@@ -1,9 +1,11 @@
 ---
-title: 「 [!UICONTROL Alerts] タブ"
+title: この [!UICONTROL Alerts] タブ
 description: 詳しくは、 [!UICONTROL Alerts] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: 2a82a5e232de3efa3adb76aee2334e198b929947
+exl-id: e9305576-6ed2-48f3-baec-36e081b0d04b
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '130'
 ht-degree: 0%
 
 ---
@@ -35,4 +37,3 @@ ht-degree: 0%
 ![インフラストラクチャのアラートの詳細](../../assets/tools/observation-for-adobe-commerce/alerts-tab-4.jpg)
 
 この **[!UICONTROL Infrastructure Alert Details]** frame は、選択した期間のアプリケーション、ホストおよびその他のインフラストラクチャイベントを表示します。
-

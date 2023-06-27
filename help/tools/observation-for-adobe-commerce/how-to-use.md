@@ -1,7 +1,9 @@
 ---
-title: 「 [!DNL Observation for Adobe Commerce] お節介さん」
+title: の使用方法 [!DNL Observation for Adobe Commerce] お節介
 description: 使用方法 [!DNL Observation for Adobe Commerce] オタクが
-source-git-commit: e6038d6f0add9d01d650914b35a1daba885fa7f8
+exl-id: 3c368814-0786-4e8f-ac81-9a77cec94677
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 0%

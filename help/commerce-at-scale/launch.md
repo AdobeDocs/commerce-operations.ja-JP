@@ -2,7 +2,8 @@
 title: パフォーマンステストのヒント
 description: Adobe CommerceおよびAdobe Experience Managerソリューションを起動するための KPI の設定方法を説明します。
 exl-id: 4b0d9c4f-e611-452d-a80f-27f82705935d
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+topic: Commerce, Performance
+source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 0%

@@ -1,13 +1,14 @@
 ---
-title: '"[!DNL Data Migration Tool] 技術仕様書'
-description: 「 [!DNL Data Migration Tool] Magento1 とMagento2 の間でデータを転送する際に拡張する方法」
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: '''[!DNL Data Migration Tool] 技術仕様書'
+description: 以下の [!DNL Data Migration Tool] およびMagento1 とMagento2 の間でデータを転送する際の拡張方法。
+exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '2079'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Data Migration Tool] 技術仕様
 

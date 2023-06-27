@@ -2,7 +2,8 @@
 title: Commerce Platform サービス
 description: ホスティングインフラストラクチャに PaaS ソリューションを使用するメリットとデメリットを確認し、e コマースプロジェクトに何が適しているかを判断します。
 exl-id: 071e6e9b-6874-4d08-90b4-036d6cdca4c2
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Paas
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

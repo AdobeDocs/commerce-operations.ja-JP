@@ -1,13 +1,14 @@
 ---
 title: のアップグレード [!DNL Data Migration Tool]
 description: をアップグレードする方法を説明します。 [!DNL Data Migration Tool] Magento1 とMagento2 の間でデータを転送する。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: c0d56d1d-b15b-437f-be72-74282dbe85c1
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
 
 ---
-
 
 # のアップグレード [!DNL Data Migration Tool]
 

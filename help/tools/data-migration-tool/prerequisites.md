@@ -1,13 +1,14 @@
 ---
-title: "[!DNL Data Migration Tool] 前提条件"
-description: 「 [!DNL Data Migration Tool] Magento1 とMagento2 の間でデータを転送する。」
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+title: '''[!DNL Data Migration Tool] 前提条件'
+description: 使用を開始する前に必要な操作について説明します。 [!DNL Data Migration Tool] Magento1 とMagento2 の間でデータを転送する。
+exl-id: 42dfa1ca-41ed-453d-a3e4-41ff36817ca3
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Data Migration Tool] 前提条件
 
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 * 次の条件を満たすようにMagento2 システムを設定します。 [システム要件](../../installation/system-requirements.md).
 
-   既存のMagento1 システムと少なくとも一致するトポロジと設計を使用します。
+  既存のMagento1 システムと少なくとも一致するトポロジと設計を使用します。
 
 * [インストールMagento2](../../installation/overview.md).
 
@@ -31,7 +32,7 @@ Magento2 の cron ジョブを開始しないでください。
 
 * 次を確認します。 [!DNL Data Migration Tool] には、Magento1 とMagento2 データベースを接続するためのネットワークアクセス権があります。
 
-   ファイアウォールでポートを開き、移行ツールがデータベースと通信できるようにします。
+  ファイアウォールでポートを開き、移行ツールがデータベースと通信できるようにします。
 
 * MySQL アカウントに、データベースにアクセスするために必要な権限がすべて付与されていることをMagentoしてください。
 

@@ -1,13 +1,14 @@
 ---
-title: 「 [!UICONTROL Elasticsearch] タブ"
+title: この [!UICONTROL Elasticsearch] タブ
 description: 詳しくは、 [!UICONTROL Elasticsearch] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: b3cc9033eb9445af3edafd8c7ae9809dbb8174fc
+exl-id: e98d351d-b3b1-47bc-bc0d-f96ba9ec2b80
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 0%
 
 ---
-
 
 # この [!UICONTROL Elasticsearch] タブ
 

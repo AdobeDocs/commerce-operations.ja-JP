@@ -1,13 +1,14 @@
 ---
 title: データ移行のフォローアップ
 description: Magento1 からMagento2 へのデータ移行が成功したこと、およびすべての機能が期待どおりに動作していることを検証する方法について説明します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: a55f357b-6c95-49d6-b2f1-c2e403a8c85f
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%
 
 ---
-
 
 # データ移行のフォローアップ
 

@@ -1,13 +1,14 @@
 ---
 title: 変更を移行
 description: を使用して、前回のMagento1 のデータ移行以降に変更されたデータのみを移行する方法を説明します。 [!DNL Data Migration Tool].
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
 
 ---
-
 
 # 変更を移行
 

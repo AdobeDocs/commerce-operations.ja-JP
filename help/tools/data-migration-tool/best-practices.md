@@ -1,13 +1,15 @@
 ---
 title: データ移行のベストプラクティス
 description: データ移行のベストプラクティスに従って、Magento1 からMagento2 への正常なアップグレードを実現します。
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+exl-id: 0cd51987-a514-434d-b21e-2739ada2ce85
+feature: Best Practices, Configuration
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
 
 ---
-
 
 # データ移行のベストプラクティス
 
@@ -23,9 +25,9 @@ ht-degree: 0%
 
 * パフォーマンスを向上させるには、 **有効にする `direct_document_copy` オプション** の `config.xml` ファイル：
 
-   ```xml
-   <direct_document_copy>1</direct_document_copy>
-   ```
+  ```xml
+  <direct_document_copy>1</direct_document_copy>
+  ```
 
 >[!NOTE]
 >

@@ -1,13 +1,14 @@
 ---
-title: 「 [!DNL Infra] タブ"
+title: この [!DNL Infra] タブ
 description: この [!DNL Infra] 「 」タブでは、インフラストラクチャの問題と原因を分離できます。
-source-git-commit: 5e4ab9e62f395b0967c3a632659c70a22770e9db
+exl-id: 45f24177-3264-4848-99bc-951be32c1f7b
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
 
 ---
-
 
 # この [!DNL Infra] タブ
 

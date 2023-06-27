@@ -1,13 +1,14 @@
 ---
 title: データ移行プランの作成
 description: 次の手順に従って、データ移行計画を作成し、Magento1 からMagento2 へのアップグレードを確実に成功させます。
-source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
+exl-id: a14237f3-c5fe-4f5f-86eb-ed4c39507bff
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 0%
 
 ---
-
 
 # データ移行プランの作成
 

@@ -2,7 +2,8 @@
 title: 支払いゲートウェイ
 description: ビジネスのニーズに基づいて、e コマースプロジェクトの支払いゲートウェイプロバイダーを選択します。
 exl-id: eab50191-0744-41da-99ba-2e06ea61da27
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Payments
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 ## 要件の確認
 
-小売業者は、要件を満たす最適な支払いゲートウェイを選択する必要があります。 市場にはBraintreeや Stripe など多くの支払いゲートウェイがありますが、支払いゲートウェイを決定する前に、次の質問を自分に問い合わせてください。
+小売業者は、要件を満たす最適な支払いゲートウェイを選択する必要があります。 市場にはBraintreeやStripeなど多くの支払いゲートウェイがありますが、支払いゲートウェイを決定する前に、次の質問を自分に問い合わせてください。
 
 - ビジネス要件
 - 予算内ですか？

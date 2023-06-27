@@ -1,13 +1,14 @@
 ---
 title: のカスタマイズ [!DNL Data Migration Tool]
 description: カスタマイズ方法 [!DNL Data Migration Tool] 拡張機能によって作成されたデータをMagento1 とMagento2 の間で転送するには、以下を実行します。
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%
 
 ---
-
 
 # の設定 [!DNL Data Migration Tool]
 

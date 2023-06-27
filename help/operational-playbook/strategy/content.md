@@ -2,7 +2,8 @@
 title: コンテンツ戦略
 description: コンテンツを活用して、顧客を惹きつける魅力的なキャンペーンを構築します。
 exl-id: fabfed9e-63ff-4be3-8bb7-192ccdb9dde6
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Page Content
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%

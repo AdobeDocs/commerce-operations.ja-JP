@@ -1,13 +1,14 @@
 ---
 title: データ移行でサポートされているバージョン
 description: Magento1 とMagento2 のバージョンについて説明します。 [!DNL Data Migration Tool] サポート。
-source-git-commit: 630b840f7b2b762172bc085246bb3e3e7b10e7b9
+exl-id: ba6398b4-66be-4d33-a4d3-a9f0aaa0fa81
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 0%
 
 ---
-
 
 # データ移行でサポートされているバージョン
 

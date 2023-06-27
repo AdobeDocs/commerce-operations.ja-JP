@@ -1,13 +1,14 @@
 ---
 title: データ移行の仕組み
 description: 用語、ワークフロー図、手順など、Magento1 とMagento2 の間のデータ移行プロセスについて説明します。
-source-git-commit: be2f924728853236bba786e7611b2a368c9f3054
+exl-id: 821492dc-ee5b-4c4a-9479-680ee8c5756d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 0%
 
 ---
-
 
 # データ移行の仕組み
 

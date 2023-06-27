@@ -1,7 +1,9 @@
 ---
-title: 「 [!UICONTROL Deploy] タブ"
+title: この [!UICONTROL Deploy] タブ
 description: 詳しくは、 [!UICONTROL Deploy] タブ [!DNL Observation for Adobe Commerce].
-source-git-commit: 27ebd472dc4e81e58b36bf5fac529461beae4be1
+exl-id: 3e33f7b0-7a40-4598-ae2e-436118e8d99a
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
@@ -158,4 +160,3 @@ ht-degree: 0%
 ![デプロイ済みモジュールのリスト](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
 
 この **[!UICONTROL Deployed module list]** frame は、選択した期間にデプロイされたモジュールを表示します。
-

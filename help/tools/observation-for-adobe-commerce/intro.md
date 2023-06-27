@@ -1,7 +1,9 @@
 ---
-title: "[!DNL Observation for Adobe Commerce]"
+title: '[!DNL Observation for Adobe Commerce]'
 description: 詳細 [!DNL Observation for Adobe Commerce]、を使用し、を使用するタイミング、アクセス権の取得方法について説明します。
-source-git-commit: c40d78d37dc37b5ce38f61b46bcfb4d439a51ac2
+exl-id: a787be0f-5dd8-4acc-adbf-5cedd96b08d6
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%

@@ -2,7 +2,8 @@
 title: Commerce 統合
 description: 顧客を喜ばせ、シームレスな日常業務を確実に行うために必要なツールをチームに装備します。
 exl-id: 52bfa6c7-0687-45de-8889-c529cea7d01a
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Integration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
