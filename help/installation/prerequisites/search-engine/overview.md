@@ -1,13 +1,14 @@
 ---
 title: 検索エンジンの前提条件
 description: 次の手順に従って、Adobe CommerceとMagento Open Sourceのオンプレミスインストールで、サポートされている検索エンジンソフトウェアをインストールして設定します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Install, Search
+exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 0%
 
 ---
-
 
 # 検索エンジンの前提条件
 
@@ -40,15 +41,15 @@ Adobe Commerce 2.4.4 以降をインストールする前に、Elasticsearchま�
 
 * コマースアプリケーションと検索エンジンが異なるホストにインストールされている。
 
-   別のホストで実行する場合は、プロキシが機能する必要があります。 ( 検索エンジンのクラスタリングは、このガイドの範囲外ですが、詳しくは、 [Elasticsearchクラスタリングのドキュメント](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
+  別のホストで実行する場合は、プロキシが機能する必要があります。 ( 検索エンジンのクラスタリングは、このガイドの範囲外ですが、詳しくは、 [Elasticsearchクラスタリングのドキュメント](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
 * 各ホストには、独自の Web サーバーがあります。web サーバーは同じである必要はありません。
 
-   例えば、Commerce アプリケーションは Apache を実行し、検索エンジンは nginx を実行します。
+  例えば、Commerce アプリケーションは Apache を実行し、検索エンジンは nginx を実行します。
 
 * どちらの Web サーバーも、Transport Layer Security(TLS) を使用します。
 
-   TLS の設定は、アドビのドキュメントの範囲外です。
+  TLS の設定は、アドビのドキュメントの範囲外です。
 
 検索リクエストは、次のように処理されます。
 

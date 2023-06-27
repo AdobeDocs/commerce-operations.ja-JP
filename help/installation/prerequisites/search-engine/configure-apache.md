@@ -1,13 +1,14 @@
 ---
 title: 検索エンジン用に Apache を設定
 description: Apache Web サーバーと共に検索エンジンを設定し、Adobe CommerceとMagento Open Sourceのオンプレミスインストールを行うには、次の手順に従います。
-source-git-commit: d3cfd97450164d38fd340b538099739601573d64
+feature: Install, Search
+exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
 
 ---
-
 
 # 検索エンジン用に Apache を設定
 
@@ -131,10 +132,9 @@ htpasswd -c /usr/local/apache/password/.<password file name> <username>
 
    * cron の設定：web サーバーユーザーまたは別のユーザー。
 
-   この例では、Web サーバーユーザーを使用しますが、ユーザーの選択はユーザー次第です。
+  この例では、Web サーバーユーザーを使用しますが、ユーザーの選択はユーザー次第です。
 
    * Elasticsearch:ユーザーの名前は `magento_elasticsearch` この例では
-
 
 * `<password file name>` は、非表示のファイル ( `.`) およびには、ユーザーの名前が反映されている必要があります。 詳しくは、この節の後の例を参照してください。
 

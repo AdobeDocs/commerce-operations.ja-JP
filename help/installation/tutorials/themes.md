@@ -1,13 +1,14 @@
 ---
 title: テーマのアンインストール
 description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceテーマをアンインストールします。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Install, Themes
+exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
 
 ---
-
 
 # テーマのアンインストール
 
@@ -26,7 +27,7 @@ ht-degree: 0%
 * の更新 `parent` ノード情報 `theme.xml` をクリックして、テーマへの参照を削除します。
 * ファイルシステムからテーマコードを削除する。
 
-   [テーマの継承の詳細](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
+  [テーマの継承の詳細](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
 
 ## テーマのアンインストール
 

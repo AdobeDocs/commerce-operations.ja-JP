@@ -1,13 +1,14 @@
 ---
 title: デプロイメント設定を作成または更新する
 description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceのデプロイメント設定を管理します。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+feature: Install, Deploy, Configuration
+exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 0%
 
 ---
-
 
 # デプロイメント設定を作成または更新する
 

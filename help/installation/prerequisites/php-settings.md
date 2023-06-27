@@ -1,13 +1,14 @@
 ---
 title: PHP 設定
 description: 以下の手順に従って、必要な PHP 拡張をインストールし、Adobe CommerceとMagento Open Sourceのオンプレミスインストールに必要な PHP 設定を構成します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Install, Configuration
+exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
 
 ---
-
 
 # PHP 設定
 
@@ -73,7 +74,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - PHP のメモリ制限を設定します。
 
-   アドビの詳細な推奨事項は次のとおりです。
+  アドビの詳細な推奨事項は次のとおりです。
 
    - コードのコンパイルまたは静的アセットのデプロイ `1G`
    - デバッグ， `2G`
@@ -81,18 +82,18 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - PHP の値を増やします `realpath_cache_size` および `realpath_cache_ttl` 推奨設定に変更するには：
 
-   ```conf
-   realpath_cache_size=10M
-   realpath_cache_ttl=7200
-   ```
+  ```conf
+  realpath_cache_size=10M
+  realpath_cache_ttl=7200
+  ```
 
-   これらの設定を使用すると、PHP プロセスは、ページが読み込まれるたびにファイルを検索するのではなく、ファイルへのパスをキャッシュできます。 詳しくは、 [パフォーマンスの調整](https://www.php.net/manual/en/ini.core.php) PHP ドキュメント内。
+  これらの設定を使用すると、PHP プロセスは、ページが読み込まれるたびにファイルを検索するのではなく、ファイルへのパスをキャッシュできます。 詳しくは、 [パフォーマンスの調整](https://www.php.net/manual/en/ini.core.php) PHP ドキュメント内。
 
 - 有効にする [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments):Adobe CommerceおよびMagento Open Source2.1 以降で必要です。
 
-   次を有効にすることをお勧めします： [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) パフォーマンス上の理由から OPcache は多くの PHP ディストリビューションで有効になっています。
+  次を有効にすることをお勧めします： [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) パフォーマンス上の理由から OPcache は多くの PHP ディストリビューションで有効になっています。
 
-   Adobe CommerceおよびMagento Open Source2.1 以降では、コード生成に PHP コードコメントを使用します。
+  Adobe CommerceおよびMagento Open Source2.1 以降では、コード生成に PHP コードコメントを使用します。
 
 >[!NOTE]
 >
@@ -126,15 +127,15 @@ PHP OPcache 設定は、通常、 `php.ini` または `opcache.ini`. 場所は�
 
 - Apache Web サーバー：
 
-   Apache を使用する Ubuntu の場合、OPcache の設定は通常、 `php.ini` ファイル。
+  Apache を使用する Ubuntu の場合、OPcache の設定は通常、 `php.ini` ファイル。
 
-   Apache または nginx を使用する CentOS の場合、OPcache 設定は通常、 `/etc/php.d/opcache.ini`
+  Apache または nginx を使用する CentOS の場合、OPcache 設定は通常、 `/etc/php.d/opcache.ini`
 
-   見つからない場合は、次のコマンドを使用して見つけます。
+  見つからない場合は、次のコマンドを使用して見つけます。
 
-   ```bash
-   sudo find / -name 'opcache.ini'
-   ```
+  ```bash
+  sudo find / -name 'opcache.ini'
+  ```
 
 - PHP-FPM を使用した nginx web サーバ： `/etc/php/7.2/fpm/php.ini`
 

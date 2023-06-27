@@ -1,13 +1,14 @@
 ---
 title: サンプルの Data Composer パッケージをダウンロードします。
 description: Composer PHP Package Manager を使用してAdobe CommerceおよびMagento Open Sourceサンプルデータをインストールするには、次の手順に従います。
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+feature: Install, Deploy
+exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
 
 ---
-
 
 # サンプルの Data Composer パッケージをダウンロードします。
 
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 * 圧縮されたアーカイブをからダウンロード `https://magento.com/tech-resources/download`.
 
-   GitHub からアーカイブをダウンロードした場合、このメソッドは機能しません。 `composer.json` ファイルに `repo.magento.com` URL。
+  GitHub からアーカイブをダウンロードした場合、このメソッドは機能しません。 `composer.json` ファイルに `repo.magento.com` URL。
 
 * 使用済み `composer create-project`
 

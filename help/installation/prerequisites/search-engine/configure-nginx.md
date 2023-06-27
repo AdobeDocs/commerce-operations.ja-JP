@@ -1,13 +1,14 @@
 ---
 title: 検索エンジン用に Nginx を設定する
 description: Nginx Web サーバーを使用して検索エンジンを構成し、Adobe CommerceとMagento Open Sourceのオンプレミスインストールを行うには、次の手順に従います。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Install, Search
+exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 0%
 
 ---
-
 
 # 検索エンジン用に Nginx を設定する
 

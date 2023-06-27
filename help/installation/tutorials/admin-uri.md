@@ -1,13 +1,14 @@
 ---
 title: 管理 URI を表示または変更する
 description: Adobe CommerceまたはMagento Open Source管理アプリケーションの URI を表示および変更するには、次の手順に従います。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Install, Configuration
+exl-id: 768f9ab4-7123-4460-9df8-a6c98ae55d95
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
 
 ---
-
 
 # 管理 URI を表示または変更する
 
