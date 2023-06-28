@@ -1,7 +1,7 @@
 ---
-source-git-commit: 36ebf825705e3ffb26d595d39df8339ab1ca3c6f
+source-git-commit: 79293c564f9fcded146916e9e3bfd27a28424940
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 0%
 ## 最新情報
 
 新しいドキュメントと既存ドキュメントの重要な更新について説明します。
+
+### 2023 年 6 月 24 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新された <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">必要システム構成</a> ページの <em>インストールガイド</em> 「クラウド」と「オンプレミス」の依存関係を切り替えるためのタブ付き</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3d56a01b91a71b1c615a28588e726f0b9e58abb0">3d56a0</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2023 年 6 月 14 日
 
@@ -22,6 +42,12 @@ ht-degree: 0%
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p>2023 年 6 月リリースの追加先： <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">リリース済みバージョン</a>.</p>
+</td>
+      <td>技術</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8d7329c2496f4d322a83ec6bcf71ef956f4284c3">8d7329</a> （コミット）</td>
+    </tr>
     <tr>
       <td><p>ベータ版に関する以下のドキュメントを追加しました。<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html">Adobe Commerce CLI（オンプレミス、ベータ版）</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html">Magento Open SourceCLI（ベータ版）</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html">Adobe Commerceパッケージ（ベータ版）</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/cloud-beta.html">Adobe Commerce用クラウドパッケージ（ベータ版）</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html">Magento Open Sourceパッケージ（ベータ版）</a></p>
 </td>
