@@ -3,14 +3,13 @@ title: OPcache メモリサイズのベストプラクティス
 description: Adobe Commerceプロジェクトでの OPcache メモリ消費の特定の設定によるパフォーマンスの低下を回避する方法について説明します。
 role: Developer
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerceの OPcache メモリサイズのベストプラクティス
 

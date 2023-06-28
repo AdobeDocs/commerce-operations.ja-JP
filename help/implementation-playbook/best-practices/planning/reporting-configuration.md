@@ -2,15 +2,14 @@
 title: レポート設定のベストプラクティス
 description: レポートモジュールを使用しない場合は削除して、サイトのパフォーマンスを最適化します。
 role: Admin
-feature: Best Practices
-feature-set: Commerce
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+feature: Best Practices, Configuration
+exl-id: 8c991b8a-affb-4a9e-9383-671f595ff89e
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%
 
 ---
-
 
 # レポート設定のベストプラクティス
 

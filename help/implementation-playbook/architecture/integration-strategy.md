@@ -2,7 +2,8 @@
 title: Adobe Commerce統合戦略
 description: Adobe Commerce実装の統合戦略とオプションを確認します。
 exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+feature: Integration
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%
@@ -13,15 +14,15 @@ ht-degree: 0%
 
 プラットフォームを統合する機能は「非交渉」です。 企業は、さまざまなタッチポイントからアクセス可能な e コマースプラットフォームを求め、特に ERP に対応するテクノロジーシステムにシームレスに統合されています。 カスタマイズ性、グローバルな拡張性、手頃な価格も、最終的なプラットフォーム購入において重要な役割を果たします。
 
-ストアフロントとバックエンドの両方のシステムの総合的な統合アプローチは、パフォーマンスの高い GraphQL API、包括的な REST API、Adobe Commerceと他のシステムまたはサービスとの間のバッチファイルインポートでサポートされます。
+ストアフロントとバックエンドの両方のシステムの総合的な統合アプローチは、パフォーマンスの高いGraphQL API、包括的な REST API、Adobe Commerceと他のシステムまたはサービスとの間のバッチファイルインポートでサポートされます。
 
-Adobe Commerce GraphQL API は、次のような他のストアフロントとの統合に使用できる、包括的なストアフロントカバレッジを提供します。
+Adobe Commerce GraphQL API には、次のような他のストアフロントと統合できる、包括的なストアフロントカバレッジが用意されています。
 
 - Adobe Experience Managerや Bloomreach などのデジタルエクスペリエンスプラットフォーム (DXP)
 - Drupal や WordPress などのコンテンツ管理システム (CMS)
 - Adobe Commerce、PWA Studio、Vue Storefront などの最新のカスタムストアフロントアプリケーション
 
-GraphQL は、効率的でチャネル固有の応答、データの過剰取得なし、新しいタッチポイント機能の迅速なデプロイメントを提供します。 また、モバイルネイティブアプリ、POS、IoT、ソーシャルチャネル、Facebook、Google、Instagram、WeChat、TikTokなどのライブストリームコマースチャネルなどのセールスチャネルとの統合も選択されます。
+GraphQLは、効率的なチャネル固有の応答、データのオーバーフェッチをおこなわず、新しいタッチポイント機能の迅速なデプロイメントを提供します。 また、モバイルネイティブアプリ、POS、IoT、ソーシャルチャネル、Facebook、Google、Instagram、WeChat、TikTokなどのライブストリームコマースチャネルなどのセールスチャネルとの統合も選択されます。
 
 Adobe Commerce REST API は、製品やカタログを含む、包括的なシステム設定範囲とデータ管理機能を提供します。買い物かご、見積もり、チェックアウト顧客、アカウント、会社注文と返品。 REST API は一括操作、複数の認証モード、詳細な認証をサポートするので、多くの場合、REST API は次のようなエンタープライズシステムと統合するように選択されます。
 

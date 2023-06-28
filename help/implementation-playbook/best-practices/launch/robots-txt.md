@@ -2,15 +2,14 @@
 title: 「robots.txt」および「sitemap.xml」ファイルの設定に関するベストプラクティス
 description: Adobe Commerceサイトに関する手順を Web クローラーに渡す方法について説明します。
 role: Developer
-feature-set: Commerce
 feature: Best Practices
-source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
+exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
 
 ---
-
 
 # 設定のベストプラクティス `robots.txt` および `sitemap.xml` ファイル
 
@@ -38,27 +37,27 @@ ht-degree: 0%
 - プロジェクトで [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) バージョン 2002.0.12 以降。
 - 管理アプリケーションを使用して、 `robots.txt` ファイル。
 
-   >[!TIP]
-   >
-   >自動生成されたを表示 `robots.txt` 次の場所にあなたのストアのファイル `<domain.your.project>/robots.txt`.
+  >[!TIP]
+  >
+  >自動生成されたを表示 `robots.txt` 次の場所にあなたのストアのファイル `<domain.your.project>/robots.txt`.
 
 - 管理アプリケーションを使用して `sitemap.xml` ファイル。
 
-   >[!IMPORTANT]
-   >
-   >クラウドインフラストラクチャプロジェクト上のAdobe Commerce上の読み取り専用ファイルシステムにより、 `pub/media` パスを使用してファイルを生成します。
+  >[!IMPORTANT]
+  >
+  >クラウドインフラストラクチャプロジェクト上のAdobe Commerce上の読み取り専用ファイルシステムにより、 `pub/media` パスを使用してファイルを生成します。
 
 - カスタム Fastly VCL スニペットを使用して、サイトのルートからにリダイレクトします。 `pub/media/` 両方のファイルの場所：
 
-   ```vcl
-   {
-     "name": "sitemaprobots_rewrite",
-     "dynamic": "0",
-     "type": "recv",
-     "priority": "90",
-     "content": "if ( req.url.path ~ \"^/?sitemap.xml$\" ) { set req.url = \"pub/media/sitemap.xml\"; } else if (req.url.path ~ \"^/?robots.txt$\") { set req.url = \"pub/media/robots.txt\";}"
-   }
-   ```
+  ```vcl
+  {
+    "name": "sitemaprobots_rewrite",
+    "dynamic": "0",
+    "type": "recv",
+    "priority": "90",
+    "content": "if ( req.url.path ~ \"^/?sitemap.xml$\" ) { set req.url = \"pub/media/sitemap.xml\"; } else if (req.url.path ~ \"^/?robots.txt$\") { set req.url = \"pub/media/robots.txt\";}"
+  }
+  ```
 
 - Web ブラウザーでファイルを表示して、リダイレクトをテストします。 例： `<domain.your.project>/robots.txt` および `<domain.your.project>/sitemap.xml`. 別のパスではなく、リダイレクトを設定したルートパスを使用していることを確認してください。
 
@@ -81,15 +80,15 @@ ht-degree: 0%
 
 - 少し変更されたカスタム Fastly VCL スニペットを使用して、サイトのルートからにリダイレクトします。 `pub/media` サイト全体の両方のファイルの場所：
 
-   ```vcl
-   {
-     "name": "sitemaprobots_rewrite",
-     "dynamic": "0",
-     "type": "recv",
-     "priority": "90",
-     "content": "if ( req.url.path == \"/robots.txt\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) { set req.url = \"pub/media/\" re.group.1 \"_robots.txt\"; }} else if ( req.url.path == \"/sitemap.xml\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) {  set req.url = \"pub/media/\" re.group.1 \"_sitemap.xml\"; }}"
-   }
-   ```
+  ```vcl
+  {
+    "name": "sitemaprobots_rewrite",
+    "dynamic": "0",
+    "type": "recv",
+    "priority": "90",
+    "content": "if ( req.url.path == \"/robots.txt\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) { set req.url = \"pub/media/\" re.group.1 \"_robots.txt\"; }} else if ( req.url.path == \"/sitemap.xml\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) {  set req.url = \"pub/media/\" re.group.1 \"_sitemap.xml\"; }}"
+  }
+  ```
 
 ## Adobe Commerceオンプレミス
 

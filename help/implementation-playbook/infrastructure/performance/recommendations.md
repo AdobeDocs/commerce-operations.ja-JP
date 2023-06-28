@@ -2,7 +2,9 @@
 title: パフォーマンスの最適化Recommendations
 description: 次の推奨事項に従って、Adobe Commerce実装のパフォーマンスを最適化します。
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 821ef18c1b0f00a6b9574be968ad76f0c230335c
+feature: Cloud
+topic: Performance
+source-git-commit: 7c2e2bdabf47e1367ffb6761230d3d43f0f9d0cf
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 0%

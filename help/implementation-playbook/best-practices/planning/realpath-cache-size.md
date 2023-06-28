@@ -2,15 +2,14 @@
 title: Realpath キャッシュサイズ
 description: 推奨設定を使用するように PHP readlpath キャッシュ設定を更新し、Adobe Commerceのパフォーマンスを最適化する方法を説明します。
 role: Developer
-feature: Best Practices
-feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+feature: Best Practices, Cache
+exl-id: 1cd48155-5d60-48b2-b07b-9b5784b81681
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%
 
 ---
-
 
 # Realpath キャッシュ構成のベストプラクティス
 
@@ -39,4 +38,3 @@ Realpath キャッシュの設定値が小さすぎるか大きすぎる場合�
    - [データベースのベストプラクティス](database-on-cloud.md)
    - [データベースで最も一般的な問題のMagento Commerce Cloud](../maintenance/resolve-database-performance-issues.md)
 - [インデクサー「スケジュールに従って更新」により、Magentoのパフォーマンスを最適化](../maintenance/indexer-configuration.md)
-

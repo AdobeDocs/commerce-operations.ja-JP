@@ -3,14 +3,13 @@ title: Adobeセキュリティ通知サービス
 description: Adobe製品に関する最新のセキュリティ更新を取得する方法を説明します。
 role: User
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: b62aa554d1f1cb9d0fda6475b710d87997a56fb6
+exl-id: 9d9521c3-d429-455a-ae28-f49a486eafe0
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 0%
 
 ---
-
 
 # セキュリティ通知のベストプラクティス
 

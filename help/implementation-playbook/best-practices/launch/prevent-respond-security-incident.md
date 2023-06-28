@@ -2,15 +2,14 @@
 title: セキュリティインシデントの防止と対応
 description: クラウドインフラストラクチャプロジェクト上のAdobe Commerceで発生したセキュリティ上の問題を回避し、対応するためのベストプラクティスについて説明します。
 role: Admin, Developer, Leader, User
-feature-set: Commerce
 feature: Best Practices
-source-git-commit: bb9b8cc9993a70ea50667f08c8260759ab0f91dc
+exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 0%
 
 ---
-
 
 # セキュリティインシデントの防止と対応に役立つベストプラクティス
 
@@ -62,9 +61,9 @@ Fastly Edge ACL リストとカスタム [VCL コードスニペット](https://
 - 次を使用してイベントを分析 [Adobe Commerceツールの監視](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=en).
 「 Observation for Adobe Commerce 」ツールを使用すると、複雑な問題を分析して、根本原因を特定できます。 異なるデータを追跡する代わりに、イベントとエラーを関連付ける時間を費やして、パフォーマンスのボトルネックの原因に関するより深い洞察を得ることができます。
 このツールは、サイトの潜在的な問題の一部を明確に把握し、根本原因を特定してサイトのパフォーマンスを最適に維持するのに役立つようにすることを目的としています。 上記の「 Adobe Commerceの監視」ツールドキュメントへのリンクをクリックして、ツールのドキュメントにアクセスします。 ドキュメントには、 **セキュリティ** タブをクリックします。
-- 次を使用してログを分析 [New Relic ログ](https://devdocs.magento.com/cloud/project/new-relic.html#new-relic-logs). Adobe Commerce on cloud infrastructure Pro プロジェクトには以下が含まれます。 [New Relic ログ](https://docs.newrelic.com/docs/logs/new-relic-logs/get-started/introduction-new-relic-logs) サービス。 このサービスは、ステージング環境と実稼動環境からすべてのログデータを集計して、一元化されたログ管理ダッシュボードに表示するように事前に設定されています。
+- 次を使用してログを分析 [New Relic Logs](https://devdocs.magento.com/cloud/project/new-relic.html#new-relic-logs). Adobe Commerce on cloud infrastructure Pro プロジェクトには以下が含まれます。 [New Relic Logs](https://docs.newrelic.com/docs/logs/new-relic-logs/get-started/introduction-new-relic-logs) サービス。 このサービスは、ステージング環境と実稼動環境からすべてのログデータを集計して、一元化されたログ管理ダッシュボードに表示するように事前に設定されています。
 New Relic Logs サービスを使用して、次のタスクを実行できます。
-   - 用途 [New Relic クエリ](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) を使用して集計ログデータを検索します。
+   - 用途 [New Relicクエリ](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) を使用して集計ログデータを検索します。
    - New Relic Logs アプリケーションでログデータを視覚化します。
 
 ## 追加情報

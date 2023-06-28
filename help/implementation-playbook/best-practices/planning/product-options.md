@@ -2,15 +2,14 @@
 title: 製品オプション設定のベストプラクティス
 description: 製品オプションの数を制限して、Adobe Commerceのパフォーマンスを最適化します。
 role: Admin
-feature: Best Practices
-feature-set: Commerce
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+feature: Best Practices, Catalogs
+exl-id: 7571a163-798a-40be-b26f-4a184bceb809
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
 
 ---
-
 
 # 製品オプションのベストプラクティス
 
@@ -51,4 +50,3 @@ ht-degree: 0%
 - [バルクアクションログ](https://docs.magento.com/user-guide/system/action-log-bulk-actions.html)
 - [在庫一括処理 API](https://developer.adobe.com/commerce/webapi/rest/inventory/bulk-inventory/)
 - [トレーニング：Adobe Commerceを使用したカタログと製品の管理](https://learning.adobe.com/catalog/adobe_commerce/cours000000000098643.html)
-

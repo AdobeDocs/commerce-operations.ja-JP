@@ -2,7 +2,8 @@
 title: クラウドインフラストラクチャの地域
 description: Adobe Commerceで使用可能なAWSおよび Azure 地域を示す図を確認します。
 exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
-source-git-commit: d387ca9f3c7ce3b0c8ce254cc1c056e5b244ed34
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 0%

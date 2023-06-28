@@ -3,11 +3,11 @@ title: データベーステーブルを変更する際のベストプラクテ�
 description: Adobe Commerceおよびサードパーティのデータベーステーブルを変更する方法とタイミングについて説明します。
 role: Developer, Architect
 feature: Best Practices
-feature-set: Commerce
 last-substantial-update: 2022-11-15T00:00:00Z
-source-git-commit: 570fa4877f578f636736f0404169ed215fd06b24
+exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 コアテーブルを変更しない主な理由は、生の SQL クエリを含む基礎となるロジックがAdobe Commerceに含まれていることです。 テーブルの構造を変更すると、予期しない副作用が発生し、トラブルシューティングが困難になる場合があります。 この変更は、DDL（データ定義言語）操作に影響を与え、パフォーマンスに予期しない予期しない影響を与える場合もあります。
 
-データベーステーブル構造を変更しないもう 1 つの理由は、コア開発チームやサードパーティの開発者がデータベーステーブルの構造を変更すると、変更が問題を引き起こす可能性があるからです。 例えば、いくつかのコアデータベーステーブルに、 `additional_data`. これは常に `text` 列のタイプ。 ただし、パフォーマンス上の理由から、コアチームは列を `longtext`. このタイプの列は JSON のエイリアスです。 この列タイプに変換すると、パフォーマンスが向上し、検索性がその列に追加されますが、これは `text` タイプ。 このトピックについて詳しくは、 [JSON データタイプ](https://mariadb.com/kb/en/json-data-type/){target=&quot;_blank&quot;}。
+データベーステーブル構造を変更しないもう 1 つの理由は、コア開発チームやサードパーティの開発者がデータベーステーブルの構造を変更すると、変更が問題を引き起こす可能性があるからです。 例えば、いくつかのコアデータベーステーブルに、 `additional_data`. これは常に `text` 列のタイプ。 ただし、パフォーマンス上の理由から、コアチームは列を `longtext`. このタイプの列は JSON のエイリアスです。 この列タイプに変換すると、パフォーマンスが向上し、検索性がその列に追加されますが、これは `text` タイプ。 このトピックについて詳しくは、 [JSON データタイプ](https://mariadb.com/kb/en/json-data-type/){target="_blank"}.
 
 ## データを保存または削除するタイミングを把握する
 
@@ -34,15 +34,15 @@ Adobeは、まず、このデータを保存する必要があるかどうかを
 
 この場合、データベースをサーバーに移行する必要があります。データを読み取るための Web インターフェイスを提供するか、MySQL Workbench または類似のツールを使用するトレーニングを提供する必要があります。 新しいデータベースからこのデータを除外すると、開発チームはデータ移行の問題のトラブルシューティングではなく、新しいサイトに焦点を当てることで、移行を迅速におこなえます。
 
-データをコマースの外部に保持しながらリアルタイムで使用する別の関連オプションは、GraphQL メッシュなどの他のツールを活用することです。 このオプションは、異なるデータソースを組み合わせて、単一の応答として返します。
+データをコマースの外部に保持しながらリアルタイムで使用する別の関連オプションは、GraphQLメッシュなどの他のツールを利用することです。 このオプションは、異なるデータソースを組み合わせて、単一の応答として返します。
 
-例えば、次のことが可能です。 `stitch` 外部データベース ( 廃止された古いMagento1 サイトなど ) からの古い注文をまとめたもの。 次に、GraphQL メッシュを使用して、顧客の注文履歴の一部として表示します。 これらの古い注文は、現在の注文と組み合わせることができます [!DNL Adobe Commerce] 環境。
+例えば、次のことが可能です。 `stitch` 外部データベース ( 廃止された古いMagento1 サイトなど ) からの古い注文をまとめたもの。 次に、GraphQLメッシュを使用して、顧客の注文履歴の一部として表示します。 これらの古い注文は、現在の注文と組み合わせることができます [!DNL Adobe Commerce] 環境。
 
-GraphQL での API メッシュの使用について詳しくは、 [API メッシュとは](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target=&quot;_blank&quot;}) および [GraphQL メッシュゲートウェイ](https://developer.adobe.com/graphql-mesh-gateway/){target=&quot;_blank&quot;}。
+GraphQLでの API メッシュの使用について詳しくは、 [API メッシュとは](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) and [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
 ## 拡張機能属性を持つレガシーデータの移行
 
-レガシーデータを移行する必要があると判断した場合、または新しいデータを [!DNL Adobe Commerce]を使用する場合、Adobeは [拡張属性](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target=&quot;_blank&quot;}。 拡張機能属性を使用して追加データを保存すると、次の利点があります。
+レガシーデータを移行する必要があると判断した場合、または新しいデータを [!DNL Adobe Commerce]を使用する場合、Adobeは [拡張属性](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. 拡張機能属性を使用して追加データを保存すると、次の利点があります。
 
 - 保持するデータとデータベース構造を制御して、正しい列タイプと適切なインデックスでデータが保存されるようにします。
 - のほとんどのエンティティ [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、拡張機能属性の使用をサポートしています。
@@ -52,9 +52,9 @@ GraphQL での API メッシュの使用について詳しくは、 [API メッ�
 
 ### 他の代替策を検討する
 
-開発者は、 [!DNL Adobe Commerce] 環境 (GraphQL メッシュやAdobeApp Builder など )。 これらのツールを使用すると、データへのアクセスを保持できますが、コアコマースアプリケーションやその基になるデータベーステーブルには影響しません。 この方法では、API を使用してデータを公開します。 次に、App Builder の設定にデータソースを追加します。 GraphQL Mesh を使用すると、これらのデータソースを組み合わせて、 [レガシーデータ](#legacy-data).
+開発者は、 [!DNL Adobe Commerce] 環境 (GraphQLメッシュやAdobeApp Builder など ) これらのツールを使用すると、データへのアクセスを保持できますが、コアコマースアプリケーションやその基になるデータベーステーブルには影響しません。 この方法では、API を使用してデータを公開します。 次に、App Builder の設定にデータソースを追加します。 GraphQL Mesh を使用すると、これらのデータソースを組み合わせて 1 つの応答を生成できます ( [レガシーデータ](#legacy-data).
 
-GraphQL メッシュの詳細については、 [GraphQL メッシュゲートウェイ](https://developer.adobe.com/graphql-mesh-gateway/){target=&quot;_blank&quot;}。 App Builder について詳しくは、Adobe [App Builder の概要](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target=&quot;_blank&quot;}。
+GraphQLメッシュの詳細については、 [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For information about the Adobe App Builder,  see [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
 
 ## コアテーブルまたはサードパーティテーブルの変更
 
@@ -73,11 +73,11 @@ Adobeでは、コアデータベーステーブルまたはサードパーティ
 
    例： `app/code/YourCompany/Customer`
 
-1. 適切なファイルを作成してモジュールを有効にします ( [モジュールの作成](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target=&quot;_blank&quot;}。
+1. 適切なファイルを作成してモジュールを有効にします ( [モジュールの作成](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 
 1. という名前のファイルを作成します。 `db_schema.xml` 内 `etc` フォルダーに保存し、適切な変更を行います。
 
-   該当する場合は、 `db_schema_whitelist.json` ファイル。 詳しくは、 [宣言スキーマ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target=&quot;_blank&quot;} を参照してください。
+   該当する場合は、 `db_schema_whitelist.json` ファイル。 詳しくは、 [宣言スキーマ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"} を参照してください。
 
 ### 潜在的な影響
 

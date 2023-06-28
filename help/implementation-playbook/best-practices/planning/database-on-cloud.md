@@ -2,9 +2,9 @@
 title: クラウドデプロイメントのデータベース設定のベストプラクティス
 description: クラウドインフラストラクチャにAdobe Commerceをデプロイする際のパフォーマンスを向上させるために、データベースとアプリケーションの設定を構成する方法について説明します。
 role: Developer, Admin
-feature-set: Commerce
 feature: Best Practices
-source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
+exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 0%

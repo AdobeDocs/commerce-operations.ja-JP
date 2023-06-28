@@ -2,15 +2,14 @@
 title: 製品リストのページネーションのベストプラクティス
 description: ストアフロントカタログの各ページに表示する製品の数を管理して、Adobe Commerceのパフォーマンスを最適化する方法について説明します。
 role: User, Admin
-feature: Best Practices
-feature-set: Commerce
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+feature: Best Practices, Catalogs
+exl-id: 473f23a9-53fb-41a6-9b3a-af7bd1208be0
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
 
 ---
-
 
 # 製品リストのページネーションのベストプラクティス
 

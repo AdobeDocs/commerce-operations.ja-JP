@@ -2,7 +2,8 @@
 title: Adobe Commerce Integration Options
 description: 他のシステムとAdobe Commerceの実装を統合するためのオプションを確認します。
 exl-id: 10de70d2-ff3b-4f10-b370-01d805b745dc
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+feature: Integration
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%

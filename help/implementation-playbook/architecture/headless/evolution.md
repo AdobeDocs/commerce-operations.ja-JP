@@ -2,7 +2,8 @@
 title: Adobe Commerceでのヘッドレスの変化
 description: Adobe Commerceのヘッドレスアーキテクチャサポートの進化について説明します。
 exl-id: 991f0530-c596-46c5-9eb0-fa109f848165
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Integration
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 0%

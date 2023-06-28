@@ -2,15 +2,14 @@
 title: 製品カートのベストプラクティス
 description: 買い物かご内の製品数を制限して、Adobe Commerceのパフォーマンスを最適化する方法を説明します。
 role: User
-feature: Best Practices
-feature-set: Commerce
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+feature: Best Practices, Shopping Cart
+exl-id: 7ea5acc2-f6b2-4244-8c07-c71fd54a18a0
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
 
 ---
-
 
 # 製品カート管理のベストプラクティス
 

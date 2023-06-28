@@ -3,14 +3,13 @@ title: 静的コンテンツデプロイメントのベストプラクティス
 description: 静的コンテンツがAdobe CommerceやMagento Open Sourceストアフロントに表示されない問題を回避する方法を説明します。
 role: Developer
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+exl-id: 9f521963-6fe4-4844-b2d1-fd457b706900
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
 
 ---
-
 
 # 静的コンテンツデプロイメントのベストプラクティス
 
@@ -54,4 +53,3 @@ ht-degree: 0%
 * [デプロイメントフロー](../../../performance/deployment-flow.md)
 * [ダウンタイムなしの導入](https://devdocs.magento.com/cloud/deploy/reduce-downtime.html)
 * [クラウドデプロイメントの最適化](https://devdocs.magento.com/cloud/deploy/optimize-cloud-deployment.html)
-

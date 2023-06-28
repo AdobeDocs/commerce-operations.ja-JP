@@ -2,15 +2,14 @@
 title: 製品属性設定のベストプラクティス
 description: 製品属性、属性オプションおよび属性セットの数を制限して、Adobe Commerceのパフォーマンスを最適化する方法を説明します
 role: User, Admin
-feature: Best Practices
-feature-set: Commerce
-source-git-commit: e156fcafc5792036b37d9b199b870f1888c3f1ff
+feature: Best Practices, Catalogs
+exl-id: 81783a4c-bc82-4733-bee3-0154cf03079a
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 0%
 
 ---
-
 
 # 製品属性設定のベストプラクティス
 
@@ -21,7 +20,6 @@ ht-degree: 0%
    - Adobe Commerceバージョン 2.4.2 以降の場合、最大 1500 個の製品属性を設定します。
 - **製品属性オプション** — 各属性に最大 100 個の属性オプションを設定
 - **製品属性セット** — 最大 1000 個の属性セットを設定する_
-
 >[!NOTE]
 >
 >製品属性は、すべての製品にグローバルに適用される機能を指定します。 製品属性オプションは、特定の製品に適用する機能を指定するカスタマイズです。
@@ -96,4 +94,3 @@ MySQL を使用して、未使用の製品属性セットを削除します。
 - [属性セット](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-sets.html)
 - [製品の作成](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html)
 - [カスタマイズチュートリアル/製品作成フォームをカスタマイズ](https://developer.adobe.com/commerce/php/tutorials/admin/custom-product-creation-form/)
-

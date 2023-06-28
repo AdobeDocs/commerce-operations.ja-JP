@@ -2,7 +2,8 @@
 title: Managed Services
 description: クラウドインフラストラクチャの実装に関するAdobe Commerceに対する、Adobe Managed Services、お客様、クラウドサービスプロバイダーの責任を確認します。
 exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+feature: Cloud, Services
+source-git-commit: 7c2e2bdabf47e1367ffb6761230d3d43f0f9d0cf
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%

@@ -3,14 +3,13 @@ title: フロントエンドパフォーマンスの監査
 description: Web パフォーマンスツールを使用してAdobe Commerceストアフロントの操作を監査することで、サイトのパフォーマンスに悪影響を与える問題を特定し、対処します。
 role: Admin, User, Developer
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: e156fcafc5792036b37d9b199b870f1888c3f1ff
+exl-id: bafae565-9d09-4cc0-8507-e89a11dbd915
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
 
 ---
-
 
 # フロントエンドパフォーマンスのベストプラクティス
 
@@ -40,5 +39,3 @@ Web サイトストアのフロントエンドパフォーマンスを確認す�
 - [管理者ユーザー向けインデックス管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
 - [CLI を使用したインデックス管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [開発者向けのインデックス作成の概要](https://developer.adobe.com/commerce/php/development/components/indexing/)
-
-

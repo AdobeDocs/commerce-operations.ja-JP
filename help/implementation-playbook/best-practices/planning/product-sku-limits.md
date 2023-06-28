@@ -2,15 +2,14 @@
 title: 製品制限のベストプラクティス
 description: サイトのパフォーマンスを最大化するために、製品在庫管理単位 (SKU) を設定する際のベストプラクティスについて説明します。
 role: Admin
-feature: Best Practices
-feature-set: Commerce
-source-git-commit: e259f9b999566447469200c93db3bc4ba06434c0
+feature: Best Practices, Catalogs
+exl-id: 37af7b92-05ac-4a4f-9009-11e8d9f95c2f
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
 
 ---
-
 
 # 製品 SKU 設定のベストプラクティス
 

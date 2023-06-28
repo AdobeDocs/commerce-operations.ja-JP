@@ -2,7 +2,8 @@
 title: Launch 対応の概要
 description: Adobe Commerceの実装に対する Launch の準備状況の概要を確認します。
 exl-id: 87cfcb48-3c0e-4c14-afb4-62bb9fe94c48
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Deploy
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 0%

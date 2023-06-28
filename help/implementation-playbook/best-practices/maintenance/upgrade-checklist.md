@@ -3,14 +3,13 @@ title: アップグレードチェックリストのベストプラクティス
 description: アップグレードチェックリストを作成して使用し、Adobe CommerceおよびMagento Open Sourceアップグレード戦略を計画する方法を説明します。
 role: Leader
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
+exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
 
 ---
-
 
 # アップグレードチェックリストのベストプラクティス
 

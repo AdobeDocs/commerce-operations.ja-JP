@@ -3,14 +3,13 @@ title: サイト、ストア、ストアの表示を設定する際のベスト�
 description: サイトのパフォーマンスを最大化するための、サイト、ストア、およびストア表示の設定に関するベストプラクティスについて説明します。
 role: Admin
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
 
 ---
-
 
 # サイト、ストア、ストア表示の設定に関するベストプラクティス
 
@@ -48,4 +47,3 @@ Web サイトや店舗はカタログデータの乗数なので、多くの Web
 
 - [Web サイト、ストア、ストア表示について](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
 - [複数の Web サイトまたはストアを設定する](https://devdocs.magento.com/cloud/project/project-multi-sites.html)
-

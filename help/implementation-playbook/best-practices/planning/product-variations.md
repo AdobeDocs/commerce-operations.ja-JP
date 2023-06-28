@@ -2,15 +2,14 @@
 title: 製品バリエーション設定のベストプラクティス
 description: 設定する製品のバリエーション数を制限して、Adobe Commerceのパフォーマンスを最適化する方法を説明します。
 role: Admin
-feature: Best Practices
-feature-set: Commerce
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+feature: Best Practices, Catalogs
+exl-id: a19dd8b4-23b8-498f-be51-a0adfcd12a11
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
 
 ---
-
 
 # 製品バリエーションの設定に関するベストプラクティス
 

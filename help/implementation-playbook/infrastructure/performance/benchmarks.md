@@ -2,7 +2,8 @@
 title: パフォーマンスベンチマーク
 description: AdobeクラウドインフラストラクチャでホストされるAdobe Commerce実装のパフォーマンスベンチマーク結果を確認します。
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
-source-git-commit: eeb7146a8051e8692ebf974d65db75a4999cf2e6
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 0%
@@ -49,13 +50,13 @@ Adobe Commerce 2.4.5 のパフォーマンスベンチマーク結果は、以�
    - ストアフロントでの 3,000 人の同時ユーザー
    - 30% CDN キャッシュヒット率に設定
 
-      キャッシュレイヤーを有効に使用すると、1 時間あたりのページビュー数が増加します。
+     キャッシュレイヤーを有効に使用すると、1 時間あたりのページビュー数が増加します。
 
 - **GraphQL API**
    - 250 個の同時スレッド
    - 0% CDN キャッシュヒット率に設定
 
-      GraphQLの前面にあるキャッシュレイヤーを使用すると、応答時間が大幅に短縮されます。
+     GraphQLの前面にあるキャッシュレイヤーを使用すると、応答時間が大幅に短縮されます。
 
 - **管理 Web**
    - 500 人の同時ユーザー

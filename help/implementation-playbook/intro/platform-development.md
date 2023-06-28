@@ -2,7 +2,8 @@
 title: プラットフォーム開発の原則
 description: Adobe Commerceを使用する際の、基本的なプラットフォーム開発原則を理解します。
 exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 - GRA を含むアーキテクチャの考慮事項
 - スクリプティングと悪用に対するセキュリティ標準
 - 拡張機能の開発のベストプラクティス
-- REST、SOAP および GraphQL との Web API 統合
+- REST、SOAP およびGraphQLとの Web API 統合
 - コーディングとインフラストラクチャのパフォーマンス向上
 - ツール、戦略、方法をテスト
 

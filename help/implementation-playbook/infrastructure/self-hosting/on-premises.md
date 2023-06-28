@@ -3,7 +3,8 @@ title: オンプレミスインフラストラクチャ
 description: Adobe Commerceオンプレミスのインフラストラクチャとサードパーティのクラウドサービスについて説明します。
 last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: de1467be-acec-4a0d-8229-e7e87614bc55
-source-git-commit: a253da8cfe95083d1df76d3253aaa424b78a4865
+feature: Install
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 0%

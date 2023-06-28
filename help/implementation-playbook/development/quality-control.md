@@ -2,7 +2,8 @@
 title: 品質管理
 description: 実装プロジェクトに関連するAdobe Commerceの品質管理プロセスについて説明します。
 exl-id: 0eb62b24-21f6-4cec-8ef9-eeaa1ee6ae52
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Build
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
@@ -178,7 +179,7 @@ BrowserStack は、開発者がオンデマンドブラウザー、オペレー�
 
 ## API テスト
 
-Postman は、API 開発のコラボレーションプラットフォームです。 Postman は、API の構築の各手順を簡素化し、コラボレーションを効率化して、より優れた API を作成できるようにします。
+Postmanは、API 開発のコラボレーションプラットフォームです。 Postmanは、API の構築の各手順を簡素化し、コラボレーションを効率化して、より優れた API を作成できるようにします。
 
 SoapUI は、Simple Object Access Protocol(SOAP) および Representational State Transfers(REST) 用のオープンソース Web サービステストアプリケーションです。 その機能は、Web サービスの検査を含む。呼び出し、開発、シミュレーション、およびモッキング。機能テスト；負荷と準拠のテスト。
 

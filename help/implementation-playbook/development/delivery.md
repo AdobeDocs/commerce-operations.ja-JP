@@ -2,7 +2,8 @@
 title: プロジェクト導入方法
 description: Adobe Commerceソフトウェア配信の仕組みを理解します。
 exl-id: 579cd083-8b12-49ff-bc8a-8db1ca588d74
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Build, Deploy
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%

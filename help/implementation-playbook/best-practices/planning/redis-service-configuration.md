@@ -2,15 +2,14 @@
 title: Redis サービス設定のベストプラクティス
 description: Adobe Commerce用の拡張 Redis キャッシュ実装を使用して、キャッシュのパフォーマンスを向上させる方法を説明します。
 role: Developer, Admin
-feature-set: Commerce
-feature: Best Practices
-source-git-commit: 92faa85b51a1fd5314a5906e8650b03723118ce1
+feature: Best Practices, Cache
+exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
 
 ---
-
 
 # Redis サービス設定のベストプラクティス
 
@@ -98,6 +97,7 @@ Redis のキャッシュを Redis のセッションから分離すると、キ�
 
    >[!NOTE]
    >`disable_locking` は、次のように設定する必要があります `1`.
+   >   
 
    ```yaml
    SESSION_CONFIGURATION:

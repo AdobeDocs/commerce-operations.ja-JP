@@ -3,8 +3,8 @@ title: 注文処理の設定のベストプラクティス
 description: チェックアウトと注文処理のパフォーマンスを向上させる設定のベストプラクティスについて説明します。
 role: Admin, User
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: fb30b18c9b9f6a9f538189eeafda9ee7a29d436c
+exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
@@ -32,17 +32,17 @@ ht-degree: 0%
 
 - クラウドインフラストラクチャ上のAdobe Commerceおよび実稼働モードのオンプレミスサイトの場合は、次のMagentoCLI コマンドを使用して非同期インデックス作成を有効にします。
 
-   ```php
-   php bin/magento config:set dev/grid/async_indexing 1
-   ```
+  ```php
+  php bin/magento config:set dev/grid/async_indexing 1
+  ```
 
 - Default または Production モードのAdobe Commerceオンプレミスサイトの場合は、管理者の Grid Settings 構成を更新して、非同期インデックス作成を有効にします。
 
-   詳しくは、 [スケジュールされたグリッドの更新とインデックス再作成を有効にする](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
+  詳しくは、 [スケジュールされたグリッドの更新とインデックス再作成を有効にする](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
 
-   >[!WARNING]
-   >
-   >実稼動環境を更新する前に、必ずステージング環境で設定の変更をテストしてください。
+  >[!WARNING]
+  >
+  >実稼動環境を更新する前に、必ずステージング環境で設定の変更をテストしてください。
 
 ## 追加情報
 
