@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 28358ee2ebadfcbf12c67e667cbbd27599a28a80
+source-git-commit: 6299aa825c04a5afd31728e763269cee46cfe513
 workflow-type: tm+mt
-source-wordcount: '12912'
+source-wordcount: '13230'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,22 @@ ht-degree: 0%
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.34 {#v1-1-34}
+
+* **ACSD-52277** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) - Admin で新しい注文を作成する際に、ストア表示を選択した後、管理者ユーザーが適切にリダイレクトされない問題を修正しました。
+* **ACSD-50813** (Adobe Commerce>=2.4.5 &lt;2.4.7) — 管理者が、 [!UICONTROL Add Products by SKU] 機能を管理注文に追加しました。
+* **ACSD-51630** (Adobe CommerceとMagento Open Source>=2.4.3 &lt;2.4.7) — 大量のシステムメッセージが管理ページのダウンロードに時間がかかる問題を修正しました。
+* **ACSD-51853** (Adobe CommerceとMagento Open Source>=2.4.1 &lt;2.4.7) - [!UICONTROL Page Builder].
+* **ACSD-52160** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.7) - 「If an item is FOUND/NOT FOUND in the cart with All/Any of these conditions true」というルール条件に基づいて、買い物かごの価格ルールに対する製品検証結果が適切に評価されなかった問題を修正しました。
+* **ACSD-51636** (Adobe Commerce >=2.4.5 &lt;2.4.7) — 会社管理者が必要な役割と権限をすべて持っているにもかかわらず、顧客アカウントセクションから新しいユーザーを追加できない問題を修正しました。
+* **ACSD-51739** (Adobe Commerce >=2.4.6 &lt;2.4.7) - `structure_id` が CompanyTeam GraphQLリクエストでリクエストされました。
+* **ACSD-51857** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) - `aggregate_sales_report_bestsellers_data` 大きな sales_order と `sales_order_item` データベーステーブルは、メインのデータクエリが書き込まれた方法が原因でした。
+* **ACSD-48448** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) — 注文のキャンセル中に競合状態の問題が発生し、 `inventory_reservation` 表。
+* **ACSD-52689** (Adobe CommerceとMagento Open Source>=2.4.3 &lt;2.4.6) - REST API を使用して画像をAmazon S3 ストレージにアップロードできない問題を修正しました。
+* **B2B-2674** (Adobe CommerceおよびMagento Open Source>=2.4.4 &lt;2.4.7 の場合 ) - 1customAttributeMetadata1 GraphQLクエリにキャッシュ機能を追加します。
+* ACSD-44938の新しいバージョンを追加しました。
+* ACSD-46988の要件を追加しました。
 
 ## v1.1.33 {#v1-1-33}
 
