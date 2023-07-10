@@ -1,13 +1,13 @@
 ---
 title: キャッシュの管理
 description: キャッシュの種類を管理し、キャッシュのステータスを表示します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
+source-git-commit: 5c316ade0619603eafa7ece8a7cd8c1595dee713
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
-
 
 # キャッシュの管理
 
@@ -119,15 +119,19 @@ bin/magento cache:disable db_ddl full_page
 
 ## キャッシュタイプのクリーンアップとフラッシュ
 
+>[!NOTE]
+>
+>複数のページのキャッシュを同時に自動的に無効化 **_なし_** これらのエンティティの編集 例えば、カタログ内の製品が任意のカテゴリに割り当てられている場合や、いずれかのカテゴリに割り当てられている場合などです [!UICONTROL related product rule] が変更されました。
+
 キャッシュから古い項目をパージするには、次の手順を実行します。 _清潔な_ または _フラッシュ_ キャッシュタイプ：
 
 - キャッシュタイプをクリーニングすると、有効なコマースキャッシュタイプのみからすべての項目が削除されます。 つまり、このオプションは、Commerce が使用するキャッシュのみをクリーンアップするので、他のプロセスやアプリケーションには影響しません。
 
-   無効なキャッシュタイプはクリーンアップされません。
+  無効なキャッシュタイプはクリーンアップされません。
 
-   >[!TIP]
-   >
-   >Magento Open SourceまたはAdobe Commerceのバージョンをアップグレードした後、Magento Open SourceからAdobe Commerceにアップグレードした後、またはAdobe Commerceまたは任意のモジュール用に B2B をインストールした後は、常にキャッシュをクリーンアップします。
+  >[!TIP]
+  >
+  >Magento Open SourceまたはAdobe Commerceのバージョンをアップグレードした後、Magento Open SourceからAdobe Commerceにアップグレードした後、またはAdobe Commerceまたは任意のモジュール用に B2B をインストールした後は、常にキャッシュをクリーンアップします。
 
 - キャッシュタイプをフラッシュすると、キャッシュストレージがパージされます。同じストレージを使用している他のプロセスアプリケーションに影響を与える可能性があります。
 
