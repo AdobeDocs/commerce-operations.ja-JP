@@ -3,9 +3,9 @@ title: インストールガイド
 description: このガイドを使用して、 [!DNL Site-Wide Analysis Tool] （Web サイト用）
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
 feature: Configuration, Install
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 163d12b1f30a3098932c62e11f24784422002c67
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1176'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Adobe Commerceをオンプレミスでインストールしている場合は、
   >
   >Adobe Commerceはではサポートされていません [!DNL Microsoft Windows] または [!DNL macOS].
 
-- Adobe Commerce 2.4.1 以降
+- Adobe Commerce 2.4.5-p1 以降（Service Connector の依存関係による）
 
 - [!DNL Commerce Services Connector extension]
 
