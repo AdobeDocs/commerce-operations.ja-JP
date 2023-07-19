@@ -1,13 +1,13 @@
 ---
 title: 設定値の設定
 description: 設定値を設定し、管理でロックされている値を変更する方法について説明します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
+source-git-commit: 064be78a16142fc18bf64256eafde4b14c3ad529
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
-
 
 # 設定値の設定
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 - 設定パス
 - 特定のスコープの設定値を設定するには、スコープコードを把握しておく必要があります。
 
-   デフォルトのスコープの設定値を設定する場合は、何もする必要はありません。
+  デフォルトのスコープの設定値を設定する場合は、何もする必要はありません。
 
 ### 設定パスを検索
 
@@ -289,3 +289,8 @@ bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_ur
 ```terminal
 web/unsecure/base_url - http://example-for-store.com/
 ```
+
+>[!INFO]
+>
+>スコープコードには、文字（a ～ z または A ～ Z）、数字 (0 ～ 9)、アンダースコア (_) のみを含めることができます。 また、最初の文字は文字にする必要があります。 新しい Web サイトまたはストアビューを作成する際に大文字またはキャメルケースを使用した場合、内部的な一致では、環境変数を使用した設定の上書きに対応するため、大文字と小文字が区別されません。 詳しくは、 [環境変数を使用して設定を上書きする](../reference/override-config-settings.md#environment-variables).
+
