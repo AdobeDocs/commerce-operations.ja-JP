@@ -2,9 +2,9 @@
 title: 複数の Web サイト、ストア、管理者での表示の設定
 description: 追加の Web サイト、ストア、表示をコマース管理で設定します。
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: 5860f5327003372909c425c13c6d03166288d903
+source-git-commit: 78a7e99ecaba6a6f7982123f5bd67efc740ec2ef
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -172,8 +172,3 @@ Commerce には、ストアコードをサイトのベース URL に追加する
    >クラウドインフラストラクチャ上でAdobe Commerceのベース URL を設定する場合は、最初のピリオドを 3 ダッシュに置き換える必要があります。 例えば、ベース URL が `french.branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`を入力して、 `http://french---branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`
 
 1. クリック **設定を保存**.
-
-
->[!INFO]
->
->Web サイト、ストア、ストアビューのコードには、文字（a ～ z または A ～ Z）、数字 (0 ～ 9)、アンダースコア (_) のみを含めることができます。 また、最初の文字は文字にする必要があります。 大文字またはキャメルケースを使用する場合、内部的に一致では大文字と小文字が区別されず、環境変数を使用した設定の上書きに対応します。 詳しくは、 [環境変数を使用して設定を上書きする](../reference/override-config-settings.md#environment-variables).
