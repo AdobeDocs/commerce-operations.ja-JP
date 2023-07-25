@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6299aa825c04a5afd31728e763269cee46cfe513
+source-git-commit: 7649f4ffb0a04053d9a674aae7c29eb09ed02006
 workflow-type: tm+mt
-source-wordcount: '13230'
+source-wordcount: '13737'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,32 @@ ht-degree: 0%
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.35 {#v1-1-35}
+
+* **ACSD-51899** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) — チェックアウトの配送手順のデフォルトの配送先住所が、以前に選択した店頭受け取り先住所で自動入力される問題を修正しました。
+* **ACSD-52041** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.7) — 次のエラーメッセージが表示される問題を修正しました。 *[エラー] [!DNL Page Builder] ロックを解除せずに 5 秒間レンダリングしていた。* で編集したコンテンツを保存する際に Chrome ブラウザーに表示される [!DNL Page Builder].
+* **ACSD-52095** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.6) - `manage_stock` の値が製品の書き出し後、CSV ファイルで誤って 0 に設定されていました。
+* **ACSD-51358** (Adobe Commerce >=2.4.5 &lt;2.4.7 の場合 ) — 終了日なしで予定されている更新を削除すると、同じエンティティに対して予定されているその他の更新が削除される問題を修正しました。
+* **ACSD-48070** (Adobe Commerce >=2.3.7 &lt;2.4.7 の場合 ) — スケジュールされた更新を編集すると例外がトリガーする問題を修正しました。
+* **ACSD-51890** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) - [!UICONTROL Submit review] ボタンは [!DNL Google reCAPTCHA] v3 検証。
+* **ACSD-51984** (Adobe Commerce >=2.4.5 &lt;2.4.7 の場合 ) — オフになっていた問題を修正しました。 *[!UICONTROL Use Default Value]* および *[!UICONTROL non-default product field]* 2 つ目の web サイト、ストア、ストア表示の値は保存されません。
+* **ACSD-52398** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) — エラーを修正します。 *要求数量が使用できません* これは、ストアフロントで買い物かごに入っている製品の量を更新しようとしたときに発生します。
+* **ACSD-52786** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.6) — カタログルールの条件が *SKU が* は、特定の SKU で始まるすべての製品に適用されます。
+* **ACSD-52921** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.7) — 買い物かごに在庫切れの設定可能な製品がある場合にGraphQLから買い物かごの詳細をリクエストすると内部エラーが発生する問題を修正しました。
+* **ACSD-51683** (Adobe CommerceとMagento Open Source>=2.4.6 &lt;2.4.7) - GraphQLを使用してカスタマイズ可能なオプションを買い物かごに追加できない問題を修正しました。
+* **ACSD-52133** (Adobe CommerceとMagento Open Source>=2.4.6 &lt;2.4.7) — アップグレード後に顧客アカウントを保存できない問題を修正しました。
+* **ACSD-52202** (Adobe CommerceとMagento Open Source>=2.4.3 &lt;2.4.7) — デフォルト以外の在庫が注文達成時に 0 数量に変更された場合に、デフォルト在庫の販売可能数量が誤って 0 に変更される問題を修正しました。
+* **ACSD-51265** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) - `catalog_product_price` システムにバンドルされた製品が多すぎる場合のインデックス再作成パフォーマンス。
+* **ACSD-52831** (Adobe Commerce>=2.3.7 &lt;2.4.7) — 次の場合に顧客が譲渡可能な見積もり注文を発行できない問題を修正しました。 [!DNL Google reCAPTCHA v3 Invisible] が有効になっている。
+* **ACSD-51845** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.7) — 非同期の一括 REST API を使用して、階層価格と異なる属性セットを持つ後続の製品を更新できない問題を修正しました。
+* **ACSD-52815** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) — デフォルト以外のソースの quantity フィールドの入力で、デフォルトの在庫の場合は 8 桁までとは異なり、最大 6 桁までしかサポートされない問題を修正しました。
+* **ACSD-51149** (Adobe Commerce >=2.3.7 &lt;2.4.7 の場合 ) — カタログ権限が有効なスケジュール済みの ImportExport でインデクサーが無効化され、キャッシュが cron によってフラッシュされる問題を修正しました。
+* **ACSD-50815** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.6) — 新しい「バンドル製品」オプションで、単純製品の小数点以下の数量を使用できない問題を修正しました。
+* ACSD-47803のバージョンを更新しました。
+* ACSD-51892のタイトルを更新しました。
+* ACSD-51379を更新しました。
+* ACSD-49970-v2 を更新しました。
 
 ## v1.1.34 {#v1-1-34}
 
