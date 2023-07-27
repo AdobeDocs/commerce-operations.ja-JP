@@ -1,11 +1,11 @@
 ---
 title: 製品の可用性
-description: 現在使用可能なAdobe Commerceの機能と、それらの機能へのアクセス方法、および特定のAdobe Commerceリリースとの互換性の確認方法について説明します。
+description: 現在サポートされているAdobe Commerceの機能について説明し、特定のAdobe Commerceリリースとの互換性を確認します。
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-source-git-commit: dc5a36dc9bc6cee0e9708bb24d3c5ab4b8be5186
+source-git-commit: ca9b786cdaa8b2122d94c24b9edad02d43128c42
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 0%
+source-wordcount: '517'
+ht-degree: 10%
 
 ---
 
@@ -13,29 +13,41 @@ ht-degree: 0%
 
 次の表に、Adobe Commerceソフトウェアの可用性のステータスと、その入手先を示します。特に、従来のAdobe Commerce Composer パッケージ以外で使用可能なソフトウェアについては、このステータスを示します。
 
-| 製品 | 使用可否 | 入手方法 |
-|-|-|-|
-| **Adobe Commerce 2.4.7-beta1** | 利用可能 | [コンポーザー](../installation/composer.md) \| [リリースノート](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html) |
-| **Adobe Commerce on cloud infrastructure ツール (ECE-Tools)** | 利用可能 | [コンポーザー](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) \| [リリースノート](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html) |
-| **Adobe CommerceのAdobe I/Oイベント** | 利用可能 | [コンポーザー](https://developer.adobe.com/commerce/events/get-started/installation/) \| [リリースノート](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
-| **AmazonSales Channel** | Adobe Commerceバージョン 2.4.x および 2.3.x（米国、カナダ、メキシコ、英国）で利用できます。 | [Commerce Marketplace](https://marketplace.magento.com/magento-module-amazon.html) \| [リリースノート](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) \| [ユーザーガイド](https://experienceleague.adobe.com/docs/commerce-channels/amazon/overview.html) |
-| **Adobe Developer App Builder の API メッシュ** | 利用可能 | [Node.js](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) \| [リリースノート](https://developer.adobe.com/graphql-mesh-gateway/gateway/release-notes/) |
-| **Audience Activation** | 利用可能 | [Commerce Marketplace](https://marketplace.magento.com/magento-audiences.html) \| [リリースノート](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) |
-| **Adobe Commerceのカタログサービス** | 利用可能 | [概要](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html) \| [リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html?lang=en) |
-| **チャネルマネージャ** | 利用可能 | [Commerce Marketplace](https://marketplace.magento.com/magento-channel-manager.html) \| [ユーザーガイド](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) |
-| **Experience Platformコネクタ** | 利用可能 | [Commerce Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html) \| [リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html?lang=en) \| [ユーザーガイド](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html?lang=en) |
-| **ライブ検索** | 利用可能 | [Commerce Marketplace](https://marketplace.magento.com/magento-live-search.html) \| [開発者向けドキュメント](https://developer.adobe.com/commerce/services/live-search/) \| [リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) \| [ユーザーガイド](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html) |
-| **支払いサービス** | 利用可能 | [Commerce Marketplace](https://marketplace.magento.com/magento-payment-services.html) \| [リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html) \| [ユーザーガイド](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html) |
-| **製品Recommendations** | 利用可能 | [Commerce Marketplace](https://marketplace.magento.com/magento-product-recommendations.html) \| [開発者向けドキュメント](https://devdocs.magento.com/recommendations/product-recs.html) \| [リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) \| [ユーザーガイド](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html) |
-| **PWA Studio** | 利用可能 | [GitHub](https://github.com/magento/pwa-studio) \| [リリースノート](https://github.com/magento/pwa-studio/releases) \| [開発者向けドキュメント](https://developer.adobe.com/commerce/pwa-studio/) |
-| **クイックチェックアウト** | 利用可能 | [Commerce Marketplace](https://marketplace.magento.com/magento-quick-checkout.html) \| [リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html) \| [ユーザーガイド](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html) |
-| **SaaS 価格インデックス作成** | 利用可能 | [コンポーザー](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html#modules) \| [ユーザーガイド](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html) |
-| **Adobe Commerceのフルフィルメントを保存** | 利用可能 | [Commerce Marketplace](https://marketplace.magento.com/store-fulfillment-magento-walmart.html) \| [ユーザーガイド](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/introduction.html) |
+サービスと拡張機能は、製品リリース時に、最新リリースの Commerce でテストされます。
 
-## 互換性
+サポート対象バージョンは、Adobeで完全にテスト済みです。 カスタマーサポートを通じて、サポート対象のバージョンを利用できます。 古いバージョンは正しく機能する可能性がありますが、正式にはサポートされていません。
 
-この節では、コアリリースプロセスから切り離されたAdobe Commerceモジュールについて説明します。 これにより、Adobeは、新機能への以前のアクセスと引き換えに、少しのリスクを受け入れる用意がある商人に対して、これらのモジュールの反復を迅速にリリースできます。
+## Adobeが作成した拡張機能
 
-次の表に、Adobe Commerceを基準とした拡張機能バージョンのリリースステータスを示します。
+これらのAdobe Commerce拡張機能は、コアAdobe Commerceコードベースから切り離されています。 これにより、Adobeは、新機能への以前のアクセスと引き換えに、少しのリスクを受け入れる用意がある商人に対して、これらの拡張機能の反復を迅速にリリースできます。
 
-{{$include /help/_includes/templated/release/compatibility-mde.md}}
+次の表に、Adobe Commerceバージョンを基準とした各拡張機能でのバージョンサポートを示します。
+
+| **Adobe Commerceバージョン** | 2.4.7-beta1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
+|-|-|-|-|-|-|-|
+| _Adobe CommerceのAdobe I/Oイベント_ | 1.2.2 | 1.2.2 | 1.2.2 | 1.2.2 | - | [コンポーザー](https://developer.adobe.com/commerce/events/get-started/installation/) <br/>[リリースノート](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
+| _B2B_ | 1.3.5 | 1.4.0 | 1.3.4 | 1.3.3 | 1.3.2 | [コンポーザー](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html) <br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
+| _チャネルマネージャ_ | - | 2.0.0 | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-channel-manager.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html) |
+| _AmazonSales Channel_ | - | 4.1.0+ | 4.3.0+ | 4.3.0+ | 4.3.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-module-amazon.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) |
+| _Experience Platformコネクタ_ | 3.0.0-beta1 | 1.0.0+ | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)<br/>[リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html) |
+| _Adobe Commerceのフルフィルメントを保存_ | - | 1.4.0 | 1.2.0+ | 1.2.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html) |
+
+## コマースサービス
+
+[コマースサービス](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) は、コマースインスタンスと組み合わせて、堅牢な機能と高速な応答時間を提供する、Adobeでホストされる機能のスイートです。
+
+最高の安定性と機能を確保するために、マーチャントは最新バージョンのサービスを使用することをお勧めします。 ドキュメントでは、現在リリースされているバージョンについて説明します。
+
+* Adobe Commerce Services は、現在、Commerce 2.4.4 以降と互換性があります。 商人には最新バージョンのサービスを使用することをお勧めします。
+* サービスは、以前のバージョンの Commerce 2.4.x との互換性があると見なされますが、正式にはサポートされていません。
+* サービスは、Product Recommendations 3.3.7 以前を除き、Commerce 2.3.x と互換性がありません。
+
+次の表に、Adobe Commerceバージョンを基準とした各サービスでサポートされるバージョンを示します。
+
+| **Adobe Commerce Versions** | 2.4.7-beta1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
+|-|-|-|-|-|-|-|
+| _Adobe Commerceのカタログサービス_ | 1.9 | 1.9 | 1.9 | 1.9 | - | [概要](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html) |
+| _ライブ検索_ | 3.01 | 3.01 | 3.01 | 3.01 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)<br/>[リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) |
+| _支払いサービス_ | 2.10 | 2.10 | 2.10 | 2.10 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html)<br/> [リリースノート](https://commercemarketplace.adobe.com/magento-payment-services.html) |
+| _製品Recommendations_ | 5.0 | 5.0 | 5.0 | 5.0 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-product-recommendations.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) |
+| _クイックチェックアウト_ | - | 1.0.0+ | 1.2.0+ | 1.0.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-quick-checkout.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) |
