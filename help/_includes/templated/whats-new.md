@@ -1,15 +1,95 @@
 ---
-source-git-commit: 79293c564f9fcded146916e9e3bfd27a28424940
+source-git-commit: 2c196e0a0522dc12cc53fdad4ffec66f8e1f6e22
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '694'
 ht-degree: 0%
 
 ---
 # 新しいテンプレート
 
-## 最新情報
+## 新機能
 
 新しいドキュメントと既存ドキュメントの重要な更新について説明します。
+
+### 2023 年 7 月 28 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>の再設計 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html">製品の可用性</a> ページを編集して、レイアウトと読みやすさを改善しました。</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6ed2a3e42cd0b85aae29652b8e36acbbda1b9e72">6ed2a3</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023 年 7 月 26 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>公開済み <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">リリースノート</a> 1.1.35 Quality Patches Tool(QPT) パッケージリリースの場合。</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ac0f04b7a04c5c7d3b3880b8231ffece05718558">ac0f04</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023 年 7 月 12 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerceの段階別販売ルールラベルに影響する新しい既知の問題の説明を追加しました <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">2.4.5</a> および <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">2.4.6</a>.</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9e833dad884fa6146bb5e6ce6dd5ebcb23208b80">9e833d</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
+
+### 2023 年 6 月 31 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>公開済み <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">リリースノート</a> 1.1.34 Quality Patches Tool(QPT) パッケージリリースの場合。</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9fcbc03a1b52f8aad35f2347868b266228264fad">9fcbc0</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2023 年 6 月 24 日
 
@@ -125,70 +205,10 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>追加された <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/access.html">説明</a> を使用して、ツールのドメインからサイト全体分析ツールにアクセスする場合 (<code class="language-plaintext highlighter-rouge">https://supportinsights.adobe.com/commerce</code>) をクリックします。</p>
+      <td><p>が追加されました。 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/access.html">instructions</a> を使用して、ツールのドメインからサイト全体分析ツールにアクセスする場合 (<code class="language-plaintext highlighter-rouge">https://supportinsights.adobe.com/commerce</code>) をクリックします。</p>
 </td>
       <td>メジャーアップデート</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/051fe7707cef593027bcff93ae39adfc5cf1af3c">051fe7</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 2023 年 5 月 26 日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>ソース</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>追加された <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/uct.html"><code class="language-plaintext highlighter-rouge">bin/uct</code> CLI リファレンス</a>.</p>
-</td>
-      <td>新規トピック</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d00e8cb4ebce9cbda0218ef75f44d2ff0ec45bad">d00e8c</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2023 年 5 月 13 日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>ソース</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>インフラストラクチャの詳細を <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/performance/benchmarks.html">パフォーマンスベンチマーク</a>.</p>
-</td>
-      <td>メジャーアップデート</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/762bc2b9bdd19d92707525044a4178b6e89e4a3d">762bc2</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2023 年 5 月 5 日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>ソース</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>公開済み <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">リリースノート</a> 1.1.31 Quality Patches Tool(QPT) パッケージリリースの場合。</p>
-</td>
-      <td>メジャーアップデート</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7f30857b612d027dfce26fac1f947006f28ecfa6">7f3085</a> （コミット）</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
