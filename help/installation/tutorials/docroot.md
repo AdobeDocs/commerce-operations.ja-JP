@@ -3,9 +3,9 @@ title: セキュリティを向上させるために docroot を変更
 description: Adobe CommerceやMagento Open Sourceオンプレミスのファイルシステムへの不正なブラウザベースのアクセスを防ぎます。
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 32dd5005422b98923ce1bdf6c3fb3f55c2ec15bd
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -14,20 +14,20 @@ ht-degree: 0%
 
 Apache Web サーバーを使用した標準インストールでは、Adobe CommerceとMagento Open Sourceはデフォルトの Web ルートにインストールされます。 `/var/www/html/magento2`.
 
-この `magento2/` ディレクトリには次の情報が含まれます。
+The `magento2/` ディレクトリには次の情報が含まれます。
 
 - `pub/`
 - `setup/`
 - `var/`
 
-アプリケーションの提供元 `/var/www/html/magento2/pub`. ファイルシステムの残りの部分は、ブラウザからアクセスできるため、脆弱です。
+アプリケーションの提供元： `/var/www/html/magento2/pub`. ファイルシステムの残りの部分は、ブラウザからアクセスできるため、脆弱です。
 Web ルートを `pub/` ディレクトリを使用すると、サイト訪問者はブラウザーからファイルシステムの機密領域にアクセスできなくなります。
 
 このトピックでは、既存のインスタンス上の Apache docroot を、 `pub/` ディレクトリに格納されます。これはより安全です。
 
 ## nginx に関する注意
 
-次を使用する場合： [nginx](../prerequisites/web-server/nginx.md) そして [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) インストールディレクトリに含まれるファイルは、既に `pub/` ディレクトリ。
+を使用している場合、 [nginx](../prerequisites/web-server/nginx.md) そして [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) インストールディレクトリに含まれるファイルは、おそらく既に `pub/` ディレクトリ。
 
 サイトを定義するサーバーブロックで使用する場合、 `nginx.conf.sample` 設定は、サーバーの docroot 設定よりも優先され、 `pub/` ディレクトリ。 例えば、次の設定の最後の行を参照します。
 
@@ -49,7 +49,7 @@ server {
 
 ## 始める前に
 
-このチュートリアルを完了するには、 [ランプ](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) スタック：
+このチュートリアルを完了するには、LAMP スタック上で動作する作業用インストールにアクセスする必要があります。
 
 - Linux
 - Apache（2.4 以降）
@@ -136,7 +136,7 @@ server {
 
 ## 4.スイッチモード
 
-[アプリケーションモード](../../configuration/bootstrap/application-modes.md)を含む `production` および `developer`は、セキュリティを強化し、開発を容易にするように設計されています。 名前が示すように、 `developer` モード：アプリケーションを拡張またはカスタマイズする際に、 `production` モードを使用して、ライブ環境で実行しているとき。
+[アプリケーションモード](../../configuration/bootstrap/application-modes.md)を含む `production` および `developer`は、セキュリティを強化し、開発を容易にするように設計されています。 名前が示すように、 `developer` モード：アプリケーションを拡張またはカスタマイズする際に使用し、 `production` モードを使用して、ライブ環境で実行しているとき。
 
 モードの切り替えは、サーバー設定が正しく動作していることを確認するための重要な手順です。 CLI ツールを使用して、モードを切り替えることができます。
 
