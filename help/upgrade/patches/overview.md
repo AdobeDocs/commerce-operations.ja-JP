@@ -1,13 +1,13 @@
 ---
 title: パッチの動作
 description: Adobe CommerceおよびMagento Open Source用の様々なタイプのパッチとその動作について説明します。
-source-git-commit: 1a18a445cb104420dd9b853b7c4d42ce3bddf2ac
+exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
+source-git-commit: 915cac8c8d436105c4ae25f95bcaefbe19cc50c1
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
-
 
 # パッチの仕組み
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ホットフィックスは、多くの商人に影響を与える、大きな影響を及ぼすセキュリティや品質の修正を含むパッチです。 これらの修正は、該当するマイナーバージョンの次のパッチリリースに適用されます。 Adobeは、必要に応じてホットフィックスをリリースします。
 
-ホットフィックスは、 [セキュリティセンター](https://magento.com/security/patches). ページの手順に従って、バージョンとインストールタイプに応じて、パッチファイルをダウンロードします。 以下を使用： [コマンドライン](../patches/apply.md#) または [コンポーザー](../patches/apply.md) ホットフィックスパッチを適用する。
+ホットフィックスは、 [セキュリティセンター](https://magento.com/security/patches). ページの手順に従って、バージョンとインストールタイプに応じて、パッチファイルをダウンロードします。 以下を使用します。 [コマンドライン](../patches/apply.md#) または [コンポーザー](../patches/apply.md) ホットフィックスパッチを適用する。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 個々のパッチには、特定の問題に対する影響の低い品質の修正が含まれています。 これらの修正は、最も新しくサポートされたマイナーバージョン（2.4.x など）に適用されますが、以前のサポートされたマイナーバージョン（2.3.x など）には適用されません。 Adobeは、必要に応じて個々のパッチをリリースします。
 
-以下を使用： [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)個々のパッチを適用する場合は、{target=&quot;_blank&quot;}。
+以下を使用します。 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} 個々のパッチを適用する場合。
 
 >[!NOTE]
 >
@@ -51,17 +51,17 @@ ht-degree: 0%
 
 ## カスタムパッチ
 
-AdobeエンジニアリングチームがAdobe CommerceまたはMagento Open Sourceコンポーザーのリリースで GitHub でおこなわれたバグ修正を含めるのに時間がかかる場合があります。 それまでの間、GitHub からパッチを作成し、 [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) プラグインを使用して、Composer ベースのインストールに適用できます。
+AdobeエンジニアリングチームがAdobe CommerceまたはMagento Open Sourceコンポーザーのリリースで GitHub でおこなわれたバグ修正を含めるのに時間がかかる場合があります。 それまでの間、GitHub からパッチを作成して、 [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) プラグインを使用して、Composer ベースのインストールに適用できます。
 
-以下を使用： [コマンドライン] または [コンポーザー] カスタムパッチを適用する場合。
+以下を使用します。 [コマンドライン](apply.md#command-line) または [コンポーザー](apply.md#composer) カスタムパッチを適用する場合。
 
 カスタムパッチファイルを作成する方法は多数あります。 次の例では、既知の Git コミットからパッチを作成する方法に焦点を当てています。
 
 カスタムパッチを作成するには：
 
 1. の作成 `patches/composer` ローカルプロジェクトのディレクトリ。
-1. パッチに使用する GitHub コミットまたはプル要求を特定します。 この例では、 [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) コミット、GitHub の問題にリンク [#6474](https://github.com/magento/magento2/issues/6474).
-1. を追加します。 `.patch` または `.diff` コミット URL の拡張子。 用途 `.diff` を使用します。 例： [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
+1. パッチに使用する GitHub コミットまたはプル要求を特定します。 この例では、 [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) コミット（GitHub の問題にリンク） [#6474](https://github.com/magento/magento2/issues/6474).
+1. を追加します。 `.patch` または `.diff` コミット URL の拡張子。 用途 `.diff` ファイルサイズを小さくします。 例： [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
 1. ページをファイルとしてに保存します。 `patches/composer` ディレクトリ。 例： `github-issue-6474.diff`.
 1. ファイルを編集し、を削除します。 `app/code/<VENDOR>/<PACKAGE>` すべてのパスから、 `vendor/<VENDOR>/<PACKAGE>` ディレクトリ。
 
@@ -88,12 +88,12 @@ index c8a6fef58d31..7d01c195791e 100644
 
 ## パッチの適用
 
-次のいずれかの方法でパッチを適用できます。
+次のいずれかの方法を使用して、パッチを適用できます。
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [コマンドライン](/help/upgrade/patches/apply.md#command-line)
 - [コンポーザー](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->クラウドインフラストラクチャ上のAdobe Commerceプロジェクトにパッチを適用するには、 [パッチの適用](https://devdocs.magento.com/cloud/project/project-patch.html) 内 _クラウドガイド_.
+>クラウドインフラストラクチャ上のAdobe Commerceプロジェクトにパッチを適用するには、 [パッチの適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （内） _Commerce on Cloud ガイド_.
