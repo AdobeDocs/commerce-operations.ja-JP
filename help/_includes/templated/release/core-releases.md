@@ -1,15 +1,15 @@
 ---
-source-git-commit: 14f4346f4b0bfd1fa0fa44bd62c7d3611a7ffdea
+source-git-commit: 0ef5d741cf718a36f11850e3dd8a81e1f09f5bc2
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 13%
+source-wordcount: '590'
+ht-degree: 12%
 
 ---
 # リリース済みバージョン
 
 ## 2.4.7
 
-2.4.7 のリリース行のサポートが終了する日付はまだ設定されていません。
+2.4.7 リリース行のサポートは 2027 年 4 月 20 日に終了します。
 
 <table>
   <thead>
@@ -42,6 +42,12 @@ ht-degree: 13%
   <tbody>
     <tr>
         <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p2.html">2.4.6-p2</a>
+        </td>
+        <td>2023 年 8 月 9 日</td>
+    </tr>
+    <tr>
+        <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p1.html">2.4.6-p1</a>
         </td>
         <td>2023 年 6 月 14 日</td>
@@ -67,6 +73,12 @@ ht-degree: 13%
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p4.html">2.4.5-p4</a>
+        </td>
+        <td>2023 年 8 月 9 日</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p3.html">2.4.5-p3</a>
@@ -106,6 +118,12 @@ ht-degree: 13%
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p5.html">2.4.4-p5</a>
+        </td>
+        <td>2023 年 8 月 9 日</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p4.html">2.4.4-p4</a>
