@@ -2,10 +2,10 @@
 title: ソフトウェアライフサイクルポリシー
 description: Adobe Commerceリリースのソフトウェアサポート終了の主な日付について説明します。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '326'
+ht-degree: 12%
 
 ---
 
@@ -22,10 +22,11 @@ Adobe Commerce 2.4.4 以降のリリースの場合：
 ## ソフトウェアのサポート終了
 
 | リリース | 一般公開 | ソフトウェアのサポート終了<sup>1</sup> | 依存する PHP バージョン |
-|----------------------------|----------------------|-------------------------------------|-----------------------|
-| Adobe Commerce 2.4.4 | 2022 年 4 月 13 日 | 2025 年 4 月 25 日 | PHP 8.1 |
-| Adobe Commerce 2.4.5 | 2022 年 8 月 10 日 | 2025 年 8 月 10 日 | PHP 8.1 |
-| Adobe Commerce 2.4.6 | 2023 年 3 月 15 日 | 2026 年 3 月 15 日 | PHP 8.1 および PHP 8.2 |
+|----------------------|----------------------|-------------------------------------|-----------------------|
+| Adobe Commerce 2.4.7 | 2024 年 4 月 20 日 | 2027 年 4 月 20 日 | 8.2 および 8.3 |
+| Adobe Commerce 2.4.6 | 2023 年 3 月 15 日 | 2026 年 3 月 15 日 | 8.1 および 8.2 |
+| Adobe Commerce 2.4.5 | 2022 年 8 月 10 日 | 2025 年 8 月 10 日 | 8.1 |
+| Adobe Commerce 2.4.4 | 2022 年 4 月 13 日 | 2025 年 4 月 25 日 | 8.1 |
 
 {style="table-layout:auto"}
 
@@ -44,6 +45,7 @@ Adobe Commerce 2.4.4 以降のリリースの場合：
     <th colspan="4">2024</th>
     <th colspan="4">2025</th>
     <th colspan="4">2026</th>
+    <th colspan="4">2027</th>
   </tr>
 </thead>
 <tbody>
@@ -70,32 +72,49 @@ Adobe Commerce 2.4.4 以降のリリースの場合：
     <td>Q2</td>
     <td>Q3</td>
     <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
   </tr>
   <tr>
     <td>2.4.4</td>
     <td>8.1</td>
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="6"></td>
+    <td colspan="10"></td>
   </tr>
   <tr>
     <td>2.4.5</td>
     <td>8.1</td>
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="5"></td>
+    <td colspan="9"></td>
   </tr>
   <tr>
     <td rowspan="2">2.4.6</td>
     <td>8.1</td>
-    <td colspan="5"></td>
+    <td colspan="4"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="2"></td>
+    <td colspan="8"></td>
   </tr>
   <tr>
     <td>8.2</td>
-    <td colspan="5"></td>
+    <td colspan="4"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
+    <td colspan="8"></td>
+  </tr>
+  <tr>
+    <td rowspan="2">2.4.7</td>
+    <td>8.2</td>
+    <td colspan="5"></td>
+    <td colspan="17" style="background-color:#67ac68;"></td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td>8.3</td>
+    <td colspan="5"></td>
+    <td colspan="17" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>
   </tr>
 </tbody>
@@ -106,7 +125,7 @@ Adobe Commerce 2.4.4 以降のリリースの場合：
 <table style="table-layout:auto">
  <tbody>
   <tr>
-   <td style="background-color:#67ac68;">サポート</td>
+   <td style="background-color:#67ac68;">サポート対象</td>
    <td>Adobe Commerceおよび PHP 用のセキュリティおよび品質パッチ。</td>
   </tr>
   <!-- <tr>

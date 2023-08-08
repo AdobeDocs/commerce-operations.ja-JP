@@ -1,7 +1,7 @@
 ---
-source-git-commit: 74cb55f4552bc1b2dace37d9a6f7e68939d1c262
+source-git-commit: 20add0a748e8df38dff48a779c63e1177d2a022d
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この [!DNL Upgrade Compatibility Tool] は、Adobe Commerceインスタンスでのみ使用できます。
+>The [!DNL Upgrade Compatibility Tool] は、Adobe Commerceインスタンスでのみ使用できます。
 
 <!-- Configuration guide snippets -->
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->この `support:backup` コマンドは _not_ が実行したのと同じコードのバックアップ `setup:backup` コマンドを使用します。 この `support:backup` コマンドは、Adobe Commerce Support が調べるためのコードをバックアップすることを目的としています。
+>The `support:backup` コマンドは _not_ が実行したのと同じコードのバックアップ `setup:backup` コマンドを使用します。 The `support:backup` コマンドは、Adobe Commerce Support が調べるためのコードをバックアップすることを目的としています。
 
 ## Adobe Commerceのみ {#ee-only}
 
@@ -52,3 +52,9 @@ ht-degree: 0%
 >[!NOTE]
 >
 >2.3.2 リリース以降、アドビは、外部の関係者から報告された各セキュリティバグと共に、インデックス付きの Common Velwability and Exposures(CVE) 番号を割り当てて公開します。 これにより、ユーザーは、デプロイメントにおける宛ててがない脆弱性をより簡単に識別できます。 CVE 識別子について詳しくは、 [CVE](https://cve.mitre.org/).
+
+## その他のリリース情報 {#other-release-info}
+
+>[!NOTE]
+>
+>これらのリリースノートで説明されている機能強化とバグ修正のコードはAdobe Commerceにバンドルされていますが、これらのプロジェクト (B2B、Page Builder、Progressive Web Application(PWA)Studio など ) も個別にリリースされています。 これらのプロジェクトのバグ修正は、個別のプロジェクト固有のリリース情報に記載されています。この情報は、各プロジェクトのドキュメントに記載されています。 詳しくは、 [製品リリースの概要](/help/release/release-notes/overview.md).

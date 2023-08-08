@@ -1,54 +1,90 @@
 ---
 title: リリーススケジュール
-description: 特定のバージョンのAdobe Commerceが、ベータ版、プレリリース版および一般リリースに対して予定されている場合について説明します。
+description: AdobeがAdobe Commerceの主な新機能のリリースを発表する予定について説明します。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 12b4f619673414f18d9697450e867681c6cb3194
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
 
 # リリーススケジュール
 
-Adobeは、製品のアップグレードをシンプルで予測可能にし、改善を加え、新しい機能を早期導入者に提供する間に、適切なバランスを取るために継続的に努力しています。 昨年、このバランスを支えるためのソフトウェアの提供方法を改善しました。 詳細は、 [バージョン管理ポリシー](versioning-policy.md).
+Adobeは、製品のアップグレードをシンプルかつ予測可能にすると同時に、アーリーアダプターに対する改善と新機能を迅速に提供する ( [バージョン管理ポリシー](versioning-policy.md)) をクリックします。 このスケジュールの目的は、Adobeが大幅な新機能のリリースを発表する予定の日付を指定することです。 これらの機能は、1 年を通じて異なる場合があります。 ただし、Adobeは、このページで指定した日付の間に、拡張ツール、インフラストラクチャ、SaaS 製品（サービス）の改善を定期的かつ継続的にリリースしています。
 
-Adobeは、Adobe Commerceのサポートされる各リリース行のセキュリティと機能パッチをリリースします。
+Adobeリリース [パッチ](versioning-policy.md#patch-release) コアAdobe Commerce PHP アプリケーションのサポートされる各リリース行 パッチリリースは、コアコードベースをアップグレードして、プラットフォームの安全、信頼性、パフォーマンスを維持する機会です。 機能はコアコードベースとは独立しており、 [外部モジュール、拡張機能、ツール、または web サービス](versioning-policy.md#extensibility-infrastructure-and-services-release).
+
+>[!NOTE]
+>
+>2024 年以降、Adobeはパッチへの「プレリリース」アクセスを提供しなくなりました。 代わりに、2.4.7 以降では、Adobe Commerceのお客様は [ベータ版リリース](beta.md) ：テストおよび開発の目的で、一般公開前の可用性コードにアクセスする。 プレリリース版のアクセスは、2023 年の次のリリースで引き続き予定されています。
+>
+> - 2023 年 8 月 8 日 (PT) プレリリースアクセスは 2023 年 7 月 25 日 (PT) です
+> - 2023 年 10 月 10 日のプレリリースアクセスは 2023 年 9 月 26 日です
 
 次の表に、予定リリース日を示します（日付は変更される場合があります）。
 
-| リリース | バージョン | プレリリース | 一般公開 |
-|--------------------------------------------------------------------|-------------------------------------------------|--------------------|----------------------|
-| 2023 年 1 月機能リリース | \-\- | \-\- | 2023 年 1 月 18 日 |
-| 2023 年 3 月機能+パッチリリース+セキュリティパッチリリース | 2.4.6<sup>1</sup><br>2.4.5-p2<br>2.4.4-p3 | 2023 年 2 月 29 日 | 2023 年 3 月 15 日 |
-| 2023 年 4 月機能リリース | \-\- | \-\- | 2023 年 4 月 26 日 |
-| 2023 年 6 月機能+ベータ版パッチリリース+セキュリティパッチリリース | 2.4.7-beta1<br>2.4.6-p1<br>2.4.5-p3<br>2.4.4-p4 | 2023 年 5 月 31 日 | 2023 年 6 月 14 日 |
-| 2023 年 8 月機能+セキュリティパッチリリース | 2.4.6-p2<br>2.4.5-p4<br>2.4.4-p5 | 2023 年 7 月 26 日 | 2023 年 8 月 9 日 |
-| 2023 年 10 月機能+ベータ版パッチリリース+セキュリティパッチリリース | 2.4.7-beta2<br>2.4.6-p3<br>2.4.5-p5<br>2.4.4-p6 | 2023 年 9 月 27 日 | 2023 年 10 月 11 日 |
-
-{style="table-layout:auto"}
-
-<sup>\-\ — このリリースに適用されない項目を示します。</sup><br>
-<sup>1 ベータ版は 2023 年 1 月に予定されています</sup><br>
-
->[!TIP]
->
->パッチおよびセキュリティパッチリリースは、コアコードベースをアップグレードして、プラットフォームの安全、信頼性、パフォーマンスを維持する機会です。 機能リリースは、隔月におこなわれます。 機能リリースは、コアコードベースとは独立し、外部モジュールまたは拡張機能を通じて使用できます。 既存の独立した機能に対する更新は、機能リリースの間にリリースされ、機能が既に実装されている場合は自動的にはおこなわれません。
-
-## 早期アクセス
-
-プレリリースは、一般公開の 2 週間前にAdobe Commerceのマーチャントとすべてのパートナーが利用できる一般公開コードです。 これにより、一般リリースの前にコードを迅速にデプロイできます。
-
-詳しくは、 [ベータ版リリース](beta.md).
-
-## リリースタイプ
-
-- **パッチリリース** — セキュリティ、コンプライアンス、パフォーマンス、優先度の高い修正を含む、コアAdobe Commerceアプリケーションのアップデート。
-
-   >[!IMPORTANT]
-   >
-   >Adobeは、すべてのAdobe Commerceのお客様およびAdobeパートナーが公開する、Adobe Commerce機能の一般リリース前リリースであるベータバージョンパッチリリース（「ベータリリース」）をリリースします。 ベータ版リリースには欠陥が含まれている場合があり、「現状のまま」提供され、いかなる保証も適用されません。 Adobeは、(Adobeサポートサービスを通じて ) ベータリリースを維持、修正、更新、変更、変更、またはその他のサポートする義務を負いません。 お客様は、ベータリリースの正しい機能やパフォーマンス、および付属のドキュメントや資料に何らかの方法で依存しないように注意して使用することをお勧めします。 したがって、ベータリリースを使用する場合は、お客様自身のリスクにお任せください。
-
-- **ベータバージョンのパッチリリース** — セキュリティ、コンプライアンス、パフォーマンス、優先度の高い修正を含む、コアAdobe Commerceアプリケーションに対する非 GA コードの更新。 コードと影響を受けるコンポーネントのレビューに、さらに時間をかけることができます。
-- **セキュリティパッチリリース** — マーチャントのセキュリティと準拠を確保するために、Adobe Commerceアプリケーションのセキュリティのみのアップデートがリリースされました。
-- **機能リリース** — パッチリリースとは別に、独立したサービスとして提供される新機能および機能アップデート。 例としては、Product Recommendationsや Live Search などのサービス、PWA StudioやInventory management(MSI) などの独立したモジュール、アドビのクラウドサービスやインフラストラクチャの更新などがあります。
+<table>
+<thead>
+  <tr>
+    <th>一般公開</th>
+    <th>機能</th>
+    <th>PHP Core</th>
+  </tr>
+</thead>
+<tfoot>
+   <tr>
+      <td colspan="3"><strong>凡例</strong>:
+         <ul>
+            <li><strong><img alt="B2B 機能アイコン" src="../assets/icons/enterprise.svg"></img> B2B</strong>— Adobe Commerce用 B2B 拡張機能の新機能、機能強化、バグ修正です。</li>
+            <li><strong><img alt="拡張機能アイコン" src="../assets/icons/brackets.svg"></img> 拡張機能</strong> — パッチリリースとは別に提供される、プロセス外の拡張用の新しい開発者ツールおよびサービス。 例えば、Admin UI SDK、コマース用のAdobe I/Oイベント、API メッシュなどです。</li>
+            <li><strong><img alt="インフラストラクチャ機能のアイコン" src="../assets/icons/servers.svg"></img> インフラ</strong> — クラウドインフラストラクチャ上のAdobe Commerceと、Cloud Platform 上のAdobe Commerceインストールとアップグレードのデプロイと管理を目的とした Cloud Tools Suite for Commerce パッケージの新機能と機能強化。</li>
+            <li><strong><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> パッチ</strong> — セキュリティ、コンプライアンス、パフォーマンス、優先度の高い修正を含む、Adobe Commerce PHP のコアアプリケーションの更新。</li>
+            <li><strong><img alt="サービス機能アイコン" src="../assets/icons/feature.svg"></img> サービス</strong> — パッチリリースとは別に提供される新しい SaaS 機能。 例えば、カタログサービス、ライブ検索、製品Recommendationsなどです。</li>
+         </ul>
+      </td>
+   </tr>
+</tfoot>
+<tbody>
+  <tr>
+    <td>2023 年 8 月 9 日</td>
+    <td><img alt="B2B 機能アイコン" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="拡張機能アイコン" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">拡張機能</a><br><img alt="インフラストラクチャ機能のアイコン" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">インフラ</a><br><img alt="サービス機能アイコン" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">サービス</a></td>
+    <td><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">セキュリティパッチ</a>: 2.4.6-p2、2.4.5-p4、2.4.4-p5</td>
+  </tr>
+  <tr>
+    <td>2023 年 10 月 11 日</td>
+    <td><img alt="B2B 機能アイコン" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="拡張機能アイコン" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">拡張機能</a><br><img alt="インフラストラクチャ機能のアイコン" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">インフラ</a><br><img alt="サービス機能アイコン" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">サービス</a></td>
+    <td><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">ベータパッチ</a>: 2.4.7-beta2<br> <img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">セキュリティパッチ</a>: 2.4.6-p3、2.4.5-p5、2.4.4-p6</td>
+  </tr>
+  <tr>
+    <td>2024 年 2 月 14 日</td>
+    <td><img alt="B2B 機能アイコン" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="拡張機能アイコン" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">拡張機能</a><br><img alt="インフラストラクチャ機能のアイコン" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">インフラ</a><br><img alt="サービス機能アイコン" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">サービス</a></td>
+    <td><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">セキュリティパッチ</a>: 2.4.6-p4、2.4.5-p6、2.4.4-p7</td>
+  </tr>
+  <tr>
+    <td>2024 年 3 月 20 日</td>
+    <td>--</td>
+    <td><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">ベータパッチ</a>: 2.4.7-beta3</td>
+  </tr>
+  <tr>
+    <td>2024 年 4 月 10 日</td>
+    <td><img alt="B2B 機能アイコン" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="拡張機能アイコン" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">拡張機能</a><br><img alt="インフラストラクチャ機能のアイコン" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">インフラ</a><br><img alt="サービス機能アイコン" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">サービス</a></td>
+    <td><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md"><strong>Adobe Commerce 2.4.7</a></strong>:<ul><li>パフォーマンスの向上</li><li>品質の強化</li><li>セキュリティの強化</li><li>サードパーティの依存関係の更新</li></ul><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">セキュリティパッチ</a>:2.4.6-p5、2.4.5-p7、2.4.4-p8</td>
+  </tr>
+  <tr>
+    <td>2024 年 6 月 12 日</td>
+    <td><img alt="B2B 機能アイコン" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="拡張機能アイコン" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">拡張機能</a><br><img alt="インフラストラクチャ機能のアイコン" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">インフラ</a><br><img alt="サービス機能アイコン" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">サービス</a></td>
+    <td><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">セキュリティパッチ</a>:2.4.7-p1、2.4.6-p6、2.4.5-p8、2.4.4-p9</td>
+  </tr>
+  <tr>
+    <td>2024 年 8 月 14 日</td>
+    <td><img alt="B2B 機能アイコン" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="拡張機能アイコン" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">拡張機能</a><br><img alt="インフラストラクチャ機能のアイコン" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">インフラ</a><br><img alt="サービス機能アイコン" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">サービス</a></td>
+    <td><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">セキュリティパッチ</a>:2.4.7-p2、2.4.6-p7、2.4.5-p9、2.4.4-p10</td>
+  </tr>
+  <tr>
+    <td>2024 年 10 月 9 日</td>
+    <td><img alt="B2B 機能アイコン" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="拡張機能アイコン" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">拡張機能</a><br><img alt="インフラストラクチャ機能のアイコン" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">インフラ</a><br><img alt="サービス機能アイコン" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">サービス</a></td>
+    <td><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">ベータパッチ</a>: 2.4.8-beta1<br><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">セキュリティパッチ</a>:2.4.7-p3、2.4.6-p8、2.4.5-p10、2.4.4-p11</td>
+  </tr>
+</tbody>
+</table>
