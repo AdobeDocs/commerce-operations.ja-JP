@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: aa52895b45363ca0fb3585f603bfe66a73803427
+source-git-commit: da0c85a9f1b0ac0a3176ca5f6ef5904834e8d37e
 workflow-type: tm+mt
-source-wordcount: '13735'
+source-wordcount: '13965'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,19 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.36 {#v1-1-36}
+
+* **ACSD-53239** (Adobe CommerceとMagento Open Source>=2.4.3 &lt; 2.4.6) - 「スケジュールに従って更新」モードで inventory インデクサーがすべてのキャッシュをクリーンする問題を修正しました。
+* **ACSD-50887** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) — 製品属性プロパティが *[!UICONTROL Use in Search Results Layered Navigation]* に設定できます。 *はい* 無しに *[!UICONTROL Use in search]* オプションをに設定 *はい*.
+* **ACSD-51846** (Adobe CommerceとMagento Open Source>=2.4.3-p2 &lt;2.4.6) - *内部エラー* すべてのレベルの REST API ペイロードが検証されないために発生する問題を修正しました。
+* **ACSD-52906** (Adobe Commerce>=2.3.7 &lt;2.4.7 の場合 ) — 同じMagentoセグメントに属するログイン済みの顧客に対して X — 顧客 —Vary Cookie が正しく設定されず、一部のページで不適切なキャッシュがおこなわれていた問題を修正しました。
+* **ACSD-52736** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.6) - *買い物かごの価格ルール* 構成可能な製品数量の要件を含むが、期待どおりに機能しない。
+* **ACSD-47875** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) — 管理者ユーザーが、在庫管理を使用する特定の店舗表示範囲で、管理者から顧客買い物かごに製品を追加できない問題を修正しました。
+* **ACSD-53176** (Adobe Commerce >=2.3.7 &lt;2.4.5 の場合 ) - *関連する製品ルール* 次を使用 *次のいずれかに該当* 条件が製品と一致しません。
+* **ACSD-51666** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) — エラーを修正します。 *セッションの期限が切れました。再度ログインしてください。* ログインを試みた後に発生する問題を修正しました。
+* MDVA-39305-v2 の新しいバージョンを追加しました。
+* ACSD-19640の要件を更新しました。
 
 ## v1.1.35 {#v1-1-35}
 
