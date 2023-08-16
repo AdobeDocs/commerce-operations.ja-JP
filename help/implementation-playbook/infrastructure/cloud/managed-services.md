@@ -1,6 +1,6 @@
 ---
 title: Managed Services
-description: クラウドインフラストラクチャの実装に関するAdobe Commerceに対する、Adobe Managed Services、お客様、クラウドサービスプロバイダーの責任を確認します。
+description: クラウドインフラストラクチャの実装に関するAdobe Commerceに対する、AdobeManaged Services、お客様、クラウドサービスプロバイダーの責任を確認します。
 exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
 feature: Cloud, Services
 source-git-commit: 7c2e2bdabf47e1367ffb6761230d3d43f0f9d0cf
@@ -18,13 +18,13 @@ Adobe Commerce on cloud infrastructure managed services は、デフォルトで
 
 ## 共有された責任
 
-Adobe Commerce Pro は共有責任セキュリティモデルに依存する予定です。 このモデルでは、異なる当事者は、システムのセキュリティを維持するための責任の領域が異なります。 このアプローチにより、優れたクラウドテクノロジーを柔軟に使用し、使い勝手を向上させることができます。
+Adobe Commerce Pro は、共有責任セキュリティモデルに依存する予定です。 このモデルでは、異なる当事者は、システムのセキュリティを維持するための責任の領域が異なります。 このアプローチにより、優れたクラウドテクノロジーを柔軟に使用し、使い勝手を向上させることができます。
 
 ![Adobe Commerce共有職責モデルを示す図](../../../assets/playbooks/shared-responsibility.svg)
 
-### Adobe Managed Services の責務
+### AdobeManaged Servicesの責務
 
-Adobe Managed Services は、Adobe Commerce Pro クラウド環境、コアAdobe Commerce Pro アプリケーションコードおよび内部コマースシステムのセキュリティと可用性を担当します。 これには以下が含まれます。
+AdobeManaged Servicesは、Adobe Commerce Pro クラウド環境、コアAdobe Commerce Pro アプリケーションコード、および内部コマースシステムのセキュリティと可用性を担当します。 これには以下が含まれますが、これらに限定されません。
 
 - サーバレベルのパッチ適用
 - Adobe Commerce Pro プランの提供に必要なサービスの運用
@@ -35,11 +35,11 @@ Adobe Managed Services は、Adobe Commerce Pro クラウド環境、コアAdobe
 - 24/7サポート
 - SLA に従って顧客インフラストラクチャが利用可能であることの確認
 
-また、Adobe Managed Services は、サーバーファイアウォール設定 (iptables) および境界ファイアウォール設定（セキュリティグループ）の管理も担当します。 Adobeは、コアアプリケーションのセキュリティアップデートを定期的にリリースする場合もあります。 これらのパッチを適用するのは、お客様の責任です。 これらの領域はすべて、クラウドインフラストラクチャシステム上のAdobe Commerceの PCI 認定によってカバーされます。
+AdobeManaged Servicesは、サーバーファイアウォール設定 (iptables) および境界ファイアウォール設定（セキュリティグループ）の管理も担当します。 Adobeは、コアアプリケーションのセキュリティアップデートを定期的にリリースする場合もあります。 これらのパッチを適用するのは、お客様の責任です。 これらの領域はすべて、クラウドインフラストラクチャシステム上のAdobe Commerceの PCI 認定によってカバーされます。
 
 ### AWSの責任
 
-Adobe Managed Services では、クラウドサーバーインフラストラクチャにAmazon Web Services(AWS) を使用します。 AWSは、ファイアウォールシステムや侵入検出システム (IDS) を介したルーティング、スイッチング、境界ネットワークセキュリティを含む、ネットワークのセキュリティを担当します。 AWSは、Adobe Commerceクラウド環境を管理するデータセンターに対する物理的なセキュリティと、適切な電力、冷却、メカニズムの制御を確実におこなう環境セキュリティを担当します。
+AdobeManaged Servicesは、クラウドサーバーインフラストラクチャにAmazon Web Services(AWS) を使用します。 AWSは、ファイアウォールシステムや侵入検出システム (IDS) を介したルーティング、スイッチング、境界ネットワークセキュリティを含む、ネットワークのセキュリティを担当します。 AWSは、Adobe Commerceクラウド環境を管理するデータセンターに対する物理的なセキュリティと、適切な電力、冷却、メカニズムの制御を確実におこなう環境セキュリティを担当します。
 
 Adobe Commerce Pro プランでは、次を使用します。
 

@@ -9,11 +9,11 @@ ht-degree: 0%
 
 | 投稿コミュニティメンバー | プル要求 | 関連する GitHub の問題 |
 | ------- | ------- | ------- |
-| ホステル | [magento/magento2#30640](https://github.com/magento/magento2/pull/30640) | [magento/magento2#30607](https://github.com/magento/magento2/issues/30607) |
-| ヌジル | [magento/magento2#31944](https://github.com/magento/magento2/pull/31944) | [magento/magento2#31947](https://github.com/magento/magento2/issues/31947) |
+| ホステップ | [magento/magento2#30640](https://github.com/magento/magento2/pull/30640) | [magento/magento2#30607](https://github.com/magento/magento2/issues/30607) |
+| nuzil | [magento/magento2#31944](https://github.com/magento/magento2/pull/31944) | [magento/magento2#31947](https://github.com/magento/magento2/issues/31947) |
 | ケイト・カイズマ | [magento/magento2#32293](https://github.com/magento/magento2/pull/32293) | [magento/magento2#32378](https://github.com/magento/magento2/issues/32378) |
 | ワサップ | [magento/magento2#32371](https://github.com/magento/magento2/pull/32371) | [magento/magento2#33767](https://github.com/magento/magento2/issues/33767) |
-| ヌジル | [magento/magento2#32648](https://github.com/magento/magento2/pull/32648) | [magento/magento2#32649](https://github.com/magento/magento2/issues/32649) |
+| nuzil | [magento/magento2#32648](https://github.com/magento/magento2/pull/32648) | [magento/magento2#32649](https://github.com/magento/magento2/issues/32649) |
 | DmitryTsymbal | [magento/magento2#33342](https://github.com/magento/magento2/pull/33342) | [magento/magento2#33344](https://github.com/magento/magento2/issues/33344) |
 | AnnaAPak | [magento/magento2#33557](https://github.com/magento/magento2/pull/33557) | [magento/magento2#33692](https://github.com/magento/magento2/issues/33692) |
 | ihor-sviziev | [magento/magento2#33904](https://github.com/magento/magento2/pull/33904) | [magento/magento2#33929](https://github.com/magento/magento2/issues/33929) |

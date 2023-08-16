@@ -23,13 +23,13 @@ ht-degree: 0%
 
 * [[!DNL Varnish] キャッシュ](../configuration/cache/config-varnish.md)
 * [レディス](../configuration/cache/redis-session.md) （2.0.6 以降）
-* Redis のインスタンスを [デフォルトキャッシュ](../configuration/cache/redis-pg-cache.md) （このインスタンスをページキャッシュに使用しないでください）
+* Redis のインスタンスを [デフォルトのキャッシュ](../configuration/cache/redis-pg-cache.md) （このインスタンスをページキャッシュに使用しないでください）
 
 詳しくは、 [システム要件](../installation/system-requirements.md) 」を参照してください。
 
 ## オペレーティングシステム
 
-オペレーティングシステムの設定と最適化は、 [!DNL Commerce] 他の高負荷 web アプリケーションと比較して サーバーが処理する同時接続の数が増えると、使用可能なソケットの数が完全に割り当てられる場合があります。 Linux カーネルは、TCP 接続を「再利用する」メカニズムをサポートしています。 このメカニズムを有効にするには、 `/etc/sysctl.conf`:
+オペレーティングシステムの設定と最適化は、 [!DNL Commerce] 他の高負荷 web アプリケーションと比較して サーバーが処理する同時接続の数が増えると、使用可能なソケットの数が完全に割り当てられる場合があります。 Linux カーネルは、TCP 接続を「再利用」するメカニズムをサポートしています。 このメカニズムを有効にするには、 `/etc/sysctl.conf`:
 
 >[!INFO]
 >
@@ -132,7 +132,7 @@ memory_limit=1G
 
 #### Realpath_cache の設定
 
-改善するには [!DNL Commerce] パフォーマンス、追加、または更新を行うことをお勧めします `realpath_cache` 設定 `php.ini` ファイル。 この設定により、PHP プロセスは、ページが読み込まれるたびにファイルを検索する代わりに、ファイルへのパスをキャッシュできます。 詳しくは、 [パフォーマンスの調整](https://www.php.net/manual/en/ini.core.php) PHP ドキュメント内。
+改善するには [!DNL Commerce] パフォーマンス、追加、または更新を行うことをお勧めします。 `realpath_cache` 設定 `php.ini` ファイル。 この設定により、PHP プロセスは、ページが読み込まれるたびにファイルを検索する代わりに、ファイルへのパスをキャッシュできます。 詳しくは、 [パフォーマンスの調整](https://www.php.net/manual/en/ini.core.php) PHP ドキュメント内。
 
 ```text
 realpath_cache_size=10M
@@ -164,7 +164,7 @@ opcache.max_accelerated_files=60000
 
 を有効にすることをお勧めします。 [PHP APCu 拡張機能](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) および [設定 `composer` それを支える](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) 最高のパフォーマンスを得るために最適化する。 この拡張機能は、開かれたファイルのファイルの場所をキャッシュします。これにより、 [!DNL Commerce] ページ、Ajax 呼び出し、エンドポイントを含むサーバー呼び出し。
 
-の `apcu.ini` ファイルに次の情報を含めます。
+を編集 `apcu.ini` ファイルに次の情報を含めます。
 
 ```text
 extension=apcu.so
@@ -174,7 +174,7 @@ apc.enabled = 1
 
 ## Web サーバー
 
-Magentoは、Nginx および Apache Web サーバーを完全にサポートしています。 [!DNL Commerce] には、  `<magento_home>/nginx.conf.sample` (Nginx) および  `<magento_home>.htaccess.sample` (Apache) ファイル。  Nginx サンプルには、パフォーマンスを向上させるための設定が含まれ、再構成が少なくて済むように設計されています。 サンプルファイルに定義されている主な設定のベストプラクティスには、次のものがあります。
+Magentoは、Nginx および Apache Web サーバーを完全にサポートしています。 [!DNL Commerce] には、サンプルの推奨設定ファイルが  `<magento_home>/nginx.conf.sample` (Nginx) および  `<magento_home>.htaccess.sample` (Apache) ファイル。  Nginx サンプルには、パフォーマンスを向上させるための設定が含まれ、再構成が少なくて済むように設計されています。 サンプルファイルに定義されている主な設定のベストプラクティスには、次のものがあります。
 
 * ブラウザーでの静的コンテンツのキャッシュ設定
 * PHP のメモリと実行時間の設定
@@ -194,10 +194,10 @@ Magentoは、Nginx および Apache Web サーバーを完全にサポートし�
 
 次の点で多くの改善点があります。 [!DNL MySQL] 5.7.9 我々は確信を持っている [!DNL MySQL] は適切なデフォルト設定で配布されます。 最も重要な設定は次のとおりです。
 
-| パラメータ | デフォルト | 説明 |
+| パラメーター | デフォルト | 説明 |
 |--- | --- | ---|
 | `innodb_buffer_pool_instances` | 8 | 複数のスレッドが同じインスタンスにアクセスしようとする際の問題を回避するために、デフォルト値は 8 に設定されています。 |
-| `innodb_buffer_pool_size` | 128MB | 上記の複数のプールインスタンスと組み合わせると、1024 MB のデフォルトのメモリ割り当てを意味します。 合計サイズは、すべてのバッファプールで割られます。 最も効率を高めるには、 `innodb_buffer_pool_instances` および `innodb_buffer_pool_size` したがって、各バッファプールインスタンスは少なくとも 1 GB です。 |
+| `innodb_buffer_pool_size` | 128MB | 上記の複数のプールインスタンスと組み合わせると、1024 MB のデフォルトのメモリ割り当てを意味します。 合計サイズは、すべてのバッファプールで割られます。 最も効率を高めるには、次の組み合わせを指定します。 `innodb_buffer_pool_instances` および `innodb_buffer_pool_size` したがって、各バッファプールインスタンスは少なくとも 1 GB です。 |
 | `max_connections` | 150 | の値 `max_connections` パラメータは、アプリケーションサーバーで設定された PHP スレッドの総数と関連付ける必要があります。 小規模の場合は 300、中規模の場合は 1000 を推奨します。 |
 | `innodb_thread_concurrency` | 0 | この設定に最適な値は、次の式で計算する必要があります。 `innodb_thread_concurrency = 2 * (NumCPUs + NumDisks)` |
 
@@ -207,11 +207,11 @@ Magentoでは、 [!DNL Varnish] をストアのフルページキャッシュサ
 
 インストール [!DNL Varnish] を Web 層の前にある別のサーバーに配置します。 受信するすべてのリクエストを受け入れ、キャッシュされたページコピーを提供する必要があります。 許可する手順は次のとおりです。 [!DNL Varnish] 保護されたページを効果的に操作するために、SSL 終端プロキシを [!DNL Varnish]. Nginx はこの目的で使用できます。
 
-[!DNL Commerce] は、次のサンプル設定ファイルを配布します： [!DNL Varnish] （バージョン 4 および 5）。パフォーマンスに関する推奨設定がすべて含まれています。 パフォーマンスの点で最も重要な要素は次のとおりです。
+[!DNL Commerce] は、次のサンプル設定ファイルを配布します。 [!DNL Varnish] （バージョン 4 および 5）。パフォーマンスに関する推奨設定がすべて含まれています。 パフォーマンスの点で最も重要な要素は次のとおりです。
 
 * **バックエンドのヘルスチェック** 投票する [!DNL Commerce] サーバーを使用して、応答がタイムリーに行われているかどうかを判断します。
 * **猶予モード** を使用して、 [!DNL Varnish] ：オブジェクトをキャッシュに保持して有効期間 (TTL) を超えて、この古いコンテンツを提供する場合 ( [!DNL Commerce] は正常でないか、新しいコンテンツがまだ取得されていない場合は除きます。
-* **SAINT モード** 不正なブラックリストを表示 [!DNL Commerce] サーバーの設定可能な時間。 その結果、異常なバックエンドは、 [!DNL Varnish] をロードバランサーとして使用します。
+* **SAINT モード** 不正なブラックリストを表示 [!DNL Commerce] サーバーに設定可能な時間を割く。 その結果、異常なバックエンドは、 [!DNL Varnish] をロードバランサーとして使用します。
 
 詳しくは、 [詳細 [!DNL Varnish] 設定](../configuration/cache/config-varnish-advanced.md) これらの機能の実装の詳細については、を参照してください。
 
@@ -219,11 +219,11 @@ Magentoでは、 [!DNL Varnish] をストアのフルページキャッシュサ
 
 一般に、最適なパフォーマンスを得るために、アセット（画像、JS、CSS など）を CDN に保存することをお勧めします。
 
-サイトに大量のロケールをデプロイする必要がなく、サーバーが大多数の顧客と同じ地域にある場合は、にアセットを保存すると、低コストで大幅なパフォーマンス向上が見られる可能性があります [!DNL Varnish] CDN を使用する代わりに使用します。
+サイトに大量のロケールをデプロイする必要がなく、サーバーが大多数の顧客と同じ地域にある場合は、にアセットを保存すると、低コストで大幅なパフォーマンス向上が見られる可能性があります。 [!DNL Varnish] CDN を使用する代わりに使用します。
 
-にアセットを保存するには、以下を実行します。 [!DNL Varnish]」で、 `default.vcl` 次の場所で生成されたファイル [!DNL Commerce] 対象 [!DNL Varnish] 5.
+にアセットを保存するには、以下を実行します。 [!DNL Varnish]をクリックし、 `default.vcl` 次の場所で生成されたファイル： [!DNL Commerce] 対象： [!DNL Varnish] 5.
 
-の最後 `if` ステートメントを使用して、 `vcl_recv` サブルーチン、追加：
+の最後に `if` ステートメントを使用して、 `vcl_recv` サブルーチン、追加：
 
 ```javascript
 # static files are cacheable. remove SSL flag and cookie
@@ -235,7 +235,7 @@ if (req.url ~ "^/(pub/)?(media|static)/.*\.(ico|html|css|js|jpg|jpeg|png|gif|tif
 }
 ```
 
-内 `vcl_backend_response` サブルーチン，探す `if` の cookie の設定を解除するステートメント `GET` または `HEAD` リクエスト。
+Adobe Analytics の `vcl_backend_response` サブルーチン，探す `if` の cookie の設定を解除するステートメント `GET` または `HEAD` リクエスト。
 更新済み `if` ブロックは次のようになります。
 
 ```javascript
@@ -260,11 +260,11 @@ Magentoには、Redis、Memcache、filesystem、database など、キャッシ�
 
 ### 単一の Web ノードの設定
 
-1 つの Web ノードだけですべてのトラフィックを提供する予定がある場合、キャッシュをリモート Redis サーバーに置くのは意味がありません。 代わりに、ファイルシステムまたはローカルの Redis サーバを使用します。 ファイルシステムを使用する場合は、RAM ファイルシステムにマウントされたボリュームにキャッシュフォルダを配置します。 ローカルの Redis サーバーを使用する場合は、HTTP を介したデータ交換ではなく、直接接続にソケットを使用するように Redis を設定することを強くお勧めします。
+1 つの Web ノードだけですべてのトラフィックを提供する予定がある場合、キャッシュをリモート Redis サーバーに置くのは意味がありません。 代わりに、ファイルシステムまたはローカルの Redis サーバを使用します。 ファイル・システムを使用する場合は、RAM ファイル・システムにマウントされたボリュームにキャッシュ・フォルダを配置します。 ローカルの Redis サーバーを使用する場合は、HTTP を介したデータ交換ではなく、直接接続にソケットを使用するように Redis を設定することを強くお勧めします。
 
 ### 複数の Web ノードの設定
 
-複数の Web ノードを設定する場合、Redis が最適なオプションです。 理由： [!DNL Commerce] 多くのデータをキャッシュしてパフォーマンスを向上させ、Web ノードと Redis サーバー間のネットワークチャネルに注意を払います。 リクエスト処理のボトルネックにならないようにします。
+複数の Web ノードを設定する場合、Redis が最適なオプションです。 理由： [!DNL Commerce] 多くのデータをキャッシュしてパフォーマンスを向上させ、Web ノードと Redis サーバー間のネットワークチャネルに注意を払います。 リクエスト処理のボトルネックになるのを防ぎたい場合。
 
 >[!INFO]
 >

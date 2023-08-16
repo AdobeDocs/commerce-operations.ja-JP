@@ -5,7 +5,7 @@ feature: Configuration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -26,8 +26,8 @@ ht-degree: 0%
    - [拡張機能](site-wide-analysis-tool/extensions.md)
    - [アラート](site-wide-analysis-tool/alerts.md)
    - [パッチ](site-wide-analysis-tool/patches.md)
-- 品質パッチツール {#quality-patches-tool}
-   - [[!DNL Quality Patches Tool]:パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+- クォリティパッチツール {#quality-patches-tool}
+   - [[!DNL Quality Patches Tool]：パッチを検索します。](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [使用状況](quality-patches-tool/usage.md)
    - [リリースノート](quality-patches-tool/release-notes.md)
 - Adobe Commerceの観測 {#observation-for-adobe-commerce}
@@ -37,7 +37,7 @@ ht-degree: 0%
    - [フォーカスタブの選択](observation-for-adobe-commerce/choosing-focus-tabs.md)
    - [「概要」タブ](observation-for-adobe-commerce/summary.md)
    - [「Elasticsearch」タブ](observation-for-adobe-commerce/elasticsearch.md)
-   - [「赤」タブ](observation-for-adobe-commerce/redis-tab.md)
+   - [「Redis」タブ](observation-for-adobe-commerce/redis-tab.md)
    - [「 MySQL 」タブ](observation-for-adobe-commerce/mysql-tab.md)
    - [「PHP」タブ](observation-for-adobe-commerce/php-tab.md)
    - [「ボット」タブ](observation-for-adobe-commerce/bots.md)
@@ -45,7 +45,7 @@ ht-degree: 0%
    - [「アラート」タブ](observation-for-adobe-commerce/alerts-tab.md)
    - [「WAF」タブ](observation-for-adobe-commerce/waf-tab.md)
    - [「 CDN 」タブ](observation-for-adobe-commerce/cdn-tab.md)
-   - [この [!DNL RabbitMQ] タブ](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [The [!DNL RabbitMQ] タブ](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [「 Cron 」タブ](observation-for-adobe-commerce/cron-tab.md)
    - [「インデックス作成」タブ](observation-for-adobe-commerce/indexing-tab.md)
    - [「クイックビュー」タブ](observation-for-adobe-commerce/oac-quickview-tab.md)

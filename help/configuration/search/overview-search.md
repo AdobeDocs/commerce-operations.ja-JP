@@ -15,8 +15,8 @@ ht-degree: 0%
 バージョン 2.4.4 以降、Adobe CommerceおよびMagento Open Sourceには次のいずれかが必要です。 [Elasticsearch] または [OpenSearch] をカタログ検索エンジンに設定します。 以前のバージョンの 2.4.x では、Elasticsearchが必要です。 検索エンジンのインストールと初期設定について詳しくは、次のトピックを参照してください。
 
 - [検索エンジンの前提条件](../../installation/prerequisites/search-engine/overview.md)
-- [検索エンジン用に nginx を設定する](../../installation/prerequisites/search-engine/configure-nginx.md)
-- [検索エンジン用に Apache を設定](../../installation/prerequisites/search-engine/configure-apache.md)
+- [検索エンジンに対する nginx の設定](../../installation/prerequisites/search-engine/configure-nginx.md)
+- [検索エンジン用に Apache を設定する](../../installation/prerequisites/search-engine/configure-apache.md)
 - [Commerce ソフトウェアのインストール](../../installation/composer.md) （コマンドラインインターフェイス）
 
 検索エンジンをインストールしてAdobe Commerceと統合した後、追加のメンテナンスをおこなう必要があります。

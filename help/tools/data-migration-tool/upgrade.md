@@ -22,7 +22,7 @@ ht-degree: 0%
 
 * バックアップ `vendor/magento/data-migration-tool` directory
 
-* 必ず [!DNL Data Migration Tool] バージョンがMagentoのバージョン
+* 次を確認します。 [!DNL Data Migration Tool] バージョンがMagentoのバージョンと一致
 
 ### Magentoソフトウェアのアップグレード
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ### バックアップ `vendor/magento/data-migration-tool` directory
 
-をアップグレードする前に、 [!DNL Data Migration Tool]、少なくとも `vendor/magento/data-migration-tool` ディレクトリ。 アップグレード中に削除され、更新されたコードに置き換えられる可能性があります。
+をアップグレードする前に、 [!DNL Data Migration Tool]、少なくともバックアップ `vendor/magento/data-migration-tool` ディレクトリ。 アップグレード中に削除され、更新されたコードに置き換えられる可能性があります。
 
 次のコマンドを使用して、Magento・コード・ベースとデータベース全体をバックアップすることもできます。
 
@@ -40,7 +40,7 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 >[!WARNING]
 >
->この `vendor/magento/data-migration-tool` ディレクトリにはカスタムコードが含まれます。 バックアップに失敗した場合、アップグレード中にカスタマイズ内容が失われる可能性があります。
+>The `vendor/magento/data-migration-tool` ディレクトリにはカスタムコードが含まれます。 バックアップに失敗した場合、アップグレード中にカスタマイズ内容が失われる可能性があります。
 
 
 ### バージョンが一致していることを確認します。
@@ -51,7 +51,7 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 * [チェック](install.md#check-your-version) Magento2 のバージョン
 
-* [検索](install.md#find-released-versions-of-data-migration-tool) リリースされたバージョンの [!DNL Data Migration Tool]
+* [検索文字列](install.md#find-released-versions-of-data-migration-tool) リリースされたバージョンの [!DNL Data Migration Tool]
 
 * [チェック](install.md#check-version-of-installed-data-migration-tool) の [!DNL Data Migration Tool] version
 

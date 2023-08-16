@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 source-git-commit: 4360a3436f013c1b2a8b95a876d2037a6987acac
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---
@@ -43,11 +43,11 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 Adobe Commerceバージョン 2.3.4 以前および MariaDB バージョン 10.0 以前を含む、クラウドインフラストラクチャ上のAdobe Commerce。
 
-<!-- Business type: B2C and B2B -- specify only if needed/)-->
+&lt;! — ビジネスタイプ： B2C と B2B — 必要に応じて指定/)—>
 
 ## ヘッダー…
 
-読みやすくするために、コンテンツをセクションにチャンク化します。 コンテンツには、例を含むコールトゥアクション（良いも悪いもの）と、該当する場合はドキュメントへのリンクを含める必要があります
+読みやすくするために、コンテンツをセクションにチャンク化します。 コンテンツには、例を含むコールトゥアクション（良いも悪いもの）と、該当する場合はドキュメントへのリンクを含める必要があります。
 
 ## ヘッダー…
 

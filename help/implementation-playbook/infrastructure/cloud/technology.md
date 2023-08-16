@@ -1,5 +1,5 @@
 ---
-title: クラウドインフラストラクチャテクノロジ
+title: クラウドインフラストラクチャテクノロジー
 description: クラウドインフラストラクチャ上のAdobe Commerceで使用するテクノロジーのコレクションについて詳しく見てみましょう。
 exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
 feature: Cloud

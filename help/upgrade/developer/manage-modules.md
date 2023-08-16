@@ -6,7 +6,7 @@ exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
 source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Adobe CommerceまたはMagento Open Sourceでバージョンを指定して、開発者がモジュールおよび拡張機能をアップグレードする際に貢献します。 `composer.json` ファイル。 貢献している開発者でない場合は、 [アップグレードの実行](../implementation/perform-upgrade.md).
 
-次のいずれかの方法で `require` セクションから `composer.json` ファイルで指定するか、 `composer require` コマンドを次のように指定します。
+次のいずれかの方法で、 `require` セクションから `composer.json` ファイルで指定するか、 `composer require` コマンドを次のように指定します。
 
 {{$include /help/_includes/server-login.md}}
 
@@ -34,7 +34,7 @@ composer show --all <vendor>/<name>
 composer show --all example/module
 ```
 
-## 以下を使用： `composer require` command
+## 以下を使用します。 `composer require` command
 
 コマンドの使用：
 

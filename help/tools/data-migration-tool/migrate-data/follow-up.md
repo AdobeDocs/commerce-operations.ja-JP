@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # データ移行のフォローアップ
 
-Magento1 の一部の動作とロジックは、Magento2 では実装が異なっています。 この [!DNL Data Migration Tool] それを処理する。 移行に関しては、いくつかの側面を知っておく必要があり、移行後にスムーズに動作するためには、いくつかの機能について小さな手順を踏む必要がある場合があります。
+Magento1 の一部の動作とロジックは、Magento2 では実装が異なっています。 The [!DNL Data Migration Tool] それを処理する。 移行に関しては、いくつかの側面を知っておく必要があり、移行後にスムーズに動作するためには、いくつかの機能について小さな手順を踏む必要がある場合があります。
 
 ## 情報
 
 ### 分割データベースはサポートされていません
 
-この [!DNL Data Migration Tool] は、分割データベースをサポートしていません。
+The [!DNL Data Migration Tool] は、分割データベースをサポートしていません。
 
 ### グループ価格を階層価格に変換
 
@@ -38,11 +38,11 @@ Magento1 の一部の動作とロジックは、Magento2 では実装が異な�
 
 このツールではタイムゾーン設定は移行されないので、移行後にタイムゾーンを手動で設定する必要があります ( )。 **ストア** > **設定** > **ロケールオプション** > **タイムゾーン**.
 
-デフォルトでは、Magentoは時刻データをデータベースの UTC-0 ゾーンに保存し、現在のタイムゾーン設定に従って表示します。 時刻データが既に UTC-0 以外のゾーンでデータベースに保存されている場合は、 [!DNL Data Migration Tool]&#39;s `\Migration\Handler\Timezone` ハンドラ
+デフォルトでは、Magentoは時刻データをデータベースの UTC-0 ゾーンに保存し、現在のタイムゾーン設定に従って表示します。 時刻データが既に UTC-0 以外のゾーンでデータベースに保存されている場合は、 [!DNL Data Migration Tool]&#39;s `\Migration\Handler\Timezone` ハンドラー
 
 次の例では、Magento1 が誤ってデータベースの UTC-7 ゾーンの時間を節約しています（例えば、サードパーティの拡張機能の誤りが原因です）。 移行時に顧客アカウントの作成時刻を UTC-0 ゾーンに適切に変換するには、次の手順に従います。
 
-1. を `map-customer.xml.dist` 設定ファイルを [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`) を `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` ファイル。
+1. をコピーします。 `map-customer.xml.dist` の適切なディレクトリからの設定ファイル [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`) を `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` ファイル。
 
 1. を更新します。 `<customer_map_file>` ノード内 `config.xml` をクリックし、 `.dist` からの拡張 `map-customer.xml.dist`
 

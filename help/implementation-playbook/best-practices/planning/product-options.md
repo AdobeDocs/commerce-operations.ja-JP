@@ -49,4 +49,4 @@ ht-degree: 0%
 - [製品属性設定のベストプラクティス](product-attributes-and-options.md)
 - [バルクアクションログ](https://docs.magento.com/user-guide/system/action-log-bulk-actions.html)
 - [在庫一括処理 API](https://developer.adobe.com/commerce/webapi/rest/inventory/bulk-inventory/)
-- [トレーニング：Adobe Commerceを使用したカタログと製品の管理](https://learning.adobe.com/catalog/adobe_commerce/cours000000000098643.html)
+- [トレーニング： Adobe Commerceを使用したカタログと製品の管理](https://learning.adobe.com/catalog/adobe_commerce/cours000000000098643.html)

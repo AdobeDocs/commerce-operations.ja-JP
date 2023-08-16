@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Magento Open Sourceは、Composer を使用して PHP パッケージを管理します。
 
-この `composer.json` ファイルはパッケージのリストを宣言し、 `composer.lock` ファイルには、Adobe CommerceまたはMagento Open Sourceのインストールに使用するパッケージの完全なリスト（各パッケージの完全版とその依存関係）が格納されます。
+The `composer.json` ファイルはパッケージのリストを宣言し、 `composer.lock` ファイルには、Adobe CommerceまたはMagento Open Sourceのインストールに使用するパッケージの完全なリスト（各パッケージの完全版とその依存関係）が格納されます。
 
 次の参照ドキュメントは、 `composer.lock` ファイルに含まれ、Magento Open Source2.4.7-beta1 に含まれる必要なパッケージが含まれます。
 
@@ -447,7 +447,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/DASPRiD/Enum.git">dasprid/enum</a>
     </td>
     <td>ライブラリ</td>
-    <td>PHP 7.1 enum 実装</td>
+    <td>PHP 7.1 enum の実装</td>
   </tr>
   <tr>
     <td>
@@ -475,14 +475,14 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/colinmollenhour/Cm_Cache_Backend_File.git">colinmollenhour/cache-backend-file</a>
     </td>
     <td>magento-module</td>
-    <td>Zend_Cache_Backend_File のバックエンドは、キャッシュされた項目の数が増えるにつれて、タグによるクリーニングのパフォーマンスが非常に低下しています。 このバックエンドでは、多くの変更がおこなわれ、特にタグのクリーニングにおいて、パフォーマンスが大幅に向上します。</td>
+    <td>Zend_Cache_Backend_File のバックエンドは、キャッシュされた項目の数が増えるにつれて使用できなくなるタグによるクリーニングのパフォーマンスが非常に低下しています。 このバックエンドでは、多くの変更がおこなわれ、特にタグのクリーニングにおいて、パフォーマンスが大幅に向上します。</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/colinmollenhour/php-redis-session-abstract.git">colinmollenhour/php-redis-session-abstract</a>
     </td>
     <td>ライブラリ</td>
-    <td>Redis ベースのセッションハンドラーで、楽観的なロック機能を備えています</td>
+    <td>Redis ベースのセッションハンドラーで、楽観的なロック機能を備えています。</td>
   </tr>
   <tr>
     <td>
@@ -503,7 +503,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/laminas/laminas-captcha.git">ラミナ/ラミナ/カプチャ</a>
     </td>
     <td>ライブラリ</td>
-    <td>フィグレット、画像、ReCaptcha などを使用して CAPTCHA を生成および検証します</td>
+    <td>フィグレット、画像、ReCaptcha などを使用して CAPTCHA を生成および検証します。</td>
   </tr>
   <tr>
     <td>
@@ -517,7 +517,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/laminas/laminas-config.git">laminas/laminas-config</a>
     </td>
     <td>ライブラリ</td>
-    <td>は、アプリケーションコード内のこの設定データにアクセスするための、ネストされたオブジェクトプロパティベースのユーザーインターフェイスを提供します</td>
+    <td>は、アプリケーションコード内のこの設定データにアクセスするための、ネストされたオブジェクトプロパティベースのユーザーインターフェイスを提供します。</td>
   </tr>
   <tr>
     <td>
@@ -608,7 +608,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/laminas/laminas-mail.git">ラミナ/ラミナスメール</a>
     </td>
     <td>ライブラリ</td>
-    <td>テキストと MIME 準拠のマルチパート電子メールメッセージの両方を作成および送信する汎用機能を提供</td>
+    <td>テキストと MIME 準拠のマルチパート電子メールメッセージの両方を作成および送信する一般化された機能を提供</td>
   </tr>
   <tr>
     <td>
@@ -755,7 +755,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port.git">tubalmartin/cssmin</a>
     </td>
     <td>ライブラリ</td>
-    <td>YUI CSS コンプレッサの PHP ポート</td>
+    <td>YUI CSS コンプレッサーの PHP ポート</td>
   </tr>
   </tbody>
 </table>
@@ -797,7 +797,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/ezyang/htmlpurifier.git">ezyang/htmlprifier</a>
     </td>
     <td>ライブラリ</td>
-    <td>PHP で記述された標準準拠HTMLフィルタ</td>
+    <td>PHP で記述された標準準拠のHTMLフィルタ</td>
   </tr>
   <tr>
     <td>
@@ -846,7 +846,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/ChristianRiesen/base32.git">christian-riesen/base32</a>
     </td>
     <td>ライブラリ</td>
-    <td>RFC 4648 に従った Base32 エンコーダ/デコーダ</td>
+    <td>RFC 4648 に従った Base32 エンコーダー/デコーダー</td>
   </tr>
   <tr>
     <td>
@@ -920,7 +920,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/doctrine/deprecations.git">教義/非推奨</a>
+      <a href="https://github.com/doctrine/deprecations.git">ドクトリン/廃止</a>
     </td>
     <td>ライブラリ</td>
     <td>トリガー_error(E_USER_DEPRECATED) または PSR-3 ログの上の小さなレイヤー。すべての廃止を無効にするか、パッケージに対して選択的にオプションを指定します。</td>
@@ -958,7 +958,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/guzzle/guzzle.git">guzzlehttp/guzzle</a>
     </td>
     <td>ライブラリ</td>
-    <td>Guzzle は PHP HTTP クライアントライブラリです</td>
+    <td>Guzzle は PHP HTTP クライアントライブラリです。</td>
   </tr>
   <tr>
     <td>
@@ -993,7 +993,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/thephpleague/flysystem-aws-s3-v3.git">league/flysystem-aws-s3-v3</a>
     </td>
     <td>ライブラリ</td>
-    <td>Flysystem 用AWS S3 ファイルシステムアダプター。</td>
+    <td>Flysystem 用のAWS S3 ファイルシステムアダプター。</td>
   </tr>
   <tr>
     <td>
@@ -1004,7 +1004,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/Seldaek/monolog.git">モノローグ</a>
+      <a href="https://github.com/Seldaek/monolog.git">モノログ/モノログ</a>
     </td>
     <td>ライブラリ</td>
     <td>ログをファイル、ソケット、受信ボックス、データベース、および様々な Web サービスに送信します</td>
@@ -1028,7 +1028,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/paragonie/random_compat.git">paragonie/random_compat</a>
     </td>
     <td>ライブラリ</td>
-    <td>PHP 7 の random_bytes() と random_int() の PHP 5.x のポリフィル</td>
+    <td>PHP 7 の random_bytes() と random_int() の PHP 5.x の polyfill</td>
   </tr>
   <tr>
     <td>
@@ -1130,7 +1130,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/ramsey/collection.git">ラムジー/コレクション</a>
+      <a href="https://github.com/ramsey/collection.git">ラムゼイ/コレクション</a>
     </td>
     <td>ライブラリ</td>
     <td>コレクションを表示および操作するための PHP ライブラリ。</td>
@@ -1203,7 +1203,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/symfony/config.git">symfony/config</a>
     </td>
     <td>ライブラリ</td>
-    <td>あらゆる種類の設定値を検索、読み込み、組み合わせ、自動入力および検証できます</td>
+    <td>あらゆる種類の設定値を検索、読み込み、組み合わせ、自動入力および検証できます。</td>
   </tr>
   <tr>
     <td>
@@ -1245,7 +1245,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/symfony/event-dispatcher.git">symfony/event-dispatcher</a>
     </td>
     <td>ライブラリ</td>
-    <td>イベントをディスパッチし、それらをリッスンすることで、アプリケーションコンポーネントが相互に通信できるツールを提供します</td>
+    <td>イベントをディスパッチし、それらをリッスンすることで、アプリケーションコンポーネントが相互に通信できるツールを提供します。</td>
   </tr>
   <tr>
     <td>
@@ -1371,7 +1371,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/symfony/string.git">symfony/string</a>
     </td>
     <td>ライブラリ</td>
-    <td>文字列、UTF-8 コードポイント、および文字素クラスタを統合的に扱う、オブジェクト指向 API を提供します。</td>
+    <td>文字列、UTF-8 コードポイント、および文字素クラスタを統一された方法で扱う、オブジェクト指向 API を提供します。</td>
   </tr>
   <tr>
     <td>
@@ -1385,7 +1385,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/symfony/var-exporter.git">symfony/var-exporter</a>
     </td>
     <td>ライブラリ</td>
-    <td>シリアル化可能な PHP データ構造をプレーン PHP コードに書き出すことができます</td>
+    <td>シリアル化可能な PHP データ構造をプレーン PHP コードに書き出すことができます。</td>
   </tr>
   <tr>
     <td>

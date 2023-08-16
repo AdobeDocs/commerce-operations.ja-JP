@@ -1,11 +1,11 @@
 ---
 user-guide-title: オペレーショナルプレイブック
-user-guide-description: 企業が e コマースサイトを成功に導くための運用上の準備を整える方法を学びます。
+user-guide-description: e コマースサイトを成功させるために、ビジネスの運営をどのように準備すればよいかについて学習します。
 feature: Best Practices
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 0%
    - [アジャイルスクラム手法](process/agile-scrum.md)
    - [一般的なプロジェクトワークショップ](process/project-workshops.md)
    - [テスト](process/testing.md)
-- 人 {#people}
+- People {#people}
    - [チーム](people/teams.md)
    - [チーム構造](people/team-structure.md)
    - [組織構造](people/organizational-structure.md)
@@ -56,7 +56,7 @@ ht-degree: 0%
    - [プロジェクトチーム](people/project-teams.md)
 - 製品 {#product}
    - [オーダー管理システム](product/order-management-systems.md)
-   - [発送と達成](product/shipping-fulfillment.md)
+   - [発送と受渡](product/shipping-fulfillment.md)
    - [支払いゲートウェイ](product/payment-gateways.md)
    - [価格](product/pricing.md)
    - [製品画像](product/images.md)

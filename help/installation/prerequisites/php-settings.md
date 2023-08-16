@@ -54,7 +54,7 @@ Adobe CommerceとMagento Open Sourceには、一連の拡張機能をインス�
    ```
 
 1. 必要な拡張機能がすべてインストールされていることを確認します。
-1. PHP のインストールに使用したのと同じワークフローを使用して、見つからないモジュールを追加します。 例えば、 `yum` PHP をインストールするには、PHP 7.4 モジュールを次のように追加します。
+1. PHP のインストールに使用したのと同じワークフローを使用して、見つからないモジュールを追加します。 例えば、 `yum` PHP をインストールするには、PHP 7.4 モジュールを以下のように追加します。
 
    ```bash
     yum -y install php74u-pdo php74u-mysqlnd php74u-opcache php74u-xml php74u-gd php74u-devel php74u-mysql php74u-intl php74u-mbstring php74u-bcmath php74u-json php74u-iconv php74u-soap
@@ -64,9 +64,9 @@ Adobe CommerceとMagento Open Sourceには、一連の拡張機能をインス�
 
 >[!WARNING]
 >
->PHP 7.4.20 を使用している場合は、 `pcre.jit=0` の `php.ini` ファイル。 これは PHP を回避します [バグ](https://bugs.php.net/bug.php?id=81101) CSS の読み込みを妨げる
+>PHP 7.4.20 を使用している場合は、 `pcre.jit=0` の `php.ini` ファイル。 これは PHP を回避します。 [バグ](https://bugs.php.net/bug.php?id=81101) CSS の読み込みを妨げる
 
-- PHP のシステムタイムゾーンを設定する。そうしないと、インストール中に次のようなエラーが表示され、cron などの時間関連の操作が機能しない場合があります。
+- PHP のシステムタイムゾーンを設定します。設定しないと、インストール中に次のようなエラーが表示され、cron のような時間関連の操作が動作しない場合があります。
 
 ```terminal
 PHP Warning:  date(): It is not safe to rely on the system's timezone settings. [more messages follow]
@@ -80,7 +80,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
    - デバッグ， `2G`
    - テスト、 `~3-4G`
 
-- PHP の値を増やします `realpath_cache_size` および `realpath_cache_ttl` 推奨設定に変更するには：
+- PHP の値を増やします。 `realpath_cache_size` および `realpath_cache_ttl` 推奨設定に変更するには：
 
   ```conf
   realpath_cache_size=10M
@@ -103,13 +103,13 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 このセクションでは、必要な設定を更新するために必要な設定ファイルを見つける方法について説明します。
 
-### 検索 `php.ini` 設定ファイル
+### 検索文字列 `php.ini` 設定ファイル
 
 Web サーバー設定を検索するには、 [`phpinfo.php` ファイル](optional-software.md#create-phpinfophp) を探し、 `Loaded Configuration File` 次のように指定します。
 
 ![PHP 情報ページ](../../assets/installation/config_phpini-webserver.png)
 
-PHP のコマンドライン設定を検索するには、
+PHP のコマンドライン設定を検索するには、次のように入力します。
 
 ```bash
 php --ini | grep "Loaded Configuration File"
@@ -127,7 +127,7 @@ PHP OPcache 設定は、通常、 `php.ini` または `opcache.ini`. 場所は�
 
 - Apache Web サーバー：
 
-  Apache を使用する Ubuntu の場合、OPcache の設定は通常、 `php.ini` ファイル。
+  Apache を使用する Ubuntu の場合、OPcache の設定は、通常、 `php.ini` ファイル。
 
   Apache または nginx を使用する CentOS の場合、OPcache 設定は通常、 `/etc/php.d/opcache.ini`
 
@@ -137,11 +137,11 @@ PHP OPcache 設定は、通常、 `php.ini` または `opcache.ini`. 場所は�
   sudo find / -name 'opcache.ini'
   ```
 
-- PHP-FPM を使用した nginx web サーバ： `/etc/php/7.2/fpm/php.ini`
+- PHP-FPM を使用した nginx Web サーバ： `/etc/php/7.2/fpm/php.ini`
 
 複数の `opcache.ini`、すべてのを変更します。
 
-## PHP オプションの設定方法
+## PHP オプションを設定する方法
 
 PHP オプションを設定するには：
 
@@ -157,13 +157,13 @@ PHP オプションを設定するには：
 
 1. の値を変更 `memory_limit` を、この節の最初に推奨される値の 1 つに追加します。
 
-   例：
+   以下に例を挙げます。
 
    ```conf
    memory_limit=2G
    ```
 
-1. を追加または更新 `realpath_cache` 次の値に一致する設定：
+1. を追加または更新します。 `realpath_cache` 次の値に一致する設定：
 
    ```conf
    ;
@@ -179,11 +179,11 @@ PHP オプションを設定するには：
 
 1. 変更を保存し、テキストエディターを終了します。
 
-1. もう一方を開く `php.ini` （異なる場合）と同じ変更を加えます。
+1. もう 1 つを開く `php.ini` （異なる場合）と同じ変更を加えます。
 
 ## OPcache オプションを設定
 
-設定するには `opcache.ini` options:
+次の手順で `opcache.ini` options:
 
 1. OPcache 設定ファイルをテキストエディターで開きます。
 

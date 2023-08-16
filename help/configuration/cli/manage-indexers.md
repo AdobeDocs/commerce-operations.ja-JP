@@ -192,8 +192,8 @@ Catalog Search indexer has been invalidated.
 
 このコマンドを使用して、次のインデクサーオプションを設定します。
 
-- **保存時に更新 (`realtime`)**:インデックス付きのデータは、管理で変更が加えられると更新されます。 （例えば、カテゴリ製品インデックスは、製品が管理者のカテゴリに追加された後に再インデックスされます）。 これがデフォルトです。
-- **スケジュールに従って更新 (`schedule`)**:データは、cron ジョブで設定されたスケジュールに従ってインデックス付けされます。
+- **保存時に更新 (`realtime`)**：インデックス付きのデータは、管理で変更がおこなわれると更新されます。 （例えば、カテゴリ製品インデックスは、製品が管理者のカテゴリに追加された後に再インデックスされます）。 これがデフォルトです。
+- **スケジュールに従って更新 (`schedule`)**：データは、cron ジョブで設定されたスケジュールに従ってインデックス付けされます。
 
 [インデックス作成の詳細を説明します](https://developer.adobe.com/commerce/php/development/components/indexing/).
 
@@ -227,7 +227,7 @@ Catalog Search:                                    Update on Save
 
 >[!INFO]
 >
->インデクサーモードを切り替える前に、Web サイトを [維持](../../installation/tutorials/maintenance-mode.md) モードと [cron ジョブを無効にする](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). これにより、データベースのロックに影響を受けなくなります。
+>インデクサーモードを切り替える前に、Web サイトを [保守](../../installation/tutorials/maintenance-mode.md) モードと [cron ジョブを無効にする](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). これにより、データベースのロックに影響を受けなくなります。
 
 インデクサー設定を指定するには：
 
@@ -235,7 +235,7 @@ Catalog Search:                                    Update on Save
 bin/magento indexer:set-mode {realtime|schedule} [indexer]
 ```
 
-ここで、
+次の場合：
 
 - `realtime` — 保存時に更新する選択したインデクサを設定します。
 - `schedule`- Cron スケジュールに従って、指定したインデクサを保存するように設定します。

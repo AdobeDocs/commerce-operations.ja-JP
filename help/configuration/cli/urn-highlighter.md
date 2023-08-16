@@ -1,13 +1,13 @@
 ---
 title: URN 蛍光ペン
 description: IDE で URN ハイライトを設定する方法を説明します。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: 6389ab58-af70-4b33-800e-be3191c5a4cc
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
 
 ---
-
 
 # URN ハイライトの概要
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![PhpStorm が URN を認識するように設定されていません](../../assets/configuration/urn-before.png)
 
-この `bin/magento dev:urn-catalog:generate` コマンドを使用すると、IDE（現在は PhpStorm と Visual Studio Code のみ）で次のように URN を認識し、ハイライト表示できます。
+The `bin/magento dev:urn-catalog:generate` コマンドを使用すると、IDE（現在は PhpStorm と Visual Studio Code のみ）で次のように URN を認識し、ハイライト表示できます。
 
 ![IDE が URN を認識できるようにする](../../assets/configuration/urn-after.png)
 
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 現在は、PhpStorm と Visual Studio Code のみがサポートされています。
 
-コマンド構文：
+コマンドの構文：
 
 ```bash
 bin/magento dev:urn-catalog:generate <path>
 ```
 
-ここで、 `<path>` は、PhpStorm へのパスです。 `misc.xml` ファイル。プロジェクトのルートを基準とした場所です。 通常、 `<path>` が `.idea/misc.xml`.
+ここで、 `<path>` は、PhpStorm へのパスです。 `misc.xml` ファイル。プロジェクトのルートを基準とした場所です。 通常、 `<path>` 次に該当 `.idea/misc.xml`.
 
 >[!INFO]
 >

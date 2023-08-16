@@ -1,13 +1,13 @@
 ---
 title: 開発環境Recommendations
 description: ローカルのAdobe CommerceまたはMagento Open Source開発環境を設定する際の推奨パフォーマンスについて説明します。
-source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
+exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
-
 
 # 開発環境に関する推奨事項
 
@@ -27,19 +27,19 @@ ht-degree: 0%
 
 * `setup:di:compile` 自動生成されたクラスと最適化された構成キャッシュを生成します。
 
-   ```bash
-   bin/magento setup:di:compile
-   ```
+  ```bash
+  bin/magento setup:di:compile
+  ```
 
-   開発モードでは、Magentoはオンデマンドで生成を実行します。実行する必要はありません。 クラスの署名を変更し、自動生成されたクラスを再生成する必要がある場合 `factories/proxies/interceptors`、これらのクラスを削除するか、 _生成済み_ フォルダー。
+  開発モードでは、Magentoはオンデマンドで生成を実行します。実行する必要はありません。 クラスの署名を変更し、自動生成されたクラスを再生成する必要がある場合 `factories/proxies/interceptors`、これらのクラスを削除するか、 _生成済み_ フォルダー。
 
 * `setup:static-content:deploy` ：ストアの静的コンテンツをデプロイします。
 
-   ```bash
-   bin/magento setup:static-content:deploy
-   ```
+  ```bash
+  bin/magento setup:static-content:deploy
+  ```
 
-   開発モードでは、Magentoはオンデマンドで実行します。実行する必要はありません。
+  開発モードでは、Magentoはオンデマンドで実行します。実行する必要はありません。
 
 ## 仮想マシンでの通常のページ読み込み時間
 

@@ -1,13 +1,13 @@
 ---
 title: データベーススキーマの作成
 description: 以下の手順に従って、Adobe CommerceまたはMagento Open Source用のデータベースを作成します。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+exl-id: 860c9918-44c4-4ef1-88a5-12614566307c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
 
 ---
-
 
 # データベーススキーマの作成
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 bin/magento setup:db-schema:upgrade
 ```
 
-データベースのステータスを確認するには、
+データベースのステータスを確認するには、「
 
 ```bash
 bin/magento setup:db:status

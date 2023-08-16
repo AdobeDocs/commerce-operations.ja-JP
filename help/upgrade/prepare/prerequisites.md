@@ -1,15 +1,15 @@
 ---
-title: 前提条件
+title: 前提条件の完了
 description: 前提条件の手順を完了して、Adobe Commerceプロジェクトのアップグレードを準備します。
-source-git-commit: 5f86717d79569cac3f95a4c10a55b48f92858466
+exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 0%
 
 ---
 
-
-# アップグレードの前提条件
+# アップグレードの前提条件の完了
 
 Adobe Commerceの実行に何が必要かを理解することが重要です。 まず、 [システム要件](../../installation/system-requirements.md) アップグレード先のバージョンの
 
@@ -22,12 +22,12 @@ Adobe Commerceの実行に何が必要かを理解することが重要です。
 * Cron ジョブが実行中であることを確認します。
 * 設定 `DATA_CONVERTER_BATCH_SIZE`
 * ファイルシステムの権限の検証
-* を `pub/` ディレクトリルート
+* を設定します。 `pub/` ディレクトリルート
 * Composer の更新プラグインをインストールします。
 
 ## すべてのソフトウェアを更新
 
-この [システム要件](../../installation/system-requirements.md) Adobe Commerceリリースでテストされたサードパーティソフトウェアのバージョンを正確に説明します。
+The [システム要件](../../installation/system-requirements.md) Adobe Commerceリリースでテストされたサードパーティソフトウェアのバージョンを正確に説明します。
 
 環境内のすべてのシステム要件と依存関係を更新していることを確認します。 PHP を参照 [7.4](https://www.php.net/manual/en/migration74.php), PHP [8.0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php)、および [必要な PHP 設定](../../installation/prerequisites/php-settings.md#php-settings).
 
@@ -55,9 +55,9 @@ Adobe Commerceでは、Elasticsearchを使用するために、ソフトウェ�
 
 2.4 以降、MySQL はサポート対象のカタログ検索エンジンではなくなりました。 アップグレードする前に、Elasticsearchまたは OpenSearch をインストールして設定する必要があります。 このプロセスの手引きとして、次のリソースを使用します。
 
-* [インストールとElasticsearch](../../configuration/search/overview-search.md)
+* [インストールと設定Elasticsearch](../../configuration/search/overview-search.md)
 * [インストールElasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-* 設定 [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) または [Apache](../../installation/prerequisites/search-engine/configure-apache.md) 検索エンジンを使用する
+* 設定 [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) または [Apache](../../installation/prerequisites/search-engine/configure-apache.md) 検索エンジンを使用するには
 * [コマースでElasticsearchを使用するように設定](../../configuration/search/configure-search-engine.md) と再インデックス
 
 一部のサードパーティカタログ検索エンジンは、Adobe Commerce検索エンジンの上で動作します。 ベンダーに問い合わせて、拡張機能を更新する必要があるかどうかを判断してください。
@@ -68,7 +68,7 @@ Adobe Commerceでは、Elasticsearchを使用するために、ソフトウェ�
 
 ### 検索エンジン
 
-2.4.0 にアップグレードする前に、Elasticsearch7.6 以降または OpenSearch 1.2 をインストールして設定する必要があります。Adobeは、Elasticsearch2.x、5.x および 6.x をサポートしなくなりました。 [検索エンジンの設定](../../configuration/search/configure-search-engine.md) 内 _設定ガイド_ サポート対象のバージョンにアップグレードした後にElasticsearchを実行する必要があるタスクについて説明します。
+2.4.0 にアップグレードする前に、Elasticsearch7.6 以降または OpenSearch 1.2 をインストールして設定する必要があります。Adobeは、Elasticsearch2.x、5.x、6.x をサポートしなくなりました。 [検索エンジンの設定](../../configuration/search/configure-search-engine.md) （内） _設定ガイド_ サポート対象のバージョンにアップグレードした後にElasticsearchを実行する必要があるタスクについて説明します。
 
 参照： [アップグレードElasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) データのバックアップ、移行に関する潜在的な問題の検出、アップグレードのテストを実稼動環境にデプロイする前に行う手順について詳しくは、 現在のバージョンのElasticsearchに応じて、完全なクラスターの再起動が必要な場合と不要な場合があります。
 
@@ -78,7 +78,7 @@ Elasticsearchには Java Development Kit(JDK)1.8 以降が必要です。 詳し
 
 OpenSearch は、Elasticsearch7.10.2のオープンソースのフォークで、Elasticsearchのライセンスの変更に続いています。 Adobe Commerceの次のリリースでは、OpenSearch のサポートが導入されています。
 
-* 2.4.6 （OpenSearch は別のモジュールと設定を持っています）
+* 2.4.6 （OpenSearch は別々のモジュールと設定を持っています）
 * 2.4.5
 * 2.4.4
 * 2.4.3-p2
@@ -96,7 +96,7 @@ Elasticsearch8.x のサポートは、Adobe Commerce 2.4.6 で導入されまし
 
 1. Elasticsearch7.x サーバーを 8.x にアップグレードし、が起動して実行されていることを確認します。 詳しくは、 [Elasticsearch文書](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
 
-1. を有効にします。 `id_field_data` フィールドで次の設定を `elasticsearch.yml` ファイルを作成し、Elasticsearch8.x サービスを再起動します。
+1. を有効にします。 `id_field_data` フィールドに次の設定を追加して、 `elasticsearch.yml` ファイルを作成し、Elasticsearch8.x サービスを再起動します。
 
    ```yaml
    indices:
@@ -120,7 +120,7 @@ Elasticsearch8.x のサポートは、Adobe Commerce 2.4.6 で導入されまし
    bin/magento setup:upgrade
    ```
 
-1. [設定Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) 内 [!DNL Admin].
+1. [設定Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) （内） [!DNL Admin].
 
 1. カタログインデックスを再インデックスします。
 
@@ -152,7 +152,7 @@ Elasticsearch8.x のサポートは、Adobe Commerce 2.4.6 で導入されまし
    bin/magento setup:upgrade
    ```
 
-1. [設定Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) 内 [!DNL Admin].
+1. [設定Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) （内） [!DNL Admin].
 
 1. カタログインデックスを再インデックスします。
 
@@ -178,7 +178,7 @@ Elasticsearch8.x のサポートは、Adobe Commerce 2.4.6 で導入されまし
 
 開くファイルの制限 (ulimit) を設定すると、長いクエリ文字列の複数の再帰呼び出しや、 `bin/magento setup:rollback` コマンドを使用します。 このコマンドは、UNIX シェルごとに異なります。 詳しくは、個々のフレーバーを参照してください。 `ulimit` コマンドを使用します。
 
-Adobeでは、開くファイルを設定することをお勧めします [制限](https://ss64.com/bash/ulimit.html) 値に `65536` または複数の値を指定できますが、必要に応じて、より大きな値を使用できます。 コマンドラインで ulimit を設定するか、ユーザーのシェルに対して永続的な設定を指定できます。
+Adobeでは、開くファイルを設定することをお勧めします [ulimit](https://ss64.com/bash/ulimit.html) 値に `65536` または複数の値を指定できますが、必要に応じて、より大きな値を使用できます。 コマンドラインで ulimit を設定するか、ユーザーのシェルに対して永続的な設定を指定できます。
 
 コマンドラインから ulimit を設定するには、次の手順に従います。
 
@@ -207,7 +207,7 @@ Bash シェルに値を設定するには、次の手順を実行します。
 
 ## Cron ジョブが実行中であることを確認します。
 
-UNIX タスクスケジューラ `cron` は、毎日のAdobe Commerce操作にとって重要です。 インデックス再作成、ニュースレター、電子メール、サイトマップなどのスケジュールを設定します。 いくつかの機能を使用するには、ファイルシステムの所有者として少なくとも 1 つの cron ジョブを実行する必要があります。
+UNIX タスクスケジューラ `cron` は、毎日のAdobe Commerce操作にとって重要です。 インデックスの再作成、ニュースレター、電子メール、サイトマップなどのスケジュールを設定します。 いくつかの機能を使用するには、ファイルシステムの所有者として少なくとも 1 つの cron ジョブを実行する必要があります。
 
 cron ジョブが正しく設定されていることを確認するには、ファイルシステムの所有者として次のコマンドを入力して crontab を確認します。
 
@@ -255,7 +255,7 @@ Adobe Commerce 2.4 には、一部のデータをシリアル化から JSON に�
 
 大量のデータがある場合は、環境変数の値を設定してパフォーマンスを向上させることができます。 `DATA_CONVERTER_BATCH_SIZE`. デフォルトでは、値はに設定されています。 `50,000`.
 
-環境変数を設定するには：
+環境変数を設定するには、次の手順に従います。
 
 1. 次に切り替え： [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
 1. 変数を設定します。
@@ -276,9 +276,9 @@ Adobe Commerce 2.4 には、一部のデータをシリアル化から JSON に�
 
 ## ファイルシステムの権限の検証
 
-セキュリティ上の理由から、Adobe Commerceにはファイルシステムに対する特定の権限が必要です。 権限は _[所有権](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. 所有権によって、ファイル・システム上で誰がアクションを実行できるかが決まります。権限は、ユーザーが実行できる操作を決定します。
+セキュリティ上の理由から、Adobe Commerceにはファイルシステムに対する特定の権限が必要です。 権限は、 _[所有権](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. 所有権は、ファイル・システム上でアクションを実行できるユーザーを決定し、権限はユーザーが実行できる操作を決定します。
 
-ファイルシステム内のディレクトリは、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md) グループ化します。
+ファイルシステム内のディレクトリは、 [ファイルシステム所有者の](../../installation/prerequisites/file-system/overview.md) グループ化します。
 
 ファイルシステムの権限が正しく設定されていることを確認するには、アプリケーションサーバーにログインするか、ホスティングプロバイダーの File Manager アプリケーションを使用します。
 
@@ -341,13 +341,13 @@ ls -la /var/www/html/magento2/pub
 
 詳しくは、 [ファイル・システムの権限と所有権](../../installation/prerequisites/file-system/overview.md).
 
-## を `pub/` ディレクトリルート
+## を設定します。 `pub/` ディレクトリルート
 
 詳しくは、 [セキュリティを向上させるために docroot を変更](../../installation/tutorials/docroot.md) を参照してください。
 
 ## Composer の更新プラグインをインストールします。
 
-この [`magento/composer-root-update-plugin`](https://github.com/magento/composer-root-update-plugin) Composer プラグインは、ルートプロジェクトに対して行う必要のある変更を解決します `composer.json` ファイルを更新してから、新しい製品要件に更新してください。
+The [`magento/composer-root-update-plugin`](https://github.com/magento/composer-root-update-plugin) Composer プラグインは、ルートプロジェクトに対して行う必要のある変更を解決します `composer.json` ファイルを更新してから、新しい製品要件に更新してください。
 
 プラグインは、手動アップグレードを部分的に自動化し、依存関係の競合を特定して手動で修正する代わりに、特定して解決するのに役立ちます。
 

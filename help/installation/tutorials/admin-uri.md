@@ -14,7 +14,7 @@ ht-degree: 0%
 
 このコマンドを実行する前に、次の操作を行う必要があります。 [デプロイメント設定を作成または更新する](deployment.md).
 
-## 管理 URI を表示
+## 管理 URI を表示する
 
 このセクションでは、コマンドラインを使用して Admin Uniform Resource Identifier ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)) をクリックします。
 

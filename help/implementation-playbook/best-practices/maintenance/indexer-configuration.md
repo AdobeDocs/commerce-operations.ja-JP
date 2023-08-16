@@ -22,7 +22,7 @@ ht-degree: 0%
 - Adobe Commerce an cloud infrastructure
 - Adobe Commerceオンプレミス
 
-## スケジュールに従って更新するインデクサーを設定
+## スケジュールに従って更新するインデクサーを設定します
 
 Adobe Commerceには次の 2 種類のインデクサーモードがあります。 [!UICONTROL Update on Save] （デフォルト設定）および [!DNL Update on Schedule].
 
@@ -30,20 +30,20 @@ Adobe Commerceには次の 2 種類のインデクサーモードがあります
 
 - **[!UICONTROL Update on Schedule]** mode は、データの更新に関する情報を格納し、インデックス再作成操作とインデックス更新は、スケジュールされた間隔でバックグラウンドで実行される cron ジョブによって管理されます。
 
-複数の管理者を含む大規模なストアがバックエンドで作業している場合、または多数のインポートとエクスポートトリガーが頻繁にインデックスの更新をおこなっています。 サイトインデックス設定が [!UICONTROL Update on Save] モード、頻繁にインデックスを再作成すると、データベースのパフォーマンスが低下し、サイトのパフォーマンスが低下し、特に大規模なストアでのインデックス再作成プロセスに長時間の遅延が生じます。
+複数の管理者を含む大規模なストアがバックエンドで作業している場合、または多数のインポートとエクスポートのトリガーが頻繁にインデックスの更新をおこなっています。 サイトのインデックス設定が [!UICONTROL Update on Save] モード、頻繁にインデックスを再作成すると、データベースのパフォーマンスが低下し、サイトのパフォーマンスが低下し、特に大規模なストアでのインデックス再作成プロセスに長時間の遅延が生じます。
 
-サイトのパフォーマンスを最大化するには、次のインデックス作成のベストプラクティスに従います。
+サイトのパフォーマンスを最大化するには、インデックス作成に関する次のベストプラクティスに従います。
 
 - インデックス設定を確認します。
 - インデクサーをに設定します。 _[!UICONTROL Update on Schedule]_大規模なサイト、頻繁な更新と大量のトラフィックを含むサイトの場合に使用します。 詳しくは、 [インデックス管理](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
-- フォロー [パフォーマンスのベストプラクティス](../../../performance/configuration.md) インデックス管理用。
+- フォロー [パフォーマンスのベストプラクティス](../../../performance/configuration.md) を参照してください。
 
 >[!IMPORTANT]
 >
->この [!DNL Customer Grid] は、 [!UICONTROL Update on Save] オプション。 このインデックスは `Update by Schedule` オプション。
+>The [!DNL Customer Grid] は、 [!UICONTROL Update on Save] オプション。 このインデックスは、 `Update by Schedule` オプション。
 
 ## 追加情報
 
-- [管理者ユーザー向けインデックス管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
+- [管理者ユーザー向けのインデックス管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
 - [MagentoCLI を使用したインデックス管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [開発者向けのインデックス作成の概要](https://developer.adobe.com/commerce/php/development/components/indexing/)

@@ -1,13 +1,13 @@
 ---
 title: ブートストラップパラメータの値を設定する
 description: コマースアプリケーションのブートストラップパラメーターを設定する方法を説明します。
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '594'
+ht-degree: 1%
 
 ---
-
 
 # Bootstrapパラメーター
 
@@ -17,14 +17,13 @@ ht-degree: 0%
 
 | Bootstrapパラメータ | 説明 |
 | ------------------- | -------------------------------------------- |
-| MAGE_DIRS | カスタムディレクトリと URL パスを指定します |
-| MAGE_PROFILER | 依存関係グラフとHTMLプロファイルを有効化 |
+| MAGE_DIRS | カスタムディレクトリと URL パスを指定します。 |
+| MAGE_PROFILER | 依存関係グラフとHTMLプロファイルを有効にする |
 
 >[!INFO]
 >
 >- ブートストラップパラメータの一部が記載されているわけではありません。
->- これで、 [`magento deploy:mode:set {mode}`](../cli/set-mode.md) コマンドを使用します。
-
+>- これで、次を使用してアプリケーションモード（開発者、デフォルト、実稼動）を設定できます。 [`magento deploy:mode:set {mode}`](../cli/set-mode.md) コマンドを使用します。
 
 ## 環境変数を使用したパラメーターの設定
 
@@ -64,7 +63,7 @@ export MAGE_PROFILER=firebug
 
 アプリケーションモードを設定する 1 つの方法は、 `.htaccess`. これにより、Apache の設定を変更する必要がなくなります。
 
-次の項目を変更できます。 `.htaccess` を次の場所に置き、Commerce アプリケーションのエントリポイントに応じて、
+次の項目を変更できます。 `.htaccess` が次の場所にある場合は、コマースアプリケーションのエントリポイントに応じて、以下のいずれかに該当します。
 
 - `<magento_root>/.htaccess`
 - `<magento_root>/pub/.htaccess`
@@ -87,7 +86,7 @@ export MAGE_PROFILER=firebug
    <custom value>
    ```
 
-1. 変更をに保存します。 `.htaccess`;変更を有効にするために、Apache を再起動する必要はありません。
+1. 変更をに保存します。 `.htaccess`を再起動する必要はありません。変更を有効にするために、Apache を再起動する必要はありません。
 
 ### Apache 設定
 
@@ -95,7 +94,7 @@ Apache Web サーバーでは、 `mod_env` ディレクティブ。
 
 Apache `mod_env` 指示が～で少し異なる [Apache バージョン 2.2] および [Apache バージョン 2.4].
 
-次の手順は、Apache 仮想ホストでアプリケーションモードを設定する方法を示しています。 これが唯一の使用方法ではありません `mod_env` 指令；詳しくは、Apache のドキュメントを参照してください。
+次の手順は、Apache 仮想ホストでアプリケーションモードを設定する方法を示しています。 これが唯一の使用方法ではありません `mod_env` ディレクティブ。詳しくは、Apache のドキュメントを参照してください。
 
 >[!TIP]
 >
@@ -103,7 +102,7 @@ Apache `mod_env` 指示が～で少し異なる [Apache バージョン 2.2] お
 
 **Ubuntu 上の Apache のブートストラップ変数を指定するには**:
 
-1. を使用して `root` 権限を設定し、仮想ホスト設定ファイルをテキストエディターで開きます。
+1. を使用して `root` 権限を設定し、仮想ホストの設定ファイルをテキストエディターで開きます。
 
    例えば、仮想ホストの名前が `my.magento`,
 

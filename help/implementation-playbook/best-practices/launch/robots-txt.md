@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 設定のベストプラクティス `robots.txt` および `sitemap.xml` ファイル
 
-この記事では、 `robots.txt` および `sitemap.xml` Adobe Commerceのファイル（設定やセキュリティを含む） これらのファイルは、Web ロボット（通常は検索エンジンロボット）に対し、Web サイト上のページのクロール方法を指示します。 これらのファイルを設定すると、サイトのパフォーマンスと検索エンジンの最適化を向上できます。
+この記事では、 `robots.txt` および `sitemap.xml` Adobe Commerce内のファイル（設定やセキュリティを含む） これらのファイルは、Web ロボット（通常は検索エンジンロボット）に対し、Web サイト上のページのクロール方法を指示します。 これらのファイルを設定すると、サイトのパフォーマンスと検索エンジンの最適化を向上できます。
 
 >[!NOTE]
 >
@@ -34,14 +34,14 @@ ht-degree: 0%
 
 次のベストプラクティスに従って、 `robots.txt` および `sitemap.xml` 単一サイトストアフロント用のファイル：
 
-- プロジェクトで [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) バージョン 2002.0.12 以降。
+- プロジェクトでが使用されていることを確認します。 [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) バージョン 2002.0.12 以降。
 - 管理アプリケーションを使用して、 `robots.txt` ファイル。
 
   >[!TIP]
   >
   >自動生成されたを表示 `robots.txt` 次の場所にあなたのストアのファイル `<domain.your.project>/robots.txt`.
 
-- 管理アプリケーションを使用して `sitemap.xml` ファイル。
+- 管理アプリケーションを使用して、 `sitemap.xml` ファイル。
 
   >[!IMPORTANT]
   >
@@ -70,9 +70,9 @@ ht-degree: 0%
 
 クラウドインフラストラクチャ上にAdobe Commerceを 1 回実装して、複数のストアを設定して実行できます。 詳しくは、 [複数の Web サイトまたはストアを設定する](https://devdocs.magento.com/cloud/project/project-multi-sites.html).
 
-同じベストプラクティスで `robots.txt` および `sitemap.xml` のファイル [単一サイト店舗](#single-site-storefronts) は、次の 2 つの重要な違いを持つマルチサイトストアフロントに適用されます。
+同じベストプラクティスで `robots.txt` および `sitemap.xml` 次のファイル [単一サイト店舗](#single-site-storefronts) は、次の 2 つの重要な違いを持つマルチサイトストアフロントに適用されます。
 
-- 必ず `robots.txt` および `sitemap.xml` ファイル名には、対応するサイトの名前が含まれます。 例：
+- 次を確認します。 `robots.txt` および `sitemap.xml` ファイル名には、対応するサイトの名前が含まれます。 例：
    - `domaineone_robots.txt`
    - `domaintwo_robots.txt`
    - `domainone_sitemap.xml`
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 ## Adobe Commerceオンプレミス
 
-管理アプリケーションを使用して `robots.txt` および `sitemap.xml` 不要なコンテンツのスキャンやインデックス作成を防ぐファイル ( [検索エンジンロボット](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)) をクリックします。
+管理アプリケーションを使用して、 `robots.txt` および `sitemap.xml` 不要なコンテンツのスキャンやインデックス作成を防ぐためのファイル ( [検索エンジンロボット](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)) をクリックします。
 
 >[!TIP]
 >
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->サポートが必要な場合は、 [Adobe Commerceサポートチケットを送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+>サポートが必要な場合は、 [Adobe Commerceサポートチケットを送信する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## 追加情報
 

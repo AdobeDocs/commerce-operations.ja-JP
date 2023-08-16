@@ -11,7 +11,7 @@ ht-degree: 0%
 | ------- | ------- | ------- |
 | アメント | [magento/magento2#36663](https://github.com/magento/magento2/pull/36663) | [magento/magento2#14495](https://github.com/magento/magento2/issues/14495) |
 | 便利な | [magento/magento2#36529](https://github.com/magento/magento2/pull/36529) | [magento/magento2#36726](https://github.com/magento/magento2/issues/36726) [magento/magento2#35546](https://github.com/magento/magento2/issues/35546) |
-| ホステル | [magento/magento2#36495](https://github.com/magento/magento2/pull/36495) | [magento/magento2#36515](https://github.com/magento/magento2/issues/36515) |
+| ホステップ | [magento/magento2#36495](https://github.com/magento/magento2/pull/36495) | [magento/magento2#36515](https://github.com/magento/magento2/issues/36515) |
 | シナパル | [magento/magento2#36458](https://github.com/magento/magento2/pull/36458) | [magento/magento2#36639](https://github.com/magento/magento2/issues/36639) |
 | バリブド | [magento/magento2#36452](https://github.com/magento/magento2/pull/36452) | [magento/magento2#32004](https://github.com/magento/magento2/issues/32004) [magento/magento2#36891](https://github.com/magento/magento2/issues/36891) |
 | ペテラジャプ | [magento/magento2#36414](https://github.com/magento/magento2/pull/36414) | [magento/magento2#36831](https://github.com/magento/magento2/issues/36831) |
@@ -24,7 +24,7 @@ ht-degree: 0%
 | textbook | [magento/magento2#36241](https://github.com/magento/magento2/pull/36241) | [magento/magento2#36349](https://github.com/magento/magento2/issues/36349) [magento/magento2#29448](https://github.com/magento/magento2/issues/29448) |
 | 便利な | [magento/magento2#36224](https://github.com/magento/magento2/pull/36224) | [magento/magento2#36334](https://github.com/magento/magento2/issues/36334) |
 | 自由な | [magento/magento2#36187](https://github.com/magento/magento2/pull/36187) | [magento/magento2#36554](https://github.com/magento/magento2/issues/36554) |
-| セルビスキー | [magento/magento2#36036](https://github.com/magento/magento2/pull/36036) | [magento/magento2#36337](https://github.com/magento/magento2/issues/36337) |
+| セルビンスキー | [magento/magento2#36036](https://github.com/magento/magento2/pull/36036) | [magento/magento2#36337](https://github.com/magento/magento2/issues/36337) |
 | dshevtsov | [magento/magento2#35990](https://github.com/magento/magento2/pull/35990) | [magento/magento2#36230](https://github.com/magento/magento2/issues/36230) [magento/magento2#36651](https://github.com/magento/magento2/issues/36651) |
 | バシェフ | [magento/magento2#35986](https://github.com/magento/magento2/pull/35986) | [magento/magento2#35899](https://github.com/magento/magento2/issues/35899) [magento/magento2#36055](https://github.com/magento/magento2/issues/36055) [magento/magento2#36312](https://github.com/magento/magento2/issues/36312) [Smile-SA/elasticsuite#2772](https://github.com/Smile-SA/elasticsuite/issues/2772) [plumrocket/module-layered-navigation-fix-magento-2.4.5#1](https://github.com/plumrocket/module-layered-navigation-fix-magento-2.4.5/issues/1) |
 | lbajsarowicz | [magento/magento2#35948](https://github.com/magento/magento2/pull/35948) | [magento/magento2#36539](https://github.com/magento/magento2/issues/36539) |
@@ -34,7 +34,7 @@ ht-degree: 0%
 | Viper9x | [magento/magento2#35846](https://github.com/magento/magento2/pull/35846) | [magento/magento2#36643](https://github.com/magento/magento2/issues/36643) |
 | ラリトモハン | [magento/magento2#35818](https://github.com/magento/magento2/pull/35818) | [magento/magento2#36644](https://github.com/magento/magento2/issues/36644) |
 | vo1 | [magento/magento2#35817](https://github.com/magento/magento2/pull/35817) | [magento/magento2#36645](https://github.com/magento/magento2/issues/36645) |
-| シェイプ | [magento/magento2#35816](https://github.com/magento/magento2/pull/35816) | [magento/magento2#36593](https://github.com/magento/magento2/issues/36593) |
+| シープ | [magento/magento2#35816](https://github.com/magento/magento2/pull/35816) | [magento/magento2#36593](https://github.com/magento/magento2/issues/36593) |
 | bgorski | [magento/magento2#35807](https://github.com/magento/magento2/pull/35807) | [magento/magento2#35994](https://github.com/magento/magento2/issues/35994) |
 | pykettk | [magento/magento2#35738](https://github.com/magento/magento2/pull/35738) | [magento/magento2#36646](https://github.com/magento/magento2/issues/36646) |
 | mrtuvn | [magento/magento2#35656](https://github.com/magento/magento2/pull/35656) | [magento/magento2#36647](https://github.com/magento/magento2/issues/36647) |
@@ -46,19 +46,19 @@ ht-degree: 0%
 | ナザルクロバンヒ | [magento/magento2#35441](https://github.com/magento/magento2/pull/35441) | [magento/magento2#35558](https://github.com/magento/magento2/issues/35558) |
 | pykettk | [magento/magento2#35436](https://github.com/magento/magento2/pull/35436) | [magento/magento2#35488](https://github.com/magento/magento2/issues/35488) |
 | VladyslavSikailo | [magento/magento2#35216](https://github.com/magento/magento2/pull/35216) | [magento/magento2#35417](https://github.com/magento/magento2/issues/35417) |
-| センタル | [magento/magento2#35060](https://github.com/magento/magento2/pull/35060) | [magento/magento2#32177](https://github.com/magento/magento2/issues/32177) |
-| ノバキスキー | [magento/magento2#34992](https://github.com/magento/magento2/pull/34992) | [magento/magento2#34991](https://github.com/magento/magento2/issues/34991) |
-| erfaniman の複数形 | [magento/magento2#34232](https://github.com/magento/magento2/pull/34232) | [magento/magento2#34246](https://github.com/magento/magento2/issues/34246) [magento/magento2#34247](https://github.com/magento/magento2/issues/34247) |
+| Sental | [magento/magento2#35060](https://github.com/magento/magento2/pull/35060) | [magento/magento2#32177](https://github.com/magento/magento2/issues/32177) |
+| ノバキフスキー | [magento/magento2#34992](https://github.com/magento/magento2/pull/34992) | [magento/magento2#34991](https://github.com/magento/magento2/issues/34991) |
+| erfanimani の複数形 | [magento/magento2#34232](https://github.com/magento/magento2/pull/34232) | [magento/magento2#34246](https://github.com/magento/magento2/issues/34246) [magento/magento2#34247](https://github.com/magento/magento2/issues/34247) |
 | 自由な | [magento/magento2#34186](https://github.com/magento/magento2/pull/34186) | [magento/magento2#34321](https://github.com/magento/magento2/issues/34321) |
 | 便利な | [magento/magento2#34117](https://github.com/magento/magento2/pull/34117) | [magento/magento2#36628](https://github.com/magento/magento2/issues/36628) |
 | khoimm92 | [magento/magento2#34061](https://github.com/magento/magento2/pull/34061) | [magento/magento2#35481](https://github.com/magento/magento2/issues/35481) |
 | dudzio12 | [magento/magento2#33892](https://github.com/magento/magento2/pull/33892) | [magento/magento2#33820](https://github.com/magento/magento2/issues/33820) |
 | カスナー | [magento/magento2#33859](https://github.com/magento/magento2/pull/33859) | [magento/magento2#34439](https://github.com/magento/magento2/issues/34439) |
-| 双対性 | [magento/magento2#33841](https://github.com/magento/magento2/pull/33841) | [magento/magento2#35187](https://github.com/magento/magento2/issues/35187) |
+| 双対（性） | [magento/magento2#33841](https://github.com/magento/magento2/pull/33841) | [magento/magento2#35187](https://github.com/magento/magento2/issues/35187) |
 | セルゲネズブリツキー | [magento/magento2#33803](https://github.com/magento/magento2/pull/33803) | [magento/magento2#33802](https://github.com/magento/magento2/issues/33802) |
-| シーンブリーデン | [magento/magento2#33742](https://github.com/magento/magento2/pull/33742) | [magento/magento2#34524](https://github.com/magento/magento2/issues/34524) |
+| シーン・ブリーデン | [magento/magento2#33742](https://github.com/magento/magento2/pull/33742) | [magento/magento2#34524](https://github.com/magento/magento2/issues/34524) |
 | SilinMykola | [magento/magento2#32889](https://github.com/magento/magento2/pull/32889) | [magento/magento2#35858](https://github.com/magento/magento2/issues/35858) |
-| 整列した | [magento/magento2#31606](https://github.com/magento/magento2/pull/31606) | [magento/magento2#31643](https://github.com/magento/magento2/issues/31643) [magento/magento2#31866](https://github.com/magento/magento2/issues/31866) |
+| 整列性の | [magento/magento2#31606](https://github.com/magento/magento2/pull/31606) | [magento/magento2#31643](https://github.com/magento/magento2/issues/31643) [magento/magento2#31866](https://github.com/magento/magento2/issues/31866) |
 | lbajsarowicz | [magento/magento2#31360](https://github.com/magento/magento2/pull/31360) | [magento/magento2#31443](https://github.com/magento/magento2/issues/31443) |
 | lbajsarowicz | [magento/magento2#31355](https://github.com/magento/magento2/pull/31355) | [magento/magento2#31373](https://github.com/magento/magento2/issues/31373) [magento/magento2#32625](https://github.com/magento/magento2/issues/32625) |
 | krzksz | [magento/magento2#30647](https://github.com/magento/magento2/pull/30647) | [magento/magento2#30672](https://github.com/magento/magento2/issues/30672) [magento/magento2#32985](https://github.com/magento/magento2/issues/32985) [magento/magento2#30613](https://github.com/magento/magento2/issues/30613) |

@@ -41,7 +41,7 @@ ht-degree: 0%
 
 1. 右側のウィンドウで、 **メディアのストレージ設定**.
 
-1. 次の **メディアデータベースを選択** 「 」リストで、メディアストレージデータベースの名前をクリックします。
+1. 次から： **メディアデータベースを選択** 「 」リストで、メディアストレージデータベースの名前をクリックします。
 
 1. クリック **同期**.
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 すべてのメディアファイル（製品、カテゴリ、WYSIWYG エディターなどの画像）は、 `<your Magento 1 install dir>/media` から `<your Magento 2 install dir>/pub/media`.
 
-ただし、 *not* コピー `.htaccess` Magento1 のファイル `media` フォルダー。 Magento2 には独自の `.htaccess` それは保存するべきです。
+ただし、 *not* コピー `.htaccess` Magento1 にあるファイル `media` フォルダー。 Magento2 には独自の `.htaccess` それは保存するべきです。
 
 ## ストアフロントデザイン
 
@@ -69,4 +69,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->データベースエンティティのタイムゾーンは、 `\Migration\Handler\Timezone` ハンドラ 詳しくは、 [フォローアップ](follow-up.md) 」の節を参照してください。
+>データベースエンティティのタイムゾーンは、 `\Migration\Handler\Timezone` ハンドラー 詳しくは、 [フォローアップ](follow-up.md) の節を参照してください。

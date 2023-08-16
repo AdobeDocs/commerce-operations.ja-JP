@@ -20,14 +20,14 @@ ht-degree: 0%
 
 PHP は memcache をネイティブでサポートしていないので、PHP で使用するには拡張をインストールする必要があります。 PHP には 2 つの拡張機能があり、どの拡張機能を使用するかをデコードすることが重要です。
 
-- `memcache` (_no d_) — 定期的に維持されない、古いが一般的な拡張機能。
-この `memcache` 現在、拡張機能 _次の値と等しくない_ は PHP 7 で動作します。 詳しくは、 [memcache の PHP ドキュメント](https://www.php.net/manual/en/book.memcache.php).
+- `memcache` (_いいえ d_) — 定期的に維持されない、古いが一般的な拡張機能。
+The `memcache` 現在、拡張機能 _次の値と等しくない_ は PHP 7 で動作します。 詳しくは、 [memcache に関する PHP ドキュメント](https://www.php.net/manual/en/book.memcache.php).
 
-   正確な名前は `php5-memcache` Ubuntu に対して。
+  正確な名前は `php5-memcache` Ubuntu に対して。
 
 - `memcached` (_と`d`_)—PHP 7 と互換性のある、より新しく、維持された拡張。 詳しくは、 [memcached に関する PHP ドキュメント](https://www.php.net/manual/en/book.memcached.php).
 
-   正確な名前は `php5-memcached` Ubuntu に対して。
+  正確な名前は `php5-memcached` Ubuntu に対して。
 
 ## Ubuntu で memcached をインストールして設定します。
 
@@ -46,9 +46,9 @@ PHP は memcache をネイティブでサポートしていないので、PHP �
 1. 次の memcached 構成設定を変更します。 `CACHESIZE` および `-l`:
 
    1. 開く `/etc/memcached.conf` をクリックします。
-   1. を `-m` パラメーター。
+   1. 次を見つけます。 `-m` パラメーター。
    1. 値を少なくともに変更します。 `1GB`
-   1. を `-l` パラメーター。
+   1. 次を見つけます。 `-l` パラメーター。
    1. 値をに変更します。 `127.0.0.1` または `localhost`
    1. 変更をに保存します。 `memcached.conf` をクリックし、テキストエディタを終了します。
    1. memcached を再起動します。
@@ -67,7 +67,7 @@ PHP は memcache をネイティブでサポートしていないので、PHP �
 
 Adobeでは、Commerce をインストールする前に、memcached が機能することを確認することをお勧めします。 これをおこなうのに数分かかり、後で簡単にトラブルシューティングできます。
 
-### Web サーバーが memcached を認識したことを確認します
+### Web サーバーが memcached を認識したことを確認します。
 
 memcached が Web サーバーによって認識されることを確認するには、次の手順を実行します。
 
@@ -87,7 +87,7 @@ memcached が Web サーバーによって認識されることを確認する�
 
 1. memcached が次のように表示されることを確認します。
 
-   ![memcached が Web サーバーによって認識されたことを確認](../../assets/configuration/memcache.png)
+   ![memcached が Web サーバーによって認識されたことを確認します](../../assets/configuration/memcache.png)
 
    memcached バージョン 3.0.5 以降を使用していることを確認します。
 
@@ -99,7 +99,7 @@ memcached が Web サーバーによって認識されることを確認する�
 
 このテストの詳細については、 [Ubuntu での Memcache のインストールと使用の方法のチュートリアル](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
 
-作成 `cache-test.php` を次の内容で、web サーバーの docroot に追加します。
+作成 `cache-test.php` を次の内容で、web サーバーの docroot に置き換えます。
 
 ```php
 $meminstance = new Memcached();
@@ -116,7 +116,7 @@ if ($result) {
 }
 ```
 
-ここで、 `<memcached hostname or ip>` 次のいずれか `localhost`, `127.0.0.1`または memcache のホスト名または IP アドレス。 この `<memcached port>` はリッスンポートです。デフォルトでは `11211`.
+ここで、 `<memcached hostname or ip>` 次のいずれか `localhost`, `127.0.0.1`または memcache のホスト名または IP アドレス。 The `<memcached port>` はリスンポートで、デフォルトでは `11211`.
 
 Web ブラウザーでそのページに移動します。 例：
 
@@ -126,7 +126,7 @@ http://192.0.2.1/cache-test.php
 
 初めてこのページに移動すると、次のように表示されます。 `No matching key found. Refresh the browser to add it!`
 
-ブラウザーを更新します。 メッセージが `Successfully retrieved the data!`
+ブラウザーを更新します。 メッセージが次のように変わります。 `Successfully retrieved the data!`
 
 最後に、Telnet を使用して memcache キーを表示できます。
 
@@ -165,4 +165,4 @@ flush_all
 quit
 ```
 
-[Telnet テストの追加情報](https://darkcoding.net/software/memcached-list-all-keys/)
+[Telnet テストに関する追加情報](https://darkcoding.net/software/memcached-list-all-keys/)

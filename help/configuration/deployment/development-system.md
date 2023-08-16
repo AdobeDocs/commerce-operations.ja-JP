@@ -1,13 +1,13 @@
 ---
 title: 開発システムの設定
 description: コマースアプリケーションの開発システムを設定する方法を説明します。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: 242e9a38-2eb2-4090-8f59-3fd588f7ad3a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
 
 ---
-
 
 # 開発システムの設定
 
@@ -24,6 +24,6 @@ ht-degree: 0%
    - `pub/static` ディレクトリ（およびサブディレクトリ）
    - `app/etc/env.php` ファイル
 
-- 確認 `app/etc/config.php` が _含む_ ソース管理下で
+- 確認 `app/etc/config.php` 次に該当 _含む_ ソース管理下で
 
 Git を使用する場合、 `.gitignore` ファイルは、前述のほとんどを提供します。 詳しくは、 [`.gitignore` 参照](../reference/config-reference-gitignore.md).

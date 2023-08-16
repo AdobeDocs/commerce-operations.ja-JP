@@ -23,7 +23,7 @@ Commerce アプリケーションが既に実稼動環境にある場合、ま�
 - チェックアウトおよび注文管理システム (OMS) データベースの作成
 - 次の一連の SQL スクリプトを実行します。
 
-   - 外部キーを削除
+   - 外部キーを削除する
    - 販売および見積データベーステーブルのバックアップ
    - メイン・データベースから販売/見積データベースにテーブルを移動
 
@@ -36,11 +36,11 @@ Commerce アプリケーションが既に実稼動環境にある場合、ま�
 - 主なデータベース名はです。 `magento` ユーザー名とパスワードは両方とも `magento`
 - 見積データベース名は次のとおりです。 `magento_quote` ユーザー名とパスワードは両方とも `magento_quote`
 
-   見積もりデータベースは、 _checkout_ データベース。
+  見積もりデータベースは、 _checkout_ データベース。
 
-- 販売データベース名は `magento_sales` ユーザー名とパスワードは両方とも `magento_sales`
+- 販売データベース名はです `magento_sales` ユーザー名とパスワードは両方とも `magento_sales`
 
-   販売データベースは、OMS データベースとも呼ばれます。
+  販売データベースは、OMS データベースとも呼ばれます。
 
 >[!INFO]
 >
@@ -63,7 +63,7 @@ Adobeでは、現在のデータベースとファイルシステムをバック
 
 ## 追加のマスターデータベースを設定する
 
-この項では、販売テーブルと見積テーブルのデータベース・インスタンスを作成する方法を説明します。
+この項では、販売テーブルと見積テーブルのデータベース・インスタンスを作成する方法について説明します。
 
 **販売および OMS 見積データベースを作成するには**:
 
@@ -113,7 +113,7 @@ Adobeでは、現在のデータベースとファイルシステムをバック
    exit
    ```
 
-   MySQL モニタが表示される場合は、データベースが正しく作成されています。 エラーが表示される場合は、上記のコマンドを繰り返します。
+   MySQL モニタが表示される場合は、データベースが正しく作成されています。 エラーが表示される場合は、前述のコマンドを繰り返します。
 
 1. 次の節に進みます。
 
@@ -126,7 +126,7 @@ Adobeでは、現在のデータベースとファイルシステムをバック
 - `salesrule_`
 - `sales_`
 - `magento_sales_`
-- この `magento_customercustomattributes_sales_flat_order` テーブルも影響を受けます
+- The `magento_customercustomattributes_sales_flat_order` テーブルも影響を受けます
 
 >[!INFO]
 >
@@ -139,7 +139,7 @@ Adobeでは、現在のデータベースとファイルシステムをバック
 
 ### セールスデータベースの SQL スクリプトを作成
 
-Commerce サーバーにログインしたユーザーがアクセスできる場所に、次の SQL スクリプトを作成します。 例えば、ログインした場合やコマンドを `root`を使用すると、 `/root/sql-scripts` ディレクトリ。
+Commerce サーバーにログインしたユーザーがアクセスできる場所に、次の SQL スクリプトを作成します。 例えば、ログインした場合やコマンドを実行する場合は、 `root`を使用すると、 `/root/sql-scripts` ディレクトリ。
 
 #### 外部キーを削除
 
@@ -200,7 +200,7 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
 
 前述のスクリプトを実行します。
 
-1. MySQL データベースに、 `root` または管理ユーザー：
+1. MySQL データベースに、 `root` または管理者ユーザー：
 
    ```bash
    mysql -u root -p
@@ -212,7 +212,7 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
    source <path>/<script>.sql
    ```
 
-   例：
+   以下に例を挙げます。
 
    ```shell
    source /root/sql-scripts/1_foreign-sales.sql
@@ -224,7 +224,7 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
 
 この項では、メインの Commerce データベースから販売テーブルをバックアップし、別の販売データベースに復元する方法について説明します。
 
-現在 `mysql>` プロンプト、入力 `exit` コマンドシェルに戻ります。
+現在、 `mysql>` プロンプト、入力 `exit` コマンドシェルに戻ります。
 
 次を実行します。 `mysqldump` コマンドは、コマンドシェルから 1 つずつ、 それぞれで、次の文字列に置き換えます。
 
@@ -297,7 +297,7 @@ mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattribu
 
 - `<your sales DB name>` を sales データベースの名前に置き換えます。
 
-   このトピックでは、サンプルのデータベース名はです。 `magento_sales`.
+  このトピックでは、サンプルのデータベース名はです。 `magento_sales`.
 
 - `<root username>` を MySQL のルートユーザ名と共に使用します。
 - `<root user password>` ユーザーのパスワードを使用
@@ -311,9 +311,9 @@ mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattribu
 >
 >このセクションには、特定のデータベース・テーブル名を持つスクリプトが含まれます。 カスタマイズを実行した場合、またはアクションを実行する前にテーブルの完全なリストを表示する場合は、 [参照スクリプト](#reference-scripts).
 
-見積データベースのテーブル名は次の文字で始まります： `quote`. この `magento_customercustomattributes_sales_flat_quote` および `magento_customercustomattributes_sales_flat_quote_address` テーブルも影響を受けます
+見積データベースのテーブル名は次の文字で始まります： `quote`. The `magento_customercustomattributes_sales_flat_quote` および `magento_customercustomattributes_sales_flat_quote_address` テーブルも影響を受けます
 
-### 引用符テーブルから外部キーを削除
+### 引用テーブルから外部キーを削除する
 
 このスクリプトは、引用符以外のテーブルを参照する外部キーを引用符テーブルから削除します。 置換 `<your main Commerce DB name>` を Commerce データベースの名前に置き換えます。
 
@@ -337,7 +337,7 @@ ALTER TABLE quote_item DROP FOREIGN KEY QUOTE_ITEM_STORE_ID_STORE_STORE_ID;
 1. 次の場合： `mysql >` プロンプトが表示されたら、次のようにスクリプトを実行します。
    `source <path>/<script>.sql`
 
-   例：
+   以下に例を挙げます。
 
    ```shell
    source /root/sql-scripts/2_foreign-key-quote.sql
@@ -347,7 +347,7 @@ ALTER TABLE quote_item DROP FOREIGN KEY QUOTE_ITEM_STORE_ID_STORE_STORE_ID;
 
 ### 見積もりテーブルのバックアップ
 
-この項では、メイン・データベースから見積表をバックアップし、見積データベースに復元する方法を説明します。
+この項では、メイン・データベースから見積表をバックアップし、見積データベースに復元する方法について説明します。
 
 コマンドプロンプトから次のコマンドを実行します。
 
@@ -463,7 +463,7 @@ SET foreign_key_checks = 1;
    source <path>/<script>.sql
    ```
 
-   例：
+   以下に例を挙げます。
 
    ```shell
    source /root/sql-scripts/3_drop-tables.sql

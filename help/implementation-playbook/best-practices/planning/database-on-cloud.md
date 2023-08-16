@@ -21,7 +21,7 @@ Adobe Commerce an cloud infrastructure
 
 ## すべての MyISAM テーブルを InnoDB に変換
 
-Adobeでは、InnoDB データベースエンジンの使用をお勧めします。 デフォルトのAdobe Commerceインストールでは、データベース内のすべてのテーブルは InnoDB エンジンを使用して格納されます。 ただし、一部のサードパーティモジュール（拡張）では、MyISAM 形式のテーブルを導入できます。 サードパーティ製モジュールをインストールした後、データベースをチェックして、 `myisam` 形式を設定して、 `innodb` 形式
+Adobeでは、InnoDB データベースエンジンの使用をお勧めします。 デフォルトのAdobe Commerceインストールでは、データベース内のすべてのテーブルは InnoDB エンジンを使用して格納されます。 ただし、一部のサードパーティモジュール（拡張）では、MyISAM 形式のテーブルを導入できます。 サードパーティ製モジュールをインストールした後、データベースをチェックして、 `myisam` 形式を設定して、 `innodb` 形式を使用します。
 
 ### モジュールに MyISAM テーブルが含まれているかどうかを確認します
 
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### ストレージエンジンを InnoDB に変更
 
-内 `db_schema.xml` テーブルを宣言するファイル、 `engine` 対応する `table` ノードから `innodb`. 参照： [宣言スキーマ/テーブルノードの設定](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) （開発者向けドキュメント）。
+Adobe Analytics の `db_schema.xml` テーブルを宣言するファイル、 `engine` 対応する `table` ノードから `innodb`. 参照： [宣言スキーマ/テーブルノードの設定](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) （開発者向けドキュメント）。
 
 この宣言スキームは、クラウドインフラストラクチャバージョン 2.3 のAdobe Commerceで導入されました。
 
@@ -61,16 +61,16 @@ Adobe Commerceアプリケーションにサードパーティの検索ツール
 
 - [OpenSearch サービスを設定する](https://devdocs.magento.com/cloud/project/services-opensearch.html)
 
-- [Elasticsearchサービス](https://devdocs.magento.com/cloud/project/services-elastic.html)
+- [Elasticsearchサービスの設定](https://devdocs.magento.com/cloud/project/services-elastic.html)
 
 ## カスタムトリガーの回避
 
-可能な限り、カスタムトリガーを使用しない。
+可能な限り、カスタムトリガーを使用しないでください。
 
 トリガーは、変更を監査テーブルに記録するために使用されます。 Adobeでは、次の理由により、アプリケーション機能を使用する代わりに、監査テーブルに直接書き込むようにトリガーを設定することをお勧めします。
 
 - トリガーはコードとして解釈され、MySQL は事前にコンパイルしません。 クエリのトランザクションスペースに接続すると、テーブルで実行される各クエリに対して、パーサとインタプリタにオーバーヘッドが追加されます。
-- トリガーは、元のクエリと同じトランザクション領域を共有し、これらのクエリがテーブルのロックを競合する間、トリガーは別のテーブルのロックを個別に競合します。
+- トリガーは、元のクエリと同じトランザクション領域を共有し、これらのクエリがテーブルのロックを競合しますが、トリガーは別のテーブルのロックを個別に競合します。
 
 カスタムトリガーの使用に代わる方法については、 [MySQLトリガーを効果的に使用](mysql-triggers-usage.md) をサポートナレッジベースに追加しました。
 
@@ -83,11 +83,11 @@ cron デッドロックの潜在的な問題を回避するには、ECE-Tools �
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
 インデクサーを切り替えると、 [!DNL data definition language] (DDL) ステートメントを使用して、データベース・ロックを引き起こすトリガーを作成します。 この問題を回避するには、Web サイトをメンテナンスモードにし、設定を変更する前に cron ジョブを無効にします。
-手順については、 [インデクサーの設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) 内 *Adobe Commerce設定ガイド*.
+手順については、 [インデクサーの設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) （内） *Adobe Commerce設定ガイド*.
 
-## 実稼働環境で DDL ステートメントを実行しない
+## 実稼動環境で DDL ステートメントを実行しない
 
-実稼動環境で DDL ステートメントを実行して、競合（テーブルの変更や作成など）を防ぎます。 この `setup:upgrade` プロセスは例外です。
+実稼動環境で DDL ステートメントを実行して、競合（テーブルの変更や作成など）を防ぎます。 The `setup:upgrade` プロセスは例外です。
 
 DDL 文を実行する必要がある場合は、Web サイトをメンテナンスモードにし、cron を無効にします（前の節でインデックスを安全に切り替える手順を参照）。
 

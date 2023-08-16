@@ -41,9 +41,9 @@ ht-degree: 0%
 
 の IIS サーバー設定に基づいて、前のすべてのヘッダーの値を削除するオプションが用意されています。 `Enable_IIS_Rewrites`.
 
-- If `Enable_IIS_Rewrites` が `0`の場合、ヘッダーの値は削除されます。
-- If `Enable_IIS_Rewrites` が `1`の場合、ヘッダーの値はそのまま残ります。
+- 次の場合 `Enable_IIS_Rewrites` が `0`の場合、ヘッダーの値は削除されます。
+- 次の場合 `Enable_IIS_Rewrites` が `1`の場合、ヘッダーの値はそのまま残ります。
 
 >[!WARNING]
 >
->次に `Enable_IIS_Rewrites` から `1`を指定する場合、要求が IIS Web サーバーに到達する前に、前のヘッダーの値を変更しないようにする必要があります。
+>次の場合、 `Enable_IIS_Rewrites` から `1`を指定する場合、要求が IIS Web サーバーに到達する前に、前のヘッダーの値を変更しないようにする必要があります。

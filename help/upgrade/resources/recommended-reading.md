@@ -1,11 +1,11 @@
 ---
 title: アップグレードの推奨読み物
-description: Adobe Commerceのアップグレードを計画する際に推奨される読み方を確認します。
+description: Adobe Commerce のアップグレードの計画時に推奨ドキュメントを確認してください。
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
 source-git-commit: 83ee645269b4fb0b63bb11f6d2255ef7fa52bc4f
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 0%
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">アップグレード互換性ツール PhpStorm プラグイン</a> （ビデオ）</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">アップグレード互換性ツール</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityToolSlackチャネル</a></li>
-            <li><a href="../../tools/quality-patches-tool/usage.md">品質パッチツール</a></li>
+            <li><a href="../../tools/quality-patches-tool/usage.md">クォリティパッチツール</a></li>
           </ul>
       </td>
     </tr>

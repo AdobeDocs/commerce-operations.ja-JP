@@ -1,5 +1,5 @@
 ---
-title: Progressive Web Application(PWA)
+title: PROGRESSIVE WEB APPLICATION(PWA)
 description: e コマースサイトの次世代 Web テクノロジー標準について説明します。
 exl-id: aa968642-bf8b-4b3d-8f1d-7ced5973f331
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
@@ -25,7 +25,7 @@ PWAはブラウザーで実行されますが、次のような主要な機能�
 
 ## 重要度
 
-e コマースPWAにとって、プラットフォームがそれほど重要なのはなぜですか。
+e コマースPWAにとって、プラットフォームがそれほど重要なのはなぜですか？
 
 - より広いオーディエンスにリーチ
 

@@ -1,13 +1,13 @@
 ---
 title: コードコンパイラー
 description: コマンドラインからコードコンパイラーを実行する方法を説明します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 0%
 
 ---
-
 
 # コードコンパイラー
 
@@ -34,7 +34,7 @@ bin/magento setup:di:compile
 Generated code and dependency injection configuration successfully.
 ```
 
-Commerce アプリケーションをインストールする前にコードをコンパイルするには：
+Commerce アプリケーションをインストールする前にコードをコンパイルするには、次の手順に従います。
 
 場合によっては、Commerce アプリケーションをインストールする前にコードをコンパイルする必要があります。
 
@@ -44,9 +44,9 @@ Commerce アプリケーションをインストールする前にコードを�
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   以下を使用： `[-c|--clear-static-content]` オプションを使用して静的コンテンツをクリアできます。 これは、以前にモジュールを有効または無効にした場合に必要です。また、以前に生成した静的コンテンツをクリアする必要があります。
+   以下を使用します。 `[-c|--clear-static-content]` オプションを使用して静的コンテンツをクリアできます。 これは、以前にモジュールを有効または無効にした場合に必要です。また、以前に生成した静的コンテンツをクリアする必要があります。
 
-   詳しくは、 [モジュールの有効化](../../installation/tutorials/manage-modules.md).
+   詳しくは、 [モジュールを有効にする](../../installation/tutorials/manage-modules.md).
 
 1. コードをコンパイルします。
 

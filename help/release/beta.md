@@ -1,13 +1,13 @@
 ---
 title: ベータリリース
 description: Adobe Commerceベータリリースと参加方法について説明します。
-source-git-commit: 1ce0ff87291c5c3f0fd130aa351bc975f42501e3
+exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerceベータリリース
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 - 最新のセキュリティ修正
 - パフォーマンスの向上
-- GraphQLの改善
+- GraphQLの改善点
 - 一般的な品質のバグ修正
 - コミュニティへの貢献
 - との互換性をサポートするために必要な変更 [Adobe Commerce services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 Adobeは、ベータ版パッチを年に 2 回リリースします。 最初のベータ版パッチは、通常、新しいコアアプリケーションパッチリリースの一般リリースから 3 か月後にリリースされます。
 
-ベータリリースパッケージには `-betaX` サフィックス 例えば、Adobe Commerce 2.4.7 ベータリリースパッケージでは、次の命名規則を使用します。
+ベータリリースパッケージには、 `-betaX` サフィックス 例えば、Adobe Commerce 2.4.7 ベータリリースパッケージでは、次の命名規則を使用します。
 
 - `2.4.7-beta1`
 - `2.4.7-beta2`
@@ -47,7 +47,7 @@ Adobeは、ベータ版パッチを年に 2 回リリースします。 最初�
 
 ## ベータリリースアクセス
 
-Adobe Commerceベータリリースは、他のAdobe Commerceパッチリリースと同じ方法で配布されます。に対する Composer のメタパッケージとして `https://repo.magento.com`. ソースコードは、 [GitHub](https://github.com/magento/magento2).
+Adobe Commerceベータリリースは、他のAdobe Commerceパッチリリースと同じ方法で配布されます。ベータリリースは、 `https://repo.magento.com`. ソースコードは、 [GitHub](https://github.com/magento/magento2).
 
 詳しくは、 [Composer のインストールのクイックスタート](../installation/composer.md) を参照してください。
 

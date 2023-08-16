@@ -1,5 +1,5 @@
 ---
-title: 実装開始フェーズ
+title: 導入の開始フェーズ
 description: Adobe Commerceプロジェクトの立ち上げ段階に関する実装のベストプラクティスについて説明します。
 exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
 feature: Best Practices
@@ -18,7 +18,7 @@ ht-degree: 0%
 - 実稼動のデプロイメント
 - セキュリティ設定
 - サービスの検証
-- パフォーマンス監視
+- パフォーマンスの監視
 
 以下の節では、立ち上げフェーズのベストプラクティス情報について説明します。
 
@@ -31,6 +31,6 @@ ht-degree: 0%
 <!-- - [Install the latest security patches](https://helpx.adobe.com/security/products/magento/apsb22-12.html) - CTAG deck -->
 - [クラウドインフラストラクチャプロジェクトのセキュリティ設定の検証](https://devdocs.magento.com/cloud/live/site-launch-checklist.html#security-configuration)
 
-## パフォーマンス監視
+## パフォーマンスの監視
 
 - [SWAT ツールを使用して、Adobe Commerceのセキュリティと操作性を確保する](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools)

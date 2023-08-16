@@ -1,27 +1,27 @@
 ---
 title: 技術的な詳細
 description: パイプラインデプロイメントの技術的な詳細、設定のタイプ、推奨ワークフローについてお読みください。
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+exl-id: a396d241-f895-4414-92af-3abf3511e62a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 0%
 
 ---
 
-
 # 技術的な詳細
 
 このトピックでは、Commerce 2.2 以降でのパイプラインデプロイメントに関する技術的な実装の詳細について説明します。 改善点は、次の領域に分けられます。
 
-- [設定管理](#configuration-management)
-- [管理画面の変更点](#changes-in-the-admin)
+- [設定の管理](#configuration-management)
+- [管理画面での変更点](#changes-in-the-admin)
 - [cron をインストールして削除します。](#install-and-remove-cron)
 
 このトピックでは、 [推奨ワークフロー](#recommended-workflow) パイプラインデプロイメントの例と、その仕組みを理解するのに役立つ例を示します。
 
 開始する前に、 [開発、ビルドおよび実稼動システムの前提条件](../deployment/prerequisites.md).
 
-## 設定管理
+## 設定の管理
 
 開発システムと実稼動システムの設定を同期および維持できるようにするには、次のオーバーライドスキームを使用します。
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 図に示すように、設定値は次の順序で使用されます。
 
 1. 環境変数が存在する場合は、その他すべての値を上書きします。
-1. 共有設定ファイルから `env.php` および `config.php`. の値 `env.php` 値を上書き `config.php`.
+1. 共有設定ファイルから `env.php` および `config.php`. の値 `env.php` の値を上書き `config.php`.
 1. データベースに格納された値から。
 1. これらのソースに値が存在しない場合は、デフォルト値または NULL が使用されます。
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ### システム固有の設定を管理する
 
-システム固有の設定は、 `app/etc/env.php`で、 _not_ ソース管理下にある。
+システム固有の設定は、 `app/etc/env.php`です。 _not_ ソース管理下にある。
 
 開発 ( またはAdobe Commerce on cloud infrastructure integration) システムの管理者で、システム固有の設定を指定し、その設定をに書き込みます。 `env.php` の使用 [`magento app:config:dump` command](../cli/export-configuration.md).
 
@@ -59,8 +59,8 @@ ht-degree: 0%
 
 ### 管理者でロックされた設定
 
-の設定 `config.php` または `env.php` 管理者にロックされているつまり、これらの設定は管理で変更できません。
-以下を使用： [`magento config:set` または `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) コマンドを使用して、 `config.php` または `env.php` ファイル。
+の任意の設定 `config.php` または `env.php` は管理者でロックされています。つまり、管理者でこれらの設定を変更することはできません。
+以下を使用します。 [`magento config:set` または `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) コマンドを使用して、 `config.php` または `env.php` ファイル。
 
 ## コマース管理者
 
@@ -76,15 +76,15 @@ ht-degree: 0%
    - 前述のように、 `config.php` または `env.php` はロックされており、管理者では編集できません。
    - 管理ロケールは、デプロイされたテーマで使用される言語にのみ変更できます
 
-      次の図は、 **アカウント設定** > **インターフェイスロケール** リストに表示されるのは、デプロイ済みの 2 つのロケールのみです。
+     次の図は、 **アカウント設定** > **インターフェイスのロケール** リストに表示されるのは、デプロイ済みの 2 つのロケールのみです。
 
-      ![管理ロケールは、デプロイ済みのロケールにのみ変更できます](../../assets/configuration/split-deploy-admin-locale.png)
+     ![管理ロケールは、デプロイ済みのロケールにのみ変更できます](../../assets/configuration/split-deploy-admin-locale.png)
 
 - Admin を使用して、どのスコープのロケール設定も変更できません。
 
-   実稼動モードに切り替える前に、これらの変更を行うことをお勧めします。
+  実稼動モードに切り替える前に、これらの変更を行うことをお勧めします。
 
-   ロケールは、環境変数または `config:set` パスを指定した CLI コマンド `general/locale/code`.
+  ロケールは、環境変数または `config:set` パスを指定した CLI コマンド `general/locale/code`.
 
 ## cron をインストールして削除します。
 
@@ -108,10 +108,10 @@ ht-degree: 0%
 
 1. 管理者で設定します。
 
-1. 以下を使用： `magento app:config:dump` コマンドを使用して、設定をファイルシステムに書き込みます。
+1. 以下を使用します。 `magento app:config:dump` コマンドを使用して、設定をファイルシステムに書き込みます。
 
-   - `app/etc/config.php` は共有設定で、すべての設定が含まれます _例外_ 機密設定およびシステム固有の設定。 このファイルはソース管理下にある必要があります。
-   - `app/etc/env.php` は、特定のシステムに固有の設定（ホスト名やポート番号など）を含む、システム固有の設定です。 このファイルは _not_ ソース管理下にある。
+   - `app/etc/config.php` は共有設定で、すべての設定が含まれます。 _例外_ 機密設定およびシステム固有の設定。 このファイルはソース管理下にある必要があります。
+   - `app/etc/env.php` は、特定のシステムに固有の設定（ホスト名やポート番号など）を含む、システム固有の設定です。 このファイルは、 _not_ ソース管理下にある。
 
 1. 変更したコードと共有設定をソース管理に追加します。
 
@@ -131,13 +131,13 @@ ht-degree: 0%
 
 ### システムの構築
 
-ビルドシステムは、コードをコンパイルし、Commerce に登録されたテーマの静的ビューファイルを生成します。 Commerce データベースへの接続は必要ありません。必要なのは Commerce コードベースのみです。
+ビルドシステムは、コードをコンパイルし、Commerce に登録されたテーマの静的ビューファイルを生成します。 コマースデータベースへの接続は必要ありません。コマースコードベースのみが必要です。
 
 ビルドシステム上で、以下の操作を行います。
 
 1. ソース管理から共有設定ファイルを取り出します。
-1. 以下を使用： `magento setup:di:compile` コードをコンパイルするためのコマンド。
-1. 以下を使用： `magento setup:static-content:deploy -f` コマンドを使用して、静的なファイルビューファイルを更新します。
+1. 以下を使用します。 `magento setup:di:compile` コードをコンパイルするためのコマンド。
+1. 以下を使用します。 `magento setup:static-content:deploy -f` コマンドを使用して、静的なファイルビューファイルを更新します。
 1. ソース管理への更新を確認します。
 
 >[!INFO]
@@ -153,8 +153,8 @@ ht-degree: 0%
 1. メンテナンスモードを開始します。
 1. ソース管理からコードと設定の更新をプルします。
 1. Adobe Commerceを使用する場合は、キューワーカーを停止します。
-1. 以下を使用： `magento app:config:import` コマンドを使用して、実稼働システムで設定の変更を読み込みます。
-1. データベーススキーマを変更したコンポーネントをインストールした場合は、を実行します。 `magento setup:upgrade --keep-generated` をクリックします。
+1. 以下を使用します。 `magento app:config:import` コマンドを使用して、実稼働システムで設定の変更を読み込みます。
+1. データベーススキーマを変更したコンポーネントをインストールした場合は、を実行します。 `magento setup:upgrade --keep-generated` をクリックして、データベースのスキーマとデータを更新し、生成された静的ファイルを保持します。
 1. システム固有の設定を行うには、 `magento config:set` コマンドまたは環境変数。
 1. 機密設定を設定するには、 `magento config:sensitive:set` コマンドまたは環境変数。
 1. クリーン ( 別名： _フラッシュ_) キャッシュに書き込まれます。
@@ -164,10 +164,10 @@ ht-degree: 0%
 
 設定の管理に役立つ次のコマンドを提供しています。
 
-- [`magento app:config:dump`](../cli/export-configuration.md) 管理設定を次の場所に書き込む `config.php` および `env.php` （機密設定を除く）
+- [`magento app:config:dump`](../cli/export-configuration.md) 管理設定を次の場所に書き込む： `config.php` および `env.php` （機密設定を除く）
 - [`magento config:set`](../cli/set-configuration-values.md) ：本番システムのシステム固有の設定の値を設定します。
 
-   オプションの `--lock` オプションを使用して管理でオプションをロックします（つまり、設定を編集不可にします）。 設定が既にロックされている場合は、 `--lock` オプションを使用して設定を変更できます。
+  オプションの `--lock` オプションを使用して管理でオプションをロックします（つまり、設定を編集不可にします）。 設定が既にロックされている場合は、 `--lock` オプションを使用して設定を変更できます。
 
 - [`magento config:sensitive:set`](../cli/set-configuration-values.md) ：本番システムの機密設定の値を設定します。
 - [`magento app:config:import`](../cli/import-configuration.md) 設定変更を読み込む `config.php` および `env.php` を本番システムに追加します。
@@ -178,9 +178,9 @@ ht-degree: 0%
 
 ### デフォルトのロケールの変更
 
-このセクションでは、 `config.php` デフォルトの重み付け単位を変更する場合は、**ストア** /設定/ **設定** /一般/ **一般** > **ロケールオプション**) をクリックします。
+このセクションでは、 `config.php` デフォルトの重み付け単位を変更する場合は、Admin (**ストア** /設定/ **設定** /一般/ **一般** > **ロケールオプション**) をクリックします。
 
-管理者に変更を加えた後、を実行します。 `bin/magento app:config:dump` 値を書き込む `config.php`. 値が `general` 配列の下 `locale` 次のスニペットとして `config.php` 表示：
+管理者に変更を加えたら、次を実行します。 `bin/magento app:config:dump` 値を書き込む `config.php`. 値が `general` 配列の下に `locale` 次のスニペットとして `config.php` 表示：
 
 ```php
 'general' =>
@@ -194,21 +194,21 @@ ht-degree: 0%
     )
 ```
 
-### いくつかの設定を変更
+### 複数の設定を変更
 
 このセクションでは、次の設定変更について説明します。
 
 - Web サイト、ストア、ストア表示 (**ストア** /設定/ **すべてのストア**)
-- デフォルトの E メールドメインの変更 (**ストア** /設定/ **設定** /顧客 > **顧客設定**)
+- デフォルトの E メールドメインの変更 (**ストア** /設定/ **設定** /お客様 > **顧客設定**)
 - PayPal API ユーザー名と API パスワードの設定 (**ストア** /設定/ **設定** > 販売 > **支払い方法** > **PayPal** > **必要な PayPal 設定**)
 
-管理者に変更を加えた後、を実行します。 `bin/magento app:config:dump` を使用します。 今回は、すべての変更が `config.php`;実際、このファイルに書き込まれるのは、次のスニペットが示すように、web サイト、ストア、ストアビューのみです。
+管理者に変更を加えたら、次を実行します。 `bin/magento app:config:dump` を使用します。 今回は、すべての変更が `config.php`；実際には、次のスニペットが示すように、このファイルに書き込まれるのは、Web サイト、ストア、ストアビューのみです。
 
 ### config.php
 
 `config.php` 次を含む：
 
-- Web サイト、ストア、ストアの表示を変更します。
+- Web サイト、ストア、ストアの表示に対する変更。
 - システム固有以外の検索エンジン設定
 - 機密性の低い PayPal 設定
 - 以下から除外された機密設定を通知するコメント `config.php`

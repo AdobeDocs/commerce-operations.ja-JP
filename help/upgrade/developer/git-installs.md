@@ -1,13 +1,13 @@
 ---
 title: Git ベースのインストールのアップグレード
 description: Git リポジトリから複製したAdobe CommerceまたはMagento Open Sourceのインストールをアップグレードします。
-source-git-commit: 7bcfbc4483f4b6d4c1a5e852adbd1cd81bc136b7
+exl-id: a8c42857-7221-4b21-8377-4bfb6308c418
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '122'
 ht-degree: 0%
 
 ---
-
 
 # Git ベースのインストールのアップグレード
 
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 {{$include /help/_includes/server-login.md}}
 
-1. 変更を `composer.json` ファイルを上書きする理由は、次の手順で上書きされるからです。
+1. 変更内容を `composer.json` ファイルを上書きする理由は、次の手順で上書きされるからです。
 
-1. のバックアップを作成します `composer.json` ファイル。
+1. のバックアップを作成します。 `composer.json` ファイル。
 
    ```bash
    cp composer.json composer.json.old
@@ -33,7 +33,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >If `git pull origin develop` 失敗： [トラブルシューティング](https://support.magento.com/hc/en-us/articles/360034229872).
+   >次の場合 `git pull origin develop` 失敗： [トラブルシューティング](https://support.magento.com/hc/en-us/articles/360034229872).
 
 1. の差分とマージ `composer.json.old` ファイルに `composer.json` ファイル。
 

@@ -14,19 +14,19 @@ ht-degree: 0%
 
 {{ee-only}}
 
-を実装しているAdobe Commerceのお客様向け [データベースを分割](multi-master.md)以下のトピックでは、単一のデータベースを元に戻す（または元のデータベースに戻す）方法について説明します。 現在 Split Database を使用しているAdobe Commerceの商人に対しては、2.4.2 以降へのアップグレードを計画し、これらの手順を確認すること、および [お知らせ](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) 分割データベースの廃止予定について説明します。
+を実装しているAdobe Commerceのお客様向け [データベースを分割](multi-master.md)以下のトピックでは、単一のデータベースを元に戻す（または元のデータベースに戻す）方法について説明します。 現在 Split Database を使用しているAdobe Commerceの商人に対しては、2.4.2 以降へのアップグレードを計画し、これらの手順を確認することをお勧めします。 [お知らせ](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) 分割データベースの廃止予定について説明します。
 
 分割データベースから単一のデータベースに戻すには、 `magento_quote` および `magento_sales` データベースを読み込む前に `magento_main` データベース。
 
 この例では、3 つのデータベースすべてにログインします。同じホスト (`magento2-mysql`) を「root」ユーザーとして追加します。 これらの値は、データベースに適した値に置き換える必要があります。
 
-1. のバックアップを作成する `magento_quote` データベース：
+1. のバックアップを作成します。 `magento_quote` データベース：
 
    ```bash
    mysqldump -h "magento2-mysql" -u root -p magento_quote > ./quote.sql
    ```
 
-1. のバックアップを作成する `magento_sales` データベース：
+1. のバックアップを作成します。 `magento_sales` データベース：
 
    ```bash
    mysqldump -h "magento2-mysql" -u root -p magento_sales > ./sales.sql
@@ -56,14 +56,14 @@ ht-degree: 0%
    mysql -h "magento2-mysql" -u root -p -e "DROP DATABASE magento_quote;"
    ```
 
-1. 次のデプロイメント設定を削除： `checkout` および `sales` 内 `connections` および `resources` セクション `env.php` ファイル。
+1. 次のデプロイメント設定を削除： `checkout` および `sales` （内） `connections` および `resources` セクション `env.php` ファイル。
 1. 外部キーを復元：
 
    ```bash
    bin/magento setup:upgrade
    ```
 
-## 作業内容の検証
+## 作業内容を確認する
 
 単一のデータベースの実装が正しく動作していることを確認するには、次のタスクを実行し、データが `magento_main` データベーステーブルを [phpMyAdmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 

@@ -5,7 +5,7 @@ feature: Install
 source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '178'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -42,12 +42,12 @@ ht-degree: 0%
    - [インストールの確認](next-steps/verify.md)
    - [アプリケーションの設定](next-steps/configuration.md)
    - [umask の設定（オプション）](next-steps/set-umask.md)
-   - サンプルデータをインストール（オプション） {#sample-data}
+   - サンプルデータをインストールする（オプション） {#sample-data}
       - [概要](sample-data/overview.md)
       - [Composer パッケージのダウンロード](sample-data/composer-packages.md)
       - [Git リポジトリの複製](sample-data/git-repositories.md)
       - [モジュールを削除または更新](sample-data/remove-or-update.md)
-- Tutorials {#tutorials}
+- チュートリアル {#tutorials}
    - [ファイル・システム、メディア、データベースのバックアップとロールバック](tutorials/backup.md)
    - [データベースのステータスを確認](tutorials/database-status.md)
    - [メッセージ消費者行動の設定](tutorials/message-consumers.md)

@@ -1,13 +1,13 @@
 ---
 title: セキュリティとコンプライアンス
 description: Adobe CommerceまたはMagento Open Sourceプロジェクトのセキュリティ、プライバシー、業界コンプライアンスの各リソースについて説明します。
-source-git-commit: 1a608e8a5986026d5a187dc8cbd358fed2db5d9e
+exl-id: 8c8cb369-33da-4c4c-bcab-a95d5ec97cc1
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
 
 ---
-
 
 # セキュリティとコンプライアンス
 
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ## セキュリティ
 
-- [Adobe製品のセキュリティ](https://helpx.adobe.com/security.html):Adobe Commerceの最新のパッチ、セキュリティアップデート、ベストプラクティスについて説明します。
-- [Adobeセキュリティセンター](https://www.adobe.com/trust.html):運用状態、セキュリティ、プライバシー、およびAdobeクラウドサービスのコンプライアンスに関する最新情報。
+- [Adobe製品のセキュリティ](https://helpx.adobe.com/security.html):Adobe Commerceの最新のパッチ、セキュリティ更新、ベストプラクティスです。
+- [Adobeトラストセンター](https://www.adobe.com/trust.html)：運用状態、セキュリティ、プライバシーおよび Adobe Cloud Services への準拠に関して利用できる最新のAdobe。
 
 ## 準拠
 

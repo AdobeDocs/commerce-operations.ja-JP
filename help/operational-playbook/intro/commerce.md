@@ -17,9 +17,9 @@ Adobe Commerceはオープンコマースイノベーションの主要なプラ
 
 _Magento Open Source_ は、以前は「Magento・コミュニティ」と呼ばれていた無料版です。 自社のサーバーまたはホスティングプロバイダーで、任意のプラットフォームをダウンロード、カスタマイズ、実行できます。
 
-多くの商人は、低コストでオープンなMagento Open Sourceのために、自然を使用します。 開発者にとって、Magento Open SourceやAdobe Commerce上で開発しても、実際には問題にはなりません。 ただし、Adobe Commerceには、すぐに使用できる、より多くの組み込み機能があります。
+多くの商人は、低コストでオープンなMagento Open Sourceのために、自然を使用しています。 開発者にとって、Magento Open SourceやAdobe Commerce上で開発しても、実際には問題にはなりません。 ただし、Adobe Commerceには、すぐに使用できる、より多くの組み込み機能があります。
 
-_Adobe Commerce_ は有料版です。旧称：MagentoEnterprise。 プレミアムバージョンでは、多くの追加機能があります。
+_Adobe Commerce_ は有料版です。旧称は EnterpriseMagentoです。 プレミアムバージョンでは、多くの追加機能があります。
 
 Adobe Commerceはオンプレミスでホストできます。 そのため、独自のサーバー上でローカルにホストして開発するか、ホスティングプロバイダーを選択することができます。 また、クラウドインフラストラクチャ上のAdobe Commerce(Adobeが提供するクラウドホストソリューション ) もあります。 「ソリューション」セクションでは、ホストソリューション（SaaS、オンプレミスなど）と PaaS ホスティングソリューションの違いをより深く調べます。
 

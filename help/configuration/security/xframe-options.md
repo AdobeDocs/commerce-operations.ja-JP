@@ -14,14 +14,14 @@ ht-degree: 0%
 
 を防ぐには [クリックジャッキング](https://owasp.org/www-community/attacks/Clickjacking) を使用する場合、 [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) ストアフロントへのリクエストの HTTP リクエストヘッダー。
 
-この `X-Frame-Options` ヘッダーを使用すると、ブラウザーでページを `<frame>`, `<iframe>`または `<object>` 次のように指定します。
+The `X-Frame-Options` ヘッダーを使用すると、ブラウザーでページを `<frame>`, `<iframe>`または `<object>` 次のように指定します。
 
-- `DENY`:ページはフレームに表示できません。
-- `SAMEORIGIN`:（デフォルト）ページは、ページ自体と同じオリジンのフレームにのみ表示できます。
+- `DENY`：ページをフレームに表示できません。
+- `SAMEORIGIN`:（デフォルト）ページは、ページ自体と同じ接触チャネル上のフレームにのみ表示できます。
 
 >[!WARNING]
 >
->この `ALLOW-FROM <uri>` コマースがサポートされているブラウザーがサポートしなくなったので、オプションは非推奨になりました。 詳しくは、 [ブラウザーの互換性](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#browser_compatibility).
+>The `ALLOW-FROM <uri>` コマースがサポートされているブラウザーがサポートしなくなったので、オプションは非推奨になりました。 詳しくは、 [ブラウザーの互換性](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#browser_compatibility).
 
 >[!WARNING]
 >
@@ -35,11 +35,11 @@ ht-degree: 0%
 'x-frame-options' => 'SAMEORIGIN',
 ```
 
-変更を `env.php` ファイルを有効にします。
+の変更を再デプロイ `env.php` ファイルを有効にします。
 
 >[!TIP]
 >
->セキュリティの高い `env.php` ファイルの内容が、管理者に値を設定する場合とは異なります。
+>セキュリティの高い方法で `env.php` ファイルの内容が、管理者に値を設定する場合とは異なります。
 
 ## 次の設定を確認： `X-Frame-Options`
 

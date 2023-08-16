@@ -6,7 +6,7 @@ exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 0%
 
 **サーバー側の画像のサイズ変更用に Commerce を設定するには**:
 
-1. 内 _管理者_ パネル、クリック **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**.
+1. Adobe Analytics の _管理者_ パネル、クリック **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**.
 
 1. 右側のウィンドウで、を展開します。 **[!UICONTROL Url options]**.
 
-1. 内 _カタログメディア URL 形式_ セクション、クリア **[!UICONTROL Use system value]**.
+1. Adobe Analytics の _カタログメディア URL 形式_ セクション、クリア **[!UICONTROL Use system value]**.
 
 1. を選択します。 `Image optimization based on query parameters` URL: **_カタログメディア URL 形式_** フィールドに入力します。
 
@@ -42,11 +42,11 @@ ht-degree: 0%
 
 ## Nginx の設定
 
-サーバー側での画像のサイズ変更の設定を続けるには、 `nginx.conf` ファイルを作成し、 `proxy_pass` 選択したアダプタの値。
+サーバー側での画像のサイズ変更の設定を続行するには、 `nginx.conf` ファイルを作成し、 `proxy_pass` 選択したアダプタの値。
 
 **Nginx で画像のサイズを変更するには**:
 
-1. のインストール [Nginx 画像フィルタモジュール][nginx-module].
+1. をインストールします。 [Nginx 画像フィルタモジュール][nginx-module].
 
    ```shell
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;

@@ -16,10 +16,10 @@ ht-degree: 0%
 このトピックでは、次の目的で使用できる高度な設定コマンドについて説明します。
 
 - コマンドラインから任意の設定オプションを設定します。
-- オプションで、設定オプションをロックして、管理で値を変更できないようにします
+- オプションで、設定オプションをロックして、管理で値を変更できないようにします。
 - 管理者でロックされている設定オプションの変更
 
-これらのコマンドを使用して、コマース設定を手動で設定するか、スクリプトを使用して設定できます。 設定オプションは、 _設定パス_( これは、 `/`設定オプションを一意に識別する区切り文字列。 設定パスは、次の参照で確認できます。
+これらのコマンドを使用して、コマース設定を手動で設定するか、スクリプトを使用して設定できます。 設定オプションは、 _設定パス_( これは、 `/`その設定オプションを一意に識別する区切り文字列。 設定パスは、次の参照で確認できます。
 
 - [機密性の高いシステム固有の設定パスの参照](../reference/config-reference-sens.md)
 - [支払設定パスの参照](../reference/config-reference-payment.md)
@@ -34,9 +34,9 @@ ht-degree: 0%
 
 次のコマンドを使用します。
 
-- `bin/magento config:set` 設定パスによって、機密性のない設定値を設定します
-- `bin/magento config:sensitive:set` 設定パスによって機密設定値を設定します
-- `bin/magento config:show` は、保存された設定値を表示します。暗号化された設定の値は、アスタリスクとして表示されます
+- `bin/magento config:set` 設定パスによって、機密性のない設定値を設定します。
+- `bin/magento config:sensitive:set` 設定パスによって機密設定値を設定します。
+- `bin/magento config:show` 保存された設定値を表示します。暗号化された設定の値はアスタリスクとして表示されます。
 
 ## 前提条件
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
   デフォルトのスコープの設定値を設定する場合は、何もする必要はありません。
 
-### 設定パスを検索
+### 設定パスを見つける
 
 次の参照を参照してください。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
    ![管理者から Web サイトまたはストアビューコードを取得する](../../assets/configuration/website-code.png)
 
-1. 続行 [値を設定](#set-values).
+1. 次で続行 [値を設定](#set-values).
 
 **データベース内のスコープコードを検索するには**:
 
@@ -129,22 +129,22 @@ bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path value
 
 次の表に、 `set` コマンドパラメータ：
 
-| パラメータ | 説明 |
+| パラメーター | 説明 |
 | --- | --- |
 | `--scope` | 設定の範囲。 指定できる値は次のとおりです。 `default`, `website`または `store`. デフォルトはです。 `default`. |
 | `--scope-code` | 設定のスコープコード（Web サイトコードまたはストアビューコード） |
 | `-e or --lock-env` | 値をロックして管理で編集できなくするか、管理で既にロックされている設定を変更します。 このコマンドは、値を `<Commerce base dir>/app/etc/env.php` ファイル。 |
-| `-c or --lock-config` | 値をロックして管理で編集できなくするか、管理で既にロックされている設定を変更します。 このコマンドは、値を `<Commerce base dir>/app/etc/config.php` ファイル。 この `--lock-config` オプションが上書きされます `--lock-env` 両方のオプションを指定した場合。 |
+| `-c or --lock-config` | 値をロックして管理で編集できなくするか、管理で既にロックされている設定を変更します。 このコマンドは、値を `<Commerce base dir>/app/etc/config.php` ファイル。 The `--lock-config` オプションが上書きされます `--lock-env` 両方のオプションを指定した場合。 |
 | `path` | _必須_. 設定パス |
 | `value` | _必須_. 設定の値 |
 
 >[!INFO]
 >
->Commerce 2.2.4 以降、 `--lock-env` および `--lock-config` オプションは `--lock` オプション。
+>Commerce 2.2.4 以降、 `--lock-env` および `--lock-config` オプションは、 `--lock` オプション。
 >
->次の `--lock-env` または `--lock-config` オプションを使用して値を設定または変更する場合は、 [`bin/magento app:config:import` command](../cli/import-configuration.md) をクリックして、管理者またはストアフロントにアクセスする前に設定を読み込みます。
+>を使用する場合、 `--lock-env` または `--lock-config` オプションを使用して値を設定または変更する場合は、 [`bin/magento app:config:import` command](../cli/import-configuration.md) をクリックして、管理者またはストアフロントにアクセスする前に設定を読み込みます。
 
-誤った設定パスを入力した場合、このコマンドはエラーを返します
+誤った設定パスを入力した場合、このコマンドはエラーを返します。
 
 ```text
 The "wrong/config/path" does not exist
@@ -181,19 +181,19 @@ bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url ht
 
 ### 管理者で編集できない設定値を設定
 
-次の `--lock-env`  オプションを次のように指定すると、設定値はに保存されます。 `<Commerce base dir>/app/etc/env.php` また、管理でこの値を編集するためのフィールドを無効にします。
+を使用する場合、 `--lock-env`  オプションを次のように指定すると、設定値はに保存されます。 `<Commerce base dir>/app/etc/env.php` また、管理でこの値を編集するためのフィールドを無効にします。
 
 ```bash
 bin/magento config:set --lock-env --scope=stores --scope-code=default web/unsecure/base_url http://example3.com
 ```
 
-以下を使用して、 `--lock-env` Commerce がインストールされていない場合に設定値を設定するオプション。 ただし、デフォルトのスコープに対してのみ値を設定できます。
+以下を使用すると、 `--lock-env` Commerce がインストールされていない場合に設定値を設定するオプション。 ただし、デフォルトのスコープに対してのみ値を設定できます。
 
 >[!INFO]
 >
->この `env.php` ファイルはシステム固有です。 別のシステムに転送しないでください。 これを使用して、データベースの設定値を上書きできます。 たとえば、別のシステムからデータベースダンプを取り出し、 `base_url` およびその他の値を使用することで、データベースを変更する必要がなくなります。
+>The `env.php` ファイルはシステム固有です。 別のシステムに転送しないでください。 これを使用して、データベースの設定値を上書きできます。 たとえば、別のシステムからデータベースダンプを取り出し、 `base_url` およびその他の値を使用することで、データベースを変更する必要がなくなります。
 
-次の `--lock-config` オプションを使用する場合、設定値は `<Commerce base dir>/app/etc/config.php`. 管理者でこの値を編集するためのフィールドは無効です。
+を使用する場合、 `--lock-config` オプションを使用する場合、設定値は `<Commerce base dir>/app/etc/config.php`. 管理者でこの値を編集するためのフィールドは無効です。
 
 ```bash
 bin/magento config:set --lock-config --scope=stores --scope-code=default web/url/use_store 1
@@ -221,7 +221,7 @@ bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 
 >[!INFO]
 >
->この `bin/magento config:show` コマンドは、任意の [暗号化された値](../reference/config-reference-sens.md) 一連のアスタリスクとして： `******`.
+>The `bin/magento config:show` コマンドは、任意の [暗号化された値](../reference/config-reference-sens.md) 一連のアスタリスクとして： `******`.
 
 ### 例
 
@@ -278,7 +278,7 @@ bin/magento config:show --scope=websites --scope-code=base web/unsecure/base_url
 web/unsecure/base_url - http://example-for-website.com/
 ```
 
-**のベース URL を表示するには、以下を実行します。 `default` ストア**:
+**のベース URL を表示するには、以下を実行します。 `default` 保存する**:
 
 ```bash
 bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_url

@@ -27,7 +27,7 @@ OpenSearch とのストップワードの使用Elasticsearchについて詳し�
 
 ## ストップワードの設定
 
-ストップワードは、 `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` ディレクトリ。 Adobe CommerceとMagento Open Sourceには、デフォルトのロケールのストップワードを含む 1 つの CSV ファイルと、追加のファイルが付属しています。 `stopwords.csv`：別の CSV ファイルで表されないロケールのストップワードを含む
+ストップワードは、 `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` ディレクトリ。 Adobe CommerceとMagento Open Sourceには、デフォルトのロケールのストップワードを含む 1 つの CSV ファイルと、追加のファイルが付属しています。 `stopwords.csv`：別の CSV ファイルで表されないロケールのストップワードを含みます。
 
 stopwords ファイルのキャッシュのデフォルトの有効期間は 15 分です。
 
@@ -51,9 +51,9 @@ stopwords ファイルのキャッシュのデフォルトの有効期間は 15 
 
    - コマンドライン：ファイルシステムの所有者として、次のコマンドを入力します。
 
-      ```bash
-      php <magento_root>/bin/magento cache:clean config
-      ```
+     ```bash
+     php <magento_root>/bin/magento cache:clean config
+     ```
 
 1. ストアフロントで用語を検索して、結果を確認します。
 
@@ -63,7 +63,7 @@ stopwords ファイルのキャッシュのデフォルトの有効期間は 15 
 
 1. Commerce サーバーにログインするか、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
 
-1. テキストエディタを使用して、という名前のストップワードファイルを作成します。 `stopwords_<locale_code>.csv` 内 `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` ディレクトリ。
+1. テキストエディタを使用して、という名前のストップワードファイルを作成します。 `stopwords_<locale_code>.csv` （内） `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` ディレクトリ。
 
    例えば、イタリア語ロケールのストップワードを作成するには、ファイルに名前を付けます `stopwords_it_IT.csv`.
 
@@ -89,9 +89,9 @@ stopwords ファイルのキャッシュのデフォルトの有効期間は 15 
 
    - コマンドライン：ファイルシステムの所有者として、次のコマンドを入力します。
 
-      ```bash
-      php <magento_root>/bin/magento magento cache:clean config
-      ```
+     ```bash
+     php <magento_root>/bin/magento magento cache:clean config
+     ```
 
 1. ストアフロントで用語を検索して、結果を確認します。
 
@@ -138,6 +138,6 @@ stopwords ファイルのキャッシュのデフォルトの有効期間は 15 
    </type>
    ```
 
-1. モジュールで、ディレクトリを作成します。 `etc/stopwords`を作成します。
+1. モジュールで、ディレクトリを作成します。 `etc/stopwords`を作成し、対応する CSV ファイルに置き換えます。
 
 1. 変更をに保存します。 `di.xml` をクリックし、テキストエディタを終了します。

@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->データベース接続は、既に `config.php`;参照 [設定の書き出し](../cli/export-configuration.md). それ以外の場合は、データベース接続が必要です。
+>データベース接続は、既に `config.php`を参照してください。 [設定の書き出し](../cli/export-configuration.md). それ以外の場合は、データベース接続が必要です。
 
 >[!INFO]
 >
@@ -75,7 +75,7 @@ Composer をインストールするには：
 
 ### ビルドシステムを設定する
 
-ビルドシステムを設定するには：
+ビルドシステムを設定するには、次の手順に従います。
 
 1. ビルドシステムに、ファイルシステムの所有者としてログインするか、ファイルシステムの所有者に切り替えます。
 1. ソース管理からコマースコードを取得します。
@@ -99,7 +99,7 @@ Composer をインストールするには：
    chown -R <Commerce file system owner name>:<web server username> .
    ```
 
-   例：
+   以下に例を挙げます。
 
    ```bash
    chown -R commerce-username:apache .

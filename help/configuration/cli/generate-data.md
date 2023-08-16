@@ -6,7 +6,7 @@ exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
 source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
 source-wordcount: '749'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -20,22 +20,22 @@ ht-degree: 8%
 
 作成するデータの量は _プロファイル_ （小、中、大、特大）。 プロファイルは、 `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` ディレクトリ。
 
-例： `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
+例：`/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
 次の図は、 _小_ プロファイル：
 
 ![生成されたデータを含むサンプルストアフロント](../../assets/configuration/generate-data.png)
 
-次の表に、データジェネレータープロファイルの詳細を示します。小、中、大、特大
+次の表に、データジェネレータープロファイルの詳細を示します。小、中、大、特大。
 
-| パラメータ | 小さなプロファイル | メディアプロファイル | マルチサイトプロファイル（中） | 大きなプロファイル | 特大のプロファイル |
+| パラメーター | 小さなプロファイル | メディアプロファイル | マルチサイトプロファイル（中） | 大きなプロファイル | 特大のプロファイル |
 | --- | --- | --- | --- | --- | --- |
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
 | `store_views` | 1 | 3 | 50 | 5 | 5 |
 | `simple_products` | 800 | 24,000 | 4,000 | 300,000 | 600,000 |
-| `configurable_products` | 16 と 24 のオプション | 640、24 オプション | 800 （オプション 24）、79 （オプション 200） | 8,000（24 個のオプション） | 16,000、24 オプション |
-| `product_images` | 1 製品あたり 100 画像/3 画像 | 1 製品あたり 1,000 画像/3 画像 | 1 製品あたり 1,000 画像/3 画像 | 2,000 画像/製品あたり 3 画像 | 2,000 画像/製品あたり 3 画像 |
+| `configurable_products` | 16 と 24 のオプション | 640（24 オプション） | 800 （オプション 24）、79 （オプション 200） | 8,000（24 個のオプション） | 16,000、24 オプションあり |
+| `product_images` | 1 製品あたり 100 画像/3 画像 | 1 製品あたり 1,000 枚の画像/ 3 枚の画像 | 1 製品あたり 1,000 枚の画像/ 3 枚の画像 | 2,000 画像/製品あたり 3 画像 | 2,000 画像/製品あたり 3 画像 |
 | `categories` | 30 | 300 | 100 | 3,000 | 6,000 |
 | `categories_nesting_level` | 3 | 3 | 3 | 5 | 5 |
 | `catalog_price_rules` | 20 | 20 | 20 | 20 | 20 |
@@ -62,7 +62,7 @@ bin/magento setup:perf:generate-fixtures <path-to-profile>
 
 ここで、 `<path-to-profile>` プロファイルの絶対ファイルシステムパスと名前を指定します。
 
-例：
+以下に例を挙げます。
 
 ```bash
 bin/magento setup:perf:generate-fixtures /var/www/html/magento2/setup/performance-toolkit/profiles/ce/small.xml
@@ -97,7 +97,7 @@ Generating simple products...  done in <time>
 ... more ...
 ```
 
-## 性能器具
+## パフォーマンス器具
 
 ### 管理者ユーザー
 
@@ -125,7 +125,7 @@ Generating simple products...  done in <time>
 
 ### 製品のバンドル
 
-バンドル製品を生成します。 生成されたバンドルの選択は、カタログに個別に表示されません。 製品は、カテゴリや Web サイトごとに均等に分散されます。 If  `assign_entities_to_all_websites` プロファイルを `1`. 製品はすべての Web サイトに割り当てられます。
+バンドル製品を生成します。 生成されたバンドルの選択は、カタログに個別に表示されません。 製品は、カテゴリや Web サイトごとに均等に分散されます。 次の場合  `assign_entities_to_all_websites` プロファイルをから `1`. 製品はすべての Web サイトに割り当てられます。
 
 XML プロファイルノード：
 
@@ -163,7 +163,7 @@ XML プロファイルノード：
 
 ### カテゴリ
 
-カテゴリを生成します。 If `assign_entities_to_all_websites` が `0`の場合、すべてのカテゴリはルートカテゴリごとに均等に分散されます。それ以外の場合、すべてのカテゴリが 1 つのルートカテゴリに割り当てられます。
+カテゴリを生成します。 次の場合 `assign_entities_to_all_websites` が `0`の場合、すべてのカテゴリがルートカテゴリごとに均等に分散されます。均等分散されない場合、すべてのカテゴリが 1 つのルートカテゴリに割り当てられます。
 
 XML プロファイルノード：
 
@@ -195,108 +195,108 @@ XML プロファイルノード：
 
 ### 設定可能な製品
 
-設定可能な製品を生成します。 生成された設定可能なオプションは、カタログに個別に表示されません。 製品は、カテゴリや Web サイトごとに均等に分散されます。 If `assign_entities_to_all_websites` が `1`を使用する場合、製品はすべての Web サイトに割り当てられます。
+設定可能な製品を生成します。 生成された設定可能なオプションは、カタログに個別に表示されません。 製品は、カテゴリや Web サイトごとに均等に分散されます。 次の場合 `assign_entities_to_all_websites` が `1`を使用する場合、製品はすべての Web サイトに割り当てられます。
 
 次の XML ノード形式がサポートされています。
 
 - 既定の属性セットと定義済みの属性セットごとの配分：
 
-   ```xml
-   <!-- Number of configurable products -->
-   <configurable_products>{int}</configurable_products>
-   ```
+  ```xml
+  <!-- Number of configurable products -->
+  <configurable_products>{int}</configurable_products>
+  ```
 
 - 既存の属性セットに基づいて製品を生成：
 
-   ```xml
-   <configurable_products>
-   
-       <config>
-               <!-- Existing attribute set name -->
-               <attributeSet>{string}</attributeSet>
-   
-               <!-- Configurable sku pattern with %s -->
-               <sku>{string}</sku>
-   
-               <!-- Number of configurable products -->
-               <products>{int}</products>
-   
-               <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
-               <category>[{string}]</category>
-   
-               <!-- Type of Swatch attribute e.g. color|image -->
-               <swatches>{string}</swatches>
-       </config>
-   
-   <!-- ... more entries ... -->
-   </configurable_products>
-   ```
+  ```xml
+  <configurable_products>
+  
+      <config>
+              <!-- Existing attribute set name -->
+              <attributeSet>{string}</attributeSet>
+  
+              <!-- Configurable sku pattern with %s -->
+              <sku>{string}</sku>
+  
+              <!-- Number of configurable products -->
+              <products>{int}</products>
+  
+              <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
+              <category>[{string}]</category>
+  
+              <!-- Type of Swatch attribute e.g. color|image -->
+              <swatches>{string}</swatches>
+      </config>
+  
+  <!-- ... more entries ... -->
+  </configurable_products>
+  ```
 
 - 指定した数の属性とオプションを持つ動的に作成された属性セットに基づいて、製品を生成します。
 
-   ```xml
-   <configurable_products>
-   
-       <config>
-           <!-- Number of attributes in configurable product -->
-           <attributes>{int}</attributes>
-   
-           <!-- Number of options per attribute -->
-           <options>{int}</options>
-   
-           <!-- Configurable sku pattern with %s -->
-           <sku>{string}</sku>
-   
-           <!-- Number of configurable products -->
-           <products>{int}</products>
-   
-           <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
-           <category>[{string}]</category>
-   
-           <!-- Type of Swatch attribute e.g. color|image -->
-           <swatches>{string}</swatches>
-       </config>
-   
-       <!-- ... more entries ... -->
-   </configurable_products>
-   ```
+  ```xml
+  <configurable_products>
+  
+      <config>
+          <!-- Number of attributes in configurable product -->
+          <attributes>{int}</attributes>
+  
+          <!-- Number of options per attribute -->
+          <options>{int}</options>
+  
+          <!-- Configurable sku pattern with %s -->
+          <sku>{string}</sku>
+  
+          <!-- Number of configurable products -->
+          <products>{int}</products>
+  
+          <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
+          <category>[{string}]</category>
+  
+          <!-- Type of Swatch attribute e.g. color|image -->
+          <swatches>{string}</swatches>
+      </config>
+  
+      <!-- ... more entries ... -->
+  </configurable_products>
+  ```
 
 - 各属性ごとに指定した設定で動的に作成された属性セットに基づいて、製品を生成します。
 
-   ```xml
-   <configurable_products>
-   
-       <config>
-           <attributes>
-               <!-- Configuration for a first attribute -->
-               <attribute>
-                   <!-- Amount of options per attribute -->
-                   <options>{int}</options>
-   
-                   <!-- Type of Swatch attribute -->
-                   <swatches>{string}</swatches>
-               </attribute>
-   
-               <!-- Configuration for a second attribute -->
-               <attribute>
-                   <!-- Amount of options per attribute -->
-                   <options>{int}</options>
-               </attribute>
-           </attributes>
-   
-           <!-- Configurable sku pattern with %s -->
-           <sku>{string}</sku>
-   
-           <!-- Number of configurable products -->
-           <products>{int}</products>
-   
-           <!-- Category Name. Optional. By default, the category name from Categories fixture will be used -->
-           <category>[{string}]</category>
-       </config>
-   
-       <!-- ... more entries ... -->
-   </configurable_products>
-   ```
+  ```xml
+  <configurable_products>
+  
+      <config>
+          <attributes>
+              <!-- Configuration for a first attribute -->
+              <attribute>
+                  <!-- Amount of options per attribute -->
+                  <options>{int}</options>
+  
+                  <!-- Type of Swatch attribute -->
+                  <swatches>{string}</swatches>
+              </attribute>
+  
+              <!-- Configuration for a second attribute -->
+              <attribute>
+                  <!-- Amount of options per attribute -->
+                  <options>{int}</options>
+              </attribute>
+          </attributes>
+  
+          <!-- Configurable sku pattern with %s -->
+          <sku>{string}</sku>
+  
+          <!-- Number of configurable products -->
+          <products>{int}</products>
+  
+          <!-- Category Name. Optional. By default, the category name from Categories fixture will be used -->
+          <category>[{string}]</category>
+      </config>
+  
+      <!-- ... more entries ... -->
+  </configurable_products>
+  ```
 
 ### 顧客
 
@@ -346,7 +346,7 @@ XML プロファイルノード：
 </indexer>
 ```
 
-### 注文
+### 購入回数
 
 様々な種類の注文項目の数を設定可能にして注文を生成します。 オプションで、生成された注文に対して非アクティブな見積もりを生成します。
 
@@ -382,7 +382,7 @@ XML プロファイルノード：
 
 単純な製品を生成します。 製品は、デフォルトおよび事前定義の属性セットごとに配布されます。 プロファイルで追加の属性セットが次のように指定されている場合： `<product_attribute_sets>{int}</product_attribute_sets>`、製品は、追加の属性セットごとに配布されます。
 
-製品は、カテゴリや Web サイトごとに均等に分散されます。 If `assign_entities_to_all_websites` が `1`を使用する場合、製品はすべての Web サイトに割り当てられます。
+製品は、カテゴリや Web サイトごとに均等に分散されます。 次の場合 `assign_entities_to_all_websites` が `1`を使用する場合、製品はすべての Web サイトに割り当てられます。
 
 XML プロファイルノード：
 
@@ -444,6 +444,6 @@ XML プロファイルノード：
 
 - `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml` — 製品の短い設定と完全な説明。 この古い実装は、後方互換性を確保するために提供されています。
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml` — 短く完全な説明を含む検索用語の数が少ない
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml` — 短く、完全な説明を含む検索用語の数が少ない
 
 - `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml` — 短く完全な説明で使用する検索用語の数が多い。

@@ -16,14 +16,14 @@ Vanish を使用するように Commerce を設定するには：
 
 1. 管理者として管理者にログインします。
 1. クリック **[!UICONTROL Stores]** /設定/ **設定** > **詳細** > **システム** > **フルページキャッシュ**.
-1. 次の **[!UICONTROL Caching Application]** リスト、クリック **ワニスのキャッシュ**.
+1. 次から： **[!UICONTROL Caching Application]** リスト、クリック **ワニスのキャッシュ**.
 1. 値を **[!UICONTROL TTL for public content]** フィールドに入力します。
 1. 展開 **[!UICONTROL Varnish Configuration]** 次の情報を入力します。
 
    | フィールド | 説明 |
    | ----- | ----------- |
-   | アクセスリスト | 完全修飾ホスト名、IP アドレス、または [クラスレスドメイン間ルーティング (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) 表記法コンテンツを無効にする IP アドレス範囲。 詳しくは、 [ワニスキャッシュのパージ](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
-   | バックエンドホスト | 完全修飾ホスト名または IP アドレスを入力し、Vanish のリッスンポートを入力します。 _バックエンド_ または _接触元サーバー_;つまり、Vanish コンテンツを提供するサーバが高速化します。 通常、これは Web サーバーです。 詳しくは、 [Vanish キャッシュバックエンドサーバ](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
+   | アクセスリスト | 完全修飾ホスト名、IP アドレス、または [クラスレスドメイン間ルーティング (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) 表記法コンテンツを無効にする IP アドレスの範囲。 詳しくは、 [ワニスキャッシュのパージ](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
+   | バックエンドホスト | 完全修飾ホスト名または IP アドレスを入力し、Vanish のリッスンポートを入力します。 _backend_ または _接触元サーバー_；つまり、Varnish コンテンツを提供するサーバーが高速化します。 通常、これは Web サーバーです。 詳しくは、 [Vanish キャッシュバックエンドサーバ](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | バックエンドポート | オリジンサーバーのリスンポート。 |
    | 猶予期間 | バックエンドが応答しない場合に Vanrish が古いコンテンツを提供する時間は、猶予期間によって決まります。 デフォルト値は 300 秒です。 |
 
@@ -47,7 +47,7 @@ Vanish 構成ファイルを管理から書き出すには、次の手順に従�
 
    ![Commerce を設定して管理で Vanish を使用する](../../assets/configuration/varnish-admin-22.png)
 
-1. 既存のバックアップ `default.vcl`. 次に、 `varnish.vcl` 先ほどに書き出したファイル `default.vcl`. 次に、 `/etc/varnish/` ディレクトリ。
+1. 既存のバックアップ `default.vcl`. 次に、 `varnish.vcl` 先ほどに書き出したファイル `default.vcl`. 次に、ファイルを `/etc/varnish/` ディレクトリ。
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak2
@@ -61,9 +61,9 @@ Vanish 構成ファイルを管理から書き出すには、次の手順に従�
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
-1. Adobeが開くことをお勧めします `default.vcl` をクリックし、 `acl purge` を Vanish ホストの IP アドレスに追加します。 （複数のホストを別々の行で指定することも、 CIDR 表記を使用することもできます）。
+1. Adobeが開くことをお勧めします `default.vcl` の値を変更し、 `acl purge` を Vanish ホストの IP アドレスに追加します。 （複数のホストを別々の行で指定することも、 CIDR 表記を使用することもできます）。
 
-   例：
+   以下に例を挙げます。
 
    ```conf
     acl purge {

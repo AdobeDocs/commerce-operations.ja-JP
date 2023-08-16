@@ -22,12 +22,12 @@ ht-degree: 0%
 + 導入 {#deployment}
    + [デプロイメントの概要](deployment/overview.md)
    + [単一マシンの導入](deployment/single-machine.md)
-   + [パイプラインのデプロイ](deployment/technical-details.md)
+   + [パイプラインのデプロイメント](deployment/technical-details.md)
    + [前提条件](deployment/prerequisites.md)
    + [開発システムの設定](deployment/development-system.md)
    + [システム設定の作成](deployment/build-system.md)
    + [実稼動システムの設定](deployment/production-system.md)
-   + [ファイルシステムのアクセス権限](deployment/file-system-permissions.md)
+   + [ファイル・システムのアクセス権限](deployment/file-system-permissions.md)
    + 例 {#examples}
       + [共有設定の使用](deployment/example-shared-configuration.md)
       + [CLI コマンドの使用](deployment/example-using-cli.md)
@@ -48,8 +48,8 @@ ht-degree: 0%
    + [Commerce アプリケーションの設定](cache/configure-varnish-commerce.md)
    + [高度なワニス構成](cache/config-varnish-advanced.md)
    + [キャッシュの消去](cache/use-varnish-cache.md)
-   + [複数の Vanrish インスタンスをキャッシュクリアする](cache/use-multiple-varnish-cache.md)
-   + [Vanish 設定を確認](cache/config-varnish-final.md)
+   + [複数の Vanish インスタンスをキャッシュクリアする](cache/use-multiple-varnish-cache.md)
+   + [Vanish の設定を確認](cache/config-varnish-final.md)
    + [Vanish ESI ブロック](cache/use-varnish-esi.md)
    + [静的コンテンツキャッシュ](cache/static-content-signing.md)
 + コマンドライン {#cli}
@@ -65,7 +65,7 @@ ht-degree: 0%
    + [URN 蛍光ペン](cli/urn-highlighter.md)
    + [依存関係レポート](cli/dependency-reports.md)
    + [ローカリゼーション](cli/localization.md)
-   + 設定管理 {#configuration-management}
+   + 設定の管理 {#configuration-management}
       + [値を設定](cli/set-configuration-values.md)
       + [書き出し設定](cli/export-configuration.md)
       + [データのインポート](cli/import-configuration.md)
@@ -94,7 +94,7 @@ ht-degree: 0%
    + [支払い方法](reference/config-reference-payment.md)
    + [セールス](reference/config-reference-sales.md)
    + [サービス](reference/config-reference-services.md)
-   + [機密設定とシステム固有の設定](reference/config-reference-sens.md)
+   + [機密性の高いシステム固有の設定](reference/config-reference-sens.md)
    + [設定の上書き](reference/override-config-settings.md)
 + Cron ジョブ {#crons}
    + [Cron ジョブおよびグループ](cron/custom-cron.md)
@@ -128,7 +128,7 @@ ht-degree: 0%
    + [セキュリティ TXT](security/security-txt.md)
    + [X-Frame-Options ヘッダー](security/xframe-options.md)
 + ストレージ {#storage}
-   + [データベースプロファイラ](storage/db-profiler.md)
+   + [データベースプロファイラー](storage/db-profiler.md)
    + リモートストレージ {#remote-storage}
       + [リモートストレージモジュール](remote-storage/remote-storage.md)
       + [AWS S3 バケット](remote-storage/remote-storage-aws-s3.md)

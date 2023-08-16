@@ -19,7 +19,7 @@ ht-degree: 0%
 Effective SKU = N[SKUs] x N[Stores] x N[Customer groups]
 ```
 
-ここで、
+次の場合：
 
 - N は、そのカテゴリの項目数を表します。
 - 顧客グループには、追加の顧客グループが作成されるので、共有カタログが含まれます。
@@ -46,8 +46,8 @@ Effective SKU = N[SKUs] x N[Stores] x N[Customer groups]
    - Web サイト、顧客グループ、共有カタログ、製品数、設定可能な製品オプション数を減らして、SKU 数を減らす
 - 個別の製品を作成する代わりに、カスタムオプションを使用して、より多くの製品バリエーションを提供します。
 - 有効な SKU には、価格が店舗や顧客グループごとに異なるように指定される場合があるので、価格が変わる可能性がある値が多数含まれる可能性があると考えます。
-- モジュールなどの未使用のシステムコンポーネントを非アクティブ化または削除します。 (  [モジュールのアンインストール](../../../installation/tutorials/uninstall-modules.md).)
-- 外部の Platform Management System(PMS) で製品を管理します。
+- モジュールなどの未使用のシステムコンポーネントを非アクティブ化または削除します。 ( 詳しくは、  [モジュールのアンインストール](../../../installation/tutorials/uninstall-modules.md).)
+- 外部の Platform Management System(PMS) 内の製品を管理します。
 
 ## 追加情報
 
@@ -56,4 +56,4 @@ Effective SKU = N[SKUs] x N[Stores] x N[Customer groups]
 - [共有カタログの操作](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)
 - クラウドインフラストラクチャ： [複数の Web サイトおよびストアを設定する](https://devdocs.magento.com/cloud/project/project-multi-sites.html)
 - オンプレミス： [複数の Web サイトまたはストア](../../../configuration/multi-sites/ms-overview.md)
-- [Adobe Commerce on cloud infrastructure:ストア設定のベストプラクティス](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)
+- [Adobe Commerce on cloud infrastructure：ストア設定のベストプラクティス](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)

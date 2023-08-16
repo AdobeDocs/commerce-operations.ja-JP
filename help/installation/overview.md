@@ -1,13 +1,13 @@
 ---
 title: オンプレミスでのインストールの概要
 description: Adobe CommerceとMagento Open Sourceのオンプレミスデプロイメントのインストールプロセスについて説明します。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 0%
 
 ---
-
 
 # オンプレミスでのインストールの概要
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 1. Adobe CommerceまたはMagento Open Sourceソフトウェアを入手します。
 
-   * （推奨） [Composer メタパッケージ](composer.md) モジュールとその依存関係を管理する。
+   * （推奨） [Composer メタパッケージ](composer.md) を使用して、モジュールとその依存関係を管理します。
 
    * アプリケーションコードベースへの投稿やMagento Open Sourceのカスタマイズをおこなう場合は、 [複製](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) GitHub リポジトリ この方法を使用するには、GitHub と Composer の両方に精通している必要があります。
 
@@ -36,4 +36,3 @@ ht-degree: 0%
    前提条件のソフトウェアが正しく設定されていないために手順が失敗した場合は、 [前提条件](prerequisites/overview.md).
 
 1. [検証](next-steps/verify.md) ストアフロントと管理者を表示して、インストールを実行します。
-

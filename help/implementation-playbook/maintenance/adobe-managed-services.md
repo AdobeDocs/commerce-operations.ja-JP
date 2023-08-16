@@ -1,6 +1,6 @@
 ---
-title: Adobe Managed Services
-description: Adobe Managed Services がAdobe Commerceの実装をサポートおよび維持するために役立つ方法について説明します。
+title: AdobeManaged Services
+description: AdobeManaged ServicesがAdobe Commerce実装のサポートと保守に役立つ方法について説明します。
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
@@ -11,23 +11,23 @@ ht-degree: 0%
 ---
 
 
-# Adobe Managed Services
+# AdobeManaged Services
 
 Adobe Commerceは、標準搭載の堅牢な機能、広範なカスタマイズ可能なオプション、サードパーティの統合を含む、e コマース機能を提供するためのプラットフォームです。
 
-Adobe Managed Services は、クラウドインフラストラクチャ Pro プラン上のAdobe Commerceに対して、ホストおよび管理されたアプリケーションおよびインフラストラクチャを提供します。
+AdobeManaged Servicesは、クラウドインフラストラクチャ Pro プラン上のAdobe Commerce向けに、ホストおよび管理されたアプリケーションおよびインフラストラクチャを提供します。
 
 ## メリット
 
-![Adobe Managed Services の利点を示す解説図](../../assets/playbooks/managed-services-benefits.png)
+![AdobeManaged Servicesの利点を示す解説図](../../assets/playbooks/managed-services-benefits.png)
 
 ### 実装オプションの比較
 
-Adobe Managed Services は、次のようなオンプレミスおよび非管理クラウド実装に対する主なメリットを提供します。
+AdobeManaged Servicesは、次のようなオンプレミスおよび非管理型のクラウド実装に対する主なメリットを提供します。
 
 - **サービス・レベル・ターゲット (SLT) の強化** — 標準のAdobe Commerceサポートよりも応答時間が速くなります。
-- **SLA(Service Level Agreement) の強化**— 99.99%のインフラストラクチャレベルを 99.99%に上回る、クラウドインフラストラクチャ上の通常のAdobe Commerceのお客様に適したアプリケーションレベル
-- **指定されたクラウドの専門知識**— Managed Servicesは、お客様に、アプリケーションおよびクラウドインフラストラクチャのエキスパートとして機能する、カスタマーサクセスエンジニア (CSE) を提供します。 CSE は、お客様およびそのパートナーと連携し、顧客に対して、次のようなベストプラクティスとガイダンスを提供して、市場投入までの時間を短縮します。
+- **SLA(Service Level Agreement) の強化**— 99.99%のインフラストラクチャレベルを 99.99%に上回る、クラウドインフラストラクチャ上の通常のAdobe Commerceのお客様に適したアプリケーションレベルです。
+- **指定されたクラウドの専門知識**— Managed Servicesは、お客様に、アプリケーションおよびクラウドインフラストラクチャのエキスパートとして機能する、カスタマーサクセスエンジニア (CSE) の指名を提供します。 CSE は、お客様およびそのパートナーと連携し、顧客に対して、以下を含む、市場投入までの時間を短縮するためのベストプラクティスとガイダンスを提供します。
    - オンボーディングプロセスのガイドとサポート
    - プロビジョニングとプラットフォーム設定の管理
    - 統合とカスタマイズに関するアーキテクチャの原則についてアドバイスする
@@ -37,7 +37,7 @@ Adobe Managed Services は、次のようなオンプレミスおよび非管理
 
 Managed Servicesの主なメリットの詳細な比較については、以下の解説図を確認してください。
 
-![Adobe Managed Services と他のAdobe Commerce実装オプションの比較を示す解説図](../../assets/playbooks/managed-services-compare.png)
+![AdobeManaged Servicesと他のAdobe Commerce実装オプションの比較を示す解説図](../../assets/playbooks/managed-services-compare.png)
 
 ## 役割と責務
 
@@ -60,7 +60,7 @@ Adobeは、Managed Servicesシステム上のAdobe Commerceのプロビジョニ
             <td>クラウド地域の選択</td>
             <td>所有者</td>
             <td>寄稿者</td>
-            <td>アドバイザー</td>
+            <td>顧問</td>
         </tr>
         <tr>
             <td>インスタンスのプロビジョニング</td>
@@ -105,19 +105,19 @@ Adobeは、Managed Servicesシステム上のAdobe Commerceのプロビジョニ
             <td>要件の収集とプロジェクト管理</td>
             <td>寄稿者</td>
             <td>所有者</td>
-            <td>アドバイザー</td>
+            <td>顧問</td>
         </tr>
         <tr>
-            <td>アプリケーション開発</td>
+            <td>アプリケーションの開発</td>
             <td>寄稿者</td>
             <td>所有者</td>
-            <td>アドバイザー</td>
+            <td>顧問</td>
         </tr>
         <tr>
             <td>アプリケーションテスト</td>
             <td>寄稿者</td>
             <td>所有者</td>
-            <td>アドバイザー</td>
+            <td>顧問</td>
         </tr>
         <tr>
             <td colspan="4" style="background:lightgray;"><strong>ステージングと移行</strong></td>
@@ -126,31 +126,31 @@ Adobeは、Managed Servicesシステム上のAdobe Commerceのプロビジョニ
             <td>開発、統合、ステージングへのコードのデプロイメント</td>
             <td>寄稿者</td>
             <td>所有者</td>
-            <td>アドバイザー</td>
+            <td>顧問</td>
         </tr>
         <tr>
-            <td>コンテンツのデプロイ</td>
+            <td>コンテンツのデプロイメント</td>
             <td>寄稿者</td>
             <td>所有者</td>
-            <td>アドバイザー</td>
+            <td>顧問</td>
         </tr>
         <tr>
             <td>ユーザー受け入れテストの開発</td>
             <td>所有者</td>
             <td>寄稿者</td>
-            <td>アドバイザー</td>
+            <td>顧問</td>
         </tr>
         <tr>
             <td>ユーザー受け入れテスト</td>
             <td>所有者</td>
             <td>寄稿者</td>
-            <td>アドバイザー</td>
+            <td>顧問</td>
         </tr>
         <tr>
             <td>カスタム監視の要件</td>
             <td>寄稿者</td>
             <td>所有者</td>
-            <td>アドバイザー</td>
+            <td>顧問</td>
         </tr>
         <tr>
             <td>お客様が指定する SSL 証明書</td>
@@ -162,19 +162,19 @@ Adobeは、Managed Servicesシステム上のAdobe Commerceのプロビジョニ
             <td>パフォーマンスと負荷テストの開発</td>
             <td>寄稿者</td>
             <td>所有者</td>
-            <td>アドバイザー</td>
+            <td>顧問</td>
         </tr>
         <tr>
             <td>パフォーマンスと負荷のテスト</td>
             <td>寄稿者</td>
             <td>所有者</td>
-            <td>アドバイザー</td>
+            <td>顧問</td>
         </tr>
         <tr>
-            <td>カスタマイズ開発と QA</td>
+            <td>カスタマイズの開発と QA</td>
             <td>寄稿者</td>
             <td>所有者</td>
-            <td>アドバイザー</td>
+            <td>顧問</td>
         </tr>
         <tr>
             <td>Runbook completion</td>
@@ -189,7 +189,7 @@ Adobeは、Managed Servicesシステム上のAdobe Commerceのプロビジョニ
             <td>所有者</td>
         </tr>
         <tr>
-            <td colspan="4" style="background:lightgray;"><strong>起動</strong></td>
+            <td colspan="4" style="background:lightgray;"><strong>Launch</strong></td>
         </tr>
         <tr>
             <td>運用開始チェックリスト</td>
@@ -240,7 +240,7 @@ Adobeは、Managed Servicesシステム上のAdobe Commerceのプロビジョニ
             <td>カスタムコードのメンテナンスおよびセキュリティパッチ</td>
             <td>寄稿者</td>
             <td>所有者</td>
-            <td>アドバイザー</td>
+            <td>顧問</td>
         </tr>
         <tr>
             <td>Adobe Commerce製品のアップデートとアップグレードへのアクセス権の提供</td>
@@ -252,7 +252,7 @@ Adobeは、Managed Servicesシステム上のAdobe Commerceのプロビジョニ
             <td>Adobe Commerce製品のアップデートとアップグレードの適用</td>
             <td>寄稿者</td>
             <td>所有者</td>
-            <td>アドバイザー</td>
+            <td>顧問</td>
         </tr>
         <tr>
             <td>承認ボードを変更して実稼動環境の展開を承認</td>
@@ -264,7 +264,7 @@ Adobeは、Managed Servicesシステム上のAdobe Commerceのプロビジョニ
             <td>本番アプリケーションの管理</td>
             <td>所有者</td>
             <td>寄稿者</td>
-            <td>アドバイザー</td>
+            <td>顧問</td>
         </tr>
         <tr>
             <td>本番インフラストラクチャの調整</td>
@@ -273,7 +273,7 @@ Adobeは、Managed Servicesシステム上のAdobe Commerceのプロビジョニ
             <td>所有者</td>
         </tr>
         <tr>
-            <td>本番アーキテクチャの拡張</td>
+            <td>実稼動アーキテクチャの拡張</td>
             <td></td>
             <td></td>
             <td>所有者</td>
@@ -309,7 +309,7 @@ Adobeは、Managed Servicesシステム上のAdobe Commerceのプロビジョニ
             <td>コアアプリケーションのセキュリティ監査</td>
             <td>所有者</td>
             <td>寄稿者</td>
-            <td>アドバイザー</td>
+            <td>顧問</td>
         </tr>
         <tr>
             <td>カスタマイズと拡張機能のセキュリティ監査</td>
@@ -348,7 +348,7 @@ Adobeは、Managed Servicesシステム上のAdobe Commerceのプロビジョニ
             <td>所有者</td>
         </tr>
         <tr>
-            <td>ユーザー管理と SSO 統合</td>
+            <td>ユーザー管理と SSO の統合</td>
             <td>所有者</td>
             <td>寄稿者</td>
             <td>寄稿者</td>
@@ -362,8 +362,8 @@ Adobeは、Managed Servicesシステム上のAdobe Commerceのプロビジョニ
         <tr>
             <td>企業のネットワークやリソースへの接続を設定、保護、維持する </td>
             <td>所有者</td>
-            <td>アドバイザー</td>
-            <td>アドバイザー</td>
+            <td>顧問</td>
+            <td>顧問</td>
         </tr>
     </tbody>
 </table>
@@ -374,9 +374,9 @@ Managed ServicesのAdobeセキュリティスタックは、自動化と一貫�
 
 Amazon Web ServicesやMicrosoft Azure などの Platform パートナーは、プラットフォームのカスタマイズを適用する際に、セキュリティを最大限に活用し、AdobeのManaged Servicesチームは、コンプライアンス、ログ、認証、スキャン、監視、サーバセキュリティとセキュアなアプリケーション設定などのコアセキュリティサービスを提供します。 詳しくは、 [Adobe Commerce Security](https://business.adobe.com/products/magento/secure-ecommerce.html) を参照してください。
 
-次の図に、Adobe Managed Services セキュリティテクノロジースタックを示します。
+次の図に、AdobeのManaged Servicesセキュリティテクノロジースタックを示します。
 
-![Adobe Managed Services セキュリティスタックを示す図](../../assets/playbooks/managed-services-security-stack.svg)
+![AdobeManaged Servicesのセキュリティスタックを示す図](../../assets/playbooks/managed-services-security-stack.svg)
 
 ## アップグレード支援
 
@@ -402,10 +402,10 @@ Adobeは、Managed Servicesシステムのプロビジョニング、開発、�
     <td>アップグレードプロジェクト計画の作成</td>
     <td>所有者</td>
     <td>寄稿者</td>
-    <td>寄稿者<br />CSE には、アップグレードテンプレートとアップグレード計画のサンプルが用意されています。では、アドバイスとベストプラクティスに関するヒントを提供しています。</td>
+    <td>寄稿者<br />CSE は、アップグレードテンプレートおよびアップグレード計画のサンプルを提供し、アドバイスとベストプラクティスのヒントを提供します。</td>
   </tr>
   <tr>
-    <td>必要なインフラストラクチャの変更を特定</td>
+    <td>必要なインフラストラクチャの変更を特定する</td>
     <td></td>
     <td>寄稿者</td>
     <td>所有者<br />CSE は、適切なサイズ設定を確保するために、ステージングおよび実稼動インフラストラクチャをレビューします。</td>
@@ -424,7 +424,7 @@ Adobeは、Managed Servicesシステムのプロビジョニング、開発、�
     <td>所有者<br />CSE は、インフラストラクチャサービスのアップグレードを調整します。<br />CSE は、アップグレードのための会議会議のイベントをスケジュールします。<br />CSE は、実稼動環境からステージング環境へのデータ移行を支援します。</td>
   </tr>
   <tr>
-    <td>コマースコードベースとカスタマイズを更新する。コードのリコンパイルとコードリファクタリング</td>
+    <td>Commerce コードベースとカスタマイズ、コードのリコンパイルとコードリファクタリングの更新</td>
     <td>寄稿者</td>
     <td>所有者</td>
     <td></td>

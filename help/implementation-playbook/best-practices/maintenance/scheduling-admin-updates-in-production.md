@@ -32,6 +32,6 @@ ht-degree: 0%
 ## 追加情報
 
 - [キャッシュのベストプラクティス](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
-- [プライベートコンテンツ：非公開コンテンツを無効にする](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [非公開コンテンツ：非公開コンテンツを無効にする](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [ハードウェアの推奨事項：キャッシュ](../../../performance/hardware.md#caches)
-- [詳細設定：Redis の設定](../../../performance/advanced-setup.md#set-up-redis)
+- [高度な設定： Redis の設定](../../../performance/advanced-setup.md#set-up-redis)

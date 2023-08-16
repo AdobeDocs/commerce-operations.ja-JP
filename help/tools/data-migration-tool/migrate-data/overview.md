@@ -16,9 +16,9 @@ ht-degree: 0%
 
 移行プロセス中に、移行を成功させるには、次の一般的なルールに従います。
 
-1. **禁止** Magento1 管理 ( 受注管理（出荷、請求書の作成、クレジット・メモ）を除く ) で変更を行う
+1. **禁止** Magento1 管理 ( 受注管理（発送、請求書の作成、クレジット・メモ）を除く ) で変更を行う
 1. **禁止** コードを変更する
-1. **禁止** Magento2 の Admin とストアフロントで変更を行う
+1. **禁止** Magento2 の Admin と storefront で変更を行う
 
 >[!TIP]
 >
@@ -60,20 +60,20 @@ ht-degree: 0%
    - `<magento_root>/bin/magento <command name>`
    - `<magento_root>` は、Web サーバーの docroot のサブディレクトリです。
 
-### コマンド構文
+### コマンドの構文
 
-一般的なコマンドの例を次に示します。
+次に、一般的なコマンドの例を示します。
 
 ```bash
 bin/magento migrate:<mode> [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
-ここで、
+次の場合：
 
-- `<mode>` は次のいずれかに該当します。 [`settings`](settings.md), [`data`](data.md)または [`delta`](delta.md)
+- `<mode>` は次の場合があります。 [`settings`](settings.md), [`data`](data.md)または [`delta`](delta.md)
 - `[-r|--reset]` は、最初から移行を開始するオプションの引数です。 この引数は、移行のテストに使用できます。
 - `[-a|--auto]` は、整合性チェックエラーが発生した場合に移行を停止しないようにする、オプションの引数です。
-- `{<path to config.xml>}` は、 `config.xml`;この引数は必須です。
+- `{<path to config.xml>}` は、に対するファイルシステムの絶対パスです。 `config.xml`；この引数は必須です。
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ bin/magento migrate:<mode> [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 ## 移行順序
 
-作成時に [!DNL Data Migration Tool]を使用する場合、次のようなデータ転送シーケンスが想定されます。
+作成時に、 [!DNL Data Migration Tool]を使用する場合、次のようなデータ転送シーケンスが想定されます。
 
 1. [設定](settings.md)
 1. [データ](data.md)

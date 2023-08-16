@@ -33,6 +33,6 @@ Adobe Commerceは、あらゆるチャネルとビジネスモデルにわたっ
 
 Adobe Commerceアプリケーションは、自己完結型のモジュールである機能の集まりで構成されています。
 
-![Adobe Commerce機能マップ](../../assets/playbooks/capabilities-map.svg)
+![Adobe Commerce Capabilities Map](../../assets/playbooks/capabilities-map.svg)
 
-![Adobe Commerce機能マップ](../../assets/playbooks/capabilities-modules.svg)
+![Adobe Commerce Capabilities Map](../../assets/playbooks/capabilities-modules.svg)

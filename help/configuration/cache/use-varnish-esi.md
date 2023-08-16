@@ -1,12 +1,12 @@
 ---
 title: Vanish ESI ブロック
 description: Edge Side のインクルードと、それらを使用して Web ページを埋め込む方法について説明します。
-badge: label="Contributed by Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
+badge: label="寄稿：Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="コンスタンティン G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '130'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ Edge Side Includes(ESI) は、他の Web ページに Web ページを含める�
 </div>
 ```
 
-ワニスは次の内容を取り出す `http://domain.com/index.php/page_cache/block/esi/blocks` と `<esi>` タグに貼り付けます。
+ワニスは次の内容を取り出す `http://domain.com/index.php/page_cache/block/esi/blocks` をクリックし、 `<esi>` タグに貼り付けます。
 
 ## Commerce および Vanish ESI
 
 次の条件を満たすと、Commerce フレームワークは ESI タグを作成します。
 
-- キャッシュアプリケーションは、 `Varnish Cache`
+- キャッシュアプリケーションはに設定されています。 `Varnish Cache`
 - XML レイアウト `block` 要素が `ttl` 属性
 
 ### 例
@@ -46,7 +46,7 @@ Edge Side Includes(ESI) は、他の Web ページに Web ページを含める�
 
 ## 制限事項
 
-現在、Vanrish は HTTPS 経由で ESI をサポートしていないので、自動的に HTTP に切り替わります。
+現在、Vanish は HTTPS 経由で ESI をサポートしていないので、自動的に HTTP に切り替わります。
 
 `Magento\PageCache\Observer\ProcessLayoutRenderElement`:
 

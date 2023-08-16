@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # モジュールと拡張機能の管理
 
-コマンドラインを使用して、Adobe CommerceおよびMagento Open Sourceモジュールと拡張機能を管理する必要があります。
+コマンドラインを使用して、Adobe CommerceとMagento Open Sourceモジュールおよび拡張機能を管理する必要があります。
 
 ## モジュールの有効化または無効化
 

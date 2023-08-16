@@ -223,7 +223,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 * **ACSD-47292** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.6) - 「在庫切れの製品を表示」が「はい」に設定されている場合に、GraphQLの応答で在庫切れのバンドル製品が使用できない問題を修正しました。
 * **ACSD-48234** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.6) - 「在庫切れを表示」オプションが有効な場合に、カタログ検索結果で誤ったカテゴリ項目数が表示される問題を修正しました。
 * **ACSD-48313** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.5) — 属性値にコンマが含まれる場合に「configurable_variations」列が解析されない問題を修正しました。 「additional_attributes」にも同じ解析アルゴリズムが使用されます。
-* **ACSD-48627** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.6) — 買い物かごの詳細を取得するGraphQLリクエストの送信時に、在庫切れの設定可能な製品がエラーを引き起こす問題を修正しました。
+* **ACSD-48627** (Adobe CommerceおよびMagento Open Source>=2.4.5 &lt;2.4.6) — 買い物かごの詳細を取得するGraphQLリクエストの送信時に、在庫切れの設定可能な製品がエラーを引き起こす問題を修正しました。
 * 更新されたパッチ：MDVA-39384。
 
 ## v1.1.24 {#v1-1-24}

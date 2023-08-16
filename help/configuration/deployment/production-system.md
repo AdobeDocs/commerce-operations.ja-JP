@@ -1,13 +1,13 @@
 ---
 title: 実稼動システムの設定
 description: コマースアプリケーションの実稼動システムを設定する方法を説明します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
 
 ---
-
 
 # 実稼動システムの設定
 
@@ -38,7 +38,7 @@ ht-degree: 0%
    mkdir -p ~/.ssh/.composer
    ```
 
-   作成 `auth.json` を選択します。
+   作成 `auth.json` 」と入力します。
 
    `auth.json` は、 [認証キー](../../installation/prerequisites/authentication-keys.md).
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
    次の節では、例を示します。
 
-## 本番システムでの設定値の設定
+## 実稼動システムでの設定値の設定
 
 この項では、 `magento config:sensitive:set` コマンドを使用します。
 
@@ -78,7 +78,7 @@ ht-degree: 0%
    bin/magento config:sensitive:set {configuration path} {value}
    ```
 
-   例えば、YouTube API キーの値をに設定するには、次のようにします。 `1234`を入力して、
+   例えば、YouTube API キーの値をに設定するには、次のようにします。 `1234`，と入力します。
 
    ```bash
    bin/magento config:sensitive:set catalog/product_video/youtube_api_key 1234

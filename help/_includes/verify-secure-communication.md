@@ -2,14 +2,14 @@
 source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 # 通信がセキュリティで保護されていることを確認します
 
 この節では、HTTP 基本認証が機能していることを確認する 2 つの方法について説明します。
 
-* の使用 `curl` コマンドを使用して、クラスタの状態を取得するには、ユーザ名とパスワードを入力する必要があることを確認します
+* の使用 `curl` コマンドを使用して、クラスタの状態を取得するには、ユーザ名とパスワードを入力する必要があることを確認します。
 * 管理での HTTP 基本認証の設定
 
 ## の使用 `curl` クラスタの状態を確認するコマンド
@@ -68,8 +68,8 @@ Connection: keep-alive
 
 ## 管理での HTTP 基本認証の設定
 
-同じタスクを実行します ( [検索エンジンの設定](../configuration/search/configure-search-engine.md) *例外* クリック **[!UICONTROL Yes]** から **[!UICONTROL Enable HTTP Auth]** の一覧を開き、指定したフィールドにユーザー名とパスワードを入力します。
+同じタスクを実行します。詳しくは、 [検索エンジンの設定](../configuration/search/configure-search-engine.md) *例外* click **[!UICONTROL Yes]** から **[!UICONTROL Enable HTTP Auth]** の一覧を開き、指定したフィールドにユーザー名とパスワードを入力します。
 
-クリック **[!UICONTROL Test Connection]** 正常に動作するようにし、 **[!UICONTROL Save Config]**.
+クリック **[!UICONTROL Test Connection]** 正常に動作するようにし、「 **[!UICONTROL Save Config]**.
 
 続行する前に、キャッシュをフラッシュしてインデックスを再作成する必要があります。

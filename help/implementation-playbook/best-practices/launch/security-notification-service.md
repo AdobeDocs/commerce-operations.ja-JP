@@ -15,7 +15,7 @@ ht-degree: 0%
 
 セキュリティは最も優先度の高い 1 つであり、Adobeは、セキュリティがお客様にとっても重要であると認識しています。
 
-この [!DNL Adobe Security Notification Service] は、AdobeがAdobe製品のセキュリティに関する情報を顧客に送信する際に使用する、無料の電子メール通知サービスです。
+The [!DNL Adobe Security Notification Service] は、AdobeがAdobe製品のセキュリティに関する情報を顧客に送信する際に使用する、無料の電子メール通知サービスです。
 
 誰でもサービスを購読でき、いつでも購読を解除できます。
 

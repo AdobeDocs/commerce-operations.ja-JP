@@ -20,7 +20,7 @@ Commerce には、ページの応答時間を改善し、より高いスルー�
 
 ## インデクサー
 
-インデクサーは **[!UICONTROL Update on Save]** または **[!UICONTROL Update on Schedule]** モード。 この **[!UICONTROL Update on Save]** mode は、カタログや他のデータが変更されるたびに、即座にインデックスを作成します。 このモードでは、ストアでの更新操作と参照操作が少ないことを前提としています。 高負荷時に大きな遅延が生じ、データが使用できなくなる可能性があります。 次を使用することをお勧めします。 **スケジュールに従って更新** 実稼動環境のモードです。データの更新に関する情報を保存し、特定の cron ジョブを通じてバックグラウンドの一部によるインデックス作成を実行するからです。 各 [!DNL Commerce] インデクサーが別々に  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** 設定ページを開きます。
+インデクサーは、 **[!UICONTROL Update on Save]** または **[!UICONTROL Update on Schedule]** モード。 The **[!UICONTROL Update on Save]** mode は、カタログや他のデータが変更されるたびに、即座にインデックスを作成します。 このモードでは、ストアでの更新操作と参照操作が少ないことを前提としています。 高負荷時に大きな遅延が生じ、データが使用できなくなる可能性があります。 次を使用することをお勧めします。 **スケジュールに従って更新** 実稼動環境のモードです。データの更新に関する情報を保存し、特定の cron ジョブを通じてバックグラウンドの一部によるインデックス作成を実行するからです。 各 [!DNL Commerce] インデクサーが別々に  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** 設定ページを開きます。
 
 >[!TIP]
 >
@@ -28,23 +28,23 @@ Commerce には、ページの応答時間を改善し、より高いスルー�
 
 ## キャッシュ
 
-実稼動環境でストアを起動したら、 **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Cache Management]** ページ。 を使用することを強くお勧めします。 [!DNL Varnish]（効率的な実稼動ページキャッシュソリューションであるため）
+実稼動環境でストアを起動したら、 **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Cache Management]** ページに貼り付けます。 を使用することを強くお勧めします。 [!DNL Varnish]（効率的な実稼動ページキャッシュソリューションであるため）
 
 ## 非同期電子メール通知
 
-「非同期電子メール通知」設定を有効にすると、チェックアウトおよび注文処理の電子メール通知を処理するプロセスがバックグラウンドに移動します。 この機能を有効にするには、に移動します。 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. 詳しくは、 [セールスメール](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) 内 _Magento Open Sourceユーザーガイド_ を参照してください。
+「非同期電子メール通知」設定を有効にすると、チェックアウトおよび注文処理の電子メール通知を処理するプロセスがバックグラウンドに移動します。 この機能を有効にするには、に移動します。 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. 詳しくは、 [セールスメール](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) （内） _Magento Open Sourceユーザーガイド_ を参照してください。
 
 ## 非同期の注文データ処理
 
-ストアフロントで集中的に売り上げを行う場合と、 [!DNL Commerce] は集中的な注文処理を実行しています。 次の項目を設定できます。 [!DNL Commerce] 対応するテーブルの読み取り操作と書き込み操作の間の競合を避けるために、データベースレベルでこれら 2 つのトラフィックパターンを区別します。 注文データの保存とインデックス作成は、非同期でおこなうことができます。 受注は一時保管に置かれ、衝突なしに受注管理グリッドに一括で移動されます。 このオプションは、次の場所から有効化できます。 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. 詳しくは、 [スケジュールされたグリッドの更新](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) 内 _Magento Open Sourceユーザーガイド_ を参照してください。
+ストアフロントで集中的に売り上げを行う場合と、 [!DNL Commerce] は集中的な注文処理を実行しています。 次の項目を設定できます。 [!DNL Commerce] 対応するテーブルの読み取り操作と書き込み操作の間の競合を避けるために、データベースレベルでこれら 2 つのトラフィックパターンを区別します。 注文データの保存とインデックス作成は、非同期でおこなうことができます。 受注は一時保管に置かれ、衝突なしに受注管理グリッドに一括で移動されます。 このオプションは、次の場所から有効化できます。 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. 詳しくは、 [スケジュールされたグリッドの更新](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) （内） _Magento Open Sourceユーザーガイド_ を参照してください。
 
 >[!WARNING]
 >
->この **[!UICONTROL Developer]** タブとオプションは、 [開発者モード](../configuration/cli/set-mode.md). [Adobe Commerce an cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) はをサポートしていません `Developer` モード。
+>The **[!UICONTROL Developer]** 「 」タブと「 」オプションは、 [開発者モード](../configuration/cli/set-mode.md). [Adobe Commerce an cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) はをサポートしていません。 `Developer` モード。
 
 ## 非同期設定の保存 [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7-beta1 でのみ使用可能"}
 
-ストアレベルの設定が多数のプロジェクトの場合、ストア設定を保存すると、非常に長い時間がかかるか、タイムアウトになる場合があります。 この _非同期設定_ モジュールは、コンシューマーを使用してメッセージキュー内の保存を処理する cron ジョブを実行することで、非同期設定保存を有効にします。 AsyncConfig は **無効** デフォルトでは。
+ストアレベルの設定が多数のプロジェクトの場合、ストア設定を保存すると、非常に長い時間がかかるか、タイムアウトになる場合があります。 The _非同期設定_ モジュールは、コンシューマーを使用してメッセージキュー内の保存を処理する cron ジョブを実行することで、非同期設定保存を有効にします。 AsyncConfig は **無効** デフォルトでは。
 
 AsyncConfig は、コマンドラインインターフェイスを使用して有効にできます。
 
@@ -52,7 +52,7 @@ AsyncConfig は、コマンドラインインターフェイスを使用して�
 bin/magento setup:config:set --config-async 1
 ```
 
-この `set` コマンドは次の内容を `app/etc/env.php` ファイル：
+The `set` コマンドは、次の内容を `app/etc/env.php` ファイル：
 
 ```conf
 ...
@@ -69,7 +69,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## 遅延在庫更新
 
-集中的な売り上げの時に [!DNL Commerce] は、注文に関連する在庫更新を延期できます。 これにより、操作の数を最小限に抑え、注文の配置プロセスを高速化できます。 ただし、このオプションは危険で、在庫数量がマイナスになる可能性があるので、店舗で「バックオーダー」が有効になっている場合にのみ使用できます。 このオプションを使用すると、店舗のチェックアウトフローのパフォーマンスが大幅に向上し、在庫をオンデマンドで簡単に補充できます。 サイトでの遅延在庫更新を有効にするには、次に移動します： **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**. 詳しくは、 [在庫の管理](https://docs.magento.com/user-guide/catalog/inventory.html) 内 _Adobe Commerce User Guide_ を参照してください。
+集中的な売り上げの時に [!DNL Commerce] は、注文に関連する在庫更新を延期できます。 これにより、操作の数を最小限に抑え、注文の配置プロセスを高速化できます。 ただし、このオプションは危険で、在庫数量がマイナスになる可能性があるので、店舗で「バックオーダー」が有効になっている場合にのみ使用できます。 このオプションを使用すると、店舗のチェックアウトフローのパフォーマンスが大幅に向上し、在庫をオンデマンドで簡単に補充できます。 サイトでの遅延在庫更新を有効にするには、次に移動します： **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**. 詳しくは、 [在庫の管理](https://docs.magento.com/user-guide/catalog/inventory.html) （内） _Adobe Commerce User Guide_ を参照してください。
 
 >[!INFO]
 >
@@ -77,11 +77,11 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 >[!INFO]
 >
->このオプションは、 [非同期の注文プレースメント](high-throughput-order-processing.md#asynchronous-order-placement) ～と組み合わせて [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html).
+>また、このオプションは [非同期の注文プレースメント](high-throughput-order-processing.md#asynchronous-order-placement) ～と組み合わせて [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html).
 
 ## クライアント側の最適化設定
 
-ストアフロントの応答性を向上させるには [!DNL Commerce] インスタンスの場合は、「デフォルト」または「開発者」モードで「管理者」に移動し、次の設定を変更します。
+ストアフロントの応答性を向上させるには、以下を実行します。 [!DNL Commerce] インスタンスの場合は、「デフォルト」または「開発者」モードで「管理者」に移動し、次の設定を変更します。
 
 **[!UICONTROL Stores]-> [!UICONTROL Configuration] -> [!UICONTROL Advanced] -> [!UICONTROL Developer]:**
 
@@ -95,13 +95,13 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 >[!INFO]
 >
->この **[!UICONTROL Developer]** タブとオプションは、 [開発者モード](../configuration/cli/set-mode.md). [Adobe [!DNL Commerce] クラウドインフラストラクチャ](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) はをサポートしていません `Developer` モード。
+>The **[!UICONTROL Developer]** 「 」タブと「 」オプションは、 [開発者モード](../configuration/cli/set-mode.md). [Adobe [!DNL Commerce] クラウドインフラストラクチャ](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) はをサポートしていません。 `Developer` モード。
 
 次をアクティブ化すると、 **[!UICONTROL Enable [!DNL JavaScript] Bundling]** 」オプションを使用すると、Commerce はすべての JS リソースを、ストアフロントページに読み込まれた 1 つまたは複数のバンドルに結合できます。 JS をバンドルすると、サーバーへのリクエスト数が少なくなり、ページのパフォーマンスが向上します。 また、最初の呼び出しでブラウザーが JS リソースをキャッシュし、それらを以降の参照で再利用するのにも役立ちます。 また、このオプションは、すべての JS がテキストとして読み込まれるので、遅延評価をもたらします。 ページ上で特定のアクションがトリガーされた後にのみ、コードの分析と評価を開始します。 ただし、最初の呼び出しですべての JS コンテンツが読み込まれるので、最初のページ読み込み時間が非常に重要なストアでは、この設定はお勧めしません。
 
 >[!INFO]
 >
->詳しくは、 [クラウドインフラストラクチャ上のAdobe CommerceとAdobe Commerceでの CSS および JavaScript ファイルの最適化](https://support.magento.com/hc/en-us/articles/360044482152) (CSS と JavaScript の最適化について詳しくは、 Adobe Commerceヘルプセンター_を参照 )。
+>詳しくは、 [クラウドインフラストラクチャ上のAdobe CommerceとAdobe Commerceでの CSS および JavaScript ファイルの最適化](https://support.magento.com/hc/en-us/articles/360044482152) (CSS と JavaScript の最適化について詳しくは、 Adobe Commerceヘルプセンターの「_」を参照 )。
 
 ### バンドルのヒント
 
@@ -115,11 +115,11 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 顧客アクショントリガー顧客セグメントの検証プロセス。これは、パフォーマンスの低下を引き起こす可能性がある原因です。 デフォルトでは、Adobe Commerceは各セグメントをリアルタイムで検証し、一致する顧客セグメントと一致しない顧客セグメントを定義します。
 
-パフォーマンスの低下を避けるために、 **[!UICONTROL Real-time Check if Customer is Matched by Segment]** システム設定オプション **いいえ** ：単一の結合条件 SQL クエリで顧客セグメントを検証します。
+パフォーマンスの低下を避けるために、 **[!UICONTROL Real-time Check if Customer is Matched by Segment]** に対するシステム設定オプション **いいえ** ：単一の結合条件 SQL クエリで顧客セグメントを検証します。
 
 この最適化を有効にするには、に移動します。 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Customer Configuration] > [!UICONTROL Customer Segments] >[!UICONTROL Real-time Check if Customer is Matched by Segment]**.
 
-この設定により、システムに多数の顧客セグメントがある場合の、顧客セグメント検証のパフォーマンスが向上します。 ただし、では機能しません。 [分割データベース](../configuration/storage/multi-master.md) 実装するか、登録されているお客様がいない場合。
+この設定により、システムに多数の顧客セグメントがある場合の、顧客セグメント検証のパフォーマンスが向上します。 ただし、では機能しません。 [分割データベース](../configuration/storage/multi-master.md) 実装するか、登録されているお客様がいない場合に使用します。
 
 ## データベースメンテナンススケジュール {#database}
 

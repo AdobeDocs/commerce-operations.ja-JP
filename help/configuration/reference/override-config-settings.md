@@ -1,19 +1,19 @@
 ---
 title: 設定の上書き
 description: 環境変数を使用して設定を上書きする方法を説明します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1225'
 ht-degree: 0%
 
 ---
 
-
 # 設定の上書き
 
 このトピックでは、設定パスを知って環境変数名を導き出す方法について説明します。 環境変数を使用して、Adobe Commerceの設定を上書きできます。 例えば、実稼働システムで支払い処理者のライブ URL の値を上書きできます。
 
-この _任意_ 環境変数を使用した設定ただし、Adobeでは、共有設定ファイルを使用して一貫性のある設定を維持することをお勧めします。 `config.php`、およびシステム固有の設定ファイル `env.php`( [デプロイメントの一般的な概要](../deployment/overview.md).
+次の値を上書きできます： _任意_ 環境変数を使用した設定。ただし、Adobeでは、共有設定ファイルを使用して一貫性のある設定を維持することをお勧めします。 `config.php`、およびシステム固有の設定ファイル `env.php`（を参照） [デプロイメントの一般的な概要](../deployment/overview.md).
 
 >[!TIP]
 >
@@ -29,7 +29,7 @@ ht-degree: 0%
 - システム固有の値は、次を使用して設定する必要があります。
 
    - 環境変数
-   - この [`magento config:set`](../cli/set-configuration-values.md) command
+   - The [`magento config:set`](../cli/set-configuration-values.md) command
    - 管理者が [`magento app:config:dump` command](../cli/export-configuration.md)
 
 設定パスは、次の場所にあります。
@@ -49,29 +49,29 @@ ht-degree: 0%
 
 - グローバルスコープ ( つまり、 _すべて_ スコープ )
 
-   グローバルスコープ変数の形式は次のとおりです。
+  グローバルスコープ変数の形式は次のとおりです。
 
-   `CONFIG__DEFAULT__<SYSTEM__VARIABLE__NAME>`
+  `CONFIG__DEFAULT__<SYSTEM__VARIABLE__NAME>`
 
 - 特定の範囲（つまり、この設定が影響するのは、指定したストア表示または Web サイトのみです）
 
-   例えば、ストアビュースコープ変数の形式は次のとおりです。
+  例えば、ストアビュースコープ変数の形式は次のとおりです。
 
-   `CONFIG__STORES__ <STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>`
+  `CONFIG__STORES__ <STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>`
 
-   スコープの詳細については、次を参照してください。
+  スコープの詳細については、次を参照してください。
 
-   - [手順 1:Web サイトを検索するか、Web サイトビューの範囲の値を保存します](#step-1-find-the-website-or-store-view-scope-value)
+   - [手順 1:Web サイトを検索するか、Web サイトビューの範囲の値を格納します。](#step-1-find-the-website-or-store-view-scope-value)
    - [範囲に関するコマースユーザーガイドのトピック](https://docs.magento.com/user-guide/configuration/scope.html)
    - [範囲のクイックリファレンス](https://docs.magento.com/user-guide/stores/store-scope-reference.html)
 
-`<SYSTEM__VARIABLE__NAME>` は、次の文字に置き換えられた二重のアンダースコア文字を含む設定パスです。 `/`. 詳しくは、 [手順 2:システム変数の設定](#step-2-set-global-website-or-store-view-variables).
+`<SYSTEM__VARIABLE__NAME>` は、次の文字に置き換えられた二重のアンダースコア文字を含む設定パスです。 `/`. 詳しくは、 [手順 2：システム変数の設定](#step-2-set-global-website-or-store-view-variables).
 
 ### 変数の形式
 
-`<SCOPE>` が `<SYSTEM__VARIABLE__NAME>` 2 つのアンダースコア文字を使用します。
+`<SCOPE>` が次の値と区切られている `<SYSTEM__VARIABLE__NAME>` 2 つのアンダースコア文字を使用します。
 
-`<SYSTEM__VARIABLE__NAME>` は、設定の _設定パス_( これは、 `/` 特定の設定を一意に識別する区切り文字列。 各 `/` 構成パス内の文字に 2 つのアンダースコア文字を付けて、システム変数を作成します。
+`<SYSTEM__VARIABLE__NAME>` は、設定の _設定パス_( これは、 `/` 特定の設定を一意に識別する区切り文字列。 次を置き換え `/` 構成パス内の文字に 2 つのアンダースコア文字を付けて、システム変数を作成します。
 
 設定パスにアンダースコア文字が含まれている場合、アンダースコア文字は変数内に残ります。
 
@@ -82,14 +82,14 @@ ht-degree: 0%
 - [Commerce Enterprise B2B 拡張機能の設定パスのリファレンス](config-reference-b2b.md)
 - [その他の設定パスの参照](config-reference-general.md)
 
-## 手順 1:Web サイトを検索するか、Web サイトビューの範囲の値を保存します
+## 手順 1:Web サイトを検索するか、Web サイトビューの範囲の値を格納します。
 
-この項では、次の単位でシステム構成値を検索して設定する方法について説明します。 _範囲_ （ストア表示または web サイト）。 グローバルスコープ変数を設定するには、 [手順 2:グローバル、Web サイト、またはストア表示変数を設定する](#step-2-set-global-website-or-store-view-variables).
+この項では、次の単位でシステム構成値を検索して設定する方法について説明します。 _範囲_ （ストア表示または web サイト）。 グローバルスコープ変数を設定するには、 [手順 2：グローバル、Web サイト、またはストア表示変数を設定する](#step-2-set-global-website-or-store-view-variables).
 
-スコープ値は `store`, `store_group`、および `store_website` テーブル。
+スコープの値は `store`, `store_group`、および `store_website` テーブル。
 
-- この `store` テーブルは、ストアビューの名前とコードを指定します
-- この `store_website` 表は、ウェブサイトの名前とコードを指定します
+- The `store` テーブルは、ストアビューの名前とコードを指定します。
+- The `store_website` 表は、ウェブサイトの名前とコードを指定します。
 
 また、管理者を使用してコード値を検索できます。
 
@@ -97,16 +97,16 @@ ht-degree: 0%
 
 - `Path in Admin` 列
 
-   コンマの前の値は、管理ナビゲーションのパスです。 コンマの後の値は、右側のウィンドウのオプションです。
+  コンマの前の値は、管理ナビゲーションのパスです。 コンマの後の値は、右側のウィンドウのオプションです。
 
 - `Variable name` 列は、対応する環境変数の名前です。
 
-   必要に応じて、これらの設定パラメータのシステム値を環境変数として指定するオプションがあります。
+  必要に応じて、これらの設定パラメータのシステム値を環境変数として指定するオプションがあります。
 
    - 変数名全体は常にオールキャップス
    - 変数名をで始めます。 `CONFIG__` （アンダースコア文字が 2 つあることに注意）。
-   - 次の `<STORE_VIEW_CODE>` または `<WEBSITE_CODE>` 以下の節で示すように、Admin または Commerce データベース内の変数名の一部。
-   - 以下を見つけることができます。 `<SYSTEM__VARIABLE__NAME>` で説明されているように [手順 2:グローバル、Web サイト、またはストア表示変数を設定する](#step-2-set-global-website-or-store-view-variables).
+   - 次の項目が見つかります。 `<STORE_VIEW_CODE>` または `<WEBSITE_CODE>` 以下の節で示すように、Admin または Commerce データベース内の変数名の一部。
+   - 以下を見つけることができます。 `<SYSTEM__VARIABLE__NAME>` で説明されているように [手順 2：グローバル、Web サイト、またはストア表示変数を設定する](#step-2-set-global-website-or-store-view-variables).
 
 ### Admin で Web サイトまたはストア表示範囲を見つける
 
@@ -128,9 +128,9 @@ ht-degree: 0%
    ![Web サイトコードの検索](../../assets/configuration/website-code.png)
 
 1. スコープ名が **[!UICONTROL Code]** フィールドに入力します。
-1. 続行 [手順 2:グローバル、Web サイト、またはストア表示変数を設定する](#step-2-set-global-website-or-store-view-variables).
+1. 次で続行 [手順 2：グローバル、Web サイト、またはストア表示変数を設定する](#step-2-set-global-website-or-store-view-variables).
 
-### データベース内で Web サイトまたはストア表示範囲を検索する
+### データベース内で Web サイトまたはストア表示範囲を見つける
 
 データベースからこれらの値を取得する手順は、次のとおりです。
 
@@ -167,7 +167,7 @@ ht-degree: 0%
    +------------+-------+--------------+------------+------------------+------------+
    ```
 
-1. 次の `code` 列をスコープ名として指定し、 `name` の値です。
+1. 次の値を使用： `code` 列をスコープ名として指定し、 `name` の値です。
 
    例えば、テスト Web サイトの設定変数を設定するには、次の形式を使用します。
 
@@ -177,13 +177,13 @@ ht-degree: 0%
 
    場所 `<SYSTEM__VARIABLE__NAME>` は次の節から取り上げます。
 
-## 手順 2:グローバル、Web サイト、またはストア表示変数を設定する
+## 手順 2：グローバル、Web サイト、またはストア表示変数を設定する
 
 このセクションでは、システム変数を設定する方法について説明します。
 
 - グローバルスコープ（すべての Web サイト、ストア、ストア表示）の値を設定するには、変数名をで始めます。 `CONFIG__DEFAULT__`.
 
-- 特定のストア表示または Web サイトの値を設定するには、変数名を開始します ( [手順 1:スコープ値を検索](#step-1-find-the-website-or-store-view-scope-value):
+- 特定のストア表示または Web サイトの値を設定するには、変数名を開始します ( [手順 1：スコープ値を検索する](#step-1-find-the-website-or-store-view-scope-value):
 
    - `CONFIG__WEBSITES`
    - `CONFIG__STORES`
@@ -216,7 +216,7 @@ ht-degree: 0%
 
 1. 変数名の残りの部分はです。 `CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME`.
 
-   **結果**:変数名はです。 `CONFIG__DEFAULT__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME`
+   **結果**：変数名はです。 `CONFIG__DEFAULT__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME`
 
 ### 輸送先の国の起源
 
@@ -224,13 +224,13 @@ ht-degree: 0%
 
 1. 範囲を決定します。
 
-   でスコープを検索します。 [データベース](#find-a-website-or-store-view-scope-in-the-database) 手順 1 で説明したように、Web サイトまたはストアビューの範囲の値を見つけます。 ( また、 [手順 2 の表：グローバル、Web サイト、またはストア表示変数を設定する](#step-2-set-global-website-or-store-view-variables.
+   でスコープを検索します。 [データベース](#find-a-website-or-store-view-scope-in-the-database) 手順 1: web サイトを検索するか、store view の範囲の値を参照してください。 ( また、 [手順 2 の表：グローバル、Web サイト、またはストア表示の変数を設定する](#step-2-set-global-website-or-store-view-variables.
 
    例えば、範囲は `CONFIG__WEBSITES__DEFAULT`.
 
 1. 変数名の残りの部分はです。 `SHIPPING__ORIGIN__COUNTRY_ID`.
 
-   **結果**:変数名はです。 `CONFIG__WEBSITES__DEFAULT__SHIPPING__ORIGIN__COUNTRY_ID`
+   **結果**：変数名はです。 `CONFIG__WEBSITES__DEFAULT__SHIPPING__ORIGIN__COUNTRY_ID`
 
 ## 環境変数の使用方法
 

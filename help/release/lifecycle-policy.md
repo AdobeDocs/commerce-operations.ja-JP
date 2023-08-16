@@ -1,11 +1,11 @@
 ---
 title: ソフトウェアライフサイクルポリシー
-description: Adobe Commerceリリースのソフトウェアサポート終了の主な日付について説明します。
+description: Adobe Commerce リリースのソフトウェアサポート終了の主な日付について説明します。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 source-git-commit: c1f490d98dd74bd5f33f35c5ff7bedeeb0e6f7e4
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 12%
+ht-degree: 16%
 
 ---
 

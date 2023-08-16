@@ -6,7 +6,7 @@ topic: Administration, Commerce, Development, Upgrade
 source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 - 準備 {#prepare}
    - [ベストプラクティス](prepare/best-practices.md)
    - [プラットフォームの変更の確認](prepare/platform-changes.md)
-   - [アップグレードの前提条件](prepare/prerequisites.md)
+   - [アップグレードの前提条件の完了](prepare/prerequisites.md)
    - [Elasticsearchから OpenSearch への移行](prepare/opensearch-migration.md)
    - [アップグレード範囲の理解](prepare/scope.md)
 - 実装 {#implementation}
@@ -36,7 +36,7 @@ ht-degree: 0%
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
    - [概要](upgrade-compatibility-tool/overview.md)
    - [必要システム構成](upgrade-compatibility-tool/prerequisites.md)
-   - 以下を使用： [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
+   - 以下を使用します。 [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
       - [コマンドラインインターフェイスでツールを実行する](upgrade-compatibility-tool/run.md)
       - [との統合 [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
       - [PHPStorm プラグイン内でMagentoを実行](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
@@ -49,7 +49,7 @@ ht-degree: 0%
    - [モジュールの管理](developer/manage-modules.md)
 - トラブルシューティング {#troubleshooting}
    - [現在の検索エンジンはサポートされていません](troubleshooting/search-engine-not-supported.md)
-   - [モジュールの更新エラー後にロールバック](troubleshooting/roll-back-after-update-failure.md)
+   - [モジュールの更新エラー後にロールバックする](troubleshooting/roll-back-after-update-failure.md)
    - [アップグレードのメンテナンスモードオプション](troubleshooting/maintenance-mode-options.md)
 - リソース {#resources}
    - [推奨読み物](resources/recommended-reading.md)

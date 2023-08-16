@@ -18,7 +18,7 @@ ht-degree: 0%
 チェックリストをダウンロードするには、次のリンクをクリックします。
 
 - [成熟度](../../assets/playbooks/checklists/maturity.pptx)
-- [運用開始](../../assets/playbooks/checklists/go-live.pptx)
+- [ライブにする](../../assets/playbooks/checklists/go-live.pptx)
 - [パフォーマンス](../../assets/playbooks/checklists/performance.pptx)
 - [コマースプラットフォームの移行](../../assets/playbooks/checklists/commerce-platform-migration.pptx)
 

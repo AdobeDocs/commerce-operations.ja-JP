@@ -14,7 +14,7 @@ ht-degree: 0%
 
 この節では、以下の管理で使用できる変数名と設定パスを示します。 **ストア** /設定/ **設定** > **セールス**.
 
-この [`magento app:config:dump` command](../cli/export-configuration.md) は、これらの値を共有設定ファイルに書き込みます。 `app/etc/config.php`（ソース管理下に置く必要があります） オプションで設定を上書きしたり、機密設定を設定したりするには、 [環境変数を使用して設定を上書きする](override-config-settings.md#environment-variables). このトピックでは、 _not_ リスト [機密性の高いシステム固有の値](config-reference-sens.md).
+The [`magento app:config:dump` command](../cli/export-configuration.md) は、これらの値を共有設定ファイルに書き込みます。 `app/etc/config.php`（ソース管理下に置く必要があります） オプションで設定を上書きしたり、機密設定を設定したりするには、 [環境変数を使用して設定を上書きする](override-config-settings.md#environment-variables). このトピックでは、 _not_ リスト [機密性の高いシステム固有の値](config-reference-sens.md).
 
 ## 販売パス
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 | 実際の価格を表示 | `sales/msrp/display_price_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | デフォルトのポップアップテキストメッセージ | `sales/msrp/explanation_message` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | デフォルトの「What&#39;s This」テキストメッセージ | `sales/msrp/explanation_message_whats_this` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Storefront のマイアカウントで SKU ごとの注文を有効にする | `sales/product_sku/my_account_enable` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
+| Storefront のマイアカウントで SKU ごとの並べ替えを有効にする | `sales/product_sku/my_account_enable` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 有効 | `sales/instant_purchase/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ボタンのテキスト | `sales/instant_purchase/button_text` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顧客グループ | `sales/product_sku/allowed_groups` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
@@ -84,7 +84,7 @@ ht-degree: 0%
 | 有効 | `sales_email/order_comment/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 注文コメントメール送信者 | `sales_email/order_comment/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 注文コメントメールテンプレート | `sales_email/order_comment/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| ゲスト用コメントメールテンプレートを注文 | `sales_email/order_comment/guest_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| ゲスト用のコメントメールテンプレートを注文 | `sales_email/order_comment/guest_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 注文コメントメールコピーメソッドの送信 | `sales_email/order_comment/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 有効 | `sales_email/invoice/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 請求書メール送信者 | `sales_email/invoice/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -94,8 +94,8 @@ ht-degree: 0%
 | 有効 | `sales_email/invoice_comment/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 請求書コメントメール送信者 | `sales_email/invoice_comment/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 請求書コメントメールテンプレート | `sales_email/invoice_comment/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| ゲスト用請求書コメントメールテンプレート | `sales_email/invoice_comment/guest_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 請求書コメントの送信メールコピー方法 | `sales_email/invoice_comment/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| ゲスト用の請求書コメントメールテンプレート | `sales_email/invoice_comment/guest_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 請求書コメントの送信メールのコピー方法 | `sales_email/invoice_comment/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 有効 | `sales_email/shipment/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 出荷メール送信者 | `sales_email/shipment/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 出荷メールテンプレート | `sales_email/shipment/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -108,7 +108,7 @@ ht-degree: 0%
 | 出荷コメントのメールコピー方法の送信 | `sales_email/shipment_comment/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 有効 | `sales_email/creditmemo/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | クレジットメモメール送信者 | `sales_email/creditmemo/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| クレジットメモメールテンプレート | `sales_email/creditmemo/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| クレジットメモ電子メールテンプレート | `sales_email/creditmemo/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ゲスト用クレジットメモメールテンプレート | `sales_email/creditmemo/guest_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | クレジット・メモの電子メール・コピー・メソッドの送信 | `sales_email/creditmemo/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 有効 | `sales_email/creditmemo_comment/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -119,23 +119,23 @@ ht-degree: 0%
 | 有効 | `sales_email/magento_rma/enabled` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | RMA E メール送信者 | `sales_email/magento_rma/identity` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | RMA 電子メールテンプレート | `sales_email/magento_rma/template` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
-| ゲスト用 RMA 電子メールテンプレート | `sales_email/magento_rma/guest_template` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
-| RMA E メールコピー方法の送信 | `sales_email/magento_rma/copy_method` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
+| ゲスト用の RMA 電子メールテンプレート | `sales_email/magento_rma/guest_template` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
+| RMA E メール・コピー・メソッドの送信 | `sales_email/magento_rma/copy_method` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 有効 | `sales_email/magento_rma_auth/enabled` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | RMA 承認 E メール送信者 | `sales_email/magento_rma_auth/identity` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
-| RMA 承認メールテンプレート | `sales_email/magento_rma_auth/template` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
+| RMA 承認電子メールテンプレート | `sales_email/magento_rma_auth/template` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | ゲスト用の RMA 承認メールテンプレート | `sales_email/magento_rma_auth/guest_template` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
-| RMA 認証 E メールのコピー方法の送信 | `sales_email/magento_rma_auth/copy_method` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
+| RMA 認証 E メール・コピー・メソッドの送信 | `sales_email/magento_rma_auth/copy_method` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 有効 | `sales_email/magento_rma_comment/enabled` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | RMA コメント E メール送信者 | `sales_email/magento_rma_comment/identity` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | RMA コメント電子メールテンプレート | `sales_email/magento_rma_comment/template` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | ゲスト用 RMA コメント電子メールテンプレート | `sales_email/magento_rma_comment/guest_template` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
-| RMA E メールコピー方法の送信 | `sales_email/magento_rma_comment/copy_method` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
+| RMA E メール・コピー・メソッドの送信 | `sales_email/magento_rma_comment/copy_method` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 有効 | `sales_email/magento_rma_customer_comment/enabled` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | RMA コメント E メール送信者 | `sales_email/magento_rma_customer_comment/identity` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | RMA コメントの電子メール受信者 | `sales_email/magento_rma_customer_comment/recipient` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | RMA コメント電子メールテンプレート | `sales_email/magento_rma_customer_comment/template` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
-| RMA E メールコピー方法の送信 | `sales_email/magento_rma_customer_comment/copy_method` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
+| RMA E メール・コピー・メソッドの送信 | `sales_email/magento_rma_customer_comment/copy_method` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | ヘッダーに注文 ID を表示 | `sales_pdf/invoice/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ヘッダーに注文 ID を表示 | `sales_pdf/shipment/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ヘッダーに注文 ID を表示 | `sales_pdf/creditmemo/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -149,7 +149,7 @@ ht-degree: 0%
 | 名前 | 設定パス | コマースのみ？ |
 |--------------|--------------|--------------|
 | 輸送用税区分 | `tax/classes/shipping_tax_class` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| ギフトオプションの税区分 | `tax/classes/wrapping_tax_class` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
+| 贈与オプションの税区分 | `tax/classes/wrapping_tax_class` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 製品のデフォルト税区分 | `tax/classes/default_product_tax_class` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顧客のデフォルト税区分 | `tax/classes/default_customer_tax_class` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 次に基づく税金計算方法 | `tax/calculation/algorithm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -185,8 +185,8 @@ ht-degree: 0%
 | 製品リストに価格を表示 | `tax/weee/display_list` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 製品表示ページに価格を表示 | `tax/weee/display` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 販売モジュールの価格を表示 | `tax/weee/display_sales` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| メールの価格を表示 | `tax/weee/display_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| FPT に税を適用 | `tax/weee/apply_vat` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| メールでの価格の表示 | `tax/weee/display_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 税金を FPT に適用 | `tax/weee/apply_vat` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | FPT を小計に含める | `tax/weee/include_in_subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}
@@ -199,8 +199,8 @@ ht-degree: 0%
 |--------------|--------------|--------------|
 | オンページチェックアウトの有効化 | `checkout/options/onepage_checkout_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ゲストによるチェックアウトを許可 | `checkout/options/guest_checkout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 請求先住所を次の日に表示 | `checkout/options/display_billing_address_on` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 利用条件の有効化 | `checkout/options/enable_agreements` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 請求先住所を次の日に表示： | `checkout/options/display_billing_address_on` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 利用条件を有効にする | `checkout/options/enable_agreements` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 見積もりの有効期間（日数） | `checkout/cart/delete_quote_after` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 買い物かごへの製品リダイレクトの追加後 | `checkout/cart/redirect_to_cart` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | グループ化された製品画像 | `checkout/cart/grouped_product_image` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -279,17 +279,17 @@ ht-degree: 0%
 | 特定の国に出荷 | `carriers/tablerate/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 該当しない場合はメソッドを表示 | `carriers/tablerate/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 並べ替え順 | `carriers/tablerate/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| チェックアウトに有効 | `carriers/ups/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| チェックアウトに対して有効 | `carriers/ups/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | RMA に対して有効 | `carriers/ups/active_rma` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | UPS タイプ | `carriers/ups/type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | モード | `carriers/ups/mode_xml` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 出荷元 | `carriers/ups/origin_shipment` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ゲートウェイ URL | `carriers/ups/gateway_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | タイトル | `carriers/ups/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| ネゴシエートされたレートの有効化 | `carriers/ups/negotiated_active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| ネゴシエートされたレートを有効にする | `carriers/ups/negotiated_active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | パッケージのリクエストタイプ | `carriers/ups/shipment_requesttype` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | コンテナ | `carriers/ups/container` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 重量単位 | `carriers/ups/unit_of_measure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 重み付け単位 | `carriers/ups/unit_of_measure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 宛先のタイプ | `carriers/ups/dest_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最大パッケージ重み（サポートされる最大配送量については、配送業者にお問い合わせください） | `carriers/ups/max_package_weight` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ピックアップ方法 | `carriers/ups/pickup` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -306,7 +306,7 @@ ht-degree: 0%
 | 特定の国に出荷 | `carriers/ups/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 該当しない場合はメソッドを表示 | `carriers/ups/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 並べ替え順 | `carriers/ups/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| チェックアウトに有効 | `carriers/usps/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| チェックアウトに対して有効 | `carriers/usps/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | RMA に対して有効 | `carriers/usps/active_rma` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | モード | `carriers/usps/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | パッケージのリクエストタイプ | `carriers/usps/shipment_requesttype` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -331,7 +331,7 @@ ht-degree: 0%
 | デバッグ | `carriers/usps/debug` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 該当しない場合はメソッドを表示 | `carriers/usps/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 並べ替え順 | `carriers/usps/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| チェックアウトに有効 | `carriers/fedex/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| チェックアウトに対して有効 | `carriers/fedex/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | RMA に対して有効 | `carriers/fedex/active_rma` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | タイトル | `carriers/fedex/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Web サービス URL （実稼動） | `carriers/fedex/production_webservices_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -339,7 +339,7 @@ ht-degree: 0%
 | パッケージのリクエストタイプ | `carriers/fedex/shipment_requesttype` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | パッケージ | `carriers/fedex/packaging` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ドロップオフ | `carriers/fedex/dropoff` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 重量単位 | `carriers/fedex/unit_of_measure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 重み付け単位 | `carriers/fedex/unit_of_measure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最大パッケージ重み（サポートされる最大配送量については、配送業者にお問い合わせください） | `carriers/fedex/max_package_weight` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 処理費の計算 | `carriers/fedex/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 適用された処理 | `carriers/fedex/handling_action` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -356,15 +356,15 @@ ht-degree: 0%
 | デバッグ | `carriers/fedex/debug` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 該当しない場合はメソッドを表示 | `carriers/fedex/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 並べ替え順 | `carriers/fedex/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| チェックアウトに有効 | `carriers/dhl/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| チェックアウトに対して有効 | `carriers/dhl/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | RMA に対して有効 | `carriers/dhl/active_rma` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | タイトル | `carriers/dhl/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | コンテンツタイプ | `carriers/dhl/content_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 処理費の計算 | `carriers/dhl/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 適用された処理 | `carriers/dhl/handling_action` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 手数料 | `carriers/dhl/handling_fee` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 重みを除算 | `carriers/dhl/divide_order_weight` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 重量単位 | `carriers/dhl/unit_of_measure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 重み付けを除算 | `carriers/dhl/divide_order_weight` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 重み付け単位 | `carriers/dhl/unit_of_measure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | サイズ | `carriers/dhl/size` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 高さ | `carriers/dhl/height` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 深さ | `carriers/dhl/depth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -418,8 +418,8 @@ ht-degree: 0%
 |--------------|--------------|--------------|
 | ギフトカード通知メール送信者 | `giftcard/email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ギフトカード通知メールテンプレート | `giftcard/email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 償還可能 | `giftcard/general/is_redeemable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 全期間（日） | `giftcard/general/lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 取り消し可能 | `giftcard/general/is_redeemable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 全期間（日数） | `giftcard/general/lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ギフトメッセージを許可 | `giftcard/general/allow_message` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ギフトメッセージの最大長 | `giftcard/general/message_max_length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 注文項目が次の場合にギフトカードアカウントを生成 | `giftcard/general/order_item_status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

@@ -2,18 +2,18 @@
 title: カスタムログファイルに書き込む
 description: カスタムログファイルの設定について説明します。
 feature: Configuration, Logs
-badge: label="Contributed by Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
+badge: label="寄稿者：Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
 source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
 # カスタムログファイルに書き込む
 
-この `Magento\Framework\Logger` モジュールには、次のハンドラークラスが含まれます。
+The `Magento\Framework\Logger` モジュールには、次のハンドラークラスが含まれます。
 
 | クラス | ログファイル |
 | ----- | -------- |
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 この例では、 [仮想タイプ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) ログに記録する `debug` 標準のログファイルではなくカスタムログファイルにメッセージを書き込む `/var/log/debug.log`.
 
-1. 内 `di.xml` モジュールのファイル、カスタムログファイルを [仮想タイプ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
+1. Adobe Analytics の `di.xml` モジュールのファイル、カスタムログファイルを [仮想タイプ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomDebug" type="Magento\Framework\Logger\Handler\Base">
@@ -44,7 +44,7 @@ ht-degree: 0%
    </virtualType>
    ```
 
-   この `name` 値 `Magento\Payment\Model\Method\MyCustomDebug` は一意である必要があります。
+   The `name` の値 `Magento\Payment\Model\Method\MyCustomDebug` は一意である必要があります。
 
 1. 別のハンドラーでハンドラーを定義する [仮想タイプ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) ユニークな `name`:
 
@@ -58,7 +58,7 @@ ht-degree: 0%
    </virtualType>
    ```
 
-1. を挿入 `MyCustomLogger` [仮想タイプ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 内 `Magento\Payment\Model\Method\Logger` オブジェクト：
+1. を挿入する `MyCustomLogger` [仮想タイプ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) （内） `Magento\Payment\Model\Method\Logger` オブジェクト：
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 ## ロガーハンドラークラスでのカスタムログファイルの設定
 
-この例では、カスタムロガーハンドラークラスを使用してログを記録する方法を示します `error` メッセージを特定のログファイルに書き込みます。
+この例では、カスタムロガーハンドラークラスを使用してログを記録する方法を示します `error` メッセージを特定のログファイルに書き込む。
 
 1. データを記録するクラスを作成します。 この例では、クラスは `app/code/Vendor/ModuleName/Logger/Handler/ErrorHandler.php`.
 
@@ -131,7 +131,7 @@ ht-degree: 0%
 
    `MyCustomLogger` は一意の識別子です。
 
-1. 内 `type` 定義では、カスタムロガーハンドラーが挿入されるクラス名を指定します。 前の手順で作成した仮想型名を、この型の引数として使用します。
+1. Adobe Analytics の `type` 定義では、カスタムロガーハンドラーが挿入されるクラス名を指定します。 前の手順で作成した仮想型名を、この型の引数として使用します。
 
    ```xml
    <type name="Vendor\ModuleName\Observer\MyObserver">

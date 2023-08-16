@@ -1,13 +1,13 @@
 ---
 title: アップグレードの実行
 description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceプロジェクトをアップグレードします。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
 
 ---
-
 
 # アップグレードの実行
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 >
 >GitHub リポジトリを複製した場合は、この方法を使用してアップグレードしないでください。 代わりに、 [Git ベースのインストールのアップグレード](../developer/git-installs.md) を参照してください。
 
-以下の手順は、Composer を使用してアップグレードする方法を示しています。 Adobe Commerce 2.4.2 では、Composer 2 のサポートが導入されました。 &lt;2.4.1 からアップグレードする場合は、まず Composer 1 を使用して、Composer 2 と互換性のあるバージョン（例：2.4.2）にアップグレードする必要があります _前_ 2.4.2 以降のアップグレードの場合は、Composer 2 にアップグレードします。 さらに、 [サポート対象バージョン](../../installation/system-requirements.md) PHP の
+以下の手順は、Composer を使用してアップグレードする方法を示しています。 Adobe Commerce 2.4.2 では、Composer 2 のサポートが導入されました。 &lt;2.4.1 からアップグレードする場合は、まず Composer 1 を使用して、Composer 2 と互換性のあるバージョン（例えば、2.4.2）にアップグレードする必要があります _前_ 2.4.2 以降のアップグレードの場合は、Composer 2 にアップグレードします。 さらに、 [サポート対象バージョン](../../installation/system-requirements.md) PHP の
 
 >[!WARNING]
 >
@@ -52,7 +52,7 @@ ht-degree: 0%
    ./vendor/bin/ece-tools cron:disable
    ```
 
-   _Magento Open Source:_
+   _MAGENTO OPEN SOURCE:_
 
    ```bash
    bin/magento cron:remove
@@ -66,7 +66,7 @@ ht-degree: 0%
 
    cron ジョブが完了するのを待ちます。 ジョブのステータスを監視するには、プロセスビューアを使用するか、 `ps aux | grep 'bin/magento queue'` すべてのプロセスが完了するまで、コマンドを複数回実行します。
 
-1. のバックアップを作成する `composer.json` ファイル。
+1. のバックアップを作成します。 `composer.json` ファイル。
 
    ```bash
    cp composer.json composer.json.bak
@@ -86,19 +86,19 @@ ht-degree: 0%
    composer require <sample data module-1>:<version> ... <sample data module-n>:<version> --no-update
    ```
 
-   - _Adobe Commerce:_
+   - _ADOBE COMMERCE:_
 
-      ```bash
-      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
-      ```
+     ```bash
+     composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
+     ```
 
-   - _Magento Open Source:_
+   - _MAGENTO OPEN SOURCE:_
 
-      ```bash
-      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
-      ```
+     ```bash
+     composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
+     ```
 
-1. 次を使用してインスタンスをアップグレードします `composer require-commerce` コマンド構文：
+1. 次を使用してインスタンスをアップグレードします `composer require-commerce` コマンドの構文：
 
    ```bash
    composer require-commerce magento/<product> <version> --no-update [--interactive-root-conflicts] [--force-root-updates] [--help]
@@ -117,7 +117,8 @@ ht-degree: 0%
    - `--force-root-updates`  — （オプション）予期されたMagento値を持つ競合するすべてのカスタム値を上書きします。
 
    - `--help`  — （オプション）プラグインの使用状況の詳細を示します。
-   どちらも `--interactive-root-conflicts` nor `--force-root-updates` を指定した場合、コマンドは競合している既存の値を保持し、警告メッセージを表示します。 プラグインについて詳しくは、 [プラグインの使用 README](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
+
+   どちらでもない場合 `--interactive-root-conflicts` nor `--force-root-updates` を指定した場合、コマンドは競合している既存の値を保持し、警告メッセージを表示します。 プラグインについて詳しくは、 [プラグインの使用 README](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
 
 1. 依存関係を更新します。
 
@@ -181,7 +182,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.3 --no-update
 
 セキュリティパッチにはセキュリティ修正のみが含まれています。 これらは、アップグレードプロセスをより迅速かつ容易にするように設計されています。
 
-セキュリティパッチでは、Composer の命名規則を使用します `2.4.x-px`. Composer を使用してパッチを指定します。
+セキュリティパッチでは、Composer の命名規則を使用します。 `2.4.x-px`. Composer を使用してパッチを指定します。
 
 _Magento Open Source_:
 
@@ -209,7 +210,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-updat
    composer update
    ```
 
-1. をクリア `var/` および `generated/` サブディレクトリ：
+1. 次をクリア： `var/` および `generated/` サブディレクトリ：
 
    ```bash
    rm -rf var/cache/*
@@ -253,7 +254,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-updat
 
 アプリケーションが  `We're sorry, an error has occurred while generating this email.` エラー：
 
-1. リセット [ファイルシステムの所有権と権限](../../installation/prerequisites/file-system/configure-permissions.md) を使用して `root` 権限。
+1. リセット [ファイル・システムの所有権と権限](../../installation/prerequisites/file-system/configure-permissions.md) を使用して `root` 権限。
 1. 次のディレクトリをクリアします。
    - `var/cache/`
    - `var/page_cache/`

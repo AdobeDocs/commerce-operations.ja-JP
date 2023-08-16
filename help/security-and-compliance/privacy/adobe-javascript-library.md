@@ -3,19 +3,19 @@ title: Adobeプライバシー JavaScript ライブラリ
 description: Adobe CommerceおよびMagento Open Sourceが収集した顧客の個人情報にアクセスし削除するためのカスタムツールの使用方法を説明します。
 hide: true
 hidefromtoc: true
-source-git-commit: 495dfd515759e4df507479de57118586eac14fda
+exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%
 
 ---
 
-
 # Adobeプライバシー JavaScript ライブラリ
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-この [Adobeプライバシー JavaScript ライブラリ](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) は、プライベートデータにアクセスして削除するプロセスを作成するのに役立つ一連のツールです。
+The [Adobeプライバシー JavaScript ライブラリ](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) は、プライベートデータにアクセスして削除するためのプロセスを作成するのに役立つ一連のツールです。
 
 Adobe CommerceおよびMagento Open Sourceデータトラッキングサービスは、 [一般データ保護規則 (GDPR)](gdpr.md) および [カリフォルニア州消費者プライバシー法 (CCPA)](ccpa.md).
 
@@ -35,13 +35,13 @@ Adobe CommerceおよびMagento Open Sourceデータトラッキングサービ�
 AdobePrivacy JS ライブラリは、ブラウザーに保存された ID データを管理するための様々な機能を提供します。
 
 `retrieveIdentities()`
-:サービスから ID の配列と、サービスで見つからない ID の配列を返します
+：サービスから ID の配列と、サービスで見つからない ID の配列を戻します
 
 `removeIdentities()`
-:ブラウザーから ID を削除し、 `isDeleteClientSide` データが削除されたかどうかを示す boolean プロパティです。
+:ID をブラウザーから削除し、ID オブジェクトの配列を `isDeleteClientSide` データが削除されたかどうかを示す boolean プロパティです。
 
 `retrieveThenRemoveIdentities()`
-:この関数は、 `removeIdentities()` では、id の配列を取得し、ブラウザーから削除します。
+：この関数は、に似ています。 `removeIdentities()` では、id の配列を取得し、ブラウザーから削除します。
 
 これらの関数の詳細と使用例については、 [公式ライブラリドキュメント](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html).
 

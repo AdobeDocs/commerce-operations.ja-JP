@@ -34,7 +34,7 @@ ht-degree: 0%
                 mysqli<br>
                 pcntl<br>
                 pdo_mysql<br>
-                sop<br>
+                soap<br>
                 ソケット<br>
                 sysvmsg<br>
                 sysvsem<br>
@@ -59,10 +59,10 @@ ht-degree: 0%
                 pcre<br>
                 pdo<br>
                 pdo_sqlite<br>
-                phar<br>
+                phal<br>
                 posix<br>
                 readline<br>
-                セッション<br>
+                session<br>
                 sqlite3<br>
                 トークナイザー<br>
                 xml<br>
@@ -84,14 +84,14 @@ ht-degree: 0%
                 oauth<br>
                 pdo_mysql<br>
                 propro<br>
-                スペル<br>
+                呪文<br>
                 ラファン<br>
-                記録<br>
+                レコード<br>
                 redis<br>
-                shomp ソケット<br>
+                shimmop ソケット<br>
                 ナトリウム<br>
                 ssh2<br>
-                整頓する<br>
+                きちんと<br>
                 xdebug<br>
                 xmlrpc<br>
                 xsl<br>

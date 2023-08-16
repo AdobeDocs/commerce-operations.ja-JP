@@ -13,7 +13,7 @@ ht-degree: 0%
 # ベンチマークの概要
 
 Adobe Commerce 2.4.5 のパフォーマンスベンチマーク結果は、以下のインフラストラクチャと追加のコンポーネントを使用してデプロイされたAdobe Commerceインスタンスで測定されたパフォーマンスを反映しています。
-- [Pro クラウド環境](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) と [スケールアーキテクチャ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)
+- [Pro クラウド環境](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) 次を使用 [規模の大きい建築](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)
 - [Adobe Commerce用 B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/introduction.html)
 - [Adobe Commerce Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html)
 - [Adobe Stock](https://experienceleague.adobe.com/docs/commerce-admin/content-design/media/adobe-stock/adobe-stock.html)
@@ -32,7 +32,7 @@ Adobe Commerce 2.4.5 のパフォーマンスベンチマーク結果は、以�
 
 ### パフォーマンスのハイライト
 
-- **注文** — 第 99 百分位の応答時間を 2 秒未満に保ちながら、1 分あたり 3,481 の注文を処理しました（要求の 99%が応答時間 2 秒未満で処理されました）。
+- **購入回数** — 第 99 百分位の応答時間を 2 秒未満に保ちながら、1 分あたり 3,481 の注文を処理しました（要求の 99%が応答時間 2 秒未満で処理されました）。
 - **ページビュー数** — 第 99 百分位の応答時間は 2 秒未満で維持しながら、1 時間あたり 200 万件を超えるページビューが処理されます。
 - **有効な SKU** — 顧客プロファイルには 2 億 4200 万の異なる価格変動 (<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">eSKU</a>) 250,000 個の製品に対して使用できます。
 - **GraphQL Requests** — システムは、99 番目のパーセンタイル値に対して 2 秒未満の応答時間を維持しながら、1 分あたり 10,500 個のGraphQLのキャッシュされていない要求に拡張されました。
@@ -56,7 +56,7 @@ Adobe Commerce 2.4.5 のパフォーマンスベンチマーク結果は、以�
    - 250 個の同時スレッド
    - 0% CDN キャッシュヒット率に設定
 
-     GraphQLの前面にあるキャッシュレイヤーを使用すると、応答時間が大幅に短縮されます。
+     GraphQLの前にあるキャッシュレイヤーを使用すると、応答時間が大幅に短縮されます。
 
 - **管理 Web**
    - 500 人の同時ユーザー

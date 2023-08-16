@@ -1,13 +1,13 @@
 ---
 title: オンプレミスインストールの前提条件
 description: Adobe CommerceとMagento Open Sourceのオンプレミスインストールに必要なソフトウェアの依存関係について詳しく説明します。
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+exl-id: dd4694e7-5437-440c-bb67-804ae36149de
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # オンプレミスインストールの前提条件
 
@@ -27,23 +27,23 @@ Adobe CommerceまたはMagento Open Sourceをインストールする前に、�
 
 * Ubuntu
 
-   ```bash
-   apt-get update
-   ```
+  ```bash
+  apt-get update
+  ```
 
-   ```bash
-   apt-get upgrade
-   ```
+  ```bash
+  apt-get upgrade
+  ```
 
 * CentOS
 
-   ```bash
-   yum -y update
-   ```
+  ```bash
+  yum -y update
+  ```
 
-   ```bash
-   yum -y upgrade
-   ```
+  ```bash
+  yum -y upgrade
+  ```
 
 ## 前提条件の確認
 
@@ -66,7 +66,7 @@ Apache をインストールまたはアップグレードするには、 [Apach
 
 ### PHP
 
-詳しくは、 [システム要件](../system-requirements.md) （PHP およびのサポート対象バージョン） [PHP] PHP の要件に関する情報。
+詳しくは、 [システム要件](../system-requirements.md) （PHP およびのサポート対象バージョンの場合） [PHP] PHP の要件に関する情報。
 
 ### MySQL
 
@@ -80,7 +80,7 @@ mysql -u <database root user or database owner name> -p
 mysql -u magento -p
 ```
 
-インストールするAdobe CommerceまたはMagento Open Source([サポートされているバージョンについては、こちらを参照してください](../system-requirements.md). 次の結果は、実行中のバージョンを示します )。
+インストールするAdobe CommerceまたはMagento Open Source([サポートされているバージョンについては、こちらを参照してください。](../system-requirements.md). 次の結果は、実行中のバージョンを示します )。
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -96,13 +96,13 @@ owners.
 
 タイプ `help` または `\h` を参照してください。 タイプ `\c` 現在の入力文をクリアするには、をクリックします。
 
-入力 `exit` 時刻 `mysql>` 終了するプロンプトが表示されます。
+入力 `exit` 時刻： `mysql>` 終了するプロンプトが表示されます。
 
 MySQL をインストールまたはアップグレードするには、 [MySQL](database/mysql.md).
 
 ### 検索エンジン
 
-OpenSearch のインストールを確認するには：
+OpenSearch のインストールを確認するには、次の手順に従います。
 
 ```bash
 curl -XGET '<opensearch-hostname>:<opensearch-port>'

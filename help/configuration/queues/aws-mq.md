@@ -1,19 +1,19 @@
 ---
 title: Amazon Message Queue の設定
 description: AWS MQ サービスを使用するように Commerce を設定する方法を説明します。
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
 
 ---
 
-
 # Amazon Message Queue の設定
 
 Commerce 2.4.3 以降、Amazon Message Queue(MQ) は、オンプレミスのメッセージキューインスタンスに対するクラウド対応の代替機能として使用できます。
 
-AWSでメッセージキューを作成するには、 [Amazon MQ の設定](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html) 内 _AWSドキュメント_.
+AWSでメッセージキューを作成するには、 [Amazon MQ の設定](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html) （内） _AWSドキュメント_.
 
 ## Commerce for AWS MQ の設定
 
@@ -35,9 +35,9 @@ AWS Message Queue には SSL/TLS 接続が必要です。
 ],
 ```
 
-ここで、
+次の場合：
 
-- `host`- AMQP エンドポイントの URL。AWSでブローカー名 (「https://」を削除し、末尾のポート番号を削除 ) をクリックすると使用できます。
+- `host`—AMQP エンドポイントの URL。AWSでブローカー名をクリックする (「https://」を削除し、末尾のポート番号を削除 ) と使用できます。
 - `user`— AWS MQ ブローカーの作成時に入力したユーザー名の値
 - `password`— AWS MQ ブローカーの作成時に入力したパスワード値
 
@@ -45,7 +45,7 @@ AWS Message Queue には SSL/TLS 接続が必要です。
 >
 >Amazon MQ は、TLS 接続のみをサポートします。 ピアの検証はサポートされていません。
 
-編集後 `env.php` ファイルを開き、次のコマンドを実行して設定を完了します。
+編集後、 `env.php` ファイルを開き、次のコマンドを実行して設定を完了します。
 
 ```bash
 bin/magento setup:upgrade
@@ -53,7 +53,7 @@ bin/magento setup:upgrade
 
 ## Commerce がAWS MQ サービスを使用する方法
 
-この `async.operations.all` メッセージキューコンシューマーは、AMQP 接続を使用します。
+The `async.operations.all` メッセージキューコンシューマーは、AMQP 接続を使用します。
 
 このコンシューマーは、 `async` AWS MQ 接続を介して
 
@@ -65,13 +65,13 @@ async.V1.inventory.bulk-product-source-unassign.POST
 async.V1.inventory.bulk-product-source-transfer.POST
 ```
 
-のデフォルト設定 `InventoryCatalog` にメッセージを公開しません [!DNL RabbitMQ];デフォルトの動作では、同じユーザースレッドでアクションを実行します。 次の情報を `InventoryCatalog` メッセージを公開するには、有効にします。 `cataloginventory/bulk_operations/async`. 管理者から、に移動します。 **ストア** /設定 > **カタログ** > **在庫** /管理者の一括操作とセット  `Run asynchronously`から **はい**.
+のデフォルト設定 `InventoryCatalog` にメッセージを公開しません [!DNL RabbitMQ]。デフォルトの動作では、同じユーザースレッドでアクションを実行します。 To to tell `InventoryCatalog` メッセージを公開するには、有効にします。 `cataloginventory/bulk_operations/async`. 管理者から、に移動します。 **ストア** /設定 > **カタログ** > **在庫** /管理者の一括操作とセット  `Run asynchronously`から **はい**.
 
 ## メッセージキューのテスト
 
 Commerce からに送信されるメッセージをテストするには [!DNL RabbitMQ]:
 
-1. にログインします。 [!DNL RabbitMQ] キューを監視するAWSの web コンソール
+1. にログインします。 [!DNL RabbitMQ] キューを監視するためのAWSの web コンソール
 1. 管理者で、製品を作成します。
 1. 在庫ソースを作成します。
 1. 有効にする **ストア** /設定 > **カタログ** > **在庫** /管理者の一括操作/非同期で実行。

@@ -1,13 +1,13 @@
 ---
 title: .gitignore リファレンス
 description: 無視リストに含まれるファイルを追加する方法を参照してください。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: 7c53b50a-7bdf-433b-bebb-0129f792a1a4
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '55'
 ht-degree: 0%
 
 ---
-
 
 # .gitignore リファレンス
 

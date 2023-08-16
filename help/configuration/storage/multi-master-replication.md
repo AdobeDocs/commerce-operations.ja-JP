@@ -31,7 +31,7 @@ MySQL データベースは非同期でレプリケートされます。つま�
 - [MySQL ドキュメント](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
 - [MySQL(digitalocean) でマスタースレーブレプリケーションを設定する方法](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
-Commerce には、スレーブデータベース用の MySQL 設定例が用意されています。 簡単な設定が、 `ResourceConnections` クラス `README.md`.
+Commerce には、スレーブデータベース用の MySQL 設定例が用意されています。 簡単な設定は、 `ResourceConnections` クラス `README.md`.
 
 次の機能は、より高度なもので、ユーザー情報に対してのみ提供されています。
 
@@ -124,7 +124,7 @@ Commerce には、スレーブデータベース用の MySQL 設定例が用意�
 
 マスタースレーブレプリケーションのパフォーマンスを向上させるには、スレーブインスタンス上の一部のテーブルをフィルタリングします。 名前のパターンを持つすべての一時テーブルをフィルタリングすることをお勧めします `search\_tmp\_%` カタログ検索に使用されます。
 
-これをおこなうには、 `my.cnf` スレーブインスタンス上のファイル：
+これをおこなうには、次の行を `my.cnf` スレーブインスタンス上のファイル：
 
 ```conf
 replicate-wild-ignore-table=%.search\_tmp\_%

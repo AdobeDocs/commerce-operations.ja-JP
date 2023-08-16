@@ -22,7 +22,7 @@ ht-degree: 0%
 
 に目を通して最新のベンチマーク結果を確認する [Experience League- Adobe Commerce — 実装プレイブック — ベンチマーク](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/performance/benchmarks.html){target="_blank"}.
 
-可能な限り最適な状態を維持するには、カスタマイズと複雑さをプロジェクトに追加する際に、次の標準に従います。
+可能な限り最適な状態に保つには、カスタマイズと複雑さをプロジェクトに追加する際に、次の標準に従います。
 
 以下の節では、自己ホスト型実装を最適化する方法について考慮するトピックとアドバイスを示します。
 
@@ -42,17 +42,17 @@ Adobe Commerce On Cloud は、Vanish のキャッシュに Fastly を使用す�
 
 CDN は、Adobe Commerceプロジェクト用に最適化された安全な配信コンテンツを提供します。 これがプロジェクトの必須コンポーネントでない場合は、サイトが成長し、訪問者数が増えると考える必要があります。 CDN を提供すると、各要求から負荷が削除されるので、インフラストラクチャへのハードウェアの追加や既存のインフラストラクチャの拡張を遅らせることができます。
 
-## モジュールの無効化
+## モジュールを無効にする
 
 未使用のモジュールを無効にする場合は、慎重に検討する必要がありますが、慎重におこなう必要はありません。 この方法を使用すると、一部のリクエストでのオーバーヘッドと処理時間が少なくなりますが、考慮すべき副作用があります。 多くの場合、開発者が機能を作成する際にモジュールが使用可能であると想定している場合があります。 無効にされたモジュール内の一部のクラスを使用した場合を除き、多くの場合、これは安全です。
 
 ネイティブの「ニュースレター」などのモジュールを無効にすることは、かなり一般的なイベントです。 これは特に、店舗の所有者がニュースレターを管理するサードパーティの会社を持っている場合に当てはまります。 これが問題になる可能性があるのは、サードパーティのモジュールがインストールされている場合で、何らかの理由でニュースレターのクラスを使用することにした場合です。 この誤った依存関係は、初期のインストールとテストの間に発生する可能性が高いですが、このサードパーティのモジュールを保持するかどうかを決定し、ニュースレターを有効にしてから、サイトの回帰テストを実行して、導入された奇妙な動作を探します。 または、そのサードパーティ製モジュールの代替機能を見つけるか、 どちらの意思決定もリスク、時間、そしておそらくバグを伴います。
 
-未使用のモジュールを無効にする前に、unit、 [MFTF](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing/){target="_blank"}, [Codeception testing](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing/){targe="_blank"} 影響を受ける可能性のあるロードテストまたは API リクエスト。
+未使用のモジュールを無効にする前に、unit、 [MFTF](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing/){target="_blank"}, [Codeception testing](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing/){targe="_blank"} 影響を受ける可能性のあるテストまたは API リクエストを読み込みます。
 
 ## すべてのプル要求に対してAdobe Commerceと PHP のコーディング規格に従う必要がある
 
-Adobe Commerceは [コーディング規格](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. これらは、ソフトウェア開発の種類に関係なく、同様のパターン、スタイル、および期待されるデザインに従うことを保証します。 Adobe Commerceのコードベースに貢献する場合は、これが必須です。 ただし、カスタム開発でこの方法に従うことを選択する場合は、現在と将来の両方のすべての開発者に対して、確実な基礎を確立します。 すべてのプルリクエストにコード標準を渡す必要がある場合、誰もが同じ一貫した開発パターンを理解し、期待できるようにします。
+Adobe Commerceは [コーディング規格](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. これらは、ソフトウェア開発の種類に関係なく、同様のパターン、スタイル、および期待されるデザインに従うことを保証します。 Adobe Commerceのコードベースに貢献する場合は、これが必須です。 ただし、カスタム開発でこの方法に従うことを選択する場合は、現在と将来の両方のすべての開発者に対して、確実な基礎が確立されます。 すべてのプルリクエストにコード標準を渡す必要がある場合、誰もが同じ一貫した開発パターンを理解し、期待できるようにします。
 
 Adobe Commerceのコーディング規格に従うために、他の基盤として PHP の基本的なコーディング規格が使用されます。 開発者ガイドで、従う必要のある標準と、許容可能な偏差について明確に定義する必要があります。 ただし、フォールバックは、次の場所にある公に管理されているガイドに対するものです。 [PHP-FIG](https://www.php-fig.org){target="_blank"}.
 
@@ -60,12 +60,12 @@ PSR-1 および PSR-12 に対する確固たる姿勢。 プロジェクトに�
 
 ## 各デプロイメント後に負荷テストを実行
 
-各デプロイメントの後に負荷テストを実行すると、負荷テストが行き過ぎているように見える場合があります。 ただし、この方法に従うと、新しく導入された機能がパフォーマンスの低下を引き起こす機会を追跡し、軽減することができます。
+各デプロイメント後に負荷テストを実行すると、負荷テストが行き過ぎているように見える場合があります。 ただし、この方法に従うと、新しく導入された機能がパフォーマンスの低下を引き起こす機会を追跡し、軽減することができます。
 
 新しいコードからパフォーマンスの低下を検出する以外に、サイトからの主要指標の履歴参照を使用すると、新しいツールや変更インフラストラクチャが有効になったタイミングを把握できます。 例えば、ホスティング会社に環境の規模を拡大して期待する場合は、新しい設定でステージング環境を設定し、実際の結果を確認するための負荷テストを実行します。
 
 これらのテストは、CI/CD パイプラインの一部として自動化できます。 このため、結果を取り込むルールを適用し、標準との偏差が大きすぎる場合に機能のマージを妨げる可能性もあります。 このデータの使用例の数には制限はありませんが、このプロセスを開始しないと、その可能性を常に認識できなくなります。
 
-Adobe Commerceは、Experience Leagueで見つかったこのトピックに関する良い書き上げを行いました [パフォーマンステストのヒント](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/launch.html){target="_blank"} and in [Testing guidance](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html){target="_blank"}.
+Adobe Commerceは、Experience Leagueで見つかったこのトピックに関する良い書き上げを行いました [パフォーマンステストに関するヒント](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/launch.html){target="_blank"} and in [Testing guidance](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html){target="_blank"}.
 
 {{$include /help/_includes/hosting-related-links.md}}

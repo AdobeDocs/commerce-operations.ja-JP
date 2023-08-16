@@ -21,14 +21,14 @@ ht-degree: 0%
 - プロジェクト範囲
 - アカウントのプロビジョニング
 - ユーザーアクセス
-- 内線購入
+- 拡張機能の購入
 
 次のセクションでは、計画段階のベストプラクティス情報について説明します。
 
 ## 要件収集
 
 - **アプリケーション設定**
-   - [サイト、ストア、ストアの表示（クラウドインフラストラクチャ）の設定に関するベストプラクティス](sites-stores-store-views.md)
+   - [サイト、ストア、ストアの表示（クラウドインフラストラクチャ）を設定する際のベストプラクティス](sites-stores-store-views.md)
    - [Adobe Commerceサイトで最もよく発生する 5 つの設定上の問題の回避方法および修正方法](https://business.adobe.com/blog/how-to/usual-suspects-five-configuration-fixes-maximize-your-peak-sales)
    - [キャッシュのベストプラクティス](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
    - [フルページキャッシュ](https://developer.adobe.com/commerce/php/development/cache/page/public-content/)

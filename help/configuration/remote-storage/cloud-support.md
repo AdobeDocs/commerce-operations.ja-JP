@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # クラウドインフラストラクチャ上のコマース用のリモートストレージの設定
 
-次で始まる `ece-tools` パッケージ 2002.1.5 では、環境変数を使用してリモートストレージモジュールを有効にすることができます。ただし、リモート・ストレージ・モジュールには _制限_ クラウドインフラストラクチャ上のAdobe Commerceのサポート。 Adobeがサードパーティのストレージアダプタサービスを完全にトラブルシューティングできない。
+次で始まる `ece-tools` パッケージ 2002.1.5 では、環境変数を使用してリモートストレージモジュールを有効にできますが、リモートストレージモジュールには _制限_ クラウドインフラストラクチャ上のAdobe Commerceのサポート。 Adobeがサードパーティのストレージアダプタサービスを完全にトラブルシューティングできない。
 
 ## 環境変数
 
-この `REMOTE_STORAGE` 変数は、 [導入段階](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html) クラウドインフラストラクチャプロジェクトの
+The `REMOTE_STORAGE` 変数は、 [導入段階](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html) クラウドインフラストラクチャプロジェクトの
 
 ### `REMOTE_STORAGE`
 
@@ -40,7 +40,7 @@ stage:
 
 ### Cloud CLI で変数を設定
 
-を `REMOTE_STORAGE` 変数 [環境変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html) したがって、実稼動、ステージング、統合の各環境間でファイルが共有されなくなります。 環境レベルで変数を設定すると、リモートストレージの統合環境での使用を除外するなど、選択した環境でのみリモートストレージを使用する柔軟性が得られます。
+を設定します。 `REMOTE_STORAGE` 変数を [環境レベル変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html) したがって、実稼動、ステージング、統合の各環境間でファイルが共有されなくなります。 環境レベルで変数を設定すると、リモートストレージの統合環境での使用を除外するなど、選択した環境でのみリモートストレージを使用する柔軟性が得られます。
 
 **Cloud CLI を使用してリモートストレージ変数を追加するには**:
 
@@ -48,7 +48,7 @@ stage:
 magento-cloud variable:create --level environment --name REMOTE_STORAGE --json true --inheritable false --value '{"driver":"aws-s3","prefix":"uat","config":{"bucket":"aws-bucket-id","region":"eu-west-1","key":"optional-key","secret":"optional-secret"}}'
 ```
 
-これにより、 `REMOTE_STORAGE` 変数に指定された JSON 設定を入力します。 この `REMOTE_STORAGE` 変数は、JSON 文字列を受け取ってリモートストレージを設定します。 次に、JSON の設定例を示します。
+これにより、 `REMOTE_STORAGE` 変数に指定された JSON 設定を入力します。 The `REMOTE_STORAGE` 変数は、JSON 文字列を受け取ってリモートストレージを設定します。 次に、JSON の設定例を示します。
 
 ```json
 {
@@ -71,25 +71,25 @@ magento-cloud variable:create --level environment --name REMOTE_STORAGE --json t
 
 **Project Web インターフェイスを使用してリモートストレージ変数を追加するには**:
 
-1. 内 _Project Web インターフェイス_」で、左から環境を選択します。
+1. Adobe Analytics の _Project Web インターフェイス_」で、左から環境を選択します。
 
-1. 次をクリック： **環境の設定** アイコン
+1. 次をクリック： **環境の設定** アイコン。
 
-1. 内 _環境を設定_ ビューを開き、 **変数** タブをクリックします。
+1. Adobe Analytics の _環境を設定_ ビューを開き、 **変数** タブをクリックします。
 
 1. クリック **変数を追加**.
 
-1. 内 _名前_ フィールドに入力 `REMOTE_STORAGE`
+1. Adobe Analytics の _名前_ フィールドに入力 `REMOTE_STORAGE`
 
-1. 内 _値_ 「 」フィールドで、JSON 設定を追加します。
+1. Adobe Analytics の _値_ 「 」フィールドで、JSON 設定を追加します。
 
-1. 選択 **JSON 値** および **機密**;選択解除 **子環境によって継承可能**.
+1. 選択 **JSON 値** および **機密**；選択解除 **子環境によって継承可能**.
 
 1. クリック **変数を追加**.
 
 ### オプションの認証を使用
 
-この `key` および `secret` はオプションです。 変数を作成する際に、 `key` および `secret` 選択 `sensitive` オプション。 この設定では、値は Web インターフェイスに表示されません。 詳しくは、 [変数の表示](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility) 内 _Commerce on Cloud Infrastructure ガイド_.
+The `key` および `secret` はオプションです。 変数を作成する際に、 `key` および `secret` 選択して `sensitive` オプション。 この設定では、値は Web インターフェイスに表示されません。 詳しくは、 [変数の表示](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility) （内） _Commerce on Cloud Infrastructure ガイド_.
 
 別の認証方法を使用する場合は、 `key` および `secret` を JSON 設定から、 代替認証方法を設定し、サーバーが S3 バケットに対して承認されていることを確認します。
 

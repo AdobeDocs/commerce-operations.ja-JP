@@ -16,7 +16,7 @@ ht-degree: 0%
 
 * 圧縮されたアーカイブをからダウンロード `https://magento.com/tech-resources/download`.
 
-  GitHub からアーカイブをダウンロードした場合、このメソッドは機能しません。 `composer.json` ファイルに `repo.magento.com` URL。
+  GitHub からアーカイブをダウンロードした場合、このメソッドは機能しません。これは、 `composer.json` ファイルに `repo.magento.com` URL。
 
 * 使用済み `composer create-project`
 
@@ -26,13 +26,13 @@ ht-degree: 0%
 >
 >次のようなエラーが発生した場合： `Could not find package...` または `...no matching package found...`で、コマンドに入力ミスがないことを確認します。 それでもエラーが発生する場合、特にAdobe Commerceを使用している場合は、適切な Composer リポジトリにアクセスできない可能性があります。 連絡先 [Adobe Commerceサポート](https://support.magento.com/hc/en-us) を参照してください。
 
-Composer を使用して、アプリケーションのインストール前またはインストール後に、サンプルデータをインストールできます。しかし、 [追加タスク](remove-or-update.md).
+Composer を使用して、アプリケーションのインストール前またはインストール後にサンプルデータをインストールできます。ただし、次の場合があります [その他のタスク](remove-or-update.md).
 
 貢献する開発者の場合は、 [リポジトリの複製によるインストール](git-repositories.md).
 
 >[!WARNING]
 >
->アプリケーションが [実稼動モード](../../configuration/bootstrap/application-modes.md#production-mode). 切り替え先 [開発者モード](../../configuration/bootstrap/application-modes.md#developer-mode) 1 つ目は 実稼働モードでのサンプルデータのインストール [失敗](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-).
+>アプリケーションが [実稼動モード](../../configuration/bootstrap/application-modes.md#production-mode). 切り替え先 [開発者モード](../../configuration/bootstrap/application-modes.md#developer-mode) 1 つ目は。 実稼働モードでのサンプルデータのインストール [失敗](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-).
 
 コマンドラインを使用してサンプルデータをインストールするには、次のコマンドをファイルシステムの所有者として `<app_root>` ディレクトリ：
 
@@ -42,7 +42,7 @@ bin/magento sampledata:deploy
 
 >[!WARNING]
 >
->サンプルデータをインストールする場合 _後_ アプリケーションをインストールする場合は、次のコマンドを実行して、 `<app_root>` ディレクトリ：
+>サンプルデータをインストールする場合 _次より後_ アプリケーションをインストールする場合は、次のコマンドを実行して、 `<app_root>` ディレクトリ：
 
 ```bash
 bin/magento setup:upgrade

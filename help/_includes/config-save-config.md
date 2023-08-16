@@ -43,9 +43,9 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >実行 _not_ 変更を `generated`, `pub/media`または `pub/static` ソース管理へのディレクトリ。 これらのファイルは、ビルドシステム上で生成されます。 開発システムには、実稼動システムで使用する準備ができていないコードやテーマなどが含まれている可能性があります。
+   >実行 _not_ 次に変更を加える `generated`, `pub/media`または `pub/static` ソース管理へのディレクトリ。 これらのファイルは、ビルドシステム上で生成します。 開発システムには、実稼動システムで使用する準備ができていないコードやテーマなどが含まれている可能性があります。
 
-1. 変更を `app/etc/config.php` ソース管理にのみ適用されます。
+1. 変更を次の場所にチェックイン： `app/etc/config.php` ソース管理にのみ適用されます。
 
    ```bash
    git add app/etc/config.php && git commit -m "Updated shared configuration" && git push mconfig m2.2_deploy

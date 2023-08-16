@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerceオンプレミスインフラ
+# Adobe Commerceオンプレミスインフラストラクチャ
 
 新しいAdobe Commerceの実装を開始したり、既存のオンプレミスAdobe Commerceの実装をクラウドに移行したりする動機は多数ありますが、最も一般的な戦略的要因は、設備投資の削減、継続的なコストの削減、拡張性と弾力性の向上、市場投入時間の向上、セキュリティとコンプライアンスの向上です。
 
-次の図は、AWSインフラストラクチャにAdobe Commerceをオンプレミスでデプロイするための参照アーキテクチャを示しています。 Azure、Google Cloud、Alibaba Cloud などの他のクラウドプロバイダーは、同様のインフラストラクチャ設計と相同サービスを共有しています。
+次の図に、AWSインフラストラクチャにAdobe Commerceをオンプレミスでデプロイする際の参照アーキテクチャを示します。 Azure、Google Cloud、Alibaba Cloud などの他のクラウドプロバイダーは、同様のインフラストラクチャ設計と相同サービスを共有しています。
 
 ![サードパーティのクラウドサービスで自己ホスト型のAdobe Commerceインフラストラクチャを示す図](/help/assets/playbooks/on-premises-infrastructure.svg)
 

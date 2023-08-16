@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 拡張 Redis キャッシュの実装
 
-拡張された Redis キャッシュ実装を使用するように設定を更新します `\Magento\Framework\Cache\Backend\Redis`.
+拡張された Redis キャッシュ実装を使用するように設定を更新します。 `\Magento\Framework\Cache\Backend\Redis`.
 
 ### クラウドデプロイメントの設定
 
@@ -42,11 +42,11 @@ stage:
 
 >[!WARNING]
 >
->実行 _not_ クラウドインフラストラクチャプロジェクトの Redis スレーブ接続を [スケールアーキテクチャ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). これにより、Redis 接続エラーが発生します。 詳しくは、 [レディスの構成指導](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) 内 _クラウドインフラストラクチャ上のコマース_ ガイド。
+>実行 _not_ を使用してクラウドインフラストラクチャプロジェクトに Redis スレーブ接続を設定する [規模の大きい建築](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). これにより、Redis 接続エラーが発生します。 詳しくは、 [レディスの構成指導](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) （内） _クラウドインフラストラクチャ上のコマース_ ガイド。
 
-### オンプレミスデプロイメントの設定
+### オンプレミスデプロイメントを設定する
 
-Adobe Commerceのオンプレミスデプロイメントの場合は、 `bin/magento:setup` コマンド 手順については、 [デフォルトのキャッシュに Redis を使用](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching).
+Adobe Commerceのオンプレミスデプロイメントの場合は、 `bin/magento:setup` コマンド。 手順については、 [デフォルトのキャッシュに Redis を使用](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching).
 
 ## キャッシュとセッションインスタンスを分離
 
@@ -85,7 +85,7 @@ Redis のキャッシュを Redis のセッションから分離すると、キ�
        rabbitmq: "rabbitmq:rabbitmq"
    ```
 
-1. 送信 [Adobe Commerceサポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) :Pro 実稼動環境とステージング環境で Redis サービス設定を変更する場合。 更新された `.magento/services.yaml` および `.magento.app.yaml` 設定ファイル。
+1. を送信 [Adobe Commerceサポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) :Pro 実稼動環境とステージング環境で Redis サービス設定を変更する場合。 更新された `.magento/services.yaml` および `.magento.app.yaml` 設定ファイル。
 
 1. 新しいインスタンスが実行中であることを確認し、ポート番号をメモします。
 
@@ -93,7 +93,7 @@ Redis のキャッシュを Redis のセッションから分離すると、キ�
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
    ```
 
-1. ポート番号を `.magento.env.yaml` 設定ファイル。
+1. にポート番号を追加します。 `.magento.env.yaml` 設定ファイル。
 
    >[!NOTE]
    >`disable_locking` は、次のように設定する必要があります `1`.
@@ -112,7 +112,7 @@ Redis のキャッシュを Redis のセッションから分離すると、キ�
        min_lifetime: 60
    ```
 
-1. からセッションを削除 [デフォルトデータベース](../../../configuration/cache/redis-pg-cache.md) (`db 0`) を Redis キャッシュインスタンスに追加します。
+1. からセッションを削除 [デフォルトデータベース](../../../configuration/cache/redis-pg-cache.md) (`db 0`) を Redis キャッシュインスタンスに置き換えます。
 
    ```bash
    redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
@@ -132,7 +132,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 [2022-08-17 01:13:40] INFO: redis-session will be used for session if it was not override by SESSION_CONFIGURATION
 ```
 
-## キャッシュ圧縮
+## キャッシュの圧縮
 
 キャッシュ圧縮を使用しますが、クライアント側のパフォーマンスにトレードオフがあることに注意してください。 予備の CPU がある場合は、有効にします。 詳しくは、 [セッションストレージに Redis を使用](../../../configuration/cache/redis-session.md).
 

@@ -37,7 +37,7 @@ ht-degree: 0%
 - 製品が買い物かごに追加される際の応答時間が増加しました。
 - ミニカートの読み込みとレンダリングに要する時間が増加しました。
 - 買い物かごページのレンダリングに要する時間が長くなりました。
-- レンダリング時間が長くなりました **合計** ブロックを「チェックアウト」ページに追加します。
+- レンダリング時間が長くなりました。 **合計** ブロックを「チェックアウト」ページに追加します。
 - クーポンの適用には、2 秒以上かかる場合があります。
 
 ## 追加情報
@@ -46,4 +46,4 @@ ht-degree: 0%
 - [買い物かごの価格ルール](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html)
 - [チュートリアル：買い物かごの価格ルールの作成](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/cart-price-rules.html)
 - [クーポンコード](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html)
-- [Adobe Commerce on cloud infrastructure:ストア設定のベストプラクティス](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)
+- [Adobe Commerce on cloud infrastructure：ストア設定のベストプラクティス](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)

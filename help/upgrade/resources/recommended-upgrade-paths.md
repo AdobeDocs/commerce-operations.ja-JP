@@ -1,13 +1,13 @@
 ---
 title: Adobe Commerceを使用したプラットフォームの最新化
 description: Adobe Commerceのアップグレードを計画する際の推奨事項を確認します。
-source-git-commit: 4a78c2d2a215d1b58b2f07b7a961849321f82318
+exl-id: f776b000-0085-4b77-860f-623837c3c902
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
 
 ---
-
 
 # 推奨アップグレードパス
 
@@ -22,7 +22,7 @@ e コマースの実装は進化です。真に完成したことはありませ
 
 アップグレードを計画する際に、より柔軟にマーチャントに提供するために、最近Adobe Commerceを更新しました [リリーススケジュール](../../release/schedule.md)、2.3 End of Support(EOS) 日を延長し、アドビのソフトウェアの一部のバージョンに対する新しい拡張サポートオプションを発表しました。 これらの更新について詳しくは、 [Adobe Commerceのサポートの拡張](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
 
-最新バージョンの 1 つにアップグレードする際に、サイトの安全性とパフォーマンスを維持するための、Adobe Commerceで推奨されるアップグレードパスを次に示します。
+最新バージョンの 1 つにアップグレードする際に、サイトのセキュリティとパフォーマンスを確保するための、Adobe Commerceで推奨されるアップグレードパスを次に示します。
 
 ## 2.3.7 からのアップグレード
 

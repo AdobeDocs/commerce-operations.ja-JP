@@ -1,13 +1,13 @@
 ---
 title: Adobe Commerceのアンインストールまたは再インストール
 description: 次の手順に従って、Adobe CommerceとMagento Open Sourceのオンプレミスインストールをアンインストールして再インストールします。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerceのアンインストールまたは再インストール
 
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 ## アプリケーションの更新
 
-アプリケーションを更新するには：
+アプリケーションを更新するには、次の手順に従います。
 
 * ソフトウェアをアーカイブからインストールした場合、または&#39;composer-create-project&#39;を使用した場合は、 [アップグレードガイド](../../upgrade/overview.md).
-* 貢献している開発者 ( `git clone`) を参照してください。 [アプリケーションの更新](../../upgrade/developer/git-installs.md).
+* 貢献している開発者 ( つまり、 `git clone`) を参照してください。 [アプリケーションの更新](../../upgrade/developer/git-installs.md).
 
 ## アプリケーションを再インストールする
 
@@ -43,7 +43,7 @@ bin/magento setup:uninstall
 [SUCCESS]: Magento uninstallation complete.
 ```
 
-## 生成されたファイルを保持するオプション
+## 生成されたファイルを保持する（オプション）
 
 デフォルトでは、 `bin/magento setup:upgrade` は、コンパイル済みのコードとキャッシュをクリアします。 通常、 `bin/magento setup:upgrade` コンポーネントを更新するには、各コンポーネントに異なるコンパイル済みクラスを必要とする場合があります。
 
@@ -55,7 +55,7 @@ bin/magento setup:upgrade --keep-generated
 
 >[!WARNING]
 >
->オプション `--keep-generated` 経験豊富なシステムインテグレーターが、限られた状況でオプションを使用する必要がある *のみ*. このオプションは、 *なし* を開発環境で使用する。 このオプションパラメーターを不適切に使用すると、コードの実行中にエラーが発生する可能性があります。
+>オプションの `--keep-generated` 経験豊富なシステムインテグレーターが、限られた状況でオプションを使用する必要がある *のみ*. このオプションは、 *なし* を開発環境で使用する。 このオプションパラメーターを不適切に使用すると、コードの実行中にエラーが発生する可能性があります。
 
 ## アプリケーションのインストール
 

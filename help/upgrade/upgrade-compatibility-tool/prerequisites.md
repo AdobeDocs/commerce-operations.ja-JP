@@ -1,25 +1,25 @@
 ---
-title: "[!DNL Upgrade Compatibility Tool] 要件"
+title: '''[!DNL Upgrade Compatibility Tool] 要件'
 description: システムが、 [!DNL Upgrade Compatibility Tool] ( Adobe Commerceプロジェクトのコマンドラインインターフェイス ) を使用します。
-source-git-commit: 653d755023f96c0a6acc312f74fd4a0292f13a73
+exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
 
 ---
 
-
 # Adobe Commerceアクセスキー
 
 {{commerce-only}}
 
-必ず [Adobe Commerceアクセスキー](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) をダウンロードして使用するには、以下を実行します。 [!DNL Upgrade Compatibility Tool]. Adobe Commerceアクセスキーを `auth.json` 次の場所にあるファイル `~/.composer` デフォルトでは。
+必要な機能は次のとおりです。 [Adobe Commerceアクセスキー](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) をダウンロードして使用するには、以下を実行します。 [!DNL Upgrade Compatibility Tool]. Adobe Commerceのアクセスキーを `auth.json` 次の場所にあるファイル： `~/.composer` デフォルトでは。
 
 >[!NOTE]
 >
 >以下を確認します。 **COMPOSER_HOME** 環境変数を使用して、どこに `auth.json` ファイルが見つかりました。
 
-この **公開鍵** は、 _ユーザー名_ 一方で **秘密鍵** が _パスワード_:
+The **公開鍵** は、 _ユーザー名_ 一方で **秘密鍵** が _パスワード_:
 
 ## Adobe Commerceアクセスキーの例
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> を正しく設定していない場合、 **Adobe Commerceアクセスキー**&#x200B;を使用している場合、 [!DNL Upgrade Compatibility Tool] そして `composer create-project` コマンドが失敗します。
+> を正しく設定しない場合、 **Adobe Commerceアクセスキー**&#x200B;を使用している場合、 [!DNL Upgrade Compatibility Tool] そして `composer create-project` コマンドが失敗します。
 
 実行 `composer install` をターミナルに追加して、依存関係をインストールします。
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 | PHP バージョン | >= 7.3 |
 | コンポーザー | 不明な要件はありません。 |
 | Node.js | Node.js のバージョン `^12.22.0`, `^14.17.0`または `>=16.0.0` ( [Node.js のインストール](https://nodejs.dev/en/learn/how-to-install-nodejs/)) |
-| メモリ制限 | 2GB 以上の RAM。 |
+| メモリの制限 | 2GB 以上の RAM。 |
 
 [!DNL Upgrade Compatibility Tool] が必要です [PCNTL](https://www.php.net/manual/en/book.pcntl.php) および実行用のその他の PHP 拡張。 必要な PHP 拡張をチェックするには、 `composer check-platform-reqs` コマンド：
 
@@ -76,8 +76,8 @@ php           7.4.30    success
 
 Adobe Commerceは Linux オペレーティングシステムでのみサポートされています。 次を実行できます。 [!DNL Upgrade Compatibility Tool] （Linux OS の場合） を実行する必要はありません。 [!DNL Upgrade Compatibility Tool] Adobe Commerceインスタンスの場所
 
-～に必要だ [!DNL Upgrade Compatibility Tool] Adobe Commerceインスタンスのソースコードにアクセスできるようにする。 例えば、あるサーバーにインストールし、別のサーバー上のAdobe Commerceインストール場所を示すことができます。
+～に必要だ。 [!DNL Upgrade Compatibility Tool] Adobe Commerceインスタンスのソースコードにアクセスできるようにする。 例えば、あるサーバーにインストールし、別のサーバー上のAdobe Commerceインストール場所を示すことができます。
 
 を実行している場合、 [!DNL Upgrade Compatibility Tool] 大きなモジュールやファイルを含むAdobe Commerceインスタンスに対しては、大量の RAM（少なくとも 2GB）が必要になる場合があります。
 
-を実行します。 [!DNL Upgrade Compatibility Tool] から [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) 対象 [Adobe Commerce an cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} プロジェクト。
+を実行します。 [!DNL Upgrade Compatibility Tool] から [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) 対象： [Adobe Commerce an cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} プロジェクト。

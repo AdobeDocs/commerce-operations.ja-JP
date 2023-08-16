@@ -48,4 +48,4 @@ ht-degree: 0%
 - [カテゴリ：概要](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/categories.html)
 - [ナビゲーションの概要](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html)
 - [製品の割り当て](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html)
-- [Adobe Commerce on cloud infrastructure:ストア設定のベストプラクティス](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)
+- [Adobe Commerce on cloud infrastructure：ストア設定のベストプラクティス](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)

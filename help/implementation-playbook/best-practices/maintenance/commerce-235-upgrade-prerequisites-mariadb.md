@@ -46,7 +46,7 @@ Adobe Commerceサポートチームがアップグレードプロセスを開始
 
 1. MariaDB にログインします。
 
-1. コンパクトからダイナミックフォーマットに変換するテーブルを指定します。
+1. コンパクト形式からダイナミック形式に変換するテーブルを指定します。
 
    ```mysql
    SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
@@ -110,7 +110,7 @@ Adobe Commerceサポートチームがアップグレードプロセスを開始
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
    ```
 
-1. 使用するテーブルを変換 `MyISAM` ～への保管 `InnoDB` ストレージ。
+1. 使用するテーブルを変換する `MyISAM` ～への保管 `InnoDB` ストレージ。
 
    ```mysql
    ALTER TABLE [ table name here ] ENGINE=InnoDB;
@@ -122,7 +122,7 @@ MariaDB バージョン 10.3、10.4、または 10.6 へのスケジュールさ
 
 1. データベースにログインします。
 
-1. まだ `COMPACT` 行の書式。
+1. まだ `COMPACT` 行の書式を設定します。
 
    ```mysql
    SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
@@ -142,5 +142,5 @@ MariaDB バージョン 10.3、10.4、または 10.6 へのスケジュールさ
 
 ## 追加情報
 
-- [クラウドインフラストラクチャ上のAdobe Commerceのデータベースのベストプラクティス](../planning/database-on-cloud.md)
+- [クラウドインフラストラクチャ上のAdobe Commerceに関するデータベースのベストプラクティス](../planning/database-on-cloud.md)
 - [Cloud 上のAdobe Commerceの MariaDB を 10.0 から 12.0 に更新しました。](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10.0-to-10.2-for-magento-commerce-cloud.html)

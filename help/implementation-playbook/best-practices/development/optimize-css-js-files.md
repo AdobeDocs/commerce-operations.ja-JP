@@ -48,7 +48,7 @@ CSS の結合または縮小を有効にするには、 [!UICONTROL **管理者*
    bin/magento config:set --lock-config dev/css/merge_css_files 1
    ```
 
-1. 変更をにコミット `app/etc/config.php` ファイルを作成し、再デプロイします。
+1. 変更をにコミットする `app/etc/config.php` ファイルを作成し、再デプロイします。
 
 クラウドインフラストラクチャ上のAdobe Commerceで CSS 縮小を有効にするには：
 
@@ -58,13 +58,13 @@ CSS の結合または縮小を有効にするには、 [!UICONTROL **管理者*
    bin/magento config:set --lock-config dev/css/minify_files 1
    ```
 
-1. 変更をにコミット `app/etc/config.php` ファイルを作成し、再デプロイします。
+1. 変更をにコミットする `app/etc/config.php` ファイルを作成し、再デプロイします。
 
 ## JS ファイルの縮小
 
 ### 管理者の使用
 
-の *管理者* サイドバー、移動 **ストア** > **設定** > **設定** > **詳細** > **開発者** > **JavaScript 設定**.
+次の日： *管理者* サイドバー、移動 **ストア** > **設定** > **設定** > **詳細** > **開発者** > **JavaScript 設定**.
 
 ### コマンドラインの使用
 
@@ -76,7 +76,7 @@ CSS の結合または縮小を有効にするには、 [!UICONTROL **管理者*
    bin/magento config:set --lock-config dev/js/minify_files 1
    ```
 
-1. 変更をにコミット `app/etc/config.php` ファイルを作成し、再デプロイします。
+1. 変更をにコミットする `app/etc/config.php` ファイルを作成し、再デプロイします。
 
 ## JS ファイルの結合とバンドル
 
@@ -92,5 +92,5 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 
 - [クライアント側の最適化設定](../../../performance/configuration.md#client-side-optimization-settings)
 - [ユーザーガイド：リソースファイルの最適化](https://docs.magento.com/user-guide/system/file-optimization.html)
-- [フロントエンド開発者ガイド：CSS の結合、縮小、サイトのパフォーマンス](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [フロントエンド開発者ガイド： CSS の結合、縮小、サイトのパフォーマンス](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [高度な JavaScript のバンドル](../../../performance/advanced-js-bundling.md)

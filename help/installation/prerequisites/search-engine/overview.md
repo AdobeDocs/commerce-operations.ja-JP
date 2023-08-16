@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # 検索エンジンの前提条件
 
-Adobe CommerceとMagento Open Source2.4 以降では、すべてのインストールでを使用するように設定する必要があります [Elasticsearch](https://www.elastic.co) または [OpenSearch](https://opensearch.org/) をカタログ検索ソリューションとして使用する。
+Adobe CommerceとMagento Open Source2.4 以降では、すべてのインストールでを使用するように設定する必要があります。 [Elasticsearch](https://www.elastic.co) または [OpenSearch](https://opensearch.org/) をカタログ検索ソリューションとして使用する。
 
 >[!NOTE]
 >
->2.4.4 で OpenSearch のサポートが追加されました。OpenSearch は互換性のあるElasticsearchの分岐です。 Elasticsearch7 を設定するすべての手順は、OpenSearch に適用されます。 [Elasticsearchから OpenSearch への移行](../../../upgrade/prepare/opensearch-migration.md) は、OpenSearch への切り替えに関するガイダンスを提供します。
+>2.4.4 で OpenSearch のサポートが追加されました。OpenSearch は互換性のあるフォークのElasticsearchです。 Elasticsearch7 を設定するすべての手順は、OpenSearch に適用されます。 [Elasticsearchから OpenSearch への移行](../../../upgrade/prepare/opensearch-migration.md) は、OpenSearch への切り替えに関するガイダンスを提供します。
 
 ## サポートされているバージョン
 
@@ -28,8 +28,8 @@ Adobe Commerce 2.4.4 以降をインストールする前に、Elasticsearchま�
 
 以下をお勧めします。
 
-* [検索エンジン用に nginx を設定する](configure-nginx.md)
-* [検索エンジン用に Apache を設定](configure-apache.md)
+* [検索エンジンに対する nginx の設定](configure-nginx.md)
+* [検索エンジン用に Apache を設定する](configure-apache.md)
 
 ## インストール場所
 
@@ -41,9 +41,9 @@ Adobe Commerce 2.4.4 以降をインストールする前に、Elasticsearchま�
 
 * コマースアプリケーションと検索エンジンが異なるホストにインストールされている。
 
-  別のホストで実行する場合は、プロキシが機能する必要があります。 ( 検索エンジンのクラスタリングは、このガイドの範囲外ですが、詳しくは、 [Elasticsearchクラスタリングのドキュメント](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
+  別のホストで実行する場合は、プロキシが機能する必要があります。 ( 検索エンジンのクラスタリングは、このガイドの範囲外ですが、詳しくは、 [Elasticsearchクラスタリングに関するドキュメント](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
-* 各ホストには、独自の Web サーバーがあります。web サーバーは同じである必要はありません。
+* 各ホストには独自の Web サーバーがあり、Web サーバーを同じにする必要はありません。
 
   例えば、Commerce アプリケーションは Apache を実行し、検索エンジンは nginx を実行します。
 
@@ -78,14 +78,14 @@ Adobe Commerce 2.4.4 以降をインストールする前に、Elasticsearchま�
 
 セキュリティ関連のソフトウェア (iptables、SELinux、AppArmor) は、サブシステム間の通信をブロックするようにデフォルトで設定できます。 問題があるかどうかを確認するのが良い考えかもしれません。
 
-#### iptables および SELinux のルールを設定します
+#### iptables および SELinux のルールを設定します。
 
 ファイアウォールまたは SELinux が有効なときとの通信を許可するルールを設定するには、次のリソースを参照してください。
 
 * [iptables ハウツー](https://help.ubuntu.com/community/IptablesHowTo)
 * [iptables ルールの編集方法（fedora プロジェクト）](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
-* [SELinux(CentOS.org) の概要](https://www.centos.org)
-* [SELinux ハウツー Wiki (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
+* [SELinux の概要 (CentOS.org)](https://www.centos.org)
+* [SELinux ハウツー Wiki(CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
 
 ### Java Software Development Kit のインストール
 
@@ -104,9 +104,9 @@ java -version
 
 #### CentOS での JDK のインストール
 
-参照 [Digital Ocean チュートリアル](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8).
+詳しくは、 [Digital Ocean チュートリアル](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8).
 
-必ず JDK とをインストールしてください。 *not* JRE
+必ず JDK とをインストールしてください。 *not* JRE。
 
 ```bash
 yum -y install java-1.8.0-openjdk

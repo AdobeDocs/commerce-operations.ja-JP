@@ -1,13 +1,13 @@
 ---
 title: 増分 ID を変更
 description: Commerce データベースエンティティの増分 ID を変更します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
 
 ---
-
 
 # 増分 ID を変更
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 ## 影響を受けるバージョン
 
 - Adobe Commerce（オンプレミス）:2.x.x
-- Adobe Commerce on cloud infrastructure:2.x.x
+- Adobe Commerce on cloud infrastructure: 2.x.x
 - MySQL: [サポート対象のバージョン](../../installation/prerequisites/database/mysql.md)
 
 ## 増分 ID を変更する必要がある状況
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->また、PayPal の Payment Receiving Preferences で、請求書 ID ごとに複数の支払いを許可することで、PayPal の支払いゲートウェイの問題を修正することもできます。 詳しくは、 [PayPal ゲートウェイがリクエストを拒否しました — 請求書の重複の問題] 内 _ナレッジベース_.
+>また、PayPal の Payment Receiving Preferences で、請求書 ID ごとに複数の支払いを許可することで、PayPal の支払いゲートウェイの問題を修正することもできます。 詳しくは、 [PayPal ゲートウェイがリクエストを拒否しました — 請求書の重複の問題] （内） _ナレッジベース_.
 
 ## 前提条件の手順
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 ID=1 のストアでオーダーの自動増分をチェックしている場合、テーブル名は「sequence_order_1」になります。
 
-次の値が `auto_increment` 列は「1234」で、次に `ID=1` ID「#100001234」が付与されます。
+次の値が `auto_increment` 列は「1234」で、次の注文は `ID=1` ID「#100001234」が付与されます。
 
 ## 増分 ID を変更するためにエンティティを更新
 
@@ -54,7 +54,8 @@ ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_va
 ```
 
 >[!INFO]
-重要：新しい増分値は、現在の増分値より大きくする必要があります。
+>
+重要：新しい増分値は、現在の増分値より大きい値である必要があります。
 
 次のクエリを実行した後：
 
@@ -66,7 +67,7 @@ ALTER TABLE sequence_order_1 AUTO_INCREMENT = 2000;
 
 ## クラウド実稼動環境でのその他の推奨手順
 
-を実行する前に `ALTER TABLE` クラウドインフラストラクチャ上のAdobe Commerceの実稼動環境に対するクエリを実行する場合は、次の手順を実行することを強くお勧めします。
+を実行する前に、 `ALTER TABLE` クラウドインフラストラクチャ上のAdobe Commerceの実稼動環境に対するクエリを実行する場合は、次の手順を実行することを強くお勧めします。
 
 - ステージング環境で増分 ID を変更する手順全体をテストします。
 - [DB バックアップの作成] 失敗した場合に実稼動 DB を復元するには

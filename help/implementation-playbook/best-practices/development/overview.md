@@ -59,7 +59,7 @@ ht-degree: 0%
 
 ### ローカルおよびステージング環境の設定
 
-- [クラウドインフラストラクチャ上の開発ワークフロー](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
+- [クラウドインフラストラクチャでの開発ワークフロー](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
 
 ## コード、結合、テスト
 

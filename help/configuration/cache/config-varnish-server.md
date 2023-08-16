@@ -19,8 +19,8 @@ Wanish は Web サーバーではなく受信 HTTP 要求に直接応答する�
 **Apache 2.4 リスンポートを変更するには**:
 
 1. 開く `/etc/httpd/conf/httpd.conf` をクリックします。
-1. を `Listen` ディレクティブ。
-1. リッスンポートの値をに変更します。 `8080`. （使用可能な任意のリスンポートを使用できます）。
+1. 次を見つけます。 `Listen` ディレクティブ。
+1. リスンポートの値をに変更します。 `8080`. （使用可能な任意のリスンポートを使用できます）。
 1. 変更をに保存します。 `httpd.conf` をクリックし、テキストエディタを終了します。
 
 ## Vanish システムの構成を変更する
@@ -74,9 +74,9 @@ Vanish を最小限に設定するには：
    }
    ```
 
-1. 次の値を `.host` 完全修飾ホスト名または IP アドレスと Vanish のリッスンポート _バックエンド_ または _接触元サーバー_;つまり、コンテンツ Vanrish を提供するサーバは、高速化します。
+1. 次の値を `.host` 完全修飾ホスト名または IP アドレスと Vanish のリッスンポート _backend_ または _接触元サーバー_；つまり、コンテンツを提供するサーバー Vanish が高速化します。
 
-   通常、これは Web サーバーです。 詳しくは、 [バックエンドサーバー](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) 内 _ワニスガイド_.
+   通常、これは Web サーバーです。 詳しくは、 [バックエンドサーバー](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) （内） _ワニスガイド_.
 
 1. 次の値を `.port` Web サーバーのリスンポート（この例では 8080）を使用している。
 
@@ -135,7 +135,7 @@ Vanrish がサービスとして起動しない場合は、次のようにコマ
    varnishd -d -f /etc/varnish/default.vcl
    ```
 
-1. Vanish 子プロセスを開始します。
+1. Vanish の子プロセスを開始します。
 
    プロンプトが表示されたら、次のように入力します。 `start`
 
@@ -168,13 +168,13 @@ tcp        0      0 ::1:48509                   :::*                        LIST
 
 上記の図は、ポート 80 で Vanish を実行し、ポート 8080 で Apache を実行していることを示しています。
 
-の出力が表示されない場合 `varnishd`、Vanrish が実行中であることを確認します。
+次の出力が表示されない場合： `varnishd`、Vanrish が実行中であることを確認します。
 
 詳しくは、 [`netstat` options](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
 
 ## Commerce ソフトウェアのインストール
 
-コマースソフトウェアをインストールしていない場合は、インストールします。 Base URL の入力を求められたら、Vanish はすべての受信 HTTP 要求を受け取るので、Vanish ホストとポート 80（Vanish 用）を使用します。
+コマースソフトウェアをインストールします（まだインストールしていない場合）。 Base URL の入力を求められたら、Vanish はすべての受信 HTTP 要求を受け取るので、Vanish ホストとポート 80（Vanish 用）を使用します。
 
 コマースのインストール中にエラーが発生した可能性があります：
 
@@ -185,7 +185,7 @@ XID: 303394517
 Varnish cache server
 ```
 
-このエラーが発生した場合は、 `default.vcl` タイムアウトを `backend` stanza は次のようになります。
+このエラーが発生した場合は、 `default.vcl` をクリックし、 `backend` stanza は次のようになります。
 
 ```conf
 backend default {
@@ -232,7 +232,7 @@ Web ブラウザーで、任意のコマースページに移動します。
 -   ReqHeader      Origin: http://10.249.151.10
 ```
 
-このようなヘッダーでは _not_ 表示、ワニスを停止、確認 `default.vcl`を再度お試しください。
+このようなヘッダーでは、 _not_ 表示、ワニスを停止、確認する `default.vcl`を再度お試しください。
 
 ### HTML応答ヘッダーを見る
 
@@ -244,7 +244,7 @@ Web ブラウザーで、任意のコマースページに移動します。
 curl -I -v --location-trusted '<your Commerce base URL>'
 ```
 
-例：
+以下に例を挙げます。
 
 ```bash
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'

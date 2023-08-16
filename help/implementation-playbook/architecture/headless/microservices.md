@@ -1,5 +1,5 @@
 ---
-title: Adobe Commerce
+title: Adobe Commerce Microservices
 description: ヘッドレスとマイクロサービスを、Adobe Commerceに関連するものと区別できます。
 exl-id: 078e0e8e-7acc-4913-8b78-585a950f3f5e
 feature: Integration, Services

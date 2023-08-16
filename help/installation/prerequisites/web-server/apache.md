@@ -1,13 +1,13 @@
 ---
 title: Apache
 description: Adobe CommerceとMagento Open Sourceのオンプレミスインストールに Apache Web サーバーをインストールして設定するには、次の手順に従います。
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 0%
 
 ---
-
 
 # Apache
 
@@ -73,7 +73,6 @@ Adobe CommerceとMagento Open Sourceは、サーバーの書き換えと `.htacc
    >- 以前の Apache バージョンからアップグレードした場合は、まずを探してください。 `<Directory "/var/www/html">` または `<Directory "/var/www">` in `000-default.conf`.
    >- 次の値を変更する必要があります： `AllowOverride` を、Adobe CommerceまたはMagento Open Source・ソフトウェアのインストール先のディレクトリのディレクティブに追加します。 例えば、Web サーバーのドキュメントルートにをインストールするには、でディレクティブを編集します。 `<Directory /var/www>`.
 
-
 >[!NOTE]
 >
 >これらの設定を有効にしないと、通常、ストアフロントや管理者にスタイルが表示されません。
@@ -138,13 +137,13 @@ Server built: Jul 22 2020 14:35:32
    Server built: 2020-04-15T18:00:57
    ```
 
-1. 有効にする [書き換えと書き換え `.htaccess`](#apache-rewrites-and-htaccess).
+1. 有効にする [書き換えと `.htaccess`](#apache-rewrites-and-htaccess).
 
 ### Ubuntu での Apache のアップグレード
 
 Apache 2.4 にアップグレードするには：
 
-1. を `ppa:ondrej` リポジトリ (Apache 2.4):
+1. 次を追加： `ppa:ondrej` リポジトリ (Apache 2.4):
 
    ```bash
    apt-get -y update
@@ -181,13 +180,13 @@ Apache 2.4 にアップグレードするには：
    Server built: Jul 22 2020 22:46:25
    ```
 
-1. 有効にする [書き換えと書き換え `.htaccess`](#apache-rewrites-and-htaccess).
+1. 有効にする [書き換えと `.htaccess`](#apache-rewrites-and-htaccess).
 
 ## CentOS への Apache のインストール
 
-Adobe CommerceとMagento Open Sourceでは、Apache でサーバーの書き換えを使用する必要があります。 また、で使用できるディレクティブのタイプも指定する必要があります `.htaccess`：アプリケーションが書き換えルールを指定する際に使用するものです。
+Adobe CommerceとMagento Open Sourceでは、Apache でサーバーの書き換えを使用する必要があります。 また、で使用できるディレクティブのタイプも指定する必要があります。 `.htaccess`：アプリケーションが書き換えルールを指定する際に使用するものです。
 
-Apache のインストールと設定は、基本的に次の 3 つの手順で構成されます。ソフトウェアをインストールし、書き換えを有効にして、 `.htaccess` ディレクティブ。
+Apache のインストールと設定は、基本的に、ソフトウェアのインストール、書き換えの有効化、指定の 3 つの手順で構成されます。 `.htaccess` ディレクティブ。
 
 ### Apache のインストール
 

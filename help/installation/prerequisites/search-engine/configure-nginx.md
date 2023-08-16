@@ -18,13 +18,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2.4.4 で OpenSearch のサポートが追加されました。OpenSearch は互換性のあるElasticsearchの分岐です。 詳しくは、 [Elasticsearchを OpenSearch に移行](../../../upgrade/prepare/opensearch-migration.md) を参照してください。
+>2.4.4 で OpenSearch のサポートが追加されました。OpenSearch は互換性のあるフォークのElasticsearchです。 詳しくは、 [Elasticsearchを OpenSearch に移行](../../../upgrade/prepare/opensearch-migration.md) を参照してください。
 
-この節では、nginx を *安全でない* プロキシを使用して、Adobe Commerceがこのサーバーで実行されている検索エンジンを使用できるようにします。 この節では、HTTP 基本認証の設定については説明しません。これについては、 [nginx との安全な通信](#secure-communication-with-nginx).
+この節では、nginx を *安全でない* プロキシを使用して、Adobe Commerceがこのサーバーで実行されている検索エンジンを使用できるようにします。 この節では、HTTP 基本認証の設定については説明しません。 [nginx との安全な通信](#secure-communication-with-nginx).
 
 >[!NOTE]
 >
->この例でプロキシが保護されていないのは、設定と検証がより簡単になるからです。 必要に応じて、このプロキシで TLS を使用できます。これをおこなうには、プロキシ情報をセキュリティで保護されたサーバーブロック設定に追加する必要があります。
+>この例でプロキシが保護されていないのは、設定と検証がより簡単になるからです。 必要に応じて、このプロキシで TLS を使用できます。使用するには、プロキシ情報をセキュリティで保護されたサーバーブロック設定に追加してください。
 
 ### グローバル設定で追加の設定ファイルを指定する
 
@@ -81,13 +81,13 @@ include /etc/nginx/conf.d/*.conf;
 
 ## nginx との安全な通信
 
-このセクションでは、 [HTTP 基本認証](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) セキュリティで保護されたプロキシを使用します。 TLS と HTTP Basic 認証を併用すると、Elasticsearch、OpenSearch、またはお使いのアプリケーションサーバーとの通信が傍受されるのを防ぐことができます。
+このセクションでは、の設定方法について説明します。 [HTTP 基本認証](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) セキュリティで保護されたプロキシを使用します。 TLS と HTTP Basic 認証を併用すると、Elasticsearch、OpenSearch、またはお使いのアプリケーションサーバーとの通信が傍受されるのを防ぐことができます。
 
 Nginx は HTTP Basic 認証をネイティブにサポートしているので、例えば、HTTP Basic 認証をオーバーにすることをお勧めします。 [ダイジェスト認証](https://www.nginx.com/resources/wiki/modules/auth_digest/)：実稼動環境ではお勧めしません。
 
 その他のリソース：
 
-* [Ubuntu 14.04(Digital Ocean) で Nginx を使用したパスワード認証の設定方法](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
+* [Ubuntu 14.04(Digital Ocean) で Nginx を使用したパスワード認証を設定する方法](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
 * [Nginx を使用した基本的な HTTP 認証 (HowtoForge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
 * [Elasticsearch用の Nginx 設定の例](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
 
@@ -100,7 +100,7 @@ Nginx は HTTP Basic 認証をネイティブにサポートしているので�
 
 ### パスワードの作成
 
-Apache `htpasswd` Elasticsearchまたは OpenSearch ( `magento_elasticsearch` （この例では）。
+Apache を使用することをお勧めします。 `htpasswd` コマンドを使用して、Elasticsearchまたは OpenSearch ( `magento_elasticsearch` （この例では）。
 
 パスワードを作成するには：
 
@@ -110,7 +110,7 @@ Apache `htpasswd` Elasticsearchまたは OpenSearch ( `magento_elasticsearch` �
    which htpasswd
    ```
 
-   パスが表示される場合は、そのパスがインストールされます。コマンドが出力を返さない場合、 `htpasswd` がインストールされていません。
+   パスが表示される場合は、そのパスがインストールされます。コマンドが出力を返さない場合は、 `htpasswd` がインストールされていません。
 
 1. 必要に応じて、をインストールします。 `htpasswd`:
 
@@ -129,9 +129,9 @@ Apache `htpasswd` Elasticsearchまたは OpenSearch ( `magento_elasticsearch` �
 
    >[!WARNING]
    >
-   >セキュリティ上の理由から、 `<filename>` 隠すべきだつまり、ピリオドで始める必要があります。
+   >セキュリティ上の理由から、 `<filename>` は非表示にする必要があります。つまり、ピリオドで始める必要があります。
 
-1. *（オプション）。* 別のユーザーをパスワードファイルに追加するには、 `-c` （作成）オプション：
+1. *（オプション）。* 別のユーザーをパスワードファイルに追加するには、同じコマンドを `-c` （作成）オプション：
 
    ```bash
    htpasswd /etc/nginx/passwd/.<filename> <username>
@@ -145,7 +145,7 @@ Apache `htpasswd` Elasticsearchまたは OpenSearch ( `magento_elasticsearch` �
 
 >[!WARNING]
 >
->次に、 *安全でない* プロキシを使用します。 セキュアプロキシを使用するには、次のコンテンツ（リスンポートを除く）をセキュアサーバーブロックに追加します。
+>次に例を示します。 *安全でない* プロキシを使用します。 セキュアプロキシを使用するには、次のコンテンツ（リスンポートを除く）をセキュアサーバーブロックに追加します。
 
 テキストエディターを使用して、次のいずれかを変更します。 `/etc/nginx/conf.d/magento_es_auth.conf` （セキュリティで保護されていない）、または以下の内容を含むセキュリティで保護されたサーバーブロック。
 
@@ -180,7 +180,7 @@ server {
 
 >[!NOTE]
 >
->前の例に示した検索エンジンのリスンポートは、例です。 セキュリティ上の理由から、デフォルト以外のリッスンポートを使用することをお勧めします。
+>前の例に示した検索エンジンのリスンポートは、例のみです。 セキュリティ上の理由から、デフォルト以外のリッスンポートを使用することをお勧めします。
 
 ### 検索エンジンの制限付きコンテキストの設定
 

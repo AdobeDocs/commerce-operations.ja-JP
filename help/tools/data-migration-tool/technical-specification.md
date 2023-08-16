@@ -1,6 +1,6 @@
 ---
 title: '''[!DNL Data Migration Tool] 技術仕様書'
-description: 以下の [!DNL Data Migration Tool] およびMagento1 とMagento2 の間でデータを転送する際の拡張方法。
+description: の実装の詳細について説明します。 [!DNL Data Migration Tool] およびMagento1 とMagento2 の間でデータを転送する際の拡張方法。
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # [!DNL Data Migration Tool] 技術仕様
 
-ここでは、 [!DNL Data Migration Tool] 実装の詳細と、その機能の拡張方法について説明します。
+この節では、 [!DNL Data Migration Tool] 実装の詳細と、その機能の拡張方法について説明します。
 
 ## リポジトリ
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 必要システム構成
 
-この [システム要件](../../installation/system-requirements.md) の [!DNL Data Migration Tool] は、Magento2 と同じです。
+The [システム要件](../../installation/system-requirements.md) （の） [!DNL Data Migration Tool] は、Magento2 と同じです。
 
 ## 内部構造
 
@@ -156,9 +156,9 @@ ht-degree: 0%
 
 * 手順 — 移行中に処理されるすべての手順を説明します。
 
-* source — データソースの設定。 使用可能なソースタイプ：データベース
+* source — データソースの設定。 使用可能なソースの種類： database
 
-* destination — データの宛先の設定。 使用可能な宛先のタイプ：データベース
+* destination — データの宛先の設定。 使用可能な宛先の種類：データベース
 
 * options — パラメーターのリスト。 必須 (map_file、settings_map_file、bulk_size) とオプション (custom_option、resource_adapter_class_name、prefix_source、prefix_dest、log_file) の両方のパラメータが含まれます
 
@@ -183,7 +183,7 @@ ht-degree: 0%
 | `name` | Magento1 サーバのデータベース名。 | はい |
 | `host` | Magento1 サーバのホスト IP アドレス。 | はい |
 | `port` | Magento1 サーバーのポート番号。 | いいえ |
-| `user` | Magento1 データベースサーバのユーザ名。 | はい |
+| `user` | Magento1 データベースサーバーのユーザー名。 | はい |
 | `password` | Magento1 データベースサーバーのパスワード。 | はい |
 | `ssl_ca` | SSL 認証局ファイルへのパス。 | いいえ |
 | `ssl_cert` | SSL 証明書ファイルへのパス。 | いいえ |
@@ -275,7 +275,7 @@ $this->progress->advance();
 $this->progress->finish();
 ```
 
-## ステップステージ
+## ステップのステージ
 
 ### 整合性チェック
 
@@ -335,7 +335,7 @@ $this->progress->finish();
 
 ノードの下 `<key>` 「パス」列を使用するルールが `core_config_data` 表。 `<ignore>` ルールにより、一部の設定がツールによって転送されなくなります。 このノードではワイルドカードを使用できます。 他の設定は、 `<ignore>` ノードが移行されます。 Magento2 で設定へのパスが変更された場合は、 `//key/rename` ノード ( 古いパスが `//key/rename/path` ノードと新しいパスが `//key/rename/to` ノード。
 
-ノードの下 `<value>`の場合、 `core_config_data` 表。 これらのルールは、ハンドラ（を実装するクラス）によって設定の値を変換することを目的としています `Migration\Handler\HandlerInterface`) を参照し、Magento2 に合わせて調整します。
+ノードの下 `<value>`の場合、「値」列と連携するルールが `core_config_data` 表。 これらのルールは、ハンドラ（を実装するクラス）によって設定の値を変換することを目的としています `Migration\Handler\HandlerInterface`) を参照し、Magento2 に合わせて調整します。
 
 ### データ移行モード
 
@@ -409,13 +409,13 @@ $this->progress->finish();
 
 * *無視*  — このオプションでマークされたドキュメント、フィールドまたはデータ型は無視されます
 
-* *名前変更*  — 異なる名前を持つドキュメント間の名前の関係を表します。 ソースドキュメントと宛先ドキュメントの名前が異なる場合は、名前の変更オプションを使用して、ソースドキュメント名を宛先テーブル名と同じ名前に設定できます
+* *名前を変更*  — 異なる名前を持つドキュメント間の名前の関係を表します。 ソースドキュメントと宛先ドキュメントの名前が異なる場合は、名前の変更オプションを使用して、ソースドキュメント名を宛先テーブル名と同じ名前に設定できます
 
-* *移動*  — 指定したフィールドを元のドキュメントから移動先のドキュメントに移動するルールを設定します。 注意：コピー先のドキュメント名は、コピー元のドキュメント名と同じにする必要があります。 移動元と移動先のドキュメント名が異なる場合は、移動したフィールドを含むドキュメントの名前変更オプションを使用する必要があります
+* *移動*  — 指定したフィールドを元のドキュメントから移動先のドキュメントに移動するルールを設定します。 注意：宛先ドキュメント名は、ソースドキュメント名と同じである必要があります。 移動元と移動先のドキュメント名が異なる場合は、移動したフィールドを含むドキュメントの名前変更オプションを使用する必要があります
 
 * *変換*  — は、ハンドラーで説明されている動作に従ってユーザーがフィールドを移行できるオプションです
 
-* *ハンドラー*  — フィールドの変換動作を表します。 ハンドラを呼び出すには、 `<handler>` タグを使用します。 以下を使用： `<param>` タグにパラメーター名と値のデータを追加し、ハンドラーに渡します。
+* *ハンドラー*  — フィールドの変換動作を表します。 ハンドラーを呼び出すには、 `<handler>` タグを使用します。 以下を使用します。 `<param>` タグにパラメーター名と値のデータを追加し、ハンドラーに渡します。
 
 **ソース** 使用可能な操作：
 
@@ -435,7 +435,7 @@ $this->progress->finish();
 
 #### URL の書き換え手順
 
-この手順は複雑です。Magento1 で開発されたアルゴリズムは、Magento2 と互換性がないものが多数あるからです。 バージョン 1 の異なるMagentoでは、異なるアルゴリズムを使用できます。 したがって、Step/UrlRewrite フォルダーの下には、特定のバージョンのMagentoとMigration\Step\UrlRewrite\Version191to2000 is one of them用に開発されたクラスがあります。 URL の書き換えデータをMagento1.9.1 からMagento2 に転送できます。
+この手順は複雑です。Magento2 と互換性のない、Magento1 で開発された様々なアルゴリズムが多数あるからです。 バージョン 1 の異なるMagentoでは、異なるアルゴリズムを使用できます。 したがって、Step/UrlRewrite フォルダーの下には、特定のMagentoの一部のバージョン用に開発されたクラスがあり、Migration\Step\UrlRewrite\Version191to2000はそのクラスの 1 つです。 URL の書き換えデータをMagento1.9.1 からMagento2 に転送できます。
 
 #### 房室ステップ
 
@@ -492,9 +492,9 @@ $this->logger->warning("Some warning message");
 
 ログ情報の書き込み先をカスタマイズする可能性があります。 ロガーの pushHandler() メソッドを使用して、ロガーにハンドラーを追加することで、これを実行できます。 各ハンドラーは、 `\Monolog\Handler\HandlerInterface` インターフェイス。 現時点では、2 つのハンドラーがあります。
 
-* ConsoleHandler:コンソールにメッセージを書き込みます
+* ConsoleHandler：メッセージをコンソールに書き込みます
 
-* FileHandler:は&quot;log_file&quot;設定オプションで設定されたログファイルにメッセージを書き込みます
+* FileHandler：設定オプション&quot;log_file&quot;で設定されたログファイルにメッセージを書き込みます。
 
 また、追加のハンドラーを実装することもできます。 ハンドラーフレームワークには、一連のハンドラーがMagentoされています。 ロガーにハンドラーを追加する例：
 
@@ -533,7 +533,7 @@ monolog 形式を使用して、ログメッセージを書式設定できます
 * 単位
 * 統合
 
-これらは、ツールの `tests/` ディレクトリ（テストのタイプと同じ）( 単体テストは `tests/unit` ディレクトリ ) に書き込まれます。 テストを開始するには、phpunit がインストールされている必要があります。 現在のディレクトリをテストディレクトリに変更し、phpunit を起動します。 例：
+これらは、ツールの `tests/` ディレクトリ（テストのタイプと同じ）( 単体テストは、 `tests/unit` ディレクトリ ) に書き込まれます。 テストを開始するには、phpunit がインストールされている必要があります。 現在のディレクトリをテストディレクトリに変更し、phpunit を起動します。 例：
 
 ```bash
 [10:32 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool]-[git master]

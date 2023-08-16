@@ -15,7 +15,7 @@ ht-degree: 0%
 このプレイブックでは、以下を含むAdobe Commerce開発の主な基準の一部を詳しく説明します。
 
 - 開発プロセスに沿った機能および技術的範囲
-- MVC アーキテクチャと整合する開発のベストプラクティス
+- MVC アーキテクチャとの整合に関する開発のベストプラクティス
 - GRA を含むアーキテクチャの考慮事項
 - スクリプティングと悪用に対するセキュリティ標準
 - 拡張機能の開発のベストプラクティス
@@ -33,6 +33,6 @@ Adobe Commerce on cloud infrastructure は、Adobe Commerceソフトウェア用
 
 ![Adobe Commerceコンポーネントの情報グラフィック](../../assets/playbooks/commerce-cloud.svg)
 
-Adobe Commerce on cloud infrastructure は、PHP、MySQL、Redis を含む、事前にプロビジョニングされたインフラストラクチャを提供します。 [!DNL RabbitMQ]、およびElasticsearch技術コードの変更が Platform as a Service(PaaS) 環境にプッシュされるたびに、効率的に迅速な開発と継続的なデプロイをおこなうための、自動ビルドとデプロイ操作を備えた Git ベースのワークフロー。高度にカスタマイズ可能な環境設定ファイルおよびツールオンラインの販売/小売業向けに、拡張性と安全性に優れた環境を提供する、AWSのホスティング。
+Adobe Commerce on cloud infrastructure は、PHP、MySQL、Redis を含む、事前にプロビジョニングされたインフラストラクチャを提供します。 [!DNL RabbitMQ]、およびElasticsearchテクノロジー。コードを変更するたびに、効率的に迅速に開発し継続的に導入するための自動ビルドおよびデプロイ操作を備えた Git ベースのワークフローが Platform as a Service(PaaS) 環境、高度にカスタマイズ可能な環境設定ファイルおよびツール、AWSホスティング。
 
 ![Adobe Commerceコンポーネントの情報グラフィック](../../assets/playbooks/cloud-tech-stack.svg)

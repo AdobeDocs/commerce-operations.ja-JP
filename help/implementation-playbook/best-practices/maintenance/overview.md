@@ -49,7 +49,7 @@ ht-degree: 0%
 <!-- Asset not yet integrated
 - [Reindexing - the safe way](https://wiki.corp.adobe.com/x/oj4ykw)(wiki)
 -->
-- [インデックスの再作成方法](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
+- [インデックスを再作成する方法](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
 - [インデクサーの設定のベストプラクティス&#x200B;](indexer-configuration.md)
 - [注文処理の設定のベストプラクティス](order-processing-configuration.md)
 <!-- Asset not yet integrated from CTAG deck:
@@ -68,7 +68,7 @@ ht-degree: 0%
 ## 機能強化
 
 - [パーソナライズ](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL)
-- [e コマースのトレンド](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL)
+- [E コマースのトレンド](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL)
 - [AI 自動化](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL)
 
 ### アップグレード

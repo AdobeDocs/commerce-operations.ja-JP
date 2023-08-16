@@ -1,13 +1,13 @@
 ---
 title: 共通コマンド
 description: 一般的な Commerce CLI コマンドと使用方法のサンプリングを表示します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
 
 ---
-
 
 # 共通コマンド
 
@@ -34,9 +34,9 @@ bin/magento help cache:enable
 | コマンド | 説明 |
 |--- |--- |
 | [`magento cache:{enable/disable/clean/flush/status}`](../cli/manage-cache.md) | キャッシュの管理 |
-| [`magento indexer:{status/show-mode/set-mode/reindex/info/reset/show-dimensions-mode/set-dimensions-mode}`](../cli/manage-indexers.md) | インデクサーを管理 |
+| [`magento indexer:{status/show-mode/set-mode/reindex/info/reset/show-dimensions-mode/set-dimensions-mode}`](../cli/manage-indexers.md) | インデクサーを管理します |
 | [`magento cron:run`](../cli/configure-cron-jobs.md) | コマース cron ジョブを実行します |
-| [`magento setup:di:compile`](../cli/code-compiler.md) | 存在しないプロキシと工場をすべてコンパイルし、およびは、1 つのストアと Web サイトのクラス定義、継承情報、プラグイン定義を事前にコンパイルします。 |
+| [`magento setup:di:compile`](../cli/code-compiler.md) | 存在しないプロキシとファクトリをすべてコンパイルし、1 つのストアと Web サイトのクラス定義、継承情報、プラグイン定義を事前にコンパイルします。 |
 | [`magento info:dependencies:{show-modules/show-modules-circular/show-framework}`](../cli/dependency-reports.md) | モジュールの依存関係、循環依存関係、およびコマースフレームワークの依存関係。 |
 | [`magento i18n:{collect-phrases/pack/uninstall}`](../cli/localization.md) | 翻訳辞書または翻訳パッケージを作成します |
 | [`magento setup:static-content:deploy`](../cli/static-view-file-deployment.md) | 静的ビューファイルをデプロイします |
@@ -49,14 +49,14 @@ bin/magento help cache:enable
 | [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | 管理者ユーザーを作成/編集/ロック解除します。 |
 | [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | 開発者テンプレートのヒントを有効または無効にします。 |
 
-## 一般的な引数
+## 共通の引数
 
 次の引数は、すべてのコマンドに共通です。 次のコマンドは、Commerce ソフトウェアのインストール前またはインストール後に実行できます。
 
 | 長いバージョン | 短いバージョン | 意味 |
 |--- |--- |--- |
 | `--help` | `-h` | 任意のコマンドに関するヘルプを取得します。 例： `./magento help setup:install` または `./magento help setup:config:set`. |
-| `--quiet` | `-q` | 静止モード；出力なし。 |
+| `--quiet` | `-q` | クワイエットモード。出力なし。 |
 | `--no-interaction` | `-n` | インタラクティブな質問はありません。 |
 | `--verbose=1,2,3` | `-v, -vv, -vvv` | 詳細レベル。 例： `--verbose=3` または `-vvv` は、最も詳細な出力である debug verbosity を表示します。 デフォルトはです。 `--verbose=1` または `-v`. |
 | `--version` | `-V` | このアプリケーションバージョンを表示 |

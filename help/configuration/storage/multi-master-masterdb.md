@@ -6,7 +6,7 @@ exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 このトピックでは、次の方法でデータベース分割ソリューションの使用を開始する方法について説明します。
 
-1. 1 つのマスターデータベース ( `magento`)
+1. 1 つのマスターデータベース（名前は）を使用したAdobe Commerceのインストール `magento`)
 1. チェックアウトおよび OMS 用の 2 つの追加のマスター・データベースの作成 ( 名前： `magento_quote` および `magento_sales`)
 1. チェックアウトおよび販売データベースを使用するためのAdobe Commerceの設定
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## Adobe Commerceソフトウェアのインストール
 
-Adobe Commerceソフトウェアをインストールした後は、いつでも分割データベースを有効にすることができます。つまり、チェックアウトデータと注文データが既に存在するAdobe Commerceシステムに、分割データベースを追加することができます。 Adobe Commerce README または [インストールガイド](../../installation/overview.md) をクリックし、1 つのマスターデータベースを使用してAdobe Commerceソフトウェアをインストールします。
+Adobe Commerceソフトウェアをインストールした後は、いつでも分割データベースを有効にすることができます。つまり、既にチェックアウトおよび注文データを持つAdobe Commerceシステムに分割データベースを追加できます。 Adobe Commerce README または [インストールガイド](../../installation/overview.md) をクリックし、1 つのマスターデータベースを使用してAdobe Commerceソフトウェアをインストールします。
 
 ## 追加のマスターデータベースを設定する
 
@@ -84,7 +84,7 @@ Adobe Commerceソフトウェアをインストールした後は、いつでも
    exit
    ```
 
-   MySQL モニタが表示される場合は、データベースが正しく作成されています。 エラーが表示される場合は、上記のコマンドを繰り返します。
+   MySQL モニタが表示される場合は、データベースが正しく作成されています。 エラーが表示される場合は、前述のコマンドを繰り返します。
 
 ## マスターデータベースを使用するように Commerce を構成する
 
@@ -96,13 +96,13 @@ Adobe Commerceソフトウェアをインストールした後は、いつでも
 
 ### チェックアウトデータベースを設定する
 
-コマンド構文：
+コマンドの構文：
 
 ```bash
 bin/magento setup:db-schema:split-quote --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
-例：
+以下に例を挙げます。
 
 ```bash
 bin/magento setup:db-schema:split-quote --host="localhost" --dbname="magento_quote" --username="magento_quote" --password="magento_quote"
@@ -116,13 +116,13 @@ Migration has been finished successfully!
 
 ### OMS データベースを構成する
 
-コマンド構文：
+コマンドの構文：
 
 ```bash
 bin/magento setup:db-schema:split-sales --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
-例：
+以下に例を挙げます。
 
 ```bash
 bin/magento setup:db-schema:split-sales --host="localhost" --dbname="magento_sales" --username="magento_sales" --password="magento_sales"

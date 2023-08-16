@@ -29,7 +29,7 @@ MySQL クエリの実行に時間がかかっているかどうかを判断し�
 
 MySQL を使用して、クラウドインフラストラクチャプロジェクト上の任意のAdobe Commerceに関する長時間実行されるクエリを識別し、解決できます。
 
-1. を実行します。 [`SHOW \[FULL\] PROCESSLIST`](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) 文。
+1. を実行します。 [`SHOW \[FULL\] PROCESSLIST`](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) ステートメント。
 1. 長時間実行されるクエリが表示される場合は、を実行します。 [MySQL `EXPLAIN` および `EXPLAIN ANALYZE`](https://mysqlserverteam.com/mysql-explain-analyze/) 各クエリに対して、何が長時間クエリを実行するのかを調べるために使用します。
 1. 検出された問題に基づいて、クエリをより迅速に実行できるように修正する手順を実行します。
 
@@ -58,7 +58,7 @@ Adobe Commerceプロジェクトが Pro アーキテクチャにデプロイさ�
    SELECT table_catalog, table_schema, table_name, engine FROM information_schema.tables        WHERE (table_catalog, table_schema, table_name) NOT IN (SELECT table_catalog, table_schema, table_name FROM information_schema.table_constraints  WHERE constraint_type = 'PRIMARY KEY') AND table_schema NOT IN ('information_schema', 'pg_catalog');    
    ```
 
-1. プライマリキーが見つからないテーブルの場合、 `db_schema.xml` （宣言スキーマ）に次のようなノードが含まれます。
+1. プライマリキーが見つからないテーブルに対して、 `db_schema.xml` （宣言スキーマ）に次のようなノードが含まれます。
 
    ```html
    <constraint xsi:type="primary" referenceId="PRIMARY">         <column name="id_column"/>     </constraint>    
@@ -70,7 +70,7 @@ Adobe Commerceプロジェクトが Pro アーキテクチャにデプロイさ�
 
 ## 重複したインデックスの識別と削除
 
-データベース内の重複インデックスを特定し、削除します。
+データベース内の重複インデックスを特定し、それらを削除します。
 
 ### 重複インデックスの確認
 
@@ -82,7 +82,7 @@ SELECT s.INDEXED_COL,GROUP_CONCAT(INDEX_NAME) FROM (SELECT INDEX_NAME,GROUP_CONC
 
 クエリは、列名と重複するインデックスの名前を返します。
 
-Pro アーキテクチャのマーチャントも、Percona Toolkit を使用してチェックを実行できます  `[pt-duplicate-key checker](https://www.percona.com/doc/percona-toolkit/LATEST/pt-duplicate-key-checker.html%C2%A0)` コマンドを使用します。
+Pro アーキテクチャのマーチャントも、Percona Toolkit を使用してチェックを実行できます。  `[pt-duplicate-key checker](https://www.percona.com/doc/percona-toolkit/LATEST/pt-duplicate-key-checker.html%C2%A0)` コマンドを使用します。
 
 ### 重複インデックスの削除
 

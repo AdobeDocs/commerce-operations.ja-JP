@@ -1,5 +1,5 @@
 ---
-title: デプロイの前提条件
+title: デプロイメントの前提条件
 description: 開発、ビルドまたは実稼動システムに Commerce をデプロイするための前提条件のリストを参照してください。
 feature: Configuration, Deploy
 exl-id: 9ea0eeff-e0f8-4532-887c-5d7f07d89ddd
@@ -18,12 +18,12 @@ ht-degree: 0%
 
    - すべてのシステムで同じファイルシステム所有者のユーザー名を設定する
    - Web サーバーがすべてのシステムで同じユーザーとして実行されていることを確認します。
-   - ファイルシステムの所有者が、すべてのシステムの Web サーバグループに存在することを確認します
+   - ファイルシステムの所有者が、すべてのシステムの Web サーバグループに存在することを確認します。
 
 - 必要に応じて、次のガイドラインに従って、各システムの Commerce ファイルシステムの権限と所有権を変更します。
 
    - 開発とビルド： [プリインストールの所有権と権限を設定する（2 人のユーザー）](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
-   - 本番： [開発および実稼動環境でのコマースの所有権と権限](file-system-permissions.md)
+   - 実稼動： [開発および実稼動環境でのコマースの所有権と権限](file-system-permissions.md)
 
 >[!INFO]
 >

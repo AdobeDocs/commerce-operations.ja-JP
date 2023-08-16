@@ -1,11 +1,11 @@
 ---
 user-guide-title: 実装プレイブック
-user-guide-description: 成功するAdobe Commerceサイトの計画と実装の戦略について説明します。
+user-guide-description: 成功する Adobe Commerce サイトの計画と実装の戦略について学習します。
 mini-toc-levels: 3
 source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
@@ -39,10 +39,10 @@ ht-degree: 0%
    - [グローバルリファレンスアーキテクチャ](architecture/global-reference.md)
    - ヘッドレスコマース {#headless}
       - [メリット](architecture/headless/benefits.md)
-      - [ジャーニーからヘッドレス](architecture/headless/journey-to-headless.md)
-      - [マイクロサービス](architecture/headless/microservices.md)
+      - [ジャーニーをヘッドレスに](architecture/headless/journey-to-headless.md)
+      - [Microservices](architecture/headless/microservices.md)
       - [ヘッドレスの変化](architecture/headless/evolution.md)
-      - [ストアフロントアーキテクチャの結合](architecture/headless/legacy-storefront.md)
+      - [ストアフロントの組み合わせアーキテクチャ](architecture/headless/legacy-storefront.md)
       - [ヘッドレスアーキテクチャ](architecture/headless/adobe-commerce.md)
 - インフラストラクチャと導入 {#infrastructure}
    - [概要](infrastructure/overview.md)
@@ -52,7 +52,7 @@ ht-degree: 0%
       - [セキュリティの概念](infrastructure/self-hosting/security-concepts.md)
       - [テレメトリとツールの監視](infrastructure/self-hosting/monitoring-tools.md)
       - [災害復旧のアイデア](infrastructure/self-hosting/disaster-recovery-ideas.md)
-      - [パフォーマンスのヒント](infrastructure/self-hosting/performance-tips.md)
+      - [パフォーマンスに関するヒント](infrastructure/self-hosting/performance-tips.md)
    - クラウドインフラストラクチャ {#cloud}
       - [概要](infrastructure/cloud/overview.md)
       - [地域](infrastructure/cloud/regions.md)
@@ -71,7 +71,7 @@ ht-degree: 0%
    - [運用開始後の手順](launch/post-launch-steps.md)
 - メンテナンスとサポート {#maintenance}
    - [概要](maintenance/overview.md)
-   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
+   - [AdobeManaged Services](maintenance/adobe-managed-services.md)
 - ベストプラクティス {#best-practices}
    - [概要](best-practices/phases.md)
    - 計画 {#planning}
@@ -83,7 +83,7 @@ ht-degree: 0%
       - [MySQLトリガー使用](best-practices/planning/mysql-triggers-usage.md)
       - [Redis サービス設定](best-practices/planning/redis-service-configuration.md)
       - [OPcache メモリサイズ](best-practices/planning/opcache-memory-size.md)
-      - [Realpath キャッシュサイズ](best-practices/planning/realpath-cache-size.md)
+      - [Realpath のキャッシュサイズ](best-practices/planning/realpath-cache-size.md)
       - [カテゴリ](best-practices/planning/category-limits.md)
       - [製品](best-practices/planning/product-sku-limits.md)
       - [製品のバリエーション](best-practices/planning/product-variations.md)
@@ -103,7 +103,7 @@ ht-degree: 0%
       - [プライベートコンテンツブロック](best-practices/development/private-content-block-configuration.md)
       - [静的コンテンツのデプロイメント](best-practices/development/static-content-deployment.md)
       - [データベーステーブルの変更](best-practices/development/modifying-core-and-third-party-tables.md)
-   - 起動 {#launch}
+   - Launch {#launch}
       - [概要](best-practices/launch/overview.md)
       - [Adobeセキュリティ通知サービス](best-practices/launch/security-notification-service.md)
       - [robots.txt ファイルの設定](best-practices/launch/robots-txt.md)

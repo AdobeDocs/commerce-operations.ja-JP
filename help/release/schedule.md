@@ -1,11 +1,11 @@
 ---
 title: リリーススケジュール
-description: AdobeがAdobe Commerceの主な新機能のリリースを発表する予定について説明します。
+description: アドビが Adobe Commerce の実質的な新機能のリリースを発表を予定しているタイミングを学びます。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 source-git-commit: 12b4f619673414f18d9697450e867681c6cb3194
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -63,7 +63,7 @@ Adobeリリース [パッチ](versioning-policy.md#patch-release) コアAdobe Co
   </tr>
   <tr>
     <td>2024 年 3 月 20 日</td>
-    <td>--</td>
+    <td>—</td>
     <td><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">ベータパッチ</a>: 2.4.7-beta3</td>
   </tr>
   <tr>

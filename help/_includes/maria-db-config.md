@@ -18,7 +18,7 @@ MariaDB 10.6 にアップグレードした後、インデックス化に関連�
 
 >[!NOTE]
 >
->これらの設定は、オンプレミスの展開でのみ使用できます。 Adobe Commerce on cloud infrastructure のお客様は、これらの設定にアクセスできません。
+>これらの設定は、オンプレミスでの展開でのみ使用できます。 Adobe Commerce on cloud infrastructure のお客様は、これらの設定にアクセスできません。
 
 * [`--query-cache-limit`](https://mariadb.com/kb/en/server-system-variables/#query_cache_limit)
 * [`--query-cache-size`](https://mariadb.com/kb/en/server-system-variables/#query_cache_size)

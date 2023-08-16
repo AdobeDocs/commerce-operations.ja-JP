@@ -1,13 +1,13 @@
 ---
 title: 単体テストの実行
 description: Adobe Commerceコードベースで定義された単体テストを実行します。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
 
 ---
-
 
 # 単体テストの実行
 
@@ -17,15 +17,15 @@ ht-degree: 0%
 
 ## 前提条件
 
-このコマンドを実行する前に、次の手順を実行します。 _必須_ true:
+このコマンドを実行する前に、次の手順を実行します。 _必須_ true の場合：
 
-- この `Magento_Developer` モジュールを有効にする必要があります。 次のように有効にすることができます。
+- The `Magento_Developer` モジュールを有効にする必要があります。 次のように有効にすることができます。
 
-   ```bash
-   bin/magento module:enable [--force] Magento_Developer
-   ```
+  ```bash
+  bin/magento module:enable [--force] Magento_Developer
+  ```
 
-   以下を使用： `--force` オプションは、必要な場合にのみ選択します。
+  以下を使用します。 `--force` オプションは、必要な場合にのみ選択します。
 
 - 目的のテストを実行するには、システムを設定する必要があります。
 
@@ -51,7 +51,7 @@ bin/magento dev:tests:run --help
 all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 ```
 
-例えば、統合テストを実行するには、次の手順を実行します。
+例えば、統合テストを実行するには、次の手順に従います。
 
 ```bash
 bin/magento dev:tests:run integration

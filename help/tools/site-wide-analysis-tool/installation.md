@@ -1,6 +1,6 @@
 ---
 title: インストールガイド
-description: このガイドを使用して、 [!DNL Site-Wide Analysis Tool] （Web サイト用）
+description: このガイドを使用して、をインストールします。 [!DNL Site-Wide Analysis Tool] （Web サイト用）
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
 feature: Configuration, Install
 source-git-commit: 163d12b1f30a3098932c62e11f24784422002c67
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # インストールガイド
 
-この [!DNL Site-Wide Analysis Tool] では、クラウドインフラストラクチャのインストール時にAdobe Commerceのセキュリティと操作性を確保するための24/7のリアルタイムパフォーマンス監視、レポートおよび推奨事項を提供しています。 また、利用可能なパッチとインストール済みのパッチ、サードパーティの拡張機能、Adobe Commerceのインストールに関する詳細情報も提供されます。
+The [!DNL Site-Wide Analysis Tool] では、クラウドインフラストラクチャのインストール時にAdobe Commerceのセキュリティと操作性を確保するための24/7のリアルタイムパフォーマンス監視、レポートおよび推奨事項を提供しています。 また、利用可能なパッチとインストール済みのパッチ、サードパーティの拡張機能、Adobe Commerceのインストールに関する詳細情報も提供されます。
 
 >[!INFO]
 >
@@ -22,9 +22,9 @@ Adobe Commerceをオンプレミスでインストールしている場合は、
 
 ## エージェント
 
-この [!DNL Site-Wide Analysis Tool] エージェントを使用すると、 [!DNL Site-Wide Analysis Tool] Adobe Commerceのオンプレミスインストールの場合。
+The [!DNL Site-Wide Analysis Tool] エージェントを使用すると、 [!DNL Site-Wide Analysis Tool] Adobe Commerceのオンプレミスインストールの場合。
 
-この [!DNL Site-Wide Analysis Tool] エージェントは、アプリケーションとビジネスデータを収集し、分析し、インストールの状態に関する追加のインサイトを提供して、顧客体験を向上させます。 アプリケーションを監視し、パフォーマンス、セキュリティ、可用性、アプリケーションの問題を特定します。
+The [!DNL Site-Wide Analysis Tool] エージェントは、アプリケーションとビジネスデータを収集し、分析し、インストールの状態に関する追加のインサイトを提供して、顧客体験を向上させます。 アプリケーションを監視し、パフォーマンス、セキュリティ、可用性、アプリケーションの問題を特定します。
 
 エージェントのインストールには、次の手順が必要です。
 
@@ -82,7 +82,7 @@ bin/magento module:status Magento_ServicesId
 
 拡張機能をインストールし、別のサービスの既存の API キーを使用して設定した場合は、 **API キーを再生成する必要があります** エージェントのAdobe Commerce Admin で更新します。
 
-1. Web サイトを [メンテナンスモード](../../installation/tutorials/maintenance-mode.md).
+1. Web サイトをに配置する [メンテナンスモード](../../installation/tutorials/maintenance-mode.md).
 
 1. ログイン [account.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
 
@@ -130,7 +130,7 @@ bin/magento module:status Magento_ServicesId
 
 ## エージェントのインストール
 
-以下を作成しました： [シェルスクリプト](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) インストールを簡単にする。 シェルスクリプトを使用することをお勧めしますが、次の手順に従うことができます。 [手動設置](#manual) メソッドを使用します。
+以下を作成しました： [シェルスクリプト](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) インストールを簡単にする。 シェルスクリプトを使用することをお勧めしますが、次の手順に従うことができます。 [手動設置](#manual) メソッドを使用します（必要な場合）。
 
 >[!INFO]
 >
@@ -159,7 +159,7 @@ bin/magento module:status Magento_ServicesId
    Success exit.
    ```
 
-1. エージェントをダウンロードしてインストールした後、 [実行するように設定](#run-the-agent) 次のいずれかの方法を使用します。
+1. エージェントをダウンロードしてインストールした後、 [実行するように設定します](#run-the-agent) 次のいずれかの方法を使用します。
 
    - [サービス](#service) （ルートアクセス権を持っている場合に推奨）
 
@@ -225,7 +225,7 @@ bin/magento module:status Magento_ServicesId
    shasum -a 512 -c launcher.checksum
    ```
 
-1. を作成します。 `config.yaml` ファイルに次の内容を追加します。
+1. を作成します。 `config.yaml` ファイルに次の内容を含めます。
 
    ```yaml
    project:
@@ -258,7 +258,7 @@ bin/magento module:status Magento_ServicesId
    Success exit.
    ```
 
-1. エージェントをダウンロードしてインストールした後、次の操作を行う必要があります。 [実行するように設定](#run-the-agent) 次のいずれかの方法を使用します。
+1. エージェントをダウンロードしてインストールした後、次の操作を行う必要があります。 [実行するように設定します](#run-the-agent) 次のいずれかの方法を使用します。
 
    - [サービス](#service) （ルートアクセス権を持っている場合に推奨）
 
@@ -312,7 +312,7 @@ bin/magento module:status Magento_ServicesId
 
 root 権限がない場合や、root としてサービスを設定する権限がない場合は、cron を代わりに使用できます。
 
-cron スケジュールを更新します。
+Cron スケジュールを更新します。
 
 ```bash
 ( crontab -l ; echo "* * * * * flock -n /tmp/swat-agent.lockfile -c '/path/to/agent/scheduler' >> /path/to/agent/errors.log 2>&1" ) | sort - | uniq - | crontab -
@@ -322,13 +322,13 @@ cron スケジュールを更新します。
 
 次のコマンドを実行して、システムからサービスをアンインストールし、生成されたすべてのファイルを削除します。
 
-1. スケジューラを停止します。
+1. スケジューラーを停止します。
 
    ```bash
    systemctl stop scheduler
    ```
 
-1. スケジューラを無効にします。
+1. スケジューラーを無効にします。
 
    ```bash
    systemctl disable scheduler
@@ -340,13 +340,13 @@ cron スケジュールを更新します。
    rm /etc/systemd/system/scheduler.service
    ```
 
-1. をリロードします。 `systemd` マネージャー設定
+1. をリロードします。 `systemd` マネージャー設定。
 
    ```bash
    systemctl daemon-reload
    ```
 
-1. リセット `systemd` の単位を失敗状態から取得します。
+1. いずれかをリセット `systemd` の単位を失敗状態から取得します。
 
    ```bash
    systemctl reset-failed
@@ -397,21 +397,21 @@ FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.a
 
 このエラーを解決するには、次の手順を試してください。
 
-1. 実行する [スクリプトインストール](#scripted)、出力を保存し、エラーの出力を確認します。
+1. 以下を実行します。 [スクリプトインストール](#scripted)、出力を保存し、エラーの出力を確認します。
 1. 生成された `config.yaml` ファイルを開き、コマースインスタンスと PHP へのパスが正しいことを確認します。
 1. スケジューラーを実行しているユーザーが [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md) UNIX グループまたははファイルシステムの所有者と同じユーザーです。
-1. 必ず [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) キーが正しくインストールされていることを確認し、拡張機能をシステムに接続するためにキーを更新してみてください。
+1. 次を確認します。 [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) キーが正しくインストールされていることを確認し、拡張機能をシステムに接続するためにキーを更新してみてください。
 1. [アンインストール](#uninstall) キーを更新し、を使用して再インストールした後のエージェント [インストールスクリプト](#scripted).
 1. スケジューラーを実行し、同じエラーが引き続き表示されるかどうかを確認します。
 1. それでも同じエラーが発生する場合は、 `config.yaml` をクリックして、サポートチケットをデバッグし開きます。
 
 ### *SIGFAULT* エラー
 
-次の項目が *SIGFAULT* バイナリを実行中にエラーが発生した場合は、Adobe Commerceおよびエージェントファイルのファイル所有者として、これを実行しない可能性があります。
+次のような場合に、 *SIGFAULT* バイナリを実行中にエラーが発生した場合は、Adobe Commerceおよびエージェントファイルのファイル所有者として、これを実行しない可能性があります。
 解決するには、エージェントディレクトリ内の、Adobe Commerceファイルが持つファイル所有者と同じユーザーを持つすべてのファイルと、そのユーザーの下でバイナリを実行する必要があるかどうかを確認してください。
-以下を使用して、 `chown` コマンドを使用して、ファイルの所有者を変更し、適切なユーザーに切り替えます。
+以下を使用すると、 `chown` コマンドを使用して、ファイルの所有者を変更し、適切なユーザーに切り替えます。
 デーモン化メカニズム（Cron または System.d）が適切なユーザーでプロセスを実行していることを確認します。
 
 >[!INFO]
 >
->詳しくは、 [アクセス方法 [!DNL Site-Wide Analysis Tool] レポートの生成](../site-wide-analysis-tool/access.md).
+>詳しくは、 [アクセス方法 [!DNL Site-Wide Analysis Tool] レポートを生成します。](../site-wide-analysis-tool/access.md).

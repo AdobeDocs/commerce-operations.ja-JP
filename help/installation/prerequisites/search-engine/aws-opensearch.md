@@ -41,14 +41,14 @@ OpenSearch を設定する手順については、 [高度なインストール]
 
 新しい設定が機能しているかをテストするには、OpenSearch エンドポイントを直接テストします。
 
-1. 管理者で製品を作成します ( 例：sku=&quot;testproduct1&quot;) と同じです。
+1. 管理者で製品を作成します（例：sku=&quot;testproduct1&quot;）。
 1. 管理者を通じてインデックスを再作成します。
 1. OpenSearch エンドポイント (AWS UI にある ) をクエリします。
 
-   インデックスを取得するには、次の文字列を追加します。 `/_cat/indices/*?v=true` を URL に追加します。
+   インデックスを取得するには、次の文字列を追加します。 `/_cat/indices/*?v=true` を次の URL に追加します。
    `<AWS OS endpoint>/_cat/indices/*?v=true`
 
-インデックスから製品を取得するには、以下を追加します。 `/magento2docker_product_1/_search?q=*` を URL に追加します。
+インデックスから製品を取得するには、以下を追加します。 `/magento2docker_product_1/_search?q=*` を次の URL に追加します。
 `<AWS OS endpoint>/magento2docker_product_1/_search?q=testproduct1`
 
 ## その他のリソース

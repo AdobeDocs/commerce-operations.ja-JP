@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # ワニス構成の最終検証
 
-これで、 `default.vcl` コマースで生成された Vanrish を確実に機能させるために、最終的な検証を行うことができます。
+これで、 `default.vcl` コマースで生成された Vanish が機能していることを確認するために、最終的な検証を行うことができます。
 
 ## HTTP 応答ヘッダーの検証
 
 用途 `curl` Web ブラウザーで任意のコマースページにアクセスしたときに HTTP 応答ヘッダーを表示する別のユーティリティ。
 
-まず、 [開発者モード](../cli/set-mode.md#change-to-developer-mode);そうしないと、ヘッダーは表示されません。
+まず、 [開発者モード](../cli/set-mode.md#change-to-developer-mode)を使用しない場合、ヘッダーは表示されません。
 
-例：
+以下に例を挙げます。
 
 ```bash
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
@@ -55,15 +55,15 @@ Vanish が機能している場合、キャッシュ可能なブロックを含�
 
    次の図は、 `magento2` インデックスページ。
 
-   ![表示しているページをクリックします](../../assets/configuration/varnish-inspector.png)
+   ![表示しているページをクリックします。](../../assets/configuration/varnish-inspector.png)
 
    ページの読み込み時間は、ページ URL の横に表示されます。 この場合、読み込み時間は 5 ms です。 これは、Vanish がページをキャッシュしたことを確認するのに役立ちます。
 
-1. HTTP 応答ヘッダーを表示するには、ページ URL（名前列内）をクリックします。
+1. HTTP 応答ヘッダーを表示するには、（「名前」列で）ページ URL をクリックします。
 
    HTTP ヘッダーを表示できます。詳しくは、 HTTP 応答ヘッダーの検証の節で説明しています。
 
-## コマースキャッシュを確認します
+## コマースキャッシュを確認します。
 
 次を確認します。 `<magento_root>/var/page_cache` ディレクトリが空です：
 
@@ -83,4 +83,4 @@ Vanish が機能している場合、キャッシュ可能なブロックを含�
 
 >[!TIP]
 >
->503（バックエンドの取得に失敗）エラーが発生した場合は、 [503（サービスを利用できない）エラーのトラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) 内 _Adobe Commerce Help Center_.
+>503（バックエンドの取得に失敗）エラーが発生した場合は、 [503（サービスを利用できない）エラーのトラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) （内） _Adobe Commerce Help Center_.

@@ -1,6 +1,6 @@
 ---
 title: データ移行でサポートされているバージョン
-description: Magento1 とMagento2 のバージョンについて説明します。 [!DNL Data Migration Tool] サポート。
+description: Magento1 とMagento2 のバージョンについて説明します。 [!DNL Data Migration Tool] はをサポートします。
 exl-id: ba6398b4-66be-4d33-a4d3-a9f0aaa0fa81
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # データ移行でサポートされているバージョン
 
-この [!DNL Data Migration Tool] 移行をサポート _から_ 次のバージョン：
+The [!DNL Data Migration Tool] 移行をサポート _から_ 次のバージョン：
 
-* Adobe Commerce:
+* ADOBE COMMERCE:
    * 1.11.x
    * 1.12.x
    * 1.13.x
    * 1.14.x
-* Magento Open Source:
+* MAGENTO OPEN SOURCE:
    * 1.6.x
    * 1.7.x
    * 1.8.x

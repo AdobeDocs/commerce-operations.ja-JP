@@ -1,13 +1,13 @@
 ---
 title: 詳細 [!DNL JavaScript] バンドル
-description: JavaScript のバンドルによって、サーバーリクエストのサイズと頻度を減らす方法について説明します。
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+description: JavaScript のバンドルによってサーバーリクエストのサイズと頻度を減らす方法について説明します。
+exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '2137'
 ht-degree: 0%
 
 ---
-
 
 # 詳細 [!DNL JavaScript] 束縛
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## マージとバンドル
 
-すぐに使える [!DNL Commerce] では、次の 2 つの方法でサーバーリクエスト数を削減できます。マージとバンドル。 これらの設定は、デフォルトではオフになっています。 これらは、 **[!UICONTROL Stores]** > **設定** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]**&#x200B;またはをコマンドラインから呼び出します。
+すぐに使える [!DNL Commerce] では、サーバーリクエストの数を減らす方法として、マージとバンドルの 2 つが用意されています。 これらの設定は、デフォルトではオフになっています。 これらは、Admin UI で **[!UICONTROL Stores]** > **設定** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]**&#x200B;またはをコマンドラインから呼び出します。
 
 ![バンドル](../assets/performance/images/bundlingImage.png)
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
-これはネイティブの [!DNL Commerce] システム内に存在するすべてのアセットを組み合わせて、同じサイズのバンドル (bundle_0.js、bundle_1.js .. bundle_x.js) に配布するメカニズム
+これはネイティブです [!DNL Commerce] システム内に存在するすべてのアセットを組み合わせて、同じサイズのバンドル (bundle_0.js、bundle_1.js .. bundle_x.js) に配布するメカニズム。
 
 ![[!DNL Commerce] 束縛](../assets/performance/images/magentoBundling.png)
 
@@ -50,23 +50,23 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 php -f bin/magento config:set dev/js/merge_files 1
 ```
 
-このコマンドは、すべての同期を結合します [!DNL JavaScript] ファイルを 1 つのファイルに格納します。 バンドルを有効にせずにマージを有効にすることは、 [!DNL Commerce] は RequireJS を使用します。 バンドルを有効にしない場合、 [!DNL Commerce] は、RequireJS とその設定を結合するだけです。 バンドルとマージの両方を有効にする場合、 [!DNL Commerce] は単一の [!DNL JavaScript] ファイル：
+このコマンドは、すべての同期をマージします。 [!DNL JavaScript] ファイルを 1 つのファイルに格納します。 バンドルを有効にせずにマージを有効にすることは、 [!DNL Commerce] は RequireJS を使用します。 バンドルを有効にしない場合、 [!DNL Commerce] は、RequireJS とその設定を結合するだけです。 バンドルとマージの両方を有効にする場合、 [!DNL Commerce] は単一の [!DNL JavaScript] ファイル：
 
-![実世界のマージ](../assets/performance/images/magentoMergingDevWorld.png)
+![実世界でのマージ](../assets/performance/images/magentoMergingDevWorld.png)
 
 ## 実世界のレンダリング時間
 
-以前のバンドルおよびマージされた読み込み時間は、開発環境では非常に良く見えます。 しかし、現実世界では、多くのことがレンダリングの速度を落とす可能性があります。低速な接続、大きな接続しきい値、限られたネットワーク。 また、モバイルデバイスはデスクトップほど高速にレンダリングされません。
+以前のバンドルおよびマージされた読み込み時間は、開発環境では非常に良く見えます。 しかし、現実世界では、多くのことがレンダリングの速度を落とす可能性があります。低速な接続、大きな接続のしきい値、限られたネットワークです。 また、モバイルデバイスはデスクトップほど高速にレンダリングされません。
 
 実世界向けのストアフロントデプロイメントをテストして準備するには、Chrome のネイティブスロットルプロファイル「Slow 3G」を使用してテストすることをお勧めします。 Slow 3G を使用すると、以前にバンドルされた出力時間は、多くのユーザーの接続の現実を反映するようになりました。
 
 ![実世界でのバンドル](../assets/performance/images/magentoBundlingRealWorld.png)
 
-Slow 3G 接続では、クリーンなホームページのすべてのバンドルを読み込むのに約 44 秒かかります [!DNL Commerce] インストール。
+Slow 3G 接続では、クリーンなホームページのすべてのバンドルを読み込むのに約 44 秒かかります。 [!DNL Commerce] インストール。
 
 バンドルを単一のファイルにマージする場合も同じことが言えます。 次に示すように、ユーザーは、最初のページ読み込みが約 42 秒待つことができます。
 
-![実世界のマージ](../assets/performance/images/magentoMergingRealWorld.png)
+![実世界でのマージ](../assets/performance/images/magentoMergingRealWorld.png)
 
 より高度なアプローチで [!DNL JavaScript] バンドルすると、これらの読み込み時間を改善できます。
 
@@ -78,7 +78,7 @@ Slow 3G 接続では、クリーンなホームページのすべてのバンド
 
 例えば、すべてのページに共通する依存関係のバンドル、CMS のみのページのバンドル、カタログのみのページのバンドル、検索のみのページの別のバンドル、チェックアウトページのバンドルが作成される場合があります。
 
-また、目的別にバンドルを作成することもできます。一般的な機能、製品関連の機能、発送機能、チェックアウト機能、税金、フォーム検証について説明します。 バンドルの定義方法は、ユーザーおよびストアの構造次第です。 一部のバンドル戦略は他のバンドル戦略よりも効果が高くなる場合があります。
+また、一般的な機能、製品関連の機能、発送機能、チェックアウト機能、税金、フォーム検証など、目的別にバンドルを作成することもできます。 バンドルの定義方法は、ユーザーおよびストアの構造次第です。 一部のバンドル戦略は他のバンドル戦略よりも効果が高くなる場合があります。
 
 きれい [!DNL Commerce] をインストールすると、ページのタイプ別にバンドルを分割することで十分なパフォーマンスを得ることができますが、一部のカスタマイズでは、より深い分析や他のアセットの配布が必要になる場合があります。
 
@@ -98,7 +98,7 @@ Slow 3G 接続では、クリーンなホームページのすべてのバンド
 - [deps.js](../assets/performance/code-samples/deps.js)
 - [deps-map.sh](../assets/performance/code-samples/deps-map.sh.txt)
 
-### パート 1:バンドル設定の作成
+### 第 1 部：バンドル設定の作成
 
 #### 1\. build.js ファイルの追加
 
@@ -111,7 +111,7 @@ Slow 3G 接続では、クリーンなホームページのすべてのバンド
 })
 ```
 
-後で、 `optimize:` 設定：_ `none` から `uglify2` バンドル出力を縮小する ただし、現時点では、開発時に、をに設定しておくことができます。 `none` を使用して、より迅速なビルドを実現します。
+後で、 `optimize:` 設定：_ `none` から `uglify2` バンドル出力を縮小する ただし、現時点では、開発時に、に設定したままにしておくことができます。 `none` を使用して、より迅速なビルドを実現します。
 
 #### 2\. RequireJS 依存関係、shim、パス、およびマップを追加します。
 
@@ -131,11 +131,11 @@ Slow 3G 接続では、クリーンなホームページのすべてのバンド
 
 #### 3\. requirejs-config.js インスタンスの値を集計します。
 
-この手順では、 `deps`, `shim`, `paths`、および `map` ストアの設定ノード `requirejs-config.js` を `build.js` ファイル。 これをおこなうには、 **[!UICONTROL Network]** 」タブをクリックし、ストア内の任意のページ（ホームページなど）に移動します。 「ネットワーク」タブに、ストアのインスタンスが `requirejs-config.js` 上部付近のファイル（ここでハイライト表示）:
+この手順では、 `deps`, `shim`, `paths`、および `map` ストアの設定ノード `requirejs-config.js` ファイルを `build.js` ファイル。 これをおこなうには、 **[!UICONTROL Network]** 」タブをクリックし、ストア内の任意のページ（ホームページなど）に移動します。 「ネットワーク」タブに、ストアのインスタンスが `requirejs-config.js` 上部付近のファイル（ここでハイライト表示）:
 
 ![RequireJS 設定](../assets/performance/images/RequireJSConfig.png)
 
-このファイル内には、各設定ノード (`deps`, `shim`, `paths`, `map`) をクリックします。 これらの複数のノード値を、build.js ファイルの単一の設定ノードに集計する必要があります。 例えば、ストアの `requirejs-config.js` インスタンスには 15 個の別のエントリがあります `map` ノードを使用する場合、15 個のノードのエントリをすべて 1 つのノードに結合する必要があります `map` ノード内の `build.js` ファイル。 同じことが人にも当てはまる `deps`, `shim`、および `paths` ノード。 この処理を自動化するスクリプトがない場合は、時間がかかる場合があります。
+このファイル内には、各設定ノード (`deps`, `shim`, `paths`, `map`) をクリックします。 これらの複数のノード値を、build.js ファイルの単一の設定ノードに集計する必要があります。 例えば、ストアの `requirejs-config.js` インスタンスには 15 個の別のエントリがあります `map` ノードを使用する場合、15 個のノードのエントリをすべて 1 つのノードに結合する必要があります `map` 」ノード内の `build.js` ファイル。 同じことが人にも当てはまる `deps`, `shim`、および `paths` ノード。 この処理を自動化するスクリプトがない場合は、時間がかかる場合があります。
 
 パスを変更する必要があります `mage/requirejs/text` から `requirejs/text` in `paths` 設定ノードを次のように指定します。
 
@@ -151,7 +151,7 @@ Slow 3G 接続では、クリーンなホームページのすべてのバンド
 
 #### 4\. モジュールノードの追加
 
-の最後 `build.js` ファイルを開き、モジュールを追加する[] 配列は、後でストアフロントに定義するバンドルのプレースホルダーとして使用します。
+の最後に `build.js` ファイルを開き、モジュールを追加する[] 配列は、後でストアフロントに定義するバンドルのプレースホルダーとして使用します。
 
 ```javascript
 ({
@@ -174,9 +174,9 @@ Slow 3G 接続では、クリーンなホームページのすべてのバンド
 1. [!DNL PhantomJS] コマンドラインから ( [!DNL PhantomJS] インストール済み )。
 1. ブラウザーのコンソールで、RequireJS コマンドを使用します。
 
-#### 使用する [!DNL PhantomJS]:
+#### 次を使用するには： [!DNL PhantomJS]:
 
-内 [!DNL Commerce] ルートディレクトリ、新しいファイルを作成します。 `deps.js` 以下のコードのをコピーします。 このコードは [!DNL [!DNL PhantomJS]] をクリックしてページを開き、ブラウザーがすべてのページアセットを読み込むのを待ちます。 次に、すべての [!DNL RequireJS] 特定のページの依存関係。
+Adobe Analytics の [!DNL Commerce] ルートディレクトリ、新しいファイルを作成します。 `deps.js` 以下のコードのをコピーします。 このコードは [!DNL [!DNL PhantomJS]] をクリックしてページを開き、ブラウザーがすべてのページアセットを読み込むのを待ちます。 次に、すべての [!DNL RequireJS] 特定のページの依存関係。
 
 ```javascript
 "use strict";
@@ -228,7 +228,7 @@ phantomjs deps.js http://m2.loc/checkout/cart/?SID=m2tjdt7ipvep9g0h8pmsgie975 > 
 Object.keys(window.require.s.contexts._.defined)
 ```
 
-このコマンド ( [!DNL PhantomJS] スクリプト ) は、 [!DNL RequireJS] 依存関係を参照し、ブラウザーのコンソール内に表示します。 この方法の欠点は、独自のバンドル/ページタイプのテキストファイルを作成する必要があることです。
+このコマンド ( [!DNL PhantomJS] スクリプト ) は同じリストを作成します。 [!DNL RequireJS] 依存関係を参照し、ブラウザーのコンソール内に表示します。 この方法の欠点は、独自のバンドル/ページタイプのテキストファイルを作成する必要があることです。
 
 #### 6\. 出力のフォーマットとフィルター
 
@@ -241,7 +241,7 @@ sed -i -e $'s/,/\\\n/g' bundle/product.txt
 ....
 ```
 
-Mixin は重複する依存関係を持つので、各ファイルのすべての Mixin を削除する必要もあります。 各依存ファイルで次のコマンドを使用します。
+Mixin は重複する依存関係を持つので、各ファイルのすべての Mixin を削除する必要もあります。 各依存関係ファイルで次のコマンドを使用します。
 
 ```terminal
 sed -i -e 's/mixins\!.*$//g' bundle/homepage.txt
@@ -275,19 +275,19 @@ sort bundle/*.txt |uniq -c |sort -n
 ...
 ```
 
-この出力は、を示しています。 `buildTools` は、bundle/*.txt ファイルの 1 つにのみ依存関係です。 この `jquery/jquery.metadata` 依存関係は 2 つの (2) ファイルで、 `es6-collections` は 3 つ (3) のファイルに含まれています。
+この出力は、を示しています。 `buildTools` は、bundle/*.txt ファイルの 1 つにのみ依存関係です。 The `jquery/jquery.metadata` 依存関係は 2 つの (2) ファイルにあり、 `es6-collections` は 3 つ (3) のファイルに含まれています。
 
-出力には、3 つのページタイプ（ホームページ、カテゴリ、製品）のみが表示され、次のことがわかります。
+出力には、3 つのページタイプ（ホームページ、カテゴリ、製品）のみが表示され、次の情報が示されます。
 
 - 3 つの依存関係は、1 つのページタイプ（数値 1 で表示）に対してのみ一意です。
-- 2 つのページタイプ（数値 2 で表示）に対して、さらに 3 つの依存関係が発生します。
+- 2 つのページタイプ（数値 2 で示される）に対して、さらに 3 つの依存関係が発生します。
 - 最後の 3 つの依存関係は、3 つのページタイプすべてに共通です（3 番目で示されます）。
 
 これにより、どのページタイプがどの依存関係を必要とするかを把握したら、依存関係を別々のバンドルに分割することで、ストアのページ読み込み速度を向上できる可能性が高くなります。
 
 #### 8\. 依存関係配布ファイルを作成する
 
-どのページタイプにどの依存関係が必要かを調べるには、 [!DNL Commerce] ルートディレクトリ： `deps-map.sh` をコピーして、次のコードに格納します。
+どのページタイプにどの依存関係が必要かを調べるには、 [!DNL Commerce] ルートディレクトリ： `deps-map.sh` をコピーして、次のコードに置き換えます。
 
 ```shell
 awk 'END {
@@ -337,7 +337,7 @@ bundle/category.txt/bundle/homepage.txt/bundle/product.txt --> knockoutjs/knocko
 
 を開きます。 `build.js` 設定ファイルを開き、バンドルを `modules` ノード。 各バンドルでは、次のプロパティを定義する必要があります。
 
-- `name` — バンドルの名前。 例： `bundles/cart` を生成します。 `cart.js` 包む `bundles` サブディレクトリ。
+- `name` — バンドルの名前。 例： `bundles/cart` はを生成します。 `cart.js` ～に包む `bundles` サブディレクトリ。
 
 - `create` — バンドルを作成するブール型フラグ ( 値： `true` または `false`) をクリックします。
 
@@ -376,9 +376,9 @@ bundle/category.txt/bundle/homepage.txt/bundle/product.txt --> knockoutjs/knocko
 - `bundles/checkout` — チェックアウトのすべて
 - `bundles/catalog` — 商品ページとカテゴリページのすべて
 
-### パート 2:バンドルを生成
+### パート 2：バンドルの生成
 
-次の手順では、より効率的なを生成するための基本的なプロセスについて説明します [!DNL Commerce] バンドル。 このプロセスは好きなように自動化できますが、 `nodejs` および `r.js` 実際にバンドルを生成する。 テーマに [!DNL JavaScript]関連するカスタマイズと再利用はできません `build.js` ファイルを作成する場合、 `build.js` テーマごとの設定
+次の手順では、より効率的なを生成するための基本的なプロセスについて説明します [!DNL Commerce] バンドル。 このプロセスは好きなように自動化できますが、 `nodejs` および `r.js` 実際にバンドルを生成する。 テーマに [!DNL JavaScript] — 関連のカスタマイズと再利用はできません `build.js` ファイルを作成する場合は、 `build.js` テーマごとの設定
 
 #### 1.静的ストアサイトを生成する
 
@@ -397,7 +397,7 @@ php -f bin/magento setup:static-content:deploy -f -a frontend
 
 すべてのストアテーマとロケールのバンドルを生成するには、各ストアテーマとロケールに対して以下の手順を繰り返します。
 
-#### 2.静的ストアコンテンツを一時ディレクトリに移動します
+#### 2.静的ストアコンテンツを一時ディレクトリに移動します。
 
 まず、静的コンテンツをターゲットディレクトリ内のすべてのコンテンツを RequireJS で置き換えるので、静的コンテンツをターゲットディレクトリ内の一時ディレクトリに移動する必要があります。
 
@@ -482,7 +482,7 @@ require.config({});
 r.js -o app/design/frontend/Magento/luma/build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
-開く `requirejs-config.js` 内 `pub/static/frontend/Magento/luma/en_US` ディレクトリに、RequireJS がバンドル設定の呼び出しでファイルに追加されていることを確認します。
+開く `requirejs-config.js` （内） `pub/static/frontend/Magento/luma/en_US` ディレクトリに、RequireJS がバンドル設定の呼び出しでファイルに追加されていることを確認します。
 
 ```javascript
 require.config({
@@ -495,7 +495,7 @@ require.config({
 
 >[!NOTE]
 >
->バンドルを設定する場合、 `requirejs.config()` の呼び出しは、実行したい順序で実行されます。呼び出しは、表示される順序で実行されます。
+>バンドルを設定する場合は、 `requirejs.config()` の呼び出しは、実行したい順序で実行されます。呼び出しは、表示される順序で実行されます。
 
 #### 6.結果をテストする
 
@@ -509,7 +509,7 @@ require.config({
 
 gzip 圧縮された場合でも、 [!DNL JavaScript] ファイルは大きいままです。 縮小用の RequireJS を使用して縮小します。 [!DNL JavaScript] 良い結果に。
 
-オプティマイザーを `build.js` ファイル、追加 `uglify2` を、 `build.js` ファイル：
+オプティマイザを `build.js` ファイル、追加 `uglify2` を最適化プロパティの値として `build.js` ファイル：
 
 ```javascript
 ({

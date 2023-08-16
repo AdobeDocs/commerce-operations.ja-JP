@@ -1,5 +1,5 @@
 ---
-title: のインストール [!DNL Data Migration Tool]
+title: をインストールします。 [!DNL Data Migration Tool]
 description: をインストールする方法を説明します。 [!DNL Data Migration Tool] Magento1 とMagento2 の間でデータを転送する。
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# のインストール [!DNL Data Migration Tool]
+# をインストールします。 [!DNL Data Migration Tool]
 
 >[!INFO]
 >
@@ -50,13 +50,13 @@ git branch
 現在、 `develop` ブランチの場合は、 [解放枝](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) 続行する前に
 
 Adobe CommerceまたはMagento Open Sourceソフトウェアをまだインストールしていない場合は、 [今すぐインストール](../../installation/prerequisites/commerce.md).
-GitHub リポジトリのクローンを作成する場合は、リリースタグを確認してください ( [(Contributor)GitHub リポジトリのクローン](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
+GitHub リポジトリのクローンを作成する場合は、リリースタグを確認してください。詳しくは、 [(Contributor)GitHub リポジトリのクローン](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
 
 ## のリリースバージョンの検索 [!DNL Data Migration Tool]
 
 次に移動： [リリース](https://github.com/magento/data-migration-tool/releases) ページ [!DNL Data Migration Tool] GitHub リポジトリを使用して、リリースされた利用可能なバージョンを見つけます。
 
-## のインストール [!DNL Data Migration Tool]
+## をインストールします。 [!DNL Data Migration Tool]
 
 以下をインストールしてください： [!DNL Data Migration Tool] 送信元：
 
@@ -70,7 +70,7 @@ GitHub リポジトリのクローンを作成する場合は、リリースタ�
 
 ### インストール元 `repo.magento.com`
 
-をインストールするには、以下を実行します。 [!DNL Data Migration Tool]を更新する必要があります `composer.json` をMagentoのルートインストールディレクトリに追加し、 [!DNL Data Migration Tool] パッケージ。
+をインストールするには、以下を実行します。 [!DNL Data Migration Tool]を更新する必要があります。 `composer.json` をMagentoのルートインストールディレクトリに追加し、 [!DNL Data Migration Tool] パッケージ。
 
 1. アプリケーションサーバーに、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
 1. アプリケーションのルートディレクトリに移動します。
@@ -96,11 +96,11 @@ GitHub リポジトリのクローンを作成する場合は、リリースタ�
    composer require magento/data-migration-tool:2.2.0
    ```
 
-1. プロンプトが表示されたら、 [認証キー](../../installation/prerequisites/authentication-keys.md). 公開鍵はユーザ名です。秘密鍵はパスワードです。
+1. プロンプトが表示されたら、 [認証キー](../../installation/prerequisites/authentication-keys.md). 公開鍵はユーザー名、秘密鍵はパスワードです。
 
 ### GitHub からのインストール
 
-GitHub リポジトリを複製した場合は、次の手順に従って、 [!DNL Data Migration Tool].
+GitHub リポジトリのクローンを作成した場合は、次の手順に従って、 [!DNL Data Migration Tool].
 
 1. アプリケーションサーバーに、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
 1. アプリケーションのルートディレクトリに移動します。
@@ -132,4 +132,4 @@ GitHub リポジトリを複製した場合は、次の手順に従って、 [!D
 
 1. 開く [`composer.json`](https://github.com/magento/data-migration-tool/blob/2.4/composer.json) をクリックします。
 
-1. この `version` のエントリは、 [!DNL Data Migration Tool].
+1. The `version` そのファイルのエントリは、 [!DNL Data Migration Tool].

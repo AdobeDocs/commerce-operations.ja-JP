@@ -14,7 +14,7 @@ ht-degree: 0%
 
 この節では、以下の管理で使用できる変数名と設定パスを示します。 **ストア** /設定/ **設定** > **カタログ**.
 
-この [`magento app:config:dump` command](../cli/export-configuration.md) は、これらの値を共有設定ファイルに書き込みます。 `app/etc/config.php`（ソース管理下に置く必要があります） オプションで設定を上書きしたり、機密設定を設定したりするには、 [環境変数を使用して設定を上書きする](override-config-settings.md#environment-variables). このトピックでは、 _not_ リスト [機密性の高いシステム固有の値](config-reference-sens.md).
+The [`magento app:config:dump` command](../cli/export-configuration.md) は、これらの値を共有設定ファイルに書き込みます。 `app/etc/config.php`（ソース管理下に置く必要があります） オプションで設定を上書きしたり、機密設定を設定したりするには、 [環境変数を使用して設定を上書きする](override-config-settings.md#environment-variables). このトピックでは、 _not_ リスト [機密性の高いシステム固有の値](config-reference-sens.md).
 
 ## カタログパス
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 | メタ説明のマスク | `catalog/fields_masks/meta_description` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | リストモード | `catalog/frontend/list_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | グリッドの許容値の 1 ページあたりの製品数 | `catalog/frontend/grid_per_page_values` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| グリッドのデフォルト値の 1 ページあたりの製品 | `catalog/frontend/grid_per_page` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| グリッドのデフォルト値の 1 ページあたりの製品数 | `catalog/frontend/grid_per_page` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 許可された値リストの 1 ページあたりの製品数 | `catalog/frontend/list_per_page_values` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | リストの 1 ページあたりの製品のデフォルト値 | `catalog/frontend/list_per_page` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 製品リストの並べ替え基準 | `catalog/frontend/default_sort_by` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -46,7 +46,7 @@ ht-degree: 0%
 | 開始時間 | `catalog/productalert_cron/time` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | エラーメール送信者 | `catalog/productalert_cron/error_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | エラーメールテンプレート | `catalog/productalert_cron/error_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 現在の項目で表示 | `catalog/recently_products/scope` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 現在の項目に対して表示 | `catalog/recently_products/scope` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最近表示されたデフォルトの製品数 | `catalog/recently_products/viewed_count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最近比較されたデフォルトの製品数 | `catalog/recently_products/compared_count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 自動開始の基本ビデオ | `catalog/product_video/play_if_base` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -74,7 +74,7 @@ ht-degree: 0%
 | 各レコメンデーションの結果数を表示 | `catalog/search/search_recommendations_count_results_enabled` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 一致する最小キーワード数 | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 「カテゴリ/製品」URL の書き換えを生成 | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| よく読まれる検索語句 | `catalog/seo/search_terms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 人気の高い検索用語 | `catalog/seo/search_terms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 製品 URL サフィックス | `catalog/seo/product_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | カテゴリ URL サフィックス | `catalog/seo/category_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 製品 URL にカテゴリパスを使用 | `catalog/seo/product_use_categories` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -83,7 +83,7 @@ ht-degree: 0%
 | カテゴリに正規リンクメタタグを使用する | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 製品に正規リンクメタタグを使用する | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 有効にする | `catalog/magento_catalogpermissions/enabled` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
-| 閲覧カテゴリを許可 | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
+| ブラウジングカテゴリを許可 | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 顧客グループ | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | ランディングページ | `catalog/magento_catalogpermissions/restricted_landing_page` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 製品価格を表示 | `catalog/magento_catalogpermissions/grant_catalog_product_price` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
@@ -99,7 +99,7 @@ ht-degree: 0%
 | リンクを新しいウィンドウで開く | `catalog/downloadable/links_target_new_window` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Content-Disposition を使用 | `catalog/downloadable/content_disposition` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 買い物かごにダウンロード可能な項目が含まれる場合、ゲストのチェックアウトを無効にする | `catalog/downloadable/disable_guest_checkout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| JavaScript カレンダーを使用 | `catalog/custom_options/use_calendar` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| JavaScript カレンダーの使用 | `catalog/custom_options/use_calendar` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 日付フィールドの注文 | `catalog/custom_options/date_fields_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 時間形式 | `catalog/custom_options/time_format` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 年の範囲 | `catalog/custom_options/year_range` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -109,7 +109,7 @@ ht-degree: 0%
 | イベントスライダーウィジェットでクリックごとにスクロールするイベント | `catalog/magento_catalogevent/lister_widget_scroll` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 関連製品リストの製品の最大数 | `catalog/magento_targetrule/related_position_limit` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 関連製品を表示 | `catalog/magento_targetrule/related_position_behavior` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
-| 関連製品リストの製品の回転モード | `catalog/magento_targetrule/related_rotation_mode` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
+| 関連製品リスト内の製品の回転モード | `catalog/magento_targetrule/related_rotation_mode` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | クロス販売製品リストの製品の最大数 | `catalog/magento_targetrule/crosssell_position_limit` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | クロス販売製品を表示 | `catalog/magento_targetrule/crosssell_position_behavior` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | クロス販売製品リストの製品のローテーションモード | `catalog/magento_targetrule/crosssell_rotation_mode` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
@@ -137,10 +137,10 @@ ht-degree: 0%
 | 買い物かごで許可される最大数量 | `cataloginventory/item_options/max_sale_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 在庫切れしきい値 | `cataloginventory/item_options/min_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 買い物かごで許可される最小数量 | `cataloginventory/item_options/min_sale_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 次の数量の通知 | `cataloginventory/item_options/notify_stock_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 次の数量について通知 | `cataloginventory/item_options/notify_stock_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 数量増分の有効化 | `cataloginventory/item_options/enable_qty_increments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 数量増分 | `cataloginventory/item_options/qty_increments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| クレジットメモ項目を在庫に自動的に返却 | `cataloginventory/item_options/auto_return` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| クレジット・メモ・アイテムを在庫に自動的に戻す | `cataloginventory/item_options/auto_return` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 非同期で実行 | `cataloginventory/bulk_operations/async` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 非同期バッチサイズ | `cataloginventory/bulk_operations/batch_size` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | プロバイダー | `cataloginventory/source_selection_distance_based/provider` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

@@ -1,13 +1,13 @@
 ---
 title: 操作モードの設定
 description: Adobe Commerce操作モードの設定について説明します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
 
 ---
-
 
 # 操作モードの設定
 
@@ -36,11 +36,11 @@ pub/static
 例外：
 
 - `.htaccess` ファイルは削除されません
-- `pub/static` には、静的コンテンツのバージョンを指定するファイルが含まれます。このファイルは削除されません
+- `pub/static` には、静的コンテンツのバージョンを指定するファイルが含まれています。このファイルは削除されません
 
 >[!INFO]
 >
->Commerce では、デフォルトで `var` キャッシュ、ログ、コンパイル済みコードを格納するディレクトリ。 このディレクトリはカスタマイズできますが、このガイドでは、 `var`.
+>Commerce では、デフォルトで、 `var` キャッシュ、ログ、コンパイル済みコードを格納するディレクトリ。 このディレクトリはカスタマイズできますが、このガイドでは、 `var`.
 
 ## 現在のモードを表示
 
@@ -72,9 +72,9 @@ bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 
 場所：
 
-- **`{mode}`** は必須です。次のどちらかを指定できます。 `developer` または `production`
+- **`{mode}`** が必須です。 `developer` または `production`
 
-- **`--skip-compilation`** は、スキップに使用できるオプションのパラメータです [コードコンパイル](../cli/code-compiler.md) 実稼動モードに変更した場合。
+- **`--skip-compilation`** は、スキップに使用できるオプションのパラメータです。 [コードのコンパイル](../cli/code-compiler.md) 実稼動モードに変更した場合。
 
 以下に例を示します。
 
@@ -127,7 +127,7 @@ Enabled production mode.
 
 ### 開発者モードに変更
 
-実稼動モードから開発モードに変更する場合、予期しないエラーを防ぐために、生成されたクラスとプロキシなどの Object Manager エンティティをクリアする必要があります。 その後、モードを変更できます。 次の手順を実行します。
+実稼動モードから開発モードに変更する場合、予期しないエラーを防ぐために、生成されたクラスとプロキシなどの Object Manager エンティティをクリアする必要があります。 その後、モードを変更できます。 次の手順に従います。
 
 1. 実稼動モードから開発モードに変更する場合は、 `generated/code` および `generated/metadata` ディレクトリ：
 
@@ -163,4 +163,4 @@ Enabled default mode.
 
 [CLI コマンドをどこからでも実行](../cli/config-cli.md#config-install-cli-first).
 
-まだ `<Commerce-install-directory>/bin` システムに `PATH`を指定しない場合は、単独でコマンドを実行する際にエラーが発生する可能性があります。
+まだを追加していない場合、 `<Commerce-install-directory>/bin` システムに `PATH`を指定しない場合は、単独でコマンドを実行する際にエラーが発生する可能性があります。

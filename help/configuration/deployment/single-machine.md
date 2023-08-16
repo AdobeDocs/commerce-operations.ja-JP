@@ -6,7 +6,7 @@ exl-id: ca73309c-7584-4506-99de-dd933651eeb6
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 0%
 
 ## 前提
 
-- Commerce をインストールしているのは [コンポーザー](../../installation/composer.md).
+- Commerce をインストールしているのは、 [コンポーザー](../../installation/composer.md).
 - サーバーに直接更新を適用しています。
 
 >[!WARNING]
 >
->このガイドは、 `git clone` Commerce をインストールします。
+>このガイドは、 `git clone` をクリックして、Commerce をインストールします。
 >貢献する開発者は、 [このガイド][install] をクリックして、コマースのインストールを更新します。
 
 ## デプロイメントの手順
@@ -46,14 +46,14 @@ ht-degree: 0%
    composer require-commerce <package> <version> --no-update
    ```
 
-   **パッケージ**:更新するパッケージの名前。
+   **パッケージ**：更新するパッケージの名前。
 
    例：
 
    - `magento/product-community-edition`
    - `magento/product-enterprise-edition`
 
-   **version**:更新するパッケージの対象バージョン。
+   **version**：更新するパッケージのターゲットバージョン。
 
 1. コンポーザーでコンポーネントを更新：
 

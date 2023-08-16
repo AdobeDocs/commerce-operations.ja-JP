@@ -1,17 +1,17 @@
 ---
 title: オンプレミスでの迅速なインストールを開始
 description: 所有しているインフラストラクチャにAdobe CommerceまたはMagento Open Sourceをインストールするには、次の手順に従います。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 0%
 
 ---
 
-
 # オンプレミスでの迅速なインストールを開始
 
-当社は [コンポーザー](https://getcomposer.org/) :Adobe CommerceとMagento Open Sourceのコンポーネントとその依存関係を管理します。 Composer を使用してAdobe CommerceとMagento Open Sourceのメタパッケージを取得すると、次の利点があります。
+当社は、 [コンポーザー](https://getcomposer.org/) :Adobe CommerceとMagento Open Sourceのコンポーネントとその依存関係を管理します。 Composer を使用してAdobe CommerceとMagento Open Sourceのメタパッケージを取得すると、次の利点があります。
 
 - サードパーティライブラリをソースコードと一緒にバンドルせずに再利用する
 - 堅牢な依存関係管理を備えたコンポーネントベースのアーキテクチャを使用することで、拡張機能の競合と互換性の問題を減らす
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 所有権、権限、およびファイルシステムの所有者について [所有権と権限のトピックの概要](prerequisites/file-system/overview.md).
 
-ファイルシステムの所有者に切り替えるには、次の手順に従います。
+ファイル・システムの所有者に切り替えるには、次の手順に従います。
 
 1. ファイル・システムへの書き込み権限を持つユーザーとしてアプリケーション・サーバにログインするか、切り替えます。
 
@@ -89,7 +89,7 @@ Adobe CommerceまたはMagento Open Sourceのメタパッケージを取得す�
 
    プロンプトが表示されたら、認証キーを入力します。 公開鍵と秘密鍵は、 [Commerce Marketplace](https://marketplace.magento.com/customer/account/login/).
 
-   次のようなエラーが発生した場合： `Could not find package...` または `...no matching package found`を使用する場合、コマンドに入力ミスがないことを確認します。 それでもエラーが発生する場合は、Adobe Commerceのダウンロードが許可されていない可能性があります。 連絡先 [Adobe Commerceサポート](https://support.magento.com/hc/en-us) を参照してください。
+   次のようなエラーが発生した場合： `Could not find package...` または `...no matching package found`を使用する場合は、コマンドに入力ミスがないことを確認します。 それでもエラーが発生する場合は、Adobe Commerceのダウンロードが許可されていない可能性があります。 連絡先 [Adobe Commerceサポート](https://support.magento.com/hc/en-us) を参照してください。
 
    詳しくは、 [トラブルシューティング](https://support.magento.com/hc/en-us/articles/360033818091) を参照してください。
 
@@ -117,7 +117,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 セキュリティパッチにはセキュリティ修正のみが含まれています。 これらは、アップグレードプロセスをより迅速かつ容易にするように設計されています。
 
-セキュリティパッチでは、Composer の命名規則を使用します `2.4.5-px`. Composer を使用してパッチを指定します。 例えば、Adobe Commerce 2.4.5-p1 メタパッケージをダウンロードするには、次のようにします。
+セキュリティパッチでは、Composer の命名規則を使用します。 `2.4.5-px`. Composer を使用してパッチを指定します。 例えば、Adobe Commerce 2.4.5-p1 メタパッケージをダウンロードするには、次のようにします。
 
 ```bash
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5-p1 <install-directory-name>
@@ -170,7 +170,7 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->CLI インストールオプションの詳細については、 [コマンドラインからアプリケーションをインストールする](advanced.md).
+>CLI インストールオプションの詳細については、を参照してください。 [コマンドラインからアプリケーションをインストールする](advanced.md).
 
 ## コマンドの概要
 
@@ -211,17 +211,17 @@ bin/magento help cache:enable
 | `magento setup:db-data:upgrade` | データベースデータを更新します。 | デプロイメント設定 |
 | `magento setup:db:status` | データベースがコードで最新かどうかを確認します。 | デプロイメント設定 |
 | `magento admin:user:create` | 管理者ユーザーを作成します。 | 次のユーザーを作成できます。<br><br>デプロイメント設定<br><br>少なくとも `Magento_User` および `Magento_Authorization` モジュール<br><br>データベース ( 最も簡単な方法は `bin/magento setup:upgrade`) |
-| `magento list` | 使用可能なすべてのコマンドをリストします。 | なし |
-| `magento help` | 指定したコマンドのヘルプを表示します。 | なし |
+| `magento list` | 使用可能なすべてのコマンドを一覧表示します。 | なし |
+| `magento help` | 指定したコマンドに関するヘルプを提供します。 | なし |
 
-### 一般的な引数
+### 共通の引数
 
 次の引数は、すべてのコマンドに共通です。 次のコマンドは、アプリケーションのインストール前またはインストール後に実行できます。
 
 | 長いバージョン | 短いバージョン | 意味 |
 |--- |--- |--- |
 | `--help` | `-h` | 任意のコマンドに関するヘルプを取得します。 例： `./magento help setup:install` または `./magento help setup:config:set`. |
-| `--quiet` | `-q` | 静止モード；出力なし。 |
+| `--quiet` | `-q` | クワイエットモード。出力なし。 |
 | `--no-interaction` | `-n` | インタラクティブな質問はありません。 |
 | `--verbose=1,2,3` | `-v, -vv, -vvv` | 詳細レベル。 例： `--verbose=3` または `-vvv` は、最も詳細な出力である debug verbosity を表示します。 デフォルトはです。 `--verbose=1` または `-v`. |
 | `--version` | `-V` | このアプリケーションバージョンを表示 |
@@ -230,4 +230,4 @@ bin/magento help cache:enable
 
 >[!NOTE]
 >
->おめでとうございます。 クイックインストールを完了しました。 より高度なヘルプが必要な場合は、 以下をご確認ください。 [高度なインストール](advanced.md) ガイド。
+>おめでとうございます。クイックインストールを完了しました。 より高度なヘルプが必要な場合は、 以下をご確認ください。 [高度なインストール](advanced.md) ガイド。

@@ -1,17 +1,17 @@
 ---
 title: リモート MySQL データベース接続を設定する
 description: 次の手順に従って、Adobe CommerceとMagento Open Sourceのオンプレミスインストールでリモートデータベース接続を設定します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
 
 ---
 
-
 # リモート MySQL データベース接続を設定する
 
-同じマシン上でデータベース・サーバと Web サーバを実行する代わりに、別のサーバ上でデータベースをホストする場合があります。
+データベース・サーバと Web サーバを同じマシン上で実行する代わりに、別のサーバ上でデータベースをホストする場合があります。
 
 Adobeは、別のマシン上の MySQL サーバーに接続する方法を提供しました。 Adobe CommerceおよびMagento Open Source2.4.3 以降では、コードを変更せずにAmazon Web Services(AWS)Aurora データベースを使用するようにアプリケーションを設定することもできます。
 
@@ -21,26 +21,26 @@ Aurora は、AWSでホストされる、高パフォーマンスで完全に準�
 
 Aurora をデータベースとして使用すると、デフォルトのデータベースコネクタを使用して、通常のAdobe CommerceおよびMagento Open Source設定でデータベースを指定するのと同じくらい簡単に行えます。
 
-実行時 `bin/magento setup:install`の場合は、 `db-` フィールド：
+実行時 `bin/magento setup:install`を使用する場合は、 `db-` フィールド：
 
 ```bash
 bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws.com' --db-name='magento2' --db-user='username' --db-password='password' ...
 ```
 
-この `db-host` の値は Aurora URL で、 `https://` および末尾 `:portnumber`  削除済み。
+The `db-host` の値は Aurora URL で、 `https://` および末尾 `:portnumber`  削除済み。
 
 ## リモートデータベース接続の設定
 
 >[!NOTE]
 >
->これは、経験豊富なネットワーク管理者またはデータベース管理者のみが使用する必要がある高度なトピックです。 必ず `root` ファイルシステムにアクセスでき、MySQL に `root`.
+>これは、経験豊富なネットワーク管理者またはデータベース管理者のみが使用する必要がある高度なトピックです。 必要な機能は次のとおりです。 `root` ファイルシステムにアクセスでき、MySQL に `root`.
 
 ### 前提条件
 
 開始する前に、以下をおこなう必要があります。
 
-* [MySQL サーバーのインストール](mysql.md) をデータベースサーバーに設定します。
-* [データベースインスタンスの作成](mysql.md#configuring-the-database-instance) をデータベースサーバーに設定します。
+* [MySQL サーバーのインストール](mysql.md) をデータベースサーバー上に置きます。
+* [データベースインスタンスの作成](mysql.md#configuring-the-database-instance) をデータベースサーバー上に置きます。
 * MySQL クライアントをAdobe CommerceまたはMagento Open SourceWeb ノードにインストールします。 詳しくは、 MySQL のドキュメントを参照してください。
 
 ### 高可用性
@@ -48,9 +48,9 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 Web サーバーまたはデータベースサーバーがクラスター化されている場合、リモートデータベース接続を構成するには、次のガイドラインを使用します。
 
 * Web サーバーノードごとに接続を設定する必要があります。
-* 通常は、データベース・ロード・バランサへのデータベース接続を設定します。ただし、データベースのクラスタリングは複雑な場合があり、設定は自由です。 Adobeでは、データベースのクラスタリングに関する具体的な推奨事項はありません。
+* 通常は、データベース・ロード・バランサへのデータベース接続を構成します。ただし、データベース・クラスタリングは複雑で、設定は自由です。 Adobeでは、データベースのクラスタリングに関する具体的な推奨事項はありません。
 
-   詳しくは、 [MySQL ドキュメント](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  詳しくは、 [MySQL ドキュメント](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
 ### 接続の問題の解決
 
@@ -89,7 +89,7 @@ Web サーバーまたはデータベースサーバーがクラスター化さ�
    bind-address = <ip address of your web node>
    ```
 
-   詳しくは、 [MySQL ドキュメント](https://dev.mysql.com/doc/refman/5.6/en/server-options.html)（特に、クラスター化された Web サーバーがある場合）
+   詳しくは、 [MySQL ドキュメント](https://dev.mysql.com/doc/refman/5.6/en/server-options.html)（特に、クラスター化された Web サーバーがある場合）。
 
 1. 変更を設定ファイルに保存し、テキストエディターを終了します。
 1. MySQL サービスを再起動します。
@@ -97,6 +97,7 @@ Web サーバーまたはデータベースサーバーがクラスター化さ�
    * CentOS: `service mysqld restart`
 
    * Ubuntu: `service mysql restart`
+
    >[!NOTE]
    >
    >MySQL が起動しない場合は、syslog で問題の原因を調べます。 次を使用して問題を解決： [MySQL ドキュメント](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) その他の権威あるソース
@@ -117,7 +118,7 @@ Web ノードがデータベース・サーバに接続できるようにする�
    GRANT ALL ON <local database name>.* TO <remote web node username>@<remote web node server ip address> IDENTIFIED BY '<database user password>';
    ```
 
-   例：
+   以下に例を挙げます。
 
    ```shell
    GRANT ALL ON magento_remote.* TO dbuser@192.0.2.50 IDENTIFIED BY 'dbuserpassword';
@@ -155,7 +156,7 @@ Web サーバーがクラスター化されている場合は、各 Web サー�
 Adobe CommerceまたはMagento Open Sourceをインストールする場合は、次の情報を指定する必要があります。
 
 * ベース URL( *ストアアドレス*) は、 *web ノード*
-* データベースホストは *リモートデータベースサーバ* IP アドレス（データベース・サーバがクラスタ化されている場合はロード・バランサ）
+* データベースホストは *リモートデータベースサーバー* IP アドレス（データベース・サーバがクラスタ化されている場合はロード・バランサ）
 * データベースのユーザー名： *ローカル web ノード* アクセス権を付与したデータベースユーザー
 * データベースのパスワードは、ローカル Web ノードのユーザーのパスワードです
 * データベース名は、リモートサーバー上のデータベースの名前です

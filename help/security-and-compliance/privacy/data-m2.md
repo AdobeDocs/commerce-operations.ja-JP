@@ -1,13 +1,13 @@
 ---
 title: お客様の個人情報に関するリファレンス（バージョン 2.x）
 description: Adobe CommerceおよびMagento Open Source2.x での、顧客の個人情報に対するデータフロー図およびデータベースエンティティのマッピングについて説明します。
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
 
 ---
-
 
 # お客様の個人情報に関するリファレンス（バージョン 2.x）
 
@@ -84,7 +84,7 @@ Adobe CommerceとMagento Open Sourceは、次の顧客属性を格納するよ�
 | `dob` | 日付 |
 | `gender` | smallint(5) |
 
-以下の表は、 `customer_entity` には、カスタム顧客属性を含めることができます。
+以下の表は、を参照しています。 `customer_entity` には、カスタム顧客属性を含めることができます。
 
 | テーブル | 列 | データタイプ |
 | -------------------------- | ------- | ------------- |
@@ -122,7 +122,7 @@ Adobe CommerceとMagento Open Sourceは、次の顧客属性を格納するよ�
 Adobe CommerceとMagento Open Sourceは、次の顧客属性を保存します。
 
 - 市区町村
-- 会社
+- 会社情報
 - 国
 - FAX
 - 名
@@ -158,7 +158,7 @@ Adobe CommerceとMagento Open Sourceは、次の顧客属性を保存します�
 | `telephone` | varchar(255) |
 | `vat_id` | varchar(255) |
 
-以下の表は、 `customer_address_entity` には、カスタム顧客属性を含めることができます。
+以下の表は、を参照しています。 `customer_address_entity` には、カスタム顧客属性を含めることができます。
 
 | テーブル | 列 | データタイプ |
 | ---------------------------------- | ------- | ------------- |
@@ -170,7 +170,7 @@ Adobe CommerceとMagento Open Sourceは、次の顧客属性を保存します�
 
 ### 注文データ
 
-この `sales_order` および関連するテーブルには、顧客名、請求先住所、配送先住所、および関連するデータが含まれます。
+The `sales_order` および関連するテーブルには、顧客名、請求先住所、配送先住所、および関連するデータが含まれます。
 
 #### `sales_order` 表
 
@@ -195,7 +195,7 @@ Adobe CommerceとMagento Open Sourceは、次の顧客属性を保存します�
 
 #### `sales_order_address` 表
 
-この `sales_order_address` テーブルには、顧客の住所が含まれます。
+The `sales_order_address` テーブルには、顧客の住所が含まれます。
 
 | 列 | データタイプ |
 | --------------------- | ------------ |
@@ -277,7 +277,7 @@ Adobe CommerceとMagento Open Sourceは、次の顧客属性を保存します�
 
 ### 支払いデータ
 
-この `sales_order_payment` 表には、クレジットカード情報やその他のトランザクション情報が含まれます。
+The `sales_order_payment` 表には、クレジットカード情報やその他のトランザクション情報が含まれます。
 
 | 列 | データタイプ |
 | ------------------------ | ------------ |
@@ -299,7 +299,7 @@ Adobe CommerceとMagento Open Sourceは、お客様がプライベートセー�
 
 #### `magento_invitation` 表
 
-この `magento_invitation` テーブルには、顧客 ID、電子メールおよび紹介 ID が含まれます。
+The `magento_invitation` テーブルには、顧客 ID、電子メールおよび紹介 ID が含まれます。
 
 | 列 | データタイプ |
 | ------------- | ------------ |
@@ -309,7 +309,7 @@ Adobe CommerceとMagento Open Sourceは、お客様がプライベートセー�
 
 #### `magento_invitation_track` 表
 
-この `magento_invitation_track` 「 」テーブルには、顧客情報も含まれます。
+The `magento_invitation_track` 「 」テーブルには、顧客情報も含まれています。
 
 | 列 | データタイプ |
 | ------------- | --------- |

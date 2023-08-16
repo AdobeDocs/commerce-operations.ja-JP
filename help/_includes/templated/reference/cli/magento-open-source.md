@@ -10,11 +10,11 @@ ht-degree: 0%
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**バージョン**:2.4.6
+**バージョン**: 2.4.6
 
 このリファレンスには、 `bin/magento` コマンドラインツールを使用します。
-最初のリストは、 `bin/magento list` コマンドを使用して、Magento Open Sourceで
-以下を使用： [CLI コマンドの追加](https://developer.adobe.com/commerce/php/development/cli-commands/) カスタム CLI コマンドの追加に関するガイド
+最初のリストは、 `bin/magento list` コマンドを使用して、Magento Open Source時に
+以下を使用します。 [「CLI コマンドの追加」](https://developer.adobe.com/commerce/php/development/cli-commands/) カスタム CLI コマンドの追加に関するガイド。
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この参照は、アプリケーションのコードベースから生成されます。 コンテンツを変更するには、 [codebase](https://github.com/magento) リポジトリを作成し、変更をレビュー用に送信します。 もう 1 つの方法は、次の操作です。 _フィードバックを提供_ （右上にあるリンクを見つけます）。 貢献のガイドラインについては、 [コード貢献](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>この参照は、アプリケーションのコードベースから生成されます。 コンテンツを変更するには、 [codebase](https://github.com/magento) リポジトリを作成し、変更をレビュー用に送信します。 もう 1 つの方法は、次の操作です。 _フィードバックをお寄せください_ （右上にあるリンクを見つけます）。 貢献のガイドラインについては、 [コード貢献度](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ## `_complete`
 
@@ -53,7 +53,7 @@ bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURREN
 
 ### `--symfony`, `-S`
 
-完了スクリプトのバージョン
+完了スクリプトのバージョン。
 
 - 値が必要です
 
@@ -73,7 +73,7 @@ bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURREN
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -117,12 +117,12 @@ bin/magento completion [--debug] [--] [<shell>]
 
 ### `shell`
 
-シェルのタイプ ( 例：&quot;bash&quot;) の場合、&quot;$SHELL&quot; env var の値は、この値が指定されていない場合に使用されます
+シェルタイプ（例：&quot;bash&quot;）、&quot;$SHELL&quot; env var の値は、この値が指定されていない場合に使用されます
 
 
 ### `--debug`
 
-完了デバッグログの末尾を表示
+完了デバッグログの末尾を表示する
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -143,7 +143,7 @@ bin/magento completion [--debug] [--] [<shell>]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -222,7 +222,7 @@ bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -306,7 +306,7 @@ bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -363,7 +363,7 @@ bin/magento admin:adobe-ims:disable
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -412,7 +412,7 @@ bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|
 
 ### `--client-id`, `-c`
 
-クライアント ID を設定してAdobe IMSを設定します。 モジュールを有効にする場合に必須
+クライアント ID を設定し、Adobe IMS設定を行います。 モジュールを有効にする場合に必須
 
 - 値を受け入れる
 
@@ -444,7 +444,7 @@ bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -479,7 +479,7 @@ ANSI 出力を強制（または無効 —no-ansi）にします
 
 ## `admin:adobe-ims:info`
 
-Adobe IMS・モジュールの設定
+Adobe IMS・モジュールの設定の情報
 
 ```bash
 bin/magento admin:adobe-ims:info
@@ -501,7 +501,7 @@ bin/magento admin:adobe-ims:info
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -558,7 +558,7 @@ bin/magento admin:adobe-ims:status
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -593,7 +593,7 @@ ANSI 出力を強制（または無効 —no-ansi）にします
 
 ## `admin:user:create`
 
-管理者を作成
+管理者を作成します
 
 ```bash
 bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-PASSWORD] [--admin-email ADMIN-EMAIL] [--admin-firstname ADMIN-FIRSTNAME] [--admin-lastname ADMIN-LASTNAME] [--magento-init-params MAGENTO-INIT-PARAMS]
@@ -631,7 +631,7 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -651,7 +651,7 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -715,7 +715,7 @@ bin/magento admin:user:unlock <username>
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -781,7 +781,7 @@ bin/magento app:config:dump [<config-types>...]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -838,7 +838,7 @@ bin/magento app:config:import
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -895,7 +895,7 @@ bin/magento app:config:status
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -976,7 +976,7 @@ bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNA
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1028,7 +1028,7 @@ bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--bootstrap`
 
-ブートストラップのパラメータを追加または上書き
+ブートストラップのパラメータを追加または上書きする
 
 - 値が必要です
 
@@ -1048,7 +1048,7 @@ bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1100,7 +1100,7 @@ bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--bootstrap`
 
-ブートストラップのパラメータを追加または上書き
+ブートストラップのパラメータを追加または上書きする
 
 - 値が必要です
 
@@ -1120,7 +1120,7 @@ bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1172,7 +1172,7 @@ bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--bootstrap`
 
-ブートストラップのパラメータを追加または上書き
+ブートストラップのパラメータを追加または上書きする
 
 - 値が必要です
 
@@ -1192,7 +1192,7 @@ bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1244,7 +1244,7 @@ bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--bootstrap`
 
-ブートストラップのパラメータを追加または上書き
+ブートストラップのパラメータを追加または上書きする
 
 - 値が必要です
 
@@ -1264,7 +1264,7 @@ bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1307,7 +1307,7 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 ### `--bootstrap`
 
-ブートストラップのパラメータを追加または上書き
+ブートストラップのパラメータを追加または上書きする
 
 - 値が必要です
 
@@ -1327,7 +1327,7 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1398,7 +1398,7 @@ bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1455,7 +1455,7 @@ bin/magento catalog:product:attributes:cleanup
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1519,7 +1519,7 @@ y\n
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1589,7 +1589,7 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 設定のスコープコード、デフォルトでは空の文字列
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値を受け入れる
 
 ### `--help`, `-h`
@@ -1608,7 +1608,7 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1712,7 +1712,7 @@ section/group/field_name 形式の設定パス
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1768,9 +1768,9 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 ### `--scope-code`
 
-スコープコード（スコープがない場合にのみ必要） `default`)
+スコープコード（スコープがない場合にのみ必須） `default`)
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値を受け入れる
 
 ### `--help`, `-h`
@@ -1789,7 +1789,7 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1860,7 +1860,7 @@ bin/magento cron:install [-f|--force] [-d|--non-optional]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1917,7 +1917,7 @@ bin/magento cron:remove
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -1986,7 +1986,7 @@ bin/magento cron:run [--group GROUP] [--bootstrap BOOTSTRAP]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2043,7 +2043,7 @@ bin/magento customer:hash:upgrade
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2114,7 +2114,7 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2171,7 +2171,7 @@ bin/magento deploy:mode:show
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2206,7 +2206,7 @@ ANSI 出力を強制（または無効 —no-ansi）にします
 
 ## `dev:di:info`
 
-コマンドの [ 依存挿入 ] 設定に関する情報を提供します。
+コマンドの [ 依存インジェクション ] 設定に関する情報を提供します。
 
 ```bash
 bin/magento dev:di:info <class>
@@ -2235,7 +2235,7 @@ bin/magento dev:di:info <class>
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2292,7 +2292,7 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2349,7 +2349,7 @@ bin/magento dev:email:override-compatibility-check
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2406,7 +2406,7 @@ bin/magento dev:profiler:disable
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2469,7 +2469,7 @@ bin/magento dev:profiler:enable [<type>]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2526,7 +2526,7 @@ bin/magento dev:query-log:disable
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2604,7 +2604,7 @@ bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2656,7 +2656,7 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 ### `--type`
 
-ソースファイルのタイプ： [less]
+ソースファイルのタイプ： [より小さい]
 
 - デフォルト： `less`
 - 値が必要です
@@ -2670,7 +2670,7 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 ### `--area`
 
-面積： [frontend\|adminhtml]
+面グラフ： [frontend\|adminhtml]
 
 - デフォルト： `frontend`
 - 値が必要です
@@ -2698,7 +2698,7 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2755,7 +2755,7 @@ bin/magento dev:template-hints:disable
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2812,7 +2812,7 @@ bin/magento dev:template-hints:enable
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2869,7 +2869,7 @@ bin/magento dev:template-hints:status
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -2913,16 +2913,16 @@ bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 
 ### `type`
 
-実行するテストのタイプ。 使用可能なタイプ：すべて，単位，統合，統合 — すべて，静的，静的，静的，整合性，レガシー，デフォルト
+実行するテストのタイプ。 使用可能なタイプ： all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 
 - デフォルト： `default`
 
 
 ### `--arguments`, `-c`
 
-PHPUnit の追加引数。 例：&quot;-c&#39;—filter=MyTest&#39;&quot; （スペースなし）
+PHPUnit の追加引数。 例： &quot;-c&#39;—filter=MyTest&#39;&quot; （スペースなし）
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--help`, `-h`
@@ -2941,7 +2941,7 @@ PHPUnit の追加引数。 例：&quot;-c&#39;—filter=MyTest&#39;&quot; （ス
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3012,7 +3012,7 @@ bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3089,7 +3089,7 @@ XML ファイルを上書き
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3155,7 +3155,7 @@ bin/magento downloadable:domains:add [<domains>...]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3221,7 +3221,7 @@ bin/magento downloadable:domains:remove [<domains>...]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3278,7 +3278,7 @@ bin/magento downloadable:domains:show
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3335,7 +3335,7 @@ bin/magento encryption:payment-data:update
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3411,7 +3411,7 @@ bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<dire
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3461,13 +3461,13 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 
 ### `locale`
 
-辞書のターゲットロケール（「de_DE」など）
+辞書のターゲットロケール（例：「de_DE」）
 
 - 必須
 
 ### `--mode`, `-m`
 
-辞書の保存モード — &quot;replace&quot; — 新しい言語パックで言語パックを置き換える — &quot;merge&quot; — 言語パッケージを結合し、デフォルトで&quot;replace&quot;
+辞書の保存モード — &quot;replace&quot; — 新しい言語パックで言語パックを置き換える — &quot;merge&quot; — 言語パッケージを結合する（デフォルトでは&quot;replace&quot;）
 
 - デフォルト： `replace`
 - 値が必要です
@@ -3495,7 +3495,7 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3569,7 +3569,7 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3626,7 +3626,7 @@ bin/magento indexer:info
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3670,7 +3670,7 @@ bin/magento indexer:reindex [<index>...]
 
 ### `index`
 
-すべてのインデックスに適用する場合は、インデックスタイプのスペース区切りリストを指定するか、省略します。
+すべてのインデックスに適用する場合は、インデックスタイプのスペース区切りのリストを指定するか、省略します。
 
 - デフォルト： `[]`
 
@@ -3692,7 +3692,7 @@ bin/magento indexer:reindex [<index>...]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3736,7 +3736,7 @@ bin/magento indexer:reset [<index>...]
 
 ### `index`
 
-すべてのインデックスに適用する場合は、インデックスタイプのスペース区切りリストを指定するか、省略します。
+すべてのインデックスに適用する場合は、インデックスタイプのスペース区切りのリストを指定するか、省略します。
 
 - デフォルト： `[]`
 
@@ -3758,7 +3758,7 @@ bin/magento indexer:reset [<index>...]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3826,7 +3826,7 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3875,7 +3875,7 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 ### `index`
 
-すべてのインデックスに適用する場合は、インデックスタイプのスペース区切りリストを指定するか、省略します。
+すべてのインデックスに適用する場合は、インデックスタイプのスペース区切りのリストを指定するか、省略します。
 
 - デフォルト： `[]`
 
@@ -3897,7 +3897,7 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -3963,7 +3963,7 @@ bin/magento indexer:show-dimensions-mode [<indexer>...]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4007,7 +4007,7 @@ bin/magento indexer:show-mode [<index>...]
 
 ### `index`
 
-すべてのインデックスに適用する場合は、インデックスタイプのスペース区切りリストを指定するか、省略します。
+すべてのインデックスに適用する場合は、インデックスタイプのスペース区切りのリストを指定するか、省略します。
 
 - デフォルト： `[]`
 
@@ -4029,7 +4029,7 @@ bin/magento indexer:show-mode [<index>...]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4073,7 +4073,7 @@ bin/magento indexer:status [<index>...]
 
 ### `index`
 
-すべてのインデックスに適用する場合は、インデックスタイプのスペース区切りリストを指定するか、省略します。
+すべてのインデックスに適用する場合は、インデックスタイプのスペース区切りのリストを指定するか、省略します。
 
 - デフォルト： `[]`
 
@@ -4095,7 +4095,7 @@ bin/magento indexer:status [<index>...]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4152,7 +4152,7 @@ bin/magento info:adminuri
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4209,7 +4209,7 @@ bin/magento info:backups:list
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4266,7 +4266,7 @@ bin/magento info:currency:list
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4330,7 +4330,7 @@ bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4394,7 +4394,7 @@ bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4458,7 +4458,7 @@ bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4515,7 +4515,7 @@ bin/magento info:language:list
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4572,7 +4572,7 @@ bin/magento info:timezone:list
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4607,7 +4607,7 @@ ANSI 出力を強制（または無効 —no-ansi）にします
 
 ## `inventory:reservation:create-compensations`
 
-指定された報酬引数で予約を作成
+指定された報酬引数で予約を作成します
 
 ```bash
 bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compensations>...]
@@ -4616,7 +4616,7 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### `compensations`
 
-形式「\」の報酬引数のリスト&lt;order_increment_id>:\&lt;sku>:\&lt;quantity>:\&lt;stock-id>&quot;
+形式「\」の補正引数のリスト&lt;order_increment_id>:\&lt;sku>:\&lt;quantity>:\&lt;stock-id>&quot;
 
 - デフォルト： `[]`
 
@@ -4645,7 +4645,7 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4730,7 +4730,7 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4797,7 +4797,7 @@ bin/magento inventory-geonames:import <countries>...
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4863,7 +4863,7 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -4883,7 +4883,7 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -4933,7 +4933,7 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -4953,7 +4953,7 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5003,7 +5003,7 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -5023,7 +5023,7 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5066,7 +5066,7 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -5086,7 +5086,7 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5143,7 +5143,7 @@ bin/magento media-content:sync
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5200,7 +5200,7 @@ bin/magento media-gallery:sync
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5235,7 +5235,7 @@ ANSI 出力を強制（または無効 —no-ansi）にします
 
 ## `module:config:status`
 
-「app/etc/config.php」ファイル内のモジュール設定をチェックし、最新かどうかを報告します
+「app/etc/config.php」ファイル内のモジュール設定をチェックし、モジュールが最新かどうかを報告します
 
 ```bash
 bin/magento module:config:status
@@ -5257,7 +5257,7 @@ bin/magento module:config:status
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5309,7 +5309,7 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 ### `--force`, `-f`
 
-依存関係チェックをバイパス
+依存関係のチェックをバイパス
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5330,7 +5330,7 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -5350,7 +5350,7 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5402,7 +5402,7 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 ### `--force`, `-f`
 
-依存関係チェックをバイパス
+依存関係のチェックをバイパス
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5423,7 +5423,7 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -5443,7 +5443,7 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5509,7 +5509,7 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -5529,7 +5529,7 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5582,7 +5582,7 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 
 ### `--remove-data`, `-r`
 
-モジュールによってインストールされたデータを削除
+モジュールによってインストールされたデータを削除する
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5624,7 +5624,7 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -5644,7 +5644,7 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5700,7 +5700,7 @@ bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revis
 
 ### `user`
 
-デプロイメントユーザ
+デプロイメントユーザー
 
 
 ### `revision`
@@ -5724,7 +5724,7 @@ bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revis
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5781,7 +5781,7 @@ bin/magento queue:consumers:list
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5838,7 +5838,7 @@ bin/magento queue:consumers:restart
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5939,7 +5939,7 @@ PID を保存するためのファイルパス（このオプションは廃止�
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -5996,7 +5996,7 @@ bin/magento remote-storage:sync
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6060,7 +6060,7 @@ composer の更新を実行せずに composer.json を更新
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6124,7 +6124,7 @@ composer の更新を実行せずに composer.json を更新
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6181,7 +6181,7 @@ bin/magento sampledata:reset
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6238,7 +6238,7 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6295,7 +6295,7 @@ bin/magento security:recaptcha:disable-for-user-login
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6365,7 +6365,7 @@ bin/magento security:tfa:google:set-secret <user> <secret>
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6422,7 +6422,7 @@ bin/magento security:tfa:providers
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6492,7 +6492,7 @@ bin/magento security:tfa:reset <user> <provider>
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6556,7 +6556,7 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -6576,7 +6576,7 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -6651,7 +6651,7 @@ GraphQl Salt
 
 リモートストレージのプレフィックス
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--remote-storage-endpoint`
@@ -6676,14 +6676,14 @@ GraphQl Salt
 
 リモートストレージアクセスキー
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--remote-storage-secret`
 
 リモートストレージの秘密鍵
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--remote-storage-path-style`
@@ -6697,7 +6697,7 @@ GraphQl Salt
 
 Amqp サーバーホスト
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--amqp-port`
@@ -6711,14 +6711,14 @@ Amqp サーバーポート
 
 Amqp サーバーのユーザー名
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--amqp-password`
 
 Amqp サーバーのパスワード
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--amqp-virtualhost`
@@ -6732,14 +6732,14 @@ Amqp virtualhost
 
 Amqp SSL
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--amqp-ssl-options`
 
 Amqp SSL オプション (JSON)
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--consumers-wait-for-messages`
@@ -6750,7 +6750,7 @@ Amqp SSL オプション (JSON)
 
 ### `--queue-default-connection`
 
-メッセージキューのデフォルト接続。 「db」、「amqp」、またはカスタムキューシステムを指定できます。キューシステムをインストールして設定する必要があります。設定しないと、メッセージが正しく処理されません。
+メッセージはデフォルトの接続をキューに追加します。 「db」、「amqp」、またはカスタムキューシステムを指定できます。キューシステムをインストールして設定する必要があります。設定しないと、メッセージが正しく処理されません。
 
 - 値が必要です
 
@@ -6825,21 +6825,21 @@ http キャッシュホスト
 
 SSL を介した db 接続を確立するためのクライアントキーファイルのフルパス
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--db-ssl-cert`
 
 SSL を介した db 接続を確立するためのクライアント証明書ファイルのフルパス
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--db-ssl-ca`
 
 SSL を介した db 接続を確立するためのサーバー証明書ファイルのフルパス
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--db-ssl-verify`
@@ -6905,7 +6905,7 @@ Redis 圧縮ライブラリ。 値：gzip （デフォルト）、lzf、lz4、sn
 
 ### `--session-save-redis-log-level`
 
-Redis ログレベル。 値：0 （最も詳細でない）～ 7 （最も詳細な）
+Redis ログレベル。 値： 0 （最低冗長）～ 7 （最も詳細）
 
 - 値が必要です
 
@@ -6977,7 +6977,7 @@ Redis Sentinel サーバ、コンマ区切り
 
 ### `--session-save-redis-sentinel-verify-master`
 
-Redis Sentinel 検証マスター。 値：false （デフォルト）、true
+Redis Sentinel 検証マスター。 値：false（デフォルト）、true
 
 - 値が必要です
 
@@ -7104,19 +7104,19 @@ Redis サーバーのパスワード
 
 ### `--lock-zookeeper-host`
 
-Zookeeper クラスターに接続するホストとポート。 例：127.0.0.1:2181
+Zookeeper クラスターに接続するホストとポート。 例： 127.0.0.1:2181
 
 - 値が必要です
 
 ### `--lock-zookeeper-path`
 
-Zookeeper がロックを保存するパス。 デフォルトのパスは次のとおりです。/magento/locks
+Zookeeper がロックを保存するパス。 デフォルトのパスは/magento/locks です。
 
 - 値が必要です
 
 ### `--lock-file-path`
 
-ファイルロックが保存されるパス。
+ファイルのロックが保存されるパス。
 
 - 値が必要です
 
@@ -7128,7 +7128,7 @@ Zookeeper がロックを保存するパス。 デフォルトのパスは次の
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -7148,7 +7148,7 @@ Zookeeper がロックを保存するパス。 デフォルトのパスは次の
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7191,7 +7191,7 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -7211,7 +7211,7 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7295,7 +7295,7 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7330,7 +7330,7 @@ ANSI 出力を強制（または無効 —no-ansi）にします
 
 ## `setup:db-declaration:generate-whitelist`
 
-宣言インストーラーで編集可能なテーブルと列のホワイトリストを生成
+宣言インストーラーで編集可能なテーブルと列のホワイトリストを生成します
 
 ```bash
 bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]]
@@ -7359,7 +7359,7 @@ bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7409,7 +7409,7 @@ bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -7429,7 +7429,7 @@ bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7472,7 +7472,7 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -7492,7 +7492,7 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7549,7 +7549,7 @@ bin/magento setup:di:compile
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -7584,7 +7584,7 @@ ANSI 出力を強制（または無効 —no-ansi）にします
 
 ## `setup:install`
 
-Magento
+アプリケーションMagento
 
 ```bash
 bin/magento setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--id_salt ID_SALT] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
@@ -7624,7 +7624,7 @@ GraphQl Salt
 
 リモートストレージのプレフィックス
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--remote-storage-endpoint`
@@ -7649,14 +7649,14 @@ GraphQl Salt
 
 リモートストレージアクセスキー
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--remote-storage-secret`
 
 リモートストレージの秘密鍵
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--remote-storage-path-style`
@@ -7670,7 +7670,7 @@ GraphQl Salt
 
 Amqp サーバーホスト
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--amqp-port`
@@ -7684,14 +7684,14 @@ Amqp サーバーポート
 
 Amqp サーバーのユーザー名
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--amqp-password`
 
 Amqp サーバーのパスワード
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--amqp-virtualhost`
@@ -7705,14 +7705,14 @@ Amqp virtualhost
 
 Amqp SSL
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--amqp-ssl-options`
 
 Amqp SSL オプション (JSON)
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--consumers-wait-for-messages`
@@ -7723,7 +7723,7 @@ Amqp SSL オプション (JSON)
 
 ### `--queue-default-connection`
 
-メッセージキューのデフォルト接続。 「db」、「amqp」、またはカスタムキューシステムを指定できます。キューシステムをインストールして設定する必要があります。設定しないと、メッセージが正しく処理されません。
+メッセージはデフォルトの接続をキューに追加します。 「db」、「amqp」、またはカスタムキューシステムを指定できます。キューシステムをインストールして設定する必要があります。設定しないと、メッセージが正しく処理されません。
 
 - 値が必要です
 
@@ -7798,21 +7798,21 @@ http キャッシュホスト
 
 SSL を介した db 接続を確立するためのクライアントキーファイルのフルパス
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--db-ssl-cert`
 
 SSL を介した db 接続を確立するためのクライアント証明書ファイルのフルパス
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--db-ssl-ca`
 
 SSL を介した db 接続を確立するためのサーバー証明書ファイルのフルパス
 
-- デフォルト：&quot;
+- デフォルト： &quot;
 - 値が必要です
 
 ### `--db-ssl-verify`
@@ -7878,7 +7878,7 @@ Redis 圧縮ライブラリ。 値：gzip （デフォルト）、lzf、lz4、sn
 
 ### `--session-save-redis-log-level`
 
-Redis ログレベル。 値：0 （最も詳細でない）～ 7 （最も詳細な）
+Redis ログレベル。 値： 0 （最低冗長）～ 7 （最も詳細）
 
 - 値が必要です
 
@@ -7950,7 +7950,7 @@ Redis Sentinel サーバ、コンマ区切り
 
 ### `--session-save-redis-sentinel-verify-master`
 
-Redis Sentinel 検証マスター。 値：false （デフォルト）、true
+Redis Sentinel 検証マスター。 値：false（デフォルト）、true
 
 - 値が必要です
 
@@ -8077,19 +8077,19 @@ Redis サーバーのパスワード
 
 ### `--lock-zookeeper-host`
 
-Zookeeper クラスターに接続するホストとポート。 例：127.0.0.1:2181
+Zookeeper クラスターに接続するホストとポート。 例： 127.0.0.1:2181
 
 - 値が必要です
 
 ### `--lock-zookeeper-path`
 
-Zookeeper がロックを保存するパス。 デフォルトのパスは次のとおりです。/magento/locks
+Zookeeper がロックを保存するパス。 デフォルトのパスは/magento/locks です。
 
 - 値が必要です
 
 ### `--lock-file-path`
 
-ファイルロックが保存されるパス。
+ファイルのロックが保存されるパス。
 
 - 値が必要です
 
@@ -8107,13 +8107,13 @@ Zookeeper がロックを保存するパス。 デフォルトのパスは次の
 
 ### `--language`
 
-デフォルトの言語コード。 廃止されました。パス general/locale/code で config:set を使用してください
+デフォルトの言語コード。 廃止されました。パス general/locale/code で config:set を使用してください。
 
 - 値が必要です
 
 ### `--timezone`
 
-デフォルトのタイムゾーンコード。 廃止されました。パス general/locale/timezone で config:set を使用してください
+デフォルトのタイムゾーンコード。 廃止されました。パス general/locale/timezone で config:set を使用してください。
 
 - 値が必要です
 
@@ -8185,7 +8185,7 @@ Magento管理 URL とフォームの「セキュリティキー」機能を使�
 
 ### `--search-engine`
 
-検索エンジン。 値：elasticsearch5, elasticsearch7, elasticsearch8, opensearch
+検索エンジン。 値： elasticsearch5, elasticsearch7, elasticsearch8, opensearch
 
 - 値が必要です
 
@@ -8209,13 +8209,13 @@ Elasticsearchサーバーポート。
 
 ### `--elasticsearch-username`
 
-Elasticsearchユーザー名。 HTTP 認証が有効な場合にのみ適用されます
+Elasticsearchのユーザー名。 HTTP 認証が有効な場合にのみ適用されます。
 
 - 値が必要です
 
 ### `--elasticsearch-password`
 
-Elasticsearchパスワード。 HTTP 認証が有効な場合にのみ適用されます
+Elasticsearchのパスワード。 HTTP 認証が有効な場合にのみ適用されます。
 
 - 値が必要です
 
@@ -8251,13 +8251,13 @@ OpenSearch サーバーポート。
 
 ### `--opensearch-username`
 
-OpenSearch ユーザー名。 HTTP 認証が有効な場合にのみ適用されます
+OpenSearch ユーザー名。 HTTP 認証が有効な場合にのみ適用されます。
 
 - 値が必要です
 
 ### `--opensearch-password`
 
-OpenSearch パスワード。 HTTP 認証が有効な場合にのみ適用されます
+OpenSearch パスワード。 HTTP 認証が有効な場合にのみ適用されます。
 
 - 値が必要です
 
@@ -8340,7 +8340,7 @@ Magentoのインストールは、ドライランモードで実行されます
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -8360,7 +8360,7 @@ Magentoのインストールは、ドライランモードで実行されます
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8395,7 +8395,7 @@ ANSI 出力を強制（または無効 —no-ansi）にします
 
 ## `setup:performance:generate-fixtures`
 
-器具を生成
+器具を生成します
 
 ```bash
 bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profile>
@@ -8431,7 +8431,7 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8492,7 +8492,7 @@ var/backups 内の db バックアップ・ファイルのベース名
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -8512,7 +8512,7 @@ var/backups 内の db バックアップ・ファイルのベース名
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8620,7 +8620,7 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 ### `--jobs`, `-j`
 
-指定したジョブ数を使用して並列処理を有効にします。
+指定した数のジョブを使用して並列処理を有効にします。
 
 - デフォルト： `0`
 - 値を受け入れる
@@ -8738,7 +8738,7 @@ HTMLファイルを縮小しない。
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8773,7 +8773,7 @@ ANSI 出力を強制（または無効 —no-ansi）にします
 
 ## `setup:store-config:set`
 
-ストア設定をインストールします。 2.2.0 以降で非推奨です。代わりに、config:set を使用してください。
+ストア設定をインストールします。 2.2.0 以降で非推奨（廃止予定）となりました。代わりに、config:set を使用します。
 
 ```bash
 bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--magento-init-params MAGENTO-INIT-PARAMS]
@@ -8787,13 +8787,13 @@ bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [
 
 ### `--language`
 
-デフォルトの言語コード。 廃止されました。パス general/locale/code で config:set を使用してください
+デフォルトの言語コード。 廃止されました。パス general/locale/code で config:set を使用してください。
 
 - 値が必要です
 
 ### `--timezone`
 
-デフォルトのタイムゾーンコード。 廃止されました。パス general/locale/timezone で config:set を使用してください
+デフォルトのタイムゾーンコード。 廃止されました。パス general/locale/timezone で config:set を使用してください。
 
 - 値が必要です
 
@@ -8835,7 +8835,7 @@ Magento管理 URL とフォームの「セキュリティキー」機能を使�
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -8855,7 +8855,7 @@ Magento管理 URL とフォームの「セキュリティキー」機能を使�
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8890,7 +8890,7 @@ ANSI 出力を強制（または無効 —no-ansi）にします
 
 ## `setup:uninstall`
 
-アプリケーションをアンMagento
+アプリケーションをアンMagentoします
 
 ```bash
 bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
@@ -8898,7 +8898,7 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -8918,7 +8918,7 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -8994,7 +8994,7 @@ Magentoのインストールは、ドライランモードで実行されます
 
 ### `--magento-init-params`
 
-任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。次に例を示します。&quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
+任意のコマンドに追加して、Magento初期化パラメータをカスタマイズします。例： &quot;MAGE_MODE=developer&amp;MAGE_DIRS[ベース][path]=/var/www/example.com&amp;MAGE_DIRS[キャッシュ][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -9014,7 +9014,7 @@ Magentoのインストールは、ドライランモードで実行されます
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9049,7 +9049,7 @@ ANSI 出力を強制（または無効 —no-ansi）にします
 
 ## `store:list`
 
-店舗のリストを表示
+ストアのリストを表示します
 
 ```bash
 bin/magento store:list
@@ -9071,7 +9071,7 @@ bin/magento store:list
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9128,7 +9128,7 @@ bin/magento store:website:list
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9209,7 +9209,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない
@@ -9244,7 +9244,7 @@ ANSI 出力を強制（または無効 —no-ansi）にします
 
 ## `varnish:vcl:generate`
 
-Vanish VCL を生成し、コマンドラインにエコーします
+Vanish VCL を生成し、コマンドラインにエコーします。
 
 ```bash
 bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BACKEND-HOST] [--backend-port BACKEND-PORT] [--export-version EXPORT-VERSION] [--grace-period GRACE-PERIOD] [--output-file OUTPUT-FILE]
@@ -9307,7 +9307,7 @@ vcl を書き込むファイルのパス
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-メッセージの詳細度を上げる：通常の出力の場合は 1、より詳細な出力の場合は 2、デバッグの場合は 3
+メッセージの詳細度を増やします。通常の出力の場合は 1、詳細な出力の場合は 2、デバッグの場合は 3 です。
 
 - デフォルト： `false`
 - 値を受け入れない

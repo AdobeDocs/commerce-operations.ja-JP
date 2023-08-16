@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # ワニスを設定
 
-[ワニスキャッシュ] は、オープンソース Web アプリケーションアクセラレーター ( _HTTP アクセラレーター_ または _HTTP リバースプロキシのキャッシュ_) をクリックします。 Vanish は、ファイルまたはファイルの断片をメモリに保存（またはキャッシュ）し、Vanish は、今後の同等の要求に対する応答時間とネットワーク帯域幅の消費を削減できます。 Apache や nginx などの Web サーバーとは異なり、Vanrish は HTTP プロトコルでのみ使用するように設計されています。
+[Vanish キャッシュ] は、オープンソース Web アプリケーションアクセラレーター ( _HTTP アクセラレーター_ または _HTTP リバースプロキシのキャッシュ_) をクリックします。 Vanish は、ファイルまたはファイルの断片をメモリに保存（またはキャッシュ）し、Vanish は、今後の同等の要求に対する応答時間とネットワーク帯域幅の消費を削減できます。 Apache や nginx などの Web サーバーとは異なり、Vanrish は HTTP プロトコルでのみ使用するように設計されています。
 
-Commerce 2.4.2 は Vanrish 6.4 でテストされています。Commerce 2.4.x は Vanrish 6.x と互換性があります。
+Commerce 2.4.2 は Vanrish 6.4 を使用してテストされます。Commerce 2.4.x は Vanrish 6.x と互換性があります。
 
 >[!WARNING]
 >
@@ -23,7 +23,7 @@ Commerce 2.4.2 は Vanrish 6.4 でテストされています。Commerce 2.4.x �
 Vanish の詳細については、次を参照してください。
 
 - [ザビッグワニスの絵]
-- [ワニス起動オプション]
+- [Vanish 起動オプション]
 - [ニスとウェブサイトのパフォーマンス]
 
 ## ワニストポロジ図
@@ -52,9 +52,10 @@ Vanish でキャッシュされたアセットは、設定可能な間隔で有�
    もしあなたの `<magento_root>/var/page_cache` ディレクトリ、Commerce で Vanish を正常に設定しました！
 
 >[!NOTE]
+>
 - 特に記載のない限り、このトピックで説明するすべてのコマンドは、を使用するユーザーとして入力する必要があります。 `root` 権限。
-- このトピックは、CentOS と Apache 2.4 で Vanish 用に記述されています。Vanish を別の環境で設定する場合は、一部のコマンドが異なる場合があります。 詳細は、Vanish のドキュメントを参照してください。
-
+>
+- このトピックは、CentOS および Apache 2.4 の Vanrish 向けに記述されています。異なる環境で Vanish を設定する場合、一部のコマンドは異なる場合があります。 詳細は、Vanish のドキュメントを参照してください。
 
 ## 既知の問題
 
@@ -62,28 +63,28 @@ Vanish に関する次の問題がわかっています。
 
 - [Vanish は SSL をサポートしていません]
 
-   別の方法として、SSL 終了または SSL 終了プロキシを使用します。
+  別の方法として、SSL 終了または SSL 終了プロキシを使用します。
 
 - 手動で `<magento_root>/var/cache` ディレクトリに入る場合は、Vanish を再起動する必要があります。
 
 - コマースのインストール中にエラーが発生した可能性があります：
 
-   ```terminal
-   Error 503 Service Unavailable
-   Service Unavailable
-   XID: 303394517
-   Varnish cache server
-   ```
+  ```terminal
+  Error 503 Service Unavailable
+  Service Unavailable
+  XID: 303394517
+  Varnish cache server
+  ```
 
-   このエラーが発生した場合は、 `default.vcl` タイムアウトを `backend` stanza は次のようになります。
+  このエラーが発生した場合は、 `default.vcl` をクリックし、 `backend` stanza は次のようになります。
 
-   ```conf
-   backend default {
-       .host = "127.0.0.1";
-       .port = "8080";
-       .first_byte_timeout = 600s;
-   }
-   ```
+  ```conf
+  backend default {
+      .host = "127.0.0.1";
+      .port = "8080";
+      .first_byte_timeout = 600s;
+  }
+  ```
 
 ## Vanish キャッシュの概要
 
@@ -94,6 +95,7 @@ Vanish キャッシュは、次を使用して Commerce で機能します。
 - `default.vcl` 次を使用して生成される Vanrish の設定 [管理者](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
+>
 このトピックでは、前の一覧の既定のオプションのみを扱います。 複雑なシナリオでキャッシュを設定する方法は他にも多数あります（例えば、コンテンツ配信ネットワークを使用）。これらの方法は、このガイドの範囲外です。
 
 最初のブラウザー要求時に、キャッシュ可能なアセットが Varnish からクライアントブラウザーに配信され、ブラウザーにキャッシュされます。
@@ -117,13 +119,14 @@ Vanish キャッシュは、次を使用して Commerce で機能します。
 前述の例は、ストアフロントのメインページ (`m2_ce_my`) をクリックします。 CSS および JavaScript アセットは、クライアントブラウザーでキャッシュされます。
 
 >[!NOTE]
+>
 ほとんどの静的アセットには、アセットがサーバーから取得されたことを示す HTTP 200(OK) ステータスコードが含まれています。
 
 ### 2 番目のブラウザーリクエスト
 
 同じブラウザーが同じページを再度リクエストした場合、これらのアセットはローカルブラウザーのキャッシュから配信されます。次の図を参照してください。
 
-![次回同じオブジェクトがリクエストされたときに、アセットがローカルブラウザーのキャッシュから読み込まれます](../../assets/configuration/varnish-apache-second-visit.png)
+![次回同じオブジェクトがリクエストされたときに、アセットがローカルブラウザーのキャッシュから読み込まれます。](../../assets/configuration/varnish-apache-second-visit.png)
 
 最初のリクエストと 2 番目のリクエストの応答時間の違いに注意してください。 静的アセットには 200(OK) の応答コードがあります。静的アセットは、初めてローカルキャッシュから配信されるからです。
 
@@ -135,11 +138,11 @@ Vanish キャッシュは、次を使用して Commerce で機能します。
 
 `calendar.css` には ETag 応答ヘッダーがあり、これは、クライアントブラウザー上の CSS ファイルをサーバー上の CSS ファイルと比較できることを意味します。
 
-さらに、静的アセットは、次の図に示すように、304（未変更）HTTP ステータスコードで返されます。
+さらに、静的アセットは、次の図に示すように、304（未変更）HTTP ステータスコードと共に返されます。
 
 ![HTTP 304（未変更）応答コードは、ローカルキャッシュ内の静的アセットがサーバー上と同じであることを示します](../../assets/configuration/varnish-304.png)
 
-304 ステータスコードが発生するのは、ユーザーがローカルキャッシュを無効にし、サーバー上のコンテンツが変更されなかったためです。 ステータスコード 304 により、静的アセット _コンテンツ_ は転送されません。ブラウザーには、HTTP ヘッダーのみがダウンロードされます。
+304 ステータスコードが発生するのは、ユーザーがローカルキャッシュを無効にし、サーバー上のコンテンツが変更されなかったためです。 ステータスコード 304 により、静的アセットが _コンテンツ_ は転送されません。HTTP ヘッダーのみがブラウザーにダウンロードされます。
 
 コンテンツがサーバー上で変更された場合、クライアントは HTTP 200(OK) ステータスコードと新しい ETag を使用して静的アセットをダウンロードします。
 
@@ -147,7 +150,7 @@ Vanish キャッシュは、次を使用して Commerce で機能します。
 
 [データベース]: https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/
 [ザビッグワニスの絵]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
-[ワニスキャッシュ]: https://varnish-cache.org
-[ワニス起動オプション]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options
+[Vanish キャッシュ]: https://varnish-cache.org
+[Vanish 起動オプション]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options
 [ニスとウェブサイトのパフォーマンス]: https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance
 [Vanish は SSL をサポートしていません]: https://www.varnish-cache.org/docs/3.0/phk/ssl.html

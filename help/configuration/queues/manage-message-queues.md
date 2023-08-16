@@ -33,7 +33,7 @@ Cron ジョブは、コンシューマーを再起動するデフォルトのメ
 >
 >メッセージキューを確認する頻度は、ビジネスロジックと使用可能なシステムリソースに応じて異なります。 一般に、新規顧客を確認し、カタログの更新など、リソースを集中的に消費するプロセスよりも頻繁にお知らせメールを送信する必要があります。 次を定義する必要があります。 `cron` は、ビジネスニーズに応じてスケジュールを設定します。
 >
->この設定は、グループの管理ストア/設定/設定/詳細/システム/ Cron 設定オプションでおこなえます。消費者
+>この設定は、Admin Stores/Settings/Configuration/Advanced/System/Cron の group の設定オプション (consumers) でおこなえます。
 >
 >詳しくは、 [cron の設定と実行](../cli/configure-cron-jobs.md) を使用する方法の詳細 `cron` コマースを使用します。
 
@@ -43,13 +43,13 @@ Cron ジョブは、コンシューマーを再起動するデフォルトのメ
 
 ### デフォルトの動作
 
-- Cron ジョブ `consumers_runner` 有効
+- Cron ジョブ `consumers_runner` が有効になっている
 - Cron ジョブ `consumers_runner` すべての定義済みコンシューマーを実行
 - 各コンシューマーは10000件のメッセージを処理してから終了します
 
 >[!INFO]
 >
->Adobe Commerceストアがクラウドプラットフォームでホストされている場合、 [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) を設定するには、以下を実行します。 `consumers_runner` cron ジョブ。
+>Adobe Commerceストアがクラウドプラットフォームでホストされている場合、 [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) を設定するには、以下を実行します。 `consumers_runner` cron ジョブです。
 
 ### 特定の設定
 
@@ -71,7 +71,7 @@ Cron ジョブは、コンシューマーを再起動するデフォルトのメ
 ...
 ```
 
-- `cron_run` - `consumers_runner` cron ジョブ ( デフォルト= `true`) をクリックします。
+- `cron_run`  — を有効または無効にする boolean 値 `consumers_runner` cron ジョブ ( デフォルト= `true`) をクリックします。
 - `max_messages`  — 各コンシューマーが処理する必要があるメッセージの最大数（デフォルトは=） `10000`) をクリックします。 お勧めしませんが、0 を使用して、消費者が終了するのを防ぐことができます。 詳しくは、 [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) コンシューマーがメッセージキューからのメッセージを処理する方法を設定する場合。
 - `consumers`  — 実行するコンシューマーを指定する文字列の配列。 空の配列が実行されます *すべて* 消費者
 - `multiple_processes`  — 実行するコンシューマーをプロセス数で指定するキーと値のペアの配列。 Commerce 2.4.4 以降でサポートされます。

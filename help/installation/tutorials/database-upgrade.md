@@ -1,13 +1,13 @@
 ---
 title: データベーススキーマとデータのアップグレード
 description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceデータベーススキーマをアップグレードします。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: bef04561-6c6b-4636-a8ab-a1ade44f5a8f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
 
 ---
-
 
 # データベーススキーマとデータのアップグレード
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->A *コンポーネント* は、モジュール、テーマ、または言語パックです。コンポーネントがCommerce Marketplaceから取得されたかどうかは関係ありません。
+>A *コンポーネント* は、モジュール、テーマ、または言語パックのいずれでもかまいません。コンポーネントがCommerce Marketplaceから提供されたかどうかは関係ありません。
 
 1. アップグレードを開始します。
 
@@ -31,7 +31,7 @@ ht-degree: 0%
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   ここで、 `--keep-generated` は、更新されないオプションの引数です [静的表示ファイル](../../configuration/cli/static-view-file-deployment.md). このオプションの引数は使用します *のみ* 経験豊富なシステムインテグレーターによる限られた状況でのみ。 使用する必要があります *のみ* in [実稼動モード](../../configuration/bootstrap/application-modes.md#production-mode). それは *not* ～で使われる [開発者モード](../../configuration/bootstrap/application-modes.md#developer-mode).
+   ここで、 `--keep-generated` は、更新されないオプションの引数です [静的表示ファイル](../../configuration/cli/static-view-file-deployment.md). このオプションの引数は使用します。 *のみ* 経験豊富なシステムインテグレーターによる限られた状況でのみ可能です。 使用する必要があります *のみ* in [実稼動モード](../../configuration/bootstrap/application-modes.md#production-mode). 次のようにします。 *not* ～で使われる [開発者モード](../../configuration/bootstrap/application-modes.md#developer-mode).
 
 1. キャッシュをクリーンアップします。
 

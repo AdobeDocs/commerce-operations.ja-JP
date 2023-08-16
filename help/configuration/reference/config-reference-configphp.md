@@ -1,17 +1,17 @@
 ---
 title: config.php リファレンス
 description: config.php ファイルの値のリストを参照してください。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
 # config.php リファレンス
 
-この `config.php` ファイルには次のセクションが含まれます。
+The `config.php` ファイルには次のセクションが含まれます。
 
 | 名前 | 説明 |
 | --------- | -------------------|
@@ -44,7 +44,7 @@ ht-degree: 0%
 | ---------- | -----------------------------------|
 | `websites` | Web サイトの設定 |
 | `groups` | 設定を保存 |
-| `stores` | ストア表示設定 |
+| `stores` | ストア表示の設定 |
 
 ```conf
 'scopes' => [

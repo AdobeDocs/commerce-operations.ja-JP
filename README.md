@@ -2,7 +2,7 @@
 source-git-commit: 8b82081057af7d134528988d3f9f7cf53f4d7525
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 # Adobe Commerce技術ドキュメント
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ## Adobeオープンソース行動規範
 
-このプロジェクトでは、 [Adobeオープンソース行動規範](code-of-conduct.md) または [.NET Foundation 行動規範](https://dotnetfoundation.org/code-of-conduct). 詳しくは、 [貢献](contributing.md) 記事。
+このプロジェクトでは、[アドビオープンソース行動規範](code-of-conduct.md) または [.NET Foundation 行動規範](https://dotnetfoundation.org/code-of-conduct)を採用しています。詳しくは、[投稿](contributing.md)の記事を参照してください。
 
 ## Adobeコンテンツへの投稿について
 
@@ -54,9 +54,9 @@ Adobe Experience Cloudソリューションの製品チーム、プログラム�
 
 ## テンプレート
 
-この `_jekyll` ディレクトリには、テンプレート化されたトピックと必要なアセットが含まれています。
+The `_jekyll` ディレクトリには、テンプレート化されたトピックと必要なアセットが含まれています。
 Liquid テンプレート言語を使用するテンプレートは、 `_jekyll/templated` ディレクトリをHTMLファイルとして。
-この `_jekyll/_data` ディレクトリには、テンプレートのレンダリングに使用されるデータを含むファイルが含まれます。
+The `_jekyll/_data` ディレクトリには、テンプレートのレンダリングに使用されるデータを含むファイルが含まれます。
 
 すべてのテンプレートをレンダリングするには：
 

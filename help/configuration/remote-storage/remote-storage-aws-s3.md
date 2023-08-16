@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # リモートストレージ用のAWS S3 バケットの設定
 
-この [Amazon Simple Storage Service (Amazon S3)][AWS S3] は、業界をリードする拡張性、データ可用性、セキュリティ、パフォーマンスを提供するオブジェクトストレージサービスです。 AWS S3 サービスは、データストレージにバケット（コンテナ）を使用します。 この設定では、 _プライベート_ バケット。 クラウドインフラストラクチャ上のAdobe Commerceについては、 [クラウドインフラストラクチャ上のコマース用のリモートストレージの設定](cloud-support.md).
+The [Amazon Simple Storage Service (Amazon S3)][AWS S3] は、業界をリードする拡張性、データ可用性、セキュリティ、パフォーマンスを提供するオブジェクトストレージサービスです。 AWS S3 サービスは、データストレージにバケット（コンテナ）を使用します。 この設定では、 _プライベート_ バケット。 クラウドインフラストラクチャ上のAdobe Commerceについては、 [クラウドインフラストラクチャ上のコマース用のリモートストレージの設定](cloud-support.md).
 
 >[!WARNING]
 >
@@ -67,15 +67,15 @@ location ~* \.(ico|jpg|jpeg|png|gif|svg|js|css|swf|eot|ttf|otf|woff|woff2)$ {
 
 ### 認証
 
-の代わりにアクセスおよび秘密鍵を使用する場合 [AWS IAM] の役割の場合、 [`ngx_aws_auth` Nginx モジュール][ngx repo].
+の代わりにアクセスおよび秘密鍵を使用する場合 [AWS IAM] の役割の場合は、 [`ngx_aws_auth` Nginx モジュール][ngx repo].
 
 ### 権限
 
 S3 統合は、キャッシュされた画像を生成してローカルファイルシステムに保存する機能に依存しています。 したがって、 `pub/media` と同様のディレクトリは、ローカルストレージを使用する場合と同様、S3 でも同じです。
 
-### ファイル操作
+### ファイルの操作
 
-次を使用することを強くお勧めします。 [!DNL Commerce] ファイルアダプタメソッドは、ファイルストレージタイプに関係なく、コーディングまたは拡張機能の開発で使用します。 ストレージに S3 を使用する場合は、次のようなネイティブ PHP ファイルの I/O 操作を使用しないでください。 `copy`, `rename`または `file_put_contents`S3 ファイルがファイルシステム内に存在しないので、を呼び出す必要があります。 詳しくは、 [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) コード例を参照してください。
+次を使用することを強くお勧めします。 [!DNL Commerce] ファイルアダプタメソッドは、ファイルストレージの種類に関係なく、コーディングまたは拡張機能の開発で使用します。 ストレージに S3 を使用する場合は、次のようなネイティブ PHP ファイルの I/O 操作を使用しないでください。 `copy`, `rename`または `file_put_contents`S3 ファイルがファイルシステム内に存在しないので、を呼び出す必要があります。 詳しくは、 [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) コード例を参照してください。
 
 <!-- link definitions -->
 

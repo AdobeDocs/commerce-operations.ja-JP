@@ -22,12 +22,12 @@ ht-degree: 0%
 
 ## メモリの設定
 
-少なくとも **2 GB** 記憶の [OPcache PHP モジュール](https://www.php.net/manual/en/book.opcache.php). OPcache モジュールは、 `php.ini` ファイル。 2048 MB のメモリを割り当てるには、 `opcache.memory_consumption = 2048`.
+少なくとも割り当て **2 GB** 記憶の [OPcache PHP モジュール](https://www.php.net/manual/en/book.opcache.php). OPcache モジュールは、 `php.ini` ファイル。 2048 MB のメモリを割り当てるには、 `opcache.memory_consumption = 2048`.
 
 ## 追加情報
 
 * [パフォーマンスのベストプラクティス — PHP 設定](../../../performance/software.md#php-settings)
 * [PHP オプションの設定](https://devdocs.magento.com/cloud/project/project-conf-files_magento-app.html#customize-phpini-settings)
-* [クラウドインフラストラクチャ上のAdobe Commerceのデータベースのベストプラクティス](database-on-cloud.md)
+* [クラウドインフラストラクチャ上のAdobe Commerceに関するデータベースのベストプラクティス](database-on-cloud.md)
 * [クラウドインフラストラクチャ上のAdobe Commerceで最も一般的なデータベースの問題](../maintenance/resolve-database-performance-issues.md)
-* [インデクサー「スケジュールに従って更新」を使用すると、Adobe Commerceのパフォーマンスが最適化されます](../maintenance/indexer-configuration.md)
+* [インデクサー「スケジュールに従って更新」を使用すると、Adobe Commerceのパフォーマンスが最適化されます。](../maintenance/indexer-configuration.md)

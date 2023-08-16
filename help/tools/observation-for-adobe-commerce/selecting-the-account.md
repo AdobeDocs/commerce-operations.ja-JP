@@ -1,5 +1,5 @@
 ---
-title: '''使用を開始：アカウントと期間の選択'
+title: '使用を開始：アカウントと期間の選択'
 description: を使用し始める方法を学ぶ [!DNL Observation for Adobe Commerce] アカウントと期間を選択してネットワークを使用します。
 exl-id: f2364fa4-ef83-42f2-992f-e37ff1ac96a1
 feature: Configuration, Observability
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # アカウントと期間の選択：
 
-をクリックしたとき、 [!UICONTROL Observation for Adobe Commerce] アイコン [!DNL Observation for Adobe Commerce] お節介が開きます。
+をクリックしたとき、 [!UICONTROL Observation for Adobe Commerce] アイコン、 [!DNL Observation for Adobe Commerce] お節介が開きます。
 
-1. をクリックします。 **アカウントを選択** ドロップダウン。 次の項目が表示されない場合、 **アカウントを選択** ドロップダウンが表示され、アクセス権がない可能性があります。 クリック [ここ](https://adobe.sharepoint.com/sites/MG/it/IT%20Services%20Wiki/Requesting%20access%20to%20Magento%20Commerce%20New%20Relic.aspx) をクリックしてアクセスをリクエストします。
+1. をクリックします。 **アカウントを選択** ドロップダウン。 次の項目が表示されない場合、 **アカウントを選択** ドロップダウンが表示され、アクセス権がない可能性があります。 クリック [ここ](https://adobe.sharepoint.com/sites/MG/it/IT%20Services%20Wiki/Requesting%20access%20to%20Magento%20Commerce%20New%20Relic.aspx) をクリックして、アクセスをリクエストします。
 
    ![アカウントを選択](../../assets/tools/observation-for-adobe-commerce/start-using-1.jpeg)
 

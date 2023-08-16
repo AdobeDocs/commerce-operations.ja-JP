@@ -40,10 +40,10 @@ Adobe Commerceプロジェクトは、様々な方法で実装できます。 �
   </td>
   <td>
     <a href="launch/overview.md">
-      <img alt="起動" src="../../assets/icons/launch.svg" width="80" height="80">
+      <img alt="Launch" src="../../assets/icons/launch.svg" width="80" height="80">
     </a>
     <div>
-    <a href="launch/overview.md"><strong>起動</strong></a>
+    <a href="launch/overview.md"><strong>Launch</strong></a>
     </div>
     運用開始前と運用後の最終的なチェックリストレビュー、実稼動環境の導入、セキュリティ設定、サービスの検証、パフォーマンスの監視  
     <br>
@@ -55,7 +55,7 @@ Adobe Commerceプロジェクトは、様々な方法で実装できます。 �
     <div>
     <a href="maintenance/overview.md"><strong>メンテナンス</strong></a>
     </div>
-    サイト監視、カタログ管理、インデックス作成、設定、機能強化、バグ修正、管理サービス、アップグレード   
+    サイトの監視、カタログ管理、インデックス作成、設定、機能の強化、バグ修正、管理サービス、アップグレード   
     <br>
   </td>
 </tr>

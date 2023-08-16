@@ -1,13 +1,13 @@
 ---
 title: 翻訳辞書と言語パッケージ
 description: 翻訳辞書を生成し、言語パッケージを構築する方法を説明します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1503'
 ht-degree: 0%
 
 ---
-
 
 # ローカリゼーション
 
@@ -45,9 +45,9 @@ bin/magento i18n:collect-phrases [-o|--output="<csv file path and name>"] [-m|--
 
 次の表に、パラメータと値を示します。
 
-| パラメータ | 値 | 必須？ |
+| パラメーター | 値 | 必須？ |
 |--- |--- |--- |
-| `<path to directory to translate>` | 翻訳可能なコードを含むディレクトリへのパス。つまり、翻訳するフレーズを持つ PHP、PHTML、XML ファイルです。<br><br>入力したパスで検索が開始され、そのパスに含まれるすべてのファイルとサブディレクトリが検索されます。<br><br>次を使用する場合は、このパラメーターを使用しないでください： `-m --magento`. | はい（辞書）、いいえ（パッケージ）。 |
+| `<path to directory to translate>` | 翻訳可能なコードを持つディレクトリのパス。つまり、翻訳するフレーズを持つ PHP、PHTML、XML ファイル。<br><br>入力したパスで検索が開始され、そのパスに含まれるすべてのファイルとサブディレクトリが検索されます。<br><br>次を使用する場合は、このパラメーターを使用しないでください： `-m --magento`. | はい（辞書）、いいえ（パッケージ）。 |
 | `-m --magento` | この翻訳辞書から言語パッケージを作成するために必要です。 使用した場合、bin/magento を含むディレクトリを検索します。 このオプションは、辞書の各行にテーマまたはモジュールを追加します。<br><br>次に例を示します。<br><br>&quot;項目が見つかりません&quot;,&quot;項目が見つかりません&quot;,module,Magento_Wishlist | いいえ |
 | `-o --output="<path>"` | 作成する翻訳辞書の CSV ファイルの絶対ファイルシステムパスとファイル名を指定します。 入力した値は、大文字と小文字が区別されます。 CSV ファイルの名前は、大文字と小文字を含むロケール名と完全に一致する必要があります。<br><br>このパラメータを省略した場合、出力は stdout に送られます。 | いいえ |
 
@@ -75,9 +75,9 @@ Product '%1' has been added to shopping cart.
 Product 'Multimeter-2000' has been added to shopping cart.
 ```
 
-生成されるフレーズには、各プレースホルダーの少なくとも 1 つを含める必要があります。 例えば、 `%1` から `%3` 元のフレーズで 翻訳には、任意の順序でこれらのプレースホルダーをいくつでも含めることができますが、少なくとも 1 つは `%1`, `%2`、および `%3`. 翻訳に、元の値に存在しないプレースホルダー値 ( 例えば、 `%4`, `%5`など )。
+生成されるフレーズには、各プレースホルダーの少なくとも 1 つを含める必要があります。 例えば、 `%1` から `%3` 元のフレーズで。 翻訳には、任意の順序でこれらのプレースホルダーをいくつでも含めることができますが、少なくとも 1 つのプレースホルダーが必要です。 `%1`, `%2`、および `%3`. 翻訳に、元の値に存在しないプレースホルダー値 ( 例えば、 `%4`, `%5`など )。
 
-フレーズの翻訳例：
+フレーズの翻訳例を次に示します。
 
 ```text
 "Buy %1 for %2 (%3 incl. tax) each","Compre %1 por %2 (%3 incl. imposto) cada"
@@ -92,7 +92,7 @@ Product 'Multimeter-2000' has been added to shopping cart.
 1. [語句の収集と翻訳](#generate-a-translation-dictionary). ( `--magento` パラメーターが必要です。)
 1. [言語パッケージコマンドを実行します。](#run-the-language-package-command).
 1. [ディレクトリとファイルの作成](#create-directories-and-files).
-1. （オプション） [1 つの言語に対する複数のパッケージの設定](#configure-multiple-packages-for-a-language).
+1. （オプション） [1 つの言語用に複数のパッケージを設定する](#configure-multiple-packages-for-a-language).
 
 ### 言語パッケージコマンドを実行します。
 
@@ -104,16 +104,16 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 次の表に、言語パッケージコマンドのパラメータと値を示します。
 
-| パラメータ | 値 | 必須？ |
+| パラメーター | 値 | 必須？ |
 |--- |--- |--- |
 | `<source>` | 言語パッケージへの分類に必要な、組み合わされた翻訳辞書とメタ情報を含む CSV ファイルの絶対ファイルシステムパスとファイル名。<br><br>用途 [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) CSV ファイルを作成するには、 [ディレクトリとファイルの作成](#m2devgde-xlate-files). | はい |
 | `<locale>` | [ISO 639-1] （言語）および [ISO 3166] （国）生成されるすべての CSV ファイルのファイル名として使用される言語の識別子。 例： `de_DE`, `pt_PT`, `pt_BR`. | はい |
-| `-m --mode` | ターゲットファイルが存在する場合は、既存の言語パッケージを置き換えるか、新しい言語パックとマージするかを指定します。 マージは、既存のフレーズを上書きし、新しいフレーズを追加します。<br><br>値：結合または置換（デフォルト）。 | いいえ |
+| `-m --mode` | ターゲットファイルが存在する場合は、既存の言語パッケージを置き換えるか、新しい言語パックとマージするかを指定します。 マージは、既存のフレーズを上書きし、新しいフレーズを追加します。<br><br>値：merge または replace（デフォルト）。 | いいえ |
 | `-d --allow-duplicates` | 言語パックでの重複を許可するには、このオプションを含めます。 そうしないと、異なる翻訳を持つ複数のエントリで同じフレーズが検出された場合、コマンドはエラーで失敗します。 | いいえ |
 
 ### ディレクトリとファイルの作成
 
-言語パッケージは、 `app/i18n/<VendorName>` 次の内容を含む Commerce ファイルシステム内：
+言語パッケージは、以下のディレクトリにあります。 `app/i18n/<VendorName>` 次の内容を含む Commerce ファイルシステム内：
 
 - 必要なライセンスファイル
 - `composer.json`
@@ -154,7 +154,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 </language>
 ```
 
-ここで、
+次の場合：
 
 - `code` — 言語パッケージのロケール（必須）
 - `vendor` — モジュールのベンダー名（必須）
@@ -183,8 +183,8 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 前述の例では、
 
-- `language_package_one` から継承 `en_au_package` および `en_au_package` から継承 `en_ie_package`
-- `language_package_two` から継承 `en_ca_package` および `en_ca_package` から継承 `en_us_package`
+- `language_package_one` は次を継承： `en_au_package` および `en_au_package` は次を継承： `en_ie_package`
+- `language_package_two` は次を継承： `en_ca_package` および `en_ca_package` は次を継承： `en_us_package`
 
 Commerce アプリケーションが `en_GB` パッケージの場合、次の順番で他のパッケージを参照します。
 
@@ -197,7 +197,7 @@ Commerce アプリケーションが `en_GB` パッケージの場合、次の�
 
 言語パッケージ間のすべての継承を指定すると、循環継承チェーンが作成される場合があります。 用途 [Magento\Test\Integrity\App\Language\CircularDependencyTest] このようなチェーンを見つけて修正するためのテスト。
 
-### 1 つの言語に対する複数のパッケージの設定
+### 1 つの言語用に複数のパッケージを設定する
 
 ストアの柔軟性を高めるために、同じ言語の複数の言語パッケージをストアにアップロードできます。 したがって、1 つの言語で使用可能なすべてのパッケージから 1 つのパッケージをコンパイルするので、ストアの各部分に異なるカスタムパッケージを使用できます。
 
@@ -209,7 +209,7 @@ Commerce アプリケーションが `en_GB` パッケージの場合、次の�
 
 ### 例：モジュールまたはテーマの翻訳辞書を作成する
 
-他のマーチャントに配布するモジュールまたはテーマにドイツ語の翻訳を追加するには：
+他のマーチャントに配布するモジュールまたはテーマにドイツ語の翻訳を追加するには、次の手順を実行します。
 
 1. モジュールからフレーズを収集します。
 
@@ -247,11 +247,11 @@ Commerce アプリケーションが `en_GB` パッケージの場合、次の�
 
 1. 言語パッケージ用のディレクトリを作成します。
 
-   例： `/var/www/html/magento2/app/i18n/ExampleCorp/xx_yy`
+   例：`/var/www/html/magento2/app/i18n/ExampleCorp/xx_yy`
 
 1. このディレクトリに、以下のすべてを追加します。
 
-   - ライセンス（必要な場合）
+   - ライセンス（必要に応じて）
    - `composer.json` （以下のサンプル）
    - `registration.php` （以下のサンプル）
    - `language.xml` （以下のサンプル）

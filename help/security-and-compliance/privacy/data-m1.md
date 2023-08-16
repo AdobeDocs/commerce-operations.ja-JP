@@ -1,13 +1,13 @@
 ---
 title: お客様の個人情報に関するリファレンス（バージョン 1.x）
 description: Magento1.x での、顧客の個人情報に対するデータフローとデータベースエンティティのマッピングについて説明します。
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 0%
 
 ---
-
 
 # お客様の個人情報に関するリファレンス（バージョン 1.x）
 
@@ -54,7 +54,7 @@ Magento1 は、顧客、販売、その他のデータベーステーブルに�
 
 ### 顧客データ
 
-Magento1 では、 `customer_entity` および `customer_address_entity` テーブル。 これらのテーブルには、カスタム顧客属性を含むことができる複数の参照テーブルがあります。
+Magento1 は、顧客情報を `customer_entity` および `customer_address_entity` テーブル。 これらのテーブルには、カスタム顧客属性を含むことができる複数の参照テーブルがあります。
 
 #### `customer_entity` および参照テーブル
 
@@ -64,7 +64,7 @@ Magento1 では、 `customer_entity` および `customer_address_entity` テー�
 | --- | --- |
 | `email` | varchar(255) |
 
-以下の表は、 `customer_entity` には、カスタム顧客属性を含めることができます。
+以下の表は、を参照しています。 `customer_entity` には、カスタム顧客属性を含めることができます。
 
 | テーブル | 列 | データタイプ |
 | --- | --- | --- |
@@ -88,7 +88,7 @@ Magento1 では、 `customer_entity` および `customer_address_entity` テー�
 
 ### 注文データ
 
-この `sales_flat_order` および関連するテーブルには、顧客の名前、請求先住所、配送先住所、および関連情報が含まれます。
+The `sales_flat_order` および関連するテーブルには、顧客の名前、請求先住所、配送先住所、および関連情報が含まれます。
 
 #### `sales_flat_order` 表
 
@@ -109,7 +109,7 @@ Magento1 では、 `customer_entity` および `customer_address_entity` テー�
 
 #### `sales_flat_order_address` 表
 
-この `sales_flat_order_address` テーブルには、顧客の住所が含まれます。
+The `sales_flat_order_address` テーブルには、顧客の住所が含まれます。
 
 | 列 | データタイプ |
 | --- | --- |
@@ -200,7 +200,7 @@ Magento1 では、 `customer_entity` および `customer_address_entity` テー�
 
 #### `sales_flat_quote_payment` 表
 
-この `sales_flat_quote_payment` 表には、クレジットカード情報やその他のトランザクション情報が含まれます。
+The `sales_flat_quote_payment` 表には、クレジットカード情報やその他のトランザクション情報が含まれます。
 
 | 列 | データタイプ |
 | --- | --- |

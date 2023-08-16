@@ -1,13 +1,13 @@
 ---
 title: アップグレードのメンテナンスモードオプション
 description: アップグレードの実行中にAdobe CommerceまたはMagento Open Sourceストアフロントに表示されるカスタムメンテナンスモードページを作成します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
 
 ---
-
 
 # アップグレードのメンテナンスモードオプション
 
@@ -59,16 +59,16 @@ body
 この節の例では、次のファイルを変更する方法を示します。これは、メンテナンスページを設定する 1 つの方法です。
 
 - Apache 2.4: `/etc/apache2/sites-available/000-default.conf`
-- Apache 2.2: `/etc/apache2/sites-available/default` （ウブントゥ） `/etc/httpd/conf/httpd.conf` (CentOS)
+- Apache 2.2: `/etc/apache2/sites-available/default` (Ubuntu) `/etc/httpd/conf/httpd.conf` (CentOS)
 
 トラフィックをカスタムメンテナンスページにリダイレクトするには：
 
 1. Apache 設定を更新して、次の操作をおこないます。
 
-   - すべてのトラフィックをメンテナンスページにリダイレクトします
-   - 特定の IP をし許可リストて、管理者がMagento・ソフトウェアをアップグレードできるようにします。
+   - すべてのトラフィックをメンテナンスページにリダイレクトします。
+   - 特定の IP をし許可リストに加えるて、管理者がMagento・ソフトウェアをアップグレードできるようにします。
 
-   次の例の許可リストは 192.0.2.110 です。
+   次の例の許可リストに加えるは 192.0.2.110 です。
 
    Apache 設定ファイルの末尾に次の内容を追加します。
 
@@ -105,9 +105,9 @@ body
 トラフィックをカスタムメンテナンスページにリダイレクトするには：
 
 1. テキストエディターを使用して、サーバーブロックを含む nginx 設定ファイルを開きます。
-1. 次の内容をサーバーブロック (`server` は、明確にするためにのみ表示されます。2 つ目のサーバーブロックを追加しないでください )。
+1. 次の内容をサーバーブロック (`server` は明確にするためにのみ表示されます。2 番目のサーバブロックは追加しないでください )。
 
-   次の許可リストでは、Magentoがにインストールされているシステムの IP アドレス 192.0.2.110 と 192.0.2.115 を設定します。 `/var/www/html/magento2`:
+   次の許可リストに加えるでは、Magentoがにインストールされているシステムの IP アドレス 192.0.2.110 と 192.0.2.115 を設定します。 `/var/www/html/magento2`:
 
    ```conf
    server {

@@ -1,20 +1,20 @@
 ---
 title: ファイル・システム、メディア、データベースのバックアップとロールバック
 description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceアプリケーションをバックアップおよび復元します。
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 0%
 
 ---
 
-
 # ファイル・システム、メディア、データベースのバックアップとロールバック
 
 このコマンドを使用すると、次のバックアップを実行できます。
 
 * ファイルシステム ( `var` および `pub/static` ディレクトリ )
-* この `pub/media` directory
+* The `pub/media` directory
 * データベース
 
 バックアップは、 `var/backups` ディレクトリに保存され、いつでも [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンドを使用します。
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Adobe Commerce on cloud infrastructure プロジェクトについては、 [スナップショットとバックアップ管理](https://devdocs.magento.com/cloud/project/project-webint-snap.html) 内 _クラウドガイド_.
+>Adobe Commerce on cloud infrastructure プロジェクトについては、 [スナップショットとバックアップの管理](https://devdocs.magento.com/cloud/project/project-webint-snap.html) （内） _クラウドガイド_.
 
-## バックアップの有効化
+## バックアップを有効にする
 
 バックアップ機能は、デフォルトで無効になっています。 有効にするには、次の CLI コマンドを入力します。
 
@@ -36,7 +36,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**廃止のお知らせ：**
->バックアップ機能は、2.1.16、2.2.7 および 2.3.0 で廃止されました。追加のバックアップテクノロジーとバイナリバックアップツール（Percona XtraBackup など）を調査することをお勧めします。
+>バックアップ機能は、2.1.16、2.2.7、および 2.3.0 で非推奨（廃止予定）となりました。追加のバックアップテクノロジーとバイナリバックアップツール（Percona XtraBackup など）を調査することをお勧めします。
 
 ## 開くファイルの制限を設定する
 
@@ -46,7 +46,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 
 ## 開いているファイルを設定する方法 `ulimit`
 
-「開く」ファイルを設定することをお勧めします [`ulimit`](https://ss64.com/bash/ulimit.html) ( ファイルシステムユーザーの値が `65536` その他。
+「開く」ファイルを設定することをお勧めします [`ulimit`](https://ss64.com/bash/ulimit.html) ( ファイル・システム・ユーザーの値が `65536` その他。
 
 これは、コマンドラインで実行するか、シェルスクリプトを編集してユーザーに対して永続的な設定にすることができます。
 
@@ -64,7 +64,7 @@ ulimit -s 65536
 >
 >開いているファイルの構文 `ulimit` 使用する UNIX シェルに依存します。 上記の設定は、Bash シェルで CentOS および Ubuntu で動作します。 ただし、macOSの場合、正しい設定は次のようになります。 `ulimit -S 65532`. 詳細は、のマニュアルページまたはオペレーティングシステムのリファレンスを参照してください。
 
-ユーザーの Bash シェルで値をオプションで設定するには、次の手順に従います。
+ユーザーの Bash シェルで値をオプションで設定するには、次の手順を実行します。
 
 1. まだおこなっていない場合は、 [ファイルシステム所有者](../prerequisites/file-system/overview.md).
 1. 開く `/home/<username>/.bashrc` をクリックします。
@@ -78,7 +78,7 @@ ulimit -s 65536
 
 >[!WARNING]
 >
->の値は設定しないことをお勧めします。 [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) 内 `php.ini` ファイルを作成する必要があります。
+>の値は設定しないことをお勧めします。 [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) （内） `php.ini` ファイルを作成する必要があります。
 
 ## バックアップ中
 
@@ -140,7 +140,7 @@ bin/magento info:backups:list
 bin/magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]
 ```
 
-例えば、次の名前のメディアバックアップを復元するには、次のように指定します。 `1440611839_filesystem_media.tgz`を入力して、
+例えば、次の名前のメディアバックアップを復元するには、次のように指定します。 `1440611839_filesystem_media.tgz`，と入力します。
 
 ```bash
 bin/magento setup:rollback -m 1440611839_filesystem_media.tgz

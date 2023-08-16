@@ -1,13 +1,13 @@
 ---
 title: cron ジョブの設定と実行
 description: cron ジョブの管理方法を説明します。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 8ba2b2f9-5200-4e96-9799-1b00d7d23ce1
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 0%
 
 ---
-
 
 # cron ジョブの設定
 
@@ -20,9 +20,9 @@ ht-degree: 0%
 - Googleサイトマップの生成
 - 顧客アラート/通知（製品価格の変更、製品の在庫再追加）
 - インデックス再作成
-- 非公開販売 (Adobe Commerceのみ )
+- プライベートセールス (Adobe Commerceのみ )
 - 通貨レートの自動更新
-- すべてのコマース電子メール（注文確認およびトランザクションを含む）
+- すべてのコマース電子メール（注文の確認とトランザクションを含む）
 
 >[!WARNING]
 >
@@ -40,7 +40,7 @@ Web ブラウザーで cron を実行するには、 [ブラウザーで実行�
 
 この節では、コマースの crontab（Commerce cron ジョブの設定）を作成または削除する方法について説明します。
 
-この _crontab_ は、cron ジョブの実行に使用される設定です。
+The _crontab_ は、cron ジョブの実行に使用される設定です。
 
 Commerce アプリケーションは、異なる設定で実行できる cron タスクを使用します。 PHP のコマンドライン設定は、インデクサの再インデックス、電子メールの生成、サイトマップの生成などを行う一般的な cron ジョブを制御します。
 
@@ -49,12 +49,11 @@ Commerce アプリケーションは、異なる設定で実行できる cron �
 >- インストールとアップグレードの際の問題を回避するため、PHP のコマンドライン設定と PHP Web サーバーのプラグイン設定の両方に同じ PHP 設定を適用することを強くお勧めします。 詳しくは、 [必要な PHP 設定](../../installation/prerequisites/php-settings.md).
 >- マルチノードシステムでは、crontab は 1 つのノードでのみ実行できます。 これは、パフォーマンスや拡張性に関する理由から複数の Web ノードを設定した場合にのみ当てはまります。
 
-
 ### Commerce crontab を作成します。
 
 バージョン 2.2 以降、Commerce は crontab を作成します。 コマースの crontab を、コマースファイルシステムの所有者用に設定された crontab に追加します。 つまり、他の拡張機能やアプリケーション用に crontabs を既に設定している場合は、Commerce crontab を追加します。
 
-Commerce crontab は内部にあります `#~ MAGENTO START` および `#~ MAGENTO END` crontab でのコメント。
+Commerce crontab は内部にあります。 `#~ MAGENTO START` および `#~ MAGENTO END` crontab でのコメント。
 
 Commerce crontab を作成するには：
 
@@ -73,7 +72,6 @@ Commerce crontab を作成するには：
 >- `magento cron:install` 内の既存の crontab を書き換えない `#~ MAGENTO START` および `#~ MAGENTO END` crontab でのコメント。
 >- `magento cron:install --force` は、Commerce コメント以外の cron ジョブには影響しません。
 
-
 crontab を表示するには、次のコマンドをファイルシステムの所有者として入力します。
 
 ```bash
@@ -90,7 +88,7 @@ crontab -l
 
 >[!INFO]
 >
->この `update/cron.php` ファイルが Commerce 2.4.0 で削除されました。このファイルがインストールに存在する場合は、安全に削除できます。
+>The `update/cron.php` ファイルが Commerce 2.4.0 で削除されました。このファイルがインストールに存在する場合は、安全に削除できます。
 >
 >への参照 `update/cron.php` および `bin/magento setup:cron:run` また、crontab から削除する必要があります。
 
@@ -138,21 +136,21 @@ bin/magento cron:run --group default
 
 >[!INFO]
 >
->cron を 2 回実行する必要があります。実行するタスクを初めて検出し、2 回目は、タスク自体を実行する場合です。 2 回目の cron 実行は、 `scheduled_at` 各タスクの時間
+>cron を 2 回実行する必要があります。最初に実行するタスクを検出し、2 回目に実行します。これは、タスク自体を実行するためです。 2 回目の cron 実行は、 `scheduled_at` すべてのタスクの時間。
 
 ## ログ
 
 すべて `cron` ジョブ情報は次の場所から移動されました： `system.log` 別の場所に `cron.log`.
 デフォルトでは、cron 情報は次の場所にあります。 `<install_directory>/var/log/cron.log`.
-cron ジョブのすべての例外は、次の方法でログに記録されます。 `\Magento\Cron\Observer\ProcessCronQueueObserver::execute`.
+cron ジョブからのすべての例外は、次の方法でログに記録されます。 `\Magento\Cron\Observer\ProcessCronQueueObserver::execute`.
 
 ログインに加えて `cron.log`:
 
-- 次の条件で失敗したジョブ `ERROR` および `MISSED` ステータスは `<install_directory>/var/log/support_report.log`.
+- 次の条件で失敗したジョブ： `ERROR` および `MISSED` ステータスは、 `<install_directory>/var/log/support_report.log`.
 
-- と `ERROR` ステータスは常に次のように記録されます `CRITICAL` in `<install_directory>/var/log/exception.log`.
+- とのジョブ `ERROR` ステータスは常に次のように記録されます `CRITICAL` in `<install_directory>/var/log/exception.log`.
 
-- とのジョブ `MISSED` のステータスは次のように記録されます。 `INFO` 内 `<install_directory>/var/log/debug.log` ディレクトリ（開発者モードのみ）。
+- を使用するジョブ `MISSED` のステータスは次のように記録されます。 `INFO` （内） `<install_directory>/var/log/debug.log` ディレクトリ（開発者モードのみ）。
 
 >[!INFO]
 >

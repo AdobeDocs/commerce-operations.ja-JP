@@ -1,9 +1,10 @@
 ---
-title: "[!DNL Site-Wide Analysis Tool]"
+title: '[!DNL Site-Wide Analysis Tool]'
 description: 詳しくは、 [!DNL Site-Wide Analysis] ツール、その使用方法、インストールプロセス、アクセス方法
-source-git-commit: 3801cb9cf8cdf00d450347e8fd023a18ec60bf54
+exl-id: 32774040-d322-43d6-9c26-c340a0ab58a9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -14,9 +15,9 @@ ht-degree: 0%
 
 ## 説明 [!DNL Site-Wide Analysis Tool]?
 
-この [!DNL Site-Wide Analysis Tool] は、Adobe Commerceインストールのセキュリティと操作性を確保するための詳細なシステムインサイトと推奨事項を含む、プロアクティブなセルフサービスツールおよび中央リポジトリです。 リアルタイムで24/7るパフォーマンスの監視、レポート、アドバイスを提供し、潜在的な問題を特定し、サイトの正常性、安全性、およびアプリケーション設定をより適切に表示できるようにします。 解決時間を短縮し、サイトの安定性とパフォーマンスを向上させます。
+The [!DNL Site-Wide Analysis Tool] は、Adobe Commerceインストールのセキュリティと操作性を確保するための詳細なシステムインサイトと推奨事項を含む、プロアクティブなセルフサービスツールおよび中央リポジトリです。 リアルタイムで24/7るパフォーマンスの監視、レポート、アドバイスを提供し、潜在的な問題を特定し、サイトの正常性、安全性、およびアプリケーション設定をより適切に表示できるようにします。 解決時間を短縮し、サイトの安定性とパフォーマンスを向上させます。
 
-参照 [紹介ビデオ](https://www.youtube.com/watch?v=KW2R8ki_RG4) を参照してください。
+詳しくは、 [紹介ビデオ](https://www.youtube.com/watch?v=KW2R8ki_RG4) を参照してください。
 
 ## ツールの概要
 
@@ -33,11 +34,11 @@ ht-degree: 0%
 
 - **Recommendations**  — サイトで検出された問題に対処するためのベストプラクティスに基づくレコメンデーションのリストを表示します。
 
-- **例外**  — エラーハンドラーを使用しない場合に異常な状態が原因でアプリケーションがスローしたエラーをリストします。
+- **例外**  — エラーハンドラーを使用しない場合に、異常な状態が原因でアプリケーションがスローしたエラーをリストします。
 
 - **拡張機能**  — すべてのサードパーティの拡張機能とサードパーティのライブラリを表示します。
 
-- **パッチ** - [!DNL Quality Patches Tool]に含まれている場合、Adobe Commerceインスタンスに固有の使用可能なすべてのパッチのリストが表示されます。
+- **パッチ**  — と統合されている [!DNL Quality Patches Tool]に含まれている場合、Adobe Commerceインスタンスに固有の使用可能なすべてのパッチのリストが表示されます。
 
 ## 他のAdobe Commerce Support Tools との統合
 
@@ -45,7 +46,7 @@ ht-degree: 0%
 
 - [**[!UICONTROL Security Center Widget]**] — サイトのセキュリティインサイトを表示します。<br>
 表示されるセキュリティ情報には、以下が含まれます。 [テクニカル [!DNL Stack] 次のバージョンへの準拠 [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html), and [[!DNL Site-Wide Analysis Tool] ベストプラクティスセキュリティRecommendations](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html).<br>
-この [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) は、Adobe CommerceとMagentoのオープンソースのお客様に対し、マルウェアを事前に検出し、ストアに侵入したかどうかを知らせることで、ストアのセキュリティ状態に関するリアルタイムの洞察を提供します。
+The [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) は、Adobe CommerceとMagentoのオープンソースのお客様に対し、マルウェアを事前に検出し、ストアに侵入したかどうかを知らせることで、ストアのセキュリティ状態に関するリアルタイムの洞察を提供します。
 
 - [**[!DNL Upgrade Compatability Tool]**](../../upgrade/upgrade-compatibility-tool/overview.md)  — 対象のアップグレードバージョンに対してAdobe Commerceをカスタマイズしたインスタンスを実行し、対処する必要がある重要な問題、エラー、警告の概要を返し、アップグレード分析プロセスを容易、迅速、安価にします。
 

@@ -117,7 +117,7 @@ Adobe CommerceとMagento Open Sourceをダウンロードするには、次の�
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   プロンプトが表示されたら、 [認証キー](../authentication-keys.md). お使いの _公開鍵_ はユーザー名です。あなたの _秘密鍵_ はパスワードです。
+   プロンプトが表示されたら、 [認証キー](../authentication-keys.md). お使いの _公開鍵_ はユーザー名です。 _秘密鍵_ はお客様のパスワードです。
 
 1. アプリケーションをインストールする前に、Web サーバーグループの読み取り/書き込み権限を設定します。 これは、コマンドラインがファイルをファイルシステムに書き込めるようにするために必要です。
 
@@ -177,11 +177,11 @@ Adobe CommerceとMagento Open Sourceをダウンロードするには、次の�
 
 ### nginx の設定
 
-nginx を設定するには、 `nginx.conf.sample` インストールディレクトリと nginx 仮想ホストに指定された設定ファイル。
+nginx を設定する場合は、 `nginx.conf.sample` インストールディレクトリと nginx 仮想ホストに指定された設定ファイル。
 
 これらの手順は、nginx 仮想ホストに Ubuntu デフォルトの場所を使用していることを前提としています ( 例： `/etc/nginx/sites-available`) と Ubuntu のデフォルトドキュメントルート ( 例： `/var/www/html`) で指定できますが、環境に合わせてこれらの場所を変更できます。
 
-1. サイトの新しい仮想ホストを作成します。
+1. サイト用の新しい仮想ホストを作成します。
 
    ```bash
    vim /etc/nginx/sites-available/magento
@@ -205,13 +205,13 @@ nginx を設定するには、 `nginx.conf.sample` インストールディレ�
 
    >[!NOTE]
    >
-   >この `include` ディレクティブは、インストールディレクトリ内のサンプル nginx 設定ファイルを指す必要があります。
+   >The `include` ディレクティブは、インストールディレクトリ内のサンプル nginx 設定ファイルを指す必要があります。
 
-1. 置換 `www.magento-dev.com` をドメイン名に置き換えます。 Adobe CommerceまたはMagento Open Sourceのインストール時に指定したベース URL と一致させる必要があります。
+1. 置換 `www.magento-dev.com` を、お使いのドメイン名に置き換えます。 Adobe CommerceまたはMagento Open Sourceのインストール時に指定したベース URL と一致させる必要があります。
 
 1. エディターを保存して終了します。
 
-1. 新しく作成した仮想ホストへの symlink を `/etc/nginx/sites-enabled` ディレクトリ：
+1. 新しく作成した仮想ホストに対する symlink を `/etc/nginx/sites-enabled` ディレクトリ：
 
    ```bash
    ln -s /etc/nginx/sites-available/magento /etc/nginx/sites-enabled
@@ -318,7 +318,7 @@ Adobe CommerceとMagento Open Sourceには複数の [PHP](../php-settings.md) �
 
 1. エディターを保存して終了します。
 
-1. PHP セッションパスのディレクトリを作成し、所有者を `apache` ユーザーとグループ：
+1. PHP セッションパス用のディレクトリを作成し、所有者を `apache` ユーザーとグループ：
 
    ```bash
    mkdir -p /var/lib/php/session/
@@ -328,7 +328,7 @@ Adobe CommerceとMagento Open Sourceには複数の [PHP](../php-settings.md) �
    chown -R apache:apache /var/lib/php/
    ```
 
-1. PHP セッションパスのディレクトリを作成し、所有者を `apache` ユーザーとグループ：
+1. PHP セッションパス用のディレクトリを作成し、所有者を `apache` ユーザーとグループ：
 
    ```bash
    mkdir -p /run/php-fpm/
@@ -348,7 +348,7 @@ Adobe CommerceとMagento Open Sourceには複数の [PHP](../php-settings.md) �
    systemctl enable php-fpm
    ```
 
-1. を確認します。 `php-fpm` サービスは実行中です：
+1. 次を確認します。 `php-fpm` サービスは実行中です：
 
    ```bash
    netstat -pl | grep php-fpm.sock
@@ -396,7 +396,7 @@ Adobe CommerceとMagento Open Sourceをダウンロードするには、次の�
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   プロンプトが表示されたら、 [認証キー](../authentication-keys.md). お使いの _公開鍵_ はユーザー名です。あなたの _秘密鍵_ はパスワードです。
+   プロンプトが表示されたら、 [認証キー](../authentication-keys.md). お使いの _公開鍵_ はユーザー名です。 _秘密鍵_ はお客様のパスワードです。
 
 1. アプリケーションをインストールする前に、Web サーバーグループの読み取り/書き込み権限を設定します。 これは、コマンドラインがファイルをファイルシステムに書き込めるようにするために必要です。
 
@@ -453,11 +453,11 @@ Adobe CommerceとMagento Open Sourceをダウンロードするには、次の�
 
 ### nginx の設定
 
-nginx を設定するには、 `nginx.conf.sample` インストールディレクトリと nginx 仮想ホストに指定された設定ファイル。
+nginx を設定する場合は、 `nginx.conf.sample` インストールディレクトリと nginx 仮想ホストに指定された設定ファイル。
 
 これらの手順は、CentOS のデフォルトの場所を nginx 仮想ホスト ( 例えば、 `/etc/nginx/conf.d`) とデフォルトのドキュメントルート ( 例： `/usr/share/nginx/html`) で指定できますが、環境に合わせてこれらの場所を変更できます。
 
-1. サイトの新しい仮想ホストを作成します。
+1. サイト用の新しい仮想ホストを作成します。
 
    ```bash
    vim /etc/nginx/conf.d/magento.conf
@@ -481,9 +481,9 @@ nginx を設定するには、 `nginx.conf.sample` インストールディレ�
 
    >[!NOTE]
    >
-   >この `include` ディレクティブは、インストールディレクトリ内のサンプル nginx 設定ファイルを指す必要があります。
+   >The `include` ディレクティブは、インストールディレクトリ内のサンプル nginx 設定ファイルを指す必要があります。
 
-1. 置換 `www.magento-dev.com` をドメイン名に置き換えます。
+1. 置換 `www.magento-dev.com` を、お使いのドメイン名に置き換えます。
 
 1. エディターを保存して終了します。
 

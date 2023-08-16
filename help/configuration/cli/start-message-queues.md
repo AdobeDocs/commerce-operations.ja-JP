@@ -1,13 +1,13 @@
 ---
 title: メッセージキューコンシューマーを開始
 description: メッセージキューコンシューマーを開始する方法を説明します。
-source-git-commit: 3e3dac0c75622b210cf1168639b8804003f3c538
+exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
-
 
 # メッセージキューコンシューマーを開始
 
@@ -37,4 +37,4 @@ bin/magento queue:consumers:start <consumer_name> &
 
 >[!INFO]
 >
->この `--multi-process` オプションが `queue:consumers:start` コマンドを使用しますが、並列プロセスでコンシューマーを実行するには、 [`multiple_processes`](../queues/manage-message-queues.md#configuration) オプション `/app/etc/env.php`. それ以外の場合は、 `queue:consumers:start` が `--multi-process` オプションを指定した場合、単一のスレッドでのみ機能します。
+>The `--multi-process` オプションが `queue:consumers:start` コマンドを使用しますが、並列プロセスでコンシューマーを実行するには、 [`multiple_processes`](../queues/manage-message-queues.md#configuration) オプション `/app/etc/env.php`. それ以外の場合は、 `queue:consumers:start` が `--multi-process` オプションを指定した場合、単一のスレッドでのみ機能します。

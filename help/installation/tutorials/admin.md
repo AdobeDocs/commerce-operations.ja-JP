@@ -87,7 +87,7 @@ Created Magento administrator user named j.doe
 
 ## 管理者アカウントのロック解除
 
-ロックされた管理者のアカウントのロックを解除するには、このコマンドを使用します。通常、ログインの試行が複数回行われたためです。
+ロックされた管理者のアカウントのロックを解除するには、通常、ログインの試行が複数回行われたために、このコマンドを使用します。
 
 ```bash
 bin/magento admin:user:unlock {username}

@@ -1,12 +1,12 @@
 ---
 keywords: Adobe Commerce;home;popular topics
 title: ホーム
-description: Adobe Commerceシステム管理および運用製品ドキュメントのインデックスを参照します。
+description: Adobe Commerceのシステム管理と運用製品に関するドキュメントの一覧を参照します。
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
 source-git-commit: 2b1fa24471cda7cc01ef5fdafeedbec0315d68c7
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 0%
+ht-degree: 18%
 
 ---
 
@@ -98,7 +98,7 @@ Adobe Commerceプロジェクトの開発、デプロイ、メンテナンスに
     </a>
     <div>
       <a href="../implementation-playbook/overview.md"><strong>実装プレイブック</strong></a>
-      <p>成功するAdobe Commerceサイトの計画と実装の戦略について説明します。</p>
+      <p>成功する Adobe Commerce サイトの計画と実装の戦略について学習します。</p>
     </div>
   </td>
   <td valign="top">
@@ -107,7 +107,7 @@ Adobe Commerceプロジェクトの開発、デプロイ、メンテナンスに
     </a>
     <div>
       <a href="../operational-playbook/overview.md"><strong>オペレーショナルプレイブック</strong></a>
-      <p>企業が e コマースサイトを成功に導くための運用上の準備を整える方法を学びます。</p>
+      <p>e コマースサイトを成功させるために、ビジネスの運営をどのように準備すればよいかについて学習します。</p>
     </div>
   </td>
   <td valign="top">
@@ -115,8 +115,8 @@ Adobe Commerceプロジェクトの開発、デプロイ、メンテナンスに
        <img alt="大規模法人" src="../assets/icons/enterprise.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../commerce-at-scale/overview.md"><strong>規模でのコマース</strong></a>
-      <p>Adobe CommerceとAdobe Experience Managerを使用して、エクスペリエンスを大規模に配信する方法を学びます。</p>
+      <a href="../commerce-at-scale/overview.md"><strong>規模に応じたコマース</strong></a>
+      <p>Adobe Commerce と Adobe Experience Manager を使用して、エクスペリエンスを大規模に配信する方法を学習します。</p>
     </div>
   </td>
   <td valign="top">

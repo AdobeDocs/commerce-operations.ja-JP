@@ -22,7 +22,7 @@ ht-degree: 0%
 | `commerce.eventing.event.publish` | + | + |                     |
 | で優先度として登録されたイベントを確認します。 [Adobe CommerceのAdobe I/Oイベント](https://developer.adobe.com/commerce/events/get-started/). |
 | `exportProcessor` | + | + | + |
-| 次の期間中に接続のタイムアウトを防ぐ [書き出し](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html) 大規模なデータセット（200,000 個の製品など）の |                |                         |                     |
+| 次の期間中に接続のタイムアウトを防ぐ： [書き出し](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html) 大規模なデータセット（200,000 個の製品など）の |                |                         |                     |
 | `inventoryQtyCounter` | + | + |                     |
 | 注文が行われた後、または製品が削除された後に、在庫指数を非同期で修正します。 必須 [**[!UICONTROL Use deferred stock update]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html#product-stock-options) 」オプションが「管理者」設定で有効になっている。 詳しくは、 [パフォーマンスのベストプラクティス](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#deferred-stock-update). |                |                         |                     |
 | `inventory.source.items.cleanup` | + | + | + |
@@ -36,11 +36,11 @@ ht-degree: 0%
 | `inventory.reservations.updateSalabilityStatus` | + | + | + |
 | 在庫に割り当てられた各製品の販売可能数量を非同期的に更新します。 次を使用している場合は、このコンシューマーは常に稼動状態である必要があります。 [!DNL Inventory Management]. |                |                         |                     |
 | `inventory.indexer.sourceItem` | + | + | + |
-| ソース項目のインデックスを非同期で再作成します。 必須 [**[!UICONTROL Stock/Source reindex strategy]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html#inventory-indexer-settings) が&quot;に設定されている[!UICONTROL asynchronous]」が追加されました。 |                |                         |                     |
+| ソース項目のインデックスを非同期で再作成します。 必須 [**[!UICONTROL Stock/Source reindex strategy]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html#inventory-indexer-settings) が「」に設定されている[!UICONTROL asynchronous]」が追加されました。 |                |                         |                     |
 | `inventory.indexer.stock` | + | + | + |
-| 在庫を非同期的に再インデックスします。 必須 [**[!UICONTROL Stock/Source reindex strategy]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html#inventory-indexer-settings) が&quot;に設定されている[!UICONTROL asynchronous]」が追加されました。 |                |                         |                     |
+| 在庫を非同期的に再インデックスします。 必須 [**[!UICONTROL Stock/Source reindex strategy]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html#inventory-indexer-settings) が「」に設定されている[!UICONTROL asynchronous]」が追加されました。 |                |                         |                     |
 | `matchCustomerSegmentProcessor` | + | + |                     |
-| 一時データベーステーブルを作成し、各テーブルを移動します [顧客セグメント](https://docs.magento.com/user-guide/marketing/customer-segments.html) このレポートに、セグメント ID に一致するすべてのセグメントを削除し、指標としてセグメント ID を使用して顧客セグメントにコピーします。 これはすべてトランザクションで実行され、何かが失敗した場合、トランザクションは、実行前の状態にロールバックされます。 トランザクションの後、消費者は一時テーブルを破棄します。 |                |                         |                     |
+| 一時データベーステーブルを作成し、各テーブルを移動します [顧客セグメント](https://docs.magento.com/user-guide/marketing/customer-segments.html) このレポートに、セグメント ID に一致するすべてのセグメントを削除し、指標としてセグメント ID を使用して顧客セグメントにコピーします。 これはすべてトランザクションで実行され、何かが失敗した場合、トランザクションは、実行前の状態にロールバックされます。 トランザクションの後、コンシューマーは一時テーブルを破棄します。 |                |                         |                     |
 | `media.content.synchronization` | + | + | + |
 | 製品、カテゴリ、CMS ブロック、CMS ページの割り当てられたメディアへのリンクが、アセットに正しく割り当てられていることを確認します。 使用されなくなった古いアセットを削除します。 |                |                         |                     |
 | `media.gallery.renditions.update` | + | + | + |
@@ -52,7 +52,7 @@ ht-degree: 0%
 | `negotiableQuotePriceUpdate` |                | + |                     |
 | ネゴシエーション可能な見積もりの価格を更新します。 必須 [**[!UICONTROL Quotes]**](https://docs.magento.com/user-guide/sales/quotes.html) オプションが有効になっている場合は、管理システム設定で有効になります。 |                |                         |                     |
 | `placeOrderProcessor` | + | + |                     |
-| 非同期 [プロセスオーダー](https://developer.adobe.com/commerce/php/module-reference/module-async-order/)を呼び出し、注文を受信済みとマークし、メッセージキューに配置し、先入れ先出しベースで処理します。 考慮される [ベストプラクティス](../../implementation-playbook/best-practices/maintenance/order-processing-configuration.md) を参照してください。 |                |                         |                     |
+| 非同期 [プロセスの注文](https://developer.adobe.com/commerce/php/module-reference/module-async-order/)を呼び出し、注文を受信済みとマークし、メッセージキューに配置し、先入れ先出しベースで処理します。 次の項目と見なされます。 [ベストプラクティス](../../implementation-playbook/best-practices/maintenance/order-processing-configuration.md) を参照してください。 |                |                         |                     |
 | `product_action_attribute.update` | + | + | + |
 | 管理者が [更新を行う](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update.html). |                |                         |                     |
 | `product_action_attribute.website.update` | + | + | + |
@@ -62,7 +62,7 @@ ht-degree: 0%
 | `purchaseorder.toorder` |                | + |                     |
 | 発注書をに変換します [注文](https://docs.magento.com/user-guide/stores/b2b-purchase-order-flow.html#approval-rules). 必須 [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) オプションが有効になっている場合は、管理システム設定で有効になります。 |                |                         |                     |
 | `purchaseorder.transactional.email` |                | + |                     |
-| 発注書の電子メールを送信します。 必須 [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) オプションが有効になっている場合は、管理システム設定で有効になります。 |                |                         |                     |
+| 発注書の E メールを送信します。 必須 [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) オプションが有効になっている場合は、管理システム設定で有効になります。 |                |                         |                     |
 | `purchaseorder.validation` |                | + |                     |
 | 関連するに対して発注を検証します [承認ルール](https://docs.magento.com/user-guide/customers/account-dashboard-approval-rules.html). 必須 [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) オプションが有効になっている場合は、管理システム設定で有効になります。 |                |                         |                     |
 | `saveConfigProcessor` [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7-beta1 でのみ使用可能"} | + |                         | + |

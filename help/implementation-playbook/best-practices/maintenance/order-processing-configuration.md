@@ -30,7 +30,7 @@ ht-degree: 0%
 
 非同期での注文処理を有効にする手順は、デプロイメントモードによって異なります。
 
-- クラウドインフラストラクチャ上のAdobe Commerceおよび実稼働モードのオンプレミスサイトの場合は、次のMagentoCLI コマンドを使用して非同期インデックス作成を有効にします。
+- クラウドインフラストラクチャ上のAdobe Commerceおよび実稼働モードのオンプレミスサイトの場合は、次のMagentoCLI コマンドを使用して、非同期インデックス作成を有効にします。
 
   ```php
   php bin/magento config:set dev/grid/async_indexing 1

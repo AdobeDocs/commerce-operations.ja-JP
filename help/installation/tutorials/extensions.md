@@ -1,13 +1,13 @@
 ---
 title: 拡張機能のインストール
 description: 次の手順に従って、Adobe CommerceまたはMagento Open Source拡張機能をインストールします。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
 
 ---
-
 
 # 拡張機能のインストール
 
@@ -21,7 +21,7 @@ Adobe CommerceとMagento Open Sourceの動作を拡張またはカスタマイ�
 
 >[!TIP]
 >
->このトピックでは、コマンドラインを使用して、Commerce Marketplaceから購入した拡張機能をインストールする方法について説明します。 同じ手順で _任意_ 拡張必要なのは、拡張機能のコンポーザーの名前とバージョンだけです。 検索するには、拡張機能の `composer.json` ファイルを作成し、 `"name"` および `"version"`.
+>このトピックでは、コマンドラインを使用して、Commerce Marketplaceから購入した拡張機能をインストールする方法について説明します。 同じ手順を使用して、 _任意_ 拡張機能。必要なのは、拡張機能のコンポーザー名とバージョンだけです。 検索するには、拡張機能の `composer.json` ファイルを作成し、 `"name"` および `"version"`.
 
 インストール前に、次の作業を行うことができます。
 
@@ -35,7 +35,7 @@ Adobe CommerceとMagento Open Sourceの動作を拡張またはカスタマイ�
 拡張機能をインストールするには、次の操作をおこなう必要があります。
 
 1. 拡張機能は、Commerce Marketplaceまたは他の拡張機能開発者から取得します。
-1. 拡張機能をCommerce Marketplaceからインストールする場合は、必ず `repo.magento.com` リポジトリが `composer.json` ファイル：
+1. 拡張機能をCommerce Marketplaceからインストールする場合は、必ず `repo.magento.com` リポジトリが次の場所に存在します： `composer.json` ファイル：
 
    ```bash
    "repositories": [
@@ -53,17 +53,17 @@ Adobe CommerceとMagento Open Sourceの動作を拡張またはカスタマイ�
 
 ## 拡張機能コンポーザーの名前とバージョンの取得
 
-拡張機能のコンポーザー名とバージョンが既にわかっている場合は、この手順をスキップして、次に進んでください。 [の更新 `composer.json` ファイル](#update-your-composer-file).
+拡張機能のコンポーザー名とバージョンが既にわかっている場合は、この手順をスキップして、次に進んでください。 [を更新します。 `composer.json` ファイル](#update-your-composer-file).
 
 拡張機能から拡張機能のコンポーザー名とバージョンを取得するには、次のCommerce Marketplaceを実行します。
 
 1. にログインします。 [Commerce Marketplace](https://marketplace.magento.com) 拡張機能の購入に使用したユーザー名とパスワード。
 
-1. 右上隅で、 **名前** > **マイプロファイル**.
+1. 右上隅で、 **お客様の名前** > **マイプロファイル**.
 
    ![Marketplace アカウントへのアクセス](../../assets/installation/marketplace-my-profile.png)
 
-1. クリック **購入**.
+1. クリック **マイ購入**.
 
    ![Marketplace の購入履歴](../../assets/installation//marketplace-my-purchases.png)
 
@@ -79,19 +79,19 @@ Adobe CommerceとMagento Open Sourceの動作を拡張またはカスタマイ�
 
 拡張機能の名前とバージョンを `composer.json` ファイル：
 
-1. プロジェクトディレクトリに移動し、 `composer.json` ファイル。
+1. プロジェクトディレクトリに移動し、を更新します。 `composer.json` ファイル。
 
    ```bash
    composer require <component-name>:<version>
    ```
 
-   例：
+   以下に例を挙げます。
 
    ```bash
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. を入力します。 [認証キー](../prerequisites/authentication-keys.md). 公開鍵はユーザ名です。秘密鍵はパスワードです。
+1. を入力します。 [認証キー](../prerequisites/authentication-keys.md). 公開鍵はユーザー名、秘密鍵はパスワードです。
 
 1. Composer がプロジェクトの依存関係の更新を完了するのを待ち、エラーがないことを確認します。
 
@@ -117,7 +117,7 @@ bin/magento module:status J2t_Payplug
 Module is disabled
 ```
 
-拡張機能の名前の形式はです `<VendorName>_<ComponentName>`;これは、コンポーザー名とは異なる形式です。 この形式を使用して、拡張機能を有効にします。 拡張機能名が不明な場合は、次のコマンドを実行します。
+拡張機能の名前の形式はです `<VendorName>_<ComponentName>`。これは、コンポーザー名とは異なる形式です。 この形式を使用して、拡張機能を有効にします。 拡張機能名が不明な場合は、次のコマンドを実行します。
 
 ```bash
 bin/magento module:status
@@ -127,7 +127,7 @@ bin/magento module:status
 
 ## 拡張機能の有効化
 
-生成された静的ビューファイルを最初にクリアしない限り、一部の拡張子は正しく機能しません。 以下を使用： `--clear-static-content` 拡張機能を有効にしているときに静的表示ファイルをクリアするオプション。
+生成された静的ビューファイルを最初にクリアしない限り、一部の拡張子は正しく機能しません。 以下を使用します。 `--clear-static-content` 拡張機能を有効にしているときに静的表示ファイルをクリアするオプション。
 
 1. 拡張機能を有効にし、静的表示ファイルをクリアします。
 
@@ -153,7 +153,7 @@ bin/magento module:status
    bin/magento setup:upgrade
    ```
 
-1. プロジェクトを再コンパイルします。実稼働モードでは、「実稼働コンパイルコマンドを再実行してください」というMagentoが表示される場合があります。 開発者モードでコンパイルコマンドを実行するよう求めるプロンプトは表示されません。
+1. プロジェクトを再コンパイルします：実稼働モードでは、「実稼働コンパイルコマンドを再実行してください」というメッセージが表示される場合があります。 開発者モードでコンパイルコマンドを実行するよう求めるプロンプトは表示されません。
 
    ```bash
    bin/magento setup:di:compile

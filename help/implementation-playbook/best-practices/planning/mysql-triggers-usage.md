@@ -28,7 +28,7 @@ ht-degree: 0%
 
 トリガーは、MySQL が事前にコンパイルしないことを意味するコードとして解釈されます。
 
-クエリのトランザクションスペースに接続すると、トリガーは、テーブルで実行される各クエリに対して、パーサとインタプリタにオーバーヘッドを追加します。 トリガーは、元のクエリと同じトランザクション領域を共有し、これらのクエリがテーブルのロックを競合する間、トリガーは別のテーブルのロックを個別に競合します。
+クエリのトランザクションスペースに接続すると、トリガーは、テーブルで実行される各クエリに対して、パーサとインタプリタにオーバーヘッドを追加します。 トリガーは、元のクエリと同じトランザクション領域を共有し、これらのクエリがテーブルのロックを競合しますが、トリガーは別のテーブルのロックを個別に競合します。
 
 多数のトリガーを使用する場合、この追加のオーバーヘッドがサイトのパフォーマンスに悪影響を与える可能性があります。
 
@@ -42,9 +42,9 @@ ht-degree: 0%
 
 - トリガーの実行時に一部のデータを書き込むカスタムトリガーがある場合は、このロジックを移動して、監査テーブルに直接書き込みます。 例えば、アプリケーションコードにクエリを追加して、トリガーの作成対象のクエリの後にクエリを追加します。
 - 既存のカスタムトリガーを確認し、それらを削除して、アプリケーション側からテーブルに直接書き込むことを検討します。 を使用して、データベース内の既存のトリガーを確認します。 [`SHOW TRIGGERS` SQL 文](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
-- その他のサポート、質問、懸念事項の場合 [Adobe Commerceサポートチケットを送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
+- その他のサポート、質問、または懸念事項の場合 [Adobe Commerceサポートチケットを送信する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
 
 ## 追加情報
 
 - [MySQL の前提条件](../../../installation/prerequisites/database/mysql.md)
-- [クラウドインフラストラクチャ上のAdobe Commerceのデータベースのベストプラクティス](database-on-cloud.md)
+- [クラウドインフラストラクチャ上のAdobe Commerceに関するデータベースのベストプラクティス](database-on-cloud.md)

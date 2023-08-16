@@ -21,9 +21,9 @@ ht-degree: 0%
 >
 >Commerce CLI を使用して、 [データベース・ログの有効化と無効化](../cli/enable-logging.md#database-logging).
 
-のデフォルト設定を変更するには `\Magento\Framework\DB\Logger\LoggerProxy`、 `app/etc/di.xml`.
+のデフォルト設定を変更するには `\Magento\Framework\DB\Logger\LoggerProxy`を編集し、 `app/etc/di.xml`.
 
-まず、 `loggerAlias` および `logCallStack` 引数：
+まず、 `loggerAlias` および `logCallStack` 引数の宛先：
 
 ```xml
 <type name="Magento\Framework\DB\Logger\LoggerProxy">

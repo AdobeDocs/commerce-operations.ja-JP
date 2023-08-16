@@ -1,13 +1,13 @@
 ---
 title: モジュールの有効化または無効化
 description: 以下の手順に従って、Adobe CommerceまたはMagento Open Sourceモジュールを管理します。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 0%
 
 ---
-
 
 # モジュールの有効化または無効化
 
@@ -43,14 +43,14 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 
 * `<module-list>` は、有効または無効にするモジュールのスペース区切りリストです。 モジュール名に特殊文字が含まれる場合は、名前を一重引用符または二重引用符で囲みます。
 * `--all` ：すべてのモジュールを同時に有効または無効にします。
-* `-f` または `--force` 依存関係に関わらず、モジュールを強制的に有効または無効にする。 このオプションを使用する前に、 [モジュールの有効化と無効化について](#about-enabling-and-disabling-modules).
+* `-f` または `--force` 依存関係に関わらず、モジュールを強制的に有効または無効にする場合。 このオプションを使用する前に、 [モジュールの有効化と無効化について](#about-enabling-and-disabling-modules).
 * `-c` または `--clear-static-content` クリーン [生成された静的ビューファイル](../../configuration/cli/static-view-file-deployment.md).
 
-   静的表示ファイルをクリアしないと、同じ名前のファイルが複数存在し、すべてをクリアしない場合、問題が発生する可能性があります。
+  静的表示ファイルをクリアしないと、同じ名前のファイルが複数存在し、すべてをクリアしない場合、問題が発生する可能性があります。
 
-   つまり、 [静的ファイルフォールバック](../../configuration/cli/static-view-file-deployment.md) ルール：静的ファイルをクリアせず、名前を付けた複数のファイルが存在する場合 `logo.svg` 異なる場合は、フォールバックによって誤ったファイルが表示される可能性があります。
+  つまり、 [静的ファイルフォールバック](../../configuration/cli/static-view-file-deployment.md) ルール：静的ファイルをクリアせず、名前を付けた複数のファイルが存在する場合 `logo.svg` 異なる場合は、フォールバックによって誤ったファイルが表示される可能性があります。
 
-例えば、 `Magento_Weee` モジュール：
+例えば、 `Magento_Weee` モジュール、次を入力します。
 
 ```bash
 bin/magento module:disable Magento_Weee
@@ -74,7 +74,7 @@ bin/magento cache:clean
 
 ## モジュールの有効化と無効化について
 
-Adobe CommerceとMagento Open Sourceでは、現在使用可能なモジュールを有効または無効にできます。つまり、Adobeが提供するモジュール、または現在使用可能な任意のサードパーティモジュールです。
+Adobe CommerceとMagento Open Sourceでは、現在使用可能なモジュール (Adobeが提供するモジュール、または現在使用可能なサードパーティのモジュール ) を有効または無効にすることができます。
 
 特定のモジュールは他のモジュールに依存しています。その場合、他のモジュールに依存しているので、モジュールを有効または無効にできない可能性があります。
 

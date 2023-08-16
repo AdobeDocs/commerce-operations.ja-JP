@@ -1,13 +1,13 @@
 ---
 title: モジュールのアンインストール
 description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceモジュールをアンインストールします。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 0%
 
 ---
-
 
 # モジュールのアンインストール
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このコマンドは、 `composer.json` ファイル。 次のモジュールをアンインストールした場合： _not_ で定義 `composer.json` このコマンドは、依存関係をチェックせずにモジュールをアンインストールします。 このコマンドは実行します _not_&#x200B;ただし、ファイルシステムからモジュールのコードを削除します。 モジュールのコードを削除するには、ファイルシステムツールを使用する必要があります ( 例： `rm -rf <path to module>`) をクリックします。 別の方法として、次の操作を実行できます。 [無効](manage-modules.md) 非コンポーザーモジュール。
+>このコマンドは、 `composer.json` ファイル。 次のモジュールをアンインストールした場合： _not_ で定義済み `composer.json` このコマンドは、依存関係をチェックせずにモジュールをアンインストールします。 このコマンドは実行します _not_&#x200B;ただし、ファイルシステムからモジュールのコードを削除します。 モジュールのコードを削除するには、ファイルシステムツールを使用する必要があります ( 例： `rm -rf <path to module>`) をクリックします。 別の方法として、次の操作を実行できます。 [無効](manage-modules.md) 非コンポーザーモジュール。
 
 コマンドの使用：
 
@@ -26,7 +26,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
   {ModuleName} ... {ModuleName}
 ```
 
-ここで、 `{ModuleName}` モジュール名を `<VendorName>_<ModuleName>` 形式 例えば、顧客モジュール名は `Magento_Customer`. モジュール名のリストを取得するには、 `magento module:status`
+ここで、 `{ModuleName}` でモジュール名を指定します。 `<VendorName>_<ModuleName>` 形式を使用します。 例えば、顧客モジュール名は `Magento_Customer`. モジュール名のリストを取得するには、次のように入力します。 `magento module:status`
 
 module uninstall コマンドは、次のタスクを実行します。
 
@@ -44,25 +44,25 @@ module uninstall コマンドは、次のタスクを実行します。
 
    | オプション | 意味 | バックアップファイルの名前と場所 |
    | ---------------- | -------------------------------------------------------------------------------- | -------------------------------------------- |
-   | `--backup-code` | ファイル・システムのバックアップ ( `var` および `pub/static` ディレクトリ )。 | `var/backups/<timestamp>_filesystem.tgz` |
+   | `--backup-code` | ファイル・システムのバックアップ ( `var` および `pub/static` ディレクトリ ) を参照してください。 | `var/backups/<timestamp>_filesystem.tgz` |
    | `--backup-media` | pub/media ディレクトリをバックアップします。 | `var/backups/<timestamp>_filesystem_media.tgz` |
    | `--backup-db` | データベースをバックアップします。 | `var/backups/<timestamp>_db.gz` |
 
-1. If `--remove-data` が指定されている場合、モジュールの `Uninstall` クラス。
+1. 次の場合 `--remove-data` が指定されている場合は、モジュールの `Uninstall` クラス。
 
-   指定したモジュールごとに、 `uninstall` 法 `Uninstall` クラス。 このクラスは、 [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
+   指定したモジュールごとに、 `uninstall` その方法 `Uninstall` クラス。 このクラスは、 [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
 
 1. 指定したモジュールを `setup_module` データベーステーブル。
-1. 指定したモジュールを [デプロイメント設定](../../configuration/reference/deployment-files.md).
+1. 指定したモジュールを、 [デプロイメント設定](../../configuration/reference/deployment-files.md).
 1. を使用してコードベースからコードを削除します。 `composer remove`.
 
    >[!NOTE]
    >
-   >モジュールのアンインストール _常に_ 実行 `composer remove`. この `--remove-data` オプションは、モジュールの `Uninstall` クラス。
+   >モジュールのアンインストール _常に_ 実行 `composer remove`. The `--remove-data` オプションは、モジュールの `Uninstall` クラス。
 
 1. キャッシュをクリーンします。
 1. 生成されたクラスを更新します。
-1. If `--clear-static-content` が指定され、クリーン [生成された静的ビューファイル](../../configuration/cli/static-view-file-deployment.md).
+1. 次の場合 `--clear-static-content` が指定され、クリーン [生成された静的ビューファイル](../../configuration/cli/static-view-file-deployment.md).
 1. メンテナンスモードからストアを削除します。
 
 例えば、別のモジュールが依存するモジュールをアンインストールしようとすると、次のメッセージが表示されます。
@@ -73,7 +73,7 @@ magento module:uninstall Magento_SampleMinimal
         Magento_SampleModifyContent
 ```
 
-その代わりに、モジュールファイルシステムのバックアップ後に両方のモジュールをアンインストールする方法があります。 `pub/media` ファイルとデータベース・テーブル ( _not_ モジュールのデータベーススキーマまたはデータの削除：
+その代わりに、モジュールファイルシステムのバックアップ後に両方のモジュールをアンインストールする方法があります。 `pub/media` ファイルとデータベース・テーブル ( ただし _not_ モジュールのデータベーススキーマまたはデータの削除：
 
 ```bash
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db
@@ -116,7 +116,7 @@ Disabling maintenance mode
 
 >[!NOTE]
 >
->別のモジュールに依存するモジュールをアンインストールしようとすると、エラーが表示されます。 その場合、1 つのモジュールをアンインストールすることはできません。両方をアンインストールする必要があります。
+>別のモジュールに依存するモジュールをアンインストールしようとすると、エラーが表示されます。 この場合、1 つのモジュールをアンインストールすることはできません。両方をアンインストールする必要があります。
 
 ## ファイル・システム、データベース、メディア・ファイルのロールバック
 
@@ -140,11 +140,11 @@ bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<file
 
 1. ストアをメンテナンスモードにします。
 1. バックアップファイル名を検証します。
-1. コードのロールバックファイルを指定する場合：
+1. コード・ロールバック・ファイルを指定する場合：
 
    a.ロールバック先の場所が書き込み可能であることを確認します ( `pub/static` および `var` フォルダーは無視されます )。
 
-   b.アプリケーションのインストールディレクトリの下にあるすべてのファイルとディレクトリを削除します。
+   b.アプリケーションインストールディレクトリの下にあるすべてのファイルとディレクトリを削除します。
 
    c.アーカイブファイルを宛先の場所に抽出します。
 
@@ -152,13 +152,13 @@ bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<file
 
    a.データベース全体を破棄します。
 
-   b.データベースのバックアップを使用してデータベースをリストアします。
+   b.データベースのバックアップを使用してデータベースを復元します。
 
 1. メディアのロールバック・ファイルを指定する場合：
 
    a.ロールバック先の場所が書き込み可能であることを確認します。
 
-   b.以下のすべてのファイルとディレクトリを削除します。 `pub/media`
+   b.の下のすべてのファイルとディレクトリを削除します。 `pub/media`
 
    c.アーカイブファイルを宛先の場所に抽出します。
 
@@ -168,26 +168,26 @@ bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<file
 
 * バックアップの一覧を表示する：
 
-   ```bash
-   magento info:backups:list
-   ```
+  ```bash
+  magento info:backups:list
+  ```
 
 * 次の名前のファイルバックアップを復元します。 `1433876616_filesystem.tgz`:
 
-   ```bash
-   magento setup:rollback --code-file="1433876616_filesystem.tgz"
-   ```
+  ```bash
+  magento setup:rollback --code-file="1433876616_filesystem.tgz"
+  ```
 
-   次のようなメッセージが表示されます。
+  次のようなメッセージが表示されます。
 
-   ```terminal
-   Enabling maintenance mode
-   Code rollback is starting ...
-   Code rollback filename: 1433876616_filesystem.tgz
-   Code rollback file path: /var/www/html/magento2/var/backups/1433876616_filesystem.tgz
-   [SUCCESS]: Code rollback has completed successfully.
-   Disabling maintenance mode
-   ```
+  ```terminal
+  Enabling maintenance mode
+  Code rollback is starting ...
+  Code rollback filename: 1433876616_filesystem.tgz
+  Code rollback file path: /var/www/html/magento2/var/backups/1433876616_filesystem.tgz
+  [SUCCESS]: Code rollback has completed successfully.
+  Disabling maintenance mode
+  ```
 
 >[!NOTE]
 >

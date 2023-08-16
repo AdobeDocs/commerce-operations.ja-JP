@@ -1,19 +1,19 @@
 ---
 title: パッチの適用
 description: Adobe CommerceまたはMagento Open Sourceプロジェクトにパッチを適用する方法について説明します。
-source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
+exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
 
-
 # パッチの適用
 
-次のいずれかの方法でパッチを適用できます。
+次のいずれかの方法を使用して、パッチを適用できます。
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [コマンドライン](../patches/apply.md#command-line)
 - [コンポーザー](../patches/apply.md#composer)
 
@@ -21,12 +21,12 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->公式の品質パッチを適用するには、 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}。 カスタムパッチをデプロイする前に、必ず包括的なテストを実行してください。
+>公式の品質パッチを適用するには、 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. カスタムパッチをデプロイする前に、必ず包括的なテストを実行してください。
 
 Composer を使用してカスタムパッチを適用するには：
 
 1. コマンドラインアプリケーションを開き、プロジェクトディレクトリに移動します。
-1. を `cweagans/composer-patches` プラグイン `composer.json` ファイル。
+1. 次を追加： `cweagans/composer-patches` プラグインを `composer.json` ファイル。
 
    ```bash
    composer require cweagans/composer-patches
@@ -34,7 +34,7 @@ Composer を使用してカスタムパッチを適用するには：
 
 1. を編集します。 `composer.json` ファイルを開き、次のセクションを追加して指定します。
    - **モジュール：** *\&quot;magento/module-payment\&quot;*
-   - **タイトル：** *\&quot;MAGETWO-56934:Authorize.net での注文時に、無効なクレジットカードを使用するとチェックアウトページがフリーズする\&quot;*
+   - **タイトル：** *\&quot;MAGETWO-56934: Authorize.netを無効なクレジットカードで注文すると、チェックアウトページがフリーズする\&quot;*
    - **パッチのパス：** *\&quot;patches/composer/github-issue-6474.diff\&quot;*
 
    例：
@@ -52,7 +52,7 @@ Composer を使用してカスタムパッチを適用するには：
 
    パッチが複数のモジュールに影響する場合は、複数のモジュールをターゲットとする複数のパッチファイルを作成する必要があります。
 
-1. パッチを適用します。 以下を使用： `-v` オプションを使用する必要があります。
+1. パッチを適用します。 以下を使用します。 `-v` オプションを使用する必要があります。
 
    ```bash
    composer -v install
@@ -80,7 +80,7 @@ Composer を使用してカスタムパッチを適用するには：
 
    >[!NOTE]
    >
-   >コマンドラインに次のように表示される場合： `File to patch:`を指定した場合、パスが正しいと思われる場合でも、目的のファイルが見つからないことを意味します。 コマンドラインターミナルに表示されるボックスで、最初の行にパッチを適用するファイルが表示されます。 ファイルパスをコピーし、 `File to patch:` プロンプトと押します `Enter` そして、パッチが完了するはずです。
+   >コマンドラインに次のように表示される場合： `File to patch:`を指定した場合、パスが正しいと思われる場合でも、目的のファイルが見つからないことを意味します。 コマンドラインターミナルに表示されるボックスで、最初の行にパッチを適用するファイルが表示されます。 ファイルパスをコピーし、 `File to patch:` プロンプトして押す `Enter` そして、パッチが完了するはずです。
 
 1. 変更を反映するには、以下の管理者でキャッシュを更新します。 **システム** /ツール/ **キャッシュ管理**.
 

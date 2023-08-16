@@ -2,11 +2,11 @@
 title: データベース・プロファイラの構成
 description: データベース・プロファイラの出力を構成する方法の例を参照してください。
 feature: Configuration, Storage
-badge: label="Contributed by Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
+badge: label="寄稿：Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="アティシュ・ゴスワミ"
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 コマースデータベースプロファイラは、各クエリの時間や適用されたパラメータを含め、ページに実装されたすべてのクエリを表示します。
 
-## 手順 1:デプロイメント設定を変更する
+## 手順 1：デプロイメント設定を変更する
 
 変更 `<magento_root>/app/etc/env.php` 次の参照を [データベース・プロファイラ・クラス](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
 
@@ -53,17 +53,17 @@ ht-degree: 0%
   ),
 ```
 
-## 手順 2:出力の設定
+## 手順 2：出力の設定
 
-コマースアプリケーションのブートストラップファイルで出力を設定する。これは、 `<magento_root>/pub/index.php` または、Web サーバーの仮想ホスト設定に配置できます。
+コマースアプリケーションのブートストラップファイルで出力を設定します。次の可能性があります。 `<magento_root>/pub/index.php` または、Web サーバーの仮想ホスト設定に配置できます。
 
 次の例では、3 列のテーブルの結果を表示します。
 
 - 合計時間（ページに対するすべてのクエリを実行する合計時間を表示します）
-- SQL ( すべての SQL クエリを表示します。行ヘッダーには、クエリの数が表示されます )
+- SQL（すべての SQL クエリを表示し、行ヘッダーにクエリの数を表示）
 - クエリーパラメーター（各 SQL クエリーのパラメーターを表示）
 
-出力を設定するには、 `$bootstrap->run($app);` ブートストラップファイルの行：
+出力を設定するには、 `$bootstrap->run($app);` ブートストラップファイルの行を次に示します。
 
 ```php?start_inline=1
 /** @var \Magento\Framework\App\ResourceConnection $res */
@@ -87,7 +87,7 @@ foreach ($profiler->getQueryProfiles() as $query) {
 echo "</table>";
 ```
 
-## 手順 3:結果を表示
+## 手順 3：結果の表示
 
 ストアフロントまたは管理者の任意のページに移動して、結果を表示します。 次に例を示します。
 

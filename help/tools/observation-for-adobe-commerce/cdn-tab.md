@@ -1,5 +1,5 @@
 ---
-title: この [!UICONTROL CDN] タブ
+title: The [!UICONTROL CDN] タブ
 description: 詳しくは、 [!UICONTROL CDN] タブ [!DNL Observation for Adobe Commerce].
 exl-id: db22bbca-2033-4e9a-8799-b47d84bdd720
 feature: Configuration, Observability
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# この [!UICONTROL CDN] タブ
+# The [!UICONTROL CDN] タブ
 
 このタブには、 [!DNL content delivery network (CDN)]. Adobe Commerce Cloudの場合、これは [!DNL Fastly] サービス。
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ![ヒット率](../../assets/tools/observation-for-adobe-commerce/cdn-tab-1.png)
 
-この **[!UICONTROL HIT rate]** frame は、 [!UICONTROL HITS] 最後の瞬間に これは、キャッシュが成功したことを示します。 右側の矢印は、1 週間前の同じ時間の上または下の割合を表示します。
+The **[!UICONTROL HIT rate]** frame は、次の結果に発生したキャッシュ可能なリクエストの数を示します。 [!UICONTROL HITS] 最後の瞬間に これは、キャッシュが成功したことを示します。 右側の矢印は、1 週間前の同じ時間の上または下の割合を表示します。
 
 ## [!UICONTROL HIT Processing]
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ![エラーの割合](../../assets/tools/observation-for-adobe-commerce/cdn-tab-6.png)
 
-この **[!UICONTROL Error Percentage]** ボックスには、リクエストのエラー率の値が表示され、1 週間前の同じ時間に対する相対的な増減が表示されます。
+The **[!UICONTROL Error Percentage]** ボックスには、リクエストのエラー率の値が表示され、1 週間前の同じ時間に対する相対的な増減が表示されます。
 
 ## [!UICONTROL Total Requests]
 
@@ -86,46 +86,46 @@ ht-degree: 0%
 
 ![上位 5 件の URL（5xx または 3xx ステータスコード）](../../assets/tools/observation-for-adobe-commerce/cdn-tab-15.gif)
 
-この **[!UICONTROL Top 5 URLs]** 「 」には、5xx または 3xx エラー応答が発生した上位 5 件の URL が表示されます。 スペース上の制約があるので、URL の上にマウスを移動して、その URL に関連付けられている特定のエラーコードを確認する必要があります。 （上の図の赤いボックスの例）
+The **[!UICONTROL Top 5 URLs]** 「 」には、5xx または 3xx エラー応答が発生した上位 5 件の URL が表示されます。 スペース上の制約があるので、URL の上にマウスを移動して、その URL に関連付けられている特定のエラーコードを確認する必要があります。 （上の図の赤いボックスの例）
 
 ## [!UICONTROL Top 25 URLs (200 status)]
 
 ![上位 25 件の URL （200 ステータス）](../../assets/tools/observation-for-adobe-commerce/cdn-tab-16.gif)
 
-この **[!UICONTROL Top 25 URLs]** frame は、選択した期間にカウント別に 200 ステータスを返した URL を表示します。
+The **[!UICONTROL Top 25 URLs]** frame は、選択した期間にカウント別に 200 ステータスを返した URL を表示します。
 
 ## [!UICONTROL Duration by Response Status]
 
 ![応答ステータス別の期間](../../assets/tools/observation-for-adobe-commerce/cdn-tab-17.png)
 
-この **[!UICONTROL Duration by Response Status]** グラフには、選択した期間のエラー応答をエラーステータスコードで切り取った数別に表示します。
+The **[!UICONTROL Duration by Response Status]** グラフには、選択した期間のエラー応答をエラーステータスコードで切り取った数別に表示します。
 
 ## [!UICONTROL Duration by Response Status, top 25 urls]
 
 ![応答ステータス別の期間、上位 25 個の URL](../../assets/tools/observation-for-adobe-commerce/cdn-tab-18.gif)
 
-この **[!UICONTROL Duration by Response Status, top 25 URLs]** グラフには、応答時間別の上位 25 件の URL が秒単位で表示されます。 パス全体を表示するには、URL の上にマウスを置く必要が生じる場合があります。 また、1 つ以外の URL をすべて削除するには、その URL をクリックします。 その後、他の URL を個別にクリックして戻すことができます。 個々の URL を削除する場合は、キーを押したまま各 URL をクリックして、グラフから削除します。
+The **[!UICONTROL Duration by Response Status, top 25 URLs]** グラフには、応答時間別の上位 25 件の URL が秒単位で表示されます。 パス全体を表示するには、URL の上にマウスを置く必要が生じる場合があります。 また、1 つ以外の URL をすべて削除するには、その URL をクリックします。 その後、他の URL を個別にクリックして戻すことができます。 個々の URL を削除する場合は、キーを押したまま各 URL をクリックして、グラフから削除します。
 
 ## [!UICONTROL Duration by Response Status, top 25 non-200 status]
 
 ![応答ステータス別の期間、上位 25 件の非 200 件のステータス](../../assets/tools/observation-for-adobe-commerce/cdn-tab-19.gif)
 
-この **[!UICONTROL Duration by Response Status, top 25 non-200 status]** グラフは最後のグラフに似ていますが、フォーカスが 200 以外のステータスコードまたはエラーステータスコードにある点が異なります。 エラーコードと URL が表示されます。 パス全体を表示するには、URL の上にマウスを置く必要が生じる場合があります。 また、1 つ以外の URL をすべて削除するには、その URL をクリックします。 その後、他の URL を個別にクリックして戻すことができます。 個々の URL を削除する場合は、キーを押したまま各 URL をクリックして、グラフから削除します。
+The **[!UICONTROL Duration by Response Status, top 25 non-200 status]** グラフは最後のグラフに似ていますが、フォーカスが 200 以外のステータスコードまたはエラーステータスコードにある点が異なります。 エラーコードと URL が表示されます。 パス全体を表示するには、URL の上にマウスを置く必要が生じる場合があります。 また、1 つ以外の URL をすべて削除するには、その URL をクリックします。 その後、他の URL を個別にクリックして戻すことができます。 個々の URL を削除する場合は、キーを押したまま各 URL をクリックして、グラフから削除します。
 
 ## [!UICONTROL Error Count by POP timeline]
 
 ![POP タイムライン別のエラー数](../../assets/tools/observation-for-adobe-commerce/cdn-tab-20.png)
 
-この **[!UICONTROL Error Count by POP timeline]** グラフには、選択したタイムフレームタイムラインに沿って、エラーコードで切り子にされたエラーステータスの数が表示されます。
+The **[!UICONTROL Error Count by POP timeline]** グラフには、選択したタイムフレームタイムラインに沿って、エラーコードで切り子にされたエラーステータスの数が表示されます。
 
 ## [!UICONTROL Duration by Response status, top 25 client IP, non-200 status]
 
 ![応答ステータス別の期間、上位 25 件のクライアント IP、非 200 件のステータス](../../assets/tools/observation-for-adobe-commerce/cdn-tab-21.gif)
 
-この **[!UICONTROL Duration by Response status, top 25 client IP, non 200 status]** グラフには、選択した期間内でステータスエラーコードが発生した IP アドレスの平均期間が表示されます。
+The **[!UICONTROL Duration by Response status, top 25 client IP, non 200 status]** グラフには、選択した期間内でステータスエラーコードが発生した IP アドレスの平均期間が表示されます。
 
 ## [!UICONTROL IP Frequency]
 
 ![IP 頻度](../../assets/tools/observation-for-adobe-commerce/cdn-tab-22.jpeg)
 
-この **[!UICONTROL IP Frequency]** フレームは、各 IP に対するステータス（「MISS」および「PASS」）を [!DNL Fastly] ログ。 これらのステータスの Web リクエストは、元のサーバーに到達し、サーバーに読み込みが追加されます。 頻度の上位 20 件のアドレスが表示されます。 このフレームは、Web サイト上の IP 攻撃や大量の負荷の発生元を検出するために使用できます。 このグラフは「概要」タブにも表示され、詳細を [!DNL Fastly] このタブに表示されるログ情報。
+The **[!UICONTROL IP Frequency]** フレームは、各 IP に対するステータス（「MISS」および「PASS」）を [!DNL Fastly] ログ。 これらのステータスの Web リクエストは、元のサーバーに到達し、サーバーに読み込みが追加されます。 頻度の上位 20 件のアドレスが表示されます。 このフレームは、Web サイト上の IP 攻撃や大量の負荷の発生元を検出するために使用できます。 このグラフは「概要」タブにも表示され、詳細を [!DNL Fastly] このタブに表示されるログ情報。

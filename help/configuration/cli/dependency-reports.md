@@ -1,13 +1,13 @@
 ---
 title: 依存関係レポート
 description: モジュール、循環、フレームワークの依存関係の合計を示すレポートを作成します。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
 
 ---
-
 
 # 依存関係レポート
 
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 次のタイプのレポートを実行できます。
 
-- **モジュールの依存関係**:モジュール間の依存関係の総数と、依存関係がハードかソフトかを示します。
-- **循環依存関係**:依存関係チェーンの合計数と、各モジュールの循環依存関係の数とリストを表示します。
-- **フレームワークの依存関係**:モジュール別のコマースフレームワークへの依存関係の合計数を表示します（各ライブラリのフレームワークエントリの合計数を含む）。
+- **モジュールの依存関係**：モジュール間の依存関係の合計数と、依存関係がハードかソフトかを表示します。
+- **循環依存関係**：依存関係チェーンの合計数、および各モジュールの循環依存関係の数とリストを表示します。
+- **フレームワークの依存関係**：モジュール別のコマースフレームワークへの依存関係の合計数を表示します（各ライブラリのフレームワークエントリの合計数を含む）。
 
 コメント内の依存関係も依存関係です。
 
@@ -31,7 +31,7 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 
 次の表で、このコマンドのオプション、パラメータ、値について説明します。
 
-| パラメータ | 値 | 必須？ |
+| パラメーター | 値 | 必須？ |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------- | --------- |
 | `show-modules` | モジュールの依存関係レポート。 | はい |
 | `show-modules-circular` | 循環依存関係レポート。 | はい |
@@ -47,7 +47,7 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 | `bin/magento info:dependencies:show-modules-circular` | `modules-circular-dependencies.csv` |
 | `bin/magento info:dependencies:show-framework` | `framework-dependencies.csv` |
 
-### サンプルモジュールの依存関係レポート
+### モジュールの依存関係レポートのサンプル
 
 次に、サンプルモジュールの依存関係レポートの出力の一部を示します。
 

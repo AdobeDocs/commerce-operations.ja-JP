@@ -14,9 +14,9 @@ ht-degree: 0%
 
 静的ビューファイルを展開する場合、使用可能な 3 つの方法のいずれかを選択できます。 それぞれが、様々な使用例に最適なデプロイメント結果を提供します。
 
-- [標準](#standard-strategy):通常のデプロイメントプロセス。
-- [クイック](#quick-strategy) (_デフォルト_):複数のロケールのファイルがデプロイされる場合に、デプロイに必要な時間を最小限に抑えます。
-- [コンパクト](#compact-strategy):パブリッシュされたビューファイルで使用される領域を最小限に抑えます。
+- [標準](#standard-strategy)：通常のデプロイメントプロセス。
+- [クイック](#quick-strategy) (_デフォルト_)：複数のロケールのファイルがデプロイされる場合に、デプロイに必要な時間を最小限に抑えます。
+- [コンパクト](#compact-strategy)：パブリッシュされたビューファイルで使用される領域を最小限に抑えます。
 
 次の節では、各戦略の実装の詳細と機能について説明します。
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 コンパクトな方法では、類似のファイルをに保存することで、ファイルの重複を防ぎます。 `base` サブディレクトリ。
 
-最も最適化された結果を得るには、考えられる類似性用の 3 つのスコープが割り当てられます。領域、テーマおよびロケール。 この `base` これらのスコープのすべての組み合わせに対してサブディレクトリが作成されます。
+最も最適化された結果を得るために、可能な類似性用の 3 つのスコープ（領域、テーマ、ロケール）が割り当てられます。 The `base` これらのスコープのすべての組み合わせに対してサブディレクトリが作成されます。
 
 ファイルは、次のパターンに従って、これらのサブディレクトリにデプロイされます。
 
@@ -66,9 +66,9 @@ ht-degree: 0%
 - `map.php`
 - `requirejs-map.js`
 
-この `map.php` ファイルは次の場所で使用されています： [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) をクリックして正しい URL を作成します。
+The `map.php` ファイルは次の場所で使用されています： [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) をクリックして正しい URL を作成します。
 
-この `requirejs-map.js` が `baseUrlResolver` RequireJS 用のプラグインです。
+The `requirejs-map.js` が `baseUrlResolver` RequireJS 用のプラグインです。
 
 の例 `map.php`:
 

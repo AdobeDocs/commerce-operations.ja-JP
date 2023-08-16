@@ -14,7 +14,7 @@ ht-degree: 0%
 
 この節では、以下の管理で使用できる変数名と設定パスを示します。 **ストア** /設定/ **設定** > **顧客**.
 
-この [`magento app:config:dump` command](../cli/export-configuration.md) は、これらの値を共有設定ファイルに書き込みます。 `app/etc/config.php`（ソース管理下に置く必要があります） オプションで設定を上書きしたり、機密設定を設定したりするには、 [環境変数を使用して設定を上書きする](override-config-settings.md#environment-variables). このトピックでは、 _not_ リスト [機密性の高いシステム固有の値](config-reference-sens.md).
+The [`magento app:config:dump` command](../cli/export-configuration.md) は、これらの値を共有設定ファイルに書き込みます。 `app/etc/config.php`（ソース管理下に置く必要があります） オプションで設定を上書きしたり、機密設定を設定したりするには、 [環境変数を使用して設定を上書きする](override-config-settings.md#environment-variables). このトピックでは、 _not_ リスト [機密性の高いシステム固有の値](config-reference-sens.md).
 
 ## ニュースレターのパス
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 | 確認メールテンプレート | `newsletter/subscription/confirm_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 成功したメール送信者 | `newsletter/subscription/success_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 成功メールテンプレート | `newsletter/subscription/success_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 配信停止メール送信者 | `newsletter/subscription/un_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| メール送信者の購読解除 | `newsletter/subscription/un_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | メールテンプレートの購読解除 | `newsletter/subscription/un_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}
@@ -95,7 +95,7 @@ ht-degree: 0%
 | フォント | `customer/captcha/font` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Forms | `customer/captcha/forms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 表示モード | `customer/captcha/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| ログイン失敗の回数 | `customer/captcha/failed_attempts_login` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| ログインに失敗した回数 | `customer/captcha/failed_attempts_login` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | CAPTCHA タイムアウト（分） | `customer/captcha/timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | シンボル数 | `customer/captcha/length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | CAPTCHA で使用されるシンボル | `customer/captcha/symbols` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -115,7 +115,7 @@ ht-degree: 0%
 | メール送信者 | `wishlist/email/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | メールテンプレート | `wishlist/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 送信可能な最大メール数 | `wishlist/email/number_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| メールテキストの長さ制限 | `wishlist/email/text_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| メールテキストの長さの制限 | `wishlist/email/text_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ウィッシュリストの概要を表示 | `wishlist/wishlist_link/use_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}
@@ -150,7 +150,7 @@ ht-degree: 0%
 | 最大報酬ポイントの残高 | `magento_reward/general/max_points_balance` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 有効期限が切れる報酬ポイント（日数） | `magento_reward/general/expiration_days` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 報酬ポイントの有効期限の計算 | `magento_reward/general/expiry_calculation` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
-| 報酬ポイントを自動的に返金 | `magento_reward/general/refund_automatically` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
+| 報酬ポイントを自動的に払い戻す | `magento_reward/general/refund_automatically` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 返金額から報酬ポイントを自動的に差し引く | `magento_reward/general/deduct_automatically` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | ランディングページ | `magento_reward/general/landing_page` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
 | 購入 | `magento_reward/points/order` | ![コマースのみ](/help/assets/configuration/cloud-ee.png) |
@@ -199,19 +199,19 @@ ht-degree: 0%
 
 | 名前 | 設定パス | コマースのみ？ |
 |--------------|--------------|--------------|
-| ギフトレジストリの有効化 | `magento_giftregistry/general/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| ギフトレジストリを有効にする | `magento_giftregistry/general/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最大登録者数 | `magento_giftregistry/general/max_registrant` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | メールテンプレート | `magento_giftregistry/owner_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | メール送信者 | `magento_giftregistry/owner_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | メールテンプレート | `magento_giftregistry/sharing_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | メール送信者 | `magento_giftregistry/sharing_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 最大送信メール数しきい値 | `magento_giftregistry/sharing_email/send_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 最大送信済みメール数しきい値 | `magento_giftregistry/sharing_email/send_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | メールテンプレート | `magento_giftregistry/update_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | メール送信者 | `magento_giftregistry/update_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}
 
-## 永続的な買い物かごパス
+## 永続的な買い物かごのパス
 
 これらの設定値は、 **ストア** /設定/ **設定** > **顧客** > **永続的な買い物かご**.
 

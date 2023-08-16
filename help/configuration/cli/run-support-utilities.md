@@ -1,13 +1,13 @@
 ---
 title: サポートユーティリティを実行する
 description: 組み込みのサポートユーティリティを使用して Commerce プロジェクトをトラブルシューティングします。
-source-git-commit: 2c12c6ea6e7b6ffeb07bbda17ded34e39de6656a
+exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
 
 ---
-
 
 # サポートユーティリティを実行する
 
@@ -36,7 +36,7 @@ Adobe Commerceは、これらのバックアップを使用します。 _ダン�
 
 ## コードバックアップの作成
 
-このコマンドは、コードをバックアップし、で圧縮します。 `tar.gz` 形式
+このコマンドは、コードをバックアップし、で圧縮します。 `tar.gz` 形式を使用します。
 
 {{tip-backup-command}}
 
@@ -46,7 +46,7 @@ Adobe Commerceは、これらのバックアップを使用します。 _ダン�
 bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--logs]
 ```
 
-ここで、
+次の場合：
 
 - **`--name`** ダンプファイル名を指定します（オプション）。 このパラメータを省略した場合、ダンプファイルは時刻と日付のスタンプが付きます。
 - **`-o|--output=<path>`** は、バックアップを保存するファイルシステムの絶対パスです（必須）。
@@ -62,7 +62,7 @@ bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/va
 
 ## データベースバックアップの作成
 
-このコマンドは、Commerce データベースをバックアップし、圧縮します。 `tar.gz` 形式
+このコマンドは、Commerce データベースをバックアップし、圧縮します。 `tar.gz` 形式を使用します。
 
 {{tip-backup-command}}
 
@@ -72,12 +72,12 @@ bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/va
 bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [-i|--ignore-sanitize]
 ```
 
-ここで、
+次の場合：
 
 - **`--name`** ダンプファイル名を指定します（オプション）。 このパラメータを省略した場合、ダンプファイルは時刻と日付のスタンプが付きます。
 - **`-o|--output=<path>` は、バックアップを保存するファイルシステムの絶対パスです（必須）。
 - **`-l|--logs`** には、ログファイルが含まれます（オプション）。
-- **`-i|--ignore-sanitize`** は、データが保持されていることを意味します。バックアップを作成する際に、データベースに保存されている機密データをハッシュ化する場合は、このフラグを省略します（オプション）。
+- **`-i|--ignore-sanitize`** はデータを保持することを意味します。バックアップの作成時にデータベースに保存されている機密データをハッシュ化するには、フラグを省略します（オプション）。
 
 機密データには、次のデータベーステーブルからの顧客情報が含まれます。
 
@@ -96,7 +96,7 @@ bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [
 
 コマンドが完了したら、データベースのバックアップをAdobe Commerce Support に提供します。
 
-## トラブルシューティング：ユーティリティとパスを表示
+## トラブルシューティング：ディスプレイのユーティリティとパス
 
 データコレクターとコマンドラインで必要なユーティリティへのパスを表示するコマンドを提供します。 例えば、以下のようなエラーが管理者やコマンドラインに表示される場合に、これらのコマンドを使用できます。
 

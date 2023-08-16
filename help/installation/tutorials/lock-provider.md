@@ -1,13 +1,13 @@
 ---
 title: ロックプロバイダーの設定
 description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceのデプロイメントで重複する cron ジョブや cron グループが実行されないようにします。
-source-git-commit: 46302eb8e8fd9bb7c9e7fbf990abb149bedd0ff4
+exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
 
 ---
-
 
 # ロックプロバイダーの設定
 
@@ -38,8 +38,8 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 
 | 名前 | 値 | 必須？ |
 |--- |--- |--- |
-| `--lock-provider` | プロバイダ名をロック： `db`, `zookeeper`または `file`.<br><br>デフォルトのロックプロバイダーは次のとおりです。 `db` | いいえ |
-| `--lock-db-prefix` | を使用する際にロックの競合を避けるための特定の db プレフィックス `db` プロバイダをロックします。<br><br>デフォルト値： `NULL` | いいえ |
+| `--lock-provider` | プロバイダー名をロック： `db`, `zookeeper`または `file`.<br><br>デフォルトのロックプロバイダーは次のとおりです。 `db` | いいえ |
+| `--lock-db-prefix` | を使用する際にロックの競合を避けるための特定の db プレフィックス `db` プロバイダをロックします。<br><br>デフォルト値は次のとおりです。 `NULL` | いいえ |
 | `--lock-zookeeper-host` | Zookeeper クラスタに接続するホストとポート ( `zookeeper` プロバイダをロックします。<br><br>例： `127.0.0.1:2181` | はい、 `--lock-provider=zookeeper` |
 | `--lock-zookeeper-path` | Zookeeper がロックを保存するパス。<br><br>デフォルトのパスは次のとおりです。 `/magento/locks` | いいえ |
 | `--lock-file-path` | ファイルのロックが保存されるパス。 | はい、 `--lock-provider=file` |
