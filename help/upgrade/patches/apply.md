@@ -2,9 +2,9 @@
 title: パッチの適用
 description: Adobe CommerceまたはMagento Open Sourceプロジェクトにパッチを適用する方法について説明します。
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 454f586737292341b3e6dd9a57cc92b3472c4b31
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 0%
 - [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [コマンドライン](../patches/apply.md#command-line)
 - [コンポーザー](../patches/apply.md#composer)
+
+
+>[!TIP]
+>
+>詳しくは、 [ベストプラクティス](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) Adobe Commerceの大規模な一元化されたパッチ適用の詳細は、を参照してください。
 
 ## コンポーザー
 
