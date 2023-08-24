@@ -2,10 +2,10 @@
 user-guide-title: 実装プレイブック
 user-guide-description: 成功する Adobe Commerce サイトの計画と実装の戦略について学習します。
 mini-toc-levels: 3
-source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 10%
+source-wordcount: '254'
+ht-degree: 11%
 
 ---
 
@@ -76,22 +76,14 @@ ht-degree: 10%
    - [概要](best-practices/phases.md)
    - 計画 {#planning}
       - [概要](best-practices/planning/overview.md)
+      - [カタログ管理](best-practices/planning/catalog-management.md)
       - [サイト、ストア、およびストアの表示設定](best-practices/planning/sites-stores-store-views.md)
       - [レポート設定](best-practices/planning/reporting-configuration.md)
       - [クラウドデプロイメント用のデータベース&#x200B;設定](best-practices/planning/database-on-cloud.md)
-      - [MySQL スレーブ接続設&#x200B;定](best-practices/planning/configure-mysql-slave-connection-on-cloud.md)
-      - [MySQLトリガー使用](best-practices/planning/mysql-triggers-usage.md)
+      - [MySQL 設定](best-practices/planning/mysql-configuration.md)
       - [Redis サービス設定](best-practices/planning/redis-service-configuration.md)
       - [OPcache メモリサイズ](best-practices/planning/opcache-memory-size.md)
       - [Realpath のキャッシュサイズ](best-practices/planning/realpath-cache-size.md)
-      - [カテゴリ](best-practices/planning/category-limits.md)
-      - [製品](best-practices/planning/product-sku-limits.md)
-      - [製品のバリエーション](best-practices/planning/product-variations.md)
-      - [製品オプション](best-practices/planning/product-options.md)
-      - [製品属性](best-practices/planning/product-attributes-and-options.md)
-      - [製品リストのページネーション](best-practices/planning/product-listing-pagination.md)
-      - [製品買い物かごの上限](best-practices/planning/product-cart.md)
-      - [プロモーション](best-practices/planning/product-cart-promotions.md)
       - [拡張機能](best-practices/planning/extensions.md)
       - [パートナーのエスカレーション](best-practices/planning/partner-escalation.md)
       - [支払ストレージ処理](best-practices/planning/payment-processing-storage.md)
@@ -112,10 +104,11 @@ ht-degree: 10%
       - [概要](best-practices/maintenance/overview.md)
       - [フロントエンドパフォーマンスの監査](best-practices/maintenance/frontend-performance.md)
       - [インデクサー設定](best-practices/maintenance/indexer-configuration.md)
+      - [大規模なパッチ適用](best-practices/maintenance/patching-at-scale.md)
       - [注文処理](best-practices/maintenance/order-processing-configuration.md)
+      - [データベースのパフォーマンスの問題を解決](best-practices/maintenance/resolve-database-performance-issues.md)
       - [実稼動サイトで管理者の更新をスケジュールする](best-practices/maintenance/scheduling-admin-updates-in-production.md)
       - [サービスを更新](best-practices/maintenance/update-services.md)
       - [アップグレードチェックリスト](best-practices/maintenance/upgrade-checklist.md)
-      - [データベースのパフォーマンスの問題を解決](best-practices/maintenance/resolve-database-performance-issues.md)
       - [MariaDB のアップグレードの前提条件](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 34a0a124aeacce6cc905f979cf3f18cb2405f76e
+source-git-commit: f67737451f12c17f3253582b44c2c504cbf98fb2
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '484'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 1%
 ## 新機能
 
 新しいドキュメントと既存ドキュメントの重要な更新について説明します。
+
+### 2023 年 8 月 24 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>が追加されました。 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale.html">新しいトピック</a> Adobe Commerceプロジェクトの一元化されたパッチ適用戦略の実装について</p>
+</td>
+      <td>新規トピック</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/03cb50be0cb18b6079c5c69aafc74c6099610fb0">03cb50</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2023 年 8 月 11 日
 

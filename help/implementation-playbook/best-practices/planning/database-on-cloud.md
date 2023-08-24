@@ -4,9 +4,9 @@ description: クラウドインフラストラクチャにAdobe Commerceをデ�
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Adobe Commerceアプリケーションにサードパーティの検索ツール
 - トリガーはコードとして解釈され、MySQL は事前にコンパイルしません。 クエリのトランザクションスペースに接続すると、テーブルで実行される各クエリに対して、パーサとインタプリタにオーバーヘッドが追加されます。
 - トリガーは、元のクエリと同じトランザクション領域を共有し、これらのクエリがテーブルのロックを競合しますが、トリガーは別のテーブルのロックを個別に競合します。
 
-カスタムトリガーの使用に代わる方法については、 [MySQLトリガーを効果的に使用](mysql-triggers-usage.md) をサポートナレッジベースに追加しました。
+カスタムトリガーの使用に代わる方法については、 [MySQLトリガー](mysql-configuration.md#triggers).
 
 ## アップグレード [!DNL ECE-Tools] をバージョン 2002.0.21 以降に変更 {#ece-tools-version}
 

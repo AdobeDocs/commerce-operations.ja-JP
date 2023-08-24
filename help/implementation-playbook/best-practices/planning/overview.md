@@ -4,9 +4,9 @@ description: Adobe Commerceプロジェクトの計画段階に関する実装�
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,7 @@ ht-degree: 0%
 
 - **データベース設定**
    - [クラウドデプロイメントのデータベース設定のベストプラクティス&#x200B;](database-on-cloud.md)
-   - [MySQL スレーブ接続設&#x200B;定](configure-mysql-slave-connection-on-cloud.md)
-   - [MySQLトリガー使用](mysql-triggers-usage.md)
+   - [MySQL 設&#x200B;定](mysql-configuration.md)
 
 - **サービス設定**
    - [Fastly の設定](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
@@ -57,17 +56,17 @@ ht-degree: 0%
 
 次のトピックでは、カテゴリ数、製品に対する効果的な SKU、製品のバリエーション、製品の属性とオプションなど、Adobe Commerceカタログを設定する際のパフォーマンス最適化のベストプラクティスについて説明します。
 
-- [カテゴリ設定](category-limits.md)
-- [製品設&#x200B;定](product-sku-limits.md)
-- [製品バリエーションの設定](product-variations.md)
-- [製品オプションの設定](product-options.md)
-- [製品属性の設&#x200B;定](product-attributes-and-options.md)
-- [製品リストのページネーション設定](product-listing-pagination.md)
+- [カテゴリ設定](catalog-management.md#category-limits)
+- [製品設&#x200B;定](catalog-management.md#product-sku-limits)
+- [製品バリエーションの設定](catalog-management.md#product-variations)
+- [製品オプションの設定](catalog-management.md#product-options)
+- [製品属性の設&#x200B;定](catalog-management.md#product-attributes)
+- [製品リストのページネーション設定](catalog-management.md#product-listing-pagination)
 
 ## **セールスとマーケティング**
 
-- [製品買い物かごの上限に関するベストプラクティス](product-cart.md)
-- [プロモーション設定のベストプラクティス](product-cart-promotions.md)
+- [製品買い物かごの上限に関するベストプラクティス](catalog-management.md#cart-limits)
+- [プロモーション設定のベストプラクティス](catalog-management.md#promotions)
 
 ## **プロジェクト範囲**
 
