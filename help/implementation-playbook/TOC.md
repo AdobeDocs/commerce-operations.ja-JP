@@ -2,9 +2,9 @@
 user-guide-title: 実装プレイブック
 user-guide-description: 成功する Adobe Commerce サイトの計画と実装の戦略について学習します。
 mini-toc-levels: 3
-source-git-commit: 7ab0342e3897e2804f5a43876197308c69ac1bb7
+source-git-commit: 42d027a3aedb8d395097d872a97998e76e547966
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '253'
 ht-degree: 11%
 
 ---
@@ -102,6 +102,7 @@ ht-degree: 11%
    - メンテナンス {#maintenance}
       - [概要](best-practices/maintenance/overview.md)
       - [フロントエンドパフォーマンスの監査](best-practices/maintenance/frontend-performance.md)
+      - [バックエンドのパフォーマンスの最適化](best-practices/maintenance/backend-performance.md)
       - [インデクサー設定](best-practices/maintenance/indexer-configuration.md)
       - [大規模なパッチ適用](best-practices/maintenance/patching-at-scale.md)
       - [注文処理](best-practices/maintenance/order-processing-configuration.md)
