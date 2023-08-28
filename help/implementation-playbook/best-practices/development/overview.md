@@ -3,12 +3,14 @@ title: 実装開発フェーズ
 description: Adobe Commerceプロジェクトの開発段階に関する実装のベストプラクティスについて説明します。
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+role: Developer
+source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 2%
 
 ---
+
 
 # 開発段階
 
@@ -22,50 +24,54 @@ ht-degree: 0%
 - スプリントのレビュー
 - 顧客のサインオフ
 
+>[!TIP]
+>
+>詳しくは、 [一般的なベストプラクティス](general.md) 開発プロセス全体の管理に関する高レベルの推奨事項。
+
 以下の節では、開発フェーズに関するベストプラクティス情報を示します。
 
-## アプリケーションの開発
+## コード管理
 
-### コードのレビュー、結合、テスト
+| ベストプラクティス | 説明 |
+|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| [コードレビュー](code-review.md) | 実装された機能が要件を満たしていることを確認するための推奨される検証プロセス |
+| [Composer と Git の比較](code-management.md) | リリース管理、コードの複雑さ、依存関係の管理を考慮して、カスタムコードを配布する方法を決定します。 |
+| [分岐戦略](git-branching.md) | Git リポジトリでのソースコードの管理 |
+| [GRA の例](../../architecture/global-reference/examples.md) | を編成する一般的な方法について [グローバルリファレンスアーキテクチャ](../../architecture/global-reference/overview.md) コードベース |
 
-<!--Assets not yet integrated
-- Guidelines and standards
-  - [Development best practices](https://wiki.corp.adobe.com/x/nT4ykw)
-  - [Code Review](https://wiki.corp.adobe.com/x/qT4ykw)
-  - [Debugging Magento 2](https://wiki.corp.adobe.com/x/nz4ykw) (wiki)
--->
-- [CSS および JS ファイルの最適化](optimize-css-js-files.md)
-- [非公開コンテンツブロックのベストプラクティス](private-content-block-configuration.md)
-- [拡張機能開発者向けのベストプラクティス](https://developer.adobe.com/commerce/php/best-practices/)
+## データベース
 
-<!--Assets not yet integrated
+| ベストプラクティス | 説明 |
+|----------------------------------------------------------------|---------------------------------------------------------------------------------|
+| [テーブルの変更](modifying-core-and-third-party-tables.md) | Adobe Commerceおよびサードパーティのデータベーステーブルを変更する方法とタイミングを決定する |
 
-  - [Best practices for theme development](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=MAGPS&title=Best+Practices+for+Theme+Development)
-  - [Module basis](https://wiki.corp.adobe.com/x/kz4ykw) (wiki) — Develop custom modules
-  - [Exception Handling](https://wiki.corp.adobe.com/x/nz4ykw)
-  - [Custom code copyrights](https://wiki.corp.adobe.com/x/lj4ykw)
-- Source control and package management - wiki articles
-  - [Code management - Git vs. Composer](https://wiki.corp.adobe.com/x/pz4ykw)
-  - [Git branching strategy](https://wiki.corp.adobe.com/display/MAGPS/Git+Branching+Strategy)
-  - [Composer development](https://wiki.corp.adobe.com/x/mD4ykw)
-  - [Composer patching](https://wiki.corp.adobe.com/x/mj4ykw)
-  - [Composer project structure](https://wiki.corp.adobe.com/x/mT4ykw)
-  - [Composer tips and tricks](https://wiki.corp.adobe.com/x/lz4ykw)
--->
+## ファイルの最適化
+
+| ベストプラクティス | 説明 |
+|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| [カタログ画像のサイズ変更](catalog-image-resizing.md) | 最適なパフォーマンスを確保するために、ストアが実稼動環境に移行する前の画像のサイズ変更に関するガイダンスを提供します。 |
+| [CSS と JS](optimize-css-js-files.md) | 管理者またはコマンドラインから、カスケードスタイルシート (CSS) ファイルと JavaScript(JS) ファイルを結合および縮小します。 |
+| [画像](image-optimization.md) | 画像を最適化し、Fastly を使用して応答時間を最適化する |
+
+## フロントエンド開発
+
+| ベストプラクティス | 説明 |
+|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| [テーマの開発](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/){target="_blank"} | テーマ、今後のバージョンのAdobe Commerce、カスタム拡張機能の互換性を確保するための開発パターンについて説明します。 |
+
+## PHP の開発
+
+| ベストプラクティス | 説明 |
+|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| [例外の処理](exception-handling.md) | 例外をログに記録するための推奨される方法を説明します |
+| [拡張機能](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | 拡張機能、今後のバージョンのAdobe Commerce、その他のカスタム拡張機能の互換性を確保するための開発パターンについて説明します。 |
+| [プライベートコンテンツブロック](private-content-block-configuration.md) | ストアフロントのパフォーマンスを最適化するためのプライベートコンテンツブロックの設定 |
 
 ## Platform とサービス
 
-- [画像の最適化に Fastly を使用](image-optimization.md)
-
-### ローカルおよびステージング環境の設定
-
-- [クラウドインフラストラクチャでの開発ワークフロー](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
-
-## コード、結合、テスト
-
-- [ビルドとデプロイメントのベストプラクティス](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html)
-- [静的コンテンツのデプロイメント — クラウド](static-content-deployment.md)
-- [CSS および JS ファイルの最適化](optimize-css-js-files.md)
-- [よりレスポンシブなサイトに向けて画像を最適化する](image-optimization.md)
-- [クラウドインフラストラクチャ上のAdobe Commerceのベストプラクティスのトラブルシューティング](troubleshooting.md)
-- [データベーステーブルを変更するタイミングと方法を理解する](modifying-core-and-third-party-tables.md)
+| ベストプラクティス | 説明 |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| [ビルドとデプロイメント](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | クラウドインフラストラクチャプロジェクトでのAdobe Commerceのビルドステージとデプロイステージのベストプラクティスについて説明します。 |
+| デバッグ | Adobe Commerceフレームワークを体系的かつ効果的にデバッグ |
+| [静的コンテンツのデプロイメント](static-content-deployment.md) | 静的コンテンツがストアフロントに表示されない問題を回避します |
+| [トラブルシューティング](troubleshooting.md) | Adobe Commerceの一般的な実装に関する問題のトラブルシューティング |

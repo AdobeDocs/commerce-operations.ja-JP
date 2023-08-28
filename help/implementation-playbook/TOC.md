@@ -2,10 +2,10 @@
 user-guide-title: 実装プレイブック
 user-guide-description: 成功する Adobe Commerce サイトの計画と実装の戦略について学習します。
 mini-toc-levels: 3
-source-git-commit: 42d027a3aedb8d395097d872a97998e76e547966
+source-git-commit: d33d1e24c38984d0abf0c7f8f5ad2eb804ff621d
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 11%
+source-wordcount: '278'
+ht-degree: 10%
 
 ---
 
@@ -36,7 +36,13 @@ ht-degree: 11%
    - [統合戦略](architecture/integration-strategy.md)
    - [拡張戦略](architecture/extensibility-strategy.md)
    - [統合オプション](architecture/integration-options.md)
-   - [グローバルリファレンスアーキテクチャ](architecture/global-reference.md)
+   - グローバルリファレンスアーキテクチャ {#global-reference-architecture}
+      - [概要](architecture/global-reference/overview.md)
+      - [例](architecture/global-reference/examples.md)
+      - コンポーザーの開発 {#composer}
+         - [概要](architecture/global-reference/composer/overview.md)
+         - [プロジェクト構造](architecture/global-reference/composer/project-structure.md)
+         - [ヒントとテクニック](architecture/global-reference/composer/tips-and-tricks.md)
    - ヘッドレスコマース {#headless}
       - [メリット](architecture/headless/benefits.md)
       - [ジャーニーをヘッドレスに](architecture/headless/journey-to-headless.md)
@@ -89,6 +95,13 @@ ht-degree: 11%
       - [支払ストレージ処理](best-practices/planning/payment-processing-storage.md)
    - 開発 {#development}
       - [概要](best-practices/development/overview.md)
+      - [一般的なベストプラクティス](best-practices/development/general.md)
+      - [コード管理](best-practices/development/code-management.md)
+      - [コードレビュー](best-practices/development/code-review.md)
+      - [デバッグ](best-practices/development/debugging.md)
+      - [例外の処理](best-practices/development/exception-handling.md)
+      - [Git ブランチ](best-practices/development/git-branching.md)
+      - [カタログ画像のサイズ変更](best-practices/development/catalog-image-resizing.md)
       - [画像の最適化](best-practices/development/image-optimization.md)
       - [トラブルシューティング](best-practices/development/troubleshooting.md)
       - [CSS および JS ファイルの最適化](best-practices/development/optimize-css-js-files.md)
