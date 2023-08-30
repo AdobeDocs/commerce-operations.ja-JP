@@ -2,10 +2,10 @@
 title: 製品の可用性
 description: 現在サポートされているAdobe Commerceの機能について説明し、特定のAdobe Commerceリリースとの互換性を確認します。
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-source-git-commit: 846d20fb0c973e4e7eccc41cfe26f877fffc561b
+source-git-commit: 9b09cd4d4934735a6fb06e4193dc652d65098f66
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '530'
+ht-degree: 15%
 
 ---
 
@@ -19,7 +19,8 @@ ht-degree: 0%
 
 ## Adobeが作成した拡張機能
 
-これらのAdobe Commerce拡張機能は、コアAdobe Commerceコードベースから切り離されています。 これにより、Adobeは、新機能への以前のアクセスと引き換えに、少しのリスクを受け入れる用意がある商人に対して、これらの拡張機能の反復を迅速にリリースできます。
+これらのAdobe Commerce拡張機能は、コアAdobe Commerceコードベースから切り離されます。 これにより、Adobeは、より柔軟な期間でこれらの拡張機能を繰り返しリリースし、新機能に初めてアクセスできるようになります。
+
 
 次の表に、Adobe Commerceバージョンを基準とした各拡張機能でのバージョンサポートを示します。
 
@@ -27,11 +28,8 @@ ht-degree: 0%
 |----------------------------------------|-------------|--------|--------|--------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _Adobe CommerceのAdobe I/Oイベント_ | 1.2.2 | 1.2.2 | 1.2.2 | 1.2.2 | - | [コンポーザー](https://developer.adobe.com/commerce/events/get-started/installation/) <br/>[リリースノート](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
 | _B2B_ | 1.4.0+ | 1.3.5+ | 1.3.4 | 1.3.3 | 1.3.2 | [コンポーザー](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html) <br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
-| _チャネルマネージャ_ | - | 2.0.0 | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-channel-manager.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html) |
-| _AmazonSales Channel_ | - | 4.1.0+ | 4.3.0+ | 4.3.0+ | 4.3.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-module-amazon.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) |
 | _Experience Platformコネクタ_ | 3.0.0-beta1 | 1.0.0+ | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)<br/>[リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html) |
-| _Page Builder_ | - | - | 1.7.2 | 1.7.1 | - | [ユーザーガイド](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html) |              |
-| _Adobe Commerce のストアフルフィルメント_ | - | 1.5.0 | 1.2.0+ | 1.2.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html) |
+| _Page Builder_ | - | - | 1.7.2 | 1.7.1 | - | [ユーザーガイド](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html) |
 
 ## コマースサービス
 
@@ -47,8 +45,11 @@ ht-degree: 0%
 
 | **Adobe Commerce Versions** | 2.4.7-beta1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 |                                                                                                                                                                                                                                                |
 |--------------------------------------|-------------|--------|--------|--------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| _AmazonSales Channel_ | - | 4.1.0+ | 4.3.0+ | 4.3.0+ | 4.3.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-module-amazon.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) |
 | _Adobe Commerceのカタログサービス_ | 1.1.2 | 1.1.2 | 1.1.2 | 1.1.2 | - | [概要](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html) |
+| _チャネルマネージャ_ | - | 2.0.0 | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-channel-manager.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html) |
 | _ライブ検索_ | 3.0.2 | 3.0.2 | 3.0.2 | 3.0.2 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)<br/>[リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) |
-| _支払いサービス_ | 2.1.1 | 2.1.1 | 2.1.1 | 2.1.1 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html) |
+| _支払いサービス_ | 2.2.0 | 2.2.0 | 2.2.0 (PHP 8.1) | 2.2.0 (PHP 8.1) | - | [Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html)<br/> [リリースノート](https://commercemarketplace.adobe.com/magento-payment-services.html) |
 | _製品Recommendations_ | 5.0 | 5.0 | 5.0 | 5.0 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-product-recommendations.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) |
 | _クイックチェックアウト_ | - | 1.0.0+ | 1.2.0+ | 1.0.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-quick-checkout.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) |
+| _Adobe Commerce のストアフルフィルメント_ | - | 1.5.0 | 1.2.0+ | 1.2.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html)<br/> [リリースノート](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html) |
