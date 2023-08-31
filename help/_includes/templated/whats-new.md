@@ -1,7 +1,7 @@
 ---
-source-git-commit: f67737451f12c17f3253582b44c2c504cbf98fb2
+source-git-commit: 525ac7ae2481be8c52b32471d14ceefba7b855a2
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,46 @@ ht-degree: 1%
 ## 新機能
 
 新しいドキュメントと既存ドキュメントの重要な更新について説明します。
+
+### 2023 年 8 月 29 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>次の新しいトピックを追加しました。<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/catalog-image-resizing.html">カタログ画像のサイズ変更のベストプラクティス</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/code-management.html">コード管理のベストプラクティス</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/code-review.html">コードレビューのベストプラクティス</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/debugging.html">デバッグのベストプラクティス</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/exception-handling.html">例外処理のベストプラクティス</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/general.html">一般的な開発のベストプラクティス</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/git-branching.html">Git ブランチのベストプラクティス</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/examples.html">グローバルリファレンスアーキテクチャ (GRA) の例</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/overview.html">GRA 向けコンポーザーの開発</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/project-structure.html">GRA 用の Composer プロジェクト構造</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/tips-and-tricks.html">GRA のコンポーザーのヒントとテクニック</a></p>
+</td>
+      <td>新規トピック</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd708ce4c1ab69f2d6e3a3b10dcd2387ae829368">fd708c</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023 年 8 月 26 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>が追加されました。 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/backend-performance.html">新しいトピック</a> Adobe Commerce sites のバックエンドパフォーマンスの最適化について</p>
+</td>
+      <td>新規トピック</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ecbb71ad8745e4589856c6cbf283212ed61a3664">ecbb71</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2023 年 8 月 24 日
 
