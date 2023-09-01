@@ -1,43 +1,25 @@
 ---
 title: クラウドインフラストラクチャテクノロジー
-description: クラウドインフラストラクチャ上のAdobe Commerceで使用するテクノロジーのコレクションについて詳しく見てみましょう。
+description: クラウドインフラストラクチャ上のAdobe Commerceに使用されるテクノロジーAdobeのコレクションについて詳しく説明します。
 exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
 feature: Cloud
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: c737a8e902c960c933e54e2521107475bb1e5a22
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
+
 # 技術
 
-前述したように、Adobe Commerceは、プラットフォームをサポートするために多数のソフトウェアソリューションを活用しています。 特に、実稼動環境に関連するので、実稼動環境を最大限に活用するのに役立つ、クラウドインフラストラクチャ上のAdobe Commerceに含まれる技術的なソリューションおよび機能の一部を分類しました。
+Adobe Commerce on cloud infrastructure では、プラットフォームをサポートするために複数のソフトウェアソリューションを使用します。 詳しくは、 _クラウドガイド_ 詳しくは、以下を参照してください。
 
-![クラウドインフラストラクチャテクノロジーに関するAdobe Commerceを示す図](../../../assets/playbooks/infrastructure-technology.svg)
-
-## ソフトウェアソリューション
-
-- **Nginx**—PHP-FPM を使用する Web サーバ。 複数のワーカーを持つインスタンスが 1 つあります。
-
-- **GlusterFS** — すべての静的ファイルの展開を管理し、4 つのディレクトリ・マウントを使用した同期を行うファイル・サーバ：
-   - `var`
-   - `pub/media`
-   - `pub/static`
-   - `app/etc`
-
-- **レディス**:1 台のサーバがアクティブで、残りの 2 台がレプリカとして存在する VM ごとに 1 台のサーバ。
-
-- **Elasticsearch**— Adobe Commerceバージョン 2.2.x 以降を検索します。
-
-- **OpenSearch**— Adobe Commerceバージョン 2.4.6 以降を検索します。
-
-- **Galera** — 各データベースの一意の ID に対して 3 つの自動増分設定を持つ、ノードごとに 1 つの MariaDB MySQL データベースを持つデータベースクラスタ。
+- [プロ環境のアーキテクチャ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#production-technology-stack)
+- [スターター環境のアーキテクチャ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-architecture.html#production-and-staging-technology-stack)
 
 ## 機能とメリット
 
-- VPC に 3 つの専用インスタンスがある場合、3 つの異なるアベイラビリティゾーンまたはデータセンターに対して弾性ロードバランサーが存在します。
-
-- 単一のインスタンスが失敗する可能性のあるイベントに対して、高い回復性が提供されます。 例えば、AWSのアベイラビリティーゾーン全体またはデータセンター全体が停止した場合などです。
-
-- Web、キャッシュ、検索、データベースを含むスタック全体を 15 分以内にスケーリングし、ダウンタイムをゼロにする。
+- 3 つの独立したアベイラビリティーゾーンまたはデータセンターをまたいだ弾性ロードバランサーを備えた、仮想プライベートクラウド (VPC) 内の 3 つの専用インスタンス。
+- 単一のインスタンスの失敗を引き起こす可能性のあるイベントに対する回復性が高くなりました。 例えば、AWSの可用性ゾーンまたはデータセンター全体が停止したとします。
+- Web、キャッシュ、検索、データベースを含む、スタック全体にわたるダウンタイムなしの拡張。

@@ -2,9 +2,9 @@
 user-guide-title: 実装プレイブック
 user-guide-description: 成功する Adobe Commerce サイトの計画と実装の戦略について学習します。
 mini-toc-levels: 3
-source-git-commit: d33d1e24c38984d0abf0c7f8f5ad2eb804ff621d
+source-git-commit: c737a8e902c960c933e54e2521107475bb1e5a22
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 10%
 
 ---
@@ -63,8 +63,6 @@ ht-degree: 10%
       - [概要](infrastructure/cloud/overview.md)
       - [地域](infrastructure/cloud/regions.md)
       - [技術](infrastructure/cloud/technology.md)
-      - [環境](infrastructure/cloud/environments.md)
-      - [Managed Services](infrastructure/cloud/managed-services.md)
       - [セキュリティとコンプライアンス](infrastructure/cloud/security.md)
    - パフォーマンスの最適化 {#performance}
       - [典型的な問題](infrastructure/performance/optimization.md)

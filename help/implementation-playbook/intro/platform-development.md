@@ -3,16 +3,17 @@ title: プラットフォーム開発の原則
 description: Adobe Commerceを使用する際の、基本的なプラットフォーム開発原則を理解します。
 exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
 feature: Cloud
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3c1a49c2dc3dc0d3d47e16c724d4099b6a456c77
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
+
 # プラットフォーム開発の原則
 
-このプレイブックでは、以下を含むAdobe Commerce開発の主な基準の一部を詳しく説明します。
+このトピックでは、以下を含む、Adobe Commerce開発の主な標準の一部について詳しく説明します。
 
 - 開発プロセスに沿った機能および技術的範囲
 - MVC アーキテクチャとの整合に関する開発のベストプラクティス
@@ -23,16 +24,10 @@ ht-degree: 0%
 - コーディングとインフラストラクチャのパフォーマンス向上
 - ツール、戦略、方法をテスト
 
-実装プロジェクト全体で使用される方法、プロセス、ツールに関しては、一部のソリューション実装者が独自の好みを持つ場合がありますが、このプレイブックでは、ほとんどの実装で共有できる、一般に認められたベストプラクティスと方法に焦点を当てています。
+一部のソリューション実装者は、方法、プロセス、ツールに独自の好みを持つ場合がありますが、このプレイブックでは、ほとんどの実装で共有できる、受け入れられたベストプラクティスと方法論に焦点を当てています。
 
-大規模な IT プロジェクトと同様に、Adobe Commerceは、基盤となるテクノロジー (PHP/Zend、Symfony、JavaScript、jQuery、HTMLなど ) のベストプラクティスと標準化を活用するコーディング標準と、Adobe Commerce Coding Standard 内で確立された標準に基づいて構築されています。 これらの標準に従うことは、バグを排除し、カスタムビルドコードの品質と保守性を向上させる絶対的な方法です。
+大規模な IT プロジェクトと同様に、Adobe Commerceは、ベストプラクティスと標準化を使用するコーディング標準と、Adobe Commerce内で確立された標準に基づいて構築されています [コーディング規格](https://developer.adobe.com/commerce/php/coding-standards/). これらの標準に従うことは、バグを削除し、カスタムビルドコードの品質と保守性を向上させるために重要です。
 
 ## Adobe Commerce an cloud infrastructure
 
-Adobe Commerce on cloud infrastructure は、Adobe Commerceソフトウェア用の、管理された自動ホスティングプラットフォームです。 Adobe Commerce on cloud infrastructure には、オンプレミスのAdobe CommerceおよびMagento Open Sourceの実装とは別の、様々な追加機能が付属しています。
-
-![Adobe Commerceコンポーネントの情報グラフィック](../../assets/playbooks/commerce-cloud.svg)
-
-Adobe Commerce on cloud infrastructure は、PHP、MySQL、Redis を含む、事前にプロビジョニングされたインフラストラクチャを提供します。 [!DNL RabbitMQ]、およびElasticsearchテクノロジー。コードを変更するたびに、効率的に迅速に開発し継続的に導入するための自動ビルドおよびデプロイ操作を備えた Git ベースのワークフローが Platform as a Service(PaaS) 環境、高度にカスタマイズ可能な環境設定ファイルおよびツール、AWSホスティング。
-
-![Adobe Commerceコンポーネントの情報グラフィック](../../assets/playbooks/cloud-tech-stack.svg)
+Adobe Commerce on cloud infrastructure は、Adobe Commerceソフトウェア用の、管理された自動ホスティングプラットフォームです。 Adobe Commerce on cloud infrastructure には、オンプレミスのAdobe CommerceおよびMagento Open Sourceの実装とは別の、様々な機能が付属しています。 詳しくは、 [クラウドガイド](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).
