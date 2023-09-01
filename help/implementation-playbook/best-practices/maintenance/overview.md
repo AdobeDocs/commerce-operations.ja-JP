@@ -3,10 +3,10 @@ title: 実装メンテナンスフェーズ
 description: Adobe Commerceプロジェクトのメンテナンスフェーズに関する実装のベストプラクティスについて説明します。
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: d0cb3b81ee50ebd7cbf65a4dddbf5c58acf04f0d
+source-git-commit: aad06c1c2def87a319426860b47b8e5ff5e96780
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 0%
+source-wordcount: '446'
+ht-degree: 1%
 
 ---
 
@@ -14,65 +14,71 @@ ht-degree: 0%
 
 メンテナンスフェーズには、次のアクティビティが含まれます。
 
-- サイト監視
+- バグ修正
 - カタログ管理
-- インデックス作成
 - 設定
 - 機能強化
-- バグ修正
+- インデックス作成
 - Managed Services
+- サイト監視
 - アップグレード
 
 以下の節では、メンテナンスフェーズに関するベストプラクティス情報を示します。
 
-## サイト監視
+## バグの修正
 
-- [フロントエンドパフォーマンスの監査](frontend-performance.md)
-- [準備完了、設定、保守](https://business.adobe.com/blog/basics/ready-set-maintain)
-- [SWAT ツールを使用して、Adobe Commerceのセキュリティと操作性を確保する](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) - CTAG デッキ
-- [New Relicとヘルスの通知を使用して、クラウドインフラストラクチャにデプロイされたAdobe Commerceサイトのパフォーマンス、ディスク容量、ログを監視します](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)
-
-## データベース管理
-
-- [データベースのパフォーマンスの問題を解決&#x200B;する](resolve-database-performance-issues.md)
-- [Adobe Commerce 2.3.5 MariaDB のアップグレードの前提条件&#x200B;](commerce-235-upgrade-prerequisites-mariadb.md)
+| ベストプラクティス | 説明 |
+|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| [[!DNL Quality Patches Tool] 使用状況](../../../tools/quality-patches-tool/usage.md) | すべてのAdobe Commerceパッチに関する一般情報を適用、元に戻し、表示します。 |
 
 ## カタログ管理
 
-<!-- Asset not yet integrated
-- [Catalog Image Resizing](https://wiki.corp.adobe.com/x/oj4ykw) (wiki)
--->
-- [製品カタログ管理](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/2eea2782fc874047a020391000519f8b/watch?source=CHANNEL)
-
-## インデックス作成
-
-<!-- Asset not yet integrated
-- [Reindexing - the safe way](https://wiki.corp.adobe.com/x/oj4ykw)(wiki)
--->
-- [インデックスを再作成する方法](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
-- [インデクサーの設定のベストプラクティス&#x200B;](indexer-configuration.md)
-- [注文処理の設定のベストプラクティス](order-processing-configuration.md)
-<!-- Asset not yet integrated from CTAG deck:
-- Plan upsizing for planned traffic increases during promotions or holidays -->
+| ベストプラクティス | 説明 |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| [製品カタログ管理](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/2eea2782fc874047a020391000519f8b/watch?source=CHANNEL) | 商品カタログ管理の戦略を説明するコマース&amp;コーヒーの録画。 |
 
 ## 設定
 
-- [実稼動サイトで管理者の更新をスケジュールする](scheduling-admin-updates-in-production.md)
+| ベストプラクティス | 説明 |
+|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| [実稼動サイトで管理者の更新をスケジュールする](scheduling-admin-updates-in-production.md) | パフォーマンスの低下や停止を防ぐために、重要なAdobe Commerceの更新を管理します。 |
 
-<!-- Asset not yet integrated from CTAG deck: Planning for peak season and promotional periods (upsizing)-->
+## データベース管理
 
-## バグの修正
-
-- [品質パッチツールの使用](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)
+| ベストプラクティス | 説明 |
+|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| [データベースのパフォーマンスの問題を解決&#x200B;する](resolve-database-performance-issues.md) | クラウドインフラストラクチャにデプロイされたAdobe Commerceサイトのパフォーマンスが低下するデータベースの問題を修正しました。 |
+| [Adobe Commerce 2.3.5 MariaDB のアップグレードの前提条件&#x200B;](commerce-235-upgrade-prerequisites-mariadb.md) | MariaDB データベースをアップグレード用に準備します。 |
 
 ## 機能強化
 
-- [パーソナライズ](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL)
-- [E コマースのトレンド](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL)
-- [AI 自動化](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL)
+| ベストプラクティス | 説明 |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| [パーソナライズ](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL) | パーソナライゼーション戦略について説明するコマース&amp;コーヒーの記録。 |
+| [E コマースのトレンド](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL) | e コマースの傾向を説明するコマース&amp;コーヒーの録画。 |
+| [AI 自動化](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL) | 人工知能と自動化を使用したパーソナライゼーションの可能性について説明するコマース&amp;コーヒーレコーディング。 |
+
+## インデックス作成
+
+| ベストプラクティス | 説明 |
+|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| [インデックスを再作成する方法](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) | cron ジョブまたは CLI ツールを使用して、インデックス再作成を実行します。 |
+| [インデクサーの&#x200B;設定](indexer-configuration.md) | インデクサー設定のベストプラクティスに従って、サイトのパフォーマンスを最適化します。 |
+| [注文処理](order-processing-configuration.md) | チェックアウトと注文処理のパフォーマンスを向上させます。 |
+
+## サイト監視
+
+| ベストプラクティス | 説明 |
+|-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| [フロントエンドパフォーマンスの監査](frontend-performance.md) | Web パフォーマンスツールを使用して、サイトのパフォーマンスに悪影響を与える問題を特定し、対処します。 |
+| [準備完了、設定、保守](https://business.adobe.com/blog/basics/ready-set-maintain) | ビジネス価値と稼動時間を最大限に高めるためのAdobe Commerceサイトの維持に関するヒントです。 |
+| [以下を使用します。 [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Adobe Commerceサイトに関する重要なインサイトを 1 か所で表示します。 |
+| [パフォーマンス、ディスク容量、ログの監視](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) | New Relicを使用して、クラウドインフラストラクチャサイト上のAdobe Commerceに関する主要なパフォーマンスインサイトを監視します。 |
 
 ### アップグレード
 
-- [大規模なパッチ適用](patching-at-scale.md)
-- [サービスとコンポーネントを最新バージョンに更新しま&#x200B;した](update-services.md)
-- [Adobe Commerceのアップグレードチェックリ&#x200B;スト](upgrade-checklist.md)
+| ベストプラクティス | 説明 |
+|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| [大規模なパッチ適用](patching-at-scale.md) | エンタープライズプロジェクトの管理にAdobe Commerce向けの一元化されたパッチ適用が役立つ方法を説明します。 |
+| [サービスとコンポーネントを最新バージョンに更新しま&#x200B;した](update-services.md) | Adobe Commerce on cloud infrastructure テクノロジースタックを更新しておきます。 |
+| [Adobe Commerceのアップグレードチェックリ&#x200B;スト](upgrade-checklist.md) | アップグレードチェックリストを作成して使用し、Adobe Commerceアップグレード戦略を計画します。 |
