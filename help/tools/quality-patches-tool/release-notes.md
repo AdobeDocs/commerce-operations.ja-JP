@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: da0c85a9f1b0ac0a3176ca5f6ef5904834e8d37e
+source-git-commit: 19d41495f95ae707be1db8446ac77eb5ead6375e
 workflow-type: tm+mt
-source-wordcount: '13965'
+source-wordcount: '14327'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,25 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.37 {#v1-1-37}
+
+* **ACSD-52613** (Adobe CommerceおよびMagento Open Source>=2.4.6 &lt;2.4.7) — に対して更新がおこなわれない場合でもキャッシュとインデックスが更新される問題を修正しました。 `Inventory_source` 項目を REST API 別に表示します。
+* **ACSD-51884** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) - resize コマンドを実行した後に製品の画像キャッシュのパスが正しくなくなる問題を修正しました。
+* **ACSD-53628** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) - CSV 販売注文レポートに間違った特殊文字が表示される問題を修正しました。
+* **ACSD-53148** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.7) - GraphQLで、同じ設定可能な製品を買い物かごに追加する 2 つの並列要求で、同じ製品 SKU を持つ 2 つの項目が買い物かごに表示されていた問題を修正しました。
+* **ACSD-52606** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) — エラーメッセージが表示される問題を修正しました。 *ご注文はピックアップの準備ができていません* は、ユーザーが **[!UICONTROL Notify Order is Ready for Pickup]**.
+* **ACSD-51574** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) — 画像を同じ名前の別の画像に置き換えた後、フロントエンドで画像が更新されない問題を修正しました。
+* **ACSD-53728** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) — 製品 EAV インデクサーの完了に時間がかかる問題を修正しました。
+* **ACSD-53979** (Adobe CommerceとMagento Open Source>=2.4.6 &lt;2.4.7) — ようこそメッセージに一重引用符が含まれている場合にホームページで発生する JS の問題を修正しました。
+* **ACSD-52085** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.7) — 設定可能な製品の特別な価格が商品のカルーセルに表示されない問題を修正しました。
+* **ACSD-53795** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) — での無効なデータ型の問題を修正しました。 `indexer_update_all_views` cron ジョブです。
+* **ACSD-52143** (Adobe CommerceとMagento Open Source>=2.4.6 &lt;2.4.7) — 製品の読み込み後にカスタムオプションが削除される問題を修正しました。
+* **ACSD-53750** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.7) - *配管または閉じた接続が壊れています* マルチスレッド中のエラー `catalog_product_price` インデックスを再作成します。
+* **ACSD-49843** (Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.7 &lt;2.4.0 || >=2.4.1 &lt;2.4.7) — 注文された品目が **[!UICONTROL Payment Action]** = **[!UICONTROL Sale]** 設定を有効にします。
+* **ACSD-47054** (Adobe Commerce >=2.4.2 &lt;2.4.6) — プレビューの再インデックスがすべてのストアで再インデックスを実行し、遅くなる問題を修正しました。
+* ACSD-46541、ACSD-47079の新しいバージョンを追加しました。
+* ACSD-49970-v3 は ACSD-54095に置き換えられました。
 
 ## v1.1.36 {#v1-1-36}
 
