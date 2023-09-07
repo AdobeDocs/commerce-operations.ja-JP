@@ -3,7 +3,7 @@ title: GraphQL API 用アプリケーションサーバー
 description: Adobe CommerceデプロイメントでGraphQL API 用のアプリケーションサーバーを有効にするには、以下の手順に従います。
 badgeCoreBeta: label="2.4.7-beta1" type="informative"
 exl-id: 346cc722-131e-4ed0-bc8c-23c3a1e58258
-source-git-commit: f085c0a77fe59ff3b2d76abbd6965b6bc8ee69db
+source-git-commit: 4f83a2181f6a7880b77dc07729574365def71f1d
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Application Server を実行するには、Open Swoole 拡張機能をインス�
 
 ### Nginx の設定
 
-特定のコマースデプロイメントによって、Nginx の設定方法が決まります。 一般に、Nginx 設定ファイルはデフォルトで、 `nginx.conf` は、次のいずれかのディレクトリに配置されます。 `/usr/local/nginx/conf`, `/etc/nginx`または `/usr/local/etc/nginx`. 詳しくは、 [初心者向けガイド](http://nginx.org/en/docs/beginners_guide.html) を参照してください。
+特定のコマースデプロイメントによって、Nginx の設定方法が決まります。 一般に、Nginx 設定ファイルはデフォルトで、 `nginx.conf` は、次のいずれかのディレクトリに配置されます。 `/usr/local/nginx/conf`, `/etc/nginx`または `/usr/local/etc/nginx`. 詳しくは、 [初心者向けガイド](https://nginx.org/en/docs/beginners_guide.html) を参照してください。
 
 Nginx 設定の例：
 

@@ -2,9 +2,9 @@
 title: アップグレードの実装
 description: Adobe Commerceプロジェクトのアップグレード実装の様々なフェーズについて説明します。
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -84,4 +84,4 @@ UAT は、アップグレードの最後の段階の 1 つで、サイトの確�
 
 サイトの起動後は、Analytics データ、Google Search Console およびその他のリソースを調べて、予期しない問題がなく、すべて期待どおりに動作していることを確認します。
 
-適切に設計された監視ツールを使用して、パフォーマンスに目を向けるのは常に良いアイデアです。 サイトのパフォーマンスを監視するツールや手段は多数あるので、組織と適切に組み合わせるツールや手段を必ず選択してください。 クラウドインフラストラクチャ管理システムを使用しているAdobe Commerceのお客様には、 [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) サイトのパフォーマンスを監視する。
+適切に設計された監視ツールを使用して、パフォーマンスに目を向けるのは常に良いアイデアです。 サイトのパフォーマンスを監視するツールや手段は多数あるので、組織と適切に組み合わせるツールや手段を必ず選択してください。 クラウドインフラストラクチャ管理システムを使用しているAdobe Commerceのお客様には、 [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) サイトのパフォーマンスを監視する。

@@ -4,9 +4,9 @@ description: Adobe Commerce Sites のバックエンドパフォーマンスの�
 badge: label="オブジェクトソースによる貢献" type="Informative" url="https://objectsource.co.uk/" tooltip="objectsource"
 role: Admin, User, Developer
 feature: Best Practices
-source-git-commit: 2416357d8cacb5627fd24f92b16c2d9839f91082
+source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Adobe Commerceプロジェクトのテストの詳細を説明します。
 
 ### パフォーマンスの問題を特定して解決する
 
-New RelicやAdobe Commerceの監視などの様々なツールを使用してボトルネックを検出し、コマースサイトを効果的に最適化することで、パフォーマンスの問題に対処します。 [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) は、クラウドインフラストラクチャ上のAdobe Commerceに含まれ、 [Adobe Commerceの観測](/help/tools/observation-for-adobe-commerce/intro.md) は、クラウドおよびオンプレミスの両方のデプロイメントに含まれています。
+New RelicやAdobe Commerceの監視などの様々なツールを使用してボトルネックを検出し、コマースサイトを効果的に最適化することで、パフォーマンスの問題に対処します。 [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) は、クラウドインフラストラクチャ上のAdobe Commerceに含まれ、 [Adobe Commerceの観測](/help/tools/observation-for-adobe-commerce/intro.md) は、クラウドおよびオンプレミスの両方のデプロイメントに含まれています。
 
 これらのツールを使用して、サイトのパフォーマンスを分析し、以下に関連するパフォーマンスの問題を特定します。
 
