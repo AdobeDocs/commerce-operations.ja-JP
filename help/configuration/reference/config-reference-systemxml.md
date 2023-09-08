@@ -4,9 +4,9 @@ description: システムの XML ファイルがコマースアプリケーシ�
 feature: Configuration, System
 badge: label="寄稿：David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="デビッド・ランバウアー"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 37c23d7a410cdb664710880d3d89cb72efa164e9
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2669'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,6 @@ A `<tab>`-Tag は次の属性を持つことができます。
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------|----------|----------|
 | `id` | セクションを参照する際に使用される識別子を定義します。 | `typeId` | 必須 |
 | `translate` | 翻訳可能にするフィールドを定義します。 提供 `label` ラベルを翻訳可能にする。 | `string` | オプション |
-| `type` | レンダリングされたHTML要素の入力タイプを定義します。デフォルト値はです。 `text`. | `string` | オプション |
 | `sortOrder` | セクションの並べ替え順を定義します。 大きい数字はセクションをページの下部に、小さい数字はセクションを上に押します。 | `float` | オプション |
 | `class` | 定義済みの CSS クラスを、レンダリングされたタブHTML要素に追加します。 | `string` | オプション |
 
