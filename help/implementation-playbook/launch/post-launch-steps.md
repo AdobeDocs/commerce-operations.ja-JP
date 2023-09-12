@@ -3,9 +3,9 @@ title: 運用開始後の手順
 description: 運用開始後のチェックリストを使用して、Adobe Commerceサイトをスムーズに実装するようにします。
 exl-id: 0c3162d9-6475-4b34-9278-e5aea39bd0f9
 feature: Deploy
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ce41158f900fad27e3e7b8157f5c64ac988bbabf
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Web サイトがライブになると、これらのアクティビティは、�
 - クラスターをライブとしてタグ付けし、サポートチケットを作成して SLA の高い監視を有効にします
 - CSE（カスタマーサクセスエンジニア）と TAM（テクニカルアカウントマネージャー）は、カットオーバーが完了し次のタスクを実行します。
    - クラスターをAdobe Commerceクライアントの高い SLA としてタグ付けし、それをアクティブ化するためのサポートチケットを作成します
-   - Pingdom でのドメイン名のチェックを有効化
+   - をアクティブにする **内部** Pingdom はドメイン名をチェックします（Pingdom への公開アクセスは使用できません）
    - 監視状態を確認し、すべての項目が緑色になっていることを確認します
    - 運用開始日には、ステークホルダーに保証期間とパラメーターを E メールで通知します。
 
