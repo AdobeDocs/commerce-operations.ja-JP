@@ -4,9 +4,9 @@ description: システムの XML ファイルがコマースアプリケーシ�
 feature: Configuration, System
 badge: label="寄稿：David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="デビッド・ランバウアー"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 37c23d7a410cdb664710880d3d89cb72efa164e9
+source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2663'
 ht-degree: 0%
 
 ---
@@ -296,7 +296,6 @@ A `<field>`-Tag は次の子を持つことができます。
 | `more_url` | 拡張可能ではありません。 以下を参照してください。 | `typeUrl` |
 | `demo_url` | 拡張可能ではありません。 以下を参照してください。 | `typeUrl` |
 | `hide_in_single_store_mode` | グループをシングルストアモードで表示するかどうかを指定します。 `1` グループを非表示にします。 `0` グループを表示します。 | `int` |
-| `source_service` | 選択オプションの入力に使用するサービス。 | `complexType` |
 | `options` | 未使用。 非推奨（廃止予定）となっている可能性があります。 | `complexType` |
 | `depends` | 他のフィールドへの依存関係を宣言するために使用できます。 特定のフィールドの値が `1`. このノードは、 `section/group/field`-string. | `complexType` |
 | `attribute` | カスタム属性はフロントエンドモデルで使用できます。 通常、特定のフロントエンドモデルをより動的にするために使用します。 | `complexType` |
