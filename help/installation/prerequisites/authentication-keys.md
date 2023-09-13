@@ -2,9 +2,9 @@
 title: 認証キーの取得
 description: 次の手順に従って、repo.magento.comでAdobe Commerceおよび Composer パッケージにアクセスするための資格情報を取得します。Magento Open Source
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,8 @@ Adobe CommerceおよびMagento Open Sourceパッケージへのアクセス権�
 
 認証キーを作成するには：
 
-1. にログインします。 [Commerce Marketplace](https://marketplace.magento.com). アカウントがない場合は、 **登録**.
+1. にログインします。 [Commerce Marketplace](https://commercemarketplace.adobe.com/). アカウントがない場合は、 **登録**.
+
 1. ページの右上にあるアカウント名をクリックし、「 」を選択します。 **マイプロファイル**.
 
 1. クリック **アクセスキー** 」と入力します。
@@ -45,7 +46,7 @@ Adobe CommerceおよびMagento Open Sourceパッケージへのアクセス権�
 
 ### SSH アクセストークンを管理
 
-SSH を使用してAdobe Commerceリリースをダウンロードするには、ダウンロードアクセストークンを生成する必要があります。 トークンを生成するには：
+SSH を使用してAdobe CommerceおよびMagento Open Sourceリリースをダウンロードするには、ダウンロードアクセストークンを生成する必要があります。 トークンを生成するには：
 
 1. にログインします。 [magento.comアカウント](https://account.magento.com/customer/account/login).
 1. クリック **マイアカウント** をクリックします。

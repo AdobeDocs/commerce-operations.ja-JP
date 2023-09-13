@@ -3,12 +3,13 @@ title: PHP 設定
 description: 以下の手順に従って、必要な PHP 拡張をインストールし、Adobe CommerceとMagento Open Sourceのオンプレミスインストールに必要な PHP 設定を構成します。
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: aacc4332cecec0cb9b0f5c23d60b7abd1c63feea
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
+
 
 # PHP 設定
 
@@ -16,11 +17,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->詳しくは、 [システム要件](../system-requirements.md) を参照してください。
+>最新バージョンのAdobe CommerceとMagento Open Sourceには、PHP 8.1 以上が必要です。詳しくは、 [システム要件](../system-requirements.md) PHP のすべてのサポート対象バージョンを対象としています。
 
 ## PHP がインストールされていることを確認します
 
-Linux のほとんどのフレーバーは、デフォルトで PHP をインストールしています。 このトピックでは、PHP が既にインストールされていることを前提としています。 PHP が既にインストールされているかどうかを確認するには、コマンドラインで次のように入力します。
+PHP は、ほとんどの Linux ディストリビューションにデフォルトでインストールされます。 このトピックでは、PHP が既にインストールされていることを前提としています。 PHP がインストールされているかどうかを確認するには、コマンドラインに次のように入力します。
 
 ```bash
 php -v
@@ -29,19 +30,17 @@ php -v
 PHP がインストールされている場合、次のようなメッセージが表示されます。
 
 ```terminal
-PHP 7.4.0 (cli) (built: Aug 14 2019 16:42:46) ( NTS )
-Copyright (c) 1997-2018 The PHP Group
-Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies with Zend OPcache v7.1.6, Copyright (c) 1999-2018, by Zend Technologies
+PHP 8.1.2-1ubuntu2.14 (cli) (built: Aug 18 2023 11:41:11) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.1.2, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.2-1ubuntu2.14, Copyright (c), by Zend Technologies
 ```
 
-Adobe CommerceとMagento Open Source2.4 は PHP 7.3 と互換性がありますが、PHP 7.4 とのテストを行い、使用することをお勧めします。
-
-PHP がインストールされていない場合、またはバージョンのアップグレードが必要な場合は、Linux 固有のフレーバに対する指示に従ってインストールします。
-CentOS では、 [追加の手順が必要になる場合があります](https://wiki.centos.org/HowTos/php7).
+PHP がインストールされていない（またはアップグレードが必要な）場合は、Linux ディストリビューションの指示に従ってインストールします。
 
 ## インストールされている拡張機能の検証
 
-Adobe CommerceとMagento Open Sourceには、一連の拡張機能をインストールする必要があります。
+Adobe CommerceとMagento Open Sourceには、特定の PHP 拡張が必要です。 次のリストは、Commerce の各エディションに必要な拡張を指定します。 リストは、各エディションの最新バージョンを実行しているデプロイメントから自動生成されます。
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
@@ -54,11 +53,7 @@ Adobe CommerceとMagento Open Sourceには、一連の拡張機能をインス�
    ```
 
 1. 必要な拡張機能がすべてインストールされていることを確認します。
-1. PHP のインストールに使用したのと同じワークフローを使用して、見つからないモジュールを追加します。 例えば、 `yum` PHP をインストールするには、PHP 7.4 モジュールを以下のように追加します。
-
-   ```bash
-    yum -y install php74u-pdo php74u-mysqlnd php74u-opcache php74u-xml php74u-gd php74u-devel php74u-mysql php74u-intl php74u-mbstring php74u-bcmath php74u-json php74u-iconv php74u-soap
-   ```
+1. PHP のインストールに使用したのと同じワークフローを使用して、見つからないモジュールを追加します。
 
 ## PHP 設定を確認する
 
@@ -74,7 +69,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - PHP のメモリ制限を設定します。
 
-  アドビの詳細な推奨事項は次のとおりです。
+  Adobeでは、次のことをお勧めします。
 
    - コードのコンパイルまたは静的アセットのデプロイ `1G`
    - デバッグ， `2G`
@@ -87,17 +82,17 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
   realpath_cache_ttl=7200
   ```
 
-  これらの設定を使用すると、PHP プロセスは、ページが読み込まれるたびにファイルを検索するのではなく、ファイルへのパスをキャッシュできます。 詳しくは、 [パフォーマンスの調整](https://www.php.net/manual/en/ini.core.php) PHP ドキュメント内。
+  これらの設定を使用すると、PHP プロセスは、ページの読み込み時にファイルを検索する代わりに、ファイルへのパスをキャッシュできます。 詳しくは、 [パフォーマンスの調整](https://www.php.net/manual/en/ini.core.php) PHP ドキュメント内。
 
 - 有効にする [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments):Adobe CommerceおよびMagento Open Source2.1 以降で必要です。
 
-  次を有効にすることをお勧めします： [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) パフォーマンス上の理由から OPcache は多くの PHP ディストリビューションで有効になっています。
+  Adobeでは、 [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) パフォーマンス上の理由から OPcache は多くの PHP ディストリビューションで有効になっています。
 
   Adobe CommerceおよびMagento Open Source2.1 以降では、コード生成に PHP コードコメントを使用します。
 
 >[!NOTE]
 >
->インストールとアップグレードの際の問題を回避するため、PHP のコマンドライン設定と PHP の Web サーバプラグイン設定の両方に同じ PHP 設定を適用することを強くお勧めします。 詳しくは、次の節を参照してください。
+>インストールとアップグレードの際の問題を回避するため、Adobeでは、PHP のコマンドライン設定と PHP Web サーバーのプラグイン設定の両方に同じ PHP 設定を適用することを強くお勧めします。 詳しくは、次の節を参照してください。
 
 ## PHP 設定ファイルを検索する
 
@@ -117,7 +112,7 @@ php --ini | grep "Loaded Configuration File"
 
 >[!NOTE]
 >
->1 つしかない場合 `php.ini` ファイルを編集し、そのファイルに変更を加えます。 2 人いる場合 `php.ini` ファイルを編集する場合は、 *すべて* ファイル。 そうしないと、予期しないパフォーマンスを引き起こす可能性があります。
+>1 つしかない場合 `php.ini` ファイルを変更します。 2 人いる場合 `php.ini` ファイル、変更 *両方* ファイル。 そうしないと、予期しないパフォーマンスを引き起こす可能性があります。
 
 ### OPcache 構成設定を検索
 
@@ -137,7 +132,7 @@ PHP OPcache 設定は、通常、 `php.ini` または `opcache.ini`. 場所は�
   sudo find / -name 'opcache.ini'
   ```
 
-- PHP-FPM を使用した nginx Web サーバ： `/etc/php/7.2/fpm/php.ini`
+- PHP-FPM を使用した nginx Web サーバ： `/etc/php/8.1/fpm/php.ini`
 
 複数の `opcache.ini`、すべてのを変更します。
 
@@ -189,7 +184,7 @@ PHP オプションを設定するには：
 
    - `opcache.ini` (CentOS)
    - `php.ini` （ウブントゥ）
-   - `/etc/php/7.2/fpm/php.ini` (nginx Web サーバー（CentOS または Ubuntu）)
+   - `/etc/php/8.1/fpm/php.ini` (nginx Web サーバー（CentOS または Ubuntu）)
 
 1. 場所 `opcache.save_comments` 必要に応じて、コメントを解除します。
 1. その値がに設定されていることを確認します。 `1`.
@@ -204,7 +199,7 @@ PHP オプションを設定するには：
 
 PHP の問題のトラブルシューティングに関するヘルプについては、次のAdobe Commerceサポート記事を参照してください。
 
-- [ブラウザでAdobe Commerceにアクセスする際に、PHP バージョンエラーまたは 404 エラーが発生する](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
+- [ブラウザーでAdobe Commerceにアクセスする際に PHP バージョンエラーが発生する、または 404 エラーが発生する](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
 - [PHP 設定エラー](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
 - [PHP の mcrypt 拡張機能が正しくインストールされていません](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
 - [PHP バージョンの対応チェックの問題](https://support.magento.com/hc/en-us/articles/360033546411)

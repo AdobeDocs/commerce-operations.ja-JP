@@ -2,16 +2,18 @@
 title: オンプレミスでの迅速なインストールを開始
 description: 所有しているインフラストラクチャにAdobe CommerceまたはMagento Open Sourceをインストールするには、次の手順に従います。
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
 
 # オンプレミスでの迅速なインストールを開始
 
-当社は、 [コンポーザー](https://getcomposer.org/) :Adobe CommerceとMagento Open Sourceのコンポーネントとその依存関係を管理します。 Composer を使用してAdobe CommerceとMagento Open Sourceのメタパッケージを取得すると、次の利点があります。
+このページの手順では、にAdobe CommerceとMagento Open Sourceをインストールする方法を説明します。 [自己ホスト型の](../implementation-playbook/infrastructure/self-hosting/overview.md) インフラストラクチャ 既存のインストールのアップグレードに関するガイダンスについては、 [_アップグレードガイド_](../upgrade/overview.md).
+
+Adobe使用 [コンポーザー](https://getcomposer.org/) :Adobe CommerceとMagento Open Sourceのコンポーネントとその依存関係を管理します。 Composer を使用してAdobe CommerceとMagento Open Sourceのメタパッケージを取得すると、次の利点があります。
 
 - サードパーティライブラリをソースコードと一緒にバンドルせずに再利用する
 - 堅牢な依存関係管理を備えたコンポーネントベースのアーキテクチャを使用することで、拡張機能の競合と互換性の問題を減らす
@@ -33,7 +35,7 @@ ht-degree: 0%
 
 ## ファイルシステムの所有者としてログイン
 
-所有権、権限、およびファイルシステムの所有者について [所有権と権限のトピックの概要](prerequisites/file-system/overview.md).
+の所有権、権限、およびファイルシステムの所有者について説明します。 [所有権と権限のトピックの概要](prerequisites/file-system/overview.md).
 
 ファイル・システムの所有者に切り替えるには、次の手順に従います。
 
@@ -87,40 +89,36 @@ Adobe CommerceまたはMagento Open Sourceのメタパッケージを取得す�
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   プロンプトが表示されたら、認証キーを入力します。 公開鍵と秘密鍵は、 [Commerce Marketplace](https://marketplace.magento.com/customer/account/login/).
+   プロンプトが表示されたら、認証キーを入力します。 公開鍵と秘密鍵は、 [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
 
    次のようなエラーが発生した場合： `Could not find package...` または `...no matching package found`を使用する場合は、コマンドに入力ミスがないことを確認します。 それでもエラーが発生する場合は、Adobe Commerceのダウンロードが許可されていない可能性があります。 連絡先 [Adobe Commerceサポート](https://support.magento.com/hc/en-us) を参照してください。
 
    詳しくは、 [トラブルシューティング](https://support.magento.com/hc/en-us/articles/360033818091) を参照してください。
 
-   >[!NOTE]
-   >
-   >Adobe Commerceのお客様は、GA(General Availability) の日付の 2 週間前にパッチにアクセスできます。 リリース前のパッケージは、Composer でのみ使用できます。 開発者ポータルまたは GitHub のプレリリースには、GA になるまでアクセスできません。 Composer でこれらのパッケージが見つからない場合は、Adobe Commerceサポートにお問い合わせください。
-
 ### 例 — マイナーリリース
 
-マイナーリリースには、新機能、品質修正およびセキュリティ修正が含まれています。 Composer を使用してマイナーリリースを指定します。 例えば、Adobe Commerce 2.4.5 のメタパッケージを指定するには、次のようにします。
+マイナーリリースには、新機能、品質修正およびセキュリティ修正が含まれています。 Composer を使用してマイナーリリースを指定します。 例えば、Adobe Commerce 2.4.6 のメタパッケージを指定するには、次のようにします。
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
 ### 例 — 品質パッチ
 
-品質パッチには主に機能が含まれる _および_ セキュリティの修正。 ただし、後方互換性のある新しい機能を含めることもできます。 Composer を使用して、品質パッチをダウンロードします。 例えば、Adobe Commerce 2.4.5 のメタパッケージを指定するには、次のようにします。
+品質パッチには主に機能が含まれる _および_ セキュリティの修正。 ただし、後方互換性のある新しい機能を含めることもできます。 Composer を使用して、品質パッチをダウンロードします。 例えば、Adobe Commerce 2.4.6 のメタパッケージを指定するには、次のようにします。
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
 ### 例 — セキュリティパッチ
 
 セキュリティパッチにはセキュリティ修正のみが含まれています。 これらは、アップグレードプロセスをより迅速かつ容易にするように設計されています。
 
-セキュリティパッチでは、Composer の命名規則を使用します。 `2.4.5-px`. Composer を使用してパッチを指定します。 例えば、Adobe Commerce 2.4.5-p1 メタパッケージをダウンロードするには、次のようにします。
+セキュリティパッチでは、Composer の命名規則を使用します。 `2.4.6-px`. Composer を使用してパッチを指定します。 例えば、Adobe Commerce 2.4.6-p1 メタパッケージをダウンロードするには、次のようにします。
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5-p1 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6-p1 <install-directory-name>
 ```
 
 ## ファイルの権限の設定
@@ -166,7 +164,7 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->管理 URI は、 `--backend-frontname` オプション。 ただし、このオプションを省略し、インストールコマンドでランダムな URI を自動的に生成することをお勧めします。 ランダムな URI は、ハッカーや悪意のあるソフトウェアが悪用するのを難しくします。 インストールが完了すると、URI がコンソールに表示されます。
+>管理 URI は、 `--backend-frontname` オプション。 ただし、Adobeでは、このオプションを省略し、インストールコマンドでランダムな URI を自動的に生成することをお勧めします。 ランダムな URI は、ハッカーや悪意のあるソフトウェアが悪用するのを難しくします。 インストールが完了すると、URI がコンソールに表示されます。
 
 >[!TIP]
 >
@@ -230,4 +228,4 @@ bin/magento help cache:enable
 
 >[!NOTE]
 >
->おめでとうございます。クイックインストールを完了しました。 より高度なヘルプが必要な場合は、 以下をご確認ください。 [高度なインストール](advanced.md) ガイド。
+>おめでとうございます。クイックインストールを完了しました。 より高度なヘルプが必要な場合は、 以下を確認します。 [高度なインストール](advanced.md) ガイド。
