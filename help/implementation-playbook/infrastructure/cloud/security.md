@@ -3,7 +3,7 @@ title: クラウドインフラストラクチャのセキュリティ
 description: Adobeがクラウドインフラストラクチャ上でAdobe Commerceを安全に保つ方法について説明します。
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: afe70569796c056cd0ecab82898f0dec016e7a3f
+source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Adobe Commerce Pro プランの実稼動環境は Virtual Private Cloud(VPC) と
 
 ## 暗号化
 
-Amazon Elastic Block Store(EBS) は、ストレージに使用されます。 すべての EBS ボリュームは、AES-265 アルゴリズムを使用して暗号化されます。つまり、保存時にデータが暗号化されます。 また、CDN とオリジン間、およびオリジンサーバー間の送信データも暗号化します。 顧客のパスワードはハッシュとして保存されます。 支払いゲートウェイの資格情報を含む機密性の高い資格情報は、SHA-256 アルゴリズムを使用して暗号化されます。
+Amazon Elastic Block Store(EBS) は、ストレージに使用されます。 すべての EBS ボリュームは、AES-256 アルゴリズムを使用して暗号化されます。つまり、保存時にデータが暗号化されます。 また、CDN とオリジン間、およびオリジンサーバー間の送信データも暗号化します。 顧客のパスワードはハッシュとして保存されます。 支払いゲートウェイの資格情報を含む機密性の高い資格情報は、SHA-256 アルゴリズムを使用して暗号化されます。
 
 データが保存されていない場合や、サーバー間で転送されていない場合、Adobe Commerceアプリケーションは列レベルまたは行レベルの暗号化や暗号化をサポートしません。 お客様は、アプリケーション内から暗号化キーを管理できます。 システムで使用されるキーは、AWS Key Management System に保存され、サービスの一部を提供するためにManaged Servicesで管理される必要があります。
 
