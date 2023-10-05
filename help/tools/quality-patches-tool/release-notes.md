@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 7e6e8f1ed15d88fc79e9a3ad5a4505b612564f71
+source-git-commit: 67d4f2dd6b3aedae51c9b81268f2ced12369becc
 workflow-type: tm+mt
-source-wordcount: '14539'
+source-wordcount: '14811'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,21 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.39 {#v1-1-39}
+
+* **ACSD-53704** (Adobe Commerce>=2.4.0 &lt;2.4.7) — 報酬ポイントの有効期限が切れた後に報酬ポイントの残高履歴が誤って計算される問題を修正しました。
+* **ACSD-53583** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.7) — 部分再インデックスのパフォーマンスが向上しました。 *カテゴリ製品* および *製品カテゴリ* インデクサー。
+* **ACSD-54026** (Adobe Commerce >=2.4.6 &lt;2.4.7) - `updateCompanyRole` GraphQLは、権限のないユーザーに対して要求します。
+* **ACSD-54106** (Adobe CommerceとMagento Open Source>=2.4.1 &lt;2.4.5) — トルコ語のアクセント記号付き文字の名前によるカテゴリ製品の並べ替えが正しくない問題を修正しました。
+* **ACSD-52219** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.7) — ブックマークビューを頻繁に切り替えると、管理グリッドの保存済みフィルターが期待どおりに動作しない問題を修正しました。
+* **ACSD-54342** (Adobe CommerceおよびMagento Open Source>=2.4.0 &lt;2.4.7) — 誤ったエラーメッセージを修正しました *データ構造のエラー：値が混在しています* 有効なデータを持たない CSV ファイルを読み込むとき。
+* **ACSD-54660** (Adobe CommerceおよびMagento Open Source>=2.4.4 &lt;2.4.6 の場合 ) — 新しい入力属性が追加されました。 *並べ替え* GraphQLでの注文の並べ替え基準 `sort_field` および `sort_direction`.
+* **ACSD-54776** (Adobe Commerce >=2.4.5 &lt;2.4.7 の場合 ) — オフになっていた問題を修正しました。 *[!UICONTROL Use Default Value]* とのデフォルト以外の製品フィールド値は、2 つ目の Web サイト、ストア、ストア表示に対しては保存されません。
+* **ACSD-53998** (Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.4-p2 &lt;2.4.5 || >=2.4.5-p1 &lt;2.4.7) - **[!UICONTROL Dynamic Block]** に基づく **[!UICONTROL Customer Segment]** は、顧客アカウントからログアウトした後、正しく機能しません。
+* **ACSD-53204** (Adobe CommerceおよびMagento Open Source>=2.4.6 &lt;2.4.7) — 修正点 *製品を保存できません。* 画像を製品ギャラリーに追加するための同時リクエストを `rest/V1/products/<sku>/media` endpoint.
+* **ACSD-47657** (Adobe CommerceおよびMagento Open Source>=2.4.4 &lt;2.4.7) - AWS資格情報のキャッシュメカニズムが追加されました。 資格情報プロバイダーは、Magentoキャッシュを使用して、EC2 構成用にAWSから取得した資格情報をキャッシュするようになりました。
+* 更新済みパッチ：ACSD-51984、ACSD-51574。
 
 ## v1.1.38 {#v1-1-38}
 
