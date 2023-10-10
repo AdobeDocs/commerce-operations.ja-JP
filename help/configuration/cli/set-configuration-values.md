@@ -2,9 +2,9 @@
 title: 設定値の設定
 description: 設定値を設定し、管理でロックされている値を変更する方法について説明します。
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 78a7e99ecaba6a6f7982123f5bd67efc740ec2ef
+source-git-commit: 473ab09f83a4cfc1809adff854d52a11ad49d3af
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -289,3 +289,8 @@ bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_ur
 ```terminal
 web/unsecure/base_url - http://example-for-store.com/
 ```
+
+>[!INFO]
+>
+>スコープコードには、文字（a ～ z または A ～ Z）、数字 (0 ～ 9)、アンダースコア (_) のみを含めることができます。 また、最初の文字は文字にする必要があります。 Web サイトまたはストア表示の作成時に大文字または小文字が使用される場合、内部的には一致では大文字と小文字が区別されず、環境変数を使用した設定の上書きに対応します。 詳しくは、 [環境変数を使用して設定を上書きする](../reference/override-config-settings.md#environment-variables).
+

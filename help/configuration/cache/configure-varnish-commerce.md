@@ -3,9 +3,9 @@ title: コマース用の Vanrish の設定
 description: Commerce アプリケーションの Vanrish 構成ファイルを更新および管理する方法を説明します。
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,8 @@ Vanish を使用するように Commerce を設定するには：
    | アクセスリスト | 完全修飾ホスト名、IP アドレス、または [クラスレスドメイン間ルーティング (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) 表記法コンテンツを無効にする IP アドレスの範囲。 詳しくは、 [ワニスキャッシュのパージ](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
    | バックエンドホスト | 完全修飾ホスト名または IP アドレスを入力し、Vanish のリッスンポートを入力します。 _backend_ または _接触元サーバー_；つまり、Varnish コンテンツを提供するサーバーが高速化します。 通常、これは Web サーバーです。 詳しくは、 [Vanish キャッシュバックエンドサーバ](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | バックエンドポート | オリジンサーバーのリスンポート。 |
-   | 猶予期間 | バックエンドが応答しない場合に Vanrish が古いコンテンツを提供する時間は、猶予期間によって決まります。 デフォルト値は 300 秒です。 |
+   | 猶予期間 | バックエンドが応答しない場合に Vanrish が古いコンテンツを提供する時間を決定します。 デフォルト値は 300 秒です。 |
+   | パラメーターのサイズを処理します  [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7 ベータ版でのみ使用可能"} | 最大数を指定します。 [レイアウトハンドル](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) 処理する [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) フルページキャッシュ用の HTTP エンドポイント。 サイズを制限すると、セキュリティとパフォーマンスが向上します。 デフォルトは 100 です。 |
 
 1. クリック **設定を保存**.
 

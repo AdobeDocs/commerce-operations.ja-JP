@@ -3,7 +3,7 @@ title: 設定のベストプラクティス
 description: これらのベストプラクティスを使用して、Adobe CommerceまたはMagento Open Sourceのデプロイメントの応答時間を最適化します。
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 62a37d5f83b4cc6efef8bddba16e44151e91a8d0
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Commerce には、ページの応答時間を改善し、より高いスルー�
 >
 >The **[!UICONTROL Developer]** 「 」タブと「 」オプションは、 [開発者モード](../configuration/cli/set-mode.md). [Adobe Commerce an cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) はをサポートしていません。 `Developer` モード。
 
-## 非同期設定の保存 [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7-beta1 でのみ使用可能"}
+## 非同期設定の保存 [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7 ベータ版でのみ使用可能"}
 
 ストアレベルの設定が多数のプロジェクトの場合、ストア設定を保存すると、非常に長い時間がかかるか、タイムアウトになる場合があります。 The _非同期設定_ モジュールは、コンシューマーを使用してメッセージキュー内の保存を処理する cron ジョブを実行することで、非同期設定保存を有効にします。 AsyncConfig は **無効** デフォルトでは。
 

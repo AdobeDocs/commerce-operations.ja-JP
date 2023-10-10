@@ -2,7 +2,7 @@
 title: メッセージキューコンシューマー
 description: Adobe CommerceおよびMagento Open Sourceメッセージキューの消費者（関連する機能やシステム設定を含む）について説明します。
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: 1d7f5f58f8c21013c2ab0d68ab93a125ba0f3764
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 0%
@@ -65,7 +65,7 @@ ht-degree: 0%
 | 発注書の E メールを送信します。 必須 [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) オプションが有効になっている場合は、管理システム設定で有効になります。 |                |                         |                     |
 | `purchaseorder.validation` |                | + |                     |
 | 関連するに対して発注を検証します [承認ルール](https://docs.magento.com/user-guide/customers/account-dashboard-approval-rules.html). 必須 [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) オプションが有効になっている場合は、管理システム設定で有効になります。 |                |                         |                     |
-| `saveConfigProcessor` [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7-beta1 でのみ使用可能"} | + |                         | + |
+| `saveConfigProcessor` [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7 ベータ版でのみ使用可能"} | + |                         | + |
 | 保存ジョブをメッセージキューに配置することで、ストア設定の変更を非同期的に保存します。これにより、多数のストアレベル設定を含むデプロイメントのパフォーマンスを向上させることができます。 を使用するために必要 [`AsyncConfig`](../../performance/configuration.md#asynchronous-configuration-save) モジュール。 |                |                         |                     |
 | `sales.rule.update.coupon.usage` | + | + | + |
 | 次の条件を満たさない [問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.html) ここでは、単一使用のクーポンを複数回使用できます。 |                |                         |                     |

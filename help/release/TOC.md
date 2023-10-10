@@ -3,10 +3,10 @@ user-guide-title: リリース情報
 user-guide-description: Adobe Commerceのパッチとサービスに関するすべてのリリース情報に 1 か所でアクセスできます。
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: 4ba7e3dd660253079d4c8734e99db59c1205b318
+source-git-commit: b0b99e87162bdb026feeba062ca75594eb08d68a
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 17%
+source-wordcount: '108'
+ht-degree: 16%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 17%
    - [後方互換性のない変更](backward-incompatible-changes.md)
    - Adobe Commerce {#adobe-commerce}
       - [概要](release-notes/commerce/overview.md)
-      - [2.4.7-beta1](release-notes/commerce/2-4-7.md)
+      - [2.4.7-beta](release-notes/commerce/2-4-7.md)
       - [2.4.6](release-notes/commerce/2-4-6.md)
       - [2.4.5](release-notes/commerce/2-4-5.md)
       - [2.4.4](release-notes/commerce/2-4-4.md)
@@ -28,7 +28,7 @@ ht-degree: 17%
       - [2.4.0](release-notes/commerce/2-4-0.md)
    - Magento Open Source {#magento-open-source}
       - [概要](release-notes/open-source/overview.md)
-      - [2.4.7-beta1](release-notes/open-source/2-4-7.md)
+      - [2.4.7-beta](release-notes/open-source/2-4-7.md)
       - [2.4.6](release-notes/open-source/2-4-6.md)
       - [2.4.5](release-notes/open-source/2-4-5.md)
       - [2.4.4](release-notes/open-source/2-4-4.md)
@@ -38,12 +38,15 @@ ht-degree: 17%
       - [2.4.0](release-notes/open-source/2-4-0.md)
    - セキュリティパッチリリース {#security-patches}
       - [概要](release-notes/security/overview.md)
+      - [2.4.6-p3](release-notes/security/2-4-6-p3.md)
       - [2.4.6-p2](release-notes/security/2-4-6-p2.md)
       - [2.4.6-p1](release-notes/security/2-4-6-p1.md)
+      - [2.4.5-p5](release-notes/security/2-4-5-p5.md)
       - [2.4.5-p4](release-notes/security/2-4-5-p4.md)
       - [2.4.5-p3](release-notes/security/2-4-5-p3.md)
       - [2.4.5-p2](release-notes/security/2-4-5-p2.md)
       - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
+      - [2.4.4-p6](release-notes/security/2-4-4-p6.md)
       - [2.4.4-p5](release-notes/security/2-4-4-p5.md)
       - [2.4.4-p4](release-notes/security/2-4-4-p4.md)
       - [2.4.4-p3](release-notes/security/2-4-4-p3.md)
