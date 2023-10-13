@@ -2,7 +2,7 @@
 title: リリースポリシー
 description: マイナー、パッチ、セキュリティパッチ、機能、ホットフィックス、個々のパッチ、カスタムパッチなど、様々な種類のAdobe Commerceリリースについて説明します。
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
+source-git-commit: 9a74f87e0da5a7f11cd0930c8265556d80e3d1de
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Adobe CommerceとMagento Open Sourceの使用 [セマンティックバージョ
    - **セキュリティパッチリリース**—2.4.5-p1
       - セキュリティのバグ修正
       - セキュリティ強化
-- **ベータパッチリリース**—2.4.7-beta1
+- **ベータパッチリリース**—2.4.7-beta2
 - **拡張機能、インフラストラクチャ、サービスのリリース**
 - **ホットフィックス**
 - **個々のパッチ**

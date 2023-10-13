@@ -2,10 +2,10 @@
 title: リリーススケジュール
 description: アドビが Adobe Commerce の実質的な新機能のリリースを発表を予定しているタイミングを学びます。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 12b4f619673414f18d9697450e867681c6cb3194
+source-git-commit: 7edf6d5a8dfe58a86f27e97816e4d850bc21babc
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 1%
+source-wordcount: '623'
+ht-degree: 2%
 
 ---
 
@@ -17,10 +17,7 @@ Adobeリリース [パッチ](versioning-policy.md#patch-release) コアAdobe Co
 
 >[!NOTE]
 >
->2024 年以降、Adobeはパッチへの「プレリリース」アクセスを提供しなくなりました。 代わりに、2.4.7 以降では、Adobe Commerceのお客様は [ベータ版リリース](beta.md) ：テストおよび開発の目的で、一般公開前の可用性コードにアクセスする。 プレリリース版のアクセスは、2023 年の次のリリースで引き続き予定されています。
->
-> - 2023 年 8 月 8 日 (PT) プレリリースアクセスは 2023 年 7 月 25 日 (PT) です
-> - 2023 年 10 月 10 日のプレリリースアクセスは 2023 年 9 月 26 日です
+>2024 年以降、Adobeはパッチへの「プレリリース」アクセスを提供しなくなりました。 代わりに、2.4.7 以降では、Adobe Commerceのお客様は [ベータ版リリース](beta.md) ：テストおよび開発の目的で、一般公開前の可用性コードにアクセスする。
 
 次の表に、予定リリース日を示します（日付は変更される場合があります）。
 
@@ -46,16 +43,6 @@ Adobeリリース [パッチ](versioning-policy.md#patch-release) コアAdobe Co
    </tr>
 </tfoot>
 <tbody>
-  <tr>
-    <td>2023 年 8 月 9 日</td>
-    <td><img alt="B2B 機能アイコン" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="拡張機能アイコン" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">拡張機能</a><br><img alt="インフラストラクチャ機能のアイコン" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">インフラ</a><br><img alt="サービス機能アイコン" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">サービス</a></td>
-    <td><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">セキュリティパッチ</a>: 2.4.6-p2、2.4.5-p4、2.4.4-p5</td>
-  </tr>
-  <tr>
-    <td>2023 年 10 月 11 日</td>
-    <td><img alt="B2B 機能アイコン" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="拡張機能アイコン" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">拡張機能</a><br><img alt="インフラストラクチャ機能のアイコン" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">インフラ</a><br><img alt="サービス機能アイコン" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">サービス</a></td>
-    <td><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">ベータパッチ</a>: 2.4.7-beta2<br> <img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">セキュリティパッチ</a>: 2.4.6-p3、2.4.5-p5、2.4.4-p6</td>
-  </tr>
   <tr>
     <td>2024 年 2 月 14 日</td>
     <td><img alt="B2B 機能アイコン" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="拡張機能アイコン" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">拡張機能</a><br><img alt="インフラストラクチャ機能のアイコン" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">インフラ</a><br><img alt="サービス機能アイコン" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">サービス</a></td>
