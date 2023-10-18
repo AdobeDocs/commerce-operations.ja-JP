@@ -2,9 +2,9 @@
 title: キャッシュの管理
 description: キャッシュの種類を管理し、キャッシュのステータスを表示します。
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 5c316ade0619603eafa7ece8a7cd8c1595dee713
+source-git-commit: 9476a8ee2ce49e635e17fbb25c74656ba30bf930
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,7 @@ Commerce 2 には次のキャッシュタイプがあります。
 | 統合 API の設定 | config_integration_api | ストアの統合のコンパイル済み統合 API 設定。 |
 | Web サービスの設定 | config_webservice | Web API 構造のキャッシュ |
 | 顧客通知 | customer_notification | ユーザーインターフェイスに表示される一時的な通知。 |
+| 管理 UI SDK のキャッシュ | admin_ui_sdk | で追加された管理者カスタマイズをキャッシュします。 [Adobe Commerce Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/). |
 
 ## キャッシュのステータスの表示
 
