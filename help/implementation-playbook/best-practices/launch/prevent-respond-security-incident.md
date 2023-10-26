@@ -4,16 +4,16 @@ description: クラウドインフラストラクチャプロジェクト上のA
 role: Admin, Developer, Leader, User
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 19ff1fee74e3c5ece13da49648252b32e549eafd
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
 
 # セキュリティインシデントの防止と対応に役立つベストプラクティス
 
-Adobe Commerceのセキュリティは、 [共有された責任](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) モデル。 Adobeと技術チームが何を担当しているかを理解することが重要です。 以下に要約を示します。 [セキュリティのベストプラクティス](https://www.adobe.com/content/dam/cc/en/security/pdfs/Adobe-Magento-Commerce-Best-Practices-Guide.pdf) プロジェクトに最適なセキュリティ制御を確実に適用し、セキュリティインシデントに対する最適な対応方法を提供するため。
+Adobe Commerceのセキュリティは、 [共有された責任](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) モデル。 Adobeと技術チームが何を担当しているかを理解することが重要です。 次の記事では、セキュリティのベストプラクティスをまとめて、プロジェクトに最適なセキュリティ制御を確実に適用し、セキュリティインシデントに対する最適な対応を計画できるようにします。
 
 ## 影響を受ける製品およびバージョン
 
@@ -43,14 +43,14 @@ Adobeでは、デフォルトの URL の代わりに一意のカスタム管理 
 - のセットアップと実行 [Adobe Commerce Security Scan Tool](https://docs.magento.com/user-guide/magento/security-scan.html).
 拡張セキュリティスキャンを使用すると、PWAを含む各Adobe Commerceサイトを監視して、既知のセキュリティリスクとマルウェアを確認したり、パッチ更新やセキュリティ通知を受け取ったりできます。
 - [管理者ユーザーアクセスの確認と更新](https://docs.magento.com/user-guide/system/permissions-users-all.html) および [セキュリティ設定](https://docs.magento.com/user-guide/stores/security-admin.html).
-   - 古いアカウント、未使用のアカウント、疑わしいアカウントを削除し、すべての管理者ユーザーに対してパスワードをローテーションすることをお勧めします。
-   - プロジェクトの「セキュリティの詳細設定 &lt;」を確認し、更新します。 管理セキュリティ設定を使用すると、URL に秘密鍵を追加したり、パスワードの大文字と小文字を区別したり、パスワードの有効期間や、管理者ユーザーアカウントがロックされる前に実行できるログイン試行の回数など、管理セッションの長さを制限したりできます。 セキュリティを強化するために、現在のセッションが期限切れになるまでのキーボードの操作不能時間を設定し、ユーザー名とパスワードで大文字と小文字を区別するように設定できます。
+   - 古い、未使用または疑わしいアカウントを削除し、すべての管理者ユーザーのパスワードをローテーションします。
+   - プロジェクトの「セキュリティの詳細設定 &lt;」を確認し、更新します。 管理セキュリティ設定を使用すると、URL に秘密鍵を追加したり、パスワードの大文字と小文字を区別したり、パスワードの有効期間や、管理者ユーザーアカウントがロックされるまでに許可されるログイン試行回数を制限したりできます。 セキュリティを強化するために、現在のセッションが期限切れになるまでのキーボードの操作不能時間を設定し、ユーザー名とパスワードで大文字と小文字を区別するように設定できます。
 - 次の日にAdobe Commerceを監査 [クラウドプロジェクトユーザー](https://devdocs.magento.com/cloud/project/user-admin.html).
-古い、未使用または疑わしいアカウントを削除し、ユーザーにパスワードの変更を要求することをお勧めします。
+古い、未使用または疑わしいアカウントを削除し、ユーザーにパスワードの変更を要求します。
 - 監査 [SSH キー](https://devdocs.magento.com/cloud/before/before-workspace-ssh.html) クラウドインフラストラクチャ上のAdobe Commerce向け
-SSH 鍵の確認、削除、回転をお勧めします。
+SSH キーを確認、削除、回転します。
 - 管理者用のアクセス制御リスト (ACL) を実装します。
-Fastly Edge ACL リストをカスタムと組み合わせて使用できます [VCL コードスニペット](https://devdocs.magento.com/cloud/cdn/fastly-vcl-allowlist.html#vcl) ：受信リクエストをフィルタリングし、管理者への IP アドレスによるアクセスを許可します。
+受信リクエストをフィルタリングし、カスタム ACL と組み合わせて Fastly Edge ACL リストを実装することで、IP アドレスで管理者アクセスを設定できます [VCL コードスニペット](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
 
 ## インシデントの分析
 

@@ -4,9 +4,9 @@ description: 支払いの詳細を安全に処理および保存する方法を�
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 1887d7b285008fc98579955274bbc4affb766d0c
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 維持に関する主要な原則の 1 つ [PCI コンプライアンス](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) は、クレジットカードの支払いを適切に処理および保存するための戦略を持っています。
 
-Adobe Commerceへのカード所有者データの格納は、 **厳禁の** これは、支払いカード業界のデータセキュリティ標準 (PCI-DSS) に基づく商人としての義務を侵害する可能性があります。 当社の共有責任モデルと商業債務のガイドラインに関する詳細は、 [Adobe Commerceの共有責任ガイド](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) をAdobeセキュリティセンターで
+Adobe Commerceへのカード所有者データの格納は、 **厳禁の** これは、支払いカード業界のデータセキュリティ標準 (PCI-DSS) に基づく商人としての義務を侵害する可能性があります。 共有責任モデルと商業債務のガイドラインの詳細については、 [Adobe Commerce Shared Responsibility Model Guide](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) をAdobeセキュリティセンターで
 
-e コマースサイトで支払い情報を適切に処理するのに役立つよう、以下のベストプラクティスに従うことをお勧めします。 全体的なセキュリティのベストプラクティスに関する追加のガイダンスについては、 [Adobe Commerceのセキュリティベストプラクティスガイド](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) Adobe・トラスト・センター
+e コマースサイトで支払い情報が適切に処理されるようにするには、以下のベストプラクティスに従います。 全体的なセキュリティのベストプラクティスに関する追加のガイダンスについては、 [Adobe Commerceのセキュリティベストプラクティスガイド](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) Adobe・トラスト・センター
 
 ## 影響を受ける製品およびバージョン
 
@@ -28,11 +28,11 @@ e コマースサイトで支払い情報を適切に処理するのに役立つ
 
 ## カード所有者データの保護
 
-カード所有者のデータの保存が必要な場合は、カード所有者のデータを保管保護機能を備えたAdobe Commerceの外に保存する必要があります。 クレジットカード所有者データなど、支払いの詳細に対してストレージ保護を適用することで、詐欺や他の潜在的なセキュリティ問題を防ぐことができます。 他の PCI 標準に従って、保護を適用することは、防御の第 1 ラインです。 保存データの保護を強化する推奨される方法には、暗号化、切り捨て、トークン化、一方向ハッシュ、マスキングなどがあります。
+カード所有者のデータの保存が必要な場合は、カード所有者のデータを保管保護機能を備えたAdobe Commerceの外に保存する必要があります。 クレジットカード所有者データなど、支払いの詳細に対してストレージ保護を適用することで、詐欺や他の潜在的なセキュリティ問題を防ぐことができます。 他の PCI 標準に従って、保護を適用することは、防御の第 1 ラインです。 保存されたデータの保護を強化するための推奨される方法には、暗号化、切り捨て、トークン化、一方向ハッシュ、マスキングなどがあります。
 
 暗号鍵の保護は、データ保護戦略にとって不可欠です。 これらのキーを監視するのは、熟練した信頼できる顧客が重要です。
 
-最後に、ストレージ中にプライマリアカウント番号 (PAN) を読み取れなくする必要があります（例：XXX などのマスク）。 これには、フラッシュドライブ、USB、外付けハードドライブなどのポータブルストレージとバックアップメディア、監査ログも含まれます。
+最後に、プライマリ・アカウント番号 (PAN) は、ストレージ中は読み取れない状態にする必要があります。例えば、 `XXX`. これには、フラッシュドライブ、USB、外付けハードドライブなどのポータブルストレージとバックアップメディア、監査ログも含まれます。
 
 ## カード所有者データの送信を暗号化する
 
@@ -49,8 +49,8 @@ e コマースサイトで支払い情報を適切に処理するのに役立つ
 * カード所有者データへのアクセスを制限する
 * 機密情報へのアクセスは、ニーズ・トゥ・ナウジングで制限され、ビジネス・ニーズを持つ権限を持つ担当者のみに提供される必要があります。
 
-カード所有者のデータを処理する方法としては、プライマリアカウント番号 (PAN) を保存せず、特定の支払い処理プロバイダーでカードをトークン化し、トークン、カードタイプ、暗号化された有効期限を保存する方法が推奨されます。 トークンはマーチャントごとにのみ一意なので、将来の使用のために、ファイルの資格情報として使用できます。 トークンは一意なので、セキュリティの問題がある場合、トークンは無効化され、不正なアクティビティを防ぐのに役立ちます
+カード所有者のデータを処理する場合は、データを保存する代わりに、データをトークン化する方法をお勧めします。 特定の支払い処理プロバイダーでカードをトークン化し、トークン、カードのタイプ、暗号化された有効期限を保存します。 トークンはマーチャントごとにのみ一意なので、将来の使用のために、ファイルの資格情報として使用できます。 トークンは一意なので、セキュリティの問題がある場合は、トークンが無効化され、不正なアクティビティを防ぐのに役立ちます。
 
 ## 追加情報
 
-Adobe別の推奨支払い方法をお探しの場合は、 [Adobe支払サービス](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
+Adobe別の推奨支払い方法を探している場合は、 [Adobe支払サービス](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
