@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 67d4f2dd6b3aedae51c9b81268f2ced12369becc
+source-git-commit: 6e82738ab9b3ea106b7987fac2f6f4a026ddc4f0
 workflow-type: tm+mt
-source-wordcount: '14811'
+source-wordcount: '15145'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,24 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.40 {#v1-1-40}
+
+* **ACSD-54680** (Adobe Commerce >=2.4.0 &lt;2.4.6) — 複数の割り当て済みソースを持つ製品に対して送信された B2B 見積もりを処理できない問題を修正しました。
+* **ACSD-54040** (Adobe Commerce>=2.4.4-p5 &lt;2.4.5 の場合 ) || >=2.4.5-p4 &lt;2.4.6) - *[!UICONTROL Created]* B2B モジュールが有効な場合、注文の詳細では、フィールドは空白です。
+* **ACSD-54319** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.6) - *[!UICONTROL Product in Cart]* レポート。
+* **ACSD-53378** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.7) — 大きなアドレス帳を持つ顧客のチェックアウトページ読み込み時間が改善されました。
+* **ACSD-52657** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.7) — サブドメインを使用するセカンダリストレビューで minicart が更新されない問題を修正しました。
+* **ACSD-53414** (Adobe Commerce >=2.4.6 &lt;2.4.7) — 制限付き管理者ユーザーが権限範囲外の CMS ページを表示できる問題を修正しました。
+* **ACSD-54472** (Adobe Commerce >=2.4.6 &lt;2.4.7) — 拒否された会社の顧客が引き続き認証でき、ブロックされた会社および拒否された会社の顧客が引き続き注文を送信できる問題を修正しました。 このパッチでは、GraphQLエンドポイントの検証が追加されます。
+* **ACSD-52801** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.7) - GraphQLで製品を検索する際に部分一致をおこなうオプションを追加します。
+* **ACSD-55004** (Adobe CommerceとMagento Open Source>=2.4.6 &lt;2.4.7) — で設定された値より大きい読み込みファイルのアップロード中にバリデーターがクラッシュする問題を修正しました。 `php.ini`.
+* **ACSD-54989** (Adobe Commerce>=2.4.4-p5 &lt;2.4.5 の場合 ) || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) — 会社管理者が *[!UICONTROL Enable Purchase Orders]* が *[!UICONTROL Yes]* および *[!UICONTROL Purchase Order]* が *[!UICONTROL No]*.
+* **ACSD-54007** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) — エラーを修正します。 *&quot;未定義の配列キー&quot;_scope&quot;&quot;* 顧客データのインポート時。
+* **ACSD-55031** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.6) - *型&quot;mixed&quot;は NULL 許容にできません* コンパイル中にエラーが発生しました。
+* **ACSD-54961** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) — 制限付き管理者ユーザーが一括更新できない問題を修正しました。 *製品レビュー* ステータス。
+* **ACSD-55256** (Adobe CommerceとMagento Open Source>=2.4.6 &lt;2.4.7) — 画像のスライダーに最初の画像のみが正常に表示される問題を修正しました。
+* 更新済みのパッチ：ACSD-52041、ACSD-54106
 
 ## v1.1.39 {#v1-1-39}
 
