@@ -3,13 +3,13 @@ title: 例外処理のベストプラクティス
 description: Adobe Commerceプロジェクトを開発する際に例外をログに記録するための推奨される方法について説明します。
 feature: Best Practices
 role: Developer
-source-git-commit: 94d37b6a95cae93f465daf8eb96363a198833e27
+exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
+source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 0%
 
 ---
-
 
 # 例外処理のベストプラクティス
 
@@ -88,7 +88,7 @@ try {
 
 ### ![誤った](../../../assets/no.svg) ログ記録前のロジック
 
-ログ記録前のロジックにより、別の例外や致命的なエラーが発生する場合があり、これにより例外が記録されなくなり、次のように置き換える必要があります。 [正しい例](#correct-logging-always-comes-first).
+ログ記録前のロジックにより、別の例外や致命的なエラーが発生する場合があり、これにより例外が記録されなくなり、次のように置き換える必要があります。 [正しい例](#logging-always-comes-first).
 
 ```php
 try {
@@ -101,7 +101,7 @@ try {
 
 ### ![誤った](../../../assets/no.svg) 空 `catch`
 
-空 `catch` ブロックは、意図しないミュートの兆候である可能性があり、 [正しい例](#correct-mute-signals).
+空 `catch` ブロックは、意図しないミュートの兆候である可能性があり、 [正しい例](#mute-signals).
 
 ```php
 try {
@@ -137,11 +137,11 @@ try {
 
 この方法では、PSR-3 に準拠していない改行がメッセージに含まれます。 例外（スタックトレースを含む）は、メッセージコンテキストの一部として、New Relicまたは他の PSR-3 モノログ互換のログストレージのメッセージと共に正しく保存される必要があります。
 
-次に示す正しい例に従ってコードを置き換え、この問題を修正します。 [例外ログに書き込む](#correct-write-to-the-exception-log) または [例外をダウングレード](#correct-downgrade-exceptions).
+次に示す正しい例に従ってコードを置き換え、この問題を修正します。 [例外ログに書き込む](#write-to-the-exception-log) または [例外をダウングレード](#downgrade-exceptions).
 
 ### ![誤った](../../../assets/no.svg) コンテキストのない例外のダウングレード
 
-例外は、エラーにダウングレードされます。このエラーでは、オブジェクトの渡しは許可されず、文字列のみが渡されるので、 `getMessage()`. これにより、トレースが失われ、に示す正しい例に置き換えられます。 [例外ログに書き込む](#correct-write-to-the-exception-log) または [例外をダウングレード](#correct-downgrade-exceptions).
+例外は、エラーにダウングレードされます。このエラーでは、オブジェクトの渡しは許可されず、文字列のみが渡されるので、 `getMessage()`. これにより、トレースが失われ、に示す正しい例に置き換えられます。 [例外ログに書き込む](#write-to-the-exception-log) または [例外をダウングレード](#downgrade-exceptions).
 
 ```php
 try {
@@ -153,7 +153,7 @@ try {
 
 ### ![誤った](../../../assets/no.svg) メッセージのみを例外ログに記録
 
-オブジェクトを渡す代わりに `$e`、のみ `$e->getMessage()` が渡された。 これにより、トレースが失われ、次に示す正しい例に置き換えられます。 [例外ログに書き込む](#correct-write-to-the-exception-log) または [例外をダウングレード](#correct-downgrade-exceptions).
+オブジェクトを渡す代わりに `$e`、のみ `$e->getMessage()` が渡された。 これにより、トレースが失われ、次に示す正しい例に置き換えられます。 [例外ログに書き込む](#write-to-the-exception-log) または [例外をダウングレード](#downgrade-exceptions).
 
 ```php
 try {
@@ -165,7 +165,7 @@ try {
 
 ### ![誤った](../../../assets/no.svg) 見つかりません `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`
 
-の省略 `phpcs:ignore` の行は、PHPCS での警告をトリガーし、CI に合格しないでください。 これは、 [シグナルをミュート](#correct-mute-signals).
+の省略 `phpcs:ignore` の行は、PHPCS での警告をトリガーし、CI に合格しないでください。 これは、 [シグナルをミュート](#mute-signals).
 
 ```php
 try {
