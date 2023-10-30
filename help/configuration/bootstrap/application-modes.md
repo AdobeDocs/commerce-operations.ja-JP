@@ -2,9 +2,9 @@
 title: アプリケーションモード
 description: コマースアプリケーションは、必要に応じて異なるモードで動作します。 使用可能なアプリケーションモードの詳細なリストを表示します。
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 982c478f73bdd1301210db5a89fb09edf69a6c42
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,9 @@ ht-degree: 0%
 
 ## クラウドサポート
 
-クラウドインフラストラクチャプロジェクトのアプリケーションモードを管理する必要はありません。 読み取り専用のファイルシステムのため、リモートクラウド環境でモードを変更することはできません。 Adobe Commerce on cloud infrastructure は、 _保守_ モードを使用します。デプロイメントが完了するまでサイトがオフラインになります。 それ以外の場合、アプリケーションは _実稼動_ モード。 詳しくは、 [デプロイメントプロセス](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) （内） _Commerce on Cloud Infrastructure ガイド_.
+クラウドインフラストラクチャプロジェクトのアプリケーションモードを管理する必要はありません。 読み取り専用のファイルシステムのため、リモートクラウド環境でモードを変更することはできません。 モードの変更を試みないで、 `app/etc/env.php` ファイルを作成する理由 `ece-tools` パッケージは、複数の設定ソースに基づいてファイルを上書きします。
+
+Adobe Commerce on cloud infrastructure は、 _保守_ モードを使用します。デプロイメントが完了するまでサイトがオフラインになります。 それ以外の場合、アプリケーションは _実稼動_ モード。 詳しくは、 [デプロイメントプロセス](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) （内） _Commerce on Cloud Infrastructure ガイド_.
 
 Cloud Docker for Commerce を開発ツールとして使用する場合は、 _開発者_ モードに設定する必要がありますが、ファイルの同期操作が追加されたため、パフォーマンスが低下します。 詳しくは、 [Docker 環境のデプロイ](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) （内） _Cloud Docker for Commerce ガイド_.
 
