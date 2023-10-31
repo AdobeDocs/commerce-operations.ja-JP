@@ -2,10 +2,10 @@
 user-guide-title: 実装プレイブック
 user-guide-description: 成功する Adobe Commerce サイトの計画と実装の戦略について学習します。
 mini-toc-levels: 3
-source-git-commit: c737a8e902c960c933e54e2521107475bb1e5a22
+source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 10%
+source-wordcount: '274'
+ht-degree: 11%
 
 ---
 
@@ -108,7 +108,7 @@ ht-degree: 10%
       - [データベーステーブルの変更](best-practices/development/modifying-core-and-third-party-tables.md)
    - Launch {#launch}
       - [概要](best-practices/launch/overview.md)
-      - [robots.txt ファイルの設定](best-practices/launch/robots-txt.md)
+      - [Web クローラーの設定](best-practices/launch/robots-txt.md)
       - [セキュリティインシデントの防止と対応](best-practices/launch/prevent-respond-security-incident.md)
    - メンテナンス {#maintenance}
       - [概要](best-practices/maintenance/overview.md)

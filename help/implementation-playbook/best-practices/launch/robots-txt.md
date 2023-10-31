@@ -1,19 +1,20 @@
 ---
-title: 「robots.txt」および「sitemap.xml」ファイルの設定に関するベストプラクティス
-description: Adobe Commerceサイトに関する手順を Web クローラーに渡す方法について説明します。
+title: Web クローラーの設定に関するベストプラクティス
+description: 「robots.txt」ファイルと「sitemap.xml」ファイルを使用して、Adobe Commerceサイトの指示を Web クローラーに渡す方法を説明します。
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
 
-# 設定のベストプラクティス `robots.txt` および `sitemap.xml` ファイル
 
-この記事では、 `robots.txt` および `sitemap.xml` Adobe Commerce内のファイル（設定やセキュリティを含む） これらのファイルは、Web ロボット（通常は検索エンジンロボット）に対し、Web サイト上のページのクロール方法を指示します。 これらのファイルを設定すると、サイトのパフォーマンスと検索エンジンの最適化を向上できます。
+# Web クローラーの設定に関するベストプラクティス
+
+この記事では、 `robots.txt` および `sitemap.xml` Adobe Commerce内のファイル（設定やセキュリティを含む） これらのファイルは、Web クローラー（通常は検索エンジンロボット）に対し、Web サイト上のページのクロール方法を指示します。 これらのファイルを設定すると、サイトのパフォーマンスと検索エンジンの最適化を向上できます。
 
 >[!NOTE]
 >
