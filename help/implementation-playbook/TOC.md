@@ -2,9 +2,9 @@
 user-guide-title: 実装プレイブック
 user-guide-description: 成功する Adobe Commerce サイトの計画と実装の戦略について学習します。
 mini-toc-levels: 3
-source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
+source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '277'
 ht-degree: 11%
 
 ---
@@ -109,7 +109,7 @@ ht-degree: 11%
    - Launch {#launch}
       - [概要](best-practices/launch/overview.md)
       - [Web クローラーの設定](best-practices/launch/robots-txt.md)
-      - [セキュリティインシデントの防止と対応](best-practices/launch/prevent-respond-security-incident.md)
+      - [サイトとインフラストラクチャの保護](best-practices/launch/security-best-practices.md)
    - メンテナンス {#maintenance}
       - [概要](best-practices/maintenance/overview.md)
       - [フロントエンドパフォーマンスの監査](best-practices/maintenance/frontend-performance.md)
@@ -118,6 +118,7 @@ ht-degree: 11%
       - [大規模なパッチ適用](best-practices/maintenance/patching-at-scale.md)
       - [注文処理](best-practices/maintenance/order-processing-configuration.md)
       - [データベースのパフォーマンスの問題を解決](best-practices/maintenance/resolve-database-performance-issues.md)
+      - [セキュリティインシデントへの対応](best-practices/maintenance/respond-to-security-incident.md)
       - [実稼動サイトで管理者の更新をスケジュールする](best-practices/maintenance/scheduling-admin-updates-in-production.md)
       - [サービスを更新](best-practices/maintenance/update-services.md)
       - [アップグレードチェックリスト](best-practices/maintenance/upgrade-checklist.md)

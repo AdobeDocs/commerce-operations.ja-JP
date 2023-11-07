@@ -4,9 +4,9 @@ description: 支払いの詳細を安全に処理および保存する方法を�
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 1887d7b285008fc98579955274bbc4affb766d0c
+source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adobe Commerceへのカード所有者データの格納は、 **厳禁の** これは、支払いカード業界のデータセキュリティ標準 (PCI-DSS) に基づく商人としての義務を侵害する可能性があります。 共有責任モデルと商業債務のガイドラインの詳細については、 [Adobe Commerce Shared Responsibility Model Guide](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) をAdobeセキュリティセンターで
 
-e コマースサイトで支払い情報が適切に処理されるようにするには、以下のベストプラクティスに従います。 全体的なセキュリティのベストプラクティスに関する追加のガイダンスについては、 [Adobe Commerceのセキュリティベストプラクティスガイド](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) Adobe・トラスト・センター
+e コマースサイトで支払い情報が適切に処理されるようにするには、以下のベストプラクティスに従います。 セキュリティのベストプラクティスに関する追加のガイダンスについては、 [サイトとインフラストラクチャの保護](../launch/security-best-practices.md).
 
 ## 影響を受ける製品およびバージョン
 

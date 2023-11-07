@@ -2,9 +2,9 @@
 user-guide-title: 設定ガイド
 user-guide-description: Adobe CommerceまたはMagento Open Sourceアプリケーションの機能とサービスを設定します。
 feature: Configuration
-source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
+source-git-commit: b61a2726e1a26229515d28332bbd88ba3d416a98
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -126,7 +126,7 @@ ht-degree: 0%
    + [キャッシュ中毒](security/cache-poisoning.md)
    + [セキュア cron PHP](security/secure-cron-php.md)
    + [セキュリティ TXT](security/security-txt.md)
-   + [X-Frame-Options ヘッダー](security/xframe-options.md)
+   + [クリックジャックのエクスプロイト](security/xframe-options.md)
 + ストレージ {#storage}
    + [データベースプロファイラー](storage/db-profiler.md)
    + リモートストレージ {#remote-storage}

@@ -1,18 +1,18 @@
 ---
-title: X-Frame-Options ヘッダー
-description: X-Frame-Options を使用して、ページのレンダリングを制御します。
+title: クリックジャックの弱点を防ぐ
+description: 「X-Frame-Options」ヘッダーを使用してページのレンダリングを制御することで、クリックジャックの悪用を防ぎます。
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# X-Frame-Options ヘッダー
+# クリックジャックの弱点を防ぐ
 
-を防ぐには [クリックジャッキング](https://owasp.org/www-community/attacks/Clickjacking) を使用する場合、 [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) ストアフロントへのリクエストの HTTP リクエストヘッダー。
+回避 [クリックジャッキング](https://owasp.org/www-community/attacks/Clickjacking) ～を含むことによる悪用 [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) ストアフロントへのリクエストの HTTP リクエストヘッダー。
 
 The `X-Frame-Options` ヘッダーを使用すると、ブラウザーでページを `<frame>`, `<iframe>`または `<object>` 次のように指定します。
 
