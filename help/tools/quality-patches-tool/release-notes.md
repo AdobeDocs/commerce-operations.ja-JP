@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6e82738ab9b3ea106b7987fac2f6f4a026ddc4f0
+source-git-commit: b1c258b33898ec07a0d0d805843bea1b3e9de478
 workflow-type: tm+mt
-source-wordcount: '15145'
+source-wordcount: '15346'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,18 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.41 {#v1-1-41}
+
+* **ACSD-54376** (Adobe Commerce >=2.4.2 &lt;2.4.7) — 製品が既に買い物かごに追加された後に共有カタログから削除されたときに買い物かごで発生する問題を修正します。
+* **ACSD-53722** (Adobe Commerce >=2.4.4 &lt;2.4.7 の場合 ) — 異なる範囲のスケジュール済み更新がアクティブになると、バンドルされた製品オプションの価格が$0 に変わる問題を修正しました。
+* **ACSD-53643** (Adobe Commerce>=2.4.3 &lt;2.4.7) — 無効または在庫切れの製品を含む発注を行った場合に、注文の合計が正しくない問題を修正しました。 これは、 *[!UICONTROL Place Order]* 」ボタンを使用します。
+* **ACSD-54067** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) — 製品のビデオがモバイルデバイスで再生されない問題を修正しました。
+* **ACSD-55414** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.6) - MariaDB が EAV entity_id を文字列から整数にキャストしようとすると、パフォーマンスが向上します。
+* **ACSD-51819** (Adobe Commerce>=2.4.4 &lt;2.4.4-p4) — 同じ見積もり ID を使用して複数の注文を行える問題を修正しました。
+* **ACSD-53118** (Adobe Commerce >=2.4.0 &lt;2.4.7) - *[!UICONTROL Cart Price Rule]* 製品の属性が空の場合、はクーポンコードを使用して適用されます。
+* **ACSD-54324** (Adobe Commerce >=2.4.5 &lt;2.4.7) - GraphQL requisition_lists 要求でページネーション設定が考慮されず、すべての結果が返される問題を修正しました。
+* 更新済みのパッチ：MDVA-42855-v2
 
 ## v1.1.40 {#v1-1-40}
 
