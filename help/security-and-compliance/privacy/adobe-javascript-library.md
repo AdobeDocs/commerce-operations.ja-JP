@@ -4,9 +4,9 @@ description: Adobe CommerceおよびMagento Open Sourceが収集した顧客の�
 hide: true
 hidefromtoc: true
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-The [Adobeプライバシー JavaScript ライブラリ](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) は、プライベートデータにアクセスして削除するためのプロセスを作成するのに役立つ一連のツールです。
+The [Adobeプライバシー JavaScript ライブラリ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) は、プライベートデータにアクセスして削除するためのプロセスを作成するのに役立つ一連のツールです。
 
 Adobe CommerceおよびMagento Open Sourceデータトラッキングサービスは、 [一般データ保護規則 (GDPR)](gdpr.md) および [カリフォルニア州消費者プライバシー法 (CCPA)](ccpa.md).
 
@@ -43,7 +43,7 @@ AdobePrivacy JS ライブラリは、ブラウザーに保存された ID デー
 `retrieveThenRemoveIdentities()`
 ：この関数は、に似ています。 `removeIdentities()` では、id の配列を取得し、ブラウザーから削除します。
 
-これらの関数の詳細と使用例については、 [公式ライブラリドキュメント](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html).
+これらの関数の詳細と使用例については、 [公式ライブラリドキュメント](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
 
 ### 初期化
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 このコンストラクタは、インスタンス化中にパラメーターを持つ設定オブジェクトを受け入れます。
-詳しくは、 [公式ライブラリドキュメント](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) を参照してください。
+詳しくは、 [公式ライブラリドキュメント](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) を参照してください。

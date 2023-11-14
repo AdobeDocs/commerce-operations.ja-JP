@@ -3,9 +3,9 @@ title: オンプレミスのインストールセキュリティ
 description: オンプレミスでのAdobe CommerceまたはMagento Open Sourceのインストールのセキュリティ姿勢を改善する方法について説明します。
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -68,4 +68,4 @@ SELinux を有効にして Apache が別のホストへの接続を開始でき�
 セキュリティ要件によっては、ファイアウォール内のポート 80 および他のポートを開く必要が生じる場合があります。 ネットワークセキュリティは機密性が高いので、Adobeは先に進む前に IT 部門に相談することを強くお勧めします。 次に、推奨される参照を示します。
 
 * Ubuntu: [Ubuntu ドキュメントページ](https://help.ubuntu.com/community/IptablesHowTo)
-* CentOS: [CentOS のハウツー](https://wiki.centos.org/HowTos/Network/IPTables).
+* CentOS: [CentOS のハウツー](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).
