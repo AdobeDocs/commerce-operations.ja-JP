@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: b1c258b33898ec07a0d0d805843bea1b3e9de478
+source-git-commit: 704c3e2934c74ee4b06499bbfc4cb68b0a007a1e
 workflow-type: tm+mt
-source-wordcount: '15346'
+source-wordcount: '15669'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,23 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.42 {#v1-1-42}
+
+* **ACSD-53658** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.7) - *[!UICONTROL Recently Viewed]* ストア表示で、製品データが適切に更新されません。
+* **ACSD-54626** (Adobe Commerce >=2.4.6 &lt;2.4.7) — 新しい発注ルール (`createPurchaseOrderApprovalRule`) を `NUMBER_OF_SKUS` を介して属性を設定 [!DNL GraphQL].
+* **ACSD-53845** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) - [!DNL MySQL] 次の場合の接続タイムアウトの問題 `consumer max_messages` = 0。
+* **ACSD-54890** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) - `aggregate_sales_report_bestsellers_data` 原因 [!DNL MySQL] 次に起因するエラー： `/tmp` ディスクの空き容量が不足しています。
+* **ACSD-55112** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) - *[!UICONTROL Submit review]* ボタンは、 [!DNL Google reCAPTCHA v3] 検証。
+* **ACSD-54264** (Adobe Commerce>=2.4.4-p5 &lt;2.4.5 の場合 ) || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) — エラーメッセージが表示される問題を修正します。 *「要求された属性は更新できません。 行 ID: store_id&quot;* 顧客が別のストアビューからネゴシエーション可能な見積もりをチェックアウトしようとすると表示されます。
+* **ACSD-54418** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) — 動的価格設定バンドルの各子製品に一定量の割引が正しく適用されない問題を修正しました。
+* **ACSD-55238** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.7) — 空の製品の保存を修正しました。 *[!UICONTROL Meta Description]*.
+* **ACSD-54966** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.7) — 以前の注文が失敗した場合に、顧客ごとの使用が制限されたクーポンコードを再利用できない問題を修正しました。
+* **ACSD-54060** (Adobe CommerceとMagento Open Source>=2.4.3 &lt;2.4.7) — 制限付き管理者が、別のスコープに割り当てられた別の製品の子である場合に製品を保存できない問題を修正しました。
+* **ACSD-48910** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.6) — 複数のソースに割り当てられたバンドル製品が、ゼロ以外の数量であっても、注文の請求後に在庫切れになる問題を修正しました。
+* **ACSD-55381** (Adobe Commerce >=2.4.2 &lt;2.4.7 の場合 ) — クエリ時の内部サーバーエラーを修正します。 `configurable_product_option_uid` および `configurable_product_option_value_uid` フィールド [!DNL B2B] *[!UICONTROL Requisition list]* 経由 [!DNL GraphQL].
+* **ACSD-55628** (Adobe Commerceの場合 >=2.4.4-p2 &lt; 2.4.5.5 || >=2.4.5-p1 &lt; 2.4.6) — 会社登録フォームへのファイルのアップロードと、ストアフロントの顧客属性のファイルの置き換えを修正しました。
+* 更新済みのパッチ： ACSD-51240、ACSD-51890、ACSD-53098
 
 ## v1.1.41 {#v1-1-41}
 
