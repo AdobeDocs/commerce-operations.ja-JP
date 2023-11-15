@@ -2,9 +2,9 @@
 title: オンプレミスでの迅速なインストールを開始
 description: 所有しているインフラストラクチャにAdobe CommerceまたはMagento Open Sourceをインストールするには、次の手順に従います。
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
+source-git-commit: 3c6527e5936438d6f1f52b32082cc7dde5f87f22
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,10 @@ Adobe CommerceまたはMagento Open Sourceのメタパッケージを取得す�
    ```
 
    プロンプトが表示されたら、認証キーを入力します。 公開鍵と秘密鍵は、 [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
+
+   >[!NOTE]
+   >
+   > コンポーザーを使用する場合 `auth.json` ファイルまたは環境変数を使用する場合、認証キーの入力を求めるプロンプトは表示されません。
 
    次のようなエラーが発生した場合： `Could not find package...` または `...no matching package found`を使用する場合は、コマンドに入力ミスがないことを確認します。 それでもエラーが発生する場合は、Adobe Commerceのダウンロードが許可されていない可能性があります。 連絡先 [Adobe Commerceサポート](https://support.magento.com/hc/en-us) を参照してください。
 
