@@ -1,10 +1,10 @@
 ---
 user-guide-title: セキュリティとコンプライアンス
-user-guide-description: Adobe CommerceとMagento Open Sourceの販売業者が、安全な環境を維持し、管轄区域内のオンライン商人の法的要件とベストプラクティスを満たす責任を負う方法について説明します。
+user-guide-description: 安全なAdobe Commerceプロジェクトを維持するための規制への準拠と取引先責任について説明します。
 feature: Security
-source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
+source-git-commit: 28b94fe2fd4f976ad48fa9c59e7e1559db8ba35e
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '58'
 ht-degree: 1%
 
 ---
@@ -13,6 +13,7 @@ ht-degree: 1%
 # セキュリティとコンプライアンス {#security-and-compliance}
 
 - [概要](overview.md)
+- [共有された責任](shared-responsibility.md)
 - [コンテンツセキュリティポリシー](content-security-policy.md)
 - プライバシー規制 {#privacy}
    - [CCPA](privacy/ccpa.md)
