@@ -2,9 +2,9 @@
 title: オンプレミスインストールの前提条件
 description: Adobe CommerceとMagento Open Sourceのオンプレミスインストールに必要なソフトウェアの依存関係について詳しく説明します。
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 9fe0a27346554bca3cb635b2e7ecf175adcec54a
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
@@ -66,9 +66,11 @@ Apache をインストールまたはアップグレードするには、 [Apach
 
 ### PHP
 
-詳しくは、 [システム要件](../system-requirements.md) （PHP およびのサポート対象バージョンの場合） [PHP] PHP の要件に関する情報。
+詳しくは、 [システム要件](../system-requirements.md) （PHP およびのサポート対象バージョンの場合） [PHP](../system-requirements.md#php-settings) PHP の要件に関する情報。
 
 ### MySQL
+
+インストールするAdobe CommerceまたはMagento Open Sourceのバージョンに対応する MySQL の互換性があることを確認してください。 詳しくは、 [必要システム構成](../system-requirements.md) を参照してください。
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -80,7 +82,7 @@ mysql -u <database root user or database owner name> -p
 mysql -u magento -p
 ```
 
-インストールするAdobe CommerceまたはMagento Open Source([サポートされているバージョンについては、こちらを参照してください。](../system-requirements.md). 次の結果は、実行中のバージョンを示します )。
+次の結果は、実行中のバージョンを示します。
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
