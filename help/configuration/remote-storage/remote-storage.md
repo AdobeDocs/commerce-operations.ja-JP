@@ -3,9 +3,9 @@ title: リモートストレージの構成
 description: オンプレミスのコマースアプリケーション用にリモートストレージモジュールを構成する方法を説明します。
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ PHP の使用禁止のネイティブ関数のリストは、 [magento-coding-st
 
 >[!INFO]
 >
->sync コマンドは、 `pub/media` ディレクトリ _not_ のインポート/エクスポートファイル `var` ディレクトリ。 詳しくは、 [予定されているインポート/エクスポート][import-export] （内） _Commerce 2.4 ユーザーガイド_.
+>sync コマンドは、 `pub/media` ディレクトリ _not_ のインポート/エクスポートファイル `var` ディレクトリ。 詳しくは、 [予定されているインポート/エクスポート](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) （内） _Commerce 2.4 ユーザーガイド_.
 
 <!-- link definitions -->
 

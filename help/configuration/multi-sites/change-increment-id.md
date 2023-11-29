@@ -2,9 +2,9 @@
 title: 増分 ID を変更
 description: Commerce データベースエンティティの増分 ID を変更します。
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->また、PayPal の Payment Receiving Preferences で、請求書 ID ごとに複数の支払いを許可することで、PayPal の支払いゲートウェイの問題を修正することもできます。 詳しくは、 [PayPal ゲートウェイがリクエストを拒否しました — 請求書の重複の問題] （内） _ナレッジベース_.
+>また、PayPal の Payment Receiving Preferences で、請求書 ID ごとに複数の支払いを許可することで、PayPal の支払いゲートウェイの問題を修正することもできます。 詳しくは、 [PayPal ゲートウェイがリクエストを拒否しました — 請求書の重複の問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) （内） _ナレッジベース_.
 
 ## 前提条件の手順
 
@@ -55,7 +55,7 @@ ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_va
 
 >[!INFO]
 >
-重要：新しい増分値は、現在の増分値より大きい値である必要があります。
+>重要：新しい増分値は、現在の増分値より大きい値である必要があります。
 
 次のクエリを実行した後：
 
@@ -74,6 +74,6 @@ ALTER TABLE sequence_order_1 AUTO_INCREMENT = 2000;
 
 <!-- Link Definitions -->
 
-[PayPal ゲートウェイがリクエストを拒否しました — 請求書の重複の問題]: https://support.magento.com/hc/en-us/articles/115002457473
+[PayPal gateway rejected request - duplicate invoice issue]: https://support.magento.com/hc/en-us/articles/115002457473
 [DB バックアップの作成]: https://support.magento.com/hc/en-us/articles/360003254334
 [サポート対象のバージョン]
