@@ -3,9 +3,9 @@ title: L2 キャッシュの設定
 description: L2 キャッシュを設定する方法を説明します。
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ba3c656566af47f16f58f476d7bc9f4781bb0234
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -47,8 +47,7 @@ Commerce は、ハッシュ化されたデータバージョンを Redis に格�
                 'local_backend' => 'Cm_Cache_Backend_File',
                 'local_backend_options' => [
                     'cache_dir' => '/dev/shm/'
-                ],
-                'use_stale_cache' => false,
+                ]
             ],
             'frontend_options' => [
                 'write_control' => false,
@@ -69,8 +68,7 @@ Commerce は、ハッシュ化されたデータバージョンを Redis に格�
    - `remote_backend_options` は、リモートキャッシュの設定です。
    - `local_backend` はローカルキャッシュの実装です。 `Cm_Cache_Backend_File`
    - `local_backend_options` は、ローカルキャッシュの設定です。
-      - `cache_dir` は、ローカルキャッシュが保存されるディレクトリのファイルキャッシュ固有のオプションです。
-   - `use_stale_cache` は、古いキャッシュの使用を有効または無効にするフラグです。
+   - `cache_dir` は、ローカルキャッシュが保存されるディレクトリのファイルキャッシュ固有のオプションです。
 
 Adobeでは、リモートキャッシュ (`\Magento\Framework\Cache\Backend\Redis`) および `Cm_Cache_Backend_File` 共有メモリ内のデータのローカルキャッシュの場合は、次を使用します。 `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
@@ -94,6 +92,8 @@ Adobeでは、 `use_stale_cache` オプションは、次のように、最も�
 - `reflection`
 - `translate`
 
+Adobeでは、 `use_stale_cache` オプション `default` キャッシュタイプ。
+
 次のコードは、設定の例を示しています。
 
 ```php
@@ -114,8 +114,7 @@ Adobeでは、 `use_stale_cache` オプションは、次のように、最も�
                 'local_backend' => 'Cm_Cache_Backend_File',
                 'local_backend_options' => [
                     'cache_dir' => '/dev/shm/'
-                ],
-                'use_stale_cache' => false,
+                ]
             ],
             'frontend_options' => [
                 'write_control' => false,
