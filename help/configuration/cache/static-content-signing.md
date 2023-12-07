@@ -3,9 +3,9 @@ title: 静的コンテンツキャッシュ
 description: 静的コンテンツの署名と、この機能を有効または無効にする方法を理解できます。
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: d099d60bcf3c960b2e40b48c386041d8865cfb50
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,10 @@ http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/ima
 
 Commerce では、デフォルトでこの機能が有効になっています。古い静的リソースを提供するブラウザーに関する問題を防ぐため、Adobeではこの機能を有効にしておくことをお勧めします。
 
-この機能の設定については、 [**[!UICONTROL Stores]**/設定/設定/**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+静的コンテンツ署名の設定は、次の場所にあります： [**[!UICONTROL Stores]**/設定/設定/**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+
+- **オンプレミスのみ**：この設定は、サイトが **not** in [実稼動モード](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
+- **クラウド**：実稼動モードが厳密に適用されるので、この設定は非表示になっています。そのため、次に示すコマンドラインを使用する必要があります。
 
 ![静的ファイル設定](../../assets/configuration/static-files-settings.png)
 
