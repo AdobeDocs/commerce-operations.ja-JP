@@ -2,7 +2,7 @@
 user-guide-title: 実装プレイブック
 user-guide-description: 成功する Adobe Commerce サイトの計画と実装の戦略について学習します。
 mini-toc-levels: 3
-source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
+source-git-commit: a547653046fd1926c7fd587df19cb2209e263114
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 11%
@@ -106,6 +106,7 @@ ht-degree: 11%
       - [プライベートコンテンツブロック](best-practices/development/private-content-block-configuration.md)
       - [静的コンテンツのデプロイメント](best-practices/development/static-content-deployment.md)
       - [データベーステーブルの変更](best-practices/development/modifying-core-and-third-party-tables.md)
+      - [コアおよびサードパーティコードの変更](best-practices/development/modifying-core-and-third-party-code.md)
    - Launch {#launch}
       - [概要](best-practices/launch/overview.md)
       - [Web クローラーの設定](best-practices/launch/robots-txt.md)
