@@ -1,7 +1,7 @@
 ---
-source-git-commit: 20add0a748e8df38dff48a779c63e1177d2a022d
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -58,3 +58,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >これらのリリースノートで説明されている機能強化とバグ修正のコードはAdobe Commerceにバンドルされていますが、これらのプロジェクト (B2B、Page Builder、Progressive Web Application(PWA)Studio など ) も個別にリリースされています。 これらのプロジェクトのバグ修正は、個別のプロジェクト固有のリリース情報に記載されています。この情報は、各プロジェクトのドキュメントに記載されています。 詳しくは、 [製品リリースの概要](/help/release/release-notes/overview.md).
+
+## PHP プロセス制御 {#php-process-control}
+
+並列モードでインデクサーを実行する前に、プロセス制御のサポート (`pcntl`) を PHP で使用する場合に使用します。 詳しくは、 [インストール](https://www.php.net/manual/en/pcntl.installation.php) PHP ドキュメント内。

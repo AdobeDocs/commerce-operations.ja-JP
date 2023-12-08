@@ -2,9 +2,9 @@
 title: インデクサーの管理
 description: コマースインデクサーの表示および管理方法の例を参照してください。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 795d4e9d1910d0ad826eb6c82ac451ac58e43063
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,8 @@ Catalog Search index has been rebuilt successfully in <time>
 >すべてのインデクサーのインデックスを再作成すると、製品、顧客、カテゴリ、プロモーションルールが多数あるストアに対して長い時間を要する可能性があります。
 
 ### 並列モードでのインデックス再作成
+
+{{php-process-control}}
 
 インデクサーは、並列モードでのインデックス再作成をサポートするために、スコープ指定およびマルチスレッド化されます。 インデクサーのディメンションで並列化し、複数のスレッドで実行するので、処理時間が短縮されます。
 

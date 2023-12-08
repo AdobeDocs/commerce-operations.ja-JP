@@ -2,9 +2,9 @@
 title: 必要システム構成
 description: このリファレンスを使用して、Adobe CommerceとMagento Open Sourceのリリースでテストされた、必要なソフトウェアの依存関係を特定します。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: ad715d1581442fa447e394d88d496ec52519a1c3
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,10 @@ PHP の設定には、 `memory_limit` 設定を使用することで、Adobe Com
 オンプレミスの場合は、PHP OPcache がインストールされていることを確認します。 [PHP 設定](prerequisites/php-settings.md). また、パフォーマンス設定に関する具体的なガイダンスについては、 [PHP 設定](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) （内） _パフォーマンスのベストプラクティス_ ガイド。
 
 OPcache を個別にインストールする必要がある場合は、 [PHP OPcache のドキュメント](https://www.php.net/manual/en/opcache.setup.php).
+
+### PHP プロセス制御
+
+{{php-process-control}}
 
 ### PHPUnit
 
