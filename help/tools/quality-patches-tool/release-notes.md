@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 704c3e2934c74ee4b06499bbfc4cb68b0a007a1e
+source-git-commit: 3364434c37935285214451a7d242ae38815f3453
 workflow-type: tm+mt
-source-wordcount: '15669'
+source-wordcount: '19210'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,24 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.43 {#v1-1-43}
+
+* **ACSD-54972** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) — カテゴリ URL の変更後に正規カテゴリ URL が更新されない問題を修正しました。
+* **ACSD-53636** (Adobe CommerceとMagento Open Source>=2.4.3 &lt;2.4.5) — 子製品が特価の設定可能な製品の製品一覧ページに通常の価格が表示されない問題を修正しました。
+* **ACSD-54885** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) — 管理者ユーザーが *顧客としてログイン* 機能。
+* **ACSD-55610** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.7) — 一部キャンセルされた注文の割引額が正しくない問題を修正しました。
+* **ACSD-55334** (Adobe CommerceとMagento Open Source>=2.4.3 &lt;2.4.7) - GraphQL応答の翻訳辞書を介したラベルの翻訳を修正します。
+* **ACSD-54739** (Adobe Commerce >=2.4.5 &lt;2.4.7) — 関連する製品ルールに製品の在庫のステータス条件が適用されない問題を修正しました。
+* **ACSD-53925** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) — 管理者が CMS ブロックを製品カルーセルと共に保存できない問題を修正しました。 `catalog_product_price` dimensions-mode は次のように設定されます。 *web サイト*.
+* **ACSD-52714** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) — 日付形式が *Y-m-d*.
+* **ACSD-55055** (Adobe CommerceおよびMagento Open Source>=2.4.2 &lt;2.4.7) — 買い物かご内の買い物かごの価格ルールに製品属性を読み込むパフォーマンスが向上しました。
+* **ACSD-53790** (Adobe Commerce >=2.4.6 &lt;2.4.7) - 1 つの製品に対して複数の RMA を REST API で作成できる問題を修正しました。
+* **ACSD-56090** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.5) - GraphQLリクエストが、特別にリクエストされたストアデータではなく、すべてのストアのデータを応答していた問題を修正しました。
+* **ACSD-54983** (Adobe Commerce >=2.4.2 &lt;2.4.7 の場合 ) — ユーザーのステータスがに設定されている場合に、GraphQL要求で会社のユーザー UID を取得できない問題を修正しました。 *[!UICONTROL Inactive]*.
+* **ACSD-53309** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) - *[!UICONTROL Regular Price]* ラベル（カスタマイズ可能なオプションが選択されている場合）
+* **ACSD-55305** (Adobe Commerce >=2.4.4 &lt;2.4.7) - *[!UICONTROL Edit Company User]* ポップアップ **[!UICONTROL myAccount]** > **[!UICONTROL Company Structure]** 画面上のローダでページがフリーズする。
+* 更新済みのパッチ：ACSD-49013
 
 ## v1.1.42 {#v1-1-42}
 
