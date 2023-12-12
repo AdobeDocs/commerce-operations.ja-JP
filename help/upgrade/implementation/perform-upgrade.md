@@ -1,26 +1,28 @@
 ---
 title: アップグレードの実行
-description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceプロジェクトをアップグレードします。
+description: 次の手順に従って、Adobe Commerceのオンプレミスデプロイメントをアップグレードします。
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 0cee0ab36274758b583c04dbee8251ce3b78e559
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
 
+
 # アップグレードの実行
 
-ソフトウェアをインストールした場合は、次の方法でAdobe CommerceまたはMagento Open Sourceアプリケーションをコマンドラインからアップグレードできます。
+アップグレード可能 _オンプレミス_ 次の方法でソフトウェアをインストールした場合は、コマンドラインからAdobe CommerceまたはMagento Open Sourceアプリケーションのデプロイメントを実行します。
 
-- を使用したメタパッケージのダウンロード `composer create-project` コマンドを使用します。
+- を使用した Composer メタパッケージのダウンロード `composer create-project` コマンドを使用します。
 - 圧縮アーカイブをインストールしています。
 
 >[!NOTE]
 >
->GitHub リポジトリを複製した場合は、この方法を使用してアップグレードしないでください。 代わりに、 [Git ベースのインストールのアップグレード](../developer/git-installs.md) を参照してください。
+>- Adobe Commerce on cloud infrastructure プロジェクトについては、 [コマースバージョンをアップグレード](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) 」を参照してください。
+>- GitHub リポジトリを複製した場合は、この方法を使用してアップグレードしないでください。 詳しくは、 [Git ベースのインストールのアップグレード](../developer/git-installs.md).
 
-以下の手順は、Composer を使用してアップグレードする方法を示しています。 Adobe Commerce 2.4.2 では、Composer 2 のサポートが導入されました。 &lt;2.4.1 からアップグレードする場合は、まず Composer 1 を使用して、Composer 2 と互換性のあるバージョン（例えば、2.4.2）にアップグレードする必要があります _前_ 2.4.2 以降のアップグレードの場合は、Composer 2 にアップグレードします。 さらに、 [サポート対象バージョン](../../installation/system-requirements.md) PHP の
+以下の手順は、Composer パッケージマネージャーを使用したアップグレード方法を示しています。 Adobe Commerce 2.4.2 では、Composer 2 のサポートが導入されました。 &lt;2.4.1 からアップグレードする場合は、まず Composer 1 を使用して、Composer 2 と互換性のあるバージョン（例えば、2.4.2）にアップグレードする必要があります _前_ 2.4.2 以降のアップグレードの場合は、Composer 2 にアップグレードします。 さらに、 [サポート対象バージョン](../../installation/system-requirements.md) PHP の
 
 >[!WARNING]
 >
@@ -34,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->様々なリリースレベルを指定する際のヘルプについては、この節の最後の例を参照してください。 例えば、マイナーリリース、品質パッチ、セキュリティパッチなどです。 Adobe Commerceのお客様は、GA(General Availability) の日付の 2 週間前にパッチにアクセスできます。 リリース前のパッケージは、Composer でのみ使用できます。 GA になるまで、ダウンロードポータルや GitHub で見つけることはできません。 Composer でこれらのパッケージが見つからない場合は、Adobe Commerceサポートにお問い合わせください。
+>様々なリリースレベルを指定する際のヘルプについては、この節の最後の例を参照してください。 たとえば、品質パッチとセキュリティパッチ。 Composer でこれらのパッケージが見つからない場合は、Adobe Commerceサポートにお問い合わせください。
 
 1. メンテナンスモードに切り替えて、アップグレードプロセス中にストアにアクセスできないようにします。
 
@@ -58,7 +60,7 @@ ht-degree: 0%
    bin/magento cron:remove
    ```
 
-1. すべてのメッセージキューコンシューマーを手動で起動し、すべてのメッセージが消費されるようにします。
+1. すべてのメッセージキューコンシューマーを手動で開始し、すべてのメッセージが消費されていることを確認します。
 
    ```bash
    bin/magento cron:run --group=consumers
@@ -114,7 +116,7 @@ ht-degree: 0%
 
    - `--interactive-root-conflicts`  — （オプション）以前のバージョンの最新の値、またはアップグレード先のバージョンと一致しないカスタマイズ値をインタラクティブに表示および更新できます。
 
-   - `--force-root-updates`  — （オプション）予期されたMagento値を持つ競合するすべてのカスタム値を上書きします。
+   - `--force-root-updates`  — （オプション）予期された Commerce 値を持つ競合するすべてのカスタム値を上書きします。
 
    - `--help`  — （オプション）プラグインの使用状況の詳細を示します。
 
@@ -142,58 +144,36 @@ _Adobe Commerce_:
 composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 versions
 ```
 
-### 例 — マイナーリリース
-
-マイナーリリースには、新機能、品質修正およびセキュリティ修正が含まれています。 Composer を使用してマイナーリリースを指定します。 例えば、Magento Open Source2.4.3 のメタパッケージを指定するには、次のようにします。
-
-_Magento Open Source_:
-
-```bash
-composer require-commerce magento/product-community-edition 2.4.0 --no-update
-```
-
-_Adobe Commerce_:
-
-```bash
-composer require-commerce magento/product-enterprise-edition 2.4.0 --no-update
-```
-
 ### 例 — 品質パッチ
 
-品質パッチには主に機能が含まれる _および_ セキュリティの修正。 ただし、新しい後方互換性のある機能を含めることができます。 Composer を使用して、品質パッチをダウンロードします。 例えば、Magento Open Source2.4.1 のメタパッケージを指定するには、次のようにします。
+品質パッチには主に機能が含まれる _および_ セキュリティの修正。 ただし、新しい後方互換性のある機能を含めることができます。 Composer を使用して、品質パッチをダウンロードします。
+
+_Adobe Commerce_:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
+composer require-commerce magento/product-enterprise-edition 2.4.6 --no-update
 ```
 
 _Magento Open Source_:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
-```
-
-_Adobe Commerce_:
-
-```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3 --no-update
+composer require-commerce magento/product-community-edition 2.4.6 --no-update
 ```
 
 ### 例 — セキュリティパッチ
 
-セキュリティパッチにはセキュリティ修正のみが含まれています。 これらは、アップグレードプロセスをより迅速かつ容易にするように設計されています。
-
-セキュリティパッチでは、Composer の命名規則を使用します。 `2.4.x-px`. Composer を使用してパッチを指定します。
-
-_Magento Open Source_:
-
-```bash
-composer require-commerce magento/product-community-edition 2.4.3-p1 --no-update
-```
+セキュリティパッチにはセキュリティ修正のみが含まれています。 これらは、アップグレードプロセスをより迅速かつ容易にするように設計されています。 セキュリティパッチでは、Composer の命名規則を使用します。 `2.4.x-px`.
 
 _Adobe Commerce_:
 
 ```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-update
+composer require-commerce magento/product-enterprise-edition 2.4.6-p3 --no-update
+```
+
+_Magento Open Source_:
+
+```bash
+composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 ```
 
 ## メタデータを更新
@@ -250,7 +230,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-updat
 
 ## 作業内容を確認する
 
-ストアフロント URL を Web ブラウザーで開き、アップグレードが成功したかどうかを確認します。 アップグレードに失敗した場合、ストアフロントは正しく読み込まれません。
+アップグレードが成功したかどうかを確認するには、Web ブラウザーでストアフロント URL を開きます。 アップグレードに失敗した場合、ストアフロントは正しく読み込まれません。
 
 アプリケーションが  `We're sorry, an error has occurred while generating this email.` エラー：
 
