@@ -2,9 +2,9 @@
 title: インデクサーの管理
 description: コマースインデクサーの表示および管理方法の例を参照してください。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
+source-git-commit: 41082413e24733dde34542a2c9cb3cabbfdd4a35
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -225,7 +225,13 @@ Product Price:                                     Update on Save
 Catalog Search:                                    Update on Save
 ```
 
-### インデクサーの設定
+### インデクサーモードの設定
+
+>[!IMPORTANT]
+>
+>必ず [!DNL Customer Grid] 次を使用 `realtime` の代わりに `schedule`. The [!DNL Customer Grid] は、 [!UICONTROL Update on Save] オプション。 このインデックスは、 `Update by Schedule` オプション。 次のコマンドラインを使用して、保存時にこのインデクサーを更新するように設定します。 `php bin/magento indexer:set-mode realtime customer_grid`
+>
+>詳しくは、 [インデクサー設定のベストプラクティス](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) （内） _実装プレイブック_.
 
 >[!INFO]
 >
