@@ -4,9 +4,9 @@ description: Adobe Commerce用の拡張 Redis キャッシュ実装を使用し�
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 156e6412b9f94b74bad040b698f466808b0360e3
+source-git-commit: 6772c4fe31cfcd18463b9112f12a2dc285b39324
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,49 @@ stage:
 >[!NOTE]
 >
 >最新バージョンの `ece-tools` パッケージ。 そうでない場合、 [最新バージョンにアップグレード](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). ローカル環境にインストールされているバージョンを確認するには、 `composer show magento/ece-tools` CLI コマンド。
+
+
+### L2 キャッシュメモリのサイズ調整 (Adobe Commerce Cloud)
+
+L2 キャッシュは [一時ファイルシステム](https://en.wikipedia.org/wiki/Tmpfs) を格納するメカニズムとして使用します。 特別なキー値データベースシステムと比較すると、一時ファイルシステムには、メモリ使用量を制御するためのキー削除ポリシーはありません。
+
+メモリ使用量の制御が不足していると、古いキャッシュを蓄積することで、L2 キャッシュのメモリ使用量が時間の経過と共に増加する可能性があります。
+
+L2 キャッシュ実装のメモリ枯渇を防ぐため、Adobe Commerceは、特定のしきい値に達するとストレージをクリアします。 しきい値のデフォルト値は 95%です。
+
+キャッシュストレージのプロジェクト要件に基づいて、L2 キャッシュメモリの最大使用量を調整することが重要です。 次のいずれかの方法で、メモリキャッシュのサイズ設定を設定します。
+
+- サポートチケットを作成して、 `/dev/shm` マウント
+- を調整します。 `cleanup_percentage` ストレージの最大充填率を制限するための、アプリケーションレベルのプロパティ。 残りの空きメモリは、他のサービスで使用できます。
+キャッシュ設定グループの下のデプロイメント設定で設定を調整できます `cache/frontend/default/backend_options/cleanup_percentage`.
+
+>[!NOTE]
+>
+>The `cleanup_percentage` 設定可能なオプションがAdobe Commerce 2.4.4 で導入されました。
+
+次のコードは、 `.magento.env.yaml` ファイル：
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            cleanup_percentage: 90
+```
+
+キャッシュの要件は、プロジェクトの設定とカスタムサードパーティコードによって異なる場合があります。 L2 キャッシュメモリのサイズ設定の範囲により、L2 キャッシュを動作させる際に、しきい値のヒットが多すぎません。
+L2 キャッシュのメモリ使用量は、頻繁なストレージのクリアを避けるために、しきい値以下で一定のレベルで安定するのが理想的です。
+
+次の CLI コマンドを使用して、クラスタの各ノードで L2 キャッシュストレージメモリの使用量を確認し、 `/dev/shm` 行。
+使用状況はノードごとに異なる場合がありますが、同じ値に収束する必要があります。
+
+```bash
+df -h
+```
 
 ## Redis スレーブ接続を有効にする
 
