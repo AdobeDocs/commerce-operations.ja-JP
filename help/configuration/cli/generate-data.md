@@ -3,10 +3,10 @@ title: パフォーマンステスト用のデータを生成
 description: パフォーマンステストに使用する大量のデータを生成する方法を説明します。
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: a2dc85232aa10761a6729fe66f5548f644cb5bd4
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 9%
+source-wordcount: '788'
+ht-degree: 8%
 
 ---
 
@@ -51,6 +51,8 @@ ht-degree: 9%
 >[!WARNING]
 >
 >データジェネレーターを実行する前に、サーバーで実行中のすべての cron ジョブを無効にします。 cron ジョブを無効にすると、データジェネレーターは、アクティブな cron ジョブと競合するアクションを実行できなくなり、不要なエラーを回避できます。
+>
+>を使用してイベンティングを実装する場合 [!DNL Adobe I/O Events for Adobe Commerce] パフォーマンスをテストする際は、購読する前にこのコマンドを実行します。 [イベント](https://developer.adobe.com/commerce/extensibility/events/). イベントを最初に購読すると、エラーが発生する場合があります。
 
 この節で説明したように、コマンドを実行します。 コマンドを実行した後、次の操作を行う必要があります。 [すべてのインデクサーの再インデックス](../cli/manage-indexers.md).
 
