@@ -3,9 +3,9 @@ title: 高度なワニス構成
 description: ヘルスチェック、猶予、SAINT モードなど、高度な Vanrish 機能を設定します。
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Vanish は、コマースサーバーが正しく機能していない場合に、顧客が長時間の遅延やタイムアウトを経験するのを防ぐいくつかの機能を提供します。 これらの機能は、 `default.vcl` ファイル。 このトピックでは、Commerce が管理からダウンロードする VCL (Varnish Configuration Language) ファイルに追加する機能について説明します。
 
-詳しくは、 [ワニスリファレンスマニュアル](https://varnish-cache.org/docs/6.3/reference/index.html) を参照してください。
+詳しくは、 [ワニスリファレンスマニュアル](https://varnish-cache.org/docs/index.html) を参照してください。
 
 ## ヘルスチェック
 
@@ -36,7 +36,7 @@ Commerce では、次のデフォルトのヘルスチェックが定義され�
 
 The `health_check.php` スクリプトは、 `pub` ディレクトリ。 コマースルートディレクトリが `pub`を変更した場合は、必ず `url` パラメーターから `/pub/health_check.php` から `health_check.php`.
 
-詳しくは、 [ワニスのヘルスチェック](https://varnish-cache.org/docs/6.3/users-guide/vcl-backends.html?highlight=health%20check#health-checks) ドキュメント。
+詳しくは、 [ワニスのヘルスチェック](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) ドキュメント。
 
 ## 猶予モード
 
@@ -85,10 +85,7 @@ bin/magento cache:flush
 
 ### インストール
 
-SAINT モードは、メインの Vanrish パッケージに含まれていません。 個別にバージョン管理される `vmod` をダウンロードしてインストールする必要があります。 その結果、次の記事で説明するように、ソースから Vanrish を再コンパイルする必要があります。
-
-- [Vanish 6.4 のインストール](https://varnish-cache.org/docs/6.4/installation/install.html)
-- [Vanish 6.0 のインストール](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
+SAINT モードは、メインの Vanrish パッケージに含まれていません。 個別にバージョン管理される `vmod` をダウンロードしてインストールする必要があります。 その結果、ソースから Vanrish を再コンパイルする必要があります。 [インストール手順](https://varnish-cache.org/docs/index.html) あなたのバージョンの Vanrish のために。
 
 再コンパイル後に、Saint モードモジュールをインストールできます。 一般に、次の手順に従います。
 

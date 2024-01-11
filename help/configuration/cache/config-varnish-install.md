@@ -3,9 +3,9 @@ title: ワニスを取り付ける
 description: Vanish のインストールに関するアドバイスを参照してください。
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,4 @@ Vanish ソフトウェアのインストールは、このガイドの範囲外�
 varnishd -V
 ```
 
-次に例を示します。
-
-```terminal
-varnishd (varnish-6.3.2 revision 199de9b)
-Copyright (c) 2006 Verdens Gang AS
-Copyright (c) 2006-2019 Varnish Software AS
-```
-
-続行する前に、バージョンが 6.x であることを確認してください。 6.x より前のバージョンを実行している場合は、サポートされているバージョンにアップグレードする必要があります。 詳細は、Vanish のインストールに関するドキュメントを参照してください。
+次を確認します。 [Adobe CommerceとMagento Open Sourceのサポート](../../installation/system-requirements.md) 続行する前にインストールされているバージョンの Vanrish。 サポートされていないバージョンを実行している場合は、サポートされているバージョンにアップグレードする必要があります。 詳細は、Vanish のインストールに関するドキュメントを参照してください。
