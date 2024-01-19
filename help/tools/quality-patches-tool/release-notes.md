@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 3364434c37935285214451a7d242ae38815f3453
+source-git-commit: 9d75675aed671b995f7bdda43abc5a06f2c03ee8
 workflow-type: tm+mt
-source-wordcount: '19210'
+source-wordcount: '19551'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,20 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.44 {#v1-1-44}
+
+* **ACSD-56790** (Adobe CommerceとMagento Open Source>=2.4.6 &lt;2.4.7) - **在庫から下に移動** オプションと `Invalid security or form key. Please refresh the page` エラーが画面の上に表示されます。
+* **ACSD-56280** (Adobe Commerce>=2.4.4 &lt;2.4.7) — ギフトレジストリからアイテムを注文すると例外が発生する問題を修正しました。
+* **ACSD-56246** (Adobe CommerceとMagento Open Source>=2.4.6 &lt;2.4.7) — 製品のスケジュールされた更新がアクティブになったときに、カスタムの複数選択属性からデータが削除される問題を修正しました。
+* **ACSD-56193** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.4.4) - Page Builder を使用したカテゴリの説明でスケジュール済みブロックが使用された場合に Vanish/Fastly キャッシュが更新されない問題を修正しました。
+* **ACSD-56158** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.7) - 「買い物かご」クエリが各税務処理基準の合計税額を返す問題を修正しました。
+* **ACSD-56023** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) — キャッシュが有効な場合に CMS ページでウィジェットの内容が更新されない問題を修正しました。
+* **ACSD-55427** (Adobe Commerce >=2.4.5 &lt;2.4.7 の場合 ) — 管理者ユーザーが管理者の製品ページから共有カタログの製品の割り当てを解除できない問題を修正しました。
+* **ACSD-55352** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) — 顧客報酬ポイントを含む部分的なクレジットメモを作成した後、注文ステータスが「クローズ」に変わり、クレジットメモオプションが「管理オーダー」ページから消える問題を修正しました。
+* **ACSD-55231** (Adobe Commerce >=2.4.2 &lt;2.4.7) — クイックオーダー機能を使用して買い物かごに製品を追加できない問題を修正しました。
+* **ACSD-54283** (Adobe Commerce >=2.4.3 &lt;2.4.4) — デフォルト（一般グループ）の共有カタログに割り当てられていない製品/カテゴリが XML サイトマップに含まれる問題を修正しました。
+* 更新済みのパッチ： ACSD-52041、ACSD-54040、ACSD-51819
 
 ## v1.1.43 {#v1-1-43}
 
@@ -46,7 +60,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 * **ACSD-53845** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) - [!DNL MySQL] 次の場合の接続タイムアウトの問題 `consumer max_messages` = 0。
 * **ACSD-54890** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) - `aggregate_sales_report_bestsellers_data` 原因 [!DNL MySQL] 次に起因するエラー： `/tmp` ディスクの空き容量が不足しています。
 * **ACSD-55112** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) - *[!UICONTROL Submit review]* ボタンは、 [!DNL Google reCAPTCHA v3] 検証。
-* **ACSD-54264** (Adobe Commerce>=2.4.4-p5 &lt;2.4.5 の場合 ) || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) — エラーメッセージが表示される問題を修正します。 *「要求された属性は更新できません。 行 ID: store_id&quot;* 顧客が別のストアビューからネゴシエーション可能な見積もりをチェックアウトしようとすると表示されます。
+* **ACSD-54264** (Adobe Commerce>=2.4.4-p5 &lt;2.4.5 の場合 ) || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) — エラーメッセージが表示される問題を修正しました。 *「要求された属性は更新できません。 行 ID: store_id&quot;* 顧客が別のストアビューからネゴシエーション可能な見積もりをチェックアウトしようとすると表示されます。
 * **ACSD-54418** (Adobe CommerceとMagento Open Source>=2.4.0 &lt;2.4.7) — 動的価格設定バンドルの各子製品に一定量の割引が正しく適用されない問題を修正しました。
 * **ACSD-55238** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.7) — 空の製品の保存を修正しました。 *[!UICONTROL Meta Description]*.
 * **ACSD-54966** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.7) — 以前の注文が失敗した場合に、顧客ごとの使用が制限されたクーポンコードを再利用できない問題を修正しました。
@@ -126,7 +140,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 * **ACSD-53795** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) — での無効なデータ型の問題を修正しました。 `indexer_update_all_views` cron ジョブです。
 * **ACSD-52143** (Adobe CommerceとMagento Open Source>=2.4.6 &lt;2.4.7) — 製品の読み込み後にカスタムオプションが削除される問題を修正しました。
 * **ACSD-53750** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.7) - *配管または閉じた接続が壊れています* マルチスレッド中のエラー `catalog_product_price` インデックスを再作成します。
-* **ACSD-49843** (Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.7 &lt;2.4.0 || >=2.4.1 &lt;2.4.7) — 注文された品目が **[!UICONTROL Payment Action]** = **[!UICONTROL Sale]** 設定を有効にします。
+* **ACSD-49843** (Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.7 &lt;2.4.0 || >=2.4.1 &lt;2.4.7) — 注文品目が **[!UICONTROL Payment Action]** = **[!UICONTROL Sale]** 設定を有効にします。
 * **ACSD-47054** (Adobe Commerce >=2.4.2 &lt;2.4.6) — プレビューの再インデックスがすべてのストアで再インデックスを実行し、遅くなる問題を修正しました。
 * ACSD-46541、ACSD-47079の新しいバージョンを追加しました。
 * ACSD-49970-v3 は ACSD-54095に置き換えられました。
@@ -195,7 +209,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 * **ACSD-50895** (Adobe Commerce >=2.4.5 &lt;2.4.7 の場合 ) - [!DNL Google Analytics] 次の場合、3 個の GTM タグは実行されません。 [!DNL Google Analytics] 4 GTM が設定されていません。
 * **ACSD-51102** (Adobe Commerce >=2.4.2 &lt;2.4.7) — 多数の製品に適用されるカタログルールが、スケジュールされた更新によってルールが有効になると、正しくインデックス付けされない問題を修正しました。
 * **ACSD-50368** (Adobe CommerceおよびMagento Open Source>= 2.4.3 &lt;2.4.5) — お客様の `group_id` 顧客が Async REST API または Async Bulk REST API を使用して作成された場合、は無視されます。
-* **ACSD-51497** (Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7) — 顧客がドロップダウンタイプの「カスタム属性」でカタログページを並べ替えられない問題を修正しました。
+* **ACSD-51497** (Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7) — ドロップダウンタイプの「カスタム属性」でカタログページを並べ替えることができない問題を修正しました。
 * **ACSD-51408** (Adobe CommerceとMagento Open Source>=2.3.7 &lt; 2.4.7 の場合 ) — 注文項目のステータスがに正しく設定されない問題を修正しました。 *[!UICONTROL Backordered]*.
 * **ACSD-51735** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.5) — 注文項目のステータスがに正しく設定されない問題を修正しました。 *[!UICONTROL Ordered]* 製品在庫が *0*.
 * **ACSD-51792** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.6) — ページが [!DNL Google Tag Manager] 4 が有効になっています。
@@ -232,7 +246,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 
 * **ACSD-50345** (Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.3 &lt;2.4.4 || >=2.4.4-p1 &lt;2.4.6) — 支払い失敗の送信後に Recaptcha v2 が再読み込みされない問題を修正しました。
 * **ACSD-50817** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.7) - Cron ジョブを最適化します。 `sales_clean_quotes` をクリックして、より速く実行します。
-* **ACSD-49392** (Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7) — バンドルされた製品の一部返金後に注文ステータスがクローズ済みに変わる問題を修正しました。
+* **ACSD-49392** (Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7) — バンドルされた製品の一部払い戻し後、注文ステータスがクローズ済みに変わる問題を修正しました。
 * **ACSD-51036** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.5) — 同時 REST API 呼び出し中に競合状態が発生すると、 [!UICONTROL Items Ordered] 表。
 * **ACSD-50858** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.7) — バナーのコンテンツを読み込む際のパフォーマンスが向上しました。
 * MDVA-39305-v2、ACSD-45169の新しいバージョンを追加しました。
@@ -300,7 +314,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 * **ACSD-48362** (Adobe Commerce>=2.4.1 &lt;2.4.7) — 交渉可能な見積もりを使用して注文を行う際に、新しい送付先住所の代わりにデフォルトの送付先住所が使用される問題を修正しました。
 * **ACSD-48059** (Adobe Commerce >=2.3.7 &lt;2.4.7) — マーチャントが[!UICONTROL Match product by rule]」と入力します。
 * **ACSD-48216** (Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.7 &lt;2.3.8 || >=2.4.0 &lt;2.4.7) - [!UICONTROL AUTO_INCREMENT] の [!UICONTROL inventory_source_item] 表が上がる [!UICONTROL UPDATE] 操作。
-* **ACSD-47908** (Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.7 &lt;2.3.8 || >=2.4.0 &lt;2.4.7) — チェックアウト時に出荷ステップのソースと数量を選択する際のエラー「0 以下の値が必要です」を修正しました。
+* **ACSD-47908** (Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.7 &lt;2.3.8 || >=2.4.0 &lt;2.4.7) — チェックアウト時に出荷ステップでソースと数量を選択する際のエラー「0 以下の値が必要です」を修正しました。
 * **ACSD-49497** (Adobe CommerceとMagento Open Source>=2.3.7 &lt;2.4.6) — 出荷後に注文が処理状態のままで、一部払い戻しが適用される問題を修正しました。
 * **ACSD-48694** (Adobe CommerceおよびMagento Open Sourceの場合 >=2.3.7 &lt;2.3.8 || >=2.4.1 &lt;2.4.7) - 「無効な状態の変更がリクエストされました」というエラーが発生し、お客様が注文できない問題を修正しました。
 * **ACSD-49013** (Adobe CommerceとMagento Open Source>=2.4.3 &lt;2.4.7) — 一括 API を使用して顧客を作成する際に、電子メールによる確認が Web サイトのロケールに翻訳されない問題を修正しました。
@@ -644,7 +658,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 * **MDVA-34680** (*Adobe Commerceの場合 >=2.3.6 &lt;=2.3.7 || >=2.4.1 &lt;2.4.3*) — 顧客アカウントの作成時間が顧客グリッドで正しくフィルタリングされない問題を修正しました。
 * **MDVA-37068** (*Adobe Commerceの場合 >=2.3.1 &lt;2.4.4.4*) — 買い物かごに仮想製品のみが入っている場合に誤った税率が表示される問題を修正しました。
 * **MDVA-38608** (*Adobe Commerceの場合 >=2.3.0 &lt;2.4.3.3*) — インデックス再作成が正常に完了しない場合に一時テーブルが削除されない問題を修正しました。
-* **MDVA-38308** (*Adobe Commerceの場合 >=2.3.5 &lt;=2.3.6-p1 || >=2.4.0 &lt;=2.4.1-p1 || >=2.4.2 &lt;2.4.4*) — 追加に関連する問題を修正しました [!DNL Vimeo] 製品に関するビデオ。
+* **MDVA-38308** (*Adobe Commerceの場合 >=2.3.5 &lt;=2.3.6-p1 || >=2.4.0 &lt;=2.4.1-p1 || >=2.4.2 &lt;2.4.4.4*) — 追加に関連する問題を修正しました [!DNL Vimeo] 製品に関するビデオ。
 
 ## v1.0.25 {#v1-0-25}
 
@@ -822,7 +836,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 * **MDVA-31759** (*Adobe Commerceの場合 >=2.3.0 &lt;2.4.2.2*) — 製品が *ドロップダウン* および *textarea* CSV の読み込み時の属性値。
 * **MDVA-32012** (*Adobe Commerceの場合 >=2.3.0 &lt;2.4.2.2*) — 韓国とアルゼンチンの郵便番号を検証できない問題を修正しました。
 * **MDVA-31640** (*Adobe Commerceの場合 >=2.3.1 &lt;2.3.6> || >=2.4.0 &lt;2.4.1*) — 特別な価格を REST API で更新できない問題を修正しました。
-* **MDVA-28651** (*Adobe Commerceの場合 >=2.3.0 &lt;2.3.6> || >2.4.0 （B2B 拡張機能を使用）*) - REST API を介してネゴシエーション可能な引用符を読み込む際にパフォーマンスの問題が発生する問題を修正しました。
+* **MDVA-28651** (*Adobe Commerceの場合 >=2.3.0 &lt;2.3.6> || >2.4.0 （B2B 拡張を使用）*) - REST API を介してネゴシエーション可能な引用符を読み込む際にパフォーマンスの問題が発生する問題を修正しました。
 
 ## v1.0.8 {#v1-0-8}
 
@@ -831,7 +845,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 * **MDVA-30112** (*Adobe Commerceの場合 >=2.3.4 &lt;2.4.2.2*) — 注文件数が *束サイズの* 値を指定する場合、Adobe Commerceは *保留中* のステータスが不整合です。
 * **MDVA-31150** (*Adobe Commerceの場合 >=2.3.0 &lt;2.4.2.2*) — 請求書が Rest API 呼び出しによって転記され、注文が一部店舗クレジットおよびギフトカードアカウントによって支払われた場合に、GETの Invoice Rest API 呼び出しによって店舗クレジットおよびギフトカード残高が返されない問題を修正しました。
 * **MDVA-30963** (*Adobe Commerceの場合 >=2.3.2 &lt;2.4.2.2*) — 製品のフィルタリング結果がに指定された値のみを含む問題を修正しました。 *すべてのストア表示回数* 管理者の範囲に、ストア表示レベルで上書きされた値を持つ製品を含めます。
-* **MDVA-29954** (*Adobe Commerceの場合 >=2.3.0 &lt;2.3.6> || 2.4.0 || 2.4.2 （B2B 拡張機能を使用）*) - *新しい会社登録リクエスト* および *会社にリンクされました* 間違ったアドレスから電子メールが送信されます。
+* **MDVA-29954** (*Adobe Commerceの場合 >=2.3.0 &lt;2.3.6> || 2.4.0 || 2.4.2 と B2B 拡張機能*) - *新しい会社登録リクエスト* および *会社にリンクされました* 間違ったアドレスから電子メールが送信されます。
 * **MDVA-28357** (*Adobe Commerceの場合 >=2.3.2 &lt;2.3.6> || >=2.4.0 &lt;2.4.1*) — 標準のアナライザーを、の SKU フィールドのキーワード tokenizer に置き換えます。 [!DNL ElasticSearch] ワイルドカード検索クエリを、ハイフン (&quot;-&quot;) を含む SKU で機能させるインデックス。
 
 ## v1.0.7 {#v1-0-7}
