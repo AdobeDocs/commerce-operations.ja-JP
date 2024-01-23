@@ -3,18 +3,14 @@ title: パフォーマンステスト用のデータを生成
 description: パフォーマンステストに使用する大量のデータを生成する方法を説明します。
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: a2dc85232aa10761a6729fe66f5548f644cb5bd4
+source-git-commit: d4a6d5cd181c7c4426914bbe481f4d5d1e828b5e
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 8%
+source-wordcount: '762'
+ht-degree: 9%
 
 ---
 
 # パフォーマンステストデータ
-
-次の手順で [Performance Toolkit](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) またはパフォーマンステスト用の別のツールを使用する場合は、店舗、カテゴリ、製品など、大量のデータを生成する必要があります。
-
-{{file-system-owner}}
 
 ## プロファイル
 
@@ -47,6 +43,8 @@ ht-degree: 8%
 | `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
 
 ### データジェネレーターを実行する
+
+{{file-system-owner}}
 
 >[!WARNING]
 >
