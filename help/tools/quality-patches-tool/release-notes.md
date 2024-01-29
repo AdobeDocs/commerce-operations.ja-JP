@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 9d75675aed671b995f7bdda43abc5a06f2c03ee8
+source-git-commit: 6f0a3434d4730b4d2bcf0aecdacfae58025824cd
 workflow-type: tm+mt
-source-wordcount: '19551'
+source-wordcount: '19799'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,17 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.45 {#v1-1-45}
+
+* **ACSD-56886** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) - 2 つの子製品の 1 つがスケジュールされた更新で無効になった場合に、設定可能な製品が在庫切れになる問題を修正しました。
+* **ACSD-56616** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.6) — バンドルされた製品が在庫切れの際にストアフロントに在庫なしで表示される問題を修正しました。
+* **ACSD-56515** (Adobe Commerce >=2.4.2 &lt;2.4.7) - Web サイトレベルの権限を持つ管理者が動的ブロックを追加または編集できない問題を修正しました。
+* **ACSD-56447** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) — 並列 REST Web API リクエストを使用して同じ製品を買い物かごに追加すると、買い物かご内の 2 つの異なる項目が発生する問題を修正しました。
+* **ACSD-56415** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.7) - `DELETE` データベースにインデックスを作成する多数の部分的な価格データがある場合にクエリを実行します。
+* **ACSD-54965** (Adobe Commerce>=2.4.5 &lt;2.4.6) — 製品がカスタム在庫のみに割り当てられた場合に、ビジュアルマーチャンダイジンググリッドに正しい在庫が表示されない問題を修正しました。
+* **ACSD-52824** (Adobe Commerce >=2.4.5 &lt;2.4.7) — 会社の設定で、会社のお客様に対して PayPal Express、Google Pay、Apple Pay の各ボタンが表示される問題を修正しました。
+* 更新済みのパッチ：ACSD-56193
 
 ## v1.1.44 {#v1-1-44}
 
