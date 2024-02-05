@@ -1,8 +1,8 @@
 ---
-source-git-commit: 903a5b52dd96423b7ac29997082b2feccdd3e10a
+source-git-commit: 5e25ba7151b16706f60c3fb8ffc5dbc6f31f29a6
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 2%
+source-wordcount: '60'
+ht-degree: 1%
 
 ---
 # ベストプラクティスの新機能
@@ -27,26 +27,6 @@ ht-degree: 2%
 </td>
       <td>ベストプラクティス</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21da4c22744dbb3b27b0dbe184b946788748a52e">21da4c</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table><!-- date_group --><!-- month_group -->
-
-### 2023 年 12 月 8 日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>ソース</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>に関する新しいベストプラクティストピックを追加しました。 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-code.html">コアおよびサードパーティの PHP コードの変更</a>.</p>
-</td>
-      <td>ベストプラクティス</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21c0b6faab093bf9db860ce2f4d56072c4cc6e49">21c0b6</a> （コミット）</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
