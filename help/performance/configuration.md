@@ -3,9 +3,9 @@ title: 設定のベストプラクティス
 description: これらのベストプラクティスを使用して、Adobe CommerceまたはMagento Open Sourceのデプロイメントの応答時間を最適化します。
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 3c53efdaedea075e288d262e247bc9c42b5a2432
+source-git-commit: 2fa587557db214ed2fbeb5e6c175a9a209883f94
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 ### バンドルのヒント
 
 * 縮小化とバンドル ( [r.js](https://requirejs.org/)) をクリックします。 [!DNL Commerce] 組み込みのメカニズムは最適ではなく、代替手段として提供されています。
-* JS バンドルを使用する代わりに、HTTP/2 プロトコルをアクティブ化する方法を使用できます。 このプロトコルには、ほぼ同じ利点があります。
+* JS バンドルを使用する代わりに、HTTP/2 プロトコルをアクティブ化する方法を使用できます。 このプロトコルには同じ利点の多くがあります。 クラウドインフラストラクチャプロジェクトのAdobe Commerceでは、デフォルトで有効になっています。
 * JS ファイルと CSS ファイルの結合などの非推奨の設定は、ページのHEADセクションで同期的に読み込まれる JS 用にのみ設計されているので、使用しないことをお勧めします。 この方法を使用すると、バンドルが発生し、requireJS ロジックが正しく機能しなくなる場合があります。
 
 ## 顧客セグメントの検証
