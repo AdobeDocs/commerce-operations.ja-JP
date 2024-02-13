@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5e25ba7151b16706f60c3fb8ffc5dbc6f31f29a6
+source-git-commit: 0cc92188c2af5aa37bb094921df86c703f6f0eb2
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '141'
 ht-degree: 3%
 
 ---
@@ -10,6 +10,32 @@ ht-degree: 3%
 ## 新機能
 
 新しいドキュメントと既存ドキュメントの重要な更新について説明します。
+
+### 2024 年 2 月 14 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>2024 年 2 月のセキュリティパッチを <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">システム要件</a>.</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/068eed591b461ba6c91b0e3d517dc712215c6b33">068eed</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p>追加済み <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">リリースノート</a> 2024 年 2 月のセキュリティパッチ (2.4.4-p7、2.4.5-p6、2.4.6-p4) の場合。</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8e5644951114daa5d0841b7fdd32ce37b9803118">8e5644</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 2024 年 1 月 30 日
 
