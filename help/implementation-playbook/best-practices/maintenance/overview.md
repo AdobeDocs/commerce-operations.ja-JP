@@ -3,9 +3,9 @@ title: 実装メンテナンスフェーズ
 description: Adobe Commerceプロジェクトのメンテナンスフェーズに関する実装のベストプラクティスについて説明します。
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: 00036391366625ab256a4dc682d1ecbe9e46fa23
+source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '371'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 2%
 | ベストプラクティス | 説明 |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | [データベースのパフォーマンスの問題を解決&#x200B;する](resolve-database-performance-issues.md) | クラウドインフラストラクチャにデプロイされたAdobe Commerceサイトのパフォーマンスが低下するデータベースの問題を修正しました。 |
-| [Adobe Commerce 2.3.5 MariaDB のアップグレードの前提条件&#x200B;](commerce-235-upgrade-prerequisites-mariadb.md) | MariaDB データベースをアップグレード用に準備します。 |
+| [Adobe Commerce MariaDB のアップグレードの前提条&#x200B;件](mariadb-upgrade.md) | MariaDB データベースをアップグレード用に準備します。 |
 
 ## 機能強化
 
