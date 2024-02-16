@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6f0a3434d4730b4d2bcf0aecdacfae58025824cd
+source-git-commit: 26bde6684b3f38ed16ede6ec9c63cc90fa849fd9
 workflow-type: tm+mt
-source-wordcount: '19799'
+source-wordcount: '19990'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.46 {#v1-1-46}
+
+* **ACSD-46767** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.6) — 製品がまだ在庫にある場合でも、在庫数が変更されるとカテゴリページのキャッシュが無効になる問題を修正しました。
+* **ACSD-54656** (Adobe Commerce >=2.4.5 &lt;2.4.6 の場合 ) — 非表示の Recaptcha がチェックアウト中に失敗し、注文がおこなわれない問題を修正しました。
+* **ACSD-55100** (Adobe Commerce >=2.4.6 &lt;2.4.7) - GraphQLが検索結果に 10,000 個を超える製品を返さない問題を修正しました。
+* **ACSD-56621** (Adobe Commerce >=2.4.2 &lt;2.4.7) — 会社の管理者ユーザーの挨拶ヘッダーセクションに、更新された名と姓が反映されない問題を修正しました。
+* **ACSD-56842** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) — 実行後に遅延プロキシと遅延プロキシファクトリが欠落する問題を修正しました `setup:di:compile`.
+* **ACSD-57003** (Adobe CommerceとMagento Open Source>=2.4.6 &lt;2.4.7) — 注文のステータスが「 *[!UICONTROL Complete]* ～に変わる代わりに *[!UICONTROL Processing]* 注文の一部が返金され、一部が発送された場合。
+* 更新済みのパッチ：ACSD-50260-v2、ACSD-54966
 
 ## v1.1.45 {#v1-1-45}
 
