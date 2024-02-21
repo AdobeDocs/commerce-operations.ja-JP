@@ -1,11 +1,11 @@
 ---
 title: リリーススケジュール
-description: AdobeがAdobe Commerceの新機能のリリースを発表する予定について説明します。
+description: アドビが Adobe Commerce の新機能リリースの発表を予定しているタイミングを学びます。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 source-git-commit: cbcc688fb5b356b99d103259e85117bda82f36b9
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
