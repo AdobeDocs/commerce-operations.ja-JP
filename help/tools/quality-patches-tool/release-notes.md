@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 26bde6684b3f38ed16ede6ec9c63cc90fa849fd9
+source-git-commit: c39eb5c9328657083aea07a385531e7ad0df6e14
 workflow-type: tm+mt
-source-wordcount: '19990'
+source-wordcount: '20136'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,14 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.47 {#v1-1-47}
+
+* **ACSD-55241** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) - *[!UICONTROL Used]* および *[!UICONTROL Times Used]* 複数のアドレスを持つチェックアウト時に使用されると、生成されたクーポンの誤った値が属性に表示されます。
+* **ACSD-56760** (Adobe Commerce >=2.4.6 &lt;2.4.7) - Web ストアに独自のルートカテゴリがある場合に、特定の Web サイトに制限されている管理者ユーザーがカテゴリ内で新しい製品を並べ替えたり追加したりできない問題を修正しました。
+* **ACSD-56858** (Adobe Commerce >=2.4.2 &lt;2.4.7) — 制限された会社管理者に対して B2B 会社の役割権限が正しく表示されない問題を修正しました。
+* **ACSD-57074** (Adobe CommerceとMagento Open Source>=2.4.6 &lt;2.4.7) - *はい/いいえ* カスタム属性： `attrbute_code` 開始 `price_` はインデックス作成で正しく機能せず、そのような属性を持つ製品はフロントエンドで使用できません。
+* 更新済みのパッチ：ACSD-53378、ACSD-51819
 
 ## v1.1.46 {#v1-1-46}
 
