@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0cc92188c2af5aa37bb094921df86c703f6f0eb2
+source-git-commit: 0d6e2d58074b921466e5f4995a0c8e97a63e2d83
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '161'
 ht-degree: 3%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 3%
 ## 新機能
 
 新しいドキュメントと既存ドキュメントの重要な更新について説明します。
+
+### 2024 年 2 月 15 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>のベストプラクティスを追加しました。 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html">MariaDB のアップグレード</a> を 10.5.1 以降に変更しました。</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7199e74f82cef6dd682f5e240ee2b6fc56da18c8">7199e7</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2024 年 2 月 14 日
 
