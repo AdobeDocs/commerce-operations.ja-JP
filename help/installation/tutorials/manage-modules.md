@@ -2,9 +2,9 @@
 title: モジュールの有効化または無効化
 description: 以下の手順に従って、Adobe CommerceまたはMagento Open Sourceモジュールを管理します。
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 6e87d68df97adf47b5a61e8b6683ac11f600806c
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ bin/magento module:status [--enabled] [--disabled] <module-list>
 * `--enabled` は、すべての有効なモジュールを一覧表示します。
 * `--disabled` 無効になっているすべてのモジュールの一覧を表示します。
 * `<module-list>` は、ステータスを確認するためのモジュールのスペースで区切られたリストです。 モジュール名に特殊文字が含まれる場合は、名前を一重引用符または二重引用符で囲みます。
+
+>[!NOTE]
+>
+>クラウドプロジェクトで直接モジュールを有効または無効にすることはできません。 これらのコマンドをローカルで実行し、変更を `app/etc/config.php` ファイルを作成します。 詳しくは、 [プロジェクトワークフロー：デプロイメントワークフロー](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
 
 ## モジュールの有効化、無効化
 
