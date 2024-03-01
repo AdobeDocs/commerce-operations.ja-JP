@@ -3,9 +3,9 @@ user-guide-title: リリース情報
 user-guide-description: Adobe Commerceのパッチとサービスに関するすべてのリリース情報に 1 か所でアクセスできます。
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: 51b3be72fcbf3c92a133a8bdec654968a757eeac
+source-git-commit: e298c88ab0bc00216fd7d4eadfc94908779713f5
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '122'
 ht-degree: 3%
 
 ---
@@ -13,6 +13,7 @@ ht-degree: 3%
 
 # リリース情報 {#release}
 
+- [最新リリース](latest.md)
 - リリースノート {#notes}
    - [概要](release-notes/overview.md)
    - [後方互換性のない変更](backward-incompatible-changes.md)
