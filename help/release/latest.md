@@ -4,7 +4,7 @@ description: Adobe Commerceの最新の合成可能な開発ツールと AI を�
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
-source-git-commit: b0cfe0ae73a2d65f205bfe874e080d56f195601b
+source-git-commit: a4738e58d8c17c17426765d6f975a2af0ce11c80
 workflow-type: tm+mt
 source-wordcount: '3076'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Adobe Commerce2 月の製品発表
+# Adobe Commerce 2 月の製品発表
 
 Adobe Commerceは、顧客と緊密に連携し、顧客が迅速に移動し、販売を加速できる新しい経験主導のコマース機能を開発しています。 Hanesbrand のようなお客様は、これらの新機能を使用して、より高速なサイト、より高いコンバージョン率、よりパフォーマンスの高いキャンペーンをすでに活用しています。 Nestle Purina は、統一された開発者体験を活用して、落ち着いた開発をシンプル化しています。 これらの新機能と、この 2 月の製品発表の概要での開始方法について説明します。
 
