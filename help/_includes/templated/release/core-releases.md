@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9f80bf4de9112cc986708266565c96515e85554c
+source-git-commit: 93ec4b59b4c26e31ee117bc13f98d21ce23d586f
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 2.4.7
 
-2.4.7 リリース行のサポートは 2027 年 4 月 20 日に終了します。
+2.4.7 リリース行のサポートは 2027 年 4 月 9 日に終了します。
 
 <table>
   <thead>
@@ -138,7 +138,7 @@ ht-degree: 0%
 
 ## 2.4.4
 
-2.4.4 リリース行のサポートは 2025 年 4 月 13 日に終了します。
+2.4.4 リリース行のサポートは 2025 年 4 月 24 日に終了します。
 
 <table>
   <thead>
