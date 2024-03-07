@@ -2,9 +2,9 @@
 title: 高度なオンプレミスインストール
 description: Adobe Commerceの高度なインストールシナリオ、または所有しているインフラストラクチャのMagento Open Sourceについて説明します。
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2383'
 ht-degree: 0%
 
 ---
@@ -91,9 +91,9 @@ Adobe CommerceとMagento Open Sourceは、インストールおよび設定タ�
 
 | インストーラーの引数 | コマンド |
 | ------------------ | ------------------------------- |
-| 言語 | bin/magento 情報:language:リスト |
-| 通貨 | bin/magento 情報:currency:リスト |
-| タイムゾーン | bin/magento 情報:timezone:リスト |
+| 言語 | `bin/magento info:language:list` |
+| 通貨 | `bin/magento info:currency:list` |
+| タイムゾーン | `bin/magento info:timezone:list` |
 
 >[!NOTE]
 >
