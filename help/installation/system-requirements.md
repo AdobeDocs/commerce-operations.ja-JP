@@ -2,9 +2,9 @@
 title: 必要システム構成
 description: このリファレンスを使用して、Adobe CommerceとMagento Open Sourceのリリースでテストされた、必要なソフトウェアの依存関係を特定します。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
+source-git-commit: 56052a5777b8719d5a9257d0c48e5640a6812a5f
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -112,9 +112,8 @@ The [PHP のインストール手順](prerequisites/php-settings.md) には、�
 - Firefox（最新および以前のメジャーバージョン、任意のオペレーティングシステム）
 - Chrome（最新および以前のメジャーバージョン、任意のオペレーティングシステム）
 - Safari( 最新および以前のメジャーバージョン。macOSのみ )
-- Safari Mobile for iPad 2、iPad Mini、Retina ディスプレイ搭載iPad(iOS 12 以降 )（デスクトップストアフロント用）
-- Safari Mobile for iPhone 6 以降、iOS 12 以降（モバイルストアフロント用）
-- モバイル用 Chrome（最新および以前のメジャーバージョン） [Android™ 4 以降] （モバイルストアフロント用）
+- iOS用 Safari（ストアフロント用の最新および以前のメジャーバージョン）
+- Android 用 Chrome（ストアフロント用の最新および以前のメジャーバージョン）
 
 ### メールサーバー
 
