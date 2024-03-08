@@ -2,7 +2,7 @@
 title: リリーススケジュール
 description: アドビが Adobe Commerce の新機能リリースの発表を予定しているタイミングを学びます。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
+source-git-commit: a7aa02cd47deaf7aebdfcf0b3e969cce990a962a
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -31,7 +31,7 @@ Adobeリリース [パッチ](versioning-policy.md#patch-release) コアAdobe Co
 </thead>
 <tfoot>
    <tr>
-      <td colspan="3"><strong>凡例：</strong>
+      <td colspan="3"><strong>凡例</strong>
          <ul>
             <li><strong><img alt="B2B 機能アイコン" src="../assets/icons/enterprise.svg"></img> B2B</strong>— Adobe Commerce用 B2B 拡張機能の新機能、機能強化、バグ修正です。</li>
             <li><strong><img alt="拡張機能アイコン" src="../assets/icons/brackets.svg"></img> 拡張機能</strong> — パッチリリースとは別に提供される、プロセス外の拡張用の新しい開発者ツールおよびサービス。 例えば、Admin UI SDK、コマース用のAdobe I/Oイベント、API メッシュなどです。</li>
