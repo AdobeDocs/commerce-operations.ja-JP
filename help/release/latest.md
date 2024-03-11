@@ -4,13 +4,13 @@ description: Adobe Commerceの最新の合成可能な開発ツールと AI を�
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
-source-git-commit: 2e17313c0a2c87ce4d2ee43e9b40277fda25edb9
+exl-id: 176886bc-733a-48d9-94dc-58fd8b24f54e
+source-git-commit: 1f2c2ca98ba7076cdc3512e30fdd7a8c76f86200
 workflow-type: tm+mt
 source-wordcount: '3078'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce 2 月の製品発表
 
@@ -22,7 +22,7 @@ Adobe Commerceは、顧客と緊密に連携し、顧客が迅速に移動し、
 
 e コマースのリーダーや実務担当者からAdobe Commerceの詳細を学ぶには、以下の対面および仮想イベントにご参加ください。
 
-- **2024 年 3 月 16 日**:Adobe Commerce:Experience-led Commerce Platform の構築（PDT 午前 10 時/午後 6 時）。 [ライブウェビナーへの登録](https://engage.adobe.com/BdgxpComWBR-register.html).
+- **2024 年 3 月 15 日**:Adobe Commerce:Experience-led Commerce Platform の構築（PDT 午前 10 時/午後 5 時）。 [ライブウェビナーへの登録](https://engage.adobe.com/BdgxpComWBR-register.html).
 
 - **2024 年 3 月 26 日～28 日**：数千の e コマースリーダーや実践者がラスベガスのAdobe Summitに住んでいます。 詳細を見る [Adobe Summit](https://business.adobe.com/summit/adobe-summit.html) そして [コマース追跡](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search.track=1601680652403006TXuG) ～から話を聞いて [Hanesbrands](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S435), [コカコーラ](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S434), [ユニリーバ](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=s430)、および [ネスレプリナ](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S437).
 
@@ -116,7 +116,7 @@ Adobe CommerceのEdge Delivery Servicesについて詳しくは、 [Adobe Summit
 
 [!BADGE 利用可能]{type=Informative tooltip="利用可能"}
 
-Adobeは、あらゆる規模の医療関連のお客様に対して、HIPAA 対応サービスを導入した経験が豊富です。 支払い業者からプロバイダー、製薬会社、医療技術ベンダーまで、Adobeは責任ある消費者データ管理の基準を設定しています。 この専門知識は、Adobe Commerceクラウドプラットフォームの HIPPA 対応バージョンを備え、急速に成長するヘルスケアデジタルコマース市場にも広がっています。
+Adobeは、あらゆる規模の医療関連のお客様に対して、HIPAA 対応サービスを導入した経験が豊富です。 支払い業者からプロバイダー、製薬会社、医療技術ベンダーまで、Adobeは責任ある消費者データ管理の基準を設定しています。 この専門知識は、HIPAA 対応のAdobe Commerceクラウドプラットフォームを備え、急速に成長する医療デジタルコマース市場にも広がっています。
 
 HIPAA 対応の製品は、Adobe Commerce Cloud および Managed Services のお客様が利用できます。 また、PHI(Electronic Personal Health Information) の保護を確実にするセキュリティとプライバシーに関する管理機能が追加されているため、医療機関やライフサイエンス組織は、コンプライアンス上の義務をより簡単に果たすことができます。 このソリューションは、医療保険、処方箋、所定の医療機器、医療用品など、様々な用途に対応しています。 Adobe Commerceが [Adobe Experience Cloud for Healthcare](https://business.adobe.com/solutions/industries/healthcare.html) ソリューションのスイート。お客様は、消費者の好みに応えながら、安全で優れた患者体験を提供できます。
 
