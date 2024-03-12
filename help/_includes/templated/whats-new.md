@@ -1,8 +1,8 @@
 ---
-source-git-commit: 0d6e2d58074b921466e5f4995a0c8e97a63e2d83
+source-git-commit: 489cafa5fc2bc736ac873d1dd3008463c00b638a
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 3%
+source-wordcount: '128'
+ht-degree: 2%
 
 ---
 # 新しいテンプレート
@@ -10,6 +10,44 @@ ht-degree: 3%
 ## 新機能
 
 新しいドキュメントと既存ドキュメントの重要な更新について説明します。
+
+### 2024 年 3 月 13 日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>の設定手順を更新しました。 <a href="https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html">GraphQL API 用アプリケーションサーバー</a> 機能。</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a4f907a793b4384cb7c162c032a153fafbbc6ff3">a4f907</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p>リリースノート： <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">Adobe Commerce 2.4.7-beta3</a>.</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d5bd6e1e9af78b24c687554261a50d4dce9483d6">d5bd6e</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p>2.4.7-beta3 を <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">システム要件</a>.</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4c622c47862c61fc9e6587ff95b3ac45142c2318">4c622c</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p>新しい <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html"><code class="language-plaintext highlighter-rouge">indexer:set-status</code></a> CLI コマンド。</p>
+</td>
+      <td>メジャーアップデート</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/acacc285f8b977b33bb27af76c971bc4015a2b45">acacc2</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 2024 年 2 月 15 日
 
@@ -53,86 +91,6 @@ ht-degree: 3%
 </td>
       <td>メジャーアップデート</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8e5644951114daa5d0841b7fdd32ce37b9803118">8e5644</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 2024 年 1 月 30 日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>ソース</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>公開済み <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">リリースノート</a> 1.1.45 Quality Patches Tool(QPT) パッケージリリースの場合。</p>
-</td>
-      <td>メジャーアップデート</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ada0b7f8aaa727aebf86dca8b569eb71d41e5ded">ada0b7</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024 年 1 月 20 日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>ソース</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>公開済み <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">リリースノート</a> 1.1.44 Quality Patches Tool(QPT) パッケージリリースの場合。</p>
-</td>
-      <td>メジャーアップデート</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6fdce049c64ff7e93bf4de497d7e61ad36b0064b">6fdce0</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024 年 1 月 12 日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>ソース</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>追加済み <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/overview.html">明確化</a> そのサンプルデータは、データベースのテストには使用しないでください。</p>
-</td>
-      <td>メジャーアップデート</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b75884de62f0f4a9000f422a4b68870c5b30d803">b75884</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024 年 1 月 4 日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>ソース</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>次に関する詳細を追加しました： <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">L2 キャッシュメモリサイズ設定オプション</a> クラウドインフラストラクチャ上のAdobe Commerce向け</p>
-</td>
-      <td>メジャーアップデート</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21da4c22744dbb3b27b0dbe184b946788748a52e">21da4c</a> （コミット）</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->

@@ -2,7 +2,7 @@
 title: キャッシュの管理
 description: キャッシュの種類を管理し、キャッシュのステータスを表示します。
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 604e2a1461e2cbbcc498dfed6018ba640efe8cde
+source-git-commit: 6e0e7f209b265e5b924e0092fec020e0cefc165d
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 0%
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 ## キャッシュタイプ
 
-Commerce 2 には次のキャッシュタイプがあります。
+コマースには次のキャッシュタイプがあります。
 
 | キャッシュタイプ「わかりやすい」名前 | キャッシュタイプコード名 | 説明 |
-|--- |--- |--- |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 設定 | config | Commerce は、すべてのモジュールから設定を収集し、結合し、結合結果をキャッシュに保存します。 このキャッシュには、ファイルシステムとデータベースに保存されるストア固有の設定も含まれます。 設定ファイルを変更した後に、このキャッシュタイプをクリーンアップまたはフラッシュします。 |
 | レイアウト | レイアウト | コンパイル済みのページレイアウト（すべてのコンポーネントのレイアウトコンポーネント）。 レイアウトファイルを変更した後に、このキャッシュタイプを消去またはフラッシュします。 |
 | ブロックHTML出力 | block_html | HTMLのページフラグメントをブロックごとに作成できます。 ビューレイヤを変更した後に、このキャッシュタイプをクリーンアップまたはフラッシュします。 |
@@ -31,10 +31,9 @@ Commerce 2 には次のキャッシュタイプがあります。
 | 翻訳 | translate | すべてのモジュールの翻訳をマージした後、マージャーキャッシュが消去されます。 |
 | 統合の設定 | config_integration | コンパイル済みの統合。 統合を変更または追加した後に、このキャッシュをクリーンアップまたはフラッシュします。 |
 | 統合 API の設定 | config_integration_api | ストアの統合のコンパイル済み統合 API 設定。 |
+| GraphQL Query Resolver の結果 [!BADGE 2.4.7-beta]{type=Informative url=&quot;/help/release/release-notes/commerce/2-4-7.md&quot; tooltip=&quot;2.4.7-beta でのみ利用可能&quot;} | graphql_query_resolver_result | 顧客、CMS ページ、CMS ブロック、製品メディアギャラリーエンティティ用のGraphQLクエリリゾルバーからの結果をキャッシュします。 GraphQLのパフォーマンスを向上させるには、このキャッシュを有効にしておきます。 |
 | Web サービスの設定 | config_webservice | Web API 構造のキャッシュ |
 | 顧客通知 | customer_notification | ユーザーインターフェイスに表示される一時的な通知。 |
-| 管理 UI SDK のキャッシュ | admin_ui_sdk | で追加された管理者カスタマイズをキャッシュします。 [Adobe Commerce Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/). |
-| Webhooks 応答キャッシュ | webhooks_response | 応答をにキャッシュします [webhook リクエスト](https://developer.adobe.com/commerce/extensibility/webhooks/). |
 
 ## キャッシュのステータスの表示
 
@@ -63,6 +62,7 @@ Current status:
             config_integration: 1
         config_integration_api: 1
                    target_rule: 1
+ graphql_query_resolver_result: 1
              config_webservice: 1
                      translate: 1
 ```
@@ -171,6 +171,7 @@ bin/magento cache:disable db_ddl full_page
    config_integration
    config_integration_api
    full_page
+   graphql_query_resolver_results
    config_webservice
    translate
 ```

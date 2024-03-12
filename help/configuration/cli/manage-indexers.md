@@ -2,9 +2,9 @@
 title: インデクサーの管理
 description: コマースインデクサーの表示および管理方法の例を参照してください。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 41082413e24733dde34542a2c9cb3cabbfdd4a35
+source-git-commit: a8f845813971eb32053cc5b2e390883abf3a104e
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -263,3 +263,51 @@ Index mode for Indexer Product Categories was changed from 'Update on Save' to '
 ```
 
 インデクサーモードが `schedule` インデクサーモードが `realtime`. インデクサーがに設定されている間にトリガーがデータベースに存在しない場合 `schedule`、インデクサーをに変更します。 `realtime` その後、元に戻します。 `schedule`. これにより、トリガーがリセットされます。
+
+### インデクサーの状態を設定 [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7 ベータ版でのみ使用可能"}
+
+このコマンドを使用すると、管理者は 1 つ以上のインデクサーの運用状態を変更し、データのインポート、更新、メンテナンスなどの大規模な操作中にシステムのパフォーマンスを最適化できます。
+
+コマンドの構文：
+
+```bash
+bin/magento indexer:set-status {invalid|suspended|valid} [indexer]
+```
+
+次の場合：
+
+- `invalid` — インデクサーを期限切れとしてマークし、中断されない限り、次の cron の実行時にインデックス再作成を促します。
+- `suspended` — インデクサの自動 cron トリガー更新を一時的に停止します。 このステータスは、リアルタイムモードとスケジュールモードの両方に適用され、集中的な操作中に自動更新が一時停止されます。
+- `valid` — インデクサデータが最新で、インデックス再作成の必要がないことを示します。
+- `indexer` — インデクサのスペース区切りリストです。 省略 `indexer` すべてのインデクサーを同じ方法で設定する場合。
+
+例えば、特定のインデクサーを休止するには、次のように入力します。
+
+```bash
+bin/magento indexer:set-status suspended catalog_category_product catalog_product_category
+```
+
+サンプル結果：
+
+```terminal
+Index status for Indexer 'Category Products' was changed from 'valid' to 'suspended'.
+Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspended'.
+```
+
+#### 中断されたインデクサーのステータスの管理
+
+インデクサーが `suspended` ステータス。主に、インデックスの自動再作成とマテリアライズド・ビュー更新に影響します。 概要を以下に示します。
+
+**再インデックスがスキップされました**：の自動インデックス再作成はバイパスされます。 `suspended` インデクサーと同じインデクサーを共有するインデクサー `shared_index`. これにより、中断されたプロセスに関連するデータのインデックスを再作成しないことで、システムリソースを確実に保存できます。
+
+**マテリアライズド・ビューの更新がスキップされました**：インデックスの再作成と同様に、 `suspended` インデクサーまたはその共有インデックスも一時停止します。 このアクションにより、サスペンション期間中のシステム負荷がさらに軽減されます。
+
+>[!INFO]
+>
+>The `indexer:reindex` コマンドは、次のマークが付いたインデクサを含め、すべてのインデクサのインデックスを再作成します。 `suspended`を使用すると、自動更新が一時停止された場合に手動での更新に役立ちます。
+
+>[!IMPORTANT]
+>
+>インデクサーのステータスをに変更する `valid` から `suspended` または `invalid` 注意が必要です。 インデックスが作成されていないデータが蓄積されると、このアクションを実行するとパフォーマンスが低下する可能性があります。
+>
+>ステータスをに手動で更新する前に、すべてのデータのインデックスが正確に作成されるようにすることが重要です。 `valid` システムのパフォーマンスとデータの整合性を維持する。
