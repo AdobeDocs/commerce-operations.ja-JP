@@ -31,7 +31,7 @@ ht-degree: 0%
 | 翻訳 | translate | すべてのモジュールの翻訳をマージした後、マージャーキャッシュが消去されます。 |
 | 統合の設定 | config_integration | コンパイル済みの統合。 統合を変更または追加した後に、このキャッシュをクリーンアップまたはフラッシュします。 |
 | 統合 API の設定 | config_integration_api | ストアの統合のコンパイル済み統合 API 設定。 |
-| GraphQL Query Resolver の結果 [!BADGE 2.4.7-beta]{type=Informative url=&quot;/help/release/release-notes/commerce/2-4-7.md&quot; tooltip=&quot;2.4.7-beta でのみ利用可能&quot;} | graphql_query_resolver_result | 顧客、CMS ページ、CMS ブロック、製品メディアギャラリーエンティティ用のGraphQLクエリリゾルバーからの結果をキャッシュします。 GraphQLのパフォーマンスを向上させるには、このキャッシュを有効にしておきます。 |
+| GraphQL Query Resolver の結果 [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7-beta でのみ利用可能"} | graphql_query_resolver_result | 顧客、CMS ページ、CMS ブロック、製品メディアギャラリーエンティティ用のGraphQLクエリリゾルバーからの結果をキャッシュします。 GraphQLのパフォーマンスを向上させるには、このキャッシュを有効にしておきます。 |
 | Web サービスの設定 | config_webservice | Web API 構造のキャッシュ |
 | 顧客通知 | customer_notification | ユーザーインターフェイスに表示される一時的な通知。 |
 
