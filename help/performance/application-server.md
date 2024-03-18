@@ -3,9 +3,9 @@ title: GraphQL API 用アプリケーションサーバー
 description: Adobe CommerceデプロイメントでGraphQL API 用のアプリケーションサーバーを有効にするには、以下の手順に従います。
 badgeCoreBeta: label="2.4.7-beta" type="informative"
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 1fdb29c1a6666aeeef7e546bc7d57a83a40b7542
+source-git-commit: 9d5795400880a65947b1b90c8806b9dcb14aba23
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1897'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Application Server を Cloud Starter にデプロイする前に、次のタス�
 1. すべてのコマースのカスタマイズ機能と拡張機能が Application Server と互換性があることを確認します。
 1. を確認します。 `CRYPT_KEY` 環境変数がインスタンスに設定されている。 この変数のステータスは、クラウドプロジェクトポータル（オンボーディング UI）で確認できます。
 1. Commerce Cloudプロジェクトの複製。
-1. 「application-server/.magento.app.yaml.sample」を「application-server/.magento/.magento.app.yaml」に名前変更し、必要に応じて.magento.app.yaml の設定を調整します。
+1. 名前を変更 `application-server/.magento/.magento.app.yaml.sample` から `application-server/.magento/.magento.app.yaml` 必要に応じて、 .magento.app.yaml の設定を調整します。
 1. 内で次のルートの設定をコメント解除します。 `project_root/.magento/routes.yaml` リダイレクトするファイル `/graphql` アプリケーションサーバーへのトラフィック。
 
    ```yaml
@@ -108,6 +108,11 @@ Application Server を Cloud Starter にデプロイする前に、次のタス�
    ```bash
    git commit -m "AppServer Enabled"
    ```
+
+>[!NOTE]
+>
+> ルートにあるすべてのカスタム設定を確認します。 `.magento.app.yaml` ファイルは、 `application-server/.magento/.magento.app.yaml` ファイル。 1 回 `application-server/.magento/.magento.app.yaml` ファイルがプロジェクトに追加された場合は、ルートに加えてファイルを維持する必要があります `.magento.app.yaml` ファイル。
+> 例えば、 [rabbitmq の設定](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) または [web プロパティの管理](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) 同じ設定を `application-server/.magento/.magento.app.yaml` 同様に。
 
 ### Cloud Starter にアプリケーションサーバーをデプロイ
 
