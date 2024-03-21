@@ -3,9 +3,9 @@ user-guide-title: パフォーマンスのベストプラクティス
 user-guide-description: 推奨事項を使用して、Adobe CommerceまたはMagento Open Source実稼動のデプロイメントのパフォーマンスを最適化します。
 feature: Best Practices
 topic: Administration, Commerce, Development, Performance
-source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
+source-git-commit: cb843dbb3759d9ce5e94317ae977cfe8acfa4432
 workflow-type: tm+mt
-source-wordcount: '61'
+source-wordcount: '56'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 - [設定のベストプラクティス](configuration.md)
 - [デプロイメントフロー](deployment-flow.md)
 - [高スループットの注文処理](high-throughput-order-processing.md)
-- 高度な概念 {#performance-best-practices}
+- 高度な概念 {#concepts}
    - [詳細設定](advanced-setup.md)
    - [詳細 [!DNL JavaScript] 束縛](advanced-js-bundling.md)
    - [GraphQL API 用アプリケーションサーバー](application-server.md)
