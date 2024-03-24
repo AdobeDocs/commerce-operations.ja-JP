@@ -4,9 +4,9 @@ description: 次の推奨事項に従って、Adobe Commerce実装のパフォ�
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
 feature: Cloud
 topic: Performance
-source-git-commit: 31c71af854a59381c7793f26ed9b121cd9bcac83
+source-git-commit: 8b09d734d8ac4490cd88af5673acd0a41b6cdf66
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ Adobe Commerceバージョン 2.4 以降ではElasticsearch（または OpenSear
 
 ### ヘッドレスアーキテクチャ
 
-専用の別の節があります。 [頭のない](../../architecture/headless/adobe-commerce.md). 要約すると、ストアフロントレイヤーがプラットフォーム自体から切り離されます。 それでも同じバックエンドですが、Adobe Commerceはリクエストを直接処理しなくなり、GraphQL API を介したカスタムストアフロントのみをサポートします。
+専用の別の節があります。 [頭のない](../../architecture/enterprise-blueprint.md#headless-storefront). 要約すると、ストアフロントレイヤーがプラットフォーム自体から切り離されます。 それでも同じバックエンドですが、Adobe Commerceはリクエストを直接処理しなくなり、GraphQL API を介したカスタムストアフロントのみをサポートします。
 
 ### Adobe Commerceの更新を保持
 

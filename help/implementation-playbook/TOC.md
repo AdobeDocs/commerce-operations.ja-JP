@@ -2,10 +2,10 @@
 user-guide-title: 実装プレイブック
 user-guide-description: 成功する Adobe Commerce サイトの計画と実装の戦略について学習します。
 mini-toc-levels: 3
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 36a2a86cbafab1e4913573b1c8431524ba43dc6a
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 11%
+source-wordcount: '257'
+ht-degree: 12%
 
 ---
 
@@ -32,10 +32,7 @@ ht-degree: 11%
    - [責任と所有権](planning/ownership.md)
    - [プロジェクトガバナンス](planning/governance.md)
 - アーキテクチャと統合 {#architecture}
-   - [機能](architecture/capabilities.md)
-   - [統合戦略](architecture/integration-strategy.md)
-   - [拡張戦略](architecture/extensibility-strategy.md)
-   - [統合オプション](architecture/integration-options.md)
+   - [エンタープライズリファレンス](architecture/enterprise-blueprint.md)
    - グローバルリファレンスアーキテクチャ {#global-reference-architecture}
       - [概要](architecture/global-reference/overview.md)
       - [例](architecture/global-reference/examples.md)
@@ -43,13 +40,6 @@ ht-degree: 11%
          - [概要](architecture/global-reference/composer/overview.md)
          - [プロジェクト構造](architecture/global-reference/composer/project-structure.md)
          - [ヒントとテクニック](architecture/global-reference/composer/tips-and-tricks.md)
-   - ヘッドレスコマース {#headless}
-      - [メリット](architecture/headless/benefits.md)
-      - [ジャーニーをヘッドレスに](architecture/headless/journey-to-headless.md)
-      - [Microservices](architecture/headless/microservices.md)
-      - [ヘッドレスの変化](architecture/headless/evolution.md)
-      - [ストアフロントの組み合わせアーキテクチャ](architecture/headless/legacy-storefront.md)
-      - [ヘッドレスアーキテクチャ](architecture/headless/adobe-commerce.md)
 - インフラストラクチャと導入 {#infrastructure}
    - [概要](infrastructure/overview.md)
    - 自己ホスト {#self-hosting}
