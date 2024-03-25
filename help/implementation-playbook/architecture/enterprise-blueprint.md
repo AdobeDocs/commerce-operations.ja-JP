@@ -2,13 +2,13 @@
 title: エンタープライズリファレンスアーキテクチャ
 description: Adobeの最新の合成可能なコマーステクノロジーを使用してAdobe Commerceを実装する方法を説明します。
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
-source-git-commit: 96afb0ccf5ea872cb42320babfd04ba51fa7dbf6
+exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
+source-git-commit: 8eab688ed98eb1b9fcf4fc25f90fe2bbf99c02d6
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce enterprise reference architecture
 
@@ -78,3 +78,4 @@ Adobeは、主要なビジネス目標をサポートするのに役立つ、イ
 ヘッドレスコマースは API ファーストのコマースです。 Adobe Commerceは、GraphQL API レイヤーを通じてすべてのコマースサービスとデータを提供する、切り離されたアーキテクチャに完全にヘッドレスです。 このアーキテクチャにより、チームは、コアアプリケーションとは独立したフロントエンドを開発でき、新しいテクノロジーを使用して新しいタッチポイントを迅速に構築し、テストする機敏性を提供します。
 
 Adobeは、が提供するのと同じ利点と機能を備えた、最新のヘッドレスストアフロントテクノロジーを提供します。 [Edge Delivery Services](https://www.aem.live/home) ドキュメントベースのオーサリング、パフォーマンスに優れたアーキテクチャ、標準のネイティブ実験を使用できます。 Adobe Commerceの規模とパフォーマンスを活用します。 [storefront サービス](#storefront-services) そしての柔軟性と利便性 [ドロップインコンポーネント](https://experienceleague.adobe.com/developer/commerce/storefront/) コマース機能を提供する。
+
