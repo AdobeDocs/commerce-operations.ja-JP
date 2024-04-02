@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで利用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: c39eb5c9328657083aea07a385531e7ad0df6e14
+source-git-commit: f21891b1be51896efba83d36048c20119ea1edbf
 workflow-type: tm+mt
-source-wordcount: '20136'
+source-wordcount: '20493'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,20 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) �
 >[!INFO]
 >
 >詳しくは、 [!DNL quality patches] コミュニティで作成されたMagento Open Source: [リリースノート](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.48 {#v1-1-48}
+
+* **ACSD-55566** (Adobe CommerceとMagento Open Source>=2.4.3 &lt;2.4.7) - `mergeCart` 突然変異は「 」で失敗する&#x200B;*内部サーバーエラー*」が [!DNL GraphQL] 同じバンドル項目を持つソースカートと宛先カートを結合する際の応答。
+* **ACSD-56546** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.7) — 設定可能な製品とバンドル製品が **在庫切れ** ストアフロントで **製品設定から表示** 次に該当 *無効*.
+* **ACSD-56635** (Adobe Commerce >=2.4.6 &lt;2.4.7 の場合 ) — でインポートを使用した場合に、インポートした顧客が同じ E メールアドレスで複製される問題を修正しました。 **アカウント共有** に設定 *グローバル*.
+* **ACSD-56741** (Adobe CommerceとMagento Open Source>=2.4.6 &lt;2.4.7) — エラーメッセージ「*NULL 型の値の配列オフセットにアクセスしようとしています*」が次の期間に表示される： `setup:upgrade` データベースにカスタムが含まれている場合 [!DNL MySQL] トリガーは、インデクス化メカニズムと [!DNL MView].
+* **ACSD-57315** (Adobe CommerceとMagento Open Source>=2.4.2 &lt;2.4.7) — で新しいトランザクションが作成された際の問題を修正します。 [!DNL PayPal Payflow Pro] 毎回 [!UICONTROL Fetch] ボタンがクリックされた時点で **[!UICONTROL View transaction]** 」画面を開きます。
+* **ACSD-57337** (Adobe Commerce >=2.4.4 &lt;2.4.6) — 特定の Web サイトへのアクセスを制限している管理者ユーザーが、 **[!UICONTROL Companies]** グリッド。
+* **ACSD-57394** (Adobe CommerceとMagento Open Source>=2.4.4 &lt;2.4.7) - [!DNL GraphQL].
+* **ACSD-57565** (Adobe CommerceとMagento Open Source>=2.4.6 &lt;2.4.7) - **[!UICONTROL Order]** 期間が更新されるまで、ダッシュボードに間違った注文情報が表示されます。 ダッシュボードに、最初の読み込み時に正しい順序の統計が表示されるようになりました。
+* **ACSD-57854** (Adobe CommerceとMagento Open Source>=2.4.5 &lt;2.4.7) — 製品の [!DNL GraphQL] リクエストは、カテゴリの集計で無効なカテゴリを返しました。
+* **ACSD-58008** (Adobe Commerce >=2.4.5 &lt;2.4.7 の場合 ) — 終了日が指定されていない場合に、スケジュール済み更新を更新するとステージング済みアイテムの以前のバージョンが削除される問題を修正しました。
+* 更新済みパッチ： MDVA-39305-V2、ACSD-48627、ACSD-54965
 
 ## v1.1.47 {#v1-1-47}
 
