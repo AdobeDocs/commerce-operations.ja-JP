@@ -1,11 +1,11 @@
 ---
-source-git-commit: c21077f9491d5d82f0673c5c20bec166ce843eaf
+source-git-commit: 551e3043f3f998f75c42a42f72d3e0fc6fdef149
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '96'
 ht-degree: 0%
 
 ---
-# Cloud 用 PHP 拡張機能
+# クラウド用 PHP 拡張機能
 
 <table style="table-layout:auto">
     <thead>
@@ -14,7 +14,7 @@ ht-degree: 0%
             デフォルトの拡張機能
         </th>
         <th>
-            アンインストールできない拡張機能がインストールされている
+            アンインストールできないインストール済み拡張機能
         </th>
         <th>
             必要に応じてインストールおよびアンインストールできる拡張機能
@@ -31,26 +31,33 @@ ht-degree: 0%
                 gd<br>
                 gettext<br>
                 intl<br>
+                libxml<br>
                 mysqli<br>
+                opcache<br>
+                openswoole<br>
                 pcntl<br>
                 pdo_mysql<br>
-                soap<br>
+                反射<br>
+                石けん<br>
                 ソケット<br>
+                SPL<br>
+                標準<br>
                 sysvmsg<br>
-                sysvsem<br>
+                システム<br>
                 sysvshm<br>
-                opcache<br>
-                zip<br>
+                郵便番号<br>
+                zlib<br>
             </td>
             <td>
                 ctype<br>
                 curl<br>
                 日付<br>
+                dba<br>
                 dom<br>
                 fileinfo<br>
                 フィルター<br>
                 ftp<br>
-                ハッシュ<br>
+                hash<br>
                 iconv<br>
                 json<br>
                 mbstring<br>
@@ -59,12 +66,12 @@ ht-degree: 0%
                 pcre<br>
                 pdo<br>
                 pdo_sqlite<br>
-                phal<br>
+                phar<br>
                 posix<br>
                 readline<br>
                 session<br>
                 sqlite3<br>
-                トークナイザー<br>
+                tokenzer<br>
                 xml<br>
                 xmlreader<br>
                 xmlwriter<br>
@@ -73,9 +80,8 @@ ht-degree: 0%
                 geoip<br>
                 gmp<br>
                 igbinary<br>
-                imagic<br>
+                imagick<br>
                 imap<br>
-                イオンキューブ<br>
                 ldap<br>
                 mailparse<br>
                 mcrypt<br>
@@ -84,14 +90,14 @@ ht-degree: 0%
                 oauth<br>
                 pdo_mysql<br>
                 propro<br>
-                呪文<br>
-                ラファン<br>
+                pspell<br>
+                グラフ<br>
                 レコード<br>
                 redis<br>
-                shimmop ソケット<br>
+                shmop ソケット<br>
                 ナトリウム<br>
                 ssh2<br>
-                きちんと<br>
+                整頓する<br>
                 xdebug<br>
                 xmlrpc<br>
                 xsl<br>

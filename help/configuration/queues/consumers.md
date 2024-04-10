@@ -1,81 +1,81 @@
 ---
 title: メッセージキューコンシューマー
-description: Adobe CommerceおよびMagento Open Sourceメッセージキューの消費者（関連する機能やシステム設定を含む）について説明します。
+description: Adobe CommerceおよびMagento Open Sourceメッセージキューコンシューマーについて、関連する機能やシステム設定などを説明します。
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
+source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
 
 # メッセージキューコンシューマー
 
-次の表に、すべてのメッセージキューコンシューマー、その動作、およびそれらに関連する管理システム設定を示します。
+次の表は、すべてのメッセージキューコンシューマーを特定し、その実行内容およびコンシューマーに関連付けられた管理システムの設定を示しています。
 
-| 消費者と説明 | Adobe Commerce | Adobe Commerceと B2B | Magento Open Source |
+| 消費者と説明 | Adobe Commerce | B2B のAdobe Commerce | Magento Open Source |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|-------------------------|---------------------|
 | `async.operations.all` | + | + | + |
-| の個々のタスクにメッセージを作成します [バルク操作](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)（品目のインポートまたはエクスポート、一括価格での価格変更、倉庫への製品の割り当てなど）。 必須 [**[!UICONTROL Admin bulk operations]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html?#admin-bulk-operations) オプションが&#x200B;**[!UICONTROL Run asynchronously]**」をクリックします。 |                |                         |                     |
+| の個々のタスクごとにメッセージを作成します [一括操作](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)品目のインポートまたはエクスポート、一括スケールでの価格の変更、倉庫への製品の割当てなど。 次の場合に必須： [**[!UICONTROL Admin bulk operations]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html?#admin-bulk-operations) オプションの設定&#x200B;**[!UICONTROL Run asynchronously]**管理システムの設定で行います。 |                |                         |                     |
 | `codegeneratorProcessor` | + | + | + |
-| バックグラウンドでクーポンを非同期的に生成します。 を使用するために必要 [バッチクーポン生成](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html#method-2%3A-generate-a-batch-of-coupons) 機能。 |                |                         |                     |
+| バックグラウンドで非同期にクーポンを生成します。 を使用するために必要です。 [バッチクーポンの生成](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html#method-2%3A-generate-a-batch-of-coupons) 機能 |                |                         |                     |
 | `commerce.eventing.event.publish` | + | + |                     |
-| で優先度として登録されたイベントを確認します。 [Adobe CommerceのAdobe I/Oイベント](https://developer.adobe.com/commerce/events/get-started/). |
+| で優先度として登録されているイベントを確認します。 [Adobe CommerceのAdobe I/Oイベント](https://developer.adobe.com/commerce/events/get-started/). |
 | `exportProcessor` | + | + | + |
-| 次の期間中に接続のタイムアウトを防ぐ： [書き出し](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html) 大規模なデータセット（200,000 個の製品など）の |                |                         |                     |
+| 次の期間の接続タイムアウトを防ぐ [export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html) （例：200,000 個の製品など）を含む大規模なデータセットです。 |                |                         |                     |
 | `inventoryQtyCounter` | + | + |                     |
-| 注文が行われた後、または製品が削除された後に、在庫指数を非同期で修正します。 必須 [**[!UICONTROL Use deferred stock update]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html#product-stock-options) 」オプションが「管理者」設定で有効になっている。 詳しくは、 [パフォーマンスのベストプラクティス](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#deferred-stock-update). |                |                         |                     |
+| 注文または製品の削除後に、在庫インデックスを非同期で修正します。 次の場合に必須： [**[!UICONTROL Use deferred stock update]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html#product-stock-options) オプションは、管理設定で有効になっています。 参照： [パフォーマンスのベストプラクティス](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#deferred-stock-update). |                |                         |                     |
 | `inventory.source.items.cleanup` | + | + | + |
-| 製品が削除されたときに、製品 SKU ごとにソース品目を非同期的に削除します。 必須 [**[!UICONTROL Synchronize with Catalog]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html) 「在庫」オプションは「管理」のシステム設定で有効になっています。 |                |                         |                     |
+| 製品が削除されると、製品 SKU ごとにソース項目を非同期で削除します。 次の場合に必須： [**[!UICONTROL Synchronize with Catalog]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html) stock オプションは、「管理システム」設定で有効になっています。 |                |                         |                     |
 | `inventory.mass.update` | + | + | + |
-| レガシー在庫品目の非同期処理、レガシー在庫品目の更新、デフォルトのソース品目の更新、特定の製品 SKU の在庫のインデックス再作成をおこないます。 必須 [**[!UICONTROL Run asynchronously]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html#admin-bulk-operations) 一括操作は、管理システムの設定で有効になっています。 |                |                         |                     |
+| は、従来の在庫項目の処理、従来の在庫項目の更新、デフォルトのソース項目の更新、特定の製品 SKU の在庫のインデックス再作成を非同期で行います。 次の場合に必須： [**[!UICONTROL Run asynchronously]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html#admin-bulk-operations) 一括操作は、管理システム設定で有効になっています。 |                |                         |                     |
 | `inventory.reservations.cleanup` | + | + | + |
-| 製品が削除された後、製品 SKU 別の予約を非同期的に削除します。 必須 [**[!UICONTROL Synchronize with Catalog]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html) 「在庫」オプションは「管理」のシステム設定で有効になっています。 |                |                         |                     |
+| 製品の削除後に、製品 SKU によって予約を非同期で削除します。 次の場合に必須： [**[!UICONTROL Synchronize with Catalog]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html) stock オプションは、「管理システム」設定で有効になっています。 |                |                         |                     |
 | `inventory.reservations.update` | + | + | + |
-| 製品が削除された後、製品 SKU 別の予約を非同期的に更新します。 必須 [**[!UICONTROL Synchronize with Catalog]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html) 「在庫」オプションは「管理」のシステム設定で有効になっています。 |                |                         |                     |
+| 製品が削除された後に、製品 SKU によって予約を非同期に更新します。 次の場合に必須： [**[!UICONTROL Synchronize with Catalog]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html) stock オプションは、「管理システム」設定で有効になっています。 |                |                         |                     |
 | `inventory.reservations.updateSalabilityStatus` | + | + | + |
-| 在庫に割り当てられた各製品の販売可能数量を非同期的に更新します。 次を使用している場合は、このコンシューマーは常に稼動状態である必要があります。 [!DNL Inventory Management]. |                |                         |                     |
+| 在庫に割り当てられた各製品の販売可能数量を非同期で更新します。 を使用している場合、このコンシューマーは常に起動して実行されている必要があります [!DNL Inventory Management]. |                |                         |                     |
 | `inventory.indexer.sourceItem` | + | + | + |
-| ソース項目のインデックスを非同期で再作成します。 必須 [**[!UICONTROL Stock/Source reindex strategy]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html#inventory-indexer-settings) が「」に設定されている[!UICONTROL asynchronous]」が追加されました。 |                |                         |                     |
+| ソースアイテムのインデックスを非同期で再作成します。 次の場合に必須： [**[!UICONTROL Stock/Source reindex strategy]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html#inventory-indexer-settings) はに設定されています。[!UICONTROL asynchronous]」と表示されます。 |                |                         |                     |
 | `inventory.indexer.stock` | + | + | + |
-| 在庫を非同期的に再インデックスします。 必須 [**[!UICONTROL Stock/Source reindex strategy]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html#inventory-indexer-settings) が「」に設定されている[!UICONTROL asynchronous]」が追加されました。 |                |                         |                     |
+| Stock のインデックスを非同期で再作成します。 次の場合に必須： [**[!UICONTROL Stock/Source reindex strategy]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html#inventory-indexer-settings) はに設定されています。[!UICONTROL asynchronous]」と表示されます。 |                |                         |                     |
 | `matchCustomerSegmentProcessor` | + | + |                     |
-| 一時データベーステーブルを作成し、各テーブルを移動します [顧客セグメント](https://docs.magento.com/user-guide/marketing/customer-segments.html) このレポートに、セグメント ID に一致するすべてのセグメントを削除し、指標としてセグメント ID を使用して顧客セグメントにコピーします。 これはすべてトランザクションで実行され、何かが失敗した場合、トランザクションは、実行前の状態にロールバックされます。 トランザクションの後、コンシューマーは一時テーブルを破棄します。 |                |                         |                     |
+| 一時データベース テーブルを作成し、各テーブルを移動します [顧客セグメント](https://docs.magento.com/user-guide/marketing/customer-segments.html) その中に、セグメント ID に一致するすべてのセグメントを削除し、セグメント ID をインジケーターとして使用して、それらを顧客セグメントにコピーします。 これはすべてトランザクションで行われるので、何かが失敗した場合、トランザクションはこの実行前の状態にロールバックされます。 トランザクションの後、コンシューマーは一時テーブルを削除します。 |                |                         |                     |
 | `media.content.synchronization` | + | + | + |
-| 製品、カテゴリ、CMS ブロック、CMS ページの割り当てられたメディアへのリンクが、アセットに正しく割り当てられていることを確認します。 使用されなくなった古いアセットを削除します。 |                |                         |                     |
+| 製品、カテゴリ、CMS ブロック、CMS ページに割り当てられたメディアへのリンクが、アセットに正しく割り当てられていることを確認します。 使用されなくなった古いアセットを削除します。 |                |                         |                     |
 | `media.gallery.renditions.update` | + | + | + |
-| メディアアセットのパスを生成および検証します。 アセットの絶対パスは、アセットがサーバー上のメディアディレクトリ内のどこに配置されているかによって決まります。 画像は（必要に応じて）サイズ変更され、生成されたパス内のメディアディレクトリにコピーされます。 |                |                         |                     |
+| メディアアセットのパスを生成および検証します。 アセットの絶対パスは、メディアディレクトリ内からサーバー上のどこにあるかによって決まります。 画像は（必要に応じて）サイズ変更され、生成されたパス内のメディアディレクトリにコピーされます。 |                |                         |                     |
 | `media.gallery.synchronization` | + | + | + |
-| 画像ファイルをに読み込みます。 `media_gallery_asset` データベーステーブル。 |                |                         |                     |
+| 画像ファイルをに読み込みます `media_gallery_asset` データベーステーブル。 |                |                         |                     |
 | `media.storage.catalog.image.resize` | + | + | + |
 | 非同期 [サイズ変更](https://developer.adobe.com/commerce/frontend-core/guide/themes/configure/#resize-catalog-images) カタログ画像。 |                |                         |                     |
 | `negotiableQuotePriceUpdate` |                | + |                     |
-| ネゴシエーション可能な見積もりの価格を更新します。 必須 [**[!UICONTROL Quotes]**](https://docs.magento.com/user-guide/sales/quotes.html) オプションが有効になっている場合は、管理システム設定で有効になります。 |                |                         |                     |
+| 交渉可能な見積の価格を更新します。 次の場合に必須： [**[!UICONTROL Quotes]**](https://docs.magento.com/user-guide/sales/quotes.html) 管理システムの設定で、オプションが有効になっている。 |                |                         |                     |
 | `placeOrderProcessor` | + | + |                     |
-| 非同期 [プロセスの注文](https://developer.adobe.com/commerce/php/module-reference/module-async-order/)を呼び出し、注文を受信済みとマークし、メッセージキューに配置し、先入れ先出しベースで処理します。 次の項目と見なされます。 [ベストプラクティス](../../implementation-playbook/best-practices/maintenance/order-processing-configuration.md) を参照してください。 |                |                         |                     |
+| 非同期 [注文を処理](https://developer.adobe.com/commerce/php/module-reference/module-async-order/)注文を受信済みとしてマークし、メッセージキューに入れて、先入れ先出しで処理します。 が次と見なされます [ベストプラクティス](../../implementation-playbook/best-practices/maintenance/order-processing-configuration.md) 顧客がバックエンドプロセスの完了を待たずに成功メッセージが表示されるため、処理可能な注文の数を改善する場合。 |                |                         |                     |
 | `product_action_attribute.update` | + | + | + |
-| 管理者が [更新を行う](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update.html). |                |                         |                     |
+| 管理者を使用して次の操作を行った後、製品属性への変更をデータベースに非同期で書き込む [更新する](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update.html). |                |                         |                     |
 | `product_action_attribute.website.update` | + | + | + |
-| 管理者が [更新を行う](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update.html). |                |                         |                     |
+| 管理者を使用して次の操作を行った後、データベース内の特定のストア表示の製品属性に対する変更が非同期で書き込まれます [更新する](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update.html). |                |                         |                     |
 | `product_alert` | + | + | + |
-| 製品価格と在庫の変更に関する通知 E メールを顧客に送信します。 必須 ( [**[!UICONTROL Product Alerts]**](https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/product-alerts/alert-setup.html) オプションが有効になっている場合は、管理システム設定で有効になります。 |                |                         |                     |
+| 製品価格および在庫変更に関する通知メールを顧客に送信します。 必要なときに、 [**[!UICONTROL Product Alerts]**](https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/product-alerts/alert-setup.html) 管理システムの設定で、オプションが有効になっている。 |                |                         |                     |
 | `purchaseorder.toorder` |                | + |                     |
-| 発注書をに変換します [注文](https://docs.magento.com/user-guide/stores/b2b-purchase-order-flow.html#approval-rules). 必須 [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) オプションが有効になっている場合は、管理システム設定で有効になります。 |                |                         |                     |
+| 発注書をに変換します [順序](https://docs.magento.com/user-guide/stores/b2b-purchase-order-flow.html#approval-rules). 次の場合に必須： [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) 管理システムの設定で、オプションが有効になっている。 |                |                         |                     |
 | `purchaseorder.transactional.email` |                | + |                     |
-| 発注書の E メールを送信します。 必須 [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) オプションが有効になっている場合は、管理システム設定で有効になります。 |                |                         |                     |
+| 発注書 E メールを送信します。 次の場合に必須： [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) 管理システムの設定で、オプションが有効になっている。 |                |                         |                     |
 | `purchaseorder.validation` |                | + |                     |
-| 関連するに対して発注を検証します [承認ルール](https://docs.magento.com/user-guide/customers/account-dashboard-approval-rules.html). 必須 [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) オプションが有効になっている場合は、管理システム設定で有効になります。 |                |                         |                     |
-| `saveConfigProcessor` [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7 ベータ版でのみ使用可能"} | + |                         | + |
-| 保存ジョブをメッセージキューに配置することで、ストア設定の変更を非同期的に保存します。これにより、多数のストアレベル設定を含むデプロイメントのパフォーマンスを向上させることができます。 を使用するために必要 [`AsyncConfig`](../../performance/configuration.md#asynchronous-configuration-save) モジュール。 |                |                         |                     |
+| 関連する発注を検証します。 [承認ルール](https://docs.magento.com/user-guide/customers/account-dashboard-approval-rules.html). 次の場合に必須： [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) 管理システムの設定で、オプションが有効になっている。 |                |                         |                     |
+| `saveConfigProcessor` | + |                         | + |
+| 保存ジョブをメッセージキューに配置すると、ストア設定の変更を非同期に保存できます。これにより、多数のストアレベル設定を含むデプロイメントのパフォーマンスが向上します。 を使用するために必要です。 [`AsyncConfig`](../../performance/configuration.md#asynchronous-configuration-save) モジュール。 |                |                         |                     |
 | `sales.rule.update.coupon.usage` | + | + | + |
-| 次の条件を満たさない [問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.html) ここでは、単一使用のクーポンを複数回使用できます。 |                |                         |                     |
+| を禁止します [問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.html) 1 回限りのクーポンを複数回使用できる場合。 |                |                         |                     |
 | `sharedCatalogUpdateCategoryPermissions` |                | + |                     |
-| 共有カタログカテゴリに割り当てられたカテゴリを更新します。 必須 [**[!UICONTROL Shared Catalogs]**](https://docs.magento.com/user-guide/catalog/catalog-shared.html) オプションが有効になっている場合は、管理システム設定で有効になります。 |                |                         |                     |
+| 共有カタログ カテゴリに割り当てられているカテゴリを更新します。 次の場合に必須： [**[!UICONTROL Shared Catalogs]**](https://docs.magento.com/user-guide/catalog/catalog-shared.html) 管理システムの設定で、オプションが有効になっている。 |                |                         |                     |
 | `sharedCatalogUpdatePrice` |                | + |                     |
-| 共有カタログ内の各製品の価格を更新します。 必須 [**[!UICONTROL Shared Catalogs]**](https://docs.magento.com/user-guide/catalog/catalog-shared.html) オプションが有効になっている場合は、管理システム設定で有効になります。 |                |                         |                     |
+| 共有カタログ内の各製品の価格を更新します。 次の場合に必須： [**[!UICONTROL Shared Catalogs]**](https://docs.magento.com/user-guide/catalog/catalog-shared.html) 管理システムの設定で、オプションが有効になっている。 |                |                         |                     |
 | `quoteItemCleaner` | + | + |                     |
-| 商品がカタログから削除されたり、買い物かごから削除されたりした場合に、無効または非アクティブな価格見積もりを削除します。 必須 [**[!UICONTROL Quotes]**](https://docs.magento.com/user-guide/sales/quotes.html) オプションが有効になっている場合は、管理システム設定で有効になります。 |                |                         |                     |
+| 商品がカタログから削除された場合、または買い物かごから削除された場合に、無効または非アクティブな価格見積を削除します。 次の場合に必須： [**[!UICONTROL Quotes]**](https://docs.magento.com/user-guide/sales/quotes.html) 管理システムの設定で、オプションが有効になっている。 |                |                         |                     |
 | `sales.rule.quote.trigger.recollect` | + | + | + |
-| アクティブな買い物かごを更新して、買い物かごの価格ルールの変更を反映します。 更新時に必須 [**[!UICONTROL Catalog price rules]**](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog.html). |                |                         |                     |
+| アクティブな買い物かご価格ルールの変更を反映するように、アクティブな買い物かご設定を更新します。 更新時に必須 [**[!UICONTROL Catalog price rules]**](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog.html). |                |                         |                     |
 
 {style="table-layout:auto"}

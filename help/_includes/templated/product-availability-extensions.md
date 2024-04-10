@@ -1,18 +1,18 @@
 ---
-source-git-commit: e3c8cceec1cea6a384250c1a9165b8684674e64c
+source-git-commit: 7ad815d0191c6cc3df7ea7dfe383f17a40cbde0a
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '104'
 ht-degree: 0%
 
 ---
-# 作成済み拡張機能のAdobeの可用性
+# 作成した拡張機能のAdobeの可用性
 
 
 <table style="table-layout:auto">
   <thead>
     <tr>
       <th>Adobe Commerceバージョン</th>
-      <th>2.4.7-beta3</th>
+      <th>2.4.7</th>
       <th>2.4.6</th>
       <th>2.4.5</th>
       <th>2.4.4</th>
@@ -32,10 +32,10 @@ ht-degree: 0%
           </td>
       </tr>
       <tr>
-          <td>Adobe Commerce Admin UI SDK</td>
-          <td>1.3 以上</td>
-          <td>1.3 以上</td>
-          <td>1.3 以上</td>
+          <td>Adobe Commerce管理 UI SDK</td>
+          <td>1.3 以降</td>
+          <td>1.3 以降</td>
+          <td>1.3 以降</td>
           <td>-</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/">コンポーザー</a><br/>
@@ -43,7 +43,7 @@ ht-degree: 0%
           </td>
       </tr>
       <tr>
-          <td>Adobe Commerce Webhooks</td>
+          <td>Adobe Commerce Webhook</td>
           <td>1.2 以上</td>
           <td>1.2 以上</td>
           <td>1.2 以上</td>
@@ -55,8 +55,8 @@ ht-degree: 0%
       </tr>
       <tr>
           <td>B2B</td>
-          <td>1.4.2 (PHP 8.2)</td>
-          <td>1.3.5 以上</td>
+          <td>1.4.2 （PHP 8.2）</td>
+          <td>1.3.5 以降</td>
           <td>1.3.4</td>
           <td>1.3.3</td>
           <td>
@@ -66,8 +66,8 @@ ht-degree: 0%
       </tr>
       <tr>
           <td>データ接続</td>
-          <td>3.2.0-beta3</td>
-          <td>2.1.1 以上</td>
+          <td>3.1.1 以降</td>
+          <td>2.1.1 以降</td>
           <td>1.0.0 以上</td>
           <td>1.0.0 以上</td>
           <td>
@@ -76,7 +76,7 @@ ht-degree: 0%
           </td>
       </tr>
       <tr>
-          <td>Page Builder</td>
+          <td>ページビルダー</td>
           <td>-</td>
           <td>1.7.3</td>
           <td>1.7.2</td>

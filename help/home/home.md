@@ -1,23 +1,23 @@
 ---
-keywords: Adobe Commerce;home;popular topics
+keywords: Adobe Commerce；ホーム；人気のトピック
 title: ホーム
-description: Adobe Commerceのシステム管理と運用製品に関するドキュメントの一覧を参照します。
+description: Adobe Commerce システム管理および運用製品ドキュメントのインデックスを参照します。
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 2b1fa24471cda7cc01ef5fdafeedbec0315d68c7
+source-git-commit: c8093c4575eccc1d012da0e1502eb618c9b048e5
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 18%
+source-wordcount: '225'
+ht-degree: 17%
 
 ---
 
-# Adobe Commerce Operational Guides
+# Adobe Commerce運用ガイド
 
-Adobe Commerceプロジェクトの開発、デプロイ、メンテナンスに関する概念、プロセス、ツール、ベストプラクティスに関する実用的な情報を入手します。
+Adobe Commerce プロジェクトを開発、デプロイ、管理するためのコンセプト、プロセス、ツールおよびベストプラクティスに関する実用的な情報を確認します。
 
 <table>
 <tr>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html">
       <img alt="リリース情報" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
@@ -31,7 +31,7 @@ Adobe Commerceプロジェクトの開発、デプロイ、メンテナンスに
     </a>
     <div>
       <a href="../installation/overview.md"><strong>インストール</strong></a>
-      <p>オンプレミスデプロイメント用にAdobe Commerceをインストールする方法を説明します。</p>
+      <p>オンプレミスデプロイメント用のAdobe Commerceのインストール方法を説明します。</p>
     </div>
   </td>
   <td valign="top">
@@ -40,7 +40,7 @@ Adobe Commerceプロジェクトの開発、デプロイ、メンテナンスに
     </a>
     <div>
       <a href="../configuration/overview.md"><strong>設定</strong></a>
-      <p>Adobe Commerceアプリケーションの機能とサービスを設定します。</p>
+      <p>Adobe Commerce アプリケーションの機能とサービスを設定します。</p>
     </div>
   </td>
   <td valign="top">
@@ -49,7 +49,7 @@ Adobe Commerceプロジェクトの開発、デプロイ、メンテナンスに
     </a>
     <div>
       <a href="../tools/data-migration-tool/how-migration-works.md"><strong>データ移行</strong></a>
-      <p>Magento1 とMagento2 の間のデータ移行プロセスについて説明します。</p>
+      <p>Magento 1 とMagento 2 間のデータ移行プロセスについて説明します。</p>
     </div>
   </td>
 </tr>
@@ -60,7 +60,7 @@ Adobe Commerceプロジェクトの開発、デプロイ、メンテナンスに
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong>アップグレード</strong></a>
-      <p>ストアフロントのセキュリティと効率的な動作を維持するためにAdobe Commerceプロジェクトをアップグレードする方法を説明します。</p>
+      <p>ストアフロントのセキュリティを確保し、効率的に運用を行うために、Adobe Commerce プロジェクトをアップグレードする方法について説明します。</p>
     </div>
   </td>
   <td valign="top">
@@ -69,7 +69,7 @@ Adobe Commerceプロジェクトの開発、デプロイ、メンテナンスに
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html"><strong>コマンドラインツールリファレンス</strong></a>
-      <p>Adobe Commerceコマンドラインツールのコマンド、引数、およびオプションについて説明します。</p>
+      <p>Adobe Commerce コマンドラインツールのコマンド、引数およびオプションについて説明します。</p>
     </div>
   </td>
   <td valign="top">
@@ -78,7 +78,7 @@ Adobe Commerceプロジェクトの開発、デプロイ、メンテナンスに
     </a>
     <div>
       <a href="../performance/overview.md"><strong>パフォーマンスのベストプラクティス</strong></a>
-      <p>これらの推奨事項を使用して、Adobe Commerceデプロイメントのパフォーマンスを最適化します。</p>
+      <p>これらの推奨事項を使用すると、Adobe Commerceのデプロイメントのパフォーマンスを最適化できます。</p>
     </div>
   </td>
   <td valign="top">
@@ -106,26 +106,26 @@ Adobe Commerceプロジェクトの開発、デプロイ、メンテナンスに
        <img alt="運用" src="../assets/icons/refresh.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../operational-playbook/overview.md"><strong>オペレーショナルプレイブック</strong></a>
+      <a href="../operational-playbook/overview.md"><strong>運用プレイブック</strong></a>
       <p>e コマースサイトを成功させるために、ビジネスの運営をどのように準備すればよいかについて学習します。</p>
     </div>
   </td>
   <td valign="top">
     <a href="../operational-playbook/overview.md">
-       <img alt="大規模法人" src="../assets/icons/enterprise.svg" width="40" height="40"/>
+       <img alt="Enterprise" src="../assets/icons/enterprise.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../commerce-at-scale/overview.md"><strong>規模に応じたコマース</strong></a>
+      <a href="../commerce-at-scale/overview.md"><strong>大規模なコマース</strong></a>
       <p>Adobe Commerce と Adobe Experience Manager を使用して、エクスペリエンスを大規模に配信する方法を学習します。</p>
     </div>
   </td>
   <td valign="top">
     <a href="../security-and-compliance/overview.md">
-       <img alt="大規模法人" src="../assets/icons/alert-circle.svg" width="40" height="40"/>
+       <img alt="Enterprise" src="../assets/icons/alert-circle.svg" width="40" height="40"/>
     </a>
     <div>
       <a href="../security-and-compliance/overview.md"><strong>セキュリティとコンプライアンス</strong></a>
-      <p>安全な環境の維持にAdobe Commerceの商人がどのように責任を負うかを説明します。</p>
+      <p>Adobe Commerceのマーチャントが安全な環境の維持にどのように責任を負うかを説明します。</p>
     </div>
   </td>
 </tr>
