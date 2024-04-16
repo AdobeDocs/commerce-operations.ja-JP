@@ -1,28 +1,28 @@
 ---
 title: モジュールと拡張機能の管理（開発者）
-description: Adobe CommerceおよびMagento Open Sourceモジュールと拡張機能は、コマンドラインインターフェイスと Composer パッケージマネージャーを使用して管理します。
+description: コマンドラインインターフェイスと Composer パッケージマネージャーを使用して、Adobe Commerce モジュールと拡張機能を管理します。
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '135'
 ht-degree: 2%
 
 ---
 
 # モジュールと拡張機能の管理
 
-Adobe CommerceまたはMagento Open Sourceでバージョンを指定して、開発者がモジュールおよび拡張機能をアップグレードする際に貢献します。 `composer.json` ファイル。 貢献している開発者でない場合は、 [アップグレードの実行](../implementation/perform-upgrade.md).
+投稿する開発者は、Adobe CommerceまたはMagento Open Sourceでバージョンを指定することで、モジュールおよび拡張機能をアップグレードします `composer.json` ファイル。 コントリビューション機能を持つ開発者でない場合は、を参照してください。 [アップグレードの実行](../implementation/perform-upgrade.md).
 
-次のいずれかの方法で、 `require` セクションから `composer.json` ファイルで指定するか、 `composer require` コマンドを次のように指定します。
+を追加できます `require` セクションから `composer.json` ファイルを開くか、 `composer require` コマンドは次のようになります。
 
 {{$include /help/_includes/server-login.md}}
 
-次のオプションがあります。
+以下のオプションがあります。
 
-## 利用可能なモジュールバージョンの取得
+## 使用可能なモジュールバージョンの取得
 
-コマンドの使用：
+コマンドの使用法：
 
 ```bash
 composer show --all <vendor>/<name>
@@ -34,9 +34,9 @@ composer show --all <vendor>/<name>
 composer show --all example/module
 ```
 
-## 以下を使用します。 `composer require` command
+## の使用 `composer require` コマンド
 
-コマンドの使用：
+コマンドの使用法：
 
 ```bash
 composer require <vendor>/<name>:<version>
@@ -48,13 +48,13 @@ composer require <vendor>/<name>:<version>
 composer require example/module:1.0.0
 ```
 
-Composer が依存関係を更新し、モジュールをインストールする間お待ちください。
+Composer が依存関係を更新してモジュールをインストールしています。しばらくお待ちください。
 
-## を追加します。 `require` セクションを composer.json ファイルに追加します。
+## を追加 `require` composer.json ファイルのセクション
 
-1. を開きます。 `composer.json` をクリックします。
+1. を開きます `composer.json` テキストエディター。
 
-1. を追加します。 `require` 」セクションに入力します。
+1. を追加 `require` セクション。
 
    ```json
    "require": {
@@ -63,9 +63,9 @@ Composer が依存関係を更新し、モジュールをインストールす�
    }
    ```
 
-1. 変更を `composer.json` ファイルを開き、テキストエディタを終了します。
+1. 変更をに保存します。 `composer.json` ファイルを開き、テキストエディターを終了します。
 
-1. 依存関係を解決し、正確なバージョンを `composer.lock` ファイル。
+1. 依存関係を解決し、正確なバージョンをに書き込む `composer.lock` ファイル。
 
    ```bash
    composer update

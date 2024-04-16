@@ -1,30 +1,30 @@
 ---
-title: メッセージキュー：概要
-description: メッセージキューのフレームワークと、Adobe CommerceおよびMagento Open Sourceアプリケーションでの動作についてお読みください。
+title: メッセージキューの概要
+description: メッセージキューフレームワークとAdobe Commerce アプリケーションとの連携方法について説明します。
 exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
 
-# メッセージキュー：概要
+# メッセージキューの概要
 
-Message Queue Framework（MQF；メッセージキューフレームワーク）は、モジュールがキューにメッセージを公開できるシステムです。 また、 [消費者](consumers.md) を呼び出すと、メッセージが非同期で受信されます。 MQF は [[!DNL RabbitMQ]](https://www.rabbitmq.com) メッセージを送受信するためのスケーラブルなプラットフォームを提供するメッセージングブローカーとして。 また、配信されなかったメッセージを保存するメカニズムも含まれています。 [!DNL RabbitMQ] は、AMQP(Advanced Message Queuing Protocol) 0.9.1 仕様に基づいています。
+メッセージキューフレームワーク（MQF）は、モジュールがキューにメッセージを公開できるようにするシステムです。 また、 [消費者](consumers.md) はメッセージを非同期で受信します。 この MQF は、 [[!DNL RabbitMQ]](https://www.rabbitmq.com) メッセージを送受信するためのスケーラブルなプラットフォームを提供するメッセージングブローカーとして。 また、未配信メッセージを保存するメカニズムも含まれています。 [!DNL RabbitMQ] は、Advanced Message Queuing Protocol （AMQP） 0.9.1 仕様に基づいています。
 
 次の図に、メッセージキューフレームワークを示します。
 
 ![メッセージキューフレームワーク](../../assets/configuration/mq-framework.png)
 
-- 発行者は、エクスチェンジにメッセージを送信するコンポーネントです。 公開先の交換と、送信するメッセージの形式を把握します。
+- パブリッシャーは、メッセージを取引所に送信するコンポーネントです。 公開先の交換と、送信するメッセージの形式がわかります。
 
-- Exchange は、パブリッシャーからメッセージを受け取り、キューに送信します。 ただし [!DNL RabbitMQ] は複数のタイプの交換をサポートしています。Commerce ではトピック交換のみを使用します。 トピックには、ドットで区切られたテキスト文字列を含むルーティングキーが含まれます。 トピック名の形式は次のとおりです。 `string1.string2`：例： `customer.created` または `customer.sent.email`.
+- 交換機はパブリッシャーからメッセージを受信し、キューに送信します。 ただし [!DNL RabbitMQ] は複数の種類の交換をサポートしていますが、Commerceではトピック交換のみを使用します。 トピックにはルーティングキーが含まれます。ルーティングキーには、ドットで区切られたテキスト文字列が含まれます。 トピック名の形式は、です。 `string1.string2`：例： `customer.created` または `customer.sent.email`.
 
-  ブローカーでは、メッセージの転送ルールを設定する際にワイルドカードを使用できます。 アスタリスク (`*`) を置き換えます。 _1 つ_ 文字列またはシャープ記号 (`#`) をクリックして、0 個以上の文字列を置き換えます。 例： `customer.*` 次の項目をフィルターします： `customer.create` および `customer.delete`ではなく、 `customer.sent.email`. ただし、 `customer.#` 次の項目をフィルターします： `customer.create`,  `customer.delete`、および `customer.sent.email`.
+  ブローカーでは、メッセージ転送のルールを設定する際にワイルドカードを使用できます。 アスタリスク（`*`）に変更します _1_ 文字列またはポンド記号（`#`）を選択して、0 個以上の文字列を置き換えます。 例： `customer.*` 次の条件でフィルタリングします `customer.create` および `customer.delete`が、ではない `customer.sent.email`. しかし `customer.#` 次の条件でフィルタリングします `customer.create`,  `customer.delete`、および `customer.sent.email`.
 
 - キューは、メッセージを格納するバッファです。
 
-- 消費者がメッセージを受け取ります。 どのキューを使用するかを把握します。 メッセージのプロセッサーを特定のキューにマッピングできます。
+- 消費者がメッセージを受信します。 使用するキューがわかります。 メッセージのプロセッサを特定のキューにマップできます。
 
-基本的なメッセージキューシステムは、 [!DNL RabbitMQ]. このシステムでは、MySQL アダプタはデータベースにメッセージを保存します。 3 つのデータベーステーブル (`queue`, `queue_message`、および `queue_message_status`) メッセージキューのワークロードを管理します。 Cron ジョブは、消費者がメッセージを受信できるようにします。 このソリューションは、あまり拡張性が高くありません。 [!DNL RabbitMQ] 可能な限り使用する必要があります。
+基本的なメッセージキューシステムは、を使用せずにセットアップすることもできます [!DNL RabbitMQ]. このシステムでは、MySQL アダプタがメッセージをデータベースに格納します。 3 つのデータベーステーブル（`queue`, `queue_message`、および `queue_message_status`）メッセージキューのワークロードを管理します。 Cron ジョブは、コンシューマーがメッセージを受信できるようにします。 このソリューションは拡張性に欠けます。 [!DNL RabbitMQ] 可能な限り使用してください。

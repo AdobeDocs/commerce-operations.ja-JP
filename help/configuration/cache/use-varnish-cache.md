@@ -1,52 +1,52 @@
 ---
-title: Vanish を使用したキャッシュの消去
-description: キャッシュの消去が Vanrish と連携する仕組みと、それをAdobe Commerceアプリケーションの Web キャッシュアクセラレーターとして使用する方法を説明します。
+title: Varnish によるキャッシュのクリア
+description: キャッシュクリアが Varnish でどのように機能するか、およびAdobe Commerce アプリケーションの web キャッシュアクセラレーターとして使用する方法について説明します。
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
 
-# Vanish を使用したキャッシュの消去
+# Varnish によるキャッシュのクリア
 
-このトピックでは、Adobe CommerceとMagento Open Sourceの Web キャッシュアクセラレーターとして Vanrish を使用する際の基本について説明します。
+ここでは、Adobe Commerceの web キャッシングアクセラレーターとして Varnish を使用する際の基本について説明します。
 
-## ワニスのパージ
+## ワニスパージ
 
-基準 [Vanish 文書](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html)、「A」 *パージ* キャッシュからオブジェクトを選択し、そのバリアントと共に破棄すると、何が起こるかを示します。 ワニスのパージは、キャッシュのクリーンコマンド ( または、 **フラッシュMagentoキャッシュ** （管理者）。
+基準： [Varnish ドキュメント](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *消去* は、キャッシュからオブジェクトを選択し、そのバリアントと一緒に破棄する場合に発生します。」 Varnish パージは、キャッシュの消去コマンド（またはクリック）に似ています **Magentoキャッシュのフラッシュ** （管理者で）。
 
-実際、Commerce キャッシュをクリーンアップ、フラッシュ、または更新すると、Vanish も削除されます。
+実際、Commerceのキャッシュをクリーンアップ、フラッシュまたは更新すると、Varnish もパージします。
 
-Commerce と連携するように Vanrish をインストールして設定した後、次の操作を行うと、Varnish がパージされる場合があります。
+Commerceと連携するようにワニスをインストールして設定したら、次の操作を行うとワニスのパージが発生する場合があります。
 
-- Web サイトの保守。
+- Web サイトの管理。
 
-  例えば、次の場所の管理者でおこなった操作の例です。
+  例えば、次の場所の管理者で行うこと：
 
-   - **ストア** > **設定** > **設定** /一般 > **一般**
-   - **ストア** > **設定** > **設定** /一般 > **通貨の設定**
-   - **ストア** > **設定** > **設定** /一般 > **電子メールアドレスを保存**
+   - **ストア** > **設定** > **設定** > 一般 > **一般**
+   - **ストア** > **設定** > **設定** > 一般 > **通貨設定**
+   - **ストア** > **設定** > **設定** > 一般 > **メールアドレスの保存**
 
-  Commerce がそのような変更を検出すると、キャッシュを更新するよう通知するメッセージが表示されます。
+  Commerceがそのような変更を検出すると、キャッシュを更新するように求めるメッセージが表示されます。
 
-- 店舗の保守（例えば、カテゴリ、価格、製品、プロモーションの価格ルールの追加や編集）。
+- ストアの維持（カテゴリ、価格、製品、プロモーション価格ルールの追加や編集など）。
 
-  ワニスは、次のタスクを実行すると自動的にパージされます。
+  これらのタスクを実行すると、ワニスは自動的にパージされます。
 
-- ソースコードの保守。
+- ソースコードの管理。
 
-  キャッシュを更新し、定期的に `generated/code` および `generated/metadata` ディレクトリ。 キャッシュの更新について詳しくは、次の節を参照してください。
+  キャッシュを更新し、内のすべてを定期的に削除する必要があります `generated/code` および `generated/metadata` ディレクトリ。 キャッシュの更新については、次の節を参照してください。
 
-## Vanish をパージするように Commerce を設定
+## Commerceでワニスをパージするように設定する
 
-Commerce は、Vanish ホストを [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) コマンドを使用します。
+Commerceでは、を使用して Varnish ホストを設定した後、Varnish ホストをパージします。 [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) コマンド。
 
-オプションのパラメーターを使用できます `--http-cache-hosts` Vanish ホストとリッスンポートのコンマ区切りリストを指定するためのパラメータ。 Vanish ホストを 1 つでも複数でも構成します。 （ホストをスペース文字で区切らないでください）。
+オプションのパラメーターを使用できます `--http-cache-hosts` パラメーター：Varnish ホストとリッスンポートのコンマ区切りリストを指定します。 1 つまたは複数の Varnish ホストをすべて設定します。 （ホストをスペース文字で区切らないでください）。
 
-パラメーターの形式は次のようにする必要があります。 `<hostname or ip>:<listen port>`を指定します。ここで、 `<listen port>` （ポート 80 の場合）
+パラメーターの形式は、 `<hostname or ip>:<listen port>`。を省略できます `<listen port>` ポート 80 の場合。
 
 以下に例を挙げます。
 
@@ -54,8 +54,8 @@ Commerce は、Vanish ホストを [`magento setup:config:set`](https://devdocs.
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 ```
 
-その後、コマースキャッシュを更新すると、Vanish ホストをパージできます ( *クリーニング* キャッシュ ) を管理者またはコマンドラインで使用します。
+その後、Commerceのキャッシュ（ *クリーニング* キャッシュ）を使用するか、コマンドラインを使用します。
 
-管理者を使用してキャッシュを更新するには、 **[!UICONTROL SYSTEM]** /ツール/ **キャッシュ管理**&#x200B;を選択し、次に **フラッシュMagentoキャッシュ** をクリックします。 （個々のキャッシュタイプを更新することもできます）。
+管理者を使用してキャッシュを更新するには、 **[!UICONTROL SYSTEM]** > ツール > **キャッシュ管理**&#x200B;を選択し、 **Magentoキャッシュのフラッシュ** ページの上部 （個々のキャッシュタイプを更新することもできます）。
 
-コマンドラインを使用してキャッシュを更新するには、通常、 [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) コマンドを [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
+コマンドラインを使用してキャッシュを更新するには、通常、 [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) としてコマンド [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).

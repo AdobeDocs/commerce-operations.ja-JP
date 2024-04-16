@@ -1,29 +1,29 @@
 ---
-title: オンプレミスインストールの前提条件
-description: Adobe CommerceとMagento Open Sourceのオンプレミスインストールに必要なソフトウェアの依存関係について詳しく説明します。
+title: オンプレミスでのインストールの前提条件
+description: Adobe Commerceのオンプレミスインストールに必要なソフトウェア依存関係について詳しく説明します。
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 9fe0a27346554bca3cb635b2e7ecf175adcec54a
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '328'
 ht-degree: 1%
 
 ---
 
-# オンプレミスインストールの前提条件
+# オンプレミスでのインストールの前提条件
 
-Adobe CommerceまたはMagento Open Sourceをインストールする前に、次の手順を実行する必要があります。
+Adobe CommerceまたはMagento Open Sourceをインストールする前に、次の作業を行う必要があります。
 
-* 次の条件を満たす 1 つ以上のホストを設定します。 [システム要件](../system-requirements.md).
-* ロードバランシングを使用して複数の Web ノードを設定する場合は、システムのその部分を設定してテストします _前_ アプリケーションをインストールします。
-* 問題が発生した場合は、システム全体をロールバックできるように、インストール中の様々な時点でシステム全体をバックアップできることを確認します。
+* を満たす 1 つ以上のホストの設定 [必要システム構成](../system-requirements.md).
+* ロードバランシングを使用して複数の web ノードを設定する場合は、システムのその部分を設定してテストします _次の前_ アプリケーションをインストールします。
+* 問題が発生した場合にロールバックできるように、インストール中の様々な時点でシステム全体をバックアップできることを確認してください。
 
 >[!NOTE]
 >
->Adobe CommerceまたはMagento Open Sourceを **開発環境**（マシンへの root ユーザーアクセス権を持っている） **および** マシンを高度に安全にする必要はありません。 より安全なマシンを設定する場合は、ネットワーク管理者に問い合わせて、さらにサポートが必要な場合は、
+>ここでは、にAdobe CommerceまたはMagento Open Sourceをインストールすることを前提としています。 **開発環境**&#x200B;マシンに対するルートユーザーのアクセス権があること。 **および** マシンのセキュリティが高い必要がないこと。 より安全なマシンを設定する場合は、ネットワーク管理者に問い合わせてサポートを依頼することを強くお勧めします。
 
-オペレーティングシステムソフトウェアの更新とアップグレードを強くお勧めします。 これらのアップグレードにより、セキュリティとソフトウェアの修正が行われ、今後の問題を回避できる可能性があります。 これが何を意味するか分からない？ 以下をご確認ください。 [インストールの概要ページ](../overview.md).
+オペレーティングシステムのソフトウェアを更新およびアップグレードすることを強くお勧めします。 これらのアップグレードにより、将来の問題を防ぐためのセキュリティとソフトウェアの修正が提供される場合があります。 これは何を意味するのか分からない？ こちらをご覧ください [インストールの概要ページ](../overview.md).
 
-を使用して、次のコマンドをユーザーとして入力します。 `root` 権限：
+を使用して、ユーザーとして次のコマンドを入力します `root` 権限：
 
 * Ubuntu
 
@@ -55,22 +55,22 @@ CentOS: `httpd -v`
 
 Ubuntu: `apache2 -v`
 
-Adobe CommerceとMagento Open Sourceは Apache バージョン 2.4 をサポートしています。サポートの結果は次のようになります。
+次の結果が示すように、Adobe Commerceは Apache バージョン 2.4 をサポートしています。
 
 ```terminal
 Server version: Apache/2.4.0 (Unix)
 Server built:   Jul 23 2017 14:17:29
 ```
 
-Apache をインストールまたはアップグレードするには、 [Apache](web-server/apache.md).
+Apache をインストールまたはアップグレードするには、を参照してください [Apache](web-server/apache.md).
 
 ### PHP
 
-詳しくは、 [システム要件](../system-requirements.md) （PHP およびのサポート対象バージョンの場合） [PHP](../system-requirements.md#php-settings) PHP の要件に関する情報。
+参照： [必要システム構成](../system-requirements.md) サポートされている PHP のバージョンおよび [PHP](../system-requirements.md#php-settings) （PHP の要件）。
 
 ### MySQL
 
-インストールするAdobe CommerceまたはMagento Open Sourceのバージョンに対応する MySQL の互換性があることを確認してください。 詳しくは、 [必要システム構成](../system-requirements.md) を参照してください。
+インストールしているAdobe CommerceまたはMagento Open Sourceのバージョンと互換性のある MySQL のバージョンがあることを確認します。 参照： [必要システム構成](../system-requirements.md) （サポートされているバージョンの場合）
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -82,7 +82,7 @@ mysql -u <database root user or database owner name> -p
 mysql -u magento -p
 ```
 
-次の結果は、実行中のバージョンを示します。
+次の結果は、実行しているバージョンを示しています。
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -96,21 +96,21 @@ affiliates. Other names may be trademarks of their respective
 owners.
 ```
 
-タイプ `help` または `\h` を参照してください。 タイプ `\c` 現在の入力文をクリアするには、をクリックします。
+タイプ `help` または `\h` ヘルプを参照してください。 タイプ `\c` 現在の input 文をクリアします。
 
-入力 `exit` 時刻： `mysql>` 終了するプロンプトが表示されます。
+Enter `exit` 時刻 `mysql>` 終了を確認する。
 
-MySQL をインストールまたはアップグレードするには、 [MySQL](database/mysql.md).
+MySQL をインストールまたはアップグレードするには、次を参照してください。 [MySQL](database/mysql.md).
 
 ### 検索エンジン
 
-OpenSearch のインストールを確認するには、次の手順に従います。
+OpenSearch のインストールを確認するには：
 
 ```bash
 curl -XGET '<opensearch-hostname>:<opensearch-port>'
 ```
 
-インストールをElasticsearchするには：
+Elasticsearchのインストールを確認するには：
 
 ```bash
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'

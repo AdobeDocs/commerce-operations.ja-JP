@@ -1,26 +1,26 @@
 ---
-title: オンプレミスのインストールセキュリティ
-description: オンプレミスでのAdobe CommerceまたはMagento Open Sourceのインストールのセキュリティ姿勢を改善する方法について説明します。
+title: オンプレミス インストールのセキュリティ
+description: Adobe CommerceまたはMagento Open Sourceのオンプレミス環境のセキュリティ体制を強化する方法について説明します。
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
 
-# オンプレミスのインストールセキュリティ
+# オンプレミス インストールのセキュリティ
 
-[セキュリティ強化 Linux(SELinux)](https://selinuxproject.org/page/Main_Page) を使用すると、CentOS および Ubuntu 管理者がサーバーに対するより優れたアクセス制御を実行できます。 SELinux を使用する場合 *および* Apache は別のホストへの接続を開始する必要があります。この節で説明するコマンドを実行する必要があります。
+[Security Enhanced Linux （SELinux）](https://selinuxproject.org/page/Main_Page) centOS 管理者と Ubuntu 管理者がサーバーに対するより優れたアクセス制御を可能にします。 SELinux を使用する場合 *および* Apache が別のホストへの接続を開始する必要があります。この節で説明するコマンドを実行する必要があります。
 
 >[!NOTE]
 >
->Adobeでは、SELinux の使用を推奨しません。必要に応じて、セキュリティを強化するために使用できます。 SELinux を使用する場合は、適切に設定する必要があります。設定しないと、Adobe CommerceとMagento Open Sourceが予想外に機能する可能性があります。 SELinux を使用する場合は、 [CentOS Wiki](https://wiki.centos.org/HowTos/SELinux) ：通信を有効にするルールを設定します。
+>Adobeでは、SELinux の使用に関する推奨事項はありません。必要に応じて、セキュリティの強化に使用できます。 SELinux を使用する場合は、適切に設定する必要があります。そうしないと、Adobe Commerceが予期せず機能することがあります。 SELinux を使用する場合は、 [CentOS wiki](https://wiki.centos.org/HowTos/SELinux) ：通信を有効にするルールを設定します。
 
-## Apache とのインストールに関する推奨事項
+## を Apache とインストールする際の推奨事項
 
-SELinux を有効にする場合、 *セキュリティコンテキスト* の一部のディレクトリを次に示します。
+SELinux を有効にする場合、 *セキュリティ コンテキスト* ディレクトリの一部を次に示します。
 
 ```bash
 chcon -R --type httpd_sys_rw_content_t <magento_root>/app/etc
@@ -42,30 +42,30 @@ chcon -R --type httpd_sys_rw_content_t <magento_root>/pub/static
 chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
 ```
 
-前述のコマンドは、Apache Web サーバーでのみ機能します。 さまざまな設定とセキュリティ要件があるので、これらのコマンドがどのような状況でも機能するとは限りません。 詳しくは、以下を参照してください。
+上記のコマンドは Apache web サーバーでのみ機能します。 さまざまな設定とセキュリティ要件があるため、これらのコマンドがすべての状況で動作することを保証するものではありません。 詳しくは、以下を参照してください。
 
 * [man ページ](https://linux.die.net/man/8/httpd_selinux)
-* [Server Lab](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
+* [サーバラボ](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
 
 ## サーバー間通信を有効にする
 
-Apache とデータベースサーバーが同じホスト上にある場合、 `curl` ( 例 Paypal と USPS)。
-SELinux を有効にして Apache が別のホストへの接続を開始できるようにするには：
+Apache とデータベースサーバーが同じホスト上にある場合、を使用する統合を使用する予定があれば、次のコマンドを使用します `curl` （例： Paypal および USPS）。
+SELinux を有効にして Apache が別のホストへの接続を開始できるようにするには、次の手順に従います。
 
-1. SELinux が有効かどうかを判断するには、次のコマンドを使用します。
+1. SELinux が有効かどうかを確認するには、次のコマンドを使用します。
 
    ```bash
    getenforce
    ```
 
-   `Enforcing` 「 」が表示され、SELinux が実行中であることを確認します。
+   `Enforcing` は、SELinux が実行中であることを確認するために表示されます。
 
    * CentOS: `setsebool -P httpd_can_network_connect=1`
    * Ubuntu: `setsebool -P apache2_can_network_connect=1`
 
 ## ファイアウォールでポートを開く
 
-セキュリティ要件によっては、ファイアウォール内のポート 80 および他のポートを開く必要が生じる場合があります。 ネットワークセキュリティは機密性が高いので、Adobeは先に進む前に IT 部門に相談することを強くお勧めします。 次に、推奨される参照を示します。
+セキュリティ要件によっては、ポート 80 やその他のポートをファイアウォールで開く必要がある場合があります。 ネットワークセキュリティは機密性が高いため、Adobeでは、作業を進める前に IT 部門に問い合わせることを強くお勧めします。 以下に、推奨参照を示します。
 
 * Ubuntu: [Ubuntu ドキュメントページ](https://help.ubuntu.com/community/IptablesHowTo)
 * CentOS: [CentOS のハウツー](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).

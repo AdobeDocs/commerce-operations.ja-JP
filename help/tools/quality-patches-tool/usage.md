@@ -1,35 +1,34 @@
 ---
-title: 使用状況
+title: 使用方法
 description: の使用方法を学ぶ [!DNL Quality Patches Tool].
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# 使用状況
+# 使用方法
 
-The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) は、AdobeとMagento Open Source・コミュニティが開発した個々のパッチを提供します。 インストールされたAdobe CommerceまたはMagento Open Sourceで使用可能なすべての個々のパッチに関する一般情報を、適用、元に戻し、表示できます。 パッチの開発者に関係なく、Adobe CommerceおよびMagento Open Sourceプロジェクトにパッチを適用できます。 例えば、コミュニティが開発したパッチをAdobe Commerceプロジェクトに適用できます。
+この [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) は、AdobeとMagento Open Sourceコミュニティが開発した個別のパッチを提供します。 インストールされたバージョンのAdobe CommerceまたはMagento Open Sourceで使用可能なすべての個別パッチに関する一般情報を適用、元に戻して表示できます。 パッチの開発者に関係なく、Adobe Commerce プロジェクトにパッチを適用できます。 例えば、コミュニティが開発したパッチをAdobe Commerce プロジェクトに適用できます。
 
-
-ご覧ください [技術ビデオ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) Adobe CommerceとMagento Open Sourceの品質パッチツールを使用する方法について説明します。
+これを見る [テクニカルビデオ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) Adobe Commerce用の品質向上パッチツールの使用方法についても説明します。
 
 >[!INFO]
 >
->詳しくは、 [個々のパッチの適用](#apply-individual-patches) Adobe CommerceまたはMagento Open Sourceプロジェクトにパッチを適用する手順については、を参照してください。 詳しくは、 [[!DNL Quality Patches Tool]：パッチを検索します。](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) リリース済みのパッチの完全なリストを確認する。
+>参照： [個別パッチの適用](#apply-individual-patches) Adobe CommerceまたはMagento Open Sourceプロジェクトにパッチを適用する方法については、を参照してください。 参照： [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) リリースされたパッチの完全なリストを確認します。
 
 >[!WARNING]
 >
->この [!DNL Quality Patches Tool] コードの複雑さが増し、新しいバージョンへのアップグレードがより困難になるので、多数のパッチを適用する場合。
+>を使用しないことをお勧めします [!DNL Quality Patches Tool] コードが複雑になり新しいバージョンへのアップグレードが難しくなるので、多数のパッチを適用する場合。
 
 ## インストール
 
 >[!INFO]
 >
->まだインストールされていない場合は、をインストールする必要があります。 [[!DNL Git]](https://github.com/git-guides/install-git) または [パッチ](https://man7.org/linux/man-pages/man1/patch.1.html) インストール前 [!DNL Quality Patches Tool]. 次を追加： `magento/quality-patches` Composer パッケージを `composer.json` ファイル：
+>まだインストールしていない場合は、インストールする必要があります [[!DNL Git]](https://github.com/git-guides/install-git) または [パッチ](https://man7.org/linux/man-pages/man1/patch.1.html) のインストール前に [!DNL Quality Patches Tool]. を追加 `magento/quality-patches` Composer パッケージを `composer.json` ファイル：
 
 ```bash
 composer require magento/quality-patches
@@ -37,7 +36,7 @@ composer require magento/quality-patches
 
 ## 個々のパッチの表示
 
-ご使用のAdobe CommerceまたはMagento Open Sourceで使用可能な個々のパッチのリストを表示するには：
+Adobe CommerceまたはMagento Open Sourceのバージョンで使用可能な個々のパッチのリストを表示するには：
 
 ```bash
 ./vendor/bin/magento-patches status
@@ -45,59 +44,59 @@ composer require magento/quality-patches
 
 次のような出力が表示されます。
 
-| ID | タイトル | タイプ | ステータス | 詳細 |
+| Id | タイトル | タイプ | ステータス | 詳細 |
 |--- |--- |--- |--- |--- |
-| MAGECLOUD-5069 | デプロイメント中に FPC が無効になっています | オプション | 未適用 | 影響を受けるコンポーネント：<br> - magento/module-page-cache |
-| MCLOUD-5650 | ファイルから読み取った後、デプロイメント設定を保持する | オプション | 未適用 | 影響を受けるコンポーネント：<br> - magento/framework |
-| MCLOUD-5684 | ページネーションが機能しない — product_list_limit=all | オプション | 未適用 | 影響を受けるコンポーネント： - magento/module-elasticsearch |
-| MCLOUD-5837 | ロードバランサーの問題を修正 | 非推奨 | 適用済み | 推奨される代替手段： MC-1 <br> 影響を受けるコンポーネント： - magento/framework |
-| BUNDLE-2554 | 支払情報の設定のバグ | オプション | 未適用 | 影響を受けるコンポーネント： <br>- amzn/amazon-pay-module |
-| MC-1 | 問題 1 を修正しました。 | オプション | 適用済み | 影響を受けるコンポーネント： <br> - magento/module-cms |
-| MC-2 | 問題 2 を修正しました。 | オプション | 未適用 | 影響を受けるコンポーネント： <br> - magento/module-cms |
-| MC-3 | 問題 3 を修正しました。 | オプション | 未適用 | 必要なパッチ：<br> - MC-2 <br>影響を受けるコンポーネント： <br>- magento/module-cms |
-| MC-3-V2 | 問題 3 の修正を更新し、MC-3 パッチに代わるものにしました。 | オプション | 該当なし | 影響を受けるコンポーネント：  <br>- magento/module-cms |
+| MAGECLOUD-5069 | 展開中に FPC が無効になります | オプション | 適用なし | 影響を受けたコンポーネント：<br> - magento/module-page-cache |
+| MCLOUD-5650 | ファイルから読み取った後でデプロイメント設定を保持 | オプション | 適用なし | 影響を受けたコンポーネント：<br> - magento/framework |
+| MCLOUD-5684 | ページネーションが機能しない – product_list_limit=all | オプション | 適用なし | 影響を受けるコンポーネント：- magento/module-elasticsearch |
+| MCLOUD-5837 | ロードバランサーの問題を修正 | 非推奨 | 適用日 | 推奨交換品：MC-1 <br> 影響を受けるコンポーネント：- magento/framework |
+| バンドル–2554 | 支払情報バグの設定 | オプション | 適用なし | 影響を受けたコンポーネント： <br>- amzn/amazon-pay-module |
+| MC-1 | 修正点（問題 1） | オプション | 適用日 | 影響を受けたコンポーネント： <br> - magento/module-cms |
+| MC-2 | 修正点（問題 2） | オプション | 適用なし | 影響を受けたコンポーネント： <br> - magento/module-cms |
+| MC-3 | 修正点（問題 3） | オプション | 適用なし | 必要なパッチ：<br> - MC-2 <br>影響を受けたコンポーネント： <br>- magento/module-cms |
+| MC-3-V2 | 問題 3 の修正を更新し、MC-3 パッチを置き換えました。 | オプション | 該当なし | 影響を受けたコンポーネント：  <br>- magento/module-cms |
 
 Adobe Commerce 2.3.5。
 
 ステータステーブルには、以下が含まれます。
 
 - **タイプ**:
-   - `Optional`  — すべてのパッチを [!DNL Quality Patches Tool] そして [Commerce on Cloud Infrastructure Guide > Apply patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) パッケージは、Adobe CommerceおよびMagento Open Sourceのインストールではオプションです。
-   - `Deprecated` —Adobeは個々のパッチを非推奨にしました。 パッチを適用した場合は、そのパッチを元に戻すことをお勧めします。 元に戻す操作では、パッチもステータステーブルから削除されます。
+   - `Optional`  – すべてのパッチは、 [!DNL Quality Patches Tool] および [Commerce on Cloud Infrastructure ガイド > パッチの適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) パッケージは、Adobe Commerceのインストールではオプションです。
+   - `Deprecated` — Adobeは個々のパッチを非推奨（廃止予定）にしました。 パッチを適用した場合は、元に戻すことをお勧めします。 元に戻す操作では、ステータステーブルからパッチも削除されます。
 
 - **ステータス**:
-   - `Applied`  — パッチが適用されています。
-   - `Not applied`  — パッチが適用されていません。
-   - `N/A`  — 競合が発生したため、パッチのステータスを定義できません。
+   - `Applied` — パッチが適用されました。
+   - `Not applied` — パッチが適用されていません。
+   - `N/A`  – 競合のため、パッチのステータスを定義できません。
 
 - **詳細**:
-   - `Affected components`  — 影響を受けるモジュールのリスト。
-   - `Required patches`  — 指定されたパッチが正しく動作するために適用する必要があるパッチのリスト（依存関係）。
-   - `Recommended replacement`  — 非推奨のパッチに対する推奨の置き換えであるパッチ。
+   - `Affected components`  – 影響を受けるモジュールのリスト。
+   - `Required patches`  – 指定されたパッチが正しく動作するために適用する必要があるパッチのリスト（依存関係）。
+   - `Recommended replacement`  – 非推奨（廃止予定）のパッチの代わりとして推奨されるパッチ。
 
 >[!INFO]
 >
->Adobe CommerceまたはMagento Open Sourceの新しいバージョンにアップグレードした後、そのパッチが新しいバージョンに含まれていない場合は、パッチを再適用する必要があります。 詳しくは、 [アップグレード後にパッチを再適用する](#re-apply-patches-after-an-upgrade).
+>新しいバージョンのAdobe CommerceまたはMagento Open Sourceにアップグレードした後、パッチが新しいバージョンに含まれていない場合は、パッチを再適用する必要があります。 参照： [アップグレード後のパッチの再適用](#re-apply-patches-after-an-upgrade).
 
-## 個々のパッチの適用 {#apply-individual-patches}
+## 個別パッチの適用 {#apply-individual-patches}
 
 >[!WARNING]
 >
->実稼動環境にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることをお勧めします。 また、パッチを適用する前にデータをバックアップすることをお勧めします。 詳しくは、 [ファイル・システム、メディア、データベースのバックアップとロールバック](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
+>実稼動環境にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることをお勧めします。 また、パッチを適用する前に、データをバックアップすることをお勧めします。 参照： [ファイル・システム、メディア、データベースのバックアップとロールバック](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
-1 つのパッチを適用するには、次のコマンドを実行します。 `MAGETWO-XXXX` は、ステータステーブルで指定されたパッチ ID です。
+単一のパッチを適用するには、次のコマンドを実行します。 `MAGETWO-XXXX` は、ステータステーブルで指定されたパッチ ID です。
 
 ```bash
 ./vendor/bin/magento-patches apply MAGETWO-XXXX
 ```
 
-また、追加の各パッチ ID をスペースで区切ることで、複数のパッチを同時に適用できます。
+また、追加の各パッチ ID をスペースで区切ることで、複数のパッチを同時に適用することもできます。
 
 ```bash
 ./vendor/bin/magento-patches apply MAGETWO-XXXX MAGETWO-YYYY
 ```
 
-変更をAdobe Commerceアプリケーションで確認するには、パッチを適用した後、キャッシュをクリーンアップする必要があります。
+Adobe Commerce アプリケーションで変更内容を確認するには、パッチを適用した後でキャッシュをクリーンアップする必要があります。
 
 ```bash
 ./bin/magento cache:clean
@@ -105,13 +104,13 @@ Adobe Commerce 2.3.5。
 
 >[!INFO]
 >
->適用済みのパッチのリストを別の場所に保持することを検討します。 新しいバージョンのAdobe CommerceまたはMagento Open Sourceにアップグレードした後に、一部のアプリケーションを再適用する必要が生じる場合があります。 詳しくは、 [アップグレード後にパッチを再適用する](#re-apply-patches-after-an-upgrade).
+>適用されたパッチのリストを別の場所に保持することを検討してください。 Adobe CommerceまたはMagento Open Sourceの新しいバージョンにアップグレードした後で、一部の機能を再適用する必要が生じる場合があります。 参照： [アップグレード後のパッチの再適用](#re-apply-patches-after-an-upgrade).
 
 ## 個々のパッチを元に戻す
 
 >[!WARNING]
 >
->実稼動環境にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることをお勧めします。 また、パッチを適用する前にデータをバックアップすることをお勧めします。 詳しくは、 [ファイル・システム、メディア、データベースのバックアップとロールバック](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
+>実稼動環境にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることをお勧めします。 また、パッチを適用する前に、データをバックアップすることをお勧めします。 参照： [ファイル・システム、メディア、データベースのバックアップとロールバック](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 1 つのパッチを元に戻すには、次のコマンドを実行します。 `MAGETWO-XXXX` は、ステータステーブルで指定されたパッチ ID です。
 
@@ -119,27 +118,27 @@ Adobe Commerce 2.3.5。
 ./vendor/bin/magento-patches revert MAGETWO-XXXX
 ```
 
-また、追加した各パッチ ID をスペースで区切ることで、複数のパッチを同時に元に戻すこともできます。
+また、追加の各パッチ ID をスペースで区切ることで、複数のパッチを同時に元に戻すこともできます。
 
 ```bash
 ./vendor/bin/magento-patches revert MAGETWO-XXXX MAGETWO-YYYY
 ```
 
-適用されたすべてのパッチを元に戻すには：
+適用したすべてのパッチを元に戻すには、次の手順に従います。
 
 ```bash
 ./vendor/bin/magento-patches revert --all
 ```
 
-変更をAdobe Commerceアプリケーションで確認するには、パッチを元に戻した後にキャッシュをクリーンアップする必要があります。
+Adobe Commerce アプリケーションで変更内容を確認するには、パッチを元に戻した後でキャッシュをクリーンアップする必要があります。
 
 ```bash
 ./bin/magento cache:clean
 ```
 
-## 更新情報を取得
+## 最新情報を取得
 
-Adobe Commerceは定期的に新しい個々のパッチをリリースします。 を更新する必要があります。 [!DNL Quality Patches Tool] 新しい個々のパッチを取得するには：
+Adobe Commerceでは、新しい個別パッチを定期的にリリースしています。 を更新する必要があります [!DNL Quality Patches Tool] 新しい個別パッチを取得するには：
 
 ```bash
 composer update magento/quality-patches
@@ -149,25 +148,25 @@ composer update magento/quality-patches
 
 >[!TIP]
 >
->新しい追加パッチが表の下部に表示されます。
+>新しいパッチの追加が表の下部に表示されます。
 
 ```bash
 ./vendor/bin/magento-patches status
 ```
 
-## アップグレード後にパッチを再適用する {#re-apply-patches-after-an-upgrade}
+## アップグレード後のパッチの再適用 {#re-apply-patches-after-an-upgrade}
 
-新しいバージョンのAdobe CommerceまたはMagento Open Sourceにアップグレードする場合、新しいバージョンにパッチが含まれていない場合は、パッチを再適用する必要があります。
+新しいバージョンのAdobe CommerceまたはMagento Open Sourceにアップグレードした場合、パッチが新しいバージョンに含まれていなければ、パッチを再適用する必要があります。
 
-パッチを再適用するには、次の手順に従います。
+パッチを再適用するには：
 
-1. を更新します。 [!DNL Quality Patches Tool]:
+1. を更新 [!DNL Quality Patches Tool]:
 
    ```bash
    composer update magento/quality-patches.
    ```
 
-1. 以前に適用したパッチのリストを開きます（で推奨）。 [個々のパッチの適用](#apply-individual-patches).
+1. で推奨された、以前に適用したパッチのリストを開きます。 [個別パッチの適用](#apply-individual-patches).
 
 1. パッチを適用します。
 
@@ -175,9 +174,9 @@ composer update magento/quality-patches
    ./vendor/bin/magento-patches apply MAGETWO-XXXX
    ```
 
-   ベストプラクティスは、パッチを 1 つずつ適用することです。
+   パッチを 1 つずつ適用することをお勧めします。
 
-1. キャッシュをクリーンアップします。
+1. キャッシュのクリーンアップ：
 
    ```bash
    ./bin/magento cache:clean
@@ -185,8 +184,8 @@ composer update magento/quality-patches
 
    >[!INFO]
    >
-   >実行時に、 `status` コマンドを使用すると、新しいバージョンに含まれていたパッチは、使用可能なパッチのテーブルに表示されなくなります。
+   >を実行する場合 `status` コマンドを実行すると、新しいバージョンに含まれていたパッチは、使用可能なパッチの表に表示されなくなります。
 
 ## ログ
 
-The [!DNL Quality Patches Tool] にすべての操作を記録します。 `<Magento_root>/var/log/patch.log` ファイル。
+この [!DNL Quality Patches Tool] は、内のすべての操作を記録します。 `<Magento_root>/var/log/patch.log` ファイル。

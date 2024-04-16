@@ -1,10 +1,10 @@
 ---
-title: '''[!DNL Upgrade Compatibility Tool] 関連ツール`'
-description: 関連ツールの詳細 [!DNL Upgrade Compatibility Tool] をAdobe Commerceプロジェクトに追加します。
+title: '''[!DNL Upgrade Compatibility Tool] 関連ツール'
+description: に関連するツールの詳細情報 [!DNL Upgrade Compatibility Tool] Adobe Commerce プロジェクトで、を行います。
 exl-id: a8cebb74-fba9-42ce-914b-b8fb6c7f53bf
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 {{commerce-only}}
 
-次に関連するツールがあります： [!DNL Upgrade Compatibility Tool]（類似の結果に使用できます）、または、 [!DNL Upgrade Compatibility Tool].
+に関連するツールがあります [!DNL Upgrade Compatibility Tool]（同様の結果を得るために使用したり、の実行をトリガーしたりできます） [!DNL Upgrade Compatibility Tool].
 
-- **[!DNL Security scanner]**：マルウェアを事前に検出し、ストアに問題が発生した場合に通知することで、Adobe CommerceおよびMagento Open Sourceのお客様がストアのセキュリティ状態に関するリアルタイムの洞察を提供します。 詳しくは、 [[!DNL Security scan] ユーザーガイド](https://docs.magento.com/user-guide/magento/security-scan.html) を参照してください。
+- **[!DNL Security scanner]**:Adobe Commerceのお客様は、マルウェアを事前に検出して店舗が危険にさらされた場合に通知することで、店舗のセキュリティ状況に関するリアルタイムのインサイトを得ることができます。 を参照してください。 [[!DNL Security scan] ユーザーガイド](https://docs.magento.com/user-guide/magento/security-scan.html) を参照してください。
 
-- **[!DNL Site-Wide Analysis Tool]**：詳細なシステムインサイトと推奨事項を含む、Adobe Commerceインストールのセキュリティと操作性を確保するプロアクティブなセルフサービスツールおよび中央リポジトリです。 リアルタイムで24/7、パフォーマンスの監視、レポート、アドバイスを提供し、潜在的な問題を特定し、サイトの正常性、安全性、およびアプリケーション設定をより深く可視化できます。 詳しくは、 [[!DNL Site-Wide Analysis Tool] ガイド](../../tools/site-wide-analysis-tool/intro.md) を参照してください。
+- **[!DNL Site-Wide Analysis Tool]**：プロアクティブなセルフサービスツールで、Adobe Commerce インストールのセキュリティと操作性を確保するための詳細なシステムインサイトおよびレコメンデーションが含まれている中央リポジトリ。 24 時間 365 日のパフォーマンス監視、レポート、アドバイスを提供して、潜在的な問題を特定し、サイトの正常性、安全性、アプリケーション設定をよりよく可視化します。 を参照してください。 [[!DNL Site-Wide Analysis Tool] ガイド](../../tools/site-wide-analysis-tool/intro.md) を参照してください。
 
-- **[!DNL AmpersandHQ]**：アップグレードの一環として変更されたファイルを探し、サイトに上書きがあるかどうかを確認しようとします。 これにより、変更され、サイトに固有のものに焦点を当てることができます。 詳しくは、 [[!DNL AmpersandHQ] リポジトリガイド](https://github.com/AmpersandHQ) を参照してください。
+- **[!DNL AmpersandHQ]**：アップグレードの一環として変更されたファイルを探し、サイトに上書きがあるかどうかを確認します。 これにより、変更された事柄に焦点を当て、サイトに固有の事柄に焦点を当てることができます。 を参照してください。 [[!DNL AmpersandHQ] リポジトリーガイド](https://github.com/AmpersandHQ) を参照してください。
 
   >[!WARNING]
   >
   >[!DNL AmpersandHQ] は、Adobeの公式ツールではありません。
 
-- **[!DNL Quality Patches Tool]**:Adobe CommerceおよびMagento Open Sourceの品質パッチを提供するコマンドラインツール。 詳しくは、 [[!DNL Quality patches tool] ユーザーガイド](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} を参照してください。
+- **[!DNL Quality Patches Tool]**:Adobe Commerceのクオリティパッチを提供するコマンドラインツール。 を参照してください。 [[!DNL Quality patches tool] ユーザーガイド](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} を参照してください。

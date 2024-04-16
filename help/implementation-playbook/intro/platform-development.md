@@ -1,11 +1,11 @@
 ---
 title: プラットフォーム開発の原則
-description: Adobe Commerceを使用する際の、基本的なプラットフォーム開発原則を理解します。
+description: Adobe Commerceを使用する際の基本的なプラットフォーム開発原則を理解する。
 exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
 feature: Cloud
-source-git-commit: 3c1a49c2dc3dc0d3d47e16c724d4099b6a456c77
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # プラットフォーム開発の原則
 
-このトピックでは、以下を含む、Adobe Commerce開発の主な標準の一部について詳しく説明します。
+このトピックでは、Adobe Commerce開発の主な標準を以下のように深く掘り下げます。
 
-- 開発プロセスに沿った機能および技術的範囲
-- MVC アーキテクチャとの整合に関する開発のベストプラクティス
-- GRA を含むアーキテクチャの考慮事項
-- スクリプティングと悪用に対するセキュリティ標準
-- 拡張機能の開発のベストプラクティス
+- 開発プロセスに沿った機能面および技術面のスコーピング
+- MVC アーキテクチャに合わせた開発のベストプラクティス
+- GRA を含むアーキテクチャに関する考慮事項
+- スクリプティングや悪用に対するセキュリティ標準
+- 拡張機能開発のベストプラクティス
 - REST、SOAP およびGraphQLとの Web API 統合
-- コーディングとインフラストラクチャのパフォーマンス向上
-- ツール、戦略、方法をテスト
+- コーディングとインフラストラクチャのパフォーマンスの向上
+- テスト・ツール、戦略、方法論
 
-一部のソリューション実装者は、方法、プロセス、ツールに独自の好みを持つ場合がありますが、このプレイブックでは、ほとんどの実装で共有できる、受け入れられたベストプラクティスと方法論に焦点を当てています。
+一部のソリューション実装者は、方法、プロセス、ツールに関して独自の好みを持っているかもしれませんが、このプレイブックでは、ほとんどの実装で共有できる、受け入れられているベストプラクティスと方法論に焦点を当てています。
 
-大規模な IT プロジェクトと同様に、Adobe Commerceは、ベストプラクティスと標準化を使用するコーディング標準と、Adobe Commerce内で確立された標準に基づいて構築されています [コーディング規格](https://developer.adobe.com/commerce/php/coding-standards/). これらの標準に従うことは、バグを削除し、カスタムビルドコードの品質と保守性を向上させるために重要です。
+他の大規模な IT プロジェクトと同様に、Adobe Commerceは、ベストプラクティスと標準化を使用するコーディング標準と、Adobe Commerce内で確立された標準に基づいて構築されています [コーディング基準](https://developer.adobe.com/commerce/php/coding-standards/). これらの標準に従うことは、バグを排除し、カスタムビルドされたコードの品質と保守性を向上させるために重要です。
 
-## Adobe Commerce an cloud infrastructure
+## クラウドインフラストラクチャー上のAdobe Commerce
 
-Adobe Commerce on cloud infrastructure は、Adobe Commerceソフトウェア用の、管理された自動ホスティングプラットフォームです。 Adobe Commerce on cloud infrastructure には、オンプレミスのAdobe CommerceおよびMagento Open Sourceの実装とは別の、様々な機能が付属しています。 詳しくは、 [クラウドガイド](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).
+クラウドインフラストラクチャー上のAdobe Commerceは、Adobe Commerce ソフトウェア用の管理された自動ホスティングプラットフォームです。 Adobe Commerce on cloud infrastructure には、オンプレミスのAdobe Commerce実装とは異なる様々な機能が用意されています。 を参照してください。 [クラウドガイド](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).

@@ -1,16 +1,16 @@
 ---
-title: 検索エンジン用に Nginx を設定する
-description: Nginx Web サーバーを使用して検索エンジンを構成し、Adobe CommerceとMagento Open Sourceのオンプレミスインストールを行うには、次の手順に従います。
+title: 検索エンジン用の Nginx の設定
+description: Adobe Commerceのオンプレミスインストール用に Nginx web サーバーで検索エンジンを設定するには、次の手順に従います。
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
 
-# 検索エンジン用に Nginx を設定する
+# 検索エンジン用の Nginx の設定
 
 {{$include /help/_includes/web-server-communication.md}}
 
@@ -18,17 +18,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2.4.4 で OpenSearch のサポートが追加されました。OpenSearch は互換性のあるフォークのElasticsearchです。 詳しくは、 [Elasticsearchを OpenSearch に移行](../../../upgrade/prepare/opensearch-migration.md) を参照してください。
+>OpenSearch のサポートは 2.4.4 で追加されました。OpenSearch は、互換性のあるElasticsearchのフォークです。 参照： [Elasticsearchを OpenSearch に移行する](../../../upgrade/prepare/opensearch-migration.md) を参照してください。
 
-この節では、nginx を *安全でない* プロキシを使用して、Adobe Commerceがこのサーバーで実行されている検索エンジンを使用できるようにします。 この節では、HTTP 基本認証の設定については説明しません。 [nginx との安全な通信](#secure-communication-with-nginx).
+このセクションでは、nginx を *安全でない* Adobe Commerceがこのサーバーで実行中の検索エンジンを使用できるように、プロキシを設定します。 この項では、HTTP 基本認証の設定については説明しません。詳細は、を参照してください。 [nginx との安全な通信](#secure-communication-with-nginx).
 
 >[!NOTE]
 >
->この例でプロキシが保護されていないのは、設定と検証がより簡単になるからです。 必要に応じて、このプロキシで TLS を使用できます。使用するには、プロキシ情報をセキュリティで保護されたサーバーブロック設定に追加してください。
+>この例ではプロキシが保護されていない理由は、設定と検証が容易だからです。 必要に応じて、このプロキシで TLS を使用できます。そのためには、プロキシ情報を安全なサーバーブロック設定に必ず追加してください。
 
-### グローバル設定で追加の設定ファイルを指定する
+### グローバル設定で追加の設定ファイルを指定します
 
-グローバルな `/etc/nginx/nginx.conf` には次の行が含まれ、以降の節で説明するその他の設定ファイルが読み込まれます。
+グローバルな `/etc/nginx/nginx.conf` には次の行が含まれるので、以下の節で説明するその他の設定ファイルが読み込まれます。
 
 ```conf
 include /etc/nginx/conf.d/*.conf;
@@ -36,9 +36,9 @@ include /etc/nginx/conf.d/*.conf;
 
 ### プロキシとしての nginx の設定
 
-このセクションでは、nginx サーバにアクセスできるユーザーを指定する方法について説明します。
+このセクションでは、nginx サーバにアクセスできるユーザを指定する方法について説明します。
 
-1. テキストエディターを使用したファイルの作成 `/etc/nginx/conf.d/magento_es_auth.conf` を次の内容で指定します。
+1. テキストエディターを使用したファイルの作成 `/etc/nginx/conf.d/magento_es_auth.conf` 次の内容を含みます。
 
    ```conf
    server {
@@ -61,13 +61,13 @@ include /etc/nginx/conf.d/*.conf;
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
-   例えば、プロキシでポート 8080 を使用する場合は、次のようになります。
+   例えば、プロキシでポート 8080 が使用されている場合は、次のようになります。
 
    ```bash
    curl -i http://localhost:8080/_cluster/health
    ```
 
-   成功を示す次の表示に類似したメッセージ：
+   次のようなメッセージが成功を示して表示されます。
 
    ```terminal
    HTTP/1.1 200 OK
@@ -81,43 +81,43 @@ include /etc/nginx/conf.d/*.conf;
 
 ## nginx との安全な通信
 
-このセクションでは、の設定方法について説明します。 [HTTP 基本認証](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) セキュリティで保護されたプロキシを使用します。 TLS と HTTP Basic 認証を併用すると、Elasticsearch、OpenSearch、またはお使いのアプリケーションサーバーとの通信が傍受されるのを防ぐことができます。
+この節では、の設定方法について説明します [HTTP 基本認証](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) 安全なプロキシを使用します。 TLS と HTTP 基本認証を一緒に使用すると、Elasticsearchや OpenSearch、またはアプリケーションサーバーとの通信がインターセプトされるのを防ぐことができます。
 
-Nginx は HTTP Basic 認証をネイティブにサポートしているので、例えば、HTTP Basic 認証をオーバーにすることをお勧めします。 [ダイジェスト認証](https://www.nginx.com/resources/wiki/modules/auth_digest/)：実稼動環境ではお勧めしません。
+Nginx は HTTP 基本認証をネイティブでサポートしているので、例えば次のような上書きを推奨します。 [ダイジェスト認証](https://www.nginx.com/resources/wiki/modules/auth_digest/)（実稼動環境では推奨されません）。
 
-その他のリソース：
+追加のリソース：
 
-* [Ubuntu 14.04(Digital Ocean) で Nginx を使用したパスワード認証を設定する方法](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
-* [Nginx を使用した基本的な HTTP 認証 (HowtoForge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
-* [Elasticsearch用の Nginx 設定の例](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
+* [Ubuntu 14.04 （Digital Ocean）で Nginx を使用してパスワード認証を設定する方法](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
+* [Nginx を使った基本的な HTTP 認証（HowtoForge）](https://www.howtoforge.com/basic-http-authentication-with-nginx)
+* [Elasticsearchのための Nginx 設定の例](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
 
 詳しくは、次の節を参照してください。
 
 * [パスワードの作成](#create-a-password)
 * [nginx へのアクセスの設定](#set-up-access-to-nginx)
 * [検索エンジンの制限付きコンテキストの設定](#set-up-a-restricted-context-for-the-search-engine)
-* [通信が安全であることを確認します。](#secure-communication-with-nginx)
+* [通信がセキュリティで保護されていることを確認](#secure-communication-with-nginx)
 
 ### パスワードの作成
 
-Apache を使用することをお勧めします。 `htpasswd` コマンドを使用して、Elasticsearchまたは OpenSearch ( `magento_elasticsearch` （この例では）。
+Apache を使用することをお勧めします `htpasswd` Elasticsearchまたは OpenSearch （という名前）にアクセスできるユーザーのパスワードをエンコードするコマンド `magento_elasticsearch` この例では）。
 
 パスワードを作成するには：
 
-1. 次のコマンドを入力して、 `htpasswd` は既にインストールされています：
+1. 次のコマンドを入力して、 `htpasswd` はすでにインストールされています：
 
    ```bash
    which htpasswd
    ```
 
-   パスが表示される場合は、そのパスがインストールされます。コマンドが出力を返さない場合は、 `htpasswd` がインストールされていません。
+   パスが表示される場合は、インストールされます。コマンドが出力を返さない場合は、 `htpasswd` はインストールされていません。
 
-1. 必要に応じて、をインストールします。 `htpasswd`:
+1. 必要に応じて、 `htpasswd`:
 
    * Ubuntu: `apt-get -y install apache2-utils`
    * CentOS: `yum -y install httpd-tools`
 
-1. の作成 `/etc/nginx/passwd` パスワードを保存するディレクトリ：
+1. を作成 `/etc/nginx/passwd` パスワードを保存するディレクトリ：
 
    ```bash
    mkdir -p /etc/nginx/passwd
@@ -129,7 +129,7 @@ Apache を使用することをお勧めします。 `htpasswd` コマンドを�
 
    >[!WARNING]
    >
-   >セキュリティ上の理由から、 `<filename>` は非表示にする必要があります。つまり、ピリオドで始める必要があります。
+   >セキュリティ上の理由から、 `<filename>` 非表示にする必要があります。つまり、ピリオドで始まる必要があります。
 
 1. *（オプション）。* 別のユーザーをパスワードファイルに追加するには、同じコマンドを `-c` （作成）オプション：
 
@@ -137,17 +137,17 @@ Apache を使用することをお勧めします。 `htpasswd` コマンドを�
    htpasswd /etc/nginx/passwd/.<filename> <username>
    ```
 
-1. のコンテンツを検証します。 `/etc/nginx/passwd` が正しい。
+1. 内容を確認する `/etc/nginx/passwd` は正しいです。
 
 ### nginx へのアクセスの設定
 
-このセクションでは、nginx サーバにアクセスできるユーザーを指定する方法について説明します。
+このセクションでは、nginx サーバにアクセスできるユーザを指定する方法について説明します。
 
 >[!WARNING]
 >
->次に例を示します。 *安全でない* プロキシを使用します。 セキュアプロキシを使用するには、次のコンテンツ（リスンポートを除く）をセキュアサーバーブロックに追加します。
+>次に示す例はです。 *安全でない* プロキシ。 安全なプロキシを使用するには、次の内容（リッスンポートを除く）を安全なサーバーブロックに追加します。
 
-テキストエディターを使用して、次のいずれかを変更します。 `/etc/nginx/conf.d/magento_es_auth.conf` （セキュリティで保護されていない）、または以下の内容を含むセキュリティで保護されたサーバーブロック。
+テキストエディターを使用して、次のいずれかを変更します `/etc/nginx/conf.d/magento_es_auth.conf` （保護されていない）または次の内容を含む保護されたサーバーブロック：
 
 ```conf
 server {
@@ -180,19 +180,19 @@ server {
 
 >[!NOTE]
 >
->前の例に示した検索エンジンのリスンポートは、例のみです。 セキュリティ上の理由から、デフォルト以外のリッスンポートを使用することをお勧めします。
+>上記の例で示した検索エンジンのリッスンポートは、例にすぎません。 セキュリティ上の理由から、デフォルト以外のリッスンポートを使用することをお勧めします。
 
 ### 検索エンジンの制限付きコンテキストの設定
 
-このセクションでは、検索エンジンサーバーにアクセスできるユーザーを指定する方法について説明します。
+このセクションでは、検索エンジン サーバーにアクセスできるユーザーを指定する方法について説明します。
 
-1. 次のコマンドを入力して、認証設定を保存するディレクトリを作成します。
+1. 次のコマンドを入力して、認証設定を格納するディレクトリを作成します。
 
    ```bash
    mkdir /etc/nginx/auth/
    ```
 
-1. テキストエディターを使用したファイルの作成 `/etc/nginx/auth/magento_elasticsearch.conf` を次の内容で指定します。
+1. テキストエディターを使用したファイルの作成 `/etc/nginx/auth/magento_elasticsearch.conf` 次の内容を含みます。
 
    ```conf
    location /elasticsearch {
@@ -206,7 +206,7 @@ server {
    }
    ```
 
-1. セキュアプロキシを設定した場合は、 `/etc/nginx/conf.d/magento_es_auth.conf`.
+1. 安全なプロキシを設定する場合は、次を削除します `/etc/nginx/conf.d/magento_es_auth.conf`.
 1. nginx を再起動し、次のセクションに進みます。
 
    ```bash

@@ -1,24 +1,24 @@
 ---
-title: デフォルトのキャッシュに Redis を使用
-description: Adobe CommerceとMagento Open Sourceのデフォルトのキャッシュとして Redis を設定する方法を説明します。
+title: 既定のキャッシュに Redis を使用
+description: Adobe Commerceのデフォルトキャッシュとして Redis を設定する方法を説明します。
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1069'
 ht-degree: 0%
 
 ---
 
-# デフォルトのキャッシュに Redis を使用
+# 既定のキャッシュに Redis を使用
 
-Commerce には、Redis ページとデフォルトのキャッシュを設定するコマンドラインオプションが用意されています。 キャッシュは、 `<Commerce-install-dir>app/etc/env.php` ファイルの場合は、特に初期設定では、コマンドラインを使用することをお勧めします。 コマンドラインに検証が表示され、設定が構文的に正しいことが確認されます。
+Commerceには、Redis ページとデフォルトのキャッシングを設定するためのコマンドラインオプションが用意されています。 キャッシュを設定するには、を編集します `<Commerce-install-dir>app/etc/env.php` ファイルを開く場合は、特に初期設定において、コマンドラインを使用することをお勧めします。 コマンドラインで検証を行うことにより、設定の構文が正しいことを確認します。
 
-次の条件を満たす必要があります。 [Redis をインストール](config-redis.md#install-redis) 続行する前に
+あなたは必要があります [redis のインストール](config-redis.md#install-redis) 続行する前に。
 
-## Redis のデフォルトキャッシュの設定
+## Redis デフォルトキャッシュの設定
 
-を実行します。 `setup:config:set` コマンドを実行し、Redis のデフォルトのキャッシュに固有のパラメータを指定します。
+を実行 `setup:config:set` コマンドを実行し、Redis のデフォルトキャッシュに固有のパラメーターを指定します。
 
 ```bash
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parameter>=<value>...
@@ -26,20 +26,20 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parame
 
 次のパラメーターを使用します。
 
-- `--cache-backend=redis` Redis のデフォルトのキャッシュを有効にします。 この機能が既に有効になっている場合は、このパラメータを省略します。
+- `--cache-backend=redis` redis のデフォルトキャッシュを有効にします。 この機能が既に有効になっている場合は、このパラメーターを省略します。
 
 - `--cache-backend-redis-<parameter>=<value>` は、デフォルトのキャッシュを設定するキーと値のペアのリストです。
 
 | コマンドラインパラメーター | 値 | 意味 | デフォルト値 |
 | ------------------------------ | --------- | ------- | ------------- |
-| `cache-backend-redis-server` | server | 完全修飾ホスト名、IP アドレス、または UNIX ソケットへの絶対パス。 デフォルト値の 127.0.0.1 は、Redis が Commerce サーバーにインストールされていることを示します。 | `127.0.0.1` |
-| `cache-backend-redis-port` | ポート | Redis サーバーのリスンポート | `6379` |
-| `cache-backend-redis-db` | データベース | デフォルトのキャッシュとフルページのキャッシュの両方に Redis を使用する場合に必須です。 いずれかのキャッシュのデータベース番号を指定する必要があります。他のキャッシュはデフォルトで 0 を使用します。<br><br>**重要**：複数のタイプのキャッシュに Redis を使用する場合は、データベースの数値を変える必要があります。 デフォルトのキャッシュデータベース番号を 0 に、ページキャッシュデータベース番号を 1 に、セッションストレージデータベース番号を 2 に割り当てることをお勧めします。 | `0` |
-| `cache-backend-redis-password` | パスワード | Redis パスワードを設定すると、組み込みのセキュリティ機能の 1 つである `auth` コマンドを使用します。データベースにアクセスするためにクライアントに認証を求めます。 パスワードは Redis の設定ファイルで直接設定されます。 `/etc/redis/redis.conf` | |
+| `cache-backend-redis-server` | サーバー | 完全修飾ホスト名、IP アドレス、または UNIX ソケットへの絶対パス。 デフォルト値の 127.0.0.1 は、Redis がCommerce サーバーにインストールされていることを示します。 | `127.0.0.1` |
+| `cache-backend-redis-port` | ポート | Redis サーバーリッスンポート | `6379` |
+| `cache-backend-redis-db` | データベース | デフォルトキャッシュとフルページキャッシュの両方に Redis を使用する場合は必須です。 一方のキャッシュのデータベース番号を指定する必要があります。もう一方のキャッシュは、デフォルトで 0 を使用します。<br><br>**重要**：複数のタイプのキャッシュに Redis を使用する場合は、データベース番号は異なる必要があります。 デフォルトのキャッシュ データベース番号を 0、ページ キャッシュ データベース番号を 1、セッション ストレージ データベース番号を 2 に割り当てることをお勧めします。 | `0` |
+| `cache-backend-redis-password` | password | Redis パスワードを設定すると、組み込みのセキュリティ機能の 1 つが有効になります。 `auth` コマンド。データベースにアクセスするためにクライアントの認証が必要です。 パスワードは Redis の設定ファイルで直接設定されます。 `/etc/redis/redis.conf` | |
 
 ### コマンドの例
 
-次の例では、Redis のデフォルトのキャッシュを有効にし、ホストをに設定します。 `127.0.0.1`を呼び出し、データベース番号を 0 に割り当てます。 Redis は、他のすべてのパラメータにデフォルト値を使用します。
+次の例では、Redis のデフォルトキャッシュを有効にし、ホストをに設定します。 `127.0.0.1`データベース番号を 0 に割り当てます。 Redis は他のすべてのパラメータにデフォルト値を使用します。
 
 ```bash
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
@@ -47,7 +47,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=
 
 ## Redis ページキャッシュの設定
 
-Commerce で Redis ページのキャッシュを設定するには、 `setup:config:set` コマンドに追加のパラメーターを追加します。
+Commerceで Redis ページキャッシュを設定するには、 `setup:config:set` コマンドと追加のパラメーター。
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
@@ -55,20 +55,20 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<
 
 次のパラメーターを使用します。
 
-- `--page-cache=redis` Redis ページのキャッシュを有効にします。 この機能が既に有効になっている場合は、このパラメータを省略します。
+- `--page-cache=redis` redis ページキャッシュを有効にします。 この機能が既に有効になっている場合は、このパラメーターを省略します。
 
 - `--page-cache-redis-<parameter>=<value>` は、ページキャッシュを設定するキーと値のペアのリストです。
 
 | コマンドラインパラメーター | 値 | 意味 | デフォルト値 |
 | ------------------------------ | --------- | ------- | ------------- |
-| `page-cache-redis-server` | server | 完全修飾ホスト名、IP アドレス、または UNIX ソケットへの絶対パス。 デフォルト値の 127.0.0.1 は、Redis が Commerce サーバーにインストールされていることを示します。 | `127.0.0.1` |
-| `page-cache-redis-port` | ポート | Redis サーバーのリスンポート | `6379` |
-| `page-cache-redis-db` | データベース | デフォルトのページキャッシュとフルページキャッシュの両方に Redis を使用する場合に必須です。 いずれかのキャッシュのデータベース番号を指定する必要があります。他のキャッシュはデフォルトで 0 を使用します。<br/>**重要**：複数のタイプのキャッシュに Redis を使用する場合は、データベースの数値を変える必要があります。 デフォルトのキャッシュデータベース番号を 0 に、ページキャッシュデータベース番号を 1 に、セッションストレージデータベース番号を 2 に割り当てることをお勧めします。 | `0` |
-| `page-cache-redis-password` | パスワード | Redis パスワードを設定すると、組み込みのセキュリティ機能の 1 つである `auth` コマンドを使用します。データベースにアクセスするためにクライアントに認証を求めます。 Redis 設定ファイル内でパスワードを設定します。 `/etc/redis/redis.conf` | |
+| `page-cache-redis-server` | サーバー | 完全修飾ホスト名、IP アドレス、または UNIX ソケットへの絶対パス。 デフォルト値の 127.0.0.1 は、Redis がCommerce サーバーにインストールされていることを示します。 | `127.0.0.1` |
+| `page-cache-redis-port` | ポート | Redis サーバーリッスンポート | `6379` |
+| `page-cache-redis-db` | データベース | デフォルトおよびフルページキャッシュの両方に Redis を使用する場合は必須です。 一方のキャッシュのデータベース番号を指定する必要があります。もう一方のキャッシュは、デフォルトで 0 を使用します。<br/>**重要**：複数のタイプのキャッシュに Redis を使用する場合は、データベース番号は異なる必要があります。 デフォルトのキャッシュ データベース番号を 0、ページ キャッシュ データベース番号を 1、セッション ストレージ データベース番号を 2 に割り当てることをお勧めします。 | `0` |
+| `page-cache-redis-password` | password | Redis パスワードを設定すると、組み込みのセキュリティ機能の 1 つが有効になります。 `auth` コマンド。データベースにアクセスするためにクライアントの認証が必要です。 Redis 設定ファイル内でパスワードを設定します。 `/etc/redis/redis.conf` | |
 
 ### コマンドの例
 
-次の例では、Redis ページのキャッシュを有効にし、ホストをに設定します。 `127.0.0.1`をクリックし、データベース番号を 1 に割り当てます。 その他のパラメータはすべてデフォルト値に設定されます。
+次の例では、Redis ページキャッシュを有効にし、ホストをに設定します。 `127.0.0.1`データベース番号を 1 に割り当てます。 その他のパラメーターはすべてデフォルト値に設定されます。
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-redis-db=1
@@ -76,7 +76,7 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.
 
 ## 結果
 
-Commerce では、2 つのコマンド例の結果、次のような行が次のように追加されます。 `<Commerce-install-dir>app/etc/env.php`:
+2 つのコマンド例の結果、Commerceによって次のような行が追加されます。 `<Commerce-install-dir>app/etc/env.php`:
 
 ```php
 'cache' => [
@@ -104,61 +104,61 @@ Commerce では、2 つのコマンド例の結果、次のような行が次の
 
 ## EC2 インスタンスでのAWS ElastiCache の使用
 
-Commerce 2.4.3 以降、Amazon EC2 でホストされるインスタンスは、ローカルの Redis インスタンスの代わりにAWS ElastiCache を使用できます。
+Commerce 2.4.3 以降、Amazon EC2 でホストされるインスタンスは、ローカル Redis インスタンスの代わりにAWS ElastiCache を使用する場合があります。
 
 >[!WARNING]
 >
->このセクションは、Amazon EC2 VPC で実行されるコマースインスタンスでのみ機能します。 オンプレミスでのインストールでは機能しません。
+>このセクションは、Amazon EC2 VPC 上で動作するCommerce インスタンスに対してのみ機能します。 オンプレミスのインストールでは機能しません。
 
 ### Redis クラスターの設定
 
-後 [AWSでの Redis クラスターの設定](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/)ElastiCache を使用するように EC2 インスタンスを設定します。
+後 [AWSでの Redis クラスターの設定](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/)を選択し、ElastiCache を使用するように EC2 インスタンスを設定します。
 
-1. [ElastiCache クラスターの作成](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html) EC2 インスタンスの同じ地域と VPC 内に存在します。
+1. [ElastiCache クラスターの作成](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html) EC2 インスタンスと同じリージョンおよび VPC 内。
 1. 接続を確認します。
 
-   - EC2 インスタンスへの SSH 接続を開く
-   - EC2 インスタンスで、Redis クライアントをインストールします。
+   - EC2 インスタンスへの SSH 接続を開きます。
+   - EC2 インスタンスに、Redis クライアントをインストールします。
 
      ```bash
      sudo apt-get install redis
      ```
 
-   - EC2 セキュリティグループにインバウンドルールを追加します：タイプ `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
-   - ElastiCache クラスターセキュリティグループにインバウンド規則を追加します：型 `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
+   - EC2 セキュリティグループにインバウンド規則を追加します：タイプ `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
+   - ElastiCache クラスターセキュリティ グループに受信規則を追加します：タイプ `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
    - Redis CLI に接続します。
 
      ```bash
      redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
      ```
 
-### クラスターを使用するように Commerce を設定します
+### クラスターを使用するようにCommerceを設定します
 
-Commerce は、複数の種類のキャッシュ設定をサポートしています。 一般に、キャッシュ設定はフロントエンドとバックエンドの間で分割されます。 フロントエンドキャッシュは、 `default`：任意のキャッシュタイプに使用されます。 パフォーマンスを向上させるために、をカスタマイズしたり、下位レベルのキャッシュに分割したりできます。 共通の Redis 設定は、デフォルトのキャッシュとページキャッシュを、それぞれ独自の Redis データベース (RDB) に分割することです。
+Commerceでは、複数のタイプのキャッシュ設定をサポートしています。 一般に、キャッシュ設定はフロントエンドとバックエンドに分かれます。 フロントエンドキャッシュは次のように分類されます `default`（任意のキャッシュタイプに使用）。 パフォーマンスを向上させるには、カスタマイズするか、下位レベルのキャッシュに分割します。 一般的な Redis 設定は、デフォルトのキャッシュとページキャッシュを独自の Redis データベース（RDB）に分離することです。
 
-実行 `setup` Redis エンドポイントを指定するコマンド
+実行 `setup` redis エンドポイントを指定するコマンド。
 
-Commerce for Redis をデフォルトのキャッシュとして設定するには：
+Commerceを Redis 用にデフォルトキャッシュとして設定するには：
 
 ```bash
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=<ElastiCache Primary Endpoint host> --cache-backend-redis-port=<ElastiCache Primary Endpoint port> --cache-backend-redis-db=0
 ```
 
-Commerce for Redis のページキャッシュを設定するには：
+Commerceを Redis ページキャッシュ用に設定するには：
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=<ElastiCache Primary Endpoint host> --page-cache-redis-port=<ElastiCache Primary Endpoint port> --page-cache-redis-db=1
 ```
 
-Redis をセッションストレージに使用するように Commerce を設定するには：
+セッションストレージに Redis を使用するようにCommerceを設定するには：
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=<ElastiCache Primary Endpoint host> --session-save-redis-port=<ElastiCache Primary Endpoint port> --session-save-redis-log-level=4 --session-save-redis-db=2
 ```
 
-### 接続を確認
+### 接続の検証
 
-**Commerce が ElastiCache と通信していることを確認するには**:
+**Commerceが ElastiCache と通信していることを確認するには**:
 
 1. Commerce EC2 インスタンスへの SSH 接続を開きます。
 1. Redis モニタを起動します。
@@ -168,11 +168,11 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
    ```
 
 1. Commerce UI でページを開きます。
-1. を確認します。 [キャッシュ出力](#verify-redis-connection) を設定します。
+1. を確認 [キャッシュ出力](#verify-redis-connection) ターミナルの中で。
 
 ## 新しい Redis キャッシュの実装
 
-Commerce 2.3.5 の時点では、拡張 Redis キャッシュ実装を使用することをお勧めします。 `\Magento\Framework\Cache\Backend\Redis`.
+Commerce 2.3.5 以降では、拡張 Redis キャッシュ実装を使用することをお勧めします。 `\Magento\Framework\Cache\Backend\Redis`.
 
 ```php
 'cache' => [
@@ -188,11 +188,11 @@ Commerce 2.3.5 の時点では、拡張 Redis キャッシュ実装を使用す�
 ],
 ```
 
-## Redis のプリロード機能
+## Redis プリロード機能
 
-Commerce は設定データを Redis キャッシュに保存するので、ページ間で再利用されるデータをプリロードできます。 プリロードが必要なキーを見つけるには、Redis から Commerce に転送されるデータを分析します。 各ページに読み込まれるデータ（例： ）をプリロードすることをお勧めします。 `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
+Commerceは設定データを Redis キャッシュに保存するので、ページ間で再利用されるデータをプリロードできます。 プリロードする必要があるキーを見つけるには、Redis からCommerceに転送されるデータを分析します。 次のような各ページに読み込まれるデータをプリロードすることをお勧めします。 `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
 
-Redis は `pipeline` を使用して読み込みリクエストを複合化できます。 キーには、データベースのプレフィックスを含める必要があります。例えば、データベースのプレフィックスが `061_`では、プリロードキーは次のようになります。 `061_SYSTEM_DEFAULT`
+Redis は `pipeline` 読み込みリクエストを複合するために使用します。 キーにはデータベースのプレフィックスを含める必要があります。例えば、データベースのプレフィックスが `061_`の場合、プリロードキーは次のようになります。 `061_SYSTEM_DEFAULT`
 
 ```php
 'cache' => [
@@ -222,7 +222,7 @@ Redis は `pipeline` を使用して読み込みリクエストを複合化で�
 ]
 ```
 
-L2 キャッシュでプリロード機能を使用する場合は、必ず `:hash` L2 キャッシュはデータ自体ではなく、データのハッシュのみを転送するので、サフィックスをキーに追加します。
+L2 キャッシュでプリロード機能を使用する場合は、を追加することを忘れないでください。 `:hash` l2 キャッシュはデータ自体ではなく、データのハッシュのみを転送するので、キーにサフィックスが付きます。
 
 ```php
 'preload_keys' => [
@@ -235,16 +235,16 @@ L2 キャッシュでプリロード機能を使用する場合は、必ず `:ha
 
 ## 並列生成
 
-2.4.0 リリースから、 `allow_parallel_generation` ロック待ちを排除するユーザー用のオプション。
-これはデフォルトで無効になっています。過剰な設定やブロックができるまで無効にすることをお勧めします。
+2.4.0 リリースからは、 `allow_parallel_generation` ロックの待機を排除したいユーザーのためのオプション。
+デフォルトでは無効になっているので、過剰な設定やブロックが発生するまで無効にすることをお勧めします。
 
-**並列生成を有効にするには**:
+**並列生成を使用可能にする手順は、次のとおりです**:
 
 ```bash
 bin/magento setup:config:set --allow-parallel-generation
 ```
 
-これはフラグなので、コマンドで無効にすることはできません。 設定値を手動でに設定する必要があります。 `false`:
+フラグなので、コマンドで無効にすることはできません。 設定値を手動でに設定する必要があります `false`:
 
 ```php
     'cache' => [
@@ -271,15 +271,15 @@ bin/magento setup:config:set --allow-parallel-generation
 
 ## Redis 接続の確認
 
-Redis と Commerce が連携して動作していることを確認するには、Redis を実行しているサーバにログインし、ターミナルを開いて、Redis monitor コマンドまたは ping コマンドを使用します。
+Redis とCommerceが連携していることを確認するには、Redis を実行しているサーバにログインし、ターミナルを開いて Redis monitor コマンドまたは ping コマンドを使用します。
 
-### Redis モニタコマンド
+### Redis モニターコマンド
 
 ```bash
 redis-cli monitor
 ```
 
-ページキャッシュ出力の例：
+ページキャッシュの出力例：
 
 ```terminal
 1476826133.810090 [0 127.0.0.1:52366] "select" "1"
@@ -312,8 +312,8 @@ redis-cli ping
 
 期待される応答は次のとおりです。 `PONG`
 
-両方のコマンドが成功した場合、Redis は正しく設定されます。
+両方のコマンドが成功すると、Redis が正しく設定されます。
 
 ### 圧縮データの検査
 
-圧縮されたセッションデータとページキャッシュを調べるには、 [RESP.app](https://flathub.org/apps/details/app.resp.RESP) は、Commerce 2 セッションとページのキャッシュの自動解凍をサポートし、PHP セッションデータを人間が読み取り可能な形式で表示します。
+圧縮されたセッションデータとページキャッシュを検査するには、次の手順に従います。 [RESP.app](https://flathub.org/apps/details/app.resp.RESP) は、Commerce 2 セッションおよびページキャッシュの自動解凍をサポートしており、PHP セッションデータを人間が読み取り可能な形式で表示します。

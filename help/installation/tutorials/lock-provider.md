@@ -1,19 +1,19 @@
 ---
 title: ロックプロバイダーの設定
-description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceのデプロイメントで重複する cron ジョブや cron グループが実行されないようにします。
+description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceのデプロイメントで重複した cron ジョブおよび cron グループが実行されないようにします。
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
 
 # ロックプロバイダーの設定
 
-このコマンドを実行する前に、次の操作を行う必要があります *または* 必ず [アプリケーションのインストール](../advanced.md):
+このコマンドを実行する前に、次の操作を行う必要があります *または* あなたは必要です [アプリケーションのインストール](../advanced.md):
 
-* [デプロイメント設定を作成または更新する](deployment.md)
+* [デプロイメント設定の作成または更新](deployment.md)
 * [データベーススキーマの作成](database.md)
 
 ## 安全なインストール
@@ -22,13 +22,13 @@ ht-degree: 0%
 
 ## ロックの設定
 
-ロックプロバイダーを設定して、重複する Cron ジョブと Cron グループが起動されないようにします。 (Adobe CommerceまたはMagento Open Source2.2.x、2.2.5 以降、2.3.3 以降が必要 )。
+ロックプロバイダーを設定して、重複する cron ジョブや cron グループの起動を防ぎます。 （Adobe CommerceまたはMagento Open Source 2.2.x、2.2.5 以降および 2.3.3 以降が必要です）。
 
-Adobe CommerceとMagento Open Sourceは、デフォルトで、データベースを使用してロックを保存します。 サーバーに複数のノードがある場合は、 Zookeeper をロックプロバイダーとして使用することをお勧めします。
+Adobe Commerceは、デフォルトでロックを保存するためにこのデータベースを使用します。 サーバーに複数のノードがある場合は、Zookeeper をロックプロバイダーとして使用することをお勧めします。
 
-クラウドインフラストラクチャ上でAdobe Commerceを実行している場合は、ロックプロバイダーの設定を構成する必要はありません。 プロビジョニングプロセス中に、Pro プロジェクトのファイルロックプロバイダーが設定されます。 詳しくは、 [クラウド変数](https://devdocs.magento.com/cloud/env/variables-cloud.html).
+クラウドインフラストラクチャー上でAdobe Commerceを実行している場合は、ロックプロバイダーを設定する必要はありません。 アプリケーションは、プロビジョニングプロセス中に、Pro プロジェクトのファイルロックプロバイダを設定します。 参照： [クラウド変数](https://devdocs.magento.com/cloud/env/variables-cloud.html).
 
-### コマンドの使用
+### コマンドの使用法
 
 ```bash
 bin/magento setup:config:set [--<parameter_name>=<value>, ...]
@@ -38,8 +38,8 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 
 | 名前 | 値 | 必須？ |
 |--- |--- |--- |
-| `--lock-provider` | プロバイダー名をロック： `db`, `zookeeper`または `file`.<br><br>デフォルトのロックプロバイダーは次のとおりです。 `db` | いいえ |
-| `--lock-db-prefix` | を使用する際にロックの競合を避けるための特定の db プレフィックス `db` プロバイダをロックします。<br><br>デフォルト値は次のとおりです。 `NULL` | いいえ |
-| `--lock-zookeeper-host` | Zookeeper クラスタに接続するホストとポート ( `zookeeper` プロバイダをロックします。<br><br>例： `127.0.0.1:2181` | はい、 `--lock-provider=zookeeper` |
-| `--lock-zookeeper-path` | Zookeeper がロックを保存するパス。<br><br>デフォルトのパスは次のとおりです。 `/magento/locks` | いいえ |
-| `--lock-file-path` | ファイルのロックが保存されるパス。 | はい、 `--lock-provider=file` |
+| `--lock-provider` | プロバイダ名のロック： `db`, `zookeeper`、または `file`.<br><br>デフォルトのロックプロバイダーは次のとおりです。 `db` | 不可 |
+| `--lock-db-prefix` | を使用する際にロックの競合を回避するための特定の db プレフィックス `db` プロバイダをロックします。<br><br>デフォルト値は次のとおりです。 `NULL` | 不可 |
+| `--lock-zookeeper-host` | を使用するときに Zookeeper クラスターに接続するホストおよびポート `zookeeper` プロバイダをロックします。<br><br>例： `127.0.0.1:2181` | はい（設定する場合） `--lock-provider=zookeeper` |
+| `--lock-zookeeper-path` | Zookeeper がロックを保存するパス。<br><br>デフォルトのパスはです。 `/magento/locks` | 不可 |
+| `--lock-file-path` | ファイルのロックが保存されるパス。 | はい（設定する場合） `--lock-provider=file` |

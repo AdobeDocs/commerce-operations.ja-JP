@@ -1,11 +1,11 @@
 ---
 user-guide-title: インストールガイド
-user-guide-description: オンプレミスデプロイメント用にAdobe CommerceとMagento Open Sourceをインストールする方法を説明します。
+user-guide-description: オンプレミスデプロイメント用のAdobe Commerceのインストール方法を説明します。
 feature: Install
-source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 3%
+source-wordcount: '169'
+ht-degree: 2%
 
 ---
 
@@ -35,36 +35,36 @@ ht-degree: 3%
    - [セキュリティ](prerequisites/security.md)
    - [認証キー](prerequisites/authentication-keys.md)
    - [Adobe Commerce](prerequisites/commerce.md)
-   - [オプションのソフトウェア](prerequisites/optional-software.md)
-- [クイックスタートのインストール](composer.md)
+   - [オプションソフトウェア](prerequisites/optional-software.md)
+- [クイックスタートインストール](composer.md)
 - [高度なインストール](advanced.md)
 - インストール後の手順 {#next-steps}
    - [インストールの確認](next-steps/verify.md)
    - [アプリケーションの設定](next-steps/configuration.md)
    - [umask の設定（オプション）](next-steps/set-umask.md)
-   - サンプルデータをインストールする（オプション） {#sample-data}
+   - サンプルデータのインストール（オプション） {#sample-data}
       - [概要](sample-data/overview.md)
       - [Composer パッケージのダウンロード](sample-data/composer-packages.md)
-      - [Git リポジトリの複製](sample-data/git-repositories.md)
-      - [モジュールを削除または更新](sample-data/remove-or-update.md)
-- チュートリアル {#tutorials}
+      - [Git リポジトリのクローン](sample-data/git-repositories.md)
+      - [モジュールの削除または更新](sample-data/remove-or-update.md)
+- Tutorials {#tutorials}
    - [ファイル・システム、メディア、データベースのバックアップとロールバック](tutorials/backup.md)
-   - [データベースのステータスを確認](tutorials/database-status.md)
-   - [メッセージ消費者行動の設定](tutorials/message-consumers.md)
+   - [データベースのステータスの確認](tutorials/database-status.md)
+   - [メッセージコンシューマーの行動の設定](tutorials/message-consumers.md)
    - [ロックプロバイダーの設定](tutorials/lock-provider.md)
-   - [ストアを設定](tutorials/store.md)
-   - [管理者アカウントの作成、編集、ロック解除](tutorials/admin.md)
-   - [デプロイメント設定を作成または更新する](tutorials/deployment.md)
+   - [ストアの設定](tutorials/store.md)
+   - [管理者アカウントを作成、編集またはロック解除](tutorials/admin.md)
+   - [デプロイメント設定の作成または更新](tutorials/deployment.md)
    - [データベーススキーマの作成](tutorials/database.md)
-   - [管理 URI を表示または変更する](tutorials/admin-uri.md)
-   - [メンテナンスモードを有効または無効にする](tutorials/maintenance-mode.md)
+   - [管理 URI の表示または変更](tutorials/admin-uri.md)
+   - [メンテナンスモードの有効化または無効化](tutorials/maintenance-mode.md)
    - [モジュールの有効化または無効化](tutorials/manage-modules.md)
    - [拡張機能のインストール](tutorials/extensions.md)
-   - [コマースをインストール](tutorials/install.md)
-   - [セキュリティを向上させるために docroot を変更](tutorials/docroot.md)
+   - [Commerceのインストール](tutorials/install.md)
+   - [セキュリティを向上させるために docroot を変更する](tutorials/docroot.md)
    - [言語パッケージのアンインストール](tutorials/language-packages.md)
    - [モジュールのアンインストール](tutorials/uninstall-modules.md)
-   - [Commerce をアンインストールまたは再インストール](tutorials/uninstall.md)
+   - [Commerceをアンインストールまたは再インストール](tutorials/uninstall.md)
    - [テーマのアンインストール](tutorials/themes.md)
    - [データベーススキーマのアップグレード](tutorials/database-upgrade.md)
 - [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

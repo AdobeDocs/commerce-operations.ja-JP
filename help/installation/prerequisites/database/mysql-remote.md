@@ -1,68 +1,68 @@
 ---
-title: リモート MySQL データベース接続を設定する
-description: 次の手順に従って、Adobe CommerceとMagento Open Sourceのオンプレミスインストールでリモートデータベース接続を設定します。
+title: リモート MySQL データベース接続の設定
+description: Adobe Commerceのオンプレミスインストール用にリモートデータベース接続を設定するには、次の手順に従います。
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
 
-# リモート MySQL データベース接続を設定する
+# リモート MySQL データベース接続の設定
 
-データベース・サーバと Web サーバを同じマシン上で実行する代わりに、別のサーバ上でデータベースをホストする場合があります。
+データベース・サーバと Web サーバを同じマシン上で実行する代わりに、別のサーバでデータベースをホストする場合があります。
 
-Adobeは、別のマシン上の MySQL サーバーに接続する方法を提供しました。 Adobe CommerceおよびMagento Open Source2.4.3 以降では、コードを変更せずにAmazon Web Services(AWS)Aurora データベースを使用するようにアプリケーションを設定することもできます。
+Adobeでは、別のマシン上の MySQL サーバーに接続する手段を提供しています。 Adobe Commerce 2.4.3 では、コードを変更せずにAmazon Web Services（AWS） Aurora データベースを使用するようにアプリケーションを設定することもできます。
 
-Aurora は、AWSでホストされる、高パフォーマンスで完全に準拠した MySQL サーバです。
+Aurora は、AWS上でホストされる、高性能で完全に準拠した MySQL サーバーです。
 
 ## AWS Aurora データベースへの接続
 
-Aurora をデータベースとして使用すると、デフォルトのデータベースコネクタを使用して、通常のAdobe CommerceおよびMagento Open Source設定でデータベースを指定するのと同じくらい簡単に行えます。
+Aurora をデータベースとして使用することは、デフォルトのデータベースコネクタを使用して、通常のAdobe Commerce設定でデータベースを指定するのと同じくらい簡単です。
 
-実行時 `bin/magento setup:install`を使用する場合は、 `db-` フィールド：
+実行中 `bin/magento setup:install`で、Aurora 情報を使用します `db-` フィールド :
 
 ```bash
 bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws.com' --db-name='magento2' --db-user='username' --db-password='password' ...
 ```
 
-The `db-host` の値は Aurora URL で、 `https://` および末尾 `:portnumber`  削除済み。
+この `db-host` 値は、を含む Aurora URL です。 `https://` および末尾 `:portnumber`  を削除しました。
 
-## リモートデータベース接続の設定
+## リモート・データベース接続の設定
 
 >[!NOTE]
 >
->これは、経験豊富なネットワーク管理者またはデータベース管理者のみが使用する必要がある高度なトピックです。 必要な機能は次のとおりです。 `root` ファイルシステムにアクセスでき、MySQL に `root`.
+>これは、経験豊富なネットワーク管理者またはデータベース管理者のみが使用する高度なトピックです。 以下が必要です `root` ファイルシステムにアクセスし、次のように MySQL にログインできる必要があります `root`.
 
 ### 前提条件
 
-開始する前に、以下をおこなう必要があります。
+開始する前に、次の操作を行う必要があります。
 
-* [MySQL サーバーのインストール](mysql.md) をデータベースサーバー上に置きます。
-* [データベースインスタンスの作成](mysql.md#configuring-the-database-instance) をデータベースサーバー上に置きます。
-* MySQL クライアントをAdobe CommerceまたはMagento Open SourceWeb ノードにインストールします。 詳しくは、 MySQL のドキュメントを参照してください。
+* [MySQL サーバーのインストール](mysql.md) データベースサーバー上。
+* [データベースインスタンスの作成](mysql.md#configuring-the-database-instance) データベースサーバー上。
+* Adobe CommerceまたはMagento Open Source web ノードに MySQL クライアントをインストールします。 詳しくは、MySQL のドキュメントを参照してください。
 
 ### 高可用性
 
-Web サーバーまたはデータベースサーバーがクラスター化されている場合、リモートデータベース接続を構成するには、次のガイドラインを使用します。
+Web サーバーまたはデータベースサーバーがクラスター化されている場合は、次のガイドラインを使用してリモートデータベース接続を設定します。
 
 * Web サーバーノードごとに接続を設定する必要があります。
-* 通常は、データベース・ロード・バランサへのデータベース接続を構成します。ただし、データベース・クラスタリングは複雑で、設定は自由です。 Adobeでは、データベースのクラスタリングに関する具体的な推奨事項はありません。
+* 通常は、データベース・ロード・バランサへのデータベース接続を構成します。ただし、データベース・クラスタリングは複雑になる場合があり、構成はユーザー次第です。 Adobeでは、データベースクラスタリングに関して具体的な推奨事項を提供していません。
 
-  詳しくは、 [MySQL ドキュメント](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  詳しくは、を参照してください [MySQL ドキュメント](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
 ### 接続の問題の解決
 
-どちらかのホストに接続する際に問題が発生した場合は、最初に他のホストに ping を送信して、そのホストに到達可能であることを確認します。 ファイアウォールと SELinux の規則を変更する（SELinux を使用する場合）ことで、あるホストから別のホストへの接続を許可する必要が生じる場合があります。
+いずれかのホストへの接続で問題が発生した場合は、最初に他のホストに ping を送信して、そのホストに到達可能であることを確認します。 ファイアウォールと SELinux ルールを変更して、あるホストから別のホストへの接続を許可する必要がある場合があります（SELinux を使用する場合）。
 
-## リモート接続を作成
+## リモート接続の作成
 
 リモート接続を作成するには：
 
-1. データベースサーバー上で、 `root` 権限を設定し、MySQL 設定ファイルを開きます。
+1. データベースサーバーで、を持つユーザーとして `root` 権限を設定するには、MySQL 設定ファイルを開きます。
 
-   これを探すには、次のコマンドを入力します。
+   このディレクトリを探すには、次のコマンドを入力します。
 
    ```bash
    mysql --help
@@ -77,21 +77,21 @@ Web サーバーまたはデータベースサーバーがクラスター化さ�
 
    >[!NOTE]
    >
-   >Ubuntu 16 では、通常、パスは `/etc/mysql/mysql.conf.d/mysqld.cnf`.
+   >Ubuntu 16 では、通常はパスは `/etc/mysql/mysql.conf.d/mysqld.cnf`.
 
-1. 設定ファイルで `bind-address`.
+1. 設定ファイルで次を検索： `bind-address`.
 
-   存在する場合は、値を次のように変更します。
+   存在する場合は、次のように値を変更します。
 
-   存在しない場合は、 `[mysqld]` 」セクションに入力します。
+   存在しない場合は、に追加します `[mysqld]` セクション。
 
    ```conf
    bind-address = <ip address of your web node>
    ```
 
-   詳しくは、 [MySQL ドキュメント](https://dev.mysql.com/doc/refman/5.6/en/server-options.html)（特に、クラスター化された Web サーバーがある場合）。
+   参照： [MySQL ドキュメント](https://dev.mysql.com/doc/refman/5.6/en/server-options.html)特に、クラスター化された web サーバーがある場合。
 
-1. 変更を設定ファイルに保存し、テキストエディターを終了します。
+1. 設定ファイルに対する変更を保存し、テキストエディターを終了します。
 1. MySQL サービスを再起動します。
 
    * CentOS: `service mysqld restart`
@@ -100,18 +100,18 @@ Web サーバーまたはデータベースサーバーがクラスター化さ�
 
    >[!NOTE]
    >
-   >MySQL が起動しない場合は、syslog で問題の原因を調べます。 次を使用して問題を解決： [MySQL ドキュメント](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) その他の権威あるソース
+   >MySQL の起動に失敗した場合は、syslog で問題の原因を調べます。 を使用して問題を解決する [MySQL ドキュメント](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) または別の信頼できる情報源。
 
-## データベース・ユーザーへのアクセス権の付与
+## データベースユーザーへのアクセス権の付与
 
-Web ノードがデータベース・サーバに接続できるようにするには、リモート・サーバ上のデータベースに対する Web ノード・データベース・ユーザーのアクセス権を付与する必要があります。
+Web ノードがデータベースサーバーに接続できるようにするには、web ノードのデータベースユーザーにリモートサーバー上のデータベースへのアクセス権を付与する必要があります。
 
-この例では、 `root` リモート・ホスト上のデータベースへのフル・アクセス権を持つデータベース・ユーザー。
+この例では、次の権限が付与されます `root` データベースユーザー：リモートホスト上のデータベースへのフルアクセス。
 
-データベース・ユーザーにアクセス権を付与する手順は、次のとおりです。
+データベース・ユーザーにアクセス権を付与するには、次の手順に従います。
 
 1. データベースサーバーにログインします。
-1. MySQL データベースに `root` ユーザー。
+1. MySQL データベースにとして接続します `root` ユーザー。
 1. 次のコマンドを入力します。
 
    ```shell
@@ -126,17 +126,17 @@ Web ノードがデータベース・サーバに接続できるようにする�
 
    >[!NOTE]
    >
-   >Web サーバーがクラスター化されている場合は、すべての Web サーバーで同じコマンドを入力します。 すべての Web サーバーで同じユーザー名を使用する必要があります。
+   >Web サーバーがクラスター化されている場合は、すべての web サーバーに同じコマンドを入力します。 すべての Web サーバーに同じユーザー名を使用する必要があります。
 
 ## データベースアクセスの検証
 
-Web ノードホストで、次のコマンドを入力して接続が機能することを確認します。
+Web ノードホストで、次のコマンドを入力して接続が機能していることを確認します。
 
 ```bash
 mysql -u <local database username> -h <database server ip address> -p
 ```
 
-MySQL モニターが次のように表示される場合、データベースはAdobe CommerceまたはMagento Open Sourceの準備ができています。
+MySQL モニターに次のように表示される場合、データベースはAdobe CommerceまたはMagento Open Sourceの準備が整っています。
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -149,14 +149,14 @@ Oracle is a registered trademark of Oracle Corporation and/or its affiliates. Ot
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 ```
 
-Web サーバーがクラスター化されている場合は、各 Web サーバーホストでコマンドを入力します。
+Web サーバーがクラスター化されている場合は、各 web サーバーホストでコマンドを入力します。
 
-## Adobe CommerceまたはMagento Open Source
+## Adobe CommerceまたはMagento Open Sourceのインストール
 
-Adobe CommerceまたはMagento Open Sourceをインストールする場合は、次の情報を指定する必要があります。
+Adobe CommerceまたはMagento Open Sourceをインストールする際は、次の情報を指定する必要があります。
 
-* ベース URL( *ストアアドレス*) は、 *web ノード*
-* データベースホストは *リモートデータベースサーバー* IP アドレス（データベース・サーバがクラスタ化されている場合はロード・バランサ）
-* データベースのユーザー名： *ローカル web ノード* アクセス権を付与したデータベースユーザー
-* データベースのパスワードは、ローカル Web ノードのユーザーのパスワードです
-* データベース名は、リモートサーバー上のデータベースの名前です
+* ベース URL （別名） *ストアアドレス*）は、ホスト名または IP アドレスを指定します *web ノード*
+* データベースホストはです *リモート・データベース・サーバ* IP アドレス （または、データベースサーバーがクラスター化されている場合はロードバランサー）
+* データベースのユーザー名は *ローカル web ノード* アクセス権を付与したデータベースユーザー
+* データベースパスワードは、ローカル web ノードユーザーのパスワードです。
+* Database name は、リモート・サーバ上のデータベースの名前です

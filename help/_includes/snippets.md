@@ -1,17 +1,17 @@
 ---
-source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
+source-git-commit: f7db6b65d74c605976a3a338c98eebda2dc46a43
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 # スニペット
 
-## コマースのみ {#commerce-only}
+## Commerceのみ {#commerce-only}
 
 >[!NOTE]
 >
->The [!DNL Upgrade Compatibility Tool] は、Adobe Commerceインスタンスでのみ使用できます。
+>この [!DNL Upgrade Compatibility Tool] は、Adobe Commerce インスタンスでのみ使用できます。
 
 <!-- Configuration guide snippets -->
 
@@ -19,25 +19,25 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->すべてのMagentoCLI コマンドは、 [ファイルシステム所有者](/help/configuration/cli/config-cli.md#prerequisites).
+>すべてのMagento CLI コマンドは、 [ファイルシステム所有者](/help/configuration/cli/config-cli.md#prerequisites).
 
 ## バックアップコマンド {#tip-backup-command}
 
 >[!TIP]
 >
->The `support:backup` コマンドは _not_ が実行したのと同じコードのバックアップ `setup:backup` コマンドを使用します。 The `support:backup` コマンドは、Adobe Commerce Support が調べるためのコードをバックアップすることを目的としています。
+>この `support:backup` コマンドは _ではない_ で実行される同じコードバックアップ `setup:backup` コマンド。 この `support:backup` コマンドは、Adobe Commerce サポートによる調査用のコードをバックアップすることを目的としています。
 
 ## Adobe Commerceのみ {#ee-only}
 
 >[!NOTE]
 >
->この機能は、Adobe Commerceインスタンスでのみ使用できます。
+>この機能は、Adobe Commerce インスタンスでのみ使用できます。
 
-## DB の分割は廃止されました {#deprecate-split-db}
+## Split DB の廃止 {#deprecate-split-db}
 
 >[!IMPORTANT]
 >
->データベース分割機能は次のとおりです。 [非推奨](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187?_ga=2.128934671.2024864496.1657558157-1596100530.1657558157) (Adobe Commerceのバージョン 2.4.2)。 詳しくは、 [分割データベースから単一のデータベースに戻す](/help/configuration/storage/revert-split-database.md).
+>データベース分割機能は [非推奨](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187?_ga=2.128934671.2024864496.1657558157-1596100530.1657558157) （Adobe Commerceのバージョン 2.4.2 でサポート）。 参照： [分割データベースから単一データベースへの復帰](/help/configuration/storage/revert-split-database.md).
 
 <!-- End of Configuration guide snippets -->
 
@@ -45,20 +45,20 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe CommerceおよびMagento Open Sourceリリースには、後方互換性のない変更 (BIC) が含まれている場合があります。 後方互換性のない変更を確認するには、 [BIC リファレンス](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). 後方互換性のない主な問題については、 [BIC ハイライト](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). すべてのリリースでメジャー BIC が導入されているわけではありません。
+>Adobe Commerce リリースには、後方互換性のない変更（BIC）が含まれている場合があります。 後方互換性のない変更を確認するには、を参照してください。 [BIC 参照](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). 主な後方互換性のない問題については、を参照してください。 [BIC ハイライト](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). すべてのリリースで主要な BIC が導入されるわけではありません。
 
 ## CVE 通知 {#cve-notice}
 
 >[!NOTE]
 >
->2.3.2 リリース以降、アドビは、外部の関係者から報告された各セキュリティバグと共に、インデックス付きの Common Velwability and Exposures(CVE) 番号を割り当てて公開します。 これにより、ユーザーは、デプロイメントにおける宛ててがない脆弱性をより簡単に識別できます。 CVE 識別子について詳しくは、 [CVE](https://cve.mitre.org/).
+>2.3.2 リリース以降、アドビは、外部関係者からアドビに報告された各セキュリティバグに対して、インデックス付きの Common Vulnerability and Exposures （CVE）番号を割り当て、公開します。 これにより、ユーザーはデプロイメント内の対処されていない脆弱性をより簡単に特定できます。 CVE 識別子について詳しくは、次を参照してください [CVE](https://cve.mitre.org/).
 
 ## その他のリリース情報 {#other-release-info}
 
 >[!NOTE]
 >
->これらのリリースノートで説明されている機能強化とバグ修正のコードはAdobe Commerceにバンドルされていますが、これらのプロジェクト (B2B、Page Builder、Progressive Web Application(PWA)Studio など ) も個別にリリースされています。 これらのプロジェクトのバグ修正は、個別のプロジェクト固有のリリース情報に記載されています。この情報は、各プロジェクトのドキュメントに記載されています。 詳しくは、 [製品リリースの概要](/help/release/release-notes/overview.md).
+>これらのリリースノートで説明されている機能強化およびバグ修正のコードはAdobe Commerceにバンドルされていますが、これらのプロジェクトの一部（B2B、ページビルダー、Progressive Web Application（PWA） Studio など）も個別にリリースされています。 これらのプロジェクトのバグ修正は、各プロジェクトのドキュメントで利用できる別のプロジェクト固有のリリース情報に記載されています。 参照： [製品リリースの概要](/help/release/release-notes/overview.md).
 
-## PHP プロセス制御 {#php-process-control}
+## PHP プロセスコントロール {#php-process-control}
 
-並列モードでインデクサーを実行する前に、プロセス制御のサポート (`pcntl`) を PHP で使用する場合に使用します。 詳しくは、 [インストール](https://www.php.net/manual/en/pcntl.installation.php) PHP ドキュメント内。
+インデクサーを並列モードで実行する前に、プロセス制御のサポート（`pcntl`）を使用します。 参照： [インストール](https://www.php.net/manual/en/pcntl.installation.php) PHP のドキュメントに書かれています。

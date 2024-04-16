@@ -1,20 +1,20 @@
 ---
 title: アップグレードジャーニーフェーズ
-description: Adobe CommerceプロジェクトとMagento Open Sourceプロジェクトのアップグレードジャーニーの様々なフェーズについて説明します。
+description: Adobe Commerce プロジェクトのアップグレードジャーニーの様々な段階について説明します。
 exl-id: c0e39102-5f37-47cb-9792-9eeb50707ec8
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '57'
+source-wordcount: '49'
 ht-degree: 0%
 
 ---
 
-# ジャーニーフェーズのアップグレード
+# アップグレードジャーニーフェーズ
 
-アップグレードには細心の注意、計画、管理が必要です。 Adobe CommerceとMagento Open Sourceのアップグレードプロセスを理解できるように、アドビでは、主に次の 3 つのフェーズでプロセスを説明します。
+アップグレードには、細心の注意、計画、および管理が必要です。 Adobe Commerceのアップグレードジャーニーを理解しやすくするために、このプロセスを次の 3 つの主な段階に分けて説明します。
 
 - [プロジェクトの開始](project-launch.md)
-- [年間計画](annual-planning.md)
+- [年度計画](annual-planning.md)
 - [実装](implementation.md)
 
 ![](../../assets/upgrade-guide/upgrade-journey-phases.svg)

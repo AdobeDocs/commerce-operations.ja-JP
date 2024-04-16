@@ -1,324 +1,324 @@
 ---
-title: お客様の個人情報に関するリファレンス（バージョン 2.x）
-description: Adobe CommerceおよびMagento Open Source2.x での、顧客の個人情報に対するデータフロー図およびデータベースエンティティのマッピングについて説明します。
+title: 顧客の個人情報の参照（バージョン 2.x）
+description: Adobe Commerce 2.x におけるお客様の個人情報に関するデータフロー図とデータベースエンティティマッピングについて説明します。
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
 
-# お客様の個人情報に関するリファレンス（バージョン 2.x）
+# 顧客の個人情報の参照（バージョン 2.x）
 
 >[!NOTE]
 >
->これは、Adobe CommerceやMagento Open Sourceの販売店や開発者がプライバシー規制への準拠に備えるのに役立つ、一連のトピックの 1 つです。 御社のビジネスが法的義務を遵守する必要があるかどうか、また、その方法を決定するには、弁護士に相談してください。
+>これは、Adobe Commerceのマーチャントやデベロッパーがプライバシー規制への準拠に備えるのに役立つ、一連のトピックの 1 つです。 自社のビジネスが法的義務に準拠する必要があるかどうか、またどのように準拠すべきかを判断するには、法務担当者に相談してください。
 
-次のようなプライバシー規制への準拠プログラムを開発する際には、次のデータフロー図およびデータベースエンティティマッピングを参照用に使用します。
+プライバシー規制に関するコンプライアンスプログラムを開発する際の参考として、次のデータフロー図とデータベースエンティティのマッピングを使用します。例えば、次のようなものがあります。
 
 - [GDPR](gdpr.md)
 - [CCPA](ccpa.md)
 
 ## データフロー図
 
-データフロー図には、顧客および管理者がストアフロントおよび管理者から入力および取得できるデータのタイプが示されています。
+データフロー図は、顧客および管理者がストアフロントおよび管理者から入力および取得できるデータのタイプを示しています。
 
-### フロントエンドデータエントリポイント
+### フロントエンドデータのエントリポイント
 
-ユーザは、顧客、住所、支払い情報を入力して、アカウントの登録時、チェックアウト時などに、同様のイベントを行うことができます。
+ユーザーは、アカウントの登録時、チェックアウト時などのイベントに、顧客、住所、支払い情報を入力できます。
 
-![フロントエンドデータエントリポイント](../../assets/security-compliance/frontend-data-entry-points.svg)
+![フロントエンドデータのエントリポイント](../../assets/security-compliance/frontend-data-entry-points.svg)
 
-### フロントエンドデータアクセスポイント
+### フロントエンド データ アクセス ポイント
 
-Adobe CommerceおよびMagento Open Sourceは、顧客がログインして複数の異なるページを表示したり、チェックアウトしたりすると、顧客情報を読み込みます。
+Adobe Commerceは、ユーザーがログインして複数の異なるページを表示した場合、またはチェックアウトした場合に、ユーザー情報を読み込みます。
 
-![フロントエンドデータアクセスポイント](../../assets/security-compliance/frontend-data-access-points.svg)
+![フロントエンド データ アクセス ポイント](../../assets/security-compliance/frontend-data-access-points.svg)
 
-### バックエンドのデータエントリポイント
+### バックエンドデータのエントリポイント
 
-マーチャントは、顧客または注文を管理者から作成する際に、顧客情報、住所データ、支払いデータを入力できます。
+マーチャントは、管理者から顧客または注文を作成する際に、顧客情報、住所データおよび支払いデータを入力できます。
 
-![バックエンドのデータエントリポイント](../../assets/security-compliance/backend-data-entry-points.svg)
+![バックエンドデータのエントリポイント](../../assets/security-compliance/backend-data-entry-points.svg)
 
-### バックエンドデータアクセスポイント
+### バックエンドのデータアクセスポイント
 
-Adobe CommerceとMagento Open Sourceは、マーチャントが複数の種類のグリッドを表示し、グリッドをクリックして詳細情報を表示し、その他の様々なタスクを実行する際に顧客情報をロードします。
+Adobe Commerceは、マーチャントが複数のタイプのグリッドを表示したり、グリッドをクリックして詳細情報を表示したり、その他の様々なタスクを実行したりすると、顧客情報を読み込みます。
 
-![バックエンドデータアクセスポイント](../../assets/security-compliance/backend-data-access-points.svg)
+![バックエンドのデータアクセスポイント](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## データベースエンティティ
 
-Adobe CommerceとMagento Open Sourceは主に、顧客固有の情報を顧客、住所、注文、見積、支払いの各テーブルに保存します。 その他のテーブルには、顧客 ID への参照が含まれています。
+Adobe Commerceは主に、お客様固有の情報を、お客様、住所、注文、見積もり、支払いの各テーブルに格納します。 その他のテーブルには、顧客 ID への参照が含まれます。
 
 ### 顧客データ
 
-Adobe CommerceとMagento Open Sourceは、次の顧客属性を格納するように設定できます。
+Adobe Commerceは、次の顧客属性を格納するように設定できます。
 
 - 生年月日
 - 電子メール
-- 名
+- 名前（名）
 - 性別
-- 姓
+- 名前（姓）
 - ミドルネーム/イニシャル
 - 名前のプレフィックス
 - 名前サフィックス
 
 >[!NOTE]
 >
->現在のセキュリティおよびプライバシーのベストプラクティスに従い、顧客の生年月日（月、日、年）のストレージに関連する法的リスクとセキュリティリスクの可能性、およびその他の個人 ID（氏名など）を把握してから、データを収集または処理してください。
+>現在のセキュリティとプライバシーのベストプラクティスに従って、顧客の完全な生年月日（月、日、年）と、フルネームなどのその他の個人識別子の保存に関連して発生する可能性のある法的およびセキュリティリスクを認識してから、そのようなデータを収集または処理してください。
 
 #### `customer_entity` および「customer_entity」参照
 
-次の列 ( `customer_entity` 表には、顧客情報が含まれます。
+次の列 `customer_entity` テーブルには、顧客情報が格納されます。
 
 | 列 | データタイプ |
 | ------------ | ------------ |
-| `email` | varchar(255) |
-| `prefix` | varchar(40) |
-| `firstname` | varchar(255) |
-| `middlename` | varchar(255) |
-| `lastname` | varchar(255) |
-| `suffix` | varchar(40) |
+| `email` | varchar （255） |
+| `prefix` | varchar （40） |
+| `firstname` | varchar （255） |
+| `middlename` | varchar （255） |
+| `lastname` | varchar （255） |
+| `suffix` | varchar （40） |
 | `dob` | 日付 |
-| `gender` | smallint(5) |
+| `gender` | smallint （5） |
 
-以下の表は、を参照しています。 `customer_entity` には、カスタム顧客属性を含めることができます。
+これらのテーブルは、 `customer_entity` また、カスタム顧客属性を含めることができます。
 
 | テーブル | 列 | データタイプ |
 | -------------------------- | ------- | ------------- |
-| `customer_entity_datetime` | `value` | 日時 |
-| `customer_entity_decimal` | `value` | decimal(12,4) |
-| `customer_entity_int` | `value` | int(11) |
-| `customer_entity_text` | `value` | テキスト |
-| `customer_entity_varchar` | `value` | varchar(255) |
+| `customer_entity_datetime` | `value` | datetime |
+| `customer_entity_decimal` | `value` | decimal （12,4） |
+| `customer_entity_int` | `value` | int （11） |
+| `customer_entity_text` | `value` | text |
+| `customer_entity_varchar` | `value` | varchar （255） |
 
-#### `customer_grid_flat` 表
+#### `customer_grid_flat` テーブル
 
-次の列 ( `customer_grid_flat` 表には、顧客情報が含まれます。
+次の列 `customer_grid_flat` テーブルには、顧客情報が格納されます。
 
 | 列 | データタイプ |
 | -------------------- | ------------ |
-| `name` | テキスト |
-| `email` | varchar(255) |
+| `name` | text |
+| `email` | varchar （255） |
 | `dob` | 日付 |
-| `gender` | int(11) |
-| `shipping_full` | テキスト |
-| `billing_full` | テキスト |
-| `billing_firstname` | varchar(255) |
-| `billing_lastname` | varchar(255) |
-| `billing_telephone` | varchar(255) |
-| `billing_postcode` | varchar(255) |
-| `billing_country_id` | varchar(255) |
-| `billing_region` | varchar(255) |
-| `billing_city` | varchar(255) |
-| `billing_fax` | varchar(255) |
-| `billing_vat_id` | varchar(255) |
-| `billing_company` | varchar(255) |
+| `gender` | int （11） |
+| `shipping_full` | text |
+| `billing_full` | text |
+| `billing_firstname` | varchar （255） |
+| `billing_lastname` | varchar （255） |
+| `billing_telephone` | varchar （255） |
+| `billing_postcode` | varchar （255） |
+| `billing_country_id` | varchar （255） |
+| `billing_region` | varchar （255） |
+| `billing_city` | varchar （255） |
+| `billing_fax` | varchar （255） |
+| `billing_vat_id` | varchar （255） |
+| `billing_company` | varchar （255） |
 
-### 住所データ
+### アドレスデータ
 
-Adobe CommerceとMagento Open Sourceは、次の顧客属性を保存します。
+Adobe Commerceには、次の顧客属性が格納されます。
 
 - 市区町村
-- 会社情報
+- 会社
 - 国
-- FAX
-- 名
-- 姓
+- ファックス
+- 名前（名）
+- 名前（姓）
 - ミドルネーム/イニシャル
 - 名前のプレフィックス
 - 名前サフィックス
 - 電話番号
 - 都道府県
 - 都道府県 ID
-- 住所
+- 番地
 - VAT 番号
 - 郵便番号
 
 #### `customer_address_entity` および `customer_address_entity` 参照
 
-次の列 ( `customer_address_entity` 表には、顧客情報が含まれます。
+次の列 `customer_address_entity` テーブルには、顧客情報が格納されます。
 
 | 列 | データタイプ |
 | ------------ | ------------ |
-| `city` | varchar(255) |
-| `company` | varchar(255) |
-| `country_id` | varchar(255) |
-| `fax` | varchar(255) |
-| `firstname` | varchar(255) |
-| `lastname` | varchar(255) |
-| `middlename` | varchar(255) |
-| `postcode` | varchar(255) |
-| `region` | varchar(255) |
-| `region_id` | int(10) |
-| `street` | テキスト |
-| `suffix` | varchar(40) |
-| `telephone` | varchar(255) |
-| `vat_id` | varchar(255) |
+| `city` | varchar （255） |
+| `company` | varchar （255） |
+| `country_id` | varchar （255） |
+| `fax` | varchar （255） |
+| `firstname` | varchar （255） |
+| `lastname` | varchar （255） |
+| `middlename` | varchar （255） |
+| `postcode` | varchar （255） |
+| `region` | varchar （255） |
+| `region_id` | int （10） |
+| `street` | text |
+| `suffix` | varchar （40） |
+| `telephone` | varchar （255） |
+| `vat_id` | varchar （255） |
 
-以下の表は、を参照しています。 `customer_address_entity` には、カスタム顧客属性を含めることができます。
+これらのテーブルは、 `customer_address_entity` また、カスタム顧客属性を含めることができます。
 
 | テーブル | 列 | データタイプ |
 | ---------------------------------- | ------- | ------------- |
-| `customer_address_entity_datetime` | `value` | 日時 |
-| `customer_address_entity_decimal` | `value` | decimal(12,4) |
-| `customer_address_entity_int` | `value` | int(11) |
-| `customer_address_entity_text` | `value` | テキスト |
-| `customer_address_entity_varchar` | `value` | varchar(255) |
+| `customer_address_entity_datetime` | `value` | datetime |
+| `customer_address_entity_decimal` | `value` | decimal （12,4） |
+| `customer_address_entity_int` | `value` | int （11） |
+| `customer_address_entity_text` | `value` | text |
+| `customer_address_entity_varchar` | `value` | varchar （255） |
 
 ### 注文データ
 
-The `sales_order` および関連するテーブルには、顧客名、請求先住所、配送先住所、および関連するデータが含まれます。
+この `sales_order` および関連するテーブルには、顧客名、請求先と配送先住所、関連するデータが含まれています。
 
-#### `sales_order` 表
+#### `sales_order` テーブル
 
-次の列 ( `sales_order` 表には、顧客情報が含まれます。
-
-| 列 | データタイプ |
-| --------------------- | ------------ |
-| `customer_dob` | 日時 |
-| `customer_email` | varchar(128) |
-| `customer_firstname` | varchar(128) |
-| `customer_gender` | int(11) |
-| `customer_group_id` | int(11) |
-| `customer_id` | int(10) |
-| `customer_lastname` | varchar(128) |
-| `customer_middlename` | varchar(128) |
-| `customer_prefix` | varchar(32) |
-| `customer_suffix` | varchar(32) |
-| `customer_taxvat` | varchar(32) |
-| `quote_address_id` | int(11) |
-| `remote_ip` | varchar(32) |
-| `x_forwarded_for` | varchar(32) |
-
-#### `sales_order_address` 表
-
-The `sales_order_address` テーブルには、顧客の住所が含まれます。
+次の列 `sales_order` テーブルには、顧客情報が格納されます。
 
 | 列 | データタイプ |
 | --------------------- | ------------ |
-| `customer_address_id` | int(11) |
-| `quote_address_id` | int(11) |
-| `region_id` | int(11) |
-| `customer_id` | int(11) |
-| `fax` | varchar(255) |
-| `region` | varchar(255) |
-| `postcode` | varchar(255) |
-| `lastname` | varchar(255) |
-| `street` | varchar(255) |
-| `city` | varchar(255) |
-| `email` | varchar(255) |
-| `telephone` | varchar(255) |
-| `country_id` | varchar(2) |
-| `firstname` | varchar(255) |
-| `suffix` | varchar(255) |
-| `company` | varchar(255) |
+| `customer_dob` | datetime |
+| `customer_email` | varchar （128） |
+| `customer_firstname` | varchar （128） |
+| `customer_gender` | int （11） |
+| `customer_group_id` | int （11） |
+| `customer_id` | int （10） |
+| `customer_lastname` | varchar （128） |
+| `customer_middlename` | varchar （128） |
+| `customer_prefix` | varchar （32） |
+| `customer_suffix` | varchar （32） |
+| `customer_taxvat` | varchar （32） |
+| `quote_address_id` | int （11） |
+| `remote_ip` | varchar （32） |
+| `x_forwarded_for` | varchar （32） |
 
-#### `sales_order_grid` 表
+#### `sales_order_address` テーブル
 
-次の列 ( `sales_order_grid` 表には、顧客情報が含まれます。
+この `sales_order_address` テーブルには、顧客の住所が含まれます。
+
+| 列 | データタイプ |
+| --------------------- | ------------ |
+| `customer_address_id` | int （11） |
+| `quote_address_id` | int （11） |
+| `region_id` | int （11） |
+| `customer_id` | int （11） |
+| `fax` | varchar （255） |
+| `region` | varchar （255） |
+| `postcode` | varchar （255） |
+| `lastname` | varchar （255） |
+| `street` | varchar （255） |
+| `city` | varchar （255） |
+| `email` | varchar （255） |
+| `telephone` | varchar （255） |
+| `country_id` | varchar （2） |
+| `firstname` | varchar （255） |
+| `suffix` | varchar （255） |
+| `company` | varchar （255） |
+
+#### `sales_order_grid` テーブル
+
+次の列 `sales_order_grid` テーブルには、顧客情報が格納されます。
 
 | 列 | データタイプ |
 | ---------------------- | ------------ |
-| `customer_id` | int(10) |
-| `shipping_name` | varchar(255) |
-| `billing_name` | varchar(255) |
-| `billing_address` | varchar(255) |
-| `shipping_address` | varchar(255) |
-| `shipping_information` | varchar(255) |
-| `customer_email` | varchar(255) |
-| `customer_name` | varchar(255) |
+| `customer_id` | int （10） |
+| `shipping_name` | varchar （255） |
+| `billing_name` | varchar （255） |
+| `billing_address` | varchar （255） |
+| `shipping_address` | varchar （255） |
+| `shipping_information` | varchar （255） |
+| `customer_email` | varchar （255） |
+| `customer_name` | varchar （255） |
 
-### 見積もりデータ
+### 見積データ
 
-引用符には、お客様の名前、電子メール、住所、関連情報が含まれます。
+見積もりには、顧客の名前、メールアドレス、住所、および関連情報が含まれています。
 
-#### `quote` 表
+#### `quote` テーブル
 
-次の列 ( `quote` 表には、顧客情報が含まれます。
+次の列 `quote` テーブルには、顧客情報が格納されます。
 
 | 列 | データタイプ |
 | --------------------- | ------------ |
-| `customer_id` | int(10) |
-| `customer_email` | varchar(255) |
-| `customer_prefix` | varchar(40) |
-| `customer_firstname` | varchar(255) |
-| `customer_middlename` | varchar(40) |
-| `customer_lastname` | varchar(255) |
-| `customer_dob` | 日時 |
-| `remote_ip` | varchar(32) |
-| `customer_taxvat` | varchar(255) |
-| `customer_gender` | varchar(255) |
+| `customer_id` | int （10） |
+| `customer_email` | varchar （255） |
+| `customer_prefix` | varchar （40） |
+| `customer_firstname` | varchar （255） |
+| `customer_middlename` | varchar （40） |
+| `customer_lastname` | varchar （255） |
+| `customer_dob` | datetime |
+| `remote_ip` | varchar （32） |
+| `customer_taxvat` | varchar （255） |
+| `customer_gender` | varchar （255） |
 
-#### `quote_address` 表
+#### `quote_address` テーブル
 
-次の列 ( `quote_address` 表には、顧客情報が含まれます。
+次の列 `quote_address` テーブルには、顧客情報が格納されます。
 
 | 列 | データタイプ |
 | ------------- | ------------ |
-| `customer_id` | int(10) |
-| `email` | varchar(255) |
-| `prefix` | varchar(40) |
-| `firstname` | varchar(255) |
-| `middlename` | varchar(40) |
-| `lastname` | varchar(255) |
-| `suffix` | varchar(40) |
-| `company` | varchar(255) |
-| `street` | varchar(255) |
-| `city` | varchar(255) |
-| `region` | varchar(255) |
-| `region_id` | int(10) |
-| `postcode` | varchar(20) |
-| `country_id` | varchar(30) |
-| `telephone` | varchar(255) |
-| `fax` | varchar(255) |
+| `customer_id` | int （10） |
+| `email` | varchar （255） |
+| `prefix` | varchar （40） |
+| `firstname` | varchar （255） |
+| `middlename` | varchar （40） |
+| `lastname` | varchar （255） |
+| `suffix` | varchar （40） |
+| `company` | varchar （255） |
+| `street` | varchar （255） |
+| `city` | varchar （255） |
+| `region` | varchar （255） |
+| `region_id` | int （10） |
+| `postcode` | varchar （20） |
+| `country_id` | varchar （30） |
+| `telephone` | varchar （255） |
+| `fax` | varchar （255） |
 
 ### 支払いデータ
 
-The `sales_order_payment` 表には、クレジットカード情報やその他のトランザクション情報が含まれます。
+この `sales_order_payment` 表には、クレジット・カード情報およびその他の取引情報が含まれます。
 
 | 列 | データタイプ |
 | ------------------------ | ------------ |
-| `cc_exp_month` | varchar(12) |
-| `echeck_bank_name` | varchar(128) |
-| `cc_last_4` | varchar(100) |
-| `cc_owner` | varchar(128) |
-| `po_number` | varchar(32) |
-| `cc_exp_year` | varchar(4) |
-| `echeck_routing_number` | varchar(32) |
-| `cc_debug_response_body` | varchar(32) |
-| `echeck_account_name` | varchar(32) |
-| `cc_number_enc` | varchar(128) |
-| `additional_information` | テキスト |
+| `cc_exp_month` | varchar （12） |
+| `echeck_bank_name` | varchar （128） |
+| `cc_last_4` | varchar （100） |
+| `cc_owner` | varchar （128） |
+| `po_number` | varchar （32） |
+| `cc_exp_year` | varchar （4） |
+| `echeck_routing_number` | varchar （32） |
+| `cc_debug_response_body` | varchar （32） |
+| `echeck_account_name` | varchar （32） |
+| `cc_number_enc` | varchar （128） |
+| `additional_information` | text |
 
 ### 招待データ
 
-Adobe CommerceとMagento Open Sourceは、お客様がプライベートセールスやイベントに招待を送信できるように設定できます。
+Adobe Commerceは、顧客が個人の営業やイベントへの招待状を送信できるように設定できます。
 
-#### `magento_invitation` 表
+#### `magento_invitation` テーブル
 
-The `magento_invitation` テーブルには、顧客 ID、電子メールおよび紹介 ID が含まれます。
+この `magento_invitation` テーブルには、顧客 ID、メールおよびリファラル ID が含まれます。
 
 | 列 | データタイプ |
 | ------------- | ------------ |
-| `customer_id` | int(10) |
-| `email` | varchar(255) |
-| `referral_id` | int(10) |
+| `customer_id` | int （10） |
+| `email` | varchar （255） |
+| `referral_id` | int （10） |
 
-#### `magento_invitation_track` 表
+#### `magento_invitation_track` テーブル
 
-The `magento_invitation_track` 「 」テーブルには、顧客情報も含まれています。
+この `magento_invitation_track` テーブルには、顧客情報も含まれます。
 
 | 列 | データタイプ |
 | ------------- | --------- |
-| `inviter_id` | int(10) |
-| `referral_id` | int(10) |
+| `inviter_id` | int （10） |
+| `referral_id` | int （10） |
 
 ### 顧客を参照するその他のテーブル
 
-次の表に、 `customer_id` 列：
+以下のテーブルには、 `customer_id` 列：
 
 - `catalog_compare_item`
 - `catalog_product_frontend_action`

@@ -1,23 +1,23 @@
 ---
 title: Nginx
-description: Nginx Web サーバーをインストールして、Adobe CommerceとMagento Open Sourceのオンプレミスインストール用に設定するには、次の手順に従います。
+description: 次の手順に従って、Adobe Commerceのオンプレミスインストール用に Nginx web サーバーをインストールして設定します。
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 9ebf10bd3296495e33c91d930be023ea0124ff62
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1134'
 ht-degree: 0%
 
 ---
 
 # Nginx
 
-Adobe Commerceは nginx 1.x ( または [最新のメインラインバージョン](https://nginx.org/en/linux_packages.html#mainline)) をクリックします。 最新バージョンの `php-fpm`.
+Adobe Commerceは、nginx 1.x （または [最新のメインラインバージョン](https://nginx.org/en/linux_packages.html#mainline)）に設定します。 の最新バージョンもインストールする必要があります `php-fpm`.
 
-インストール手順は、使用しているオペレーティングシステムによって異なります。 詳しくは、 [PHP](../php-settings.md) 」を参照してください。
+インストール手順は、使用しているオペレーティングシステムによって異なります。 参照： [PHP](../php-settings.md) を参照してください。
 
 ## Ubuntu
 
-次の節では、Ubuntu に nginx、PHP、MySQL を使用してAdobe CommerceとMagento Open Source2.x をインストールする方法について説明します。
+次の節では、nginx、PHP、MySQL を使用して、Ubuntu にAdobe Commerce 2.x をインストールする方法について説明します。
 
 ### nginx のインストール
 
@@ -25,15 +25,15 @@ Adobe Commerceは nginx 1.x ( または [最新のメインラインバージョ
 sudo apt -y install nginx
 ```
 
-また、 [ソースから nginx を構築](https://www.armanism.com/blog/install-nginx-on-ubuntu)
+以下の手順でも可能です [ソースから nginx をビルド](https://www.armanism.com/blog/install-nginx-on-ubuntu)
 
-以下の節でアプリケーションのインストールを完了した後、サンプルの設定ファイルを使用して [nginx の設定](#configure-nginx).
+以下の節を完了し、アプリケーションをインストールしたら、サンプルの設定ファイルを使用して以下を行います [nginx の設定](#configure-nginx).
 
 ### php-fpm のインストールと設定
 
-Adobe CommerceとMagento Open Sourceには複数の [PHP 拡張機能](../php-settings.md) 正しく機能しない。 これらの拡張機能に加えて、 `php-fpm` 拡張機能を使用します（nginx を使用している場合）。
+Adobe Commerceには複数のが必要です [PHP 拡張機能](../php-settings.md) 正しく機能する。 これらの拡張機能に加えて、 `php-fpm` 拡張（nginx を使用している場合）
 
-をインストールして設定するには、以下を実行します。 `php-fpm`:
+をインストールして設定するには `php-fpm`:
 
 1. インストール `php-fpm` および `php-cli`:
 
@@ -43,9 +43,9 @@ Adobe CommerceとMagento Open Sourceには複数の [PHP 拡張機能](../php-se
 
    >[!NOTE]
    >
-   >このコマンドは、PHP 7.2.X の利用可能な最新バージョンをインストールします。詳しくは、 [システム要件](../../system-requirements.md) サポートされる PHP バージョンの場合。
+   >このコマンドは、利用可能な最新バージョンの PHP 7.2.X をインストールします。参照： [必要システム構成](../../system-requirements.md) （サポートされている PHP バージョン用）
 
-1. を開きます。 `php.ini` エディター内のファイル：
+1. を開きます `php.ini` エディター内のファイル：
 
    ```bash
    vim /etc/php/7.2/fpm/php.ini
@@ -65,11 +65,11 @@ Adobe CommerceとMagento Open Sourceには複数の [PHP 拡張機能](../php-se
 
    >[!NOTE]
    >
-   >Adobe CommerceとMagento Open Sourceをテストする際は、メモリ制限を 2 G に設定することをお勧めします。 参照： [必要な PHP 設定](../php-settings.md) を参照してください。
+   >Adobe Commerceをテストする際は、メモリ制限を 2 G に設定することをお勧めします。 こちらを参照してください [必要な PHP 設定](../php-settings.md) を参照してください。
 
-1. エディターを保存して終了します。
+1. 保存して、エディターを終了します。
 
-1. を再起動します。 `php-fpm` サービス：
+1. を再起動します `php-fpm` サービス：
 
    ```bash
    systemctl restart php7.2-fpm
@@ -77,33 +77,33 @@ Adobe CommerceとMagento Open Sourceには複数の [PHP 拡張機能](../php-se
 
 ### MySQL のインストールと設定
 
-参照： [MySQL](../database/mysql.md) を参照してください。
+こちらを参照してください [MySQL](../database/mysql.md) を参照してください。
 
 ### インストールと設定
 
-Adobe CommerceとMagento Open Sourceをダウンロードするには、次のような方法があります。
+Adobe Commerceをダウンロードするには、次のようないくつかの方法があります。
 
-* [Composer のメタパッケージの取得](../../composer.md)
+* [Composer メタパッケージの取得](../../composer.md)
 
 * [Git リポジトリのクローン](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
-この例では、コマンドラインを使用した Composer ベースのインストールを示します。
+この例は、コマンドラインを使用した Composer ベースのインストールを示しています。
 
-1. を [ファイルシステム所有者](../file-system/overview.md)、アプリケーションサーバーにログインします。
+1. として [ファイルシステム所有者](../file-system/overview.md)アプリケーションサーバーにログインします。
 
-1. Web サーバーの docroot ディレクトリ、または仮想ホストの docroot として設定したディレクトリに変更します。 この例では、Ubuntu デフォルトを使用しています。 `/var/www/html`.
+1. Web サーバーの docroot ディレクトリまたは仮想ホストの docroot として設定したディレクトリに移動します。 この例では、Ubuntu のデフォルトを使用しています `/var/www/html`.
 
    ```bash
    cd /var/www/html
    ```
 
-1. Composer をグローバルにインストールします。 Adobe CommerceまたはMagento Open Sourceをインストールする前に、依存関係を更新するには、Composer が必要です。
+1. Composer をグローバルにインストール Adobe CommerceまたはMagento Open Sourceをインストールする前に、依存関係を更新するために Composer が必要です。
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Magento Open SourceまたはAdobe Commerceのメタパッケージを使用して Composer プロジェクトを作成します。
+1. Magento Open SourceまたはAdobe Commerce メタパッケージを使用して Composer プロジェクトを作成します。
 
    **Magento Open Source**
 
@@ -117,7 +117,7 @@ Adobe CommerceとMagento Open Sourceをダウンロードするには、次の�
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   プロンプトが表示されたら、 [認証キー](../authentication-keys.md). お使いの _公開鍵_ はユーザー名です。 _秘密鍵_ はお客様のパスワードです。
+   プロンプトが表示されたら、 [認証キー](../authentication-keys.md). あなたの _公開鍵_ はユーザー名、は _秘密鍵_ はパスワードです。
 
 1. アプリケーションをインストールする前に、Web サーバーグループの読み取り/書き込み権限を設定します。 これは、コマンドラインがファイルをファイルシステムに書き込めるようにするために必要です。
 
@@ -141,7 +141,7 @@ Adobe CommerceとMagento Open Sourceをダウンロードするには、次の�
    chmod u+x bin/magento
    ```
 
-1. からインストールする [コマンドライン](../../advanced.md). この例では、インストールディレクトリの名前がとなっていることを前提としています。 `magento2ee`、 `db-host` は同じマシン (`localhost`)、および `db-name`, `db-user`、および `db-password` すべて `magento`:
+1. からをインストール [コマンドライン](../../advanced.md). この例では、インストールディレクトリの名前がであることを前提としています `magento2ee`, `db-host` が同じマシン上にある（`localhost`）に設定し、 `db-name`, `db-user`、および `db-password` が全て `magento`:
 
    ```bash
    bin/magento setup:install \
@@ -175,13 +175,13 @@ Adobe CommerceとMagento Open Sourceをダウンロードするには、次の�
    ./magento deploy:mode:set developer
    ```
 
-### nginx の設定
+### Nginx の設定
 
-nginx を設定する場合は、 `nginx.conf.sample` インストールディレクトリと nginx 仮想ホストに指定された設定ファイル。
+を使用して nginx を設定することをお勧めします。 `nginx.conf.sample` インストールディレクトリおよび nginx 仮想ホストで提供される設定ファイル。
 
-これらの手順は、nginx 仮想ホストに Ubuntu デフォルトの場所を使用していることを前提としています ( 例： `/etc/nginx/sites-available`) と Ubuntu のデフォルトドキュメントルート ( 例： `/var/www/html`) で指定できますが、環境に合わせてこれらの場所を変更できます。
+これらの手順は、nginx 仮想ホストに Ubuntu のデフォルトの場所（たとえば、 `/etc/nginx/sites-available`）を選択し、Ubuntu のデフォルトのドキュメントルート（例： `/var/www/html`ただし、環境に合わせてこれらの場所を変更することはできます。
 
-1. サイト用の新しい仮想ホストを作成します。
+1. サイトの新しい仮想ホストを作成します。
 
    ```bash
    vim /etc/nginx/sites-available/magento
@@ -205,13 +205,13 @@ nginx を設定する場合は、 `nginx.conf.sample` インストールディ�
 
    >[!NOTE]
    >
-   >The `include` ディレクティブは、インストールディレクトリ内のサンプル nginx 設定ファイルを指す必要があります。
+   >この `include` ディレクティブは、インストールディレクトリ内のサンプル nginx 設定ファイルを指す必要があります。
 
-1. 置換 `www.magento-dev.com` を、お使いのドメイン名に置き換えます。 Adobe CommerceまたはMagento Open Sourceのインストール時に指定したベース URL と一致させる必要があります。
+1. 置換 `www.magento-dev.com` とドメイン名を使用します。 これは、Adobe CommerceまたはMagento Open Sourceをインストールするときに指定したベース URL と一致する必要があります。
 
-1. エディターを保存して終了します。
+1. 保存して、エディターを終了します。
 
-1. 新しく作成した仮想ホストに対する symlink を `/etc/nginx/sites-enabled` ディレクトリ：
+1. で新しく作成した仮想ホストへのシンボリックリンクを作成して、そのホストをアクティベートします。 `/etc/nginx/sites-enabled` ディレクトリ：
 
    ```bash
    ln -s /etc/nginx/sites-available/magento /etc/nginx/sites-enabled
@@ -231,11 +231,11 @@ nginx を設定する場合は、 `nginx.conf.sample` インストールディ�
 
 ### インストールの確認
 
-Web ブラウザーを開き、サイトのベース URL( ) に移動します。 [インストールの確認](../../next-steps/verify.md).
+Web ブラウザーを開き、サイトのベース URL に移動して、次の操作を行います [インストールの確認](../../next-steps/verify.md).
 
 ## CentOS 7
 
-以下の節では、CentOS 7 に nginx、PHP、MySQL を使用してAdobe CommerceとMagento Open Source2.x をインストールする方法について説明します。
+次の節では、nginx、PHP、および MySQL を使用して、CentOS 7 にAdobe Commerce 2.x をインストールする方法について説明します。
 
 ### nginx のインストール
 
@@ -247,7 +247,7 @@ yum -y install epel-release
 yum -y install nginx
 ```
 
-インストールが完了したら、nginx を起動し、起動時に起動するように設定します。
+インストールが完了したら、nginx を起動し、ブート時に起動するように設定します。
 
 ```bash
 systemctl start nginx
@@ -257,11 +257,11 @@ systemctl start nginx
 systemctl enable nginx
 ```
 
-以下の節で説明する手順を完了し、アプリケーションをインストールした後、サンプルの設定ファイルを使用して nginx を設定します。
+以下のセクションを完了し、アプリケーションをインストールしたら、サンプルの設定ファイルを使用して nginx を設定します。
 
 ### php-fpm のインストールと設定
 
-Adobe CommerceとMagento Open Sourceには複数の [PHP](../php-settings.md) 拡張機能が適切に機能しない問題を修正しました。 これらの拡張機能に加えて、 `php-fpm` 拡張機能を使用します（ nginx を使用している場合）。
+Adobe Commerceには複数のが必要です [PHP](../php-settings.md) 正しく機能するための拡張機能。 これらの拡張機能に加えて、 `php-fpm` nginx を使用している場合は拡張機能です。
 
 1. インストール `php-fpm`:
 
@@ -269,9 +269,9 @@ Adobe CommerceとMagento Open Sourceには複数の [PHP](../php-settings.md) �
    yum -y install php70w-fpm
    ```
 
-1. を開きます。 `/etc/php.ini` ファイルを編集します。
+1. を開きます `/etc/php.ini` エディター内のファイル。
 
-1. コメントを解除 `cgi.fix_pathinfo` 行を開き、値を `0`.
+1. のコメントを解除 `cgi.fix_pathinfo` を行い、値をに変更します `0`.
 
 1. 次の行に一致するようにファイルを編集します。
 
@@ -283,7 +283,7 @@ Adobe CommerceとMagento Open Sourceには複数の [PHP](../php-settings.md) �
 
    >[!NOTE]
    >
-   >Adobe CommerceまたはMagento Open Sourceをテストする際は、メモリ制限を 2 G に設定することをお勧めします。 参照： [必要な PHP 設定](../php-settings.md) を参照してください。
+   >Adobe CommerceまたはMagento Open Sourceをテストする場合は、メモリ制限を 2 G に設定することをお勧めします。 こちらを参照してください [必要な PHP 設定](../php-settings.md) を参照してください。
 
 1. セッションパスディレクトリのコメントを解除し、パスを設定します。
 
@@ -291,9 +291,9 @@ Adobe CommerceとMagento Open Sourceには複数の [PHP](../php-settings.md) �
    session.save_path = "/var/lib/php/session"
    ```
 
-1. エディターを保存して終了します。
+1. 保存して、エディターを終了します。
 
-1. 開く `/etc/php-fpm.d/www.conf` 」と入力します。
+1. 開く `/etc/php-fpm.d/www.conf` エディターで。
 
 1. 次の行に一致するようにファイルを編集します。
 
@@ -306,7 +306,7 @@ Adobe CommerceとMagento Open Sourceには複数の [PHP](../php-settings.md) �
    listen.mode = 0660
    ```
 
-1. 環境行のコメントを解除します。
+1. 環境の行をコメント解除します。
 
    ```conf
    env[HOSTNAME] = $HOSTNAME
@@ -316,9 +316,9 @@ Adobe CommerceとMagento Open Sourceには複数の [PHP](../php-settings.md) �
    env[TEMP] = /tmp
    ```
 
-1. エディターを保存して終了します。
+1. 保存して、エディターを終了します。
 
-1. PHP セッションパス用のディレクトリを作成し、所有者を `apache` ユーザーとグループ：
+1. PHP セッションパスのディレクトリを作成し、所有者をに変更します。 `apache` ユーザーとグループ：
 
    ```bash
    mkdir -p /var/lib/php/session/
@@ -328,7 +328,7 @@ Adobe CommerceとMagento Open Sourceには複数の [PHP](../php-settings.md) �
    chown -R apache:apache /var/lib/php/
    ```
 
-1. PHP セッションパス用のディレクトリを作成し、所有者を `apache` ユーザーとグループ：
+1. PHP セッションパスのディレクトリを作成し、所有者をに変更します。 `apache` ユーザーとグループ：
 
    ```bash
    mkdir -p /run/php-fpm/
@@ -338,7 +338,7 @@ Adobe CommerceとMagento Open Sourceには複数の [PHP](../php-settings.md) �
    chown -R apache:apache /run/php-fpm/
    ```
 
-1. を開始します。 `php-fpm` 起動時にサービスを実行して設定を行う：
+1. を開始する `php-fpm` サービスを提供し、起動時に開始するように設定します。
 
    ```bash
    systemctl start php-fpm
@@ -348,7 +348,7 @@ Adobe CommerceとMagento Open Sourceには複数の [PHP](../php-settings.md) �
    systemctl enable php-fpm
    ```
 
-1. 次を確認します。 `php-fpm` サービスは実行中です：
+1. を確認します `php-fpm` サービス実行中：
 
    ```bash
    netstat -pl | grep php-fpm.sock
@@ -356,33 +356,33 @@ Adobe CommerceとMagento Open Sourceには複数の [PHP](../php-settings.md) �
 
 ### MySQL のインストールと設定
 
-参照： [MySQL](..//database/mysql.md) を参照してください。
+こちらを参照してください [MySQL](..//database/mysql.md) を参照してください。
 
 ### インストールと設定
 
-Adobe CommerceとMagento Open Sourceをダウンロードするには、次のような方法があります。
+Adobe Commerceをダウンロードするには、次のようないくつかの方法があります。
 
-* [Composer のメタパッケージの取得](../../composer.md)
+* [Composer メタパッケージの取得](../../composer.md)
 
 * [Git リポジトリのクローン](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
-この例では、コマンドラインを使用した Composer ベースのインストールを示します。
+この例は、コマンドラインを使用した Composer ベースのインストールを示しています。
 
-1. を [ファイルシステム所有者](../file-system/overview.md)、アプリケーションサーバーにログインします。
+1. として [ファイルシステム所有者](../file-system/overview.md)アプリケーションサーバーにログインします。
 
-1. Web サーバーの docroot ディレクトリ、または仮想ホストの docroot として設定したディレクトリに変更します。 この例では、Ubuntu デフォルトを使用しています。 `/var/www/html`.
+1. Web サーバーの docroot ディレクトリまたは仮想ホストの docroot として設定したディレクトリに移動します。 この例では、Ubuntu のデフォルトを使用しています `/var/www/html`.
 
    ```bash
    cd /var/www/html
    ```
 
-1. Composer をグローバルにインストールします。 Adobe CommerceまたはMagento Open Sourceをインストールする前に、依存関係を更新するには、Composer が必要です。
+1. Composer をグローバルにインストール Adobe CommerceまたはMagento Open Sourceをインストールする前に、依存関係を更新するために Composer が必要です。
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Magento Open SourceまたはAdobe Commerceのメタパッケージを使用して Composer プロジェクトを作成します。
+1. Magento Open SourceまたはAdobe Commerce メタパッケージを使用して Composer プロジェクトを作成します。
 
    **Magento Open Source**
 
@@ -396,7 +396,7 @@ Adobe CommerceとMagento Open Sourceをダウンロードするには、次の�
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   プロンプトが表示されたら、 [認証キー](../authentication-keys.md). お使いの _公開鍵_ はユーザー名です。 _秘密鍵_ はお客様のパスワードです。
+   プロンプトが表示されたら、 [認証キー](../authentication-keys.md). あなたの _公開鍵_ はユーザー名、は _秘密鍵_ はパスワードです。
 
 1. アプリケーションをインストールする前に、Web サーバーグループの読み取り/書き込み権限を設定します。 これは、コマンドラインがファイルをファイルシステムに書き込めるようにするために必要です。
 
@@ -420,7 +420,7 @@ Adobe CommerceとMagento Open Sourceをダウンロードするには、次の�
    chmod u+x bin/magento
    ```
 
-1. からインストールする [コマンドライン](../../advanced.md). この例では、インストールディレクトリの名前がとなっていることを前提としています。 `magento2ee`、 `db-host` は同じマシン (`localhost`)、および `db-name`, `db-user`、および `db-password` すべて `magento`:
+1. からをインストール [コマンドライン](../../advanced.md). この例では、インストールディレクトリの名前がであることを前提としています `magento2ee`, `db-host` が同じマシン上にある（`localhost`）に設定し、 `db-name`, `db-user`、および `db-password` が全て `magento`:
 
    ```bash
    bin/magento setup:install \
@@ -451,13 +451,13 @@ Adobe CommerceとMagento Open Sourceをダウンロードするには、次の�
    ./magento deploy:mode:set developer
    ```
 
-### nginx の設定
+### Nginx の設定
 
-nginx を設定する場合は、 `nginx.conf.sample` インストールディレクトリと nginx 仮想ホストに指定された設定ファイル。
+を使用して nginx を設定することをお勧めします。 `nginx.conf.sample` インストールディレクトリおよび nginx 仮想ホストで提供される設定ファイル。
 
-これらの手順は、CentOS のデフォルトの場所を nginx 仮想ホスト ( 例えば、 `/etc/nginx/conf.d`) とデフォルトのドキュメントルート ( 例： `/usr/share/nginx/html`) で指定できますが、環境に合わせてこれらの場所を変更できます。
+これらの手順は、nginx 仮想ホストのデフォルトの CentOS の場所（例： `/etc/nginx/conf.d`）を選択し、デフォルトの docroot （例： `/usr/share/nginx/html`ただし、環境に合わせてこれらの場所を変更することはできます。
 
-1. サイト用の新しい仮想ホストを作成します。
+1. サイトの新しい仮想ホストを作成します。
 
    ```bash
    vim /etc/nginx/conf.d/magento.conf
@@ -481,11 +481,11 @@ nginx を設定する場合は、 `nginx.conf.sample` インストールディ�
 
    >[!NOTE]
    >
-   >The `include` ディレクティブは、インストールディレクトリ内のサンプル nginx 設定ファイルを指す必要があります。
+   >この `include` ディレクティブは、インストールディレクトリ内のサンプル nginx 設定ファイルを指す必要があります。
 
-1. 置換 `www.magento-dev.com` を、お使いのドメイン名に置き換えます。
+1. 置換 `www.magento-dev.com` とドメイン名を使用します。
 
-1. エディターを保存して終了します。
+1. 保存して、エディターを終了します。
 
 1. 構文が正しいことを確認します。
 
@@ -499,15 +499,15 @@ nginx を設定する場合は、 `nginx.conf.sample` インストールディ�
    systemctl restart nginx
    ```
 
-### SELinux および Firewalld の設定
+### SELinux と Firewalld の設定
 
-SELinux は、CentOS 7 でデフォルトで有効になっています。 次のコマンドを使用して、実行中かどうかを確認します。
+CentOS 7 では、SELinux がデフォルトで有効になっています。 次のコマンドを使用して、実行中かどうかを確認します。
 
 ```bash
 sestatus
 ```
 
-SELinux と Firewalld を設定するには：
+SELinux と firewalld を設定するには：
 
 1. SELinux 管理ツールをインストールします。
 
@@ -537,7 +537,7 @@ SELinux と Firewalld を設定するには：
    restorecon -Rv '/usr/share/nginx/html/magento2/'
    ```
 
-1. Firewalld パッケージをインストールします。
+1. firewalld パッケージのインストール：
 
    ```bash
    yum -y install firewalld
@@ -553,7 +553,7 @@ SELinux と Firewalld を設定するには：
    systemctl enable firewalld
    ```
 
-1. 次のコマンドを実行して、HTTP および HTTPS 用のポートを開き、Web ブラウザーからベース URL にアクセスできるようにします。
+1. 次のコマンドを実行して HTTP および HTTPS のポートを開くと、web ブラウザーからベース URL にアクセスできます。
 
    ```bash
    firewall-cmd --permanent --add-service=http
@@ -569,4 +569,4 @@ SELinux と Firewalld を設定するには：
 
 ### インストールの確認
 
-Web ブラウザーを開き、サイトのベース URL( ) に移動します。 [インストールの確認](../../next-steps/verify.md).
+Web ブラウザーを開き、サイトのベース URL に移動して、次の操作を行います [インストールの確認](../../next-steps/verify.md).

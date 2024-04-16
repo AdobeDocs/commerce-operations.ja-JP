@@ -1,21 +1,21 @@
 ---
-title: サンプルデータモジュールを削除または更新する
-description: 以下の手順に従って、Adobe CommerceおよびMagento Open Sourceサンプルデータモジュールを管理します。
+title: サンプルデータモジュールを削除または更新
+description: Adobe Commerce サンプルデータモジュールを管理するには、次の手順に従います。
 exl-id: d23f999f-18bf-449b-be23-bdf392dda539
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '115'
 ht-degree: 0%
 
 ---
 
-# サンプルデータモジュールを削除または更新する
+# サンプルデータモジュールを削除または更新
 
-このトピックでは、以下の方法について説明します。
+このトピックでは、次の方法について説明します。
 
-* [サンプルデータモジュールの削除](#remove-sample-data-modules) Adobe CommerceまたはMagento Open Sourceのインストールから `composer.json`. このオプションは、 *not* データベースからサンプルデータを削除します。
+* [サンプルデータモジュールの削除](#remove-sample-data-modules) Adobe CommerceまたはMagento Open Sourceのインストールから `composer.json`. このオプション *ではない* データベースからサンプルデータを削除します。
 
-* [サンプルデータ更新の準備](#prepare-to-update-sample-data) ( 例えば、アプリケーションアプリケーションを更新する前にMagento)。
+* [サンプルデータ更新の準備](#prepare-to-update-sample-data) （例えば、Magentoアプリケーションをアップデートする前に）。
 
 ## サンプルデータモジュールの削除
 
@@ -25,9 +25,7 @@ ht-degree: 0%
 bin/magento sampledata:remove
 ```
 
-サンプルデータモジュールの完全なリストは次のとおりです。
-
-Adobe CommerceとMagento Open Source:
+サンプルデータモジュールの完全なリストを次に示します。
 
 * `magento/module-bundle-sample-data`
 * `magento/module-catalog-rule-sample-data`
@@ -51,17 +49,9 @@ Adobe CommerceとMagento Open Source:
 * `magento/module-wishlist-sample-data`
 * `magento/sample-data-media`
 
-Adobe Commerceのみ：
-
-* `magento/module-customer-balance-sample-data`
-* `magento/module-gift-card-sample-data`
-* `magento/module-gift-registry-sample-data`
-* `magento/module-multiple-wishlist-sample-data`
-* `magento/module-target-rule-sample-data`
-
 ## サンプルデータ更新の準備
 
-このコマンドを使用すると、Adobe CommerceまたはMagento Open Sourceを更新する前にサンプルデータを更新できます。
+このコマンドを使用すると、Adobe CommerceまたはMagento Open Sourceを更新する前に、サンプルデータを更新できます。
 
 更新用のサンプルデータを準備するには、次のコマンドを入力します。
 
@@ -69,4 +59,4 @@ Adobe Commerceのみ：
 bin/magento sampledata:reset
 ```
 
-その後 [アプリの更新](../tutorials/uninstall.md#update-the-application).
+その後、 [アプリケーションの更新](../tutorials/uninstall.md#update-the-application).

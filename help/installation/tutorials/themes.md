@@ -1,37 +1,37 @@
 ---
 title: テーマのアンインストール
-description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceテーマをアンインストールします。
+description: Adobe CommerceまたはMagento Open Sourceテーマをアンインストールするには、次の手順に従います。
 feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
 
 # テーマのアンインストール
 
-このコマンドを使用する前に、テーマの相対パスを把握しておく必要があります。 テーマは、のサブディレクトリに配置されます。 `<magento_root>/app/design/<area name>`. テーマのパスは、領域で始まるパスを指定する必要があります ( `frontend` （ストアフロントテーマの場合）または `adminhtml` （管理テーマの場合）。
+このコマンドを使用する前に、テーマへの相対パスを知っておく必要があります。 テーマは、次のサブディレクトリにあります。 `<magento_root>/app/design/<area name>`. テーマのパスは領域で始めて指定する必要があります。領域は次のいずれかになります `frontend` （ストアフロントテーマの場合）または `adminhtml` （管理テーマ用）。
 
-例えば、Adobe CommerceとMagento Open Sourceで提供される Luma テーマへのパスが `frontend/Magento/luma`.
+例えば、Adobe Commerceで提供される Luma テーマへのパスは次のとおりです `frontend/Magento/luma`.
 
-テーマについて詳しくは、 [テーマ構造](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
+テーマについて詳しくは、次を参照してください [テーマの構造](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
 ## テーマのアンインストールの概要
 
-このセクションでは、1 つ以上のテーマをアンインストールする方法について説明します。その際に、必要に応じてファイルシステムからテーマのコードを含めます。 最初にバックアップを作成して、後でデータを復元できます。
+この節では、1 つ以上のテーマをアンインストールする方法について説明します。テーマのコードはファイルシステムから必要に応じてアンインストールできます。 最初にバックアップを作成して、後でデータを復元できるようにします。
 
-このコマンドは、uninstalls を実行します。 *のみ* 指定されたテーマ `composer.json`つまり、コンポーザーパッケージとして提供されるテーマです。 テーマが Composer パッケージでない場合は、次の方法で手動でアンインストールする必要があります。
+このコマンドはアンインストールします *のみ* で指定されているテーマ `composer.json`つまり、Composer パッケージとして提供されるテーマです。 テーマが Composer パッケージでない場合は、次の方法で手動でアンインストールする必要があります。
 
-* の更新 `parent` のノード情報 `theme.xml` をクリックして、テーマへの参照を削除します。
-* ファイルシステムからテーマコードを削除する。
+* を更新中 `parent` のノード情報 `theme.xml` をクリックして、テーマへの参照を削除します。
+* ファイルシステムからテーマコードを削除しています。
 
-  [テーマの継承の詳細](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
+  [テーマの継承に関する詳細情報](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
 
 ## テーマのアンインストール
 
-コマンドの使用：
+コマンドの使用法：
 
 ```bash
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme path} ... {theme path}
@@ -39,32 +39,32 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 ここで、
 
-* `{theme path}` は、テーマの相対パスで、領域名から始まります。 例えば、Adobe CommerceとMagento Open Sourceで提供される空のテーマへのパスが `frontend/Magento/blank`.
-* `--backup-code` 後述の段落で説明するように、コードベースをバックアップします。
-* `--clear-static-content` 生成されたクリーン [静的表示ファイル](../../configuration/cli/static-view-file-deployment.md)：静的ビューファイルが正しく表示されるために必要です。
+* `{theme path}` は、領域名で始まる、テーマの相対パスです。 例えば、Adobe Commerceに用意されている空白のテーマへのパスはです。 `frontend/Magento/blank`.
+* `--backup-code` 以降の段落で説明するように、コードベースをバックアップします。
+* `--clear-static-content` クリーンアップが生成されました [静的ビューファイル](../../configuration/cli/static-view-file-deployment.md)（静的ビューファイルを正しく表示するために必要）。
 
-このコマンドは、次のタスクを実行します。
+コマンドは、次のタスクを実行します。
 
-1. 指定したテーマのパスが存在するかどうかを確認します。存在しない場合は、コマンドが終了します。
+1. 指定したテーマのパスが存在することを確認します。存在しない場合は、コマンドは終了します。
 1. テーマが Composer パッケージであることを確認します。そうでない場合、コマンドは終了します。
-1. 依存関係をチェックし、未満の依存関係がある場合はコマンドを終了します。
+1. 依存関係をチェックし、満たされていない依存関係がある場合はコマンドを終了します。
 
-   この問題を回避するには、すべてのテーマを同時にアンインストールするか、まずテーマに応じてをアンインストールします。
+   これを回避するには、すべてのテーマを同時にアンインストールするか、テーマに応じてを最初にアンインストールします。
 
 1. テーマが使用されていないことを確認します。使用されている場合は、コマンドが終了します。
-1. テーマが仮想テーマの基本ではないことを確認します。仮想テーマの基本である場合は、コマンドが終了します。
+1. テーマが仮想テーマのベースでないことを確認します。仮想テーマのベースである場合、コマンドは終了します。
 1. ストアをメンテナンスモードにします。
-1. 次の場合 `--backup-code` を指定し、コードベースをバックアップします ( `pub/static`, `pub/media`、および `var` ディレクトリ。
+1. 次の場合 `--backup-code` が指定されている場合は、を除くコードベースをバックアップします。 `pub/static`, `pub/media`、および `var` ディレクトリ。
 
-   バックアップファイル名は次のとおりです。 `var/backups/<timestamp>_filesystem.tgz`
+   バックアップ ファイル名は `var/backups/<timestamp>_filesystem.tgz`
 
-   バックアップは、 [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンドを使用します。
+   を使用すると、いつでもバックアップを復元できます [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンド。
 
-1. テーマを `theme` データベーステーブル。
-1. 次を使用して、コードベースからテーマを削除する `composer remove`.
-1. キャッシュをクリーンします。
-1. 生成されたクラスをクリーン
-1. 次の場合 `--clear-static-content` が指定され、クリーン [生成された静的ビューファイル](../../configuration/cli/static-view-file-deployment.md).
+1. からテーマを削除 `theme` データベーステーブル。
+1. を使用してコードベースからテーマを削除する `composer remove`.
+1. キャッシュをクリアします。
+1. 生成されたクラスをクリーンアップ
+1. 次の場合 `--clear-static-content` 指定した場合、クリアする [生成された静的ビューファイル](../../configuration/cli/static-view-file-deployment.md).
 
 例えば、別のテーマが依存するテーマをアンインストールしようとすると、次のメッセージが表示されます。
 
@@ -73,7 +73,7 @@ Cannot uninstall frontend/ExampleCorp/SampleModuleTheme because the following pa
         ExampleCorp/sample-module-theme-depend
 ```
 
-その 1 つは、次のコードベースのバックアップと同時に、両方のテーマをアンインストールする方法です。
+コードベースのバックアップを次のように行い、両方のテーマを同時にアンインストールすることもできます。
 
 ```bash
 bin/magento theme:uninstall frontend/ExampleCorp/SampleModuleTheme frontend/ExampleCorp/SampleModuleThemeDepend --backup-code
@@ -103,4 +103,4 @@ Disabling maintenance mode
 
 >[!NOTE]
 >
->管理テーマをアンインストールするには、コンポーネントの依存関係挿入設定から削除する必要もあります。 `<component root directory>/etc/di.xml`.
+>また、管理テーマをアンインストールするには、コンポーネントの依存関係の挿入設定から削除する必要があります。 `<component root directory>/etc/di.xml`.

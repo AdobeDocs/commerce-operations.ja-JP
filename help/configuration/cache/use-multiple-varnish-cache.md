@@ -1,28 +1,28 @@
 ---
-title: 複数の Vanrish インスタンスを使用したキャッシュのクリア
-description: キャッシュの消去が複数の Vanish インスタンスでどのように動作するかを説明します。
+title: 複数の Varnish インスタンスでのキャッシュのクリア
+description: 複数の Varnish インスタンスでのキャッシュのクリアの仕組みを説明します。
 feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '176'
 ht-degree: 1%
 
 ---
 
-# 複数の Vanish インスタンスをキャッシュクリアする
+# 複数の Varnish インスタンスをクリアするキャッシュ
 
-Adobe CommerceとMagento Open Sourceは、すぐに使用できる複数の Vanrish インスタンスをサポートします。
+Adobe Commerceでは、すぐに使用できる複数の Varnish インスタンスをサポートしています。
 
-このトピックでは、コマースを使用して複数の Vanrish インスタンスを設定する際の基本を示します。
+このトピックでは、Commerceで複数の Varnish インスタンスを設定する際の基本について説明します。
 
 ## 複数の Varnish インスタンスをパージする設定
 
-Commerce は、Vanish ホストを [`magento setup:config:set`](../../installation/tutorials/deployment.md) コマンドを使用します。
+Commerceでは、を使用して Varnish ホストを設定した後、Varnish ホストをパージします。 [`magento setup:config:set`](../../installation/tutorials/deployment.md) コマンド。
 
-以下を使用する必要があります。 `--http-cache-hosts` Vanish ホストとリッスンポートのコンマ区切りリストを指定するためのパラメータ。 （ホストをスペース文字で区切らないでください）。
+を使用する必要があります `--http-cache-hosts` パラメーター：Varnish ホストとリッスンポートのコンマ区切りリストを指定します。 （ホストをスペース文字で区切らないでください）。
 
-パラメーターの形式は次のようにする必要があります。 `<hostname or ip>:<listen port>`を指定します。ここで、 `<listen port>` （ポート 80 の場合）
+パラメーターの形式は、 `<hostname or ip>:<listen port>`。を省略できます `<listen port>` ポート 80 の場合。
 
 以下に例を挙げます。
 
@@ -30,8 +30,8 @@ Commerce は、Vanish ホストを [`magento setup:config:set`](../../installati
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 
-その後、コマースキャッシュを更新すると、すべての Vanish ホストをパージできます ( _クリーニング_ キャッシュ ) を管理者またはコマンドラインで使用します。
+その後、Commerceのキャッシュ（ _クリーニング_ キャッシュ）を使用するか、コマンドラインを使用します。
 
-管理者を使用してキャッシュを更新するには、 **システム** /ツール/ **キャッシュ管理**&#x200B;を選択し、次に **フラッシュMagentoキャッシュ** をクリックします。 （個々のキャッシュタイプを更新することもできます）。
+管理者を使用してキャッシュを更新するには、 **システム** > ツール > **キャッシュ管理**&#x200B;を選択し、 **Magentoキャッシュのフラッシュ** ページの上部 （個々のキャッシュタイプを更新することもできます）。
 
-cli から複数の Varnish インスタンスのキャッシュを更新するには、 [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) コマンドを [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
+複数の Varnish インスタンスのキャッシュを cli から更新するには、次を使用します。 [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) としてコマンド [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
