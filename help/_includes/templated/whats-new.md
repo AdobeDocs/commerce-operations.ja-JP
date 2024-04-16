@@ -1,8 +1,8 @@
 ---
-source-git-commit: 018c61a4ea921b4a69cc854fde355606defe1215
+source-git-commit: 88cdf47409f45f9ba6de75701ab877c5e4604f13
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 0%
+source-wordcount: '224'
+ht-degree: 1%
 
 ---
 # 新しいテンプレート
@@ -29,41 +29,13 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/efd2fc4285a5cdc7ee20ead299ee16e54f9bcb83">efd2fc</a> （コミット）</td>
     </tr>
     <tr>
-      <td><ul>
-  <li>のリリースパッケージトピックを更新します <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> および <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">Magento OpenSource</a>.<br /> – のリリースパッケージのトピックを追加 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">コマースの B2B</a>.</li>
-</ul>
+      <td><p>のリリースパッケージトピックを更新しました <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> および <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">Magento Open Source</a>.<br /> のリリースパッケージのトピックを追加しました <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">コマースの B2B</a>.</p>
 </td>
       <td>major-update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> （コミット）</td>
     </tr>
     <tr>
-      <td><p>が更新されました <em>bin/magento</em> CLI リファレンスドキュメント <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> および <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">Magento OpenSource</a>.</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b81dc87a261f128cdb572a30ff5538dae2087c49">b81dc8</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p>公開済み 2.4.7 GA <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7">リリースノート</a>.</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35b7caafbef5ced52ef6e4907e0634dfb2a61e4f">35b7ca</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p>2024 年 4 月のAdobe Commerce セキュリティリリース（2.4.6-p5、2.4.5-p7、2.4.4-p8）のリリースノートを追加します。 参照： <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Adobe CommerceおよびMagento Open Sourceのリリースノート</a></p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7acab1d8d3f7b11cc1387b5558521f282ba0873f">7acab1</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><ul>
-  <li>のリリースパッケージトピックを更新します <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> および <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">Magento OpenSource</a>.<br /> – のリリースパッケージのトピックを追加 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">コマースの B2B</a>.</li>
-</ul>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p>が更新されました <em>bin/magento</em> CLI リファレンスドキュメント <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> および <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">Magento OpenSource</a>.</p>
+      <td><p>が更新されました <em>bin/magento</em> CLI リファレンスドキュメント <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> および <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">Magento Open Source</a>.</p>
 </td>
       <td>major-update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b81dc87a261f128cdb572a30ff5538dae2087c49">b81dc8</a> （コミット）</td>
