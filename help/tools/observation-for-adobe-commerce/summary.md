@@ -1,376 +1,376 @@
 ---
-title: The [!UICONTROL Summary] タブ
-description: 詳しくは、 [!UICONTROL Summary] タブ [!DNL Observation for Adobe Commerce].
+title: この [!UICONTROL Summary] タブ
+description: について説明します [!UICONTROL Summary] タブ / [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 790089c178570ee69f33cc04b17800db5563741e
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
 
-# The [!UICONTROL Summary] タブ
+# この [!UICONTROL Summary] タブ
 
-The [!UICONTROL Summary] タブ [!DNL Observation for Adobe Commerce] は、サイトで発生した問題の一部をすばやく確認して、サイトの問題の潜在的な根本原因を自動解決または特定するのに役立つようにすることを目的としています。 追加のタブでは、コンポーネントサービス、データベース、インフラストラクチャ、プロセスの状態に関する詳細な情報を提供します。
+この [!UICONTROL Summary] タブ / [!DNL Observation for Adobe Commerce] は、サイトで発生する問題のいくつかを素早く確認し、サイトの問題の潜在的な根本原因を自動解決または特定することを目的としています。 追加のタブでは、コンポーネント・サービス、データベース、インフラストラクチャ、プロセスの状態に関する詳細な情報を提供します。
 
 ## [!UICONTROL Transaction Overview]
 
 ![トランザクションの概要](../../assets/tools/transaction-overview.jpg)
 
-### [トランザクションとは](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&amp;text=For%20APM%2C%20it%20will%20fortue,when%20the%20response%20is%20sent)
+### [トランザクションとは](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&amp;text=For%20APM%2C%20it%20will%20often, when%20the%20response%20is%20sent)
 
-「で [!DNL New Relic]の場合、トランザクションは、ソフトウェアアプリケーションの作業の 1 つの論理単位として定義されます。 特に、この作業単位を構成する関数呼び出しとメソッド呼び出しを指します。 多くの場合、Web トランザクションを指します。これは、アプリケーションが Web リクエストを受信したときから応答が送信されたときまでに発生するアクティビティを表します。」
+「に [!DNL New Relic]トランザクションは、ソフトウェアアプリケーション内の 1 つの作業論理単位として定義されます。 具体的には、その作業単位を構成する関数呼び出しとメソッド呼び出しを指します。 多くの場合、web トランザクションを指します。これは、アプリケーションが web リクエストを受信したときから応答が送信されたときに発生するアクティビティを表します。」
 
 ### トランザクションのタイプ：
 
-**Web:** Web トランザクションは、HTTP リクエストで開始されます。 ほとんどの組織では、これらは顧客中心のインタラクションを表すので、監視する最も重要なトランザクションとなります。
+**Web:** Web トランザクションは、HTTP リクエストで開始されます。 ほとんどの組織では、これらは顧客中心のインタラクションを表しているので、監視が最も重要なトランザクションです。
 
-**非 Web:** Web リクエストでは、Web 以外のトランザクションは開始されません。 これには、非 Web ワーカープロセス、バックグラウンドプロセス、スクリプト、メッセージキューアクティビティ、その他のタスクを含めることができます。
+**Web 以外：** Web 以外のトランザクションは、web リクエストでは開始されません。 Web ワーカー以外のプロセス、バックグラウンドプロセス、スクリプト、メッセージキューアクティビティなどのタスクが含まれます。
 
-を見ると、 **[!UICONTROL Transaction Overview]** 上のフレームでは、平均 APDEX スコアが 0.76 の約 53,000 件のトランザクションが発生し、その 95%が 2.313 秒未満で発生していました。 これは、短い期間に APDEX ヒットが発生した場合に、より厳しい期間が現在の平均からの偏差を示す可能性があるフレームです。
+次の項目を見ると、 **[!UICONTROL Transaction Overview]** 上記のフレームでは、平均 APDEX スコアが 0.76 のトランザクションがほぼ 53,000 件あり、これらのトランザクションの 95% は 2.313 秒未満で発生しました。 これは、短い時間枠で APDEX がヒットした場合、より厳密な時間枠では現在の平均からの偏差が表示されるフレームです。
 
 ## [!UICONTROL 404 page errors frame]
 
 ![404 ページエラーフレーム](../../assets/tools/404-page-errors.jpg)
 
-The **[!UICONTROL 404 page errors]** フレームリスト [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) および選択した期間で発生した 404 ページのエラーの数。
+この **[!UICONTROL 404 page errors]** フレーム リスト [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) 選択した期間の 404 ページエラーの数。
 
 ## [!UICONTROL % of Storage Free frame]
 
 ![ストレージの空きフレームの割合](../../assets/tools/percent-of-storage-free.jpg)
 
-The **[!UICONTROL % of Storage Free]** frame は、クラスタのすべてのノードにわたるストレージマウントの平均空き率を表示します。 例えば、3 つのノードクラスタがある場合、フレームには\&lt;mount point=&quot;&quot;>, \&lt;environment name=&quot;&quot;>. 3 つのノード間で分散が生じる場合、このフレームはごまかしになる可能性があります。 平方偏差の例は、 `/data/mysql` 3 つのノードクラスタでは、マウントポイントフリーの値が異なりました。 下に枠がある [!UICONTROL MySQL] マウントポイントをノード名でファセット化し、より正確に `/data/mysql` 各ノード上のストレージは、実際には空きです。
+この **[!UICONTROL % of Storage Free]** フレームには、クラスタのすべてのノードにわたるストレージ・マウントの平均空き率が表示されます。 例えば、3 つのノードクラスターがある場合、フレームには\&lt;mount point=&quot;&quot;>, \&lt;environment name=&quot;&quot;>. このフレームは、3 つのノード間に相違がある場合に偽装される可能性があります。 分散の例として、次のようになります。 `/data/mysql` マウントポイントの解放は、3 つのノードクラスタ間で異なる値でした。 の下にフレームがあります [!UICONTROL MySQL] マウントポイントをノード名でファセットするタブで、 `/data/mysql` 各ノードのストレージ空き容量は、実際にはです。
 
 ## [!UICONTROL % of system memory that is free frame]
 
 ![空きフレームのシステムメモリの割合](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
 
-The **空きのシステムメモリの割合 (%)** frame は、各ノードで空きメモリの量をノードごとに表示します。
+この **システムメモリの空き容量（%）** フレームは、各ノード上の空きシステムメモリの量をノードごとに表示します。
 
 ## [!UICONTROL Swap memory free in bytes]
 
-![スワップメモリの空きバイト数](../../assets/tools/swap-memory-free-in-bytes.jpg)
+![空きメモリをバイト単位でスワップ](../../assets/tools/swap-memory-free-in-bytes.jpg)
 
-The **[!UICONTROL Swap memory free in bytes]** frame は、ノード上で空き SWAP メモリの量をノードごとに表示します。
+この **[!UICONTROL Swap memory free in bytes]** フレームは、ノード上で空いている SWAP メモリの量をノードごとに表示します。
 
 ## [!UICONTROL CPU % by host]
 
 ![ホスト別の CPU パーセント](../../assets/tools/cpu-percent-by-host.jpg)
 
-すべての環境とノードの集計がに表示されます。 **[!UICONTROL CPU % by host]** フレーム 実稼動以外の環境の選択を解除する必要があります。 また、実稼動環境のすべてのノードが存在しない場合も注意してください。 CPU 使用率の高さに関するヒントについては、 [Adobe CommerceでのNew Relicを使用したパフォーマンスのトラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
+すべての環境およびノードの集計が「」に表示されます **[!UICONTROL CPU % by host]** フレーム。 非実稼動環境の選択を解除する必要があります。 また、実稼動環境のすべてのノードが存在しないインスタンスも注目してください。 CPU 高使用率に関するその他のヒントについては、を参照してください。 [Adobe CommerceのNew Relicを使用したパフォーマンスのトラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
-![期間中のアラート](../../assets/tools/alerts-during-timeframe.jpg)
+![期間内のアラート](../../assets/tools/alerts-during-timeframe.jpg)
 
-The **[!UICONTROL Alerts during timeframe]** を含むすべてのアラートを表示します。 [!UICONTROL Managed Alerts] Adobe Commerceサポートによって追加されました。
+この **[!UICONTROL Alerts during timeframe]** を含むすべてのアラートを表示します [!UICONTROL Managed Alerts] Adobe Commerce サポートによって追加されました。
 
 ## [!UICONTROL CPU Usage]
 
 ![CPU 使用率](../../assets/tools/cpu-usage.jpg)
 
-次の場合、 **[!UICONTROL CPU Usage]** フレームが空白の場合は、 [!DNL New Relic] が有効になっていません。 サイトがスターターにある場合、この情報は表示されません。 サイトが Pro 上にある場合は、 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) 持っている [!DNL New Relic Infrastructure] を有効にします。
+次の場合 **[!UICONTROL CPU Usage]** フレームが空白の場合、インフラストラクチャのアプリケーションが [!DNL New Relic] が有効になっていません。 サイトが Starter 上にある場合、この情報は表示されません。 サイトがプロ仕様の場合は、 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) 持つ [!DNL New Relic Infrastructure] サイトに対して有効にしました。
 
 ## [!UICONTROL Average Response Time]
 
 ![平均応答時間](../../assets/tools/average-response-time.jpg)
 
-The **[!UICONTROL Average Response Time]** グラフは、トランザクション（Web など）の平均応答時間を示します。
+この **[!UICONTROL Average Response Time]** グラフは、トランザクション（web など）の平均応答時間を示します。
 
 ## [!UICONTROL Long duration cron_schedule updates]
 
 ![長期間の cron_schedule の更新](../../assets/tools/long-duration-cron-schedule-updates.jpg)
 
-The **[!UICONTROL cron_schedule]** テーブルは cron ジョブの開始時と終了時に書き込まれます。 長時間の cron ジョブは、このテーブルの更新に待ち時間を示す場合があります。これは、cron スタックアップや、cron のスケジュール方法に関する問題を示す場合があります。
+この **[!UICONTROL cron_schedule]** cron ジョブの開始と終了の際にテーブルが書き込まれます。 所要時間が長い cron ジョブでは、このテーブルの更新に遅延が生じる可能性があります。これは、cron スタックアップまたは cron のスケジュール方法に関する問題を示す場合があります。
 
 ## [!UICONTROL Response Code]
 
 ![応答コード](../../assets/tools/response-code.jpg)
 
-The **[!UICONTROL Response Code]** frame は、web トラフィックとリクエストの応答コードを示す適切な指標です。 それは [!DNL New Relic's] 取引データを取り扱い、それは次のように切り取られます。 `httpResponseCode` と答えた。
+この **[!UICONTROL Response Code]** フレームは、web トラフィックとリクエストの応答コードを示す優れた指標です。 このプロパティは [!DNL New Relic's] トランザクションデータが含まれ、 `httpResponseCode` 返されます。
 
 ## [!UICONTROL Web Traffic volume compared with one week ago Magento Managed Alerts Information]
 
-![1 週間前と比較した web トラフィックの量](../../assets/tools/web-traffic-volume-compared.jpg)
+![1 週間前と比較した web トラフィック量](../../assets/tools/web-traffic-volume-compared.jpg)
 
-このフレームには、過去 1 週間と現在の週の比較対象のウェブトラフィック量が表示されます。
+このフレームには、過去 1 週間と現在 1 週間の web トラフィックの比較量が表示されます。
 
 ## [!UICONTROL Deployment Log Entries]
 
-![デプロイログエントリ](../../assets/tools/deployment-log-entries.jpg)
+![デプロイメントログエントリ](../../assets/tools/deployment-log-entries.jpg)
 
-The **[!UICONTROL Deployment Log Entries]** frame には、デプロイメントの数と、デプロイメントログ名によるカウントのファセットが表示されます。
+この **[!UICONTROL Deployment Log Entries]** フレームには、デプロイメントエントリとクラウドログエントリの数が表示され、デプロイメントログ名を基準にしてカウントがファセットされます。
 
 ## [!UICONTROL Deployment State]
 
-![デプロイメント状態](../../assets/tools/deployment-state.jpg)
+![デプロイメントの状態](../../assets/tools/deployment-state.jpg)
 
-The **[!UICONTROL Deployment State]** フレームファセット：デプロイログからの特定のデプロイメントフェーズ。 次に、ログおよびファセット名にカウントされるフェーズの例を示します。
+この **[!UICONTROL Deployment State]** デプロイメントログのフレームファセット特定のデプロイメントフェーズ 次に、ログにカウントされるフェーズとファセット名の例を示します。
 
-**デプロイメントログのフェーズ：**
+**デプロイメントログフェーズ：**
 
-* &#39;%generate command%&#39;を&#39;start_gen&#39;として開始中&#39;
-* &#39;%git apply /app/vendor/magento/ece-tools/patches%&#39;)&#39;apply_patches&#39;
-* &#39;%Set flag: .static_content_deploy%&#39;) を&#39;SCD&#39;として設定
-* &#39;%NOTICE：生成コマンドが完了しました%&#39;) （&#39;gen_compl&#39;として）
-* &#39;%NOTICE：配置完了%&#39;) （&#39;deploy_compl&#39;として）
-* &#39;%NOTICE：デプロイ後に開始しています。%) を&#39;start_pdeploy&#39;として
-* &#39;%NOTICE：デプロイ後の処理が完了しました%&#39;) （&#39;デプロイ&#39;として）
-* &#39;%deploy-complete%&#39;) を&#39;cl_deploy_compl&#39;として
+* &#39;%Starting generate command%&#39;） as &#39;start_gen&#39;
+* &#39;%git apply /app/vendor/magento/ece-tools/patches%&#39;） as &#39;apply_patches&#39;
+* &#39;%Set フラグ：.static_content_deploy%&#39;）を&#39;SCD&#39;として設定
+* &#39;% 注意：コマンド生成が完了しました %&#39;）を&#39;gen_compl&#39;として生成します
+* &#39;%NOTICE: Deployment completed%&#39;）を&#39;deploy_compl&#39;として設定します
+* &#39;%NOTICE: ポスト デプロイを開始しています。%&#39;） as &#39;start_pdeploy&#39;
+* &#39;%NOTICE: Post-deploy is complete%&#39;） as &#39;pdeploy&#39;
+* &#39;%deploy-complete%&#39;）を&#39;cl_deploy_compl&#39;として使用します。
 
 ## [!UICONTROL IP Frequency]
 
 ![IP 頻度](../../assets/tools/ip-frequency.jpg)
 
-The **[!UICONTROL IP Frequency]** フレームは、各 IP に対するステータス（「MISS」および「PASS」）を [!DNL Fastly] ログ。 これらのステータスの Web リクエストはオリジンサーバーに到達し、サーバーに読み込みが追加されます。 頻度の上位 20 件のアドレスが表示されます。 このフレームは、Web サイト上の IP 攻撃や大量の負荷の発生元を検出するために使用できます。
+この **[!UICONTROL IP Frequency]** フレームは、から各 IP の（「ミス」および「パス」）ステータスをカウントします。 [!DNL Fastly] ログ。 これらのステータスを持つ web リクエストは接触チャネルサーバーに到達し、サーバーに読み込みを追加します。 これは、頻度の上位 20 件のアドレスを表示します。 このフレームは、Web サイトに対する IP 攻撃や高負荷のソースを検出するために使用できます。
 
 ## [!UICONTROL IP Response – top 20 URLs in duration]
 
-![ip 応答 — 期間内の上位 20 個の URL](../../assets/tools/ip-response-top-20-urls.jpg)
+![ip 応答 – 期間の上位 20 個の url](../../assets/tools/ip-response-top-20-urls.jpg)
 
-The **[!UICONTROL IP Response – top 20 URLs in duration]** frame は、応答時間が最も長い URL を表示します。 応答時間が最も長い大きな画像ファイルやページ、API、またはページを示す場合があります。
+この **[!UICONTROL IP Response – top 20 URLs in duration]** フレームは、応答時間が最も長い URL を表示します。 サイズの大きい画像ファイルまたはページ、API または応答時間が最長のページを示す場合があります。
 
 ## [!UICONTROL API Calls by IP]
 
 ![ip による api 呼び出し](../../assets/tools/api-calls-by-ip.jpg)
 
-The **[!UICONTROL API Calls by IP]** フレームは、API と IP アドレスに対する大量のトラフィックを識別し、API URL からリクエストを送信するのに役立ちます。
+この **[!UICONTROL API Calls by IP]** フレームは、API に対する大量のトラフィックや、API の URL からリクエストを送信する IP アドレスを特定するのに役立ちます。
 
 ## [!UICONTROL API Calls by IP, details by URL]
 
-![url 別の ip 詳細による api 呼び出し](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
+![ip による api 呼び出しの url 別詳細](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
 
-The **[!UICONTROL API Calls by IP, details by URL]** フレームには、API に対する大量のトラフィックの詳細と、リクエストをおこなう URL の詳細が表示されます。
+この **[!UICONTROL API Calls by IP, details by URL]** フレームは、API に対する大量のトラフィックの詳細と、リクエストを送信する URL の詳細を提供します。
 
 ## [!UICONTROL IP Frequency Rate per minute]
 
-![1 分あたりの ip 頻度](../../assets/tools/ip-frequency-rate-per-minute.jpg)
+![1 分あたりの IP 頻度レート](../../assets/tools/ip-frequency-rate-per-minute.jpg)
 
-他のフレームでどの IP アドレスが最もリクエストを持っているかを判断するのが困難な場合があります。 The **[!UICONTROL IP Frequency Rate per minute]** frame は、IP アドレスあたりの 1 分あたりのレートを示します。
+他のフレームで最も多くのリクエストがどの IP アドレスに割り当てられているかを判断するのが難しい場合があります。 この **[!UICONTROL IP Frequency Rate per minute]** フレームは、IP アドレスごとの 1 分あたりのレートを示します。
 
 ## [!UICONTROL Potential Bots]
 
-![ボットの候補](../../assets/tools/potential-bots.jpg)
+![潜在的なボット](../../assets/tools/potential-bots.jpg)
 
-The **[!UICONTROL Potential Bots]** frame は、NULL または&#39;%bot%&#39;のような request_user_agent 名を持つリクエストを調べます。 通常、&#39;%bot%&#39; request_user_agent は、 `robots.txt` ファイル。
+この **[!UICONTROL Potential Bots]** frame は、NULL や&#39;%bot%&#39;などの request_user_agent 名を持つリクエストを調べます。 通常、「%bot%」 request_user_agent は、のポリシー設定に従います `robots.txt` ファイル。
 
 ## [!UICONTROL Transaction Errors]
 
 ![トランザクションエラー](../../assets/tools/transaction-errors.jpg)
 
-The **[!UICONTROL Transaction Errors]** frame は、次のトランザクションエラーの数を表示します： [!DNL New Relic].
+この **[!UICONTROL Transaction Errors]** フレームには、次のトランザクション エラー数が表示されます [!DNL New Relic].
 
 ## [!UICONTROL Nginx access by node]
 
 ![ノードによる nginx アクセス](../../assets/tools/nginx-access-by-node.jpg)
 
-The **[!UICONTROL Nginx access by node]** frame は、 `access.log` ノード別。 負荷が均等に分布しているかどうかを確認すると便利です。 多くの場合、ノードがドロップしたときに表示されます。 また、サイト全体の負荷も表示されます。
+この **[!UICONTROL Nginx access by node]** フレームは、からのカウントを調べます `access.log` ノード別 負荷が均等に分散されているかどうかを確認すると便利です。 多くの場合、ノードがドロップしたときに表示されます。 また、このフレームには、サイト全体の負荷も表示されます。
 
 ## [!UICONTROL Galera Log]
 
 ![galera ログ](../../assets/tools/galera-log.jpg)
 
-[[!DNL Galera]](https://galeracluster.com/library/galera-documentation.pdf) は、データベースクラスタに使用されます。 このフレームは、 [!UICONTROL Galera] クラスター。 このシグナルは、クラスターに入るノードとクラスターから出るノードに焦点を当てます。これは、データベースのデータの整合性を維持する通常の動作です。 ノードは、 [!UICONTROL Galera] クラスターの状態の変更。
+[[!DNL Galera]](https://galeracluster.com/library/galera-documentation.pdf) は、データベースクラスターに使用されます。 このフレームは、 [!UICONTROL Galera] クラスター。 シグナルは、クラスターに入るノードとクラスターから出るノードに焦点を当てます。これは、データベースのデータ整合性を維持する通常の動作です。 ノードは、として同期されます。 [!UICONTROL Galera] クラスターの状態が変更されました。
 
-**のリスト [!UICONTROL Galera] 状態の変更：**
+**リスト [!UICONTROL Galera] 状態の変更：**
 
-* &#39;%1047 WSREP は、&#39;node_not_prep_for_use&#39;として、アプリケーション使用用のノードをまだ準備していません%&#39;)
-* &#39;%\[ERROR\] WSREP: wsrep_sst_xtrabackup-v2%&#39;からの読み取りに失敗しました ) を&#39;xtrabackup_read_fail&#39;として読み取りました
-* &#39;%\[ERROR\] WSREP：プロセスが完了しました。エラー： wsrep_sst_xtrabackup-v2 %&#39;) を&#39;xtrabackup_compl_w_err&#39;として使用します。
-* &#39;%\[ERROR\] WSREP: rbr write fail%&#39;) を&#39;rbr_write_fail&#39;として
-* &#39;%self-leave%&#39;) を&#39;susp_node&#39;として
-* &#39;%members = 3/3 （結合/合計%&#39;） （&#39;3of3&#39;として）
-* &#39;%members = 2/3 （結合/合計%&#39;） (&#39;2of3&#39;)
-* &#39;%members = 2/2%&#39;) （&#39;2of2&#39;として） * &#39;%members = 1/2%&#39;) （&#39;1of2&#39;として） * &#39;%members = 1/3%&#39;) （&#39;1of3&#39;として）
-* &#39;%members = 1/1%&#39;) を&#39;1of1&#39;として&#39;
-* &#39;%\[ 注意\] /usr/sbin/mysqld (mysqld 10.%) を&#39;sql_restart&#39;として
-* &#39;%Quorum：完全な状態を持つノードがありません： %&#39;) (&#39;no_node_count&#39;)
-* &#39;%WSREP: Member 0%&#39;) （&#39;mem_0&#39;として）
-* &#39;%WSREP: Member 1.0%&#39;) （&#39;mem_1&#39;として）
-* &#39;%WSREP: Member 2%&#39;) （&#39;mem2&#39;として）
-* &#39;%WSREP：グループと同期し、接続の準備ができました%&#39;) を&#39;ready&#39;として
-* &#39;%/usr/sbin/mysqld, Version:%&#39;) を&#39;mysql_restart_mysql.slow&#39;として
-* &#39;%\[ 注意\] WSREP ：新しいクラスタビュー：グローバル状態：%&#39;) を&#39;galera_cluster_view_chng&#39;として
+* &#39;%1047 WSREP はまだアプリケーションの使用 %&#39;用のノードを準備していません）。&#39;node_not_prep_for_use&#39;
+* &#39;%\[ERROR\] WSREP: wsrep_sst_xtrabackup-v2%&#39;）から&#39;xtrabackup_read_fail&#39;として読み取れませんでした
+* &#39;%\[ERROR\] WSREP: プロセスが完了しましたが、エラーが発生しました：wsrep_sst_xtrabackup-v2 %&#39;） as &#39;xtrabackup_compl_w_err&#39;
+* &#39;%\[ERROR\] WSREP: rbr write fail%&#39;） as &#39;rbr_write_fail&#39;
+* &#39;%self-leave%&#39;）を&#39;susp_node&#39;
+* &#39;%members = 3/3 （結合/合計） %&#39;）を&#39;3of3&#39;として使用
+* &#39;%members = 2/3 （結合/合計） %&#39;）を&#39;2of3&#39;として使用
+* &#39;%members = 2/2%&#39;）を&#39;2of2&#39;として* &#39;%members = 1/2%&#39;）を&#39;1of2&#39;として* &#39;%members = 1/3%&#39;）を&#39;1of3&#39;として
+* &#39;%members = 1/1%&#39;）を&#39;1of1&#39;として使用します
+* &#39;%\[ 注意\] /usr/sbin/mysqld （mysqld 10.%&#39;） as &#39;sql_restart&#39;
+* &#39;%Quorum：完全な状態を持つノードがありません：%&#39;） （&#39;no_node_count&#39;として）
+* &#39;%WSREP: メンバー 0%&#39;）を&#39;mem_0&#39;として使用します
+* &#39;%WSREP: メンバ 1.0%&#39;）を&#39;mem_1&#39;として使用します
+* &#39;%WSREP: メンバ 2%&#39;）を&#39;mem2&#39;として使用します
+* &#39;%WSREP: グループと同期されました。接続の準備が完了しました %&#39;）。&#39;準備完了&#39;です。
+* &#39;%/usr/sbin/mysqld, Version:%&#39;）を&#39;mysql_restart_mysql.slow&#39;として使用します
+* &#39;%\[Note\] WSREP: New cluster view: global state:%&#39;）を&#39;galera_cluster_view_chng&#39;として使用
 
-状態が頻繁に変化する場合、これらのシグナルは、ストレージ、メモリ、またはクエリの問題を示す可能性があります。
+状態が頻繁に変更される場合、これらのシグナルは、ストレージ、メモリ、またはクエリの問題を示している可能性があります。
 
 ## [!UICONTROL Database errors]
 
 ![データベースエラー](../../assets/tools/database-errors.jpg)
 
-**検出されたデータベースエラーまたはメッセージのリスト：**
+**データベース エラーまたは検出されたメッセージの一覧：**
 
-* &#39;%一時テーブルに割り当てられたメモリサイズが innodb_buffer_pool_size%&#39;の 20%を超えています ) （&#39;temp_tbl_buff_pool&#39;として）
-* &#39;%\[ERROR\] WSREP: rbr write fail%&#39;) を&#39;rbr_write_fail&#39;として
-* &#39;%mysqld：ディスク容量超過%&#39;) （&#39;disk_full&#39;として）
-* &#39;%エラー番号 28%&#39;) (&#39;err_28&#39;)
-* &#39;%rollback%&#39;は&#39;rollback&#39;として&#39;
-* &#39;%外部キー制約がテーブル%&#39;に対して失敗しました ) (&#39;foreign_key_constraint&#39;)
-* &#39;%Error_code: 1114%&#39;) (&#39;sql_1114_full&#39;)
-* &#39;%CRITICAL: SQLSTATE\[HY000\] \[2006\] MySQL サーバーが&#39;sql_gone&#39;として使用されなくなりました%&#39;)
-* &#39;%SQLSTATE\[HY000\] \[1040\] 接続数が多すぎます%&#39;) (&#39;sql_1040&#39;)
-* &#39;%CRITICAL: SQLSTATE\[HY000\] \[2002\]%&#39;) (&#39;sql_2002&#39;)
-* &#39;%SQLSTATE\[08S01\]:%&#39;) (&#39;sql_1047&#39;)
-* &#39;%\[ 警告\] 接続%&#39;を中止しました ) （&#39;aborted_conn&#39;として）
-* &#39;%SQLSTATE\[23000\]：整合性制約違反： %&#39;) (&#39;sql_23000&#39;)
-* &#39;%1205 ロック待機タイムアウト%&#39;) (&#39;sql_1205&#39;)
-* &#39;%SQLSTATE\[HY000\] \[1049\] 不明なデータベース%&#39;) (&#39;sql_1049&#39;)
-* &#39;%SQLSTATE\[42S02\]：基本テーブルまたはビューが見つかりません： %&#39;) (&#39;sql_42S02&#39;)
-* &#39;%一般エラー： 1114%&#39;) (&#39;sql_1114&#39;)
-* &#39;%SQLSTATE\[40001\]%&#39;) （&#39;sql_1213&#39;として）
-* &#39;%SQLSTATE\[42S22\]：列が見つかりません： 1054 不明な列%&#39;) (&#39;sq1_1054&#39;)
-* &#39;%SQLSTATE\[42000\]：構文エラーまたはアクセス違反： %&#39;) を&#39;sql_42000&#39;として指定しました
-* &#39;%SQLSTATE\[21000\]：基数の違反： %&#39;) (&#39;sql_1241&#39;)
-* &#39;%SQLSTATE\[22003\]:%&#39;) を&#39;sql_22003&#39;として
-* &#39;%SQLSTATE\[HY000\] \[9000\] IP アドレス%のクライアント ) を&#39;sql_9000&#39;として
-* &#39;%SQLSTATE\[HY000\]: &#39;sql_2014&#39;としての一般エラー： 2014%&#39;)
-* &#39;%1927 接続が強制終了されました%&#39;) （&#39;sql_1927&#39;として）
-* &#39;%1062 \[\ERROR\] InnoDB:%&#39;) (&#39;sql_1062_e&#39;)
-* &#39;%\[ 注意\] WSREP ：ディスクにメモリマップをフラッシュしています…%&#39;) （&#39;mem_map_flush&#39;として）
-* &#39;%Internal MariaDB エラーコード： 1146%&#39;) (&#39;sql_1146&#39;)
-* &#39;%Internal MariaDB エラーコード： 1062%&#39;) （&#39;sql_1062&#39;として） * &#39;%1062 \[ 警告\] InnoDB: %&#39;) （&#39;sql_1062_w&#39;として）
-* &#39;%Internal MariaDB エラーコード： 1064%&#39;) (&#39;sql_1064&#39;)
-* &#39;%InnoDB：ファイル%&#39;でアサーションエラーが発生しました ) （&#39;assertion_err&#39;として）
-* &#39;%mysqld_safe 現在実行中のプロセスの数： 0%&#39;) を&#39;mysql_oom&#39;として
-* &#39;%\[ERROR\] mysqld は&#39;mysql_sigterm&#39;としてシグナル%&#39;を取得しました
-* &#39;%1452%&#39;を&#39;sql_1452&#39;として追加できません
-* &#39;%ERROR 1698%&#39;) （&#39;sql_1698&#39;として）
-* &#39;%SQLSTATE\[HY000\]: &#39;cnt_wrt_tmp&#39;としての一般エラー： 3%&#39;)
-* &#39;%一般的なエラー： 1 %&#39;) (&#39;sql_syntax&#39;)
-* &#39;%42S22%&#39;) （&#39;sql_42S22&#39;として）
-* &#39;%InnoDB：エラー（重複キー）%&#39;) (&#39;innodb_dup_key&#39;)
+* &#39;% 一時テーブルに割り当てられたメモリサイズが innodb_buffer_pool_size%&#39;）の 20% を超えています（「temp_tbl_buff_pool」として）
+* &#39;%\[ERROR\] WSREP: rbr write fail%&#39;） as &#39;rbr_write_fail&#39;
+* &#39;%mysqld: Disk full%&#39;）を&#39;disk_full&#39;として使用します
+* &#39;% エラー番号 28%&#39;）は&#39;err_28&#39;です。
+* &#39;%rollback%&#39;）を&#39;rollback&#39;として使用します
+* &#39;%Foreign key constraint failes for table%&#39;） as &#39;foreign_key_constraint&#39;
+* &#39;%Error_code: 1114%&#39;） as &#39;sql_1114_full&#39;
+* &#39;%CRITICAL: SQLSTATE\[HY000\] \[2006\] MySQL server has gone away%&#39;）を&#39;sql_gone&#39;として使用します
+* &#39;%SQLSTATE\[HY000\] \[1040\] Too many connections%&#39;）を&#39;sql_1040&#39;として指定します
+* &#39;%CRITICAL: SQLSTATE\[HY000\] \[2002\]%&#39;）を&#39;sql_2002&#39;として使用します
+* &#39;%SQLSTATE\[08S01\]:%&#39;）を&#39;sql_1047&#39;として使用します
+* &#39;%\[ 警告\] は&#39;aborted_conn&#39;として接続を中止しました %&#39;）
+* &#39;%SQLSTATE\[23000\]：整合性制約違反：%&#39;）を&#39;sql_23000&#39;として使用します
+* &#39;%1205 ロック待機タイムアウト %&#39;）を&#39;sql_1205&#39;として使用します
+* &#39;%SQLSTATE\[HY000\] \[1049\] 不明なデータベース %&#39;）を&#39;sql_1049&#39;として使用します
+* &#39;%SQLSTATE\[42S02\]: ベース テーブルまたはビューが見つかりません：%&#39;）を&#39;sql_42S02&#39;として使用します
+* &#39;% 一般エラー：1114%&#39;）を&#39;sql_1114&#39;として返します
+* &#39;%SQLSTATE\[40001\]%&#39;）を&#39;sql_1213&#39;として使用します
+* &#39;%SQLSTATE\[42S22\]：列が見つかりません：1054 不明な列 %&#39;）を&#39;sq1_1054&#39;として
+* &#39;%SQLSTATE\[42000\]：構文エラーまたはアクセス違反：%&#39;）を&#39;sql_42000&#39;として返します
+* &#39;%SQLSTATE\[21000\]: カーディナリティ違反：%&#39;）を&#39;sql_1241&#39;として返します
+* &#39;%SQLSTATE\[22003\]:%&#39;）を&#39;sql_22003&#39;として使用します
+* &#39;%SQLSTATE\[HY000\] \[9000\] クライアント （IP アドレスが %&#39;）を&#39;sql_9000&#39;として使用
+* &#39;%SQLSTATE\[HY000\]：一般エラー：2014%&#39;）を&#39;sql_2014&#39;として返します
+* &#39;%1927 接続が切断されました %&#39;）を&#39;sql_1927&#39;として使用しました
+* &#39;%1062 \[\ERROR\] InnoDB:%&#39;）を&#39;sql_1062_e&#39;として使用します
+* &#39;%\[Note\] WSREP: メモリ マップをディスクにフラッシュしています…%&#39;） （&#39;mem_map_flush&#39;として）
+* &#39;% 内部 MariaDB エラーコード：1146%&#39;）を&#39;sql_1146&#39;として返します
+* &#39;%Internal MariaDB エラーコード：1062%&#39;）を&#39;sql_1062&#39; * &#39;%1062 \[ 警告\] InnoDB:%&#39;）を&#39;sql_1062_w&#39;として設定します
+* &#39;% 内部 MariaDB エラーコード：1064%&#39;）を&#39;sql_1064&#39;として返します
+* &#39;%InnoDB: ファイル %&#39;）で&#39;assertion_err&#39;としてアサーションに失敗しました
+* &#39;%mysqld_safe 現在実行中のプロセスの数：0%&#39;）を&#39;mysql_oom&#39;として返します。
+* &#39;%\[ERROR\] mysqld は&#39;mysql_sigterm&#39;として signal%&#39;）を取得しました
+* &#39;%1452%&#39;）を&#39;sql_1452&#39;として追加できません
+* &#39;%ERROR 1698%&#39;）を&#39;sql_1698&#39;として返します
+* &#39;%SQLSTATE\[HY000\]：一般エラー：3%&#39;）を&#39;cnt_wrt_tmp&#39;として使用します
+* &#39;% 一般エラー：1 %&#39;）を&#39;sql_syntax&#39;として使用します
+* &#39;%42S22%&#39;）を&#39;sql_42S22&#39;として使用します
+* &#39;%InnoDB: エラー（キーの重複） %&#39;）を&#39;innodb_dup_key&#39;として返します
 
 ## [!UICONTROL Database traces]
 
-![データベーストレース](../../assets/tools/database-traces.jpg)
+![データベース トレース](../../assets/tools/database-traces.jpg)
 
-The **[!UICONTROL Database traces]** フレームは、 [sql trace](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/) のエンティティ [!DNL New Relic] トレースのパスを返します。
+この **[!UICONTROL Database traces]** フレームは、からのデータを調べます [sql トレース](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/) エンティティ [!DNL New Relic] トレースのパスを返します。
 
 ## [!UICONTROL Database mysql-slow.log]
 
-![database mysql-slow.log](../../assets/tools/database-mysql-slow-log.jpg)
+![データベース mysql-slow.log](../../assets/tools/database-mysql-slow-log.jpg)
 
-The **[!UICONTROL Database mysql-slow.log]** frame は、 [mysql-slow.log](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html) クエリリクエストタイプ別。 mysql-slow.log（遅いクエリログ）に関心のある可能性のあるタイムフレームを視覚的に分離します。 大きなテーブルを更新するインデックスやクエリを持たないテーブルのクエリは、他のクエリをブロックする可能性があります。
+この **[!UICONTROL Database mysql-slow.log]** フレームは、 [mysql-slow.log](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html) クエリリリクエストタイプ別。 mysql-slow.log （低速クエリログ）に記録される可能性のある期間が視覚的に分離されます。 インデックスのないテーブルのクエリや、大きなテーブルを更新するクエリは、他のクエリをブロックする場合があります。
 
 ## [!UICONTROL Redis synchronization from Log]
 
 ![ログからの redis 同期](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[[!DNL Redis]](https://redis.io/docs/about/) は、データベース、キャッシュ、およびメッセージブローカとして使用されるオープンソース（BSD ライセンス）のメモリ内データ構造ストアです。 設定に応じて、データベースおよびセッションのキャッシュを実行できます。 The **[!UICONTROL Redis synchronization from Log]** 枠が～に焦点を合わせる [[!DNL Redis] 同期](https://redis.io/docs/manual/replication/). 大きい [!DNL Redis] データセットに含まれる場合は、同期に問題が発生する可能性が高くなります（同期を維持するデータが多くなります）。
+[[!DNL Redis]](https://redis.io/docs/about/) は、データベース、キャッシュ、およびメッセージブローカとして使用されるオープンソース（BSD ライセンス）のメモリ内データ構造ストアです。 データベースおよびセッションのキャッシュが可能です（設定されている場合）。 この **[!UICONTROL Redis synchronization from Log]** フレームが焦点を合わせる [[!DNL Redis] 同期](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/). 大きい [!DNL Redis] データセットがある場合、同期で問題が発生する可能性が高くなります（同期を維持するデータが増えます）。
 
 **[!DNL Redis]エラーとメッセージ：**
 
-* &#39;%SLAVE 同期：デバイス%&#39;に空き領域がありません ) (&#39;スペース&#39;
-* &#39;%Server started, Redis version%&#39;) as &#39;serv_start&#39;
-* &#39;%サーバーは接続を受け入れる準備ができました%&#39;) (&#39;準備完了&#39;
-* &#39;%マスターとの接続が失われました。%) を&#39;mstr_lost&#39;として
-* &#39;%+sdown sentinel%&#39;)&#39;+sentinal&#39;
-* &#39;%-sdown sentinel%&#39;) を&#39;-sentinal&#39;として
-* &#39;%sdown slave%&#39;) (&#39;-slave&#39;、&#39;%+sdown slave%&#39;) (&#39;+slave&#39;)
-* &#39;%-failover-abort-not-selected master mymaster%&#39;) を&#39;-failover&#39;として
-* &#39;%+failover-abort-not-selected master mymaster%&#39;) を&#39;+failover&#39;として
-* &#39;%部分的な再同期はできません（キャッシュされたマスターなし）%&#39;) (part_sync_err&#39;)
-* &#39;%マスターは、次のエラーによりレプリケーションを中止しました： ERR Can%&#39;) (&#39;mstr_sync_err&#39;)
-* &#39;%マスターは PSYNC をサポートしていないか、エラー状態%&#39;) （&#39;mstr_psync_err&#39;として）
-* &#39;%SLAVE 同期：成功%&#39;で終了 ) （&#39; slv_sync_suc&#39;として）
-* &#39;%マスターは次のエラーによりレプリケーションを中止しました： ERR Can%&#39;) (&#39;mstr_sync_err,coun&#39;)
-* &#39;%OOM コマンドは、メモリ%&#39;を&#39; max_mem_err&#39;として使用する場合は許可されません。
-* &#39;%CredisException（コード： 0）：接続%&#39;の読み取りエラー ) (&#39;credis_read_error&#39;)
-* &#39;%Uncaught RedisException:%&#39;) を&#39;redis_excp_err&#39;として
-* &#39;%psync は出力バッファの克服のために ASAP を閉じるようにスケジュールされました%&#39;) を&#39;output_buf_err&#39;として
+* &#39;%SLAVE 同期：デバイス %&#39;）に&#39;スペース&#39;として残っているスペースがありません
+* &#39;%Server started, Redis version%&#39;）を&#39;serv_start&#39;として設定します。
+* &#39;% サーバーは接続を受け付ける準備ができました。%&#39;） &#39;準備完了&#39;
+* &#39;% マスターとの接続が失われました。%&#39;） as &#39;mstr_lost&#39;
+* &#39;%+sentinel%&#39;）を&#39;+sentinal&#39;として保存します
+* &#39;%-sdown sentinel%&#39;）を&#39;-sentinal&#39;として使用します
+* &#39;%-sdown slave%&#39;）は&#39;-slave&#39;、&#39;%+sdown slave%&#39;）は&#39;+slave&#39;
+* &#39;%-failover-abort-not-elected master mymaster%&#39;） as &#39;-failover&#39;
+* &#39;%+failover-abort-not-elected master mymaster%&#39;） as &#39;+failover&#39;
+* &#39;part_sync_err&#39;として&#39;% 部分的な再同期はできません（キャッシュされたマスタがありません） %&#39;）
+* &#39;%マスターはレプリケーションを中止しました。エラー：ERR Can%&#39;）は&#39;mstr_sync_err&#39;です
+* &#39;%マスターは PSYNC をサポートしないか、エラー状態 %&#39;）が&#39;mstr_psync_err&#39;です。
+* &#39;%SLAVE 同期：成功 %&#39;で終了しました） &#39; slv_sync_suc&#39;
+* &#39;%マスターはレプリケーションを中止しました。エラー：ERR Can%&#39;）は&#39;mstr_sync_err,coun&#39;です
+* &#39;%OOM コマンドは、使用されたメモリ %&#39;）が&#39; max_mem_err&#39;の場合は使用できません。
+* &#39;%CredisException （コード：0）：接続 %&#39;の読み取りエラーは&#39;credis_read_error&#39;です。
+* &#39;%Uncaught RedisException:%&#39;）を&#39;redis_excp_err&#39;として検出しました
+* &#39;%psync は、出力バッファを克服するために可能な限り早く閉じるようにスケジュールされました。&#39;%&#39;） as &#39;output_buf_err&#39;
 
 ## [!UICONTROL PHP process states]
 
 ![PHP プロセスの状態](../../assets/tools/php-process-states.jpg)
 
-PHP プロセスの動作は、 [設定](https://www.php.net/manual/en/install.fpm.configuration.php). 設定は複雑で、多くの変数とオプションがあります。 The **[!UICONTROL PHP process states]** frame を使用すると、PHP プロセスが終了して再起動されるタイミングを把握できます。
+PHP のプロセスの動作は、 [設定](https://www.php.net/manual/en/install.fpm.configuration.php). 設定は複雑で、多くの変数とオプションがあります。 この **[!UICONTROL PHP process states]** frame は、PHP のプロセスがいつ終了し、再起動するかを理解するのに役立ちます。
 
 ### [!UICONTROL PHP errors]
 
 ![php エラー](../../assets/tools/php-errors.jpg)
 
-The **[!UICONTROL PHP errors]** frame は、選択した期間内のワーカーに対する PHP エラーの数を示します。 詳しくは、 [Adobe Commerce PHP 設定](../../installation/prerequisites/php-settings.md).
+この **[!UICONTROL PHP errors]** フレームは、選択した期間におけるワーカーの PHP エラー数を表示します。 詳しくは、次を参照してください。 [Adobe Commerce PHP の設定](../../installation/prerequisites/php-settings.md).
 
 **PHP のエラーとメッセージ：**
 
-* &#39;%worker_connections not not sourt %&#39;) as &#39;worker&#39;
-* &#39;%PHP 致命的なエラー：許可されたメモリサイズです。%&#39;) を&#39;mem_size&#39;として
-* &#39;%exit on signal 11 (SIGSEGV)%&#39;) as &#39;sig_11&#39;
-* &#39;%exit on signal 7 (SIGBUS)%&#39;) as &#39;sig_7&#39;
-* &#39;%increase pm.start_servers%&#39;) を&#39;pmstart_serv&#39;として
-* &#39;%max_children%&#39;) を&#39;max_children_cnt&#39;として
-* &#39;%PHP 致命的なエラー：許可されるメモリサイズ%&#39;) を&#39;mem_exhst_coun&#39;として
-* &#39;%pool%&#39;のメモリを割り当てられません ) (opc_mem_count&#39;)
-* &#39;%Warning Interned String buffer overflow%&#39;) を&#39;opc_str_buf&#39;として
-* &#39;%不正な文字列オフセット%&#39;) （&#39;opc_sv_comments&#39;として）
-* &#39;%PHP 致命的なエラー： RedisException がキャッチされていません： connection%の読み取りエラー )&#39;php_exc&#39;
+* &#39;%worker_connections は十分ではありません %&#39;） （&#39;worker&#39;として）
+* &#39;%PHP 致命的なエラー：許可されたメモリ サイズ！%&#39;） as &#39;mem_size&#39;
+* &#39;%exited on signal 11 （SIGSEGV） %&#39;） as &#39;sig_11&#39;
+* &#39;% はシグナル 7 （SIGBUS） %&#39;）で&#39;sig_7&#39;として終了しました
+* &#39;%increase pm.start_servers%&#39;）を&#39;pmstart_serv&#39;として使用します
+* &#39;%max_children%&#39;）を&#39;max_children_cnt&#39;として使用
+* &#39;%PHP 致命的なエラー：メモリ サイズが %&#39;）を&#39;mem_exhst_count&#39;として許可しました
+* &#39;%pool%&#39;のメモリを割り当てることができません）。&#39;opc_mem_count&#39;
+* &#39;%Warning Interned string buffer overflow%&#39;）を&#39;opc_str_buf&#39;として設定します
+* &#39;% 無効な文字列 offsetl%&#39;）を&#39;opc_sv_comments&#39;として使用します
+* &#39;%PHP Fatal error: Uncaught RedisException: read error on connection%&#39;） as &#39;php_exc&#39;
 
 ## [!UICONTROL PHP processes]
 
 ![php プロセス](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/) は [!UICONTROL FastCGI Process Manager] 使用者 [!DNL Nginx]. 必要システム構成については、 [Adobe Commerceバージョンにマッピングされた PHP バージョンの要件](../../installation/system-requirements.md). The **[!UICONTROL PHP processes]** frame は、選択したタイムラインの特定の時点で実行されている PHP プロセスの数を示します。
+[PHP-FPM](https://php-fpm.org/) が [!UICONTROL FastCGI Process Manager] 使用者 [!DNL Nginx]. システム要件については、を参照してください。 [Adobe Commerce バージョンにマッピングされる PHP バージョン要件](../../installation/system-requirements.md). この **[!UICONTROL PHP processes]** フレームは、選択したタイムラインの特定の時点で実行されている PHP プロセスの数を示します。
 
 ## [!UICONTROL Secondary processes]
 
-![セカンダリプロセス](../../assets/tools/secondary-processes.jpg)
+![二次的プロセス](../../assets/tools/secondary-processes.jpg)
 
-セカンダリのプロセスは、サイトの応答に影響を与える可能性があります。 The **[!UICONTROL Secondary processes]** frame は、サイトに負荷を追加する可能性のあるプロセスを示します。 データベースは主に、最も多くのセカンダリ・プロセスを実行しています。
+セカンダリプロセスは、サイトの反応に影響を与える可能性があります。 この **[!UICONTROL Secondary processes]** フレームは、サイトに負荷を追加している可能性のある 1 つまたは複数のプロセスを示します。 データベースには、主に実行されているセカンダリ・プロセスが多く含まれています。
 
 ## [!UICONTROL Traffic vs Week Ago]
 
-![トラフィック vs 週間前](../../assets/tools/traffic-vs-week-ago.jpg)
+![トラフィックと週間前](../../assets/tools/traffic-vs-week-ago.jpg)
 
-The **[!UICONTROL Traffic vs Week Ago]** frame は、 [!DNL Fastly] (「MISS」、「PASS」) キャッシュステータスのログ。 これらのリクエストは、接触チャネルサーバーに読み込みを追加します。 このフレームは、現在の週と過去 1 週間の同じ期間の比較 Web リクエスト量を表示します。
+この **[!UICONTROL Traffic vs Week Ago]** フレームは、からの web サイトトラフィック（リクエスト）を調べます。 [!DNL Fastly] （「MISS」、「PASS」）キャッシュステータスを含んだログ。 これらのリクエストにより、接触チャネルサーバーに負荷が追加されます。 このフレームには、同じ期間内の現在の週と過去 1 週間前の web リクエストの量の比較が表示されます。
 
 ## [!UICONTROL Fastly Cache]
 
-![Fastly キャッシュ](../../assets/tools/fastly-cache.jpg)
+![fastly キャッシュ](../../assets/tools/fastly-cache.jpg)
 
-The **[!UICONTROL Fastly Cache]** frame は、 [!DNL Fastly] ログ。 「エラー」を選択した場合は、リクエスト内のエラーの割合が表示されます。 これは、通常、オリジンサーバーがページリクエストに対して十分な速さで応答しない場合に増加します。
+この **[!UICONTROL Fastly Cache]** フレームは、からのリクエストのキャッシュステータスの集計ビューを表示します。 [!DNL Fastly] ログ。 「エラー」を選択すると、リクエストのエラーの割合が表示されます。 これは通常、接触チャネルサーバーがページリクエストに十分な速さで応答しない場合に増加します。
 
 ## [!UICONTROL Page Rendering]
 
 ![ページレンダリング](../../assets/tools/page-rendering.jpg)
 
-The **[!UICONTROL Page Rendering]** frame は、ページビューソース ( [!DNL New Relic] を同じ期間の前の週と比較します。
+この **[!UICONTROL Page Rendering]** フレームには、次のページビューソースからの今週の平均ページレンダリング時間が表示されます [!DNL New Relic] 同じ期間の前の週と比較。
 
 ## [!UICONTROL Page loading detail]
 
 ![ページ読み込みの詳細](../../assets/tools/page-loading-detail.png)
 
-The **[!UICONTROL Page loading detail]** frame は、ページの読み込みイベントを示します。 これらのファセットの意味を詳しく述べた。 次に、このフレームに対して実行されるクエリを示します。
+この **[!UICONTROL Page loading detail]** フレームは、ページ読み込みイベントを表します。 これらの側面の意味を詳しく述べている。 このフレームに対して実行されるクエリは次のとおりです。
 
 `SELECT percentile(timeToResponseStart, 50) AS 'first byte', percentile(firstPaint, 50) as 'First paint', percentile(firstContentfulPaint, 50) as 'First contentful paint', percentile(timeToDomContentLoadedEventEnd, 50) AS 'DOM content loaded', percentile(duration, 50) AS 'Window load + AJAX' FROM BrowserInteraction TIMESERIES`
 
 ## [!UICONTROL Transactions – Avg, Max, Min]
 
-![トランザクション — 平均、最大、最小](../../assets/tools/transactions-avg-max-min.jpg)
+![トランザクション – 平均、最大、最小](../../assets/tools/transactions-avg-max-min.jpg)
 
-トランザクションの期間は秒単位です。 トランザクションが長時間実行されている場合、トランザクションによっては他のトランザクションに影響を与える可能性があります。 名前と期間の下に一覧表示されるトランザクションは、特定の期間のものです。 簡潔な問題の期間がある場合は、 [!DNL Observation for Adobe Commerce] その狭い期間に対する日付/時間セレクター。
+トランザクション期間は秒単位です。 トランザクションによっては、長時間実行されると他のトランザクションに影響を与える可能性があります。 「名前」と「期間」の下にリストされるトランザクションは、特定の期間のものです。 簡潔な問題の期間がある場合は、のサイズを変更します [!DNL Observation for Adobe Commerce] 期間を絞り込むための日付/時間のセレクター。
 
 ## [!UICONTROL Admin Activities]
 
-![管理アクティビティ](../../assets/tools/admin-activities.jpg)
+![管理者アクティビティ](../../assets/tools/admin-activities.jpg)
 
-The **[!UICONTROL Admin Activities]** frame は、管理者ユーザーとのトランザクションを識別します。
+この **[!UICONTROL Admin Activities]** フレームは、管理者ユーザーとのトランザクションを識別します。
 
 ## [!UICONTROL Order transactions (default?)]
 
 ![注文トランザクションのデフォルト](../../assets/tools/order-transactions-default.jpg)
 
-The **[!UICONTROL Order transactions (default?)]** フレームがトランザクションを検索 `request.headers.host` 取引から。name = `WebTransaction/Action/checkout/onepage/success`. 注文の成功 URL が異なる場合、このフレームにはデータが含まれません。
+この **[!UICONTROL Order transactions (default?)]** フレームはトランザクションを検索します `request.headers.host` トランザクションから。ここで、名前= `WebTransaction/Action/checkout/onepage/success`. 注文成功 URL が異なる場合、このフレームにはデータがありません。
 
 ## [!UICONTROL Elasticsearch Index information]
 
 ![elasticsearch インデックス情報](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
-**[Elasticsearchステータス：](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
+**[Elasticsearchの状態：](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
 
 * 緑：すべてのシャードが割り当てられます。
-* 黄：すべてのプライマリシャードが割り当てられていますが、1 つ以上のレプリカシャードが割り当てられていません。 クラスタ内のノードに障害が発生した場合、そのノードが修復されるまで、一部のデータが使用できない可能性があります。
-* 赤： 1 つ以上のプライマリシャードが割り当てられていないので、一部のデータは使用できません。 これは、主シャードが割り当てられるので、クラスターの起動中に短時間発生する可能性があります。
+* 黄：すべてのプライマリ・シャードが割り当てられているが、1 つ以上のレプリカ・シャードが未割り当てである。 クラスター内のノードに障害が発生した場合、そのノードが修復されるまで、一部のデータが使用できなくなる可能性があります。
+* 赤：1 つ以上のプライマリシャードの割り当てが解除されており、一部のデータが使用できない。 これは、主シャードが割り当てられているときに、クラスタの起動時に短時間だけ発生する場合があります。
 
 ## [!UICONTROL Elasticsearch Errors]
 
@@ -378,19 +378,19 @@ The **[!UICONTROL Order transactions (default?)]** フレームがトランザ�
 
 **[!DNL Elasticsearch]エラー：**
 
-* &#39;%all shards_failed&#39;は&#39;all_shards_failed&#39;です
+* 「all_shards_failed」として「%all shards failed%」
 * &#39;%NoNodesAvailableException%&#39;を&#39;no_alive_nodes&#39;として
-* &#39;%PHP 致命的なエラー：キャッチできないエラー：Elasticsearch%&#39;のパラメータが&#39;wrong_param&#39;として間違っています
-* &#39;%この問題は、MagentoクラウドインフラストラクチャのElasticsearchサービスを version%&#39;にアップグレードして、&#39;ver_err&#39;として修正できます。
-* &#39;%cluster ヘルスステータスが\[YELLOW\] から\[RED\] に変更されました ( 理由： %&#39;が&#39;yel_red&#39;として&#39;
-* &#39;%デバイス%&#39;に空き領域が残っていません。&#39;no_space&#39;
-* &#39;% [SearchRequest{searchType=%&#39;を&#39;failed_query&#39;として実行できませんでした
+* &#39;%PHP Fatal error: Uncaught Error: Elasticsearch%&#39;のパラメータが間違っています
+* &#39;% この問題を解決するには、Magento クラウド インフラストラクチャのElasticsearch サービスを&#39;ver_err&#39;として version%&#39;にアップグレードします
+* &#39;%cluster の正常性状態が\[YELLOW\] から\[RED\] に変更されました（理由：%&#39;が&#39;yel_red&#39;です）
+* &#39;%No space on device%&#39; as &#39;no_space&#39;
+* &#39;% は、&#39;failed_query&#39;として [SearchRequest{searchType=%&#39;を実行できませんでした
 
 ## [!UICONTROL Cron view]
 
-![cron 表示](../../assets/tools/cron-view.jpg)
+![cron ビュー](../../assets/tools/cron-view.jpg)
 
-The **[!UICONTROL Cron view]** frame は cron ログを調べ、開始した cron の数と終了した cron の数のバランスを調べます。
+この **[!UICONTROL Cron view]** frame は cron ログを参照して、開始した cron 数と終了した cron 数のバランスを確認します。
 
 
 ## [!UICONTROL Cron error]
@@ -399,41 +399,41 @@ The **[!UICONTROL Cron view]** frame は cron ログを調べ、開始した cro
 
 **cron.log からの Cron エラー：**
 
-* &#39;%_stg%&#39;を&#39;stg_crons&#39;として&#39;%_stg%&#39;
-* &#39;%cron ジョブ%&#39;のロックを&#39;cron_lock&#39;として取得できませんでした
-* &#39;%一般エラー： 2006 MySQL サーバは&#39;mysql_has_gone_away&#39;として使用されなくなりました%&#39;
-* &#39;%error%&#39;は&#39;error&#39;です
-* &#39;%一般エラー： 1205 ロック待機タイムアウトが超過しました%&#39; (sql_1205_cron)
+* &#39;%_stg%&#39; as &#39;stg_cron&#39;
+* &#39;%cron job%&#39;のロックを&#39;cron_lock&#39;として取得できませんでした
+* &#39;% 一般エラー：2006 MySQL server has gone away%&#39; as &#39;mysql_has_gone_away&#39;
+* 「%error%」が「エラー」として表示される
+* &#39;% 一般エラー：sql_1205_cron として 1205 ロック待機タイムアウト超過 %&#39;
 
 ## [!UICONTROL cron_schedule table updates]
 
 ![cron_schedule テーブルの更新](../../assets/tools/cron-schedule-table-updates.jpg)
 
-The **[!UICONTROL cron_schedule table updates]** frame は、データストア操作の更新に cron_schedule テーブルが含まれる最大期間を秒単位で調べます。 SQL リクエストタイプではファセット化されています。
+この **[!UICONTROL cron_schedule table updates]** フレームは、データストア操作の更新に cron_schedule テーブルが関与する最大期間（秒単位）を調べます。 これは、SQL リクエストタイプでファセットされます。
 
 ## [!UICONTROL Datastore Operations Tables]
 
 ![データストア操作テーブル](../../assets/tools/datastore-operations-tables.jpg)
 
-この **[!UICONTROL Datastore Operations Tables]** frame は、期間、テーブル名および SQL リクエストタイプ別の上位 25 件の操作を表示します。 スパイクの上にマウスポインターを置くと、アクセスされたテーブルとリクエストのタイプの詳細が表示されます。
+この **[!UICONTROL Datastore Operations Tables]** フレームには、期間、テーブル名、および SQL 要求タイプ別の上位 25 の操作が表示されます。 スパイクにカーソルを合わせると、アクセスされているテーブルとリクエストタイプの詳細が表示されます。
 
 ## [!UICONTROL Cache Flush]
 
 ![キャッシュフラッシュ](../../assets/tools/cache-flush.jpg)
 
-**キャッシュフラッシュが検出されました：**
+**キャッシュのフラッシュが検出されました：**
 
-* &#39;%config%&#39;は&#39;config_cache_flushed&#39;として&#39;%config%&#39;
-* &#39;%layout%&#39; (&#39;layout_cache_flush&#39;)
-* &#39;%block_html_cache_flush&#39;として&#39;%block_html%&#39;
-* &#39;%collections%&#39;を&#39;collections_cache_flush&#39;として&#39;%collections%&#39;
-* &#39;%reflection%&#39;は&#39;reflection_cache_flush&#39;として&#39;%reflection%&#39;
-* &#39;%db_ddl_cache_flush&#39;として&#39;%db_ddl%&#39;を設定
-* &#39;%compiled_config%&#39; (&#39;compiled_config_cache_flush&#39;)
-* &#39;%eav%&#39;を&#39;eav_cache_flush&#39;として
-* &#39;%customer_notification%&#39; （&#39;cust_notif_cache_flush&#39;として）
-* &#39;%config_integration%&#39;を&#39;config_integ_cache_flush&#39;として&#39;%config_integration%&#39;
-* &#39;%config_integration_api%&#39;を&#39;config_integ_api_cache_flush&#39;として&#39;%config_integration_api%&#39;
-* &#39;%full_page%&#39;を&#39;full_page_cache_flush&#39;として
-* &#39;%config_webserv_cache_flush&#39;として&#39;%config_webservice%&#39;
-* &#39;%translate%&#39;は&#39;translate_cache_flush&#39;として&#39;%translate%&#39;&#39;
+* &#39;%config%&#39;を&#39;config_cache_flushed&#39;として設定
+* &#39;layout_cache_flush&#39;としての&#39;%layout%&#39;
+* &#39;%block_html%&#39; as &#39;block_html_cache_flush&#39;
+* &#39;%collections%&#39;が&#39;collections_cache_flush&#39;として設定されました
+* &#39;%reflection%&#39; as &#39;reflection_cache_flush&#39;
+* &#39;%db_ddl%&#39; as &#39;db_ddl_cache_flush&#39;
+* &#39;%compiled_config%&#39; as &#39;compiled_config_cache_flush&#39;
+* &#39;%eav%&#39; as &#39;eav_cache_flush&#39;
+* &#39;cust_notif_cache_flush&#39;としての&#39;%customer_notification%&#39;
+* &#39;%config_integration%&#39; as &#39;config_integ_cache_flush&#39;
+* &#39;%config_integration_api%&#39; as &#39;config_integ_api_cache_flush&#39;
+* &#39;%full_page%&#39; as &#39;full_page_cache_flush&#39;
+* &#39;%config_webservice%&#39; as &#39;config_webserv_cache_flush&#39;
+* &#39;%translate%&#39; as &#39;translate_cache_flush&#39;
