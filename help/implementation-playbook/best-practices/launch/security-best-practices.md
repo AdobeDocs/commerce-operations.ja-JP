@@ -3,9 +3,9 @@ title: Commerceのサイトとインフラストラクチャを保護
 description: Adobe Commerce インストールを設定、設定、更新する際に、セキュリティのベストプラクティスを導入して、セキュリティを維持します。
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: a00b7b66beb6499f7fb19fda2dfd450799f73728
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '2006'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->クラウドインフラストラクチャー上のAdobe Commerce プロジェクトを保護および維持管理するための役割と責務について詳しくは、を参照してください。 [Shared Responsibility ガイド](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) Adobeトラストセンターで。
+>クラウドインフラストラクチャー上のAdobe Commerce プロジェクトを保護および保守するための役割と責務について詳しくは、を参照してください。 [共有責任モデル](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)） _Adobe Commerce セキュリティおよびコンプライアンスガイド_.
 
 [サポートされているすべてのバージョン](../../../release/versions.md) （件中）:
 
