@@ -1,11 +1,11 @@
 ---
 title: セキュリティを向上させるために docroot を変更する
-description: Adobe CommerceまたはMagento Open Sourceのオンプレミスのファイルシステムへの不正なブラウザーベースのアクセスを防ぎます。
+description: Adobe Commerce オンプレミスのファイルシステムへの不正なブラウザーベースのアクセスを防ぐ。
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ server {
 - MySQL （5.7 以降）
 - PHP （7.4）
 - Elasticsearch（7.x）または OpenSearch （1.2）
-- Adobe CommerceまたはMagento Open Source（2.4 以降）
+- Adobe Commerce（2.4 以降）
 
 >[!NOTE]
 >

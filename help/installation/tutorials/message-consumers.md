@@ -1,24 +1,24 @@
 ---
 title: メッセージコンシューマーの設定
-description: 次の手順に従って、Adobe CommerceまたはメッセージキューコンシューマーのMagento Open Sourceを設定します。
+description: 次の手順に従って、Adobe Commerce メッセージキューコンシューマーの動作を設定します。
 exl-id: df292301-f4bd-49df-a241-7467c35bf1d8
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '69'
+source-wordcount: '65'
 ht-degree: 0%
 
 ---
 
 # メッセージコンシューマーの設定
 
-このコマンドを実行する前に、次の操作を行う必要があります *または* 必ず [アプリケーションのインストール](../advanced.md):
+このコマンドを実行する前に、次の操作を行う必要があります *または* あなたは必要です [アプリケーションのインストール](../advanced.md):
 
-* [デプロイメント設定を作成または更新する](deployment.md)
+* [デプロイメント設定の作成または更新](deployment.md)
 * [データベーススキーマの作成](database.md)
 
-## 消費者行動の設定
+## コンシューマー行動の設定
 
-消費者行動の設定は、設定関数内でキーと値のペアを送信することでおこなわれます。
+コンシューマーの動作の設定は、セットアップ関数内でキーと値のペアを送信することで行われます。
 
 ```bash
 bin/magento setup:config:set [--<parameter_name>=<value>, ...]

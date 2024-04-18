@@ -1,7 +1,7 @@
 ---
-source-git-commit: d0304f4060080f70c079fb571210cd015407f1cf
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1990'
+source-wordcount: '1986'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Adobe Commerceでは、Composer を使用して PHP パッケージを管理します。
 
-この `composer.json` ファイルはパッケージのリストを宣言するのに対して、 `composer.lock` ファイルには、Adobe CommerceまたはMagento Open Sourceのインストールのビルドに使用するパッケージの完全なリスト（各パッケージの完全なバージョンとその依存関係）が保存されます。
+この `composer.json` ファイルはパッケージのリストを宣言するのに対して、 `composer.lock` ファイルには、Adobe Commerceのインストールのビルドに使用されるパッケージの完全なリスト（各パッケージの完全なバージョンとその依存関係）が保存されます。
 
 次のリファレンスドキュメントは、 `composer.lock` ファイルで、Adobe Commerce 2.4.7 に含まれている必須パッケージについて説明しています。
 

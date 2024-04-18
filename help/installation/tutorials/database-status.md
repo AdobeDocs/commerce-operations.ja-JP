@@ -1,29 +1,29 @@
 ---
-title: データベースのステータスを確認
-description: 以下の手順に従って、Adobe CommerceまたはMagento Open Sourceデータベースのステータスを確認します。
+title: データベースのステータスの確認
+description: 次の手順に従って、Adobe Commerce データベースのステータスを確認します。
 exl-id: 33d9b30a-4504-4955-b11a-0a642f23209b
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '104'
 ht-degree: 3%
 
 ---
 
-# データベースのステータスを確認
+# データベースのステータスの確認
 
-このコマンドを実行する前に、次の操作を行う必要があります。 [デプロイメント設定を作成または更新する](deployment.md).
+このコマンドを実行する前に、次の操作が必要です [デプロイメント設定の作成または更新](deployment.md).
 
-## コマンドの使用
+## コマンドの使用法
 
-データベースのステータスを確認するには、以下を実行します。
+データベースのステータスを確認します。
 
 ```bash
 bin/magento setup:db:status
 ```
 
-このコマンドには、引数やオプションはありません。
+このコマンドには引数やオプションはありません。
 
-出力例を次に示します。
+次に出力例を示します。
 
 ```terminal
 All modules are up to date.
@@ -31,8 +31,8 @@ All modules are up to date.
 
 このコマンドは、次のいずれかの終了コードを返します。
 
-| 出口コード | 説明 | 推奨アクション |
+| 終了コード | 説明 | 推奨されるアクション |
 |--------------|--------------|---------------|
 | 0 | 標準 | なし |
-| 1 | 一部のモジュールでは、データベースより新しいまたは古いバージョンのコードを使用します | 実行 [`magento setup:upgrade`](database-upgrade.md) データベーススキーマを更新してを実行するには、以下を実行します。 `composer update` アプリケーションのルートディレクトリからコンポーネントの依存関係を更新する |
-| 2 | `magento setup:upgrade` 必須 | [`magento setup:upgrade`](database-upgrade.md) データベーススキーマを更新するには |
+| 1 | 一部のモジュールでは、データベースよりも新しいまたは古いコードバージョンを使用します | 実行 [`magento setup:upgrade`](database-upgrade.md) データベーススキーマを更新してを実行するには、次の手順を実行します `composer update` アプリケーションのルートディレクトリからコンポーネントの依存関係を更新 |
+| 2 | `magento setup:upgrade` は必須です | [`magento setup:upgrade`](database-upgrade.md) データベーススキーマを更新するには |

@@ -2,9 +2,9 @@
 title: MySQL ガイドライン
 description: 次の手順に従って、Adobe Commerceのオンプレミスインストール用に MySQL と MariaDB をインストールして設定します。
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1037'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Adobe Commerceは、に SET SQL_MODE=&quot;を設定して、通常の検証動�
 
 MySQL をバージョン 5.7 からバージョン 8 に適切にアップデートするには、次の手順に従う必要があります。
 
-1. Adobe CommerceまたはMagento Open Sourceを 2.4.0 にアップグレードします。すべてをテストし、システムが期待どおりに動作することを確認します。
+1. Adobe Commerceを 2.4.0 にアップグレードします。すべてをテストし、システムが期待どおりに動作することを確認します。
 1. メンテナンスモードを有効にする：
 
    ```bash
@@ -131,7 +131,7 @@ MySQL をバージョン 5.7 からバージョン 8 に適切にアップデー
 
 ## データベースインスタンスの設定
 
-この節では、Adobe CommerceまたはMagento Open Sourceのデータベースインスタンスを作成する方法について説明します。 新しいデータベースインスタンスを使用することをお勧めしますが、必要に応じて、Adobe CommerceまたはMagento Open Sourceを既存のデータベースインスタンスと共にインストールできます。
+この節では、Adobe Commerceのデータベースインスタンスを作成する方法について説明します。 新しいデータベースインスタンスを使用することをお勧めしますが、既存のデータベースインスタンスを使用してAdobe Commerceをインストールすることもできます。
 
 MySQL データベースインスタンスを設定するには、次の手順に従います。
 
@@ -177,7 +177,7 @@ MySQL データベースインスタンスを設定するには、次の手順�
 
    * インデクサーには、より高い値が必要です `tmp_table_size` および `max_heap_table_size` 値（例：64 M）。 を設定する場合 `batch_size` パラメーターを使用すると、その値をテーブルサイズの設定と共に調整して、インデクサーのパフォーマンスを向上させることができます。 を参照してください。 [最適化ガイド](../../../performance/configuration.md) を参照してください。
 
-   * 最適なパフォーマンスを得るには、すべての MySQL とAdobe CommerceまたはMagento Open Sourceのインデックステーブルをメモリに保持できるようにします（例： `innodb_buffer_pool_size`）に設定します。
+   * 最適なパフォーマンスを得るには、すべての MySQL およびAdobe Commerce インデックステーブルをメモリに保持できるようにします（例： `innodb_buffer_pool_size`）に設定します。
 
    * MariaDB 10.4 でのインデックス再作成は、他の MariaDB または MySQL バージョンに比べて時間がかかります。 参照： [設定のベストプラクティス](../../../performance/configuration.md#indexers).
 

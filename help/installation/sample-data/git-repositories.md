@@ -2,9 +2,9 @@
 title: サンプルデータ Git リポジトリのクローン
 description: Git リポジトリをクローンしてAdobe Commerce サンプルデータをインストールするには、次の手順に従います。
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ HTTPS プロトコルを使用してサンプルデータ GitHub リポジトリ
 
 >[!WARNING]
 >
->サンプルデータをインストールする場合 *後* Adobe CommerceまたはMagento Open Sourceをインストールします。また、次のコマンドを実行してデータベースとスキーマを更新する必要もあります。
+>サンプルデータをインストールする場合 *後* Adobe Commerceをインストールする際は、次のコマンドを実行してデータベースとスキーマを更新する必要もあります。
 >
 >```bash
 ><magento_root>/bin/magento setup:upgrade

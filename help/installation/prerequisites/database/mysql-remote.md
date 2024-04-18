@@ -2,9 +2,9 @@
 title: リモート MySQL データベース接続の設定
 description: Adobe Commerceのオンプレミスインストール用にリモートデータベース接続を設定するには、次の手順に従います。
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 
 * [MySQL サーバーのインストール](mysql.md) データベースサーバー上。
 * [データベースインスタンスの作成](mysql.md#configuring-the-database-instance) データベースサーバー上。
-* Adobe CommerceまたはMagento Open Source web ノードに MySQL クライアントをインストールします。 詳しくは、MySQL のドキュメントを参照してください。
+* Adobe Commerce web ノードに MySQL クライアントをインストールします。 詳しくは、MySQL のドキュメントを参照してください。
 
 ### 高可用性
 
@@ -136,7 +136,7 @@ Web ノードホストで、次のコマンドを入力して接続が機能し�
 mysql -u <local database username> -h <database server ip address> -p
 ```
 
-MySQL モニターに次のように表示される場合、データベースはAdobe CommerceまたはMagento Open Sourceの準備が整っています。
+MySQL モニターに次のように表示される場合、データベースはAdobe Commerceに対応しています。
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -151,9 +151,9 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 Web サーバーがクラスター化されている場合は、各 web サーバーホストでコマンドを入力します。
 
-## Adobe CommerceまたはMagento Open Sourceのインストール
+## Adobe Commerceのインストール
 
-Adobe CommerceまたはMagento Open Sourceをインストールする際は、次の情報を指定する必要があります。
+Adobe Commerceをインストールする際は、次の情報を指定する必要があります。
 
 * ベース URL （別名） *ストアアドレス*）は、ホスト名または IP アドレスを指定します *web ノード*
 * データベースホストはです *リモート・データベース・サーバ* IP アドレス （または、データベースサーバーがクラスター化されている場合はロードバランサー）

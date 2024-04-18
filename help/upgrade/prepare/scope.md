@@ -1,10 +1,10 @@
 ---
 title: アップグレードの範囲について
-description: Adobe CommerceやMagento Open Sourceのカスタムモジュール、サードパーティの拡張機能に影響を与える可能性のある、リリースにおける後方互換性のない変更について説明します。
+description: Adobe Commerceのカスタムモジュールやサードパーティの拡張機能に影響を与える可能性のある、リリースにおける後方互換性のない変更について説明します。
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---

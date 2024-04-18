@@ -3,16 +3,16 @@ title: アプリケーションの設定
 description: Adobe Commerceのオンプレミスデプロイメントに必要なインストール後設定について説明します。
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
 # アプリケーションの設定
 
-Adobe CommerceまたはMagento Open Sourceのインストールが完了したら、設定する必要があります。 このトピックでは、いくつかの推奨設定を示します。
+Adobe Commerceのインストールが完了したら、設定する必要があります。 このトピックでは、いくつかの推奨設定を示します。
 
 ## cron の設定
 

@@ -2,9 +2,9 @@
 title: アップグレードの推奨読み取り項目
 description: Adobe Commerce のアップグレードの計画時に推奨ドキュメントを確認してください。
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '260'
 ht-degree: 4%
 
 ---
@@ -61,7 +61,7 @@ Adobe Commerceのアップグレードについて詳しくは、このページ
     </tr>
     <tr>
       <td><strong>リソースのアップグレード</strong>
-        <p>ストアフロントのセキュリティを維持し、効率的に運用します。 Adobeの広範な技術ドキュメントを確認して、Adobe CommerceまたはMagento Open Sourceのアップグレードの準備をします。</p>
+        <p>ストアフロントのセキュリティを維持し、効率的に運用します。 Adobe Commerceの広範な技術ドキュメントを確認して、Adobeのアップグレードの準備をします。</p>
           <ul>
             <li><a href="recommended-upgrade-paths.md">推奨されるアップグレードパス</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 テクニカルアップグレードワークショップの録画</a></li>

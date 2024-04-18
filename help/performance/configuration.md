@@ -1,11 +1,11 @@
 ---
 title: 設定のベストプラクティス
-description: これらのベストプラクティスを使用して、Adobe CommerceまたはMagento Open Sourceのデプロイメントの応答時間を最適化します。
+description: これらのベストプラクティスを使用して、Adobe Commerce デプロイメントの応答時間を最適化します。
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ ht-degree: 0%
 
 ## 非同期メール通知
 
-「非同期メール通知」設定を有効にすると、チェックアウトと注文処理のメール通知を処理するプロセスがバックグラウンドに移動します。 この機能を有効にするには、に移動してください。 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. 参照： [販売メール](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) が含まれる _Magento Open Sourceユーザーガイド_ を参照してください。
+「非同期メール通知」設定を有効にすると、チェックアウトと注文処理のメール通知を処理するプロセスがバックグラウンドに移動します。 この機能を有効にするには、に移動してください。 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. 参照： [販売メール](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) が含まれる _管理者ユーザーガイド_ を参照してください。
 
 ## 非同期順序データ処理
 
-店頭での集中的な販売が同時に発生する場合があります [!DNL Commerce] は集中的な注文処理を実行しています。 以下を設定できます [!DNL Commerce] 対応するテーブルの読み取り操作と書き込み操作の競合を避けるために、データベースレベルでこれらの 2 つのトラフィックパターンを区別します。 順序データは非同期で保存およびインデックス作成できます。 注文は一時的なストレージに配置され、衝突することなく注文管理グリッドに一括で移動されます。 このオプションは、 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. 参照： [スケジュールされたグリッドの更新](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) が含まれる _Magento Open Sourceユーザーガイド_ を参照してください。
+店頭での集中的な販売が同時に発生する場合があります [!DNL Commerce] は集中的な注文処理を実行しています。 以下を設定できます [!DNL Commerce] 対応するテーブルの読み取り操作と書き込み操作の競合を避けるために、データベースレベルでこれらの 2 つのトラフィックパターンを区別します。 順序データは非同期で保存およびインデックス作成できます。 注文は一時的なストレージに配置され、衝突することなく注文管理グリッドに一括で移動されます。 このオプションは、 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. 参照： [スケジュールされたグリッドの更新](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) が含まれる _管理者ユーザーガイド_ を参照してください。
 
 >[!WARNING]
 >

@@ -2,9 +2,9 @@
 title: Adobe Commerce ソフトウェアの入手
 description: Adobe Commerce ソフトウェアのダウンロード方法について説明します。
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 エキサイティングな新機能やリリースの可用性を確認し、それらをアドビで入手する方法を学びます [製品の可用性ページ](https://devdocs.magento.com/release/availability.html).
 
-Adobe CommerceまたはMagento Open Sourceのインストールの概要については、次の表を参照してください。
+Adobe Commerceのインストールの概要については、次の表を参照してください。
 
 <table>
     <tbody>

@@ -1,12 +1,12 @@
 ---
 user-guide-title: パフォーマンスのベストプラクティス
-user-guide-description: 推奨事項を使用して、Adobe CommerceまたはMagento Open Sourceの実稼動デプロイメントのパフォーマンスを最適化する。
+user-guide-description: 推奨事項を使用して、Adobe Commerceの実稼動デプロイメントのパフォーマンスを最適化します。
 feature: Best Practices
 topic: Administration, Commerce, Development, Performance
-source-git-commit: 51a86a24561e2c21b895dd59b3d784313b52d186
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 1%
+source-wordcount: '50'
+ht-degree: 2%
 
 ---
 

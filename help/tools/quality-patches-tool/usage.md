@@ -3,22 +3,22 @@ title: 使用方法
 description: の使用方法を学ぶ [!DNL Quality Patches Tool].
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
 
 # 使用方法
 
-この [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) は、AdobeとMagento Open Sourceコミュニティが開発した個別のパッチを提供します。 インストールされたバージョンのAdobe CommerceまたはMagento Open Sourceで使用可能なすべての個別パッチに関する一般情報を適用、元に戻して表示できます。 パッチの開発者に関係なく、Adobe Commerce プロジェクトにパッチを適用できます。 例えば、コミュニティが開発したパッチをAdobe Commerce プロジェクトに適用できます。
+この [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) は、AdobeとMagento Open Sourceコミュニティが開発した個別のパッチを提供します。 インストールされたバージョンのAdobe Commerceで使用可能な個々のパッチに関する一般情報を適用、元に戻して表示できます。 パッチの開発者に関係なく、Adobe Commerce プロジェクトにパッチを適用できます。 例えば、コミュニティが開発したパッチをAdobe Commerce プロジェクトに適用できます。
 
 これを見る [テクニカルビデオ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) Adobe Commerce用の品質向上パッチツールの使用方法についても説明します。
 
 >[!INFO]
 >
->参照： [個別パッチの適用](#apply-individual-patches) Adobe CommerceまたはMagento Open Sourceプロジェクトにパッチを適用する方法については、を参照してください。 参照： [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) リリースされたパッチの完全なリストを確認します。
+>参照： [個別パッチの適用](#apply-individual-patches) Adobe Commerce プロジェクトにパッチを適用する方法については、を参照してください。 参照： [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) リリースされたパッチの完全なリストを確認します。
 
 >[!WARNING]
 >
@@ -36,7 +36,7 @@ composer require magento/quality-patches
 
 ## 個々のパッチの表示
 
-Adobe CommerceまたはMagento Open Sourceのバージョンで使用可能な個々のパッチのリストを表示するには：
+Adobe Commerceのバージョンで使用可能な個々のパッチのリストを表示するには：
 
 ```bash
 ./vendor/bin/magento-patches status
@@ -76,7 +76,7 @@ Adobe Commerce 2.3.5。
 
 >[!INFO]
 >
->新しいバージョンのAdobe CommerceまたはMagento Open Sourceにアップグレードした後、パッチが新しいバージョンに含まれていない場合は、パッチを再適用する必要があります。 参照： [アップグレード後のパッチの再適用](#re-apply-patches-after-an-upgrade).
+>新しいバージョンのAdobe Commerceにアップグレードした後、パッチが新しいバージョンに含まれていない場合は、パッチを再適用する必要があります。 参照： [アップグレード後のパッチの再適用](#re-apply-patches-after-an-upgrade).
 
 ## 個別パッチの適用 {#apply-individual-patches}
 
@@ -104,7 +104,7 @@ Adobe Commerce アプリケーションで変更内容を確認するには、�
 
 >[!INFO]
 >
->適用されたパッチのリストを別の場所に保持することを検討してください。 Adobe CommerceまたはMagento Open Sourceの新しいバージョンにアップグレードした後で、一部の機能を再適用する必要が生じる場合があります。 参照： [アップグレード後のパッチの再適用](#re-apply-patches-after-an-upgrade).
+>適用されたパッチのリストを別の場所に保持することを検討してください。 Adobe Commerceの新しいバージョンにアップグレードした後で、一部の機能を再適用する必要が生じる場合があります。 参照： [アップグレード後のパッチの再適用](#re-apply-patches-after-an-upgrade).
 
 ## 個々のパッチを元に戻す
 
@@ -156,7 +156,7 @@ composer update magento/quality-patches
 
 ## アップグレード後のパッチの再適用 {#re-apply-patches-after-an-upgrade}
 
-新しいバージョンのAdobe CommerceまたはMagento Open Sourceにアップグレードした場合、パッチが新しいバージョンに含まれていなければ、パッチを再適用する必要があります。
+新しいバージョンのAdobe Commerceにアップグレードする場合、パッチが新しいバージョンに含まれていなければ、パッチを再適用する必要があります。
 
 パッチを再適用するには：
 

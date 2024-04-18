@@ -1,10 +1,10 @@
 ---
 title: オンプレミスでのクイックスタートのインストール
-description: 所有しているインフラストラクチャにAdobe CommerceまたはMagento Open Sourceをインストールするには、次の手順に従います。
+description: 所有しているインフラストラクチャにAdobe Commerceをインストールするには、次の手順に従います。
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobeの用途 [コンポーザー](https://getcomposer.org/) Adobe Commerce コ
 - 堅牢な依存関係管理を備えたコンポーネントベースのアーキテクチャを使用することで、拡張機能の競合と互換性の問題を軽減します。
 - 付着 [PHP-Framework Interoperability Group （FIG）](https://www.php-fig.org/) 標準規格
 - Magento Open Sourceを他のコンポーネントと再パッケージ化
-- 実稼動環境でのAdobe CommerceまたはMagento Open Sourceソフトウェアの使用
+- 実稼動環境でのAdobe Commerce ソフトウェアの使用
 
 >[!NOTE]
 >
@@ -71,11 +71,11 @@ Adobeの用途 [コンポーザー](https://getcomposer.org/) Adobe Commerce コ
 
 ## メタパッケージを入手する
 
-Adobe CommerceまたはMagento Open Sourceメタパッケージを取得するには：
+Adobe Commerce メタパッケージを入手するには：
 
 1. アプリケーションサーバーにとしてログインするか、 [ファイルシステム所有者](prerequisites/file-system/overview.md).
 1. Web サーバーの docroot ディレクトリまたは仮想ホストの docroot として設定したディレクトリに移動します。
-1. Adobe CommerceまたはMagento Open Source メタパッケージを使用して Composer プロジェクトを作成します。
+1. Commerce メタパッケージを使用して Composer プロジェクトを作成します。
 
    **Magento Open Source**
 
@@ -127,7 +127,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 ## ファイルのアクセス許可の設定
 
-Adobe CommerceまたはMagento Open Sourceをインストールする前に、web サーバーグループの読み取り/書き込み権限を設定する必要があります。 これは、コマンドラインがファイルをファイルシステムに書き込めるようにするために必要です。
+Adobe Commerceをインストールする前に、web サーバーグループの読み取り/書き込み権限を設定する必要があります。 これは、コマンドラインがファイルをファイルシステムに書き込めるようにするために必要です。
 
 ```terminal
 cd /var/www/html/<magento install directory>
@@ -139,7 +139,7 @@ chmod u+x bin/magento
 
 ## アプリケーションのインストール
 
-Adobe CommerceまたはMagento Open Sourceをインストールするには、コマンドラインを使用する必要があります。
+Adobe Commerceをインストールするには、コマンドラインを使用する必要があります。
 
 この例では、インストールディレクトリの名前がであることを前提としています `magento2ee`, `db-host` が同じマシン上にある（`localhost`）に設定し、 `db-name`, `db-user`、および `db-password` が全て `magento`:
 

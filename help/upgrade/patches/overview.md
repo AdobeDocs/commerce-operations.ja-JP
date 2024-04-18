@@ -2,9 +2,9 @@
 title: パッチの動作
 description: Adobe Commerceの様々なタイプのパッチとその動作について説明します。
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## カスタムパッチ
 
-Adobe CommerceまたはMagento Open SourceコンポーザーのリリースでAdobeエンジニアリングチームが GitHub に追加されたバグ修正を含めるのに時間がかかる場合があります。 それまでの間、GitHub からパッチを作成して、を使用できます [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) composer ベースのインストールに適用するためのプラグイン。
+Adobeエンジニアリングチームが、Adobe Commerce Composer リリースで GitHub に加えられたバグ修正を含めるのに時間がかかる場合があります。 それまでの間、GitHub からパッチを作成して、を使用できます [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) composer ベースのインストールに適用するためのプラグイン。
 
 の使用 [コマンドライン](apply.md#command-line) または [コンポーザー](apply.md#composer) カスタムパッチを適用します。
 

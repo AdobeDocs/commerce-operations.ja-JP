@@ -2,9 +2,9 @@
 title: 必要システム構成
 description: このリファレンスを使用して、Adobe Commerce リリースでテストされた必須のソフトウェア依存関係を特定します。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -155,4 +155,4 @@ Cloud 上のAdobe Commerceについては、を参照してください。 [Xdeb
 
 >[!NOTE]
 >
->に既知の問題があります `xdebug` これは、Adobe CommerceやMagento Open Sourceのインストールに影響を与えたり、インストール後にストアフロントや管理者にアクセスしたりする可能性があります。 参照： [～に影響を及ぼす既知の問題 `xdebug` インストール](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) が含まれる _コマースサポートのナレッジベース_.
+>に既知の問題があります `xdebug` これは、Adobe Commerceのインストールや、インストール後のストアフロントまたは管理者へのアクセスに影響を与える可能性があります。 参照： [～に影響を及ぼす既知の問題 `xdebug` インストール](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) が含まれる _コマースサポートのナレッジベース_.

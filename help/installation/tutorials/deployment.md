@@ -1,11 +1,11 @@
 ---
 title: デプロイメント設定の作成または更新
-description: Adobe CommerceまたはMagento Open Sourceのデプロイメント設定を管理するには、次の手順に従います。
+description: Adobe Commerce デプロイメント設定を管理するには、次の手順に従います。
 feature: Install, Deploy, Configuration
 exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ bin/magento setup:config:set [--<parameter>=<value>, ...]
 | `--db-name` | データベーステーブルをインストールするデータベースインスタンスの名前。<br><br>デフォルトは `magento2`. | 不可 |
 | `--db-user` | データベース・インスタンス所有者のユーザー名。<br><br>デフォルトは `root`. | 不可 |
 | `--db-password` | データベースインスタンス所有者のパスワード。 | 不可 |
-| `--db-prefix` | 既にAdobe Commerce テーブルが含まれているデータベースインスタンスにデータベーステーブルをインストールしている場合にのみ、を使用します。<br><br>その場合は、プレフィックスを使用して、このインストールのテーブルを識別します。 一部のお客様は、1 台のサーバーで複数のAdobe CommerceまたはMagento Open Sourceインスタンスが実行されており、そのサーバー内のすべてのテーブルが同じデータベース内にある場合があります。<br><br>プレフィックスの長さは最大 5 文字です。 文字で始まる必要があり、文字、数字、アンダースコア文字のみを含めることができます。<br><br>このオプションを選択すると、複数のAdobe CommerceまたはMagento Open Sourceのインストールでデータベースサーバーを共有できます。 | 不可 |
+| `--db-prefix` | 既にAdobe Commerce テーブルが含まれているデータベースインスタンスにデータベーステーブルをインストールしている場合にのみ、を使用します。<br><br>その場合は、プレフィックスを使用して、このインストールのテーブルを識別します。 一部のお客様は、1 台のサーバーで複数のAdobe Commerce インスタンスが実行されており、すべてのテーブルが同じデータベース内にある場合があります。<br><br>プレフィックスの長さは最大 5 文字です。 文字で始まる必要があり、文字、数字、アンダースコア文字のみを含めることができます。<br><br>このオプションを選択すると、複数のAdobe Commerce インストールとデータベースサーバーを共有できます。 | 不可 |
 | `--session-save` | 次のいずれかを使用します。<br><br>- `db` セッションデータをに保存する [データベース](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). クラスター化されたデータベースがある場合は、データベースストレージを選択します。そうしないと、ファイルベースのストレージに比べて大きなメリットがない可能性があります。<br><br>- `files` セッションデータをファイルシステムに格納する。 ファイルベースのセッションストレージは、ファイルシステムアクセスが遅い場合、クラスター化されたデータベースがある場合、または Redis にセッションデータを保存する場合を除いて、適切です。<br><br>- `redis` セッションデータを次に保存します [セッションストレージに Redis を使用](../../configuration/cache/config-redis.md). デフォルトまたはページキャッシュに Redis を使用している場合は、Redis がインストールされている必要があります。 | 不可 |
 | `--key` | 暗号化するキーがある場合は、指定します [機密データ](#sensitive-data) データベース内にあります。 ユーザーが定義されていない場合は、自動的に定義されます。 | 不可 |
 | `--db-init-statements` | MySQL の詳細設定パラメーター。 データベース初期化文を使用して、MySQL データベースへの接続時に実行します。<br><br>デフォルトは `SET NAMES utf8;`.<br><br>～に類似した参考文献を参照する [この 1](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) 値を設定する前に行います。 | 不可 |

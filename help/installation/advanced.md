@@ -2,9 +2,9 @@
 title: オンプレミスでの高度なインストール
 description: 所有するインフラストラクチャでのAdobe Commerceの高度なインストールシナリオについて説明します。
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2314'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Adobe Commerceには、インストールおよび設定作業を行うための
 * CLI は拡張可能なため、サードパーティ開発者がプラグインすることができます。 これには、ユーザーの学習曲線を排除するという追加のメリットがあります。
 * 無効なモジュールのコマンドは表示されません。
 
-このトピックでは、CLI を使用してAdobe CommerceまたはMagento Open Sourceソフトウェアをインストールする方法について説明します。 設定については、を参照してください [設定ガイド](../configuration/overview.md).
+このトピックでは、CLI を使用したAdobe Commerce ソフトウェアのインストールについて説明します。 設定については、を参照してください [設定ガイド](../configuration/overview.md).
 
 インストーラーは、必要に応じて複数回実行できるので、次のことが可能です。
 
@@ -47,7 +47,7 @@ Adobe Commerceには、インストールおよび設定作業を行うための
   例えば、Web サーバーを Secure Sockets Layer （SSL）用に設定したら、インストーラーを実行して、SSL オプションを設定できます。
 
 * 以前のインストールでの誤りを修正する
-* Adobe CommerceまたはMagento Open Sourceを別のデータベースインスタンスにインストールする
+* 別のデータベースインスタンスへのAdobe Commerceのインストール
 
 ## インストールを開始する前に
 
@@ -65,7 +65,7 @@ Adobe Commerceには、インストールおよび設定作業を行うための
 
 >[!NOTE]
 >
->Adobe CommerceまたはMagento Open Sourceは、 `bin` サブディレクトリ。
+>Adobe Commerceは、 `bin` サブディレクトリ。
 
 インストーラーを複数回実行し、様々なオプションを指定して、次のようなインストールタスクを完了することができます。
 
@@ -73,7 +73,7 @@ Adobe Commerceには、インストールおよび設定作業を行うための
 
 * 以前のインストールでの間違いを修正します。
 
-* Adobe CommerceまたはMagento Open Sourceを別のデータベースインスタンスにインストールします。
+* 別のデータベースインスタンスにAdobe Commerceをインストールします。
 
 >[!NOTE]
 >
@@ -133,13 +133,13 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 | 名前 | 値 | 必須？ |
 |--- |--- |--- |
-| `--base-url` | 管理者およびストアフロントにアクセスするために使用するベース URL を次の形式のいずれかで指定します。<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**注意：** スキーム（http://またはhttps://）と末尾のスラッシュは両方とも必須です。<br><br>`<your install dir>` は、Adobe CommerceまたはMagento Open Sourceソフトウェアをインストールする際のドキュメントルートの相対パスです。 Web サーバーと仮想ホストの設定方法に応じて、パスは magento2 になるか、空になります。<br><br>localhost のAdobe CommerceまたはMagento Open Sourceにアクセスするには、次のいずれかを使用します `http://127.0.0.1/<your install dir>/` または `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` これは、仮想ホスト設定または Docker などの仮想化環境で定義されたベース URL を表します。 例えば、ホスト名を使用して仮想ホストを設定する場合 `magento.example.com`にインストールする必要があります。 `--base-url={{base_url}}` 次のような URL で管理者にアクセスします。 `http://magento.example.com/admin`. | はい |
+| `--base-url` | 管理者およびストアフロントにアクセスするために使用するベース URL を次の形式のいずれかで指定します。<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**注意：** スキーム（http://またはhttps://）と末尾のスラッシュは両方とも必須です。<br><br>`<your install dir>` は、Adobe Commerce ソフトウェアをインストールするドキュメントルートの相対パスです。 Web サーバーと仮想ホストの設定方法に応じて、パスは magento2 になるか、空になります。<br><br>Adobe Commerceまたは MagenAdobe Commerceuse には、 `http://127.0.0.1/<your install dir>/` または `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` これは、仮想ホスト設定または Docker などの仮想化環境で定義されたベース URL を表します。 例えば、ホスト名を使用して仮想ホストを設定する場合 `magento.example.com`にインストールする必要があります。 `--base-url={{base_url}}` 次のような URL で管理者にアクセスします。 `http://magento.example.com/admin`. | はい |
 | `--backend-frontname` | 管理者にアクセスするための URI （Uniform Resource Identifier）。 このパラメーターを省略すると、次のパターンのランダムな URI をアプリケーションで生成できます <code>admin_jkhgdfq</code>。<br><br>セキュリティ上の理由から、ランダムな URI を使用することをお勧めします。 ランダム URI は、ハッカーや悪意のあるソフトウェアが悪用しにくくなります。<br><br>インストールの最後に URI が表示されます。 後で次のコマンドを使用して表示することができます。 `bin/magento info:adminuri` コマンド。<br><br>値を入力する場合は、admin、backend などの一般的な単語を使用しないことをお勧めします。 管理 URI には、英数字とアンダースコア文字（`_`）のみ。 | 不可 |
 | `--db-host` | 次のいずれかを使用します。<br><br>- データベースサーバーの完全修飾ホスト名または IP アドレス。<br><br>- `localhost` （デフォルト）または `127.0.0.1` データベースサーバーが web サーバーと同じホスト上にある場合。localhost は、MySQL クライアントライブラリが UNIX ソケットを使用してデータベースに接続することを意味します。 `127.0.0.1` クライアントライブラリで TCP プロトコルを使用します。 ソケットの詳細については、 [PHP PDO_MYSQL ドキュメント](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**注意：** オプションで、www.example.com:9000のようなホスト名でデータベースサーバーポートを指定できます。 | はい |
 | `--db-name` | データベーステーブルをインストールするデータベースインスタンスの名前。<br><br>デフォルトは `magento2`. | はい |
 | `--db-user` | データベース・インスタンス所有者のユーザー名。<br><br>デフォルトは `root`. | はい |
 | `--db-password` | データベースインスタンス所有者のパスワード。 | はい |
-| `--db-prefix` | Adobe CommerceまたはMagento Open Sourceテーブルが既に含まれているデータベースインスタンスにデータベーステーブルをインストールしている場合にのみ、を使用します。<br><br>その場合は、プレフィックスを使用して、このインストールのテーブルを識別します。 一部のお客様は、1 台のサーバーで複数のAdobe CommerceまたはMagento Open Sourceインスタンスが実行されており、そのサーバー内のすべてのテーブルが同じデータベース内にある場合があります。<br><br>プレフィックスの長さは最大 5 文字です。 文字で始まる必要があり、文字、数字、アンダースコア文字のみを含めることができます。<br><br>このオプションを選択すると、複数のAdobe CommerceまたはMagento Open Sourceのインストールでデータベースサーバーを共有できます。 | 不可 |
+| `--db-prefix` | 既にAdobe Commerce テーブルが含まれているデータベースインスタンスにデータベーステーブルをインストールしている場合にのみ、を使用します。<br><br>その場合は、プレフィックスを使用して、このインストールのテーブルを識別します。 一部のお客様は、同じデータベース内のすべてのテーブルを持つ複数のAdobe Commerceまたは MagenAdobe Commerceserver を持っています。<br><br>プレフィックスの長さは最大 5 文字です。 文字で始まる必要があり、文字、数字、アンダースコア文字のみを含めることができます。<br><br>このオプションを選択すると、複数のAdobe Commerce インストールとデータベースサーバーを共有できます |
 | `--db-ssl-key` | クライアントキーへのパス。 | 不可 |
 | `--db-ssl-cert` | クライアント証明書へのパス。 | 不可 |
 | `--db-ssl-ca` | サーバー証明書へのパス。 | 不可 |
@@ -153,7 +153,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 | `--admin-use-security-key` | 1 を指定すると、アプリケーションはランダムに生成されたキー値を使用して、管理およびフォームのページにアクセスします。 これらのキー値は、クロスサイトスクリプトフォージェリー攻撃を防ぐのに役立ちます。 これがデフォルトです。<br><br>`0` キーの使用を無効にします。 | 不可 |
 | `--session-save` | 次のいずれかを使用します。<br><br>- `db` セッションデータをデータベースに保存します。 クラスター化されたデータベースがある場合は、データベースストレージを選択します。そうしないと、ファイルベースのストレージに比べて大きなメリットがない可能性があります。<br><br>- `files` セッションデータをファイルシステムに格納する。 ファイルベースのセッションストレージは、ファイルシステムアクセスが遅い場合、クラスター化されたデータベースがある場合、または Redis にセッションデータを保存する場合を除いて、適切です。<br><br>- `redis` セッションデータを Redis に保存します。 デフォルトまたはページキャッシュに Redis を使用している場合は、Redis がインストールされている必要があります。 Redis のサポートの設定に関する詳細は、セッションストレージに Redis を使用するを参照してください。 | 不可 |
 | `--key` | キーがある場合は、データベース内の機密データを暗号化するキーを指定します。 ユーザーが定義されていない場合は、自動的に定義されます。 | はい |
-| `--cleanup-database` | Adobe CommerceまたはMagento Open Sourceをインストールする前にデータベーステーブルをドロップするには、このパラメーターに値を指定しません。 それ以外の場合、データベースはそのまま残ります。 | 不可 |
+| `--cleanup-database` | Adobe Commerceをインストールする前にデータベーステーブルをドロップするには、このパラメーターに値を指定しません。 それ以外の場合、データベースはそのまま残ります。 | 不可 |
 | `--db-init-statements` | MySQL の詳細設定パラメーター。 データベース初期化文を使用して、MySQL データベースへの接続時に実行します。 値を設定する前に、これに類似したリファレンスを参照してください。<br><br>デフォルトは `SET NAMES utf8;`. | 不可 |
 | `--sales-order-increment-prefix` | 販売注文のプレフィックスとして使用する文字列値を指定します。 通常、これは支払い処理者向けの一意の注文番号を保証するために使用されます。 | 不可 |
 
@@ -205,7 +205,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 >[!NOTE]
 >
->Adobe CommerceまたはMagento Open Sourceのインストール後にモジュールを有効または無効にする方法については、を参照してください。 [モジュールの有効化と無効化](tutorials/manage-modules.md).
+>Adobe Commerceのインストール後にモジュールを有効または無効にする方法については、を参照してください。 [モジュールの有効化と無効化](tutorials/manage-modules.md).
 
 **機密データ：**
 
@@ -217,7 +217,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 #### 例 1 – 管理者ユーザーアカウントを使用した基本インストール
 
-次の例では、Adobe CommerceまたはMagento Open Sourceを次のオプションと共にインストールします。
+次の例では、次のオプションを使用してAdobe Commerceをインストールします。
 
 * アプリケーションは `magento2` の web サーバーのドキュメントルートに相対したディレクトリ `localhost` また、管理者へのパスはです `admin`したがって、
 
@@ -262,7 +262,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 #### 例 2 – 管理者ユーザーアカウントを使用しない基本インストール
 
-次の例に示すように、管理者ユーザーを作成せずに、Adobe CommerceまたはMagento Open Sourceをインストールできます。
+次の例に示すように、管理者ユーザーを作成せずにAdobe Commerceをインストールできます。
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -287,7 +287,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 #### 例 3 – 追加オプションを使用したインストール
 
-次の例では、Adobe CommerceまたはMagento Open Sourceを次のオプションと共にインストールします。
+次の例では、次のオプションを使用してAdobe Commerceをインストールします。
 
 * アプリケーションは `magento2` の web サーバーのドキュメントルートに相対したディレクトリ `localhost` また、管理者へのパスはです `admin`したがって、
 

@@ -2,9 +2,9 @@
 title: EU 一般データ保護規則（GDPR）
 description: 欧州連合（EU）および欧州経済地域のすべての個人のデータ保護とプライバシーを規制する法律である一般データ保護規則（GDPR）について説明します。
 exl-id: 30e60601-f4f7-419e-b2dd-8c82c8a2ed33
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 個人情報の参照
 
-技術情報については、サポートしているAdobe CommerceまたはMagento Open Sourceの各バージョンに適用される Personal Information Reference のデータフロー図とデータベースエンティティのマッピングを参照してください。
+技術情報については、サポートしているAdobe Commerceの各バージョンに適用される Personal Information Reference のデータフロー図とデータベースエンティティのマッピングを参照してください。
 
 - [顧客の個人情報の参照（バージョン 2.x）](data-m2.md)
 - [お客様の個人情報の参照（バージョン 1.x）](data-m1.md)

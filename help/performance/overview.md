@@ -1,19 +1,19 @@
 ---
 title: 概要
-description: Adobe CommerceまたはMagento Open Sourceのデプロイメントのパフォーマンスを最適化するには、次のベストプラクティスに従います。
+description: Adobe Commerceのデプロイメントのパフォーマンスを最適化するには、次のベストプラクティスに従います。
 exl-id: 5381a477-bacd-4e74-a150-7f98abc2f744
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '86'
 ht-degree: 1%
 
 ---
 
 # パフォーマンスのベストプラクティス
 
-The _パフォーマンスのベストプラクティス_ ガイドでは、実稼動デプロイメントのパフォーマンスを最適化するための推奨事項と手順を説明しています。 実稼働モードで店舗を維持する担当の技術ユーザーは、このガイドで説明するベストプラクティスを使用して、店舗が常にピーク時の効率で稼働するようにしてください。
+この _パフォーマンスのベストプラクティス_ 実稼動デプロイメントのパフォーマンスを最適化するための推奨事項と手順が記載されています。 実稼動モードでストアを維持する責任を負う技術ユーザーは、このガイドに記載されているベストプラクティスを使用して、ストアが常にピーク時の効率で実行されるようにしてください。
 
 ## 前提
 
-* を使用してAdobe CommerceまたはMagento Open Sourceをインストールした [コンポーザー](../installation/composer.md).
-* このインストールを使用して、Adobe CommerceまたはMagento Open Sourceのライブ実稼動インスタンスを実行します。
+* を使用してAdobe Commerceをインストールしました [コンポーザー](../installation/composer.md).
+* このインストールを使用して、Adobe Commerceの実稼動インスタンスを実行します。

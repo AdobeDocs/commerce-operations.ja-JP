@@ -2,9 +2,9 @@
 title: アップグレードの実行
 description: Adobe Commerceのオンプレミスデプロイメントをアップグレードするには、次の手順に従います。
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # アップグレードの実行
 
-アップグレードできます _オンプレミス_ 以下の方法でソフトウェアをインストールした場合は、コマンドラインからのAdobe CommerceまたはMagento Open Sourceアプリケーションのデプロイメント。
+アップグレードできます _オンプレミス_ コマンドラインからのAdobe Commerce アプリケーションのデプロイメント（以下を行ってソフトウェアをインストールした場合）
 
 - を使用した Composer メタパッケージのダウンロード `composer create-project` コマンド。
 - 圧縮されたアーカイブをインストールしています。
@@ -110,7 +110,7 @@ ht-degree: 0%
 
    - `<product>`  – （必須）アップグレードするパッケージ。 オンプレミスのインストールの場合、この値はである必要があります `product-community-edition` または `product-enterprise-edition`.
 
-   - `<version>`  – （必須）アップグレード先のAdobe CommerceまたはMagento Open Sourceのバージョン。 例： `2.4.3`.
+   - `<version>`  – （必須）アップグレード先のAdobe Commerceのバージョン。 例： `2.4.3`.
 
    - `--no-update`  – （必須）依存関係の自動更新を無効にします。
 

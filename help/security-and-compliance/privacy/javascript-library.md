@@ -2,9 +2,9 @@
 title: プライバシー JavaScript ライブラリ
 description: カスタムツールを使用して、Adobe Commerceで収集されたお客様の個人情報にアクセスして削除する方法を説明します。
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Commerce データトラッキングサービスでは、次のようなプラ�
 
 プライバシー JavaScript ライブラリは、次の CDN の場所で利用できます。 `commerce.adobe.net/magentoprivacy.js`
 
-ファイルを取得したら、Adobe CommerceまたはMagento Open Sourceインスタンスにインストールされたカスタムモジュールまたはテーマにファイルを追加する必要があります。 に記載されている指示に従います [カスタム JavaScript の使用](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) このタスクを実行するトピック。
+ファイルを取得したら、Adobe Commerce インスタンスにインストールされたカスタムモジュールまたはテーマにファイルを追加する必要があります。 に記載されている指示に従います [カスタム JavaScript の使用](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) このタスクを実行するトピック。
 
 ### 初期化
 

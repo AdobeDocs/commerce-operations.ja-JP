@@ -1,10 +1,10 @@
 ---
 title: モジュールの有効化または無効化
-description: Adobe CommerceまたはMagento Open Sourceモジュールを管理するには、次の手順に従います。
+description: Adobe Commerce モジュールを管理するには、次の手順に従います。
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---

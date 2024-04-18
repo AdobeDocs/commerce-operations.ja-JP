@@ -2,9 +2,9 @@
 title: キャッシュの管理
 description: Commerce CLI を使用して、コマンド ラインからキャッシュ タイプを管理し、キャッシュ ステータスを表示する
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 1070291396144f866cadd5e42ebca3e77a484a9b
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ bin/magento cache:disable db_ddl full_page
 
   >[!TIP]
   >
-  >Magento Open SourceまたはAdobe Commerceのバージョンのアップグレード、Magento Open SourceからAdobe Commerceへのアップグレード、Adobe Commerceまたは任意のモジュール用の B2B のインストールの後は、必ずキャッシュをクリーンアップしてください。
+  >Adobe Commerceのバージョンのアップグレード、モジュールからAdobe Commerceへのアップグレード、Adobe Commerceまたは任意のMagento Open Source用の B2B のインストールの後は、必ずキャッシュをクリーンアップしてください。
 
 - キャッシュタイプをフラッシュすると、キャッシュストレージがパージされ、同じストレージを使用している他のプロセスアプリケーションに影響を与える可能性があります。
 

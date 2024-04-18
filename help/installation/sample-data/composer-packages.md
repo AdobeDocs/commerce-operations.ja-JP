@@ -3,16 +3,16 @@ title: サンプルの Data Composer パッケージのダウンロード
 description: Composer PHP Package Manager を使用してAdobe Commerce サンプル データをインストールするには、次の手順に従います。
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 # サンプルの Data Composer パッケージのダウンロード
 
-この節では、Adobe CommerceまたはMagento Open Sourceソフトウェアを次のいずれかの方法で入手した場合、サンプルデータをインストールする方法について説明します。
+この節では、Adobe Commerce ソフトウェアを次のいずれかの方法で入手した場合、サンプルデータをインストールする方法について説明します。
 
 * から圧縮アーカイブをダウンロードしました `https://magento.com/tech-resources/download`.
 

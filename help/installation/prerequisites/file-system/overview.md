@@ -2,16 +2,16 @@
 title: ファイルの所有権と権限
 description: Adobe Commerceのオンプレミスインストールを扱う場合のファイルシステム権限の重要性について説明します。
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
 # ファイルの所有権と権限
 
-未承認のユーザーやプロセスがシステムにアクセスして（そして潜在的な損害が生じても）、問題を防ぐために、開発環境でAdobe CommerceまたはMagento Open Sourceのインストールを保護することが重要です。 インストールを保護するために、次のファイルシステムの所有権と権限のガイドラインを使用します。
+許可されていないユーザーやプロセスがシステムにアクセスして、システムに損害を与える可能性に関連する問題を防ぐために、開発環境でAdobe Commerceのインストールを保護することが重要です。 インストールを保護するために、次のファイルシステムの所有権と権限のガイドラインを使用します。
 
 ## ファイルシステムの所有者
 
@@ -65,4 +65,4 @@ Adobe Commerceでは、3 ビットのデフォルトマスクが使用されま�
 
 >[!TIP]
 >
->Adobe CommerceまたはMagento Open Sourceをインストールする前に、以下を確認してください [ファイルの所有権と権限の設定](configure-permissions.md).
+>Adobe Commerceをインストールする前に、以下を確認してください [ファイルの所有権と権限の設定](configure-permissions.md).

@@ -2,9 +2,9 @@
 title: Apache
 description: 次の手順に従って、Apache web サーバーをインストールし、Adobe Commerceのオンプレミスインストール用に設定します。
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Adobe Commerceは、サーバーの書き換えを使用します。 `.htaccess`
    >[!NOTE]
    >
    >- 以前の Apache バージョンからアップグレードした場合は、まずを探します `<Directory "/var/www/html">` または `<Directory "/var/www">` 。対象： `000-default.conf`.
-   >- の値を変更する必要があります `AllowOverride` Adobe CommerceまたはMagento Open Sourceソフトウェアをインストールするディレクトリのディレクティブで指定します。 例えば、web サーバーの docroot にをインストールするには、次のディレクティブを編集します `<Directory /var/www>`.
+   >- の値を変更する必要があります `AllowOverride` Adobe Commerce ソフトウェアをインストールするディレクトリのディレクティブで指定します。 例えば、web サーバーの docroot にをインストールするには、次のディレクティブを編集します `<Directory /var/www>`.
 
 >[!NOTE]
 >

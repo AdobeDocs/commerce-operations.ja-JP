@@ -1,10 +1,10 @@
 ---
 title: ロックプロバイダーの設定
-description: 次の手順に従って、Adobe CommerceまたはMagento Open Sourceのデプロイメントで重複した cron ジョブおよび cron グループが実行されないようにします。
+description: 次の手順に従って、Adobe Commerce デプロイメントで重複した cron ジョブと cron グループが実行されないようにします。
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## ロックの設定
 
-ロックプロバイダーを設定して、重複する cron ジョブや cron グループの起動を防ぎます。 （Adobe CommerceまたはMagento Open Source 2.2.x、2.2.5 以降および 2.3.3 以降が必要です）。
+ロックプロバイダーを設定して、重複する cron ジョブや cron グループの起動を防ぎます。 （Adobe Commerce 2.2.x、2.2.5 以降および 2.3.3 以降が必要です）。
 
 Adobe Commerceは、デフォルトでロックを保存するためにこのデータベースを使用します。 サーバーに複数のノードがある場合は、Zookeeper をロックプロバイダーとして使用することをお勧めします。
 

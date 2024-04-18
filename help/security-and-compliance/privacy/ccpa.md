@@ -2,9 +2,9 @@
 title: カリフォルニア州消費者プライバシー法（CCPA）
 description: カリフォルニア州消費者プライバシー法（CCPA）について説明します。CCPA は、カリフォルニア州の消費者の権利を拡大し、個人情報の収集、保存、使用の方法を決定するものです。
 exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ CCPA コンプライアンス・プランを策定して実施するには、調
 
 ## 個人情報の参照
 
-技術情報については、サポートしているAdobe CommerceまたはMagento Open Sourceの各バージョンに適用される Personal Information Reference のデータフロー図とデータベースエンティティのマッピングを参照してください。
+技術情報については、サポートしているAdobe Commerceの各バージョンに適用される Personal Information Reference のデータフロー図とデータベースエンティティのマッピングを参照してください。
 
 - [顧客の個人情報の参照（バージョン 2.x）](data-m2.md)
 - [お客様の個人情報の参照（バージョン 1.x）](data-m1.md)

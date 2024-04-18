@@ -2,9 +2,9 @@
 title: Nginx
 description: 次の手順に従って、Adobe Commerceのオンプレミスインストール用に Nginx web サーバーをインストールして設定します。
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -97,13 +97,13 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
    cd /var/www/html
    ```
 
-1. Composer をグローバルにインストール Adobe CommerceまたはMagento Open Sourceをインストールする前に、依存関係を更新するために Composer が必要です。
+1. Composer をグローバルにインストール Adobe Commerceをインストールする前に、依存関係を更新するために Composer が必要です。
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Magento Open SourceまたはAdobe Commerce メタパッケージを使用して Composer プロジェクトを作成します。
+1. Adobe Commerce メタパッケージを使用して Composer プロジェクトを作成します。
 
    **Magento Open Source**
 
@@ -207,7 +207,7 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
    >
    >この `include` ディレクティブは、インストールディレクトリ内のサンプル nginx 設定ファイルを指す必要があります。
 
-1. 置換 `www.magento-dev.com` とドメイン名を使用します。 これは、Adobe CommerceまたはMagento Open Sourceをインストールするときに指定したベース URL と一致する必要があります。
+1. 置換 `www.magento-dev.com` とドメイン名を使用します。 これは、Adobe Commerceのインストール時に指定したベース URL と一致する必要があります。
 
 1. 保存して、エディターを終了します。
 
@@ -283,7 +283,7 @@ Adobe Commerceには複数のが必要です [PHP](../php-settings.md) 正しく
 
    >[!NOTE]
    >
-   >Adobe CommerceまたはMagento Open Sourceをテストする場合は、メモリ制限を 2 G に設定することをお勧めします。 こちらを参照してください [必要な PHP 設定](../php-settings.md) を参照してください。
+   >Adobe Commerceをテストする際は、メモリ制限を 2 G に設定することをお勧めします。 こちらを参照してください [必要な PHP 設定](../php-settings.md) を参照してください。
 
 1. セッションパスディレクトリのコメントを解除し、パスを設定します。
 
@@ -376,13 +376,13 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
    cd /var/www/html
    ```
 
-1. Composer をグローバルにインストール Adobe CommerceまたはMagento Open Sourceをインストールする前に、依存関係を更新するために Composer が必要です。
+1. Composer をグローバルにインストール Adobe Commerceをインストールする前に、依存関係を更新するために Composer が必要です。
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Magento Open SourceまたはAdobe Commerce メタパッケージを使用して Composer プロジェクトを作成します。
+1. Adobe Commerce メタパッケージを使用して Composer プロジェクトを作成します。
 
    **Magento Open Source**
 

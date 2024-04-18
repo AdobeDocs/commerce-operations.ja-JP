@@ -2,9 +2,9 @@
 title: メッセージブローカー
 description: 次の手順に従って、必要なメッセージブローカーソフトウェア（など）をインストールして設定します [!DNL RabbitMQ]）を選択します（Adobe Commerceのオンプレミスインストールの場合）。
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ Adobe Commerceはを使用します [!DNL RabbitMQ] オープンソースのメ�
 
 メッセージキューは、メッセージの送信者と受信者が互いに接触しない非同期通信メカニズムを提供します。 また、メッセージキューと同時に通信する必要もありません。 送信者がメッセージをキューに入れると、受信者が受信するまで保存されます。
 
-Adobe CommerceまたはMagento Open Sourceをインストールする前に、メッセージキューシステムを確立する必要があります。 基本的なシーケンスは次のとおりです。
+Adobe Commerceをインストールする前に、メッセージキューシステムを確立する必要があります。 基本的なシーケンスは次のとおりです。
 
 1. インストール [!DNL RabbitMQ] およびその前提条件。
-1. 接続 [!DNL RabbitMQ] をAdobe CommerceまたはMagento Open Sourceに送信します。
+1. 接続 [!DNL RabbitMQ] をAdobe Commerceに送信します。
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ sudo apt install -y rabbitmq-server
 
 ## でのインストール [!DNL RabbitMQ] と接続
 
-Adobe CommerceまたはMagento Open Sourceをインストールする場合 _後_ をインストールします [!DNL RabbitMQ]をインストールする際に、次のコマンドラインパラメーターを追加します。
+Adobe Commerceのインストール方法 _後_ をインストールします [!DNL RabbitMQ]をインストールする際に、次のコマンドラインパラメーターを追加します。
 
 ```bash
 --amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"
@@ -90,7 +90,7 @@ Adobe CommerceまたはMagento Open Sourceをインストールする場合 _後
 
 ## 接続 [!DNL RabbitMQ]
 
-既にAdobe CommerceまたはMagento Open Sourceがインストールされていて、次への接続を希望する場合： [!DNL RabbitMQ]、を追加します `queue` セクション： `<install_directory>/app/etc/env.php` 次のようにファイルを指定します。
+既にAdobe Commerceをインストールしていて、次への接続を希望する場合： [!DNL RabbitMQ]、を追加します `queue` セクション： `<install_directory>/app/etc/env.php` 次のようにファイルを指定します。
 
 ```php
 'queue' =>

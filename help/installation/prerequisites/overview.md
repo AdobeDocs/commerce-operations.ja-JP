@@ -2,16 +2,16 @@
 title: オンプレミスでのインストールの前提条件
 description: Adobe Commerceのオンプレミスインストールに必要なソフトウェア依存関係について詳しく説明します。
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '316'
 ht-degree: 1%
 
 ---
 
 # オンプレミスでのインストールの前提条件
 
-Adobe CommerceまたはMagento Open Sourceをインストールする前に、次の作業を行う必要があります。
+Adobe Commerceをインストールする前に、次の作業を行う必要があります。
 
 * を満たす 1 つ以上のホストの設定 [必要システム構成](../system-requirements.md).
 * ロードバランシングを使用して複数の web ノードを設定する場合は、システムのその部分を設定してテストします _次の前_ アプリケーションをインストールします。
@@ -19,7 +19,7 @@ Adobe CommerceまたはMagento Open Sourceをインストールする前に、�
 
 >[!NOTE]
 >
->ここでは、にAdobe CommerceまたはMagento Open Sourceをインストールすることを前提としています。 **開発環境**&#x200B;マシンに対するルートユーザーのアクセス権があること。 **および** マシンのセキュリティが高い必要がないこと。 より安全なマシンを設定する場合は、ネットワーク管理者に問い合わせてサポートを依頼することを強くお勧めします。
+>ここでは、にAdobe Commerceをインストールすることを前提としています。 **開発環境**&#x200B;マシンに対するルートユーザーのアクセス権があること。 **および** マシンのセキュリティが高い必要がないこと。 より安全なマシンを設定する場合は、ネットワーク管理者に問い合わせてサポートを依頼することを強くお勧めします。
 
 オペレーティングシステムのソフトウェアを更新およびアップグレードすることを強くお勧めします。 これらのアップグレードにより、将来の問題を防ぐためのセキュリティとソフトウェアの修正が提供される場合があります。 これは何を意味するのか分からない？ こちらをご覧ください [インストールの概要ページ](../overview.md).
 
@@ -70,7 +70,7 @@ Apache をインストールまたはアップグレードするには、を参�
 
 ### MySQL
 
-インストールしているAdobe CommerceまたはMagento Open Sourceのバージョンと互換性のある MySQL のバージョンがあることを確認します。 参照： [必要システム構成](../system-requirements.md) （サポートされているバージョンの場合）
+インストールしているAdobe Commerceのバージョンと互換性のある MySQL のバージョンがあることを確認します。 参照： [必要システム構成](../system-requirements.md) （サポートされているバージョンの場合）
 
 ```bash
 mysql -u <database root user or database owner name> -p
