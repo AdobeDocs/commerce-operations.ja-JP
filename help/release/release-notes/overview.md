@@ -4,7 +4,7 @@ description: 特定のAdobe Commerce リリースの情報の入手先につい�
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
 source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

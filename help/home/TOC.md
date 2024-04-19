@@ -4,8 +4,8 @@ user-guide-description: Adobe Commerce アプリケーションのメンテナ�
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
