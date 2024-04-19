@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Adobe CommerceのデプロイメントでGraphQL Application Server を有効にするには、次の手順に従います。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: a1e548c1b1bffd634e0d5b1df0a77ef65c5997f8
+source-git-commit: b89ed5ddb4c6361de22d4a4439ffcfcc3ec8d474
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '2267'
 ht-degree: 0%
 
 ---
@@ -360,3 +360,40 @@ GraphQL Application Server が無効になった後：
 ### 機能テスト
 
 拡張機能の開発者は、GraphQL Application Server のデプロイ中に、GraphQLの WebAPI 機能テストと、GraphQLのカスタム自動または手動の機能テストを実行する必要があります。 これらの機能テストは、開発者が潜在的なエラーや互換性の問題を特定するのに役立ちます。
+
+#### 状態監視モード
+
+機能テスト（または手動テスト）の実行中、アプリケーションサーバーはで実行できます `--state-monitor mode` 状態が意図せずに再利用されているクラスを見つけるのに役立ちます。 アプリケーションサーバーを通常どおり起動します（を追加する以外） `--state-monitor` パラメーター。
+
+```
+bin/magento server:run --state-monitor
+```
+
+各リクエストが処理されると、新しいファイルがに追加されます。 `tmp` ディレクトリ（例：） `var/tmp/StateMonitor-thread-output-50-6nmxiK`. テストが完了したら、これらのファイルは `bin/magento server:state-monitor:aggregate-output` コマンド。結合された 2 つのファイルを作成します。1 つは `XML` さらに 1: `JSON`.
+
+例：
+
+```
+/var/workspace/var/tmp/StateMonitor-json-2024-04-10T18:50:39Z-hW0ucN.json
+/var/workspace/var/tmp/StateMonitor-junit-2024-04-10T18:50:39Z-oreUco.xml
+```
+
+これらのファイルは、XML または JSON の表示に使用する任意のツールを使用して調べることができます。これにより、GraphQlStateTest などのサービスオブジェクトの変更されたプロパティが表示されます。 この `--state-monitor` モードでは、GraphQlStateTest と同じスキップリストとフィルターリストを使用します。
+
+>[!NOTE]
+>
+>を使用しないでください。 `--state-monitor` モードは実稼動環境にあります。 開発およびテストのみを目的として設計されています。 多くの出力ファイルが作成され、通常よりも実行速度が低下します。
+
+>[!NOTE]
+>
+>`--state-monitor` は、PHP バージョンと互換性がありません。 `8.3.0` - `8.3.4` php のガベージコレクタのバグが原因です。 PHP 8.3 を使用している場合は、以下にアップグレードする必要があります。 `8.3.5` この機能を使用するには、以降のバージョンを使用します。
+
+## 既知の問題
+
+### ワーカースレッドが終了した場合に要求が失われます。
+
+ワーカースレッドに問題があり、ワーカースレッドが終了する場合、同じワーカースレッドにすでにキューされている HTTP 要求は、TCP ソケット接続がリセットされます。 NGINX などのリバースプロキシをサーバーの前に置くと、次のようなエラーが発生します。 `502` エラー。 労働者は、クラッシュ、メモリ不足キラー、またはサードパーティの拡張機能の PHP エラーによって死亡する可能性があります。 この問題は、Swoole の HTTP サーバーのデフォルトの動作が原因で発生します。 デフォルトでは、HTTP サーバーはで起動されます。 `SWOOLE_BASE` モード。 このモードでは、ワーカースレッドがまだ前の要求を処理している場合でも、受信される HTTP 要求がキュー内のワーカースレッドに割り当てられます。 これを「」に変更すると、 `SWOOLE_PROCESS` その後、接続はメインプロセスによって維持され、プロセス間の通信が大幅に使用されます。 ～のマイナス面 `SWOOLE_PROCESS` これは、PHP ZTS をサポートしていないということです。 を読み取る [Swoole ドキュメント](https://wiki.swoole.com/en/#/learn?id=swoole_process) を参照してください。
+
+### アプリケーションサーバーは、特定の条件で以前の属性設定を使用する場合があります。
+
+この `CatalogGraphQl\Model\Config\AttributeReader` 。対象： `2.4.7` には、以前の属性のステート設定を使用してGraphQL リクエストが応答を取得する可能性がある、まれなバグが含まれています。 この修正はで配信されました `2.4-develop`が、に間に合うわけではありません `2.4.7` リリース。
