@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Adobe CommerceのデプロイメントでGraphQL Application Server を有効にするには、次の手順に従います。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: b89ed5ddb4c6361de22d4a4439ffcfcc3ec8d474
+source-git-commit: 81320626a83e26a55f9ec14ce8cb706753b44269
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2293'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,11 @@ GraphQL Application Server を実行するには、以下が必要です。
 
 ### Pro プロジェクトの有効化
 
-GraphQL Application Server を Pro プロジェクトにデプロイする前に、次の手順を実行します。
+>[!NOTE]
+>
+>アプリケーションサーバーは、Cloud Pro インスタンスのオプトイン機能です。 有効にするには、サポートリクエストを送信します。
+
+Pro プロジェクトで Application Server 機能を有効にした後、GraphQL Application Server をデプロイする前に次の手順を実行します。
 
 1. のクラウドテンプレートを使用して、クラウドインフラストラクチャにAdobe Commerceをデプロイします。 [2.4.7-appserver ブランチ](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
 1. すべての Commerce のカスタマイズと拡張機能が次のようになっていることを確認します [互換性](https://developer.adobe.com/commerce/php/development/components/app-server/) （GraphQL Application Server を使用）。
