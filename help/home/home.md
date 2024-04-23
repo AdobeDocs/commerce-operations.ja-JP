@@ -3,7 +3,7 @@ keywords: Adobe Commerce；ホーム；人気のトピック
 title: ホーム
 description: Adobe Commerce システム管理および運用製品ドキュメントのインデックスを参照します。
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: c8093c4575eccc1d012da0e1502eb618c9b048e5
+source-git-commit: 5b294d586b58689a576f411b33d95e4dfa76076e
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 17%
@@ -21,7 +21,7 @@ Adobe Commerce プロジェクトを開発、デプロイ、管理するため�
       <img alt="リリース情報" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>リリース情報</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html"><strong>リリース情報</strong></a>
       <p>Adobe Commerceのパッチとサービスに関するすべてのリリース情報を確認します。</p>
     </div>
   </td>
