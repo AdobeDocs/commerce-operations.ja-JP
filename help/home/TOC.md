@@ -2,26 +2,24 @@
 user-guide-title: 運用ガイド
 user-guide-description: Adobe Commerce アプリケーションのメンテナンスに関する運用面について説明します。
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 9527ce1983340c6438c33b1d07acf4b4b699ccc8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '48'
+ht-degree: 4%
 
 ---
 
 
 # Adobe Commerce運用ガイド {#operational-guides}
 
-- [ホーム](home.md)
-- [リリース情報](https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html)
-- [インストール](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/overview.html)
-- [設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html)
-- [データ移行](https://experienceleague.adobe.com/docs/commerce-operations/tools/data-migration/how-migration-works.html)
-- [アップグレード](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
-- [パフォーマンスのベストプラクティス](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/overview.html)
-- [ツール](https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html)
-- [コマンドラインツール](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-- [実装プレイブック](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html)
-- [運用プレイブック](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
-- [大規模なコマース](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/overview.html)
-- [セキュリティとコンプライアンス](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/overview.html)
+- [運用ガイド ホーム](home.md)
+- [リリース情報](https://experienceleague.adobe.com/en/docs/commerce-operations/release/latest)
+- [パフォーマンス](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/overview)
+- [セキュリティとコンプライアンス](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
+- [実装プレイブック](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/overview)
+- [運用プレイブック](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/overview)
+- [大規模なコマース](https://experienceleague.adobe.com/en/docs/commerce-operations/deliver-commerce-at-scale/overview)
+- [インストール（オンプレミス）](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
+- [設定](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/overview)
+- [アップグレード](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview)
+- [ツール](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/overview)

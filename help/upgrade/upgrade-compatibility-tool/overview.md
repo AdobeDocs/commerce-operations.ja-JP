@@ -2,7 +2,7 @@
 title: の概要 [!DNL Upgrade Compatibility Tool]
 description: について説明します [!DNL Upgrade Compatibility Tool] Adobe Commerce プロジェクトにどのように役立つか、および役立つ情報を提供します。
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: fc1be3362863d3b0fa3468380fe62ca698abac43
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 を使用できます [!DNL Upgrade Compatibility Tool] 次を使用：
 
-- スタンドアロンとして [コマンドラインインターフェイス](../upgrade-compatibility-tool/run.md) ツール。 使用できるコマンドの完全なリストについては、を参照してください [`bin/uct` 参照](/help/reference/uct.md).
+- スタンドアロンとして [コマンドラインインターフェイス](../upgrade-compatibility-tool/run.md) ツール。 使用できるコマンドの完全なリストについては、を参照してください [`bin/uct` 参照](../../tools/reference/uct.md).
 - の統合 [!DNL Upgrade Compatibility Tool] （を使用） [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md).
 - 内での実行設定 [Magento PHPStorm プラグイン](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
 
