@@ -2,9 +2,9 @@
 title: 認証キーの取得
 description: repo.magento.comでAdobe Commerce Composer パッケージにアクセスするための資格情報を取得するには、次の手順に従います。
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: fc63ca58cd2ff7c5ec597751980a39bfbe68aa5f
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,10 @@ Adobe Commerce パッケージへのアクセス権を付与するには、こ�
 
 >[!TIP]
 >
->次に遭遇した場合： [エラー](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)の場合、パッケージにアクセスする権限がないか、アカウントの未払い請求書が原因でアクセス権限が期限切れになっている可能性があります。
+>次に遭遇した場合： [エラー](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)、パッケージにアクセスする権限がない、またはアカウントの未払い請求書が原因でアクセス権限が期限切れになっている可能性があります。
 >
 >* アカウントのプライマリ担当者の場合は、アカウントに未払いの請求書がリストされていないことを確認してください。
->* プライマリ担当者から提供されたキーが機能せず、アカウントに未払いの請求書がない場合は、担当者に連絡します [Adobe Commerce サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) プライマリ連絡先の MAGEID を使用する際にサポートが必要です。
+>* プライマリ担当者から提供されたキーが機能せず、アカウントに未払いの請求書がない場合は、プライマリ担当者が連絡する必要があります [Adobe Commerce サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) お手伝いさせていただきます。
 
 認証キーを作成するには：
 
