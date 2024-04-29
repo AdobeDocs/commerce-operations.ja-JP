@@ -1,31 +1,33 @@
 ---
-title: Composer のプロジェクト構造
-description: グローバルリファレンスアーキテクチャの例で説明されている個別のパッケージオプションを設定および維持する方法について説明します。
+title: Composer プロジェクト構造
+description: グローバルリファレンスアーキテクチャの例で説明されている個別のパッケージオプションを設定および保守する方法について説明します。
 feature: Best Practices
 role: Developer
-source-git-commit: b4213c40fdf903fd962a15fc99b143f31aedbcde
+hide: true
+hidefromtoc: true
+exl-id: 8757d5b8-8309-452f-bfb3-1188a816d14f
+source-git-commit: 80cf4dc2b5c9dd690aee1b224fbe6c766fe8f2ab
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
 
 ---
 
+# Composer プロジェクト構造
 
-# Composer のプロジェクト構造
-
-このガイドでは、 [個別のパッケージオプション](../examples.md#option-1-separate-packages) グローバルリファレンスアーキテクチャ (GRA) の例で説明しています。
+このガイドでは、 [別個のパッケージオプション](../examples.md#option-1-separate-packages) グローバルリファレンスアーキテクチャ（GRA）の例で説明します。
 
 ## 前提条件
 
-開始する前に、次の点を確認します。
+開始する前に、次の点を確認してください。
 
 - Git リポジトリがある
-- Composer リポジトリがあります（このトピックでは、プライベートパッケージリストについて説明します）。
-- Composer リポジトリを `repo.magento.com` および `packagist.org` リポジトリ
+- Composer リポジトリがある（このトピックではプライベート・パッケージ・リストをハイライト表示）
+- Composer リポジトリをミラーするように設定しました。 `repo.magento.com` および `packagist.org` リポジトリ
 
-## メインの Git プロジェクトリポジトリ
+## メイン Git プロジェクトリポジトリ
 
-メインの Git プロジェクトリポジトリには、Composer プロジェクトのみを含める必要があります。 Composer パッケージを使用すると、その他すべてを管理できます。 Composer は依存関係を介して他のすべてのパッケージをインストールするので、メインプロジェクトには次のファイル構造以外のものを含めないでください。
+メイン Git プロジェクトリポジトリには、Composer プロジェクトのみを含める必要があります。 Composer パッケージを使用すると、その他すべてを管理できます。 Composer は依存関係によって他のすべてのパッケージをインストールするため、メイン プロジェクトには次のファイル構造以外のファイルを含めないでください。
 
 ```tree
 ./
@@ -35,7 +37,7 @@ ht-degree: 0%
 └─ composer.lock
 ```
 
-次のコンテンツを `.gitignore` ファイル：
+次の内容をに追加します `.gitignore` ファイル：
 
 ```tree
 /*
@@ -43,9 +45,9 @@ ht-degree: 0%
 !/composer.lock
 ```
 
-## メインプロジェクトを初期化
+## 主プロジェクトの初期化
 
-1. という名前の Git リポジトリを作成します。 `project-<region/country/brand>`.
+1. という Git リポジトリを作成します。 `project-<region/country/brand>`.
 
 1. 作成 `composer.json` および `composer.lock` ファイル：
 
@@ -69,13 +71,13 @@ ht-degree: 0%
 
 ## モジュール以外のファイルを保存
 
-1. 次を追加： `app/etc/config.xml` ファイルを Git リポジトリに保存します。
+1. を追加 `app/etc/config.xml` ファイルを Git リポジトリに追加します。
 
-   作成するモジュールを使用して、他の地域やブランド固有のファイル ( 例： `.htaccess`、Googleまたは Bing 認証テキストファイル、実行可能ファイル、またはAdobe Commerceモジュールで管理されないその他の静的ファイル。
+   作成するモジュールを使用して、他の地域やブランド固有のファイル（など）をインストールできます `.htaccess`、Googleまたは Bing 認証テキストファイル、実行可能ファイル、またはAdobe Commerce モジュールで管理されないその他の静的ファイル。
 
-   用途 `magento2-component` パッケージを入力してファイルマッピングを作成し、次の時点でファイルをメイン Git リポジトリにコピーします。 `composer install` および `composer update` 操作。
+   使用方法 `magento2-component` パッケージを入力して、ファイルのマッピングを作成し、 `composer install` および `composer update` の操作。
 
-1. 命名規則に従って Git リポジトリを作成します。 `component-environment-<region/country/brand>`:
+1. 命名規則に従った Git リポジトリを作成します `component-environment-<region/country/brand>`:
 
    ```bash
    bin/magento module:enable --all
@@ -92,7 +94,7 @@ ht-degree: 0%
    composer config -e
    ```
 
-1. 次を追加： `app/etc/config.php` ファイルを `extra.map` 属性 `composer.json` ファイル：
+1. を追加 `app/etc/config.php` ファイルをマッピングとして： `extra.map` 属性 `composer.json` ファイル：
 
    ```json
    {
@@ -113,7 +115,7 @@ ht-degree: 0%
    }
    ```
 
-1. を検証します。 `composer.json` ファイルを作成し、Git リポジトリにコミットします。
+1. の検証 `composer.json` ファイルを作成して Git リポジトリにコミットします。
 
    ```bash
    composer validate
@@ -163,7 +165,7 @@ ht-degree: 0%
    git push --tags
    ```
 
-1. ブランドメタパッケージの作成：
+1. ブランドメタパッケージを作成します。
 
    ```bash
    cd ..
@@ -184,7 +186,7 @@ ht-degree: 0%
    git push --tags
    ```
 
-1. メインプロジェクトで依存関係管理を通じてコレクションを必要とする：
+1. メイン プロジェクトの依存関係管理を通じてコレクションを必要とする：
 
    ```bash
    cd ../project-<region/country/brand>
@@ -201,32 +203,32 @@ ht-degree: 0%
    git push --tags
    ```
 
-1. Composer が `app/etc/config.php` ファイルから `<client>/component-environment-<region/country/brand>`.
+1. Composer がをコピーしたことを確認します `app/etc/config.php` ファイルの送信元 `<client>/component-environment-<region/country/brand>`.
 
 ## コードのデプロイ
 
-Web サーバー上では、Composer を使用してコードをデプロイできますが、メインプロジェクトを更新することはできません。 新たにデプロイするたびに Composer を使用してプロジェクトを再インストールすると、実稼動サーバーとテストサーバーが Git にアクセスできる必要がなくなります。
+Web サーバーでは、Composer を使用してコードをデプロイできますが、メイン プロジェクトを更新することはできません。 新しいデプロイメントのたびに、Composer を使用してプロジェクトを再インストールします。これにより、実稼動サーバーとテストサーバーが Git にアクセスする必要がなくなります。
 
-## 他のインスタンスとパッケージの追加
+## 他のインスタンスおよびパッケージの追加
 
-各インスタンス ( 地域、ブランドまたはその他の一意のAdobe Commerceインストール ) には、独自のインストールが必要です **主プロジェクト** 例 **特定のメタパッケージ**、および **環境コンポーネントパッケージ**. The **GRA メタパッケージ** は、 **共有** すべてのインスタンス間で
+インスタンス（地域、ブランド、その他の一意のAdobe Commerceのインストール）ごとに独自の情報を取得する必要があります **メイン プロジェクト** インスタンス， **特異的メタパッケージ**、および **環境コンポーネントパッケージ**. この **GRA メタパッケージ** は、 **共有** すべてのインスタンスで。
 
-機能パッケージ (Adobe Commerceのモジュール、テーマ、言語パック、ライブラリなど ) およびサードパーティのパッケージは、次のいずれかの方法で必要になります。
+次のいずれかの方法で、機能パッケージ（Adobe Commerce モジュール、テーマ、言語パック、ライブラリなど）およびサードパーティパッケージを要求する必要があります。
 
-- **GRA メタパッケージ** — インストール先： _すべて_ インスタンス
-- **インスタンス固有のメタパッケージ** — 単一のブランドまたは地域にインストールする場合
+- **GRA メタパッケージ** – にインストールする場合 _all_ instances
+- **インスタンス固有のメタパッケージ** – 単一のブランドまたは地域にインストールする場合
 
 >[!IMPORTANT]
 >
->メインプロジェクトの `composer.json` ファイルを `main` または `release` 分岐。
+>メインプロジェクトのにパッケージを必要としない `composer.json` に関するファイル `main` または `release` ブランチ。
 
 ## 開発の準備
 
-開発の場合は、をインストールします。 `develop` メンテナンスしているすべてのモジュールのバージョン。
+開発のために、をインストール `develop` 管理するすべてのモジュールのバージョン。
 
-分岐戦略によっては、次のことが考えられます。 `develop`, `qa`, `uat`、および `main` 分岐。 各ブランチは、 `dev-` プレフィックス。 この場合、 `develop` ブランチは、Composer を通じてバージョンとして必要になります。 `dev-develop`.
+分岐戦略に応じて、次のいずれかになります `develop`, `qa`, `uat`、および `main` ブランチ。 各ブランチは、 `dev-` プレフィックス。 したがって、 `develop` ブランチは、バージョンとして Composer を通じて必要になる場合があります `dev-develop`.
 
-1. 作成 `develop` は、すべてのモジュールおよびプロジェクトリポジトリのブランチです。
+1. 作成 `develop` すべてのモジュールとプロジェクトリポジトリに分岐します。
 
    ```bash
    cd ../component-environment-<region/country/brand>
@@ -260,7 +262,7 @@ Web サーバー上では、Composer を使用してコードをデプロイで�
    "magento-services/component-environment-fantasy-corp:dev-develop as 0.999"
    ```
 
-   前の手順では、 `composer.json` ファイル：
+   前の手順では、に次の行が生成されます `composer.json` ファイル：
 
    ```json
    "require": {
@@ -272,4 +274,4 @@ Web サーバー上では、Composer を使用してコードをデプロイで�
 
    >[!IMPORTANT]
    >
-   >**結合しない** これら `composer.json` ファイルが実稼動ブランチに変更されます。 に安定したバージョンのパッケージのみをインストールする `release` および `main` 分岐。 これらの依存関係は、 `qa` ブランチおよび他のメイン以外のブランチ。
+   >**結合しない** これらの `composer.json` 実稼動ブランチへのファイルの変更。 安定したバージョンのパッケージのみを次の場所にインストールします： `release` および `main` ブランチ。 これらの依存関係は、 `qa` ブランチと、その他の非メインブランチ。

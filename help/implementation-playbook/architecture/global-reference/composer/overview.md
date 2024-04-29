@@ -1,30 +1,32 @@
 ---
-title: コンポーザーの開発
-description: 「vendor/」ディレクトリでの Composer モジュールのインプレース開発について説明します。
+title: Composer の開発
+description: '''vendor/'' ディレクトリに Composer モジュールをインプレースで開発する方法について説明します。'
 feature: Best Practices
 role: Developer
-source-git-commit: b4213c40fdf903fd962a15fc99b143f31aedbcde
+hide: true
+hidefromtoc: true
+exl-id: 7664ffb5-2e46-49c3-b2e6-c133c35d2f6b
+source-git-commit: 80cf4dc2b5c9dd690aee1b224fbe6c766fe8f2ab
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
 
+# Composer の開発
 
-# コンポーザーの開発
-
-ここでは、Composer モジュールをインプレースで開発する際に推奨されるアプローチについて説明します ( `vendor/` ディレクトリ ) を参照し、それらのモジュールをメインの Git プロジェクトに追加します。
+このトピックでは、Composer モジュールを（内の Git リポジトリとして）インプレースで開発するための推奨アプローチについて説明します。 `vendor/` ディレクトリ）に追加し、それらのモジュールをメイン Git プロジェクトに追加します。
 
 >[!NOTE]
 >
->以下のガイドラインは主に次のものに適用されます。 [グローバルリファレンスアーキテクチャ (GRA)](../overview.md) プロジェクト。
+>これらのガイドラインは主に次のものに適用されます。 [グローバルリファレンスアーキテクチャ（GRA）](../overview.md) プロジェクト。
 
 ## 開発ブランチの準備
 
-1. メイン Git リポジトリの開発ブランチを作成するか、チェックアウトします。
-1. メンテナンスする各モジュールに対して開発バージョンが必要です。
+1. メイン Git リポジトリに開発ブランチを作成またはチェックアウトします。
+1. 保守するモジュールごとに開発バージョンが必要です。
 
-   この例では、メイン Git リポジトリ内のすべてのブランチが Composer パッケージバージョンを表しています。 このシナリオでは、Composer バージョンで推奨される命名規則を次に示します。 `dev-` 支店名が続きます。 例：
+   この例では、メイン Git リポジトリ内のすべてのブランチが Composer パッケージ バージョンを表します。 このシナリオの Composer バージョンの推奨命名規則は次のとおりです `dev-` + ブランチ名。 例：
 
    - `dev-develop`
    - `dev-qa`
@@ -33,19 +35,19 @@ ht-degree: 0%
    composer require client/module-example:dev-develop
    ```
 
-1. 別の Composer パッケージに特定のバージョンのモジュールが必要な場合 ( 例： `client/module-example 1.0.12`)、エイリアスを使用してインストールします。
+1. 別の Composer パッケージで特定のバージョンのモジュールが必要な場合（例： `client/module-example 1.0.12`）、エイリアスを使用してインストールします。
 
    ```bash
    composer require 'client/module-example:dev-develop as 1.0.12'
    ```
 
-   の `qa` ブランチ、置換 `dev-develop` 次を使用 `dev-qa`.
+   の場合 `qa` 分岐、置換 `dev-develop` （を使用） `dev-qa`.
 
-## パッケージの Git リポジトリーへの変換
+## パッケージの Git リポジトリへの変換
 
-デフォルトでは、パッケージには `.git/` ディレクトリ。 Composer では、事前にビルドされた Composer パッケージを使用する代わりに、Git からパッケージをチェックアウトできます。 このアプローチの利点は、開発中にパッケージを簡単に変更できる点です。
+デフォルトでは、パッケージにはが含まれていません。 `.git/` ディレクトリ。 Composer は、事前にビルドされた Composer パッケージを使用する代わりに、Git からパッケージをチェックアウトできます。 このアプローチの利点は、開発時にパッケージを簡単に変更できることです。
 
-1. からモジュールを削除します。 `vendor/` ディレクトリ。
+1. からモジュールを削除 `vendor/` ディレクトリ。
 
    ```bash
    rm -rf vendor/client/module-example
@@ -64,16 +66,16 @@ ht-degree: 0%
    git remote -v
    ```
 
-1. 複数のモジュールを Git リポジトリ（例えば、「クライアント」モジュール）にバッチ変換するには：
+1. 複数のモジュールを Git リポジトリ（「クライアント」モジュールなど）にバッチ変換するには：
 
    ```bash
    rm -rf vendor/client
    composer install --prefer-source
    ```
 
-## 開発を開始
+## 開発の開始
 
-1. フィーチャ/作業ブランチを作成またはチェックアウトします。 次の例は、Jira チケットと同じ名前のブランチを示しています。
+1. フィーチャー/作業ブランチを作成またはチェックアウトします。 次の例は、Jira チケットと同じ名前のブランチを示しています。
 
    ```bash
    cd vendor/client/module-example
@@ -81,16 +83,16 @@ ht-degree: 0%
    git checkout -b JIRA-1200
    ```
 
-1. モジュール内のブランチを変更した後で、Adobe Commerceのキャッシュと静的コンテンツをフラッシュして変更を確認します。
+1. モジュールでブランチを変更した後、Adobe Commerceのキャッシュと静的コンテンツをフラッシュして、変更を確認します。
 
    ```bash
    bin/magento cache:flush
    bin/magento module:enable --all --clear-static-content
    ```
 
-## 開発環境でメインプロジェクトを更新する
+## 開発した主プロジェクトの更新
 
-メインの Git リポジトリを更新するには、 `composer.lock` ファイル。 モジュールが新しい場合は、有効にします。
+を変更して、メイン Git リポジトリを更新します。 `composer.lock` ファイル。 新しいモジュールの場合は、有効にします。
 
 ```bash
 # to update your packages and all dependencies of the package

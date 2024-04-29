@@ -1,31 +1,33 @@
 ---
 title: グローバルリファレンスアーキテクチャの例
-description: 大規模なAdobe Commerceプロジェクトのコード管理の例を参照してください。
+description: 大規模なAdobe Commerce プロジェクトのコード管理の例を参照してください。
 role: Developer, Architect
 level: Experienced
-source-git-commit: 64f330919abab9644de1163c9a6d6501a9c50cc1
+hide: true
+hidefromtoc: true
+exl-id: 2a85b9bf-e547-4a2a-9234-210865f55609
+source-git-commit: 80cf4dc2b5c9dd690aee1b224fbe6c766fe8f2ab
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
 
-
 # グローバルリファレンスアーキテクチャの例
 
-このトピックでは、 [グローバルリファレンスアーキテクチャ (GRA)](overview.md) コードベース。 ただし、 [別個のパッケージ](#option-1-separate-packages) オプションをお勧めします。状況によっては、以下に示す他のオプションの 1 つが必要になる場合があります。
+このトピックでは、を整理する一般的な方法について説明します [グローバルリファレンスアーキテクチャ（GRA）](overview.md) コードベース。 ただし、 [別個のパッケージ](#option-1-separate-packages) オプションをお勧めします。状況によっては、次に説明する他のオプションのいずれかが必要な場合があります。
 
 ## 定義
 
 {{$include /help/_includes/gra-definitions.md}}
 
-## オプション 1：パッケージを分割する
+## オプション 1：パッケージを分離する
 
-詳しくは、 [Composer のプロジェクト構造](composer/project-structure.md) このメソッドの設定に関するベストプラクティスを紹介します。
+参照： [Composer プロジェクト構造](composer/project-structure.md) このメソッドの設定のベストプラクティス。
 
-![グローバルリファレンスアーキテクチャ用の個別のパッケージオプションを示す図](../../../assets/playbooks/gra-separate-packages.png)
+![グローバルリファレンスアーキテクチャの別個のパッケージオプションを示す図](../../../assets/playbooks/gra-separate-packages.png)
 
-GRA Composer パッケージを管理する最も柔軟な方法は、メタパッケージを通じてです。 メタパッケージには `composer.json` ファイルのみ。他のパッケージの依存関係を定義します。 次を使用してメタパッケージを作成 [プライベートパッケージスト](https://packagist.com/) リポジトリー。
+GRA Composer パッケージを管理する最も柔軟な方法は、メタパッケージを使用することです。 メタパッケージには `composer.json` ファイルのみ。他のパッケージ依存関係を定義します。 を使用したメタパッケージの作成 [プライベート パッケージ担当者](https://packagist.com/) リポジトリ。
 
 ### 主プロジェクト `composer.json`
 
@@ -80,15 +82,15 @@ GRA Composer パッケージを管理する最も柔軟な方法は、メタパ�
 }
 ```
 
-各モジュール、言語パック、テーマおよびライブラリには、独自の Git リポジトリがあります。 各 Git リポジトリはプライベートパッケージリストリポジトリに自動的に同期され、 `composer.json` ファイルを Git リポジトリのルートに配置します。
+各モジュール、言語パック、テーマおよびライブラリには、独自の Git リポジトリがあります。 各 Git リポジトリは、プライベートパッケージリポジトリーに対して自動的に同期し、 `composer.json` git リポジトリーのルートにあるファイルです。
 
-## オプション 2：一括パッケージ
+## オプション 2：バルクパッケージ
 
-以下に、1 つの Composer パッケージ内の複数のモジュールの例を示します。
+以下は、1 つの Composer パッケージ内の複数モジュールの例です。
 
-バルクパッケージには、同じタイプのパッケージのみを含めることができます。 例えば、Adobe Commerceのモジュール、テーマ、言語パック、ライブラリのパッケージが複数ある場合は、タイプごとに個別のバルクパッケージを作成する必要があります。
+バルクパッケージには、同じタイプのパッケージのみを含めることができます。 例えば、Adobe Commerceのモジュール、テーマ、言語パックおよびライブラリ用のパッケージが複数ある場合、種類ごとに個別のバルクパッケージを作成する必要があります。
 
-ベンダーディレクトリ内のファイル構造は、次の例のようになります。 ただし、プロジェクトを確認して、Git リポジトリに何を含めるかを確認してください )。
+ベンダーディレクトリ内のファイル構造は、次の例のようになります。 ただし、プロジェクトを調べて、Git リポジトリーに含める必要があるものを確認してください。
 
 ```tree
 .
@@ -107,7 +109,7 @@ GRA Composer パッケージを管理する最も柔軟な方法は、メタパ�
             └── composer.json
 ```
 
-The `composer.json` ファイルは次のようになります。
+この `composer.json` ファイルは次のようになります。
 
 ```json
 {
@@ -136,25 +138,25 @@ The `composer.json` ファイルは次のようになります。
 
 このアーキテクチャでは、次の 4 つの Git リポジトリを使用してコードを保存します。
 
-- `core`:Adobe Commerceのコアインストールが含まれます。 Adobe Commerceのバージョンをアップグレードするために使用されます。
-- `GRA`:GRA コードが含まれます。 すべての GRA モジュール、言語パック、ホワイトラベルテーマ、およびライブラリ。
+- `core`:Adobe Commerce コアインストールが含まれます。 Adobe Commerceのバージョンをアップグレードするために使用されます。
+- `GRA`:GRA コードが含まれます。 すべての GRA モジュール、言語パック、ホワイト・ラベル・テーマ、ライブラリ。
 - `brand/region`：各ブランドまたは地域には、ブランド固有または地域固有のコードのみを含む独自のリポジトリがあります。
-- `release`：上記のすべてがこの Git リポジトリに結合されます。 ここでは結合コミットのみを使用できます。
+- `release`：上記のすべてが、この Git リポジトリに結合されます。 ここでは結合コミットのみを使用できます。
 
-![グローバルリファレンスアーキテクチャの分割 Git オプションを示す図](../../../assets/playbooks/gra-split-git.png)
+![グローバル参照アーキテクチャ用の分割 Git オプションを示す図](../../../assets/playbooks/gra-split-git.png)
 
 このオプションを設定するには：
 
-1. Git で 4 つのリポジトリタイプを作成します。 を作成します。 `core` および `GRA` を 1 回だけリポジトリします。 1 つ作成 `brand/region` 一つ `release` 各ブランドのリポジトリ。
+1. Git に 4 つのリポジトリタイプを作成します。 を作成 `core` および `GRA` リポジトリーは 1 回のみ。 1 つ作成 `brand/region` と 1 `release` 各ブランドのリポジトリ。
 
-   推奨リポジトリ名：
+   リポジトリ名の候補：
 
    - `m2-core`
    - `m2-gra`
-   - `m2-region-x`/`m2-brand-x` ( 例： `m2-emea`/`m2-adobe`)
-   - `m2-release-region-x`/`m2-release-brand-x` ( 例： `m2-release-emea`/`m2-release-adobe`)
+   - `m2-region-x`/`m2-brand-x` （例： `m2-emea`/`m2-adobe`）
+   - `m2-release-region-x`/`m2-release-brand-x` （例： `m2-release-emea`/`m2-release-adobe`）
 
-1. の作成 `release/` ディレクトリに移動し、以下を実行して、すべてのリポジトリの共有 Git 履歴を作成します。
+1. を作成 `release/` ディレクトリに移動し、以下を実行して、すべてのリポジトリの共有 Git 履歴を作成します。
 
    ```bash
    git init
@@ -171,7 +173,7 @@ The `composer.json` ファイルは次のようになります。
    git push region-x master
    ```
 
-1. 各リポジトリを複製（例外） `core`（コンピューター上の別のディレクトリにある）
+1. 次を除き、各リポジトリをクローンします `core`：コンピューターの別のディレクトリにあります。
 
    ```bash
    git clone git@github.com:example-client/m2-release-brand-x.git
@@ -179,7 +181,7 @@ The `composer.json` ファイルは次のようになります。
    git clone git@github.com:example-client/m2-gra.git
    ```
 
-1. [Composer でのAdobe Commerceのインストール](../../../installation/composer.md). を削除します。 `.gitignore` ファイルを開き、 `core` リモート、コードの追加とコミット、およびプッシュ。
+1. [Composer によるAdobe Commerceのインストール](../../../installation/composer.md). を削除 `.gitignore` ファイル、を追加 `core` コードをリモートから追加してコミットし、プッシュします。
 
    ```bash
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition m2-core
@@ -194,18 +196,18 @@ The `composer.json` ファイルは次のようになります。
    git push
    ```
 
-1. Adobe Analytics の `GRA` リポジトリの場合は、次のディレクトリを作成します。
+1. が含まれる `GRA` リポジトリで、次のディレクトリを作成します。
 
    - `app/code/`
    - `app/design/`
    - `app/i18n/`
    - `lib/`
 
-1. コードを追加します。 を削除します。 `.gitignore` ファイル、コードの追加とコミット、リモートの追加、プッシュを行います。
+1. コードを追加します。 を削除 `.gitignore` コードをファイルに追加してコミットし、リモートを追加してプッシュします。
 
-1. Adobe Analytics の `brand/region` リポジトリ。 の場合と同様にします。 `GRA` リポジトリを作成し、ファイルは一意である必要があります。 このリポジトリと `GRA` リポジトリ。
+1. が含まれる `brand/region` リポジトリ。 と同じようにします。 `GRA` リポジトリを使用します。ファイルは一意である必要があります。 このリポジトリーとフォルダーの両方に同じファイルを含めることはできません `GRA` リポジトリ。
 
-1. Adobe Analytics の `release` リポジトリー、結合を適用します。
+1. が含まれる `release` リポジトリで、結合を適用します。
 
    ```bash
    git clone git@github.com:example-client/m2-release-brand-x.git
@@ -218,9 +220,9 @@ The `composer.json` ファイルは次のようになります。
    git push
    ```
 
-1. を削除します。 `.gitkeep` ファイル。
+1. を削除 `.gitkeep` ファイル。
 
-1. をデプロイします。 `release` リポジトリを実稼動、テスト、QA および開発サーバーに追加します。 アップグレード `core`, `GRA`、および `brand` 次のコマンドを簡単に実行できます。
+1. のデプロイ `release` 実稼動サーバー、テストサーバー、QA サーバー、開発サーバーへのリポジトリ。 アップグレード `core`, `GRA`、および `brand` 次のコマンドを実行すると、コードを簡単に実行できます。
 
    ```bash
    git fetch --all
@@ -228,41 +230,41 @@ The `composer.json` ファイルは次のようになります。
    git push
    ```
 
-## オプション 4：モノレポ（推奨）
+## オプション 4:Monorepo （推奨）
 
-この方法は、Magento Open SourceGit リポジトリの動作方法を密接に模倣します。
+この方法は、Magento Open Source Git リポジトリの動作と非常によく似ています。
 
-すべてのコードは、1 つのリポジトリで開発およびテストされます。 自動処理では、この単一のリポジトリからパッケージを表示します。このパッケージは、Composer を使用して UAT および実稼動環境にインストールできます。
+すべてのコードは、1 つのリポジトリで開発およびテストされます。 自動処理では、Composer を使用して UAT および実稼動環境にインストールできるこの単一のリポジトリからパッケージを抽出します。
 
-![グローバルリファレンスアーキテクチャの単数参照オプションを示す図](../../../assets/playbooks/gra-monorepo1.png)
+![グローバルリファレンスアーキテクチャの monorepo オプションを示す図](../../../assets/playbooks/gra-monorepo1.png)
 
-Monorepo オプションを使用すると、1 つのリポジトリでの作業が簡単になると同時に、パッケージを使用してインスタンスを柔軟に作成できます。
+monorepo オプションを使用すると、単一のリポジトリーで簡単に操作できるだけでなく、パッケージを使用してインスタンスを柔軟に構成することもできます。
 
-バージョン管理とパッケージの蒸留は、GitHub アクションまたは GitLab アクションを使用して自動化されます。
+バージョン管理とパッケージの蒸留は、GitHub Actions または GitLab Actions を使用した自動化によって行われます。
 
-![グローバルリファレンスアーキテクチャの単数参照オプションを示す図](../../../assets/playbooks/gra-monorepo2.png)
+![グローバルリファレンスアーキテクチャの monorepo オプションを示す図](../../../assets/playbooks/gra-monorepo2.png)
 
-この自動化の詳細については、次のリソースを参照してください。
+この自動処理について詳しくは、次のリソースを参照してください。
 
 - [https://github.com/symplify/monorepo-builder](https://github.com/symplify/monorepo-builder)
 - [https://github.com/danharrin/monorepo-split-github-action](https://github.com/danharrin/monorepo-split-github-action)
 
 >[!TIP]
 >
->モノレポの設定は高度ですが、最も柔軟性が高く、最も低いオーバーヘッドコストで実現します。
+>モノリポジトリの設定は進んでいますが、最も柔軟性が高く、オーバーヘッドのコストも低くなります。
 
-## 戦略を混在させない
+## 戦略を混在させないでください
 
-GRA パッケージと `app/` ブランドまたは地域パッケージのディレクトリ。
+Composer を使用して GRA パッケージと `app/` ブランドまたは地域パッケージのディレクトリ。
 
-全てを手に入れるだけではありません _メリット_ しかも、 _デメリット_ 両方のメソッドの 最適に動作させるには、どちらか一方（Git または Composer）を選択する必要があります。
+あなただけのすべてを得るわけではない _メリット_ しかしまた、すべて _デメリット_ 両方のメソッド。 最適に動作させるには、いずれか（Git または Composer）を選択する必要があります。
 
 ## 回避するソリューション
 
 - **GRA またはブランドを示すモジュール命名規則**
 
-  GRA またはブランドを示す命名モジュールは、柔軟性の欠如を引き起こします。 代わりに、Composer のメタパッケージを使用して、モジュールが属するグループを特定します。 例えば、顧客 VF の場合、パッケージ `vf/meta-gra` には、すべての GRA パッケージへの参照が含まれ、 `composer require vf/meta-gra` コマンドを使用します。 パッケージ `vf/meta-kipling` には、すべての Kipling 固有のパッケージおよび `vf/meta-gra` パッケージ。 モジュール名は `vf/module-sales` および `vf/module-sap` 例： この命名規則を使用すると、ブランドと GRA のステータスの間でパッケージを移動でき、影響は低くなります。
+  GRA またはブランドを示すためにモジュールに名前を付けると、柔軟性の欠如を招きます。 代わりに、Composer メタパッケージを使用して、モジュールが属するグループを判別します。 例えば、顧客 VF の場合、パッケージ `vf/meta-gra` すべての GRA パッケージへの参照が含まれており、 `composer require vf/meta-gra` コマンド。 パッケージ `vf/meta-kipling` すべての Kipling 固有のパッケージへの参照と `vf/meta-gra` パッケージ。 モジュールには名前が付けられています `vf/module-sales` および `vf/module-sap` 例： この命名規則を使用すると、パッケージをブランドと GRA のステータスの間で低い影響で移動できます。
 
-- **Adobe Commerce core upgrades per instance**
+- **インスタンスごとのAdobe Commerce コアアップグレード**
 
-  様々なブランドや地域で可能な限り近いタイミングで実行するために、Adobe Commerceのコアアップグレード（パッチアップグレードを含む）をスケジュールします。 共有モジュールで複数のAdobe Commerceバージョンをサポートすると、互換性の制約が原因でモジュールが分岐し、メンテナンス作業が 2 倍以上になります。 通常の開発を続行する前に、すべてのインスタンスが同じAdobe Commerceバージョンで実行されていることを確認することで、この増加した作業を防ぎます。
+  様々なブランドや地域ができるだけ近い場所で実行されるように、Adobe Commerce コアアップグレード（パッチアップグレードを含む）をスケジュールします。 共有モジュールで複数のAdobe Commerce バージョンをサポートすると、互換性の制約が原因でモジュールがフォークされ、メンテナンス作業が 2 倍以上になります。 通常の開発を続行する前に、すべてのインスタンスが同じAdobe Commerce バージョンで実行されていることを確認することで、このような手間の増加を防ぐことができます。
