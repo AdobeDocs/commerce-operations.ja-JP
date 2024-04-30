@@ -2,7 +2,7 @@
 title: 運用ガイド ホーム
 description: Adobe Commerce システム管理および運用製品ドキュメントのインデックスを参照します。
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 0e3d5c0f7c0636bb690eea8643afdace074f0ffd
+source-git-commit: a33d12a055db0cb4a4c8f64992d6ebf77842cbe7
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 20%
@@ -19,11 +19,11 @@ ht-degree: 20%
 <table>
 <tr>
   <td valign="top">
-    <a href="../release/latest.md">
+    <a href="../release/release-notes/overview.md">
       <img alt="リリース情報" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="../release/latest.md"><strong>リリース情報</strong></a>
+      <a href="../release/release-notes/overview.md"><strong>リリース情報</strong></a>
       <p>Adobe Commerceのパッチとサービスに関するすべてのリリース情報を確認します。</p>
     </div>
   </td>
