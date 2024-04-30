@@ -1,11 +1,11 @@
 ---
 user-guide-title: 運用ガイド
-user-guide-description: Adobe Commerce アプリケーションのメンテナンスに関する運用面について説明します。
+user-guide-description: Adobe Commerce アプリケーションの保守の運用面について説明します。
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
 source-git-commit: 9527ce1983340c6438c33b1d07acf4b4b699ccc8
 workflow-type: tm+mt
 source-wordcount: '48'
-ht-degree: 4%
+ht-degree: 27%
 
 ---
 
