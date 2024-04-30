@@ -1,7 +1,7 @@
 ---
-source-git-commit: 755ea50a75924cc16f690ff888367abd305565e9
+source-git-commit: 19d19ef385cf4aaee3a255930af8e6d3b81de23a
 workflow-type: tm+mt
-source-wordcount: '18031'
+source-wordcount: '17795'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,12 @@ ht-degree: 0%
 
 ## `_complete`
 
-シェル補完の候補を提供する内部コマンド
-
 ```bash
 bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
+
+シェル補完の候補を提供する内部コマンド
+
 
 ### `--shell`, `-s`
 
@@ -65,7 +66,7 @@ bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURREN
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -114,10 +115,40 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `completion`
 
-シェル完了スクリプトをダンプ
-
 ```bash
 bin/magento completion [--debug] [--] [<shell>]
+```
+
+シェル完了スクリプトをダンプ
+
+
+```
+The completion command dumps the shell completion script required
+to use shell autocompletion (currently, bash, fish, zsh completion are supported).
+
+Static installation
+-------------------
+
+Dump the script to a global completion file and restart your shell:
+
+    bin/magento completion  | sudo tee /etc/bash_completion.d/magento
+
+Or dump the script to a local file and source it:
+
+    bin/magento completion  > completion.sh
+
+    # source the file whenever you use the project
+    source completion.sh
+
+    # or add this line at the end of your "~/.bashrc" file:
+    source /path/to/completion.sh
+
+Dynamic installation
+--------------------
+
+Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
+
+    eval "$(/var/www/html/magento2/bin/magento completion )"
 ```
 
 
@@ -135,7 +166,7 @@ bin/magento completion [--debug] [--] [<shell>]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -184,10 +215,23 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `help`
 
-コマンドのヘルプを表示する
-
 ```bash
 bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
+```
+
+コマンドのヘルプを表示する
+
+
+```
+The help command displays help for a given command:
+
+  bin/magento help list
+
+You can also output the help in other formats by using the --format option:
+
+  bin/magento help --format=xml list
+
+To display the list of available commands, please use the list command.
 ```
 
 
@@ -214,7 +258,7 @@ bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -263,10 +307,29 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `list`
 
-コマンドのリスト
-
 ```bash
 bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
+```
+
+コマンドのリスト
+
+
+```
+The list command lists all commands:
+
+  bin/magento list
+
+You can also display the commands for a specific namespace:
+
+  bin/magento list test
+
+You can also output the information in other formats by using the --format option:
+
+  bin/magento list --format=xml
+
+It's also possible to get raw list of commands (useful for embedding command runner):
+
+  bin/magento list --raw
 ```
 
 
@@ -298,7 +361,7 @@ bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -347,15 +410,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `admin:adobe-ims:disable`
 
-Adobe IMSモジュールを無効にする
-
 ```bash
 bin/magento admin:adobe-ims:disable
 ```
 
+Adobe IMSモジュールを無効にする
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -404,11 +468,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `admin:adobe-ims:enable`
 
-Adobe IMSモジュールを有効にします。
-
 ```bash
 bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|--client-id [CLIENT-ID]] [-s|--client-secret [CLIENT-SECRET]] [-t|--2fa [2FA]]
 ```
+
+Adobe IMSモジュールを有効にします。
+
 
 ### `--organization-id`, `-o`
 
@@ -436,7 +501,7 @@ Adobe Admin Consoleで 2FA が組織に対して有効になっているかど�
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -485,15 +550,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `admin:adobe-ims:info`
 
-Adobe IMSモジュールの設定に関する情報
-
 ```bash
 bin/magento admin:adobe-ims:info
 ```
 
+Adobe IMSモジュールの設定に関する情報
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -542,15 +608,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `admin:adobe-ims:status`
 
-Adobe IMSモジュールのステータス
-
 ```bash
 bin/magento admin:adobe-ims:status
 ```
 
+Adobe IMSモジュールのステータス
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -599,11 +666,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `admin:user:create`
 
-管理者を作成
-
 ```bash
 bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-PASSWORD] [--admin-email ADMIN-EMAIL] [--admin-firstname ADMIN-FIRSTNAME] [--admin-lastname ADMIN-LASTNAME] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+管理者を作成
+
 
 ### `--admin-user`
 
@@ -643,7 +711,7 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -692,10 +760,17 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `admin:user:unlock`
 
-管理者アカウントのロックを解除
-
 ```bash
 bin/magento admin:user:unlock <username>
+```
+
+管理者アカウントのロックを解除
+
+
+```
+This command unlocks an admin account by its username.
+To unlock:
+      bin/magento admin:user:unlock username
 ```
 
 
@@ -707,7 +782,7 @@ bin/magento admin:user:unlock <username>
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -756,11 +831,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `app:config:dump`
 
-アプリケーションのダンプを作成
-
 ```bash
 bin/magento app:config:dump [<config-types>...]
 ```
+
+アプリケーションのダンプを作成
+
 
 
 ### `config-types`
@@ -773,7 +849,7 @@ bin/magento app:config:dump [<config-types>...]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -822,15 +898,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `app:config:import`
 
-共有設定ファイルから適切なデータストレージへのデータの読み込み
-
 ```bash
 bin/magento app:config:import
 ```
 
+共有設定ファイルから適切なデータストレージへのデータの読み込み
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -879,15 +956,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `app:config:status`
 
-構成の伝達に更新が必要かどうかを確認します
-
 ```bash
 bin/magento app:config:status
 ```
 
+構成の伝達に更新が必要かどうかを確認します
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -936,11 +1014,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `braintree:migrate`
 
-保管されたカードをMagento1 データベースから移行する
-
 ```bash
 bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password PASSWORD]
 ```
+
+保管されたカードをMagento1 データベースから移行する
+
 
 ### `--host`
 
@@ -968,7 +1047,7 @@ bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNA
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -1017,11 +1096,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `cache:clean`
 
-キャッシュタイプをクリーンアップします
-
 ```bash
 bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+キャッシュタイプをクリーンアップします
+
 
 
 ### `types`
@@ -1040,7 +1120,7 @@ bootstrap のパラメーターの追加または上書き
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -1089,11 +1169,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `cache:disable`
 
-キャッシュタイプを無効にします
-
 ```bash
 bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+キャッシュタイプを無効にします
+
 
 
 ### `types`
@@ -1112,7 +1193,7 @@ bootstrap のパラメーターの追加または上書き
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -1161,11 +1242,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `cache:enable`
 
-キャッシュタイプを有効にする
-
 ```bash
 bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+キャッシュタイプを有効にする
+
 
 
 ### `types`
@@ -1184,7 +1266,7 @@ bootstrap のパラメーターの追加または上書き
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -1233,11 +1315,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `cache:flush`
 
-キャッシュタイプで使用されるキャッシュストレージをフラッシュします
-
 ```bash
 bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+キャッシュタイプで使用されるキャッシュストレージをフラッシュします
+
 
 
 ### `types`
@@ -1256,7 +1339,7 @@ bootstrap のパラメーターの追加または上書き
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -1305,11 +1388,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `cache:status`
 
-キャッシュステータスを確認します
-
 ```bash
 bin/magento cache:status [--bootstrap BOOTSTRAP]
 ```
+
+キャッシュステータスを確認します
+
 
 ### `--bootstrap`
 
@@ -1319,7 +1403,7 @@ bootstrap のパラメーターの追加または上書き
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -1368,11 +1452,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `catalog:images:resize`
 
-サイズ変更された製品画像を作成
-
 ```bash
 bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 ```
+
+サイズ変更された製品画像を作成
+
 
 ### `--async`, `-a`
 
@@ -1390,7 +1475,7 @@ bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -1439,15 +1524,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `catalog:product:attributes:cleanup`
 
-未使用の製品属性を削除します。
-
 ```bash
 bin/magento catalog:product:attributes:cleanup
 ```
 
+未使用の製品属性を削除します。
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -1496,11 +1582,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `cms:wysiwyg:restrict`
 
-ユーザーHTML コンテンツの検証を強制するか、代わりに警告を表示するかを設定します
-
 ```bash
 bin/magento cms:wysiwyg:restrict <restrict>
 ```
+
+ユーザーHTML コンテンツの検証を強制するか、代わりに警告を表示するかを設定します
+
 
 
 ### `restrict`
@@ -1511,7 +1598,7 @@ y\n
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -1560,11 +1647,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `config:sensitive:set`
 
-機密性の高い設定値を設定
-
 ```bash
 bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path> [<value>]]
 ```
+
+機密性の高い設定値を設定
+
 
 
 ### `path`
@@ -1600,7 +1688,7 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -1649,11 +1737,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `config:set`
 
-システム設定の変更
-
 ```bash
 bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env] [-c|--lock-config] [-l|--lock] [--] <path> <value>
 ```
+
+システム設定の変更
+
 
 
 ### `path`
@@ -1704,7 +1793,7 @@ section/group/field_name 形式の設定パス
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -1753,11 +1842,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `config:show`
 
-指定されたパスの設定値を表示します。 パスを指定しない場合、保存されたすべての値が表示されます
-
 ```bash
 bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path>]
 ```
+
+指定されたパスの設定値を表示します。 パスを指定しない場合、保存されたすべての値が表示されます
+
 
 
 ### `path`
@@ -1781,7 +1871,7 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -1830,11 +1920,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `cron:install`
 
-現在のユーザーの crontab を生成してインストールします
-
 ```bash
 bin/magento cron:install [-f|--force] [-d|--non-optional]
 ```
+
+現在のユーザーの crontab を生成してインストールします
+
 
 ### `--force`, `-f`
 
@@ -1852,7 +1943,7 @@ bin/magento cron:install [-f|--force] [-d|--non-optional]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -1901,15 +1992,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `cron:remove`
 
-crontab からタスクを削除します
-
 ```bash
 bin/magento cron:remove
 ```
 
+crontab からタスクを削除します
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -1958,11 +2050,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `cron:run`
 
-スケジュール別にジョブを実行
-
 ```bash
 bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootstrap BOOTSTRAP]
 ```
+
+スケジュール別にジョブを実行
+
 
 ### `--group`
 
@@ -1985,7 +2078,7 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -2034,15 +2127,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `customer:hash:upgrade`
 
-最新のアルゴリズムに従って顧客のハッシュをアップグレードする
-
 ```bash
 bin/magento customer:hash:upgrade
 ```
 
+最新のアルゴリズムに従って顧客のハッシュをアップグレードする
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -2091,11 +2185,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `deploy:mode:set`
 
-アプリケーション モードを設定します。
-
 ```bash
 bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 ```
+
+アプリケーション モードを設定します。
+
 
 
 ### `mode`
@@ -2113,7 +2208,7 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -2162,15 +2257,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `deploy:mode:show`
 
-現在のアプリケーション モードを表示します。
-
 ```bash
 bin/magento deploy:mode:show
 ```
 
+現在のアプリケーション モードを表示します。
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -2219,11 +2315,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `dev:di:info`
 
-コマンドの依存関係の挿入構成に関する情報を提供します。
-
 ```bash
 bin/magento dev:di:info <class>
 ```
+
+コマンドの依存関係の挿入構成に関する情報を提供します。
+
 
 
 ### `class`
@@ -2234,7 +2331,7 @@ bin/magento dev:di:info <class>
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -2283,15 +2380,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `dev:email:newsletter-compatibility-check`
 
-ニュースレターテンプレートをスキャンして、変数の使用に関する互換性の潜在的な問題がないか確認します
-
 ```bash
 bin/magento dev:email:newsletter-compatibility-check
 ```
 
+ニュースレターテンプレートをスキャンして、変数の使用に関する互換性の潜在的な問題がないか確認します
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -2340,15 +2438,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `dev:email:override-compatibility-check`
 
-メールテンプレートの上書きをスキャンして、変数の使用に関する潜在的な互換性の問題を調べます
-
 ```bash
 bin/magento dev:email:override-compatibility-check
 ```
 
+メールテンプレートの上書きをスキャンして、変数の使用に関する潜在的な互換性の問題を調べます
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -2397,15 +2496,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `dev:profiler:disable`
 
-プロファイラーを無効にします。
-
 ```bash
 bin/magento dev:profiler:disable
 ```
 
+プロファイラーを無効にします。
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -2454,11 +2554,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `dev:profiler:enable`
 
-プロファイラーを有効にします。
-
 ```bash
 bin/magento dev:profiler:enable [<type>]
 ```
+
+プロファイラーを有効にします。
+
 
 
 ### `type`
@@ -2468,7 +2569,7 @@ bin/magento dev:profiler:enable [<type>]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -2517,15 +2618,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `dev:query-log:disable`
 
-DB クエリ ログを無効にする
-
 ```bash
 bin/magento dev:query-log:disable
 ```
 
+DB クエリ ログを無効にする
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -2574,11 +2676,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `dev:query-log:enable`
 
-DB クエリ ログを有効にする
-
 ```bash
 bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [--query-time-threshold [QUERY-TIME-THRESHOLD]] [--include-call-stack [INCLUDE-CALL-STACK]]
 ```
+
+DB クエリ ログを有効にする
+
 
 ### `--include-all-queries`
 
@@ -2603,7 +2706,7 @@ bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -2652,11 +2755,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `dev:source-theme:deploy`
 
-テーマのソースファイルを収集して公開します。
-
 ```bash
 bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA] [--theme THEME] [--] [<file>...]
 ```
+
+テーマのソースファイルを収集して公開します。
+
 
 
 ### `file`
@@ -2697,7 +2801,7 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -2746,15 +2850,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `dev:template-hints:disable`
 
-フロントエンドテンプレートヒントを無効にします。 キャッシュのフラッシュが必要になる場合があります。
-
 ```bash
 bin/magento dev:template-hints:disable
 ```
 
+フロントエンドテンプレートヒントを無効にします。 キャッシュのフラッシュが必要になる場合があります。
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -2803,15 +2908,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `dev:template-hints:enable`
 
-フロントエンドテンプレートヒントを有効にする。 キャッシュのフラッシュが必要になる場合があります。
-
 ```bash
 bin/magento dev:template-hints:enable
 ```
 
+フロントエンドテンプレートヒントを有効にする。 キャッシュのフラッシュが必要になる場合があります。
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -2860,15 +2966,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `dev:template-hints:status`
 
-フロントエンドテンプレートヒントのステータスを表示。
-
 ```bash
 bin/magento dev:template-hints:status
 ```
 
+フロントエンドテンプレートヒントのステータスを表示。
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -2917,11 +3024,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `dev:tests:run`
 
-テストの実行
-
 ```bash
 bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 ```
+
+テストの実行
+
 
 
 ### `type`
@@ -2940,7 +3048,7 @@ PHPUnit の追加の引数。 例：「– c&#39;—filter=MyTest&#39;&#39;」�
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -2989,11 +3097,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `dev:urn-catalog:generate`
 
-IDE が XML をハイライトするために、*.xsd マッピングへの URN のカタログを生成します。
-
 ```bash
 bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 ```
+
+IDE が XML をハイライトするために、*.xsd マッピングへの URN のカタログを生成します。
+
 
 
 ### `path`
@@ -3011,7 +3120,7 @@ bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -3060,11 +3169,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `dev:xml:convert`
 
-XSL スタイルシートを使用して XML ファイルを変換します
-
 ```bash
 bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 ```
+
+XSL スタイルシートを使用して XML ファイルを変換します
+
 
 
 ### `xml-file`
@@ -3088,7 +3198,7 @@ XML ファイルを上書き
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -3137,11 +3247,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `downloadable:domains:add`
 
-ダウンロード可能ドメインの許可リストにドメインを追加
-
 ```bash
 bin/magento downloadable:domains:add [<domains>...]
 ```
+
+ダウンロード可能ドメインの許可リストにドメインを追加
+
 
 
 ### `domains`
@@ -3154,7 +3265,7 @@ bin/magento downloadable:domains:add [<domains>...]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -3203,11 +3314,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `downloadable:domains:remove`
 
-ダウンロード可能なドメインの許可リストからドメインを削除
-
 ```bash
 bin/magento downloadable:domains:remove [<domains>...]
 ```
+
+ダウンロード可能なドメインの許可リストからドメインを削除
+
 
 
 ### `domains`
@@ -3220,7 +3332,7 @@ bin/magento downloadable:domains:remove [<domains>...]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -3269,15 +3381,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `downloadable:domains:show`
 
-ダウンロード可能ドメインのホワイトリストを表示
-
 ```bash
 bin/magento downloadable:domains:show
 ```
 
+ダウンロード可能ドメインのホワイトリストを表示
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -3326,15 +3439,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `encryption:payment-data:update`
 
-暗号化されたクレジット カード データを最新の暗号化暗号で再暗号化します。
-
 ```bash
 bin/magento encryption:payment-data:update
 ```
 
+暗号化されたクレジット カード データを最新の暗号化暗号で再暗号化します。
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -3383,11 +3497,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `i18n:collect-phrases`
 
-コードベース内のフレーズを検出します
-
 ```bash
 bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<directory>]
 ```
+
+コードベース内のフレーズを検出します
+
 
 
 ### `directory`
@@ -3410,7 +3525,7 @@ bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<dire
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -3459,11 +3574,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `i18n:pack`
 
-言語パッケージを保存します
-
 ```bash
 bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <locale>
 ```
+
+言語パッケージを保存します
+
 
 
 ### `source`
@@ -3494,7 +3610,7 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -3543,11 +3659,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `i18n:uninstall`
 
-言語パッケージをアンインストールします
-
 ```bash
 bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 ```
+
+言語パッケージをアンインストールします
+
 
 
 ### `package`
@@ -3568,7 +3685,7 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -3617,15 +3734,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `indexer:info`
 
-許可されているインデクサーを表示
-
 ```bash
 bin/magento indexer:info
 ```
 
+許可されているインデクサーを表示
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -3674,11 +3792,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `indexer:reindex`
 
-データのインデックスを再作成
-
 ```bash
 bin/magento indexer:reindex [<index>...]
 ```
+
+データのインデックスを再作成
+
 
 
 ### `index`
@@ -3691,7 +3810,7 @@ bin/magento indexer:reindex [<index>...]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -3740,11 +3859,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `indexer:reset`
 
-インデクサーのステータスを無効にリセットします
-
 ```bash
 bin/magento indexer:reset [<index>...]
 ```
+
+インデクサーのステータスを無効にリセットします
+
 
 
 ### `index`
@@ -3757,7 +3877,7 @@ bin/magento indexer:reset [<index>...]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -3806,11 +3926,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `indexer:set-dimensions-mode`
 
-インデクサーDimensionモードの設定
-
 ```bash
 bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 ```
+
+インデクサーDimensionモードの設定
+
 
 
 ### `indexer`
@@ -3825,7 +3946,7 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -3874,11 +3995,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `indexer:set-mode`
 
-インデックスモードのタイプを設定します
-
 ```bash
 bin/magento indexer:set-mode [<mode> [<index>...]]
 ```
+
+インデックスモードのタイプを設定します
+
 
 
 ### `mode`
@@ -3896,7 +4018,7 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -3945,11 +4067,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `indexer:set-status`
 
-指定されたインデクサーのステータスを設定します
-
 ```bash
 bin/magento indexer:set-status <status> [<index>...]
 ```
+
+指定されたインデクサーのステータスを設定します
+
 
 
 ### `status`
@@ -3968,7 +4091,7 @@ bin/magento indexer:set-status <status> [<index>...]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -4017,11 +4140,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `indexer:show-dimensions-mode`
 
-インデクサーのDimensionモードを表示
-
 ```bash
 bin/magento indexer:show-dimensions-mode [<indexer>...]
 ```
+
+インデクサーのDimensionモードを表示
+
 
 
 ### `indexer`
@@ -4034,7 +4158,7 @@ bin/magento indexer:show-dimensions-mode [<indexer>...]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -4083,11 +4207,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `indexer:show-mode`
 
-インデックスモードを表示
-
 ```bash
 bin/magento indexer:show-mode [<index>...]
 ```
+
+インデックスモードを表示
+
 
 
 ### `index`
@@ -4100,7 +4225,7 @@ bin/magento indexer:show-mode [<index>...]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -4149,11 +4274,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `indexer:status`
 
-インデクサーのステータスを表示
-
 ```bash
 bin/magento indexer:status [<index>...]
 ```
+
+インデクサーのステータスを表示
+
 
 
 ### `index`
@@ -4166,7 +4292,7 @@ bin/magento indexer:status [<index>...]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -4215,15 +4341,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `info:adminuri`
 
-Magento管理者 URI を表示します
-
 ```bash
 bin/magento info:adminuri
 ```
 
+Magento管理者 URI を表示します
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -4272,15 +4399,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `info:backups:list`
 
-使用可能なバックアップ ファイルの一覧を出力します
-
 ```bash
 bin/magento info:backups:list
 ```
 
+使用可能なバックアップ ファイルの一覧を出力します
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -4329,15 +4457,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `info:currency:list`
 
-使用可能な通貨のリストを表示
-
 ```bash
 bin/magento info:currency:list
 ```
 
+使用可能な通貨のリストを表示
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -4386,11 +4515,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `info:dependencies:show-framework`
 
-Magentoフレームワークへの依存関係数を表示します
-
 ```bash
 bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 ```
+
+Magentoフレームワークへの依存関係数を表示します
+
 
 ### `--output`, `-o`
 
@@ -4401,7 +4531,7 @@ bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -4450,11 +4580,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `info:dependencies:show-modules`
 
-モジュール間の依存関係数を表示します
-
 ```bash
 bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 ```
+
+モジュール間の依存関係数を表示します
+
 
 ### `--output`, `-o`
 
@@ -4465,7 +4596,7 @@ bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -4514,11 +4645,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `info:dependencies:show-modules-circular`
 
-モジュール間の循環依存関係の数を表示します
-
 ```bash
 bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 ```
+
+モジュール間の循環依存関係の数を表示します
+
 
 ### `--output`, `-o`
 
@@ -4529,7 +4661,7 @@ bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -4578,15 +4710,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `info:language:list`
 
-使用可能な言語ロケールの一覧を表示します
-
 ```bash
 bin/magento info:language:list
 ```
 
+使用可能な言語ロケールの一覧を表示します
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -4635,15 +4768,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `info:timezone:list`
 
-利用可能なタイムゾーンのリストを表示します
-
 ```bash
 bin/magento info:timezone:list
 ```
 
+利用可能なタイムゾーンのリストを表示します
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -4692,16 +4826,17 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `inventory:reservation:create-compensations`
 
-指定された報酬引数による引当の作成
-
 ```bash
 bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compensations>...]
 ```
 
+指定された報酬引数による引当の作成
+
+
 
 ### `compensations`
 
-「\」形式の報酬引数のリスト&lt;order_increment_id>:\&lt;sku>:\&lt;quantity>:\&lt;stock-id>“
+「:::」フォーマットの報酬引数のリスト
 
 - デフォルト： `[]`
 
@@ -4716,7 +4851,7 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -4765,11 +4900,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `inventory:reservation:list-inconsistencies`
 
-販売可能な数量に不整合があるすべての注文および製品を表示します
-
 ```bash
 bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-i|--incomplete-orders] [-b|--bunch-size [BUNCH-SIZE]] [-r|--raw]
 ```
+
+販売可能な数量に不整合があるすべての注文および製品を表示します
+
 
 ### `--complete-orders`, `-c`
 
@@ -4801,7 +4937,7 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -4850,11 +4986,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `inventory-geonames:import`
 
-ソース選択アルゴリズムの地域名のダウンロードと読み込み
-
 ```bash
 bin/magento inventory-geonames:import <countries>...
 ```
+
+ソース選択アルゴリズムの地域名のダウンロードと読み込み
+
 
 
 ### `countries`
@@ -4868,7 +5005,7 @@ bin/magento inventory-geonames:import <countries>...
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -4917,11 +5054,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `maintenance:allow-ips`
 
-メンテナンスモード除外 IP を設定します
-
 ```bash
 bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<ip>...]
 ```
+
+メンテナンスモード除外 IP を設定します
+
 
 
 ### `ip`
@@ -4954,7 +5092,7 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -5003,11 +5141,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `maintenance:disable`
 
-メンテナンスモードを無効にします
-
 ```bash
 bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+メンテナンスモードを無効にします
+
 
 ### `--ip`
 
@@ -5024,7 +5163,7 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -5073,11 +5212,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `maintenance:enable`
 
-メンテナンスモードを有効にする
-
 ```bash
 bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+メンテナンスモードを有効にする
+
 
 ### `--ip`
 
@@ -5094,7 +5234,7 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -5143,11 +5283,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `maintenance:status`
 
-メンテナンスモードのステータスを表示
-
 ```bash
 bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+メンテナンスモードのステータスを表示
+
 
 ### `--magento-init-params`
 
@@ -5157,7 +5298,7 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -5206,15 +5347,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `media-content:sync`
 
-コンテンツとアセットの同期
-
 ```bash
 bin/magento media-content:sync
 ```
 
+コンテンツとアセットの同期
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -5263,15 +5405,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `media-gallery:sync`
 
-データベース内のメディアストレージとメディアアセットの同期
-
 ```bash
 bin/magento media-gallery:sync
 ```
 
+データベース内のメディアストレージとメディアアセットの同期
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -5320,15 +5463,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `module:config:status`
 
-「app/etc/config.php」ファイルのモジュール設定を確認し、モジュールが最新かどうかを報告します
-
 ```bash
 bin/magento module:config:status
 ```
 
+「app/etc/config.php」ファイルのモジュール設定を確認し、モジュールが最新かどうかを報告します
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -5377,11 +5521,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `module:disable`
 
-指定されたモジュールを無効にします
-
 ```bash
 bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
+
+指定されたモジュールを無効にします
+
 
 
 ### `module`
@@ -5421,7 +5566,7 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -5470,11 +5615,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `module:enable`
 
-指定されたモジュールを有効にします
-
 ```bash
 bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
+
+指定されたモジュールを有効にします
+
 
 
 ### `module`
@@ -5514,7 +5660,7 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -5563,11 +5709,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `module:status`
 
-モジュールのステータスを表示
-
 ```bash
 bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module-names>...]
 ```
+
+モジュールのステータスを表示
+
 
 
 ### `module-names`
@@ -5600,7 +5747,7 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -5649,11 +5796,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `module:uninstall`
 
-コンポーザーによってインストールされたモジュールをアンインストールします
-
 ```bash
 bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media] [--backup-db] [--non-composer] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] <module>...
 ```
+
+コンポーザーによってインストールされたモジュールをアンインストールします
+
 
 
 ### `module`
@@ -5715,7 +5863,7 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -5764,11 +5912,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `newrelic:create:deploy-marker`
 
-デプロイキューのエントリを確認し、適切なデプロイマーカーを作成します。
-
 ```bash
 bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revision>]]
 ```
+
+デプロイキューのエントリを確認し、適切なデプロイマーカーを作成します。
+
 
 
 ### `message`
@@ -5795,7 +5944,7 @@ bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revis
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -5844,15 +5993,20 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `queue:consumers:list`
 
-MessageQueue コンシューマーのリスト
-
 ```bash
 bin/magento queue:consumers:list
 ```
 
+MessageQueue コンシューマーのリスト
+
+
+```
+This command shows list of MessageQueue consumers.
+```
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -5901,15 +6055,20 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `queue:consumers:restart`
 
-MessageQueue コンシューマーの再起動
-
 ```bash
 bin/magento queue:consumers:restart
 ```
 
+MessageQueue コンシューマーの再起動
+
+
+```
+Command put poison pill for MessageQueue consumers and force to restart them after next status check.
+```
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -5958,10 +6117,43 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `queue:consumers:start`
 
-MessageQueue コンシューマーを開始
-
 ```bash
 bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BATCH-SIZE] [--area-code AREA-CODE] [--single-thread] [--multi-process [MULTI-PROCESS]] [--pid-file-path PID-FILE-PATH] [--] <consumer>
+```
+
+MessageQueue コンシューマーを開始
+
+
+```
+This command starts MessageQueue consumer by its name.
+
+To start consumer which will process all queued messages and terminate execution:
+
+    bin/magento queue:consumers:start someConsumer
+
+To specify the number of messages which should be processed by consumer before its termination:
+
+    bin/magento queue:consumers:start someConsumer --max-messages=50
+
+To specify the number of messages per batch for the batch consumer:
+
+    bin/magento queue:consumers:start someConsumer --batch-size=500
+
+To specify the preferred area:
+
+    bin/magento queue:consumers:start someConsumer --area-code='adminhtml'
+
+To do not run multiple copies of one consumer simultaneously:
+
+    bin/magento queue:consumers:start someConsumer --single-thread
+
+To save PID enter path (This option is deprecated, use --single-thread instead):
+
+    bin/magento queue:consumers:start someConsumer --pid-file-path='/var/someConsumer.pid'
+
+To define the number of processes per consumer:
+
+    bin/magento queue:consumers:start someConsumer --multi-process=4
 ```
 
 
@@ -6010,7 +6202,7 @@ PID を保存するためのファイルパス （このオプションは非推
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -6059,15 +6251,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `remote-storage:sync`
 
-メディア ファイルをリモート ストレージと同期します。
-
 ```bash
 bin/magento remote-storage:sync
 ```
 
+メディア ファイルをリモート ストレージと同期します。
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -6116,11 +6309,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `saas:resync`
 
-フィード データを SaaS サービスに再同期します。
-
 ```bash
 bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync]
 ```
+
+フィード データを SaaS サービスに再同期します。
+
 
 ### `--feed`
 
@@ -6170,7 +6364,7 @@ SaaS サービスに完全に再同期するためのフィード名。 使用�
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -6219,11 +6413,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `sampledata:deploy`
 
-Composer ベースのMagento インストール用のサンプル データ モジュールの導入
-
 ```bash
 bin/magento sampledata:deploy [--no-update]
 ```
+
+Composer ベースのMagento インストール用のサンプル データ モジュールの導入
+
 
 ### `--no-update`
 
@@ -6234,7 +6429,7 @@ composer の更新を実行せずに composer.json を更新
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -6283,11 +6478,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `sampledata:remove`
 
-composer.json からすべてのサンプルデータパッケージを削除します。
-
 ```bash
 bin/magento sampledata:remove [--no-update]
 ```
+
+composer.json からすべてのサンプルデータパッケージを削除します。
+
 
 ### `--no-update`
 
@@ -6298,7 +6494,7 @@ composer の更新を実行せずに composer.json を更新
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -6347,15 +6543,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `sampledata:reset`
 
-再インストール用にすべてのサンプルデータモジュールをリセット
-
 ```bash
 bin/magento sampledata:reset
 ```
 
+再インストール用にすべてのサンプルデータモジュールをリセット
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -6404,15 +6601,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `security:recaptcha:disable-for-user-forgot-password`
 
-管理者ユーザーのパスワードを忘れた場合の reCAPTCHA の無効化フォーム
-
 ```bash
 bin/magento security:recaptcha:disable-for-user-forgot-password
 ```
 
+管理者ユーザーのパスワードを忘れた場合の reCAPTCHA の無効化フォーム
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -6461,15 +6659,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `security:recaptcha:disable-for-user-login`
 
-管理者ユーザーログインフォームの reCAPTCHA を無効にする
-
 ```bash
 bin/magento security:recaptcha:disable-for-user-login
 ```
 
+管理者ユーザーログインフォームの reCAPTCHA を無効にする
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -6518,11 +6717,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `security:tfa:google:set-secret`
 
-Google OTP の生成に使用する秘密鍵を設定します。
-
 ```bash
 bin/magento security:tfa:google:set-secret <user> <secret>
 ```
+
+Google OTP の生成に使用する秘密鍵を設定します。
+
 
 
 ### `user`
@@ -6539,7 +6739,7 @@ bin/magento security:tfa:google:set-secret <user> <secret>
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -6588,15 +6788,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `security:tfa:providers`
 
-使用可能なすべてのプロバイダーを一覧表示
-
 ```bash
 bin/magento security:tfa:providers
 ```
 
+使用可能なすべてのプロバイダーを一覧表示
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -6645,11 +6846,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `security:tfa:reset`
 
-1 人のユーザーの設定をリセット
-
 ```bash
 bin/magento security:tfa:reset <user> <provider>
 ```
+
+1 人のユーザーの設定をリセット
+
 
 
 ### `user`
@@ -6666,7 +6868,7 @@ bin/magento security:tfa:reset <user> <provider>
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -6715,11 +6917,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `setup:backup`
 
-Magentoのアプリケーション コード ベース、メディア、およびデータベースをバックアップします
-
 ```bash
 bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Magentoのアプリケーション コード ベース、メディア、およびデータベースをバックアップします
+
 
 ### `--code`
 
@@ -6750,7 +6953,7 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -6799,11 +7002,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `setup:config:set`
 
-デプロイメント設定を作成または変更します
-
 ```bash
 bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+デプロイメント設定を作成または変更します
+
 
 ### `--backend-frontname`
 
@@ -7388,7 +7592,7 @@ Redis サーバーユーザー
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -7437,11 +7641,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `setup:db-data:upgrade`
 
-DB 内のデータのインストールとアップグレード
-
 ```bash
 bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+DB 内のデータのインストールとアップグレード
+
 
 ### `--magento-init-params`
 
@@ -7451,7 +7656,7 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -7500,11 +7705,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `setup:db-declaration:generate-patch`
 
-パッチを生成して特定のフォルダーに配置します。
-
 ```bash
 bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--type [TYPE]] [--] <module> <patch>
 ```
+
+パッチを生成して特定のフォルダーに配置します。
+
 
 
 ### `module`
@@ -7535,7 +7741,7 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -7584,11 +7790,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `setup:db-declaration:generate-whitelist`
 
-宣言インストーラーによって編集できるテーブルおよび列の許可リストを生成します
-
 ```bash
 bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]]
 ```
+
+宣言インストーラーによって編集できるテーブルおよび列の許可リストを生成します
+
 
 ### `--module-name`
 
@@ -7599,7 +7806,7 @@ bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -7648,11 +7855,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `setup:db-schema:upgrade`
 
-DB スキーマのインストールとアップグレード
-
 ```bash
 bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+DB スキーマのインストールとアップグレード
+
 
 ### `--convert-old-scripts`
 
@@ -7669,7 +7877,7 @@ bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -7718,11 +7926,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `setup:db:status`
 
-DB スキーマまたはデータのアップグレードが必要かどうかを確認します
-
 ```bash
 bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+DB スキーマまたはデータのアップグレードが必要かどうかを確認します
+
 
 ### `--magento-init-params`
 
@@ -7732,7 +7941,7 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -7781,15 +7990,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `setup:di:compile`
 
-DI 構成と、自動生成できる不足クラスをすべて生成します
-
 ```bash
 bin/magento setup:di:compile
 ```
 
+DI 構成と、自動生成できる不足クラスをすべて生成します
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -7838,11 +8048,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `setup:install`
 
-Magentoアプリケーションをインストールします
-
 ```bash
 bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Magentoアプリケーションをインストールします
+
 
 ### `--backend-frontname`
 
@@ -8666,7 +8877,7 @@ Magentoのインストールはドライランモードで実行されます
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -8715,11 +8926,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `setup:performance:generate-fixtures`
 
-器具を生成します
-
 ```bash
 bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profile>
 ```
+
+器具を生成します
+
 
 
 ### `profile`
@@ -8737,7 +8949,7 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -8786,11 +8998,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `setup:rollback`
 
-Magentoアプリケーションのコードベース、メディア、データベースをロールバックします。
-
 ```bash
 bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FILE] [-d|--db-file DB-FILE] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Magentoアプリケーションのコードベース、メディア、データベースをロールバックします。
+
 
 ### `--code-file`, `-c`
 
@@ -8818,7 +9031,7 @@ var/backups のデータベースバックアップファイルのベース名
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -8867,11 +9080,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `setup:static-content:deploy`
 
-静的ビューファイルをデプロイ
-
 ```bash
 bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] [-a|--area [AREA]] [--exclude-area [EXCLUDE-AREA]] [-t|--theme [THEME]] [--exclude-theme [EXCLUDE-THEME]] [-l|--language [LANGUAGE]] [--exclude-language [EXCLUDE-LANGUAGE]] [-j|--jobs [JOBS]] [--max-execution-time [MAX-EXECUTION-TIME]] [--symlink-locale] [--content-version CONTENT-VERSION] [--refresh-content-version-only] [--no-javascript] [--no-js-bundle] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [--] [<languages>...]
 ```
+
+静的ビューファイルをデプロイ
+
 
 
 ### `languages`
@@ -9044,7 +9258,7 @@ HTMLファイルは縮小しないでください。
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -9093,11 +9307,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `setup:store-config:set`
 
-ストア設定をインストールします。 2.2.0 以降で非推奨（廃止予定）。代わりに config:set を使用してください。
-
 ```bash
 bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+ストア設定をインストールします。 2.2.0 以降で非推奨（廃止予定）。代わりに config:set を使用してください。
+
 
 ### `--base-url`
 
@@ -9161,7 +9376,7 @@ Magento管理 URL およびフォームで「セキュリティキー」機能�
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -9210,11 +9425,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `setup:uninstall`
 
-Magentoアプリケーションをアンインストールします
-
 ```bash
 bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Magentoアプリケーションをアンインストールします
+
 
 ### `--magento-init-params`
 
@@ -9224,7 +9440,7 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -9273,11 +9489,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `setup:upgrade`
 
-Magento アプリケーション、DB データ、およびスキーマをアップグレードします。
-
 ```bash
 bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Magento アプリケーション、DB データ、およびスキーマをアップグレードします。
+
 
 ### `--keep-generated`
 
@@ -9320,7 +9537,7 @@ Magentoのインストールはドライランモードで実行されます
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -9369,15 +9586,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `store:list`
 
-ストアのリストを表示します
-
 ```bash
 bin/magento store:list
 ```
 
+ストアのリストを表示します
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -9426,15 +9644,16 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `store:website:list`
 
-Web サイトのリストを表示します
-
 ```bash
 bin/magento store:website:list
 ```
 
+Web サイトのリストを表示します
+
+
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -9483,11 +9702,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `theme:uninstall`
 
-テーマをアンインストールします
-
 ```bash
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <theme>...
 ```
+
+テーマをアンインストールします
+
 
 
 ### `theme`
@@ -9515,7 +9735,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -9564,11 +9784,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `varnish:vcl:generate`
 
-Varnish VCL を生成し、コマンド ラインにエコーします
-
 ```bash
 bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BACKEND-HOST] [--backend-port BACKEND-PORT] [--export-version EXPORT-VERSION] [--grace-period GRACE-PERIOD] [--input-file INPUT-FILE] [--output-file OUTPUT-FILE]
 ```
+
+Varnish VCL を生成し、コマンド ラインにエコーします
+
 
 ### `--access-list`
 
@@ -9619,7 +9840,7 @@ vcl を書き込むファイルへのパス
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません

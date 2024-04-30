@@ -1,7 +1,7 @@
 ---
-source-git-commit: 68ea73d407dd3e6daf880a66de8ef4b7bbef2360
+source-git-commit: 19d19ef385cf4aaee3a255930af8e6d3b81de23a
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1638'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,12 @@ ht-degree: 0%
 
 ## `_complete`
 
-シェル補完の候補を提供する内部コマンド
-
 ```bash
 bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-S|--symfony SYMFONY]
 ```
+
+シェル補完の候補を提供する内部コマンド
+
 
 ### `--shell`, `-s`
 
@@ -56,7 +57,7 @@ bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -105,10 +106,40 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `completion`
 
-シェル完了スクリプトをダンプ
-
 ```bash
 bin/uct completion [--debug] [--] [<shell>]
+```
+
+シェル完了スクリプトをダンプ
+
+
+```
+The completion command dumps the shell completion script required
+to use shell autocompletion (currently only bash completion is supported).
+
+Static installation
+-------------------
+
+Dump the script to a global completion file and restart your shell:
+
+    uct/bin/uct completion bash | sudo tee /etc/bash_completion.d/uct
+
+Or dump the script to a local file and source it:
+
+    uct/bin/uct completion bash > completion.sh
+
+    # source the file whenever you use the project
+    source completion.sh
+
+    # or add this line at the end of your "~/.bashrc" file:
+    source /path/to/completion.sh
+
+Dynamic installation
+--------------------
+
+Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
+
+    eval "$(/var/jenkins/workspace/gendocs-uct-cli/uct/bin/uct completion bash)"
 ```
 
 
@@ -126,7 +157,7 @@ bin/uct completion [--debug] [--] [<shell>]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -175,10 +206,23 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `help`
 
-コマンドのヘルプを表示する
-
 ```bash
 bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
+```
+
+コマンドのヘルプを表示する
+
+
+```
+The help command displays help for a given command:
+
+  uct/bin/uct help list
+
+You can also output the help in other formats by using the --format option:
+
+  uct/bin/uct help --format=xml list
+
+To display the list of available commands, please use the list command.
 ```
 
 
@@ -205,7 +249,7 @@ bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -254,10 +298,29 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `list`
 
-コマンドのリスト
-
 ```bash
 bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
+```
+
+コマンドのリスト
+
+
+```
+The list command lists all commands:
+
+  uct/bin/uct list
+
+You can also display the commands for a specific namespace:
+
+  uct/bin/uct list test
+
+You can also output the information in other formats by using the --format option:
+
+  uct/bin/uct list --format=xml
+
+It's also possible to get raw list of commands (useful for embedding command runner):
+
+  uct/bin/uct list --raw
 ```
 
 
@@ -289,7 +352,7 @@ bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -338,11 +401,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `refactor`
 
-自動的に修正できる問題を解決します。 指定されたパスのコードが更新されます。
-
 ```bash
 bin/uct refactor <path>
 ```
+
+自動的に修正できる問題を解決します。 指定されたパスのコードが更新されます。
+
 
 
 ### `path`
@@ -353,7 +417,7 @@ bin/uct refactor <path>
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -402,11 +466,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `core:code:changes`
 
-アップグレード互換性ツールは、Adobe Commerce インスタンスにインストールされているすべての非Adobe Commerce モジュールを分析して、そのインスタンスを特定のバージョンと照合するコマンドラインツールです。 新しいバージョンのAdobe Commerce コードにアップグレードする前に対処する必要があるエラーと警告のリストを返します。
-
 ```bash
 bin/uct core:code:changes [-o|--output [OUTPUT]] [--] <dir> [<vanilla-dir>]
 ```
+
+アップグレード互換性ツールは、Adobe Commerce インスタンスにインストールされているすべての非Adobe Commerce モジュールを分析して、そのインスタンスを特定のバージョンと照合するコマンドラインツールです。 新しいバージョンのAdobe Commerce コードにアップグレードする前に対処する必要があるエラーと警告のリストを返します。
+
 
 
 ### `dir`
@@ -428,7 +493,7 @@ Adobe Commerce vanilla インストールディレクトリ。
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -477,11 +542,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `dbschema:diff`
 
-選択した 2 つのバージョンにおけるAdobe Commerce DB スキーマの違いを一覧表示できます。 使用可能なバージョン：2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2.4.6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7 – ベータ 1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-beta3 | 2.4.7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8
-
 ```bash
 bin/uct dbschema:diff <current-version> <target-version>
 ```
+
+選択した 2 つのバージョンにおけるAdobe Commerce DB スキーマの違いを一覧表示できます。 使用可能なバージョン：2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2.4.6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7 – ベータ 1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-beta3 | 2.4.7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8
+
 
 
 ### `current-version`
@@ -498,7 +564,7 @@ bin/uct dbschema:diff <current-version> <target-version>
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -547,11 +613,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `graphql:compare`
 
-GraphQL スキーマの互換性の検証
-
 ```bash
 bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 ```
+
+GraphQL スキーマの互換性の検証
+
 
 
 ### `schema1`
@@ -574,7 +641,7 @@ bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
@@ -623,11 +690,12 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 ## `upgrade:check`
 
-アップグレード互換性ツールは、Adobe Commerceのカスタマイズ済みインスタンスにインストールされているすべてのモジュールを分析し、そのインスタンスを特定のバージョンと照合するコマンドラインツールです。 最新バージョンのAdobe Commerceにアップグレードする前に対処する必要があるエラーと警告のリストを返します。
-
 ```bash
 bin/uct upgrade:check [-a|--current-version [CURRENT-VERSION]] [-c|--coming-version [COMING-VERSION]] [--json-output-path [JSON-OUTPUT-PATH]] [--html-output-path [HTML-OUTPUT-PATH]] [--min-issue-level [MIN-ISSUE-LEVEL]] [-i|--ignore-current-version-compatibility-issues] [--context CONTEXT] [--] <dir>
 ```
+
+アップグレード互換性ツールは、Adobe Commerceのカスタマイズ済みインスタンスにインストールされているすべてのモジュールを分析し、そのインスタンスを特定のバージョンと照合するコマンドラインツールです。 最新バージョンのAdobe Commerceにアップグレードする前に対処する必要があるエラーと警告のリストを返します。
+
 
 
 ### `dir`
@@ -682,7 +750,7 @@ HTML形式で出力を書き出すファイルのパス
 
 ### `--help`, `-h`
 
-指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合、\の表示ヘルプ&lt;info>list\&lt;/info> コマンド
+指定されたコマンドのヘルプを表示します。 コマンドが指定されていない場合は、list コマンドの表示ヘルプが表示されます
 
 - デフォルト： `false`
 - 値を受け入れません
