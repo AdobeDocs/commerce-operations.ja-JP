@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Adobe CommerceのデプロイメントでGraphQL Application Server を有効にするには、次の手順に従います。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 81320626a83e26a55f9ec14ce8cb706753b44269
+source-git-commit: 9ffcbaa9a16315fe9c7d8ac4c4351ebe3fb27612
 workflow-type: tm+mt
-source-wordcount: '2293'
+source-wordcount: '2079'
 ht-degree: 0%
 
 ---
@@ -391,13 +391,3 @@ bin/magento server:run --state-monitor
 >[!NOTE]
 >
 >`--state-monitor` は、PHP バージョンと互換性がありません。 `8.3.0` - `8.3.4` php のガベージコレクタのバグが原因です。 PHP 8.3 を使用している場合は、以下にアップグレードする必要があります。 `8.3.5` この機能を使用するには、以降のバージョンを使用します。
-
-## 既知の問題
-
-### ワーカースレッドが終了した場合に要求が失われます。
-
-ワーカースレッドに問題があり、ワーカースレッドが終了する場合、同じワーカースレッドにすでにキューされている HTTP 要求は、TCP ソケット接続がリセットされます。 NGINX などのリバースプロキシをサーバーの前に置くと、次のようなエラーが発生します。 `502` エラー。 労働者は、クラッシュ、メモリ不足キラー、またはサードパーティの拡張機能の PHP エラーによって死亡する可能性があります。 この問題は、Swoole の HTTP サーバーのデフォルトの動作が原因で発生します。 デフォルトでは、HTTP サーバーはで起動されます。 `SWOOLE_BASE` モード。 このモードでは、ワーカースレッドがまだ前の要求を処理している場合でも、受信される HTTP 要求がキュー内のワーカースレッドに割り当てられます。 これを「」に変更すると、 `SWOOLE_PROCESS` その後、接続はメインプロセスによって維持され、プロセス間の通信が大幅に使用されます。 ～のマイナス面 `SWOOLE_PROCESS` これは、PHP ZTS をサポートしていないということです。 を読み取る [Swoole ドキュメント](https://wiki.swoole.com/en/#/learn?id=swoole_process) を参照してください。
-
-### アプリケーションサーバーは、特定の条件で以前の属性設定を使用する場合があります。
-
-この `CatalogGraphQl\Model\Config\AttributeReader` 。対象： `2.4.7` には、以前の属性のステート設定を使用してGraphQL リクエストが応答を取得する可能性がある、まれなバグが含まれています。 この修正はで配信されました `2.4-develop`が、に間に合うわけではありません `2.4.7` リリース。
