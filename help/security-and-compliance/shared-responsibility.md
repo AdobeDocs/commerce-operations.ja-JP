@@ -2,9 +2,9 @@
 title: 共有責任セキュリティと運用モデル
 description: Adobe Commerce on cloud infrastructure プロジェクトに関与する各パーティのセキュリティ上の責任について説明します。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: d4ea2f3fe8d30749c96389655ef38cae482afc99
+source-git-commit: 75eafe97a69668e43818f1c01639956e9b677a69
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2804'
 ht-degree: 0%
 
 ---
@@ -890,5 +890,16 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 | Cloud Pro ステージング環境および実稼動環境のバックアップのスケジュール設定 | R |   |
 | Cloud Starter および Pro 統合環境のバックアップのスケジュール |     | R |
 | HA/フェイルオーバーの可用性 | R |   |
+
+{style="table-layout:auto"}
+
+#### クラウドサーバーとスケーリング
+
+|     | Adobe | 商人 |
+| --- | --- | --- |
+| CPU リソース、データセンター、ディスク容量の可用性 | R |   |
+| サージ容量の可用性と実行、または緊急アップサイジング | R |   |
+| サージ容量を要求しています |     | R |
+| 制限に対する vCPU 使用率の監視 | R |   |
 
 {style="table-layout:auto"}
