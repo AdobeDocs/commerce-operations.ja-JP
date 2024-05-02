@@ -1,7 +1,7 @@
 ---
-source-git-commit: 88cdf47409f45f9ba6de75701ab877c5e4604f13
+source-git-commit: ccc1c6451556ac721d331adebf02db8226e75699
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '303'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 1%
 ## 新機能
 
 新しいドキュメントと、既存のドキュメントの重要な更新について説明します。
+
+### 2024 年 4 月 29 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>が更新されました <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/uct">UCT CLI リファレンス</a>.</p>
+</td>
+      <td>技術</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ae9b29601953f25ca28f253f557d547b200616a0">ae9b29</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2024 年 4 月 26 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>を再編成しました <em>運用ガイド</em> ホームページ（このページ）を移動して、 <em><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises">コマンドラインツールリファレンス</a></em> のガイド <em><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/overview">ツール</a></em> ガイド。</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/839b4e26a7c5d662093c7c1eec3fd5883ed7706a">839b4e</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p>新しいを追加しました <a href="https://experienceleague.adobe.com/docs/commerce-operations/events/summit/2024.html">概要ページ</a> （Adobe Summit）。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1c2c75da7cda0e3c38ea904c98932472b618a3e5">1c2c75</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2024 年 4 月 15 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>ソース</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>が更新されました <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta">ベータ</a> Adobe Commerceで使用可能なすべてのベータ版に関する情報を含むページ。</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a362cad66d38a89bacda656d1520047e22262179">a362ca</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2024 年 4 月 9 日（Pt）
 
@@ -29,7 +95,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/efd2fc4285a5cdc7ee20ead299ee16e54f9bcb83">efd2fc</a> （コミット）</td>
     </tr>
     <tr>
-      <td><p>のリリースパッケージトピックを更新しました <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> および <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">Magento Open Source</a>.<br /> のリリースパッケージのトピックを追加しました <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">コマースの B2B</a>.</p>
+      <td><p>のリリースパッケージトピックを更新しました <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> および <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">Magento Open Source</a>.<br /> のリリースパッケージのトピックを追加しました <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">Commerceの B2B</a>.</p>
 </td>
       <td>major-update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> （コミット）</td>
@@ -67,7 +133,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>さんがを追加しました <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint.html">アーキテクチャの青写真</a> （Commerce のエンタープライズ実装の場合）。</p>
+      <td><p>さんがを追加しました <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint.html">アーキテクチャの青写真</a> （Commerceのエンタープライズ実装の場合）。</p>
 </td>
       <td>new-topic</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d33294d02b4431d4aa473aa5d0ab42e297cfed14">d33294</a> （コミット）</td>
