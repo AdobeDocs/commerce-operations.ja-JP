@@ -2,7 +2,7 @@
 title: GraphQL Application Server
 description: Adobe CommerceのデプロイメントでGraphQL Application Server を有効にするには、次の手順に従います。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 9ffcbaa9a16315fe9c7d8ac4c4351ebe3fb27612
+source-git-commit: 70d86569bef5c656fff3a8c6b4af142c81c81f10
 workflow-type: tm+mt
 source-wordcount: '2079'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Pro プロジェクトで Application Server 機能を有効にした後、Graph
 1. 更新したファイルを次のコマンドで Git インデックスに追加します。
 
    ```bash
-   git add -f .magento/routes.yaml application-server/.magento/*
+   git add -f .magento.app.yaml application-server/*
    ```
 
 1. 次のコマンドを使用して変更をコミットします。
