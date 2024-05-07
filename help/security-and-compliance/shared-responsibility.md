@@ -2,9 +2,9 @@
 title: 共有責任セキュリティと運用モデル
 description: Adobe Commerce on cloud infrastructure プロジェクトに関与する各パーティのセキュリティ上の責任について説明します。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 75eafe97a69668e43818f1c01639956e9b677a69
+source-git-commit: e188dad17ccb7d6ae10ed1457e86cc4551deaa75
 workflow-type: tm+mt
-source-wordcount: '2804'
+source-wordcount: '2805'
 ht-degree: 0%
 
 ---
@@ -900,6 +900,6 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 | CPU リソース、データセンター、ディスク容量の可用性 | R |   |
 | サージ容量の可用性と実行、または緊急アップサイジング | R |   |
 | サージ容量を要求しています |     | R |
-| 制限に対する vCPU 使用率の監視 | R |   |
+| 制限に照らした vCPU 使用率の監視 | R |   |
 
 {style="table-layout:auto"}
