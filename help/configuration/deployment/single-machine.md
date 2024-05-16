@@ -1,34 +1,34 @@
 ---
 title: 単一マシンの導入
-description: コマンドラインを使用して、実稼動サーバー上に Commerce に更新をデプロイする方法を説明します。
+description: コマンドラインを使用して実稼動サーバーにCommerceのアップデートをデプロイする方法を説明します。
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '180'
 ht-degree: 1%
 
 ---
 
-# シングルマシンの導入
+# 単一マシンの導入
 
-このトピックでは、コマンドラインを使用して実稼動サーバーにコマースの更新を展開する手順を説明します。 このプロセスは、一部のテーマとロケールがインストールされた 1 台のマシン上で実行されるストアを担当する技術ユーザーに適用されます。
+このトピックでは、コマンドラインを使用して実稼動サーバーにCommerceのアップデートをデプロイする手順を説明します。 このプロセスは、一部のテーマとロケールがインストールされた 1 台のマシン上でストアを実行する技術ユーザーに適用されます。
 
 ## 前提
 
-- Commerce をインストールしているのは、 [コンポーザー](../../installation/composer.md).
-- サーバーに直接更新を適用しています。
+- を使用してCommerceをインストールしました [コンポーザー](../../installation/composer.md).
+- 更新をサーバーに直接適用しています。
 
 >[!WARNING]
 >
->このガイドは、 `git clone` をクリックして、Commerce をインストールします。
->貢献する開発者は、 [このガイド][install] をクリックして、コマースのインストールを更新します。
+>このガイドは、を使用した場合は適用されません `git clone` Commerceをインストールします。
+>投稿する開発者は次を使用する必要があります [このガイド][install] Commerceのインストールを更新する
 
-## デプロイメントの手順
+## デプロイメント手順
 
-1. 実稼動サーバーに、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
+1. 実稼動サーバーにとしてログインするか、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
 
-1. Commerce ベースディレクトリにディレクトリを変更します。
+1. ディレクトリをCommerceのベースディレクトリに変更します。
 
    ```bash
    cd <Commerce base directory>
@@ -40,13 +40,13 @@ ht-degree: 1%
    bin/magento maintenance:enable
    ```
 
-1. 次のコマンドパターンを使用して、コマースまたはコンポーネントに更新を適用します。
+1. 次のコマンドパターンを使用して、Commerceまたはそのコンポーネントに更新を適用します。
 
    ```bash
    composer require-commerce <package> <version> --no-update
    ```
 
-   **パッケージ**：更新するパッケージの名前。
+   **package**：更新するパッケージの名前。
 
    例：
 
@@ -55,7 +55,7 @@ ht-degree: 1%
 
    **version**：更新するパッケージのターゲットバージョン。
 
-1. コンポーザーでコンポーネントを更新：
+1. Composer によるコンポーネントの更新：
 
    ```bash
    composer update
@@ -79,13 +79,13 @@ ht-degree: 1%
    bin/magento setup:static-content:deploy
    ```
 
-1. キャッシュをクリーンアップします。
+1. キャッシュのクリーンアップ：
 
    ```bash
    bin/magento cache:clean
    ```
 
-1. メンテナンスモードを終了：
+1. メンテナンスモードを終了します。
 
    ```bash
    bin/magento maintenance:disable

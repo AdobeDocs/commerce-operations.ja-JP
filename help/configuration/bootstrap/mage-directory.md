@@ -1,25 +1,25 @@
 ---
-title: 基本ディレクトリパスのカスタマイズ
+title: ベースディレクトリパスのカスタマイズ
 description: MAGE_DIRS 変数を使用して、絶対パスの配列を設定します。
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
 
-# 基本ディレクトリパス
+# ベースディレクトリのパス
 
-The `MAGE_DIRS` 環境変数を使用して、コマースアプリケーションが様々なファイルへの絶対パスを構築したり、URL を生成したりするために使用する、ベースディレクトリのカスタムパスとベース URL のフラグメントを指定できます。
+この `MAGE_DIRS` 環境変数を使用すると、Commerce アプリケーションが様々なファイルへの絶対パスを構築したり、URL を生成したりするために使用する、カスタムのベースディレクトリパスとベース URL のフラグメントを指定できます。
 
 ## MAGE_DIRS を設定
 
-キーが定数である連想配列を指定します。 [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] との値は、それぞれディレクトリの絶対パスまたはディレクトリの URL パスです。
+キーが定数である連想配列を [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] および値は、それぞれディレクトリの絶対パスまたはその URL パスです。
 
-次の設定が可能です。 `MAGE_DIRS` 次のいずれかの方法で使用できます。
+次を設定できます `MAGE_DIRS` 次のいずれかの方法を使用します。
 
-- [ブートストラップパラメータの値を設定する](../bootstrap/set-parameters.md)
+- [ブートストラップパラメーターの値を設定](../bootstrap/set-parameters.md)
 - 次のようなカスタムエントリポイントスクリプトを使用します。
 
   ```php
@@ -48,7 +48,7 @@ The `MAGE_DIRS` 環境変数を使用して、コマースアプリケーショ�
   $bootstrap->run($app);
   ```
 
-前述の例では、 `[cache]` および `[media]` ディレクトリ `/mnt/nfs/cache` および `/mnt/nfs/media`、それぞれ。
+上記の例では、のパスを設定します `[cache]` および `[media]` ディレクトリ `/mnt/nfs/cache` および `/mnt/nfs/media`、それぞれ。
 
 <!-- link definitions -->
 

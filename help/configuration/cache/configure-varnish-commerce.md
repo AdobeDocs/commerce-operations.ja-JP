@@ -1,5 +1,5 @@
 ---
-title: Commerce 用の Varnish の設定
+title: Commerce用ワニスの設定
 description: Commerce アプリケーションの Varnish 設定ファイルを更新および管理する方法について説明します。
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Varnish を使用するように Commerce アプリケーションを設定する
 
-Varnish を使用するように Commerce を設定するには：
+Varnish を使用するようにCommerceを設定するには：
 
 1. 管理者として管理者にログインします。
 1. クリック **[!UICONTROL Stores]** > 設定 > **設定** > **詳細** > **システム** > **フルページキャッシュ**.
@@ -46,7 +46,7 @@ bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/cac
 
    次の図に例を示します。
 
-   ![管理で Varnish を使用するように Commerce を設定する](../../assets/configuration/varnish-admin-22.png)
+   ![管理者で Varnish を使用するようにCommerceを設定します。](../../assets/configuration/varnish-admin-22.png)
 
 1. 既存のものをバックアップ `default.vcl`. 次に、の名前を `varnish.vcl` 書き出したファイル `default.vcl`. 次に、ファイルをにコピーします `/etc/varnish/` ディレクトリ。
 
@@ -98,4 +98,4 @@ bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/cac
   #unset req.http.Cookie;
 ```
 
-Commerce を Varnish を使用するように設定する前に、これらの変更を行う必要があります。
+Commerceで Varnish を使用するように設定する前に、これらの変更を行う必要があります。

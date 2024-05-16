@@ -1,34 +1,34 @@
 ---
-title: 非公開コンテンツブロックのベストプラクティス
-description: ストアフロントのパフォーマンスを最適化するためのプライベートコンテンツブロックの設定に関するベストプラクティスについて説明します。
+title: プライベートコンテンツブロックのベストプラクティス
+description: ストアフロントのパフォーマンスを最適化するための、プライベートコンテンツブロックの設定に関するベストプラクティスについて説明します。
 role: Developer
 feature: Best Practices
 exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
 
-# 非公開コンテンツブロックのベストプラクティス
+# プライベートコンテンツブロックのベストプラクティス
 
-非公開コンテンツブロックに `_isScopePrivate` 変数を使用する場合、ブロックはキャッシュできません。 プライベートブロックはキャッシュされないので、Adobe Commerceは顧客の要求ごとに同じデータを取得する必要があり、サーバーの読み込みが増加します。
+プライベートコンテンツブロックに `_isScopePrivate` 変数の場合、ブロックはキャッシュできません。 プライベートブロックはキャッシュされないので、Adobe Commerceは顧客のリクエストごとに同じデータを取得する必要があり、サーバーの負荷が高くなります。
 
-を使用する代わりに、 `_isScopePrivate` 変数は、非公開コンテンツ用に、ユーザーに依存しないデータを表示するブロックとテンプレートを作成します。 このデータは、Adobe Commerce UI コンポーネントによってユーザー固有のデータに置き換えられ、このコンポーネントによって、レンダリング前のデータをより効率的に処理できます。 手順については、 [非公開コンテンツ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) （内） _[!DNL Commerce PHP Extensions Guide]_.
+を使用する代わりに `_isScopePrivate` 変数：プライベートコンテンツの場合は、ブロックとテンプレートを作成して、ユーザーに依存しないデータを表示します。 このデータは、Adobe Commerce UI コンポーネントによってユーザー固有のデータに置き換えられ、プリレンダリングのデータをより効率的に処理できます。 手順については、を参照してください [非公開コンテンツ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) が含まれる _[!DNL Commerce PHP Extensions Guide]_.
 
-## 影響を受ける製品およびバージョン
+## 影響を受ける製品とバージョン
 
-[サポートされているすべてのバージョン](../../../release/versions.md) /:
+[サポートされているすべてのバージョン](../../../release/versions.md) （件中）:
 
-- Adobe Commerce an cloud infrastructure
-- Adobe Commerceオンプレミス
+- クラウドインフラストラクチャー上のAdobe Commerce
+- Adobe Commerce オンプレミス
 
-## パフォーマンスへの影響の可能性
+## パフォーマンスへの潜在的な影響
 
-を含むプライベートコンテンツブロックを持つサイト `_isScopePrivate` 変数トリガーAJAXリクエストを使用して、各顧客リクエストに対して同じデータを取得します。 これにより、応答時間が増加し、顧客登録、買い物かごの更新、注文送信、支払いトランザクションなど、よりビジネスクリティカルなストアフロント操作を処理するために使用できる追加のリソースを使用します。
+を含むプライベートコンテンツブロックがあるサイト `_isScopePrivate` 変数は、各カスタマーリクエストに対して同じデータを取得するAJAX リクエストをトリガーします。 これにより、応答時間が長くなり、顧客登録、買い物かごの更新、注文の送信、支払いトランザクションなど、よりビジネスクリティカルなストアフロント操作を処理するのに使用できる追加のリソースが使用されます。
 
 ## 追加情報
 
 - [非公開コンテンツ](../../../performance/configuration.md#client-side-optimization-settings)
-- [高スループットのAJAXリクエストにより、パフォーマンスが低下する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
+- [スループットの高いAJAX リクエストが原因で、パフォーマンスが低下する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)

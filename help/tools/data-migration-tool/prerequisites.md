@@ -1,49 +1,49 @@
 ---
-title: '''[!DNL Data Migration Tool] 前提条件'
-description: 使用を開始する前に必要な操作について説明します。 [!DNL Data Migration Tool] Magento1 とMagento2 の間でデータを転送する。
+title: '[!DNL Data Migration Tool] 前提条件'
+description: の使用を開始する前に行う必要がある操作について説明します [!DNL Data Migration Tool] Magento1 とMagento2 との間でデータを転送する。
 exl-id: 42dfa1ca-41ed-453d-a3e4-41ff36817ca3
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
 
 # [!DNL Data Migration Tool] 前提条件
 
-移行を開始する前に、次の要件を満たしていることを確認してください。
+移行を開始する前に、次の要件が満たされていることを確認してください。
 
 ## Magento2 系
 
-* 次の条件を満たすようにMagento2 システムを設定します。 [システム要件](../../installation/system-requirements.md).
+* 次の条件を満たすようにMagento2 システムを設定します [必要システム構成](../../installation/system-requirements.md).
 
-  既存のMagento1 システムと少なくとも一致するトポロジと設計を使用します。
+  既存のMagento1 システムと少なくとも一致するトポロジとデザインを使用します。
 
-* [インストールMagento2](../../installation/overview.md).
+* [Magento 2 をインストールします。](../../installation/overview.md).
 
 ## Cron
 
-Magento2 の cron ジョブを開始しないでください。
+Magento 2 cron ジョブは開始しないでください。
 
 ## データベース
 
-* インストール後、バックアップまたは [ダンプ](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) Magento2 データベースをできるだけ早く作成します。 これにより、移行が成功しなかった場合に、初期データベース状態を復元できます。
+* インストール後、または [ダンプ](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) Magento2 データベースを早急に作成してください。 これにより、移行が成功しなかった場合に、初期のデータベース状態を復元できます。
 
-* 次の項目を確認します。 [!DNL Data Migration Tool] には、Magento1 とMagento2 データベースを接続するためのネットワークアクセス権があります。
+* 次のかどうかを確認します [!DNL Data Migration Tool] Magento1 とMagento2 のデータベースを接続するためのネットワーク・アクセスが可能です。
 
-  ファイアウォールでポートを開き、移行ツールがデータベースと通信できるようにします。
+  移行ツールがデータベースと通信できるように、ファイアウォールでポートを開きます。
 
-* MySQL アカウントに、データベースにアクセスするために必要な権限がすべて付与されていることをMagentoしてください。
+* MySQL アカウントに、Magentoデータベースへのアクセスに必要な権限がすべて付与されていることを確認します。
 
-Magento1 データベースでバイナリログが有効になっている場合は、グローバル [`log_bin_trust_function_creators`](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_log_bin_trust_function_creators) MySQL システム変数をに設定する `1`を使用するか、 [SUPER 権限](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_super) をアカウントに追加します。
+Magento1 データベースに対してバイナリ・ロギングが有効になっている場合は、グローバルを設定します [`log_bin_trust_function_creators`](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_log_bin_trust_function_creators) MySQL システム変数をに `1`、または [SUPER 権限](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_super) をアカウントに。
 
-* 移行前に、Magento2 ストアで新しいエンティティ（製品、カテゴリ、属性）を作成することはお勧めしません。これは、 [!DNL Data Migration Tool] これらの新しいエンティティは、Magento1 の古いエンティティで上書きされます。
+* 移行前に、Magento2 ストアに新しいエンティティ（製品、カテゴリ、属性）を作成することはお勧めしません。 [!DNL Data Migration Tool] は、そのような新しいエンティティをMagento 1 の古いエンティティで上書きします。
 
 ## 拡張機能
 
-Magento1 の拡張機能コードをMagento2 に移行します。
+Magento 1 の拡張コードをMagento 2 に移行します。
 
-最新の拡張機能バージョンを見つけるには、 [!DNL [Commerce Marketplace]](https://marketplace.magento.com/) または、拡張機能プロバイダーにお問い合わせください。
+最新の拡張機能のバージョンを確認するには、次を参照してください： [!DNL [Commerce Marketplace]](https://marketplace.magento.com/) または、拡張機能のプロバイダーにお問い合わせください。
 
-また、 [!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md).
+を使用することもできます [!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md).

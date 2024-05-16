@@ -1,34 +1,34 @@
 ---
 title: のカスタマイズ [!DNL Data Migration Tool]
-description: カスタマイズ方法を学ぶ [!DNL Data Migration Tool] 拡張機能によって作成されたデータをMagento1 とMagento2 の間で転送するには、以下を実行します。
+description: をカスタマイズする方法を説明します [!DNL Data Migration Tool] Magento1 とMagento2 の間で拡張機能によって作成されたデータを転送する。
 exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
 
-# を設定します。 [!DNL Data Migration Tool]
+# の設定 [!DNL Data Migration Tool]
 
-場合によっては、 [拡張機能](https://marketplace.magento.com/extensions.html) またはカスタムコードがMagento1 とMagento2 で異なる。 内で拡張ポイントを使用する [!DNL Data Migration Tool] をクリックして、このデータを移行します。 データの形式と構造が同じ場合、ユーザーの操作を必要とせずに、自動的にデータを移行できます。
+によって作成されるデータ形式と構造 [拡張機能](https://marketplace.magento.com/extensions.html) または、Magento 1 とMagento 2 でカスタムコードが異なります。 内での拡張ポイントの使用 [!DNL Data Migration Tool] このデータを移行します。 データの形式と構造が同じ場合、ユーザーの操作なしでツールを使用して自動的にデータを移行できます。
 
-移行中に、 [マッピングステップ](technical-specification.md#map-step) は、拡張機能で作成されたテーブルを含め、Magento1 とMagento2 のすべてのテーブルをスキャンおよび比較します。 テーブルが同じ場合、ツールは自動的にデータを移行します。 テーブルが異なる場合、ツールは終了し、ユーザーに通知します。
+移行中、 [マップ ステップ](technical-specification.md#map-step) 拡張機能で作成されたテーブルを含む、すべてのMagento1 およびMagento2 のテーブルをスキャンして比較します。 テーブルが同じ場合、ツールは自動的にデータを移行します。 テーブルが異なる場合、ツールは終了し、ユーザーに通知します。
 
 >[!NOTE]
 >
->詳しくは、 [技術仕様](technical-specification.md) 拡張する前に [!DNL Data Migration Tool]. また、 [移行ガイド](../overview.md) 移行ツールの使用に関する一般的な情報については、を参照してください。
+>を読み取る [技術仕様](technical-specification.md) を拡張する前に [!DNL Data Migration Tool]. また、を確認します [移行ガイド](../overview.md) を参照してください。
 
 
-## データの小規模な形式と構造の変更
+## データ形式と構造のマイナーな変更
 
-ほとんどの場合、 [マッピングステップ](technical-specification.md#map-step) で次のメソッドを使用して、小さなデータ形式と構造の変更を十分に解決できます。 `map.xml` ファイル：
+ほとんどの場合、 [マップ ステップ](technical-specification.md#map-step) で次のメソッドを使用すると、マイナーなデータ形式および構造の変更を十分に解決できます `map.xml` ファイル：
 
-- マッピングルールを使用してテーブル名またはフィールド名を変更する
-- 既存のハンドラーまたはカスタムハンドラーを使用してデータ形式を変換する
+- マッピングルールを使用したテーブル名またはフィールド名の変更
+- 既存のハンドラーまたはカスタムハンドラーを使用してデータ形式を変換
 
-次に、マッピングルールとハンドラーの両方を使用する例を示します。 この例では、Magento2 向けに改善された「GreatBlog」と呼ばれる仮のMagento1 拡張を使用しています。
+マッピングルールとハンドラーの両方を使用する例を以下に示します。 この例では、Magento 2 用に改善された「GreatBlog」という架空のMagento 1 拡張機能を使用します。
 
 ```xml
 <source>
@@ -71,36 +71,36 @@ ht-degree: 0%
 </destination>
 ```
 
-- 不要なデータを `great_blog_index` インデックステーブル。
-- テーブル `great_blog_publication` はに名前が変更されました。 `great_blog_post` Magento2 では、データは新しいテーブルに移行されます。
-   - The `summary` フィールド名は「 」に変更されました。 `title`の場合、データは新しいフィールドに移行されます。
-   - The `priority` フィールドが削除され、Magento2 には存在しなくなりました。
+- から不要なデータを移行しない `great_blog_index` インデックステーブル。
+- テーブル `great_blog_publication` の名前はに変更されました `great_blog_post` Magento 2 では、データは新しいテーブルに移行されます。
+   - この `summary` フィールド名をに変更しました `title`そのため、データは新しいフィールドに移行されます。
+   - この `priority` フィールドが削除され、Magento 2 には存在しません。
    - のデータ `body` フィールドの形式が変更されました。カスタムハンドラーで処理する必要があります。 `\Migration\Handler\GreatBlog\NewFormat`.
-- Magento2 の「GreatBlog」拡張機能に対して、新しい評価機能が開発されました。
-   - 新しい `great_blog_rating` テーブルが作成されました。
-   - 新しい `great_blog_post.rating` フィールドが作成されました。
+- Magento 2 の「GreatBlog」拡張機能用に新しい評価機能が開発されました。
+   - 新品 `great_blog_rating` テーブルが作成されました。
+   - 新品 `great_blog_post.rating` フィールドが作成されました。
 
 ### 他の手順でのマッピングの拡張
 
-その他の手順では、マッピングをサポートします ( 例： [EAV ステップ](technical-specification.md#eav-step) および顧客属性の手順を参照してください。 これらの手順では、事前に定義されたMagento表のリストを移行します。 例えば、「GreatBlog」拡張機能に、 `eav_attribute` 表と名前がMagento2 で変更されました。 テーブルは [EAV ステップ](technical-specification.md#eav-step)の場合、マッピングルールを記述して `map-eav.xml` ファイル。 The `map.xml` および `map-eav.xml` 同じ `map.xsd` スキーマの場合、マッピングルールは同じままです。
+その他の手順は、次のようなマッピングをサポートします [EAV ステップ](technical-specification.md#eav-step) および顧客属性ステップ 次の手順では、Magentoテーブルの定義済みリストを移行します。 例えば、「GreatBlog」拡張機能のに追加のフィールドがあるとします `eav_attribute` Magento2 で変更されたテーブルと名前。 テーブルはによって処理されるので、 [EAV ステップ](technical-specification.md#eav-step)、マッピングルールはに対して記述する必要があります `map-eav.xml` ファイル。 この `map.xml` および `map-eav.xml` ファイルは同じ値を使用 `map.xsd` スキーマなので、マッピングルールは同じままです。
 
-## データのフォーマットと構造の大きな変更
+## データ形式および構造の大幅な変更
 
-マップステップに加えて、 `config.xml` 大きな形式と構造の変更を含むデータを移行するファイル。次のものが含まれます。
+マップ ステップに加えて、には他のステップがあります。 `config.xml` 次のような主要な形式および構造の変更によりデータを移行するファイル。
 
-- [Url 書き換えステップ](technical-specification.md#url-rewrite-step)
+- [Url 書き換え手順](technical-specification.md#url-rewrite-step)
 - OrderGrids ステップ
 - [EAV ステップ](technical-specification.md#eav-step)
 
-とは異なり、 [マッピングステップ](technical-specification.md#map-step)の場合、これらの手順では、すべてのテーブルではなく、定義済みのテーブルリストをスキャンします。
+と異なります。 [マップ ステップ](technical-specification.md#map-step)の場合、これらの手順では、すべてのテーブルではなく、事前に定義されたテーブルのリストをスキャンします。
 
-データの形式や構造を大幅に変更する場合は、カスタムステップを作成します。
+データの形式および構造を大幅に変更する場合は、カスタムステップを作成します。
 
 ### カスタムステップの作成
 
-同じ「GreatBlog」の例を使用して、Magento1 に 1 つのテーブルがあるが、Magento2 に 2 つのテーブルがあるように再設計されたとします。
+同じ「GreatBlog」の例を使用して、Magento1 に 1 つのテーブルがあるものの、Magento2 に 2 つのテーブルを持つように再設計したとします。
 
-Magento1 には、 `greatblog_post` テーブル：
+Magento 1 には、 `greatblog_post` テーブル：
 
 ```text
 | Field     | Type     |
@@ -112,7 +112,7 @@ Magento1 には、 `greatblog_post` テーブル：
 | tags      | TEXT     |
 ```
 
-Magento2 で、タグの新しいテーブル `greatblog_post_tags` が導入されました。
+Magento 2 のタグ用の新しいテーブル `greatblog_post_tags` が導入されました：
 
 ```text
 | Field      | Type     |
@@ -122,7 +122,7 @@ Magento2 で、タグの新しいテーブル `greatblog_post_tags` が導入さ
 | sort_order | SMALLINT |
 ```
 
-MAGENTO2 `greatblog_post` テーブルは次のようになります。
+MAGENTO 2 `greatblog_post` テーブルは次のようになります。
 
 ```text
 | Field     | Type     |
@@ -133,7 +133,7 @@ MAGENTO2 `greatblog_post` テーブルは次のようになります。
 | author_id | SMALLINT |
 ```
 
-すべてのデータを古いテーブル構造から新しい構造に移行するには、 `config.xml` ファイル。 例：
+古いテーブル構造から新しいテーブル構造にすべてのデータを移行するには、でカスタムステップを作成できます。 `config.xml` ファイル。 例：
 
 ```xml
 <steps mode="data">
@@ -153,23 +153,23 @@ MAGENTO2 `greatblog_post` テーブルは次のようになります。
 </steps>
 ```
 
-ツールは、 `config.xml` ファイル内に配置します。 この例では、 `GreatBlog Step` が最後に実行されます。
+ツールは、 `config.xml` ファイル。上から下へ。 この例では、 `GreatBlog Step` 前回の実行。
 
-手順には、次の 4 つのタイプのクラスを含めることができます。
+手順には、次の 4 種類のクラスが含まれます。
 
 - 整合性チェック
 - データ配信
 - ボリュームチェック
-- デルタ配信
+- Delta 配信
 
 >[!NOTE]
 >
->参照： [設定](technical-specification.md#configuration), [ステップの内部](technical-specification.md#step-internals), [ステージ](technical-specification.md#step-stages)、および [実行モード](technical-specification.md#running-modes) を参照してください。
+>こちらを参照してください [設定](technical-specification.md#configuration), [ステップ内部](technical-specification.md#step-internals), [ステージ](technical-specification.md#step-stages)、および [実行モード](technical-specification.md#running-modes) を参照してください。
 
 
-複雑な SQL クエリをこれらのクラス内に組み立てて、データを取得および移行できます。 また、これらのテーブルは [マッピングステップ](technical-specification.md#map-step) 既存のテーブルをすべてスキャンし、データを移行しようとするので、データが `<ignore>` タグ `map.xml` ファイル。
+複雑な SQL クエリは、これらのクラス内で組み合わせて、データを取得および移行できます。 また、これらのテーブルはで「無視」される必要があります。 [マップ ステップ](technical-specification.md#map-step) これは、既存のすべてのテーブルをスキャンし、データがに存在しない限りデータの移行を試みるからです `<ignore>` のタグ `map.xml` ファイル。
 
-整合性チェックの場合は、 `config.xml` ファイルを使用して、テーブル構造が期待どおりであることを確認します。
+整合性チェックの場合は、に追加のマップファイルを定義します。 `config.xml` ファイルを作成して、テーブル構造が期待どおりであることを確認します。
 
 ```xml
 <config xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
@@ -205,7 +205,7 @@ MAGENTO2 `greatblog_post` テーブルは次のようになります。
 </map>
 ```
 
-整合性チェッククラス `Vendor\Migration\Step\GreatBlog\Integrity` extends `Migration\App\Step\AbstractIntegrity` とには、 `perform` メソッドを使用して、テーブル構造を検証します。
+整合性チェック クラス `Vendor\Migration\Step\GreatBlog\Integrity` を拡張 `Migration\App\Step\AbstractIntegrity` およびは、を含みます `perform` テーブル構造を検証する方法：
 
 ```php
 class Integrity extends \Migration\App\Step\AbstractIntegrity
@@ -248,7 +248,7 @@ class Integrity extends \Migration\App\Step\AbstractIntegrity
 }
 ```
 
-次に、データを処理してMagento2 データベースに保存するためのクラスを作成する必要があります `Vendor\Migration\Step\GreatBlog\Data`:
+次に、Magento2 データベースにデータを処理および保存するためのクラスを作成する必要があります `Vendor\Migration\Step\GreatBlog\Data`:
 
 ```php
 class Data implements \Migration\App\Step\StageInterface
@@ -326,7 +326,7 @@ class Data implements \Migration\App\Step\StageInterface
 }
 ```
 
-ボリュームクラス内 `Vendor\Migration\Step\GreatBlog\Volume`に設定されている場合、データが完全に移行されたかどうかを確認します。
+Volume クラス内 `Vendor\Migration\Step\GreatBlog\Volume`データが完全に移行されたかどうかを確認します。
 
 ```php
 class Volume extends \Migration\App\Step\AbstractVolume
@@ -355,7 +355,7 @@ class Volume extends \Migration\App\Step\AbstractVolume
 }
 ```
 
-差分移行機能を追加するには、 `deltalog.xml` ファイル。 In `group`、変更の確認が必要なテーブルの名前を指定します。
+差分移行機能を追加するには、新しいグループをに追加します `deltalog.xml` ファイル。 対象： `group`で、変更をチェックする必要があるテーブルの名前を指定します。
 
 ```xml
 <groups>
@@ -366,7 +366,7 @@ class Volume extends \Migration\App\Step\AbstractVolume
 </groups>
 ```
 
-次に、 `Delta` クラス `Vendor\Migration\Step\GreatBlog\Delta` が拡張する `Migration\App\Step\AbstractDelta`:
+次に、を作成します `Delta` クラス `Vendor\Migration\Step\GreatBlog\Delta` それが広がる `Migration\App\Step\AbstractDelta`:
 
 ```php
 class Delta extends \Migration\App\Step\AbstractDelta
@@ -406,10 +406,10 @@ class Delta extends \Migration\App\Step\AbstractDelta
 }
 ```
 
-この例で示すカスタム手順の実装後、システムは単一のMagento1 テーブルからデータを取得し、次を使用して処理します。 `Vendor\Migration\Step\GreatBlog\Data` クラスを使用し、2 つのMagento2 テーブルにデータを格納します。 新しいレコードと変更されたレコードは、 `Vendor\Migration\Step\GreatBlog\Delta` クラス。
+例に示したカスタムステップの実装が完了すると、システムはシングルMagento1 テーブルからデータを取得し、次を使用して処理します `Vendor\Migration\Step\GreatBlog\Data` データをクラス化し、2 つのMagento 2 テーブルに格納します。 新しいレコードと変更されたレコードは、 `Vendor\Migration\Step\GreatBlog\Delta` クラス。
 
-## 禁止されている拡張メソッド
+## 禁止される拡張方法
 
-以降 [!DNL Data Migration Tool] とMagento2 は常に進化しており、既存の手順とハンドラーは変更される可能性があります。 手順 ( [マッピングステップ](technical-specification.md#map-step), [URL 書き換えステップ](technical-specification.md#url-rewrite-step)、およびハンドラーを拡張します。
+以降 [!DNL Data Migration Tool] また、Magento 2 は常に進化しており、既存の手順やハンドラーは変更される可能性があります。 のようなステップの動作を上書きしないことを強くお勧めします。 [マップ ステップ](technical-specification.md#map-step), [URL 書き換え手順](technical-specification.md#url-rewrite-step)、およびハンドラーのクラスを拡張して追加できます。
 
-一部の手順ではマッピングがサポートされず、コードを変更しない限り変更できません。 移行後にデータを変更する手順を追加するか、 [GitHub の問題](https://github.com/magento/data-migration-tool/issues) 既存のステップで新しい拡張ポイントを探します。
+一部の手順は、マッピングをサポートしておらず、変更するにはコードを変更する必要があります。 移行終了時にデータを変更する追加の手順を記述するか、 [GitHub の問題](https://github.com/magento/data-migration-tool/issues) 既存のステップで新しい拡張ポイントを要求します。

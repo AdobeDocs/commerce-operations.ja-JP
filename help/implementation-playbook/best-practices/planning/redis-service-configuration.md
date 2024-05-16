@@ -1,6 +1,6 @@
 ---
 title: Redis サービス設定のベストプラクティス
-description: Adobe Commerce用の拡張 Redis キャッシュ実装を使用して、キャッシュのパフォーマンスを向上させる方法を説明します。
+description: Adobe Commerceの拡張 Redis キャッシュ実装を使用して、キャッシュパフォーマンスを向上させる方法を説明します。
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
@@ -17,12 +17,12 @@ ht-degree: 0%
 - Redis スレーブ接続を有効にする
 - キーをプリロード
 - 古いキャッシュを有効にする
-- Redis のキャッシュを Redis のセッションから分離する
-- Redis キャッシュを圧縮し、次を使用します。 `gzip` より高い圧縮のために
+- Redis キャッシュと Redis セッションを分離します。
+- Redis キャッシュを圧縮して使用 `gzip` 圧縮率を高くするために
 
 ## Redis L2 キャッシュの設定
 
-Redis L2 キャッシュを設定するには、 `REDIS_BACKEND` デプロイメント変数を `.magento.env.yaml` 設定ファイル。
+を設定して、Redis L2 キャッシュを設定します。 `REDIS_BACKEND` のデプロイメント変数 `.magento.env.yaml` 設定ファイル。
 
 ```yaml
 stage:
@@ -30,34 +30,34 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-クラウドインフラストラクチャの環境設定については、 [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) （内） _Commerce on Cloud Infrastructure ガイド_.
+クラウドインフラストラクチャの環境設定については、を参照してください [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) が含まれる _クラウドインフラストラクチャー上のCommerce ガイド_.
 
-オンプレミスでのインストールについては、 [Redis ページキャッシュの設定](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) （内） _設定ガイド_.
-
->[!NOTE]
->
->最新バージョンの `ece-tools` パッケージ。 そうでない場合、 [最新バージョンにアップグレード](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). ローカル環境にインストールされているバージョンを確認するには、 `composer show magento/ece-tools` CLI コマンド。
-
-
-### L2 キャッシュメモリのサイズ調整 (Adobe Commerce Cloud)
-
-L2 キャッシュは [一時ファイルシステム](https://en.wikipedia.org/wiki/Tmpfs) を格納するメカニズムとして使用します。 特別なキー値データベースシステムと比較すると、一時ファイルシステムには、メモリ使用量を制御するためのキー削除ポリシーはありません。
-
-メモリ使用量の制御が不足していると、古いキャッシュを蓄積することで、L2 キャッシュのメモリ使用量が時間の経過と共に増加する可能性があります。
-
-L2 キャッシュ実装のメモリ枯渇を防ぐため、Adobe Commerceは、特定のしきい値に達するとストレージをクリアします。 しきい値のデフォルト値は 95%です。
-
-キャッシュストレージのプロジェクト要件に基づいて、L2 キャッシュメモリの最大使用量を調整することが重要です。 次のいずれかの方法で、メモリキャッシュのサイズ設定を設定します。
-
-- サポートチケットを作成して、 `/dev/shm` マウント
-- を調整します。 `cleanup_percentage` ストレージの最大充填率を制限するための、アプリケーションレベルのプロパティ。 残りの空きメモリは、他のサービスで使用できます。
-キャッシュ設定グループの下のデプロイメント設定で設定を調整できます `cache/frontend/default/backend_options/cleanup_percentage`.
+オンプレミスでのインストールについては、を参照してください。 [Redis ページキャッシュの設定](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) が含まれる _設定ガイド_.
 
 >[!NOTE]
 >
->The `cleanup_percentage` 設定可能なオプションがAdobe Commerce 2.4.4 で導入されました。
+>の最新バージョンを使用していることを確認します `ece-tools` パッケージ。 そうでない場合、 [最新バージョンへのアップグレード](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). ローカル環境にインストールされているバージョンは、 `composer show magento/ece-tools` CLI コマンド。
 
-次のコードは、 `.magento.env.yaml` ファイル：
+
+### L2 キャッシュメモリサイズ設定（Adobe Commerce Cloud）
+
+L2 キャッシュは [一時ファイルシステム](https://en.wikipedia.org/wiki/Tmpfs) ストレージメカニズムとして使用されます。 特殊なキー値データベースシステムと比較して、一時ファイルシステムには、メモリの使用を制御するためのキー削除ポリシーがありません。
+
+メモリ使用量の制御がないと、古くなったキャッシュが蓄積され、L2 キャッシュのメモリ使用量が時間の経過とともに増加する可能性があります。
+
+L2 キャッシュ実装のメモリ不足を避けるために、Adobe Commerceは、特定のしきい値に達するとストレージをクリアします。 デフォルトのしきい値は 95% です。
+
+キャッシュストレージのプロジェクト要件に基づいて、L2 キャッシュメモリの最大使用量を調整することが重要です。 次のいずれかの方法を使用して、メモリキャッシュサイズを設定します。
+
+- のサイズ変更をリクエストするためのサポートチケットを作成します `/dev/shm` マウント。
+- を調整 `cleanup_percentage` ストレージの最大充填率をキャップするアプリケーションレベルのプロパティ。 残りの空きメモリは、他のサービスで使用できます。
+設定は、キャッシュ設定グループの下にあるデプロイメント設定で調整できます `cache/frontend/default/backend_options/cleanup_percentage`.
+
+>[!NOTE]
+>
+>この `cleanup_percentage` 設定可能なオプションは、Adobe Commerce 2.4.4 で導入されました。
+
+次のコードは、での設定例を示しています。 `.magento.env.yaml` ファイル：
 
 ```yaml
 stage:
@@ -71,11 +71,11 @@ stage:
             cleanup_percentage: 90
 ```
 
-キャッシュの要件は、プロジェクトの設定とカスタムサードパーティコードによって異なる場合があります。 L2 キャッシュメモリのサイズ設定の範囲により、L2 キャッシュを動作させる際に、しきい値のヒットが多すぎません。
-L2 キャッシュのメモリ使用量は、頻繁なストレージのクリアを避けるために、しきい値以下で一定のレベルで安定するのが理想的です。
+キャッシュ要件は、プロジェクト設定とカスタムサードパーティコードによって異なる場合があります。 L2 キャッシュ メモリ サイズのスコープにより、しきい値のヒット数が多くなりすぎることなく、L2 キャッシュを動作させることができます。
+ストレージのクリアが頻繁に行われるのを避けるために、L2 キャッシュメモリの使用状況が、しきい値を下回る一定のレベルで安定していることが理想的です。
 
-次の CLI コマンドを使用して、クラスタの各ノードで L2 キャッシュストレージメモリの使用量を確認し、 `/dev/shm` 行。
-使用状況はノードごとに異なる場合がありますが、同じ値に収束する必要があります。
+以下の CLI コマンドを使用して、クラスターの各ノードでの L2 キャッシュストレージメモリの使用状況を確認し、 `/dev/shm` ライン。
+使用方法はノードによって異なる場合がありますが、同じ値に収束する必要があります。
 
 ```bash
 df -h
@@ -83,7 +83,7 @@ df -h
 
 ## Redis スレーブ接続を有効にする
 
-で Redis スレーブ接続を有効にする `.magento.env.yaml` 読み取り/書き込みトラフィックを処理するノードを 1 つにし、読み取り専用トラフィックを処理するノードを他のノードに許可する設定ファイル。
+で Redis スレーブ接続を有効にする `.magento.env.yaml` 設定ファイル。1 つのノードのみが読み取り/書き込みトラフィックを処理し、他のノードが読み取り専用トラフィックを処理できるようにします。
 
 ```yaml
 stage:
@@ -91,17 +91,17 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-詳しくは、 [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) （内） _Commerce on Cloud Infrastructure ガイド_.
+参照： [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) が含まれる _クラウドインフラストラクチャー上のCommerce ガイド_.
 
-Adobe Commerceのオンプレミスでのインストールの場合、 `bin/magento:setup` コマンド。 詳しくは、 [デフォルトのキャッシュに Redis を使用](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) （内） _設定ガイド_.
+Adobe Commerceのオンプレミスインストールの場合は、を使用して新しい Redis キャッシュ実装を設定します。 `bin/magento:setup` コマンド。 参照： [既定のキャッシュに Redis を使用](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) が含まれる _設定ガイド_.
 
 >[!WARNING]
 >
->実行 _not_ を使用してクラウドインフラストラクチャプロジェクトに Redis スレーブ接続を設定する [拡張/分割アーキテクチャ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). これにより、Redis 接続エラーが発生します。 詳しくは、 [Redis 設定ガイダンス](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) （内） _クラウドインフラストラクチャ上のコマース_ ガイド。
+>実行 _ではない_ を使用したクラウドインフラストラクチャプロジェクト用の Redis スレーブ接続の設定 [拡張/分割アーキテクチャ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). これにより、Redis 接続エラーが発生します。 参照： [Redis 設定ガイダンス](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) が含まれる _クラウドインフラストラクチャー上の Commerce_ ガイド。
 
 ## キーをプリロード
 
-ページ間でデータを再利用するには、 `.magento.env.yaml` 設定ファイル。
+ページ間でデータを再利用するには、プリロードするキーを `.magento.env.yaml` 設定ファイル。
 
 ```yaml
 stage:
@@ -120,11 +120,11 @@ stage:
               - '061_SYSTEM_DEFAULT:hash'
 ```
 
-オンプレミスでのインストールについては、 [Redis のプリロード機能](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) （内） _設定ガイド_.
+オンプレミスでのインストールについては、を参照してください。 [Redis プリロード機能](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) が含まれる _設定ガイド_.
 
 ## 古いキャッシュを有効にする
 
-新しいキャッシュを並行して生成しながら古いキャッシュを使用することで、ロック待ち時間を短縮し、多数のブロックやキャッシュキーを処理する場合に特にパフォーマンスを向上させます。 古いキャッシュを有効にし、 `.magento.env.yaml` 設定ファイル：
+新しいキャッシュを並行して生成しながら古いキャッシュを使用することで、特に多数のブロックとキャッシュキーを処理する場合に、ロックの待機時間を短縮し、パフォーマンスを向上させます。 で古いキャッシュを有効にし、キャッシュタイプを定義する `.magento.env.yaml` 設定ファイル：
 
 ```yaml
 stage:
@@ -157,13 +157,13 @@ stage:
           frontend: "stale_cache_enabled"
 ```
 
-オンプレミスでのインストールの設定については、 [古いキャッシュオプション](../../../configuration/cache/level-two-cache.md#stale-cache-options) （内） _設定ガイド_.
+オンプレミスのインストールの設定については、を参照してください。 [古いキャッシュオプション](../../../configuration/cache/level-two-cache.md#stale-cache-options) が含まれる _設定ガイド_.
 
-## Redis キャッシュとセッションインスタンスを分離
+## Redis のキャッシュとセッションのインスタンスを分離する
 
-Redis のキャッシュを Redis のセッションから分離すると、キャッシュとセッションを個別に管理できます。 キャッシュの問題がセッションに影響を与えるのを防ぎ、売上高に影響を与える可能性があります。 各 Redis インスタンスは、それぞれのコアで実行され、パフォーマンスが向上します。
+Redis キャッシュと Redis セッションを分離すると、キャッシュとセッションを個別に管理できます。 キャッシュの問題がセッションに影響を与え、売上高に影響を与える可能性を防ぐことができます。 各 Redis インスタンスは独自のコアで実行されるため、パフォーマンスが向上します。
 
-1. を更新します。 `.magento/services.yaml` 設定ファイル。
+1. を更新 `.magento/services.yaml` 設定ファイル。
 
    ```yaml
    mysql:
@@ -185,7 +185,7 @@ Redis のキャッシュを Redis のセッションから分離すると、キ�
       disk: 2048
    ```
 
-1. を更新します。 `.magento.app.yaml` 設定ファイル。
+1. を更新 `.magento.app.yaml` 設定ファイル。
 
    ```yaml
    relationships:
@@ -196,7 +196,7 @@ Redis のキャッシュを Redis のセッションから分離すると、キ�
        rabbitmq: "rabbitmq:rabbitmq"
    ```
 
-1. を送信 [Adobe Commerceサポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 実稼動環境とステージング環境でのセッション専用の新しい Redis インスタンスのプロビジョニングをリクエストする場合。 更新された `.magento/services.yaml` および `.magento.app.yaml` 設定ファイル。 これによってダウンタイムは発生しませんが、新しいサービスを有効化するには、デプロイメントが必要です。
+1. を送信 [Adobe Commerce サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 実稼動環境とステージング環境のセッション専用の新しい Redis インスタンスのプロビジョニングをリクエストします。 更新されたを含める `.magento/services.yaml` および `.magento.app.yaml` 設定ファイル。 ダウンタイムは発生しませんが、新しいサービスをアクティブ化するにはデプロイメントが必要です。
 
 1. 新しいインスタンスが実行中であることを確認し、ポート番号をメモします。
 
@@ -204,10 +204,10 @@ Redis のキャッシュを Redis のセッションから分離すると、キ�
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
    ```
 
-1. にポート番号を追加します。 `.magento.env.yaml` 設定ファイル。
+1. ポート番号をに追加します。 `.magento.env.yaml` 設定ファイル。
 
    >[!NOTE]
-   >`disable_locking` は、次のように設定する必要があります `1`.
+   >`disable_locking` に設定する必要があります。 `1`.
    >   
 
    ```yaml
@@ -223,13 +223,13 @@ Redis のキャッシュを Redis のセッションから分離すると、キ�
        min_lifetime: 60
    ```
 
-1. からセッションを削除 [デフォルトデータベース](../../../configuration/cache/redis-pg-cache.md) (`db 0`) を Redis キャッシュインスタンスに置き換えます。
+1. からのセッションの削除 [デフォルトデータベース](../../../configuration/cache/redis-pg-cache.md) （`db 0`）に設定する必要があります。
 
    ```bash
    redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
    ```
 
-配置時に、次の行が [ログの作成とデプロイ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
+デプロイ時には、に次の行が表示されます。 [ログのビルドとデプロイ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
 
 ```terminal
 W:   - Downloading colinmollenhour/credis (1.11.1)
@@ -243,9 +243,9 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 [2022-08-17 01:13:40] INFO: redis-session will be used for session if it was not override by SESSION_CONFIGURATION
 ```
 
-## キャッシュの圧縮
+## キャッシュ圧縮
 
-6 GB を超える Redis を使用している場合 `maxmemory`キャッシュ圧縮を使用すると、キーの消費容量を減らすことができます。 クライアント側のパフォーマンスにトレードオフがあることに注意してください。 予備の CPU がある場合は、有効にします。 詳しくは、 [セッションストレージに Redis を使用](../../../configuration/cache/redis-session.md) （内） _設定ガイド_.
+6 GB を超える Redis を使用している場合 `maxmemory`を使用すると、キャッシュ圧縮を使用して、キーが消費する領域を減らすことができます。 クライアントサイドのパフォーマンスにはトレードオフがあることに注意してください。 予備の CPU がある場合は、有効にします。 参照： [セッションストレージに Redis を使用](../../../configuration/cache/redis-session.md) が含まれる _設定ガイド_.
 
 ```yaml
 stage:

@@ -1,19 +1,19 @@
 ---
-title: Vanish ESI ブロック
-description: Edge Side のインクルードと、それらを使用して Web ページを埋め込む方法について説明します。
-badge: label="寄稿：Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="コンスタンティン G."
+title: ワニス ESI ブロック
+description: エッジサイドインクルードと、それを使用して web ページを埋め込む方法について説明します。
+badge: label="執筆：Konstantin G" type="Informative" url="https://github.com/goivvy" tooltip="コンスタンチン G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
 
-# Vanish ESI ブロック
+# ワニス ESI ブロック
 
-Edge Side Includes(ESI) は、他の Web ページに Web ページを含めるために使用できる特別なディレクティブです。
+エッジサイドインクルード（ESI）は、web ページを他の web ページに含めるために使用できる特別なディレクティブです。
 
 例：
 
@@ -23,14 +23,14 @@ Edge Side Includes(ESI) は、他の Web ページに Web ページを含める�
 </div>
 ```
 
-ワニスは次の内容を取り出す `http://domain.com/index.php/page_cache/block/esi/blocks` をクリックし、 `<esi>` タグに貼り付けます。
+ワニスは次の場所からコンテンツを取得します `http://domain.com/index.php/page_cache/block/esi/blocks` を作成して、 `<esi>` これでタグ付けします。
 
-## Commerce および Vanish ESI
+## Commerceとワニス ESI
 
-次の条件を満たすと、Commerce フレームワークは ESI タグを作成します。
+次の条件を満たすと、Commerce フレームワークによって ESI タグが作成されます。
 
-- キャッシュアプリケーションはに設定されています。 `Varnish Cache`
-- XML レイアウト `block` 要素が `ttl` 属性
+- キャッシュアプリケーションはに設定されます `Varnish Cache`
+- XML レイアウト `block` 要素がで追加される `ttl` 属性
 
 ### 例
 
@@ -42,11 +42,11 @@ Edge Side Includes(ESI) は、他の Web ページに Web ページを含める�
    </referenceContainer>
 ```
 
-上記の例では、 `block` 要素は、 `esi.phtml` テンプレートをホームページに追加すると、30 秒ごとに自動的に更新されます。
+上記の例では、 `block` 要素が次からコンテンツを追加 `esi.phtml` ホームページおよび Varnish へのテンプレートは、30 秒ごとに自動的に更新されます。
 
 ## 制限事項
 
-現在、Vanish は HTTPS 経由で ESI をサポートしていないので、自動的に HTTP に切り替わります。
+現在、Varnish は HTTPS 上の ESI をサポートしていないので、自動的に HTTP に切り替わります。
 
 `Magento\PageCache\Observer\ProcessLayoutRenderElement`:
 

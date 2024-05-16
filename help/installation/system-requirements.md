@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Adobe Commerceでテストしたソフトウェアの依存関係とサービスの概要を次に示します。
 
-Commerce とクラウドインフラストラクチャの依存関係にはいくつかの違いがあります。 クラウドインフラストラクチャー上のAdobe Commerceのサービスのバージョンと互換性のサポートは、テストしてホストされるクラウド環境にデプロイしたサービスによって決まり、Adobe Commerceのオンプレミスデプロイメントでサポートされているバージョンとは異なる場合があります。 例えば、オンプレミスデプロイメントではElasticsearch 7.17 が Commerce 2.4.4 でサポートされていますが、クラウドインフラストラクチャでは OpenSearch 1.2 が Commerce 2.4.4 でサポートされています。
+クラウドインフラストラクチャ上のCommerceの依存関係には、いくつかの違いがあります。 クラウドインフラストラクチャー上のAdobe Commerceのサービスのバージョンと互換性のサポートは、テストしてホストされるクラウド環境にデプロイしたサービスによって決まり、Adobe Commerceのオンプレミスデプロイメントでサポートされているバージョンとは異なる場合があります。 例えば、オンプレミスデプロイメントではElasticsearch 7.17 がCommerce 2.4.4 でサポートされていますが、Cloud Infrastructure 上のCommerce 2.4.4 では OpenSearch 1.2 がサポートされています。
 
 次の表は、特定のAdobe Commerce リリースでAdobeがテストした、サードパーティ製ソフトウェアの依存関係のバージョンを示しています。
 
@@ -21,13 +21,13 @@ Adobeでは、次の表に示すシステム要件の組み合わせのみをサ
 
 >[!BEGINTABS]
 
->[!TAB クラウド上の Commerce]
+>[!TAB クラウド上のCommerce]
 
-この [Commerce on Cloud のテンプレート](https://github.com/magento/magento-cloud) 特定のコマースバージョンと互換性のあるサービスのデフォルト設定を提供します。
+この [Commerce on Cloud テンプレート](https://github.com/magento/magento-cloud) は、特定のCommerce バージョンと互換性のあるサービスのデフォルト設定を提供します。
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
-サービスとバージョンの定義： [この `services.yaml` ファイル](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). クラウドインフラストラクチャー上の Commerce 2.4.6 のデフォルトのサービス設定は次のとおりです。
+サービスとバージョンの定義： [この `services.yaml` ファイル](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). クラウドインフラストラクチャー上のCommerce 2.4.6 のデフォルトのサービス設定は、次のとおりです。
 
 ```yaml
 mysql:
@@ -44,7 +44,7 @@ opensearch:
 
 参照： [サービスの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) が含まれる _クラウドインフラストラクチャー上の Commerce_ ガイド。
 
->[!TAB オンプレミスの Commerce]
+>[!TAB Commerce オンプレミス]
 
 {{$include /help/_includes/templated/system-requirements-table.md}}
 
@@ -58,7 +58,7 @@ PHP の設定には、以下のような設定があります。 `memory_limit` 
 
 ### PHP OPcache
 
-次のことを確認することをお勧めします [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) は、パフォーマンス上の理由から有効になっています。 OPcache は多くの PHP ディストリビューションで有効になっています。 この `opcache` 拡張機能は、クラウドインフラストラクチャー上の Commerce にデフォルトでインストールされます。
+次のことを確認することをお勧めします [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) は、パフォーマンス上の理由から有効になっています。 OPcache は多くの PHP ディストリビューションで有効になっています。 この `opcache` 拡張機能は、クラウドインフラストラクチャー上のCommerceにデフォルトでインストールされます。
 
 オンプレミスの場合は、PHP OPcache がインストールされていることを確認してください。 [PHP 設定](prerequisites/php-settings.md). パフォーマンス設定に関する具体的なガイダンスについては、次のソフトウェア推奨事項を参照してください [PHP 設定](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) が含まれる _パフォーマンスのベストプラクティス_ ガイド。
 
@@ -82,13 +82,13 @@ PHPUnit v9 （コマンドラインツールとして）。
 
 >[!BEGINTABS]
 
->[!TAB クラウド上の Commerce]
+>[!TAB クラウド上のCommerce]
 
 次の表に、Cloud Platform にAdobe Commerceをデプロイする際にサポートされる PHP 拡張機能を示します。
 
 {{$include /help/_includes/templated/php-extensions-cloud.md}}
 
->[!TAB オンプレミスの Commerce]
+>[!TAB Commerce オンプレミス]
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
@@ -102,7 +102,7 @@ PHPUnit v9 （コマンドラインツールとして）。
 
 >[!NOTE]
 >
->Adobe Commerceの最新の 2.4.x パッチリリースには、次の要件が適用されます。 該当する場合は、クラウドインフラストラクチャー上の Commerce に関するガイダンスが提供されます。
+>Adobe Commerceの最新の 2.4.x パッチリリースには、次の要件が適用されます。 該当する場合は、クラウドインフラストラクチャー上のCommerceに関するガイダンスを提供します。
 
 ### ブラウザー
 
@@ -117,7 +117,7 @@ PHPUnit v9 （コマンドラインツールとして）。
 
 ### メールサーバー
 
-メール転送エージェント（MTA）または SMTP サーバー。 クラウドインフラストラクチャー上の Commerce は、 [SendGrid メールサービス](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html).
+メール転送エージェント（MTA）または SMTP サーバー。 クラウドインフラストラクチャー上のCommerceでは次を使用します [SendGrid メールサービス](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html).
 
 ### メモリ
 
@@ -145,7 +145,7 @@ Adobe Commerceには、一部の操作で次のシステムツールが必要で
 - 自己署名 SSL 証明書はサポートされていません。
 - Transport Layer Security （TLS）要件 – PayPal および `repo.magento.com` どちらも TLS 1.2 以降が必要です。
 
-クラウドインフラストラクチャー上の Commerce については、を参照してください。 [Fastly 設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) が含まれる _クラウドインフラストラクチャー上の Commerce_ ガイド。
+クラウドインフラストラクチャー上のCommerceについては、以下を参照してください。 [Fastly 設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) が含まれる _クラウドインフラストラクチャー上の Commerce_ ガイド。
 
 ### Xdebug
 

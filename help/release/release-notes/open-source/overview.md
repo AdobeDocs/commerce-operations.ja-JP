@@ -1,13 +1,13 @@
 ---
 title: Magento Open Sourceリリースノート
-description: リリースノートでMagento Open Sourceコードベースを確認します。
-source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
+description: Magento Open Sourceコードベースのリリースノートを確認します。
+exl-id: 6a7b195c-54d5-4827-81e1-e74453350f5e
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 0%
 
 ---
-
 
 # Magento Open Sourceリリースノート
 

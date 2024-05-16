@@ -1,6 +1,6 @@
 ---
 title: 静的コンテンツキャッシュ
-description: 静的コンテンツの署名と、この機能を有効または無効にする方法を理解できます。
+description: 静的コンテンツの署名と、この機能を有効または無効にする方法を理解します。
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
 source-git-commit: d099d60bcf3c960b2e40b48c386041d8865cfb50
@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # 静的コンテンツキャッシュ
 
-パフォーマンスを向上させるために、Commerce では `Expires` 画像、JavaScript、CSS ファイルなどの静的リソースのヘッダー。
-の設定 `Expires` 静的リソースのヘッダーは、その URL でリソースをキャッシュし、キャッシュされたバージョンを期限が切れるまで提供するようにブラウザーに指示します。
-これは一般的な例です [ベストプラクティス](https://developer.yahoo.com/performance/rules.html#expires=) 静的リソースをキャッシュする場合。
+パフォーマンスを向上させるために、Commerceは次を設定します `Expires` 画像、JavaScript、CSS ファイルなどの静的リソースのヘッダー。
+の設定 `Expires` 静的リソースのヘッダーは、その URL のリソースをキャッシュし、有効期限が切れるまでキャッシュされたバージョンを提供するようにブラウザーに指示します。
+これは一般的です [ベストプラクティス](https://developer.yahoo.com/performance/rules.html#expires=) （静的リソースをキャッシュするため）。
 
-ブラウザーが静的リソースをキャッシュし、そのリソースがサーバー上で変更された場合、新しいバージョンをダウンロードできるように、ブラウザーのキャッシュをクリアする必要があります。
-Web サイトの管理者は、ブラウザーキャッシュの手動でのクリアが機能しますが、静的リソースの新しいバージョンをユーザーがダウンロードする際にユーザーに要求するのには適切ではありません。
+ブラウザーが静的リソースをキャッシュし、そのリソースがサーバー上で変更された場合、新しいバージョンをダウンロードできるように、ブラウザーキャッシュをクリアする必要があります。
+Web サイト管理者の場合はブラウザーキャッシュの手動によるクリアで機能しますが、静的リソースの新しいバージョンをダウンロードする際に、ユーザーに対して行う適切なリクエストではありません。
 
 ## 静的コンテンツ署名
 
-静的コンテンツ署名は、静的リソースのブラウザーキャッシュを無効にするコマース機能です。
-Commerce は、静的ファイルの URL にデプロイメントバージョンを追加することで、これを実現します。
+静的コンテンツ署名は、静的リソースのブラウザーキャッシュを無効にするためのCommerceの機能です。
+Commerceでは、静的ファイルの URL にデプロイメントバージョンを追加することでこれを実行します。
 
 次に、バージョンで署名された URL の例を示します。
 
@@ -30,19 +30,19 @@ Commerce は、静的ファイルの URL にデプロイメントバージョン
 http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/images/logo.svg
 ```
 
-コマンドを実行するとき [`setup:static-content:deploy`](../cli/static-view-file-deployment.md) 静的コンテンツをデプロイする場合、Commerce はデプロイメントバージョンを自動的に変更します。
-これにより、静的ファイルの URL が変更され、ブラウザーに新しいバージョンのファイルが強制的に読み込まれます。
+コマンドを使用する場合 [`setup:static-content:deploy`](../cli/static-view-file-deployment.md) 静的なコンテンツをデプロイするには、Commerceがデプロイメントバージョンを自動的に変更します。
+これにより、静的ファイルの URL が変更され、ブラウザーで新しいバージョンのファイルが強制的に読み込まれます。
 
-Commerce では、デフォルトでこの機能が有効になっています。古い静的リソースを提供するブラウザーに関する問題を防ぐため、Adobeではこの機能を有効にしておくことをお勧めします。
+Commerceでは、この機能がデフォルトで有効になっています。Adobeでは、古い静的リソースを提供するブラウザーに関連する問題を防ぐために、この機能を有効にしておくことをお勧めします。
 
-静的コンテンツ署名の設定は、次の場所にあります： [**[!UICONTROL Stores]**/設定/設定/**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+静的コンテンツ署名の設定はにあります [**[!UICONTROL Stores]**/設定/設定/**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
 
-- **オンプレミスのみ**：この設定は、サイトが **not** in [実稼動モード](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
-- **クラウド**：実稼動モードが厳密に適用されるので、この設定は非表示になっています。そのため、次に示すコマンドラインを使用する必要があります。
+- **オンプレミスのみ**：この設定は、サイトで **ではない** 。対象： [実稼動モード](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
+- **Cloud**：この設定は、実稼動モードが厳密に適用されるので、非表示です。そのため、次に示すように、コマンドラインを使用する必要があります。
 
-![静的ファイル設定](../../assets/configuration/static-files-settings.png)
+![静的ファイルの設定](../../assets/configuration/static-files-settings.png)
 
-ステータスを決定します。
+ステータスを次のように決定します。
 
 ```bash
 bin/magento config:show dev/static/sign
@@ -54,18 +54,18 @@ bin/magento config:show dev/static/sign
 bin/magento config:set dev/static/sign <value>
 ```
 
-ここで、 `<value>` が 1（有効）または 0（無効）の場合。
+ここで、 `<value>` は 1 （有効）または 0 （無効）です。
 
-## バージョン署名
+## バージョンの署名
 
-Commerce は、静的リソース間の相対 URL の整合性を維持するために、静的ビューファイルのベース URL の直後にバージョン署名をパスコンポーネントとして追加します。
-また、これにより、ブラウザーは、署名値の有無に関係なく、コンテンツを維持しながら、正しい署名済みソースへの相対 URL を解決するようになります。
+静的リソース間の相対 URL の整合性を維持するために、Commerceでは静的ビューファイルのベース URL の直後にバージョン署名をパスコンポーネントとして追加します。
+また、これにより、署名値の有無に関係なく、ブラウザーのコンテンツを保持しながら、正しい署名済みソースへの相対 URL を解決するように強制されます。
 
-ブラウザーがサーバーから署名されたソースを要求すると、サーバーは URL の書き換えを使用して、URL から署名コンポーネントを削除します。
+ブラウザーがサーバーから署名済みソースを要求すると、サーバーは URL の書き換えを使用して、URL から署名コンポーネントを削除します。
 
-## デプロイメント中の使用状況
+## デプロイメント中の使用
 
-静的リソースをアップグレードまたは変更した後、 `setup:static-content:deploy` コマンドを使用して、バージョンをデプロイし、静的コンテンツを更新します。これにより、ブラウザーに更新されたリソースが強制的に読み込まれます。
+静的リソースをアップグレードまたは変更した後で、 `setup:static-content:deploy` コマンドでバージョンをデプロイし、静的コンテンツを更新します。これにより、ブラウザーは更新されたリソースを強制的に読み込みます。
 
-別のサーバーにコードをデプロイし、コードリポジトリを使用して実稼動環境に移動してダウンタイムを短縮する場合は、ファイルも追加する必要があります `pub/static/deployed_version.txt` をリポジトリに追加します。
-このファイルには、デプロイされた静的コンテンツの新しいバージョンが含まれます。
+コードを別のサーバーにデプロイし、コードリポジトリを使用して実稼動環境に移動してダウンタイムを短縮する場合は、ファイルも追加する必要があります `pub/static/deployed_version.txt` をリポジトリに送信します。
+このファイルには、デプロイされた静的コンテンツの新しいバージョンが含まれています。

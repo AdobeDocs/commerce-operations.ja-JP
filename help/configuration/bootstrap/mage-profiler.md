@@ -1,81 +1,81 @@
 ---
 title: プロファイルを有効にする
-description: MAGE Profiler を解析ツールと共に使用する方法の詳細を説明します。
+description: 分析ツールで MAGE プロファイラーを使用できるようにする方法の詳細を説明します。
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
 # プロファイルを有効にする
 
-コマースプロファイルを使用すると、次のことができます。
+Commerceのプロファイルを使用すると、次のことができます。
 
-- 組み込みプロファイラーを有効にします。
+- ビルトインプロファイラーを有効にします。
 
-  組み込みプロファイラーを Commerce と共に使用して、パフォーマンスの分析などのタスクを実行できます。 プロファイリングの性質は、使用する解析ツールによって異なります。 複数の形式 (HTMLを含む ) をサポートしています。 プロファイラを有効にすると、 `var/profiler.flag` profiler が有効で構成を示すファイルが生成されます。 無効にすると、このファイルは削除されます。
+  Commerceに組み込まれているプロファイラーを使用して、パフォーマンスの分析などのタスクを実行できます。 プロファイルの性質は、使用する分析ツールによって異なります。 HTMLを含む複数のフォーマットをサポートしています。 プロファイラーを有効にすると、 `var/profiler.flag` プロファイラーが有効で構成されていることを示すファイルが生成されます。 無効にすると、このファイルは削除されます。
 
-- コマースページに依存関係グラフを表示します。
+- Commerceページに依存関係グラフを表示します。
 
-  A _依存グラフ_ は、オブジェクトの依存関係とその依存関係のリスト、およびこれらの依存関係のすべての依存関係などです。
+  A _依存関係グラフ_ は、オブジェクトの依存関係とそのすべての依存関係、およびその依存関係のすべての依存関係のリストです。
 
-  特にのリストに興味を持つべきです _未使用の依存関係_：一部のコンストラクターで要求されたので作成されたオブジェクトですが、使用されませんでした（つまり、メソッドは呼び出されませんでした）。 その結果、これらの依存関係を作成するのに費やされたプロセッサーの時間とメモリは無駄になります。
+  次のリストには、特に関心がある必要があります _未使用の依存関係_：コンストラクターでリクエストされたことによって作成されたものの、使用されたことのないオブジェクト（つまり、どのメソッドも呼び出されなかったオブジェクト）です。 その結果、これらの依存関係を作成するために費やしたプロセッサー時間とメモリが無駄になります。
 
-Commerce は、 [`Magento\Framework\Profiler`][profiler].
+Commerceは、次の場所で基本機能を提供します [`Magento\Framework\Profiler`][profiler].
 
-MAGE_PROFILER 変数またはコマンドラインを使用して、プロファイラを有効にして構成できます。
+MAGE_PROFILER 変数またはコマンドラインを使用して、プロファイラーを有効にして設定できます。
 
-## MAGE_PROFILER を設定
+## MAGE_PROFILER の設定
 
-次の値を設定できます： `MAGE_PROFILER` ～で論じられたいずれかの方法で [ブートストラップパラメータの値を設定する](../bootstrap/set-parameters.md).
+の値を設定できます `MAGE_PROFILER` ～で議論されるあらゆる方法で [ブートストラップパラメーターの値を設定](../bootstrap/set-parameters.md).
 
-`MAGE_PROFILER` は次の値をサポートしています。
+`MAGE_PROFILER` では、次の値をサポートしています。
 
 - `1` 特定のプロファイラーの出力を有効にします。
 
   次のいずれかの値を使用して、特定のプロファイラーを有効にできます。
 
-   - `csvfile` を使用 [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
-   - その他の値 ( `2`) を含み、空の値（を使用） [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]
+   - `csvfile` を使用する [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
+   - その他の値（を除く） `2`）に含まれます。これには、を使用する空の値が含まれます。 [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]
 
-- `2` 依存関係グラフを有効にする。
+- `2` 依存関係グラフを有効にします。
 
-  依存関係グラフは通常、ページの下部に表示されます。 次の図は、出力の一部を示しています。
+  依存関係グラフは通常、ページの下部に表示されます。 次の図に、出力の一部を示します。
 
   ![依存関係グラフ](../../assets/configuration/depend-graphs.png)
 
 ## CLI コマンド
 
-次の CLI コマンドを使用して、プロファイラーを有効または無効にできます。
+CLI コマンドを使用して、プロファイラーを有効または無効にできます。
 
-- `dev:profiler:enable <type>` 次を使用してプロファイラを有効にします。 `type` / `html` （デフォルト）または `csvfile`. 有効にした場合、flagfile `var/profiler.flag` が作成されました。
-- `dev:profiler:disable` プロファイラを無効にします。 無効にした場合、flagfile `var/profiler.flag` が削除されました。
+- `dev:profiler:enable <type>` プロファイラーを有効にする `type` 件中 `html` （デフォルト）または `csvfile`. 有効な場合、フラグ ファイル `var/profiler.flag` が作成されました。
+- `dev:profiler:disable` プロファイラーを無効にします。 無効の場合、フラグ ファイル `var/profiler.flag` が削除されました。
 
 依存関係グラフを有効にするには、変数オプションを使用します。
 
 **プロファイラーを有効または無効にするには**:
 
 1. Commerce サーバーにログインします。
-1. Commerce のインストールディレクトリに移動します。
-1. ファイル・システムの所有者として、プロファイラを有効にします。
+1. Commerce インストールディレクトリに移動します。
+1. ファイルシステムの所有者として、プロファイラーを有効にします。
 
-   タイプを使用してプロファイラーを有効にするには `html` フラグファイルを作成します。
+   タイプを使用してプロファイラーを有効にするには `html` そして、次のようにフラグファイルを作成します。
 
    ```bash
    bin/magento dev:profiler:enable html
    ```
 
-   タイプを使用してプロファイラーを有効にするには `csvfile` フラグファイルを作成します。
+   タイプを使用してプロファイラーを有効にするには `csvfile` そして、次のようにフラグファイルを作成します。
 
    ```bash
    bin/magento dev:profiler:enable csvfile
    ```
 
-   出力はに保存されます。 `<project-root>/var/log/profiler.csv`. The `profiler.csv` は、ページが更新されるたびに上書きされます。
+   出力はに保存されます。 `<project-root>/var/log/profiler.csv`. この `profiler.csv` は、ページを更新するたびに上書きされます。
 
-   プロファイラを無効にし、フラグファイルを削除するには、次の手順に従います。
+   プロファイラーを無効にしてフラグファイルを削除するには、次の手順に従います。
 
    ```bash
    bin/magento dev:profiler:disable

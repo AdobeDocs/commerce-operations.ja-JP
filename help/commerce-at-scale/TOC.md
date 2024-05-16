@@ -4,8 +4,8 @@ user-guide-description: Adobe Commerce と Adobe Experience Manager を使用し
 feature: Integration
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 49%
+source-wordcount: '46'
+ht-degree: 54%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 49%
 
 - [概要](overview.md)
 - [効果的なキャッシュの計画](caching.md)
-- [AEM performance optimization](performance.md)
-- [インフラストラクチャの連携](infrastructure.md)
-- [Adobe Commerce Performance Optimization](default-settings.md)
+- [AEM パフォーマンスの最適化](performance.md)
+- [インフラストラクチャの調整](infrastructure.md)
+- [Adobe Commerceのパフォーマンスの最適化](default-settings.md)
 - [パフォーマンステストのヒント](launch.md)
 - [まとめ](conclusion.md)
 - [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

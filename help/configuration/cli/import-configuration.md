@@ -1,10 +1,10 @@
 ---
-title: 設定ファイルからデータを読み込む
-description: Adobe Commerceの設定を設定ファイルから読み込みます。
+title: 設定ファイルからのデータの読み込み
+description: 設定ファイルからAdobe Commerce設定を読み込みます。
 exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -13,28 +13,28 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-コマース 2.2 を使用して実稼動システムを設定する場合 [パイプラインデプロイメントモデル](../deployment/technical-details.md)を選択し、 _インポート_ 次の設定から `config.php` および `env.php` をデータベースに追加します。
-これらの設定には、設定パスと値、Web サイト、ストア、ストア表示、テーマが含まれます。
+Commerce 2.2 を使用して実稼動システムをセットアップする場合 [パイプラインデプロイメントモデル](../deployment/technical-details.md)は、次の操作が必要です _import_ からの設定 `config.php` および `env.php` をデータベースに追加します。
+これらの設定には、設定パスと値、web サイト、ストア、ストアビュー、テーマが含まれます。
 
-Web サイト、ストア、ストアの表示、テーマを読み込んだ後、製品属性を作成し、実稼動システム上の Web サイト、ストア、ストアの表示に適用できます。
+Web サイト、ストア、ストアビュー、テーマを読み込んだ後、製品属性を作成して、実稼動システムの web サイト、ストア、ストアビューに適用できます。
 
 >[!INFO]
 >
->The `bin/magento app:config:import` コマンドは、環境変数に格納された設定を処理しません。
+>この `bin/magento app:config:import` コマンドは、環境変数に保存された設定を処理しません。
 
-## インポートコマンド
+## 読み込みコマンド
 
-実稼動システムで、次のコマンドを実行して設定ファイル (`config.php` および `env.php`) をデータベースに追加します。
+実稼動システムで、次のコマンドを実行して設定ファイルからデータを読み込みます（`config.php` および `env.php`）を選択します。
 
 ```bash
 bin/magento app:config:import [-n, --no-interaction]
 ```
 
-オプションの `[-n, --no-interaction]` フラグを設定して、何の操作もおこなわずにデータを読み込みます。
+オプションのを使用 `[-n, --no-interaction]` インタラクションなしでデータをインポートするためのフラグ。
 
-次を入力すると、 `bin/magento app:config:import` オプションのフラグがない場合は、変更を確定する必要があります。
+次のように入力します `bin/magento app:config:import` オプションフラグを使用しない場合は、変更を確認する必要があります。
 
-例えば、設定ファイルに新しい Web サイトと新しいストアが 1 つ含まれている場合、次のメッセージが表示されます。
+例えば、設定ファイルに 1 つの新しい web サイトと 1 つの新しいストアが含まれている場合、次のメッセージが表示されます。
 
 ```terminal
 These Websites will be created: New Website
@@ -42,72 +42,72 @@ These Groups will be created: New Store
 Do you want to continue [yes/no]?
 ```
 
-インポートを続行するには、 `yes`.
+読み込みを続行するには、を入力します。 `yes`.
 
-デプロイメント設定ファイルにインポートするデータが含まれている場合は、次のようなメッセージが表示されます。
+読み込むデータが配置設定ファイルに含まれている場合は、次のようなメッセージが表示されます。
 
 ```terminal
 Start import:
 Some information about importing
 ```
 
-デプロイメント設定ファイルにインポートするデータが含まれていない場合は、次のようなメッセージが表示されます。
+読み込むデータが配置設定ファイルに含まれていない場合は、次のようなメッセージが表示されます。
 
 ```terminal
 Start import:
 Nothing to import
 ```
 
-## インポートする内容
+## 読み込む内容
 
-次の節では、インポートするデータの詳細について説明します。
+以下の節では、読み込むデータについて詳しく説明します。
 
 ### システム設定
 
-Commerce は、 `system` 配列を `config.php` または `env.php` ファイルを読み込む代わりに、ファイルを読み込むことをお勧めします。これは、いくつかの前処理アクションと後処理アクションが必要になるからです。
+Commerceがの値を直接使用する `system` 配列 `config.php` または `env.php` ファイルをデータベースにインポートする代わりに、前処理および後処理のアクションを実行する必要があります。
 
-例えば、設定パスの値 `web/secure/base_url` は、バックエンドモデルで検証する必要があります。
+例えば、設定パスの値 `web/secure/base_url` バックエンドモデルを使用して検証する必要があります。
 
 #### バックエンドモデル
 
 バックエンドモデルは、システム設定の変更を処理するメカニズムです。
-バックエンドモジュールは、 `<module_name>/adminhtml/system.xml`.
+バックエンドモジュールは、次の場所で定義します。 `<module_name>/adminhtml/system.xml`.
 
-すべてのバックエンドモデルは、 [`Magento\Framework\App\Config\Value`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config/Value.php) クラス。
+すべてのバックエンドモデルで、 [`Magento\Framework\App\Config\Value`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config/Value.php) クラス。
 
-バックエンドモデルを読み込む際には、設定値は保存しません。
+バックエンドモデルを読み込む場合、設定値は保存されません。
 
-### Web サイト、ストア、およびストアグループの設定
+### Web サイト、ストア、ストアグループの設定
 
 次のタイプの設定を読み込みます。
-( これらの設定は、 `scopes` 配列 `config.php`.)
+（これらの設定は、 `scopes` 配列複写 `config.php`.）
 
-- `websites`: Web サイト関連の設定
+- `websites`:web サイト関連の設定
 - `groups`：関連する設定を格納します
-- `stores`：ストアビュー関連の設定
+- `stores`：ビュー関連の設定の保存
 
 前述の設定は、次のモードで読み込むことができます。
 
-- `create`: `config.php` 新しいエンティティ (`websites`, `groups`, `stores`) が実稼動環境に存在しない
-- `update`: `config.php` エンティティ (`websites`, `groups`, `stores`) と呼ばれ、実稼動環境とは異なる
-- `delete`: `config.php` は、 _not_ エンティティ (`websites`, `groups`, `stores`) が実稼動環境に存在する
+- `create`: `config.php` 新しいエンティティを含む（`websites`, `groups`, `stores`）が実稼動環境に存在しない
+- `update`: `config.php` 含まれるエンティティ（`websites`, `groups`, `stores`）が実稼動環境とは異なります
+- `delete`: `config.php` 実行 _ではない_ エンティティを含む（`websites`, `groups`, `stores`）が存在する
 
 >[!INFO]
 >
->ストアに関連付けられたルートカテゴリはインポートされません。 コマース管理を使用して、ルートカテゴリをストアに関連付ける必要があります。
+>ストアに関連付けられたルートカテゴリは読み込みません。 Commerce Admin を使用して、ルートカテゴリをストアに関連付ける必要があります。
 
 ### テーマの設定
 
-テーマの設定には、コマースシステムに登録されているすべてのテーマが含まれます。データは、 `theme` データベーステーブル。 ( テーマの設定は `themes` 配列 `config.php`.)
+テーマ設定には、Commerce システムに登録されているすべてのテーマが含まれます。データはから直接取得されます。 `theme` データベーステーブル。 （テーマの設定はにあります `themes` 配列複写 `config.php`.）
 
 #### テーマデータの構造
 
-配列のキーは完全なテーマパスです。 `area` + `theme path`
+配列のキーは、完全なテーマパスです。 `area` + `theme path`
 
 例： `frontend/Magento/luma`.
-`frontend` 領域および `Magento/luma` はテーマのパスです。
+`frontend` 面積で `Magento/luma` はテーマのパスです。
 
-配列の値は、テーマに関するデータ（コード、タイトル、パス、親 ID）です
+配列の値は、テーマに関するデータ（コード、タイトル、パス、親 ID）です。
 
 完全な例：
 
@@ -126,5 +126,5 @@ Commerce は、 `system` 配列を `config.php` または `env.php` ファイル
 
 >[!INFO]
 >
->- _テーマの登録_. テーマデータが `config.php` しかし、テーマのソースコードはファイルシステムに存在しないので、そのテーマは無視されます（つまり、登録されていません）。
->- _テーマの削除_. テーマがに存在しない場合 `config.php` ただし、ソースコードはファイルシステム上に存在し、テーマは削除されません。
+>- _テーマの登録_. テーマデータがで定義されている場合 `config.php` ただし、テーマのソースコードがファイルシステムに存在しない場合、テーマは無視されます（つまり、登録されません）。
+>- _テーマの削除_. にテーマがない場合 `config.php` ただし、ソースコードはファイルシステムに存在するので、テーマは削除されません。

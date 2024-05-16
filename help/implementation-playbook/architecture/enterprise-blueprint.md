@@ -5,7 +5,7 @@ feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
 source-git-commit: c2f6b7125f1a611e94f807999787fee48a0e5ece
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Commerceは、パフォーマンス、拡張性、セキュリティに関する
 
 次のアーキテクチャ図は、Adobe CommerceとすべてのAdobe Experience Cloud ソリューション間のデータフローを示しています。
 
-![Adobe CommerceとExperience Cloudソリューションとの接続を示すアーキテクチャ図](../../assets/playbooks/commerce-architecture-v3.svg){zoomable=&quot;yes&quot;}
+![Adobe CommerceとExperience Cloudソリューションとの接続を示すアーキテクチャ図](../../assets/playbooks/commerce-architecture-v3.svg){zoomable="yes"}
 
 >[!NOTE]
 >

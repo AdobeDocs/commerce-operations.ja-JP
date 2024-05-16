@@ -1,10 +1,10 @@
 ---
-title: '''[!DNL Upgrade Compatibility Tool] レポート'
-description: 次の手順に従って、 [!DNL Upgrade Compatibility Tool] をAdobe Commerceプロジェクトに追加します。
+title: '[!DNL Upgrade Compatibility Tool] 報告書'
+description: を実行するには、次の手順に従います [!DNL Upgrade Compatibility Tool] Adobe Commerce プロジェクトで、を行います。
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -13,12 +13,12 @@ ht-degree: 0%
 
 {{commerce-only}}
 
-分析の結果、 [!DNL Upgrade Compatibility Tool] では、各ファイルの重大度、エラーコード、エラーの説明を指定した問題のリストを含むレポートをエクスポートできます。 The [!DNL Upgrade Compatibility Tool] では、次の 2 つの異なる形式でレポートが書き出されます。
+分析の結果、 [!DNL Upgrade Compatibility Tool] では、重要度、エラーコード、エラーの説明を指定して、各ファイルの問題のリストを含むレポートを書き出すことができます。 この [!DNL Upgrade Compatibility Tool] レポートを次の 2 つの異なる形式に書き出します。
 
 - A [JSON ファイル](reports.md#json-file).
 - An [HTMLレポート](reports.md#html-report).
 
-次のレポートのコマンドラインインターフェイスの例を参照してください。
+レポートの次のコマンドラインインターフェイスの例を参照してください。
 
 ```terminal
 File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
@@ -27,19 +27,19 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
  * [ERROR][1328] Line 10: Implemented interface 'Magento\Framework\App\Action\HttpGetActionInterface' that is non API on version '2.4.4'
 ```
 
-次を確認します。 [エラーメッセージの参照](../upgrade-compatibility-tool/error-messages.md) トピックを参照してください。
+を確認します [エラーメッセージの参照](../upgrade-compatibility-tool/error-messages.md) このレポートで生成される様々なエラーの詳細については、を参照してください。
 
-また、このレポートには、次の内容を示す詳細な概要も含まれます。
+このレポートには、次の項目を示す詳細なサマリーも含まれています。
 
-- *現在のバージョン*：現在インストールされているバージョン。
+- *現在のバージョン*：現在インストールされているバージョン
 - *ターゲットバージョン*：アップグレード先のバージョン。
-- *実行時間*：分析がレポートの作成に要した時間 (mm:ss)。
-- *更新が必要なモジュール*：互換性の問題があり、更新が必要なモジュールの割合。
-- *更新が必要なファイル*：互換性の問題が含まれ、更新が必要なファイルの割合。
+- *実行時間*：分析がレポートの作成にかかった時間（mm:ss）。
+- *更新が必要なモジュール*：互換性の問題が含まれており、更新が必要なモジュールの割合。
+- *更新が必要なファイル*：互換性の問題を含み、更新が必要なファイルの割合。
 - *重大なエラーの合計*：見つかった重大なエラーの数。
 - *合計エラー数*：見つかったエラーの数。
-- *合計警告数*：見つかった警告の数。
-- *メモリのピーク使用量*：最大メモリ量 ( [!DNL Upgrade Compatibility Tool] 実行中に到達しました。
+- *警告の合計*：見つかった警告の数。
+- *メモリのピーク時の使用率*：の最大メモリ量 [!DNL Upgrade Compatibility Tool] が実行中に到達しました。
 
 次のコマンドラインインターフェイスの例を参照してください。
 
@@ -59,77 +59,77 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 
 ## JSON ファイル
 
-JSON ファイルの出力は、 [!DNL Upgrade Compatibility Tool] コマンドラインインターフェイスで使用できます。 The `JSON` ファイルには、 [!DNL Upgrade Compatibility Tool] 出力：
+JSON ファイルの出力は、 [!DNL Upgrade Compatibility Tool] をコマンドラインインターフェイスで使用します。 この `JSON` ファイルには、に表示されるものとまったく同じ情報が含まれています [!DNL Upgrade Compatibility Tool] 出力：
 
 - 特定された問題のリスト。
-- 分析の概要。
+- 分析の概要です。
 
 発生した問題ごとに、問題の重大度や説明などの詳細情報がレポートに表示されます。
 
-これを書き出すには `JSON` ファイルを別の出力フォルダーに配置します。
+これをエクスポートするには `JSON` ファイルを別の出力フォルダーに：
 
 ```bash
 bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
 ```
 
-引数は次のようになります。
+ここで、引数は次のようになります。
 
-- `<dir>`:Adobe Commerceインストールディレクトリ。
-- `[=JSON-OUTPUT-PATH]`：を書き出すパスディレクトリ。 `JSON` 出力ファイル。
+- `<dir>`:Adobe Commerce インストールディレクトリ。
+- `[=JSON-OUTPUT-PATH]`：をエクスポートするパスディレクトリ `JSON` 出力ファイル。
 
 >[!NOTE]
 >
-> 出力フォルダーのデフォルトのパスは、 `var/output/[TIME]-results.json`.
+> 出力フォルダーのデフォルトのパスはです。 `var/output/[TIME]-results.json`.
 
 ## HTMLレポート
 
-HTMLレポートは、コマンドラインインターフェイスでツールを実行中、または [!DNL Site-Wide Analysis Tool]. HTMLレポートには、次のものも含まれます。
+HTMLレポートは、ツールをコマンドラインインターフェイスまたは経由で実行しているときに取得できます。 [!DNL Site-Wide Analysis Tool]. HTMLレポートには、次の内容も含まれます。
 
 - 特定された問題のリスト。
-- 分析の概要。
+- 分析の概要です。
 
-![HTMLレポート — 概要](../../assets/upgrade-guide/uct-html-summary.png)
+![HTMLレポート – 概要](../../assets/upgrade-guide/uct-html-summary.png)
 
-特定された問題を、 [!DNL Upgrade Compatibility Tool] 分析。
+特定されたイシューは、次の時間帯に簡単に移動できます [!DNL Upgrade Compatibility Tool] 分析。
 
-最小問題レベル ( デフォルト値は `WARNING`) をクリックします。
+最小イシューレベルに応じて、レポートに表示されるイシューをフィルタリングできます（デフォルト値は `WARNING`）に設定します。
 
 右上隅にドロップダウンがあり、別のレベルを選択できます。 識別された問題のリストは、それに応じてフィルタリングされます。
 
-![HTMLレポート — ドロップダウンの使用方法](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
+![HTMLレポート – ドロップダウンの使用状況](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
 
 >[!NOTE]
 >
-> 問題レベルが低い問題は削除されますが、通知が表示されるので、モジュールごとに識別された問題を常に把握できます。
+> 問題レベルが低い問題は除外されますが、通知が届くので、モジュールごとに特定された問題を常に認識できます。
 
 HTMLレポートには、次の 4 つの異なるグラフも含まれます。
 
-- **問題の重要度別のモジュール**：モジュール別の重大度を表示します。
-- **問題の重要度別のファイル**：ファイルごとの重大度を表示します。
-- **問題の総数別に並べられたモジュール**：最も問題が発生した 10 個のモジュールで、警告、エラーおよび重大なエラーを考慮に入れて表示します。
-- **相対的なサイズと問題を持つモジュール**：モジュールに含まれるファイルが多いほど、その円が大きくなります。 モジュールの問題が多いほど、その円が赤く表示されます。
+- **問題の重要度別のモジュール**：モジュール別に重大度分布を表示します。
+- **問題の重大度別のファイル**：ファイル別に重大度の分布を表示します。
+- **問題の総数で並べ替えられたモジュール**：警告、エラー、重要なエラーを考慮して、最も侵害されたモジュール 10 個を表示します。
+- **相対的なサイズと問題を持つモジュール**：モジュールに含まれるファイルが多いほど、円は大きくなります。 モジュールの問題が多いほど、その円は赤く表示されます。
 
-これらのグラフでは、最も問題が発生したモジュールや、アップグレードを実行するためにより多くの作業が必要なモジュールを特定できます。
+これらのグラフを使用すると、最も侵害されているモジュールと、アップグレードの実行に追加の作業が必要なモジュールを識別できます。
 
-![HTMLレポート — 図](../../assets/upgrade-guide/uct-html-diagrams.png)
+![HTMLレポート – 図](../../assets/upgrade-guide/uct-html-diagrams.png)
 
-また、HTMLレポート図も、 `Modules with relative sizes and issues`は、 `min-issue-level` それは通常設置されていた
+HTMLレポート図も、次の点を除き、それに応じて更新されます `Modules with relative sizes and issues`。これは、で生成されます。 `min-issue-level` それは組織的に作られた。
 
-異なる結果を見たい場合は、 `Modules with relative sizes and issues` 図に示すように、コマンドを再実行して、 `--min-issue-level` オプション。
+に対して異なる結果を確認したい場合 `Modules with relative sizes and issues` 図です。コマンドを再実行して、に別の値を指定する必要があります `--min-issue-level` オプション。
 
-![HTMLレポート — バブルチャート図](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
+![HTMLレポート – バブル・チャート図](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
 
-このHTMLレポートを別の出力フォルダーに書き出すには：
+このHTMLレポートを別の出力フォルダーにエクスポートするには：
 
 ```bash
 bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
 ```
 
-引数は次のようになります。
+ここで、引数は次のようになります。
 
-- `<dir>`:Adobe Commerceインストールディレクトリ。
-- `[=HTML-OUTPUT-PATH]`：を書き出すパスディレクトリ。 `.html` 出力ファイル。
+- `<dir>`:Adobe Commerce インストールディレクトリ。
+- `[=HTML-OUTPUT-PATH]`：をエクスポートするパスディレクトリ `.html` 出力ファイル。
 
 >[!NOTE]
 >
-> 出力フォルダーのデフォルトのパスは、 `var/output/[TIME]-results.html`.
+> 出力フォルダーのデフォルトのパスはです。 `var/output/[TIME]-results.html`.

@@ -1,22 +1,22 @@
 ---
 title: '[!DNL Alerts]'
-description: 詳しくは、 [!UICONTROL Alerts] 」タブをクリックします。 [!DNL Site-Wide Analysis Tool]を使用するタイミングとその利点について説明します。
+description: について説明します [!UICONTROL Alerts] タブ [!DNL Site-Wide Analysis Tool]、使用するタイミングおよびその利点。
 exl-id: 0d7dacfe-f66a-440b-89cc-bce5eda2a230
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '91'
+source-wordcount: '87'
 ht-degree: 0%
 
 ---
 
 # [!DNL Alerts]
 
-The [!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts] ページには、マーチャント向けのAdobe Commerce Managed Alerts パッチが表示されます。 Adobeは、 [!DNL Managed Alerts] 業界のベストプラクティスを使用してパフォーマンス指標を追跡する場合。 以下を参照してください。 [Adobe Commerce用の管理されたアラート](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce) 記事 [!DNL support knowledge base].
+この [!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts] このページには、マーチャント向けのAdobe Commerce Managed Alerts パッチが表示されます。 Adobeはを提供します [!DNL Managed Alerts] 業界のベストプラクティスを使用してパフォーマンス指標を追跡できます。 を参照 [Adobe Commerceの管理アラート](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce) の記事 [!DNL support knowledge base].
 
 ## 使用するタイミング
 
-[!UICONTROL Managed Alerts] 「 」タブには、最新の 20 件が表示されます [!DNL New Relic Alerts]、そのステータス、インシデント URL、および [!DNL support knowledge base] 記事。 このタブを使用して、常に最新の情報を入手できます。 [!DNL Alerts].
+[!UICONTROL Managed Alerts] tab キーを押すと最新の 20 が表示されます [!DNL New Relic Alerts]、ステータス、インシデント URL、へのリンク [!DNL support knowledge base] 記事。 このタブを使用して、を最新の状態に保つことができます [!DNL Alerts].
 
-## メリット
+## 利点
 
-次の日に更新を保つことで、サイトのパフォーマンスを向上させる： [!DNL Alerts] 必要に応じてサイトを更新します。
+に関する最新情報を入手することで、サイトのパフォーマンスを向上 [!DNL Alerts] 必要に応じてサイトを更新します。

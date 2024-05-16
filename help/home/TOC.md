@@ -18,7 +18,7 @@ ht-degree: 27%
 - [セキュリティとコンプライアンス](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
 - [実装プレイブック](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/overview)
 - [運用プレイブック](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/overview)
-- [大規模なコマース](https://experienceleague.adobe.com/en/docs/commerce-operations/deliver-commerce-at-scale/overview)
+- [Commerceのスケール](https://experienceleague.adobe.com/en/docs/commerce-operations/deliver-commerce-at-scale/overview)
 - [インストール（オンプレミス）](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
 - [設定](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/overview)
 - [アップグレード](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview)

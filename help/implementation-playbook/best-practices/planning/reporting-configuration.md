@@ -1,34 +1,34 @@
 ---
 title: レポート設定のベストプラクティス
-description: レポートモジュールを使用しない場合は削除して、サイトのパフォーマンスを最適化します。
+description: 使用していない場合は、レポートモジュールを削除してサイトのパフォーマンスを最適化します。
 role: Admin
 feature: Best Practices, Configuration
 exl-id: 8c991b8a-affb-4a9e-9383-671f595ff89e
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '121'
 ht-degree: 0%
 
 ---
 
 # レポート設定のベストプラクティス
 
-レポート機能や動的な顧客セグメント機能が必要ないビジネスの場合は、 [レポートの機能](https://docs.magento.com/user-guide/configuration/general/reports.html) ストアのパフォーマンスを向上させる。
+ビジネスでレポート機能や動的な顧客セグメント機能が不要な場合は、を無効にします [レポート機能](https://docs.magento.com/user-guide/configuration/general/reports.html) ストアパフォーマンスを向上させる。
 
-## 影響を受ける製品およびバージョン
+## 影響を受ける製品とバージョン
 
-[サポートされているすべてのバージョン](../../../release/versions.md) /:
+[サポートされているすべてのバージョン](../../../release/versions.md) （件中）:
 
-- Adobe Commerce an cloud infrastructure
-- Adobe Commerceオンプレミス
+- クラウドインフラストラクチャー上のAdobe Commerce
+- Adobe Commerce オンプレミス
 
 ## レポートを無効にする
 
-レポートや動的顧客セグメントを使用しない場合は、レポート機能を無効にします。
+レポートまたは動的顧客セグメントを使用しない場合は、レポート機能を無効にします。
 
-1. 管理者から、に移動します。 **ストア** > **設定** > **設定** > **一般** > **レポート**.
-1. の下 **一般オプション**，設定 **レポートを有効にする** から *いいえ*.
-1. を実行してキャッシュをフラッシュ `php bin/magento cache:flush` または、以下の管理者 **システム** > **ツール** > **キャッシュ管理**.
+1. 管理者で、に移動します。 **ストア** > **設定** > **設定** > **一般** > **報告書**.
+1. 次の下 **一般オプション**、設定 **レポートを有効にする** 対象： *不可*.
+1. 実行によるキャッシュのフラッシュ `php bin/magento cache:flush` または、の管理画面で確認できます。 **システム** > **ツール** > **キャッシュ管理**.
 
 ## 追加情報
 

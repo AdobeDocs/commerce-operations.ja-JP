@@ -1,44 +1,44 @@
 ---
 title: 製品の可用性
-description: 現在サポートされているAdobe Commerceの機能について説明し、特定のAdobe Commerceリリースとの互換性を確認します。
+description: 現在サポートされているAdobe Commerce機能について説明し、特定のAdobe Commerce リリースとの互換性を確認します。
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
 source-git-commit: 9761e3827add0e8b60e1bb53664ff65170608317
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
 
 # 製品の可用性
 
-次の表に、Adobe Commerceソフトウェアの可用性のステータスと、その入手先を示します。特に、従来のAdobe Commerce Composer パッケージ以外で使用可能なソフトウェアについては、このステータスを示します。
+次の表に、Adobe Commerce ソフトウェアの可用性のステータスと、その取得場所（特に、従来のAdobe Commerce Composer パッケージの外部で使用可能なソフトウェアの場合）を示します。
 
-サービスと拡張機能は、製品リリース時に、最新リリースの Commerce でテストされます。
+サービスと拡張機能は、製品のリリース時に、最新リリース版のCommerceでテストされます。
 
-サポート対象バージョンは、Adobeで完全にテスト済みです。 サポート対象バージョンに関するサポートは、カスタマーサポートAdobeからご利用いただけます。 古いバージョンは正しく機能する可能性がありますが、正式にはサポートされていません。
+サポートされているバージョンは、Adobeによって完全にテストされています。 サポートされているバージョンについては、Adobeカスタマーサポートからサポートを受けることができます。 古いバージョンは正常に動作する可能性がありますが、正式にはサポートされていません。
 
 >[!NOTE]
 >
->Adobe Commerceバージョンのサポートには、 [使用可能なセキュリティパッチ](versions.md).
+>Adobe Commerce バージョンのサポートには、次のサポートも含まれます [使用可能なセキュリティパッチ](versions.md).
 
 ## Adobeが作成した拡張機能
 
-これらのAdobe Commerce拡張機能は、コアAdobe Commerceコードベースから切り離されます。 これにより、Adobeは、より柔軟な期間でこれらの拡張機能を繰り返しリリースし、新機能に初めてアクセスできるようになります。
+これらのAdobe Commerce拡張機能は、コア Adobe Commerce コードベースから切り離されています。 これにより、Adobeはこれらの拡張機能のイテレーションをより柔軟な期間でリリースし、お客様は新機能に以前にアクセスできるようになります。
 
-次の表に、Adobe Commerceバージョンを基準とした各拡張機能でのバージョンサポートを示します。
+次の表に、Adobe Commerceのバージョンに対する各拡張機能のバージョンサポートを示します。
 
 {{$include /help/_includes/templated/product-availability-extensions.md}}
 
-## コマースサービス
+## Commerce サービス
 
-[コマースサービス](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) は、コマースインスタンスと組み合わせて、堅牢な機能と高速な応答時間を提供する、Adobeでホストされる機能のスイートです。
+[Commerce サービス](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) は、Commerce インスタンスと組み合わせて堅牢な機能と迅速な応答時間を提供するAdobeホスト機能のスイートです。
 
-最高の安定性と機能を確保するために、マーチャントは最新バージョンのサービスを使用することをお勧めします。 ドキュメントでは、現在リリースされているバージョンについて説明します。
+最高の安定性と機能を確保するために、マーチャントは最新バージョンのサービスを使用することをお勧めします。 ドキュメントには、現在リリースされているバージョンが記載されています。
 
-* Adobe Commerce Services は、現在、Commerce 2.4.4 以降と互換性があります。 商人には最新バージョンのサービスを使用することをお勧めします。
-* サービスは、以前のバージョンの Commerce 2.4.x との互換性があると見なされますが、正式にはサポートされていません。
-* サービスは、Product Recommendations 3.3.7 以前を除き、Commerce 2.3.x と互換性がありません。
+* 現在、Adobe Commerce サービスはCommerce 2.4.4 以降と互換性があります。 マーチャントは最新バージョンのサービスを使用することをお勧めします。
+* サービスは、Commerce 2.4.x の以前のバージョンと互換性があると見なされますが、公式にはサポートされていません。
+* Recommendations 3.3.7 以前の製品を除き、サービスはCommerce 2.3.x と互換性がありません。
 
-次の表に、Adobe Commerceバージョンを基準とした各サービスでサポートされるバージョンを示します。
+次の表に、Adobe Commerceのバージョンに対する各サービスのバージョンサポートを示します。
 
 {{$include /help/_includes/templated/product-availability-services.md}}

@@ -1,24 +1,24 @@
 ---
 title: 最終検証
-description: Vanrish の設定が、Adobe Commerceアプリケーションで動作するように正しく設定されていることを確認します。
+description: Adobe Commerce アプリケーションで動作するように Varnish 設定が適切に設定されていることを確認します。
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
 
-# ワニス構成の最終検証
+# ワニスの形状の最終検証
 
-これで、 `default.vcl` コマースで生成された Vanish が機能していることを確認するために、最終的な検証を行うことができます。
+これで、を使用するようになりました `default.vcl` Commerceによって生成された、いくつかの最終検証を実行して、ワニスが機能していることを確認できます。
 
 ## HTTP 応答ヘッダーの検証
 
-用途 `curl` Web ブラウザーで任意のコマースページにアクセスしたときに HTTP 応答ヘッダーを表示する別のユーティリティ。
+使用方法 `curl` または、web ブラウザーでCommerce ページにアクセスした際に HTTP レスポンスヘッダーを表示する別のユーティリティです。
 
-まず、 [開発者モード](../cli/set-mode.md#change-to-developer-mode)を使用しない場合、ヘッダーは表示されません。
+まず、を使用していることを確認します。 [開発者モード](../cli/set-mode.md#change-to-developer-mode)。そうでない場合、ヘッダーは表示されません。
 
 以下に例を挙げます。
 
@@ -38,49 +38,49 @@ X-Magento-Cache-Debug: MISS
 >
 >この値も使用できます。 `X-Magento-Cache-Debug: HIT`.
 
-## ページ読み込み時間の確認
+## ページの読み込み時間を確認
 
-Vanish が機能している場合、キャッシュ可能なブロックを含む Commerce ページは 150 ms 未満で読み込まれます。 このようなページの例としては、前面のカテゴリページや店舗のカテゴリページがあります。
+ワニスが機能している場合、キャッシュ可能なブロックを持つCommerceページは 150 ms 未満で読み込まれます。 このようなページの例としては、前面のドアページとストアフロントのカテゴリページがあります。
 
-ブラウザーインスペクターを使用して、ページ読み込み時間を測定します。
+ブラウザーインスペクターを使用すると、ページの読み込み時間を測定できます。
 
-例えば、Chrome インスペクターを使用するには、次のようにします。
+例えば、Chrome インスペクターを使用するには：
 
-1. Chrome でキャッシュ可能な Commerce ページにアクセスします。
+1. Chrome で、キャッシュ可能なCommerceページにアクセスします。
 1. ページ上の任意の場所を右クリックします。
-1. ポップアップメニューで、 **[!UICONTROL Inspect Element]**
-1. インスペクタウィンドウで、 **[!UICONTROL Network]** タブをクリックします。
+1. ポップアップメニューから、 **[!UICONTROL Inspect Element]**
+1. インスペクターパネルで、 **[!UICONTROL Network]** タブ。
 1. ページを更新します。
-1. 表示中のページの URL が表示されるように、インスペクターペインの上部にスクロールします。
+1. インスペクターパネルの上部までスクロールして、表示しているページの URL を確認します。
 
    次の図は、 `magento2` インデックスページ。
 
-   ![表示しているページをクリックします。](../../assets/configuration/varnish-inspector.png)
+   ![表示しているページをクリックします](../../assets/configuration/varnish-inspector.png)
 
-   ページの読み込み時間は、ページ URL の横に表示されます。 この場合、読み込み時間は 5 ms です。 これは、Vanish がページをキャッシュしたことを確認するのに役立ちます。
+   ページの読み込み時間は、ページ URL の横に表示されます。 この場合、ロード時間は 5 ミリ秒です。 これは、Varnish がページをキャッシュしたことを確認するのに役立ちます。
 
-1. HTTP 応答ヘッダーを表示するには、（「名前」列で）ページ URL をクリックします。
+1. HTTP 応答ヘッダーを表示するには、（名前列の）ページの URL をクリックします。
 
-   HTTP ヘッダーを表示できます。詳しくは、 HTTP 応答ヘッダーの検証の節で説明しています。
+   HTTP ヘッダーを表示できます。詳しくは、HTTP 応答ヘッダーの検証の節で説明されています。
 
-## コマースキャッシュを確認します。
+## Commerce キャッシュの検証
 
-次を確認します。 `<magento_root>/var/page_cache` ディレクトリが空です：
+必ずを実行してください `<magento_root>/var/page_cache` ディレクトリが空です：
 
-1. コマースサーバーにログインするか、ファイルシステムの所有者に切り替えます。
+1. Commerce サーバーにログインするか、ファイルシステムのオーナーに切り替えます。
 1. 次のコマンドを入力します。
 
    ```bash
    rm -rf <magento_root>/var/page_cache/*
    ```
 
-1. 1 つ以上のキャッシュ可能なコマースページにアクセスします。
-1. 次を確認します。 `var/page_cache/` ディレクトリ。
+1. 1 つ以上のキャッシュ可能なCommerce ページにアクセスします。
+1. を確認します `var/page_cache/` ディレクトリ。
 
-   ディレクトリが空の場合は、おめでとうございます。 Vanish と Commerce が連携するように設定されました。
+   ディレクトリが空の場合は、これで完了です。 ワニスとCommerceが連携するように正常に設定されました。
 
-1. もし `var/page_cache/` ディレクトリ、Vanish を再起動します。
+1. をクリアした場合 `var/page_cache/` ディレクトリ、Varnish を再起動します。
 
 >[!TIP]
 >
->503（バックエンドの取得に失敗）エラーが発生した場合は、 [503（サービスを利用できない）エラーのトラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) （内） _Adobe Commerce Help Center_.
+>503 （バックエンドの取得に失敗しました）エラーが発生した場合は、を参照してください [503 （サービス利用不可）エラーのトラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) が含まれる _Adobe Commerceヘルプセンター_.

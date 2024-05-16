@@ -5,18 +5,18 @@ source-wordcount: '49'
 ht-degree: 0%
 
 ---
-# ビルドシステムを更新
+# ビルドシステムの更新
 
-**ビルドシステムを更新するには**:
+**ビルドシステムを更新するには：**:
 
-1. ビルドシステムに、ファイルシステムの所有者としてログインします。
+1. ファイルシステムの所有者としてビルドシステムにログインします。
 1. アプリケーションのルートディレクトリに移動します。
 
    ```bash
    cd <Magento root dir>
    ```
 
-1. 変更をにプルします。 `app/etc/config.php` ソース管理から。
+1. 変更内容をにプルします `app/etc/config.php` ソース管理から。
 
    ```bash
    git pull mconfig m2.2_deploy
@@ -34,7 +34,7 @@ ht-degree: 0%
    bin/magento setup:static-content:deploy -f
    ```
 
-1. ソース管理への変更を確認します。
+1. ソース管理に対する変更を確認します。
 
    ```bash
    git add -A && git commit -m "Updated files on build system" && git push mconfig m2.2_deploy

@@ -1,43 +1,43 @@
 ---
-title: リモートストレージの構成
-description: オンプレミスのコマースアプリケーション用にリモートストレージモジュールを構成する方法を説明します。
+title: リモートストレージの設定
+description: オンプレミスのCommerce アプリケーション用にリモートストレージモジュールを設定する方法について説明します。
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
 source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
 
-# リモートストレージの構成
+# リモートストレージの設定
 
-リモートストレージモジュールでは、AWS S3 などのストレージサービスを使用して、メディアファイルを保存し、インポートおよびエクスポートのスケジュールを永続的なリモートストレージコンテナに設定できます。 デフォルトでは、Adobe Commerceアプリケーションは、メディアファイルを、そのアプリケーションを含むファイルシステムと同じファイルシステムに保存します。 これは複雑なマルチサーバ構成には非効率で、リソースを共有する際にパフォーマンスが低下する可能性があります。 リモートストレージモジュールを使用すると、メディアファイルを `pub/media` 内のファイルのインポート/エクスポート `var` サーバー側の画像のサイズ変更を利用するためのリモートオブジェクトストレージのディレクトリ。
-
->[!INFO]
->
->リモートストレージは、Commerce バージョン 2.4.2 以降でのみ使用できます。 詳しくは、 [2.4.2 リリースノート](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
+リモートストレージモジュールは、メディアファイルを保存し、AWS S3 などのストレージサービスを使用して、永続的なリモートストレージコンテナでインポートとエクスポートをスケジュールするオプションを提供します。 デフォルトでは、Adobe Commerce アプリケーションは、アプリケーションを含んでいるのと同じファイルシステムにメディアファイルを保存します。 これは、複雑なマルチサーバ構成では非効率的であり、リソースを共有する際のパフォーマンスが低下する可能性があります。 リモート記憶域モジュールを使用すると、メディア ファイルを `pub/media` のディレクトリおよびインポート/エクスポートファイル `var` サーバーサイドの画像サイズ変更を利用するためのリモートオブジェクトストレージのディレクトリ。
 
 >[!INFO]
 >
->リモートストレージモジュールには _制限_ クラウドインフラストラクチャ上のAdobe Commerceのサポート。 Adobeがサードパーティのストレージアダプタサービスを完全にトラブルシューティングできない。 詳しくは、 [クラウドインフラストラクチャ上のコマース用のリモートストレージの設定](cloud-support.md) クラウドプロジェクト用のリモートストレージの実装に関するガイダンス
+>リモートストレージは、Commerce バージョン 2.4.2 以降でのみ使用できます。 を参照してください。 [2.4.2 リリースノート](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
+
+>[!INFO]
+>
+>リモート記憶域モジュールに次の機能があります _制限付き_ クラウドインフラストラクチャー上のAdobe Commerceでのサポート。 Adobeがサードパーティ製ストレージアダプタサービスのトラブルシューティングを完全に行えない。 参照： [クラウドインフラストラクチャー上のCommerceにリモートストレージを設定](cloud-support.md) クラウドプロジェクトにリモートストレージを実装する際のガイダンス。
 
 ![スキーマ画像](../../assets/configuration/remote-storage-schema.png)
 
 ## リモートストレージオプション
 
-リモートストレージは、 `remote-storage` オプションを [`setup` CLI コマンド](../../installation/tutorials/deployment.md). The `remote-storage` オプションでは次の構文を使用します。
+リモートストレージを設定するには、 `remote-storage` オプションと [`setup` CLI コマンド](../../installation/tutorials/deployment.md). この `remote-storage` オプションでは、次の構文を使用します。
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"
 ```
 
-The `parameter-name` は、特定のリモートストレージパラメーター名を参照します。 次の表に、リモートストレージの設定に使用できるパラメータを示します。
+この `parameter-name` は、特定のリモートストレージパラメーター名を参照します。 次の表に、リモートストレージの設定に使用できるパラメーターを示します。
 
-| コマンドラインパラメータ | パラメーター名 | 説明 | デフォルト値 |
+| コマンドラインパラメーター | パラメーター名 | 説明 | デフォルト値 |
 |--- |--- |--- |--- |
-| `remote-storage-driver` | ドライバ | アダプタ名<br>可能な値：<br>**ファイル**：リモートストレージを無効にし、ローカルファイルシステムを使用します。<br>**aws-s3**：を使用します。 [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md) | なし |
-| `remote-storage-bucket` | バケット | オブジェクトのストレージまたはコンテナ名 | なし |
+| `remote-storage-driver` | ドライバ | アダプター名<br>使用可能な値：<br>**ファイル**：リモートストレージを無効にし、ローカルファイルシステムを使用します。<br>**aws-s3**：を使用します [Amazon Simple Storage Service （Amazon S3）](remote-storage-aws-s3.md) | なし |
+| `remote-storage-bucket` | バケット | オブジェクトストレージまたはコンテナ名 | なし |
 | `remote-storage-prefix` | prefix | オプションのプレフィックス（オブジェクトストレージ内の場所） | 空 |
 | `remote-storage-region` | 地域 | 地域名 | なし |
 | `remote-storage-key` | アクセスキー | オプションのアクセスキー | 空 |
@@ -45,21 +45,21 @@ The `parameter-name` は、特定のリモートストレージパラメータ�
 
 ### ストレージアダプタ
 
-デフォルトの格納場所は、ローカルファイルシステムにあります。 A _ストレージアダプタ_ では、ストレージサービスに接続して、任意の場所にファイルを保存できます。 [!DNL Commerce] は、次のストレージサービスの構成をサポートしています。
+デフォルトのストレージの場所は、ローカルファイルシステムにあります。 A _ストレージアダプタ_ を使用すると、ストレージサービスに接続し、ファイルを任意の場所に保存できます。 [!DNL Commerce] では、次のストレージサービスの設定をサポートしています。
 
-- [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md)
+- [Amazon Simple Storage Service （Amazon S3）](remote-storage-aws-s3.md)
 
-## リモートストレージを有効にする
+## リモート記憶域を有効にする
 
-リモートストレージは、Adobe Commerceのインストール中にインストールするか、既存の Commerce インスタンスにリモートストレージを追加することができます。 次の例では、各メソッドで `remote-storage` コマースを使用するパラメーター `setup` CLI コマンド。 最低限、ストレージを提供する必要があります `driver`, `bucket`、および `region`.
+リモートストレージは、Adobe Commerceのインストール時にインストールすることも、既存のCommerce インスタンスに追加することもできます。 次の例は、一連のを使用した各メソッドを示しています `remote-storage` Commerceのパラメーター `setup` CLI コマンド。 最小で、ストレージを提供する必要があります `driver`, `bucket`、および `region`.
 
-- 例：リモートストレージを使用した Commerce のインストール
+- 例：Commerceとリモートストレージのインストール
 
   ```bash
   bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
-- 例：既存のコマースでのリモートストレージの有効化
+- 例：既存のCommerceでリモートストレージを有効にする
 
   ```bash
   bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
@@ -67,23 +67,23 @@ The `parameter-name` は、特定のリモートストレージパラメータ�
 
 >[!TIP]
 >
->クラウドインフラストラクチャ上のAdobe Commerceについては、 [クラウドインフラストラクチャ上のコマース用のリモートストレージの設定](cloud-support.md).
+>クラウドインフラストラクチャー上のAdobe Commerceについては、以下を参照してください。 [クラウドインフラストラクチャー上のCommerceにリモートストレージを設定](cloud-support.md).
 
 ## 制限事項
 
-リモートストレージとデータベースストレージの両方を同時に有効にすることはできません。 リモートストレージを使用している場合は、データベースストレージを無効にします。
+リモート記憶域とデータベース記憶域の両方を同時に有効にすることはできません。 リモートストレージを使用している場合は、データベースストレージを無効にします。
 
 ```bash
 bin/magento config:set system/media_storage_configuration/media_database 0
 ```
 
-リモートストレージを有効にすると、確立された開発環境に影響を与える場合があります。 例えば、特定の PHP ファイル関数が期待どおりに動作しない場合があります。 ファイル操作に対する Commerce Framework の使用を適用する必要があります。
+リモートストレージを有効にすると、確立された開発エクスペリエンスに影響を与える可能性があります。 例えば、ある PHP ファイル関数が期待どおりに動作しない場合があります。 ファイル操作にCommerce Framework を強制的に使用する必要があります。
 
-PHP の使用禁止のネイティブ関数のリストは、 [magento-coding-standard リポジトリ][code-standard].
+禁止されている PHP ネイティブ関数のリストは、以下で入手できます。 [magento-coding-standard リポジトリ][code-standard].
 
 ## コンテンツを移行
 
-特定のアダプタのリモートストレージを有効にした後、CLI を使用して既存のアダプタを移行できます _メディア_ ファイルをリモートストレージに保存します。
+特定のアダプタに対してリモート記憶域を有効にした後は、CLI を使用して既存のものを移行できます _media_ リモートストレージへのファイル。
 
 ```bash
 ./magento2ce/bin/magento remote-storage:sync
@@ -91,7 +91,7 @@ PHP の使用禁止のネイティブ関数のリストは、 [magento-coding-st
 
 >[!INFO]
 >
->sync コマンドは、 `pub/media` ディレクトリ _not_ のインポート/エクスポートファイル `var` ディレクトリ。 詳しくは、 [予定されているインポート/エクスポート](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) （内） _Commerce 2.4 ユーザーガイド_.
+>sync コマンドは、内のファイルのみを移行します。 `pub/media` ディレクトリ、 _ではない_ でのファイルのインポート/エクスポート `var` ディレクトリ。 参照： [スケジュールされた読み込み/書き出し](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) が含まれる _Commerce 2.4 ユーザーガイド_.
 
 <!-- link definitions -->
 

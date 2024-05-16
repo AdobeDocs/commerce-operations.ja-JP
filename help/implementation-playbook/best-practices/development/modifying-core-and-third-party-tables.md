@@ -7,7 +7,7 @@ last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1420'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Adobeでは、まずこのデータを保存する必要があるかどうかを
 
 例えば、 `stitch` 外部データベースからの古い注文（おそらく、廃止された古いMagento 1 サイト）をまとめたものです。 次に、GraphQL メッシュを使用して、顧客の注文履歴の一部として表示します。 これらの古い注文は、現在の注文と組み合わせることができます [!DNL Adobe Commerce] 環境。
 
-GraphQLでの API メッシュの使用について詳しくは、を参照してください。 [API メッシュとは](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) and [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
+GraphQLでの API メッシュの使用について詳しくは、を参照してください。 [API メッシュとは](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}）および [GraphQL メッシュ ゲートウェイ](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
 ## 拡張属性を持つ従来のデータの移行
 
@@ -54,7 +54,7 @@ GraphQLでの API メッシュの使用について詳しくは、を参照し�
 
 開発者は、の外部でツールを使用することを常に検討することが重要です [!DNL Adobe Commerce] 環境（GraphQL メッシュやAdobeApp Builder など）。 これらのツールは、データへのアクセスを保持するのに役立ちますが、コアコマースアプリケーションやその基礎となるデータベーステーブルには影響しません。 このアプローチでは、API を通じてデータを公開します。 次に、データソースを App Builder 設定に追加します。 GraphQL Mesh を使用すると、これらのデータソースを組み合わせて、に記載されているように 1 つの応答を生成できます。 [レガシーデータ](#legacy-data).
 
-GraphQL メッシュの詳細については、を参照してください。 [GraphQL メッシュ ゲートウェイ](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For information about the Adobe App Builder,  see [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
+GraphQL メッシュの詳細については、を参照してください。 [GraphQL メッシュ ゲートウェイ](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Adobeの App Builder について詳しくは、以下を参照してください。 [App Builder の概要](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
 
 ## コアテーブルまたはサードパーティのテーブルの変更
 

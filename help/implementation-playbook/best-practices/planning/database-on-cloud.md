@@ -1,6 +1,6 @@
 ---
-title: クラウドデプロイメントのデータベース設定のベストプラクティス
-description: クラウドインフラストラクチャにAdobe Commerceをデプロイする際のパフォーマンスを向上させるために、データベースとアプリケーションの設定を構成する方法について説明します。
+title: クラウドデプロイメントにおけるデータベース設定のベストプラクティス
+description: Adobe Commerceをクラウドインフラストラクチャーにデプロイする際に、パフォーマンスを向上させるためにデータベースとアプリケーションを設定する方法について説明します。
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # データベース設定のベストプラクティス
 
-クラウドインフラストラクチャにAdobe Commerceをデプロイする際に、データベースのパフォーマンスを向上し、データベースを効率的に操作するためのベストプラクティスについて説明します。
+クラウドインフラストラクチャーにAdobe Commerceをデプロイする際に、データベースのパフォーマンスを向上させ、データベースを効率的に操作するためのベストプラクティスについて説明します。
 
-## 影響を受ける製品
+## 対象製品
 
-Adobe Commerce an cloud infrastructure
+クラウドインフラストラクチャー上のAdobe Commerce
 
-## すべての MyISAM テーブルを InnoDB に変換
+## すべての MyISAM テーブルを InnoDB に変換する
 
-Adobeでは、InnoDB データベースエンジンの使用をお勧めします。 デフォルトのAdobe Commerceインストールでは、データベース内のすべてのテーブルは InnoDB エンジンを使用して格納されます。 ただし、一部のサードパーティモジュール（拡張）では、MyISAM 形式のテーブルを導入できます。 サードパーティ製モジュールをインストールした後、データベースをチェックして、 `myisam` 形式を設定して、 `innodb` 形式を使用します。
+Adobeでは、InnoDB データベースエンジンを使用することをお勧めします。 デフォルトのAdobe Commerce インストールでは、データベース内のすべてのテーブルが InnoDB エンジンを使用して格納されます。 ただし、一部のサードパーティモジュール（拡張機能）では、MyISAM 形式のテーブルを導入できます。 サードパーティ製モジュールをインストールしたら、データベースをチェックして次のテーブルを識別します `myisam` 形式を設定して次のように変換します `innodb` 形式。
 
-### モジュールに MyISAM テーブルが含まれているかどうかを確認します
+### モジュールに MyISAM テーブルが含まれているかどうかの確認
 
-インストール前にサードパーティのモジュールコードを分析し、MyISAM テーブルを使用しているかどうかを判断できます。
+インストールする前にサードパーティのモジュールコードを分析して、MyISAM テーブルを使用しているかどうかを判断できます。
 
-拡張機能が既にインストールされている場合は、次のクエリを実行して、データベースに MyISAM テーブルが存在するかどうかを判断します。
+すでに拡張機能をインストールしている場合は、次のクエリを実行して、データベースに MyISAM テーブルがあるかどうかを確認します。
 
 ```sql
 SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
@@ -35,70 +35,70 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
     NOT IN ('mysql', 'information_schema', 'performance_schema', 'sys');
 ```
 
-### ストレージエンジンを InnoDB に変更
+### ストレージエンジンを InnoDB に変更する
 
-Adobe Analytics の `db_schema.xml` テーブルを宣言するファイル、 `engine` 対応する `table` ノードから `innodb`. 参照： [宣言スキーマ/テーブルノードの設定](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) （開発者向けドキュメント）。
+が含まれる `db_schema.xml` テーブルを宣言するファイルで、 `engine` 対応するの属性値 `table` ノード先 `innodb`. 詳しくは、を参照してください [宣言型スキーマ/テーブルノードを設定](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) 開発者向けドキュメントを参照してください。
 
-この宣言スキームは、クラウドインフラストラクチャバージョン 2.3 のAdobe Commerceで導入されました。
+宣言型スキームは、クラウドインフラストラクチャバージョン 2.3 上のAdobe Commerceで導入されました。
 
-## ネイティブ MySQL 検索に推奨される検索エンジンを設定する
+## ネイティブの MySQL 検索用に推奨される検索エンジンを設定
 
-Adobe Commerceアプリケーションにサードパーティの検索ツールを設定する予定がある場合でも、クラウドインフラストラクチャプロジェクト上でAdobe CommerceのElasticsearchまたは OpenSearch を常に設定することをお勧めします。 この設定は、サードパーティの検索ツールが失敗した場合に備えたフォールバックオプションを提供します。
+Adobeでは、Adobe Commerce アプリケーションにサードパーティの検索ツールを設定する予定がある場合でも、クラウドインフラストラクチャプロジェクトでAdobe Commerceに対して常にElasticsearchまたは OpenSearch を設定することをお勧めします。 この設定により、サードパーティの検索ツールでエラーが発生した場合に備えたフォールバックオプションが提供されます。
 
-使用する検索エンジンは、インストールされているクラウドバージョンに応じて、Adobe Commerceによって異なります。
+使用する検索エンジンは、インストールされているAdobe Commerce on cloud バージョンによって異なります。
 
 - Adobe Commerce 2.4.4 以降では、ネイティブの MySQL 検索に OpenSearch サービスを使用します。
 
-- 以前のバージョンのAdobe Commerceでは、Elasticsearchを使用します。
+- 以前のバージョンのAdobe Commerceの場合は、Elasticsearchを使用します。
 
-現在使用中の検索エンジンを判断するには、次のコマンドを実行します。
+現在使用されている検索エンジンを確認するには、次のコマンドを実行します。
 
 ```bash
 ./bin/magento config:show catalog/search/engine
 ```
 
-設定手順については、クラウド上のAdobe Commerceの開発者ガイドを参照してください。
+設定手順については、Adobe Commerce on cloud の開発者ガイドを参照してください。
 
-- [OpenSearch サービスを設定する](https://devdocs.magento.com/cloud/project/services-opensearch.html)
+- [OpenSearch サービスの設定](https://devdocs.magento.com/cloud/project/services-opensearch.html)
 
 - [Elasticsearchサービスの設定](https://devdocs.magento.com/cloud/project/services-elastic.html)
 
 ## カスタムトリガーの回避
 
-可能な限り、カスタムトリガーを使用しないでください。
+可能であれば、カスタムトリガーの使用は避けます。
 
-トリガーは、変更を監査テーブルに記録するために使用されます。 Adobeでは、次の理由により、アプリケーション機能を使用する代わりに、監査テーブルに直接書き込むようにトリガーを設定することをお勧めします。
+トリガーは、変更を監査テーブルに記録するために使用されます。 Adobeは、次の理由から、トリガー機能を使用する代わりに、監査表に直接書き込むようにアプリケーションを設定することをお勧めします。
 
-- トリガーはコードとして解釈され、MySQL は事前にコンパイルしません。 クエリのトランザクションスペースに接続すると、テーブルで実行される各クエリに対して、パーサとインタプリタにオーバーヘッドが追加されます。
-- トリガーは、元のクエリと同じトランザクション領域を共有し、これらのクエリがテーブルのロックを競合しますが、トリガーは別のテーブルのロックを個別に競合します。
+- トリガーはコードとして解釈され、MySQL は事前にコンパイルしません。 クエリのトランザクション領域にフックすると、テーブルで実行される各クエリのパーサーとインタープリターにオーバーヘッドが追加されます。
+- トリガーは元の問い合わせと同じトランザクション領域を共有し、それらの問い合わせがテーブルのロックに競合する間、トリガーは別のテーブルのロックに独立して競合する。
 
-カスタムトリガーの使用に代わる方法については、 [MySQLトリガー](mysql-configuration.md#triggers).
+カスタムトリガーの代替手段について詳しくは、を参照してください。 [MySQL トリガー](mysql-configuration.md#triggers).
 
-## アップグレード [!DNL ECE-Tools] をバージョン 2002.0.21 以降に変更 {#ece-tools-version}
+## アップグレード [!DNL ECE-Tools] バージョン 2002.0.21 以降へ {#ece-tools-version}
 
-cron デッドロックの潜在的な問題を回避するには、ECE-Tools をバージョン 2002.0.21 以降にアップグレードします。 手順については、 [更新 `ece-tools` version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) （開発者向けドキュメント）。
+Cron デッドロックの潜在的な問題を回避するには、ECE-Tools をバージョン 2002.0.21 以降にアップグレードしてください。 手順については、を参照してください [更新 `ece-tools` version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) 開発者向けドキュメントを参照してください。
 
-## インデクサーモードを安全に切り替える
+## インデクサーモードの安全な切り替え
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
-インデクサーを切り替えると、 [!DNL data definition language] (DDL) ステートメントを使用して、データベース・ロックを引き起こすトリガーを作成します。 この問題を回避するには、Web サイトをメンテナンスモードにし、設定を変更する前に cron ジョブを無効にします。
-手順については、 [インデクサーの設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) （内） *Adobe Commerce設定ガイド*.
+インデクサーの切り替えで生成されるもの [!DNL data definition language] （DDL）ステートメントを使用して、データベース・ロックの原因となる可能性のあるトリガーを作成します。 この問題を回避するには、web サイトをメンテナンスモードにし、設定を変更する前に cron ジョブを無効にします。
+手順については、を参照してください [インデクサーの設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) が含まれる *Adobe Commerce設定ガイド*.
 
 ## 実稼動環境で DDL ステートメントを実行しない
 
-実稼動環境で DDL ステートメントを実行して、競合（テーブルの変更や作成など）を防ぎます。 The `setup:upgrade` プロセスは例外です。
+競合（テーブルの変更や作成など）を防ぐために、実稼動環境では DDL ステートメントを実行しないでください。 この `setup:upgrade` プロセスは例外です。
 
-DDL 文を実行する必要がある場合は、Web サイトをメンテナンスモードにし、cron を無効にします（前の節でインデックスを安全に切り替える手順を参照）。
+DDL ステートメントを実行する必要がある場合は、web サイトをメンテナンスモードにして、cron を無効にします（前の節のインデックスを安全に切り替える手順を参照）。
 
 ## 注文のアーカイブを有効にする
 
-管理者からの注文のアーカイブを有効にして、注文データが増えるにつれ、販売テーブルに必要な容量を削減します。 アーカイブは、MySQL のディスク領域を節約し、チェックアウトパフォーマンスを向上させます。
+管理者からの注文アーカイブを有効にして、注文データの増加に合わせてセールステーブルに必要なスペースを減らします。 アーカイブにより、MySQL のディスク領域が節約され、チェックアウトのパフォーマンスが向上します。
 
-詳しくは、 [アーカイブを有効にする](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) ( Adobe Commerce Merchant ドキュメント ) を参照してください。
+参照： [アーカイブを有効にする](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) Adobe Commerce マーチャントドキュメントを参照してください。
 
 ## 追加情報
 
 - [MySQL ストレージエンジン](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
-- [Adobe Commerce 2.3.5 MariaDB のアップグレードの前提条件](../maintenance/mariadb-upgrade.md)
-- [データベースのパフォーマンスの問題を解決するためのベストプラクティス](../maintenance/resolve-database-performance-issues.md)
+- [MariaDB のAdobe Commerce 2.3.5 アップグレードの前提条件](../maintenance/mariadb-upgrade.md)
+- [データベースのパフォーマンスの問題を解決するベストプラクティス](../maintenance/resolve-database-performance-issues.md)

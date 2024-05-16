@@ -1,54 +1,54 @@
 ---
-title: Web クローラーの設定に関するベストプラクティス
-description: 「robots.txt」ファイルと「sitemap.xml」ファイルを使用して、Adobe Commerceサイトの指示を Web クローラーに渡す方法を説明します。
+title: Web クローラーを設定するためのベストプラクティス
+description: 「robots.txt」および「sitemap.xml」ファイルを使用して、Adobe Commerce サイトに関する手順を web クローラーに渡す方法を説明します。
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
 source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
 
 
-# Web クローラーの設定に関するベストプラクティス
+# Web クローラーを設定するためのベストプラクティス
 
-この記事では、 `robots.txt` および `sitemap.xml` Adobe Commerce内のファイル（設定やセキュリティを含む） これらのファイルは、Web クローラー（通常は検索エンジンロボット）に対し、Web サイト上のページのクロール方法を指示します。 これらのファイルを設定すると、サイトのパフォーマンスと検索エンジンの最適化を向上できます。
+この記事では、を使用する際のベストプラクティスを説明します `robots.txt` および `sitemap.xml` Adobe Commerceのファイル（設定およびセキュリティを含む）。 これらのファイルは、web クローラー（通常は検索エンジンロボット）が web サイト上のページをクロールする方法を指示します。 これらのファイルを設定すると、サイトのパフォーマンスと検索エンジンの最適化を向上させることができます。
 
 >[!NOTE]
 >
->これらのベストプラクティスは、ネイティブのAdobe Commerceストアフロントを使用するプロジェクトにのみ適用されます。 他のストアフロントソリューション (Adobe Experience Manager、ヘッドレスなど ) を使用するAdobe Commerceプロジェクトには適用されません。
+>これらのベストプラクティスは、ネイティブのAdobe Commerce ストアフロントを使用するプロジェクトにのみ当てはまります。 他のストアフロントソリューション（Adobe Experience Manager、ヘッドレスなど）を使用するAdobe Commerce プロジェクトには適用されません。
 
-## 影響を受ける製品およびバージョン
+## 影響を受ける製品とバージョン
 
-[サポートされているすべてのバージョン](../../../release/versions.md) /:
+[サポートされているすべてのバージョン](../../../release/versions.md) （件中）:
 
-- Adobe Commerce an cloud infrastructure
-- Adobe Commerceオンプレミス
+- クラウドインフラストラクチャー上のAdobe Commerce
+- Adobe Commerce オンプレミス
 
-## Adobe Commerce an cloud infrastructure
+## クラウドインフラストラクチャー上のAdobe Commerce
 
-デフォルトのAdobe Commerceプロジェクトには、単一の Web サイト、ストア、ストア表示を含む階層が含まれています。 より複雑な実装の場合、 _マルチサイト_ ストアフロント。
+デフォルトのAdobe Commerce プロジェクトには、1 つの web サイト、ストア、ストアビューを含む階層が含まれています。 より複雑な実装の場合は、の追加の web サイト、ストア、ストア表示を作成できます。 _マルチサイト_ ストアフロント。
 
-### 単一サイトストアフロント
+### 単一サイトのストアフロント
 
-次のベストプラクティスに従って、 `robots.txt` および `sitemap.xml` 単一サイトストアフロント用のファイル：
+を設定する際は、次のベストプラクティスに従います `robots.txt` および `sitemap.xml` 単一サイトのストアフロントのファイル：
 
-- プロジェクトでが使用されていることを確認します。 [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) バージョン 2002.0.12 以降。
-- 管理アプリケーションを使用して、 `robots.txt` ファイル。
+- プロジェクトでを使用していることを確認します。 [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) バージョン 2002.0.12 以降。
+- 管理アプリケーションを使用したのコンテンツを `robots.txt` ファイル。
 
   >[!TIP]
   >
-  >自動生成されたを表示 `robots.txt` 次の場所にあなたのストアのファイル `<domain.your.project>/robots.txt`.
+  >自動生成されたを表示 `robots.txt` ストアのファイル（） `<domain.your.project>/robots.txt`.
 
-- 管理アプリケーションを使用して、 `sitemap.xml` ファイル。
+- Admin アプリケーションを使用して、 `sitemap.xml` ファイル。
 
   >[!IMPORTANT]
   >
-  >クラウドインフラストラクチャプロジェクト上のAdobe Commerce上の読み取り専用ファイルシステムにより、 `pub/media` パスを使用してファイルを生成します。
+  >クラウドインフラストラクチャプロジェクト上のAdobe Commerceの読み取り専用ファイルシステムにより、次を指定する必要があります `pub/media` ファイルを生成する前のパス。
 
-- カスタム Fastly VCL スニペットを使用して、サイトのルートからにリダイレクトします。 `pub/media/` 両方のファイルの場所：
+- カスタム Fastly VCL スニペットを使用して、サイトのルートからにリダイレクトします `pub/media/` 両方のファイルの場所：
 
   ```vcl
   {
@@ -60,26 +60,26 @@ ht-degree: 0%
   }
   ```
 
-- Web ブラウザーでファイルを表示して、リダイレクトをテストします。 例： `<domain.your.project>/robots.txt` および `<domain.your.project>/sitemap.xml`. 別のパスではなく、リダイレクトを設定したルートパスを使用していることを確認してください。
+- Web ブラウザーでファイルを表示して、リダイレクトをテストします。 例： `<domain.your.project>/robots.txt` および `<domain.your.project>/sitemap.xml`. リダイレクトを設定したルートパスを使用しており、別のパスを使用していないことを確認してください。
 
 >[!INFO]
 >
->詳しくは、 [サイトマップと検索エンジンのロボットの追加](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) を参照してください。
+>参照： [サイトマップと検索エンジンロボットを追加](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) 詳しい手順については、を参照してください。
 
 
-### マルチサイトストアフロント
+### マルチサイトのストアフロント
 
-クラウドインフラストラクチャ上にAdobe Commerceを 1 回実装して、複数のストアを設定して実行できます。 詳しくは、 [複数の Web サイトまたはストアを設定する](https://devdocs.magento.com/cloud/project/project-multi-sites.html).
+クラウドインフラストラクチャー上にAdobe Commerceを 1 つ実装するだけで、複数のストアを設定して実行できます。 参照： [複数の web サイトまたはストアを設定](https://devdocs.magento.com/cloud/project/project-multi-sites.html).
 
-同じベストプラクティスで `robots.txt` および `sitemap.xml` 次のファイル [単一サイト店舗](#single-site-storefronts) は、次の 2 つの重要な違いを持つマルチサイトストアフロントに適用されます。
+の設定に関する同じベストプラクティス `robots.txt` および `sitemap.xml` のファイル [単一サイトのストアフロント](#single-site-storefronts) は、次の 2 つの重要な違いがあり、マルチサイトのストアフロントに適用されます。
 
-- 次を確認します。 `robots.txt` および `sitemap.xml` ファイル名には、対応するサイトの名前が含まれます。 例：
+- 次のことを確認します `robots.txt` および `sitemap.xml` ファイル名には、対応するサイトの名前が含まれます。 例：
    - `domaineone_robots.txt`
    - `domaintwo_robots.txt`
    - `domainone_sitemap.xml`
    - `domaintwo_sitemap.xml`
 
-- 少し変更されたカスタム Fastly VCL スニペットを使用して、サイトのルートからにリダイレクトします。 `pub/media` サイト全体の両方のファイルの場所：
+- 少し変更したカスタム Fastly VCL スニペットを使用して、サイトのルートからにリダイレクトします `pub/media` サイト全体での両方のファイルの場所：
 
   ```vcl
   {
@@ -91,27 +91,27 @@ ht-degree: 0%
   }
   ```
 
-## Adobe Commerceオンプレミス
+## Adobe Commerce オンプレミス
 
-管理アプリケーションを使用して、 `robots.txt` および `sitemap.xml` 不要なコンテンツのスキャンやインデックス作成を防ぐためのファイル ( [検索エンジンロボット](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)) をクリックします。
+Admin アプリケーションを使用して、 `robots.txt` および `sitemap.xml` ボットが不要なコンテンツのスキャンやインデックス作成を行わないようにするファイル（ [検索エンジンロボット](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)）に設定します。
 
 >[!TIP]
 >
->オンプレミスデプロイメントの場合、ファイルを書き込む場所は、Adobe Commerceのインストール方法によって異なります。 にファイルを書き込みます。 `/path/to/commerce/pub/media/` または `/path/to/commerce/media`インストールに適した方を選択します。
+>オンプレミス環境の場合、ファイルを書き込む場所は、Adobe Commerceのインストール方法によって異なります。 ファイルをに書き込みます。 `/path/to/commerce/pub/media/` または `/path/to/commerce/media`（インストールに適した方）。
 
 ## セキュリティ
 
-で管理パスを公開しない `robots.txt` ファイル。 管理パスが公開されることは、サイトのハッキングに対する脆弱性であり、データが失われる可能性があります。 次の場所から管理者パスを削除： `robots.txt` ファイル。
+管理パスをユーザーに公開しない `robots.txt` ファイル。 管理者パスを公開すると、サイトハッキングの脆弱性が生じ、データが失われる可能性があります。 からの管理者パスの削除 `robots.txt` ファイル。
 
-を編集する手順については、 `robots.txt` ファイルを作成し、管理パスのすべてのエントリを削除します。詳しくは、 [マーケティングユーザーガイド/ SEO および検索/検索エンジンロボット](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots).
+を編集する手順は、次のとおりです `robots.txt` 管理パスのすべてのエントリをファイルに保存して削除します。詳しくは、以下を参照してください [マーケティングユーザーガイド / SEO と検索/検索エンジンロボット](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots).
 
 >[!TIP]
 >
->サポートが必要な場合は、 [Adobe Commerceサポートチケットを送信する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+>サポートが必要な場合は、 [Adobe Commerce サポートチケットを送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## 追加情報
 
 - [Web サイト、ストア、ストア表示について](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
 - [Web サイトの追加](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [Fastly を使用してAdobe Commerceサイトの悪意のあるトラフィックをブロックします](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
-- [robots.txt が、クラウドインフラストラクチャ 2.3.x 上のAdobe Commerceで 404 エラーを返す](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)
+- [Fastly を使用して、Adobe Commerce サイトの悪意のあるトラフィックをブロックする](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
+- [robots.txt で、cloud infrastructure 2.3.x のAdobe Commerceに 404 エラーが発生する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)

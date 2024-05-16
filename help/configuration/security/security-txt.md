@@ -1,25 +1,25 @@
 ---
 title: Security.txt
-description: セキュリティ研究者が脆弱性を報告する際に役立つ情報を提供する方法を説明します。
+description: セキュリティ研究者が脆弱性を報告するのに役立つ情報を提供する方法を説明します。
 feature: Configuration, Security
-badge: label="Corra の Kalpesh Mehta から寄稿" type="Informative" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="カルペシュメタ"
+badge: label="寄稿：Kalpesh Meta from Corra" type="Informative" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="カルペシュ メッタ"
 exl-id: ddafd03c-77b2-42e8-b593-7d655d08e9c3
 source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
 
 # セキュリティ TXT ファイル
 
-研究者がセキュリティの脆弱性を発見した場合、適切なレポートチャネルが不足することがよくあります。 その結果、一部の脆弱性は報告されません。 の目的 `security.txt` [ファイル形式](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) ファイルは、セキュリティ研究者がその発見を報告する際に使用できる情報を提供することを目的としています。
+研究者によってセキュリティの脆弱性が発見された場合、適切なレポートチャネルがないことがよくあります。 その結果、一部の脆弱性は報告されません。 の目的 `security.txt` [ファイル形式](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) ファイルは、セキュリティ研究者が調査結果を報告するために使用できる情報を提供することです。
 
-商人は次の連絡先情報を入力できます： [セキュリティ問題の報告](https://docs.magento.com/user-guide/stores/security-issue-reporting.html) コマースから _管理者_. 開発者の場合、 `Magento_Securitytxt` モジュールは、次の機能を提供します。
+マーチャントは、次の連絡先情報を入力できます [セキュリティ問題レポート](https://docs.magento.com/user-guide/stores/security-issue-reporting.html) Commerceから _Admin_. 開発者の場合、 `Magento_Securitytxt` モジュールは次の機能を提供します。
 
-- セキュリティ設定を _管理者_.
-- に対する要求のアプリケーションアクションクラスを照合するルータが含まれます。 `.well-known/security.txt` および `.well-known/security.txt.sig` ファイル。
-- 次のコンテンツを提供： `.well-known/security.txt` および `.well-known/security.txt.sig` ファイル。
+- からセキュリティ設定を保存できるようにします _Admin_.
+- に対する要求のアプリケーション アクション クラスに一致するルーターが含まれています `.well-known/security.txt` および `.well-known/security.txt.sig` ファイル。
+- のコンテンツを提供 `.well-known/security.txt` および `.well-known/security.txt.sig` ファイル。
 
 有効な `security.txt` ファイルは次のようになります。
 
@@ -32,13 +32,13 @@ Policy: https://example.com/security-policy.html
 Signature: https://example.com/.well-known/security.txt.sig
 ```
 
-次の手順で `security.txt` 署名 (`security.txt.sig`) ファイル：
+を作成するには `security.txt` 署名（`security.txt.sig`） ファイル：
 
 ```bash
 gpg -u KEYID --output security.txt.sig --armor --detach-sig security.txt
 ```
 
-署名を検証するには、次の手順に従います。
+署名を検証するには：
 
 ```bash
 gpg --verify security.txt.sig security.txt

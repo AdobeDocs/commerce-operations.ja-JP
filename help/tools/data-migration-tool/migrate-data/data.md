@@ -1,48 +1,48 @@
 ---
-title: データの移行
-description: を使用してMagento1 からMagento2 へのデータ移行を開始する方法を説明します。 [!DNL Data Migration Tool].
+title: データを移行
+description: を使用して、Magento 1 からMagento 2 へのデータ移行を開始する方法を説明します [!DNL Data Migration Tool].
 exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
 
-# データの移行
+# データを移行
 
 開始する前に、次の手順に従って準備を行います。
 
-1. アプリケーションサーバーに次のようにログインします。 [ファイルシステムの所有者](../../../installation/prerequisites/file-system/overview.md).
-1. アプリケーションのインストールディレクトリに移動するか、システムに追加されていることを確認します。 `PATH`.
+1. アプリケーションサーバーにとしてログインします [ファイルシステム所有者](../../../installation/prerequisites/file-system/overview.md).
+1. アプリケーションインストールディレクトリに移動するか、システムに追加されていることを確認します `PATH`.
 
-詳しくは、 [最初の手順](overview.md#first-steps) の節を参照してください。
+を参照してください。 [最初の手順](overview.md#first-steps) の節を参照してください。
 
-## データ移行コマンドを実行します。
+## データ移行コマンドの実行
 
-データの移行を開始するには、次のコマンドを実行します。
+データの移行を開始するには、次を実行します。
 
 ```bash
 bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
-次の場合：
+ここで、
 
-* `[-a|--auto]` は、整合性チェックエラーが発生した場合に移行を停止しないようにする、オプションの引数です。
+* `[-a|--auto]` は、整合性チェックエラーが発生した場合に移行が停止するのを防ぐオプション引数です。
 
-* `[-r|--reset]` は、最初から移行を開始するオプションの引数です。 この引数は、移行のテストに使用できます。
+* `[-r|--reset]` は、最初から移行を開始するオプションの引数です。 この引数を使用して、移行をテストできます。
 
-* `{<path to config.xml>}` は、に対するファイルシステムの絶対パスです。 `config.xml`；この引数は必須です。
+* `{<path to config.xml>}` は、への絶対ファイルシステムパスです。 `config.xml`；この引数は必須です
 
-この手順では、 [!DNL Data Migration Tool] は、移行テーブル用の追加のテーブルとトリガーをMagento1 データベースに作成します。 これらは、 [増分/差分](delta.md) 移行手順です。 追加のテーブルには、最終的な移行実行後の変更済みレコードに関する情報が含まれます。 データベーストリガーは、これらの追加テーブルの入力に使用されます。したがって、特定のテーブルで新しい操作（レコードの追加、変更、削除）が実行されている場合、この操作に関する情報を追加のテーブルに保存します。 差分移行プロセスを実行すると、 [!DNL Data Migration Tool] これらのテーブルで未処理のレコードを確認し、必要なコンテンツをMagento2 データベースに移行します。
+この手順では、 [!DNL Data Migration Tool] は、Magento1 データベースのマイグレーション・テーブル用に追加のテーブルとトリガーを作成します。 これは、 [増分/差分](delta.md) 移行手順。 追加のテーブルには、最終的な移行の実行後に変更されたレコードに関する情報が含まれます。 データベーストリガーは、これらの追加テーブルへの入力に使用します。したがって、特定のテーブルに対して新しい処理が実行されている（レコードが追加/変更/削除されている）場合、これらのデータベーストリガーによって、この処理に関する情報が追加のテーブルに保存されます。 差分データ移行プロセスを実行すると、 [!DNL Data Migration Tool] これらのテーブルで未処理のレコードをチェックし、必要なコンテンツをMagento 2 データベースに移行します。
 
-新しい各テーブルには、次の内容が含まれます。
+それぞれの新しいテーブルには、次の内容が含まれます。
 
 * `m2_cl` prefix
-* `INSERT`, `UPDATE`, `DELETE` イベントトリガー。
+* `INSERT`, `UPDATE`, `DELETE` イベントのトリガー。
 
-例えば、 `sales_flat_order` の [!DNL Data Migration Tool] 作成：
+例えば、 `sales_flat_order` この [!DNL Data Migration Tool] 作成：
 
 * `m2_cl_sales_flat_order` テーブル：
 
@@ -85,12 +85,12 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 >[!NOTE]
 >
->The [!DNL Data Migration Tool] 実行中に現在の進行状況を保存します。 エラーまたはユーザーが操作を行った場合に、正常な最後の状態で進行が再開されます。 強制的に [!DNL Data Migration Tool] 最初から実行する場合は、 `--reset` 引数。 その場合は、以前に移行したデータの重複を防ぐために、Magento2 のデータベースダンプを復元することをお勧めします。
+>この [!DNL Data Migration Tool] 実行中の現在の進行状況を保存します。 エラーまたはユーザーの介入によって実行が停止した場合、ツールは前回正常起動時の状態から進捗を再開します。 を強制的に [!DNL Data Migration Tool] 最初から実行するには、 `--reset` 引数。 この場合、以前に移行したデータが重複しないように、Magento2 のデータベースダンプを復元することをお勧めします。
 
 
 ## 一貫性エラーの可能性
 
-実行中は、 [!DNL Data Migration Tool] は、Magento1 とMagento2 データベースの間で不整合を報告し、次のようなメッセージを表示する場合があります。
+の実行中 [!DNL Data Migration Tool] では、Magento1 とMagento2 のデータベース間の不整合が報告され、次のようなメッセージが表示される場合があります。
 
 * `Source documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`
 * `Destination documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`
@@ -105,8 +105,8 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 * `Incompatibility in data. Source document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 * `Incompatibility in data. Destination document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 
-詳しくは、 [トラブルシューティング](https://support.magento.com/hc/en-us/articles/360033020451) の節を参照してください。
+を参照してください。 [トラブルシューティング](https://support.magento.com/hc/en-us/articles/360033020451) 詳細および推奨事項については、このガイドの節を参照してください。
 
 ## 次の移行手順
 
-[変更を移行する](delta.md)
+[変更を移行](delta.md)

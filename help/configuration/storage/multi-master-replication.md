@@ -1,11 +1,11 @@
 ---
 title: データベースレプリケーション
-description: データベースレプリケーションを設定するメリットを参照してください。
+description: データベースレプリケーションを設定するメリットを確認します。
 recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -16,24 +16,24 @@ ht-degree: 0%
 
 {{deprecate-split-db}}
 
-データベース・レプリケーションを設定すると、次のメリットが得られます。
+データベースレプリケーションを設定すると、次の利点があります。
 
 - データのバックアップを提供
-- マスター・データベースに影響を与えずにデータ分析を可能にします。
+- マスターデータベースに影響を与えずにデータ分析を有効にします
 - 拡張性
 
-MySQL データベースは非同期でレプリケートされます。つまり、マスターから更新を受け取るためにスレーブを恒久的に接続する必要はありません。
+MySQL データベースは非同期でレプリケートするので、スレーブがマスターから更新を受け取るために永続的に接続される必要はありません。
 
 ## データベースレプリケーションの設定
 
-データベースレプリケーションに関する詳細な説明は、このガイドの範囲外です。 設定するには、次のようなリソースを参照してください。
+データベースレプリケーションの詳細については、このガイドの範囲外です。 設定するには、次のようなリソースを参照します。
 
 - [MySQL ドキュメント](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [MySQL(digitalocean) でマスタースレーブレプリケーションを設定する方法](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [MySQL でマスタースレーブレプリケーションを設定する方法（digitalocean）](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
-Commerce には、スレーブデータベース用の MySQL 設定例が用意されています。 簡単な設定は、 `ResourceConnections` クラス `README.md`.
+Commerceは、スレーブデータベース用の MySQL 設定のサンプルを提供します。 を使用した簡単な設定ができます `ResourceConnections` クラス `README.md`.
 
-次の機能は、より高度なもので、ユーザー情報に対してのみ提供されています。
+より高度な次の説明は、情報提供のみを目的としています。
 
 ```php
    return array (
@@ -122,9 +122,9 @@ Commerce には、スレーブデータベース用の MySQL 設定例が用意�
 
 ## パフォーマンスの向上
 
-マスタースレーブレプリケーションのパフォーマンスを向上させるには、スレーブインスタンス上の一部のテーブルをフィルタリングします。 名前のパターンを持つすべての一時テーブルをフィルタリングすることをお勧めします `search\_tmp\_%` カタログ検索に使用されます。
+マスタースレーブレプリケーションのパフォーマンスを向上させるために、スレーブインスタンス上の一部のテーブルをフィルタリングできます。 名前パターンを使用してすべての一時テーブルをフィルタリングすることをお勧めします。 `search\_tmp\_%` これは、カタログ検索に使用されます。
 
-これをおこなうには、次の行を `my.cnf` スレーブインスタンス上のファイル：
+これを行うには、に次の行を追加します `my.cnf` スレーブインスタンス上のファイル：
 
 ```conf
 replicate-wild-ignore-table=%.search\_tmp\_%

@@ -1,6 +1,6 @@
 ---
-title: The [!DNL QuickView] タブ
-description: The [!DNL QuickView] 「 」タブでは、ディスク容量が低い場合やサーバー使用率が低い場合など、表示されるさまざまなアラートの種類について説明します。
+title: この [!DNL QuickView] タブ
+description: この [!DNL QuickView] タブでは、ディスク容量が少ないアラートやサーバーの使用状況など、表示される様々なアラートタイプについて説明します。
 exl-id: 34405f9b-30de-4fab-acca-64a8e308ca90
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,24 +10,24 @@ ht-degree: 0%
 
 ---
 
-# The [!DNL QuickView] タブ
+# この [!DNL QuickView] タブ
 
-The **[!UICONTROL QuickView]** 「 」タブでは、ディスク容量が低い場合やサーバー使用率が低い場合など、表示されるさまざまなアラートの種類について説明します。 さらに、タブのフレームについて述べた。
+この **[!UICONTROL QuickView]** タブでは、ディスク容量が少ないアラートやサーバーの使用状況など、表示される様々なアラートタイプについて説明します。 さらに、タブのフレームを記述する。
 
 ## [!UICONTROL Alerts]
 
 ![アラート](../../assets/tools/observation-for-adobe-commerce/quickview_alerts.jpg)
 
-The **[!UICONTROL Alerts]** frame は、選択した期間のディスク容量に関する警告やサーバー使用状況に関する警告など、様々なアラートを表示します。 このフレームでは、次のようなデータベーステーブルの操作を確認します。 `SELECT`, `DELETE`、および `UPDATE` 選択した期間をまたいで。
+この **[!UICONTROL Alerts]** フレームには、選択した期間におけるディスク・スペースの警告およびサーバの使用状況に関するアラートなど、さまざまなアラートが表示されます。 このフレームでは、次のようなデータベース・テーブルの操作を確認します `SELECT`, `DELETE`、および `UPDATE` 選択した期間。
 
 ## [!UICONTROL Upsize / Downsize by node]
 
-![ノード別にサイズを拡大/縮小](../../assets/tools/observation-for-adobe-commerce/quickview_upsize_by_node.jpg)
+![ノードごとのアップサイズ/ダウンサイズ](../../assets/tools/observation-for-adobe-commerce/quickview_upsize_by_node.jpg)
 
-The **[!UICONTROL Upsize / Downsize by node]** frame は、選択した期間のノード別にアップサイズとダウンサイズを表示します。 これは、選択した期間にクラスターサイズが変化したかどうかを評価するために使用されます。
+この **[!UICONTROL Upsize / Downsize by node]** フレームには、選択した期間におけるノード別のアップサイズとダウンサイズが表示されます。 これは、選択した期間にクラスターサイズの変更があったかどうかを評価するために使用されます。
 
 ## [!UICONTROL CPU Utilization]
 
 ![CPU 使用率](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
 
-The **[!UICONTROL CPU Utilization]** frame は、選択した期間のノード別の CPU 使用率を示します。
+この **[!UICONTROL CPU Utilization]** フレーム：選択した期間のノード別の CPU 使用率を表示します。

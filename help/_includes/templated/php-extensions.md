@@ -1,7 +1,7 @@
 ---
 source-git-commit: 0feb0124cfa375a8ebfd17ad88b1b1eaec99e0e5
 workflow-type: tm+mt
-source-wordcount: '15'
+source-wordcount: '14'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Adobe Commerceには次が必要です。
 - `ext-zlib`
 - `lib-libxml`
 
-Adobe Commerce向け B2B には以下が必要です。
+Adobe Commerceの B2B には、次が必要です。
 
 - `ext-bcmath`
 - `ext-ctype`

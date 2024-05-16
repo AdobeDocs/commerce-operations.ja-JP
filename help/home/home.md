@@ -70,7 +70,7 @@ ht-degree: 20%
        <img alt="Enterprise" src="../assets/icons/enterprise.svg" width="40"/>
     </a>
     <div>
-      <a href="../commerce-at-scale/overview.md"><strong>大規模なコマース</strong></a>
+      <a href="../commerce-at-scale/overview.md"><strong>Commerceのスケール</strong></a>
       <p>Adobe Commerce と Adobe Experience Manager を使用して、エクスペリエンスを大規模に配信する方法を学習します。</p>
     </div>
   </td>

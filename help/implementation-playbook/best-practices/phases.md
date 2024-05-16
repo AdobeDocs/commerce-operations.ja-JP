@@ -1,6 +1,6 @@
 ---
 title: 実装フェーズ
-description: Adobe Commerceプロジェクトの実装フェーズに関するベストプラクティスについて説明します。
+description: Adobe Commerce プロジェクトの実装フェーズに関するベストプラクティスについて説明します。
 exl-id: c5272f79-7315-46dc-a191-a40004aaa812
 feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # 実装のベストプラクティス
 
-Adobe Commerceプロジェクトは、様々な方法で実装できます。 この節で提供されるベストプラクティスは、Adobeが特定の使用例を実装するように顧客やパートナーに期待する方法を説明します。 これらの推奨事項は、サイトの設定とカスタマイズ、導入、運用、パフォーマンス、アップグレードに関する一般的な問題や潜在的な問題を防ぐように設計されています。
+Adobe Commerce プロジェクトを実装する方法は多数あります。 この節で提供されるベストプラクティスでは、Adobeがお客様やパートナーに期待する、具体的なユースケースの実装方法について説明します。 これらの推奨事項は、サイトの構成とカスタマイズ、展開、操作、パフォーマンス、およびアップグレードに関連する一般的な問題と潜在的な問題を防ぐことを目的としています。
 
-これらのベストプラクティスは実装フェーズ別に整理されており、お使いの使用例に適した推奨事項を見つけることができます。
+これらのベストプラクティスは実装フェーズ別に整理されているので、ユースケースに当てはまる推奨事項を見つけることができます。
 
 <table style="table-layout:fixed">
 <tr>
@@ -25,7 +25,7 @@ Adobe Commerceプロジェクトは、様々な方法で実装できます。 �
     <div>
     <a href="planning/overview.md"><strong>計画</strong></a>
     </div>
-    要件の収集、アーキテクチャ設計、カタログ設計、プロジェクト範囲、アカウントプロビジョニング、ユーザーアクセス、拡張機能の購入
+    要件収集、アーキテクチャ設計、カタログ設計、プロジェクト範囲、アカウントのプロビジョニング、ユーザーアクセス、拡張機能の購入
     <br>
   </td>
   <td>
@@ -35,27 +35,27 @@ Adobe Commerceプロジェクトは、様々な方法で実装できます。 �
     <div>
     <a href="development/overview.md"><strong>開発</strong></a>
     </div>
-    ローカルおよびステージング環境のセットアップ、トラブルシューティング、コード管理、スプリント計画、スプリントのレビュー、受け入れテスト、お客様のサインオフ
+    ローカル環境とステージング環境の設定、トラブルシューティング、コード管理、スプリント計画、スプリントレビュー、受け入れテスト、顧客の承認
     <br>
   </td>
   <td>
     <a href="launch/overview.md">
-      <img alt="Launch" src="../../assets/icons/launch.svg" width="80" height="80">
+      <img alt="ローンチ" src="../../assets/icons/launch.svg" width="80" height="80">
     </a>
     <div>
-    <a href="launch/overview.md"><strong>Launch</strong></a>
+    <a href="launch/overview.md"><strong>ローンチ</strong></a>
     </div>
-    運用開始前と運用後の最終的なチェックリストレビュー、実稼動環境の導入、セキュリティ設定、サービスの検証、パフォーマンスの監視  
+    ローンチ前およびローンチ後の最終チェックリストのレビュー、実稼動のデプロイメント、セキュリティ設定、サービスの検証、パフォーマンスの監視  
     <br>
   </td>
   <td>
     <a href="maintenance/overview.md">
-      <img alt="メンテナンス" src="../../assets/icons/gauge.svg" width="80" height="80">
+      <img alt="保守" src="../../assets/icons/gauge.svg" width="80" height="80">
     </a>
     <div>
-    <a href="maintenance/overview.md"><strong>メンテナンス</strong></a>
+    <a href="maintenance/overview.md"><strong>保守</strong></a>
     </div>
-    サイトの監視、カタログ管理、インデックス作成、設定、機能の強化、バグ修正、管理サービス、アップグレード   
+    サイト監視、カタログ管理、インデックス作成、構成、機能強化、バグ修正、Managed Services、アップグレード   
     <br>
   </td>
 </tr>

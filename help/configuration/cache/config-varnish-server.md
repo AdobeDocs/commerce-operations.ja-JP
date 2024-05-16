@@ -1,46 +1,46 @@
 ---
 title: Web サーバーの設定
-description: Vanrish と連携するように Web サーバーを設定する方法を説明します。
+description: Varnish と連携するように web サーバーを設定する方法を説明します。
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
 
 # Web サーバーの設定
 
-Wanish は Web サーバーではなく受信 HTTP 要求に直接応答するので、Web サーバーをデフォルトポート 80 以外のポートでリッスンするように設定します。
+Web サーバーは Web サーバーではなく、受信 HTTP リクエストに Varnish が直接応答するため、デフォルトのポート 80 以外のポートでリッスンするように web サーバーを設定します。
 
-次の節では、例としてポート 8080 を使用します。
+次のセクションでは、例としてポート 8080 を使用します。
 
-**Apache 2.4 リスンポートを変更するには**:
+**Apache 2.4 リッスンポートを変更するには**:
 
-1. 開く `/etc/httpd/conf/httpd.conf` をクリックします。
-1. 次を見つけます。 `Listen` ディレクティブ。
-1. リスンポートの値をに変更します。 `8080`. （使用可能な任意のリスンポートを使用できます）。
-1. 変更をに保存します。 `httpd.conf` をクリックし、テキストエディタを終了します。
+1. 開く `/etc/httpd/conf/httpd.conf` テキストエディター。
+1. を見つけます。 `Listen` ディレクティブ。
+1. リッスンポートの値をに変更します。 `8080`. （利用可能な任意のリッスンポートを使用できます）。
+1. 変更をに保存します。 `httpd.conf` をクリックして、テキストエディターを終了します。
 
-## Vanish システムの構成を変更する
+## Varnish システムの設定を変更します。
 
-Vanish システムの構成を変更するには、次の手順に従います。
+Varnish システムの設定を変更するには：
 
-1. を使用して `root` 権限を持つ場合は、テキストエディターで Vanish 設定ファイルを開きます。
+1. を使用した As a ユーザー `root` 権限を持つ場合は、Vanish 設定ファイルをテキストエディターで開きます。
 
    - CentOS 6: `/etc/sysconfig/varnish`
    - CentOS 7: `/etc/varnish/varnish.params`
    - Debian: `/etc/default/varnish`
    - Ubuntu: `/etc/default/varnish`
 
-1. Vanish リッスンポートを 80 に設定します。
+1. Varnish listen ポートを 80 に設定します。
 
    ```conf
    VARNISH_LISTEN_PORT=80
    ```
 
-   Vanish 4.x の場合、DAEMON_OPTS に `-a` パラメータ（VANISH_LISTEN_PORT が正しい値に設定されている場合でも）:
+   Varnish 4.x の場合は、DAEMON_OPTS に以下に対する正しいリスニングポートが含まれていることを確認してください。 `-a` パラメータ（VARNISH_LISTEN_PORT が正しい値に設定されている場合も含む）:
 
    ```conf
    DAEMON_OPTS="-a :80 \
@@ -50,13 +50,13 @@ Vanish システムの構成を変更するには、次の手順に従います�
       -s malloc,256m"
    ```
 
-1. 変更内容を Vanish 設定ファイルに保存し、テキストエディタを終了します。
+1. 変更内容を Varnish 設定ファイルに保存し、テキストエディタを終了します。
 
-### デフォルトの VCL を修正する
+### デフォルトの VCL の修正
 
-このセクションでは、Vanrish が HTTP 応答ヘッダーを返すように、最小限の設定を提供する方法について説明します。 これにより、Vanish が機能することを確認してから、 [!DNL Commerce] ワニスを使用する場合の適用。
+この節では、Varnish が HTTP 応答ヘッダーを返すための最小限の設定を提供する方法について説明します。 これにより、設定する前に、Varnish が機能することを確認できます [!DNL Commerce] ワニスを使用するアプリケーション。
 
-Vanish を最小限に設定するには：
+ワニスを最小限に設定するには：
 
 1. バックアップ `default.vcl`:
 
@@ -64,8 +64,8 @@ Vanish を最小限に設定するには：
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
-1. 開く `/etc/varnish/default.vcl` をクリックします。
-1. 次の規格を探します。
+1. 開く `/etc/varnish/default.vcl` テキストエディター。
+1. 次のスタンザを探します。
 
    ```conf
    backend default {
@@ -74,13 +74,13 @@ Vanish を最小限に設定するには：
    }
    ```
 
-1. 次の値を `.host` 完全修飾ホスト名または IP アドレスと Vanish のリッスンポート _backend_ または _接触元サーバー_；つまり、コンテンツを提供するサーバー Vanish が高速化します。
+1. の値を `.host` Varnish の完全修飾ホスト名または IP アドレスとリスニングポートを使用します。 _バックエンド_ または _公開元サーバー_&#x200B;つまり、コンテンツのニスを提供するサーバーは加速します。
 
-   通常、これは Web サーバーです。 詳しくは、 [バックエンドサーバー](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) （内） _ワニスガイド_.
+   通常、これは web サーバーです。 参照： [バックエンドサーバー](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) が含まれる _ワニスガイド_.
 
-1. 次の値を `.port` Web サーバーのリスンポート（この例では 8080）を使用している。
+1. の値を `.port` を web サーバーのリッスンポートに置き換えます（この例では 8080）。
 
-   例：Apache がホスト 192.0.2.55 にインストールされ、Apache がポート 8080 でリッスンしています。
+   例：Apache がホスト 192.0.2.55 にインストールされ、Apache がポート 8080 をリッスンしている
 
    ```conf
    backend default {
@@ -91,55 +91,55 @@ Vanish を最小限に設定するには：
 
    >[!INFO]
    >
-   >Vanish と Apache が同じホスト上で実行されている場合、Adobeでは IP アドレスまたはホスト名を使用し、 `localhost`.
+   >Varnish と Apache が同じホスト上で実行されている場合、Adobeでは IP アドレスまたはホスト名を使用し、を使用しないことをお勧めします `localhost`.
 
-1. 変更をに保存します。 `default.vcl` をクリックし、テキストエディタを終了します。
+1. 変更をに保存します。 `default.vcl` をクリックして、テキストエディターを終了します。
 
-1. ワニスを再起動：
+1. Varnish を再起動します。
 
    ```bash
    service varnish restart
    ```
 
-Vanish が起動しない場合は、次のようにコマンドラインから実行してみてください。
+Varnish を起動できない場合は、次のようにコマンドラインから実行してみてください。
 
 ```bash
 varnishd -d -f /etc/varnish/default.vcl
 ```
 
-これにより、エラーメッセージが表示されます。
+エラーメッセージが表示されます。
 
 
 >[!INFO]
 >
->Vanish がサービスとして起動しない場合は、SELinux ルールを設定して実行できるようにする必要があります。
+>Varnish がサービスとして開始しない場合は、SELinux ルールを設定して実行できるようにする必要があります。
 
-## ワニスが機能していることを確認
+## ワニスが機能していることを確認します
 
-次のセクションでは、Vanish が機能していることを確認する方法を説明します。 _なし_ 使用する Commerce を設定しています。 コマースを設定する前に、この操作を試す必要があります。
+次の節では、Varnish が機能していることを確認する方法について説明しますが、 _なし_ これを使用するようにCommerceを設定します。 Commerceを設定する前に、これを試してください。
 
-次のセクションで説明したタスクを、次の順に実行します。
+以下のセクションで説明するタスクを、示された順序で実行します。
 
-- [ワニスを起動](#start-varnish)
+- [ワニスを開始](#start-varnish)
 - [&#39;netstat&#39;](#netstat)
 
-### ワニスを起動
+### ワニスを開始
 
-入力： `service varnish start`
+Enter: `service varnish start`
 
-Vanrish がサービスとして起動しない場合は、次のようにコマンドラインから起動します。
+Varnish をサービスとして起動できない場合は、次のようにコマンドラインから起動します。
 
-1. Vanish CLI を起動します。
+1. Varnish CLI を起動します。
 
    ```bash
    varnishd -d -f /etc/varnish/default.vcl
    ```
 
-1. Vanish の子プロセスを開始します。
+1. Varnish 子プロセスを開始します。
 
-   プロンプトが表示されたら、次のように入力します。 `start`
+   プロンプトが表示されたら、と入力します `start`
 
-   開始が成功したことを確認する次のメッセージが表示されます。
+   正常に開始されたことを確認する次のメッセージが表示されます。
 
    ```terminal
    child (29805) Started
@@ -151,7 +151,7 @@ Vanrish がサービスとして起動しない場合は、次のようにコマ
 
 ### netstat
 
-Vanish サーバにログインし、次のコマンドを入力します。
+Varnish サーバにログインし、次のコマンドを入力します。
 
 ```bash
 netstat -tulpn
@@ -166,17 +166,17 @@ tcp        0      0 :::8080                     :::*                        LIST
 tcp        0      0 ::1:48509                   :::*                        LISTEN      32604/varnishd
 ```
 
-上記の図は、ポート 80 で Vanish を実行し、ポート 8080 で Apache を実行していることを示しています。
+前述の例では、ポート 80 で動作する Varnish と、ポート 8080 で動作する Apache を示しています。
 
-次の出力が表示されない場合： `varnishd`、Vanrish が実行中であることを確認します。
+の出力が表示されない場合 `varnishd`、ワニスが実行されていることを確認してください。
 
-詳しくは、 [`netstat` options](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
+参照： [`netstat` オプション](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
 
 ## Commerce ソフトウェアのインストール
 
-コマースソフトウェアをインストールします（まだインストールしていない場合）。 Base URL の入力を求められたら、Vanish はすべての受信 HTTP 要求を受け取るので、Vanish ホストとポート 80（Vanish 用）を使用します。
+まだインストールしていない場合は、Commerce ソフトウェアをインストールします。 ベース URL の入力を求められたら、Varnish ホストおよびポート 80 （Varnish の場合）を使用します。これは、Varnish がすべての受信 HTTP リクエストを受信するためです。
 
-コマースのインストール中にエラーが発生した可能性があります：
+Commerceのインストール中にエラーが発生した可能性があります：
 
 ```terminal
 Error 503 Service Unavailable
@@ -185,7 +185,7 @@ XID: 303394517
 Varnish cache server
 ```
 
-このエラーが発生した場合は、 `default.vcl` をクリックし、 `backend` stanza は次のようになります。
+このエラーが発生した場合は、を編集します `default.vcl` にタイムアウトを追加 `backend` stanza は次のように記述します。
 
 ```conf
 backend default {
@@ -197,23 +197,23 @@ backend default {
 
 ## HTTP 応答ヘッダーの検証
 
-これで、Vanrish がページを提供していることを確認するには、任意のページから返されたHTML応答ヘッダーを調べます。
+これで、任意のページから返されたHTMLレスポンスヘッダーを確認することで、Varnish がページを提供していることを確認できます。
 
-ヘッダーを確認する前に、開発者モードに Commerce を設定する必要があります。 その方法はいくつかあり、最も簡単な方法は次のとおりです。 `.htaccess` （コマースアプリケーションのルート）をクリックします。 また、 [`magento deploy:mode:set`](../cli/set-mode.md) コマンドを使用します。
+ヘッダーを確認する前に、Commerceを開発者モードに設定する必要があります。 それを行う方法はいくつかありますが、最も簡単なのは変更することです `.htaccess` Commerce アプリケーションルートのローカルファイルに書き込みます。 を使用することもできます [`magento deploy:mode:set`](../cli/set-mode.md) コマンド。
 
-### 開発者モード用にコマースを設定
+### Commerceを開発者モードに設定
 
-開発者モード用にコマースを設定するには、 [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) コマンドを使用します。
+Commerceを開発者モードに設定するには、 [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) コマンド。
 
-### ワニスのログを見る
+### Varnish ログを見る
 
-Vanish が実行中であることを確認し、Vanish サーバで次のコマンドを入力します。
+Varnish が実行されていることを確認し、Varnish サーバで次のコマンドを入力します。
 
 ```bash
 varnishlog
 ```
 
-Web ブラウザーで、任意のコマースページに移動します。
+Web ブラウザーで、任意のCommerce ページに移動します。
 
 応答ヘッダーの長いリストがコマンドプロンプトウィンドウに表示されます。 次のようなヘッダーを探します。
 
@@ -232,13 +232,13 @@ Web ブラウザーで、任意のコマースページに移動します。
 -   ReqHeader      Origin: http://10.249.151.10
 ```
 
-このようなヘッダーでは、 _not_ 表示、ワニスを停止、確認する `default.vcl`を再度お試しください。
+このようなヘッダーで _ではない_ 表示、ワニスを停止、チェックしてください `default.vcl`、およびもう一度試してください。
 
-### HTML応答ヘッダーを見る
+### HTML応答ヘッダーの確認
 
-ブラウザープラグインやブラウザーインスペクターの使用など、応答ヘッダーを見る方法はいくつかあります。
+応答ヘッダーを調べる方法はいくつかあり、ブラウザーのプラグインやブラウザーインスペクターを使用する方法などがあります。
 
-次の例では、 `curl`. このコマンドは、HTTP を使用して Commerce サーバーにアクセスできる任意のマシンから入力できます。
+次の例では、を使用しています `curl`. このコマンドは、HTTP を使用してCommerce サーバーにアクセスできる任意のマシンから入力できます。
 
 ```bash
 curl -I -v --location-trusted '<your Commerce base URL>'

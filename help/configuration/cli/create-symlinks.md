@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-LESS ファイルへの symlink を作成するには、次の手順に従います。
+LESS ファイルへのシンボリックリンクを作成するには：
 
 コマンドオプション：
 
@@ -23,19 +23,19 @@ bin/magento dev:source-theme:deploy [--type="..."] [--locale="..."] [--area="...
 
 >[!INFO]
 >
->開発時に、このコマンドは LESS ファイルのシンボリックリンクを `var/view_preprocessed` および `pub/static` フォルダー。 このプロセスは、LESS ファイルを CSS ファイルにコンパイルしません。
+>開発時に、このコマンドは LESS ファイルのシンボリックリンクを `var/view_preprocessed` および `pub/static` フォルダー。 このプロセスでは、LESS ファイルを CSS ファイルにコンパイルしません。
 
-次の表で、このコマンドのパラメータと値を説明します。
+次の表に、このコマンドのパラメータと値を示します。
 
 | パラメーター | 値 | 必須？ |
 | --------- | ----- | --------- |
-| `--type` | ソースファイルのタイプ： [より小さい] （デフォルト： &quot;less&quot;）<br>現在、LESS はサポートされる唯一のファイルタイプです。 | いいえ |
-| `--locale` | ロケールコード。<br>ロケールコードのリストを表示するには、次のように入力します。 `bin/magento info:language:list` | いいえ |
-| `--area` | 領域 (`adminhtml` 行政区域の `frontend` ストアフロント用 )。 | いいえ |
-| `--theme` | のテーマ名 `<VendorName>/<theme-name>` 形式を使用します。 例： `Magento/blank` または `Magento/backend`. | いいえ |
-| `<file>` | LESS に変換する CSS ファイルのスペース区切りリスト（CSS 拡張子を除く）。 ( デフォルトは `css/styles-m css/styles-l`、 adminhtml タイプの場合 `css/styles css/styles-old`) | いいえ |
+| `--type` | ソースファイルの種類： [より小さい] （デフォルト：&quot;less&quot;）<br>現在、LESS がサポートされている唯一のファイル・タイプです。 | 不可 |
+| `--locale` | ロケールコード<br>ロケールコードのリストを表示するには、を入力します `bin/magento info:language:list` | 不可 |
+| `--area` | 領域（`adminhtml` 管理領域については、 `frontend` ストアフロント用）。 | 不可 |
+| `--theme` | のテーマ名 `<VendorName>/<theme-name>` 形式。 例： `Magento/blank` または `Magento/backend`. | 不可 |
+| `<file>` | CSS 拡張子を使用せずに LESS に変換する CSS ファイルのスペース区切りリスト。 （デフォルトは `css/styles-m css/styles-l`、adminhtml タイプ用 `css/styles css/styles-old`） | 不可 |
 
-例えば、次の名前のフロントエンドテーマの LESS ファイルを作成するには、次のように指定します。 `VendorName/themeName` （内） `en_US` ロケールで、 `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css`、次のコマンドを入力します。
+例えば、という名前のフロントエンドテーマに LESS ファイルを作成するには、次のように指定します `VendorName/themeName` が含まれる `en_US` という名前の CSS ファイルを使用したロケール `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css`を入力し、次のコマンドを入力します。
 
 ```bash
 bin/magento dev:source-theme:deploy --type="less" --locale="en_US" --area="frontend" --theme="VendorName/themeName" css/styles-l
@@ -49,7 +49,7 @@ Processed Area: frontend, Locale: en_US, Theme: VendorName/themeName, File type:
 Successfully processed.
 ```
 
-adminhtml 用の LESS ファイルを作成するには、次の手順に従います。
+管理者 HTML 用の LESS ファイルを作成するには、次の手順に従います。
 
 ```bash
 bin/magento dev:source-theme:deploy --locale="en_US" --area="adminhtml" --theme="Magento/backend" css/styles css/styles-old

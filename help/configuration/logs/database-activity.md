@@ -1,29 +1,29 @@
 ---
-title: データベースアクティビティをログに記録
-description: Commerce を設定し、ロガーインターフェイスを使用してデータベースアクティビティを記録します。
+title: データベースアクティビティを記録
+description: Logger インターフェイスを使用して、データベースアクティビティをログに記録するようにCommerceを設定します。
 feature: Configuration, Logs, Storage
 exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
 source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '87'
 ht-degree: 0%
 
 ---
 
-# データベースアクティビティをログに記録
+# データベースアクティビティを記録
 
-次の例は、 [`Magento\Framework\DB\LoggerInterface`][interface]:2 つの実装を持つ
+次の例は、 [`Magento\Framework\DB\LoggerInterface`][interface]。これには 2 つの実装があります。
 
-- 何も記録しない（デフォルト）: [`Magento\Framework\DB\Logger\Quiet`][quiet]
-- にログを記録します。 `var/log` ディレクトリ： [`Magento\Framework\DB\Logger\File`][file]
+- ログなし（デフォルト）: [`Magento\Framework\DB\Logger\Quiet`][quiet]
+- にログを記録 `var/log` ディレクトリ： [`Magento\Framework\DB\Logger\File`][file]
 
 >[!TIP]
 >
->Commerce CLI を使用して、 [データベース・ログの有効化と無効化](../cli/enable-logging.md#database-logging).
+>Commerce CLI を使用して、次のことができます [データベース ログを有効または無効にする](../cli/enable-logging.md#database-logging).
 
-のデフォルト設定を変更するには `\Magento\Framework\DB\Logger\LoggerProxy`を編集し、 `app/etc/di.xml`.
+のデフォルト設定を変更するには `\Magento\Framework\DB\Logger\LoggerProxy`、を編集 `app/etc/di.xml`.
 
-まず、 `loggerAlias` および `logCallStack` 引数の宛先：
+まず、のデフォルト値を変更します。 `loggerAlias` および `logCallStack` 引数：
 
 ```xml
 <type name="Magento\Framework\DB\Logger\LoggerProxy">
@@ -36,7 +36,7 @@ ht-degree: 0%
 </type>
 ```
 
-その後、 `Magento\Framework\DB\Logger\File`:
+その後、のファイルパスを指定します `Magento\Framework\DB\Logger\File`:
 
 ```xml
 <type name="Magento\Framework\DB\Logger\File">
@@ -46,13 +46,13 @@ ht-degree: 0%
 </type>
 ```
 
-最後に、次を使用してコードをコンパイルします。
+最後に、以下を使用してコードをコンパイルします。
 
 ```bash
 bin/magento setup:di:compile
 ```
 
-次の情報を使用してキャッシュをクリーンアップします。
+次のようにキャッシュをクリーンアップします。
 
 ```bash
 bin/magento cache:clean

@@ -1,17 +1,17 @@
 ---
 title: セキュリティパッチリリースノート
-description: Adobe Commerceのセキュリティパッチのリリースノートを確認します。
-source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
+description: Adobe Commerce セキュリティパッチのリリースノートを確認してください。
+exl-id: a3d78211-41ff-4df2-ad29-21465c096027
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
 source-wordcount: '33'
 ht-degree: 0%
 
 ---
 
-
 # セキュリティパッチリリースノート
 
-Adobe Commerce製品およびMagento Open Sourceコードベースの最新のセキュリティ改善について説明します。
+Adobe CommerceMagento Open Sourceおよび製品コードベースの最新のセキュリティ機能強化について説明します。
 
 {{other-release-info}}
 

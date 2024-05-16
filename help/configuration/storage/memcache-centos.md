@@ -5,33 +5,33 @@ feature: Configuration, Cache, Storage
 exl-id: fc4ad18b-7e99-496e-aebc-1d7640d8716c
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
 
 # CentOS での memcached の設定
 
-この節では、CentOS で memcached をインストールする手順を説明します。 詳しくは、 [memcached wiki](https://github.com/memcached/old-wiki).
+この節では、CentOS に memcached をインストールする手順を示します。 詳しくは、を参照してください [memcached wiki](https://github.com/memcached/old-wiki).
 
 >[!INFO]
 >
->Adobeは、最新の安定した memcached バージョン（現在は memcached の場合は 3.1.3）を使用することをお勧めします。
+>Adobeでは、最新の安定した memcached バージョン（memcached の場合は現在 3.1.3）を使用することをお勧めします。
 
-PHP は memcache をネイティブでサポートしていないので、PHP で使用するには拡張をインストールする必要があります。 PHP には 2 つの拡張機能があり、どの拡張機能を使用するかをデコードすることが重要です。
+PHP は memcache をネイティブでサポートしていないので、それを使用するには PHP 用の拡張モジュールをインストールする必要があります。 PHP には 2 つの拡張モジュールがあり、どちらを使用するかをデコードすることが重要です。
 
-- `memcache` (_いいえ d_) — 定期的に維持されない、古いが一般的な拡張機能。
-The `memcache` 現在、拡張機能 _次の値と等しくない_ は PHP 7 で動作します。 詳しくは、 [memcache に関する PHP ドキュメント](https://www.php.net/manual/en/book.memcache.php).
+- `memcache` （_いいえ d_） – 定期的にメンテナンスされていない、古いが一般的な拡張機能。
+この `memcache` 現在の拡張機能 _次を含まない_ php 7 で動作します。 参照： [memcache に関する PHP ドキュメント](https://www.php.net/manual/en/book.memcache.php).
 
-  正確な名前は `php-pecl-memcache` （CentOS 用）
+  正確な名前は、 `php-pecl-memcache` CentOS の場合。
 
-- `memcached` (_と`d`_)—PHP 7 と互換性のある、より新しく、維持された拡張。 詳しくは、 [memcached に関する PHP ドキュメント](https://www.php.net/manual/en/book.memcached.php).
+- `memcached` （_（を使用）`d`_） – PHP 7 と互換性のある、新しくメンテナンスされた拡張モジュールです。 参照： [memcached の PHP ドキュメント](https://www.php.net/manual/en/book.memcached.php).
 
-  正確な名前は `php-pecl-memcached` （CentOS 用）
+  正確な名前は、 `php-pecl-memcached` CentOS の場合。
 
-## CentOS で memcached をインストールして設定します。
+## CentOS での memcached のインストールと設定
 
-CentOS に memcached をインストールするには、以下のタスクを `root` 権限：
+CentOS 上で memcached をインストールするには、次のタスクをユーザーとして実行します。 `root` 権限：
 
 1. memcached とその依存関係をインストールします。
 
@@ -53,21 +53,21 @@ CentOS に memcached をインストールするには、以下のタスクを `
 
    >[!INFO]
    >
-   >前述のコマンドの構文は、使用するパッケージリポジトリによって異なる場合があります。 例えば、webtatic と PHP 5.6 を使用する場合、 `yum install -y php56w-pecl-memcache`. 用途 `yum search memcache|grep php` をクリックして、適切なパッケージ名を検索します。
+   >上記のコマンドの構文は、使用するパッケージリポジトリによって異なる場合があります。 例えば、webtatic と PHP 5.6 を使用する場合、 `yum install -y php56w-pecl-memcache`. 使用方法 `yum search memcache|grep php` をクリックして、適切なパッケージ名を検索します。
 
 
-1. 次の memcached 構成設定を変更します。 `CACHESIZE` および `OPTIONS`:
+1. の memcached 設定の変更 `CACHESIZE` および `OPTIONS`:
 
-   1. 開く `/etc/sysconfig/memcached` をクリックします。
-   1. 次の値を探します。 `CACHESIZE` を 1 GB 以上に変更します。 例：
+   1. 開く `/etc/sysconfig/memcached` テキストエディター。
+   1. の値を見つけます。 `CACHESIZE` そして、それを少なくとも 1 GB に変更します。 例：
 
       ```config
       CACHESIZE="1GB"
       ```
 
-   1. 次の値を探します。 `OPTIONS` を変更します。 `localhost` または `127.0.0.1`
+   1. の値を見つけます。 `OPTIONS` に変更します。 `localhost` または `127.0.0.1`
 
-1. 変更をに保存します。 `memcached` をクリックし、テキストエディタを終了します。
+1. 変更をに保存します。 `memcached` をクリックして、テキストエディターを終了します。
 1. memcached を再起動します。
 
    ```bash
@@ -76,7 +76,7 @@ CentOS に memcached をインストールするには、以下のタスクを `
 
 1. Web サーバーを再起動します。
 
-   Apache の場合：
+   Apache の場合
 
    ```bash
    service httpd restart
@@ -84,15 +84,15 @@ CentOS に memcached をインストールするには、以下のタスクを `
 
 1. 次の節に進みます。
 
-## コマースをインストールする前に memcached の動作を確認します
+## Commerceをインストールする前に、memcached が機能することを確認
 
-Adobeでは、Commerce をインストールする前に、memcached が機能することを確認することをお勧めします。 これをおこなうのに数分かかり、後で簡単にトラブルシューティングできます。
+Adobeでは、Commerceをインストールする前に、memcached をテストして機能することを確認することをお勧めします。 この操作には数分しかかかりません。また、後でトラブルシューティングを簡略化することもできます。
 
-### Web サーバーが memcached を認識したことを確認します。
+### memcached が Web サーバで認識されることを確認します。
 
-Web サーバーが memcached を認識することを確認するには、次の手順を実行します。
+memcached が Web サーバで認識されることを確認するには、次の手順に従います。
 
-1. の作成 `phpinfo.php` ファイルを web サーバーの docroot に配置します。
+1. を作成 `phpinfo.php` web サーバーの docroot にあるファイル：
 
    ```php
    <?php
@@ -106,15 +106,15 @@ Web サーバーが memcached を認識することを確認するには、次�
 
 1. memcache が次のように表示されていることを確認します。
 
-![Web サーバーが memcache を認識したことを確認](../../assets/configuration/memcache.png)
+![Web サーバーが memcache を認識していることを確認](../../assets/configuration/memcache.png)
 
 memcached バージョン 3.0.5 以降を使用していることを確認します。
 
-memcache が表示されない場合は、Web サーバーを再起動し、ブラウザページを更新します。 それでも表示されない場合は、 `php-pecl-memcache` 拡張子。
+memcache が表示されない場合は、web サーバーを再起動してブラウザーページを更新します。 それでも表示されない場合は、をインストールしたことを確認します `php-pecl-memcache` 拡張機能。
 
-### MySQL データベースと PHP スクリプトから成る memcache テストを作成する
+### MySQL データベースと PHP スクリプトで構成される memcache テストを作成します。
 
-このテストでは、MySQL データベース、テーブル、およびデータを使用して、データベースデータを取得して memcache に保存できることを確認します。 PHP スクリプトは、最初にキャッシュを検索します。 結果が存在しない場合は、スクリプトはデータベースに対してクエリを実行します。 元のデータベースでクエリが処理された後、スクリプトは、 `set` コマンドを使用します。
+このテストでは、MySQL データベース、テーブル、およびデータを使用して、データベースデータを取得して memcache に保存できることを確認します。 PHP スクリプトはまずキャッシュを検索します。 結果が存在しない場合、スクリプトはデータベースにクエリを実行します。 クエリが元のデータベースで実行された後、スクリプトは次を使用して結果を memcache に保存します `set` コマンド。
 
 [このテストの詳細](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
 
@@ -124,7 +124,7 @@ MySQL データベースを作成します。
 mysql -u root -p
 ```
 
-次の場合： `mysql` プロンプトで、次のコマンドを入力します。
+時刻 `mysql` プロンプトで、次のコマンドを入力します。
 
 ```sql
 create database memcache_test;
@@ -135,7 +135,7 @@ insert into example values (1, "new_data");
 exit
 ```
 
-作成 `cache-test.php` web サーバーの docroot で以下の手順を実行します。
+作成 `cache-test.php` web サーバーの docroot で、次の操作を行います。
 
 ```php
 $meminstance = new Memcached();
@@ -163,7 +163,7 @@ print "got result from memcached\n";
 return 0;
 ```
 
-ここで、 `<memcached hostname or ip>` 次のいずれか `localhost`, `127.0.0.1`または memcache のホスト名または IP アドレス。 The `<memcached port>` はリスンポートで、デフォルトでは `11211`.
+ここで、 `<memcached hostname or ip>` 次のいずれか `localhost`, `127.0.0.1`、または memcache ホスト名もしくは IP アドレス。 この `<memcached port>` はリッスンポートです（デフォルトでは、 `11211`.
 
 コマンドラインからスクリプトを実行します。
 
@@ -175,11 +175,11 @@ cd <web server docroot>
 php cache-test.php
 ```
 
-最初の結果は次のようになります。 `got result from mysql`. つまり、キーは memcached には存在しなかったが、MySQL から取得されたということです。
+最初の結果は次のとおりです。 `got result from mysql`. つまり、キーは memcached には存在しませんが、MySQL から取得されたものです。
 
-2 つ目の結果は次のようになります。 `got result from memcached`：値が memcached に正常に保存されたことを確認します。
+2 つ目の結果は次のとおりです `got result from memcached`：値が memcached に正常に格納されていることを確認します。
 
-最後に、Telnet を使用して memcache キーを表示できます。
+最後に、Telnet を使用して memcache キーを確認できます。
 
 ```bash
 telnet localhost <memcache port>

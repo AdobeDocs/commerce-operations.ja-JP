@@ -32,6 +32,6 @@ CSP は管理者ではなくサーバーから設定されるので、ほとん�
 
 ## 報告書
 
-デフォルトでは、CSP はブラウザーコンソールにエラーを送信しますが、HTTP リクエストによってエラーログを収集するように設定できます。 さらに、CSP 違反の監視、収集、レポートに使用できるサードパーティのサービスがいくつか用意されています。 CSP 違反は、管理者またはから URI を追加することで、収集のためにエンドポイントにレポートできます `config.xml` カスタムモジュール用のファイル。  参照： [レポート URI の設定](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#report-uri-configuration) が含まれる _Commerce PHP 拡張機能開発者ガイド_.
+デフォルトでは、CSP はブラウザーコンソールにエラーを送信しますが、HTTP リクエストによってエラーログを収集するように設定できます。 さらに、CSP 違反の監視、収集、レポートに使用できるサードパーティのサービスがいくつか用意されています。 CSP 違反は、管理者またはから URI を追加することで、収集のためにエンドポイントにレポートできます `config.xml` カスタムモジュール用のファイル。  参照： [レポート URI の設定](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#report-uri-configuration) が含まれる _Commerce PHP Extensions 開発者ガイド_.
 
 [レポート URI](https://report-uri.io/) は、CSP 違反を監視し、結果をダッシュボードに表示するサービスです。 マーチャントと開発者の両方が、CSP 違反が発生した場合は常にサービスを使用してレポートを受け取ることができます。

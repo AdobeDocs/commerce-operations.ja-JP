@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->- クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、次を参照してください [Commerce バージョンのアップグレード](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) （クラウドガイド内）
+>- クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、次を参照してください [Commerceのバージョンのアップグレード](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) （クラウドガイド内）
 >- GitHub リポジトリのクローンを作成した場合は、この方法を使用してアップグレードしないでください。 参照： [Git ベースのインストールのアップグレード](../developer/git-installs.md).
 
 以下の手順は、Composer パッケージ マネージャを使用してアップグレードする方法を示しています。 Adobe Commerce 2.4.2 では、Composer 2 のサポートが導入されました。 &lt;2.4.1 からアップグレードする場合は、まず Composer 1 を使用して、Composer 2 と互換性のあるバージョン（2.4.2 など）にアップグレードする必要があります _次の前_ 2.4.2 以降のアップグレードの場合は、Composer 2 にアップグレードします。 また、を実行している必要があります [サポート対象バージョン](../../installation/system-requirements.md) （PHP の場合）

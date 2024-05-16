@@ -1,50 +1,50 @@
 ---
-title: Apache で複数の Web サイトを設定
-description: Apache で複数の Web サイトを設定するには、このチュートリアルに従います。
+title: Apache での複数の web サイトの設定
+description: このチュートリアルに従って、Apache で複数の web サイトを設定します。
 exl-id: 4c6890b3-f15a-46f2-a3e8-6f2a9b57a6ad
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
 
-# Apache で複数の Web サイトを設定
+# Apache での複数の web サイトの設定
 
-我々は、以下を想定する。
+以下を前提としています。
 
-必要に応じて、既存の `index.php` web サイトまたはストア表示のエントリポイントスクリプトを次のように追加します。
+必要に応じて、既存のを `index.php` web サイトまたはストアビューのエントリポイントスクリプトを作成し、それに次を追加します。
 
-- 開発マシン（ノート PC、仮想マシンなど）で作業している
+- 開発マシン（ラップトップ、仮想マシンなど）で作業している
 
-  ホスト環境で複数の Web サイトをデプロイする場合は、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーにお問い合わせください。
+  ホストされた環境に複数の web サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーにお問い合わせください。
 
-  クラウドインフラストラクチャ上にAdobe Commerceを設定するには、追加のタスクが必要です。 このトピックで説明したタスクを完了した後、 [複数の Web サイトまたはストアを設定する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) （内） _Commerce on Cloud Infrastructure ガイド_.
+  クラウドインフラストラクチャー上にAdobe Commerceをセットアップするには、追加のタスクが必要になります。 このトピックで説明するタスクを完了したら、次を参照してください [複数の web サイトまたはストアを設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) が含まれる _クラウドインフラストラクチャー上のCommerce ガイド_.
 
-- Web サイトごとに 1 つの仮想ホストを使用します。仮想ホストの設定ファイルは次のとおりです。 `/etc/httpd/httpd.conf`
+- Web サイトごとに 1 つのバーチャルホストを使用します。バーチャルホスト設定ファイルは、です。 `/etc/httpd/httpd.conf`
 
-  オペレーティングシステムごとに、Apache のバージョンが異なると、仮想ホストの設定も異なります。 詳しくは、 [Apache ドキュメント](https://httpd.apache.org/docs/2.4/vhosts) 仮想ホストの設定方法が不明な場合は、ネットワーク管理者。
+  異なるオペレーティングシステム上の異なるバージョンの Apache では、異なる方法で仮想ホストを設定します。 を参照してください [Apache ドキュメント](https://httpd.apache.org/docs/2.4/vhosts) または、仮想ホストのセットアップ方法がわからない場合はネットワーク管理者に問い合わせてください。
 
-- Commerce ソフトウェアは、 `/var/www/html/magento2`
-- デフォルト以外の 2 つの Web サイトがあります。
+- Commerce ソフトウェアのインストール先 `/var/www/html/magento2`
+- デフォルト以外に 2 つの web サイトがあります。
 
-   - `french.mysite.mg` Web サイトコード `french` およびビューコードをストア `fr`
-   - `german.mysite.mg` Web サイトコード `german` およびビューコードをストア `de`
+   - `french.mysite.mg` （web サイトコードを使用） `french` およびストア表示コード `fr`
+   - `german.mysite.mg` （web サイトコードを使用） `german` およびストア表示コード `de`
 
-## Apache を使用して複数の Web サイトを設定するためのロードマップ
+## Apache で複数の web サイトを設定するためのロードマップ
 
 複数のストアを設定するには、次のタスクを実行します。
 
-1. [Web サイト、ストア、ストアの表示を設定する](ms-admin.md) 」と入力します。
-1. 1 つ作成 [Apache 仮想ホスト](#step-2-create-apache-virtual-hosts) コマース Web サイトごと。
+1. [Web サイト、ストア、ストアビューの設定](ms-admin.md) admin.
+1. 1 つ作成 [Apache 仮想ホスト](#step-2-create-apache-virtual-hosts) Commerce web サイトあたり。
 
-## 手順 1:Web サイト、ストアを作成し、管理者にビューを保存する
+## 手順 1：管理での web サイト、ストア、ストアビューの作成
 
-詳しくは、 [複数の Web サイト、ストア、管理者での表示の設定](ms-admin.md).
+参照： [管理での複数の web サイト、ストア、ストア表示の設定](ms-admin.md).
 
 ## 手順 2:Apache 仮想ホストを作成する
 
-このセクションでは、 `MAGE_RUN_TYPE` および `MAGE_RUN_CODE` Apache サーバー変数の使用 `SetEnvIf` 仮想ホスト内。
+この節では、の値を設定する方法について説明します `MAGE_RUN_TYPE` および `MAGE_RUN_CODE` apache サーバー変数の使用 `SetEnvIf` 仮想ホストの場合。
 
 詳しくは、 `SetEnvIf`を参照してください。
 
@@ -53,11 +53,11 @@ ht-degree: 0%
 
 **Apache 仮想ホストを作成するには**:
 
-1. を使用して `root` 権限を設定し、仮想ホストの設定ファイルをテキストエディターで開きます。
+1. を使用した As a ユーザー `root` 「privileges」を選択し、仮想ホスト構成ファイルをテキスト・エディタで開きます。
 
-   例えば、を開きます。 `/etc/httpd/conf/httpd.conf`
+   例えば、次を開きます `/etc/httpd/conf/httpd.conf`
 
-1. 次で始まるセクションを見つけます。 `<VirtualHost *:80>`.
+1. で始まるセクションを見つけます `<VirtualHost *:80>`.
 1. 既存の仮想ホストの後に、次の仮想ホストを作成します。
 
    ```conf
@@ -81,7 +81,7 @@ ht-degree: 0%
    </VirtualHost>
    ```
 
-1. 変更をに保存します。 `httpd.conf` をクリックし、テキストエディタを終了します。
+1. 変更をに保存します。 `httpd.conf` をクリックして、テキストエディターを終了します。
 1. Apache を再起動します。
 
    - CentOS: `service httpd restart`
@@ -89,9 +89,9 @@ ht-degree: 0%
 
 ## サイトの検証
 
-ストアの URL に対して DNS が設定されていない限り、 `hosts` ファイル：
+ストアの URL に対して DNS を設定していない限り、のホストへの静的ルートを追加する必要があります `hosts` ファイル：
 
-1. オペレーティングシステムを見つける `hosts` ファイル。
+1. オペレーティングシステムの場所 `hosts` ファイル。
 1. 次の形式で静的ルートを追加します。
 
    ```conf
@@ -109,11 +109,11 @@ ht-degree: 0%
 
 >[!INFO]
 >
->- ホスト環境で複数の Web サイトをデプロイする場合は、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーにお問い合わせください。
->- クラウドインフラストラクチャ上にAdobe Commerceを設定するには、追加のタスクが必要です。詳しくは、 [複数のクラウド Web サイトまたはストアを設定する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) （内） _Commerce on Cloud Infrastructure ガイド_.
+>- ホストされた環境に複数の web サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーにお問い合わせください。
+>- クラウドインフラストラクチャにAdobe Commerceを設定するには、さらに作業が必要です。詳しくは、以下を参照してください [複数のクラウド web サイトまたはストアを設定する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) が含まれる _クラウドインフラストラクチャー上のCommerce ガイド_.
 
 ### トラブルシューティング
 
-- フランス語およびドイツ語のサイトが 404 秒を返すが、管理者が読み込まれる場合は、必ず [手順 6：ベース URL にストアコードを追加する](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
-- すべての URL が 404 秒を返す場合は、Web サーバーを再起動したことを確認してください。
+- フランス語およびドイツ語のサイトが 404 を返したが、管理者が読み込まれる場合は、完了していることを確認します [手順 6：ベース URL へのストアコードの追加](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- すべての URL が 404 を返す場合は、web サーバーを再起動していることを確認します。
 - 管理者が正しく機能しない場合は、仮想ホストを正しく設定していることを確認してください。

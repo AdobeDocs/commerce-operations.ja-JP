@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Recommendations]'
-description: 詳しくは、 [!UICONTROL Recommendations] 」タブをクリックします。 [!DNL Site-Wide Analysis Tool]を使用するタイミング、メリット、ベストプラクティスを説明します。
+description: について説明します [!UICONTROL Recommendations] タブ [!DNL Site-Wide Analysis Tool]使用するタイミング、メリットおよびベストプラクティスです。
 exl-id: 17ff57e2-5b51-4afb-b505-09e46f490509
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # [!DNL Recommendations]
 
-The [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Recommendations] ページには、サイトで検出された問題に対処するためのベストプラクティスに基づくレコメンデーションのリストが表示されます。 レコメンデーションは、優先順位 PO から P4 の順に並べ替えられます。ここで、PO は重要で、P4 は低くなります。 結果には、説明、推奨事項、サイトへの影響、根本原因、シナリオ/前提条件、期待される結果、使用するツールが含まれます。
+この [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Recommendations] ページには、サイトで検出された問題に対処するためのベストプラクティスに基づく推奨事項が一覧表示されます。 レコメンデーションは、PO が重要かつ P4 が低い P4 に対する優先度 PO で並べ替えられます。 結果には、説明、推奨事項、サイトへの影響、根本原因、シナリオ/前提条件、予想される結果、使用するツールが含まれます。
 
 ## 使用するタイミング
 
-以下を使用します。 [!UICONTROL Recommendations] ページを参照し、サイトの正常性を改善するためのレコメンデーションを実装します。
+の使用 [!UICONTROL Recommendations] ページで、サイトの正常性を改善するための推奨事項を表示および実装します。
 
-## メリット
+## 利点
 
 * サイトのパフォーマンスを向上させるためのベストプラクティスについて説明します。
 
@@ -25,4 +25,4 @@ The [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Recommendations] ページに
 
 ## ベストプラクティス
 
-The [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Recommendations] ページには、優先度が P0 ～ P4 のレコメンデーションが一覧表示されます。 P0 が重要、P1 が緊急、P2 が高、P3 が中、P4 が低。 このページを監視して、これらの推奨事項を確認し、サイトのパフォーマンスを最適に保つために、優先度に基づいて実装します。
+この [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Recommendations] ページには、優先度が P0 から P4 のレコメンデーションが一覧表示されます。 P0 は臨界、P1 は緊急性、P2 は高い、P3 は中程度、P4 は低い。 このページを監視して推奨事項を確認し、優先度に基づいて実装して、最適なサイトパフォーマンスを確保します。

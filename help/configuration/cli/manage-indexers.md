@@ -1,6 +1,6 @@
 ---
 title: インデクサーの管理
-description: コマースインデクサーの表示および管理方法の例を参照してください。
+description: Commerce インデクサーの表示および管理方法の例を参照してください。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
 source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
 workflow-type: tm+mt
@@ -117,7 +117,7 @@ Catalog Search index has been rebuilt successfully in <time>
 
 このコンテキストでは、 `dimension` は再インデックス化の範囲（例：） `website` または、特定の `customer_group`.
 
-インデックスの並列化は、スコープ指定されたインデクサーにのみ影響します。つまり、Commerce は、すべてのデータを 1 つのテーブルに保持するのではなく、インデクサーを範囲として使用して、データを複数のテーブルに分割します。
+インデックスの並列化は、スコープ指定されたインデクサーにのみ影響します。つまり、Commerceでは、すべてのデータを 1 つのテーブルに保持するのではなく、インデクサーをスコープとして使用して、データを複数のテーブルに分割します。
 
 次のインデックスを並列モードで実行できます。
 

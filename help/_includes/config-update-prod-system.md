@@ -5,11 +5,11 @@ source-wordcount: '85'
 ht-degree: 0%
 
 ---
-# 本番システムを更新
+# 実稼動システムを更新
 
 **実稼動システムを更新するには**:
 
-1. 本番システムに、ファイルシステムの所有者としてログインします。
+1. ファイルシステムの所有者として、実稼動システムにログインします。
 1. アプリケーションルートに変更し、メンテナンスモードを有効にします。
 
    ```bash
@@ -20,9 +20,9 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-   IP アドレスのホワイトリスト設定機能など、その他のオプションについては、 [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
+   IP アドレスの許可リストを設定する機能など、その他のオプションについては、を参照してください。 [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
 
-1. 次の設定を行って、実行中のキューワーカーを停止します。 `cron_run` から `false` in `app/etc/env.php` 次のように指定します。
+1. を設定して、実行中のキューワーカーを停止します。 `cron_run` 対象： `false` 。対象： `app/etc/env.php` 次のように設定します。
 
    ```php?start_inline=1
    'cron_consumers_runner' => [
@@ -42,13 +42,13 @@ ht-degree: 0%
    kill <PID>
    ```
 
-   ここで、 `PID` 強制終了するプロセス ID です。例：
+   ここで、 `PID` は、強制終了するプロセス ID です。例：
 
    ```bash
    kill 1234
    ```
 
-1. ソース管理からコードを抽出します。
+1. ソース管理からコードを取り込みます。
 
    ```bash
    git pull mconfig m2.2_deploy

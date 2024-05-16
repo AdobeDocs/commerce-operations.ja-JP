@@ -1,29 +1,29 @@
 ---
-title: 開発システムの設定
-description: コマースアプリケーションの開発システムを設定する方法を説明します。
+title: 開発システムのセットアップ
+description: Commerce アプリケーションの開発システムの設定方法について説明します。
 exl-id: 242e9a38-2eb2-4090-8f59-3fd588f7ad3a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
 
-# 開発システムの設定
+# 開発システムのセットアップ
 
-以下の条件を満たす場合、任意の数の開発システムを使用できます。
+任意の数の開発システムを用意できます。ただし、それらすべてに次の点が当てはまります。
 
-- すべて Commerce 2.2 以降を実行しています。
-- すべてのコマースコードは、ビルドおよび実稼動システムと同じリポジトリ内のソース管理下にあります
-- 各開発システムは、 [デフォルトモード](../bootstrap/application-modes.md#default-mode) または [開発者モード](../bootstrap/application-modes.md#developer-mode)
-- ファイル・システムの所有権と権限が設定されています。 [開発、ビルド、実稼動システムの前提条件](../deployment/technical-details.md).
-- 次のすべてを確認します。 _除外済み_ ソース管理から：
+- いずれもCommerce 2.2 以降を実行します
+- すべてのCommerce コードは、ビルドシステムおよび実稼動システムと同じリポジトリでソース管理下にあります
+- 各開発システムでは、次のいずれかを使用する必要があります [デフォルトモード](../bootstrap/application-modes.md#default-mode) または [開発者モード](../bootstrap/application-modes.md#developer-mode)
+- ファイル・システムの所有権と権限が設定されています（を参照）。 [開発、ビルド、実稼動システムの前提条件](../deployment/technical-details.md).
+- 次のすべてを確認します _除外済み_ ソース管理から：
 
    - `vendor` ディレクトリ（およびサブディレクトリ）
    - `generated` ディレクトリ（およびサブディレクトリ）
    - `pub/static` ディレクトリ（およびサブディレクトリ）
    - `app/etc/env.php` ファイル
 
-- 確認 `app/etc/config.php` 次に該当 _含む_ ソース管理下で
+- 確認する `app/etc/config.php` 等しい _included_ ソース管理で
 
-Git を使用する場合、 `.gitignore` ファイルは、前述のほとんどを提供します。 詳しくは、 [`.gitignore` 参照](../reference/config-reference-gitignore.md).
+Git を使用する場合、 `.gitignore` ファイルは、上記のほとんどを提供します。 を参照してください。 [`.gitignore` 参照](../reference/config-reference-gitignore.md).

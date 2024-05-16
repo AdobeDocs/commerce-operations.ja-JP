@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce
-description: Adobe Commerceの説明
+description: Adobe Commerceについて
 exl-id: 130bae23-8a22-4523-abe2-8dc97b3881d2
 source-git-commit: 1611a8cab95ec24a1420fac31958853e28033af6
 workflow-type: tm+mt
@@ -11,27 +11,27 @@ ht-degree: 0%
 
 # Adobe Commerceについて
 
-Adobe Commerceはオープンコマースイノベーションの主要なプラットフォームです。 Adobe Commerceは、毎年、1000 億ドルを超えるグロスグッド商品を取り扱っています。 Adobe Commerceは、お客様に独自の魅力的なショッピングエクスペリエンス、標準搭載の機能、無制限のカスタマイズ機能、柔軟なヘッドレスアーキテクチャ、シームレスなサードパーティ統合を提供します。
+Adobe Commerceは、オープンコマースのイノベーションをリードするプラットフォームです。 Adobe Commerceでは毎年 1,000 億ドルを超える商品が生産されています。 Adobe Commerceは、独自の魅力的なショッピングエクスペリエンス、標準搭載の機能、無制限のカスタマイズ機能、柔軟なヘッドレスアーキテクチャおよびシームレスなサードパーティ統合を作成する機能を顧客に提供します。
 
-次の 2 つのバージョンの [!DNL Commerce]:
+次の 2 つのバージョンがあります。 [!DNL Commerce]:
 
-_Magento Open Source_ は、以前は「Magento・コミュニティ」と呼ばれていた無料版です。 自社のサーバーまたはホスティングプロバイダーで、任意のプラットフォームをダウンロード、カスタマイズ、実行できます。
+_Magento Open Source_ は無料版で、以前はMagentoコミュニティと呼ばれていました。 プラットフォームをダウンロード、カスタマイズ、実行するには、独自のサーバーまたは選択したホスティングプロバイダーを使用します。
 
-多くの商人は、低コストでオープンなMagento Open Sourceのために、自然を使用しています。 開発者にとって、Magento Open SourceやAdobe Commerce上で開発しても、実際には問題にはなりません。 ただし、Adobe Commerceには、すぐに使用できる、より多くの組み込み機能があります。
+安価で開放的な性格のため、Magento Open Sourceを利用する業者が大半である。 デベロッパーにとっては、Magento Open SourceとAdobe Commerceのどちらをベースに開発するかは重要ではありません。 ただし、Adobe Commerceには、すぐに使用できるビルトイン機能が増えています。
 
-_Adobe Commerce_ は有料版です。旧称は EnterpriseMagentoです。 プレミアムバージョンでは、多くの追加機能があります。
+_Adobe Commerce_ は有料版で、以前はMagentoエンタープライズと呼ばれていました。 プレミアムバージョンなので、追加機能がたくさんあります。
 
-Adobe Commerceはオンプレミスでホストできます。 そのため、独自のサーバー上でローカルにホストして開発するか、ホスティングプロバイダーを選択することができます。 また、クラウドインフラストラクチャ上のAdobe Commerce(Adobeが提供するクラウドホストソリューション ) もあります。 「ソリューション」セクションでは、ホストソリューション（SaaS、オンプレミスなど）と PaaS ホスティングソリューションの違いをより深く調べます。
+Adobe Commerceはオンプレミスでホストできます。 したがって、お客様は独自のサーバーでローカルにホストおよび開発するか、ホスティングプロバイダーを選択できます。 または、Adobeのクラウド型ソリューションであるクラウドインフラストラクチャー上にAdobe Commerceがあります。 ソリューションの節では、ホスト型（SaaS、オンプレミス型など）ソリューションと PaaS ホスティングソリューションの違いについて詳しく説明します。
 
-Adobe Commerceは、次の追加機能を備えた完全な機能を備えた e コマースソリューションです。
+Adobe Commerceは、次の追加機能を備えたフル機能の e コマースソリューションです。
 
-- B2B 機能（引用、カスタムカタログなど）、および購入者の役割と権限の管理
-- ビジュアライゼーションとカスタム Report Builder を使用したAdobe Commerceレポートダッシュボード
-- Magentoチャット (powered by dotdigital)
+- 見積もり、カスタムカタログ、購入者の役割と権限の管理などの B2B 機能
+- ビジュアライゼーションとカスタムレポートビルダーを使用したAdobe Commerce レポートダッシュボード
+- Magentoチャット （dotdigital 提供）
 - 高度なマーケティングツール
-- [!DNL Product Recommendations] Adobe Senseiを活用
-- WYSIWYG Page Builder
-- 顧客セグメント
-- 簡単にクーポンを引き換えるなど、顧客のロイヤルティツール
+- [!DNL Product Recommendations] powered by Adobe Sensei
+- WYSIWYG ページビルダー
+- 顧客のセグメント化
+- 引き換えが容易なクーポンなどの顧客ロイヤルティツール
 - ホスティング用のコンテンツのステージングとプレビュー
-- Visual Merchandising
+- ビジュアルマーチャンダイジング

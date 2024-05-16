@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Information]'
-description: 詳しくは、 [!UICONTROL Information] 」タブをクリックします。 [!DNL Site-Wide Analysis Tool]を使用するタイミング、メリット、ベストプラクティスを説明します。
+description: について説明します [!UICONTROL Information] タブ [!DNL Site-Wide Analysis Tool]使用するタイミング、メリットおよびベストプラクティスです。
 exl-id: 5f18b4c1-1812-4e9d-8b81-88cf6b9af860
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -11,22 +11,22 @@ ht-degree: 0%
 
 # [!DNL Information]
 
-The [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information] ページには、サイトに関する概要情報が表示されます。 このページでは、左側のナビゲーションに 2 つの製品領域がさらに表示されます。 **[!UICONTROL General Information]** および **Adobe Commerce**.
+この [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information] ページには、サイトに関する概要情報が表示されます。 このページでは、左側のナビゲーションに 2 つの製品エリアがさらに表示されます。 **[!UICONTROL General Information]** および **Adobe Commerce**.
 
-The [!UICONTROL General Information] 領域には、商業サイトの基本データ、取引先責任者の所有者が表示されます。 [!DNL Jira] 問題（内部使用のみ）およびレポートチケットの節を参照してください。
+この [!UICONTROL General Information] エリアには、マーチャントサイトのベースデータ、所有者へのお問い合わせ、 [!DNL Jira] イシュー（内部使用のみ）、レポートチケットの節。
 
-Adobe Commerce領域が表示されます [!UICONTROL Site Details], [!UICONTROL Products], [!UICONTROL Project] &amp; [!UICONTROL Integration links], [!UICONTROL Account]、および [!UICONTROL Service and Components] セクション。
+Adobe Commerce エリアが表示されます [!UICONTROL Site Details], [!UICONTROL Products], [!UICONTROL Project] &amp; [!UICONTROL Integration links], [!UICONTROL Account]、および [!UICONTROL Service and Components] セクション。
 
 ## 使用するタイミング
 
-以下を使用します。 [!UICONTROL Information] 上記のすべての詳細を一目で確認するページ。
+の使用 [!UICONTROL Information] 上記の詳細をすべて一目で確認するページ。
 
-## メリット
+## 利点
 
-* アカウントにすばやく簡単にアクセスし、情報を保存します。
+* アカウントおよびストア情報への迅速かつ容易なアクセス。
 
-* ストアの詳細、設定、サービス、およびコンポーネントのバージョンを 1 か所で検索および確認します。
+* ストアの詳細、設定、サービス、コンポーネントのバージョンをすべて 1 か所で検索および確認します。
 
 ## ベストプラクティス
 
-以降 [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information] ページには、サイトの概要情報が表示されます。ストアやアカウントの計画、メンテナンス、サポートに関する情報にすばやくアクセスするには、このページを覚えておいてください。
+以降 [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information] ページ リスト サイトの概要情報です。このページを覚えておくと、ストアやアカウントの計画、メンテナンス、サポートのために情報にすばやくアクセスできます。

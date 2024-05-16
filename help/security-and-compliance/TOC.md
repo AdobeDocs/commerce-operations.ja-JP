@@ -1,10 +1,10 @@
 ---
 user-guide-title: セキュリティとコンプライアンス
-user-guide-description: 安全なAdobe Commerceプロジェクトを維持するための規制への準拠と取引先責任について説明します。
+user-guide-description: 安全なAdobe Commerce プロジェクトを維持するためのコンプライアンスとマーチャントの責任について説明します。
 feature: Security
 source-git-commit: 28b94fe2fd4f976ad48fa9c59e7e1559db8ba35e
 workflow-type: tm+mt
-source-wordcount: '58'
+source-wordcount: '53'
 ht-degree: 1%
 
 ---

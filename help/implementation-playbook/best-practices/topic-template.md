@@ -1,13 +1,13 @@
 ---
 title: ベストプラクティストピックのタイトル
-description: 方法を学ぶ…
+description: 詳細については、こちらを参照してください。
 role: Developer
 feature: Best Practices
 hide: true
 hidefromtoc: true
 source-git-commit: 4360a3436f013c1b2a8b95a876d2037a6987acac
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '92'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 <!--Template instruction:  Add one or two sentences to summarize the overall contents of this best practice topic-->
 
-## 影響を受ける製品およびバージョン
+## 影響を受ける製品とバージョン
 
 <!-- Template comment: When we have the ability to tag content by versions, we might be able to remove this explicit header in favor of using tags for versions and editions.-->
 
@@ -34,24 +34,24 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 <!-- Example 1: -->
 
-[サポートされているすべてのバージョン](../../../release/versions.md) /:
+[サポートされているすべてのバージョン](../../../release/versions.md) （件中）:
 
-- Adobe Commerce an cloud infrastructure
+- クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerceオンプレミス
 
 <!-- Example 2: -->
 
-Adobe Commerceバージョン 2.3.4 以前および MariaDB バージョン 10.0 以前を含む、クラウドインフラストラクチャ上のAdobe Commerce。
+Adobe Commerce バージョン 2.3.4 以前および MariaDB バージョン 10.0 以前のクラウドインフラストラクチャー上のAdobe Commerce
 
-&lt;! — ビジネスタイプ： B2C と B2B — 必要に応じて指定/)—>
-
-## ヘッダー…
-
-読みやすくするために、コンテンツをセクションにチャンク化します。 コンテンツには、例を含むコールトゥアクション（良いも悪いもの）と、該当する場合はドキュメントへのリンクを含める必要があります。
+&lt;! – ビジネスタイプ：B2C と B2B – 必要に応じてのみ指定/） – >
 
 ## ヘッダー…
 
-必要な数のセクションのみを使用
+読みやすくするために、コンテンツをセクションに分割します。 コンテンツには、例（良い場合と悪い場合）を使用したコールトゥアクションや、該当する場合はドキュメントへのリンクを含める必要があります
+
+## ヘッダー…
+
+必要なセクションだけを使用する
 
 ## 追加情報
 

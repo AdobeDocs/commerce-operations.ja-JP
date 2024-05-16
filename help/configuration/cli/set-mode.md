@@ -1,10 +1,10 @@
 ---
 title: 操作モードの設定
-description: Adobe Commerce操作モードの設定について説明します。
+description: Adobe Commerceのオペレーションモードの設定について説明します。
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -13,17 +13,17 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-セキュリティと使いやすさを向上させるために、スイッチを切り替えるコマンドを追加しました。 [アプリケーションモード](../bootstrap/application-modes.md) 開発者から実稼動へ、または開発者から実稼動へ。
+セキュリティと使いやすさを向上させるために、切り替えるコマンドを追加しました [アプリケーションモード](../bootstrap/application-modes.md) 開発者から実稼動環境へ、またはその逆も同様です。
 
-静的ビューファイルが `pub/static` ディレクトリとコードコンパイルの問題を修正しました。
+静的ビューファイルが以下に入力されるので、実稼動モードのパフォーマンスが向上します。 `pub/static` ディレクトリと（コードのコンパイルにより）。
 
 >[!INFO]
 >
->バージョン 2.0.6 以降では、デフォルト、開発、実稼動の各モードを切り替える際に、Commerce はファイルまたはディレクトリの権限を明示的に設定しません。 他のモードとは異なり、開発者モードと実稼動モードは `env.php` ファイル。 Adobe Commerce on cloud infrastructure は、実稼働とメンテナンスのモードのみをサポートしています。
+>バージョン 2.0.6 以降では、デフォルト、開発、実稼動の各モードに切り替えても、Commerceはファイルまたはディレクトリの権限を明示的に設定しません。 他のモードとは異なり、開発者モードと実稼動モードは `env.php` ファイル。 クラウドインフラストラクチャー上のAdobe Commerceでは、実稼動モードとメンテナンスモードのみをサポートしています。
 >
->詳しくは、 [開発および実稼動環境でのコマースの所有権と権限](../deployment/file-system-permissions.md).
+>参照： [Commerceの所有権と開発および実稼働環境での権限](../deployment/file-system-permissions.md).
 
-開発者モードまたは実稼動モードに変更すると、次のディレクトリの内容が消去されます。
+開発者モードまたは実稼動モードに変更する場合は、次のディレクトリの内容を消去します。
 
 ```terminal
 var/cache
@@ -36,17 +36,17 @@ pub/static
 例外：
 
 - `.htaccess` ファイルは削除されません
-- `pub/static` には、静的コンテンツのバージョンを指定するファイルが含まれています。このファイルは削除されません
+- `pub/static` 静的コンテンツのバージョンを指定するファイルが含まれます。このファイルは削除されません
 
 >[!INFO]
 >
->Commerce では、デフォルトで、 `var` キャッシュ、ログ、コンパイル済みコードを格納するディレクトリ。 このディレクトリはカスタマイズできますが、このガイドでは、 `var`.
+>デフォルトでは、Commerceはを使用します `var` キャッシュ、ログおよびコンパイル済みコードを格納するディレクトリ。 このディレクトリはカスタマイズできますが、このガイドでは、次のように想定しています `var`.
 
 ## 現在のモードを表示
 
-これを行う最も簡単な方法は、このコマンドを [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md). ホスティングを共有している場合は、プロバイダーがサーバーにログインするために提供するユーザーです。 プライベートサーバーがある場合、通常は Commerce サーバー上のローカルユーザーアカウントです。
+これを行う最も簡単な方法は、このコマンドを [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md). ホスティングを共有している場合、これはプロバイダーからサーバーにログインするためのユーザーです。 プライベートサーバーがある場合、通常はCommerce サーバーのローカルユーザーアカウントになります。
 
-コマンドの使用：
+コマンドの使用法：
 
 ```bash
 bin/magento deploy:mode:show
@@ -58,25 +58,25 @@ bin/magento deploy:mode:show
 Current application mode: {mode}. (Note: Environment variables may override this value.)
 ```
 
-場所：
+ここで、
 
-- **`{mode}`** 次のいずれかを指定できます。 `default`, `developer`または `production`
+- **`{mode}`** 次のいずれかになります `default`, `developer`、または `production`
 
 ## モードの変更
 
-コマンドの使用：
+コマンドの使用法：
 
 ```bash
 bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 ```
 
-場所：
+ここで、
 
-- **`{mode}`** が必須です。 `developer` または `production`
+- **`{mode}`** は必須で、次のいずれかを指定できます `developer` または `production`
 
-- **`--skip-compilation`** は、スキップに使用できるオプションのパラメータです。 [コードのコンパイル](../cli/code-compiler.md) 実稼動モードに変更した場合。
+- **`--skip-compilation`** スキップに使用できるオプションのパラメーターです [コードコンパイル](../cli/code-compiler.md) 実稼動モードに変更した場合。
 
-以下に例を示します。
+次に例を示します。
 
 ### 実稼動モードに変更
 
@@ -127,9 +127,9 @@ Enabled production mode.
 
 ### 開発者モードに変更
 
-実稼動モードから開発モードに変更する場合、予期しないエラーを防ぐために、生成されたクラスとプロキシなどの Object Manager エンティティをクリアする必要があります。 その後、モードを変更できます。 次の手順に従います。
+実稼動モードから開発者モードに変更する場合は、予期しないエラーを防ぐために、生成されたクラスおよびプロキシなどのオブジェクトマネージャーエンティティをクリアする必要があります。 その後、モードを変更できます。 次の手順を使用します。
 
-1. 実稼動モードから開発モードに変更する場合は、 `generated/code` および `generated/metadata` ディレクトリ：
+1. 実稼動モードから開発者モードに変更する場合は、の内容を削除します `generated/code` および `generated/metadata` ディレクトリ：
 
    ```bash
    rm -rf <magento_root>/generated/metadata/* <magento_root>/generated/code/*
@@ -159,8 +159,8 @@ bin/magento deploy:mode:set default
 Enabled default mode.
 ```
 
-### CLI コマンドをどこからでも実行
+### どこからでも CLI コマンドを実行
 
-[CLI コマンドをどこからでも実行](../cli/config-cli.md#config-install-cli-first).
+[どこからでも CLI コマンドを実行](../cli/config-cli.md#config-install-cli-first).
 
-まだを追加していない場合、 `<Commerce-install-directory>/bin` システムに `PATH`を指定しない場合は、単独でコマンドを実行する際にエラーが発生する可能性があります。
+を追加していない場合 `<Commerce-install-directory>/bin` お使いのシステム `PATH`を選択した場合は、コマンド自体を実行したときにエラーが発生することがあります。
