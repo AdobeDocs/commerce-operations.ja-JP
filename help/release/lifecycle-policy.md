@@ -2,9 +2,9 @@
 title: ソフトウェアのライフサイクルポリシー
 description: Adobe Commerce リリースのソフトウェアサポート終了の主な日付について説明します。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 01e926e3cf36f27f5292a0b9ce7a6209d4960cc2
+source-git-commit: 7df5edf2acba706fb01f58cc3749c4a2bf136fc5
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '426'
 ht-degree: 5%
 
 ---
@@ -22,22 +22,25 @@ Adobe Commerce 2.4.4 以降のリリースの場合：
 
 - Adobeでは、お客様がAdobe Commerceに対して 3 年間のサポートを受けている間に提供が終了する可能性のある、サードパーティのサービスやソフトウェアの依存関係（PHP や MySQL など）に対するセキュリティおよび品質の修正を提供していません。 を参照してください。 [必要システム構成](../installation/system-requirements.md) テスト済みおよびサポート済みのサードパーティテクノロジーの完全なリストについては、を参照してください。
 
+- Adobeは、サードパーティのサービスおよびソフトウェアの依存関係との互換性を提供しますが、お客様のAdobe Commerceのサポート期間は、セキュリティのみを対象とするパッチリリースの 3 年間です。ただし、後方互換性のない変更を加えることなくサポートできる場合に限ります。
+
 ## ソフトウェアサポートの終了
 
-| リリース | 一般公開 | ソフトウェアサポートの終了<sup>1</sup> | 依存する PHP バージョン |
-|----------------------|----------------------|-------------------------------------|-----------------------|
-| Adobe Commerce 2.4.7 | 2024 年 4 月 9 日（Pt） | 2027 年 4 月 9 日（Pt） | 8.2 および 8.3 |
-| Adobe Commerce 2.4.6 | 2023 年 3 月 14 日（Pt） | 2026 年 3 月 14 日（Pt） | 8.1 および 8.2 |
-| Adobe Commerce 2.4.5 | 2022 年 8 月 9 日（Pt） | 2025 年 8 月 9 日（Pt） | 8.1 |
-| Adobe Commerce 2.4.4 | 2022 年 4 月 12 日（Pt） | 2025 年 4 月 24 日（Pt） | 8.1 |
+| リリース | 一般公開 | ソフトウェアサポートの終了<sup>1</sup> | 依存する PHP バージョン | 依存する MariaDB バージョン |
+|----------------------|----------------------|-------------------------------------|-----------------------|------------------------------|
+| Adobe Commerce 2.4.7 | 2024 年 4 月 9 日（Pt） | 2027 年 4 月 9 日（Pt） | 8.2 および 8.3 | 10.6 |
+| Adobe Commerce 2.4.6 | 2023 年 3 月 14 日（Pt） | 2026 年 3 月 14 日（Pt） | 8.1 および 8.2 | 10.6 |
+| Adobe Commerce 2.4.5 | 2022 年 8 月 9 日（Pt） | 2025 年 8 月 9 日（Pt） | 8.1 | 10.5<sup>2</sup> |
+| Adobe Commerce 2.4.4 | 2022 年 4 月 12 日（Pt） | 2025 年 4 月 24 日（Pt） | 8.1 | 10.5<sup>3</sup> |
 
 {style="table-layout:auto"}
 
-<sup>1 ソフトウェアサポートの終了には、品質修正の終了とセキュリティ修正の終了の両方が含まれます。</sup><br>
-
 >[!NOTE]
 >
->参照： [ソフトウェアのライフサイクル ポリシー](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+>- <sup>1</sup> ソフトウェアのサポート終了には、品質修正の終了とセキュリティ修正の終了の両方が含まれます。
+>- <sup>2</sup> 2.4.5-p8 セキュリティパッチ以降。
+>- <sup>3</sup> 2.4.4-p9 セキュリティパッチ以降。
+>- 参照： [ソフトウェアのライフサイクル ポリシー](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
 <thead>
