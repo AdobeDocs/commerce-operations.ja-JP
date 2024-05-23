@@ -1,12 +1,12 @@
 ---
 title: 実装プレイブック
-description: Commerce実装プレイブックの目的
+description: Commerce 実装プレイブックの目的
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
 feature: Best Practices, Cloud, Integration
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '493'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

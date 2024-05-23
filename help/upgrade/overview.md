@@ -1,11 +1,11 @@
 ---
 title: アップグレードプロセスの概要
-description: Adobe Commerce プロジェクトをアップグレードしてストアフロントの安全を維持し、効率的に運用する方法について説明します。
+description: Adobe Commerce プロジェクトをアップグレードして、ストアフロントの安全を維持し、効率的に運用する方法について説明します。
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

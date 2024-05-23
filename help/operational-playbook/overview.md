@@ -1,11 +1,11 @@
 ---
 title: オペレーショナルプレイブック
-description: Commerce運用プレイブックの目的
+description: Commerce オペレーショナルプレイブックの目的
 exl-id: f072f6ca-3654-4bd2-a32e-000358bb67b3
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '422'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
