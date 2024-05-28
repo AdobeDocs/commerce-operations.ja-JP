@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 9527ce1983340c6438c33b1d07acf4b4b699ccc8
+source-git-commit: 7cdaeec902235898bb27914a1b39a551f26d26e2
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '179'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,6 @@ ht-degree: 3%
    - [リリースノート](quality-patches-tool/release-notes.md)
 - コマンドラインツールリファレンス {#cli-reference}
    - [Adobe Commerce（オンプレミス）](reference/commerce-on-premises.md)
-   - [Magento Open Source](reference/magento-open-source.md)
    - [互換性アップグレードツール](reference/uct.md)
 - Adobe Commerceの監視 {#observation-for-adobe-commerce}
    - [概要](observation-for-adobe-commerce/intro.md)
