@@ -1,13 +1,13 @@
 ---
-source-git-commit: 580a15c908fc8ac4ef5d62582dfdd87d75dde994
+source-git-commit: 7dd6322370b976d8edea51fd94099e6dc4c082b7
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '719'
 ht-degree: 3%
 
 ---
 # Adobe Commerce技術ドキュメント
 
-コミュニティやドキュメントチーム以外のAdobe従業員からの投稿を歓迎します。
+アドビのコミュニティはもとより、ドキュメントチーム外部のAdobe担当者からのコントリビューションもお待ちしています。
 
 ## Adobeオープンソース行動規範
 
@@ -15,82 +15,82 @@ ht-degree: 3%
 
 ## Adobeコンテンツへの投稿について
 
-詳しくは、 [Adobeドキュメント寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+を参照してください。 [Adobeドキュメント投稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 投稿方法は、投稿者と、投稿したい変更の種類に応じて異なります。
 
 ### 軽微な変更
 
-軽微な更新に貢献する場合は、記事にアクセスし、記事の下部に表示されるフィードバック領域をクリックして、 **詳細なフィードバックオプション**&#x200B;をクリックし、 **編集を提案** をクリックして、GitHub の markdown ソースファイルに移動します。 GitHub UI を使用して更新をおこないます。 一般 [Adobeドキュメント寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
+軽微な変更を行う場合は、記事にアクセスして、記事の下部に表示されるフィードバック領域をクリックし、 **詳細なフィードバックオプション**&#x200B;を選択し、 **編集の提案** をクリックして、GitHub の Markdown ソースファイルに移動します。 GitHub UI を使用して更新を行います。 一般を参照してください [Adobeドキュメント投稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
 
-このリポジトリのドキュメントおよびコード例について送信したマイナーな修正や説明は、Adobe利用条件の適用を受けます。
+このリポジトリのドキュメントおよびコード例について投稿者が送信した軽微な修正や説明は、Adobeの利用規約の対象となります。
 
-### コミュニティメンバーによる大きな変更または新しい記事
+### コミュニティメンバーによる大幅な変更または新しい記事
 
-Adobeコミュニティのメンバーが新しい記事を作成したり、大きな変更を投稿したりする場合は、Git リポジトリの「Issues」タブを使用して、ドキュメントチームとの会話を開始するための問題を送信してください。 計画に同意したら、公開および非公開リポジトリでの作業を組み合わせて新しいコンテンツを取り込むために、従業員と協力する必要があります。
+Adobeコミュニティのメンバーが新しい記事を作成したり、大きな変更をコントリビューションしたりする場合は、Git リポジトリーの「イシュー」タブを使用してイシューを送信し、ドキュメントチームとのやり取りを開始してください。 計画に同意したら、公開リポジトリと非公開リポジトリでの作業を組み合わせて新しいコンテンツを取り込むために、従業員と協力する必要があります。
 
 <!--
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
 -->
 
-### Adobe従業員からの大きな変更
+### Adobe社員からの大きな変化
 
-Adobe Experience Cloudソリューションの製品チーム、プログラムマネージャーまたは開発者で、技術記事の投稿や作成が職務となっている場合は、次のプライベートリポジトリを使用する必要があります。 `https://git.corp.adobe.com/AdobeDocs`.
+Adobe Experience Cloud ソリューションの製品チームのテクニカルライター、プログラムマネージャー、または開発者で技術記事の投稿または作成を担当している場合は、プライベートリポジトリ（）を使用する必要があります `https://git.corp.adobe.com/AdobeDocs`.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
-## ツールとセットアップ
+## ツールと設定
 
-コミュニティの投稿者は、GitHub UI を使用して基本的な編集をおこなったり、リポジトリをフォークして大きな貢献をすることができます。
+コミュニティのコントリビューターは、基本的な編集を行う場合は GitHub UI を使用し、大きな変更を加える場合はリポジトリをフォークします。
 
-詳しくは、 [Adobeドキュメント寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 」を参照してください。
+を参照してください。 [Adobeドキュメント投稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
 
-## Markdown を使用してトピックをフォーマットする方法
+## Markdown を使用してトピックを書式設定する方法
 
-このリポジトリ内の記事はすべて、GitHub 固有の Markdown を使用しています。 Markdown に詳しくない場合は、以下を参照してください。
+このリポジトリ内の記事はすべて、GitHub Flavored Markdown を使用しています。 Markdown について詳しくは、以下を参照してください。
 
 * [Markdown の基本](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [印刷可能な Markdown の早見表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Markdown の早見表（印刷用）](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## テンプレート
 
-一部のトピックでは、データファイルとテンプレートを使用して公開済みコンテンツを生成します。 このアプローチの使用例を次に示します。
+一部のトピックでは、データファイルとテンプレートを使用して、公開済みコンテンツを生成します。 このアプローチのユースケースを次に示します。
 
-* プログラムで生成された大量のコンテンツセットの公開
-* 統合のために YAML などの機械で読み取り可能なファイル形式が必要な複数のシステムをまたいだお客様に対して、単一の情報源を提供する（サイト全体分析ツールなど）
+* プログラムで生成された大きなコンテンツセットの公開
+* 統合のために、YAML などの機械読み取り可能なファイル形式を必要とする複数のシステム（Site-Wide Analysis Tool など）をまたいで、顧客に単一の情報源を提供する
 
-テンプレート化されたコンテンツの例を次に示しますが、これらに限定されません。
+テンプレート化されたコンテンツの例としては、次のようなものがあります（ただし、これに限定されません）。
 
 * [CLI ツールリファレンス](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-* [製品の可用性テーブル](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+* [製品可用性テーブル](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
 * [必要システム構成テーブル](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
 
-### テンプレートコンテンツを生成
+### テンプレートコンテンツの生成
 
-一般に、ほとんどのライターは、製品の可用性と必要システム構成の表にリリースバージョンを追加するだけで済みます。 その他すべてのテンプレートコンテンツのメンテナンスは、専属のチームメンバーが自動化または管理します。 これらの手順は、「ほとんど」のライターを対象としています。
+通常、ほとんどのライターは、製品可用性テーブルとシステム要件テーブルにリリースバージョンを追加するだけで済みます。 その他のテンプレート化されたコンテンツのメンテナンスは、すべて専任のチームメンバーが自動化または管理します。 これらの説明は、「ほとんどの」ライターを対象としています。
 
 >**注意：**
 >
->* テンプレートコンテンツを生成するには、ターミナルのコマンドラインで作業する必要があります。
->* レンダリングスクリプトを実行するには、Ruby がインストールされている必要があります。 詳しくは、 [_jekyll/.ruby-version](_jekyll/.ruby-version) 必要なバージョンの場合。
+>* テンプレート化されたコンテンツを生成するには、ターミナルのコマンドラインで作業する必要があります。
+>* レンダリングスクリプトを実行するには、Ruby がインストールされている必要があります。 参照： [_jekyll/.ruby-version](_jekyll/.ruby-version) （必要なバージョン用）。
 
-テンプレートコンテンツのファイル構造については、以下を参照してください。
+テンプレート化されたコンテンツのファイル構造について詳しくは、次を参照してください。
 
-* `_jekyll` — テンプレート化されたトピックと必要なアセットを含みます。
-* `_jekyll/_data` — テンプレートのレンダリングに使用する、マシンが読み取り可能なファイル形式を含みます。
-* `_jekyll/templated` — 液体HTML言語を使用するテンプレートファイルを含みます。
-* `help/_includes/templated` — テンプレートコンテンツの生成された出力を含みます。 `.md` Experience Leagueトピックにパブリッシュできるようにファイル形式を設定します。レンダリングスクリプトは生成された出力をこのディレクトリに自動的に書き込みます。
+* `_jekyll`- テンプレート化されたトピックと必要なアセットが含まれます。
+* `_jekyll/_data`- テンプレートのレンダリングに使用する、機械で読み取り可能なファイル形式が含まれます。
+* `_jekyll/templated` – 液体テンプレート言語を使用するHTMLベースのテンプレートファイルが含まれます
+* `help/_includes/templated` – でテンプレート化されたコンテンツ用に生成された出力が含まれます `.md` Experience League トピックでパブリッシュできるようにファイル フォーマットを設定します。レンダリング スクリプトは、生成された出力をこのフォルダに自動的に書き込みます
 
-テンプレートコンテンツを更新するには：
+テンプレート化されたコンテンツを更新するには：
 
-1. テキストエディターで、 `/jekyll/_data` ディレクトリ。 例：
+1. テキストエディターで、にあるデータファイルを開きます。 `/jekyll/_data` ディレクトリ。 例：
 
-   * [製品の可用性テーブル](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
+   * [製品可用性テーブル](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
    * [必要システム構成テーブル](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
 
 1. 既存の YAML 構造を使用してエントリを作成します。
 
-   例えば、Adobe Commerceのバージョンを製品の可用性テーブルに追加するには、 `extensions` および `services` セクション `/jekyll/_data/product-availability.yml` ファイル（必要に応じてバージョン番号を変更）:
+   例えば、Adobe Commerceのバージョンを製品可用性テーブルに追加するには、内の各エントリに次のコードを追加します `extensions` および `services` のセクション `/jekyll/_data/product-availability.yml` ファイル（必要に応じてバージョン番号を変更）:
 
    ```
    support:
@@ -98,21 +98,27 @@ Adobe Experience Cloudソリューションの製品チーム、プログラム�
         version: 4.5.6
    ```
 
-1. 次に移動： `_jekyll` ディレクトリ。
+1. に移動します。 `_jekyll` ディレクトリ。
 
    ```
    cd _jekyll
    ```
 
-1. テンプレートコンテンツを生成し、出力を `help/_includes/templated` ディレクトリ。
+1. テンプレート化されたコンテンツを生成し、出力をに書き込む `help/_includes/templated` ディレクトリ。
 
    ```
    rake render
    ```
 
-   >**注意：** スクリプトを `_jekyll` ディレクトリ。 スクリプトを初めて実行する場合は、Ruby の依存関係を最初に `bundle install` コマンドを使用します。
+   >**注意：** からスクリプトを実行する必要があります。 `_jekyll` ディレクトリ。 このスクリプトを初めて実行する場合は、まずで Ruby の依存関係をインストールする必要があります `bundle install` コマンド。
 
-1. 期待される `help/_includes/templated` ファイルが変更されました。
+1. に戻ります。 `root` ディレクトリ。
+
+   ```
+   cd ..
+   ```
+
+1. 期待されることを確認します。 `help/_includes/templated` ファイルが変更されました。
 
    ```
    git status
@@ -122,7 +128,15 @@ Adobe Experience Cloudソリューションの製品チーム、プログラム�
 
    ```
    modified:   _data/product-availability.yml
-   modified:   ../help/_includes/templated/product-availability-extensions.md
+   modified:   help/_includes/templated/product-availability-extensions.md
    ```
 
-詳しくは、ジキルのドキュメントを参照してください。 [データファイル](https://jekyllrb.com/docs/datafiles), [液体フィルター](https://jekyllrb.com/docs/liquid/filters/)、およびその他の機能。
+1. 変更をプッシュします。
+
+   ```
+   git add
+   git commit -m "_descriptive message of the intended commit_"
+   git push
+   ```
+
+について詳しくは、Jekyll のドキュメントを参照してください。 [データファイル](https://jekyllrb.com/docs/datafiles), [液体フィルター](https://jekyllrb.com/docs/liquid/filters/)、およびその他の機能。
