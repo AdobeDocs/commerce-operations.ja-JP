@@ -3,9 +3,9 @@ user-guide-title: リリース情報
 user-guide-description: Adobe Commerceのパッチとサービスに関するすべてのリリース情報に 1 か所でアクセスできます。
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: e1c5b5e5c1a8800aa5aa2657060f61c16743cbda
+source-git-commit: 5ad3f01421b7724d1bc81cadfe7ce4528d8ba969
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '104'
 ht-degree: 3%
 
 ---
@@ -53,6 +53,5 @@ ht-degree: 3%
 - [リリース済みバージョン](versions.md)
 - パッケージ {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
-   - [Adobe Commerceの B2B](packages/adobe-commerce-b2b.md)
    - [Magento Open Source](packages/magento-open-source.md)
 - [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
