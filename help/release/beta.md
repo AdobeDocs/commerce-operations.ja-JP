@@ -2,9 +2,9 @@
 title: ベータ版リリース
 description: Adobe Commerce ベータ版リリースとリリースへの参加方法について説明します。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 1dd4b44c6aa685795e16dccebfaf073dcc0062f2
+source-git-commit: d761bd089fbd2046e993d4652e9e0e2b3c4d2777
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -47,15 +47,6 @@ Adobe CommerceとAdobe Experience Platform間のデータ共有を拡張し、�
 - 複数のデータセットとデータストリームのサポート
 
 このベータ版に参加するには、次のアドレスにメールでリクエストを送信します： [DataConnection@adobe.com](mailto:DataConnection@adobe.com).
-
-### Backoffice 統合スターターキット（プライベートベータ版）
-
-バックオフィス [統合スターターキット](https://developer-stage.adobe.com/commerce/extensibility/app-development/starter-kit/) は、ERP、CRM、OMS などのシステムとのイベント駆動型統合を構築するためのアクセラレータを開発者に提供します。 スターターキットを使用すると、開発コストを最大 50% 削減できます。 このスターターキットは、メンテナンスコストを大幅に削減するAdobe Commerceのベストプラクティスにも従っています。 スターターキットのハイライトは次のとおりです。
-- 製品、注文、顧客、在庫、出荷など、一般的に使用されるオブジェクトのデータ同期
-- ベストプラクティスに従ったアーキテクチャブループリント
-- 開発を促進するオンボーディングスクリプト
-
-このベータ版に参加するには、を完了してください [登録フォーム](https://forms.office.com/r/YbYArqE3DT).
 
 ### Adobe Commerce Foundation （パブリックベータ版）
 
