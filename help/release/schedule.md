@@ -2,7 +2,7 @@
 title: リリーススケジュール
 description: アドビが Adobe Commerce の新機能リリースの発表を予定しているタイミングを学びます。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 1eac85dd1cf90f6cb064dc68a4622a6343c84b4d
+source-git-commit: e9ef167f5425407f6b1850f0dd913d5d3e2bd628
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 2%
@@ -33,7 +33,7 @@ Adobeリリース [パッチ](versioning-policy.md#patch-release) サポート�
    <tr>
       <td colspan="3"><strong>凡例</strong>
          <ul>
-           <li><strong><img alt="B2B 機能アイコン" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Adobe Commerceの B2B 拡張機能の新機能、機能強化およびバグ修正。 B2B 拡張機能のリリースについて詳しくは、[B2B リリースノート ] （https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html）を参照してください。</li>
+           <li><strong><img alt="B2B 機能アイコン" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Adobe Commerceの B2B 拡張機能の新機能、機能強化およびバグ修正。 B2B 拡張機能のリリースについて詳しくは、 <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B リリースノート</a>.</li>
             <li><strong><img alt="拡張機能アイコン" src="../assets/icons/brackets.svg"></img> 拡張性</strong>- パッチリリースとは別に提供される、プロセス外の拡張性を備えた新しい開発者ツールおよびサービス。 例えば、管理 UI SDK、CommerceのAdobe I/Oイベント、API メッシュなどです。</li>
             <li><strong><img alt="インフラストラクチャ機能アイコン" src="../assets/icons/servers.svg"></img> インフラストラクチャ</strong>- クラウドインフラストラクチャー上のAdobe Commerceおよびクラウドプラットフォーム上でのAdobe Commerceのインストールとアップグレードをデプロイおよび管理するように設計されたCommerce パッケージ用 Cloud Tools Suite の新機能と機能強化について説明します。</li>
             <li><strong><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> パッチ</strong> – セキュリティ、コンプライアンス、パフォーマンス、優先度の高い品質修正など、Adobe Commerceのコアアプリケーションを更新します。</li>
