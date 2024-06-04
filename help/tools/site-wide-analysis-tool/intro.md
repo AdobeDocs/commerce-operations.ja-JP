@@ -2,9 +2,9 @@
 title: '[!DNL Site-Wide Analysis Tool]'
 description: について説明します [!DNL Site-Wide Analysis] ツール、その使用方法、インストールプロセス、アクセス方法
 exl-id: 32774040-d322-43d6-9c26-c340a0ab58a9
-source-git-commit: 7b6413c4fdc26b73dda74bcf7cd3a3acdd587abc
+source-git-commit: 5f39a2d8440225b3a2e463894e2bd866196fbac2
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,10 @@ ht-degree: 0%
 
 - **情報**  – お客様の連絡先情報および現在のチケットの概要と、インストールされている各Adobe Commerce製品の詳細情報を提供します。
 
-- **Recommendations** - サイトで検出された問題に対処するためのベストプラクティスに基づいた推奨事項の一覧が表示されます。
+- **Recommendations** - サイトで検出された問題に対処するためのベストプラクティスに基づいた推奨事項のリストを示します。
+   - インフラストラクチャの更新を必要とする変更については、サポートリクエストを送信します。
+   - アプリケーションの更新が必要な変更については、自分で変更してください。
+   - 手動による介入が必要な変更（例：） [コードデプロイメント](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow)担当のシステム管理者または開発者にお問い合わせください。
 
 - **例外** - エラーハンドラーのない異常な状態が原因でアプリケーションによってスローされたエラーを一覧表示します。
 
