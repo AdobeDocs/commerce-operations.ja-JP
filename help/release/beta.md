@@ -2,9 +2,9 @@
 title: ベータ版リリース
 description: Adobe Commerce ベータ版リリースとリリースへの参加方法について説明します。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: d761bd089fbd2046e993d4652e9e0e2b3c4d2777
+source-git-commit: 0e2dfc376a049a47348a7a913bd5181436227cc2
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 Adobe Commerce ベータプログラムを使用すると、マーチャントは、プレリリース機能やコードにアクセスし、フィードバックを提供したり、Adobe Commerceの将来をガイドしたりできます。 ベータ版プログラムには次の 2 種類があります。
 
 - パブリックベータ版：パブリックベータ版プログラムは、すべてのAdobe Commerce顧客およびパートナーが利用できます
-- プライベートベータ版：プライベートベータ版プログラムに参加するには、選定基準に基づいて承認が必要になる場合があります
+- プライベートベータ版：プライベートベータ版プログラムは、参加するための適格基準に基づいて、承認が必要になる場合があります
 
 >[!IMPORTANT]
 >
@@ -27,6 +27,22 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様や
 ## 現在のベータ版プログラム
 
 アクティブなベータプログラムのリストについては、次の節を参照してください。
+
+### CommerceのExperience Manager Assets統合（プライベートベータ版）
+
+Experience Manager AssetsとCommerceの統合により、運用の手間をかけることなく、Experience Manager AssetsからAdobe Commerceに大量の商品画像を効率的に管理および配信できます。
+
+主な機能：
+
+- プラグアンドプレイの統合 – Experience Manager AssetsとAdobe Commerceの間でAdobeを活用した統合を標準で提供し、マーチャントが運用コストを削減して効率を向上させ、最も重要なことに集中できるようにします。
+
+- 大規模な商品画像のパーソナライズ Experience Manager Assetsを使用すると、UI ベースの簡単な編集ツール、Adobe Fireflyを使用したコンテンツの生成機能、アセットの割り当てワークフローによって、パーソナライズされたCommerce エクスペリエンス向けに数百万もの商品バリエーションを生成し、ブランドの一貫性を確保することができます。 適切なアセットが見つかったら、Experience Manager Assets統合を使用してCommerce ストアフロントにシームレスに配信します。
+
+- 簡単なオンボーディング – 設定可能な同期プロセスによって、Experience Manager Assets リポジトリとCommerce カタログ間の完全な同期を可能にし、マーチャントのオンボーディングを簡素化します。
+
+- 柔軟なマッチング戦略 – この統合には、AEM AssetsとCommerceの間で画像を同期させる製品 SKU に基づくデフォルトのアセットマッチングアルゴリズムが含まれており、Adobe Developer App Builder を使用して拡張できます。 ソリューションパートナーと協力して、統合の上にカスタムアセットマッチング戦略を構築し、アセット管理リポジトリ構造に対応します。
+
+ベータ版に参加するには、次のアドレスにメールでリクエストを送信します。 [ショーン・マクラン](mailto:mccran@adobe.com).
 
 ### IBM Sterling Order Management System Integration （プライベートベータ版）
 
