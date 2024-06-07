@@ -2,7 +2,7 @@
 title: アップグレードの推奨読み取り項目
 description: Adobe Commerce のアップグレードの計画時に推奨ドキュメントを確認してください。
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 9542084e6ed1a4ebbbb33373d9c7bc9b463b9d5d
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 4%
@@ -42,7 +42,7 @@ Adobe Commerceのアップグレードについて詳しくは、このページ
         <p>Adobe Commerceのリリースとポリシーに関する詳細を確認します。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Adobe Commerce ソフトウェアのサポート終了に関する FAQ</a></li>
-            <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Commerce Marketplace証券</a></li>
+            <li><a href="https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/requirements/">Commerce Marketplace証券</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html">新しいAdobe Commerce リリース戦略、更新されたライフサイクルポリシー、拡張サポートに関する FAQ</a></li>
             <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">ライフサイクルポリシー</a></li>
             <li><a href="../../release/schedule.md">リリーススケジュール</a></li>
