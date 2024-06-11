@@ -2,12 +2,13 @@
 title: Adobe Commerce 2.4.3 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.3 のセキュリティパッチリリースに含まれている、セキュリティバグ修正、セキュリティ機能強化、その他のセキュリティ関連アップデートについて説明します。
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
+
 
 # Adobe Commerce 2.4.3 セキュリティパッチのリリースノート
 
@@ -15,10 +16,9 @@ ht-degree: 0%
 
 ## Adobe Commerce 2.4.3-p3
 
-Adobe Commerce 2.4.3-p3 セキュリティリリースは、前のリリース（Adobe Commerce 2.4.3 およびMagento Open Source 2.4.3）で特定された脆弱性に対するセキュリティ修正を提供します。 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
+Adobe Commerce 2.4.3-p3 セキュリティリリースは、以前のリリースの 2.4.3 で特定された脆弱性に対するセキュリティ修正を提供します。このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
 セキュリティ バグ修正の最新情報については、を参照してください。 [Adobeセキュリティ速報 APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
-
 
 ### 適用 `AC-3022.patch` 引き続き DHL を配送業者として提供するため
 
@@ -39,7 +39,6 @@ Adobe Commerce 2.4.3-p2 セキュリティリリースは、以前のリリー�
 ### 適用 `AC-3022.patch` 引き続き DHL を配送業者として提供するため
 
 DHL ではスキーマバージョン 6.2 を導入しており、近い将来、スキーマバージョン 6.0 を廃止する予定です。 DHL 統合をサポートするAdobe Commerce 2.4.4 以前のバージョンは、バージョン 6.0 のみをサポートしています。これらのリリースをデプロイするマーチャントは、 `AC-3022.patch` 早期に DHL を配送業者として提供し続けることができます。 を参照してください。 [配送業者として DHL を引き続き提供するためのパッチを適用する](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) パッチのダウンロードとインストールについては、ナレッジベースの記事を参照してください。
-
 
 ### セキュリティのハイライト
 
@@ -65,7 +64,6 @@ Adobe Commerce 2.4.3-p1 セキュリティリリースでは、前のリリー�
 
 セキュリティ バグ修正の最新情報については、を参照してください。 [Adobeセキュリティ速報 APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html). パッチリリースでは、のバグ修正も提供されています [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html), [クラルナ](https://marketplace.magento.com/klarna-m2-klarna.html)、および [頂点](https://marketplace.magento.com/vertexinc-vertex-tax-module.html) ベンダー開発の拡張機能。
 
-
 ### 適用 `AC-3022.patch` 引き続き DHL を配送業者として提供するため
 
 DHL ではスキーマバージョン 6.2 を導入しており、近い将来、スキーマバージョン 6.0 を廃止する予定です。 DHL 統合をサポートするAdobe Commerce 2.4.4 以前のバージョンは、バージョン 6.0 のみをサポートしています。これらのリリースをデプロイするマーチャントは、 `AC-3022.patch` 早期に DHL を配送業者として提供し続けることができます。 を参照してください。 [配送業者として DHL を引き続き提供するためのパッチを適用する](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) パッチのダウンロードとインストールについては、ナレッジベースの記事を参照してください。
@@ -87,4 +85,3 @@ DHL ではスキーマバージョン 6.2 を導入しており、近い将来�
 **最近の侵入テストの脆弱性** このリリースでは修正されました。 <!-- MC-42431-->
 
 サポートされていないソース式 `unsafe-inline` はコンテンツセキュリティポリシーから削除されました `frame-ancestors` ディレクティブ。 [GitHub-33101](https://github.com/magento/magento2/issues/33101)<!-- MC-42632-->
-

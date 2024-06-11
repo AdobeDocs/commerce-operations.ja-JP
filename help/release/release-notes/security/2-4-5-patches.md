@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.5 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.5 のセキュリティパッチリリースに含まれている、セキュリティバグ修正、セキュリティ機能強化、その他のセキュリティ関連アップデートについて説明します。
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-source-git-commit: e1c5b5e5c1a8800aa5aa2657060f61c16743cbda
+source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,16 @@ ht-degree: 0%
 # Adobe Commerce 2.4.5 セキュリティパッチのリリースノート
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## Adobe Commerce 2.4.5-p8
+
+Adobe Commerce 2.4.5-p7 セキュリティリリースは、以前のリリースの 2.4.5 で特定された脆弱性に対するセキュリティバグ修正を提供します。
+
+セキュリティ バグ修正の最新情報については、を参照してください。 [Adobeセキュリティ速報 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
+### Platform のアップグレード
+
+* **MariaDB 10.5 のサポート**. このパッチリリースでは、MariaDB バージョン 10.5 との互換性が導入されています。Adobe Commerceは MariaDB バージョン 10.4 と引き続き互換性がありますが、MariaDB 10.4 のメンテナンスは 2024 年 6 月 18 日（PT）に終了するため、Adobeでは、Adobe Commerce 2.4.5-p8 および今後のすべての 2.4.5 のセキュリティ専用パッチリリースは MariaDB バージョン 10.5 でのみ使用することをお勧めします。 <!--AC-11530-->
 
 ## Adobe Commerce 2.4.5-p7
 
@@ -47,7 +57,7 @@ Adobe Commerce 2.4.5-p5 セキュリティリリースは、以前のリリー�
 
 ### セキュリティ ハイライト
 
-このリリースでは、に関連するリスクの軽減に役立つ、新しいフルページキャッシュ設定が導入されています `{BASE-URL}/page_cache/block/esi HTTP` エンドポイント。 このエンドポイントは、Commerce レイアウトハンドルおよびブロック構造から無制限で動的に読み込まれるコンテンツフラグメントをサポートします。 新しい **[!UICONTROL Handles Param]** 構成設定は、このエンドポイントの値を設定します `handles` パラメーター。API ごとに許可される最大ハンドル数を決定します。 このプロパティのデフォルト値は 100 です。 マーチャントは、この値を管理者（**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**）に設定します。 <!-- AC-9113 -->
+このリリースでは、に関連するリスクの軽減に役立つ、新しいフルページキャッシュ設定が導入されています `{BASE-URL}/page_cache/block/esi HTTP` エンドポイント。 このエンドポイントは、Commerceのレイアウトハンドルおよびブロック構造から無制限で動的に読み込まれるコンテンツフラグメントをサポートしています。 新しい **[!UICONTROL Handles Param]** 構成設定は、このエンドポイントの値を設定します `handles` パラメーター。API ごとに許可される最大ハンドル数を決定します。 このプロパティのデフォルト値は 100 です。 マーチャントは、この値を管理者（**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**）に設定します。 <!-- AC-9113 -->
 
 ### 既知の問題
 
@@ -107,5 +117,3 @@ Adobe Commerce 2.4.5-p1 セキュリティリリースでは、前のリリー�
 セキュリティ バグ修正の最新情報については、を参照してください。 [Adobeセキュリティ速報 APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 
 セキュリティバグの修正の 1 つに、新しい設定の作成が含まれています。 この **E メールが変更された場合、E メールによる確認を要求する** 構成設定を使用すると、管理者ユーザーがメールアドレスを変更したときに、管理者がメールで確認を要求できます。 <!-- AC-6292-->
-
-

@@ -2,20 +2,27 @@
 title: Adobe Commerce 2.4.6 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.6 のセキュリティパッチリリースに含まれている、セキュリティバグ修正、セキュリティ機能強化、その他のセキュリティ関連アップデートについて説明します。
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: e1c5b5e5c1a8800aa5aa2657060f61c16743cbda
+source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1134'
 ht-degree: 0%
 
 ---
+
 
 # Adobe Commerce 2.4.6 セキュリティパッチのリリースノート
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
+## Adobe Commerce 2.4.6-p6
+
+Adobe Commerce 2.4.6-p6 セキュリティリリースは、以前のリリースの 2.4.6 で特定された脆弱性に対するセキュリティバグ修正を提供します。
+
+セキュリティ バグ修正の最新情報については、を参照してください。 [Adobeセキュリティ速報 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
 ## Adobe Commerce 2.4.6-p5
 
-Adobe Commerce 2.4.6-p5 セキュリティリリースは、以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。
+Adobe Commerce 2.4.6-p5 セキュリティリリースは、以前のリリースの 2.4.6 で特定された脆弱性に対するセキュリティバグ修正を提供します。
 
 これらの修正の最新情報については、を参照してください。 [Adobeセキュリティ速報 APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html).
 
@@ -44,7 +51,7 @@ Adobe Commerce 2.4.6-p3 セキュリティリリースは、以前のリリー�
 
 ### セキュリティのハイライト
 
-このリリースでは、に関連するリスクの軽減に役立つ、新しいフルページキャッシュ設定が導入されています `{BASE-URL}/page_cache/block/esi HTTP` エンドポイント。 このエンドポイントは、Commerce レイアウトハンドルおよびブロック構造から無制限で動的に読み込まれるコンテンツフラグメントをサポートします。 新しい **[!UICONTROL Handles Param]** 構成設定は、このエンドポイントの値を設定します `handles` パラメーター。API ごとに許可される最大ハンドル数を決定します。 このプロパティのデフォルト値は 100 です。 マーチャントは、この値を管理者（**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**. <!-- AC-9113 -->
+このリリースでは、に関連するリスクの軽減に役立つ、新しいフルページキャッシュ設定が導入されています `{BASE-URL}/page_cache/block/esi HTTP` エンドポイント。 このエンドポイントは、Commerceのレイアウトハンドルおよびブロック構造から無制限で動的に読み込まれるコンテンツフラグメントをサポートしています。 新しい **[!UICONTROL Handles Param]** 構成設定は、このエンドポイントの値を設定します `handles` パラメーター。API ごとに許可される最大ハンドル数を決定します。 このプロパティのデフォルト値は 100 です。 マーチャントは、この値を管理者（**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**. <!-- AC-9113 -->
 
 ### このリリースに含まれるホットフィックス
 

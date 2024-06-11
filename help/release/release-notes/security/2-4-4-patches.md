@@ -2,16 +2,27 @@
 title: Adobe Commerce 2.4.4 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.4 のセキュリティパッチリリースに含まれている、セキュリティバグ修正、セキュリティ機能強化、その他のセキュリティ関連アップデートについて説明します。
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: e1c5b5e5c1a8800aa5aa2657060f61c16743cbda
+source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
 
+
 # Adobe Commerce 2.4.4 セキュリティパッチのリリースノート
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## Adobe Commerce 2.4.4-p9
+
+Adobe Commerce 2.4.4-p9 セキュリティリリースは、以前のリリースの 2.4.4 で特定された脆弱性に対するセキュリティバグ修正を提供します。
+
+セキュリティ バグ修正の最新情報については、を参照してください。 [Adobeセキュリティ速報 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
+### Platform のアップグレード
+
+* **MariaDB 10.5 のサポート**. このパッチリリースでは、MariaDB バージョン 10.5 との互換性が導入されています。Adobe Commerceは MariaDB バージョン 10.4 と引き続き互換性がありますが、MariaDB 10.4 のメンテナンスは 2024 年 6 月 18 日（PT）に終了するため、Adobeでは、Adobe Commerce 2.4.4-p9 および今後のすべての 2.4.4 のセキュリティ専用パッチリリースは MariaDB バージョン 10.5 でのみ使用することをお勧めします。 <!--AC-11530-->
 
 ## 2.4.4-p8
 
@@ -46,7 +57,7 @@ Adobe Commerce 2.4.4-p6 セキュリティリリースは、以前のリリー�
 
 ### セキュリティ ハイライト
 
-このリリースでは、に関連するリスクの軽減に役立つ、新しいフルページキャッシュ設定が導入されています `{BASE-URL}/page_cache/block/esi HTTP` エンドポイント。 このエンドポイントは、Commerce レイアウトハンドルおよびブロック構造から無制限で動的に読み込まれるコンテンツフラグメントをサポートします。 新しい **[!UICONTROL Handles Param]** 構成設定は、このエンドポイントの値を設定します `handles` パラメーター。API ごとに許可される最大ハンドル数を決定します。 このプロパティのデフォルト値は 100 です。 マーチャントは、この値を管理者（**[!UICONTROL Stores]** > **[!UICONTROL Settings: Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**）に設定します。 <!-- AC-9113 -->
+このリリースでは、に関連するリスクの軽減に役立つ、新しいフルページキャッシュ設定が導入されています `{BASE-URL}/page_cache/block/esi HTTP` エンドポイント。 このエンドポイントは、Commerceのレイアウトハンドルおよびブロック構造から無制限で動的に読み込まれるコンテンツフラグメントをサポートしています。 新しい **[!UICONTROL Handles Param]** 構成設定は、このエンドポイントの値を設定します `handles` パラメーター。API ごとに許可される最大ハンドル数を決定します。 このプロパティのデフォルト値は 100 です。 マーチャントは、この値を管理者（**[!UICONTROL Stores]** > **[!UICONTROL Settings: Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**）に設定します。 <!-- AC-9113 -->
 
 ### 既知の問題
 
@@ -131,4 +142,3 @@ DHL ではスキーマバージョン 6.2 を導入しており、近い将来�
 **問題**:Web API および統合テストを 2.4.4-p1 パッケージで実行すると、次のエラーが表示されます。 `[2022-06-14T16:58:23.694Z] PHP Fatal error:  Declaration of Magento\TestFramework\ErrorLog\Logger::addRecord(int $level, string $message, array $context = []): bool must be compatible with Monolog\Logger::addRecord(int $level, string $message, array $context = [], ?Monolog\DateTimeImmutable $datetime = null): bool in /var/www/html/dev/tests/integration/framework/Magento/TestFramework/ErrorLog/Logger.php on line 69`. **回避策**：を実行して、以前のバージョンの Monolog をインストールします `require monolog/monolog:2.6.0` コマンド。 <!-- AC-3651-->
 
 **問題**：マーチャントは、Adobe Commerce 2.4.4 からAdobe Commerce 2.4.4-p1 へのアップグレード中に、パッケージバージョンのダウングレードに関する通知に気付く場合があります。 これらのメッセージは無視できます。 パッケージバージョンの不一致は、パッケージ生成時の異常値が原因で発生します。 製品の機能に影響はありません。 を参照してください。 [2.4.4 から 2.4.4-p1 へのアップグレード後にダウングレードされたパッケージ](https://support.magento.com/hc/en-us/articles/8214752983949) 影響を受けるシナリオと回避策のディスカッションについては、ナレッジベースの記事を参照してください。
-

@@ -2,9 +2,9 @@
 title: セキュリティパッチリリースノート
 description: Adobe Commerce セキュリティパッチのリリースノートを確認してください。
 exl-id: a3d78211-41ff-4df2-ad29-21465c096027
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
 workflow-type: tm+mt
-source-wordcount: '47'
+source-wordcount: '40'
 ht-degree: 0%
 
 ---
@@ -12,9 +12,8 @@ ht-degree: 0%
 
 # セキュリティパッチリリースノート
 
-Adobe Commerce セキュリティパッチのリリースノートでは、Adobe Commerceのサポート対象バージョンに対するAdobe Commerce製品コードベースの最新のセキュリティ改善点に関する情報を提供します。
+Adobe Commerce セキュリティパッチのリリースノートでは、Adobe Commerceのサポート対象バージョンに対する最新のセキュリティ改善点に関する情報が提供されます。
 
 ## セキュリティパッチリリースについて
 
 {{$include /help/_includes/security-patch-release-overview.md}}
-
