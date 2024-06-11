@@ -1,8 +1,8 @@
 ---
-source-git-commit: 050fa7a35bb5f6f87d364e4c381062ca12baecc7
+source-git-commit: 87fa1874f25e58da103efb073078fa8d930b1265
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 3%
+source-wordcount: '140'
+ht-degree: 2%
 
 ---
 # 新しいテンプレート
@@ -22,6 +22,24 @@ ht-degree: 3%
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p>2024 年 6 月のセキュリティパッチに関するリリースノートを公開しました。<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p6</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p8</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p9</a></p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/000fe5ac88b31e5172c35b629d26423afcca214d">000fe5</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p>更新日 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">必要システム構成</a> 2024 年 6 月のパッチリリースによる。 また、システム要件テーブルの表現も変更しました。</p>
+</td>
+      <td>技術</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aef697509227b1dfebb801b0e1e098da90201971">aef697</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p>で 2.4.5-p7 および 2.4.5-p8 のRabbitMQのサポートを更新しました <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">必要システム構成</a>.</p>
+</td>
+      <td>技術</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/20823bae109f5b053f352b0a13275acecf991904">20823b</a> （コミット）</td>
+    </tr>
     <tr>
       <td><p>が更新されました <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">UCT CLI リファレンス</a>.</p>
 </td>
