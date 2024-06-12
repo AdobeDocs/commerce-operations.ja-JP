@@ -1,7 +1,7 @@
 ---
-source-git-commit: 19d19ef385cf4aaee3a255930af8e6d3b81de23a
+source-git-commit: 1f8fda87e0d39fdcf2372f72373a0b2ea486d25a
 workflow-type: tm+mt
-source-wordcount: '21169'
+source-wordcount: '21185'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**バージョン**: 2.4.7
+**バージョン**: 2.4.7-p1
 
 このリファレンスには、を介して使用できる 141 のコマンドが含まれています `bin/magento` コマンドラインツール。
 最初のリストは、 `bin/magento list` Adobe Commerceでコマンドを実行します。
@@ -3996,7 +3996,7 @@ ANSI 出力を強制（または無効化 – no-ansi）
 ## `events:subscribe`
 
 ```bash
-bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--] <event-code>
+bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--hipaaAuditRequired] [--] <event-code>
 ```
 
 イベントを購読
@@ -4049,6 +4049,13 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 
 - デフォルト： `default`
 - 値が必要です
+
+### `--hipaaAuditRequired`
+
+HIPAA 監査の対象となるデータがイベントに含まれていることを示します。
+
+- デフォルト： `false`
+- 値を受け入れません
 
 ### `--help`, `-h`
 
