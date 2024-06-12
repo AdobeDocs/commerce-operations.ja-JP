@@ -2,9 +2,9 @@
 title: 共有責任セキュリティと運用モデル
 description: Adobe Commerce on cloud infrastructure プロジェクトに関与する各パーティのセキュリティ上の責任について説明します。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: e188dad17ccb7d6ae10ed1457e86cc4551deaa75
+source-git-commit: 76aafb88855f7f41db8e57b06cf0e82370b57302
 workflow-type: tm+mt
-source-wordcount: '2805'
+source-wordcount: '2802'
 ht-degree: 0%
 
 ---
@@ -605,7 +605,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 
 #### 環境の同期
 
-マーチャントは、実稼動環境とステージング環境の間でデータを同期する必要があります。
+マーチャントは、環境間でデータを同期する役割を担います。
 
 #### パッチ適用
 
