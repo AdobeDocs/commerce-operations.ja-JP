@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Adobe CommerceのデプロイメントでGraphQL Application Server を有効にするには、次の手順に従います。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 70d86569bef5c656fff3a8c6b4af142c81c81f10
+source-git-commit: c2f48db87f40498a84b2bf41569bb46202565701
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2088'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # GraphQL Application Server
 
-Commerce GraphQL Application Server は、Adobe Commerceが Commerce GraphQL API リクエストの状態を管理できるようにします。 Swoole 拡張機能に基づいて構築されたGraphQL Application Server は、リクエスト処理を処理するワーカースレッドを使用したプロセスとして動作します。 GraphQL Application Server は、GraphQL API リクエストの間でブートストラップされたアプリケーションの状態を保持することで、リクエスト処理と製品全体のパフォーマンスを向上させます。 API リクエストが大幅に効率的になります。
+Commerce GraphQL Application Server を使用すると、Adobe CommerceはCommerce GraphQL API リクエストの状態を維持できます。 Swoole 拡張機能に基づいて構築されたGraphQL Application Server は、リクエスト処理を処理するワーカースレッドを使用したプロセスとして動作します。 GraphQL Application Server は、GraphQL API リクエストの間でブートストラップされたアプリケーションの状態を保持することで、リクエスト処理と製品全体のパフォーマンスを向上させます。 API リクエストが大幅に効率的になります。
 
 GraphQL Application Server は、Adobe Commerceでのみ使用できます。 Magento Open Sourceには使用できません。 あなたは必要があります [Adobe Commerce サポートの送信](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) GraphQL Application Server を Pro プロジェクトで有効にするためのチケット。
 
@@ -22,7 +22,7 @@ GraphQL Application Server は、Adobe Commerceでのみ使用できます。 Ma
 
 ## アーキテクチャ
 
-GraphQL Application Server は、Commerce GraphQL API リクエストの間のステータスを維持し、ブートストラップを行う必要をなくします。 複数のプロセスでアプリケーションのステータスを共有することで、GraphQL リクエストの効率が大幅に向上し、応答時間が最大 30% 短縮します。
+GraphQL Application Server は、Commerce GraphQL API リクエストの間のステータスを維持し、ブートストラップを不要にします。 複数のプロセスでアプリケーションのステータスを共有することで、GraphQL リクエストの効率が大幅に向上し、応答時間が最大 30% 短縮します。
 
 共有なし PHP 実行モデルは、要求ごとにフレームワークのブートストラップが必要なため、待ち時間の観点から問題があります。 このブートストラッププロセスには、設定の読み取り、ブートストラッププロセスの設定、サービスクラスオブジェクトの作成など、時間のかかるタスクが含まれます。
 
@@ -66,6 +66,12 @@ Pro プロジェクトで Application Server 機能を有効にした後、Graph
            protocol: http
        commands:
            start: ./application-server/start.sh > var/log/application-server-status.log 2>&1
+   ```
+
+1. を確実にする `/application-server/start.sh` は、次のコマンドを実行して実行できます。
+
+   ```bash
+   chmod +x application-server/start.sh
    ```
 
 1. 更新したファイルを次のコマンドで Git インデックスに追加します。
@@ -176,7 +182,7 @@ GraphQL Application Server をローカルで実行するには、Swoole 拡張�
 
 #### Nginx の設定
 
-特定の Commerce デプロイメントによって、Nginx の設定方法が決まります。 一般に、Nginx 設定ファイルは、デフォルトではという名前になっています。 `nginx.conf` およびは、次のディレクトリのいずれかに配置されます。 `/usr/local/nginx/conf`, `/etc/nginx`、または `/usr/local/etc/nginx`. 参照： [初心者向けガイド](https://nginx.org/en/docs/beginners_guide.html) nginx の設定の詳細については、を参照してください。
+Commerceの具体的なデプロイメントによって、Nginx の設定方法が決まります。 一般に、Nginx 設定ファイルは、デフォルトではという名前になっています。 `nginx.conf` およびは、次のディレクトリのいずれかに配置されます。 `/usr/local/nginx/conf`, `/etc/nginx`、または `/usr/local/etc/nginx`. 参照： [初心者向けガイド](https://nginx.org/en/docs/beginners_guide.html) nginx の設定の詳細については、を参照してください。
 
 Nginx 設定の例：
 
