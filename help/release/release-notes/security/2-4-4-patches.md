@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.4 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.4 のセキュリティパッチリリースに含まれている、セキュリティバグ修正、セキュリティ機能強化、その他のセキュリティ関連アップデートについて説明します。
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
+source-git-commit: 59a5306c8329ddc3ca2a2e086f5ebe81b49eab3a
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1432'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Adobe Commerce 2.4.4-p9 セキュリティリリースは、以前のリリー�
 ### Platform のアップグレード
 
 * **MariaDB 10.5 のサポート**. このパッチリリースでは、MariaDB バージョン 10.5 との互換性が導入されています。Adobe Commerceは MariaDB バージョン 10.4 と引き続き互換性がありますが、MariaDB 10.4 のメンテナンスは 2024 年 6 月 18 日（PT）に終了するため、Adobeでは、Adobe Commerce 2.4.4-p9 および今後のすべての 2.4.4 のセキュリティ専用パッチリリースは MariaDB バージョン 10.5 でのみ使用することをお勧めします。 <!--AC-11530-->
+
+### その他のセキュリティ機能強化
+
+{{$include /help/_includes/release-notes/2-4-7-security.md}}
 
 ## 2.4.4-p8
 
