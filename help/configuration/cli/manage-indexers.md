@@ -2,9 +2,9 @@
 title: インデクサーの管理
 description: Commerce インデクサーの表示および管理方法の例を参照してください。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: 5e1684d4d910f2ea52e12eeccdc291a54372f8d6
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -266,7 +266,7 @@ Index mode for Indexer Product Categories was changed from 'Update on Save' to '
 
 ### インデクサーのステータスを設定
 
-このコマンドを使用すると、管理者は 1 つ以上のインデクサーの動作ステータスを変更し、データのインポート、更新、メンテナンスなどの広範な操作中にシステムのパフォーマンスを最適化できます。
+この `bin/magento indexer:set-status` コマンドは、Adobe Commerce 2.4.7 で導入されました。これにより、管理者は 1 つ以上のインデクサーの動作ステータスを変更し、データのインポート、更新、メンテナンスなどの広範な操作中にシステムのパフォーマンスを最適化できます。
 
 コマンド構文：
 
