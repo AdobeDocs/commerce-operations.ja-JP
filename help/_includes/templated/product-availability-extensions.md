@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7ad815d0191c6cc3df7ea7dfe383f17a40cbde0a
+source-git-commit: 788bf40156376e871280896b6f58f55a20435eb8
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 0%
       </tr>
       <tr>
           <td>B2B</td>
-          <td>1.4.2 （PHP 8.2）</td>
+          <td>1.4.2-p1 （PHP 8.2）</td>
           <td>1.3.5 以降</td>
           <td>1.3.4</td>
           <td>1.3.3</td>
