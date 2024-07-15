@@ -9,8 +9,8 @@ ht-degree: 0%
 
 Secure Sockets Layer （SSL）（HTTPS とも呼ばれます）を管理者とストアフロントの両方で使用するには、次のパラメーターをすべて設定する必要があります。
 
-* `--use-secure`：に設定 `1`
-* `--base-url-secure`：セキュア URL （で始まる）に設定します `https://`）
-* `--use-secure-admin` をに設定 `1`
+* `--use-secure`: `1` に設定
+* `--base-url-secure`：セキュア URL （`https://` で始まる）に設定します
+* `--use-secure-admin` を `1` に設定
 
 これらのパラメーターの詳細については、このトピックの後半で説明します。

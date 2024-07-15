@@ -15,22 +15,22 @@ ht-degree: 0%
 次の要件を満たすビルドシステムを 1 つ用意できます。
 
 - すべてのCommerce コードは、開発システムおよび実稼働システムと同じリポジトリでソース管理下にあります
-- 次のすべてを確認します _included_ ソース管理で、次の操作を行います。
+- 次のすべてがソース管理に含まれている _含まれている_ ことを確認します。
 
    - `app/etc/config.php`
    - `generated` ディレクトリ（およびサブディレクトリ）
-   - `pub/media` directory
+   - `pub/media` ディレクトリ
    - `pub/media/wysiwyg` ディレクトリ（およびサブディレクトリ）
    - `pub/static` ディレクトリ（およびサブディレクトリ）
 
 - 互換性のある PHP バージョンがインストールされている必要があります
 - Composer がインストールされている必要があります。
-- ファイル・システムの所有権と権限が設定されています（を参照）。 [開発、ビルド、実稼動システムの前提条件](../deployment/technical-details.md).
+- [ 開発、ビルド、実稼働システムの前提条件 ](../deployment/technical-details.md) で説明されているように、ファイルシステムの所有権と権限が設定されています。
 - ビルドシステムではCommerceをインストールする必要はありませんが、コードを使用できる必要があります。
 
 >[!WARNING]
 >
->データベース接続は、に既に含まれている場合は必要ありません `config.php`；を参照してください [設定のエクスポート](../cli/export-configuration.md). それ以外の場合は、データベース接続が必要です。
+>`config.php` に既に含まれている場合は、データベース接続は必要ありません。[ 設定のエクスポート ](../cli/export-configuration.md) を参照してください。 それ以外の場合は、データベース接続が必要です。
 
 >[!INFO]
 >
@@ -67,11 +67,11 @@ Composer をインストールするには：
    mv composer.phar /usr/local/bin/composer
    ```
 
-その他のインストール オプションについては、を参照してください [Composer インストール ドキュメント][composer].
+その他のインストール オプションについては、「[Composer インストール ドキュメント ][composer]」を参照してください。
 
 ### PHP のインストール
 
-に PHP をインストールする [CentOS] または [Ubuntu].
+[CentOS] または [Ubuntu] に PHP をインストールします。
 
 ### ビルドシステムの設定
 
@@ -105,8 +105,8 @@ Composer をインストールするには：
    chown -R commerce-username:apache .
    ```
 
-1. Git を使用している場合は、を開きます。 `.gitignore` テキストエディター。
-1. 次の各行を `#` コメントアウトする文字：
+1. Git を使用している場合は、`.gitignore` をテキストエディターで開きます。
+1. 次の各行を `#` 文字で開始して、コメント化します。
 
    ```conf
    # app/etc/config.php
@@ -117,22 +117,22 @@ Composer をインストールするには：
    # pub/static/*
    ```
 
-1. 変更をに保存します。 `.gitignore` をクリックして、テキストエディターを終了します。
+1. `.gitignore` への変更を保存し、テキストエディターを終了します。
 1. Git を使用する場合は、次のコマンドを使用して変更をコミットします。
 
    ```bash
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   を参照してください。 [`.gitignore` 参照](../reference/config-reference-gitignore.md) を参照してください。
+   詳しくは ](../reference/config-reference-gitignore.md)[`.gitignore` リファレンスを参照してください。
 
-1. ビルドシステムでは、を使用する必要があります [デフォルトモード](../bootstrap/application-modes.md#default-mode) または [開発者モード](../bootstrap/application-modes.md#developer-mode):
+1. ビルドシステムでは、[ デフォルトモード ](../bootstrap/application-modes.md#default-mode) または [ 開発者モード ](../bootstrap/application-modes.md#developer-mode) を使用する必要があります。
 
    ```bash
    bin/magento deploy:mode:set <mode>
    ```
 
-   `<mode>` は必須です。 次のいずれかを指定できます `default` または `developer`.
+   `<mode>` が必要です。 `default` または `developer` のいずれかです。
 
 <!-- Link Definitions -->
 

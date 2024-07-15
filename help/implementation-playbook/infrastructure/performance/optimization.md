@@ -44,7 +44,7 @@ High time-to-first-byte （TTFB）は、通常、サーバーの応答速度を�
 
 Adobe Commerceは、次の機能を通じて、ビジネスの成長に合わせて拡張できます。
 
-![Adobe Commerceの拡張性を示す図](../../../assets/playbooks/scalable-capabilities.svg)
+![Adobe Commerceの拡張性を示す図 ](../../../assets/playbooks/scalable-capabilities.svg)
 
 また、コマースの規模を拡大させる重要な要因もあり、これも全体的なパフォーマンスに影響を与えます。
 
@@ -57,4 +57,4 @@ Adobe Commerceは、次の機能を通じて、ビジネスの成長に合わせ
 
 規模に合わせて構築された階層型アーキテクチャとキャッシュ可能なアーキテクチャの場合は、このグラフを参考として使用できます。
 
-![キャッシュ可能なアーキテクチャでAdobe Commerce GraphQL API を使用する方法を示す図](../../../assets/playbooks/cacheable-architecture.svg)
+![ キャッシュ可能なアーキテクチャでAdobe Commerce GraphQL API を使用する方法を示す図 ](../../../assets/playbooks/cacheable-architecture.svg)

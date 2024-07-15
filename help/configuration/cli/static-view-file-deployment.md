@@ -13,35 +13,35 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-static view files deployment コマンドを使用すると、Commerce ソフトウェアが次のように設定されている場合に、Commerce ファイルシステムに静的ファイルを書き込むことができます [実稼動モード](../bootstrap/application-modes.md#production-mode).
+static view files deployment コマンドを使用すると、Commerce ソフトウェアが [ 実稼動モード ](../bootstrap/application-modes.md#production-mode) に設定されている場合に、Commerce ファイルシステムに静的ファイルを書き込むことができます。
 
-用語 _静的ビューファイル_ は以下のことを指します。
+_静的ビューファイル_ という用語は、以下を指します。
 
 - 「静的」とは、サイトに対してキャッシュできることを意味します（つまり、ファイルは動的に生成されません）。 例としては、LESS から生成された画像や CSS があります。
 - 「View」はプレゼンテーションレイヤー（MVC から）を指します。
 
-静的ビューファイルは、にあります。 `<magento_root>/pub/static` ディレクトリ。一部はにキャッシュされます `<magento_root>/var/view_preprocessed` ディレクトリも。
+静的ビューファイルは `<magento_root>/pub/static` ディレクトリにあり、一部は `<magento_root>/var/view_preprocessed` ディレクトリにもキャッシュされます。
 
 静的ビューファイルのデプロイメントは、次のようなアプリケーションモードの影響を受けます。
 
-- [デフォルト](../bootstrap/application-modes.md#default-mode) および [開発者](../bootstrap/application-modes.md#developer-mode) モード：Commerceはオンデマンドでそれらを生成しますが、残りはアクセス速度のためにファイルにキャッシュされます。
-- [実稼動](../bootstrap/application-modes.md#production-mode) モード：静的ファイルは _ではない_ 生成済みまたはキャッシュ済み。
+- [ デフォルト ](../bootstrap/application-modes.md#default-mode) および [ 開発者 ](../bootstrap/application-modes.md#developer-mode) モード：Commerceはオンデマンドでそれらを生成しますが、残りはアクセス速度を向上させるためにファイルにキャッシュされます。
+- [ 実稼動 ](../bootstrap/application-modes.md#production-mode) モード：静的ファイルは生成 _れ_ キャッシュされません。
 
 このトピックで説明したコマンドを使用して、静的ビューファイルをCommerce ファイルシステムに手動で書き込む必要があります。その後、脆弱性を制限し、誤ってファイルを上書きしたり悪意のあるファイルを上書きしたりしないように、アクセス許可を制限できます。
 
 >[!WARNING]
 >
->_開発者モードのみ_：新しいモジュールをインストールまたは有効にすると、新しい JavaScript、CSS、レイアウトなどが読み込まれる場合があります。 静的ファイルの問題を回避するには、新しいモジュールのすべての変更を確実に取得するために、古いファイルを消去する必要があります。 生成された静的ビューファイルは、いくつかの方法でクリーンアップできます。 こちらを参照してください [詳細については、静的ファイル キャッシュのクリーン トピックを参照してください](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) を参照してください。
+>_開発者モードのみ_：新しいモジュールをインストールまたは有効にすると、新しいJavaScript、CSS、レイアウトなどが読み込まれる場合があります。 静的ファイルの問題を回避するには、新しいモジュールのすべての変更を確実に取得するために、古いファイルを消去する必要があります。 生成された静的ビューファイルは、いくつかの方法でクリーンアップできます。 詳しくは、[ 静的ファイルのキャッシュのクリーンアップに関するトピック ](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) を参照してください。
 
-**静的表示ファイルを展開するには**:
+**静的表示ファイルをデプロイするには**:
 
-1. Commerce サーバーにとしてログインする。 [ファイルシステムの所有者に切り替える](../../installation/prerequisites/file-system/overview.md).
-1. のコンテンツを削除 `<magento_root>/pub/static`を除く。 `.htaccess` ファイル。 このファイルは削除しないでください。
-1. 静的表示ファイル デプロイメントツールの実行 `<magento_root>/bin/magento setup:static-content:deploy`.
+1. Commerce サーバーにとしてログインするか、[ ファイルシステムのオーナーに切り替え ](../../installation/prerequisites/file-system/overview.md) ます。
+1. `.htaccess` ファイルを除く `<magento_root>/pub/static` のコンテンツを削除します。 このファイルは削除しないでください。
+1. 静的表示ファイル展開ツール `<magento_root>/bin/magento setup:static-content:deploy` を実行します。
 
    >[!INFO]
    >
-   >管理者で静的ビューファイルの結合を有効にした場合、 `pub/static` ディレクトリ システムは書き込み可能である必要があります。
+   >管理者で静的ビューファイルの結合を有効にした場合、`pub/static` ディレクトリシステムは書き込み可能である必要があります。
 
    コマンドオプション：
 
@@ -53,14 +53,14 @@ static view files deployment コマンドを使用すると、Commerce ソフト
 
 | オプション | 説明 | 必須？ |
 | ------ | ----------- | --------- |
-| `<languages>` | のスペース区切りリスト [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) 静的ビューファイルを出力する言語コード。 （デフォルトは `en_US`.）<br>次のコマンドを実行してリストを検索します。 `bin/magento info:language:list` | 不可 |
-| `--language (-l)` | 指定した言語のみのファイルを生成します。 オプションを指定しないデフォルトでは、すべての ISO-639 言語コードのファイルが生成されます。 一度に 1 つの言語コードの名前を指定できます。 デフォルト値は **all**.<br>例： `--language en_US --language es_ES` | 不可 |
-| `--exclude-language` | 指定した言語コードのファイルを生成します。 オプションを指定しない場合のデフォルトでは、何も除外されません。 1 つの言語コードの名前を指定するか、言語コードのコンマ区切りリストを指定できます。 デフォルト値は **なし**. | 不可 |
-| `--theme <theme>` | 静的コンテンツをデプロイするテーマ。 デフォルト値は **all**.<br>例： `--theme Magento/blank --theme Magento/luma` | 不可 |
-| `--exclude-theme <theme>` | 静的コンテンツのデプロイ時に除外するテーマ。 デフォルト値は **なし**.<br>例： `--exclude-theme Magento/blank` | 不可 |
-| `--area (-a)` | 指定した領域のファイルのみを生成します。 オプションを指定しないデフォルトでは、すべての領域のファイルが生成されます。 有効な値： `adminhtml` および `frontend`. デフォルト値は **all**.<br>例： `--area adminhtml` | 不可 |
-| `--exclude-area` | 指定した領域のファイルを生成しません。 オプションを指定しない場合のデフォルトでは、何も除外されません。 デフォルト値は **なし**. | 不可 |
-| `--jobs (-j)` | Enable （有効） [並列処理](manage-indexers.md#reindexing-in-parallel-mode) 指定した数のジョブを使用します。 デフォルトは 0 です（並列プロセスでは実行しません）。 デフォルト値は **0**. | 不可 |
+| `<languages>` | 静的ビューファイルを出力する [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) 言語コードのスペース区切りリスト。 （デフォルトは `en_US`）。<br> 次のコマンドを実行してリストを検索します：`bin/magento info:language:list` | 不可 |
+| `--language (-l)` | 指定した言語のみのファイルを生成します。 オプションを指定しないデフォルトでは、すべての ISO-639 言語コードのファイルが生成されます。 一度に 1 つの言語コードの名前を指定できます。 デフォルト値は **all** です。<br> 例：`--language en_US --language es_ES` | 不可 |
+| `--exclude-language` | 指定した言語コードのファイルを生成します。 オプションを指定しない場合のデフォルトでは、何も除外されません。 1 つの言語コードの名前を指定するか、言語コードのコンマ区切りリストを指定できます。 デフォルト値は **なし** です。 | 不可 |
+| `--theme <theme>` | 静的コンテンツをデプロイするテーマ。 デフォルト値は **all** です。<br> 例：`--theme Magento/blank --theme Magento/luma` | 不可 |
+| `--exclude-theme <theme>` | 静的コンテンツのデプロイ時に除外するテーマ。 デフォルト値は **なし** です。<br> 例：`--exclude-theme Magento/blank` | 不可 |
+| `--area (-a)` | 指定した領域のファイルのみを生成します。 オプションを指定しないデフォルトでは、すべての領域のファイルが生成されます。 有効な値は `adminhtml` および `frontend` です。 デフォルト値は **all** です。<br> 例：`--area adminhtml` | 不可 |
+| `--exclude-area` | 指定した領域のファイルを生成しません。 オプションを指定しない場合のデフォルトでは、何も除外されません。 デフォルト値は **なし** です。 | 不可 |
+| `--jobs (-j)` | 指定したジョブ数を使用して [ 並列処理 ](manage-indexers.md#reindexing-in-parallel-mode) を有効にします。 デフォルトは 0 です（並列プロセスでは実行しません）。 既定値は **0** です。 | 不可 |
 | `--symlink-locale` | これらのロケールのファイルにシンボリックリンクを作成します。これはデプロイメントに渡されますが、カスタマイズは行われません。 | 不可 |
 | `--content-version=CONTENT-VERSION` | 複数のノードでデプロイメントを実行する場合は、静的コンテンツのカスタムバージョンを使用して、静的コンテンツのバージョンが同じでキャッシュが正しく機能することを確認できます。 | 不可 |
 | `--no-javascript` | JavaScript ファイルをデプロイしない | 不可 |
@@ -71,13 +71,13 @@ static view files deployment コマンドを使用すると、Commerce ソフト
 | `--no-html` | HTMLファイルをデプロイしないでください。 | 不可 |
 | `--no-misc` | MD、JBF、CSV、JSON、TXT、HTC、SWFなどの他のタイプのファイルはデプロイしないでください | 不可 |
 | `--no-html-minify` | HTMLファイルは縮小しないでください。 | 不可 |
-| `-s <quick\|standard\|compact>` | デプロイメント戦略を定義します。 これらのオプションは、複数のローカルがある場合にのみ使用します。<ul><li>の使用 [迅速な戦略](static-view-file-strategy.md#quick-strategy) 展開時間を最小限に抑える。 指定されていない場合、これはデフォルトのコマンドオプションです。</li><li>の使用 [標準戦略](static-view-file-strategy.md#standard-strategy) すべてのパッケージのすべての静的表示ファイルをデプロイします。</li><li>の使用 [コンパクト戦略](static-view-file-strategy.md#compact-strategy) サーバー上のディスク容量を節約する。</li></ul> | 不可 |
+| `-s <quick\|standard\|compact>` | デプロイメント戦略を定義します。 これらのオプションは、複数のローカルがある場合にのみ使用します。<ul><li>[ クイック戦略 ](static-view-file-strategy.md#quick-strategy) を使用すると、デプロイメント時間を最小限に抑えることができます。 指定されていない場合、これはデフォルトのコマンドオプションです。</li><li>[ 標準方法 ](static-view-file-strategy.md#standard-strategy) を使用して、すべてのパッケージのすべての静的ビューファイルをデプロイします。</li><li>[ コンパクト化 ](static-view-file-strategy.md#compact-strategy) を使用して、サーバー上のディスク領域を節約します。</li></ul> | 不可 |
 | `--no-parent` | 現在のテーマの親テーマ用のファイルを生成しません。 デプロイしようとしている現在のテーマの親テーマを明示的に使用しない場合は、このフラグを使用することを強くお勧めします。 これにより、プロセスの速度が大幅に向上します。 このフラグは、Commerce 2.4.2 で使用できます。 | 不可 |
 | `--force (-f)` | 任意のモードでファイルをデプロイします。 （デフォルトでは、静的コンテンツデプロイメントツールは、実稼動モードでのみ実行できます。 このオプションを使用して、デフォルトまたは開発者モードで実行します。 | 不可 |
 
 >[!INFO]
 >
->両方の値を指定した場合 `<languages>` および `--language`, `<languages>` が優先されます。
+>`<languages>` と `--language` の両方の値を指定した場合は、`<languages>` が優先されます。
 
 ## 例
 
@@ -85,7 +85,7 @@ static view files deployment コマンドを使用すると、Commerce ソフト
 
 ### テーマとHTMLの縮小の除外
 
-次のコマンドは、米国英語の静的コンテンツをデプロイします（`en_US`）、Commerceで提供される Luma テーマを除外し、HTMLファイルを縮小しません。
+次のコマンドは、米国英語（`en_US`）言語用の静的コンテンツをデプロイし、Commerceで提供される Luma テーマを除外し、HTMLファイルを縮小しません。
 
 ```bash
 bin/magento setup:static-content:deploy en_US --exclude-theme Magento/luma --no-html-minify
@@ -110,7 +110,7 @@ Successful: 1993 files; errors: 0
 ---
 ```
 
-次のコマンドは、標準のデプロイメント戦略で、4 つのジョブを持つ JavaScript のみをデプロイします。
+次のコマンドは、標準のデプロイメント戦略で、4 つのジョブを含むJavaScriptのみをデプロイします。
 
 ```bash
 bin/magento setup:static-content:deploy -s standard --no-misc --no-html --no-fonts --no-images --no-less --no-css -j 4
@@ -152,15 +152,15 @@ New version of deployed files: 1466711110
 
 これを行うには、次の手順を実行します。
 
-1. 実行 [`bin/magento app:config:dump`](../cli/export-configuration.md) をクリックして、実稼動システムから設定を書き出します。
+1. [`bin/magento app:config:dump`](../cli/export-configuration.md) を実行して、実稼動システムから設定をエクスポートします。
 1. 書き出したファイルを実稼動以外のコードベースにコピーします。
-1. 静的表示ファイルのデプロイ： `bin/magento setup:static-content:deploy`
+1. 静的表示ファイルのデプロイ：`bin/magento setup:static-content:deploy`
 
 ## 静的表示ファイル展開ツールのトラブルシューティング
 
-[最初にCommerce ソフトウェアをインストールします](../../installation/overview.md)それ以外の場合は、静的表示ファイル デプロイメントツールを実行できません。
+[ 最初にCommerce ソフトウェアをインストールします ](../../installation/overview.md)。インストールしないと、静的ビューファイルのデプロイメントツールを実行できません。
 
-**症状**：静的ビューファイルのデプロイメントツールを実行すると、次のエラーが表示されます。
+**症状**：静的ビューファイル展開ツールを実行すると、次のエラーが表示されます：
 
 ```terminal
 ERROR: You need to install the Commerce application before running this utility.
@@ -170,13 +170,13 @@ ERROR: You need to install the Commerce application before running this utility.
 
 次の手順を使用します。
 
-1. を使用してCommerce ソフトウェアをインストールします。 [コマンドライン](../../installation/composer.md).
-1. アプリケーションサーバーにとしてログインする。 [切り替え先](../../installation/prerequisites/file-system/overview.md)：ファイルシステムの所有者。
-1. のコンテンツを削除 `<app_root>/pub/static` ディレクトリ （を除く） `.htaccess` ファイル。 このファイルは削除しないでください。
-1. 静的表示ファイルのデプロイ： `bin/magento setup:static-content:deploy`
+1. [ コマンドライン ](../../installation/composer.md) を使用してCommerce ソフトウェアをインストールします。
+1. ファイルシステムの所有者として、または [ 切り替え先 ](../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインします。
+1. `.htaccess` ファイルを除く `<app_root>/pub/static` ディレクトリのコンテンツを削除します。 このファイルは削除しないでください。
+1. 静的表示ファイルのデプロイ：`bin/magento setup:static-content:deploy`
 
 ## 静的コンテンツ展開ツールをカスタマイズする開発者向けのヒント
 
 静的コンテンツ展開ツールのカスタム実装を作成する場合は、クライアントで使用可能にするファイルに対してのみアトミックファイル書き込みを使用します。 非アトミック ファイル書き込みを使用する場合、これらのファイルは、部分的なコンテンツを含むクライアントに読み込まれる可能性があります。
 
-アトミックにするためのオプションの 1 つは、一時ディレクトリに格納されたファイルに書き込み、書き込みが終了した後に（ファイルがクライアントに読み込まれた場所から）宛先ディレクトリにコピーまたは移動することです。 ファイルへの書き込みについて詳しくは、 [php fwrite](https://www.php.net/manual/en/function.fwrite.php).
+アトミックにするためのオプションの 1 つは、一時ディレクトリに格納されたファイルに書き込み、書き込みが終了した後に（ファイルがクライアントに読み込まれた場所から）宛先ディレクトリにコピーまたは移動することです。 ファイルへの書き込みについて詳しくは、[php fwrite](https://www.php.net/manual/en/function.fwrite.php) を参照してください。

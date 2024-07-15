@@ -19,4 +19,4 @@ ht-degree: 54%
 - [Adobe Commerceのパフォーマンスの最適化](default-settings.md)
 - [パフォーマンステストのヒント](launch.md)
 - [まとめ](conclusion.md)
-- [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

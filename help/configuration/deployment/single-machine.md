@@ -16,17 +16,17 @@ ht-degree: 1%
 
 ## 前提
 
-- を使用してCommerceをインストールしました [コンポーザー](../../installation/composer.md).
+- [Composer](../../installation/composer.md) を使用してCommerceをインストールしている。
 - 更新をサーバーに直接適用しています。
 
 >[!WARNING]
 >
->このガイドは、を使用した場合は適用されません `git clone` Commerceをインストールします。
->投稿する開発者は次を使用する必要があります [このガイド][install] Commerceのインストールを更新する
+>このガイドは、`git clone` を使用してCommerceをインストールした場合には適用されません。
+>投稿する開発者は、[ このガイド ][install] を使用してCommerceのインストールを更新する必要があります。
 
 ## デプロイメント手順
 
-1. 実稼動サーバーにとしてログインするか、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
+1. [ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) として実稼動サーバーにログインするか、に切り替えます。
 
 1. ディレクトリをCommerceのベースディレクトリに変更します。
 

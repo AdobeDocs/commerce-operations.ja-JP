@@ -106,10 +106,10 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 
 次の概要の表では、RACI モデルを使用して、Adobe、マーチャント、および Cloud Service プロバイダー間で共有されるセキュリティ責任を示しています。
 
-**R**  – 担当
-**A**  – 責任あり
-**C**  – 問い合わせ
-**I**  – 情報あり
+**R** – 担当
+**A** — Accountable
+**C** – 問い合わせ
+**I** – 情報
 
 >[!ENDSHADEBOX]
 
@@ -132,7 +132,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
     <td></td>
   </tr>
   <tr>
-    <td>サポートサービスへのパッチの適用<br>（例えば、Nginx や MySQL）。</td>
+    <td>サポートサービス <br> （Nginx や MySQL など）へのパッチの適用</td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -230,7 +230,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
     <td></td>
   </tr>
   <tr>
-    <td>ソースリポジトリの設定<sup>1</sup></td>
+    <td>ソースリポジトリの設定 <sup>1</sup></td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -328,7 +328,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
     <td></td>
   </tr>
   <tr>
-    <td>CDN のサポート<sup>2</sup></td>
+    <td>CDN<sup>2</sup> のサポート</td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -356,7 +356,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
     <td></td>
   </tr>
   <tr>
-    <td>Nginx の設定<sup>3</sup></td>
+    <td>Nginx<sup>3</sup> の設定</td>
     <td>R</td>
     <td>R</td>
     <td></td>
@@ -440,7 +440,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
     <td></td>
   </tr>
   <tr>
-    <td>クラウドインフラストラクチャ PCI スキャンでのAdobe Commerceの修正<sup>4</sup></td>
+    <td>クラウドインフラストラクチャー上のAdobe Commerceの修正 PCI スキャン <sup>4</sup></td>
     <td>R</td>
     <td>R</td>
     <td></td>
@@ -521,8 +521,8 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
   <tr>
     <td colspan="5">
       <p><sup><strong>1</strong></sup> Adobe Commerce on Cloud Infrastructure リポジトリーがメインリポジトリーとして使用されている場合のみ。 その他の外部リポジトリの使用は、マーチャントの単独の責任です。</p>
-      <p><sup><strong>2</strong></sup> Adobeでは、CDN プロバイダーに関する問題についてレベル 1 のサポートを提供しています。</p>
-      <p><sup><strong>3</strong></sup> マーチャントは、自身のアプリケーション用に設定した Ngnix コントロールに対して責任を負います。</p>
+      <p><sup><strong>2</strong></sup> Adobeは、CDN プロバイダーに関する問題に対してレベル 1 のサポートを提供します。</p>
+      <p><sup><strong>3</strong></sup> マーチャントは、マーチャントがアプリケーション用に設定する Ngnix 制御に対して責任を負います。</p>
       <p><sup><strong>4</strong></sup> PCI の場合、侵入テストの要件はAdobeとマーチャントの間で共有されます。</p>
     </td>
   </tr>
@@ -639,7 +639,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 | --- | --- | --- |
 | ログの回転 | R |   |
 | カスタム Adobe Commerce アプリケーション | | R |
-| New Relic サービスの提供状況：<br>APM アプリケーションとエージェントの統合、インフラストラクチャ・アプリケーション、<br>ログと統合 | R |   |
+| New Relic サービスの可用性：<br>APM アプリケーションとエージェントの統合、インフラストラクチャアプリケーション、<br> ログと統合 | R |   |
 | New Relic アラートの設定 |     | R |
 | PaaS サーバーへのNew Relic エージェントのデプロイ |     | R |
 
@@ -662,7 +662,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 | --- | --- | --- |
 | アプリケーション設定 |     | R |
 | Adobe Commerce アプリケーションへのドメインの追加（ベース URL） |     | R |
-| デプロイされたAdobe Commerce バージョンでサポートされているサービスバージョンを使用するように PaaS を設定する<br><br>例えば、Commerceの異なるバージョンは、PHP や Redis などの特定のバージョンと互換性があります。 |     | R |
+| デプロイされたAdobe Commerce バージョンでサポートされているサービスバージョンを使用するように PaaS を設定する <br><br> 例えば、Commerceの異なるバージョンは、PHP、Redis などの特定のバージョンと互換性があります。 |     | R |
 
 {style="table-layout:auto"}
 
@@ -702,8 +702,8 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 |     | Adobe | 商人 |
 | --- | --- | --- |
 | Galera および MariaDB サービスの可用性 | R | |
-| デフォルトデータベース設定の継続的なメンテナンス<br><br>（コアテーブルのインデックス作成と最適化、デフォルトのシステム管理者設定の最適化） | R |   |
-| マーチャントデータと変更された設定の継続的なメンテナンス<br><br>（正規化されたテーブルとフラットなテーブルの設定、カスタムおよびサードパーティのテーブルのインデックス作成と最適化、データのアーカイブまたは削除、システム管理設定の設定） |     | R |
+| デフォルトのデータベース設定の継続的なメンテナンス <br><br> コアテーブルのインデックス作成と最適化、デフォルトのシステム管理者設定の最適化） | R |   |
+| マーチャントデータと変更された設定の継続的なメンテナンス <br><br> （正規化されたテーブルとフラットテーブルの設定、カスタムおよびサードパーティ製テーブルのインデックス作成と最適化、データのアーカイブまたは削除、システム管理設定の設定） |     | R |
 | Galera と MySQL の設定 | R |   |
 | Galera と MariaDB の継続的な品質とパッチ適用 | R |   |
 | 継続的なインフラストラクチャの最適化 | R |   |
@@ -755,7 +755,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 | --- | --- | --- |
 | SendGrid メールサービスとその統合の可用性 | R |   |
 | 制限に対するマーチャントの SendGrid 使用状況の監視 | R |   |
-| マーチャントは、送信トランザクションメールに対してのみサービスを使用する責任があります<br>このサービスは、マーケティングメールの送信をサポートしていません。 |     | R |
+| マーチャントは、送信トランザクションメールに対してのみサービスを使用する責任を負います <br> サービスはマーケティングメールの送信をサポートしていません。 |     | R |
 | オプションのサードパーティ電子メールサービスの設定 |     | R |
 
 {style="table-layout:auto"}
@@ -786,8 +786,8 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 | Adobe Commerce Business Intelligenceサービスの可用性 | R |   |
 | MBI データ同期プロセス | R |   |
 | MBI 同期の問題の検出 | R |   |
-| Adobe Commerce Cloud Pro、Starter、オンプレミスまたは非Adobe Commerceへの MBI データ同期の設定<br>（API、データ品質とフォーマット、マーチャントネットワーク、<br>データしきい値を超えたAdobe Commerce Cloud DB 内外の DB 接続） |     | R |
-| Adobe Commerce Cloud Pro への MBI データ同期の設定<br>（Adobe Commerce Cloud データベースの設定） | R |   |
+| Adobe Commerce Cloud Pro、Starter、オンプレミス、非Adobe Commerceへの MBI データ同期の設定 <br> （データしきい値を超えた場合の API、データ品質とフォーマット、マーチャントネットワーク、<br>Adobe Commerce Cloud DB 内外の DB 接続） |     | R |
+| Adobe Commerce Cloud Pro<br> への MBI データ同期の設定（Adobe Commerce Cloud Database Configuration） | R |   |
 
 {style="table-layout:auto"}
 
@@ -857,7 +857,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 | マーチャントの VPC サービスエンドポイントへの PrivateLink インバウンドの設定 |     | R |
 | マーチャントの VPC サービス エンドポイントへの PrivateLink インバウンドの受け入れ | R |   |
 | PrivateLink 統合の設定（アカウントへのエンドポイント） |     | R |
-| PrivateLink エンドポイント用のマーチャント所有 VPC の設定<br><br> （VPN 接続を含む） |     | R |
+| PrivateLink エンドポイント <br><br> （任意の VPN 接続を含む）用のマーチャント所有 VPC の設定 |     | R |
 
 {style="table-layout:auto"}
 

@@ -14,19 +14,19 @@ ht-degree: 5%
 
 Adobe Commerce 2.4.4 以降のリリースの場合：
 
-- Adobe Commerceのライフサイクルポリシーを合理化し、お客様のミッションクリティカルなニーズをサポートするために、Adobeでは、Adobe Commerce 2.4.4 以降の一般提供（GA）日から 3 年にサポートウィンドウを拡大しました。 Adobeは、2.4.4 以降のリリースに対して 3 年間のサポート期間中、質の高い修正を提供します。 お客様は、に連絡して品質修正プログラムにアクセスできます。 [Adobe Commerce サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) またはセルフサービス経由 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 対象バージョンがまだ品質サポートの対象である場合。 Adobe Commerce リリースラインのソフトウェアサポート終了日については、次の表を参照してください。
+- Adobe Commerceのライフサイクルポリシーを合理化し、お客様のミッションクリティカルなニーズをサポートするために、Adobeでは、Adobe Commerce 2.4.4 以降の一般提供（GA）日から 3 年にサポートウィンドウを拡大しました。 Adobeは、2.4.4 以降のリリースに対して 3 年間のサポート期間中、質の高い修正を提供します。 お客様は、[Adobe Commerce サポートに問い合わせるか ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) バージョンが品質サポートの対象である場合はセルフサービス [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) を通じて、品質修正プログラムにアクセスできます。 Adobe Commerce リリースラインのソフトウェアサポート終了日については、次の表を参照してください。
 
 - Adobeは、3 年間のサポート期間を対象としたセキュリティパッチリリースにより、セキュリティ修正を提供します。
 
-- ゼロデイ脆弱性などの重大なセキュリティ問題に対しては、Adobeは次の機能を提供します [ホットフィックス](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) サポートされているバージョンを使用しているすべてのお客様の場合（最新のパッチまたはセキュリティパッチリリースを使用していない場合も含む） ホットフィックスは包括的なものではなく、最新リリースにアップグレードすることで修正されるすべてのセキュリティの問題に対応しているわけではありません。
+- ゼロデイ脆弱性などの重要なセキュリティの問題については、最新のパッチまたはセキュリティパッチリリースに準拠していない場合でも、Adobeでは、サポート対象のバージョンを使用するすべてのお客様に [ ホットフィックス ](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) を提供しています。 ホットフィックスは包括的なものではなく、最新リリースにアップグレードすることで修正されるすべてのセキュリティの問題に対応しているわけではありません。
 
-- Adobeでは、お客様がAdobe Commerceに対して 3 年間のサポートを受けている間に提供が終了する可能性のある、サードパーティのサービスやソフトウェアの依存関係（PHP や MySQL など）に対するセキュリティおよび品質の修正を提供していません。 を参照してください。 [必要システム構成](../installation/system-requirements.md) テスト済みおよびサポート済みのサードパーティテクノロジーの完全なリストについては、を参照してください。
+- Adobeでは、お客様がAdobe Commerceに対して 3 年間のサポートを受けている間に提供が終了する可能性のある、サードパーティのサービスやソフトウェアの依存関係（PHP や MySQL など）に対するセキュリティおよび品質の修正を提供していません。 テスト済みおよびサポート済みのサードパーティテクノロジーの完全なリストについては、[ システム要件 ](../installation/system-requirements.md) を参照してください。
 
 - Adobeは、サードパーティのサービスおよびソフトウェアの依存関係との互換性を提供しますが、お客様のAdobe Commerceのサポート期間は、セキュリティのみを対象とするパッチリリースの 3 年間です。ただし、後方互換性のない変更を加えることなくサポートできる場合に限ります。
 
 ## ソフトウェアサポートの終了
 
-| リリース | 一般公開 | ソフトウェアサポートの終了<sup>1</sup> | 依存する PHP バージョン | 依存する MariaDB バージョン |
+| リリース | 一般公開 | ソフトウェア サポート終了 <sup>1</sup> | 依存する PHP バージョン | 依存する MariaDB バージョン |
 |----------------------|----------------------|-------------------------------------|-----------------------|------------------------------|
 | Adobe Commerce 2.4.7 | 2024 年 4 月 9 日（Pt） | 2027 年 4 月 9 日（Pt） | 8.2 および 8.3 | 10.6 |
 | Adobe Commerce 2.4.6 | 2023 年 3 月 14 日（Pt） | 2026 年 3 月 14 日（Pt） | 8.1 および 8.2 | 10.6 |
@@ -40,7 +40,7 @@ Adobe Commerce 2.4.4 以降のリリースの場合：
 >- <sup>1</sup> ソフトウェアのサポート終了には、品質修正の終了とセキュリティ修正の終了の両方が含まれます。
 >- <sup>2</sup> 2.4.5-p8 セキュリティパッチ以降。
 >- <sup>3</sup> 2.4.4-p9 セキュリティパッチ以降。
->- 参照： [ソフトウェアのライフサイクル ポリシー](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+>- [ ソフトウェア ライフサイクル ポリシー ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) を参照してください。
 
 <table style="table-layout:auto">
 <thead>
@@ -56,7 +56,7 @@ Adobe Commerce 2.4.4 以降のリリースの場合：
 </thead>
 <tbody>
   <tr>
-    <td>コマース</td>
+    <td>Commerce</td>
     <td>Q1</td>
     <td>Q2</td>
     <td>Q3</td>

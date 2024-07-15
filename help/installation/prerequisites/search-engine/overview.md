@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # 検索エンジンの前提条件
 
-Adobe Commerce 2.4 以降では、を使用するようにすべてのインストールを設定する必要があります [Elasticsearch](https://www.elastic.co) または [OpenSearch](https://opensearch.org/) カタログ検索ソリューションとして。
+Adobe Commerce Elasticsearch 2.4 以降、すべてのインストールは、[User](https://www.elastic.co) または [OpenSearch](https://opensearch.org/) をカタログ検索ソリューションとして使用するように設定する必要があります。
 
 >[!NOTE]
 >
->OpenSearch のサポートは 2.4.4 で追加されました。OpenSearch は、互換性のあるElasticsearchのフォークです。 Elasticsearch 7 を設定する手順は、すべて OpenSearch に適用されます。 [Elasticsearchから OpenSearch への移行](../../../upgrade/prepare/opensearch-migration.md) opensearch への切り替えに関するガイダンスを提供します。
+>OpenSearch のサポートは 2.4.4 で追加されました。OpenSearch は、互換性のあるElasticsearchのフォークです。 Elasticsearch 7 を設定する手順は、すべて OpenSearch に適用されます。 [Elasticsearchから OpenSearch への移行 ](../../../upgrade/prepare/opensearch-migration.md) は、OpenSearch への切り替えに関するガイダンスを提供します。
 
 ## サポートされているバージョン
 
 Adobe Commerce 2.4.4 以降をインストールする前に、Elasticsearchまたは OpenSearch をインストールして設定する必要があります。
 
-を参照してください。 [必要システム構成](../../system-requirements.md) （特定のバージョン情報）。
+特定のバージョン情報については、[ システム要件 ](../../system-requirements.md) を参照してください。
 
 ## 推奨設定
 
@@ -35,13 +35,13 @@ Adobe Commerce 2.4.4 以降をインストールする前に、Elasticsearchま�
 
 次のタスクは、次の図に従ってシステムを設定していることを前提としています。
 
-![検索エンジンの図](../../../assets/installation/search-engine-config.svg)
+![ 検索エンジンの図 ](../../../assets/installation/search-engine-config.svg)
 
 上の図は次の内容を示しています。
 
 * Commerce アプリケーションと検索エンジンは、異なるホストにインストールされています。
 
-  別々のホストで実行する場合は、プロキシを機能させる必要があります。 （検索エンジンのクラスタリングはこのガイドの範囲外ですが、詳細については [Elasticsearchクラスタリングのドキュメント](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).）
+  別々のホストで実行する場合は、プロキシを機能させる必要があります。 （検索エンジンのクラスタリングはこのガイドの範囲外ですが、詳細については、[Elasticsearchクラスタリングのドキュメント ](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html) を参照してください。）
 
 * 各ホストには独自の web サーバーがあり、web サーバーは同じである必要はありません。
 
@@ -59,7 +59,7 @@ Adobe Commerce 2.4.4 以降をインストールする前に、Elasticsearchま�
 
 1. 検索エンジン web サーバ（ポート 443 をリッスン）は、検索エンジン サーバに要求をプロキシします（デフォルトでは、ポート 9200 をリッスンします）。
 
-1. 検索エンジンへのアクセスは、HTTP 基本認証によってさらに保護されます。 検索エンジンに到達するリクエストは、SSL 経由で送信される必要があります *および* 有効なユーザー名とパスワードを指定します。
+1. 検索エンジンへのアクセスは、HTTP 基本認証によってさらに保護されます。 検索エンジンに到達するには、リクエストが SSL を経由する必要があります *そして* 有効なユーザー名とパスワードを指定します）。
 
 1. 検索エンジンがリクエストを処理します。
 
@@ -82,10 +82,10 @@ Adobe Commerce 2.4.4 以降をインストールする前に、Elasticsearchま�
 
 ファイアウォールまたは SELinux が有効な状態での通信を許可するルールを設定するには、次のリソースを参照してください。
 
-* [iptables の使い方](https://help.ubuntu.com/community/IptablesHowTo)
-* [iptables ルールの編集方法（fedora プロジェクト）](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
-* [SELinux の概要（CentOS.org）](https://www.centos.org)
-* [SELinux のハウツー Wiki （CentOS.org）](https://wiki.centos.org/HowTos/SELinux)
+* [iptables の使い方 ](https://help.ubuntu.com/community/IptablesHowTo)
+* [iptables ルールの編集方法（fedora プロジェクト） ](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
+* [SELinux の概要（CentOS.org） ](https://www.centos.org)
+* [SELinux のハウツー Wiki （CentOS.org） ](https://wiki.centos.org/HowTos/SELinux)
 
 ### Java Software Development Kit のインストール
 
@@ -95,7 +95,7 @@ Java が既にインストールされているかどうかを確認するには
 java -version
 ```
 
-メッセージが `java: command not found` が表示されます。次の節で説明するように Java SDK をインストールする必要があります。
+メッセージ `java: command not found` が表示された場合は、次の節で説明するように Java SDK をインストールする必要があります。
 
 以下のセクションの 1 つを参照してください。
 
@@ -104,9 +104,9 @@ java -version
 
 #### CentOS への JDK のインストール
 
-これを表示 [Digital Ocean チュートリアル](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8).
+詳しくは、この [Digital Ocean チュートリアル ](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8) を参照してください。
 
-必ず JDK とをインストールしてください。 *ではない* JRE。
+JRE ではなく JDK をインストールし *くだ* い。
 
 ```bash
 yum -y install java-1.8.0-openjdk
@@ -114,11 +114,11 @@ yum -y install java-1.8.0-openjdk
 
 >[!NOTE]
 >
->Java バージョン 8 は、すべてのオペレーティングシステムで使用できるわけではありません。 例えば、 [ubuntu で利用可能なパッケージのリストを検索します](https://packages.ubuntu.com/).
+>Java バージョン 8 は、すべてのオペレーティングシステムで使用できるわけではありません。 例えば、[Ubuntu で利用可能なパッケージのリストを検索 ](https://packages.ubuntu.com/) できます。
 
 #### Ubuntu への JDK のインストール
 
-Ubuntu に JDK 1.8 をインストールするには、次のコマンドをユーザーとして入力します。 `root` 権限：
+Ubuntu に JDK 1.8 をインストールするには、`root` 権限を持つユーザーとして次のコマンドを入力します。
 
 ```bash
 apt-get -y update
@@ -128,11 +128,11 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-その他のオプションについては、を参照してください [Oracleドキュメント](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
+その他のオプションについては、[Oracleドキュメント ](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html) を参照してください。
 
 ### 検索エンジンのインストール
 
-フォロー [Elasticsearchのインストール](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) または [OpenSearch のインストールと設定](https://opensearch.org/docs/latest/opensearch/install/index/) プラットフォーム固有の手順の場合。
+プラットフォーム固有の手順については、[Elasticsearchのインストール ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) または [OpenSearch のインストールと設定 ](https://opensearch.org/docs/latest/opensearch/install/index/) に従ってください。
 
 Elasticsearchが動作していることを確認するには、動作しているサーバで次のコマンドを入力します。
 
@@ -159,10 +159,10 @@ curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 
 ## Elasticsearchのアップグレード
 
-こちらを参照してください [Elasticsearchのアップグレード](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストに関する完全な手順について説明します。 現在のElasticsearchのバージョンに応じて、クラスターの完全な再起動は必要な場合と不要な場合があります。
+データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストに関する手順について詳しくは、[Elasticsearchのアップグレード ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) を参照してください。 現在のElasticsearchのバージョンに応じて、クラスターの完全な再起動は必要な場合と不要な場合があります。
 
-Elasticsearchには JDK 1.8 以降が必要です。 参照： [Java Software Development Kit のインストール](#install-the-java-software-development-kit) インストールされている JDK のバージョンを確認します。
+Elasticsearchには JDK 1.8 以降が必要です。 インストールされている JDK のバージョンを確認するには、[Java Software Development Kit のインストール ](#install-the-java-software-development-kit) を参照してください。
 
 ## その他のリソース
 
-を参照してください。 [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) または [OpenSearch](https://opensearch.org/docs/latest/) ドキュメント。
+[Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) または [OpenSearch](https://opensearch.org/docs/latest/) ドキュメントを参照してください。

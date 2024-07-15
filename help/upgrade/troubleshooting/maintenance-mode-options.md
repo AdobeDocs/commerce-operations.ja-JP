@@ -17,13 +17,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このセクションのタスクは、を持つユーザーとして実行する必要があります。 `root` 権限。 開発者モードでは、カスタムメンテナンスページを設定できません。
+>この節で説明するタスクは、`root` 権限を持つユーザーとして実行する必要があります。 開発者モードでは、カスタムメンテナンスページを設定できません。
 
 ## カスタムメンテナンスページの作成
 
 メンテナンスページを作成し、そのページにリダイレクトするには、まず、次の名前のメンテナンスページを作成します。
 
-- Apache: `<web server docroot>/maintenance.html`
+- Apache:`<web server docroot>/maintenance.html`
 - nginx: `<magento_root>/maintenance.html`
 
 次の内容を追加します。
@@ -59,7 +59,7 @@ body
 この節の例では、メンテナンスページを設定する 1 つの方法である次のファイルの変更方法を示します。
 
 - Apache 2.4: `/etc/apache2/sites-available/000-default.conf`
-- Apache 2.2: `/etc/apache2/sites-available/default` （Ubuntu）、 `/etc/httpd/conf/httpd.conf` （CentOS）
+- Apache 2.2:`/etc/apache2/sites-available/default` （Ubuntu）、`/etc/httpd/conf/httpd.conf` （CentOS）
 
 カスタムメンテナンスページにトラフィックをリダイレクトするには：
 
@@ -94,9 +94,9 @@ body
    touch <web server docroot>/maintenance.enable
    ```
 
-1. [システムのアップグレード](../implementation/perform-upgrade.md).
+1. [ システムをアップグレードします ](../implementation/perform-upgrade.md)。
 1. サイトをテストし、正しく機能することを確認します。
-1. アップグレードが完了したら、を削除します。 `maintenance.enable`.
+1. アップグレードが完了したら、`maintenance.enable` を削除します。
 
 ## nginx のカスタムメンテナンスページ
 
@@ -105,9 +105,9 @@ body
 カスタムメンテナンスページにトラフィックをリダイレクトするには：
 
 1. テキストエディターを使用して、サーバーブロックを含む nginx 設定ファイルを開きます。
-1. 次のコードをサーバーブロック（`server` 明確にする目的でのみ表示されます。2 番目のサーバーブロックは追加しないでください）。
+1. サーバーブロックに次の内容を追加します（`server` の内容が明確になるように表示されています。2 つ目のサーバーブロックは追加しないでください）。
 
-   Magentoがインストールされているシステムの IP アドレス 192.0.2.110 と 192.0.2.115 を次のように許可リストに加えるします。 `/var/www/html/magento2`:
+   次の許可リストは、Magentoが `/var/www/html/magento2` にインストールされているシステムの IP アドレス 192.0.2.110 と 192.0.2.115 です。
 
    ```conf
    server {
@@ -154,9 +154,9 @@ body
    service nginx reload
    ```
 
-1. [システムのアップグレード](../implementation/perform-upgrade.md).
+1. [ システムをアップグレードします ](../implementation/perform-upgrade.md)。
 1. サイトをテストし、正しく機能することを確認します。
-1. アップグレードが完了したら、を削除するか、の名前を変更します `maintenance.enable`
+1. アップグレードが完了したら、`maintenance.enable` を削除するか、名前を変更します。
 1. nginx 設定をリロードします。
 
    ```bash

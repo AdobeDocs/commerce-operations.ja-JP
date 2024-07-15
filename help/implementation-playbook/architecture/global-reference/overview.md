@@ -19,9 +19,9 @@ ht-degree: 0%
 
 複数の現地市場で複数のブランド向けに複数のサイトを持ち（ローカライズされた通貨、言語、メディア、共有カタログ、独自の買い物かごがある）、同じ機能と統合を実装するための不要なコストを回避したい場合は、グローバル参照アーキテクチャ（GRA）が最適な選択肢です。
 
-![アーキテクチャの相違のコストを説明する表](../../../assets/playbooks/divergent-architecture.svg)
+![ アーキテクチャの相違のコストを説明する表 ](../../../assets/playbooks/divergent-architecture.svg)
 
-![アーキテクチャの統合コストを説明する表](../../../assets/playbooks/consolidated-architecture.svg)
+![ アーキテクチャの統合コストを説明する表 ](../../../assets/playbooks/consolidated-architecture.svg)
 
 GRA は次のとおりです。
 
@@ -55,4 +55,4 @@ GRA の影響：
 
 >[!TIP]
 >
->参照： [GRA の例](examples.md).
+>[GRA の例 ](examples.md) を参照してください。

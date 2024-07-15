@@ -16,10 +16,10 @@ Adobe Commerce モジュールおよび拡張機能を管理するには、コ�
 
 ## モジュールの有効化または無効化
 
-モジュールを有効または無効にするには、を参照してください。 [モジュールの有効化または無効化](../../installation/tutorials/manage-modules.md).
+モジュールを有効または無効にする方法については、[ モジュールの有効/無効 ](../../installation/tutorials/manage-modules.md) を参照してください。
 
 ## モジュールのアンインストール
 
-モジュールをアンインストールするには、を参照してください。 [モジュールのアンインストール](../../installation/tutorials/uninstall-modules.md).
+モジュールをアンインストールするには、[ モジュールのアンインストール ](../../installation/tutorials/uninstall-modules.md) を参照してください。
 
-テーマをアンインストールするには、 [`theme:uninstall`](../../installation/tutorials/themes.md) コマンド。
+テーマをアンインストールするには、[`theme:uninstall`](../../installation/tutorials/themes.md) コマンドを使用します。

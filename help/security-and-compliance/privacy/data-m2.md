@@ -28,25 +28,25 @@ ht-degree: 0%
 
 ユーザーは、アカウントの登録時、チェックアウト時などのイベントに、顧客、住所、支払い情報を入力できます。
 
-![フロントエンドデータのエントリポイント](../../assets/security-compliance/frontend-data-entry-points.svg)
+![ フロントエンドデータエントリポイント ](../../assets/security-compliance/frontend-data-entry-points.svg)
 
 ### フロントエンド データ アクセス ポイント
 
 Adobe Commerceは、ユーザーがログインして複数の異なるページを表示した場合、またはチェックアウトした場合に、ユーザー情報を読み込みます。
 
-![フロントエンド データ アクセス ポイント](../../assets/security-compliance/frontend-data-access-points.svg)
+![ フロントエンドデータアクセスポイント ](../../assets/security-compliance/frontend-data-access-points.svg)
 
 ### バックエンドデータのエントリポイント
 
 マーチャントは、管理者から顧客または注文を作成する際に、顧客情報、住所データおよび支払いデータを入力できます。
 
-![バックエンドデータのエントリポイント](../../assets/security-compliance/backend-data-entry-points.svg)
+![ バックエンドデータエントリポイント ](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### バックエンドのデータアクセスポイント
 
 Adobe Commerceは、マーチャントが複数のタイプのグリッドを表示したり、グリッドをクリックして詳細情報を表示したり、その他の様々なタスクを実行したりすると、顧客情報を読み込みます。
 
-![バックエンドのデータアクセスポイント](../../assets/security-compliance/backend-data-access-points.svg)
+![ バックエンドのデータアクセスポイント ](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## データベースエンティティ
 
@@ -71,7 +71,7 @@ Adobe Commerceは、次の顧客属性を格納するように設定できます
 
 #### `customer_entity` および「customer_entity」参照
 
-次の列 `customer_entity` テーブルには、顧客情報が格納されます。
+顧客情報は、`customer_entity` テーブルの次のカラムに格納されます。
 
 | 列 | データタイプ |
 | ------------ | ------------ |
@@ -84,7 +84,7 @@ Adobe Commerceは、次の顧客属性を格納するように設定できます
 | `dob` | 日付 |
 | `gender` | smallint （5） |
 
-これらのテーブルは、 `customer_entity` また、カスタム顧客属性を含めることができます。
+次の表は、`customer_entity` を参照し、カスタム顧客属性を含めることができます。
 
 | テーブル | 列 | データタイプ |
 | -------------------------- | ------- | ------------- |
@@ -96,7 +96,7 @@ Adobe Commerceは、次の顧客属性を格納するように設定できます
 
 #### `customer_grid_flat` テーブル
 
-次の列 `customer_grid_flat` テーブルには、顧客情報が格納されます。
+顧客情報は、`customer_grid_flat` テーブルの次のカラムに格納されます。
 
 | 列 | データタイプ |
 | -------------------- | ------------ |
@@ -137,9 +137,9 @@ Adobe Commerceには、次の顧客属性が格納されます。
 - VAT 番号
 - 郵便番号
 
-#### `customer_address_entity` および `customer_address_entity` 参照
+#### `customer_address_entity` と `customer_address_entity` の参照
 
-次の列 `customer_address_entity` テーブルには、顧客情報が格納されます。
+顧客情報は、`customer_address_entity` テーブルの次のカラムに格納されます。
 
 | 列 | データタイプ |
 | ------------ | ------------ |
@@ -158,7 +158,7 @@ Adobe Commerceには、次の顧客属性が格納されます。
 | `telephone` | varchar （255） |
 | `vat_id` | varchar （255） |
 
-これらのテーブルは、 `customer_address_entity` また、カスタム顧客属性を含めることができます。
+次の表は、`customer_address_entity` を参照し、カスタム顧客属性を含めることができます。
 
 | テーブル | 列 | データタイプ |
 | ---------------------------------- | ------- | ------------- |
@@ -170,11 +170,11 @@ Adobe Commerceには、次の顧客属性が格納されます。
 
 ### 注文データ
 
-この `sales_order` および関連するテーブルには、顧客名、請求先と配送先住所、関連するデータが含まれています。
+`sales_order` および関連するテーブルには、顧客名、請求先および配送先住所、関連するデータが含まれています。
 
 #### `sales_order` テーブル
 
-次の列 `sales_order` テーブルには、顧客情報が格納されます。
+顧客情報は、`sales_order` テーブルの次のカラムに格納されます。
 
 | 列 | データタイプ |
 | --------------------- | ------------ |
@@ -195,7 +195,7 @@ Adobe Commerceには、次の顧客属性が格納されます。
 
 #### `sales_order_address` テーブル
 
-この `sales_order_address` テーブルには、顧客の住所が含まれます。
+`sales_order_address` テーブルには、顧客の住所が格納されます。
 
 | 列 | データタイプ |
 | --------------------- | ------------ |
@@ -218,7 +218,7 @@ Adobe Commerceには、次の顧客属性が格納されます。
 
 #### `sales_order_grid` テーブル
 
-次の列 `sales_order_grid` テーブルには、顧客情報が格納されます。
+顧客情報は、`sales_order_grid` テーブルの次のカラムに格納されます。
 
 | 列 | データタイプ |
 | ---------------------- | ------------ |
@@ -237,7 +237,7 @@ Adobe Commerceには、次の顧客属性が格納されます。
 
 #### `quote` テーブル
 
-次の列 `quote` テーブルには、顧客情報が格納されます。
+顧客情報は、`quote` テーブルの次のカラムに格納されます。
 
 | 列 | データタイプ |
 | --------------------- | ------------ |
@@ -254,7 +254,7 @@ Adobe Commerceには、次の顧客属性が格納されます。
 
 #### `quote_address` テーブル
 
-次の列 `quote_address` テーブルには、顧客情報が格納されます。
+顧客情報は、`quote_address` テーブルの次のカラムに格納されます。
 
 | 列 | データタイプ |
 | ------------- | ------------ |
@@ -277,7 +277,7 @@ Adobe Commerceには、次の顧客属性が格納されます。
 
 ### 支払いデータ
 
-この `sales_order_payment` 表には、クレジット・カード情報およびその他の取引情報が含まれます。
+`sales_order_payment` テーブルは、クレジットカード情報およびその他のトランザクション情報を含む。
 
 | 列 | データタイプ |
 | ------------------------ | ------------ |
@@ -299,7 +299,7 @@ Adobe Commerceは、顧客が個人の営業やイベントへの招待状を送
 
 #### `magento_invitation` テーブル
 
-この `magento_invitation` テーブルには、顧客 ID、メールおよびリファラル ID が含まれます。
+`magento_invitation` テーブルには、顧客 ID、メールおよびリファラル ID が含まれます。
 
 | 列 | データタイプ |
 | ------------- | ------------ |
@@ -309,7 +309,7 @@ Adobe Commerceは、顧客が個人の営業やイベントへの招待状を送
 
 #### `magento_invitation_track` テーブル
 
-この `magento_invitation_track` テーブルには、顧客情報も含まれます。
+`magento_invitation_track` の表には、顧客情報も含まれています。
 
 | 列 | データタイプ |
 | ------------- | --------- |
@@ -318,7 +318,7 @@ Adobe Commerceは、顧客が個人の営業やイベントへの招待状を送
 
 ### 顧客を参照するその他のテーブル
 
-以下のテーブルには、 `customer_id` 列：
+次のテーブルには、`customer_id` の列が含まれています。
 
 - `catalog_compare_item`
 - `catalog_product_frontend_action`

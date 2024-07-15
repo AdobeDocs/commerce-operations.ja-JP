@@ -14,15 +14,15 @@ ht-degree: 0%
 
 ワニス ソフトウェアのインストールはこのガイドの範囲外です。 Varnish のインストールの詳細については、次を参照してください。
 
-- [インストールガイド](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
-- [ワニスの取り付けガイド](https://www.varnish-cache.org/docs)
-- [ワニスをインストールする方法（Tecmint）](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
+- [ インストールガイド ](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
+- [ ワニス取り付けガイド ](https://www.varnish-cache.org/docs)
+- [ ワニス（Tecmint）のインストール方法 ](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
 
 >[!INFO]
 >
 >このトピックは、CentOS および Apache 2.4 の Varnish 用に記述されています。別の環境で Varnish を設定している場合、一部のコマンドは異なる可能性があります。 詳しくは、前のドキュメントを参照してください。
 >
->Saint モードなどの Varnish モジュール（vmod）をインストールする場合は、パッケージからインストールするのではなく、コードをコンパイルして Varnish をインストールする必要があります。 参照： [セイント モード](config-varnish-advanced.md#saint-mode) を参照してください。
+>Saint モードなどの Varnish モジュール（vmod）をインストールする場合は、パッケージからインストールするのではなく、コードをコンパイルして Varnish をインストールする必要があります。 詳しくは、[ セイント モード ](config-varnish-advanced.md#saint-mode) を参照してください。
 
 ## Varnish バージョンを確認します。
 
@@ -32,4 +32,4 @@ ht-degree: 0%
 varnishd -V
 ```
 
-次のことを確認します [Adobe Commerceのサポート](../../installation/system-requirements.md) 続行する前に、インストールされているバージョンのワニス。 サポートされていないバージョンを実行している場合は、サポートされているバージョンにアップグレードする必要があります。 詳細については、Varnish のインストール ドキュメントを参照してください。
+続行する前に、インストールされているバージョンの Varnish](../../installation/system-requirements.md)[Adobe Commerceがサポートしていることを確認してください。 サポートされていないバージョンを実行している場合は、サポートされているバージョンにアップグレードする必要があります。 詳細については、Varnish のインストール ドキュメントを参照してください。

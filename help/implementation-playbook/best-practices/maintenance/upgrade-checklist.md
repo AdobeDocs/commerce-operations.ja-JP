@@ -21,11 +21,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->正常にアップグレードするための技術的な手順について詳しくは、次を参照してください [アップグレードの前提条件の完了](../../../upgrade/prepare/prerequisites.md) アドビのユーザードキュメントをご覧ください。
+>正常にアップグレードするための技術的な手順について詳しくは、アドビのユーザードキュメントの [ アップグレードの前提条件を完了 ](../../../upgrade/prepare/prerequisites.md) を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[サポートされているすべてのバージョン](../../../release/versions.md) （件中）:
+[ サポートされているすべてのバージョン ](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ## 予算とタイミング
 
-▢ Adobe Commerceの使用 [リリーススケジュール](../../../release/schedule.md) 次のアップグレードを計画し、事前に準備します。
+▢ Adobe Commerce[ リリーススケジュール ](../../../release/schedule.md) を使用して、次のアップグレードを計画し、事前に準備します。
 
 ▢予想されるニーズに基づいて、どのバージョン（完全またはセキュリティのみ）を採用すると思うかを話し合います。
 
@@ -60,14 +60,14 @@ ht-degree: 0%
 
 ▢早期アクセスアクティビティ
 
-- パートナーの参加： [ベータ版](../../../release/beta.md)
-- ベータ版リリースノートレビュー。
+- パートナーは [Beta](../../../release/beta.md) に参加しています
+- Beta リリースノートのレビュー
 
 ▢予算、タイムライン、範囲について合意します。
 
-▢実行 [互換性アップグレードツール](../../../upgrade/upgrade-compatibility-tool/overview.md)
+[ アップグレード互換性ツール ](../../../upgrade/upgrade-compatibility-tool/overview.md) を実行してくださ▢。
 
-▢で特定された問題に対処するためにアップグレードの使用を検討する [サイト全体分析ツール](../../../tools/site-wide-analysis-tool/intro.md).
+▢[Site Wide Analysis Tool](../../../tools/site-wide-analysis-tool/intro.md) で特定された問題に対処するために、アップグレードの使用を検討してください。
 
 ▢ ドキュメントの依存関係と、PHP や Elastic Search のバージョンなど、必要な技術的なスタック変更。
 
@@ -77,17 +77,17 @@ ht-degree: 0%
 
 ダウンタイムが予想される場合は、メンテナンスウィンドウを▢定します。
 
-▢ テスト方法を確認して承認し、Adobe Commerceの使用を検討します。 [テストフレームワーク](https://developer.adobe.com/commerce/testing/) またはサードパーティの自動処理スイートです。
+▢ テスト方法を確認して承認します。Adobe Commerce[ テストフレームワーク ](https://developer.adobe.com/commerce/testing/) またはサードパーティの自動処理スイートの使用を検討します。
 
 ▢すべての拡張機能とカスタマイズに互換性があることを確認します。
 
 ▢ローンチ後のプレイブックを確認して更新します。アップグレード中またはアップグレード後に問題が見つかった場合に使用します。
 
-## デプロイメント後
+## Post デプロイメント
 
 ▢ パフォーマンス、注文処理、分析など、サイトで問題が発生していないかを監視します。
 
-▢ Adobe Commerceの実行 [セキュリティスキャン](https://account.magento.com/scanner/dashboard/) または、その他のサードパーティが、潜在的なセキュリティの脆弱性をスキャンして確認します。
+▢ Adobe Commerce[ セキュリティスキャン ](https://account.magento.com/scanner/dashboard/) またはその他のサードパーティのスキャンを実行し、潜在的なセキュリティの脆弱性を確認します。
 
 ▢すべての関係者と遡及を実行し、うまくいったこと、うまくいかなかったこと、改善方法を文書化します。
 

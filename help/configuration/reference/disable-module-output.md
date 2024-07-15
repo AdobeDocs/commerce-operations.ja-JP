@@ -13,7 +13,7 @@ ht-degree: 0%
 
 デフォルトでは、すべてのモジュールは、モジュール出力をビューに書き込めるように設定されています。 出力をオフにすると、ハードな依存関係のために無効にできないモジュールを基本的に無効にできます。
 
-例： `Customer` モジュールは以下に依存： `Review` モジュール、その他 `Review` モジュールは無効にできません。 ただし、顧客によるレビューを許可しない場合は、 `Review` モジュール。
+例えば、`Customer` モジュールは `Review` モジュールに依存するので、`Review` モジュールを無効にすることはできません。 ただし、顧客にレビューを提供させたくない場合は、`Review` モジュールからの出力をオフにできます。
 
 >[!INFO]
 >
@@ -32,13 +32,13 @@ ht-degree: 0%
 
 Commerce アプリケーションの複数のインスタンスを含む、パイプラインデプロイメントまたはその他のデプロイメントでモジュール出力を無効にするには：
 
-1. を編集する `Backend` モジュールの `config.xml` ファイル。
+1. `Backend` モジュールの `config.xml` ファイルを編集します。
 1. 設定変更をエクスポートします。
 
-### を編集する `Backend` モジュール `config.xml` ファイル
+### `Backend` module `config.xml` ファイルを編集します。
 
-1. オリジナルをアーカイブ `config.xml` ファイル。
-1. 次のような行をに追加します `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml` ファイル（の直下） `<default>` 要素：
+1. 元の `config.xml` ファイルをアーカイブします。
+1. `<default>` 要素の直下に、`<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml` ファイルに次のような行を追加します。
 
    ```xml
    <advanced>
@@ -50,9 +50,9 @@ Commerce アプリケーションの複数のインスタンスを含む、パ�
 
    ここで：
 
-   - `<modules_disable_output>` モジュールのリストが含まれます。
+   - `<modules_disable_output>` には、モジュールのリストが含まれています。
    - `<Magento_Newsletter></Magento_Newsletter>` 出力を無効にするモジュールを指定します。
-   - `1` は、の出力を無効にするフラグ `Magento_Newsletter` モジュール。
+   - `1` は、`Magento_Newsletter` モジュールの出力を無効にするフラグです。
 
 この設定のサンプル結果として、顧客はニュースレターを受信するために新規登録できなくなりました。
 
@@ -64,7 +64,7 @@ Commerce アプリケーションの複数のインスタンスを含む、パ�
 bin/magento app:config:dump
 ```
 
-結果は、に書き込まれます `<Magento_install_dir>/app/etc/config.php` ファイル。
+結果は `<Magento_install_dir>/app/etc/config.php` ファイルに書き込まれます。
 
 次に、キャッシュをクリアして新しい設定を有効にします。
 
@@ -72,14 +72,14 @@ bin/magento app:config:dump
 bin/magento cache:clean config
 ```
 
-参照： [設定のエクスポート](../cli/export-configuration.md).
+[ 設定の書き出し ](../cli/export-configuration.md) を参照してください。
 
 ## シンプルなデプロイメントでのモジュール出力の無効化
 
 変更内容を配布する必要がないので、Commerceの 1 つのインスタンスでモジュール出力を無効にする手順が簡単です。
 
-1. オリジナルをアーカイブ `<Magento_install_dir>/app/etc/config.php` ファイル。
-1. を追加 `advanced` および `modules_disable_output` セクションから `config.php` ファイル（存在しない場合）:
+1. 元の `<Magento_install_dir>/app/etc/config.php` ファイルをアーカイブします。
+1. `advanced` セクションと `modules_disable_output` セクションが存在しない場合は、`config.php` ファイルに追加します。
 
    ```php
    'system' =>
@@ -100,5 +100,5 @@ bin/magento cache:clean config
      ),
    ```
 
-この例では、 `Magento_Review` モジュールが無効になり、お客様は製品をレビューできなくなりました。
-出力を再度有効にするには、値をに設定します `0`.
+この例では、`Magento_Review` モジュールの出力は無効になっており、顧客は製品をレビューできなくなります。
+出力を再度有効にするには、値を `0` に設定します。

@@ -20,27 +20,27 @@ ht-degree: 0%
 
 >[!TIP]
 >
->参照： [ベストプラクティス](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) エンタープライズ規模でのAdobe Commerceの一元的なパッチ適用について詳しくは、
+>企業規模でのAdobe Commerceの一元的なパッチ適用については、[ ベストプラクティス ](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) を参照してください。
 
 ## コンポーザー
 
 >[!IMPORTANT]
 >
->公式のクオリティパッチを適用するには、 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. カスタムパッチをデプロイする前に、必ず包括的なテストを実施してください。
+>公式の品質パッチを適用するには、[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} を使用します。 カスタムパッチをデプロイする前に、必ず包括的なテストを実施してください。
 
 Composer を使用してカスタム パッチを適用するには：
 
 1. コマンドラインアプリケーションを開き、プロジェクトディレクトリに移動します。
-1. を追加 `cweagans/composer-patches` へのプラグイン `composer.json` ファイル。
+1. `composer.json` ファイルに `cweagans/composer-patches` プラグインを追加します。
 
    ```bash
    composer require cweagans/composer-patches
    ```
 
-1. を編集する `composer.json` をファイルに保存し、次のセクションを追加して指定します。
-   - **モジュール：** *\&quot;magento/module-payment\&quot;*
+1. `composer.json` ファイルを編集し、次のセクションを追加して指定します。
+   - **Module:** *\&quot;magento/module-payment\&quot;*
    - **タイトル：** *\&quot;MAGETWO-56934：無効なクレジットカードでAuthorize.netを注文すると、チェックアウトページがフリーズする\&quot;*
-   - **パッチを適用するパス：** *\&quot;patches/composer/github-issue-6474.diff\&quot;*
+   - **パッチのパス：** *\&quot;patches/composer/github-issue-6474.diff\&quot;*
 
    例：
 
@@ -57,13 +57,13 @@ Composer を使用してカスタム パッチを適用するには：
 
    パッチが複数のモジュールに影響を与える場合は、複数のモジュールをターゲットとする複数のパッチファイルを作成する必要があります。
 
-1. パッチを適用します。 の使用 `-v` デバッグ情報を表示する場合にのみ選択します。
+1. パッチを適用します。 デバッグ情報を表示する場合にのみ、「`-v`」オプションを使用します。
 
    ```bash
    composer -v install
    ```
 
-1. を更新 `composer.lock` ファイル。 ロック ファイルは、オブジェクト内の各 Composer パッケージに適用されたパッチを追跡します。
+1. `composer.lock` ファイルを更新します。 ロック ファイルは、オブジェクト内の各 Composer パッケージに適用されたパッチを追跡します。
 
    ```bash
    composer update --lock
@@ -73,8 +73,8 @@ Composer を使用してカスタム パッチを適用するには：
 
 コマンドラインからパッチを適用するには：
 
-1. ローカルファイルをにアップロードします `<Magento_root>` ftp、SFTP、SSH、または通常の転送方法を使用しているサーバー上のディレクトリ。
-1. としてサーバーにログインします [管理者ユーザー](../../configuration/cli/config-cli.md#prerequisites) ファイルが正しいディレクトリにあることを確認します。
+1. FTP、SFTP、SSH、または通常の転送方法を使用して、ローカルファイルをサーバー上の `<Magento_root>` ディレクトリにアップロードします。
+1. [admin ユーザー ](../../configuration/cli/config-cli.md#prerequisites) としてサーバーにログインし、ファイルが正しいディレクトリにあることを確認します。
 1. コマンドラインインターフェイスで、パッチ拡張機能に従って次のコマンドを実行します。
 
    ```bash
@@ -85,8 +85,8 @@ Composer を使用してカスタム パッチを適用するには：
 
    >[!NOTE]
    >
-   >コマンドラインに次と表示される場合： `File to patch:`つまり、パスが正しいと思われる場合でも、目的のファイルを見つけることができません。 コマンドラインターミナルに表示されるボックスの最初の行は、パッチを適用するファイルを示します。 ファイルパスをコピーして、に貼り付けます。 `File to patch:` プロンプトを表示して、を押します `Enter` パッチが完了します。
+   >コマンドラインに「`File to patch:`」と表示されている場合は、パスが正しく見えても、目的のファイルを見つけることができないことを意味します。 コマンドラインターミナルに表示されるボックスの最初の行は、パッチを適用するファイルを示します。 ファイルパスをコピーして `File to patch:` プロンプトに貼り付け、`Enter` キーを押すと、パッチが完了します。
 
-1. 変更を反映するには、の管理画面でキャッシュを更新します。 **システム** > ツール > **キャッシュ管理**.
+1. 変更を反映するには、管理画面の **システム**/ツール/**キャッシュ管理** でキャッシュを更新します。
 
    または、同じコマンドを使用してパッチをローカルに適用し、正常にコミットおよびプッシュすることもできます。

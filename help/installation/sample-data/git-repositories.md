@@ -15,39 +15,39 @@ ht-degree: 0%
 
 コントリビューションを行う開発者でない場合は、ページの左側にある目次に表示されている他のオプションの 1 つを選択します。
 
-コントリビューション開発者は、この方法を使用してサンプルデータをインストールできます *のみ* 次の条件に当てはまる場合：
+コントリビューションを行う開発者は、次の条件が満たされる場合に、このサンプルデータのインストール方法を使用できます *のみ*。
 
 * Magento Open Sourceを使用している場合
-* あなた [github リポジトリのクローンを作成しました](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [GitHub リポジトリのクローンを作成しました ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 >[!WARNING]
 >
->サンプルデータは、次のいずれかで使用できます `develop` 分岐（より最新）またはリリースされた分岐（など） `2.4` （より安定）。 リリース済みのブランチは安定性が高いので、使用することをお勧めします。 リポジトリにコードを提供していて、最新のコードが必要な場合は、を使用します `develop` 分岐。 選択するブランチに関係なく、次の操作を行う必要があります [クローン](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) Magento Open Source GitHub リポジトリの対応するブランチ。 例えば、のサンプルデータです `develop` ブランチを使用できます *のみ* （Magento Open Sourceを使用） `develop` 分岐。
+>サンプルデータは、`develop` ブランチ（より最新）またはリリースされたブランチ（より安定した `2.4` など）で使用できます。 リリース済みのブランチは安定性が高いので、使用することをお勧めします。 リポジトリにコードを提供していて、最新のコードが必要な場合は、`develop` ブランチを使用します。 選択するブランチに関係なく、Magento Open Source GitHub リポジトリの対応するブランチを [ クローン ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) する必要があります。 例えば、`develop` 分岐のサンプルデータは、Magento Open Source `develop` 分岐と共に *のみ* 使用できます。
 
 ## サンプルデータリポジトリのクローンの作成
 
 この項では、サンプル・データ・リポジトリをクローニングしてサンプル・データをインストールする方法について説明します。 サンプルデータリポジトリは、次のいずれかの方法でクローンできます。
 
-* を使用したクローン [SSH プロトコル](#clone-with-ssh)
-* を使用したクローン [HTTPS プロトコル](#clone-with-https)
+* [SSH プロトコル ](#clone-with-ssh) を使用したクローン
+* [HTTPS プロトコル ](#clone-with-https) を使用して複製
 
 ### SSH によるクローン
 
 SSH プロトコルを使用してサンプルデータ GitHub リポジトリのクローンを作成するには：
 
-1. Web ブラウザーで、 [サンプルデータリポジトリ](https://github.com/magento/magento2-sample-data).
-1. 支店の名前の横にある「」をクリックします **SSH** リストから。
-1. クリック **クリップボードにコピー**
+1. Web ブラウザーで、[ サンプルデータリポジトリ ](https://github.com/magento/magento2-sample-data) に移動します。
+1. ブランチ名の横にあるリストの「**SSH**」をクリックします。
+1. 「**クリップボードにコピー**」をクリックします
 
    次の図に例を示します。
 
-   ![SSH を使用して GitHub リポジトリを複製します](../../assets/installation/install_mage2_clone-ssh.png)
+   ![SSH を使用した GitHub リポジトリのクローン ](../../assets/installation/install_mage2_clone-ssh.png)
 
 1. を web サーバーの docroot ディレクトリに変更します。
 
-   通常、Ubuntu の場合はです `/var/www` また、CentOS の場合はです。 `/var/www/html`.
+   通常、Ubuntu の場合は `/var/www` で、CentOS の場合は `/var/www/html` です。
 
-1. Enter `git clone` そして、以前に取得した値を貼り付けます。
+1. `git clone` と入力し、以前に取得した値を貼り付けます。
 
    次に例を示します。
 
@@ -59,7 +59,7 @@ SSH プロトコルを使用してサンプルデータ GitHub リポジトリ�
 
    >[!NOTE]
    >
-   >次のエラーが表示される場合は、以下を確認します [が SSH キーを共有しました](https://docs.github.com/articles/generating-ssh-keys/) github を使用する場合：<br>
+   >次のエラーが表示される場合は、[SSH キーを共有 ](https://docs.github.com/articles/generating-ssh-keys/) していることを GitHub で確認してください。<br>
 
    ```terminal
    Cloning into 'magento2'...
@@ -67,19 +67,19 @@ SSH プロトコルを使用してサンプルデータ GitHub リポジトリ�
    fatal: The remote end hung up unexpectedly
    ```
 
-1. メインから使用したブランチに対応する、サンプルデータリポジトリのブランチをチェックアウトします `magento2` リポジトリ。
+1. メインの `magento2` リポジトリから、使用したブランチに対応するサンプルデータリポジトリのブランチをチェックアウトします。
 
    例：
 
-   を使用した場合 `2.4-develop` Magento Open Source GitHub リポジトリのブランチである、Sample Data ブランチは、 `2.4-develop`.
+   Magento Open Source GitHub リポジトリの `2.4-develop` ブランチを使用した場合は、Sample Data ブランチを `2.4-develop` す必要があります。
 
-   正しいブランチをチェックアウトするには、サンプルデータリポジトリのルートディレクトリから次のコマンドを実行します（必要な場合）。 `2.4-develop` ブランチ）:
+   正しいブランチをチェックアウトするには、サンプルデータリポジトリのルートディレクトリ（`2.4-develop` ブランチが必要な場合）から次のコマンドを実行します。
 
    ```bash
    git checkout 2.4-develop
    ```
 
-1. をに変更 `<app_root>`.
+1. `<app_root>` に変更します。
 1. 次のコマンドを入力して、クローンを作成したファイル間にシンボリックリンクを作成し、サンプルデータが正しく動作するようにします。
 
    ```bash
@@ -88,7 +88,7 @@ SSH プロトコルを使用してサンプルデータ GitHub リポジトリ�
 
 1. コマンドが完了するまで待ちます。
 
-1. 参照： [ファイルシステムの権限と所有権の設定](#set-file-system-ownership-and-permissions).
+1. [ ファイルシステムの権限と所有権の設定 ](#set-file-system-ownership-and-permissions) を参照してください。
 
 1. 次のコマンドを実行します。
 
@@ -100,19 +100,19 @@ SSH プロトコルを使用してサンプルデータ GitHub リポジトリ�
 
 HTTPS プロトコルを使用してサンプルデータ GitHub リポジトリを複製するには：
 
-1. Web ブラウザーで、 [サンプルデータリポジトリ](https://github.com/magento/magento2-sample-data).
-1. ページの右側で、の **複製 URL** フィールド、クリック **HTTPS**.
-1. クリック **クリップボードにコピー**.
+1. Web ブラウザーで、[ サンプルデータリポジトリ ](https://github.com/magento/magento2-sample-data) に移動します。
+1. ページの右側にある「**クローン URL**」フィールドで **HTTPS** をクリックします。
+1. **クリップボードにコピー** をクリックします。
 
    次の図に例を示します。
 
-   ![HTTPS を使用して GitHub リポジトリを複製します](../../assets/installation/install_mage2_clone-https.png)
+   ![HTTPS を使用して GitHub リポジトリを複製する ](../../assets/installation/install_mage2_clone-https.png)
 
 1. を web サーバーの docroot ディレクトリに変更します。
 
-   通常、Ubuntu の場合はです `/var/www` また、CentOS の場合はです。 `/var/www/html`.
+   通常、Ubuntu の場合は `/var/www` で、CentOS の場合は `/var/www/html` です。
 
-1. Enter `git clone` そして、以前に取得した値を貼り付けます。
+1. `git clone` と入力し、以前に取得した値を貼り付けます。
 
    次に例を示します。
 
@@ -121,19 +121,19 @@ HTTPS プロトコルを使用してサンプルデータ GitHub リポジトリ
    ```
 
 1. リポジトリがサーバー上でクローンされるのを待ちます。
-1. メインから使用したブランチに対応する、サンプルデータリポジトリのブランチをチェックアウトします `magento2` リポジトリ。
+1. メインの `magento2` リポジトリから、使用したブランチに対応するサンプルデータリポジトリのブランチをチェックアウトします。
 
    例：
 
-   を使用した場合 `2.4-develop` Magento Open Source GitHub リポジトリのブランチである、Sample Data ブランチは、 `2.4-develop`.
+   Magento Open Source GitHub リポジトリの `2.4-develop` ブランチを使用した場合は、Sample Data ブランチを `2.4-develop` す必要があります。
 
-   正しいブランチをチェックアウトするには、サンプルデータリポジトリのルートディレクトリから次のコマンドを実行します（必要な場合）。 `2.4-develop` ブランチ）:
+   正しいブランチをチェックアウトするには、サンプルデータリポジトリのルートディレクトリ（`2.4-develop` ブランチが必要な場合）から次のコマンドを実行します。
 
    ```bash
    git checkout 2.4-develop
    ```
 
-1. をに変更 `<magento_root>`.
+1. `<magento_root>` に変更します。
 1. 次のコマンドを入力して、クローンを作成したファイル間にシンボリックリンクを作成し、サンプルデータが正しく動作するようにします。
 
    ```bash
@@ -151,7 +151,7 @@ HTTPS プロトコルを使用してサンプルデータ GitHub リポジトリ
 
 >[!WARNING]
 >
->サンプルデータをインストールする場合 *後* Adobe Commerceをインストールする際は、次のコマンドを実行してデータベースとスキーマを更新する必要もあります。
+>Adobe Commerceをインストールした *後* サンプルデータをインストールする場合は、次のコマンドも実行してデータベースとスキーマを更新する必要があります。
 >
 >```bash
 ><magento_root>/bin/magento setup:upgrade
@@ -159,7 +159,7 @@ HTTPS プロトコルを使用してサンプルデータ GitHub リポジトリ
 
 ## ファイルシステムの所有権と権限の設定
 
-なぜなら `php build-sample-data.php` スクリプトは、サンプルデータリポジトリとMagento Open Sourceリポジトリの間にシンボリックリンクを作成します。ファイルシステムの権限と所有権は、サンプルデータリポジトリで設定する必要があります。 これをおこなわないと、ストアフロントへのアクセスでエラーが発生します。
+`php build-sample-data.php` スクリプトはサンプル・データ・リポジトリとMagento Open Source・リポジトリの間にシンボリック・リンクを作成するため、サンプル・データ・リポジトリ内のファイル・システム権限と所有権を設定する必要があります。 これをおこなわないと、ストアフロントへのアクセスでエラーが発生します。
 
 サンプルデータリポジトリに対するファイルシステムの権限と所有権を設定するには、次の手順に従います。
 

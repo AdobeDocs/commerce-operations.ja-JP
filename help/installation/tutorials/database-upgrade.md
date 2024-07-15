@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # データベーススキーマとデータのアップグレード
 
-このコマンドを使用する前に、次の操作を行う必要があります [アプリケーションのインストール](../advanced.md).
+このコマンドを使用する前に、[ アプリケーションをインストールする ](../advanced.md) 必要があります。
 
 ## データベーススキーマとデータのアップグレード
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->A *component* モジュール、テーマ、言語パックのいずれかを指定できます。コンポーネントがCommerce Marketplaceから取得されるかどうかは関係ありません。
+>*コンポーネント* は、モジュール、テーマ、言語パックのいずれかにすることができます。コンポーネントがCommerce Marketplaceから取得されるかどうかは関係ありません。
 
 1. アップグレードを開始します。
 
@@ -31,7 +31,7 @@ ht-degree: 0%
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   ここで、 `--keep-generated` は、更新されないオプションの引数です [静的ビューファイル](../../configuration/cli/static-view-file-deployment.md). このオプションの引数は次の目的で使用されます *のみ* 限られた環境の中で、経験豊富なシステムインテグレーターによる検証。 使用する必要があります *のみ* 。対象： [実稼動モード](../../configuration/bootstrap/application-modes.md#production-mode). これは、 *ではない* 使用される [開発者モード](../../configuration/bootstrap/application-modes.md#developer-mode).
+   ここで、`--keep-generated` は、更新されないオプションの引数です [ 静的ビューファイル ](../../configuration/cli/static-view-file-deployment.md)。 このオプション引数は、経験豊富なシステムインテグレーターが限られた状況で使用する *のみ* です。 [ 実稼動モード *で* 使用する必要があ ](../../configuration/bootstrap/application-modes.md#production-mode) ます。 *開発者モード* では使用しないでください [](../../configuration/bootstrap/application-modes.md#developer-mode)。
 
 1. キャッシュのクリーンアップ：
 

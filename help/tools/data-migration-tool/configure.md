@@ -1,6 +1,6 @@
 ---
-title: の設定 [!DNL Data Migration Tool]
-description: を設定する 2 つの方法について説明します [!DNL Data Migration Tool] Magento1 とMagento2 との間でデータを転送する。
+title: ' [!DNL Data Migration Tool] を設定します。'
+description: Magento 1 とMagento 2 間でデータを転送する  [!DNL Data Migration Tool]  を設定する 2 つの方法について説明します。
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,12 +10,12 @@ ht-degree: 0%
 
 ---
 
-# の設定 [!DNL Data Migration Tool]
+# [!DNL Data Migration Tool] の設定
 
-をインストールしたら、 [!DNL Data Migration Tool]：次のディレクトリには、マッピングおよび設定ファイルが含まれています。
+[!DNL Data Migration Tool] をインストールすると、次のディレクトリにマッピングおよび設定ファイルが格納されます。
 
 * Magento Open Source:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`:Magento Open Source 1 からMagento Open Source 2 へ移行するための設定とスクリプト
+   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`:Magento Open Source 1 からMagento Open Source 2 への移行用の設定およびスクリプト
 
 * Adobe Commerce:
    * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`:Magento Open Source 1 からAdobe Commerce 2 に移行するための設定とスクリプト
@@ -25,13 +25,13 @@ ht-degree: 0%
 
 ## 移行の設定
 
-を設定する方法は 2 つあります [!DNL Data Migration Tool]:
+[!DNL Data Migration Tool] を設定する方法は 2 つあります。
 
-* の設定 [!DNL Data Migration Tool] 別のモジュールで（推奨）
-* 変更： [!DNL Data Migration Tool] での設定 `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/` ディレクトリ。
+* [!DNL Data Migration Tool] を別のモジュールで設定する（推奨）
+* `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/` ディレクトリの [!DNL Data Migration Tool] 設定を変更します。
 
 ソース管理を使用して移行設定を管理し、デプロイメントに使用するには、別のモジュールを作成する必要があります。
-を実行する予定がある場合 [!DNL Data Migration Tool] ローカルでのみ、内のファイルを `<your Magento 2 install dir>/vendor/magento/data-migration-tool/` ディレクトリを直接。
+[!DNL Data Migration Tool] をローカルでのみ実行する場合は、`<your Magento 2 install dir>/vendor/magento/data-migration-tool/` ディレクトリ内のファイルを直接編集できます。
 
 ### 別のモジュールでの移行の設定
 
@@ -92,9 +92,9 @@ ht-degree: 0%
    </config>
    ```
 
-1. をコピーします `config.xml.dist` の適切なディレクトリからの設定ファイル [!DNL Data Migration Tool] （`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>`）を追加して、 `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/config.xml` ファイル。
+1. [!DNL Data Migration Tool] （`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>`）の適切なディレクトリから `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/config.xml` ファイルに `config.xml.dist` 設定ファイルをコピーします。
 
-   例えば、を移行する場合 `Magento 1.9.3.6 Community Edition` 対象： `Magento 2 Open Source`:
+   例えば、`Magento 1.9.3.6 Community Edition` を `Magento 2 Open Source` に移行する場合は、次のようになります。
 
    ```bash
    cd <your Magento 2 install dir>
@@ -104,17 +104,17 @@ ht-degree: 0%
    cp vendor/magento/data-migration-tool/etc/opensource-to-opensource/1.9.3.6/config.xml.dist app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.3.6/config.xml
    ```
 
-1. が含まれる `config.xml` ファイルの場合、M1 および M2 データベースと暗号化キーへのアクセスの詳細を設定する必要があります。
+1. `config.xml` ファイルでは、アクセスの詳細を M1 および M2 データベースと暗号化キーに設定する必要があります。
 
-1. M1 ストアにカスタムの変更がある場合は、残りの設定ファイルをMagento 1 ストアのカスタマイズにマッピングする必要があります。 参照： [設定ファイルとマッピングファイルの操作](#migration-config).
+1. M1 ストアにカスタムの変更がある場合は、残りの設定ファイルをMagento 1 ストアのカスタマイズにマッピングする必要があります。 [ 設定およびマッピングファイルの操作 ](#migration-config) を参照してください。
 
-### での移行の設定 `vendor` フォルダー
+### フォルダーでの移行 `vendor` 設定
 
-データを移行する前に、を作成する必要があります `config.xml` 提供されたサンプルの設定ファイル。
+データを移行する前に、指定されたサンプルから `config.xml` 設定ファイルを作成する必要があります。
 
-を設定するには [!DNL Data Migration Tool] 移行の場合：
+[!DNL Data Migration Tool] を移行用に設定するには：
 
-1. アプリケーションサーバーにとしてログインするか、 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
+1. [ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインするか、に切り替えます。
 
 1. 次のディレクトリに変更します。
 
@@ -122,13 +122,13 @@ ht-degree: 0%
    <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>
    ```
 
-1. 次のコマンドを入力して、 `config.xml` 提供されたサンプルから：
+1. 次のコマンドを入力して、提供されたサンプルから `config.xml` を作成します。
 
    ```bash
    cp config.xml.dist config.xml
    ```
 
-1. 開く `config.xml` テキストエディター。
+1. `config.xml` をテキストエディターで開きます。
 
 1. 少なくとも、config.xml ファイルには、M1 および M2 データベースおよび暗号化キーへのアクセスの詳細が含まれている必要があります。
 
@@ -144,15 +144,15 @@ ht-degree: 0%
    </options>
    ```
 
-   この &lt;crypt_key> タグには値を含める必要があります。 内で見つけることができます。 `<key>` Magento 1 インスタンスのapp/etc/local.xml ファイルにあるタグ。
+   &lt;crypt_key> タグには値が含まれている必要があります。 `<key>` タグ内で検索できます。このタグは、Magento 1 インスタンスのapp/etc/local.xml ファイルにあります。
 
    オプションのパラメーター：
 
-   * データベース ユーザーのパスワード： `password=<password>`
-   * データベースのカスタム ポート： `port=<port>`
-   * テーブルのプレフィックス： `<source_prefix>`, `<dest_prefix>`
+   * データベース ユーザーのパスワード：`password=<password>`
+   * データベースのカスタム ポート：`port=<port>`
+   * テーブルのプレフィックス：`<source_prefix>`、`<dest_prefix>`
 
-   例えば、データベース所有者のユーザー名がの場合 `root` パスワードを使用 `pass` また、プレフィックスを使用します `magento1` Magento1 データベースで、次のコマンドを使用します。 `config.xml`:
+   `root` たとえば、データベース所有者のユーザー名が password `pass` で、Magento 1 データベースでプレフィックス `magento1` を使用する場合は、`config.xml` で次を使用します。
 
    ```xml
    <source>
@@ -167,11 +167,11 @@ ht-degree: 0%
    </options>
    ```
 
-終了したら、変更をに保存します `config.xml` をクリックして、テキストエディターを終了します。
+終了したら、`config.xml` への変更を保存し、テキストエディターを終了します。
 
 ### TLS プロトコルを使用して接続
 
-TLS プロトコルを使用して（つまり、公開/非公開暗号化キーを使用して） データベースに接続することもできます。 次のオプション属性をに追加します `database` 要素：
+TLS プロトコルを使用して（つまり、公開/非公開暗号化キーを使用して） データベースに接続することもできます。 `database` 要素に次のオプションの属性を追加します。
 
 * `ssl_ca`
 * `ssl_cert`
@@ -190,7 +190,7 @@ TLS プロトコルを使用して（つまり、公開/非公開暗号化キー
 
 ## 設定ファイルとマッピングファイルの操作
 
-この [!DNL Data Migration Tool] 使用 *マッピングファイル* Magento1 とMagento2 のデータベース間でカスタム・データベース・マッピングを実行できるようにするには、次の手順に従います。
+この [!DNL Data Migration Tool] では *マッピング・ファイル* を使用して、Magento1 とMagento2 のデータベース間で次のようなカスタム・データベース・マッピングを実行できます。
 
 * テーブル名の変更
 
@@ -200,21 +200,21 @@ TLS プロトコルを使用して（つまり、公開/非公開暗号化キー
 
 * フィールドのデータをMagento 2 形式に変換する
 
-サポートされているMagentoバージョンのマッピングファイルは、のサブディレクトリにあります。 `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
+サポートされているMagentoバージョンのマッピングファイルは、`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc` のサブディレクトリにあります
 
 マッピングファイルを使用するには：
 
-1. コピー元 `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` 対象： `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` を削除します `.dist` 拡張機能。
+1. `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` から `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` にコピーし、`.dist` 拡張機能を削除します。
 
-1. の新しくコピーしたファイルへのパスを更新します。 `<options>` ノード / `config.xml`. 更新されるパスは次のいずれかである必要があります。
+1. `config.xml` の `<options>` ノードにある新しくコピーしたファイルへのパスを更新します。 更新されるパスは次のいずれかである必要があります。
 
-   1. 絶対ファイルパス（例：） `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
-   1. magento/data-migration-tool モジュールの相対ファイルパス： `etc/opensource-to-opensource/1.9.4.1/map.xml`
-   1. Magentoのルート相対ファイルパス： `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. 絶対ファイルパス（例：`/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`）
+   1. magento/data-migration-tool モジュールの相対ファイル パス：`etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Magentoのルート相対ファイル パス：`app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 
-この `<Magento 2 dir>/vendor/magento/data-migration-tool/etc` および `<Magento 2 dir>/vendor/magento/data-migration-tool/etc/<ce version>` ディレクトリには、次の設定ファイルが含まれています。
+`<Magento 2 dir>/vendor/magento/data-migration-tool/etc` ディレクトリと `<Magento 2 dir>/vendor/magento/data-migration-tool/etc/<ce version>` ディレクトリには、次の設定ファイルが含まれています。
 
-を使用している場合でも、 `map.xml.dist` ファイルほとんどの場合、次の表では、各マッピングとその他のファイルについて説明します。
+ほとんどの場合は `map.xml.dist` ファイルを使用しますが、次の表では各マッピングとその他のファイルについて説明しています。
 
 | マッピングファイル名 | 説明 |
 | --- | --- |
@@ -230,7 +230,7 @@ TLS プロトコルを使用して（つまり、公開/非公開暗号化キー
 | `map-log.xml.dist` | ログマッピングファイル。 |
 | *Adobe Commerceのみ*. `map-sales.xml.dist` | SalesOrder ステップで使用されるマップ ファイルです。 |
 | `map.xml.dist` | マップステップにマッピングファイルが必要です。 |
-| `settings.xml.dist` | の移行に必要なルールを指定する移行設定ファイルの設定 `core_config_data` テーブル。 |
+| `settings.xml.dist` | `core_config_data` テーブルの移行に必要なルールを指定する移行構成ファイルを設定しています。 |
 | `customer-attribute-groups.xml.dist` | 顧客属性ステップで使用される属性のリストが含まれます。 |
 | `customer-document-groups.xml.dist` | 顧客属性ステップで使用されるテーブルのリストが含まれます。 |
 | `map-customer.xml.dist` | 顧客属性手順で使用されるマップファイル。 |
@@ -242,4 +242,4 @@ TLS プロトコルを使用して（つまり、公開/非公開暗号化キー
 | *Adobe Commerceのみ*. `visual_merchandiser_attribute_groups.xml.dist` | VisualMerchandiser ステップで使用される属性のリストが含まれます。 |
 | *Adobe Commerceのみ*. `visual_merchandiser_document_groups.xml.dist` | VisualMerchandiser ステップで使用されるテーブルのリストが含まれます。 |
 
-以下を参照してください。 [[!DNL Data Migration Tool] 技術仕様](technical-specification.md) を参照してください。
+詳細については、「技術仕様 [[!DNL Data Migration Tool]  を参照 ](technical-specification.md) てください。

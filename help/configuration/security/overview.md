@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # セキュリティの概要
 
-「セキュリティ」セクションには、パスワードハッシュ、キャッシュポイズニング、セキュリティ保護など、セキュリティ関連の機能に関する設定が含まれます `cron.php` ファイル。
+「セキュリティ」セクションには、パスワード・ハッシュ、キャッシュ・ポイズニング、`cron.php` ファイルのセキュリティ保護など、セキュリティ関連の機能に関する設定が含まれます。
 
 ## セキュリティリソース
 
 この設定ガイドのセキュリティ セクションのトピックは、Commerceの全機能を網羅しているわけではありません。 他のCommerce ガイドには、次のように、セキュリティに関する多くの重要なトピックがあります。
 
-- [PHP デベロッパーガイド](https://developer.adobe.com/commerce/php/development/security/) Adobe Commerce開発者が、構築するコンポーネントのセキュリティを強化するために使用できる情報について説明します。
-- [セキュリティおよびコンプライアンスガイド](https://devdocs.magento.com/security/security-and-compliance.html) セキュリティ、プライバシー、規制への準拠に関する情報については、技術リソースへのリンクを参照してください。
+- [PHP 開発者ガイド ](https://developer.adobe.com/commerce/php/development/security/):Adobe Commerce開発者が、構築するコンポーネントのセキュリティを向上させるために使用できる情報。
+- セキュリティ、プライバシー、規制への準拠に関する情報については、技術リソースへのリンクが記載された [ セキュリティとコンプライアンスガイド ](https://devdocs.magento.com/security/security-and-compliance.html) を参照してください。
 
 設定ガイドに一度に含まれていたセキュリティ関連のトピックは、次のガイドに記載されています。
 
-- [Google reCAPTCHA](https://devdocs.magento.com/guides/v2.4/security/google-recaptcha.html) が含まれる _拡張機能ガイド_.
-- [二要素認証](https://devdocs.magento.com/guides/v2.4/security/two-factor-authentication.html) が含まれる _拡張機能ガイド_.
-- [EU 一般データ保護規則（GDPR）への準拠](https://devdocs.magento.com/compliance/privacy/gdpr.html) が含まれる _セキュリティおよびコンプライアンスガイド_.
+- _拡張機能ガイド_ の [Google reCAPTCHA](https://devdocs.magento.com/guides/v2.4/security/google-recaptcha.html)。
+- [ 拡張機能ガイド ](https://devdocs.magento.com/guides/v2.4/security/two-factor-authentication.html) の _二要素認証_。
+- [ セキュリティおよびコンプライアンスガイド ](https://devdocs.magento.com/compliance/privacy/gdpr.html) の _GDPR （General Data Protection Regulation）への準拠_。

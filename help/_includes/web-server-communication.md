@@ -7,13 +7,13 @@ ht-degree: 0%
 ---
 # 安全な Web サーバー通信
 
-ここでは、Transport Layer Security （TLS）暗号化とを組み合わせて、web サーバーと検索エンジン（Elasticsearchまたは OpenSearch）間の通信を保護する例について説明します。 [HTTP 基本認証](https://datatracker.ietf.org/doc/html/rfc2617). オプションで、その他のタイプの認証も設定できます。この情報の参照を提供しています。
+ここでは、Transport Layer Security （TLS）暗号化と [HTTP 基本認証 ](https://datatracker.ietf.org/doc/html/rfc2617) を組み合わせて、web サーバーと検索エンジン（Elasticsearchまたは OpenSearch）間の通信を保護する例について説明します。 オプションで、その他のタイプの認証も設定できます。この情報の参照を提供しています。
 
-（古い用語である Secure Sockets Layer （SSL）は、多くの場合、TLS と同じ意味で使用されます。 このトピックでは、を参照します。 *TLS*.）
+（古い用語である Secure Sockets Layer （SSL）は、多くの場合、TLS と同じ意味で使用されます。 このトピックでは、*TLS*）を参照します。
 
 >[!WARNING]
 >
->特に指定がない限り、このトピックのすべてのコマンドは、次のコードを持つユーザーとして入力する必要があります `root` 権限。
+>特に明記されていない限り、このトピックのすべてのコマンドは、`root` 権限を持つユーザーとして入力する必要があります。
 
 ## Recommendations
 
@@ -35,12 +35,12 @@ ht-degree: 0%
 
 * Apache
 
-   * [Apache 2.4 強力な暗号化の使い方](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html)
-   * [Apache で Ubuntu 14.04 用 SSL 証明書を作成する方法（Digitalocean チュートリアル）](https://www.digitalocean.com/community/tutorials/how-to-create-a-ssl-certificate-on-apache-for-ubuntu-14-04)
-   * [CentOS での SSL 保護 web サーバーの設定（CentOS wiki）](https://wiki.centos.org/HowTos/Https)
+   * [Apache 2.4 強力な暗号化の使い方 ](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html)
+   * [Apache for Ubuntu 14.04 で SSL 証明書を作成する方法（Digitalocean チュートリアル） ](https://www.digitalocean.com/community/tutorials/how-to-create-a-ssl-certificate-on-apache-for-ubuntu-14-04)
+   * [CentOS での SSL 保護 web サーバーの設定（CentOS wiki） ](https://wiki.centos.org/HowTos/Https)
 
 * Nginx
 
-   * [Nginx SSL 終了](https://www.nginx.com/resources/admin-guide/nginx-ssl-termination/)
-   * [Ubuntu 14.04 用 Nginx で SSL 証明書を作成する方法（Digitalocean チュートリアル）](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04)
-   * [Nginx SSL 証明書のインストール （digicert）](https://www.digicert.com/ssl-certificate-installation-nginx.htm)
+   * [Nginx SSL ターミネーション ](https://www.nginx.com/resources/admin-guide/nginx-ssl-termination/)
+   * [Ubuntu 14.04 用 Nginx で SSL 証明書を作成する方法（Digitalocean チュートリアル） ](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04)
+   * [Nginx SSL 証明書のインストール （digicert） ](https://www.digicert.com/ssl-certificate-installation-nginx.htm)

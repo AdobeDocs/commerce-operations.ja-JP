@@ -13,4 +13,4 @@ ht-degree: 0%
 
 DACI モデルは、プロジェクトにおける様々なステークホルダーの役割・責任を明確に定義し、効果的かつ効率的なグループ決定につなげるプロジェクト管理フレームワークです。 DACI とは、Driver、Approver、Contributor、Informated の略です。 これらの役割により、特定の領域や状況で誰が権限を持っているかが明確になり、プロジェクトをスムーズに進めることができます。
 
-![DACI プロジェクト管理図](../../assets/playbooks/daci-model.png)
+![DACI プロジェクト管理図 ](../../assets/playbooks/daci-model.png)

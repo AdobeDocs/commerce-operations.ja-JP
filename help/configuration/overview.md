@@ -5,13 +5,13 @@ exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
 # 設定ガイド
 
-この _設定_ ガイドでは、設定可能なCommerce アプリケーションの機能とサービスを管理するためのリファレンス資料と限定的なガイダンスを提供します。 Commerce アプリケーションの設定を担当する技術ユーザーは、次の領域に関するガイダンスを参照できます。
+_設定_ ガイドでは、設定可能なCommerce アプリケーションの機能とサービスを管理するためのリファレンス資料と限定的なガイダンスを提供します。 Commerce アプリケーションの設定を担当する技術ユーザーは、次の領域に関するガイダンスを参照できます。
 
 - [インストール](../configuration/bootstrap/initialization.md)
 - [デプロイメント方法](../configuration/deployment/overview.md)
@@ -25,8 +25,8 @@ ht-degree: 0%
 
 ## Commerce Admin Configuration
 
-には、対応するトピックがあります [Commerce ユーザーガイド](https://docs.magento.com/user-guide/stores/configuration.html) これにより、Commerce Admin のすべての設定に関するフィールドの説明を理解できます。
+[Commerce ユーザーガイドには、Commerce Admin の各設定に関するフィールドの説明を理解するのに役立つ ](https://docs.magento.com/user-guide/stores/configuration.html) 対応するトピックがあります。
 
 ## クラウド設定
 
-[!DNL Commerce on cloud infrastructure] はを使用します [設定ファイルのセット](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) ホスト環境でCommerce アプリケーションの機能とサービスを更新する場合 クラウドでホストされる環境はAdobe固有なので、常に以下を確認する必要があります [クラウドガイド](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) 追加の設定要件については、を参照してください。
+[!DNL Commerce on cloud infrastructure] は [ 一連の設定ファイル ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) を使用して、ホスト環境のCommerce アプリケーションの機能とサービスを更新します。 Adobeでクラウドホストされる環境は独特の性質なので、追加の設定要件については常に [ クラウドガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) を確認する必要があります。

@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-[サポートされているすべてのバージョン](../../../release/versions.md) （件中）:
+[ サポートされているすべてのバージョン ](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -39,9 +39,9 @@ GTmetrix はストレステストに使用できるツールです。 GTmetrix �
 
 トラフィックが多い時期にCommerce プロジェクトを準備する方法の詳細を説明します。
 
-- [休日への対応](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
-- [休日の買い物分析](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html)
-- [サージ容量の増加](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html)
+- [ 休日への対応 ](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
+- [ ホリデーショッピング分析 ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html)
+- [ サージ容量増加 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html)
 
 ### 負荷テスト
 
@@ -51,12 +51,12 @@ GTmetrix を使用してトラフィック量の多いシミュレーション�
 
 Adobe Commerce プロジェクトのテストの詳細：
 
-- [テストガイダンス](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html)  （クラウドインフラストラクチャ）
-- [アプリケーションテスト](https://developer.adobe.com/commerce/testing/guide/)
+- [ テストガイダンス ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html) （クラウドインフラストラクチャ）
+- [ アプリケーションのテスト ](https://developer.adobe.com/commerce/testing/guide/)
 
 ### パフォーマンスの問題の特定と解決
 
-New Relicや Observation for Commerceなどの様々なツールを使用してボトルネックを検出し、Adobe Commerce サイトを効果的に最適化することで、パフォーマンスの問題に対処します。 [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) Adobe Commerce on cloud infrastructure に含まれる場合 [Adobe Commerceの監視](/help/tools/observation-for-adobe-commerce/intro.md) は、クラウドデプロイメントとオンプレミスデプロイメントの両方に含まれます。
+New Relicや Observation for Commerceなどの様々なツールを使用してボトルネックを検出し、Adobe Commerce サイトを効果的に最適化することで、パフォーマンスの問題に対処します。 [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) はクラウドインフラストラクチャー上のAdobe Commerceに含まれており、[Adobe Commerceの監視 ](/help/tools/observation-for-adobe-commerce/intro.md) はクラウドとオンプレミスの両方のデプロイメントに含まれています。
 
 これらのツールを使用して、サイトのパフォーマンスを分析し、次の項目に関連するパフォーマンスの問題を特定します。
 
@@ -69,7 +69,7 @@ New Relicや Observation for Commerceなどの様々なツールを使用して�
 
 サイトのパフォーマンス管理の詳細：
 
-- [パフォーマンス監視](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) （クラウドインフラストラクチャ）
+- [ パフォーマンス監視 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) （クラウドインフラストラクチャ）
 - [パフォーマンスの最適化の確認](/help/implementation-playbook/infrastructure/performance/recommendations.md)
 - [設定のベストプラクティス](/help/performance/configuration.md)
 - [Adobe Commerceの監視](/help/tools/observation-for-adobe-commerce/intro.md)
@@ -82,7 +82,7 @@ New Relicや Observation for Commerceなどの様々なツールを使用して�
 
 高トラフィックの Web サイトは、多くの場合、データベースのボトルネックに直面します。これは主に、1 台の MySQL サーバーに依存することに起因します。 パフォーマンスの向上と高可用性の確保を実現する分散アーキテクチャであるデータベース・クラスタリングを導入することで、これらのボトルネックに対処できます。
 
-データベースクラスタリングを使用すると、複数の web ノードを複数の MySQL サーバーに接続できるので、トラフィックのピーク時にデータベースに関する問題の影響を最小限に抑えることができます。 Galera クラスターなどのツールを使用して、Commerce サイトのデータベースクラスタリングを設定します。 Galera クラスタは次に含まれています [クラウドインフラストラクチャにデプロイされたAdobe Commerce プロジェクト](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/technology.html).
+データベースクラスタリングを使用すると、複数の web ノードを複数の MySQL サーバーに接続できるので、トラフィックのピーク時にデータベースに関する問題の影響を最小限に抑えることができます。 Galera クラスターなどのツールを使用して、Commerce サイトのデータベースクラスタリングを設定します。 Galera クラスターは、[ クラウドインフラストラクチャにデプロイされたAdobe Commerce プロジェクト ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/technology.html) に含まれています。
 
 #### MySQL クエリの最適化
 
@@ -94,10 +94,10 @@ MySQL サーバーのパフォーマンスを最適化し、ボトルネック�
 
 MySQL の設定と最適化の詳細を説明します。
 
-- [データベース設定のベストプラクティス](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
-- [Galera DB レプリケーションの低速レプリケーション](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html)
+- [ データベース設定のベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+- [Galera DB レプリケーションの低速レプリケーション ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html)
 - [一般的な MySQL ガイドライン](/help/installation/prerequisites/database/mysql.md)
-- [MySQL クエリキャッシュ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html)
+- [MySQL クエリキャッシュ ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html)
 
 ## Cron ジョブの効果的な管理：パフォーマンスとタイミング
 
@@ -111,7 +111,7 @@ Cron のパフォーマンスとタイミングの最適化を担当する場合
 
 Adobe Commerce cron 実装の詳細情報：
 
-- [Cron （スケジュールされたタスク）](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) が含まれる _Commerce管理システムユーザーガイド_
-- [アプリケーション設定 – crons プロパティ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) （クラウドインフラストラクチャ）
-- [Cron の設定と実行](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) （オンプレミス）
-- [Adobe Commerceの監視](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) （ [!UICONTROL Cron] および [!UICONTROL MySQL] タブ）
+- [2}Commerce管理システムユーザーガイドの {Cron （スケジュールされたタスク） ](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html)__
+- [ アプリケーション設定 – crons プロパティ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) （クラウドインフラストラクチャ）
+- [cron の設定と実行 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) （オンプレミス）
+- [Adobe Commerceの監視 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) （「[!UICONTROL Cron]」タブと「[!UICONTROL MySQL]」タブを参照）。

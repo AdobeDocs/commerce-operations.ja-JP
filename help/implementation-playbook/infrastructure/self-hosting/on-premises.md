@@ -17,7 +17,7 @@ ht-degree: 0%
 
 次の図は、Adobe CommerceをオンプレミスのAWS インフラストラクチャにデプロイするためのリファレンスアーキテクチャを示しています。 Azure、Google Cloud、Alibaba Cloud などの他のクラウドプロバイダーも、同様のインフラストラクチャデザインと相同サービスを共有しています。
 
-![サードパーティのクラウドサービス上の自己ホスト型Adobe Commerce インフラストラクチャを示す図](/help/assets/playbooks/on-premises-infrastructure.svg)
+![ サードパーティのクラウドサービス上の自己ホスト型Adobe Commerce インフラストラクチャを示す図 ](/help/assets/playbooks/on-premises-infrastructure.svg)
 
 次に、上記のインフラストラクチャの各側面の役割と機能について詳しく説明します。
 

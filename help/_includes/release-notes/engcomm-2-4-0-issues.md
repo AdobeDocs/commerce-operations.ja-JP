@@ -416,9 +416,9 @@ ht-degree: 0%
 | Lukasz Bajsarowicz | [#27281](https://github.com/magento/magento2/pull/27281) | 該当なし |
 | Lukasz Bajsarowicz | [#27277](https://github.com/magento/magento2/pull/27277) | 該当なし |
 | Lukasz Bajsarowicz | [#27274](https://github.com/magento/magento2/pull/27274) | 該当なし |
-| セルゲイ バシウチンスキー | [#27261](https://github.com/magento/magento2/pull/27261) | [20472](https://github.com/magento/magento2/issues/20472), [20906](https://github.com/magento/magento2/issues/20906), [21910](https://github.com/magento/magento2/issues/21910) |
+| セルゲイ バシウチンスキー | [#27261](https://github.com/magento/magento2/pull/27261) | [20472](https://github.com/magento/magento2/issues/20472)、[20906](https://github.com/magento/magento2/issues/20906)、[21910](https://github.com/magento/magento2/issues/21910) |
 | ナバル バルニエ | [#27249](https://github.com/magento/magento2/pull/27249) | 該当なし |
-| ピエターホスト | [#26784](https://github.com/magento/magento2/pull/26784) | [4112](https://github.com/magento/magento2/issues/4112), [11615](https://github.com/magento/magento2/issues/11615), [11616](https://github.com/magento/magento2/issues/11616), [25124](https://github.com/magento/magento2/issues/25124), [26393](https://github.com/magento/magento2/issues/26393) |
+| ピエターホスト | [#26784](https://github.com/magento/magento2/pull/26784) | [4112](https://github.com/magento/magento2/issues/4112)、[11615](https://github.com/magento/magento2/issues/11615)、[11616](https://github.com/magento/magento2/issues/11616)、[25124](https://github.com/magento/magento2/issues/25124)、[26393](https://github.com/magento/magento2/issues/26393) |
 | ピオトル・マルキーウィッツ | [#26746](https://github.com/magento/magento2/pull/26746) | 該当なし |
 | ムディット シュクラ | [#26348](https://github.com/magento/magento2/pull/26348) | [26345](https://github.com/magento/magento2/issues/26345) |
 | ヴァディム マレシュ | [#27187](https://github.com/magento/magento2/pull/27187) | [26117](https://github.com/magento/magento2/issues/26117) |
@@ -430,7 +430,7 @@ ht-degree: 0%
 | バシリイ・ブルラクス | [#27165](https://github.com/magento/magento2/pull/27165) | 該当なし |
 | アレクリ | [#27015](https://github.com/magento/magento2/pull/27015) | [26683](https://github.com/magento/magento2/issues/26683) |
 | トゥグエン | [#26987](https://github.com/magento/magento2/pull/26987) | [26963](https://github.com/magento/magento2/issues/26963) |
-| セルゲイ バシウチンスキー | [#26560](https://github.com/magento/magento2/pull/26560) | [26473](https://github.com/magento/magento2/issues/26473), [26856](https://github.com/magento/magento2/issues/26856), [26858](https://github.com/magento/magento2/issues/26858) |
+| セルゲイ バシウチンスキー | [#26560](https://github.com/magento/magento2/pull/26560) | [26473](https://github.com/magento/magento2/issues/26473)、[26856](https://github.com/magento/magento2/issues/26856)、[26858](https://github.com/magento/magento2/issues/26858) |
 | ダン・ワリス | [#25297](https://github.com/magento/magento2/pull/25297) | 該当なし |
 | solwininfotech | [#24479](https://github.com/magento/magento2/pull/24479) | [22251](https://github.com/magento/magento2/issues/22251) |
 | Lukasz Bajsarowicz | [#27273](https://github.com/magento/magento2/pull/27273) | 該当なし |

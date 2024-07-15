@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # セキュリティ TXT ファイル
 
-研究者によってセキュリティの脆弱性が発見された場合、適切なレポートチャネルがないことがよくあります。 その結果、一部の脆弱性は報告されません。 の目的 `security.txt` [ファイル形式](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) ファイルは、セキュリティ研究者が調査結果を報告するために使用できる情報を提供することです。
+研究者によってセキュリティの脆弱性が発見された場合、適切なレポートチャネルがないことがよくあります。 その結果、一部の脆弱性は報告されません。 `security.txt` [ ファイル形式 ](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) ファイルの目的は、セキュリティ調査担当者が調査結果を報告するために使用できる情報を提供することです。
 
-マーチャントは、次の連絡先情報を入力できます [セキュリティ問題レポート](https://docs.magento.com/user-guide/stores/security-issue-reporting.html) Commerceから _Admin_. 開発者の場合、 `Magento_Securitytxt` モジュールは次の機能を提供します。
+マーチャントは、[ セキュリティの問題のレポート ](https://docs.magento.com/user-guide/stores/security-issue-reporting.html) に関する連絡先情報をCommerceから入力できます _管理者_。 開発者向けに、`Magento_Securitytxt` モジュールは次の機能を提供します。
 
-- からセキュリティ設定を保存できるようにします _Admin_.
-- に対する要求のアプリケーション アクション クラスに一致するルーターが含まれています `.well-known/security.txt` および `.well-known/security.txt.sig` ファイル。
-- のコンテンツを提供 `.well-known/security.txt` および `.well-known/security.txt.sig` ファイル。
+- _Admin_ からセキュリティ設定を保存できるようにします。
+- `.well-known/security.txt` ファイルと `.well-known/security.txt.sig` ファイルへの要求に対するアプリケーション アクション クラスに一致するルーターが含まれています。
+- `.well-known/security.txt` ファイルと `.well-known/security.txt.sig` ファイルのコンテンツを提供します。
 
 有効な `security.txt` ファイルは次のようになります。
 
@@ -32,7 +32,7 @@ Policy: https://example.com/security-policy.html
 Signature: https://example.com/.well-known/security.txt.sig
 ```
 
-を作成するには `security.txt` 署名（`security.txt.sig`） ファイル：
+`security.txt` signature （`security.txt.sig`）ファイルを作成するには：
 
 ```bash
 gpg -u KEYID --output security.txt.sig --armor --detach-sig security.txt

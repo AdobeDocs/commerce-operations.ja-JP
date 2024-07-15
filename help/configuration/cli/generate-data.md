@@ -14,17 +14,17 @@ ht-degree: 9%
 
 ## プロファイル
 
-を使用して、作成するデータ量を調整できます _プロファイル_ （小、中、大、特大）。 プロファイルはにあります。 `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` ディレクトリ。
+_プロファイル_ （小、中、大、特大）を使用して、作成するデータの量を調整できます。 プロファイルは `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` ディレクトリにあります。
 
 例：`/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
-次の図は、を使用してストアフロントに製品が表示される方法を示しています _小_ プロファイル :
+次の図は、_small_ プロファイルを使用してストアフロントに製品を表示する方法を示しています。
 
-![生成されたデータを含んだサンプルストアフロント](../../assets/configuration/generate-data.png)
+![ 生成されたデータを使用したサンプルストアフロント ](../../assets/configuration/generate-data.png)
 
 データジェネレーターのプロファイル（小、中、大、特大）の詳細を次の表に示します。
 
-| パラメーター | 小さいプロファイル | 中程度のプロファイル | 中程度のマルチサイトプロファイル | 大きなプロファイル | 特大プロファイル |
+| パラメーター | 小さいプロファイル | Medium プロファイル | Medium マルチサイトプロファイル | 大きなプロファイル | 特大プロファイル |
 | --- | --- | --- | --- | --- | --- |
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
@@ -50,9 +50,9 @@ ht-degree: 9%
 >
 >データジェネレーターを実行する前に、サーバー上で実行されているすべての cron ジョブを無効にします。 cron ジョブを無効にすると、データジェネレーターでアクティブな cron ジョブと競合するアクションが実行されなくなり、不要なエラーが回避されます。
 >
->イベント通知を実装する場合 [!DNL Adobe I/O Events for Adobe Commerce] パフォーマンスのテスト中に、購読する前にこのコマンドを実行します [イベント](https://developer.adobe.com/commerce/extensibility/events/). 最初にイベントを登録すると、エラーが発生する場合があります。
+>パフォーマンスのテスト中に [!DNL Adobe I/O Events for Adobe Commerce] を使用してイベントの送信を実装する場合は、[events](https://developer.adobe.com/commerce/extensibility/events/) を登録する前にこのコマンドを実行します。 最初にイベントを登録すると、エラーが発生する場合があります。
 
-この節で説明されているように、コマンドを実行します。 コマンドの実行後、次の操作を行う必要があります [すべてのインデクサーの再インデックス化](../cli/manage-indexers.md).
+この節で説明されているように、コマンドを実行します。 コマンドを実行した後は、[ すべてのインデクサーのインデックスを再作成 ](../cli/manage-indexers.md) する必要があります。
 
 コマンドオプション：
 
@@ -60,7 +60,7 @@ ht-degree: 9%
 bin/magento setup:perf:generate-fixtures <path-to-profile>
 ```
 
-ここで、 `<path-to-profile>` プロファイルへのファイルシステムの絶対パスと名前を指定します。
+`<path-to-profile>` は、プロファイルへの絶対ファイルシステムパスとプロファイルの名前を指定します。
 
 以下に例を挙げます。
 
@@ -125,7 +125,7 @@ Generating simple products...  done in <time>
 
 ### バンドル製品
 
-バンドル製品を生成します。 生成されたバンドルの選択内容は、カタログに個別に表示されません。 製品は、カテゴリや web サイトごとに均一に分散されています。 次の場合  `assign_entities_to_all_websites` プロファイルからに設定されます `1`. 製品はすべての web サイトに割り当てられます。
+バンドル製品を生成します。 生成されたバンドルの選択内容は、カタログに個別に表示されません。 製品は、カテゴリや web サイトごとに均一に分散されています。 プロファイルの `assign_entities_to_all_websites` が `1` に設定されている場合。 製品はすべての web サイトに割り当てられます。
 
 XML プロファイルノード：
 
@@ -163,7 +163,7 @@ XML プロファイルノード：
 
 ### カテゴリ
 
-カテゴリを生成します。 次の場合 `assign_entities_to_all_websites` はに設定されています。 `0`すべてのカテゴリがルート カテゴリごとに均等に分散されます。そうしないと、すべてのカテゴリが 1 つのルート カテゴリに割り当てられます。
+カテゴリを生成します。 `assign_entities_to_all_websites` を `0` に設定すると、すべてのカテゴリがルート カテゴリごとに均等に分散されます。設定しないと、すべてのカテゴリが 1 つのルート カテゴリに割り当てられます。
 
 XML プロファイルノード：
 
@@ -195,7 +195,7 @@ XML プロファイルノード：
 
 ### 設定可能な製品
 
-設定可能な製品を生成します。 生成された設定可能オプションは、カタログに個別に表示されません。 製品は、カテゴリや web サイトごとに均一に分散されています。 次の場合 `assign_entities_to_all_websites` はに設定されています。 `1`、製品はすべての web サイトに割り当てられます。
+設定可能な製品を生成します。 生成された設定可能オプションは、カタログに個別に表示されません。 製品は、カテゴリや web サイトごとに均一に分散されています。 `assign_entities_to_all_websites` を `1` に設定すると、製品はすべての web サイトに割り当てられます。
 
 次の XML ノード形式がサポートされています。
 
@@ -380,9 +380,9 @@ XML プロファイルノード：
 
 ### 簡易製品
 
-単純な製品を生成します。 製品は、デフォルトおよび事前定義済みの属性セットごとに配布されます。 追加属性セットがプロファイルで次のように指定されている場合： `<product_attribute_sets>{int}</product_attribute_sets>`また、製品は追加の属性セットごとに配布されます。
+単純な製品を生成します。 製品は、デフォルトおよび事前定義済みの属性セットごとに配布されます。 プロファイルで追加属性セットが `<product_attribute_sets>{int}</product_attribute_sets>` として指定されている場合、製品も追加属性セットごとに配布されます。
 
-製品は、カテゴリや web サイトごとに均一に分散されています。 次の場合 `assign_entities_to_all_websites` はに設定されています。 `1`、製品はすべての web サイトに割り当てられます。
+製品は、カテゴリや web サイトごとに均一に分散されています。 `assign_entities_to_all_websites` を `1` に設定すると、製品はすべての web サイトに割り当てられます。
 
 XML プロファイルノード：
 
@@ -402,7 +402,7 @@ Web サイトを生成します。 XML プロファイルノード：
 
 ### ストアグループ
 
-（管理者ではと呼ばれる）ストアグループを生成します _ストア_）に設定します。 ストアグループは通常、web サイト間で配布されます。
+ストアグループ（管理では _ストア_ と呼ばれます）を生成します。 ストアグループは通常、web サイト間で配布されます。
 
 XML プロファイルノード：
 
@@ -434,13 +434,13 @@ XML プロファイルノード：
 
 ## 追加情報：
 
-- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml` – デフォルトの属性セット
+- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml` - デフォルトの属性セット
 
-- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml` – お客様の構成
+- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml`：お客様の構成
 
 - `<Commerce root dir>/setup/performance-toolkit/config/description.xml` – 製品の詳細な説明の構成
 
-- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml` – 製品の簡単な説明設定
+- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml` – 製品の簡単な説明の構成
 
 - `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml` – 製品の短い説明と完全な説明の設定。 この古い実装は、後方互換性のために提供されています。
 

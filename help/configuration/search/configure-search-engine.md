@@ -16,38 +16,38 @@ ht-degree: 0%
 
 >[!TIP]
 >
->バージョン 2.4.4 および 2.4.3-p2 では、すべてのフィールドにラベルが付いています **Elasticsearch** opensearch にも適用されます。
+>バージョン 2.4.4 および 2.4.3-p2 では、**Elasticsearch** というラベルの付いたすべてのフィールドも OpenSearch に適用されます。
 >Elasticsearch 2.4.6 でバージョン 8.x のサポートが導入された際には、Elasticsearch設定と OpenSearch 設定を区別する新しいラベルが作成されました。
 
-検索エンジンの設定について詳しくは、 [ユーザーガイド](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
+検索エンジンの設定について詳しくは、[ ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html) を参照してください。
 
 ## 管理者からの検索エンジンの設定
 
 >[!TIP]
 >
->新しい検索エンジン バージョンにアップグレードする方法については、を参照してください。 [アップグレードの前提条件](../../upgrade/prepare/prerequisites.md).
+>新しい検索エンジン バージョンにアップグレードする手順については、[ アップグレードの前提条件 ](../../upgrade/prepare/prerequisites.md) を参照してください。
 
 Elasticsearchまたは OpenSearch を使用するようにシステムを設定するには：
 
 1. 管理者として管理者にログインします。
-1. クリック **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**.
-1. から **[!UICONTROL Search Engine]** リストで、検索エンジンの対応するバージョンを選択します。
+1. **[!UICONTROL Stores]**/[!UICONTROL Settings]/**[!UICONTROL Configuration]**/**[!UICONTROL Catalog]**/**[!UICONTROL Catalog]**/**[!UICONTROL Catalog Search]** をクリックします。
+1. **[!UICONTROL Search Engine]** リストから、検索エンジンの対応するバージョンを選択します。
 
    次の表に、Commerceとの接続を設定およびテストするために必要なオプションを示します。 検索エンジンのサーバー設定を変更しない限り、デフォルトは機能します。 次の手順にスキップします。
 
    | オプション | 説明 |
    |--- |--- |
-   | **[!UICONTROL Server Hostname]** | Elasticsearchまたは OpenSearch を実行しているマシンの完全修飾ホスト名または IP アドレスを入力します。<br>クラウドインフラストラクチャー上のAdobe Commerce：この価値を統合システムから取得します。 |
-   | **[!UICONTROL Server Port]** | Web サーバーのプロキシポートを入力します。 デフォルトは 9200 です<br>クラウドインフラストラクチャー上のAdobe Commerce：この価値を統合システムから取得します。 |
+   | **[!UICONTROL Server Hostname]** | Elasticsearchまたは OpenSearch を実行しているマシンの完全修飾ホスト名または IP アドレスを入力します。<br> クラウドインフラストラクチャー上のAdobe Commerce：統合システムからこの価値を取得します。 |
+   | **[!UICONTROL Server Port]** | Web サーバーのプロキシポートを入力します。 デフォルトは 9200<br> クラウドインフラストラクチャー上のAdobe Commerceです。この値は、統合システムから取得してください。 |
    | **[!UICONTROL Index Prefix]** | 検索エンジンのインデックスプレフィックスを入力します。 複数のCommerce インストールに 1 つのインスタンスを使用する場合（ステージング環境と実稼動環境）、インストールごとに一意のプレフィックスを指定する必要があります。 それ以外の場合は、デフォルトのプレフィックス magento2 を使用できます。 |
-   | **[!UICONTROL Enable HTTP Auth]** | クリック **[!UICONTROL Yes]** 検索エンジン サーバーの認証を有効にした場合のみ。 その場合は、指定されたフィールドにユーザー名とパスワードを入力します。 |
+   | **[!UICONTROL Enable HTTP Auth]** | 検索エンジン サーバーの認証を有効にした場合のみ、[**[!UICONTROL Yes]**] をクリックします。 その場合は、指定されたフィールドにユーザー名とパスワードを入力します。 |
    | **[!UICONTROL Server Timeout]** | Elasticsearchまたは OpenSearch サーバーへの接続を確立しようとするときに待機する時間（秒）を入力します。 |
 
-1. クリック **[!UICONTROL Test Connection]**.
+1. 「**[!UICONTROL Test Connection]**」をクリックします。
 
    応答の例：
 
-   ![成功](../../assets/configuration/elastic_test-success.png)
+   ![ 成功 ](../../assets/configuration/elastic_test-success.png)
 
    続行：
 
@@ -56,16 +56,16 @@ Elasticsearchまたは OpenSearch を使用するようにシステムを設定�
 
    以下が表示されます。
 
-   ![失敗](../../assets/configuration/elastic_test-fail.png)
+   ![ 失敗 ](../../assets/configuration/elastic_test-fail.png)
 
 その場合は、次の操作を試してください。
 
 - 検索エンジン サーバーが実行中であることを確認してください。
 - サーバーがCommerceとは別のホスト上にある場合は、Commerce サーバーにログインし、検索エンジンホストに対して ping を実行します。 ネットワーク接続の問題を解決し、接続を再度テストします。
-- Elasticsearchまたは OpenSearch を開始したコマンド ウィンドウで、スタック トレースと例外を調べます。 続行する前にそれらを解決する必要があります。 特に、次の条件を満たすユーザーとして検索エンジンを起動したことを確認します。 `root` 権限。
-- 次のことを確認します [UNIX ファイアウォールと SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) を無効にするか、ルールを設定して検索エンジンとCommerceが相互に通信できるようにします。
-- の値を確認します。 **[!UICONTROL Server Hostname]** フィールド。 サーバーが使用可能であることを確認します。 代わりに、サーバーの IP アドレスを試してみてください。
-- の使用 `netstat -an | grep <listen-port>` で指定されたポートを検証するコマンド **[!UICONTROL Server Port]** フィールドは別のプロセスで使用されていません。
+- Elasticsearchまたは OpenSearch を開始したコマンド ウィンドウで、スタック トレースと例外を調べます。 続行する前にそれらを解決する必要があります。 特に、`root` 権限を持つユーザーとして検索エンジンを起動したことを確認してください。
+- [UNIX ファイアウォールと SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) の両方が無効になっていることを確認するか、検索エンジンとCommerceが相互に通信できるようにルールを設定します。
+- **[!UICONTROL Server Hostname]** フィールドの値を確認します。 サーバーが使用可能であることを確認します。 代わりに、サーバーの IP アドレスを試してみてください。
+- `netstat -an | grep <listen-port>` コマンドを使用して、**[!UICONTROL Server Port]** フィールドで指定されたポートが別のプロセスで使用されていないことを確認します。
 
   例えば、検索エンジンがデフォルトのポートで実行されているかどうかを確認するには、次のコマンドを使用します。
 
@@ -85,17 +85,17 @@ Elasticsearchまたは OpenSearch を使用するようにシステムを設定�
 
 管理者を使用してキャッシュを更新するには：
 
-1. 管理者で、 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
-1. の横にあるチェックボックスをオンにします。 **[!UICONTROL Page Cache]**.
-1. から **[!UICONTROL Actions]** 右上のリストで、 **更新**.
+1. 管理者で、**[!UICONTROL System]**/**[!UICONTROL Cache Management]** をクリックします。
+1. 「**[!UICONTROL Page Cache]**」の横にあるチェックボックスをオンにします。
+1. 右上の **[!UICONTROL Actions]** リストで、「**更新**」をクリックします。
 
-   ![キャッシュ管理](../../assets/configuration/refresh-cache.png)
+   ![ キャッシュ管理 ](../../assets/configuration/refresh-cache.png)
 
-コマンドラインを使用してキャッシュをクリーンアップするには： [`bin/magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types)
+コマンドラインを使用してキャッシュをクリーンアップするには：[`bin/magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types)
 
 コマンドラインを使用してインデックスを再作成するには：
 
-1. Commerce サーバーにとしてログインするか、に切り替えます [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
+1. [ ファイルシステムのオーナー ](../../installation/prerequisites/file-system/overview.md) としてCommerce サーバーにログインするか、に切り替えます。
 1. 次のいずれかのコマンドを入力します。
 
    次のコマンドを入力して、カタログ検索インデックスのみを再インデックス化します。
@@ -114,4 +114,4 @@ Elasticsearchまたは OpenSearch を使用するようにシステムを設定�
 
    >[!INFO]
    >
-   >キャッシュとは異なり、インデクサーは cron ジョブによって更新されます。 確認する [cron は有効です](../cli/configure-cron-jobs.md) 検索エンジンの使用を開始する前に。
+   >キャッシュとは異なり、インデクサーは cron ジョブによって更新されます。 検索エンジンの使用を開始する前に、[cron が有効になっていること ](../cli/configure-cron-jobs.md) を確認します。

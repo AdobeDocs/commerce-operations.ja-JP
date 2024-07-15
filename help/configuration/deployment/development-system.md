@@ -15,15 +15,15 @@ ht-degree: 0%
 
 - いずれもCommerce 2.2 以降を実行します
 - すべてのCommerce コードは、ビルドシステムおよび実稼動システムと同じリポジトリでソース管理下にあります
-- 各開発システムでは、次のいずれかを使用する必要があります [デフォルトモード](../bootstrap/application-modes.md#default-mode) または [開発者モード](../bootstrap/application-modes.md#developer-mode)
-- ファイル・システムの所有権と権限が設定されています（を参照）。 [開発、ビルド、実稼動システムの前提条件](../deployment/technical-details.md).
-- 次のすべてを確認します _除外済み_ ソース管理から：
+- 各開発システムは、[ デフォルトモード ](../bootstrap/application-modes.md#default-mode) または [ 開発者モード ](../bootstrap/application-modes.md#developer-mode) のいずれかを使用する必要があります
+- [ 開発、ビルド、実稼働システムの前提条件 ](../deployment/technical-details.md) で説明されているように、ファイルシステムの所有権と権限が設定されています。
+- 次のすべてがソース管理から _除外_ されていることを確認します。
 
    - `vendor` ディレクトリ（およびサブディレクトリ）
    - `generated` ディレクトリ（およびサブディレクトリ）
    - `pub/static` ディレクトリ（およびサブディレクトリ）
    - `app/etc/env.php` ファイル
 
-- 確認する `app/etc/config.php` 等しい _included_ ソース管理で
+- `app/etc/config.php` がソース管理に _含まれる_ ことを確認
 
-Git を使用する場合、 `.gitignore` ファイルは、上記のほとんどを提供します。 を参照してください。 [`.gitignore` 参照](../reference/config-reference-gitignore.md).
+Git を使用する場合は、上記のほとんどを `.gitignore` ファイルで提供します。 [`.gitignore` リファレンスを参照してください ](../reference/config-reference-gitignore.md)。

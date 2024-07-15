@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 2.4.7
 
-2.4.7 リリースラインのサポートは 2027 年 4 月 9 日（PT）に終了します。
+2.4.7 リリースラインのサポートは 4 月に終了します  9、2027 年。
 
 <table>
   <thead>
@@ -29,7 +29,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7</a>
         </td>
-        <td>2024 年 4 月 9 日（Pt）</td>
+        <td>年 4 月  9、2024</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -56,7 +56,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#adobe-commerce-246-p5">2.4.6-p5</a>
         </td>
-        <td>2024 年 4 月 9 日（Pt）</td>
+        <td>年 4 月  9、2024</td>
     </tr>
     <tr>
         <td>
@@ -74,7 +74,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p2">2.4.6-p2</a>
         </td>
-        <td>2023 年 8 月 8 日（Pt）</td>
+        <td>年 8 月  8、2023</td>
     </tr>
     <tr>
         <td>
@@ -93,7 +93,7 @@ ht-degree: 0%
 
 ## 2.4.5
 
-2.4.5 リリースラインのサポートは 2025 年 8 月 9 日（PT）に終了します。
+2.4.5 リリースラインのサポートは 8 月に終了します  9、2025 年。
 
 <table>
   <thead>
@@ -113,7 +113,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p7">2.4.5-p7</a>
         </td>
-        <td>2024 年 4 月 9 日（Pt）</td>
+        <td>年 4 月  9、2024</td>
     </tr>
     <tr>
         <td>
@@ -131,7 +131,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p4">2.4.5-p4</a>
         </td>
-        <td>2023 年 8 月 8 日（Pt）</td>
+        <td>年 8 月  8、2023</td>
     </tr>
     <tr>
         <td>
@@ -155,7 +155,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-5">2.4.5</a>
         </td>
-        <td>2022 年 8 月 9 日（Pt）</td>
+        <td>年 8 月  9、2022</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -182,7 +182,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p8">2.4.4-p8</a>
         </td>
-        <td>2024 年 4 月 9 日（Pt）</td>
+        <td>年 4 月  9、2024</td>
     </tr>
     <tr>
         <td>
@@ -200,7 +200,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p5">2.4.4-p5</a>
         </td>
-        <td>2023 年 8 月 8 日（Pt）</td>
+        <td>年 8 月  8、2023</td>
     </tr>
     <tr>
         <td>
@@ -224,7 +224,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p1">2.4.4-p1</a>
         </td>
-        <td>2022 年 8 月 9 日（Pt）</td>
+        <td>年 8 月  9、2022</td>
     </tr>
     <tr>
         <td>
@@ -251,7 +251,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-3-patches#adobe-commerce-243-p3">2.4.3-p3</a>
         </td>
-        <td>2022 年 8 月 9 日（Pt）</td>
+        <td>年 8 月  9、2022</td>
     </tr>
     <tr>
         <td>
@@ -287,13 +287,13 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-2">2.4.2</a>
         </td>
-        <td>2021 年 2 月 9 日（Pt）</td>
+        <td>年 2 月  9、2021 年</td>
     </tr>
     <tr>
         <td>
           2.4.1-p1
         </td>
-        <td>2021 年 2 月 9 日（Pt）</td>
+        <td>年 2 月  9、2021 年</td>
     </tr>
     <tr>
         <td>
@@ -318,7 +318,7 @@ ht-degree: 0%
 
 ## 2.3
 
-2.3 リリースラインのサポートは 2022 年 9 月 8 日（PT）に終了しました。
+2.3 リリースラインのサポートは 9 月に終了しました  8、2022 年。
 
 <table>
   <thead>
@@ -332,7 +332,7 @@ ht-degree: 0%
         <td>
           <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p4.html">2.3.7-p4</a>
         </td>
-        <td>2022 年 8 月 9 日（Pt）</td>
+        <td>年 8 月  9、2022</td>
     </tr>
     <tr>
         <td>
@@ -362,7 +362,7 @@ ht-degree: 0%
         <td>
           2.3.6-p1
         </td>
-        <td>2021 年 2 月 9 日（Pt）</td>
+        <td>年 2 月  9、2021 年</td>
     </tr>
     <tr>
         <td>
@@ -410,13 +410,13 @@ ht-degree: 0%
         <td>
           2.3.2-p2
         </td>
-        <td>2019 年 10 月 9 日（Pt）</td>
+        <td>October  9、2019</td>
     </tr>
     <tr>
         <td>
           <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">2.3.3</a>
         </td>
-        <td>2019 年 10 月 8 日（Pt）</td>
+        <td>October  8、2019</td>
     </tr>
     <tr>
         <td>
@@ -441,7 +441,7 @@ ht-degree: 0%
 
 ## 2.2
 
-2.2 リリースラインのサポートは 2019 年 12 月 1 日（PT）に終了しました。
+2.2 リリースラインのサポートは 12 月に終了しました  1、2019。
 
 <table>
   <thead>
@@ -461,7 +461,7 @@ ht-degree: 0%
         <td>
           2.2.10
         </td>
-        <td>2019 年 10 月 8 日（Pt）</td>
+        <td>October  8、2019</td>
     </tr>
     <tr>
         <td>
@@ -497,7 +497,7 @@ ht-degree: 0%
         <td>
           2.2.4
         </td>
-        <td>2018 年 5 月 2 日（Pt）</td>
+        <td>年 5 月  2、2018</td>
     </tr>
     <tr>
         <td>
@@ -515,7 +515,7 @@ ht-degree: 0%
         <td>
           2.2.1
         </td>
-        <td>2017 年 11 月 7 日（Pt）</td>
+        <td>年 11 月  7、2017</td>
     </tr>
     <tr>
         <td>
@@ -572,7 +572,7 @@ ht-degree: 0%
         <td>
           2.1.13
         </td>
-        <td>2018 年 5 月 2 日（Pt）</td>
+        <td>年 5 月  2、2018</td>
     </tr>
     <tr>
         <td>
@@ -590,7 +590,7 @@ ht-degree: 0%
         <td>
           2.1.10
         </td>
-        <td>2017 年 11 月 7 日（Pt）</td>
+        <td>年 11 月  7、2017</td>
     </tr>
     <tr>
         <td>
@@ -602,7 +602,7 @@ ht-degree: 0%
         <td>
           2.1.8
         </td>
-        <td>2017 年 8 月 9 日（Pt）</td>
+        <td>年 8 月  9、2017</td>
     </tr>
     <tr>
         <td>
@@ -626,7 +626,7 @@ ht-degree: 0%
         <td>
           2.1.4
         </td>
-        <td>2017 年 2 月 7 日（Pt）</td>
+        <td>年 2 月  7、2017</td>
     </tr>
     <tr>
         <td>
@@ -677,7 +677,7 @@ ht-degree: 0%
         <td>
           2.0.17
         </td>
-        <td>2017 年 11 月 7 日（Pt）</td>
+        <td>年 11 月  7、2017</td>
     </tr>
     <tr>
         <td>
@@ -707,7 +707,7 @@ ht-degree: 0%
         <td>
           2.0.12
         </td>
-        <td>2017 年 2 月 7 日（Pt）</td>
+        <td>年 2 月  7、2017</td>
     </tr>
     <tr>
         <td>

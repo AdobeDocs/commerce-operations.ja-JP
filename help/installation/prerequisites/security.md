@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # オンプレミス インストールのセキュリティ
 
-[Security Enhanced Linux （SELinux）](https://selinuxproject.org/page/Main_Page) centOS 管理者と Ubuntu 管理者がサーバーに対するより優れたアクセス制御を可能にします。 SELinux を使用する場合 *および* Apache が別のホストへの接続を開始する必要があります。この節で説明するコマンドを実行する必要があります。
+[Security Enhanced Linux （SELinux） ](https://selinuxproject.org/page/Main_Page) により、CentOS および Ubuntu 管理者はサーバーに対するより優れたアクセス制御が可能になります。 SELinux *および* を使用している場合、Apache が別のホストへの接続を開始する必要があります。この節で説明するコマンドを実行する必要があります。
 
 >[!NOTE]
 >
->Adobeでは、SELinux の使用に関する推奨事項はありません。必要に応じて、セキュリティの強化に使用できます。 SELinux を使用する場合は、適切に設定する必要があります。そうしないと、Adobe Commerceが予期せず機能することがあります。 SELinux を使用する場合は、 [CentOS wiki](https://wiki.centos.org/HowTos/SELinux) ：通信を有効にするルールを設定します。
+>Adobeでは、SELinux の使用に関する推奨事項はありません。必要に応じて、セキュリティの強化に使用できます。 SELinux を使用する場合は、適切に設定する必要があります。そうしないと、Adobe Commerceが予期せず機能することがあります。 SELinux を使用する場合は、[CentOS wiki](https://wiki.centos.org/HowTos/SELinux) などのリソースを参照して、通信を有効にするルールを設定してください。
 
 ## を Apache とインストールする際の推奨事項
 
-SELinux を有効にする場合、 *セキュリティ コンテキスト* ディレクトリの一部を次に示します。
+SELinux を有効にすることを選択した場合、次のように一部のディレクトリの *セキュリティコンテキスト* を変更しない限り、インストーラーの実行に問題が生じる可能性があります。
 
 ```bash
 chcon -R --type httpd_sys_rw_content_t <magento_root>/app/etc
@@ -44,12 +44,12 @@ chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
 
 上記のコマンドは Apache web サーバーでのみ機能します。 さまざまな設定とセキュリティ要件があるため、これらのコマンドがすべての状況で動作することを保証するものではありません。 詳しくは、以下を参照してください。
 
-* [man ページ](https://linux.die.net/man/8/httpd_selinux)
-* [サーバラボ](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
+* [ マニュアルページ ](https://linux.die.net/man/8/httpd_selinux)
+* [Server Lab](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
 
 ## サーバー間通信を有効にする
 
-Apache とデータベースサーバーが同じホスト上にある場合、を使用する統合を使用する予定があれば、次のコマンドを使用します `curl` （例： Paypal および USPS）。
+Apache とデータベースサーバーが同じホスト上にある場合、`curl` を使用する統合を使用する予定があれば次のコマンドを使用します（例： Paypal および USPS）。
 SELinux を有効にして Apache が別のホストへの接続を開始できるようにするには、次の手順に従います。
 
 1. SELinux が有効かどうかを確認するには、次のコマンドを使用します。
@@ -58,7 +58,7 @@ SELinux を有効にして Apache が別のホストへの接続を開始でき�
    getenforce
    ```
 
-   `Enforcing` は、SELinux が実行中であることを確認するために表示されます。
+   `Enforcing` が表示され、SELinux が実行中であることを確認します。
 
    * CentOS: `setsebool -P httpd_can_network_connect=1`
    * Ubuntu: `setsebool -P apache2_can_network_connect=1`
@@ -67,5 +67,5 @@ SELinux を有効にして Apache が別のホストへの接続を開始でき�
 
 セキュリティ要件によっては、ポート 80 やその他のポートをファイアウォールで開く必要がある場合があります。 ネットワークセキュリティは機密性が高いため、Adobeでは、作業を進める前に IT 部門に問い合わせることを強くお勧めします。 以下に、推奨参照を示します。
 
-* Ubuntu: [Ubuntu ドキュメントページ](https://help.ubuntu.com/community/IptablesHowTo)
-* CentOS: [CentOS のハウツー](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).
+* Ubuntu: [Ubuntu ドキュメントページ ](https://help.ubuntu.com/community/IptablesHowTo)
+* CentOS: [CentOS のハウツー ](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)。

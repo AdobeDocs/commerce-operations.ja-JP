@@ -21,7 +21,7 @@ MariaDB を使用している場合は、クラウドインフラストラクチ
 
 ## Adobe Commerce 2.4.6
 
-MariaDB 10.5.1 以降、古い時間形式の列はでマークされます `/* mariadb-5.3 */` の出力にコメントがあります `SHOW CREATE TABLE`, `SHOW COLUMNS`, `DESCRIBE` ステートメント、および `COLUMN_TYPE` の列 `INFORMATION_SCHEMA.COLUMNS` テーブル。 [MariaDB のドキュメントを参照してください](https://mariadb.com/kb/en/datetime/#internal-format).
+MariaDB 10.5.1 以降、古いテンポラル形式の列は、`SHOW CREATE TABLE`、`SHOW COLUMNS`、`DESCRIBE` 文の出力および `INFORMATION_SCHEMA.COLUMNS` テーブルの `COLUMN_TYPE` 列に `/* mariadb-5.3 */` コメントでマークされます。 [MariaDB ドキュメントを参照してください ](https://mariadb.com/kb/en/datetime/#internal-format)。
 
 MariaDB コメントが原因で、Adobe Commerceが日付列を適切なデータタイプにマッピングできず、カスタムコードで予期しない動作が起こる可能性があります。
 
@@ -29,7 +29,7 @@ MariaDB を旧バージョンからバージョン 10.6 にアップグレード
 
 ### デフォルトの設定
 
-MariaDB 10.1.2 では、MySQL 5.6 から新しい時間形式が導入されました。この `mysql56_temporal_format` システム変数を使用すると、alter table の実行時またはデータベースのインポート時に、データベースで古い日付形式を新しい日付形式に自動的に変換できます。 のデフォルト設定 `mysql56_temporal_format` は、クラウドインフラストラクチャー上のAdobe Commerceで常に有効になっています。
+MariaDB 10.1.2 では、MySQL 5.6 から新しい時間形式が導入されました。`mysql56_temporal_format` システム変数を使用すると、alter table の実行時またはデータベースのインポート時に、データベースで古い日付形式を新しい日付形式に自動的に変換できます。 `mysql56_temporal_format` のデフォルト設定は、クラウドインフラストラクチャー上のAdobe Commerceで常に有効になっています。
 
 ### 日付列を移行
 
@@ -47,7 +47,7 @@ SELECT CONCAT( 'ALTER TABLE `', COALESCE(TABLE_NAME), '`', ' MODIFY ', '`', COAL
 
 >[!NOTE]
 >
->列を新しい内部日付形式に移行することが重要です _次の前_ 予期しない動作を避けるために、新しいコードをデプロイする。
+>予期しない動作を避けるために、新しいコードをデプロイする _前_ に、列を新しい内部日付形式に移行することが重要です。
 
 ## Adobe Commerce 2.3.5
 
@@ -59,18 +59,18 @@ SELECT CONCAT( 'ALTER TABLE `', COALESCE(TABLE_NAME), '`', ' MODIFY ', '`', COAL
 
 Adobe Commerce サポートチームがアップグレードプロセスを開始する前に、データベーステーブルを変換してデータベースを準備します。
 
-- 行形式を次のように変換します `COMPACT` 対象： `DYNAMIC`
-- ストレージエンジンの変更元 `MyISAM` 対象： `InnoDB`
+- 行形式を `COMPACT` から `DYNAMIC` に変換します
+- ストレージエンジンを `MyISAM` から `InnoDB` に変更します
 
 コンバージョンを計画およびスケジュールする際は、次の点に注意してください。
 
-- 変換元 `COMPACT` 対象： `DYNAMIC` 大規模なデータベースでは、テーブルに数時間かかる場合があります。
+- 大規模なデータベースでは、`COMPACT` テーブルから `DYNAMIC` テーブルへの変換に数時間かかる場合があります。
 
 - データの破損を防ぐには、ライブサイトでコンバージョン作業を完了しないようにします。
 
 - サイトのトラフィックが少ない時間帯にコンバージョン作業を完了します。
 
-- サイトの切り替え先 [メンテナンスモード](../../../installation/tutorials/maintenance-mode.md) データベース テーブルを変換するコマンドを実行する前に。
+- データベーステーブルを変換するコマンドを実行する前に、サイトを [ メンテナンスモード ](../../../installation/tutorials/maintenance-mode.md) に切り替えます。
 
 #### データベース テーブル行の形式を変換する
 
@@ -106,18 +106,18 @@ Adobe Commerce サポートチームがアップグレードプロセスを開�
 
 ストレージ形式を変換するプロセスは、Adobe Commerce Starter とAdobe Commerce Pro プロジェクトで異なります。
 
-- スターターアーキテクチャの場合は、MySQL を使用します `ALTER` 形式を変換するコマンド。
-- Pro アーキテクチャでは、MySQL を使用します。 `CREATE` および `SELECT` を使用してデータベーステーブルを作成するコマンド `InnoDB` 既存のテーブルから新しいテーブルにデータを保存してコピーします。 この方法では、変更がクラスター内のすべてのノードに確実にレプリケートされます。
+- スターターアーキテクチャの場合は、MySQL `ALTER` コマンドを使用して形式を変換します。
+- Pro アーキテクチャでは、MySQL `CREATE` および `SELECT` コマンドを使用して、`InnoDB` ストレージを含むデータベーステーブルを作成し、既存のテーブルから新しいテーブルにデータをコピーします。 この方法では、変更がクラスター内のすべてのノードに確実にレプリケートされます。
 
 **Adobe Commerce Pro プロジェクトのテーブルストレージフォーマットの変換**
 
-1. を使用するテーブルの特定 `MyISAM` ストレージ。
+1. `MyISAM` ストレージを使用するテーブルを識別します。
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
    ```
 
-1. すべてのテーブルを次に変換 `InnoDB` ストレージフォーマットは一度に 1 つずつ。
+1. すべてのテーブル `InnoDB` 一度に 1 つずつストレージ形式に変換します。
 
    - 名前の競合を防ぐために、既存のテーブルの名前を変更します。
 
@@ -125,7 +125,7 @@ Adobe Commerce サポートチームがアップグレードプロセスを開�
      RENAME TABLE <existing_table> <table_old>;
      ```
 
-   - を使用するテーブルの作成 `InnoDB` 既存のテーブルのデータを使用したストレージ。
+   - 既存のテーブルのデータを使用して、`InnoDB` ストレージを使用するテーブルを作成します。
 
      ```mysql
      CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
@@ -138,13 +138,13 @@ Adobe Commerce サポートチームがアップグレードプロセスを開�
 
 **Adobe Commerce スタータープロジェクトのテーブルストレージ形式の変換**
 
-1. を使用するテーブルの特定 `MyISAM` ストレージ。
+1. `MyISAM` ストレージを使用するテーブルを識別します。
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
    ```
 
-1. を使用するテーブルを変換する `MyISAM` ストレージ先 `InnoDB` ストレージ。
+1. `MyISAM` ストレージを使用するテーブルを `InnoDB` ストレージに変換します。
 
    ```mysql
    ALTER TABLE [ table name here ] ENGINE=InnoDB;
@@ -156,13 +156,13 @@ MariaDB バージョン 10.3、10.4、または 10.6 への予定アップグレ
 
 1. データベースにログインします。
 
-1. テーブルに次の情報が残っているかどうかを確認します `COMPACT` 行の形式。
+1. `COMPACT` 行の形式がまだ残っているテーブルを確認します。
 
    ```mysql
    SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
    ```
 
-1. テーブルで引き続き「」を使用しているかどうかを確認します。 `MyISAM` ストレージ形式
+1. `MyISAM` ストレージ形式をまだ使用しているテーブルがないかどうかを確認します
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
@@ -172,4 +172,4 @@ MariaDB バージョン 10.3、10.4、または 10.6 への予定アップグレ
 
 ### ストレージエンジンの変更
 
-参照： [MyISAM テーブルを InnoDB に変換する](../planning/database-on-cloud.md).
+[MyISAM テーブルの InnoDB への変換 ](../planning/database-on-cloud.md) を参照してください。

@@ -7,7 +7,7 @@ exl-id: 1cd48155-5d60-48b2-b07b-9b5784b81681
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '182'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 Realpath キャッシュは、参照されるファイル名の実際のファイルシステムパスを、毎回検索する代わりにキャッシュします。 様々なファイル関数が実行されたり、ファイルを要求したり、相対パスを使用したりするたびに、PHP はそのファイルが実際に存在する場所を探す必要があります。
 
-Commerceのパフォーマンスを向上させるには、以下の推奨設定を使用して、 `realpath_cache` の設定 `php.ini` ファイル：
+Commerceのパフォーマンスを向上させるには、次の推奨設定を使用して、`php.ini` ファイルの `realpath_cache` の設定を行います。
 
-- キャッシュサイズを 10 MB に設定します（`realpath cache_size=10M`）
-- time to live （ttl）を 7200 秒に設定します（`realpath_cache_ttl=7200`）
+- キャッシュサイズを 10 MB に設定します（`realpath cache_size=10M`）。
+- 有効期間（ttl）を 7200 秒（`realpath_cache_ttl=7200`）に設定します
 
-設定手順については、を参照してください [PHP オプションの設定方法](../../../installation/prerequisites/php-settings.md#how-to-set-php-options).
+設定手順については、[PHP オプションの設定方法 ](../../../installation/prerequisites/php-settings.md#how-to-set-php-options) を参照してください。
 
 ## 影響を受ける製品とバージョン
 

@@ -16,8 +16,8 @@ ht-degree: 3%
 
 >[!TIP]
 >
->- Adobe Commerceを初めて使用する場合は、を参照してください [エンタープライズアーキテクチャ](../../implementation-playbook/architecture/enterprise-blueprint.md) および [Adobe Commerceについて](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) 方向性を決めるトピック。
->- アップグレードについては、を参照してください。 [推奨読み取り](../../upgrade/resources/recommended-reading.md).
+>- Adobe Commerceを初めて使用する場合は、[ エンタープライズアーキテクチャ ](../../implementation-playbook/architecture/enterprise-blueprint.md) および [Adobe Commerceについて ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) の各トピックを参照して理解を深めてください。
+>- アップグレードの詳細については、「[ 推奨される内容 ](../../upgrade/resources/recommended-reading.md)」を参照してください。
 
 <table>
   <tbody>
@@ -32,19 +32,19 @@ ht-degree: 3%
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">Adobe Commerceの B2B</a></li>
           </ul>
         </td>
-      <td><strong>クラウドインフラストラクチャー上のAdobe Commerce</strong>
+      <td><strong> クラウドインフラストラクチャー上のAdobe Commerce</strong>
         <p>クラウドプラットフォームでAdobe Commerceのインストールとアップグレードをデプロイおよび管理するために設計された、Adobe Commerce パッケージ用 Cloud Suite の最新の改善点について説明します。</p>
           <ul>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/backward-incompatible-changes.html">後方互換性のない変更</a></li>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html">Commerceのクラウドパッチ</a></li>
-            <li><a href="https://devdocs.magento.com/cloud/release-notes/mcd-release-notes.html">Cloud Docker for Commerce</a></li>
+            <li><a href="https://devdocs.magento.com/cloud/release-notes/mcd-release-notes.html">Commerce用の Cloud Docker</a></li>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/mcc-release-notes.html">Commerceのクラウドコンポーネント</a></li>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html">ece-tools</a></li>
           </ul>
       </td>
     </tr>
     <tr>
-      <td><strong>Adobe Commerceのサービス</strong>
+      <td><strong>Adobe Commerceのサービス </strong>
         <p>革新的なCommerce マーチャンダイジングサービスに対する最新の改善点について説明します。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
@@ -59,10 +59,10 @@ ht-degree: 3%
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html?lang=en">Store Fulfillment</a></li>
           </ul>
         </td>
-      <td><strong>ツール</strong>
+      <td><strong> ツール </strong>
         <p>Adobe Commerce ソフトウェアを簡単に見つけて使用できるように設計されたツールに対する最新の改善点について説明します。</p>
           <ul>
-            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">AdobeAPP Builder 開発者向け API メッシュ</a></li>
+            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">AdobeApp Builder Developer の API メッシュ</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe CommerceのAdobe I/Oイベント</a></li>
             <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">管理 UI SDK</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">品質向上パッチツール</a></li>
@@ -72,7 +72,7 @@ ht-degree: 3%
       </td>
     </tr>
     <tr>
-       <td><strong>ストアフロントの経験</strong>
+       <td><strong> ストアフロントの経験 </strong>
         <p>顧客に独自のエクスペリエンスを構築するために使用できる、ストアフロントテクノロジーの最新の改善点について説明します。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/">Adobe Commerce ストアフロント</a></li>

@@ -12,12 +12,12 @@ ht-degree: 0%
 
 # 検索エンジンの概要
 
-バージョン 2.4.4 以降、Adobe Commerceでは次のいずれかが必要になります [Elasticsearch] または [OpenSearch] をカタログ検索エンジンにします。 2.4.x の以前のバージョンでは、Elasticsearchが必要でした。 検索エンジンのインストールと初期設定の詳細については、次のトピックを参照してください。
+バージョン 2.4.4 以降、Adobe Commerceではカタログ検索エンジンとして [Elasticsearch] または [OpenSearch] が必要です。 2.4.x の以前のバージョンでは、Elasticsearchが必要でした。 検索エンジンのインストールと初期設定の詳細については、次のトピックを参照してください。
 
 - [検索エンジンの前提条件](../../installation/prerequisites/search-engine/overview.md)
 - [検索エンジンの nginx の設定](../../installation/prerequisites/search-engine/configure-nginx.md)
 - [検索エンジン用に Apache を設定する](../../installation/prerequisites/search-engine/configure-apache.md)
-- [Commerce ソフトウェアのインストール](../../installation/composer.md) （コマンドラインインターフェイス）
+- [Commerce ソフトウェアのインストール ](../../installation/composer.md) （コマンドラインインターフェイス）
 
 検索エンジンをインストールしてAdobe Commerceと統合したら、さらに次のメンテナンスを実行する必要があります。
 

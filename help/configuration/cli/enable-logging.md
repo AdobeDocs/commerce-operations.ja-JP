@@ -16,15 +16,15 @@ ht-degree: 0%
 
 ## デバッグログ
 
-デフォルトでは、Commerceはデバッグログ（`<install_directory>/var/log/debug.log`）に設定する必要があります（デフォルトまたは開発モードの場合）。ただし、実稼動モードの場合は設定できません。 の使用 `bin/magento setup:config:set --enable-debug-logging` デフォルト値を変更するコマンド。
+デフォルトでは、Commerceは、デフォルトまたは開発モードの場合はデバッグログ（`<install_directory>/var/log/debug.log`）に書き込みますが、実稼動モードの場合は書き込まれません。 `bin/magento setup:config:set --enable-debug-logging` コマンドを使用して、デフォルト値を変更します。
 
 >[!INFO]
 >
->Commerce 2.3.1 以降では、 `bin/magento config:set dev/debug/debug_logging` 現在のモードのデバッグログを有効または無効にするコマンド。
+>Commerce 2.3.1 以降では、現在のモードのデバッグログを有効または無効にするために `bin/magento config:set dev/debug/debug_logging` コマンドを使用できなくなりました。
 
 ### デバッグ ログを有効にするには
 
-1. の使用 `setup:config:set` 現在のモードのデバッグログを有効にするコマンド。
+1. `setup:config:set` コマンドを使用して、現在のモードのデバッグログを有効にします。
 
    ```bash
    bin/magento setup:config:set --enable-debug-logging=true
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ### デバッグ ログを無効にするには
 
-1. の使用 `setup:config:set` 現在のモードのデバッグログを無効にするコマンド。
+1. `setup:config:set` コマンドを使用して、現在のモードのデバッグログを無効にします。
 
    ```bash
    bin/magento setup:config:set --enable-debug-logging=false
@@ -52,11 +52,11 @@ ht-degree: 0%
 
 ## データベースログ
 
-デフォルトでは、Commerceはデータベースのアクティビティログをに書き込みます `<install-dir>/var/debug/db.log` ファイル。
+デフォルトでは、Commerceはデータベースのアクティビティログを `<install-dir>/var/debug/db.log` ファイルに書き込みます。
 
 ### データベース ログを有効にするには
 
-1. の使用 `dev:query-log` コマンドを使用して、データベース・ログを有効または無効にします。
+1. `dev:query-log` コマンドを使用して、データベース・ログを有効または無効にします。
 
    ```bash
    bin/magento dev:query-log:enable
@@ -74,23 +74,23 @@ ht-degree: 0%
 
 ## Cron ログ
 
-バージョン 2.3.1 のリリースでは、Commerceは個別にを作成するようになりました `cron` ログ。 \
-Commerceは最近、cron のログの詳細度を高めました。これにより提供される情報が増えましたが、ログの時間が長くなりました。 `system.log` かなり。
-移動中 `cron` 専用ログに情報を書き込むと、両方のログが読みやすくなります。
+バージョン 2.3.1 のリリースでは、Commerceは個別の `cron` ログを作成するようになりました。 \
+Commerceは最近、cron のログの詳細度を高めました。これにより提供される情報は増えましたが、`system.log` が大幅に長くなりました。
+情報 `cron` 専用ログに移動すると、両方のログが読みやすくなります。
 
-デフォルトでは、Commerceは次のように記述します `cron` の情報 `<install-directory>/var/log/cron.log` ファイル。
+デフォルトでは、Commerceは `cron` の情報を `<install-directory>/var/log/cron.log` ファイルに書き込みます。
 
 ## Syslog ログ
 
-デフォルトでは、Commerceは次のように記述します _syslog_ オペレーティングシステムにログを記録 `syslog` ファイル。
-Commerce 2.3.1 では、を使用する必要があります `magento` syslog を有効または無効にするコマンド。
+デフォルトでは、Commerceはオペレーティングシステムの `syslog` ファイルに _syslog_ ログを書き込みます。
+Commerce 2.3.1 では、syslog を有効または無効にするには、`magento` コマンドを使用する必要があります。
 管理者の設定が削除されました。
 
 ### syslog ログを有効にするには
 
-へのログ `syslog` はデフォルトで無効になっています。
+`syslog` へのログは、デフォルトでは無効になっています。
 
-1. の使用 `setup:config:set` 変更するコマンド `dev/syslog/syslog_logging` データベースの値 `true`.
+1. `setup:config:set` コマンドを使用して、`dev/syslog/syslog_logging` データベースの値を `true` に変更します。
 
    ```bash
    bin/magento setup:config:set --enable-syslog-logging=true
@@ -104,7 +104,7 @@ Commerce 2.3.1 では、を使用する必要があります `magento` syslog �
 
 ### syslog ログを無効にするには
 
-1. の使用 `setup:config:set` 変更するコマンド `dev/syslog/syslog_logging` データベースの値 `false`.
+1. `setup:config:set` コマンドを使用して、`dev/syslog/syslog_logging` データベースの値を `false` に変更します。
 
    ```bash
    bin/magento setup:config:set --enable-syslog-logging=false

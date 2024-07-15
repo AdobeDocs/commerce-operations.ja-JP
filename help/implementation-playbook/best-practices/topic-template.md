@@ -8,7 +8,7 @@ hidefromtoc: true
 source-git-commit: 4360a3436f013c1b2a8b95a876d2037a6987acac
 workflow-type: tm+mt
 source-wordcount: '92'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -34,7 +34,7 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 <!-- Example 1: -->
 
-[サポートされているすべてのバージョン](../../../release/versions.md) （件中）:
+[ サポートされているすべてのバージョン ](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerceオンプレミス

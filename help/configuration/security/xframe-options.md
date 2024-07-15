@@ -12,36 +12,36 @@ ht-degree: 0%
 
 # クリックジャッキング攻撃の防止
 
-防止 [クリックジャッキング](https://owasp.org/www-community/attacks/Clickjacking) を含めることによる悪用 [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) ストアフロントへのリクエストの HTTP リクエストヘッダー。
+ストアフロントへのリクエストに [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) HTTP リクエストヘッダーを含めることで、[ クリックジャッキング ](https://owasp.org/www-community/attacks/Clickjacking) による悪用を防ぐことができます。
 
-この `X-Frame-Options` ヘッダーを使用すると、ブラウザーでページをレンダリングできるかどうかを指定できます `<frame>`, `<iframe>`、または `<object>` 次のように設定します。
+`X-Frame-Options` ヘッダーを使用すると、ブラウザーでページを `<frame>`、`<iframe>` または `<object>` でレンダリングできるかどうかを次のように指定できます。
 
-- `DENY`：ページをフレーム内に表示することはできません。
-- `SAMEORIGIN`:（デフォルト）ページは、ページ自体と同じオリジン上のフレーム内にのみ表示できます。
+- `DENY`: ページをフレーム内に表示することはできません。
+- `SAMEORIGIN`:（デフォルト）ページは、ページ自体と同じオリジン上のフレームにのみ表示できます。
 
 >[!WARNING]
 >
->この `ALLOW-FROM <uri>` Commerceでサポートされているブラウザーがサポートしなくなったので、オプションは非推奨（廃止予定）になりました。 参照： [ブラウザーの互換性](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#browser_compatibility).
+>Commerceでサポートされているブラウザーがサポートしなくなったため、`ALLOW-FROM <uri>` オプションは非推奨（廃止予定）になりました。 [ ブラウザー互換性 ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#browser_compatibility) を参照してください。
 
 >[!WARNING]
 >
 >セキュリティ上の理由から、AdobeではCommerce ストアフロントをフレーム内で実行しないことを強くお勧めします。
 
-## 実装方法 `X-Frame-Options`
+## `X-Frame-Options` の実装
 
-の値を設定 `X-Frame-Options` 。対象： `<project-root>/app/etc/env.php`. デフォルト値は次のように設定されています。
+`<project-root>/app/etc/env.php` で `X-Frame-Options` の値を設定します。 デフォルト値は次のように設定されています。
 
 ```php
 'x-frame-options' => 'SAMEORIGIN',
 ```
 
-に変更がある場合は再デプロイ `env.php` ファイルが有効になります。
+再デプロイして、`env.php` ファイルに対する変更を有効にします。
 
 >[!TIP]
 >
->を編集する方がより安全です。 `env.php` ファイルの方が、管理者で値を設定する必要があります。
+>管理者で値を設定するよりも、`env.php` ファイルを編集する方が安全です。
 
-## の設定を確認します `X-Frame-Options`
+## `X-Frame-Options` の設定を確認してください
 
 設定を検証するには、任意のストアフロントページで HTTP ヘッダーを表示します。 Web ブラウザーインスペクターの使用など、いくつかの方法があります。
 
@@ -51,4 +51,4 @@ ht-degree: 0%
 curl -I -v --location-trusted '<storefront-URL>'
 ```
 
-を探します。 `X-Frame-Options` ヘッダーの値。
+ヘッダーで `X-Frame-Options` 値を探します。

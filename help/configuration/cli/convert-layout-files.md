@@ -15,8 +15,8 @@ ht-degree: 0%
 
 対応する XSLT （Extensible Stylesheet Language Transformations） スタイルシートを更新する場合は、このコマンドを使用してレイアウト XML ファイルを更新します。
 
-- [レイアウトの説明](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
-- [レイアウトファイルタイプ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
+- [ レイアウトの説明 ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
+- [ レイアウトファイルのタイプ ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
 
 コマンドオプション：
 
@@ -26,6 +26,6 @@ bin/magento dev:xml:convert [-o|--overwrite] {xml file} {xslt stylesheet}
 
 ここで、
 
-- `{xml file}` – 変換するレイアウト XML ファイルの完全パスとファイル名です（必須）
-- `{xslt stylesheet}` – 変換に使用する XSLT スタイルシート ファイルの完全パスとファイル名（必須）
-- `-o|--overwrite` – 既存の XML ファイルを上書きするには、このオプションを含めます
+- `{xml file}` – 変換するレイアウト XML ファイルのフル・パスとファイル名（必須）
+- `{xslt stylesheet}` – 変換に使用する XSLT スタイルシート・ファイルのフル・パスとファイル名（必須）
+- `-o|--overwrite` – 既存の XML ファイルを上書きする場合は、このオプションを含めます

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # ロックプロバイダーの設定
 
-このコマンドを実行する前に、次の操作を行う必要があります *または* あなたは必要です [アプリケーションのインストール](../advanced.md):
+このコマンドを実行する前に、次の操作を行う必要があります *または* アプリケーションをインストールする必要があります [](../advanced.md)。
 
 * [デプロイメント設定の作成または更新](deployment.md)
 * [データベーススキーマの作成](database.md)
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Adobe Commerceは、デフォルトでロックを保存するためにこのデータベースを使用します。 サーバーに複数のノードがある場合は、Zookeeper をロックプロバイダーとして使用することをお勧めします。
 
-クラウドインフラストラクチャー上でAdobe Commerceを実行している場合は、ロックプロバイダーを設定する必要はありません。 アプリケーションは、プロビジョニングプロセス中に、Pro プロジェクトのファイルロックプロバイダを設定します。 参照： [クラウド変数](https://devdocs.magento.com/cloud/env/variables-cloud.html).
+クラウドインフラストラクチャー上でAdobe Commerceを実行している場合は、ロックプロバイダーを設定する必要はありません。 アプリケーションは、プロビジョニングプロセス中に、Pro プロジェクトのファイルロックプロバイダを設定します。 [ クラウド変数 ](https://devdocs.magento.com/cloud/env/variables-cloud.html) を参照してください。
 
 ### コマンドの使用法
 
@@ -38,8 +38,8 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 
 | 名前 | 値 | 必須？ |
 |--- |--- |--- |
-| `--lock-provider` | プロバイダ名のロック： `db`, `zookeeper`、または `file`.<br><br>デフォルトのロックプロバイダーは次のとおりです。 `db` | 不可 |
-| `--lock-db-prefix` | を使用する際にロックの競合を回避するための特定の db プレフィックス `db` プロバイダをロックします。<br><br>デフォルト値は次のとおりです。 `NULL` | 不可 |
-| `--lock-zookeeper-host` | を使用するときに Zookeeper クラスターに接続するホストおよびポート `zookeeper` プロバイダをロックします。<br><br>例： `127.0.0.1:2181` | はい（設定する場合） `--lock-provider=zookeeper` |
-| `--lock-zookeeper-path` | Zookeeper がロックを保存するパス。<br><br>デフォルトのパスはです。 `/magento/locks` | 不可 |
-| `--lock-file-path` | ファイルのロックが保存されるパス。 | はい（設定する場合） `--lock-provider=file` |
+| `--lock-provider` | プロバイダ名のロック：`db`、`zookeeper`、または `file`。<br><br> デフォルトのロックプロバイダー：`db` | 不可 |
+| `--lock-db-prefix` | `db` ロックプロバイダーの使用時にロックの競合を回避するための、特定の db プレフィックスです。<br><br> デフォルト値：`NULL` | 不可 |
+| `--lock-zookeeper-host` | `zookeeper` ロックプロバイダーを使用する場合に Zookeeper クラスターに接続するホストおよびポート。<br><br> 例：`127.0.0.1:2181` | はい（`--lock-provider=zookeeper` を設定した場合） |
+| `--lock-zookeeper-path` | Zookeeper がロックを保存するパス。<br><br> デフォルトパスは `/magento/locks` です。 | 不可 |
+| `--lock-file-path` | ファイルのロックが保存されるパス。 | はい（`--lock-provider=file` を設定した場合） |

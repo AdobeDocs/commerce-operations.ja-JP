@@ -28,10 +28,10 @@ MySQL データベースは非同期でレプリケートするので、スレ�
 
 データベースレプリケーションの詳細については、このガイドの範囲外です。 設定するには、次のようなリソースを参照します。
 
-- [MySQL ドキュメント](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [MySQL でマスタースレーブレプリケーションを設定する方法（digitalocean）](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [MySQL のドキュメント ](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
+- [MySQL でマスタースレーブレプリケーションを設定する方法（digitalocean） ](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
-Commerceは、スレーブデータベース用の MySQL 設定のサンプルを提供します。 を使用した簡単な設定ができます `ResourceConnections` クラス `README.md`.
+Commerceは、スレーブデータベース用の MySQL 設定のサンプルを提供します。 `ResourceConnections` クラス `README.md` では、簡単な設定が提供されます。
 
 より高度な次の説明は、情報提供のみを目的としています。
 
@@ -122,9 +122,9 @@ Commerceは、スレーブデータベース用の MySQL 設定のサンプル�
 
 ## パフォーマンスの向上
 
-マスタースレーブレプリケーションのパフォーマンスを向上させるために、スレーブインスタンス上の一部のテーブルをフィルタリングできます。 名前パターンを使用してすべての一時テーブルをフィルタリングすることをお勧めします。 `search\_tmp\_%` これは、カタログ検索に使用されます。
+マスタースレーブレプリケーションのパフォーマンスを向上させるために、スレーブインスタンス上の一部のテーブルをフィルタリングできます。 カタログ検索に使用する名前パターン `search\_tmp\_%` を持つすべての一時テーブルをフィルタリングすることをお勧めします。
 
-これを行うには、に次の行を追加します `my.cnf` スレーブインスタンス上のファイル：
+これを行うには、スレーブインスタンスの `my.cnf` ファイルに次の行を追加します。
 
 ```conf
 replicate-wild-ignore-table=%.search\_tmp\_%

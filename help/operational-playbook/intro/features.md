@@ -15,4 +15,4 @@ ht-degree: 0%
 
 ## 進化をサポートするオープンプラットフォーム
 
-![コマーステクノロジーの価値](../../assets/playbooks/commerce-features.png)
+![ コマーステクノロジーの価値 ](../../assets/playbooks/commerce-features.png)

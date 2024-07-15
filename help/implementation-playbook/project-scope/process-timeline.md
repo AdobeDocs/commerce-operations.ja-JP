@@ -19,8 +19,8 @@ ht-degree: 0%
 
 ## 一般的なタイムラインの例
 
-![一般的なコマース実装タイムラインの例](../../assets/playbooks/timeline-example.svg)
+![ 一般的なコマース実装タイムラインの例 ](../../assets/playbooks/timeline-example.svg)
 
 ## タイムラインアクティビティのサンプル
 
-![コマース実装タイムラインアクティビティのサンプル](../../assets/playbooks/timeline-activities-example.svg)
+![ コマース実装タイムラインアクティビティの例 ](../../assets/playbooks/timeline-activities-example.svg)

@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # 支払い処理と保存のベストプラクティス
 
-の維持における主な原則の 1 つ [PCI コンプライアンス](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) は、クレジットカードの支払いを適切に処理し、保存する戦略を持っています。
+[PCI コンプライアンス ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) を維持するための主な原則の 1 つは、クレジットカードの支払いを適切に処理し、保存する戦略を持つことです。
 
-Adobe Commerceへのカードホルダーデータの保存は次のとおりです **厳しく禁止されている** また、Payment Card Industry Data Security Standard （PCI-DSS）の下でのマーチャントとしての義務に違反する可能性があります。 共有責任モデルと商社債務のガイドラインについて詳しくは、を参照してください。 [Adobe Commerce共有責任モデルガイド](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) （Adobeトラストセンターで利用可能）
+Adobe Commerceへのカード会員データの保存は **厳しく禁止** されており、Payment Card Industry Data Security Standard （PCI-DSS）に基づくマーチャントとしての義務に違反する可能性があります。 共有責任モデルと加盟店債務のガイドラインについて詳しくは、Adobeのセキュリティ センターの [Adobe Commerce共有責任モデル ガイド ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) を参照してください。
 
-以下のベストプラクティスに従って、e コマースサイトで支払い情報を適切に処理してください。 セキュリティのベストプラクティスに関するその他のガイダンスについては、を参照してください。 [サイトとインフラストラクチャを保護](../launch/security-best-practices.md).
+以下のベストプラクティスに従って、e コマースサイトで支払い情報を適切に処理してください。 セキュリティのベストプラクティスに関するその他のガイダンスについては、[ サイトとインフラストラクチャのセキュリティ保護 ](../launch/security-best-practices.md) を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[サポートされているすべてのバージョン](../../../release/versions.md) （件中）:
+[ サポートされているすべてのバージョン ](../../../release/versions.md):
 
 * クラウドインフラストラクチャー上のAdobe Commerce
 * Adobe Commerce オンプレミス
@@ -32,7 +32,7 @@ Adobe Commerceへのカードホルダーデータの保存は次のとおりで
 
 暗号化キーの保護は、データ保護戦略にとって不可欠です。 これらの鍵を管理するのは、熟練した信頼できるカストディアンであることが重要です。
 
-最後に、プライマリアカウント番号（PAN）は、でマスクされるなど、保存中に読み取り不可能にする必要があります `XXX`. これには、フラッシュドライブ、USB、外付けハードドライブなどのポータブルストレージとバックアップメディア、さらには監査ログが含まれます。
+最後に、プライマリアカウント番号（PAN）は、`XXX` でマスクされるなど、保存中に読み取り不可能にする必要があります。 これには、フラッシュドライブ、USB、外付けハードドライブなどのポータブルストレージとバックアップメディア、さらには監査ログが含まれます。
 
 ## カード所有者データの暗号化された送信
 
@@ -53,4 +53,4 @@ Adobe Commerceへのカードホルダーデータの保存は次のとおりで
 
 ## 追加情報
 
-Adobeによるお勧めの支払いソリューションを探している場合は、 [Adobe支払いサービス](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
+Adobeによるお勧めの支払いソリューションをお探しの場合は、[Adobe支払いサービス ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html) を検討してください。

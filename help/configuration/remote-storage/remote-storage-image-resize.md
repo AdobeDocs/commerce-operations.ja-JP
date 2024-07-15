@@ -16,11 +16,11 @@ ht-degree: 0%
 
 次の図は、Nginx が画像を取得、サイズ変更、およびキャッシュに格納する方法を示しています。 サイズ変更は、URL に含まれているパラメーター（高さや幅など）によって決まります。
 
-![画像のサイズ変更](../../assets/configuration/remote-storage-nginx-image-resize.png)
+![ 画像のサイズ変更 ](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 >[!TIP]
 >
->クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、次を参照してください [クラウドインフラストラクチャー上のCommerceにリモートストレージを設定](cloud-support.md)
+>クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、[ クラウドインフラストラクチャ上のCommerceのリモートストレージの設定 ](cloud-support.md) を参照してください。
 
 ## Adobe Commerceでの URL フォーマットの設定
 
@@ -28,31 +28,31 @@ ht-degree: 0%
 
 **サーバーサイド画像のサイズ変更用にCommerceを設定するには**:
 
-1. が含まれる _Admin_ パネル、クリック **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**.
+1. _管理者_ パネルで、**[!UICONTROL Stores]**/**[!UICONTROL Settings]**/**[!UICONTROL Configuration]**/**[!UICONTROL General]**/**[!UICONTROL Web]** をクリックします。
 
-1. 右側のパネルで、を展開します **[!UICONTROL Url options]**.
+1. 右側のペインで **[!UICONTROL Url options]** を展開します。
 
-1. が含まれる _カタログメディアの URL 形式_ セクション、クリア **[!UICONTROL Use system value]**.
+1. 「_カタログメディアの URL 形式_」セクションで、**[!UICONTROL Use system value]** をオフにします。
 
-1. 「」を選択します `Image optimization based on query parameters` URL （内） **_カタログメディアの URL 形式_** フィールド。
+1. **_カタログメディア URL 形式_** フィールドで `Image optimization based on query parameters` URL を選択します。
 
-1. クリック **[!UICONTROL Save Config]**.
+1. 「**[!UICONTROL Save Config]**」をクリックします。
 
-1. 続行します [Nginx 設定](#configure-nginx).
+1. [Nginx 設定 ](#configure-nginx) を続行します。
 
 ## Nginx の設定
 
-サーバーサイドの画像のサイズ変更を引き続き設定するには、 `nginx.conf` ファイルおよびを指定 `proxy_pass` 選択したアダプタの値。
+サーバーサイドの画像サイズ変更を引き続き設定するには、`nginx.conf` ファイルを準備し、選択したアダプターに `proxy_pass` 値を指定する必要があります。
 
-**Nginx でイメージのサイズを変更するには**:
+**Nginx で画像のサイズを変更するには**:
 
-1. のインストール [Nginx 画像フィルターモジュール][nginx-module].
+1. [Nginx 画像フィルターモジュール ][nginx-module] をインストールします。
 
    ```shell
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
    ```
 
-1. を作成 `nginx.conf` 含まれているテンプレートに基づくファイル `nginx.conf.sample` ファイル。 例：
+1. 含まれているテンプレート `nginx.conf.sample` ファイルに基づいて `nginx.conf` ファイルを作成します。 例：
 
    ```conf
    location ~* \.(jpg|jpeg|png|gif|webp)$ {
@@ -69,7 +69,7 @@ ht-degree: 0%
    }
    ```
 
-1. [_オプション_] の設定 `proxy_pass` 特定のアダプターの値。
+1. [_オプション_] 特定のアダプタの `proxy_pass` 値を設定します。
 
    - [Amazon Simple Storage Service （Amazon S3）](remote-storage-aws-s3.md)
 

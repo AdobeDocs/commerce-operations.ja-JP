@@ -13,26 +13,26 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Commerce 2.2 を使用して実稼動システムをセットアップする場合 [パイプラインデプロイメントモデル](../deployment/technical-details.md)は、次の操作が必要です _import_ からの設定 `config.php` および `env.php` をデータベースに追加します。
+Commerce 2.2 [ パイプラインデプロイメントモデル ](../deployment/technical-details.md) を使用して実稼動システムを設定する場合、`config.php` および `env.php` からデータベースに設定を _インポート_ する必要があります。
 これらの設定には、設定パスと値、web サイト、ストア、ストアビュー、テーマが含まれます。
 
 Web サイト、ストア、ストアビュー、テーマを読み込んだ後、製品属性を作成して、実稼動システムの web サイト、ストア、ストアビューに適用できます。
 
 >[!INFO]
 >
->この `bin/magento app:config:import` コマンドは、環境変数に保存された設定を処理しません。
+>`bin/magento app:config:import` コマンドは、環境変数に保存された設定を処理しません。
 
 ## 読み込みコマンド
 
-実稼動システムで、次のコマンドを実行して設定ファイルからデータを読み込みます（`config.php` および `env.php`）を選択します。
+実稼動システムで、次のコマンドを実行して、設定ファイル（`config.php` および `env.php`）からデータベースにデータを読み込みます。
 
 ```bash
 bin/magento app:config:import [-n, --no-interaction]
 ```
 
-オプションのを使用 `[-n, --no-interaction]` インタラクションなしでデータをインポートするためのフラグ。
+オプションの `[-n, --no-interaction]` フラグを使用して、インタラクションを行わずにデータをインポートします。
 
-次のように入力します `bin/magento app:config:import` オプションフラグを使用しない場合は、変更を確認する必要があります。
+オプションフラグを指定せずに `bin/magento app:config:import` と入力した場合は、変更を確定する必要があります。
 
 例えば、設定ファイルに 1 つの新しい web サイトと 1 つの新しいストアが含まれている場合、次のメッセージが表示されます。
 
@@ -42,7 +42,7 @@ These Groups will be created: New Store
 Do you want to continue [yes/no]?
 ```
 
-読み込みを続行するには、を入力します。 `yes`.
+読み込みを続行するには、`yes` と入力します。
 
 読み込むデータが配置設定ファイルに含まれている場合は、次のようなメッセージが表示されます。
 
@@ -64,33 +64,33 @@ Nothing to import
 
 ### システム設定
 
-Commerceがの値を直接使用する `system` 配列 `config.php` または `env.php` ファイルをデータベースにインポートする代わりに、前処理および後処理のアクションを実行する必要があります。
+Commerceでは、データベースに読み込む代わりに、`config.php` ファイルまたは `env.php` ファイル内の `system` 配列の値を直接使用します。これらの値には前処理および後処理のアクションが必要なためです。
 
-例えば、設定パスの値 `web/secure/base_url` バックエンドモデルを使用して検証する必要があります。
+例えば、設定パス `web/secure/base_url` の値は、バックエンドモデルで検証する必要があります。
 
 #### バックエンドモデル
 
 バックエンドモデルは、システム設定の変更を処理するメカニズムです。
-バックエンドモジュールは、次の場所で定義します。 `<module_name>/adminhtml/system.xml`.
+`<module_name>/adminhtml/system.xml` でバックエンドモジュールを定義します。
 
-すべてのバックエンドモデルで、 [`Magento\Framework\App\Config\Value`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config/Value.php) クラス。
+すべてのバックエンドモデルは、[`Magento\Framework\App\Config\Value`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config/Value.php) クラスを拡張する必要があります。
 
 バックエンドモデルを読み込む場合、設定値は保存されません。
 
 ### Web サイト、ストア、ストアグループの設定
 
 次のタイプの設定を読み込みます。
-（これらの設定は、 `scopes` 配列複写 `config.php`.）
+（これらの設定は、`config.php` の `scopes` 配列の下にあります）。
 
 - `websites`:web サイト関連の設定
 - `groups`：関連する設定を格納します
-- `stores`：ビュー関連の設定の保存
+- `stores`：表示に関連する設定の保存
 
 前述の設定は、次のモードで読み込むことができます。
 
-- `create`: `config.php` 新しいエンティティを含む（`websites`, `groups`, `stores`）が実稼動環境に存在しない
-- `update`: `config.php` 含まれるエンティティ（`websites`, `groups`, `stores`）が実稼動環境とは異なります
-- `delete`: `config.php` 実行 _ではない_ エンティティを含む（`websites`, `groups`, `stores`）が存在する
+- `create`: `config.php` には、実稼動環境にない新しいエンティティ（`websites`、`groups`、`stores`）が含まれています
+- `update`: `config.php` に、実稼動環境とは異なるエンティティ（`websites`、`groups`、`stores`）が含まれています
+- `delete`: `config.php` には、実稼動環境に存在するエンティティ _`websites`、`groups`、`stores`）が含まれていま_ ん
 
 >[!INFO]
 >
@@ -98,14 +98,14 @@ Commerceがの値を直接使用する `system` 配列 `config.php` または `e
 
 ### テーマの設定
 
-テーマ設定には、Commerce システムに登録されているすべてのテーマが含まれます。データはから直接取得されます。 `theme` データベーステーブル。 （テーマの設定はにあります `themes` 配列複写 `config.php`.）
+テーマ設定には、Commerce システムに登録されているすべてのテーマが含まれます。データは、`theme` データベーステーブルから直接取得されます。 （テーマの設定は、`config.php` の `themes` 配列にあります）。
 
 #### テーマデータの構造
 
-配列のキーは、完全なテーマパスです。 `area` + `theme path`
+配列のキーは、完全なテーマパス `area` + `theme path` です。
 
-例： `frontend/Magento/luma`.
-`frontend` 面積で `Magento/luma` はテーマのパスです。
+例：`frontend/Magento/luma`。
+`frontend` は領域、`Magento/luma` はテーマのパスです。
 
 配列の値は、テーマに関するデータ（コード、タイトル、パス、親 ID）です。
 
@@ -126,5 +126,5 @@ Commerceがの値を直接使用する `system` 配列 `config.php` または `e
 
 >[!INFO]
 >
->- _テーマの登録_. テーマデータがで定義されている場合 `config.php` ただし、テーマのソースコードがファイルシステムに存在しない場合、テーマは無視されます（つまり、登録されません）。
->- _テーマの削除_. にテーマがない場合 `config.php` ただし、ソースコードはファイルシステムに存在するので、テーマは削除されません。
+>- _テーマの登録_. テーマデータが `config.php` で定義されていても、テーマのソースコードがファイルシステムに存在しない場合、テーマは無視されます（つまり、登録されません）。
+>- _テーマの削除_. テーマが `config.php` に存在せず、ソースコードがファイルシステムに存在する場合、テーマは削除されません。

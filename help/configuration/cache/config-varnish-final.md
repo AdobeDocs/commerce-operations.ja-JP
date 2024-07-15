@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # ワニスの形状の最終検証
 
-これで、を使用するようになりました `default.vcl` Commerceによって生成された、いくつかの最終検証を実行して、ワニスが機能していることを確認できます。
+Commerceで生成された `default.vcl` を使用しているので、最終的な検証を行って、Varnish が機能していることを確認できます。
 
 ## HTTP 応答ヘッダーの検証
 
-使用方法 `curl` または、web ブラウザーでCommerce ページにアクセスした際に HTTP レスポンスヘッダーを表示する別のユーティリティです。
+Web ブラウザーでCommerce ページにアクセスした場合は、`curl` などのユーティリティを使用して HTTP レスポンスヘッダーを表示します。
 
-まず、を使用していることを確認します。 [開発者モード](../cli/set-mode.md#change-to-developer-mode)。そうでない場合、ヘッダーは表示されません。
+最初に、[ 開発者モード ](../cli/set-mode.md#change-to-developer-mode) を使用していることを確認します。使用していない場合、ヘッダーは表示されません。
 
 以下に例を挙げます。
 
@@ -36,7 +36,7 @@ X-Magento-Cache-Debug: MISS
 
 >[!INFO]
 >
->この値も使用できます。 `X-Magento-Cache-Debug: HIT`.
+>この値も使用できます（`X-Magento-Cache-Debug: HIT`）。
 
 ## ページの読み込み時間を確認
 
@@ -44,18 +44,18 @@ X-Magento-Cache-Debug: MISS
 
 ブラウザーインスペクターを使用すると、ページの読み込み時間を測定できます。
 
-例えば、Chrome インスペクターを使用するには：
+例えば、Chrome インスペクターを使用するには、次のようにします。
 
-1. Chrome で、キャッシュ可能なCommerceページにアクセスします。
+1. Chromeのキャッシュ可能なCommerceページにアクセスします。
 1. ページ上の任意の場所を右クリックします。
-1. ポップアップメニューから、 **[!UICONTROL Inspect Element]**
-1. インスペクターパネルで、 **[!UICONTROL Network]** タブ。
+1. ポップアップメニューから、「**[!UICONTROL Inspect Element]**」をクリックします
+1. インスペクターパネルで、「**[!UICONTROL Network]**」タブをクリックします。
 1. ページを更新します。
 1. インスペクターパネルの上部までスクロールして、表示しているページの URL を確認します。
 
-   次の図は、 `magento2` インデックスページ。
+   次の図は、`magento2` インデックスページを読み込む例を示しています。
 
-   ![表示しているページをクリックします](../../assets/configuration/varnish-inspector.png)
+   ![ 表示しているページをクリックします ](../../assets/configuration/varnish-inspector.png)。
 
    ページの読み込み時間は、ページ URL の横に表示されます。 この場合、ロード時間は 5 ミリ秒です。 これは、Varnish がページをキャッシュしたことを確認するのに役立ちます。
 
@@ -65,7 +65,7 @@ X-Magento-Cache-Debug: MISS
 
 ## Commerce キャッシュの検証
 
-必ずを実行してください `<magento_root>/var/page_cache` ディレクトリが空です：
+`<magento_root>/var/page_cache` ディレクトリが空であることを確認します。
 
 1. Commerce サーバーにログインするか、ファイルシステムのオーナーに切り替えます。
 1. 次のコマンドを入力します。
@@ -75,12 +75,12 @@ X-Magento-Cache-Debug: MISS
    ```
 
 1. 1 つ以上のキャッシュ可能なCommerce ページにアクセスします。
-1. を確認します `var/page_cache/` ディレクトリ。
+1. `var/page_cache/` ディレクトリを確認します。
 
    ディレクトリが空の場合は、これで完了です。 ワニスとCommerceが連携するように正常に設定されました。
 
-1. をクリアした場合 `var/page_cache/` ディレクトリ、Varnish を再起動します。
+1. `var/page_cache/` ディレクトリをクリアした場合は、Varnish を再起動します。
 
 >[!TIP]
 >
->503 （バックエンドの取得に失敗しました）エラーが発生した場合は、を参照してください [503 （サービス利用不可）エラーのトラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) が含まれる _Adobe Commerceヘルプセンター_.
+>503 （バックエンド取得に失敗しました）エラーが発生した場合は、_Adobe Commerce ヘルプセンター [503 （サービスを利用できない）エラーのトラブルシューティング ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) を参照してください_。

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 次の図に、組織構造の外観の例を示します。
 
-![組織構造図](../../assets/playbooks/org-structure.png)
+![ 組織構造図 ](../../assets/playbooks/org-structure.png)
 
 デジタル実装プロジェクトでこのような形態の一元化されたモデルのメリットには、次のものがあります。
 
@@ -28,4 +28,4 @@ ht-degree: 0%
 
 次の図に、推奨されるプロジェクトベースの組織構造の例を示します。
 
-![プロジェクトベースの組織構造図](../../assets/playbooks/org-structure-project.png)
+![ プロジェクトに基づく組織構造図 ](../../assets/playbooks/org-structure-project.png)

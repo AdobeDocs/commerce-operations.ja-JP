@@ -19,17 +19,17 @@ Composer でAdobe Commerce モジュールを開発する際に問題が発生�
 
 >[!NOTE]
 >
->これらのガイドラインは主に次のものに適用されます。 [グローバルリファレンスアーキテクチャ（GRA）](../overview.md) プロジェクト。
+>これらのガイドラインは、主に [GRA （グローバル・リファレンス・アーキテクチャ） ](../overview.md) プロジェクトに適用されます。
 
 ## Composer の高速化
 
-インストール [https://github.com/hirak/prestissimo](https://github.com/hirak/prestissimo) 非同期パッケージ ダウンロードで Composer を高速化します。
+非同期パッケージ ダウンロードで Composer を高速化するには ](https://github.com/hirak/prestissimo)0}https://github.com/hirak/prestissimo} をインストールします。[
 
 ```bash
 composer global require hirak/prestissimo
 ```
 
-問題が発生した場合は、アンインストールします `prestissimo`:
+問題が発生した場合は、`prestissimo` をアンインストールします。
 
 ```bash
 composer global remove hirak/prestissimo
@@ -45,7 +45,7 @@ Composer がパッケージ バージョンでデッドロックされること�
    composer clearcache
    ```
 
-1. を削除 `composer.lock` すべてのパッケージのファイル。
+1. すべてのパッケージの `composer.lock` ファイルを削除します。
 
    ```bash
    rm -rf vendor/* composer.lock
@@ -59,7 +59,7 @@ Composer がパッケージ バージョンでデッドロックされること�
 
 >[!TIP]
 >
->次の手順では、すべてのパッケージを利用可能な最新バージョンに更新します。 を復帰させる `composer.lock` git のファイルを開いて、これらのアップグレードを取り消します。
+>次の手順では、すべてのパッケージを利用可能な最新バージョンに更新します。 Git から `composer.lock` ファイルを元に戻して、これらのアップグレードを取り消します。
 
 ## クライアントパッケージで発生する可能性のあるアップデートを確認します。
 
@@ -69,7 +69,7 @@ Composer がパッケージ バージョンでデッドロックされること�
    composer outdated
    ```
 
-1. ワイルドカードや `--minor-only` 下位互換性のないアップグレードをスキップするオプション：
+1. ワイルドカードや `--minor-only` オプションを使用してフィルターを適用し、下位互換性のないアップグレードをスキップします。
 
    ```bash
    composer outdated 'magento/*'
@@ -84,7 +84,7 @@ Git ブランチにインストールされているすべてのパッケージ�
 composer info
 ```
 
-実行 `composer install` git ブランチを切り替えた後、実行する前 `composer info`. それ以外の場合、チェックアウトした前のブランチの詳細が表示されます。
+Git ブランチを切り替えた後、`composer info` を実行する前に、`composer install` を実行します。 それ以外の場合、チェックアウトした前のブランチの詳細が表示されます。
 
 >[!TIP]
 >
@@ -123,24 +123,24 @@ composer why-not client/module-example
 
 ## Composer のプライベート・リポジトリのホスト
 
-Composer の非公開リポジトリが必要な場合は、 [プライベート パッケージ担当者](https://packagist.com/) または [JFrog アーティファクトリー](https://jfrog.com/integration/php-composer-repository/). を使用しないでください。 [サティス](https://github.com/composer/satis).
+Composer の非公開リポジトリが必要な場合は、[Private Packagist](https://packagist.com/) または [JFrog Artifactory](https://jfrog.com/integration/php-composer-repository/) を使用します。 [Satis](https://github.com/composer/satis) を使用しないでください。
 
-- **プライベート パッケージ担当者** は安全で、3 人の管理者ユーザーで年間約 600 USD のコストがかかり、ホストされています。
+- **Private Packagist** は安全で、3 人の管理者ユーザーで年間約 600 USD の費用がかかり、ホストされています。
 
-- **JFrog アーティファクトリー** 開始価格は年間 1,176 米ドルです。 Packagist ほど一般的に使用されているわけではありませんが、PHP よりも多くの言語をサポートしています。
+- **JFrog Artifactory** は、年間 1,176 米ドルから始まります。 Packagist ほど一般的に使用されているわけではありませんが、PHP よりも多くの言語をサポートしています。
 
-- **サティス** にはセキュリティの組み込みや自動化が含まれておらず、追加のホスティングが必要です。 あなたの時間も無料である場合にのみ無料です。
+- **Satis** には、セキュリティの組み込みや自動化が含まれておらず、追加のホスティングが必要となります。 あなたの時間も無料である場合にのみ無料です。
 
 ## バージョン管理パッケージ
 
-使用方法 [セマンティックバージョニング 2.0.0](https://semver.org/spec/v2.0.0.html) Adobe Commerceで説明されているように [バージョン管理スキーマ](https://developer.adobe.com/commerce/php/development/versioning/). 車輪を作り直さないでください。
+Adobe Commerce[ バージョン管理スキーマ ](https://semver.org/spec/v2.0.0.html) の説明に従って、[Semantic Versioning 2.0.0](https://developer.adobe.com/commerce/php/development/versioning/) を使用します。 車輪を作り直さないでください。
 
-Adobe Commerce モジュールの依存関係については、次に従います [モジュールバージョンの依存関係](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) ドキュメント。
+Adobe Commerce モジュールの依存関係については、[module version dependencies](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) のドキュメントに従ってください。
 
-内でバージョン定義を使用しないでください `composer.json` ファイル。 代わりに、バージョンには Git タグを使用します。 参照： [Composer のバージョンと制約](https://getcomposer.org/doc/articles/versions.md#versions-and-constraints).
+`composer.json` ファイル内でバージョン定義を使用しないでください。 代わりに、バージョンには Git タグを使用します。 [Composer バージョンと制約 ](https://getcomposer.org/doc/articles/versions.md#versions-and-constraints) を参照してください。
 
 ## Composer を使用せずに、アーカイブ ファイルに含まれるモジュールを配置する場所
 
-アーカイブ内のモジュールに Git リポジトリを作成し、自分でホストします。 すべてのAdobe Commerce モジュールには、 `composer.json` ファイル。 Git でホストし、Private Packagist と同期したら、Composer を使用してインストールできます。
+アーカイブ内のモジュールに Git リポジトリを作成し、自分でホストします。 すべてのAdobe Commerce モジュールには `composer.json` ファイルがあります。 Git でホストし、Private Packagist と同期したら、Composer を使用してインストールできます。
 
 新しいバージョンのパッケージを受け取ったら、コードを Git にアップロードし、タグ付けして、Composer で新しいバージョンをインストールします。

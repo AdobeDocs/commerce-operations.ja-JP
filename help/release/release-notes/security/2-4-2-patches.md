@@ -18,8 +18,8 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.2-p2 セキュリティリリースは、以前のリリースの 2.4.2 で特定された脆弱性に対するセキュリティバグ修正を提供します。
 
-セキュリティ バグ修正の最新情報については、を参照してください。 [Adobeセキュリティ速報 APSB21-64](https://helpx.adobe.com/security/products/magento/apsb21-64.html).
+セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB21-64](https://helpx.adobe.com/security/products/magento/apsb21-64.html) を参照してください。
 
-## 適用 `AC-3022.patch` 引き続き DHL を配送業者として提供するため
+## 配送業者として DHL を引き続き提供するには、`AC-3022.patch` を適用してください
 
-DHL ではスキーマバージョン 6.2 を導入しており、近い将来、スキーマバージョン 6.0 を廃止する予定です。 DHL 統合をサポートするAdobe Commerce 2.4.4 以前のバージョンは、バージョン 6.0 のみをサポートしています。これらのリリースをデプロイするマーチャントは、 `AC-3022.patch` 早期に DHL を配送業者として提供し続けることができます。 を参照してください。 [配送業者として DHL を引き続き提供するためのパッチを適用する](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) パッチのダウンロードとインストールについては、ナレッジベースの記事を参照してください。
+DHL ではスキーマバージョン 6.2 を導入しており、近い将来、スキーマバージョン 6.0 を廃止する予定です。 DHL 統合をサポートするAdobe Commerce 2.4.4 以前のバージョンは、バージョン 6.0 のみをサポートしています。これらのリリースをデプロイするマーチャントは、DHL を配送業者として引き続き提供するために、できるだけ早い時期に `AC-3022.patch` を適用する必要があります。 パッチのダウンロードとインストールについては、ナレッジベースの記事 [DHL を引き続き配送業者として提供するためのパッチを適用する ](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) を参照してください。

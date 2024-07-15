@@ -1,13 +1,13 @@
 ---
 name: New topic
 about: Create a request to add missing information
-title: '''新しいトピックのリクエスト'''
+title: '新しいトピックのリクエスト'
 labels: New Topic
 assignees: ''
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 0%
+source-wordcount: '36'
+ht-degree: 8%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 0%
 
 - [ ] このトピックでは、____の仕組みについて説明します。
 - [ ] このトピックでは、____の手順を説明します。
-- [ ] このトピックには、____と表示されるコードサンプルが含まれています。
-- [ ] その他（指定してください）
+- [ ] トピックには、____を示すコードサンプルが含まれています。
+- [ ] その他（を指定してください）
 
 ## 追加情報
 

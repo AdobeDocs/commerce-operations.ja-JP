@@ -16,14 +16,14 @@ Commerce アプリケーションは、低レベルのキャッシュフロン�
 
 ## 低レベルのフロントエンドキャッシュ
 
-Commerceの拡張 [Zend_Cache_Core](https://framework.zend.com/manual/1.12/en/zend.cache.frontends.html) を実装することによって [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) フロントエンドキャッシュ。
+Commerceは、[Magento\Framework\Cache\Core[ フロントエンドキャッシュを実装することで ](https://framework.zend.com/manual/1.12/en/zend.cache.frontends.html)Zend_Cache_Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) を拡張しています。
 
 ## 低レベルのバックエンド・キャッシュ
 
-通常、Commerce アプリケーションは、以下に示すすべてのバックエンドキャッシュで機能します [Zend_Cache バックエンド](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html) のサポート。 ただし、このガイドでは、次の低レベルのバックエンドキャッシュのみを扱っています。
+一般に、Commerce アプリケーションは、[Zend_Cache Backends](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html) がサポートする任意のバックエンドキャッシュで動作します。 ただし、このガイドでは、次の低レベルのバックエンドキャッシュのみを扱っています。
 
 - [Redis](config-redis.md)
-- [データベース](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
+- [ データベース ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
 - ファイルシステム（デフォルト）：ファイルシステムのキャッシュを使用するための設定は不要です。
 
-[ワニス](config-varnish.md) 低レベルのキャッシュバックエンドを設定する必要はありません。
+[Varnish](config-varnish.md) では、低レベルのキャッシュバックエンドを設定する必要はありません。

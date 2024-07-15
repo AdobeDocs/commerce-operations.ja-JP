@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # データ移行のフォローアップ
 
-Magento 1 の動作とロジックの一部が、Magento 2 では異なる方法で実装されています。 この [!DNL Data Migration Tool] 面倒を見てくれ。 移行後にスムーズに動作させるために、いくつかの機能に対して多少の手順を実行する必要が生じる場合があります。
+Magento 1 の動作とロジックの一部が、Magento 2 では異なる方法で実装されています。 [!DNL Data Migration Tool] が処理します。 移行後にスムーズに動作させるために、いくつかの機能に対して多少の手順を実行する必要が生じる場合があります。
 
 ## 情報
 
 ### 分割データベースはサポートされていません
 
-この [!DNL Data Migration Tool] は、分割データベースをサポートしていません。
+[!DNL Data Migration Tool] は分割データベースをサポートしていません。
 
 ### 階層価格に換算したグループ価格
 
@@ -30,23 +30,23 @@ Magento 1 の動作とロジックの一部が、Magento 2 では異なる方法
 
 ## 手順
 
-### 顧客セグメントの再保存 [Adobe Commerceのみ]
+### 顧客セグメントの再保存 [Adobe Commerceのみ ]
 
 移行後、顧客セグメントを稼働させるには、管理パネルから再度保存する必要があります。
 
 ### タイムゾーンの設定
 
-このツールではタイムゾーン設定は移行されないので、への移行後にタイムゾーンを手動で設定する必要があります。 **ストア** > **設定** > **ロケールオプション** > **Timezone**.
+このツールではタイムゾーン設定が移行されないので、移行後に **ストア**/**設定**/**ロケールオプション**/**タイムゾーン** でタイムゾーンを手動で設定する必要があります。
 
-デフォルトでは、Magentoはタイムデータをデータベースの UTC-0 ゾーンに格納し、現在のタイムゾーン設定に従って表示します。 時刻データが既にデータベースの UTC-0 以外のゾーンに保存されている場合は、を使用して既存の時刻を UTC-0 に変換する必要があります。 [!DNL Data Migration Tool]の `\Migration\Handler\Timezone` ハンドラー。
+デフォルトでは、Magentoはタイムデータをデータベースの UTC-0 ゾーンに格納し、現在のタイムゾーン設定に従って表示します。 時刻データが既にデータベースの UTC-0 以外のゾーンに保存されている場合は、[!DNL Data Migration Tool] の `\Migration\Handler\Timezone` ハンドラーを使用して既存の時刻を UTC-0 に変換する必要があります。
 
 次の例では、Magento 1 がデータベースの UTC-7 ゾーンで誤って時間を節約していました（例えば、サードパーティの拡張子の不具合が原因など）。 移行時に顧客アカウントの作成時間を UTC-0 ゾーンに適切に変換するには、次の手順に従います。
 
-1. をコピーします `map-customer.xml.dist` の適切なディレクトリからの設定ファイル [!DNL Data Migration Tool] （`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`）を追加して、 `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` ファイル。
+1. [!DNL Data Migration Tool] （`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`）の適切なディレクトリから `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` ファイルに `map-customer.xml.dist` 設定ファイルをコピーします。
 
-1. を更新 `<customer_map_file>` ノード： `config.xml` を削除します `.dist` からの拡張機能 `map-customer.xml.dist`
+1. `config.xml` の `<customer_map_file>` ノードを更新し、`map-customer.xml.dist` から `.dist` 拡張機能を削除します
 
-1. 次のルールをに追加します `map-customer.xml` ファイル：
+1. `map-customer.xml` ファイルに次のルールを追加します。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

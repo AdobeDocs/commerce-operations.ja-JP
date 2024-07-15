@@ -24,7 +24,7 @@ ht-degree: 0%
 
 次の図は、正常な移行結果に含まれるフェーズとアクティビティを示しています。
 
-![移行プロセスのフェーズを示す図](../../assets/playbooks/transition-diagram.svg)
+![ 移行プロセスのフェーズを示す図 ](../../assets/playbooks/transition-diagram.svg)
 
 >[!NOTE]
 >
@@ -33,5 +33,5 @@ ht-degree: 0%
 お客様のプラットフォーム（およびコマース業務全体）を継続的に強化および最適化するための、お客様のビジネスに適したサポートモデルを特定することは、実装プロセス中におこなわれたすべての大変な作業を維持するための重要なステップです。 包括的な継続的なサポートプランを導入することで、コマースサイトが顧客の期待に追いつき、目標を達成し続けることができます。
 
 Adobe Commerceを導入する際には、メンテナンスやサポートの戦略に何を含めるかを考えることが重要です。
-Adobe Commerce ライセンスには、エキスパートサポートが含まれています。 Expert サポートおよびAdobeサポートプランの詳細については、を参照してください。 [Adobeサポートプラン](https://business.adobe.com/customers/consulting-services/premier-support.html).
+Adobe Commerce ライセンスには、エキスパートサポートが含まれています。 Expert サポートおよびAdobeサポートプランについて詳しくは、[Adobeサポートプラン ](https://business.adobe.com/customers/consulting-services/premier-support.html) を参照してください。
 Adobeサポートプランに加えて、従来のMagentoサポート条件があります。 お客様が適用されるサポートサービスを理解するには、契約書を参照して、お客様が締結しているサポート契約を確認するか、Adobeアカウントチームにお問い合わせください。

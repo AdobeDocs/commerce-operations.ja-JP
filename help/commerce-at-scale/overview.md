@@ -15,13 +15,14 @@ CIFをコネクタとして使用するAEMとAdobe Commerceの統合パターン
 
 AEM/CIF/Adobe Commerce環境では、e コマースサイトの訪問者は最初にAEMに到達します。 AEMは、リクエストされたページが dispatcher キャッシュ内で使用可能かどうかを確認します。 ページが存在する場合は、このキャッシュされたページが訪問者に提供され、それ以上の処理は必要ありません。 Dispatcher が要求されたページを含んでいない場合や有効期限が切れている場合は、Dispatcher はAEM パブリッシャーにページのビルドを要求し、パブリッシャーは必要に応じて e コマースデータでAdobe Commerceを呼び出して、ページのビルドを行います。 次に、構築されたページが Dispatcher に渡されて訪問者に提供され、キャッシュされるので、他の訪問者からの同じページに対する後続のリクエストで、サーバーにさらに読み込む必要がなくなります。
 
-![Adobe Experience Manager とAdobe Commerceのアーキテクチャの概要図](../assets/commerce-at-scale/overview.png)
+![Adobe Experience Manager とAdobe Commerceのアーキテクチャの概要図 ](../assets/commerce-at-scale/overview.png)
 
-サーバーサイドレンダリングとクライアントサイドレンダリングの組み合わせをAEM/CIF/Adobe Commerce モデルで使用できます。静的コンテンツを提供するサーバーサイドレンダリングと、ユーザーのブラウザー内から特定のコンポーネントに対してAdobe Commerceを直接呼び出して、頻繁に変化する動的コンテンツや個人的な動的コンテンツを提供するクライアントサイドレンダリングです。
+サーバーサイドレンダリングとクライアントサイドレンダリングの組み合わせをAEM/CIF/Adobe Commerce モデルで使用できます。静的コンテンツを提供するサーバーサイドレンダリングと、特定のコンポーネントに対してAdobe Commerceを直接呼び出して、頻繁に変化する動的コンテンツや個人的な動的コンテンツを提供するクライアントサイドレンダリングです。
+ユーザーのブラウザー内から。
 
 AEM e コマースストアフロントの例の製品詳細ページの様々なコンポーネントの例を、次の例に示します。
 
-![Adobe Experience Manager とAdobe Commerceのアーキテクチャの概要図](../assets/commerce-at-scale/product-details-page.svg)
+![Adobe Experience Manager とAdobe Commerceのアーキテクチャの概要図 ](../assets/commerce-at-scale/product-details-page.svg)
 
 ## サーバーサイドレンダリング
 

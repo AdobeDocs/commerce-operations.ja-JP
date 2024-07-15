@@ -44,7 +44,7 @@ bin/magento help cache:enable
 | [`magento dev:tests:run`](../cli/unit-tests.md) | 自動化されたテストの実行 |
 | [`magento dev:xml:convert`](../cli/convert-layout-files.md) | 新しい XSLT （Extensible Stylesheet Language Transformations） スタイルシートに一致するように、レイアウト XML ファイルを更新します |
 | [`magento setup:perf:generate-fixtures`](../cli/generate-data.md) | パフォーマンステストに使用するデータを生成します。 |
-| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Commerce アプリケーションのインストール後に、オプションのサンプルデータをインストールします。<br><br>サンプルデータについて詳しくは、 [オプションのサンプルデータ](../../installation/sample-data/overview.md). |
+| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Commerce アプリケーションのインストール後に、オプションのサンプルデータをインストールします。<br><br> サンプルデータについて詳しくは、「[ サンプルデータのオプション ](../../installation/sample-data/overview.md)」を参照してください。 |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | バックエンド設定を管理 |
 | [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | 管理者ユーザーを作成/編集/ロック解除します。 |
 | [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | 開発者テンプレートのヒントを有効または無効にします。 |
@@ -55,10 +55,10 @@ bin/magento help cache:enable
 
 | ロングバージョン | ショートバージョン | 意味 |
 |--- |--- |--- |
-| `--help` | `-h` | 任意のコマンドのヘルプを表示します。 例： `./magento help setup:install` または `./magento help setup:config:set`. |
+| `--help` | `-h` | 任意のコマンドのヘルプを表示します。 例えば、`./magento help setup:install` や `./magento help setup:config:set` です。 |
 | `--quiet` | `-q` | クワイエットモード。出力なし。 |
 | `--no-interaction` | `-n` | インタラクティブな質問はありません。 |
-| `--verbose=1,2,3` | `-v, -vv, -vvv` | 詳細レベル。 例： `--verbose=3` または `-vvv` デバッグの詳細を表示します。デバッグの詳細は、最も詳細な出力です。 デフォルトは `--verbose=1` または `-v`. |
+| `--verbose=1,2,3` | `-v, -vv, -vvv` | 詳細レベル。 例えば、`--verbose=3` または `-vvv` は、デバッグの詳細を表示します。これは最も詳細な出力です。 デフォルトは `--verbose=1` または `-v` です。 |
 | `--version` | `-V` | このアプリケーションのバージョンを表示 |
 | `--ansi` | 該当なし | ANSI 出力を強制 |
 | `--no-ansi` | 該当なし | ANSI 出力を無効にする |

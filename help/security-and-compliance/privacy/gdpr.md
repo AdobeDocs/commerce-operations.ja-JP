@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >これは、Adobe Commerceのマーチャントや開発者が、EU 一般データ保護規則（GDPR）の影響を理解するのに役立つ、一連のトピックの 1 つです。 情報は情報提供のみを目的としており、法的な助言と見なされるべきではありません。 自社のビジネスが法的義務に準拠する必要があるかどうか、またどのように準拠すべきかを判断するには、法務担当者に相談してください。
 
-欧州連合（EU）は、 [EU 一般データ保護規則](https://ec.europa.eu/info/law/law-topic/data-protection_en) （GDPR）自社の市民が個人データをより詳細に管理できるようにします。 GDPR は、EU 内で活動するすべての組織に適用されます。 また、EU 域外の顧客や企業に商品やサービスを提供する組織にも適用されます。
+欧州連合（EU）は、市民が自分の個人データをより詳細に管理できるように、[ 一般データ保護規則 ](https://ec.europa.eu/info/law/law-topic/data-protection_en) （GDPR）を制定しました。 GDPR は、EU 内で活動するすべての組織に適用されます。 また、EU 域外の顧客や企業に商品やサービスを提供する組織にも適用されます。
 
 システムインテグレーターは、個人情報リファレンスのデータフロー図とデータベース情報を使用してスクリプトを作成し、次のようなユースケースを解決できます。
 
@@ -31,5 +31,5 @@ ht-degree: 0%
 
 Adobe Commerceを使用してマーチャントが GDPR に準拠する方法について詳しくは、次を参照してください。
 
-- [GDPR コンプライアンス](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
-- [Adobe Commerceは GDPR に対応しました](https://business.adobe.com/privacy/general-data-protection-regulation.html)
+- [GDPR コンプライアンス ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
+- [Adobe Commerceで GDPR を受け入れる準備ができました ](https://business.adobe.com/privacy/general-data-protection-regulation.html)

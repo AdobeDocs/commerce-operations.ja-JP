@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## ワニスパージ
 
-基準： [Varnish ドキュメント](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *消去* は、キャッシュからオブジェクトを選択し、そのバリアントと一緒に破棄する場合に発生します。」 Varnish パージは、キャッシュの消去コマンド（またはクリック）に似ています **Magentoキャッシュのフラッシュ** （管理者で）。
+[Varnish のドキュメント ](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html) によると、「*パージ* は、キャッシュからオブジェクトを選択して、そのバリアントと共に破棄する場合に発生します。」 Varnish パージは、キャッシュの消去コマンド（または管理者で **Magentoキャッシュをフラッシュ** をクリックするコマンド）に似ています。
 
 実際、Commerceのキャッシュをクリーンアップ、フラッシュまたは更新すると、Varnish もパージします。
 
@@ -26,9 +26,9 @@ Commerceと連携するようにワニスをインストールして設定した
 
   例えば、次の場所の管理者で行うこと：
 
-   - **ストア** > **設定** > **設定** > 一般 > **一般**
-   - **ストア** > **設定** > **設定** > 一般 > **通貨設定**
-   - **ストア** > **設定** > **設定** > 一般 > **メールアドレスの保存**
+   - **ストア**/**設定**/**設定**/一般/**一般**
+   - **ストア**/**設定**/**設定**/一般/**通貨の設定**
+   - **ストア**/**設定**/**設定**/一般/**メールアドレスを保存**
 
   Commerceがそのような変更を検出すると、キャッシュを更新するように求めるメッセージが表示されます。
 
@@ -38,15 +38,15 @@ Commerceと連携するようにワニスをインストールして設定した
 
 - ソースコードの管理。
 
-  キャッシュを更新し、内のすべてを定期的に削除する必要があります `generated/code` および `generated/metadata` ディレクトリ。 キャッシュの更新については、次の節を参照してください。
+  キャッシュを更新し、`generated/code` ディレクトリと `generated/metadata` ディレクトリ内のすべてを定期的に削除する必要があります。 キャッシュの更新については、次の節を参照してください。
 
 ## Commerceでワニスをパージするように設定する
 
-Commerceでは、を使用して Varnish ホストを設定した後、Varnish ホストをパージします。 [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) コマンド。
+Commerceは、[`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) コマンドを使用して Varnish ホストを設定した後に、Varnish ホストをパージします。
 
-オプションのパラメーターを使用できます `--http-cache-hosts` パラメーター：Varnish ホストとリッスンポートのコンマ区切りリストを指定します。 1 つまたは複数の Varnish ホストをすべて設定します。 （ホストをスペース文字で区切らないでください）。
+オプションのパラメーター `--http-cache-hosts` パラメーターを使用して、Varnish ホストとリッスンポートのコンマ区切りリストを指定できます。 1 つまたは複数の Varnish ホストをすべて設定します。 （ホストをスペース文字で区切らないでください）。
 
-パラメーターの形式は、 `<hostname or ip>:<listen port>`。を省略できます `<listen port>` ポート 80 の場合。
+パラメーターの形式は `<hostname or ip>:<listen port>` にする必要があります。ポート 80 の場合、`<listen port>` を省略できます。
 
 以下に例を挙げます。
 
@@ -54,8 +54,8 @@ Commerceでは、を使用して Varnish ホストを設定した後、Varnish �
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 ```
 
-その後、Commerceのキャッシュ（ *クリーニング* キャッシュ）を使用するか、コマンドラインを使用します。
+その後、Admin またはコマンドラインでCommerce キャッシュを更新するとき（キャッシュの *クリーニング* とも呼ばれます）に、Varnish ホストをパージできます。
 
-管理者を使用してキャッシュを更新するには、 **[!UICONTROL SYSTEM]** > ツール > **キャッシュ管理**&#x200B;を選択し、 **Magentoキャッシュのフラッシュ** ページの上部 （個々のキャッシュタイプを更新することもできます）。
+管理者を使用してキャッシュを更新するには、**[!UICONTROL SYSTEM]** / ツール / **キャッシュ管理** をクリックし、ページ上部の **Magentoキャッシュをフラッシュ** をクリックします。 （個々のキャッシュタイプを更新することもできます）。
 
-コマンドラインを使用してキャッシュを更新するには、通常、 [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) としてコマンド [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
+コマンドラインを使用してキャッシュを更新するには、通常、[`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) コマンドを [ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) として使用します。

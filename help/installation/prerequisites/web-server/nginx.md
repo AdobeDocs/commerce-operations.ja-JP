@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Nginx
 
-Adobe Commerceは、nginx 1.x （または [最新のメインラインバージョン](https://nginx.org/en/linux_packages.html#mainline)）に設定します。 の最新バージョンもインストールする必要があります `php-fpm`.
+Adobe Commerceは、nginx 1.x （または [ 最新のメインラインバージョン ](https://nginx.org/en/linux_packages.html#mainline)）をサポートしています。 また、`php-fpm` の最新バージョンをインストールする必要があります。
 
-インストール手順は、使用しているオペレーティングシステムによって異なります。 参照： [PHP](../php-settings.md) を参照してください。
+インストール手順は、使用しているオペレーティングシステムによって異なります。 詳しくは、[PHP](../php-settings.md) を参照してください。
 
 ## Ubuntu
 
@@ -25,17 +25,17 @@ Adobe Commerceは、nginx 1.x （または [最新のメインラインバージ
 sudo apt -y install nginx
 ```
 
-以下の手順でも可能です [ソースから nginx をビルド](https://www.armanism.com/blog/install-nginx-on-ubuntu)
+[ ソースから nginx を構築する ](https://www.armanism.com/blog/install-nginx-on-ubuntu) こともできます。
 
-以下の節を完了し、アプリケーションをインストールしたら、サンプルの設定ファイルを使用して以下を行います [nginx の設定](#configure-nginx).
+以下のセクションを完了し、アプリケーションをインストールしたら、サンプルの設定ファイルを使用して [nginx を設定 ](#configure-nginx) します。
 
 ### php-fpm のインストールと設定
 
-Adobe Commerceには複数のが必要です [PHP 拡張機能](../php-settings.md) 正しく機能する。 これらの拡張機能に加えて、 `php-fpm` 拡張（nginx を使用している場合）
+Adobe Commerceが正しく機能するには、いくつかの [PHP 拡張 ](../php-settings.md) が必要です。 nginx を使用している場合は、これらの拡張機能に加えて、`php-fpm` 拡張機能もインストールして設定する必要があります。
 
-をインストールして設定するには `php-fpm`:
+`php-fpm` をインストールして設定するには：
 
-1. インストール `php-fpm` および `php-cli`:
+1. `php-fpm` と `php-cli` をインストールします。
 
    ```bash
    apt-get -y install php7.2-fpm php7.2-cli
@@ -43,9 +43,9 @@ Adobe Commerceには複数のが必要です [PHP 拡張機能](../php-settings.
 
    >[!NOTE]
    >
-   >このコマンドは、利用可能な最新バージョンの PHP 7.2.X をインストールします。参照： [必要システム構成](../../system-requirements.md) （サポートされている PHP バージョン用）
+   >このコマンドは、利用可能な最新バージョンの PHP 7.2.X をインストールします。サポートされる PHP のバージョンについては、[ システム要件 ](../../system-requirements.md) を参照してください。
 
-1. を開きます `php.ini` エディター内のファイル：
+1. エディターで `php.ini` のファイルを開きます。
 
    ```bash
    vim /etc/php/7.2/fpm/php.ini
@@ -65,11 +65,11 @@ Adobe Commerceには複数のが必要です [PHP 拡張機能](../php-settings.
 
    >[!NOTE]
    >
-   >Adobe Commerceをテストする際は、メモリ制限を 2 G に設定することをお勧めします。 こちらを参照してください [必要な PHP 設定](../php-settings.md) を参照してください。
+   >Adobe Commerceをテストする際は、メモリ制限を 2 G に設定することをお勧めします。 詳しくは、[ 必須の PHP 設定 ](../php-settings.md) を参照してください。
 
 1. 保存して、エディターを終了します。
 
-1. を再起動します `php-fpm` サービス：
+1. `php-fpm` サービスを再起動します。
 
    ```bash
    systemctl restart php7.2-fpm
@@ -77,7 +77,7 @@ Adobe Commerceには複数のが必要です [PHP 拡張機能](../php-settings.
 
 ### MySQL のインストールと設定
 
-こちらを参照してください [MySQL](../database/mysql.md) を参照してください。
+詳細は、[MySQL](../database/mysql.md) を参照してください。
 
 ### インストールと設定
 
@@ -85,13 +85,13 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
 
 * [Composer メタパッケージの取得](../../composer.md)
 
-* [Git リポジトリのクローン](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Git リポジトリのクローンを作成 ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 この例は、コマンドラインを使用した Composer ベースのインストールを示しています。
 
-1. として [ファイルシステム所有者](../file-system/overview.md)アプリケーションサーバーにログインします。
+1. [ ファイルシステムの所有者 ](../file-system/overview.md) として、アプリケーションサーバーにログインします。
 
-1. Web サーバーの docroot ディレクトリまたは仮想ホストの docroot として設定したディレクトリに移動します。 この例では、Ubuntu のデフォルトを使用しています `/var/www/html`.
+1. Web サーバーの docroot ディレクトリまたは仮想ホストの docroot として設定したディレクトリに移動します。 この例では、Ubuntu のデフォルト `/var/www/html` を使用しています。
 
    ```bash
    cd /var/www/html
@@ -117,7 +117,7 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   プロンプトが表示されたら、 [認証キー](../authentication-keys.md). あなたの _公開鍵_ はユーザー名、は _秘密鍵_ はパスワードです。
+   プロンプトが表示されたら、[ 認証キー ](../authentication-keys.md) を入力します。 _公開鍵_ はユーザー名で、_秘密鍵_ はパスワードです。
 
 1. アプリケーションをインストールする前に、Web サーバーグループの読み取り/書き込み権限を設定します。 これは、コマンドラインがファイルをファイルシステムに書き込めるようにするために必要です。
 
@@ -141,7 +141,7 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
    chmod u+x bin/magento
    ```
 
-1. からをインストール [コマンドライン](../../advanced.md). この例では、インストールディレクトリの名前がであることを前提としています `magento2ee`, `db-host` が同じマシン上にある（`localhost`）に設定し、 `db-name`, `db-user`、および `db-password` が全て `magento`:
+1. [ コマンドライン ](../../advanced.md) からをインストールします。 この例では、インストールディレクトリの名前が `magento2ee` で、`db-host` が同じマシン（`localhost`）上にあり、`db-name`、`db-user`、`db-password` がすべて `magento` であることを前提としています。
 
    ```bash
    bin/magento setup:install \
@@ -177,9 +177,9 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
 
 ### Nginx の設定
 
-を使用して nginx を設定することをお勧めします。 `nginx.conf.sample` インストールディレクトリおよび nginx 仮想ホストで提供される設定ファイル。
+インストール ディレクトリおよび nginx 仮想ホストに用意されている `nginx.conf.sample` 設定ファイルを使用して、nginx を設定することをお勧めします。
 
-これらの手順は、nginx 仮想ホストに Ubuntu のデフォルトの場所（たとえば、 `/etc/nginx/sites-available`）を選択し、Ubuntu のデフォルトのドキュメントルート（例： `/var/www/html`ただし、環境に合わせてこれらの場所を変更することはできます。
+これらの手順は、nginx 仮想ホストの Ubuntu のデフォルトの場所（例：`/etc/nginx/sites-available`）と Ubuntu のデフォルトの docroot （例：`/var/www/html`）を使用していることを前提としています。ただし、これらの場所は、環境に合わせて変更できます。
 
 1. サイトの新しい仮想ホストを作成します。
 
@@ -205,13 +205,13 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
 
    >[!NOTE]
    >
-   >この `include` ディレクティブは、インストールディレクトリ内のサンプル nginx 設定ファイルを指す必要があります。
+   >`include` ディレクティブは、インストールディレクトリ内のサンプル nginx 設定ファイルを指している必要があります。
 
-1. 置換 `www.magento-dev.com` とドメイン名を使用します。 これは、Adobe Commerceのインストール時に指定したベース URL と一致する必要があります。
+1. `www.magento-dev.com` を自分のドメイン名に置き換えます。 これは、Adobe Commerceのインストール時に指定したベース URL と一致する必要があります。
 
 1. 保存して、エディターを終了します。
 
-1. で新しく作成した仮想ホストへのシンボリックリンクを作成して、そのホストをアクティベートします。 `/etc/nginx/sites-enabled` ディレクトリ：
+1. `/etc/nginx/sites-enabled` ディレクトリに新しい仮想ホストへのシンボリックリンクを作成して、新しく作成した仮想ホストをアクティベートします。
 
    ```bash
    ln -s /etc/nginx/sites-available/magento /etc/nginx/sites-enabled
@@ -231,7 +231,7 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
 
 ### インストールの確認
 
-Web ブラウザーを開き、サイトのベース URL に移動して、次の操作を行います [インストールの確認](../../next-steps/verify.md).
+Web ブラウザーを開き、サイトのベース URL に移動して [ インストールを確認 ](../../next-steps/verify.md) します。
 
 ## CentOS 7
 
@@ -261,17 +261,17 @@ systemctl enable nginx
 
 ### php-fpm のインストールと設定
 
-Adobe Commerceには複数のが必要です [PHP](../php-settings.md) 正しく機能するための拡張機能。 これらの拡張機能に加えて、 `php-fpm` nginx を使用している場合は拡張機能です。
+Adobe Commerceが正しく機能するには、いくつかの [PHP](../php-settings.md) 拡張モジュールが必要です。 nginx を使用している場合は、これらの拡張機能に加えて、`php-fpm` 拡張機能もインストールして設定する必要があります。
 
-1. インストール `php-fpm`:
+1. `php-fpm` のインストール：
 
    ```bash
    yum -y install php70w-fpm
    ```
 
-1. を開きます `/etc/php.ini` エディター内のファイル。
+1. `/etc/php.ini` ファイルをエディターで開きます。
 
-1. のコメントを解除 `cgi.fix_pathinfo` を行い、値をに変更します `0`.
+1. `cgi.fix_pathinfo` 行のコメントを解除し、値を `0` に変更します。
 
 1. 次の行に一致するようにファイルを編集します。
 
@@ -283,7 +283,7 @@ Adobe Commerceには複数のが必要です [PHP](../php-settings.md) 正しく
 
    >[!NOTE]
    >
-   >Adobe Commerceをテストする際は、メモリ制限を 2 G に設定することをお勧めします。 こちらを参照してください [必要な PHP 設定](../php-settings.md) を参照してください。
+   >Adobe Commerceをテストする際は、メモリ制限を 2 G に設定することをお勧めします。 詳しくは、[ 必須の PHP 設定 ](../php-settings.md) を参照してください。
 
 1. セッションパスディレクトリのコメントを解除し、パスを設定します。
 
@@ -293,7 +293,7 @@ Adobe Commerceには複数のが必要です [PHP](../php-settings.md) 正しく
 
 1. 保存して、エディターを終了します。
 
-1. 開く `/etc/php-fpm.d/www.conf` エディターで。
+1. エディターで `/etc/php-fpm.d/www.conf` を開きます。
 
 1. 次の行に一致するようにファイルを編集します。
 
@@ -318,7 +318,7 @@ Adobe Commerceには複数のが必要です [PHP](../php-settings.md) 正しく
 
 1. 保存して、エディターを終了します。
 
-1. PHP セッションパスのディレクトリを作成し、所有者をに変更します。 `apache` ユーザーとグループ：
+1. PHP セッションパスのディレクトリを作成し、所有者を `apache` のユーザーおよびグループに変更します。
 
    ```bash
    mkdir -p /var/lib/php/session/
@@ -328,7 +328,7 @@ Adobe Commerceには複数のが必要です [PHP](../php-settings.md) 正しく
    chown -R apache:apache /var/lib/php/
    ```
 
-1. PHP セッションパスのディレクトリを作成し、所有者をに変更します。 `apache` ユーザーとグループ：
+1. PHP セッションパスのディレクトリを作成し、所有者を `apache` のユーザーおよびグループに変更します。
 
    ```bash
    mkdir -p /run/php-fpm/
@@ -338,7 +338,7 @@ Adobe Commerceには複数のが必要です [PHP](../php-settings.md) 正しく
    chown -R apache:apache /run/php-fpm/
    ```
 
-1. を開始する `php-fpm` サービスを提供し、起動時に開始するように設定します。
+1. `php-fpm` サービスを開始し、起動時に開始するように設定します。
 
    ```bash
    systemctl start php-fpm
@@ -348,7 +348,7 @@ Adobe Commerceには複数のが必要です [PHP](../php-settings.md) 正しく
    systemctl enable php-fpm
    ```
 
-1. を確認します `php-fpm` サービス実行中：
+1. `php-fpm` サービスが実行されていることを確認します。
 
    ```bash
    netstat -pl | grep php-fpm.sock
@@ -356,7 +356,7 @@ Adobe Commerceには複数のが必要です [PHP](../php-settings.md) 正しく
 
 ### MySQL のインストールと設定
 
-こちらを参照してください [MySQL](..//database/mysql.md) を参照してください。
+詳細は、[MySQL](..//database/mysql.md) を参照してください。
 
 ### インストールと設定
 
@@ -364,13 +364,13 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
 
 * [Composer メタパッケージの取得](../../composer.md)
 
-* [Git リポジトリのクローン](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Git リポジトリのクローンを作成 ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 この例は、コマンドラインを使用した Composer ベースのインストールを示しています。
 
-1. として [ファイルシステム所有者](../file-system/overview.md)アプリケーションサーバーにログインします。
+1. [ ファイルシステムの所有者 ](../file-system/overview.md) として、アプリケーションサーバーにログインします。
 
-1. Web サーバーの docroot ディレクトリまたは仮想ホストの docroot として設定したディレクトリに移動します。 この例では、Ubuntu のデフォルトを使用しています `/var/www/html`.
+1. Web サーバーの docroot ディレクトリまたは仮想ホストの docroot として設定したディレクトリに移動します。 この例では、Ubuntu のデフォルト `/var/www/html` を使用しています。
 
    ```bash
    cd /var/www/html
@@ -396,7 +396,7 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   プロンプトが表示されたら、 [認証キー](../authentication-keys.md). あなたの _公開鍵_ はユーザー名、は _秘密鍵_ はパスワードです。
+   プロンプトが表示されたら、[ 認証キー ](../authentication-keys.md) を入力します。 _公開鍵_ はユーザー名で、_秘密鍵_ はパスワードです。
 
 1. アプリケーションをインストールする前に、Web サーバーグループの読み取り/書き込み権限を設定します。 これは、コマンドラインがファイルをファイルシステムに書き込めるようにするために必要です。
 
@@ -420,7 +420,7 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
    chmod u+x bin/magento
    ```
 
-1. からをインストール [コマンドライン](../../advanced.md). この例では、インストールディレクトリの名前がであることを前提としています `magento2ee`, `db-host` が同じマシン上にある（`localhost`）に設定し、 `db-name`, `db-user`、および `db-password` が全て `magento`:
+1. [ コマンドライン ](../../advanced.md) からをインストールします。 この例では、インストールディレクトリの名前が `magento2ee` で、`db-host` が同じマシン（`localhost`）上にあり、`db-name`、`db-user`、`db-password` がすべて `magento` であることを前提としています。
 
    ```bash
    bin/magento setup:install \
@@ -453,9 +453,9 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
 
 ### Nginx の設定
 
-を使用して nginx を設定することをお勧めします。 `nginx.conf.sample` インストールディレクトリおよび nginx 仮想ホストで提供される設定ファイル。
+インストール ディレクトリおよび nginx 仮想ホストに用意されている `nginx.conf.sample` 設定ファイルを使用して、nginx を設定することをお勧めします。
 
-これらの手順は、nginx 仮想ホストのデフォルトの CentOS の場所（例： `/etc/nginx/conf.d`）を選択し、デフォルトの docroot （例： `/usr/share/nginx/html`ただし、環境に合わせてこれらの場所を変更することはできます。
+これらの手順は、nginx 仮想ホストの CentOS のデフォルトの場所（例：`/etc/nginx/conf.d`）とデフォルトの docroot （例：`/usr/share/nginx/html`）を使用していることを前提としています。ただし、これらの場所は、環境に合わせて変更できます。
 
 1. サイトの新しい仮想ホストを作成します。
 
@@ -481,9 +481,9 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
 
    >[!NOTE]
    >
-   >この `include` ディレクティブは、インストールディレクトリ内のサンプル nginx 設定ファイルを指す必要があります。
+   >`include` ディレクティブは、インストールディレクトリ内のサンプル nginx 設定ファイルを指している必要があります。
 
-1. 置換 `www.magento-dev.com` とドメイン名を使用します。
+1. `www.magento-dev.com` を自分のドメイン名に置き換えます。
 
 1. 保存して、エディターを終了します。
 
@@ -569,4 +569,4 @@ SELinux と firewalld を設定するには：
 
 ### インストールの確認
 
-Web ブラウザーを開き、サイトのベース URL に移動して、次の操作を行います [インストールの確認](../../next-steps/verify.md).
+Web ブラウザーを開き、サイトのベース URL に移動して [ インストールを確認 ](../../next-steps/verify.md) します。

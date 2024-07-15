@@ -13,8 +13,8 @@ ht-degree: 0%
 # ベンチマークサマリ
 
 Adobe Commerce 2.4.5 のパフォーマンスベンチマークの結果には、次のインフラストラクチャおよび追加のコンポーネントを使用してデプロイされたAdobe Commerce インスタンスで測定されたパフォーマンスが反映されています。
-- [Pro クラウド環境](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) （を使用） [拡張アーキテクチャ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)
-- [Adobe Commerceの B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/introduction.html)
+- [Pro クラウド環境 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html)[ 拡張アーキテクチャ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)
+- Adobe Commerceの [B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/introduction.html)
 - [Adobe CommerceInventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html)
 - [Adobe Stock](https://experienceleague.adobe.com/docs/commerce-admin/content-design/media/adobe-stock/adobe-stock.html)
 
@@ -26,23 +26,23 @@ Adobe Commerce 2.4.5 のパフォーマンスベンチマークの結果には�
 
 次の図は、パフォーマンスベンチマークのCommerce ストア設定と、テスト結果の主要パフォーマンス指標を示しています。
 
-![パフォーマンスベンチマーク JMeter と実稼動インフラストラクチャ](../../../assets/performance/images/performance-benchmark-kpis-245-cloud.png){width="700" zoomable="yes"}
+![ パフォーマンスベンチマーク JMeter と実稼動インフラストラクチャ ](../../../assets/performance/images/performance-benchmark-kpis-245-cloud.png){width="700" zoomable="yes"}
 
 企業 B2C 組織を模したテスト基準に基づいて、システムは、標準的な負荷フローで、ピーク時に要求されたトラフィックと注文番号を処理できます。
 
 ### パフォーマンスのハイライト
 
-- **注文件数**—99 百分位数の応答時間を 2 秒未満に維持しながら、1 分あたり 3,481 件の注文を処理しました（リクエストの 99% は 2 秒未満の応答時間で処理されました）。
-- **ページビュー**- 99 番目のパーセンタイルに対して、応答時間を 2 秒未満に維持しながら、1 時間あたり 200 万回を超えるページビューを処理しました。
-- **有効な SKU** – お客様のプロファイルには、2 億 4,200 万の異なる価格バリエーション（<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">eSKU</a>）を選択します（25 万点の製品の場合）。
-- **GraphQL リクエスト**—99 パーセンタイルの応答時間を 2 秒未満に保ちながら、GraphQLの 1 分あたりのキャッシュされていないリクエストを 10,500 件に拡張しました。
-- **同時管理者ユーザー**—99 パーセンタイルの応答時間を 2 秒未満に維持しながら、500 人の同時管理者ユーザーをサポートするようにシステムを拡張しました。
+- **注文件数** - 99 百分位数に対して、応答時間を 2 秒未満に維持しながら、1 分あたり 3,481 件の注文を処理しました（リクエストの 99% は 2 秒未満の応答時間で処理されました）。
+- **ページビュー** - 99 パーセンタイルの応答時間を 2 秒未満に維持しながら、1 時間あたり 200 万回を超えるページビューを処理しました。
+- **有効な SKU** – 顧客プロファイルには、250,000 製品で 2 億 4,200 万個の異なる価格バリエーション（<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">eSKU</a>）が含まれていました。
+- **GraphQL リクエスト** - 99 パーセンタイルの応答時間を 2 秒未満に保ちながら、1 分あたり 10,500 件のGraphQL キャッシュされていないリクエストに拡張されました。
+- **同時管理者ユーザー** - 99 パーセンタイルの応答時間を 2 秒未満に維持しながら、500 人の同時管理者ユーザーをサポートするようにシステムを拡張しました。
 
 ## テスト環境
 
 パフォーマンスベンチマークの結果は、拡張アーキテクチャを使用して Pro クラウド環境にデプロイされたAdobe Commerce 2.4.5 インスタンスに対するテストによって得られました。 また、このインスタンスには、Adobe Commerce B2B、Inventory management、Adobe Stock Integration モジュールもインストール、設定、有効化されています。
 
-テストプロファイルのパフォーマンステストデータは、を使用して生成されました <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">Performance Toolkit</a>.
+テストプロファイルのパフォーマンステストデータは、<a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">Performance Toolkit</a> を使用して生成されました。
 
 パフォーマンスの測定は、顧客およびビジネスユーザー向けにシミュレートされた日々のストアアクティビティに基づいています。 値は、各ケースで最大スループットに近いものを反映していますが、プライベート販売やフラッシュ販売などの独自のビジネスモデルは反映していません。
 
@@ -52,7 +52,7 @@ Adobe Commerce 2.4.5 のパフォーマンスベンチマークの結果には�
 
      キャッシュレイヤーを効果的に使用すると、1 時間あたりのページビュー数が増加します。
 
-- **GRAPHQL API**
+- **GraphQL API**
    - 250 個の同時スレッド
    - CDN キャッシュヒット率を 0% に設定
 
@@ -66,15 +66,15 @@ Adobe Commerce 2.4.5 のパフォーマンスベンチマークの結果には�
 
 Adobe Commerce インスタンスに対して実行される JMeter 負荷プロファイルを使用して、負荷テストを完了しました。 テスト中に 3 つの web ノードと 3 つのサービスノードが使用されました。 次の画像は、JMeter のエントリポイントと実稼動インフラストラクチャの詳細を示しています。
 
-![パフォーマンスベンチマーク JMeter と実稼動インフラストラクチャ](https://git.corp.adobe.com/storage/user/43354/files/4d801e3e-96b7-4193-b94f-12571263b495){width="700" zoomable="yes"}
+![ パフォーマンスベンチマーク JMeter と実稼動インフラストラクチャ ](https://git.corp.adobe.com/storage/user/43354/files/4d801e3e-96b7-4193-b94f-12571263b495){width="700" zoomable="yes"}
 
 ### 用途
 
-<a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">Adobe Commerce 2.4.5</a> pro アーキテクチャを使用してクラウドインフラストラクチャにデプロイする。
+<a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">Adobe Commerce 2.4.5</a> は、Pro アーキテクチャを使用してクラウドインフラストラクチャにデプロイされます。
 
 ### インフラストラクチャ
 
-パフォーマンスベンチマークでは、Adobe Commerce 2.4.5 はにデプロイされました。 [スケーラブルなインフラストラクチャ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html) 次の容量で置き換えます。
+パフォーマンスベンチマークでは、Adobe Commerce 2.4.5 を次の処理能力を持つ [ スケーラブルなインフラストラクチャ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html) にデプロイしました。
 
 - **Web ノードの仕様**
    - vCPU 216 （72 x 3 ノード）

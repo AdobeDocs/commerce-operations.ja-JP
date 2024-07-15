@@ -1,13 +1,13 @@
 ---
 name: Topic clarification/correction
 about: Create a request to clarify or correct a documentation topic
-title: '''トピック更新のリクエスト'''
+title: 'トピック更新のリクエスト'
 labels: ''
 assignees: ''
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
 workflow-type: tm+mt
 source-wordcount: '12'
-ht-degree: 0%
+ht-degree: 25%
 
 ---
 

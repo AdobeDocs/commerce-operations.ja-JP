@@ -15,18 +15,18 @@ ht-degree: 0%
 
 # Composer の開発
 
-このトピックでは、Composer モジュールを（内の Git リポジトリとして）インプレースで開発するための推奨アプローチについて説明します。 `vendor/` ディレクトリ）に追加し、それらのモジュールをメイン Git プロジェクトに追加します。
+このトピックでは、Composer モジュールを（`vendor/` ディレクトリ内の Git リポジトリとして）インプレースで開発し、それらのモジュールをメイン Git プロジェクトに追加するための推奨されるアプローチについて説明します。
 
 >[!NOTE]
 >
->これらのガイドラインは主に次のものに適用されます。 [グローバルリファレンスアーキテクチャ（GRA）](../overview.md) プロジェクト。
+>これらのガイドラインは、主に [GRA （グローバル・リファレンス・アーキテクチャ） ](../overview.md) プロジェクトに適用されます。
 
 ## 開発ブランチの準備
 
 1. メイン Git リポジトリに開発ブランチを作成またはチェックアウトします。
 1. 保守するモジュールごとに開発バージョンが必要です。
 
-   この例では、メイン Git リポジトリ内のすべてのブランチが Composer パッケージ バージョンを表します。 このシナリオの Composer バージョンの推奨命名規則は次のとおりです `dev-` + ブランチ名。 例：
+   この例では、メイン Git リポジトリ内のすべてのブランチが Composer パッケージ バージョンを表します。 このシナリオで Composer バージョンに推奨される命名規則は、`dev-` に続いてブランチ名です。 例：
 
    - `dev-develop`
    - `dev-qa`
@@ -35,25 +35,25 @@ ht-degree: 0%
    composer require client/module-example:dev-develop
    ```
 
-1. 別の Composer パッケージで特定のバージョンのモジュールが必要な場合（例： `client/module-example 1.0.12`）、エイリアスを使用してインストールします。
+1. 別の Composer パッケージで特定のバージョンのモジュール（`client/module-example 1.0.12` など）が必要な場合は、エイリアスを付けてインストールします。
 
    ```bash
    composer require 'client/module-example:dev-develop as 1.0.12'
    ```
 
-   の場合 `qa` 分岐、置換 `dev-develop` （を使用） `dev-qa`.
+   `qa` ブランチの場合は、`dev-develop` を `dev-qa` に置き換えます。
 
 ## パッケージの Git リポジトリへの変換
 
-デフォルトでは、パッケージにはが含まれていません。 `.git/` ディレクトリ。 Composer は、事前にビルドされた Composer パッケージを使用する代わりに、Git からパッケージをチェックアウトできます。 このアプローチの利点は、開発時にパッケージを簡単に変更できることです。
+デフォルトでは、パッケージには `.git/` ディレクトリは含まれていません。 Composer は、事前にビルドされた Composer パッケージを使用する代わりに、Git からパッケージをチェックアウトできます。 このアプローチの利点は、開発時にパッケージを簡単に変更できることです。
 
-1. からモジュールを削除 `vendor/` ディレクトリ。
+1. `vendor/` ディレクトリからモジュールを削除します。
 
    ```bash
    rm -rf vendor/client/module-example
    ```
 
-1. を使用してモジュールを再インストールします。 [指定された Git ソース](#prepare-a-development-branch).
+1. [ 指定された Git ソース ](#prepare-a-development-branch) を使用してモジュールを再インストールします。
 
    ```bash
    composer install --prefer-source
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 ## 開発した主プロジェクトの更新
 
-を変更して、メイン Git リポジトリを更新します。 `composer.lock` ファイル。 新しいモジュールの場合は、有効にします。
+`composer.lock` ファイルを変更して、メイン Git リポジトリを更新します。 新しいモジュールの場合は、有効にします。
 
 ```bash
 # to update your packages and all dependencies of the package

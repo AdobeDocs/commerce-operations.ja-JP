@@ -17,7 +17,7 @@ Adobe Commerce 2.4.5 では、Amazon OpenSearch サービスクラスターの�
 ## AWS OpenSearch サービスドメインの作成
 
 まず、AWSで OpenSearch インスタンスを確立する必要があります。
-Read [Amazon OpenSearch Service ドメインの作成と管理](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) 詳しい手順については、を参照してください。
+手順について詳しくは、[Amazon OpenSearch サービスドメインの作成と管理 ](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) を参照してください。
 
 ## AWS OpenSearch へのデータの取得
 
@@ -33,11 +33,11 @@ AWSですべてが準備されたら、データを入力する時間です。
 インデックスはAWS インスタンスで簡単に再作成できるので、インデックスを移行する必要はありません。
 ただし、データインデックスを移行する場合は、Elasticsearch/OpenSearch のバージョンに互換性があることを確認します。
 
-Amazonの説明を参照 [Amazon OpenSearch Service への移行](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) 詳しくは、を参照してください。
+詳しくは、Amazonの [Amazon OpenSearch Service への移行 ](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) 手順を参照してください。
 
 ### OpenSearch 用のCommerceの設定
 
-OpenSearch の設定手順については、を参照してください。 [高度なインストール](../../advanced.md) トピック。
+OpenSearch を設定する手順については、[ 詳細インストール ](../../advanced.md) トピックを参照してください。
 
 新しい設定が機能していることをテストするには、OpenSearch エンドポイントを直接テストします。
 
@@ -45,12 +45,12 @@ OpenSearch の設定手順については、を参照してください。 [高�
 1. 管理者を使用して再インデックス化します。
 1. OpenSearch エンドポイント（AWS UI 内）をクエリします。
 
-   インデックスを取得するには、次を追加します。 `/_cat/indices/*?v=true` URL に移動：
+   インデックスを取得するには、URL に `/_cat/indices/*?v=true` を追加します。
    `<AWS OS endpoint>/_cat/indices/*?v=true`
 
-インデックスから製品を取得するには、次を追加します。 `/magento2docker_product_1/_search?q=*` URL に移動：
+インデックスから製品を取得するには、URL に `/magento2docker_product_1/_search?q=*` を追加します。
 `<AWS OS endpoint>/magento2docker_product_1/_search?q=testproduct1`
 
 ## その他のリソース
 
-詳しくは、を参照してください [OpenSearch AWS ドキュメント](https://docs.aws.amazon.com/opensearch-service/index.html).
+詳しくは、[OpenSearch AWS ドキュメント ](https://docs.aws.amazon.com/opensearch-service/index.html) を参照してください。

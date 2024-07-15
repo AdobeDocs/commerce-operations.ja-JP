@@ -23,19 +23,19 @@ bin/magento dev:source-theme:deploy [--type="..."] [--locale="..."] [--area="...
 
 >[!INFO]
 >
->開発時に、このコマンドは LESS ファイルのシンボリックリンクを `var/view_preprocessed` および `pub/static` フォルダー。 このプロセスでは、LESS ファイルを CSS ファイルにコンパイルしません。
+>開発時に、`var/view_preprocessed` フォルダーおよび `pub/static` フォルダーに LESS ファイルのシンボリックリンクを作成します。 このプロセスでは、LESS ファイルを CSS ファイルにコンパイルしません。
 
 次の表に、このコマンドのパラメータと値を示します。
 
 | パラメーター | 値 | 必須？ |
 | --------- | ----- | --------- |
-| `--type` | ソースファイルの種類： [より小さい] （デフォルト：&quot;less&quot;）<br>現在、LESS がサポートされている唯一のファイル・タイプです。 | 不可 |
-| `--locale` | ロケールコード<br>ロケールコードのリストを表示するには、を入力します `bin/magento info:language:list` | 不可 |
-| `--area` | 領域（`adminhtml` 管理領域については、 `frontend` ストアフロント用）。 | 不可 |
-| `--theme` | のテーマ名 `<VendorName>/<theme-name>` 形式。 例： `Magento/blank` または `Magento/backend`. | 不可 |
-| `<file>` | CSS 拡張子を使用せずに LESS に変換する CSS ファイルのスペース区切りリスト。 （デフォルトは `css/styles-m css/styles-l`、adminhtml タイプ用 `css/styles css/styles-old`） | 不可 |
+| `--type` | ソースファイルのタイプ：[less] （デフォルト：「less」） <br> 現在、サポートされているファイルタイプは LESS のみです。 | 不可 |
+| `--locale` | ロケールコード<br> ロケールコードのリストを表示するには、`bin/magento info:language:list` と入力します | 不可 |
+| `--area` | 領域（管理領域の `adminhtml`、ストアフロントの `frontend`）。 | 不可 |
+| `--theme` | テーマ名（`<VendorName>/<theme-name>` 形式）。 例えば、`Magento/blank` や `Magento/backend` です。 | 不可 |
+| `<file>` | CSS 拡張子を使用せずに LESS に変換する CSS ファイルのスペース区切りリスト。 （adminhtml タイプ `css/styles css/styles-old` の場合、デフォルトは `css/styles-m css/styles-l`） | 不可 |
 
-例えば、という名前のフロントエンドテーマに LESS ファイルを作成するには、次のように指定します `VendorName/themeName` が含まれる `en_US` という名前の CSS ファイルを使用したロケール `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css`を入力し、次のコマンドを入力します。
+例えば、`<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css` という CSS ファイルを使用して、`en_US` ロケールの `VendorName/themeName` という名前のフロントエンドテーマに対して LESS ファイルを作成するには、次のコマンドを入力します。
 
 ```bash
 bin/magento dev:source-theme:deploy --type="less" --locale="en_US" --area="frontend" --theme="VendorName/themeName" css/styles-l

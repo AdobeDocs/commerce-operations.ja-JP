@@ -18,11 +18,11 @@ Adobe Commerceでは、すぐに使用できる複数の Varnish インスタン
 
 ## 複数の Varnish インスタンスをパージする設定
 
-Commerceでは、を使用して Varnish ホストを設定した後、Varnish ホストをパージします。 [`magento setup:config:set`](../../installation/tutorials/deployment.md) コマンド。
+Commerceは、[`magento setup:config:set`](../../installation/tutorials/deployment.md) コマンドを使用して Varnish ホストを設定した後に、Varnish ホストをパージします。
 
-を使用する必要があります `--http-cache-hosts` パラメーター：Varnish ホストとリッスンポートのコンマ区切りリストを指定します。 （ホストをスペース文字で区切らないでください）。
+`--http-cache-hosts` パラメーターを使用して、Varnish ホストとリッスンポートのコンマ区切りリストを指定する必要があります。 （ホストをスペース文字で区切らないでください）。
 
-パラメーターの形式は、 `<hostname or ip>:<listen port>`。を省略できます `<listen port>` ポート 80 の場合。
+パラメーターの形式は `<hostname or ip>:<listen port>` にする必要があります。ポート 80 の場合、`<listen port>` を省略できます。
 
 以下に例を挙げます。
 
@@ -30,8 +30,8 @@ Commerceでは、を使用して Varnish ホストを設定した後、Varnish �
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 
-その後、Commerceのキャッシュ（ _クリーニング_ キャッシュ）を使用するか、コマンドラインを使用します。
+その後、Admin またはコマンドラインでCommerceのキャッシュ（「キャッシュのクリーニング _とも呼ばれます）を更新すると_ すべての Varnish ホストをパージできます。
 
-管理者を使用してキャッシュを更新するには、 **システム** > ツール > **キャッシュ管理**&#x200B;を選択し、 **Magentoキャッシュのフラッシュ** ページの上部 （個々のキャッシュタイプを更新することもできます）。
+管理者を使用してキャッシュを更新するには、**SYSTEM**/ツール/**Cache Management** をクリックし、ページ上部の **Magentoキャッシュをフラッシュ** をクリックします。 （個々のキャッシュタイプを更新することもできます）。
 
-複数の Varnish インスタンスのキャッシュを cli から更新するには、次を使用します。 [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) としてコマンド [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
+cli から複数の Varnish インスタンスのキャッシュを更新するには、[`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) コマンドを [ ファイル・システムの所有者 ](../../installation/prerequisites/file-system/overview.md) として使用します。

@@ -12,9 +12,9 @@ ht-degree: 3%
 
 # モジュールと拡張機能の管理
 
-投稿する開発者は、Adobe Commerceでバージョンを指定することで、モジュールおよび拡張機能をアップグレードします `composer.json` ファイル。 コントリビューション機能を持つ開発者でない場合は、を参照してください。 [アップグレードの実行](../implementation/perform-upgrade.md).
+投稿する開発者は、Adobe Commerce `composer.json` ファイルでバージョンを指定することで、モジュールと拡張機能をアップグレードします。 コントリビューションを行う開発者でない場合は、[ アップグレードの実行 ](../implementation/perform-upgrade.md) を参照してください。
 
-を追加できます `require` セクションから `composer.json` ファイルを開くか、 `composer require` コマンドは次のようになります。
+`composer.json` ファイルに `require` セクションを追加するか、`composer require` コマンドを次のように使用できます。
 
 {{$include /help/_includes/server-login.md}}
 
@@ -34,7 +34,7 @@ composer show --all <vendor>/<name>
 composer show --all example/module
 ```
 
-## の使用 `composer require` コマンド
+## `composer require` コマンドの使用
 
 コマンドの使用法：
 
@@ -50,11 +50,11 @@ composer require example/module:1.0.0
 
 Composer が依存関係を更新してモジュールをインストールしています。しばらくお待ちください。
 
-## を追加 `require` composer.json ファイルのセクション
+## composer.json ファイルに `require` セクションを追加します。
 
-1. を開きます `composer.json` テキストエディター。
+1. `composer.json` をテキストエディターで開きます。
 
-1. を追加 `require` セクション。
+1. `require` セクションを追加します。
 
    ```json
    "require": {
@@ -63,9 +63,9 @@ Composer が依存関係を更新してモジュールをインストールし�
    }
    ```
 
-1. 変更をに保存します。 `composer.json` ファイルを開き、テキストエディターを終了します。
+1. 変更内容を `composer.json` ファイルに保存し、テキストエディターを終了します。
 
-1. 依存関係を解決し、正確なバージョンをに書き込む `composer.lock` ファイル。
+1. 依存関係を解決し、正確なバージョンを `composer.lock` ファイルに書き込みます。
 
    ```bash
    composer update

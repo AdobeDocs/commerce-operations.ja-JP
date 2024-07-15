@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Web クローラーを設定するためのベストプラクティス
 
-この記事では、を使用する際のベストプラクティスを説明します `robots.txt` および `sitemap.xml` Adobe Commerceのファイル（設定およびセキュリティを含む）。 これらのファイルは、web クローラー（通常は検索エンジンロボット）が web サイト上のページをクロールする方法を指示します。 これらのファイルを設定すると、サイトのパフォーマンスと検索エンジンの最適化を向上させることができます。
+この記事では、設定やセキュリティなど、Adobe Commerceで `robots.txt` ファイルや `sitemap.xml` ファイルを使用するためのベストプラクティスを説明します。 これらのファイルは、web クローラー（通常は検索エンジンロボット）が web サイト上のページをクロールする方法を指示します。 これらのファイルを設定すると、サイトのパフォーマンスと検索エンジンの最適化を向上させることができます。
 
 >[!NOTE]
 >
@@ -22,33 +22,33 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-[サポートされているすべてのバージョン](../../../release/versions.md) （件中）:
+[ サポートされているすべてのバージョン ](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
 
 ## クラウドインフラストラクチャー上のAdobe Commerce
 
-デフォルトのAdobe Commerce プロジェクトには、1 つの web サイト、ストア、ストアビューを含む階層が含まれています。 より複雑な実装の場合は、の追加の web サイト、ストア、ストア表示を作成できます。 _マルチサイト_ ストアフロント。
+デフォルトのAdobe Commerce プロジェクトには、1 つの web サイト、ストア、ストアビューを含む階層が含まれています。 より複雑な実装の場合は、_マルチサイト_ ストアフロント用に追加の web サイト、ストア、ストア表示を作成できます。
 
 ### 単一サイトのストアフロント
 
-を設定する際は、次のベストプラクティスに従います `robots.txt` および `sitemap.xml` 単一サイトのストアフロントのファイル：
+単一サイトのストアフロント用に `robots.txt` ファイルと `sitemap.xml` ファイルを設定する際は、次のベストプラクティスに従います。
 
-- プロジェクトでを使用していることを確認します。 [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) バージョン 2002.0.12 以降。
-- 管理アプリケーションを使用したのコンテンツを `robots.txt` ファイル。
+- プロジェクトで [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) バージョン 2002.0.12 以降が使用されていることを確認します。
+- 管理アプリケーションを使用して、`robots.txt` ファイルにコンテンツを追加します。
 
   >[!TIP]
   >
-  >自動生成されたを表示 `robots.txt` ストアのファイル（） `<domain.your.project>/robots.txt`.
+  >ストアの自動生成された `robots.txt` ファイルを `<domain.your.project>/robots.txt` で表示します。
 
-- Admin アプリケーションを使用して、 `sitemap.xml` ファイル。
+- Admin アプリケーションを使用して、`sitemap.xml` ファイルを生成します。
 
   >[!IMPORTANT]
   >
-  >クラウドインフラストラクチャプロジェクト上のAdobe Commerceの読み取り専用ファイルシステムにより、次を指定する必要があります `pub/media` ファイルを生成する前のパス。
+  >クラウドインフラストラクチャプロジェクト上のAdobe Commerceの読み取り専用ファイルシステムがあるので、ファイルを生成する前に `pub/media` パスを指定する必要があります。
 
-- カスタム Fastly VCL スニペットを使用して、サイトのルートからにリダイレクトします `pub/media/` 両方のファイルの場所：
+- カスタム Fastly VCL スニペットを使用して、サイトのルートから、両方のファイルの `pub/media/` の場所にリダイレクトします。
 
   ```vcl
   {
@@ -60,26 +60,26 @@ ht-degree: 0%
   }
   ```
 
-- Web ブラウザーでファイルを表示して、リダイレクトをテストします。 例： `<domain.your.project>/robots.txt` および `<domain.your.project>/sitemap.xml`. リダイレクトを設定したルートパスを使用しており、別のパスを使用していないことを確認してください。
+- Web ブラウザーでファイルを表示して、リダイレクトをテストします。 例えば、`<domain.your.project>/robots.txt` と `<domain.your.project>/sitemap.xml` です。 リダイレクトを設定したルートパスを使用しており、別のパスを使用していないことを確認してください。
 
 >[!INFO]
 >
->参照： [サイトマップと検索エンジンロボットを追加](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) 詳しい手順については、を参照してください。
+>手順について詳しくは、[ サイトマップと検索エンジンロボットの追加 ](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) を参照してください。
 
 
 ### マルチサイトのストアフロント
 
-クラウドインフラストラクチャー上にAdobe Commerceを 1 つ実装するだけで、複数のストアを設定して実行できます。 参照： [複数の web サイトまたはストアを設定](https://devdocs.magento.com/cloud/project/project-multi-sites.html).
+クラウドインフラストラクチャー上にAdobe Commerceを 1 つ実装するだけで、複数のストアを設定して実行できます。 [ 複数の web サイトまたはストアの設定 ](https://devdocs.magento.com/cloud/project/project-multi-sites.html) を参照してください。
 
-の設定に関する同じベストプラクティス `robots.txt` および `sitemap.xml` のファイル [単一サイトのストアフロント](#single-site-storefronts) は、次の 2 つの重要な違いがあり、マルチサイトのストアフロントに適用されます。
+マルチサイトストアフロントでは、[ シングルサイトストアフロント ](#single-site-storefronts) 用の `robots.txt` ファイルと `sitemap.xml` ファイルの設定に関するベストプラクティスが適用されますが、次の 2 つの重要な違いがあります。
 
-- 次のことを確認します `robots.txt` および `sitemap.xml` ファイル名には、対応するサイトの名前が含まれます。 例：
+- `robots.txt` と `sitemap.xml` のファイル名に、対応するサイトの名前が含まれていることを確認してください。 例：
    - `domaineone_robots.txt`
    - `domaintwo_robots.txt`
    - `domainone_sitemap.xml`
    - `domaintwo_sitemap.xml`
 
-- 少し変更したカスタム Fastly VCL スニペットを使用して、サイトのルートからにリダイレクトします `pub/media` サイト全体での両方のファイルの場所：
+- 少し変更したカスタム Fastly VCL スニペットを使用して、サイトのルートから、サイトをまたいで両方のファイルを `pub/media` の場所にリダイレクトします。
 
   ```vcl
   {
@@ -93,25 +93,25 @@ ht-degree: 0%
 
 ## Adobe Commerce オンプレミス
 
-Admin アプリケーションを使用して、 `robots.txt` および `sitemap.xml` ボットが不要なコンテンツのスキャンやインデックス作成を行わないようにするファイル（ [検索エンジンロボット](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)）に設定します。
+管理アプリケーションを使用して `robots.txt` ファイルと `sitemap.xml` ファイルを設定し、ボットが不要なコンテンツをスキャンしてインデックスを作成しないようにします（[ 検索エンジンロボット ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots) を参照）。
 
 >[!TIP]
 >
->オンプレミス環境の場合、ファイルを書き込む場所は、Adobe Commerceのインストール方法によって異なります。 ファイルをに書き込みます。 `/path/to/commerce/pub/media/` または `/path/to/commerce/media`（インストールに適した方）。
+>オンプレミス環境の場合、ファイルを書き込む場所は、Adobe Commerceのインストール方法によって異なります。 インストールに適した `/path/to/commerce/pub/media/` または `/path/to/commerce/media` のどちらかにファイルを書き込みます。
 
 ## セキュリティ
 
-管理パスをユーザーに公開しない `robots.txt` ファイル。 管理者パスを公開すると、サイトハッキングの脆弱性が生じ、データが失われる可能性があります。 からの管理者パスの削除 `robots.txt` ファイル。
+`robots.txt` ファイルで管理者パスを公開しないでください。 管理者パスを公開すると、サイトハッキングの脆弱性が生じ、データが失われる可能性があります。 `robots.txt` ファイルから管理者パスを削除します。
 
-を編集する手順は、次のとおりです `robots.txt` 管理パスのすべてのエントリをファイルに保存して削除します。詳しくは、以下を参照してください [マーケティングユーザーガイド / SEO と検索/検索エンジンロボット](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots).
+`robots.txt` ファイルを編集し、管理パスのすべてのエントリを削除する手順については、[ マーケティングユーザーガイド/SEO と検索/検索エンジンロボット ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots) を参照してください。
 
 >[!TIP]
 >
->サポートが必要な場合は、 [Adobe Commerce サポートチケットを送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+>サポートが必要な場合は、[Adobe Commerce サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) してください。
 
 ## 追加情報
 
-- [Web サイト、ストア、ストア表示について](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
-- [Web サイトの追加](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [Fastly を使用して、Adobe Commerce サイトの悪意のあるトラフィックをブロックする](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
-- [robots.txt で、cloud infrastructure 2.3.x のAdobe Commerceに 404 エラーが発生する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)
+- [Web サイト、ストア、ストア表示について ](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
+- [Web サイトの追加 ](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
+- [Fastly を使用して、Adobe Commerce サイトの悪意のあるトラフィックをブロックする ](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
+- [robots.txt で、cloud infrastructure 2.3.x のAdobe Commerceに 404 エラーが発生する ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)

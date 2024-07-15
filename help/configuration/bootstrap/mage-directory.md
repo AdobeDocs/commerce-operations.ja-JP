@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # ベースディレクトリのパス
 
-この `MAGE_DIRS` 環境変数を使用すると、Commerce アプリケーションが様々なファイルへの絶対パスを構築したり、URL を生成したりするために使用する、カスタムのベースディレクトリパスとベース URL のフラグメントを指定できます。
+`MAGE_DIRS` 環境変数を使用すると、カスタムベースディレクトリパスと、Commerce アプリケーションで様々なファイルへの絶対パスの構築または URL の生成に使用されるベース URL のフラグメントを指定できます。
 
 ## MAGE_DIRS を設定
 
-キーが定数である連想配列を [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] および値は、それぞれディレクトリの絶対パスまたはその URL パスです。
+キーが [\\Magento\\App\\Filesystem\\DirectoryListの定数で、値がディレクトリの絶対パスまたはその URL パスである連想配列を ][directory-list] それぞれ指定します。
 
-次を設定できます `MAGE_DIRS` 次のいずれかの方法を使用します。
+`MAGE_DIRS` は、次のいずれかの方法で設定できます。
 
 - [ブートストラップパラメーターの値を設定](../bootstrap/set-parameters.md)
 - 次のようなカスタムエントリポイントスクリプトを使用します。
@@ -48,7 +48,7 @@ ht-degree: 0%
   $bootstrap->run($app);
   ```
 
-上記の例では、のパスを設定します `[cache]` および `[media]` ディレクトリ `/mnt/nfs/cache` および `/mnt/nfs/media`、それぞれ。
+上記の例では、`[cache]` ディレクトリと `[media]` ディレクトリのパスをそれぞれ `/mnt/nfs/cache` と `/mnt/nfs/media` に設定します。
 
 <!-- link definitions -->
 

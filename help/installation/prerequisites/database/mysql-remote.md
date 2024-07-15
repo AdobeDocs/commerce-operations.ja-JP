@@ -21,26 +21,26 @@ Aurora は、AWS上でホストされる、高性能で完全に準拠した MyS
 
 Aurora をデータベースとして使用することは、デフォルトのデータベースコネクタを使用して、通常のAdobe Commerce設定でデータベースを指定するのと同じくらい簡単です。
 
-実行中 `bin/magento setup:install`で、Aurora 情報を使用します `db-` フィールド :
+`bin/magento setup:install` を実行する際は、`db-` のフィールドに Aurora 情報を使用します。
 
 ```bash
 bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws.com' --db-name='magento2' --db-user='username' --db-password='password' ...
 ```
 
-この `db-host` 値は、を含む Aurora URL です。 `https://` および末尾 `:portnumber`  を削除しました。
+`db-host` の値は、`https://` と末尾の `:portnumber` が削除された Aurora URL です。
 
 ## リモート・データベース接続の設定
 
 >[!NOTE]
 >
->これは、経験豊富なネットワーク管理者またはデータベース管理者のみが使用する高度なトピックです。 以下が必要です `root` ファイルシステムにアクセスし、次のように MySQL にログインできる必要があります `root`.
+>これは、経験豊富なネットワーク管理者またはデータベース管理者のみが使用する高度なトピックです。 ファイルシステムに対する `root` アクセス権を持ち、`root` として MySQL にログインできる必要があります。
 
 ### 前提条件
 
 開始する前に、次の操作を行う必要があります。
 
-* [MySQL サーバーのインストール](mysql.md) データベースサーバー上。
-* [データベースインスタンスの作成](mysql.md#configuring-the-database-instance) データベースサーバー上。
+* データベースサーバーに [MySQL サーバーをインストール ](mysql.md) します。
+* データベースサーバーで [ データベースインスタンスを作成 ](mysql.md#configuring-the-database-instance) します。
 * Adobe Commerce web ノードに MySQL クライアントをインストールします。 詳しくは、MySQL のドキュメントを参照してください。
 
 ### 高可用性
@@ -50,7 +50,7 @@ Web サーバーまたはデータベースサーバーがクラスター化さ�
 * Web サーバーノードごとに接続を設定する必要があります。
 * 通常は、データベース・ロード・バランサへのデータベース接続を構成します。ただし、データベース・クラスタリングは複雑になる場合があり、構成はユーザー次第です。 Adobeでは、データベースクラスタリングに関して具体的な推奨事項を提供していません。
 
-  詳しくは、を参照してください [MySQL ドキュメント](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  詳しくは、[MySQL のドキュメント ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) を参照してください。
 
 ### 接続の問題の解決
 
@@ -60,7 +60,7 @@ Web サーバーまたはデータベースサーバーがクラスター化さ�
 
 リモート接続を作成するには：
 
-1. データベースサーバーで、を持つユーザーとして `root` 権限を設定するには、MySQL 設定ファイルを開きます。
+1. データベースサーバーで、`root` 権限を持つユーザーとして、MySQL 設定ファイルを開きます。
 
    このディレクトリを探すには、次のコマンドを入力します。
 
@@ -77,19 +77,19 @@ Web サーバーまたはデータベースサーバーがクラスター化さ�
 
    >[!NOTE]
    >
-   >Ubuntu 16 では、通常はパスは `/etc/mysql/mysql.conf.d/mysqld.cnf`.
+   >Ubuntu 16 では通常、パスは `/etc/mysql/mysql.conf.d/mysqld.cnf` です。
 
-1. 設定ファイルで次を検索： `bind-address`.
+1. 設定ファイルで `bind-address` を検索します。
 
    存在する場合は、次のように値を変更します。
 
-   存在しない場合は、に追加します `[mysqld]` セクション。
+   存在しない場合は、`[mysqld]` セクションに追加します。
 
    ```conf
    bind-address = <ip address of your web node>
    ```
 
-   参照： [MySQL ドキュメント](https://dev.mysql.com/doc/refman/5.6/en/server-options.html)特に、クラスター化された web サーバーがある場合。
+   特にクラスター化された web サーバーがある場合は、[MySQL ドキュメント ](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) を参照してください。
 
 1. 設定ファイルに対する変更を保存し、テキストエディターを終了します。
 1. MySQL サービスを再起動します。
@@ -100,18 +100,18 @@ Web サーバーまたはデータベースサーバーがクラスター化さ�
 
    >[!NOTE]
    >
-   >MySQL の起動に失敗した場合は、syslog で問題の原因を調べます。 を使用して問題を解決する [MySQL ドキュメント](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) または別の信頼できる情報源。
+   >MySQL の起動に失敗した場合は、syslog で問題の原因を調べます。 [MySQL ドキュメント ](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) またはその他の信頼できるソースを使用して、問題を解決します。
 
 ## データベースユーザーへのアクセス権の付与
 
 Web ノードがデータベースサーバーに接続できるようにするには、web ノードのデータベースユーザーにリモートサーバー上のデータベースへのアクセス権を付与する必要があります。
 
-この例では、次の権限が付与されます `root` データベースユーザー：リモートホスト上のデータベースへのフルアクセス。
+この例では、`root` データベース・ユーザーにリモート・ホスト上のデータベースへのフル・アクセス権を付与します。
 
 データベース・ユーザーにアクセス権を付与するには、次の手順に従います。
 
 1. データベースサーバーにログインします。
-1. MySQL データベースにとして接続します `root` ユーザー。
+1. `root` ユーザーとして MySQL データベースに接続します。
 1. 次のコマンドを入力します。
 
    ```shell
@@ -155,8 +155,8 @@ Web サーバーがクラスター化されている場合は、各 web サー�
 
 Adobe Commerceをインストールする際は、次の情報を指定する必要があります。
 
-* ベース URL （別名） *ストアアドレス*）は、ホスト名または IP アドレスを指定します *web ノード*
-* データベースホストはです *リモート・データベース・サーバ* IP アドレス （または、データベースサーバーがクラスター化されている場合はロードバランサー）
-* データベースのユーザー名は *ローカル web ノード* アクセス権を付与したデータベースユーザー
+* ベース URL （「ストアアドレス *とも呼ばれます）は* web ノード *のホスト名または IP アドレスを指定しま*。
+* データベースホストは *リモートデータベースサーバー* IP アドレス（または、データベースサーバーがクラスター化されている場合はロードバランサー）です。
+* Database username は、アクセス権を付与した *ローカル web ノード* データベースユーザーです
 * データベースパスワードは、ローカル web ノードユーザーのパスワードです。
 * Database name は、リモート・サーバ上のデータベースの名前です

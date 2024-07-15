@@ -21,4 +21,4 @@ ht-degree: 0%
 >
 >一般的な e コマースワークフローの一環として、一元化されたチームは、以下に表示される 5 つのタイプの中で最も一般的なものです。 ハニカム構造は、アジャイル ワークフローに最も適しています。
 
-![チーム構造図](../../assets/playbooks/team-structure.png)
+![ チーム構造図 ](../../assets/playbooks/team-structure.png)

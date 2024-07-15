@@ -20,14 +20,14 @@ ht-degree: 0%
 - GRA を含むアーキテクチャに関する考慮事項
 - スクリプティングや悪用に対するセキュリティ標準
 - 拡張機能開発のベストプラクティス
-- REST、SOAP およびGraphQLとの Web API 統合
+- REST、SOAPおよびGraphQLとの Web API 統合
 - コーディングとインフラストラクチャのパフォーマンスの向上
 - テスト・ツール、戦略、方法論
 
 一部のソリューション実装者は、方法、プロセス、ツールに関して独自の好みを持っているかもしれませんが、このプレイブックでは、ほとんどの実装で共有できる、受け入れられているベストプラクティスと方法論に焦点を当てています。
 
-他の大規模な IT プロジェクトと同様に、Adobe Commerceは、ベストプラクティスと標準化を使用するコーディング標準と、Adobe Commerce内で確立された標準に基づいて構築されています [コーディング基準](https://developer.adobe.com/commerce/php/coding-standards/). これらの標準に従うことは、バグを排除し、カスタムビルドされたコードの品質と保守性を向上させるために重要です。
+他の大規模な IT プロジェクトと同様に、Adobe Commerceは、ベストプラクティスと標準化を使用するコーディング標準と、Adobe Commerce[ コーディング標準 ](https://developer.adobe.com/commerce/php/coding-standards/) 内で確立された標準に基づいて構築されています。 これらの標準に従うことは、バグを排除し、カスタムビルドされたコードの品質と保守性を向上させるために重要です。
 
 ## クラウドインフラストラクチャー上のAdobe Commerce
 
-クラウドインフラストラクチャー上のAdobe Commerceは、Adobe Commerce ソフトウェア用の管理された自動ホスティングプラットフォームです。 Adobe Commerce on cloud infrastructure には、オンプレミスのAdobe Commerce実装とは異なる様々な機能が用意されています。 を参照してください。 [クラウドガイド](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).
+クラウドインフラストラクチャー上のAdobe Commerceは、Adobe Commerce ソフトウェア用の管理された自動ホスティングプラットフォームです。 Adobe Commerce on cloud infrastructure には、オンプレミスのAdobe Commerce実装とは異なる様々な機能が用意されています。 [ クラウドガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) を参照してください。

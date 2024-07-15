@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # コマンドラインツール
 
-Commerceには、1 つのコマンドラインインターフェイス（CLI）があります。`<magento_root>/bin/magento` – 次のようなインストール タスクおよび構成タスクを実行します。
+Commerceには、インストールおよび設定タスクを実行する次のような 1 つのコマンドラインインターフェイス（`<magento_root>/bin/magento`）があります。
 
 - Commerceのインストール（およびデータベーススキーマの更新、デプロイメント設定の作成などの関連タスク）
 - キャッシュのクリア
@@ -23,20 +23,20 @@ Commerceには、1 つのコマンドラインインターフェイス（CLI）�
 
 その他の利点は次のとおりです。
 
-- 単一のコマンド（`<magento_root>/bin/magento list`）に、使用可能なすべてのインストールおよび設定コマンドを示します。
+- 1 つのコマンド（`<magento_root>/bin/magento list`）に、使用可能なすべてのインストールコマンドと設定コマンドが一覧表示されます。
 - Symfony に基づく一貫性のあるユーザーインターフェイス。
 - CLI は拡張可能なため、サードパーティ開発者がプラグインすることができます。 これには、ユーザーの学習曲線を排除するという追加のメリットがあります。
 - 無効なモジュールのコマンドは表示されません。
 
-ここでは、CLI を使用したAdobe Commerce ソフトウェアの設定について説明します。 Commerceのインストールについて詳しくは、 [インストールフロー](../../installation/overview.md) が含まれる _インストールガイド_.
+ここでは、CLI を使用したAdobe Commerce ソフトウェアの設定について説明します。 Commerceのインストールについて詳しくは、[ インストールガイド ](../../installation/overview.md) の _インストールフロー_ を参照してください。
 
 ## 前提条件
 
 CLI の使用を開始する前に、以下を確認します。
 
-1. お使いのシステムはで説明されている要件を満たしています。 [必要システム構成](../../installation/system-requirements.md) が含まれる _インストールガイド_.
-1. で説明したすべての前提条件タスクを完了しました [前提条件](../../installation/prerequisites/overview.md) が含まれる _インストールガイド_.
-1. Commerce サーバーにログインしたら、Commerce ファイルシステムへの書き込み権限を持つユーザーに切り替えます。 参照： [ファイルシステムの所有者に切り替える](../../installation/prerequisites/file-system/overview.md) が含まれる _インストールガイド_.
+1. お使いのシステムは、『インストール ガイド _の [ システム要件 ](../../installation/system-requirements.md) に記載されている要件を満たしてい_ す。
+1. _インストール ガイド_ の [ 前提条件 ](../../installation/prerequisites/overview.md) で説明されているすべての前提条件タスクを完了しました。
+1. Commerce サーバーにログインしたら、Commerce ファイルシステムへの書き込み権限を持つユーザーに切り替えます。 [ インストール ガイド ](../../installation/prerequisites/file-system/overview.md) の _ファイル システム所有者に切り替える_ を参照してください。
 
 ## コマンドの実行
 
@@ -54,7 +54,7 @@ sudo -u <file system owner> <command>
 
 **任意のディレクトリから CLI コマンドを実行するには**:
 
-追加 `<magento_root>/bin` お使いのシステム `PATH`.
+`<magento_root>/bin` をシステム `PATH` に追加します。
 
 CentOS 用の bash シェルの例：
 
@@ -64,6 +64,6 @@ export PATH=$PATH:/var/www/html/magento2/bin
 
 オプションで、次を実行できます。
 
-- `cd <magento_root>/bin` そしてそれらを `./magento <command name>`
+- `./magento <command name>` として `cd <magento_root>/bin` び出して実行
 - `<magento_root>/bin/magento <command name>`
 - `<magento_root>` は、web サーバーの docroot のサブディレクトリです。

@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Bootstrapパラメーター
 
-このトピックでは、Commerce アプリケーションのブートストラップパラメーターの値を設定する方法について説明します。 参照： [アプリケーションの初期化とブートストラップの概要](initialization.md).
+このトピックでは、Commerce アプリケーションのブートストラップパラメーターの値を設定する方法について説明します。 [ アプリケーションの初期化とブートストラップの概要 ](initialization.md) を参照してください。
 
 次の表に、設定可能なブートストラップパラメーターを示します。
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 >[!INFO]
 >
 >- すべての bootstrap パラメーターがドキュメントに記載されているわけではありません。
->- 以下を使用してアプリケーションモード（開発者、デフォルト、実稼動）を設定しました。 [`magento deploy:mode:set {mode}`](../cli/set-mode.md) コマンド。
+>- ここで、[`magento deploy:mode:set {mode}`](../cli/set-mode.md) コマンドを使用してアプリケーションモード（開発者、デフォルト、実稼動）を設定します。
 
 ## 環境変数を使用したパラメーターの設定
 
@@ -33,13 +33,13 @@ ht-degree: 1%
 
 Bootstrap 変数をシステム全体の環境変数として指定すると、すべてのプロセスでその変数を使用できます。
 
-例えば、 `MAGE_PROFILER` モードを次のように指定するためのシステム環境変数。
+例えば、`MAGE_PROFILER` システム環境変数を使用して、次のようにモードを指定できます。
 
 ```terminal
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
-シェル固有のコマンドを使用して変数を設定します。 シェルは構文が異なるので、のようなリファレンスを参照してください。 [unix.stackexchange.com][unix-stackx].
+シェル固有のコマンドを使用して変数を設定します。 シェルは構文が異なるため、[unix.stackexchange.com][unix-stackx] などのリファレンスを参照してください。
 
 CentOS 用の bash シェルの例：
 
@@ -49,7 +49,7 @@ export MAGE_PROFILER=firebug
 
 >[!INFO]
 >
->If a `PHP Fatal error` プロファイラの値を設定した後、ブラウザに表示され、Web サーバーを再起動します。 その理由は、バイトコードと PHP クラスパスをキャッシュする PHP バイトコードのキャッシュに関連している可能性があります。
+>プロファイラの値を設定した後にブラウザに `PHP Fatal error` が表示された場合は、Web サーバを再起動します。 その理由は、バイトコードと PHP クラスパスをキャッシュする PHP バイトコードのキャッシュに関連している可能性があります。
 
 ## Apache または Nginx のパラメーターを設定する
 
@@ -57,13 +57,13 @@ export MAGE_PROFILER=firebug
 
 ### Nginx 設定
 
-を参照してください。 [Nginx サンプル構成] 日付： _GitHub_.
+詳しくは、[GitHub _の_ Nginx サンプル設定 ] を参照してください。
 
 ### Apache .htaccess 設定
 
-アプリケーションモードを設定する 1 つの方法は、次を編集することです。 `.htaccess`. これにより、Apache 設定を変更する必要がなくなります。
+アプリケーションモードを設定する 1 つの方法は、`.htaccess` を編集することです。 これにより、Apache 設定を変更する必要がなくなります。
 
-次を変更できます `.htaccess` Commerce アプリケーションへのエントリポイントに応じて、次のいずれかの場所で行います。
+Commerce アプリケーションへのエントリポイントに応じて、次のいずれかの場所で `.htaccess` を変更できます。
 
 - `<magento_root>/.htaccess`
 - `<magento_root>/pub/.htaccess`
@@ -72,13 +72,13 @@ export MAGE_PROFILER=firebug
 
 1. 上記のファイルをテキストエディターで開き、目的の設定を追加またはコメント解除します。
 
-   例えば、を指定します。 [モード](application-modes.md)で、以下のコメントを解除します。
+   例えば、[mode](application-modes.md) を指定するには、次のコメントを解除します。
 
    ```conf
    #   SetEnv MAGE_PROFILER firebug
    ```
 
-1. 次の値を設定 `MAGE_PROFILER` を次のいずれかに変更します。
+1. `MAGE_PROFILER` の値を次のいずれかに設定します。
 
    ```terminal
    firebug
@@ -86,28 +86,28 @@ export MAGE_PROFILER=firebug
    <custom value>
    ```
 
-1. 変更をに保存します。 `.htaccess`ただし、変更を有効にするために Apache を再起動する必要はありません。
+1. 変更内容を `.htaccess` に保存します。変更内容を有効にするために Apache を再起動する必要はありません。
 
 ### Apache 設定
 
-Apache web サーバーは、を使用したアプリケーションモードの設定をサポートしています。 `mod_env` ディレクティブ。
+Apache web サーバーは、`mod_env` ディレクティブを使用してアプリケーションモードを設定できます。
 
-Apache `mod_env` ディレクティブが次の点で若干異なる： [Apache バージョン 2.2] および [Apache バージョン 2.4].
+Apache `mod_env` ディレクティブは [Apache バージョン 2.2] と [Apache バージョン 2.4] ではやや異なります。
 
-Apache 仮想ホストでアプリケーションモードを設定する手順を以下に示します。 これは唯一の使い方ではありません `mod_env` ディレクティブ。詳しくは Apache ドキュメントを参照してください。
+Apache 仮想ホストでアプリケーションモードを設定する手順を以下に示します。 `mod_env` ディレクティブを使用する方法は、これだけではありません。詳しくは、Apache ドキュメントを参照してください。
 
 >[!TIP]
 >
->次の節では、仮想ホストが既に設定されていることを前提としています。 まだインストールされていない場合は、次のようなリソースを参照してください [この DigitalOcean チュートリアル](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts).
+>次の節では、仮想ホストが既に設定されていることを前提としています。 まだ公開されていない場合は、[ この DigitalOcean チュートリアル ](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts) などのリソースを参照してください。
 
-**Ubuntu で Apache のブートストラップ変数を指定するには**:
+**Ubuntu 上の Apache のブートストラップ変数を指定するには**:
 
-1. を使用した As a ユーザー `root` 仮想ホスト構成ファイルをテキスト・エディタで開きます。
+1. `root` 権限を持つユーザーとして、仮想ホスト設定ファイルをテキストエディターで開きます。
 
-   例えば、仮想ホストの名前がの場合 `my.magento`,
+   例えば、仮想ホストの名前が `my.magento` の場合、
 
    - Apache 2.4: `vim /etc/apache2/sites-available/my.magento.conf`
-   - Apache 2.2: `vim /etc/apache2/sites-available/my.magento`
+   - Apache 2.2:`vim /etc/apache2/sites-available/my.magento`
 
 1. 仮想ホスト設定の任意の場所で、次の行を追加します。
 
@@ -141,11 +141,11 @@ Apache 仮想ホストでアプリケーションモードを設定する手順�
 
 >[!TIP]
 >
->この節では、仮想ホストが既に設定されていることを前提としています。 まだインストールされていない場合は、次のようなリソースを参照してください [この DigitalOcean チュートリアル](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6).
+>この節では、仮想ホストが既に設定されていることを前提としています。 まだ公開されていない場合は、[ この DigitalOcean チュートリアル ](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6) などのリソースを参照してください。
 
 **CentOS 上の Apache のブートストラップ変数を指定するには**:
 
-1. を使用した As a ユーザー `root` 権限、開く `/etc/httpd/conf/httpd.conf` テキストエディター。
+1. `root` 権限を持つユーザーとして、`/etc/httpd/conf/httpd.conf` をテキストエディターで開きます。
 
 1. 仮想ホスト設定の任意の場所で、次の行を追加します。
 

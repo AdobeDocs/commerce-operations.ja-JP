@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Git ブランチのベストプラクティス
 
-ソースコードは、開発プロセスの間、複数の安定性フェーズを経ます。
+Source コードは、開発プロセスの間、次のような複数の安定フェーズを経ます。
 
 - 積極的な開発
 - 初期コード統合
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-[サポートされているすべてのバージョン](../../../release/versions.md) （件中）:
+[ サポートされているすべてのバージョン ](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerceオンプレミス
@@ -32,15 +32,15 @@ ht-degree: 0%
 
 各開発フェーズには、コードの変更を追跡し、デプロイメントプロセスを容易にする対応するブランチを Git に含める必要があります。
 
-- **タスク分岐** – 開発者が、機能やバグ修正などの特定のタスクを実装する際に、個々のコードの変更をコミットする場所。
-- **開発課** – 複数の開発者が、個々のタスクの分岐から単一の開発の分岐に変更をマージして、自動統合テストを実行できる場合。 このブランチは開発環境にデプロイされます。
+- **タスクブランチ** – 開発者が、機能やバグ修正などの特定のタスクを実装する際に、個々のコードの変更をコミットする場所です。
+- **開発ブランチ** – 複数の開発者が、個々のタスクブランチの変更を単一の開発ブランチにマージして、自動統合テストを行う場合です。 このブランチは開発環境にデプロイされます。
 - **QA ブランチ** – 開発が完了し、コードがすべての自動統合テストとコードレビューに合格した後、開発者が変更を結合する場所。 このブランチは、手動で QA テストを行うために QA 環境にデプロイされます。
-- **安定/UAT 分岐** – 手動の QA テストに合格した後にコードがマージされる場合。 このブランチは、ユーザー受け入れテスト用に UAT 環境にデプロイされます。
-- **実稼働/リリースブランチ**- UAT を通過した後にコードがマージされる場合。 このブランチは、リリースの実稼動環境にデプロイされます。
+- **安定/UAT ブランチ** – 手動の QA テストに合格した後にコードがマージされる場所。 このブランチは、ユーザー受け入れテスト用に UAT 環境にデプロイされます。
+- **実稼働/リリースブランチ** - UAT を通過した後にコードが結合される場所。 このブランチは、リリースの実稼動環境にデプロイされます。
 
 >[!TIP]
 >
->クラウドインフラストラクチャプロジェクト上のAdobe Commerceには、様々な環境に対応する特定のブランチが含まれます。 を参照してください。 [プロプロジェクトワークフロー](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html) および [スタータープロジェクトワークフロー](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html) が含まれる _クラウドガイド_.
+>クラウドインフラストラクチャプロジェクト上のAdobe Commerceには、様々な環境に対応する特定のブランチが含まれます。 [Cloud Guide _の [Pro プロジェクトワークフロー ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html) および_ スタータープロジェクトワークフロー ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html) を参照してください。
 
 ## ブランチ戦略
 
@@ -48,9 +48,9 @@ ht-degree: 0%
 
 詳しくは、次の外部リソースを参照してください。
 
-- [ワークフローのブランチ](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
-- [分散ワークフロー](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
-- [ソースコードブランチを管理するためのパターン](https://martinfowler.com/articles/branching-patterns.html)
-- [成功した Git ブランチモデル](https://nvie.com/posts/a-successful-git-branching-model/)
-- [GitHub フロー](https://docs.github.com/en/get-started/quickstart/github-flow)
-- [GitLab フロー](https://about.gitlab.com/blog/2023/07/27/gitlab-flow-duo/)
+- [ 分岐ワークフロー ](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
+- [ 分散ワークフロー ](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
+- [ ソースコードブランチを管理するためのパターン ](https://martinfowler.com/articles/branching-patterns.html)
+- [ 成功した Git ブランチモデル ](https://nvie.com/posts/a-successful-git-branching-model/)
+- [GitHub フロー ](https://docs.github.com/en/get-started/quickstart/github-flow)
+- [GitLab のフロー ](https://about.gitlab.com/blog/2023/07/27/gitlab-flow-duo/)

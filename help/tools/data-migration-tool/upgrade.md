@@ -1,6 +1,6 @@
 ---
-title: をアップグレード [!DNL Data Migration Tool]
-description: をアップグレードする方法を説明します [!DNL Data Migration Tool] Magento1 とMagento2 との間でデータを転送する。
+title: をアップグレードする  [!DNL Data Migration Tool]
+description: Magento 1 とMagento 2 の間でデータを転送する  [!DNL Data Migration Tool]  うにアップグレードする方法について説明します。
 exl-id: c0d56d1d-b15b-437f-be72-74282dbe85c1
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,27 +10,27 @@ ht-degree: 0%
 
 ---
 
-# をアップグレード [!DNL Data Migration Tool]
+# [!DNL Data Migration Tool] のアップグレード
 
-現在のMagento2 のインストール環境のバージョンおよび [!DNL Data Migration Tool] 完全に一致する場合は、ツールをアップグレードする必要があります。
+現在インストールされているMagento 2 と [!DNL Data Migration Tool] のバージョンを正確に一致させるには、ツールをアップグレードする必要があります。
 
 ## 前提条件
 
-アップグレードの前に [!DNL Data Migration Tool]は、以下を行う必要があります。
+[!DNL Data Migration Tool] をアップグレードする前に、次の操作を行う必要があります。
 
 * 最新バージョンを入手するには、Magentoソフトウェアをアップグレードしてください
 
-* をバックアップ `vendor/magento/data-migration-tool` directory
+* `vendor/magento/data-migration-tool` ディレクトリのバックアップ
 
-* 次のことを確認します [!DNL Data Migration Tool] version はMagentoアプリケーションのバージョンと一致します
+* [!DNL Data Migration Tool] のバージョンがMagentoアプリケーションのバージョンと一致していることを確認します
 
 ### Magentoソフトウェアのアップグレード
 
-まだ行っていない場合は、 [Magentoソフトウェアのアップグレード](../../upgrade/overview.md).
+まだ行っていない場合は、[Magentoソフトウェアをアップグレード ](../../upgrade/overview.md) します。
 
-### をバックアップ `vendor/magento/data-migration-tool` directory
+### `vendor/magento/data-migration-tool` ディレクトリのバックアップ
 
-アップグレードの前に [!DNL Data Migration Tool]、少なくとも `vendor/magento/data-migration-tool` ディレクトリ。 アップグレード中に、削除して更新されたコードに置き換えることができます。
+[!DNL Data Migration Tool] をアップグレードする前に、少なくとも `vendor/magento/data-migration-tool` ディレクトリをバックアップしてください。 アップグレード中に、削除して更新されたコードに置き換えることができます。
 
 次のコマンドを使用して、Magentoコードベース全体とデータベース全体をバックアップすることもできます。
 
@@ -40,24 +40,24 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 >[!WARNING]
 >
->この `vendor/magento/data-migration-tool` ディレクトリには、カスタムコードが含まれています。 バックアップしないと、アップグレード中にカスタマイズが失われる可能性があります。
+>`vendor/magento/data-migration-tool` ディレクトリには、カスタムコードが含まれています。 バックアップしないと、アップグレード中にカスタマイズが失われる可能性があります。
 
 
 ### バージョンが一致することの確認
 
-のバージョン [!DNL Data Migration Tool] とMagentoソフトウェアは完全に一致する必要があります。 例えば、Magento 2.1.2 にはバージョン 2.1.2 の [!DNL Data Migration Tool].
+[!DNL Data Migration Tool] とMagentoソフトウェアのバージョンは完全に一致する必要があります。 例えば、Magento 2.1.2 には [!DNL Data Migration Tool] のバージョン 2.1.2 が必要です。
 
-を参照してください。 [インストール [!DNL Data Migration Tool]](install.md) 次の方法を理解しておくトピックです。
+[ インストール  [!DNL Data Migration Tool]](install.md) のトピックを参照して、次の方法を理解してください。
 
-* [チェック](install.md#check-your-version) お使いのMagento 2 バージョン
+* [ 確認 ](install.md#check-your-version)Magento 2 のバージョン
 
-* [検索](install.md#find-released-versions-of-data-migration-tool) のリリース版 [!DNL Data Migration Tool]
+* [!DNL Data Migration Tool] のリリース済みバージョンを [ 検索 ](install.md#find-released-versions-of-data-migration-tool) します
 
-* [チェック](install.md#check-version-of-installed-data-migration-tool) この [!DNL Data Migration Tool] version
+* [ チェック ](install.md#check-version-of-installed-data-migration-tool)[!DNL Data Migration Tool] バージョン
 
-## をアップグレード [!DNL Data Migration Tool]
+## [!DNL Data Migration Tool] のアップグレード
 
-1. アプリケーションサーバーにとしてログインするか、に切り替えます。 [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
+1. アプリケーションサーバーにとしてログインするか、（ファイルシステムの所有者 [ に切り替え ](../../installation/prerequisites/file-system/overview.md) す。
 1. アプリケーションのルートディレクトリに移動します。
 1. 次のコマンドを入力します。
 
@@ -65,7 +65,7 @@ php <magento_root>/bin/magento setup:backup --code --db
    composer require magento/data-migration-tool:<version>
    ```
 
-   ここで、 `<version>` Magento 2 コードベースのバージョンと一致する必要があります。
+   `<version>` は、Magento 2 コードベースのバージョンと一致する必要があります。
 
    例えば、バージョン 2.1.2 の場合は、次のように入力します。
 

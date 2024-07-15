@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # デプロイメントフロー
 
-この [!DNL Commerce] 実稼動デプロイメントフローは、ストアが最大パフォーマンスに到達するのに役立ちます。
+[!DNL Commerce] 実稼動デプロイメントフローは、ストアが最大パフォーマンスに到達するのに役立ちます。
 
 ## 依存関係のインストール
 
-この `composer.json` および `composer.lock` ファイル管理 [!DNL Commerce] 依存関係を作成し、各パッケージに適したバージョンをインストールする。 前に依存関係をインストールしてください [依存関係挿入命令の前処理](#preprocess-dependency-injection-instructions) を更新する場合 [オートローダー](#update-the-autoloader).
+`composer.json` ファイルと `composer.lock` ファイルは、[!DNL Commerce] の依存関係を管理し、各パッケージの適切なバージョンをインストールします。 [autoloader](#update-the-autoloader) を更新する場合は、[ 依存関係の挿入手順を前処理 ](#preprocess-dependency-injection-instructions) の前に依存関係をインストールする必要があります。
 
-をインストールするには [!DNL Commerce] 依存関係：
+[!DNL Commerce] 依存関係をインストールするには：
 
 ```bash
 composer install --no-dev
@@ -41,13 +41,13 @@ bin/magento setup:di:compile
 
 ## オートローダーの更新
 
-コンパイルが完了したら、次のことを確認します [APCu は有効です](../performance/software.md#php-settings) オートローダーを更新します。
+コンパイルが完了したら、[APCu が有効になっていることを確認し ](../performance/software.md#php-settings) オートローダーを更新します。
 
 オートローダーを更新するには：
 
 >[!INFO]
 >
->この `-o` オプションは PSR-0/4 自動読み込みをクラスマップに変換して、より高速なオートローダーを実現します。 この `--apcu` オプションは、見つかった/見つからなかったクラスをキャッシュするために APCu を使用します。
+>`-o` オプションは、PSR-0/4 のオートロードをクラスマップに変換して、より高速なオートローダーを取得します。 `--apcu` オプションは、見つかった/見つからなかったクラスをキャッシュするために APCu を使用します。
 
 ```bash
 composer dump-autoload -o --apcu
@@ -73,7 +73,7 @@ bin/magento setup:static-content:deploy
 
 ## 静的コンテンツのデプロイ
 
-静的コンテンツのデプロイが原因 [!DNL Commerce] 次の操作を実行します。
+静的なコンテンツをデプロイすると、[!DNL Commerce] は次のアクションを実行します。
 
 * すべての静的リソースの分析
 * コンテンツの結合、最小化およびバンドルの実行
@@ -81,9 +81,9 @@ bin/magento setup:static-content:deploy
 * テーマのフォールバックの分析
 * さらに使用するために、処理および具体化されたすべてのコンテンツを特定のフォルダーに保存します
 
-静的コンテンツがデプロイされていない場合は、 [!DNL Commerce] リストされているすべての操作をその場で実行し、応答時間が大幅に増加します。
+静的コンテンツがデプロイされていない場合、[!DNL Commerce] はリストされているすべての操作をその場で実行するので、応答時間が大幅に長くなります。
 
-様々なオプションを使用して、ストアのサイズとフルフィルメントのニーズに基づいてデプロイメント操作をカスタマイズできます。 最も一般的なのは、コンパクトなデプロイ戦略です。 参照： [静的ファイルのデプロイメント戦略](../configuration/cli/static-view-file-strategy.md)
+様々なオプションを使用して、ストアのサイズとフルフィルメントのニーズに基づいてデプロイメント操作をカスタマイズできます。 最も一般的なのは、コンパクトなデプロイ戦略です。 [ 静的ファイルのデプロイメント戦略 ](../configuration/cli/static-view-file-strategy.md) を参照してください。
 
 静的コンテンツをデプロイするには：
 
@@ -97,9 +97,9 @@ bin/magento setup:static-content:deploy
 
 >[!INFO]
 >
->モードを実稼動環境に設定すると、自動的に実行されます `setup:di:compile` および `setup:static-content:deploy`.
+>モードを実稼動環境に設定すると、`setup:di:compile` と `setup:static-content:deploy` が自動的に実行されます。
 
-最後に、ストアを実稼動モードに設定する必要があります。 実稼動モードは、ストアのパフォーマンスを最大限に高めるために特別に最適化されています。 また、開発者固有の機能がすべて非アクティブになります。 これは、 `.htaccess` または `nginx.conf` ファイル：
+最後に、ストアを実稼動モードに設定する必要があります。 実稼動モードは、ストアのパフォーマンスを最大限に高めるために特別に最適化されています。 また、開発者固有の機能がすべて非アクティブになります。 これは、`.htaccess` または `nginx.conf` ファイルで行うことができます。
 
 `SetEnv MAGE_MODE production`
 

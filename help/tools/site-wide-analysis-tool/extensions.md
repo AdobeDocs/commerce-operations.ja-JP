@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Extensions]'
-description: について説明します [!DNL Extensions] タブ [!DNL Site-Wide Analysis Tool]使用するタイミング、メリットおよびベストプラクティスです。
+description: のタブ、使用するタイミング、メリット  [!DNL Site-Wide Analysis Tool] ベストプラクティスについて説明します  [!DNL Extensions]
 exl-id: e0ddc158-b268-44cc-8998-6b853d92b835
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -11,24 +11,24 @@ ht-degree: 0%
 
 # [!DNL Extensions]
 
-An [!DNL extension] は、コア Adobe Commerce製品に新しい機能を追加するカスタムモジュール、言語パック、またはカスタムモジュールと言語パックの組み合わせです。 [Commerce Marketplace](https://marketplace.magento.com/extensions.html) は、次の選択肢を提供します [!DNL extensions] それらは無料で利用可能であり、それらは販売されています。 次のリストが表示されます [!DNL extensions] 以下のAdobe Commerce インスタンスにインストールされている [!DNL Site-Wide Analysis Tool].
+[!DNL extension] は、カスタムモジュール、言語パック、またはカスタムモジュールと言語パックの組み合わせで、Adobe Commerceのコア製品に新しい機能を追加します。 [Commerce Marketplace](https://marketplace.magento.com/extensions.html) には、無料で利用可能な [!DNL extensions] と市販のアプリが用意されています。 Adobe Commerce インスタンスにインストールされている [!DNL extensions] のリストは、[!DNL Site-Wide Analysis Tool] で確認できます。
 
 ## 使用するタイミング
 
-この [!DNL Extensions] タブ [!DNL Site-Wide Analysis Tool] に関する情報を提供します [!DNL extensions] Adobe Commerce インスタンスにインストールされている このタブを使用して、 [!DNL extensions] とそのバージョン、および説明、機能、用途などのその他の詳細情報を使用していること。
+[!DNL Site-Wide Analysis Tool] の「[!DNL Extensions]」タブには、Adobe Commerce インスタンスにインストールされている [!DNL extensions] に関する情報が表示されます。 このタブを使用すると、使用している [!DNL extensions] の一覧、そのバージョン、および説明、機能、使用方法などの詳細情報を確認できます。
 
 ## 利点
 
-* すべてを簡単に概観できるため、時間を節約 [!DNL extensions] Adobe Commerce インスタンスにインストールされている。
+* Adobe Commerce インスタンスにインストールされているすべての [!DNL extensions] ータの概要をすばやく確認できるので、時間を節約できます。
 
-* インストールされているのバージョンに関する情報の取得 [!DNL extensions] を最新のバージョンに更新してください。
+* インストールされている [!DNL extensions] のバージョンに関する情報を取得し、最新バージョンに更新します。
 
 ## ベストプラクティス
 
-* サードパーティを維持 [!DNL extensions] 最新バージョンへの更新。
+* サードパーティの [!DNL extensions] を最新のバージョンに保ちます。
 
-* 必ずを実行してください [!DNL extensions] 「」を選択すると、お使いのAdobe Commerce インスタンスと互換性が生じます。
+* 選択した [!DNL extensions] に、お使いのAdobe Commerce インスタンスとの互換性があることを確認してください。
 
-* サードパーティを維持できない場合 [!DNL extensions] 最新バージョンまで最新の状態を保つには、別のものを使用することを検討してください [!DNL extensions].
+* サードパーティの [!DNL extensions] を最新のバージョンに保つことができない場合は、別の [!DNL extensions] を使用することを検討してください。
 
-* 潜在的な問題を回避するには、サードパーティをダウンロードまたは購入します。 [!DNL extensions] 信頼できる情報源から、例えば [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+* 潜在的な問題を回避するには、[Commerce Marketplace](https://marketplace.magento.com/extensions.html) などの信頼できるソースからサードパーティ [!DNL extensions] をダウンロードまたは購入します。

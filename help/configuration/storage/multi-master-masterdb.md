@@ -18,17 +18,17 @@ ht-degree: 1%
 
 このトピックでは、次の方法で分割データベース・ソリューションを開始する方法について説明します。
 
-1. （という名前の） 1 つのマスターデータベースを持つAdobe Commerceのインストール `magento`）
-1. チェックアウトと OMS 用の 2 つの追加マスターデータベースの作成（という名前） `magento_quote` および `magento_sales`）
+1. 1 つのマスターデータベース（`magento` という名前）を使用したAdobe Commerceのインストール
+1. チェックアウトと OMS 用の 2 つの追加のマスターデータベースの作成（`magento_quote` と `magento_sales` という名前）
 1. チェックアウトおよび販売データベースを使用するためのAdobe Commerceの設定
 
 >[!INFO]
 >
->このガイドでは、3 つのデータベースがすべてCommerce アプリケーションと同じホスト上にあり、名前が付けられていることを前提としています `magento`, `magento_quote`、および `magento_sales`. ただし、データベースの場所とデータベースの名前はユーザーが選択できます。 私たちの例が指示に従いやすくなることを願っています。
+>このガイドでは、3 つのデータベースがすべてCommerce アプリケーションと同じホスト上にあり、`magento`、`magento_quote` および `magento_sales` という名前であることを前提としています。 ただし、データベースの場所とデータベースの名前はユーザーが選択できます。 私たちの例が指示に従いやすくなることを願っています。
 
 ## Adobe Commerce ソフトウェアのインストール
 
-分割データベースは、Adobe Commerce ソフトウェアのインストール後、いつでも有効にすることができます。つまり、既にチェックアウトと注文のデータがあるAdobe Commerce システムに分割データベースを追加できます。 Adobe Commerceの README の手順を参照するか、 [インストールガイド](../../installation/overview.md) 単一のマスターデータベースを用いてAdobe Commerceソフトウェアをインストールする。
+分割データベースは、Adobe Commerce ソフトウェアのインストール後、いつでも有効にすることができます。つまり、既にチェックアウトと注文のデータがあるAdobe Commerce システムに分割データベースを追加できます。 Adobe Commerceの README または [ インストールガイド ](../../installation/overview.md) の手順に従って、1 つのマスターデータベースを使用してAdobe Commerce ソフトウェアをインストールします。
 
 ## 追加のマスターデータベースを設定する
 
@@ -41,8 +41,8 @@ ht-degree: 1%
    mysql -u root -p
    ```
 
-1. MySQL を入力 `root` プロンプトが表示されたらユーザーのパスワードを入力します。
-1. 次のコマンドを表示されている順序で入力して、という名前のデータベースインスタンスを作成します。 `magento_quote` および `magento_sales` ユーザー名とパスワードが同じ場合：
+1. プロンプトが表示されたら、MySQL `root` ユーザーのパスワードを入力します。
+1. 次のコマンドを表示されている順序で入力して、同じユーザー名とパスワードを持つ `magento_quote` および `magento_sales` という名前のデータベース・インスタンスを作成します。
 
    ```shell
    create database magento_quote;
@@ -60,7 +60,7 @@ ht-degree: 1%
    GRANT ALL ON magento_sales.* TO magento_sales@localhost IDENTIFIED BY 'magento_sales';
    ```
 
-1. Enter `exit` をクリックして、コマンドプロンプトを終了します。
+1. コマンドプロンプトを終了するには、`exit` と入力します。
 
 1. データベースを 1 つずつ検証します。
 
@@ -92,7 +92,7 @@ ht-degree: 1%
 
 ### 最初の手順
 
-参照： [コマンドの実行](../cli/config-cli.md#running-commands) にログインし、CLI コマンドを実行します。
+CLI コマンドにログインして実行するには、[ コマンドの実行 ](../cli/config-cli.md#running-commands) を参照してください。
 
 ### チェックアウトデータベースの設定
 

@@ -1,6 +1,6 @@
 ---
 title: 移行の概要
-description: を使用して、Magento 1 からMagento 2 へのデータ移行を開始する方法を説明します [!DNL Data Migration Tool].
+description: ' [!DNL Data Migration Tool] を使用して、Magento 1 からMagento 2 へのデータの移行を開始する方法を説明します。'
 exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -16,21 +16,21 @@ ht-degree: 0%
 
 移行プロセス中は、移行を正しく実行するために次の一般的なルールに従います。
 
-1. **実行しない** 受注管理（出荷、請求書の作成およびクレジット・メモ）を除き、Magento1 管理者に変更を加えます。
-1. **実行しない** 任意のコードの変更
-1. **実行しない** Magento 2 管理およびストアフロントでの変更
+1. **注文の管理** 配送、請求書の作成、クレジット・メモ）を除き、Magento1 管理者に変更を加えないでください。
+1. コードを変更しない ****
+1. **しない**、Magento 2 管理およびストアフロントで変更を行います。
 
 >[!TIP]
 >
 >Magento 1 のストアフロントでのすべての操作が許可されます。
 
-## を実行 [!DNL Data Migration Tool]
+## [!DNL Data Migration Tool] を実行する
 
-ここでは、を実行する方法について説明します。 [!DNL Data Migration Tool] 設定、データまたは増分変更を移行します。
+このセクションでは、[!DNL Data Migration Tool] を実行して設定、データ、または増分変更を移行する方法を示します。
 
 ### 最初の手順
 
-1. ファイルシステムへの書き込み権限を持つユーザーとしてアプリケーションサーバーにログインするか、そのユーザーに切り替えます。 参照： [ファイルシステムの所有者に切り替える](../../../installation/prerequisites/file-system/overview.md).
+1. ファイルシステムへの書き込み権限を持つユーザーとしてアプリケーションサーバーにログインするか、そのユーザーに切り替えます。 [ ファイルシステム所有者への切り替え ](../../../installation/prerequisites/file-system/overview.md) を参照してください。
 
    bash シェルを使用する場合は、次の構文を使用してファイルシステムの所有者に切り替え、同時にコマンドを入力できます。
 
@@ -44,9 +44,9 @@ ht-degree: 0%
    sudo -u <file system owner>  <command>
    ```
 
-1. 任意のディレクトリからMagentoコマンドを実行するには、 `<magento_root>/bin` お使いのシステム `PATH`.
+1. 任意のディレクトリからMagentoコマンドを実行するには、`<magento_root>/bin` をシステム `PATH` ードに追加します。
 
-   シェルは構文が異なるので、のようなリファレンスを参照してください。 [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   シェルは構文が異なるため、[unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables) などのリファレンスを参照してください。
 
    CentOS 用の bash シェルの例：
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
    オプションで、次の方法でコマンドを実行できます。
 
-   - `cd <magento_root>/bin` そしてそれらを `./magento <command name>`
+   - `./magento <command name>` として `cd <magento_root>/bin` び出して実行
    - `<magento_root>/bin/magento <command name>`
    - `<magento_root>` は、web サーバーの docroot のサブディレクトリです。
 
@@ -70,19 +70,19 @@ bin/magento migrate:<mode> [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 ここで、
 
-- `<mode>` 次となる場合があります。 [`settings`](settings.md), [`data`](data.md)、または [`delta`](delta.md)
+- `<mode>` には、[`settings`](settings.md)、[`data`](data.md)、[`delta`](delta.md) があります。
 - `[-r|--reset]` は、最初から移行を開始するオプションの引数です。 この引数を使用して、移行をテストできます。
 - `[-a|--auto]` は、整合性チェックエラーが発生した場合に移行が停止するのを防ぐオプション引数です。
-- `{<path to config.xml>}` は、への絶対ファイルシステムパスです。 `config.xml`。この引数は必須です。
+- `{<path to config.xml>}` は `config.xml` への絶対ファイルシステムパスです。この引数は必須です。
 
 >[!NOTE]
 >
->ログはに書き込まれます `<magento_root>/var/` ディレクトリ。
+>ログは `<magento_root>/var/` ディレクトリに書き込まれます。
 
 
 ## 移行順序
 
-の作成時 [!DNL Data Migration Tool]では、次のデータ転送シーケンスを想定しました。
+[!DNL Data Migration Tool] を作成する際には、次のデータ転送シーケンスを想定していました。
 
 1. [設定](settings.md)
 1. [データ](data.md)

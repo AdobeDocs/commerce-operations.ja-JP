@@ -29,16 +29,16 @@ Commerce アプリケーションが既に実稼動環境にある場合や、�
 
 >[!WARNING]
 >
->カスタム・コードで sales および quote データベースのテーブルとの JOIN を使用する場合は、 _できません_ 分割データベースを使用します。 不明な場合は、カスタムコードまたは拡張機能の作成者に問い合わせて、そのコードで JOIN が使用されていないことを確認してください。
+>カスタム・コードで、sales および quote データベース内のテーブルに対する JOIN が使用されている場合は、分割データベースを使用 _できません_。 不明な場合は、カスタムコードまたは拡張機能の作成者に問い合わせて、そのコードで JOIN が使用されていないことを確認してください。
 
 このトピックでは、次の命名規則を使用します。
 
-- メインデータベース名はです。 `magento` およびそのユーザー名とパスワードは両方とも `magento`
-- 引用符データベース名は `magento_quote` およびそのユーザー名とパスワードは両方とも `magento_quote`
+- メインのデータベース名は `magento` で、ユーザー名とパスワードはどちらも `magento` です
+- 引用符データベース名は `magento_quote` で、ユーザー名とパスワードはどちらも `magento_quote` です
 
-  見積もりデータベースは、 _チェックアウト_ データベース。
+  見積もりデータベースは、_チェックアウト_ データベースとも呼ばれます。
 
-- 営業データベース名はです `magento_sales` およびそのユーザー名とパスワードは両方とも `magento_sales`
+- Sales データベース名は `magento_sales` で、ユーザー名とパスワードはどちらも `magento_sales` です
 
   販売データベースは、OMS データベースとも呼ばれます。
 
@@ -52,7 +52,7 @@ Adobeでは、処理中に問題が発生した場合に復元できるように
 
 **システムをバックアップするには**:
 
-1. Commerce サーバーにとしてログインするか、に切り替えます [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
+1. [ ファイルシステムのオーナー ](../../installation/prerequisites/file-system/overview.md) としてCommerce サーバーにログインするか、に切り替えます。
 1. 次のコマンドを入力します。
 
    ```bash
@@ -65,7 +65,7 @@ Adobeでは、処理中に問題が発生した場合に復元できるように
 
 この項では、販売テーブルと見積テーブルのデータベース・インスタンスを作成する方法について説明します。
 
-**販売および OMS 見積データベースを作成する手順は、次のとおりです**:
+**販売および OMS 見積データベースを作成する手順は、次のとおりです**。
 
 1. 任意のユーザーとしてデータベースサーバーにログインします。
 1. 次のコマンドを入力して、MySQL コマンドプロンプトを表示します。
@@ -74,8 +74,8 @@ Adobeでは、処理中に問題が発生した場合に復元できるように
    mysql -u root -p
    ```
 
-1. MySQL を入力 `root` プロンプトが表示されたらユーザーのパスワードを入力します。
-1. 次のコマンドを表示されている順序で入力して、という名前のデータベースインスタンスを作成します。 `magento_quote` および `magento_sales` ユーザー名とパスワードが同じ場合：
+1. プロンプトが表示されたら、MySQL `root` ユーザーのパスワードを入力します。
+1. 次のコマンドを表示されている順序で入力して、同じユーザー名とパスワードを持つ `magento_quote` および `magento_sales` という名前のデータベース・インスタンスを作成します。
 
    ```shell
    create database magento_quote;
@@ -87,7 +87,7 @@ Adobeでは、処理中に問題が発生した場合に復元できるように
    GRANT ALL ON magento_sales.* TO magento_sales@localhost IDENTIFIED BY 'magento_sales';
    ```
 
-1. Enter `exit` をクリックして、コマンドプロンプトを終了します。
+1. コマンドプロンプトを終了するには、`exit` と入力します。
 
 1. データベースを 1 つずつ検証します。
 
@@ -126,11 +126,11 @@ Sales データベースのテーブル名は次で始まります：
 - `salesrule_`
 - `sales_`
 - `magento_sales_`
-- この `magento_customercustomattributes_sales_flat_order` テーブルにも影響があります
+- `magento_customercustomattributes_sales_flat_order` テーブルも影響を受けます
 
 >[!INFO]
 >
->このセクションには、特定のデータベーステーブル名を持つスクリプトが含まれています。 カスタマイズを実行した場合、またはアクションを実行する前にテーブルの完全なリストを確認する場合は、を参照してください [参照スクリプト](#reference-scripts).
+>このセクションには、特定のデータベーステーブル名を持つスクリプトが含まれています。 カスタマイズを実行した場合、またはテーブルに対してアクションを実行する前にテーブルの完全なリストを確認する場合は、[ 参照スクリプト ](#reference-scripts) を参照してください。
 
 詳しくは、以下を参照してください。
 
@@ -139,13 +139,13 @@ Sales データベースのテーブル名は次で始まります：
 
 ### Sales データベースの SQL スクリプトの作成
 
-Commerce サーバーにログインしたユーザーがアクセスできる場所に、次の SQL スクリプトを作成します。 例えば、次のようにログインまたはコマンドを実行した場合 `root`で作成します。でスクリプトを作成できます `/root/sql-scripts` ディレクトリ。
+Commerce サーバーにログインしたユーザーがアクセスできる場所に、次の SQL スクリプトを作成します。 例えば、`root` としてログインまたはコマンドを実行した場合、`/root/sql-scripts` ディレクトリにスクリプトを作成できます。
 
 #### 外部キーの削除
 
 このスクリプトは、sales データベースから sales 以外のテーブルを参照する外部キーを削除します。
 
-次のスクリプトを作成し、のような名前を付けます。 `1_foreign-sales.sql`. 置換 `<your main DB name>` 使用するデータベースの名前。
+次のスクリプトを作成し、`1_foreign-sales.sql` のような名前を付けます。 `<your main DB name>` をデータベースの名前に置き換えます。
 
 ```sql
 use <your main DB name>;
@@ -200,13 +200,13 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
 
 上記のスクリプトを実行します。
 
-1. MySQL データベースにとしてログインします。 `root` または管理ユーザー：
+1. `root` または管理ユーザーとして MySQL データベースにログインします。
 
    ```bash
    mysql -u root -p
    ```
 
-1. 時刻 `mysql>` プロンプトが表示されたら、次のようにスクリプトを実行します。
+1. `mysql>` プロンプトで、次のようにスクリプトを実行します。
 
    ```shell
    source <path>/<script>.sql
@@ -218,20 +218,20 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
    source /root/sql-scripts/1_foreign-sales.sql
    ```
 
-1. スクリプトの実行後、と入力します `exit`.
+1. スクリプトの実行後、`exit` と入力します。
 
 ### 販売データのバックアップ
 
 この項では、メインのCommerceデータベースから sales テーブルをバックアップして、別の sales データベースにリストアできるようにする方法について説明します。
 
-現在ステータスが `mysql>` プロンプト，enter `exit` コマンド シェルに戻ります。
+現在 `mysql>` プロンプトが表示されている場合は、`exit` と入力してコマンド シェルに戻ります。
 
-次を実行します `mysqldump` コマンド シェルからコマンドを 1 つずつ実行します。 それぞれに、以下を置き換えます。
+コマンドシェルから次の `mysqldump` コマンドを 1 つずつ実行します。 それぞれに、以下を置き換えます。
 
-- `<your database root username>` とデータベースルートユーザーの名前
-- `<your database root user password>` （ユーザーのパスワードを使用）
-- `<your main Commerce DB name>` （Commerce データベースの名前を使用）
-- `<path>` 書き込み可能なファイルシステムパス
+- `<your database root username>` データベースのルートユーザーの名前
+- ユーザーのパスワードを `<your database root user password>` します
+- `<your main Commerce DB name>` にCommerce データベースの名前を指定します
+- 書き込み可能なファイルシステムのパスを使用した `<path>`
 
 #### スクリプト 1
 
@@ -263,7 +263,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> seque
 
 #### NDB 要件
 
-を使用する場合 [ネットワークデータベース（NDB）](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) クラスター：
+[NDB （ネットワーク・データベース）クラスタを使用している場合 ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) 次の手順に従います。
 
 1. ダンプファイル内のテーブルを InnoDb から NDB タイプに変換します。
 
@@ -295,13 +295,13 @@ mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattribu
 
 ここで、
 
-- `<your sales DB name>` と sales データベースの名前を指定します。
+- `<your sales DB name>` に sales データベースの名前を指定します。
 
-  このトピックでは、サンプル・データベース名はです。 `magento_sales`.
+  このトピックでは、サンプル・データベース名は `magento_sales` です。
 
-- `<root username>` （MySQL ルートユーザー名を使用）
-- `<root user password>` （ユーザーのパスワードを使用）
-- 前の手順で作成したバックアップ ファイルの場所を確認します（例： `/var/sales.sql`）
+- MySQL ルートのユーザー名を `<root username>` します
+- ユーザーのパスワードを `<root user password>` します
+- 前の手順で作成したバックアップ ファイルの場所を確認してください（例：`/var/sales.sql`）
 
 ## 見積もりデータベースの設定
 
@@ -309,15 +309,15 @@ mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattribu
 
 >[!INFO]
 >
->このセクションには、特定のデータベーステーブル名を持つスクリプトが含まれています。 カスタマイズを実行した場合、またはアクションを実行する前にテーブルの完全なリストを確認する場合は、を参照してください [参照スクリプト](#reference-scripts).
+>このセクションには、特定のデータベーステーブル名を持つスクリプトが含まれています。 カスタマイズを実行した場合、またはテーブルに対してアクションを実行する前にテーブルの完全なリストを確認する場合は、[ 参照スクリプト ](#reference-scripts) を参照してください。
 
-引用符データベース テーブル名の先頭にを付ける `quote`. この `magento_customercustomattributes_sales_flat_quote` および `magento_customercustomattributes_sales_flat_quote_address` テーブルにも影響します
+引用符データベース テーブル名は `quote` で始まります。 `magento_customercustomattributes_sales_flat_quote` テーブルと `magento_customercustomattributes_sales_flat_quote_address` テーブルも影響を受けます
 
 ### 見積もりテーブルからの外部キーの削除
 
-このスクリプトは、非引用符テーブルを参照する外部キーを引用符テーブルから削除します。 置換 `<your main Commerce DB name>` とCommerce データベースの名前を指定します。
+このスクリプトは、非引用符テーブルを参照する外部キーを引用符テーブルから削除します。 `<your main Commerce DB name>` をCommerce データベースの名前に置き換えます。
 
-次のスクリプトを作成し、のような名前を付けます。 `2_foreign-key-quote.sql`:
+次のスクリプトを作成し、`2_foreign-key-quote.sql` のような名前を付けます。
 
 ```sql
 use <your main DB name>;
@@ -334,7 +334,7 @@ ALTER TABLE quote_item DROP FOREIGN KEY QUOTE_ITEM_STORE_ID_STORE_STORE_ID;
    mysql -u root -p
    ```
 
-1. 時刻 `mysql >` プロンプトが表示されたら、次のようにスクリプトを実行します。
+1. `mysql >` プロンプトで、次のようにスクリプトを実行します。
    `source <path>/<script>.sql`
 
    以下に例を挙げます。
@@ -343,7 +343,7 @@ ALTER TABLE quote_item DROP FOREIGN KEY QUOTE_ITEM_STORE_ID_STORE_STORE_ID;
    source /root/sql-scripts/2_foreign-key-quote.sql
    ```
 
-1. スクリプトの実行後、次のように入力します `exit`.
+1. スクリプトが実行されたら、`exit` と入力します。
 
 ### 見積もりテーブルのバックアップ
 
@@ -357,7 +357,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> magen
 
 ### NDB 要件
 
-を使用する場合 [ネットワークデータベース（NDB）](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) クラスター：
+[NDB （ネットワーク・データベース）クラスタを使用している場合 ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) 次の手順に従います。
 
 1. ダンプファイル内のテーブルを InnoDb から NDB タイプに変換します。
 
@@ -375,9 +375,9 @@ mysql -u root -p magento_quote < /<path>/quote.sql
 
 ## データベースから売上テーブルと見積テーブルを削除します
 
-このスクリプトは、Commerce データベースのテーブルを sales および quote にします。 置換 `<your main DB name>` とCommerce データベースの名前を指定します。
+このスクリプトは、Commerce データベースのテーブルを sales および quote にします。 `<your main DB name>` をCommerce データベースの名前に置き換えます。
 
-次のスクリプトを作成し、のような名前を付けます。 `3_drop-tables.sql`:
+次のスクリプトを作成し、`3_drop-tables.sql` のような名前を付けます。
 
 ```sql
 use <your main DB name>;
@@ -457,7 +457,7 @@ SET foreign_key_checks = 1;
    mysql -u root -p
    ```
 
-1. 時刻 `mysql>` プロンプトが表示されたら、次のようにスクリプトを実行します。
+1. `mysql>` プロンプトで、次のようにスクリプトを実行します。
 
    ```shell
    source <path>/<script>.sql
@@ -469,26 +469,26 @@ SET foreign_key_checks = 1;
    source /root/sql-scripts/3_drop-tables.sql
    ```
 
-1. スクリプトの実行後、次のように入力します `exit`.
+1. スクリプトが実行されたら、`exit` と入力します。
 
 ## デプロイメント設定の更新
 
-データベースを手動で分割する最後の手順は、Commerceのデプロイメント設定に接続とリソースの情報を追加することです。 `env.php`.
+データベースを手動で分割する最後の手順は、Commerceの Deployment Configuration`env.php` に接続とリソースの情報を追加することです。
 
 デプロイメント設定を更新するには：
 
-1. Commerce サーバーにとしてログインするか、に切り替えます [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
+1. [ ファイルシステムのオーナー ](../../installation/prerequisites/file-system/overview.md) としてCommerce サーバーにログインするか、に切り替えます。
 1. デプロイメント設定をバックアップします。
 
    ```bash
    cp <magento_root>/app/etc/env.php <magento_root>/app/etc/env.php.orig
    ```
 
-1. 開く `<magento_root>/app/etc/env.php` テキストエディターで、以下の節で説明するガイドラインを使用して更新します。
+1. `<magento_root>/app/etc/env.php` をテキストエディターで開き、以下の節で説明するガイドラインを使用して更新します。
 
 ### データベース接続の更新
 
-で始まるブロックを見つけます `'default'` （以下 `'connection'`）に設定して、 `'checkout'` および `'sales'` セクション。 サンプル値をサイトに適した値に置き換えます。
+（`'connection'` の下の） `'default'` で始まるブロックを見つけて、`'checkout'` セクションと `'sales'` セクションを追加します。 サンプル値をサイトに適した値に置き換えます。
 
 ```php
  'default' =>
@@ -529,7 +529,7 @@ SET foreign_key_checks = 1;
 
 ### リソースの更新
 
-で始まるブロックを見つけます `'resource'` 追加： `'checkout'` および `'sales'` セクションについて次に示します。
+`'resource'` で始まるブロックを見つけて、次のように `'checkout'` および `'sales'` のセクションを追加します。
 
 ```php
 'resource' =>
@@ -555,14 +555,14 @@ SET foreign_key_checks = 1;
 これらのスクリプトを使用するには：
 
 1. このセクションの各スクリプトの内容を使用して SQL スクリプトを作成します。
-1. 各スクリプトで、 `<your main DB name>` とCommerce データベースの名前を指定します。
+1. 各スクリプトで、`<your main DB name>` をCommerce データベースの名前に置き換えます。
 
-   このトピックでは、サンプル・データベース名はです。 `magento`.
+   このトピックでは、サンプル・データベース名は `magento` です。
 
-1. から各スクリプトを実行します `mysql>` プロンプトの形式 `source <script name>`
+1. `mysql>` プロンプトから `source <script name>` のように各スクリプトを実行します。
 1. 出力を確認します。
-1. 各スクリプトの結果を、パイプ文字（`|`）に設定します。
-1. から各スクリプトを実行します `mysql>` プロンプトの形式 `source <script name>`.
+1. 各スクリプトの結果を別の SQL スクリプトにコピーし、パイプ文字（`|`）を削除します。
+1. `mysql>` プロンプトから `source <script name>` のように各スクリプトを実行します。
 
    この 2 番目のスクリプトを実行すると、メインのCommerce データベースでアクションが実行されます。
 
@@ -672,4 +672,4 @@ select 'SET foreign_key_checks = 1;';
 
 ### 直接見積もりテーブル
 
-で始まるすべてのテーブルをドロップ `quote_`.
+`quote_` で始まるすべてのテーブルをドロップします。

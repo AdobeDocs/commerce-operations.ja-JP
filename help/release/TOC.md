@@ -26,7 +26,7 @@ ht-degree: 3%
       - [2.4.2](release-notes/commerce/2-4-2.md)
       - [2.4.1](release-notes/commerce/2-4-1.md)
       - [2.4.0](release-notes/commerce/2-4-0.md)
-   - Magento Open Source {#magento-open-source}
+   - Magento Open Source{#magento-open-source}
       - [概要](release-notes/open-source/overview.md)
       - [2.4.7](release-notes/open-source/2-4-7.md)
       - [2.4.6](release-notes/open-source/2-4-6.md)
@@ -45,8 +45,8 @@ ht-degree: 3%
       - [2.4.3](release-notes/security/2-4-3-patches.md)
       - [2.4.2](release-notes/security/2-4-2-patches.md)
 - [製品の可用性](product-availability.md)
-- [ベータ版リリース](beta.md)
-- 計画とポリシー {#planning}
+- [Beta リリース](beta.md)
+- 企画・政策 {#planning}
    - [ライフサイクルポリシー](lifecycle-policy.md)
    - [バージョン管理ポリシー](versioning-policy.md)
    - [リリーススケジュール](schedule.md)
@@ -55,4 +55,4 @@ ht-degree: 3%
 - パッケージ {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

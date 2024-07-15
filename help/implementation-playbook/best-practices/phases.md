@@ -6,7 +6,7 @@ feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '157'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe Commerce プロジェクトを実装する方法は多数あります。 �
     <img alt="計画" src="../../assets/icons/enterprise.svg" width="80" height="80"/>
     </a>
     <div>
-    <a href="planning/overview.md"><strong>計画</strong></a>
+    <a href="planning/overview.md"><strong> 計画 </strong></a>
     </div>
     要件収集、アーキテクチャ設計、カタログ設計、プロジェクト範囲、アカウントのプロビジョニング、ユーザーアクセス、拡張機能の購入
     <br>
@@ -33,7 +33,7 @@ Adobe Commerce プロジェクトを実装する方法は多数あります。 �
       <img alt="開発" src="../../assets/icons/page-rule.svg" width="80" height="80">
     </a>
     <div>
-    <a href="development/overview.md"><strong>開発</strong></a>
+    <a href="development/overview.md"><strong> 開発 </strong></a>
     </div>
     ローカル環境とステージング環境の設定、トラブルシューティング、コード管理、スプリント計画、スプリントレビュー、受け入れテスト、顧客の承認
     <br>
@@ -43,7 +43,7 @@ Adobe Commerce プロジェクトを実装する方法は多数あります。 �
       <img alt="ローンチ" src="../../assets/icons/launch.svg" width="80" height="80">
     </a>
     <div>
-    <a href="launch/overview.md"><strong>ローンチ</strong></a>
+    <a href="launch/overview.md"><strong> 起動 </strong></a>
     </div>
     ローンチ前およびローンチ後の最終チェックリストのレビュー、実稼動のデプロイメント、セキュリティ設定、サービスの検証、パフォーマンスの監視  
     <br>
@@ -53,7 +53,7 @@ Adobe Commerce プロジェクトを実装する方法は多数あります。 �
       <img alt="保守" src="../../assets/icons/gauge.svg" width="80" height="80">
     </a>
     <div>
-    <a href="maintenance/overview.md"><strong>保守</strong></a>
+    <a href="maintenance/overview.md"><strong> メンテナンス </strong></a>
     </div>
     サイト監視、カタログ管理、インデックス作成、構成、機能強化、バグ修正、Managed Services、アップグレード   
     <br>

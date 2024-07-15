@@ -15,17 +15,17 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Adobe Commerce サポートユーティリティ（別名） [データ コレクタ](https://docs.magento.com/user-guide/system/support-data-collector.html)- ユーザーが、サポートチームが使用できる、システムに関するトラブルシューティング情報を収集できるようにします。
+Adobe Commerce サポートユーティリティ（[ データコレクター ](https://docs.magento.com/user-guide/system/support-data-collector.html) とも呼ばれます）を使用すると、アドビのサポートチームが使用できる、お使いのシステムに関するトラブルシューティング情報を収集できます。
 
-Adobe Commerceでは、次のバックアップを使用します _ダンプ_&#x200B;コードへのアクセスが必要な問題を分析します。 一般的なシナリオを次に示します。
+Adobe Commerceは、これらのバックアップを使用し（「_ダンプ_ とも呼ばれます）、コードへのアクセスが必要な問題を分析します。 一般的なシナリオを次に示します。
 
 1. Commerce ストアに問題があり、Adobe Commerce サポートにお問い合わせください。
 1. サポートは、問題を再現するためにコードまたはデータベースを確認する必要があると判断します。
-1. コードをにバックアップします `.tar.gz` ファイル。
+1. コードを `.tar.gz` ファイルにバックアップします。
 
    このバックアップは、プロセスを高速化し、ファイルのサイズを大幅に小さくするために、メディアファイルを除外します（_E）。
 
-1. データベースをにバックアップしました `.tar.gz` ファイル。
+1. データベースを `.tar.gz` ファイルにバックアップします。
 
    デフォルトでは、バックアップの実行時に機密データがハッシュ化されます。
 
@@ -36,7 +36,7 @@ Adobe Commerceでは、次のバックアップを使用します _ダンプ_&#x
 
 ## コードバックアップの作成
 
-このコマンドは、コードをバックアップして次の形式で圧縮します `tar.gz` 形式。
+このコマンドは、コードをバックアップし、`tar.gz` 形式で圧縮します。
 
 {{tip-backup-command}}
 
@@ -50,9 +50,9 @@ bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--
 
 - **`--name`** ダンプファイル名を指定します（オプション）。 このパラメーターを省略した場合、ダンプファイルには時刻と日付のスタンプが付けられます。
 - **`-o|--output=<path>`** は、バックアップを保存するファイルシステムの絶対パスです（必須）。
-- **`-l|--logs`** ログファイルを含める（オプション）。
+- **`-l|--logs`** にはログファイルが含まれます（オプション）。
 
-例えば、という名前のコードバックアップを作成できます。 `/var/www/html/magento2/var/log/mycodebackup.tar.gz`:
+例えば、`/var/www/html/magento2/var/log/mycodebackup.tar.gz` という名前のコードバックアップを作成するには、次のように指定します。
 
 ```bash
 bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/var/log
@@ -62,7 +62,7 @@ bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/va
 
 ## データベースバックアップの作成
 
-このコマンドは、Commerce データベースをバックアップして圧縮します。 `tar.gz` 形式。
+このコマンドは、Commerce データベースをバックアップし、`tar.gz` フォーマットで圧縮します。
 
 {{tip-backup-command}}
 
@@ -76,8 +76,8 @@ bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [
 
 - **`--name`** ダンプファイル名を指定します（オプション）。 このパラメーターを省略した場合、ダンプファイルには時刻と日付のスタンプが付けられます。
 - **`-o|--output=<path>` は、バックアップを保存するファイルシステムの絶対パスです（必須）。
-- **`-l|--logs`** ログファイルを含める（オプション）。
-- **`-i|--ignore-sanitize`** は、データが保持されることを意味します。バックアップの作成時に、データベースに保存されている機密データをハッシュ化するフラグを省略します（オプション）。
+- **`-l|--logs`** にはログファイルが含まれます（オプション）。
+- **`-i|--ignore-sanitize`** れは、データが保持されることを意味します。バックアップの作成時に、データベースに保存されている機密データをハッシュ化するフラグを省略します（オプション）。
 
 機密データには、次のデータベーステーブルからの顧客情報が含まれます。
 
@@ -112,10 +112,10 @@ Utility lsof not found
 
    >[!INFO]
    >
-   >コマンドは正しく実行されます _のみ_ インストールディレクトリから。
+   >コマンドは、インストールディレクトリから正しく _のみ_ 実行されます。
 
-1. `bin/magento support:utility:paths` を作成 `<magento_root>/var/support/Paths.php`：ユーティリティで使用されるすべてのアプリケーションへのパスが一覧表示されます。
-1. `bin/magento support:utility:check` ファイル・システムのパスが表示されます。
+1. `bin/magento support:utility:paths` は、ユーティリティが使用するすべてのアプリケーションへのパスをリストする `<magento_root>/var/support/Paths.php` を作成します。
+1. ファイルシステムのパスが `bin/magento support:utility:check` に表示されます。
 
 次に例を示します。
 
@@ -131,4 +131,4 @@ Utility lsof not found
    mysql => /usr/bin/mysql
 ```
 
-ツールの実行に関する問題を解決するには、これらのアプリケーションがインストールされ、web サーバーユーザーにあることを確認します。 `$PATH` 環境変数。
+ツールの実行に関する問題を解決するには、これらのアプリケーションがインストールされ、web サーバーユーザーの `$PATH` 環境変数に設定されていることを確認します。

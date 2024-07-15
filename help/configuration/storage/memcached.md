@@ -14,13 +14,13 @@ ht-degree: 0%
 
 Memcached は、汎用の分散メモリキャッシュシステムです。 多くの場合、外部データソース（データベースや API など）の読み取り回数を減らすために、データやオブジェクトを RAM にキャッシュして、動的なデータベース駆動 web サイトを高速化するために使用されます。
 
-Memcached は、複数のマシンに分散できる大きなハッシュテーブルを提供します。 テーブルがいっぱいになると、後続の挿入により、古いデータが LRU （Least Recently Used）の順序でパージされます。 このハッシュテーブルのサイズは、多くの場合、非常に大きくなります。 （出典： [memcached.org](https://www.memcached.org/)）
+Memcached は、複数のマシンに分散できる大きなハッシュテーブルを提供します。 テーブルがいっぱいになると、後続の挿入により、古いデータが LRU （Least Recently Used）の順序でパージされます。 このハッシュテーブルのサイズは、多くの場合、非常に大きくなります。 （Source: [memcached.org](https://www.memcached.org/)）
 
-Commerceでは、セッションストレージには memcached を使用しますが、ページキャッシュには使用しません。 ページキャッシュの場合は、次をお勧めします [Redis](../cache/redis-pg-cache.md) または [ワニス](../cache/config-varnish.md).
+Commerceでは、セッションストレージには memcached を使用しますが、ページキャッシュには使用しません。 ページキャッシュの場合は、[Redis](../cache/redis-pg-cache.md) または [Varnish](../cache/config-varnish.md) をお勧めします。
 
 **memcached を使用するようにCommerceを設定するには**:
 
-1. 開く `<your install dir>/app/etc/env.php` テキストエディター。
+1. `<your install dir>/app/etc/env.php` をテキストエディターで開きます。
 1. 次の場所を探します。
 
    ```php
@@ -40,7 +40,7 @@ Commerceでは、セッションストレージには memcached を使用しま�
    ),
    ```
 
-   memcached には、このガイドの範囲外のオプションの起動パラメーターがあります。 これらについて詳しくは、以下を参照してください [memcached](https://www.php.net/manual/en/memcached.sessions.php) ドキュメント、ソースコードおよび changelogs
+   memcached には、このガイドの範囲外のオプションの起動パラメーターがあります。 詳細については、[memcached](https://www.php.net/manual/en/memcached.sessions.php) のドキュメント、ソースコード、changelogs を参照してください。
 
 1. 次の節に進みます。
 
@@ -58,7 +58,7 @@ Commerceでは、セッションストレージには memcached を使用しま�
 
    エラーが表示されない場合は、ここで完了です。 memcached は動作しています。 オプションで、次の手順で説明する memcached ストレージを参照できます。
 
-   エラー（HTTP 500 （内部サーバーエラー）など）が表示された場合は、開発者モードを有効にして問題を診断します。 memcached が動作していること、適切に設定されていること `env.php` 構文エラーはありません。
+   エラー（HTTP 500 （内部サーバーエラー）など）が表示された場合は、開発者モードを有効にして問題を診断します。 memcached が実行中で、適切に設定されており、構文エラーが `env.php` いことを確認します。
 
 1. （オプション。） Telnet を使用して、memcached ストレージを調べます。
 

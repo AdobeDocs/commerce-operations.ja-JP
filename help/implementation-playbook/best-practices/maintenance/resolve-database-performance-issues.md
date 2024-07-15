@@ -29,17 +29,17 @@ MySQL クエリの実行が遅いかどうかを確認します。 クラウド�
 
 MySQL を使用すると、クラウドインフラストラクチャプロジェクト上のAdobe Commerceに対して長時間実行中のクエリを特定して解決できます。
 
-1. を実行 [`SHOW \[FULL\] PROCESSLIST`](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) ステートメント。
-1. クエリの実行に時間がかかる場合は、を実行します [MySQL `EXPLAIN` および `EXPLAIN ANALYZE`](https://mysqlserverteam.com/mysql-explain-analyze/) それぞれについて、クエリが長時間実行される原因を調べます。
+1. [`SHOW \[FULL\] PROCESSLIST`](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) ステートメントを実行します。
+1. クエリの実行時間が長い場合は、クエリごとに [MySQL `EXPLAIN` と `EXPLAIN ANALYZE`](https://mysqlserverteam.com/mysql-explain-analyze/) を実行して、クエリが長時間実行される原因を調べます。
 1. 見つかった問題に基づいて、クエリがより迅速に実行されるように、クエリを修正する手順を実行します。
 
 ### Percona Toolkit を使用したクエリの分析（Pro アーキテクチャのみ）
 
 Adobe Commerce プロジェクトが Pro アーキテクチャにデプロイされている場合は、Percona Toolkit を使用してクエリを分析できます。
 
-1. を実行 `pt-query-digest --type=slowlog` mysql の低速なクエリログに対してコマンドを実行します。
-   * 処理に時間のかかるクエリログの場所については、を参照してください。 **[!UICONTROL Log locations > Service Logs]**（https://devdocs.magento.com/cloud/project/log-locations.html#service-logs）開発者向けドキュメントに記載されています。
-   * を参照してください。 [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) ドキュメント。
+1. MySQL の低速クエリログに対して `pt-query-digest --type=slowlog` コマンドを実行します。
+   * 処理に時間のかかるクエリログの場所については、開発者向けドキュメントの **[!UICONTROL Log locations > Service Logs]** （https://devdocs.magento.com/cloud/project/log-locations.html#service-logs）を参照してください。
+   * [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) ドキュメントを参照してください。
 1. 見つかった問題に基づいて、クエリがより迅速に実行されるように、クエリを修正する手順を実行します。
 
 ## すべてのテーブルにプライマリ・キーがあることを確認します。
@@ -58,15 +58,15 @@ Adobe Commerce プロジェクトが Pro アーキテクチャにデプロイさ
    SELECT table_catalog, table_schema, table_name, engine FROM information_schema.tables        WHERE (table_catalog, table_schema, table_name) NOT IN (SELECT table_catalog, table_schema, table_name FROM information_schema.table_constraints  WHERE constraint_type = 'PRIMARY KEY') AND table_schema NOT IN ('information_schema', 'pg_catalog');    
    ```
 
-1. プライマリキーがないテーブルの場合は、を更新してプライマリキーを追加します。 `db_schema.xml` （宣言型スキーマ）次のようなノードを持つもの。
+1. プライマリキーがないテーブルの場合は、`db_schema.xml` （宣言型スキーマ）を次のようなノードで更新して、プライマリキーを追加します。
 
    ```html
    <constraint xsi:type="primary" referenceId="PRIMARY">         <column name="id_column"/>     </constraint>    
    ```
 
-   ノードを追加したら、 `referenceID` および `column name` カスタム値を使用した変数。
+   ノードを追加する際は、`referenceID` 変数と `column name` 変数をカスタムのカスタム値に置き換えます。
 
-詳しくは、を参照してください [宣言スキーマの設定](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) 開発者向けドキュメントを参照してください。
+詳しくは、開発者向けドキュメントの [ 宣言型スキーマの設定 ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) を参照してください。
 
 ## 重複するインデックスの特定と削除
 
@@ -82,11 +82,11 @@ SELECT s.INDEXED_COL,GROUP_CONCAT(INDEX_NAME) FROM (SELECT INDEX_NAME,GROUP_CONC
 
 クエリを実行すると、列名と、重複するインデックスの名前が返されます。
 
-Pro アーキテクチャのマーチャントは、Percona Toolkit を使用してチェックを実行することもできます  `[pt-duplicate-key checker](https://www.percona.com/doc/percona-toolkit/LATEST/pt-duplicate-key-checker.html%C2%A0)` コマンド。
+Pro アーキテクチャマーチャントは、Percona Toolkit `[pt-duplicate-key checker](https://www.percona.com/doc/percona-toolkit/LATEST/pt-duplicate-key-checker.html%C2%A0)` コマンドを使用してチェックを実行することもできます。
 
 ### 重複するインデックスの削除
 
-SQL の使用 [DROP INDEX 文](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html) 重複するインデックスを削除します。
+SQL [DROP INDEX ステートメント ](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html) を使用して、重複するインデックスを削除します。
 
 ```SQL
 DROP INDEX

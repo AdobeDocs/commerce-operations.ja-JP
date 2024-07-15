@@ -12,30 +12,30 @@ ht-degree: 0%
 
 # デプロイメントの設定ファイル
 
-Adobe Commerceが提供する設定ファイルを使用すると、コンポーネントを簡単にカスタマイズし、設定タイプを作成してデフォルト機能を拡張できます。 デプロイメント設定のプロセスは、インストール用の共有およびシステム固有の設定で構成されます。 Commerceのデプロイメント設定は次のタイプに分かれています [`app/etc/config.php`](../reference/config-reference-configphp.md) および [`app/etc/env.php`](../reference/config-reference-envphp.md).
+Adobe Commerceが提供する設定ファイルを使用すると、コンポーネントを簡単にカスタマイズし、設定タイプを作成してデフォルト機能を拡張できます。 デプロイメント設定のプロセスは、インストール用の共有およびシステム固有の設定で構成されます。 Commerceのデプロイメント設定は、[`app/etc/config.php`](../reference/config-reference-configphp.md) と [`app/etc/env.php`](../reference/config-reference-envphp.md) に分かれています。
 
-- `app/etc/config.php` が _共有_ 設定ファイル。
+- `app/etc/config.php` は _共有_ 設定ファイルです。
 このファイルには、インストールされているモジュール、テーマ、言語パッケージ、および共有設定の一覧が含まれています。
 
   このファイルをソース管理にチェックインし、開発、ステージング、実稼動の各システムで使用します。
 
-- `app/etc/env.php` インストール環境に固有の設定が含まれます。
+- `app/etc/env.php` には、インストール環境に固有の設定が含まれます。
 
-合わせて、 `config.php` および `env.php` Commerceと呼ばれます _デプロイメント設定_ これは、ファイルがインストール時に作成され、Commerce アプリケーションを起動するために必要だからです。
+`config.php` と `env.php` のファイルは、インストール時に作成され、Commerce アプリケーションの起動に必要なので、これらのファイルを合わせてCommerce _deployment configuration_ と呼びます。
 
 >[!INFO]
 >
->この [!DNL Commerce 2] デプロイメント設定の置き換え `local.xml` 。対象： [!DNL Magento 1.x].
+>[!DNL Commerce 2] デプロイメント設定は、[!DNL Magento 1.x] の `local.xml` に代わるものです。
 
-他と異なる [モジュール設定ファイル](../reference/module-files.md)の場合、Commerce デプロイメント設定は、初期化時にメモリに読み込まれ、他のファイルと結合されず、拡張できません。 （`config.php` および `env.php` ただし、互いに結合されます）。
+他の [ モジュール設定ファイル ](../reference/module-files.md) とは異なり、Commerce デプロイメント設定は、初期化時にメモリに読み込まれ、他のファイルと結合されず、拡張できません。 （ただし、`config.php` と `env.php` はマージされます）。
 
 ## デプロイメント設定の詳細
 
-`config.php` および `env.php` は、 [多次元連想配列](https://www.w3schools.com:443/php/php_arrays.asp)（基本的には設定パラメーターと値の階層的な配置です）。
+`config.php` と `env.php` は [ 多次元連想配列 ](https://www.w3schools.com:443/php/php_arrays.asp) を返す PHP ファイルで、基本的には設定パラメータと値の階層的な配列です。
 
-この配列の最上位レベルには次の項目があります _設定セグメント_. セグメントには、任意のキーで区別される任意のコンテンツ（スカラー値またはネストされた配列）があります。キーと値のペアの両方がCommerce フレームワークによって定義されます。
+この配列の最上位には、_設定セグメント_ があります。 セグメントには、任意のキーで区別される任意のコンテンツ（スカラー値またはネストされた配列）があります。キーと値のペアの両方がCommerce フレームワークによって定義されます。
 
-[Magento\Framework\App\DeploymentConfig](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) は、これらのセクションへのアクセス権を提供するだけで、セクションの拡張は許可しません。
+[Magento\Framework\App\DeploymentConfig](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) は、これらのセクションへのアクセスを提供するだけで、セクションの拡張はできません。
 
 次の階層レベルでは、無効なモジュールを除くすべてのモジュールの設定ファイルを結合して得られるモジュールシーケンス定義に従って、各セグメントの項目が並べられます。
 
@@ -46,13 +46,13 @@ Adobe Commerceが提供する設定ファイルを使用すると、コンポー
 
 ## インストール済みモジュールの管理
 
-この `config.php` ファイルには、インストールされたモジュールのリストが含まれています。 Adobe Commerceには、モジュールを管理（インストール、アンインストール、有効化、無効化、アップグレード）するためのコマンドラインユーティリティと web ベースのユーティリティの両方が用意されています。
+`config.php` ファイルには、インストール済みモジュールのリストが含まれています。 Adobe Commerceには、モジュールを管理（インストール、アンインストール、有効化、無効化、アップグレード）するためのコマンドラインユーティリティと web ベースのユーティリティの両方が用意されています。
 
 例：
 
-- コンポーネントをアンインストールします。 [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- コンポーネントのステータスの確認： [`bin/magento module:status`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#modulestatus)
-- コンポーネントを有効または無効にする： [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md).
+- コンポーネントのアンインストール：[`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
+- コンポーネントのステータスの確認：[`bin/magento module:status`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#modulestatus)
+- コンポーネント（[`bin/magento module:disable`](../../installation/tutorials/manage-modules.md)、[`bin/magento module:enable`](../../installation/tutorials/manage-modules.md)）を有効または無効にします。
 
 > _config.php_
 
@@ -74,7 +74,7 @@ return array (
 );
 ```
 
-値 `1` または `0` モジュールが有効か無効かを示します。
+値 `1` または `0` は、モジュールが有効か無効かを示します。
 
 無効なモジュールはCommerce アプリケーションで認識されません。つまり、設定の結合、依存関係のインジェクション、イベント、プラグインなどには含まれません。 無効にしたモジュールはストアフロントや管理者を変更せず、ルーティングにも影響を与えません。
 

@@ -1,5 +1,5 @@
 ---
-title: Adobeプライバシー JavaScript ライブラリ
+title: AdobeプライバシーJavaScriptライブラリ
 description: カスタムツールを使用して、Adobe Commerceで収集されたお客様の個人情報にアクセスして削除する方法を説明します。
 hide: true
 hidefromtoc: true
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Adobeプライバシー JavaScript ライブラリ
+# AdobeプライバシーJavaScriptライブラリ
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-この [Adobeプライバシー JavaScript ライブラリ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) は、非公開データにアクセスして削除するプロセスを作成するのに役立つツールのセットです。
+[AdobeプライバシーJavaScript ライブラリは ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) 非公開データにアクセスして削除するプロセスを作成するためのツール セットです。
 
-Adobe Commerce データトラッキングサービスでは、次のようなプライバシー規制に適用される個人情報を保存できます [EU 一般データ保護規則（GDPR）](gdpr.md) および [カリフォルニア州消費者プライバシー法（CCPA）](ccpa.md).
+Adobe Commerceのデータトラッキングサービスでは、[EU 一般データ保護規則（GDPR） ](gdpr.md) および [ カリフォルニア州消費者プライバシー法（CCPA） ](ccpa.md) などのプライバシー規制に適用される個人情報を保存できます。
 
 このライブラリは、プライバシーデータリクエストの作成、各製品の実装への送信、応答の収集のための統合された機能セットを提供します。 このライブラリを使用して、これらのデータトラッキングサービスによってブラウザーに保存されたデータを取得および削除します。
 
@@ -28,7 +28,7 @@ Adobe Commerce データトラッキングサービスでは、次のような�
 - npm: `npm install @adobe/adobe-privacy`
 - GitHub: [https://github.com/Adobe-Marketing-Cloud/adobe-privacy](https://github.com/Adobe-Marketing-Cloud/adobe-privacy)
 
-ファイルを取得したら、Adobe Commerce インスタンスにインストールされたカスタムモジュールまたはテーマにファイルを追加する必要があります。 に記載されている指示に従います [カスタム JavaScript の使用](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) このタスクを実行するトピック。
+ファイルを取得したら、Adobe Commerce インスタンスにインストールされたカスタムモジュールまたはテーマにファイルを追加する必要があります。 このタスクを実行するには、「[ カスタム JavaScriptの使用 ](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) トピックに記載されている手順に従います。
 
 ## 使用方法
 
@@ -38,20 +38,20 @@ AdobePrivacy JS ライブラリは、ブラウザーに保存された ID デー
 ：サービスから ID の配列を、サービスで見つからない ID の配列と共に返します
 
 `removeIdentities()`
-：ブラウザーから ID を削除し、ID オブジェクトの配列をで返します。 `isDeleteClientSide` データが削除されたかどうかを示すブール値プロパティ。
+：ブラウザーから ID を削除し、データが削除されたかどうかを示す `isDeleteClientSide` のブール値プロパティを含む、ID オブジェクトの配列を返します。
 
 `retrieveThenRemoveIdentities()`
-：この関数は次の関数に類似しています `removeIdentities()` その点で、ID の配列を取得し、ブラウザーから削除します。
+：この関数は、ID の配列を取得し、ブラウザーから削除するという点で `removeIdentities()` と似ています。
 
-これらの関数の詳細と使用例については、を参照してください [公式ライブラリドキュメント](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
+これらの関数の使用方法と例について詳しくは、[ 公式ライブラリドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) を参照してください。
 
 ### 初期化
 
-新しいのインスタンス化 `AdobePrivacy` 実装コードで AdobePrivacy JS ライブラリを使用するオブジェクトです。
+新しい `AdobePrivacy` オブジェクトをインスタンス化して、実装コードで AdobePrivacy JS ライブラリを使用します。
 
 ```js
 var adobePrivacy = new AdobePrivacy({});
 ```
 
 このコンストラクターは、インスタンス化の際に、パラメーターを含んだ設定オブジェクトを受け入れます。
-を参照してください。 [公式ライブラリドキュメント](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) これらの設定パラメーターのリスト。
+これらの設定パラメーターのリストについては、[ 公式ライブラリドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) を参照してください。

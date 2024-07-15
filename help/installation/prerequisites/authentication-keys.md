@@ -11,50 +11,50 @@ ht-degree: 0%
 
 # 認証キーの取得
 
-この `repo.magento.com` リポジトリーは、Adobe Commerceおよびサードパーティの Composer パッケージが格納される場所であり、認証が必要です。 Commerce Marketplaceアカウントを使用して、32 文字のペアを生成します *認証キー* をクリックしてリポジトリにアクセスします。
+`repo.magento.com` リポジトリーには、Adobe Commerceとサードパーティの Composer パッケージが格納され、認証が必要です。 Commerce Marketplaceアカウントを使用して、32 文字の *認証キー* のペアを生成し、リポジトリにアクセスします。
 
 Adobe Commerce パッケージへのアクセス権を付与するには、これらのパッケージへのアクセス権が付与された MAGEID に関連付けられたキーを使用する必要があります。 MAGEID は、通常Adobe Commerce アカウントのプライマリ連絡先となり、Adobe Commerce on cloud インフラストラクチャプロジェクトのプロジェクトオーナーであるとは限りません。
 
 >[!TIP]
 >
->次に遭遇した場合： [エラー](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)、パッケージにアクセスする権限がない、またはアカウントの未払い請求書が原因でアクセス権限が期限切れになっている可能性があります。
+>[ エラー ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html) が発生した場合は、パッケージにアクセスする権限がないか、アカウントの未払い請求書が原因でアクセス権限が期限切れになっている可能性があります。
 >
 >* アカウントのプライマリ担当者の場合は、アカウントに未払いの請求書がリストされていないことを確認してください。
->* プライマリ担当者から提供されたキーが機能せず、アカウントに未払いの請求書がない場合は、プライマリ担当者が連絡する必要があります [Adobe Commerce サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) お手伝いさせていただきます。
+>* プライマリ担当者が提供したキーが機能せず、アカウントに未払いの請求書がない場合は、プライマリ担当者が [Adobe Commerce サポート ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) に問い合わせる必要があります。
 
 認証キーを作成するには：
 
-1. にログインします [Commerce Marketplace](https://commercemarketplace.adobe.com/). アカウントがない場合は、 **登録**.
+1. [Commerce Marketplace](https://commercemarketplace.adobe.com/) にログインします。 アカウントをお持ちでない場合は、「**登録**」をクリックします。
 
-1. ページの右上にあるアカウント名をクリックし、以下を選択します。 **マイプロファイル**.
+1. ページ右上のアカウント名をクリックし、「**マイプロファイル**」を選択します。
 
-1. クリック **アクセスキー** 「Marketplace」タブで、次の操作を行います。
+1. 「Marketplace」タブの **アクセスキー** をクリックします。
 
-   ![Commerce Marketplaceで安全なアクセスキーを入手](../../assets/installation/cloud_access-key.png)
+   ![Commerce Marketplaceの安全なアクセスキーの取得 ](../../assets/installation/cloud_access-key.png)
 
-1. クリック **新しいアクセスキーの作成**. キーの特定の名前（キーを受け取る開発者の名前など）を入力し、 **OK**.
+1. **新しいアクセスキーを作成** をクリックします。 キーの特定の名前（キーを受け取る開発者の名前など）を入力し、[**OK**] をクリックします。
 
-1. 新しい公開鍵と秘密鍵がアカウントに関連付けられ、クリックしてコピーできるようになりました。 プロジェクトを操作する際は、この情報を保存するか、ページを開いたままにします。 の使用 **公開鍵** ユーザー名としておよび **秘密鍵** をパスワードとして使用します。
+1. 新しい公開鍵と秘密鍵がアカウントに関連付けられ、クリックしてコピーできるようになりました。 プロジェクトを操作する際は、この情報を保存するか、ページを開いたままにします。 ユーザー名として **公開鍵** を使用し、パスワードとして **秘密鍵** を使用します。
 
 ## 認証キーの管理
 
 また、認証キーを無効にしたり削除したりすることもできます。 例えば、組織を離れた後に、セキュリティ上の理由からキーを無効にしたり削除したりできます。
 
-* キーを無効にするには：クリック **無効**. これは、キーの使用を一時停止する場合に実行できます。
-* 以前に無効にしたキーを有効にするには：クリックします **Enable （有効）**.
-* キーを削除するには：クリックします **削除**.
+* キーを無効にするには：**無効** をクリックします。 これは、キーの使用を一時停止する場合に実行できます。
+* 以前に無効にしたキーを有効にするには：**有効** をクリックします。
+* キーを削除するには：**削除** をクリックします。
 
 ### SSH アクセストークンの管理
 
 SSH を使用してAdobe Commerce リリースをダウンロードするには、ダウンロードアクセストークンを生成する必要があります。 トークンを生成するには、次の手順に従います。
 
-1. にログイン [magento.com アカウント](https://account.magento.com/customer/account/login).
-1. クリック **マイアカウント** ページの上部
-1. クリック **アカウント設定** > **アクセストークンのダウンロード**.
+1. [magento.com アカウント ](https://account.magento.com/customer/account/login) にログインします。
+1. ページ上部の **マイアカウント** をクリックします。
+1. **アカウント設定**/**アクセストークンをダウンロード** をクリックします。
 
-   ![キーへのアクセス](../../assets/installation/connect_keys1.png)
+   ![ キーへのアクセス ](../../assets/installation/connect_keys1.png)
 
-1. クリック **新しいトークンの生成** 既存のトークンの置換および無効化
+1. 「**新しいトークンの生成**」をクリックし、既存のトークンを置き換えて無効にします。
 
 リリースをダウンロードするには、MAGEID とトークンを使用する必要があります。 Mageid はアカウントページの左上に表示されます。
 
@@ -67,5 +67,5 @@ curl -k https://MAGEID:TOKEN@www.magentocommerce.com/products/downloads/info/hel
 認証キーを使用して、次のことを行います。
 
 * [メタパッケージを入手（インテグレーター、パッケージャ）](../composer.md)
-* [GitHub リポジトリのクローン](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) （コントリビューション開発者のみ）
+* [GitHub リポジトリのクローンを作成 ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) （投稿開発者のみ）
 * [モジュールのアップグレードと管理](../../upgrade/modules/upgrade.md)

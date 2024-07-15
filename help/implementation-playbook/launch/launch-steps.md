@@ -30,4 +30,4 @@ Adobe Commerce サポートスタッフは、プロセスを通じてお客様�
 
 - 問題が運用開始をブロックしている場合は、Adobe Commerce ホットラインにお問い合わせください
 
-![ローンチプロセスのフェーズ 3 を示す図](../../assets/playbooks/launch-steps-3.svg)
+![ 立ち上げプロセスのフェーズ 3 を示す図 ](../../assets/playbooks/launch-steps-3.svg)

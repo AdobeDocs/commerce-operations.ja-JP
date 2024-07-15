@@ -1,6 +1,6 @@
 ---
-title: の使用方法 [!DNL Observation for Adobe Commerce] オンドレット
-description: の使用方法を学ぶ [!DNL Observation for Adobe Commerce] おしゃべり。
+title: ' [!DNL Observation for Adobe Commerce] nerdlet の使用方法'
+description: ' [!DNL Observation for Adobe Commerce] nerdlet の使用方法を説明します。'
 exl-id: 3c368814-0786-4e8f-ac81-9a77cec94677
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,40 +10,40 @@ ht-degree: 0%
 
 ---
 
-# の使用方法 [!DNL Observation for Adobe Commerce] オンドレット
+# [!DNL Observation for Adobe Commerce] の使い方
 
 ## イシューに対する一般的なアプローチ
 
 環境リソースの状態を確認します。
 
-* ～の % を調べる **[!UICONTROL Storage Free and MySQL % free storage by node]** フレーム。
+* **[!UICONTROL Storage Free and MySQL % free storage by node]** フレームの % を調べます。
 
    * 低いストレージが表示される場合は、フレームのヘッダーにあるリンクに従います。
 
-* ～の % を調べる **[!UICONTROL free system memory and Swap memory free in bytes]** フレーム。
+* **[!UICONTROL free system memory and Swap memory free in bytes]** フレームの % を調べます。
 
    * これらの表示が非常に低いメモリ状態の場合は、問題の一因になる可能性があります。
 
-* を調べる **[!UICONTROL Alerts during the timeframe]** フレーム。
+* **[!UICONTROL Alerts during the timeframe]** フレームを確認します。
 
-   * クラウドインフラストラクチャー上のAdobe Commerceの主な機能は次のとおりです [!DNL Managed alerts]. ヘッダーのリンクをクリックして確認できます [!DNL Support Knowledge Base] 特定のアラートに対するユーザー側のアクションを決定するのに役立つ記事。
+   * クラウドインフラストラクチャー上のAdobe Commerceは [!DNL Managed alerts] を提供します。 ヘッダー内のリンクをクリックすると、特定のアラートに対するユーザー側のアクションを決定するのに役立つ [!DNL Support Knowledge Base] の記事が表示されます。
 
-* を調べる **[!UICONTROL CPU % by host]** フレーム：CPU 使用率が高い場合は、 [!DNL Support Knowledge Base] フレームのヘッダー内の記事。 また、トラフィックのピーク時にデータベースの読み込み/書き出しまたはバックアップが行われていないことを確認します。
+* **[!UICONTROL CPU % by host]** フレームを調べます。CPU 使用率が高い場合は、ヘッダーの [!DNL Support Knowledge Base] の記事でフレームを確認します。 また、トラフィックのピーク時にデータベースの読み込み/書き出しまたはバックアップが行われていないことを確認します。
 
-* を確認します **[!UICONTROL Web Traffic volume compared to one week ago]** フレーム：同じ期間中にトラフィックが前週よりもずっと多い場合、説明は可能ですか（販売キャンペーンやマーケティングされた新製品など）。
+* **[!UICONTROL Web Traffic volume compared to one week ago]** フレームを確認します。同じ期間中にトラフィックが前週よりずっと多い場合、説明はありますか（販売キャンペーンやマーケティングされた新製品など）?
    * トラフィックの増加を説明できない場合は、実稼動環境の平均応答時間（ミリ秒）を調べます。 応答時間に寄与するトラフィックが多いのは、通常とは異なりますか。 期間を展開して、異常値かどうかを確認します。
-   * トラフィックの増加は web トランザクションに影響を与えていますか？ を確認します **[!UICONTROL Response Code]** エラーのフレーム。 サイトがダウンしている場合は、 `Site Down?` フレームヘッダーのリンク。 フレームは、発生しているエラーとその頻度を識別します。
-   * 誰かが Web サイトに変更をデプロイしましたか？ この **[!UICONTROL Deployment Log Entries]** フレームは、イシューの期間中にデプロイメントが行われたかどうかを示します。 問題が展開直後にある場合は、展開アクティビティによってサイトに負荷が追加されている可能性があります（キャッシュの消去、サービスの再起動など）。
-   * アップサイズまたはダウンサイズが発生したか。 サイトが一時的にアップサイズされた場合は、元のクラスターサイズに戻された可能性があります。 サイトの容量を増やすリクエストが行われた場合、アップサイズが発生する可能性があります。 を確認します **[!UICONTROL Upsize/Downsize – vCPU view over the timeline]** フレーム。 このフレームは、特定のノードの停止を検出する場合があります。 サイズが減少した場合は、1 つ以上のノードに問題がある可能性があります。
+   * トラフィックの増加は web トランザクションに影響を与えていますか？ **[!UICONTROL Response Code]** フレームにエラーがないか確認します。 サイトがダウンしている場合は、フレームヘッダーの `Site Down?` リンクをクリックできます。 フレームは、発生しているエラーとその頻度を識別します。
+   * 誰かが Web サイトに変更をデプロイしましたか？ **[!UICONTROL Deployment Log Entries]** のフレームは、イシューの期間中にデプロイメントが行われたかどうかを示します。 問題が展開直後にある場合は、展開アクティビティによってサイトに負荷が追加されている可能性があります（キャッシュの消去、サービスの再起動など）。
+   * アップサイズまたはダウンサイズが発生したか。 サイトが一時的にアップサイズされた場合は、元のクラスターサイズに戻された可能性があります。 サイトの容量を増やすリクエストが行われた場合、アップサイズが発生する可能性があります。 **[!UICONTROL Upsize/Downsize – vCPU view over the timeline]** フレームを確認します。 このフレームは、特定のノードの停止を検出する場合があります。 サイズが減少した場合は、1 つ以上のノードに問題がある可能性があります。
 
-* この **[!UICONTROL IP Frequency]** タブは、接触チャネルサーバーに対して実行された IP アドレスからリクエストの頻度を識別します（つまり、リクエストをから提供できなかった） [!DNL Fastly] 74 ではキャッシュされませんでした）。
+* 「**[!UICONTROL IP Frequency]**」タブは、オリジンサーバーに対して実行された IP アドレスからリクエストの頻度を識別します（つまり、リクエストはキャッシュされていなかったので、74 を使用して [!DNL Fastly] から提供できませんでした）。
 
-   * 対象： [!DNL Fastly] 関連する問題については、 **[!UICONTROL Fastly Cache]** フレームに収まり、「エラー」ファセットを選択して、エラーであるリクエストの割合を確認します。 Web 以外の読み込みと一致する場合は、バックエンドの問題を示している可能性があります。
-   * Web トラフィックが原因でない読み込みの場合は、エラーが発生しているか、低速なクエリやなどの web 以外のリクエストが蓄積している可能性があります。 [!DNL crons].
+   * その [!DNL Fastly] の関連する問題については、**[!UICONTROL Fastly Cache]** フレームをチェックし、エラーファセットを選択して、エラーであるリクエストの割合を確認します。 Web 以外の読み込みと一致する場合は、バックエンドの問題を示している可能性があります。
+   * Web トラフィックが原因ではないと思われる読み込みの場合は、エラーか、低速なクエリや [!DNL crons] ードなどの web 以外のリクエストの蓄積が発生している可能性があります。
 
-* を確認します **[!UICONTROL Database Errors]** 問題/問題のタイムラインと一致する可能性のあるエラーのフレーム。
-* を確認します **[!UICONTROL Database mysql-slow.log]** 発生している SQL 文を識別するフレーム。 `INSERT`, `UPDATE`、および `DELETE` クエリが最適化されていない場合、コマンドに時間がかかる場合があります。 偶数 `SELECT` 文を大きなテーブルに対して実行すると、非常に非効率的になる場合があります。
-* **[!UICONTROL PHP States]** および **[!UICONTROL PHP Errors]** フレームは PHP の潜在的な問題を示します。 この **[!UICONTROL PHP States]** フレームは、PHP プロセスの終了、開始、およびサービスがノードによって準備完了状態に達した時点を示します。 この **[!UICONTROL PHP Errors]** フレームは、メモリサイズ、ワーカー、サーバ数など、PHP の問題の箇所を特定するのに役立ちます。
-* トランザクションの待ち時間を確認するには、トランザクション – 平均、最大、最小テーブルを列別に並べ替えて、最も長時間実行されているトランザクション時間を表示できます。 過負荷のクラスターは、トランザクションに潜在期間を持ちますが、メソッドまたはに関する問題を特定できる異常も示します。 [!DNL cron].
-* この **[!UICONTROL Cron error]** フレームに表示 [!DNL cron] ロック、関連付けられる SQL エラー [!DNL cron] ログ、共有ステージング [!DNL crons] 専用のステージング環境がある場合、実稼動環境で実行されている可能性があります。
-* この [!UICONTROL ElasticSearch Errors] フレームは、の重大な問題を示す可能性のあるエラーを表示します。 [!DNL Elasticsearch] クエリ、データ、インデックス。
+* **[!UICONTROL Database Errors]** フレームで、イシュー/問題のタイムラインに合致する可能性のあるエラーを確認します。
+* **[!UICONTROL Database mysql-slow.log]** フレームをチェックして、発生している SQL 文を特定します。 クエリが最適化されていない場合、`INSERT`、`UPDATE`、および `DELETE` コマンドに時間がかかる場合があります。 大きなテーブルに対して実行すると、`SELECT` 文でも非常に非効率的になる可能性があります。
+* **[!UICONTROL PHP States]** フレームと **[!UICONTROL PHP Errors]** フレームは、PHP の潜在的な問題を示します。 **[!UICONTROL PHP States]** フレームは、PHP プロセスの終了、開始、およびサービスがノードによって準備完了状態に達した時点を示します。 **[!UICONTROL PHP Errors]** フレームは、メモリサイズ、ワーカー、サーバ数など、PHP の問題の箇所を特定するのに役立ちます。
+* トランザクションの待ち時間を確認するには、トランザクション – 平均、最大、最小テーブルを列別に並べ替えて、最も長時間実行されているトランザクション時間を表示できます。 過負荷のクラスターは、トランザクションに潜在期間を持ちますが、メソッドや [!DNL cron] の問題を特定できる異常値も示します。
+* **[!UICONTROL Cron error]** フレームには、専用のステージング環境がある場合に実稼動環境で実行されている可能性のある [!DNL cron] ロック、[!DNL cron] ログに関連付けられている可能性のある SQL エラー、共有ステージング [!DNL crons] が表示されます。
+* [!UICONTROL ElasticSearch Errors] のフレームには、クエリ、データまたはインデックスに関する重大な問題を示す可能性の [!DNL Elasticsearch] るエラーが表示されます。

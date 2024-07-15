@@ -21,7 +21,7 @@ ht-degree: 0%
 | チケット管理 | Atlassian JIRA |
 | SLA 管理 | Atlassian JIRA サービス管理 |
 | ドキュメント管理 | アトラシアン コンフルエンス |
-| ソースコード管理 | Atlassian Bitbucket、GitHub |
+| Sourceのコード管理 | Atlassian Bitbucket、GitHub |
 | 継続的統合（CI）/継続的配信（CD） | Jenkins |
 | 通信 | メール，Microsoft Teams，電話，Slack |
 | 会議 | ズーム、Microsoft Teams |
@@ -43,7 +43,7 @@ Jira は、次のような強力な機能を備えたチケットトラッキン
 - アジャイル/スクラムによるチケットの視覚化と移行の容易化
 - クライアントチームと開発チームの間で透明性のある情報を提供
 
-## ソースコード管理
+## Source Code Management
 
 Bitbucket は、単なる Git コード管理ではありません。 Bitbucket は、プロジェクトの計画、コードの共同作業、テスト、デプロイをチームで 1 箇所で行えるようにします。 Bitbucket を使用すると、プルリクエストでコードレビューをより効率的に承認できます。 また、指定された承認者と結合したチェックリストを作成し、ソースコード内でインラインコメントを使用してディスカッションを直接行うこともできます。
 

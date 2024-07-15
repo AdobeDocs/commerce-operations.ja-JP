@@ -11,35 +11,35 @@ ht-degree: 0%
 
 # カスタム cron ジョブの設定
 
-このステップバイステップのチュートリアルでは、サンプルモジュールでカスタム cron ジョブとオプションで cron グループを作成する方法を説明します。 既に持っているモジュールを使用するか、以下のサンプルモジュールを使用できます。 [`magento2-samples` リポジトリ][samples].
+このステップバイステップのチュートリアルでは、サンプルモジュールでカスタム cron ジョブとオプションで cron グループを作成する方法を説明します。 既に持っているモジュールを使用するか、[`magento2-samples` リポジトリ ][samples] からサンプルモジュールを使用できます。
 
-cron ジョブを実行すると、に行が追加されます。 `cron_schedule` cron ジョブの名前を含むテーブル。 `custom_cron`.
+cron ジョブを実行すると、`cron_schedule` テーブルに行が追加され、その名前は cron ジョブ `custom_cron` になります。
 
 また、オプションで cron グループを作成する方法も示します。このグループを使用して、Commerce アプリケーションのデフォルト以外の設定でカスタム cron ジョブを実行できます。
 
 このチュートリアルでは、以下を想定しています。
 
-- Commerce アプリケーションのインストール先 `/var/www/html/magento2`
-- Commerce データベースのユーザー名とパスワードの両方を指定します `magento`
-- すべてのアクションを次のように実行します [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)
+- Commerce アプリケーションは `/var/www/html/magento2` にインストールされています
+- Commerce データベースのユーザー名とパスワードの両方が `magento` です
+- すべてのアクションは [ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) として実行します。
 
 ## 手順 1：サンプルモジュールの取得
 
-カスタム cron ジョブを設定するには、サンプルモジュールが必要です。 以下をお勧めします。 `magento-module-minimal` モジュール。
+カスタム cron ジョブを設定するには、サンプルモジュールが必要です。 `magento-module-minimal` モジュールをお勧めします。
 
 既にサンプルモジュールがある場合は、それを使用できます。この手順と次の手順をスキップし、手順 3:cron を実行するクラスの作成に進みます。
 
-**サンプルモジュールを取得する方法**:
+**サンプルモジュールを取得するには**:
 
-1. Commerce サーバーにとしてログインするか、に切り替えます [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
+1. [ ファイルシステムのオーナー ](../../installation/prerequisites/file-system/overview.md) としてCommerce サーバーにログインするか、に切り替えます。
 1. をCommerce アプリケーションのルートにないディレクトリ（ホームディレクトリなど）に移動します。
-1. のクローン [`magento2-samples` リポジトリ][samples].
+1. [`magento2-samples` リポジトリのクローンを作成 ][samples] ます。
 
    ```bash
    git clone git@github.com:magento/magento2-samples.git
    ```
 
-   コマンドがエラーで失敗した場合 `Permission denied (publickey).`は、次の操作が必要です [ssh 公開鍵をGitHub.comに追加します][git-ssh].
+   エラー `Permission denied (publickey).` が発生してコマンドが失敗した場合は、[SSH 公開鍵を GitHub.com に追加する ][git-ssh] 必要があります。
 
 1. サンプルコードのコピー先となるディレクトリを作成します。
 
@@ -103,11 +103,11 @@ cron ジョブを実行すると、に行が追加されます。 `cron_schedule
 
 >[!TIP]
 >
->出力に `Module does not exist`, レビュー [手順 1](#step-1-get-a-sample-module) 慎重に。 コードが正しいディレクトリにあることを確認します。 スペルと大文字と小文字の区別は重要です。何か異なる場合、モジュールは読み込まれません。 また、実行することを忘れないでください `magento setup:upgrade`.
+>出力が `Module does not exist` を示している場合は、[ 手順 1](#step-1-get-a-sample-module) を慎重に確認します。 コードが正しいディレクトリにあることを確認します。 スペルと大文字と小文字の区別は重要です。何か異なる場合、モジュールは読み込まれません。 また、`magento setup:upgrade` を実行することを忘れないでください。
 
 ## 手順 3:cron を実行するクラスの作成
 
-この手順では、cron ジョブを作成するための単純なクラスを示します。 クラスは、に行を書き込むだけです。 `cron_schedule` 正常に設定されていることを確認するテーブル。
+この手順では、cron ジョブを作成するための単純なクラスを示します。 クラスは、正常に設定されたことを確認する行のみを `cron_schedule` テーブルに書き込みます。
 
 クラスを作成するには：
 
@@ -117,7 +117,7 @@ cron ジョブを実行すると、に行が追加されます。 `cron_schedule
    mkdir /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron && cd /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron
    ```
 
-1. という名前のファイルを作成しました。 `Test.php` このディレクトリには、次の内容が含まれています。
+1. 次の内容を含む `Test.php` という名前のファイルをこのディレクトリに作成しました。
 
    ```php
    <?php
@@ -143,11 +143,11 @@ cron ジョブを実行すると、に行が追加されます。 `cron_schedule
    }
    ```
 
-## 手順 4：作成 `crontab.xml`
+## 手順 4:`crontab.xml` の作成
 
-この `crontab.xml` ファイルは、カスタム cron コードを実行するスケジュールを設定します。
+`crontab.xml` ファイルは、カスタム cron コードを実行するスケジュールを設定します。
 
-作成 `crontab.xml` 次に示すとおり `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc` ディレクトリ：
+`/var/www/html/magento2/app/code/Magento/SampleMinimal/etc` ディレクトリに、次のように `crontab.xml` を作成します。
 
 ```xml
 <?xml version="1.0"?>
@@ -160,7 +160,7 @@ cron ジョブを実行すると、に行が追加されます。 `cron_schedule
 </config>
 ```
 
-前項 `crontab.xml` を実行します `Magento/SampleMinimal/Cron/Test.php` 1 分に 1 回のクラス。この結果、行がに追加されます。 `cron_schedule` テーブル。
+上記の `crontab.xml` では、`Magento/SampleMinimal/Cron/Test.php` クラスを 1 分ごとに実行するので、行が `cron_schedule` テーブルに追加されます。
 
 管理者が cron スケジュールを設定できるようにするには、システム設定フィールドの設定パスを使用します。
 
@@ -175,7 +175,7 @@ cron ジョブを実行すると、に行が追加されます。 `cron_schedule
 </config>
 ```
 
-ここで、 `system/config/path` は、で定義されたシステム設定パスです。 `etc/adminhtml/system.xml` （モジュールの）。
+ここで、`system/config/path` はモジュールの `etc/adminhtml/system.xml` で定義されたシステム設定パスです。
 
 ## 手順 5：コンパイルとキャッシュのクリーンアップ
 
@@ -193,7 +193,7 @@ bin/magento cache:clean
 
 ## 手順 6:cron ジョブの検証
 
-この手順では、で SQL クエリを使用してカスタム cron ジョブを正常に検証する方法を示します `cron_schedule` データベーステーブル。
+この手順では、`cron_schedule` データベーステーブルで SQL クエリを使用して、カスタム cron ジョブを正常に検証する方法を示します。
 
 cron を検証するには：
 
@@ -203,15 +203,15 @@ cron を検証するには：
    bin/magento cron:run
    ```
 
-1. を入力 `magento cron:run` 2、3 回命令してください。
+1. `magento cron:run` コマンドを 2 回または 3 回入力します。
 
-   コマンドを初めて入力すると、ジョブがキューに入れられ、その後、cron ジョブが実行されます。 コマンドを入力する必要があります _少なくとも_ 2 回。
+   コマンドを初めて入力すると、ジョブがキューに入れられ、その後、cron ジョブが実行されます。 コマンドを _少なくとも_ 2 回入力する必要があります。
 
-1. SQL クエリを実行 `SELECT * from cron_schedule WHERE job_code like '%custom%'` 次のように設定します。
+1. 次のように SQL クエリ `SELECT * from cron_schedule WHERE job_code like '%custom%'` を実行します。
 
-   1. Enter `mysql -u magento -p`
-   1. 時刻 `mysql>` プロンプト，enter `use magento;`
-   1. Enter `SELECT * from cron_schedule WHERE job_code like '%custom%';`
+   1. `mysql -u magento -p` を入力
+   1. `mysql>` プロンプトに対して、`use magento;` と入力します。
+   1. `SELECT * from cron_schedule WHERE job_code like '%custom%';` を入力
 
       結果は次のようになります。
 
@@ -238,14 +238,14 @@ cron を検証するには：
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 
-   これらのメッセージは、 `execute` メソッド： `Test.php`:
+   これらのメッセージは、`Test.php` の `execute` メソッドから送信されます。
 
    ```php
    public function execute() {
         $this->logger->info('Cron Works');
    ```
 
-SQL コマンドとシステム ログにエントリが含まれていない場合は、 `magento cron:run` もう数回命令して待ってください。 データベースの更新には、ある程度の時間がかかる場合があります。
+SQL コマンドとシステム ログにエントリが含まれていない場合は、`magento cron:run` コマンドを数回実行して待機します。 データベースの更新には、ある程度の時間がかかる場合があります。
 
 ## 手順 7 （オプション）：カスタム cron グループの設定
 
@@ -253,10 +253,10 @@ SQL コマンドとシステム ログにエントリが含まれていない場
 
 カスタム cron グループを設定するには：
 
-1. 開く `crontab.xml` テキストエディター。
-1. 変更 `<group id="default">` 対象： `<group id="custom_crongroup">`
+1. `crontab.xml` をテキストエディターで開きます。
+1. `<group id="default">` を `<group id="custom_crongroup">` に変更
 1. テキストエディターを終了します。
-1. 作成 `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc/cron_groups.xml` 次の内容を含みます。
+1. 次の内容の `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc/cron_groups.xml` を作成します。
 
    ```xml
    <?xml version="1.0"?>
@@ -273,11 +273,11 @@ SQL コマンドとシステム ログにエントリが含まれていない場
    </config>
    ```
 
-オプションの意味については、を参照してください。 [Cron リファレンスのカスタマイズ](custom-cron-reference.md).
+このオプションの意味については、[Cron リファレンスのカスタマイズ ](custom-cron-reference.md) を参照してください。
 
 ## 手順 8：カスタム cron グループの検証
 
-この _optional_ 管理者を使用してカスタム cron グループを検証する手順を示します。
+この _オプション_ 手順では、管理者を使用してカスタム cron グループを検証する方法を示します。
 
 カスタム cron グループを検証するには：
 
@@ -296,12 +296,12 @@ SQL コマンドとシステム ログにエントリが含まれていない場
    ```
 
 1. 管理者として管理者にログインします。
-1. クリック **ストア** > **設定** > **設定** > **詳細** > **システム**.
-1. 右側のパネルで、を展開します **Cron**.
+1. **ストア**/**設定**/**設定**/**詳細**/**システム** をクリックします。
+1. 右側のペインで **Cron** を展開します。
 
    cron グループは次のように表示されます。
 
-   ![カスタム cron グループ](../../assets/configuration/cron-group.png)
+   ![ カスタム cron グループ ](../../assets/configuration/cron-group.png)
 
 <!-- link definitions -->
 

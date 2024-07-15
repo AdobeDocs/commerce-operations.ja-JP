@@ -22,13 +22,13 @@ ht-degree: 0%
 - Commerce見積データベース：11 個のテーブル
 - Commerce sales database: 55 テーブル
 
-分割データベースが正しく動作していることを確認するには、次のタスクを実行し、次のようなデータベース ツールを使用してデータベース テーブルにデータが追加されていることを確認します [phpmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
+分割データベースが正しく動作していることを確認するには、次のタスクを実行し、[phpmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin) などのデータベース・ツールを使用してデータがデータベース・テーブルに追加されていることを確認します。
 
 | 検証対象 | 検証方法 |
 | -------------- | ------------- |
-| 見積もりデータベースが動作しています | 買い物かごに商品を追加します。 見積もりデータベースに行が追加されていることを確認します。 `quote`, `quote_address`、および `quote_item` テーブル。 |
-| 営業データベースが動作しています | 注文を完了します（小切手/マネーオーダーを含む支払い方法）。 営業データベースのに行が追加されていることを確認します。 `sales_order_address`, `sales_order_item`、および `sales_order_payment` テーブル。 |
+| 見積もりデータベースが動作しています | 買い物かごに商品を追加します。 見積もりデータベースの `quote`、`quote_address`、および `quote_item` テーブルに行が追加されていることを確認します。 |
+| 営業データベースが動作しています | 注文を完了します（小切手/マネーオーダーを含む支払い方法）。 sales データベースの `sales_order_address`、`sales_order_item`、`sales_order_payment` の各テーブルに行が追加されていることを確認します。 |
 
 >[!WARNING]
 >
->2 つの追加のデータベース・インスタンスを手動でバックアップする必要があります。 Commerceは、メインデータベースインスタンスのみをバックアップします。 この [`magento setup:backup --db`](../../installation/tutorials/backup.md) command オプションと Admin オプションでは、追加のテーブルはバックアップされません。
+>2 つの追加のデータベース・インスタンスを手動でバックアップする必要があります。 Commerceは、メインデータベースインスタンスのみをバックアップします。 [`magento setup:backup --db`](../../installation/tutorials/backup.md) コマンドおよび管理オプションでは、追加のテーブルはバックアップされません。

@@ -12,9 +12,9 @@ MariaDB 10.4 および 10.6 でのインデックス再作成は、以前のバ�
 * [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
 * [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
 
-MariaDB 10.6 にアップグレードした後、インデックス作成に関係なくパフォーマンスが低下する場合は、 [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) の設定値。 例： `--query-cache-type=ON`.
+MariaDB 10.6 にアップグレードした後、インデックス作成に関係なくパフォーマンスが低下する場合は、[`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) 設定を有効にすることを検討してください。 例：`--query-cache-type=ON`。
 
-クラウドインフラストラクチャプロジェクトでAdobe Commerceをアップグレードする前に、MariaDB （[mariaDB アップグレードのベストプラクティスを参照してください](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md)）に設定します。
+クラウドインフラストラクチャプロジェクトでAdobe Commerceをアップグレードする前に、MariaDB をアップグレードする必要がある場合もあります（[MariaDB のアップグレードのベストプラクティスを参照 ](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md)）。
 
 例：
 

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # サードパーティ拡張機能の管理
 
-Adobe Commerceの動作を拡張またはカスタマイズするコードは、拡張機能と呼ばれます。 オプションで、に拡張機能をパッケージ化して配布できます [Commerce Marketplace](https://commercemarketplace.adobe.com/) または別の拡張機能配布システムです。
+Adobe Commerceの動作を拡張またはカスタマイズするコードは、拡張機能と呼ばれます。 オプションで、[ Commerce Marketplaceまたは別の拡張機能配布システムで ](https://commercemarketplace.adobe.com/) 拡張機能をパッケージ化して配布できます。
 
 拡張機能には次のものが含まれます。
 
@@ -22,7 +22,7 @@ Adobe Commerceの動作を拡張またはカスタマイズするコードは、
 
 >[!TIP]
 >
->ここでは、コマンドラインインターフェイスを使用して、Commerce Marketplaceから購入したサードパーティの拡張機能を管理する方法について説明します。 同じ手順でインストールできます _いずれか_ 拡張機能。必要なのは、拡張機能の Composer 名とバージョンだけです。 これを見つけるには、拡張機能のを開きます `composer.json` ファイルを開き、の値をメモします。 `"name"` および `"version"`.
+>ここでは、コマンドラインインターフェイスを使用して、Commerce Marketplaceから購入したサードパーティの拡張機能を管理する方法について説明します。 _any_ 拡張機能のインストールにも同じ手順を使用できます。必要なのは、拡張機能の Composer 名とバージョンだけです。 これを見つけるには、拡張機能の `composer.json` ファイルを開き、`"name"` と `"version"` の値を確認します。
 
 ## インストール
 
@@ -38,7 +38,7 @@ Adobe Commerceの動作を拡張またはカスタマイズするコードは、
 拡張機能をインストールするには、次の手順を実行します。
 
 1. Commerce Marketplaceまたは別の拡張機能開発者から拡張機能を取得します。
-1. Commerce Marketplaceから拡張機能をインストールする場合は、必ず `repo.magento.com` リポジトリがに存在する `composer.json` ファイル：
+1. Commerce Marketplaceから拡張機能をインストールする場合は、`repo.magento.com` リポジトリが `composer.json` ファイルに存在することを確認します。
 
    ```bash
    "repositories": [
@@ -50,39 +50,39 @@ Adobe Commerceの動作を拡張またはカスタマイズするコードは、
    ```
 
 1. 拡張機能の Composer 名とバージョンを取得します。
-1. を更新 `composer.json` プロジェクト内のファイルを、拡張子の名前とバージョンで指定します。
+1. プロジェクトの `composer.json` ファイルを拡張子の名前とバージョンで更新します。
 1. 拡張機能が正しくインストールされていることを確認します。
 1. 拡張機能を有効にして設定します。
 
 ### 拡張機能に関する情報の取得
 
-拡張機能の Composer 名とバージョンが既にわかっている場合は、この手順をスキップして次に進みます。 [を更新 `composer.json` ファイル](#update-composer-dependencies).
+拡張機能の Composer 名とバージョンが既にわかっている場合は、この手順をスキップして [`composer.json` ファイルを更新 ](#update-composer-dependencies) に進みます。
 
 Commerce Marketplaceから拡張機能の Composer 名とバージョンを取得するには：
 
-1. へのログイン [Commerce Marketplace](https://commercemarketplace.adobe.com/) と、拡張機能の購入に使用したユーザー名およびパスワード。
+1. 拡張機能の購入に使用したユーザー名とパスワードを使用して ](https://commercemarketplace.adobe.com/)[Commerce Marketplaceにログインします。
 
-1. 右上隅のをクリックします。 **あなたの名前** > **マイプロファイル**.
+1. 右上隅で、**あなたの名前**/**マイプロファイル** をクリックします。
 
-   ![Marketplace アカウントにアクセス](../../assets/installation/marketplace-my-profile.png)
+   ![Marketplace アカウントにアクセス ](../../assets/installation/marketplace-my-profile.png)
 
-1. クリック **購入状況**.
+1. **購入状況** をクリックします。
 
-   ![Marketplace の購入履歴](../../assets/installation//marketplace-my-purchases.png)
+   ![Marketplace の購入履歴 ](../../assets/installation//marketplace-my-purchases.png)
 
-1. インストールする拡張機能を見つけて、 **技術的詳細**.
+1. インストールする拡張機能を見つけて、「技術的な詳細 **をクリックし** す。
 
-   ![技術的な詳細は、拡張機能の Composer 名を示します](../../assets/installation/marketplace-extension-technical-details.png)
+   ![ 技術的な詳細は、拡張機能の Composer 名を示します ](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
->または、Composer の名前とバージョン _いずれか_ 拡張機能の内線番号（Commerce Marketplaceで購入したか、他の場所で購入したか） `composer.json` ファイル。
+>または、Composer の名前とバージョン _any_ 拡張子（Commerce Marketplaceで購入したか他の場所で購入したか）は、拡張機能の `composer.json` ファイルにあります。
 
 ### Composer の依存関係の更新
 
-拡張機能の名前とバージョンを `composer.json` ファイル：
+拡張機能の名前とバージョンを `composer.json` ファイルに追加します。
 
-1. プロジェクトディレクトリに移動して更新します `composer.json` ファイル。
+1. プロジェクトディレクトリに移動して `composer.json` ファイルを更新します。
 
    ```bash
    composer require <component-name>:<version>
@@ -94,7 +94,7 @@ Commerce Marketplaceから拡張機能の Composer 名とバージョンを取�
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. を入力 [認証キー](../prerequisites/authentication-keys.md). 公開鍵はユーザー名で、秘密鍵はパスワードです。
+1. [ 認証キー ](../prerequisites/authentication-keys.md) を入力します。 公開鍵はユーザー名で、秘密鍵はパスワードです。
 
 1. Composer がプロジェクトの依存関係の更新を完了するのを待ち、エラーがないことを確認します。
 
@@ -120,7 +120,7 @@ bin/magento module:status J2t_Payplug
 Module is disabled
 ```
 
-拡張機能名はの形式です `<VendorName>_<ComponentName>`。これは Composer 名とは異なる形式です。 この形式を使用して、拡張機能を有効にします。 拡張機能名がわからない場合は、次を実行します。
+拡張子の名前は `<VendorName>_<ComponentName>` の形式です。これは Composer 名とは異なる形式です。 この形式を使用して、拡張機能を有効にします。 拡張機能名がわからない場合は、次を実行します。
 
 ```bash
 bin/magento module:status
@@ -130,7 +130,7 @@ bin/magento module:status
 
 ### Enable （有効）
 
-一部の拡張子は、生成された静的ビューファイルを最初にクリアしない限り、正しく機能しません。 の使用 `--clear-static-content` 拡張機能を有効にするときに、静的ビューファイルをクリアするオプション。
+一部の拡張子は、生成された静的ビューファイルを最初にクリアしない限り、正しく機能しません。 拡張機能を有効にする際に、静的ビューファイルをクリアするには、「`--clear-static-content`」オプションを使用します。
 
 1. 拡張機能を有効にし、静的ビューファイルをクリアします。
 
@@ -184,7 +184,7 @@ bin/magento module:status
 
 >[!TIP]
 >
->ブラウザーでストアフロントを読み込む際にエラーが発生した場合は、次のコマンドを使用してキャッシュをクリアします。 `bin/magento cache:flush`.
+>ブラウザーでストアフロントを読み込む際にエラーが発生した場合は、次のコマンドを使用してキャッシュをクリアします：`bin/magento cache:flush`。
 
 ## アップグレード
 
@@ -232,13 +232,13 @@ bin/magento module:status
 
 >[!CAUTION]
 >
->非実稼動環境でのアンインストール手順の実行 _第 1_ そして、実稼動環境にデプロイする前に十分にテストします。
+>実稼動以外の環境でアンインストール手順を実行し _最初_、実稼動環境にデプロイする前に十分にテストします。
 
 次の手順では、サードパーティの拡張機能をアンインストールする際の一般的な情報を示します。
 
 1. Adobe Commerce プロジェクトリポジトリから拡張機能を削除します。
 
-   - Composer ベースの拡張機能の場合、Adobe Commerceから拡張機能を削除します `composer.json` ファイル。
+   - Composer ベースの拡張子の場合、Adobe Commerce `composer.json` ファイルから拡張子を削除します。
 
      ```bash
      composer remove <package-name>
@@ -250,7 +250,7 @@ bin/magento module:status
      rm -rf app/code/<vendor-name>/<module-name>
      ```
 
-1. 次の場合 `config.php` ファイルはAdobe Commerce プロジェクトリポジトリのソース管理下にあり、から拡張子を削除します `config.php` ファイル。
+1. `config.php` ファイルがAdobe Commerce プロジェクトリポジトリのソース管理下にある場合は、`config.php` ファイルから拡張子を削除します。
 
 1. ローカルデータベースをテストし、ベンダーが提供する手順が期待どおりに動作することを確認します。
 

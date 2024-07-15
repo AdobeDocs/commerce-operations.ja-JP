@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # セキュリティ
 
-Adobe Commerce [Pro プランアーキテクチャ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) は、安全性の高い環境を提供するように設計されています。 各お客様は、他のお客様とは別に、独立した独自のサーバ環境に導入されます。 実稼動環境のセキュリティの詳細は、次のとおりです。
+Adobe Commerce [Pro プランアーキテクチャ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) は、非常に安全な環境を提供するように設計されています。 各お客様は、他のお客様とは別に、独立した独自のサーバ環境に導入されます。 実稼動環境のセキュリティの詳細は、次のとおりです。
 
 ## Web ブラウザー
 
@@ -23,7 +23,7 @@ Adobe Commerce [Pro プランアーキテクチャ](https://experienceleague.ado
 
 Fastly は、コンテンツ配信ネットワーク（CDN）と分散型サービス拒否（DDoS）保護を提供します。 Fastly CDN は、接触チャネルサーバーへの直接アクセスを分離するのに役立ちます。 パブリック DNS は、Fastly ネットワークのみを指します。 Fastly DDoS ソリューションは、非常に破壊的なレイヤ 3 およびレイヤ 4 攻撃、およびより複雑なレイヤ 7 攻撃から保護します。 レイヤー 7 攻撃は、HTTP/HTTPS リクエスト全体に基づくカスタムルールと、ヘッダー、cookie、リクエストパス、クライアント IP を含むクライアントおよびリクエスト条件、または位置情報などの指標に基づくカスタムルールを使用してブロックできます。
 
-参照： [Fastly サービスの概要](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html) が含まれる _クラウドガイド_.
+[ クラウドガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html) の _Fastly サービスの概要_ を参照してください。
 
 ## Web アプリケーションファイアウォール
 
@@ -31,7 +31,7 @@ Fastly Web アプリケーションファイアウォール（WAF）は、追加
 
 Adobe Commerceで WAF ルールが更新され、新しい脆弱性が検出された場合、Managed Servicesはソフトウェアパッチの前にセキュリティの問題を「実質的にパッチ」できます。 Fastly WAF は、レート制限またはボット検出サービスを提供していません。 必要に応じて、Fastly と互換性のあるサードパーティのボット検出サービスのライセンスを取得できます。
 
-参照： [Web アプリケーションファイアウォール（WAF）](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html) が含まれる _クラウドガイド_.
+[ クラウドガイド _の「Web アプリケーションファイアウォール（WAF） ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html)_ を参照してください。
 
 ## 仮想プライベートクラウド
 
@@ -47,7 +47,7 @@ Adobe Commerce アプリケーションは、データが休止状態ではな�
 
 ## エンドポイントの検出と応答
 
-[!DNL CrowdStrike Falcon]軽量な次世代 EDR （Endpoint Detection and Response）エージェントが、Adobe内のすべてのエンドポイント（サーバを含む）にインストールされています。 EDR エージェントは、リアルタイムで継続的なモニタリングと収集を行うことで、Adobeデータとシステムを保護し、迅速な脅威特定と対応を可能にします。
+[!DNL CrowdStrike Falcon] は、軽量な次世代 EDR （Endpoint Detection and Response）エージェントが、Adobe内のすべてのエンドポイント（サーバを含む）にインストールされています。 EDR エージェントは、リアルタイムで継続的なモニタリングと収集を行うことで、Adobeデータとシステムを保護し、迅速な脅威特定と対応を可能にします。
 
 ## 侵入テスト
 
@@ -68,15 +68,15 @@ Adobeでは、セキュリティの脆弱性に関してコアアプリケーシ
 - OWASPZAP
 - andSqlMap
 
-すべてのコードベースは、これらのツールで隔週でスキャンされます。 セキュリティパッチは、ダイレクトメール、アプリケーションおよび [セキュリティセンター](https://helpx.adobe.com/security.html).
+すべてのコードベースは、これらのツールで隔週でスキャンされます。 お客様には、ダイレクトメール、アプリケーション内の通知、および [ セキュリティセンター ](https://helpx.adobe.com/security.html) を通じて、セキュリティパッチが通知されます。
 
-お客様は、PCI ガイドラインに従って、リリース後 30 日以内に、これらのパッチをカスタマイズされたアプリケーションに適用する必要があります。 Adobeはも提供します [セキュリティ スキャン ツール](https://docs.magento.com/user-guide/magento/security-scan.html) これにより、マーチャントはサイトを定期的に監視し、既知のセキュリティリスク、マルウェア、不正アクセスに関する更新を受け取ることができます。 セキュリティスキャンツールは無料のサービスで、あらゆるバージョンのAdobe Commerceで実行できます。
+お客様は、PCI ガイドラインに従って、リリース後 30 日以内に、これらのパッチをカスタマイズされたアプリケーションに適用する必要があります。 また、Adobeでは [ セキュリティスキャンツール ](https://docs.magento.com/user-guide/magento/security-scan.html) を提供しています。このツールを使用すると、マーチャントはサイトを定期的に監視し、既知のセキュリティリスク、マルウェアおよび不正アクセスに関する更新を受け取ることができます。 セキュリティスキャンツールは無料のサービスで、あらゆるバージョンのAdobe Commerceで実行できます。
 
-セキュリティ調査員による脆弱性の特定と報告を促すために、Adobe Commerceでは次の取り組みを行っています [バグバウンティプログラム](https://hackerone.com/magento) 内部テストに加えて。 さらに、必要に応じて、顧客が独自にレビューするために、アプリケーションの完全なソースコードを提供します。
+セキュリティ研究者が脆弱性を特定して報告することを奨励するために、Adobe Commerceには、内部テストに加えて [ バグバウンティプログラム ](https://hackerone.com/magento) があります。 さらに、必要に応じて、顧客が独自にレビューするために、アプリケーションの完全なソースコードを提供します。
 
 ## 読み取り専用ファイルシステム
 
-すべての実行可能コードは、読み取り専用のファイルシステムイメージにデプロイされるため、攻撃に使用できるサーフェスが大幅に減少します。 このデプロイメントプロセスは、PHP や JavaScript コードをシステムに挿入したり、Adobe Commerce アプリケーションファイルを変更したりする機会を減らすために、Squash-FS イメージを作成します。
+すべての実行可能コードは、読み取り専用のファイルシステムイメージにデプロイされるため、攻撃に使用できるサーフェスが大幅に減少します。 このデプロイメントプロセスは、PHP またはJavaScript コードをシステムに挿入したり、Adobe Commerce アプリケーションファイルを変更したりする機会を減らすために、Squash-FS イメージを作成します。
 
 ## リモートデプロイメント
 
@@ -84,9 +84,9 @@ Adobeでは、セキュリティの脆弱性に関してコアアプリケーシ
 
 ## ログ
 
-すべてのAWS アクティビティは、AWS CloudTrail に記録されます。 オペレーティングシステム、アプリケーションサーバー、データベースログは、実稼動サーバーに保存され、バックアップに保存されます。 すべてのソースコードの変更が Git リポジトリに記録されます。 デプロイメント履歴は、Adobe Commerceで確認できます [Project Web インターフェイス](https://devdocs.magento.com/cloud/project/projects.html#login). すべてのサポートアクセスがログに記録され、サポートセッションが記録されます。
+すべてのAWS アクティビティは、AWS CloudTrail に記録されます。 オペレーティングシステム、アプリケーションサーバー、データベースログは、実稼動サーバーに保存され、バックアップに保存されます。 すべてのソースコードの変更が Git リポジトリに記録されます。 配置履歴は、Adobe Commerce [Project Web インターフェイス ](https://devdocs.magento.com/cloud/project/projects.html#login) で使用できます。 すべてのサポートアクセスがログに記録され、サポートセッションが記録されます。
 
-参照： [ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) が含まれる _クラウドガイド_.
+[ クラウドガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) の _ログの表示と管理_ を参照してください。
 
 ## 機密データ
 
@@ -110,14 +110,14 @@ GDPR では、収集された個人を特定できる情報（名前、人種、
 
 >[!NOTE]
 >
->このページでは、GDPR で考慮すべき事項の一般的な概要を説明します。 を参照してください。 _[セキュリティおよびコンプライアンスガイド](../../../security-and-compliance/privacy/gdpr.md)_ Adobe Commerceでの個人情報の保存方法について詳しくは、こちらを参照してください。 ビジネスが法的義務にどのように準拠すべきかを判断するには、法務担当者に問い合わせるか、 [公式テキスト](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+>このページでは、GDPR で考慮すべき事項の一般的な概要を説明します。 Adobe Commerceでの個人情報の保存方法について詳しくは、_[セキュリティおよびコンプライアンスガイド](../../../security-and-compliance/privacy/gdpr.md)_ を参照してください。 自社のビジネスが法的義務にどのように準拠すべきかを判断するには、法務担当者に問い合わせるか、[ 公式テキスト ](https://eur-lex.europa.eu/eli/reg/2016/679/oj) を参照してください。
 
 ## バックアップ
 
-過去 24 時間の操作について、バックアップは 1 時間ごとに実行されます。 24 時間が経過すると、バックアップはAWS EBS Snapshot サービスを使用してスケジュールに保持されます。 参照： [保持ポリシー](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#retention-policy) が含まれる _クラウドガイド_.
+過去 24 時間の操作について、バックアップは 1 時間ごとに実行されます。 24 時間が経過すると、バックアップはAWS EBS Snapshot サービスを使用してスケジュールに保持されます。 _Cloud Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#retention-policy) の [ 保持ポリシー_ を参照してください。
 
 このサービスは、冗長ストレージに独立したバックアップを作成します。 EBS ボリュームは暗号化されるため、バックアップも暗号化されます。 また、Managed Servicesは、お客様の要求に応じてオンデマンドバックアップを実行します。
 
 Managed Servicesのバックアップと回復のアプローチでは、高可用性アーキテクチャとフルシステムバックアップを組み合わせて使用します。 各プロジェクト（すべてのデータ、コード、アセット）が 3 つの異なるAWS可用性ゾーン（各ゾーンに別々のデータセンターがある）にレプリケートされます。
 
-参照： [スナップショットとバックアップ管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html) が含まれる _クラウドガイド_.
+[ クラウドガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html) の _スナップショットとバックアップの管理_ を参照してください。

@@ -47,14 +47,14 @@ ht-degree: 0%
 
 ## ベンダーバンドルの拡張機能（VBE）
 
-Adobeがすべてを削除しました [VBE](https://devdocs.magento.com/extensions/vendor/) バージョン 2.4.4 でサポートされます。ベンダーは、Adobe Commerce Marketplace でこれらの拡張機能を引き続きサポートします。
+Adobeは 2.4.4 ですべての [VBE](https://devdocs.magento.com/extensions/vendor/) を削除しました。ベンダーは、Adobe Commerce Marketplace でこれらの拡張機能を引き続きサポートします。
 
-Adobe Commerce 2.4.4 以降でこれらの拡張機能を引き続き使用する場合は、内の対応するパッケージの依存関係を更新する必要があります `composer.json` ファイル _次の前_ 2.4.4 へのアップグレード。使用するパッケージの名前とバージョンについては、ベンダーにお問い合わせください。
+Adobe Commerce 2.4.4 以降で、これらの拡張機能を引き続き使用する場合は、`composer.json` ファイル内の対応するパッケージの依存関係を更新する必要があります _アップグレードする前に_ 2.4.4 に。使用するパッケージの名前とバージョンについては、ベンダーにお問い合わせください。
 
 詳しくは、以下のAdobe Commerce Marketplace のリストを参照してください。
 
-- [Amazon ペイ](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
+- [Amazon支払 ](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
 - [Dotdigital](https://marketplace.magento.com/dotdigital-dotdigital-magento2-os-package.html)
-- [クラルナ](https://marketplace.magento.com/klarna-m2-klarna.html)
-- [頂点](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
-- [ヨッポ](https://marketplace.magento.com/yotpo-module-yotpo.html)
+- [ クルナ ](https://marketplace.magento.com/klarna-m2-klarna.html)
+- [ 頂点 ](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
+- [ ヨッポ ](https://marketplace.magento.com/yotpo-module-yotpo.html)

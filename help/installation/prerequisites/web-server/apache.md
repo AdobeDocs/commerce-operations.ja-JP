@@ -15,7 +15,7 @@ Adobe Commerceは Apache 2.4.x をサポートしています。
 
 ## Apache 必須ディレクティブ
 
-1. を設定 `AllowEncodedSlashes` サーバー設定（グローバル）または仮想ホスト設定でを使用して、URL の問題の原因となる可能性のあるエンコードされたスラッシュのデコードを回避します。 例えば、API を使用して SKU にスラッシュが含まれる製品を取得する場合は、スラッシュを変換しないでください。 サンプルブロックが完全ではなく、他のディレクティブが必要な場合。
+1. URL の問題を引き起こす可能性のあるエンコードされたスラッシュのデコードを回避するために、サーバー設定（グローバル）または仮想ホスト設定で `AllowEncodedSlashes` を設定します。 例えば、API を使用して SKU にスラッシュが含まれる製品を取得する場合は、スラッシュを変換しないでください。 サンプルブロックが完全ではなく、他のディレクティブが必要な場合。
 
    ```conf
    <VirtualHost *:443>
@@ -26,13 +26,13 @@ Adobe Commerceは Apache 2.4.x をサポートしています。
 
 ## Apache の書き換えとアクセス
 
-このトピックでは、Apache 2.4 の書き換えを有効にする方法と、の設定を指定する方法について説明します [分散構成ファイル、 `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
+このトピックでは、Apache 2.4 の書き換えを有効にする方法と、[ 分散設定ファイル `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html) の設定を指定する方法について説明します。
 
-Adobe Commerceは、サーバーの書き換えを使用します。 `.htaccess` Apache にディレクトリレベルの手順を提供する。 次の手順は、このトピックの他のすべての節にも含まれています。
+Adobe Commerceは、サーバーの書き換えと `.htaccess` き換えを使用して、Apache にディレクトリレベルの手順を提供します。 次の手順は、このトピックの他のすべての節にも含まれています。
 
-このセクションを使用して、Apache 2.4 の書き換えを有効にし、 [分散構成ファイル、 `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
+このセクションを使用して、Apache 2.4 の書き換えを有効にし、[ 分散設定ファイル、`.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html) の設定を指定します
 
-Adobe Commerceは、サーバーの書き換えを使用します。 `.htaccess` Apache にディレクトリレベルの手順を提供する。
+Adobe Commerceは、サーバーの書き換えと `.htaccess` き換えを使用して、Apache にディレクトリレベルの手順を提供します。
 
 >[!NOTE]
 >
@@ -44,13 +44,13 @@ Adobe Commerceは、サーバーの書き換えを使用します。 `.htaccess`
    a2enmod rewrite
    ```
 
-1. アプリケーションで分散されたを使用できるようにするには `.htaccess` 設定ファイルについては、のガイドラインを参照してください [Apache 2.4 ドキュメント](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
+1. アプリケーションで分散 `.htaccess` 設定ファイルを使用できるようにするには、[Apache 2.4 ドキュメント ](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) のガイドラインを参照してください。
 
    >[!TIP]
    >
-   >Apache 2.4 では、サーバーのデフォルトのサイト設定ファイルはです。 `/etc/apache2/sites-available/000-default.conf`.
+   >Apache 2.4 では、サーバーのデフォルトのサイト設定ファイルは `/etc/apache2/sites-available/000-default.conf` です。
 
-   例えば、次のコードをに追加できます `000-default.conf`:
+   例えば、次のコードを `000-default.conf` の末尾に追加できます。
 
    ```terminal
    <Directory "/var/www/html">
@@ -60,7 +60,7 @@ Adobe Commerceは、サーバーの書き換えを使用します。 `.htaccess`
 
    >[!NOTE]
    >
-   >追加のパラメーターが必要になる場合があります。 詳しくは、 [Apache 2.4 ドキュメント](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+   >追加のパラメーターが必要になる場合があります。 詳しくは、[Apache 2.4 ドキュメント ](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order) を参照してください。
 
 1. Apache 設定を変更した場合は、Apache を再起動します。
 
@@ -70,8 +70,8 @@ Adobe Commerceは、サーバーの書き換えを使用します。 `.htaccess`
 
    >[!NOTE]
    >
-   >- 以前の Apache バージョンからアップグレードした場合は、まずを探します `<Directory "/var/www/html">` または `<Directory "/var/www">` 。対象： `000-default.conf`.
-   >- の値を変更する必要があります `AllowOverride` Adobe Commerce ソフトウェアをインストールするディレクトリのディレクティブで指定します。 例えば、web サーバーの docroot にをインストールするには、次のディレクティブを編集します `<Directory /var/www>`.
+   >- 以前の Apache バージョンからアップグレードした場合は、まず `000-default.conf` で `<Directory "/var/www/html">` または `<Directory "/var/www">` を探します。
+   >- Adobe Commerce ソフトウェアをインストールするディレクトリのディレクティブで `AllowOverride` の値を変更する必要があります。 例えば、web サーバーの docroot にをインストールするには、`<Directory /var/www>` でディレクティブを編集します。
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Server version: Apache/2.4.04 (Ubuntu)
 Server built: Jul 22 2020 14:35:32
 ```
 
-- Apache が *ではない* インストール済み。以下を参照してください。
+- Apache がインストールされて *ない* 場合は、以下を参照してください。
    - [Ubuntu での Apache のインストールまたはアップグレード](#installing-apache-on-ubuntu)
    - [CentOS への Apache のインストール](#installing-apache-on-centos)
 
@@ -137,13 +137,13 @@ Server built: Jul 22 2020 14:35:32
    Server built: 2020-04-15T18:00:57
    ```
 
-1. Enable （有効） [書き換えと `.htaccess`](#apache-rewrites-and-htaccess).
+1. [rewrites and `.htaccess`](#apache-rewrites-and-htaccess) を有効にします。
 
 ### Ubuntu 上の Apache のアップグレード
 
 Apache 2.4 にアップグレードするには：
 
-1. を追加 `ppa:ondrej` apache 2.4 が含まれているリポジトリ：
+1. Apache 2.4 が含まれている `ppa:ondrej` リポジトリを追加します。
 
    ```bash
    apt-get -y update
@@ -165,7 +165,7 @@ Apache 2.4 にアップグレードするには：
 
    >[!NOTE]
    >
-   >依存関係が満たされていないために「apt-get install」コマンドが失敗した場合は、次のようなリソースを参照してください。 [https://askubuntu.com/](https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa).
+   >依存関係が満たされていないために「apt-get install」コマンドが失敗した場合は、[https://askubuntu.com/](https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa) などのリソースを参照してください。
 
 1. インストールを確認します。
 
@@ -180,13 +180,13 @@ Apache 2.4 にアップグレードするには：
    Server built: Jul 22 2020 22:46:25
    ```
 
-1. Enable （有効） [書き換えと `.htaccess`](#apache-rewrites-and-htaccess).
+1. [rewrites and `.htaccess`](#apache-rewrites-and-htaccess) を有効にします。
 
 ## CentOS への Apache のインストール
 
-Adobe Commerceを使用するには、Apache サーバーの書き換えが必要です。 で使用できるディレクティブのタイプも指定する必要があります `.htaccess`を使用します。アプリケーションでは、この値を使用して書き換えルールを指定します。
+Adobe Commerceを使用するには、Apache サーバーの書き換えが必要です。 また、`.htaccess` で使用できるディレクティブのタイプも指定する必要があります。アプリケーションでは、このタイプを使用して書き換えルールを指定します。
 
-Apache のインストールと設定は、基本的に、ソフトウェアのインストール、書き換えの有効化、指定の 3 つの手順で行います `.htaccess` ディレクティブ。
+Apache のインストールと設定は、基本的に、ソフトウェアのインストール、書き換えの有効化、`.htaccess` ディレクティブの指定の 3 つの手順で行います。
 
 ### Apache のインストール
 
@@ -217,7 +217,7 @@ Apache のインストールと設定は、基本的に、ソフトウェアの�
 
 ### CentOS の書き換えと.htaccess の有効化
 
-1. 開く `/etc/httpd/conf/httpd.conf` 編集用ファイル：
+1. ファイル `/etc/httpd/conf/httpd.conf` 開いて編集します。
 
    ```bash
    vim /etc/httpd/conf/httpd.conf`
@@ -229,7 +229,7 @@ Apache のインストールと設定は、基本的に、ソフトウェアの�
    <Directory "/var/www/html">
    ```
 
-1. の値を変更します `AllowOverride` 対象： `All`.
+1. `AllowOverride` の値を `All` に変更します。
 
    以下に例を挙げます。
 
@@ -244,7 +244,7 @@ Apache のインストールと設定は、基本的に、ソフトウェアの�
 
    >[!NOTE]
    >
-   >上記のの値 `Order` すべての場合に機能するとは限りません。 詳しくは、Apache のドキュメント（[2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)）に設定します。
+   >上記の `Order` の値は、すべての場合で機能するとは限りません。 詳しくは、Apache ドキュメント（[2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)）を参照してください。
 
 1. ファイルを保存し、テキストエディターを終了します。
 
@@ -260,7 +260,7 @@ Apache のインストールと設定は、基本的に、ソフトウェアの�
 
 ### Ubuntu の書き換えと.htaccess を有効にする
 
-1. 開く `/etc/apache2/sites-available/default` 編集用ファイル：
+1. ファイル `/etc/apache2/sites-available/default` 開いて編集します。
 
    ```bash
    vim /etc/apache2/sites-available/default
@@ -270,7 +270,7 @@ Apache のインストールと設定は、基本的に、ソフトウェアの�
 
    `<Directory "/var/www/html">`
 
-1. の値を変更します `AllowOverride` 対象： `All`.
+1. `AllowOverride` の値を `All` に変更します。
 
    例：
 
@@ -285,7 +285,7 @@ Apache のインストールと設定は、基本的に、ソフトウェアの�
 
 1. ファイルを保存し、テキストエディターを終了します。
 
-1. を使用するように Apache を設定する `mod_rewrite` モジュール：
+1. `mod_rewrite` モジュールを使用するように Apache を設定します。
 
    ```bash
    cd /etc/apache2/mods-enabled
@@ -307,7 +307,7 @@ Apache のインストールと設定は、基本的に、ソフトウェアの�
 
 ### Apache 2.4 の 403 Forbidden エラーの解決
 
-Web サイトの訪問者がサイトにアクセスできるようにするには、次のいずれかを使用します [ディレクティブを必要とする](https://httpd.apache.org/docs/2.4/howto/access.html).
+Web サイトの訪問者がサイトにアクセスできるようにするには、[Require ディレクティブ ](https://httpd.apache.org/docs/2.4/howto/access.html) のいずれかを使用します。
 
 例：
 
@@ -322,4 +322,4 @@ Web サイトの訪問者がサイトにアクセスできるようにするに�
 
 >[!NOTE]
 >
->上記のの値 `Order` すべての場合に機能するとは限りません。 詳しくは、 [Apache ドキュメント](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+>上記の `Order` の値は、すべての場合で機能するとは限りません。 詳しくは、[Apache ドキュメント ](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order) を参照してください。

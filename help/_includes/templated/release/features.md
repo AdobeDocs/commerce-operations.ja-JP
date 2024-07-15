@@ -159,7 +159,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>マルチソースInventory management</td>
+      <td>マルチSourceInventory management</td>
       <td></td>
       <td></td>
       <td></td>
@@ -297,7 +297,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Adobe Commerce用Adobe Developer App Builder</td>
+      <td>Adobe CommerceのAdobe Developer App Builder</td>
       <td></td>
       <td></td>
       <td></td>

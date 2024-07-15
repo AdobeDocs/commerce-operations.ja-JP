@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## AWS地域
 
-![AWS地域を示す図](../../../assets/playbooks/aws-regions.png)
+![AWS地域を示す図 ](../../../assets/playbooks/aws-regions.png)
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## Azure 地域
 
-![Azure 地域を示す図](../../../assets/playbooks/azure-regions.png)
+![Azure の地域を示す図 ](../../../assets/playbooks/azure-regions.png)
 
 >[!NOTE]
 >

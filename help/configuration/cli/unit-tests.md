@@ -17,19 +17,19 @@ ht-degree: 0%
 
 ## 前提条件
 
-このコマンドを実行する前に、次の操作を行います _が_ true:
+このコマンドを実行する前に、次の _必須_ は true です。
 
-- この `Magento_Developer` モジュールを有効にする必要があります。 有効にするには、次の手順を実行します。
+- `Magento_Developer` モジュールを有効にする必要があります。 有効にするには、次の手順を実行します。
 
   ```bash
   bin/magento module:enable [--force] Magento_Developer
   ```
 
-  の使用 `--force` 必要な場合にのみオプションです。
+  `--force` オプションは、必要な場合にのみ使用してください。
 
 - 目的のテストを実行するようにシステムを設定する必要があります。
 
-例えば、統合テストを実行するには、次をコピーする必要があります `dev/tests/integration/etc/install-config-mysql.php.dist` 対象： `dev/tests/integration/etc/install-config-mysql.php` 環境に合わせて変更してください。
+例えば、統合テストを実行するには、`dev/tests/integration/etc/install-config-mysql.php.dist` を `dev/tests/integration/etc/install-config-mysql.php` にコピーし、環境に合わせて変更する必要があります。
 
 ## テストの実行
 

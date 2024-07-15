@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Composer プロジェクト構造
 
-このガイドでは、 [別個のパッケージオプション](../examples.md#option-1-separate-packages) グローバルリファレンスアーキテクチャ（GRA）の例で説明します。
+このガイドでは、グローバルリファレンスアーキテクチャ（GRA）の例で説明している [separate packages option](../examples.md#option-1-separate-packages) を設定および保守する方法について説明します。
 
 ## 前提条件
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 - Git リポジトリがある
 - Composer リポジトリがある（このトピックではプライベート・パッケージ・リストをハイライト表示）
-- Composer リポジトリをミラーするように設定しました。 `repo.magento.com` および `packagist.org` リポジトリ
+- `repo.magento.com` リポジトリと `packagist.org` リポジトリをミラーリングするように Composer リポジトリを設定しました。
 
 ## メイン Git プロジェクトリポジトリ
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 └─ composer.lock
 ```
 
-次の内容をに追加します `.gitignore` ファイル：
+次の内容を `.gitignore` ファイルに追加します。
 
 ```tree
 /*
@@ -47,9 +47,9 @@ ht-degree: 0%
 
 ## 主プロジェクトの初期化
 
-1. という Git リポジトリを作成します。 `project-<region/country/brand>`.
+1. `project-<region/country/brand>` という Git リポジトリを作成します。
 
-1. 作成 `composer.json` および `composer.lock` ファイル：
+1. `composer.json` ファイルと `composer.lock` ファイルを作成します。
 
    ```bash
    composer create-project --no-install --repository-url=https://repo.magento.com/ magento/project-enterprise-edition project-<region/country/brand>
@@ -71,13 +71,13 @@ ht-degree: 0%
 
 ## モジュール以外のファイルを保存
 
-1. を追加 `app/etc/config.xml` ファイルを Git リポジトリに追加します。
+1. `app/etc/config.xml` ファイルを Git リポジトリに追加します。
 
-   作成するモジュールを使用して、他の地域やブランド固有のファイル（など）をインストールできます `.htaccess`、Googleまたは Bing 認証テキストファイル、実行可能ファイル、またはAdobe Commerce モジュールで管理されないその他の静的ファイル。
+   作成するモジュールを使用して、`.htaccess`、Google、Bing 認証テキストファイル、実行可能ファイル、Adobe Commerce モジュールで管理されないその他の静的ファイルなど、他のリージョンまたはブランド固有のファイルをインストールできます。
 
-   使用方法 `magento2-component` パッケージを入力して、ファイルのマッピングを作成し、 `composer install` および `composer update` の操作。
+   `magento2-component` タイプのパッケージを使用して、`composer install` および `composer update` の操作中にファイルをメイン Git リポジトリにコピーするためのファイルマッピングを作成します。
 
-1. 命名規則に従った Git リポジトリを作成します `component-environment-<region/country/brand>`:
+1. 命名規則 `component-environment-<region/country/brand>` に従って、Git リポジトリを作成します。
 
    ```bash
    bin/magento module:enable --all
@@ -94,7 +94,7 @@ ht-degree: 0%
    composer config -e
    ```
 
-1. を追加 `app/etc/config.php` ファイルをマッピングとして： `extra.map` 属性 `composer.json` ファイル：
+1. `app/etc/config.php` ファイルをマッピングとして、`composer.json` ファイルの `extra.map` 属性に追加します。
 
    ```json
    {
@@ -115,7 +115,7 @@ ht-degree: 0%
    }
    ```
 
-1. の検証 `composer.json` ファイルを作成して Git リポジトリにコミットします。
+1. `composer.json` ファイルを検証し、Git リポジトリにコミットします。
 
    ```bash
    composer validate
@@ -203,7 +203,7 @@ ht-degree: 0%
    git push --tags
    ```
 
-1. Composer がをコピーしたことを確認します `app/etc/config.php` ファイルの送信元 `<client>/component-environment-<region/country/brand>`.
+1. Composer が `<client>/component-environment-<region/country/brand>` から `app/etc/config.php` ファイルをコピーしたことを確認します。
 
 ## コードのデプロイ
 
@@ -211,24 +211,24 @@ Web サーバーでは、Composer を使用してコードをデプロイでき�
 
 ## 他のインスタンスおよびパッケージの追加
 
-インスタンス（地域、ブランド、その他の一意のAdobe Commerceのインストール）ごとに独自の情報を取得する必要があります **メイン プロジェクト** インスタンス， **特異的メタパッケージ**、および **環境コンポーネントパッケージ**. この **GRA メタパッケージ** は、 **共有** すべてのインスタンスで。
+各インスタンス（地域、ブランド、その他の一意のAdobe Commerceのインストール）は、独自の **メインプロジェクト** インスタンス、**固有のメタパッケージ** および **環境コンポーネントパッケージ** を取得する必要があります。 **GRA メタパッケージ** はすべてのインスタンスで **共有** する必要があります。
 
 次のいずれかの方法で、機能パッケージ（Adobe Commerce モジュール、テーマ、言語パック、ライブラリなど）およびサードパーティパッケージを要求する必要があります。
 
-- **GRA メタパッケージ** – にインストールする場合 _all_ instances
-- **インスタンス固有のメタパッケージ** – 単一のブランドまたは地域にインストールする場合
+- **GRA メタパッケージ** - _all_ インスタンスへのインストール用
+- **インスタンス固有のメタパッケージ** - 1 つのブランドまたは地域へのインストール用
 
 >[!IMPORTANT]
 >
->メインプロジェクトのにパッケージを必要としない `composer.json` に関するファイル `main` または `release` ブランチ。
+>`main` または `release` のブランチにあるメインプロジェクトの `composer.json` ファイルにパッケージを必要としません。
 
 ## 開発の準備
 
-開発のために、をインストール `develop` 管理するすべてのモジュールのバージョン。
+開発の場合は、保守するすべてのモジュールの `develop` バージョンをインストールします。
 
-分岐戦略に応じて、次のいずれかになります `develop`, `qa`, `uat`、および `main` ブランチ。 各ブランチは、 `dev-` プレフィックス。 したがって、 `develop` ブランチは、バージョンとして Composer を通じて必要になる場合があります `dev-develop`.
+ブランチ戦略に応じて、`develop`、`qa`、`uat`、`main` のブランチが存在する場合があります。 各ブランチは、`dev-` というプレフィックスとともに Composer に存在します。 そのため、`develop` ブランチは、バージョン `dev-develop` として Composer を通じて必要になる場合があります。
 
-1. 作成 `develop` すべてのモジュールとプロジェクトリポジトリに分岐します。
+1. すべてのモジュールとプロジェクトリポジトリに `develop` ブランチを作成します。
 
    ```bash
    cd ../component-environment-<region/country/brand>
@@ -262,7 +262,7 @@ Web サーバーでは、Composer を使用してコードをデプロイでき�
    "magento-services/component-environment-fantasy-corp:dev-develop as 0.999"
    ```
 
-   前の手順では、に次の行が生成されます `composer.json` ファイル：
+   前の手順では、`composer.json` ファイルに次の行を生成します。
 
    ```json
    "require": {
@@ -274,4 +274,4 @@ Web サーバーでは、Composer を使用してコードをデプロイでき�
 
    >[!IMPORTANT]
    >
-   >**結合しない** これらの `composer.json` 実稼動ブランチへのファイルの変更。 安定したバージョンのパッケージのみを次の場所にインストールします： `release` および `main` ブランチ。 これらの依存関係は、 `qa` ブランチと、その他の非メインブランチ。
+   >**結合しないでください** これらの `composer.json` ファイルの変更は、実稼動ブランチに対して行われます。 `release` および `main` のブランチには、安定したバージョンのパッケージのみをインストールしてください。 これらの依存関係は、`qa` のブランチと、その他の非メインブランチに対して定義できます。

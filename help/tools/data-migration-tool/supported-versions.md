@@ -1,6 +1,6 @@
 ---
 title: データ移行でサポートされるバージョン
-description: がインストールされているMagento 1 およびMagento 2 のバージョンについて説明します [!DNL Data Migration Tool] のサポート。
+description: がサポートするMagento 1 およびMagento 2 のバージョンについて説明  [!DNL Data Migration Tool]  ます。
 exl-id: ba6398b4-66be-4d33-a4d3-a9f0aaa0fa81
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # データ移行でサポートされるバージョン
 
-この [!DNL Data Migration Tool] 移行をサポート _から_ 次のバージョン：
+[!DNL Data Migration Tool] は、次のバージョンからの移行 _サポートし_ います。
 
 * Adobe Commerce:
    * 1.11.x
@@ -34,4 +34,4 @@ Magento Open SourceからAdobe Commerceに移行する場合、次のバージ�
 
 ## バージョンへの移行
 
-サポートされているバージョン（移行先のバージョン）については、 [!DNL Data Migration Tool]の [リリースページ](https://github.com/magento/data-migration-tool/releases).
+サポートされているバージョン（移行先）については、[!DNL Data Migration Tool] の [ リリースページ ](https://github.com/magento/data-migration-tool/releases) を参照してください。

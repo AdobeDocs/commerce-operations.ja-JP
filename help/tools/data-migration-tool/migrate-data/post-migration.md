@@ -1,6 +1,6 @@
 ---
-title: データ移行後の手順
-description: を使用した後の手順について説明します [!DNL Data Migration Tool] をクリックして、Magento1 からMagento2 にデータを移行します。
+title: Postとデータの移行手順
+description: を使用してMagento 1 からMagento 2 にデータを移行した後に  [!DNL Data Migration Tool]  るべき手順を説明します。
 exl-id: 00171c41-ccea-4ebe-8958-becb9aa09973
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# データ移行後の手順
+# Postとデータの移行手順
 
 移行を完了し、新しいMagento2 サイトを十分にテストしたら、次の作業を実行します。
 

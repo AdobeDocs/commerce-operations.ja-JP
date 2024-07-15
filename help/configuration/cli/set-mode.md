@@ -13,15 +13,15 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-セキュリティと使いやすさを向上させるために、切り替えるコマンドを追加しました [アプリケーションモード](../bootstrap/application-modes.md) 開発者から実稼動環境へ、またはその逆も同様です。
+セキュリティと使いやすさを向上させるために、開発者から実稼動環境へ、またはその逆に [ アプリケーションモード ](../bootstrap/application-modes.md) を切り替えるコマンドを追加しました。
 
-静的ビューファイルが以下に入力されるので、実稼動モードのパフォーマンスが向上します。 `pub/static` ディレクトリと（コードのコンパイルにより）。
+実稼動モードでは、静的ビューファイルがロー `pub/static` ルディレクトリに入力され、コードがコンパイルされるので、パフォーマンスが向上します。
 
 >[!INFO]
 >
->バージョン 2.0.6 以降では、デフォルト、開発、実稼動の各モードに切り替えても、Commerceはファイルまたはディレクトリの権限を明示的に設定しません。 他のモードとは異なり、開発者モードと実稼動モードは `env.php` ファイル。 クラウドインフラストラクチャー上のAdobe Commerceでは、実稼動モードとメンテナンスモードのみをサポートしています。
+>バージョン 2.0.6 以降では、デフォルト、開発、実稼動の各モードに切り替えても、Commerceはファイルまたはディレクトリの権限を明示的に設定しません。 他のモードとは異なり、開発者モードと実稼動モードは `env.php` ファイルで設定されます。 クラウドインフラストラクチャー上のAdobe Commerceでは、実稼動モードとメンテナンスモードのみをサポートしています。
 >
->参照： [Commerceの所有権と開発および実稼働環境での権限](../deployment/file-system-permissions.md).
+>詳しくは、[ 開発および実稼動におけるCommerceの所有権と権限 ](../deployment/file-system-permissions.md) を参照してください。
 
 開発者モードまたは実稼動モードに変更する場合は、次のディレクトリの内容を消去します。
 
@@ -35,16 +35,16 @@ pub/static
 
 例外：
 
-- `.htaccess` ファイルは削除されません
-- `pub/static` 静的コンテンツのバージョンを指定するファイルが含まれます。このファイルは削除されません
+- `.htaccess` 個のファイルが削除されません
+- `pub/static` には、静的コンテンツのバージョンを指定するファイルが含まれています。このファイルは削除されません
 
 >[!INFO]
 >
->デフォルトでは、Commerceはを使用します `var` キャッシュ、ログおよびコンパイル済みコードを格納するディレクトリ。 このディレクトリはカスタマイズできますが、このガイドでは、次のように想定しています `var`.
+>デフォルトでは、Commerceは `var` ディレクトリを使用して、キャッシュ、ログ、コンパイル済みコードを保存します。 このディレクトリはカスタマイズできますが、このガイドでは `var` と想定しています。
 
 ## 現在のモードを表示
 
-これを行う最も簡単な方法は、このコマンドを [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md). ホスティングを共有している場合、これはプロバイダーからサーバーにログインするためのユーザーです。 プライベートサーバーがある場合、通常はCommerce サーバーのローカルユーザーアカウントになります。
+これを行う最も簡単な方法は、このコマンドを [ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) として実行することです。 ホスティングを共有している場合、これはプロバイダーからサーバーにログインするためのユーザーです。 プライベートサーバーがある場合、通常はCommerce サーバーのローカルユーザーアカウントになります。
 
 コマンドの使用法：
 
@@ -60,7 +60,7 @@ Current application mode: {mode}. (Note: Environment variables may override this
 
 ここで、
 
-- **`{mode}`** 次のいずれかになります `default`, `developer`、または `production`
+- **`{mode}`** は、`default`、`developer`、`production` のいずれかです
 
 ## モードの変更
 
@@ -72,9 +72,9 @@ bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 
 ここで、
 
-- **`{mode}`** は必須で、次のいずれかを指定できます `developer` または `production`
+- **`{mode}`** が必要です。`developer` または `production` を指定できます
 
-- **`--skip-compilation`** スキップに使用できるオプションのパラメーターです [コードコンパイル](../cli/code-compiler.md) 実稼動モードに変更した場合。
+- **`--skip-compilation`** は、実稼動モードに変更する際に [ コードのコンパイル ](../cli/code-compiler.md) をスキップするために使用できるオプションのパラメーターです。
 
 次に例を示します。
 
@@ -129,7 +129,7 @@ Enabled production mode.
 
 実稼動モードから開発者モードに変更する場合は、予期しないエラーを防ぐために、生成されたクラスおよびプロキシなどのオブジェクトマネージャーエンティティをクリアする必要があります。 その後、モードを変更できます。 次の手順を使用します。
 
-1. 実稼動モードから開発者モードに変更する場合は、の内容を削除します `generated/code` および `generated/metadata` ディレクトリ：
+1. 実稼動モードから開発者モードに変更する場合は、`generated/code` ディレクトリと `generated/metadata` ディレクトリの内容を削除します。
 
    ```bash
    rm -rf <magento_root>/generated/metadata/* <magento_root>/generated/code/*
@@ -161,6 +161,6 @@ Enabled default mode.
 
 ### どこからでも CLI コマンドを実行
 
-[どこからでも CLI コマンドを実行](../cli/config-cli.md#config-install-cli-first).
+[CLI コマンドをどこからでも実行する ](../cli/config-cli.md#config-install-cli-first)。
 
-を追加していない場合 `<Commerce-install-directory>/bin` お使いのシステム `PATH`を選択した場合は、コマンド自体を実行したときにエラーが発生することがあります。
+`<Commerce-install-directory>/bin` をシステム `PATH` に追加していない場合は、コマンド自体を実行したときにエラーが発生する可能性があります。

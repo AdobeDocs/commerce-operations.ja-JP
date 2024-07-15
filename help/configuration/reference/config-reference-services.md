@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # サービス設定パスのリファレンス
 
-この節では、の管理画面でオプションに使用できる変数名と設定パスを示します。 **ストア** > 設定 > **設定** > **サービス**.
+この節では、**ストア**/設定/**設定**/**サービス** の管理でオプションに使用できる変数名と設定パスを示します。
 
-この [`magento app:config:dump` コマンド](../cli/export-configuration.md) これらの値を共有構成ファイルに書き込みます。 `app/etc/config.php`（ソース管理にする必要があります）。 必要に応じて設定を上書きしたり、重要な設定を指定するには、を参照してください。 [環境変数を使用して設定を上書きする](override-config-settings.md#environment-variables). このトピックでは、 _ではない_ list [機密性の高いシステム固有の値](config-reference-sens.md).
+[`magento app:config:dump` コマンドは ](../cli/export-configuration.md) これらの値をソース管理にある共有構成ファイル `app/etc/config.php` に書き込みます。 任意の構成設定を上書きしたり、重要な設定を指定したりするには、[ 環境変数を使用して構成設定を上書き ](override-config-settings.md#environment-variables) を参照してください。 このトピックでは _機密の値とシステム固有の値 [ は_ 表示されません ](config-reference-sens.md)。
 
 ## Commerce Web API のパス
 
-これらの設定値は、の管理者で使用できます。 **ストア** > 設定 > **設定** > **サービス** > **Web API**.
+これらの設定値は、管理者の **ストア**/設定/**設定**/**サービス**/**Web API** で利用できます。
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## OAuth パス
 
-これらの設定値は、の管理者で使用できます。 **ストア** > 設定 > **設定** > **サービス** > **OAuth**.
+これらの設定値は、管理者の **ストア**/設定/**設定**/**サービス**/**OAuth** で使用できます。
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|
@@ -38,7 +38,7 @@ ht-degree: 0%
 | クリーンアップ確率 | `oauth/cleanup/cleanup_probability` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 有効期限 | `oauth/cleanup/expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 有効期限 | `oauth/consumer/expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| OAuth コンシューマー資格情報 HTTP ポスト maxredirectors | `oauth/consumer/post_maxredirects` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| OAuth コンシューマー資格情報 HTTP POST タイムアウト | `oauth/consumer/post_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| OAuth コンシューマー資格情報 HTTP Post maxredirectors | `oauth/consumer/post_maxredirects` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| OAuth コンシューマー資格情報 HTTP Post タイムアウト | `oauth/consumer/post_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}

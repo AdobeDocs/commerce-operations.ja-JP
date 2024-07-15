@@ -18,18 +18,18 @@ Web サーバーは Web サーバーではなく、受信 HTTP リクエスト�
 
 **Apache 2.4 リッスンポートを変更するには**:
 
-1. 開く `/etc/httpd/conf/httpd.conf` テキストエディター。
-1. を見つけます。 `Listen` ディレクティブ。
-1. リッスンポートの値をに変更します。 `8080`. （利用可能な任意のリッスンポートを使用できます）。
-1. 変更をに保存します。 `httpd.conf` をクリックして、テキストエディターを終了します。
+1. `/etc/httpd/conf/httpd.conf` をテキストエディターで開きます。
+1. `Listen` ディレクティブを見つけます。
+1. listen ポートの値を `8080` に変更します。 （利用可能な任意のリッスンポートを使用できます）。
+1. `httpd.conf` への変更を保存し、テキストエディターを終了します。
 
 ## Varnish システムの設定を変更します。
 
 Varnish システムの設定を変更するには：
 
-1. を使用した As a ユーザー `root` 権限を持つ場合は、Vanish 設定ファイルをテキストエディターで開きます。
+1. `root` 権限を持つユーザーとして、Vanish 設定ファイルをテキストエディターで開きます。
 
-   - CentOS 6: `/etc/sysconfig/varnish`
+   - CentOS 6:`/etc/sysconfig/varnish`
    - CentOS 7: `/etc/varnish/varnish.params`
    - Debian: `/etc/default/varnish`
    - Ubuntu: `/etc/default/varnish`
@@ -40,7 +40,7 @@ Varnish システムの設定を変更するには：
    VARNISH_LISTEN_PORT=80
    ```
 
-   Varnish 4.x の場合は、DAEMON_OPTS に以下に対する正しいリスニングポートが含まれていることを確認してください。 `-a` パラメータ（VARNISH_LISTEN_PORT が正しい値に設定されている場合も含む）:
+   Varnish 4.x の場合、DAEMON_OPTS に `-a` パラメータの正しいリスニング ポートが含まれていることを確認してください（VARNISH_LISTEN_PORT が正しい値に設定されている場合でも）。
 
    ```conf
    DAEMON_OPTS="-a :80 \
@@ -54,17 +54,17 @@ Varnish システムの設定を変更するには：
 
 ### デフォルトの VCL の修正
 
-この節では、Varnish が HTTP 応答ヘッダーを返すための最小限の設定を提供する方法について説明します。 これにより、設定する前に、Varnish が機能することを確認できます [!DNL Commerce] ワニスを使用するアプリケーション。
+この節では、Varnish が HTTP 応答ヘッダーを返すための最小限の設定を提供する方法について説明します。 これにより、[!DNL Commerce] アプリケーションを Varnish を使用するように設定する前に、Varnish が機能することを確認できます。
 
 ワニスを最小限に設定するには：
 
-1. バックアップ `default.vcl`:
+1. `default.vcl` のバックアップ：
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
-1. 開く `/etc/varnish/default.vcl` テキストエディター。
+1. `/etc/varnish/default.vcl` をテキストエディターで開きます。
 1. 次のスタンザを探します。
 
    ```conf
@@ -74,11 +74,11 @@ Varnish システムの設定を変更するには：
    }
    ```
 
-1. の値を `.host` Varnish の完全修飾ホスト名または IP アドレスとリスニングポートを使用します。 _バックエンド_ または _公開元サーバー_&#x200B;つまり、コンテンツのニスを提供するサーバーは加速します。
+1. `.host` の値を、Varnish _バックエンド_ または _オリジンサーバー_ の完全修飾ホスト名または IP アドレスおよびリッスンポートに置き換えます。つまり、Varnish が高速化するコンテンツを提供するサーバーです。
 
-   通常、これは web サーバーです。 参照： [バックエンドサーバー](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) が含まれる _ワニスガイド_.
+   通常、これは web サーバーです。 [Varnish ガイド ](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) の _バックエンドサーバー_ を参照してください。
 
-1. の値を `.port` を web サーバーのリッスンポートに置き換えます（この例では 8080）。
+1. `.port` の値を web サーバーのリッスンポート（この例では 8080）に置き換えます。
 
    例：Apache がホスト 192.0.2.55 にインストールされ、Apache がポート 8080 をリッスンしている
 
@@ -91,9 +91,9 @@ Varnish システムの設定を変更するには：
 
    >[!INFO]
    >
-   >Varnish と Apache が同じホスト上で実行されている場合、Adobeでは IP アドレスまたはホスト名を使用し、を使用しないことをお勧めします `localhost`.
+   >Varnish と Apache が同じホスト上で実行されている場合、Adobeは `localhost` ではなく、IP アドレスまたはホスト名を使用することをお勧めします。
 
-1. 変更をに保存します。 `default.vcl` をクリックして、テキストエディターを終了します。
+1. `default.vcl` への変更を保存し、テキストエディターを終了します。
 
 1. Varnish を再起動します。
 
@@ -116,7 +116,7 @@ varnishd -d -f /etc/varnish/default.vcl
 
 ## ワニスが機能していることを確認します
 
-次の節では、Varnish が機能していることを確認する方法について説明しますが、 _なし_ これを使用するようにCommerceを設定します。 Commerceを設定する前に、これを試してください。
+次の節では、Varnish が機能しているが、それを使用するようにCommerceを設定 _せずに_ 確認する方法について説明します。 Commerceを設定する前に、これを試してください。
 
 以下のセクションで説明するタスクを、示された順序で実行します。
 
@@ -137,7 +137,7 @@ Varnish をサービスとして起動できない場合は、次のようにコ
 
 1. Varnish 子プロセスを開始します。
 
-   プロンプトが表示されたら、と入力します `start`
+   プロンプトが表示されたら、`start` と入力します
 
    正常に開始されたことを確認する次のメッセージが表示されます。
 
@@ -168,9 +168,9 @@ tcp        0      0 ::1:48509                   :::*                        LIST
 
 前述の例では、ポート 80 で動作する Varnish と、ポート 8080 で動作する Apache を示しています。
 
-の出力が表示されない場合 `varnishd`、ワニスが実行されていることを確認してください。
+`varnishd` の出力が表示されない場合は、Varnish が実行されていることを確認します。
 
-参照： [`netstat` オプション](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
+[`netstat` のオプションを参照してください ](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html)。
 
 ## Commerce ソフトウェアのインストール
 
@@ -185,7 +185,7 @@ XID: 303394517
 Varnish cache server
 ```
 
-このエラーが発生した場合は、を編集します `default.vcl` にタイムアウトを追加 `backend` stanza は次のように記述します。
+このエラーが発生した場合は、`default.vcl` を編集して、`backend` のスタンザに次のようにタイムアウトを追加します。
 
 ```conf
 backend default {
@@ -199,11 +199,11 @@ backend default {
 
 これで、任意のページから返されたHTMLレスポンスヘッダーを確認することで、Varnish がページを提供していることを確認できます。
 
-ヘッダーを確認する前に、Commerceを開発者モードに設定する必要があります。 それを行う方法はいくつかありますが、最も簡単なのは変更することです `.htaccess` Commerce アプリケーションルートのローカルファイルに書き込みます。 を使用することもできます [`magento deploy:mode:set`](../cli/set-mode.md) コマンド。
+ヘッダーを確認する前に、Commerceを開発者モードに設定する必要があります。 それには複数の方法があります。最も簡単な方法は、Commerce アプリケーションのルートの `.htaccess` を変更することです。 [`magento deploy:mode:set`](../cli/set-mode.md) コマンドを使用することもできます。
 
 ### Commerceを開発者モードに設定
 
-Commerceを開発者モードに設定するには、 [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) コマンド。
+Commerceを開発者モードに設定するには、[`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) コマンドを使用します。
 
 ### Varnish ログを見る
 
@@ -232,13 +232,13 @@ Web ブラウザーで、任意のCommerce ページに移動します。
 -   ReqHeader      Origin: http://10.249.151.10
 ```
 
-このようなヘッダーで _ではない_ 表示、ワニスを停止、チェックしてください `default.vcl`、およびもう一度試してください。
+このようなヘッダーが表示 _されない_ 場合は、Varnish を停止し、`default.vcl` を確認して、もう一度試してください。
 
 ### HTML応答ヘッダーの確認
 
 応答ヘッダーを調べる方法はいくつかあり、ブラウザーのプラグインやブラウザーインスペクターを使用する方法などがあります。
 
-次の例では、を使用しています `curl`. このコマンドは、HTTP を使用してCommerce サーバーにアクセスできる任意のマシンから入力できます。
+次の例では、`curl` を使用しています。 このコマンドは、HTTP を使用してCommerce サーバーにアクセスできる任意のマシンから入力できます。
 
 ```bash
 curl -I -v --location-trusted '<your Commerce base URL>'

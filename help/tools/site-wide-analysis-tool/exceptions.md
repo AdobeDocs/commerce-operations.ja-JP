@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Exceptions]'
-description: について説明します [!UICONTROL Exceptions] タブ [!DNL Site-Wide Analysis Tool]使用するタイミング、メリットおよびベストプラクティスです。
+description: の「[!UICONTROL Exceptions]」タブ、使用するタイミング  [!DNL Site-Wide Analysis Tool] メリット、ベストプラクティスについて説明します。
 exl-id: bd793536-b95c-47db-9372-33c00be8e144
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # [!DNL Exceptions]
 
-この [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] ページには、サイト ログ ファイルのエラー/例外が表示されます。 例外は、既知の解決策がある場合とない場合がある異常な状態です。
+[!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] ページには、サイト ログ ファイルのエラー/例外が表示されます。 例外は、既知の解決策がある場合とない場合がある異常な状態です。
 
-このページには、次の情報が表示されます [!UICONTROL Last Detected] （日付/時刻（UTC））、 [!UICONTROL Exception Detail]、および [!UICONTROL Count] その日付に例外が発生した回数。
+このページに表示される情報には、[!UICONTROL Last Detected] （日付/時刻を UTC で表す）、[!UICONTROL Exception Detail]、その日付に例外が発生した [!UICONTROL Count] （発生回数）が含まれます。
 
 ## 使用するタイミング
 
-の使用 [!UICONTROL Exceptions] Adobe Commerce プロジェクトのログファイル、エラー/例外ログを表示するページ。 これらは、Adobe Commerceのビルドとデプロイのフック、クラウドサービスおよびAdobe Commerce アプリケーションに関連する問題のトラブルシューティングに役立ちます。
+[!UICONTROL Exceptions] ページを使用して、Adobe Commerce プロジェクトのログファイルのエラー/例外ログを確認します。 これらは、Adobe Commerceのビルドとデプロイのフック、クラウドサービスおよびAdobe Commerce アプリケーションに関連する問題のトラブルシューティングに役立ちます。
 
 ## 利点
 
@@ -27,4 +27,4 @@ ht-degree: 0%
 
 ## ベストプラクティス
 
-を監視する [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] ページを表示して、例外が発生したことを確認します。 詳しくは、を参照してください [ログの表示と管理](https://devdocs.magento.com/cloud/project/log-locations.html) 開発者向けドキュメントを参照してください。
+[!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] ページを監視して、例外が発生したかどうかを確認します。 詳しくは、開発者向けドキュメントの [ ログの表示と管理 ](https://devdocs.magento.com/cloud/project/log-locations.html) を参照してください。

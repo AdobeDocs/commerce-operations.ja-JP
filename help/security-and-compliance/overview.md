@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## セキュリティ
 
-- [Adobe製品のセキュリティ](https://helpx.adobe.com/security.html):Adobe Commerceの最新のパッチ、セキュリティアップデート、ベストプラクティスについて説明します。
-- [Adobe信託センター](https://www.adobe.com/trust.html)：すべてのAdobeクラウドサービスについて、運用状態、セキュリティ、プライバシー、コンプライアンスに関する入手可能な最新の情報にアクセスします。
-- [サイト全体分析ツール](../tools/site-wide-analysis-tool/dashboard.md)：セキュリティスキャン、提供終了のサービス、セキュリティの推奨事項など、Adobe Commerce サイトに関する合理化されたセキュリティインサイトを表示します。
+- [Adobe製品セキュリティ ](https://helpx.adobe.com/security.html):Adobe Commerceの最新のパッチ、セキュリティアップデート、ベストプラクティスについて説明します。
+- [Adobeのセキュリティ センター ](https://www.adobe.com/trust.html)：すべてのAdobe クラウド サービスの稼働状態、セキュリティ、プライバシー、コンプライアンスに関する情報のうち、最新のものをご利用いただけます。
+- [Site-Wide Analysis Tool](../tools/site-wide-analysis-tool/dashboard.md)：セキュリティスキャン、提供終了のサービス、セキュリティに関する推奨事項など、Adobe Commerce サイトに関する合理化されたセキュリティインサイトを表示します。
 
 ## 対応
 
-マーチャントは、安全な環境、管轄区域での法的要件、オンラインコマースのベストプラクティスを維持するために、業界のガイドラインを満たす義務があります。 ビジネスの観点から詳しくは、 [ストアのプライバシーポリシー](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html).
+マーチャントは、安全な環境、管轄区域での法的要件、オンラインコマースのベストプラクティスを維持するために、業界のガイドラインを満たす義務があります。 ビジネスの観点から詳しくは、[ ストアプライバシーポリシー ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html) を参照してください。
 
 このコンプライアンスに関するドキュメントでは、Adobe Commerceのインストール環境が特定のプライバシー保護法の要件に確実に準拠するための技術情報を提供します。 これらの要件の一部では、マーチャントはコンプライアンスを達成するために追加の開発作業を完了する必要があります。 詳しくは、次のトピックを参照してください。
 
@@ -30,4 +30,4 @@ ht-degree: 0%
 
 ## コンプライアンスツール
 
-- [プライバシー JavaScript ライブラリ](privacy/javascript-library.md)
+- [プライバシーJavaScript ライブラリ](privacy/javascript-library.md)

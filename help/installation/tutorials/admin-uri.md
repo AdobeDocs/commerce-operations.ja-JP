@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # 管理 URI の表示または変更
 
-このコマンドを実行する前に、次の操作が必要です [デプロイメント設定の作成または更新](deployment.md).
+このコマンドを実行する前に、[ 展開構成を作成または更新 ](deployment.md) する必要があります。
 
 ## 管理 URI の表示
 
-ここでは、コマンドラインを使用して Admin Uniform Resource Identifier （[URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)）に設定します。
+この節では、コマンドラインを使用して Admin Uniform Resource Identifier （[URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)）を表示する方法について説明します。
 
 コマンドオプション：
 
@@ -30,7 +30,7 @@ bin/magento info:adminuri
 Admin Panel URI: /admin_1wgrah
 ```
 
-また、管理者 URI は次の場所でも確認できます `<magento_root>/app/etc/env.php`. スニペットは次のとおりです。
+また、`<magento_root>/app/etc/env.php` で管理 URI を表示することもできます。 スニペットは次のとおりです。
 
 ```php?start_inline=1
   'backend' =>
@@ -41,4 +41,4 @@ Admin Panel URI: /admin_1wgrah
 
 ## 管理者 URL の変更
 
-管理 URI を変更するには、 [`magento setup:config:set`](deployment.md) コマンド。
+管理 URI を変更するには、[`magento setup:config:set`](deployment.md) コマンドを使用します。

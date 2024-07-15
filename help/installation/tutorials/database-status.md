@@ -11,7 +11,7 @@ ht-degree: 3%
 
 # データベースのステータスの確認
 
-このコマンドを実行する前に、次の操作が必要です [デプロイメント設定の作成または更新](deployment.md).
+このコマンドを実行する前に、[ 展開構成を作成または更新 ](deployment.md) する必要があります。
 
 ## コマンドの使用法
 
@@ -34,5 +34,5 @@ All modules are up to date.
 | 終了コード | 説明 | 推奨されるアクション |
 |--------------|--------------|---------------|
 | 0 | 標準 | なし |
-| 1 | 一部のモジュールでは、データベースよりも新しいまたは古いコードバージョンを使用します | 実行 [`magento setup:upgrade`](database-upgrade.md) データベーススキーマを更新してを実行するには、次の手順を実行します `composer update` アプリケーションのルートディレクトリからコンポーネントの依存関係を更新 |
-| 2 | `magento setup:upgrade` は必須です | [`magento setup:upgrade`](database-upgrade.md) データベーススキーマを更新するには |
+| 1 | 一部のモジュールでは、データベースよりも新しいまたは古いコードバージョンを使用します | [`magento setup:upgrade`](database-upgrade.md) を実行してデータベーススキーマを更新し、アプリケーションのルートディレクトリから `composer update` を実行して、コンポーネントの依存関係を更新します |
+| 2 | `magento setup:upgrade` は必須です | データベーススキーマを更新できませ [`magento setup:upgrade`](database-upgrade.md) でした |

@@ -22,7 +22,7 @@ ht-degree: 0%
 - リポジトリーコード生成（API 用に生成されたコード）
 - サービスデータ属性の生成（データオブジェクト用に生成された拡張クラス）
 
-コードのコンパイルクラスは、 [\Magento\Setup\Module\Di\App\Task\Operation][operation] 名前空間。
+コード コンパイル クラスは、[\Magento\Setup\Module\Di\App\Task\Operation][operation] 名前空間にあります。
 
 シングルテナントコンパイラーを実行するには：
 
@@ -44,9 +44,9 @@ Commerce アプリケーションのインストール前にコードをコン�
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   の使用 `[-c|--clear-static-content]` 静的なコンテンツを消去するオプション。 これは、以前にモジュールを有効または無効にしていて、以前にモジュールに対して生成された静的コンテンツをクリアする必要がある場合に必要です。
+   静的コンテンツをクリアするには、`[-c|--clear-static-content]` オプションを使用します。 これは、以前にモジュールを有効または無効にしていて、以前にモジュールに対して生成された静的コンテンツをクリアする必要がある場合に必要です。
 
-   参照： [モジュールを有効にする](../../installation/tutorials/manage-modules.md).
+   [ モジュールの有効化 ](../../installation/tutorials/manage-modules.md) を参照してください。
 
 1. コードをコンパイルします。
 
@@ -58,7 +58,7 @@ Commerce アプリケーションのインストール前にコードをコン�
    Generated code and dependency injection configuration successfully.
    ```
 
-データベースを使用せずにコードをコンパイルするには、次を参照してください。 [Magentoをインストールせずに静的ビューファイルを展開する](../cli/static-view-file-deployment.md).
+データベースを使用せずにコードをコンパイルするには、[Magentoをインストールせずに静的ビューファイルをデプロイする ](../cli/static-view-file-deployment.md) を参照してください。
 
 <!-- link definitions -->
 

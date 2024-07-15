@@ -19,13 +19,14 @@ ht-degree: 0%
 
 ## Adobe CommerceのGraphQL キャッシュ
 
-ユーザーのブラウザーまたはAEM パブリッシャーがAdobe CommerceをGraphQLを呼び出すと、特定の呼び出しが Fastly にキャッシュされます。 キャッシュされるクエリは、通常、非個人データが含まれ、頻繁に変更される可能性が低いクエリです。 例えば、categories、categoryList、products などです。 明示的にキャッシュされないプロパティは、定期的に変更されるプロパティであり、キャッシュされた場合は個人データやサイト操作（買い物かごや customerPaymentTokens などのクエリなど）にリスクが生じる可能性があります。
+ユーザーのブラウザーまたはAEM パブリッシャーがGraphQLをAdobe Commerceしてを呼び出すと、特定の呼び出しがキャッシュされます
+Fastly で。 キャッシュされるクエリは、通常、非個人データが含まれ、頻繁に変更される可能性が低いクエリです。 例えば、categories、categoryList、products などです。 明示的にキャッシュされないプロパティは、定期的に変更されるプロパティであり、キャッシュされた場合は個人データやサイト操作（買い物かごや customerPaymentTokens などのクエリなど）にリスクが生じる可能性があります。
 
 GraphQLでは、1 回の呼び出しで複数のクエリを実行できます。 Adobe Commerceがキャッシュしないクエリを 1 つだけ指定し、その他のキャッシュ可能でない多くのクエリを指定した場合、Adobe Commerceは、呼び出しですべてのクエリのキャッシュをバイパスすることに注意してください。 キャッシュ可能な可能性のあるクエリが意図せずにバイパスされないようにするために、複数のクエリを組み合わせる場合は、開発者がこの点を考慮する必要があります‡
 
 >[!NOTE]
 >
-> キャッシュ可能クエリとキャッシュ不可クエリについて詳しくは、Adobe Commerceを参照してください [開発者向けドキュメント](https://devdocs.magento.com/guides/v2.4/graphql/caching.html).
+> キャッシュ可能なクエリとキャッシュ不可クエリについて詳しくは、Adobe Commerce[ 開発者向けドキュメント ](https://devdocs.magento.com/guides/v2.4/graphql/caching.html) を参照してください。
 
 ## カタログ フラット テーブル
 
@@ -41,9 +42,9 @@ Fastly オリジンシールドは、Adobe Commerce管理者の Fastly 設定バ
 
 Fastly オリジンシールドを有効にすると、Fastly Image Optimizer もアクティブになります。 商品カタログ画像がAdobe Commerceに保存されている場合、このサービスを利用すれば、リソースを集中的に消費する商品カタログ画像の変換処理をすべて、Fastly にオフロードしたり、Adobe Commerce オリジンからオフロードしたりできます。 また、画像がエッジロケーションで変換され、Adobe Commerce オリジンに戻るリクエストの数を減らすことで待ち時間をなくすことで、ページの読み込み時間についても、エンドユーザーの応答時間が改善されます。
 
-Fastly の画像の最適化は、オリジンシールドが有効化された後に限り、管理の Fastly 設定で「ディープイメージの最適化を有効化」することで有効化できます。 Fastly での画像の最適化の設定について詳しくは、Adobe Commerceを参照してください [開発者向けドキュメント](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html).
+Fastly の画像の最適化は、オリジンシールドが有効化された後に限り、管理の Fastly 設定で「ディープイメージの最適化を有効化」することで有効化できます。 Fastly での画像の最適化の設定について詳しくは、Adobe Commerce [ 開発者向けドキュメント ](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) を参照してください。
 
-![Adobe Commerce Admin での Fastly 画像最適化設定のスクリーンショット](../assets/commerce-at-scale/image-optimization.svg)
+![Adobe Commerce Admin での Fastly 画像最適化設定のスクリーンショット ](../assets/commerce-at-scale/image-optimization.svg)
 
 ## 未使用のモジュールを無効にする
 
@@ -57,7 +58,7 @@ Adobe Commerce インスタンスで極端な負荷が予想される場合は�
 
 参考までに、通常の負荷がかかる環境では、スレーブ接続を有効にするとパフォーマンスが 10～15% 低下します。 しかし、負荷が高くトラフィックが多いクラスターでは、パフォーマンスが約 10～15% 向上します。 したがって、この設定が負荷状態のパフォーマンス時間にとって有益かどうかを評価するには、予想されるトラフィックレベルで環境を負荷テストすることが重要です。
 
-mysql と redis のスレーブ接続を有効/無効にするには、 `.magento.env.yaml` 次のファイルが含まれます。
+mysql と redis のスレーブ接続を有効/無効にするには、`.magento.env.yaml` ファイルを編集して以下を含める必要があります。
 
 ```
 stage:

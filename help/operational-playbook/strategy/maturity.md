@@ -17,7 +17,7 @@ ht-degree: 0%
 
 次の図に、成熟度レベルでの様々なニーズの概要を示します。
 
-![成熟度レベルをまたいだニーズの図](../../assets/playbooks/maturity-levels.png)
+![ 成熟度レベルをまたいだニーズの図 ](../../assets/playbooks/maturity-levels.png)
 
 ## 成熟度レベル
 

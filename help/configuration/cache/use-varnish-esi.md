@@ -1,6 +1,6 @@
 ---
 title: ワニス ESI ブロック
-description: エッジサイドインクルードと、それを使用して web ページを埋め込む方法について説明します。
+description: Edge サイドインクルードと、それを使用して web ページを埋め込む方法について説明します。
 badge: label="執筆：Konstantin G" type="Informative" url="https://github.com/goivvy" tooltip="コンスタンチン G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ワニス ESI ブロック
 
-エッジサイドインクルード（ESI）は、web ページを他の web ページに含めるために使用できる特別なディレクティブです。
+Edge サイドインクルード （ESI）は、他の web ページに web ページを含めるために使用できる特別なディレクティブです。
 
 例：
 
@@ -23,14 +23,14 @@ ht-degree: 0%
 </div>
 ```
 
-ワニスは次の場所からコンテンツを取得します `http://domain.com/index.php/page_cache/block/esi/blocks` を作成して、 `<esi>` これでタグ付けします。
+Varnish は `http://domain.com/index.php/page_cache/block/esi/blocks` からコンテンツを取得し、`<esi>` タグを置き換えます。
 
 ## Commerceとワニス ESI
 
 次の条件を満たすと、Commerce フレームワークによって ESI タグが作成されます。
 
-- キャッシュアプリケーションはに設定されます `Varnish Cache`
-- XML レイアウト `block` 要素がで追加される `ttl` 属性
+- キャッシュアプリケーションは `Varnish Cache` に設定されています
+- `ttl` 属性を持つ XML レイアウト `block` 要素が追加される
 
 ### 例
 
@@ -42,7 +42,7 @@ ht-degree: 0%
    </referenceContainer>
 ```
 
-上記の例では、 `block` 要素が次からコンテンツを追加 `esi.phtml` ホームページおよび Varnish へのテンプレートは、30 秒ごとに自動的に更新されます。
+上記の例では、`block` 要素が `esi.phtml` テンプレートからホームページにコンテンツを追加し、Varnish が 30 秒ごとに自動的に更新します。
 
 ## 制限事項
 

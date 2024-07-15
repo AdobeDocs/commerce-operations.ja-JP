@@ -9,10 +9,10 @@ ht-degree: 1%
 
 この項では、HTTP 基本認証が機能していることを確認する 2 つの方法について説明します。
 
-* の使用 `curl` 確認するコマンド クラスタ状態を取得するには、ユーザー名とパスワードを入力する必要があります
+* `curl` コマンドを使用して検証するには、ユーザー名とパスワードを入力してクラスターの状態を取得する必要があります
 * 管理者での HTTP 基本認証の設定
 
-## を使用 `curl` クラスターの状態を確認するコマンド
+## `curl` コマンドを使用してクラスターの状態を確認する
 
 次のコマンドを入力します。
 
@@ -68,8 +68,8 @@ Connection: keep-alive
 
 ## 管理画面で HTTP 基本認証を設定
 
-の説明と同じタスクを実行します [検索エンジン設定](../configuration/search/configure-search-engine.md) *例外* click **[!UICONTROL Yes]** から **[!UICONTROL Enable HTTP Auth]** 表示されたフィールドにユーザー名とパスワードを入力します。
+[ 検索エンジンの設定 ](../configuration/search/configure-search-engine.md) で説明したのと同じタスクを実行します。*ただし***[!UICONTROL Enable HTTP Auth]** リストで「**[!UICONTROL Yes]**」をクリックし、表示されたフィールドにユーザー名とパスワードを入力します。
 
-クリック **[!UICONTROL Test Connection]** 動作することを確認し、 **[!UICONTROL Save Config]**.
+「**[!UICONTROL Test Connection]**」をクリックして機能することを確認し、「**[!UICONTROL Save Config]**」をクリックします。
 
 続行する前に、キャッシュをフラッシュして再インデックス化する必要があります。

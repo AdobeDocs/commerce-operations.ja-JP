@@ -18,14 +18,14 @@ ht-degree: 0%
    php bin/magento app:config:dump
    ```
 
-   例えば、Commerceが以下にインストールされている場合： `/var/www/html/magento2`を入力します。
+   例えば、Commerceが `/var/www/html/magento2` にインストールされている場合は、次のように入力します。
 
    ```bash
    cd /var/www/html/magento2
    php bin/magento app:config:dump
    ```
 
-1. を確認します。 `app/etc/config.php` が更新されました。
+1. `app/etc/config.php` が更新されたことを確認します。
 
    ```bash
    git status
@@ -43,9 +43,9 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >実行 _ではない_ に対する変更の送信 `generated`, `pub/media`、または `pub/static` ソース管理するディレクトリ。 これらのファイルは、ビルドシステム上で生成します。 開発システムに、実稼動システムで使用する準備ができていないコードやテーマなどが含まれている可能性があります。
+   >変更をソース管理に対して `generated`、`pub/media`、または `pub/static` ディレクトリに送信 _ない_ でください。 これらのファイルは、ビルドシステム上で生成します。 開発システムに、実稼動システムで使用する準備ができていないコードやテーマなどが含まれている可能性があります。
 
-1. 変更内容をにチェックインします。 `app/etc/config.php` ソース管理にのみ適用されます。
+1. 変更内容を「`app/etc/config.php` only to source control」にチェックインします。
 
    ```bash
    git add app/etc/config.php && git commit -m "Updated shared configuration" && git push mconfig m2.2_deploy

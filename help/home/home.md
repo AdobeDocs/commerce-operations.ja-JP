@@ -23,7 +23,7 @@ ht-degree: 20%
       <img alt="リリース情報" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="../release/release-notes/overview.md"><strong>リリース情報</strong></a>
+      <a href="../release/release-notes/overview.md"><strong> リリース情報 </strong></a>
       <p>Adobe Commerceのパッチとサービスに関するすべてのリリース情報を確認します。</p>
     </div>
   </td>
@@ -32,7 +32,7 @@ ht-degree: 20%
        <img alt="パフォーマンス" src="../assets/icons/gauge.svg" width="40"/>
     </a>
     <div>
-      <a href="../performance/overview.md"><strong>パフォーマンスのベストプラクティス</strong></a>
+      <a href="../performance/overview.md"><strong> パフォーマンスのベストプラクティス </strong></a>
       <p>これらの推奨事項を使用すると、Adobe Commerceのデプロイメントのパフォーマンスを最適化できます。</p>
     </div>
   </td>
@@ -41,7 +41,7 @@ ht-degree: 20%
        <img alt="Enterprise" src="../assets/icons/alert-circle.svg" width="40"/>
     </a>
     <div>
-      <a href="../security-and-compliance/overview.md"><strong>セキュリティとコンプライアンス</strong></a>
+      <a href="../security-and-compliance/overview.md"><strong> セキュリティとコンプライアンス </strong></a>
       <p>Adobe Commerceのマーチャントが安全な環境の維持にどのように責任を負うかを説明します。</p>
     </div>
   </td>
@@ -52,7 +52,7 @@ ht-degree: 20%
       <img alt="実装" src="../assets/icons/play.svg" width="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong>実装プレイブック</strong></a>
+      <a href="../implementation-playbook/overview.md"><strong> 実装プレイブック </strong></a>
       <p>成功する Adobe Commerce サイトの計画と実装の戦略について学習します。</p>
     </div>
   </td>
@@ -61,7 +61,7 @@ ht-degree: 20%
        <img alt="運用" src="../assets/icons/refresh.svg" width="40"/>
     </a>
     <div>
-      <a href="../operational-playbook/overview.md"><strong>運用プレイブック</strong></a>
+      <a href="../operational-playbook/overview.md"><strong> 運用プレイブック </strong></a>
       <p>e コマースサイトを成功させるために、ビジネスの運営をどのように準備すればよいかについて学習します。</p>
     </div>
   </td>
@@ -70,7 +70,7 @@ ht-degree: 20%
        <img alt="Enterprise" src="../assets/icons/enterprise.svg" width="40"/>
     </a>
     <div>
-      <a href="../commerce-at-scale/overview.md"><strong>Commerceのスケール</strong></a>
+      <a href="../commerce-at-scale/overview.md"><strong>Commerce（スケール） </strong></a>
       <p>Adobe Commerce と Adobe Experience Manager を使用して、エクスペリエンスを大規模に配信する方法を学習します。</p>
     </div>
   </td>
@@ -86,7 +86,7 @@ ht-degree: 20%
       <img alt="インストール（オンプレミス）" src="../assets/icons/servers.svg" width="40"/>
     </a>
     <div>
-      <a href="../installation/overview.md"><strong>インストール</strong></a>
+      <a href="../installation/overview.md"><strong> インストール </strong></a>
       <p>オンプレミスデプロイメント用のAdobe Commerceのインストール方法を説明します。</p>
     </div>
   </td>
@@ -95,7 +95,7 @@ ht-degree: 20%
       <img alt="設定" src="../assets/icons/settings.svg" width="40"/>
     </a>
     <div>
-      <a href="../configuration/overview.md"><strong>設定</strong></a>
+      <a href="../configuration/overview.md"><strong> 設定 </strong></a>
       <p>Adobe Commerce アプリケーションの機能とサービスを設定します。</p>
     </div>
   </td>
@@ -104,7 +104,7 @@ ht-degree: 20%
       <img alt="アップグレード" src="../assets/icons/upload-cloud.svg" width="40"/>
     </a>
     <div>
-      <a href="../upgrade/overview.md"><strong>アップグレード</strong></a>
+      <a href="../upgrade/overview.md"><strong> アップグレード </strong></a>
       <p>ストアフロントのセキュリティを確保し、効率的に運用を行うために、Adobe Commerce プロジェクトをアップグレードする方法について説明します。</p>
     </div>
   </td>
@@ -113,7 +113,7 @@ ht-degree: 20%
        <img alt="ツール" src="../assets/icons/wrench.svg" width="40"/>
     </a>
     <div>
-      <a href="../tools/overview.md"><strong>ツール</strong></a>
+      <a href="../tools/overview.md"><strong> ツール </strong></a>
       <p>Adobe Commerceで使用できるツールについて説明します。</p>
     </div>
   </td>

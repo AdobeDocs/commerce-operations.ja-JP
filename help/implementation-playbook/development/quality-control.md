@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 品質管理のプロセスとツール
 
-![品質管理プロセス図](../../assets/playbooks/quality-control-diagram.svg)
+![ 品質管理の工程図 ](../../assets/playbooks/quality-control-diagram.svg)
 
 前述のダイアグラムの品質管理プロセスは、次のように簡単に説明できます。
 
@@ -77,7 +77,7 @@ ht-degree: 0%
   <tr>
     <td></td>
     <td></td>
-    <td>バグをバグ追跡システムに投稿（Jira/Redmine/Trello）</td>
+    <td>Postのバグ追跡システム（Jira/Redmine/Trello）</td>
     <td>PM が定義したプロジェクト計画に合わせてテストの優先順位を付ける/スケジュールを設定する</td>
   </tr>
   <tr>
@@ -143,7 +143,7 @@ ht-degree: 0%
 </tbody>
 </table>
 
-類似 [ツール](project-management-tools.md) 開発プロセスのために特定された、品質管理テストによく利用されるソリューションとプラットフォームを数種類選択しました。
+開発プロセスで特定した [ ツール ](project-management-tools.md) と同様に、品質管理テストでよく使用するソリューションやプラットフォームを数種類選択しました。
 
 | 目的 | ツール |
 |---------------------------|---------------------------------------------------|
@@ -181,7 +181,7 @@ BrowserStack は、開発者がオンデマンドのブラウザー、オペレ�
 
 Postmanは、API 開発のコラボレーションプラットフォームです。 Postmanを使用すると、API の構築の各ステップを簡略化し、共同作業を効率化できるので、より優れた API を作成できます。
 
-SoapUI は、Simple Object Access Protocol （SOAP）と Representational State Transfer （REST）用のオープンソースの web サービステストアプリケーションです。 その機能は、Web サービス検査、呼び出し、開発、シミュレーション、モック、機能テスト、負荷およびコンプライアンステストをカバーしています。
+SoapUI は、Simple Object Access Protocol（SOAP）と Representational State Transfer （REST）用のオープンソース web サービステストアプリケーションです。 その機能は、Web サービス検査、呼び出し、開発、シミュレーション、モック、機能テスト、負荷およびコンプライアンステストをカバーしています。
 
 ## 自動化テスト
 

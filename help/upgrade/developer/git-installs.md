@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Git ベースのインストールのアップグレード
 
-このトピックでは、コントリビューションを行う開発者が、Adobe Commerceを再インストールせずに更新する方法について説明します。 コントリビューション機能を持つ開発者でない場合は、を参照してください。 [アップグレードの実行](../implementation/perform-upgrade.md).
+このトピックでは、コントリビューションを行う開発者が、Adobe Commerceを再インストールせずに更新する方法について説明します。 コントリビューションを行う開発者でない場合は、[ アップグレードの実行 ](../implementation/perform-upgrade.md) を参照してください。
 
 貢献している開発者の場合にアップグレードするには：
 
 {{$include /help/_includes/server-login.md}}
 
-1. に加えた変更を保存します。 `composer.json` ファイルを上書きするには、次の手順に従います。
+1. `composer.json` ファイルに加えた変更は、次の手順で上書きされるので、すべて保存します。
 
-1. のバックアップを作成 `composer.json` ファイル。
+1. `composer.json` ファイルのバックアップを作成します。
 
    ```bash
    cp composer.json composer.json.old
@@ -33,11 +33,11 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >次の場合 `git pull origin develop` 失敗。を参照してください。 [トラブルシューティング](https://support.magento.com/hc/en-us/articles/360034229872).
+   >`git pull origin develop` が失敗した場合は、[ トラブルシューティング ](https://support.magento.com/hc/en-us/articles/360034229872) を参照してください。
 
-1. の差分と結合 `composer.json.old` を含むファイル `composer.json` ファイル。
+1. `composer.json.old` ファイルを `composer.json` ファイルと差分してマージします。
 
-1. 依存関係を解決し、正確なバージョンをに書き込む `composer.lock` ファイル。
+1. 依存関係を解決し、正確なバージョンを `composer.lock` ファイルに書き込みます。
 
    ```bash
    composer update

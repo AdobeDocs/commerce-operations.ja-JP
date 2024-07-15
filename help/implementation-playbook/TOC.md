@@ -13,10 +13,10 @@ ht-degree: 12%
 # 実装プレイブック {#implementation-playbook}
 
 - [概要](overview.md)
-- コマース {#intro}
+- Commerce {#intro}
    - [Adobe Commerceについて](intro/about-commerce.md)
    - [プラットフォーム開発の原則](intro/platform-development.md)
-- プロジェクト範囲 {#project-scope}
+- プロジェクト スコープ {#project-scope}
    - [知識は力なり](project-scope/knowledge.md)
    - [主な関係者](project-scope/key-stakeholders.md)
    - [プロセスとタイムライン](project-scope/process-timeline.md)
@@ -31,25 +31,25 @@ ht-degree: 12%
    - [配信と計画のアプローチ](planning/delivery.md)
    - [責任と所有権](planning/ownership.md)
    - [プロジェクトガバナンス](planning/governance.md)
-- アーキテクチャと統合 {#architecture}
+- のアーキテクチャと統合 {#architecture}
    - [エンタープライズ版リファレンス](architecture/enterprise-blueprint.md)
    - グローバル参照アーキテクチャ {#global-reference-architecture}
       - [概要](architecture/global-reference/overview.md)
       - [例](architecture/global-reference/examples.md)
-      - Composer の開発 {#composer}
+      - Composer 開発 {#composer}
          - [概要](architecture/global-reference/composer/overview.md)
          - [プロジェクト構造](architecture/global-reference/composer/project-structure.md)
          - [ヒントとテクニック](architecture/global-reference/composer/tips-and-tricks.md)
-- インフラストラクチャとデプロイメント {#infrastructure}
+- インフラストラクチャとデプロイメ {#infrastructure} ト
    - [概要](infrastructure/overview.md)
    - 自己ホスティング {#self-hosting}
       - [概要](infrastructure/self-hosting/overview.md)
-      - [オンプレミスインフラストラクチャ](infrastructure/self-hosting/on-premises.md)
+      - [ オンプレミスインフラストラクチャ ](infrastructure/self-hosting/on-premises.md)
       - [セキュリティの概念](infrastructure/self-hosting/security-concepts.md)
       - [テレメトリとツールの監視](infrastructure/self-hosting/monitoring-tools.md)
       - [災害復旧のアイデア](infrastructure/self-hosting/disaster-recovery-ideas.md)
       - [パフォーマンスのヒント](infrastructure/self-hosting/performance-tips.md)
-   - クラウドインフラストラクチャ {#cloud}
+   - クラウドインフラストラクチャー {#cloud}
       - [概要](infrastructure/cloud/overview.md)
       - [地域](infrastructure/cloud/regions.md)
       - [技術](infrastructure/cloud/technology.md)
@@ -62,8 +62,8 @@ ht-degree: 12%
    - [概要](launch/overview.md)
    - [ローンチ前の手順](launch/pre-launch-steps.md)
    - [ローンチ手順](launch/launch-steps.md)
-   - [ローンチ後の手順](launch/post-launch-steps.md)
-- メンテナンスとサポート {#maintenance}
+   - [Postの起動手順](launch/post-launch-steps.md)
+- 保守サポート {#maintenance}
    - [概要](maintenance/overview.md)
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - ベストプラクティス {#best-practices}
@@ -96,8 +96,8 @@ ht-degree: 12%
       - [プライベートコンテンツブロック](best-practices/development/private-content-block-configuration.md)
       - [静的コンテンツデプロイメント](best-practices/development/static-content-deployment.md)
       - [データベーステーブルの変更](best-practices/development/modifying-core-and-third-party-tables.md)
-      - [コアおよびサードパーティコードの変更](best-practices/development/modifying-core-and-third-party-code.md)
-   - ローンチ {#launch}
+      - [ コアおよびサードパーティコードの変更 ](best-practices/development/modifying-core-and-third-party-code.md)
+   - Launch {#launch}
       - [概要](best-practices/launch/overview.md)
       - [Web クローラーの設定](best-practices/launch/robots-txt.md)
       - [サイトとインフラストラクチャを保護](best-practices/launch/security-best-practices.md)
@@ -114,4 +114,4 @@ ht-degree: 12%
       - [サービスの更新](best-practices/maintenance/update-services.md)
       - [アップグレードチェックリスト](best-practices/maintenance/upgrade-checklist.md)
       - [MariaDB のアップグレードの前提条件](best-practices/maintenance/mariadb-upgrade.md)
-- [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

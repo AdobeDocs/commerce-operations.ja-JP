@@ -13,17 +13,17 @@ ht-degree: 0%
 
 このコマンドを使用すると、次の項目をバックアップできます。
 
-* ファイルシステム（を除く） `var` および `pub/static` ディレクトリ）
-* この `pub/media` directory
+* ファイルシステム（`var` ディレクトリと `pub/static` ディレクトリを除く）
+* `pub/media` ディレクトリ
 * データベース
 
-バックアップは `var/backups` ディレクトリであり、 [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンド。
+バックアップは `var/backups` ディレクトリに保存され、[`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンドを使用していつでも復元できます。
 
-バックアップ後、次の操作を実行できます [rollback](#rollback) 後で。
+バックアップ後、後で [ ロールバック ](#rollback) できます。
 
 >[!TIP]
 >
->クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、次を参照してください [スナップショットとバックアップ管理](https://devdocs.magento.com/cloud/project/project-webint-snap.html) が含まれる _クラウドガイド_.
+>クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、_クラウドガイド_ の [ スナップショットとバックアップの管理 ](https://devdocs.magento.com/cloud/project/project-webint-snap.html) を参照してください。
 
 ## バックアップを有効にする
 
@@ -40,17 +40,17 @@ bin/magento config:set system/backup/functionality_enabled 1
 
 ## 開いているファイルの上限を設定
 
-以前のバックアップへのロールバックはサイレント・エラーで失敗する場合があり、不完全なデータがファイル・システムまたはデータベースに書き込まれる際に [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンド。
+以前のバックアップへのロールバックはサイレントに失敗する場合があり、[`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンドを使用して不完全なデータがファイルシステムまたはデータベースに書き込まれる結果となります。
 
 クエリ文字列が長いと、再帰呼び出しが多すぎることが原因で、ユーザーに割り当てられたメモリ領域がメモリ不足になることがあります。
 
-## 開いているファイルの設定方法 `ulimit`
+## 開いているファイルの `ulimit` 定方法
 
-開いているファイルを設定することをお勧めします [`ulimit`](https://ss64.com/bash/ulimit.html) （ファイルシステムユーザーの値を `65536` 以上。
+ファイルシステムユーザーに対して開いているファイル [`ulimit`](https://ss64.com/bash/ulimit.html) を `65536` 以上の値に設定することをお勧めします。
 
 これをコマンドラインで実行するか、シェルスクリプトを編集してユーザーに恒久的な設定を与えることができます。
 
-続行する前に、まだ切り替えていない場合は、に切り替えます。 [ファイルシステム所有者](../prerequisites/file-system/overview.md).
+続行する前に、まだ実行していない場合は、[ ファイルシステムの所有者 ](../prerequisites/file-system/overview.md) に切り替えます。
 
 コマンド：
 
@@ -62,23 +62,23 @@ ulimit -s 65536
 
 >[!NOTE]
 >
->開いているファイルの構文 `ulimit` 使用する UNIX シェルによって異なります。 上記の設定は、Bash シェルを使用している CentOS および Ubuntu で動作する必要があります。 ただし、macOSの場合、正しい設定は次のとおりです `ulimit -S 65532`. 詳細については、マニュアルページまたは OS のリファレンスを参照してください。
+>開いているファイル `ulimit` の構文は、使用する UNIX シェルによって異なります。 上記の設定は、Bash シェルを使用している CentOS および Ubuntu で動作する必要があります。 ただし、macOSの場合、正しい設定は `ulimit -S 65532` です。 詳細については、マニュアルページまたは OS のリファレンスを参照してください。
 
 ユーザーの Bash シェルにオプションで値を設定するには：
 
-1. まだ切り替えていない場合は、 [ファイルシステム所有者](../prerequisites/file-system/overview.md).
-1. 開く `/home/<username>/.bashrc` テキストエディター。
+1. まだ切り替えていない場合は、[ ファイルシステムの所有者 ](../prerequisites/file-system/overview.md) に切り替えます。
+1. `/home/<username>/.bashrc` をテキストエディターで開きます。
 1. 次の行を追加します。
 
    ```bash
    ulimit -s 65536
    ```
 
-1. 変更をに保存します。 `.bashrc` をクリックして、テキストエディターを終了します。
+1. `.bashrc` への変更を保存し、テキストエディターを終了します。
 
 >[!WARNING]
 >
->の値は設定しないことをお勧めします [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) が含まれる `php.ini` 失敗の通知がない場合、ロールバックが不完全になる可能性があるためです。
+>`php.ini` ファイルで [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) の値を設定することは避けることをお勧めします。設定すると、エラー通知のない不完全なロールバックが生じる可能性があるからです。
 
 ## バックアップ中
 
@@ -140,7 +140,7 @@ bin/magento info:backups:list
 bin/magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]
 ```
 
-例えば、という名前のメディアバックアップを復元するには `1440611839_filesystem_media.tgz`、と入力します
+たとえば、`1440611839_filesystem_media.tgz` という名前のメディア バックアップを復元するには、次のように入力します
 
 ```bash
 bin/magento setup:rollback -m 1440611839_filesystem_media.tgz

@@ -17,7 +17,7 @@ Commerce データベースプロファイラーは、ページに実装され�
 
 ## 手順 1：デプロイメント設定を変更する
 
-変更 `<magento_root>/app/etc/env.php` 次の参照をに追加します [データベース プロファイラークラス](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
+`<magento_root>/app/etc/env.php` を変更して、[database profiler クラス ](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php) に次の参照を追加します。
 
 ```php?start_inline=1
         'profiler' => [
@@ -55,7 +55,7 @@ Commerce データベースプロファイラーは、ページに実装され�
 
 ## 手順 2：出力の設定
 
-Commerce アプリケーションのブートストラップファイルに出力を設定します。次に例を示します `<magento_root>/pub/index.php` または、web サーバーの仮想ホスト設定に配置することもできます。
+Commerce アプリケーションのブートストラップファイルで出力を設定します。このファイルは、`<magento_root>/pub/index.php` の場合も、web サーバーの virtual host configuration に格納されている場合もあります。
 
 次の例では、結果が 3 列のテーブルに表示されます。
 
@@ -63,7 +63,7 @@ Commerce アプリケーションのブートストラップファイルに出�
 - SQL （すべての SQL 問合せを表示します。行ヘッダーには問合せの件数が表示されます）
 - クエリパラメーター（各 SQL クエリのパラメーターを表示します）
 
-出力を設定するには、の後に次を追加します `$bootstrap->run($app);` bootstrap ファイルの行：
+出力を設定するには、ブートストラップファイルの `$bootstrap->run($app);` 行の後に次のテキストを追加します。
 
 ```php?start_inline=1
 /** @var \Magento\Framework\App\ResourceConnection $res */
@@ -91,4 +91,4 @@ echo "</table>";
 
 結果を表示するには、ストアフロントまたは管理者の任意のページに移動します。 次に例を示します。
 
-![データベース プロファイラーの結果のサンプル](../../assets/configuration/db-profiler-results.png)
+![ データベース・プロファイラのサンプル結果 ](../../assets/configuration/db-profiler-results.png)

@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 顧客設定パスのリファレンス
 
-この節では、の管理画面でオプションに使用できる変数名と設定パスを示します。 **ストア** > 設定 > **設定** > **顧客**.
+この節では、**ストア**/設定/**設定**/**顧客** の管理でオプションに使用できる変数名と設定パスを示します。
 
-この [`magento app:config:dump` コマンド](../cli/export-configuration.md) これらの値を共有構成ファイルに書き込みます。 `app/etc/config.php`（ソース管理にする必要があります）。 必要に応じて設定を上書きしたり、重要な設定を指定するには、を参照してください。 [環境変数を使用して設定を上書きする](override-config-settings.md#environment-variables). このトピックでは、 _ではない_ list [機密性の高いシステム固有の値](config-reference-sens.md).
+[`magento app:config:dump` コマンドは ](../cli/export-configuration.md) これらの値をソース管理にある共有構成ファイル `app/etc/config.php` に書き込みます。 任意の構成設定を上書きしたり、重要な設定を指定したりするには、[ 環境変数を使用して構成設定を上書き ](override-config-settings.md#environment-variables) を参照してください。 このトピックでは _機密の値とシステム固有の値 [ は_ 表示されません ](config-reference-sens.md)。
 
 ## ニュースレターのパス
 
-これらの設定値は、の管理者で使用できます。 **ストア** > 設定 > **設定** > **顧客** > **ニュースレター**.
+これらの設定値は、管理者の **ストア**/設定/**設定**/**顧客**/**ニュースレター** で利用できます。
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## 顧客設定パス
 
-これらの設定値は、の管理者で使用できます。 **ストア** > 設定 > **設定** > **顧客** > **顧客設定**.
+これらの設定値は、管理者の **ストア**/設定/**設定**/**顧客**/**顧客設定** で利用できます。
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|
@@ -77,20 +77,20 @@ ht-degree: 0%
 | ミドルネームを表示（初期） | `customer/address/middlename_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 接尾辞を表示 | `customer/address/suffix_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 接尾辞ドロップダウンオプション | `customer/address/suffix_options` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 生年月日を表示 | `customer/address/dob_show`<br>現在のセキュリティとプライバシーのベストプラクティスに従って、顧客の完全な生年月日（月、日、年）と、フルネームなどのその他の個人識別子の保存に関連して発生する可能性のある法的およびセキュリティリスクを認識してから、そのようなデータを収集または処理してください。 | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 生年月日を表示 | `customer/address/dob_show`<br> 現在のセキュリティとプライバシーのベストプラクティスに従って、顧客の完全な生年月日（月、日、年）と、氏名などの他の個人識別子の保存に関連して発生する可能性のある法的およびセキュリティリスクを、データの収集または処理の前に認識しておいてください。 | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 税/VAT 番号の表示 | `customer/address/taxvat_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 性別を表示 | `customer/address/gender_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| ストアクレジット機能の有効化 | `customer/magento_customerbalance/is_enabled` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 顧客に店舗の与信履歴を表示 | `customer/magento_customerbalance/show_history` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 店舗クレジットの自動払戻 | `customer/magento_customerbalance/refund_automatically` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| クレジット更新メール送信者の保存 | `customer/magento_customerbalance/email_identity` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 店舗のクレジット更新の E メール テンプレート | `customer/magento_customerbalance/email_template` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
+| ストアクレジット機能の有効化 | `customer/magento_customerbalance/is_enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 顧客に店舗の与信履歴を表示 | `customer/magento_customerbalance/show_history` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 店舗クレジットの自動払戻 | `customer/magento_customerbalance/refund_automatically` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| クレジット更新メール送信者の保存 | `customer/magento_customerbalance/email_identity` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 店舗のクレジット更新の E メール テンプレート | `customer/magento_customerbalance/email_template` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
 | ログイン後のアカウントダッシュボードへのリダイレクト | `customer/startup/redirect_dashboard` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | テキスト | `customer/address_templates/text` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 1 行のテキスト | `customer/address_templates/oneline` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | HTML | `customer/address_templates/html` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PDF | `customer/address_templates/pdf` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 顧客セグメント機能の有効化 | `customer/magento_customersegment/is_enabled` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
+| 顧客セグメント機能の有効化 | `customer/magento_customersegment/is_enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
 | ストアフロントでの CAPTCHA の有効化 | `customer/captcha/enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | フォント | `customer/captcha/font` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Forms | `customer/captcha/forms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -105,13 +105,13 @@ ht-degree: 0%
 
 ## 欲しい物のリストのパス
 
-これらの設定値は、の管理者で使用できます。 **ストア** > 設定 > **設定** > **顧客** > **ウィッシュリスト**.
+これらの設定値は、管理者の **ストア**/設定/**設定**/**顧客**/**ウィッシュリスト** で利用できます。
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|
 | Enabled | `wishlist/general/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 複数のウィッシュリストを有効にする | `wishlist/general/multiple_enabled` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 複数のウィッシュリストの数 | `wishlist/general/multiple_wishlist_number` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
+| 複数のウィッシュリストを有効にする | `wishlist/general/multiple_enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 複数のウィッシュリストの数 | `wishlist/general/multiple_wishlist_number` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
 | E メール送信者 | `wishlist/email/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E メール テンプレート | `wishlist/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 送信可能な最大メール数 | `wishlist/email/number_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -122,69 +122,69 @@ ht-degree: 0%
 
 ## 招待のパス
 
-これらの設定値は、の管理者で使用できます。 **ストア** > 設定 > **設定** > **顧客** > **招待状**.
+これらの設定値は、管理者の **ストア**/設定/**設定**/**顧客**/**招待状** で使用できます。
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|
-| 招待機能の有効化 | `magento_invitation/general/enabled` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| ストアフロントでの招待状の有効化 | `magento_invitation/general/enabled_on_front` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 紹介済み顧客グループ | `magento_invitation/general/registration_use_inviter_group` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 新規アカウントの登録 | `magento_invitation/general/registration_required_invitation` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 顧客が招待メールにカスタムメッセージを追加することを許可 | `magento_invitation/general/allow_customer_message` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 一度に送信できる最大招待状 | `magento_invitation/general/max_invitation_amount_per_send` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 顧客招待メールの送信者 | `magento_invitation/email/identity` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 顧客招待 E メール テンプレート | `magento_invitation/email/template` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
+| 招待機能の有効化 | `magento_invitation/general/enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| ストアフロントでの招待状の有効化 | `magento_invitation/general/enabled_on_front` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 紹介済み顧客グループ | `magento_invitation/general/registration_use_inviter_group` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 新規アカウントの登録 | `magento_invitation/general/registration_required_invitation` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 顧客が招待メールにカスタムメッセージを追加することを許可 | `magento_invitation/general/allow_customer_message` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 一度に送信できる最大招待状 | `magento_invitation/general/max_invitation_amount_per_send` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 顧客招待メールの送信者 | `magento_invitation/email/identity` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 顧客招待 E メール テンプレート | `magento_invitation/email/template` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
 ## 報酬ポイントのパス
 
-これらの設定値は、の管理者で使用できます。 **ストア** > 設定 > **設定** > **顧客** > **報酬ポイント**.
+これらの設定値は、管理者の **ストア**/設定/**設定**/**顧客**/**報酬ポイント** で利用できます。
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|
-| 報酬ポイント機能の有効化 | `magento_reward/general/is_enabled` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| ストアフロントでの報酬ポイント機能の有効化 | `magento_reward/general/is_enabled_on_front` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 顧客には、報酬ポイント履歴が表示される場合があります | `magento_reward/general/publish_history` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 報酬ポイントの残高償還しきい値 | `magento_reward/general/min_points_balance` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| キャップの報酬ポイントのバランス | `magento_reward/general/max_points_balance` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 報酬ポイントの有効期限（日） | `magento_reward/general/expiration_days` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 報酬ポイントの有効期限の計算 | `magento_reward/general/expiry_calculation` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 報酬ポイントを自動的に払い戻す | `magento_reward/general/refund_automatically` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 自動的に返金額から報酬ポイントを差し引く | `magento_reward/general/deduct_automatically` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| ランディングページ | `magento_reward/general/landing_page` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 購入 | `magento_reward/points/order` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 登録 | `magento_reward/points/register` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| ニュースレターの登録 | `magento_reward/points/newsletter` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 招待状を顧客に変換しています | `magento_reward/points/invitation_customer` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 顧客コンバージョン数量制限への招待 | `magento_reward/points/invitation_customer_limit` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 招待状を注文に変換しています | `magento_reward/points/invitation_order` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 注文コンバージョンの数量制限への招待 | `magento_reward/points/invitation_order_limit` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| ご注文へのご案内コンバージョン | `magento_reward/points/invitation_order_frequency` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| Review Submission | `magento_reward/points/review` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 報酬済レビューの送信数量制限 | `magento_reward/points/review_limit` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| E メール送信者 | `magento_reward/notification/email_sender` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| デフォルトで顧客を登録 | `magento_reward/notification/subscribe_by_default` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 残高更新メール | `magento_reward/notification/balance_update_template` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 報酬ポイントの有効期限警告メール | `magento_reward/notification/expiry_warning_template` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| （日間）前の有効期限の警告 | `magento_reward/notification/expiry_day_before` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
+| 報酬ポイント機能の有効化 | `magento_reward/general/is_enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| ストアフロントでの報酬ポイント機能の有効化 | `magento_reward/general/is_enabled_on_front` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 顧客には、報酬ポイント履歴が表示される場合があります | `magento_reward/general/publish_history` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 報酬ポイントの残高償還しきい値 | `magento_reward/general/min_points_balance` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| キャップの報酬ポイントのバランス | `magento_reward/general/max_points_balance` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 報酬ポイントの有効期限（日） | `magento_reward/general/expiration_days` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 報酬ポイントの有効期限の計算 | `magento_reward/general/expiry_calculation` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 報酬ポイントを自動的に払い戻す | `magento_reward/general/refund_automatically` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 自動的に返金額から報酬ポイントを差し引く | `magento_reward/general/deduct_automatically` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| ランディングページ | `magento_reward/general/landing_page` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 購入 | `magento_reward/points/order` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 登録 | `magento_reward/points/register` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| ニュースレターの登録 | `magento_reward/points/newsletter` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 招待状を顧客に変換しています | `magento_reward/points/invitation_customer` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 顧客コンバージョン数量制限への招待 | `magento_reward/points/invitation_customer_limit` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 招待状を注文に変換しています | `magento_reward/points/invitation_order` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 注文コンバージョンの数量制限への招待 | `magento_reward/points/invitation_order_limit` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| ご注文へのご案内コンバージョン | `magento_reward/points/invitation_order_frequency` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| Review Submission | `magento_reward/points/review` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 報酬済レビューの送信数量制限 | `magento_reward/points/review_limit` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| E メール送信者 | `magento_reward/notification/email_sender` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| デフォルトで顧客を登録 | `magento_reward/notification/subscribe_by_default` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 残高更新メール | `magento_reward/notification/balance_update_template` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 報酬ポイントの有効期限警告メール | `magento_reward/notification/expiry_warning_template` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| （日間）前の有効期限の警告 | `magento_reward/notification/expiry_day_before` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
 ## プロモーションパス
 
-これらの設定値は、の管理者で使用できます。 **ストア** > 設定 > **設定** > **顧客** > **プロモーション**.
+これらの設定値は、管理者の **ストア**/設定/**設定**/**顧客**/**プロモーション** で使用できます。
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|
 | リマインダーメールを有効にする | `promo/magento_reminder/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 頻度 | `promo/magento_reminder/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 間隔 | `promo/magento_reminder/interval` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 分（時刻） | `promo/magento_reminder/minutes` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 開始時刻 | `promo/magento_reminder/time` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| 1 回の実行あたりの最大メール数 | `promo/magento_reminder/limit` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| E メール送信失敗しきい値 | `promo/magento_reminder/threshold` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
-| リマインダーメールの送信者 | `promo/magento_reminder/identity` | ![Commerce専用](/help/assets/configuration/cloud-ee.png) |
+| 分（時刻） | `promo/magento_reminder/minutes` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 開始時刻 | `promo/magento_reminder/time` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 1 回の実行あたりの最大メール数 | `promo/magento_reminder/limit` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| E メール送信失敗しきい値 | `promo/magento_reminder/threshold` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| リマインダーメールの送信者 | `promo/magento_reminder/identity` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
 | コード長 | `promo/auto_generated_coupon_codes/length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | コードフォーマット | `promo/auto_generated_coupon_codes/format` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | コードプレフィックス | `promo/auto_generated_coupon_codes/prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -195,7 +195,7 @@ ht-degree: 0%
 
 ## ギフト レジストリのパス
 
-これらの設定値は、の管理者で使用できます。 **ストア** > 設定 > **設定** > **顧客** > **ギフト レジストリ**.
+これらの設定値は、管理者の **ストア**/設定/**設定**/**顧客**/**ギフトレジストリ** で使用できます。
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|
@@ -213,7 +213,7 @@ ht-degree: 0%
 
 ## 永続的な買い物かごパス
 
-これらの設定値は、の管理者で使用できます。 **ストア** > 設定 > **設定** > **顧客** > **永続ショッピングカート**.
+これらの設定値は、管理者の **ストア**/設定/**設定**/**顧客**/**永続的な買い物かご** で使用できます。
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|

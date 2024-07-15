@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 読み取り専用ファイルシステム
 
-読み取り専用のファイルシステムの概念は、次の場所から借用されました。 [クラウドインフラストラクチャー上のAdobe Commerce](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. これにより、悪い俳優が使用する 1 つの主要な領域が完全に削除されます。 悪用の多くは、検出されないように、Commerce アプリケーション内にあると想定されるファイルを変更することを利用しています。 不正なアクターは、ファイルを作成する代わりに、既存のファイルの内容を変更して、予期しないアクションを実行します。 ファイルシステムを読み取り専用にすると、この攻撃ベクトルが大幅に減少します。
+読み取り専用のファイルシステムの概念は、[ クラウドインフラストラクチャー上のAdobe Commerce](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"} から借りたものです。 これにより、悪い俳優が使用する 1 つの主要な領域が完全に削除されます。 悪用の多くは、検出されないように、Commerce アプリケーション内にあると想定されるファイルを変更することを利用しています。 不正なアクターは、ファイルを作成する代わりに、既存のファイルの内容を変更して、予期しないアクションを実行します。 ファイルシステムを読み取り専用にすると、この攻撃ベクトルが大幅に減少します。
 
 ## 2 要素認証とパスワードマネージャーの使用
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## Commerce用 Site-Wide Analysis Tool
 
-この [サイト全体分析ツール](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html){target="_blank"} は、プロアクティブなセルフサービスツールで、Adobe Commerce インストールのセキュリティと操作性を確保するための詳細なシステムインサイトおよびレコメンデーションが含まれている中央リポジトリです。 24 時間 365 日、パフォーマンスの監視、レポート、アドバイスをリアルタイムで行うことで、潜在的な問題を特定し、サイトの正常性、安全性、アプリケーションの設定をより明確に把握します。 これにより、解決時間が短縮され、サイトの安定性とパフォーマンスが向上します。
+[Site-Wide Analysis Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html){target="_blank"} は、プロアクティブなセルフサービスツールで、Adobe Commerce インストールのセキュリティと操作性を確保するための詳細なシステムインサイトおよびレコメンデーションが含まれている中央リポジトリです。 24 時間 365 日、パフォーマンスの監視、レポート、アドバイスをリアルタイムで行うことで、潜在的な問題を特定し、サイトの正常性、安全性、アプリケーションの設定をより明確に把握します。 これにより、解決時間が短縮され、サイトの安定性とパフォーマンスが向上します。
 
 ## 管理アクションのログ記録の設定を有効にして確認する
 
@@ -58,7 +58,8 @@ Adobe Commerceのすべての管理者ユーザーには、ACL ロールが割�
 
 実稼動データへのアクセスを制限します。 指定されたチームメイトは、実稼動データベースを取り込み、実際のデータをクレンジングできる必要があります。 データの削除がオプションの場合は、受注、見積、顧客などの適切な表を切り捨てます。 ただし、データの完全なセットが必要でも、値を匿名化できる場合もあります。 これは通常、ステージング環境で発生します。 アップグレードの前にも役立ちます。 リアルタイムのデータ量を匿名化することで、アップグレード用のデプロイメントを適切に実行するための時間をテストおよび検証できます。 データのセットが限られている場合、アップグレードプロセスとタイミングを過小評価する可能性があります。
 
-+++ランダム化顧客情報の例Adobe Commerceがデータを保存する一部の標準テーブルで、ランダムな文字列とすべての名フィールドと姓フィールドを使用して顧客のメールアドレスを変更する方法の例を以下に示します。 **すべてのテーブルの機密データを確認してください。このリストは、顧客データを保存する可能性のあるテーブルを含むものではありません**
++++顧客情報をランダム化する例
+Adobe Commerceがデータを格納する標準テーブルで、ランダムな文字列と、すべての「名」フィールドおよび「姓」フィールドを使用して顧客のメールアドレスを変更する方法の例を次に示します。 **すべてのテーブルの機密データを確認してください。このリストは、顧客データを保存する可能性のあるテーブルを含むものではありません**
 
 ```SQL
 SET FOREIGN_KEY_CHECKS=0;
@@ -104,7 +105,8 @@ SET FOREIGN_KEY_CHECKS=1;
 
 +++
 
-+++情報を完全に削除する例ローンチ前または低い開発環境のためにすべての注文、見積もり、クレジットメモなどを削除する例を以下に示します
++++情報を完全に削除する例
+ローンチ前にすべての注文、見積もり、クレジットメモなどを削除する例や、より低い開発環境の例を次に示します
 
 ```SQL
 DELETE FROM `gift_message`;
@@ -210,11 +212,11 @@ ALTER TABLE sequence_shipment_7 AUTO_INCREMENT=1;
 
 ## 環境変数の使用
 
-[!BADGE Adobe Commerce on cloud のみ]{type=Informative}
+[!BADGE Adobe Commerce on cloud]{type=Informative}
 
 環境変数を使用すると、環境ごとに変更できる値と変更する必要がある値を設定できます。 例えば、環境ごとに異なる管理者 URL を使用したい場合があります。 この値を環境変数として設定すると、これを設定できるほか、必要に応じて Cloud UI からこの値をすばやく参照することもできます。
 
-このトピックの詳細については、Experience Leagueを参照してください [クラウドインフラストラクチャー上のCommerceの環境変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html){target="_blank"}
+このトピックについて詳しくは、Experience League[ クラウドインフラストラクチャ環境変数のCommerceを参照してください ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html){target="_blank"}
 
 ## ソフトウェア脆弱性スキャンツール
 
@@ -232,6 +234,6 @@ WAF は、Web および管理トラフィックを調べて、疑わしいアク
 
 WAF はクラウドベースのサービスで、インストールや保守にハードウェアやソフトウェアを必要としません。 既存のテクノロジーパートナーである Fastly は、ソフトウェアと専門知識を提供します。 その高パフォーマンスで常時稼動の WAF は、Fastly のグローバル配信ネットワーク全体の各キャッシュノードに存在します。
 
-Fastly が提供するAdobe Commerce on cloud の WAF について詳しくは、 [Adobe Commerce ナレッジベース FAQ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"}.
+Fastly が提供するAdobe Commerce on cloud の WAF について詳しくは、[Adobe Commerce ナレッジベースに関する FAQ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"} を参照してください。
 
 {{$include /help/_includes/hosting-related-links.md}}

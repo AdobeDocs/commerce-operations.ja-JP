@@ -23,11 +23,11 @@ Commerceは、ハッシュ化されたデータバージョンを Redis に保�
 
 >[!INFO]
 >
->クラウドインフラストラクチャー上のAdobe Commerceの場合は、を使用できます [変数のデプロイ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) （L2 キャッシュ設定用）。
+>クラウドインフラストラクチャー上のAdobe Commerceの場合、L2 キャッシュ設定に [ 変数をデプロイ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) を使用できます。
 
 ## 設定例
 
-次の例を使用して、の既存のキャッシュセクションを変更または置換します `app/etc/env.php` ファイル。
+次の例を使用して、`app/etc/env.php` ファイル内の既存のキャッシュセクションを変更または置き換えます。
 
 ```php
 'cache' => [
@@ -63,26 +63,26 @@ Commerceは、ハッシュ化されたデータバージョンを Redis に保�
 ここで、
 
 - `backend` は L2 キャッシュの実装です。
-- `backend_options` は L2 キャッシュ構成です。
-   - `remote_backend` はリモートキャッシュの実装です。Redis または MySQL です。
-   - `remote_backend_options` はリモートキャッシュ設定です。
-   - `local_backend` はローカルキャッシュの実装です。 `Cm_Cache_Backend_File`
-   - `local_backend_options` はローカルキャッシュ設定です。
-   - `cache_dir` は、ローカルキャッシュが保存されるディレクトリのファイルキャッシュ固有のオプションです。
+- `backend_options` は L2 キャッシュの設定です。
+   - `remote_backend` は、リモートキャッシュの実装です（Redis または MySQL）。
+   - `remote_backend_options` は、リモートキャッシュの設定です。
+   - `local_backend` はローカル キャッシュの実装です：`Cm_Cache_Backend_File`
+   - ローカルキャッシュの設定は `local_backend_options` のとおりです。
+   - ローカルキャッシュ `cache_dir` 格納されるディレクトリのファイルキャッシュ固有のオプションです。
 
-Adobeでは、リモートキャッシュに Redis を使用することをお勧めします（`\Magento\Framework\Cache\Backend\Redis`）および `Cm_Cache_Backend_File` 共有メモリ内のデータをローカルにキャッシュする場合、次を使用します。 `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
+Adobeでは、リモートキャッシングには Redis （`\Magento\Framework\Cache\Backend\Redis`）を使用し、共有メモリ内のデータのローカルキャッシングには `Cm_Cache_Backend_File` （`'local_backend_options' => ['cache_dir' => '/dev/shm/']`）を使用することをお勧めします。
 
-Adobeでは、を使用することをお勧めします [`cache preload`](redis-pg-cache.md#redis-preload-feature) それは Redis への圧力を大幅に減らすので、機能。 プリロードキーには必ずサフィックス「:hash」を追加してください。
+Adobeは、Redis への圧力を大幅に減らすため、[`cache preload`](redis-pg-cache.md#redis-preload-feature) 機能を使用することをお勧めします。 プリロードキーには必ずサフィックス「:hash」を追加してください。
 
 ## 古いキャッシュオプション
 
-の概要 [!DNL Commerce] 2.4、 `use_stale_cache` 特定の状況では、オプションによってパフォーマンスが向上する場合があります。
+[!DNL Commerce] 2.4 以降では、`use_stale_cache` オプションを使用すると、特定のケースでのパフォーマンスを向上させることができます。
 
-一般に、パフォーマンス側ではロック待機のトレードオフは許容できますが、マーチャントが持つブロックまたはキャッシュの数が多いほど、ロックの待機に費やす時間が長くなります。 場合によっては、次の時間待機できます。 **キーの数** \* **参照タイムアウト** プロセスの時間。 まれに、マーチャントが内に何百ものキーを持つこともあります `Block/Config` キャッシュするので、ロックのルックアップタイムアウトが小さくても、数秒かかる場合があります。
+一般に、パフォーマンス側ではロック待機のトレードオフは許容できますが、マーチャントが持つブロックまたはキャッシュの数が多いほど、ロックの待機に費やす時間が長くなります。 一部のシナリオでは、**キーの数**\* **ルックアップタイムアウト** の時間をプロセスのために待機することができます。 まれに、マーチャントが `Block/Config` キャッシュに数百のキーを保持している場合があるので、ロックのルックアップタイムアウトが小さくても数秒かかる場合があります。
 
-古いキャッシュは L2 キャッシュでのみ機能します。 キャッシュが古い場合は、新しいキャッシュが並列プロセスで生成されている間に、古いキャッシュを送信できます。 古いキャッシュを有効にするには、次を追加します `'use_stale_cache' => true` を L2 キャッシュのトップ設定にします。
+古いキャッシュは L2 キャッシュでのみ機能します。 キャッシュが古い場合は、新しいキャッシュが並列プロセスで生成されている間に、古いキャッシュを送信できます。 古いキャッシュを有効にするには、L2 キャッシュのトップ設定に `'use_stale_cache' => true` を追加します。
 
-Adobeでは、 `use_stale_cache` オプションは、次のような最もメリットが大きいキャッシュタイプに対してのみ使用できます。
+Adobeでは、`use_stale_cache` オプションを有効にすることをお勧めします。このオプションのメリットが最も大きいキャッシュタイプに対しては、次のようなメリットがあります。
 
 - `block_html`
 - `config_integration_api`
@@ -92,7 +92,7 @@ Adobeでは、 `use_stale_cache` オプションは、次のような最もメ�
 - `reflection`
 - `translate`
 
-Adobeは、 `use_stale_cache` オプション： `default` キャッシュタイプ。
+Adobeでは、`default` しいキャッシュタイプに対して `use_stale_cache` オプションを有効にすることはお勧めしません。
 
 次のコードは設定例を示しています。
 

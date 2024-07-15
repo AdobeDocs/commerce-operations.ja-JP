@@ -22,8 +22,8 @@ ht-degree: 0%
 
 - 必要に応じて、次のガイドラインに従って、各システムのCommerce ファイルシステムの権限と所有権を変更します。
 
-   - 開発とビルド： [インストール前の所有権と権限の設定（2 人のユーザー）](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
-   - 実稼動： [Commerceの所有権と開発および実稼働環境での権限](file-system-permissions.md)
+   - 開発とビルド：[ インストール前の所有権と権限の設定（2 人のユーザー） ](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
+   - 実稼働環境：[Commerceの所有権と開発環境および実稼働環境での権限 ](file-system-permissions.md)
 
 >[!INFO]
 >

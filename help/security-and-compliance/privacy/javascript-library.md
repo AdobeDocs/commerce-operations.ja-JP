@@ -1,5 +1,5 @@
 ---
-title: プライバシー JavaScript ライブラリ
+title: プライバシーJavaScript ライブラリ
 description: カスタムツールを使用して、Adobe Commerceで収集されたお客様の個人情報にアクセスして削除する方法を説明します。
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
@@ -11,29 +11,29 @@ ht-degree: 0%
 
 <!-- TODO: Remove this topic and redirect to the adobe-privacy-javascript-library.md when the Adobe privacy library has been integrated with Commerce. -->
 
-# プライバシー JavaScript ライブラリ
+# プライバシーJavaScript ライブラリ
 
-プライバシー JavaScript ライブラリは、Adobe Commerceで収集された非公開データにアクセスして削除するプロセスを作成するためのツールセットです。
+プライバシーJavaScript ライブラリは、Adobe Commerceで収集された非公開データにアクセスして削除するプロセスを作成するためのツールセットです。
 
-Commerce データトラッキングサービスでは、次のようなプライバシー規制に適用される個人情報を保存できます [EU 一般データ保護規則（GDPR）](gdpr.md) および [カリフォルニア州消費者プライバシー法（CCPA）](ccpa.md).
+Commerceのデータトラッキングサービスでは、[EU 一般データ保護規則（GDPR） ](gdpr.md) および [ カリフォルニア州消費者プライバシー法（CCPA） ](ccpa.md) などのプライバシー規制に適用される個人情報を保存できます。
 
 このライブラリは、プライバシーデータリクエストを作成し、その応答を収集するための一連の機能を提供します。 このライブラリを使用すると、Adobe Commerce データトラッキングサービスによってブラウザーに保存されているデータを取得および削除できます。
 
 >[!NOTE]
 >
->次の場合 [Cookie 制限モード](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) を有効にすると、買い物客が同意するまでCommerceは行動データを収集しません。 次の場合 [!UICONTROL **Cookie 制限モード**] が無効の場合、Commerceはデフォルトで行動データを収集します。
+>[Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) が有効になっている場合、Commerceは、買い物客が同意するまで行動データを収集しません。 [!UICONTROL **Cookie 制限モード**] が無効になっている場合、Commerceはデフォルトで行動データを収集します。
 
 ## インストール
 
-プライバシー JavaScript ライブラリは、次の CDN の場所で利用できます。 `commerce.adobe.net/magentoprivacy.js`
+Privacy JavaScript ライブラリは、次の CDN の場所で利用できます。`commerce.adobe.net/magentoprivacy.js`
 
-ファイルを取得したら、Adobe Commerce インスタンスにインストールされたカスタムモジュールまたはテーマにファイルを追加する必要があります。 に記載されている指示に従います [カスタム JavaScript の使用](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) このタスクを実行するトピック。
+ファイルを取得したら、Adobe Commerce インスタンスにインストールされたカスタムモジュールまたはテーマにファイルを追加する必要があります。 このタスクを実行するには、「[ カスタム JavaScriptの使用 ](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) トピックに記載されている手順に従います。
 
 ### 初期化
 
-新しいをインポートしてインスタンス化します。 `MagentoPrivacy` オブジェクトまたは使用 `window` プライバシー JavaScript 関数にアクセスするオブジェクト。
+新しい `MagentoPrivacy` オブジェクトをインポートしてインスタンス化するか、`window` オブジェクトを使用して Privacy のJavaScript関数にアクセスします。
 
-の使用例 `import`:
+`import` の使用例：
 
 ```js
 import MagentoPrivacy from "./MagentoPrivacy"
@@ -41,7 +41,7 @@ import MagentoPrivacy from "./MagentoPrivacy"
 const magePriv = new MagentoPrivacy()
 ```
 
-の使用例 `window`:
+`window` の使用例：
 
 ```js
 const magePriv = new window.MagentoPrivacy()
@@ -52,7 +52,7 @@ const magePriv = new window.MagentoPrivacy()
 プライバシー JS ライブラリは、ブラウザーに保存された ID データを管理するための様々な機能を提供します。
 
 `retrieveIdentity()`
-：ブラウザーのサービスから、ID オブジェクトの JavaScript プロミスを返します。
+：ブラウザーのサービスから、ID オブジェクトのJavaScript プロミスを返します。
 
 ```js
 magePriv.retrieveIdentity().then((ids)=>console.log(ids))
@@ -61,7 +61,7 @@ magePriv.retrieveIdentity().then((ids)=>console.log(ids))
 
 `removeIdentity()`
 ：ブラウザーのサービスから ID データを削除します。
-この関数は、以下を持つ ID オブジェクトの JavaScript プロミスを返します。 `isDeleted` データが削除されたかどうかを示すブール値プロパティ。
+この関数は、データが削除されたかどうかを示す `isDeleted` のブール値プロパティを持つ ID オブジェクトのJavaScript promise を返します。
 
 ```js
 magePriv.removeIdentity().then((ids)=>console.log(ids))

@@ -12,22 +12,22 @@ ht-degree: 0%
 
 # テーマのアンインストール
 
-このコマンドを使用する前に、テーマへの相対パスを知っておく必要があります。 テーマは、次のサブディレクトリにあります。 `<magento_root>/app/design/<area name>`. テーマのパスは領域で始めて指定する必要があります。領域は次のいずれかになります `frontend` （ストアフロントテーマの場合）または `adminhtml` （管理テーマ用）。
+このコマンドを使用する前に、テーマへの相対パスを知っておく必要があります。 テーマは `<magento_root>/app/design/<area name>` のサブディレクトリにあります。 領域で始まるテーマのパスを指定する必要があります。`frontend` （ストアフロントテーマの場合）または `adminhtml` （管理テーマの場合）のいずれかです。
 
-例えば、Adobe Commerceで提供される Luma テーマへのパスは次のとおりです `frontend/Magento/luma`.
+例えば、Adobe Commerceで提供される Luma テーマへのパスは `frontend/Magento/luma` です。
 
-テーマについて詳しくは、次を参照してください [テーマの構造](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
+テーマについて詳しくは、「[ テーマの構造 ](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/)」を参照してください。
 
 ## テーマのアンインストールの概要
 
 この節では、1 つ以上のテーマをアンインストールする方法について説明します。テーマのコードはファイルシステムから必要に応じてアンインストールできます。 最初にバックアップを作成して、後でデータを復元できるようにします。
 
-このコマンドはアンインストールします *のみ* で指定されているテーマ `composer.json`つまり、Composer パッケージとして提供されるテーマです。 テーマが Composer パッケージでない場合は、次の方法で手動でアンインストールする必要があります。
+このコマンドは、`composer.json` で指定された *のみ* テーマ （Composer パッケージとして提供されているテーマ）をアンインストールします。 テーマが Composer パッケージでない場合は、次の方法で手動でアンインストールする必要があります。
 
-* を更新中 `parent` のノード情報 `theme.xml` をクリックして、テーマへの参照を削除します。
+* テーマへの参照を削除す `theme.xml` ように、`parent` ノード情報を更新します。
 * ファイルシステムからテーマコードを削除しています。
 
-  [テーマの継承に関する詳細情報](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
+  [ テーマの継承の詳細 ](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/)。
 
 ## テーマのアンインストール
 
@@ -39,9 +39,9 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 ここで、
 
-* `{theme path}` は、領域名で始まる、テーマの相対パスです。 例えば、Adobe Commerceに用意されている空白のテーマへのパスはです。 `frontend/Magento/blank`.
-* `--backup-code` 以降の段落で説明するように、コードベースをバックアップします。
-* `--clear-static-content` クリーンアップが生成されました [静的ビューファイル](../../configuration/cli/static-view-file-deployment.md)（静的ビューファイルを正しく表示するために必要）。
+* `{theme path}` は、領域名で始まる、テーマの相対パスです。 例えば、Adobe Commerceで提供される空白のテーマへのパスは `frontend/Magento/blank` です。
+* `--backup-code` は、以降の段落で説明するように、コードベースをバックアップします。
+* `--clear-static-content` は、生成された [ 静的ビューファイル ](../../configuration/cli/static-view-file-deployment.md) をクリーンアップします。これは、静的ビューファイルを正しく表示するために必要です。
 
 コマンドは、次のタスクを実行します。
 
@@ -54,17 +54,17 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 1. テーマが使用されていないことを確認します。使用されている場合は、コマンドが終了します。
 1. テーマが仮想テーマのベースでないことを確認します。仮想テーマのベースである場合、コマンドは終了します。
 1. ストアをメンテナンスモードにします。
-1. 次の場合 `--backup-code` が指定されている場合は、を除くコードベースをバックアップします。 `pub/static`, `pub/media`、および `var` ディレクトリ。
+1. `--backup-code` が指定されている場合は、`pub/static`、`pub/media`、`var` の各ディレクトリを除き、コードベースをバックアップします。
 
-   バックアップ ファイル名は `var/backups/<timestamp>_filesystem.tgz`
+   バックアップ ファイル名は `var/backups/<timestamp>_filesystem.tgz` です
 
-   を使用すると、いつでもバックアップを復元できます [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンド。
+   [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンドを使用すれば、いつでもバックアップを復元できます。
 
-1. からテーマを削除 `theme` データベーステーブル。
-1. を使用してコードベースからテーマを削除する `composer remove`.
+1. `theme` データベース テーブルからテーマを削除します。
+1. `composer remove` を使用してコードベースからテーマを削除します。
 1. キャッシュをクリアします。
 1. 生成されたクラスをクリーンアップ
-1. 次の場合 `--clear-static-content` 指定した場合、クリアする [生成された静的ビューファイル](../../configuration/cli/static-view-file-deployment.md).
+1. `--clear-static-content` が指定されている場合、は [ 生成された静的ビューファイル ](../../configuration/cli/static-view-file-deployment.md) をクリーンアップします。
 
 例えば、別のテーマが依存するテーマをアンインストールしようとすると、次のメッセージが表示されます。
 
@@ -103,4 +103,4 @@ Disabling maintenance mode
 
 >[!NOTE]
 >
->また、管理テーマをアンインストールするには、コンポーネントの依存関係の挿入設定から削除する必要があります。 `<component root directory>/etc/di.xml`.
+>また、管理テーマをアンインストールするには、コンポーネントの依存関係の挿入設定 `<component root directory>/etc/di.xml` からも削除する必要があります。

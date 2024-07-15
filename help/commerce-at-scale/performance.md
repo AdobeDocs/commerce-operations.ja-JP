@@ -21,7 +21,7 @@ AEM Dispatcher は、迅速かつ動的な環境の提供を支援するリバ�
 
 AEM プロジェクトのベストプラクティスは、Dispatcher で可能な限りサイトをキャッシュすることです。 時間ベースのキャッシュの無効化を使用すると、サーバーサイドでレンダリングされたCIF ページが、設定された限られた時間だけキャッシュされます。 設定時間が経過すると、次のリクエストは、AEM パブリッシャーおよびAdobe Commerce GraphQLからページを再構築し、次の無効化まで Dispatcher キャッシュに再び保存します。
 
-TTL キャッシュ機能は、AEM AEM Commons パッケージ内の「Dispatcher TTL」コンポーネントを使用して、dispatcher.any 設定ファイルで/enableTTL 「1」を設定することで、ACS で設定できます。
+TTL キャッシュ機能は、AEM AEM Commons パッケージ内の「Dispatcher TTL」コンポーネントを使用して、dispatcher.any 設定ファイルで/enableTTL &quot;1&quot;を設定することで、ACS で設定できます。
 
 有効にすると、Dispatcher はバックエンドからの応答ヘッダーを評価します。応答ヘッダーに Cache-Control の max-age または Expires の日付が含まれている場合は、キャッシュファイルの横に空の補助ファイルが作成され、変更時間は有効期限と同じになります。 変更時間を過ぎてキャッシュされたファイルがリクエストされると、バックエンドから自動的に再リクエストされます。 これにより、製品アップデート遅延（TTL）がビジネス関係者に認められ受け入れられると、手動の介入やメンテナンスを必要としない効果的なキャッシュメカニズムが提供されます。
 
@@ -38,11 +38,11 @@ TTL キャッシュ機能は、AEM AEM Commons パッケージ内の「Dispatche
 - CSS ファイル
 - CIF JavaScript ファイルを含むすべてのサイト JavaScript ファイル
 
-## Dispatcher statfilelevel および猶予期間の最適化
+## Dispatcher statfilelevel anbd 猶予期間の最適化
 
-デフォルトの Dispatcher 設定では/statfilelevel 「0」設定を使用します。つまり、1 つの「.stat」ファイルが htdocs ディレクトリ（ドキュメントルートディレクトリ）のルートに配置されます。 AEMでページやファイルに変更が加えられると、この単一の stat ファイルの変更時間が変更時間に合わせて更新されます。 時間がリソースの変更時間よりも新しい場合、Dispatcher はすべてのリソースが無効化されていると見なし、無効化されたリソースに対する後続のリクエストではパブリッシュインスタンスへの呼び出しがトリガーになります。 したがって、基本的に、この設定により、すべてのアクティベーションはキャッシュ全体を無効にします。
+デフォルトの Dispatcher 設定では/statfilelevel 「0」設定を使用します。つまり、1 つの「.stat」ファイルが htdocs ディレクトリ（ドキュメントルートディレクトリ）のルートに配置されます。 AEMでページやファイルに変更が加えられると、この単一の stat ファイルの変更時間が変更時間に合わせて更新されます。 時間がリソースの変更時間よりも新しい場合、Dispatcher はすべてのリソースが無効化されていると見なし、無効化されたリソースに対する後続のリクエストではPublish インスタンスへの呼び出しがトリガーになります。 したがって、基本的に、この設定により、すべてのアクティベーションはキャッシュ全体を無効にします。
 
-どのサイト（特にコマースサイトの負荷が高い場合）でも、これによりAEM パブリッシュ層に不要な量の負荷が発生し、1 回のページ更新だけでサイト構造全体が無効化されます。
+どのサイト（特にコマースサイトの負荷が高い場合）でも、これによりAEM Publish層に不要な量の負荷が発生し、1 回のページ更新だけでサイト構造全体が無効化されます。
 
 代わりに、statfilelevel 設定をドキュメントルートディレクトリの htdocs ディレクトリ内のサブディレクトリの深さに対応する高い値に変更することができます。これにより、あるレベルにあるファイルが無効化されると、その.stat ディレクトリレベル以下のファイルのみが更新されます。
 
@@ -68,11 +68,12 @@ statfilelevel の設定時に最適化するもう 1 つの Dispatcher 設定は
 
 >[!NOTE]
 >
-> このトピックについて詳しくは、 [aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/gracePeriod) GitHub リポジトリ。
+> このトピックについて詳しくは、[aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/gracePeriod) GitHub リポジトリを参照してください。
 
 ## CIF - コンポーネントを介したGraphQLのキャッシュ
 
-AEM内の個々のコンポーネントをキャッシュするように設定できます。つまり、Adobe Commerceに対するGraphQL リクエストが 1 回呼び出された後、設定された制限時間までの後続のリクエストがAEM キャッシュから取得され、Adobe Commerceにそれ以上の読み込みを行いません。 例えば、すべてのページに表示されるカテゴリツリーに基づくサイトナビゲーションや、ファセット検索機能内のオプションなどです。これらは、Adobe Commerceでリソース集約型のクエリを作成する必要があるが、定期的に変更される可能性は低く、キャッシュに適した選択肢となる 2 つの領域にすぎません。 これにより、例えば PDP や PLP がパブリッシャーによって再構築される場合でも、ナビゲーションビルドに対するリソースを大量に消費するGraphQL リクエストがAdobe Commerceにヒットせず、AEM CIF上のGraphQL キャッシュから取得される可能性があります。
+AEM内の個々のコンポーネントをキャッシュするように設定できます。つまり、GraphQLのリクエストをAdobeに送信します
+Commerceが 1 回呼び出されると、設定された制限時間を上限として後続のリクエストがAEM キャッシュから取得され、Adobe Commerceにそれ以上の読み込みは行われません。 例えば、すべてのページに表示されるカテゴリツリーに基づくサイトナビゲーションや、ファセット検索機能内のオプションなどです。これらは、Adobe Commerceでリソース集約型のクエリを作成する必要があるが、定期的に変更される可能性は低く、キャッシュに適した選択肢となる 2 つの領域にすぎません。 これにより、例えば PDP や PLP がパブリッシャーによって再構築される場合でも、ナビゲーションビルドに対するリソースを大量に消費するGraphQL リクエストがAdobe Commerceにヒットせず、AEM CIF上のGraphQL キャッシュから取得される可能性があります。
 
 次の例では、ナビゲーションコンポーネントをキャッシュします。これは、サイト内のすべてのページで同じGraphQL クエリを送信するからです。 次のリクエストでは、ナビゲーション構造の過去 100 個のエントリを 10 分間キャッシュします。
 
@@ -88,7 +89,8 @@ com.adobe.cq.commerce.core.search.services.SearchFilterService:true:100:3600
 
 キャッシュを「ヒット」させるには、またAdobe Commerceの繰り返し呼び出しを防ぐために、すべてのカスタム http ヘッダーと変数を含むリクエストが正確に一致する必要があります。 一度設定すると、このキャッシュを手動で無効にする簡単な方法はないことに注意してください。 つまり、Adobe Commerceに追加された新しいカテゴリは、上記のキャッシュに設定された有効期限が切れ、GraphQL リクエストが更新されるまで、ナビゲーションに表示されません。 検索ファセットについても同じです。 ただし、このキャッシュによって達成されるパフォーマンス上のメリットを考えると、通常、これは許容できる妥協点になります。
 
-上記のキャッシュオプションは、「GraphQL Client Configuration Factory」のAEM OSGi 設定コンソールを使用して設定できます。 各キャッシュ設定エントリは、次の形式で指定できます。
+上記のキャッシュオプションは、「GraphQL クライアント」のAEM OSGi 設定コンソールを使用して設定できます。
+設定ファクトリ」を参照してください。 各キャッシュ設定エントリは、次の形式で指定できます。
 
 ```
 * NAME:ENABLE:MAXSIZE:TIMEOUT like for example mycache:true:1000:60 where each attribute is defined as:
@@ -128,12 +130,12 @@ gclid と fbclid は、広告をクリックするたびに変更されます。
 
 >[!NOTE]
 >
->設定の重要性に関する詳細 `ignoreUrlParams` は、で利用できます。 [aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/ignoreUrlParams) GitHub リポジトリ。
+>`ignoreUrlParams` の設定の重要性についての詳細は、[aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/ignoreUrlParams) GitHub リポジトリを参照してください。
 
 そのため、「ignoreUrlParams」では、ページのHTML構造を変えるGETパラメーターを使用する場合を除き、デフォルトですべてのパラメーターを無視するように設定する必要があります。 例えば、検索語句が URL 内にGETパラメーターとして含まれる検索ページの場合などです。この場合、ignoreUrlParams を手動で設定して、gclid、fbclid など、広告チャネルが使用するその他のトラッキングパラメーターを無視し、通常のサイト操作に必要なGETパラメーターは影響を受けないようにする必要があります。
 
 ## Dispatcher の MPM ワーカーの制限
 
-MPM ワーカー設定は、高度な Apache HTTP サーバー設定であり、Dispatcher で使用可能な CPU と RAM に基づいて最適化するために徹底的なテストが必要になります。 ただし、このホワイトペーパーの範囲では、ServerLimit と MaxRequestWorkers をサーバーの使用可能な CPU と RAM がサポートするレベルまで上げた後、MinSpareThreads と MaxSpareThreads を両方とも MaxRequestWorkers に一致するレベルまで上げることをお勧めします。
+MPM ワーカー設定は、Apache HTTP サーバーの高度な設定であり、Dispatcherで使用可能な CPU と RAM に基づいて最適化するために、徹底的なテストが必要になります。 ただし、このホワイトペーパーの範囲では、ServerLimit と MaxRequestWorkers をサーバーの使用可能な CPU と RAM がサポートするレベルまで上げた後、MinSpareThreads と MaxSpareThreads を両方とも MaxRequestWorkers に一致するレベルまで上げることをお勧めします。
 
 この設定では、Apache HTTP が「完全な準備設定」のままになります。これは、大量の RAM と複数の CPU コアを備えたサーバー向けの高性能な設定です。 この設定により、リクエストに対応できる永続的なオープン接続を維持することで、Apache HTTP からの最適な応答時間が得られ、フラッシュセールス時などの突然のトラフィックサージに応答して新しいプロセスを生成する遅延が取り除かれます。

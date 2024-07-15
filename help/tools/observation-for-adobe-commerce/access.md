@@ -1,6 +1,6 @@
 ---
-title: へのアクセス [!DNL Observation for Adobe Commerce] オンドレット
-description: にアクセスする方法を説明します [!DNL Observation for Adobe Commerce] おしゃべり。
+title: ' [!DNL Observation for Adobe Commerce] nerdlet へのアクセス'
+description: ' [!DNL Observation for Adobe Commerce] nerdlet にアクセスする方法を説明します。'
 exl-id: 4b6f554e-685b-465d-8676-b70e790606c6
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,16 +10,16 @@ ht-degree: 0%
 
 ---
 
-# へのアクセス [!DNL Observation for Adobe Commerce] オンドレット
+# [!DNL Observation for Adobe Commerce] ータナードレットへのアクセス
 
-を使用するには [!DNL New Relic Observation for Adobe Commerce] nerdlet。へのアクセス権があることを確認します。 [!DNL New Relic].
+[!DNL New Relic Observation for Adobe Commerce] の nerdlet を使用するには、[!DNL New Relic] へのアクセス権があることを確認します。
 
-1. に移動します [!UICONTROL Okta] ホームページ（社内Adobeユーザーのみ）
-1. 「」を選択します [!UICONTROL New Relic applet] （社内Adobeユーザーのみ）。
+1. [!UICONTROL Okta] のホームページに移動します（内部Adobeユーザーのみ）。
+1. [!UICONTROL New Relic applet] を選択します（内部Adobeユーザーのみ）。
 
-   ![New Relicアプレット](../../assets/tools/observation-for-adobe-commerce/new-relic-applet.jpeg)
+   ![New Relicアプレット ](../../assets/tools/observation-for-adobe-commerce/new-relic-applet.jpeg)
 
-1. 経由での認証 [!UICONTROL Okta] （社内Adobeユーザーのみ）。
-1. から [!DNL New Relic] ホームページで、「アプリ」メニュー項目を選択します。
+1. [!UICONTROL Okta] 経由での認証（内部Adobeユーザーの場合のみ）。
+1. [!DNL New Relic] のホームページで、アプリ メニュー項目を選択します。
 
-   ![New Relic ホームページ](../../assets/tools/observation-for-adobe-commerce/new-relic-homepage.jpeg)
+   ![New Relicのホームページ ](../../assets/tools/observation-for-adobe-commerce/new-relic-homepage.jpeg)

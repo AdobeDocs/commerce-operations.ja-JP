@@ -11,18 +11,18 @@ ht-degree: 0%
 
 # Adobe Commerce リリースポリシー
 
-Adobe Commerceが使用する [セマンティックバージョニング](https://semver.org/) 個々のモジュールレベル（例： `magento/framework 101.1.1`）、ただしマーケティングバージョン番号には適用されません。 例：
+Adobe Commerceでは、個々のモジュールレベル（`magento/framework 101.1.1` など）で [ セマンティックバージョニング ](https://semver.org/) を使用しますが、マーケティングバージョン番号には使用しません。 例：
 
-- **メジャーリリース**—2
-- **マイナーリリース**—2.4
+- **メジャーリリース**-2
+- **マイナーリリース**-2.4
 - **PATCHリリース**—2.4.5
    - **セキュリティパッチリリース**—2.4.5-p1
       - セキュリティバグ修正
       - セキュリティの強化
-- **ベータ版パッチリリース**—2.4.7-beta2
-- **拡張機能、インフラストラクチャ、サービスのリリース**
+- **BETA パッチリリース**—2.4.7-beta2
+- **拡張性、インフラストラクチャ、サービスのリリース**
 - **ホットフィックス**
-- **個々のパッチ**
+- **個別パッチ**
 - **カスタムパッチ**
 
 ## マイナーリリース
@@ -48,11 +48,11 @@ Adobe Commerceが使用する [セマンティックバージョニング](https
 
 {{$include /help/_includes/security-patch-release-overview.md}}
 
-## ベータ版パッチリリース
+## BETA パッチリリース
 
 Adobe Commerce機能の一般提供より前のリリースは、すべてのAdobe Commerceのお客様およびAdobeパートナーが公開しています。 これにより、一般公開まで、コードと影響を受けるコンポーネントのレビューに時間がかかります。
 
-ベータ版リリースには欠陥が含まれている場合があり、いかなる保証もなく「現状のまま」提供されます。 Adobeは、ベータ版リリースのメンテナンス、修正、更新、変更、修正、またはその他のサポート（Adobeサポートサービスまたはその他の方法による）を行う義務を負いません。 お客様は、ベータ版リリース、およびそれに付随するドキュメントや資料の正しい機能やパフォーマンスに対して、注意を払い、いかなる方法でも依存しないことをお勧めします。 したがって、ベータ版リリースの使用は、完全にお客様自身の責任で行うものとします。
+Beta リリースには不具合が含まれる場合があり、いかなる保証もなく「現状のまま」提供されます。 Adobeは、（Adobeサポートサービスまたはその他の方法を通じて）Beta リリースを保守、修正、更新、変更、変更、その他の方法でサポートする義務を負いません。 お客様は、Beta リリース、およびそれに付随するドキュメントや資料の正しい機能やパフォーマンスに対して、注意を払い、いかなる形でも依存しないことをお勧めします。 したがって、Beta リリースの使用は、すべて顧客自身の責任で行うものとします。
 
 ## 拡張機能、インフラストラクチャ、サービスのリリース
 
@@ -60,7 +60,7 @@ Adobe Commerce機能の一般提供より前のリリースは、すべてのAdo
 
 ## ホットフィックス
 
-ホットフィックスは、多くのマーチャントに影響を与えるゼロデイ脆弱性の修正など、影響の大きいセキュリティ修正や品質修正を含むパッチです。 Adobeリリース必要に応じて、Adobe Commerce バージョンのホットフィックスが引き続きサポートされ、セキュリティや品質に関する重大な問題の影響を受けます。 ホットフィックスがに公開されます [「既知の問題」セクション](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) 私たちの知識ベースです。 これらの修正は、次回の予定パッチリリースに含まれています。
+ホットフィックスは、多くのマーチャントに影響を与えるゼロデイ脆弱性の修正など、影響の大きいセキュリティ修正や品質修正を含むパッチです。 Adobeリリース必要に応じて、Adobe Commerce バージョンのホットフィックスが引き続きサポートされ、セキュリティや品質に関する重大な問題の影響を受けます。 ホットフィックスは、ナレッジベースの [ 既知の問題 ](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) セクションに公開されています。 これらの修正は、次回の予定パッチリリースに含まれています。
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Adobe Commerce機能の一般提供より前のリリースは、すべてのAdo
 
 ## 個々のパッチ
 
-個々のパッチには、特定の問題に対する影響の低い品質修正が含まれています。 これらの修正は、サポートされているAdobe Commerceのマイナーバージョンに適用されます。 Adobeは、に従って、Adobe Commerceで必要になった個々のパッチをリリースします。 [ソフトウェアのライフサイクル ポリシー](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+個々のパッチには、特定の問題に対する影響の低い品質修正が含まれています。 これらの修正は、サポートされているAdobe Commerceのマイナーバージョンに適用されます。 Adobeでは、アドビの [ ソフトウェアライフサイクルポリシー ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) に従って、Adobe Commerceで必要になる個々のパッチをリリースしています。
 
 >[!NOTE]
 >
@@ -76,10 +76,10 @@ Adobe Commerce機能の一般提供より前のリリースは、すべてのAdo
 
 ## カスタムパッチ
 
-Adobe以外の担当者が、様々な理由で問題を修正したり、Adobe Commerce コードを変更したりするために作成します。 カスタムパッチは、 [品質向上パッチツール](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+Adobe以外の担当者が、様々な理由で問題を修正したり、Adobe Commerce コードを変更したりするために作成します。 カスタムパッチは、[Quality Patches Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) を通じて提供されます。
 
 ## 関連トピック
 
-- [バージョン管理](https://developer.adobe.com/commerce/php/development/versioning/)
+- [ バージョン管理 ](https://developer.adobe.com/commerce/php/development/versioning/)
 - [今後のリリース](schedule.md)
-- [ソフトウェアのライフサイクル ポリシー](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+- [ ソフトウェアライフサイクルポリシー ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)

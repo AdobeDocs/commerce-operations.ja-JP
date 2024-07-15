@@ -13,10 +13,10 @@ ht-degree: 0%
 
 # 技術
 
-クラウドインフラストラクチャー上のAdobe Commerceでは、プラットフォームをサポートするために複数のソフトウェアソリューションを使用します。 の次のトピックを参照してください _クラウドガイド_ 詳しくは、以下を参照してください。
+クラウドインフラストラクチャー上のAdobe Commerceでは、プラットフォームをサポートするために複数のソフトウェアソリューションを使用します。 詳しくは、_クラウドガイド_ の次のトピックを参照してください。
 
-- [Pro 環境のアーキテクチャ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#production-technology-stack)
-- [スターター環境のアーキテクチャ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-architecture.html#production-and-staging-technology-stack)
+- [Pro 環境アーキテクチャ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#production-technology-stack)
+- [ スターター環境のアーキテクチャ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-architecture.html#production-and-staging-technology-stack)
 
 ## 機能とメリット
 

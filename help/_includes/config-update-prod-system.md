@@ -20,9 +20,9 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-   IP アドレスの許可リストを設定する機能など、その他のオプションについては、を参照してください。 [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
+   IP アドレスの許可リストを設定する機能など、その他のオプションについては、[`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md) を参照してください。
 
-1. を設定して、実行中のキューワーカーを停止します。 `cron_run` 対象： `false` 。対象： `app/etc/env.php` 次のように設定します。
+1. `app/etc/env.php` で `cron_run` を `false` に設定して、実行中のキューワーカーをすべて停止します。
 
    ```php?start_inline=1
    'cron_consumers_runner' => [
@@ -36,13 +36,13 @@ ht-degree: 0%
    bin/magento app:config:import
    ```
 
-1. 最後に `kill` アクティブなコンシューマープロセス。
+1. 最後に、アクティブなコンシューマープロセスを `kill` きます。
 
    ```bash
    kill <PID>
    ```
 
-   ここで、 `PID` は、強制終了するプロセス ID です。例：
+   `PID` は、強制終了されるプロセス ID です（例：）。
 
    ```bash
    kill 1234

@@ -19,7 +19,7 @@ ht-degree: 0%
    + [Bootstrapパラメーター](bootstrap/set-parameters.md)
    + [プロファイル](bootstrap/mage-profiler.md)
    + [ベースディレクトリのパス](bootstrap/mage-directory.md)
-+ デプロイメント {#deployment}
++ 展開 {#deployment}
    + [デプロイメントの概要](deployment/overview.md)
    + [単一マシンの導入](deployment/single-machine.md)
    + [パイプラインデプロイメント](deployment/technical-details.md)
@@ -28,7 +28,7 @@ ht-degree: 0%
    + [システム設定の作成](deployment/build-system.md)
    + [実稼動システムのセットアップ](deployment/production-system.md)
    + [ファイルシステムのアクセス権限](deployment/file-system-permissions.md)
-   + 例 {#examples}
+   + {#examples} の例
       + [共有設定の使用](deployment/example-shared-configuration.md)
       + [CLI コマンドの使用](deployment/example-using-cli.md)
       + [環境変数の使用](deployment/example-environment-variables.md)
@@ -96,11 +96,11 @@ ht-degree: 0%
    + [サービス](reference/config-reference-services.md)
    + [機密およびシステム固有の設定](reference/config-reference-sens.md)
    + [設定を上書き](reference/override-config-settings.md)
-+ Cron ジョブ {#crons}
++ Cron Jobs {#crons}
    + [Cron ジョブとグループ](cron/custom-cron.md)
    + [Cron リファレンスのカスタマイズ](cron/custom-cron-reference.md)
    + [カスタム cron ジョブの設定](cron/custom-cron-tutorial.md)
-+ ログ {#logs}
++ Logs {#logs}
    + [カスタマイズされたログ](logs/custom-logging.md)
    + [ロガーインターフェイス](logs/logger-interface.md)
    + [データベースアクティビティを記録](logs/database-activity.md)
@@ -110,7 +110,7 @@ ht-degree: 0%
    + [メッセージキューの管理](queues/manage-message-queues.md)
    + [Amazon MQ の設定](queues/aws-mq.md)
    + [消費者](queues/consumers.md)
-+ 複数のサイト {#multi-sites}
++ Multiple sites {#multi-sites}
    + [複数のサイトとビュー](multi-sites/ms-overview.md)
    + [データベース エンティティ増分 ID](multi-sites/change-increment-id.md)
    + [管理者で設定](multi-sites/ms-admin.md)
@@ -129,7 +129,7 @@ ht-degree: 0%
    + [クリックジャッキング攻撃](security/xframe-options.md)
 + ストレージ {#storage}
    + [データベース プロファイラー](storage/db-profiler.md)
-   + リモートストレージ {#remote-storage}
+   + リモート記憶域 {#remote-storage}
       + [リモートストレージモジュール](remote-storage/remote-storage.md)
       + [AWS S3 バケット](remote-storage/remote-storage-aws-s3.md)
       + [画像のサイズ変更](remote-storage/remote-storage-image-resize.md)
@@ -139,11 +139,11 @@ ht-degree: 0%
       + [セッションストレージ用の memcached](storage/memcached.md)
       + [centOS の memcached](storage/memcache-centos.md)
       + [ubuntu 上の memcached](storage/memcache-ubuntu.md)
-   + データベースの分割 {#split-db}
+   + データベース {#split-db} の分割
       + [データベースの分割の概要](storage/multi-master.md)
       + [自動設定](storage/multi-master-masterdb.md)
       + [手動設定](storage/multi-master-manual.md)
       + [分割データベースの検証](storage/multi-master-verify.md)
       + [データベースレプリケーション](storage/multi-master-replication.md)
       + [単一データベースに戻す](storage/revert-split-database.md)
-+ [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
++ [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

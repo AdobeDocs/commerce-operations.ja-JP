@@ -13,11 +13,11 @@ ht-degree: 0%
 
 ここでは、データセンター（仮想化されていない）で物理的にホストされているプレーンサーバーを使用し、リソースが他のユーザーと共有されていないAdobe Commerce インスタンスの一般的な推奨設定について説明します。 ホスティングプロバイダーは、特にCommerceのハイパフォーマンスホスティングを専門としている場合、要件に対して同等または効果的な別の設定を推奨する場合があります。
 
-クラウドインフラストラクチャ環境でのAdobe Commerceについては、を参照してください。 [スターターアーキテクチャ](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
+クラウドインフラストラクチャ環境でのAdobe Commerceについては、[ スターターアーキテクチャ ](https://devdocs.magento.com/cloud/architecture/starter-architecture.html) を参照してください。
 
 ## [!DNL Commerce] リファレンスアーキテクチャ図
 
-この [!DNL Commerce] リファレンスアーキテクチャの図は、スケーラブルな環境を設定するためのベストプラクティスアプローチを表しています [!DNL Commerce] サイト。
+[!DNL Commerce] リファレンスアーキテクチャの図は、スケーラブルな [!DNL Commerce] サイトを設定するためのベストプラクティスアプローチを表しています。
 
 図中の各要素の色は、その要素がMagento Open Sourceの一部であるかAdobe Commerceの一部であるか、また必要かどうかを示しています。
 
@@ -25,15 +25,15 @@ ht-degree: 0%
 * グレーの要素はMagento Open Sourceのオプションです
 * Adobe Commerceでは、青い要素はオプションです
 
-![Commerceのリファレンスアーキテクチャ図](../assets/performance/images/ref-architecture-2.3.png)
+![Commerceのリファレンスアーキテクチャ図 ](../assets/performance/images/ref-architecture-2.3.png)
 
 次の節では、Commerce リファレンスアーキテクチャの図の各セクションに関する推奨事項と考慮事項を示します。
 
 ### [!DNL Varnish]
 
-* A [!DNL Varnish] クラスターは、サイトのトラフィックに合わせて拡張可能
+* [!DNL Varnish] クラスターは、サイトのトラフィックに合わせて拡張できます
 * 必要なキャッシュページの数に基づいてインスタンスサイズを調整します
-* トラフィック量の多いサイトでは、 [!DNL Varnish] オンキャッシュで web 層ごとにリクエストを（最大で） 1 つフラッシュするためのマスター
+* 高トラフィックのサイトでは、[!DNL Varnish]マスターを使用して、オンキャッシュで web 層ごとに（最大で） 1 つのリクエストをフラッシュするようにします
 
 ### Web
 
@@ -62,14 +62,14 @@ ht-degree: 0%
 * pub/media ストレージには GFS または GlusterFS の使用を検討してください
 * または、低トラフィックサイトには DB ストレージを使用します
 
-### 推奨 [!DNL Varnish] 参照アーキテクチャ
+### 推奨される [!DNL Varnish] 参照アーキテクチャ
 
-Magentoは、複数のフルページキャッシュエンジン（File、Memcache、Redis、 [!DNL Varnish]）が標準で搭載されており、拡張機能による適用範囲が拡大されています。 [!DNL Varnish] は、推奨されるフルページキャッシュエンジンです。  [!DNL Commerce] は様々な種類のをサポートしています [!DNL Varnish] 設定。
+Magentoでは、複数のフルページキャッシュエンジン（ファイル、Memcache、Redis、[!DNL Varnish]）が標準でサポートされているほか、拡張機能による適用範囲が広がっています。 [!DNL Varnish] は、推奨されるフルページキャッシュエンジンです。  [!DNL Commerce] は、様々な [!DNL Varnish] 設定をサポートしています。
 
-高可用性を必要としないサイトの場合は、シンプルなを使用することをお勧めします [!DNL Varnish] nginx SSL ターミネーションを使用した設定。
+高可用性を必要としないサイトの場合は、Nginx SSL ターミネーションを使用したシンプルな [!DNL Varnish] 設定を使用することをお勧めします。
 
-![シンプル [!DNL Varnish] SSL ターミネーションを使用した設定](../assets/performance/images/single-varnish-with-ssl-termination.png)
+![SSL ターミネーションを使用したシンプルな [!DNL Varnish] 設定 ](../assets/performance/images/single-varnish-with-ssl-termination.png)
 
-高可用性が必要なサイトの場合は、2 層の使用をお勧めします [!DNL Varnish] ssl ターミネーションロードバランサーを使用した設定。
+高可用性が必要なサイトの場合は、SSL ターミネータ ロード バランサーを使用した 2 層 [!DNL Varnish] 構成を使用することをお勧めします。
 
-![2 層の高可用性 [!DNL Varnish] ssl ターミネータリングロードバランサーを使用した設定](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)
+![SSL ターミネーター付き、高可用性の 2 層 [!DNL Varnish] 構成 ](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)

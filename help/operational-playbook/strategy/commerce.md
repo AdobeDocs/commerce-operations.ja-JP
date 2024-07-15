@@ -79,4 +79,4 @@ B2B と B2C の両方で e コマースが進化し続けるにつれて、企�
 
 推奨される e コマース戦略フレームワークについては、次の図を参照してください。
 
-![Commerce戦略フレームワークの図](../../assets/playbooks/commerce-strategy-framework.png)
+![Commerce戦略フレームワークの図 ](../../assets/playbooks/commerce-strategy-framework.png)

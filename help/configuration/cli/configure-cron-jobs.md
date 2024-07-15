@@ -26,38 +26,38 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->実行できなくなりました `dev/tools/cron.sh` スクリプトが削除されたためです。
+>スクリプトが削除されているので、`dev/tools/cron.sh` を実行できなくなりました。
 
 >[!INFO]
 >
 >Commerceは、インデックス作成を含む多くの重要なシステム機能に対して、適切な cron ジョブ設定に依存します。 適切に設定されていない場合、Commerceが期待どおりに機能しません。
 
-UNIX システムは、特定のユーザーが実行するタスクを、 _crontab_&#x200B;これは cron デーモンに対し、「この時点でこのコマンドを実行する」という指示を実際にデーモンに伝える指示を含むファイルです。 各ユーザは独自の crontab を持ち、特定の crontab 内のコマンドは、その crontab を所有するユーザとして実行されます。
+UNIX システムは、特定のユーザーが実行するタスクを _crontab_ を使用してスケジュールします。このファイルには、デーモンに「この日付に、このコマンドを現時点で実行する」ように指示する指示が含まれています。 各ユーザは独自の crontab を持ち、特定の crontab 内のコマンドは、その crontab を所有するユーザとして実行されます。
 
-Web ブラウザーで cron を実行するには、以下を参照してください [ブラウザーで実行する cron.php を保護する](../security/secure-cron-php.md).
+Web ブラウザーで cron を実行するには、[Secure cron.php to run in a browser](../security/secure-cron-php.md) を参照してください。
 
 ## Commerce crontab を作成または削除する
 
 この節では、Commerce crontab （Commerce cron ジョブの設定）を作成または削除する方法について説明します。
 
-この _crontab_ は、cron ジョブを実行するために使用される設定です。
+_crontab_ は、cron ジョブを実行するために使用される設定です。
 
 Commerce アプリケーションは、異なる設定で実行できる cron タスクを使用します。 PHP のコマンドライン設定は、インデクサーのインデックス再作成、メールの生成、サイトマップの生成などを行う一般的な cron ジョブを制御します。
 
 >[!WARNING]
 >
->- インストールおよびアップグレード時の問題を回避するために、PHP コマンドライン設定と PHP web サーバープラグインの設定の両方に同じ PHP 設定を適用することを強くお勧めします。 詳しくは、を参照してください [必要な PHP 設定](../../installation/prerequisites/php-settings.md).
+>- インストールおよびアップグレード時の問題を回避するために、PHP コマンドライン設定と PHP web サーバープラグインの設定の両方に同じ PHP 設定を適用することを強くお勧めします。 詳しくは、[PHP の設定が必要 ](../../installation/prerequisites/php-settings.md) を参照してください。
 >- マルチノードシステムでは、crontab は 1 つのノードでのみ実行できます。 これは、パフォーマンスやスケーラビリティに関連する理由で複数の web ノードを設定した場合にのみ適用されます。
 
 ### Commerce crontab の作成
 
 バージョン 2.2 以降、Commerceによって crontab が作成されます。 Commerce ファイルシステムの所有者用に設定された crontab にCommerce crontab を追加します。 つまり、他の拡張機能やアプリケーション用に crontab を既に設定している場合は、Commerce crontab を追加します。
 
-Commerce crontab が内部にある `#~ MAGENTO START` および `#~ MAGENTO END` crontab のコメント。
+Commerce crontab は `#~ MAGENTO START` 内にあり、crontab 内にはコメントが `#~ MAGENTO END` まれています。
 
 Commerce crontab を作成するには：
 
-1. としてログインするか、に切り替える [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
+1. [ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) としてログインするか、に切り替えます。
 1. Commerce インストールディレクトリに移動します。
 1. 次のコマンドを入力します。
 
@@ -65,11 +65,11 @@ Commerce crontab を作成するには：
    bin/magento cron:install [--force]
    ```
 
-使用方法 `--force` 既存の crontab を書き換えます。
+`--force` を使用して、既存の crontab を書き換えます。
 
 >[!INFO]
 >
->- `magento cron:install` 内の既存の crontab を書き換えない `#~ MAGENTO START` および `#~ MAGENTO END` crontab のコメント。
+>- `magento cron:install` は、`#~ MAGENTO START` 内の既存の crontab を書き換えず、crontab 内のコメントを `#~ MAGENTO END` き直しません。
 >- `magento cron:install --force` は、Commerce コメント以外の cron ジョブには影響しません。
 
 crontab を表示するには、ファイルシステムの所有者として次のコマンドを入力します。
@@ -88,9 +88,9 @@ crontab -l
 
 >[!INFO]
 >
->この `update/cron.php` ファイルはCommerce 2.4.0 で削除されました。このファイルがインストール上に存在する場合は、安全に削除できます。
+>`update/cron.php` ファイルはCommerce 2.4.0 で削除されました。このファイルがインストール上に存在する場合は、安全に削除できます。
 >
->への参照 `update/cron.php` および `bin/magento setup:cron:run` は crontab からも削除されます
+>`update/cron.php` と `bin/magento setup:cron:run` への参照も crontab から削除してください
 
 ### Commerce crontab を削除します。
 
@@ -98,7 +98,7 @@ Commerce アプリケーションをアンインストールする前にのみ�
 
 Commerce crontab を削除するには：
 
-1. としてログインするか、に切り替える [ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md).
+1. としてログインするか、[ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) に切り替えます。
 1. Commerce インストールディレクトリに移動します。
 1. 次のコマンドを入力します。
 
@@ -108,7 +108,7 @@ Commerce crontab を削除するには：
 
 >[!INFO]
 >
->このコマンドは、以外の cron ジョブには影響しません。 `#~ MAGENTO START` および `#~ MAGENTO END` crontab のコメント。
+>このコマンドは、`#~ MAGENTO START` 外の cron ジョブや crontab のコメント `#~ MAGENTO END` は影響しません。
 
 ## コマンドラインから cron を実行します
 
@@ -118,7 +118,7 @@ Commerce crontab を削除するには：
 bin/magento cron:run [--group="<cron group name>"]
 ```
 
-ここで、 `--group` 実行する cron グループを指定します（すべてのグループに対して cron を実行する場合はこのオプションを省略します）。
+ここで、`--group` は実行する cron グループを指定します（すべてのグループに対して cron を実行する場合は、このオプションを省略します）。
 
 インデックス作成 cron ジョブを実行するには、次のように入力します。
 
@@ -132,29 +132,29 @@ bin/magento cron:run --group index
 bin/magento cron:run --group default
 ```
 
-カスタム cron ジョブとグループを設定するには、以下を参照してください。 [カスタム cron ジョブと cron グループの設定](../cron/custom-cron.md).
+カスタム cron ジョブとグループを設定するには、[ カスタム cron ジョブとグループの設定 ](../cron/custom-cron.md) を参照してください。
 
 >[!INFO]
 >
->cron を 2 回実行する必要があります。1 回目は実行するタスクを検出し、2 回目はタスク自体を実行します。 2 回目の cron 実行は、以降に行う必要があります `scheduled_at` タスクごとの時間。
+>cron を 2 回実行する必要があります。1 回目は実行するタスクを検出し、2 回目はタスク自体を実行します。 2 回目の cron 実行は、各タスクについて `scheduled_at` 回以降に実行する必要があります。
 
 ## ログ
 
-すべて `cron` ジョブ情報はから移動しました `system.log` 別の場所に `cron.log`.
-デフォルトでは、cron 情報はにあります。 `<install_directory>/var/log/cron.log`.
-Cron ジョブからのすべての例外は、次のユーザーが記録します。 `\Magento\Cron\Observer\ProcessCronQueueObserver::execute`.
+すべて `cron` ジョブ情報は、`system.log` から別の `cron.log` に移動しました。
+デフォルトでは、cron 情報は `<install_directory>/var/log/cron.log` にあります。
+Cron ジョブからのすべての例外は `\Magento\Cron\Observer\ProcessCronQueueObserver::execute` によって記録されます。
 
-ログインしている他に `cron.log`:
+`cron.log` にログインする以外に、
 
-- で失敗したジョブ `ERROR` および `MISSED` ステータスは「」に記録されます。 `<install_directory>/var/log/support_report.log`.
+- `ERROR` および `MISSED` のステータスを持つ失敗したジョブが `<install_directory>/var/log/support_report.log` に記録されます。
 
-- を使用したジョブ `ERROR` ステータスは常に次のように記録されます `CRITICAL` 。対象： `<install_directory>/var/log/exception.log`.
+- `ERROR` ステータスのジョブは、常に `<install_directory>/var/log/exception.log` で `CRITICAL` として記録されます。
 
-- を使用したジョブ `MISSED` ステータスのログ形式 `INFO` が含まれる `<install_directory>/var/log/debug.log` ディレクトリ （開発者モードのみ）。
+- `MISSED` ステータスのジョブは、`<install_directory>/var/log/debug.log` ディレクトリに `INFO` として記録されます（開発者モードのみ）。
 
 >[!INFO]
 >
->すべての cron データも `cron_schedule` Commerce データベース内のテーブル。 この表には、次のような cron ジョブの履歴が表示されます。
+>また、すべての cron データはCommerce データベースの `cron_schedule` テーブルにも書き込まれます。 この表には、次のような cron ジョブの履歴が表示されます。
 >
 >- ジョブ ID とコード
 >- ステータス
@@ -163,4 +163,4 @@ Cron ジョブからのすべての例外は、次のユーザーが記録しま
 >- 実行日
 >- 完了日
 >
->テーブルのレコードを表示するには、コマンドラインでCommerce データベースにログインして次のコマンドを入力します `SELECT * from cron_schedule;`.
+>テーブルのレコードを表示するには、コマンドラインでCommerce データベースにログインして、`SELECT * from cron_schedule;` と入力します。

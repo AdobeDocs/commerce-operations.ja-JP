@@ -17,7 +17,7 @@ AEMとAdobe Commerce、およびロードバランサーなどの周囲のイン
 
 タイムアウト設定については、読み込み中に 503 タイムアウトエラーが表示されないように、設定を確認し調整する必要があります。 確認が必要なインフラストラクチャとアプリケーションのタイムアウト設定がいくつかあります。
 
-![AEMのタイムアウトと接続制限を説明する番号付き図](../assets/commerce-at-scale/timeout-settings.svg)
+![AEMのタイムアウトと接続制限を説明する番号付き図 ](../assets/commerce-at-scale/timeout-settings.svg)
 
 ## AEM ロードバランサー
 
@@ -25,15 +25,15 @@ AEMとAdobe Commerce、およびロードバランサーなどの周囲のイン
 
 1. パブリッシャーヘルスチェックを確認して、Dispatcher が負荷サージによって不必要に早くサービスを停止するのを防ぐ必要があります。 ロードバランサーヘルスチェックのタイムアウト設定は、パブリッシャーのタイムアウト設定と合わせる必要があります。
 
-   ![AEM ロードバランサーのヘルスチェックを示すスクリーンショット](../assets/commerce-at-scale/health-checks.png)
+   ![AEM ロードバランサーのヘルスチェックを示すスクリーンショット ](../assets/commerce-at-scale/health-checks.png)
 
-1. Dispatcher ターゲットグループのスティッキネスを無効にしたり、ラウンドロビンのロードバランシングアルゴリズムを使用したりできます。 これは、AEM固有の機能や、セッションの堅牢性の設定が必要となるAEM ユーザーセッションが使用されていないことを前提としています。 ここでは、ユーザーのログインとセッションの管理は、GraphQLを介したAdobe Commerceでのみ行われることを前提としています。
+1. Dispatcherのターゲットグループのスティッキネスを無効にすることができ、ラウンドロビンのロードバランシングアルゴリズムを使用できます。 これは、AEM固有の機能や、セッションの堅牢性の設定が必要となるAEM ユーザーセッションが使用されていないことを前提としています。 ここでは、ユーザーのログインとセッションの管理は、GraphQLを介したAdobe Commerceでのみ行われることを前提としています。
 
-   ![AEM セッションのスティッキネス属性を示したスクリーンショット](../assets/commerce-at-scale/session-stickiness.png)
+   ![AEM セッションのスティッキネス属性を示したスクリーンショット ](../assets/commerce-at-scale/session-stickiness.png)
 
 1. セッションのスティッキネスを有効にすると、Fastly へのリクエストがキャッシュされない場合があることに注意してください。デフォルトでは、Fastly は Set-Cookies ヘッダーを使用してページをキャッシュしません。 Adobe Commerceは、キャッシュ可能なページ（TTL > 0）でも cookie を設定しますが、デフォルトの Fastly VCL では、Fastly キャッシュを機能させるために、キャッシュ可能なページでこれらの cookie を削除します。 ページがキャッシュされない場合は、使用しているカスタム cookie を確認し、Fastly VCL をアップロードしてサイトを再確認します。
 
-## Dispatcher タイムアウト設定
+## Dispatcher タイムアウトの設定
 
 Dispatcher の「renders」オプションの/timeout で、AEM パブリッシュインスタンスにアクセスするための接続タイムアウトをミリ秒単位で指定します。 これを確認し、タイムアウト設定を処理するために別のロードバランサーが存在する場合は、デフォルト設定の「0」（無限タイムアウト）を使用する必要があります。
 
@@ -49,8 +49,8 @@ http 接続タイムアウトと http ソケットタイムアウトは、Fastly
 
 次の画像は、Magento CIF GraphQL Client Configuration Factory を示しています。 ここに示す設定は例にすぎず、ケースバイケースで調整する必要があります。
 
-![Commerce integration framework設定のスクリーンショット](../assets/commerce-at-scale/cif-config.png)
+![Commerce integration framework設定のスクリーンショット ](../assets/commerce-at-scale/cif-config.png)
 
 次の画像は、Fastly バックエンド設定を示しています。 ここに示す設定は例にすぎず、ケースバイケースで調整する必要があります。
 
-![Fastly のCommerce管理設定のスクリーンショット](../assets/commerce-at-scale/cif-config-advanced.png)
+![Fastly のCommerce管理設定のスクリーンショット ](../assets/commerce-at-scale/cif-config-advanced.png)

@@ -12,19 +12,19 @@ ht-degree: 0%
 
 # ロガーインターフェイス
 
-ロガーの使用を開始するには、のインスタンスを作成する必要があります `\Psr\Log\LoggerInterface`. このインターフェイスでは、次の関数を呼び出してデータをログファイルに書き込むことができます。
+ロガーの使用を開始するには、`\Psr\Log\LoggerInterface` のインスタンスを作成する必要があります。 このインターフェイスでは、次の関数を呼び出してデータをログファイルに書き込むことができます。
 
-- [alert （）](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L43)
-- [critical （）](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)
-- [debug （）](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L111)
-- [emergency （）](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L30)
-- [error （）](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L66)
-- [info （）](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L101)
-- [log （）](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L122)
-- [notice （）](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L89)
-- [warning （）](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
+- [alert （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L43)
+- [critical （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)
+- [debug （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L111)
+- [emergency （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L30)
+- [error （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L66)
+- [info （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L101)
+- [log （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L122)
+- [notice （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L89)
+- [warning （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
 
-その方法の 1 つについては、を参照してください。 [データベースアクティビティを記録](../logs/database-activity.md) 例えば、のようになります。
+その方法の 1 つは、[ ログデータベースアクティビティ ](../logs/database-activity.md) 例で説明します。
 
 もう 1 つの方法は次のとおりです。
 
@@ -49,6 +49,6 @@ class SomeModel
  }
 ```
 
-前述の例は、次のことを示しています `SomeModel` を受信 `\Psr\Log\LoggerInterface` コンストラクターの挿入を使用するオブジェクト。 メソッド内 `doSomething`何らかのエラーが発生した場合は、メソッドに記録されます `critical` （`$this->logger->critical($e);`）に設定します。
+前述の例は、コンストラクターの挿入 `SomeModel` 使用して `\Psr\Log\LoggerInterface` オブジェクトを受け取る場合を示しています。 メソッド `doSomething` で何らかのエラーが発生した場合は、メソッド `critical` （`$this->logger->critical($e);`）に記録されます。
 
-[RFC 5424](https://datatracker.ietf.org/doc/html/rfc5424) 8 つのログレベル（デバッグ、情報、通知、警告、エラー、重大、アラート、緊急）を定義します。
+[RFC 5424](https://datatracker.ietf.org/doc/html/rfc5424) は、8 つのログレベル（デバッグ、情報、通知、警告、エラー、重大、アラート、緊急）を定義します。

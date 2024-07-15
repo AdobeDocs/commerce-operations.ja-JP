@@ -13,26 +13,26 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->次の図は、の概要を示しています。 _**オンプレミス**_ Adobe Commerceのインストール：
+>次の図は、Adobe Commerceの _**オンプレミス**_ インストールの概要を示しています。
 
-![インストールの仕組み](../assets/installation/install-diagram-24.svg)
+![ インストールの仕組み ](../assets/installation/install-diagram-24.svg)
 
 一般的なインストールフローを次に示します。
 
 1. サーバー環境を設定します。
 
-   PHP、Apache、MySQL、検索エンジンなど、前提条件のソフトウェアをインストールします。 を参照してください。 [必要システム構成](system-requirements.md) を参照してください。
+   PHP、Apache、MySQL、検索エンジンなど、前提条件のソフトウェアをインストールします。 詳しくは、[ 必要システム構成 ](system-requirements.md) を参照してください。
 
-1. 取得 [認証キー](prerequisites/authentication-keys.md) をCommerce Composer リポジトリに追加します。
+1. [ 認証キー ](prerequisites/authentication-keys.md) をCommerce Composer リポジトリに取得します。
 
 1. Adobe Commerce ソフトウェアを入手します。
 
-   * （推奨）を取得します [Composer メタパッケージ](composer.md) モジュールとその依存関係を管理します。
+   * （推奨） [Composer メタパッケージ ](composer.md) を取得して、モジュールとその依存関係を管理します。
 
-   * アプリケーションのコードベースにコントリビューションしたり、Magento Open Sourceをカスタマイズしたりする場合は、 [クローン](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) github リポジトリ。 この方法を使用するには、GitHub と Composer の両方に関する知識が必要です。
+   * アプリケーションのコードベースに投稿したり、Magento Open Sourceをカスタマイズしたりする場合は、GitHub リポジトリを [ クローン ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) します。 この方法を使用するには、GitHub と Composer の両方に関する知識が必要です。
 
 1. コマンドラインを使用してアプリケーションをインストールします。
 
-   前提条件のソフトウェアが正しく設定されていないために手順が失敗した場合は、 [前提条件](prerequisites/overview.md).
+   前提条件ソフトウェアが正しく設定されていないために手順が失敗した場合は、[ 前提条件 ](prerequisites/overview.md) を確認してください。
 
-1. [検証](next-steps/verify.md) ストアフロントと管理者を表示したインストール。
+1. ストアフロントと管理者を表示して、インストールを [ 確認 ](next-steps/verify.md) します。

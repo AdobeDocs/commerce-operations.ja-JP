@@ -13,7 +13,7 @@ ht-degree: 14%
 # オペレーショナルプレイブック {#operational-playbook}
 
 - [概要](overview.md)
-- コマース {#intro}
+- Commerce {#intro}
    - [Adobe Commerce](intro/commerce.md)
    - [e コマースとは](intro/ecommerce.md)
    - [ビジネスモデル](intro/business-model.md)
@@ -24,14 +24,14 @@ ht-degree: 14%
    - [目標](leadership/goals.md)
    - [視覚](leadership/vision.md)
    - [計画](leadership/planning.md)
-- 解決策 {#solution}
+- ソリューション {#solution}
    - [サービスとしてのソフトウェア（SaaS）](solution/software-service.md)
    - [サービスとしてのプラットフォーム（PaaS）](solution/platform-service.md)
    - [オンプレミス ホスティング](solution/on-premises.md)
    - [クラウドとオンプレミス](solution/hosting-comparison.md)
    - [サードパーティの統合](solution/integrations.md)
    - [アップグレード、バックアップ、メンテナンス](solution/maintenance.md)
-- 方法 {#strategy}
+- 戦略 {#strategy}
    - [Commerce戦略](strategy/commerce.md)
    - [フォーカス](strategy/focus.md)
    - [コンテンツ戦略](strategy/content.md)
@@ -74,4 +74,4 @@ ht-degree: 14%
    - [PWA](product/progressive-web-app.md)
 - [チェックリストとテンプレート](checklists-templates/home.md)
 - [用語集](glossary.md)
-- [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

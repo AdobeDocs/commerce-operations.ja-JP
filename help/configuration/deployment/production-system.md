@@ -14,23 +14,23 @@ ht-degree: 0%
 1 つの実稼動システムを持つことができます。 次のすべてに該当する必要があります。
 
 - すべてのCommerce コードは、開発システムおよびビルドシステムと同じリポジトリ内のソース管理にあります
-- 次のすべてを確認します _included_ ソース管理で、次の操作を行います。
+- 次のすべてがソース管理に含まれている _含まれている_ ことを確認します。
 
    - `app/etc/config.php`
    - `generated` ディレクトリ（およびサブディレクトリ）
-   - `pub/media` directory
+   - `pub/media` ディレクトリ
    - `pub/media/wysiwyg` ディレクトリ（およびサブディレクトリ）
    - `pub/static` ディレクトリ（およびサブディレクトリ）
 
-- Commerce 2.2 以降をインストールして、次のように設定する必要があります [実稼動モード](../bootstrap/application-modes.md#production-mode)
-- ファイル・システムの所有権と権限が設定されています（を参照）。 [開発、ビルド、実稼動システムの前提条件](../deployment/prerequisites.md).
+- Commerce 2.2 以降がインストールされ、[ 実稼動モード ](../bootstrap/application-modes.md#production-mode) に設定されている必要があります
+- [ 開発、ビルド、実稼働システムの前提条件 ](../deployment/prerequisites.md) で説明されているように、ファイルシステムの所有権と権限が設定されています。
 
 ## 実稼動マシンの設定
 
 実稼動マシンを設定するには：
 
 1. Commerceをインストールするか、ソース管理から取り出した後、ファイルシステムのオーナーとして実稼動サーバーにログインするか、切り替えます。
-1. 作成 `~/.ssh/.composer/auth.json` まだ行っていない場合は、
+1. まだ作成していない場合は、`~/.ssh/.composer/auth.json` を作成します。
 
    次のディレクトリを作成します。
 
@@ -38,9 +38,9 @@ ht-degree: 0%
    mkdir -p ~/.ssh/.composer
    ```
 
-   作成 `auth.json` そのディレクトリ内。
+   そのディレクトリに `auth.json` を作成します。
 
-   `auth.json` を含める必要があります [認証キー](../../installation/prerequisites/authentication-keys.md).
+   `auth.json` 認証キー [ が含まれている必要があり ](../../installation/prerequisites/authentication-keys.md) す。
 
    次に例を示します。
 
@@ -55,20 +55,20 @@ ht-degree: 0%
    }
    ```
 
-1. 変更をに保存します。 `auth.json`.
-1. コピー `<Commerce root dir>/app/etc/env.php` 開発システムから実稼動システムへ。
-1. 開く `env.php` テキスト・エディタで、必要な値（データベース接続情報など）を変更します。
-1. を実行 [`magento config:set`](../cli/set-configuration-values.md) または [`magento config:set-sensitive`](../cli/set-configuration-values.md) コマンドを使用して、システム固有の設定値または機密性の高い設定値をそれぞれ設定できます。
+1. `auth.json` に対する変更を保存します。
+1. 開発システムから実稼動システムに `<Commerce root dir>/app/etc/env.php` をコピーします。
+1. `env.php` をテキストエディターで開き、必要な値（データベース接続情報など）を変更します。
+1. [`magento config:set`](../cli/set-configuration-values.md) または [`magento config:set-sensitive`](../cli/set-configuration-values.md) コマンドを実行して、それぞれシステム固有の設定値または機密設定値を設定します。
 
    次の節で例を示します。
 
 ## 実稼動システムでの設定値の設定
 
-この節では、を使用して、実稼動システムに機密性の高い値を設定する方法について説明します `magento config:sensitive:set` コマンド。
+この節では、`magento config:sensitive:set` コマンドを使用して、実稼動システムに機密性の高い値を設定する方法について説明します。
 
 機密性の高い値を設定するには：
 
-1. を使用して、設定する値を検索します [機密性の高い値参照](../reference/config-reference-sens.md).
+1. [ 大文字と小文字を区別した値参照 ](../reference/config-reference-sens.md) を使用して、設定する値を検索します。
 1. 設定の設定パスをメモしておきます。
 1. ファイルシステムの所有者として実稼動システムにログインするか、所有者に切り替えます。
 1. Commerce インストールディレクトリに移動します。
@@ -78,7 +78,7 @@ ht-degree: 0%
    bin/magento config:sensitive:set {configuration path} {value}
    ```
 
-   例えば、YouTube API キーの値をに設定するには `1234`、と入力します
+   例えば、YouTube API キーの値を `1234` に設定するには、と入力します。
 
    ```bash
    bin/magento config:sensitive:set catalog/product_video/youtube_api_key 1234
@@ -95,8 +95,8 @@ ht-degree: 0%
 1. 値が設定されたことを確認するには、管理者にログインします。
 1. 管理者で、設定を見つけます。
 
-   例えば、YouTube API キーの設定は、次の場所にあります。 **ストア** > 設定 > **設定** > **カタログ** > **カタログ** > **製品ビデオ**.
+   例えば、YouTube API キー設定は、**Stores**/設定/**Configuration**/**Catalog**/**Catalog**/**Product Video** にあります。
 
    設定は管理者に表示され、編集できません。 次の図に例を示します。
 
-   ![管理の機密設定](../../assets/configuration/sensitive-set.png)
+   ![Admin の機密設定 ](../../assets/configuration/sensitive-set.png)

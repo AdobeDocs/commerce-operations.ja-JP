@@ -12,18 +12,18 @@ ht-degree: 0%
 
 # データベースアクティビティを記録
 
-次の例は、 [`Magento\Framework\DB\LoggerInterface`][interface]。これには 2 つの実装があります。
+次の例は、2 つの実装を持つ [`Magento\Framework\DB\LoggerInterface`][interface] を使用してデータベースアクティビティをログに記録する方法を示しています。
 
-- ログなし（デフォルト）: [`Magento\Framework\DB\Logger\Quiet`][quiet]
-- にログを記録 `var/log` ディレクトリ： [`Magento\Framework\DB\Logger\File`][file]
+- ログなし（デフォルト）:[`Magento\Framework\DB\Logger\Quiet`][quiet]
+- `var/log` ディレクトリへのログ：[`Magento\Framework\DB\Logger\File`][file]
 
 >[!TIP]
 >
->Commerce CLI を使用して、次のことができます [データベース ログを有効または無効にする](../cli/enable-logging.md#database-logging).
+>Commerce CLI を使用して、[ データベースのログ記録を有効または無効にする ](../cli/enable-logging.md#database-logging) ことができます。
 
-のデフォルト設定を変更するには `\Magento\Framework\DB\Logger\LoggerProxy`、を編集 `app/etc/di.xml`.
+`\Magento\Framework\DB\Logger\LoggerProxy` のデフォルト設定を変更するには、`app/etc/di.xml` を編集します。
 
-まず、のデフォルト値を変更します。 `loggerAlias` および `logCallStack` 引数：
+まず、引数 `loggerAlias` および `logCallStack` のデフォルト値を次のように変更します。
 
 ```xml
 <type name="Magento\Framework\DB\Logger\LoggerProxy">
@@ -36,7 +36,7 @@ ht-degree: 0%
 </type>
 ```
 
-その後、のファイルパスを指定します `Magento\Framework\DB\Logger\File`:
+その後、`Magento\Framework\DB\Logger\File` のファイルパスを指定します。
 
 ```xml
 <type name="Magento\Framework\DB\Logger\File">

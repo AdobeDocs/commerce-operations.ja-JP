@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # config.php リファレンス
 
-この `config.php` ファイルには次のセクションが含まれます。
+`config.php` ファイルには、次のセクションが含まれます。
 
 | 名前 | 説明 |
 | --------- | -------------------|
@@ -34,7 +34,7 @@ ht-degree: 1%
 ]
 ```
 
-の詳細情報 [モジュール].
+詳細情報 [ モジュール ]。
 
 ## スコープ
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 ]
 ```
 
-の詳細情報 [Commerce範囲][scopes].
+[Commerce範囲 ][scopes] の詳細情報。
 
 ## system
 
@@ -100,7 +100,7 @@ ht-degree: 1%
 ]
 ```
 
-の詳細情報 [システム固有の設定](config-reference-sens.md).
+[ システム固有の設定 ](config-reference-sens.md) の詳細情報。
 
 ## テーマ
 
@@ -120,7 +120,7 @@ ht-degree: 1%
 ]
 ```
 
-の詳細情報 [テーマ].
+[ テーマ ] の詳細情報。
 
 <!-- link definitions -->
 

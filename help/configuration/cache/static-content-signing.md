@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # 静的コンテンツキャッシュ
 
-パフォーマンスを向上させるために、Commerceは次を設定します `Expires` 画像、JavaScript、CSS ファイルなどの静的リソースのヘッダー。
-の設定 `Expires` 静的リソースのヘッダーは、その URL のリソースをキャッシュし、有効期限が切れるまでキャッシュされたバージョンを提供するようにブラウザーに指示します。
-これは一般的です [ベストプラクティス](https://developer.yahoo.com/performance/rules.html#expires=) （静的リソースをキャッシュするため）。
+パフォーマンスを向上させるために、Commerceでは、画像、JavaScript、CSS ファイルなどの静的リソースの `Expires` ヘッダーを設定します。
+静的リソースに `Expires` ヘッダーを設定すると、その URL のリソースをキャッシュし、有効期限が切れるまでキャッシュされたバージョンを提供するようにブラウザーに指示されます。
+これは、静的リソースをキャッシュする場合に一般的な [ ベストプラクティス ](https://developer.yahoo.com/performance/rules.html#expires=) です。
 
 ブラウザーが静的リソースをキャッシュし、そのリソースがサーバー上で変更された場合、新しいバージョンをダウンロードできるように、ブラウザーキャッシュをクリアする必要があります。
 Web サイト管理者の場合はブラウザーキャッシュの手動によるクリアで機能しますが、静的リソースの新しいバージョンをダウンロードする際に、ユーザーに対して行う適切なリクエストではありません。
@@ -30,17 +30,17 @@ Commerceでは、静的ファイルの URL にデプロイメントバージョ�
 http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/images/logo.svg
 ```
 
-コマンドを使用する場合 [`setup:static-content:deploy`](../cli/static-view-file-deployment.md) 静的なコンテンツをデプロイするには、Commerceがデプロイメントバージョンを自動的に変更します。
+コマンド [`setup:static-content:deploy`](../cli/static-view-file-deployment.md) を実行して静的コンテンツをデプロイすると、Commerceによってデプロイメントバージョンが自動的に変更されます。
 これにより、静的ファイルの URL が変更され、ブラウザーで新しいバージョンのファイルが強制的に読み込まれます。
 
 Commerceでは、この機能がデフォルトで有効になっています。Adobeでは、古い静的リソースを提供するブラウザーに関連する問題を防ぐために、この機能を有効にしておくことをお勧めします。
 
-静的コンテンツ署名の設定はにあります [**[!UICONTROL Stores]**/設定/設定/**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+静的コンテンツ署名の設定は、[**[!UICONTROL Stores]**/設定/設定/**[!UICONTROL Advanced]**/**[!UICONTROL Developer]**/**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html) にあります。
 
-- **オンプレミスのみ**：この設定は、サイトで **ではない** 。対象： [実稼動モード](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
+- **オンプレミスのみ**：この設定は、サイトが [ 実稼動モード **で** 使用できない ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode) 場合に使用できます。
 - **Cloud**：この設定は、実稼動モードが厳密に適用されるので、非表示です。そのため、次に示すように、コマンドラインを使用する必要があります。
 
-![静的ファイルの設定](../../assets/configuration/static-files-settings.png)
+![ 静的ファイル設定 ](../../assets/configuration/static-files-settings.png)
 
 ステータスを次のように決定します。
 
@@ -54,7 +54,7 @@ bin/magento config:show dev/static/sign
 bin/magento config:set dev/static/sign <value>
 ```
 
-ここで、 `<value>` は 1 （有効）または 0 （無効）です。
+ここで、`<value>` は 1 （有効）または 0 （無効）です。
 
 ## バージョンの署名
 
@@ -65,7 +65,7 @@ bin/magento config:set dev/static/sign <value>
 
 ## デプロイメント中の使用
 
-静的リソースをアップグレードまたは変更した後で、 `setup:static-content:deploy` コマンドでバージョンをデプロイし、静的コンテンツを更新します。これにより、ブラウザーは更新されたリソースを強制的に読み込みます。
+静的リソースをアップグレードまたは変更した後、`setup:static-content:deploy` コマンドを実行してバージョンをデプロイし、静的コンテンツを更新する必要があります。これにより、ブラウザーは更新されたリソースを強制的に読み込みます。
 
-コードを別のサーバーにデプロイし、コードリポジトリを使用して実稼動環境に移動してダウンタイムを短縮する場合は、ファイルも追加する必要があります `pub/static/deployed_version.txt` をリポジトリに送信します。
+コードを別のサーバーにデプロイし、コードリポジトリを使用して実稼動環境に移動してダウンタイムを短縮する場合は、ファイル `pub/static/deployed_version.txt` もリポジトリに追加する必要があります。
 このファイルには、デプロイされた静的コンテンツの新しいバージョンが含まれています。

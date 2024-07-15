@@ -19,7 +19,7 @@ _形容詞_
 モバイルとタブレットでは、折り目の上の領域は、特に画面のサイズと寸法、表示時の向き（縦と横）が大きく異なります。
 レスポンシブテーマとテストを使用すると、コンテンツとレイアウトの適切な組み合わせを見つけるのに役立ちます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：design_
 
@@ -31,7 +31,7 @@ _名詞_
 非アクティブ化すると、サービスおよび実行中のインスタンスへの接続は削除されますが、コードは保持されます。
 これは通常の Git ブランチになります。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：cloud_
 
@@ -42,7 +42,7 @@ _名詞_
 システムのソースコードを変更することなく、他の点では互換性のない 2 つのシステムを連携させることを可能にするクラス。
 例としては、データベースアダプタ、キャッシュアダプタ、ファイルシステムアダプタ、ポストプロセッサライブラリアダプタ、その他の種類のコンピューティングアダプタなどがあります。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：プログラミング_
 
@@ -54,9 +54,9 @@ _名詞_
 Adobe Commerceでは、管理者ユーザーには、すべての権限に加えて、管理者のすべての機能、オプションおよび機能へのアクセス権があります。
 また、ユーザーや役割を作成することもできます。
 
-詳細情報： [ユーザーの追加](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)
+詳細情報：[ ユーザーの追加 ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 * _同義語：管理者、スーパーユーザー_
@@ -70,13 +70,13 @@ _名詞_
 ユーザーは管理領域にアクセスして、製品、注文、出荷、CMS コンテンツ、ストアフロントのデザイン、顧客情報など、ストアを管理します。
 管理者ユーザーには、機能、オプションおよび機能へのアクセスを制御する権限に関連付けられた役割があります。
 
-詳細情報： [Adobe Commerce ユーザーガイド](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
+詳細情報：[Adobe Commerce ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 * _同義語：管理者、管理パネル、バックエンド、管理インターフェイス、管理 UI_
-* _関連用語：管理者_
+* _関連用語：admin_
 
 ### 管理変数
 
@@ -84,11 +84,11 @@ _名詞_
 
 管理変数は、管理者ユーザーアカウントの設定を上書きして管理 UI にアクセスするためのプロジェクト環境変数です。
 
-詳細情報： [管理変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html)
+詳細情報：[ADMIN variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html)
 
-_用語属性：_
+_用語の属性：_
 
-* _フィールド：admin, cloud_
+* _フィールド：admin、cloud_
 
 ### adminhtml
 
@@ -96,12 +96,12 @@ _名詞_
 
 管理者に割り当てられた内部領域名。
 
-詳細情報： [Adobe Commerce ユーザーガイド](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
+詳細情報：[Adobe Commerce ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
-* _関連用語：領域、コマース管理者_
+* _関連用語：エリア、コマース管理者_
 
 ### 面グラフ
 
@@ -118,7 +118,7 @@ Adobe Commerceの領域は次のとおりです。
 * ストアフロント
 * Web API REST （webapi_rest）
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 * _関連用語：コマースコンポーネント、ストアフロント_
@@ -136,12 +136,12 @@ Adobe Commerce ユーザーは、カスタム属性を作成して、デフォ�
 
 Google ショッピング広告チャネルやAmazon Sales Channelなどの統合機能の場合は、Commerce属性をサードパーティの属性にマッピングして、商品の表示や販売、広告の表示を適切に行います。
 
-詳細情報： [EAV および extension extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+詳細情報：[EAV および extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce ソフトウェア、製品_
-* _同義語：製品属性、カスタム属性_
+* _同義語：product 属性、custom 属性_
 * _関連用語：拡張属性_
 
 ### 属性グループ
@@ -150,7 +150,7 @@ _名詞_
 
 属性セット内の属性の論理グループ。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 * _関連用語：属性_
@@ -162,7 +162,7 @@ _名詞_
 特定の製品用にカスタマイズされた属性グループのコレクション。
 例：T シャツの属性セットには、色、サイズ、性別、ブランドを含めることができます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce ソフトウェア、製品_
 * _関連用語：属性_
@@ -174,7 +174,7 @@ _名詞_
 商品価格、割引価格、配送料、税金が加算されます。
 平均は、各月の在庫開始原価に、その期間の最後の月の在庫終了原価を加算して決定されます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：製品、価格、在庫_
 
@@ -190,9 +190,9 @@ _名詞_
 通貨記号は、製品価格および販売文書（注文や請求書など）に表示されます。
 必要に応じて通貨記号をカスタマイズし、店舗やビューごとに個別に価格の表示を設定できます。
 
-詳細情報： [通貨](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html)
+詳細情報：[ 通貨 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html)
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：pricing_
 
@@ -202,7 +202,7 @@ _名詞_
 
 手動で繰り返すことなく、一度にタスクを実行したり、複数の項目を変更したりすること。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：プログラミング_
 * _同義語：一括操作_
@@ -212,15 +212,15 @@ _用語属性：_
 _名詞_
 
 情報の一部であるユーザーインターフェイス要素など、エンドユーザーにとって視覚的に具体的なすべての特有のコンテンツをレンダリングする、ページ出力の単位。
-[ブロック](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) はモジュールによって実装および提供されます。
+[ ブロック ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) はモジュールによって実装および提供されます。
 ブロックは、テンプレートを使用してHTMLを生成します。
 ブロックの例としては、カテゴリリスト、ミニカート、製品タグ、製品一覧があります。
 
-[ダイナミック ブロック](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html) 価格ルールなどのロジックに基づいてコンテンツを提供します。
+[ 動的ブロック ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html) は、価格ルールなどのロジックに基づいてコンテンツを提供します。
 
-ページビルダーでは、 [ブロック](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) および [ダイナミック ブロック](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html).
+ページビルダーでは、[ ブロック ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) および [ 動的ブロック ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html) のインタラクティブ機能と作成について拡張しています。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 * _同義語：ダイナミック ブロック_
@@ -230,7 +230,7 @@ _用語属性：_
 
 _名詞、動詞_
 
-製造元またはデザイナーによって特定の製品または製品グループを定義する一意の ID。
+製造元またはDesignerによって特定の商品または商品グループが定義される一意の ID。
 例えば、衣料品、家電、高級品などのブランド名などです。
 また、会社がブランドであり、事業単位、ターゲットオーディエンスなどに基づいて複数のブランドの製品を販売している場合もあります。
 
@@ -238,7 +238,7 @@ _名詞、動詞_
 
 Google ショッピング広告チャネルやAmazon Sales Channelなど、一部の拡張機能や統合機能では、商品にブランドを使用したり、必要としたりする場合があります。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business_
 
@@ -248,9 +248,9 @@ _形容詞_
 
 実質的にまたはインターネットを介してのみ機能するビジネスとは異なり、永続的な物理的な場所を持つ小売業。
 
-の場合 [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) および [オーダー管理](https://omsdocs.magento.com/getting-started/terminology/)このストアは、製品数量の追跡、注文の出荷、店舗内の集荷のサポートを行うソースです。
+[Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) および [Order Management](https://omsdocs.magento.com/getting-started/terminology/) の場合、この店舗は商品の数量、発送注文の追跡、店舗内の受け取りをサポートするソースです。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business、inventory_
 
@@ -261,9 +261,9 @@ _名詞_
 一括操作は、大規模に実行されるアクションです。
 一括操作タスクの例には、品目のインポートまたはエクスポート、一括スケールでの価格の変更、倉庫への製品の割り当てなどがあります。
 
-詳細情報： [DevDocs 一括操作](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
+詳細情報：[DevDocs 一括操作 ](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：プログラミング_
 
@@ -274,9 +274,9 @@ _名詞_
 お客様は、さまざまなオプションや構成から「独自に構築」カスタマイズ可能な製品を組み立てることができます。
 バンドル内の各項目は、個別の単純製品または仮想製品です。
 
-詳細情報： [設定可能な製品](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)
+詳細情報：[ 設定可能な製品 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce ソフトウェア、製品_
 * _関連用語：シンプル製品、仮想製品、製品タイプ_
@@ -288,7 +288,7 @@ _名詞_
 Adobe Commerceの動作を拡張またはカスタマイズするコードは、バンドルされた拡張機能と見なされます。
 モジュール、テーマ、言語パックを含めることができます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：バンドルされた拡張機能、拡張機能_
 * _同義語：拡張子_
@@ -304,10 +304,10 @@ _名詞_
 第 1 レベルのキャッシュは高速です（例：APC や Memcached バックエンド）。ただし、制限があり、キャッシュエントリのタグ付けやグループ化には対応していません。
 第 2 レベルのキャッシュ（例えば、ファイルシステムや Redis バックエンド）は速度は低下しますが、タグ付けとグループ化をサポートします。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：プログラミング_
-* _関連する用語：バックエンド_
+* _関連用語：バックエンド_
 
 ### キャッシュフロントエンド
 
@@ -315,7 +315,7 @@ _名詞_
 
 キャッシュバックエンドに保存するデータの種類を指定します。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：プログラミング_
 * _関連用語：フロントエンド_
@@ -347,7 +347,7 @@ Adobe Commerceには次のタイプがあります。
 
 その他のタイプも作成および定義できます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：プログラミング_
 
@@ -358,7 +358,7 @@ _動詞_
 承認された注文金額を請求可能なトランザクションに変換するプロセス。
 トランザクションは承認されるまでキャプチャできません。また、承認は商品またはサービスが出荷されるまでキャプチャできません。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business_
 * _関連用語：承認、注文ステータス_
@@ -369,7 +369,7 @@ _名詞_
 
 金融機関からクレジットカード口座で購入を行う権限を付与された人。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business、order_
 
@@ -380,7 +380,7 @@ _名詞_
 買い物かごに適用される価格ルールで、一連の条件に応じたアクションをトリガーします。
 プロモーションの作成に使用します。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：コマースソフトウェア、価格、製品_
 * _関連用語：カタログルール、買い物かご_
@@ -399,7 +399,7 @@ Adobe Commerce アーキテクチャ内では、カタログはカテゴリ、�
 
 必要な数だけルートカテゴリを作成できますが、一度に使用できるルートカテゴリは 1 つだけです（デフォルト）。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：コマースソフトウェア、価格、製品_
 * _関連用語：共有カタログ、カタログルール_
@@ -411,7 +411,7 @@ _名詞_
 特定の商品に適用される価格ルールで、一連の条件に応じたアクションをトリガーします。
 プロモーションの作成に使用します。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：コマースソフトウェア、価格、製品_
 * _関連用語：買い物かごルール、カタログ_
@@ -423,7 +423,7 @@ _名詞_
 共通点がある製品のグループ。
 店舗のメインメニューは、商品のカテゴリとサブカテゴリに編成されています。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce ソフトウェア、製品_
 
@@ -436,21 +436,21 @@ _名詞_
 
 チェックアウトには、多くのオプションと設定が標準および拡張機能から用意されています。
 
-詳細情報： [チェックアウトチュートリアル](https://developer.adobe.com/commerce/php/tutorials/frontend/custom-checkout/)
+詳細情報：[ チェックアウトチュートリアル ](https://developer.adobe.com/commerce/php/tutorials/frontend/custom-checkout/)
 
-_用語属性：_
+_用語の属性：_
 
-* _フィールド：business, design, order, product, programming_
+* _フィールド：ビジネス、デザイン、注文、製品、プログラミング_
 
 ### クラウド変数
 
 _名詞_
 
-クラウド変数は、クラウドインフラストラクチャ上のAdobe Commerceに固有の環境変数で、 **`MAGENTO_CLOUD`** プレフィックス。
+クラウド変数は、クラウドインフラストラクチャ上のAdobe Commerceに固有の環境変数で、**`MAGENTO_CLOUD`** プレフィックスを使用します。
 
-詳細情報： [クラウド変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html)
+詳細情報：[ クラウド変数 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html)
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：cloud_
 
@@ -458,9 +458,9 @@ _用語属性：_
 
 _名詞_
 
-特殊な変種 [ブロック](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) これは管理でのみ作成でき、レイアウトファイルから参照することはできません。
+[block](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) の特殊なバリアントで、管理でのみ作成でき、レイアウトファイルから参照することはできません。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 * _関連用語：ブロック、静的ブロック_
@@ -471,7 +471,7 @@ _名詞_
 
 複数の製品オプションに関連付けられているデータ。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：プログラミング_
 
@@ -481,7 +481,7 @@ _名詞_
 
 Adobe Commerceのモジュール、テーマまたは言語パッケージを参照するために使用されます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 * _同義語：component_
@@ -503,7 +503,7 @@ _名詞_
 6 つのバリアントを個別の製品として作成する必要があります（それぞれに独自の SKU が必要です）。
 次に、すべてのバリアントが設定可能な製品に追加され、顧客はサイズと色を選択して買い物かごに追加できます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce ソフトウェア、製品_
 * _関連用語：製品タイプ_
@@ -514,7 +514,7 @@ _名詞_
 
 バイヤーに変換された訪問者の割合。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business、order_
 
@@ -524,7 +524,7 @@ _名詞_
 
 コア階層の拡張は、OpenSearch、Elasticsearch、MariaDB、Redis など、データストレージ、キャッシュ、サービスの 3 つのサービスノードで構成されます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：cloud_
 
@@ -535,7 +535,7 @@ _名詞_
 顧客に対して、過払い、リベートまたは返品のために未払い残高を償却するために発行される文書。
 メモは資金を顧客の口座に復元します。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business、order_
 
@@ -545,7 +545,7 @@ _名詞_
 
 クレジット メモ金額が顧客にクレジットされた理由の詳細。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business、order_
 
@@ -555,19 +555,19 @@ _名詞_
 
 販売者がクレジット メモを作成する請求済品目。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business、order_
 
 ### クロスセル
 
-_名詞，形容詞，動詞_
+_名詞、形容詞、動詞_
 
 買い物かごの横に表示される商品。
 顧客が買い物かごページに移動すると、これらの製品は、既に買い物かごに入っている項目へのクロスセルとして表示されます。
 彼らは、雑貨店のレジで雑誌やキャンディーのように、衝動買いに似ています。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business、product_
 * _関連用語：アップセル_
@@ -579,7 +579,7 @@ _名詞_
 Cardholder Verification Method の略。
 支払い処理者で 3 桁または 4 桁のクレジット カード セキュリティ コードを確認することにより、顧客の身元を確認する方法。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business、order_
 * _同義語：カード所有者の検証方法_
@@ -595,10 +595,10 @@ _名詞_
 データの整理方法とデータ関係の管理方法（データに適用されるすべての制約を含む）を定義します。
 モジュールには、データベースに保存する必要があるデータが含まれている場合、そのモジュールにはデータベーススキーマのフラグメントを含めることができます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：プログラミング_
-* _シノニム：schema_
+* _同義語：schema_
 
 ### 依存性の注入
 
@@ -609,7 +609,7 @@ _名詞_
 テストを容易にするために使用します。
 クラスの依存関係を定義するには、di.xml 構成ファイルを編集します。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：プログラミング_
 
@@ -619,9 +619,9 @@ _名詞_
 
 デプロイ鍵はプロジェクトの SSH 公開鍵であり、Git リポジトリへの読み取り専用または読み取り/書き込み（有効な場合）アクセスを可能にします。
 
-詳細情報： [安全な接続](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)
+詳細情報：[ 安全な接続 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：cloud_
 
@@ -631,7 +631,7 @@ _名詞、動詞_
 
 潜在的な購読者に対して、購読の意思を確認する 2 番目の手順を完了するよう求める、メール検証プロセス。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business_
 
@@ -645,7 +645,7 @@ _名詞_
 
 ダウンロード可能なファイルは、サーバー上に存在することも、他のサーバーやコンテンツ配信ネットワークへの URL として提供することもできます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce ソフトウェア、製品_
 * _関連用語：製品タイプ_
@@ -657,10 +657,10 @@ _名詞_
 静的テンプレートから読み取られるのではなく、コードによって生成されるコンテンツ。
 ユーザーがページを訪問したときに動的コンテンツが最初にレンダリングされた後、再訪問時に別の動的呼び出しを必要とせずに、コンテンツをキャッシュして再利用できる場合があります。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：design_
-* _関連する用語：php_
+* _関連用語：php_
 
 ### dynamic media URL
 
@@ -675,7 +675,7 @@ Dynamic Media の URL を使用すると、カタログ検索のパフォーマ�
 
 コードの形式：メディア url=&quot;path/to/image.jpg&quot;
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：プログラミング_
 * _関連用語：コンテンツ配信ネットワーク、url_
@@ -688,9 +688,9 @@ _名詞_
 
 Commerce アプリケーションの管理とデプロイのために設計された一連のスクリプトとツール。 このパッケージにより、Docker 環境へのデプロイ、クローンの管理、プロジェクト設定の検証、Adobeパッチの適用など、クラウドインフラストラクチャプロセス上の多くのAdobe Commerceが簡素化されます。
 
-詳細情報： [ece-tools パッケージ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
+詳細情報：[ece-tools パッケージ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：cli、cloud、deploy_
 
@@ -702,7 +702,7 @@ _名詞_
 変更可能な属性またはパラメーターが含まれます。
 例えば、更新によって価格ルール、製品、カテゴリなどのエンティティが変更されるステージングや、送受信されるデータ構造がサービス契約に含まれるデータベースレコードがあります。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 * _関連用語：属性、買い物かごルール、カタログルール_
@@ -716,9 +716,9 @@ _名詞_
 エンコーディングでは、エンティティの記述に使用できる属性の数は大幅に増減できますが、特定のエンティティに適用される数は最小限に抑えられます。
 このデータモデルは柔軟ですが、時間がかかる場合があります。
 
-詳細情報： [EAV および extension extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+詳細情報：[EAV および extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：プログラミング_
 * _同義語：eav_
@@ -729,7 +729,7 @@ _名詞_
 
 保存期間が長いコンテンツまたは再利用可能なコンテンツ。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business_
 
@@ -741,7 +741,7 @@ Adobe Commerceの動作を拡張またはカスタマイズするコード。
 オプションで、Commerce Marketplaceまたは別の拡張機能配布システムに拡張機能をパッケージ化して配布できます。
 Commerce拡張機能には、モジュール、テーマ、言語パックを含めることができます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 * _関連用語：コンポーネント、モジュール、パッケージ_
@@ -752,9 +752,9 @@ _名詞_
 
 機能を拡張し、多くの場合、カスタム属性よりも複雑なデータタイプを使用します。 これらの属性は GUI には表示されません。
 
-詳細情報： [エンティティへの拡張属性の追加](https://developer.adobe.com/commerce/php/development/components/add-attributes/)
+詳細情報：[ エンティティへの拡張属性の追加 ](https://developer.adobe.com/commerce/php/development/components/add-attributes/)
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 * _関連用語：属性、エンティティ属性値_
@@ -768,7 +768,7 @@ _名詞_
 国際配送では、この用語は、受信側が配送料を担当することを意味します。
 FOB は、出発地または目的地に基づいて選択でき、貨物回収または貨物前払いとして指定されます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business、order、pricing_
 * _同義語：fob_
@@ -785,9 +785,9 @@ _形容詞_
 
 メモ：以前は、ストアフロントは「フロントエンド」、管理者は「バックエンド」と呼ばれていました。 この使用方法はサポートされなくなりました。
 
-_用語属性：_
+_用語の属性：_
 
-* _フィールド：design、programming_
+* _フィールド：デザイン、プログラミング_
 * _同義語：クライアントサイド_
 * _関連用語：バックエンド、ストアフロント、キャッシュフロントエンド_
 
@@ -797,9 +797,9 @@ _名詞_
 
 ストア内の顧客の観点から属性の表示と動作を決定するプロパティ。
 
-_用語属性：_
+_用語の属性：_
 
-* _フィールド：design、programming_
+* _フィールド：デザイン、プログラミング_
 
 ### 履行
 
@@ -807,7 +807,7 @@ _名詞_
 
 顧客の出荷を管理するプロセス。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business_
 
@@ -832,7 +832,7 @@ _名詞_
 ギフトカードは、店舗管理者がバックエンドでギフトカードアカウントを手動で作成し、ギフトカードコードを特定の顧客セグメントに送信できるので、プロモーションにも役立ちます。
 ギフトカードは、休暇中に web ストアや特定のプロモーションキャンペーンから多数の購入を行う最もアクティブな顧客をターゲットとしたロイヤルティプログラムとして機能できます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 * _関連用語：製品タイプ_
@@ -843,7 +843,7 @@ _名詞_
 
 製品のコストと価格の差。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business_
 
@@ -858,7 +858,7 @@ _名詞_
 例えば、4 つのサイズが用意されているナイフの場合、4 つのナイフすべてをグループ化された製品ページ内に表示できます。
 顧客はこのページから必要なサイズを選択して買い物かごに追加できます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce ソフトウェア、製品_
 * _関連用語：シンプルな製品、製品タイプ_
@@ -875,7 +875,7 @@ Adobe Commerceでは、ハンドルは多くの場所で使用され、最も一
 例えば、顧客モジュールには、「view/frontend/layout/checkout_cart_index.xml」というレイアウトファイルがあります。
 ここで、「frontend」は領域名で、「checkout_cart_index」はハンドル名です。どちらも URL から派生したものです。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：プログラミング_
 * _シノニム：ページ・ハンドル_
@@ -886,7 +886,7 @@ _名詞_
 
 水平スケーリング（スケールアウトとも呼ばれます）とは、増大する需要に応じて、インフラストラクチャにノードまたはマシンを追加するプロセスです。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：cloud_
 
@@ -902,7 +902,7 @@ PHP クラスの既存のパブリック関数の前後に新しいコードを�
 プラグインは、依存関係挿入設定ファイル （di.xml）によって傍受ポイントに関連付けられます。
 同じ関数で複数のプラグインが定義されている場合、依存関係の挿入設定によってプラグインの呼び出し順が定義され、競合することなく複数のプラグインを使用できます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：プログラミング_
 * _関連用語：プラグイン_
@@ -918,7 +918,7 @@ Commerceページの構成において、レイアウトとは、ページの構
 ページレイアウトファイルは、最上位レベルのページ構造（ヘッダー、フッター、メインコンテンツ領域、左サイドバーなど）に焦点を当てています。
 次に、レイアウトファイルは、コンテンツ（ブロック）をページ上のこれらの異なる領域に組み立てます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：デザイン、コマースソフトウェア_
 * _関連用語：レイアウト手順、ブロック_
@@ -931,9 +931,9 @@ _名詞_
 1 つのレイアウトファイルに複数のレイアウト命令を含めることができます。
 レイアウト命令は、レイアウトファイル内の XML にエンコードされます。
 
-_用語属性：_
+_用語の属性：_
 
-* _フィールド：design、programming_
+* _フィールド：デザイン、プログラミング_
 * _関連用語：レイアウト、ブロック、コンテナ、ui コンポーネント_
 
 ### レイアウトの更新
@@ -942,7 +942,7 @@ _名詞_
 
 XML レイアウトを変更したり、別のファイルからレイアウト手順をインポートするために追加されるコードのスニペットに使用されます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：デザイン、コマースソフトウェア_
 
@@ -954,7 +954,7 @@ _名詞_
 この人物はAdobeとの接点として機能します。
 企業がクラウドインフラストラクチャサブスクリプションでAdobe Commerceを購入した後は、ライセンスオーナーとして指定されたユーザーのみが最初のプロジェクトとコードにアクセスできます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business_
 
@@ -967,9 +967,9 @@ _名詞_
 MAGEID は、通常、Adobe Commerce アカウントの請求先連絡先です（Adobe Commerce on cloud infrastructure プロジェクトのプロジェクトオーナーではない場合もあります）。
 クラウドインフラストラクチャパッケージ上のAdobe CommerceおよびAdobe Commerceへのアクセス権を付与するには、これらのパッケージへのアクセス権が付与された MAGEID に関連付けられたアクセスキーを使用する必要があります。
 
-詳細情報： [認証キーの取得](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html)
+詳細情報：[ 認証キーを取得 ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html)
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 
@@ -978,12 +978,12 @@ _用語属性：_
 _名詞_
 
 マーケティングおよび小売において、小売価格を決定するために品目の原価に追加されたパーセント。
-[マークアップの設定](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html)製品のマークダウン（製品のカスタマイズ可能なオプションを使用）
+製品のカスタマイズ可能なオプションを使用して、製品の [ マークアップまたはマークダウンを設定 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html) します。
 
 （開発）テキストの処理、プレゼンテーション、および書式設定を制御するコンピュータ言語。
 また、マークアップタグは、CMS ページまたはブロックに機能またはコンテンツを追加するコードスニペットです。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：ビジネス、プログラミング_
 * _同義語：Markdown_
@@ -994,7 +994,7 @@ _名詞_
 
 クラウドインフラストラクチャー上のAdobe Commerceでは、Pro プロジェクトは、実稼動環境のデータベースと Web サーバーのコピーを含んだ、マスターと呼ばれるアクティブな Platform as a Service （PaaS）環境を使用します。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：cloud_
 
@@ -1004,7 +1004,7 @@ _名詞_
 
 クレジットカードの取引を受け付けることを可能にする銀行または金融機関の口座。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business_
 
@@ -1012,11 +1012,11 @@ _用語属性：_
 
 _名詞_
 
-MFTF はです [機能テストフレームワーク](https://developer.adobe.com/commerce/testing/functional-testing-framework/).
+MFTF は、[ 機能テストフレームワーク ](https://developer.adobe.com/commerce/testing/functional-testing-framework/) です。
 Commerce開発者およびソフトウェアエンジニア（QA スペシャリスト、PHP 開発者、システムインテグレーターなど）向けのテストフレームワークを提供します。
 開発者と QA は、Web アプリケーションとのユーザーインタラクションを試行するテストを作成し、機能を検証し、回帰テストを自動化できます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：コマースソフトウェア、プログラミング_
 * _関連用語：cms ブロック、静的ブロック、コンテナ、レイアウト_
@@ -1035,7 +1035,7 @@ Magentoアプリケーションが提供する機能を変更または拡張す�
 モジュールは、Magentoアプリケーションの一貫性を損なうことなく無効化または削除することができます。
 1 つの例外：モジュールが他のモジュールに依存している場合は、依存するモジュールを無効にするか削除する必要があります。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 * _関連用語：php、xml、block_
@@ -1046,7 +1046,7 @@ _用語属性：_
 
 _名詞_
 
-[OMS](https://omsdocs.magento.com) は、Adobeの Order Management System の製品です。
+[OMS](https://omsdocs.magento.com) は、AdobeのOrder Management System 製品です。
 
 OMS は、あらゆる販売チャネルから在庫を管理、販売、履行するための柔軟で手頃な価格のソリューションです。
 OMS は、シームレスな顧客体験を提供し、売上の増加とコスト削減を実現し、市場投入までの時間を短縮します。
@@ -1058,13 +1058,13 @@ OMS の機能は次のとおりです。
 * より容易でレスポンシブなカスタマーサービス
 * 顧客体験とロイヤルティの向上
 
-詳細情報： [OMS 使用の手引き](https://omsdocs.magento.com/en/getting-started/), [OMS ドキュメント・サイト](https://omsdocs.magento.com/en/)
+詳細情報：[OMS の概要 ](https://omsdocs.magento.com/en/getting-started/)、[OMS ドキュメントサイト ](https://omsdocs.magento.com/en/)
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：機能、コマースソフトウェア、注文管理_
-* _同義語：受注管理、MOM、受注管理システム、Magento Order Management_
-* _関連用語：注文管理_
+* _シノニム：受注管理、MOM、受注管理システム、Magento Order Management_
+* _関連用語：受注管理_
 
 ### 原点クローキング
 
@@ -1072,9 +1072,9 @@ _名詞_
 
 オリジンクロークは、クラウドインフラストラクチャ上のAdobe Commerceが Fastly 以外のトラフィックをブロックし、DDoS 攻撃を防ぎ、クラウドインフラストラクチャ（オリジン）に移動できるようにするセキュリティ機能です。
 
-詳細情報： [Fastly origin クローキング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
+詳細情報：[Fastly オリジンクローキング ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：security_
 * _関連用語：web アプリケーションファイアウォール_
@@ -1090,13 +1090,13 @@ _名詞_
 マーチャントは、コーディングの経験がなくてもレイアウトとページをデザインできます。
 ページビルダーを拡張する開発者向けに拡張機能のサポートが提供されています。
 
-詳細情報： [ページビルダーユーザーガイド](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html), [ページビルダー DevDocs](https://developer.adobe.com/commerce/frontend-core/page-builder/)
+詳細情報：[ ページビルダーユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)、[ ページビルダー DevDocs](https://developer.adobe.com/commerce/frontend-core/page-builder/)
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：コマースソフトウェア、デザイン_
 * _同義語：管理者、管理パネル、バックエンド、管理インターフェイス、管理 UI_
-* _関連用語：管理者_
+* _関連用語：admin_
 
 ### 支払いゲートウェイ
 
@@ -1104,7 +1104,7 @@ _名詞_
 
 支払いゲートウェイは、顧客がマーチャントサイトを離れることなくクレジットカード取引をシームレスに処理するサードパーティのサービスです。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business、order、programming_
 
@@ -1117,7 +1117,7 @@ _名詞_
 追加商品を購入するインセンティブとして提示される製品の選択。
 例えば、顧客がカメラの製品ページを閲覧している場合、関連製品には、他の同等のカメラ、カメラケース、三脚が含まれる可能性があります。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce ソフトウェア、製品_
 
@@ -1129,7 +1129,7 @@ _名詞_
 
 プロモーションのために製品の価格を決定するために使用される、買い物かごとカタログルールが含まれます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce ソフトウェア、製品_
 * _関連用語：買い物かごルール、カタログルール_
@@ -1148,7 +1148,7 @@ Adobe Commerceでは、スコープは、設定が影響を与える可能性の
 
 階層内で、下位レベルで適用された設定が、一部の上位レベルの設定を上書きできます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 
@@ -1160,7 +1160,7 @@ _名詞_
 サービス契約には、データの整合性を保持するデータ・インタフェースと、コントローラ、Web サービス、その他のモジュールなどのサービス・リクエスタに対してビジネス・ロジックの詳細を非表示にするサービス・インタフェースが含まれています。
 Web API は、設定ファイルを介してサービス契約にバインドできます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：プログラミング_
 * _関連用語：php、web api_
@@ -1171,7 +1171,7 @@ _名詞_
 
 決済は、取得銀行と発行者が資金を交換し、収益がマーチャントアカウントに入金されたときに発生します。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business_
 
@@ -1190,7 +1190,7 @@ _名詞_
 * 顧客 2 のカタログ（10% オフのカタログ全体）
 * 顧客 3 カタログ（5～60% の範囲のメインカタログから割引を受けた数十個の製品）。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce ソフトウェア、製品_
 * _関連用語：カタログ、b2b_
@@ -1202,7 +1202,7 @@ _名詞_
 出荷には、搬送される製品が含まれ、出荷された注文の製品の記録が生成されます。
 1 つの注文に複数の出荷を関連付けることができます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business、order_
 
@@ -1212,7 +1212,7 @@ _名詞_
 
 出荷に付随するドキュメント。 このドキュメントには、配信パッケージに含まれる製品とその数量が一覧表示されます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business、order_
 
@@ -1222,7 +1222,7 @@ _名詞_
 
 パッケージを輸送する会社。 一般的な通信事業者には、UPS、FedEx、DHL、USPS があります。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business、order_
 
@@ -1233,9 +1233,9 @@ _名詞_
 顧客が購入を選択したが、まだ購入していない製品のセット。
 また、e コマースサイトの領域を指し、これらの製品がレビューおよびチェックアウトされる場所になります。
 
-_用語属性：_
+_用語の属性：_
 
-* _フィールド：business, design, product, programming_
+* _フィールド：ビジネス、デザイン、製品、プログラミング_
 * _同義語：買い物かご、バスケット_
 * _関連用語：買い物かごルール_
 
@@ -1248,7 +1248,7 @@ _名詞_
 シンプルな製品は、グループ化された製品、バンドルされた製品、設定可能な製品と関連付けて使用できます。
 カスタムオプションを持つ単純な製品は、複合製品と呼ばれることもあります。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce ソフトウェア、製品_
 * _関連用語：製品タイプ_
@@ -1260,9 +1260,9 @@ _名詞_
 Stock Keeping Unit の略語。
 商品、オプション、価格、および製造元を識別するために商品に割り当てられた番号またはコード。
 
-_用語属性：_
+_用語の属性：_
 
-* _フィールド：ビジネス，価格，製品，プログラミング_
+* _フィールド：business, pricing, product, programming_
 * _関連用語：共有カタログ_
 
 ### スプラッシュページ
@@ -1271,7 +1271,7 @@ _名詞_
 
 製品または広告を含むプロモーションページ。通常はホームページの前に表示されます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：design_
 
@@ -1283,7 +1283,7 @@ CMS のユーザーがページに配置して、テキストや画像を表示�
 静的ブロックは、編集可能なコンテンツを含み、製品カテゴリのランディングページとして機能できます。
 ウィジェットを静的ブロックに追加して、追加機能を提供できます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 * _関連用語：cms ブロック、ブロック_
@@ -1294,7 +1294,7 @@ _名詞_
 
 頻繁に変更されない（コードで生成されない）ユーザー生成コンテンツ。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：design_
 * _関連用語：動的コンテンツ_
@@ -1303,9 +1303,9 @@ _用語属性：_
 
 _名詞_
 
-テーマで使用される CSS、フォント、画像、JavaScript などのアセットのコレクションです。
+テーマで使用される CSS、フォント、画像、JavaScriptなどのアセットのコレクションです。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 
@@ -1318,7 +1318,7 @@ _名詞_
 
 各ストアには複数のストア表示を設定できます。これらの表示は通常、ストアフロントを異なるロケールと言語で表示するために使用されます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce ソフトウェア、製品_
 * _関連用語：ストア表示、web サイト_
@@ -1331,10 +1331,10 @@ Commerceの「ストアビュー」の範囲レベルは、web サイト、ス�
 ストア表示では、通常、ストアフロントを異なるロケールと言語で表示します。
 ストア表示を変更するには、ヘッダーのストア選択を使用します。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce ソフトウェア、製品_
-* _関連用語：ストア、web サイト_
+* _関連用語：店舗、Web サイト_
 
 ### ストアフロント
 
@@ -1342,7 +1342,7 @@ _名詞_
 
 Commerce サイトを訪問した顧客が体験するオンラインストア。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce ソフトウェア、製品_
 
@@ -1354,7 +1354,7 @@ _名詞_
 
 製品税区分、顧客税区分および税率の組み合わせ。 このルールは、適用される税金計算を定義します。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：business_
 
@@ -1367,7 +1367,7 @@ PHTML ファイルには、HTMLに動的コンテンツを挿入するためのH
 ほとんどのブロックには、ブロックによって生成された静的HTMLを含む PHTML （テンプレート）ファイルが少なくとも 1 つ含まれています。
 管理者では、メールとニュースレターのテンプレートを使用して、テキスト、画像、変数をHTMLのマークアップと組み合わせ、パーソナライズされたコンテンツを生成してシステムから送信することができます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 * _関連用語：ブロック_
@@ -1382,7 +1382,7 @@ Adobe Commerceでは、テーマを（Composer）パッケージで配布でき�
 ただし、テーマはパッケージに含まれていないアプリ/デザインの下に配置できます。
 パッケージは Composer のダウンロード・ユニットで、Commerce Marketplaceを使用すると、Commerceのユーザーは一連のパッケージとして CE または EE をダウンロードできます。パッケージには、モジュール、テーマ、言語パックが含まれています。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce software_
 
@@ -1396,15 +1396,15 @@ _名詞_
 UI コンポーネントシステムの目標は次のとおりです。
 
 * レイアウトハンドル XML ファイルの簡略化
-* 管理ユーザーインターフェイス要素をHTML+JavaScript から「pure JavaScript」カスタムウィジェットシステムに移行
+* 管理者ユーザーインターフェイス要素をHTML+JavaScriptから「純粋なJavaScript」カスタムウィジェットシステムに移行
 * より小さなコンポーネントから、より複雑な UI コンポーネントを作成できるようにする
 * UI コンポーネントのデータを JSON としてプリレンダリングし、バックエンドデータオブジェクトと密接にバインドする
 * AJAXを使用したコンポーネントデータの更新
 * 上記の項目を作成するための新しい DSL の導入
 
-詳細情報： [UI コンポーネントガイド](https://developer.adobe.com/commerce/frontend-core/ui-components/), [ページビルダー](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
+詳細情報：[UI コンポーネントガイド ](https://developer.adobe.com/commerce/frontend-core/ui-components/)、[ ページビルダー ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：プログラミング_
 * _関連用語：JavaScript、レイアウト、コンポーネント、ページビルダー_
@@ -1413,7 +1413,7 @@ _用語属性：_
 
 _名詞_
 
-[PWA Studio](https://github.com/magento/pwa-studio) 使用 [上へ](https://developer.adobe.com/commerce/pwa-studio/guides/packages/upward/) （開発中）。
+[ 開発 ](https://github.com/magento/pwa-studio) はPWA Studioで [UPWARD](https://developer.adobe.com/commerce/pwa-studio/guides/packages/upward/) を使用します。
 UPWARD は、Unified Progressive Web App Response Definition の頭字語です。
 UPWARD 定義ファイルは、Web サーバーがProgressive Web Applicationを配信およびサポートする方法を記述します。
 
@@ -1425,7 +1425,7 @@ UPWARD サーバーは、定義ファイルを使用して、アプリケーシ�
 
 PWAプロジェクトには、サービスの依存関係を指定する UPWARD 定義ファイルを含めることができます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：デザイン、コマースソフトウェア、プログラミング_
 * _同義語：PWA Studio、統合プログレッシブ Web アプリ応答の定義_
@@ -1441,12 +1441,12 @@ Commerceの動作を拡張またはカスタマイズし、サードパーティ
 VBE は徹底的にテストされ、サポートされている各Adobe Commerce バージョンに含まれています。
 VBE には、モジュール、テーマ、言語パックを含めることができます。
 
-詳しくは、を参照してください [ベンダーバンドルの拡張機能トピック](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).
+詳しくは、[ ベンダーバンドル拡張機能のトピック ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) を参照してください。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce 拡張機能、ベンダーバンドルの拡張機能、拡張機能、VBE_
-* _同義語：拡張機能、VBE_
+* _同義語：extension、VBE_
 * _関連用語：拡張機能、バンドルされた拡張機能_
 
 ### 垂直方向のスケーリング
@@ -1455,7 +1455,7 @@ _名詞_
 
 垂直方向のスケーリング（スケールアップ）とは、ディスクまたはネットワーク I/O、CPU、RAM を追加して、単一のサーバーまたはクラスターの処理能力を高めることです。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：environment_
 
@@ -1470,7 +1470,7 @@ _名詞_
 仮想製品とシンプル製品の作成手順はほぼ同じです。
 ただし、仮想製品は出荷されないので、重量フィールドやギフトカードを含めるオプションはありません。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：commerce ソフトウェア、製品_
 * _関連用語：製品タイプ_
@@ -1480,13 +1480,13 @@ _用語属性：_
 _名詞_
 
 仮想型は、他のクラスに影響を与えることなく、またクラスファイルを作成することなく、既存の PHP クラスに異なる依存関係を挿入する方法です。
-仮想タイプは、内の引数オーバーライドによってのみ参照できます。 `<type>` 要素は di.xml ファイル内にあり、ソース コード内には存在しません。
+仮想型は、di.xml ファイル内の `<type>` 要素の引数オーバーライドによってのみ参照でき、ソース コードでは参照できません。
 拡張することはできず、クラスコンストラクターの依存関係として参照することもできません。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：プログラミング_
-* _関連する用語：php_
+* _関連用語：php_
 
 ## 第週
 
@@ -1498,7 +1498,7 @@ Adobe Commerce ソフトウェアでは、ストアビューとストアビュ�
 複数の web サイトを持つことができ、各 web サイトには異なるドメイン名を付けることができます。
 Web サイトは、顧客データを共有するように設定することも、データを共有しないように設定することもできます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：コマースソフトウェア、デザイン、製品_
 * _関連用語：ストア、ストア表示_
@@ -1507,11 +1507,11 @@ _用語属性：_
 
 _名詞_
 
-A [ウィジェット](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html) は、ストアページの特定の場所にブロック、リンク、動的コンテンツを配置するために使用できる、準備済みのコードスニペットです。
+[ ウィジェット ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html) は、ストアページの特定の場所にブロック、リンク、動的コンテンツを配置するために使用できる、コードの準備済みスニペットです。
 ウィジェットを使用して、マーケティングキャンペーンのランディングページを作成したり、ストア全体の特定の場所にプロモーションコンテンツを表示したりできます。
 また、ウィジェットを使用して、外部レビューシステム、ビデオチャット、投票、購読フォーム用のインタラクティブ要素とアクションブロックを追加したり、タグクラウドと画像スライダー用のナビゲーション要素を提供したりすることもできます。
 
-_用語属性：_
+_用語の属性：_
 
 * _フィールド：ビジネス、コマースソフトウェア、デザイン_
 * _関連用語：ブロック_

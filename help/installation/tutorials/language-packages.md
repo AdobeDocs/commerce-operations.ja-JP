@@ -13,9 +13,9 @@ ht-degree: 0%
 
 ここでは、1 つ以上の言語パッケージ（オプションでファイルシステムから言語パッケージのコードも含む）をアンインストールする方法について説明します。 最初にバックアップを作成して、後でデータを復元できるようにします。
 
-このコマンドはアンインストールします *のみ* で指定された言語パッケージ `composer.json`つまり、Composer パッケージとして提供される言語パッケージです。 言語パッケージが Composer パッケージでない場合は、ファイルシステムから言語パッケージコードを削除して、手動でアンインストールする必要があります。
+このコマンドは、`composer.json` で指定された *のみ* 言語パッケージ、つまり Composer パッケージとして提供されている言語パッケージをアンインストールします。 言語パッケージが Composer パッケージでない場合は、ファイルシステムから言語パッケージコードを削除して、手動でアンインストールする必要があります。
 
-を使用すると、いつでもバックアップを復元できます [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンド。
+[`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンドを使用すれば、いつでもバックアップを復元できます。
 
 コマンドの使用法：
 
@@ -29,8 +29,8 @@ bin/magento i18n:uninstall [-b|--backup-code] {language package name} ... {langu
 
    これを回避するには、すべての依存言語パッケージを同時にアンインストールするか、最初に依存言語パッケージをアンインストールします。
 
-1. 次の場合 `--backup code` が指定されている場合は、ファイルシステムをバックアップします（を除く） `var` および `pub/static` ディレクトリ） `var/backups/<timestamp>_filesystem.tgz`
-1. を使用して、コードベースから言語パッケージファイルを削除します。 `composer remove`.
+1. `--backup code` が指定されている場合は、ファイルシステム（`var` ディレクトリと `pub/static` ディレクトリを除く）を `var/backups/<timestamp>_filesystem.tgz` にバックアップします
+1. `composer remove` を使用して、コードベースから言語パッケージファイルを削除します。
 1. キャッシュをクリアします。
 
 例えば、別の言語パッケージが依存する言語パッケージをアンインストールしようとすると、次のメッセージが表示されます。

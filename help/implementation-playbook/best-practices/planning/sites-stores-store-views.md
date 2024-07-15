@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-[サポートされているすべてのバージョン](../../../release/versions.md) （件中）:
+[ サポートされているすべてのバージョン ](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -34,12 +34,12 @@ ht-degree: 0%
 
 Web サイトやストアはカタログデータの乗数なので、多くの Web サイトやストアを持つと、次の点でサイトのパフォーマンスに悪影響を与える可能性があります。
 
-- インデックス・テーブルが大きくなると、インデックス作成操作の完了に要する時間が長くなる [物価指数].
+- インデックス・テーブルが大きくなると、インデックス作成操作の完了に要する時間が長くなります [ 価格インデックス ]。
 - アプリケーション設定の取得時間が長くなると、キャッシュされていないカタログページのストアフロントの応答時間が遅くなります。
 - データは web サイトごとに個別に保存されるので、管理者が保存操作を完了するのに必要な時間が大幅に増加しました。
 
 
 ## 追加情報
 
-- [Web サイト、ストア、ストア表示について](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
-- [複数の web サイトまたはストアを設定](https://devdocs.magento.com/cloud/project/project-multi-sites.html)
+- [Web サイト、ストア、ストア表示について ](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
+- [ 複数の web サイトまたはストアを設定する ](https://devdocs.magento.com/cloud/project/project-multi-sites.html)

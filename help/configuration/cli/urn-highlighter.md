@@ -13,19 +13,19 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Commerce コードは、すべての XSD スキーマをとして参照します [統一リソース名（URN）](https://www.ietf.org/rfc/rfc2141.txt). コードを開発していて、XSD を参照する必要がある場合、このコマンドは、URN を認識して強調表示するように統合開発環境（IDE）を設定します。 これにより、開発が容易になります。
+Commerce コードは、すべての XSD スキーマを [Uniform Resource Name （URN） ](https://www.ietf.org/rfc/rfc2141.txt) として参照します。 コードを開発していて、XSD を参照する必要がある場合、このコマンドは、URN を認識して強調表示するように統合開発環境（IDE）を設定します。 これにより、開発が容易になります。
 
 デフォルトでは、PhpStorm などの IDE は URN を認識するように設定されていないため、次のように赤いテキストで表示されます。
 
-![PhpStorm が URN を認識するように設定されていません](../../assets/configuration/urn-before.png)
+![URN を認識するように PhpStorm が設定されていません ](../../assets/configuration/urn-before.png)
 
-この `bin/magento dev:urn-catalog:generate` コマンドを使用すると、IDE （現在は PhpStorm と Visual Studio Code のみ）で次のような URN を認識して強調表示できます。
+`bin/magento dev:urn-catalog:generate` コマンドを使用すると、IDE （現在は PhpStorm と Visual Studio Code のみ）で次のような URN を認識して強調表示できます。
 
-![URN の認識を有効にする](../../assets/configuration/urn-after.png)
+![URN を認識する IDE の有効化 ](../../assets/configuration/urn-after.png)
 
 具体的には、このコマンドは次の PhpStorm 設定を作成します。
 
-![PhpStorm の設定例](../../assets/configuration/urn-settings.png)
+![PhpStorm の設定例 ](../../assets/configuration/urn-settings.png)
 
 ## IDE の設定
 
@@ -37,8 +37,8 @@ Commerce コードは、すべての XSD スキーマをとして参照します
 bin/magento dev:urn-catalog:generate <path>
 ```
 
-ここで、 `<path>` は PhpStorm へのパスです `misc.xml` ファイル（プロジェクトルートを基準とした相対パスで配置されます） 通常、 `<path>` 等しい `.idea/misc.xml`.
+ここで、`<path>` は PhpStorm `misc.xml` ファイルへのパスです。このファイルは、プロジェクトのルートからの相対パスで配置されます。 通常、`<path>` は `.idea/misc.xml` です。
 
 >[!INFO]
 >
->「スキーマと DTD」を最新の状態に保つには、 `dev:urn-catalog:generate` を含むCommerce 2 モジュールを追加、変更、削除するたびにコマンドを実行します。 `*.xsd` ファイル。
+>「スキーマと DTD」を最新の状態に保つには、`*.xsd` ファイルを含むCommerce 2 モジュールを追加、変更、削除するたびに `dev:urn-catalog:generate` コマンドを実行します。

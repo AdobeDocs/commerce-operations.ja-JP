@@ -15,11 +15,11 @@ ht-degree: 0%
 
 既存の設定タイプを拡張する場合は、モジュールに設定ファイルを作成するだけで済みます。
 
-例えば、イベントオブザーバーを追加するには、次を作成します `app/code/{VendorName}/{ModuleName}/etc/events.xml` 新しいオブザーバーを宣言します。
+例えば、イベントオブザーバーを追加するには、`app/code/{VendorName}/{ModuleName}/etc/events.xml` を作成し、新しいオブザーバーを宣言します。
 
 イベント設定タイプはCommerceに存在するので、ローダーと `events.xsd` 検証スキーマは既に存在し、機能しています。
 
-あなたの新しい `events.xml` はモジュールから自動的に収集され、他のモジュールと結合されます `events.xml` 他のモジュール用のファイル。
+新しい `events.xml` は、モジュールから自動的に収集され、他のモジュール用に他の `events.xml` ファイルと結合されます。
 
 ## 設定タイプの作成
 
@@ -33,12 +33,12 @@ ht-degree: 0%
 
 - 積込人
 - XSD スキーマファイル
-- 適切な名前の設定ファイル。 例： `search.xml`. このファイルは、スキーマに対して読み取られ、検証されます。
+- 適切な名前の設定ファイル。 例：`search.xml`。 このファイルは、スキーマに対して読み取られ、検証されます。
 - 作業に必要なその他のクラス。
 
 >[!INFO]
 >
->新しいモジュールに `search.xml` ファイルが読み込まれると、それらはファイルと結合されます。
+>新しいモジュールに `search.xml` ファイルがある場合、そのモジュールは読み込み時にファイルと結合されます。
 
 ### 使用例
 
@@ -46,9 +46,9 @@ ht-degree: 0%
 
 1. XSD ファイルを作成します。
 1. XML ファイルを作成します。
-1. に設定オブジェクトを定義します。 `di.xml`.
+1. `di.xml` で設定オブジェクトを定義します。
 
-   次のMagento_Sales モジュールの例 [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) 設定オブジェクトの外観を示します。
+   次の例は、Configuration_Sales モジュールの [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) から、Magentoオブジェクトがどのように表示されるかを示しています。
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
@@ -76,11 +76,11 @@ ht-degree: 0%
    </config>
    ```
 
-   - 1 つ目のタイプノードは、関連付けられたReaderのファイル名を設定します `Converter` および `SchemaLocator` クラス。
-   - 次に、 `pdfConfigDataStorage` 仮想型ノードは、reader クラスをのインスタンスにアタッチします。 [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php).
-   - 最後に、最後のタイプノードによって、その設定データ仮想タイプがにアタッチされます [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) クラス。これらの値から実際にの値を読み取るために使用します。 [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml) ファイル。
+   - 1 つ目のタイプノードは、Readerのファイル名、関連付けられた `Converter` および `SchemaLocator` クラスを設定します。
+   - 次に、`pdfConfigDataStorage` 仮想タイプノードは、リーダークラスを [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php) のインスタンスにアタッチします。
+   - 最後に、設定データの仮想タイプを最後のタイプノードで [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) クラスに添付します。このクラスは、これらの [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml) ファイルから実際にの値を読み取るために使用されます。
 
-1. を拡張してリーダーを定義する [Magento\Framework\Config\Reader\Filesystem](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) 次のパラメーターをクラス化して書き換えます。
+1. [Magento\Framework\Config\Reader\Filesystem](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) クラスを拡張してリーダーを定義し、次のパラメーターを書き換えます：
 
    ```php
    $_idAttributes // Array of node attribute IDs.
@@ -115,13 +115,13 @@ class Reader extends Filesystem
 
 >[!INFO]
 >
->独自のバージョンのリーダーを作成する場合は、を実装します。 `\Magento\Framework\Config\ReaderInterface`. 参照： [Config_AnalyticsMagentoリーダー](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
+>独自のバージョンのリーダーを作成する場合は、`\Magento\Framework\Config\ReaderInterface` を実装します。 [Config_AnalyticsMagentoリーダーを参照してください ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
 
 リーダーを定義した後、それを使用して、設定ファイルを収集、結合、検証および内部配列表現に変換します。
 
 ## 設定タイプの検証
 
-各設定ファイルは、その設定タイプに固有のスキーマに対して検証されます。 例：以前のCommerce バージョンで設定されたイベント `config.xml`、が設定されました `events.xml`.
+各設定ファイルは、その設定タイプに固有のスキーマに対して検証されます。 例：以前のCommerce バージョンで `config.xml` で設定されたイベントが、`events.xml` で設定されるようになりました。
 
 設定ファイルは、同じ設定タイプに影響を与える複数のファイルを結合する前（オプション）と後の両方で検証できます。 個々のファイルと結合ファイルの検証ルールが同じでない限り、設定ファイルを検証するには、次の 2 つのスキーマを指定する必要があります。
 
@@ -131,7 +131,7 @@ class Reader extends Filesystem
 新しい設定ファイルには、XSD 検証スキーマを伴う必要があります。 XML 設定ファイルと XSD 検証ファイルには、同じ名前を付ける必要があります。
 
 1 つの XML ファイルに 2 つの XSD ファイルを使用する必要がある場合、スキーマの名前は認識でき、XML ファイルに関連付けられている必要があります。
-次のような場合： `events.xml` ファイルと最初の `events.xsd` ファイル、結合する XSD ファイル `events.xml` ファイルの名前 `events_merged.xsd`.
+`events.xml` ファイルと最初の `events.xsd` ファイルがある場合、結合された `events.xml` ファイルの XSD ファイルの名前は `events_merged.xsd` になります。
 適切な XSD ファイルで XML ファイルを確実に検証するには、XML ファイル内の XSD ファイルに URN （Uniform Resource Name）を追加する必要があります。 例：
 
 ```xml

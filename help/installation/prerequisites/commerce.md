@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## ソフトウェアの入手方法
 
-エキサイティングな新機能やリリースの可用性を確認し、それらをアドビで入手する方法を学びます [製品の可用性ページ](https://devdocs.magento.com/release/availability.html).
+魅力的な新機能やリリースの提供状況を確認し、それらを入手する方法については、アドビの [ 製品提供ページ ](https://devdocs.magento.com/release/availability.html) を参照してください。
 
 Adobe Commerceのインストールの概要については、次の表を参照してください。
 
@@ -31,22 +31,22 @@ Adobe Commerceのインストールの概要については、次の表を参照
         <td><p>インテグレーター、パッケージャー</p></td>
         <td><p>インストールされているすべてのコンポーネントを完全に制御したい、アプリケーションサーバーにアクセスできる、非常に技術的な、他のコンポーネントとMagento Open Sourceを再パッケージ化する可能性があります。</p>
         </td>
-        <td><ol><li>コンポーザーを作成します <em>プロジェクト</em> 使用するコンポーネントのリストが含まれます。</li>
-            <li>Composer を使用してパッケージの依存関係を更新します。を使用します。 <code>composer create-project</code> Composer メタパッケージを取得します。</li>
-            <li>を使用してアプリケーションをインストールします <a href="../advanced.md">コマンドライン</a>.</li>
-        <li>を使用してアプリケーションおよび拡張機能をアップグレードします。  <a href="../../upgrade/implementation/perform-upgrade.md">コマンドライン</a>.</li></ol></td>
+        <td><ol><li>使用するコンポーネントのリストを含む Composer <em> プロジェクト </em> を作成します。</li>
+            <li>Composer を使用してパッケージの依存関係を更新します。<code>composer create-project</code> を使用して Composer メタパッケージを取得します。</li>
+            <li><a href="../advanced.md"> コマンドライン </a> を使用してアプリケーションをインストールします。</li>
+        <li><a href="../../upgrade/implementation/perform-upgrade.md"> コマンドライン </a> を使用してアプリケーションと拡張機能をアップグレードします。</li></ol></td>
         <td><p><a href="../composer.md">メタパッケージを入手する</a></p></td>
     </tr>
     <tr>
         <td><p>貢献する開発者</p></td>
         <td><p>Magento Open Sourceのコードベース、ファイルのバグ、アプリケーションのカスタマイズに役立ちます。 高度な技術を持ち、独自の開発サーバーを持ち、Composer と GitHub を理解しています。</p>
-            <p>あなた <em>できません</em> 実稼動環境でアプリケーションを使用します。</p>
-      <p>を使用してアップグレードする必要があります <a href="../../upgrade/developer/git-installs.md">Composer コマンドと Git コマンド</a>.</p></td>
+            <p>実稼動環境 <em> はアプリケーションを使用できません </em>。</p>
+      <p><a href="../../upgrade/developer/git-installs.md">Composer コマンドと Git コマンド </a> を使用してアップグレードする必要があります。</p></td>
         <td><ol><li>GitHub リポジトリを複製します。</li>
             <li>Composer を使用してパッケージの依存関係を更新します。</li>
-            <li>を使用してアプリケーションをインストールします。 <a href="../advanced.md">コマンドライン</a>.</li>
-            <li>を使用してアプリケーションをアップグレードします。 <a href="../../upgrade/developer/git-installs.md">Composer コマンドと Git コマンド</a>.</li>
-            <li>以下のコードをカスタマイズします <code>app/code</code> ディレクトリ。</li></ol></td>
+            <li><a href="../advanced.md"> コマンドライン </a> を使用してアプリケーションをインストールします。</li>
+            <li><a href="../../upgrade/developer/git-installs.md">Composer および Git コマンド </a> を使用してアプリケーションをアップグレードします。</li>
+            <li><code>app/code</code> ディレクトリの下のコードをカスタマイズします。</li></ol></td>
         <td><p><a href="https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/">GitHub リポジトリのクローン</a></p></td>
     </tr>
     </tbody>
@@ -58,8 +58,8 @@ Adobe Commerceのインストールの概要については、次の表を参照
 
 ## 必要なサーバー権限
 
-UNIX システムでは次が必要 `root` web サーバー、PHP などのソフトウェアをインストールおよび設定する権限。 このソフトウェアをインストールする必要がある場合は、次のことを確認してください `root` アクセス。
+UNIX システムでは、Web サーバーや PHP などのソフトウェアをインストールおよび設定するために `root` 権限が必要です。 このソフトウェアをインストールする必要がある場合は、アクセス権があ `root` ことを確認します。
 
-実行 *ではない* web サーバーの docroot にアプリケーションをとしてインストールします `root` ユーザー：web サーバーがこれらのファイルを操作できない可能性があるためです。
+Web サーバーがこれらのファイルを操作できない可能性があるので *web サーバーの docroot にアプリケーションを `root` ユーザーとしてインストールし* いでください。
 
-必要です `root` を作成するための権限 [ファイルシステム所有者](file-system/overview.md) その所有者を web サーバーのグループに追加します。 ファイルシステムの所有者を使用して実行します `bin/magento` コマンドをコマンドラインから実行し、cron ジョブを設定して、タスクのスケジュールを設定します。
+[ ファイルシステム所有者 ](file-system/overview.md) を作成し、その所有者を web サーバーのグループに追加するには、`root` 権限が必要です。 ファイルシステムの所有者を使用して、コマンドラインから `bin/magento` コマンドを実行したり、タスクをスケジュールする cron ジョブを設定したりできます。

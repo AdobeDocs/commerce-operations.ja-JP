@@ -40,15 +40,15 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Adobe Commerceでは、Adobe Commerce データベース内のカスタムトリガーをサポートしていません。カスタムバージョンは、今後のAdobe Commerce トリガーとの互換性を失う可能性があるからです。 ベストプラクティスについては、を参照してください。 [一般的な MySQL ガイドライン](../../../installation/prerequisites/database/mysql.md) Adobe Commerceのドキュメントで説明しています。
+>Adobe Commerceでは、Adobe Commerce データベース内のカスタムトリガーをサポートしていません。カスタムバージョンは、今後のAdobe Commerce トリガーとの互換性を失う可能性があるからです。 ベストプラクティスについては、Adobe Commerce ドキュメントの [ 一般的な MySQL ガイドライン ](../../../installation/prerequisites/database/mysql.md) を参照してください。
 
 ### 効果的な使用
 
 トリガーを使用する際のパフォーマンスの問題を防ぐには、次のガイドラインに従います。
 
 - トリガーの実行時にデータを書き込むカスタムトリガーがある場合、代わりに、監査テーブルに直接書き込むように、このロジックを移動します。 例えば、トリガーを作成するクエリの後に、アプリケーションコードにクエリを追加します。
-- 既存のカスタムトリガーを確認し、それらを削除して、アプリケーション側からテーブルに直接書き込むことを検討します。 次のコマンドを使用して、データベース内の既存のトリガーを確認します [`SHOW TRIGGERS` SQL ステートメント](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
-- 追加のサポート、質問または懸念については、 [Adobe Commerce サポートチケットを送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
+- 既存のカスタムトリガーを確認し、それらを削除して、アプリケーション側からテーブルに直接書き込むことを検討します。 [`SHOW TRIGGERS` SQL 文 ](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html) を使用して、データベース内の既存のトリガーを確認します。
+- その他のサポート、質問または懸念については、[Adobe Commerce サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket) してください。
 
 ## スレーブ接続
 
@@ -62,13 +62,13 @@ Adobe Commerce on cloud infrastructure、Pro アーキテクチャのみ
 
 ### 設定
 
-クラウドインフラストラクチャー上のAdobe Commerceでは、以下を設定して、MYSQL スレーブ接続のデフォルト設定を上書きできます。 [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) 変数。 この変数をに設定します。 `true` データベースへの読み取り専用接続を自動的に使用する。
+クラウドインフラストラクチャー上のAdobe Commerceでは、[MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) 変数を設定することで、MYSQL スレーブ接続のデフォルト設定を上書きできます。 データベースへの読み取り専用接続を自動的に使用するには、この変数を `true` に設定します。
 
-**MySQL スレーブ接続を有効にするには、次の手順に従います**:
+**MySQL スレーブ接続を有効にするには**:
 
 1. ローカルワークステーションで、をプロジェクトディレクトリに変更します。
 
-1. が含まれる `.magento.env.yaml` ファイル、を設定 `MYSQL_USE_SLAVE_CONNECTION` を true に設定します。
+1. `.magento.env.yaml` ファイルで、`MYSQL_USE_SLAVE_CONNECTION` を true に設定します。
 
    ```
    stage:
@@ -76,6 +76,6 @@ Adobe Commerce on cloud infrastructure、Pro アーキテクチャのみ
        MYSQL_USE_SLAVE_CONNECTION: true
    ```
 
-1. をコミット `.magento.env.yaml` ファイルの変更とリモート環境へのプッシュ
+1. `.magento.env.yaml` ファイルの変更をコミットし、リモート環境にプッシュします。
 
    デプロイメントが正常に完了すると、クラウド環境に対して MySQL スレーブ接続が有効になります。

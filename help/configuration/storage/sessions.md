@@ -14,17 +14,17 @@ ht-degree: 0%
 
 このトピックでは、セッションファイルが格納されている場所を特定する方法について説明します。 システムでは、次のロジックを使用してセッションファイルを保存します。
 
-- memcached を設定した場合、セッションは RAM に格納されます。を参照してください [セッションストレージに memcached を使用](memcached.md).
-- Redis を設定した場合、セッションは Redis サーバーに保存されます。を参照してください [セッションストレージに Redis を使用](../cache/redis-session.md).
+- memcached を設定した場合、セッションは RAM に保存されます。[ セッションストレージに memcached を使用 ](memcached.md) を参照してください。
+- Redis を設定した場合、セッションは Redis サーバに保存されます。[ セッションストレージに Redis を使用する ](../cache/redis-session.md) を参照してください。
 - デフォルトのファイルベースのセッションストレージを使用している場合は、以下の場所に、表示されている順序でセッションが保存されます。
 
-   1. で定義されたディレクトリ [`env.php`](#example-in-envphp)
-   1. で定義されたディレクトリ [`php.ini`](#example-in-phpini)
-   1. `<magento_root>/var/session` directory
+   1. [`env.php`](#example-in-envphp) で定義されたディレクトリ
+   1. [`php.ini`](#example-in-phpini) で定義されたディレクトリ
+   1. `<magento_root>/var/session` ディレクトリ
 
-## の例 `env.php`
+## `env.php` の例
 
-からのサンプルスニペット `<magento_root>/app/etc/env.php` 次のようになります。
+`<magento_root>/app/etc/env.php` のサンプルスニペットを次に示します。
 
 ```php
  'session' => [
@@ -33,25 +33,25 @@ ht-degree: 0%
  ],
 ```
 
-上記の例では、セッションファイルをに格納します。 `/var/www/session`
+上記の例では、セッションファイルを `/var/www/session` に保存します
 
-## の例 `php.ini`
+## `php.ini` の例
 
-を使用した As a ユーザー `root` 権限、を開く `php.ini` ファイルで、の値を検索します。 `session.save_path`. これは、セッションが格納される場所を識別します。
+`root` 権限を持つユーザーとして、`php.ini` ファイルを開き、`session.save_path` の値を検索します。 これは、セッションが格納される場所を識別します。
 
 ## セッションサイズの管理
 
-を参照してください。 [セッション管理](https://docs.magento.com/user-guide/stores/security-session-management.html) が含まれる _ユーザーガイド_.
+[ ユーザーガイド ](https://docs.magento.com/user-guide/stores/security-session-management.html) の _セッション管理_ を参照してください。
 
 ## ガベージコレクション設定
 
-期限切れのセッションをクリーンアップするには、システムによって次が呼び出されます `gc` （_ガベージコレクション_）により計算される確率に従ってランダムにハンドラーを作成します。 `gc_probability / gc_divisor` ディレクティブ。 例えば、これらのディレクティブをに設定した場合 `1/100` それぞれ、次の確率を意味します `1%` （_100 件のリクエストにつきガベージコレクションが 1 回呼び出される確率_）に設定します。
+期限切れのセッションをクリーンアップするために、システムは `gc_probability / gc_divisor` ディレクティブによって計算される確率に従ってランダムに `gc` （_ガベージコレクション_）ハンドラーを呼び出します。 例えば、これらのディレクティブをそれぞれ `1/100` に設定した場合、`1%` の確率（_100 件のリクエストごとに 1 回のガベージコレクションの呼び出しの確率_）を意味します。
 
-ガベージコレクションハンドラーは、 `gc_maxlifetime` ディレクティブ – セッションが次のように表示されるまでの秒数 _ガベージ_ 場合によってはクリーンアップされます。
+ガベージコレクションハンドラーでは、`gc_maxlifetime` ディレクティブを使用します。このディレクティブは、セッションが _ガベージ_ と見なされてクリーンアップされる秒数を示します。
 
-一部のオペレーティングシステム（Debian/Ubuntu）では、デフォルト `session.gc_probability` ディレクティブは `0`ガベージコレクションハンドラーを実行できないようにします。
+一部のオペレーティングシステム（Debian/Ubuntu）では、デフォルトの `session.gc_probability` ディレクティブが `0` なので、ガベージコレクションハンドラーを実行できません。
 
-を上書きできます `session.gc_` からのディレクティブ `php.ini` 内のファイル `<magento_root>/app/etc/env.php` ファイル：
+`<magento_root>/app/etc/env.php` ファイルの `php.ini` ファイルから `session.gc_` ディレクティブを上書きできます。
 
 ```php
  'session' => [
