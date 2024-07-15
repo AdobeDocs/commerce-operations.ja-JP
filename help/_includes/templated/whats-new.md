@@ -1,7 +1,7 @@
 ---
-source-git-commit: 87fa1874f25e58da103efb073078fa8d930b1265
+source-git-commit: 583d52a24add39bed3adc981aa0d254bf5122c9b
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '159'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 2%
 ## 新機能
 
 新しいドキュメントと、既存のドキュメントの重要な更新について説明します。
+
+### 2024 年 6 月 12 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Packages</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises">bin/magento</a>、および <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions"> 必要な PHP 拡張機能 </a> を更新しました。</p>
+</td>
+      <td>技術</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/de91db690b6297dc8857807acec5d33c14e60478">de91db</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2024 年 6 月 11 日（Pt）
 
@@ -22,6 +42,12 @@ ht-degree: 2%
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">UCT CLI リファレンス </a> を更新しました。</p>
+</td>
+      <td>技術</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1fbddf4ea05511c1aefe0cd0d8e8b2ebde7e00dd">1fbddf</a> （コミット）</td>
+    </tr>
     <tr>
       <td><p>2024 年 6 月のセキュリティパッチのリリースノートを公開：<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p6</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p8</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p9</a></p>
 </td>
@@ -39,12 +65,6 @@ ht-degree: 2%
 </td>
       <td>技術</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/20823bae109f5b053f352b0a13275acecf991904">20823b</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">UCT CLI リファレンス </a> を更新しました。</p>
-</td>
-      <td>技術</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1fbddf4ea05511c1aefe0cd0d8e8b2ebde7e00dd">1fbddf</a> （コミット）</td>
     </tr>
   </tbody>
 </table>
