@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.5 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.5 のセキュリティパッチリリースに含まれている、セキュリティバグ修正、セキュリティ機能強化、その他のセキュリティ関連アップデートについて説明します。
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-source-git-commit: 59a5306c8329ddc3ca2a2e086f5ebe81b49eab3a
+source-git-commit: 2269c99908c0f8292ad62bd5837b1b8cebd50cb3
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,10 @@ ht-degree: 0%
 Adobe Commerce 2.4.5-p7 セキュリティリリースは、以前のリリースの 2.4.5 で特定された脆弱性に対するセキュリティバグ修正を提供します。
 
 セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html) を参照してください。
+
+### CVE-2024-34102 のホットフィックスを適用する
+
+{{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
 
 ### Platform のアップグレード
 

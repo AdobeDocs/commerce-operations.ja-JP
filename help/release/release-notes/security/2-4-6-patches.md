@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.6 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.6 のセキュリティパッチリリースに含まれている、セキュリティバグ修正、セキュリティ機能強化、その他のセキュリティ関連アップデートについて説明します。
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: 5c361b0cdd0f06aed394acf2d811db35ec1d8471
+source-git-commit: 2269c99908c0f8292ad62bd5837b1b8cebd50cb3
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,10 @@ ht-degree: 0%
 Adobe Commerce 2.4.6-p6 セキュリティリリースは、以前のリリースの 2.4.6 で特定された脆弱性に対するセキュリティバグ修正を提供します。
 
 セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html) を参照してください。
+
+### CVE-2024-34102 のホットフィックスを適用する
+
+{{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
 
 ### セキュリティハイライト
 
