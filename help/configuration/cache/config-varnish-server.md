@@ -3,7 +3,7 @@ title: Web サーバーの設定
 description: Varnish と連携するように web サーバーを設定する方法を説明します。
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 0%
@@ -141,7 +141,7 @@ Varnish をサービスとして起動できない場合は、次のようにコ
 
    正常に開始されたことを確認する次のメッセージが表示されます。
 
-   ```terminal
+   ```
    child (29805) Started
    200 0
    
@@ -159,7 +159,7 @@ netstat -tulpn
 
 特に、次の出力を探します。
 
-```terminal
+```
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
 tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
@@ -178,7 +178,7 @@ tcp        0      0 ::1:48509                   :::*                        LIST
 
 Commerceのインストール中にエラーが発生した可能性があります：
 
-```terminal
+```
 Error 503 Service Unavailable
 Service Unavailable
 XID: 303394517
@@ -217,7 +217,7 @@ Web ブラウザーで、任意のCommerce ページに移動します。
 
 応答ヘッダーの長いリストがコマンドプロンプトウィンドウに表示されます。 次のようなヘッダーを探します。
 
-```terminal
+```
 -   BereqHeader    X-Varnish: 3
 -   VCL_call       BACKEND_FETCH
 -   VCL_return     fetch
@@ -252,7 +252,7 @@ curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 
 次のようなヘッダーを探します。
 
-```terminal
+```
 Content-Type: text/html; charset=iso-8859-1
 X-Varnish: 15
 Age: 0

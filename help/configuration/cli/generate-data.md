@@ -3,7 +3,7 @@ title: パフォーマンステスト用のデータの生成
 description: パフォーマンステストに使用する大量のデータを生成する方法を説明します。
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: d4a6d5cd181c7c4426914bbe481f4d5d1e828b5e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 9%
@@ -70,7 +70,7 @@ bin/magento setup:perf:generate-fixtures /var/www/html/magento2/setup/performanc
 
 小さいプロファイルの出力例：
 
-```terminal
+```
 Generating profile with following params:
     |- Websites: 1
     |- Store Groups Count: 1

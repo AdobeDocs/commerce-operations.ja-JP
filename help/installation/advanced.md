@@ -2,7 +2,7 @@
 title: オンプレミスでの高度なインストール
 description: 所有するインフラストラクチャでのAdobe Commerceの高度なインストールシナリオについて説明します。
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '2314'
 ht-degree: 0%
@@ -252,7 +252,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 次のようなメッセージが表示され、インストールが成功したことが示されます。
 
-```terminal
+```
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -274,7 +274,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 インストールが成功すると、次のようなメッセージが表示されます。
 
-```terminal
+```
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -329,7 +329,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 インストールが成功すると、次のようなメッセージが表示されます。
 
-```terminal
+```
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]

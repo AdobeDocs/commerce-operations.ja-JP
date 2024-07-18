@@ -2,7 +2,7 @@
 title: 依存関係レポート
 description: モジュール、循環、フレームワークの依存関係の合計を示すレポートを作成します。
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -51,7 +51,7 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 
 次に、サンプルモジュール依存関係レポートの出力の一部を示します。
 
-```terminal
+```
 "","All","Hard","Soft"
 "Total number of dependencies","602","587","15"
 
@@ -75,7 +75,7 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 
 循環依存関係レポートのサンプルの出力の一部を次に示します。
 
-```terminal
+```
 "Circular dependencies:","Total number of chains"
 "","848"
 
@@ -101,7 +101,7 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 
 サンプルフレームワークの依存関係レポートの出力の一部を次に示します。
 
-```terminal
+```
 "Dependencies of framework:","Total number"
 "","111"
 

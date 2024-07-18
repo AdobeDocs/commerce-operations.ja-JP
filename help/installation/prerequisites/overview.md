@@ -2,7 +2,7 @@
 title: オンプレミスでのインストールの前提条件
 description: Adobe Commerceのオンプレミスインストールに必要なソフトウェア依存関係について詳しく説明します。
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 1%
@@ -57,7 +57,7 @@ Ubuntu: `apache2 -v`
 
 次の結果が示すように、Adobe Commerceは Apache バージョン 2.4 をサポートしています。
 
-```terminal
+```
 Server version: Apache/2.4.0 (Unix)
 Server built:   Jul 23 2017 14:17:29
 ```
@@ -84,7 +84,7 @@ mysql -u magento -p
 
 次の結果は、実行しているバージョンを示しています。
 
-```terminal
+```
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 871
 Server version: 5.7.9 MySQL Community Server (GPL)
@@ -122,7 +122,7 @@ curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'
 curl -XGET 'localhost:9200'
 ```
 
-```terminal
+```
 {
   "name" : "Z0S2B05",
   "cluster_name" : "elasticsearch_myname",

@@ -2,7 +2,7 @@
 title: サポートユーティリティを実行します
 description: 組み込みサポートユーティリティを使用してCommerce プロジェクトのトラブルシューティングを行います。
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -81,7 +81,7 @@ bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [
 
 機密データには、次のデータベーステーブルからの顧客情報が含まれます。
 
-```terminal
+```
 'customer_entity',
 'customer_entity_varchar',
 'customer_address_entity',
@@ -100,7 +100,7 @@ bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [
 
 データ コレクタおよびコマンド ラインに必要なユーティリティへのパスを表示するコマンドを提供します。 これらのコマンドは、例えば、次のようなエラーが管理者またはコマンドラインに表示される場合に使用できます。
 
-```terminal
+```
 Utility lsof not found
 ```
 
@@ -119,7 +119,7 @@ Utility lsof not found
 
 次に例を示します。
 
-```terminal
+```
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

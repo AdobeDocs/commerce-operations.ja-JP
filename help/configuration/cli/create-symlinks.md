@@ -2,7 +2,7 @@
 title: LESS ファイルへのシンボリックリンクの作成
 description: LESS ファイルへのシンボリックリンクを作成する方法を説明します。
 exl-id: 58a6123a-28b4-445b-b3f9-f524233ac127
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
@@ -43,7 +43,7 @@ bin/magento dev:source-theme:deploy --type="less" --locale="en_US" --area="front
 
 成功を確認する次のメッセージが表示されます。
 
-```terminal
+```
 Processed Area: frontend, Locale: en_US, Theme: VendorName/themeName, File type: less.
 -> css/styles-l.less
 Successfully processed.

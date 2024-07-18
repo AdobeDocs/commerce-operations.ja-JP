@@ -3,7 +3,7 @@ title: サンプルの Data Composer パッケージのダウンロード
 description: Composer PHP Package Manager を使用してAdobe Commerce サンプル データをインストールするには、次の手順に従います。
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -54,7 +54,7 @@ bin/magento setup:upgrade
 
 次の認証エラーが表示される場合があります。
 
-```terminal
+```
 [Composer\Downloader\TransportException]
 The 'https://repo.magento.com/packages.json' URL required authentication.
 You must be using the interactive console to authenticate

@@ -2,7 +2,7 @@
 title: 言語パッケージのアンインストール
 description: Adobe Commerce言語パッケージをアンインストールするには、次の手順に従います。
 exl-id: 9901aa0b-af1a-4ae9-968f-ac8421060f57
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -35,7 +35,7 @@ bin/magento i18n:uninstall [-b|--backup-code] {language package name} ... {langu
 
 例えば、別の言語パッケージが依存する言語パッケージをアンインストールしようとすると、次のメッセージが表示されます。
 
-```terminal
+```
 Cannot uninstall vendorname/language-en_us because the following package(s) depend on it:
       vendorname/language-en_gb
 ```
@@ -48,7 +48,7 @@ bin/magento i18n:uninstall vendorname/language-en_us vendorname/language-en_gb -
 
 次のようなメッセージが表示されます。
 
-```terminal
+```
 Code backup is starting...
 Code backup filename: 1435261098_filesystem_code.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
 Code backup path: /var/www/html/magento2/var/backups/1435261098_filesystem_code.tgz

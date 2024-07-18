@@ -2,7 +2,7 @@
 title: Adobe Commerce 2.4.6 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.6 のセキュリティパッチリリースに含まれている、セキュリティバグ修正、セキュリティ機能強化、その他のセキュリティ関連アップデートについて説明します。
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: 2269c99908c0f8292ad62bd5837b1b8cebd50cb3
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 0%
@@ -128,7 +128,7 @@ Adobe Commerce 2.4.6-p1 セキュリティリリースは、以前のリリー�
 
 * B2B セキュリティパッケージの依存関係が見つからない場合、B2B 拡張機能をインストールまたは 1.4.0 にアップグレードする際に、次のインストールエラーが発生します。
 
-  ```terminal
+  ```
   Your requirements could not be resolved to an installable set of packages.
   
     Problem 1

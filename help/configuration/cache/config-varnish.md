@@ -3,7 +3,7 @@ title: ワニスの設定と使用
 description: Varnish がファイルを保存し、HTTP トラフィックを改善する方法を理解します。
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Varnish に関する次の問題を把握しています。
 
 - Commerceのインストール中にエラーが発生した可能性があります：
 
-  ```terminal
+  ```
   Error 503 Service Unavailable
   Service Unavailable
   XID: 303394517

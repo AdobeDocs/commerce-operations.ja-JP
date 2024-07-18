@@ -2,7 +2,7 @@
 title: サンプルデータ Git リポジトリのクローン
 description: Git リポジトリをクローンしてAdobe Commerce サンプルデータをインストールするには、次の手順に従います。
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -61,7 +61,7 @@ SSH プロトコルを使用してサンプルデータ GitHub リポジトリ�
    >
    >次のエラーが表示される場合は、[SSH キーを共有 ](https://docs.github.com/articles/generating-ssh-keys/) していることを GitHub で確認してください。<br>
 
-   ```terminal
+   ```
    Cloning into 'magento2'...
    Permission denied (publickey).
    fatal: The remote end hung up unexpectedly

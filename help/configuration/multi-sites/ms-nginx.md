@@ -2,7 +2,7 @@
 title: Nginx を使用して複数の Web サイトを設定する
 description: このチュートリアルに従って、Nginx で複数の Web サイトを設定します。
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 0%
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 1. 成功すると、次のメッセージが表示されます。
 
-   ```terminal
+   ```
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 
@@ -147,7 +147,7 @@ map ディレクティブの詳細については、[map ディレクティブ�
 
 1. 成功すると、次のメッセージが表示されます。
 
-   ```terminal
+   ```
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 

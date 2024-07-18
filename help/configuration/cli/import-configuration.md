@@ -2,7 +2,7 @@
 title: 設定ファイルからのデータの読み込み
 description: 設定ファイルからAdobe Commerce設定を読み込みます。
 exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -36,7 +36,7 @@ bin/magento app:config:import [-n, --no-interaction]
 
 例えば、設定ファイルに 1 つの新しい web サイトと 1 つの新しいストアが含まれている場合、次のメッセージが表示されます。
 
-```terminal
+```
 These Websites will be created: New Website
 These Groups will be created: New Store
 Do you want to continue [yes/no]?
@@ -46,14 +46,14 @@ Do you want to continue [yes/no]?
 
 読み込むデータが配置設定ファイルに含まれている場合は、次のようなメッセージが表示されます。
 
-```terminal
+```
 Start import:
 Some information about importing
 ```
 
 読み込むデータが配置設定ファイルに含まれていない場合は、次のようなメッセージが表示されます。
 
-```terminal
+```
 Start import:
 Nothing to import
 ```

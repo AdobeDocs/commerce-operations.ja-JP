@@ -2,7 +2,7 @@
 title: 詳細  [!DNL JavaScript]  バンドル
 description: JavaScriptのバンドルによって、サーバーリクエストのサイズと頻度を減らす方法について説明します。
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 0%
@@ -212,7 +212,7 @@ phantomjs deps.js <i>url-to-specific-page</i>/<i>text-file-representing-pagetype
 
 例えば、Luma をテーマにしたサンプルストアの 4 つのページで、4 つのバンドル（ホームページ、カテゴリ、製品、買い物かご）を作成するために使用する 4 つのページタイプを表します。
 
-```terminal
+```
 phantomjs deps.js http://m2.loc/ > bundle/homepage.txt
 phantomjs deps.js http://m2.loc/women/tops-women/jackets-women.html > bundle/category.txt
 phantomjs deps.js http://m2.loc/beaumont-summit-kit.html > bundle/product.txt
@@ -234,7 +234,7 @@ Object.keys(window.require.s.contexts._.defined)
 
 [!DNL RequireJS] の依存関係をページタイプのテキストファイルに結合した後、各ページタイプの依存関係ファイルで次のコマンドを使用して、ファイル内のコンマを改行に置き換えることができます。
 
-```terminal
+```bash
 sed -i -e $'s/,/\\\n/g' bundle/category.txt
 sed -i -e $'s/,/\\\n/g' bundle/homepage.txt
 sed -i -e $'s/,/\\\n/g' bundle/product.txt
@@ -243,7 +243,7 @@ sed -i -e $'s/,/\\\n/g' bundle/product.txt
 
 また、mixin は依存関係が重複しているので、各ファイルのすべての mixin を削除する必要があります。 各依存関係ファイルで次のコマンドを使用します。
 
-```terminal
+```bash
 sed -i -e 's/mixins\!.*$//g' bundle/homepage.txt
 sed -i -e 's/mixins\!.*$//g' bundle/category.txt
 sed -i -e 's/mixins\!.*$//g' bundle/product.txt
@@ -262,7 +262,7 @@ sort bundle/*.txt |uniq -c |sort -n
 
 このコマンドは、`bundle/*.txt` ファイルで見つかった依存関係を結合して並べ替えます。  出力には、各依存関係を含むファイルの数も示されます。
 
-```terminal
+```
 1 buildTools,
 1 jquery/jquery.parsequery,
 1 jsbuild,
@@ -317,7 +317,7 @@ bash deps-map.sh
 
 このスクリプトからの出力は、3 つのサンプルページタイプに適用すると、次のようになります（ただし、はるかに長くなります）。
 
-```terminal
+```
 bundle/product.txt   -->   buildTools,
 bundle/category.txt  -->   jquery/jquery.parsequery,
 bundle/product.txt   -->   jsbuild,
@@ -427,7 +427,7 @@ r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/stat
 ll pub/static/frontend/Magento/luma/en_US/bundles
 ```
 
-```terminal
+```
 total 1900
 drwxr-xr-x  2 root root    4096 Mar 28 11:24 ./
 drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../

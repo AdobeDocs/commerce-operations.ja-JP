@@ -3,7 +3,7 @@ title: '[!DNL Data Migration Tool] 技術仕様'
 description: Magento 1 とMagento 2 間でデータを転送する際の  [!DNL Data Migration Tool]  および拡張方法の実装の詳細について説明します。
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '2098'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 次の図は、[!DNL Data Migration Tool] のディレクトリ構造を表しています。
 
-```terminal
+```
 ├── etc                                    --- all configuration files
 │   ├── opensource-to-opensource            --- configuration files for migration from Magento Open Source 1 to Magento Open Source 2
 │   │   ├── 1.9.1.1

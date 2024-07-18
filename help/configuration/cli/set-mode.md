@@ -2,7 +2,7 @@
 title: 操作モードの設定
 description: Adobe Commerceのオペレーションモードの設定について説明します。
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 開発者モードまたは実稼動モードに変更する場合は、次のディレクトリの内容を消去します。
 
-```terminal
+```
 var/cache
 generated/metadata
 generated/code
@@ -54,7 +54,7 @@ bin/magento deploy:mode:show
 
 次のようなメッセージが表示されます。
 
-```terminal
+```
 Current application mode: {mode}. (Note: Environment variables may override this value.)
 ```
 
@@ -86,7 +86,7 @@ bin/magento deploy:mode:set production
 
 次のようなメッセージが表示されます。
 
-```terminal
+```
 Enabled maintenance mode
 Requested languages: en_US
 === frontend -> Magento/luma -> en_US ===
@@ -143,7 +143,7 @@ Enabled production mode.
 
    次のメッセージが表示されます。
 
-   ```terminal
+   ```
    Enabled developer mode.
    ```
 
@@ -155,7 +155,7 @@ bin/magento deploy:mode:set default
 
 次のメッセージが表示されます。
 
-```terminal
+```
 Enabled default mode.
 ```
 
