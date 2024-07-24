@@ -1,7 +1,7 @@
 ---
-source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
+source-git-commit: 9d855fca840f081a4b0faa0170eb0e950a7cd7ad
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: '93'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,4 @@ ht-degree: 0%
 セキュリティパッチリリースについて詳しくは、以下を参照してください。
 
 * [Adobe Commerce セキュリティパッチリリースの概要](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
-* [セキュリティパッチのダウンロードと適用の手順](/help/installation/composer.md)
+* セキュリティパッチリリースのダウンロードと適用の手順については、[ アップグレードガイド ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) を参照してください

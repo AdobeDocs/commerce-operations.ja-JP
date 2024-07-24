@@ -1,7 +1,7 @@
 ---
-source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
+source-git-commit: 50b87e6f2f604d195c2d079bd18451754edaa11c
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -15,4 +15,4 @@ ht-degree: 0%
 
 各セキュリティパッチリリースは、以前の完全なパッチリリースに基づいています。 以前のパッチリリースからの品質とセキュリティの修正、および以前の完全なパッチリリースとセキュリティパッチリリースの間に作成されたセキュリティの修正が含まれています。
 
-セキュリティパッチのダウンロードと適用については、[ クイックスタートインストール ](../installation/composer.md#example---security-patch) を参照してください。
+セキュリティパッチのダウンロードと適用については、『 [ アップグレードガイド _の ](../installation/composer.md#example---security-patch)Peform とアップグレード_ を参照してください。
