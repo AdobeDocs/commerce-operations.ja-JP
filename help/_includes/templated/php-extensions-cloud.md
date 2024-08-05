@@ -1,5 +1,5 @@
 ---
-source-git-commit: 551e3043f3f998f75c42a42f72d3e0fc6fdef149
+source-git-commit: ad378db06a034877b456c2cc2bdf491e40dc2258
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 0%
@@ -34,7 +34,6 @@ ht-degree: 0%
                 libxml<br>
                 mysqli<br>
                 opcache<br>
-                openswoole<br>
                 pcntl<br>
                 pdo_mysql<br>
                 反射 <br>
@@ -42,6 +41,7 @@ ht-degree: 0%
                 ソケット <br>
                 SPL<br>
                 標準 <br>
+                スウール <br>
                 sysvmsg<br>
                 システムの設定 <br>
                 sysvshm<br>
