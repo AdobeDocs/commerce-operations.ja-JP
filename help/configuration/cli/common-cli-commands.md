@@ -2,7 +2,7 @@
 title: 一般的なコマンド
 description: 一般的なCommerce CLI コマンドと使用方法の例を示します。
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d0e6d6517e28a32816bfe2b328edfba97523740
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -51,7 +51,7 @@ bin/magento help cache:enable
 
 ## 一般的な引数
 
-次の引数は、すべてのコマンドに共通です。 これらのコマンドは、Commerce ソフトウェアのインストールの前または後に実行できます。
+次の引数は [ すべてのコマンド ](/help/tools/reference/commerce-on-premises.md) に共通です。 これらのコマンドは、Commerce ソフトウェアのインストールの前または後に実行できます。
 
 | ロングバージョン | ショートバージョン | 意味 |
 |--- |--- |--- |
