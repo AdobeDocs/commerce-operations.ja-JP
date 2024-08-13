@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.4 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.4 のセキュリティパッチリリースに含まれている、セキュリティバグ修正、セキュリティ機能強化、その他のセキュリティ関連アップデートについて説明します。
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: 2269c99908c0f8292ad62bd5837b1b8cebd50cb3
+source-git-commit: 3a2d104f0a689ac3715af302d470a1660857543c
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1461'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,21 @@ ht-degree: 0%
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
-## Adobe Commerce 2.4.4-p9
+## 2.4.4-p10
+
+Adobe Commerce 2.4.4-p10 セキュリティリリースは、2.4.4 の以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。
+
+セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html) を参照してください。
+
+### ハイライト
+
+{{$include /help/_includes/release-notes/2024-08/security.md}}
+
+### このリリースに含まれるホットフィックス
+
+{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+
+## 2.4.4-p9
 
 Adobe Commerce 2.4.4-p9 セキュリティリリースは、以前のリリースの 2.4.4 で特定された脆弱性に対するセキュリティバグ修正を提供します。
 
@@ -28,7 +42,7 @@ Adobe Commerce 2.4.4-p9 セキュリティリリースは、以前のリリー�
 
 * **MariaDB 10.5 のサポート**。 このパッチリリースでは、MariaDB バージョン 10.5 との互換性が導入されています。Adobe Commerceは MariaDB バージョン 10.4 と引き続き互換性がありますが、MariaDB 10.4 のメンテナンスは 2024 年 6 月 18 日（PT）に終了するため、Adobeでは、Adobe Commerce 2.4.4-p9 および今後のすべての 2.4.4 のセキュリティ専用パッチリリースは MariaDB バージョン 10.5 でのみ使用することをお勧めします。<!--AC-11530-->
 
-### その他のセキュリティ機能強化
+### ハイライト
 
 {{$include /help/_includes/release-notes/2-4-7-security.md}}
 
@@ -44,7 +58,7 @@ Adobe Commerce 2.4.4-p7 セキュリティリリースは、以前のリリー�
 
 セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html) を参照してください。
 
-### セキュリティのハイライト
+### ハイライト
 
 このリリースでは、次の 2 つの重要なセキュリティ機能強化が導入されています。
 
@@ -63,7 +77,7 @@ Adobe Commerce 2.4.4-p6 セキュリティリリースは、以前のリリー�
 
 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
-### セキュリティ ハイライト
+### ハイライト
 
 このリリースでは、`{BASE-URL}/page_cache/block/esi HTTP` エンドポイントに伴うリスクを軽減するのに役立つ、新しいフルページキャッシュ設定が導入されています。 このエンドポイントは、Commerceのレイアウトハンドルおよびブロック構造から無制限で動的に読み込まれるコンテンツフラグメントをサポートしています。 新しい **[!UICONTROL Handles Param]** 設定では、このエンドポイントの `handles` パラメーターの値を設定します。このパラメーターによって、API あたりの最大ハンドル数が決定されます。 このプロパティのデフォルト値は 100 です。 マーチャントは、管理者（**[!UICONTROL Stores]**/**[!UICONTROL Settings: Configuration]**/**[!UICONTROL System]**/**[!UICONTROL Full Page Cache]**/**[!UICONTROL Handles Param]**）からこの値を変更できます。<!-- AC-9113 -->
 
@@ -84,7 +98,7 @@ Adobe Commerce 2.4.4-p5 セキュリティリリースは、以前のリリー�
 
 セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html) を参照してください。
 
-### jQuery-UI ライブラリのセキュリティ脆弱性 CVE-2022-31160 を解決するためのパッチを適用する
+### CVE-2022-31160 のホットフィックスを適用する
 
 `jQuery-UI` library バージョン 1.13.1 には、複数のバージョンのAdobe CommerceおよびMagento Open Sourceに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceとMagento Open Source 2.4.4、2.4.5、2.4.6 の依存関係です。影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事の 2.4.4、2.4.5、2.4.6 リリースの [jQuery UI のセキュリティ脆弱性 CVE-2022-31160 の修正で指定されたパッチを適用する必要 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) あります。
 
@@ -94,11 +108,11 @@ Adobe Commerce 2.4.4-p4 セキュリティリリースは、以前のリリー�
 
 セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html) を参照してください。
 
-### jQuery-UI ライブラリのセキュリティ脆弱性 CVE-2022-31160 を解決するためのパッチを適用する
+### CVE-2022-31160 のホットフィックスを適用する
 
 `jQuery-UI` library バージョン 1.13.1 には、複数のバージョンのAdobe CommerceおよびMagento Open Sourceに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceとMagento Open Source 2.4.4、2.4.5、2.4.6 の依存関係です。影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事の 2.4.4、2.4.5、2.4.6 リリースの [jQuery UI のセキュリティ脆弱性 CVE-2022-31160 の修正で指定されたパッチを適用する必要 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) あります。
 
-### セキュリティ ハイライト
+### ハイライト
 
 [`isEmailAvailable`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/is-email-available/) GraphQL クエリと（[`V1/customers/isEmailAvailable`](https://adobe-commerce.redoc.ly/2.4.6-admin/tag/customersisEmailAvailable/#operation/PostV1CustomersIsEmailAvailable)） REST エンドポイントのデフォルトの動作が変更されました。 デフォルトでは、API は常に `true` を返すようになりました。 マーチャントは、元の動作を有効にすることができます。これは、メールがデータベースに存在しない場合は `true` を返し、存在する場合は `false` を返します。<!-- AC-6695 -->
 
@@ -138,7 +152,7 @@ Adobe Commerce 2.4.4-p1 セキュリティリリースは、以前のリリー�
 
 DHL ではスキーマバージョン 6.2 を導入しており、近い将来、スキーマバージョン 6.0 を廃止する予定です。 DHL 統合をサポートするAdobe Commerce 2.4.4 以前のバージョンは、バージョン 6.0 のみをサポートしています。これらのリリースをデプロイするマーチャントは、DHL を配送業者として引き続き提供するために、できるだけ早い時期に `AC-3022.patch` を適用する必要があります。 パッチのダウンロードとインストールについては、ナレッジベースの記事 [DHL を引き続き配送業者として提供するためのパッチを適用する ](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) を参照してください。
 
-### セキュリティのハイライト
+### ハイライト
 
 このリリースのセキュリティの強化により、次のような最新のセキュリティのベストプラクティスへのコンプライアンスが向上しています。
 

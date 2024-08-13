@@ -2,9 +2,9 @@
 title: リリースポリシー
 description: マイナー、パッチ、セキュリティパッチ、機能、ホットフィックス、個別パッチ、カスタムパッチなど、様々なタイプのAdobe Commerce リリースについて説明します。
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: b5d120893668f4315e289a204649270db4f7a6bc
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -54,9 +54,9 @@ Adobe Commerce機能の一般提供より前のリリースは、すべてのAdo
 
 Beta リリースには不具合が含まれる場合があり、いかなる保証もなく「現状のまま」提供されます。 Adobeは、（Adobeサポートサービスまたはその他の方法を通じて）Beta リリースを保守、修正、更新、変更、変更、その他の方法でサポートする義務を負いません。 お客様は、Beta リリース、およびそれに付随するドキュメントや資料の正しい機能やパフォーマンスに対して、注意を払い、いかなる形でも依存しないことをお勧めします。 したがって、Beta リリースの使用は、すべて顧客自身の責任で行うものとします。
 
-## 拡張機能、インフラストラクチャ、サービスのリリース
+## 機能、クラウドインフラストラクチャおよび拡張リリース
 
-パッチリリースとは別に、独立したサービスとして提供される新機能や機能アップデートが含まれている機能リリース。 例えば、API メッシュやイベントなどの拡張技術、Product Recommendationsや Live Search などの SaaS 製品、B2B やPWA Studioなどの独立したモジュール、クラウドホスティングサービスやインフラストラクチャのアップデートなどがあります。
+クラウドインフラストラクチャと機能リリースには、パッチリリースとは別に、独立したサービスとして提供される新機能と機能アップデートが含まれています。 例えば、クラウドホスティングサービスとインフラストラクチャ、B2B、SaaS 製品（カタログサービス、データ接続、製品Recommendations、ライブ検索）、拡張機能テクノロジー（API メッシュ、Integration Starter Kit、イベント）の更新などがあります。
 
 ## ホットフィックス
 
@@ -74,12 +74,10 @@ Beta リリースには不具合が含まれる場合があり、いかなる保
 >
 >個々のパッチには、後方互換性のない変更は含まれません。
 
+## 分離パッチ
+
+最新のセキュリティ専用パッチまたは今後リリースされるセキュリティ専用パッチに含まれるスタンドアロン修正が含まれています。このパッチは迅速な実装のために個別にリリースされます。
+
 ## カスタムパッチ
 
 Adobe以外の担当者が、様々な理由で問題を修正したり、Adobe Commerce コードを変更したりするために作成します。 カスタムパッチは、[Quality Patches Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) を通じて提供されます。
-
-## 関連トピック
-
-- [ バージョン管理 ](https://developer.adobe.com/commerce/php/development/versioning/)
-- [今後のリリース](schedule.md)
-- [ ソフトウェアライフサイクルポリシー ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
