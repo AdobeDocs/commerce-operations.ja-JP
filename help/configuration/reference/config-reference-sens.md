@@ -3,9 +3,9 @@ title: 機密パスとシステム固有のパス
 description: システム固有の設定値や機密性の高い設定値のリストを参照してください。
 feature: Configuration, System
 exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
-source-git-commit: 5a8e52d8eee1619697db40accb9775b92b4e8a9d
+source-git-commit: e5a1c5634124831c8d5a95df6818ec30c372e8dd
 workflow-type: tm+mt
-source-wordcount: '3696'
+source-wordcount: '3676'
 ht-degree: 0%
 
 ---
@@ -150,16 +150,16 @@ ht-degree: 0%
 | Elasticsearch HTTP ユーザー名 | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch HTTP パスワード | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
 | Elasticsearchサーバーのタイムアウト | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
-| Elasticsearch HTTP ユーザー名 | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  （`{{ site.baseurl }}`/common/images/cloud_env.png） |
-| Elasticsearch HTTP パスワード | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  （`{{ site.baseurl }}`/common/images/cloud_env.png） |
-| Elasticsearchサーバーのタイムアウト | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  （`{{ site.baseurl }}`/common/images/cloud_env.png） |
-| OpenSearch Server Hostname | `catalog/search/opensearch_server_hostname` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  （`{{ site.baseurl }}`/common/images/cloud_env.png） | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
-| OpenSearch サーバーポート | `catalog/search/opensearch_server_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  （`{{ site.baseurl }}`/common/images/cloud_env.png） | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
-| OpenSearch インデックス プレフィックス | `catalog/search/opensearch_index_prefix` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  （`{{ site.baseurl }}`/common/images/cloud_env.png） | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
-| OpenSearch HTTP 認証を有効にする | `catalog/search/opensearch_enable_auth` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  （`{{ site.baseurl }}`/common/images/cloud_env.png） |
-| OpenSearch HTTP ユーザー名 | `catalog/search/opensearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  （`{{ site.baseurl }}`/common/images/cloud_env.png） |
-| OpenSearch HTTP パスワード | `catalog/search/opensearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  （`{{ site.baseurl }}`/common/images/cloud_env.png） |
-| OpenSearch Server タイムアウト | `catalog/search/opensearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |  （`{{ site.baseurl }}`/common/images/cloud_env.png） |
+| Elasticsearch HTTP ユーザー名 | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
+| Elasticsearch HTTP パスワード | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
+| Elasticsearchサーバーのタイムアウト | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
+| OpenSearch Server Hostname | `catalog/search/opensearch_server_hostname` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
+| OpenSearch サーバーポート | `catalog/search/opensearch_server_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
+| OpenSearch インデックス プレフィックス | `catalog/search/opensearch_index_prefix` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
+| OpenSearch HTTP 認証を有効にする | `catalog/search/opensearch_enable_auth` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
+| OpenSearch HTTP ユーザー名 | `catalog/search/opensearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
+| OpenSearch HTTP パスワード | `catalog/search/opensearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
+| OpenSearch Server タイムアウト | `catalog/search/opensearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
 
 {style="table-layout:auto"}
 
