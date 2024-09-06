@@ -2,9 +2,9 @@
 title: 共有責任セキュリティと運用モデル
 description: Adobe Commerce on cloud infrastructure プロジェクトに関与する各パーティのセキュリティ上の責任について説明します。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 76aafb88855f7f41db8e57b06cf0e82370b57302
+source-git-commit: 9d0ab29be70c5638296694f90755fedac41b6a77
 workflow-type: tm+mt
-source-wordcount: '2802'
+source-wordcount: '2791'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Adobeは、クラウドインフラストラクチャ環境におけるAdobe Com
 - サーバーおよび境界ファイアウォールの構成
 - クラウドインフラストラクチャリポジトリ上のAdobe Commerceの接続と設定
 - Adobeの担当範囲内の領域に関する災害復旧（DR）計画の定義、テスト、導入、文書化
-- グローバルプラットフォーム Web アプリケーションファイアウォール（WAF）ルールの定義
+- グローバルプラットフォーム web アプリケーションファイアウォール（WAF）ルールの定義
 - オペレーティングシステム（OS）の堅牢化
 - クラウドインフラストラクチャー上のAdobe Commerceを使用した、コンテンツ配信ネットワーク（CDN）およびアプリケーションパフォーマンス管理（APM）ソリューションの統合の実装と管理
 - Cloud Infrastructure コード上のコア Adobe Commerceに対して、定期的なセキュリティ更新およびその他の更新を行います（パッチの適用はマーチャントの責任です）。
@@ -57,7 +57,7 @@ Adobeは、クラウドインフラストラクチャ環境におけるAdobe Com
 
 Adobeは、Adobe Commerce ソリューションに使用されるインフラストラクチャとサービスの PCI 認定を維持しています。  マーチャントは、カスタムコード、システムおよびネットワークプロセス、組織のコンプライアンスに責任を負います。
 
-また、Adobeは、該当する SLA で合意された通りにマーチャントのインフラストラクチャの可用性を確保します。
+また、Adobeは、該当するSLAで合意された販売員のインフラストラクチャの可用性を確保します。
 
 ## 販売者の責任
 
@@ -98,7 +98,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 
 ## CDN プロバイダーの責任
 
-クラウドインフラストラクチャー上のAdobe Commerce ソリューションでは、CDN プロバイダーを使用して、ページ読み込み時間の短縮、コンテンツのキャッシュ、古いコンテンツの即時パージを行います。 また、これらのプロバイダーは、CDN に直接関連する、または CDN に影響を与えるセキュリティの問題や、CDN WAF ルールの定義と維持にも責任を負います。
+クラウドインフラストラクチャー上のAdobe Commerce ソリューションでは、CDN プロバイダーを使用して、ページ読み込み時間の短縮、コンテンツのキャッシュ、古いコンテンツの即時パージを行います。 また、これらのプロバイダーは、CDN に直接関連する、または CDN に影響を与えるセキュリティの問題や、CDN WAFのルールを定義および管理する責任も負います。
 
 ## セキュリティ責任の概要
 
@@ -139,7 +139,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
     <td></td>
   </tr>
   <tr>
-    <td>起源 WAF ルールの定義</td>
+    <td>接触チャネルWAFルールの定義</td>
     <td>R</td>
     <td></td>
     <td></td>
@@ -641,7 +641,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 | カスタム Adobe Commerce アプリケーション | | R |
 | New Relic サービスの可用性：<br>APM アプリケーションとエージェントの統合、インフラストラクチャアプリケーション、<br> ログと統合 | R |   |
 | New Relic アラートの設定 |     | R |
-| PaaS サーバーへのNew Relic エージェントのデプロイ |     | R |
+| PaaS サーバーへのNew Relic エージェントのデプロイ | R |  |
 
 {style="table-layout:auto"}
 
@@ -724,7 +724,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 | ページキャッシュの最適化 |     | R |
 | サービス、CDN およびインフラストラクチャへのドメインの追加 | R |   |
 | カスタム VCL スニペット |     | R |
-| WAF および WAF ルール | R |   |
+| WAFとWAFのルール | R |   |
 
 {style="table-layout:auto"}
 
@@ -824,10 +824,10 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 
 |     | Adobe | 商人 |
 | --- | --- | --- |
-| WAF の可用性と設定 | R |  |
+| WAFの提供と設定 | R |  |
 | WAF ルールの誤検出への対処 | R | |
 | WAF ルールの偽陽性のレポート |     | R |
-| WAF ルールのチューニング （サポート対象外） |     |     |
+| WAFのルールチューニング （サポート対象外） |     |     |
 | WAF/CDN ログ |     | R |
 
 {style="table-layout:auto"}
@@ -841,7 +841,6 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 | DDOS 検出 – レイヤ 3-4 | R |   |
 | DDOS 検出 – レイヤ 7 |     | R |
 | DDOS 応答 | R |   |
-| Fastly 拡張レート制限およびボット保護の設定（制限付き） |     | R |
 
 {style="table-layout:auto"}
 
@@ -849,15 +848,15 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 
 |     | Adobe | 商人 |
 | --- | --- | --- |
-| Adobeが所有する VPC を使用した PrivateLink 接続の設定と管理（使用する場合） | R |   |
-| マーチャント所有 VPC での PrivateLink 接続の設定と維持（使用する場合） |     | R |
+| Adobeが所有するVPCを使用した PrivateLink 接続の設定と管理（使用する場合） | R |   |
+| マーチャントが所有するVPCでの PrivateLink 接続の設定と管理（使用する場合） |     | R |
 | SSH （非プライベートリンク）の可用性 | R |   |
 | Adobe Commerce Cloud サービスエンドポイントに対する PrivateLink インバウンドの設定 | R |   |
 | Adobe Commerce Cloud サービスエンドポイントに対する PrivateLink インバウンドの受け入れ |     | R |
-| マーチャントの VPC サービスエンドポイントへの PrivateLink インバウンドの設定 |     | R |
-| マーチャントの VPC サービス エンドポイントへの PrivateLink インバウンドの受け入れ | R |   |
+| マーチャントのVPC サービスエンドポイントに対する PrivateLink インバウンドの設定 |     | R |
+| マーチャントのVPC サービスエンドポイントに対する PrivateLink インバウンドの受け入れ | R |   |
 | PrivateLink 統合の設定（アカウントへのエンドポイント） |     | R |
-| PrivateLink エンドポイント <br><br> （任意の VPN 接続を含む）用のマーチャント所有 VPC の設定 |     | R |
+| PrivateLink エンドポイント <br><br> （すべての VPN 接続を含む）用のマーチャント所有VPCの設定 |     | R |
 
 {style="table-layout:auto"}
 
