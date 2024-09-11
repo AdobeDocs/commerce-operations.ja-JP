@@ -2,9 +2,9 @@
 title: Beta リリース
 description: Adobe Commerce ベータ版リリースとリリースへの参加方法について説明します。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 0e2dfc376a049a47348a7a913bd5181436227cc2
+source-git-commit: 050d5877fae4cb9caaee06598f4429ea8857b1d2
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '803'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,7 @@ Experience Manager AssetsとCommerceの統合により、運用の手間をか�
 ### IBM Sterling Order Management System Integration （Private Beta）
 
 IBMスターリングOrder Management向けのこの統合アクセラレータにより、Adobe Commerceのお客様は、IBMスターリング OMS を活用した高度な注文管理機能を開始できます。 この統合により、マーチャントは次を獲得できます。
+
 - 顧客の在庫レベルと正確な配送日をリアルタイムで可視化します。
 - 構成可能なルールに基づいてオーダーの自動ソーシングを実行することで、フルフィルメント・ネットワークと在庫を最適化できます。
 - 単一のダッシュボードからチャネル間の注文を一元的に確認できるため、サポートチームは優れたサービスを提供し、例外をすばやく特定して処理できます。
@@ -57,10 +58,9 @@ IBMスターリングOrder Management向けのこの統合アクセラレータ�
 ### データ接続およびAudience Activation（パブリック Beta）
 
 Adobe CommerceとAdobe Experience Platform間のデータ共有を拡張し、より強力でパーソナライズされたエクスペリエンスを促進しました。 この機能により、マーチャントは次のことが可能になります。
+
 - Commerce顧客プロファイルの共有
 - カスタム属性の作成
-- Real-Time CDPとAdobe Journey OptimizerでCommerceのインサイトを取得
-- 複数のデータセットとデータストリームのサポート
 
 このベータ版に参加するには、[DataConnection@adobe.com](mailto:DataConnection@adobe.com) にメールでリクエストを送信します。
 
