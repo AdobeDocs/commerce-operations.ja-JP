@@ -1,7 +1,7 @@
 ---
-source-git-commit: aedbb5c550a088b67328891fbb788458d14f31a8
+source-git-commit: cd4655cf45df5293ef82a9fa2f411e8630524603
 workflow-type: tm+mt
-source-wordcount: '12351'
+source-wordcount: '13175'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 修正された問題
 
-Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しました。 このリリースで修正された問題の一部を以下に示します。
+Magento Open Source 2.4.8 コアコードの 253 の問題を修正しました。 このリリースで修正された問題の一部を以下に示します。
 
 ### API
 
@@ -48,8 +48,9 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/38406>
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38407>
 * _AC-11919_：管理者：ページアクションのボタンが右ではなく左にフローティングされる
+   * _メモの修正_：システムでは、管理パネルのスティッキーヘッダーの右側にページアクションボタンが正しく配置され、プロフェッショナルなルックアンドフィールが強化されました。 以前は、これらのボタンは、スティッキーヘッダーの左側に誤ってフローティングされていました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/38701>
-   * _GitHub コードの投稿_:&lt;https://github.com/magento/magento2/ （内部、結合前） >
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/44cef3a9>
 * _AC-11999_:magento 2.4:di:7 の dev-info エラー
    * _メモの修正_:dev:di:info コマンドの実行時にコンストラクターパラメーターが正しく表示され、エラーが発生しなくなりました。 以前は、このコマンドを実行すると、引数のタイプの不一致が原因でエラーが発生していました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/38740>
@@ -100,9 +101,17 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
 * _ACP2E-3125_：管理者ユーザーのパスワードリセットテンプレートの問題
    * _メモの修正_：問題は、正しいキーを使用して解決されました。このキーには、メールテンプレートの管理者ユーザー名が含まれ、件名が正しく完了しています。 以前は、この問題は、使用されていた古いキーに起因していました。
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/93d50f8d>
+* _ACP2E-3149_：顧客セグメント URL での二重スラッシュ
+   * _メモの修正_：グリッドで「フィルターをリセット」をクリックした場合、URL に二重スラッシュが表示されません。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/8459b17d>
 * _ACP2E-3171_：許可されている特定の国では COD を使用できません
    * _修正メモ_：現金払い注文は、必要に応じて、許可されている特定の国で利用できるようになりました。   AC-3216 は正常に動作しています。
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/6f4805f8>
+* _ACP2E-3178_: カスタムで作成された注文のステータスを更新できない
+   * _修正メモ_ : 「
+カスタムで作成した注文ステータスを更新できるようになりました。一方、以前は、現在のステータスが「処理中」または「不正」の場合にのみ、ステータスを変更できました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38659>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/8459b17d>
 
 ### 管理 UI、パフォーマンス
 
@@ -150,7 +159,25 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
 ### B2B, フレームワーク
 
 * _AC-9607_：会社のグリッドをフィルタリングしてから、グリッド CSV の書き出しを試みると、失敗して例外がスローされる
-   * _GitHub コードの投稿_:&lt;https://github.com/magento/magento2/ （内部、結合前） >
+   * _メモの修正_：このシステムでは、「未払い残高」や「会社タイプ」などのフィルターが適用されている場合でも、管理パネルで会社グリッドデータを正常に CSV 書き出すことができるようになりました。 以前は、特定のフィルターを適用してグリッドデータを書き出そうとすると、失敗し、例外がスローされていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/44cef3a9>
+
+### Braintree
+
+* _BUNDLE-3367_:LPM 経由での支払い
+   * _GitHub コードの投稿_:<https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3368_：仮想を子製品として設定可能
+   * _GitHub コードの投稿_:<https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3369_: CVV Verification failed エラー
+   * _GitHub コードの投稿_:<https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3370_：アカウント領域を介したヴォールティングの問題 247
+   * _GitHub コードの投稿_:<https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3371_：別の国の住所に発送します
+   * _GitHub コードの投稿_:<https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3372_：クレジットカード – ティアダウン機能
+   * _GitHub コードの投稿_:<https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3373_:PayPal Express の配送用コールバック
+   * _GitHub コードの投稿_:<https://github.com/magento/ext-braintree/pull/204>
 
 ### 買い物かごとチェックアウト
 
@@ -378,6 +405,9 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
 * _ACP2E-3090_:GraphQLでのカテゴリフィルターの処理：includeDirectChildrenOnly および category_uid
    * _メモを修正_:category_uid でフィルタリングしている場合、直接の子カテゴリのみが取得されます。
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/93d50f8d>
+* _ACP2E-3166_: [Cloud] Graphql 製品の並べ替えが機能しない
+   * _修正メモ_：変数にフィールドが渡された場合に、複数のフィールドで並べ替えられる GraphQl 製品が期待どおりに動作するようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/8459b17d>
 
 ### カタログ、価格、ステージング、プレビュー
 
@@ -471,6 +501,10 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
    * _修正点_：システムは、API を介してパスワード変更要求を処理する際に、管理 GUI 内で設定された制約に従うようになり、パスワードリセット機能が悪用される可能性を防ぎます。 以前は、API は、管理 GUI で定義されたルールの外でパスワード変更リクエストを処理することができました。これにより、有効なメールがわかっている場合は、常にリセットメールのストリームが可能になる可能性がありました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/38238>
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0c53bbf7>
+* _AC-10721_:
+   * _メモの修正_:league/flysystem Composer の依存関係を最新バージョンにアップグレードします
+   * _GitHub の問題_:&lt;<https://github.com/magento/magento2/commit/91cb4d46>>
+   * _GitHub コードの投稿_:2.x league/flysystem Composer の依存関係を最新バージョン 3.x にアップグレードします
 * _AC-10838_：カタログ検索インデックスプロセスのエラーインデックスプロセス
    * _修正点_: システムは、PHP でコンパイルされた libxml のバージョンに関係なく、エラーが発生することなく再インデックスコマンドを正常に完了するようになりました。 以前は、PHP が特定のバージョンの libxml を使用してコンパイルされた場合、re-index コマンドを実行すると、「Catalog Search index process error during indexation process」エラーが発生していました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/38254>
@@ -506,7 +540,11 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
 * _AC-11673_:
    * _修正点_: php-amqplib/php-amqplib の最新バージョンを調べてください。
    * _GitHub の問題_:&lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _GitHub コードの投稿_：最新バージョンの php-amqplib/php-amqplib の最新バージョンに互換性があることを確認してください
+   * _GitHub コードの投稿_：最新バージョンの php-amqplib/php-amqplib を更新しました：^3.x
+* _AC-11681_:[ 問題 ] AC-2039 AC-1667 アップグレード TinyMCE リファレンス
+   * _修正メモ_:composer.json の tinymce 最新バージョンを更新しました
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38533>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/36543>、<https://github.com/magento/magento2/commit/b34c0a75>
 * _AC-11696_:ChangelogBatchWalker が複数のスレッドで動作しない
    * _メモの修正_：システムは、MView インデックス化のプロセスフォークをサポートするようになり、複数のスレッドで動作する場合にインデクサーの実行中にエラーが発生するのを防ぎます。 以前は、複数のスレッドで ChangelogBatchWalker を実行すると、他のスレッドが使用しているテーブルが削除され、インデクサーの実行中にエラーが発生していました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/38246>
@@ -534,14 +572,22 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
    * _修正点_：静的コンテンツのデプロイメント中に空の LESS ファイルをシステムが正しく処理し、「LESS ファイルが空です」というエラーメッセージが表示されるようになりました。 以前は、デプロイメント中に空の LESS ファイルが見つかった場合、誤ったタイプエラーがスローされていました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/38682>
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38683>
+* _AC-11911_:
+   * _修正点_：ライブラリをアップロードするための移行後の jQuery/fileuploader の CSS のクリーンアップ
+   * _GitHub の問題_:&lt;<https://github.com/magento/magento2/commit/7cabfb46>>
+   * _GitHub コードの投稿_:jQuery/fileUploader ライブラリは Uppy ライブラリに移行されたので、このライブラリを削除しました
 * _AC-12002_:[ 問題 ] [ 表示 ] リンクとスクリプトタグの余分なスペースを削除
    * _メモの修正_：システムのリンクタグとスクリプトタグに余分なスペースがなくなり、よりクリーンで効率的なコードが提供されるようになりました。 以前は、link タグと script タグの属性の間に二重のスペースが見つかっていました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/32920>
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/32919>
+* _AC-12015_:
+   * _修正点_:jsTree ライブラリへの移行後の ExtJs フォルダーのクリーンアップ
+   * _GitHub の問題_:&lt;<https://github.com/magento/magento2/commit/7cabfb46>>
+   * _GitHub コードの投稿_：関連機能が jsTree に移行されたので、extJs フォルダーを削除しました
 * _AC-12022_:
    * _修正点_:monolog/monolog システムの依存関係を最新のメジャーバージョンにアップグレードします
    * _GitHub の問題_:&lt;<https://github.com/magento/magento2/commit/edcd0dcc>>
-   * _GitHub コードの投稿_：システムを更新して、最新のメジャーバージョンの「monolog/monolog」ライブラリを使用するようにし、互換性とパフォーマンスの向上を確保しました。 以前は、システムは「monolog/monolog」ライブラリの古いバージョンを使用していましたが、潜在的な問題や制限につながる可能性がありました。
+   * _GitHub コードの投稿_：システムを更新して、「monolog/monolog:^3.x」ライブラリの最新のメジャーバージョンを使用するようにし、互換性とパフォーマンスの向上を図りました。 以前は、システムは「monolog/monolog」ライブラリの古いバージョンを使用していましたが、潜在的な問題や制限につながる可能性がありました。
 * _AC-12023_:
    * _修正点_:wikimedia/less.phpの依存関係を最新のメジャーバージョンにアップグレードします
    * _GitHub の問題_:&lt;<https://github.com/magento/magento2/commit/edcd0dcc>>
@@ -549,15 +595,18 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
 * _AC-12024_:
    * _修正点_:jquery/validate ライブラリの依存関係を最新のマイナーバージョンにアップグレードします
    * _GitHub の問題_:&lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _GitHub コードの投稿_:jquery/validate ライブラリの依存関係を最新のマイナーバージョンにアップグレードします
+   * _GitHub コードの投稿_:jquery/validate ライブラリの依存関係を最新のマイナーバージョン 1.20.0 にアップグレードします
 * _AC-12025_:
    * _修正点_:moment.js システムの依存関係を最新のマイナーバージョンにアップグレードします
    * _GitHub の問題_:&lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _GitHub コードの投稿_:moment.js システムの依存関係を最新のマイナーバージョンにアップグレードします
+   * _GitHub コードの投稿_:moment.js システムの依存関係を最新のマイナーバージョン 2.30.1 にアップグレードしました
 * _AC-12267_:
    * _修正点_:Redis セッションの接続再試行をサポートし、colinmollenhour/php-redis-session-abstract v2.0.0 と互換性があります
    * _GitHub の問題_:&lt;<https://github.com/magento/magento2/commit/672a2e61>>
-   * _GitHub コードの投稿_：最新バージョンの colinmollenhour/php-redis-session-abstract v2.0.0 と Adobe Commerce に互換性があることを確認します
+   * _GitHub コードの投稿_:adobe commerce と互換性のある colinmollenhour/php-redis-session-abstract v2.0.0 の最新バージョンを更新しました
+* _AC-12268_:
+   * _修正メモ_:League/flysystem Composer の依存関係を最新バージョンにアップグレードします
+   * _GitHub コードの投稿_:2.x league/flysystem Composer の依存関係を最新バージョン 3.x にアップグレードします
 * _AC-12594_:[ 問題 ] 生成されたデータに対して、一般設定ではなくコンパイル済み設定を使用してください
    * _修正メモ_：システムでは、生成されたデータに対して、一般的な設定の代わりにコンパイル済みの設定を使用するようになりました。これにより、ネットワーク転送が削減され、特定のバージョンのコードに依存するデータのオーバーヘッドが軽減されます。 この変更により、コンテナの入れ替え中に共有インスタンスでキャッシュが上書きされることがなくなり、安定性が向上し、ダウンタイムが短縮されます。 以前は、特定のコアクラスで共有設定タイプが使用されていました。これにより、複数のサーバー間でコードバージョンの違いが原因で、キャッシュの上書きやアプリケーションのダウンタイムが発生する可能性がありました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/38785>
@@ -566,6 +615,15 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
    * _メモの修正_：システムは、以前に削除された extjs からファイルへの参照を削除するようになり、ブラウザーのコンソールとシステムログファイルのエラーを排除します。 以前は、これらの参照が原因で、参照ファイルが存在しないためにエラーが発生していました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/38960>
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38951>
+* _AC-12715_:
+   * _修正メモ_：最新バージョンへのアップグレード中の laminas composer の依存関係を更新します
+   * _GitHub の問題_:&lt;<https://github.com/magento/magento2/commit/b34c0a75>>
+   * _GitHub コードの投稿_：システムは、laminas composer の最新バージョンの依存関係をサポートするようになりました。
+ラミナス/ラミナス – サービスマネガー
+ラミナス/ラミナス サーバ
+laminas/laminas-stdlib
+ラミナス/ラミナスバリデーター
+互換性と最新機能の確保。 以前は、これらの依存関係を最新バージョンに更新すると、後方互換性の問題が発生し、テストが失敗する可能性がありました。
 * _AC-12778_: [ 問題 ] マイナークリーンアップ：sprintf の誤った使用を修正しました。ここでは 2 つのプレースホルダーしか使用せず、w...
    * _メモの修正_：適切な数のプレースホルダーを持つ sprintf 関数がシステムで正しく使用され、コードのクリーン性と一貫性が向上しました。 以前は、sprintf 関数が余分な引数と共に誤って使用されていました。これにより重大な問題は発生しませんが、正しい使用方法ではありませんでした。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/39062>
@@ -598,13 +656,6 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
    * _修正メモ_:editorconfig の構文エラーを修正した後、システムで 4 空白のインデントが composer ファイルと auth.json ファイルに正しく適用されるようになりました。 以前は、editorconfig 構文にスペースがあったため、これらのファイルが誤って 2 スペースのインデントでフォーマットされていました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/37394>
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37395>
-* _AC-8714_:
-   * _修正注意_:Varnish 7.3 - Sub Categories のリンク/デフォルトカテゴリのオプションがストアフロントのホームページに表示されません
-   * _GitHub の問題_:&lt;<https://github.com/magento/magento2/commit/d1c335aa>、&lt;https://github.com/magento/magento2/ （内部、未結合） >>
-   * _GitHub コードの投稿_：ストアフロントのホームページに、デフォルトのカテゴリサブカテゴリが期待どおりに表示されるようになりました。 以前は、買い物客は URL によってのみサブカテゴリにアクセスできました。
-* _AC-8714_:Varnish 7.3 - Sub Categories のリンク/デフォルトのカテゴリのオプションがストア フロント ホーム ページに表示されません
-   * _メモの修正_：ストアフロントのホームページに、デフォルトのカテゴリサブカテゴリが期待どおりに表示されるようになりました。 以前は、買い物客は URL によってのみサブカテゴリにアクセスできました。
-   * _GitHub コードのコントリビューション_:<https://github.com/magento/magento2/commit/d1c335aa>、&lt;https://github.com/magento/magento2/ （内部、マージされていない） >
 * _AC-8984_: [ 問題 ] 特定の setup cli コマンドの出力に、さらに色を追加します
    * _修正点_：特定の設定コマンドラインインターフェイス（CLI）コマンドの出力に色が追加され、読みやすさとユーザーエクスペリエンスが向上しました。 以前は、これらのコマンドの出力は、色の区別がないため読みにくくなっていました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/29335>
@@ -615,8 +666,8 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38076>
 * _AC-9712_: https://github.com/magento/magento2/issues/37841
    * _注意を修正_：複雑な `calc` 式を持つ php と nodejs ライブラリ （grunt）の間の less コンパイルの違い
-   * _GitHub の問題_:&lt;&lt;https://github.com/magento/magento2/ （内部、未結合） >>
-   * _GitHub コードの投稿_:php と nodejs ライブラリ（grunt）の less コンパイルの違いを修正しました
+   * _GitHub の問題_:&lt;<https://github.com/magento/magento2/commit/b34c0a75>>
+   * _GitHub コードの投稿_：更新後の php と nodejs ライブラリ（grunt）の less コンパイルの違いを修正しましたwikimedia/less.php:^5.x
 * _ACP2E-2692_：部分インデックス作成の実行時に「Base table or view not found」エラーが発生する
    * _修正点_：セカンダリ db 接続の場合、部分再インデックスが大きな変更ログで正しく機能するようになりました
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ba25af8a>
@@ -670,6 +721,9 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
 * _ACP2E-3190_:[Cloud] 製品の graphql で、同じ単純な製品が複数の設定可能な製品に割り当てられている場合にエラーが発生する
    * _メモを修正_：以前は、同じシンプルな製品を持つ個別の設定可能な製品では、grapQL がエラーを返していました。 この修正が適用された後、同じ単純な製品を持つ様々な設定可能な製品が適用されると、grapQL はエラーなく結果を返します。
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/148c3ead>
+* _ACP2E-3253_:GraphQLの買い物かご項目 V2 のページネーションが正しく機能しない
+   * _修正点_：この問題は、コレクションクエリの現在のページ引数に正しい値を渡すことで修正されました。 以前は、現在のページを設定するために間違った値が渡され、問題が発生していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/8459b17d>
 
 ### GraphQL、インベントリ/MSI
 
@@ -715,6 +769,9 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
 * _ACP2E-2990_：顧客の「created_at」日付が、エクスポート時にストアタイムゾーンに変換されない
    * _メモの修正_：列「created_at」の日付値は、顧客の書き出し CSV セクションのストアタイムゾーンに基づいて適切な日付形式に変換されます。
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/3056e9cb>
+* _ACP2E-3165_: [Cloud] CSV を使用したデータの読み込みで、データのチェック中にエラーが発生します
+   * _修正点_:CSV の読み込み中にデータを確認する際にエラーが発生することはありません。 以前は、管理者から CSV を使用して読み込みセクションのデータを確認すると、「このメールと web サイトコードを行が 1 に一致する顧客が見つかりません」というエラーメッセージが表示されていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/8459b17d>
 
 ### インストールと管理
 
@@ -786,7 +843,7 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38410>
 * _AC-12571_：カテゴリツリー内を移動すると、Redis で「Redis セッションが同時接続を超えました」というエラーが発生する
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/38851>
-   * _GitHub コードの投稿_:&lt;https://github.com/magento/magento2/ （内部、結合前） >
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0611e750>
 
 ### 支払額
 
@@ -858,8 +915,9 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
 ### SEO
 
 * _AC-11907_：アクセントを使用して URL の書き換えを追加すると、読み込みが無限になる
+   * _メモの修正_：システムは、URL の書き換えをアクセントで正常に作成および機能するようになり、保存プロセス中に無限の読み込みを防ぎます。 以前は、アクセントを使用して URL の書き換えを追加すると、読み込み制限の問題が発生していました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/38692>
-   * _GitHub コードの投稿_:&lt;https://github.com/magento/magento2/ （内部、結合前） >
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/44cef3a9>
 * _ACP2E-2641_：マルチストアで、第 3 レベルのカテゴリのカテゴリ URL の書き換えが間違っています
    * _メモの修正_：カスタムスコープの URL キーを持つ親を持つ子に対して、正しい URL の書き換えを生成します
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ea79f7dd>
@@ -869,10 +927,21 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
 
 ### セキュリティ
 
+* _AC-11762_:
+   * _修正注意_:BiC の変更後に、正しい説明とデフォルト値を使用して 2FA OTP ウィンドウフィールドを更新します
+   * _GitHub コードの投稿_：今から otp_window 期間の入力方法を設定するために更新されたコマンド bin/magento config:set twofactorauth/google/otp_window VALUE
+bin/magento config:set twofactorauth/google/leeway VALUE へ
 * _AC-11855_:[ 問題 ] フォント CSP ペイロードのポップアップがない
    * _修正メモ_：システムは、コンテンツセキュリティポリシーディレクティブに違反せずにフォント「https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.woff&#39;」を読み込むことができるようになり、Paylater ポップアップが正しく表示されるようになりました。 以前は、コンテンツセキュリティポリシーディレクティブの違反が原因でフォントの読み込みが拒否され、Paylater ポップアップの表示に問題が発生していました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/38624>
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37401>
+* _AC-11937_:
+   * _修正注意_:BiC の変更後に、正しい説明とデフォルト値を使用して 2FA OTP ウィンドウフィールドを更新します
+   * _GitHub コードの投稿_：今から otp_window 期間の入力方法を設定するために更新されたコマンド bin/magento config:set twofactorauth/google/otp_window VALUE
+bin/magento config:set twofactorauth/google/leeway VALUE へ
+* _AC-12309_:
+   * _修正点_：二要素認証（2FA）のユーザードキュメントを更新し、otp_window コマンドを変更しました
+   * _GitHub コードの投稿_:OTP_WINDOW 設定コマンドをhttps://jira.corp.adobe.com/browse/AC-11762に従って変更するために、2 要素認証（2FA）のユーザードキュメントを更新しました。
 
 ### 送料
 
@@ -880,10 +949,23 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
    * _修正点_：注文追跡テンプレートで使用されるJavaScript ハンドラー関数で、スペルミスのある「currier」ではなく「carrier」という用語が正しく使用されるようになりました。これにより、関数の適切な命名とコードの明確さが確保されます。 以前は、スペルミスのある「currier」という用語が使用されていたため、コードベースに混乱と不整合が生じる可能性がありました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/34523>
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/33414>
+* _AC-11811_:
+   * _修正点_:UPS REST 「出荷には、測定単位として KGS/IN、LBS/CM、または OZS/CM を含めることはできません」
+   * _GitHub の問題_:&lt;<https://github.com/magento/magento2/commit/9b1713d8>>
+   * _GitHub コードの投稿_:UPS の料金は、チェックアウトと買い物かごに表示されます。
+* _AC-11916_:
+   * _修正事項_:[QPT] UPS REST 「出荷には、測定単位として KGS/IN、LBS/CM、または OZS/CM を含めることはできません」
+   * _GitHub コードの投稿_:UPS の料金は、チェックアウトと買い物かごに表示されます。
 * _AC-11938_:UPS REST 「出荷単位として KGS/IN、LBS/CM、または OZS/CM を使用することはできません。」
    * _メモの修正_:UPS の料金がチェックアウトと買い物かごに表示されるようにします。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/38618>
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/493e01f5>
+* _AC-11983_:
+   * _修正事項_:[QPT] UPS REST 「出荷には、測定単位として KGS/IN、LBS/CM、または OZS/CM を含めることはできません」
+   * _GitHub コードの投稿_:UPS の料金は、チェックアウトと買い物かごに表示されます。
+* _AC-11984_:
+   * _修正事項_:[QPT] UPS REST 「出荷には、測定単位として KGS/IN、LBS/CM、または OZS/CM を含めることはできません」
+   * _GitHub コードの投稿_:UPS の料金は、チェックアウトと買い物かごに表示されます。
 * _ACP2E-2738_：トラッキングウィンドウに間違った配信予定日が表示される
    * _修正点_:Fedex 通信事業者の正しい配送日を表示します。
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/57a32313>
@@ -913,20 +995,17 @@ Magento Open Source 2.4.8 コアコードの 231 件の問題を修正しまし�
 
 ### UI フレームワーク
 
-* _AC-12128_:
-   * _修正点_:[Cloud] Prototype.js のセキュリティ脆弱性 CVE-2020-27511
-   * _GitHub の問題_:&lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _GitHub コードの投稿_：セキュリティ脆弱性 CVE-2020-27511 は解決する必要があります
-* _AC-12128_:[Cloud] Prototype.js のセキュリティ脆弱性 CVE-2020-27511
-   * _修正メモ_：セキュリティ脆弱性 CVE-2020-27511 は解決される必要があります
+* _AC-12128_:Prototype.js のセキュリティ脆弱性修正 CVE-2020-27511
+   * _修正点_:Prototype.js 1.7.3 のセキュリティ脆弱性 CVE-2020-27511 に対応するようにシステムを更新し、システム全体のセキュリティを強化しました。 このアップデート以前は、細工されたHTMLタグを削除することで、Regular Expression Denial of Service （ReDOS）の影響を受けやすくなっていました。
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12128_:
+   * _Fix note_:Prototype.js のセキュリティ脆弱性の修正 CVE-2020-27511
+   * _GitHub の問題_:&lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
+   * _GitHub コード投稿_:Prototype.js 1.7.3 のセキュリティ脆弱性 CVE-2020-27511 に対応し、システム全体のセキュリティを強化しました。 このアップデート以前は、細工されたHTMLタグを削除することで、Regular Expression Denial of Service （ReDOS）の影響を受けやすくなっていました。
 * _AC-12189_: Grunt Less がソース マップに pub/ プレフィックスを使用する
    * _修正メモ_：システムは、grunt を使用する際に、パスの/pub プレフィックスを付けずに less/css ソースマップを生成するようになりました。これにより、web サーバー設定で回避策を実行する必要がなくなります。 以前は、sourcemaps パスで/pub プレフィックスを使用するには、web サーバーが正しく機能するように特定の設定が必要でした。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/38837>
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38840>
-* _AC-12950_:composer.json の tinymce 7.3.0 を更新し、tinymce 7 からファイルを削除する
-   * _修正点_:TinyMCE 7.x をAdobe Commerce 2.4.8-beta1 でサポートされるバージョンにします
-   * _GitHub コードの投稿_:&lt;https://github.com/magento/magento2/ （内部、結合前） >
 * _AC-1306_：無効なモジュールに静的コンテンツがデプロイされています
    * _修正メモ_：無効なモジュールに関連する CSS が最終的な CSS 出力ファイルから除外されるようになり、不要なスタイルが読み込まれなくなります。 以前は、無効になっているモジュールに関連する CSS が最終的な CSS 出力ファイルに含まれていたため、不要なスタイルが追加で読み込まれていました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/24666>
