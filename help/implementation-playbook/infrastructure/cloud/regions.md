@@ -3,7 +3,7 @@ title: クラウドインフラストラクチャの地域
 description: Adobe Commerceで使用可能なAWSおよび Azure リージョンを示す図を確認します。
 exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
 feature: Cloud
-source-git-commit: 4b42fc5deb12c97c2c078d0a25992ba23735747e
+source-git-commit: b53cb97af72c262e236e4f2d103f70968386bdb1
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## AWS地域
 
-![AWS地域を示す図 ](../../../assets/playbooks/aws-regions.png){zoomable="yes"}
+![AWS地域を示す図 ](../../../assets/playbooks/aws-regions.svg){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## Azure 地域
 
-![Azure の地域を示す図 ](../../../assets/playbooks/azure-regions.png){zoomable="yes"}
+![Azure の地域を示す図 ](../../../assets/playbooks/azure-regions.svg){zoomable="yes"}
 
 >[!NOTE]
 >
