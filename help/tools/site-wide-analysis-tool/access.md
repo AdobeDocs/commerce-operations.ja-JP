@@ -2,9 +2,9 @@
 title: アクセス方法  [!DNL Site-Wide Analysis Tool]
 description: にアクセスする方法を説明し  [!DNL Site-Wide Analysis Tool] す。
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 5f9f81b930a3b23c0b334ccbea94d296338a0048
+source-git-commit: 18416ae29cee182a5d088069065d73814fc7d860
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,8 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerceのオンプレミスインストールがある場合、ツールを使用するには、インフラストラクチャに [agent](../site-wide-analysis-tool/installation.md) をインストールする必要があります。
+>2024 年 4 月 23 日（PT）より、[!DNL Site-Wide Analysis Tool] は廃止され、Adobe Commerce オンプレミスのお客様は使用できなくなりました。
+
 
 ![Site-Wide Analysis Dashboard](../../assets/tools/site-wide-analysis-tool-dashboard.png)
 *[!DNL Site-Wide Analysis Tool]Dashboard*
