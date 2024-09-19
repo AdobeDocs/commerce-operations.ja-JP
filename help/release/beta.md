@@ -2,9 +2,9 @@
 title: Beta リリース
 description: Adobe Commerce ベータ版リリースとリリースへの参加方法について説明します。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 050d5877fae4cb9caaee06598f4429ea8857b1d2
+source-git-commit: f90279e0e152204ac976db307ca14d4418cbcba8
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '1094'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,32 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様や
 ## 現在のBeta プログラム
 
 アクティブなベータプログラムのリストについては、次の節を参照してください。
+
+### Live Search （パブリック Beta）の検索機能の強化
+
+このベータ版では、](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) の 3 つの新しい機能が [`productSearch` クエリでサポートされています。
+
+- **レイヤー検索** – 別の検索コンテキスト内の検索 – この機能を使用すると、検索クエリを最大 2 つのレイヤーで検索できます。 例：
+
+   - **レイヤー 1 検索** – 「product_attribute_1」で「motor」を検索します。
+   - **レイヤー 2 検索** – 「product_attribute_2」の「品番 123」を検索します。 この例では、「motor」の結果に含まれる「part number 123」を検索します。
+
+  レイヤー検索は、以下に説明するように、`startsWith` 検索インデックスと `contains` 検索インデックスの両方で使用できます。
+
+- **startsWith 検索インデックス付け** - `startsWith` インデックス付けを使用して検索します。 この新機能により、次のことが可能になります。
+
+   - 属性値が特定の文字列で始まる製品の検索。
+   - 「次で終わる」検索の設定による、買い物客での属性値が特定の文字列で終わる製品の検索。 「次で終わる」検索を有効にするには、製品属性を逆に取り込む必要があり、API 呼び出しも逆の文字列にする必要があります。
+
+- **contains search indexation** -contains indexation を使用して属性を検索します。 この新機能により、次のことが可能になります。
+
+   - 大きい文字列内でのクエリの検索。 例えば、買い物客が「HAPE-123」という文字列で製品番号「PE-123」を検索するとします。
+
+      - 注意：この検索タイプは、オートコンプリート検索を実行する既存の [ フレーズ検索 ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase) とは異なります。 例えば、製品属性値が「outdoor pants」の場合、フレーズ検索は「out pan」に対する応答を返しますが、「or ants」に対する応答は返しません。 ただし、「を含む」検索では、「または ants」に対する応答が返されます。
+
+これらの新しい条件により、検索クエリのフィルタリングメカニズムが強化され、検索結果を絞り込むことができます。 これらの新しい条件は、メインの検索クエリには影響しません。 ベータ版へのアクセスについては、`sagonzal@adobe.com` または `alexj@adobe.com` にメールを送信してください。
+
+Live Search ベータ版をインストールするには、[Live Search ガイド ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta) を参照してください。
 
 ### CommerceのExperience Manager Assets統合（Private Beta）
 
