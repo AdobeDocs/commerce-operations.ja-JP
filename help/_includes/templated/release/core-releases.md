@@ -1,7 +1,7 @@
 ---
-source-git-commit: 08c42f87d550cf5666413b452efe0bb3b5403b36
+source-git-commit: b5bb4c27b9aa0b911805249ea169d372266606a4
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -354,31 +354,31 @@ ht-degree: 0%
   <tbody>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p4.html">2.3.7-p4</a>
+          2.3.7-p4
         </td>
         <td>年 8 月  9、2022</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p3.html">2.3.7-p3</a>
+          2.3.7-p3
         </td>
         <td>2022 年 4 月 12 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p2.html">2.3.7-p2</a>
+          2.3.7-p2
         </td>
         <td>2021 年 10 月 12 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p1.html">2.3.7-p1</a>
+          2.3.7-p1
         </td>
         <td>2021 年 8 月 10 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html">2.3.7</a>
+          2.3.7
         </td>
         <td>2021 年 5 月 11 日（Pt）</td>
     </tr>
@@ -390,7 +390,7 @@ ht-degree: 0%
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html">2.3.6</a>
+          2.3.6
         </td>
         <td>2020 年 10 月 15 日（Pt）</td>
     </tr>
@@ -414,7 +414,7 @@ ht-degree: 0%
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">2.3.5</a>
+          2.3.5
         </td>
         <td>2020 年 4 月 28 日（Pt）</td>
     </tr>
@@ -426,7 +426,7 @@ ht-degree: 0%
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html">2.3.4</a>
+          2.3.4
         </td>
         <td>2020 年 1 月 28 日（Pt）</td>
     </tr>
@@ -438,25 +438,25 @@ ht-degree: 0%
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">2.3.3</a>
+          2.3.3
         </td>
         <td>October  8、2019</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html">2.3.2</a>
+          2.3.2
         </td>
         <td>2019 年 6 月 25 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html">2.3.1</a>
+          2.3.1
         </td>
         <td>2019 年 3 月 26 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html">2.3.0</a>
+          2.3.0
         </td>
         <td>2018 年 11 月 28 日（Pt）</td>
     </tr><!-- patch_releases -->
