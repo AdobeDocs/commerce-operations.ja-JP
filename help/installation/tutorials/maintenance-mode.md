@@ -2,9 +2,9 @@
 title: メンテナンスモードの有効化または無効化
 description: 次の手順に従って、Adobe Commerceのデプロイメントがメンテナンスのために停止した場合に顧客に表示される内容をカスタマイズします。
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: a5dbefda6b77d993756143ef0e7270425f824c44
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,8 @@ Adobe Commerceは [ メンテナンスモード ](../../configuration/bootstrap/
 
 アプリケーションは、次のようにメンテナンスモードを検出します。
 
-* `var/.maintenance.flag` が存在しない場合、メンテナンスモードはオフになり、アプリケーションは正常に動作します。
-* それ以外の場合は、`var/.maintenance.ip` が存在しない限り、メンテナンスモードはオンになります。
-
-  `var/.maintenance.ip` には、IP アドレスのリストを含めることができます。 HTTP を使用してエントリ ポイントにアクセスし、クライアントの IP アドレスがそのリスト内のいずれかのエントリに対応する場合、メンテナンス モードはオフになります。
+* `var/.maintenance.flag` が存在する場合、メンテナンスモードはオンになり、アプリケーションは 503 メンテナンスページを返します。
+* `var/.maintenance.ip` が存在し、クライアント IP がこのファイル内の IP アドレスエントリのいずれかに対応する場合、メンテナンスページはそのリクエストに対して無視されます。
 
 ## アプリケーションのインストール
 
