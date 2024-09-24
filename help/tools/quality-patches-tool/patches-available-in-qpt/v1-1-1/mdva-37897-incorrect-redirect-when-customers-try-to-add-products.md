@@ -1,0 +1,64 @@
+---
+title: 「MDVA-37897：最近表示された項目から製品を追加する際に、リダイレクトが正しく表示されない」
+description: MDVA-37897 パッチを使用すると、最近表示された項目ウィジェットからオプションを含む製品を追加しようとすると、誤ったリダイレクトの問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches） 1.1.1 がインストールされている場合に利用できます。 パッチ ID は MDVA-37897。 この問題はAdobe Commerce バージョン 2.4.4 で修正される予定であることに注意してください。
+feature: Products
+role: Admin
+source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+workflow-type: tm+mt
+source-wordcount: '441'
+ht-degree: 0%
+
+---
+
+# MDVA-37897：最近表示された項目から製品を追加すると、リダイレクトが正しく表示されない
+
+MDVA-37897 パッチを使用すると、最近表示された項目ウィジェットからオプションを含む製品を追加しようとすると、誤ったリダイレクトの問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)1.1.1 がインストールされている場合に使用できます。 パッチ ID は MDVA-37897。 この問題はAdobe Commerce バージョン 2.4.4 で修正される予定であることに注意してください。
+
+## 影響を受ける製品とバージョン
+
+**Adobe Commerce バージョン用のパッチが作成されます。**
+
+* クラウドインフラストラクチャ 2.4.1 のAdobe Commerce
+
+**Adobe Commerce バージョンとの互換性：**
+
+* Adobe Commerce（すべてのデプロイメント方法） 2.3.0 ～ 2.4.2-p1
+
+>[!NOTE]
+>
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+
+## 問題
+
+ユーザーが「最近閲覧された項目」セクションから選択の必要なオプションを含む製品を追加しようとすると、ユーザーは製品の詳細ページではなく製品一覧ページにリダイレクトされます。
+
+<u> 再現手順 </u>:
+
+1. カスタマイズ可能なオプション（タイプ：ラジオボタン）を使用して、シンプルな製品を作成します。
+1. 最近表示された項目ウィジェットを設定して、製品を表示します。
+1. 最近表示されたウィジェットに表示されるように、カスタマイズ可能なオプションを持つ製品を訪問します。
+1. 最近表示されたウィジェットのいずれかの製品で、「**買い物かごに追加**」をクリックします。
+
+<u> 期待される結果 </u>:
+
+製品の詳細ページにリダイレクトされて、オプションを選択できます。
+
+<u> 実際の結果 </u>:
+
+製品一覧ページにリダイレクトされます。
+
+## パッチの適用
+
+個々のパッチを適用するには、デプロイメントタイプに応じて次のリンクを使用します。
+
+* Adobe Commerce オンプレミス：開発者向けドキュメントの [ ソフトウェアアップデートガイド/パッチを適用する ](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)。
+* アドビのクラウドインフラストラクチャでのAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチを適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
+
+## 関連資料
+
+Adobe Commerce用の高品質パッチの詳細については、次を参照してください。
+
+* [ 品質パッチツールがリリースされました：品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)。
+
+QPT で使用可能なその他のパッチについては、[QPT で使用可能なパッチ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html-) の節を参照してください。
