@@ -3,9 +3,9 @@ title: 「ACSD-55231：クイックオーダー機能の使用中に SKU が見�
 description: ACSD-55231 パッチを適用すると、クイックオーダー機能を使用して買い物かごに商品を追加しようとすると、「The SKU was not found in the catalog」（SKU がカタログに見つかりませんでした）というエラーが発生するAdobe Commerceの問題を修正できます。
 feature: Products, Checkout, B2B
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ ACSD-55231 パッチでは、クイックオーダー機能を使用して買い
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

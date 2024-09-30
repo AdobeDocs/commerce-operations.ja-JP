@@ -3,9 +3,9 @@ title: 「ACSD-53148：同じ設定可能な商品を追加するためのGraphQ
 description: ACSD-53148 パッチを適用すると、Adobe CommerceでGraphQLに並行して同じ設定可能な商品を買い物かごに追加する 2 つのリクエストを実行した結果、同じ商品 SKU を持つ 2 つの異なる商品が買い物かごに表示される問題を修正できます。
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ ACSD-53148 パッチでは、設定可能な同じ商品を買い物かごに追
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

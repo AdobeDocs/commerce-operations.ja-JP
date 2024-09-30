@@ -3,9 +3,9 @@ title: 「ACSD-53204：ギャラリーに画像を追加する同時リクエス
 description: ACSD-53204 パッチを適用すると、Adobe Commerceの問題を修正できます。rest/V1/products/&lt;sku&gt;/media エンドポイントを使用して商品ギャラリーに画像を追加するリクエストを同時に行うと、「The product cannot be saved （商品は保存できません）」エラーがスローされます。
 feature: Catalog Management, Media, Products, REST
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ACSD-53204 パッチでは、`rest/V1/products/<sku>/media` エンドポイン�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

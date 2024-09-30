@@ -2,9 +2,9 @@
 title: '「ACSD-50895: [!DNL Google Analytics] 3 GTM が設定されていない場合、GTM タグが実行され  [!DNL Google Analytics]  せん」'
 description: ' [!DNL Google Analytics] 4 GTM が設定されていない場合、 [!DNL Google Analytics] 3 GTM タグが実行されないAdobe Commerceの問題を修正するために、ACSD-50895 パッチを適用します。'
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ GTM タグは、**[!DNL Google Analytics]** 3 GTM のみが有効な場合に実
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

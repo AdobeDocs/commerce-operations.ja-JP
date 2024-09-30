@@ -3,9 +3,9 @@ title: 「ACSD-48627：在庫切れの設定可能な商品がエラーの原因
 description: ACSD-48627 パッチを適用すると、在庫切れの設定可能な商品が、買い物かごの詳細を取得するGraphQL リクエストを送信する際にエラーを発生させるAdobe Commerceの問題を修正できます。
 feature: Admin Workspace, Configuration, Orders, Products
 role: Admin
-source-git-commit: e4744df378c3436598e49500d68cf4ef45d64f8c
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -275,7 +275,7 @@ ACSD-48627 パッチでは、在庫切れの設定可能な商品が、GraphQL �
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

@@ -3,9 +3,9 @@ title: 'ACSD-47444:_[!UICONTROL Trying to access array offset on value of type b
 description: PHP 7.4 上で既知の商品に対して存在しない特定のカテゴリパスにアクセスする際に_[!UICONTROL Trying to access array offset on value of type bool]_ エラーが発生するAdobe Commerceの問題を修正するために、ACSD-47444 パッチを適用してください。
 feature: Categories, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ _[!UICONTROL Notice: Trying to access array offset on value of type bool in /app
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 関連資料
