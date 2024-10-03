@@ -2,9 +2,9 @@
 title: Beta リリース
 description: Adobe Commerce ベータ版リリースとリリースへの参加方法について説明します。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: f90279e0e152204ac976db307ca14d4418cbcba8
+source-git-commit: a6c0a7f8c2a2bd6156f19838e05f8046209177e4
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様や
 
       - 注意：この検索タイプは、オートコンプリート検索を実行する既存の [ フレーズ検索 ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase) とは異なります。 例えば、製品属性値が「outdoor pants」の場合、フレーズ検索は「out pan」に対する応答を返しますが、「or ants」に対する応答は返しません。 ただし、「を含む」検索では、「または ants」に対する応答が返されます。
 
-これらの新しい条件により、検索クエリのフィルタリングメカニズムが強化され、検索結果を絞り込むことができます。 これらの新しい条件は、メインの検索クエリには影響しません。 ベータ版へのアクセスについては、`sagonzal@adobe.com` または `alexj@adobe.com` にメールを送信してください。
+これらの新しい条件により、検索クエリのフィルタリングメカニズムが強化され、検索結果を絞り込むことができます。 これらの新しい条件は、メインの検索クエリには影響しません。 ベータ版に参加するには、[Sandra Gonzales Mangana](mailto:sagonzal@adobe.com) または [Alex Jose](mailto:alexj@adobe.com) にメールリクエストを送信します。
 
 Live Search ベータ版をインストールするには、[Live Search ガイド ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta) を参照してください。
 
