@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで使用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: b1b7152caa8a9f04ee779e4483c6b82d2002fcc7
+source-git-commit: e951ffec9b6b6178f58a1721095b7d62e4f006d3
 workflow-type: tm+mt
-source-wordcount: '21646'
+source-wordcount: '21987'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,21 @@ ht-degree: 0%
 >[!INFO]
 >
 >コミュニティがMagento Open Sourceのために作成する [!DNL quality patches] ールについては、[ リリースノート ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+
+## v1.1.52 {#v1-1-52}
+
+* **BUNDLE-3375** （Adobe CommerceおよびMagento Open Source向け） - [!DNL Braintree] を支払い窓口として使用する場合に、3DS VISA の委任要件を満たすために必要なすべてのフィールドを追加します。
+* **ACSD-59366** （Adobe Commerce >=2.4.6 &lt;2.4.8 の場合） – チームリストに表示されないディアクティベートされたユーザーを含むチームを削除しようとするとエラーが発生する問題を修正しました。
+* **ACSD-59865** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.7 の場合） – カート内の商品の数量がルールを適用するのに十分でない場合に、以前に適用されたルールが [!UICONTROL Cart Price Rule] ーザーによってキャンセルされない問題を修正しました。
+* **ACSD-59925** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8）の場合 – GraphQLで [!UICONTROL Media Gallery] 内の項目を位置で並べ替える問題を修正しました。
+* **ACSD-59952** （Adobe Commerce >=2.4.4 &lt;2.4.8 の場合） – 既存の [!UICONTROL Shared Catalog] ーザーに割り当てられたグループ ID を持つ [!UICONTROL Shared Catalog] ージを作成する際にエラーが発生する問題を修正しました。
+* **ACSD-60590** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.7） – 大量の注文に対して [!UICONTROL Bestsellers Aggregated Daily Reports] を生成するパフォーマンスを向上させます。
+* **ACSD-60673** （Adobe Commerce >=2.4.4 &lt;2.4.8 の場合） – チェックアウト時に複数の支払い方法の [!UICONTROL Cart Price Rule] が特定の支払い方法に適切に適用されない問題を修正しました。
+* **ACSD-60684** （Adobe CommerceおよびMagento Open Source >=2.4.6 &lt;2.4.7） – 複数フィールドでのGraphQL製品の並べ替えが期待どおりに動作しない問題を修正しました。
+* **ACSD-60788** （Adobe Commerce >=2.4.7 &lt;2.4.8 の場合） – コンテンツセキュリティポリシー（CSP）のエラーにより、[!DNL Google Tag Manager] のカスタムスクリプトが実行されない問題を修正しました。
+* **ACSD-61322** （Adobe Commerce >=2.4.6 &lt;2.4.8 の場合） – デフォルト（一般グループ）の [!UICONTROL Shared Catalog] に割り当てら [!UICONTROL Products/Categories] ていないアセットが、XML サイトマップに引き続き含まれる問題を修正しました。
+* **ACSD-61366** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.8 の場合） - DB 接続用にポートが指定されている場合に、`setup:static-content:deploy --jobs 4` コマンドが複数のジョブで実行されて失敗し、*Port must be configured within host parameter* エラーが発生する問題を修正しました。
+* 更新されたパッチ：ACSD-51857、ACSD-57394
 
 ## v1.1.51 {#v1-1-51}
 
