@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.4 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.4 のセキュリティパッチリリースに含まれている、セキュリティバグ修正、セキュリティ機能強化、その他のセキュリティ関連アップデートについて説明します。
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: 3a2d104f0a689ac3715af302d470a1660857543c
+source-git-commit: cb4f388c90902c2fe1df4a5d84841280fa740104
 workflow-type: tm+mt
-source-wordcount: '1461'
+source-wordcount: '1498'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,18 @@ ht-degree: 0%
 # Adobe Commerce 2.4.4 セキュリティパッチのリリースノート
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## 2.4.4-p11
+
+Adobe Commerce 2.4.4-p11 セキュリティリリースは、2.4.4 の以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。
+
+セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html) を参照してください。
+
+{{b2b-patches}}
+
+### ハイライト
+
+{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
 
 ## 2.4.4-p10
 

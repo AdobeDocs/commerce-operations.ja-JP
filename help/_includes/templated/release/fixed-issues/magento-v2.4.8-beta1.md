@@ -1,11 +1,146 @@
 ---
-source-git-commit: cd4655cf45df5293ef82a9fa2f411e8630524603
+source-git-commit: cb3392b7716667201305b7502f6c9c31bc7d1a23
 workflow-type: tm+mt
-source-wordcount: '13175'
+source-wordcount: '14443'
 ht-degree: 0%
 
 ---
-# Magento Open Sourceが修正した問題（v2.4.8-beta1）
+# Magento Open Sourceリリースノート（v2.4.8-beta1）
+
+## ハイライト
+
+Magento Open Source 2.4.8 リリースには、次の 49 のハイライトが適用されます。
+
+### フレームワーク
+
+* _AC-10721_：最新バージョンへのアップグレード中の league/flysystem Composer 依存関係のアップグレード
+   * _修正点_:2.x league/flysystem Composer の依存関係を最新バージョン 3.x にアップグレードします
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/91cb4d46>
+* _AC-11495_:2.4.8-beta1 プラットフォームコンポーネントのアップグレード
+* _AC-11673_: php-amqplib/php-amqplib 最新バージョンを調べます
+   * _修正点_：最新バージョン php-amqplib/php-amqplib :^3.x を更新しました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-11723_: phpunit 10 互換性のための統合テスト フレームワークのリファクタリング - IntegrationTest.php が見つかりません
+   * _修正点_:PHPUnit 9 は、Adobe Commerceの Integration および WebAPI Test Framework の変更により、PHPUnit 10 にアップグレードされます。 PHPUnit 10 の変更には下位互換性があります。
+   * _GitHub コードの投稿_:&lt;https://github.com/magento/magento2/ （内部、結合前） >
+* _AC-11813_:phpunit 10 互換の WebApi テストフレームワーク - SOAPおよび B2B モジュールとのRabbitMQ接続に関する問題
+   * _修正点_:PHPUnit 9 は、Adobe Commerceの Integration および WebAPI Test Framework の変更により、PHPUnit 10 にアップグレードされます。 PHPUnit 10 の変更には下位互換性があります。
+   * _GitHub コードの投稿_:&lt;https://github.com/magento/magento2/ （内部、結合前） >
+* _AC-11816_:MySQL 8.4 LTS との互換性を追加
+* _AC-11911_：ライブラリへの移行後の jQuery/fileuploader CSS のクリーンアップ
+   * _修正点_:jQuery/fileUploader ライブラリは Uppy ライブラリに移行されたので、このライブラリを削除しました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7cabfb46>
+* _AC-11995_:MagentoCE 向けに MySQL 8.4 LTS との互換性を追加
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12014_:elasticsearch 8 モジュールを非推奨としてマークする
+* _AC-12015_:jsTree ライブラリへの移行後の ExtJs フォルダーのクリーンアップ
+   * _メモの修正_：関連機能が jsTree に移行されたので、extJs フォルダーを削除しました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7cabfb46>
+* _AC-12022_：モノログ/モノログシステムの依存関係を最新のメジャーバージョンにアップグレード
+   * _修正点_：システムを更新して「monolog/monolog:^3.x」ライブラリの最新のメジャーバージョンを使用するようにし、互換性とパフォーマンスの向上を確保しました。 以前は、システムは「monolog/monolog」ライブラリの古いバージョンを使用していましたが、潜在的な問題や制限につながる可能性がありました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12023_:wikimedia/less.phpの依存関係を最新のメジャーバージョンにアップグレードします
+   * _修正点_：システムを更新して「wikimedia/less.php」ライブラリの最新のメジャーバージョン 5.x を使用するようにし、互換性と最新機能を確保しました。 以前は、システムは古いバージョンのライブラリを使用しており、セキュリティの問題が発生する可能性がありました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12024_:jquery/validate ライブラリの依存関係を最新のマイナーバージョンにアップグレードします
+   * _修正点_:jquery/validate ライブラリの依存関係を最新のマイナーバージョン 1.20.0 にアップグレードします
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12025_:moment.js システムの依存関係を最新のマイナーバージョンにアップグレードします
+   * _修正点_:moment.js システムの依存関係を最新のマイナーバージョン 2.30.1 にアップグレードします
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12032_:MySQL 8.4 LTS for EE との互換性を追加
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12034_:MySQL 8.4 LTS for B2B との互換性を追加
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12074_：バンドル拡張機能用に MySQL 8.4 LTS との互換性を追加
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12085_:CE 用 MariaDB 11.4 LTS との互換性を追加
+   * _修正点_:Adobe Commerceと拡張機能で MariaDB 11.4 がサポートされるようになりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12165_：購読者の最適化 – PhpUnit10
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/90e25b6b>
+* _AC-12267_:Redis セッションの接続再試行をサポートし、colinmollenhour/php-redis-session-abstract v2.0.0 と互換性があります
+   * _修正点_:adobe commerce と互換性のある colinmollenhour/php-redis-session-abstract v2.0.0 の最新バージョンを更新しました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12268_:League/flysystem Composer の依存関係を最新バージョンにアップグレード
+   * _修正点_:2.x league/flysystem Composer の依存関係を最新バージョン 3.x にアップグレードします
+* _AC-12576_:MySQL 8.4 LTS での自動化テストの失敗を調査します
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12595_:MariaDB 11.4 LTS For EE との互換性を追加
+   * _修正点_:Adobe Commerceと拡張機能で MariaDB 11.4 がサポートされるようになりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12693_:MySQL 8.4 LTS を使用したデータ移行ツール（DMT）の調査
+* _AC-12715_：最新バージョンへのアップグレード中の laminas composer の依存関係の更新
+   * _修正点_：システムは最新バージョンの laminas composer 依存関係をサポートするようになりました。
+ラミナス/ラミナス – サービスマネガー
+ラミナス/ラミナス サーバ
+laminas/laminas-stdlib
+ラミナス/ラミナスバリデーター
+互換性と最新機能の確保。 以前は、これらの依存関係を最新バージョンに更新すると、後方互換性の問題が発生し、テストが失敗する可能性がありました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12752_：データ移行ツール用に MariaDB 11.4 LTS との互換性を追加
+   * _修正点_:Adobe Commerceと拡張機能で MariaDB 11.4 がサポートされるようになりました
+* _AC-12823_：コンポーネントのアップグレード中に phpunit パッチが更新されたことで単体テストが失敗したことを調査します
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12897_:MySQL 8.4 との SVC および EAT ツールの互換性
+* _AC-12898_:MySQL 8.4 と UCT ツールの互換性
+   * _修正メモ_：アップグレード互換性ツール（UCT）は MySQL 8.4 と互換性を持つようになり、このバージョンで実行されているインスタンスのスムーズな操作と互換性チェックが可能になりました。 以前は、UCT ツールはテストされておらず、MySQL 8.4 との互換性も確認されていません。
+* _AC-9749_: PHPUnit 10 アップグレード
+   * _修正点_: phpunit/phpunit composer の依存関係を互換性のあるバージョンに更新しました – &quot;phpunit/phpunit&quot;:&quot;10.x&quot;
+
+### インストールと管理
+
+* _AC-6819_：インデクサーをデフォルトで「スケジュールに従って更新」に設定します
+
+### 順序
+
+* _ACP2E-2709_: [ 機能リクエスト ] 顧客が、注文詳細ページの「コメントを送信」ボタンは混乱しており、別のページに変更する必要があると提案しています
+   * _メモの修正_：混乱を最小限に抑えるために、注文詳細ページの「コメントを送信」ボタンのラベルが「更新」に変更されました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/488c1034>
+
+### その他
+
+* _AC-11420_：新しいバージョンのAdobe Commerceがインストールされると、セットインデクサーがデフォルトで準備完了ステータスに表示される
+   * _注意を修正_：インストールのMagento後、インデクサーのステータスはデフォルトで *準備完了* 状態である必要があります。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/71432aeb>
+* _AC-11421_：既存のMagentoインストールで、サードパーティのインデクサーモジュールをインストールすると、インデクサーがデフォルトでスケジュールに従って更新されます。
+   * _メモの修正_：新しいインデクサーはすべて、デフォルトで [ スケジュールに従って更新 ] モードになっています。 以前は、デフォルトのモードは [ 保存時に更新 ] でした。 カスタムインデクサーでも同様です。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/71432aeb>
+* _AC-12480_:Elasticsearch 7 および 8 のオプションは、管理設定に非推奨（廃止予定）として付属している必要があります。
+   * _メモを修正_：管理設定オプションの「Elasticsearch 8」オプションに非推奨のテキストが表示され、Elasticsearch 8 は使用を推奨するオプションではなくなったことをユーザーに知らせます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0611e750>
+* _AC-12481_：管理者設定で「Elasticsearch」オプションが選択されている場合にテキストメモを追加
+   * _修正点_:Adobe Commerce管理者に、elasticsearch がAdobeでサポートされなくなり、非推奨になったことを知らせるテキストメモが追加されました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0611e750>
+* _AC-12870_:MariaDB 11.4 との SVC および EAT ツールの互換性
+   * _修正点_:MariaDB 11.4 との SVC および EAT ツールの互換性
+* _AC-12876_:UCT ツールと MariaDB 11.4 の互換性
+* _LYNX-374_:GraphQL経由の Document Email Confirmation
+* _LYNX-376_:GraphQLでの reCAPTCHA の設定の取得
+* _LYNX-409_:「買い物かご項目を更新」ミューテーションに対する DB クエリの最適化
+
+### セキュリティ
+
+* _AC-11041_:2024 年 6 月リリースからの 2.4.8-beta1 のセキュリティの改善
+* _AC-11864_:2024 年 8 月リリースからの 2.4.8-beta1 のセキュリティの改善
+* _AC-12346_:2024 年 10 月リリースからの 2.4.8-beta1 のセキュリティの改善
+* _AC-12691_:[2.4.8-beta1] 顧客更新 REST API エンドポイントが機能しない
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a4102373>、<https://github.com/magento/magento2/commit/a4102373>
+
+### UI フレームワーク
+
+* _AC-12726_:[2.4.8-beta1]TinyMCE 5 から TinyMCE 7 への移行
+   * _修正点_:TinyMCE 5 を TinyMCE 7.3.0 に移行し、Adobe Commerceでサポート対象バージョンにする。以前のシステムでは 5.10.2 を使用していたが、これは古くなり、セキュリティの脆弱性が報告されていた
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12825_:[2.4.8-beta1]TinyMCE 5 から TinyMCE 7 ページビルダーへの移行
+   * _修正点_:TinyMCE 5 を TinyMCE 7.3.0 に移行し、Adobe Commerceでサポート対象バージョンにする。以前のシステムでは 5.10.2 を使用していたが、これは古くなり、セキュリティの脆弱性が報告されていた
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12844_:[2.4.8-beta1]TinyMCE 5 の TinyMCE 7 への移行 – Magento2-infra – 禁止された単語
+   * _修正点_:TinyMCE 5 を TinyMCE 7.3.0 に移行し、Adobe Commerceでサポート対象バージョンにする。以前のシステムでは 5.10.2 を使用していたが、これは古くなり、セキュリティの脆弱性が報告されていた
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12901_:Require.js を最新バージョン 2.3.7 にアップグレード（セキュリティの脆弱性 CVE-2024-38999）
+   * _メモの修正_:require.js を最新バージョン 2.3.7 に更新しました。以前のバージョンでセキュリティの脆弱性が報告されました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b34c0a75>
 
 ## 修正された問題
 

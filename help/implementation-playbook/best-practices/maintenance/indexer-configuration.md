@@ -4,9 +4,9 @@ description: インデクサー設定のベストプラクティスに従って�
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: af66d47279245f8ee105030bbb33d77b1b35c3e5
+source-git-commit: 153cf3bae74a78d7a41176e0216203d354d2513b
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## スケジュールに従って更新するインデクサーの設定
 
-Adobe Commerceには、[!UICONTROL Update on Save] （デフォルト設定）と [!DNL Update on Schedule] の 2 種類のインデクサーモードがあります。
+Adobe Commerceには、[!UICONTROL Update on Save] と [!DNL Update on Schedule] という 2 種類のインデクサーモードがあります。
 
 - **[!UICONTROL Update on Save]** モードでは、カタログまたは他のデータが変更されるたびにインデックスを直ちに更新します。 例えば、管理者ユーザーがカテゴリに新しい製品を追加した場合、更新を保存すると、カテゴリの製品インデックスが直ちに再インデックス化されます。
 

@@ -2,9 +2,9 @@
 title: インデクサーの管理
 description: Commerce インデクサーの表示および管理方法の例を参照してください。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 9a92204369d3a8310aadfb94f8193a6c89f78c30
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -194,7 +194,7 @@ Catalog Search indexer has been invalidated.
 
 このコマンドを使用して、次のインデクサーオプションを設定します。
 
-- **保存時に更新（`realtime`）**：インデックス付きデータは、管理者で変更が加えられると更新されます。 （例えば、カテゴリ製品インデックスは、製品が管理者のカテゴリに追加された後に再インデックスされます。） これがデフォルトです。
+- **保存時に更新（`realtime`）**：インデックス付きデータは、管理者で変更が加えられると更新されます。 （例えば、カテゴリ製品インデックスは、製品が管理者のカテゴリに追加された後に再インデックスされます。）
 - **スケジュールで更新（`schedule`）**:cron ジョブで設定したスケジュールに従ってデータのインデックスが作成されます。
 
 [ インデックス作成の詳細情報 ](https://developer.adobe.com/commerce/php/development/components/indexing/)。

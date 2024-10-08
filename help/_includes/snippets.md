@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: ab3401c2629b550655c7b2a382b998ce2c8ac6f0
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ ht-degree: 0%
 >
 >`support:backup` コマンドは、`setup:backup` コマンドで実行されるコード バックアップと同じ __ ではない）です。 `support:backup` コマンドは、Adobe Commerce サポートが調査するコードをバックアップすることを目的としています。
 
+## B2B パッチ {#b2b-patches}
+
+>[!NOTE]
+>
+>このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントも、互換性のある最新の B2B セキュリティパッチリリースに更新する必要があります。 [B2B リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes) を参照してください。
+
 ## Adobe Commerceのみ {#ee-only}
 
 >[!NOTE]
@@ -46,6 +52,12 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Adobe Commerce リリースには、後方互換性のない変更（BIC）が含まれている場合があります。 後方互換性のない変更を確認するには、[BIC リファレンス ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/) を参照してください。 後方互換性のない主な問題については、[BIC ハイライト ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/) で説明しています。 すべてのリリースで主要な BIC が導入されるわけではありません。
+
+## Beta免責事項 {#beta}
+
+>[!IMPORTANT]
+>
+>Beta リリースには不具合が含まれている場合があり、いかなる保証もなく「現状のまま」提供されます。 Adobeは、ベータ版のリリースを（Adobeサポートサービスまたはその他のサービスから）維持、修正、更新、変更、またはその他の方法でサポートする義務を負いません。 お客様は、ベータ版リリースおよび/または付属のドキュメントや資料の正しい機能やパフォーマンスに対して、注意を払い、いかなる形でも依存しないようにしてください。 したがって、ベータ版リリースの使用は、完全にお客様自身の責任で行います。
 
 ## CVE 通知 {#cve-notice}
 
