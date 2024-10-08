@@ -1,7 +1,7 @@
 ---
-source-git-commit: cb3392b7716667201305b7502f6c9c31bc7d1a23
+source-git-commit: d2fe92c778cb90912062c5f318332a02f6a4131e
 workflow-type: tm+mt
-source-wordcount: '14443'
+source-wordcount: '14792'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ laminas/laminas-stdlib
 
 ## 修正された問題
 
-Magento Open Source 2.4.8 コアコードの 253 の問題を修正しました。 このリリースで修正された問題の一部を以下に示します。
+Magento Open Source 2.4.8 コアコードの 254 の問題を修正しました。 このリリースで修正された問題の一部を以下に示します。
 
 ### API
 
@@ -207,6 +207,10 @@ Magento Open Source 2.4.8 コアコードの 253 の問題を修正しました�
    * _修正点_：システムでは、大文字のファイル拡張子を持つ製品画像のアップロードを受け入れるようになり、製品の作成プロセスをスムーズに行えるようになりました。 以前は、ファイル拡張子が大文字の画像のアップロードは拒否され、ユーザーはファイル拡張子を小文字に変更する必要がありました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/38831>
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c8f87c25>
+* _AC-6975_: [ 問題 ] デフォルトのインデクサーモードを「スケジュール」に設定します
+   * _メモの修正_：新しいインデクサーはすべて、デフォルトで **[!UICONTROL Update by Schedule]** モードになります。  以前は、デフォルトのモードは **[!UICONTROL Update on Save]** でした。 既存のインデクサーは影響を受けません。 [GitHub-36419](https://github.com/magento/magento2/issues/36419)
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/36419>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0b410856>
 * _AC-7700_: [ 問題 ] mview でインデクサーの変更ログテーブルを登録解除します
    * _メモの修正_：インデックスが「スケジュールに従って更新」から「保存時に更新」に切り替わると、システムは未使用の変更ログテーブルを自動的に削除するようになりました。インデックスを無効としてマークして、エントリが失われないようにします。 以前は、インデックスを「保存時に更新」に切り替えると、未使用の変更ログテーブルがシステムに残り、変更されたすべてのインデックスが「有効」としてマークされていました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/29789>
@@ -300,18 +304,24 @@ Magento Open Source 2.4.8 コアコードの 253 の問題を修正しました�
 ### Braintree
 
 * _BUNDLE-3367_:LPM 経由での支払い
+   * _修正メモ_：ログインした顧客の配送先住所と請求先住所が一致しない場合でも、初期読み込み時にローカル支払い方法（LPM）が正しくレンダリングされ、チェックアウトプロセスがスムーズになりました。 以前は、顧客の配送先住所と請求先住所が一致しないと LPM のレンダリングが妨げられ、チェックアウト中に中断が生じる可能性がありました。
    * _GitHub コードの投稿_:<https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3368_：仮想を子製品として設定可能
+   * _修正点_：システムでは、仮想子製品を持つ設定可能な製品に対して支払い方法を簡単に設定できるようになり、チェックアウトプロセスがスムーズになりました。 以前は、仮想子製品を持つ設定可能な製品を買い物かごに追加した場合、高速支払い方法は使用できませんでした。
    * _GitHub コードの投稿_:<https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3369_: CVV Verification failed エラー
    * _GitHub コードの投稿_:<https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3370_：アカウント領域を介したヴォールティングの問題 247
+   * _修正メモ_：このシステムでは、認証エラーが発生することなく、複数の web サイトをまたいで新しいカードまたは PayPal アカウント情報を保存できるようになりました。 以前は、お客様は異なる web サイトをまたいで新しい支払い方法を保存できず、認証エラーメッセージが表示されていました。
    * _GitHub コードの投稿_:<https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3371_：別の国の住所に発送します
+   * _修正点_：システムは、異なる国の住所に配送する際に、トランザクションをエラーなく処理できるようになり、スムーズなチェックアウトプロセスが保証されるようになりました。 以前は、別の国の住所に発送しようとすると、フロントエンドに目に見えるエラーがないにもかかわらず、コンソールエラーが発生していました。
    * _GitHub コードの投稿_:<https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3372_：クレジットカード – ティアダウン機能
+   * _修正点_：お客様が支払いページから送料ページに戻ったときにBraintreeの PayPal コンポーネントの分解を正しく処理できるようになり、エラーを防ぎ、PayPal Express ボタンが正しくレンダリングされるようになりました。 以前は、Braintreeページから配送ページに戻ると、支払い PayPal コンポーネントをティアダウンしようとするとエラーが発生することがありました。
    * _GitHub コードの投稿_:<https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3373_:PayPal Express の配送用コールバック
+   * _修正メモ_：システムは、PayPal Express モーダルで利用可能な配送方法を正しく表示するようになりました。これにより、お客様は、レビューページに進む前やトランザクションを完了する前に、希望する配送方法を選択できます。 以前は、PayPal Express モーダルで選択できる配送方法がなかったため、お客様は、トランザクションを完了する前に、別のレビューページで配送方法を選択する必要がありました。
    * _GitHub コードの投稿_:<https://github.com/magento/ext-braintree/pull/204>
 
 ### 買い物かごとチェックアウト
