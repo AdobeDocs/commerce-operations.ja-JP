@@ -1,5 +1,5 @@
 ---
-source-git-commit: b30fe4ed4d910ac3a99d3bcf4ff94103bcbd1369
+source-git-commit: 00b8e1bb5ee259763ddb2c52065cee2af98641e0
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html) を参照してください。
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>設定</strong></td>
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 このリリースでは、次のプラットフォームアップグレードにより、Adobe Commerceが堅牢で信頼性の高いプラットフォームのままになり、最新のコマース環境の需要に対応できるようになります。
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>データベース</strong></td>
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 このリリースでは、次のパフォーマンスが強化されています。
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>インデクサー</strong></td>
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 このリリースには、次の品質強化が含まれています。
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
            <td><strong>在庫</strong></td>
@@ -117,7 +117,7 @@ ht-degree: 0%
 
 このリリースには、次のGraphQL機能強化が含まれています。
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
            <td><strong>一般的な機能強化</strong></td>
