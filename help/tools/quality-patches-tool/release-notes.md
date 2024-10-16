@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで使用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: e951ffec9b6b6178f58a1721095b7d62e4f006d3
+source-git-commit: f10eb87efbda20899574486f1e9db01f2a66f855
 workflow-type: tm+mt
-source-wordcount: '21987'
+source-wordcount: '22258'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,19 @@ ht-degree: 0%
 >[!INFO]
 >
 >コミュニティがMagento Open Sourceのために作成する [!DNL quality patches] ールについては、[ リリースノート ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+
+## v1.1.53 {#v1-1-53}
+
+* **ACSD-48318** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.7 の場合） – 環境エミュレーションのネストが許可されていない問題を修正しました。 これで、`send()` 呼び出し中にエミュレーションが停止した後、`getInfoBlockHtml()` 呼び出し中にエミュレーションが開始されます。
+* **ACSD-59930** （Adobe Commerce >=2.4.6 &lt;2.4.8） – 会社の **[!UICONTROL Create]**、**[!UICONTROL Save]** および **[!UICONTROL Delete]** フローのパフォーマンスを向上させます。
+* **ACSD-60584** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.7 の場合） – ある web サイトのユーザー用に作成されたアクセストークンが、他の web サイトのユーザー情報にアクセスしたり、変更したりできる問題を修正しました。
+* **ACSD-60804** （Adobe Commerce >=2.4.4 &lt;2.4.8 の場合） – 削除された会社にリンクされている顧客を編集すると、*メンバー関数の呼び出しが null で `getSuperUserId()` される* エラーが発生する問題を修正しました。
+* **ACSD-61133** （Adobe Commerce >=2.4.4-p5 &lt;2.4.5） || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.8） - `sales_clean_quotes` [!DNL cron] が未承認の発注書から見積を削除する問題を修正します。
+* **ACSD-61528** （Adobe Commerce >=2.4.6 &lt;2.4.8 の場合） - [!DNL GraphQL] を使用して [!UICONTROL Admin] からロールを取得しても結果が返されない問題を修正しました。
+* **ACSD-61553** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.7） – 優先度や **[!UICONTROL Maximum Qty Discount is Applied To]** が異なる複数のディスカウントが商品に適用される場合に、**[!UICONTROL Cart Price Rule]** ディスカウントが正しく計算されない問題を修正しました。
+* **ACSD-61667** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8） – 店舗での受け取りで多くのソースが発生した場合の出荷を作成するための在庫性能を向上させます。
+* **ACSD-61969** （Adobe Commerce >=2.4.7 &lt;2.4.8 の場合） – クーポンコードが設定されたのと完全に一致するように、大文字と小文字を区別するクーポンコードを入力する必要がある問題を修正しました。
+* 更新されたパッチ：ACSD-54989、ACSD-60632
 
 ## v1.1.52 {#v1-1-52}
 
