@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: b8c0788fa99ff4e4965a12fd8c6177b919ace083
+source-git-commit: 4a595d153b7b14939f9238e404ea3485f348dcdb
 workflow-type: tm+mt
-source-wordcount: '5963'
+source-wordcount: '5975'
 ht-degree: 0%
 
 ---
@@ -631,6 +631,7 @@ ht-degree: 0%
          - [ACSD-60326：カスタマーエクスペリ [!UICONTROL Returns] ンスのステータスに関するGraphQL クエリでエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
       - v1.1.52{#v1-1-52}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
+         - [ACSD-61366: bin/magento setup:static-content:deploy —jobs 4 コマンドがエラーで失敗する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61366-setup-command-fails-with-error.md)
          - [ACSD-61322:[!UICONTROL Shared Catalogue] に割り当てられていない製品は、XML サイトマップに含まれます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61322-products-not-assigned-to-shared-catalogue.md)
          - [ACSD-60590：ベストセラーの集計日別レポート生成のパフォーマンスの向上](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925:[!UICONTROL Media Gallery] 内の項目の並べ替え](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
