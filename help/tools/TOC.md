@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 5afe552b58fae28b4a8f020bdf2d3ec8b41b18d6
+source-git-commit: 12f32287f1222725517344dcb0d6c2d3deade7cf
 workflow-type: tm+mt
-source-wordcount: '5983'
+source-wordcount: '5998'
 ht-degree: 0%
 
 ---
@@ -637,6 +637,7 @@ ht-degree: 0%
          - [ACSD-60590：ベストセラーの集計日別レポート生成のパフォーマンスの向上](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925:[!UICONTROL Media Gallery] 内の項目の並べ替え](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
          - [ACSD-59865：数量が不十分なため、[!UICONTROL Cart Price Rule] が以前のルールのキャンセルに失敗します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue.md)
+         - [ACSD-59952：別の共有カタログと同じグループ ID を持つ共有カタログの削除中にエラーが発生しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
       - v1.1.53{#v1-1-53}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
       - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
