@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 12f32287f1222725517344dcb0d6c2d3deade7cf
+source-git-commit: 1140bdcf13ad03703afe1c2e7290bcd743302a52
 workflow-type: tm+mt
-source-wordcount: '5998'
+source-wordcount: '6013'
 ht-degree: 0%
 
 ---
@@ -628,6 +628,7 @@ ht-degree: 0%
          - [ACSD-60632：注文が試行されるたびに保存されるアドレス](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60632-address-saved-on-every-order-attempt.md)
          - [ACSD-61195：買い物かごGraphQLリクエストで、最終ページに項目を返せない](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
          - [ACSD-60538：製品が無効になっている場合、属性が表示されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
+         - [APM エージェントによって挿入された ACSD-60816: [!DNL New Relic] browser 監視スクリプトは、CSP に準拠していません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp.md)
          - [ACSD-59967:JavaScript エラーにより  [!DNL Google Maps]  が正しくレンダリングされない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59967-javascript-error-prevents-google-maps-from-rendering-correctly.md)
          - [ACSD-60326：カスタマーエクスペリ [!UICONTROL Returns] ンスのステータスに関するGraphQL クエリでエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
       - v1.1.52{#v1-1-52}
