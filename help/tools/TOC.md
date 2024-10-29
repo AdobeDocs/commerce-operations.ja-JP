@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 1140bdcf13ad03703afe1c2e7290bcd743302a52
+source-git-commit: c489f77a9805ff3f96211f4ce2f47d8e963c47de
 workflow-type: tm+mt
-source-wordcount: '6013'
+source-wordcount: '6020'
 ht-degree: 0%
 
 ---
@@ -641,6 +641,7 @@ ht-degree: 0%
          - [ACSD-59952：別の共有カタログと同じグループ ID を持つ共有カタログの削除中にエラーが発生しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
       - v1.1.53{#v1-1-53}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
+         - [ACSD-59930：会社のフローのパフォーマンスを向上](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
       - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - コマンド ライン ツール リファレンス {#cli-reference}
