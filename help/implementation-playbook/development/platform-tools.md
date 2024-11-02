@@ -3,7 +3,7 @@ title: Platform ツール
 description: Adobe Commerceの実装に推奨されるプラットフォームツールを選択します。
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
 feature: Configuration
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Adobe Commerce バージョン 2.4 以降では、すべてのインストール
 
 ## セキュリティツール
 
-[Adobe Commerce セキュリティ スキャン ツール ](https://docs.magento.com/user-guide/magento/security-scan.html) を使用すると、店舗の Web サイトを定期的に監視し、既知のセキュリティ リスク、マルウェア、および最新ではないソフトウェアの更新を受け取ることができます。 通常は、ユーザー受け入れテスト（UAT）を開始する際に、このツールの使用を開始します。 Adobe Commerce セキュリティスキャンツールは、Adobe Commerceのすべての実装およびバージョンで無料で使用でき、他にも CI/CD プロセス中や各リリース前に使用できる選択肢があります。
+[Adobe Commerce セキュリティ スキャン ツール ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) を使用すると、店舗の Web サイトを定期的に監視し、既知のセキュリティ リスク、マルウェア、および最新ではないソフトウェアの更新を受け取ることができます。 通常は、ユーザー受け入れテスト（UAT）を開始する際に、このツールの使用を開始します。 Adobe Commerce セキュリティスキャンツールは、Adobe Commerceのすべての実装およびバージョンで無料で使用でき、他にも CI/CD プロセス中や各リリース前に使用できる選択肢があります。
 
 SonarQube は、コードの技術的品質を分析および測定するために設計された、オープンソースの品質管理プラットフォームです。 SonarQube は、コードのバグ、構文エラー、脆弱性の完全なレポートを提供するだけでなく、コードを修正するための提案と例も提供します。 SonarQube は、デプロイ前にコードを分析できるツールとして、CI/CD 環境で使用するのに最適です。
 

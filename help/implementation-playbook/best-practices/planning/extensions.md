@@ -4,7 +4,7 @@ description: サードパーティのAdobe Commerce拡張機能によって発�
 role: Admin
 feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 1%
@@ -35,5 +35,5 @@ Adobe Commerce サードパーティの拡張機能（モジュール）は、�
 
 - [アップグレード計画のベストプラクティス](../../../upgrade/prepare/best-practices.md)
 - クラウドインフラストラクチャー上のAdobe Commerceでのサードパーティ拡張機能の使用
-   - [ 技術と要件 – 開発とテスト ](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-devtest)
-   - [ 統合とステージングで完全にテストする理由 ](https://devdocs.magento.com/cloud/live/live.html#whytest)
+   - [ 技術と要件 – 開発とテスト ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
+   - [ 統合とステージングで完全にテストする理由 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

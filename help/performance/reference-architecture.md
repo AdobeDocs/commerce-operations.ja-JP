@@ -2,7 +2,7 @@
 title: 参照アーキテクチャ
 description: Adobe Commerceのデプロイメントに推奨されるリファレンスアーキテクチャの図を確認します。
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ここでは、データセンター（仮想化されていない）で物理的にホストされているプレーンサーバーを使用し、リソースが他のユーザーと共有されていないAdobe Commerce インスタンスの一般的な推奨設定について説明します。 ホスティングプロバイダーは、特にCommerceのハイパフォーマンスホスティングを専門としている場合、要件に対して同等または効果的な別の設定を推奨する場合があります。
 
-クラウドインフラストラクチャ環境でのAdobe Commerceについては、[ スターターアーキテクチャ ](https://devdocs.magento.com/cloud/architecture/starter-architecture.html) を参照してください。
+クラウドインフラストラクチャ環境でのAdobe Commerceについては、[ スターターアーキテクチャ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture) を参照してください。
 
 ## [!DNL Commerce] リファレンスアーキテクチャ図
 

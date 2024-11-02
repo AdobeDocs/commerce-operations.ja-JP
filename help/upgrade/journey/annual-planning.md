@@ -2,7 +2,7 @@
 title: アップグレードに関する年間プランニング
 description: Adobe Commerce プロジェクトの年間アップグレードプランを作成するためのヒントを確認します。
 exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 多くの企業は、年間予算とロードマップに基づいて業務を行っています。 毎年のディスカッションでは、1 年のプラットフォームの正常性、方向性、アップグレード戦略と、それがビジネスの全体的な目標や主要業績評価指標（KPI）にどのように適合するかについて話し合うことが不可欠です。
 
-[ リリーススケジュール ](https://devdocs.magento.com/release/) に従って、アップグレードの予算とリリース期間を割り当て、休日、会社の閉鎖、ピーク時間を回避します。 [ リリースノート ](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) を通じてAdobeのリリーススケジュールを理解し、各リリースの変更点や改善点を把握することで、年をより適切に計画できます。
+[ リリーススケジュール ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) に従って、アップグレードの予算とリリース期間を割り当て、休日、会社の閉鎖、ピーク時間を回避します。 [ リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) を通じてAdobeのリリーススケジュールを理解し、各リリースの変更点や改善点を把握することで、年をより適切に計画できます。
 
 計画を立てる際には、次の点に注意してください。
 

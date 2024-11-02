@@ -4,7 +4,7 @@ description: Adobe Commerceをクラウドインフラストラクチャーに�
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -59,9 +59,9 @@ Adobeでは、Adobe Commerce アプリケーションにサードパーティの
 
 設定手順については、Adobe Commerce on cloud の開発者ガイドを参照してください。
 
-- [OpenSearch サービスの設定 ](https://devdocs.magento.com/cloud/project/services-opensearch.html)
+- [OpenSearch サービスの設定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 
-- [Elasticsearchサービスの設定 ](https://devdocs.magento.com/cloud/project/services-elastic.html)
+- [Elasticsearchサービスの設定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
 
 ## カスタムトリガーの回避
 
@@ -76,7 +76,7 @@ Adobeでは、Adobe Commerce アプリケーションにサードパーティの
 
 ## [!DNL ECE-Tools] をバージョン 2002.0.21 以降にアップグレードしてください {#ece-tools-version}
 
-Cron デッドロックの潜在的な問題を回避するには、ECE-Tools をバージョン 2002.0.21 以降にアップグレードしてください。 手順については、開発者向けドキュメントの [ バージョン `ece-tools` 更新 ](https://devdocs.magento.com/cloud/project/ece-tools-update.html) を参照してください。
+Cron デッドロックの潜在的な問題を回避するには、ECE-Tools をバージョン 2002.0.21 以降にアップグレードしてください。 手順については、開発者向けドキュメントの [ バージョン `ece-tools` 更新 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) を参照してください。
 
 ## インデクサーモードの安全な切り替え
 

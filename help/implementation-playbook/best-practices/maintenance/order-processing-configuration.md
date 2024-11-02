@@ -4,7 +4,7 @@ description: チェックアウトと注文の処理パフォーマンスを向�
 role: Admin, User
 feature: Best Practices
 exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Commerce サイトで注文量が増えるにつれ、次のストア設定オ�
 
 - **[!UICONTROL Asynchronous indexing]** – このオプションを有効にすると、多数のオーダーが同時に配置された場合に発生する可能性のあるデータベースのロックおよび処理の遅延を防止できます。
 - **[!UICONTROL Asynchronous email notifications]** – このオプションを有効にすると、チェックアウトおよび注文処理の E メール通知を即時に送信するのではなく、指定した間隔で送信することで、チェックアウトのパフォーマンスを向上できます。
-- **[!UICONTROL Enable Archiving]**：このオプションを有効にすると、受注、請求書、出荷およびクレジット・メモのパフォーマンスが向上し、ワークスペースに不要な情報が含まれないため、現在のビジネスに集中できます。 [ アーカイブの有効化 ](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving) を参照してください。
+- **[!UICONTROL Enable Archiving]**：このオプションを有効にすると、受注、請求書、出荷およびクレジット・メモのパフォーマンスが向上し、ワークスペースに不要な情報が含まれないため、現在のビジネスに集中できます。 [ アーカイブの有効化 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive) を参照してください。
 
 ## 影響を受ける製品とバージョン
 

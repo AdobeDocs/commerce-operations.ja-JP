@@ -2,7 +2,7 @@
 title: サポートユーティリティを実行します
 description: 組み込みサポートユーティリティを使用してCommerce プロジェクトのトラブルシューティングを行います。
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Adobe Commerce サポートユーティリティ（[ データコレクター ](https://docs.magento.com/user-guide/system/support-data-collector.html) とも呼ばれます）を使用すると、アドビのサポートチームが使用できる、お使いのシステムに関するトラブルシューティング情報を収集できます。
+Adobe Commerce サポートユーティリティ（[ データコレクター ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) とも呼ばれます）を使用すると、アドビのサポートチームが使用できる、お使いのシステムに関するトラブルシューティング情報を収集できます。
 
 Adobe Commerceは、これらのバックアップを使用し（「_ダンプ_ とも呼ばれます）、コードへのアクセスが必要な問題を分析します。 一般的なシナリオを次に示します。
 

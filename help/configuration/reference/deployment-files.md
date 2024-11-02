@@ -3,7 +3,7 @@ title: デプロイメントの設定ファイル
 description: Commerce アプリケーションのインストールに関する設定ファイルの仕組みを理解します。
 feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
-source-git-commit: b40d2bd4d466782ba5bc1b29ee8681756d9e85cc
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Adobe Commerceが提供する設定ファイルを使用すると、コンポー
 例：
 
 - コンポーネントのアンインストール：[`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- コンポーネントのステータスの確認：[`bin/magento module:status`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#modulestatus)
+- コンポーネントのステータスの確認：[`bin/magento module:status`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
 - コンポーネント（[`bin/magento module:disable`](../../installation/tutorials/manage-modules.md)、[`bin/magento module:enable`](../../installation/tutorials/manage-modules.md)）を有効または無効にします。
 
 > _config.php_

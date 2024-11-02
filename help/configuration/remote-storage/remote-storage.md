@@ -3,7 +3,7 @@ title: リモートストレージの設定
 description: オンプレミスのCommerce アプリケーション用にリモートストレージモジュールを設定する方法について説明します。
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
+source-git-commit: 419a21604d1fda0a76dd0375ae2340fd6e59ec89
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 0%
@@ -12,15 +12,27 @@ ht-degree: 0%
 
 # リモートストレージの設定
 
-リモートストレージモジュールは、メディアファイルを保存し、AWS S3 などのストレージサービスを使用して、永続的なリモートストレージコンテナでインポートとエクスポートをスケジュールするオプションを提供します。 デフォルトでは、Adobe Commerce アプリケーションは、アプリケーションを含んでいるのと同じファイルシステムにメディアファイルを保存します。 これは、複雑なマルチサーバ構成では非効率的であり、リソースを共有する際のパフォーマンスが低下する可能性があります。 リモート記憶域モジュールを使用すると、サーバー側のイメージのサイズ変更を利用して、メディア ファイルを `pub/media` ディレクトリに格納し、インポート/エクスポート ファイルをリモート オブジェクト ストレージの `var` ディレクトリに格納できます。
+リモートストレージモジュールは、メディアファイルを保存し、AWS S3 などのストレージサービスを使用して、永続的なリモートストレージコンテナでインポートとエクスポートをスケジュールするオプションを提供します。
+
+デフォルトでは、Adobe Commerce アプリケーションは、アプリケーションを含んでいるのと同じファイルシステムにメディアファイルを保存します。 これは、複雑なマルチサーバ構成では非効率的であり、リソースを共有する際のパフォーマンスが低下する可能性があります。 リモート記憶域モジュールを使用すると、サーバー側のイメージのサイズ変更を利用して、メディア ファイルを `pub/media` ディレクトリに格納し、インポート/エクスポート ファイルをリモート オブジェクト ストレージの `var` ディレクトリに格納できます。
+
+>[!BEGINSHADEBOX]
+
+リモート記憶域 _とデータベース記憶域_ の両方を同時に有効にすることはできません。 リモート記憶域を有効にする前に、データベース記憶域を無効にしてください。
+
+```bash
+bin/magento config:set system/media_storage_configuration/media_database 0
+```
+
+リモートストレージを有効にすると、確立された開発エクスペリエンスに影響を与える可能性があります。 例えば、ある PHP ファイル関数が期待どおりに動作しない場合があります。 ファイル操作にCommerce Framework を強制的に使用する必要があります。 禁止されている PHP のネイティブ関数のリストは、[magento-coding-standard](https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php) リポジトリで入手できます。
+
+>[!ENDSHADEBOX]
 
 >[!INFO]
 >
->リモートストレージは、Commerce バージョン 2.4.2 以降でのみ使用できます。 [2.4.2 リリースノート ](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html) を参照してください。
-
->[!INFO]
+>- リモートストレージは、Commerce バージョン 2.4.2 以降でのみ使用できます。 [2.4.2 リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2) を参照してください。
 >
->リモートストレージモジュールは、クラウドインフラストラクチャ上のAdobe Commerceで _制限_ サポートされています。 Adobeがサードパーティ製ストレージアダプタサービスのトラブルシューティングを完全に行えない。 クラウドプロジェクトにリモートストレージを実装する方法については、[ クラウドインフラストラクチャ上のCommerceのリモートストレージの設定 ](cloud-support.md) を参照してください。
+>- リモートストレージモジュールは、クラウドインフラストラクチャ上のAdobe Commerceで _制限_ サポートされています。 Adobeがサードパーティ製ストレージアダプタサービスのトラブルシューティングを完全に行えない。 クラウドプロジェクトにリモートストレージを実装する方法については、[ クラウドインフラストラクチャ上のCommerceのリモートストレージの設定 ](cloud-support.md) を参照してください。
 
 ![ スキーマ画像 ](../../assets/configuration/remote-storage-schema.png)
 
@@ -69,18 +81,6 @@ ht-degree: 0%
 >
 >クラウドインフラストラクチャー上のAdobe Commerceについては、[ クラウドインフラストラクチャー上のCommerceのリモートストレージの設定 ](cloud-support.md) を参照してください。
 
-## 制限事項
-
-リモート記憶域とデータベース記憶域の両方を同時に有効にすることはできません。 リモートストレージを使用している場合は、データベースストレージを無効にします。
-
-```bash
-bin/magento config:set system/media_storage_configuration/media_database 0
-```
-
-リモートストレージを有効にすると、確立された開発エクスペリエンスに影響を与える可能性があります。 例えば、ある PHP ファイル関数が期待どおりに動作しない場合があります。 ファイル操作にCommerce Framework を強制的に使用する必要があります。
-
-禁止されている PHP のネイティブ関数のリストは、[magento-coding-standard リポジトリ ][code-standard] で入手できます。
-
 ## コンテンツを移行
 
 特定のアダプタに対してリモート記憶域を有効にした後、CLI を使用して既存の _メディア_ ファイルをリモート記憶域に移行できます。
@@ -96,4 +96,3 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 <!-- link definitions -->
 
 [import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html
-[code-standard]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php

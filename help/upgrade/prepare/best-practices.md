@@ -3,7 +3,7 @@ title: ベストプラクティス
 description: Adobeが推奨するベストプラクティスを使用して、Adobe Commerce プロジェクトのアップグレードプロセスを管理します。
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Adobe Commerce拡張プラットフォームの導入をまだ開始していな
 
 - **UI 拡張機能**。 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) を使用して、バックエンドやミドルウェアとは独立してストアフロントを拡張し、発展させます。
 
-- **API 拡張機能**。 グラフデータモデルを進化させ、グラフレイヤーから直接ラムダ関数を実行することで、[GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) を使用して web API レイヤーを拡張します。
+- **API 拡張機能**。 グラフデータモデルを進化させ、グラフレイヤーから直接ラムダ関数を実行することで、[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/index.html) を使用して web API レイヤーを拡張します。
 
 - **Adobe I/Oミドルウェアおよびサービス**。 Adobeのミドルウェアおよび [Adobe I/O](https://www.adobe.io/) 上に構築されたアプリケーション接続のスイートを使用して、システムをAdobe Commerceに接続します。 さらに、デフォルトの動作をAdobe I/O上で実行される独自のビジネスロジックで上書きすることで、コアプラットフォーム機能を拡張できます。
 
@@ -57,7 +57,7 @@ Adobe Commerce拡張プラットフォームの導入をまだ開始していな
 
 Adobe Commerceの機能を継続的に拡張する際には、利用可能な最新リリースに基づいて開発し、プロジェクト計画にアップグレード方法を定義することが重要です。 これにより、安全でコンプライアンスに対応した最新の機能強化を常に最新の状態に保つことができるため、セールスの迅速な拡大、より効果的な運用、現在および将来にわたる競争優位性の維持が可能になります。
 
-アップグレードの計画と予算に役立つように、[ リリーススケジュール ](https://devdocs.magento.com/release) を監視する必要があります。 チームのバックログ内で、事前にアップグレードタスクを計画します。 この作業を一般公開（GA）で完了することを目指します。
+アップグレードの計画と予算に役立つように、[ リリーススケジュール ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) を監視する必要があります。 チームのバックログ内で、事前にアップグレードタスクを計画します。 この作業を一般公開（GA）で完了することを目指します。
 
 - 新しい各リリースについては、プレリリースバージョンを参照してください。 プレリリースは、一般公開の 2 週間前にAdobe Commerceのマーチャントおよびすべてのパートナーが利用できる一般公開コードです。 複数のストアがある場合は、基本ストアでプレリリースを使用し、カスタムモジュールとテーマが互換性があることを確認します。
 
@@ -73,13 +73,13 @@ Adobe Commerceの機能を継続的に拡張する際には、利用可能な最
 
 アップグレードに必要な作業の評価：
 
-- [ リリースノート ](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) を参照して、新しいバージョンの範囲と影響を理解します。
+- [ リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) を参照して、新しいバージョンの範囲と影響を理解します。
 
 - [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) を使用して、新しいバージョンにアップグレードする前に、カスタムコードで修正する必要がある潜在的な問題を特定します。
 
 - サードパーティの拡張機能を使用している場合は、アップグレード先のターゲットバージョンとの互換性を検証します。
 
-### Postのアップグレードテスト
+### アップグレード後のテスト
 
 テストは、最も時間を要するアップグレード段階です。 そのため、このプロセスは可能な限り自動化する必要があります。 コアテストツールを使用することで、メリットを得ることができます。 詳細については、[ アプリケーションテストガイド ](https://developer.adobe.com/commerce/testing/guide/) を参照してください。
 

@@ -2,7 +2,7 @@
 title: '[!DNL Exceptions]'
 description: の「[!UICONTROL Exceptions]」タブ、使用するタイミング  [!DNL Site-Wide Analysis Tool] メリット、ベストプラクティスについて説明します。
 exl-id: bd793536-b95c-47db-9372-33c00be8e144
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
@@ -27,4 +27,4 @@ ht-degree: 0%
 
 ## ベストプラクティス
 
-[!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] ページを監視して、例外が発生したかどうかを確認します。 詳しくは、開発者向けドキュメントの [ ログの表示と管理 ](https://devdocs.magento.com/cloud/project/log-locations.html) を参照してください。
+[!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] ページを監視して、例外が発生したかどうかを確認します。 詳しくは、開発者向けドキュメントの [ ログの表示と管理 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) を参照してください。

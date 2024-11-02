@@ -2,7 +2,7 @@
 title: ' [!DNL Site-Wide Analysis Tool] を統合します。'
 description: 次の手順に従って、Adobe Commerce プロジェクトの  [!DNL Site-Wide Analysis Tool] dashboard から  [!DNL Upgrade Compatibility Tool]  レポートを取得します。
 exl-id: 1ef37294-a837-47a4-841c-4027087acf12
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Upgrade Compatibility Tool] が [!DNL Site-Wide Analysis Tool] と統合され、技術者以外のユーザーが [!DNL Upgrade Compatibility Tool] を実行して、各ファイルの問題のリストを含む [ レポート ](../upgrade-compatibility-tool/reports.md) を取得できるようになりました。
 
-詳しくは、[[!DNL Site-Wide Analysis Tool]  ユーザーガイド ](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) を参照してください。
+詳しくは、[[!DNL Site-Wide Analysis Tool]  ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) を参照してください。
 
 ## [!DNL Site-Wide Analysis Tool] から [!DNL Upgrade Compatibility Tool] を実行します
 

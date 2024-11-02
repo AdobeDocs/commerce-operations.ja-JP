@@ -4,7 +4,7 @@ description: セキュリティ研究者が脆弱性を報告するのに役立�
 feature: Configuration, Security
 badge: label="寄稿：Kalpesh Meta from Corra" type="Informative" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="カルペシュ メッタ"
 exl-id: ddafd03c-77b2-42e8-b593-7d655d08e9c3
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 研究者によってセキュリティの脆弱性が発見された場合、適切なレポートチャネルがないことがよくあります。 その結果、一部の脆弱性は報告されません。 `security.txt` [ ファイル形式 ](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) ファイルの目的は、セキュリティ調査担当者が調査結果を報告するために使用できる情報を提供することです。
 
-マーチャントは、[ セキュリティの問題のレポート ](https://docs.magento.com/user-guide/stores/security-issue-reporting.html) に関する連絡先情報をCommerceから入力できます _管理者_。 開発者向けに、`Magento_Securitytxt` モジュールは次の機能を提供します。
+マーチャントは、[ セキュリティの問題のレポート ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-issue-reporting) に関する連絡先情報をCommerceから入力できます _管理者_。 開発者向けに、`Magento_Securitytxt` モジュールは次の機能を提供します。
 
 - _Admin_ からセキュリティ設定を保存できるようにします。
 - `.well-known/security.txt` ファイルと `.well-known/security.txt.sig` ファイルへの要求に対するアプリケーション アクション クラスに一致するルーターが含まれています。

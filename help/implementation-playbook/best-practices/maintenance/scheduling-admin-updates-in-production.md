@@ -4,7 +4,7 @@ description: Adobe Commerceの重要な更新をスケジュールして、パ�
 role: Admin, User
 feature: Best Practices
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Adobe Commerce サイトの重要な更新や操作をピーク外の時間帯�
 
 ## 追加情報
 
-- [ キャッシュのベストプラクティス ](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
+- [ キャッシュのベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
 - [ プライベートコンテンツ：プライベートコンテンツを無効にする ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [ハードウェアの推奨事項：キャッシュ](../../../performance/hardware.md#caches)
 - [詳細設定：Redis の設定](../../../performance/advanced-setup.md#set-up-redis)

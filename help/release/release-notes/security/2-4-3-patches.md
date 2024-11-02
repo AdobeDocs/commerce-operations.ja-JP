@@ -2,7 +2,7 @@
 title: Adobe Commerce 2.4.3 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.3 のセキュリティパッチリリースに含まれている、セキュリティバグ修正、セキュリティ機能強化、その他のセキュリティ関連アップデートについて説明します。
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -80,7 +80,7 @@ DHL ではスキーマバージョン 6.2 を導入しており、近い将来�
 
 **メディアギャラリーフォルダーへの制限付き管理者アクセス**。 Media Gallery のデフォルトの権限では、設定で明示的に許可されているディレクトリ操作（表示、アップロード、削除、作成）のみが許可されるようになりました。 管理者ユーザーは、`catalog/category` または `wysiwyg` ディレクトリの外部でアップロードされたメディアギャラリーを介してメディアアセットにアクセスできなくなりました。 メディアアセットにアクセスする管理者は、明示的に許可されたフォルダーに移動するか、設定を調整する必要があります。 [Media Library フォルダー権限の変更 ](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/) を参照してください。<!-- B2B-1897-->
 
-**GraphQL クエリの複雑さの上限を引き下げ**。 サービス拒否（DOS）攻撃を防ぐために、GraphQLで許可されるクエリの最大複雑度が低下しました。 詳しくは、[GraphQLのセキュリティ設定 ](https://devdocs.magento.com/guides/v2.4/graphql/security-configuration.html) を参照してください。<!-- PWA-1700-->
+**GraphQL クエリの複雑さの上限を引き下げ**。 サービス拒否（DOS）攻撃を防ぐために、GraphQLで許可されるクエリの最大複雑度が低下しました。 詳しくは、[GraphQLのセキュリティ設定 ](https://developer.adobe.com/commerce/webapi/graphql/security-configuration.html) を参照してください。<!-- PWA-1700-->
 
 **最近の侵入テストの脆弱性** は、このリリースで修正されました。<!-- MC-42431-->
 

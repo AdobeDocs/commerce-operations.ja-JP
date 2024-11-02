@@ -4,7 +4,7 @@ description: インデクサー設定のベストプラクティスに従って�
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 153cf3bae74a78d7a41176e0216203d354d2513b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Adobe Commerceには、[!UICONTROL Update on Save] と [!DNL Update on Schedule]
 サイトのパフォーマンスを最大化するには、インデックス作成に関する次のベストプラクティスに従います。
 
 - インデックス設定を確認します。
-- 大規模なサイトや、頻繁に更新が行われ、トラフィックが多いサイトでは、インデクサーを _[!UICONTROL Update on Schedule]_に設定します。 [ インデックス管理 ](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode) を参照してください。
+- 大規模なサイトや、頻繁に更新が行われ、トラフィックが多いサイトでは、インデクサーを _[!UICONTROL Update on Schedule]_に設定します。 [ インデックス管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode) を参照してください。
 - インデックス管理については、[ パフォーマンスのベストプラクティス ](../../../performance/configuration.md) に従ってください。
 
 >[!IMPORTANT]

@@ -3,7 +3,7 @@ title: クラウドインフラストラクチャーのセキュリティ
 description: Adobeがクラウドインフラストラクチャ上のAdobe Commerceのセキュリティを維持する方法について説明します。
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 0%
@@ -27,15 +27,15 @@ Fastly は、コンテンツ配信ネットワーク（CDN）と分散型サー�
 
 ## Web アプリケーションファイアウォール
 
-Fastly Web アプリケーションファイアウォール（WAF）は、追加の保護を提供するために使用されます。 Fastly のクラウドベースの WAF は、OWASP Core Ruleset などの商用およびオープンソースのソースから得られるサードパーティルールを使用します。 また、Adobe Commerce固有のルールが使用されます。 お客様は、インジェクション攻撃や悪意のある入力、クロスサイトスクリプティング、データの抽出、HTTP プロトコル違反、その他の OWASP の 10 の脅威など、主要なアプリケーションレイヤーの攻撃から保護されます。
+Fastly Web Application Firewall （WAF）は、追加の保護機能を提供するために使用されます。 Fastly のクラウドベースのWAFは、OWASP コアルールセットなどの商用およびオープンソースのソースからのサードパーティルールを使用しています。 また、Adobe Commerce固有のルールが使用されます。 お客様は、インジェクション攻撃や悪意のある入力、クロスサイトスクリプティング、データの取り出し、HTTP プロトコル違反、その他のOWASP top 10 の脅威など、主要なアプリケーションレイヤーの攻撃から保護されます。
 
-Adobe Commerceで WAF ルールが更新され、新しい脆弱性が検出された場合、Managed Servicesはソフトウェアパッチの前にセキュリティの問題を「実質的にパッチ」できます。 Fastly WAF は、レート制限またはボット検出サービスを提供していません。 必要に応じて、Fastly と互換性のあるサードパーティのボット検出サービスのライセンスを取得できます。
+WAFのルールは、新しい脆弱性が検出された場合にAdobe Commerceによって更新され、ソフトウェアパッチの前にManaged Servicesがセキュリティの問題を「実質的にパッチ」できます。 Fastly WAFは、レート制限サービスやボット検出サービスを提供していません。 必要に応じて、Fastly と互換性のあるサードパーティのボット検出サービスのライセンスを取得できます。
 
-[ クラウドガイド _の「Web アプリケーションファイアウォール（WAF） ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html)_ を参照してください。
+[ クラウドガイド）の ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html)Web アプリケーションファイアウォール（WAF） _を参照してください_。
 
 ## 仮想プライベートクラウド
 
-Adobe Commerce Pro プランの実稼動環境は、Virtual Private Cloud （VPC）として設定されるため、実稼動サーバーは分離されており、クラウド環境との間の接続や切り替えの機能が制限されます。 クラウドサーバーへの安全な接続のみが許可されます。 SFTP や rsync などのセキュアなプロトコルをファイル転送に使用できます。
+Adobe Commerce Pro プランの実稼動環境は、Virtual Private Cloud （VPC）として設定されているので、実稼動サーバーは分離されており、クラウド環境との間の接続や切り替えの機能が制限されています。 クラウドサーバーへの安全な接続のみが許可されます。 SFTP や rsync などのセキュアなプロトコルをファイル転送に使用できます。
 
 お客様は、SSH トンネルを使用して、アプリケーションとの通信を保護できます。 AWS PrivateLink へのアクセスは、追加料金を支払って提供されます。 これらのサーバへのすべての接続は、環境への接続を制限する仮想ファイアウォールであるAWS セキュリティグループを使用して制御されます。 お客様の技術リソースは、SSH を使用してこれらのサーバーにアクセスできます。
 
@@ -59,7 +59,7 @@ Adobe Commerceでは、クレジットカードのデータが消費者のブラ
 
 ## Adobe Commerce アプリケーション
 
-Adobeでは、セキュリティの脆弱性に関してコアアプリケーションコードを定期的にテストしています。 欠陥およびセキュリティ上の問題に対するパッチがお客様に提供されます。 Product Security Team は、OWASP アプリケーション・セキュリティ・ガイドラインに従ってAdobe Commerce製品を検証します。 いくつかのセキュリティ脆弱性評価ツールと外部ベンダーを使用して、コンプライアンスのテストと検証を行っています。 セキュリティツールには次のものが含まれます。
+Adobeでは、セキュリティの脆弱性に関してコアアプリケーションコードを定期的にテストしています。 欠陥およびセキュリティ上の問題に対するパッチがお客様に提供されます。 製品セキュリティチームは、OWASP アプリケーションセキュリティガイドラインに従ってAdobe Commerce製品の検証を行います。 いくつかのセキュリティ脆弱性評価ツールと外部ベンダーを使用して、コンプライアンスのテストと検証を行っています。 セキュリティツールには次のものが含まれます。
 
 - Veracode の静的および動的スキャン
 - RIPS ソースコードスキャン
@@ -70,7 +70,7 @@ Adobeでは、セキュリティの脆弱性に関してコアアプリケーシ
 
 すべてのコードベースは、これらのツールで隔週でスキャンされます。 お客様には、ダイレクトメール、アプリケーション内の通知、および [ セキュリティセンター ](https://helpx.adobe.com/security.html) を通じて、セキュリティパッチが通知されます。
 
-お客様は、PCI ガイドラインに従って、リリース後 30 日以内に、これらのパッチをカスタマイズされたアプリケーションに適用する必要があります。 また、Adobeでは [ セキュリティスキャンツール ](https://docs.magento.com/user-guide/magento/security-scan.html) を提供しています。このツールを使用すると、マーチャントはサイトを定期的に監視し、既知のセキュリティリスク、マルウェアおよび不正アクセスに関する更新を受け取ることができます。 セキュリティスキャンツールは無料のサービスで、あらゆるバージョンのAdobe Commerceで実行できます。
+お客様は、PCI ガイドラインに従って、リリース後 30 日以内に、これらのパッチをカスタマイズされたアプリケーションに適用する必要があります。 また、Adobeでは [ セキュリティスキャンツール ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) を提供しています。このツールを使用すると、マーチャントはサイトを定期的に監視し、既知のセキュリティリスク、マルウェアおよび不正アクセスに関する更新を受け取ることができます。 セキュリティスキャンツールは無料のサービスで、あらゆるバージョンのAdobe Commerceで実行できます。
 
 セキュリティ研究者が脆弱性を特定して報告することを奨励するために、Adobe Commerceには、内部テストに加えて [ バグバウンティプログラム ](https://hackerone.com/magento) があります。 さらに、必要に応じて、顧客が独自にレビューするために、アプリケーションの完全なソースコードを提供します。
 
@@ -84,7 +84,7 @@ Adobeでは、セキュリティの脆弱性に関してコアアプリケーシ
 
 ## ログ
 
-すべてのAWS アクティビティは、AWS CloudTrail に記録されます。 オペレーティングシステム、アプリケーションサーバー、データベースログは、実稼動サーバーに保存され、バックアップに保存されます。 すべてのソースコードの変更が Git リポジトリに記録されます。 配置履歴は、Adobe Commerce [Project Web インターフェイス ](https://devdocs.magento.com/cloud/project/projects.html#login) で使用できます。 すべてのサポートアクセスがログに記録され、サポートセッションが記録されます。
+すべてのAWS アクティビティは、AWS CloudTrail に記録されます。 オペレーティングシステム、アプリケーションサーバー、データベースログは、実稼動サーバーに保存され、バックアップに保存されます。 すべてのソースコードの変更が Git リポジトリに記録されます。 配置履歴は、Adobe Commerce [Project Web インターフェイス ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) で使用できます。 すべてのサポートアクセスがログに記録され、サポートセッションが記録されます。
 
 [ クラウドガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) の _ログの表示と管理_ を参照してください。
 

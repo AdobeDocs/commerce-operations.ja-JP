@@ -2,7 +2,7 @@
 title: アクセス方法  [!DNL Site-Wide Analysis Tool]
 description: にアクセスする方法を説明し  [!DNL Site-Wide Analysis Tool] す。
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 18416ae29cee182a5d088069065d73814fc7d860
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [[!DNL Site-Wide Analysis Tool] Web [!DNL dashboard] イト ](https://supportinsights.adobe.com/commerce) から直接アクセスして（クラウドインフラストラクチャー上のAdobe Commerceの場合のみ） **Adobe IDでログインするか** ストアの [!DNL Admin Panel] から [!DNL dashboard] を介してアクセスできます。
 
-[!DNL Site-Wide Analysis Tool] サービスは、ユーザー [ 役割リソース ](https://docs.magento.com/user-guide/magento/installation-modes.html) にアクセスする権限を持つ [!DNL Admin] ユーザーが [ 実稼動モード ](https://docs.magento.com/user-guide/system/permissions-user-roles.html) で使用できます。
+[!DNL Site-Wide Analysis Tool] サービスは、ユーザー [ 役割リソース ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes) にアクセスする権限を持つ [!DNL Admin] ユーザーが [ 実稼動モード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) で使用できます。
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ### 手順 1：権限の確認
 
-[!DNL Admin] ユーザーアカウントに、[ 割り当てられたユーザーの役割 ](https://docs.magento.com/user-guide/system/permissions-user-roles.html) を通じて [!DNL Site-Wide Analysis Tool] にアクセスする権限があることを確認します。
+[!DNL Admin] ユーザーアカウントに、[ 割り当てられたユーザーの役割 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) を通じて [!DNL Site-Wide Analysis Tool] にアクセスする権限があることを確認します。
 
 >[!IMPORTANT]
 >

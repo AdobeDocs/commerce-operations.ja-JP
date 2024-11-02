@@ -2,7 +2,7 @@
 title: アップグレードの範囲について
 description: Adobe Commerceのカスタムモジュールやサードパーティの拡張機能に影響を与える可能性のある、リリースにおける後方互換性のない変更について説明します。
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # アップグレードの範囲を理解する
 
-[ リリースノート ](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) を確認して、機能強化、バグ修正、サードパーティやカスタムモジュールに影響を与える可能性のある既知の問題など、リリースの範囲を理解します。
+[ リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) を確認して、機能強化、バグ修正、サードパーティやカスタムモジュールに影響を与える可能性のある既知の問題など、リリースの範囲を理解します。
 
 ## 後方互換性のない変更
 
 Adobe Commerce リリースには、後方互換性のない変更が含まれている場合があります。 後方互換性のない変更に関するドキュメントを確認します。以下を参照してください。
 
-- **[大きな変更のハイライト ](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)** – 大きな影響を与え、サードパーティモジュールが引き続き機能するように詳細な説明と特別な手順が必要な変更。
-- **[マイナー変更参照 ](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)** - クラス、API メンバーシップ、データベース、依存関係の挿入、インターフェイス、レイアウト、システム、および XSD のマイナーな変更について説明するコードベースから生成された参照ドキュメント。
+- **[大きな変更のハイライト ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/)** – 大きな影響を与え、サードパーティモジュールが引き続き機能するように詳細な説明と特別な手順が必要な変更。
+- **[マイナー変更参照 ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)** - クラス、API メンバーシップ、データベース、依存関係の挿入、インターフェイス、レイアウト、システム、および XSD のマイナーな変更について説明するコードベースから生成された参照ドキュメント。
 
 ## サードパーティの拡張機能
 
@@ -26,7 +26,7 @@ Adobe Commerce Marketplace の新しい互換性ポリシーにより、リス�
 
 ## カスタムモジュール
 
-アップグレード先のターゲットバージョンと照合して、すべてのカスタムモジュールを確認する必要があります。 これは、アップグレードで最も時間とリソースを消費するプロセスです。 カスタムモジュールを評価する場合、後方互換性のない変更を探し、コントローラの分解などの新しい手法に注意する必要があります。 詳しくは、[ リリースノート ](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) を参照してください。 また、モジュール開発について [ ベストプラクティス ](https://developer.adobe.com/commerce/php/best-practices/extensions/) に従っていることを確認します。
+アップグレード先のターゲットバージョンと照合して、すべてのカスタムモジュールを確認する必要があります。 これは、アップグレードで最も時間とリソースを消費するプロセスです。 カスタムモジュールを評価する場合、後方互換性のない変更を探し、コントローラの分解などの新しい手法に注意する必要があります。 詳しくは、[ リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) を参照してください。 また、モジュール開発について [ ベストプラクティス ](https://developer.adobe.com/commerce/php/best-practices/extensions/) に従っていることを確認します。
 
 ## [!DNL Upgrade Compatibility Tool]
 

@@ -4,7 +4,7 @@ description: 使用していない場合は、レポートモジュールを削�
 role: Admin
 feature: Best Practices, Configuration
 exl-id: 8c991b8a-affb-4a9e-9383-671f595ff89e
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # レポート設定のベストプラクティス
 
-ビジネスでレポート機能や動的な顧客セグメント機能が不要な場合は、[ レポート機能 ](https://docs.magento.com/user-guide/configuration/general/reports.html) を無効にして、ストアのパフォーマンスを向上させます。
+ビジネスでレポート機能や動的な顧客セグメント機能が不要な場合は、[ レポート機能 ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/reports) を無効にして、ストアのパフォーマンスを向上させます。
 
 ## 影響を受ける製品とバージョン
 
@@ -32,5 +32,5 @@ ht-degree: 1%
 
 ## 追加情報
 
-- [Adobe Commerceでのレポートの生成 ](https://docs.magento.com/user-guide/reports.html)
-- [ 顧客の動的セグメント ](https://docs.magento.com/user-guide/marketing/customer-segments.html)
+- [Adobe Commerceでのレポートの生成 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu)
+- [ 顧客の動的セグメント ](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)

@@ -1,10 +1,10 @@
 ---
 title: Adobe Commerceのパフォーマンスの最適化
-description: 一部のデフォルト設定を変更して、Adobe Experience Manager as a CMS を使用するようにAdobe Commerce プロジェクトを準備します。
+description: デフォルト設定を変更して、Adobe Experience Manager as a CMSを使用するようにAdobe Commerce プロジェクトを準備します。
 exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
 feature: Integration, Cache
 topic: Commerce, Performance
-source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 0%
@@ -26,7 +26,7 @@ GraphQLでは、1 回の呼び出しで複数のクエリを実行できます�
 
 >[!NOTE]
 >
-> キャッシュ可能なクエリとキャッシュ不可クエリについて詳しくは、Adobe Commerce[ 開発者向けドキュメント ](https://devdocs.magento.com/guides/v2.4/graphql/caching.html) を参照してください。
+> キャッシュ可能なクエリとキャッシュ不可クエリについて詳しくは、Adobe Commerce[ 開発者向けドキュメント ](https://developer.adobe.com/commerce/webapi/graphql/caching.html) を参照してください。
 
 ## カタログ フラット テーブル
 
@@ -42,7 +42,7 @@ Fastly オリジンシールドは、Adobe Commerce管理者の Fastly 設定バ
 
 Fastly オリジンシールドを有効にすると、Fastly Image Optimizer もアクティブになります。 商品カタログ画像がAdobe Commerceに保存されている場合、このサービスを利用すれば、リソースを集中的に消費する商品カタログ画像の変換処理をすべて、Fastly にオフロードしたり、Adobe Commerce オリジンからオフロードしたりできます。 また、画像がエッジロケーションで変換され、Adobe Commerce オリジンに戻るリクエストの数を減らすことで待ち時間をなくすことで、ページの読み込み時間についても、エンドユーザーの応答時間が改善されます。
 
-Fastly の画像の最適化は、オリジンシールドが有効化された後に限り、管理の Fastly 設定で「ディープイメージの最適化を有効化」することで有効化できます。 Fastly での画像の最適化の設定について詳しくは、Adobe Commerce [ 開発者向けドキュメント ](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) を参照してください。
+Fastly の画像の最適化は、オリジンシールドが有効化された後に限り、管理の Fastly 設定で「ディープイメージの最適化を有効化」することで有効化できます。 Fastly での画像の最適化の設定について詳しくは、Adobe Commerce [ 開発者向けドキュメント ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization) を参照してください。
 
 ![Adobe Commerce Admin での Fastly 画像最適化設定のスクリーンショット ](../assets/commerce-at-scale/image-optimization.svg)
 

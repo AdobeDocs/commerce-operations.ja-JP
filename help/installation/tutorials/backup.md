@@ -2,7 +2,7 @@
 title: ファイル・システム、メディア、データベースのバックアップとロールバック
 description: Adobe Commerce アプリケーションをバックアップおよび復元するには、次の手順に従います。
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、_クラウドガイド_ の [ スナップショットとバックアップの管理 ](https://devdocs.magento.com/cloud/project/project-webint-snap.html) を参照してください。
+>クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、_クラウドガイド_ の [ スナップショットとバックアップの管理 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) を参照してください。
 
 ## バックアップを有効にする
 

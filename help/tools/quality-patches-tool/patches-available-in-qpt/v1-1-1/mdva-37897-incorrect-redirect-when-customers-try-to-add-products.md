@@ -3,7 +3,7 @@ title: 「MDVA-37897：最近表示された項目から製品を追加する際
 description: MDVA-37897 パッチを使用すると、最近表示された項目ウィジェットからオプションを含む製品を追加しようとすると、誤ったリダイレクトの問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches） 1.1.1 がインストールされている場合に利用できます。 パッチ ID は MDVA-37897。 この問題はAdobe Commerce バージョン 2.4.4 で修正される予定であることに注意してください。
 feature: Products
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -51,8 +51,8 @@ MDVA-37897 パッチを使用すると、最近表示された項目ウィジェ
 
 個々のパッチを適用するには、デプロイメントタイプに応じて次のリンクを使用します。
 
-* Adobe Commerce オンプレミス：開発者向けドキュメントの [ ソフトウェアアップデートガイド/パッチを適用する ](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)。
-* アドビのクラウドインフラストラクチャでのAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチを適用 ](https://devdocs.magento.com/cloud/project/project-patch.html)。
+* Adobe Commerce オンプレミス：開発者向けドキュメントの [ ソフトウェアアップデートガイド/パッチを適用する ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)。
+* アドビのクラウドインフラストラクチャでのAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチを適用 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
 
 ## 関連資料
 

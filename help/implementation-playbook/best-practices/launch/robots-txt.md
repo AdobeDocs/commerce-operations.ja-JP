@@ -4,7 +4,7 @@ description: 「robots.txt」および「sitemap.xml」ファイルを使用し�
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 単一サイトのストアフロント用に `robots.txt` ファイルと `sitemap.xml` ファイルを設定する際は、次のベストプラクティスに従います。
 
-- プロジェクトで [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) バージョン 2002.0.12 以降が使用されていることを確認します。
+- プロジェクトで [`ece-tools`](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) バージョン 2002.0.12 以降が使用されていることを確認します。
 - 管理アプリケーションを使用して、`robots.txt` ファイルにコンテンツを追加します。
 
   >[!TIP]
@@ -64,12 +64,12 @@ ht-degree: 0%
 
 >[!INFO]
 >
->手順について詳しくは、[ サイトマップと検索エンジンロボットの追加 ](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) を参照してください。
+>手順について詳しくは、[ サイトマップと検索エンジンロボットの追加 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) を参照してください。
 
 
 ### マルチサイトのストアフロント
 
-クラウドインフラストラクチャー上にAdobe Commerceを 1 つ実装するだけで、複数のストアを設定して実行できます。 [ 複数の web サイトまたはストアの設定 ](https://devdocs.magento.com/cloud/project/project-multi-sites.html) を参照してください。
+クラウドインフラストラクチャー上にAdobe Commerceを 1 つ実装するだけで、複数のストアを設定して実行できます。 [ 複数の web サイトまたはストアの設定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites) を参照してください。
 
 マルチサイトストアフロントでは、[ シングルサイトストアフロント ](#single-site-storefronts) 用の `robots.txt` ファイルと `sitemap.xml` ファイルの設定に関するベストプラクティスが適用されますが、次の 2 つの重要な違いがあります。
 
@@ -111,7 +111,7 @@ ht-degree: 0%
 
 ## 追加情報
 
-- [Web サイト、ストア、ストア表示について ](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
-- [Web サイトの追加 ](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [Fastly を使用して、Adobe Commerce サイトの悪意のあるトラフィックをブロックする ](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
+- [Web サイト、ストア、ストア表示について ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [Web サイトの追加 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Fastly を使用して、Adobe Commerce サイトの悪意のあるトラフィックをブロックする ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
 - [robots.txt で、cloud infrastructure 2.3.x のAdobe Commerceに 404 エラーが発生する ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)

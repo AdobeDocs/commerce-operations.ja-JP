@@ -2,7 +2,7 @@
 title: '[!DNL Upgrade Compatibility Tool] 関連ツール'
 description: Adobe Commerce上のプロジェクトに関連するツ  [!DNL Upgrade Compatibility Tool]  ルについて詳しく説明します。
 exl-id: a8cebb74-fba9-42ce-914b-b8fb6c7f53bf
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Upgrade Compatibility Tool] に関連するツールもあり、同様の結果を得たり、[!DNL Upgrade Compatibility Tool] の実行をトリガーにしたりできます。
 
-- **[!DNL Security scanner]**: Adobe Commerceのお客様は、マルウェアを事前に検出して店舗が危険にさらされた場合に通知することで、店舗のセキュリティ状況に関するリアルタイムのインサイトを得ることができます。 詳しくは、[[!DNL Security scan]  ユーザーガイド ](https://docs.magento.com/user-guide/magento/security-scan.html) を参照してください。
+- **[!DNL Security scanner]**: Adobe Commerceのお客様は、マルウェアを事前に検出して店舗が危険にさらされた場合に通知することで、店舗のセキュリティ状況に関するリアルタイムのインサイトを得ることができます。 詳しくは、[[!DNL Security scan]  ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) を参照してください。
 
 - **[!DNL Site-Wide Analysis Tool]**: プロアクティブなセルフサービスツールで、Adobe Commerce インストールのセキュリティと操作性を確保するための詳細なシステムインサイトおよびレコメンデーションが含まれている中央リポジトリ。 24 時間 365 日のパフォーマンス監視、レポート、アドバイスを提供して、潜在的な問題を特定し、サイトの正常性、安全性、アプリケーション設定をよりよく可視化します。 詳しくは、[[!DNL Site-Wide Analysis Tool]  ガイド ](../../tools/site-wide-analysis-tool/intro.md) を参照してください。
 

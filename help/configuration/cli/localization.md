@@ -2,7 +2,7 @@
 title: 翻訳辞書と言語パッケージ
 description: 翻訳辞書を生成し、言語パッケージを作成する方法を説明します。
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 0%
@@ -317,7 +317,7 @@ Commerce アプリケーションが `en_GB` パッケージ内の単語や語�
 
 [翻訳の概要]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [翻訳辞書]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[翻訳を設定します]: https://docs.magento.com/user-guide/stores/store-language-add.html?Highlight=translation
+[翻訳を設定します]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
 [言語パッケージの詳細情報]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

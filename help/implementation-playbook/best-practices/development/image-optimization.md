@@ -4,7 +4,7 @@ description: 画像を最適化する手順を説明し、Fastly の画像最適
 role: Developer, Admin
 feature: Best Practices
 exl-id: ada8b987-97ed-4232-9e1b-7e0a791a0807
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 1%
@@ -32,9 +32,9 @@ Commerce サイトに画像をアップロードする前に、パフォーマ�
 
 ## Fastly での画像の最適化の有効化と設定
 
-Adobe Commerce Cloud プロジェクトの Fastly サービスを設定したら、[Fastly 画像の最適化 ](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) を参照して、画像の最適化を有効にし設定する手順を確認してください。
+Adobe Commerce Cloud プロジェクトの Fastly サービスを設定したら、[Fastly 画像の最適化 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization) を参照して、画像の最適化を有効にし設定する手順を確認してください。
 
 ## 追加情報
 
-- [Fastly のセットアップ ](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
+- [Fastly のセットアップ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)
 - [ 画像の最適化が不十分だと、パフォーマンスの問題を引き起こす可能性があります ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)

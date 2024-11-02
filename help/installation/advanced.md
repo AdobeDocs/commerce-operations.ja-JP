@@ -2,7 +2,7 @@
 title: オンプレミスでの高度なインストール
 description: 所有するインフラストラクチャでのAdobe Commerceの高度なインストールシナリオについて説明します。
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '2314'
 ht-degree: 0%
@@ -119,7 +119,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 管理者ユーザーは、インストール中またはインストール後に作成できます。 インストール時にユーザーを作成する場合は、すべての管理者資格情報の変数が必要です。 [ サンプルローカルホストのインストール ](#sample-localhost-installations) を参照してください。
 
-次の表に、使用可能なすべてのインストールパラメーターではなく、多くのパラメーターを示します。 完全な一覧については、[ コマンド ライン ツール リファレンス ](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html) を参照してください。
+次の表に、使用可能なすべてのインストールパラメーターではなく、多くのパラメーターを示します。 完全な一覧については、[ コマンド ライン ツール リファレンス ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises) を参照してください。
 
 | 名前 | 値 | 必須？ |
 |--- |--- |--- |

@@ -2,7 +2,7 @@
 title: env.php リファレンス
 description: env.php ファイルの値のリストを参照してください。
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 0%
@@ -146,7 +146,7 @@ Commerceでは、パスワードやその他の機密データを保護するた
 ]
 ```
 
-[ 暗号化キー ](https://docs.magento.com/user-guide/system/encryption-key.html) について詳しくは、_Commerce ユーザーガイド_ を参照してください。
+[ 暗号化キー ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) について詳しくは、_Commerce ユーザーガイド_ を参照してください。
 
 ## db
 
@@ -203,7 +203,7 @@ Web サーバーが `/pub` ディレクトリからCommerce アプリケーシ�
 ]
 ```
 
-詳細情報 [ ダウンロード可能なドメイン ](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd)。
+詳細情報 [ ダウンロード可能なドメイン ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
 
 ## install
 

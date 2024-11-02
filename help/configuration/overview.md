@@ -2,7 +2,7 @@
 title: 設定ガイドの概要
 description: Adobe Commerce アプリケーションの設定可能なすべての機能とサービスについて説明します。
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 9%
@@ -25,7 +25,7 @@ _設定_ ガイドでは、設定可能なCommerce アプリケーションの�
 
 ## Commerce Admin Configuration
 
-[Commerce ユーザーガイドには、Commerce Admin の各設定に関するフィールドの説明を理解するのに役立つ ](https://docs.magento.com/user-guide/stores/configuration.html) 対応するトピックがあります。
+[Commerce ユーザーガイドには、Commerce Admin の各設定に関するフィールドの説明を理解するのに役立つ ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview) 対応するトピックがあります。
 
 ## クラウド設定
 

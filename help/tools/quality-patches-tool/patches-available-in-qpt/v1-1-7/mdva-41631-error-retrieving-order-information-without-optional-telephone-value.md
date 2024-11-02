@@ -3,7 +3,7 @@ title: 'MDVA-41631: オプションの"telephone"値なしで注文情報を取�
 description: MDVA-41631 パッチでは、オプションの「telephone」値を使用せずにGraphQLから注文情報を取得する際にエラーが発生する問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches） 1.1.7 がインストールされている場合に利用できます。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
 feature: Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -36,8 +36,8 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.1 ～ 2.4.3-p1
 
 1. **ストア**/**設定**/**カスタマー**/**カスタマー設定**/**名前と住所のオプション**/**電話を表示** に移動し、電話番号をオプションとして設定します。
 1. ログインしているユーザーとしてGraphQL API を使用して注文します。
-   * 請求先住所と配送先住所を設定する際は、電話番号を設定しないでください。 アドビの開発者向けドキュメントの [GraphQLのチェックアウトチュートリアル ](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-customer.html) に記載されている手順に従います。
-1. GraphQL [customerOrders クエリ ](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer-orders.html) を使用して注文を取得します。
+   * 請求先住所と配送先住所を設定する際は、電話番号を設定しないでください。 アドビの開発者向けドキュメントの [GraphQLのチェックアウトチュートリアル ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-customer.html) に記載されている手順に従います。
+1. GraphQL [customerOrders クエリ ](https://developer.adobe.com/commerce/webapi/graphql/queries/customer-orders.html) を使用して注文を取得します。
 
 <pre>
 <code class="language-graphql">

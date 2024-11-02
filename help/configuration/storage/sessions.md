@@ -3,7 +3,7 @@ title: セッションストレージの場所
 description: セッションファイルの保存場所について説明します。
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ## セッションサイズの管理
 
-[ ユーザーガイド ](https://docs.magento.com/user-guide/stores/security-session-management.html) の _セッション管理_ を参照してください。
+[ ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) の _セッション管理_ を参照してください。
 
 ## ガベージコレクション設定
 

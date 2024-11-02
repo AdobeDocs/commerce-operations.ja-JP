@@ -4,7 +4,7 @@ description: 管理またはコマンドラインからAdobe Commerce プロジ�
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 0%
@@ -92,6 +92,6 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 ## 追加情報
 
 - [クライアントサイドの最適化設定](../../../performance/configuration.md#client-side-optimization-settings)
-- [ ユーザーガイド：リソースファイルの最適化 ](https://docs.magento.com/user-guide/system/file-optimization.html)
+- [ ユーザーガイド：リソースファイルの最適化 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [ フロントエンド開発者ガイド：CSS マージ、縮小、サイトのパフォーマンス ](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [高度なJavaScriptのバンドル](../../../performance/advanced-js-bundling.md)

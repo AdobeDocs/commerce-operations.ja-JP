@@ -2,7 +2,7 @@
 title: 管理での複数の web サイト、ストア、ストア表示の設定
 description: Commerce Admin で、追加の web サイト、ストア、ストアビューを設定します。
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: f7c82844fd6d006e4ebbcf56f6e10338f67d0bdd
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -13,10 +13,10 @@ ht-degree: 0%
 
 このタスクでは、各ストアのルートカテゴリ（および必要に応じて追加のカテゴリ）を作成する必要があります。 このトピックで説明するタスクは、複数のストアを設定する 1 つの方法となります。 詳しくは、Commerce ユーザーガイドの次の資料を参照してください。
 
-- [ カテゴリ ](https://docs.magento.com/user-guide/catalog/categories.html)
-- [Web サイトの追加 ](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [URL を保存 ](https://docs.magento.com/user-guide/stores/store-urls.html)
-- [ コンテンツ ](https://docs.magento.com/user-guide/cms/content-menu.html)
+- [ カテゴリ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
+- [Web サイトの追加 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [URL を保存 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [ コンテンツ ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -34,7 +34,7 @@ ht-degree: 0%
 1. **カテゴリ名** フィールドに、このカテゴリを識別する一意の名前を入力します。
 1. 「カテゴリを有効にする」が **はい** に設定されていることを確認します。
 
-   このページの他のオプションについて詳しくは、[ ルートカテゴリ ](https://docs.magento.com/user-guide/catalog/category-root.html) を参照してください。
+   このページの他のオプションについて詳しくは、[ ルートカテゴリ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root) を参照してください。
 
    次の図に例を示します。
 
@@ -131,7 +131,7 @@ Commerceでは、ストアコードをサイトベース URL に追加するオ�
 
 これにより、今後のアップグレードで `index.php` と `.htaccess` がCommerce コードベースと非同期になるのを防ぐことができます。
 
-[Commerce ユーザーガイド ](https://docs.magento.com/user-guide/stores/store-urls.html) を参照してください。
+[Commerce ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls) を参照してください。
 
 ベース URL にストアコードを追加するには：
 
