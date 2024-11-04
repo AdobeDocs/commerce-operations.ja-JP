@@ -2,9 +2,9 @@
 title: サードパーティ拡張機能の管理
 description: Adobe Commerce Extensions をインストール、有効化、アップグレード、アンインストールするには、次の手順に従います。
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: f057cf082eeab1e34957e284817c6b93517de21b
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ Adobe Commerceの動作を拡張またはカスタマイズするコードは、
 - テーマ（ストアフロントと管理者のルックアンドフィールを変更）
 - 言語パッケージ （ストアフロントをローカライズおよび管理者）
 
->[!TIP]
->
->ここでは、コマンドラインインターフェイスを使用して、Commerce Marketplaceから購入したサードパーティの拡張機能を管理する方法について説明します。 _any_ 拡張機能のインストールにも同じ手順を使用できます。必要なのは、拡張機能の Composer 名とバージョンだけです。 これを見つけるには、拡張機能の `composer.json` ファイルを開き、`"name"` と `"version"` の値を確認します。
+ここでは、コマンド ライン インターフェイスを使用して、（オンプレミス _プロジェクトのCommerce Marketplaceから購入したサード パーティ製の拡張機能を管理する方法について説明します_。 クラウドインフラストラクチャプロジェクトの場合は、[ 拡張機能の管理 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) を参照してください。
+
+_any_ 拡張機能のインストールにも同じ手順を使用できます。必要なのは、拡張機能の Composer 名とバージョンだけです。 これを見つけるには、拡張機能の `composer.json` ファイルを開き、`"name"` と `"version"` の値を確認します。
 
 ## インストール
 
@@ -70,7 +70,7 @@ Commerce Marketplaceから拡張機能の Composer 名とバージョンを取�
 
    ![Marketplace の購入履歴 ](../../assets/installation//marketplace-my-purchases.png)
 
-1. インストールする拡張機能を見つけて、「技術的な詳細 **をクリックし** す。
+1. インストールする拡張機能を見つけ、コンポーネント名とバージョンをメモします。
 
    ![ 技術的な詳細は、拡張機能の Composer 名を示します ](../../assets/installation/marketplace-extension-technical-details.png)
 
@@ -241,13 +241,13 @@ bin/magento module:status
    - Composer ベースの拡張子の場合、Adobe Commerce `composer.json` ファイルから拡張子を削除します。
 
      ```bash
-     composer remove <package-name>
+     composer remove <component-name>
      ```
 
    - Composer ベース以外の拡張機能の場合は、Adobe Commerce プロジェクトリポジトリから物理ファイルを削除します。
 
      ```bash
-     rm -rf app/code/<vendor-name>/<module-name>
+     rm -rf app/code/<vendor-name>/<component-name>
      ```
 
 1. `config.php` ファイルがAdobe Commerce プロジェクトリポジトリのソース管理下にある場合は、`config.php` ファイルから拡張子を削除します。
