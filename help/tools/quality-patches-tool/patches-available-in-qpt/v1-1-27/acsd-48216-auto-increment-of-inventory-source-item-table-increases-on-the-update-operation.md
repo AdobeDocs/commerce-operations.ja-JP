@@ -3,9 +3,9 @@ title: 'ACSD-48216: *UPDATE*操作で inventory_source_item* テーブルの*AUT
 description: ACSD-48216 パッチを適用して、Adobe Commerceの問題を修正します。この問題では、*UPDATE*処理で inventory_source_item* テーブルの*AUTO_INCREMENT が増加します。
 feature: Admin Workspace, Inventory, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,11 @@ ACSD-48216 パッチは、*inventory_source_item* テーブルの *AUTO_INCREMEN
 
 ## 問題
 
-*inventory_source_item* テーブルの *AUTO_INCREMENT* は、*UPDATE* 操作で増加します。
+`UPDATE` の操作で `inventory_source_item` テーブルの `AUTO_INCREMENT` が増加します。
 
 <u> 再現手順 </u>:
 
-1. *inventory_source_item* テーブルの現在の値 *AUTO_INCREMENT* をチェックします。
+1. `inventory_source_item` テーブルの `AUTO_INCREMENT` の現在の値を確認します。
 
 ```bash
 MySQL > show create table inventory_source_item;
@@ -75,29 +75,27 @@ CREATE TABLE `inventory_source_item` (
 }
 ```
 
-1. *inventory_source_item* テーブルの *AUTO_INCREMENT* 値を再度確認します。
+1. `inventory_source_item` テーブルの `AUTO_INCREMENT` 値を再度確認します。
 
 <u> 期待される結果 </u>:
 
-*inventory_source_item* テーブルの *AUTO_INCREMENT* 値は、更新操作のたびに増加しません。
+`inventory_source_item` テーブルの `AUTO_INCREMENT` 値は、更新操作のたびに増加するわけではありません。
 
 <u> 実際の結果 </u>:
 
-*inventory_source_item* テーブルの *AUTO_INCREMENT* 値は、更新操作のたびに増加します。
+`inventory_source_item` テーブルの `AUTO_INCREMENT` 値は、更新操作のたびに増加します。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイド
+* クラウドインフラストラクチャー上のAdobe Commerce:[ アップグレードとパッチ適用 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) クラウドインフラストラクチャー上のCommerce ガイド
 
 ## 関連資料
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
-
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [ を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
-
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) をサポートナレッジベースに追加しました
+* [ を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）
+* Commerce実装プレイブックの [ データベーステーブルを変更する際のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
 
 QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
