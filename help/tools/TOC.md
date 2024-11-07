@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: ebcf6c2f99b44489d3914dc4a83fd0f3f944ad93
+source-git-commit: 2a751e4548ab032a1d9339efeb66559c3836e58e
 workflow-type: tm+mt
-source-wordcount: '6093'
+source-wordcount: '6106'
 ht-degree: 0%
 
 ---
@@ -642,6 +642,7 @@ ht-degree: 0%
          - [ACSD-60590：ベストセラーの集計日別レポート生成のパフォーマンスの向上](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925:[!UICONTROL Media Gallery] 内の項目の並べ替え](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
          - [ACSD-59865：数量が不十分なため、[!UICONTROL Cart Price Rule] が以前のルールのキャンセルに失敗します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue.md)
+         - [ACSD-59366：チームリストに表示されていないディアクティベートされたユーザーのチームを削除](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59366-delete-teams-with-deactivated-users-not-visible-in-the-team-list.md)
          - [ACSD-60788: CSP エラーのため  [!DNL Google Tag Manager]  カスタムスクリプトが実行されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60788-fixes-issue-where-custom-scripts-for-google-tag-manager-are-not-executed-due-to-content-security-policy-errors.md)
          - [ACSD-59952：別の共有カタログと同じグループ ID を持つ共有カタログの削除中にエラーが発生しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
       - v1.1.53{#v1-1-53}
