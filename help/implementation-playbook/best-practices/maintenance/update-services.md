@@ -4,9 +4,9 @@ description: クラウドインフラストラクチャテクノロジースタ�
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 5e3289b328b51eb50354efdc1571283791175b9a
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Pro プランのお客様は、[ 統合環境 ](https://experienceleague.adobe.c
 
 >[!WARNING]
 >
->サービスのアップグレードは、インフラストラクチャ・チームに 48 営業時間内に通知しない限り、本番環境にプッシュすることはできません。 実稼動環境のダウンタイムを最小限に抑え、目的の期間内に設定を更新できるインフラストラクチャサポートエンジニアを確保する必要があるので、これが必要になります。
+>Adobeのインフラストラクチャ・チームに 48 営業時間内に通知を行わなければ、サービスのアップグレードを本番システムにプッシュすることはできません。 これは、実稼動環境のダウンタイムを最小限に抑え、Adobeがインフラストラクチャサポートエンジニアを依頼して、必要な期間内に設定を更新できるようにするために必要です。 Adobeでは、サービスのアップグレード中にサイトをメンテナンスモードにすることをお勧めします。
 
 サービス バージョンと提供終了日の一覧は、[https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml) のファイルで確認できます。
 
