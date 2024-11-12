@@ -2,9 +2,9 @@
 title: アプリケーションモード
 description: Commerce アプリケーションは、必要に応じて異なるモードで動作します。 使用可能なアプリケーションモードの詳細なリストを表示します。
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: 5003e8dcbb3736201ea19ebe30d5e56775096157
+source-git-commit: c415c3427f513255b9d4ebe1d24ba4024df21928
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,12 @@ Adobe Commerceのオペレーションモードを手動で変更する方法に
 
 ## クラウドサポート
 
-読み取り専用ファイルシステムが原因で、リモートクラウド環境のモードを変更できません。 `ece-tools` パッケージが複数の設定ソースに基づいたファイルを上書きするので、`app/etc/env.php` ファイルを変更してモードを変更しようとしないでください。
+読み取り専用ファイルシステムにより、リモートクラウド環境のモードを変更することには厳密な制限があり、Adobe Commerce サポートによって上書きすることはできません。 `ece-tools` パッケージが複数の設定ソースに基づいたファイルを上書きするので、`app/etc/env.php` ファイルを変更してモードを変更しようとしないでください。
 
 クラウドインフラストラクチャー上のAdobe Commerceでは、デプロイメント中にアプリケーションを自動的に _メンテナンス_ モードで実行します。これにより、デプロイメントが完了するまでサイトがオフラインになります。 それ以外の場合、アプリケーションは _実稼動_ モードのままになります。 [2}Cloud Infrastructure 上のCommerce ガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) の { デプロイメントプロセス } を参照してください _。_
 
 Cloud Docker for Commerceを開発ツールとして使用する場合、Docker 環境に _developer_ モードでクラウドインフラストラクチャプロジェクトをデプロイできますが、ファイル同期処理が増えるため、パフォーマンスが低下します。 _Cloud Docker for Commerce ガイド ](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) の [Docker 環境のデプロイ_ を参照してください。
+
 
 ## デフォルトモード
 
@@ -54,6 +55,10 @@ Commerce アプリケーションを拡張およびカスタマイズする場�
 - エラーハンドラーで、ログではなく例外がスローされる
 - イベント サブスクライバーを呼び出せない場合に例外がスローされます
 - カスタム `X-Magento-*` HTTP リクエストヘッダーと応答ヘッダーを表示します
+
+>[!NOTE]
+>
+>このモードはAdobe Commerce Cloud環境ではサポートされず、Adobe Commerce サポートはアプリケーションモードの変更を容易にできません。
 
 ## 実稼動モード
 
