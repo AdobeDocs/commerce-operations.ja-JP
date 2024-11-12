@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Adobe CommerceのデプロイメントでGraphQL Application Server を有効にするには、次の手順に従います。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 620be59a5b66bd4f55997951c59e473ac14a5c21
+source-git-commit: c5446f0273705b158297c0a253054742ec95b44e
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2082'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ git push
 
 1. [2.4.7-appserver ブランチ ](https://github.com/magento/magento-cloud/tree/2.4.7-appserver) のクラウドテンプレートを使用して、クラウドインフラストラクチャにAdobe Commerceをデプロイします。
 1. すべてのCommerceのカスタマイズと拡張機能に、GraphQL Application Server との互換性があることを確認します。
-1. `CRYPT_KEY` 環境変数がインスタンスに対して設定されていることを確認します。 この変数のステータスは、クラウドプロジェクトポータル（オンボーディング UI）で確認できます。
+1. `CRYPT_KEY` 環境変数がインスタンスに対して設定されていることを確認します。 この変数のステータスは、Cloud Console で確認できます。
 1. Commerce Cloudプロジェクトのクローンを作成します。
 1. 必要に応じて、`application-server/.magento/.magento.app.yaml.sample` の名前を `application-server/.magento/.magento.app.yaml` に変更し、.magento.app.yaml の設定を調整します。
 1. GraphQL Application Server にトラフィックをリダイレクトするには、`project_root/.magento/routes.yaml` ファイルで次のルートの設定 `/graphql` コメント解除します。
