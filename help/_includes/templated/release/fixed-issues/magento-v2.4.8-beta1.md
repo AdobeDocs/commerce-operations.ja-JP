@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2d46933005b9848fee526d0a9f96e2e5ff58cbb8
+source-git-commit: e05e4e4ef547bfb95fdcc53c2095ef0725b0a6e1
 workflow-type: tm+mt
-source-wordcount: '14732'
+source-wordcount: '14731'
 ht-degree: 0%
 
 ---
@@ -809,10 +809,10 @@ laminas/laminas-stdlib
    * _修正点_：システムでは、必要な状態を持つ新しい国が追加された場合にのみ、変更された国を「general/region/state_required」設定に追加するようになりました。これにより、地域が無効であると想定されるカスタムコードの中断を防ぐことができます。 以前は、必須の状態を持つ新しい国を追加すると、「general/region/state_required」設定が必須の状態を持つデフォルトの国にリセットされ、ショップが壊れる可能性がありました。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/37796>
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38076>
-* _AC-9712_: https://github.com/magento/magento2/issues/37841
-   * _注意を修正_：複雑な `calc` 式を持つ php と nodejs ライブラリ （grunt）の間の less コンパイルの違い
-   * _GitHub の問題_:&lt;<https://github.com/magento/magento2/commit/b34c0a75>>
-   * _GitHub コードの投稿_：更新後の php と nodejs ライブラリ（grunt）の less コンパイルの違いを修正しましたwikimedia/less.php:^5.x
+* _AC-9712_: php と nodejs ライブラリ （grunt）のコンパイルが少なく、複雑な `calc` 式を持つ違い
+   * _修正点_：更新後の php と nodejs ライブラリの less コンパイルの違いを修正します。wikimedia/less.php:^5.x
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37841>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b34c0a75>
 * _ACP2E-2692_：部分インデックス作成の実行時に「Base table or view not found」エラーが発生する
    * _修正点_：セカンダリ db 接続の場合、部分再インデックスが大きな変更ログで正しく機能するようになりました
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ba25af8a>
