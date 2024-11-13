@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 8fa763e2c5ec006f638b7265c49f4576a6ab3b32
+source-git-commit: 737c3195b775e5385065fdf0789addfa21aa81e3
 workflow-type: tm+mt
-source-wordcount: '6137'
+source-wordcount: '6151'
 ht-degree: 0%
 
 ---
@@ -652,6 +652,7 @@ ht-degree: 0%
          - [ACSD-60584：ある web サイト用に作成されたアクセストークンが、他の web サイトの情報にアクセスできます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60584-access-token-created-for-one-website-is-allowed-to-access-information-on-other-websites.md)
          - [ACSD-61528:GraphQLを使用してロールを取得しても、結果が返されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results.md)
          - [ACSD-48318：環境エミュレーションの「system.log」でのネスティングエラー](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log.md)
+         - [ACSD-60804：削除された会社に関連付けられている顧客を編集すると、エラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error.md)
       - v1.1.54 {#v1-1-54}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
       - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
