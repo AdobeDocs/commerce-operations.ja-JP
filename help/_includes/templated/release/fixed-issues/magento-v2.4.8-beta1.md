@@ -1,7 +1,7 @@
 ---
-source-git-commit: d2fe92c778cb90912062c5f318332a02f6a4131e
+source-git-commit: 2d46933005b9848fee526d0a9f96e2e5ff58cbb8
 workflow-type: tm+mt
-source-wordcount: '14792'
+source-wordcount: '14732'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ laminas/laminas-stdlib
 
 ## 修正された問題
 
-Magento Open Source 2.4.8 コアコードの 254 の問題を修正しました。 このリリースで修正された問題の一部を以下に示します。
+Magento Open Source 2.4.8 コアコードの 253 の問題を修正しました。 このリリースで修正された問題の一部を以下に示します。
 
 ### API
 
@@ -1143,10 +1143,6 @@ bin/magento config:set twofactorauth/google/leeway VALUE へ
 * _AC-12128_:Prototype.js のセキュリティ脆弱性修正 CVE-2020-27511
    * _修正点_:Prototype.js 1.7.3 のセキュリティ脆弱性 CVE-2020-27511 に対応するようにシステムを更新し、システム全体のセキュリティを強化しました。 このアップデート以前は、細工されたHTMLタグを削除することで、Regular Expression Denial of Service （ReDOS）の影響を受けやすくなっていました。
    * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/de4dfb8e>
-* _AC-12128_:
-   * _Fix note_:Prototype.js のセキュリティ脆弱性の修正 CVE-2020-27511
-   * _GitHub の問題_:&lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _GitHub コード投稿_:Prototype.js 1.7.3 のセキュリティ脆弱性 CVE-2020-27511 に対応し、システム全体のセキュリティを強化しました。 このアップデート以前は、細工されたHTMLタグを削除することで、Regular Expression Denial of Service （ReDOS）の影響を受けやすくなっていました。
 * _AC-12189_: Grunt Less がソース マップに pub/ プレフィックスを使用する
    * _修正メモ_：システムは、grunt を使用する際に、パスの/pub プレフィックスを付けずに less/css ソースマップを生成するようになりました。これにより、web サーバー設定で回避策を実行する必要がなくなります。 以前は、sourcemaps パスで/pub プレフィックスを使用するには、web サーバーが正しく機能するように特定の設定が必要でした。
    * _GitHub の問題_:<https://github.com/magento/magento2/issues/38837>
