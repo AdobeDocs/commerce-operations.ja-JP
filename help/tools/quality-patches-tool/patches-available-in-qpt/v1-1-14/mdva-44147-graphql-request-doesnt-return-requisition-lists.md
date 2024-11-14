@@ -1,18 +1,19 @@
 ---
-title: 「MDVA-44147:GraphQL リクエストで購買依頼リストが返されない」
-description: MDVA-44147 パッチは、GraphQL リクエストが要求リストを返さない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches） 1.1.14 がインストールされている場合に利用できます。 パッチ ID は MDVA-44147。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+title: "MDVA-44147: [!DNL GraphQL] request does't return [!UICONTROL Requisition Lists]"
+description: MDVA-44147 パッチは、 [!DNL GraphQL] request が [!UICONTROL Requisition Lists] を返さない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches） 1.1.14 がインストールされている場合に利用できます。 パッチ ID は MDVA-44147。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
 feature: B2B, GraphQL
 role: Admin
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+exl-id: 534c4e45-6521-45c0-ae4e-c60b754f432f
+source-git-commit: fa95ca5ac2f7606386a785fb3b29f56672d555b1
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
-# MDVA-44147:GraphQL要求で要求リストが返されない
+# MDVA-44147:[!DNL GraphQL] 要求が [!UICONTROL Requisition Lists] を返さない
 
-MDVA-44147 パッチは、GraphQL リクエストが要求リストを返さない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)1.1.14 がインストールされている場合に使用できます。 パッチ ID は MDVA-44147。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+MDVA-44147 パッチは、[!DNL GraphQL] のリクエストが [!UICONTROL Requisition Lists] を返さない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)1.1.14 がインストールされている場合に使用できます。 パッチ ID は MDVA-44147。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -30,12 +31,12 @@ MDVA-44147 パッチは、GraphQL リクエストが要求リストを返さな�
 
 ## 問題
 
-GraphQL リクエストが購買依頼リストを返さない。
+リクエ [!DNL GraphQL] トが [!UICONTROL Requisition Lists] を返しません。
 
 <u> 再現手順 </u>:
 
-1. **ストア**/**設定**/**設定**/**一般**/**B2B 機能** に移動し、購買依頼リストを有効化します。
-1. 顧客としてログインし、[ 購買依頼リスト ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists) に製品を追加します。
+1. **ストア**/**設定**/**設定**/**一般**/**B2B 機能** に移動し、**[!UICONTROL Requisition List]** を有効にします。
+1. 顧客としてログインし、[[!UICONTROL Requisition List]](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists) に製品を追加します。
 1. [ 顧客トークン ](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html) を作成します。
 
    <pre>
@@ -51,7 +52,7 @@ GraphQL リクエストが購買依頼リストを返さない。
       </code>
       </pre>
 
-1. 次の問合せを使用して、顧客からすべての購買依頼リストを取得します。 値が `Bearer <customer_token>` の **Authorization** ヘッダーを使用します。 詳しくは、開発者向けドキュメントの [ 顧客クエリ ](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html) 記事を参照してください。
+1. 次のクエリを使用して、顧客からすべての [!UICONTROL Requisition Lists] を取得します。 値が `Bearer <customer_token>` の **Authorization** ヘッダーを使用します。 詳しくは、開発者向けドキュメントの [ 顧客クエリ ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/) 記事を参照してください。
 
    リクエスト :
 
