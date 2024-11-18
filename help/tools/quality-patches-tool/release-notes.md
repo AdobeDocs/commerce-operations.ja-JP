@@ -2,7 +2,7 @@
 title: リリースノート
 description: Adobe Commerceで使用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: fb884f895cb03dcc920dc3de9baa63deb8737cd3
+source-git-commit: 3f6093b55c7bbfaf8666438ac1fef8f90432d947
 workflow-type: tm+mt
 source-wordcount: '23125'
 ht-degree: 0%
@@ -68,7 +68,7 @@ ht-degree: 0%
 * **ACSD-61553** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.7） – 優先度や **[!UICONTROL Maximum Qty Discount is Applied To]** が異なる複数のディスカウントが商品に適用される場合に、**[!UICONTROL Cart Price Rule]** ディスカウントが正しく計算されない問題を修正しました。
 * **ACSD-61667** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8） – 店舗での受け取りで多くのソースが発生した場合の出荷を作成するための在庫性能を向上させます。
 * **ACSD-61969** （Adobe Commerce >=2.4.7 &lt;2.4.8 の場合） – クーポンコードが設定されたのと完全に一致するように、大文字と小文字を区別するクーポンコードを入力する必要がある問題を修正しました。
-* 更新されたパッチ：ACSD-54989、ACSD-60632
+* 更新されたバージョン：**ACSD-54989**、**ACSD-60632**
 
 ## v1.1.52 {#v1-1-52}
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 * **ACSD-60788** （Adobe Commerce >=2.4.7 &lt;2.4.8 の場合） – コンテンツセキュリティポリシー（CSP）のエラーにより、[!DNL Google Tag Manager] のカスタムスクリプトが実行されない問題を修正しました。
 * **ACSD-61322** （Adobe Commerce >=2.4.6 &lt;2.4.8 の場合） – デフォルト（一般グループ）の [!UICONTROL Shared Catalog] に割り当てら [!UICONTROL Products/Categories] ていないアセットが、XML サイトマップに引き続き含まれる問題を修正しました。
 * **ACSD-61366** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.8 の場合） - DB 接続用にポートが指定されている場合に、`setup:static-content:deploy --jobs 4` コマンドが複数のジョブで実行されて失敗し、*Port must be configured within host parameter* エラーが発生する問題を修正しました。
-* 更新されたバージョン：**ACSD-54989**、**ACSD-60632**
+* 更新されたパッチ：ACSD-51857、ACSD-57394
 
 ## v1.1.51 {#v1-1-51}
 
