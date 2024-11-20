@@ -1,7 +1,7 @@
 ---
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 0d5eeb691281d7c62aa64a9d8cd042f18504a67f
 workflow-type: tm+mt
-source-wordcount: '6363'
+source-wordcount: '6370'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ _用語の属性：_
 _名詞_
 
 注文、カタログ、コンテンツ、設定を管理する、パスワードで保護されたストアのバックオフィス。
-ユーザーは管理領域にアクセスして、製品、注文、出荷、CMS コンテンツ、ストアフロントのデザイン、顧客情報など、ストアを管理します。
+ユーザーは管理領域にアクセスして、商品、注文、発送、CMSのコンテンツ、ストアフロントのデザイン、お客様の情報など、ストアを管理します。
 管理者ユーザーには、機能、オプションおよび機能へのアクセスを制御する権限に関連付けられた役割があります。
 
 詳細情報：[Adobe Commerce ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
@@ -248,7 +248,7 @@ _形容詞_
 
 実質的にまたはインターネットを介してのみ機能するビジネスとは異なり、永続的な物理的な場所を持つ小売業。
 
-[Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) および [Order Management](https://omsdocs.magento.com/getting-started/terminology/) の場合、この店舗は商品の数量、発送注文の追跡、店舗内の受け取りをサポートするソースです。
+[Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) および [Order Management](#oms) の場合、この店舗は商品の数量、発送注文の追跡、店舗内の受け取りをサポートするソースです。
 
 _用語の属性：_
 
@@ -454,7 +454,7 @@ _用語の属性：_
 
 * _フィールド：cloud_
 
-### CMS ブロック
+### CMSブロック
 
 _名詞_
 
@@ -981,7 +981,7 @@ _名詞_
 製品のカスタマイズ可能なオプションを使用して、製品の [ マークアップまたはマークダウンを設定 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html) します。
 
 （開発）テキストの処理、プレゼンテーション、および書式設定を制御するコンピュータ言語。
-また、マークアップタグは、CMS ページまたはブロックに機能またはコンテンツを追加するコードスニペットです。
+また、マークアップタグは、CMSのページまたはブロックに機能またはコンテンツを追加するコードスニペットです。
 
 _用語の属性：_
 
@@ -1046,7 +1046,11 @@ _用語の属性：_
 
 _名詞_
 
-[OMS](https://omsdocs.magento.com) は、AdobeのOrder Management System 製品です。
+OMS は、AdobeのOrder Management System 製品です。
+
+>[!IMPORTANT]
+>
+>Adobe Commerce Order Management（OMS）は提供終了となり、サポートされなくなりました。
 
 OMS は、あらゆる販売チャネルから在庫を管理、販売、履行するための柔軟で手頃な価格のソリューションです。
 OMS は、シームレスな顧客体験を提供し、売上の増加とコスト削減を実現し、市場投入までの時間を短縮します。
@@ -1058,7 +1062,7 @@ OMS の機能は次のとおりです。
 * より容易でレスポンシブなカスタマーサービス
 * 顧客体験とロイヤルティの向上
 
-詳細情報：[OMS の概要 ](https://omsdocs.magento.com/en/getting-started/)、[OMS ドキュメントサイト ](https://omsdocs.magento.com/en/)
+詳細情報：[ アーカイブされた OMS ドキュメントサイト ](https://commerce-docs.github.io/oms-documentation-archive/)
 
 _用語の属性：_
 
@@ -1279,7 +1283,7 @@ _用語の属性：_
 
 _名詞_
 
-CMS のユーザーがページに配置して、テキストや画像を表示したり、コードのスニペットを実行したりできる、コンテンツのモジュール単位。
+CMSでユーザーがページに配置して、テキストや画像を表示したり、コードのスニペットを実行したりできる、コンテンツのモジュール単位。
 静的ブロックは、編集可能なコンテンツを含み、製品カテゴリのランディングページとして機能できます。
 ウィジェットを静的ブロックに追加して、追加機能を提供できます。
 
