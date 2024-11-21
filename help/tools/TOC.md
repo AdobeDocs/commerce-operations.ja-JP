@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: f684470add56a13dc7bf898f50a73c792e26673c
+source-git-commit: 10c83d907fba94fcc65103bf6efce5f0c115c310
 workflow-type: tm+mt
-source-wordcount: '6207'
+source-wordcount: '6217'
 ht-degree: 0%
 
 ---
@@ -657,6 +657,7 @@ ht-degree: 0%
          - [ACSD-60804：削除された会社に関連付けられている顧客を編集すると、エラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error.md)
       - v1.1.54 {#v1-1-54}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
+         - [ACSD-61199:CMSページの「[!UICONTROL Hierarchy]」タブに適切なツリー構造が表示されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
          - [ACSD-61200：売上合計の計算で割引税報酬を修正します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
          - [ACSD-61522：名フィールドと姓フィールドのメールアドレスが無効な注文確認を送信する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
          - [ACSD-61845: text/html accept ヘッダーを含むリクエストでエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
