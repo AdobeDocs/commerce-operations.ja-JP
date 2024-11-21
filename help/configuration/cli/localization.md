@@ -2,7 +2,7 @@
 title: 翻訳辞書と言語パッケージ
 description: 翻訳辞書を生成し、言語パッケージを作成する方法を説明します。
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 02c69e890b40643781ab8f48c3133527dd79386a
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Product 'Multimeter-2000' has been added to shopping cart.
 1. [ 単語やフレーズの収集と翻訳 ](#generate-a-translation-dictionary)。 （`--magento` パラメーターは必須です。）
 1. [ 言語パッケージコマンドを実行します ](#run-the-language-package-command)。
 1. [ ディレクトリとファイルの作成 ](#create-directories-and-files)。
-1. （オプション。） [1 つの言語に対して複数のパッケージを設定する ](#configure-multiple-packages-for-a-language)。
+1. （任意） [1 つの言語に対して複数のパッケージを設定 ](#configure-multiple-packages-for-a-language)。
 
 ### 言語パッケージコマンドを実行します
 
@@ -284,8 +284,8 @@ Commerce アプリケーションが `en_GB` パッケージ内の単語や語�
    ```php
    <?php
    /**
-    * Copyright &copy; Magento, Inc. All rights reserved.
-    * See COPYING.txt for license details.
+    * Copyright Adobe
+    * All Rights Reserved.
     */
    
    use Magento\Framework\Component\ComponentRegistrar;
@@ -301,11 +301,10 @@ Commerce アプリケーションが `en_GB` パッケージ内の単語や語�
 
    ```xml
    <?xml version="1.0"?>
-   /**
-   * Copyright &copy; Magento, Inc. All rights reserved.
-   * See COPYING.txt for license details.
-   */
-   
+   <!--
+   Copyright Adobe
+   All Rights Reserved.
+   -->
    <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
        <code>xx_YY</code>
        <vendor>examplecorp</vendor>

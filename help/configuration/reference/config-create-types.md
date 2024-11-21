@@ -2,7 +2,7 @@
 title: 設定タイプ
 description: 設定タイプを作成または拡張します。
 exl-id: 4390c310-b35a-431a-859f-3fd46d8ba6bf
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 02c69e890b40643781ab8f48c3133527dd79386a
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 0%
@@ -91,8 +91,8 @@ ht-degree: 0%
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All Rights Reserved.
  */
 
 namespace Vendor\ModuleName\Model\Config;
