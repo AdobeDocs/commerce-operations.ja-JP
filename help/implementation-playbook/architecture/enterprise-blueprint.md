@@ -3,9 +3,9 @@ title: エンタープライズ向けリファレンスアーキテクチャ
 description: Adobeの最新の構成可能なコマーステクノロジーを使用してAdobe Commerceを実装する方法を説明します。
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: c2f6b7125f1a611e94f807999787fee48a0e5ece
+source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,10 @@ Adobe Commerceは、すべてのExperience Cloudソリューションと統合�
 
 >[!NOTE]
 >
->技術的な詳細については、[ デジタルエクスペリエンスブループリント ](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) を参照してください。
+>詳しくは、次のリソースを参照してください。
+>
+>- 技術的詳細については、[ デジタルエクスペリエンスブループリント ](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) を参照してください。
+>- [ カスタマーエクスペリエンスのパーソナライズ ](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization) を参照してください。
 
 
 ## サードパーティシステムとの統合
@@ -63,6 +66,11 @@ Adobeは、統合とカスタマイズを構築するための以下の開発ツ
 - [**イベント**](https://developer.adobe.com/commerce/extensibility/events/) - カスタムイベントトリガーを使用して、その他の拡張可能な開発ツールとやり取りします。
 - [**Webhook**](https://developer.adobe.com/commerce/extensibility/webhooks/) - Webhook を使用すると、Commerceとサードパーティシステム間のインタラクションを自動的にトリガー化できます。
 - [**管理 UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/) - マーチャント向けの新しいページと機能で、Commerce管理者をカスタマイズおよび強化します。
+- [**統合スターターキット**](https://developer.adobe.com/commerce/extensibility/starter-kit/) – 参照統合、オンボーディングスクリプト、標準化されたアーキテクチャにより、バックオフィス統合を高速化します。
+
+>[!NOTE]
+>
+>[ 最新のアプローチ：Adobe Commerceの効果的な拡張性 ](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility) を参照してください。
 
 ## ストアフロントサービス
 

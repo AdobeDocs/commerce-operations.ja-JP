@@ -4,9 +4,9 @@ description: サードパーティのAdobe Commerce拡張機能によって発�
 role: Admin
 feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 1fdbded7738365593ef7da64f4dbe6713984bff3
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '193'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 1%
 
 Adobe Commerce サードパーティの拡張機能（モジュール）は、ストアフロントのパフォーマンスに悪影響を与える可能性のある様々な問題を引き起こす可能性があります。 次のベストプラクティスに従うことで、これらの問題を回避できます。
 
+- 可能な限り [ プロセス外の拡張機能 ](https://developer.adobe.com/commerce/extensibility/) を使用してCommerceの統合とカスタマイズを開発し、メンテナンスとアップグレード性を容易にします。
 - [Commerce Marketplace](https://marketplace.magento.com/extensions.html) などの信頼できる発行元からサードパーティの拡張機能をダウンロードして購入します。
 - サードパーティの拡張機能をすべて最新バージョンに更新します。
 - サードパーティの拡張機能を最新の状態に保つことができない場合は、別の拡張機能の使用を検討します。

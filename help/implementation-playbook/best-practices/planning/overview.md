@@ -4,9 +4,9 @@ description: Adobe Commerce プロジェクトの計画段階における実装�
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '406'
 ht-degree: 1%
 
 ---
@@ -93,12 +93,6 @@ ht-degree: 1%
   </tr>
 </tbody>
 </table>
-
-## アーキテクチャ設計
-
-| ベストプラクティス | 説明 |
-|----------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [ グローバル・リファレンス・アーキテクチャ（GRA） ](../../architecture/global-reference/examples.md) | GRA コードベースを構成する一般的な方法を理解します。 |
 
 ## カタログデザイン
 

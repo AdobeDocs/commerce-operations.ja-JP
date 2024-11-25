@@ -4,9 +4,9 @@ description: Adobe Commerce プロジェクトを開発するための一般的�
 feature: Best Practices
 role: Developer
 exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 68dc4635df9fc411925fe0d48a578edece8895dc
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -46,18 +46,6 @@ ht-degree: 0%
 1. すべての開発者は、（将来の）実稼動サーバーで使用されるのと同じテクノロジースタックを使用して開発およびテストする必要があります。 このテクノロジースタック内のソフトウェアのバージョンは、実稼動サーバーにインストールされているソフトウェアのメジャーバージョンおよびマイナーバージョンと一致する必要があります。 Adobe Commerceの一般的なテクノロジースタックについて詳しくは、[ システム要件 ](../../../installation/system-requirements.md) を参照してください。
 1. システム管理者またはテクニカルアーキテクトは、一元管理されたローカル開発環境をチームに提供して、同じ最新のローカル環境を確保および促進できます。
 1. 開発者と QA エンジニアは、QA 環境のコマンドライン、データベース、ログファイルにアクセスできる必要があります。 VPN 接続が必要になる場合があります。
-
-## コーディング標準
-
-1. すべてのコードは、アーキテクチャ、手法、コーディング標準の規則に従う必要があります。 創造性は形ではなく機能上で望まれています。
-1. すべてのコードは、[Adobe Commerce アーキテクチャガイド ](https://developer.adobe.com/commerce/php/architecture/){target="_blank} に従っている必要があります。
-1. すべてのコードは、[Adobe Commerceのコーディング標準 ](https://developer.adobe.com/commerce/php/coding-standards/) に準拠する必要があります。
-1. すべてのコードは、[Adobe Commerce テクニカルガイドライン ](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/) に準拠する必要があります。
-1. すべてのコードは、該当する場合、[Adobe Commerceのベストプラクティス ](../phases.md) を実装する必要があります。
-1. すべてのコードは、[PHP-Framework Interoperability Group （FIG）標準 ](https://www.php-fig.org/) に準拠する必要があります。
-1. 可能な限り、[Adobe Commerce テクニカルビジョン ](https://developer.adobe.com/commerce/php/architecture/technical-vision/) を考慮することをお勧めします。
-1. 外部システムとの統合はすべて、ビジネスプロセスを検証する統合テストが必要です。
-1. すべてのモジュールにテストカバレッジが必要です。 テスト対象は、テクニカルアーキテクトまたはリード開発者と協力して、開発チームが決定する必要があります。 この判断は、定量的な測定ではなく、定性的な測定に基づいて行う必要があります。コードカバレッジの割合が高いことは、成功の指標ではなく、コードの品質が高いことを意味するものでもありません。 むしろ、プログラムの一部におけるリグレッションの確率と重大度を評価して、コードの一部をカバーしないリスクを判断します。
 
 ## バージョン管理
 

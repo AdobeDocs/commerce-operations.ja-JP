@@ -3,9 +3,9 @@ title: チェックアウトパフォーマンスのベストプラクティス
 description: Adobe Commerce サイトでのチェックアウトエクスペリエンスのパフォーマンスを最適化する方法を説明します。
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: e4c1832076bb81cd3e70ff279a6921ffb29ea631
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Adobe Commerceの [ チェックアウト ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) プロセスは、ストアフロントのエクスペリエンスの重要な側面になります。 これは、組み込みの [ 買い物かご ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) および [ チェックアウト ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page) 機能によって異なります。
 
-パフォーマンスは、ユーザーエクスペリエンスを良好に維持するための鍵です。 パフォーマンスの期待値について詳しくは、[ パフォーマンスベンチマークの概要 ](../implementation-playbook/infrastructure/performance/benchmarks.md) を参照してください。 次のオプションを設定して、チェックアウトのパフォーマンスを最適化できます **高スループットの注文処理**。
+パフォーマンスは、ユーザーエクスペリエンスを良好に維持するための鍵です。 次のオプションを設定して、チェックアウトのパフォーマンスを最適化できます **高スループットの注文処理**。
 
 - [AsyncOrder](#asynchronous-order-placement) - キューを使用して注文を非同期に処理します。
 - [ 遅延合計計算 ](#deferred-total-calculation) - チェックアウトが開始されるまで、受注合計の計算を遅延します。

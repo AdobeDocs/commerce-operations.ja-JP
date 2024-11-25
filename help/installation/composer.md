@@ -2,7 +2,7 @@
 title: オンプレミスでのクイックスタートのインストール
 description: 所有しているインフラストラクチャにAdobe Commerceをインストールするには、次の手順に従います。
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # オンプレミスでのクイックスタートのインストール
 
-このページの手順では、[ 自己ホスト ](../implementation-playbook/infrastructure/self-hosting/overview.md) インフラストラクチャにAdobe Commerceをインストールする方法について説明します。 既存のインストールのアップグレードに関するガイダンスについては、[_アップグレードガイド_](../upgrade/overview.md) を参照してください。
+このページの手順では、セルフホストインフラストラクチャにAdobe Commerceをインストールする方法について説明します。 既存のインストールのアップグレードに関するガイダンスについては、[_アップグレードガイド_](../upgrade/overview.md) を参照してください。
 
 Adobeでは [Composer](https://getcomposer.org/) を使用して、Adobe Commerce コンポーネントとその依存関係を管理します。 Composer を使用してAdobe Commerce メタパッケージを取得すると、次の利点があります。
 

@@ -5,16 +5,16 @@ role: Developer
 feature: Best Practices
 badge: label="執筆：Adobe、シニアテクニカルアーキテクト、Anton Evers" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="執筆：Anton Evers"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1251'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce パッチの大規模な配布のベストプラクティス
 
-複数のAdobe Commerceのインストールを管理する場合、[ パッチ適用 ](../../../upgrade/patches/apply.md) は複雑なプロセスになる場合があります。 _一元的なパッチ適用_ は、[ グローバルな参照アーキテクチャ ](../../architecture/global-reference/overview.md) の不可欠な部分であり、企業にとってのベストプラクティスです。 これにより、すべてのAdobe Commerce インストールに適切なパッチを適用できます。 ここでは、すべてのタイプのAdobe Commerce[ パッチ ](../../../upgrade/patches/overview.md) に対して一元的なパッチ配布を実現する方法について説明します。
+複数のAdobe Commerceのインストールを管理する場合、[ パッチ適用 ](../../../upgrade/patches/apply.md) は複雑なプロセスになる場合があります。 _パッチの一元化_ は、企業におけるベストプラクティスです。 これにより、すべてのAdobe Commerce インストールに適切なパッチを適用できます。 ここでは、すべてのタイプのAdobe Commerce[ パッチ ](../../../upgrade/patches/overview.md) に対して一元的なパッチ配布を実現する方法について説明します。
 
 >[!NOTE]
 >

@@ -2,10 +2,10 @@
 user-guide-title: 運用ガイド
 user-guide-description: Adobe Commerce アプリケーションの保守の運用面について説明します。
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
-source-git-commit: a33d12a055db0cb4a4c8f64992d6ebf77842cbe7
+source-git-commit: 97441bfe99604e982385f94df1215fb24675114f
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 27%
+source-wordcount: '41'
+ht-degree: 31%
 
 ---
 
@@ -14,11 +14,9 @@ ht-degree: 27%
 
 - [運用ガイド ホーム](home.md)
 - [ リリース情報 ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)
-- [ パフォーマンス ](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/overview)
-- [ セキュリティとコンプライアンス ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
 - [ 実装プレイブック ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/overview)
-- [ 運用プレイブック ](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/overview)
-- [Commerce（スケール） ](https://experienceleague.adobe.com/en/docs/commerce-operations/deliver-commerce-at-scale/overview)
+- [ セキュリティとコンプライアンス ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
+- [ パフォーマンス ](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/overview)
 - [ インストール（オンプレミス） ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
 - [ 設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/overview)
 - [ アップグレード ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview)

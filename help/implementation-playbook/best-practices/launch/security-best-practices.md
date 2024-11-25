@@ -3,9 +3,9 @@ title: Commerceのサイトとインフラストラクチャを保護
 description: Adobe Commerce インストールを設定、設定、更新する際に、セキュリティのベストプラクティスを導入して、セキュリティを維持します。
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: a00b7b66beb6499f7fb19fda2dfd450799f73728
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -115,10 +115,6 @@ Adobeでは、ディザスタリカバリ計画の一環として、ビジネス
 
 **Adobe Commerceがオンプレミスにデプロイされました**
 
-- [災害復旧のアイデア](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
-
-- [バックアップと回復](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
-
 - [構成設定のエクスポート](../../../configuration/cli/export-configuration.md)
 
    - [設定を読み込み](../../../configuration/cli/import-configuration.md)
@@ -133,7 +129,7 @@ Adobeでは、ディザスタリカバリ計画の一環として、ビジネス
 
 ![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)**Web アプリケーションファイアウォールを使用** - トラフィックを分析し、不明な IP アドレスにクレジットカード情報が送信されるなど、不審なパターンを Web アプリケーションファイアウォールで検出します。
 
-クラウドインフラストラクチャにデプロイされたAdobe Commerceのインストールでは、[Fastly サービス統合 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html) で利用可能な組み込みの WAF サービスを使用できます。
+クラウドインフラストラクチャにデプロイされたAdobe Commerceのインストールでは、[Fastly サービス統合 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html) で利用可能なビルトイン WAF サービスを使用できます
 
 ![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)**高度なパスワードセキュリティ設定を設定** – 強力なパスワードを設定し、PCI Data Security Standard の 8.2.4 節で推奨されているように、少なくとも 90 日ごとに変更します。[Admin Security 設定の指定 ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html) を参照してください。
 

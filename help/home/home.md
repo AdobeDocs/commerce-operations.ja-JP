@@ -2,10 +2,10 @@
 title: 運用ガイド ホーム
 description: Adobe Commerce システム管理および運用製品ドキュメントのインデックスを参照します。
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: a33d12a055db0cb4a4c8f64992d6ebf77842cbe7
+source-git-commit: 5a2aae6a2f3b1353457f003460d230db2b57abdd
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 20%
+source-wordcount: '163'
+ht-degree: 7%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 20%
       <p>Adobe Commerceのパッチとサービスに関するすべてのリリース情報を確認します。</p>
     </div>
   </td>
-  <td valign="top">
-    <a href="../performance/overview.md">
-       <img alt="パフォーマンス" src="../assets/icons/gauge.svg" width="40"/>
+    <td valign="top">
+    <a href="../implementation-playbook/overview.md">
+      <img alt="実装" src="../assets/icons/play.svg" width="40"/>
     </a>
     <div>
-      <a href="../performance/overview.md"><strong> パフォーマンスのベストプラクティス </strong></a>
-      <p>これらの推奨事項を使用すると、Adobe Commerceのデプロイメントのパフォーマンスを最適化できます。</p>
+      <a href="../implementation-playbook/overview.md"><strong> 実装プレイブック </strong></a>
+      <p>成功する Adobe Commerce サイトの計画と実装の戦略について学習します。</p>
     </div>
   </td>
   <td valign="top">
@@ -45,33 +45,13 @@ ht-degree: 20%
       <p>Adobe Commerceのマーチャントが安全な環境の維持にどのように責任を負うかを説明します。</p>
     </div>
   </td>
-</tr>
-<tr>
-  <td valign="top">
-    <a href="../implementation-playbook/overview.md">
-      <img alt="実装" src="../assets/icons/play.svg" width="40"/>
+    <td valign="top">
+    <a href="../performance/overview.md">
+       <img alt="パフォーマンス" src="../assets/icons/gauge.svg" width="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong> 実装プレイブック </strong></a>
-      <p>成功する Adobe Commerce サイトの計画と実装の戦略について学習します。</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../operational-playbook/overview.md">
-       <img alt="運用" src="../assets/icons/refresh.svg" width="40"/>
-    </a>
-    <div>
-      <a href="../operational-playbook/overview.md"><strong> 運用プレイブック </strong></a>
-      <p>e コマースサイトを成功させるために、ビジネスの運営をどのように準備すればよいかについて学習します。</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../commerce-at-scale/overview.md">
-       <img alt="Enterprise" src="../assets/icons/enterprise.svg" width="40"/>
-    </a>
-    <div>
-      <a href="../commerce-at-scale/overview.md"><strong>Commerce（スケール） </strong></a>
-      <p>Adobe Commerce と Adobe Experience Manager を使用して、エクスペリエンスを大規模に配信する方法を学習します。</p>
+      <a href="../performance/overview.md"><strong> パフォーマンスのベストプラクティス </strong></a>
+      <p>これらの推奨事項を使用すると、Adobe Commerceのデプロイメントのパフォーマンスを最適化できます。</p>
     </div>
   </td>
 </tr>
