@@ -2,9 +2,9 @@
 title: メッセージキューコンシューマー
 description: Adobe Commerce メッセージキューコンシューマーについて、関連する機能やシステム設定などを説明します。
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 0%
 | `saveConfigProcessor` | + |                         | + |
 | 保存ジョブをメッセージキューに配置すると、ストア設定の変更を非同期に保存できます。これにより、多数のストアレベル設定を含むデプロイメントのパフォーマンスが向上します。 [`AsyncConfig`](../../performance/configuration.md#asynchronous-configuration-save) モジュールを使用するために必要です。 |                |                         |                     |
 | `sales.rule.update.coupon.usage` | + | + | + |
-| 1 回限りのクーポンを複数回使用できる [ 問題 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.html) を防ぎます。 |                |                         |                     |
+| 1 回限りのクーポンを複数回使用できる問題を防ぎます。 |                |                         |                     |
 | `sharedCatalogUpdateCategoryPermissions` |                | + |                     |
 | 共有カタログ カテゴリに割り当てられているカテゴリを更新します。 管理システム設定で「[**[!UICONTROL Shared Catalogs]**](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared)」オプションが有効になっている場合は必須です。 |                |                         |                     |
 | `sharedCatalogUpdatePrice` |                | + |                     |

@@ -3,7 +3,7 @@ title: Redis の設定
 description: Redis の機能の概要を説明し、Redis 設定を開始します。
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Adobe セッションの場合、通常の Redis データベースバックア�
 
 また、RDB オプションと AOF オプションの両方を同時に有効にすることもできます。 永続性オプションのメリットとデメリットなど、詳しくは、[Redis 永続性ドキュメント ](https://redis.io/topics/persistence) を参照してください。
 
-キャッシュインスタンスには、Commerce キャッシュ全体を格納するのに十分な大きさになるようにインスタンスを設定します。 サイズ要件は、商品の数やストアの表示など、様々な要因によって異なります。 出発点として、ファイルシステム上のキャッシュフォルダーのサイズを使用できます。 例えば、ファイルシステムの `var/cache` フォルダーが 5 GB の場合、起動するには少なくとも 5 GB の Redis インスタンスを設定します。 Commerce キャッシュは復元できるので、キャッシュインスタンスには永続性は必要ありません。 [Redis キャッシュガイド ](https://redis.io/docs/manual/eviction/) を参照してください。
+キャッシュインスタンスには、Commerce キャッシュ全体を格納するのに十分な大きさになるようにインスタンスを設定します。 サイズ要件は、商品の数やストアの表示など、様々な要因によって異なります。 出発点として、ファイルシステム上のキャッシュフォルダーのサイズを使用できます。 例えば、ファイルシステムの `var/cache` フォルダーが 5 GB の場合、起動するには少なくとも 5 GB の Redis インスタンスを設定します。 Commerce キャッシュは復元できるので、キャッシュインスタンスには永続性は必要ありません。 [Redis キャッシュガイド ](https://redis.io/docs/latest/develop/use/) を参照してください。
 
 パフォーマンスを調整する場合は、非同期削除について次の設定を有効にできます。 これらの設定は、Redis の動作を変更しません。
 
