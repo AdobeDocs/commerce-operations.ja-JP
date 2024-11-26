@@ -5,7 +5,7 @@ badge: label="寄稿者：objectsource" type="Informative" url="https://objectso
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: d884d434e696a911de626dc76983468556cf451f
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 0%
@@ -81,7 +81,7 @@ New Relicや Observation for Commerceなどの様々なツールを使用して�
 
 高トラフィックの Web サイトは、多くの場合、データベースのボトルネックに直面します。これは主に、1 台の MySQL サーバーに依存することに起因します。 パフォーマンスの向上と高可用性の確保を実現する分散アーキテクチャであるデータベース・クラスタリングを導入することで、これらのボトルネックに対処できます。
 
-データベースクラスタリングを使用すると、複数の web ノードを複数の MySQL サーバーに接続できるので、トラフィックのピーク時にデータベースに関する問題の影響を最小限に抑えることができます。 Galera クラスターなどのツールを使用して、Commerce サイトのデータベースクラスタリングを設定します。 Galera クラスターは、[ クラウドインフラストラクチャにデプロイされたAdobe Commerce プロジェクト ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/technology.html) に含まれています。
+データベースクラスタリングを使用すると、複数の web ノードを複数の MySQL サーバーに接続できるので、トラフィックのピーク時にデータベースに関する問題の影響を最小限に抑えることができます。 Galera クラスターなどのツールを使用して、Commerce サイトのデータベースクラスタリングを設定します。 Galera クラスターは、[ クラウドインフラストラクチャにデプロイされたAdobe Commerce プロジェクト ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture) に含まれています。
 
 #### MySQL クエリの最適化
 
