@@ -3,13 +3,13 @@ title: 「ACSD-58471：関連するカタログ価格ルールがスケジュー
 description: 関連するカタログ価格ルールがスケジュールされていると、動的コンテンツが商品の詳細ページに読み込めないAdobe Commerceの問題を修正するために、ACSD-58471 パッチを適用してください。
 feature: Catalog Management
 role: Admin, Developer
-source-git-commit: a3afb779006de95ac70dff39a737360112220af8
+exl-id: 6ff68b74-67fc-400c-aa79-a1274fd19708
+source-git-commit: 28390659fe180180c9b2c8d16239008a1f8a510b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58471：関連するカタログ価格ルールがスケジュールされている場合、製品の詳細ページに動的コンテンツが読み込まれない
 
@@ -28,6 +28,8 @@ ACSD-58471 パッチは、関連するカタログ価格ルールがスケジュ
 >このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
+
+カタログ価格ルールがスケジュールされている場合、製品の詳細ページに動的コンテンツが読み込まれない。
 
 <u> 再現手順 </u>:
 
