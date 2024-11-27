@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 3c1c16839612aa70b2798ac1aaf0d352a8c4a972
+source-git-commit: 1699b863c80febd762c0d34f33f7af72777e82f2
 workflow-type: tm+mt
-source-wordcount: '6286'
+source-wordcount: '6301'
 ht-degree: 0%
 
 ---
@@ -662,6 +662,7 @@ ht-degree: 0%
          - [ACSD-61199:CMSページの「[!UICONTROL Hierarchy]」タブに適切なツリー構造が表示されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
          - [ACSD-61200：売上合計の計算で割引税報酬を修正します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
          - [ACSD-61522：名フィールドと姓フィールドのメールアドレスが無効な注文確認を送信する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
+         - [ACSD-61799：見積もりに複数の固定割引買い物かごルールが適用された、誤った合計割引計算](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61799-incorrect-total-discount-calculation-with-multiple-fixed-discount-rules.md)
          - [ACSD-62485：会社が作成されると、async.operations.all コンシューマーが動作を停止する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created.md)
          - [ACSD-61845: text/html accept ヘッダーを含むリクエストでエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
       - v1.1.55{#v1-1-55}
