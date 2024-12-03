@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 948881a32a1723398e71c9bd3c2173336878ee0d
+source-git-commit: 46c7053368bfab9c5975c5616be9b67050b93105
 workflow-type: tm+mt
-source-wordcount: '6399'
+source-wordcount: '6415'
 ht-degree: 0%
 
 ---
@@ -672,6 +672,7 @@ ht-degree: 0%
          - [ACSD-61845: text/html accept ヘッダーを含むリクエストでエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
       - v1.1.55{#v1-1-55}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
+         - [ACSD-58828：クライアントサイドの検証と共に、空の必須フィールドに対して、サーバーサイドの「address is required」メッセージが表示される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation.md)
          - [ACSD-61534: bin/magento config:set を使用してデザイン構成を設定することはできません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61534-design-configuration-cannot-set-using-bin-magento-config-set.md)
          - [ACSD-61348：ウィッシュリスト項目がGraphQL経由で表示されるが、ストアフロントでは表示されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61348-wishlist-items-visible-via-graphql-but-not-on-storefront.md)
          - [ACSD-61785:GraphQL mutation および REST API 呼び出しを使用して reward_warning_notification 属性を更新することはできません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61785-updating-reward-warning-notification-attribute-not-possible-via-graphql.md)
