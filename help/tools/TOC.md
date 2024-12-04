@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 46c7053368bfab9c5975c5616be9b67050b93105
+source-git-commit: c03b0b3c81556f1c75ad5259a5905a5dd5b0224e
 workflow-type: tm+mt
-source-wordcount: '6415'
+source-wordcount: '6425'
 ht-degree: 0%
 
 ---
@@ -679,6 +679,7 @@ ht-degree: 0%
          - [ACSD-58471：カタログ価格ルールがスケジュールされている場合、製品の詳細ページに動的コンテンツが読み込まれない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
          - [ACSD-58383: [!DNL REST API] を介した同時払い戻しリクエストからの複製クレジットメモ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
          - [ACSD-58735：制限付き管理者は、関連する web サイトの顧客アカウントで放棄された買い物かごを表示できません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
+         - [ACSD-60344：自動承認を含む [!UICONTROL Purchase Order] を使用した際の重複注文確認メール](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
       - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - コマンド ライン ツール リファレンス {#cli-reference}
