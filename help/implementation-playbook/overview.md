@@ -1,12 +1,12 @@
 ---
 title: 実装プレイブック
-description: Adobe Commerce プロジェクトの計画、開発、起動、メンテナンスに関するベストプラクティスについて説明します。
+description: Adobe Commerce プロジェクトの計画、開発、起動、保守に関するベストプラクティスについて説明します。
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
 feature: Best Practices, Cloud, Integration
 source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
 workflow-type: tm+mt
 source-wordcount: '251'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
