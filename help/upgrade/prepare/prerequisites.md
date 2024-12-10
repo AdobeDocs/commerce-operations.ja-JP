@@ -2,9 +2,9 @@
 title: 前提条件を完了
 description: 次の前提条件の手順を完了して、アップグレード用のAdobe Commerce プロジェクトを準備します。
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 4c84710da62fbb31214a0de2adc8adbd68880a76
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1612'
 ht-degree: 0%
 
 ---
@@ -229,11 +229,11 @@ crontab -l
 
 Cron が実行されていないもう 1 つの症状は、Admin で次のエラーが発生することです。
 
-![](../../assets/upgrade-guide/cron-not-running.png)
+![ システムメッセージ - cron が実行されていない ](../../assets/upgrade-guide/cron-not-running.png)
 
 このエラーを確認するには、次のように、ウィンドウの上部にある **システムメッセージ** をクリックします。
 
-![](../../assets/upgrade-guide/system-messages.png)
+![ システムメッセージ通知 ](../../assets/upgrade-guide/system-messages.png)
 
 詳しくは、[cron の設定と実行 ](../../configuration/cli/configure-cron-jobs.md) を参照してください。
 
