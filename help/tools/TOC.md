@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: e48479b9beb3a75fb513edd4a5e1b6c8c932f45f
+source-git-commit: a7018909caf8147696a81afead8526946d076223
 workflow-type: tm+mt
-source-wordcount: '6495'
+source-wordcount: '6506'
 ht-degree: 0%
 
 ---
@@ -686,6 +686,7 @@ ht-degree: 0%
          - [ACSD-62332：商品リスト GraphQL クエリが 10,000 個の商品に制限され、現在のページを 1 に設定している商品  [!DNL Live Search]  リスト](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
       - v1.1.56 {#v1-1-56}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
+         - [ACSD-63242:10,000 個を超えるカタログ製品を追加すると読み込みが遅くなる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
          - [ACSD-63062：複数の重複するルールがある、買い物かごの割引計算が正しくない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
          - [ACSD-62428：カタログ検索インデックスの在庫ステータスエラー](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
       - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
