@@ -1,16 +1,21 @@
 ---
-title: '「ACSD-55100: [!DNL GraphQL] 10k を超える製品は検索結果に返されない」'
+title: 'ACSD-55100: [!DNL GraphQL]  検索結果で 10,000 個を超える製品が返されない'
 description: ACSD-55100 パッチを適用すると、GraphQLが検索結果で*10k*を超える商品を返さないAdobe Commerceの問題を修正できます。
 feature: GraphQL, Products, Search
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f08b62b9-ed56-4eca-b7e7-6e2bd99df01f
+source-git-commit: ec05b041c7af477abd6d3ade6ea95fed5065f2fa
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
 
 # ACSD-55100：検索結果で [!DNL GraphQL] が 10,000 個を超える製品を返さない
+
+>[!NOTE]
+>
+>バージョン 2.4.6 ～ 2.4.6-p8 の同じ問題を解決するために、更新されたパッチ（[ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)）がリリースされました。 詳細については、[ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md) を参照してください。
 
 ACSD-55100 パッチは、検索結果で *10k* を超える製品が [!DNL GraphQL] に返されない問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.46 がインストールされている場合に使用できます。 パッチ ID は ACSD-55100 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 

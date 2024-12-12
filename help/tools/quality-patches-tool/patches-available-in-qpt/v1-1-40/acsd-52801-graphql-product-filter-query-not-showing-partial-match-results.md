@@ -1,16 +1,21 @@
 ---
-title: 「ACSD-52801:GraphQL製品フィルタークエリに部分一致の結果が表示されない」
+title: ACSD-52801:GraphQL製品フィルタークエリに部分一致の結果が表示されない
 description: ACSD-52801 パッチを適用すると、GraphQL製品フィルタークエリに部分一致の結果が表示されないAdobe Commerceの問題が修正されます。
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 946a7189-60b2-4812-92ca-ed7ba35b2488
+source-git-commit: ec05b041c7af477abd6d3ade6ea95fed5065f2fa
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 # ACSD-52801:GraphQL製品フィルタークエリに部分一致の結果が表示されない
+
+>[!NOTE]
+>
+>バージョン 2.4.6 ～ 2.4.6-p8 の同じ問題を解決するために、更新されたパッチ（[ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)）がリリースされました。 これは、バージョン 2.4.6 以降の ACSD-52801 パッチに代わるものです。 詳細については、[ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md) を参照してください。
 
 ACSD-52801 パッチでは、GraphQLの製品フィルタークエリに部分一致の結果が表示されない問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.40 がインストールされている場合に使用できます。 パッチ ID は ACSD-52801 です。 この問題はAdobe Commerce 2.4.7 で修正されていることに注意してください。
 
