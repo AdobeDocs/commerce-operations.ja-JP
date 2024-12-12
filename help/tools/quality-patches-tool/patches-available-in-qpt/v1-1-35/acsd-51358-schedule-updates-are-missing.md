@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-51358：スケジュールの更新がない」
+title: 'ACSD-51358: スケジュールの更新がありません'
 description: ACSD-51358 パッチを適用すると、Adobe Commerceの問題を修正できます。この問題では、終了日を指定せずにスケジュールされた更新を変更すると、同じエンティティで他のスケジュールされた更新が削除されます。
 feature: Staging
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6e2e598b-72f1-4f00-a989-3f75bf65f8f0
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
@@ -50,7 +51,7 @@ ACSD-51358 パッチでは、終了日を指定せずにスケジュールされ
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](</help/tools/quality-patches-tool/usage.md>) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

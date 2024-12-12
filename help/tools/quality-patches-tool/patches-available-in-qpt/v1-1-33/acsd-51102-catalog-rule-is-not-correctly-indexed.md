@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-51102：多数の製品に適用されたカタログルールのインデックスが正しくない」
+title: ACSD-51102：多数の製品に適用されているカタログルールが正しくインデックス化されていない
 description: ACSD-51102 パッチを適用すると、Adobe Commerceの問題を修正できます。この問題では、スケジュールされた更新によってルールが有効になると、多数の商品に適用されるカタログルールのインデックスが正しく作成されません。
 feature: Catalog Management, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 35a8078d-667b-4101-8562-ece052b44c9c
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -56,7 +57,7 @@ ACSD-51102 パッチを適用すると、スケジュールされた更新によ
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](</help/tools/quality-patches-tool/usage.md>) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

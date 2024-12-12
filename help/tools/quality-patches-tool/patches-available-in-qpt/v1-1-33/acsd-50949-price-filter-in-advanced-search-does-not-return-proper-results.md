@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-50949：詳細検索の価格フィルターを SKU フィルターと一緒に使用すると、適切な結果が返されません」
+title: ACSD-50949：詳細検索の価格フィルターを SKU フィルターと一緒に使用すると、適切な結果が返されません
 description: ACSD-50949 パッチを適用すると、詳細検索で価格フィルターを SKU フィルターと一緒に使用した場合に、適切な結果が返されないAdobe Commerceの問題が修正されます。
 feature: Orders, Search
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 89e54940-e763-4554-8641-a162516bcabd
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 1%
@@ -62,7 +63,7 @@ ACSD-50949 パッチでは、SKU フィルターと一緒に使用した場合�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](</help/tools/quality-patches-tool/usage.md>) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

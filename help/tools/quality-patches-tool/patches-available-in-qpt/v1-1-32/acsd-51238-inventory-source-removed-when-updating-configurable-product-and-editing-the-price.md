@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-51238：設定可能な製品を更新して価格を編集すると、在庫ソースが削除される」
+title: ACSD-51238：設定可能な製品を更新して価格を編集すると、在庫ソースが削除される
 description: 設定可能な商品をアップデートして価格を編集する際に、在庫ソースが削除されるAdobe Commerceの問題を修正するために、ACSD-51238 パッチを適用してください。
 feature: Configuration, Inventory, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 785f012f-e064-4ac6-b559-9e9aa42c679c
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -54,7 +55,7 @@ ACSD-51238 パッチは、設定可能な製品を更新して価格を編集す
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](</help/tools/quality-patches-tool/usage.md>) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

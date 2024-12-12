@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-51890:[!UICONTROL Submit review] ボタンを複数回クリックできる」
+title: ACSD-51890:[!UICONTROL Submit review] のボタンは複数回クリックできます
 description: ACSD-51890 パッチを適用すると、検証を行わずに「[!UICONTROL Submit Review]」ボタンを複数回クリックできるAdobe Commerceの問題  [!DNL Google reCAPTCHA v3]  修正できます。
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: db69ccdc-c66e-4bdb-9783-772f2af0d33f
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%
@@ -55,7 +56,7 @@ ACSD-51890 パッチは、検証を行わずに **[!UICONTROL Submit Review]** �
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](</help/tools/quality-patches-tool/usage.md>) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

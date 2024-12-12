@@ -1,7 +1,8 @@
 ---
-title: 「ACSD-51645:Magentoextension_OfflineShipping が無効な場合の、新しい買い物かご価格ルールの保存」
+title: ACSD-51645:Magentoextension_OfflineShipping が無効な場合の、新しい買い物かご価格ルールの保存
 description: Magento拡張機能 extension_OfflineShipping が無効になっている場合、新しい買い物かご価格ルールを保存するとエラーが発生するAdobe Commerceの問題を修正するために ACSD-51645 パッチを適用してください。
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ce747ae4-6d2f-41c0-ba75-7da72be359c7
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
@@ -52,7 +53,7 @@ ACSD-51645 パッチでは、Magentoextension_OfflineShipping が無効になっ
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](</help/tools/quality-patches-tool/usage.md>) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

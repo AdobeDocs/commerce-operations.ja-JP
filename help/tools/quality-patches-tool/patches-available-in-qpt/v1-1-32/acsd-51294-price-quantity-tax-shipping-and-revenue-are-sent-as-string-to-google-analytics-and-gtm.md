@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-51294：価格、数量、税、送料、文字列として送信された売上高を  [!DNL Google Analytics]  および GTM」
+title: ACSD-51294：価格、数量、税、送料、文字列として送信された売上高  [!DNL Google Analytics]  および GTM
 description: ACSD-51294 パッチを適用すると、価格、数量、税金、送料、売上高が文字列として GTM に送信されるAdobe Commerceの問題が修正され  [!DNL Google Analytics]  す。
 feature: Orders, Shipping/Delivery, Variables
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 99d2a311-2543-4007-99fd-6c34a2950773
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -51,7 +52,7 @@ ACSD-51294 パッチは、価格、数量、税金、送料、売上高が文字
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](</help/tools/quality-patches-tool/usage.md>) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

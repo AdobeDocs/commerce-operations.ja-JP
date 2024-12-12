@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-52041：ページビルダーのレンダリングでロックが解放されない」
+title: ACSD-52041：ページビルダーのレンダリングでロックが解放されない
 description: ACSD-52041 パッチを適用して、ページビルダーがロックを解除せずに 5 秒間レンダリングされるAdobe Commerceの問題を修正してください。
 feature: Page Builder
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 48a7fc36-e98a-4a4e-bed3-248d7d73f6cb
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -54,7 +55,7 @@ ACSD-52041 パッチでは、ページビルダーがロックを解除せずに
 
 バージョン **2.4.4～2.4.4-p5、2.4.5～2.4.5-p4 および 2.4.6～2.4.6-p2** の個別パッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](</help/tools/quality-patches-tool/usage.md>) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

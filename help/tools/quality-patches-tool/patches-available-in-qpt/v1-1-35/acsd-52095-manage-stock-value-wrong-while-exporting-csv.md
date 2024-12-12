@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-52095:CSV の書き出し中に、在庫値の管理が間違っています」
+title: ACSD-52095:CSV の書き出し中に、在庫値の管理が間違っています
 description: CSV の書き出し中に商品の在庫管理方法で値が間違っていたAdobe Commerceの問題を修正するために、ACSD-52095 パッチを適用してください。
 feature: Inventory, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1f8415aa-23c6-480a-b54d-37b2b2d3199a
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -57,7 +58,7 @@ ACSD-52095 パッチは、CSV の書き出し中に製品 `manage_stock` の値�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](</help/tools/quality-patches-tool/usage.md>) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
