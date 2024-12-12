@@ -1,17 +1,18 @@
 ---
-title: 「ACSD-56760：管理者ユーザーが特定の web サイトに制限されており、新しい製品を並べ替えまたは追加できない」
+title: ACSD-56760：管理者ユーザーが特定の web サイトに制限されており、新しい製品を並べ替えたり追加したりすることができません
 description: ACSD-56760 パッチを適用すると、特定の web サイトに制限されている管理者ユーザーが、web ストアに独自のルートカテゴリがある場合、カテゴリ内で新しい商品の並べ替えや追加ができないAdobe Commerceの問題を修正できます。
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2d75164e-c463-4e1a-aa6f-f420dbe0aaeb
+source-git-commit: 881d33089b15b78583e09b79e93a3f78f38bc2ca
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # ACSD-56760：管理者ユーザーが特定の web サイトに制限されており、新しい製品を並べ替えたり追加したりすることができません
 
-ACSD-56760 パッチは、特定の web サイトに制限されている管理者ユーザーが、web ストアに独自のルートカテゴリがある場合に、カテゴリ内で新しい製品の並べ替えや追加ができない問題を修正しました。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.47 がインストールされている場合に使用できます。 パッチ ID は ACSD-56760 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-56760 パッチは、特定の web サイトに制限されている管理者ユーザーが、web ストアに独自のルートカテゴリがある場合に、カテゴリ内で新しい製品の並べ替えや追加ができない問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.47 がインストールされている場合に使用できます。 パッチ ID は ACSD-56760 です。 この問題はAdobe Commerce 2.4.8-beta1 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -68,8 +69,4 @@ ACSD-56760 パッチは、特定の web サイトに制限されている管理�
 
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [ を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
-
-
-QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
+* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
