@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: a7018909caf8147696a81afead8526946d076223
+source-git-commit: 21a0dbfdb679a35d79f001f78c921aed8441f0d4
 workflow-type: tm+mt
-source-wordcount: '6506'
+source-wordcount: '6523'
 ht-degree: 0%
 
 ---
@@ -682,6 +682,7 @@ ht-degree: 0%
          - [ACSD-58471：カタログ価格ルールがスケジュールされている場合、製品の詳細ページに動的コンテンツが読み込まれない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
          - [ACSD-58383: [!DNL REST API] を介した同時払い戻しリクエストからの複製クレジットメモ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
          - [ACSD-58735：制限付き管理者は、関連する web サイトの顧客アカウントで放棄された買い物かごを表示できません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
+         - [ACSD-62793：の Datetime 属性は、欠落している時間コンポーネントを書き出します。 さらに、有効 [!UICONTROL Fields Enclosure] 場合、属性値を二重引用符で囲みます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793-datetime-attributes-exports-missing-time-component-and-fields-enclosure-enabled-attribute-values-enclosed-within-double-quotes.md)
          - [ACSD-60344：自動承認を含む [!UICONTROL Purchase Order] を使用した際の重複注文確認メール](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
          - [ACSD-62332：商品リスト GraphQL クエリが 10,000 個の商品に制限され、現在のページを 1 に設定している商品  [!DNL Live Search]  リスト](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
       - v1.1.56 {#v1-1-56}
