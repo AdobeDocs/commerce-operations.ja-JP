@@ -1,5 +1,5 @@
 ---
-source-git-commit: 00db83a517b124fa012f91d4a6407846dd4eef66
+source-git-commit: 4a97065049c5d88ce2a1cc169bfbedd370676ff4
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 6%
@@ -66,7 +66,7 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>支払いサービス</td>
-          <td>2.9.0 （PHP 8.3）</td>
+          <td>2.10.0 （PHP 8.3）</td>
           <td>2.5.0 （PHP 8.2）</td>
           <td>2.4.0 （PHP 8.1）</td>
           <td>2.4.0 （PHP 8.1）</td>
