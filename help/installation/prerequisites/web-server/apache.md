@@ -2,7 +2,7 @@
 title: Apache
 description: 次の手順に従って、Apache web サーバーをインストールし、Adobe Commerceのオンプレミスインストール用に設定します。
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: f8c5d714a4e96d0508f745d1b7617696c8cc94a7
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Adobe Commerceは Apache 2.4.x をサポートしています。
 
 ## Apache の書き換えとアクセス
 
-このトピックでは、Apache 2.4 の書き換えを有効にする方法と、[ 分散設定ファイル `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html) の設定を指定する方法について説明します。
+このトピックでは、Apache 2.4 の書き換えを有効にする方法と、[ 分散設定ファイル `.htaccess`](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample) の設定を指定する方法について説明します。
 
 Adobe Commerceは、サーバーの書き換えと `.htaccess` き換えを使用して、Apache にディレクトリレベルの手順を提供します。 次の手順は、このトピックの他のすべての節にも含まれています。
 
