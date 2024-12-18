@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 21a0dbfdb679a35d79f001f78c921aed8441f0d4
+source-git-commit: 152b51d45303b29a1d3d378af0e9fc8b02bbb6aa
 workflow-type: tm+mt
-source-wordcount: '6523'
+source-wordcount: '6531'
 ht-degree: 0%
 
 ---
@@ -685,6 +685,7 @@ ht-degree: 0%
          - [ACSD-62793：の Datetime 属性は、欠落している時間コンポーネントを書き出します。 さらに、有効 [!UICONTROL Fields Enclosure] 場合、属性値を二重引用符で囲みます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793-datetime-attributes-exports-missing-time-component-and-fields-enclosure-enabled-attribute-values-enclosed-within-double-quotes.md)
          - [ACSD-60344：自動承認を含む [!UICONTROL Purchase Order] を使用した際の重複注文確認メール](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
          - [ACSD-62332：商品リスト GraphQL クエリが 10,000 個の商品に制限され、現在のページを 1 に設定している商品  [!DNL Live Search]  リスト](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
+         - [ACSD-62591：設定 [!UICONTROL User Agent Rules] に、テーマが正しく切り替わらない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
       - v1.1.56 {#v1-1-56}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
          - [ACSD-63242:10,000 個を超えるカタログ製品を追加すると読み込みが遅くなる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
