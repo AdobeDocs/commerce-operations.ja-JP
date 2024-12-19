@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 6ec6aec8747e4b40943c864dec84b98e6b293d07
+source-git-commit: 1cca6c27ff0dce3f3ffb961a1f1eb3f56ea8dd78
 workflow-type: tm+mt
-source-wordcount: '6547'
+source-wordcount: '6561'
 ht-degree: 0%
 
 ---
@@ -688,6 +688,7 @@ ht-degree: 0%
          - [ACSD-62591：設定 [!UICONTROL User Agent Rules] に、テーマが正しく切り替わらない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
       - v1.1.56 {#v1-1-56}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
+         - [ACSD-62979:GraphQL ヘッダーのストア ID が正しくないと、致命的なメモリエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error.md)
          - [ACSD-62475：買い物かごでのギフトカードの結合の問題を修正しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62475-fixes-gift-card-merging-issues-in-the-cart.md)
          - [ACSD-63242:10,000 個を超えるカタログ製品を追加すると読み込みが遅くなる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
          - [ACSD-63062：複数の重複するルールがある、買い物かごの割引計算が正しくない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
