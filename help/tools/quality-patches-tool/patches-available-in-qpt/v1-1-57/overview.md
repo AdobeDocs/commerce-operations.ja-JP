@@ -3,7 +3,8 @@ title: 概要： [!DNL Quality Patches Tool]  （QPT） v1.1.57
 description: このサブセクションでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.57 で使用可能なパッチによって修正された問題について詳しく説明します。
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 82b8d22438107680cdf47057e0db3e15bf819599
+exl-id: 3e252a71-f35f-4046-9353-169060451ffe
+source-git-commit: fc5c790108a3c62d4591631128743259824c4c6b
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -27,7 +28,7 @@ QPT v1.1.57 には、次のパッチが含まれています。
 1. **ACSD-62635**：マルチストア関連製品が [!DNL GraphQL] 製品クエリに正しく表示されない問題を修正しました。
 1. **ACSD-62671**:[!DNL GraphQL] リクエストが最初の試行で最新のアドレス情報を返さない問題を修正しました。
 1. **ACSD-62689**：深さ 4 の後で、顧客が [!UICONTROL Related Product Rules] および [!UICONTROL Widgets] でカテゴリを追加できない問題を修正。
-1. **ACSD-62708**:[!UICONTROL ACP2E-3430] から修正を適用した後、管理画面の [!DNL TinyMCE] 7 エディターのフォントサイズが [!UICONTROL px] と表示され、[!UICONTROL pt] と表示されない問題を修正しました。 フォントサイズを [!UICONTROL pt] ではなく [!UICONTROL px] で設定できるようになりました。
+1. **ACSD-62708**:[!UICONTROL ACP2E-3430] から修正を適用した後、管理画面の [!DNL TinyMCE] 7 エディターのフォントサイズが [!UICONTROL pt] と表示され、[!UICONTROL px] と表示されない問題を修正しました。 フォントサイズを [!UICONTROL pt] ではなく [!UICONTROL px] で設定できるようになりました。
 1. **ACSD-62758**：選択したオプションが URL に含まれている場合、製品ビデオが [!UICONTROL Configurable Product] の詳細ページで正しくレンダリングされない問題を修正しました。
 1. **ACSD-62951**：項目と合計を含めずに [!UICONTROL Credit Memo] メールが送信される問題を修正しました。
 1. **ACSD-62965**: *LocalizedException* メッセージが注文配置 [!DNL GraphQL response] ードに含まれていない問題を修正しました。
