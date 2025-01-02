@@ -4,9 +4,9 @@ description: Adobe Commerceの拡張 Redis キャッシュ実装を使用して�
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 7f277fe6245aba851aba7ddc70be40343bdaecc7
+source-git-commit: bbebb414ae3b8c255e17b1f3673a6c4b7c6f23b2
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
@@ -210,15 +210,19 @@ Redis キャッシュと Redis セッションを分離すると、キャッシ�
 
 1. `.magento.env.yaml` 設定ファイルにポート番号を追加します。
 
+   >[!IMPORTANT]
+   >
+   >`MAGENTO_CLOUD_RELATIONSHIPS` redis セッションサービス定義から自動的に検出で `ece-tools` ない場合にのみ、redis セッションポートを設定します。
+
    >[!NOTE]
+   >
    >`disable_locking` は `1` に設定する必要があります。
-   >   
 
    ```yaml
    SESSION_CONFIGURATION:
      _merge: true
      redis:
-       port: 6374       # check the port in $MAGENTO_CLOUD_RELATIONSHIPS
+       port: 6374 # check the port in $MAGENTO_CLOUD_RELATIONSHIPS and put it here (by default, you can delete this line!!)
        timeout: 5
        disable_locking: 1
        bot_first_lifetime: 60
