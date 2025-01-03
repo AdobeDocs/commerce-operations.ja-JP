@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 5ab49f669cf333a1a7444b11b75807505cbca2f4
+source-git-commit: 31f3dfa8efcf3ae32efabff5982db340b60d98b4
 workflow-type: tm+mt
-source-wordcount: '6632'
+source-wordcount: '6641'
 ht-degree: 0%
 
 ---
@@ -703,6 +703,7 @@ ht-degree: 0%
          - [ACSD-62965:GraphQL注文プレースメント応答に LocalizedException メッセージが見つからない問題を修正しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62965-fixes-missing-localizedexception-message-in-graphql-order-placement-response.md)
          - [ACSD-62758：設定可能な製品ページでのビデオレンダリングの問題を解決](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62758-resolved-video-rendering-issue-on-configurable-product-pages.md)
          - [ACSD-63326：バックエンドから注文した後の管理リダイレクトの問題を修正しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
+         - [ACSD-58325：検証エラーの後も使用できる [!UICONTROL Import] ボタン](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
 - コマンド ライン ツール リファレンス {#cli-reference}
    - [Adobe Commerce（オンプレミス）](reference/commerce-on-premises.md)
    - [互換性アップグレードツール](reference/uct.md)
