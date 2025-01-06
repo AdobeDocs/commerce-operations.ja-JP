@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 31f3dfa8efcf3ae32efabff5982db340b60d98b4
+source-git-commit: 5537079eff80496f8f4906ba22220a9a3ac3402a
 workflow-type: tm+mt
-source-wordcount: '6641'
+source-wordcount: '6651'
 ht-degree: 0%
 
 ---
@@ -694,6 +694,7 @@ ht-degree: 0%
          - [ACSD-63242:10,000 個を超えるカタログ製品を追加すると読み込みが遅くなる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
          - [ACSD-63062：複数の重複するルールがある、買い物かごの割引計算が正しくない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
          - [ACSD-62428：カタログ検索インデックスの在庫ステータスエラー](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
+         - [AACSD-62355:Adobe Commerceの設定可能な製品編集パフォーマンスを向上](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62355-improves-configurable-product-edit-performance-in-adobe-commerce.md)
          - [ACSD-62872: スケジュールの更新が正しく検証されませんでした](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly.md)
          - [ACSD-62952：ストアフロントにギフトレジストリの日付が正しく表示されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront.md)
          - [ACSD-62577：ストアフロント検索のパフォーマンスの最適化](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
