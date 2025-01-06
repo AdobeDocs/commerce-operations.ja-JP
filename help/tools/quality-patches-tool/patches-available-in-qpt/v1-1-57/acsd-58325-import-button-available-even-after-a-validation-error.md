@@ -3,13 +3,13 @@ title: ACSD-58325：検証エラーの後も使用できる [!UICONTROL Import] 
 description: ACSD-58325 パッチを適用して、検証エラーの後も「[!UICONTROL Import]」ボタンが使用可能なAdobe Commerceの問題を修正してください。
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: 5a2709014828810827e71d9dd91d34102d80bd66
+exl-id: 551a9ac7-9b7f-49b5-9255-2014c330fb07
+source-git-commit: c50fa066d02c04a08c28730afffe4508019a93aa
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58325：検証エラーの後も使用できる [!UICONTROL Import] ボタン
 
@@ -21,8 +21,7 @@ ACSD-58325 パッチは、検証エラーの後も **[!UICONTROL Import]** ボ�
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p3
 
 **Adobe Commerce バージョンとの互換性：**
-* Adobe Commerce オンプレミス 2.4.6 - 2.4.6-p8
-* クラウドインフラストラクチャー上のAdobe Commerce 2.4.6 - 2.4.6-p8
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.6 - 2.4.6-p8
 
 >[!NOTE]
 >
@@ -60,4 +59,3 @@ ACSD-58325 パッチは、検証エラーの後も **[!UICONTROL Import]** ボ�
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
 * [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
-
