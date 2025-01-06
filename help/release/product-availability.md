@@ -2,9 +2,9 @@
 title: 製品の可用性
 description: 現在サポートされているAdobe Commerce機能について説明し、特定のAdobe Commerce リリースとの互換性を確認します。
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-source-git-commit: 9761e3827add0e8b60e1bb53664ff65170608317
+source-git-commit: 56dabc0c35460a8ace6f6be455050f56119d1b16
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,7 @@ ht-degree: 0%
 * 現在、Adobe Commerce サービスはCommerce 2.4.4 以降と互換性があります。 マーチャントは最新バージョンのサービスを使用することをお勧めします。
 * サービスは、Commerce 2.4.x の以前のバージョンと互換性があると見なされますが、公式にはサポートされていません。
 * Recommendations 3.3.7 以前の製品を除き、サービスはCommerce 2.3.x と互換性がありません。
+* 現在、Payments サービスはMagento Open Source 2.4.4 以降と互換性があります。 マーチャントは最新バージョンのサービスを使用することをお勧めします。
 
 次の表に、Adobe Commerceのバージョンに対する各サービスのバージョンサポートを示します。
 
