@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 5537079eff80496f8f4906ba22220a9a3ac3402a
+source-git-commit: f2b773bdae1a892216d4384b85d1d929553529ea
 workflow-type: tm+mt
-source-wordcount: '6651'
+source-wordcount: '6662'
 ht-degree: 0%
 
 ---
@@ -701,6 +701,7 @@ ht-degree: 0%
       - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
       - v1.1.57{#v1-1-57}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
+         - [ACSD-61622: [!DNL FedEx] account 固有のレートが REST API 応答にありません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response.md)
          - [ACSD-62965:GraphQL注文プレースメント応答に LocalizedException メッセージが見つからない問題を修正しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62965-fixes-missing-localizedexception-message-in-graphql-order-placement-response.md)
          - [ACSD-62758：設定可能な製品ページでのビデオレンダリングの問題を解決](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62758-resolved-video-rendering-issue-on-configurable-product-pages.md)
          - [ACSD-63326：バックエンドから注文した後の管理リダイレクトの問題を修正しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
