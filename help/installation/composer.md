@@ -2,9 +2,9 @@
 title: オンプレミスでのクイックスタートのインストール
 description: 所有しているインフラストラクチャにAdobe Commerceをインストールするには、次の手順に従います。
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 60db3da9154e76032c88d687b6b6e22d7b81f9ae
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ Adobe Commerce メタパッケージを入手するには：
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   プロンプトが表示されたら、認証キーを入力します。 公開鍵と秘密鍵が作成され、[Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/) に設定されます。
+   プロンプトが表示されたら、認証キーを入力します。 公開鍵と秘密鍵は、[Commerce Marketplace- アクセスキー ](https://commercemarketplace.adobe.com/customer/account/login/) から作成および設定されます。 `[!UICONTROL username]` の場合は、公開鍵の値をコピーして貼り付けます。 `[!UICONTROL password]` の場合は、秘密鍵の値をコピー&amp;ペーストします。
 
    >[!NOTE]
    >
-   > Composer `auth.json` ファイルまたは環境変数を使用する場合、認証キーの入力を求めるプロンプトは表示されません。
+   > Commerce認証キーで設定された Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` ファイルまたは環境変数を使用する場合、認証キーを入力するように求められません。
 
    `Could not find package...` や `...no matching package found` などのエラーが発生した場合は、コマンドに入力ミスがないことを確認してください。 それでもエラーが発生する場合は、Adobe Commerceのダウンロードが許可されていない可能性があります。 [Adobe Commerce サポート ](https://support.magento.com/hc/en-us) にお問い合わせください。
 
