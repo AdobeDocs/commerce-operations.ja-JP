@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 5f161057bba76d208d363d33e6c09d1780c2e74b
+source-git-commit: ae2d0a48898063ce93efb7dce889f7485562f936
 workflow-type: tm+mt
-source-wordcount: '6716'
+source-wordcount: '6729'
 ht-degree: 0%
 
 ---
@@ -700,6 +700,7 @@ ht-degree: 0%
          - [ACSD-62872: スケジュールの更新が正しく検証されませんでした](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly.md)
          - [ACSD-62952：ストアフロントにギフトレジストリの日付が正しく表示されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront.md)
          - [ACSD-62577：ストアフロント検索のパフォーマンスの最適化](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
+         - [ACSD-62755: [!DNL TinyMCE] 7 では、フォントサイズとフォントをエディターの初期化設定に追加する必要があります](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
       - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
       - v1.1.57{#v1-1-57}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
