@@ -1,0 +1,69 @@
+---
+title: ACSD-62689：深さ 4 の後で、[!UICONTROL Related Product Rules] およびウィジェットにカテゴリを追加できない
+description: ACSD-62689 パッチを適用すると、ユーザーが深さ 4 のネストの後に [!UICONTROL Related Product Rules] および widgets にカテゴリを追加できないというAdobe Commerceの問題を修正できます。
+feature: Categories
+role: Admin, Developer
+source-git-commit: 154a017fbc6e069e8e59651db46955922c004955
+workflow-type: tm+mt
+source-wordcount: '374'
+ht-degree: 0%
+
+---
+
+
+# ACSD-62689：深さ 4 の後で、*[!UICONTROL Related Product Rules]* およびウィジェットにカテゴリを追加できない
+
+ACSD-62689 パッチでは、ユーザーが深さ 4 のネストの後に *[!UICONTROL Related Product Rules]* およびウィジェットにカテゴリを追加できない問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/patches/release-notes.html) 1.1.57 がインストールされている場合に使用できます。 パッチ ID は ACSD-62689 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+
+## 影響を受ける製品とバージョン
+
+**Adobe Commerce バージョン用のパッチが作成されます。**
+
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.7-p3
+
+**Adobe Commerce バージョンとの互換性：**
+
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.7 - 2.4.7-p3
+
+>[!NOTE]
+>
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+
+## 問題
+
+ユーザーが、深さ 4 のネストの後に、*[!UICONTROL Related Product Rules]* およびウィジェットでカテゴリを追加できません。
+
+<u> 再現手順 </u>:
+
+1. デフォルトのルートカテゴリの下に、*[!UICONTROL Anchor]* と *[!UICONTROL Non-Anchor]* という名前の 2 つのカテゴリを作成します。
+   * *[!UICONTROL Non-Anchor]* カテゴリに対して *[!UICONTROL Is Anchor]* フラグが無効になっていることを確認します。
+1. **[!UICONTROL Content]**/**[!UICONTROL Widgets]** に移動し、ウィジェットを作成します。
+1. 「*[!UICONTROL Layout Updates]*」の下の「*[!UICONTROL Display on]*」フィールドで「**[!UICONTROL Non-Anchor Categories]**」を選択します。
+1. 「**[!UICONTROL Specific Categories]**」をクリックします。
+1. カテゴリ選択アイコンをクリックします。
+1. ルートカテゴリを展開します。
+1. カテゴリを確認します。 両方とも無効にし、選択できないようにする必要があります。
+1. 「*[!UICONTROL Layout Updates]*」の下の「*[!UICONTROL Display on]*」フィールドで「**[!UICONTROL Anchor Categories]**」を選択します。 次に、手順 5 と 6 に従います。
+1. カテゴリを確認します。 両方とも有効かつ選択可能である必要があります。
+
+<u> 期待される結果 </u>:
+
+手順 7 では、*[!UICONTROL Non-Anchor]* カテゴリのみを選択可能にする必要があります。 手順 9 では、*[!UICONTROL Anchor]* カテゴリを選択可能にする必要があります。
+
+<u> 実際の結果 </u>:
+
+手順 7 では、両方のカテゴリを選択できません。 ステップ 9 では、両方のカテゴリを選択可能にする。
+
+## パッチの適用
+
+個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+
+* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
+
+
+## 関連資料
+
+[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+
+* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
