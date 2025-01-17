@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 32f3a7682ac13fdef7ff5694ef478b1d0704d8e9
+source-git-commit: 3b200e814ee973fde79b436d9efc5738b3420ee2
 workflow-type: tm+mt
-source-wordcount: '6807'
+source-wordcount: '6811'
 ht-degree: 0%
 
 ---
@@ -704,7 +704,6 @@ ht-degree: 0%
          - [ACSD-55339:Adobe Commerceの交渉可能な引用符で囲まれた SKU トリミングの問題の解決](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-55339-resolving-sku-trimming-issue-in-negotiable-quotes-for-adobe-commerce.md)
          - [ACSD-62670:CSV[!UICONTROL Products Ordered]XML へのレポートの書き出しでエラーがスローされる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62670-products-ordered-report-export-to-csv-xml-throws-error.md)
          - [ACSD-62755: [!DNL TinyMCE] 7 では、フォントサイズとフォントをエディターの初期化設定に追加する必要があります](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
-      - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
       - v1.1.57{#v1-1-57}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
          - [管理パネルの ACSD-62708: [!DNL TinyMCE] 7 エディターのフォントサイズが PT を表示](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62708-tinymce-7-editor-font-size-issue.md)
@@ -719,6 +718,9 @@ ht-degree: 0%
          - [ACSD-63286：共有カタログに割り当てられた製品を表示するには、手動でのインデックス再作成が必要です](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear.md)
          - [ACSD-58325：検証エラーの後も使用できる [!UICONTROL Import] ボタン](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
          - [ACSD-62671: [!DNL GraphQL]  は、最初の試行時に更新されたアドレスを返しません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
+      - v1.1.58 {#v1-1-58}
+         - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.58](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/overview.md)
+   - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - コマンド ライン ツール リファレンス {#cli-reference}
    - [Adobe Commerce（オンプレミス）](reference/commerce-on-premises.md)
    - [互換性アップグレードツール](reference/uct.md)
