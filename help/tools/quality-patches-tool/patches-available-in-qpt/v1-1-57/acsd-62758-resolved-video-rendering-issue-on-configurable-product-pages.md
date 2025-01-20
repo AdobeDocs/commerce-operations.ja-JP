@@ -3,16 +3,17 @@ title: ACSD-62758：設定可能な製品ページでのビデオレンダリン
 description: ACSD-62758 パッチを適用すると、Adobe Commerceの問題を修正できます。この問題では、事前に選択されたスウォッチオプションが URL に含まれている場合、設定可能な製品詳細ページの製品ビデオが正しくレンダリングされません。
 feature: Catalog Management
 role: Admin, Developer
-source-git-commit: 313709361ee86e39b89c416f71a92b078318f4fb
+exl-id: 084b497d-4471-4458-bc1d-2a452bfe2662
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
 
 # ACSD-62758：設定可能な製品ページでのビデオレンダリングの問題を解決
 
-ACSD-62758 パッチでは、URL に事前に選択されたスウォッチオプションが含まれている場合、設定可能な製品詳細ページの製品ビデオが正しくレンダリングされない問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 がインストールされている場合に使用できます。 パッチ ID は ACSD-62758 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-62758 パッチでは、URL に事前に選択されたスウォッチオプションが含まれている場合、設定可能な製品詳細ページの製品ビデオが正しくレンダリングされない問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 がインストールされている場合に使用できます。 パッチ ID は ACSD-62758 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -70,3 +71,4 @@ URL に事前に選択されたスウォッチオプションが含まれてい�
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
 * [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+

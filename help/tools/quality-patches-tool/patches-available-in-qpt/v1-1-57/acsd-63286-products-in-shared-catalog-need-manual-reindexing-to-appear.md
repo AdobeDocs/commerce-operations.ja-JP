@@ -3,16 +3,17 @@ title: ACSD-63286：共有カタログに割り当てられた製品を表示す
 description: ACSD-63286 パッチを適用すると、API を介して共有カタログに割り当てられた商品が、手動の再インデックスが実行されるまでストアフロントに表示されないAdobe Commerceの問題を修正できます。
 feature: Products, REST
 role: Admin, Developer
-source-git-commit: 00b2b9285ca27d630bd0ece2750b531710e8d196
+exl-id: 0435c06e-337e-4320-acc6-fa79a3b34008
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # ACSD-63286：共有カタログに割り当てられた製品を表示するには、手動でのインデックス再作成が必要です
 
-ACSD-63286 パッチでは、API を介して共有カタログに割り当てられた製品が、手動の再インデックスが実行されるまでストアフロントに表示されない問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 がインストールされている場合に使用できます。 パッチ ID は ACSD-63286 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-63286 パッチでは、API を介して共有カタログに割り当てられた製品が、手動の再インデックスが実行されるまでストアフロントに表示されない問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 がインストールされている場合に使用できます。 パッチ ID は ACSD-63286 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 

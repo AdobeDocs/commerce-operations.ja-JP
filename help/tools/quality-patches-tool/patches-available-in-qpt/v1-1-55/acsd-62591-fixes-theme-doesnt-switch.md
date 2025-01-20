@@ -3,17 +3,17 @@ title: ACSD-62591:**[!UICONTROL User Agent Rules]**が設定されている場�
 description: ACSD-62591 パッチを適用して、**[!UICONTROL User Agent Rules]**が設定されている場合にテーマが正しく切り替わらないAdobe Commerceの問題を修正してください。
 feature: Themes
 role: Admin, Developer
-source-git-commit: 319ac7ea1fb8f33f4ed7bfa440477cf6d6657cb5
+exl-id: 7b206b25-8918-40a6-a956-d38d5058d38f
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-62591：設定 [!UICONTROL User Agent Rules] に、テーマが正しく切り替わらない
 
-ACSD-62591 パッチは、テー **[!UICONTROL User Agent Rules]** が設定されている場合にテーマが正しく切り替わらない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 がインストールされている場合に使用できます。 パッチ ID は ACSD-62591 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-62591 パッチは、テー **[!UICONTROL User Agent Rules]** が設定されている場合にテーマが正しく切り替わらない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 がインストールされている場合に使用できます。 パッチ ID は ACSD-62591 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -61,3 +61,4 @@ ACSD-62591 パッチは、テー **[!UICONTROL User Agent Rules]** が設定さ�
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
 * [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+

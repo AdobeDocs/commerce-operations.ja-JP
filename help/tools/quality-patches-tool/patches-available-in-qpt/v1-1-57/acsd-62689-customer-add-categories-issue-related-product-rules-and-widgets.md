@@ -3,17 +3,17 @@ title: ACSD-62689：深さ 4 の後で、[!UICONTROL Related Product Rules] お�
 description: ACSD-62689 パッチを適用すると、ユーザーが深さ 4 のネストの後に [!UICONTROL Related Product Rules] および widgets にカテゴリを追加できないというAdobe Commerceの問題を修正できます。
 feature: Categories
 role: Admin, Developer
-source-git-commit: 154a017fbc6e069e8e59651db46955922c004955
+exl-id: 2506744a-01c8-462b-9a27-cd0bdb5664f9
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-62689：深さ 4 の後で、*[!UICONTROL Related Product Rules]* およびウィジェットにカテゴリを追加できない
 
-ACSD-62689 パッチでは、ユーザーが深さ 4 のネストの後に *[!UICONTROL Related Product Rules]* およびウィジェットにカテゴリを追加できない問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/patches/release-notes.html) 1.1.57 がインストールされている場合に使用できます。 パッチ ID は ACSD-62689 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-62689 パッチでは、ユーザーが深さ 4 のネストの後に *[!UICONTROL Related Product Rules]* およびウィジェットにカテゴリを追加できない問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 がインストールされている場合に使用できます。 パッチ ID は ACSD-62689 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -67,3 +67,4 @@ ACSD-62689 パッチでは、ユーザーが深さ 4 のネストの後に *[!UI
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
 * [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+
