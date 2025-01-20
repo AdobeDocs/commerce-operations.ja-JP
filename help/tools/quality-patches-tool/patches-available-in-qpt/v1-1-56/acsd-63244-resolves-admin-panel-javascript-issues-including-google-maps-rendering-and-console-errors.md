@@ -3,14 +3,15 @@ title: ACSD-63244：レンダリングやコンソールエラーを含む、管
 description: ACSD-63244 パッチは、レンダリングと繰り返しの「Uncaught TypeError this」に関する問題など、管理パネルの複数のJavaScriptの問題を修正し  [!DNL Google Maps]  す。ブラウザーコンソールの各エラーが関数エラーではありません（_e）。
 feature: Admin Workspace
 role: Admin, Developer
-source-git-commit: 01d6d74bfb9a9491bc006f140a2eebf4bbee004b
+exl-id: 1985c845-219e-4af4-8f70-62dd57722494
+source-git-commit: 6b623811440238deee7a7fe859d887830f89782c
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
-# ACSD-63244:ACSD-63244:[!DNL Google Maps] レンダリングやコンソールエラーなど、管理パネルのJavaScriptの問題を解決します
+# ACSD-63244:[!DNL Google Maps] レンダリングやコンソールエラーなど、管理パネルのJavaScriptの問題を解決します
 
 ACSD-63244 パッチは、ブラウザーコンソールでの [!DNL Google Maps] レンダリングや繰り返し `Uncaught TypeError: this._each is not a function` エラーの問題など、管理パネルに表示される複数のJavaScriptの問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 で使用できます。パッチ ID は ACSD-63244 です。 この問題はAdobe Commerce 2.4.8 で修正される予定だったことに注意してください。
 
