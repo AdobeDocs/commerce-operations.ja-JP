@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: b2659c1fc31150e452cb50424bb26529e6162c85
+source-git-commit: 30403c10ccb7332b0105c9859c37d7d23a784ce5
 workflow-type: tm+mt
-source-wordcount: '6825'
+source-wordcount: '6836'
 ht-degree: 0%
 
 ---
@@ -720,6 +720,7 @@ ht-degree: 0%
          - [ACSD-62671: [!DNL GraphQL]  は、最初の試行時に更新されたアドレスを返しません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
       - v1.1.58 {#v1-1-58}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.58](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/overview.md)
+         - [ACSD-63067：ストアフロントのグループ化製品での数量検証の問題の解決](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63067-resolving-quantity-validation-issues-in-grouped-products-on-storefront.md)
          - [ACSD-62118: [!UICONTROL Purchase Order] メソッドを使用して発注された B2B 受注の sales_order_tax_item テーブルが完全に更新されていません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method.md)
    - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - コマンド ライン ツール リファレンス {#cli-reference}
