@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7c72ffc09d5b0147ce3c3f31cf18510a8cd9931f
+source-git-commit: 3ea627f6f4531f63ab1dc05414252c73cac6ffd0
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1417'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,262 @@ ht-degree: 1%
 ## 新機能
 
 このページには、過去 60 日間に加えられた変更が含まれています。 コピー編集などのマイナーアップデートはすべて、このリストから除外します。
+
+### 2025 年 1 月 22 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62212-forgot-password-email-not-translated-to-store-view-language">QPT 1.1.57 リリースの ACSD-62212 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9a00ebde10ad5dd916fd7afeb73e5e6aeec32495">9a00eb</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62481-shopping-cart-empty-even-with-persistence-enabled">QPT 1.1.57 リリースの ACSD-62481 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/94781de6a8ec4e342299da5a64bef1a9a2d14366">94781d</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method">QPT 1.1.58 リリースの ACSD-62118 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7fb220f5a55f6ff40fddf980537262d933f993dc">7fb220</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 1 月 17 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/overview">QPT 1.1.58 リリースで使用可能なパッチによって修正された問題の説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/657f4f1f497fca7a8f1278be73284bf558c5769e">657f4f</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 1 月 15 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62708-tinymce-7-editor-font-size-issue">QPT 1.1.57 リリースの ACSD-62708 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/da761a8db901b5b95b4682dfb7721cc53e2c842a">da761a</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 1 月 13 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>[QPT 1.1.57 リリースの ACSD-62689 パッチによって修正された問題の詳細な説明 ]<br /> （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62689-customer-add-categories-issue-related-product-rules-and-widgets）を追加しました</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a6a62dea458a8e70c432c83fc7c75a4f0a26aacb">a6a62d</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-55339-resolving-sku-trimming-issue-in-negotiable-quotes-for-adobe-commerce">QPT 1.1.56 リリースの ACSD-55339 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c7311e6c665a018c3da30f37fea2c35487034795">c7311e</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 1 月 10 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-61805-stock-status-issue-storefront-backorder-status-update-rest-api">QPT 1.1.56 リリースの ACSD-61805 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cac43e2e74ddfa0fa77603100a73e2894510b552">cac43e</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62629-product-list-widgets-category-condition">QPT 1.1.57 リリースの ACSD-62629 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cab2b42f8fa02419d0ca4164e74cc87dd344b3e4">cab2b4</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 1 月 8 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting">QPT 1.1.56 リリースの ACSD-62755 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5a785f5111778a36e1556ecc3443d37f50ffc435">5a785f</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62670-products-ordered-report-export-to-csv-xml-throws-error">QPT 1.1.56 リリースの ACSD-62670 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1d04fa3c26e1762156f99837ea75e38a142bf595">1d04fa</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-60811-fixes-limitation-in-updating-order-status-to-custom-values">QPT 1.1.56 リリースの ACSD-60811 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1def9cb825b4935987727a6b27b01482a3f91ba7">1def9c</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-57570-fix-restricted-admin-access">QPT 1.1.57 リリースの ACSD-57570 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7e40cf7e683ac578614d61233cae2155ab2f777e">7e40cf</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 1 月 6 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63244-resolves-admin-panel-javascript-issues-including-google-maps-rendering-and-console-errors">QPT 1.1.56 リリースの ACSD-63244 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4bff3aebf07c922e1121468d556facdfd7c7bad1">4bff3a</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62355-improves-configurable-product-edit-performance-in-adobe-commerce">QPT 1.1.56 リリースの ACSD-62355 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d6544587a287ce8374933f25bed69fa45dab2e97">d65445</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response">QPT 1.1.57 リリースの ACSD-61622 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dd7956e3577b47faef15350b06c9f38ca36899da">dd7956</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62635-multistore-related-products-displayed-incorrectly-in-graphql">QPT 1.1.57 リリースの ACSD-62635 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/71e2d772e0cf118c0f47a65e1b81360741d71f5a">71e2d7</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt">QPT 1.1.57 リリースの ACSD-62671 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/72c7e7d96c9adffba8d3c48fc4a3f0f961268a4c">72c7e7</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear">QPT 1.1.57 リリースの ACSD-63286 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a0a2b5ad10c5f38603963af036fb280988df612d">a0a2b5</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 1 月 3 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront">QPT 1.1.56 リリースの ACSD-62952 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5d612d7f4a57824aae06e8dcff86c4534e451f68">5d612d</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly">QPT 1.1.56 リリースの ACSD-62872 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/374deb66f7fb8081318a966f78fe3b1bd4ced2a0">374deb</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62758-resolved-video-rendering-issue-on-configurable-product-pages">QPT 1.1.57 リリースの ACSD-62758 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f6582b9c90f84d99335534f25d38aa2bff9d02be">f6582b</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62965-fixes-missing-localizedexception-message-in-graphql-order-placement-response">QPT 1.1.57 リリースの ACSD-62965 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/427969b0e983065cbaad20d7b960a023ae238299">427969</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error">QPT 1.1.57 リリースの ACSD-58325 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9a46f93eab7e2cb3da76941a6d8a2ef636fd8696">9a46f9</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025 年 1 月 2 日（Pt）
 
@@ -375,202 +631,6 @@ ht-degree: 1%
 </td>
       <td>new-topic</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fc5343374cf270f85b908e9bd022ce89c00c615f">fc5343</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024 年 11 月 25 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts">QPT 1.1.55 リリースの ACSD-58735 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/358233a5c250b888c1a95ef1389b13caa4dbfcc6">358233</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created">QPT 1.1.54 リリースの ACSD-62485 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/50f430f82753c76675cf870cdc967c9dce6b6fa3">50f430</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024 年 11 月 22 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api">QPT 1.1.55 リリースの ACSD-58383 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/be768cdf7c4518db6a0c1ecb264a32170b51dbf7">be768c</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page">QPT 1.1.55 リリースの ACSD-58471 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/45fc69f6a52436edb96e83e99db2f5b9a7f3db62">45fc69</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024 年 11 月 20 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure">QPT 1.1.54 リリースの ACSD-61199 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0908c54f14963f0192f13b0bd33d581f7a5c6bdb">0908c5</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024 年 11 月 19 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview">QPT 1.1.55 リリースで使用可能なパッチによって修正された問題の説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7848afbcdbec3ca4c06f53ddaef6de2829cc5006">7848af</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header">QPT 1.1.54 リリースの ACSD-61845 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/46bc94e85c07dca87d4f3ed40a3eb45faa2f8d92">46bc94</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024 年 11 月 15 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>1.1.55 品質パッチツール（QPT）パッケージリリース用に公開 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html"> リリースノート </a> です。</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e8a6315fc93e271fc71bdad1629103ed727f3dd">0e8a63</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024 年 11 月 14 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61553-cart-price-rule-discounts-are-incorrectly-calculated-when-multiple-discounts-with-different-priorities-are-applied">QPT 1.1.53 リリースの ACSD-61553 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d7b72cb646e47257a26f32bbddcec96e36c02946">d7b72c</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations">QPT 1.1.54 リリースの ACSD-61200 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ded386f6dcd7b99f6337c9f84ec1d3f3433f0d02">ded386</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024 年 11 月 13 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations">QPT 1.1.54 リリースの ACSD-61522 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4aa599e57df7fe2282efdad7ebceda909aaa7398">4aa599</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error">QPT 1.1.53 リリースの ACSD-60804 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/893a0fe6a61a9a53734f34950ccf056a3faa068d">893a0f</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60684-graphql-product-sorting-by-multiple-fields-does-not-work-as-expected">QPT 1.1.52 リリースの ACSD-60684 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4bae8f076b20579ce5e7c4c84d7235ab338f40c3">4bae8f</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024 年 11 月 8 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results">QPT 1.1.53 リリースの ACSD-61528 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dd2f98fad78659b360f243c78424f234389c05b7">dd2f98</a> （コミット）</td>
     </tr>
   </tbody>
 </table>
