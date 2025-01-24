@@ -2,7 +2,7 @@
 title: ソフトウェアのライフサイクルポリシー
 description: Adobe Commerce リリースのソフトウェアサポート終了の主な日付について説明します。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: ce7c322c5cf979a992e6f929c3105daf86d4aa49
+source-git-commit: 7b32ed40efb7e72810f571c8b4b71a77c8aa6a20
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 4%
@@ -39,7 +39,7 @@ Adobeでは、できるだけ早くアップグレードすることをお勧め
 | Adobe Commerce 2.4.7 | 2024 年 4 月 9 日（Pt） | 2027 年 4 月 9 日（Pt） | 該当なし | 8.2 および 8.3 | 10.6 |
 | Adobe Commerce 2.4.6 | 2023 年 3 月 14 日（Pt） | 2026 年 8 月 11 日 <sup>2</sup> | 該当なし | 8.1 および 8.2 | 10.6 |
 | Adobe Commerce 2.4.5 | 2022 年 8 月 9 日（Pt） | 2025 年 8 月 9 日（Pt） | 2026 年 8 月 11 日（Pt） | 8.1 | 10.6<sup>3</sup> |
-| Adobe Commerce 2.4.4 | 2022 年 4 月 12 日（Pt） | 2025 年 4 月 24 日（Pt） | 2026 年 4 月 14 日（Pt） | 8.1 | 10.6<sup>4</sup> |
+| Adobe Commerce 2.4.4 | 2022 年 4 月 12 日（Pt） | 2025 年 4 月 12 日（Pt） | 2026 年 4 月 14 日（Pt） | 8.1 | 10.6<sup>4</sup> |
 
 {style="table-layout:auto"}
 
