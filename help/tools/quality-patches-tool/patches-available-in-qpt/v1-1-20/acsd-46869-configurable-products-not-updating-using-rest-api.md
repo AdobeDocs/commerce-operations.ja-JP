@@ -1,11 +1,12 @@
 ---
-title: 「ACSD-46869：設定可能な製品がチェックアウト時に REST API を使用して更新されない」
+title: ACSD-46869：設定可能な製品が、チェックアウト時に REST API を使用して更新されない
 description: ACSD-46869 パッチを適用すると、チェックアウト時に設定可能な製品が REST API を使用して更新されない問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches） 1.1.20 がインストールされている場合に利用できます。 パッチ ID は ACSD-46869 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
 feature: REST, Checkout, Configuration, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f03d4b24-ac95-406e-8e9d-908149b9207c
+source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -66,6 +67,6 @@ ACSD-46869 パッチにより、チェックアウト時に設定可能な製品
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
 * [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [ を使用して、Adobe Commerceの問題にパッチが使用できるかどうかを  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) サポートナレッジベースで確認します。
+* [ を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
 
 [!DNL QPT] で使用可能なその他のパッチの詳細については、『品質向上パッチツールガイド』の [ で使用可能なパッチ  [!DNL QPT]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) を参照してください。
