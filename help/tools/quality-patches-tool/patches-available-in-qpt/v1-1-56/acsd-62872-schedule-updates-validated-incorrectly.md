@@ -3,13 +3,13 @@ title: 'ACSD-62872: スケジュールの更新が正しく検証されません
 description: ACSD-62872 パッチを適用して、スケジュールされた更新が正しく検証されない一意の属性検証のAdobe Commerceの問題を修正してください。
 feature: Catalog Management, Admin Workspace
 role: Admin, Developer
-source-git-commit: f734dab2316237d60164a430eeabed17782b0ae6
+exl-id: bd0d452b-aae3-4682-8a2c-471a7f8bf132
+source-git-commit: 4727a94178c642922224cb37ad5c1b2b4f6002cb
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62872: スケジュールの更新が正しく検証されませんでした
 
@@ -23,7 +23,11 @@ ACSD-62872 パッチは、スケジュールされた更新が正しく検証さ
 
 **Adobe Commerce バージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p3
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.7 - 2.4.7-p3
+
+>[!NOTE]
+>
+>このパッチは、1.1.58 QPT リリースのバージョン 2.4.4 ～ 2.4.6-p8 では非推奨（廃止予定）としてマークされています。
 
 >[!NOTE]
 >
@@ -39,7 +43,7 @@ ACSD-62872 パッチは、スケジュールされた更新が正しく検証さ
 1. **[!UICONTROL Catalog]**/**[!UICONTROL Categories]** に移動します。
 1. 新しいカテゴリを作成します。
 1. 同じカテゴリで、**[!UICONTROL Scheduled Updates]** のセクションに移動します。
-1. 今後の任意の時間でこのカテゴリに対して新しい更新を設定します。
+1. 今後いつでも、このカテゴリの新しい更新を設定します。
 1. スケジュールされた更新を開始する前に、カテゴリに対して作成したスケジュールの更新を編集してみてください。
 
 <u> 期待される結果 </u>:
@@ -55,8 +59,7 @@ ACSD-62872 パッチは、スケジュールされた更新が正しく検証さ
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
-
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)/パッチの適用」を参照してください。
 
 ## 関連資料
 
