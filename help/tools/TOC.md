@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: dad7141d0bc49896bc55965ab40b354f53f2a17b
+source-git-commit: ec51c6e7ac5dc5a7cbf4f8b1db048da265741196
 workflow-type: tm+mt
-source-wordcount: '6926'
+source-wordcount: '6939'
 ht-degree: 0%
 
 ---
@@ -729,6 +729,7 @@ ht-degree: 0%
          - [ACSD-63283:Adobe Commerce[!UICONTROL Gift Registry] 電子メールと注文の問題の解決](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63283-resolving-gift-registry-email-and-order-placement-issues-in-adobe-commerce.md)
          - [ACSD-62118: [!UICONTROL Purchase Order] メソッドを使用して発注された B2B 受注の sales_order_tax_item テーブルが完全に更新されていません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method.md)
          - [ACSD-63182：バンドル製品の複製後、製品の保存中にエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63182-error-occurs-while-saving-a-product-after-bundle-product-duplication.md)
+         - [ACSD-63299：設定可能な製品の特別価格がストアフロントに表示されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
          - [ACSD-63325:empty [!DNL GraphQL] request の送信中に「構文エラー：予期しない &lt; EOF >」エラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
    - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - コマンド ライン ツール リファレンス {#cli-reference}
