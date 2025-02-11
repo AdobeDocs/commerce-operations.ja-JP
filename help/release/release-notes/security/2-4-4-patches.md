@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.4 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.4 のセキュリティパッチリリースに含まれている、セキュリティバグ修正、セキュリティ機能強化、その他のセキュリティ関連アップデートについて説明します。
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: cb4f388c90902c2fe1df4a5d84841280fa740104
+source-git-commit: 9397740c608e4f0521018d6f6c918ca267197c6c
 workflow-type: tm+mt
-source-wordcount: '1498'
+source-wordcount: '1535'
 ht-degree: 0%
 
 ---
@@ -12,63 +12,75 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.4 セキュリティパッチのリリースノート
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
 
-## 2.4.4-p11
+## 2.4.4-p12
 
-Adobe Commerce 2.4.4-p11 セキュリティリリースは、2.4.4 の以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。
+Adobe Commerce 2.4.4-p12 セキュリティリリースは、2.4.4 の以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。
 
-セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html) を参照してください。
 
 {{b2b-patches}}
 
 ### ハイライト
 
-{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
+{{$include /help/_includes/release-notes/highlights/security-2025-02.md}}
+
+## 2.4.4-p11
+
+Adobe Commerce 2.4.4-p11 セキュリティリリースは、2.4.4 の以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。
+
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html) を参照してください。
+
+{{b2b-patches}}
+
+### ハイライト
+
+{{$include /help/_includes/release-notes/highlights/security-2024-10.md}}
 
 ## 2.4.4-p10
 
 Adobe Commerce 2.4.4-p10 セキュリティリリースは、2.4.4 の以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。
 
-セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html) を参照してください。
 
 ### ハイライト
 
-{{$include /help/_includes/release-notes/2024-08/security.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-08.md}}
 
 ### このリリースに含まれるホットフィックス
 
-{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/included-2024-08.md}}
 
 ## 2.4.4-p9
 
 Adobe Commerce 2.4.4-p9 セキュリティリリースは、以前のリリースの 2.4.4 で特定された脆弱性に対するセキュリティバグ修正を提供します。
 
-セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html) を参照してください。
 
 ### CVE-2024-34102 のホットフィックスを適用する
 
-{{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
 ### Platform のアップグレード
 
-* **MariaDB 10.5 のサポート**。 このパッチリリースでは、MariaDB バージョン 10.5 との互換性が導入されています。Adobe Commerceは MariaDB バージョン 10.4 と引き続き互換性がありますが、MariaDB 10.4 のメンテナンスは 2024 年 6 月 18 日（PT）に終了するため、Adobeでは、Adobe Commerce 2.4.4-p9 および今後のすべての 2.4.4 のセキュリティ専用パッチリリースは MariaDB バージョン 10.5 でのみ使用することをお勧めします。<!--AC-11530-->
+* **MariaDB 10.5 のサポート**。 このパッチリリースでは、MariaDB バージョン 10.5 との互換性が導入されています。Adobe Commerceは MariaDB バージョン 10.4 と引き続き互換性がありますが、Adobeでは、Adobe Commerce 2.4.4-p9 および今後のすべての 2.4.4 のセキュリティ専用パッチリリースは MariaDB バージョン 10.5 でのみ使用することをお勧めします。これは、MariaDB 10.4 のメンテナンスが 2024 年 6 月 18 日（PT）に終了するためです。<!--AC-11530-->
 
 ### ハイライト
 
-{{$include /help/_includes/release-notes/2-4-7-security.md}}
+{{$include /help/_includes/release-notes/highlights/2-4-7-security.md}}
 
 ## 2.4.4-p8
 
 Adobe Commerce 2.4.4-p8 セキュリティリリースは、Adobe Commerce 2.4.4 デプロイメントのセキュリティバグを修正します。 これらのアップデートにより、以前のリリースで特定された脆弱性が修正されます。
 
-セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html) を参照してください。
 
 ## 2.4.4-p7
 
 Adobe Commerce 2.4.4-p7 セキュリティリリースは、以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
-セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html) を参照してください。
 
 ### ハイライト
 
@@ -85,7 +97,7 @@ Adobe Commerce 2.4.4-p7 セキュリティリリースは、以前のリリー�
 
 Adobe Commerce 2.4.4-p6 セキュリティリリースは、以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
-セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB23-50](https://helpx.adobe.com/security/products/magento/apsb23-50.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB23-50](https://helpx.adobe.com/security/products/magento/apsb23-50.html) を参照してください。
 
 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
@@ -108,21 +120,21 @@ Adobe Commerce 2.4.4-p6 セキュリティリリースは、以前のリリー�
 
 Adobe Commerce 2.4.4-p5 セキュリティリリースは、以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。
 
-セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html) を参照してください。
 
 ### CVE-2022-31160 のホットフィックスを適用する
 
-`jQuery-UI` library バージョン 1.13.1 には、複数のバージョンのAdobe CommerceおよびMagento Open Sourceに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceとMagento Open Source 2.4.4、2.4.5、2.4.6 の依存関係です。影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事の 2.4.4、2.4.5、2.4.6 リリースの [jQuery UI のセキュリティ脆弱性 CVE-2022-31160 の修正で指定されたパッチを適用する必要 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) あります。
+`jQuery-UI` library バージョン 1.13.1 には、Adobe CommerceおよびMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceとMagento Open Source 2.4.4、2.4.5、2.4.6 の依存関係です。影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事の 2.4.4、2.4.5、2.4.6 リリースの [jQuery UI のセキュリティ脆弱性 CVE-2022-31160 の修正で指定されたパッチを適用する必要 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) あります。
 
 ## 2.4.4-p4
 
 Adobe Commerce 2.4.4-p4 セキュリティリリースは、以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるためのセキュリティ機能強化とプラットフォームアップグレードも含まれています。
 
-セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html) を参照してください。
 
 ### CVE-2022-31160 のホットフィックスを適用する
 
-`jQuery-UI` library バージョン 1.13.1 には、複数のバージョンのAdobe CommerceおよびMagento Open Sourceに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceとMagento Open Source 2.4.4、2.4.5、2.4.6 の依存関係です。影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事の 2.4.4、2.4.5、2.4.6 リリースの [jQuery UI のセキュリティ脆弱性 CVE-2022-31160 の修正で指定されたパッチを適用する必要 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) あります。
+`jQuery-UI` library バージョン 1.13.1 には、Adobe CommerceおよびMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceとMagento Open Source 2.4.4、2.4.5、2.4.6 の依存関係です。影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事の 2.4.4、2.4.5、2.4.6 リリースの [jQuery UI のセキュリティ脆弱性 CVE-2022-31160 の修正で指定されたパッチを適用する必要 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) あります。
 
 ### ハイライト
 
@@ -134,7 +146,7 @@ Adobe Commerce 2.4.4-p4 セキュリティリリースは、以前のリリー�
 
 * **Varnish cache 7.3 のサポート**。 このリリースは、最新バージョンの Varnish Cache 7.3 と互換性があります。6.0.x および 7u.2.x バージョンとの互換性は維持されますが、Adobeでは、Adobe Commerce 2.4.4-p4 を Varnish Cache バージョン 7.3 またはバージョン 6.0 LTS でのみ使用することをお勧めします。
 
-* **RabbitMQ 3.11 サポート**。 このリリースは最新バージョンのRabbitMQ 3.11 と互換性があります。互換性はRabbitMQ 3.9 に残っています。このバージョンは 2023 年 8 月までサポートされます。ただし、Adobeでは、Adobe Commerce 2.4.4-p4 をRabbitMQ 3.11 でのみ使用することをお勧めします。
+* **RabbitMQ 3.11 のサポート**。 このリリースは最新バージョンの RabbitMQ 3.11 と互換性があります。互換性は RabbitMQ 3.9 に残っており、2023 年 8 月までサポートされます。ただし、Adobeでは、Adobe Commerce 2.4.4-p4 を RabbitMQ 3.11 でのみ使用することをお勧めします。
 
 * **JavaScript ライブラリ**。 古いJavaScript ライブラリは、`moment.js` ライブラリ（v2.29.4）、`jQuery UI` ライブラリ（v1.13.2）、`jQuery` validation プラグインライブラリ（v1.19.5）など、最新のマイナーバージョンまたはパッチバージョンにアップグレードされています。
 
@@ -142,13 +154,13 @@ Adobe Commerce 2.4.4-p4 セキュリティリリースは、以前のリリー�
 
 Adobe Commerce 2.4.4-p3 セキュリティリリースは、以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。
 
-セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB23-17](https://helpx.adobe.com/security/products/magento/apsb23-17.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB23-17](https://helpx.adobe.com/security/products/magento/apsb23-17.html) を参照してください。
 
 ## 2.4.4-p2
 
 Adobe Commerce 2.4.4-p2 セキュリティリリースは、以前のリリースで特定された脆弱性の修正を提供します。 1 つの修正には、新しい設定の作成が含まれます。 「**メールが変更された場合、メールによる確認を要求する**」設定を使用すると、管理者ユーザーがメールアドレスを変更したときに、管理者がメールによる確認を要求できます。<!-- AC-6292-->
 
-セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html) を参照してください。
 
 ### AC-3022.patch を適用して、引き続き配送業者として DHL を提供します
 

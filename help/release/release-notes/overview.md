@@ -2,9 +2,9 @@
 title: Adobe Commerce リリースノート
 description: 特定の Adobe Commerce リリースの情報の入手先について説明します。
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: a2c93cb8481a3d843bc3be186d682f1d5e7974f6
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '275'
 ht-degree: 3%
 
 ---
@@ -48,22 +48,19 @@ ht-degree: 3%
         <p>革新的なCommerce マーチャンダイジングサービスに対する最新の改善点について説明します。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">AmazonSales Channel</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">カタログサービス</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">チャネルマネージャー（Walmart Marketplace 販売）</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platformコネクタ</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platform コネクタ</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Live Search</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">支払いサービス</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">製品のRecommendations</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">製品レコメンデーション</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html">サービスコネクタ</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html?lang=en">Store Fulfillment</a></li>
           </ul>
         </td>
       <td><strong> ツール </strong>
         <p>Adobe Commerce ソフトウェアを簡単に見つけて使用できるように設計されたツールに対する最新の改善点について説明します。</p>
           <ul>
-            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">AdobeApp Builder Developer の API メッシュ</a></li>
-            <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe CommerceのAdobe I/Oイベント</a></li>
+            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Adobe App Builder Developer の API メッシュ</a></li>
+            <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe CommerceのAdobe I/O Events</a></li>
             <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">管理 UI SDK</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">品質向上パッチツール</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">サイト全体分析ツール</a></li>

@@ -2,7 +2,7 @@
 title: Adobe Commerce 2.4.3 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.3 のセキュリティパッチリリースに含まれている、セキュリティバグ修正、セキュリティ機能強化、その他のセキュリティ関連アップデートについて説明します。
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
+source-git-commit: b63fa9a8b2b59f6e8dfd7003e75c66caf99d5e81
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.3 セキュリティパッチのリリースノート
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
 
 ## Adobe Commerce 2.4.3-p3
 
 Adobe Commerce 2.4.3-p3 セキュリティリリースは、以前のリリースの 2.4.3 で特定された脆弱性に対するセキュリティ修正を提供します。このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
-セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html) を参照してください。
 
 ### 配送業者として DHL を引き続き提供するには、`AC-3022.patch` を適用してください
 
@@ -33,7 +33,7 @@ DHL ではスキーマバージョン 6.2 を導入しており、近い将来�
 
 Adobe Commerce 2.4.3-p2 セキュリティリリースは、以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
-セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html) を参照してください。  また、このパッチリリースでは、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` および `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch` によって対処された脆弱性も解決されています。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html) を参照してください。  また、このパッチリリースでは、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` および `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch` によって対処された脆弱性も解決されています。
 
 
 ### 配送業者として DHL を引き続き提供するには、`AC-3022.patch` を適用してください
@@ -62,7 +62,7 @@ DHL ではスキーマバージョン 6.2 を導入しており、近い将来�
 Adobe Commerce 2.4.3-p1 セキュリティリリースでは、前のリリース（Adobe Commerce 2.4.3 およびMagento Open Source 2.4.3）で特定された脆弱性のセキュリティバグが修正されています。 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
 
-セキュリティのバグ修正の最新情報については、[Adobeセキュリティ速報 APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html) を参照してください。 このパッチリリースでは、ベンダーが開発した [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html)、[Klarna](https://marketplace.magento.com/klarna-m2-klarna.html) および [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html) 拡張機能のバグ修正も提供しています。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html) を参照してください。 また、このパッチリリースでは、ベンダーが開発した [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html)、[Klarna](https://marketplace.magento.com/klarna-m2-klarna.html) および [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html) 拡張機能のバグ修正も提供しています。
 
 ### 配送業者として DHL を引き続き提供するには、`AC-3022.patch` を適用してください
 
