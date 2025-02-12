@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-58739：部分的なインデックス再作成でエラーがスローされる」
+title: ACSD-58739：部分的なインデックス再作成でエラーがスローされる
 description: ACSD-55241 パッチを適用して、部分的なインデックス再作成がエラーをスローするAdobe Commerceの問題を修正してください。
 feature: Inventory, Products
 role: Admin, Developer
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: b4e6b8b4-43de-4434-94fb-6269a75e1c28
+source-git-commit: c643d55823ae0791ecfa0f2220116bbcbd02668a
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -34,7 +35,7 @@ ACSD-58739 パッチでは、部分的なインデックス再作成でエラー
 
 <u> 再現手順 </u>:
 
-1. `app/etc/ev.php` にスレーブ接続設定を追加します。
+1. `app/etc/env.php` にスレーブ接続設定を追加します。
 1. 最大 10000 個の製品を生成し、次のコマンドを実行します。
 
    ```
@@ -67,7 +68,7 @@ ACSD-58739 パッチでは、部分的なインデックス再作成でエラー
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイド
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドの
 * クラウドインフラストラクチャー上のAdobe Commerce:[ アップグレードとパッチ適用 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) クラウドインフラストラクチャー上のCommerce ガイド
 
 ## 関連資料
