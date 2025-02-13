@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 183a83346633913b3b013732cbac8676a0756609
+source-git-commit: 329a9413eca2de00451ee694501cca2cf0c57c30
 workflow-type: tm+mt
-source-wordcount: '6981'
+source-wordcount: '6990'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
    - [「機能」タブ](site-wide-analysis-tool/features-tabs.md)
    - [Dashboard](site-wide-analysis-tool/dashboard.md)
    - [情報](site-wide-analysis-tool/information.md)
-   - [Recommendations](site-wide-analysis-tool/recommendations.md)
+   - [推奨事項](site-wide-analysis-tool/recommendations.md)
    - [例外](site-wide-analysis-tool/exceptions.md)
    - [拡張機能](site-wide-analysis-tool/extensions.md)
    - [アラート](site-wide-analysis-tool/alerts.md)
@@ -247,7 +247,7 @@ ht-degree: 0%
          - [ACSD-46541：注文項目が削除された場合、管理者ユーザーはクレジットメモを作成できません](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46541-admin-user-cannot-create-credit-memo-if-order-item-deleted.md)
          - [ACSD-46581：買い物かごで国を選択した後、推定税合計が更新されない](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46581-estimated-tax-total-is-not-updated-after-selecting-a-country-in-the-shopping-cart.md)
          - [ACSD-46618：製品リストウィジェットに、ログインした顧客に対して正しくないキャッシュ価格が表示される](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46618-product-list-widget-shows-incorrect-cached-prices-logged-in-customer.md)
-         - [ACSD-46674：お客様のメールにHTMLとして表示される画像タイプのカスタムオプション](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46674-custom-options-image-type-displayed-html.md)
+         - [ACSD-46674：お客様のメールでHTMLとして表示される画像タイプのカスタムオプション](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46674-custom-options-image-type-displayed-html.md)
          - [ACSD-46809：多数の製品ソースを割り当てると、ユーザーにエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46809-the-user-gets-an-error-when-assigning-a-large-number-of-product-sources.md)
          - [ACSD-46856：階層価格を更新する際のパフォーマンスを向上](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46856-improves-performance-when-updating-tier-prices.md)
          - [ACSD-46988:GraphQL通貨 API リクエストで null 値が返される](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46988-graphql-currency-api-request-returns-null-values.md)
@@ -298,9 +298,9 @@ ht-degree: 0%
          - [ACSD-48773：報酬ポイントのメールテンプレートが間違ったストアから取得される](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48773-reward-points-email-template-taken-from-wrong-store.md)
          - [ACSD-47937：アプリケーションレベルのキャッシュが原因で価格下降通知が送信されない](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-47937-price-drop-notifications-are-not-sent.md)
          - [ACSD-48661：会社の与信制限のコンマ区切り記号の検証の問題](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48661-company-credit-limit-comma-separator-validation.md)
-         - [ACSD-48587:HTMLキャラクターを含む SKU で製品ウィジェットが機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48587-product-widget-not-working-with-html-characters.md)
+         - [ACSD-48587:HTML文字を含む SKU で Product ウィジェットが機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48587-product-widget-not-working-with-html-characters.md)
          - [ACSD-48212：製品のインポートによって製品が誤ったソースに割り当てられる](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48212-product-import-assigns-product-wrong-source.md)
-         - [ACSD-47988：商品のエクスポートで、ページビルダーHTML説明から商品タグがトリミングされる](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-47988-product-export-trims-html-tags.md)
+         - [ACSD-47988：商品のエクスポートで、ページビルダー商品の説明からHTML タグがトリミングされる](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-47988-product-export-trims-html-tags.md)
          - [ACSD-48366：ストックに戻るメールテンプレートに製品画像が表示されない](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48366-product-image-not-displayed-back-stock-email-template.md)
          - [ACSD-48417：スケジュール変更の作成後の SQL エラー](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48417-sql-error-after-creating-a-schedule-change.md)
       - V1.1.27 {#v1-1-27}
@@ -393,7 +393,7 @@ ht-degree: 0%
       - v1.1.33{#v1-1-33}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.33](quality-patches-tool/patches-available-in-qpt/v1-1-33/overview.md)
          - [ACSD-51792：ページにインプレッションイベントがありません](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51792-page-does-not-have-impression-event.md)
-         - [ACSD-51645:Magentoextension_OfflineShipping が無効な場合の、新しい買い物かご価格ルールの保存](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
+         - [ACSD-51645：拡張機能Magento_OfflineShipping が無効な場合の、新しい「買い物かご」価格ルールの保存](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
          - [ACSD-51240：会社登録フォーム経由での登録中に、アップロードしたファイルが見つからない](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51240-uploaded-file-missing-while-registering-via-company-registration-form.md)
          - [ACSD-51907：制限付き管理者ユーザーは、オフライン払い戻しのクレジット メモを作成できません](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51907-restricted-admin-user-cannot-create-a-credit-memo-with-an-offline-refund.md)
          - [ACSD-51892：設定ファイルが複数回読み込まれるパフォーマンスの問題](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.md)
@@ -405,7 +405,7 @@ ht-degree: 0%
          - [ACSD-50512：ダウンロード可能な製品のステージング更新の開始日を更新する際にエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50512-error-when-updating-the-start-date-for-a-downloadable-product-staging-update.md)
          - [ACSD-50895:Google Analytics 3 GTM が設定されていない場合、Google Analytics 4 GTM タグが実行されない](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
          - [ACSD-51471：管理者ユーザーが、バンドルされた製品のスケジュールされた更新を保存できない](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51471-admin-user-cannot-save-scheduled-update-for-bundled-product.md)
-         - [ACSD-51120:GraphQL GETリクエストのキャッシュが、CMS ブロックを含むCMS ページでクリアされない](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
+         - [ACSD-51120:GraphQL GET リクエストのキャッシュが、CMS ブロックを含んだCMS ページでクリアされない](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
          - [ACSD-51700：ダウンロード可能な製品編集ページでのストア ビューの切り替えエラー](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
          - [ACSD-51735：製品在庫が 0 の場合、注文項目のステータスが誤って [!UICONTROL Ordered] に設定される](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
          - [ACSD-51497: ドロップダウン タイプのカスタム属性でカタログ ページを並べ替えることができません](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
@@ -566,7 +566,7 @@ ht-degree: 0%
          - [ACSD-56515：権限を持つ管理者は、[!UICONTROL Dynamic Block] を編集できない](quality-patches-tool/patches-available-in-qpt/v1-1-45/acsd-56515-admin-with-permissions-cannot-edit-dynamic-block.md)
          - [ACSD-56616: シンプルな在庫切れ時にバンドルされた製品の店頭ディスプレイ](quality-patches-tool/patches-available-in-qpt/v1-1-45/acsd-56616-out-of-stock-simple-products-trigger-bundle-display.md)
          - [ACSD-52824：会社の顧客に対して無効な支払方法が表示される](quality-patches-tool/patches-available-in-qpt/v1-1-45/acsd-52824-payment-method-display-dicrepancy.md)
-         - [ACSD-56415:DELETEクエリが原因で [!UICONTROL Partial Price Indexing] のパフォーマンスが低下している](quality-patches-tool/patches-available-in-qpt/v1-1-45/acsd-56415-performance-of-partial-price-indexing-is-slowed-down-due-to-a-delete-query.md)
+         - [ACSD-56415:DELETEのクエリが原因で、[!UICONTROL Partial Price Indexing] のパフォーマンスが低下している](quality-patches-tool/patches-available-in-qpt/v1-1-45/acsd-56415-performance-of-partial-price-indexing-is-slowed-down-due-to-a-delete-query.md)
       - v1.1.46 {#v1-1-46}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.46](quality-patches-tool/patches-available-in-qpt/v1-1-46/overview.md)
          - [ACSD-46767：在庫 [!UICONTROL Category] 量が変更されると、ページキャッシュが無効になる](quality-patches-tool/patches-available-in-qpt/v1-1-46/acsd-46767-category-page-caches-invalidate-when-the-stock-quantity-changes.md)
@@ -614,8 +614,8 @@ ht-degree: 0%
          - [ACSD-59378：読み込み中にストアレベルの書き換えが正しく更新され  [!DNL URL]  せんでした ](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59378-store-level-url-rewrites-incorrectly-updated-during-import.md)
          - [ACSD-46938：セットアップ：アップグレード中に DB トリガーでパフォーマンスの問題が発生する](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
          - [ACSD-54887：顧客セッションの有効期限が切れると、顧客の買い物かごがクリアされる](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-54887-customer-shopping-cart-gets-cleared-after-session-expiry.md)
-         - [ACSD-58141:L2 Redis キャッシュが有効な場合、ログインしているユーザーのPOSTーリクエストで PHPSESSID が再生成される](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
-         - [ACSD-59229：古い X-Magento変動値が原因で、お客様グループのデータが誤って割り当てられている](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
+         - [ACSD-58141:L2 Redis キャッシュが有効な場合、ログインしている顧客の POST リクエストで PHPSESSID が再生成される](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
+         - [ACSD-59229：古い X-Magento-Vary 値が原因で、お客様のグループデータが誤って割り当てられている](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
          - [ACSD-60441:V1/customers [!DNL REST] API エンドポイントを介して顧客を更新すると、エラーがスローされる](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
          - [ACSD-58352：デフォルトストアの戻り値の属性ラベルは、 [!DNL GraphQL] API を使用して返されます](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
          - [ACSD-59514：ブラウザーコンソールの管理者のFormsで  [!DNL Page Builder]  スローエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
@@ -623,7 +623,7 @@ ht-degree: 0%
          - [ACSD-58442：幅 768 px のデバイスがモバイルとして扱われ、メニューとヘッダーがデスクトップではなくモバイルビューに読み込まれる問題を修正しました](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58442-fixes-issue-devices-768px-mobile-view-instead-desktop.md)
          - [ACSD-48210：ストア表示固有のスコープ属性がグローバル値を上書きする](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-48210-store-view-specific-scope-attribute-overrides-global-values.md)
          - [ACSD-59280: 2.4.4-pX インストールでの ReflectionUnionType::getName （） エラー](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
-         - [ACSD-60303:HTMLの縮小が有効な状態で、管理者の注文の配置に関する問題が解決されました](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
+         - [ACSD-60303:HTMLの縮小が有効になったことで解決された、管理注文配置の問題](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
       - v1.1.51 {#v1-1-51}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
          - [ACSD-60234: [!DNL PayPal]  割引が適用されている場合に、間違った金額が表示される](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60234-paypal-shows-an-incorrect-amount-when-discount-is-applied.md)
@@ -733,6 +733,7 @@ ht-degree: 0%
          - [ACSD-48570:URL のストアコードに関する管理者リセットパスワードリンクの問題の修正](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-48570-fixing-admin-reset-password-link-issue-with-store-card-in-url.md)
          - [ACSD-63299：設定可能な製品の特別価格がストアフロントに表示されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
          - [ACSD-63325:empty [!DNL GraphQL] request の送信中に「構文エラー：予期しない &lt; EOF >」エラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
+         - [ACSD-63578:[!UICONTROL Add to Order by SKU] で「[!UICONTROL Delete]」アイコンをクリックしても、SKU が削除されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
          - [ACSD-63329:REST API で商品を作成する際に、日付フィールドと時間フィールドのデフォルト値が設定されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
    - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - コマンド ライン ツール リファレンス {#cli-reference}
