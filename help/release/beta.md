@@ -2,9 +2,9 @@
 title: Beta リリース
 description: Adobe Commerce ベータ版リリースとリリースへの参加方法について説明します。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 4643c8392b6d92a2ccbbc2ec5b27d75c112d7521
+source-git-commit: c29602d6f1619c0b32feb48843ec01b350a3ae32
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Adobe Commerce ベータプログラムを使用すると、マーチャント�
 
 >[!IMPORTANT]
 >
->Beta リリースには不具合が含まれている場合があり、いかなる保証もなく「現状のまま」提供されます。 Adobeは、ベータ版リリースのメンテナンス、修正、更新、変更、またはその他のサポート（Adobeサポートサービスまたはその他の方法による）を行う義務を負いません。 お客様は、ベータ版リリースおよび/または付属のドキュメントや資料の正しい機能やパフォーマンスに対して、注意を払い、いかなる方法でも依存しないことをお勧めします。 ベータ版の機能と API は、予告なく変更される場合があります。 したがって、ベータ版リリースの使用は、完全にお客様自身の責任で行います。
+>Beta リリースには不具合が含まれている場合があり、いかなる保証もなく「現状のまま」提供されます。 Adobeは、ベータ版リリースのメンテナンス、修正、更新、変更、またはその他のサポートをおこなう義務を（Adobe サポートサービスを通じてまたはその他の方法で）負いません。 お客様は、ベータ版リリースおよび/または付属のドキュメントや資料の正しい機能やパフォーマンスに対して、注意を払い、いかなる方法でも依存しないことをお勧めします。 ベータ版の機能と API は、予告なく変更される場合があります。 したがって、ベータ版リリースの使用は、完全にお客様自身の責任で行います。
 
 ## 参加のメリット
 
-Adobeが開発中の機能に早期にアクセスすることで、お客様やパートナーは、フィードバックを提供し、製品開発を具体化し、一般提供が開始される前に新しい機能を導入する準備を整えることができます。
+Adobeが開発中の機能に早期にアクセスすることで、お客様およびパートナーは、フィードバックを提供し、製品開発を具体化し、一般提供が開始される前に新しい機能を導入する準備を整えることができます。
 
 ## 現在のBeta プログラム
 
@@ -54,22 +54,6 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様や
 
 Live Search ベータ版をインストールするには、[Live Search ガイド ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta) を参照してください。
 
-### CommerceのExperience Manager Assets統合（Private Beta）
-
-Experience Manager AssetsとCommerceの統合により、運用の手間をかけることなく、Experience Manager AssetsからAdobe Commerceに大量の商品画像を効率的に管理および配信できます。
-
-主な機能：
-
-- プラグアンドプレイの統合 – Experience Manager AssetsとAdobe Commerceの間でAdobeを活用した統合を標準で提供し、マーチャントが運用コストを削減して効率を向上させ、最も重要なことに集中できるようにします。
-
-- 大規模な商品画像のパーソナライズ Experience Manager Assetsを使用すると、UI ベースの簡単な編集ツール、Adobe Fireflyを使用したコンテンツの生成機能、アセットの割り当てワークフローによって、パーソナライズされたCommerce エクスペリエンス向けに数百万もの商品バリエーションを生成し、ブランドの一貫性を確保することができます。 適切なアセットが見つかったら、Experience Manager Assets統合を使用してCommerce ストアフロントにシームレスに配信します。
-
-- 簡単なオンボーディング – 設定可能な同期プロセスによって、Experience Manager Assets リポジトリとCommerce カタログ間の完全な同期を可能にし、マーチャントのオンボーディングを簡素化します。
-
-- 柔軟なマッチング戦略 – この統合には、AEM AssetsとCommerceの間で画像を同期させる製品 SKU に基づくデフォルトのアセットマッチングアルゴリズムが含まれており、Adobe Developer App Builderを使用して拡張できます。 ソリューションパートナーと協力して、統合の上にカスタムアセットマッチング戦略を構築し、アセット管理リポジトリ構造に対応します。
-
-ベータ版に参加するには、[Shaun McCran](mailto:mccran@adobe.com) にメールでリクエストを送信します。
-
 ### IBM Sterling Order Management System Integration （Private Beta）
 
 IBMスターリングOrder Management向けのこの統合アクセラレータにより、Adobe Commerceのお客様は、IBMスターリング OMS を活用した高度な注文管理機能を開始できます。 この統合により、マーチャントは次を獲得できます。
@@ -81,7 +65,7 @@ IBMスターリングOrder Management向けのこの統合アクセラレータ�
 
 このベータ版に参加するには、[sbieber@adobe.com](mailto:sbieber@adobe.com) にメールでリクエストを送信します。
 
-### データ接続およびAudience Activation（パブリック Beta）
+### Data Connection &amp; Audience Activation（パブリック Beta）
 
 Adobe CommerceとAdobe Experience Platform間のデータ共有を拡張し、より強力でパーソナライズされたエクスペリエンスを促進しました。 この機能により、マーチャントは次のことが可能になります。
 
@@ -121,7 +105,7 @@ Adobe Commerce ベータ版リリースは、他のAdobe Commerce パッチリ�
 
 #### 問題レポート
 
-Adobeでは、ベータ版リリースに対する標準のAdobeサポートサービスを提供していません。
+Adobeは、ベータ版リリースに対する標準のAdobe サポートサービスを提供していません。
 
 ベータ版リリースに関するフィードバックを送信するには、[GitHub](https://github.com/magento/magento2) の [ 通常のイシューレポートフロー ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) に従ってください。
 
