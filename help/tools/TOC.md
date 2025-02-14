@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 329a9413eca2de00451ee694501cca2cf0c57c30
+source-git-commit: fcff1ac0ed1b36952adb54098154fd039c7013a4
 workflow-type: tm+mt
-source-wordcount: '6990'
+source-wordcount: '6994'
 ht-degree: 0%
 
 ---
@@ -735,6 +735,8 @@ ht-degree: 0%
          - [ACSD-63325:empty [!DNL GraphQL] request の送信中に「構文エラー：予期しない &lt; EOF >」エラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
          - [ACSD-63578:[!UICONTROL Add to Order by SKU] で「[!UICONTROL Delete]」アイコンをクリックしても、SKU が削除されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
          - [ACSD-63329:REST API で商品を作成する際に、日付フィールドと時間フィールドのデフォルト値が設定されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
+      - v1.1.59 {#v1-1-59}
+         - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
    - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - コマンド ライン ツール リファレンス {#cli-reference}
    - [Adobe Commerce（オンプレミス）](reference/commerce-on-premises.md)
