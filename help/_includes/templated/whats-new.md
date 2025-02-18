@@ -1,7 +1,7 @@
 ---
-source-git-commit: 317a1f5d9a6b1ed4713fd7564f8afce12e519c90
+source-git-commit: 989bcdcb4bbd8f880a3e2c8add280a072998afd8
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '984'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,46 @@ ht-degree: 1%
 ## 新機能
 
 このページには、過去 60 日間に加えられた変更が含まれています。 コピー編集などのマイナーアップデートはすべて、このリストから除外します。
+
+### 2025 年 2 月 14 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview">QPT 1.1.59 リリースで使用可能なパッチによって修正された問題の説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8200051f16c7d12d09c1487a4e12258b52d8d805">820005</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 2 月 13 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku">QPT 1.1.58 リリースの ACSD-63578 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf22eac2923a78f112a999dbcb6be1bc6f5eb9db">bf22ea</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025 年 2 月 11 日（Pt）
 
@@ -447,90 +487,6 @@ ht-degree: 1%
 </td>
       <td>new-topic</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/de06ef0133bf57169c80c82ca4bb4cb09671c63b">de06ef</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024 年 12 月 20 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview">QPT 1.1.57 リリースで使用可能なパッチによって修正された問題の説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d3b5a9b2706d3338c950dfc495188e2038e3c997">d3b5a9</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024 年 12 月 19 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error">QPT 1.1.56 リリースの ACSD-62979 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c9b27e2a82954a3874e9847eacc71f0515c99625">c9b27e</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization">QPT 1.1.56 リリースの ACSD-62577 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/929a031257e68711734e9b90b1bd18bc751817c3">929a03</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62971-stock-import-error-non-numeric-quantity">QPT 1.1.56 リリースの ACSD-62971 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8fb92489c1118782fcf4bacd0859e275c7617856">8fb924</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62475-fixes-gift-card-merging-issues-in-the-cart">QPT 1.1.56 リリースの ACSD-62475 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c4d223265301f560b0078e832c775c0e2946165e">c4d223</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024 年 12 月 18 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch">QPT 1.1.55 リリースの ACSD-62591 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e41bd2f6d7ad2183418942f628d9da3317016cde">e41bd2</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy"> ライフサイクルポリシー </a> に、Adobe Commerce 2.4.4 および 2.4.5 の拡張サポート日を追加しました。</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ad25af4928619fbf94671d15b1a5f6df30a16cc1">ad25af</a> （コミット）</td>
     </tr>
   </tbody>
 </table>
