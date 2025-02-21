@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 6522965b3c342747d9dc102a45c2b8a0f4d4019d
+source-git-commit: d735bb2269331ae9768afbca384a85e03d727403
 workflow-type: tm+mt
-source-wordcount: '7023'
+source-wordcount: '7033'
 ht-degree: 0%
 
 ---
@@ -737,6 +737,7 @@ ht-degree: 0%
          - [ACSD-63329:REST API で商品を作成する際に、日付フィールドと時間フィールドのデフォルト値が設定されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
       - v1.1.59 {#v1-1-59}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
+         - [ACSD-64112: MAGE_INDEXER_INDEXER_THREADS_COUNT が設定されている場合、indexer_update_all_views cron の実行が失敗します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
          - [ACSD-63454：ドロップダウンと複数の選択属性のデフォルト値がデータベースに正しく保存されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown.md)
          - [ACSD-63870：会社のステータスが変更された際、顧客が適切にログアウトしなかった](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
    - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
