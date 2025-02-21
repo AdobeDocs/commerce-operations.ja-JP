@@ -3,9 +3,9 @@ title: アプリケーションの設定
 description: Adobe Commerceのオンプレミスデプロイメントに必要なインストール後設定について説明します。
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: e737ca014e90860b8ab023487625b07c0eeb1222
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,14 @@ UNIX `logrotate` ユーティリティを使用すると、多数のログ・フ
 * [HowTo: Ultimate log rotate コマンドのチュートリアルと 10 の例 ](https://www.thegeekstuff.com/2010/07/logrotate-examples)
 * [ スタック交換 ](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
 * [`logrotate` man ページ ](https://linuxconfig.org/logrotate-8-manual-page)
+
+>[!AVAILABILITY]
+>
+>クラウドインフラストラクチャプロジェクトのAdobe Commerceには、次の可用性に関する情報が適用されます。
+>
+>* スターター環境にはログローテーションがありません。
+>
+>* Pro 統合環境では、ログローテーションを設定できません。 必要に応じて、カスタムのソリューション/スクリプトを実装し、スクリプトを実行するには [cron を設定 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) する必要があります。
 
 ### 様々なサービスが通信できるように iptables ルールを設定します
 
