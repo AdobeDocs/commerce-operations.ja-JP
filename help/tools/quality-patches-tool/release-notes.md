@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで使用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 24cce88e5daccd8ad50e01b869f2682722cb8052
+source-git-commit: fa23ca7a760f25e6b77b94af15eec7d8a88e880e
 workflow-type: tm+mt
-source-wordcount: '24820'
+source-wordcount: '25023'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,15 @@ ht-degree: 0%
 >[!INFO]
 >
 >コミュニティがMagento Open Source用に作成した [!DNL quality patches] について詳しくは、[ リリースノート ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+
+## v1.1.60 {#v1-1-60}
+
+* **ACSD-63323** （Adobe Commerce >=2.4.7 &lt;2.4.8 の場合） – カテゴリに商品を追加すると、「**[!UICONTROL Select All]**」オプションが機能しない問題を修正しました。 さらに、ポップアップグリッドを使用してカテゴリに製品を追加する際に、ページネーションとレコード数ラベルが正しく機能するようにします。
+* **ACSD-63992** （Adobe Commerce >=2.4.4 &lt;2.4.8 の場合） – 管理 UI から、クーポンおよび発送方法に基づく条件を含む買い物かご価格ルールを正しく適用できない問題を修正しました。
+* **ACSD-64111** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8 の場合） – [!DNL Page Builder] で製品コンポーネントのネストされた条件を設定する際にエラーが発生する問題を修正しました。
+* **ACSD-64137** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8 の場合） – オランダ語表記の場合、郵便番号で受け取り場所を検索することが適切に機能しない問題を修正しました。
+* **ACSD-64149** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8 の場合） – いずれかの日付のみを編集した場合に、日付範囲条件を持つカスタマーセグメントを保存できる問題を修正しました。
+* 更新されたバージョン：**MDVA-12304**、**ACSD-45049**、**MDVA-43824**、**ACSD-46192**、**ACSD-50368**、**ACSD-52133**、**ACSD-47657**、**ACSD-51819**、**ACSD-54966-V2**、**55628** **45049** **63242** ACSD-1、ACSD-2
 
 ## v1.1.59 {#v1-1-59}
 
