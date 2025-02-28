@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 9c2a1aea2fdadb12998773c324560faf6872bd82
+source-git-commit: c01df7ef04c5e259d6bd015f8a3105c167b5c26f
 workflow-type: tm+mt
-source-wordcount: '7069'
+source-wordcount: '7083'
 ht-degree: 0%
 
 ---
@@ -740,6 +740,7 @@ ht-degree: 0%
          - [ACSD-64112: MAGE_INDEXER_INDEXER_THREADS_COUNT が設定されている場合、indexer_update_all_views cron の実行が失敗します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
          - [ACSD-63454：ドロップダウンと複数の選択属性のデフォルト値がデータベースに正しく保存されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown.md)
          - [ACSD-63870：会社のステータスが変更された際、顧客が適切にログアウトしなかった](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
+         - [ACSD-64113: [!DNL Media Gallery] の方法で、高さよりも幅が小さい画像をアップロードする際に、管理者でエラーが発生しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images.md)
          - [ACSD-64212：注文を行った後に経由で作成された顧客アカウントにリンクされていない注文  [!DNL GraphQL] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account.md)
          - [ACSD-63793：読み込みプロセスは、異なるブラウザータブで互いに干渉します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
          - [ACSD-63574：経由でブロックする [!UICONTROL Bundle Product] リストを追加すると  [!DNL Page Builder]  エラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error.md)
