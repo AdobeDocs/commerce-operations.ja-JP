@@ -3,13 +3,13 @@ title: ACSD-63454：ドロップダウンと複数の選択属性のデフォル
 description: ACSD-63454 パッチを適用すると、ドロップダウン属性と複数選択の属性のデフォルト値がデータベースに正しく保存されないAdobe Commerceの問題が修正されます。
 feature: Attributes, Products
 role: Admin, Developer
-source-git-commit: 1c872ebeff05c0c84756d7abd7f43c4652032d3f
+exl-id: fa79a3bb-e615-44cb-8d84-da892f924fd0
+source-git-commit: cb73a5a346ec0e8acd59accf73605e25ef35c3ca
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63454: [!UICONTROL Dropdown] および [!UICONTROL Multiple Select] 属性のデフォルト値がデータベースに正しく保存されない
 
@@ -35,19 +35,19 @@ ACSD-63454 パッチでは、[!UICONTROL Dropdown] および [!UICONTROL Multipl
 
 <u> 再現手順 </u>:
 
-1. バックエンドにログインし、**[!UICONTROL Stores]**/[!UICONTROL Attributes]/**[!UICONTROL Product]** に移動します。
+1. バックエンドにログインし、**[!UICONTROL Stores]**/*[!UICONTROL Attributes]*/**[!UICONTROL Product]** に移動します。
 1. 「**[!UICONTROL Add New Attribute]**」をクリックします。
 1. 「**[!UICONTROL Properties]**」タブで以下を設定します。
-   * [!UICONTROL Default Label] = test
-   * [!UICONTROL Catalog Input Type for Store Owner]= [!UICONTROL Multiple Select]
-   * [!UICONTROL Manage Options]:**[!UICONTROL Is Default]** を選択せずに 2 つのオプションを追加します。
+   * **[!UICONTROL Default Label]**: *test*
+   * **[!UICONTROL Catalog Input Type for Store Owner]**: *[!UICONTROL Multiple Select]*
+   * **[!UICONTROL Manage Options]**:**[!UICONTROL Is Default]** を選択せずに 2 つのオプションを追加します。
 1. 「**[!UICONTROL Save Attribute]**」をクリックします。
-1. データベースで *default_value* 列が空であることを確認します。
+1. データベースの `default_value` 列が空であることを確認します。
 
    `select attribute_code, default_value from eav_attribute where attribute_code = 'test';`
 
 1. 戻って、2 つのオプションの 1 つを **[!UICONTROL Is Default]** のように設定します。
-1. *default_value* に選択したオプション ID が含まれていることを、データベースで再度確認します。
+1. データベースを再度確認し、選択したオプション ID`default_value` 含まれていることを確認します。
 1. 戻って、もう一方のオプションを選択してデフォルトのオプションを変更します。
 
 <u> 期待される結果 </u>:
