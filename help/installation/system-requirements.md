@@ -2,9 +2,9 @@
 title: 必要システム構成
 description: このリファレンスを使用して、Adobe Commerce リリースでテストされた必須のソフトウェア依存関係を特定します。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 63c73a34eb6c61c83f00761e0510108485687596
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,13 @@ Adobe Commerceでテストしたソフトウェアの依存関係とサービス
 
 クラウドインフラストラクチャ上のCommerceの依存関係には、いくつかの違いがあります。 クラウドインフラストラクチャー上のAdobe Commerceのサービスのバージョンと互換性のサポートは、テストしてホストされるクラウド環境にデプロイしたサービスによって決まり、Adobe Commerceのオンプレミスデプロイメントでサポートされているバージョンとは異なる場合があります。 例えば、オンプレミスデプロイメントではElasticsearch 7.17 がCommerce 2.4.4 でサポートされていますが、Cloud Infrastructure 上のCommerce 2.4.4 では OpenSearch 1.2 がサポートされています。
 
-次の表は、特定のAdobe Commerce リリースでAdobeがテストした、サードパーティ製ソフトウェアの依存関係のバージョンを示しています。
+>[!NOTE]
+>
+>システム要件は、Adobe Commerceのリリース版にのみ適用されます。 Betaまたはアーリーアクセス版は含まれません。 Adobe Commerceの最新のリリースバージョンについて詳しくは、[ リリースノート ](../release/release-notes/overview.md) を参照してください。
 
-Adobeでは、次の表に示すシステム要件の組み合わせのみをサポートしています。 例えば、2.4.5 は MariaDB 10.4 で完全にテストされています。Adobeでは、2.4.5 にアップグレードする前に MariaDB 10.4 にアップグレードすることをお勧めします。
+次の表は、Adobeが特定のAdobe Commerce リリースでテストした、サードパーティ製ソフトウェアの依存関係のバージョンを示しています。
+
+Adobeは、次の表に示すシステム要件の組み合わせのみをサポートしています。 例えば、2.4.5 は MariaDB 10.4 で完全にテストされています。Adobeでは、2.4.5 にアップグレードする前に MariaDB 10.4 にアップグレードすることをお勧めします。
 
 >[!BEGINTABS]
 
@@ -121,7 +125,7 @@ PHPUnit v9 （コマンドラインツールとして）。
 
 ### メモリ
 
-Commerce Marketplaceや他のソースから入手したアプリケーションや拡張機能をアップグレードするには、最大 2 GB の RAM が必要になる場合があります。 RAM が 2 GB 未満のシステムを使用している場合は、[ スワップファイル ](https://support.magento.com/hc/en-us/articles/360032980432) を作成します。そうしないと、アップグレードに失敗する可能性があります。
+Commerce Marketplaceやその他のソースから取得したアプリケーションや拡張機能をアップグレードするには、最大 2 GB の RAM が必要になる場合があります。 RAM が 2 GB 未満のシステムを使用している場合は、[ スワップファイル ](https://support.magento.com/hc/en-us/articles/360032980432) を作成します。そうしないと、アップグレードに失敗する可能性があります。
 
 ### オペレーティングシステム （Linux x86 ～ 64）
 
