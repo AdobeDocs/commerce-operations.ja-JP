@@ -1,11 +1,12 @@
 ---
-title: 「ACSD-46815：静的コンテンツのデプロイがコンパクト戦略を使用して失敗する」
+title: ACSD-46815：静的コンテンツのデプロイがコンパクトな方法で失敗する
 description: ACSD-46815 パッチを適用すると、コンパクト戦略を使用した際に静的コンテンツのデプロイが失敗するAdobe Commerceの問題を修正できます。
 feature: Deploy, Page Content, SCD
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 66941a83-daf8-4bb2-a575-b615e1c5dc7c
+source-git-commit: 94fba368c799f4584e27331e852c0f8abeeabbd6
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -46,21 +47,17 @@ bin/magento setup:static-content:deploy -f -s compact
 
 <u> 実際の結果 </u>:
 
-静的コンテンツのデプロイメントが失敗し、コンパクトな戦略が返される。 デプロイメントプロセス中に、次のエラーが発生します。*コンテンツは/app/pub/static/adminhtml/content/base/default/からMagentoされます。/node_modules/@spectrum-css/vars/dist/spectrum-global.css ファイルを読み取れません。*
+静的コンテンツのデプロイメントが失敗し、コンパクトな戦略が返される。 デプロイメントプロセス中に、次のエラーが発生します。*コンテンツは/app/pub/static/adminhtml/Magento/base/default/にあります。/node_modules/@spectrum-css/vars/dist/spectrum-global.css ファイルを読み取れません。*
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 関連資料
 
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [ を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
-
-
-QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
+* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。

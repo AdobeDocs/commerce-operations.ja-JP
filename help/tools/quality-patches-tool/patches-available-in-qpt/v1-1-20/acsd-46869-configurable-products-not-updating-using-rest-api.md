@@ -4,9 +4,9 @@ description: ACSD-46869 パッチを適用すると、チェックアウト時�
 feature: REST, Checkout, Configuration, Orders, Products
 role: Admin
 exl-id: f03d4b24-ac95-406e-8e9d-908149b9207c
-source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
+source-git-commit: 470cee19ced38fb90a9565c8bb23e2f9fa97595a
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -59,14 +59,11 @@ ACSD-46869 パッチにより、チェックアウト時に設定可能な製品
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tools] > Usage](/help/tools/quality-patches-tool/usage.md) in the Quality Patches Tool Guide
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tools] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) （品質パッチツールガイド）。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [ を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
-
-[!DNL QPT] で使用可能なその他のパッチの詳細については、『品質向上パッチツールガイド』の [ で使用可能なパッチ  [!DNL QPT]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) を参照してください。
+* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
