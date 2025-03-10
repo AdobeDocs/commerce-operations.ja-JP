@@ -2,9 +2,9 @@
 title: 必要システム構成
 description: このリファレンスを使用して、Adobe Commerce リリースでテストされた必須のソフトウェア依存関係を特定します。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 63c73a34eb6c61c83f00761e0510108485687596
+source-git-commit: 0d8dcfd7064488787ddd0ff54c82c77f3e4d1cfb
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Adobe Commerceでテストしたソフトウェアの依存関係とサービスの概要を次に示します。
 
-クラウドインフラストラクチャ上のCommerceの依存関係には、いくつかの違いがあります。 クラウドインフラストラクチャー上のAdobe Commerceのサービスのバージョンと互換性のサポートは、テストしてホストされるクラウド環境にデプロイしたサービスによって決まり、Adobe Commerceのオンプレミスデプロイメントでサポートされているバージョンとは異なる場合があります。 例えば、オンプレミスデプロイメントではElasticsearch 7.17 がCommerce 2.4.4 でサポートされていますが、Cloud Infrastructure 上のCommerce 2.4.4 では OpenSearch 1.2 がサポートされています。
+Commerce on Cloud の依存関係にはいくつかの違いがあります。 Cloud 上のAdobe Commerceのサービスバージョンと互換性のサポートは、テストしてホストされたクラウド環境にデプロイしたサービスによって決まり、Adobe Commerceのオンプレミスデプロイメントでサポートされているバージョンとは異なる場合があります。 例えば、オンプレミスデプロイメントではElasticsearch 7.17 がCommerce 2.4.4 でサポートされていますが、Cloud 上の 2.4.4 Adobe Commerceでは OpenSearch 1 がサポートされています。
 
 >[!NOTE]
 >
