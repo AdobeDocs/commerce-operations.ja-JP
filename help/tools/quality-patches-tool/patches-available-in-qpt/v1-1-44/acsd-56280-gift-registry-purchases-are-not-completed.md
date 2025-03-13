@@ -1,16 +1,21 @@
 ---
-title: 「ACSD-56280：ギフトレジストリの購入が完了していません」
+title: 'ACSD-56280: ギフト レジストリの購入が完了していません'
 description: ACSD-56280 パッチを適用すると、ギフトレジストリの購入が完了しないAdobe Commerceの問題を修正できます
 feature: Checkout
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a79f789f-999f-4d11-b7ee-2c065b681efb
+source-git-commit: ab02be3396e68044e9356f89fba6b55aa880056f
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
 # ACSD-56280: ギフト レジストリの購入が完了していません
+
+>[!NOTE]
+>
+>このパッチは [ACSD-63283](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63283-resolving-gift-registry-email-and-order-placement-issues-in-adobe-commerce.md) に置き換えられます。
 
 ACSD-56280 パッチは、ギフトレジストリの購入が完了しない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.44 がインストールされている場合に使用できます。 パッチ ID は ACSD-56280 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 
@@ -54,7 +59,7 @@ ACSD-56280 パッチは、ギフトレジストリの購入が完了しない問
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
