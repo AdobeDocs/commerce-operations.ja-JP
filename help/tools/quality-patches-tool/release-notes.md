@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで使用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: fa23ca7a760f25e6b77b94af15eec7d8a88e880e
+source-git-commit: 0073f5e1b6de110ff640748457b7c644d71fcbe8
 workflow-type: tm+mt
-source-wordcount: '25023'
+source-wordcount: '25431'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,22 @@ ht-degree: 0%
 >[!INFO]
 >
 >コミュニティがMagento Open Source用に作成した [!DNL quality patches] について詳しくは、[ リリースノート ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+
+## v1.1.61 {#v1-1-61}
+
+* **ACP2E-3689** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.8） – カテゴリツリーがより深いレベルに表示され、アンカー/非アンカーの関係が反映される複数の問題を修正しました。
+* **ACP2E-3705** （Adobe Commerce >=2.4.7 &lt;2.4.8） – `MAGE_INDEXER_THREADS_COUNT` が設定されている場合に `indexer_update_all_views` cron 実行が失敗する問題を修正しました。
+* **ACSD-63883** （Adobe Commerce >=2.4.4 &lt;2.4.7-p4 の場合） – 購買依頼リストがGraphQL応答で誤った `items_count` を返す問題を修正します。
+* **ACSD-63974** （Adobe Commerce >=2.4.4 &lt;2.4.8 の場合） – すべてのレコードを一度に表示するのではなく、ページあたりのレコード数に制限されたレコードの一部のみを表示するページネーション機能をストアフロントの購買依頼リストグリッドに追加することで、品目が多すぎると購買依頼リストページの読み込みに時間がかかりすぎる問題を修正しました。
+* **ACSD-64178** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.8 の場合） – 何千もの製品属性がある場合に、属性セットの編集ページの読み込みに時間がかかる問題を修正しました。
+* **ACSD-64209** （Adobe Commerce >=2.4.4 &lt;2.4.8 の場合） - cron スケジューラーがステータス **[!UICONTROL ordered]** の引用符を除外せずに交渉可能なすべての引用符を取得し、メールまたはメールがトリガーされる問題を修正しました。
+* **ACSD-64431** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.8 の場合） – リクエストのクーポンコード情報を含む `placeOrder` ミューテーションで内部エラーがスローされなくなり、代わりに注文が正常に行われたことを示します。
+* **ACSD-64467** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.8 の場合） – ストアビューレベルでカテゴリの説明を保存した後、WYSIWYG エディターが空のように表示される問題を修正しました。
+* **ACSD-64546** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8 の場合） - UPS 出荷ラベルの作成時に汎用エラーメッセージが UI で発生し、*配列から文字列への変換* 例外がログに保存される問題を修正しました。実際のエラーは UI に表示され、正しいエラーメッセージがログに保存されるようにします。
+* **ACSD-64684** （Adobe Commerce >=2.4.4 &lt;2.4.8） – コンマ（千区切り記号） *1,000）* の値が *999* を超えるギフトカードを編集および保存すると検証エラーが発生する問題を修正しました。
+* 更新されたバージョン：**ACSD-49392**、**ACSD-50368**、**ACSD-51819**、**ACSD-54966-V2**、**ACSD-57003**、**ACSD-62979**、**ACSD-64112**
+* 交換後のパッチ：**ACSD-49392**、**ACSD-58739**、**ACSD-62689**、**ACSD-64112**
+* 非推奨パッチ：**ACSD-46192**, **ACSD-52133**
 
 ## v1.1.60 {#v1-1-60}
 
