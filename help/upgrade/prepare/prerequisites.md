@@ -2,9 +2,9 @@
 title: 前提条件を完了
 description: 次の前提条件の手順を完了して、アップグレード用のAdobe Commerce プロジェクトを準備します。
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 4c84710da62fbb31214a0de2adc8adbd68880a76
+source-git-commit: d19051467efe7dcf7aedfa7a29460c72d896f5d4
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1717'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Adobe Commerceの実行に必要な事項を理解することが重要です。
 
 ## サポートされている検索エンジンがインストールされていることを確認します
 
-Adobe Commerceを使用するには、Elasticsearchまたは OpenSearch をインストールする必要があります。
+Adobe Commerceを使用するには、Elasticsearchまたは OpenSearch がインストールされている必要があります。
 
 **2.3.x から 2.4 にアップグレードする場合**、2.3.x インスタンスのカタログ検索エンジンとして、MySQL、Elasticsearch、サードパーティの拡張機能のいずれかを使用しているかどうかを確認する必要があります。 結果によって、2.4 にアップグレードする _前に_ 実行する必要がある作業が決まります。
 
@@ -45,7 +45,7 @@ Adobe Commerceを使用するには、Elasticsearchまたは OpenSearch をイ�
 
 コマンドラインまたは管理者を使用して、カタログ検索エンジンを決定できます。
 
-* `bin/magento config:show catalog/search/engine` コマンドを入力します。 このコマンドは、`mysql`、`elasticsearch` （Elasticsearch 2 が構成されていることを示す）、`elasticsearch5`、`elasticsearch6`、`elasticsearch7` の値、またはサードパーティの検索エンジンがインストールされていることを示すカスタム値を返します。 2.4.6 より前のバージョンの場合は、Elasticsearch 7 または OpenSearch エンジンの `elasticsearch7` 値を使用します。 バージョン 2.4.6 以降では、OpenSearch エンジンに `opensearch` の値を使用します。
+* `bin/magento config:show catalog/search/engine` コマンドを入力します。 このコマンドは、`mysql`、`elasticsearch` （Elasticsearch 2 が設定されていることを示す）、`elasticsearch5`、`elasticsearch6`、`elasticsearch7` の値、またはサードパーティの検索エンジンがインストールされていることを示すカスタム値を返します。 2.4.6 より前のバージョンの場合は、Elasticsearch 7 または OpenSearch エンジンの `elasticsearch7` 値を使用します。 バージョン 2.4.6 以降では、OpenSearch エンジンに `opensearch` の値を使用します。
 
 * 管理者で、**[!UICONTROL Stores]** / [!UICONTROL Settings] / **[!UICONTROL Configuration]** / **[!UICONTROL Catalog]** / **[!UICONTROL Catalog]** / **[!UICONTROL Catalog Search]** / **[!UICONTROL Search Engine]** フィールドの値を確認します。
 
@@ -53,12 +53,12 @@ Adobe Commerceを使用するには、Elasticsearchまたは OpenSearch をイ�
 
 ### MySQL
 
-2.4 以降、MySQL はサポートされるカタログ検索エンジンではなくなりました。 アップグレードする前に、Elasticsearchまたは OpenSearch をインストールして構成する必要があります。 このプロセスのガイドとして役立つ次のリソースを使用します。
+2.4 以降、MySQL はサポートされるカタログ検索エンジンではなくなりました。 アップグレードする前に、Elasticsearchまたは OpenSearch をインストールして設定する必要があります。 このプロセスのガイドとして役立つ次のリソースを使用します。
 
 * [Elasticsearchのインストールと設定](../../configuration/search/overview-search.md)
 * [Elasticsearchのインストール ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
 * 検索エンジンと連携するように [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) または [Apache](../../installation/prerequisites/search-engine/configure-apache.md) を設定する
-* [Elasticsearchを使用するようにCommerceを設定 ](../../configuration/search/configure-search-engine.md) てインデックスを再作成します。
+* [Elasticsearchを使用するようにCommerceを設定して ](../../configuration/search/configure-search-engine.md) インデックスを再作成します。
 
 一部のサードパーティのカタログ検索エンジンは、Adobe Commerce検索エンジンの上で実行されます。 拡張機能を更新する必要があるかどうかを判断するには、ベンダーにお問い合わせください。
 
@@ -70,13 +70,13 @@ Adobe Commerceを使用するには、Elasticsearchまたは OpenSearch をイ�
 
 2.4.0 にアップグレードする前に、Elasticsearch 7.6 以降または OpenSearch 1.2 をインストールして設定する必要があります。Adobeは、Elasticsearch 2.x、5.x および 6.x をサポートしなくなりました。_設定ガイド_ の [ 検索エンジンの設定 ](../../configuration/search/configure-search-engine.md) では、Elasticsearchをサポートされているバージョンにアップグレードした後に実行する必要があるタスクについて説明しています。
 
-データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストに関する手順について詳しくは、[Elasticsearchのアップグレード ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) を参照してください。 現在のElasticsearchのバージョンに応じて、クラスターの完全な再起動は必要な場合と不要な場合があります。
+データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストに関する手順について詳しくは、[Elasticsearchのアップグレード ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) を参照してください。 現在のElasticsearchのバージョンに応じて、クラスターの完全な再起動は必要な場合も必要ない場合もあります。
 
 Elasticsearchには、Java Development Kit （JDK） 1.8 以降が必要です。 インストールされている JDK のバージョンを確認するには、[Java Software Development Kit （JDK）をインストールする ](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) を参照してください。
 
 #### OpenSearch
 
-OpenSearch は、Elasticsearchのライセンスの変更に伴い、Elasticsearch 7.10.2 のオープンソースのフォークになりました。 Adobe Commerceの次のリリースでは、OpenSearch のサポートが導入されています。
+OpenSearch は、Elasticsearch 7.10.2 のオープンソースのフォークで、Elasticsearchのライセンスの変更に従っています。 Adobe Commerceの次のリリースでは、OpenSearch のサポートが導入されています。
 
 * 2.4.6 （OpenSearch には別のモジュールと設定があります）
 * 2.4.5
@@ -84,17 +84,21 @@ OpenSearch は、Elasticsearchのライセンスの変更に伴い、Elasticsear
 * 2.4.3-p2
 * 2.3.7-p3
 
-[Elasticsearchから OpenSearch への移行 ](opensearch-migration.md) は、上記（またはそれ以降）のAdobe Commerceのバージョンにアップグレードする場合にのみ実行できます。
+[Elasticsearchから OpenSearch への移行 ](opensearch-migration.md) は、上記のAdobe Commerceまたはそれ以降のバージョンにアップグレードする場合にのみ実行できます。
 
 OpenSearch には JDK 1.8 以降が必要です。 インストールされている JDK のバージョンを確認するには、[Java Software Development Kit （JDK）をインストールする ](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) を参照してください。
 
 [ 検索エンジン設定 ](../../configuration/search/configure-search-engine.md) では、検索エンジンを変更した後に実行する必要があるタスクについて説明します。
 
-#### アップグレードElasticsearch
+#### Elasticsearchのアップグレード
 
-Elasticsearch 8.x のサポートは、Adobe Commerce 2.4.6 で導入されました。以下の手順は、Elasticsearchを 7.x から 8.x にアップグレードする例を示しています。
+Elasticsearch 8.x のサポートは、Adobe Commerce 2.4.6 で導入されました。次の手順は、Elasticsearchを 7.x から 8.x にアップグレードする例を示しています。
 
-1. Elasticsearch 7.x サーバを 8.x にアップグレードし、が稼働していることを確認します。 [Elasticsearchドキュメント ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) を参照してください。
+>[!NOTE]
+>
+>今後の 2.4.8 リリースでは、Elasticsearch 8 モジュールがデフォルトで含まれており、別途インストールする必要がなくなるので、これらの手順は必要ありません。
+
+1. Elasticsearch 7.x サーバーを 8.x にアップグレードし、が稼働していることを確認します。 [Elasticsearch ドキュメント ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) を参照してください。
 
 1. `elasticsearch.yml` ファイルに次の設定を追加し、Elasticsearch 8.x サービスを再起動して、「`id_field_data`」フィールドを有効にします。
 
@@ -113,6 +117,28 @@ Elasticsearch 8.x のサポートは、Adobe Commerce 2.4.6 で導入されま�
    ```bash
    composer require magento/module-elasticsearch-8 --update-with-all-dependencies
    ```
+
+   `psr/http-message` で依存関係エラーが発生した場合は、をクリックして次のトラブルシューティングのセクションを展開してください。
+
+   +++トラブルシューティング
+
+   Elasticsearch 8 のインストール中、特に `psr/http-message` との間で依存関係の競合が発生した場合は、次の手順に従ってこの問題を解決できます。
+
+   1. まず、他の依存関係を更新せずにElasticsearch 8 モジュールを必要とします。
+
+      ```bash
+      composer require magento/module-elasticsearch-8 --no-update
+      ```
+
+   1. 次に、Elasticsearch 8 モジュールと `aws/aws-sdk-php` パッケージを更新します。
+
+      ```bash
+      composer update magento/module-elasticsearch-8 aws/aws-sdk-php -W
+      ```
+
+   この方法は、PHP 8.3 の 2.4.7-p4 で動作します。この問題は、`aws/aws-sdk-php` が `psr/http-message >= 2.0` を必要とし、競合を引き起こす可能性があるために発生します。 上記の手順は、これらの依存関係の問題を解決するのに役立ちます。
+
++++
 
 1. プロジェクトコンポーネントを更新します。
 
@@ -138,7 +164,7 @@ Elasticsearch 8.x のサポートは、Adobe Commerce 2.4.6 で導入されま�
 
 誤ってサーバー上のElasticsearchのバージョンをアップグレードした場合や、他の理由でダウングレードが必要と判断した場合は、Adobe Commerce プロジェクトの依存関係も更新する必要があります。 例えば、Elasticsearch 8.x から 7.x にダウングレードするには、次のようにします
 
-1. Elasticsearch 8.x サーバを 7.x にダウングレードし、が稼働していることを確認します。 [Elasticsearchドキュメント ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) を参照してください。
+1. Elasticsearch 8.x サーバーを 7.x にダウングレードし、が起動して実行中であることを確認します。 [Elasticsearch ドキュメント ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) を参照してください。
 
 1. Adobe Commerce プロジェクトのルート ディレクトリで、Composer 依存関係を更新して `Magento_Elasticsearch8` モジュールとその Composer 依存関係を削除し、`Magento_Elasticsearch7` モジュールをインストールします。
 
@@ -178,7 +204,7 @@ Elasticsearch 8.x のサポートは、Adobe Commerce 2.4.6 で導入されま�
 
 開いているファイル数の制限（ulimit）を設定すると、長いクエリ文字列を何度も繰り返し呼び出したり、`bin/magento setup:rollback` コマンドを使用する際の問題によって発生する障害を回避できます。 このコマンドは、UNIX シェルごとに異なります。 `ulimit` コマンドの詳細については、個々のフレーバーを参照してください。
 
-Adobeは、開いているファイル [ulimit](https://ss64.com/bash/ulimit.html) を `65536` 以上の値に設定することをお勧めしますが、必要に応じて大きな値を使用できます。 ulimit は、コマンドラインで設定することも、ユーザーのシェルの恒久的な設定にすることもできます。
+Adobeでは、開いているファイル [ulimit](https://ss64.com/bash/ulimit.html) を `65536` 以上の値に設定することをお勧めしますが、必要に応じて大きな値を使用できます。 ulimit は、コマンドラインで設定することも、ユーザーのシェルの恒久的な設定にすることもできます。
 
 コマンドラインから ulimit を設定するには：
 
