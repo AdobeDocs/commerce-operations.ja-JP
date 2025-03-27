@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで使用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 0073f5e1b6de110ff640748457b7c644d71fcbe8
+source-git-commit: 93c9eb8865aa53ec784d47fd66ca97d1941b4604
 workflow-type: tm+mt
-source-wordcount: '25431'
+source-wordcount: '25682'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ ht-degree: 0%
 >[!INFO]
 >
 >コミュニティがMagento Open Source用に作成した [!DNL quality patches] について詳しくは、[ リリースノート ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+
+## v1.1.62 {#v1-1-62}
+
+* **ACSD-63406** （Adobe CommerceおよびMagento Open Source >=2.4.4-p9 &lt;2.4.5 || >=2.4.5-p8 &lt;2.4.6 || >=2.4.6-p6 &lt;2.4.8） - `persistent_clear_expired` cron ジョブの実行時に期限切れの永続的な引用符が cron ジョブでクリアされない問題を修正しました。
+* **ACSD-63520** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.8 の場合） – 管理パネルの **[!UICONTROL Configurations]** を使用して追加された画像がアップロードの最大サイズ制限に準拠しない問題を修正しました。
+* **ACSD-64523** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.8 の場合） – 読み込みプロセス（管理者または API）を使用して、名前のない新しい商品を作成すると、管理インターフェイスが機能しなくなり、無効な商品になる問題を修正しました。
+* **ACSD-64532** （Adobe CommerceおよびMagento Open Source >=2.4.6-p2 &lt;2.4.8） - ENV 変数が「false」に設定されると、ブール値の false ではなく文字列「false」として扱われる問題を修正しました。
+* **ACSD-64592** （Adobe Commerce >=2.4.4 &lt;2.4.8 の場合） – デフォルト以外のストアにあるギフトカードのメールの請求リンクで、常にギフトカードの請求がデフォルトの web サイトにリダイレクトされる問題を修正しました。
+* **ACSD-65164** （Adobe CommerceおよびMagento Open Source >=2.4.6 &lt;2.4.8 の場合） – 設定可能な商品を 1 つのチェックボックスを選択したカスタムオプションで並べ替えると、「*選択した商品の一部は現在利用できません*」というエラーメッセージが表示される問題を修正しました。
+* **ACSD-64732** （Adobe Commerce >=2.4.4 &lt;2.4.8 の場合） – サードパーティのコントローラーがカスタマーセグメントで正しくキャッシュされなかった問題を修正しました。
 
 ## v1.1.61 {#v1-1-61}
 
