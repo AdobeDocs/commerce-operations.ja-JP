@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 3155d85215dc9d63e855470d384bf216949a951b
+source-git-commit: 0800285df83eb3e3ffcfb003bf984248b750db32
 workflow-type: tm+mt
-source-wordcount: '7238'
+source-wordcount: '7242'
 ht-degree: 0%
 
 ---
@@ -764,6 +764,8 @@ ht-degree: 0%
          - [ 概要： [!DNL Quality Patches Tool]  （QPT） v1.1.60](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
          - [ACSD-63323:[!UICONTROL Select All] 機能を解決し、製品カテゴリポップアップのページネーションとレコード数を強化します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
          - [ACSD-63992：管理 UI のクーポンおよび発送方法の条件に関するエラーの [!UICONTROL Cart Price Rule]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
+      - v1.1.61 {#v1-1-61}
+         - [ 概要： [!DNL Quality Patches Tool]  （QPT） v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
    - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - コマンド ライン ツール リファレンス {#cli-reference}
    - [Adobe Commerce（オンプレミス）](reference/commerce-on-premises.md)
