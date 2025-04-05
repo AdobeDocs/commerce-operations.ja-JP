@@ -2,9 +2,9 @@
 title: Beta リリース
 description: Adobe Commerce ベータ版リリースとリリースへの参加方法について説明します。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: e569e8106930882323ab3ab046a3db0ee1da1503
+source-git-commit: c27867be74dfaa1bcd782a23db27db29fdccc4e3
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -79,15 +79,6 @@ IBMスターリングOrder Management向けのこの統合アクセラレータ�
 
 このベータ版に参加するには、[sbieber@adobe.com](mailto:sbieber@adobe.com) にメールでリクエストを送信します。
 
-### Data Connection &amp; Audience Activation（パブリック Beta）
-
-Adobe CommerceとAdobe Experience Platform間のデータ共有を拡張し、より強力でパーソナライズされたエクスペリエンスを促進しました。 この機能により、マーチャントは次のことが可能になります。
-
-- Commerce顧客プロファイルの共有
-- カスタム属性の作成
-
-このベータ版に参加するには、[DataConnection@adobe.com](mailto:DataConnection@adobe.com) にメールでリクエストを送信します。
-
 ### Adobe Commerce財団（パブリックBeta）
 
 各Adobe Commerce Foundation ベータ版リリースには、予定リリース日までにAdobe Commerce コアコードに提供されるすべての変更が含まれます。以下の機能領域が含まれますが、それに限定されるものではありません。
@@ -109,7 +100,6 @@ Beta リリースパッケージには `-betaX` サフィックスがありま�
 - `2.4.7-beta2`
 
 今後の公開ベータ版リリース日のリストについては、[ リリーススケジュール ](schedule.md) を参照してください。
-
 
 #### Beta リリースアクセス
 
