@@ -1,7 +1,7 @@
 ---
-source-git-commit: c3ca03b2db6182e693c2fcd8fee765fee65880ea
+source-git-commit: fb08fb139e975d6f8d0837a5370fed531ee97e0f
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '765'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,238 @@ ht-degree: 2%
 ## 新機能
 
 このページには、過去 60 日間に加えられた変更が含まれています。 コピー編集などのマイナーアップデートはすべて、このリストから除外します。
+
+### 2025 年 4 月 4 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships">QPT 1.1.61 リリースの ACP2E-3689 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cb678a54cb8dcd6e9443ef2c8be4a73b4b901921">cb678a</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 4 月 3 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder">QPT 1.1.60 リリースの ACSD-64111 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8e50457a21fa17c59523e28e5ff50b1d4dd0d9f9">8e5045</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 4 月 1 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements"> クラウドシステム要件 </a> 表にNew Relicを追加しました。</p>
+</td>
+      <td>技術</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8241f034529ca5be821ed9768fce391c16efacbc">8241f0</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview">QPT 1.1.61 リリースで使用可能なパッチによって修正された問題の説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf9c698e5b0fa81bc2b10e97270d9cbe38ab9c37">bf9c69</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 3 月 28 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method">QPT 1.1.60 リリースの ACSD-63992 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8d0b38999c1d317098bd20098f042f1a78e8faeb">8d0b38</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 3 月 25 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview">QPT 1.1.60 リリースで使用可能なパッチによって修正された問題の説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dca8a509796fb6c81e338000f771cc5fe3fea81c">dca8a5</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites#search-engine"> 検索エンジンの準備 </a> 手順にトラブルシューティングの節を追加しました。</p>
+<p><i>Jeff-matthews によるコミュニティの貢献</i></p></td>
+      <td>技術</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/149">149</a> （プル要求）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 3 月 21 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/mdva-39305-v3-login-issue-with-enabled-google-recaptcha">QPT 1.1.58 リリースの MDVA-39305-V3 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d7440a2239d2252920576f1f851d27c8f3a6ef5d">d7440a</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 3 月 20 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>最新のカタログサービスバージョン v1.32 を使用して <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability"> 可用性テーブル </a> を更新しました。</p>
+</td>
+      <td>技術</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8dea781eaaeb52efad65cbc522bb779b3929c4e6">8dea78</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 3 月 10 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements"> 必要システム構成 </a> 内の OpenSearch for Adobe Commerce on Cloud プロジェクトのサポート対象バージョンを、各リリースラインの対応するメジャーバージョンに変更しました。 これは、お客様がサービスバージョンのアップデートをリクエストする際のサポートプロセスに従っています。</p>
+</td>
+      <td>技術</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e1a681a66014e70d9e41fd98ea0b2bbca1377d9d">e1a681</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 3 月 7 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Commerce Knowledge Base の移行により、<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce">Adobe Commerceの Managed アラート </a> を移行しました：<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert">Memory warning アラート </a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert">Redis memory warning アラート </a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert">Redis memory critical アラート </a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert">Disk warning アラート </a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert">Disk critical アラート </a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert">CPU critical アラート </a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-memory-critical-alert">Memory critical アラート </a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-critical-alert">Apdex critical アラート </a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-mariadb-alerts">MariaDB アラート </a><br /> </a><br /> <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert"> </a>- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-cpu-warning-alert">CPU warning アラートから</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c265c6348697c5a07f5990a5e2ffeba9d4dfe358">c265c6</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 3 月 6 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated">QPT 1.1.58 リリースの ACSD-63572 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/862a248bee86d4ceed05b0ce3a3d072c3542d6b3">862a24</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 3 月 5 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63469-whole-carts-fixed-amount-discount-not-applied-correctly">QPT 1.1.59 リリースの ACSD-63469 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dab020c6b176717a38b5a81a8710217b0feab0eb">dab020</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025 年 2 月 28 日（Pt）
 
@@ -231,130 +463,6 @@ ht-degree: 2%
 </td>
       <td>new-topic</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a86e6771c42c49416cc45321dc77f55c56e7d95">3a86e6</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025 年 1 月 31 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront">QPT 1.1.58 リリースの ACSD-63299 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/226813a0d54147f545ef39b5ed5995df1f6c5ba1">226813</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025 年 1 月 30 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request">QPT 1.1.58 リリースの ACSD-63325 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/246ae49b1127c6ba74d771bbfe945eef97affab6">246ae4</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025 年 1 月 29 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-59083-fix-base-table-or-view-not-found-errors-during-simultaneous-mview-updates">QPT 1.1.57 リリースの ACSD-59083 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/78ee64cc19489d5e16c7ab097ac5327db403b1e4">78ee64</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62951-fixes-missing-items-and-totals-in-credit-memo-emails-sent-via-rest-api">QPT 1.1.57 リリースの ACSD-62951 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e5d47ed00a2ef491ac2028166d52cb8a99bbd736">e5d47e</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025 年 1 月 27 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61895-graphql-not-returning-categories-with-allow-permission">QPT 1.1.57 リリースの ACSD-61895 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d63e9e5301236cd3c2671b828cb540e756d2da61">d63e9e</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63182-error-occurs-while-saving-a-product-after-bundle-product-duplication">QPT 1.1.58 リリースの ACSD-63182 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e3b6651bc34712b744e2a15940ac1f8513cfcb04">e3b665</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025 年 1 月 22 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62212-forgot-password-email-not-translated-to-store-view-language">QPT 1.1.57 リリースの ACSD-62212 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9a00ebde10ad5dd916fd7afeb73e5e6aeec32495">9a00eb</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62481-shopping-cart-empty-even-with-persistence-enabled">QPT 1.1.57 リリースの ACSD-62481 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/94781de6a8ec4e342299da5a64bef1a9a2d14366">94781d</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method">QPT 1.1.58 リリースの ACSD-62118 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7fb220f5a55f6ff40fddf980537262d933f993dc">7fb220</a> （コミット）</td>
     </tr>
   </tbody>
 </table>
