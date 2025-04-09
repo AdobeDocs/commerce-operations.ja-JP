@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1ad42acc0d007ef1dee8c6c6f93da9daed1925f8
+source-git-commit: 54757d09eb0f476229e567e43c58dc2130a59ac9
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 2.4.8
 
-2.4.8 リリースラインのサポートが終了する日付はまだ設定されていません。
+2.4.8 リリースラインのサポートは 2028 年 4 月 11 日（PT）に終了します。
 
 <table>
   <thead>
@@ -21,15 +21,9 @@ ht-degree: 0%
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8#highlights-in-v248-beta2">2.4.8-beta2</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">2.4.8</a>
         </td>
-        <td>2025 年 2 月 11 日（Pt）</td>
-    </tr>
-    <tr>
-        <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8#highlights-in-v248-beta1">2.4.8-beta1</a>
-        </td>
-        <td>October  8、2024</td>
+        <td>年 4 月  8、2025</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -46,6 +40,12 @@ ht-degree: 0%
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5</a>
+        </td>
+        <td>年 4 月  8、2025</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p4">2.4.7-p4</a>
@@ -91,6 +91,12 @@ ht-degree: 0%
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p10">2.4.6-p10</a>
+        </td>
+        <td>年 4 月  8、2025</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p9">2.4.6-p9</a>
@@ -166,6 +172,12 @@ ht-degree: 0%
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p12">2.4.5-p12</a>
+        </td>
+        <td>年 4 月  8、2025</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p11">2.4.5-p11</a>
@@ -255,6 +267,12 @@ ht-degree: 0%
   <tbody>
     <tr>
         <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p13">2.4.4-p13</a>
+        </td>
+        <td>年 4 月  8、2025</td>
+    </tr>
+    <tr>
+        <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p12">2.4.4-p12</a>
         </td>
         <td>2025 年 2 月 11 日（Pt）</td>
@@ -281,7 +299,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p8">2.4.4-p8</a>
         </td>
-        <td>年 4 月  9、2024</td>
+        <td>年 4 月  9, 2024</td>
     </tr>
     <tr>
         <td>
@@ -431,7 +449,7 @@ ht-degree: 0%
         <td>
           2.3.7-p4
         </td>
-        <td>年 8 月  9、2022</td>
+        <td>年 8 月  9, 2022</td>
     </tr>
     <tr>
         <td>
@@ -749,14 +767,14 @@ ht-degree: 0%
         <td>
           2.1.0
         </td>
-        <td>2016 年 6 月 23 日（Pt）</td>
+        <td>2016 年 6 月 23 日</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
 
 ## 2.0
 
-2.0 リリースラインのサポートは 2018 年 3 月 31 日（PT）に終了しました。
+2.0 リリースラインのサポートは 2018 年 3 月 31 日に終了しました。
 
 <table>
   <thead>
