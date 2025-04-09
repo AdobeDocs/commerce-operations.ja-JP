@@ -1,0 +1,1919 @@
+---
+source-git-commit: 62b6501fc2ba595146bf7f38a7d3352ef02be1a0
+workflow-type: tm+mt
+source-wordcount: '26051'
+ht-degree: 0%
+
+---
+# Magento Open Source リリースノート（v2.4.8）
+
+## ハイライト
+
+Magento Open Source 2.4.8 リリースには、次の 31 のハイライトが適用されます。
+
+### フレームワーク
+
+* _AC-10721_：最新バージョンへのアップグレード中の league/flysystem Composer 依存関係のアップグレード
+   * _修正点_:2.x league/flysystem Composer の依存関係を最新バージョン 3.x にアップグレードします
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/91cb4d46>
+* _AC-11673_:php-amqplib/php-amqplib 最新バージョンを調査します。
+   * _Fix note_: Updated the latest version php-amqplib/php-amqplib :^3.x
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-11911_：ライブラリへの移行後の jQuery/fileuploader CSS のクリーンアップ
+   * _修正点_:jQuery/fileUploader ライブラリは Uppy ライブラリに移行されたので、このライブラリを削除しました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7cabfb46>
+* _AC-11995_:Magento CE 向け MySQL 8.4 LTS との互換性を追加
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12015_:jsTree ライブラリへの移行後の ExtJs フォルダーのクリーンアップ
+   * _メモの修正_：関連機能が jsTree に移行されたので、extJs フォルダーを削除しました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7cabfb46>
+* _AC-12022_：モノログ/モノログシステムの依存関係を最新のメジャーバージョンにアップグレード
+   * _修正点_：システムを更新して「monolog/monolog:^3.x」ライブラリの最新のメジャーバージョンを使用するようにし、互換性とパフォーマンスの向上を確保しました。 以前は、システムは「monolog/monolog」ライブラリの古いバージョンを使用していましたが、潜在的な問題や制限につながる可能性がありました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12023_:wikimedia/less.phpの依存関係を最新のメジャーバージョンにアップグレードします
+   * _修正点_：システムを更新して「wikimedia/less.php」ライブラリの最新のメジャーバージョン 5.x を使用するようにし、互換性と最新機能を確保しました。 以前は、システムは古いバージョンのライブラリを使用しており、セキュリティの問題が発生する可能性がありました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12024_:jquery/validate ライブラリの依存関係を最新のマイナーバージョンにアップグレードします
+   * _修正点_:jquery/validate ライブラリの依存関係を最新のマイナーバージョン 1.20.0 にアップグレードします
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12025_:moment.js システムの依存関係を最新のマイナーバージョンにアップグレードします
+   * _修正点_:moment.js システムの依存関係を最新のマイナーバージョン 2.30.1 にアップグレードします
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12032_:MySQL 8.4 LTS for EE との互換性を追加
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12034_:MySQL 8.4 LTS for B2B との互換性を追加
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12074_：バンドル拡張機能用に MySQL 8.4 LTS との互換性を追加
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12085_:CE 用 MariaDB 11.4 LTS との互換性を追加
+   * _修正点_:Adobe Commerceと拡張機能で MariaDB 11.4 がサポートされるようになりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12165_：購読者の最適化 – PhpUnit10
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/90e25b6b>
+* _AC-12267_:Redis セッションの接続再試行をサポートし、colinmollenhour/php-redis-session-abstract v2.0.0 と互換性があります
+   * _修正点_:adobe commerce と互換性のある colinmollenhour/php-redis-session-abstract v2.0.0 の最新バージョンを更新しました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12576_:MySQL 8.4 LTS での自動化テストの失敗を調査します
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12595_:MariaDB 11.4 LTS For EE との互換性を追加
+   * _修正点_:Adobe Commerceと拡張機能で MariaDB 11.4 がサポートされるようになりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12715_：最新バージョンへのアップグレード中の laminas composer の依存関係の更新
+   * _修正点_：システムは最新バージョンの laminas composer 依存関係をサポートするようになりました。
+ラミナス/ラミナス – サービスマネガー
+ラミナス/ラミナス サーバ
+laminas/laminas-stdlib
+ラミナス/ラミナスバリデーター
+互換性と最新機能の確保。 以前は、これらの依存関係を最新バージョンに更新すると、後方互換性の問題が発生し、テストが失敗する可能性がありました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12823_：コンポーネントのアップグレード中に phpunit パッチが更新されたことで単体テストが失敗したことを調査します
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-13076_:[ 第 1 部 ] – すべての js ライブラリと npm 依存関係を、入手可能な最新バージョンで更新する
+   * _修正点_: composer バージョンのサポートは、composer バージョン 2.2.x まででした。 また、サポートが 2.4.x バージョンにも拡張されました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/19844aa0>
+
+### 順序
+
+* _ACP2E-2709_: [ 機能リクエスト ] 顧客が、注文詳細ページの「コメントを送信」ボタンは混乱しており、別のページに変更する必要があると提案しています
+   * _Fix note_: In order to minimize the confusion, the &quot;Submit Comment&quot; button label changed to &quot;Update&quot; in the order detail page.
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/488c1034>
+
+### その他
+
+* _AC-11420_：新しいバージョンのAdobe Commerceがインストールされると、セットインデクサーがデフォルトで準備完了ステータスに表示される
+   * _修正点_:Magentoをインストールした後、インデクサーのステータスはデフォルトで *準備完了* 状態になっている必要があります。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/71432aeb>
+* _AC-11421_：既存のMagento インストールで、サードパーティのインデクサーモジュールをインストールすると、インデクサーがデフォルトでスケジュールに従って更新されます。
+   * _メモの修正_：新しいインデクサーはすべて、デフォルトで [ スケジュールに従って更新 ] モードになっています。 以前は、デフォルトのモードは [ 保存時に更新 ] でした。 カスタムインデクサーでも同様です。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/71432aeb>
+* _AC-12480_:Elasticsearch 7 および 8 のオプションは、管理設定に非推奨（廃止予定）として付属している必要があります。
+   * _メモを修正_：管理設定オプションの「Elasticsearch 8」オプションに非推奨のテキストが表示され、Elasticsearch 8 の使用は推奨されなくなったことをユーザーに通知します。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0611e750>
+* _AC-12481_:管理設定でElasticsearchオプションが選択されている場合のテキストメモ追加
+   * _修正点_:Adobe管理者に、elasticsearch がAdobe Commerceでサポートされなくなり、非推奨になったことを知らせるテキストメモが追加されました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0611e750>
+* _AC-13448_:2.4.8 に階層的な価格の運用パフォーマンス向上パッチを提供
+   * _修正点_：このシステムでは、「/V1/products/tier-prices」 REST API エンドポイントを使用した場合に、パフォーマンスの問題やサイトの応答性の低下を引き起こすことなく、階層価格をより効率的に一括更新できるようになりました。 以前は、このエンドポイントを使用して多数の価格を更新すると、パフォーマンスの問題やサイトの応答が失われる可能性がありました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/082d981c>
+* _AC-13550_:Magento Open Source リポジトリから、Adobeの機密著作権表示をすべて削除します
+   * _修正点_:Adobeの著作権機密情報はすべてオープンソースリポジトリから削除され、Adobeの著作権が縮小された形式でのみ使用されるようになりました。 以前は、公開リポジトリ内の一部のファイルにAdobeの著作権機密情報が含まれていたため、コミュニティからのエスカレーションが発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39493>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/4bca5dfe>
+
+### UI フレームワーク
+
+* _AC-12726_:[2.4.8-beta1]TinyMCE 5 から TinyMCE 7 への移行
+   * _修正点_:TinyMCE 5 を TinyMCE 7.3.0 に移行し、Adobe Commerceでサポート対象バージョンにする。以前のシステムでは 5.10.2 を使用していたが、これは古くなり、セキュリティの脆弱性が報告されていた
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12825_:[2.4.8-beta1]TinyMCE 5 から TinyMCE 7 ページビルダーへの移行
+   * _修正点_:TinyMCE 5 を TinyMCE 7.3.0 に移行し、Adobe Commerceでサポート対象バージョンにする。以前のシステムでは 5.10.2 を使用していたが、これは古くなり、セキュリティの脆弱性が報告されていた
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12844_:[2.4.8-beta1]TinyMCE 5 の TinyMCE 7 への移行 – Magento2-infra – 禁止された単語
+   * _修正点_:TinyMCE 5 を TinyMCE 7.3.0 に移行し、Adobe Commerceでサポート対象バージョンにする。以前のシステムでは 5.10.2 を使用していたが、これは古くなり、セキュリティの脆弱性が報告されていた
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12901_:Require.js を最新バージョン 2.3.7 にアップグレード（セキュリティの脆弱性 CVE-2024-38999）
+   * _メモの修正_:require.js を最新バージョン 2.3.7 に更新しました。以前のバージョンでセキュリティの脆弱性が報告されました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b34c0a75>
+
+## 修正された問題
+
+Magento Open Source 2.4.8 コアコードの 497 件の問題を修正しました。 このリリースで修正された問題の一部を以下に示します。
+
+### API
+
+* _AC-10042_: /V1/transactions REST API は、parent_txn_id = txn_id の場合にエラーを返します
+   * _注意の修正_：親トランザクション ID がトランザクション ID と同じである親および子の概念トランザクションをシステムが正しく処理できるようになり、/V1/transactions REST API エンドポイントに対するクエリ時に無限ループが発生するのを防ぎます。 以前は、このシナリオでは、最大実行時間を超えているので、致命的なエラーが発生していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1bafc571>
+* _AC-11878_:2.4.7 の [Graphql] タイプの問題
+   * _修正点_:GraphQL クエリの実行時に GetCustomSelectedOptionAttributes 関数の整数値を正しく処理し、タイプ関連のエラーが発生しなくなりました。 以前は、GetCustomSelectedOptionAttributes を integer 引数と共に使用するGraphQL クエリを呼び出すと、type エラーが発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38662>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38663>
+* _AC-3223_：カテゴリ url_key の特殊文字（REST API を使用して作成した場合）
+   * _修正点_：以前 category_url_key では、修正後に特殊文字が存在せず、category_url_key に特殊文字が表示されます
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/35577>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c699c206>
+* _ACP2E-2755_:2FA Duo を有効にした後の rest api の問題
+   * _修正点_:Duo セキュリティオプションを使用した 2FA で、Rest API の正しい署名が生成されるようになりました
+   * _GitHub コードの投稿_:<https://github.com/magento/security-package/commit/412fa642>
+* _ACP2E-2927_: [REST API]：設定可能な製品の設定を追加した後、ストア表示で「デフォルト値を使用」がチェックされたままにならない
+   * _修正ノート_: この問題は、デフォルト以外のストアのカスタマイズ可能なオプションの正しいデータベースエントリを確保することで修正されました。 「管理>カタログ>製品編集>カスタマイズ可能なオプション」セクションのカスタムストアのチェックボックスは、データベースエントリが不正確であるため、均等カスタムストアのオプションタイトルがデフォルトのストアと同じままであるため、以前はオフになっていました。
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/3056e9cb>
+* _ACP2E-2969_:Oauth1 を使用している場合、REST API はSKUにスラッシュ(/)を含むリクエストを行うことができません。
+   * _修正点_：修正前は、SKU に「/」が含まれている製品に対して API 呼び出しを成功させることができませんでした。 これで、SKU にスラッシュが含まれている場合でも、製品の詳細に対して成功した API GET リクエストを発行できます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b21e5d91>
+* _ACP2E-3079_:「validateDefaultAddress」が有効な場合、REST API を使用して更新すると顧客アドレスの更新が失敗する
+   * _メモの修正_:API ペイロードに見つからない ID キーの問題が解決された後、API エンドポイントが意図したとおりに機能するようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/9af794a4>
+* _ACP2E-3091_: [クラウド] ティア価格 API で顧客グループグループ複製 Web サイトを作成します。
+   * _修正ノート_:ティアプライスレストAPIでは、価格顧客グループグループ複製Webサイトを作成できません。以前は、Tier Price API で価格顧客グループグループ複製 Web サイトを作成し、製品の保存中に Admin で検証を渡さないようにすることができました。
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/148c3ead>
+* _ACP2E-3130_:REST API 経由でステータス付きの注文コメントを追加できません
+   * _修正ノート_: この問題は、注文ステータスが現在の状態からのものである場合にのみ変更できるようにすることで解決されました。 以前は、注文状態を尊重しず、注文ステータスの変更均等、同じ状態からのものである場合は禁止されていました。
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/93d50f8d>
+* _ACP2E-3236_:SKU がペイロードにない場合、非同期操作は失敗します
+   * _メモを修正_:SKU がペイロードにない場合の製品保存エラーにより、非同期および同期操作が以前に失敗しました。 修正後、非同期および同期製品の保存 rest api 操作が失敗し、関連する例外メッセージが表示されます。
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/66dea0de>
+* _ACP2E-3376_: [クラウド] REST API を使用してベース価格を更新できません(「catalog_product_entity_decimal」の「value_id」の値は正しくインクリメントされません)。
+   * _修正ノート_:この修正の前は、REST api /rest/default/V1/products/base-priceが呼び出されると、増分IDが誤って増加し、値の間にギャップが残っていました。 修正後、増分 ID は期待どおりに増分で増加します。 また、value_id フィールドの範囲が拡大されました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d50f6b5d>
+* _ACP2E-3460_:API POST V1/order/:orderId/refund のクレジットメモメールに注文項目が表示されません
+   * _修正メモ_：以前は、この修正前に、顧客が send_email に通知する API リクエストからクレジットメモを作成する場合、製品の詳細グリッドは含まれていません。 この修正を適用すると、顧客はクレジットメモ API リクエストを送信し、メールに製品項目の詳細が表示されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/3f12d152>
+* _ACP2E-3486_：製品 RestAPI の日付と時刻の属性にデフォルト値が設定されない
+   * _メモの修正_:RestAPI を使用して、日付と日時の属性のデフォルト値が正しく設定されるようになりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1984c61c>
+
+### API、買い物かご、チェックアウト
+
+* _ACP2E-3343_：重大な 500 エラー：Magento\Framework\Webapi\Exception Accept HTTP ヘッダーに関連するもの
+   * _修正点_：修正後に、「Accept」ヘッダーを指定する際に問題はありません。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1366ae5e>
+
+### アカウント
+
+* _AC-10782_：顧客住所フォームの名前フィールドにランダムコードを使用できる
+   * _メモの修正_：システムは、顧客アドレスフォームの名フィールドと姓フィールドの入力を検証するようになったので、ランダムコードが使用されなくなります。 以前は、システムはエラーをスローせずにこれらのフィールドにランダムなコードを使用することができました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38331>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38345>
+* _AC-10886_：管理者パスワードの更新。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38352>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/4bca5dfe>
+* _AC-10990_：アカウントの追加アドレスが保存時にクラッシュする
+   * _メモの修正_：地域フィールドが表示されない場合でも、システムは顧客アドレスを正しく保存するようになり、保存処理中のクラッシュを防ぎます。 以前は、領域フィールドが表示されていないアドレスを追加または編集しようとすると、例外エラーが発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38406>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38407>
+* _AC-11718_:URL が大文字の場合のリダイレクトループ
+   * _メモの修正_：システムで URL の大文字が自動的に小文字に変換されるようになり、ホームページにアクセスする際にリダイレクトループが発生しなくなりました。 以前は、セキュアなベース URL に大文字が含まれていると、ホームページにアクセスしようとすると、継続的なリダイレクトループが発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38538>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38539>
+* _AC-11755_: ゲスト アカウントのミドルネームが保存されていません
+   * _メモの修正_：チェックアウト時にゲストアカウントのミドルネームが正しく保存され、メールテンプレートでアクセスできるようになりました。 以前は、ミドルネームは見積もりテーブルに保存されず、ゲストアカウントのメールテンプレートでもアクセスできませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38593>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/39067>
+* _AC-11919_：管理者：ページアクションのボタンが右ではなく左にフローティングされる
+   * _メモの修正_：システムでは、管理パネルのスティッキーヘッダーの右側にページアクションボタンが正しく配置され、プロフェッショナルなルックアンドフィールが強化されました。 以前は、これらのボタンは、スティッキーヘッダーの左側に誤ってフローティングされていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38701>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/44cef3a9>
+* _AC-11999_:magento 2.4:di:7 の dev-info エラー
+   * _メモの修正_:dev:di:info コマンドの実行時にコンストラクターパラメーターが正しく表示され、エラーが発生しなくなりました。 以前は、このコマンドを実行すると、引数のタイプの不一致が原因でエラーが発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38740>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0c53bbf7>
+* _AC-13000_：顧客オプトインチェックボックスとしてログインが翻訳可能ではない
+   * _メモの修正_：システムの「顧客オプトインチェックボックスとしてログイン」および「顧客としてログイン」チェックボックスツールヒントのフィールドを「ストア表示」範囲で設定できるようになり、様々なストア表示の翻訳が可能になりました。 以前は、これらのフィールドは「Web サイト」の範囲でのみ設定され、個々のストア表示の翻訳を防いでいました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/32329>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/32359>
+* _AC-6071_：ユーザーがログインしたが、フロントエンドに 404 エラーが表示される。
+   * _修正点_：顧客がログインした際に、ストアフロントの顧客ダッシュボードページが期待どおりに読み込まれるようになりました。 以前は、ユーザーはログインできましたが、このページでは 404 エラーが表示されていました。 [GitHub-35838](https://github.com/magento/magento2/issues/35838)
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/35838>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/36263>
+* _ACP2E-2791_:Admin Edit customer セクションで顧客属性情報を保存できない
+   * _メモの修正_：顧客のストア ID が、管理者顧客編集フォームの web サイト範囲ごとに正しく実装されるようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/488c1034>
+* _ACP2E-3329_: ログイン後、ゲストユーザーとして比較リストに追加された製品が表示されません。
+   * _修正点_：顧客としてログインする前に製品比較リストに追加された製品は、ログイン後も保持されるようになりました。
+以前は、ログイン後、ゲストユーザーとして比較リストに追加された製品が表示されていませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/078c387e>
+* _ACP2E-3433_：国の設定を許可すると、顧客アドレス設定で問題が発生する
+   * _修正メモ_：現在、「国を許可」設定を選択しても、指定された範囲以外で表示される国には影響しません。 以前は許可する国の設定が、指定されたスコープ外の顧客アドレス属性に影響していました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/078c387e>
+* _ACP2E-3501_: VAPT: ビジネス ロジック エラー – 顧客の生年月日としての将来の日付
+   * _修正点_：顧客の生年月日を今日より後に設定することはできません
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d4de4726>
+
+### アカウント，API, GraphQL
+
+* _ACP2E-3246_：カスタマー API - ログインに成功した後、ログインエラー番号を 0 にリセットできない
+   * _修正点_:API エンドポイントを介してユーザーが正常にログインした後、カスタマーエンティティテーブルのエラー番号が 0 にリセットされるようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ec7e32a9>
+
+### アカウント、管理 UI、B2B
+
+* _ACP2E-3038_：制限付き管理者ユーザーは、カスタムの共有カタログを常に表示できるわけではありません
+   * _修正メモ_：制限付き管理者ユーザーは、特定のストアにアクセスできる場合、製品が割り当てられている顧客およびすべての共有カタログを一貫して表示および管理できるようになりました。 以前は、特定のストアへのアクセス権を持つ制限付きの管理者ユーザーは、製品が割り当てられたすべての共有カタログを表示できなかったり、保存できなかった顧客を表示できたりして、システムの不整合が発生していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7377de59>
+
+### アカウント、買い物かご、チェックアウト
+
+* _AC-2341_：新しい顧客アドレスに対して「select」カスタム顧客アドレス属性がレンダリングされない
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/34950>
+
+### 管理 UI
+
+* _AC-10705_:[ 問題 ] 「データを再読み込み」ボタンに対する権限チェックを追加
+   * _メモの修正_：システムには、「データのリロード」ボタンに対する権限チェックが含まれるようになりました。適切な権限を持つユーザーのみがデータを表示してアクセスできるようにします。 以前は、「データの再読み込み」ボタンがすべてのユーザーに対して表示され、クリック可能であったため、必要な権限を持たないユーザーがクリックすると「許可されていない」ページが表示されていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38283>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38279>
+* _AC-11427_:[ 問題 ] マーケティングルールの属性のラベルが一貫していない
+   * _メモの修正_：買い物かご価格ルールのカテゴリと属性のオプションのラベルが、一貫して正しく入力されるようになりました
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/31232>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/31231>
+* _AC-11588_：置き換え動作で製品を読み込む際に、データの検証が成功し、「読み込み」ボタンが表示される
+   * _修正点_：システムはデータを正しく検証し、「置換」動作を使用して製品の読み込みプロセス中の「読み込み」ボタンを非表示にして、意図しないデータの置換を防ぐようになりました。 以前は、システムがデータを誤って検証し、「読み込み」ボタンを表示したため、データの不一致が発生する可能性がありました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0574ac23>
+* _AC-12167_:[ バグ ]Magento 2.4.7 では、大文字のファイル拡張子を持つ製品写真を使用できません。
+   * _修正点_：システムでは、大文字のファイル拡張子を持つ製品画像のアップロードを受け入れるようになり、製品の作成プロセスをスムーズに行えるようになりました。 以前は、ファイル拡張子が大文字の画像のアップロードは拒否され、ユーザーはファイル拡張子を小文字に変更する必要がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38831>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c8f87c25>
+* _AC-12319_：選択アクション（コンテンツ/要素/ページなど）が含まれているグリッドの非表示のドロップダウン
+   * _メモの修正_：システムは、すべてのグリッドに関するすべての類似ドロップダウンを修正しました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38891>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/39371>
+* _AC-13131_:[ 問題 ] 修正警告：未定義の配列キー「フィルター」
+   * _メモの修正_：新しいユーザーがまだブックマークと対話していないシナリオをシステムが処理し、未定義の配列キー「フィルター」の警告がログに記録されなくなりました。 以前は、この警告は、新規ユーザーがブックマークでやり取りしなかった場合にログに記録されていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39013>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38996>
+* _AC-13529_:Validate.php ファイルのコード変更が原因で、特殊文字を含む製品の csv ファイルの読み込みに失敗する
+   * _メモの修正_：特殊文字を含む製品の CSV ファイルを正しく検証および読み込むようになり、データ転送が成功しました。 以前は、特殊文字を含む製品の CSV ファイルを読み込もうとすると、エラーが発生し、読み込みプロセスが妨げられていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/6cfb9b6b>
+* _AC-13850_：必須の電話番号フィールドに赤いアスタリスクが表示されない
+   * _メモの修正_：以前は赤いアスタリスクが電話番号に表示されていませんでしたが、  電話番号は必須でした。 今では固定されている赤いアスタリスクは、必須フィールドとして電話番号に見ることができます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c699c206>
+* _AC-6975_: [ 問題 ] デフォルトのインデクサーモードを「スケジュール」に設定します
+   * _メモの修正_：新しいインデクサーはすべて、デフォルトで **[!UICONTROL Update by Schedule]** モードになります。  以前は、デフォルトのモードは **[!UICONTROL Update on Save]** でした。 既存のインデクサーは影響を受けません。 [GitHub-36419](https://github.com/magento/magento2/issues/36419)
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/36419>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0b410856>
+* _AC-7700_: [ 問題 ] mview でインデクサーの変更ログテーブルを登録解除します
+   * _メモの修正_：インデックスが「スケジュールに従って更新」から「保存時に更新」に切り替わると、システムは未使用の変更ログテーブルを自動的に削除するようになりました。インデックスを無効としてマークして、エントリが失われないようにします。 以前は、インデックスを「保存時に更新」に切り替えると、未使用の変更ログテーブルがシステムに残り、変更されたすべてのインデックスが「有効」としてマークされていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/29789>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/25859>
+* _AC-7962_：携帯電話表示でチェックアウトの支払い時に、出荷へのリンクがない
+   * _メモの修正_：システムのモバイル表示で、チェックアウトタイトル/リンク「送料」と「確認と支払い」がページの上部に常に表示されるようになり、ユーザーがステップ間を簡単に移動し、必要な修正を行えるようになりました。 以前は、これらのタイトルやリンクはモバイル表示では非表示になっていたため、ユーザーが現在の手順を把握したり前の手順に戻ったりするのが困難でした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/36856>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/36982>
+* _AC-8109_：顧客注文クエリの出荷コメント created_at は、店舗で設定されたタイムゾーンではなく、+0 タイムゾーンで返されます
+   * _メモの修正_：顧客の注文クエリを使用する際に、顧客が設定したタイムゾーンで、出荷コメントの「created_at」フィールドが正しく表示されるようになりました。 以前は、「created_at」フィールドは、顧客が設定したタイムゾーンに関係なく、+0 タイムゾーンで表示されていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/36947>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37642>
+* _AC-9843_: i18n:collect-phrases は翻訳の整合性を壊します
+   * _注意を修正_:`bin/magento i18n:collect-phrases -o` コマンドは、JavaScript ファイルおよび.phtml ファイルから新しいフレーズを正しく収集して追加し、翻訳が翻訳ファイルに正確に反映されるようになりました。 以前は、JavaScript ファイルの複数行の翻訳語句と.phtml ファイルの語句を翻訳ファイルに含めることができず、翻訳が不完全または誤っていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0c53bbf7>
+* _ACP2E-2787_：ストア表示名のアポストロフィは「」に置き換えられます
+   * _メモの修正_：グリッドのストア表示フィルターにアポストロフィが正しく表示されるようになりました
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38395>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/39d54c2d>
+* _ACP2E-2847_: favicon アップロードで.ico ファイルの検証に失敗する
+   * _修正点_：ファイル検証エラーが「ファイルの検証に失敗しました。 ストア設定の画像処理設定を確認してください。」というエラーメッセージが表示されます。 以前は、単に「ファイルの検証に失敗しました」でした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/39d54c2d>
+* _ACP2E-2957_: PageBuilder のギャラリーで、新しくアップロードされた画像の代わりに古い画像のサムネールが表示される
+   * _メモを修正_：ページビルダーコンテンツのメディアギャラリーから、同じ名前で削除および再アップロードされた画像の画像プレビューを再生成します。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2-page-builder/commit/60140cd2>、<https://github.com/magento/magento2/commit/001e5188>
+* _ACP2E-2978_：異なる役割スコープを持つ管理者ユーザーが製品を保存すると、製品内の既存の関連製品情報が上書きまたは削除される
+   * _修正点_：以前は、修正前にセカンダリ管理者ユーザーが関連製品を変更せずに「保存」ボタンをクリックすると、関連製品がリセットされ、空になっていました。 この修正の後、セカンダリ管理者ユーザーが「保存」ボタンをクリックすると、製品はリセットされず、正常に保存されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/3056e9cb>
+* _ACP2E-3033_: 200 件を超える注文を書き出すことができません
+   * _修正点_：問題を修正するために、GETからの HTTP リクエストを POST に変更することで、以前に送信した選択された ID のリクエストサイズのサーバー制限が無視されるようになりました。 以前は、GET リクエストのサイズに関するサーバー制限により、問題が発生していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/93d50f8d>
+* _ACP2E-3037_：チェックアウトページの検証メッセージが正しくありません。
+   * _メモの修正_:「address」など、必須フィールドが空のままになっている場合、サーバーサイドの検証ではメッセージが表示されません。 クライアントサイドの検証では、「これは、必須フィールドです」という必須フィールドエラー通知が表示されます。 以前は、クライアントサイドの検証メッセージに加えて、必須フィールドが空のままの場合、「address is required」というメッセージが表示されていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/9af794a4>
+* _ACP2E-3125_：管理者ユーザーのパスワードリセットテンプレートの問題
+   * _メモの修正_：問題は、正しいキーを使用して解決されました。このキーには、メールテンプレートの管理者ユーザー名が含まれ、件名が正しく完了しています。 以前は、この問題は、使用されていた古いキーに起因していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/93d50f8d>
+* _ACP2E-3149_：顧客セグメント URL での二重スラッシュ
+   * _メモの修正_：グリッドで「フィルターをリセット」をクリックした場合、URL に二重スラッシュが表示されません。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/8459b17d>
+* _ACP2E-3171_：許可されている特定の国では COD を使用できません
+   * _修正メモ_：現金払い注文は、必要に応じて、許可されている特定の国で利用できるようになりました。   AC-3216 は正常に動作しています。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/6f4805f8>
+* _ACP2E-3178_: カスタムで作成された注文のステータスを更新できない
+   * _修正メモ_ : 「
+カスタムで作成した注文ステータスを更新できるようになりました。一方、以前は、現在のステータスが「処理中」または「不正」の場合にのみ、ステータスを変更できました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38659>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/8459b17d>
+* _ACP2E-3294_：配送先住所の状態が自動更新されない
+   * _修正点_：修正前は、配送先住所の地域（または地域 ID）が住所請求情報と同期していませんでした。 請求先住所情報が変更されると、配送先住所のリージョンとリージョン ID の両方が正しく更新されるようになりました。
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/581b7ef1>
+* _ACP2E-3364_：管理者ユーザーの追加/編集時にリセットボタンが機能しない
+   * _修正点_：以前は、管理者ユーザーの追加/編集ページで「リセット」ボタンが機能しませんでした。 これで、管理パネルのシステム/権限/すべてのユーザーの下で、リセット ボタンが管理者ユーザーを追加/編集ページで正しく機能するようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/5184c067>
+* _ACP2E-3373_:Magento管理者 URL ルーティングの誤った検出と CORS エラー
+   * _メモの修正_：修正後、カスタム管理ドメインがメインドメインのサブドメインである場合、管理者には設定済みのサブドメインからのみアクセスできます。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37663>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/3f12d152>
+* _ACP2E-3392_:「買い物かごで許可された最大数量」の検証が壊れています
+   * _メモの修正_：以前は、空の値を配置 `Maximum Qty Allowed in Shopping Cart` ると、空の値はここでは受け入れられませんが、例外はスローされませんでした。 この修正が適用された後、空の文字列を指定すると例外がスローされ、製品を保存できなくなります。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d50f6b5d>
+* _ACP2E-3408_:[Pagebuilder プレビュー UI の問題 ] ページビルダー列のボタンが正しく配置されない
+   * _メモの修正_：ページビルダー列のボタンの位置が正しく調整されるようになりました。 以前は、ページビルダーの列内で位置がずれていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2-page-builder/commit/1a52ef4c>
+* _ACP2E-3431_：注文された製品レポートがエクスポートされない。 代わりに 404 エラー。
+   * _修正点_:CSV および XML を除く、注文された製品レポートが期待どおりに動作するようになりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/88660e79>
+* _ACP2E-3457_:Js の縮小後にコンソール内で TinyMCE JS エラーが発生し、実稼動モードで有効になる
+   * _修正点_：以前は、管理パネル内の実稼動モードでJavaScriptの縮小を有効にすると、TinyMCE 6 に関連するJavaScript エラーがブラウザーコンソールに表示され、機能とユーザーエクスペリエンスに影響を与えていました。 この問題が解決され、JS の縮小が有効になっている場合でも TinyMCE 6 がエラーを起こすことなくスムーズに動作するようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/56463d5e>
+* _ACP2E-3459_:ACP2E-3375 修正を完全に完了するための追加変更のリクエスト
+   * _修正メモ_ : 「– 
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d50f6b5d>
+* _ACP2E-3503_：新しい ACL 権限の自動有効化
+   * _メモの修正_：カスタムモジュールに追加された新しい権限は、明示的に設定されない限り、既存のすべてのユーザーの役割に自動的にアクセス権を付与しなくなりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/3f12d152>
+* _ACP2E-3509_：管理アクションのログユーザーレポートに adminhtml_user_delete の詳細が表示されない
+   * _メモの修正_:adminhtml_user_delete は、重要な詳細を正しくログに記録するようになりました。 以前は、ユーザーの削除に関するログは生成されていませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/4de008a9>
+* _ACP2E-3536_：管理者から注文する際に、配送条件が適用されない買い物かごルール
+   * _修正注意_:以前は、買い物かご価格ルールにクーポンに配送方法割引がある場合、管理UIから適用することはできませんでした。 この修正が適用されると、特定の発送方法のクーポンを使用した買い物かご価格ルールの割引が、管理 UI から正常に適用されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a52ff98f>、<https://github.com/magento/inventory/commit/11ce816b>
+* _ACP2E-3559_:[FRESH] の 16 進数コードが SWATCH で正しく更新されない
+   * _修正点_：ユーザーがビジュアルスウォッチのカラーピッカーに手動で入力した 16 進数コードが、システムによって変更されなくなりました。 以前は、カラーモデル間の変換エラーが原因で、特定の 16 進数コードにわずかな調整が生じていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/344fce23>、<https://github.com/magento/inventory/commit/1ef984c0>
+
+### 管理 UI、B2B
+
+* _AC-13628_:B2B Login as Customer Header に、引き続きMagento ブランディングが付いている
+   * _メモの修正_：以前は、ストアフロントのヘッダーに、「現在、&lt; ストア名 > で &lt; お客様の名前 > として接続されています」とMagento ブランディングが表示されていました。 （修正）と、ヘッダーがADOBE ブランディングで表示されるようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/96dec499>
+
+### 管理 UI、支払い/支払い方法、注文
+
+* _AC-13520_:PayPal スマートボタンの注文後、「トランザクション」タブにトランザクション認証が表示されない
+   * _メモの修正_:PayPal スマートボタンを使用して注文した後、「トランザクション」タブにトランザクション認証が正しく表示されるようになりました。 以前は、「認証」ボタンをクリックすると、認証トランザクションが「トランザクション」タブに表示されず、「認証」タイプの新しいトランザクションが作成されていませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/6cfb9b6b>
+
+### 管理 UI、パフォーマンス
+
+* _ACP2E-3169_:2.4.5-p8 への更新後、管理者から注文を作成すると 500 エラーが発生します
+   * _メモの修正_：以前は、HTMLの縮小を有効にすると、管理者から注文できませんでした。 これで、HTMLの縮小が有効になり、管理者から正常に注文できるようになります。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b21e5d91>
+
+### 管理 UI、送料
+
+* _ACP2E-2519_：のクーポンコード数が更新されません   複数配送で注文した場合の、「クーポンコードを管理」タブの「使用時間」列。
+   * _メモの修正_：以前は、複数配送で注文を行った際に、「クーポンコードの管理」タブの「使用時間」列のクーポンコード数が更新されていませんでした。 現在は、正しい数が「使用時間」の両方に表示され、マルチシッピングで目的の値が反映されています。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/4745100c>
+
+### 管理 UI、ステージングおよびプレビュー
+
+* _ACP2E-3424_: [Cloud] 画像が欠落しているテンプレートを削除すると、pub/media が削除されます
+   * _メモの修正_：この修正の前に、pagebuilder テンプレートのプレビュー画像名が見つからなかった場合、pub/media フォルダーが削除されました。 修正後は、テンプレートのみが削除され、見つかった場合はプレビュー画像が削除されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2-page-builder/commit/0986853b>
+
+### 分析/レポート
+
+* _AC-9922_:Google Analytics CSP Error https://region1.analytics.google.com
+   * _修正点_:Google Analyticsが有効な場合、システムは正しく「https://region1.analytics.google.com&#39;」への接続を許可し、コンテンツセキュリティポリシー（CSP）エラーを防ぐようになりました。 以前は、Google Analyticsを有効にして EU から web サイトを表示すると、「https://region1.analytics.google.com&#39;」への接続が拒否されて、CSP コンソールエラーが発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37750>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38991>
+* _ACP2E-2570_：事前レポートが機能しない
+   * _メモの修正_：システムは、10,000 個のバッチでレポートを読み込みおよび書き込むことにより、非常に大きなデータセットに対する事前レポートデータファイルの生成をサポートするようになりました。 以前は、詳細レポートモジュールで超大データセットのデータファイルを生成できず、analytics_collect_data cron ジョブの実行中に「MySQL サーバーが停止しました」というエラーが発生していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a12063bd>
+* _ACP2E-3080_：管理者の注文製品レポートの日付範囲の表示に関する問題。
+   * _メモの修正_：ユーザーは、注文済み製品レポートから任意の日付を選択できるようになります。 以前は、テーブルの更新後に「開始日」を選択すると、「終了日」がリセットされていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/6f4805f8>
+* _ACP2E-3096_：間違った curl ヘッダーにより newrelic:create:deploy-marker が機能しない
+   * _修正点_：システムで curl ヘッダーが正しくフォーマットされるようになり、newrelic:create:deploy-marker コマンドでNew Relicにデプロイメントマーカーを正常に作成できるようになりました。 以前は、curl ヘッダーが正しくないと、New Relicでデプロイメントマーカーを作成できませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37641>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/6a185204>
+* _ACP2E-3183_:NewRelic ブラウザーで inlineJS スクリプトを監視すると、CSP エラーが発生する
+   * _修正メモ_:CSP （コンテンツセキュリティポリシー）に準拠するために、NewRelic ブラウザー監視スクリプトが APM エージェントではなくアプリケーションによって挿入されるようになりました。 以前は、APM エージェントによって挿入された NewRelic ブラウザー監視スクリプトが CSP に準拠しておらず、スクリプトが実行されませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/66dea0de>
+* _ACP2E-3189_：販売注文量が多いプロジェクトでは、sales_bestsells_aggregated_daily テーブルへの INSERT クエリの処理が遅くなる
+   * _修正点_：以前はベストセラーの毎日の集計レポートは、大量の注文を生成するのに多くの時間がかかっていました。 これで、レポートがタイムリーに生成されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7377de59>
+* _ACP2E-3276_：間違った通貨記号を示す注文レポート
+   * _メモの修正_：注文レポートの注文金額の通貨記号が、通貨/オプション/ベースから誤って取得されていました。 正確なレポートを作成するために、通貨/オプション/デフォルトを使用するように修正されました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/fd5cf3af>
+* _ACP2E-3302_: [Cloud] クーポン使用状況レポートの計算が正しくありません
+   * _修正点_: クーポンレポート・グリッドの売上合計は、「割引税補償金額」と「出荷割引税補償金額」の両方を組み込むことで正確に計算されるようになりました。 以前は、これらの金額が計算から欠落していたため、売上合計と受注データの間に不一致がありました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d75cff27>
+* _ACP2E-3339_：共有「&lt;project_id>/var/tmp」に関する問題
+   * _メモの修正_:Analytics DataExport の一時ファイルは、sys tmp ディレクトリを使用します。このディレクトリは、頻繁なアクセスと変更に適しています。 同じサーバーで複数のインスタンスが実行されている場合の競合を避けるために、tmp パスはインスタンスの一意の ID を使用するように更新されました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a4cf5e62>
+
+### 分析/レポート、B2B
+
+* _ACP2E-2300_: B2B - サイトマップに、共有カタログに割り当てられていない製品/カテゴリが含まれています
+   * _メモの修正_：サイトマップで生成されるカテゴリと製品を、公開共有カタログおよび/またはカタログカテゴリの権限設定にのみ割り当てられたカテゴリと製品に制限します。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ea79f7dd>
+
+### Analytics/レポート、クラウド
+
+* _ACP2E-3067_:Magentoは、ほとんどのNew Relic cron トランザクションを破棄します#34108
+   * _メモの修正_:AC は cron ジョブ関連のトランザクションを NewRelic に正しくレポートしています。 以前は、一部の cron ジョブ関連のトランザクションは、NR で「OtherTransaction/Action/unknown」と表示されていました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/35b1b1da>
+* _ACP2E-3187_：バックグラウンド トランザクションで NR のメトリックが誤解を招く可能性がある – ACP2E-3067 のフォローアップ
+   * _メモの修正_：バックグラウンドトランザクション（cron）では、設定で定義されたNew Relic アプリ名を使用します
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ec7e32a9>
+
+### B2B
+
+* _ACP2E-2139_：共有カタログに割り当てられた製品が、部分的なインデックスが実行されたときにフロントエンドに反映されない
+   * _メモの修正_:REST API を介して共有カタログに割り当てられた製品が、部分的なインデックス作成の完了後、直ちにストアフロントに表示されるようになりました。 以前は、製品は、完全な再インデックス後にのみ表示されていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7377de59>
+* _ACP2E-3044_:[ マイ注文 ] セクションに不要な罫線が表示される
+   * _修正点_：以前は、追加の CSS クラスを適用する追加のコンテナ（注文参照）が作成されていたので、不要な境界線が「自分の注文」セクション内の注文番号の下に表示され、現在表示されません。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/9af794a4>
+* _ACP2E-3247_: sales_clean_quotes cron は、まだ承認されていない発注書からの見積を削除します
+   * _修正メモ_：現在の発注書で使用されている見積は、cron ジョブ sales_clean_quotes によって削除されません
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/581b7ef1>
+
+### B2B, フレームワーク
+
+* _AC-9607_：会社のグリッドをフィルタリングしてから、グリッド CSV の書き出しを試みると、失敗して例外がスローされる
+   * _メモの修正_：このシステムでは、「未払い残高」や「会社タイプ」などのフィルターが適用されている場合でも、管理パネルで会社グリッドデータを正常に CSV 書き出すことができるようになりました。 以前は、特定のフィルターを適用してグリッドデータを書き出そうとすると、失敗し、例外がスローされていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/44cef3a9>
+
+### バンドル
+
+* _AC-10826_：ストアフロントバンドルチェックボックス検証エラーメッセージ数が 1 を超える
+   * _修正メモ_：バンドルされた製品のチェックボックスオプションを選択せずに、「買い物かごに追加」ボタンをクリックしても、検証エラーメッセージが 1 つだけ表示されるようになりました。 以前は、システムには、選択されていない各チェックボックスに対して複数の検証エラーメッセージが表示されていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/3ea26621>
+
+### 買い物かごとチェックアウト
+
+* _AC-10660_：製品の比較ページで買い物かごに製品を追加する際に、例外が正しく処理されない
+   * _修正メモ_：製品の比較ページから買い物かごに製品を追加する際に、コントローラにメッセージマネージャーメッセージが表示される場合、例外を適切に処理するようになりました。 以前は、例外があると、JSON エンコードされたページが適切に取得および処理されずに返されていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38200>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38257>、<https://github.com/magento/magento2/commit/0c53bbf7>
+* _AC-10698_: GTag はトランザクションの価格と合計を送信しません。
+   * _修正点_:GTag が有効な場合、システムは取引価格と合計をGoogle Tag に正しく送信し、e コマースデータを正確に追跡できるようになりました。 以前は、通貨は、個々の注文に関連付けられるのではなく、「すべて」の注文の一部として誤って送信されていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37348>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37504>、<https://github.com/magento/magento2/pull/37349>
+* _AC-11641_: [ 問題 ] [ チェックアウト ] 失敗した支払いメールテンプレートで更新された依存ディレクティブ
+   * _修正点_：仮想製品の支払いに失敗したメールテンプレートから配送先住所と配送方法が正しく省略され、関連する情報のみがメールに含まれるようになりました。 以前は、仮想製品の支払い失敗メールに、配送先住所と配送方法が誤って含まれていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/32781>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/32511>
+* _AC-11717_:Firefox ブラウザーで、チェックアウト内にMagento 2 ログインすると既存のお客様と一緒にコンソールエラーが発生する
+   * _メモの修正_：システムでは、Firefox ブラウザーでコンソールエラーが発生することなく、チェックアウトプロセス中にユーザーがログインできるようになりました。 以前は、チェックアウト時に既存の顧客としてログインしようとすると、Firefox でコンソールエラーが発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38557>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/39509>
+* _AC-11876_:[ 問題 ] 2.4.7 でセールスルールのリグレッションが発生
+   * _修正メモ_：システムは販売ルールを正しく検証し、製品条件がどの製品名とも一致しない場合にクーポンコードを買い物かごに適用できないようになりました。 以前は、商品条件が商品名に一致しない場合でも、販売ルールを適用したり、配送額に割引を適用したりすることができました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38671>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0574ac23>
+* _AC-11914_: [ 問題 ] 販売ルール CartFixed 計算：割引額が正しくない
+   * _修正点_：システムで買い物かごの固定金額を使用して、販売ルールの割引額が正しく計算され、買い物かごの品目の変更に関係なく正確な割引が適用されるようになりました。 以前は、買い物かごの商品が変更されると割引額が正しく変化せず、予想よりも大幅に大きな割引が発生する場合がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38694>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/581b7ef1>
+* _AC-11993_:[ 問題 ] 郵便番号が変更され、配送料検証ルールが適用されると、ローダーによって配送方法がブロックされます
+   * _修正点_：システムは、配送料検証ルールのないカスタム配送方法を正しく処理するようになりました。これにより、チェックアウト中に配送先住所で郵便番号が変更された後に、ローダーが配送方法をブロックしないようになります。 以前は、チェックアウト時に配送先住所の郵便番号を変更すると、配送料検証ルールのないカスタム配送方法が使用された場合、ローダーは配送方法をブロックし、表示されなくなります。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38742>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1bafc571>
+* _AC-12170_:Magento 2.4.7 のチェックアウトページでクーポンコード機能が正しく機能しない
+   * _修正点_：仮想製品とダウンロード可能な製品のチェックアウトページで「割引コード / クーポン」入力フィールドが有効になり、ユーザーは期待どおりに割引コードを適用できるようになりました。 以前は、割引コード/クーポン入力が無効になっており、ボタンのタイトルテキストが「クーポンをキャンセル」と表示されているので、ユーザーは割引コードを適用できませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38826>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1bafc571>
+* _AC-12479_：利用条件チェックボックスでストアフロントのHTMLが許可されない
+   * _修正点_：ストアフロントの「利用規約」チェックボックステキストでHTMLの書式設定がサポートされるようになり、カスタマイズと読みやすさが強化されました。 以前は、チェックボックステキストは、使用されるHTML タグを無視して、プレーンテキスト形式で表示されていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/6cfb9b6b>
+* _AC-12541_：ログインしたユーザー用に作成された買い物かご価格ルールが、ログインしていないユーザーに対して正しく適用されない
+   * _修正メモ_:Cookie の有効期限が原因で自動的にログアウトされた場合、ログインしたユーザーの買い物かご価格ルールが正しく削除され、ログインしていないユーザーに割引が適用されなくなりました。 以前は、ユーザーがログアウトした場合でも買い物かごの価格ルールが適用され、ログインしていないユーザーには誤った割引が適用されていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38944>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7d5e3906>
+* _AC-13302_:[ 問題 ] [ 機能 ] パフォーマンスの最適化を実現し、大規模な買い物かごに入れるのを防ぎます。
+   * _修正メモ_：このシステムは、重複する getActions 呼び出しを防ぎ、買い物かごの操作の速度と効率を向上させることで、大きな買い物かごのパフォーマンスを最適化するようになりました。 以前は、複数のアイテムを含む買い物かごの場合、getActions 関数が複数回呼び出され、システムのパフォーマンスが低下していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39292>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/39290>
+* _AC-8103_：アドレスレンダラーの翻訳 VAT
+   * _修正点_：このシステムでは、アドレスレンダラーで「VAT」、「T」、「F」のテキストを翻訳できるようになり、ユーザーはこれらの用語をストアの特定の言語に翻訳できます。 以前は、これらの用語は翻訳可能ではなく、ユーザーは回避策を使用する必要がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/36942>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/36943>
+* _ACP2E-2055_：時間差がほとんどなく、同時に同じ見積 ID を持つ注文が重複しています
+   * _修正メモ_:Adobe Commerceのお客様が同じ QuoteID で重複した注文を受け取った問題を修正しました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/f89a447e>
+* _ACP2E-2470_：チェックアウトステップで永続的な買い物かごがクリアされる
+   * _修正メモ_：修正後、ログインしていない状態でチェックアウト中に支払い方法を選択しても、永続セッションが終了しません。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a4fbf702>
+* _ACP2E-2518_：並べ替えによって、割り当てられていない製品が買い物かごに追加される
+   * _修正点_：以前は、異なるストアの製品を他のストアから並べ替えることができました。 この修正が同じストアにのみ適用された後、顧客アカウント共有が有効な場合、同じスコープの製品を並べ替えることができます
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/f89a447e>
+* _ACP2E-2620_：管理者で、項目を選択する際に左側の「買い物かご」と、右側の「買い物かごに移動」が更新されません
+   * _メモの修正_：項目を選択すると、左側の「買い物かご」が更新され、管理画面の右側から「買い物かごに移動」が更新されます。 以前は、変換された買い物かご項目がセッションから空にならないので、この機能は機能しませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/39d54c2d>
+* _ACP2E-2646_: [Cloud] 複数出荷の最初の注文に販売ルールが適用されない
+   * _修正注_：修正後、割引は同じ複数出荷見積の注文ごとに正しく表示されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/f89a447e>
+* _ACP2E-2664_:[Cloud] 実稼動同じ製品を買い物かごに追加する並列リクエストの結果、買い物かごの Rest API で 2 つの異なる項目が発生する
+   * _修正メモ_：複数の並列リクエストを正しく処理して同じ製品を 1 つの行項目に買い物かごに追加できるようになり、同じ SKU で別々の行項目を作成できなくなりました。 以前は、REST API を介して同じ製品を買い物かごに追加する並列リクエストを実行すると、同じ SKU に対して複数の行項目が発生していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/f89a447e>
+* _ACP2E-2704_:Cookie を送信できません。 並べ替えの試行中の「mage-messages」のサイズ
+   * _修正点_：現時点では、並べ替えプロセスで独自のエラーは生成されません。 これは、買い物かごリストのビルトインの項目確認に依存します。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ba25af8a>
+* _ACP2E-2798_: チェックアウト時にデフォルトの配送先住所が選択されていません
+   * _メモの修正_：デフォルトの配送先住所が、有効な住所検索のコンテキストでイベントとして選択されるようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7e0e5582>
+* _ACP2E-2897_:[CLOUD] graphql addProductsToCart api の問題（カスタムオプションあり）
+   * _修正点_:GraphQLでは、同じ商品が異なるカスタムオプションで正しく買い物かごに追加される
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c971859e>
+* _ACP2E-2923_：新規顧客としてチェックアウトする際に、アカウントに追加された複数のアドレス
+   * _修正メモ_：注文の作成に失敗した場合、システムは新しい顧客アドレスを 1 回だけ保存するようになり、注文の配置エラーが発生した場合に複数の同一のアドレスを作成するのを防ぎます。 以前は、注文が正常に作成されたかどうかに関係なく、注文の発注が試行されるたびに新しい住所が保存されていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/001e5188>、<https://github.com/magento/inventory/commit/2ebcef39>
+* _ACP2E-3004_：ゲストによる注文フォームを使用して顧客の注文を並べ替えると、買い物かごが空になる
+   * _注意を修正_：以前は、「注文と返品」ページを通じて並べ替えを配置する際に、顧客はログインページにリダイレクトされていました。 この修正が適用されると、登録された顧客は、並べ替えを配置する際に、買い物かごの表示ページに正しくリダイレクトされます。 フローは、ゲスト顧客と同様に機能します。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/6a185204>
+* _ACP2E-3025_：役割リソースが限られている管理者ユーザーが買い物かごを表示できない
+   * _メモの修正_：以前は、制限された管理者は、関連する web サイトの管理パネルから放棄された買い物かごを表示できませんでした。 この修正が適用されると、制限された管理者は、管理パネルから放棄された買い物かごを表示できます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d1f7dc95>
+* _ACP2E-3176_: [Cloud] クイックオーダーによる大量の SKU パフォーマンス
+   * _修正メモ_：買い物かごの価格ルールの条件で使用される属性がすべての製品に存在しない場合や MAP （Minimum advertised price）機能が有効な場合のチェックアウトのパフォーマンスが向上しました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/66dea0de>
+* _ACP2E-3211_：カート内の重複項目
+   * _修正メモ_：複数の並列リクエストを正しく処理して同じ製品を 1 つの行項目に買い物かごに追加できるようになり、同じ SKU で別々の行項目を作成できなくなりました。 以前は、同じ製品をストアフロントの買い物かごに追加するリクエストを並行して行うと、同じ SKU に対して複数の行項目が発生していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/66dea0de>
+* _ACP2E-3296_：姓名に入力されたメールに対して、チェックアウト注文のメール確認が送信されます
+   * _メモの修正_：チェックアウト注文のメール確認は、以前は名前（名）フィールドと名前（姓）フィールドにメールのようなパターンを入力して送信されていましたが、送信されなくなりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/5184c067>
+* _ACP2E-3402_：チェックアウトの配送先住所フォームが間違った住所で更新される
+   * _修正点_:shippingAddressFromData は、web サイトごとのローカルストレージに保存されるようになりました。 以前は、URL にストアコードが使用され、同じゲストセッション中に複数の web サイトからチェックアウトが開始された場合、チェックアウト中に間違った web サイトの住所が発送先住所フォームに自動入力される可能性がありました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/078c387e>
+* _ACP2E-3407_：ギフトカード製品 |買い物かごへの結合でギフト カードを結合しています
+   * _修正点_：ギフトカード製品がカートに正しく結合されるようになりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/88660e79>
+* _ACP2E-3415_：カートの永続性がログアウト時に考慮されない
+   * _メモの修正_：カスタマーログインから認証ポップアップおよびチェックアウトログインに記憶する機能が追加されました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/344fce23>
+* _ACP2E-3488_:既存の見積もりデータは更新されない/表示されないため、代わりに trigger_recollect = 1 の場合に新しい見積もりレコードを作成します
+   * _修正注意_: 買い物かごに追加された製品が削除されても、顧客の買い物かごアイテムが消えなくなりました。
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/1984c61c>
+* _ACP2E-3618_: [クラウド] ボタン機能の並べ替え
+   * _修正ノート_:管理領域から注文を再注文すると、在庫のある製品が見積もり均等に追加されるようになりましたが、元の注文には在庫がなくなった製品もあります。 修正の前は、在庫のない製品が元の注文にある場合、新しい見積もりに製品が追加されていませんでした。
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/a52ff98f>
+* _ACP2E-3622_：郵便番号で検索ストアが機能しない
+   * _修正メモ_：オランダのローカライズ版では、郵便番号による集荷場所の検索が正しく機能しませんでした。 修正後、集荷場所の検索で、郵便番号に基づいて結果が提供されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/344fce23>
+
+### カートとチェックアウト、チェックアウト/1 ページチェックアウト
+
+* _AC-9386_: [ランダムバグ] 電子メールフィールドがレンダリングされない、またはチェックアウト、配送、または支払いページに表示されるのに時間がかかる
+   * _メモの修正_:Commerceでは、チェックアウトの出荷ページと支払いページの「**[!UICONTROL Email]**」フィールドが期待どおりにレンダリングされるようになりました。 以前は、このフィールドは存在しないか、レンダリングに時間がかかっていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/e1babcfd>
+
+### 買い物かごと、チェックアウト、注文
+
+* _ACP2E-3097_：管理者から注文する際に、日付フィールドを含む複数のカスタマイズ可能オプションが機能しない製品の日付選択
+   * _メモの修正_：管理注文作成プロセスで、カスタマイズ可能な複数の日付オプションを含む製品を設定する際に、すべての日付フィールドの日付選択が正しく表示されるようになりました。 以前は、日付選択は、最初の日付フィールドにのみ表示され、残りのフィールドには日付選択が表示されませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b21e5d91>
+
+### カートとチェックアウト、送料
+
+* _AC-12119_：設定可能な製品の即時購入の「最も安い送料」が壊れる
+   * _注意を修正_：インスタント購入機能で、最も安価な定額料金の方法ではなく、設定可能な製品に対して、より高価な店舗での配信オプションが誤って選択されました。 この修正により、実際の価格に基づいて正しい発送方法が選択されます。」
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38811>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38819>、<https://github.com/magento/magento2/commit/29fe9097>
+
+### カタログ
+
+* _AC-10910_: cron_schedule データベーステーブルのクリーンアップで、既存のジョブ以外のジョブがクリーンアップされない
+   * _修正点_: システムは cron_schedule データベーステーブルを自動的にクリーンアップし、システムに存在しないジョブのエントリを削除するようになりました。 これにより、テーブルの行の数を最小限に抑えることで、最適なパフォーマンスが確保されます。 以前は、非アクティブまたは削除されたモジュールのジョブのエントリがクリーンアップされなかったので、cron_schedule テーブルに不要なデータが蓄積されていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38217>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38693>
+* _AC-10953_：設定可能な製品から階層価格が削除されない
+   * _修正点_：シンプルな製品から設定可能な製品に変換する際に、製品の階層価格をシステムが正しく削除するようになり、フロントエンドでの正確な価格表示を確保しました。 以前は、シンプルな製品から構成可能な製品に製品が変換された際に、構成可能な製品の階層価格が削除されていなかったので、表示される価格に不一致がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38390>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38427>
+* _AC-11804_：カテゴリ説明デフォルト以外の storereview では、WYSIWYGが空です
+   * _メモの修正_：ストアビューレベルでカテゴリを編集する際に、WYSIWYG エディターにカテゴリの説明が正しく保存され、表示されるようになりました。 以前は、カテゴリの説明をストア表示レベルで保存すると、WYSIWYG エディターは空で表示されていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38622>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38623>
+* _AC-11970_:1 つのチェックボックスが選択されたカスタムオプションで、設定可能な製品を並べ替えることができません
+   * _修正点_：システムは、単一の選択されたチェックボックスカスタムオプションを使用して、設定可能な製品の並べ替えを正しく処理し、バスケットの作成を成功させられるようになりました。 以前は、このような製品を並べ替えようとするとエラーが発生し、アイテムを買い物かごに追加できませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38736>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1d144bce>
+* _AC-12076_:[ 問題 ] 階層型ナビゲーションのフィルター項目の表現を修正
+   * _修正点_：システムは、階層化されたナビゲーションフィルター項目で、「項目」および「項目」という単語を正しく使用するようになりました。これにより、フィルターの説明の明確さと精度が向上します。 以前は、これらの単語が誤って使用されていたので、ユーザーがフィルターオプションを移動する際に混乱が生じる可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38789>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37852>
+* _AC-12164_：カスタムオプションの日時形式が機能しない
+   * _メモの修正_：システムは、設定された日付形式を「日付」タイプの製品カスタムオプションに正しく適用し、日付形式がフロントエンドに正しく表示されるようになりました。 以前は、日付形式の設定に対する変更は、日付タイプの製品カスタムオプションのフロントエンドには反映されませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/32990>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38925>
+* _AC-13068_：ドロップダウンオプションが見つからない
+   * _メモの修正_：値が 20 を超える新しい属性を作成する際に、ドロップダウンのすべての値が正しく表示されるようになりました。 以前は、最初の 20 個の値または選択した別のページ値のみが表示され、残りの値は欠落していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/47b448e2>
+* _AC-13296_:[ 問題 ] カテゴリのランタイムキャッシュに現在のストア ID を使用
+   * _メモの修正_：システムでは、カテゴリランタイムキャッシュに現在のストア ID を正しく使用するようになり、エミュレーションが使用される場合やカスタムコードがカテゴリを異なるストアに保存する場合に、データの上書きを防ぎます。 以前は、ランタイムに保存されたオブジェクトは間違ったストアから取得されていた可能性があり、データのオーバーライドが発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39310>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/36394>
+* _AC-13324_: bin/magento sampledata:deploy —no-update が例外をスロー
+   * _修正点_:sampledata:deploy コマンドで – no-update オプションを使用する場合、システムがブール値を正しく受け入れるようになり、サンプルデータのデプロイ中にエラーが発生しなくなりました。 以前は、システムが誤って整数値を期待していたので、このコマンドを使用する際にエラーがスローされていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39344>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/39345>
+* _AC-13355_:[ 問題 ]EAV キャッシュタイプの使用を修正
+   * _修正点_：システムは、関連するすべての場所で EAV キャッシュタイプを正しく使用するようになり、一貫性のある効率的なデータキャッシュを確保します。 以前は、EAV キャッシュタイプは一貫して使用されていなかったので、データキャッシュの非効率性と不整合が発生する可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/32322>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/31264>
+* _AC-13596_：空のデータを使用したカタログの詳細検索は、検索結果ページに移動します [2.4.dev ブランチ ]
+   * _メモの修正_：システムでは、「詳細検索」ページのユーザーが正しく保持され、データを入力せずに検索を実行しようとするとエラーメッセージが表示されるようになりました。 以前は、空の検索を実行すると、ユーザーに検索を変更するように促すメッセージが表示されて、カタログの詳細検索ページにリダイレクトされていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/6cfb9b6b>
+* _AC-13622_:[ 問題 ]attribute_set に基づく製品レイアウト
+   * _修正点_：このシステムでは、属性セットに基づいて製品のレイアウトを調整できるようになり、フロントエンドストアでの製品表示をより実用的かつ効率的に管理する方法が提供されるようになりました。 以前は、レイアウトは SKU または製品タイプによってのみ調整できましたが、多くの製品や特定の記事では必ずしも実用的ではありませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38790>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/36244>
+* _AC-6738_: eav_attribute_option_value テーブルに一意のキーがありません
+   * _メモの修正_：システムでは、「eav_attribute_option_value」テーブルの「option_id」列と「store_id」列に一意のキーが含まれるようになりました。これにより、オプションが同じストアビューで複数の値を持つ可能性を防ぎます。 以前は、コードに不具合があると、同じストアビューに複数の値を持つオプションが発生し、製品や属性を編集する際に問題が発生する可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/24718>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/28796>
+* _AC-8297_: [ 問題 ] ハードコードされた値の代わりに、カテゴリ製品インデクサーの表示クラスを使用します
+   * _注意を修正_：システムは、ハードコードされた値の代わりに、カテゴリ製品インデクサーの表示クラスを使用するようになり、モジュール性を向上させました。 以前は、カテゴリ製品インデクサーでハードコードされた値が使用され、柔軟性と適応性に制限がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37200>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37199>
+* _AC-9375_：新製品ウィジェットで通貨コードが変更されない
+   * _メモの修正_：フロントエンドで通貨が変更された場合、システムは新製品ウィジェットの通貨コードを正しく更新し、サイト全体での通貨表示の一貫性を確保できるようになりました。 以前は、フロントエンドで通貨を変更しても、新製品ウィジェットに表示される通貨コードには影響しませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37898>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37899>
+* _ACP2E-2224_：設定可能な製品の PLP に通常の価格が表示されない
+   * _修正点_：特別価格を持つ子製品を持つ設定可能な製品の製品リストページに、通常価格が表示されるようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a4fbf702>
+* _ACP2E-2478_：ビジュアルマーチャンダイジンググリッドにストック情報が正しく表示されません
+   * _メモの修正_：選択したストアに従って、在庫が表示されるようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/inventory/commit/bdbf97ea>
+* _ACP2E-2621_：ウィジェットのコンテンツが cms ページで更新されない
+   * _メモの修正_：商品が新規および保存済みに設定されると、CMSページのウィジェットのコンテンツが更新され、更新された商品コレクションがページに表示されるようになりました。 以前は、キャッシュ内のウィジェットに使用されるキャッシュ ID が正しくないので、新しい製品を表示するようにページが更新されていませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/f89a447e>
+* _ACP2E-2630_：バンドル製品の詳細価格を節約する際の問題
+   * _修正メモ_：バンドル製品の節約パフォーマンスの向上。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b2286ecf>
+* _ACP2E-2652_: [ オンプレミス ] カタログ価格ルールを作成する際に、インデックス再作成プロセスが非効率的です
+   * _修正点_：カタログ価格ルールを保存しても、インデクサーは無効にならず、影響を受ける製品のみが再インデックス化されるようになりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/f89a447e>
+* _ACP2E-2679_:CSV 読み込みを使用して日時タイプの製品属性の時刻を更新します
+   * _メモの修正_：書き出されたデータに datetime 属性の時間が含まれるようになりました。 また、import を使用して、このような属性の時間を更新することもできます。 また、「Fields Enclosure」が有効になっている場合、「additional_attributes」列の属性値は二重引用符で囲まれます。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38306>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ea79f7dd>
+* _ACP2E-2689_：リクエストで web サイト ID が間違っている場合、適切なエラーメッセージが表示されない
+   * _メモの修正_：リクエストで web サイト ID が間違っている場合に表示される適切なエラーメッセージが追加されました。 以前は、リクエストで web サイト ID が間違っていた場合の検証はありませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/39d54c2d>
+* _ACP2E-2785_：画像に影響を与えない既存のスケジュール済み更新を削除すると、製品画像が失われます
+   * _修正メモ_：ステージング更新の削除中に製品画像が削除されない。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c8931218>
+* _ACP2E-2799_: [Cloud] 階層価格で使用した場合のバンドル製品価格が正しくない
+   * _修正点_：以前は、小数点以下 2 桁に切り上げた特定のパーセンテージ割引を計算すると、買い物かごと製品一覧ページ/製品の詳細ページで異なる最終価格が生成されていました。 この修正が適用されると、バンドル製品の最終価格は製品詳細ページ、製品一覧ページ、ミニ買い物かごページの価格と同じになります。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38091>
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/b2286ecf>
+* _ACP2E-2805_：カタログ・プロモーション・ルールが quantity_and_stock_status 属性で機能しない
+   * _注意を修正_：カタログプロモーションルールで quantity_and_stock_status 属性が考慮されるようになりました。これは、以前は管理者側から新しい製品を生成する際には考慮されていませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/35627>
+   * _GitHub コードの投稿_:<https://github.com/magento/inventory/commit/cf34971d>
+* _ACP2E-2837_:REST API を使用して価格を更新する際に、製品エンティティ updated_at 列の値が更新されない
+   * _メモの修正_：管理者の「最終更新日」列は、REST API で既存の製品を更新しながら、適切な日時に更新されます。 以前は、「最終更新日」列が正しく更新されていませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/39d54c2d>
+* _ACP2E-2840_：製品のインポートによって、一意でない値を設定できます
+   * _メモの修正_：製品のインポート時に、一意の製品属性に対して一意の値の制約が正しく適用され、そのような属性の値が重複しなくなりました。 以前は、製品のインポートによって一意の値を持つように設定された製品属性に一意でない値を設定することができました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38445>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7e0e5582>
+* _ACP2E-2843_: フロントエンドの製品は、シングルストアモードが有効な場合に、ストア固有のデータを使用します
+   * _メモの修正_：以前は、デフォルトのストア表示でシングルストアモードを有効にしても、変更内容は web サイトレベルの範囲に移行されませんでした。 この修正を適用した後、シングルストアモードを有効にすると、デフォルトのストアビュー固有のデータが web サイトレベル固有のデータと同期され、製品とカテゴリの競合の可能性が解決されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c8931218>
+* _ACP2E-2857_:rest API を使用してカテゴリに「デフォルトの並べ替え基準」を設定できない
+   * _メモを修正_:REST/SOAP API リクエストを通じて、カテゴリの default_sort_by を正しく更新します
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/57a32313>
+* _ACP2E-2871_: [Cloud] マーチャントは、ウィッシュリスト数に関する問題に直面しています
+   * _メモの修正_：あるストアでウィッシュリストに製品を追加しても、同じブラウザーで開いている他のストアのウィッシュリスト数が増加しなくなりました。 以前は、両方のストアが同じブラウザーに読み込まれた場合、ウィッシュリストのカウントは他のストアでも増加していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/3a7c4d17>
+* _ACP2E-2874_：バンドル製品を使用すると、フロントエンドのカテゴリページに空のスロットが表示される
+   * _メモの修正_：現在のストアコンテキストで販売できないバンドル製品は、インデックスが作成されなくなりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/inventory/commit/bc37ec76>
+* _ACP2E-2905_: マルチサイトアーキテクチャにおける [Cloud] の見積もりの問題
+   * _修正点_：以前は、通貨や顧客グループが異なる複数の web サイトを対象としたアーキテクチャでは、ストアに割引を正しく適用できませんでした。 この修正が実装されると、顧客グループ価格の割引が異なる複数の web サイトアーキテクチャが様々なストアに正常に適用されます。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38506>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a4fbf702>
+* _ACP2E-2909_: dynamic-rows.js:658 Uncaught TypeError: バンドル製品の編集中に dataRecord.slice がキャッチされました
+   * _メモを修正_：バンドル製品からオプションを削除する際に、ブラウザーコンソールで Javascript エラーが発生することはありません。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38505>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/93d50f8d>
+* _ACP2E-2950_: [Cloud] バンドル製品の注文確認の価格が間違っている
+   * _メモの修正_：基準通貨以外の通貨を使用した場合、ストアフロントでバンドルオプションの順序が正しく表示されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a4fbf702>
+* _ACP2E-2956_:YouTube ビデオのバグの追加
+   * _メモの修正_：製品画像とビデオはグローバル範囲で設定されます。 製品ビデオを別の範囲ではなく一方の範囲に含めることはできないので、Youtube API キー設定はグローバル範囲に設定されました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a4fbf702>
+* _ACP2E-2964_: store_id=0 の [Cloud] URL 更新のみ
+   * _メモの修正_:「URL パス」が正しいストア ID で保存されるようになりました。 以前は、ストア ID が正しくなかったので、カテゴリを移動する際にデータベースに間違った URL パスが残っていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/9af794a4>
+* _ACP2E-3009_: async.operations.all が実行され、エラーが作成されました。
+   * _メモの修正_:REST API 呼び出しで製品リンクデータが正しくないと、重大なエラーが発生しなくなりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a4fbf702>
+* _ACP2E-3029_:[Cloud] モバイルの問題 PDP 画像をつまむことができないだけです
+   * _メモを修正_:Chromeのモバイルビューで、製品詳細ページ画像のピンチズーム機能がサポートされるようになり、モバイルユーザーエクスペリエンスが向上しました。 以前は、Chromeのモバイルビューで画像をダブルタップしても、画像が期待どおりにズームインされませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/148c3ead>
+* _ACP2E-3058_：オプション名 0 の LayeredNavigation にラベルがありません
+   * _メモの修正_：この問題は、属性値 0 の空の値チェッカーをスキップすることで解決されました。 以前は、このフィルターは空と見なされ、問題の原因になっていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/3a7c4d17>
+* _ACP2E-3069_：顧客には、他の顧客グループからの価格が表示されます
+   * _修正メモ_：リクエストの X-Magento-Vary の古い値が原因で、顧客グループ関連の情報が間違ったセグメントに保存される問題を修正しました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d1f7dc95>
+* _ACP2E-3076_：バンドルオプションを削除中にエラーが発生する
+   * _メモの修正_：エラーをトリガーしたり、ページが応答しなくなったりすることなく、バンドルオプションが正しく削除されるようになりました。 以前は、バンドルオプションを削除しようとすると、「ページが応答しません」エラーが発生し、製品を保存できませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/6a185204>
+* _ACP2E-3100_: [Cloud] 画像ファイルがNew Relic エラーログに存在しません
+   * _修正点_：カスタムプレースホルダーイメージがローカルストレージに同期され、AWS S3 などのリモートストレージを使用する場合に正しくレンダリングされるようになりました。 以前は、リモートストレージを使用する際に、カスタムプレースホルダー画像のレンダリングに失敗し、画像表示とエラーログが壊れていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d1f7dc95>
+* _ACP2E-3103_：新製品キャッシュが原因で、RSS フィードが新製品で更新されない
+   * _メモの修正_：製品を新規および保存済みとして設定した場合、新製品用の Rss フィードが更新されるようになりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d01ee51e>
+* _ACP2E-3126_: [Cloud] Product Media Gallery GQL 応答が画像の位置で並べ替えられていません
+   * _修正点_：メディアギャラリー内の項目がGraphQL レスポンス内の位置で正しく並べ替えられ、正確な表示順が確保されるようになりました。 以前は、メディアギャラリー内の項目が位置で並べ替えられていなかったので、表示順序が正しくありませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37671>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b21e5d91>
+* _ACP2E-3136_: [Cloud] サブカテゴリ項目が管理バックエンドのウィジェット編集に表示されない
+   * _メモの修正_：新しいウィジェットページのカテゴリツリーに、レベル 5 以上のカテゴリを読み込む際の問題が解消されました。 以前は、ツリーをレベル 5 のカテゴリを超えて読み込むと、一部のカテゴリが欠落していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/148c3ead>
+* _ACP2E-3198_: [cloud] 実際のモバイルデバイスでの 2 本指のズームと移動の問題
+   * _メモを修正_：システムは、モバイルデバイスで一貫した画像ズーム機能を保証し、スムーズで予測可能なユーザーエクスペリエンスを提供するようになりました。 以前は、画像のズーム機能に一貫性がなく、モバイルデバイスで表示すると特定のポイント後に突然ズームアウトしていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1366ae5e>
+* _ACP2E-3282_：共有カタログから製品の割り当てを解除しても、ウィッシュリストの製品がクリアされない
+   * _メモの修正_：共有カタログで製品を使用できない場合、ウィッシュリストに項目が表示されなくなりました。 以前は、ウィッシュリストに実際に使用可能な項目がない場合でも、ウィッシュリストページに「1 項目」というカウントが誤って表示されていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/5184c067>
+* _ACP2E-3286_：関連製品すべての問題を選択/すべての問題を選択解除
+   * _注意を修正_：以前は、製品が手動で選択されている場合、関連製品の「すべてを選択」/「すべてを選択解除」ボタンが正しく機能しませんでした。 修正後は、手動で選択した場合でも、これらのボタンが一貫して機能するようになり、すべての製品が適切に選択または選択解除されるようになります。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/fd5cf3af>
+* _ACP2E-3336_: [Cloud] Stock アラートメールを間違った言語に翻訳
+   * _修正点_：異なる言語で複数のストアが表示されている web サイトの在庫/価格アラートを送信する場合、アラートが作成されたストア表示の言語がメールで使用されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a4cf5e62>、<https://github.com/magento/inventory/commit/9f3e63d1>
+* _ACP2E-3350_：無効なカテゴリの名前は、カテゴリツリーでグレー表示されなくなりました
+   * _メモの修正_：以前は、無効なカテゴリは、カテゴリツリーでグレー表示されていませんでした。 現在は、グレーの効果で表示されています。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d75cff27>
+* _ACP2E-3410_：設定可能な製品編集フォームの読み込みが原因で、タイムアウトとメモリ不足が発生する
+   * _修正ノート_: 修正前は、すべての可能な属性オプションの組み合わせに基づいて、設定可能な製品バリエーションが構築されていました。 属性に多くのオプションがある場合、これにより、時間とリソースを消費する操作が発生しました。 現在は、設定可能な製品バリエーションは、既存の子製品属性に基づいて構築されています。 これにより、計算がはるかに少なくなり、リソースの使用率が向上します。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/078c387e>
+* _ACP2E-3454_：スウォッチを使用する際に、Fotorama がビデオを正しく読み込まず、URL でオプションが事前に選択されている
+   * _メモの修正_：選択したオプションが URL に含まれている場合、製品ビデオが設定可能な製品詳細ページで正しくレンダリングされるようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/078c387e>
+* _ACP2E-3461_:PageBuilder カルーセルウィジェットに、条件に一致しない製品が表示される
+   * _修正点_：ウィジェットで使用される製品リストがカテゴリ条件に従うようになりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/078c387e>
+* _ACP2E-3469_：グループ内のすべての製品で、無効な数量がある場合に検証エラーがトリガーされる
+   * _修正点_：以前は発生していなかった、1 つの製品の数量が無効な場合、グループ内のすべての製品に対して検証エラーが正しくトリガーされるようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/56463d5e>
+* _ACP2E-3513_: [CLOUD] 設定可能な製品に特別価格が表示されない
+   * _修正注_：修正後、特別価格属性の「製品リストで使用中」の値を変更しても、設定可能な製品の特別価格の表示には影響しません。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d4de4726>
+* _ACP2E-3516_: インデクサー処理が終了しても、一時テーブルはクリーンアップされません
+   * _修正ノート_:CatalogRule インデクサーの一時テーブルは、インデクサープロセスが終了した場合にクリーンアップされるようになりました
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/1984c61c>
+* _ACP2E-3520_: [QUANS] 2.4.7-p3 でのコア ユニットテスト障害
+   * _修正ノート_:このテストのリリースノートはユニットテストの改善なので不要です。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1984c61c>
+* _ACP2E-3533_：複数のソースを持つグループ化製品の在庫量検索のパフォーマンスの問題
+   * _修正点_：割り当てられた製品に多数の在庫ソースがある場合、グループ化された製品およびバンドル製品の編集ページが最適化されるようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/inventory/commit/0208e433>
+* _ACP2E-3641_:https://jira.corp.adobe.com/browse/ACP2E-3389を修正します
+   * _修正ノート_:多数のアンカーカテゴリの場合の管理カテゴリページのパフォーマンスが向上しました。
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/982b1c42>
+
+### カタログ、コンテンツ
+
+* _ACP2E-3063_: [クラウド] キャッシュが無効になりません。
+   * _修正ノート_:以前は、CMSページを更新されたデザインレイアウトで保存すると、フロントエンドに適切に反映されませんでした。 この修正が適用された後、デザインレイアウトを変更してCMSページを保存すると、適切なデザインレイアウトがフロントエンドに表示されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/66dea0de>
+* _ACP2E-3131_: コンテンツウィジェットで [ クラウド ] アンカー/アンカー以外のカテゴリが反転されました
+   * _注意を修正_：以前は、「表示オン」 > 「アンカーカテゴリ」を選択すると、アンカーとアンカー以外の間の親子関係を反映していないすべてのカテゴリが表示されていました。 この修正を適用すると、[ 表示オン ] > [ アンカーカテゴリ ] にはアンカーカテゴリ（選択可能）のみが表示され、[ 表示オン ] > [ アンカーなしカテゴリ ] にはアンカーなしカテゴリ（選択可能）が表示されます
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7377de59>
+* _ACP2E-3152_：ウィジェットで機能しないカテゴリ
+   * _修正点_：以前は、アンカー/非アンカーの異なるカテゴリ用にCMS ブロックを保存した場合、フロントエンドに表示されたときに、子カテゴリに対して機能しませんでした。 この修正が適用されると、ブロックが様々なカテゴリのフロントエンドに表示されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d01ee51e>
+
+### カタログ、フレームワーク
+
+* _AC-9111_：注文 get （出荷|Creditmemos|請求書）収集 – 収集を読み込まないでください
+   * _注意の修正_：出荷およびクレジット・メモの収集が受注から取得される際にあらかじめロードされないため、これらの収集にフィルタまたは受注を追加で適用できるようになりました。 以前は、これらのコレクションは自動的に読み込まれたので、それ以上変更できませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37561>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37562>
+* _ACP2E-2949_: [Cloud] フォローアップ：データが変更されたかどうかを確認する際のデータ比較の不一致
+   * _メモを修正_：以前は、データが変更されずに（int/float/double などの数値データフィールドに対して） save オブジェクトが毎回呼び出されていました。 フラグ _hasDataChanges を true にトリガーし、save 関数を呼び出します。 また、string でカプセル化された浮動小数点数はチェックしません。 この修正が適用されると、データが変更された場合にのみ save 関数が呼び出されます。 int/float/double-check のデータ値を、関数に渡す値と一緒に指定し、厳密な型照合を行います。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c8931218>
+
+### カタログ、GraphQL
+
+* _ACP2E-3090_:GraphQLでのカテゴリフィルターの処理：includeDirectChildrenOnly および category_uid
+   * _メモを修正_:category_uid でフィルタリングしている場合、直接の子カテゴリのみが取得されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/93d50f8d>
+* _ACP2E-3166_: [Cloud] Graphql 製品の並べ替えが機能しない
+   * _修正メモ_：変数にフィールドが渡された場合に、複数のフィールドで並べ替えられる GraphQl 製品が期待どおりに動作するようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/8459b17d>
+* _ACP2E-3312_：階層価格がGraphQL製品で誤った値を返す（ストアフロントと比較）
+   * _修正メモ_：修正後、Graphql リクエストに対して返される製品の階層価格には、1 項目あたりの価格があります。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1366ae5e>
+
+### カタログ、価格、ステージング、プレビュー
+
+* _ACP2E-2672_: [Cloud] 特別価格 API エンドポイントが、多数の製品を同時に更新するとエラーを返す
+   * _修正メモ_：特別価格の一括更新 API を使用すると、製品と日付範囲ごとに複数のスケジュールされた更新ではなく、日付範囲ごとに 1 つのキャンペーンを作成するようになりました。 また、多数の SKU の処理を高速化するための同時 API リクエストもサポートされます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/f89a447e>
+
+### カタログ、製品
+
+* _AC-7050_：製品を編集のカテゴリ選択ツリーが、カタログ – > カテゴリで設定された順序と同じではありません
+   * _メモの修正_：製品の編集セクションのカテゴリ選択ツリーが、カタログ/カテゴリで設定した順序で正しく表示されるようになり、大きなカタログでの製品の管理が容易になりました。 以前は、「カタログ」 > 「カテゴリ」で設定された表示順序に関係なく、製品編集セクションのカテゴリツリーがカテゴリ作成順に表示されていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/36101>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/36104>
+
+### カタログ、SEO
+
+* _ACP2E-3653_：ページ > 1 の場合の、カテゴリの正規 URL が正しくありません
+   * _メモの修正_：以前は、複数ページコンテンツの正規 URL は正しく機能せず、ベース URL が一貫して表示されていました。 ただし、修正が実装された後、複数ページコンテンツの正規 URL にページ ID の URL が正しく表示されるようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/982b1c42>
+
+### カタログ、検索
+
+* _ACP2E-2757_：カテゴリおよび検索に製品が表示されないが、ダイレクトリンクが機能している
+   * _修正点_：以前は、price_* attrbute_code を含む Yes/No カスタム属性はインデックス作成で機能しませんでした。 この修正後、Yes/No カスタム属性は期待どおりに動作します。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ba25af8a>
+* _ACP2E-3053_：特定のカテゴリページでの [Cloud] Elastic search error
+   * _メモの修正_：以前に、設定チケットが記載されていましたが、複数の製品の価格を 0 にすると、フロントエンドカテゴリページで例外がスローされます。 この修正が適用された後、複数の製品価格 0 とフロントエンドでカテゴリページを読み込むと、例外がスローされず、カテゴリページが正常に読み込まれます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c8931218>
+* _ACP2E-3345_: オブジェクトの作成中にタイプ エラーが発生しました：Magento\CatalogSearch\Model\Indexer\Fulltext\Interceptor例外
+   * _修正点_：修正後、$data を指定せずにMagento\CatalogSearch\Model\Indexer\Fulltext クラスのインスタンスを作成できます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1366ae5e>
+* _ACP2E-3521_:Magento Admin で保存した後、フロントエンドに製品の [CLOUD] 問題が表示されない
+   * _メモの修正_：修正後は、長い名前の子製品を持つ設定可能な製品は、ストアフロントで見逃されません。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1984c61c>
+
+### Cloud
+
+* _ACP2E-3010_: [Cloud] PHPSESSID が各 POST リクエストを変更しています
+   * _修正点_:L2 Redis キャッシュが有効になっており、お客様がバックエンドから更新されている場合、ログインしたお客様のフロントエンドエリアの POST リクエストで PHPSESSID が再生成されなくなりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/6a185204>
+* _ACP2E-3532_: サイトマップ生成の警告
+   * _修正メモ_：修正後、サイトマップはシステムの tmp ディレクトリに生成され、最終的な宛先にコピーされます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d4de4726>
+
+### コンテンツ
+
+* _AC-10539_:[ 問題 ] 最近表示された項目ウィジェットの価格表示の問題
+   * _修正点_：システムは、「最近閲覧した製品」ウィジェットに在庫切れのシンプルな製品の価格を正しく表示し、すべてのウィジェットと製品リストページでの一貫性を確保するようになりました。 以前は、価格読み込みテンプレートの条件により、在庫切れのシンプルな製品の価格が「最近閲覧された製品」ウィジェットに表示されていませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38167>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38159>
+* _AC-10596_:[ 問題 ] acl.xsd ファイルの誤字と文法を修正します
+   * _修正点_：システムが acl.xsd ファイルの誤字および文法エラーを修正し、ドキュメントの明確さと精度が向上しました。 以前は、acl.xsd ファイルに誤字と誤った文法が含まれていたため、混乱が生じる可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38061>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38046>
+* _AC-10845_:Pagebuilder バナー画像がギャラリーに表示されない
+   * _メモの修正_:Pagebuilder ギャラリーの新しく作成されたフォルダーにアップロードされたバナー画像が正しく表示されるようになり、以前のコンソールエラーが解消されました。 この修正を行う前は、新しいフォルダーにバナー画像がアップロードされた場合にギャラリーに表示されず、コンソールエラーの原因となりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c8f87c25>
+* _AC-12283_:2.4.5-p8 への更新後、「市外局番が設定されていません」
+   * _修正点_:Magento_CSP モジュールが有効で、「dev/js/translate_strategy」が「embedded」に設定されている場合、「Area code not set」エラーをトリガーすることなく、静的コンテンツのデプロイメントプロセスが正常に完了するようになりました。 以前は、これらの条件の下では、静的コンテンツのデプロイメントプロセスが失敗し、「市外局番が設定されていません」というエラーが表示されていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38845>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38922>
+* _AC-12692_：ウィジェットカテゴリツリーが正しくレンダリングされない
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39008>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/58e40ceb>
+* _AC-13054_：デザイン設定ページでテーマを変更すると、「デフォルト値を使用しています」というメッセージが表示されない
+   * _メモの修正_：デザイン設定ページで選択したテーマに応じて、「デフォルト値を使用」メッセージを表示する別の列がシステムに含まれるようになりました。 これにより、デフォルト値のステータスが明確に表示され表示されます。 以前は、「デフォルト値を使用」というメッセージが表示されなかったので、選択したテーマのステータスに混乱が生じていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/47b448e2>
+* _AC-13569_:[ 問題 ]TinyMCE プラグインとの下位互換性を（その後も）復元します。
+   * _修正点_：システムは TinyMCE プラグインとの下位互換性を回復し、別の場所からウィジェットを使用するときにプラグイン内で定義された関数を呼び出すことができるようになりました。 以前は、TinyMCE バージョンの変更により、プラグインがウィジェットをオブジェクトとして返さなくなり、ウィジェットインスタンスで特定の関数を呼び出そうとした場合にエラーが発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39262>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/39258>
+* _AC-9638_：製品ページのWYSIWYG エディターで [ 問題 ] ファイルのアップロードが発生する
+   * _修正点_：フォルダーツリーが正しく表示され、最初に「画像とビデオ」タブを展開した後でも、商品ページのWYSIWYG エディターで画像のアップロードが可能になりました。 以前は、「画像とビデオ」タブを展開すると、最初にフォルダーツリーが表示されず、WYSIWYG エディターで画像をアップロードしようとするとエラーメッセージが表示されていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38026>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38025>
+* _ACP2E-2392_:[ オンプレミス ] のダイナミックブロックの問題
+   * _メモの修正_：動的ブロック内でウィジェットが正しくレンダリングされるようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a12063bd>
+* _ACP2E-2693_: ニュースレターテンプレートの問題が原因で [ クラウド ] フロントエンドが読み込まれない
+   * _修正点_:CMSページのコンテンツセクションからブロックを追加しても、例外が発生しなくなりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ea79f7dd>
+* _ACP2E-2836_: ACP2E-2836: [Cloud] ログに調査例外が見つかりました：InvalidArgumentException: vendor/magento/module-rule/Model/ConditionFactory.phpにクラスが存在しません
+   * _修正点_:PageBuilder 製品のコンテンツ設定で条件を削除しても、ログファイルに例外が記録されなくなりました。 以前は、PageBuilder 製品のコンテンツ設定で条件を削除すると、フロントエンドで問題が発生しなかったにもかかわらず、重要な例外がログに記録されていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2-page-builder/commit/36c0f5df>
+* _ACP2E-2842_: シングル ストア モードに切り替えました – グローバル コンテンツが表示されなくなりました
+   * _修正メモ_：シングルストアモードを有効にすると、ストア表示デザイン設定が web サイトデザイン設定と同期され、フロントエンドでコンテンツの更新が表示されるようになりました。 以前は、シングルストアモードに切り替えると、コンテンツの更新がストアフロントに反映されなくなりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7e0e5582>
+* _ACP2E-2903_：リンクやその他のユーザビリティの問題を追加しようとすると、ページビルダーが画像に置き換わります。
+   * _メモを修正_：これで、画像をクリックすると、ページビルダーテキスト要素の wysiwyg エディター内のリンクが、画像のリンク設定ダイアログに適切なデータを読み込むようになります。 また、エディターで画像へのリンクを追加しても、正しく機能するようになりました。 以前は、画像はリンクに置き換えられました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2-page-builder/commit/4d5db10a>
+* _ACP2E-2970_:0 バイトの画像がディレクトリに配置されている場合、古いメディアギャラリーで画像のレンダリングに失敗します
+   * _修正点_：機能を中断することなく、メディアギャラリーで 0 バイトの画像を処理できるようになりました。これにより、ディレクトリ内の他の画像を表示し、期待どおりに選択できます。 以前は、メディアギャラリーに 0 バイトの画像が存在すると、ディレクトリ内のすべての画像が表示または選択できなくなっていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/35b1b1da>
+* _ACP2E-3064_:CMS ブロックの編集中にページビルダーでエラーが発生する
+   * _メモの修正_：システムは、「ページビルダーがロックを解除せずに 5 秒間レンダリングしていた」というエラーをスローせずに、ページビルダーを使用して管理領域で行われた変更を正しく保存するようになりました。 ブラウザーコンソールで、次の操作を行います。 以前は、このエラーは、変更を保存しようとして、コンテンツを正常に更新しようとすると発生していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/35b1b1da>、<https://github.com/magento/magento2-page-builder/commit/4d5db10a>
+* _ACP2E-3092_: [CLOUD] 買い物かごセクションに、チェックアウトまたは買い物かごを編集するボタンがありません
+   * _メモの修正_：バンドル製品がエラーなしでウィジェットを介して買い物かごに追加されるようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b21e5d91>、<https://github.com/magento/magento2-page-builder/commit/4ebe3f1d>
+* _ACP2E-3122_: [CLOUD] 画像をアップロード ボタンが機能しない
+   * _注意を修正_：以前は、PageBuilder のバナーとスライダーの「画像をアップロード」ボタンが期待どおりに動作しませんでしたが、現在は、キーを押すとローカルファイルマネージャーが開き、アップロードする画像を選択できます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2-page-builder/commit/476ef8ea>
+* _ACP2E-3127_: imagecreatetruecolor （）：引数#2 （$height）は 0 より大きくなければなりません。 特定の画像をアップロードできない
+   * _メモの修正_：メディアギャラリーを使用して高さが 0 の画像をアップロードする際に、管理者でエラーが発生する問題を解決し、同期コマンドを使用してアセットの同期に成功しました。 以前は、メディアギャラリーを介して画像をアップロードできず、特定の画像がギャラリーにある場合にも同期コマンドが失敗します。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/6f4805f8>
+* _ACP2E-3154_:Google Maps API と競合する Prototype.js Array.from
+   * _メモの修正_:Google マップが PageBuilder エディターで正しくレンダリングされるようになりました。 以前は、JavaScript エラーにより、Google マップが正しくレンダリングされませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/148c3ead>
+* _ACP2E-3275_: [Cloud] – 最新の変更がCMS Slider に反映されない
+   * _修正点_：この問題は、スライドの編集画面で保存イベントがトリガーされている間にスライダーリストが確実に更新されることで修正されました。 以前は、トリガーとなって問題が発生していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2-page-builder/commit/ae2cdeb0>
+* _ACP2E-3326_：ページビルダーを使用してCMS ブロックを特定の順序で挿入すると、CSM ページでエラーが発生します
+   * _注意を修正_：以前は PHP と OS （Linux）の一部のバージョンでは、PageBuilder を介して他の cms ブロックを参照するブロックのレンダリングは、「不明なエラーが発生しました。 もう一度やり直してください。」というエラーメッセージが表示されます。 これで、cms ブロックのコンテンツが、PageBuilder が制御するコンテンツ内で正しくレンダリングされるようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2-page-builder/commit/ae2cdeb0>
+* _ACP2E-3428_：大きなコンテンツに対する Pagebuilder のテンプレートプレビューエラー
+   * _メモの修正_：大きなコンテンツを原因として、キャンバス要素がブラウザーの制限をオーバーフローし、誤った値が返されて、バックエンドコードが破損していました（画像を適切にデコードできません）。 キャンバスサイズをユニバーサルブラウザーの上限に制限する修正。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2-page-builder/commit/adfb1747>
+* _ACP2E-3430_：フォントサイズが欠落している TinyMCE 7 を使用した最新のセキュリティ更新
+   * _修正点_：フォントサイズおよびフォントファミリセレクターがWYSIWYG Editor で使用できるようになりました。 この修正を行う前は、TinyMCE 7 ではエディターインターフェイスで使用できませんでした。
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/d50f6b5d>、 <https://github.com/magento/magento2-page-builder/commit/2c2f7a0e>
+* _ACP2E-3483_:PX ではなく PT の管理で TinyMCE 7 編集者フォントサイズを明確にしてください
+   * _修正ノート_:修正前は、WYSIWYG領域でフォントサイズをピクセル単位で指定できませんでした。 これで、フォントサイズをptではなくpxで設定できます。
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/3f12d152>、 <https://github.com/magento/magento2-page-builder/commit/20aa5d7a>
+* _ACP2E-3490_:ページ Builder で書式 ＜例外＞Photoshop のみ「テキスト」商品コンテンツが正しく表示されない場合があります
+   * _修正ノート_:修正前は、ウィジェットに製品がない場合、プレビュー htmlが正しく生成されませんでした。 これで、空の応答が適切に生成され、製品ウィジェットがプレビューで正常に表示されます。
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/3f12d152>、 <https://github.com/magento/magento2-page-builder/commit/20aa5d7a>
+* _ACP2E-3534_: [ページビルダー]製品リストを追加してエラーになる
+   * _修正ノート_:ページビルダーでブロックするバンドル商品リストを追加してもエラーが発生しないようになりました
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/344fce23>
+
+### 顧客/顧客
+
+* _AC-12162_:フロントエンド - 顧客作成ページで出生検証日付が失敗する
+   * _修正ノート_:システム依存関係を最新のマイナーバージョンにアップグレードした後moment.jsすべての検証が機能することを確認します
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-8499_：国のドロップダウンが変更された場合、地域テキストフィールドがリセットされない
+   * _メモの修正_：ドロップダウンメニューで国が変更されると、システムによって地域テキストフィールドがリセットされ、以前の値が保持されなくなりました。 以前は、ドロップダウンリストから国を変更しても地域フィールドがリセットされず、最後に保存された値が保持されていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/3ea26621>
+* _AC-9240_：顧客を削除しても、ログインして削除された顧客のストアフロント上のブラウザーセッションデータがすべて消去されない
+   * _メモの修正_：顧客を削除すると、ログインして削除された顧客のすべてのブラウザーセッションデータが期待どおりにストアフロントからクリーンアップされるようになりました。 買い物客は買い物を続けることができ、ブラウザーはそのセッションをゲストセッションとして扱います。 以前は、ログインした買い物客のカスタマーアカウントが管理者から削除されると、買い物客のブラウザーがJavaScript エラーをスローしていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7d5e3906>
+
+### フレームワーク
+
+* _AC-10037_:[Question]Unused Type 設定（`app/code/Magento/Translation/etc/di.xml` 内）
+   * _メモを修正_：システムは、設定内の未使用の依存関係を削除し、コード全体のクリーン性と効率を向上させました。 以前は、設定内に未使用の依存関係があり、機能に寄与していませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38030>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38064>
+* _AC-10654_:V1/customers/password エンドポイントの質問/問題
+   * _修正注_: API を介してパスワード変更要求を処理するときに、システムが管理 GUI 内で設定された制約に準拠するようになり、パスワードリセット機能の悪用の可能性が回避されました。 以前は、API は、管理 GUI で定義されたルールの外でパスワード変更リクエストを処理することができました。これにより、有効なメールがわかっている場合は、常にリセットメールのストリームが可能になる可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38238>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0c53bbf7>
+* _AC-10738_:Varnish 設定によって、すべてのマーケティングパラメーターが除外されるわけではありません
+   * _メモの修正_：システムは、ワニス設定のすべての一般的なマーケティングパラメーターを正しく除外し、正確なトラッキングと分析を確保できるようになりました。 以前は、gad_source、srsltid、msclkid などの特定のマーケティングパラメーターが除外されていなかったので、データ収集が不正確になる可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38298>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/39188>
+* _AC-10838_：カタログ検索インデックスプロセスのエラーインデックスプロセス
+   * _修正点_: システムは、PHP でコンパイルされた libxml のバージョンに関係なく、エラーが発生することなく再インデックスコマンドを正常に完了するようになりました。 以前は、PHP が特定のバージョンの libxml を使用してコンパイルされた場合、re-index コマンドを実行すると、「Catalog Search index process error during indexation process」エラーが発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38254>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38553>、<https://github.com/magento/magento2/commit/0574ac23>
+* _AC-10941_：顧客注文クエリに created_at フィルター、status フィルター、grand_total フィルターが追加され、複数のフィルターが修正されて失敗しました
+   * _メモの修正_：システムでは、顧客注文クエリで created_at、status、grand_total フィルターの使用をサポートするようになり、複数のフィルターが正しく適用されない問題を解決しました。 以前は、システムはこれらのフィルターをサポートしていなかったので、1 つのクエリで複数が使用された場合、すべてのフィルターを適用できませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38392>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/36949>
+* _AC-10991_：関連/アップセル/クロスセルブロックや価格インデックス作成からのクエリがランダムに氾濫する
+   * _メモの修正_：システムは、関連ブロック、アップセルおよびクロスセルブロックからのクエリを最適化し、パフォーマンスを向上させ、過剰なクエリに起因するサイトのダウンを防ぐようになりました。 以前は、これらのブロックからのクエリでシステムが過負荷になり、重大な遅延が発生し、サイトが停止する可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/36667>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38050>
+* _AC-11423_：例外：警告：ICU 74.1 へのアップグレード以降、配列オフセットにアクセスしようとしています… -> Calendar.php （PHP Intl）
+   * _メモの修正_：買い物客またはマーチャントがストアフロントまたは管理者：`main.CRITICAL: Exception: Warning: Trying to access array offset on value of type null in /vendor/magento/framework/View/Element/Html/Calendar.php on line 114 in /vendor/magento/framework/App/ErrorHandler.php:62` にアクセスするたびに、Commerceで exception.log に次の例外がログに記録されなくなりました。 [GitHub-38214](https://github.com/magento/magento2/issues/38214)
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38214>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38364>
+* _AC-11476_:[ 問題 ] フォームに `method` という名前の要素が含まれている場合の顧客データの問題を修正
+   * _メモの修正_：システムは、「method」という名前の要素がフォームに存在する場合でも、フォーム送信で「method」属性を正しく識別するようになりました。 これにより、顧客データの正確な処理が保証されます。 以前は、フォーム要素の名前が「method」の場合、フォーム送信で「method」属性を識別する際に干渉し、顧客データ処理で問題が発生する可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38484>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38449>
+* _AC-11489_:[ 問題 ]\Magento\Framework\Data\Collection::getItemById の PHPDocs を修正
+   * _修正メモ_:\Magento\Framework\Data\Collection::getItemById メソッドの PHPDocs が更新されて、null が戻り値の型として含まれるようになりました。静的分析ツールの問題に対処します。 以前は、メソッドの PHPDocs で戻り値の型として null が指定されていなかったので、条件文でメソッドを使用すると静的分析で警告やエラーが発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38485>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38439>
+* _AC-11592_:[ 問題 ] セットアップ :di: コンパイル時に有効な環境設定のみを許可
+   * _修正点_：存在しないクラスまたは明確に除外されたクラスにプリファレンスが作成された場合、システムは setup:di:compile コマンド中にエラーをスローするようになりました。これによって、有効なプリファレンスのみが許可されます。 以前は、これらのシナリオはサイレントに失敗し、元のクラスに関連付けられたプラグインが役に立たない可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38517>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/33161>
+* _AC-11651_:Magentoが LoggerProxy の__wakeup メソッドで読み取り専用プロパティを変更しようとしています
+   * _修正メモ_：システムで、LoggerProxy の__wakeup メソッドで以前は読み取り専用だったプロパティを変更できるようになり、ユーザーに回避策を強制することなくスムーズに操作できるようになりました。 以前は、LoggerProxy の__wakeup メソッドで読み取り専用プロパティの値を再割り当てしようとすると、問題が発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38526>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c8f87c25>
+* _AC-11681_:[ 問題 ] AC-2039 AC-1667 アップグレード TinyMCE リファレンス
+   * _修正メモ_:composer.json の tinymce 最新バージョンを更新しました
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38533>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/36543>、<https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-11696_:ChangelogBatchWalker が複数のスレッドで動作しない
+   * _メモの修正_：システムは、MView インデックス化のプロセスフォークをサポートするようになり、複数のスレッドで動作する場合にインデクサーの実行中にエラーが発生するのを防ぎます。 以前は、複数のスレッドで ChangelogBatchWalker を実行すると、他のスレッドが使用しているテーブルが削除され、インデクサーの実行中にエラーが発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38246>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38248>
+* _AC-11781_:[ 問題 ] 誤った名前の変数を名前変更
+   * _メモの修正_：システムは、払い戻しできる金額を含む変数に正しく名前を付け、デバッグ中の混乱を防ぐようになりました。 以前は、この変数の名前が誤って totalRefund になっていたため、デベロッパー誤解を招くリードがありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38609>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/36205>
+* _AC-11809_:[ 問題 ]XML を使用してカスタム属性を現在のリンクに渡す
+   * _メモの修正_：システムでは、カスタム属性を XML 経由で現在のリンクに渡すことができるようになり、リンクが現在のページの場合でもこれらの属性が正しく表示されるようになります。 以前は、getAttributesHtml （） メソッドが現在のリンクに使用されていないので、現在のページリンクにカスタム属性が表示されていませんでした。
+   * _GitHub の問題_: <https://github.com/magento/magento2/issues/38500>
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/pull/30070>
+* _AC-11819_:一部の設定で 2.4.7 で組み込み FPC キャッシュが壊れる
+   * _修正ノート_: MAGE_RUN_CODE パラメーターが設定されている場合、システムはページを正しくキャッシュし、最適なパフォーマンスを確保するようになりました。 以前は、このような状況ではページがキャッシュされず、潜在的なパフォーマンスの問題が発生していました。
+   * _GitHub の問題_: <https://github.com/magento/magento2/issues/38626>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38646>、<https://github.com/magento/magento2/commit/0c53bbf7>
+* _AC-11829_:[ 問題 ] 開発者モードと実稼動モードの間で例外処理の不整合が発生する問題を修正しました
+   * _メモの修正_：システムは、開発者モードと実稼動モードの間で一貫して例外を処理し、例外がスローされたときにログインページへの予期しないリダイレクトを防ぐようになりました。 以前は、例外処理に不整合があると、例外メッセージが表示されるのではなく、実稼動モードでログインページにリダイレクトされる場合がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38639>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37712>
+* _AC-11852_: token_list.phtml の「PayPal アカウント」の翻訳を置き換えます
+   * _修正メモ_：システムは、保存済みの支払い方法ページで、トークン化可能なアカウントの支払い方法のセクションに「PayPal アカウント」ではなく「アカウント」とラベルを付けるようになり、その機能をより象徴的なものにしました。 以前は、このセクションは「PayPal アカウント」と特別にラベル付けされていました。これは、他のトークン化可能なアカウントの支払い方法が追加された場合に誤解を招いていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/35622>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37959>
+* _AC-11874_:Magento\Catalog\Model\ProductRepository クラスの下位互換性が失われました
+   * _修正メモ_:ProductRepository クラスは、Initialization Helper クラスを 2 番目のパラメーターとして復元することで、後方互換性を維持するようになり、このクラスから拡張するモジュールが期待どおりに機能するようになりました。 以前は、ProductRepository クラスのコンストラクターから Initialization Helper を削除すると、後方互換性が失われ、ユーザーは回避策を使用する必要がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38669>
+* _AC-11905_:[ 問題 ] 静的コンテンツのデプロイ – タイプエラー
+   * _修正点_：静的コンテンツのデプロイメント中に空の LESS ファイルをシステムが正しく処理し、「LESS ファイルが空です」というエラーメッセージが表示されるようになりました。 以前は、デプロイメント中に空の LESS ファイルが見つかった場合、誤ったタイプエラーがスローされていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38682>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38683>
+* _AC-12002_:[ 問題 ] [ 表示 ] リンクとスクリプトタグの余分なスペースを削除
+   * _メモの修正_：システムのリンクタグとスクリプトタグに余分なスペースがなくなり、よりクリーンで効率的なコードが提供されるようになりました。 以前は、link タグと script タグの属性の間に二重のスペースが見つかっていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/32920>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/32919>
+* _AC-12127_:[ 問題 ] 設定ミスの無限ループを回避
+   * _メモの修正_：システムは、仮想タイプ設定での自己参照マッピングを防ぐことで、無限ループを回避できるようになりました。 これにより、自己参照ノードを逆参照しようとするときに、アプリケーションが無限ループで動かなくなるのを防ぎます。 以前は、仮想タイプの設定が自己参照の場合、アプリケーションが無期限にスピンしていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38822>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38794>
+* _AC-12299_:Magento\Csp\Model\Mode\Data\ModeConfiguredにオブジェクトマネージャーが使用されていない
+   * _メモの修正_：システムは、ModeConfigured オブジェクトを作成する際にオブジェクトマネージャーを正しく使用し、このオブジェクトでプラグインを使用できるようになりました。 以前は、Object Manager は使用されていなかったので、プラグインが ModeConfigured オブジェクトに適用されませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38875>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38886>
+* _AC-12540_：製品在庫および価格アラートの不正確なドキュメントブロックコメント
+   * _修正メモ_：製品在庫および価格アラート内の deleteCustomer メソッドのドキュメントブロックコメントが修正され、メソッドが web サイトからの顧客ではなく、特定の顧客および web サイトに関連付けられたすべての在庫製品または価格アラートを削除することを正確に反映するようになりました。 以前は、コメントは、その方法がウェブサイトから顧客を削除するためのものであると不正確に述べていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38939>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/39001>
+* _AC-12594_:[ 問題 ] 生成されたデータに対して、一般設定ではなくコンパイル済み設定を使用してください
+   * _修正メモ_：システムでは、生成されたデータに対して、一般的な設定の代わりにコンパイル済みの設定を使用するようになりました。これにより、ネットワーク転送が削減され、特定のバージョンのコードに依存するデータのオーバーヘッドが軽減されます。 この変更により、コンテナの入れ替え中に共有インスタンスでキャッシュが上書きされることがなくなり、安定性が向上し、ダウンタイムが短縮されます。 以前は、特定のコアクラスは共有構成タイプを使用していたため、複数のサーバー間でコードバージョンが異なるため、キャッシュのオーバーライドやダウンタイムアプリケーションリード可能性がありました。
+   * _GitHub の問題_: <https://github.com/magento/magento2/issues/38785>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/29954>
+* _AC-12597_:[ 問題 ] e1ccdb で削除された extjs からファイルへの参照を削除…
+   * _メモの修正_：システムは、以前に削除された extjs からファイルへの参照を削除するようになり、ブラウザーのコンソールとシステムログファイルのエラーを排除します。 以前は、これらの参照が原因で、参照ファイルが存在しないためにエラーが発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38960>
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/pull/38951>
+* _AC-12778_: [問題] マイナークリーンアップ:sprintfの間違った使用法を修正しました。
+   * _修正ノート_: システムは、適切な数のプレースホルダーを指定して sprintf 関数を正しく使用するようになり、コードのクリーンさと一貫性が向上しました。 以前は、sprintf 関数を余分な引数と共に誤って使用していたため、大きな問題は発生しませんでしたが、正しい使用法ではありませんでした。
+   * _GitHub の問題_: <https://github.com/magento/magento2/issues/39062>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38628>
+* _AC-12857_:PHP 8.2.15 で FTP 拡張機能が削除されました
+   * _メモの修正_：システムでは、composer.json ファイルの依存関係として FTP 拡張機能を含むようになり、FTP 経由で CSV インポートを正常に設定できるようになりました。 以前は、FTP 経由で CSV の読み込みを設定しようとすると、PHP パッケージに FTP 拡張機能がないのでエラーがスローされていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39083>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/47b448e2>
+* _AC-12869_:[ 問題 ] Magento モジュールで参照されている誤ったクラスを修正しました。
+   * _修正メモ_：システムはモジュール内のクラスを正しく参照するようになり、よりスムーズな操作を確保し、既存のクラス以外のクラスによるクラッシュを防ぎます。 これには、インデクサー モジュールとクレジットメモ モジュールのバグ修正、および PrintAction クラスの HttpGetActionInterface の実装が含まれます。 以前は、誤ったクラス参照は、エラーやシステムクラッシュの可能性につながり、creditmemo PDF ファイルのファイル名や在庫のインデックス再作成などの特定の機能が期待どおりに動作しませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39126>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37784>
+* _AC-12964_:dev:di:info CLI コマンドの領域を定義する機能
+   * _修正点_：このシステムでは、開発者が dev:di:info CLI コマンドの領域を定義できるようになり、開発とデバッグプロセスが強化されました。 以前は、このコマンドでは GLOBAL 領域の情報しか表示できませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38758>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38759>
+* _AC-13149_:[ 問題 ] 画像要素テンプレートに isMultipleFiles プロパティを追加
+   * _修正メモ_：この修正により、「画像を参照して検索またはドラッグ」ボタンが、複数ファイルの画像フォーム要素に画像が追加された場合に表示されなくなるのを防ぎます。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39219>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/36325>
+* _AC-13279_:[ 問題 ] すべてのマーケティング get パラメーターを削除して、キャッシュを最小限に抑えてください
+   * _修正メモ_：システムは、キャッシュ使用率を最適化するために、すべてのマーケティング get パラメーターを削除するようになり、Varnish が使用されているときに使用されるロジックをミラーリングします。 以前は、これらのパラメーターを使用すると、キャッシュが肥大化してパフォーマンスが低下する可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39266>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/39099>
+* _AC-13345_:[ 問題 ] [PHPDOC] 不正な phpdoc Magento\Directory\Model\AllowedCountries::getAllowedCountries （）
+   * _修正メモ_: AllowedCountries::getAllowedCountries （） メソッドの PHPDoc が修正され、正確な情報が提供されるようになり、ドキュメントの明確性と有用性が向上しました。 以前は、このメソッドの PHPDoc に誤った情報が含まれていたため、メソッドの混乱や誤用が発生する可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39246>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/39241>
+* _AC-13348_: [ 問題 ] サポートされなくなった PHP バージョンのコードを削除します。
+   * _修正点_:Magentoでサポートされなくなった PHP バージョンのコードの削除
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39361>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/39202>
+* _AC-13417_:[ 問題 ] ImageMagick アダプターを php8 と互換性のあるものにする（float から int への暗黙的な変換）
+   * _修正点_: システムは、画像サイズを計算する際に float の数値を正しく処理し、float から int への暗黙的な変換によるエラーを防ぐことで、PHP8 との互換性を確保するようになりました。 以前は、画像の寸法を計算すると浮動小数になり、暗黙的に丸めるとエラーが発生する場合がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39402>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37362>
+* _AC-13537_:[ 問題 ] [PHPDOC] 不正な phpdoc Magento\Framework\App\Config\ScopeConfigInterfaceを修正
+   * _修正メモ_：この更新では、getValue および isSetFlag メソッドの$scopeCode 引数のタイプを正確に反映するように、Magento\Framework\App\Config\ScopeConfigInterfaceの PHPDoc アノテーションが修正されます。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39492>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/39199>
+* _AC-13725_:Magento\Framework\Filesystem\Driver\Httpは理由フレーズに依存 OK
+   * _修正点_:Magento\Framework\Filesystem\Driver\Http::isExists から「OK」フレーズのチェックを削除しました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39546>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/39558>
+* _AC-13810_：スケジュールで更新モードで、カスタマーグリッドインデクサーが正しく機能しない
+   * _修正メモ_：以前のカスタマーグリッドは即座に更新されましたが、修正後、カスタマーグリッドが cron の実行後に更新されましたが、即座には反映されませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1da9ba6f>
+* _AC-6754_:js ファイルの誤字エラー。
+   * _メモの修正_:JavaScript ファイルの「サブスクライバー」という用語が正しく使用され、関連する機能が適切に機能するようになりました。 以前は、JavaScript ファイルの入力ミスによって、「subsctibers」という用語が誤って使用されていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/36163>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/36171>
+* _AC-8353_: [ 問題 ] 禁止されている `@author` タグを削除します
+   * _修正点_：システムは、特定のモジュールから禁止されている `@author` タグを削除することで、コーディング標準に準拠するようになり、よりクリーンで標準化されたコードを保証します。 以前は、`@author` タグは一部のモジュールに含まれていましたが、これは確立されたコーディング標準に反していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37253>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37003>
+* _AC-8356_: [ 問題 ] `Magento_Customer` から禁止されている `@author` タグを削除する（パート 2）
+   * _修正点_：システムは、特定のモジュールから禁止されている `@author` タグを削除することで、コーディング標準に準拠するようになり、よりクリーンで標準化されたコードを保証します。 以前は、`@author` タグは一部のモジュールに含まれていましたが、これは確立されたコーディング標準に反していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37250>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37000>
+* _AC-8659_: editorconfig 構文のスペースが [{composer,auth}.json のルールを中断します ]
+   * _修正メモ_:editorconfig の構文エラーを修正した後、システムで 4 空白のインデントが composer ファイルと auth.json ファイルに正しく適用されるようになりました。 以前は、editorconfig 構文にスペースがあったため、これらのファイルが誤って 2 スペースのインデントでフォーマットされていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37394>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37395>
+* _AC-8662_: [ 問題 ] cron エラーログの改善
+   * _修正メモ_：システムは、cron プロセスの STDERR と STDOUT の両方を取得してログに記録するようになりました。これにより、cron プロセスが失敗した場合に役立つ診断情報が提供されます。 以前は、cron プロセス内のエラーメッセージは記録されず、別のプロセスで実行されている cron グループの STDERR と STDOUT が失われていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37453>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/32690>
+* _AC-8984_: [ 問題 ] 特定の setup cli コマンドの出力に、さらに色を追加します
+   * _修正点_：特定の設定コマンドラインインターフェイス（CLI）コマンドの出力に色が追加され、読みやすさとユーザーエクスペリエンスが向上しました。 以前は、これらのコマンドの出力は、色の区別がないため読みにくくなっていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/29335>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/29298>
+* _AC-9630_:Magentoをアップグレードすると、必要な州/地域を持つ新しい国が追加されると、一般/地域/state_requiredがリセットされます。
+   * _修正点_：システムでは、必要な状態を持つ新しい国が追加された場合にのみ、変更された国を「general/region/state_required」設定に追加するようになりました。これにより、地域が無効であると想定されるカスタムコードの中断を防ぐことができます。 以前は、必須の状態を持つ新しい国を追加すると、「general/region/state_required」設定が必須の状態を持つデフォルトの国にリセットされ、ショップが壊れる可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37796>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38076>
+* _AC-9712_: php と nodejs ライブラリ （grunt）のコンパイルが少なく、複雑な `calc` 式を持つ違い
+   * _修正点_：更新後の php と nodejs ライブラリの less コンパイルの違いを修正します。wikimedia/less.php:^5.x
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37841>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b34c0a75>
+* _ACP2E-2692_：部分インデックス作成の実行時に「Base table or view not found」エラーが発生する
+   * _修正点_：セカンダリ db 接続の場合、部分再インデックスが大きな変更ログで正しく機能するようになりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ba25af8a>
+* _ACP2E-2844_:MariaDB を 10.5.1 以降にアップグレードした後の問題
+   * _修正メモ_:Mysql のアップグレード後に DB の日時値が 000-00-00 00:00:00 に変換される問題を修正しました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a12063bd>
+* _ACP2E-2855_：データに変更があるかどうかを確認する際のデータ比較でのタイプの不一致
+   * _メモを修正_：以前は、データが変更されずに（int/float/double などの数値データフィールドに対して） save オブジェクトが毎回呼び出されていました。 フラグ _hasDataChanges を true にトリガーし、save 関数を呼び出します。 この修正が適用されると、データが変更された場合にのみ save 関数が呼び出されます。 int/float/double-check のデータ値は、関数に渡される値で、厳密な型照合を行います。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/57a32313>
+* _ACP2E-2959_: [Cloud] インポートは、ディレクトリ var では使用できません
+   * _メモを修正_：ファイル名に関係なく、製品を正常に読み込むことができます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/3a7c4d17>
+* _ACP2E-2966_: ipad mini では、メニューとヘッダーはモバイルとして読み込まれますが、代わりにデスクトップとして読み込む必要があります。
+   * _修正点_：幅 768 px のデバイスがデスクトップとして扱われるようになり、メニューとヘッダーが正しく読み込まれるようになります。 以前は、幅が 768 px のデバイスはモバイルとして扱われ、メニューとヘッダーがモバイル表示に読み込まれる原因となりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/35b1b1da>、<https://github.com/magento/magento2-page-builder/commit/4d5db10a>
+* _ACP2E-3230_：外部キーの場合、db_schema.xml を使用した列の長さの変更が機能しない
+   * _メモの修正_：宣言型スキーマを使用して外部キーの列を変更しても、MariaDB でエラーが発生しなくなりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/581b7ef1>
+* _ACP2E-3361_：注文レコードの保存時に、一部のリレーションレコードが DB に保存されます
+   * _メモを修正_：修正前は、不要な UPDATE クエリがトリガーされていましたが、これはパフォーマンスに影響を与える可能性があります。 修正後、不要な UPDATE クエリが削除されました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1366ae5e>
+* _ACP2E-3375_: [CLOUD] 管理者のコンソールには、多くの JavaScript エラーがあります
+   * _メモを修正_：以前は、管理パネルのコンソールに多数の Javascript エラーがありました。 これで、管理パネルのコンソールにJavaScript エラーが表示されず、デフォルトのJavaScript機能がすべて問題なく正常に実行されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d75cff27>
+* _ACP2E-3387_: [Cloud] Magento: キューメッセージが削除されました
+   * _メモの修正_：キューメッセージが正しくクリアされるようになりました。 修正の前は、SQL キューシステムが使用されていたので、クリーニング キューメッセージが同時に実行されている場合は、新しいメッセージが削除される可能性がありました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d50f6b5d>
+* _ACP2E-3537_：対応するキャッシュ キーエントリがキャッシュ タグで使用できないため、キャッシュのクリーニングが正しく機能しません
+   * _修正点_：競合状態を防ぐために、Redis キャッシュガベージコレクターに対して LUA モードがデフォルトで有効になりました
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/a52ff98f>
+* _ACP2E-3681_:MAGENTO_DC_INDEXER__USE_APPLICATION_LOCK値は無視されます
+   * _修正ノート_: 修正後、&quot;false&quot; に設定された ENV 変数は、文字列 &#39;false&#39; ではなく、ブール false として扱われます。
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/982b1c42>
+
+### フレームワーク，GraphQL
+
+* _AC-7976_: [ 問題 ] GraphQL スキーマにカスタムスカラータイプのサポートが導入されました
+   * _修正点_:GraphQL スキーマのカスタムスカラータイプがサポートされるようになり、開発者がカスタムスカラータイプと実装を定義できるようになりました。 この機能は、HTML、メール、URL、日付など、検証が必要になる可能性のある値を表現する場合や、EAV 属性などのより高度なケースで特に役立ちます。 以前は、GraphQLでのカスタムスカラータイプの処理はサポートされていませんでした。
+   * _GitHub の問題_: <https://github.com/magento/magento2/issues/36877>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/34651>、<https://github.com/magento/magento2/commit/0574ac23>
+
+### フレームワーク, UIフレームワーク
+
+* _ACP2E-3324_:ロックされている場合、設定値均等を上書きする可能性があります。
+   * _修正ノート_:この修正の前は、デザインコンフィギュレーションをbin/magento config:setコマンドで設定できず、ロックされた値は、ロックされた値を表示するフォームの操作によって変更できました。 修正後、cli から --lock-env または --lock-conf を使用して設定されたロック値は更新できなくなります。
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/55615e61>
+
+### GraphQL
+
+* _AC-11729_:ヘッダー値が渡されない場合、Magento_GraphQl はヘッダー処理均等を実行します検証
+   * _修正点_：システムは、ヘッダー処理が 1 回だけ、ヘッダー値が検証に合格した場合にのみ実行されるようにし、セキュリティを強化し、潜在的な脆弱性を防ぐようになりました。 以前は、ヘッダ値が検証に合格しない場合でもヘッダ処理を実行していたため、ヘッダ値の二重処理により、潜在的な脆弱性や予期しない動作が発生する可能性がありました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c8f87c25>
+* _AC-8951_:物理的なギフトカードのオプションの並べ替え順が正しくありません
+   * _修正ノート_:GraphQLを介してクエリされたときに、システムが物理的なギフトカード製品のオプションを正しく並べ替えるようになり、Luma テーマとの一貫したレンダリングが保証されます。 以前は、ルミナンスのテーマによる並べ替え順が間違っていたため、送信者名、受信者名、金額などのオプションの表示や順序が正しくありませんでした。
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/1bafc571>
+* _AC-9157_: [GraphQL] ステージング更新プログラムの作成/編集/移動/削除時に、リゾルバーキャッシュが無効になります
+   * _メモの修正_：ステージング更新の作成、編集、移動または削除時に、ただしステージング更新がエンティティに適用された場合にのみ、リゾルバーキャッシュが無効化されないことがシステムにより確認されるようになりました。 以前は、ステージング更新が適用される前であっても、リゾルバーキャッシュが早い段階で無効化されていたため、不要なキャッシュの無効化が行われていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0c53bbf7>
+* _ACP2E-2642_：コンテンツのステージングの更新で、Fastly キャッシュがクリアされない
+   * _メモの修正_:PageBuilder コンテンツ関連のエンティティが更新される際に、PageBuilder コンテンツの応答キャッシュを持つGraphQLが無効になりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ba25af8a>
+* _ACP2E-2653_：レイヤーナビゲーションの無効化 – Graphql から集計を削除しない
+   * _修正点_：この問題は、「カタログ/階層ナビゲーション/カテゴリフィルターを表示」の管理設定で、GraphQL クエリを通じてカテゴリ集計を含む商品検索をリクエストする際にチェックを適用した後に修正されました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/12e071c3>
+* _ACP2E-2928_：価格フィルター {from:&quot;0&quot;} を含んだGraphQL Products 呼び出しで、結果が返されない
+   * _メモの修正_：以前は、ゼロ価格のフィルターを使用して検索した Graphql 製品は、例外がスローされたので、結果をまったく返しませんでした。 これで、検索が期待どおりに結果を返します。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c971859e>
+* _ACP2E-2974_：カスタマーリターン属性の翻訳が、それぞれの StoreView のGraphQL API に反映されない
+   * _修正点_：お客様の返品属性の翻訳は、それぞれのストアビューのGraphQL API に反映されます。
+以前は、それぞれの StoreView の Customer Return 属性は、GraphQL API には反映されていませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ec7e32a9>
+* _ACP2E-3128_:[Cloud] ノードの見積もりを使用した getPurchaseOrder のGraphQL呼び出しの不具合
+   * _修正点_：発注書GraphQLの呼び出しでは、内部サーバーエラーが発生することなくタスクを実行できます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/6f4805f8>
+* _ACP2E-3184_:「すべてのストア表示」で製品が有効になっていない場合、[Cloud] 設定可能な製品が実稼動サイトに表示されない
+   * _メモの修正_：製品が「すべてのストア表示」では有効になっていなくても、特定のストア表示範囲で有効になっている場合でも、サイト内の設定可能な製品が正しく表示されるようになりました。
+以前は、商品が「すべてのストア表示」で無効になっていて、特定のストア表示範囲でのみ有効になっている場合、GraphQLの応答で商品の属性が正しく表示されず、商品が正しく表示されませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/inventory/commit/3f300077>
+* _ACP2E-3190_:[Cloud] 製品の graphql で、同じ単純な製品が複数の設定可能な製品に割り当てられている場合にエラーが発生する
+   * _メモを修正_：以前は、同じシンプルな製品を持つ個別の設定可能な製品では、grapQL がエラーを返していました。 この修正が適用された後、同じ単純な製品を持つ様々な設定可能な製品が適用されると、grapQL はエラーなく結果を返します。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/148c3ead>
+* _ACP2E-3215_：マルチサイト設定でのユーザー認証とクロスサイトトークンアクセスに関する [Cloud] の問題
+   * _修正点_：マルチサイト設定での GraphQl 顧客情報および買い物かごクエリで、デフォルト以外の web サイトに顧客が存在するかどうかを確認します。
+以前は、クエリは、マルチサイト設定のデフォルト以外の web サイトに顧客が存在することを確認することなく機能していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/581b7ef1>
+* _ACP2E-3253_:GraphQLの買い物かご項目 V2 のページネーションが正しく機能しない
+   * _修正点_：この問題は、コレクションクエリの現在のページ引数に正しい値を渡すことで修正されました。 以前は、現在のページを設定するために間違った値が渡され、問題が発生していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/8459b17d>
+* _ACP2E-3255_: [GRAPHQL] customerCart の取得時には、モデル値を指定する必要があります
+   * _修正点_:GraphQLの「customerCart」クエリで、データベースで見積もりが使用できない場合でも、空の買い物かごを作成できるようになりました。 以前は、空の買い物かごの作成中に国の検証の問題が発生したため、この操作は失敗していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/fd5cf3af>
+* _ACP2E-3380_: [GraphQl] ウィッシュリスト項目は、GraphQl 経由では表示されますが、ストアフロントでは表示されません
+   * _メモの修正_:GraphQL経由でリクエストした際に、商品が正しくリストされないウィッシュリストを作成します。 現在は、指定されたストアコンテキストに基づいてウィッシュリスト製品がフィルタリングされています。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/55615e61>
+* _ACP2E-3404_: [GraphQL] コンテンツと件名/リンクのパスワード E メールの不整合をリセットします
+   * _修正メモ_：この問題は、Web サイトストアに関係なく、パスワードリセットリクエストの送信時に、顧客のアカウントが登録されている正しいストアをシミュレートすることで解決されました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/5184c067>
+* _ACP2E-3419_: [Cloud] 製品GraphQLのクエリを実行すると、現在の web サイトに割り当てられていない関連製品が返される
+   * _メモの修正_：以前は、graphQL クエリの場合、マルチストア関連製品が製品クエリで正しく表示されませんでした。 この修正を適用した後、製品に対して、graphQL はマルチストア関連製品をクエリし、適切に表示します。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/078c387e>
+* _ACP2E-3447_:GraphQL ヘッダーに間違ったストア ID を使用すると、致命的なメモリエラーが発生する
+   * _修正点_:GraphQL リクエストで間違ったストアコードを送信しても、メモリが過度に消費されなくなりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d50f6b5d>
+* _ACP2E-3467_:2.4.7 で空の Graphql 応答に対して行われる [Cloud] 500 の応答
+   * _修正メモ_：修正後、無効な Graphql リクエストは exception.log ファイルに記録されません。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1984c61c>
+* _ACP2E-3492_:Graphql API の [Cloud] の問題
+   * _修正メモ_:Graphql アプリケーションサーバーを使用して修正する前、顧客アドレスリクエストが最新のデータを返しませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/3f12d152>
+* _ACP2E-3505_：無効な製品が、grpahQL クエリの関連する、アップセル、クロスセル項目に引き続き表示される
+   * _修正メモ_:Graphql では、無効な関連製品、アップセル製品およびクロスセル製品に対して正しい応答を提供するようになりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d4de4726>
+* _ACP2E-3647_: [CLOUD]:GraphQl エラー内部サーバーエラー placeOrder ミューテーション
+   * _メモの修正_：リクエストのクーポンコード情報を含む「placeOrder」ミューテーションで内部エラー例外が発生しなくなりました。注文は正常に行われました。 以前は、「内部サーバーエラー」で失敗していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/982b1c42>
+* _LYNX-426_：価格が動的なバンドル製品については、discount_percentage は計算されません
+   * _修正注意_:product.price_details の discount_percentage に追加された修正で、動的価格が有効になっており、割引クーポンが適用されているバンドル製品の正しい値が表示されない。
+* _LYNX-485_：バンドル製品の 1 つが在庫切れになっても、バンドル製品に「IN_STOCK」と表示される
+   * _修正点_：バンドル製品の 1 つが在庫切れでも、バンドル製品に「IN_STOCK」と表示される問題を解決しました。
+* _LYNX-486_: not_available_message および only_x_left_in_stock で、同じ利用可能な在庫が表示されません
+   * _メモの修正_:not_available_message と only_x_left_in_stock に一貫性のない在庫可用性が表示されていた問題を解決しました
+* _LYNX-488_:original_row_total フィールドで誤った値が返される
+   * _メモの修正_:original_row_total フィールドで、カスタムオプションを選択すると誤った値が返される問題を解決しました
+* _LYNX-503_：グループ化された製品サムネールが設定に応じて表示されます     .
+   * _メモの修正_：問題を解決し、グループ化された製品サムネールが設定に従って表示されるようにしました
+* _LYNX-512_: original_item_price には割引は含まれていません
+   * _修正点_：割引を含むように original_item_price を更新しました。
+* _LYNX-530_:「Not available」メッセージで、利用可能な在庫数が表示されない
+   * _メモの修正_:AddProductsToCart ミューテーションのエラーメッセージとエラーコードを、「利用できない」メッセージ設定に合わせて解決しました
+* _LYNX-532_:「OUT_OF_STOCK」ステータスがシンプルに返される（カスタムオプションを使用）
+   * _修正メモ_：在庫パッケージの StockStatusProvider リゾルバーを更新して、カスタムオプションを含む単純な製品の stock_status を修正しました。
+* _LYNX-533_: エラー（GQL）: cart.itemsV2.items.product.custom_attributesV2 はサーバーエラーを返します
+   * _メモの修正_：カスタム属性を持たない製品を追加することで、買い物かごクエリに製品のカスタム属性が含まれていた場合に発生していたサーバーエラーを解決しました。
+* _LYNX-536_: orders/date_of_first_order は常に null を返します
+   * _メモの修正_：注文/date_of_first_order が常に null を返す問題を解決しました。
+* _LYNX-544_：お客様は、部分的に出荷された注文をキャンセルすることはできません
+   * _修正メモ_：部分的に出荷された注文を顧客がキャンセルできないように制限するために、検証が追加されました。
+* _LYNX-548_：エラーメッセージに基づく注文キャンセルのエラーコード
+   * _修正点_：注文キャンセルのエラーコードは、特定のエラーメッセージに基づいています。
+* _LYNX-581_: cookie 関連のプロパティをプライベートから保護された状態に戻します
+   * _修正メモ_:Magento\Framework\App\PageCache\Version クラスコンストラクタープロパティの表示をプライベートから保護された状態に戻します
+* _LYNX-600_:GraphQLのデフォルトのクエリの最大複雑性を 1,000 に増加
+   * _修正点_:GraphQL クエリのデフォルトの最大複雑度を 300 から 1000 に増加しました。
+* _LYNX-620_:GQL - itemsV2 > Original row total, price range prices returned as $0.00 for downloadable product with file options that has separate price.
+   * _修正メモ_：別個のリンク購入オプションが有効になっているダウンロード可能な製品が、itemsV2 > 元の行の合計で$0 を返していた問題を解決しました。価格範囲は、別個の価格を持つファイルオプションの製品では$0.00 として返されました。
+* _LYNX-772_: GraphQl PHP-8.4 バージョンの互換性
+   * _修正メモ_：複数のリゾルバーをまたいで PHP 8.4 とのGraphQL互換性の問題を修正し、スムーズな機能を確保しました。 CatalogRule、Customer、GiftMessage、GiftCard、および GiftWrapping の各モジュール内の影響を受けるファイルを更新しました。
+
+### GraphQL、インベントリ/MSI
+
+* _ACP2E-2607_：ソースと宛先の買い物かごに同じバンドル項目がある場合、MergeCart ミューテーションが例外をスローする
+   * _修正メモ_ : 「– 
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c971859e>、<https://github.com/magento/inventory/commit/db0620da>
+
+### GraphQL、インベントリ/MSI、パフォーマンス
+
+* _ACP2E-1716_：アップグレード後のサイトダウン
+   * _メモを修正_:GraphQl を使用してバンドル製品を取得するパフォーマンスが向上しました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ba25af8a>、<https://github.com/magento/inventory/commit/bdbf97ea>
+
+### GraphQL, パフォーマンス
+
+* _AC-9569_: [GraphQL リゾルバー ] カスタマーリゾルバーデータがインポートから無効化されません
+   * _メモの修正_：読み込みを通じてユーザーが編集または削除された場合、GraphQL カスタマーリゾルバーキャッシュが期待どおりに無効になりました。 以前は、キャッシュは無効化されておらず、読み込み時に顧客データを編集または削除することができました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0574ac23>
+
+### GraphQL、検索
+
+* _ACP2E-2809_:GraphQLの商品リストで複数のパラメーターで並べ替えても、機能しない
+   * _メモを修正_:GraphQl での複数フィールドによる製品の並べ替えが、ドキュメントの説明どおりに動作するようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c971859e>
+* _ACP2E-948_：商品リストのGraphQL クエリが total_count 10,000 商品のみに制限される
+   * _修正点_：修正後、検索結果が 10000 個の製品に限定されず、カウントが 10000 個を超えても検索条件に一致するすべての製品を取得できるようになります。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a4cf5e62>
+
+### GraphQL、テストフレームワーク
+
+* _ACP2E-3363_: Magento\GraphQl\App\GraphQlCustomerMutationsTest.php統合テスト エラー
+   * _修正メモ_ : 「– 
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a4cf5e62>
+
+### インポート/エクスポート
+
+* _AC-12172_：カスタムオプションタイプ : ファイルを指定した場合の製品の読み込み時の問題（作成された製品にはカスタムオプションの価格が含まれておらず、指定された最初のファイルタイプの拡張子のみが表示される）
+   * _メモの修正_：システムは、「ファイル」タイプのカスタムオプションを使用して製品データを正しく読み込み、提供されたすべてのファイル拡張子が表示され、カスタムオプションの価格が含まれるようになりました。 以前は、製品の読み込み時に、タイプ「ファイル」のカスタムオプションに複数のファイル拡張子が指定されている場合、最初の拡張子のみが表示され、カスタムオプションの価格が表示されませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38805>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38926>
+* _ACP2E-2710_: インポート履歴グリッドのインポート操作の実行時間が間違っています
+   * _メモを修正_：読み込みレポートの実行時間は、管理者ロケールとは無関係に正しく表示されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ea79f7dd>
+* _ACP2E-2737_：読み込みを使用して、同じメールアドレスで重複した顧客が作成される
+   * _メモの修正_：アカウント共有をグローバルに設定している場合に顧客を読み込むと、システムに存在する読み込まれた顧客が更新されます。
+以前に読み込んだ顧客が複製されました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c971859e>
+* _ACP2E-2902_：製品のインポートの追加/更新カスタマイズ可能なオプションの複製
+   * _メモの修正_：この問題は、製品オプションの CSV 読み込み時に製品オプションに正しいストアを割り当てることで解決されました。
+以前は、は、それぞれのストアではなく管理ストアに割り当てられていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/3a7c4d17>
+* _ACP2E-2990_：顧客の「created_at」日付が、エクスポート時にストアタイムゾーンに変換されない
+   * _メモの修正_：列「created_at」の日付値は、顧客の書き出し CSV セクションのストアタイムゾーンに基づいて適切な日付形式に変換されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/3056e9cb>
+* _ACP2E-3165_: [Cloud] CSV を使用したデータの読み込みで、データのチェック中にエラーが発生します
+   * _修正点_:CSV の読み込み中にデータを確認する際にエラーが発生することはありません。 以前は、管理者から CSV を使用して読み込みセクションのデータを確認すると、「このメールと web サイトコードを行が 1 に一致する顧客が見つかりません」というエラーメッセージが表示されていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/8459b17d>
+* _ACP2E-3172_：読み込みボタンがない
+   * _メモの修正_:CSV 内の正しいレコードと正しくないレコードでデータをチェックした後に、「読み込み」ボタンが見つからない問題を解決します。 以前は、CSV 内の正しいレコードと正しくないレコードでデータをチェックした後、読み込みボタンが表示されていませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1819fe73>
+* _ACP2E-3382_：書き出された顧客住所はインポートできません
+   * _メモの修正_：顧客アドレスのインポートは期待どおりに続行されます。 以前は、Share Customer Accounts = Global の場合、顧客住所読み込みファイルが検証に合格せず、デフォルトの Web サイトの国が制限されている Web サイトが 2 つあり、読み込まれる住所が許可されている国が異なる別の Web サイトの住所であった場合です
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ec7e32a9>
+* _ACP2E-3448_: [Cloud] CSV ファイルの誤った数量でエラーが発生しませんでした
+   * _メモの修正_：在庫ソースの読み込みが行われると、数量列の数値以外の値に対して検証エラーがスローされるようになりました。 以前は、「数量」列に数値でない在庫ソースを読み込むと、数量が 0 に設定されていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/inventory/commit/5b21b7af>
+* _ACP2E-3455_:URL キーが既にカテゴリに属している場合、製品のインポート時に生成される重複 URL キーエラーメッセージが正しくありません
+   * _修正点_：製品の URL キーが既にカテゴリに属している場合に、顧客が製品を読み込もうとすると、製品の読み込みチェック中に正しいエラーメッセージが表示されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d4de4726>
+* _ACP2E-3475_：製品の書き出しが原因で、4G メモリ制限があっても OOM が発生する
+   * _修正点_：この修正の前は、4G で使用可能なメモリがあっても、製品属性に何千ものオプション値がある場合、製品の書き出しは失敗していました。 この修正後、製品の書き出しが csv ファイルの書き出しを終了する必要があります。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1984c61c>
+* _ACP2E-3527_: [Cloud] 読み込みプロセスが相互に干渉しています
+   * _メモの修正_：同じ管理者ユーザーが同じユーザーセッションを使用して 2 つ以上の読み込み操作を実行した場合、正しいメッセージが表示されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d4de4726>
+
+### インポート/エクスポート、パフォーマンス
+
+* _ACP2E-3476_: [Cloud] 製品のインポート時間が大幅に長くなりました
+   * _修正点_：修正点より前は、10,000 個を超えるエントリを含むカタログ製品の読み込みで、時間が大幅に短縮されていました。 修正後、カタログ製品のインポートはタイムリーに実行されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/87d012e5>
+
+### インストールと管理
+
+* _AC-13242_:MariaDB 11.4 + 2.4.8-beta1 でMagentoのアップグレードに失敗する
+   * _メモを修正_：アップグレードはエラーなしで行われます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7b336d0a>
+* _ACP2E-2102_：管理パネルに「Vcl for Varnish 7」ボタンが表示されない
+   * _メモの修正_：管理パネルに「Export VCL for Varnish 7」ボタンが追加されました。
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/a4fbf702>
+
+### インベントリ/MSI
+
+* _AC-10750_：データベースでプレフィックスを使用すると、設定可能な製品のインベントリ更新が失敗する
+   * _修正メモ_：データベースがプレフィックスを使用する場合、システムは設定可能な製品の在庫を正しく更新し、エラーメッセージが表示されないようにし、正しい数量が保存されるようにしました。 以前は、データベースがプレフィックスを使用している場合に、設定可能な製品内で単純な製品の在庫数量を保存しようとするとエラーが発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38045>
+* _AC-11593_：属性を含むマップを追加する際に、Google Google API キーが機能しない
+   * _修正点_：最新のGoogle Maps API バージョン 3.56 がサポートされるようになり、エラーを発生させることなく、ページビルダーメニューからステージにマップコンテンツブロックを正常に追加できるようになりました。 以前は、Google Maps API バージョンとの互換性の問題により、マップコンテンツブロックを追加できず、「問題が発生しました」というエラーメッセージが表示されていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0574ac23>
+* _AC-13922_：複数のソースと破損した SKU を持つ注文項目の出荷を作成できない
+   * _修正点_：以前は、データベースを通じて SKU にスペースが誤って追加されると、出荷ページでエラーが発生していましたが、現在は修正されており、自動トリミングは人的に優しいエラーと見なされ、影響は見つかりませんでした。そのため、出荷は正常に作成されました。
+   * _GitHub コードの投稿_:<https://github.com/magento/inventory/commit/c18eb5fa>
+* _ACP2E-1411_: [ テスト ] 店舗正面に表示される在庫が 0 のバンドル製品
+   * _メモの修正_：追加のストックを使用している追加の web サイトには、バンドル製品が表示されません。
+* _ACP2E-2794_：空のスペースを含む製品リストの [Cloud] に関する重大な問題
+   * _修正点_：製品が「在庫切れ」に設定されている場合、システムは製品リストを空のスペースなしで正しく表示するようになり、利用可能な製品を一貫した正確な状態で表示できるようになりました。 以前は、製品を「在庫切れ」に設定すると、製品リストに空のスペースが表示され、レイアウトが中断され、顧客を混乱させる可能性がありました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ea79f7dd>、<https://github.com/magento/inventory/commit/b59e48ca>
+* _ACP2E-3335_: MSI 受け取りストアが有効な場合、注文を出荷できません
+   * _修正点_：店頭での受け取りで多くのソースが発生した場合の、作成された配送の在庫パフォーマンスが向上しました
+   * _GitHub コードの投稿_:<https://github.com/magento/inventory/commit/9f3e63d1>
+* _ACP2E-3355_:Cron の再インデックスで、フロントエンドの製品可用性を更新できない
+   * _メモを修正_：以前は、REST API を使用してバックオーダーのステータスを更新した後、製品はフロントエンドで在庫切れのままでした。 REST API を使用してバックオーダーのステータスを更新すると、製品が在庫として表示されるようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/inventory/commit/e6fe0aa7>
+* _ACP2E-3357_:MSI が有効な場合に、設定可能な画像に画像を追加しても機能しない。
+   * _メモの修正_：インベントリモジュールが使用される場合、設定可能な製品の画像のアップロードが期待どおりに動作するようになりました。 以前は、画像のアップロードが機能しませんでした
+   * _GitHub コードの投稿_:<https://github.com/magento/inventory/commit/fdf409aa>
+* _ACP2E-3470_:Clean M2.4.7-p3 のバンドル Product + MSI の問題
+   * _修正点_：以前は、同じシンプル製品と重複した後の在庫バンドル製品の場合、シンプル製品は保存できません。 この修正が適用されると、単純な製品は例外なく正常に保存できます。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39358>
+   * _GitHub コードの投稿_:<https://github.com/magento/inventory/commit/0208e433>
+
+### インベントリ/MSI、検索
+
+* _ACP2E-3413_:SKUが検索可能な属性として設定されていない場合、すべての製品インデックスは [is_out_of_stock] = 1 で作成されます。
+   * _修正点_：修正後、SKU が検索できない場合でも、カタログ検索インデックスの「is_out_of_stock」は正しく表示されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/inventory/commit/5b21b7af>
+
+### 順序
+
+* _AC-10828_：バックエンド注文の概要画面：受注品目レベルでバックオーダー数量が表示されない
+   * _メモの修正_：バックエンド注文の概要画面の数量列に、バックオーダーされた項目数が表示されるようになりました。 これにより、ユーザーは順番にすべての項目のステータスを正確に追跡できます。 以前は、数量列には注文、請求、出荷された品目の数のみが表示されていましたが、バックオーダーされた品目の数は表示されていませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38252>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38320>
+* _AC-10994_:[ 問題 ] 注文アドレスレンダラーで使用されているストア ID が正しくない
+   * _メモの修正_：システムは、注文アドレスをレンダリングする際に、注文に関連付けられたストア ID を正しく使用するようになりました。これにより、それぞれのストア ID に従ってアドレスが正しくフォーマットされます。 以前は、システムが現在のストア ID を誤って使用していたので、異なるストアからの複数の注文メールを送信する必要がある場合に、アドレスの形式が正しくなくなる可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38412>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37932>
+* _AC-11690_:JoinProcessor キャッシュの問題
+   * _メモの修正_：システムは、連続した呼び出しであっても、各反復に JoinProcessor を正しく適用し、正確なデータ取得を保証するようになりました。 以前は、JoinProcessor が誤って連続した反復処理で既に適用されているとマークされ、データ取得でエラーが発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/27504>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37550>
+* _AC-11798_:[ 問題 ] 送料が異なる
+   * _修正注意_：システムでは、税金構成設定に従って出荷価格が印刷された PDF に正しく表示され、受注請求書表示ページと印刷された請求書の間の一貫性が確保されるようになりました。 以前は、印刷されたPDFに表示される送料は、税設定に関係なく、税金を除外していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38608>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38595>、<https://github.com/magento/magento2/commit/1bafc571>
+* _AC-13839_：削除された親の設定可能な製品で並べ替え
+   * _修正点_：現在は、削除された製品で並べ替えを行う際に、並べ替えを行う並べ替えボタンがシステムに表示されません
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39568>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/39601>
+* _AC-13924_:[ 問題 ] 不正な\Magento\Sales\Model\Order\Email\Container\Template::$id プロパティを修正しました
+   * _注意を修正_：これにより、\Magento\Sales\Model\Order\Email\Container\Template::$id の不正な phpdoc が修正されます。実際には$id は int 型ですが、実際には string 型です。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39151>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/39150>
+* _ACP2E-2622_：既存の注文の詳細で電話番号に対する変更を保存できない
+   * _メモの修正_：注文住所の電話フィールドに、国際名のプレフィックス 00 を追加できるようになりました
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38201>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/12e071c3>
+* _ACP2E-2734_：メールの送信に失敗する
+   * _メモの修正_：システムには、停止前にメールを送信する試行回数を指定する設定オプション async_sending_attempts が含まれるようになりました。「非同期送信」が有効な場合の、失敗したメールの送信処理が改善されます。 以前は、メールの送信に失敗すると、システムは継続的にメールを再送信しようとするので、システムログでエラーメッセージの無限ループが発生していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b2286ecf>
+* _ACP2E-2756_: [Cloud] 部分的に出荷された注文の一部払い戻し時に、注文ステータスが完了に変更されました
+   * _修正注意_：まだ出荷されていない品目がある場合、クレジットメモを発行しても、注文ステータスは「完了」に変更されません。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7e0e5582>
+* _ACP2E-3002_：開発ドキュメントに示されているように、[CLOUD] で管理 UI からのメール送信を無効にできない
+   * _メモの修正_：メール通信が無効な場合に、販売メールが送信されるのをシステムが正しく防ぐようになりました。 メール通信を再度有効にすると、これらのメールは送信されなくなります。 以前は、メール通信が無効になっている間に開始した販売メールは、メール通信が再度有効になった場合でも送信されていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c8931218>
+* _ACP2E-3045_：注文は全額返金されずにクローズされました
+   * _修正メモ_：支払がキャプチャされていない注文で出荷が作成された場合、システムは注文ステータスを「処理中」に、請求書ステータスを「保留中」に正しく維持するようになりました。 これにより、注文が全額払い戻された後にのみ「クローズ」とマークされます。 以前は、請求書が保留中の注文に対して出荷を作成すると、注文ステータスが誤って「クローズ」に変更されていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/6a185204>
+* _ACP2E-3311_: [Cloud] デフォルトの請求先住所のみが設定されていない場合、1 つのストアで管理者に注文を作成できない
+   * _メモの修正_：関連するエラーメッセージが「同じメールアドレスを持つ顧客が関連する web サイトに既に存在します。」 顧客がデフォルトの請求先住所を持たず、別の店舗で注文を作成しようとすると、が表示されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d75cff27>
+* _ACP2E-3416_：管理者が重複した注文リクエストを送信しました
+   * _メモの修正_：以前は、管理パネルの「注文を送信」ボタンを複数回クリックするか、「Enter」キーを繰り返し押してアクティブ化すると、重複する送信や注文の送信でエラーが発生する可能性がありました。 オーダーが完全に処理されるまで追加のアクションを防ぎ、1 つのオーダーのみが送信されるようにします。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/5184c067>
+* _ACP2E-3425_：管理者は、支払い方法がなくても注文できます
+   * _修正注意_：使用可能な支払のリストに支払方法が再び表示される際に、以前に選択した支払方法が保持されるようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d50f6b5d>
+
+### 注文、支払い
+
+* _ACP2E-3233_：管理者は、支払い方法がなくても注文できます
+   * _メモの修正_：以前は、マーチャントは、支払い方法を選択せずに管理パネルから注文を行うことができました。 今、マーチャントは注文を進めるために支払い方法を必要とします。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/fd5cf3af>
+
+### 注文、返品
+
+* _ACP2E-2982_：重複クレジット・メモの受注払戻の結果
+   * _修正点_:2 つの同一のリクエストが同時に実行された際に REST API を使用して返金を行うと、重複したクレジットメモが作成されなくなりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a4fbf702>
+
+### 注文、税
+
+* _ACP2E-3003_: [CLOUD] クロスボーダー取引を有効にし、クーポン割引を適用する際に、RESTFUL 注文 API の base_row_total が正しくありません
+   * _メモの修正_：クロスボーダー取引が有効化され、クーポン割引が適用されている場合、RESTFUL 注文 API から正しい base_row_total が返されるようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/9af794a4>
+
+### 他
+
+* _LYNX-339_:GQL クエリで返される private_content_version cookie
+   * _修正点_：セッション Cookie が無効になっている場合でも、GraphQL クエリで private_content_version Cookie が返される問題を修正しました。 セッションが期待どおりに無効になると、cookie はGraphQLの応答に含まれなくなります。
+* _LYNX-380_: CartItemInterface の is_available 属性は、設定可能な製品に対して常に false を返します
+   * _メモの修正_:CartItemInterface の is_available 属性が、在庫内の設定可能な製品に対して常に false を返す問題を修正しました。 現在は、該当する場合は可用性が true として正しく反映されます。
+* _LYNX-382_: CartItemInterface の is_available 属性は、販売可能な在庫が商品の数量よりも少ない場合でも true を返します
+   * _注意_: 買い物かごアイテム量が販売可能な在庫を超えた場合に、CartItemInterface の is_available 属性が誤って true 均等を返していた問題固定。
+* _LYNX-399_:シンプルな製品がグループ化された製品内の買い物かごに追加されると、プレースホルダーサムネールが返される
+   * _修正ノート_:製品に画像が割り当てられている場合均等、単純な製品(グループ化された製品の一部)を買い物かごに追加するとプレースホルダーのサムネイル画像が返されるという問題固定。修正詳細:
+• 製品のサムネイルに、割り当てられた画像がある場合は、その画像が正しく表示されるようになりました。・ サムネールの選択では、次の場所にある管理設定が適用されます。
+ストア /設定/ セールス / チェックアウト /買い物かご/ グループ化された製品画像。
+これにより、ストアの設定に基づいて、グループ化された製品のサムネールの動作が一貫します。
+* _LYNX-400_：顧客のカスタムオプション属性が整数値で機能しない
+   * _修正点_：返された値が整数の場合に、顧客のカスタムオプション属性が機能しない問題を修正しました。 カスタムオプションで、整数値が期待どおりに処理され、返されるようになりました。
+* _LYNX-402_：動的価格を含むバンドル製品の priceDetails を取得しようとしたときに内部サーバーエラーが発生する
+   * _修正点_:GraphQLを介して動的な価格を持つバンドル商品の price_details に対してクエリを実行すると、内部サーバーエラーが発生する問題を解決しました。 この機能強化により、動的な価格が設定されたバンドル製品を使用する際に、安定した買い物かごクエリを実現できます。
+* _LYNX-403_：設定可能な製品の場合、only_x_left_in_stock は常に 0 を返します
+   * _メモの修正_：オプション付きの親 SKU を使用して追加すると、設定可能な製品で only_x_left_in_stock 属性が常に 0 を返す問題を解決しました。
+修正詳細：
+・ only_x_left_in_stock 値は、親 SKU ではなく、選択した子バリアントの在庫を正確に反映するようになりました。
+・これにより、設定可能な製品バリエーションの在庫レベルが買い物かごおよび製品ページで正しく表示されます。
+* _LYNX-411_：カスタマイズ可能な商品について、GraphQL クエリが正しい予定価格を返さない
+   * _修正点_:GraphQLが、カスタマイズ可能な商品に対して正しく計算された通常価格を返さない問題を修正しました。 クエリは、基本価格と追加のカスタマイズコストの両方を反映して、カスタマイズ可能な値（125 ドルなど）が適用された計算された通常価格を価格プロパティに正しく含むようになりました。
+* _LYNX-412_:EstimatedTotals を介した AppliedTaxes は、更新された突然変異で保持されます
+   * _メモの修正_:EstimatedTotals ミューテーションの問題を修正しました。地域または郵便番号を更新した後も、適用された税金が買い物かごに保持されます。 地域と郵便番号の値を変更する際に、ミューテーションによって適用された税金が正しく更新され、現在の買い物かごデータに基づいて正しい税務処理基準のみが適用されるようになりました。
+* _LYNX-420_: CartItemInterface の is_available 属性は、販売可能な在庫が商品の数量よりも少ない場合でも true を返します
+   * _修正点_：販売可能な在庫がリクエストされた製品数量より少ない場合でも、CartItemInterface の is_available 属性が誤って true を返す問題を修正しました。 製品の数量が利用可能な在庫を超えた場合、is_available フィールドが正しく false を返すようになりました。
+* _LYNX-425_：小数点以下 12 桁の製品通常価格で、誤った値
+   * _修正注意_：複数の税率が適用されている場合に、product.price_range.maximum_price および minimum_price GraphQL パスの regular_price 値がカタログ価格と一致しなかった問題を修正しました。 regular_price は、すべての税金構成にわたってカタログ価格を一貫して反映し、正確な単価、合計行原価計算および割引チェックを「買い物かご要約」で行えるようになりました。
+* _LYNX-430_：在庫切れバンドル製品に関するGraphQL サーバーエラー
+   * _修正メモ_：在庫切れの商品が含まれているバンドル商品を含む買い物かごを取得する（特にクエリに itemsV2 プロパティが含まれている場合）ときに、GraphQLが内部サーバーエラーを返す問題を修正しました。 GraphQLは、関連するエラーメッセージがバンドルされた商品項目エントリに添付された項目のリストを、期待どおりに正しく返すようになりました。
+* _LYNX-441_: カスタム属性を持つアドレスを作成できません
+   * _修正メモ_:createCustomerAddress ミューテーションで、必要なカスタム属性を持つアドレスを作成できなかった問題を修正しました。 適切なペイロードが指定された場合、ミューテーションでカスタムアドレス属性を正しく処理できるようになりました。
+* _LYNX-447_：バンドルされた商品に only_x_left_in_stock が含まれる、買い物かごのGraphQL サーバーエラー
+   * _修正メモ_:GraphQL クエリの only_x_left_in_stock フィールドを持つバンドルされた商品を含む買い物かごを取得すると、内部サーバーエラーが発生する問題を修正しました。 GraphQLが、only_x_left_in_stock フィールドに対して、エラーなく正しく float または null を返すようになりました。
+* _LYNX-464_：カート内の設定可能な商品が不十分な他の商品を削除すると、GraphQL エラーが発生する
+   * _修正メモ_：カートに在庫不足の設定可能な商品も含まれている場合に、カートから在庫商品を削除しようとすると、「リクエストした数量は使用できません」というGraphQL エラーが発生する問題を修正しました。 エラーをトリガーせずに、削除が期待どおりに動作するようになりました。
+* _LYNX-469_：ミューテーションの SKU で大文字と小文字が区別されるので、製品を追加できない
+   * _メモの修正_：大文字と小文字が異なる SKU を使用したときに addProductsToCart ミューテーションが「PRODUCT_NOT_FOUND」エラーを返す問題を解決しました。 このミューテーションでは、SKU を大文字と小文字を区別せずに処理するようになり、カタログサービスのクエリや PDP の動作との一貫性を確保します。
+* _LYNX-603_：製品属性/商標略形™ が™ として返される
+   * _修正点_:GraphQL API の製品名に関する文字エンコーディングの問題を解決しました
+* _LYNX-619_:updateCustomerEmail mutation の問題
+   * _メモの修正_：必須のカスタム属性を持たない（アカウントの作成後に追加された）顧客がメールを更新できない updateCustomerEmail ミューテーションの問題を解決しました。
+* _LYNX-626_:mutation setShippingAddressesOnCart が pickup_location_code の使用時にエラーをスロー
+   * _修正メモ_:customer_address_id またはアドレスを指定せずに pickup_location_code を使用した場合、setShippingAddressesOnCart ミューテーションがエラーを返す問題を修正しました。 ミューテーションにより、pickup_location_code のみを使用して配送先住所を正しく設定できるようになりました。
+* _LYNX-637_: Storefront Compatibility - テーブル名をプレフィックスやその他のマイナーな改善で取得するようにロジックを更新しました
+   * _メモの修正_：プレフィックスを含んだテーブル名を取得するようにロジックを更新しました（SCP の変更に関連）。
+* _LYNX-643_:setBillingAddressOnCart GQL の same_as_shipping フィールドを使用している場合、アドレス帳に保存が機能しない
+   * _修正点_:same_as_shipping フィールドを true に設定して setBillingAddressOnCart GraphQLを使用した場合に、配送先住所が顧客のアドレス帳に保存されない問題を修正しました。 現在、配送先住所は期待どおりに正しく保存されています。
+* _LYNX-650_: mutations の order_id を標準化する
+   * _メモを修正_：突然変異の order_id 入力を標準化し、注文キャンセル確認メールテンプレートを更新して、注文 ID ではなく増分 ID を公開しました。
+* _LYNX-651_:CustomerOrder で注文コメントが表示されない
+   * _修正点_:CustomerOrder の問題を解決し、ゲストおよび顧客注文のGraphQL クエリに注文コメントを含めるようにしました。
+* _LYNX-652_: original_item_price には割引を含めないでください
+   * _修正注意_：割引を除外するように、GraphQLの買い物かご品目価格の original_item_price のロジックを更新しました。
+* _LYNX-681_：バンドル製品の 1 つが在庫切れになっても、バンドル製品に「IN_STOCK」と表示される
+   * _修正メモ_：バンドル製品の product.stock_status が、バンドルされた項目の 1 つが在庫切れでも「IN_STOCK」と表示される問題を解決しました。
+* _LYNX-686_：削除されたカスタム属性の値が顧客に存在する場合、顧客クエリは内部サーバーエラーを返します
+   * _メモの修正_：削除されたカスタム属性に値がまだ保存されている場合に、顧客クエリが内部サーバーエラーを返す問題を修正しました。 現在は、存在しない属性がリクエストされた場合、適切なエラーメッセージが返されます。 顧客のカスタム属性を削除すると、必要なキャッシュが無効化されます。
+* _LYNX-687_：リターンリンクおよびキャンセル確認リンク用のアクションパラメーター
+   * _メモの修正_：返信およびキャンセルの確認メールに関連するリンク用に追加されたアクションパラメーター
+* _LYNX-689_：ゲストユーザーの確認 URL に orderRef がないため、注文ステータスページにリダイレクトされる
+   * _メモの修正_：ゲスト注文のキャンセル確認メールのリンクに orderRef パラメーターを追加しました
+* _LYNX-699_:placeOrder GQL の nullable 以外のフィールド「TaxItem.title」で null を返すことができません
+   * _修正点_:TaxItem.title の NULL 値が原因で、placeOrder ミューテーションが内部サーバーエラーで失敗する問題を修正しました。 現在は、このフィールドは常に有効な値を返すので、注文が確実に成功します。
+* _LYNX-702_: EstimateTotals：仮想商品タイプのディスカウントが null です
+   * _メモの修正_：仮想製品を含む買い物かごに割引コードが適用された場合に、割引に対して estimateTotals ミューテーションが null を返す問題を解決しました。
+* _LYNX-703_：バンドル製品から正しい割引率と割引額が返されない
+   * _修正注意_：カタログ品目価格に新しいプロパティ「catalog_discount」と「row_catalog_discount」が導入され、行レベルと単一品目レベルの両方で正しい割引額と割合が表示されるようになりました。
+* _LYNX-714_：製品レベルでのギフトメッセージ設定
+   * _修正メモ_：グローバルに無効になっているときに、ギフトメッセージが製品レベルで適用されない問題を修正しました。 特定の製品に対してギフトメッセージが有効になっている場合、updateCartItems ミューテーションを使用して正常に追加でき、正しく保存および反映されるようになりました。
+* _LYNX-757_：アクティブな買い物かごルールが適用されない場合、cart.rules クエリが空の配列ではなくエラーを返す
+   * _修正点_：アクティブな買い物かごルールが適用されていない場合に、エラーではなく空の配列を返すように、cart.rules クエリを修正しました。
+* _LYNX-778_:adobe-commerce/storefront-compatibility パッケージがインストールされている場合、OPTIONS メソッドを使用したGraphQL呼び出しで 500 応答コードが返される
+   * _修正メモ_:adobe-commerce/storefront-compatibility パッケージがインストールされている場合に、OPTIONS メソッドを使用したGraphQL呼び出しで 500 内部サーバーエラーが返される問題を修正しました。 エンドポイントが、期待どおりに 200/204 応答を正しく返すようになりました。
+
+### その他の開発者ツール
+
+* _AC-10658_:[ 問題 ] visual.phtml のHTML構文エラーを修正しました
+   * _メモの修正_:visual.phtml ファイルの start タグが正しく閉じられ、HTMLの適切な構文が保証されるようになりました。 以前は、start タグが正しく閉じられなかったので、HTML構文エラーが発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38247>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37457>
+* _AC-11474_:[ 問題 ] bin/magento maintenance:status コマンドで「active」が「enabled」に変更されました
+   * _メモの修正_：システムは、メンテナンスモードコマンドのステータスを「アクティブ」から「有効」に、および「非アクティブ」から「無効」に変更して、より正確なステータスメッセージを提供するようになりました。 以前は、メンテナンスモードコマンドのステータスメッセージが「アクティブ」または「非アクティブ」と表示されていたので、混乱が生じる可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38486>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38410>
+* _AC-12571_：カテゴリツリー内を移動すると、Redis で「Redis セッションが同時接続を超えました」というエラーが発生する
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38851>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0611e750>
+* _AC-12731_:dev/css/use_css_critical_path と組み合わせた CSP の問題
+   * _メモの修正_:「dev/css/use_css_critical_path」設定が有効な場合でも、システムはチェックアウトページで CSS ファイルを非同期で正しく読み込むようになり、これらのページが適切な CSS スタイルでレンダリングされるようになります。 以前は、制限されたコンテンツセキュリティポリシー（CSP）によりインライン JavaScriptが実行できず、CSS ファイルが期待どおりに読み込まれませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39020>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/39040>
+* _AC-13398_：仮想タイプを使用してプラグインを設定する場合、setup:di:compile コマンドでインターセプターメソッドを正しく生成できない
+   * _修正メモ_：仮想タイプを使用してプラグインを設定する際に、システムがインターセプターメソッドを正しく生成し、事前コンパイル済みまたはランタイムコンパイル済みにかかわらず、一貫した結果が得られるようになりました。 以前は、ランタイムのコンパイルと比較して事前コンパイルすると、システムが誤った結果を生成していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/33980>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38141>
+* _ACP2E-3631_:Adobe Commerce 2.4.7-p3 単体テストが失敗する
+   * _修正点_：リリースノートは必要ありません。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/982b1c42>
+
+### 支払い/支払い方法、注文
+
+* _AC-13699_:Papal ペイフロー後で使用するために保存されたクレジットカードの詳細が、保存された支払方法ページに表示されない
+   * _修正注_：以前の Papal の支払いフロー後で使用するために保存されたクレジットカードの詳細は、現在は固定クレジットカードの詳細が保存された支払い方法ページに表示されている保存された支払い方法ページに表示されませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/96dec499>
+
+### 支払額
+
+* _AC-13414_：クレジットカード（ペイフローリンク）の支払いが機能しない
+   * _修正注_：以前のエラーが発生しました（支払いが却下されました）、修正注文が正常に行われた後にクレジットカードで注文を行った。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a68324bc>
+* _ACP2E-2841_：ペイフローは、トランザクションを表示画面の「取得」ボタンをクリックするたびに、新しいトランザクションを作成します
+   * _メモの修正_：取引情報を正しく取得できるようになり、取引表示画面で取得ボタンがクリックされるたびに新しい支払い取引が作成されるようになりました。 以前は、取得ボタンをクリックすると、既に支払われた注文の新しい支払いトランザクションが誤って作成されていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b2286ecf>
+* _ACP2E-3028_：カナダの Paypal マーチャントアカウントの PDP に Paylater メッセージが表示されない
+   * _修正メモ_：アカウントの請求先住所または発送先から購入者の国を特定できる場合、システムは、カナダの PayPal 加盟店のアカウントに対して PayLater メッセージを製品詳細ページ（PDP）に正しく表示するようになりました。 以前は、パラメーターが見つからないため PayLater メッセージが表示されず、ブラウザーコンソールでエラーが発生していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/6a185204>
+* _ACP2E-3143_: PayPal 注文の払い戻しによりクレジット メモが重複する
+   * _修正メモ_:PayPal 支払いサービスの IPN 作成クレジットメモの同時実行問題を修正しました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d01ee51e>
+* _ACP2E-3163_:Paypal で買い物かご価格ルールが機能しない
+   * _修正注意_：お支払い方法で割引が適用されると、PayPal 側に正しい金額が表示されます
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7377de59>
+* _ACP2E-3208_:[Cloud] 特定の役割を持つユーザーはログインできません
+   * _修正点_:PayPal セクションのアクセス権のみを含む役割を持つ管理者ユーザーは、エラーなくログインできるようになりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/66dea0de>
+
+### パフォーマンス
+
+* _AC-11932_：デフォルトの製品属性設定の問題
+   * _メモの修正_：製品属性のデフォルトオプションの選択を解除できるようになり、属性に必ずしもデフォルトが設定されるわけではありません。 以前は、製品属性にデフォルトが設定されると、選択を解除する方法がなく、属性は常にデフォルトが設定されていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38703>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7d5e3906>
+* _AC-12000_:[ 問題 ] コードのクリーンアップを行い、新しい重要なヘッドブロックを追加して、アセット前に重要な css を移動します
+   * _修正メモ_：システムに新しい重要なヘッドブロックが含まれ、重要な CSS をアセットの前に移動するようになり、フロントエンドでより多くのカスタマイズとパフォーマンスの最適化が可能になります。 以前は、重要な CSS がアセットの前に配置されていなかったので、カスタマイズと最適化の機会が制限されていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38748>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/35580>
+* _AC-12176_:mysql ホストにポート情報が含まれている場合、テーマのコンパイルが中断する
+   * _修正メモ_：システムでは、ポート情報を含む MySQL ホスト設定を正しく処理できるようになり、テーマのコンパイルが成功するようになりました。 以前は、データベース接続の MySQL ホスト設定にポート情報が含まれていると、テーマのコンパイルが失敗していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38799>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38842>
+* _AC-13471_:Magento CLI での Symfony の CommandLoaderInterface のサポート
+   * _修正ノート_: この変更により、必要になるまでコマンドの遅延初期化が許可されるため、Magento CLI アプリの初期化時間が短縮されます。
+   * _GitHub の問題_: <https://github.com/magento/magento2/issues/29266>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/29355>
+* _ACP2E-2494_：買い物かごルールに製品属性を読み込む際のパフォーマンスの問題
+   * _修正点_：販売ルールのクエリパフォーマンスが向上しました。約 150 ミリ秒から 1 桁のミリ秒に向上しました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ba25af8a>
+* _ACP2E-2673_：価格部分インデックス作成のパフォーマンス
+   * _修正点_：インデックス作成プロセス内で使用される削除クエリの一部を最適化することで、価格の部分的なインデックス作成のパフォーマンスが向上しました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ba25af8a>
+* _ACP2E-2850_：非同期注文処理+利用条件を使用すると、マルチストアセットアップで注文が拒否される
+   * _修正点_：契約条件が有効になっているデフォルト以外の web サイトから発注された注文が処理されるようになりました。
+それらが自動的に拒否される前に。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/57a32313>
+* _ACP2E-2910_：注文 REST API 呼び出しの実行に時間がかかる
+   * _メモの修正_：システムは、妥当な期間内に Order Rest API 呼び出しを実行するようになったので、多数の注文を取得する際のパフォーマンスが向上しました。 以前は、Order Rest API 呼び出しの実行に時間がかかり、多数の注文を取得する際に遅延が発生していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/001e5188>
+
+### Pricing
+
+* _AC-11810_:Magento2.4.6-p4 受注 API 単純品目欠落価格
+   * _メモの修正_：注文 API でクエリした場合、システムにシンプルな製品の価格が正しく表示され、正確なデータ表現が保証されるようになりました。 以前は、API 応答でシンプルな製品の価格が誤ってゼロと表示されていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38603>
+* _AC-13855_: カタログ ルールの小数丸めエラー
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/276e0acd>
+
+### 製品
+
+* _AC-10535_：設定可能な関連商品名の特殊文字が、HTML エンティティに変換されています。
+   * _修正点_：設定可能な商品を編集する際に、関連する商品の名前に含まれる特殊文字が正しく保持され、HTMLのエンティティに変換されなくなりました。 以前は、設定可能な商品が編集された際に、関連する商品名の特殊文字がHTML エンティティに変換されていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38146>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38447>
+* _AC-10947_:ProductRepository 関数 GetById で正しいキャッシュキーが作成されない
+   * _修正メモ_：ストア ID が文字列または整数として渡されたかどうかに関係なく、システムは ProductRepository の関数 GetById にキャッシュキーを正しく作成するようになりました。 これにより、以降の呼び出しでメモリから製品が確実に取得されるので、パフォーマンスが向上します。 以前は、キャッシュキーの作成が正しくないために、同じパラメーターを指定しても、関数が呼び出されるたびにシステムがデータベースから製品を取得していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38384>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38433>
+* _AC-11992_: [ 問題 ] [MFTF]AdminClickAddOptionForBundleItemsActionGroup を追加しました
+   * _メモの修正_：システムに AdminClickAddOptionForBundleItemsActionGroup が含まれるようになり、管理パネルの機能が強化されました。 以前は、このアクショングループは使用できませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/30857>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/30838>
+* _AC-13173_:[ 問題 ]PHPDoc ブロックの誤字を修正
+   * _メモの修正_：システムは、$helper 変数宣言の PHPDoc 内の不明な参照変数を正しく削除し、コードの明確さと精度を向上させました。 以前は、PHPDoc 内のこの不明な参照変数が、コードの混乱や不正確な可能性を引き起こしていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38961>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38940>
+* _AC-13423_:[ 問題 ]Magentoのバンドルの破損とダウンロード可能な製品ページのレイアウトが修正されました >= 2.4.7
+   * _修正点_：バンドルおよびダウンロード可能な製品ページのレイアウトが修正され、すべてのデバイスで一貫した正しい表示が保証されました。 以前は、これらのページでは、製品情報メディアブロックの配置が変更されたことで、レイアウトの問題が発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39403>
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/commit/6cfb9b6b>
+* _AC-5969_: AlertProcessor – 引数#2 （$storeId）は int 型、指定された文字列にする必要があります
+   * _メモの修正_：ストア ID が正しいデータタイプであることを確認することで、製品のアラートメールが正しくトリガーされるようになりました。 以前は、ストア識別子のタイプの不一致が原因で、製品アラートメールが送信されていませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/35602>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0574ac23>
+* _ACP2E-2944_：特定の列で [Cloud] addFilterToMap 関数が機能しない
+   * _メモを修正_：カスタムモジュールを注文グリッドで使用できるようになりました。 以前は、カスタムモジュールの使用中にエラーが発生していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/3a7c4d17>
+
+### プロモーション
+
+* _ACP2E-2602_：招待からアカウントを作成する際に、顧客属性が表示されない
+   * _メモの修正_：顧客属性は、招待からアカウントを作成する際に使用できます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/39d54c2d>
+* _ACP2E-2627_：注文のキャンセルで失敗した支払で、クーポンごとの使用制限を持つクーポンコードがリリースされない
+   * _メモの修正_：システムでは、注文の作成またはキャンセル時にクーポンの使用を直ちに更新し、潜在的なデッドロックを防ぐためにルールの使用をキューに追加するようになりました。 これにより、「クーポンごとに使用」の制限を持つクーポンコードがリリースされ、支払いの失敗によって注文がキャンセルされた場合に再利用できるようになります。 以前は、システムはそのような場合に再利用するためにクーポンコードをリリースしていなかったため、クーポンコードが無効であるというエラーメッセージが表示されていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/c971859e>
+* _ACP2E-2811_: [Cloud] カタログのインデックス再作成ルール製品インデクサーが SQLSTATE[HY000 をスローする ]：一般エラー：2006 MySQL サーバーが終了しました。
+   * _修正メモ_：システムでは、「Magento\CatalogRule\Model\Indexer\IndexBuilder」の di.xml でカスタムの「batchCount」値を正しく処理するようになったので、大きなカタログのバッチサイズが正しくないことが原因で、カタログルール製品インデクサーのインデックス再作成中に「一般エラー：2006 MySQL サーバーが消失しました」などの SQL エラーが発生するのを防ぎます
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b2286ecf>
+* _ACP2E-3139_：割引数量ステップ（購入 X）属性を含む販売ルールが原因で、他のルールが適用されない
+   * _修正注意_：カート内の商品の数量がルールを適用するのに十分でない場合、以前に適用されたルールはカート価格ルールによってキャンセルされません。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d01ee51e>
+* _ACP2E-3332_：固定金額割引および「最大数量割引が適用される」販売ルールを発行します
+   * _修正メモ_：製品の限られた数量に対して固定金額割引を適用するように設定されている場合、買い物かごルール割引が適用される問題を修正しました。 以前は、「最大数量割引が適用先」の値を使用して、ルールの割引の計算だけでなく、買い物かごでの現在の品目の価格を計算していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/581b7ef1>
+* _ACP2E-3349_：買い物かごルール「買い物かご全体に対する固定金額割引」  アクションが割引を正しく適用しない
+   * _注意を修正_：クーポンコードは、管理領域から注文を作成するために使用される場合、大文字または小文字に関係なく適切に検証されます。 以前は、クーポンコードが設定済みの買い物かごルールコードの大文字と小文字が完全に一致しない場合、そのクーポンコードは検証されませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/581b7ef1>
+* _ACP2E-3374_：バックエンドでは、（期待される管理値ではなく）製品属性のデフォルトのストア値
+   * _メモの修正_：バックエンドでは、製品属性のデフォルトのストア値の代わりに管理値が使用されるようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/5184c067>
+* _ACP2E-3377_：買い物かごルール「買い物かご全体に対する固定金額割引」アクションで、バンドル製品を追加する際に、割引が正しく適用されません
+   * _修正点_：固定金額の買い物かごルールがバンドル製品に正しく適用されていませんでした。 これで、合計割引額を計算する際に、バンドルの子製品が考慮され、適切な割引計算が行われます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1366ae5e>
+* _ACP2E-3403_：割引計算の誤った買い物かご価格ルール
+   * _修正事項_：固定金額割引が正しく計算されるようになりました。 この修正の前は、バンドル製品の固定金額割引が正しく合計されていませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/0b488dd1>
+* _ACP2E-3406_：ルール条件内のネストされたカテゴリが表示されない
+   * _修正メモ_：レベル 3 カテゴリの下にネストされたカテゴリが、カテゴリ条件のマーケティングルールに表示されない問題を修正しました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/88660e79>
+* _ACP2E-3432_: usage_limit および uses_per_customer が salesrule_coupon テーブルで更新されない
+   * _修正メモ_：買い物かご価格ルールでクーポンごとの使用状況と顧客ごとの使用状況を更新すると、既存の自動生成クーポンに影響するようになりました。 以前は、新しい値が新しいクーポンにのみ影響していました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/88660e79>
+* _ACP2E-3456_：買い物かごの価格ルールで「次と等しいか、次よりも大きい」条件を使用している場合、親カテゴリが考慮されません。
+   * _修正注意_：詳細条件で使用される場合、買い物かご価格ルールが親カテゴリを正しく考慮するようになりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/93359343>
+* _ACP2E-3463_: Invalid discount calculation with priority
+   * _修正注意_：買い物かごの割引タイプ全体に固定金額が適用されている場合、以前のプロモーションで既に割引された買い物かご項目の金額が適切に計算されていませんでした。 今では、割引は正しく合計されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/078c387e>
+* _ACP2E-3472_: [CLOUD] 配送計算で買い物かごルールが考慮されない
+   * _修正点_：修正前は、地域条件を含む買い物かごルールが一貫して適用されていませんでした。 修正後、地域条件を含む買い物かごルールが適切に適用されています。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d4de4726>
+* _ACP2E-3491_：請求書で買い物かごルールの SKU 条件が失敗する。
+   * _修正点_：動的な価格でのバンドル製品の割引が請求書に正しく反映されるようになりました。 以前は、割引が請求書に反映されていませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/3f12d152>
+* _ACP2E-3498_：複数の買い物かご価格ルールを割引/特別価格の製品と同時に適用した場合の、誤った割引値
+   * _修正点_：修正前は、複数が適用されている場合、買い物かごルール全体の固定金額が適切に適用されていませんでした。 現在、固定金額割引の買い物かごルールが適切に適用されています。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1984c61c>
+
+### SEO
+
+* _AC-11907_：アクセントを使用して URL の書き換えを追加すると、読み込みが無限になる
+   * _メモの修正_：システムは、URL の書き換えをアクセントで正常に作成および機能するようになり、保存プロセス中に無限の読み込みを防ぎます。 以前は、アクセントを使用して URL の書き換えを追加すると、読み込み制限の問題が発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38692>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/44cef3a9>
+* _ACP2E-2641_：マルチストアで、第 3 レベルのカテゴリのカテゴリ URL の書き換えが間違っています
+   * _メモの修正_：カスタムスコープの URL キーを持つ親を持つ子に対して、正しい URL の書き換えを生成します
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ea79f7dd>
+* _ACP2E-2770_：製品名フィールドの 2 バイト文字（特殊文字）が、バックエンドでの製品の作成をブロックする
+   * _メモの修正_：製品 URL に表記変換を適用するかどうかを指定できる新しい設定が追加されました。 設定はこちらから利用できます：ストア/設定/カタログ/カタログ/検索エンジンの最適化：「製品 URL の表記変換を適用」
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b2286ecf>
+* _ACP2E-3383_:1 つのストアグループ内に複数のストアがある場合、url_rewrite エントリの作成が正しくありません
+   * _修正メモ_：修正前は、製品を編集する際に web サイトレベルで URL の書き換えを生成することしかできませんでした。 修正により、URL 書き換えをストアビューまたは Web サイトレベルで生成できる新しい設定（ストア/設定/カタログ/カタログ/検索エンジンの最適化、「製品 URL 書き換え範囲」オプションを使用「ストアビュー」、「Web サイト」）が導入されました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/2d627301>
+
+### 検索
+
+* _AC-13053_:「検索語句を入力して、もう一度試してください」を取得しています。 2.4.8-beta1 のストアフロントの詳細検索ページでエラーが発生する
+   * _メモの修正_：製品属性が「いいえ」に設定されている場合、「詳細検索」ページに検索結果が正しく表示されるようになりました。 以前は、製品属性を「いいえ」に設定して検索を実行すると、「検索語句を入力して、もう一度試してください」というエラーメッセージが表示されていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/3ea26621>
+* _AC-13721_:magento/module-open-search が、存在しない opensearch-php ブランチに依存する
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/05dc0bbf>
+* _ACP2E-3362_：サイズが大きい場合、search_query テーブルは読み込み時間のフロントエンドに大きな影響を与えます
+   * _メモを修正_：検索リストのページの読み込み時間が改善されました。 この修正を行う前は、クエリが最適化されていないので、検索リストページの表示が遅延していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/55615e61>
+
+### セキュリティ
+
+* _AC-11855_:[ 問題 ] フォント CSP ペイロードのポップアップがない
+   * _修正メモ_：システムは、コンテンツセキュリティポリシーディレクティブに違反せずにフォント「https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.woff&#39;」を読み込むことができるようになり、Paylater ポップアップが正しく表示されるようになりました。 以前は、コンテンツセキュリティポリシーディレクティブの違反が原因でフォントの読み込みが拒否され、Paylater ポップアップの表示に問題が発生していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38624>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/37401>
+* _AC-12035_:[ 問題 ]js.js DOM テキストをHTMLとして再解釈します
+   * _注意を修正_:innerText を使用すると、これらのプロパティは提供されたテキスト内のHTML特殊文字を自動的にエスケープするので、HTMLの挿入のリスクを回避できます。 この修正は、入力をHTMLと解釈するのではなくプレーンテキストとして扱うことで、クロスサイトスクリプティング（XSS）の脆弱性を防ぐのに役立ちます。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38767>
+* _ACP2E-3273_:ReCaptcha V2 がドイツ語のチェックアウトで正しく表示されません
+   * _メモの修正_：以前は、チェックアウトからのメールアドレスの下にある recaptcha は、ドイツ語などの長い単語を含む言語ではスタイルが設定されていないように見えます。 この後、recaptcha は、残りの領域からのすべての recaptcha 要素と同じように見えます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7377de59>
+* _ACP2E-3300_：管理者ログイン時の Captcha を使用しても、一部のユーザーではインタラクションが必要ない
+   * _メモを修正_：管理者ログインの ReCaptcha は、期待どおりに検証されます
+   * _GitHub コードの投稿_:<https://github.com/magento/security-package/commit/8f64ab3c>
+
+### 送料
+
+* _AC-10757_:[ 問題 ] tracking.phtml の誤字を修正しました – JS 関数「currier」を「carrier」に名称変更しました
+   * _修正点_：注文追跡テンプレートで使用されるJavaScript ハンドラー関数で、スペルミスのある「currier」ではなく「carrier」という用語が正しく使用されるようになりました。これにより、関数の適切な命名とコードの明確さが確保されます。 以前は、スペルミスのある「currier」という用語が使用されていたため、コードベースに混乱と不整合が生じる可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/34523>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/33414>
+* _AC-11938_:UPS REST 「出荷単位として KGS/IN、LBS/CM、または OZS/CM を使用することはできません。」
+   * _メモの修正_:UPS の料金がチェックアウトと買い物かごに表示されるようにします。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38618>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/493e01f5>
+* _AC-13172_:[ 問題 ] 顧客アドレスの変数のスペルを修正する
+   * _メモの修正_：システムで顧客アドレスの変数を正しく入力し、フロントエンドのアカウント領域に正確に表示できるようになりました。 以前は、これらの変数のスペルを間違えると、ローカルコードのレビュー中にエラーが発生する可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/32817>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/32815>
+* _ACP2E-2738_：トラッキングウィンドウに間違った配信予定日が表示される
+   * _修正点_:Fedex 通信事業者の正しい配送日を表示します。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/57a32313>
+* _ACP2E-2763_：送料無料が適用されていても、テーブルの料金が引き続き表示される
+   * _修正注意_：表クーポン適用後に送料無料が利用可能になった場合でも、送料方法が表示されるようになりました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/b2286ecf>
+* _ACP2E-2765_: MFTF テスト AdminCreatingShippingLabelTest は、資格情報が Jenkins 環境に追加されていないので失敗します
+   * _修正点_: mftf テスト修正
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ea79f7dd>
+* _ACP2E-3340_:FedEx Track API が REST 資格情報で機能しない
+   * _修正点_：以前の FedEx 統合では、トラッキング API 用に追加の API キーは必要ありませんでした。 トラッキング API キーをサポートする新しい設定が追加されました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ec7e32a9>
+* _ACP2E-3354_: [Cloud] FedEx ネゴシエートされたレートが REST で返されない
+   * _修正ノート_:修正前、FedExは、応答で送信されていない場合、特定の料金アカウント均等、FedExのドキュメントに従って送信する必要があります。 修正後、アカウント特定のレートは、私たち側からリクエストを変更することにより、応答で送信されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/55615e61>
+
+### ステージングとプレビュー
+
+* _ACP2E-3453_：一意のカスタムカテゴリ属性を使用している場合は、スケジュールされた更新を更新できません
+   * _メモの修正_：カテゴリに一意の属性がある場合、カテゴリのスケジュールされた更新を更新できなかった問題を修正しました
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/078c387e>
+
+### ターゲティング
+
+* _AC-9432_: [ 問題 ] メンテナンス許可リストで CIDR 範囲を使用できるようにします
+   * _修正点_：システムでは、メンテナンスモード許可 IP リストでの CIDR 範囲の使用がサポートされるようになり、メンテナンスモードをバイパスする IP アドレスの範囲が有効になりました。 以前は、メンテナンスモードでは、IP リストは個々の IP アドレスにのみメンテナンスモードのバイパスを許可していました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37943>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/30699>
+
+### 税
+
+* _AC-13295_:[ 問題 ] Feature/php8.1 コンストラクタープロパティの昇格 wee graph ql
+   * _メモを修正_：すべてのプロパティを、wee graph ql モジュールのコンストラクタープロパティのプロモーションに置き換えます。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/39309>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/36975>
+* _ACP2E-3193_：固定製品税（FPT）が設定可能な製品で機能しない
+   * _修正点_：設定可能な製品バリエーションの FPT が正しく機能するようになりました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ec7e32a9>
+
+### テストフレームワーク
+
+* _AC-11654_:JSON 列タイプが原因で統合テストが testDbSchemaUpToDate に失敗する
+   * _メモの修正_：統合テスト中に、システムはデータベーススキーマの JSON 列タイプを正しく認識するようになり、データベーススキーマと宣言型スキーマの不一致によるテストの失敗を防ぎます。 以前は、システムが MariaDB で JSON 列のタイプを LONGTEXT と誤って識別したので、統合テストが失敗していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/ef81f5a2>
+* _AC-13362_:[ 問題 ] PHPDoc 修正スペル
+   * _修正点_:PHPDoc のスペル修正により、IDE の非推奨メソッドが正しく認識されるようになりました。 以前は、PHPDoc のスペルエラーにより、IDE が特定のメソッドを非推奨として認識しなくなっていました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/31399>
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/pull/31398>
+* _AC-13478_:MAGETWO-95118：セッションの有効期限が切れた後に、永続的な買い物かごで動作を確認しています
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/7d5e3906>
+* _AC-13848_：静的テストを修正して、3D パーティの拡張機能による使用を有効にします
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/9e383b4d>
+* _ACP2E-3334_: [ 内部 ] 実行中またはログにフィクスチャ適用エラーが表示されません
+   * _修正メモ_ : 「– 
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/d4de4726>
+* _ACP2E-3458_: [MFTF] StorefrontCheckoutProcessForQuoteWithoutNegotiatedPricesTest
+   * _修正点_：修正された mftfs
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/078c387e>
+
+### UI フレームワーク
+
+* _AC-12128_:Prototype.js のセキュリティ脆弱性修正 CVE-2020-27511
+   * _修正点_:Prototype.js 1.7.3 のセキュリティ脆弱性 CVE-2020-27511 に対応するようにシステムを更新し、システム全体のセキュリティを強化しました。 このアップデート以前は、作成されたHTML タグを削除することで、Regular Expression Denial of Service （ReDOS）の影響を受けていました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12189_:Grunt less がソースマップに pub/ プレフィックスを使用
+   * _修正ノート_:gruntを使用する場合、システムはパスの/pubプレフィックスなしでless/cssソースマップを生成するようになり、Webサーバー構成での回避策の必要性がなくなりました。 以前は、ソースマップのパスで /pub プレフィックスを使用するには、正しく機能するために Web サーバーで特定の構成が必要でした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38837>
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/pull/38840>
+* _AC-12432_: Ui コンポーネントファイルフィールド
+   * _メモの修正_：システムは、UI コンポーネントフォームのファイルフィールドを正しく検証し、ファイルを選択したときにフォームをエラーなしで送信できるようになりました。 以前は、ファイルが選択されている場合でも検証が失敗し、フォームが送信されませんでした。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/38908>
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/pull/39004>
+* _AC-12645_:[ 問題 ]js コンソールの日付形式が改善されました：12 時間から 24 時間に切り替え…
+   * _修正ノート_:JSコンソールの日付形式を改善しました:12時間から24時間に切り替えます
+   * _GitHub の問題_: <https://github.com/magento/magento2/issues/38983>
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/pull/38972>
+* _AC-12650_:開発者モードで [問題] より少ないファイルに対して sourceMap 生成が追加されます
+   * _修正ノート_:システムは、開発者モードのときにより少ないファイルのソースマップを生成するようになり、スタイルのソースを簡単に識別できるようになりました。 以前は、より少ないコンパイルで開発者モードでシステムを実行する場合、スタイルのソースを特定するサーバーサイド困難でした。
+   * _GitHub の問題_: <https://github.com/magento/magento2/issues/38982>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38977>
+* _AC-1306_：無効なモジュールに静的コンテンツがデプロイされています
+   * _修正ノート_:システムは、無効なモジュールに関連するCSSを最終的なCSS出力ファイルから除外し、不要なスタイルがロードされないようにするようになりました。 以前は、無効なモジュールに関連するCSSが最終的なCSS出力ファイルに含まれていたため、余分な不要なスタイルがロードされていました。
+   * _GitHub の問題_: <https://github.com/magento/magento2/issues/24666>
+   * _GitHub コードの貢献_: <https://github.com/magento/magento2/pull/32922>
+* _AC-13459_：最小在庫しきい値を使用した「在庫切れ」の並べ替えで一貫性のない動作が発生する
+   * _メモの修正_：システムでは、設定された最小在庫しきい値に準拠し、在庫切れの項目を一貫してリストの下部に移動し、在庫レベルに基づいてカタログ内の製品を正しく並べ替えるようになりました。 以前は、並べ替え動作に一貫性がなく、アイテムが在庫レベルに基づいて正しい順序で表示されないことがありました。また、カテゴリ階層を保存、更新、または変更した後、並べ替えの変更が予期せず発生する可能性がありました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/47b448e2>
+* _AC-13472_:require.js の読み込み問題に関するエラーレポートの改善を目的とした提案
+   * _修正メモ_：この PR により、requirejs でコンポーネントの読み込みに失敗した場合のエラーメッセージが改善されます。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/36761>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/38971>
+* _AC-14004_:2.4 で PHP 8.4 非推奨エラーが原因でビルドエラーが発生する – 開発
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1da9ba6f>
+* _AC-9007_:[ 問題 ] フロントエンドでバックエンドブロックコンテキストを読み込まない
+   * _メモの修正_：システムでは、バックエンドのブロックコンテキストがフロントエンドに読み込まれないようにし、不要なバックエンドセッションの作成や、セッションのロックの可能性を防ぐようになりました。 以前は、システムがフロントエンドでバックエンドブロックコンテキストを誤って読み込んでいたため、バックエンドセッションが作成され、セッションロックが発生する可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37617>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/36368>
+* _AC-9168_: [ 問題 ] 不要なスクリプトを削除するレビューの概要
+   * _修正点_：より効率的で読み取り可能なコードを提供するために、インライン CSS スタイルを使用する代わりに、評価セクションから不要なJavaScript スクリプトを削除することで、ページの読み込み時間が最適化されるようになりました。 以前は、評価セクションにJavaScript スクリプトを使用すると、ページの読み込み時間が遅くなる可能性がありました。
+   * _GitHub の問題_:<https://github.com/magento/magento2/issues/37776>
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/pull/34643>
+* _ACP2E-2529_:Recaptcha が有効な場合に、ギフトカードの残高を確認する際の例外
+   * _メモの修正_：ユーザーは、表示およびカート編集画面でギフトカードの残高を取得できます。 以前は、これらの詳細は、reCAPTCHA が有効な場合は表示されませんでした。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2-page-builder/commit/4a2795ea>
+* _ACP2E-2729_: [ 説明 ] 機能リクエストの ADA コンプライアンス
+   * _修正点_：システムは、サポートされていない CSS プロパティを削除し、print.css ファイル内のサポートされているプロパティに置き換えることで、ADA への準拠を確保するようになりました。 以前は、サポートされていない CSS プロパティを使用すると、ブラウザーの互換性の問題が発生していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/57a32313>
+* _ACP2E-3061_:[Cloud] AC 2.4.4-p8 の effect-drop.js の混乱ライブラリコード
+   * _メモを修正_：システムで effect-drop.js ライブラリが正しく実装され、jQuery UI エフェクトが適切に機能するようになりました。 以前は、effect-drop.js ライブラリが effect-clip.js ライブラリで誤って上書きされ、jQuery UI エフェクトで潜在的な問題が発生していました。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/35b1b1da>
+* _ACP2E-3367_: サイトヘッダー |お客様からのお知らせセクションを区切る特殊文字
+   * _修正点_：修正後、特殊文字が「ようこそ」セクションに正しく表示されます。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/1366ae5e>
+* _ACP2E-3561_：顧客セグメントの編集が daterange で失敗する
+   * _修正点_:1 つの日付のみを編集した場合、日付範囲条件で顧客セグメントを保存することが可能です。
+   * _GitHub コードの投稿_:<https://github.com/magento/magento2/commit/a52ff98f>

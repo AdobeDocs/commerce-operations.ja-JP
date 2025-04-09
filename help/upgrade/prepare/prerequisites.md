@@ -2,9 +2,9 @@
 title: 前提条件を完了
 description: 次の前提条件の手順を完了して、アップグレード用のAdobe Commerce プロジェクトを準備します。
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: d19051467efe7dcf7aedfa7a29460c72d896f5d4
+source-git-commit: df185e21f918d32ed5033f5db89815b5fc98074f
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1866'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,60 @@ Adobe Commerceを使用するには、Elasticsearchまたは OpenSearch がイ�
 
 一部のサードパーティのカタログ検索エンジンは、Adobe Commerce検索エンジンの上で実行されます。 拡張機能を更新する必要があるかどうかを判断するには、ベンダーにお問い合わせください。
 
+### MySQL 8.4 の変更
+
+Adobe added support for MySQL 8.4 in the 2.4.8 release.
+This section describes major changes to MySQL 8.4 that developers should be aware of.
+
+#### Deprecated non-standard key
+
+外部キーとして一意でないキーや部分的なキーを使用することは非標準であり、MySQL 8.4 では非推奨です。MySQL 8.4.0 以降では、[`restrict_fk_on_non_standard_key`](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_restrict_fk_on_non_standard_key) を `OFF` に設定するか、`--skip-restrict-fk-on-non-standard-key` オプションを使用してサーバーを起動することで、このようなキーを明示的に有効にする必要があります。
+
+#### MySQL 8.0 （またはそれ以前のバージョン）から MySQL 8.4 へのアップグレード
+
+MySQL をバージョン 8.0 からバージョン 8.4 に適切にアップグレードするには、次の手順に従う必要があります。
+
+1. メンテナンスモードを有効にする：
+
+   ```bash
+   bin/magento maintenance:enable
+   ```
+
+1. データベースのバックアップを作成します。
+
+   ```bash
+   bin/magento setup:backup --db
+   ```
+
+1. MySQL をバージョン 8.4 にアップグレードしてください。
+1. `my.cnf` ファイルの `[mysqld]` で、`restrict_fk_on_non_standard_key` を `OFF` に設定します。
+
+   ```bash
+   [mysqld]
+   restrict_fk_on_non_standard_key = OFF 
+   ```
+
+   >[!WARNING]
+   >
+   >`restrict_fk_on_non_standard_key` の値を `OFF` に変更しない場合、読み込み時に次のエラーが発生します。
+   >
+   ```sql
+   > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
+   >```
+1. MySQL サーバーを再起動します。
+1. バックアップしたデータを MySQL に読み込みます。
+1. キャッシュのクリーンアップ：
+
+   ```bash
+   bin/magento cache:clean
+   ```
+
+1. メンテナンスモードを無効にする：
+
+   ```bash
+   bin/magento maintenance:disable
+   ```
+
 #### MariaDB
 
 {{$include /help/_includes/maria-db-config.md}}
@@ -76,7 +130,7 @@ Elasticsearchには、Java Development Kit （JDK） 1.8 以降が必要です�
 
 #### OpenSearch
 
-OpenSearch は、Elasticsearch 7.10.2 のオープンソースのフォークで、Elasticsearchのライセンスの変更に従っています。 Adobe Commerceの次のリリースでは、OpenSearch のサポートが導入されています。
+OpenSearch is an open-source fork of Elasticsearch 7.10.2, following Elasticsearch&#39;s licensing change. Adobe Commerceの次のリリースでは、OpenSearch のサポートが導入されています。
 
 * 2.4.6 （OpenSearch には別のモジュールと設定があります）
 * 2.4.5
@@ -124,7 +178,7 @@ Elasticsearch 8.x のサポートは、Adobe Commerce 2.4.6 で導入されま�
 
    Elasticsearch 8 のインストール中、特に `psr/http-message` との間で依存関係の競合が発生した場合は、次の手順に従ってこの問題を解決できます。
 
-   1. まず、他の依存関係を更新せずにElasticsearch 8 モジュールを必要とします。
+   1. First, require the Elasticsearch 8 module without updating other dependencies:
 
       ```bash
       composer require magento/module-elasticsearch-8 --no-update
@@ -302,7 +356,7 @@ Adobe Commerce 2.4 には、一部のデータをシリアル化されたから 
 
 ## ファイルシステムの権限の確認
 
-セキュリティ上の理由から、Adobe Commerceにはファイルシステムに対する特定の権限が必要です。 権限は _[所有権](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_ とは異なります。 所有権によってファイルシステムに対してアクションを実行できるユーザーが決まり、権限によってユーザーが実行できる操作が決まります。
+セキュリティ上の理由から、Adobe Commerceにはファイルシステムに対する特定の権限が必要です。 権限は _[所有権](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_ とは異なります。 Ownership determines who can perform actions on the file system; permissions determine what the user can do.
 
 ファイルシステム内のディレクトリは、[ ファイルシステム所有者 ](../../installation/prerequisites/file-system/overview.md) グループによって書き込み可能でなければなりません。
 

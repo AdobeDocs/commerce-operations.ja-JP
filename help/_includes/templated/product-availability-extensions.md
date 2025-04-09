@@ -1,7 +1,7 @@
 ---
-source-git-commit: c27867be74dfaa1bcd782a23db27db29fdccc4e3
+source-git-commit: 8ac03fa9536de8b40b4f049c0fca0874ef09c757
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,7 @@ ht-degree: 0%
   <thead>
     <tr>
       <th>Adobe Commerceバージョン</th>
+      <th>2.4.8</th>
       <th>2.4.7</th>
       <th>2.4.6</th>
       <th>2.4.5</th>
@@ -22,6 +23,7 @@ ht-degree: 0%
   <tbody>
       <tr>
           <td>Adobe CommerceのAdobe I/O Events</td>
+          <td>1.8+</td>
           <td>1.5 以上</td>
           <td>1.5 以上</td>
           <td>1.5 以上</td>
@@ -33,6 +35,7 @@ ht-degree: 0%
       </tr>
       <tr>
           <td>Adobe Commerce管理 UI SDK</td>
+          <td>2.0 以上</td>
           <td>1.3 以降</td>
           <td>1.3 以降</td>
           <td>1.3 以降</td>
@@ -44,6 +47,7 @@ ht-degree: 0%
       </tr>
       <tr>
           <td>Adobe Commerce Webhook</td>
+          <td>1.5 以上</td>
           <td>1.2 以上</td>
           <td>1.2 以上</td>
           <td>1.2 以上</td>
@@ -59,6 +63,7 @@ ht-degree: 0%
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
+          <td>1.0.20+</td>
           <td>
               <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-commerce">Composer</a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-release-notes"> リリースノート </a><br/>
@@ -70,6 +75,7 @@ ht-degree: 0%
           <td>1.0.0 以上</td>
           <td>1.0.0 以上</td>
           <td>1.0.0 以上</td>
+          <td>1.0.0 以上</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-audiences.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation#release-notes"> リリースノート </a><br/>
@@ -77,35 +83,38 @@ ht-degree: 0%
       </tr>
       <tr>
           <td>B2B</td>
-          <td>1.5.0 （PHP 8.3）</td>
-          <td>1.3.5 以降</td>
+          <td>1.5.2</td>
+          <td>1.5+<br /> 1.4+</td>
+          <td>1.5+<br /> 1.4+<br /> 1.3.5+</td>
           <td>1.3.4</td>
           <td>1.3.3</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html">Composer</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html"> リリースノート </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes"> リリースノート </a><br/>
           </td>
       </tr>
       <tr>
           <td>データ接続</td>
+          <td>3.3.0 以降</td>
           <td>3.1.1 以降</td>
           <td>2.1.1 以降</td>
           <td>1.0.0 以上</td>
           <td>1.0.0 以上</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html"> リリースノート </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes"> リリースノート </a><br/>
           </td>
       </tr>
       <tr>
           <td>ページビルダー</td>
           <td>-</td>
+          <td>-</td>
           <td>1.7.3</td>
           <td>1.7.2</td>
           <td>1.7.1</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html"> ユーザーガイド </a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html"> リリースノート </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview"> ユーザーガイド </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/release-notes"> リリースノート </a><br/>
           </td>
       </tr>
   </tbody>

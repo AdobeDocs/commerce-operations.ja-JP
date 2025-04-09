@@ -2,7 +2,7 @@
 title: Beta リリース
 description: Adobe Commerce ベータ版リリースとリリースへの参加方法について説明します。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: c27867be74dfaa1bcd782a23db27db29fdccc4e3
+source-git-commit: c523b57270370d87be0f2ab0513f7908bb0a7173
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Adobe Commerce Optimizerについて [ 詳細情報 ](https://experienceleague.a
 
 これらの新しい条件により、検索クエリのフィルタリングメカニズムが強化され、検索結果を絞り込むことができます。 これらの新しい条件は、メインの検索クエリには影響しません。 ベータ版に参加するには、[commerce-storefront-services](mailto:commerce-storefront-services@adobe.com) にメールリクエストを送信します。
 
-Live Search ベータ版をインストールするには、[Live Search ガイド ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta) を参照してください。
+Live Search ベータ版をインストールするには、[Live Search ガイド ](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta) を参照してください。
 
 ### IBM Sterling Order Management System Integration （Private Beta）
 
@@ -88,7 +88,7 @@ IBMスターリングOrder Management向けのこの統合アクセラレータ�
 - GraphQLの改善点
 - 一般的な品質のバグ修正
 - コミュニティの投稿
-- [Adobe Commerce サービスとの互換性をサポートするために必要な変更 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- [Adobe Commerce サービスとの互換性をサポートするために必要な変更 ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
 
 #### 命名規則とスケジュール
 

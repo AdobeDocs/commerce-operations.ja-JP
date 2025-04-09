@@ -1,8 +1,8 @@
 ---
 title: インデクサーの管理
-description: Commerce インデクサーの表示および管理方法の例を参照してください。
+description: Commerce インデクサー表示および管理方法の例を参照してください。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 9a92204369d3a8310aadfb94f8193a6c89f78c30
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-すべてのインデクサーのリストを表示するには：
+すべてのインデクサーのリスト表示には:
 
 ```bash
 bin/magento indexer:info
@@ -39,7 +39,7 @@ salesrule_rule                           Sales Rule
 ```
 
 >[!NOTE]
-> Live Search、カタログサービス、製品Recommendationsを使用するAdobe Commerce マーチャントには、[SaaS ベースの価格インデックス作成 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html) を使用するオプションがあります。
+> ライブSearch、カタログサービス、または製品Recommendationsを使用しているAdobe Systemsコマースマーチャントには、 [SaaSベースの価格インデックス](https://experienceleague.adobe.com/docs/commerce/price-indexer/index.html)を使用するオプションがあります。
 
 ## インデクサーのステータスの表示
 
@@ -162,19 +162,19 @@ bin/magento indexer:show-dimensions-mode
 MAGE_INDEXER_THREADS_COUNT=3 php -f bin/magento indexer:reindex catalogsearch_fulltext
 ```
 
-## インデクサーをリセット
+## リセット インデクサー
 
-すべてのインデクサーまたは特定のインデクサーのステータスを無効にするには、このコマンドを使用します。
+このコマンドは、すべてのインデクサーまたは特定のインデクサーの状態を無効にするために使用します。
 
-コマンドオプション：
+コマンドオプション:
 
 ```bash
 bin/magento indexer:reset [indexer]
 ```
 
-ここで、```[indexer]``` はインデクサーのスペース区切りのリストです。 `[indexer]` を省略すると、すべてのインデクサーが無効になります。
+ここで、 ```[indexer]``` はスペースで区切られたインデクサーのリストです。 `[indexer]`を省略すると、すべてのインデクサーが無効になります。
 
-結果の例：
+サンプル結果:
 
 ```
 Design Config Grid indexer has been invalidated.
@@ -190,7 +190,7 @@ Product Price indexer has been invalidated.
 Catalog Search indexer has been invalidated.
 ```
 
-## インデクサーの設定
+## インデクサーの構成
 
 このコマンドを使用して、次のインデクサーオプションを設定します。
 
@@ -229,25 +229,25 @@ Catalog Search:                                    Update on Save
 
 >[!IMPORTANT]
 >
->[!DNL Customer Grid] を `schedule` ではなく `realtime` に設定してください。 [!DNL Customer Grid] のインデックスは、[!UICONTROL Update on Save] オプションを使用してのみ再作成できます。 このインデックスは、`Update by Schedule` オプションをサポートしていません。 次のコマンドラインを使用して、保存時にこのインデクサーを更新するように設定します：`php bin/magento indexer:set-mode realtime customer_grid`
+>[!DNL Customer Grid]には、`schedule`ではなく `realtime` を使用するように設定してください。[!DNL Customer Grid]は、[!UICONTROL Update on Save]オプションを使用した場合のみインデックスを再作成できます。このインデックスは `Update by Schedule` オプションをサポートしていません。 次のコマンドラインを使用して、保存時にこのインデクサーが更新されるように設定します。 `php bin/magento indexer:set-mode realtime customer_grid`
 >
->_実装プレイブック_ の [ インデクサー設定のベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) を参照してください。
+>_実装実践ブック_&#x200B;の[インデクサー構成のベスト プラクティス](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)を参照してください。
 
 >[!INFO]
 >
->インデクサーモードを切り替える前に、web サイトを [ メンテナンス ](../../installation/tutorials/maintenance-mode.md) モードと [cron ジョブを無効 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) に設定します。 これにより、データベースがロックされるのを防ぐことができます。
+>インデクサーモードを切り替える前に、Web サイトを [メンテナンス](../../installation/tutorials/maintenance-mode.md) モードに設定し、cron ジョブを [無効にする](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs)。 これにより、データベースがロックされるのを防ぐことができます。
 
-インデクサー設定を指定するには：
+インデクサー構成を指定するには:
 
 ```bash
 bin/magento indexer:set-mode {realtime|schedule} [indexer]
 ```
 
-ここで、
+どこ：
 
-- `realtime` – 保存時に更新する選択したインデクサーを設定します。
-- `schedule` - cron スケジュールに従って、指定されたインデクサーを保存するように設定します。
-- `indexer` - インデクサーのスペース区切りのリストです。 すべてのインデクサーを同じ方法で設定する場合は、`indexer` を省略します。
+- `realtime`- 選択したインデクサーが保存時に更新されるように設定します。
+- `schedule`- 指定したインデクサーが cron スケジュールに従って保存されるように設定します。
+- `indexer`- インデクサーのスペース区切りのリストです。 すべてのインデクサーを同じ方法で構成するには、 `indexer` を省略します。
 
 たとえば、スケジュールに従って更新するカテゴリ製品と製品カテゴリのインデクサーのみを変更するには、次のように入力します。
 

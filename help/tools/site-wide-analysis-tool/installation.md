@@ -1,9 +1,9 @@
 ---
 title: インストールガイド
-description: このガイドを使用して、Web サイトに  [!DNL Site-Wide Analysis Tool]  をインストール
+description: 'このガイドを使用して、Web サイトをインストール [!DNL Site-Wide Analysis Tool] '
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
 feature: Configuration, Install
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 0%
@@ -14,23 +14,23 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->2024 年 4 月 23 日（PT）より、Adobe Commerceのオンプレミス環境のお客様の [!DNL Site-Wide Analysis Tool] は廃止されます。
+>2024 年 4 月 23 日より、 [!DNL Site-Wide Analysis Tool] はすべての Adobe Systems Commerce オンプレミスのお客様に対して廃止されます。
 
-[!DNL Site-Wide Analysis Tool] は、クラウドインフラストラクチャーのインストール時にAdobe Commerceのセキュリティと操作性を確保するために、24 時間 365 日、リアルタイムのパフォーマンスモニタリング、レポート、推奨事項を提供します。 また、使用可能なパッチおよびインストール済みのパッチ、サードパーティの拡張機能、Adobe Commerceのインストールに関する詳細情報も提供されます。
+この [!DNL Site-Wide Analysis Tool] は、クラウドインフラストラクチャーインストールでのAdobe Systemsコマースのセキュリティと操作性を確保するための24時間年中無休のリアルタイムパフォーマンス監視、レポート、および推奨事項を提供します。 また、使用可能なパッチとインストールされているパッチ、サードパーティ拡張機能、および Adobe Systems Commerce のインストールに関する詳細情報も提供します。
 
 >[!INFO]
 >
->[!DNL Site-Wide Analysis Tool] ールとレポートの生成について [ 有効化する方法 ](../site-wide-analysis-tool/access.md) を説明します。
+>[!DNL Site-Wide Analysis Tool]を有効にしてレポートを生成する[方法について](../site-wide-analysis-tool/access.md)説明します。
 
-Adobe Commerceをオンプレミスでインストールしている場合は、このツールを使用するために、インフラストラクチャにエージェントをインストールします。 クラウドインフラストラクチャプロジェクトのAdobe Commerceにエージェントをインストールする必要はありません。
+Adobe Systems Commerce のオンプレミスインストールがある場合は、ツールを使用するためにインフラストラクチャにエージェントをインストールします。 クラウドインフラストラクチャープロジェクトの Adobe Systems Commerce にエージェントをインストールする必要はありません。
 
-## 代理人
+## エージェント
 
-[!DNL Site-Wide Analysis Tool] Agent では、Adobe Commerceのオンプレミスインストールに [!DNL Site-Wide Analysis Tool] を使用できます。
+[!DNL Site-Wide Analysis Tool] エージェントを使用すると、Adobe Systems Commerce のオンプレミスインストールに[!DNL Site-Wide Analysis Tool]を使用できます。
 
-[!DNL Site-Wide Analysis Tool] Agent は、アプリケーションおよびビジネスデータを収集して分析し、インストールの状態に関する追加のインサイトを提供することで、カスタマーエクスペリエンスを向上させます。 アプリケーションを監視し、パフォーマンス、セキュリティ、可用性、アプリケーションの問題を特定するのに役立ちます。
+[!DNL Site-Wide Analysis Tool] Agent は、アプリケーションデータとビジネス データを収集して分析し、インストールの正常性に関する追加の分析情報を提供して、エクスペリエンスを向上させることができます。アプリケーションを監視し、パフォーマンス、セキュリティ、可用性、アプリケーションの問題を特定するのに役立ちます。
 
-エージェントをインストールするには、次の手順が必要です。
+エージェントをインストールするには、次の手順を実行する必要があります。
 
 1. システム要件を確認します。
 
@@ -42,7 +42,7 @@ Adobe Commerceをオンプレミスでインストールしている場合は、
 
 >[!INFO]
 >
->このエージェントは、複数ノードのAdobe Commerceのインストールをサポートします。 各ノードにエージェントをインストールして設定します。
+>エージェントは、マルチノード Adobe Systems Commerce のインストールをサポートします。 各ノードにエージェントをインストールして設定します。
 
 ## 必要システム構成
 
@@ -78,7 +78,7 @@ Adobe Commerceをオンプレミスでインストールしている場合は、
 
 ## [!DNL Commerce Services Connector]
 
-エージェントを使用するには、[[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 拡張機能がシステムにインストールされ、API キーを使用して [ 設定 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) されている必要があります。 拡張機能がインストールされていることを確認するには、次のコマンドを実行します。
+エージェントを使用するには、[[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) 拡張機能がシステムにインストールされ、API キーを使用して [ 設定 ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) されている必要があります。 拡張機能がインストールされていることを確認するには、次のコマンドを実行します。
 
 ```bash
 bin/magento module:status Magento_ServicesId
@@ -86,27 +86,27 @@ bin/magento module:status Magento_ServicesId
 
 拡張機能をインストールし、別のサービス用の既存の API キーを使用して設定した場合は、**API キーを再生成し** エージェントのAdobe Commerce管理者で更新する必要があります。
 
-1. Web サイトを [ メンテナンスモード ](../../installation/tutorials/maintenance-mode.md) にします。
+1. Web サイトを [メンテナンスモード](../../installation/tutorials/maintenance-mode.md)にします。
 
-1. [account.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671) にログインします。
+1. [account.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671)にログインします。
 
    >[!NOTE]
    >
-   > アカウントへのアクセスで問題が発生した場合は、[Adobe Commerce サポートまたは Cloud アカウントにログインできません ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) のトラブルシューティングヘルプを参照してください。
+   > アカウントにアクセスできない場合は、トラブルシューティングのヘルプについて [Adobe Systems Commerce サポートまたはクラウドアカウントにログインできない](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) を参照してください。
 
-1. 「**[!UICONTROL API Portal]**」をクリックします。
+1. [ **[!UICONTROL API Portal]**] をクリックします。
 
-1. 既存の API キーの横にある「**[!UICONTROL Delete]**」をクリックします。
+1. 既存の API キーの横にある **[!UICONTROL Delete]** をクリックします。
 
-1. [ 設定 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 新しい API キー。
+1. [設定](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) 新しい API キー。
 
 >[!IMPORTANT]
 >
-> API ポータルで新しいキーを生成した場合は、直ちに [!DNL Admin configuration] の API キーを更新します。 新しいキーを生成し、[!DNL Admin] のキーを更新しない場合、SaaS 拡張機能は機能しなくなり、貴重なデータが失われます。
+> API ポータルで新しいキーを生成した場合は、すぐに [!DNL Admin configuration]で API キーを更新してください。 新しいキーを生成し、 [!DNL Admin]内のキーを更新しないと、SaaS拡張機能は機能しなくなり、貴重なデータが失われます。
 
 拡張機能がインストールされていない場合は、次の手順を使用してインストールします。
 
-1. `composer.json` ファイルに拡張子を追加してインストールします。
+1. 拡張機能を `composer.json` ファイルに追加してインストールします。
 
    ```bash
    composer require magento/services-id
@@ -130,7 +130,7 @@ bin/magento module:status Magento_ServicesId
    bin/magento cache:clean
    ```
 
-1. [API キーを設定 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) して、拡張機能をシステムに接続します。
+1. [API キーを設定 ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) して、拡張機能をシステムに接続します。
 
 ## エージェントのインストール
 
@@ -140,9 +140,9 @@ bin/magento module:status Magento_ServicesId
 >
 >エージェントのインストール後、新しいリリースが使用可能になると自動的にアップデートされます。
 
-### スクリプト化
+### スクリプト
 
-1. シェルスクリプトをダウンロードして実行します。
+1. シェルスクリプト無償体験版で試してみるして実行します。
 
    ```bash
    bash -c "$(wget -qO - https://raw.githubusercontent.com/magento-swat/install-agent-helpers/main/install.sh)"
@@ -150,7 +150,7 @@ bin/magento module:status Magento_ServicesId
 
    >[!TIP]
    >
-   >ルートのAdobe Commerce プロジェクトディレクトリの外部にエージェントをインストールすることをお勧めします。
+   >ルート Adobe Systems Commerce プロジェクト ディレクトリの外部にエージェントをインストールすることをお勧めします。
 
 1. インストールを確認します。
 
@@ -163,21 +163,21 @@ bin/magento module:status Magento_ServicesId
    Success exit.
    ```
 
-1. エージェントをダウンロードしてインストールした後、以下のいずれかの方法で [ 実行するように設定 ](#run-the-agent) します。
+1. エージェントをダウンロードしてインストールしたら、次のいずれかの方法を使用して [エージェントを実行するように構成](#run-the-agent) します。
 
-   - [ サービス ](#service) （ルートアクセス権がある場合は推奨）
+   - [サービス](#service) (ルートアクセス権がある場合は推奨)
 
    - [Cron](#cron)
 
 ### 手動 {#manual}
 
-[ シェルスクリプト ](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) を使用してエージェントをインストールしない場合は、次の手順に従って手動でインストールする必要があります。
+エージェントのインストールに [シェルスクリプト](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) を使用したくない場合は、次の手順に従って手動でインストールする必要があります。
 
-1. エージェントのダウンロード先となるディレクトリを作成します。
+1. エージェントダウンロードするディレクトリ作成。
 
    >[!TIP]
    >
-   >ルートのAdobe Commerce プロジェクトディレクトリの外部にエージェントをインストールすることをお勧めします。
+   >ルート Adobe Systems Commerce プロジェクト ディレクトリの外部にエージェントをインストールすることをお勧めします。
 
 1. バイナリファイルをダウンロードして解凍します。
 
@@ -185,35 +185,35 @@ bin/magento module:status Magento_ServicesId
    >
    >[!DNL Site-Wide Analysis Tool] を使用するには、まずAdobe Commerce管理者からダッシュボードにアクセスする際に表示される利用条件を読み、同意する必要があります。
 
-   **AMD64** アーキテクチャの場合：
+   **AMD64** アーキテクチャの場合:
 
-   1. ランチャーアーカイブをダウンロードします。
+   1. ランチャーアーカイブ無償体験版で試してみるします。
 
       ```bash
       curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-amd64.tar.gz
       ```
 
-   1. ランチャーアーカイブを解凍します。
+   1. ランチャーアーカイブを展開します。
 
       ```bash
       tar -xf launcher.linux-amd64.tar.gz
       ```
 
-   **ARM64** アーキテクチャの場合：
+   **ARM64** アーキテクチャの場合:
 
-   1. ランチャーアーカイブをダウンロードします。
+   1. ランチャーアーカイブ無償体験版で試してみるします。
 
       ```bash
       curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
-   1. ランチャーアーカイブを解凍します。
+   1. ランチャーアーカイブを展開します。
 
       ```bash
       tar -xf launcher.linux-arm64.tar.gz
       ```
 
-1. *（オプション）* チェックサムファイルの署名を確認します。
+1. *(オプション)* チェックサムファイルの署名を検証します。
 
    ```bash
    echo -n "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQ0lqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FnOEFNSUlDQ2dLQ0FnRUE0M2FBTk1WRXR3eEZBdTd4TE91dQpacG5FTk9pV3Y2aXpLS29HendGRitMTzZXNEpOR3lRS1Jha0MxTXRsU283VnFPWnhUbHZSSFhQZWt6TG5vSHVHCmdmNEZKa3RPUEE2S3d6cjF4WFZ3RVg4MEFYU1JNYTFadzdyOThhenh0ZHdURVh3bU9GUXdDcjYramFOM3ErbUoKbkRlUWYzMThsclk0NVJxWHV1R294QzBhbWVoakRnTGxJUSs1d1kxR1NtRGRiaDFJOWZqMENVNkNzaFpsOXFtdgorelhjWGh4dlhmTUU4MUZsVUN1elRydHJFb1Bsc3dtVHN3ODNVY1lGNTFUak8zWWVlRno3RFRhRUhMUVVhUlBKClJtVzdxWE9kTGdRdGxIV0t3V2ppMFlrM0d0Ylc3NVBMQ2pGdEQzNytkVDFpTEtzYjFyR0VUYm42V3I0Nno4Z24KY1Q4cVFhS3pYRThoWjJPSDhSWjN1aFVpRHhZQUszdmdsYXJSdUFacmVYMVE2ZHdwYW9ZcERKa29XOXNjNXlkWApBTkJsYnBjVXhiYkpaWThLS0lRSURnTFdOckw3SVNxK2FnYlRXektFZEl0Ni9EZm1YUnJlUmlMbDlQMldvOFRyCnFxaHNHRlZoRHZlMFN6MjYyOU55amgwelloSmRUWXRpdldxbGl6VTdWbXBob1NrVnNqTGtwQXBiUUNtVm9vNkgKakJmdU1sY1JPeWI4TXJCMXZTNDJRU1MrNktkMytwR3JyVnh0akNWaWwyekhSSTRMRGwrVzUwR1B6LzFkeEw2TgprZktZWjVhNUdCZm00aUNlaWVNa3lBT2lKTkxNa1cvcTdwM200ejdUQjJnbWtldm1aU3Z5MnVMNGJLYlRoYXRlCm9sdlpFd253WWRxaktkcVkrOVM1UlNVQ0F3RUFBUT09Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==" | base64 -d > release.pub
@@ -223,7 +223,7 @@ bin/magento module:status Magento_ServicesId
    openssl dgst -sha256 -verify release.pub -signature launcher.sha256 launcher.checksum
    ```
 
-1. *（オプション）* チェックサムを確認します。
+1. *(オプション)* チェックサムを確認します。
 
    ```bash
    shasum -a 512 -c launcher.checksum
@@ -262,19 +262,19 @@ bin/magento module:status Magento_ServicesId
    Success exit.
    ```
 
-1. エージェントをダウンロードしてインストールした後、次のいずれかの方法で [ 実行するように設定 ](#run-the-agent) する必要があります。
+1. エージェントをダウンロードしてインストールしたら、次のいずれかの方法を使用して [実行するように構成](#run-the-agent) する必要があります。
 
-   - [ サービス ](#service) （ルートアクセス権がある場合は推奨）
+   - [サービス](#service) (ルートアクセス権がある場合は推奨)
 
    - [Cron](#cron)
 
-## エージェントの実行 {#run-the-agent}
+## エージェントを実行する {#run-the-agent}
 
 エージェントをサービスとして実行するように設定することをお勧めします。 インフラストラクチャへのアクセスが制限されていて、ルート権限がない場合は、代わりに [cron](#cron) を使用する必要があります。
 
 ### サービス {#service}
 
-1. 次の設定で systemd unit ファイル `(/etc/systemd/system/scheduler.service)` を作成します（`<filesystemowner>` を、エージェントおよびAdobe Commerceソフトウェアがインストールされているディレクトリを所有する UNIX® ユーザーに置き換えます）。 エージェントを root ユーザーとしてダウンロードした場合は、ディレクトリとネストされたファイルの所有者を変更します。
+1. 次の構成でsystemdユニットファイル `(/etc/systemd/system/scheduler.service)` 作成します( `<filesystemowner>` エージェントとAdobe Systemsコマースソフトウェアがインストールされているディレクトリを所有するUNIX®ユーザーに置き換えます)。 エージェントをルートユーザーとしてダウンロードした場合は、ディレクトリとネストされたファイルを所有者変更します。
 
    ```config
    [Unit]
@@ -292,7 +292,7 @@ bin/magento module:status Magento_ServicesId
    WantedBy=multi-user.target
    ```
 
-1. サービスを起動します。
+1. サービスLaunch。
 
    ```bash
    systemctl daemon-reload
@@ -404,18 +404,15 @@ FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.a
 1. [ スクリプト形式のインストール ](#scripted) を実行し、出力を保存して、出力にエラーがないか確認します。
 1. 生成された `config.yaml` ファイルを確認し、Commerce インスタンスと PHP へのパスが正しいことを確認します。
 1. スケジューラーを実行しているユーザーが [ ファイルシステム所有者 ](../../installation/prerequisites/file-system/overview.md)Unix グループに属しているか、ファイルシステム所有者と同じユーザーであることを確認します。
-1. [Commerce サービスコネクタ ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) のキーが正しくインストールされていることを確認し、キーを更新して拡張機能をシステムに接続します。
+1. [Commerce サービスコネクタ ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) のキーが正しくインストールされていることを確認し、キーを更新して拡張機能をシステムに接続します。
 1. [ アンインストール ](#uninstall) キーを更新した後にエージェントをアンインストールし、[ インストールスクリプト ](#scripted) を使用して再インストールします。
 1. スケジューラーを実行して、同じエラーが引き続き表示されるかどうかを確認します。
 1. それでも同じエラーが発生する場合は、`config.yaml` のログレベルを上げてデバッグし、サポートチケットを開きます。
 
 ### *SIGFAULT* エラー
 
-バイナリの実行中に *SIGFAULT* エラーが発生した場合は、Adobe Commerceおよび Agent ファイルのファイルオーナーとしてこれを実行しない可能性があります。
-これを解決するには、エージェントディレクトリ内のファイルのうち、Adobe Commerce ファイルのファイルオーナーと同じユーザーを持つすべてのファイルが、そのユーザーの下でもバイナリを実行する必要があるかどうかを確認してください。
-`chown` コマンドを使用してファイルの所有者を変更し、適切なユーザーに切り替えることができます。
-デーモンのメカニズム （Cron または System.d）で、適切なユーザーの下でプロセスが実行されていることを確認します。
+バイナリの実行時に *SIGFAULT* エラーが表示された場合は、Commerce ファイルとエージェント ファイルのファイル 所有者として実行していないAdobe Systems可能性があります。解決するには、Adobe Systemsコマースファイルが持つファイル所有者と同じユーザーを持つエージェントディレクトリ内のすべてのファイル、およびバイナリもそのユーザーで実行する必要があるかどうかを確認してください。`chown` コマンドを使用して、ファイル所有者を変更し、適切なユーザーに切り替えることができます。デーモン化メカニズム (Cron または System.d) が適切なユーザーの下でプロセスを実行していることを確認してください。
 
 >[!INFO]
 >
->詳しくは [ レポートへのアクセス  [!DNL Site-Wide Analysis Tool]  生成の方法 ](../site-wide-analysis-tool/access.md) を参照してください。
+>[レポートにアクセスして生成する方法 [!DNL Site-Wide Analysis Tool] ](../site-wide-analysis-tool/access.md)を参照してください。
