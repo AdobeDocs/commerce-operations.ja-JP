@@ -1,16 +1,21 @@
 ---
-title: 「ACSD-49392：注文ステータスが、一部払い戻しの後にクローズに変更される」
+title: ACSD-49392：一部払い戻し後に注文ステータスがクローズに変更される
 description: ACSD-49392 パッチを適用すると、バンドルされた製品の部分払い戻し後に注文ステータスがクローズに変わるAdobe Commerceの問題を修正できます。
 feature: Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e12cbf2d-219e-4cb5-a226-6c7ae4929549
+source-git-commit: 67e050b4ceccc3f30bf8cd49125525b2e8d8b0dd
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
 
 # ACSD-49392：一部払い戻し後に注文ステータスがクローズに変更される
+
+>[!NOTE]
+>
+>パッチ ACSD-49392 は、バージョン 2.4.6-p7 から 2.4.6-p10 のパッチ [ACSD-57003](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-46/acsd-57003-order-status-changed-to-complete-instead-of-processing) に置き換えられました。
 
 ACSD-49392 パッチは、バンドルされた製品の部分払い戻し後に注文ステータスがクローズに変更される問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.31 がインストールされている場合に使用できます。 パッチ ID は ACSD-49392 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 
@@ -22,7 +27,7 @@ ACSD-49392 パッチは、バンドルされた製品の部分払い戻し後に
 
 **Adobe Commerce バージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 ～ 2.3.7-p4 および 2.4.1 ～ 2.4.6
+* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 ～ 2.3.7-p4 および 2.4.1 ～ 2.4.6-p6
 
 >[!NOTE]
 >
@@ -52,7 +57,7 @@ ACSD-49392 パッチは、バンドルされた製品の部分払い戻し後に
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
