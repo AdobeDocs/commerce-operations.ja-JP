@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 4db45b44ffc7fc5f405750f50dfa9e0b315a62a8
+source-git-commit: 7358d2aca927c94505e7a99b5ee390aa6a7f5fc9
 workflow-type: tm+mt
-source-wordcount: '7549'
+source-wordcount: '7359'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 # ツール {#tools}
 
 - [概要](overview.md)
-- サイト全体分析ツール {#site-wide-analysis-tool} {#site-wide-analysis-tool}
+- Site-Wide Analysis Tool {#site-wide-analysis-tool}
    - [概要](site-wide-analysis-tool/intro.md)
    - [インストール](site-wide-analysis-tool/installation.md)
    - [アクセス方法](site-wide-analysis-tool/access.md)
    - [ステータス属性](site-wide-analysis-tool/status.md)
    - [「機能」タブ](site-wide-analysis-tool/features-tabs.md)
-   - [ダッシュボード](site-wide-analysis-tool/dashboard.md)
+   - [Dashboard](site-wide-analysis-tool/dashboard.md)
    - [情報](site-wide-analysis-tool/information.md)
    - [推奨事項](site-wide-analysis-tool/recommendations.md)
    - [例外](site-wide-analysis-tool/exceptions.md)
@@ -27,7 +27,7 @@ ht-degree: 0%
    - [アラート](site-wide-analysis-tool/alerts.md)
    - [パッチ](site-wide-analysis-tool/patches.md)
 
-- Adobe Commerce {#managed-alerts-for-adobe-commerce} の管理アラート {#managed-alerts-for-adobe-commerce}
+- Adobe Commerce {#managed-alerts-for-adobe-commerce} の管理アラート
    - [Adobe Commerceの管理アラート：メモリ  [!DNL Redis]  重大なアラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
    - [Managed alerts for Adobe Commerce:Disk warning アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
    - [Adobe Commerceの管理アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
@@ -40,32 +40,32 @@ ht-degree: 0%
    - [Adobe Commerceの管理されたアラート： [!DNL MariaDB] alerts](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
    - [Managed alerts for Adobe Commerce: [!DNL Apdex] warning アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
    - [Adobe Commerceの管理アラート：CPU警告アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
-- 品質向上パッチツール {#quality-patches-tool} {#quality-patches-tool}
+- 品質向上パッチツール {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]：高品質のパッチを適用するためのセルフサービスツール](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]：パッチの検索 ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}{target=&quot;_blank&quot;}
+   - [[!DNL Quality Patches Tool]：パッチの検索 ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [使用状況](quality-patches-tool/usage.md)
    - [リリースノート](quality-patches-tool/release-notes.md)
-   - 品質向上パッチツール {#patches-available-in-qpt} で使用可能なパッチ {#patches-available-in-qpt}
+   - 品質向上パッチツール {#patches-available-in-qpt} で使用可能なパッチ
       - [概要](quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview.md)
-      - v1.1.0 {#v1-1-0} {#v1-1-0}
+      - v1.1.0 {#v1-1-0}
          - [概要：品質向上パッチツール（QPT） v1.1.0](quality-patches-tool/patches-available-in-qpt/v1-1-0/overview.md)
          - [MDVA-37592：価格がゼロの製品で価格による並べ替えが機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-0/mdva-37592-sorting-by-price-does-not-work-correctly.md)
          - [MDVA-38799：ステージング更新プログラムの作成後にダウンロード可能な製品が保存されない](quality-patches-tool/patches-available-in-qpt/v1-1-0/mdva-38799-downloadable-products-were-not-saved-after-creating-a-staging-update.md)
          - [MDVA-38827：顧客がメールで注文出荷エラーを受信する](quality-patches-tool/patches-available-in-qpt/v1-1-0/mdva-38827-customers-receive-an-order-shipment-email-containing-an-error-message.md)
-      - v1.1.1 {#v1-1-1} {#v1-1-1}
+      - v1.1.1 {#v1-1-1}
          - [概要：品質向上パッチツール（QPT） v1.1.1](quality-patches-tool/patches-available-in-qpt/v1-1-1/overview.md)
          - [MDVA-34948:Web サイトの速度が低下](quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-34948-slow-site-and-operations.md)
-         - [MDVA-36021:注文の詳細を開くとエラーメッセージが表示されます](quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-36021-call-to-a-member-function-getid-error-on-the-order-details-page.md)
-         - [MDVA-37897:最近表示した項目から商品を追加するときの誤ったリダイレクト](quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-37897-incorrect-redirect-when-customers-try-to-add-products.md)
-         - [MDVA-39305:有効になっている Google reCAPTCHA でのログインの問題](quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-39305-login-issues-with-enabled-google-recaptcha.md)
-      - v1.1.2 {#v1-1-2} {#v1-1-2}
+         - [MDVA-36021：注文の詳細を開くとエラーメッセージが表示される](quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-36021-call-to-a-member-function-getid-error-on-the-order-details-page.md)
+         - [MDVA-37897：最近表示された項目から製品を追加すると、リダイレクトが正しく表示されない](quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-37897-incorrect-redirect-when-customers-try-to-add-products.md)
+         - [MDVA-39305：有効なGoogle reCAPTCHA でのログインの問題](quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-39305-login-issues-with-enabled-google-recaptcha.md)
+      - v1.1.2 {#v1-1-2}
          - [概要：品質向上パッチツール（QPT） v1.1.2](quality-patches-tool/patches-available-in-qpt/v1-1-2/overview.md)
          - [MDVA-37115：製品ページに「Only 0 left」の通知が表示される](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-37115-unnecessary-only-0-left-notice-is-shown-on-the-configurable-product-page.md)
          - [MDVA-37364：日付タイプのカスタム顧客属性によりグリッド UI が機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-37364-custom-customer-attribute-of-date-type-breaks-the-customer-grid-ui.md)
-         - [MDVA-38447:GraphQL 応答で「個別に表示されない」設定可能な子製品が返され、MySQL クエリが低速になる](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-38447-not-visible-individually-configurable-child-products.md)
-         - [MDVA-38852:カタログ在庫がテーブルをロックし、パフォーマンスを低下させる](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-38852-catalog-inventory-locks-tables-for-updates-that-significantly-decrease-performance.md)
-         - [MDVA-38929:FPT を使用した請求書に間違った合計が表示される](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-38929-invoice-with-fpt-shows-wrong-grand-total.md)
-         - [MDVA-39043:管理者ユーザーが CMS ページ にウィジェットを追加する際にエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-39043-admin-users-with-limited-access-get-error-while-adding-products-widget-to-cms.md)
+         - [MDVA-38447：設定可能な子商品がGraphQL応答で返され、MySQL クエリが遅い](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-38447-not-visible-individually-configurable-child-products.md)
+         - [MDVA-38852: カタログ在庫によりテーブルがロックされ、パフォーマンスが低下する](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-38852-catalog-inventory-locks-tables-for-updates-that-significantly-decrease-performance.md)
+         - [MDVA-38929: FPT を含む請求書の合計が間違っている](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-38929-invoice-with-fpt-shows-wrong-grand-total.md)
+         - [MDVA-39043：管理者ユーザーがCMS ページにウィジェットを追加するとエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-39043-admin-users-with-limited-access-get-error-while-adding-products-widget-to-cms.md)
          - [MDVA-39195：カテゴリ ページで [ 買い物かごに追加 ] が非アクティブになっている](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-39195-add-to-cart-button-is-inactive-on-the-category-page.md)
          - [MDVA-39384：会社ユーザーのカスタム顧客属性を保存できません](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-39384-unable-to-save-custom-customer-attribute-for-company-user.md)
          - [MDVA-39521:GraphQL経由で買い物かごに配送先住所を設定できない](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-39521-unable-to-set-shipping-address-on-cart-via-graphql.md)
@@ -74,7 +74,7 @@ ht-degree: 0%
          - [MDVA-39966: en_US 以外のロケールをデプロイできません](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-39966-unable-to-deploy-locales-other-than-en-us.md)
          - [MDVA-39986:macOSの Safari ブラウザーで管理者に注文できない](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-39986-unable-to-place-order-in-admin-using-safari-browser-in-macos.md)
          - [MDVA-40134：共有カタログが有効な場合、GraphQLが関連商品を返さない](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-40134-graphql-does-not-return-related-products-when-shared-catalog-is-enabled.md)
-      - v1.1.3 {#v1-1-3} {#v1-1-3}
+      - v1.1.3 {#v1-1-3}
          - [概要：品質向上パッチツール（QPT） v1.1.3](quality-patches-tool/patches-available-in-qpt/v1-1-3/overview.md)
          - [MDVA-31590: MySQL 非同期キューを使用して属性を一括更新できない](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-31590-unable-to-update-attributes-in-bulk-using-mysql-async-queues.md)
          - [MDVA-33606：階層に割り当てられたCMS ページを保存するとエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-33606-users-get-error-when-saving-cms-page-assigned-to-hierarchy.md)
@@ -82,23 +82,23 @@ ht-degree: 0%
          - [MDVA-37234：買い物かごに品目を複数回追加すると、重複品目が作成される](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-37234-adding-item-to-cart-multiple-times-creates-duplicate-item.md)
          - [MDVA-40262：管理者の一般的な検索用語にGraphQLのクエリが表示されない](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-40262-graphql-queries-dont-show-in-popular-search-terms-in-admin.md)
          - [MDVA-40601: GraphQLを介したスケジュールされた更新で変更されたカテゴリに関するデータを取得できません](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-40601-users-get-error-retrieving-info-about-category.md)
-      - v1.1.4 {#v1-1-4} {#v1-1-4}
+      - v1.1.4 {#v1-1-4}
          - [概要：品質向上パッチツール（QPT） v1.1.4](quality-patches-tool/patches-available-in-qpt/v1-1-4/overview.md)
          - [MC-42528:categoryList のGraphQL クエリにすべてのカテゴリが表示される](quality-patches-tool/patches-available-in-qpt/v1-1-4/mc-42528-graphql-query-of-categorylist-shows-all-categories.md)
          - [MDVA-25631：顧客セグメントを保存および更新できない](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-25631-unable-to-save-and-refresh-customer-segments.md)
          - [MDVA-26005：買い物かご価格ルール条件のツリーでカテゴリを選択できない](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-26005-unable-to-select-category-in-tree-for-cart-price-rule-conditions.md)
          - [MDVA-29400:PayPal Express チェックアウトで注文が重複する](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-29400-duplicated-orders-placed-with-paypal-express-checkout.md)
-         - [MDVA-37725:デフォルト以外のサイトから送信されるメールにデフォルトのサイトのロゴ URL が含まれている](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-37725-asynchronous-order-emails-sent-via-non-default-websites.md)
-         - [MDVA-39482:バックオーダーが有効な状態で「0」量でインポートすると、製品が在庫切れになる](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-39482-product-goes-out-of-stock-when-imported-with-0-quantity.md)
+         - [MDVA-37725：デフォルト以外のサイトを介して送信されるメールには、デフォルトのサイトのロゴ URL が含まれる](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-37725-asynchronous-order-emails-sent-via-non-default-websites.md)
+         - [MDVA-39482: バックオーダーが有効な&#39;0&#39;数量でインポートした場合、商品の在庫切れになります](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-39482-product-goes-out-of-stock-when-imported-with-0-quantity.md)
          - [MDVA-40101：商品は注文後ミニカートのままになります PayPal Express Checkout](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40101-items-remain-in-mini-cart-after-order-placement-using-paypal-express-checkout.md)
          - [MDVA-40399：同じ注文の部分請求書を API で同時に作成することはできません](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40399-partial-invoices-for-same-order-cannot-be-created-simultaneously-via-rest-api.md)
          - [MDVA-40401：注文に失敗すると、クーポンの使用価値が変更される](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40401-coupon-usage-value-changes-even-after-failed-order.md)
-         - [MDVA-40435:バンドル商品の割引が GraphQL 経由で正しく適用されない](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40435-discount-on-bundle-product-is-not-applied-correctly-via-graphql.md)
-         - [MDVA-40537:複数の CMS ページに同じ URL キーがあると、ストア 表示を作成するとエラーが発生する。](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40537-creating-store-view-gives-error-when-multiple-cms-pages-with-same-url-keys-exist.md)
-      - v1.1.5 {#v1-1-5} {#v1-1-5}
-         - [概要: 品質 パッチツール (QPT) v1.1.5](quality-patches-tool/patches-available-in-qpt/v1-1-5/overview.md)
-         - [MDVA-31763:カタログ価格ルールは、手動でインデックスを再作成するまで元に戻される](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-31763-catalog-price-rules-are-reverted-until-manual-reindex.md)
-         - [MDVA-37748:GraphQL クエリ共有カタログに割り当てられていない製品が返される](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-37748-graphql-query-returns-products-not-assigned-to-shared-catalog.md)
+         - [MDVA-40435：バンドル商品の割引がGraphQLで正しく適用されない](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40435-discount-on-bundle-product-is-not-applied-correctly-via-graphql.md)
+         - [MDVA-40537：複数のCMS ページの URL キーが同じ場合に、ストアビューを作成するとエラーが発生する。](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40537-creating-store-view-gives-error-when-multiple-cms-pages-with-same-url-keys-exist.md)
+      - v1.1.5 {#v1-1-5}
+         - [概要：品質向上パッチツール（QPT） v1.1.5](quality-patches-tool/patches-available-in-qpt/v1-1-5/overview.md)
+         - [MDVA-31763: カタログ価格ルールは、手動で再インデックスするまで元に戻されます](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-31763-catalog-price-rules-are-reverted-until-manual-reindex.md)
+         - [MDVA-37748:GraphQL クエリは、共有カタログに割り当てられていない商品を返します](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-37748-graphql-query-returns-products-not-assigned-to-shared-catalog.md)
          - [MDVA-39229: カタログ ルール ステージング更新開始時刻の更新後にエラーが発生しました](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-39229-error-updating-catalog-rule-staging-update-start-time.md)
          - [MDVA-40545：ページの最初のノードのみが取得される](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-40545-only-the-first-node-for-a-page-retrieved.md)
          - [MDVA-40619：階層の変更により、CMS ページのインライン編集が中断され、500 エラーがスローされる](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-40619-hierarchy-changes-break-cms-page-inline-edit-and-throw-500-error.md)
@@ -106,7 +106,7 @@ ht-degree: 0%
          - [MDVA-41061：製品が管理者から保存されると、在庫ステータスが販売可能にリセットされる](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-41061-stock-status-resets-saleable-when-saved-from-admin.md)
          - [MDVA-41164: カスタム顧客属性を持つ会社を保存または編集できない](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-41164-admin-user-cannot-save-or-edit-company-with-custom-customer-attributes.md)
          - [MDVA-41236：製品のスケジュールされた更新を新規作成または編集できない](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-41236-unable-to-create-new-or-edit-existing-scheduled-staging-update.md)
-      - v1.1.6 {#v1-1-6} {#v1-1-6}
+      - v1.1.6 {#v1-1-6}
          - [概要：品質向上パッチツール（QPT） v1.1.6](quality-patches-tool/patches-available-in-qpt/v1-1-6/overview.md)
          - [MDVA-27456:Swagger の読み込み時にエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-27456-users-get-error-when-loading-swagger.md)
          - [MDVA-30862：印刷されたPDF請求書の注文日が正しくありません](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-30862-incorrect-order-date-on-printed-pdf-invoice.md)
@@ -117,13 +117,13 @@ ht-degree: 0%
          - [MDVA-40609: cataloginventory_stock_status テーブルに無効な製品データがあります](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-40609-disabled-products-data-absent-in-cataloginventory-stock-status-table.md)
          - [MDVA-41399：顧客がウィッシュリストに製品を追加すると、買い物かごの管理にアクセスできない](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-41399-unable-to-access-manage-shopping-cart-if-a-customer-adds-product-to-wishlist.md)
          - [MDVA-41597：設定可能な商品を買い物かごに複数追加する際にエラーが発生しました](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-41597-error-adding-more-than-one-configurable-product-to-cart.md)
-      - v1.1.7 {#v1-1-7} {#v1-1-7}
+      - v1.1.7 {#v1-1-7}
          - [概要：品質向上パッチツール（QPT） v1.1.7](quality-patches-tool/patches-available-in-qpt/v1-1-7/overview.md)
          - [MDVA-27239：クロスセル製品が表示されない](quality-patches-tool/patches-available-in-qpt/v1-1-7/mdva-27239-cross-sell-products-are-not-displayed.md)
          - [MDVA-39711:Web サイトを削除した後、顧客グリッドにアクセスできない](quality-patches-tool/patches-available-in-qpt/v1-1-7/mdva-39711-unable-to-access-customers-grid-after-deleting-website.md)
          - [MDVA-40311：カスタム管理パスが設定されている場合、管理者にログインした後に「セキュリティまたはフォームキーが無効です」エラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-7/mdva-40311-invalid-security-error-after-login-to-admin-if-custom-admin-path-is-configured.md)
          - [MDVA-41631: オプションの&quot;telephone&quot;値なしで注文情報を取得中にエラーが発生しました](quality-patches-tool/patches-available-in-qpt/v1-1-7/mdva-41631-error-retrieving-order-information-without-optional-telephone-value.md)
-      - v1.1.8 {#v1-1-8} {#v1-1-8}
+      - v1.1.8 {#v1-1-8}
          - [概要：品質向上パッチツール（QPT） v1.1.8](quality-patches-tool/patches-available-in-qpt/v1-1-8/overview.md)
          - [MDVA-38393：設定可能な製品の単純な製品の名前が変更されると、その製品のカタログルールは機能しなくなります](quality-patches-tool/patches-available-in-qpt/v1-1-8/mdva-38393-catalog-rules-stop-working-for-configurable-product-if-its-simple-product-is-renamed.md)
          - [MDVA-39153：管理画面での並べ替え中に、割引額が正しく計算されない](quality-patches-tool/patches-available-in-qpt/v1-1-8/mdva-39153-discount-amount-is-calculated-incorrectly-during-reorder-in-the-admin.md)
@@ -131,19 +131,19 @@ ht-degree: 0%
          - [MDVA-41215:「mage-messages」 cookie を設定すると、500 エラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-8/mdva-41215-users-get-500-error-after-setting-mage-messages-cookie.md)
          - [MDVA-42326：セッションタイムアウト後、チェックアウト時にエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-8/mdva-42326-customers-get-error-on-checkout-after-session-timeout.md)
          - [MDVA-42341:&quot;categoryList&quot; GraphQL クエリで結果がフィルターされない](quality-patches-tool/patches-available-in-qpt/v1-1-8/mdva-42341-categorylist-graphql-query-does-not-filter-results.md)
-      - v1.1.9 {#v1-1-9} {#v1-1-9}
+      - v1.1.9 {#v1-1-9}
          - [概要：品質向上パッチツール（QPT） v1.1.9](quality-patches-tool/patches-available-in-qpt/v1-1-9/overview.md)
          - [MDVA-37984：ステージング更新が適用されている場合、ビジュアルマーチャンダイザーが正しく機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-37984-visual-match-product-by-rule-functionality-not-filtering-products-correctly.md)
          - [MDVA-38346:Adobe Commerceのタイムゾーンがローカルと異なる場合、日付フィルターが機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-38346-date-filters-not-working-properly-when-adobe-commerce-timezone-is-different-from-local.md)
          - [MDVA-38526：管理者ユーザーが SWAT ツールにアクセスできない](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-38526-admin-user-not-able-to-access-swat-tool.md)
          - [MDVA-38626：管理者ユーザーが PayPal Payflow Pro を使用して注文できない](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-38626-admin-user-is-not-able-to-place-orders-using-paypal-payflow-pro.md)
-         - [MDVA-38666:管理ユーザーが設定可能な製品オプションを変更できない](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-38666-admin-user-is-unable-to-change-configurable-product-options.md)
-         - [MDVA-39163:ゲストセッションの製品を使用して、新規登録したユーザーは配送方法を利用できません](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-39163-shipping-methods-not-available-when-a-new-user-is-registered.md)
-         - [MDVA-40488:在庫切れの子製品を含む選定可能商品が正しい価格帯で表示されない](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-40488-configurable-products-with-out-of-stock-child-products-not-shown-in-correct-price-range.md)
-         - [MDVA-42507:買い物かごルールにステージングアップデートを適用した後、フル-ページキャッシュがクリーンアップされる](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42507-full-page-cache-is-cleaned-after-applying-staging-update-for-cart-rule.md)
-         - [MDVA-42657:顧客セグメント条件でカテゴリを選択できない。](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42657-unable-to-select-categories-in-customer-segment-conditions.md)
-         - [MDVA-42806:既存の会社が更新されるたびに 新規 会社 登録 電子メールが送信される](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42806-new-company-registration-email-sent-when-existing-company-updated.md)
-      - v1.1.10 {#v1-1-10} {#v1-1-10}
+         - [MDVA-38666：管理者ユーザーが、設定可能な製品オプションを変更できない](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-38666-admin-user-is-unable-to-change-configurable-product-options.md)
+         - [MDVA-39163：ゲストセッションからの製品で、新しく登録されたユーザーが配送方法を使用できない](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-39163-shipping-methods-not-available-when-a-new-user-is-registered.md)
+         - [MDVA-40488：在庫切れの子製品が正しい価格範囲で表示されない設定可能な製品](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-40488-configurable-products-with-out-of-stock-child-products-not-shown-in-correct-price-range.md)
+         - [MDVA-42507：買い物かごルールに対してステージング更新を適用した後に、完全ページ キャッシュがクリーンアップされる](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42507-full-page-cache-is-cleaned-after-applying-staging-update-for-cart-rule.md)
+         - [MDVA-42657：顧客セグメント条件でカテゴリを選択できない](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42657-unable-to-select-categories-in-customer-segment-conditions.md)
+         - [MDVA-42806：既存の会社が更新されるたびに、新しい会社登録メールが送信されます](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42806-new-company-registration-email-sent-when-existing-company-updated.md)
+      - v1.1.10 {#v1-1-10}
          - [概要：品質向上パッチツール（QPT） v1.1.10](quality-patches-tool/patches-available-in-qpt/v1-1-10/overview.md)
          - [MDVA-38728：製品の表示を変更すると、メイン Web サイトの URL が書き換えられます](quality-patches-tool/patches-available-in-qpt/v1-1-10/mdva-38728-changing-product-visibility-creates-url-rewrite-for-the-main-website.md)
          - [MDVA-39181：関連製品ルールで、ルールに定義されていないカテゴリの製品が表示される](quality-patches-tool/patches-available-in-qpt/v1-1-10/mdva-39181-related-product-rules-show-products-from-category-not-defined-in-rule.md)
@@ -154,17 +154,17 @@ ht-degree: 0%
          - [MDVA-42768：子商品の在庫切れ時にGraphQLで誤った価格が表示される](quality-patches-tool/patches-available-in-qpt/v1-1-10/mdva-42768-graphql-shows-wrong-price-when-child-products-are-out-of-stock.md)
          - [MDVA-43091：管理者からバンドル製品を注文できない](quality-patches-tool/patches-available-in-qpt/v1-1-10/mdva-43091-unable-to-order-bundled-product-from-admin.md)
          - [MDVA-43201：ロケール PT で DOB フィールドを使用する際にエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-10/mdva-43201-error-when-using-dob-field-with-locale-pt.md)
-      - v1.1.11 {#v1-1-11} {#v1-1-11}
-         - [概要:品質パッチツール(QPT)v1.1.11](quality-patches-tool/patches-available-in-qpt/v1-1-11/overview.md)
-         - [MDVA-40830:注文中にストアクレジットが複数回適用される](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-40830-store-credit-applied-multiple-times.md)
-         - [MDVA-41350:管理者がアクセス外の製品を追加すると例外](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-41350-exception-when-admin-adds-products-outside-scope.md)
-         - [MDVA-42237:構成可能な製品の特別価格は更新されません](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42237-configurable-product-special-price-not-updated.md)
-         - [MDVA-42269:管理者ユーザー「TypeError」エラーのため管理者にログインできません。](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42269-admin-user-cannot-log-in-to-admin-due-to-the-typeerror.md)
+      - v1.1.11 {#v1-1-11}
+         - [概要：品質向上パッチツール（QPT） v1.1.11](quality-patches-tool/patches-available-in-qpt/v1-1-11/overview.md)
+         - [MDVA-40830：注文中に店舗クレジットが複数回適用される](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-40830-store-credit-applied-multiple-times.md)
+         - [MDVA-41350：管理者がアクセス権の範囲外の製品を追加した場合の例外](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-41350-exception-when-admin-adds-products-outside-scope.md)
+         - [MDVA-42237：設定可能な製品特別価格は更新されていません](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42237-configurable-product-special-price-not-updated.md)
+         - [MDVA-42269:「TypeError」エラーにより、管理者ユーザーが管理者にログインできない](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42269-admin-user-cannot-log-in-to-admin-due-to-the-typeerror.md)
          - [MDVA-42520:[ 国境を越えた貿易を有効にする ] が使用されている場合に 2 回適用される税率](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42520-tax-rate-applied-twice-when-enable-cross-border-trade-is-used.md)
          - [MDVA-42790：製品価格属性は、REST API を使用して特定の web サイトに対して更新できません](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42790-product-price-attributes-cannot-be-updated-for-specific-website-via-rest-api.md)
-      - v1.1.12 {#v1-1-12} {#v1-1-12}
-         - [概要: 品質 パッチツール (QPT) v1.1.12](quality-patches-tool/patches-available-in-qpt/v1-1-12/overview.md)
-         - [MDVA-39546:ステージングアップデート 開始 日付を現在の日付よりも前の日付に設定できる](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-39546-staging-update-start-date-set-to-earlier-date-than-current-date.md)
+      - v1.1.12 {#v1-1-12}
+         - [概要：品質向上パッチツール（QPT） v1.1.12](quality-patches-tool/patches-available-in-qpt/v1-1-12/overview.md)
+         - [MDVA-39546: ステージング更新の開始日を、現在の日付より前の日付に設定できます](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-39546-staging-update-start-date-set-to-earlier-date-than-current-date.md)
          - [MDVA-39713: ユーザーは、アクティブなスケジュールされた更新の開始時刻を編集できます](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-39713-user-able-to-edit-start-time-for-active-scheduled-update.md)
          - [MDVA-39993: API を使用して行われたインベントリの変更がストアフロントに反映されない](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-39993-inventory-changes-done-through-api-are-not-reflected-on-the-frontend.md)
          - [MDVA-41136: mage-cache-sessid の有効期限が拡張されていません](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-41136-expiration-date-of-the-mage-cache-sessid-is-not-extended.md)
@@ -176,24 +176,24 @@ ht-degree: 0%
          - [MDVA-42855：チェックアウト時に新しい顧客アドレスがアドレス帳に保存されない](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-42855-new-customer-address-isnt-saved-to-address-book-during-checkout.md)
          - [MDVA-42950：製品ページでビデオが再生されない](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-42950-videos-dont-play-on-the-product-page.md)
          - [MDVA-43232：ビジュアルマーチャンダイザーで商品を特別価格で上（または下）に並べ替えるとエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-43232-sorting-products-in-visual-merchandiser-by-special-price-to-bottom-top-causes-error.md)
-         - [MDVA-43348:ギフトカードの GraphQL リクエストにエラーが表示される](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-43348-gift-card-graphql-request-shows-error.md)
-         - [MDVA-43414:「inventory.reservations.updateSalabilityStatus」の実行時の PHP の致命的なエラー](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-43414-php-fatal-error-when-running-the-inventory-reservations-update-salability-status.md)
+         - [MDVA-43348：ギフトカードのGraphQLリクエストにエラーが表示される](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-43348-gift-card-graphql-request-shows-error.md)
+         - [MDVA-43414:「inventory.reservations.updateSalabilityStatus」の実行時に PHP の致命的なエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-43414-php-fatal-error-when-running-the-inventory-reservations-update-salability-status.md)
          - [MDVA-43726：部分的な再インデックス後にカタログ価格ルールが適用されない](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-43726-catalog-price-rule-fails-to-apply-after-partial-reindex.md)
          - [MDVA-43731:[ 一致する最小用語 ] に値が追加されている場合、検索シノニムは機能しません](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-43731-search-synonyms-dont-work-when-value-added-in-minimum-terms-to-match.md)
-      - v1.1.13 {#v1-1-13} {#v1-1-13}
+      - v1.1.13 {#v1-1-13}
          - [概要：品質向上パッチツール（QPT） v1.1.13](quality-patches-tool/patches-available-in-qpt/v1-1-13/overview.md)
          - [MDVA-39605 Redis キャッシュ TTL 有効期限の値が間違っています](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-39605-redis-cache-ttl-expiration-date-has-wrong-value.md)
-         - [MDVA-42046:製品属性に割り当てられた値が正しくない](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-42046-incorrect-value-assigned-for-product-attribute.md)
-         - [MDVA-42283:フランス語ロケールの日付タイム形式が無効](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-42283-date-time-format-for-french-locale-invalid.md)
-         - [MDVA-42969:関連製品の ルール は、セグメント 顧客 が all に設定されている場合にのみ機能します。](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-42969-related-product-rule-only-works-when-customer-segment-set-to-all.md)
-         - [MDVA-43451:共有カタログの価格と構造を設定する際のエラー](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-43451-error-when-setting-pricing-and-structure-for-shared-catalog.md)
+         - [MDVA-42046：製品属性に割り当てられた値が正しくありません](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-42046-incorrect-value-assigned-for-product-attribute.md)
+         - [MDVA-42283: フランス語ロケールの日時形式が無効です](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-42283-date-time-format-for-french-locale-invalid.md)
+         - [MDVA-42969：関連製品ルールは、顧客セグメントが「すべて」に設定されている場合にのみ機能します](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-42969-related-product-rule-only-works-when-customer-segment-set-to-all.md)
+         - [MDVA-43451：共有カタログの価格と構造を設定する際にエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-43451-error-when-setting-pricing-and-structure-for-shared-catalog.md)
          - [MDVA-43491:CSV 経由で読み込むと、ベース画像ラベルが更新されない](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-43491-base-image-label-not-updating-when-imported-via-csv.md)
          - [MDVA-43601：完全な再インデックス後に、「catalogrule_product_price」テーブルからトリガーが削除される](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-43601-triggers-are-removed-from-catalogrule-product-price-table.md)
          - [MDVA-43824：注文のキャンセル操作が失敗し、「アイテムがキャンセルされていません」というエラーが表示される](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-43824-order-cancellation-action-failed-with-error.md)
          - [MDVA-43862:GraphQLの UpdateCartItems ミューテーションエラーにより、顧客が買い物かご項目を更新できない](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-43862-unable-to-update-cart-items-because-of-graphql-updatecartitems-mutation-error.md)
          - [MDVA-43935：製品ページにアップセル製品が 2 回表示される](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-43935-upsell-product-shown-twice-on-product-page.md)
          - [MDVA-44188: ``を含む ID にメールが送信されない。-&quot;](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-44188-emails-are-not-sent.md)
-      - v1.1.14 {#v1-1-14} {#v1-1-14}
+      - v1.1.14 {#v1-1-14}
          - [概要：品質向上パッチツール（QPT） v1.1.14](quality-patches-tool/patches-available-in-qpt/v1-1-14/overview.md)
          - [MDVA-43102：販売可能数量が正しく更新されていません](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-43102-salable-quantity-not-updated-correctly.md)
          - [MDVA-43178: GraphQLでカスタム ストアの顧客トークンを取得できません](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-43178-customer-token-for-custom-store-cannot-be-retrieved.md)
@@ -203,7 +203,7 @@ ht-degree: 0%
          - [MDVA-44100：すべての FPT が買い物かごの最後の製品に割り当てられる](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-44100-all-fpts-are-assigned-to-the-last-product-in-the-shopping-cart.md)
          - [MDVA-44147:GraphQL要求で要求リストが返されない](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-44147-graphql-request-doesnt-return-requisition-lists.md)
          - [MDVA-44505：報酬ポイントを適用する買い物かごに対するGraphQL クエリで総計が更新されない](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-44505-graphql-applying-reward-points-does-not-update-grand-total.md)
-      - v1.1.15 {#v1-1-15} {#v1-1-15}
+      - v1.1.15 {#v1-1-15}
          - [概要：品質向上パッチツール（QPT） v1.1.15](quality-patches-tool/patches-available-in-qpt/v1-1-15/overview.md)
          - [MDVA-38559: /V1/customers/search API はエラーを返します](quality-patches-tool/patches-available-in-qpt/v1-1-15/mdva-38559-v1-customers-search-api-error.md)
          - [MDVA-40896: &#39;エラー：TypeError：引数 3&#39; エラーが非同期製品で発生しました](quality-patches-tool/patches-available-in-qpt/v1-1-15/mdva-40896-error-typeerror-in-async-product.md)
@@ -212,7 +212,7 @@ ht-degree: 0%
          - [MDVA-44533：バンドルされた子製品に誤って適用された割引](quality-patches-tool/patches-available-in-qpt/v1-1-15/mdva-44533-discount-incorrectly-applied-to-bundle-child-product.md)
          - [MDVA-44660：お客様の名前にアクセント記号を使用することはできません](quality-patches-tool/patches-available-in-qpt/v1-1-15/mdva-44660-grave-accent-character-cannot-be-used-for-customer-name.md)
          - [MDVA-44887：管理パネルの&#39;キャッチされていない構文エラー：予期しないトークン const&#39; エラー](quality-patches-tool/patches-available-in-qpt/v1-1-15/mdva-44887-uncaught-syntaxerror-unexpected-token-const-error-in-admin-panel.md)
-      - v1.1.16 {#v1-1-16} {#v1-1-16}
+      - v1.1.16 {#v1-1-16}
          - [概要：品質向上パッチツール（QPT） v1.1.16](quality-patches-tool/patches-available-in-qpt/v1-1-16/overview.md)
          - [MDVA-42509: クイック注文で CSV をアップロードできず、「Cookie を送信できません」というエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-16/mdva-42509-csv-could-not-be-uploaded-for-quick-order-resulting-in-unable-to-send-the-cookie-error.md)
          - [MDVA-43167：管理注文グリッド一括アクションが複数ページに適用されない](quality-patches-tool/patches-available-in-qpt/v1-1-16/mdva-43167-admin-order-grid-mass-doesnt-apply-multipage.md)
@@ -220,7 +220,7 @@ ht-degree: 0%
          - [MDVA-44562：見積品目の店舗 ID が既定の店舗 ID によって上書きされました](quality-patches-tool/patches-available-in-qpt/v1-1-16/mdva-44562-store-id-quote-items-overridden-by-default-store-id.md)
          - [MDVA-44703：注文レポートの注文合計が正しく計算されない](quality-patches-tool/patches-available-in-qpt/v1-1-16/mdva-44703-order-totals-in-order-report-miscalculated.md)
          - [MDVA-44940：管理者からカテゴリを保存中に SQL エラーが発生しました](quality-patches-tool/patches-available-in-qpt/v1-1-16/mdva-44940-sql-error-while-saving-category-from-admin.md)
-      - v1.1.17 {#v1-1-17} {#v1-1-17}
+      - v1.1.17 {#v1-1-17}
          - [概要：品質向上パッチツール（QPT） v1.1.17](quality-patches-tool/patches-available-in-qpt/v1-1-17/overview.md)
          - [ACSD-42807: ストアフロントにカスタムの通貨記号が表示されない](quality-patches-tool/patches-available-in-qpt/v1-1-17/acsd-42807-custom-currency-sign-not-displayed-on-store-front.md)
          - [ACSD-43887：チェックアウト支払いページに間違った詳細が表示される](quality-patches-tool/patches-available-in-qpt/v1-1-17/acsd-43887-incorrect-details-displayed-on-checkout-payment-page.md)
@@ -230,7 +230,7 @@ ht-degree: 0%
          - [ACSD-45241：仮想製品の在庫数の計算ミス](quality-patches-tool/patches-available-in-qpt/v1-1-17/acsd-45241-stock-quantity-for-virtual-product-miscalculated.md)
          - [ACSD-45424：一部払い戻し後に作成された予約報酬が正しくありません](quality-patches-tool/patches-available-in-qpt/v1-1-17/acsd-45424-incorrect-reservation-compensation-created-after-partial-refund.md)
          - [ACSD-45520：製品の詳細ページでスウォッチオプションが選択されない](quality-patches-tool/patches-available-in-qpt/v1-1-17/acsd-45520-swatch-options-not-pre-selected-on-product-detail-page.md)
-      - v1.1.18 {#v1-1-18} {#v1-1-18}
+      - v1.1.18 {#v1-1-18}
          - [概要：品質向上パッチツール（QPT） v1.1.18](quality-patches-tool/patches-available-in-qpt/v1-1-18/overview.md)
          - [ACSD-44938: ゲストユーザーのGraphQL リクエストで VAT_ID を適用できません](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-44938-vat-id-cannot-applied-graphql-guest-user.md)
          - [ACSD-45255：制限付き管理者ユーザーに対する低在庫レポートページの例外](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-45255-exception-on-low-stock-report-page-for-restricted-admin-user.md)
@@ -240,13 +240,13 @@ ht-degree: 0%
          - [ACSD-45817:GraphQL製品のミューテーションで、すべての設定可能なバリアントが提供されます](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-45817-graphql-products-mutation-gives-all-configurable-variants.md)
          - [ACSD-45849：ステージングアップデート後にビデオメタデータが失われる](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-45849-video-metadata-lost-after-staging-update.md)
          - [ACSD-46146：管理者から注文した後に 2 通の注文確認メールが送信される](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-46146-two-order-confirmation-emails-are-sent-after-placing-order-from-admin.md)
-      - v1.1.19 {#v1-1-19} {#v1-1-19}
+      - v1.1.19 {#v1-1-19}
          - [概要：品質向上パッチツール（QPT） v1.1.19](quality-patches-tool/patches-available-in-qpt/v1-1-19/overview.md)
          - [ACSD-45781：ストアのフロント検索フィールドがモバイルに表示されない](quality-patches-tool/patches-available-in-qpt/v1-1-19/acsd-45781-store-front-search-field-not-displayed-on-mobile.md)
          - [ACSD-46213：カテゴリツリーリクエストが 20 カテゴリに制限されています](quality-patches-tool/patches-available-in-qpt/v1-1-19/acsd-46213-category-tree-limited-20-categories.md)
          - [ACSD-46404：管理者ユーザーは、2.4.4 にアップグレードした後、ログインできない](quality-patches-tool/patches-available-in-qpt/v1-1-19/acsd-46404-admin-user-cannot-log-in-after-upgrading-to-2-4-4.md)
          - [ACSD-46192:async/bulk/V1/configurable-products/bySku/options エンドポイントの問題](quality-patches-tool/patches-available-in-qpt/v1-1-19/acsd-46192-async-bulk-v1-configurable-products-bysku-options-endpoint-issue.md)
-      - v1.1.20 {#v1-1-20} {#v1-1-20}
+      - v1.1.20 {#v1-1-20}
          - [概要：品質向上パッチツール（QPT） v1.1.20](quality-patches-tool/patches-available-in-qpt/v1-1-20/overview.md)
          - [ACSD-44851：サブカテゴリが開けない、または展開できないカテゴリ](quality-patches-tool/patches-available-in-qpt/v1-1-20/acsd-44851-category-with-subcategories-not-able-to-open-or-expand.md)
          - [ACSD-45675：製品のエクスポートで、既定のストア表示範囲のカテゴリ名が使用されます](quality-patches-tool/patches-available-in-qpt/v1-1-20/acsd-45675-product-export-uses-category-names-from-default-storeview-scope.md)
@@ -254,7 +254,7 @@ ht-degree: 0%
          - [ACSD-46703：製品のカスタマイズのドラッグ&amp;ドロップが機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-20/acsd-46703-product-customizable-options-drag-and-drop-doesnt-work-as-expected.md)
          - [ACSD-46869：設定可能な製品が、チェックアウト時に REST API を使用して更新されない](quality-patches-tool/patches-available-in-qpt/v1-1-20/acsd-46869-configurable-products-not-updating-using-rest-api.md)
          - [ACSD-46815：静的コンテンツのデプロイが、コンパクトな方法では失敗する](quality-patches-tool/patches-available-in-qpt/v1-1-20/acsd-46815-static-content-deploy-fails-when-using-compact-strategy.md)
-      - v1.1.21 {#v1-1-21} {#v1-1-21}
+      - v1.1.21 {#v1-1-21}
          - [概要：品質向上パッチツール（QPT） v1.1.21](quality-patches-tool/patches-available-in-qpt/v1-1-21/overview.md)
          - [ACSD-45071：読み込み時に製品に追加されるデフォルトのソース](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-45071-default-source-added-to-product-during-import.md)
          - [ACSD-46541：注文項目が削除された場合、管理者ユーザーはクレジットメモを作成できません](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46541-admin-user-cannot-create-credit-memo-if-order-item-deleted.md)
@@ -265,26 +265,26 @@ ht-degree: 0%
          - [ACSD-46856：階層価格を更新する際のパフォーマンスを向上](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46856-improves-performance-when-updating-tier-prices.md)
          - [ACSD-46988:GraphQL通貨 API リクエストで null 値が返される](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46988-graphql-currency-api-request-returns-null-values.md)
          - [ACSD-47076:Vimeo 動画をストアフロントで再生できない](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-47076-venmo-videos-cannot-be-played-on-the-storefront.md)
-      - v1.1.22 {#v1-1-22} {#v1-1-22}
+      - v1.1.22 {#v1-1-22}
          - [概要：品質向上パッチツール（QPT） v1.1.22](quality-patches-tool/patches-available-in-qpt/v1-1-22/overview.md)
          - [ACSD-47106：会社作成ページの新しいカスタム属性が保存されない](quality-patches-tool/patches-available-in-qpt/v1-1-22/acsd-47106-new-custom-attribute-on-company-creation-page-not-saved.md)
          - [ACSD-47444: PHP 7.4 上の既知の製品に対して存在しない特定のカテゴリパスにアクセスすると [!UICONTROL Trying to access array offset on value of type bool] エラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-22/acsd-47444-trying-access-array-offset-value-type-bool-error.md)
          - [ACSD-47332:UTC が 00:00～00:59 の間で実行している場合にのみ、Cron が失敗し、エラーが報告されます](quality-patches-tool/patches-available-in-qpt/v1-1-22/acsd-47332-cron-fails-with-error-reported-between-00-59.md)
-      - v1.1.23 {#v1-1-23} {#v1-1-23}
+      - v1.1.23 {#v1-1-23}
          - [概要：品質向上パッチツール（QPT） v1.1.23](quality-patches-tool/patches-available-in-qpt/v1-1-23/overview.md)
          - [ACSD-46519: [!UICONTROL categoryList] [!DNL GraphQL] query の product_count は、アンカーカテゴリに対して 0 を返します](quality-patches-tool/patches-available-in-qpt/v1-1-23/acsd-46519-product-count-categorylist-graphql-query-returns-zero-anchor-categories.md)
          - [ACSD-47027:B2B [!UICONTROL CompanyRole] [!DNL GraphQL update] での低速クエリ](quality-patches-tool/patches-available-in-qpt/v1-1-23/acsd-47027-slow-query-b2b-companyrole-graphql-update.md)
          - [ACSD-47666：ユーザーロールの検索が機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-23/acsd-47666-search-in-user-roles-not-working.md)
-         - [ACSD-47232:請求アドレスと同じがチェックされている場合、クーポンが適用されません。](quality-patches-tool/patches-available-in-qpt/v1-1-23/acsd-47232-coupon-is-not-applied-when-same-as-billing-address-is-checked.md)
-         - [ACSD-47179:制限付き ユーザー としてログインすると、製品レビューの一括削除が機能しません役割](quality-patches-tool/patches-available-in-qpt/v1-1-23/acsd-47179-mass-delete-product-review-doesnt-work-when-logged-in-as-limited-user.md)
-         - [ACSD-47107:カタログ価格ルールがカスタム オプションに適用されます。](quality-patches-tool/patches-available-in-qpt/v1-1-23/acsd-47107-catalog-price-rule-is-applied-to-custom-options.md)
-         - [ACSD-47497:ストア/設定/サービス OAuth の ACL がありません](quality-patches-tool/patches-available-in-qpt/v1-1-23/acsd-47497-missing-acl-for-store-configuration-services-oaut.md)
-      - v1.1.24 {#v1-1-24} {#v1-1-24}
+         - [ACSD-47232:「請求先住所と同じ」がオンの場合、クーポンは適用されません](quality-patches-tool/patches-available-in-qpt/v1-1-23/acsd-47232-coupon-is-not-applied-when-same-as-billing-address-is-checked.md)
+         - [ACSD-47179：制限付きユーザーの役割でログインした場合、製品レビューの一括削除が機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-23/acsd-47179-mass-delete-product-review-doesnt-work-when-logged-in-as-limited-user.md)
+         - [ACSD-47107: カスタムオプションにカタログ価格ルールが適用される](quality-patches-tool/patches-available-in-qpt/v1-1-23/acsd-47107-catalog-price-rule-is-applied-to-custom-options.md)
+         - [ACSD-47497：ストア/設定/サービス OAuth の ACL がありません](quality-patches-tool/patches-available-in-qpt/v1-1-23/acsd-47497-missing-acl-for-store-configuration-services-oaut.md)
+      - v1.1.24 {#v1-1-24}
          - [概要：品質向上パッチツール（QPT） v1.1.24](quality-patches-tool/patches-available-in-qpt/v1-1-24/overview.md)
          - [ACSD-46865：非同期インデックス作成が有効な場合、出荷およびクレジットメモが入力されない](quality-patches-tool/patches-available-in-qpt/v1-1-24/acsd-46865-shipment-and-credit-memo-grid-not-populated-when-asynchronous-indexing-is-enabled.md)
          - [ACSD-47559：メールテンプレートのプレビューが完全には表示されない](quality-patches-tool/patches-available-in-qpt/v1-1-24/acsd-47559-preview-email-template-not-fully-visible.md)
          - [ACSD-45168:url_key 属性が上書きされた製品で、SEO に対応する URL が生成されない](quality-patches-tool/patches-available-in-qpt/v1-1-24/acsd-45168-seo-friendly-urls-not-generated-for-products.md)
-         - [ACSD-47137:pub/メディア フォルダーが大きい場合の画像ギャラリーの読み込み速度が向上します](quality-patches-tool/patches-available-in-qpt/v1-1-24/acsd-47137-image-gallery-load-speed-improve-pub-media-big.md)
+         - [ACSD-47137:pub/media フォルダーが大きい場合の画像ギャラリーの読み込み速度が向上します](quality-patches-tool/patches-available-in-qpt/v1-1-24/acsd-47137-image-gallery-load-speed-improve-pub-media-big.md)
          - [ACSD-47079：サブ製品の在庫ステータスが変更された場合、複合製品の在庫ステータスが更新されない](quality-patches-tool/patches-available-in-qpt/v1-1-24/acsd-47079-composite-products-stock-status-not-updated.md)
          - [ACSD-47955:GraphQLに買い物かごの割引が正しく表示されない](quality-patches-tool/patches-available-in-qpt/v1-1-24/acsd-47955-graphql-does-not-display-cart-discount-correctly.md)
          - [ACSD-47920：ゲストユーザーは、オフの場合でも REST API を使用して注文 [!UICONTROL Allow Guest Checkout] きます](quality-patches-tool/patches-available-in-qpt/v1-1-24/acsd-47920-guest-order-allow-guest-checkout-off.md)
@@ -293,20 +293,20 @@ ht-degree: 0%
          - [ACSD-47336:[!UICONTROL Something went wrong] エラー通知がAdobe Commerce管理者によって破棄されました](quality-patches-tool/patches-available-in-qpt/v1-1-24/acsd-47336-something-went-wrong-error-when-dismissing-notifications-adobe-commerce-admin.md)
          - [ACSD-47803：在庫切れの設定可能な製品スウォッチが使用可能として表示される](quality-patches-tool/patches-available-in-qpt/v1-1-24/acsd-47803-out-of-stock-configurable-product-swatches-displayed-as-available.md)
          - [ACSD-46617：小計が最小注文額を超えると、「チェックアウトを続行」ボタンがグレー表示される](quality-patches-tool/patches-available-in-qpt/v1-1-24/acsd-46617-continue-to-checkout-button-greyed-out.md)
-      - v1.1.25 {#v1-1-25} {#v1-1-25}
+      - v1.1.25 {#v1-1-25}
          - [概要：品質向上パッチツール（QPT） v1.1.25](quality-patches-tool/patches-available-in-qpt/v1-1-25/overview.md)
          - [ACSD-48627：在庫切れの設定可能な商品がエラーの原因](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-48627-out-of-stock-configurable-product-causes-an-error.md)
-         - [ACSD-48234: [!UICONTROL Display Out of Stock Products] を有効にすると、カタログ検索結果に誤ったカテゴリ項目数が表示される](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-48234-catalog-search-result-shows-incorrect-category.md)
-         - [ACSD-47520:クレジットメモが作成されると、顧客は報酬ポイントを失います](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-47520-customers-lose-reward-points-when-credit-memo-created.md)
+         - [ACSD-48234：有効にすると、カタログ検索結果に誤ったカテゴリ項目数 [!UICONTROL Display Out of Stock Products] 表示される](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-48234-catalog-search-result-shows-incorrect-category.md)
+         - [ACSD-47520：クレジット メモを作成すると、顧客が報酬ポイントを失う](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-47520-customers-lose-reward-points-when-credit-memo-created.md)
          - [ACSD-48044：複数のギフトカードを適用すると、注文できなくなる](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-48044-applying-multiple-gift-cards-prevents-orders.md)
          - [ACSD-48300：設定可能な製品が削除されている場合、返品を作成できません](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-48300-return-cannot-be-created-if-configurable-product-removed.md)
          - [ACSD-48313：属性値 [!UICONTROL configurable_variations] コンマが含まれている場合、列は解析されません](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-48313-configurable-variations-column-not-parsed-attribute-value-contains-comma.md)
          - [ACSD-47910：各エンティティ・グリッドに欠落している受注、請求書、出荷およびクレジット・メモ](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-47910-missing-orders-invoices-shipments-credit-memos-in-respective-entity-grids.md)
          - [ACSD-47292：在庫切れのバンドル製品は、GraphQL Response では使用できません](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-47292-out-of-stock-bundled-products-not-available-in-graphql.md)
          - [ACSD-48262:「ページあたりの全製品の許可」が「はい」に設定されている場合、ストアフロントに製品が表示されない](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-48262-products-not-visible-on-storefront-when-allow-all-products-per-page-is-set-yes.md)
-         - [ACSD-48058:バンドルされた製品が Web サイトに割り当てられていない場合、製品価格の再インデックスが機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-48058-product-price-reindex-not-working-if-bundled-product-not-assigned-website.md)
+         - [ACSD-48058：バンドルされた製品が web サイトに割り当てられていない場合、製品価格の再インデックスが機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-48058-product-price-reindex-not-working-if-bundled-product-not-assigned-website.md)
          - [ACSD-48293：子供向け商品の再入荷により商品が売り切れた場合の在庫切れ問題](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-48293-composite-products-go-out-of-stock.md)
-      - v1.1.26 {#v1-1-26} {#v1-1-26}
+      - v1.1.26 {#v1-1-26}
          - [概要：品質向上パッチツール（QPT） v1.1.26](quality-patches-tool/patches-available-in-qpt/v1-1-26/overview.md)
          - [ACSD-48773：報酬ポイントのメールテンプレートが間違ったストアから取得される](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48773-reward-points-email-template-taken-from-wrong-store.md)
          - [ACSD-47937：アプリケーションレベルのキャッシュが原因で価格下降通知が送信されない](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-47937-price-drop-notifications-are-not-sent.md)
@@ -316,7 +316,7 @@ ht-degree: 0%
          - [ACSD-47988：商品のエクスポートで、ページビルダー商品の説明からHTML タグがトリミングされる](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-47988-product-export-trims-html-tags.md)
          - [ACSD-48366：ストックに戻るメールテンプレートに製品画像が表示されない](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48366-product-image-not-displayed-back-stock-email-template.md)
          - [ACSD-48417：スケジュール変更の作成後の SQL エラー](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48417-sql-error-after-creating-a-schedule-change.md)
-      - V1.1.27 {#v1-1-27} {#v1-1-27}
+      - V1.1.27 {#v1-1-27}
          - [概要](quality-patches-tool/patches-available-in-qpt/v1-1-27/overview.md)
          - [ACSD-48404：カテゴリのページネーションを記憶する=はいエラーを発生させる](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-48404-fixes-the-issue-where-remember-category-pagination-yes-causes-an-error.md)
          - [ACSD-48634: [!DNL JS] errors when [!DNL Google Analytics Content Experiments] enabled](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-48634-js-errors-when-google-analytics-content-experiments-enabled.md)
@@ -329,7 +329,7 @@ ht-degree: 0%
          - [ACSD-48216: UPDATE 操作で inventory_source_item テーブルの AUTO_INCREMENT が増加します](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-48216-auto-increment-of-inventory-source-item-table-increases-on-the-update-operation.md)
          - [ACSD-49497：出荷後も注文が処理され、一部返金が行われる](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-49497-order-is-still-processing-after-shipment-and-partial-refund.md)
          - [ACSD-48694: Invalid state change requested エラーにより、お客様は注文できません](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-48694-invalid-state-change-requested-error-prevents-customer-from-placing-order.md)
-      - v1.1.28 {#v1-1-28} {#v1-1-28}
+      - v1.1.28 {#v1-1-28}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.28](quality-patches-tool/patches-available-in-qpt/v1-1-28/overview.md)
          - [ACSD-49179：注文レポートに、様々な店舗に対して誤った金額が表示される](quality-patches-tool/patches-available-in-qpt/v1-1-28/acsd-49179-orders-report-shows-incorrect-amounts-for-different-stores.md)
          - [ACSD-49065：カスタムストックに割り当てられている場合、見積もり項目が管理者に表示されません](quality-patches-tool/patches-available-in-qpt/v1-1-28/acsd-49065-quote-items-are-not-visible-in-admin-if-assigned-to-custom-stock.md)
@@ -343,7 +343,7 @@ ht-degree: 0%
          - [ACSD-48204: 「Yes」または「No」属性に基づいて作成されたカタログ価格ルールで、選択した範囲が考慮されない](quality-patches-tool/patches-available-in-qpt/v1-1-28/acsd-48204-catalog-price-rule-created-based-on-yes-no-attribute.md)
          - [ACSD-49370:GraphQL スキーマの Product 属性に&quot;FilterMatchTypeInput&quot; タイプがある](quality-patches-tool/patches-available-in-qpt/v1-1-28/acsd-49370-product-attribute-filtermatchtypeinput-type.md)
          - [ACSD-47704: バンドルされた製品は、在庫製品の価格のみで表示されます](quality-patches-tool/patches-available-in-qpt/v1-1-28/acsd-47704-bundled-product-shows-in-stock-products-price-only.md)
-      - v1.1.29 {#v1-1-29} {#v1-1-29}
+      - v1.1.29 {#v1-1-29}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.29](quality-patches-tool/patches-available-in-qpt/v1-1-29/overview.md)
          - [ACSD-49389：受け取りの準備が整っていない場合に API から送信される受け取りの準備ができたメール](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49389-ready-pickup-email-sent-api.md)
          - [ACSD-49706：値が選択されていない場合にビジュアルスウォッチ属性に対して保存されるデフォルト値](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49706-default-value-saved-for-visual-swatch-attribute-when-no-value-is-selected.md)
@@ -363,7 +363,7 @@ ht-degree: 0%
          - [ACSD-49464：アーカイブから戻されない請求書、出荷およびクレジット・メモ](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49464-invoices-shipments-credit-memos-not-moved-back-from-archive.md)
          - [ACSD-48771:WYSIWYG エディターによるコンテンツのレンダリング方法](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-48771-wyswigy-editor-rendering-content-differently.md)
          - [ACSD-49527:GraphQLの会社ロールで、ページネーションが正しく表示されない](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49527-graphql-company-roles-dont-display-pagination-correctly.md)
-      - v1.1.30 {#v1-1-30} {#v1-1-30}
+      - v1.1.30 {#v1-1-30}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.30](quality-patches-tool/patches-available-in-qpt/v1-1-30/overview.md)
          - [ACSD-50367：顧客アドレスのエクスポートが機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50367-customer-address-export-does-not-work.md)
          - [BB2B-2598:storeConfig、通貨、国、国、availableStores GraphQl クエリにキャッシュ機能を追加します](quality-patches-tool/patches-available-in-qpt/v1-1-30/bb2b-2598-add-caching-capability.md)
@@ -380,14 +380,14 @@ ht-degree: 0%
          - [ACSD-50814：管理者ユーザーがクレジットメモを作成できない](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50814-an-admin-user-is-not-able-to-create-credit-memo.md)
          - [ACSD-49877：ビデオの自動再生がモバイル Safari で機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-49877-the-video-autoplay-option-does-not-work-on-mobile-safari.md)
          - [ACSD-51114：非同期インデックス作成中に大きなカタログからランダムな製品が表示されなくなる](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-51114-random-product-disappearing-from-large-catalogs-while-asynchronous-indexing.md)
-      - v1.1.31 {#v1-1-31} {#v1-1-31}
+      - v1.1.31 {#v1-1-31}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.31](quality-patches-tool/patches-available-in-qpt/v1-1-31/overview.md)
          - [ACSD-50858：バナーのコンテンツを読み込むパフォーマンスの向上](quality-patches-tool/patches-available-in-qpt/v1-1-31/acsd-50858-improved-performance-for-loading-banners-content.md)
          - [ACSD-49392：一部払い戻し後に注文ステータスがクローズに変更される](quality-patches-tool/patches-available-in-qpt/v1-1-31/acsd-49392-order-status-changes-to-closed-after-partial-refund.md)
          - [ACSD-50817: Cron ジョブの販売のクリーンな見積もりを最適化して実行速度を向上](quality-patches-tool/patches-available-in-qpt/v1-1-31/acsd-50817-optimizes-cron-job-sales-clean-quotes-to-run-faster.md)
          - [ACSD-50345：チェックアウト中の reCAPTCHA の問題](quality-patches-tool/patches-available-in-qpt/v1-1-31/acsd-50345-recaptcha-issues-during-checkout.md)
          - [ACSD-51036:REST API の同時呼び出し時の競合状態によって、出荷ステータスが上書きされます](quality-patches-tool/patches-available-in-qpt/v1-1-31/acsd-51036-race-conditions-during-concurrent-rest-api-calls-cause-overwrite-of-shipping-status.md)
-      - v1.1.32 {#v1-1-32} {#v1-1-32}
+      - v1.1.32{#v1-1-32}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.32](quality-patches-tool/patches-available-in-qpt/v1-1-32/overview.md)
          - [ACSD-49628: [!DNL Page Builder] CORS エラーにより製品を保存できない](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-49628-page-builder-cors-errors-prevent-product-save.md)
          - [ACSD-50621：共有カタログ内の異なる web サイトの階層価格が表示されない](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-50621-tier-prices-different-websites-shared-catalog-not-visible.md)
@@ -395,15 +395,15 @@ ht-degree: 0%
          - [ACSD-49480：機能しない後続のルールを破棄する](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-49480-discard-subsequent-rules-not-working.md)
          - [ACSD-50794:graphql を使用して顧客の注文から gift_wrapping を削除できない](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-50794-cannot-remove-gift-wrapping-from-customer-order-via-graphql.md)
          - [ACSD-51041：物価指数（PRICE INDEX）は非常に時間がかかる](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51041-price-index-takes-very-long-to-complete.md)
-         - [ACSD-51230:ギフトカードアカウントが削除されました。](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51230-gift-card-account-is-deleted.md)
-         - [ACSD-51379:ページのテキストへの変更が保存され [!DNL Page Builder] 内容](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51379-changes-made-to-page-text-content-via-page-builder-are-not-saved.md)
-         - [ACSD-51305:在庫切れの複合子製品が GraphQL 応答で利用できません](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51305-out-of-stock-composite-child-products-unavailable-in-graphql-response.md)
-         - [ACSD-51294:価格、量、税金、送料、売上高 [!DNL Google Analytics] および GTM に文字列として送信](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51294-price-quantity-tax-shipping-and-revenue-are-sent-as-string-to-google-analytics-and-gtm.md)
-         - [ACSD-51291:制限付き管理者は、複数の Web サイトに割り当てられた製品に画像/動画を追加できます](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51291-restricted-admin-can-add-images-videos-to-product-assigned-to-multiple-websites.md)
-         - [ACSD-50849:キャッシュをクリアした後、カテゴリに新製品を追加すると、位置と選択が一致しません](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-50849-adding-new-product-to-category-after-clearing-cache.md)
+         - [ACSD-51230: ギフト カード アカウントが削除されました](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51230-gift-card-account-is-deleted.md)
+         - [ACSD-51379: [!DNL Page Builder]  を使用したページのテキストコンテンツの変更は保存されません](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51379-changes-made-to-page-text-content-via-page-builder-are-not-saved.md)
+         - [ACSD-51305:GraphQL応答で使用できない在庫切れの複合子製品](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51305-out-of-stock-composite-child-products-unavailable-in-graphql-response.md)
+         - [ACSD-51294：価格、数量、税、送料、文字列として送信された売上高  [!DNL Google Analytics]  および GTM](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51294-price-quantity-tax-shipping-and-revenue-are-sent-as-string-to-google-analytics-and-gtm.md)
+         - [ACSD-51291：制限付き管理者は、複数の web サイトに割り当てられた製品に画像/ビデオを追加できる](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51291-restricted-admin-can-add-images-videos-to-product-assigned-to-multiple-websites.md)
+         - [ACSD-50849：キャッシュをクリアした後に新しい製品をカテゴリに追加すると、位置と選択内容が一致しなくなります](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-50849-adding-new-product-to-category-after-clearing-cache.md)
          - [ACSD-51204：商品がクレジットメモを作成した後、在庫に戻らない](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51204-product-does-not-return-back-in-stock-after-creating-credit-memo.md)
          - [ACSD-51238：設定可能な製品の更新および価格の編集時に在庫ソースが削除されました](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51238-inventory-source-removed-when-updating-configurable-product-and-editing-the-price.md)
-      - v1.1.33 {#v1-1-33} {#v1-1-33}
+      - v1.1.33{#v1-1-33}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.33](quality-patches-tool/patches-available-in-qpt/v1-1-33/overview.md)
          - [ACSD-51792：ページにインプレッションイベントがありません](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51792-page-does-not-have-impression-event.md)
          - [ACSD-51645：拡張機能Magento_OfflineShipping が無効な場合の、新しい「買い物かご」価格ルールの保存](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
@@ -424,7 +424,7 @@ ht-degree: 0%
          - [ACSD-51497: ドロップダウン タイプのカスタム属性でカタログ ページを並べ替えることができません](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
          - [ACSD-50368：顧客が非同期 REST API または非同期バルク REST API を使用して作成した場合、顧客 group_id は無視されます](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50368-customers-group-id-ignored-when-a-customer-is-created-via-async-rest-api.md)
          - [ACSD-50949：詳細検索の価格フィルターで SKU フィルターと併用すると、適切な結果が返されない](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50949-price-filter-in-advanced-search-does-not-return-proper-results.md)
-      - v1.1.34{#v1-1-34}{#v1-1-34}
+      - v1.1.34{#v1-1-34}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.34](quality-patches-tool/patches-available-in-qpt/v1-1-34/overview.md)
          - [ACSD-50813：管理者が、スラッシュを含むバンドルされた製品を追加できない](quality-patches-tool/patches-available-in-qpt/v1-1-34/acsd-50813-admin-unable-to-add-bundled-products-containing-a-slash.md)
          - [ACSD-52277：管理者ユーザーが、新しい注文を作成する際にストア表示を選択すると、誤ってリダイレクトされる](quality-patches-tool/patches-available-in-qpt/v1-1-34/acsd-52277-admin-user-redirected-incorrectly-on-selecting-store-view-when-creating-new-order.md)
@@ -436,7 +436,7 @@ ht-degree: 0%
          - [ACSD-51857:aggregate_sales_report_bestsellers_data の cron ジョブの遅延がパフォーマンスに影響を与える](quality-patches-tool/patches-available-in-qpt/v1-1-34/acsd-51857-slow-cron-job-of-aggregate-sales-report-bestsellers-data-affects-performance.md)
          - [ACSD-51739: CompanyTeam GraphQL リクエストで structure_id をリクエスト中にエラーが発生しました](quality-patches-tool/patches-available-in-qpt/v1-1-34/acsd-51739-error-on-requesting-structure-id-in-company-team-graphql-request.md)
          - [ACSD-48448：注文のキャンセル中に、inventory_reservation テーブルに重複したエントリが発生する競合状態の問題](quality-patches-tool/patches-available-in-qpt/v1-1-34/acsd-48448-race-condition-issue-happening-during-order-cancellations.md)
-      - v1.1.35{#v1-1-35}{#v1-1-35}
+      - v1.1.35{#v1-1-35}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.35](quality-patches-tool/patches-available-in-qpt/v1-1-35/overview.md)
          - [ACSD-52095:CSV の書き出し中に、在庫値の管理が間違っています](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-52095-manage-stock-value-wrong-while-exporting-csv.md)
          - [ACSD-51358: スケジュールの更新がありません](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-51358-schedule-updates-are-missing.md)
@@ -458,17 +458,17 @@ ht-degree: 0%
          - [ACSD-52831：有効な場合は、交渉可能な見積注文を行  [!DNL Google reCAPTCHA v3 Invisible]  ません](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-52831-cannot-place-negotiable-quote-orders.md)
          - [ACSD-51265: バンドルされた製品のインデックス再作成の最適化](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-51265-catalog-product-price.md)
          - [ACSD-52399：販売可能な数量 0 の製品が在庫として表示されます](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-52399-product-with-salable-qty-0-shows-in-stock.md)
-      - v1.1.36{#v1-1-36}{#v1-1-36}
+      - v1.1.36{#v1-1-36}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.36](quality-patches-tool/patches-available-in-qpt/v1-1-36/overview.md)
-         - [ASCD-52736: [!UICONTROL Cart Price Rule] が期待どおりに機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-52736-cart-price-rule-doesnt-work-as-expected.md)
-         - [ACSD-53239:インベントリ インデクサーが [!UICONTROL Update on Schedule] モードですべてのキャッシュをクリーンアップする](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-53239-inventory-indexer-cleans-all-caches.md)
-         - [ACSD-50887:[!UICONTROL Use in Search]オプションなしで Yes に設定されている[!UICONTROL Use in Search Results Layered Navigation]](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-50887-product-attribute-use-in-search-results-layered-navigation-set-to-yes.md)
+         - [ASCD-52736: [!UICONTROL Cart Price Rule] が期待どおりに動作しません](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-52736-cart-price-rule-doesnt-work-as-expected.md)
+         - [ACSD-53239: インベントリインデクサーが [!UICONTROL Update on Schedule] モードですべてのキャッシュをクリーンアップします](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-53239-inventory-indexer-cleans-all-caches.md)
+         - [ACSD-50887:[!UICONTROL Use in Search] オプションを指定せずに [!UICONTROL Use in Search Results Layered Navigation] を [ はい ] に設定する](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-50887-product-attribute-use-in-search-results-layered-navigation-set-to-yes.md)
          - [ACSD-51846：ペイロード  [!DNL REST API]  レベルが検証されない内部エラー](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-51846-internal-error-as-levels-of-rest-api-payload-are-not-validated.md)
          - [ACSD-53176：いずれかの条件を含む製品ルールが一致しません](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-53176-product-rule-with-is-one-of-condition-do-not-match.md)
          - [ACSD-47875：在庫管理を使用したストア表示範囲の買い物かごに製品を追加できない](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-47875-unable-to-add-product-to-customer-cart-for-store-view-scope-with-inventory-management.md)
          - [ACSD-51666: エラー「セッションの有効期限が切れています。もう一度ログインしてください。」 ログイン後](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-51666-error-session-has-expired-please-login-again.md)
          - [ACSD-52906：ログインしたカスタマーキャッシングに関する X-Magento-Vary cookie の問題の解決](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-52906-resolving-x-magento-vary-cookie-issue-logged-in-customer-caching.md)
-      - v1.1.37 {#v1-1-37} {#v1-1-37}
+      - v1.1.37 {#v1-1-37}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.37](quality-patches-tool/patches-available-in-qpt/v1-1-37/overview.md)
          - [ACSD-52613：更新なしでキャッシュとインデックスが更新される](quality-patches-tool/patches-available-in-qpt/v1-1-37/acsd-52613-cache-and-indexes-are-refreshed-with-no-updates.md)
          - [ACSD-52606：ユーザーが「注文の受け取りの準備が整ったことを通知」をクリックすると表示されるエラーメッセージ](quality-patches-tool/patches-available-in-qpt/v1-1-37/acsd-52606-troubleshooting-order-pickup-notification-error.md)
@@ -482,7 +482,7 @@ ht-degree: 0%
          - [ACSD-52143：製品の読み込み後にカスタムオプションが削除される](quality-patches-tool/patches-available-in-qpt/v1-1-37/acsd-52143-custom-options-are-removed-after-product-import.md)
          - [ACSD-53628:CSV 販売注文レポートに間違った特殊文字が表示される](quality-patches-tool/patches-available-in-qpt/v1-1-37/acsd-53628-csv-sales-order-report-incorrect-special-characters.md)
          - [ACSD 49843:[!UICONTROL Payment Action] = Sale で自動請求されると、製品のダウンロードリンクを使用できなくなります。](quality-patches-tool/patches-available-in-qpt/v1-1-37/acsd-49843-link-to-product-download-unavailable-after-being-autoinvoiced-with-payment-action-sale.md)
-      - v1.1.38 {#v1-1-38} {#v1-1-38}
+      - v1.1.38 {#v1-1-38}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.38](quality-patches-tool/patches-available-in-qpt/v1-1-38/overview.md)
          - [ACSD-54018：カタログウィジェットの製品リストに関するパフォーマンスの問題](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-54018-performance-issue-with-catalog-widget-product-list.md)
          - [ACSD-54111：製品のサムネール画像が表示されない](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-54111-production-product-thumbnail-image-not-displaying-on-product-grid.md)
@@ -492,7 +492,7 @@ ht-degree: 0%
          - [ACSD-53098：共有カタログ内の製品がフロントエンドに反映されない](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-53098-products-assigned-to-shared-catalog-not-reflecting-on-frontend-after-partial-index.md)
          - [ACSD-53347：価格インデックス作成のパフォーマンスが徐々に低下](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-53347-price-indexing-performance-gradually-degrades.md)
          - [ACSD-47669：カスタマイズ可能なオプションを含む製品をインポートする際の内部サーバーエラー](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-47669-customizable-product-import-error.md)
-      - v1.1.39 {#v1-1-39} {#v1-1-39}
+      - v1.1.39 {#v1-1-39}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.39](quality-patches-tool/patches-available-in-qpt/v1-1-39/overview.md)
          - [ACSD-54342：有効なデータのない CSV ファイルを読み込む場合のエラーメッセージ](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-54342-error-message-when-importing-csv-file-without-valid-data.md)
          - [ACSD-54660：顧客注文を並べ替える新しい入力属性ソート  [!DNL GraphQL]](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-54660-new-input-attribute-sort-to-sort-customer-orders-in-graphql.md)
@@ -505,22 +505,22 @@ ht-degree: 0%
          - [ACSD-54106：製品カテゴリでのトルコ語アクセント記号付き文字の並べ替えの修正](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-54106-correcting-turkish-accented-product-sorting-issue.md)
          - [ACSD-53998：顧客セグメントに基づく動的ブロックがログアウト後に正しく機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-53998-dynamic-block-based-on-customer-segment-doesnt-work-correctly-on-logging-out.md)
          - [ACSD-54776：使用されているデフォルト値がオフで、デフォルト以外の製品フィールド値は保存されない](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-54776-unchecked-used-default-value-and-non-default-product-field-values-are-not-saved.md)
-      - v1.1.40 {#v1-1-40} {#v1-1-40}
+      - v1.1.40 {#v1-1-40}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.40](quality-patches-tool/patches-available-in-qpt/v1-1-40/overview.md)
          - [ACSD-54472：拒否された会社の顧客は、認証を行って注文できます](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54472-customers-of-rejected-company-can-still-authenticate-and-place-orders.md)
          - [ACSD-54680：複数のソースが割り当てられている製品の B2B 見積もりを処理できない](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54680-b2b-quote-submitted-for-a-product-with-multiple-assigneda-sources.md)
          - [ACSD-55004：値より大きいインポートファイルをアップロード中にバリデーターがクラッシュする](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-55004-validator-crashes-while-uploading-an-import-file-larger-than-the-value.md)
-         - [ACSD-53414:制限付き管理者ユーザーが権限外の CMS ページを表示できる 範囲](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-53414-restricted-admin-user-can-see-cms-pages-outside-permissions.md)
+         - [ACSD-53414：制限付き管理者ユーザーが、権限適用範囲外のCMS ページを表示できる](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-53414-restricted-admin-user-can-see-cms-pages-outside-permissions.md)
          - [ACSD-52657: サブドメインを使用する 2 番目の storreview でミニカートが更新されません](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-52657-minicart-not-updated-on-second-storeview.md)
          - [ACSD-54007：顧客データのインポート時に未定義の配列キー_scope エラーが発生しました](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54007-undefined-array-key-scope-error-importing-customer-data.md)
          - [ACSD-54040:B2B モジュ [!UICONTROL Created] ルが有効な場合、注文の詳細でフィールドが空白になる](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54040-created-field-is-blank-in-order-details-page.md)
          - [ACSD-52801:GraphQL製品フィルタークエリに部分一致の結果が表示されない](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-52801-graphql-product-filter-query-not-showing-partial-match-results.md)
          - [ACSD-54961：制限付き管理者ユーザーは一括更新できません  [!DNL Product Review status]](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54961-restricted-admin-user-cant-mass-update-product-review-status.md)
-         - [ACSD-55031:コンパイル中に「書式 ＜例外＞Photoshop のみ「テキスト」「混合」を null 許容にすることはできません」エラー](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-55031-type-mixed-cannot-be-nullable-error-during-compilation.md)
-         - [ACSD-54319: [!UICONTROL Products in Carts] レポートに製品価格がゼロと表示される](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54319-product-price-shows-zero-in-product-in-cart-report.md)
-         - [ACSD-54989:会社情報 [!UICONTROL Enable Purchase Orders] に設定され [!UICONTROL Purchase Order] いいえに設定されている場合、管理者は注文できません](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54989-order-placement-restrictions-in-company-admin-settings.md)
-         - [ACSD-53378:広範なアドレス帳を持つお客様向けの 強化機能 チェックアウト エクスペリエンス](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-53378-swift-checkout-for-users-with-extensive-address-books.md)
-      - v1.1.41 {#v1-1-41} {#v1-1-41}
+         - [ACSD-55031: コンパイル中に&#39;Type &quot;mixed&quot;を nullable にすることはできません&#39; エラーが発生しました ](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-55031-type-mixed-cannot-be-nullable-error-during-compilation.md)
+         - [ACSD-54319：製品レポートに製品価格がゼロと [!UICONTROL Products in Carts] 示される](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54319-product-price-shows-zero-in-product-in-cart-report.md)
+         - [ACSD-54989：会社管理者は、[!UICONTROL Enable Purchase Orders] が「はい」に設定され、[!UICONTROL Purchase Order] が「いいえ」に設定されている場合、注文できません](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54989-order-placement-restrictions-in-company-admin-settings.md)
+         - [ACSD-53378：広範なアドレス帳を持つお客様のチェックアウトエクスペリエンスの強化](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-53378-swift-checkout-for-users-with-extensive-address-books.md)
+      - v1.1.41 {#v1-1-41}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.41](quality-patches-tool/patches-available-in-qpt/v1-1-41/overview.md)
          - [ACSD-54376：商品が [!UICONTROL shared catalog] から削除された際に、買い物かごで例外が発生する](quality-patches-tool/patches-available-in-qpt/v1-1-41/acsd-54376-exception-shopping-cart-product-removed-from-shared-catalog.md)
          - [ACSD-55414:MariaDB が entitys_ids をキャストしようとすると、パフォーマンスが低下します](quality-patches-tool/patches-available-in-qpt/v1-1-41/acsd-55414-bad-performance-when-mariadb-tries-to-cast-the-entitys-ids.md)
@@ -530,7 +530,7 @@ ht-degree: 0%
          - [ACSD-54067：製品ビデオがモバイルデバイスで再生されない](quality-patches-tool/patches-available-in-qpt/v1-1-41/acsd-54067-product-video-doesnt-play-on-mobile-device.md)
          - [ACSD-51819：一重引用符 ID を持つ複数の注文の配置](quality-patches-tool/patches-available-in-qpt/v1-1-41/acsd-51819-placing-multiple-orders-with-same-quote-id.md)
          - [ACSD-54324:GraphQL requisition_lists リクエストでページネーションの設定が考慮されない](quality-patches-tool/patches-available-in-qpt/v1-1-41/acsd-54324-graphql-requisition-lists-request-doesnt-consider-pagination-settings.md)
-      - v1.1.42 {#v1-1-42} {#v1-1-42}
+      - v1.1.42 {#v1-1-42}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.42](quality-patches-tool/patches-available-in-qpt/v1-1-42/overview.md)
          - [ACSD-54060：制限付き管理者は、別の製品の子である製品を保存できません](quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54060-restricted-admin-cant-save-a-product.md)
          - [ACSD-54418：動的に価格設定されたバンドルの子製品に、誤って追加された固定割引額](quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54418-fixed-discount-amount-incorrectly-added-to-child-product-of-dynamically-priced-bundle.md)
@@ -545,7 +545,7 @@ ht-degree: 0%
          - [ACSD-54966：注文が失敗した後のクーポンコードの再利用を修正](quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54966-fix-for-limited-use-coupon-code-after-failed-orders.md)
          - [ACSD-54890: aggregate_sales_report_bestsellers_data が原因  [!DNL MySQL]  エラー](quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54890-aggregate-sales-report-bestsellers-data-causes-mysql-errors.md)
          - [ACSD-48910：複数のソースが割り当てられたバンドル製品が、請求書および発送後に在庫切れになる](quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-48910-bundle-product-assigned-to-multiple-sources-out-of-stock.md)
-      - v1.1.43 {#v1-1-43} {#v1-1-43}
+      - v1.1.43 {#v1-1-43}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.43](quality-patches-tool/patches-available-in-qpt/v1-1-43/overview.md)
          - [ACSD-52714:y-m-d として設定されている場合、管理グリッドで日付フィルターが機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-52714-date-filter-does-not-work-in-admin-grid-when-set-as-y-m-d.md)
          - [ACSD-56090:GraphQL応答がストアに固有ではない](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-56090-graphql-request-responds-all-stores-data-and-not-requested-store-data.md)
@@ -560,18 +560,18 @@ ht-degree: 0%
          - [ACSD-53790:Rest API を使用して、1 つの製品に対して複数の RMA を作成できます](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-53790-multiple-rmas-for-single-product-can-be-created-via-rest-api.md)
          - [ACSD-54739:[!UICONTROL Product Stock] ステータスが [!UICONTROL Related Product Rules] に適用されない](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-54739-product-stock-status-not-applied-for-related-product-rules.md)
          - [ACSD-54983：非アクティブユーザーでGraphQLを使用できる会社ユーザーUIDがない](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-54983-company-user-uid-with-graphql-not-available-with-inactive-user.md)
-      - v1.1.44 {#v1-1-44} {#v1-1-44}
-         - [概要: [!DNL Quality Patches Tool] (QPT) v1.1.44](quality-patches-tool/patches-available-in-qpt/v1-1-44/overview.md)
-         - [ACSD-55231:クイックオーダー機能の使用中にSKU見つかりませんでした](quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-55231-sku-not-found-in-catalog.md)
-         - [ACSD-55352:報酬ポイントを使用した [!UICONTROL Credit Memo] の作成](quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-55352-creating-credit-memos-with-reward-points.md)
-         - [ACSD-55427:管理者ユーザー、共有カタログから製品ページから製品の割り当てを解除できません](quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-55427-admin-user-cannot-unassign-product-from-shared-catalog-from-product-page.md)
+      - v1.1.44 {#v1-1-44}
+         - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.44](quality-patches-tool/patches-available-in-qpt/v1-1-44/overview.md)
+         - [ACSD-55231：クイックオーダー機能の使用中に SKU が見つからないというエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-55231-sku-not-found-in-catalog.md)
+         - [ACSD-55352：報酬ポイントを含む [!UICONTROL Credit Memo] の作成](quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-55352-creating-credit-memos-with-reward-points.md)
+         - [ACSD-55427：管理者ユーザーが、製品ページの共有カタログから製品の割り当てを解除できない](quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-55427-admin-user-cannot-unassign-product-from-shared-catalog-from-product-page.md)
          - [ACSD-56280: ギフト レジストリの購入が完了していません](quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-56280-gift-registry-purchases-are-not-completed.md)
          - [コンテンツのステージング更新で ACSD-56193: [!DNL Fastly/Varnish] cache がクリアされない](quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-56193-fastly-cache-not-cleared-for-content-staging-update.md)
          - [ACSD-56158：複数の税務処理基準が買い物かごに適用された場合の、GraphQL応答の誤った税額](quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-56158-wrong-tax-value-in-graphql-when-multiple-tax-rules-applied-to-cart.md)
          - [ACSD-56023:CMSページでウィジェットのコンテンツが更新されない](quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-56023-widget-content-not-updating-on-the-cms-page.md)
          - [ACSD-56246：製品アップデートをスケジュールすると、複数選択の属性値がクリアされる](quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-56246-scheduling-product-updates-clears-multiselect-attributes-values.md)
          - [ACSD-56790: ビジュアルマーチャンダイザーで製品を並べ替えている間、「在庫切れを下部に移動」オプションが機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-56790-move-out-of-stock-to-bottom-option-does-not-work.md)
-      - v1.1.45 {#v1-1-45} {#v1-1-45}
+      - v1.1.45 {#v1-1-45}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.45](quality-patches-tool/patches-available-in-qpt/v1-1-45/overview.md)
          - [ACSD-56447：並行する web REST API リクエストを使用して同じ製品を買い物かごに追加すると、買い物かごに 2 つの異なる項目が表示される](quality-patches-tool/patches-available-in-qpt/v1-1-45/acsd-56447-adding-same-product-to-cart-via-parallel-web-api.md)
          - [ACSD-54965：グリッド [!UICONTROL Visual Merchandising] 正しい素材が表示されない](quality-patches-tool/patches-available-in-qpt/v1-1-45/acsd-54965-visual-merchandising-grid-not-display-correct-stock.md)
@@ -580,7 +580,7 @@ ht-degree: 0%
          - [ACSD-56616: シンプルな在庫切れ時にバンドルされた製品の店頭ディスプレイ](quality-patches-tool/patches-available-in-qpt/v1-1-45/acsd-56616-out-of-stock-simple-products-trigger-bundle-display.md)
          - [ACSD-52824：会社の顧客に対して無効な支払方法が表示される](quality-patches-tool/patches-available-in-qpt/v1-1-45/acsd-52824-payment-method-display-dicrepancy.md)
          - [ACSD-56415:DELETEのクエリが原因で、[!UICONTROL Partial Price Indexing] のパフォーマンスが低下している](quality-patches-tool/patches-available-in-qpt/v1-1-45/acsd-56415-performance-of-partial-price-indexing-is-slowed-down-due-to-a-delete-query.md)
-      - v1.1.46 {#v1-1-46} {#v1-1-46}
+      - v1.1.46 {#v1-1-46}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.46](quality-patches-tool/patches-available-in-qpt/v1-1-46/overview.md)
          - [ACSD-46767：在庫 [!UICONTROL Category] 量が変更されると、ページキャッシュが無効になる](quality-patches-tool/patches-available-in-qpt/v1-1-46/acsd-46767-category-page-caches-invalidate-when-the-stock-quantity-changes.md)
          - [ACSD-54656：チェックアウト時に非表示  [!DNL reCAPTCHA]  失敗し、注文の配置を防ぐ](quality-patches-tool/patches-available-in-qpt/v1-1-46/acsd-54656-invisible-recaptcha-fails-during-checkout-preventing-order-placement.md)
@@ -588,13 +588,13 @@ ht-degree: 0%
          - [ACSD-55100: [!DNL GraphQL]  検索結果で 10,000 個を超える製品が返されない](quality-patches-tool/patches-available-in-qpt/v1-1-46/acsd-55100-graphql-does-not-return-products-beyond-10k-in-the-search-results.md)
          - [ACSD-56842：遅延プロキシとプロキシファクトリがありません](quality-patches-tool/patches-available-in-qpt/v1-1-46/acsd-56842-deferred-proxies-and-proxy-factories-are-missing.md)
          - [ACSD-57003：注文のステータスが、「処理中」ではなく「完了」に変わる](quality-patches-tool/patches-available-in-qpt/v1-1-46/acsd-57003-order-status-changed-to-complete-instead-of-processing.md)
-      - v1.1.47 {#v1-1-47} {#v1-1-47}
+      - v1.1.47 {#v1-1-47}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.47](quality-patches-tool/patches-available-in-qpt/v1-1-47/overview.md)
          - [ACSD-57074：はい/いいえカスタム属性がインデックスで機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-47/acsd-57074-yes-no-custom-attribute-does-not-work-with-indexing.md)
          - [ACSD-56760：管理者ユーザーが特定の web サイトに制限されており、新しい製品を並べ替えたり追加したりすることができません](quality-patches-tool/patches-available-in-qpt/v1-1-47/acsd-56760-admin-user-restricted-to-specific-website.md)
          - [ACSD-55241：使用および使用回数属性には、生成されたクーポンの誤った値が表示されます](quality-patches-tool/patches-available-in-qpt/v1-1-47/acsd-55241-used-and-times-used-attributes-display-incorrect-values-for-generated-coupons.md)
          - [ACSD-56858:B2B 会社管理者の役割の権限の不一致](quality-patches-tool/patches-available-in-qpt/v1-1-47/acsd-56858-role-permissions-display-issue-in-b2b-company-admin-panel.md)
-      - v1.1.48 {#v1-1-48} {#v1-1-48}
+      - v1.1.48 {#v1-1-48}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.48](quality-patches-tool/patches-available-in-qpt/v1-1-48/overview.md)
          - [ACSD-57315:「取得」ボタンをクリックするたびに、新しいトランザクショ  [!DNL PayPal Payflow Pro]  が作成されます](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57315-new-transaction-created-in-paypal-payflow-pro-each-time-the-fetch-button-is-clicked.md)
          - [ACSD-56635：アカウント共有がに設定されている場合、読み込まれた顧客は重複します  [!DNL Global]](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address.md)
@@ -606,9 +606,9 @@ ht-degree: 0%
          - [ACSD-58008：終了日を空として編集すると、スケジュールの更新が表示されなくなる](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-58008-editing-the-end-date-as-empty-causes-the-schedule-update-to-disappear.md)
          - [ACSD-57854:GraphQL応答に、カテゴリ集計にリストされるべきでない無効なカテゴリが含まれています](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57854-graphql-response-contains-disabled-categories.md)
          - [ACSD-57565：注文ダッシュボードに間違った注文情報が表示される](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57565-the-order-dashboard-displays-incorrect-order-information.md)
-      - v1.1.49 {#v1-1-49} {#v1-1-49}
-         - [概要: [!DNL Quality Patches Tool] (QPT) v1.1.49](quality-patches-tool/patches-available-in-qpt/v1-1-49/overview.md)
-         - [ACSD-57643:カスタムオプションを含む製品が誤って追加されます](quality-patches-tool/patches-available-in-qpt/v1-1-49/acsd-57643-products-with-custom-options-are-incorrectly-added.md)
+      - v1.1.49 {#v1-1-49}
+         - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.49](quality-patches-tool/patches-available-in-qpt/v1-1-49/overview.md)
+         - [ACSD-57643：カスタムオプションを持つ製品が誤って追加される](quality-patches-tool/patches-available-in-qpt/v1-1-49/acsd-57643-products-with-custom-options-are-incorrectly-added.md)
          - [ACSD-57588：複数のアドレスに送信する際に、地域 ID 処理でエラーが発生しました](quality-patches-tool/patches-available-in-qpt/v1-1-49/acsd-57588-region-id-error-when-shipping-to-multiple-addresses.md)
          - [ACSD-56979：ステージングアップデートの削除後に製品画像が削除される](quality-patches-tool/patches-available-in-qpt/v1-1-49/acsd-56979-product-images-removed-after-staging-update-deleted.md)
          - [ACSD-58163：クーポンコードのない買 [!UICONTROL Cart Price Rule] 物かごとの一致から [!UICONTROL Customer Segment] 割引は適用されません](quality-patches-tool/patches-available-in-qpt/v1-1-49/acsd-58163-cart-price-rule-does-not-apply-discount-from-matching-customer-segment.md)
@@ -620,7 +620,7 @@ ht-degree: 0%
          - [ACSD-57045:URL の書き換えを [!UICONTROL Hierarchy] からオフにすると、無限ページのループ [!UICONTROL Website Root] 発生する](quality-patches-tool/patches-available-in-qpt/v1-1-49/acsd-57045-url-rewrites-cause-infinite-page-looping-after-website-root-unchecked-hierarchy.md)
          - [ACSD-58446:GraphQLを使用してチームを子ユーザーまたはチームと削除すると、未情報のエラーメッセージが表示される](quality-patches-tool/patches-available-in-qpt/v1-1-49/ascd-58446-deleting-team-with-child-users-via-graphql-gives-error.md)
          - [ACSD-58375:YouTube API キーの設定が正しくない場合、ストアビューレベルでビデオを追加するとエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-49/acsd-58375-wrong-youtube-api-key-configuration-causes-an-error.md)
-      - v1.1.50 {#v1-1-50} {#v1-1-50}
+      - v1.1.50 {#v1-1-50}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.50](quality-patches-tool/patches-available-in-qpt/v1-1-50/overview.md)
          - [ACSD-59036：製品価格の読み込み時に例外が発生する](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59036-exception-occurs-when-loading-product-prices.md)
          - [ACSD-45049：顧客 [!UICONTROL Is required] 属性の設定が、管理者の web サイト範囲に応じて機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-45049-customer-attribute-is-required-setting-doesnt-work.md)
@@ -631,24 +631,24 @@ ht-degree: 0%
          - [ACSD-59229：古い X-Magento-Vary 値が原因で、お客様のグループデータが誤って割り当てられている](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
          - [ACSD-60441:V1/customers [!DNL REST] API エンドポイントを介して顧客を更新すると、エラーがスローされる](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
          - [ACSD-58352：デフォルトストアの戻り値の属性ラベルは、 [!DNL GraphQL] API を使用して返されます](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
-         - [ACSD-59514:管理コンソールでForms [!DNL Page Builder] スローエラーが発生するコンソールブラウザー](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
+         - [ACSD-59514：ブラウザーコンソールの管理者のFormsで  [!DNL Page Builder]  スローエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
          - [ACSD-58790: [!DNL Chrome] のモバイル表示の製品詳細ページ画像のピンチを修正してズーム機能を追加しました。](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58790-fixes-pinch-to-zoom-functionality-on-the-product-detail-page.md)
          - [ACSD-58442：幅 768 px のデバイスがモバイルとして扱われ、メニューとヘッダーがデスクトップではなくモバイルビューに読み込まれる問題を修正しました](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58442-fixes-issue-devices-768px-mobile-view-instead-desktop.md)
          - [ACSD-48210：ストア表示固有のスコープ属性がグローバル値を上書きする](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-48210-store-view-specific-scope-attribute-overrides-global-values.md)
          - [ACSD-59280: 2.4.4-pX インストールでの ReflectionUnionType::getName （） エラー](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
          - [ACSD-60303:HTMLの縮小が有効になったことで解決された、管理注文配置の問題](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
-      - v1.1.51 {#v1-1-51} {#v1-1-51}
-         - [概要: [!DNL Quality Patches Tool] (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
-         - [ACSD-60234: [!DNL PayPal] 割引が適用されると、間違った金額が表示されます](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60234-paypal-shows-an-incorrect-amount-when-discount-is-applied.md)
-         - [ACSD-60632:注文を試みるたびにアドレスが保存される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60632-address-saved-on-every-order-attempt.md)
-         - [ACSD-61195:買い物かご GraphQL リクエスト最終ページで商品を返品できません](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
+      - v1.1.51 {#v1-1-51}
+         - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
+         - [ACSD-60234: [!DNL PayPal]  割引が適用されている場合に、間違った金額が表示される](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60234-paypal-shows-an-incorrect-amount-when-discount-is-applied.md)
+         - [ACSD-60632：注文が試行されるたびに保存されるアドレス](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60632-address-saved-on-every-order-attempt.md)
+         - [ACSD-61195：買い物かごGraphQLリクエストで、最終ページに項目を返せない](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
          - [ACSD-60538：製品が無効になっている場合、属性が表示されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
          - [ACSD-60631：同じ商品が複数の設定可能な商品に割り当てられている場合、GraphQLがエラーを返します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60631-graphql-returns-an-error-when-same-product-is-assigned-to-multiple-configurable-products.md)
          - [APM エージェントによって挿入された ACSD-60816: [!DNL New Relic] browser 監視スクリプトは、CSP に準拠していません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp.md)
          - [ACSD-59967:JavaScript エラーにより  [!DNL Google Maps]  が正しくレンダリングされない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59967-javascript-error-prevents-google-maps-from-rendering-correctly.md)
          - [ACSD-60326：カスタマーエクスペリ [!UICONTROL Returns] ンスのステータスに関するGraphQL クエリでエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
          - [ACSD-59786：有効期限切れの見積もりの見積もり ID を取得すると、GraphQLがエラーを返す](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired-quote.md)
-      - v1.1.52 {#v1-1-52} {#v1-1-52}
+      - v1.1.52{#v1-1-52}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
          - [ACSD-61366: bin/magento setup:static-content:deploy —jobs 4 コマンドがエラーで失敗する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61366-setup-command-fails-with-error.md)
          - [ACSD-61322:[!UICONTROL Shared Catalogue] に割り当てられていない製品は、XML サイトマップに含まれます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61322-products-not-assigned-to-shared-catalogue.md)
@@ -660,7 +660,7 @@ ht-degree: 0%
          - [ACSD-59952：別の共有カタログと同じグループ ID を持つ共有カタログの削除中にエラーが発生しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
          - [ACSD-60673：チェックアウト時 [!UICONTROL Cart Price Rule] 複数の支払い方法に関する問題を修正しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60673-cart-price-rule-fix-for-multiple-payment-methods-at-checkout.md)
          - [ACSD-60684: [!DNL GraphQL]  製品を複数のフィールドで並べ替えても、期待どおりに動作しない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60684-graphql-product-sorting-by-multiple-fields-does-not-work-as-expected.md)
-      - v1.1.53 {#v1-1-53} {#v1-1-53}
+      - v1.1.53{#v1-1-53}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
          - [ACSD-59930：会社のフローのパフォーマンスを向上](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
          - [ACSD-61553:[!UICONTROL Cart Price Rule] が正しく計算されていません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61553-cart-price-rule-discounts-are-incorrectly-calculated-when-multiple-discounts-with-different-priorities-are-applied.md)
@@ -671,7 +671,7 @@ ht-degree: 0%
          - [ACSD-61969：大文字または小文字で設定されたクーポンコードを入力する必要があります](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61969-required-type-coupon-code-as-configured-in-uppercase-lowercase.md)
          - [ACSD-61133: sales_clean_quotes cron 未承認発注から見積を削除します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61133-sales-clean-quotes-cron-deletes-quotes-from-unapproved-purchase-orders.md)
          - [ACSD-61667：配送作成のための在庫パフォーマンスを向上](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
-      - v1.1.54 {#v1-1-54} {#v1-1-54}
+      - v1.1.54 {#v1-1-54}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
          - [ACSD-61134：チェックアウトワークフローで [!UICONTROL Braintree Vault] 支払い方法が自動的に選択解除される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61134-braintree-vault-payment-method-is-automatically-deselected-in-the-checkout-workflow.md)
          - [ACSD-61756: データベース インデックスがないことが原因で、AdvancedSalesRule フィルターのパフォーマンスが低下しています](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61756-boosting-advanced-sales-rule-filter.md)
@@ -682,10 +682,10 @@ ht-degree: 0%
          - [ACSD-61103:API を使用してカスタマーログインが成功した後、失敗数が 0 にリセットされない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61103-customer-entity-failure-count-not-reset-after-login.md)
          - [ACSD-61799：見積もりに複数の固定割引買い物かごルールが適用された、誤った合計割引計算](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61799-incorrect-total-discount-calculation-with-multiple-fixed-discount-rules.md)
          - [ACSD-62485：会社が作成されると、async.operations.all コンシューマーが動作を停止する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created.md)
-         - [ACSD-61845:text/html accept ヘッダーを持つリクエストでエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
-         - [ACSD-62056:MSI がインストールされていると、設定可能な製品の 画像 アップロードが失敗する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed.md)
-      - v1.1.55 {#v1-1-55} {#v1-1-55}
-         - [ACSD-58566:発注書の GraphQL 内部サーバーエラー コメント](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58566-grapghql-internal-server-error-for-purchase-order-comments.md)
+         - [ACSD-61845: text/html accept ヘッダーを含むリクエストでエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
+         - [ACSD-62056:MSI がインストールされている場合、設定可能な製品の画像アップロードに失敗する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed.md)
+      - v1.1.55{#v1-1-55}
+         - [ACSD-58566：発注書コメントのGraphQL内部サーバーエラー](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58566-grapghql-internal-server-error-for-purchase-order-comments.md)
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
          - [ACSD-58685：無効な販売 E メールは、再有効化すると送信されます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58685-ensures-disabled-sales-emails-are-not-sent-upon-re-enabling.md)
          - [ACSD-58828：クライアントサイドの検証と共に、空の必須フィールドに対して、サーバーサイドの「address is required」メッセージが表示される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation.md)
@@ -699,16 +699,16 @@ ht-degree: 0%
          - [ACSD-60344：自動承認を含む [!UICONTROL Purchase Order] を使用した際の重複注文確認メール](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
          - [ACSD-62332：商品リスト GraphQL クエリが 10,000 個の商品に制限され、現在のページを 1 に設定している商品  [!DNL Live Search]  リスト](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
          - [ACSD-62591：設定 [!UICONTROL User Agent Rules] に、テーマが正しく切り替わらない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
-      - v1.1.56 {#v1-1-56} {#v1-1-56}
+      - v1.1.56 {#v1-1-56}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
          - [ACSD-61805:REST API を使用してバックオーダーのステータスを更新した後、ストアフロントの在庫の問題を修正しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-61805-stock-status-issue-storefront-backorder-status-update-rest-api.md)
          - [ACSD-60811：注文ステータスをカスタム値に更新する際の制限を修正しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-60811-fixes-limitation-in-updating-order-status-to-custom-values.md)
          - [ACSD-62971：在庫ソースを数値以外の数量値でインポートすると、数量が 0 に設定される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62971-stock-import-error-non-numeric-quantity.md)
          - [ACSD-62979:GraphQL ヘッダーのストア ID が正しくないと、致命的なメモリエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error.md)
-         - [ACSD-62475:買い物かご でのギフトカードマージの問題を修正](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62475-fixes-gift-card-merging-issues-in-the-cart.md)
-         - [ACSD-63242:10,000 を超えるカタログ商品を追加するとインポートが遅くなる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
-         - [ACSD-63062:複数の重複ルールがある不正な買い物かご割引計算](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
-         - [ACSD-62428:カタログ検索インデックスのStockステータスエラー](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
+         - [ACSD-62475：買い物かごでのギフトカードの結合の問題を修正しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62475-fixes-gift-card-merging-issues-in-the-cart.md)
+         - [ACSD-63242:10,000 個を超えるカタログ製品を追加すると読み込みが遅くなる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
+         - [ACSD-63062：複数の重複するルールがある、買い物かごの割引計算が正しくない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
+         - [ACSD-62428：カタログ検索インデックスの在庫ステータスエラー](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
          - [ACSD-63244：レンダリングやコンソールエラーを含む、管理パネルのJavaScript [!DNL Google Maps]  問題を解決します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63244-resolves-admin-panel-javascript-issues-including-google-maps-rendering-and-console-errors.md)
          - [AACSD-62355:Adobe Commerceの設定可能な製品編集パフォーマンスを向上](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62355-improves-configurable-product-edit-performance-in-adobe-commerce.md)
          - [ACSD-62872: スケジュールの更新が正しく検証されませんでした](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly.md)
@@ -717,26 +717,26 @@ ht-degree: 0%
          - [ACSD-55339:Adobe Commerceの交渉可能な引用符で囲まれた SKU トリミングの問題の解決](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-55339-resolving-sku-trimming-issue-in-negotiable-quotes-for-adobe-commerce.md)
          - [ACSD-62670:CSV[!UICONTROL Products Ordered]XML へのレポートの書き出しでエラーがスローされる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62670-products-ordered-report-export-to-csv-xml-throws-error.md)
          - [ACSD-62755: [!DNL TinyMCE] 7 では、フォントサイズとフォントをエディターの初期化設定に追加する必要があります](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
-      - v1.1.57 {#v1-1-57} {#v1-1-57}
+      - v1.1.57{#v1-1-57}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
-         - [ACSD-59083:mview の同時更新中に「ベーステーブルまたは表示見つかりません」エラー](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-59083-fix-base-table-or-view-not-found-errors-during-simultaneous-mview-updates.md)
-         - [ACSD-62951:REST API 経由で送信される [!UICONTROL Credit Memo] 電子メールの欠落している項目と合計を修正します。](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62951-fixes-missing-items-and-totals-in-credit-memo-emails-sent-via-rest-api.md)
+         - [ACSD-59083: mview の同時更新中に「ベース テーブルまたはビューが見つかりません」というエラーが発生しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-59083-fix-base-table-or-view-not-found-errors-during-simultaneous-mview-updates.md)
+         - [ACSD-62951:REST API を介して送信されたメールに含まれ [!UICONTROL Credit Memo] 欠落している項目と合計を修正](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62951-fixes-missing-items-and-totals-in-credit-memo-emails-sent-via-rest-api.md)
          - [ACSD-62212:[!UICONTROL Forgot Password] メールは、ストア表示言語に翻訳されません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62212-forgot-password-email-not-translated-to-store-view-language.md)
          - [管理パネルの ACSD-62708: [!DNL TinyMCE] 7 エディターのフォントサイズが PT を表示](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62708-tinymce-7-editor-font-size-issue.md)
          - [ACSD-62689：深さ 4 の後で、[!UICONTROL Related Product Rules] およびウィジェットにカテゴリを追加できない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62689-customer-add-categories-issue-related-product-rules-and-widgets.md)
          - [ACSD-62629：ウィジェットの製品リストに間違ったカテゴリが表示される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62629-product-list-widgets-category-condition.md)
          - [ACSD-57570：共有カタログへの管理者ユーザーアクセスが制限される問題を修正](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-57570-fix-restricted-admin-access.md)
-         - [ACSD-62635:マルチストア関連製品が [!DNL GraphQL]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62635-multistore-related-products-displayed-incorrectly-in-graphql.md)
-         - [ACSD-61622: [!DNL FedEx] アカウント REST API 応答に特定のレートがありません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response.md)
-         - [ACSD-62965:応答配置 GraphQL の順序で欠落している LocalizedException メッセージを修正](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62965-fixes-missing-localizedexception-message-in-graphql-order-placement-response.md)
-         - [ACSD-62758:設定可能な製品ページでのビデオレンダリングの問題を解決しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62758-resolved-video-rendering-issue-on-configurable-product-pages.md)
+         - [ACSD-62635：マルチストア関連製品が  [!DNL GraphQL] の場所で正しく表示されません。](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62635-multistore-related-products-displayed-incorrectly-in-graphql.md)
+         - [ACSD-61622: [!DNL FedEx] account 固有のレートが REST API 応答にありません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response.md)
+         - [ACSD-62965:GraphQL注文プレースメント応答に LocalizedException メッセージが見つからない問題を修正しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62965-fixes-missing-localizedexception-message-in-graphql-order-placement-response.md)
+         - [ACSD-62758：設定可能な製品ページでのビデオレンダリングの問題を解決](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62758-resolved-video-rendering-issue-on-configurable-product-pages.md)
          - [ACSD-63326：バックエンドから注文した後の管理リダイレクトの問題を修正しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
          - [ACSD-63286：共有カタログに割り当てられた製品を表示するには、手動でのインデックス再作成が必要です](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear.md)
          - [ACSD-58325：検証エラーの後も使用できる [!UICONTROL Import] ボタン](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
          - [表示が制限されたプライベート共有カタログの ACSD-61895: [!DNL GraphQL] categories クエリが失敗する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61895-graphql-not-returning-categories-with-allow-permission.md)
          - [ACSD-62671: [!DNL GraphQL]  は、最初の試行時に更新されたアドレスを返しません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
          - [ACSD-62481:[!UICONTROL Persistence] が有効になっている場合でも、買い物かごは空のままです](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62481-shopping-cart-empty-even-with-persistence-enabled.md)
-      - v1.1.58 {#v1-1-58} {#v1-1-58}
+      - v1.1.58 {#v1-1-58}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.58](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/overview.md)
          - [ACSD-63067：ストアフロントのグループ化製品での数量検証の問題の解決](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63067-resolving-quantity-validation-issues-in-grouped-products-on-storefront.md)
          - [ACSD-63283:Adobe Commerce[!UICONTROL Gift Registry] 電子メールと注文の問題の解決](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63283-resolving-gift-registry-email-and-order-placement-issues-in-adobe-commerce.md)
@@ -750,9 +750,9 @@ ht-degree: 0%
          - [ACSD-63329:REST API で商品を作成する際に、日付フィールドと時間フィールドのデフォルト値が設定されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
          - [MDVA-39305-V3：が有効になっている場合のログインの問題  [!DNL Google reCAPTCHA]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/mdva-39305-v3-login-issue-with-enabled-google-recaptcha.md)
          - [ACSD-63572：インデクサープロセスが終了した場合、カタログルールインデクサーの一時テーブルがクリーンアップされない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated.md)
-      - v1.1.59 {#v1-1-59} {#v1-1-59}
+      - v1.1.59 {#v1-1-59}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
-         - [ACSD-64112:MAGE_INDEXER_THREADS_COUNTが設定されている場合、indexer_update_all_views cron の実行に失敗します。](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
+         - [ACSD-64112: MAGE_INDEXER_INDEXER_THREADS_COUNT が設定されている場合、indexer_update_all_views cron の実行が失敗します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
          - [ACSD-63454：ドロップダウンと複数の選択属性のデフォルト値がデータベースに正しく保存されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown.md)
          - [ACSD-63870：会社のステータスが変更された際、顧客が適切にログアウトしなかった](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
          - [ACSD-63469：複数のルールで固定金額の買い物かごの割引が正しく適用されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63469-whole-carts-fixed-amount-discount-not-applied-correctly.md)
@@ -760,25 +760,26 @@ ht-degree: 0%
          - [ACSD-64212：注文を行った後に経由で作成された顧客アカウントにリンクされていない注文  [!DNL GraphQL] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account.md)
          - [ACSD-63793：読み込みプロセスは、異なるブラウザータブで互いに干渉します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
          - [ACSD-63574：経由でブロックする [!UICONTROL Bundle Product] リストを追加すると  [!DNL Page Builder]  エラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error.md)
-      - v1.1.60 {#v1-1-60} {#v1-1-60}
+      - v1.1.60 {#v1-1-60}
          - [ 概要： [!DNL Quality Patches Tool]  （QPT） v1.1.60](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
          - [ACSD-63323:[!UICONTROL Select All] 機能を解決し、製品カテゴリポップアップのページネーションとレコード数を強化します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
          - [ACSD-64149：編集する日付が 1 つだけの場合、[!UICONTROL Date range] 条件を持つ顧客セグメントを保存できます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/ascd-64149-customer-segment-with-a-date-range-condition.md)
          - [ACSD-64111：で製品コンポーネントのネストされた条件を設定する際の「InvalidArgumentException: Class does does not exist」エラーを修正  [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992：管理 UI のクーポンおよび発送方法の条件に関するエラーの [!UICONTROL Cart Price Rule]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
-      - v1.1.61 {#v1-1-61} {#v1-1-61}
+      - v1.1.61 {#v1-1-61}
          - [ACSD-64546:UPS ラベル作成中の UI および配列から文字列への変換例外の一般的なエラーメッセージ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion.md)
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ACP2E-3689：カテゴリツリーに関する複数の問題が、より深いレベルに表示され、アンカー/アンカー以外の関係が反映される ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178：何千もの製品属性 [!UICONTROL Edit Attribute Set] 持つページの読み込みに時間がかかる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+         - [ACSD-63883:[!UICONTROL Requisition List] に対する応答で誤った items_count [!DNL GraphQL]  修正](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list.md)
          - [ACP2E-3705: MAGE_INDEXER_THREADS_COUNT が設定されている場合、indexer_update_all_views cron 実行が失敗します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
          - [ACSD-64467：カテゴリの説明をストア表示レベルで保存した後、WYSIWYG エディターが空になりました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description.md)
          - [ACSD-63974：ページネーションで読み込み時間 [!UICONTROL Requisition List] 遅くなる問題を修正しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
    - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
-- コマンドラインツールリファレンス {#cli-reference} {#cli-reference}
+- コマンド ライン ツール リファレンス {#cli-reference}
    - [Adobe Commerce（オンプレミス）](reference/commerce-on-premises.md)
    - [互換性アップグレードツール](reference/uct.md)
-- Adobe Commerce {#observation-for-adobe-commerce} の監視 {#observation-for-adobe-commerce}
+- Adobe Commerce {#observation-for-adobe-commerce} の監視
    - [概要](observation-for-adobe-commerce/intro.md)
    - [アクセス方法](observation-for-adobe-commerce/access.md)
    - [アカウントと期間の選択](observation-for-adobe-commerce/selecting-the-account.md)
@@ -800,11 +801,11 @@ ht-degree: 0%
    - [ 「セキュリティ」タブ ](observation-for-adobe-commerce/security-tab.md)
    - [「インフラストラクチャ」タブ](observation-for-adobe-commerce/oac-infra.md)
    - [Adobe Commerceの監視の使用方法](observation-for-adobe-commerce/how-to-use.md)
-- データ移行ツール {#data-migration} {#data-migration}
+- データ移行ツール {#data-migration}
    - [移行の仕組み](data-migration-tool/how-migration-works.md)
    - [ベストプラクティス](data-migration-tool/best-practices.md)
    - [サポートされているバージョン](data-migration-tool/supported-versions.md)
-   - 基本 {#basics} {#basics}
+   - 基本 {#basics}
       - [プランを作成](data-migration-tool/create-plan.md)
       - [前提条件](data-migration-tool/prerequisites.md)
       - [インストール](data-migration-tool/install.md)
@@ -812,15 +813,15 @@ ht-degree: 0%
       - [設定](data-migration-tool/configure.md)
       - [Customize](data-migration-tool/customize.md)
       - [技術仕様](data-migration-tool/technical-specification.md)
-   - データを移行 {#migrate-data} {#migrate-data}
+   - データ {#migrate-data} ースの移行
       - [概要](data-migration-tool/migrate-data/overview.md)
       - [設定](data-migration-tool/migrate-data/settings.md)
       - [データ](data-migration-tool/migrate-data/data.md)
       - [変更点](data-migration-tool/migrate-data/delta.md)
       - [フォローアップ](data-migration-tool/migrate-data/follow-up.md)
       - [手動での移行が必要なデータ](data-migration-tool/migrate-data/manual.md)
-      - [Post データの移行手順](data-migration-tool/migrate-data/post-migration.md)
-   - リソース {#resources} {#resources}
-      - [トラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
-      - [変更履歴](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+      - [データ移行後の手順](data-migration-tool/migrate-data/post-migration.md)
+   - リソース {#resources}
+      - [ トラブルシューティング ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
+      - [ 変更ログ ](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
+- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
