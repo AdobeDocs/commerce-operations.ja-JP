@@ -1,16 +1,21 @@
 ---
-title: 「ACSD-52133：アップグレード後に顧客アカウントを保存できない」
+title: ACSD-52133：アップグレード後に顧客アカウントを保存できない
 description: ACSD-52133 パッチを適用すると、アップグレード後にカスタマーアカウントを保存できないAdobe Commerceの問題を修正できます。
 feature: Customers, Upgrade
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 4a0e6ed8-3e35-40ce-bb49-8ccfcde437a0
+source-git-commit: 82667023bbaa9d725eb52dacb8bd47042bdfe028
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 # ACSD-52133：アップグレード後に顧客アカウントを保存できない
+
+>[!NOTE]
+>
+>このパッチは、セキュリティパッチとの競合により廃止されました [APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08)。
 
 ACSD-52133 パッチにより、アップグレード後にカスタマーアカウントを保存できない問題が修正されました。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.35 がインストールされている場合に使用できます。 パッチ ID は ACSD-52133 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
 
@@ -65,7 +70,7 @@ ACSD-52133 パッチにより、アップグレード後にカスタマーアカ
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイド
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドの
 * クラウドインフラストラクチャー上のAdobe Commerce:[ アップグレードとパッチ適用 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) クラウドインフラストラクチャー上のCommerce ガイド
 
 ## 関連資料
