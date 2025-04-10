@@ -1,16 +1,21 @@
 ---
-title: 「ACSD-46192:async/bulk/V1/configurable-products/bySku/options エンドポイントの問題」
+title: ACSD-46192:async/bulk/V1/configurable-products/bySku/options エンドポイントの問題
 description: ACSD-46192 パッチは、「async/bulk/V1/configurable-products/bySku/options」エンドポイントの問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches） 1.1.19 がインストールされている場合に利用できます。 パッチ ID は ACSD-46192 です。 この問題はAdobe Commerce 2.4.5 で修正されました。
 feature: Configuration, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 5a54f4b5-8467-40de-9d8f-ba46880ed5ad
+source-git-commit: 2cd5a55d95fad071fe872fa466aaeb56c439dad1
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
 # ACSD-46192:async/bulk/V1/configurable-products/bySku/options エンドポイントの問題
+
+>[!NOTE]
+>
+>この問題は必須のセキュリティパッチ [APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08) によって対処されるので、ACSD-46192 パッチは部分的に非推奨です。
 
 ACSD-46192 パッチは、`async/bulk/V1/configurable-products/bySku/options` エンドポイントの問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)1.1.19 がインストールされている場合に使用できます。 パッチ ID は ACSD-46192 です。 この問題はAdobe Commerce 2.4.5 で修正されました。
 
@@ -22,7 +27,7 @@ ACSD-46192 パッチは、`async/bulk/V1/configurable-products/bySku/options` �
 
 **Adobe Commerce バージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 および 2.4.4
+* Adobe Commerce（すべてのデプロイメント方法） 2.3.6 - 2.4.3-p3
 
 >[!NOTE]
 >
@@ -30,11 +35,11 @@ ACSD-46192 パッチは、`async/bulk/V1/configurable-products/bySku/options` �
 
 ## 問題
 
-POSTリクエストが `async/bulk/V1/configurable-products/bySku/` に送信されると、エラーが発生します。
+POST リクエストが `async/bulk/V1/configurable-products/bySku/` に送信されると、エラーが発生します。
 
 <u> 再現手順 </u>:
 
-1. `async/bulk/V1/configurable-products/bySku/` にPOSTリクエストを送信します。
+1. `async/bulk/V1/configurable-products/bySku/` に POST リクエストを送信します。
 
 ```JSON
 [{
@@ -83,7 +88,7 @@ TypeError: Argument 3 passed to Magento\Framework\Webapi\ServiceInputProcessor::
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
