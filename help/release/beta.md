@@ -2,9 +2,9 @@
 title: Beta リリース
 description: Adobe Commerce ベータ版リリースとリリースへの参加方法について説明します。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: c523b57270370d87be0f2ab0513f7908bb0a7173
+source-git-commit: ea4f340540e57b282657a44502d80f1d5c409c6a
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Adobe Commerce Optimizerを使用すると、次のことができます。
 - AI と ML を使用して、パーソナライズされた検索とレコメンデーションを作成します。
 - 正確な実装とトラブルシューティングのために、同期ステータスやストアフロントのイベントデータなど、重要な製品データの可用性を表示します。
 
-Adobe Commerce Optimizerについて [ 詳細情報 ](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) します。 Adobe Commerce Optimizer早期アクセスプログラムに参加をご希望の場合は、電子メールで [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com) までお問い合わせください。
+Adobe Commerce Optimizerについて [ 詳細情報 ](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) します。 早期アクセスプログラムの詳細については、[!DNL Adobe Commerce Optimizer] 早期アクセス申請フォーム [ にご記入ください ](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u)。
 
 ### Live Search （パブリック Beta）の検索機能の強化
 
