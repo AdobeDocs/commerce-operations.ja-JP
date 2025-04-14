@@ -1,17 +1,21 @@
 ---
-title: ACSD-64112:「MAGE_INDEXER_THREADS_COUNT」が設定されている場合、「indexer_update_all_views」 cron 実行が失敗します
-description: ACSD-64112 パッチを適用すると、「MAGE_INDEXER_THREADS_COUNT」が設定されている場合に「indexer_update_all_views」 cron の実行が失敗するAdobe Commerceの問題を修正できます。
+title: 'ACSD-64112: `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_COUNT` is set'
+description: Apply the ACSD-64112 patch to fix the Adobe Commerce issue where the `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_COUNT` is set.
 feature: Catalog Management, B2B
 role: Admin, Developer
-source-git-commit: 544c7b9664ccc9204c2c0c78b103ad823e18ef7d
+exl-id: c95f179d-5291-481f-b655-08a9db608513
+source-git-commit: 0078cf5fb6d6c3a8650762d7cdf5556de642e201
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
+# ACSD-64112: `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_COUNT` is set
 
-# ACSD-64112:`MAGE_INDEXER_THREADS_COUNT` が設定されている場合、`indexer_update_all_views` cron 実行が失敗する
+>[!NOTE]
+>
+>このパッチは、2.4.7 より前のAdobe Commerce バージョンでは [ACP2E-3705](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md) に置き換えられました。
 
 ACSD-64112 パッチは、`MAGE_INDEXER_THREADS_COUNT` が設定されている場合に `indexer_update_all_views` cron の実行が失敗する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 がインストールされている場合に使用できます。 パッチ ID は ACSD-64112 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
 
@@ -19,11 +23,11 @@ ACSD-64112 パッチは、`MAGE_INDEXER_THREADS_COUNT` が設定されている�
 
 **Adobe Commerce バージョン用のパッチが作成されます。**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p10
+* Adobe Commerce (all deployment methods) 2.4.5-p10
 
 **Adobe Commerce バージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.5 ～ 2.4.7-p3
+* Adobe Commerce (all deployment methods) 2.4.5 - 2.4.6-p10
 
 >[!NOTE]
 >
@@ -38,16 +42,16 @@ ACSD-64112 パッチは、`MAGE_INDEXER_THREADS_COUNT` が設定されている�
 1. B2B でクリーンなインスタンスをインストールします。
 1. **[!UICONTROL B2B Company]** と **[!UICONTROL Shared Catalog]** を有効にします。
 1. カテゴリを作成します。
-1. いくつかの製品を作成してカテゴリに割り当てます。
+1. Create a few products and assign them to the category.
 1. 完全な再インデックスを実行します。
-1. 次のインデクサーを **[!UICONTROL Update on Schedule]** に設定します。
+1. Set the following indexers to **[!UICONTROL Update on Schedule]**:
 
    ```
    bin/magento indexer:set-mode schedule catalogpermissions_category catalogpermissions_product
    ```
 
-1. バックエンドに移動し、新しく作成したカテゴリを読み込みます。
-1. 「**[!UICONTROL Category Permissions]**」をクリックし、既存の顧客グループの **[!UICONTROL New Permission]** を作成します。
+1. Go to the backend and load the newly created category.
+1. Click **[!UICONTROL Category Permissions]** and create a **[!UICONTROL New Permission]** for an existing customer group.
 1. `catalogpermissions_category` インデクサーにバックログがあることを確認します。 これを確認するには、次のコマンドを実行します。
 
    ```
