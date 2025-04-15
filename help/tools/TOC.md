@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 72917c9e97141216e7393c28048e43f4f5f9c73f
+source-git-commit: 0960da0b0c1945e899ce092fb938de13e1b5c95c
 workflow-type: tm+mt
-source-wordcount: '7407'
+source-wordcount: '7422'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # ツール {#tools}
 
 - [概要](overview.md)
-- Site-Wide Analysis Tool {#site-wide-analysis-tool}
+- サイト全体分析ツール {#site-wide-analysis-tool}
    - [概要](site-wide-analysis-tool/intro.md)
    - [インストール](site-wide-analysis-tool/installation.md)
    - [アクセス方法](site-wide-analysis-tool/access.md)
@@ -27,7 +27,7 @@ ht-degree: 0%
    - [アラート](site-wide-analysis-tool/alerts.md)
    - [パッチ](site-wide-analysis-tool/patches.md)
 
-- Adobe Commerce {#managed-alerts-for-adobe-commerce} の管理アラート
+- Adobe Commerceの管理アラート {#managed-alerts-for-adobe-commerce}
    - [Adobe Commerceの管理アラート：メモリ  [!DNL Redis]  重大なアラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
    - [Managed alerts for Adobe Commerce:Disk warning アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
    - [Adobe Commerceの管理アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
@@ -45,7 +45,7 @@ ht-degree: 0%
    - [[!DNL Quality Patches Tool]：パッチの検索 ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [使用状況](quality-patches-tool/usage.md)
    - [リリースノート](quality-patches-tool/release-notes.md)
-   - 品質向上パッチツール {#patches-available-in-qpt} で使用可能なパッチ
+   - 品質向上パッチツールで使用可能なパッチ {#patches-available-in-qpt}
       - [概要](quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview.md)
       - v1.1.0 {#v1-1-0}
          - [概要：品質向上パッチツール（QPT） v1.1.0](quality-patches-tool/patches-available-in-qpt/v1-1-0/overview.md)
@@ -387,7 +387,7 @@ ht-degree: 0%
          - [ACSD-50817: Cron ジョブの販売のクリーンな見積もりを最適化して実行速度を向上](quality-patches-tool/patches-available-in-qpt/v1-1-31/acsd-50817-optimizes-cron-job-sales-clean-quotes-to-run-faster.md)
          - [ACSD-50345：チェックアウト中の reCAPTCHA の問題](quality-patches-tool/patches-available-in-qpt/v1-1-31/acsd-50345-recaptcha-issues-during-checkout.md)
          - [ACSD-51036:REST API の同時呼び出し時の競合状態によって、出荷ステータスが上書きされます](quality-patches-tool/patches-available-in-qpt/v1-1-31/acsd-51036-race-conditions-during-concurrent-rest-api-calls-cause-overwrite-of-shipping-status.md)
-      - v1.1.32{#v1-1-32}
+      - v1.1.32 {#v1-1-32}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.32](quality-patches-tool/patches-available-in-qpt/v1-1-32/overview.md)
          - [ACSD-49628: [!DNL Page Builder] CORS エラーにより製品を保存できない](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-49628-page-builder-cors-errors-prevent-product-save.md)
          - [ACSD-50621：共有カタログ内の異なる web サイトの階層価格が表示されない](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-50621-tier-prices-different-websites-shared-catalog-not-visible.md)
@@ -403,7 +403,7 @@ ht-degree: 0%
          - [ACSD-50849：キャッシュをクリアした後に新しい製品をカテゴリに追加すると、位置と選択内容が一致しなくなります](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-50849-adding-new-product-to-category-after-clearing-cache.md)
          - [ACSD-51204：商品がクレジットメモを作成した後、在庫に戻らない](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51204-product-does-not-return-back-in-stock-after-creating-credit-memo.md)
          - [ACSD-51238：設定可能な製品の更新および価格の編集時に在庫ソースが削除されました](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51238-inventory-source-removed-when-updating-configurable-product-and-editing-the-price.md)
-      - v1.1.33{#v1-1-33}
+      - v1.1.33 {#v1-1-33}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.33](quality-patches-tool/patches-available-in-qpt/v1-1-33/overview.md)
          - [ACSD-51792：ページにインプレッションイベントがありません](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51792-page-does-not-have-impression-event.md)
          - [ACSD-51645：拡張機能Magento_OfflineShipping が無効な場合の、新しい「買い物かご」価格ルールの保存](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
@@ -648,7 +648,7 @@ ht-degree: 0%
          - [ACSD-59967:JavaScript エラーにより  [!DNL Google Maps]  が正しくレンダリングされない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59967-javascript-error-prevents-google-maps-from-rendering-correctly.md)
          - [ACSD-60326：カスタマーエクスペリ [!UICONTROL Returns] ンスのステータスに関するGraphQL クエリでエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
          - [ACSD-59786：有効期限切れの見積もりの見積もり ID を取得すると、GraphQLがエラーを返す](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired-quote.md)
-      - v1.1.52{#v1-1-52}
+      - v1.1.52 {#v1-1-52}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
          - [ACSD-61366: bin/magento setup:static-content:deploy —jobs 4 コマンドがエラーで失敗する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61366-setup-command-fails-with-error.md)
          - [ACSD-61322:[!UICONTROL Shared Catalogue] に割り当てられていない製品は、XML サイトマップに含まれます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61322-products-not-assigned-to-shared-catalogue.md)
@@ -660,7 +660,7 @@ ht-degree: 0%
          - [ACSD-59952：別の共有カタログと同じグループ ID を持つ共有カタログの削除中にエラーが発生しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
          - [ACSD-60673：チェックアウト時 [!UICONTROL Cart Price Rule] 複数の支払い方法に関する問題を修正しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60673-cart-price-rule-fix-for-multiple-payment-methods-at-checkout.md)
          - [ACSD-60684: [!DNL GraphQL]  製品を複数のフィールドで並べ替えても、期待どおりに動作しない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60684-graphql-product-sorting-by-multiple-fields-does-not-work-as-expected.md)
-      - v1.1.53{#v1-1-53}
+      - v1.1.53 {#v1-1-53}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
          - [ACSD-59930：会社のフローのパフォーマンスを向上](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
          - [ACSD-61553:[!UICONTROL Cart Price Rule] が正しく計算されていません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61553-cart-price-rule-discounts-are-incorrectly-calculated-when-multiple-discounts-with-different-priorities-are-applied.md)
@@ -684,7 +684,7 @@ ht-degree: 0%
          - [ACSD-62485：会社が作成されると、async.operations.all コンシューマーが動作を停止する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created.md)
          - [ACSD-61845: text/html accept ヘッダーを含むリクエストでエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
          - [ACSD-62056:MSI がインストールされている場合、設定可能な製品の画像アップロードに失敗する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed.md)
-      - v1.1.55{#v1-1-55}
+      - v1.1.55 {#v1-1-55}
          - [ACSD-58566：発注書コメントのGraphQL内部サーバーエラー](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58566-grapghql-internal-server-error-for-purchase-order-comments.md)
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
          - [ACSD-58685：無効な販売 E メールは、再有効化すると送信されます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58685-ensures-disabled-sales-emails-are-not-sent-upon-re-enabling.md)
@@ -717,7 +717,7 @@ ht-degree: 0%
          - [ACSD-55339:Adobe Commerceの交渉可能な引用符で囲まれた SKU トリミングの問題の解決](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-55339-resolving-sku-trimming-issue-in-negotiable-quotes-for-adobe-commerce.md)
          - [ACSD-62670:CSV[!UICONTROL Products Ordered]XML へのレポートの書き出しでエラーがスローされる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62670-products-ordered-report-export-to-csv-xml-throws-error.md)
          - [ACSD-62755: [!DNL TinyMCE] 7 では、フォントサイズとフォントをエディターの初期化設定に追加する必要があります](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
-      - v1.1.57{#v1-1-57}
+      - v1.1.57 {#v1-1-57}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
          - [ACSD-59083: mview の同時更新中に「ベース テーブルまたはビューが見つかりません」というエラーが発生しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-59083-fix-base-table-or-view-not-found-errors-during-simultaneous-mview-updates.md)
          - [ACSD-62951:REST API を介して送信されたメールに含まれ [!UICONTROL Credit Memo] 欠落している項目と合計を修正](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62951-fixes-missing-items-and-totals-in-credit-memo-emails-sent-via-rest-api.md)
@@ -772,6 +772,7 @@ ht-degree: 0%
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ACP2E-3689：カテゴリツリーに関する複数の問題が、より深いレベルに表示され、アンカー/アンカー以外の関係が反映される ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178：何千もの製品属性 [!UICONTROL Edit Attribute Set] 持つページの読み込みに時間がかかる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+         - [ACSD-64431：リクエスト内のクーポンコードを含む「placeOrder」ミューテーションで内部エラーがスローされる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error.md)
          - [ACSD-64684:1,000 のコンマが原因で、999 を超える値のギフトカードを保存すると検証エラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand.md)
          - [ACSD-63883:[!UICONTROL Requisition List] に対する応答で誤った items_count [!DNL GraphQL]  修正](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list.md)
          - [ACP2E-3705: MAGE_INDEXER_THREADS_COUNT が設定されている場合、indexer_update_all_views cron 実行が失敗します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
@@ -779,10 +780,10 @@ ht-degree: 0%
          - [ACSD-63974：ページネーションで読み込み時間 [!UICONTROL Requisition List] 遅くなる問題を修正しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
          - [ACSD-64209: Cron スケジューラーが [!UICONTROL Ordered] ート引用符を除外せずに交渉可能な引用符を取得する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64209-excludes-ordered-quotes-in-cron-scheduler-to-prevent-email-triggers.md)
    - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
-- コマンド ライン ツール リファレンス {#cli-reference}
+- コマンドラインツールリファレンス {#cli-reference}
    - [Adobe Commerce（オンプレミス）](reference/commerce-on-premises.md)
    - [互換性アップグレードツール](reference/uct.md)
-- Adobe Commerce {#observation-for-adobe-commerce} の監視
+- Adobe Commerceの監視 {#observation-for-adobe-commerce}
    - [概要](observation-for-adobe-commerce/intro.md)
    - [アクセス方法](observation-for-adobe-commerce/access.md)
    - [アカウントと期間の選択](observation-for-adobe-commerce/selecting-the-account.md)
@@ -816,7 +817,7 @@ ht-degree: 0%
       - [設定](data-migration-tool/configure.md)
       - [Customize](data-migration-tool/customize.md)
       - [技術仕様](data-migration-tool/technical-specification.md)
-   - データ {#migrate-data} ースの移行
+   - データを移行 {#migrate-data}
       - [概要](data-migration-tool/migrate-data/overview.md)
       - [設定](data-migration-tool/migrate-data/settings.md)
       - [データ](data-migration-tool/migrate-data/data.md)
