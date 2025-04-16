@@ -1,5 +1,5 @@
 ---
-source-git-commit: 54757d09eb0f476229e567e43c58dc2130a59ac9
+source-git-commit: f756964406f101a93a513600f668edbffec17cb1
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 0%
@@ -255,7 +255,7 @@ ht-degree: 0%
 
 ## 2.4.4
 
-2.4.4 リリースラインのサポートは 2025 年 4 月 12 日（PT）に終了します。
+2.4.4 リリースラインのサポートは 2025 年 4 月 12 日（PT）に終了しました。
 
 <table>
   <thead>
@@ -299,7 +299,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p8">2.4.4-p8</a>
         </td>
-        <td>年 4 月  9, 2024</td>
+        <td>年 4 月  9、2024</td>
     </tr>
     <tr>
         <td>
@@ -449,7 +449,7 @@ ht-degree: 0%
         <td>
           2.3.7-p4
         </td>
-        <td>年 8 月  9, 2022</td>
+        <td>年 8 月  9、2022</td>
     </tr>
     <tr>
         <td>
@@ -767,14 +767,14 @@ ht-degree: 0%
         <td>
           2.1.0
         </td>
-        <td>2016 年 6 月 23 日</td>
+        <td>June 23, 2016</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
 
 ## 2.0
 
-2.0 リリースラインのサポートは 2018 年 3 月 31 日に終了しました。
+Support for the 2.0 release line ended on March 31, 2018.
 
 <table>
   <thead>

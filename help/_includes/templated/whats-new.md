@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3acd96480fb9238401a349efb107362f24bb8341
+source-git-commit: f756964406f101a93a513600f668edbffec17cb1
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '965'
 ht-degree: 2%
 
 ---
@@ -11,6 +11,28 @@ ht-degree: 2%
 
 このページには、過去 60 日間に加えられた変更が含まれています。 コピー編集などのマイナーアップデートはすべて、このリストから除外します。
 
+### 2025 年 4 月 11 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>種類</th>
+      <th>源</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">システム要件</a> テーブル:<br />- サポート対象外として v2.4.8 でElasticsearch削除<br />- バージョン 2.4.2 および 2.4.3 削除サポート終了時</p>
+</td>
+      <td>
+        技術
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6557cc45c1250ca17ba53acdd2a9c4748403df8d">6557cc</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
 ### 2025 年 4 月 10 日（Pt）
 
 <table style="table-layout:auto;">
@@ -18,7 +40,7 @@ ht-degree: 2%
     <tr>
       <th>説明</th>
       <th>タイプ</th>
-      <th>Source</th>
+      <th>源</th>
     </tr>
   </thead>
   <tbody>
@@ -102,7 +124,7 @@ ht-degree: 2%
     <tr>
       <th>説明</th>
       <th>タイプ</th>
-      <th>Source</th>
+      <th>源</th>
     </tr>
   </thead>
   <tbody>
@@ -115,12 +137,12 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c0214c378a5a985e5f91aed6407567f770ced6fc">c0214c</a> （コミット）</td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time">QPT 1.1.61 リリースの ACSD-63974 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p>QPT 1.1.61 リリースの ACSD-63974 パッチで修正された問題の <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time">詳細な説明を追加しました。</a></p>
 </td>
       <td>
-        新しいトピック
+        新規トピック
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6661088b3f6cfad2c5afca3e8ac3d76c07ae3237">666108</a> （コミット）</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6661088b3f6cfad2c5afca3e8ac3d76c07ae3237">666108</a> (コミット)</td>
     </tr>
     <tr>
       <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions"> リリースバージョン </a> を更新しました。</p>
@@ -216,7 +238,7 @@ ht-degree: 2%
     <tr>
       <th>説明</th>
       <th>タイプ</th>
-      <th>Source</th>
+      <th>源</th>
     </tr>
   </thead>
   <tbody>
@@ -226,19 +248,19 @@ ht-degree: 2%
       <td>
         新しいトピック
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8e50457a21fa17c59523e28e5ff50b1d4dd0d9f9">8e5045</a> （コミット）</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8e50457a21fa17c59523e28e5ff50b1d4dd0d9f9">8e5045</a> (コミット)</td>
     </tr>
   </tbody>
 </table>
 
-### 2025 年 4 月 1 日（Pt）
+### 2025年4月1日
 
 <table style="table-layout:auto;">
   <thead>
     <tr>
       <th>説明</th>
       <th>タイプ</th>
-      <th>Source</th>
+      <th>源</th>
     </tr>
   </thead>
   <tbody>
@@ -320,7 +342,7 @@ ht-degree: 2%
     <tr>
       <th>説明</th>
       <th>タイプ</th>
-      <th>Source</th>
+      <th>源</th>
     </tr>
   </thead>
   <tbody>
@@ -342,7 +364,7 @@ ht-degree: 2%
     <tr>
       <th>説明</th>
       <th>タイプ</th>
-      <th>Source</th>
+      <th>源</th>
     </tr>
   </thead>
   <tbody>
@@ -364,12 +386,12 @@ ht-degree: 2%
     <tr>
       <th>説明</th>
       <th>タイプ</th>
-      <th>Source</th>
+      <th>源</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements"> 必要システム構成 </a> 内の OpenSearch for Adobe Commerce on Cloud プロジェクトのサポート対象バージョンを、各リリースラインの対応するメジャーバージョンに変更しました。 これは、お客様がサービスバージョンのアップデートをリクエストする際のサポートプロセスに従っています。</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">システム要件</a>の Adobe Systems Commerce on Cloud プロジェクトでサポートされている OpenSearch のバージョンを、各リリース ラインの対応するメジャー バージョンに変更しました。これは、お客様がサービスバージョンのアップデートをリクエストする際のサポートプロセスに従っています。</p>
 </td>
       <td>
         技術
@@ -408,7 +430,7 @@ ht-degree: 2%
     <tr>
       <th>説明</th>
       <th>タイプ</th>
-      <th>Source</th>
+      <th>源</th>
     </tr>
   </thead>
   <tbody>
@@ -430,7 +452,7 @@ ht-degree: 2%
     <tr>
       <th>説明</th>
       <th>タイプ</th>
-      <th>Source</th>
+      <th>源</th>
     </tr>
   </thead>
   <tbody>
@@ -481,8 +503,8 @@ ht-degree: 2%
   <thead>
     <tr>
       <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
+      <th>種類</th>
+      <th>源</th>
     </tr>
   </thead>
   <tbody>
@@ -517,12 +539,12 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails">QPT 1.1.59 リリースの ACSD-64112 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p>QPT 1.1.59 リリースの ACSD-64112 パッチで修正された問題の <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails">詳細な説明を追加しました</a>。</p>
 </td>
       <td>
-        新しいトピック
+        新規トピック
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c22cffcbac34ed45d0252a879fa714cf283be4fe">c22cff</a> （コミット）</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c22cffcbac34ed45d0252a879fa714cf283be4fe">c22cff</a> (コミット)</td>
     </tr>
   </tbody>
 </table>
@@ -534,7 +556,7 @@ ht-degree: 2%
     <tr>
       <th>説明</th>
       <th>タイプ</th>
-      <th>Source</th>
+      <th>源</th>
     </tr>
   </thead>
   <tbody>
@@ -556,7 +578,7 @@ ht-degree: 2%
     <tr>
       <th>説明</th>
       <th>タイプ</th>
-      <th>Source</th>
+      <th>源</th>
     </tr>
   </thead>
   <tbody>
@@ -567,88 +589,6 @@ ht-degree: 2%
         新しいトピック
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/826125b9e176639a53c79ec7fea825b6963ffa3c">826125</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025 年 2 月 14 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview">QPT 1.1.59 リリースで使用可能なパッチによって修正された問題の説明 </a> を追加しました。</p>
-</td>
-      <td>
-        新しいトピック
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8200051f16c7d12d09c1487a4e12258b52d8d805">820005</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025 年 2 月 13 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku">QPT 1.1.58 リリースの ACSD-63578 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
-</td>
-      <td>
-        新しいトピック
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf22eac2923a78f112a999dbcb6be1bc6f5eb9db">bf22ea</a> （コミット）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025 年 2 月 11 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>2 月 25 日リリースに <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements"> システム要件 </a> を追加しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2004b40fafb74b0af2a82f618bb04ca13e9372c8">2004b4</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p>2025 年 2 月のベータ版およびセキュリティパッチのリリースノートを公開しました：<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">2.4.8-beta2</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p4</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p9</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p11</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p12</a></p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/12562e72703651b48cc506d587732e896573c7bc">12562e</a> （コミット）</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">UCT CLI リファレンス </a> を更新しました。</p>
-</td>
-      <td>
-        技術
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8c45d89c610a5b319352d202057d010b0450c848">8c45d8</a> （コミット）</td>
     </tr>
   </tbody>
 </table>
