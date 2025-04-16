@@ -3,15 +3,15 @@ title: ACSD-64431：リクエストのクーポンコードを含む「placeOrde
 description: ACSD-64431 パッチを適用すると、リクエストにクーポンコード情報を含む「placeOrder」ミューテーションが、注文を正常に行わずに内部サーバーエラーをスローするAdobe Commerceの問題を修正できます。
 feature: GraphQL, Orders, Promotions/Events
 role: Admin, Developer
-source-git-commit: 883b9db12308c8832afbf709bc188edab746618f
+exl-id: 13918f3e-842b-4b2e-b2e2-2d8add542a87
+source-git-commit: 43f4055d7c6bf681fde851d5132860ea7b68b677
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-
-# ACSD-64431：リクエスト内のクーポンコードを含む「placeOrder」ミューテーションで内部エラーがスローされる
+# ACSD-64431：リクエストのクーポンコードを含む「placeOrder」ミューテーションで、内部サーバーエラーがスローされる
 
 ACSD-64431 パッチは、リクエスト内にクーポンコード情報を含む `placeOrder` ームバリエーションが、注文を正常に行わずに内部サーバーエラーをスローする問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 がインストールされている場合に使用できます。 パッチ ID は ACSD-64431 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
 
@@ -341,10 +341,6 @@ ACSD-64431 パッチは、リクエスト内にクーポンコード情報を含
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
-
-## パッチのインストール後に必要な追加手順
-
-（この節はオプションです。問題を修正するためにパッチを適用した後に必要な手順が含まれる場合があります）。 
 
 ## 関連資料
 
