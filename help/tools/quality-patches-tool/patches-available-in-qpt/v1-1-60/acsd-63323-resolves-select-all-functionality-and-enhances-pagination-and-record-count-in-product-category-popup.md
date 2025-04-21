@@ -3,17 +3,17 @@ title: ACSD-63323:[!UICONTROL Select All] 機能を解決し、製品カテゴ�
 description: ACSD-63323 パッチを適用すると、商品をカテゴリに追加する際に [!UICONTROL Select All] オプションが機能しないAdobe Commerceの問題を修正できます。 さらに、ポップアップグリッドを使用してカテゴリに製品を追加する際に、ページネーションとレコード数ラベルが正しく機能するようにします。
 feature: Products
 role: Admin, Developer
-source-git-commit: f3f0cc93adf83b485ca50811adcc561638e3c5c2
+exl-id: 96e318fd-f1dd-4b15-b171-78ae1c8e4e0d
+source-git-commit: d24909ea2571eacafac1ff6b225e87bc40d320bc
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-63323:[!UICONTROL Select All] 機能を解決し、製品カテゴリポップアップのページネーションとレコード数を強化します
 
-ACSD-63323 パッチは、製品をカテゴリに追加すると **[!UICONTROL Select All]** オプションが機能しない問題を修正します。 さらに、ポップアップグリッドを使用してカテゴリに製品を追加する際に、ページネーションとレコード数ラベルが正しく機能するようにします。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) がインストールされたときに使用できます。 パッチ ID は ACSD-63323 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-63323 パッチは、製品をカテゴリに追加すると **[!UICONTROL Select All]** オプションが機能しない問題を修正します。 さらに、ポップアップグリッドを使用してカテゴリに製品を追加する際に、ページネーションとレコード数ラベルが正しく機能するようにします。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 がインストールされている場合に使用できます。 パッチ ID は ACSD-63323 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -68,5 +68,3 @@ ACSD-63323 パッチは、製品をカテゴリに追加すると **[!UICONTROL 
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
 * [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
-
-
