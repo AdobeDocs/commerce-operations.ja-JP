@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Adobe CommerceのデプロイメントでGraphQL Application Server を有効にするには、次の手順に従います。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: c5446f0273705b158297c0a253054742ec95b44e
+source-git-commit: 2f8396a367cbe1191bdf67aec75bd56f64d3fda8
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2074'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server を使用すると、Adobe CommerceはCommerce GraphQL API リクエストの状態を維持できます。 Swoole 拡張機能に基づいて構築されたGraphQL Application Server は、リクエスト処理を処理するワーカースレッドを使用したプロセスとして動作します。 GraphQL Application Server は、GraphQL API リクエストの間でブートストラップされたアプリケーションの状態を保持することで、リクエスト処理と製品全体のパフォーマンスを向上させます。 API リクエストが大幅に効率的になります。
 
-GraphQL Application Server は、Adobe Commerceでのみ使用できます。 Magento Open Sourceには使用できません。 Cloud Pro プロジェクトの場合、GraphQL Application Server を有効にするには、[Adobe Commerce サポートを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) チケットが必要です。
+GraphQL Application Server は、Adobe Commerceでのみ使用できます。 Magento Open Sourceでは使用できません。 Cloud Pro プロジェクトの場合、GraphQL Application Server を有効にするには、[Adobe Commerce サポートを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) チケットが必要です。
 
 >[!NOTE]
 >
->現在、GraphQL Application Server は [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/) と互換性がありません。 現在、[!DNL AWS S3] を [ リモートストレージ ](../configuration/remote-storage/cloud-support.md) に使用しているクラウドインフラストラクチャー上のAdobe Commerceのお客様は、Adobeが 2024 年末にホットフィックスをリリースするまで、GraphQL Application Server を使用できません。
+>現在、GraphQL Application Server は [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/) と互換性がありません。 現在、[!DNL AWS S3] for [ リモートストレージ ](../configuration/remote-storage/cloud-support.md) を使用しているクラウドインフラストラクチャー上のAdobe Commerceのお客様は、GraphQL Application Server を使用できません。
 
 ## アーキテクチャ
 
@@ -39,7 +39,7 @@ GraphQL Application Server を実行するには、以下が必要です。
 * Commerce バージョン 2.4.7 以降
 * PHP 8.2 以降
 * Swoole PHP 拡張機能 v5 以降がインストールされている
-* 予想される負荷に応じた十分な RAM と CPU
+* 予想される負荷に基づいた十分な RAM とCPU
 
 ## クラウドインフラストラクチャでの有効化とデプロイ
 
@@ -55,7 +55,7 @@ Pro プロジェクトで Application Server 機能を有効にした後、Graph
 
 1. [2.4.7-appserver ブランチ ](https://github.com/magento/magento-cloud/tree/2.4.7-appserver) のクラウドテンプレートを使用して、クラウドインフラストラクチャにAdobe Commerceをデプロイします。
 1. すべてのCommerceのカスタマイズと拡張機能がGraphQL Application Server と [ 互換性がある ](https://developer.adobe.com/commerce/php/development/components/app-server/) ことを確認します。
-1. Commerce Cloudプロジェクトのクローンを作成します。
+1. Commerce Cloud プロジェクトのクローンを作成します。
 1. 必要に応じて、「application-server/nginx.conf.sample」ファイルの設定を調整します。
 1. ファイル内のアクティブな「web」セクション `project_root/.magento.app.yaml` 完全にコメントアウトします。
 1. GraphQL Application Server `start` コマンドを含む `project_root/.magento.app.yaml` ファイルで、次の「web」セクション設定に対してコメント解除します。
@@ -102,7 +102,7 @@ git push
 1. [2.4.7-appserver ブランチ ](https://github.com/magento/magento-cloud/tree/2.4.7-appserver) のクラウドテンプレートを使用して、クラウドインフラストラクチャにAdobe Commerceをデプロイします。
 1. すべてのCommerceのカスタマイズと拡張機能に、GraphQL Application Server との互換性があることを確認します。
 1. `CRYPT_KEY` 環境変数がインスタンスに対して設定されていることを確認します。 この変数のステータスは、Cloud Console で確認できます。
-1. Commerce Cloudプロジェクトのクローンを作成します。
+1. Commerce Cloud プロジェクトのクローンを作成します。
 1. 必要に応じて、`application-server/.magento/.magento.app.yaml.sample` の名前を `application-server/.magento/.magento.app.yaml` に変更し、.magento.app.yaml の設定を調整します。
 1. GraphQL Application Server にトラフィックをリダイレクトするには、`project_root/.magento/routes.yaml` ファイルで次のルートの設定 `/graphql` コメント解除します。
 
@@ -126,7 +126,7 @@ git push
 
 >[!NOTE]
 >
->ルート `.magento.app.yaml` ファイル内のすべてのカスタム設定が、`application-server/.magento/.magento.app.yaml` ファイルに適切に移行されていることを確認します。 `application-server/.magento/.magento.app.yaml` ファイルがプロジェクトに追加されたら、ルート `.magento.app.yaml` ファイルに加えてそのファイルを保持する必要があります。 例えば、RabbitMQ サービスを設定 [ したり ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)web プロパティを管理 [ したりする必要がある場合 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) 同じ設定を `application-server/.magento/.magento.app.yaml` にも追加する必要があります。
+>ルート `.magento.app.yaml` ファイル内のすべてのカスタム設定が、`application-server/.magento/.magento.app.yaml` ファイルに適切に移行されていることを確認します。 `application-server/.magento/.magento.app.yaml` ファイルがプロジェクトに追加されたら、ルート `.magento.app.yaml` ファイルに加えてそのファイルを保持する必要があります。 例えば、[RabbitMQ サービスを設定する ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) または [web プロパティを管理する ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) 必要がある場合、同じ設定を `application-server/.magento/.magento.app.yaml` にも追加する必要があります。
 
 ### スタータープロジェクトのデプロイ
 
