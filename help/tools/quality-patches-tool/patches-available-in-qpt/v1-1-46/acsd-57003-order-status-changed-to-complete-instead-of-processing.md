@@ -1,11 +1,12 @@
 ---
-title: 「ACSD-57003：注文のステータスが、*処理中*に変更されず、*完了*に変更される」
+title: ACSD-57003：注文のステータスが、*処理中*に変わるのではなく、*完了*に変わります
 description: ACSD-57003 パッチを適用すると、注文のステータスが「処理中」ではなく「完了」に変わるAdobe Commerceの問題が修正されます。
 feature: Orders, Invoices, Shipping/Delivery
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a28ecc35-5c9a-4bba-b0b9-67fbe37ed8c3
+source-git-commit: 128107310416e97edca3b122e97456138d04073f
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -18,11 +19,11 @@ ACSD-57003 パッチでは、注文のステータスが *処理中* ではな�
 
 **Adobe Commerce バージョン用のパッチが作成されます。**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p3
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p3、2.4.6-p8、2.4.7-p3
 
 **Adobe Commerce バージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.6 - 2.4.6-p3
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.6 ～ 2.4.6-p9、2.4.7-p2 ～ 2.4.7-p4
 
 >[!NOTE]
 >
@@ -52,7 +53,7 @@ ACSD-57003 パッチでは、注文のステータスが *処理中* ではな�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
