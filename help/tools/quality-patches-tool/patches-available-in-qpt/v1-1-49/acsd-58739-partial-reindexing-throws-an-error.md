@@ -4,14 +4,18 @@ description: ACSD-55241 パッチを適用して、部分的なインデック�
 feature: Inventory, Products
 role: Admin, Developer
 exl-id: b4e6b8b4-43de-4434-94fb-6269a75e1c28
-source-git-commit: c643d55823ae0791ecfa0f2220116bbcbd02668a
+source-git-commit: e29b177fec7c5cc411c3495ce635e08fa6540ab8
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
 
 # ACSD-58739：部分的なインデックス再作成でエラーがスローされる
+
+>[!NOTE]
+>
+>このパッチは [ACP2E-3705](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md) に置き換えられています。
 
 ACSD-58739 パッチでは、部分的なインデックス再作成でエラーがスローされる問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.49 がインストールされている場合に使用できます。 パッチ ID は ACSD-58739 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
 
