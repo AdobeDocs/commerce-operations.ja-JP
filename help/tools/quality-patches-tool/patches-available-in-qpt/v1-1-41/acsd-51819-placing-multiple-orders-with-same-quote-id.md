@@ -1,11 +1,12 @@
 ---
-title: 「ACSD-51819：一重引用符 ID を使用した複数の注文の実行」
+title: ACSD-51819：一重引用符 ID を持つ複数の注文の配置
 description: ACSD-51819 パッチを適用すると、同じ見積書 ID で複数の注文を行うことができるAdobe Commerceの問題を修正できます。
 feature: Orders, Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: dbca8790-d947-4104-bba9-b29abcfc0344
+source-git-commit: 5f22591c499f0f5d349994195731c7c87512f5f0
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -18,11 +19,11 @@ ACSD-51819 パッチを使用すると、同じ見積もり ID で複数の注�
 
 **Adobe Commerce バージョン用のパッチが作成されます。**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.4-p2
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.4-p2、2.4.5-p5、2.4.6、2.4.6-p4、2.4.7-p1
 
 **Adobe Commerce バージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.4-p3
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.4-p11、2.4.5-p3 - 2.4.5-p10、2.4.6 - 2.4.6-p8、2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
@@ -54,7 +55,7 @@ ACSD-51819 パッチを使用すると、同じ見積もり ID で複数の注�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
