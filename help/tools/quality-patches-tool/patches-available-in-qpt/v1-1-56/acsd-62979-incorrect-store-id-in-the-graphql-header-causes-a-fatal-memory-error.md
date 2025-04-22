@@ -3,13 +3,13 @@ title: ACSD-62979:GraphQL ヘッダーのストア ID が正しくないと、�
 description: ACSD-62979 パッチを適用すると、Adobe Commerce ヘッダーで誤ったストア ID を使用すると致命的なメモリエラーが発生するGraphQLの問題を修正できます
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: 16875f95ab23559d4e1081b8cfe0374e1394d87d
+exl-id: 832baae1-34b4-4ca8-bfa9-221aa60da67e
+source-git-commit: 187a0056971e6bec324b5cc9d374375bbfb84dd8
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62979:GraphQL ヘッダーのストア ID が正しくないと、致命的なメモリエラーが発生する
 
@@ -19,11 +19,11 @@ ACSD-62979 パッチでは、GraphQL ヘッダーで誤ったストア ID を使
 
 **Adobe Commerce バージョン用のパッチが作成されます。**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p7、2.4.6
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.6、2.4.6-p7、2.4.7-p3
 
 **Adobe Commerce バージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.6-p8
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p4
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ GraphQL ヘッダーで誤ったストア ID を使用すると、致命的な�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
@@ -93,4 +93,3 @@ GraphQL ヘッダーで誤ったストア ID を使用すると、致命的な�
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
 * [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
-
