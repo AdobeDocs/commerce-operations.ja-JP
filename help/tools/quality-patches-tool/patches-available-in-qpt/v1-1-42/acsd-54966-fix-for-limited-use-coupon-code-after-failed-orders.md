@@ -1,11 +1,12 @@
 ---
-title: 「ACSD-54966：注文が失敗した後のクーポンコードの再利用に関する修正」
+title: ACSD-54966：注文が失敗した後のクーポンコードの再利用を修正
 description: 以前に失敗した注文に続いて、プロモーションや買い物かごごとに制限されているクーポンコードの再利用を防ぐAdobe Commerceの問題を修正するために ACSD-54966 パッチを適用してください。
 feature: Promotions/Events, Shopping Cart, Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e08062e5-62ff-4da6-918f-896af36edccc
+source-git-commit: f109d3544912ee09b25d882333840cf81d2f08e3
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -19,10 +20,12 @@ ACSD-54966 パッチは、以前に失敗した注文の後、顧客ごとに制
 **Adobe Commerce バージョン用のパッチが作成されます。**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p1
+* Adobe Commerce 2.4.7-p2
 
 **Adobe Commerce バージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.5 ～ 2.4.6-p3
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.5 ～ 2.4.5-p10、2.4.6 ～ 2.4.6-p8
+* Adobe Commerce:2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
@@ -52,7 +55,7 @@ ACSD-54966 パッチは、以前に失敗した注文の後、顧客ごとに制
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
@@ -61,6 +64,5 @@ ACSD-54966 パッチは、以前に失敗した注文の後、顧客ごとに制
 
 * [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
 * [ を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
-
 
 QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
