@@ -2,9 +2,9 @@
 title: オンプレミスでのインストールの前提条件
 description: Adobe Commerceのオンプレミスインストールに必要なソフトウェア依存関係について詳しく説明します。
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: db2256f5327897a4376a0d038ce697e8f93235af
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '332'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Adobe Commerceをインストールする前に、次の作業を行う必要があります。
 
-* [ システム要件 ](../system-requirements.md) を満たす 1 つ以上のホストを設定します。
+* 「*Commerce オンプレミス [」タブに表示されている ](../system-requirements.md) システム要件* を満たす 1 つ以上のホストを設定します。
 * ロードバランシングを使用して複数の web ノードを設定する場合は、システムのその部分を設定およびテストしてから _アプリケーションをインストール_ ます。
 * 問題が発生した場合にロールバックできるように、インストール中の様々な時点でシステム全体をバックアップできることを確認してください。
 
@@ -66,11 +66,11 @@ Apache をインストールまたはアップグレードするには、[Apache
 
 ### PHP
 
-サポートされている PHP のバージョンについては [ システム要件 ](../system-requirements.md) を、PHP の要件については [PHP](../system-requirements.md#php-settings) を参照してください。
+PHP のサポート対象バージョンの要件については、[](../system-requirements.md) system requirements} の *Commerce オンプレミス* タブを参照してください。また、PHP の要件については [PHP](../system-requirements.md#php-settings) を参照してください。
 
 ### MySQL
 
-インストールしているAdobe Commerceのバージョンと互換性のある MySQL のバージョンがあることを確認します。 サポートされているバージョンについて詳しくは、[ 必要システム構成 ](../system-requirements.md) を参照してください。
+インストールしているAdobe Commerceのバージョンと互換性のある MySQL のバージョンがあることを確認します。 サポートされているバージョンについては、[ システム要件 ](../system-requirements.md) の「*Commerce オンプレミス*」タブを参照してください。
 
 ```bash
 mysql -u <database root user or database owner name> -p
