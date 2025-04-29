@@ -1,7 +1,7 @@
 ---
-source-git-commit: 736e2b53cc6df0083fc02c7e6e88da1e7ca00b0d
+source-git-commit: a2c060d3bbc0b22034cd4deea382412426376fef
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,58 @@ ht-degree: 2%
 ## 新機能
 
 このページには、過去 60 日間に加えられた変更が含まれています。 コピー編集などのマイナーアップデートはすべて、このリストから除外します。
+
+### 2025 年 4 月 29 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Braintreeに関する既知の問題を <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5 リリースノート </a> に追加しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e195b58c7ae5573373f644c583eb12633703591">0e195b</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025 年 4 月 22 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>ACSD-54966 パッチの <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54966-fix-for-limited-use-coupon-code-after-failed-orders"> 影響を受ける製品とバージョン」の節を更新しました </a></p>
+</td>
+      <td>
+        Qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aa47a83f4ec38aa6ff96008cbab2733602465435">aa47a8</a> （コミット）</td>
+    </tr>
+    <tr>
+      <td><p>ACSD-62979 パッチの <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error"> 影響を受ける製品とバージョン」の節を更新しました </a></p>
+</td>
+      <td>
+        Qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4f16e57e339fd9ef7de1e0da30eaec7b7bb38396">4f16e5</a> （コミット）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025 年 4 月 18 日（Pt）
 
