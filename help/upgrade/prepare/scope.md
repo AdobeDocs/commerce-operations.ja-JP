@@ -2,7 +2,7 @@
 title: アップグレードの範囲について
 description: Adobe Commerceのカスタムモジュールやサードパーティの拡張機能に影響を与える可能性のある、リリースにおける後方互換性のない変更について説明します。
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adobe Commerce リリースには、後方互換性のない変更が含まれている場合があります。 後方互換性のない変更に関するドキュメントを確認します。以下を参照してください。
 
-- **[大きな変更のハイライト ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/)** – 大きな影響を与え、サードパーティモジュールが引き続き機能するように詳細な説明と特別な手順が必要な変更。
+- **[大きな変更のハイライト ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)** – 大きな影響を与え、サードパーティモジュールが引き続き機能するように詳細な説明と特別な手順が必要な変更。
 - **[マイナー変更参照 ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)** - クラス、API メンバーシップ、データベース、依存関係の挿入、インターフェイス、レイアウト、システム、および XSD のマイナーな変更について説明するコードベースから生成された参照ドキュメント。
 
 ## サードパーティの拡張機能
@@ -103,7 +103,7 @@ bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues �
 
 ### ヒントとアドバイス
 
-ツールで特定されたすべての問題は、特定のエラーコードと共にレポートに表示されます。 各問題の詳細については、[ エラーメッセージ参照 ](../upgrade-compatibility-tool/error-messages.md) を参照してください。 Adobeでは、是正手順を計画できるように、各問題のタイプを修正する提案も提供します。
+ツールで特定されたすべての問題は、特定のエラーコードと共にレポートに表示されます。 各問題の詳細については、[ エラーメッセージ参照 ](../upgrade-compatibility-tool/error-messages.md) を参照してください。 Adobeでは、是正手順を計画できるように、各問題のタイプを修正する提案も提供しています。
 
 レポートを使用して、アップグレード用のコードの更新に要する作業量を見積もります。 経験に基づいて、特定された問題の合計数と問題の重大度に基づいて、アップグレードに必要な労力を見積もることができます。 これはコマンドラインツールなので、これを自動テストおよびコードチェックスイートに組み込み、JSON 出力を使用してレポートを生成できます。
 
