@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe Commerceで使用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 93c9eb8865aa53ec784d47fd66ca97d1941b4604
+source-git-commit: db6ccbcf16786c1987f3d84e86582fe048edd2e4
 workflow-type: tm+mt
-source-wordcount: '25682'
+source-wordcount: '25802'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,14 @@ ht-degree: 0%
 >[!INFO]
 >
 >コミュニティがMagento Open Source用に作成した [!DNL quality patches] について詳しくは、[ リリースノート ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+
+## v1.1.63 {#v1-1-63}
+
+* **ACSD-64627** （Adobe Commerce >=2.4.6-p8 &lt;2.4.8 の場合） – 会社構造内でユーザーを追加または編集する際に、カスタムカスタマー属性を保存できない問題を修正しました。
+* **ACSD-64753** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8 の場合） – 「Pickup in Store」で事前に選択したストアが、ストアの半径外にある場合でも、配送先住所が変更されたときに更新されない問題を修正しました。
+* **ACSD-65195** （Adobe Commerce >=2.4.4 &lt;2.4.8 の場合） - GraphQL ミューテーション `createCompany` が必要なリージョンのない国でエラーをスローする問題を修正しました。
+* **LYNX-839** （Adobe Commerce 2.4.8 用） – GraphQLを通じてお客様のグループ、セグメント、プロモーションルールに関する情報を公開しなくなりました。
+* 更新されたバージョン：**MDVA-12304**、**ACSD-48234**、**ACSD-58054**
 
 ## v1.1.62 {#v1-1-62}
 
@@ -60,10 +68,10 @@ ht-degree: 0%
 
 * **ACSD-63454** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.8 の場合） – ドロップダウン属性と複数選択属性のデフォルト値がデータベースに正しく保存されない問題を修正しました。
 * **ACSD-63574** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.5 の場合） – ページビルダーを使用してバンドル製品リストをブロックに追加するとエラーが発生する問題を修正しました。
-* **ACSD-63793** （Adobe CommerceおよびMagento Open Source >=2.4.6 &lt;2.4.8 の場合） – インポートプロセスが異なるブラウザータブで互いに干渉する問題を修正しました。
-* **ACSD-64113** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.8 の場合） – メディアギャラリーから高さに対して比較的幅が小さい（またはその逆の）画像をアップロードした場合に、管理者でエラーが発生する問題を修正しました。
-* **ACSD-64212** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.8 の場合） – 注文を行った後にGraphQLを介してアカウントを作成した場合に、注文が顧客アカウントに関連付けられていない問題を修正しました。
-* **ACSD-63469** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.8） – 複数のルールが適用された場合に、買い物かご全体に対する固定金額の割引が適切に適用されなかった問題を修正しました。
+* **ACSD-63793** (Adobe Systems コマースおよびMagento Open Source >=2.4.6 &lt;2.4.8) - Fixes the issue when Import processes interfere with each other in different browser tabs.
+* **ACSD-64113** (Adobe Systems Commerce および Magento Open Source > = 2.4.5 &lt;2.4.8) - Fixes the issue causing errors in the admin when uploading images with a relatively small width compared to their height (or vice versa) via the media gallery.
+* **ACSD-64212** (Adobe SystemsコマースおよびMagento Open Source > = 2.4.5 &lt;2.4.8) - Fixes the issue where an order is not associated with a customer account when the account is created via GraphQL after the order is placed.
+* **ACSD-63469** (Adobe SystemsコマースおよびMagento Open Source >=2.4.7 用 &lt;2.4.8) - Fixes the issue where fixed-amount discounts for the whole cart were not being applied properly when more than one rule was applied.
 * **ACSD-63870** （Adobe Commerce >=2.4.4 &lt;2.4.4-p11 の場合） – お客様のアクティブセッション中に会社のステータスが変更されると、会社の顧客が適切にログアウトされない問題を修正しました。
 * **ACSD-64112** （Adobe Commerce >=2.4.5 &lt;2.4.8 の場合） – `MAGE_INDEXER_THREADS_COUNT` が設定されている場合に `indexer_update_all_views` cron 実行が失敗する問題を修正しました。
 * 更新されたバージョン：**ACSD-61622**
@@ -77,8 +85,8 @@ ht-degree: 0%
 * **ACSD-63067** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8 の場合） – すべての商品の数量が誤ってハイライト表示され、1 つの数量のみが間違っている場合に、グループ化された商品のすべての商品に関して *[!DNL Please specify the quantity of product(s).]* というメッセージが表示される問題を修正しました。
 * **ACSD-63090** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8 の場合） – 商品が買い物かごに追加された後に削除されると、買い物かごの商品が削除される問題を修正しました。
 * **ACSD-63182** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8 の場合） - **[!DNL MSI]** *が有効になっている重複したバンドル製品を保存するとエラーが発生する問題を修正* ました。
-* **ACSD-63283** （Adobe Commerce >=2.4.4 &lt;2.4.8 の場合） – ギフトレジストリから商品を注文すると例外が発生する問題と、ギフトレジストリの更新にレジストリに属さない商品が含まれる問題を修正しました。
-* **ACSD-63299** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8 の場合） – 設定可能な商品の特別価格がストアフロントに表示されない問題を修正しました。
+* **ACSD-63283** (Adobe Systems コマース >=2.4.4 の場合 &lt;2.4.8) - Fixes the issue where ordering items from the gift registry causes an exception and where gift registry updates include items that don&#39;t belong to the registry.
+* **ACSD-63299** (Adobe Systems コマースおよびMagento Open Source > = 2.4.4 用 &lt;2.4.8) - Fixes the issue where the special price for a configurable product doesn&#39;t display on the storefront.
 * **ACSD-63325** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.8 の場合） – 空の [!DNL GraphQL] リクエストを送信すると `Syntax Error: Unexpected <EOF>` エラーが発生する問題を修正しました。
 * **ACSD-63329** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8 の場合） – [!DNL REST API] を使用して商品を作成する際に、入力タイプが **[!UICONTROL Date]** または **[!UICONTROL Date and Time]** の属性のデフォルト値が設定されない問題を修正しました。
 * **ACSD-63572** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.8 の場合） – インデクサープロセスが終了した場合に、`CatalogRule` インデクサーの一時テーブルがクリーンアップされない問題を修正しました。
@@ -107,11 +115,11 @@ ht-degree: 0%
 * **ACSD-63286** （Adobe Commerce >=2.4.6 &lt;2.4.7 の場合） - [!DNL API] を介して共有カタログに割り当てられた商品が、手動の再インデックスが実行されるまでストアフロントに表示されない問題を修正しました。
 * **ACSD-63326** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.5.0 の場合） – バックエンドから注文した後、[!UICONTROL Admin] が壊れたページにリダイレクトされる問題を修正しました。
 * 更新されたバージョン：**ACSD-51739**
-* 交換済みパッチ：**MDVA-43451**、**ACSD-62755**
+* 置き換えられたパッチ: **MDVA-43451**、 **ACSD-62755**
 
 ## v1.1.56 {#v1-1-56}
 
-* **ACSD-63244** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8 の場合） - [!DNL JavaScript] エラーによって [!DNL Google Maps] が正しくレンダリングされない問題を修正しました。 *Uncaught TypeError:this が多数ある問題を修正しました。_each は関数ではなく*[!UICONTROL Admin] パネルのコンソールでエラーが発生します。
+* **ACSD-63244** (Adobe Systems Commerce および Magento Open Source >=2.4.4 の場合 &lt;2.4.8) - Fixes the issue where a [!DNL JavaScript] エラーにより [!DNL Google Maps] が正しくレンダリングされません。 多くの *Uncaught TypeError: this._each は関数ではありません*[!UICONTROL Admin]パネルのコンソールにエラーが表示されます。
 * **ACSD-63242** （Adobe CommerceおよびMagento Open Source >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8） - 10,000 個を超えるエントリを含むカタログ製品を追加する際の読み込み速度の問題を修正しました。
 * **ACSD-63062** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.8） – 複数の重複するルールが適用される場合に、買い物かごの割引計算が正しく行われない問題を修正しました。
 * **ACSD-62979** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.7） – [!DNL GraphQL] ヘッダーで間違った [!UICONTROL Store ID] を使用すると、致命的なメモリエラーが発生する問題を修正しました。
@@ -173,9 +181,9 @@ ht-degree: 0%
 * **ACSD-48318** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.7 の場合） – 環境エミュレーションのネストが許可されていない問題を修正しました。 これで、`send()` 呼び出し中にエミュレーションが停止した後、`getInfoBlockHtml()` 呼び出し中にエミュレーションが開始されます。
 * **ACSD-59930** （Adobe Commerce >=2.4.6 &lt;2.4.8） – 会社の **[!UICONTROL Create]**、**[!UICONTROL Save]** および **[!UICONTROL Delete]** フローのパフォーマンスを向上させます。
 * **ACSD-60584** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.7 の場合） – ある web サイトのユーザー用に作成されたアクセストークンが、他の web サイトの顧客情報にアクセスしたり、変更したりできる問題を修正しました。
-* **ACSD-60804** （Adobe Commerce >=2.4.4 &lt;2.4.8 の場合） – 削除された会社にリンクされている顧客を編集すると、*メンバー関数の呼び出しが null で `getSuperUserId()` される* エラーが発生する問題を修正しました。
-* **ACSD-61133** （Adobe Commerce >=2.4.4-p5 &lt;2.4.5） || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.8） - `sales_clean_quotes` [!DNL cron] が未承認の発注書から見積を削除する問題を修正します。
-* **ACSD-61528** （Adobe Commerce >=2.4.6 &lt;2.4.8 の場合） - [!DNL GraphQL] を使用して [!UICONTROL Admin] からロールを取得しても結果が返されない問題を修正しました。
+* **ACSD-60804** (Adobe Systems Commerce >=2.4.4 &lt;2.4.8) - Fixes the issue where editing a customer that is linked to a deleted company causes the error *null 時に `getSuperUserId()` するメンバー関数の呼び出し*。
+* **ACSD-61133** (Adobe Systems コマース >= &lt;2.4.5 ||=&quot;&quot;>2.4.4-p5 =2.4.5-p4 &lt;2.4.6 ||=&quot;&quot;>=2.4.6-p2 &lt;2.4.8) - Fixes the issue where the `sales_clean_quotes` [!DNL cron] は、未承認の発注書から見積もりを削除します。&lt;/2.4.6>&lt;/2.4.5>
+* **ACSD-61528**(Adobe Systems Commerce >=2.4.6 の場合&lt;2.4.8) - Fixes the issue where retrieving roles from the [!UICONTROL Admin][!DNL GraphQL]使用しても結果が返されません。
 * **ACSD-61553** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.7 の場合） – 優先度や **[!UICONTROL Maximum Qty Discount is Applied To]** が異なる複数のディスカウントが商品に適用される場合に、**[!UICONTROL Cart Price Rule]** ディスカウントが正しく計算されない問題を修正しました。
 * **ACSD-61667** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8） – 店舗での受け取りで多くのソースが発生した場合の出荷を作成するための在庫性能を向上させます。
 * **ACSD-61969** （Adobe Commerce >=2.4.7 &lt;2.4.8 の場合） – クーポンコードが設定されたのと完全に一致するように、大文字と小文字を区別するクーポンコードを入力する必要がある問題を修正しました。
@@ -192,9 +200,9 @@ ht-degree: 0%
 * **ACSD-60673** （Adobe Commerce >=2.4.4 &lt;2.4.8 の場合） – チェックアウト時に複数の支払い方法の [!UICONTROL Cart Price Rule] が特定の支払い方法に適切に適用されない問題を修正しました。
 * **ACSD-60684** （Adobe CommerceおよびMagento Open Source >=2.4.6 &lt;2.4.7） – 複数フィールドでのGraphQL製品の並べ替えが期待どおりに動作しない問題を修正しました。
 * **ACSD-60788** （Adobe Commerce >=2.4.7 &lt;2.4.8 の場合） – コンテンツセキュリティポリシー（CSP）のエラーにより、[!DNL Google Tag Manager] のカスタムスクリプトが実行されない問題を修正しました。
-* **ACSD-61322** （Adobe Commerce >=2.4.6 &lt;2.4.8 の場合） – デフォルト（一般グループ）の [!UICONTROL Shared Catalog] に割り当てら [!UICONTROL Products/Categories] ていないアセットが、XML サイトマップに引き続き含まれる問題を修正しました。
-* **ACSD-61366** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.8 の場合） - DB 接続用にポートが指定されている場合に、`setup:static-content:deploy --jobs 4` コマンドが複数のジョブで実行されて失敗し、「*Port must be configured within host parameter*」エラーが発生する問題を修正しました。
-* 更新されたパッチ：ACSD-51857、ACSD-57394
+* **ACSD-61322** (Adobe Systems Commerce >=2.4.6 の場合 &lt;2.4.8) - Fixes the issue where [!UICONTROL Products/Categories] デフォルトの [!UICONTROL Shared Catalog] に割り当てられていない(一般グループ)は、引き続き XML サイトマップに含まれます。
+* **ACSD-61366** (Adobe Systemsコマースおよび Magento Open Source >=2.4.7 &lt;2.4.8) - Fixes the issue where the `setup:static-content:deploy --jobs 4` コマンドを実行すると、DB 接続にポートが指定されている場合、 *Port はホストパラメーター内で設定する必要があります* エラーで複数のジョブが失敗します。
+* 更新されたパッチ:ACSD-51857、ACSD-57394
 
 ## v1.1.51 {#v1-1-51}
 
@@ -211,8 +219,8 @@ ht-degree: 0%
 
 ## v1.1.50 {#v1-1-50}
 
-* **ACSD-59280** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.5 の場合） – 2.4.4-pX バージョンのインストール時に発生する *未定義メソッド ReflectionUnionType::getName （）の呼び出し* エラーを修正しました。
-* **ACSD-45049** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.4-p8 || >=2.4.5 &lt;2.4.6） – 顧客 *[!UICONTROL Is required]* 属性の設定が管理者の web サイト範囲に従って正しく機能しない問題を修正しました。
+* **ACSD-59280** (Adobe Systems Commerce および Magento Open Source >=2.4.4 &lt;2.4.5) - Fixes the error *未定義のメソッド ReflectionUnionType::getName()* の呼び出し。これは、2.4.4-pX バージョンをインストールするときに発生します。
+* **ACSD-45049** (Adobe SystemsコマースおよびMagento Open Sourceの場合 >=2.4.4 &lt;2.4.4-p8 ||=&quot;&quot;>=2.4.5 &lt;2.4.6) - Fixes the issue where a customer *[!UICONTROL Is required]* 属性設定は、管理のWebサイト範囲に従って正しく機能しません。&lt;/2.4.4-p8>
 * **ACSD-46938** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.6） – リク `setup:upgrade` スト中の DB トリガーの再作成のパフォーマンスの問題を修正しました。
 * **ACSD-48210** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.7 の場合） – 特定のストアビューで *[!UICONTROL Website Scope]* 属性を更新すると、グローバルスコープの属性値が上書きされる問題を修正しました。
 * **ACSD-54887** （Adobe CommerceおよびMagento Open Source >=2.4.4-p4 &lt;2.4.4-p9 || >=2.4.5-p3 &lt;2.4.5-p8 || >=2.4.6-p1 &lt;2.4.6-p6） - [!UICONTROL Persistent Shopping Cart] を有効にしてカスタマーセッションの有効期限が切れた後に、カスタマーショッピングカートがクリアされる問題を修正しました。
@@ -299,12 +307,12 @@ ht-degree: 0%
 * **ACSD-55352** （Adobe CommerceおよびMagento Open Source >=2.4.2 &lt;2.4.7 の場合） – 顧客報酬ポイントを含む部分的なクレジットメモを作成した後、注文ステータスが「クローズ」に変わり、クレジットメモオプションが管理者の注文ページに表示されなくなる問題を修正しました。
 * **ACSD-55231** （Adobe Commerce >=2.4.2 &lt;2.4.7 の場合） – クイックオーダー機能を使用して買い物かごに商品を追加できない問題を修正しました。
 * **ACSD-54283** （Adobe Commerce >=2.4.3 &lt;2.4.4 の場合） – デフォルト（一般グループ）の Shared Catalog に割り当てられていない Products/Categories が、XML サイトマップに引き続き含まれる問題を修正しました。
-* 更新されたパッチ：ACSD-52041、ACSD-54040、ACSD-51819
+* 更新されたパッチ:ACSD-52041、ACSD-54040、ACSD-51819
 
 ## v1.1.43 {#v1-1-43}
 
-* **ACSD-54972** （Adobe CommerceおよびMagento Open Source >=2.4.2 &lt;2.4.7 の場合） – カテゴリ URL を変更した後に正規カテゴリ URL が更新されない問題を修正しました。
-* **ACSD-53636** （Adobe CommerceおよびMagento Open Source >=2.4.3 &lt;2.4.5 の場合） – 特別価格の子商品を持つ設定可能な商品の商品一覧ページに通常価格が表示されない問題を修正しました。
+* **ACSD-54972** (Adobe Systems コマースおよびMagento Open Source >=2.4.2 の場合 &lt;2.4.7) - Fixes the issue where the canonical category URL doesn&#39;t update after changing the category URL.
+* **ACSD-53636** (Adobe Systems コマースおよびMagento Open Source >=2.4.3 用 &lt;2.4.5) - Fixes the issue where the regular price is not displayed on product listing pages for configurable products that have child products with special prices.
 * **ACSD-54885** （Adobe CommerceおよびMagento Open Source >=2.4.2 &lt;2.4.7 の場合） – 管理者ユーザーが *顧客としてログイン* 機能を使用している場合の、複数のアドレスのチェックアウトの問題を修正しました。
 * **ACSD-55610** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.7） – 部分的にキャンセルされた注文の割引額が正しくない問題を修正しました。
 * **ACSD-55334** （Adobe CommerceおよびMagento Open Source >=2.4.3 &lt;2.4.7） – GraphQL レスポンスの翻訳辞書を使用したラベルの翻訳を修正します。
@@ -312,10 +320,10 @@ ht-degree: 0%
 * **ACSD-53925** （Adobe CommerceおよびMagento Open Source >=2.4.2 &lt;2.4.7 の場合） - `catalog_product_price` dimensions-mode が *website* に設定されている場合に、管理者が製品カルーセルでCMS ブロックを保存できない問題を修正しました。
 * **ACSD-52714** （Adobe CommerceおよびMagento Open Source >=2.4.2 &lt;2.4.7 の場合） – 日付フォーマットが *Y-m-d* に設定されている場合に、管理グリッドで日付フィルターが機能しない問題を修正しました。
 * **ACSD-55055** （Adobe CommerceおよびMagento Open Source >=2.4.2 &lt;2.4.7） – ショッピングカートの買い物かご価格ルールに商品属性を読み込むパフォーマンスを向上しました。
-* **ACSD-53790** （Adobe Commerce >=2.4.6 &lt;2.4.7 の場合） - REST API を使用して 1 つの商品に対して複数の RMA を作成できる問題を修正しました。
-* **ACSD-56090** （Adobe CommerceおよびMagento Open Source >=2.4.2 &lt;2.4.5 の場合） - GraphQL リクエストが、特別にリクエストされたストアデータではなく、すべてのストアのデータで応答する問題を修正しました。
+* **ACSD-53790** (Adobe Systems コマース >=2.4.6 の場合 &lt;2.4.7) - Fixes the issue where Multiple RMAs for a single product can be created via REST API.
+* **ACSD-56090** (Adobe Systems Commerce および Magento Open Source >=2.4.2 用 &lt;2.4.5) - Fixes the issue where the GraphQL request is responding with all stores&#39; data rather than the specifically requested store data.
 * **ACSD-54983** （Adobe Commerce >=2.4.2 &lt;2.4.7 の場合） – ユーザーステータスが *[!UICONTROL Inactive]* に設定されている場合に、GraphQL リクエストで会社のユーザーUIDを取得できない問題を修正しました。
-* **ACSD-53309** （Adobe CommerceおよびMagento Open Source >=2.4.2 &lt;2.4.7 の場合） – カスタマイズ可能オプションが選択されている場合に、*[!UICONTROL Regular Price]* ラベルに税金が完全に適用されない問題を修正しました。
+* **ACSD-53309** (Adobe Systems コマースおよびMagento Open Source> = 2.4.2 &lt;2.4.7) - Fixes the issue where tax is not fully applied in the *[!UICONTROL Regular Price]* [カスタマイズ可能] オプションが選択されている場合のラベル。
 * **ACSD-55305** （Adobe Commerce >=2.4.4 &lt;2.4.7 の場合） – **[!UICONTROL myAccount]** > **[!UICONTROL Company Structure]** ページの *[!UICONTROL Edit Company User]* ポップアップが画面のローダーでフリーズする問題を修正しました。
 * 更新されたパッチ：ACSD-49013
 
@@ -333,8 +341,8 @@ ht-degree: 0%
 * **ACSD-54060** （Adobe CommerceおよびMagento Open Source >=2.4.3 &lt;2.4.7 の場合） – 別のスコープに割り当てられた別の商品の子である場合、制限付き管理者が商品を保存できない問題を修正しました。
 * **ACSD-48910** （Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.5 &lt;2.4.6） – 複数のソースに割り当てられたバンドル製品が、数量がゼロ以外の場合でも、注文が請求および出荷された後に在庫切れになる問題を修正しました。
 * **ACSD-55381** （Adobe Commerce >=2.4.2 &lt;2.4.7 用） – [!DNL GraphQL] を使用して [!DNL B2B] *[!UICONTROL Requisition list]* ーバーから `configurable_product_option_uid` フィールドと `configurable_product_option_value_uid` フィールドをクエリする際の内部サーバーエラーを修正します。
-* **ACSD-55628** （Adobe Commerce >=2.4.4-p2 &lt; 2.4.5 の場合） || >=2.4.5-p1 &lt; 2.4.6） – 会社登録フォームへのファイルのアップロードと、ストアフロントの顧客属性のファイルの置き換えを修正しました。
-* 更新されたパッチ：ACSD-51240、ACSD-51890、ACSD-53098
+* **ACSD-55628** (Adobe Systemsコマース>=2.4.4-p2 &lt; 2.4.5 || >=2.4.5-p1 &lt; 2.4.6) - Fixes uploading a file on the company registration form and replacing a file for a customer attribute on the storefront.
+* 更新されたパッチ:ACSD-51240、ACSD-51890、ACSD-53098
 
 ## v1.1.41 {#v1-1-41}
 
@@ -434,9 +442,9 @@ ht-degree: 0%
 * **ACSD-51890** （Adobe CommerceおよびMagento Open Source >=2.4.0 &lt;2.4.7 の場合） - v3 の検証を行わずに「[!UICONTROL Submit review]」ボタンを複数回クリックできる問題 [!DNL Google reCAPTCHA] 修正しました。
 * **ACSD-51984** （Adobe Commerce >=2.4.5 &lt;2.4.7 の場合） - 2 番目の web サイト、ストア、ストアビューで、オフの *[!UICONTROL Use Default Value]* と *[!UICONTROL non-default product field]* の値が保存されない問題を修正しました。
 * **ACSD-52398** （Adobe CommerceおよびMagento Open Source >=2.4.0 &lt;2.4.7 の場合） – ストアフロントで買い物かごにバンドルされた商品の数量を更新しようとすると発生するエラー *リクエストされた数量は使用できません* を修正しました。
-* **ACSD-52786** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.6 の場合） – カタログルールの条件 *SKU* が、特定の SKU で始まるすべての商品に適用される問題を修正しました。
-* **ACSD-52921** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.7 の場合） – カートに在庫切れの設定可能な商品がある場合に、GraphQLからカートの詳細をリクエストすると内部エラーが発生する問題を修正しました。
-* **ACSD-51683** （Adobe CommerceおよびMagento Open Source >=2.4.6 &lt;2.4.7） – GraphQLを使用してカスタマイズ可能なオプションを買い物かごに追加できない問題を修正しました。
+* **ACSD-52786** (Adobe Systems Commerce および Magento Open Source >=2.4.5 &lt;2.4.6) - Fixes the issue where a catalog rule condition *SKU の場合* は、指定されたSKUで始まるすべての商品に適用されます。
+* **ACSD-52921** (Adobe SystemsコマースおよびMagento Open Source >=2.4.5 &lt;2.4.7) - Fixes the issue where an internal error occurs if requesting cart details from GraphQL when there is an out-of-stock configurable product in the cart.
+* **ACSD-51683** (Adobe Systems コマースおよびMagento Open Source >=2.4.6 &lt;2.4.7) - Fixes the issue where a customizable option can&#39;t be added to the cart using GraphQL.
 * **ACSD-52133** （Adobe CommerceおよびMagento Open Source >=2.4.6 &lt;2.4.7 の場合） – アップグレード後にカスタマーアカウントを保存できない問題を修正しました。
 * **ACSD-52202** （Adobe CommerceおよびMagento Open Source >=2.4.3 &lt;2.4.7） – 注文のフルフィルメント時にデフォルト以外の在庫が 0 数量に変更された場合に、デフォルト在庫の販売可能数量が誤って 0 に変わる問題を修正しました。
 * **ACSD-51265** （Adobe CommerceおよびMagento Open Source >=2.4.2 &lt;2.4.7 の場合） – システム内にバンドルされた製品が多すぎる場合のインデックス再作成のパフォーマンスの問題を修正しまし `catalog_product_price`。
@@ -583,9 +591,9 @@ ht-degree: 0%
 * **ACSD-47908** （Adobe CommerceおよびMagento Open Source >=2.3.7 &lt;2.3.8 || >=2.4.0 &lt;2.4.7） – チェックアウト時の出荷手順でソースと数量を選択する際に、「0 以下の値が想定されます」というエラーを修正しました。
 * **ACSD-49497** （Adobe CommerceおよびMagento Open Source >=2.3.7 &lt;2.4.6） – 発送後に注文が処理中のままになり、一部返金が適用される問題を修正しました。
 * **ACSD-48694** （Adobe CommerceおよびMagento Open Source >=2.3.7 &lt;2.3.8 || >=2.4.1 &lt;2.4.7） – 「無効な状態変更がリクエストされました」というエラーによって、お客様の注文が妨げられる問題を修正しました。
-* **ACSD-49013** （Adobe CommerceおよびMagento Open Source >=2.4.3 &lt;2.4.7 の場合） – 一括 API を使用して顧客を作成する際に、メールの確認が web サイトのロケールに翻訳されない問題を修正しました。
-* **ACSD-48164** （Adobe CommerceおよびMagento Open Source >=2.3.7 &lt;2.4.7 の場合） – 制限付き管理者が web サイトレベルの値を保存できない問題を修正しました。
-* **ACSD-48404** （Adobe CommerceおよびMagento Open Source >=2.4.0 &lt;2.4.4 の場合） – ブラウザーの「戻る」ボタンを押すと、「カテゴリのページネーションを保存」でエラーが発生する問題を修正しました。
+* **ACSD-49013** (Adobe SystemsコマースおよびMagento Open Source用 >=2.4.3 &lt;2.4.7) - Fixes the issue where email confirmation is not translated to the website locale when creating customers using bulk API.
+* **ACSD-48164** (Adobe Systems コマースおよびMagento Open Source >=2.3.7 &lt;2.4.7) - Fixes the issue where a restricted admin cannot save a website-level value.
+* **ACSD-48404** (Adobe SystemsコマースおよびMagento Open Source > = 2.4.0 &lt;2.4.4) - Fixes the issue where &quot;Remember Category Pagination = Yes&quot; causes an error when pressing the browser&#39;s back button.
 * **ACSD-48634** （Adobe CommerceおよびMagento Open Source >=2.3.7 &lt;2.4.7 の場合） – 「[!UICONTROL Google Analytics Content Experiments]」が有効になっている場合に、ステージング更新ページで発生する JS エラーを修正しました。
 * **ACSD-49042** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.5 の場合） – 順不同の商品をストアフロントから注文できない問題を修正しました。
 * パッチを更新：ACSD-48366、ACSD-48661。
@@ -691,8 +699,8 @@ ht-degree: 0%
 
 * **ACSD-45817** （*Adobe CommerceおよびMagento Open Source >=2.4.2 &lt;2.4.4* の場合） – 特定のストアのGraphQL製品ミューテーションが、リクエストされたストアに割り当てられていないものを含め、設定可能なすべてのバリアントを返す問題を修正しました。
 * **ACSD-46146** （*Adobe CommerceおよびMagento Open Source >=2.3.0 &lt;2.4.6* の場合） – 管理者から注文した後に 2 通の注文確認メールが送信される問題を修正しました。
-* **ACSD-45255** （*Adobe Commerce >=2.4.3 &lt;2.4.6* の場合） – 制限付き管理者ユーザーの低在庫レポートページの例外を修正します。
-* **ACSD-45488** （*Adobe CommerceおよびMagento Open Source >=2.4.2 &lt;2.4.6* の場合） – 複数のソースを持つ設定可能な商品が在庫に自動的に返されない問題を修正しました。
+* **ACSD-45255** (*Adobe Systems Commerce >=2.4.3 &lt;2.4.6*) - 制限付き管理ユーザーの 低画質 Stock レポート ページの例外を修正します。
+* **ACSD-45488** (*Adobe SystemsコマースおよびMagento Open Source用>=2.4.2 &lt;2.4.6*) - 複数のソースを持つコンフィギュレーション可能製品が In Stock に自動的に返されない問題を修正します。
 * **ACSD-45754** （*Adobe CommerceおよびMagento Open Source >=2.3.1 &lt;2.4.6* の場合） – クーポンを買い物かごに適用した後に報酬ポイントが追加されない問題を修正しました。
 * **ACSD-45849** （*Adobe Commerce >=2.4.3 &lt;2.4.4* の場合） – ステージングアップデートの適用後にビデオメタデータが失われる問題を修正しました。
 * **ACSD-45257** （*Adobe CommerceおよびMagento Open Source >=2.3.4 &lt;2.4.4* の場合） - GraphQLで買い物かごの割引が正しく表示されない問題を修正しました。
@@ -726,9 +734,9 @@ ht-degree: 0%
 
 * **MDVA-40961** （*Adobe CommerceおよびMagento Open Source >=2.4.3 &lt;2.4.4* の場合） – 商品の最小数量が既にカートに含まれている場合に、その商品をカートに追加できない問題を修正しました。
 * **MDVA-44887** （*Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.5* の場合） – *Uncaught SyntaxError：管理パネルの予期しないトークン「const」* エラーを修正します。
-* **MDVA-43718** （*Adobe CommerceおよびMagento Open Source >=2.3.0 &lt;2.4.5* の場合） – 修正点 *コンシューマーは %resources へのアクセスを許可されていません。カ* タム統合から共有カタログにアクセスすると表示されるエラー。
-* **MDVA-44660** （*Adobe CommerceおよびMagento Open Source >=2.4.2-p1 &lt;2.4.5*） – 顧客の姓と名にアクセント ``` ` ``` を使用できなかった問題を修正しました。
-* **MDVA-40896** （*Adobe CommerceおよびMagento Open Source >=2.4.3 &lt;2.4.4* の場合） – *Error: TypeError：引数 3 がMagentoに渡される* というエラーを非同期製品バルク API で修正しました。
+* **MDVA-43718** (*Adobe SystemsコマースおよびMagento Open Source用 >=2.3.0 &lt;2.4.5*) - 修正 *コンシューマーは %resources にアクセスする権限がありません。* カスタム統合から共有カタログにアクセスするときに表示されるエラー。
+* **MDVA-44660** (*Adobe SystemsコマースおよびMagento Open Source用 >=2.4.2-p1 &lt;2.4.5*) - グレーブアクセント文字 ``` ` ``` を顧客の姓名に使用できない問題を修正します。
+* **MDVA-40896** (*Adobe SystemsコマースおよびMagento Open Source用 >=2.4.3 &lt;2.4.4*) - *エラーを修正します。 TypeError: 引数 3 が Magento に渡されました* 非同期製品一括 API のエラー。
 * **MDVA-38559** （*Adobe CommerceおよびMagento Open Source >=2.4.0 &lt;2.4.3* の場合） – 複数のサブスクリプションを使用しているお客様の場合、*/V1/customers/search API* エラーを修正しました。
 * **MDVA-44533** （*Adobe CommerceおよびMagento Open Source >=2.3.1 &lt;2.4.4* の場合） – バンドルの子商品に誤って割引が適用される問題を修正しました。
 * パッチを更新：MDVA-41061、MDVA-42269。
@@ -795,7 +803,7 @@ ht-degree: 0%
 
 ## v1.1.10 {#v1-1-10}
 
-* **MDVA-38728** （*Adobe CommerceおよびMagento Open Source >=2.3.2 &lt;2.4.5* の場合） – 一括属性の更新によって *商品の表示* を変更した後にのみデフォルトストアの URL 書き換えが作成される問題を修正しました。
+* **MDVA-38728** (*Adobe SystemsコマースおよびMagento Open Source用 >=2.3.2 &lt;2.4.5*) - 属性の一括更新でURLデフォルト *商品の可視性*&#x200B;を変更した後にのみストアの書き換えが作成される問題を修正します。
 * **MDVA-43091** （*Adobe CommerceおよびMagento Open Source >=2.4.3 &lt;2.4.4* の場合） – バックエンドで管理者からバンドル商品を注文するとエラーが発生する問題を修正しました *この商品に 10 進数の数量を使用できません*。
 * **MDVA-40816** （*Adobe CommerceおよびMagento Open Source >=2.3.0 &lt;2.4.5* の場合） – 関連する商品ルールで、ルール条件で定義されていないカテゴリの商品が表示される問題を修正しました。
 * **MDVA-41305** （*Adobe CommerceおよびMagento Open Source >=2.4.2 &lt;2.4.5* の場合） - GraphQL mutation がウィッシュリストに追加された後に設定可能な商品オプションを返さない問題を修正しました。
@@ -815,8 +823,8 @@ ht-degree: 0%
 * **MDVA-40488** （*Adobe CommerceおよびMagento Open Source >=2.4.2 &lt;2.4.4*） – 在庫切れの子商品を含む設定可能な商品が正しい価格範囲で表示されない問題を修正しました。
 * **MDVA-42507** （*Adobe CommerceおよびMagento Open Source >=2.4.3 &lt;2.4.5* の場合） – カート ルールのステージング更新を適用した後に、フルページのキャッシュがクリーンアップされる問題を修正しました。
 * **MDVA-39163** （*Adobe CommerceおよびMagento Open Source >=2.3.5 &lt;2.4.5* の場合） – 新しいユーザーが登録され、買い物かごに入っている商品がゲストセッションから移動した場合に配送方法が使用できない問題を修正しました。
-* **MDVA-38626** （*Adobe CommerceおよびMagento Open Source >=2.3.3 &lt;2.4.5* の場合） – 管理者ユーザーが [!DNL PayPal Payflow Pro] の支払いを使用してバックエンドで注文できない問題を修正しました。
-* **MDVA-38666** （*Adobe CommerceおよびMagento Open Source >=2.3.2 &lt;2.3.6* の場合） – 管理者ユーザーが顧客の買い物かごで設定可能な商品オプションを変更できない問題を修正しました。
+* **MDVA-38626** (*Adobe SystemsコマースおよびMagento Open Source用>= 2.3.3 &lt;2.4.5*)- 管理者ユーザーが [!DNL PayPal Payflow Pro] 支払いを使用してバックエンドで注文できない問題を修正します。
+* **MDVA-38666** (*Adobe SystemsコマースおよびMagento Open Source用 >=2.3.2 &lt;2.3.6*) - 管理者ユーザーが顧客の買い物かごで構成可能な製品オプションを変更できない問題を修正します。
 * **MDVA-38526** （*Adobe CommerceおよびMagento Open Source >=2.4.1 &lt;2.4.4* の場合） – 管理者ユーザーが [!DNL Site-Wide Analysis tool] にアクセスできない問題を修正しました。
 * パッチを更新しました：MDVA-40101。
 
@@ -832,7 +840,7 @@ ht-degree: 0%
 
 ## v1.1.7 {#v1-1-7}
 
-* **MDVA-39711** （*Adobe CommerceおよびMagento Open Source >=2.3.0 &lt;2.4.3* の場合） – 管理者ユーザーが web サイトを削除した後に顧客のグリッドにアクセスできない問題を修正しました。
+* **MDVA-39711** (*Adobe Systems Commerce および Magento Open Source 用 >=2.3.0 &lt;2.4.3*) - Web サイトを削除した後、管理者ユーザーが顧客のグリッドにアクセスできない問題を修正します。
 * **MDVA-40311** （*Adobe CommerceおよびMagento Open Source >=2.4.2-p2 &lt;2.4.4*） – 管理者ユーザーに「無効なセキュリティまたはフォームキー *というエラーメッセージが表示される問題を修正しました。 カスタム管理パスが設定され* 秘密鍵が有効な場合は、管理者にログインした後、ページを更新してください。
 * **MDVA-41631** （*Adobe CommerceおよびMagento Open Source >=2.4.1 &lt;2.4.4* の場合） – GraphQLでオプションの *電話* 値を指定せずに注文情報を取得しようとするとエラーが発生する問題を修正しました。
 * **MDVA-27239** （*Adobe CommerceおよびMagento Open Source >=2.3.0 &lt;2.3.6* の場合） – クロスセル商品が表示されない問題を修正しました。
@@ -928,7 +936,7 @@ ht-degree: 0%
 
 ## v1.0.25 {#v1-0-25}
 
-* **MDVA-37916** （*Adobe Commerce >=2.3.6 &lt;2.4.3* の場合） – [!DNL Paypal Payment Advanced] 方式を使用したときに顧客が支払確認ページに移動しない問題を修正しました。
+* **MDVA-37916** (*Adobe Systemsコマース用 >=2.3.6 &lt;2.4.3*) - [!DNL Paypal Payment Advanced] メソッドの使用時に顧客が支払い確認ページに転送されない問題を修正します。
 * **MDVA-37082** （*Adobe Commerce >=2.3.0 &lt;2.4.3*） – グループ化された商品のカスタム在庫を保存すると、フロントエンドに商品の在庫切れが表示される問題を修正しました。
 * **MDVA-36572** （*Adobe Commerce >=2.3.5 &lt;2.4.3* の場合） – クレジットメモの更新によってデータベースで商品の重複が更新されなくなった問題を修正しました。
 * **MDVA-38132** （*Adobe Commerce >=2.3.3 &lt;2.4.3* の場合） - *リダイレクトが多すぎる* エラーが原因で管理パネルに到達できない問題を修正しました。
@@ -940,7 +948,7 @@ ht-degree: 0%
 * **MDVA-36832** （*Adobe Commerce >=2.3.4 &lt;=2.4.2-p1* の場合） – ビュー幅が 768 px の場合にページ上で画像が重複する問題を修正しました。
 * **MDVA-37874** （*Adobe Commerce >=2.3.6 &lt;=2.3.7 || >=2.4.1 &lt;=2.4.2-p1*） – 複数のオプションを含むバンドル製品に *買い物かご全体の固定割引額* が誤って適用される問題を修正しました。
 * **MDVA-37913** （*Adobe Commerce >=2.3.0 &lt;=2.4.0-p1* の場合） – ダウンロード可能な商品が API を介して更新されるとダウンロード可能なリンクが消える問題を修正しました。
-* **MDVA-34330** （*Adobe Commerce >=2.3.1 &lt;=2.4.2-p1* の場合） – 注文グリッド内の注文が管理者のタイムゾーンに従ってフィルタリングされない問題を修正しました。
+* **MDVA-34330** (*Adobe Systemsコマース用 >=2.3.1 &lt;=2.4.2-p1*) - 注文グリッドの注文が管理者タイムゾーンに従ってフィルター処理されない問題を修正します。
 
 ## v1.0.23 {#v1-0-23}
 
@@ -964,9 +972,9 @@ ht-degree: 0%
 ## v1.0.21 {#v1-0-21}
 
 * **MDVA-34665** （*Adobe Commerce >=2.3.4 &lt;=2.3.4-p2* の場合） – カテゴリページにバンドル製品が見つからない問題を修正しました。
-* **MDVA-36615** （*Adobe Commerce 2.4.2* 用） – Admin Product Grid で間違った製品数に関する問題を修正しました。
-* **MDVA-36464** （*Adobe Commerce >=2.4.0 &lt;=2.4.2* の場合） – メール通知設定がストアビューレベルで機能しない問題を修正しました。
-* **MDVA-36138** （*Adobe Commerce ^2.3.2* の場合） – 送料が調整されず、カート内のすべての商品が送料無料カート ルールに該当しない場合に全送料が表示される問題を修正しました。
+* **MDVA-36615** (*Adobe Systems Commerce 2.4.2*&#x200B;向け) - 管理製品グリッドの製品数が正しくない問題を修正します。
+* **MDVA-36464** (*Adobe Systemsコマース用 >=2.4.0 &lt;=2.4.2*) - 電子メール通知設定がストア-表示レベルで機能しない問題を修正します。
+* **MDVA-36138** (*Adobe Systemsコマース ^2.3.2* 用) - 買い物かご内のすべての品目が無償配送買い物かごルールの対象とならない場合、送料が調整されず、全額が顧客に表示される問題を修正します。
 * **MDVA-36424** （*Adobe Commerce >=2.3.0 &lt;=2.3.3-p1 || >=2.0.0 &lt;2.2.0*） – バックエンドのベース URL がストアフロントのベース URL と異なる場合に、コンテンツを繰り返し編集すると、ページビルダー要素に添付されたメディア画像が消える問題を修正しました。
 * **MDVA-35984** （*Adobe Commerce ^2.4.0* の場合） – 同じ商品に対して複数の同時出荷を作成した後に、誤った数量と販売可能な数量の問題を修正します。
 
@@ -1060,7 +1068,7 @@ ht-degree: 0%
 ## v1.0.13 {#v1-0-13}
 
 * **MDVA-30858** （*Adobe Commerce >=2.3.0 &lt;2.4.2* の場合） - **レポート** > **営業** > **[!DNL PayPal]** 決済で [!DNL PayPal] 決済レポートが期待どおりに使用できない問題を修正しました。
-* **MCP-87** （*Adobe Commerce >=2.3.1 &lt;2.4.2* の場合） – 大規模プロファイル向けのカテゴリ商品および在庫インデクサーのインデクシング時間を改善しました。
+* **MCP-87** (*Adobe Systemsコマース用>=2.3.1 &lt;2.4.2*) - カテゴリ製品および大型プロファイルの株価指数のインデックス作成時間が改善されました。
 * **MDVA-33106** （*Adobe Commerce >=2.3.0 &lt;2.4.2* の場合） – cron `run` コマンドの実行後に、再スケジュールされた商品の変更内容が消去される問題を修正しました。
 * **MDVA-19391** （*Adobe Commerce >=2.3.0 &lt;2.3.5* の場合） – `catalog_category_entity_text` テーブルの説明レコードが NULL であることが原因で `analytics_collect_data` がエラーをスローする問題を修正しました。
 * **MDVA-20376** （*Adobe Commerce >=2.3.2 &lt;2.3.4* の場合） – 注文後にログインした顧客の `exception.log` ージで、*customerId = 1 のエンティティがありません* エラーの問題を修正しました。
@@ -1073,8 +1081,8 @@ ht-degree: 0%
 
 ## v1.0.12 {#v1-0-12}
 
-* **MDVA-31399** （*Adobe Commerce >=2.3.2 &lt;2.4.2* の場合） - *小計を追加します（ 税金）* 価格処理基準条件のオプション。
-* **MDVA-31236** （*Adobe Commerce >=2.4.0 &lt;2.4.2* の場合） – カスタムリソースアクセス権を持つ管理者が 2FA を設定したり、ログインしたりできない問題を修正しました。
+* **MDVA-31399** (*Adobe Systemsコマース用 >=2.3.2 &lt;2.4.2*) - *小計を追加します。 税金)* ルール条件の価格を設定するオプション。
+* **MDVA-31236** (*Adobe Systemsコマース用>=2.4.0 &lt;2.4.2*)- カスタムリソースアクセス権を持つ管理者が2FAを設定したりログインしたりできない問題を修正します。
 * **MDVA-30845** （*Adobe Commerce >=2.3.5 &lt;2.3.7* の場合） - *申し訳ありませんが、現時点ではこの注文の見積もりは利用できません* UPS XML/USPS/DHL への接続に失敗するとエラーが表示されます。
 * **MDVA-32133** （*Adobe Commerce >=2.4.0 &lt;2.4.1* の場合） – 特定の場合にページビルダーからメディアギャラリーが読み込まれない問題を修正しました。
 * **MDVA-12304** （*Adobe Commerce >=2.3.0* の場合） - Cookie の最大数を 50 から 200 に増やします。
@@ -1085,12 +1093,12 @@ ht-degree: 0%
 ## v1.0.11 {#v1-0-11}
 
 * **MC-38509** （*Adobe Commerce 2.3.6、2.4.1* の場合） - *新規のお客様のアカウントの作成* フォームで無効なデータを修正した後に、「*アカウントの作成*」ボタンが無効のままになる問題を修正しました。
-* **MDVA-31006** （*Adobe Commerce 2.3.0、2.3.1* の場合） – 支払いを使用して注文した後に重複した注文が表示される問題 [!DNL Paypal Express] 修正しました。
-* **MDVA-25602** （*Adobe Commerce 2.3.0* の場合） – Chrome 80 ブラウザーおよびカスタマーログインページへの API レスポンス リダイレクトで [!DNL PayPal Payflow Pro] の支払い方法に関する問題と、Cookie をデフォルトで `SameSite=Lax` として扱う問題を修正しました。
+* **MDVA-31006** (*Adobe Systems Commerce 2.3.0、2.3.1* 用) - [!DNL Paypal Express] 支払を使用して注文した後に重複した注文が表示される問題を修正します。
+* **MDVA-25602**(*Adobe Systems Commerce 2.3.0*&#x200B;用) - クロム 80 ブラウザーおよび API 応答リダイレクトでデフォルトで Cookie を`SameSite=Lax`として扱う支払い方法[!DNL PayPal Payflow Pro]問題を修正顧客ログインページ。
 
 ## v1.0.10 {#v1-0-10}
 
-パッチバージョンのマイナーな修正
+パッチバージョンのマイナーフィックス
 
 ## v1.0.9 {#v1-0-9}
 
