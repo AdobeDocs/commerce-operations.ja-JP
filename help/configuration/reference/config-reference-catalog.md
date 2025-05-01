@@ -3,9 +3,9 @@ title: カタログ設定パスのリファレンス
 description: カタログ設定値のリストを参照します。
 feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
-source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
+source-git-commit: 47bda51cdcab964c37d9f652d467d69d795d8641
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -69,8 +69,8 @@ ht-degree: 0%
 | 検索候補を有効にする | `catalog/search/search_suggestion_enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
 | 検索候補の数 | `catalog/search/search_suggestion_count` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
 | 各提案の結果数を表示 | `catalog/search/search_suggestion_count_results_enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 検索Recommendationsを有効にする | `catalog/search/search_recommendations_enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| Recommendations数を検索 | `catalog/search/search_recommendations_count` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 検索レコメンデーションを有効にする | `catalog/search/search_recommendations_enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| お勧め数を検索 | `catalog/search/search_recommendations_count` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
 | 各レコメンデーションの結果数を表示 | `catalog/search/search_recommendations_count_results_enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
 | 一致する最小用語 | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 「カテゴリ/製品」 URL の書き換えを生成 | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -150,6 +150,8 @@ ht-degree: 0%
 {style="table-layout:auto"}
 
 ## ビジュアルマーチャンダイザーパス
+
+[!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
 
 これらの設定値は、管理者の **ストア**/設定/**設定**/**カタログ**/**ビジュアルマーチャンダイザー** で使用できます。
 
