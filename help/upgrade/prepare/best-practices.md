@@ -57,7 +57,7 @@ Adobe Commerce拡張プラットフォームの導入をまだ開始していな
 
 Adobe Commerceの機能を継続的に拡張する際には、利用可能な最新リリースに基づいて開発し、プロジェクト計画にアップグレード方法を定義することが重要です。 これにより、安全でコンプライアンスに対応した最新の機能強化を常に最新の状態に保つことができるため、セールスの迅速な拡大、より効果的な運用、現在および将来にわたる競争優位性の維持が可能になります。
 
-アップグレードの計画と予算に役立つように、[ リリーススケジュール ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) を監視する必要があります。 チームのバックログ内で、事前にアップグレードタスクを計画します。 この作業を一般公開（GA）で完了することを目指します。
+アップグレードの計画と予算に役立つように、[ リリーススケジュール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/schedule) を監視する必要があります。 チームのバックログ内で、事前にアップグレードタスクを計画します。 この作業を一般公開（GA）で完了することを目指します。
 
 - 新しい各リリースについては、プレリリースバージョンを参照してください。 プレリリースは、一般公開の 2 週間前にAdobe Commerceのマーチャントおよびすべてのパートナーが利用できる一般公開コードです。 複数のストアがある場合は、基本ストアでプレリリースを使用し、カスタムモジュールとテーマが互換性があることを確認します。
 
@@ -73,7 +73,7 @@ Adobe Commerceの機能を継続的に拡張する際には、利用可能な最
 
 アップグレードに必要な作業の評価：
 
-- [ リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) を参照して、新しいバージョンの範囲と影響を理解します。
+- [ リリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) を参照して、新しいバージョンの範囲と影響を理解します。
 
 - [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) を使用して、新しいバージョンにアップグレードする前に、カスタムコードで修正する必要がある潜在的な問題を特定します。
 

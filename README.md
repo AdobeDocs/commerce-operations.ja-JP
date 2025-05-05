@@ -15,13 +15,13 @@ ht-degree: 3%
 
 ## Adobeコンテンツへの投稿について
 
-[Adobeドキュメント投稿者ガイドを参照してください ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
+[Adobeドキュメント投稿者ガイドを参照してください ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)。
 
 投稿方法は、投稿者と、投稿したい変更の種類に応じて異なります。
 
 ### 軽微な変更
 
-軽微な変更をコントリビューションする場合は、記事にアクセスして記事の下部に表示されるフィードバックエリアをクリックし、**詳細なフィードバックオプション** をクリックします。次に、**編集の提案** をクリックして、GitHub の Markdown ソースファイルに移動します。 GitHub UI を使用して更新を行います。 一般的な [Adobeドキュメント投稿者ガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
+軽微な変更をコントリビューションする場合は、記事にアクセスして記事の下部に表示されるフィードバックエリアをクリックし、**詳細なフィードバックオプション** をクリックします。次に、**編集の提案** をクリックして、GitHub の Markdown ソースファイルに移動します。 GitHub UI を使用して更新を行います。 一般的な [Adobeドキュメント投稿者ガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
 
 このリポジトリのドキュメントおよびコード例について投稿者が送信した軽微な修正や説明は、Adobeの利用規約の対象となります。
 
@@ -43,7 +43,7 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
 
 コミュニティのコントリビューターは、基本的な編集を行う場合は GitHub UI を使用し、大きな変更を加える場合はリポジトリをフォークします。
 
-詳しくは、[Adobeドキュメント投稿者ガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
+詳しくは、[Adobeドキュメント投稿者ガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
 
 ## Markdown を使用してトピックを書式設定する方法
 
@@ -62,8 +62,8 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
 テンプレート化されたコンテンツの例としては、次のようなものがあります（ただし、これに限定されません）。
 
 * [CLI ツールリファレンス ](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-* [ 製品可用性テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
-* [ 必要システム構成テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+* [ 製品可用性テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=ja)
+* [ 必要システム構成テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ja)
 
 ### テンプレートコンテンツの生成
 
@@ -85,8 +85,8 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
 
 1. テキストエディターで、`/jekyll/_data` ディレクトリにあるデータファイルを開きます。 例：
 
-   * [ 製品可用性テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
-   * [ 必要システム構成テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
+   * [ 製品可用性テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=ja): `/jekyll/_data/product-availability.yml`
+   * [ 必要システム構成テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ja): `/jekyll/_data/system-requirements.yml`
 
 1. 既存の YAML 構造を使用してエントリを作成します。
 

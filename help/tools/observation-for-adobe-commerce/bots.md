@@ -38,7 +38,7 @@ ht-degree: 0%
 
 **[!UICONTROL Experimental Potential Malicious Bots frame]** フレームは、12 個の個別の複雑なクエリで構成されます。 悪意のある IP リクエストのシグネチャを検出し、結果を集計し、合計して、降順でカウント別に並べ替えます。 クエリには、CVE の悪用やその他の悪意のあるリクエストの多数のデータ署名が含まれています。 悪用がセキュリティ修正/パッチによってブロックされ、サイトに対する脅威ではない場合でも、リクエストは Web サイトで処理する必要があります。 リクエストの量は、短期間にかなり多くなる可能性があります。 このフレームには、IP アドレスからのリクエストの合計ではなく、リクエストに疑わしい意図があることを示すシグナルを持つリクエストが表示されます。
 
-トラフィックが疑わしく、[!DNL Content Distributed Network] （CDN）アドレスから発信されたものではないこと、また有効なリクエストを配信している可能性があることを確認します。 リクエストが CDN IP アドレスからのものであると判断した場合は、そのサービスの提供者に連絡して、ネットワークを通過する疑わしいトラフィックをブロックするように依頼してください。 アドレスまたはリクエスト URL をブロックする必要がある場合は、Adobe Commerce サポートナレッジベースの [Adobe Commerceの悪意のあるトラフィックのブロック  [!DNL Fastly]  レベル ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html) を参照してください。
+トラフィックが疑わしく、[!DNL Content Distributed Network] （CDN）アドレスから発信されたものではないこと、また有効なリクエストを配信している可能性があることを確認します。 リクエストが CDN IP アドレスからのものであると判断した場合は、そのサービスの提供者に連絡して、ネットワークを通過する疑わしいトラフィックをブロックするように依頼してください。 アドレスまたはリクエスト URL をブロックする必要がある場合は、Adobe Commerce サポートナレッジベースの [Adobe Commerceの悪意のあるトラフィックのブロック  [!DNL Fastly]  レベル ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html?lang=ja) を参照してください。
 
 ## [!UICONTROL Rate of HTTP request per second (top 25) during requested time period]
 

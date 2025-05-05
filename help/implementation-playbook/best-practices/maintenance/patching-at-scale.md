@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. **セキュリティパッチ** は、Adobe Commerce リリースの静的コードベースの一部です。
 1. **cweagans/composer-patches** などの `composer install` および `composer update` プラグインを使用した [Composer パッチ ](https://packagist.org/packages/cweagans/composer-patches)。
-1. **Commerce用クラウドパッチ** パッケージに含まれるすべての [ 必須パッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html)。
+1. **Commerce用クラウドパッチ** パッケージに含まれるすべての [ 必須パッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=ja)。
 1. 選択した **品質パッチ** が [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md) に含まれています。
 1. **カスタムパッチ** およびAdobe Commerceは、パッチ名のアルファベット順に `/m2-hotfixes` ディレクトリ内のパッチをサポートします。
 
@@ -148,7 +148,7 @@ Composer コンポーネントパッケージ（`centralized-patcher`）を作�
    ```
 
 
-前述のコードサンプルの `quality-patches` 属性には、例として [ 完全なパッチリスト ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) の 2 つのパッチが含まれています。  これらの品質向上パッチは、`vendor/bin/magento-patches apply` コマンドを使用して、`centralized-patcher` パッケージを必要とするすべてのプロジェクトにインストールされます。
+前述のコードサンプルの `quality-patches` 属性には、例として [ 完全なパッチリスト ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) の 2 つのパッチが含まれています。  これらの品質向上パッチは、`vendor/bin/magento-patches apply` コマンドを使用して、`centralized-patcher` パッケージを必要とするすべてのプロジェクトにインストールされます。
 
 テストを目的として、サンプルのパッチ（`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`）を作成できます。
 
@@ -365,7 +365,7 @@ index 03a3bf9..681e0b0 100644
 
 これにより、すべてのインストールに対するすべてのパッチを一元的に管理でき、Adobe Commerce ストアのセキュリティと安定性をより確実に保証できます。 次の方法を使用して、パッチステータスを確認します。
 
-- [ クラウドインフラストラクチャプロジェクト ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html#view-available-patches-and-status)
+- [ クラウドインフラストラクチャプロジェクト ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja#view-available-patches-and-status)
 - [オンプレミス プロジェクト](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## コードの例

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 MDVA-39305-V3 パッチにより、登録ユーザが [!DNL Google reCAPTCHA] が有効な場合にログインできない問題が修正されました。 また、このパッチでは、フォームが完全に読み込まれる前にフォームを送信でき [!DNL Google reCAPTCHA] 問題も修正されています。 さらに、CMSページのデフォルト以外の場所でブロックが使用された場合の、エラー *メンバー関数の呼び出しが null の場合は isDisabled （）* が修正されます。
 
-このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)1.1.48 リリースで追加されました。 QPT 1.1.58 リリースで更新され、新しいAdobe Commerce バージョン 2.4.7 ～ 2.4.7-p4 が含まれるようになりました。 パッチ ID は MDVA-39305-V3 です。 この問題は、Adobe Commerce バージョン 2.4.4、2.4.5-p2、2.4.7 で修正されました。
+このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)1.1.48 リリースで追加されました。 QPT 1.1.58 リリースで更新され、新しいAdobe Commerce バージョン 2.4.7 ～ 2.4.7-p4 が含まれるようになりました。 パッチ ID は MDVA-39305-V3 です。 この問題は、Adobe Commerce バージョン 2.4.4、2.4.5-p2、2.4.7 で修正されました。
 
 ## 影響を受ける製品とバージョン
 
@@ -32,7 +32,7 @@ MDVA-39305-V3 パッチにより、登録ユーザが [!DNL Google reCAPTCHA] �
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -84,7 +84,7 @@ CMS ページのデフォルト以外の場所でブロックが使用される�
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
 
 ## 関連資料
 

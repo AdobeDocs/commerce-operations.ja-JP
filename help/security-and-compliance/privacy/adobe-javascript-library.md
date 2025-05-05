@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-[AdobeプライバシーJavaScript ライブラリは ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) 非公開データにアクセスして削除するプロセスを作成するためのツール セットです。
+[AdobeプライバシーJavaScript ライブラリは ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ja) 非公開データにアクセスして削除するプロセスを作成するためのツール セットです。
 
 Adobe Commerceのデータトラッキングサービスでは、[EU 一般データ保護規則（GDPR） ](gdpr.md) および [ カリフォルニア州消費者プライバシー法（CCPA） ](ccpa.md) などのプライバシー規制に適用される個人情報を保存できます。
 
@@ -43,7 +43,7 @@ AdobePrivacy JS ライブラリは、ブラウザーに保存された ID デー
 `retrieveThenRemoveIdentities()`
 ：この関数は、ID の配列を取得し、ブラウザーから削除するという点で `removeIdentities()` と似ています。
 
-これらの関数の使用方法と例について詳しくは、[ 公式ライブラリドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) を参照してください。
+これらの関数の使用方法と例について詳しくは、[ 公式ライブラリドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ja) を参照してください。
 
 ### 初期化
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 このコンストラクターは、インスタンス化の際に、パラメーターを含んだ設定オブジェクトを受け入れます。
-これらの設定パラメーターのリストについては、[ 公式ライブラリドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) を参照してください。
+これらの設定パラメーターのリストについては、[ 公式ライブラリドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ja) を参照してください。

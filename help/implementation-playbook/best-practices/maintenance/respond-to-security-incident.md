@@ -63,7 +63,7 @@ ht-degree: 0%
 
 インシデント分析の最初のステップは、できるだけ早く、できるだけ多くの事実を収集することです。 インシデントに関する情報の収集は、インシデントの潜在的な原因を特定するのに役立ちます。 Adobe Commerceでは、インシデント分析に役立つ以下のツールを提供しています。
 
-- [ 管理者アクションログを監査 ](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html)。
+- [ 管理者アクションログを監査 ](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html?lang=ja)。
 
   アクションログレポートには、ログ記録が有効になっているすべての管理者アクションの詳細な記録が表示されます。 各レコードにはタイムスタンプが付き、ユーザーの IP アドレスと名前が登録されます。 ログの詳細には、管理者ユーザーデータと、アクション中に行われた関連する変更が含まれます。
 
@@ -73,9 +73,9 @@ ht-degree: 0%
 
   ツールの **セキュリティ** タブを使用して、潜在的なセキュリティの問題を明確に把握し、根本原因を特定してサイトの最適なパフォーマンスを維持するのに役立てます。
 
-- [New Relic ログ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) を使用したログの分析
+- [New Relic ログ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=ja) を使用したログの分析
 
-  クラウドインフラストラクチャー上のAdobe Commerce Pro プロジェクトには、[New Relic ログ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html) サービスが含まれます。 このサービスは、ステージング環境と実稼動環境のすべてのログデータを集計して、一元化されたログ管理ダッシュボードに表示するように事前に設定されており、そこで集計データを検索および視覚化できます。
+  クラウドインフラストラクチャー上のAdobe Commerce Pro プロジェクトには、[New Relic ログ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=ja) サービスが含まれます。 このサービスは、ステージング環境と実稼動環境のすべてのログデータを集計して、一元化されたログ管理ダッシュボードに表示するように事前に設定されており、そこで集計データを検索および視覚化できます。
 
   その他のCommerce プロジェクトの場合は、[New Relic ログ ](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) サービスを設定して使用し、次のタスクを実行できます。
    - [New Relic クエリ ](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) を使用して、集計ログデータを検索します。
@@ -89,17 +89,17 @@ Commerce管理者およびユーザーアカウント、アプリケーション
 
 ### 管理者ユーザーアカウントの監査
 
-- [ 管理者ユーザーアクセスの確認 ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html) – 古い、未使用、または疑わしいアカウントを削除し、すべての管理者ユーザーのパスワードを入れ替えます。
+- [ 管理者ユーザーアクセスの確認 ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=ja) – 古い、未使用、または疑わしいアカウントを削除し、すべての管理者ユーザーのパスワードを入れ替えます。
 
-- [ 管理者セキュリティ設定の確認 ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html) - Admin Security 設定がセキュリティのベストプラクティスに従っていることを確認します。
+- [ 管理者セキュリティ設定の確認 ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=ja) - Admin Security 設定がセキュリティのベストプラクティスに従っていることを確認します。
 
-- [ クラウドインフラストラクチャプロジェクト上のAdobe Commerceのユーザーアカウントの確認 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) – 古い、未使用、または疑わしいアカウントを削除し、すべてのクラウドプロジェクト管理者ユーザーのパスワードを入れ替えます。 アカウントのセキュリティ設定が正しく構成されていることを確認してください。
+- [ クラウドインフラストラクチャプロジェクト上のAdobe Commerceのユーザーアカウントの確認 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=ja) – 古い、未使用、または疑わしいアカウントを削除し、すべてのクラウドプロジェクト管理者ユーザーのパスワードを入れ替えます。 アカウントのセキュリティ設定が正しく構成されていることを確認してください。
 
-- [ クラウドインフラストラクチャー上のAdobe Commerceの SSH キーを監査 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)- SSH キーを確認、削除、ローテーションします。
+- [ クラウドインフラストラクチャー上のAdobe Commerceの SSH キーを監査 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)- SSH キーを確認、削除、ローテーションします。
 
 ### 監査コード
 
-- 管理者から、`website` と `store view` を含むすべてのスコープ レベルで [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html)HTML ヘッダーおよびフッターの構成を確認します。 不明なJavaScript コードがあれば、スクリプト、スタイルシートおよびその他のHTMLから削除します。 トラッキングスニペットなど、認識されたコードのみを保持します。
+- 管理者から、`website` と `store view` を含むすべてのスコープ レベルで [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=ja)HTML ヘッダーおよびフッターの構成を確認します。 不明なJavaScript コードがあれば、スクリプト、スタイルシートおよびその他のHTMLから削除します。 トラッキングスニペットなど、認識されたコードのみを保持します。
 
 - 現在の実稼動コードベースと、バージョン管理システム（VCS）に保存されているコードベースを比較します。
 

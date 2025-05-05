@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## ソフトウェアの入手方法
 
-魅力的な新機能やリリースの提供状況を確認し、それらを入手する方法については、アドビの [ 製品提供ページ ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) を参照してください。
+魅力的な新機能やリリースの提供状況を確認し、それらを入手する方法については、アドビの [ 製品提供ページ ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability) を参照してください。
 
 Adobe Commerceのインストールの概要については、次の表を参照してください。
 

@@ -20,7 +20,7 @@ Adobe Commerceのキャッシュ管理システムを使用すると、サイト
 >[!NOTE]
 >
 >
->コマースサイト管理者は、キャッシュ管理システムツールを使用して、管理者からキャッシュを管理できます。 [ 管理システムガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) の _キャッシュ管理_ を参照してください。
+>コマースサイト管理者は、キャッシュ管理システムツールを使用して、管理者からキャッシュを管理できます。 [ 管理システムガイド ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management) の _キャッシュ管理_ を参照してください。
 
 
 ## キャッシュステータスの表示
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Adobe Commerceでサポートされるデフォルトのキャッシュタイプについて詳しくは、『 _管理システムガイド_ 』の [ キャッシュ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) を参照してください。
+>Adobe Commerceでサポートされるデフォルトのキャッシュタイプについて詳しくは、『 _管理システムガイド_ 』の [ キャッシュ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management#caches) を参照してください。
 
 
 ## キャッシュタイプを有効または無効にする

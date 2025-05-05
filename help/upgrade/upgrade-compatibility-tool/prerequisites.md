@@ -80,4 +80,4 @@ Adobe Commerceは、Linux オペレーティングシステムでのみサポー
 
 大きなモジュールやファイルを含むAdobe Commerce インスタンスに対して [!DNL Upgrade Compatibility Tool] を実行する場合、ツールに大量の RAM （少なくとも 2 GB）が必要になることがあります。
 
-クラウドインフラストラクチャー上の [Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} プロジェクトの [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) から [!DNL Upgrade Compatibility Tool] を実行します。
+クラウドインフラストラクチャー上の [Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ja){target=_blank} プロジェクトの [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=ja) から [!DNL Upgrade Compatibility Tool] を実行します。

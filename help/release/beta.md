@@ -40,7 +40,7 @@ Adobe Commerce Optimizerを使用すると、次のことができます。
 - AI と ML を使用して、パーソナライズされた検索とレコメンデーションを作成します。
 - 正確な実装とトラブルシューティングのために、同期ステータスやストアフロントのイベントデータなど、重要な製品データの可用性を表示します。
 
-Adobe Commerce Optimizerについて [ 詳細情報 ](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) します。 早期アクセスプログラムの詳細については、[!DNL Adobe Commerce Optimizer] 早期アクセス申請フォーム [ にご記入ください ](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u)。
+Adobe Commerce Optimizerについて [ 詳細情報 ](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html?lang=ja) します。 早期アクセスプログラムの詳細については、[!DNL Adobe Commerce Optimizer] 早期アクセス申請フォーム [ にご記入ください ](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u)。
 
 ### Live Search （パブリック Beta）の検索機能の強化
 
@@ -66,7 +66,7 @@ Adobe Commerce Optimizerについて [ 詳細情報 ](https://experienceleague.a
 
 これらの新しい条件により、検索クエリのフィルタリングメカニズムが強化され、検索結果を絞り込むことができます。 これらの新しい条件は、メインの検索クエリには影響しません。 ベータ版に参加するには、[commerce-storefront-services](mailto:commerce-storefront-services@adobe.com) にメールリクエストを送信します。
 
-Live Search ベータ版をインストールするには、[Live Search ガイド ](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta) を参照してください。
+Live Search ベータ版をインストールするには、[Live Search ガイド ](https://experienceleague.adobe.com/ja/docs/commerce/live-search/install#install-the-live-search-beta) を参照してください。
 
 ### IBM Sterling Order Management System Integration （Private Beta）
 
@@ -88,7 +88,7 @@ IBMスターリングOrder Management向けのこの統合アクセラレータ�
 - GraphQLの改善点
 - 一般的な品質のバグ修正
 - コミュニティの投稿
-- [Adobe Commerce サービスとの互換性をサポートするために必要な変更 ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Adobe Commerce サービスとの互換性をサポートするために必要な変更 ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
 
 #### 命名規則とスケジュール
 

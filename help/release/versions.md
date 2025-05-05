@@ -17,7 +17,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Adobeでは、Adobe Commerceをインストールするか、各リリースで使用可能な最新のセキュリティパッチにアップグレードすることをお勧めします。
->その他のセキュリティアップデートについては、[Magento/Adobe Commerceのセキュリティアップデート ](https://helpx.adobe.com/security/products/magento.html) を参照してください。
+>その他のセキュリティアップデートについては、[Magento/Adobe Commerceのセキュリティアップデート ](https://helpx.adobe.com/jp/security/products/magento.html) を参照してください。
 >価格については、[Adobe Commerceの価格 ](https://business.adobe.com/products/magento/pricing.html) を参照してください。
 
 {{$include /help/_includes/templated/release/core-releases.md}}

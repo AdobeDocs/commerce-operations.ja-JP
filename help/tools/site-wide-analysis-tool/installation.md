@@ -78,7 +78,7 @@ Adobe Systems Commerce のオンプレミスインストールがある場合は
 
 ## [!DNL Commerce Services Connector]
 
-エージェントを使用するには、[[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) 拡張機能がシステムにインストールされ、API キーを使用して [ 設定 ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) されている必要があります。 拡張機能がインストールされていることを確認するには、次のコマンドを実行します。
+エージェントを使用するには、[[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=ja) 拡張機能がシステムにインストールされ、API キーを使用して [ 設定 ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=ja) されている必要があります。 拡張機能がインストールされていることを確認するには、次のコマンドを実行します。
 
 ```bash
 bin/magento module:status Magento_ServicesId
@@ -92,13 +92,13 @@ bin/magento module:status Magento_ServicesId
 
    >[!NOTE]
    >
-   > アカウントにアクセスできない場合は、トラブルシューティングのヘルプについて [Adobe Systems Commerce サポートまたはクラウドアカウントにログインできない](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) を参照してください。
+   > アカウントにアクセスできない場合は、トラブルシューティングのヘルプについて [Adobe Systems Commerce サポートまたはクラウドアカウントにログインできない](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html?lang=ja) を参照してください。
 
 1. [ **[!UICONTROL API Portal]**] をクリックします。
 
 1. 既存の API キーの横にある **[!UICONTROL Delete]** をクリックします。
 
-1. [設定](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) 新しい API キー。
+1. [設定](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=ja) 新しい API キー。
 
 >[!IMPORTANT]
 >
@@ -130,7 +130,7 @@ bin/magento module:status Magento_ServicesId
    bin/magento cache:clean
    ```
 
-1. [API キーを設定 ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) して、拡張機能をシステムに接続します。
+1. [API キーを設定 ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=ja) して、拡張機能をシステムに接続します。
 
 ## エージェントのインストール
 
@@ -404,7 +404,7 @@ FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.a
 1. [ スクリプト形式のインストール ](#scripted) を実行し、出力を保存して、出力にエラーがないか確認します。
 1. 生成された `config.yaml` ファイルを確認し、Commerce インスタンスと PHP へのパスが正しいことを確認します。
 1. スケジューラーを実行しているユーザーが [ ファイルシステム所有者 ](../../installation/prerequisites/file-system/overview.md)Unix グループに属しているか、ファイルシステム所有者と同じユーザーであることを確認します。
-1. [Commerce サービスコネクタ ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) のキーが正しくインストールされていることを確認し、キーを更新して拡張機能をシステムに接続します。
+1. [Commerce サービスコネクタ ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=ja) のキーが正しくインストールされていることを確認し、キーを更新して拡張機能をシステムに接続します。
 1. [ アンインストール ](#uninstall) キーを更新した後にエージェントをアンインストールし、[ インストールスクリプト ](#scripted) を使用して再インストールします。
 1. スケジューラーを実行して、同じエラーが引き続き表示されるかどうかを確認します。
 1. それでも同じエラーが発生する場合は、`config.yaml` のログレベルを上げてデバッグし、サポートチケットを開きます。

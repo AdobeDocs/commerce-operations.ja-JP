@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 支払いの処理と保管に関するベストプラクティス
 
-[PCIコンプライアンス](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html)を維持するための重要な原則の1つは、クレジットカードの支払いを適切に処理およびストアするための戦略を立てることです。
+[PCIコンプライアンス](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html?lang=ja)を維持するための重要な原則の1つは、クレジットカードの支払いを適切に処理およびストアするための戦略を立てることです。
 
 Adobe Systemsコマースにカード会員データを保存することは **固く禁じられています** と、ペイメントカード業界データセキュリティ標準(PCI-DSS)に基づく加盟店としての義務に違反する可能性があります。 責任共有モデルとマーチャント義務のガイドラインに関する詳細は、Adobe Systems セキュリティ センターの [Adobe Systemsコマース共有責任モデル ガイド](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) に記載されています。
 
@@ -53,4 +53,4 @@ Adobe Systemsコマースにカード会員データを保存することは **�
 
 ## 追加情報
 
-Adobeによるお勧めの支払いソリューションを探している場合は、[Adobe支払いサービス ](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html) を検討してください。
+Adobeによるお勧めの支払いソリューションを探している場合は、[Adobe支払いサービス ](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html?lang=ja) を検討してください。

@@ -42,7 +42,7 @@ ht-degree: 2%
 
 | ベストプラクティス | 説明 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [ ビルドとデプロイメント ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | クラウドインフラストラクチャプロジェクトでのAdobe Commerceのビルドおよびデプロイ段階におけるベストプラクティスについて説明します。 |
+| [ ビルドとデプロイメント ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=ja){target="_blank"} | クラウドインフラストラクチャプロジェクトでのAdobe Commerceのビルドおよびデプロイ段階におけるベストプラクティスについて説明します。 |
 | デバッグ | Adobe Commerceフレームワークを体系的かつ効果的にデバッグする |
 | [ 静的コンテンツのデプロイメント ](static-content-deployment.md) | ストアフロントに静的コンテンツが表示されない問題を回避します |
 | [ トラブルシューティング ](troubleshooting.md) | Adobe Commerceの実装に関する一般的な問題のトラブルシューティング |

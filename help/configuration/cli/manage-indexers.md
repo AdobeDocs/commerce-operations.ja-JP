@@ -231,11 +231,11 @@ Catalog Search:                                    Update on Save
 >
 >[!DNL Customer Grid]には、`schedule`ではなく `realtime` を使用するように設定してください。[!DNL Customer Grid]は、[!UICONTROL Update on Save]オプションを使用した場合のみインデックスを再作成できます。このインデックスは `Update by Schedule` オプションをサポートしていません。 次のコマンドラインを使用して、保存時にこのインデクサーが更新されるように設定します。 `php bin/magento indexer:set-mode realtime customer_grid`
 >
->_実装実践ブック_&#x200B;の[インデクサー構成のベスト プラクティス](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)を参照してください。
+>_実装実践ブック_&#x200B;の[インデクサー構成のベスト プラクティス](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=ja)を参照してください。
 
 >[!INFO]
 >
->インデクサーモードを切り替える前に、Web サイトを [メンテナンス](../../installation/tutorials/maintenance-mode.md) モードに設定し、cron ジョブを [無効にする](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs)。 これにより、データベースがロックされるのを防ぐことができます。
+>インデクサーモードを切り替える前に、Web サイトを [メンテナンス](../../installation/tutorials/maintenance-mode.md) モードに設定し、cron ジョブを [無効にする](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=ja#disable-cron-jobs)。 これにより、データベースがロックされるのを防ぐことができます。
 
 インデクサー構成を指定するには:
 

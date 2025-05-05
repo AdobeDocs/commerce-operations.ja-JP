@@ -54,6 +54,6 @@ ht-degree: 0%
 Adobe Commerceのアップグレードについて理解するには、次のリソースを参照してください。
 
 - [ アップグレードガイド ](../overview.md) では、Adobe Commerceの一般的なアップグレードジャーニーと、そのジャーニーに従うためのベストプラクティスの概要を説明します。
-- [ 今後のリリース ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) ページには、予定リリースと今後のリリースの日付が表示されます。
+- [ 今後のリリース ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/schedule) ページには、予定リリースと今後のリリースの日付が表示されます。
 - [ コミュニティリソース ](https://developer.adobe.com/commerce/contributor/community/) ページでは、ディスカッションを開始したり、詳細情報を検索したりできます。
 - 一般的なアップグレードジャーニーで役に立つツールについては、[ 関連ツール ](../upgrade-compatibility-tool/related-tools.md) ページを確認してください。

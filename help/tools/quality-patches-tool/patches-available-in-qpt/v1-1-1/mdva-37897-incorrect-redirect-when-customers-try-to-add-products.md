@@ -1,6 +1,6 @@
 ---
 title: 「MDVA-37897：最近表示された項目から製品を追加する際に、リダイレクトが正しく表示されない」
-description: MDVA-37897 パッチを使用すると、最近表示された項目ウィジェットからオプションを含む製品を追加しようとすると、誤ったリダイレクトの問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches） 1.1.1 がインストールされている場合に利用できます。 パッチ ID は MDVA-37897。 この問題はAdobe Commerce バージョン 2.4.4 で修正される予定であることに注意してください。
+description: MDVA-37897 パッチを使用すると、最近表示された項目ウィジェットからオプションを含む製品を追加しようとすると、誤ったリダイレクトの問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches） 1.1.1 がインストールされている場合に利用できます。 パッチ ID は MDVA-37897。 この問題はAdobe Commerce バージョン 2.4.4 で修正される予定であることに注意してください。
 feature: Products
 role: Admin
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # MDVA-37897：最近表示された項目から製品を追加すると、リダイレクトが正しく表示されない
 
-MDVA-37897 パッチを使用すると、最近表示された項目ウィジェットからオプションを含む製品を追加しようとすると、誤ったリダイレクトの問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)1.1.1 がインストールされている場合に使用できます。 パッチ ID は MDVA-37897。 この問題はAdobe Commerce バージョン 2.4.4 で修正される予定であることに注意してください。
+MDVA-37897 パッチを使用すると、最近表示された項目ウィジェットからオプションを含む製品を追加しようとすると、誤ったリダイレクトの問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)1.1.1 がインストールされている場合に使用できます。 パッチ ID は MDVA-37897。 この問題はAdobe Commerce バージョン 2.4.4 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -26,7 +26,7 @@ MDVA-37897 パッチを使用すると、最近表示された項目ウィジェ
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -51,14 +51,14 @@ MDVA-37897 パッチを使用すると、最近表示された項目ウィジェ
 
 個々のパッチを適用するには、デプロイメントタイプに応じて次のリンクを使用します。
 
-* Adobe Commerce オンプレミス：開発者向けドキュメントの [ ソフトウェアアップデートガイド/パッチを適用する ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)。
-* アドビのクラウドインフラストラクチャでのAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチを適用 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
+* Adobe Commerce オンプレミス：開発者向けドキュメントの [ ソフトウェアアップデートガイド/パッチを適用する ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/usage)。
+* アドビのクラウドインフラストラクチャでのAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチを適用 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
 
 ## 関連資料
 
 Adobe Commerce用の高品質パッチの詳細については、次を参照してください。
 
-* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
 * [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
 
-QPT で使用可能なその他のパッチについては、[QPT で使用可能なパッチ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) の節を参照してください。
+QPT で使用可能なその他のパッチについては、[QPT で使用可能なパッチ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) の節を参照してください。

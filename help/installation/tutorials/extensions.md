@@ -20,7 +20,7 @@ Adobe Commerceの動作を拡張またはカスタマイズするコードは、
 - テーマ（ストアフロントと管理者のルックアンドフィールを変更）
 - 言語パッケージ （ストアフロントをローカライズおよび管理者）
 
-ここでは、コマンド ライン インターフェイスを使用して、（オンプレミス _プロジェクトのCommerce Marketplaceから購入したサード パーティ製の拡張機能を管理する方法について説明します_。 クラウドインフラストラクチャプロジェクトの場合は、[ 拡張機能の管理 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) を参照してください。
+ここでは、コマンド ライン インターフェイスを使用して、（オンプレミス _プロジェクトのCommerce Marketplaceから購入したサード パーティ製の拡張機能を管理する方法について説明します_。 クラウドインフラストラクチャプロジェクトの場合は、[ 拡張機能の管理 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/extensions) を参照してください。
 
 _any_ 拡張機能のインストールにも同じ手順を使用できます。必要なのは、拡張機能の Composer 名とバージョンだけです。 これを見つけるには、拡張機能の `composer.json` ファイルを開き、`"name"` と `"version"` の値を確認します。
 

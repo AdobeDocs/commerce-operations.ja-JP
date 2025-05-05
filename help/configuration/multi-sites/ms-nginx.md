@@ -17,7 +17,7 @@ ht-degree: 0%
 
   ホストされた環境に複数の web サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーにお問い合わせください。
 
-  クラウドインフラストラクチャー上にAdobe Commerceをセットアップするには、追加のタスクが必要になります。 Commerceこのトピックで取り上げる作業が完了したら、_Cloud Infrastructure ガイドの [ 複数の web サイトまたはストアの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) を参照してください_。
+  クラウドインフラストラクチャー上にAdobe Commerceをセットアップするには、追加のタスクが必要になります。 Commerceこのトピックで取り上げる作業が完了したら、_Cloud Infrastructure ガイドの [ 複数の web サイトまたはストアの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja) を参照してください_。
 
 - 1 つの仮想ホストファイルで複数のドメインを使用することも、web サイトごとに 1 つの仮想ホストを使用することもできます。仮想ホスト設定ファイルは `/etc/nginx/sites-available` にあります。
 - Commerceから提供された `nginx.conf.sample` を使用する場合は、このチュートリアルで説明した変更内容のみを適用します。
@@ -280,7 +280,7 @@ bin/magento cache:clean config full_page
 >[!INFO]
 >
 >- ホストされた環境に複数の web サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーにお問い合わせください。
->- クラウドインフラストラクチャー上にAdobe Commerceを設定するには、さらに作業が必要です。[2&rbrace; クラウドインフラストラクチャー上のCommerceガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 複数のクラウド Web サイトまたはストアの設定 _を参照してください。_
+>- クラウドインフラストラクチャー上にAdobe Commerceを設定するには、さらに作業が必要です。[2&rbrace; クラウドインフラストラクチャー上のCommerceガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja) 複数のクラウド Web サイトまたはストアの設定 _を参照してください。_
 
 ### トラブルシューティング
 

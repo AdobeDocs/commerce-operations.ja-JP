@@ -35,7 +35,7 @@ ht-degree: 0%
 
 単一サイトのストアフロント用に `robots.txt` ファイルと `sitemap.xml` ファイルを設定する際は、次のベストプラクティスに従います。
 
-- プロジェクトで [`ece-tools`](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) バージョン 2002.0.12 以降が使用されていることを確認します。
+- プロジェクトで [`ece-tools`](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) バージョン 2002.0.12 以降が使用されていることを確認します。
 - 管理アプリケーションを使用して、`robots.txt` ファイルにコンテンツを追加します。
 
   >[!TIP]
@@ -64,12 +64,12 @@ ht-degree: 0%
 
 >[!INFO]
 >
->手順について詳しくは、[ サイトマップと検索エンジンロボットの追加 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) を参照してください。
+>手順について詳しくは、[ サイトマップと検索エンジンロボットの追加 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) を参照してください。
 
 
 ### マルチサイトのストアフロント
 
-クラウドインフラストラクチャー上にAdobe Commerceを 1 つ実装するだけで、複数のストアを設定して実行できます。 [ 複数の web サイトまたはストアの設定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites) を参照してください。
+クラウドインフラストラクチャー上にAdobe Commerceを 1 つ実装するだけで、複数のストアを設定して実行できます。 [ 複数の web サイトまたはストアの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites) を参照してください。
 
 マルチサイトストアフロントでは、[ シングルサイトストアフロント ](#single-site-storefronts) 用の `robots.txt` ファイルと `sitemap.xml` ファイルの設定に関するベストプラクティスが適用されますが、次の 2 つの重要な違いがあります。
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 
 ## Adobe Commerce オンプレミス
 
-管理アプリケーションを使用して `robots.txt` ファイルと `sitemap.xml` ファイルを設定し、ボットが不要なコンテンツをスキャンしてインデックスを作成しないようにします（[ 検索エンジンロボット ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots) を参照）。
+管理アプリケーションを使用して `robots.txt` ファイルと `sitemap.xml` ファイルを設定し、ボットが不要なコンテンツをスキャンしてインデックスを作成しないようにします（[ 検索エンジンロボット ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=ja#search-engine-robots) を参照）。
 
 >[!TIP]
 >
@@ -103,15 +103,15 @@ ht-degree: 0%
 
 `robots.txt` ファイルで管理者パスを公開しないでください。 管理者パスを公開すると、サイトハッキングの脆弱性が生じ、データが失われる可能性があります。 `robots.txt` ファイルから管理者パスを削除します。
 
-`robots.txt` ファイルを編集し、管理パスのすべてのエントリを削除する手順については、[ マーケティングユーザーガイド/SEO と検索/検索エンジンロボット ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots) を参照してください。
+`robots.txt` ファイルを編集し、管理パスのすべてのエントリを削除する手順については、[ マーケティングユーザーガイド/SEO と検索/検索エンジンロボット ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=ja#search-engine-robots) を参照してください。
 
 >[!TIP]
 >
->サポートが必要な場合は、[Adobe Commerce サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) してください。
+>サポートが必要な場合は、[Adobe Commerce サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket) してください。
 
 ## 追加情報
 
-- [Web サイト、ストア、ストア表示について ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [Web サイトの追加 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [Fastly を使用して、Adobe Commerce サイトの悪意のあるトラフィックをブロックする ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
-- [robots.txt で、cloud infrastructure 2.3.x のAdobe Commerceに 404 エラーが発生する ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)
+- [Web サイト、ストア、ストア表示について ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [Web サイトの追加 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Fastly を使用して、Adobe Commerce サイトの悪意のあるトラフィックをブロックする ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
+- [robots.txt で、cloud infrastructure 2.3.x のAdobe Commerceに 404 エラーが発生する ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html?lang=ja)

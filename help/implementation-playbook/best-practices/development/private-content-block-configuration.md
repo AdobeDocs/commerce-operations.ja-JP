@@ -31,4 +31,4 @@ ht-degree: 1%
 ## 追加情報
 
 - [非公開コンテンツ](../../../performance/configuration.md#client-side-optimization-settings)
-- [ スループットの高いAJAX リクエストは、パフォーマンスの低下を引き起こします ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
+- [ スループットの高いAJAX リクエストは、パフォーマンスの低下を引き起こします ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=ja)

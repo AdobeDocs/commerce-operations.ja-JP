@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # ACSD-60267：設定可能な製品オプションを通じて製品が追加された場合、FPT が正しく適用されません
 
-ACSD-60267 パッチは、単純な製品を買い物かごに直接追加すると固定製品税（FPT）が正しく適用され、設定可能な製品オプションを使用して同じ製品を選択すると失敗する問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.54 がインストールされている場合に使用できます。 パッチ ID は ACSD-60267 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-60267 パッチは、単純な製品を買い物かごに直接追加すると固定製品税（FPT）が正しく適用され、設定可能な製品オプションを使用して同じ製品を選択すると失敗する問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja) 1.1.54 がインストールされている場合に使用できます。 パッチ ID は ACSD-60267 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -26,7 +26,7 @@ ACSD-60267 パッチは、単純な製品を買い物かごに直接追加する
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -60,7 +60,7 @@ FPT （固定製品税）は、FPT のシンプルな製品が買い物かごに
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
 
 ## 関連資料
 

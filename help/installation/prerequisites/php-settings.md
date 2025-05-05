@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >最新バージョンのAdobe Commerceを使用するには、最低でも PHP 8.1 が必要です。サポートされている PHP の全バージョンについては、[ システム要件 ](../system-requirements.md) を参照してください。
 
-クラウド設定のガイダンスについては、_Cloud Infrastructure でのCommerce[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) ガイドの PHP 設定_ を参照してください。
+クラウド設定のガイダンスについては、_Cloud Infrastructure でのCommerce[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=ja) ガイドの PHP 設定_ を参照してください。
 
 ## PHP プロセスコントロール
 

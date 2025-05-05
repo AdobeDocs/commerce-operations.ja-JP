@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ![ ホスト別の CPU パーセント ](../../assets/tools/cpu-percent-by-host.jpg)
 
-すべての環境とノードの集計が **[!UICONTROL CPU % by host]** のフレームに表示されます。 非実稼動環境の選択を解除する必要があります。 また、実稼動環境のすべてのノードが存在しないインスタンスも注目してください。 CPU 高使用率に関するヒントについて詳しくは、[Adobe CommerceでNew Relicを使用したパフォーマンスのトラブルシューティング ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html) を参照してください。
+すべての環境とノードの集計が **[!UICONTROL CPU % by host]** のフレームに表示されます。 非実稼動環境の選択を解除する必要があります。 また、実稼動環境のすべてのノードが存在しないインスタンスも注目してください。 CPU 高使用率に関するヒントについて詳しくは、[Adobe CommerceでNew Relicを使用したパフォーマンスのトラブルシューティング ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=ja) を参照してください。
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ![CPU 使用率 ](../../assets/tools/cpu-usage.jpg)
 
-**[!UICONTROL CPU Usage]** フレームが空白の場合は、[!DNL New Relic] のインフラストラクチャアプリケーションが有効になっていないことを示します。 サイトが Starter 上にある場合、この情報は表示されません。 サイトが Pro の場合は、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) を開いて、サイトを有効に [!DNL New Relic Infrastructure] ます。
+**[!UICONTROL CPU Usage]** フレームが空白の場合は、[!DNL New Relic] のインフラストラクチャアプリケーションが有効になっていないことを示します。 サイトが Starter 上にある場合、この情報は表示されません。 サイトが Pro の場合は、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja) を開いて、サイトを有効に [!DNL New Relic Infrastructure] ます。
 
 ## [!UICONTROL Average Response Time]
 
