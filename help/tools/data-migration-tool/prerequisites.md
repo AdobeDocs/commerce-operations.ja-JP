@@ -44,6 +44,6 @@ Magento 1 データベースでバイナリログが有効になっている場�
 
 Magento 1 の拡張コードをMagento 2 に移行します。
 
-最新の拡張機能バージョンを確認するには、[!DNL [Commerce Marketplace]](https://marketplace.magento.com/) を参照するか、拡張機能プロバイダーにお問い合わせください。
+最新の拡張機能バージョンを確認するには、[[!DNL [Commerce Marketplace]]](https://marketplace.magento.com/) を参照するか、拡張機能プロバイダーにお問い合わせください。
 
-[!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md) を使用することもできます。
+[[!DNL [Code Migration Tool]]](https://github.com/magento-commerce/code-migration/blob/develop/README.md) を使用することもできます。

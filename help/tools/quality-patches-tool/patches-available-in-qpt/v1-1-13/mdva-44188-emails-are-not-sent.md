@@ -1,5 +1,5 @@
 ---
-title: 「MDVA-44188:」を含む ID にメールが送信されない。-``
+title: 「MDVA-44188:」を含む ID にメールが送信されない。-&grave;&grave;
 description: MDVA-44188 パッチは、「」を含むメール ID にメールが送信されない問題を修正します。-'. このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches） 1.1.13 がインストールされている場合に利用できます。 パッチ ID は MDVA-44188。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
 feature: Communications
 role: Admin
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# MDVA-44188: ``を含む ID にメールが送信されない。-&quot;
+# MDVA-44188: &grave;&grave;を含む ID にメールが送信されない。-&quot;
 
 MDVA-44188 パッチは、`.-` を含むメール ID にメールが送信されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)1.1.13 がインストールされている場合に使用できます。 パッチ ID は MDVA-44188。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
 

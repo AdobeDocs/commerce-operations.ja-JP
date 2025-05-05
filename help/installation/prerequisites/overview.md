@@ -66,7 +66,7 @@ Apache をインストールまたはアップグレードするには、[Apache
 
 ### PHP
 
-PHP のサポート対象バージョンの要件については、[](../system-requirements.md) system requirements} の *Commerce オンプレミス* タブを参照してください。また、PHP の要件については [PHP](../system-requirements.md#php-settings) を参照してください。
+PHP のサポート対象バージョンの要件については、[&#128279;](../system-requirements.md) system requirements&rbrace; の *Commerce オンプレミス* タブを参照してください。また、PHP の要件については [PHP](../system-requirements.md#php-settings) を参照してください。
 
 ### MySQL
 

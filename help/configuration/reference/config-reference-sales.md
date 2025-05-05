@@ -386,7 +386,7 @@ ht-degree: 0%
 
 ## Google API のパス
 
-これらの設定値は、管理者の **Stores**/設定/**Configuration**/**Sales**/6}Google API **で利用できます。**
+これらの設定値は、管理者の **Stores**/設定/**Configuration**/**Sales**/6&rbrace;Google API **で利用できます。**
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|

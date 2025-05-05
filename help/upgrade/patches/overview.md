@@ -96,4 +96,4 @@ index c8a6fef58d31..7d01c195791e 100644
 
 >[!NOTE]
 >
->クラウドインフラストラクチャプロジェクト上のAdobe Commerceにパッチを適用するには、_Commerce on Cloud ガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) の [ パッチの適用_ を参照してください。
+>クラウドインフラストラクチャプロジェクト上のAdobe Commerceにパッチを適用するには、_Commerce on Cloud ガイド [&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) の  パッチの適用_ を参照してください。

@@ -13,7 +13,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->次の図は、Adobe Commerceの _**オンプレミス**_ インストールの概要を示しています。
+>次の図は、Adobe Commerceの _&#x200B;**オンプレミス**&#x200B;_ インストールの概要を示しています。
 
 ![ インストールの仕組み ](../assets/installation/install-diagram-24.svg)
 

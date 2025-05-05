@@ -60,7 +60,7 @@ _any_ 拡張機能のインストールにも同じ手順を使用できます�
 
 Commerce Marketplaceから拡張機能の Composer 名とバージョンを取得するには：
 
-1. 拡張機能の購入に使用したユーザー名とパスワードを使用して ](https://commercemarketplace.adobe.com/)[Commerce Marketplaceにログインします。
+1. 拡張機能の購入に使用したユーザー名とパスワードを使用して [&#128279;](https://commercemarketplace.adobe.com/)Commerce Marketplaceにログインします。
 
 1. 右上隅で、**あなたの名前**/**マイプロファイル** をクリックします。
 

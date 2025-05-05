@@ -19,4 +19,4 @@ ht-degree: 0%
 
      >[!NOTE]
      >
-     >CSP 設定を `restrict` モードに更新すると、管理およびストアフロントの支払いページで既存のインラインスクリプトがブロックされる可能性があり、ページの読み込み時に次のブラウザーエラーが発生します。`Refused to execute inline script because it violates the following Content Security Policy directive: "script-src`。 許可リスト設定を更新して、必要なスクリプトを許可することで、これらのエラーを修正します。 [2}Commerce PHP 開発者ガイド ](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#troubleshooting) トラブルシューティング _を参照してください。_
+     >CSP 設定を `restrict` モードに更新すると、管理およびストアフロントの支払いページで既存のインラインスクリプトがブロックされる可能性があり、ページの読み込み時に次のブラウザーエラーが発生します。`Refused to execute inline script because it violates the following Content Security Policy directive: "script-src`。 許可リスト設定を更新して、必要なスクリプトを許可することで、これらのエラーを修正します。 [2&rbrace;Commerce PHP 開発者ガイド ](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#troubleshooting) トラブルシューティング _を参照してください。_

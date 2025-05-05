@@ -40,9 +40,9 @@ GraphQLを介した買い物かごへの商品の追加は、対象の web サ�
 
    <pre>
     <code class="language-graphql">
-    mutation{
+    mutation&lbrace;
      createEmptyCart
-    }
+    &rbrace;
     </code>
     </pre>
 
@@ -50,9 +50,9 @@ GraphQLを介した買い物かごへの商品の追加は、対象の web サ�
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       "Store":"en_au"
-    }
+    &rbrace;
     </code>
     </pre>
 
@@ -60,27 +60,27 @@ GraphQLを介した買い物かごへの商品の追加は、対象の web サ�
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
       addProductsToCart(
           cartId: "XHrUN2nJ37OqDByhtL0VC8OxYsEZs41c"
-          cartItems: [
-            {
+          cartItems: &lbrack;
+            &lbrace;
               quantity: 1
               sku: "p1"
-            }
-          ]
-        ) {
-          cart {
-           items {
-            product {
+            &rbrace;
+          &rbrack;
+        ) &lbrace;
+          cart &lbrace;
+           items &lbrace;
+            product &lbrace;
               name
               sku
-            }
+            &rbrace;
             quantity
-          }
-        }
-      }
-    }
+          &rbrace;
+        &rbrace;
+      &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -88,9 +88,9 @@ GraphQLを介した買い物かごへの商品の追加は、対象の web サ�
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       "Store":"en_au"
-    }
+    &rbrace;
     </code>
     </pre>
 

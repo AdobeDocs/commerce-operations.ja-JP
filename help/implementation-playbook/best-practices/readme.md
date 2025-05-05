@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # ベストプラクティス：コンテンツ作成ワークフロー
 
-https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.htmlこのドキュメントでは、*[3}Adobe Commerce実装プレイブック } の ] ベストプラクティス }* コンテンツに対する変更または追加をリクエストするユーザーワークフローについて説明 *ます。*
+https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.htmlこのドキュメントでは、*[3&rbrace;Adobe Commerce実装プレイブック &rbrace; の ] ベストプラクティス &rbrace;* コンテンツに対する変更または追加をリクエストするユーザーワークフローについて説明 *ます。*
 
 ## リクエストを作成できるユーザー
 
@@ -41,7 +41,7 @@ Adobeは、次のグループに属する個人を含む（ただし、これに
 
 記事が承認されたら、プルリクエストを実稼動ブランチに結合できます。 結合は作成者が行う必要があります。 トピックを統合したら、手動のプロセスを使用してすぐに実稼動環境に公開することも、次に公開ジョブを実行するときに自動的に公開することもできます。 公開ジョブは通常、2 時間ごとに実行されます。
 
-**新しいコンテンツ通知**-Adobeでは、*ベストプラクティスの概要* トピックの「新機能 [](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=en) の節が提供され、最近公開または更新されたトピックに関する情報を常にユーザーに提供できます。 また、Adobeは、マーケティングや社内コミュニケーションなどの既存のチャネルを使用して、新しいベストプラクティスコンテンツを促進します。
+**新しいコンテンツ通知**-Adobeでは、*ベストプラクティスの概要* トピックの「新機能 [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=en) の節が提供され、最近公開または更新されたトピックに関する情報を常にユーザーに提供できます。 また、Adobeは、マーケティングや社内コミュニケーションなどの既存のチャネルを使用して、新しいベストプラクティスコンテンツを促進します。
 
 ## バックログとかんばんボード
 

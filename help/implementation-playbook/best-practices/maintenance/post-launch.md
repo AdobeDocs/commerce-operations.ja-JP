@@ -204,7 +204,7 @@ Adobe Commerce Cloudで PCI コンプライアンスを確保するには、次�
 
    - Adobe Commerce Cloudでは、自動スケーリングがサポートされており、トラフィックのリアルタイム要求に基づいてサーバーリソース（web ノードなど）を動的に調整するので、ストアが手動の操作なしで大量の訪問者を処理できるようになります。 [ クラウドガイド ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/autoscaling) の _自動スケーリング_ を参照してください。
 
-   - Web 層とサービス層は独立して拡張でき、トラフィック増加のために Web ノードを追加したり、ピーク時にバックエンドのパフォーマンスのためにデータベースまたはサービスノードを拡張したりできます。 _クラウドガイド ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture) の [ 拡張アーキテクチャ_ を参照してください。
+   - Web 層とサービス層は独立して拡張でき、トラフィック増加のために Web ノードを追加したり、ピーク時にバックエンドのパフォーマンスのためにデータベースまたはサービスノードを拡張したりできます。 _クラウドガイド [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture) の  拡張アーキテクチャ_ を参照してください。
 
 - **パフォーマンス監視**:
 

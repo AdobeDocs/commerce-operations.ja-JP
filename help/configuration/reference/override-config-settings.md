@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->[2}Cloud Infrastructure 上のCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) ガイドの { 環境の設定 _のトピックを確認してください。_
+>[2&rbrace;Cloud Infrastructure 上のCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) ガイドの &lbrace; 環境の設定 _のトピックを確認してください。_
 
 ## 環境変数
 
@@ -224,7 +224,7 @@ ht-degree: 0%
 
 1. 範囲を決定します。
 
-   「手順 1:Web サイトまたはストア表示の範囲の値を検索する」の説明に従って ](#find-a-website-or-store-view-scope-in-the-database) データベース [ で範囲を検索します。 （手順 2：グローバル、web サイトまたはストア表示の変数の設定の [ の表に示すように、管理者の値を見つけることもできます ] （#step-2-set-global-website-or-store-view-variables。
+   「手順 1:Web サイトまたはストア表示の範囲の値を検索する」の説明に従って [&#128279;](#find-a-website-or-store-view-scope-in-the-database) データベース  で範囲を検索します。 （手順 2：グローバル、web サイトまたはストア表示の変数の設定の [ の表に示すように、管理者の値を見つけることもできます ] （#step-2-set-global-website-or-store-view-variables。
 
    例えば、範囲は `CONFIG__WEBSITES__DEFAULT` のようになります。
 

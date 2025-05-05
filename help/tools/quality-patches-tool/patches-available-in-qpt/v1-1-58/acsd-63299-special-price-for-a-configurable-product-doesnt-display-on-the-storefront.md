@@ -36,7 +36,7 @@ ACSD-63299 パッチは、特別価格属性が設定可能な製品の特別価
 
 1. **[!UICONTROL Stores]**/*[!UICONTROL Attributes]*/**[!UICONTROL Products]** に移動します。
 1. ***[!UICONTROL special_price]*** 属性を見つけて、**[!UICONTROL Storefront Properties]** に移動します。
-1. ***[!UICONTROL Used in Product Listing]*** を***[!UICONTROL No]***に変更します。
+1. ***[!UICONTROL Used in Product Listing]*** を&#x200B;***[!UICONTROL No]***&#x200B;に変更します。
 1. 1 つの子を持つ設定可能な製品を作成します。
    * 名前と SKU: テスト
    * 価格：159.00 ドル

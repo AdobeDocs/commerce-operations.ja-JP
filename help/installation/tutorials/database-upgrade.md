@@ -31,7 +31,7 @@ ht-degree: 0%
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   ここで、`--keep-generated` は、更新されないオプションの引数です [ 静的ビューファイル ](../../configuration/cli/static-view-file-deployment.md)。 このオプション引数は、経験豊富なシステムインテグレーターが限られた状況で使用する *のみ* です。 [ 実稼動モード *で* 使用する必要があ ](../../configuration/bootstrap/application-modes.md#production-mode) ます。 *開発者モード* では使用しないでください [](../../configuration/bootstrap/application-modes.md#developer-mode)。
+   ここで、`--keep-generated` は、更新されないオプションの引数です [ 静的ビューファイル ](../../configuration/cli/static-view-file-deployment.md)。 このオプション引数は、経験豊富なシステムインテグレーターが限られた状況で使用する *のみ* です。 [ 実稼動モード *で* 使用する必要があ ](../../configuration/bootstrap/application-modes.md#production-mode) ます。 *開発者モード* では使用しないでください [&#128279;](../../configuration/bootstrap/application-modes.md#developer-mode)。
 
 1. キャッシュのクリーンアップ：
 

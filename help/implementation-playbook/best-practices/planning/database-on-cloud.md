@@ -83,7 +83,7 @@ Cron デッドロックの潜在的な問題を回避するには、ECE-Tools �
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
 インデクサーを切り替えると、[!DNL data definition language] （DDL） ステートメントが生成され、データベース ロックの原因となる可能性のあるトリガーが作成されます。 この問題を回避するには、web サイトをメンテナンスモードにし、設定を変更する前に cron ジョブを無効にします。
-手順については、*Adobe Commerce設定ガイド ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) の [ インデクサーの設定* を参照してください。
+手順については、*Adobe Commerce設定ガイド [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) の  インデクサーの設定* を参照してください。
 
 ## 実稼動環境で DDL ステートメントを実行しない
 

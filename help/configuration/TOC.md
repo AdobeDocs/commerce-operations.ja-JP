@@ -28,7 +28,7 @@ ht-degree: 0%
    + [システム設定の作成](deployment/build-system.md)
    + [実稼動システムのセットアップ](deployment/production-system.md)
    + [ファイルシステムのアクセス権限](deployment/file-system-permissions.md)
-   + {#examples} の例
+   + の例{#examples}
       + [共有設定の使用](deployment/example-shared-configuration.md)
       + [CLI コマンドの使用](deployment/example-using-cli.md)
       + [環境変数の使用](deployment/example-environment-variables.md)
@@ -139,7 +139,7 @@ ht-degree: 0%
       + [セッションストレージ用の memcached](storage/memcached.md)
       + [centOS の memcached](storage/memcache-centos.md)
       + [ubuntu 上の memcached](storage/memcache-ubuntu.md)
-   + データベース {#split-db} の分割
+   + データベース の分割 {#split-db}
       + [データベースの分割の概要](storage/multi-master.md)
       + [自動設定](storage/multi-master-masterdb.md)
       + [手動設定](storage/multi-master-manual.md)

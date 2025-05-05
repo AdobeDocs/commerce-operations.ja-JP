@@ -221,7 +221,7 @@ bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 
 >[!INFO]
 >
->`bin/magento config:show` コマンドは、[ 暗号化された値 ](../reference/config-reference-sens.md) の値を一連のアスタリスク（`******`）として表示します。
+>`bin/magento config:show` コマンドは、[ 暗号化された値 ](../reference/config-reference-sens.md) の値を一連のアスタリスク（`**&#x200B;**&#x200B;**`）として表示します。
 
 ### 例
 

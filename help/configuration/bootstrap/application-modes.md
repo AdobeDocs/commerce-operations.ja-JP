@@ -26,9 +26,9 @@ Adobe Commerceのオペレーションモードを手動で変更する方法に
 
 読み取り専用ファイルシステムにより、リモートクラウド環境のモードを変更することには厳密な制限があり、Adobe Commerce サポートによって上書きすることはできません。 `ece-tools` パッケージが複数の設定ソースに基づいたファイルを上書きするので、`app/etc/env.php` ファイルを変更してモードを変更しようとしないでください。
 
-クラウドインフラストラクチャー上のAdobe Commerceでは、デプロイメント中にアプリケーションを自動的に _メンテナンス_ モードで実行します。これにより、デプロイメントが完了するまでサイトがオフラインになります。 それ以外の場合、アプリケーションは _実稼動_ モードのままになります。 [2}Cloud Infrastructure 上のCommerce ガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) の { デプロイメントプロセス } を参照してください _。_
+クラウドインフラストラクチャー上のAdobe Commerceでは、デプロイメント中にアプリケーションを自動的に _メンテナンス_ モードで実行します。これにより、デプロイメントが完了するまでサイトがオフラインになります。 それ以外の場合、アプリケーションは _実稼動_ モードのままになります。 [2&rbrace;Cloud Infrastructure 上のCommerce ガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) の { デプロイメントプロセス } を参照してください _。_
 
-Cloud Docker for Commerceを開発ツールとして使用する場合、Docker 環境に _developer_ モードでクラウドインフラストラクチャプロジェクトをデプロイできますが、ファイル同期処理が増えるため、パフォーマンスが低下します。 _Cloud Docker for Commerce ガイド ](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) の [Docker 環境のデプロイ_ を参照してください。
+Cloud Docker for Commerceを開発ツールとして使用する場合、Docker 環境に _developer_ モードでクラウドインフラストラクチャプロジェクトをデプロイできますが、ファイル同期処理が増えるため、パフォーマンスが低下します。 _Cloud Docker for Commerce ガイド [&#128279;](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) の Docker 環境のデプロイ_ を参照してください。
 
 
 ## デフォルトモード
@@ -78,7 +78,7 @@ _メンテナンス_ モードは、改善、更新、設定タスクの間、�
 
 [ カスタムメンテナンスページ ](../../upgrade/troubleshooting/maintenance-mode-options.md) を作成し、メンテナンスモードを手動で有効または無効にしたり、メンテナンスモードを設定して、許可された IP アドレスからの訪問者がストアを正常に表示できるようにすることができます。 『インストールガイド [ の「メンテナンスモードの有効化と無効化 ](../../installation/tutorials/maintenance-mode.md) を参照してください __。
 
-クラウドインフラストラクチャー上でCommerceを使用している場合、Commerce アプリケーションはデプロイフェーズ中にメンテナンスモードで実行されます。 デプロイメントが正常に完了すると、Commerce アプリケーションは実稼動モードの実行中に戻ります。 [2}Cloud Infrastructure 上のCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) ガイドの {Deployment hook} を参照してください _。_
+クラウドインフラストラクチャー上でCommerceを使用している場合、Commerce アプリケーションはデプロイフェーズ中にメンテナンスモードで実行されます。 デプロイメントが正常に完了すると、Commerce アプリケーションは実稼動モードの実行中に戻ります。 [2&rbrace;Cloud Infrastructure 上のCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) ガイドの {Deployment hook} を参照してください _。_
 
 メンテナンスモードの場合：
 

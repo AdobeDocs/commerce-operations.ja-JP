@@ -53,7 +53,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f112a65859e1337183ab49aff9b6a812f9caa569">f112a6</a> （コミット）</td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce} および <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a> のリリースノートのテキストレンダリングを修正しまし </a>。<br /><em><a href="https://github.com/hostep">@hostep</a>.</em> にクレジット</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce&rbrace; および <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a> のリリースノートのテキストレンダリングを修正しまし </a>。<br /><em><a href="https://github.com/hostep">@hostep</a>.</em> にクレジット</p>
 </td>
       <td>
         技術

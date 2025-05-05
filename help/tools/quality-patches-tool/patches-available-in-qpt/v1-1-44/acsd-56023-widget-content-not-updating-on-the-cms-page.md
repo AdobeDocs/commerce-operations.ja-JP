@@ -43,7 +43,7 @@ ACSD-56023 パッチにより、ウィジェットのコンテンツがCMS ペ�
 
 1. 作成したページをストアフロントで開きます。 必ずキャッシュしてください。
 1. 管理者から、**[!UICONTROL Catalog]**/**[!UICONTROL Products]** を開きます。
-1. 編集する製品を選択し、「はい ***[!UICONTROL Set Product as New]**切り替え* ます。
+1. 編集する製品を選択し、「はい ***[!UICONTROL Set Product as New]**&#x200B;切り替え* ます。
 1. ストアフロントで作成した *CMSページ* に再度移動します。
 
 <u> 期待される結果 </u>:

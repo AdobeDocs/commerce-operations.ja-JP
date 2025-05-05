@@ -167,7 +167,7 @@ Magento 2 `greatblog_post` テーブルは次のようになります。
 >詳しくは、[ 設定 ](technical-specification.md#configuration)、[ ステップの内部 ](technical-specification.md#step-internals)、[ ステージ ](technical-specification.md#step-stages)、および [ 実行モード ](technical-specification.md#running-modes) を参照してください。
 
 
-複雑な SQL クエリは、これらのクラス内で組み合わせて、データを取得および移行できます。 また、これらのテーブルは、既存のすべてのテーブルをスキャンし、`map.xml` ファイルの `<ignore>` タグにない限りデータの移行を試みるので ](technical-specification.md#map-step) マップ手順 [ では「無視」する必要があります。
+複雑な SQL クエリは、これらのクラス内で組み合わせて、データを取得および移行できます。 また、これらのテーブルは、既存のすべてのテーブルをスキャンし、`map.xml` ファイルの `<ignore>` タグにない限りデータの移行を試みるので [&#128279;](technical-specification.md#map-step) マップ手順  では「無視」する必要があります。
 
 整合性チェックの場合は、追加のマップファイルを `config.xml` ファイルに定義して、テーブル構造が期待どおりであることを確認します。
 

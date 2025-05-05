@@ -91,13 +91,13 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-[2}Cloud Infrastructure ガイドのCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)REDIS_USE_SLAVE_CONNECTION} を参照してください __
+[2&rbrace;Cloud Infrastructure ガイドのCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)REDIS_USE_SLAVE_CONNECTION&rbrace; を参照してください __
 
 Adobe Commerce オンプレミスのインストールの場合は、`bin/magento:setup` コマンドを使用して新しい Redis キャッシュ実装を設定します。 _設定ガイド_ の [ デフォルトキャッシュに Redis を使用 ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) を参照してください。
 
 >[!WARNING]
 >
->[ 拡張/分割アーキテクチャ _を使用して、クラウドインフラストラクチャプロジェクト用の Redis スレーブ接続を設定する_ しないでください ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)。 これにより、Redis 接続エラーが発生します。 クラウドインフラストラクチャー上の _Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) ガイドの [Redis 設定ガイダンス_ を参照してください。
+>[ 拡張/分割アーキテクチャ _を使用して、クラウドインフラストラクチャプロジェクト用の Redis スレーブ接続を設定する_ しないでください ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)。 これにより、Redis 接続エラーが発生します。 クラウドインフラストラクチャー上の _Commerce[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) ガイドの Redis 設定ガイダンス_ を参照してください。
 
 ## キーをプリロード
 

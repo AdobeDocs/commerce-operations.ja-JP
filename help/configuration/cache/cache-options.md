@@ -16,7 +16,7 @@ Commerce アプリケーションは、低レベルのキャッシュフロン�
 
 ## 低レベルのフロントエンドキャッシュ
 
-Commerceは、[Magento\Framework\Cache\Core[ フロントエンドキャッシュを実装することで ](https://framework.zend.com/manual/1.12/en/zend.cache.frontends.html)Zend_Cache_Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) を拡張しています。
+Commerceは、[&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php)Magento\Framework\Cache\Core[ フロントエンドキャッシュを実装することで ](https://framework.zend.com/manual/1.12/en/zend.cache.frontends.html)Zend_Cache_Core を拡張しています。
 
 ## 低レベルのバックエンド・キャッシュ
 

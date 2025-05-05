@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-64112: `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_COUNT` is set'
-description: Apply the ACSD-64112 patch to fix the Adobe Commerce issue where the `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_COUNT` is set.
+title: 'ACSD-64112: &grave;indexer_update_all_views&grave; cron execution fails when &grave;MAGE_INDEXER_THREADS_COUNT&grave; is set'
+description: Apply the ACSD-64112 patch to fix the Adobe Commerce issue where the &grave;indexer_update_all_views&grave; cron execution fails when &grave;MAGE_INDEXER_THREADS_COUNT&grave; is set.
 feature: Catalog Management, B2B
 role: Admin, Developer
 exl-id: c95f179d-5291-481f-b655-08a9db608513
@@ -86,7 +86,7 @@ report.CRITICAL: PDOException: There is no active transaction in /home/vendor/ma
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## パッチのインストール後に必要な追加手順

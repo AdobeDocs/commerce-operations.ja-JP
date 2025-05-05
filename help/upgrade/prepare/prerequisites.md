@@ -99,7 +99,7 @@ MySQL をバージョン 8.0 からバージョン 8.4 に適切にアップグ�
    >
    >`restrict_fk_on_non_standard_key` の値を `OFF` に変更しない場合、読み込み時に次のエラーが発生します。
    >
-   ```sql
+   >```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. MySQL サーバーを再起動します。
@@ -192,7 +192,7 @@ Elasticsearch 8.x のサポートは、Adobe Commerce 2.4.6 で導入されま�
 
    この方法は、PHP 8.3 の 2.4.7-p4 で動作します。この問題は、`aws/aws-sdk-php` が `psr/http-message >= 2.0` を必要とし、競合を引き起こす可能性があるために発生します。 上記の手順は、これらの依存関係の問題を解決するのに役立ちます。
 
-+++
+   +++
 
 1. プロジェクトコンポーネントを更新します。
 

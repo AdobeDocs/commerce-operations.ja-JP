@@ -49,7 +49,7 @@ sudo apt install -y rabbitmq-server
 
 詳しくは、[ 手動インストール ](https://www.erlang-solutions.com/downloads/) を参照してください。
 
-正しいバージョンをインストールするには ](https://www.rabbitmq.com/which-erlang.html)[[!DNL RabbitMQ]/Erlang のバージョンマトリックスを参照してください。
+正しいバージョンをインストールするには [&#128279;](https://www.rabbitmq.com/which-erlang.html) [!DNL RabbitMQ]/Erlang のバージョンマトリックスを参照してください。
 
 ### [!DNL RabbitMQ] のインストール
 

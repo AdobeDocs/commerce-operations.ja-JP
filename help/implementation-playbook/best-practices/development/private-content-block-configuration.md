@@ -15,7 +15,7 @@ ht-degree: 1%
 
 プライベートコンテンツブロックに `_isScopePrivate` 変数が含まれている場合、ブロックはキャッシュできません。 プライベートブロックはキャッシュされないので、Adobe Commerceは顧客のリクエストごとに同じデータを取得する必要があり、サーバーの負荷が高くなります。
 
-プライベートコンテンツに `_isScopePrivate` 変数を使用する代わりに、ユーザーに依存しないデータを表示するブロックとテンプレートを作成します。 このデータは、Adobe Commerce UI コンポーネントによってユーザー固有のデータに置き換えられ、プリレンダリングのデータをより効率的に処理できます。 手順については、_[!DNL Commerce PHP Extensions Guide]_の [ プライベートコンテンツ ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) を参照してください。
+プライベートコンテンツに `_isScopePrivate` 変数を使用する代わりに、ユーザーに依存しないデータを表示するブロックとテンプレートを作成します。 このデータは、Adobe Commerce UI コンポーネントによってユーザー固有のデータに置き換えられ、プリレンダリングのデータをより効率的に処理できます。 手順については、_[!DNL Commerce PHP Extensions Guide]_&#x200B;の [ プライベートコンテンツ ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) を参照してください。
 
 ## 影響を受ける製品とバージョン
 

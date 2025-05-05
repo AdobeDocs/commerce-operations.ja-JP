@@ -14,7 +14,7 @@ ht-degree: 4%
 # アップグレードガイド {#upgrade-guide}
 
 - [アップグレードプロセスの概要](overview.md)
-- Journey {#journey} のアップグレード
+- Journey のアップグレード {#journey}
    - [ジャーニーフェーズ](journey/phases.md)
    - [プロジェクトの開始](journey/project-launch.md)
    - [年度計画](journey/annual-planning.md)
@@ -36,7 +36,7 @@ ht-degree: 4%
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
    - [概要](upgrade-compatibility-tool/overview.md)
    - [必要システム構成](upgrade-compatibility-tool/prerequisites.md)
-   - [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool} の使用
+   - [!DNL Upgrade Compatibility Tool] の使用 {#use-upgrade-compatibility-tool}
       - [コマンドラインインターフェイスでのツールの実行](upgrade-compatibility-tool/run.md)
       - [との統合  [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
       - [Magento PHPStorm プラグイン内でツールを実行します](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
@@ -44,10 +44,10 @@ ht-degree: 4%
       - [レポート](upgrade-compatibility-tool/reports.md)
       - [エラーメッセージ](upgrade-compatibility-tool/error-messages.md)
    - [関連ツール](upgrade-compatibility-tool/related-tools.md)
-- 開発者 {#developer} の投稿
+- 開発者 の投稿 {#developer}
    - [Git ベースのインストールのアップグレード](developer/git-installs.md)
    - [モジュールの管理](developer/manage-modules.md)
-- {#troubleshooting} のトラブルシューティング
+- のトラブルシューティング{#troubleshooting}
    - [現在の検索エンジンはサポートされていません](troubleshooting/search-engine-not-supported.md)
    - [モジュール更新失敗後のロールバック](troubleshooting/roll-back-after-update-failure.md)
    - [アップグレードのメンテナンスモードオプション](troubleshooting/maintenance-mode-options.md)

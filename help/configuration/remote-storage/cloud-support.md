@@ -89,7 +89,7 @@ magento-cloud variable:create --level environment --name REMOTE_STORAGE --json t
 
 ### オプションの認証を使用
 
-`key` と `secret` はオプションです。 変数を作成する場合は、「`sensitive`」オプションを選択して、`key` と `secret` を非表示にできます。 この設定では、値は web インターフェイスには表示されません。 [2}Cloud Infrastructure 上のCommerce ガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility) の変数の表示 _を参照してください。_
+`key` と `secret` はオプションです。 変数を作成する場合は、「`sensitive`」オプションを選択して、`key` と `secret` を非表示にできます。 この設定では、値は web インターフェイスには表示されません。 [2&rbrace;Cloud Infrastructure 上のCommerce ガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility) の変数の表示 _を参照してください。_
 
 別の認証方法を使用する場合は、`key` と `secret` を JSON 設定から削除します。 代替認証方法を設定し、サーバーが S3 バケットに対して許可されていることを確認します。
 

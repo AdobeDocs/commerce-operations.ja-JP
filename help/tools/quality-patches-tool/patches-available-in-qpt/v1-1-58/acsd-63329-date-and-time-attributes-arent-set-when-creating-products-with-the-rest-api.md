@@ -35,7 +35,7 @@ REST API を使用して商品を作成する場合、日時フィールドに�
 
 <u> 再現手順 </u>:
 
-1. **[!UICONTROL Product]** 属性を作成し、そのデフォルト値を `12/31/2020` に設定して、**[!UICONTROL Catalog Input Type for Store Owner]** を ***[!UICONTROL Date]*** または***[!UICONTROL Date and Time]***に設定します。
+1. **[!UICONTROL Product]** 属性を作成し、そのデフォルト値を `12/31/2020` に設定して、**[!UICONTROL Catalog Input Type for Store Owner]** を ***[!UICONTROL Date]*** または&#x200B;***[!UICONTROL Date and Time]***&#x200B;に設定します。
 1. 別のテキストタイプ属性を作成し、デフォルト値を ***テスト値*** に設定します。
 1. REST APIPOSTリクエストを使用して、`/rest/all/V1/products/` に新しい製品を作成します。
 
