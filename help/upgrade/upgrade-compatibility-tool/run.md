@@ -2,9 +2,9 @@
 title: ' [!DNL Upgrade Compatibility Tool] を実行します。'
 description: Adobe Commerce プロジェクトのコマンドラ  [!DNL Upgrade Compatibility Tool]  ンインターフェイスでコマンドを実行するには、次の手順に従います。
 exl-id: ea467a74-18eb-476b-96e2-23f4fc257d73
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: bfb952d29bd3d7fc7147107216981e05202e44aa
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ chmod +x ./uct/bin/uct
 
 [!DNL Upgrade Compatibility Tool] は、Adobe Commerce カスタマイズ済みインスタンスにインストールされているすべてのモジュールを分析して、そのインスタンスを特定のバージョンと照合するツールです。 Adobe Commerceの最新バージョンにアップグレードする前に対処する必要がある重要な問題、エラー、警告のリストを返します。
 
-[!DNL Upgrade Compatibility Tool] について詳しくは、この [ ビデオチュートリアル ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=ja) （06:02）を参照してください。
+[!DNL Upgrade Compatibility Tool] について詳しくは、この [ ビデオチュートリアル ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en) （06:02）を参照してください。
 
 コマンドラインインターフェイスで [!DNL Upgrade Compatibility Tool] に使用できるコマンド：
 
@@ -59,7 +59,7 @@ bin/uct upgrade:check <dir>
 
 | **コマンド** | **使用可能なオプション** |
 |----------------|-----------------|
-| `upgrade:check` | <ul><li>—help：使用可能なすべてのオプションを返す。</li><li>—current-version：現在のAdobe Commerceのバージョン。 このパラメーターは必須で、常に使用する必要があります。</li><li>—min-issue-level：最小のイシューレベルに従ってイシューをフィルタリングできます（デフォルト値は WARNING）。</li><li>—ignore-current-version-compatibility-issues （または – i）: レポートに現在のバージョンの重大な問題、エラー、および警告を含めない場合。</li><li>—coming-version （または – c）：特定のAdobe Commerceのバージョンを対象にします。 省略した場合は、利用可能な最新のバージョンが使用されます。</li></ul> |
+| `upgrade:check` | <ul><li>—help：使用可能なすべてのオプションを返す。</li><li>—current-version：現在のAdobe Commerceのバージョン。 省略すると、Adobe Commerceのインストールのバージョンが使用されます。</li><li>—min-issue-level：最小のイシューレベルに従ってイシューをフィルタリングできます（デフォルト値は WARNING）。</li><li>—ignore-current-version-compatibility-issues （または – i）: レポートに現在のバージョンの重大な問題、エラー、および警告を含めない場合。</li><li>—coming-version （または – c）：特定のAdobe Commerceのバージョンを対象にします。 省略した場合は、利用可能な最新のバージョンが使用されます。</li></ul> |
 
 [!DNL Upgrade Compatibility Tool] を使用すると、`--ignore-current-version-compatibility-issues` オプションを指定して `upgrade:check` コマンドを実行できます。 このオプションは、現在のバージョンから [!DNL Upgrade Compatibility Tool] レポートのターゲットバージョンへの更新で導入される新しいイシューのみを取得する場合に使用します。
 
@@ -146,7 +146,7 @@ bin/uct core:code:changes <dir> <vanilla dir>
 
 >[!NOTE]
 >
-> カスタムコードをコアコードから除外することをお勧めします。 アップグレードに関するベストプラクティスについて詳しくは、Adobe Commerce 2.4 [ アップグレードガイド ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=ja) を参照してください。
+> カスタムコードをコアコードから除外することをお勧めします。 アップグレードに関するベストプラクティスについて詳しくは、Adobe Commerce 2.4 [ アップグレードガイド ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) を参照してください。
 
 ### Vanilla インストール
 
@@ -163,7 +163,7 @@ _バニラ_ インストールは、特定のリリースバージョンの指�
 [!DNL Upgrade Compatibility Tool] には、削減された問題のセットを自動的に修正する機能があります。
 
 - 引数を渡さずに使用できましたが、現在はそのような使用が非推奨（廃止予定）になっている関数。
-- Magentoテンプレートでの `$this` の使用。
+- Magento テンプレートでの `$this` の使用。
 - プライベートメソッドでの PHP キーワード `final` の使用。
 
 その場合は、`refactor` コマンドを実行します。
@@ -259,8 +259,8 @@ bin/uct upgrade:check --help
 
 - 2 つのモジュールに同じ名前を付けないでください。
 - Adobe Commerce[ コーディング標準 ](https://developer.adobe.com/commerce/php/coding-standards/) に従います。
-- Adobe Commerce 2.4[ アップグレードガイド ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=ja) のベストプラクティス。
-- クラウドインフラストラクチャー上の [Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ja){target=_blank} プロジェクトの [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=ja) から [!DNL Upgrade Compatibility Tool] を実行します。
+- Adobe Commerce 2.4[ アップグレードガイド ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) のベストプラクティス。
+- クラウドインフラストラクチャー上の [Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} プロジェクトの [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) から [!DNL Upgrade Compatibility Tool] を実行します。
 
 ## 結果を最適化
 
