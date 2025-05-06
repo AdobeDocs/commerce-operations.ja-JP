@@ -12,7 +12,7 @@ solution: Commerce
 solution-title: Commerce
 topic: Administration, Commerce, Development
 type: Documentation
-badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
+badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
 source-git-commit: ca842f16660c568d8d690bbcef06777e68ceac2c
 workflow-type: tm+mt
 source-wordcount: '146'
