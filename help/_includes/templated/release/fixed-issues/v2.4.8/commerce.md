@@ -1,7 +1,7 @@
 ---
-source-git-commit: 53b2494d848c027e32f1493bbc7a9f204677afaa
+source-git-commit: 5d6d60b99d883f0a83cdcfc1c65c04d2f4ef09b7
 workflow-type: tm+mt
-source-wordcount: '27958'
+source-wordcount: '27937'
 ht-degree: 0%
 
 ---
@@ -121,9 +121,9 @@ Web サイトの制限が有効な場合、認証済みの管理者ユーザー�
 * __共有ギフトレジストリに、イベントの日付が 1 日前と表示される__
 ストアフロントでギフトレジストリの日付が正しく表示されるようになりました
   _ACP2E-3445_
-* __VAPT:法人ロジックエラー - 生年月日として将来の日付顧客__
-お客様の生年月日を今日より遅く設定することはできません
-  _ACP2E-3501 - [GitHub コードコントリビューション](https://github.com/magento/magento2/commit/d4de4726)_
+* __VAPT：ビジネスロジックエラー – 将来の日付を顧客の生年月日として__
+顧客の生年月日を今日より後に設定することはできません
+  _ACP2E-3501 - [GitHub コードの投稿 ](https://github.com/magento/magento2/commit/d4de4726)_
 
 ### アカウント，API, GraphQL
 
@@ -383,15 +383,15 @@ REST API を使用して共有カタログに割り当てられた製品が、�
 
 * __会社のグリッドをフィルタリングしてから、グリッド CSV の書き出しを試みると、失敗して例外が発生します__
 このシステムでは、「未払い残高」や「会社タイプ」などのフィルターが適用されている場合でも、管理パネルで会社グリッドデータを正常に CSV 書き出すことができるようになりました。 以前は、特定のフィルターを適用してグリッドデータを書き出そうとすると、失敗し、例外がスローされていました。
-  _AC-9607 - [GitHub コードのコントリビューション](https://github.com/magento/magento2/commit/44cef3a9)_
+  _AC-9607 - [GitHub コードの投稿 ](https://github.com/magento/magento2/commit/44cef3a9)_
 
 ### B2B、GraphQL
 
-* __[クラウド] graphql 呼び出しを介した作成会社中にcustom_attributesを設定できません__
-修正後、graphql リクエストを使用して、会社作成中に会社管理者の「custom_attributes」属性を設定できます。
+* __[クラウド ]Graphql 呼び出しの通信作成中に custom_attributes を設定できない__
+修正後、graphql リクエストを使用して、会社を作成する際に、会社管理者の「custom_attributes」属性を設定することができます。
   _ACP2E-3391_
 
-### ブレーントリー
+### Braintree
 
 * __Admin Express のチェックアウトボタンは無効になっています。__
   _AC-14293_
@@ -1009,12 +1009,12 @@ MAGE_RUN_CODE パラメーターが設定されている場合、システムが
   _AC-11852 - [GitHub の問題 ](https://github.com/magento/magento2/issues/35622) - [GitHub コードの投稿 ](https://github.com/magento/magento2/pull/37959)_
 * __Magento\Catalog\Model\ProductRepository クラスの後方互換性が失われました__
 ProductRepository クラスは、Initialization Helper クラスを 2 番目のパラメーターとして復元することで、このクラスから拡張するモジュールが期待どおりに機能するように後方互換性を維持できるようになりました。 以前は、ProductRepository クラスのコンストラクターから Initialization Helper を削除すると、後方互換性が失われ、ユーザーは回避策を使用する必要がありました。
-  _AC-11874 - [GitHub の問題](https://github.com/magento/magento2/issues/38669)_
-* __[問題] 静的 内容 デプロイ - 書式 ＜例外＞Photoshop のみ「テキスト」 エラー__
-システムは、静的内容デプロイメント中に空の LESS ファイルを正しく処理し、「LESS ファイルが空です」というエラーメッセージを表示するようになりました。 以前は、デプロイメント中に空の LESS ファイルが検出されると、誤った型エラーがスローされていました。
+  _AC-11874 - [GitHub の問題 ](https://github.com/magento/magento2/issues/38669)_
+* __[問題 ] 静的コンテンツのデプロイ – タイプエラー__
+静的コンテンツのデプロイメント中にシステムが空の LESS ファイルを正しく処理し、「LESS ファイルが空です」というエラーメッセージが表示されるようになりました。 以前は、デプロイメント中に空の LESS ファイルが見つかった場合、誤ったタイプエラーがスローされていました。
   _AC-11905 - [GitHub の問題 ](https://github.com/magento/magento2/issues/38682) - [GitHub コードの投稿 ](https://github.com/magento/magento2/pull/38683)_
-* __[問題] [表示] リンクとスクリプトのタグ余分なスペースを削除しました__
-システムは、リンクタグとスクリプトタグに余分なスペースがないことを保証し、よりクリーンで効率的なコードを提供します。 以前は、link タグと script タグの属性の間に二重のスペースが見つかっていました。
+* __[問題 ][ 表示 ] リンクとスクリプトタグの余分なスペースを削除しました__
+システムのリンクタグとスクリプトタグに余分なスペースがなくなり、よりクリーンで効率的なコードが提供されるようになりました。 以前は、link タグと script タグの属性の間に二重のスペースが見つかっていました。
   _AC-12002 - [GitHub の問題 ](https://github.com/magento/magento2/issues/32920) - [GitHub コードの投稿 ](https://github.com/magento/magento2/pull/32919)_
 * __[問題 ] 設定ミスの無限ループを避ける__
 システムは、仮想タイプ設定での自己参照マッピングを防ぐことで、無限ループを回避できるようになりました。 これにより、自己参照ノードを逆参照しようとするときに、アプリケーションが無限ループで動かなくなるのを防ぎます。 以前は、仮想タイプの設定が自己参照の場合、アプリケーションが無期限にスピンしていました。
@@ -1592,7 +1592,7 @@ GraphQLの買い物かご品目価格の original_item_price ロジックを更�
 RMA がグローバルに無効になっている場合でも、以前に作成した戻り値に引き続きアクセスできるように、GraphQL ロジックを更新しました。 ストアフロントの UX を向上させるためにエラーメッセージを削除し、お客様が過去の返品を引き続き表示できるようにします。
   _LYNX-690_
 * __競合するクーポンが適用されている場合、GraphQLが更新された買い物かごデータを返さない__
-優先度が高く競合するクーポンを適用すると、更新された買い物かごデータを返さずにエラーメッセージが表示される問題を修正しました。 これで、新しいクーポンによって既存のが無効になると、ミューテーションは有効なクーポンが適用された買い物かごを正しく返します。
+優先度が高く競合するクーポンを適用すると、更新された買い物かごデータを返さずにエラーメッセージが表示される問題を修正しました。 新しいクーポンが既存のクーポンを無効にすると、変異は有効なクーポンが適用されたカートを正しく返すようになりました。
   _LYNX-696_
 * __placeOrder GQL の nullable 以外のフィールド「TaxItem.title」に対して、null を返すことはできません__
 TaxItem.title の nullable ではないフィールドの null 値が原因で、placeOrder ミューテーションが内部サーバーエラーで失敗する問題を修正しました。 現在は、このフィールドは常に有効な値を返すので、注文が確実に成功します。
@@ -1638,9 +1638,6 @@ visual.phtml ファイルの開始タグが正しく閉じられて、HTMLの適
 * __仮想タイプを使用してプラグインを設定すると、コマンドでインターセプターメソッド `setup:di:compile` 正しく生成できない__
 仮想タイプを使用してプラグインを設定する際に、システムがインターセプターメソッドを正しく生成するようになりました。これにより、事前コンパイル済み、またはランタイムコンパイル済みのいずれの場合でも、一貫した結果が得られます。 以前は、ランタイムのコンパイルと比較して事前コンパイルすると、システムが誤った結果を生成していました。
   _AC-13398 - [GitHub の問題 ](https://github.com/magento/magento2/issues/33980) - [GitHub コードの投稿 ](https://github.com/magento/magento2/pull/38141)_
-* __データ コレクタからファイルをダウンロードできません__
-バックアップをダウンロードする際に、ファイルをダウンロードする代わりに空白ページが表示されなくなりました。
-  _ACP2E-3441_
 * __Adobe Commerce 2.4.7-p3 単体テストが失敗する__
 リリースノートは必要ありません。
   _ACP2E-3631 - [GitHub コードの投稿 ](https://github.com/magento/magento2/commit/982b1c42)_
@@ -1918,20 +1915,20 @@ mftf テスト修正
 * __[問題 ]Feature/php8.1 コンストラクタープロパティの昇格 wee graph ql__
 すべてのプロパティを graph ql モジュールのコンストラクタープロパティのプロモーションに置き換えます。
   _AC-13295 - [GitHub の問題 ](https://github.com/magento/magento2/issues/39309) - [GitHub コードの投稿 ](https://github.com/magento/magento2/pull/36975)_
-* __固定 製品税 (FPT) は、コンフィギュレーション可能製品では機能しません__
-構成可能な製品バリエーションのFPTが正しく機能します。
-  _ACP2E-3193 - [GitHub コードコントリビューション](https://github.com/magento/magento2/commit/ec7e32a9)_
+* __固定製品税（FPT）が設定可能な製品で機能していません__
+設定可能な製品バリエーションの FPT が正しく機能していること。
+  _ACP2E-3193 - [GitHub コードの投稿 ](https://github.com/magento/magento2/commit/ec7e32a9)_
 
 ### テストフレームワーク
 
-* __統合テスト JSON 列のタイプが原因で testDbSchemaUpToDate が失敗する__
-システムは、統合テスト中にデータベーススキーマ内の JSON 列型を正しく認識するようになり、データベーススキーマと宣言型スキーマの不一致によるテストの失敗を防ぎます。 以前は、システムがMariaDBでJSON列型をLONGTEXTとして誤って識別し、統合テストが失敗していました。
-  _AC-11654 - [GitHub コードのコントリビューション](https://github.com/magento/magento2/commit/ef81f5a2)_
-* __[問題] PHP ドックのスペルが修正されました__
-システムは、PHPDocのスペル修正により、IDEで非推奨のメソッドを正しく認識するようになりました。 以前は、PHPDoc のスペルミスにより、IDE は特定のメソッドを非推奨として認識しませんでした。
-  _AC-13362 - [GitHub の問題](https://github.com/magento/magento2/issues/31399) - [GitHub コードのコントリビューション](https://github.com/magento/magento2/pull/31398)_
-* __MAGETWO-95118:セッションの有効期限が切れた後の永続買い物かごによる動作の確認__
-  _AC-13478 - [GitHub コードのコントリビューション](https://github.com/magento/magento2/commit/7d5e3906)_
+* __JSON 列タイプが原因で testDbSchemaUpToDate に失敗する統合テスト__
+統合テスト中に、データベーススキーマ内の JSON 列タイプがシステムによって正しく認識され、データベーススキーマと宣言型スキーマの不一致によるテストの失敗を防ぐようになりました。 以前は、システムが MariaDB で JSON 列のタイプを LONGTEXT と誤って識別したので、統合テストが失敗していました。
+  _AC-11654 - [GitHub コードの投稿 ](https://github.com/magento/magento2/commit/ef81f5a2)_
+* __[問題 ]PHPDoc 修正スペル__
+システムは、PHPDoc のスペル修正により、IDE の非推奨メソッドを正しく認識するようになりました。 以前は、PHPDoc のスペルエラーにより、IDE が特定のメソッドを非推奨として認識しなくなっていました。
+  _AC-13362 - [GitHub の問題 ](https://github.com/magento/magento2/issues/31399) - [GitHub コードの投稿 ](https://github.com/magento/magento2/pull/31398)_
+* __MAGETWO-95118：セッションの有効期限が切れた後に、永続的な買い物かごで動作を確認する__
+  _AC-13478 - [GitHub コードの投稿 ](https://github.com/magento/magento2/commit/7d5e3906)_
 * __統合テストが失敗しました。Magento\NegotiableQuote\Controller\Quote\DownloadTest::testCompanyManagerDownloadWithNQSubPermission__
   _AC-13716_
 * __[データベース比較 ] 条件のないターゲット ルールに関するレコードがデータベースに含まれている場合の致命的エラー__
