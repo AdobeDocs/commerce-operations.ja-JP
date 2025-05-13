@@ -28,7 +28,7 @@ ht-degree: 0%
 <u> **動け！**</u>
 
 * このアラートがクリアされるまで、スケジュールされている展開を中止します。
-* サイトが応答しない、または完全に応答しなくなった場合は、すぐにサイトをメンテナンスモードにします。 手順については、『Commerce インストールガイド』の [ メンテナンスモードの有効化または無効化 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) を参照してください。 トラブルシューティングのためにサイトに引き続きアクセスできるように、IP を除外 IP アドレスリストに追加してください。 手順については、『Commerce インストールガイド』の [ 除外 IP アドレスのリストの管理 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses) を参照してください。
+* サイトが応答しない、または完全に応答しなくなった場合は、すぐにサイトをメンテナンスモードにします。 手順については、『Commerce インストールガイド』の [ メンテナンスモードの有効化または無効化 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) を参照してください。 トラブルシューティングのためにサイトに引き続きアクセスできるように、IP を除外 IP アドレスリストに追加してください。 手順については、『Commerce インストールガイド』の [ 除外 IP アドレスのリストの管理 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses) を参照してください。
 
 <u> **やめて！**</u>
 
@@ -43,10 +43,10 @@ ht-degree: 0%
 
 1. [!DNL New Relic] では、ディスクの使用率を最も高く確認します。 手順については、[[!DNL New Relic] Infrastructure 監視ホスト ページ：**[!UICONTROL Storage]** タブ ](https://docs.newrelic.com/docs/infrastructure/infrastructure-data/infrastructure-ui-pages/infra-hosts-ui-page/#storage) の [!UICONTROL Storage] のタブを参照してください。
    * ディスクの使用量が徐々に増加する [!DNL New Relic] 合は、次のオプションを試してください。
-      * ディスク領域の割り当てを調整してディスク領域を最適化しています。 Commerce手順については、Cloud ガイドの [ ディスク容量の管理 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) を参照してください。 また、より多くのディスク容量をリクエストする必要が生じる場合があります（Adobe アカウントチームにお問い合わせください）。
-      * MySQL のディスク領域をクリアします。 手順については、[MySQL のディスク容量が少ない ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud) を参照してください。
+      * ディスク領域の割り当てを調整してディスク領域を最適化しています。 Commerce手順については、Cloud ガイドの [ ディスク容量の管理 ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) を参照してください。 また、より多くのディスク容量をリクエストする必要が生じる場合があります（Adobe アカウントチームにお問い合わせください）。
+      * MySQL のディスク領域をクリアします。 手順については、[MySQL のディスク容量が少ない ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud) を参照してください。
       * ディスク使用量が急激に増加している [!DNL New Relic] 合は、ディレクトリ内のファイルが非常に急速に増加する原因となった問題が存在する可能性があります。 次のチェックを実行します。
          1. CLI/ターミナルで次のコマンドを実行して、ディスクの空き領域全体を確認し、問題を特定します。`df -h`
          1. ディスク使用量が予想外に大きく、増加しているディレクトリを特定したら、影響を受けるファイルシステムを確認する必要があります。 次の例は、ファイルディレクトリ `pub/media/` を確認する方法を示しています。 これは、Adobe Commerceがログや大きなメディアファイルの保存に使用するディレクトリです。 ただし、予期しないディスク使用量を示すディレクトリに対して、次のコマンドを実行する必要があります：`du -sch ~/pub/media/*`。
 
-端末からの出力で、ディスク使用量が急激に増加しているこれらのディレクトリの 1 つにファイルが表示されていて、そのファイルの内容が不要であることがわかっている場合は、ファイルを削除することを検討してください。 この操作に不安がある場合は、[Adobe Commerce サポートチケットを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) してください。
+端末からの出力で、ディスク使用量が急激に増加しているこれらのディレクトリの 1 つにファイルが表示されていて、そのファイルの内容が不要であることがわかっている場合は、ファイルを削除することを検討してください。 この操作に不安がある場合は、[Adobe Commerce サポートチケットを送信 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) してください。
