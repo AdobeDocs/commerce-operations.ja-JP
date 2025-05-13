@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5d6d60b99d883f0a83cdcfc1c65c04d2f4ef09b7
+source-git-commit: 290e79e329d5809b0cbb756a53ee935af95c86c5
 workflow-type: tm+mt
 source-wordcount: '27937'
 ht-degree: 0%
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## v2.4.8 の問題を修正しました
 
-Adobe Commerce 2.4.8 コアコードの 582 の問題を修正しました。 このリリースで修正された問題の一部を以下に示します。
+Adobe Commerce 2.4.8 コアコードの 581 の問題を修正しました。 このリリースで修正された問題の一部を以下に示します。
 
 ### API
 
