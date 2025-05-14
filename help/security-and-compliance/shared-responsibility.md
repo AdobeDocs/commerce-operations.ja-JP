@@ -2,7 +2,7 @@
 title: 共有責任セキュリティと運用モデル
 description: Adobe Commerce on cloud infrastructure プロジェクトに関与する各パーティのセキュリティ上の責任について説明します。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 9d0ab29be70c5638296694f90755fedac41b6a77
+source-git-commit: 4cd71d156ef6833185565180b297ba1b7f42a032
 workflow-type: tm+mt
 source-wordcount: '2791'
 ht-degree: 0%
@@ -11,11 +11,13 @@ ht-degree: 0%
 
 # 共有責任セキュリティと運用モデル
 
-クラウドインフラストラクチャー上のAdobe Commerceは、責任分担のセキュリティと運用モデルに基づく、サービスとしてのプラットフォーム（PaaS）製品です。 これらの責務は、Adobe、マーチャント、クラウドサービスプロバイダーおよびコンテンツ配信ネットワーク（CDN）プロバイダーの間で共有されます。 各関係者は、Adobe Commerce アプリケーションと、クラウドインフラストラクチャにデプロイされたマーチャント固有のコードおよび拡張機能を保護および運用する明確な責任を負います。
+クラウドインフラストラクチャー上のAdobe Commerceは、責任分担のセキュリティと運用モデルに基づく、サービスとしてのプラットフォーム（PaaS）製品です。 これらの責務は、Adobe、マーチャント、Cloud Service プロバイダーおよびコンテンツ配信ネットワーク（CDN）プロバイダーの間で共有されます。 各関係者は、Adobe Commerce アプリケーションと、クラウドインフラストラクチャにデプロイされたマーチャント固有のコードおよび拡張機能を保護および運用する明確な責任を負います。
 
 この共有モデルを使用すると、マーチャントは、運用に関する責任とコストを最小限に抑えながら、ビジネス要件を満たす柔軟性とカスタマイズ性に優れた拡張性の高いソリューションを設計および実装できます。
 
-一般に、Adobeは以下を担当します。
+>[!VIDEO](https://video.tv.adobe.com/v/3458392/?learn=on&enablevpops)
+
+一般に、Adobeは次の役割を担います。
 
 - セキュアなコアアプリケーションコードの開発と保守
 - プラットフォームのセキュリティの維持
@@ -37,11 +39,11 @@ Adobeは、クラウドインフラストラクチャ環境におけるAdobe Com
 - クラウドデータストレージや検索機能など、クラウドインフラストラクチャー上のAdobe Commerceでサポートされているアプリケーションに対するサーバーレベルのセキュリティとパッチの適用
 - クラウドインフラストラクチャコードでのコア Adobe Commerceの侵入テストとスキャンの実施
 - パブリッククラウドサービスプロバイダーの IAM （Identity and Access Management）ソリューションおよび権限管理（PCI コンプライアンス要件）に関する半年ごとのレビューと監査の実施
-- Adobeの社員や契約業者を含む、権限を持つユーザーに対する半年ごとのレビューおよび監査の実施（PCI コンプライアンス要件）
+- Adobeの社員や請負業者を含む、権限を持つユーザーの半年ごとのレビューおよび監査を実施（PCI コンプライアンス要件）
 - バックアップ/リストア機能に関する年 1 回のテストとドキュメント化の実施
 - サーバーおよび境界ファイアウォールの構成
 - クラウドインフラストラクチャリポジトリ上のAdobe Commerceの接続と設定
-- Adobeの担当範囲内の領域に関する災害復旧（DR）計画の定義、テスト、導入、文書化
+- Adobeの担当範囲内の領域における災害復旧（DR）計画の定義、テスト、導入、文書化
 - グローバルプラットフォーム web アプリケーションファイアウォール（WAF）ルールの定義
 - オペレーティングシステム（OS）の堅牢化
 - クラウドインフラストラクチャー上のAdobe Commerceを使用した、コンテンツ配信ネットワーク（CDN）およびアプリケーションパフォーマンス管理（APM）ソリューションの統合の実装と管理
@@ -55,16 +57,16 @@ Adobeは、クラウドインフラストラクチャ環境におけるAdobe Com
 - DNS の設定（クラウドインフラストラクチャプラットフォームインフラストラクチャ上のAdobe Commerceのみ）
 - プラットフォームのセキュリティの脆弱性に対するテスト
 
-Adobeは、Adobe Commerce ソリューションに使用されるインフラストラクチャとサービスの PCI 認定を維持しています。  マーチャントは、カスタムコード、システムおよびネットワークプロセス、組織のコンプライアンスに責任を負います。
+Adobeは、Adobe Commerce ソリューションに使用されるインフラストラクチャとサービスについて、PCI 認定を維持しています。  マーチャントは、カスタムコード、システムおよびネットワークプロセス、組織のコンプライアンスに責任を負います。
 
-また、Adobeは、該当するSLAで合意された販売員のインフラストラクチャの可用性を確保します。
+また、Adobeは、該当するSLAで合意された通りにマーチャントのインフラストラクチャの可用性を確保します。
 
 ## 販売者の責任
 
 マーチャントは、クラウドインフラストラクチャソリューション上のAdobe Commerceのカスタマイズされた特定のインスタンスに対して、次のセキュリティのベストプラクティスに従う責任があります。
 
 - 必要なAdobe Commerce on cloud infrastructure 設定ファイルのリポジトリへの追加
-- Adobeがリリースした直後に、カスタム Adobe Commerce on cloud infrastructure ソリューションにセキュリティおよび他のパッチを適用する
+- Adobeによるリリース直後に、カスタム Adobe Commerce on cloud infrastructure ソリューションにセキュリティおよび他のパッチを適用する
 - ベンダーがリリースした直後に、すべてのカスタム拡張機能およびコードにセキュリティおよびその他のパッチを適用する
 - カスタム Varnish VCL ファイルを作成、配置、テストする
 - すべてのカスタム拡張機能とコードを含む、クラウドインフラストラクチャソリューション上でカスタマイズされたAdobe Commerceの設計、テーマ設定、インストール、統合、保護
@@ -86,7 +88,7 @@ Adobeは、Adobe Commerce ソリューションに使用されるインフラス
 - カスタムアプリケーションのテストと QA
 - マーチャントがクラウドインフラストラクチャアプリケーション上のAdobe Commerceに接続するシステムまたはネットワークのセキュリティの維持
 
-## Cloud Serviceプロバイダーの責任
+## Cloud Service プロバイダーの責任
 
 Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチャをクラウドインフラストラクチャ上にホストするために、確立されたクラウドサービスプロバイダーを利用しています。 これらのプロバイダーは、ルーティング、スイッチング、およびファイアウォール システムや侵入検知システム（IDS）を介した境界ネットワーク セキュリティを含む、ネットワークのセキュリティを担当します。 また、クラウドサービスプロバイダーは、Adobe Commerce on cloud infrastructure ソリューションをホスティングするデータセンターの物理的セキュリティと、データセンターの環境セキュリティも担当します。
 
@@ -104,7 +106,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 
 >[!BEGINSHADEBOX]
 
-次の概要の表では、RACI モデルを使用して、Adobe、マーチャント、および Cloud Service プロバイダー間で共有されるセキュリティ責任を示しています。
+次の概要の表では、RACI モデルを使用して、Adobe、マーチャントおよび Cloud Service プロバイダー間で共有されるセキュリティ責任を示します。
 
 **R** – 担当
 **A** — Accountable
@@ -426,7 +428,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
     <td></td>
   </tr>
   <tr>
-    <td>セキュリティ調査（スキャン/監査）によるAdobeの支援</td>
+    <td>Adobeのセキュリティリサーチの支援（スキャン/監査）</td>
     <td>R</td>
     <td>C</td>
     <td></td>
@@ -503,7 +505,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
     <td></td>
   </tr>
   <tr>
-    <td>AdobeDR 計画およびバックアップ/リストアの年間テストと文書化</td>
+    <td>Adobe DR 計画およびバックアップ/リストアの年間テストと文書化</td>
     <td>R</td>
     <td></td>
     <td></td>
@@ -533,7 +535,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 
 >[!BEGINSHADEBOX]
 
-次の概要の表では、クラウドインフラストラクチャ上でAdobe Commerceを開発、デプロイ、メンテナンス、保護する際の、Adobeとマーチャントの運用上の責任を明確にします。
+次の概要の表では、クラウドインフラストラクチャ上でAdobeを開発、デプロイ、メンテナンス、保護する際の、Adobe Commerceとマーチャントの運用上の責任を明確にします。
 
 >[!ENDSHADEBOX]
 
@@ -679,10 +681,10 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 
 |     | Adobe | 商人 |
 | --- | --- | --- |
-| RabbitMQ サービスの利用可能性 | R |   |
-| デフォルトのRabbitMQ設定の指定 | R |   |
-| RabbitMQの継続的な品質とパッチ適用 | R |   |
-| インストールされたAdobe Commerceと互換性のあるRabbitMQのバージョンをインストールするために、サービスリクエストを送信する |   | R |
+| RabbitMQ サービスの提供 | R |   |
+| デフォルトの RabbitMQ 設定 | R |   |
+| RabbitMQ の継続的な品質とパッチ適用 | R |   |
+| インストールされたAdobe Commerceと互換性のある RabbitMQ バージョンをインストールするために、サービスリクエストを送信します。 |   | R |
 
 {style="table-layout:auto"}
 
@@ -709,7 +711,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 | 継続的なインフラストラクチャの最適化 | R |   |
 | 処理に時間のかかるクエリの特定と修正 |     | R |
 | インストールされたAdobe Commerceと互換性のある MariaDB バージョンをインストールするサービス リクエストを送信します。 |     | R |
-| マーチャント固有のデータ保持ポリシーの設定と管理（Adobeのデータ保持ポリシーはマーチャント契約で定義されます） |     | R |
+| マーチャント固有のデータ保持ポリシーの設定と管理（Adobeのデータ保持ポリシーは、マーチャント契約で定義されます） |     | R |
 
 {style="table-layout:auto"}
 
@@ -743,9 +745,9 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 
 |     | Adobe | 商人 |
 | --- | --- | --- |
-| Elasticsearchの可用性 | R |   |
+| Elasticsearchの提供状況 | R |   |
 | デフォルトのElasticsearch設定の指定 | R |   |
-| インストールされたAdobe Commerceと互換性のあるElasticsearchバージョンをインストールするために、サービスリクエストを送信する |  | R |
+| インストールされたAdobe Commerceと互換性のあるElasticsearchのバージョンをインストールするために、サービスリクエストを送信する |  | R |
 
 {style="table-layout:auto"}
 
@@ -783,19 +785,19 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 
 |     | Adobe | 商人 |
 | --- | --- | --- |
-| Adobe Commerce Business Intelligenceサービスの可用性 | R |   |
+| Adobe Commerce Business Intelligence サービスの可用性 | R |   |
 | MBI データ同期プロセス | R |   |
 | MBI 同期の問題の検出 | R |   |
-| Adobe Commerce Cloud Pro、Starter、オンプレミス、非Adobe Commerceへの MBI データ同期の設定 <br> （データしきい値を超えた場合の API、データ品質とフォーマット、マーチャントネットワーク、<br>Adobe Commerce Cloud DB 内外の DB 接続） |     | R |
-| Adobe Commerce Cloud Pro<br> への MBI データ同期の設定（Adobe Commerce Cloud Database Configuration） | R |   |
+| Adobe Commerce Cloud Pro、スターター、オンプレミス、非Adobe Commerceへの MBI データ同期の設定 <br> データしきい値を超えた場合の API、データ品質とフォーマット、マーチャントネットワーク、<br>Adobe Commerce Cloud DB 内外の DB 接続） |     | R |
+| Adobe Commerce Cloud Pro への MBI データ同期の設定 <br> （Adobe Commerce Cloud データベース設定） | R |   |
 
 {style="table-layout:auto"}
 
-#### 製品のRecommendations
+#### 製品レコメンデーション
 
 |     | Adobe | 商人 |
 | --- | --- | --- |
-| 製品Recommendations サービスの提供状況 | R |   |
+| Product Recommendations サービスの可用性 | R |   |
 
 {style="table-layout:auto"}
 
@@ -816,7 +818,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 | --- | --- | --- |
 | SSL 専用証明書 – 有効期限 | R |  |
 | SSL 証明書のプロビジョニング | R |  |
-| EV/固有の SSL 証明書（デフォルトで提供されたものを除く）の購入と管理およびAdobeへの提供 |     | R |
+| EV/固有の SSL 証明書（デフォルトで指定されたものを除く）の購入と管理およびAdobeへの提供 |     | R |
 
 {style="table-layout:auto"}
 
@@ -848,11 +850,11 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 
 |     | Adobe | 商人 |
 | --- | --- | --- |
-| Adobeが所有するVPCを使用した PrivateLink 接続の設定と管理（使用する場合） | R |   |
+| Adobeが所有するVPCでの PrivateLink 接続の設定と管理（使用する場合） | R |   |
 | マーチャントが所有するVPCでの PrivateLink 接続の設定と管理（使用する場合） |     | R |
 | SSH （非プライベートリンク）の可用性 | R |   |
-| Adobe Commerce Cloud サービスエンドポイントに対する PrivateLink インバウンドの設定 | R |   |
-| Adobe Commerce Cloud サービスエンドポイントに対する PrivateLink インバウンドの受け入れ |     | R |
+| Adobe Commerce Cloud Service エンドポイントに対する PrivateLink インバウンドの設定 | R |   |
+| Adobe Commerce Cloud Service エンドポイントへの PrivateLink インバウンドの受け入れ |     | R |
 | マーチャントのVPC サービスエンドポイントに対する PrivateLink インバウンドの設定 |     | R |
 | マーチャントのVPC サービスエンドポイントに対する PrivateLink インバウンドの受け入れ | R |   |
 | PrivateLink 統合の設定（アカウントへのエンドポイント） |     | R |
@@ -896,7 +898,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 
 |     | Adobe | 商人 |
 | --- | --- | --- |
-| CPU リソース、データセンター、ディスク容量の可用性 | R |   |
+| CPUのリソース、データセンター、ディスク容量の可用性 | R |   |
 | サージ容量の可用性と実行、または緊急アップサイジング | R |   |
 | サージ容量を要求しています |     | R |
 | 制限に照らした vCPU 使用率の監視 | R |   |
