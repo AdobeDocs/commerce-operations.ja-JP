@@ -40,7 +40,7 @@ salesrule_rule                           Sales Rule
 
 >[!NOTE]
 >
-> Live Search、カタログサービス、Product Recommendations を使用するAdobe Commerce マーチャントには、[SaaS ベースの価格インデックス作成 ](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing) を使用するオプションがあります。
+> Live Search、カタログサービス、Product Recommendations を使用するAdobe Commerce マーチャントには、[SaaS ベースの価格インデックス作成 ](https://experienceleague.adobe.com/ja/docs/commerce/price-indexer/price-indexing) を使用するオプションがあります。
 
 ## インデクサーのステータスの表示
 
@@ -232,11 +232,11 @@ Catalog Search:                                    Update on Save
 >
 >[!DNL Customer Grid] を `schedule` ではなく `realtime` に設定してください。 [!DNL Customer Grid] のインデックスは、[!UICONTROL Update on Save] オプションを使用してのみ再作成できます。 このインデックスは、`Update by Schedule` オプションをサポートしていません。 次のコマンドラインを使用して、保存時にこのインデクサーを更新するように設定します：`php bin/magento indexer:set-mode realtime customer_grid`
 >
->_実装プレイブック_ の [ インデクサー設定のベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) を参照してください。
+>_実装プレイブック_ の [ インデクサー設定のベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=ja) を参照してください。
 
 >[!INFO]
 >
->インデクサーモードを切り替える前に、web サイトを [ メンテナンス ](../../installation/tutorials/maintenance-mode.md) モードと [cron ジョブを無効 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) に設定します。 これにより、データベースがロックされるのを防ぐことができます。
+>インデクサーモードを切り替える前に、web サイトを [ メンテナンス ](../../installation/tutorials/maintenance-mode.md) モードと [cron ジョブを無効 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=ja#disable-cron-jobs) に設定します。 これにより、データベースがロックされるのを防ぐことができます。
 
 インデクサー設定を指定するには：
 
