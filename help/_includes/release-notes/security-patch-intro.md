@@ -1,7 +1,7 @@
 ---
-source-git-commit: b63fa9a8b2b59f6e8dfd7003e75c66caf99d5e81
+source-git-commit: 779571c234e6fc620321d91cf8fd5f9ed28b869e
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,4 @@ ht-degree: 0%
 セキュリティパッチリリースについて詳しくは、以下を参照してください。
 
 * [Adobe Commerce セキュリティパッチリリースの概要](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
-* セキュリティパッチリリースのダウンロードと適用の手順については、[ アップグレードガイド ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) を参照してください
+* セキュリティパッチリリースのダウンロードと適用の手順については、[2}Adobe Commerce ナレッジベースのセキュリティパッチの取得と適用方法 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) を参照してください _。_

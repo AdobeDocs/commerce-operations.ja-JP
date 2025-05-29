@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9514f6655bb6d99205c3799a164b6db62887362c
+source-git-commit: 0eb7528ebcc1515defd672830b8f00e460819aa1
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,4 @@ ht-degree: 0%
 
 各セキュリティパッチリリースは、以前の完全なパッチリリースに基づいています。 以前のパッチリリースからの品質とセキュリティの修正、および以前の完全なパッチリリースとセキュリティパッチリリースの間に作成されたセキュリティの修正が含まれています。
 
-セキュリティパッチのダウンロードと適用については、『 [ アップグレードガイド _の ](../../installation/composer.md#example---security-patch)Peform とアップグレード_ を参照してください。
+セキュリティパッチのダウンロードおよび適用方法については、[2}Adobe Commerce ナレッジベースの ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) セキュリティパッチの取得および適用方法 _を参照してください。_
