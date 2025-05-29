@@ -18,4 +18,4 @@ ht-degree: 0%
 セキュリティパッチリリースについて詳しくは、以下を参照してください。
 
 * [Adobe Commerce セキュリティパッチリリースの概要](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
-* セキュリティパッチリリースのダウンロードと適用の手順については、[2&rbrace;Adobe Commerce ナレッジベースのセキュリティパッチの取得と適用方法 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) を参照してください _。_
+* セキュリティパッチリリースのダウンロードと適用の手順については、[2&rbrace;Adobe Commerce ナレッジベースのセキュリティパッチの取得と適用方法 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) を参照してください _。_
