@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できる様々なツール、その使用方法、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 5ac7d661cacd4bd7ce8c1f336a964854e9ff3cf5
+source-git-commit: 9ee91aac7b4a108150bc8084814aaeeadc6c9809
 workflow-type: tm+mt
-source-wordcount: '7595'
+source-wordcount: '7613'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Adobe Commerceの管理アラート：CPU警告アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 品質向上パッチツール {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]：高品質のパッチを適用するためのセルフサービスツール](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]：パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}
+   - [[!DNL Quality Patches Tool]：パッチの検索 ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [使用状況](quality-patches-tool/usage.md)
    - [リリースノート](quality-patches-tool/release-notes.md)
    - 品質向上パッチツールで使用可能なパッチ {#patches-available-in-qpt}
@@ -190,7 +190,7 @@ ht-degree: 0%
          - [MDVA-43824：注文のキャンセル操作が失敗し、「アイテムがキャンセルされていません」というエラーが表示される](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-43824-order-cancellation-action-failed-with-error.md)
          - [MDVA-43862:GraphQLの UpdateCartItems ミューテーションエラーにより、顧客が買い物かご項目を更新できない](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-43862-unable-to-update-cart-items-because-of-graphql-updatecartitems-mutation-error.md)
          - [MDVA-43935：製品ページにアップセル製品が 2 回表示される](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-43935-upsell-product-shown-twice-on-product-page.md)
-         - [MDVA-44188: &grave;&grave;を含む ID にメールが送信されない。-&quot;](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-44188-emails-are-not-sent.md)
+         - [MDVA-44188: ``を含む ID にメールが送信されない。-&quot;](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-44188-emails-are-not-sent.md)
       - v1.1.14 {#v1-1-14}
          - [概要：品質向上パッチツール（QPT） v1.1.14](quality-patches-tool/patches-available-in-qpt/v1-1-14/overview.md)
          - [MDVA-43102：販売可能数量が正しく更新されていません](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-43102-salable-quantity-not-updated-correctly.md)
@@ -793,6 +793,7 @@ ht-degree: 0%
          - [ACSD-64753:「Pickup in Store」で事前に選択されたストアが、配送先住所が変更されても更新されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/pre-selected-store-in-pickup-in-store-doesnt-update-when-shipping-address-changes.md)
       - v1.1.64 {#v1-1-64}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
+         - [ACSD-65787：テーブルデータ内の未定義の配列キー「列」が原因で、スキーマの作成または更新中に SchemaBuilder がクラッシュする](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65787-schemabuilder-crashes-during-schema-creation-updates-due-to-undefined-array-key-column-in-table-data.md)
          - [ACSD-65223: B2B 発注書に対して手動で選択した条件と契約を実行すると、エラーが発生します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65223-manually-selected-terms-and-agreements-for-b2b-purchase-orders-result-in-an-error.md)
          - [ACP2E-3841：副選択条件を使用し、送料無料が有効になっている場合、複数出荷製品の買い物かご価格ルールが正しく適用されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled.md)
    - [Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
@@ -842,6 +843,6 @@ ht-degree: 0%
       - [手動での移行が必要なデータ](data-migration-tool/migrate-data/manual.md)
       - [データ移行後の手順](data-migration-tool/migrate-data/post-migration.md)
    - リソース {#resources}
-      - [ トラブルシューティング ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=ja)
+      - [ トラブルシューティング ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [ 変更ログ ](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
+- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
