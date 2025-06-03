@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>1.1.65 品質パッチツール（QPT）パッケージリリース用に公開 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html"> リリースノート </a> です。</p>
+      <td><p>1.1.65 品質パッチツール（QPT）パッケージリリース用に公開 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=ja"> リリースノート </a> です。</p>
 </td>
       <td>
         メジャーアップデート、qpt
@@ -45,7 +45,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled">QPT 1.1.64 リリースの ACP2E-3841 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled">QPT 1.1.64 リリースの ACP2E-3841 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -67,7 +67,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>2025 年 4 月のセキュリティパッチの <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements"> システム要件 </a> 表に RabbitMQ 3.13 を追加しました。</p>
+      <td><p>2025 年 4 月のセキュリティパッチの <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements"> システム要件 </a> 表に RabbitMQ 3.13 を追加しました。</p>
 </td>
       <td>
         技術
@@ -75,7 +75,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cdf687ce0f1201e57b66d2b9232ed8820a116d6f">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule"> リリーススケジュール </a> に 2.4.9 アルファパッチを追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/schedule"> リリーススケジュール </a> に 2.4.9 アルファパッチを追加しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -97,7 +97,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>1.1.64 品質パッチツール（QPT）パッケージリリース用に公開 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html"> リリースノート </a> です。</p>
+      <td><p>1.1.64 品質パッチツール（QPT）パッケージリリース用に公開 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=ja"> リリースノート </a> です。</p>
 </td>
       <td>
         メジャーアップデート、qpt
@@ -119,7 +119,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64732-third-party-controllers-are-not-cached-correctly">QPT 1.1.62 リリースの ACSD-64732 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64732-third-party-controllers-are-not-cached-correctly">QPT 1.1.62 リリースの ACSD-64732 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -127,7 +127,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7d2d6c5fb9b72dd7fcf6aed6c87568903219b5d6">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-65164-the-error-message-occurs-when-reordering">QPT 1.1.62 リリースの ACSD-65164 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-65164-the-error-message-occurs-when-reordering">QPT 1.1.62 リリースの ACSD-65164 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -149,7 +149,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles">QPT 1.1.63 リリースの ACSD-64627 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles">QPT 1.1.63 リリースの ACSD-64627 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -171,7 +171,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany">QPT 1.1.63 リリースの ACSD-65195 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany">QPT 1.1.63 リリースの ACSD-65195 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -179,7 +179,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a6a8ad44c339b95b4afcedbd33b84c1d8b3411cc">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false">ACSD-64532 パッチ </a> では、false に設定された ENV 変数がブール値の FALSE ではなく文字列の false として扱われる問題が修正されています。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false">ACSD-64532 パッチ </a> では、false に設定された ENV 変数がブール値の FALSE ではなく文字列の false として扱われる問題が修正されています。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -201,7 +201,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview">QPT 1.1.63 リリースで使用可能なパッチによって修正された問題の説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview">QPT 1.1.63 リリースで使用可能なパッチによって修正された問題の説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -209,7 +209,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/73e94802a4fbf4dfcbfb50be1a8a23d831368168">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63406-expired-persistent-quotes-not-cleared">QPT 1.1.62 リリースの ACSD-63406 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63406-expired-persistent-quotes-not-cleared">QPT 1.1.62 リリースの ACSD-63406 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -217,7 +217,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9661351d137ebd704c884f2dc1459eee26a3fdc4">コミット</a></td>
     </tr>
     <tr>
-      <td><p>ACSD-64592 パッチの <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64592-non-default-store-gift-card-claim-links-redirect-to-default-website"> 影響を受ける製品とバージョン </a> の節を更新しました。</p>
+      <td><p>ACSD-64592 パッチの <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64592-non-default-store-gift-card-claim-links-redirect-to-default-website"> 影響を受ける製品とバージョン </a> の節を更新しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -239,7 +239,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>2025 年 6 月のパッチ（2.4.4-p13 を除く）で、サポート対象の <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements"> システム要件 </a> のリストに RabbitMQ 4.1 を追加しました。<br />- 2.4.8<br />- 2.4.7-p5<br />- 2.4.6-p10<br />- 2.4.5-p12</p>
+      <td><p>2025 年 6 月のパッチ（2.4.4-p13 を除く）で、サポート対象の <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements"> システム要件 </a> のリストに RabbitMQ 4.1 を追加しました。<br />- 2.4.8<br />- 2.4.7-p5<br />- 2.4.6-p10<br />- 2.4.5-p12</p>
 </td>
       <td>
         技術
@@ -261,7 +261,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64523-rest-endpoint-fails-to-validate-mandatory-fields">QPT 1.1.62 リリースの ACSD-64523 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64523-rest-endpoint-fails-to-validate-mandatory-fields">QPT 1.1.62 リリースの ACSD-64523 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -269,7 +269,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/55dd9097d014d37d519ff0ce00fee03c82fbc0ac">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63520-image-upload-configuration-does-not-adhere-to-maximum-upload-size-limits">QPT 1.1.62 リリースの ACSD-64684 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63520-image-upload-configuration-does-not-adhere-to-maximum-upload-size-limits">QPT 1.1.62 リリースの ACSD-64684 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -291,7 +291,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview">QPT 1.1.62 リリースで使用可能なパッチによって修正された問題の説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview">QPT 1.1.62 リリースで使用可能なパッチによって修正された問題の説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -313,7 +313,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a> および <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a> 2.4.8.<br /><em> の修正された問題に対するリリースノートの形式を改善しました <a href="https://github.com/hostep">@hostep</a>.</em></p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a> および <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a> 2.4.8.<br /><em> の修正された問題に対するリリースノートの形式を改善しました <a href="https://github.com/hostep">@hostep</a>.</em></p>
 </td>
       <td>
         技術
@@ -335,7 +335,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>1.1.63 品質パッチツール（QPT）パッケージリリース用に公開 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html"> リリースノート </a> です。</p>
+      <td><p>1.1.63 品質パッチツール（QPT）パッケージリリース用に公開 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=ja"> リリースノート </a> です。</p>
 </td>
       <td>
         メジャーアップデート、qpt
@@ -343,7 +343,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f112a65859e1337183ab49aff9b6a812f9caa569">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce&rbrace; および <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a> のリリースノートのテキストレンダリングを修正しまし </a>。<br /><em><a href="https://github.com/hostep">@hostep</a>.</em> にクレジット</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce&rbrace; および <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a> のリリースノートのテキストレンダリングを修正しまし </a>。<br /><em><a href="https://github.com/hostep">@hostep</a>.</em> にクレジット</p>
 </td>
       <td>
         技術
@@ -365,7 +365,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>Braintreeに関する既知の問題を <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5 リリースノート </a> に追加しました。</p>
+      <td><p>Braintreeに関する既知の問題を <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5 リリースノート </a> に追加しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -387,7 +387,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>ACSD-54966 パッチの <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54966-fix-for-limited-use-coupon-code-after-failed-orders"> 影響を受ける製品とバージョン」の節を更新しました </a></p>
+      <td><p>ACSD-54966 パッチの <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54966-fix-for-limited-use-coupon-code-after-failed-orders"> 影響を受ける製品とバージョン」の節を更新しました </a></p>
 </td>
       <td>
         Qpt
@@ -395,7 +395,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aa47a83f4ec38aa6ff96008cbab2733602465435">コミット</a></td>
     </tr>
     <tr>
-      <td><p>ACSD-62979 パッチの <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error"> 影響を受ける製品とバージョン」の節を更新しました </a></p>
+      <td><p>ACSD-62979 パッチの <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error"> 影響を受ける製品とバージョン」の節を更新しました </a></p>
 </td>
       <td>
         Qpt
@@ -417,7 +417,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy"> ライフサイクルポリシー </a> に 2.4.8 を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/lifecycle-policy"> ライフサイクルポリシー </a> に 2.4.8 を追加しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -439,7 +439,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error">QPT 1.1.61 リリースの ACSD-64431 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error">QPT 1.1.61 リリースの ACSD-64431 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -461,7 +461,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements"> システム要件 </a> テーブル：<br />- v2.4.8 のElasticsearchをサポート対象外として削除 <br />- サポート終了に伴いバージョン 2.4.2 と 2.4.3 を削除</p>
+      <td><p>更新 <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements"> システム要件 </a> テーブル：<br />- v2.4.8 のElasticsearchをサポート対象外として削除 <br />- サポート終了に伴いバージョン 2.4.2 と 2.4.3 を削除</p>
 </td>
       <td>
         技術
@@ -469,7 +469,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6557cc45c1250ca17ba53acdd2a9c4748403df8d">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64209-excludes-ordered-quotes-in-cron-scheduler-to-prevent-email-triggers">QPT 1.1.61 リリースの ACSD-64209 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64209-excludes-ordered-quotes-in-cron-scheduler-to-prevent-email-triggers">QPT 1.1.61 リリースの ACSD-64209 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -491,7 +491,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code">QPT 1.1.60 リリースの ACSD-64137 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code">QPT 1.1.60 リリースの ACSD-64137 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -499,7 +499,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e6fb66170fd0a0487a049508c7ac3fa96fa3633a">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand">QPT 1.1.61 リリースの ACSD-64684 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand">QPT 1.1.61 リリースの ACSD-64684 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -507,7 +507,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd0a4d5421c4214dea0c0d5be5644c22c662ea11">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list">QPT 1.1.61 リリースの ACSD-63883 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list">QPT 1.1.61 リリースの ACSD-63883 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -529,7 +529,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/ascd-64149-customer-segment-with-a-date-range-condition">QPT 1.1.60 リリースの ACSD-64149 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/ascd-64149-customer-segment-with-a-date-range-condition">QPT 1.1.60 リリースの ACSD-64149 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -537,7 +537,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/84f12be207347cd77c9577e976780c3f32a3e6ed">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description">QPT 1.1.61 リリースの ACSD-64467 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description">QPT 1.1.61 リリースの ACSD-64467 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -545,7 +545,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d58695ea2c82c6e1c5f30411ef9fc343e983b892">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer">QPT 1.1.61 リリースの ACP2E-3705 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer">QPT 1.1.61 リリースの ACP2E-3705 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -553,7 +553,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aaed1bc7241dc485894fcb63a99c08d26cb99a15">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code">QPT 1.1.60 リリースの ACSD-64137 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code">QPT 1.1.60 リリースの ACSD-64137 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -575,7 +575,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion">QPT 1.1.61 リリースの ACSD-64546 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion">QPT 1.1.61 リリースの ACSD-64546 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -583,7 +583,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c0214c378a5a985e5f91aed6407567f770ced6fc">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time">QPT 1.1.61 リリースの ACSD-63974 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time">QPT 1.1.61 リリースの ACSD-63974 パッチによって修正された問題の詳細な説明 </a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -591,7 +591,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6661088b3f6cfad2c5afca3e8ac3d76c07ae3237">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions"> リリースバージョン </a> を更新しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/versions"> リリースバージョン </a> を更新しました。</p>
 </td>
       <td>
         技術
@@ -599,7 +599,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6420c55a08a43fc331ebebc073565df977827d34">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Packages</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises">bin/magento</a>、および <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions"> 必要な PHP 拡張機能 </a> を更新しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/packages/adobe-commerce">Packages</a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises">bin/magento</a>、および <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions"> 必要な PHP 拡張機能 </a> を更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -607,7 +607,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cba45d45b7b7051551e6bec981b66989091cff54">コミット</a></td>
     </tr>
     <tr>
-      <td><p>新しいリリースに <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements"> 必要システム構成 </a> を追加しました。</p>
+      <td><p>新しいリリースに <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements"> 必要システム構成 </a> を追加しました。</p>
 </td>
       <td>
         技術
@@ -615,7 +615,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/29811930541b3d91f0560a64190d790cdb742a70">コミット</a></td>
     </tr>
     <tr>
-      <td><p>2025 年 4 月の品質およびセキュリティパッチのリリースノートを公開しました：<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">2.4.8</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p5</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p10</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p12</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p13</a></p>
+      <td><p>2025 年 4 月の品質およびセキュリティパッチのリリースノートを公開しました：<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">2.4.8</a><br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p5</a><br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p10</a><br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p12</a><br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p13</a></p>
 </td>
       <td>
         メジャーアップデート
@@ -623,7 +623,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9bfad60e8a1ebe414d5f2826eecb0a4e5e886614">コミット</a></td>
     </tr>
     <tr>
-      <td><p>以前のバージョンから MySQL 8.4 にアップグレードするための詳細な手順を <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites#mysql"> ドキュメント </a> に追加しました。</p>
+      <td><p>以前のバージョンから MySQL 8.4 にアップグレードするための詳細な手順を <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/prepare/prerequisites#mysql"> ドキュメント </a> に追加しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -645,7 +645,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">UCT CLI リファレンス </a> を更新しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/uct">UCT CLI リファレンス </a> を更新しました。</p>
 </td>
       <td>
         技術
