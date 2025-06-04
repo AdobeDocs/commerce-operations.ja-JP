@@ -27,7 +27,7 @@ ACSD-63139 パッチは、製品属性に何千ものオプション値が含ま
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -46,7 +46,7 @@ ACSD-63139 パッチは、製品属性に何千ものオプション値が含ま
    bin/magento cron:install
    ```
 
-1. [[!DNL RabbitMQ]  前提条件 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/rabbitmq) の手順に従って、[!DNL RabbitMQ] を設定します。
+1. [[!DNL RabbitMQ]  前提条件 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/rabbitmq) の手順に従って、[!DNL RabbitMQ] を設定します。
 1. `php.ini` ファイルを開き、メモリ制限を 4G に設定し、PHP サービスを再起動します。
 1. 管理パネルで、**[!UICONTROL System]**/*[!UICONTROL Data Transfer]*/**[!UICONTROL Export]** に移動します。
 1. 「*[!UICONTROL Export Settings]*」セクションで、「**[!UICONTROL Entity Type]**」を *製品* に設定し、下までスクロールして「**[!UICONTROL Continue]**」をクリックします。
@@ -73,7 +73,7 @@ Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocat
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
