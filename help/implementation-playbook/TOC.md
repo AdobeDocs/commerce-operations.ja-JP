@@ -2,10 +2,10 @@
 user-guide-title: 実装プレイブック
 user-guide-description: 成功する Adobe Commerce サイトの計画と実装の戦略について学習します。
 mini-toc-levels: 3
-source-git-commit: 3f6bf86091885ffa0c557b0c43ce3ff024076a45
+source-git-commit: 8d2dd409741717b534e4aef5e252a614ccb81f4a
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 15%
+source-wordcount: '163'
+ht-degree: 14%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 15%
 # 実装プレイブック {#implementation-playbook}
 
 - [概要](overview.md)
-- のアーキテクチャと統合 {#architecture}
+- アーキテクチャと統合 {#architecture}
    - [エンタープライズ版リファレンス](architecture/enterprise-blueprint.md)
-- 保守サポート {#maintenance}
+- メンテナンスとサポート {#maintenance}
    - [概要](maintenance/overview.md)
-   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
+   - [AdobeManaged Services](maintenance/adobe-managed-services.md)
 - ベストプラクティス {#best-practices}
    - [概要](best-practices/phases.md)
    - 計画 {#planning}
@@ -28,6 +28,7 @@ ht-degree: 15%
       - [クラウドデプロイメント用のデータベース設定&#x200B;](best-practices/planning/database-on-cloud.md)
       - [MySQL 設定](best-practices/planning/mysql-configuration.md)
       - [Redis サービス設定](best-practices/planning/redis-service-configuration.md)
+      - [Valkey サービスの設定](best-practices/planning/valkey-service-configuration.md)
       - [OPcache のメモリー・サイズ](best-practices/planning/opcache-memory-size.md)
       - [Realpath のキャッシュ・サイズ](best-practices/planning/realpath-cache-size.md)
       - [拡張機能](best-practices/planning/extensions.md)
@@ -49,7 +50,7 @@ ht-degree: 15%
       - [静的コンテンツデプロイメント](best-practices/development/static-content-deployment.md)
       - [データベーステーブルの変更](best-practices/development/modifying-core-and-third-party-tables.md)
       - [ コアおよびサードパーティコードの変更 ](best-practices/development/modifying-core-and-third-party-code.md)
-   - Launch {#launch}
+   - ローンチ {#launch}
       - [概要](best-practices/launch/overview.md)
       - [Web クローラーの設定](best-practices/launch/robots-txt.md)
       - [サイトとインフラストラクチャを保護](best-practices/launch/security-best-practices.md)
@@ -68,4 +69,4 @@ ht-degree: 15%
       - [アップグレードチェックリスト](best-practices/maintenance/upgrade-checklist.md)
       - [MariaDB のアップグレードの前提条件](best-practices/maintenance/mariadb-upgrade.md)
 - [用語集](glossary.md)
-- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
+- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
