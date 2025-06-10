@@ -2,10 +2,10 @@
 title: ソフトウェアのライフサイクルポリシー
 description: Adobe Commerce リリースのソフトウェアサポート終了の主な日付について説明します。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 6ad4d8b3843c029d8f2d3919874d4614d9928f69
+source-git-commit: 5a45f2b0ad2485014abd3b807a5797f9fc82388b
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 4%
+source-wordcount: '612'
+ht-degree: 3%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 Adobe Commerce 2.4.4 以降のリリースの場合：
 
-- Adobe Commerceのライフサイクルポリシーを合理化し、お客様のミッションクリティカルなニーズをサポートするために、Adobeでは、Adobe Commerce 2.4.4 以降の一般提供（GA）日から 3 年にサポートウィンドウを拡大しました。 Adobeは、2.4.4 以降のリリースに対して、3 年間のサポート期間中、品質に関する修正を提供します。 お客様は、[Adobe Commerce サポートに問い合わせるか ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) バージョンが品質サポートの対象である場合はセルフサービス [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) を通じて、品質修正プログラムにアクセスできます。 次の表に、Adobe Commerce リリースラインのソフトウェアサポート終了日を示します。
+- Adobe Commerceのライフサイクルポリシーを合理化し、お客様のミッションクリティカルなニーズをサポートするために、Adobeでは、Adobe Commerce 2.4.4 以降の一般提供（GA）日から 3 年にサポートウィンドウを拡大しました。 Adobeは、2.4.4 以降のリリースに対して、3 年間のサポート期間中、品質に関する修正を提供します。 お客様は、[Adobe Commerce サポートに問い合わせるか ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) バージョンが品質サポートの対象である場合はセルフサービス [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) を通じて、品質修正プログラムにアクセスできます。 次の表に、Adobe Commerce リリースラインのソフトウェアサポート終了日を示します。
 
 - Adobeでは、3 年間のサポート期間を対象に、セキュリティパッチリリースによりセキュリティ修正を提供しています。
 
@@ -37,12 +37,12 @@ Adobeでは、できるだけ早くアップグレードすることをお勧め
 ## ソフトウェアサポートの終了
 
 | リリース | 一般公開 | 標準サポートの終了 <sup>1</sup> | 拡張サポートの終了 | 依存する PHP バージョン | 依存する MariaDB バージョン |
-|----------------------|----------------------|------------------------------------|-------------------------|-----------------------|------------------------------|
+|----------------------|----------------------|------------------------------------|-------------------------|-----------------------|---------------------------|
 | Adobe Commerce 2.4.8 | 2025 年 4 月 8 日（Pt） | 2028 年 4 月 11 日（Pt） | 該当なし | 8.3 および 8.4 | 11.4 |
-| Adobe Commerce 2.4.7 | 2024 年 4 月 9 日（Pt） | 2027 年 4 月 9 日（Pt） | 該当なし | 8.2 および 8.3 | 10.6 |
-| Adobe Commerce 2.4.6 | 2023 年 3 月 14 日（Pt） | 2026 年 8 月 11 日 <sup>2</sup> | 該当なし | 8.1 および 8.2 | 10.6 |
-| Adobe Commerce 2.4.5 | 2022 年 8 月 9 日（Pt） | 2025 年 8 月 9 日（Pt） | 2026 年 8 月 11 日（Pt） | 8.1 | 10.6<sup>3</sup> |
-| Adobe Commerce 2.4.4 | 2022 年 4 月 12 日（Pt） | 2025 年 4 月 12 日（Pt） | 2026 年 4 月 14 日（Pt） | 8.1 | 10.6<sup>4</sup> |
+| Adobe Commerce 2.4.7 | 2024 年 4 月 9 日（Pt） | 2027 年 4 月 9 日（Pt） | 該当なし | 8.2 および 8.3 | 10.11<sup>3</sup> |
+| Adobe Commerce 2.4.6 | 2023 年 3 月 14 日（Pt） | 2026 年 8 月 11 日 <sup>2</sup> | 該当なし | 8.1 および 8.2 | 10.11<sup>4</sup> |
+| Adobe Commerce 2.4.5 | 2022 年 8 月 9 日（Pt） | 2025 年 8 月 9 日（Pt） | 2026 年 8 月 11 日（Pt） | 8.1 | 10.6<sup>5</sup> |
+| Adobe Commerce 2.4.4 | 2022 年 4 月 12 日（Pt） | 2025 年 4 月 12 日（Pt） | 2026 年 4 月 14 日（Pt） | 8.1 | 10.6<sup>6</sup> |
 
 {style="table-layout:auto"}
 
@@ -50,8 +50,10 @@ Adobeでは、できるだけ早くアップグレードすることをお勧め
 >
 >- <sup>1</sup> ソフトウェアのサポート終了には、品質修正の終了とセキュリティ修正の終了の両方が含まれます。
 >- <sup>2</sup> 2.4.5 の拡張サポートの終了に合わせて更新されました。
->- <sup>3</sup> 2.4.5-p11 セキュリティパッチ以降。
->- <sup>4</sup> 2.4.4-p12 セキュリティパッチ以降。
+>- <sup>3</sup> 2.4.7-p6 セキュリティパッチ以降。
+>- <sup>4</sup> 2.4.6-p11 セキュリティパッチ以降。
+>- <sup>5</sup> 2.4.5-p11 セキュリティパッチ以降。
+>- <sup>6</sup> 2.4.4-p12 セキュリティパッチ以降。
 >- [ ソフトウェア ライフサイクル ポリシー ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) を参照してください。
 
 <table style="table-layout:auto">

@@ -1,9 +1,9 @@
 ---
 title: Adobe Commerce 2.4.8 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.7 のセキュリティパッチリリースに含まれている、セキュリティバグ修正、セキュリティ機能強化、その他のセキュリティ関連アップデートについて説明します。
-source-git-commit: cbf41054a2a8ffefa38049e1bf6e4a2f09e06ce1
+source-git-commit: e996ef274920b1828331e2bb1eadacbb2cde59a6
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.8-p1 セキュリティリリースは、2.4.8 の以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。
 
-セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB25-50](https://helpx.adobe.com/jp/security/products/magento/apsb25-50.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html) を参照してください。
 
 {{b2b-patches}}
 
@@ -41,6 +41,6 @@ Adobe Commerce 2.4.8-p1 セキュリティリリースは、2.4.8 の以前の�
 
 >[!BEGINSHADEBOX]
 
-CVE-2025-47110 の修正は、独立したパッチとしても使用できます。 詳しくは、[ ナレッジベースの記事 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) を参照してください。
+CVE-2025-47110 および VULN-31547 の修正も、独立したパッチとして使用できます。 詳しくは、[ ナレッジベースの記事 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) を参照してください。
 
 >[!ENDSHADEBOX]
