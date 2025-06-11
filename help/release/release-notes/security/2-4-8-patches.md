@@ -1,7 +1,7 @@
 ---
 title: Adobe Commerce 2.4.8 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.7 のセキュリティパッチリリースに含まれている、セキュリティバグ修正、セキュリティ機能強化、その他のセキュリティ関連アップデートについて説明します。
-source-git-commit: e996ef274920b1828331e2bb1eadacbb2cde59a6
+source-git-commit: 33debd1c742698e8242faaef1ff83bb2a9e5ee58
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.8-p1 セキュリティリリースは、2.4.8 の以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。
 
-セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB25-50](https://helpx.adobe.com/jp/security/products/magento/apsb25-50.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html) を参照してください。
 
 {{b2b-patches}}
 
@@ -33,7 +33,7 @@ Adobe Commerce 2.4.8-p1 セキュリティリリースは、2.4.8 の以前の�
 
 * **Cookie 制限互換性** - フレームワーク内の `MAX_NUM_COOKIES` 定数に関する後方互換性のない変更を解決します。 この更新により、期待される動作が復元され、cookie の制限とやり取りする拡張機能やカスタマイズの互換性が確保されます。<!-- AC-14475 -->
 
-* **CVE-2024-34104** の修正 – 不適切な認証の脆弱性を解決 <!-- AC-13917 -->
+* **非同期操作** – 以前の顧客の注文を上書きするための制限付きの非同期操作。<!-- AC-13917 -->
 
 * **CVE-2025-47110** の修正 – メールテンプレートの脆弱性を解決 <!-- AC-14695 -->
 
