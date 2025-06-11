@@ -3,9 +3,9 @@ title: AdobeManaged Services
 description: Adobe Managed ServicesがAdobe Commerceの実装のサポートと管理にどう役立つかを説明します。
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: c93dd37d6e196a09c9e7f4b376e421ca5886c7e0
+source-git-commit: e5a50707463bb7b36b4285889b10353faf9ba09f
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,6 @@ Managed Servicesの主なメリットの詳細な比較については、次の�
 | 運用開始プロセスの調整 | | | |
 | 専任のエスカレーション管理 | | | |
 | アプリケーションの監視と支援 | | | |
-
-これを Excel または別の形式に書き出したい場合は、お知らせください。
 
 ## 役割と責務
 
