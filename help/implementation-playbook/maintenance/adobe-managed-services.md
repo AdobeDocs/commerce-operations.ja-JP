@@ -1,29 +1,29 @@
 ---
-title: Adobe Managed Services
-description: Adobe Commerceの実装をサポートおよび維持する上でAdobeManaged Servicesがどのように役立つかを説明します。
+title: AdobeManaged Services
+description: Adobe Managed ServicesがAdobe Commerceの実装のサポートと管理にどう役立つかを説明します。
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: c93dd37d6e196a09c9e7f4b376e421ca5886c7e0
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
 
 
-# Adobe Managed Services
+# AdobeManaged Services
 
 Adobe Commerceは、堅牢な標準機能、広範なカスタマイズ機能オプション、サードパーティとの統合など、e コマース機能を提供するためのプラットフォームです。
 
-AdobeManaged Servicesは、クラウドインフラストラクチャー上のAdobe Commerce Pro プランに対して、ホスト型およびマネージドアプリケーションおよびインフラストラクチャを提供します。
+Adobe Managed Servicesは、Adobe Commerce on cloud infrastructure Pro プラン向けに、ホストされ管理されるアプリケーションおよびインフラストラクチャを提供します。
 
 ## 利点
 
-![AdobeManaged Servicesのメリットを示すインフォグラフィック ](../../assets/playbooks/managed-services-benefits.png)
+![Adobe Managed Servicesのメリットを示すインフォグラフィック ](../../assets/playbooks/managed-services-benefits.png)
 
 ### 実装オプションの比較
 
-AdobeManaged Servicesは、オンプレミスおよび非管理のクラウド実装に比べて、次のような主なメリットがあります。
+Adobe Managed Servicesには、オンプレミスおよび非管理のクラウド実装に比べて、次のような主なメリットがあります。
 
 - **SLT （Enhanced Service Level Target）** – 標準のAdobe Commerceのサポートよりも迅速な応答時間。
 - **SLA （Enhanced Service Level Agreement）**:99.9% のアプリケーションレベル。クラウドインフラストラクチャを利用するお客様の通常のAdobe Commerceは、99.99% のインフラストラクチャレベルを上回ります。
@@ -35,13 +35,30 @@ AdobeManaged Servicesは、オンプレミスおよび非管理のクラウド�
    - 計画、実行、監視を通じてイベントをサポート
    - クラウドのサポートと専門知識（プロアクティブな最適化、レポート、ベストプラクティス）
 
-Managed Servicesの主なメリットをより詳細に比較するには、次のインフォグラフィックを確認してください。
+Managed Servicesの主なメリットの詳細な比較については、次の表を確認してください。
 
-![Managed Servicesの実装と他のAdobe CommerceAdobeオプションの比較を示すインフォグラフィック ](../../assets/playbooks/managed-services-compare.png)
+| 機能 | Adobe Commerce オンプレミス | クラウド上のAdobe Commerce | Managed ServicesのAdobe Commerce |
+|---------|---------------------------|-------------------------|-----------------------------------|
+| Adobe Enterprise Software | ✓ | ✓ | ✓ |
+| 安全で専用のクラウドインフラストラクチャ | | ✓ | ✓ |
+| インシデントのサービスレベルターゲットの強化 | | P1:1 時間 | P1:15 分 |
+| サージ容量の監視と対応 | | | ✓ |
+| インフラストラクチャのセキュリティ | | | ✓ |
+| インフラストラクチャレベル 99.99% SLA | | | ✓ |
+| アプリケーションレベル 99.9% SLA | | | |
+| 指定インフラストラクチャ・エキスパート・リソース（カスタマー・サクセス・エンジニア） | | | |
+| 予定イベント管理 | | | |
+| カスタマイズされたサイト監視およびパーソナライズされた Runbook | | | |
+| アップグレードおよびパッチ適用デプロイメントの支援 | | | |
+| 運用開始プロセスの調整 | | | |
+| 専任のエスカレーション管理 | | | |
+| アプリケーションの監視と支援 | | | |
+
+これを Excel または別の形式に書き出したい場合は、お知らせください。
 
 ## 役割と責務
 
-Adobeでは、Managed Services システムでのAdobe Commerceのプロビジョニング、開発、ステージング、実稼働に関する一連のサービスを提供しています。 ソリューションの開発とデプロイメントをできるだけ効率的に進めるには、顧客とパートナーが、次の役割を理解し果たすことが重要です。
+Adobeでは、Managed Services システム上のAdobe Commerceのプロビジョニング、開発、ステージング、実稼働に関する一連のサービスを提供しています。 ソリューションの開発とデプロイメントをできるだけ効率的に進めるには、顧客とパートナーが、次の役割を理解し果たすことが重要です。
 
 <table>
     <thead>
@@ -177,7 +194,7 @@ Adobeでは、Managed Services システムでのAdobe Commerceのプロビジ�
             <td>顧問</td>
         </tr>
         <tr>
-            <td>ランブックの完了</td>
+            <td>Runbookの完了</td>
             <td>所有者</td>
             <td>投稿者</td>
             <td>投稿者</td>
@@ -370,13 +387,13 @@ Adobeでは、Managed Services システムでのAdobe Commerceのプロビジ�
 
 ## セキュリティ
 
-Managed ServicesのAdobeセキュリティスタックは、自動化と一貫性を使用して各レベルでセキュリティを構築し、人為的エラーを減らします。 開発チームと運用チームは、異なるスタックレベルからセキュリティ制御を自動的に継承します。
+Managed ServicesのAdobe セキュリティスタックは、自動化と一貫性を使用して各レベルでセキュリティを構築し、人為的エラーを減らします。 開発チームと運用チームは、異なるスタックレベルからセキュリティ制御を自動的に継承します。
 
-Amazon Web ServicesやMicrosoft Azure などの Platform パートナーは、プラットフォームのカスタマイズを適用する際に最大限のセキュリティを確保し、AdobeのManaged Services チームは、コンプライアンス、ログ、認証、スキャン、モニタリング、サーバーセキュリティ、安全なアプリケーション設定などのコアセキュリティサービスを提供します。 詳しくは、[Adobe Commerce セキュリティ ](https://business.adobe.com/products/magento/secure-ecommerce.html) を参照してください。
+Amazon Web ServicesやMicrosoft Azure などの Platform パートナーは、プラットフォームのカスタマイズを適用する際に最大限のセキュリティの適用を確保し、Adobe Managed Services チームは、コンプライアンス、ログ、認証、スキャン、モニタリング、サーバーセキュリティおよび安全なアプリケーション設定などの主要なセキュリティサービスを提供します。 詳しくは、[Adobe Commerce セキュリティ ](https://business.adobe.com/products/magento/secure-ecommerce.html) を参照してください。
 
-次の図に、AdobeのManaged Services セキュリティテクノロジースタックを示します。
+次の図に、Adobe Managed Servicesのセキュリティテクノロジースタックを示します。
 
-![AdobeのManaged Services セキュリティスタックを示す図 ](../../assets/playbooks/managed-services-security-stack.svg)
+![Adobe Managed Servicesのセキュリティスタックを示す図 ](../../assets/playbooks/managed-services-security-stack.svg)
 
 ## アップグレードの支援
 
@@ -455,7 +472,7 @@ Adobeでは、Managed Services システムのプロビジョニング、開発�
     <td>Contributor<br />CSE は、会議の開始を会議イベントのスケジュールを設定します。</td>
   </tr>
   <tr>
-    <td>Post - Launch</td>
+    <td>ローンチ後</td>
     <td></td>
     <td>投稿者</td>
     <td>投稿者</td>
