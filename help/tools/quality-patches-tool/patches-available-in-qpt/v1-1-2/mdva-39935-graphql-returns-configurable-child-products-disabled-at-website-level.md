@@ -42,26 +42,26 @@ GraphQLは、web サイトレベルで無効になった後も、設定可能な
 
 <pre>
   <code class="language-graphql">
-{
-  products(filter: { sku: { eq: "cp1" } }) {
-    items {
+&lbrace;
+  products(filter: { sku: { eq: "cp1" } }) &lbrace;
+    items &lbrace;
       __typename
       name
       sku
-      ... on ConfigurableProduct {
-        variants {
-          product {
+      ... on ConfigurableProduct &lbrace;
+        variants &lbrace;
+          product &lbrace;
             __typename
             name
             sku
             color
             stock_status
-          }
-        }
-      }
-    }
-  }
-}
+          &rbrace;
+        &rbrace;
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -77,7 +77,7 @@ GraphQLは、web サイトレベルで無効になった後も、設定可能な
 
 個々のパッチを適用するには、デプロイメントタイプに応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

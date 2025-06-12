@@ -41,9 +41,9 @@ ACSD-45241 パッチは、クレジットメモを作成した後に仮想製品
 1. 商品を買い物かごに追加します。
 1. 手順 1 で作成した仮想製品で注文します。
 1. 注文ステータスは「保留中」のままにします。 支払いを処理する必要はありません。
-1. `inventory_reservation``order_created` 作成されたレコード。 仮想製品数量は 100 で、販売可能数量は 99 です。
+1. `inventory_reservation` `order_created` 作成されたレコード。 仮想製品数量は 100 で、販売可能数量は 99 です。
 1. 注文を開き、**請求書**/**請求書を送信** に移動します。
-1. `inventory_reservation``invoice_created` 作成されたレコード。 仮想製品数量は 99 になり、販売可能数量も 99 になります。
+1. `inventory_reservation` `invoice_created` 作成されたレコード。 仮想製品数量は 99 になり、販売可能数量も 99 になります。
 1. 「在庫に戻る **を選択せずにクレジットメモを作成** ます。
 
 <u> 期待される結果 </u>:
@@ -58,7 +58,7 @@ ACSD-45241 パッチは、クレジットメモを作成した後に仮想製品
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

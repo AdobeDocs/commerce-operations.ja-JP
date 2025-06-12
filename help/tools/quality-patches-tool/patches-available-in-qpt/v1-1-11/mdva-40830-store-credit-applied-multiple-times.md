@@ -43,30 +43,30 @@ MDVA-40830 パッチにより、注文の発注時にストア クレジット�
 
 <pre>
 <code class="language-graphql">
-mutation {
+mutation &lbrace;
   applyStoreCreditToCart(
     input: { cart_id: "%cartId%" }
-  ) {
-    cart {
-      prices {
-        grand_total {
+  ) &lbrace;
+    cart &lbrace;
+      prices &lbrace;
+        grand_total &lbrace;
           currency
           value
-        }
-      }
-      applied_store_credit {
-        applied_balance {
+        &rbrace;
+      &rbrace;
+      applied_store_credit &lbrace;
+        applied_balance &lbrace;
           currency
           value
-        }
-        current_balance {
+        &rbrace;
+        current_balance &lbrace;
           currency
           value
-        }
-      }
-    }
-  }
-}
+        &rbrace;
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -82,7 +82,7 @@ applied_store_credit の値は 2 回適用され、cart と grand_total の両�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

@@ -42,16 +42,16 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.1 ～ 2.4.3-p1
 
 <pre>
 <code class="language-graphql">
-{
-  customer {
+&lbrace;
+  customer &lbrace;
     firstname
     lastname
     suffix
     email
 
-    orders(filter:{number:{eq:"000000001"}}){
-        items{
-          billing_address {
+    orders(filter:{number:{eq:"000000001"}})&lbrace;
+        items&lbrace;
+          billing_address &lbrace;
 firstname
 lastname
 street
@@ -61,8 +61,8 @@ region_id
 postcode
 telephone
 country_code
-}
-shipping_address {
+&rbrace;
+shipping_address &lbrace;
 firstname
 lastname
 street
@@ -72,11 +72,11 @@ region_id
 postcode
 telephone
 country_code
-}
-        }
-    }
-  }
-}
+&rbrace;
+        &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -92,7 +92,7 @@ country_code
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

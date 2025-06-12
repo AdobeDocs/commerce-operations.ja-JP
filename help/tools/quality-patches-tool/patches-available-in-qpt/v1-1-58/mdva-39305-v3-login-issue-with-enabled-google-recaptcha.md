@@ -44,7 +44,7 @@ MDVA-39305-V3 パッチにより、登録ユーザが [!DNL Google reCAPTCHA] �
 
 <u> 再現手順 </u>:
 
-1. **[!UICONTROL Store]**/**[!UICONTROL Configuration]**/**[!UICONTROL Security]**/**[!DNL Google reCAPTCHA Storefront]** に移動し、***[!DNL Google reCAPTCHA]***を有効にします。
+1. **[!UICONTROL Store]**/**[!UICONTROL Configuration]**/**[!UICONTROL Security]**/**[!DNL Google reCAPTCHA Storefront]** に移動し、***[!DNL Google reCAPTCHA]***&#x200B;を有効にします。
 1. フロントエンドに移動します。
 1. ブラウザーで **[!UICONTROL Developer Tool Console]** を開きます。
 
@@ -84,7 +84,7 @@ CMS ページのデフォルト以外の場所でブロックが使用される�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

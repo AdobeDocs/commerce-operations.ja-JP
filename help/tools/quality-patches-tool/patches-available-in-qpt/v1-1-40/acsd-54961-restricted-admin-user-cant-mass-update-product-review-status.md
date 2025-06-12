@@ -38,7 +38,7 @@ ACSD-54961 パッチは、制限付き管理者ユーザーが [!UICONTROL Produ
 1. 追加の web サイト、ストア、ストア表示を作成します。
 1. 商品を 2 番目のストアに追加し、レビューを追加します。
 1. 2 つ目のストアへのアクセス権のみを持つ、制限付きの管理者ユーザーを作成します。
-1. 制限付き管理者ユーザーとしてログインし、**[!UICONTROL  Marketings]**/**[!UICONTROL Reviews]**/**[!UICONTROL Mass Update]** に移動して、**ステータス** を *承認済み* または *保留中* に設定します。
+1. 制限付き管理者ユーザーとしてログインし、**[!UICONTROL &#x200B; Marketings]**/**[!UICONTROL Reviews]**/**[!UICONTROL Mass Update]** に移動して、**ステータス** を *承認済み* または *保留中* に設定します。
 
 <u> 期待される結果 </u>:
 
@@ -57,7 +57,7 @@ report.CRITICAL: TypeError: array_intersect(): Argument #1 ($array) must be of t
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

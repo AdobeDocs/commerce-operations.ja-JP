@@ -41,9 +41,9 @@ GraphQLを介した買い物かごへの商品の追加は、対象の web サ�
 
    <pre>
     <code class="language-graphql">
-    mutation{
+    mutation&lbrace;
      createEmptyCart
-    }
+    &rbrace;
     </code>
     </pre>
 
@@ -51,9 +51,9 @@ GraphQLを介した買い物かごへの商品の追加は、対象の web サ�
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       "Store":"en_au"
-    }
+    &rbrace;
     </code>
     </pre>
 
@@ -61,27 +61,27 @@ GraphQLを介した買い物かごへの商品の追加は、対象の web サ�
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
       addProductsToCart(
           cartId: "XHrUN2nJ37OqDByhtL0VC8OxYsEZs41c"
-          cartItems: [
-            {
+          cartItems: &lbrack;
+            &lbrace;
               quantity: 1
               sku: "p1"
-            }
-          ]
-        ) {
-          cart {
-           items {
-            product {
+            &rbrace;
+          &rbrack;
+        ) &lbrace;
+          cart &lbrace;
+           items &lbrace;
+            product &lbrace;
               name
               sku
-            }
+            &rbrace;
             quantity
-          }
-        }
-      }
-    }
+          &rbrace;
+        &rbrace;
+      &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -89,9 +89,9 @@ GraphQLを介した買い物かごへの商品の追加は、対象の web サ�
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       "Store":"en_au"
-    }
+    &rbrace;
     </code>
     </pre>
 
@@ -107,7 +107,7 @@ GraphQLを介した買い物かごへの商品の追加は、対象の web サ�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
