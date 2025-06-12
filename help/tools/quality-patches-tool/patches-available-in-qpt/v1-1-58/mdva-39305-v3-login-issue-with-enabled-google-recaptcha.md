@@ -3,7 +3,8 @@ title: MDVA-39305-V3：が有効になっている場合のログインの問題
 description: が有効になっている場合に、登録されたお客様がログインできないAdobe Commerceの問題を修正するために、MDVA-39305-V3 パッチ  [!DNL Google reCAPTCHA]  適用します。 このパッチでは、完全に読み込まれる前にフォームを送信できる問題も修正  [!DNL Google reCAPTCHA]  れています。 また、CMSページのデフォルト以外の場所でブロックが使用された場合の、「メンバー関数の呼び出しが null で isDisabled （）」というエラーも修正されます。
 feature: Console
 role: Admin
-source-git-commit: 7846079987d2b7c0e9fdd0485bb3aae4f09cd6f9
+exl-id: 63e880aa-9a2e-4c34-9ead-20bfc5204f2c
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 MDVA-39305-V3 パッチにより、登録ユーザが [!DNL Google reCAPTCHA] が有効な場合にログインできない問題が修正されました。 また、このパッチでは、フォームが完全に読み込まれる前にフォームを送信でき [!DNL Google reCAPTCHA] 問題も修正されています。 さらに、CMSページのデフォルト以外の場所でブロックが使用された場合の、エラー *メンバー関数の呼び出しが null の場合は isDisabled （）* が修正されます。
 
-このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)1.1.48 リリースで追加されました。 QPT 1.1.58 リリースで更新され、新しいAdobe Commerce バージョン 2.4.7 ～ 2.4.7-p4 が含まれるようになりました。 パッチ ID は MDVA-39305-V3 です。 この問題は、Adobe Commerce バージョン 2.4.4、2.4.5-p2、2.4.7 で修正されました。
+このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.48 リリースで追加されました。 QPT 1.1.58 リリースで更新され、新しいAdobe Commerce バージョン 2.4.7 ～ 2.4.7-p4 が含まれるようになりました。 パッチ ID は MDVA-39305-V3 です。 この問題は、Adobe Commerce バージョン 2.4.4、2.4.5-p2、2.4.7 で修正されました。
 
 ## 影響を受ける製品とバージョン
 
@@ -32,7 +33,7 @@ MDVA-39305-V3 パッチにより、登録ユーザが [!DNL Google reCAPTCHA] �
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -43,7 +44,7 @@ MDVA-39305-V3 パッチにより、登録ユーザが [!DNL Google reCAPTCHA] �
 
 <u> 再現手順 </u>:
 
-1. **[!UICONTROL Store]**/**[!UICONTROL Configuration]**/**[!UICONTROL Security]**/**[!DNL Google reCAPTCHA Storefront]** に移動し、***[!DNL Google reCAPTCHA]***&#x200B;を有効にします。
+1. **[!UICONTROL Store]**/**[!UICONTROL Configuration]**/**[!UICONTROL Security]**/**[!DNL Google reCAPTCHA Storefront]** に移動し、***[!DNL Google reCAPTCHA]***を有効にします。
 1. フロントエンドに移動します。
 1. ブラウザーで **[!UICONTROL Developer Tool Console]** を開きます。
 
@@ -83,13 +84,11 @@ CMS ページのデフォルト以外の場所でブロックが使用される�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
 * [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
-
-
