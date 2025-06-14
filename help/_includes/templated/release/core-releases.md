@@ -20,7 +20,7 @@ ht-degree: 0%
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">2.4.9-alpha1</a>
+          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">2.4.9-alpha1</a>
         </td>
         <td>2025 年 6 月 10 日（Pt）</td>
     </tr><!-- patch_releases -->
@@ -41,7 +41,7 @@ ht-degree: 0%
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p1">2.4.8-p1</a>
+          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p1">2.4.8-p1</a>
         </td>
         <td>2025 年 6 月 10 日（Pt）</td>
     </tr>
