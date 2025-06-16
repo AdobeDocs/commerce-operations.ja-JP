@@ -2,9 +2,9 @@
 title: Beta リリース
 description: Adobe Commerce ベータ版リリースとリリースへの参加方法について説明します。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: ea4f340540e57b282657a44502d80f1d5c409c6a
+source-git-commit: 1c0dd720df944a5784c850a3f4ea63b8984069f1
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
@@ -40,11 +40,11 @@ Adobe Commerce Optimizerを使用すると、次のことができます。
 - AI と ML を使用して、パーソナライズされた検索とレコメンデーションを作成します。
 - 正確な実装とトラブルシューティングのために、同期ステータスやストアフロントのイベントデータなど、重要な製品データの可用性を表示します。
 
-Adobe Commerce Optimizerについて [ 詳細情報 ](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html?lang=ja) します。 早期アクセスプログラムの詳細については、[!DNL Adobe Commerce Optimizer] 早期アクセス申請フォーム [ にご記入ください ](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u)。
+Adobe Commerce Optimizerについて [ 詳細情報 ](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) します。 早期アクセスプログラムの詳細については、[!DNL Adobe Commerce Optimizer] 早期アクセス申請フォーム [ にご記入ください ](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u)。
 
 ### Live Search （パブリック Beta）の検索機能の強化
 
-このベータ版では、[&#128279;](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) の 3 つの新しい機能が `productSearch` クエリでサポートされています。
+このベータ版では、](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) の 3 つの新しい機能が [`productSearch` クエリでサポートされています。
 
 - **レイヤー検索** – 別の検索コンテキスト内の検索 – この機能を使用すると、検索クエリを最大 2 つのレイヤーで検索できます。 例：
 
@@ -66,7 +66,7 @@ Adobe Commerce Optimizerについて [ 詳細情報 ](https://experienceleague.a
 
 これらの新しい条件により、検索クエリのフィルタリングメカニズムが強化され、検索結果を絞り込むことができます。 これらの新しい条件は、メインの検索クエリには影響しません。 ベータ版に参加するには、[commerce-storefront-services](mailto:commerce-storefront-services@adobe.com) にメールリクエストを送信します。
 
-Live Search ベータ版をインストールするには、[Live Search ガイド ](https://experienceleague.adobe.com/ja/docs/commerce/live-search/install#install-the-live-search-beta) を参照してください。
+Live Search ベータ版をインストールするには、[Live Search ガイド ](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta) を参照してください。
 
 ### IBM Sterling Order Management System Integration （Private Beta）
 
@@ -79,38 +79,43 @@ IBMスターリングOrder Management向けのこの統合アクセラレータ�
 
 このベータ版に参加するには、[sbieber@adobe.com](mailto:sbieber@adobe.com) にメールでリクエストを送信します。
 
-### Adobe Commerce財団（パブリックBeta）
+### Adobe Commerce財団（パブリックAlpha/Beta）
 
-各Adobe Commerce Foundation ベータ版リリースには、予定リリース日までにAdobe Commerce コアコードに提供されるすべての変更が含まれます。以下の機能領域が含まれますが、それに限定されるものではありません。
+Adobe Commerce Foundation の各アルファ版およびベータ版のリリースには、予定リリース日までにAdobe Commerce コアコードに提供されるすべての変更が含まれています。これには次の機能領域が含まれますが、それに限定されるものではありません。
 
 - 最新のセキュリティ修正
 - パフォーマンスの向上
 - GraphQLの改善点
 - 一般的な品質のバグ修正
 - コミュニティの投稿
-- [Adobe Commerce サービスとの互換性をサポートするために必要な変更 ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
+- [Adobe Commerce サービスとの互換性をサポートするために必要な変更 ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### 命名規則とスケジュール
 
-Adobeは通常、ベータ版パッチを年に 2 回リリースします。
+Adobeは通常、アルファ版およびベータ版のパッチを年に数回リリースします。
+
+Alpha リリースパッケージには `-alphaX` サフィックスがあります。 例えば、Adobe Commerce 2.4.7 アルファリリースパッケージでは、次の命名規則を使用します。
+
+- `2.4.7-alpha1`
+- `2.4.7-alpha2`
 
 Beta リリースパッケージには `-betaX` サフィックスがあります。 例えば、Adobe Commerce 2.4.7 ベータリリースパッケージでは、次の命名規則を使用します。
 
 - `2.4.7-beta1`
 - `2.4.7-beta2`
 
-今後の公開ベータ版リリース日のリストについては、[ リリーススケジュール ](schedule.md) を参照してください。
+今後の公開アルファ版およびベータ版のリリース日のリストについては、[ リリーススケジュール ](schedule.md) を参照してください。
 
-#### Beta リリースアクセス
+#### リリースへのアクセス
 
-Adobe Commerce ベータ版リリースは、他のAdobe Commerce パッチリリースと同じ方法で配布されます。つまり、`https://repo.magento.com` 上の Composer メタパッケージとして配布されます。 ソースコードは [GitHub](https://github.com/magento/magento2) で入手できます。
+Adobe Commerceのアルファ版およびベータ版のリリースは、他のAdobe Commerceのパッチリリースと同じ方法で配布されます。つまり、`https://repo.magento.com` 上の Composer メタパッケージとして配布されます。 ソースコードは [GitHub](https://github.com/magento/magento2) で入手できます。
 
 詳細は、「[Composer インストール クイック スタート ](../installation/composer.md)」を参照してください。
 
 #### 問題レポート
 
-Adobeは、ベータ版リリースに対する標準のAdobe サポートサービスを提供していません。
+Adobeは、アルファ版およびベータ版のリリースに対して標準のAdobe サポートサービスを提供しません。
 
-ベータ版リリースに関するフィードバックを送信するには、[GitHub](https://github.com/magento/magento2) の [ 通常のイシューレポートフロー ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) に従ってください。
+アルファ版およびベータ版リリースに関連するフィードバックを送信するには、[GitHub](https://github.com/magento/magento2) の [ 通常のイシューレポートフロー ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) に従います。
 
-社内チームは、最新のベータ版リリースに関して報告されたすべての重要な問題を監視し、GA リリース日より前に解決するように優先順位を付けます。
+Adobeは、最新のアルファ版またはベータ版のリリースに対して報告されたすべての重要な問題を監視し、GA リリース日より前に解決されるように優先順位を付けます。
