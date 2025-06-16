@@ -44,7 +44,7 @@ Adobe Commerce Optimizerについて [ 詳細情報 ](https://experienceleague.a
 
 ### Live Search （パブリック Beta）の検索機能の強化
 
-このベータ版では、](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) の 3 つの新しい機能が [`productSearch` クエリでサポートされています。
+このベータ版では、[&#128279;](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) の 3 つの新しい機能が `productSearch` クエリでサポートされています。
 
 - **レイヤー検索** – 別の検索コンテキスト内の検索 – この機能を使用すると、検索クエリを最大 2 つのレイヤーで検索できます。 例：
 
