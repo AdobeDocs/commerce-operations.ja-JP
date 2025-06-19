@@ -46,7 +46,7 @@ ACSD-66093 パッチでは、ゲスト顧客の **[!UICONTROL First Name]** フ�
 
 <u> 期待される結果 </u>:
 
-*First Name is not valid!（名が無効です！）のように、**[!UICONTROL First Name]**および&#x200B;**[!UICONTROL Last Name]**フィールドが無効であることを示す検証メッセージが表示されます。 と姓が無効です。* と注文しないでください。
+*First Name is not valid!（名が無効です！）のように、**[!UICONTROL First Name]**&#x200B;および&#x200B;**[!UICONTROL Last Name]**&#x200B;フィールドが無効であることを示す検証メッセージが表示されます。 と姓が無効です。* と注文しないでください。
 
 <u> 実際の結果 </u>:
 
@@ -58,7 +58,7 @@ ACSD-66093 パッチでは、ゲスト顧客の **[!UICONTROL First Name]** フ�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

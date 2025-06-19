@@ -58,17 +58,17 @@ ACSD-60441 パッチでは、バックエンドから生成された統合アク
 次のエラーが発生します。
 
     &quot;&#39;json
-    {
+    &lbrace;
     &quot;message&quot;: &quot;同じメールアドレスを持つ顧客が関連付けられた web サイトに既に存在します。&quot;,
     &quot;trace&quot;: ...
-    }
+    &rbrace;
     &quot;&#39;
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

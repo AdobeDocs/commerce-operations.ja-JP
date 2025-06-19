@@ -39,7 +39,7 @@ ACSD-63182 パッチは、バンドルオプションとして使用された単
 1. 新しい MSI ソースとストックを作成します。
 1. **p1** と **p2** の 2 つのシンプルな製品を作成します。
 1. **p1** と **p2** をバンドルオプションとして使用して、バンドル製品 **b1** を作成します。
-1. **バンドル製品 b1** を編集して、***[!UICONTROL Save and Duplicate]***をクリックします。
+1. **バンドル製品 b1** を編集して、***[!UICONTROL Save and Duplicate]***&#x200B;をクリックします。
 1. **シンプル製品 p1** を編集し、「**[!UICONTROL Save]**」をクリックします。
 
 <u> 期待される結果 </u>:
@@ -55,7 +55,7 @@ ACSD-63182 パッチは、バンドルオプションとして使用された単
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

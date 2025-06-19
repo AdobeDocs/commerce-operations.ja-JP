@@ -42,15 +42,15 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.5 ～ 2.3.7-p1 �
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
         generateCustomerToken(
             email: "customer email"
             password: "customer password"
         )
-        {
+        &lbrace;
             token
-        }
-    }
+        &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -58,9 +58,9 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.5 ～ 2.3.7-p1 �
 
    <pre>
     <code class="language-graphql">
-    mutation{
+    mutation&lbrace;
      createEmptyCart
-    }
+    &rbrace;
     </code>
     </pre>
 
@@ -87,7 +87,7 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.5 ～ 2.3.7-p1 �
 
 個々のパッチを適用するには、デプロイメントタイプに応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

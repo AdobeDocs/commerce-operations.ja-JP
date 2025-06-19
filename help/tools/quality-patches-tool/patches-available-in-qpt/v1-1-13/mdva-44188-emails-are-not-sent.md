@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-44188: ``を含む ID にメールが送信されない。-"'
+title: 'MDVA-44188: &grave;&grave;を含む ID にメールが送信されない。-"'
 description: MDVA-44188 パッチは、「」を含むメール ID にメールが送信されない問題を修正します。-'. このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.13 がインストールされている場合に利用できます。 パッチ ID は MDVA-44188。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
 feature: Communications
 role: Admin
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# MDVA-44188: ``を含む ID にメールが送信されない。-&quot;
+# MDVA-44188: &grave;&grave;を含む ID にメールが送信されない。-&quot;
 
 MDVA-44188 パッチは、`.-` を含むメール ID にメールが送信されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.13 がインストールされている場合に使用できます。 パッチ ID は MDVA-44188。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
 
@@ -51,7 +51,7 @@ MDVA-44188 パッチは、`.-` を含むメール ID にメールが送信され
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

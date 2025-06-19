@@ -45,7 +45,7 @@ ACSD-56023 パッチにより、ウィジェットのコンテンツがCMS ペ�
 
 1. 作成したページをストアフロントで開きます。 必ずキャッシュしてください。
 1. 管理者から、**[!UICONTROL Catalog]**/**[!UICONTROL Products]** を開きます。
-1. 編集する製品を選択し、「はい ***[!UICONTROL Set Product as New]**切り替え* ます。
+1. 編集する製品を選択し、「はい ***[!UICONTROL Set Product as New]**&#x200B;切り替え* ます。
 1. ストアフロントで作成した *CMSページ* に再度移動します。
 
 <u> 期待される結果 </u>:
@@ -60,7 +60,7 @@ ACSD-56023 パッチにより、ウィジェットのコンテンツがCMS ペ�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

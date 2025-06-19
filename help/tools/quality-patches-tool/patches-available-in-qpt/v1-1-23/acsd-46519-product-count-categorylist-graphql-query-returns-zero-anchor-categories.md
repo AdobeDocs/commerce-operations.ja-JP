@@ -37,34 +37,34 @@ ACSD-46519 パッチを使用すると、[!DNL GraphQL] クエリの [!UICONTROL
 1. 次の [!DNL GraphQL] リクエストを使用して、[!UICONTROL product_count] のカテゴリ階層を取得します。
 
 <pre><code>
-{
-  categoryList(filters: { ids: { eq: "2" } }) {
+&lbrace;
+  categoryList(filters: { ids: { eq: "2" } }) &lbrace;
     id
     name
     product_count
     level
-    children {
+    children &lbrace;
       name
       product_count
       level
-      children {
+      children &lbrace;
         name
         product_count
         level
-        children {
+        children &lbrace;
           name
           product_count
           level
-          children {
+          children &lbrace;
             name
             product_count
             level
-          }
-        }
-      }
-    }
-  }
-}
+          &rbrace;
+        &rbrace;
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code></pre>
 
 <u> 期待される結果 </u>:
@@ -76,53 +76,53 @@ ACSD-46519 パッチを使用すると、[!DNL GraphQL] クエリの [!UICONTROL
 親カテゴリがアンカーされたカテゴリの場合、製品はカテゴリ レベル 2 以下では 0 として表示されます。
 
 <pre><code>
-{
-    "data": {
-        "categoryList": [
-            {
+&lbrace;
+    "data": &lbrace;
+        "categoryList": &lbrack;
+            &lbrace;
                 "id": 2,
                 "name": "Default Category",
                 "product_count": 186,
                 "level": 1,
-                "children": [
-                    {
+                "children": &lbrack;
+                    &lbrace;
                         "name": "What's New",
                         "product_count": 0,
                         "level": 2,
                         "children": []
-                    },
-                    {
+                    &rbrace;,
+                    &lbrace;
                         "name": "Women",
                         "product_count": 0,
                         "level": 2,
-                        "children": [
-                            {
+                        "children": &lbrack;
+                            &lbrace;
                                 "name": "Tops",
                                 "product_count": 0,
                                 "level": 3,
                                 "children": []
-                            },
-                            {
+                            &rbrace;,
+                            &lbrace;
                                 "name": "Bottoms",
                                 "product_count": 0,
                                 "level": 3,
                                 "children": []
-                            }
-                        ]
-                    },
+                            &rbrace;
+                        &rbrack;
+                    &rbrace;,
                     ...
-                ]
-            }
-        ]
-    }
-}
+                &rbrack;
+            &rbrace;
+        &rbrack;
+    &rbrace;
+&rbrace;
 </code></pre>
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
