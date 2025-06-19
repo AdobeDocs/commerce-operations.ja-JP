@@ -3,7 +3,9 @@ title: ACSD-63299：設定可能な製品の特別価格がストアフロント
 description: ACSD-63299 パッチを適用すると、特別価格属性が設定可能な商品の特別価格の表示に影響を与えなくなるAdobe Commerceの問題を修正できます。
 feature: Catalog Management
 Role: Admin, Developer
-source-git-commit: 238d3fa6d7729f729aeb79c98ae28db331ad7509
+exl-id: cd1775c5-783e-4ed5-a148-1dae0b7542f8
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -26,7 +28,7 @@ ACSD-63299 パッチは、特別価格属性が設定可能な製品の特別価
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -36,7 +38,7 @@ ACSD-63299 パッチは、特別価格属性が設定可能な製品の特別価
 
 1. **[!UICONTROL Stores]**/*[!UICONTROL Attributes]*/**[!UICONTROL Products]** に移動します。
 1. ***[!UICONTROL special_price]*** 属性を見つけて、**[!UICONTROL Storefront Properties]** に移動します。
-1. ***[!UICONTROL Used in Product Listing]*** を&#x200B;***[!UICONTROL No]***&#x200B;に変更します。
+1. ***[!UICONTROL Used in Product Listing]*** を***[!UICONTROL No]***に変更します。
 1. 1 つの子を持つ設定可能な製品を作成します。
    * 名前と SKU: テスト
    * 価格：159.00 ドル
@@ -62,8 +64,8 @@ ACSD-63299 パッチは、特別価格属性が設定可能な製品の特別価
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 

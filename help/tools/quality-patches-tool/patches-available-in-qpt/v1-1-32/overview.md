@@ -1,9 +1,11 @@
 ---
-title: '概要： [!DNL Quality Patches Tool]  （QPT） v1.1.32'
+title: 概要： [!DNL Quality Patches Tool]  （QPT） v1.1.32
 description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.32 で使用可能なパッチによって修正された問題について詳しく説明します。
 feature: Tools and External Services
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+exl-id: a6d434ce-2c3b-4f4f-b308-aee2025c7b0e
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%

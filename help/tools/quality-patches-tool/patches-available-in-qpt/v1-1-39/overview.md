@@ -1,9 +1,11 @@
 ---
-title: '概要： [!DNL Quality Patches Tool]  （QPT） v1.1.39'
+title: 概要： [!DNL Quality Patches Tool]  （QPT） v1.1.39
 description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.39 で使用可能なパッチによって修正された問題について詳しく説明します。
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+exl-id: 6116f566-2ff8-4148-ab60-cec65f9b7a6f
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -26,6 +28,6 @@ QPT v1.1.39 には、次のパッチが含まれています。
 1. **ACSD-54776**:2 つ目の web サイト、ストア、ストア表示で、オフの *[!UICONTROL Use Default Value]* フィールドとデフォルト以外の製品フィールドの値が保存されない問題を修正しました。
 1. **ACSD-53998**：カスタマーアカウントからログアウトした後、**[!UICONTROL Customer Segment]** に基づく **[!UICONTROL Dynamic Block]** が正しく機能しない問題を修正しました。
 1. **ACSD-53204**：修正点 *製品を保存できません。`rest/V1/products/<sku>/media` エンドポイントを使用して製品ギャラリーに画像を追加する同時リクエストを行う際に* エラーが発生します。
-1. **ACSD-47657**:AWS資格情報のキャッシングメカニズムが追加されました。 資格情報プロバイダーは、Magentoキャッシュを使用して、EC2 設定用にAWSから取得した資格情報をキャッシュするようになりました。
+1. **ACSD-47657**:AWS資格情報のキャッシングメカニズムが追加されました。 認証情報プロバイダーは、Magento キャッシュを使用して、AWSから取得した認証情報を EC2 設定用にキャッシュするようになりました。
 
 左側のメニューを使用して、特定のパッチページに移動します。

@@ -3,13 +3,14 @@ title: ACSD-65684:B2B 1.5.2 のMagento_Company のアップグレードが遅く
 description: ACSD-65684 パッチを適用すると、company_structure テーブルに大量のレコード（～100,000）が処理されるため、B2B 1.5.2 のMagento_Company モジュールのアップグレードに時間がかかりすぎるAdobe Commerceの問題を修正できます。
 feature: B2B
 role: Admin, Developer
-source-git-commit: dbf1bf3483aa7e52f5d1c950ab82f504c44fc989
+type: Troubleshooting
+exl-id: 1b45ebe4-4fb4-4fb5-b107-a2d44ec784e0
+source-git-commit: b1912bbc5aabd36067563326ee5c6bb84e14441d
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65684:[!DNL B2B] 1.5.2 の `Magento_Company` のアップグレードが遅く、`company_structure` のレコードが 10 万件を超えています
 
@@ -27,7 +28,7 @@ ACSD-65684 パッチは、`company_structure` テーブル内の 100,000 件以�
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -57,8 +58,8 @@ bin/magento setup:upgrade
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 

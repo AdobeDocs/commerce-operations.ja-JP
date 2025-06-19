@@ -3,13 +3,14 @@ title: ACSD-57570：共有カタログへの管理者ユーザーアクセスが
 description: ACSD-57570 パッチを適用すると、特定のストアへのアクセス権を持つ制限付き管理者ユーザーが、製品に割り当てられたすべての共有カタログを一貫して表示したり、顧客情報を保存したりできず、システムの不整合が発生するAdobe Commerceの問題を修正できます。
 feature: B2B, Companies, Roles/Permissions
 role: Admin, Developer
-source-git-commit: 6147a028e2ce783809b5c2c32c65784611d03f0e
+exl-id: 3eeaf1f1-0338-459f-99ec-53764f3f12db
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-57570：共有カタログへの管理者ユーザーアクセスが制限される問題を修正
 
@@ -27,7 +28,7 @@ ACSD-57570 パッチは、特定のストアへのアクセスを持つ制限付
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -67,8 +68,8 @@ ACSD-57570 パッチは、特定のストアへのアクセスを持つ制限付
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 

@@ -1,17 +1,18 @@
 ---
-title: 'ACSD-64112: &grave;indexer_update_all_views&grave; cron execution fails when &grave;MAGE_INDEXER_THREADS_COUNT&grave; is set'
-description: Apply the ACSD-64112 patch to fix the Adobe Commerce issue where the &grave;indexer_update_all_views&grave; cron execution fails when &grave;MAGE_INDEXER_THREADS_COUNT&grave; is set.
+title: ACSD-64112:「MAGE_INDEXER_THREADS_COUNT」が設定されている場合、「indexer_update_all_views」 cron 実行が失敗します
+description: ACSD-64112 パッチを適用すると、「MAGE_INDEXER_THREADS_COUNT」が設定されている場合に「indexer_update_all_views」 cron の実行が失敗するAdobe Commerceの問題を修正できます。
 feature: Catalog Management, B2B
 role: Admin, Developer
 exl-id: c95f179d-5291-481f-b655-08a9db608513
-source-git-commit: 0078cf5fb6d6c3a8650762d7cdf5556de642e201
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
-# ACSD-64112: `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_COUNT` is set
+# ACSD-64112:`MAGE_INDEXER_THREADS_COUNT` が設定されている場合、`indexer_update_all_views` cron 実行が失敗する
 
 >[!NOTE]
 >
@@ -23,15 +24,15 @@ ACSD-64112 パッチは、`MAGE_INDEXER_THREADS_COUNT` が設定されている�
 
 **Adobe Commerce バージョン用のパッチが作成されます。**
 
-* Adobe Commerce (all deployment methods) 2.4.5-p10
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p10
 
 **Adobe Commerce バージョンとの互換性：**
 
-* Adobe Commerce (all deployment methods) 2.4.5 - 2.4.6-p10
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.5 ～ 2.4.6-p10
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -42,16 +43,16 @@ ACSD-64112 パッチは、`MAGE_INDEXER_THREADS_COUNT` が設定されている�
 1. B2B でクリーンなインスタンスをインストールします。
 1. **[!UICONTROL B2B Company]** と **[!UICONTROL Shared Catalog]** を有効にします。
 1. カテゴリを作成します。
-1. Create a few products and assign them to the category.
+1. いくつかの製品を作成してカテゴリに割り当てます。
 1. 完全な再インデックスを実行します。
-1. Set the following indexers to **[!UICONTROL Update on Schedule]**:
+1. 次のインデクサーを **[!UICONTROL Update on Schedule]** に設定します。
 
    ```
    bin/magento indexer:set-mode schedule catalogpermissions_category catalogpermissions_product
    ```
 
-1. Go to the backend and load the newly created category.
-1. Click **[!UICONTROL Category Permissions]** and create a **[!UICONTROL New Permission]** for an existing customer group.
+1. バックエンドに移動し、新しく作成したカテゴリを読み込みます。
+1. 「**[!UICONTROL Category Permissions]**」をクリックし、既存の顧客グループの **[!UICONTROL New Permission]** を作成します。
 1. `catalogpermissions_category` インデクサーにバックログがあることを確認します。 これを確認するには、次のコマンドを実行します。
 
    ```
@@ -86,8 +87,8 @@ report.CRITICAL: PDOException: There is no active transaction in /home/vendor/ma
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## パッチのインストール後に必要な追加手順
 

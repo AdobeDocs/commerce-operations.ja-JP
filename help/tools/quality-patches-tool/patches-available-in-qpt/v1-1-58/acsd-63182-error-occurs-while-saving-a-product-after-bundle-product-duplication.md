@@ -3,13 +3,14 @@ title: ACSD-63182：バンドル製品の複製後、製品の保存中にエラ
 description: MSI を有効にしてバンドル製品を複製した後、製品の保存中にエラーが発生するAdobe Commerceの問題を修正するために、ACSD-63182 パッチを適用します。
 feature: Inventory, Catalog Management
 Role: Admin, Developer
-source-git-commit: e532323a743512f0fdd12b6ba30d1c56e8e37e20
+exl-id: 2c664c89-e00e-40a8-9127-8c3f36c5bab9
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63182：バンドル製品の複製後、製品の保存中にエラーが発生する
 
@@ -27,7 +28,7 @@ ACSD-63182 パッチは、バンドルオプションとして使用された単
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -38,7 +39,7 @@ ACSD-63182 パッチは、バンドルオプションとして使用された単
 1. 新しい MSI ソースとストックを作成します。
 1. **p1** と **p2** の 2 つのシンプルな製品を作成します。
 1. **p1** と **p2** をバンドルオプションとして使用して、バンドル製品 **b1** を作成します。
-1. **バンドル製品 b1** を編集して、***[!UICONTROL Save and Duplicate]***&#x200B;をクリックします。
+1. **バンドル製品 b1** を編集して、***[!UICONTROL Save and Duplicate]***をクリックします。
 1. **シンプル製品 p1** を編集し、「**[!UICONTROL Save]**」をクリックします。
 
 <u> 期待される結果 </u>:
@@ -54,8 +55,8 @@ ACSD-63182 パッチは、バンドルオプションとして使用された単
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 

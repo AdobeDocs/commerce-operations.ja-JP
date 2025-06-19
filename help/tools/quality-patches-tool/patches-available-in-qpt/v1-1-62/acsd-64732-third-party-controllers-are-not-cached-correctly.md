@@ -3,13 +3,14 @@ title: ACSD-64732：サードパーティのコントローラーが顧客セグ
 description: ACSD-64732 パッチを適用すると、サードパーティのコントローラーがカスタマーセグメントで正しくキャッシュされないAdobe Commerceの問題を修正できます。
 feature: Cache
 role: Admin, Developer
-source-git-commit: 047de42098f711036f1f5252d2cbc4a329ebbfb2
+exl-id: 378e5a96-06dd-4796-9e45-a67cf539fcce
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64732：サードパーティのコントローラーが顧客セグメントと共に正しくキャッシュされない
 
@@ -27,7 +28,7 @@ ACSD-64732 パッチにより、サードパーティのコントローラが顧
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -50,7 +51,7 @@ ACSD-64732 パッチにより、サードパーティのコントローラが顧
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * Adobe Commerce on Cloud Infrastructure: アップグレードとパッチ > Commerce on Cloud Infrastructure ガイドのパッチの適用
 
 ## 関連資料

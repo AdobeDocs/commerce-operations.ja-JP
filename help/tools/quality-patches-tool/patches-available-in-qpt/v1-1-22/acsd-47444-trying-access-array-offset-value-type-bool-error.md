@@ -4,16 +4,17 @@ description: PHP 7.4 上で既知の商品に対して存在しない特定の�
 feature: Categories, Products
 role: Admin
 exl-id: 9f04ee28-d22c-4fdf-9228-e436abe973e8
-source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%
 
 ---
 
-# ACSD-47444: PHP 7.4 上の既知の製品に対して存在しない特定のカテゴリパスにアクセスすると _[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;エラーが発生する
+# ACSD-47444: PHP 7.4 上の既知の製品に対して存在しない特定のカテゴリパスにアクセスすると _[!UICONTROL Trying to access array offset on value of type bool]_エラーが発生する
 
-ACSD-47444 パッチを適用すると、PHP 7.4 上の既知の製品に対して存在しない特定のカテゴリパスにアクセスする際に _[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;のエラーが発生する問題が解決されます。このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.22 がインストールされている場合に使用できます。
+ACSD-47444 パッチを適用すると、PHP 7.4 上の既知の製品に対して存在しない特定のカテゴリパスにアクセスする際に _[!UICONTROL Trying to access array offset on value of type bool]_のエラーが発生する問題が解決されます。このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.22 がインストールされている場合に使用できます。
 
 ## 影響を受ける製品とバージョン
 
@@ -25,11 +26,11 @@ ACSD-47444 パッチを適用すると、PHP 7.4 上の既知の製品に対し�
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-PHP 7.4 で、既知の製品に対して存在しない特定のカテゴリパスにアクセスすると、_[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;というエラーが発生します。
+PHP 7.4 で、既知の製品に対して存在しない特定のカテゴリパスにアクセスすると、_[!UICONTROL Trying to access array offset on value of type bool]_というエラーが発生します。
 
 <u> 前提条件 </u>:
 
@@ -55,15 +56,15 @@ _[!UICONTROL Notice: Trying to access array offset on value of type bool in /app
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [ アップグレードとパッチ/パッチの適用 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 関連資料
 
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
 * [ を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
 
 
-QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)」を参照してください。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

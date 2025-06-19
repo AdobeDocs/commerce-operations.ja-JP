@@ -4,7 +4,8 @@ description: 複数のソースが割り当てられている商品の B2B Quote
 feature: B2B
 role: Admin, Developer
 exl-id: c5307785-a4c6-4d0c-9009-0d0caee97b3d
-source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -27,7 +28,7 @@ ACSD-54680 パッチは、複数のソースが割り当てられている製品
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -37,7 +38,7 @@ ACSD-54680 パッチは、複数のソースが割り当てられている製品
 
 1. **[!UICONTROL Admin]**/**[!UICONTROL Store]**/**[!UICONTROL Sources]** に移動して、2 つの新しいソース（**Source 1** と **Source 2** を作成します。
 1. **[!UICONTROL Admin]**/**[!UICONTROL Store]**/**[!UICONTROL Stocks]** に移動して、新しい在庫を作成します。**在庫 A** をメイン web サイトに割り当て、**Source 1** と **Source 2** を割り当てます。
-1. シンプルな商品を作成し、**Source 1&rbrace; と** 2&rbrace;Source 2 **を割り当て、各ソースに対して数量= *2* を設定します。**（その結果、製品の販売可能数量は *4* になります。）
+1. シンプルな商品を作成し、**Source 1} と** 2}Source 2 **を割り当て、各ソースに対して数量= *2* を設定します。**（その結果、製品の販売可能数量は *4* になります。）
 1. 会社アカウントを作成します。
 1. **[!UICONTROL Storefront]** に移動し、会社アカウントにログインします。
 1. シンプルな製品を数量= *4* で買い物かごに追加します。
@@ -63,15 +64,15 @@ report.CRITICAL: TypeError: number_format() expects parameter 1 to be float, nul
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
 * [ を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
 
 
-QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)」を参照してください。
+QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。

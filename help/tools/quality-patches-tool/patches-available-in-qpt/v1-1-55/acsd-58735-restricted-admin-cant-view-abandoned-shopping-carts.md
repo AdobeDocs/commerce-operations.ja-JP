@@ -1,16 +1,16 @@
 ---
-title: 「ACSD-58735：制限付き管理者は、関連する web サイトの顧客アカウントで放棄された買い物かごを表示できない」
+title: ACSD-58735：制限付き管理者は、関連する web サイトの顧客アカウントで放棄された買い物かごを表示できません
 description: ACSD-58735 パッチを適用すると、Adobe Commerceの問題を修正できます。この問題では、関連する web サイトのCommerce管理者のカスタマーアカウントページで、制限された管理者が放棄された買い物かごを表示できません。
 feature: Shopping Cart, Admin Workspace, Customers
 role: Admin, Developer
-source-git-commit: 35bae8cff40235957f8fea418a43ccead13536da
+exl-id: b5dcc12f-325d-4de5-bae5-ff938ec77b13
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
 
 ---
-
-
 
 # ACSD-58735：制限付き管理者は、関連する web サイトの顧客アカウントで放棄された買い物かごを表示できません
 
@@ -32,7 +32,7 @@ ACSD-58735 パッチを使用すると、制限付きのロールを持つ管理
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -57,8 +57,8 @@ ACSD-58735 パッチを使用すると、制限付きのロールを持つ管理
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 

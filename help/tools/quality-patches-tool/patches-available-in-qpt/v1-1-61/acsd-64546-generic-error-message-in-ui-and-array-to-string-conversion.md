@@ -3,13 +3,14 @@ title: ACSD-64546:UPS ラベル作成中の UI および配列から文字列へ
 description: ACSD-64546 パッチを適用すると、UI に一般的なエラーメッセージが表示され、UPS ラベルの作成中に文字列変換例外の配列がログに記録されるAdobe Commerceの問題が修正されます。 パッチを適用すると、UI とログに正しいエラーが表示されるようになります。
 feature: Shipping/Delivery
 role: Admin, Developer
-source-git-commit: f50da09cec35b3a72208f17b6832e3068de9c874
+exl-id: 458371bc-4afe-4675-b090-5797e05c5b88
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64546:UPS ラベル作成中の UI および *配列から文字列への変換* 例外の一般的なエラーメッセージ
 
@@ -25,7 +26,7 @@ ACSD-64546 パッチは、汎用のエラーメッセージが UI に表示さ�
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -60,7 +61,7 @@ UI に一般的なエラーメッセージが表示され、UPS ラベルの作�
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * Adobe Commerce on Cloud Infrastructure: アップグレードとパッチ > Commerce on Cloud Infrastructure ガイドのパッチの適用
 
 ## 関連資料

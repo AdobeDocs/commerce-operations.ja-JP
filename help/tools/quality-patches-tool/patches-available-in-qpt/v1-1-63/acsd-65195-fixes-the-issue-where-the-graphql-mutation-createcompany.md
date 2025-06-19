@@ -3,13 +3,14 @@ title: ACSD-65195:GraphQL「createCompany」ミューテーションが、必要
 description: ACSD-65195 パッチを適用すると、GraphQLの「createCompany」ミューテーションによって、地域を必要としない国でエラーがスローされるAdobe Commerceの問題を修正できます。
 feature: B2B, Companies, GraphQL
 role: Admin, Developer
-source-git-commit: 8eb1d7f9d787ddb3b1cc619744920ab8a9914ae8
+exl-id: b9eed00c-26f2-47fe-b1a0-6b020527f0c1
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65195:GraphQL `createCompany` mutation が、必要なリージョンのない国に対してエラーを返す
 
@@ -27,7 +28,7 @@ ACSD-65195 パッチは、[!UICONTROL GraphQL] `createCompany` ミューテー�
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -52,7 +53,7 @@ ACSD-65195 パッチは、[!UICONTROL GraphQL] `createCompany` ミューテー�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * Adobe Commerce on Cloud Infrastructure: アップグレードとパッチ > Commerce on Cloud Infrastructure ガイドのパッチの適用
 
 ## 関連資料

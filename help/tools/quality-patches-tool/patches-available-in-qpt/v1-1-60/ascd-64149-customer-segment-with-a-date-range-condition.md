@@ -3,13 +3,14 @@ title: ACSD-64149：編集する日付が 1 つだけの場合、[!UICONTROL Dat
 description: ACSD-64149 パッチを適用すると、**[!UICONTROL Date range]**条件を持つ顧客セグメントを、1 つの日付のみを編集した場合に保存できるAdobe Commerceの問題を修正できます。
 feature: Customers, Admin Workspace
 role: Admin, Developer
-source-git-commit: c1c5256aee44ce65e9339cf3985e53f710fc7c8a
+exl-id: 5423bbd3-75e9-4137-b2d5-3a0ceb3384ad
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64149：編集する日付が 1 つだけの場合、[!UICONTROL Date range] 条件を持つ顧客セグメントを保存できます
 
@@ -27,7 +28,7 @@ ACSD-64149 パッチでは、いずれかの日付のみを編集した場合に
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -71,7 +72,7 @@ ACSD-64149 パッチでは、いずれかの日付のみを編集した場合に
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * Adobe Commerce on Cloud Infrastructure: アップグレードとパッチ > Commerce on Cloud Infrastructure ガイドのパッチの適用
 
 ## 関連資料

@@ -1,9 +1,11 @@
 ---
-title: '概要： [!DNL Quality Patches Tool]  （QPT） v1.1.50'
+title: 概要： [!DNL Quality Patches Tool]  （QPT） v1.1.50
 description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.50 で使用可能なパッチによって修正された問題について詳しく説明します。
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+exl-id: 4e136531-6bd4-4294-9a5a-66d19eb136db
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
@@ -21,7 +23,7 @@ QPT v1.1.50 には、次のパッチが含まれています。
 1. **ACSD-46938**：実 `setup:upgrade` 動中に DB トリガーを再作成する際のパフォーマンスの問題を修正しました。
 1. **ACSD-48210**：特定のストア表示で *[!UICONTROL website scope]* 属性を更新すると、グローバルスコープの属性値が上書きされる問題を修正しました。
 1. **ACSD-54887**:*[!UICONTROL Persistent Shopping Cart]* を有効にしてカスタマーセッションの有効期限が切れた後に、お客様の買い物かごがクリアされる問題を修正しました。
-1. **ACSD-58141**:[!UICONTROL L2 Redis cache] が有効になっており、お客様が管理者から更新されている場合に、ログインしている `PHPSESSID` 客様のストアフロント領域でPOSTリクエストに対して CJA が再生成される問題を修正しました。
+1. **ACSD-58141**:[!UICONTROL L2 Redis cache] が有効になっており、顧客が管理者から更新されている場合に、ログインしている顧客のストアフロント領域で `PHPSESSID` が POST リクエストを再生成する問題を修正しました。
 1. **ACSD-58352**：リクエストヘッダーでデフォルト以外のストア表示が指定されている場合に、デフォルトのストア表示の戻り属性ラベルがGraphQL API を介して返される問題を修正しました。
 1. **ACSD-58442**：幅が *768px* のデバイスがモバイルとして扱われ、メニューとヘッダーがデスクトップではなくモバイルビューに読み込まれる問題を修正しました。
 1. **ACSD-58790**:[!DNL Chrome] のモバイル表示の製品詳細ページ画像の *ピンチからズーム* 機能を修正しました。

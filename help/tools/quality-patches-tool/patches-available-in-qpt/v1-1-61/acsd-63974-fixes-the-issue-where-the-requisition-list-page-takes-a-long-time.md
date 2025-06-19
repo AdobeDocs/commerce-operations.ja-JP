@@ -3,13 +3,14 @@ title: ACSD-63974：ページネーションで読み込み時間 [!UICONTROL Re
 description: ACSD-63974 パッチを適用して、項目が多すぎると [!UICONTROL Requisition List] ページの読み込みに時間がかかる問題を修正してください。
 feature: B2B
 role: Admin, Developer
-source-git-commit: e5f8112b870e3550b4f3a9113be48428a54d454a
+exl-id: 1798baa3-da2f-44eb-8312-1f1b3f75b24d
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63974：ページネーションで読み込み時間 [!UICONTROL Requisition List] 遅くなる問題を修正しました
 
@@ -27,7 +28,7 @@ ACSD-63974 パッチは、項目が多すぎると **[!UICONTROL Requisition Lis
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -62,7 +63,7 @@ ACSD-63974 パッチは、項目が多すぎると **[!UICONTROL Requisition Lis
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * Adobe Commerce on Cloud Infrastructure: アップグレードとパッチ > Commerce on Cloud Infrastructure ガイドのパッチの適用
 
 ## 関連資料

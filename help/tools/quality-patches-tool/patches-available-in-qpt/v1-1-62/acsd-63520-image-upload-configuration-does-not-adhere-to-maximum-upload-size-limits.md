@@ -3,13 +3,14 @@ title: ACSD-63520：画像アップロード設定を使用してアップロー
 description: 管理パネルの画像アップロード設定を使用してアップロードされた画像が、設定された最大アップロードサイズの制限に従わないAdobe Commerceの問題を修正するために、ACSD-63520 パッチを適用してください。
 feature: Media, Products
 role: Admin, Developer
-source-git-commit: 987d335f03d552763f75adb73890787abf235e66
+exl-id: 5132bfa9-813a-4623-8e02-a8801f6396e8
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63520:[!UICONTROL Image Upload Configuration] 経由でアップロードされた画像が、設定されたサイズ制限を超えています
 
@@ -25,7 +26,7 @@ ACSD-63520 パッチは、[!UICONTROL Images Upload Configuration] を介して�
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがお使いの [!DNL Adobe Commerce] バージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: パッチを検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがお使いの [!DNL Adobe Commerce] バージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: パッチを検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -64,8 +65,8 @@ ACSD-63520 パッチは、[!UICONTROL Images Upload Configuration] を介して�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 

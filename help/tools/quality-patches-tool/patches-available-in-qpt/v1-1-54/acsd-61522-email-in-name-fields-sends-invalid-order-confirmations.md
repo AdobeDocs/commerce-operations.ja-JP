@@ -1,15 +1,16 @@
 ---
-title: 「ACSD-61522:*姓と名*フィールドのメールアドレスが無効な注文確認を送信する」
+title: ACSD-61522:「名」フィールドと「姓」フィールドのメールアドレスが無効な注文確認を送信する
 description: ACSD-61522 パッチを適用すると、Adobe Commerceの問題を修正できます。この問題では、ゲスト顧客の*[!UICONTROL First Name]*および*[!UICONTROL Last Name]* フィールドにメールアドレスを入力すると、無効な注文確認メールが送信されます。
 feature: Checkout, Customers
 role: Admin, Developer
-source-git-commit: d56f4fda007c1499bdba82ac3db9ac5ea1d34b0e
+exl-id: e1ed7a57-4054-44db-bc17-9b9056096fce
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61522:「名 *フィールドのメールアドレスが無効な注文確認を送信する*
 
@@ -27,7 +28,7 @@ ACSD-61522 パッチでは、ゲスト顧客の *[!UICONTROL First Name]* およ
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -57,8 +58,8 @@ ACSD-61522 パッチでは、ゲスト顧客の *[!UICONTROL First Name]* およ
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 

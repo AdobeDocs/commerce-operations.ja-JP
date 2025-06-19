@@ -1,9 +1,11 @@
 ---
-title: '概要： [!DNL Quality Patches Tool]  （QPT） v1.1.33'
+title: 概要： [!DNL Quality Patches Tool]  （QPT） v1.1.33
 description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.33 で使用可能なパッチによって修正された問題について詳しく説明します。
 feature: Tools and External Services
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+exl-id: 31812668-1d24-4da6-992f-981c259e00da
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 0%
@@ -29,7 +31,7 @@ QPT v1.1.33 には、次のパッチが含まれています。
 1. **ACSD-51792**:[!DNL Google Tag Manager] 4 が有効な場合に、ページにインプレッションイベントが表示されない問題を修正しました。
 1. **ACSD-51471**：自身にスケジュール済みアップデートがあるシンプルな製品を使用しているバンドル製品について、管理者ユーザーがスケジュール済みアップデートを保存できない問題を修正しました。
 1. **ACSD-51700**：管理画面でダウンロード可能な製品編集ページのストアビューを切り替えるときに発生するエラーを修正しました。
-1. **ACSD-51120**：ステージングアップデートにより更新されたGraphQL ブロックを含むCMS ページのCMS GETリクエストのキャッシュがクリアされない問題を修正しました。
+1. **ACSD-51120**：ステージングアップデートにより更新されたGET ブロックを含んだCMS ページのGraphQL CMS リクエストのキャッシュがクリアされない問題を修正しました。
 1. **ACSD-51240**：会社登録フォームで登録した場合に、アップロードされたファイルが見つからない問題を修正しました。
 1. **ACSD-51907**：制限付き管理者ユーザーが、オフラインでの払い戻しでクレジットメモを作成できない問題を修正しました。
 1. **ACSD-52148**:[!UICONTROL Google V3 reCAPTCHA Admin] ログインが失敗することがある問題を修正しました。

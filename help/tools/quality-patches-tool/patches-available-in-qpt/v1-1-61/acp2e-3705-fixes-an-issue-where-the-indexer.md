@@ -3,13 +3,14 @@ title: 'ACP2E-3705: 「MAGE_INDEXER_INDEXER_THREADS_COUNT」が設定されて�
 description: ACP2E-3705 パッチを適用して、「MAGE_INDEXER_THREADS_COUNT」が設定されている場合に「indexer_update_all_views」 cron の実行が失敗するAdobe Commerceの問題を修正してください。
 feature: Catalog Management, B2B
 role: Admin, Developer
-source-git-commit: 4f719c62fdd9fd960548799c9872f73c76997278
+exl-id: 111325fa-8ed5-45f9-9e68-b52f4425d253
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3705:`MAGE_INDEXER_THREADS_COUNT` が設定されている場合、`indexer_update_all_views` cron 実行が失敗する
 
@@ -31,7 +32,7 @@ ACP2E-3705 パッチは、`MAGE_INDEXER_THREADS_COUNT` が設定されている�
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -70,7 +71,7 @@ Magento\Framework\DB\Adapter\TableNotFoundException: SQLSTATE[42S02]: Base table
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * Adobe Commerce on Cloud Infrastructure: アップグレードとパッチ > Commerce on Cloud Infrastructure ガイドのパッチの適用
 
 ## 関連資料

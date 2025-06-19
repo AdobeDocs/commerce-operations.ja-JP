@@ -3,13 +3,14 @@ title: ACSD-62952：ストアフロントにギフトレジストリの日付が
 description: ACSD-62952 パッチを適用すると、ストアフロントにギフトレジストリの日付が正しく表示されないAdobe Commerceの問題が修正されます。
 feature: Gift, Storefront
 role: Admin, Developer
-source-git-commit: 1fad4ecf1bab1df7a106ca12fe0431f19b65fb68
+exl-id: c11e95ab-775d-4aa7-828b-29ec52685d47
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62952：ストアフロントにギフトレジストリの日付が正しく表示されない
 
@@ -27,7 +28,7 @@ ACSD-62952 パッチにより、ギフトレジストリの日付がストアフ
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -54,7 +55,7 @@ ACSD-62952 パッチにより、ギフトレジストリの日付がストアフ
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * Adobe Commerce on Cloud Infrastructure: アップグレードとパッチ > Commerce on Cloud Infrastructure ガイドのパッチの適用
 
 ## 関連資料
@@ -62,4 +63,3 @@ ACSD-62952 パッチにより、ギフトレジストリの日付がストアフ
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
 * [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
-

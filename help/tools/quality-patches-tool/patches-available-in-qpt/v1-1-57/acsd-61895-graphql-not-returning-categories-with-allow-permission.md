@@ -3,13 +3,14 @@ title: '表示が制限されたプライベート共有カタログの ACSD-618
 description: '同じカテゴリに対して制限付きのプライベート共有カタログが作成された場合、（許可されたすべてのカテゴリを含むパブリック共有カタログを使用して）ゲスト顧客の応答がカテゴリを返さないAdobe Commerceの問題を修正するために ACSD-61895 パッチを適用します  [!DNL GraphQL] '
 feature: Categories, GraphQL, Roles/Permissions
 role: Admin, Developer
-source-git-commit: f929f76dbe79c3764e2c157576b4f6db867673cf
+exl-id: ef986fa6-e8bc-4322-80f2-fa0c5d5e8d40
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61895：表示が制限されたプライベート共有カタログの [!DNL GraphQL] `categories` クエリが失敗する
 
@@ -31,7 +32,7 @@ ACSD-61895 パッチは、同じカテゴリに対して制限を持つプライ
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -100,8 +101,8 @@ ACSD-61895 パッチは、同じカテゴリに対して制限を持つプライ
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 
 ## 関連資料
@@ -109,4 +110,3 @@ ACSD-61895 パッチは、同じカテゴリに対して制限を持つプライ
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
 * [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
-

@@ -3,13 +3,14 @@ title: ACSD-62481:[!UICONTROL Persistence] が有効になっている場合で�
 description: チェックアウト時にログインポップアップを使用すると永続的な買い物かご機能が失敗するAdobe Commerceの問題を修正するために、ACSD-62481 パッチを適用してください。
 feature: Shopping Cart, Checkout
 role: Admin, Developer
-source-git-commit: 27a98c42f2c514b3dd1a2f59c140b60b7ac26592
+exl-id: 79fb3161-f56e-45f3-9933-cf95703f1554
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62481:*[!UICONTROL Persistence]* が有効になっている場合でも、買い物かごは空のままです
 
@@ -27,7 +28,7 @@ ACSD-62481 パッチでは、チェックアウト時にログインポップア
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -69,7 +70,7 @@ ACSD-62481 パッチでは、チェックアウト時にログインポップア
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Sourceオンプレミス：[[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * Adobe Commerce on Cloud Infrastructure: アップグレードとパッチ > Commerce on Cloud Infrastructure ガイドのパッチの適用
 
 ## 関連資料
