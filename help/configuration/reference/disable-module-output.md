@@ -2,9 +2,9 @@
 title: モジュール出力を無効にする
 description: モジュール出力を無効にする方法を説明します。
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: fee09845777e23717e618ac57df4158d6b172d4f
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -101,4 +101,7 @@ bin/magento cache:clean config
    ```
 
 この例では、`Magento_Review` モジュールの出力は無効になっており、顧客は製品をレビューできなくなります。
-出力を再度有効にするには、値を `0` に設定します。
+
+### モジュール出力を再度有効にする
+
+出力を再度有効にするには、モジュールの値を `0` に設定するか、`config.php` ファイルからライン/モジュールを削除します。
