@@ -48,7 +48,7 @@ opensearch:
     disk: 1024
 ```
 
-クラウドインフラストラクチャー上の [2}Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) ガイドの { サービスの設定 _を参照してください。_
+クラウドインフラストラクチャー上の [2&rbrace;Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) ガイドの &lbrace; サービスの設定 _を参照してください。_
 
 >[!TAB Commerce オンプレミス ]
 
@@ -60,7 +60,7 @@ opensearch:
 
 PHP には `memory_limit` 設定など特定の設定があり、Adobe Commerceを使用する際の一般的な問題を回避するのに役立ちます。 [ 必要な PHP 設定 ](prerequisites/php-settings.md) を参照してください。
 
-クラウド設定のガイダンスについては、_Cloud Infrastructure でのCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) ガイドの [PHP 設定_ を参照してください。
+クラウド設定のガイダンスについては、_Cloud Infrastructure でのCommerce[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) ガイドの PHP 設定_ を参照してください。
 
 ### PHP OPcache
 
@@ -84,7 +84,7 @@ PHPUnit v9 （コマンドラインツールとして）。
 
 >[!TIP]
 >
->クラウドインフラストラクチャーでの PHP 拡張機能については、_クラウドインフラストラクチャー上のCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions) ガイドの [PHP 拡張機能を有効にする_ を参照してください。
+>クラウドインフラストラクチャーでの PHP 拡張機能については、_クラウドインフラストラクチャー上のCommerce[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions) ガイドの PHP 拡張機能を有効にする_ を参照してください。
 
 >[!BEGINTABS]
 
@@ -153,14 +153,14 @@ Adobe Commerceには、一部の操作で次のシステムツールが必要で
 - 自己署名 SSL 証明書はサポートされていません。
 - Transport Layer Security （TLS）要件 – PayPal と `repo.magento.com` の両方で TLS 1.2 以降が必要です。
 
-クラウドインフラストラクチャー上のCommerceについては、_クラウドインフラストラクチャー上のCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) ガイドの [Fastly 設定_ を参照してください。
+クラウドインフラストラクチャー上のCommerceについては、_クラウドインフラストラクチャー上のCommerce[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) ガイドの Fastly 設定_ を参照してください。
 
 ### Xdebug
 
 Adobe Commerceの場合は、[php_xdebug 2.5.x](https://xdebug.org/download) 以降を使用します（開発環境のみ。パフォーマンスに悪影響を与える可能性があります）。
 
-Cloud 上のAdobe Commerceについては、_Cloud Infrastructure 上のCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) ガイドの [Xdebug の設定_ を参照してください。
+Cloud 上のAdobe Commerceについては、_Cloud Infrastructure 上のCommerce[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) ガイドの Xdebug の設定_ を参照してください。
 
 >[!NOTE]
 >
->`xdebug` には既知の問題があり、Adobe Commerceのインストールや、インストール後のストアフロントまたは管理者へのアクセスに影響を与える可能性があります。 [3}Commerce サポートナレッジベース ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) の `xdebug` インストールに影響を与える既知の問題 _を参照してください。_
+>`xdebug` には既知の問題があり、Adobe Commerceのインストールや、インストール後のストアフロントまたは管理者へのアクセスに影響を与える可能性があります。 [3&rbrace;Commerce サポートナレッジベース ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) の `xdebug` インストールに影響を与える既知の問題 _を参照してください。_
