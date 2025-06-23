@@ -1,5 +1,5 @@
 ---
-source-git-commit: ce1fa1161bbb246a1d8dde50bfcaa480ddec33e2
+source-git-commit: 796000b57319966119650c60a30c6d01c61ec4a8
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">2.4.9-alpha1</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">2.4.9-alpha1</a>
         </td>
         <td>2025 年 6 月 10 日（Pt）</td>
     </tr><!-- patch_releases -->
@@ -41,13 +41,13 @@ ht-degree: 0%
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p1">2.4.8-p1</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p1">2.4.8-p1</a>
         </td>
         <td>2025 年 6 月 10 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">2.4.8</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">2.4.8</a>
         </td>
         <td>年 4 月  8、2025</td>
     </tr><!-- patch_releases -->
@@ -68,43 +68,43 @@ ht-degree: 0%
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p6">2.4.7-p6</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p6">2.4.7-p6</a>
         </td>
         <td>2025 年 6 月 10 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5</a>
         </td>
         <td>年 4 月  8、2025</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p4">2.4.7-p4</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p4">2.4.7-p4</a>
         </td>
         <td>2025 年 2 月 11 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p3">2.4.7-p3</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p3">2.4.7-p3</a>
         </td>
         <td>October  8、2024</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p2">2.4.7-p2</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p2">2.4.7-p2</a>
         </td>
         <td>2024 年 8 月 13 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p1">2.4.7-p1</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p1">2.4.7-p1</a>
         </td>
         <td>2024 年 6 月 11 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-7">2.4.7</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7">2.4.7</a>
         </td>
         <td>年 4 月  9、2024</td>
     </tr><!-- patch_releases -->
@@ -125,73 +125,73 @@ ht-degree: 0%
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p11">2.4.6-p11</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p11">2.4.6-p11</a>
         </td>
         <td>2025 年 6 月 10 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p10">2.4.6-p10</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p10">2.4.6-p10</a>
         </td>
         <td>年 4 月  8、2025</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p9">2.4.6-p9</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p9">2.4.6-p9</a>
         </td>
         <td>2025 年 2 月 11 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p8">2.4.6-p8</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p8">2.4.6-p8</a>
         </td>
         <td>October  8、2024</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p7">2.4.6-p7</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p7">2.4.6-p7</a>
         </td>
         <td>2024 年 8 月 13 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p6">2.4.6-p6</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p6">2.4.6-p6</a>
         </td>
         <td>2024 年 6 月 11 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p5">2.4.6-p5</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p5">2.4.6-p5</a>
         </td>
         <td>年 4 月  9、2024</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p4">2.4.6-p4</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p4">2.4.6-p4</a>
         </td>
         <td>2024 年 2 月 13 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p3">2.4.6-p3</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p3">2.4.6-p3</a>
         </td>
         <td>2023 年 10 月 10 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p2">2.4.6-p2</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p2">2.4.6-p2</a>
         </td>
         <td>年 8 月  8、2023</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p1">2.4.6-p1</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p1">2.4.6-p1</a>
         </td>
         <td>2023 年 6 月 13 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-6">2.4.6</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-6">2.4.6</a>
         </td>
         <td>2023 年 3 月 14 日（Pt）</td>
     </tr><!-- patch_releases -->
@@ -213,85 +213,85 @@ ht-degree: 0%
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p13">2.4.5-p13</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p13">2.4.5-p13</a>
         </td>
         <td>2025 年 6 月 10 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p12">2.4.5-p12</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p12">2.4.5-p12</a>
         </td>
         <td>年 4 月  8、2025</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p11">2.4.5-p11</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p11">2.4.5-p11</a>
         </td>
         <td>2025 年 2 月 11 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p10">2.4.5-p10</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p10">2.4.5-p10</a>
         </td>
         <td>October  8、2024</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p9">2.4.5-p9</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p9">2.4.5-p9</a>
         </td>
         <td>2024 年 8 月 13 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p8">2.4.5-p8</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p8">2.4.5-p8</a>
         </td>
         <td>2024 年 6 月 11 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p7">2.4.5-p7</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p7">2.4.5-p7</a>
         </td>
         <td>年 4 月  9、2024</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p6">2.4.5-p6</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p6">2.4.5-p6</a>
         </td>
         <td>2024 年 2 月 13 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p5">2.4.5-p5</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p5">2.4.5-p5</a>
         </td>
         <td>2023 年 10 月 10 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p4">2.4.5-p4</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p4">2.4.5-p4</a>
         </td>
         <td>年 8 月  8、2023</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p3">2.4.5-p3</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p3">2.4.5-p3</a>
         </td>
         <td>2023 年 6 月 13 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p2">2.4.5-p2</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p2">2.4.5-p2</a>
         </td>
         <td>2023 年 3 月 14 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p1">2.4.5-p1</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p1">2.4.5-p1</a>
         </td>
         <td>2022 年 10 月 11 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-5">2.4.5</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-5">2.4.5</a>
         </td>
         <td>年 8 月  9、2022</td>
     </tr><!-- patch_releases -->
@@ -301,7 +301,7 @@ ht-degree: 0%
 ## 2.4.4
 
 2.4.4 リリースラインの通常サポートは 2025 年 4 月 12 日（PT）に終了しました。
-2.4.4 リリースラインのサポートの拡張は 2026 年 8 月 14 日（PT）に終了します。
+2.4.4 リリースラインのサポートの拡張は 2026 年 4 月 14 日（PT）に終了します。
 
 <table>
   <thead>
@@ -313,91 +313,91 @@ ht-degree: 0%
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p14">2.4.4-p14</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p14">2.4.4-p14</a>
         </td>
         <td>年 6 月  5、2025 年</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p13">2.4.4-p13</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p13">2.4.4-p13</a>
         </td>
         <td>年 4 月  8、2025</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p12">2.4.4-p12</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p12">2.4.4-p12</a>
         </td>
         <td>2025 年 2 月 11 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p11">2.4.4-p11</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p11">2.4.4-p11</a>
         </td>
         <td>October  8、2024</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p10">2.4.4-p10</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p10">2.4.4-p10</a>
         </td>
         <td>2024 年 8 月 13 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p9">2.4.4-p9</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p9">2.4.4-p9</a>
         </td>
         <td>2024 年 6 月 11 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p8">2.4.4-p8</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p8">2.4.4-p8</a>
         </td>
         <td>年 4 月  9、2024</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p7">2.4.4-p7</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p7">2.4.4-p7</a>
         </td>
         <td>2024 年 2 月 13 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p6">2.4.4-p6</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p6">2.4.4-p6</a>
         </td>
         <td>2023 年 10 月 10 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p5">2.4.4-p5</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p5">2.4.4-p5</a>
         </td>
         <td>年 8 月  8、2023</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p4">2.4.4-p4</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p4">2.4.4-p4</a>
         </td>
         <td>2023 年 6 月 13 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p3">2.4.4-p3</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p3">2.4.4-p3</a>
         </td>
         <td>2023 年 3 月 14 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p2">2.4.4-p2</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p2">2.4.4-p2</a>
         </td>
         <td>2022 年 10 月 11 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p1">2.4.4-p1</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p1">2.4.4-p1</a>
         </td>
         <td>年 8 月  9、2022</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-4">2.4.4</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-4">2.4.4</a>
         </td>
         <td>2022 年 4 月 12 日（Pt）</td>
     </tr><!-- patch_releases -->
@@ -418,31 +418,31 @@ ht-degree: 0%
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-3-patches#adobe-commerce-243-p3">2.4.3-p3</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-3-patches#adobe-commerce-243-p3">2.4.3-p3</a>
         </td>
         <td>年 8 月  9、2022</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-3-patches#adobe-commerce-243-p2">2.4.3-p2</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-3-patches#adobe-commerce-243-p2">2.4.3-p2</a>
         </td>
         <td>2022 年 4 月 12 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-3-patches#p1">2.4.3-p1</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-3-patches#p1">2.4.3-p1</a>
         </td>
         <td>2021 年 10 月 12 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-3">2.4.3</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-3">2.4.3</a>
         </td>
         <td>2021 年 8 月 10 日（Pt）</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-2-patches#adobe-commerce-242-p2">2.4.2-p2</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-2-patches#adobe-commerce-242-p2">2.4.2-p2</a>
         </td>
         <td>2021 年 8 月 10 日（Pt）</td>
     </tr>
@@ -454,7 +454,7 @@ ht-degree: 0%
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-2">2.4.2</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-2">2.4.2</a>
         </td>
         <td>年 2 月  9、2021 年</td>
     </tr>
@@ -466,7 +466,7 @@ ht-degree: 0%
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-1">2.4.1</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-1">2.4.1</a>
         </td>
         <td>2020 年 10 月 15 日（Pt）</td>
     </tr>
@@ -478,7 +478,7 @@ ht-degree: 0%
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-0">2.4.0</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-0">2.4.0</a>
         </td>
         <td>2020 年 7 月 28 日（Pt）</td>
     </tr><!-- patch_releases -->
