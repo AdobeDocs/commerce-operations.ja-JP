@@ -2,10 +2,10 @@
 user-guide-title: 設定ガイド
 user-guide-description: Adobe Commerce アプリケーションの機能とサービスを設定します。
 feature: Configuration
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 1850301e0b7f1abbc54613209940dd63d16ef145
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 0%
+source-wordcount: '367'
+ht-degree: 1%
 
 ---
 
@@ -16,10 +16,10 @@ ht-degree: 0%
 + 一般設定 {#setup}
    + [アプリケーションの初期化とブートストラップ](bootstrap/initialization.md)
    + [アプリケーションモード](bootstrap/application-modes.md)
-   + [Bootstrapパラメーター](bootstrap/set-parameters.md)
+   + [Bootstrap パラメーター](bootstrap/set-parameters.md)
    + [プロファイル](bootstrap/mage-profiler.md)
    + [ベースディレクトリのパス](bootstrap/mage-directory.md)
-+ 展開 {#deployment}
++ デプロイメント {#deployment}
    + [デプロイメントの概要](deployment/overview.md)
    + [単一マシンの導入](deployment/single-machine.md)
    + [パイプラインデプロイメント](deployment/technical-details.md)
@@ -28,7 +28,7 @@ ht-degree: 0%
    + [システム設定の作成](deployment/build-system.md)
    + [実稼動システムのセットアップ](deployment/production-system.md)
    + [ファイルシステムのアクセス権限](deployment/file-system-permissions.md)
-   + の例{#examples}
+   + 例 {#examples}
       + [共有設定の使用](deployment/example-shared-configuration.md)
       + [CLI コマンドの使用](deployment/example-using-cli.md)
       + [環境変数の使用](deployment/example-environment-variables.md)
@@ -41,6 +41,10 @@ ht-degree: 0%
       + [Redis の設定](cache/config-redis.md)
       + [既定のキャッシュに Redis を使用](cache/redis-pg-cache.md)
       + [セッションストレージに Redis を使用](cache/redis-session.md)
+   + Valkey {#valkey}
+      + [Valkey の設定](cache/config-valkey.md)
+      + [デフォルトキャッシュに ValueKey を使用](cache/valkey-pg-cache.md)
+      + [セッションストレージに Valkey を使用](cache/valkey-session.md)
    + ワニス {#varnish}
       + [ワニスの概要](cache/config-varnish.md)
       + [ワニスをインストール](cache/config-varnish-install.md)
@@ -96,11 +100,11 @@ ht-degree: 0%
    + [サービス](reference/config-reference-services.md)
    + [機密およびシステム固有の設定](reference/config-reference-sens.md)
    + [設定を上書き](reference/override-config-settings.md)
-+ Cron Jobs {#crons}
++ Cron ジョブ {#crons}
    + [Cron ジョブとグループ](cron/custom-cron.md)
    + [Cron リファレンスのカスタマイズ](cron/custom-cron-reference.md)
    + [カスタム cron ジョブの設定](cron/custom-cron-tutorial.md)
-+ Logs {#logs}
++ ログ {#logs}
    + [カスタマイズされたログ](logs/custom-logging.md)
    + [ロガーインターフェイス](logs/logger-interface.md)
    + [データベースアクティビティを記録](logs/database-activity.md)
@@ -110,7 +114,7 @@ ht-degree: 0%
    + [メッセージキューの管理](queues/manage-message-queues.md)
    + [Amazon MQ の設定](queues/aws-mq.md)
    + [消費者](queues/consumers.md)
-+ Multiple sites {#multi-sites}
++ 複数のサイト {#multi-sites}
    + [複数のサイトとビュー](multi-sites/ms-overview.md)
    + [データベース エンティティ増分 ID](multi-sites/change-increment-id.md)
    + [管理者で設定](multi-sites/ms-admin.md)
@@ -129,7 +133,7 @@ ht-degree: 0%
    + [クリックジャッキング攻撃](security/xframe-options.md)
 + ストレージ {#storage}
    + [データベース プロファイラー](storage/db-profiler.md)
-   + リモート記憶域 {#remote-storage}
+   + リモートストレージ {#remote-storage}
       + [リモートストレージモジュール](remote-storage/remote-storage.md)
       + [AWS S3 バケット](remote-storage/remote-storage-aws-s3.md)
       + [画像のサイズ変更](remote-storage/remote-storage-image-resize.md)
@@ -139,11 +143,11 @@ ht-degree: 0%
       + [セッションストレージ用の memcached](storage/memcached.md)
       + [centOS の memcached](storage/memcache-centos.md)
       + [ubuntu 上の memcached](storage/memcache-ubuntu.md)
-   + データベース の分割 {#split-db}
+   + データベースの分割 {#split-db}
       + [データベースの分割の概要](storage/multi-master.md)
       + [自動設定](storage/multi-master-masterdb.md)
       + [手動設定](storage/multi-master-manual.md)
       + [分割データベースの検証](storage/multi-master-verify.md)
       + [データベースレプリケーション](storage/multi-master-replication.md)
       + [単一データベースに戻す](storage/revert-split-database.md)
-+ [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
++ [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

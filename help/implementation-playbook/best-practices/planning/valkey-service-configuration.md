@@ -3,9 +3,10 @@ title: Valkey サービス設定のベストプラクティス
 description: Adobe Commerce用の拡張された Valkey キャッシュ実装を使用して、キャッシュパフォーマンスを向上させる方法を説明します。
 role: Developer, Admin
 feature: Best Practices, Cache
-source-git-commit: 107b5bb19c3375be64c216bd89feb8410e2fc2bd
+exl-id: ca1598b0-07c6-4338-aed1-f2ba05375197
+source-git-commit: 1ab977bf2b30c2851609f0bfcc636978e974f07a
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -24,13 +25,13 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-クラウドインフラストラクチャー上の環境設定については、_クラウドインフラストラクチャー上のCommerceガイド_ の [`VALKEY_BACKEND`](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) を参照してください。
+クラウドインフラストラクチャー上の環境設定については、_クラウドインフラストラクチャー上のCommerceガイド_ の [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) を参照してください。
 
-オンプレミスでのインストールの場合は、[ 設定ガイド ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) の _Valkey ページのキャッシュの設定_ を参照してください。
+オンプレミスでのインストールの場合は、[ 設定ガイド ](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) の _Valkey ページのキャッシュの設定_ を参照してください。
 
 >[!NOTE]
 >
->`ece-tools` パッケージの最新バージョンを使用していることを確認します。 そうでない場合は [ 最新バージョンにアップグレード ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) します。 `composer show magento/ece-tools` CLI コマンドを使用すると、ローカル環境にインストールされているバージョンを確認できます。
+>`ece-tools` パッケージの最新バージョンを使用していることを確認します。 そうでない場合は [ 最新バージョンにアップグレード ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) します。 `composer show magento/ece-tools` CLI コマンドを使用すると、ローカル環境にインストールされているバージョンを確認できます。
 
 ### L2 キャッシュメモリのサイズ設定（Adobe Commerce Cloud）
 
@@ -86,11 +87,11 @@ stage:
 
 Commerce詳しくは、_Cloud Infrastructure ガイドの [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) を参照してください_
 
-Adobe Commerceのオンプレミスインストールの場合は、`bin/magento:setup` コマンドを使用して、新しい Valkey キャッシュ実装を設定します。 詳しくは、『 _設定ガイド_ の [ デフォルトキャッシュに対する Valkey の使用 ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) を参照してください。
+Adobe Commerceのオンプレミスインストールの場合は、`bin/magento:setup` コマンドを使用して、新しい Valkey キャッシュ実装を設定します。 詳しくは、『 _設定ガイド_ の [ デフォルトキャッシュに対する Valkey の使用 ](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) を参照してください。
 
 >[!WARNING]
 >
->[ 拡張/分割アーキテクチャ _を使用して、クラウドインフラストラクチャプロジェクト用の Valkey スレーブ接続を設定しないでください ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)_。 これにより、Redis 接続エラーが発生します。 詳しくは、_Cloud Infrastructure のCommerce[ ガイドの ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)Redis 設定ガイダンス_ を参照してください。
+>[ 拡張/分割アーキテクチャ _を使用して、クラウドインフラストラクチャプロジェクト用の Valkey スレーブ接続を設定しないでください ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)_。 これにより、Valkey 接続エラーが発生します。 詳しくは、_Cloud Infrastructure のCommerce[ ガイドの ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)Valkey 設定ガイダンス_ を参照してください。
 
 ## キーをプリロード
 
@@ -113,7 +114,7 @@ stage:
               - '061_SYSTEM_DEFAULT:hash'
 ```
 
-オンプレミス環境でのインストールについては、[ 設定ガイド ](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) の _Valkey プリロード機能_ を参照してください。
+オンプレミス環境でのインストールについては、[ 設定ガイド ](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature) の _Valkey プリロード機能_ を参照してください。
 
 ## 古いキャッシュを有効にする
 
@@ -152,7 +153,7 @@ stage:
 
 >[!NOTE]
 >
->前の例では、`full_page` キャッシュは [Fastly](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/fastly) を使用しているので、クラウドインフラストラクチャプロジェクトのAdobe Commerceには関係ありません。
+>前の例では、`full_page` キャッシュは [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) を使用しているので、クラウドインフラストラクチャプロジェクトのAdobe Commerceには関係ありません。
 
 オンプレミスのインストールを構成する方法については、[ 構成ガイド ](../../../configuration/cache/level-two-cache.md#stale-cache-options) の _古いキャッシュ オプション_ を参照してください。
 
@@ -172,7 +173,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 
 ## キャッシュ圧縮
 
-6 GB を超える Valkey `maxmemory` を使用している場合は、キャッシュ圧縮を使用して、キーが消費する領域を減らすことができます。 クライアントサイドのパフォーマンスにはトレードオフがあることに注意してください。 空きの CPU がある場合は、Adobeが有効にすることをお勧めします。 _設定ガイド_ の [ セッションストレージに Redis を使用 ](../../../configuration/cache/redis-session.md) を参照してください。
+6 GB を超える Valkey `maxmemory` を使用している場合は、キャッシュ圧縮を使用して、キーが消費する領域を減らすことができます。 クライアントサイドのパフォーマンスにはトレードオフがあることに注意してください。 空きの CPU がある場合は、Adobeが有効にすることをお勧めします。 _設定ガイド_ の [ セッションストレージに Valkey を使用 ](../../../configuration/cache/valkey-session.md) を参照してください。
 
 ```yaml
 stage:
@@ -188,8 +189,3 @@ stage:
             compress_threshold: 20480     # do not compress files smaller than this value
             compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~70%)
 ```
-
-## 追加情報
-
-- [Redis ページキャッシュ](../../../configuration/cache/redis-pg-cache.md)
-- [セッションストレージに Redis を使用](../../../configuration/cache/redis-session.md)
