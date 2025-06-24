@@ -4,13 +4,13 @@ description: ACSD-64813 パッチを適用すると、Adobe Commerceの問題を
 feature: B2B, REST, Categories
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 0ed4bde6d78429da5a375a8c50f6b348db5a5ad5
+exl-id: e6fd89c2-d3c0-462f-b328-7a80b456d96d
+source-git-commit: 239a9efcc2ae231b337f654e4e36e6119e6eff7e
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64813:REST API を使用した共有カタログ内のカテゴリ [!DNL B2B] 割り当て解除が遅い
 
@@ -28,7 +28,7 @@ ACSD-64813 パッチでは、[!DNL B2B] 共有カタログのカテゴリの割�
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -38,29 +38,29 @@ REST API を使用して [!DNL B2B] 共有カタログのカテゴリの割り�
 
 1. **[!UICONTROL B2B]**、**[!UICONTROL Company]**、**[!UICONTROL Shared Catalog]** を有効にします。
 1. 30,000 個のアクティブな在庫製品を生成します。
-1. [ カスタム共有カタログ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) を作成し、すべての製品を割り当てます。
+1. [ カスタム共有カタログ ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) を作成し、すべての製品を割り当てます。
 1. デフォルトのルートカテゴリの下に新しいカテゴリを作成し、いくつかの製品を割り当てます。
 1. 管理トークンを使用して、新しいカテゴリ ID で REST API エンドポイント `rest/all/V1/sharedCatalog/<shared_catalog_id>/assignCategories` を呼び出します。
 
-```
-{
-  "categories": [
-    { "id": <new category id> }
-  ]
-}
-```
+   ```
+   {
+     "categories": [
+       { "id": <new category id> }
+     ]
+   }
+   ```
 
 1. 応答が *true* であることを確認します。
 1. `bin/magento cron:run` を 2 回実行するか、再インデックスを実行します。
 1. 管理トークンを使用して、新しいカテゴリ ID で REST API エンドポイント `rest/all/V1/sharedCatalog/<shared_catalog_id>/unassignCategories` を呼び出します。
 
-```
-{
-  "categories": [
-    { "id": <new category id> }
-  ]
-}
-```
+   ```
+   {
+     "categories": [
+       { "id": <new category id> }
+     ]
+   }
+   ```
 
 <u> 期待される結果 </u>:
 
@@ -74,8 +74,8 @@ REST API を使用して [!DNL B2B] 共有カタログのカテゴリの割り�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
