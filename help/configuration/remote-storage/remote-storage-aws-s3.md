@@ -3,9 +3,9 @@ title: リモートストレージ用のAWS S3 バケットの設定
 description: Commerce プロジェクトを設定して、AWS S3 ストレージサービスをリモートストレージに使用します。
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 3f45b61a2f4fd6db161c66182212f3aff5900e26
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Adobeは重大なセキュリティリスクをもたらすため、公共バケットの使用を強く勧めません。
+>Adobeでは重大なセキュリティリスクがあるため、公開バケットの使用は避けるべきです。
 
 **AWS S3 アダプタでリモートストレージを有効にするには**:
 
@@ -43,6 +43,10 @@ ht-degree: 0%
    ```
 
 ## Nginx の設定
+
+>[!NOTE]
+>
+>このアプローチは、クラウドインフラストラクチャプロジェクトのAdobe Commerceには適用されません。 Nginx は、クラウドインフラストラクチャー上のAdobe Commerceでは設定できません。 詳しくは、[ クラウド固有のドキュメント ](cloud-support.md) を参照してください。
 
 Nginx では、`proxy_pass` ディレクティブを使用して認証を実行するために追加の構成が必要です。 `nginx.conf` ファイルに次のプロキシ情報を追加します。
 
