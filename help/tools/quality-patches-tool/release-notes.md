@@ -3,9 +3,9 @@ title: リリースノート
 description: Adobe Commerceで使用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: fe1bec27cb9aa420fd71a0542edd5f82492e17aa
+source-git-commit: c14532e7390a3c123a4f673fca2211bfea9bcaa1
 workflow-type: tm+mt
-source-wordcount: '26682'
+source-wordcount: '26993'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,25 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce プロジェクトにパッチを適用する手順については、[ パッチの適用 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja#apply-individual-patches) を参照してください。 リリース済みパッチの完全なリストを確認するには、『ソフトウェア更新ガイド』の「[[!DNL Quality Patches Tool]：パッチの検索 ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)」を参照してください。
+>Adobe Commerce プロジェクトにパッチを適用する手順については、[ パッチの適用 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) を参照してください。 リリース済みパッチの完全なリストを確認するには、『ソフトウェア更新ガイド』の「[[!DNL Quality Patches Tool]：パッチの検索 ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
 
 >[!INFO]
 >
 >コミュニティがMagento Open Source用に作成した [!DNL quality patches] について詳しくは、[ リリースノート ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+
+## v1.1.67 {#v1-1-67}
+
+* **ACSD-65935** （Adobe Commerce >=2.4.4 &lt;2.4.8 の場合） – 商品が削除されたときに `customerOrders` GraphQL クエリが内部サーバーエラーを返した問題を修正しました。
+* **ACSD-66049** （Adobe CommerceおよびMagento Open Source >=2.4.5-p3 &lt;2.4.6 || >=2.4.7 &lt;2.4.9） - ICU ライブラリバージョンが原因で英語以外のストアフロントに誤った価格が表示される問題を修正しました。
+* **ACSD-66084** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.9） – 完全に割引された商品に対して、`row_total_incl_tax` が 0.00 ではなく、注文 API 応答でゼロに近い残差値として返される問題を修正しました。
+* **ACSD-66118** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.9 の場合） – 設定キャッシュが更新されない場合に、ストアビューコードを更新すると [!UICONTROL Design Configuration] 設定がクリアされる問題を修正しました。
+* **ACSD-66139** （Adobe Commerce >=2.4.7 &lt;2.4.8 の場合） – 存在しない買い物かごまたは非アクティブな買い物かごを注文するためにGraphQLを呼び出すと、*UNDEFINED* エラーコードが返される問題を修正しました。
+* **ACSD-66301** （Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.6-p9 &lt;2.4.7 || >=2.4.7-p4 &lt;2.4.8） – 管理で注文から買い物かごに商品を戻すと、数量が一致しない問題を修正しました。
+* **ACSD-66434** （Adobe Commerce >=2.4.6-p8 &lt;2.4.9 の場合） – 会社のGraphQL クエリに顧客 ID が見つからない問題を修正しました。
+* **ACSD-66441** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.8 の場合） – マルチストア設定で設定可能な商品のインデックスを作成する際に、ストアフロントでレイヤーナビゲーションに間違ったインデックスデータが表示される問題を修正しました。
+* **AC-14984** （Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.6-p10 &lt;2.4.7 || >=2.4.8 &lt;2.4.9） - RabbitMQ SSL 接続時のエラー *無効なフレームタイプ 21* を修正しました。
+* **AC-14985** （Adobe CommerceおよびMagento Open Source >=2.4.8 &lt;2.4.9 の場合） - TLS が有効になっている外部 `smtp` サーバーを使用したときにメールが送信されない問題を修正しました。
+* 更新されたバージョン：**MDVA-12304**、**ACSD-47920**、**ACSD-56447**、**ACSD-61845**、**ACSD-64118**
 
 ## v1.1.66 {#v1-1-66}
 
@@ -446,7 +460,7 @@ ht-degree: 0%
 * **ACSD-51884** （Adobe CommerceおよびMagento Open Source >=2.3.7 &lt;2.4.7 の場合） - resize コマンドを実行すると、商品イメージのキャッシュパスが正しくなくなる問題を修正しました。
 * **ACSD-53628** （Adobe CommerceおよびMagento Open Source >=2.3.7 &lt;2.4.7 の場合） - CSV 販売注文レポートに間違った特殊文字が表示される問題を修正しました。
 * **ACSD-53148** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.7 の場合） – 設定可能な同じ商品を買い物かごに追加するためにGraphQLで並行してリクエストをおこなった 2 つのリクエストの結果、同じ商品 SKU を持つ 2 つの異なる商品が買い物かごに入れられる問題を修正しました。
-* **ACSD-52606** （Adobe CommerceおよびMagento Open Source >=2.4.0 &lt;2.4.7 の場合） – 「注文を受け取る準備ができていません *というエラーメッセージがユーザーが&#x200B;**[!UICONTROL Notify Order is Ready for Pickup]**&#x200B;をクリックすると表示される問題を修正しました*。
+* **ACSD-52606** （Adobe CommerceおよびMagento Open Source >=2.4.0 &lt;2.4.7 の場合） – 「注文を受け取る準備ができていません *というエラーメッセージがユーザーが&#x200B;**[!UICONTROL Notify Order is Ready for Pickup]**をクリックすると表示される問題を修正しました*。
 * **ACSD-51574** （Adobe CommerceおよびMagento Open Source >=2.4.2 &lt;2.4.7 の場合） – 同じ名前の別の画像に置き換えると、フロントエンドで画像が更新されない問題を修正しました。
 * **ACSD-53728** （Adobe CommerceおよびMagento Open Source >=2.3.7 &lt;2.4.7） – 製品の EAV インデクサーの実行に時間がかかる問題を修正しました。
 * **ACSD-53979** （Adobe CommerceおよびMagento Open Source >=2.4.6 &lt;2.4.7 の場合） – ようこそメッセージに一重引用符が含まれている場合にホームページで発生する JS の問題を修正します。
@@ -525,7 +539,7 @@ ht-degree: 0%
 * **ACSD-50368** （Adobe CommerceおよびMagento Open Source >= 2.4.3 &lt;2.4.5 の場合） – 非同期 REST API または非同期バルク REST API を使用してカスタマーを作成する際にカスタマーの `group_id` が無視される問題を修正しました。
 * **ACSD-51497** （Adobe CommerceおよびMagento Open Source >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7） – 顧客がドロップダウンタイプのカスタム属性でカタログページを並べ替えることができない問題を修正しました。
 * **ACSD-51408** （Adobe CommerceおよびMagento Open Source >=2.3.7 &lt; 2.4.7 の場合） – 注文項目のステータスが正しく *[!UICONTROL Backordered]* に設定されない問題を修正しました。
-* **ACSD-51735** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.5 の場合） – 商品の在庫が *0 の場合に、注文商品のステータスが正しく&#x200B;*[!UICONTROL Ordered]*&#x200B;に設定されない問題を修正しました*。
+* **ACSD-51735** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.5 の場合） – 商品の在庫が *0 の場合に、注文商品のステータスが正しく&#x200B;*[!UICONTROL Ordered]*に設定されない問題を修正しました*。
 * **ACSD-51792** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.6 の場合） - [!DNL Google Tag Manager] 4 が有効になっているときに、ページにインプレッションイベントが発生しない問題を修正しました。
 * **ACSD-51471** （Adobe Commerce >=2.4.3 &lt;2.4.7 の場合） – 自身にスケジュール済みアップデートがあるシンプルな製品を使用しているバンドル製品の場合、管理者ユーザーがスケジュール済みアップデートを保存できない問題を修正しました。
 * **ACSD-51700** （Adobe CommerceおよびMagento Open Source >=2.4.3 &lt;2.4.7 の場合） – 管理者でダウンロード可能な商品編集ページでストアビューを切り替えると発生するエラーを修正しました。
