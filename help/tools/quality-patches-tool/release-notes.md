@@ -460,7 +460,7 @@ ht-degree: 0%
 * **ACSD-51884** （Adobe CommerceおよびMagento Open Source >=2.3.7 &lt;2.4.7 の場合） - resize コマンドを実行すると、商品イメージのキャッシュパスが正しくなくなる問題を修正しました。
 * **ACSD-53628** （Adobe CommerceおよびMagento Open Source >=2.3.7 &lt;2.4.7 の場合） - CSV 販売注文レポートに間違った特殊文字が表示される問題を修正しました。
 * **ACSD-53148** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.7 の場合） – 設定可能な同じ商品を買い物かごに追加するためにGraphQLで並行してリクエストをおこなった 2 つのリクエストの結果、同じ商品 SKU を持つ 2 つの異なる商品が買い物かごに入れられる問題を修正しました。
-* **ACSD-52606** （Adobe CommerceおよびMagento Open Source >=2.4.0 &lt;2.4.7 の場合） – 「注文を受け取る準備ができていません *というエラーメッセージがユーザーが&#x200B;**[!UICONTROL Notify Order is Ready for Pickup]**をクリックすると表示される問題を修正しました*。
+* **ACSD-52606** （Adobe CommerceおよびMagento Open Source >=2.4.0 &lt;2.4.7 の場合） – 「注文を受け取る準備ができていません *というエラーメッセージがユーザーが&#x200B;**[!UICONTROL Notify Order is Ready for Pickup]**&#x200B;をクリックすると表示される問題を修正しました*。
 * **ACSD-51574** （Adobe CommerceおよびMagento Open Source >=2.4.2 &lt;2.4.7 の場合） – 同じ名前の別の画像に置き換えると、フロントエンドで画像が更新されない問題を修正しました。
 * **ACSD-53728** （Adobe CommerceおよびMagento Open Source >=2.3.7 &lt;2.4.7） – 製品の EAV インデクサーの実行に時間がかかる問題を修正しました。
 * **ACSD-53979** （Adobe CommerceおよびMagento Open Source >=2.4.6 &lt;2.4.7 の場合） – ようこそメッセージに一重引用符が含まれている場合にホームページで発生する JS の問題を修正します。
@@ -539,7 +539,7 @@ ht-degree: 0%
 * **ACSD-50368** （Adobe CommerceおよびMagento Open Source >= 2.4.3 &lt;2.4.5 の場合） – 非同期 REST API または非同期バルク REST API を使用してカスタマーを作成する際にカスタマーの `group_id` が無視される問題を修正しました。
 * **ACSD-51497** （Adobe CommerceおよびMagento Open Source >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7） – 顧客がドロップダウンタイプのカスタム属性でカタログページを並べ替えることができない問題を修正しました。
 * **ACSD-51408** （Adobe CommerceおよびMagento Open Source >=2.3.7 &lt; 2.4.7 の場合） – 注文項目のステータスが正しく *[!UICONTROL Backordered]* に設定されない問題を修正しました。
-* **ACSD-51735** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.5 の場合） – 商品の在庫が *0 の場合に、注文商品のステータスが正しく&#x200B;*[!UICONTROL Ordered]*に設定されない問題を修正しました*。
+* **ACSD-51735** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.5 の場合） – 商品の在庫が *0 の場合に、注文商品のステータスが正しく&#x200B;*[!UICONTROL Ordered]*&#x200B;に設定されない問題を修正しました*。
 * **ACSD-51792** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.6 の場合） - [!DNL Google Tag Manager] 4 が有効になっているときに、ページにインプレッションイベントが発生しない問題を修正しました。
 * **ACSD-51471** （Adobe Commerce >=2.4.3 &lt;2.4.7 の場合） – 自身にスケジュール済みアップデートがあるシンプルな製品を使用しているバンドル製品の場合、管理者ユーザーがスケジュール済みアップデートを保存できない問題を修正しました。
 * **ACSD-51700** （Adobe CommerceおよびMagento Open Source >=2.4.3 &lt;2.4.7 の場合） – 管理者でダウンロード可能な商品編集ページでストアビューを切り替えると発生するエラーを修正しました。
