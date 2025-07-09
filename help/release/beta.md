@@ -2,9 +2,9 @@
 title: Beta リリース
 description: Adobe Commerce ベータ版リリースとリリースへの参加方法について説明します。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 1c0dd720df944a5784c850a3f4ea63b8984069f1
+source-git-commit: 879160b11fe4840eb3af97c64f080deb5f002827
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '862'
 ht-degree: 0%
 
 ---
@@ -28,23 +28,9 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様お
 
 アクティブなベータプログラムのリストについては、次の節を参照してください。
 
-### Adobe Commerce Optimizer
-
-Adobe Commerce Optimizerは、高性能なストアフロントにより e コマースのエクスペリエンスを強化し、オーガニックトラフィック、カスタマーエンゲージメント、売上高を向上させます。
-
-Adobe Commerce Optimizerを使用すると、次のことができます。
-
-- コマーススタック全体を再プラットフォームすることなく、カタログを拡張および拡大します。
-- 任意のソースからカタログデータを取り込みます。
-- ビジネスチャネルとポリシーを定義します。
-- AI と ML を使用して、パーソナライズされた検索とレコメンデーションを作成します。
-- 正確な実装とトラブルシューティングのために、同期ステータスやストアフロントのイベントデータなど、重要な製品データの可用性を表示します。
-
-Adobe Commerce Optimizerについて [ 詳細情報 ](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html?lang=ja) します。 早期アクセスプログラムの詳細については、[!DNL Adobe Commerce Optimizer] 早期アクセス申請フォーム [ にご記入ください ](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u)。
-
 ### Live Search （パブリック Beta）の検索機能の強化
 
-このベータ版では、[&#128279;](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) の 3 つの新しい機能が `productSearch` クエリでサポートされています。
+このベータ版では、[`productSearch` の 3 つの新しい機能が ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) クエリでサポートされています。
 
 - **レイヤー検索** – 別の検索コンテキスト内の検索 – この機能を使用すると、検索クエリを最大 2 つのレイヤーで検索できます。 例：
 
@@ -66,7 +52,7 @@ Adobe Commerce Optimizerについて [ 詳細情報 ](https://experienceleague.a
 
 これらの新しい条件により、検索クエリのフィルタリングメカニズムが強化され、検索結果を絞り込むことができます。 これらの新しい条件は、メインの検索クエリには影響しません。 ベータ版に参加するには、[commerce-storefront-services](mailto:commerce-storefront-services@adobe.com) にメールリクエストを送信します。
 
-Live Search ベータ版をインストールするには、[Live Search ガイド ](https://experienceleague.adobe.com/ja/docs/commerce/live-search/install#install-the-live-search-beta) を参照してください。
+Live Search ベータ版をインストールするには、[Live Search ガイド ](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta) を参照してください。
 
 ### IBM Sterling Order Management System Integration （Private Beta）
 
@@ -88,7 +74,7 @@ Adobe Commerce Foundation の各アルファ版およびベータ版のリリー
 - GraphQLの改善点
 - 一般的な品質のバグ修正
 - コミュニティの投稿
-- [Adobe Commerce サービスとの互換性をサポートするために必要な変更 ](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
+- [Adobe Commerce サービスとの互換性をサポートするために必要な変更 ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### 命名規則とスケジュール
 
@@ -116,6 +102,6 @@ Adobe Commerceのアルファ版およびベータ版のリリースは、他の
 
 Adobeは、アルファ版およびベータ版のリリースに対して標準のAdobe サポートサービスを提供しません。
 
-アルファ版およびベータ版リリースに関連するフィードバックを送信するには、[GitHub](https://github.com/magento/magento2) の [ 通常のイシューレポートフロー ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) に従います。
+アルファ版およびベータ版リリースに関連するフィードバックを送信するには、[GitHub](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) の [ 通常のイシューレポートフロー ](https://github.com/magento/magento2) に従います。
 
 Adobeは、最新のアルファ版またはベータ版のリリースに対して報告されたすべての重要な問題を監視し、GA リリース日より前に解決されるように優先順位を付けます。
