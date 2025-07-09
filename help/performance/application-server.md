@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Adobe CommerceのデプロイメントでGraphQL Application Server を有効にするには、次の手順に従います。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 2f8396a367cbe1191bdf67aec75bd56f64d3fda8
+source-git-commit: 8427460cd11169ffe7dd2d4ba0cc1fdaea513702
 workflow-type: tm+mt
-source-wordcount: '2074'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server を使用すると、Adobe CommerceはCommerce GraphQL API リクエストの状態を維持できます。 Swoole 拡張機能に基づいて構築されたGraphQL Application Server は、リクエスト処理を処理するワーカースレッドを使用したプロセスとして動作します。 GraphQL Application Server は、GraphQL API リクエストの間でブートストラップされたアプリケーションの状態を保持することで、リクエスト処理と製品全体のパフォーマンスを向上させます。 API リクエストが大幅に効率的になります。
 
-GraphQL Application Server は、Adobe Commerceでのみ使用できます。 Magento Open Sourceでは使用できません。 Cloud Pro プロジェクトの場合、GraphQL Application Server を有効にするには、[Adobe Commerce サポートを送信 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) チケットが必要です。
+GraphQL Application Server は、Adobe Commerceでのみ使用できます。 Magento Open Sourceでは使用できません。 Cloud Pro プロジェクトの場合、GraphQL Application Server を有効にするには、[Adobe Commerce サポートを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) チケットが必要です。
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Pro プロジェクトで Application Server 機能を有効にした後、Graph
 1. Commerce Cloud プロジェクトのクローンを作成します。
 1. 必要に応じて、「application-server/nginx.conf.sample」ファイルの設定を調整します。
 1. ファイル内のアクティブな「web」セクション `project_root/.magento.app.yaml` 完全にコメントアウトします。
-1. GraphQL Application Server `start` コマンドを含む `project_root/.magento.app.yaml` ファイルで、次の「web」セクション設定に対してコメント解除します。
+1. GraphQL Application Server `project_root/.magento.app.yaml` コマンドを含む `start` ファイルで、次の「web」セクション設定に対してコメント解除します。
 
    ```yaml
    web:
@@ -112,29 +112,154 @@ git push
        upstream: "application-server:http"
    ```
 
+1. `files` ファイルの `.magento/services.yaml` セクションをコメント解除します。
+
+   ```yaml
+   files:
+       type: network-storage:2.0
+       disk: 5120
+   ```
+
+1. `TEMPORARY SHARED MOUNTS` ファイルのマウント設定の `.magento.app.yaml` の部分をコメント解除します。
+
+   ```yaml
+   "var_shared":
+       source: "service"
+       service: "files"
+       source_path: "var"
+   "app/etc_shared":
+       source: "service"
+       service: "files"
+       source_path: "etc"
+   "pub/media_shared":
+       source: "service"
+       service: "files"
+       source_path: "media"
+   "pub/static_shared":
+       source: "service"
+       service: "files"
+       source_path: "static"
+   ```
+
 1. 更新したファイルを Git インデックスに追加します。
 
    ```bash
-   git add -f .magento/routes.yaml application-server/.magento/*
+   git add -f .magento.app.yaml .magento/routes.yaml .magento/services.yaml application-server/.magento/*
    ```
 
-1. 変更内容をコミットします。
+1. 変更内容をコミットし、トリガーデプロイメントにプッシュします。
 
    ```bash
-   git commit -m "AppServer Enabled"
+   git commit -m "Enabling AppServer: initial changes"
+   git push
+   ```
+
+1. SSH を使用して、リモートクラウド環境（_アプリではな_） `application-server` ログインします。
+
+   ```bash
+   magento-cloud ssh -p <project-ID> -e <environment-ID>
+   ```
+
+1. ローカルマウントから共有マウントにデータを同期します。
+
+   ```bash
+   rsync -avz var/* var_shared/
+   rsync -avz app/etc/* app/etc_shared/
+   rsync -avz pub/media/* pub/media_shared/
+   rsync -avz pub/static/* pub/static_shared/
+   ```
+
+1. `DEFAULT MOUNTS` ファイル内のマウント設定の `TEMPORARY SHARED MOUNTS` と `.magento.app.yaml` の部分をコメントアウトします。
+
+   ```yaml
+   #"var": "shared:files/var"
+   #"app/etc": "shared:files/etc"
+   #"pub/media": "shared:files/media"
+   #"pub/static": "shared:files/static"
+   
+   #"var_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "var"
+   #"app/etc_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "etc"
+   #"pub/media_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "media"
+   #"pub/static_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "static"
+   ```
+
+1. `OLD LOCAL MOUNTS` ファイルのマウント設定の `SHARED MOUNTS` と `.magento.app.yaml` の部分のコメントを解除します。
+
+   ```yaml
+   "var_old": "shared:files/var"
+   "app/etc_old": "shared:files/etc"
+   "pub/media_old": "shared:files/media"
+   "pub/static_old": "shared:files/static"
+   
+   "var":
+       source: "service"
+       service: "files"
+       source_path: "var"
+   "app/etc":
+       source: "service"
+       service: "files"
+       source_path: "etc"
+   "pub/media":
+       source: "service"
+       service: "files"
+       source_path: "media"
+   "pub/static":
+       source: "service"
+       service: "files"
+       source_path: "static"
+   ```
+
+1. 更新したファイルを Git インデックスに追加し、変更をコミットして、デプロイメントをトリガーにプッシュします。
+
+   ```bash
+   git add -f .magento.app.yaml
+   git commit -m "Enabling AppServer: switch mounts"
+   git push
+   ```
+
+1. `*_old` ディレクトリのファイルが実際のディレクトリに存在することを確認します。
+
+1. 古いローカル マウントのクリーンアップ：
+
+   ```bash
+   rm -rf var_old/*
+   rm -rf app/etc_old/*
+   rm -rf pub/media_old/*
+   rm -rf pub/static_old/*
+   ```
+
+1. `OLD LOCAL MOUNTS` ファイルのマウント設定の `.magento.app.yaml` の部分をコメントアウトします。
+
+   ```yaml
+   #"var_old": "shared:files/var"
+   #"app/etc_old": "shared:files/etc"
+   #"pub/media_old": "shared:files/media"
+   #"pub/static_old": "shared:files/static"
+   ```
+
+1. 更新したファイルを Git インデックスに追加し、変更をコミットして、デプロイメントをトリガーにプッシュします。
+
+   ```bash
+   git add -f .magento.app.yaml
+   git commit -m "Enabling AppServer: finish"
+   git push
    ```
 
 >[!NOTE]
 >
->ルート `.magento.app.yaml` ファイル内のすべてのカスタム設定が、`application-server/.magento/.magento.app.yaml` ファイルに適切に移行されていることを確認します。 `application-server/.magento/.magento.app.yaml` ファイルがプロジェクトに追加されたら、ルート `.magento.app.yaml` ファイルに加えてそのファイルを保持する必要があります。 例えば、[RabbitMQ サービスを設定する ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) または [web プロパティを管理する ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) 必要がある場合、同じ設定を `application-server/.magento/.magento.app.yaml` にも追加する必要があります。
-
-### スタータープロジェクトのデプロイ
-
-イネーブルメント [ 手順 ](#before-you-begin-a-cloud-starter-deployment) を完了したら、変更を Git リポジトリーにプッシュして、GraphQL Application Server をデプロイします。
-
-```bash
-git push
-```
+>ルート `.magento.app.yaml` ファイル内のすべてのカスタム設定が、`application-server/.magento/.magento.app.yaml` ファイルに適切に移行されていることを確認します。 `application-server/.magento/.magento.app.yaml` ファイルがプロジェクトに追加されたら、ルート `.magento.app.yaml` ファイルに加えてそのファイルを保持する必要があります。 例えば、[RabbitMQ サービスを設定する ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) または [web プロパティを管理する ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) 必要がある場合、同じ設定を `application-server/.magento/.magento.app.yaml` にも追加する必要があります。
 
 ### クラウドプロジェクトでのイネーブルメントの検証
 
@@ -206,7 +331,7 @@ GraphQL Application Server をローカルで実行するには、Swoole 拡張�
 pecl install swoole
 ```
 
-インストール時に、Adobe Commerceで `openssl`、`mysqlnd`、`sockets`、`http2` および `postgres` のサポートを有効にするよう求められます。 `postgres` を除くすべてのオプションに対して `yes` を入力します。
+インストール時に、Adobe Commerceで `openssl`、`mysqlnd`、`sockets`、`http2` および `postgres` のサポートを有効にするよう求められます。 `yes` を除くすべてのオプションに対して `postgres` を入力します。
 
 ### Swoole のインストールの確認
 
@@ -289,7 +414,7 @@ GraphQL Application Server が実行中であることを確認するその他�
 
 ### GraphQL リクエストが処理中であることを確認します
 
-GraphQL Application Server は、処理する各リクエストに `graphql_server` 値を持つ `X-Backend` 応答ヘッダーを追加します。 GraphQL Application Server がリクエストを処理したかどうかを確認するには、この応答ヘッダーを確認します。
+GraphQL Application Server は、処理する各リクエストに `X-Backend` 値を持つ `graphql_server` 応答ヘッダーを追加します。 GraphQL Application Server がリクエストを処理したかどうかを確認するには、この応答ヘッダーを確認します。
 
 ### 拡張機能とカスタマイズの互換性の確認
 
@@ -322,7 +447,7 @@ GraphQL Application Server を無効にする手順は、サーバーがオン�
 
 ### GraphQL Application Server を無効にする（オンプレミス）
 
-1. GraphQL Application Server を有効にするときに追加 `nginx.conf` たファイルの `/graphql` セクションをコメントアウトします。
+1. GraphQL Application Server を有効にするときに追加 `/graphql` たファイルの `nginx.conf` セクションをコメントアウトします。
 1. nginx を再起動します。
 
 GraphQL Application Server を無効にするこの方法は、パフォーマンスを迅速にテストまたは比較するのに役立ちます。
@@ -354,7 +479,7 @@ GraphQL Application Server が無効になった後：
 
 * **型指定されたプロパティ $x は初期化メッセージの前にアクセスできません**。 このタイプのメッセージでエラーが発生した場合は、指定されたプロパティがコンストラクターによって初期化されていないことを示します。 これは、オブジェクトが最初に作成された後で使用できないために発生する時間的結合の一種です。 プロパティからデータを取得するコレクタが PHP のリフレクション機能を使用しているため、プロパティがプライベートであっても、この結合が発生します。 この場合、クラスをリファクタリングして、時間結合を避け、可変状態を避けるようにしてください。 そのリファクタリングでエラーが解決されない場合は、プロパティタイプを nullable 型に変更して、null に初期化できるようにします。  プロパティが配列の場合は、プロパティを空の配列として初期化してみてください。
 
-`vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/GraphQl/App/GraphQlStateTest.php` を実行して `GraphQlStateTest` を実行します。
+`GraphQlStateTest` を実行して `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/GraphQl/App/GraphQlStateTest.php` を実行します。
 
 ### ResetAfterRequestTest
 
@@ -366,7 +491,7 @@ GraphQL Application Server が無効になった後：
 
 * **型指定されたプロパティ $x は初期化メッセージの前にアクセスできません**。 この問題は `GraphQlStateTest` でも発生します。
 
-  `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/Framework/ObjectManager/ResetAfterRequestTest.php` を実行して `ResetAfterRequestTest` を実行します。
+  `ResetAfterRequestTest` を実行して `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/Framework/ObjectManager/ResetAfterRequestTest.php` を実行します。
 
 ### 機能テスト
 
