@@ -4,9 +4,9 @@ description: このサブセクションでは、 [!DNL Quality Patches Tool]  �
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: b5b80bfa-a52c-466b-b95c-23590e850aed
-source-git-commit: 31a6b8296681a8f8aa23aa941c0637510b330cdc
+source-git-commit: f24e6b4cc973247cb176b7e6b10cc9c61e1c16c2
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ QPT v1.1.66 には、次のパッチが含まれています。
 1. **ACP2E-3789**:WebAPI を使用した製品アップデート時にメディアファイルが重複していました。
 1. **ACP2E-3918**：デフォルトの請求先住所なしで店舗での受け取りを使用している、ログインしている会社の顧客のチェックアウトに失敗しました。
 1. **ACSD-65750**:GraphQLの「ルート」クエリが、ページビルダー製品コンテンツタイプで商品を順不同で返しました。
-1. **ACSD-65775**：同じ項目の複数の数量が注文された場合に、REST API の注文の詳細で、誤った `base_row_total` と `row_total` の値が返されました。
+1. **ACSD-65775**：複数の数量に対する REST API 注文の詳細の `base_row_total` と `row_total` の値が正しくありません。
 1. **ACSD-65777**:`MediaGallery` GraphQL リクエストの商品イメージタイプの「types」フィールドが見つかりませんでした。
 1. **ACSD-65848**：管理者のカテゴリの読み込みが非常に遅い。
 1. **ACSD-65913**:OpenSearch が、同じ価格の製品を含むカテゴリに対して `illegal_argument_exception` をスローしました。
