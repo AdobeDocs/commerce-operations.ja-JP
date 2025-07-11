@@ -78,11 +78,11 @@ ACSD-65331 パッチは、ユーザーが繰り返しチェックアウトペー
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool]** > Usage]**（/help/tools/quality-patches-tool/usage.md）（[!DNL Quality Patches Tool]** guide.
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] **&#x200B; > Usage]**（/help/tools/quality-patches-tool/usage.md）（[!DNL Quality Patches Tool]** guide.
 * Adobe Commerce on Cloud Infrastructure: Commerce on Cloud Infrastructure ガイドの [ アップグレードとパッチ/パッチの適用 ]**（https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html）
 
 ## 関連資料
 
 [!DNL Quality Patches Tool]**について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool]**：品質向上パッチのセルフサービス ツール ]** （/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md）
+* [[!DNL Quality Patches Tool]&#x200B;**：品質向上パッチのセルフサービス ツール ]** （/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md）
