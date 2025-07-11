@@ -2,9 +2,9 @@
 title: インデクサーの管理
 description: Commerce インデクサーの表示および管理方法の例を参照してください。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 54aef3d7db7b8333721fb56db0ba8f098aea030b
+source-git-commit: ceefb9371dd0a85046cc5bfc0ddc72144d649608
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,8 @@ bin/magento indexer:info
 
 リストは次のように表示されます。
 
-```
+```text
+cataloginventory_stock                   Stock
 design_config_grid                       Design Config Grid
 customer_grid                            Customer Grid
 catalog_category_product                 Category Products
@@ -29,18 +30,20 @@ catalog_product_category                 Product Categories
 catalogrule_rule                         Catalog Rule Product
 catalog_product_attribute                Product EAV
 inventory                                Inventory
+catalog_product_price                    Product Price
 catalogrule_product                      Catalog Product Rule
-cataloginventory_stock                   Stock
 targetrule_product_rule                  Product/Target Rule
 targetrule_rule_product                  Target Rule/Product
-catalog_product_price                    Product Price
 catalogsearch_fulltext                   Catalog Search
 salesrule_rule                           Sales Rule
+sales_order_data_exporter                Sales Order Feed
+sales_order_status_data_exporter         Sales Order Statuses Feed
+store_data_exporter                      Stores Feed
 ```
 
 >[!NOTE]
 >
-> Live Search、カタログサービス、Product Recommendations を使用するAdobe Commerce マーチャントには、[SaaS ベースの価格インデックス作成 ](https://experienceleague.adobe.com/ja/docs/commerce/price-indexer/price-indexing) を使用するオプションがあります。
+> Live Search、カタログサービス、Product Recommendations を使用するAdobe Commerce マーチャントには、[SaaS ベースの価格インデックス作成 ](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing) を使用するオプションがあります。
 
 ## インデクサーのステータスの表示
 
@@ -56,22 +59,28 @@ bin/magento indexer:status [indexer]
 
 結果の例：
 
-```
-+----------------------+------------------+-----------+---------------------+---------------------+
-| Title                | Status           | Update On | Schedule Status     | Schedule Updated    |
-+----------------------+------------------+-----------+---------------------+---------------------+
-| Catalog Product Rule | Reindex required | Save      |                     |                     |
-| Catalog Rule Product | Reindex required | Save      |                     |                     |
-| Catalog Search       | Ready            | Save      |                     |                     |
-| Category Products    | Reindex required | Schedule  | idle (0 in backlog) | 2021-06-28 09:45:53 |
-| Customer Grid        | Ready            | Schedule  | idle (0 in backlog) | 2021-06-28 09:45:52 |
-| Design Config Grid   | Ready            | Schedule  | idle (0 in backlog) | 2018-06-28 09:45:52 |
-| Inventory            | Ready            | Save      |                     |                     |
-| Product Categories   | Reindex required | Schedule  | idle (0 in backlog) | 2021-06-28 09:45:53 |
-| Product EAV          | Reindex required | Save      |                     |                     |
-| Product Price        | Reindex required | Save      |                     |                     |
-| Stock                | Reindex required | Save      |                     |                     |
-+----------------------+------------------+-----------+---------------------+---------------------+
+```text
++----------------------------------+---------------------------+--------+-----------+---------------------+---------------------+
+| ID                               | Title                     | Status | Update On | Schedule Status     | Schedule Updated    |
++----------------------------------+---------------------------+--------+-----------+---------------------+---------------------+
+| catalogrule_product              | Catalog Product Rule      | Ready  | Schedule  | idle (0 in backlog) | 2025-07-11 08:00:52 |
+| catalogrule_rule                 | Catalog Rule Product      | Ready  | Schedule  | idle (0 in backlog) | 2025-07-11 08:00:52 |
+| catalogsearch_fulltext           | Catalog Search            | Ready  | Schedule  | idle (0 in backlog) | 2025-07-11 08:01:02 |
+| catalog_category_product         | Category Products         | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:33 |
+| customer_grid                    | Customer Grid             | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:31 |
+| design_config_grid               | Design Config Grid        | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:31 |
+| inventory                        | Inventory                 | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:36 |
+| catalog_product_category         | Product Categories        | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:33 |
+| catalog_product_attribute        | Product EAV               | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:36 |
+| catalog_product_price            | Product Price             | Ready  | Schedule  | idle (0 in backlog) | 2025-07-11 08:00:54 |
+| targetrule_product_rule          | Product/Target Rule       | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:39 |
+| sales_order_data_exporter        | Sales Order Feed          | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:12:10 |
+| sales_order_status_data_exporter | Sales Order Statuses Feed | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:12:10 |
+| salesrule_rule                   | Sales Rule                | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:12:10 |
+| cataloginventory_stock           | Stock                     | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:31 |
+| store_data_exporter              | Stores Feed               | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:12:11 |
+| targetrule_rule_product          | Target Rule/Product       | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:39 |
++----------------------------------+---------------------------+--------+-----------+---------------------+---------------------+
 ```
 
 ## 再インデックス
@@ -92,7 +101,8 @@ bin/magento indexer:reindex [indexer]
 
 結果の例：
 
-```
+```text
+Stock index has been rebuilt successfully in <time>
 Design Config Grid index has been rebuilt successfully in <time>
 Customer Grid index has been rebuilt successfully in <time>
 Category Products index has been rebuilt successfully in <time>
@@ -100,10 +110,15 @@ Product Categories index has been rebuilt successfully in <time>
 Catalog Rule Product index has been rebuilt successfully in <time>
 Product EAV index has been rebuilt successfully in <time>
 Inventory index has been rebuilt successfully in <time>
-Catalog Product Rule index has been rebuilt successfully in <time>
-Stock index has been rebuilt successfully in <time>
 Product Price index has been rebuilt successfully in <time>
+Catalog Product Rule index has been rebuilt successfully in <time>
+Product/Target Rule index has been rebuilt successfully in <time>
+Target Rule/Product index has been rebuilt successfully in <time>
 Catalog Search index has been rebuilt successfully in <time>
+Sales Rule index has been rebuilt successfully in <time>
+Sales Order Feed index has been rebuilt successfully in <time>
+Sales Order Statuses Feed index has been rebuilt successfully in <time>
+Stores Feed index has been rebuilt successfully in <time>
 ```
 
 >[!INFO]
@@ -177,7 +192,8 @@ bin/magento indexer:reset [indexer]
 
 結果の例：
 
-```
+```text
+Stock indexer has been invalidated.
 Design Config Grid indexer has been invalidated.
 Customer Grid indexer has been invalidated.
 Category Products indexer has been invalidated.
@@ -185,10 +201,15 @@ Product Categories indexer has been invalidated.
 Catalog Rule Product indexer has been invalidated.
 Product EAV indexer has been invalidated.
 Inventory indexer has been invalidated.
-Catalog Product Rule indexer has been invalidated.
-Stock indexer has been invalidated.
 Product Price indexer has been invalidated.
+Catalog Product Rule indexer has been invalidated.
+Product/Target Rule indexer has been invalidated.
+Target Rule/Product indexer has been invalidated.
 Catalog Search indexer has been invalidated.
+Sales Rule indexer has been invalidated.
+Sales Order Feed indexer has been invalidated.
+Sales Order Statuses Feed indexer has been invalidated.
+Stores Feed indexer has been invalidated.
 ```
 
 ## インデクサーの設定
@@ -212,31 +233,47 @@ bin/magento indexer:show-mode [indexer]
 
 結果の例：
 
-```
-Design Config Grid:                                Update on Save
-Customer Grid:                                     Update on Save
-Category Products:                                 Update on Save
-Product Categories:                                Update on Save
-Catalog Rule Product:                              Update on Save
-Product EAV:                                       Update on Save
-Inventory:                                         Update on Save
-Catalog Product Rule:                              Update on Save
-Stock:                                             Update on Save
-Product Price:                                     Update on Save
-Catalog Search:                                    Update on Save
+```text
+Stock:                                             Update by Schedule
+Design Config Grid:                                Update by Schedule
+Customer Grid:                                     Update by Schedule
+Category Products:                                 Update by Schedule
+Product Categories:                                Update by Schedule
+Catalog Rule Product:                              Update by Schedule
+Product EAV:                                       Update by Schedule
+Inventory:                                         Update by Schedule
+Product Price:                                     Update by Schedule
+Catalog Product Rule:                              Update by Schedule
+Product/Target Rule:                               Update by Schedule
+Target Rule/Product:                               Update by Schedule
+Catalog Search:                                    Update by Schedule
+Sales Rule:                                        Update by Schedule
+Sales Order Feed:                                  Update by Schedule
+Sales Order Statuses Feed:                         Update by Schedule
+Stores Feed:                                       Update by Schedule
 ```
 
 ### インデクサーモードの設定
 
 >[!IMPORTANT]
 >
->[!DNL Customer Grid] を `schedule` ではなく `realtime` に設定してください。 [!DNL Customer Grid] のインデックスは、[!UICONTROL Update on Save] オプションを使用してのみ再作成できます。 このインデックスは、`Update by Schedule` オプションをサポートしていません。 次のコマンドラインを使用して、保存時にこのインデクサーを更新するように設定します：`php bin/magento indexer:set-mode realtime customer_grid`
+>[!DNL Customer Grid] のインデクサーの動作は 2.4.8 で変更されました。
 >
->_実装プレイブック_ の [ インデクサー設定のベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=ja) を参照してください。
+>- **2.4.8 より前**:[!DNL Customer Grid] インデクサーのインデックスは、[!UICONTROL Update on Save] オプションを使用してのみ再作成でき、[!UICONTROL Update by Schedule] オプションはサポートしていません。
+>
+>   次のコマンドを使用して、保存時にこのインデクサーを更新するように設定します。
+>
+>   ```bash
+>   bin/magento indexer:set-mode realtime customer_grid
+>   ```
+>
+>- **2.4.8 以降**:[!DNL Customer Grid] インデクサーは、[!UICONTROL Update on Save] モードと [!UICONTROL Update by Schedule] モードの両方をサポートしており、デフォルトは [!UICONTROL Update by Schedule] です。
+>
+>[ 実装プレイブック ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) の _インデクサー設定のベストプラクティス_ を参照してください。
 
 >[!INFO]
 >
->インデクサーモードを切り替える前に、web サイトを [ メンテナンス ](../../installation/tutorials/maintenance-mode.md) モードと [cron ジョブを無効 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=ja#disable-cron-jobs) に設定します。 これにより、データベースがロックされるのを防ぐことができます。
+>インデクサーモードを切り替える前に、web サイトを [ メンテナンス ](../../installation/tutorials/maintenance-mode.md) モードと [cron ジョブを無効 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) に設定します。 これにより、データベースのロックが発生しないようにします。
 
 インデクサー設定を指定するには：
 
@@ -299,9 +336,9 @@ Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspe
 
 インデクサーが `suspended` ステータスに設定されると、主に自動インデックス再作成と実体化ビュー（Materialized View）の更新に影響します。 概要を次に示します。
 
-**インデックス再作成がスキップされました**：同じインデックスを共有する `suspended` インデクサーとインデクサーに対しては、自動 `shared_index` ンデックス再作成がバイパスされます。 これにより、中断されたプロセスに関連するデータのインデックスを再作成しなくても、システムリソースを確実に節約できます。
+**インデックス再作成がスキップされました**：システムは、`suspended` インデクサーと、同じ `shared_index` を共有するインデクサーの自動インデックス再作成をスキップします。 このアプローチでは、中断されたプロセスに関連するデータのインデックス再作成を回避することで、システムリソースを節約できます。
 
-**マテリアライズド・ビュー更新のスキップ**：再インデックス化と同様に、`suspended` インデックスまたはその共有インデックスに関連するマテリアライズド・ビューの更新も一時停止されます。 このアクションにより、休止期間中のシステム負荷がさらに軽減されます。
+**マテリアライズド・ビュー更新のスキップ**：再インデックス化と同様に、`suspended` インデックスまたはその共有インデックスに関連するマテリアライズド・ビューに対する更新も一時停止されます。 この一時停止により、休止期間中のシステムの負荷がさらに軽減されます。
 
 >[!INFO]
 >
@@ -309,6 +346,6 @@ Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspe
 
 >[!IMPORTANT]
 >
->インデクサーのステータスを `suspended` または `invalid` から `valid` に変更する場合は注意が必要です。 インデックスのないデータが蓄積されている場合は、パフォーマンスが低下する可能性があります。
+>インデクサーのステータスを `valid` または `suspended` から `invalid` に変更する場合は注意が必要です。 インデックスのないデータが蓄積されている場合は、パフォーマンスが低下する可能性があります。
 >
 >システムのパフォーマンスとデータの整合性を維持するために、ステータスを `valid` に手動で更新する前に、すべてのデータのインデックスが正確に作成されていることを確認することが重要です。

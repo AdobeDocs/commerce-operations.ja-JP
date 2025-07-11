@@ -4,9 +4,9 @@ description: インデクサー設定のベストプラクティスに従って�
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 29168544e3a33b874b104f308bd53cb475ac2638
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -35,15 +35,18 @@ Adobe Commerceには、[!UICONTROL Update on Save] と [!DNL Update on Schedule]
 サイトのパフォーマンスを最大化するには、インデックス作成に関する次のベストプラクティスに従います。
 
 - インデックス設定を確認します。
-- 大規模なサイトや、頻繁に更新が行われ、トラフィックが多いサイトでは、インデクサーを _[!UICONTROL Update on Schedule]_&#x200B;に設定します。 [ インデックス管理 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management#change-the-index-mode) を参照してください。
+- 大規模なサイトや、頻繁に更新が行われ、トラフィックが多いサイトでは、インデクサーを _[!UICONTROL Update on Schedule]_に設定します。 [ インデックス管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode) を参照してください。
 - インデックス管理については、[ パフォーマンスのベストプラクティス ](../../../performance/configuration.md) に従ってください。
 
 >[!IMPORTANT]
 >
->[!DNL Customer Grid] のインデックスは、[!UICONTROL Update on Save] オプションを使用してのみ再作成できます。 このインデックスは、`Update by Schedule` オプションをサポートしていません。
+>[!DNL Customer Grid] のインデクサーの動作は 2.4.8 で変更されました。
+>
+>- **2.4.8 より前**:[!DNL Customer Grid] インデクサーのインデックスは、[!UICONTROL Update on Save] オプションを使用してのみ再作成でき、[!UICONTROL Update by Schedule] オプションはサポートしていません。
+>- **2.4.8 以降**:[!DNL Customer Grid] インデクサーは、[!UICONTROL Update on Save] モードと [!UICONTROL Update by Schedule] モードの両方をサポートしており、デフォルトは [!UICONTROL Update by Schedule] です。
 
 ## 追加情報
 
 - [管理者ユーザー向けのインデックス管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [MagentoCLI を使用したインデックス管理 ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=ja)
+- [Magento CLI を使用したインデックス管理 ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [ 開発者向けのインデックス作成の概要 ](https://developer.adobe.com/commerce/php/development/components/indexing/)
