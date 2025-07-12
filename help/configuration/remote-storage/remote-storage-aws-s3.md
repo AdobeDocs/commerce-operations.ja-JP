@@ -3,9 +3,9 @@ title: リモートストレージ用のAWS S3 バケットの設定
 description: Commerce プロジェクトを設定して、AWS S3 ストレージサービスをリモートストレージに使用します。
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 3f45b61a2f4fd6db161c66182212f3aff5900e26
+source-git-commit: 3690043019d70ad15332f757158937a7d5305043
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 >[!WARNING]
 >
 >Adobeでは重大なセキュリティリスクがあるため、公開バケットの使用は避けるべきです。
+>
+>お客様が提供する S3 バケットをアセットまたはメディアストレージ用に使用する場合、Adobeは、S3 バケットの設定、管理または操作に関連する問題、データ損失または停止に対して責任を負わず、サポートを提供しません。 S3 バケットのすべてのトラブルシューティングとメンテナンスは、お客様の単独の責任です。
 
 **AWS S3 アダプタでリモートストレージを有効にするには**:
 
