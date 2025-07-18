@@ -3,9 +3,9 @@ title: 既定のキャッシュに Redis を使用
 description: Adobe Commerceのデフォルトキャッシュとして Redis を設定する方法を説明します。
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 2c489f2655e6fb067de1730355df6cd3683ea562
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,8 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parame
 | `cache-backend-redis-port` | ポート | Redis サーバーリッスンポート | `6379` |
 | `cache-backend-redis-db` | データベース | デフォルトキャッシュとフルページキャッシュの両方に Redis を使用する場合は必須です。 一方のキャッシュのデータベース番号を指定する必要があります。もう一方のキャッシュは、デフォルトで 0 を使用します。<br><br>**重要**：複数のタイプのキャッシュに Redis を使用する場合は、データベース番号が異なっている必要があります。 デフォルトのキャッシュ データベース番号を 0、ページ キャッシュ データベース番号を 1、セッション ストレージ データベース番号を 2 に割り当てることをお勧めします。 | `0` |
 | `cache-backend-redis-password` | password | Redis パスワードを設定すると、組み込みのセキュリティ機能の 1 つが有効になります。`auth` コマンドは、データベースにアクセスするためにクライアントの認証を必要とします。 パスワードは Redis の設定ファイルで直接設定されます：`/etc/redis/redis.conf` | |
+| `--cache-backend-redis-use-lua` | use_lua | LUA を有効または無効にします。 <br><br>**LUA**:Lua を使用すると、Redis 内でアプリケーションロジックの一部を実行でき、パフォーマンスを向上させ、アトミック実行を通じてデータの一貫性を確保できます。 | `0` |
+| `--cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | ガベージコレクション用の LUA を有効または無効にします。 <br><br>**LUA**:Lua を使用すると、Redis 内でアプリケーションロジックの一部を実行でき、パフォーマンスを向上させ、アトミック実行を通じてデータの一貫性を確保できます。 | `1` |
 
 ### コマンドの例
 
@@ -114,7 +116,7 @@ Commerce 2.4.3 以降、Amazon EC2 でホストされるインスタンスは、
 
 [AWSで Redis クラスターを設定する ](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/) の後、ElastiCache を使用するように EC2 インスタンスを設定します。
 
-1. EC2 インスタンスと同じリージョンおよび VPC に [ElastiCache クラスターを作成 ](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html) します。
+1. EC2 インスタンスと同じリージョンおよびVPCに [ElastiCache クラスターを作成 ](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html) します。
 1. 接続を確認します。
 
    - EC2 インスタンスへの SSH 接続を開きます。
