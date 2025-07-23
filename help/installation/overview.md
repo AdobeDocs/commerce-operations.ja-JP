@@ -20,7 +20,7 @@ Adobe Commerce ソフトウェアは、約 30～60 分でインストールで�
 >
 >正常に続行するには、中程度の技術的知識とサーバーへのアクセス権が必要です。
 
-インストールすると、[ 顧客向けのストアフロント ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) と [ 管理パネル ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin) の両方を備えた完全に機能するAdobe Commerce ストアが作成されます。 プロセスを開始する前に、データベース資格情報、ドメイン情報および認証キーの準備が完了している必要があります。
+インストールすると、[ 顧客向けのストアフロント ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/storefront/storefront) と [ 管理パネル ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/admin/admin) の両方を備えた完全に機能するAdobe Commerce ストアが作成されます。 プロセスを開始する前に、データベース資格情報、ドメイン情報および認証キーの準備が完了している必要があります。
 
 ## ワークフロー
 
