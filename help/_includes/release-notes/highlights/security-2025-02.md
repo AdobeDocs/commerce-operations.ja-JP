@@ -13,7 +13,7 @@ ht-degree: 0%
 
   新しい CLI コマンドが、キーと [ 再暗号化 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)、特定のシステム構成、支払い [ カスタムフィールドのデータに対して ](https://developer.adobe.com/commerce/php/development/security/data-encryption/) 変更」、「」で使用できるようになりました。 管理 UI でのキーの変更は、このリリースではサポートされなくなりました。 CLI コマンドを使用する必要があります。
 
-* **CVE-2025-24434[](https://nvd.nist.gov/vuln/detail/CVE-2025-24434) の修正** 認証の脆弱性を解決します。
+* **CVE-2025-24434[&#128279;](https://nvd.nist.gov/vuln/detail/CVE-2025-24434) の修正** 認証の脆弱性を解決します。
 
   この修正は、独立したパッチとしても使用できます。 詳しくは、[ ナレッジベースの記事 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08) を参照してください。<!-- AC-12755 -->
 
