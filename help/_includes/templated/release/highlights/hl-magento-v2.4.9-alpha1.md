@@ -1,7 +1,7 @@
 ---
-source-git-commit: 30f4a7cf8ff93d559ff2f78c623df88260197683
+source-git-commit: eb6f99520b485d54ba5e44734d5979282f6d965f
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## v2.4.9-alpha1 のハイライト
 
-Magento Open Source 2.4.9-alpha1 リリースには、次の 9 つのハイライトが適用されます。
+Magento Open Source 2.4.9-alpha1 リリースには、次のハイライトが適用されます。
 
 ### 管理 UI
 
