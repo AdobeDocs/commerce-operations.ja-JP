@@ -4,9 +4,9 @@ description: このサブセクションでは、 [!DNL Quality Patches Tool]  �
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: b5b80bfa-a52c-466b-b95c-23590e850aed
-source-git-commit: f24e6b4cc973247cb176b7e6b10cc9c61e1c16c2
+source-git-commit: a7cbe756f73211e4cc400ea27e357e99aa39605c
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ QPT v1.1.66 には、次のパッチが含まれています。
 1. **ACSD-65775**：複数の数量に対する REST API 注文の詳細の `base_row_total` と `row_total` の値が正しくありません。
 1. **ACSD-65777**:`MediaGallery` GraphQL リクエストの商品イメージタイプの「types」フィールドが見つかりませんでした。
 1. **ACSD-65848**：管理者のカテゴリの読み込みが非常に遅い。
-1. **ACSD-65913**:OpenSearch が、同じ価格の製品を含むカテゴリに対して `illegal_argument_exception` をスローしました。
+1. **ACSD-65913**:[!DNL OpenSearch] が同じ価格の製品を含むカテゴリに対して `illegal_argument_exception` をスローします。
 1. **ACSD-66041**:CountryID が見つからないため、アイルランド（IE）の郵便番号で受け取り場所を検索できませんでした。
 1. **ACSD-66212**：顧客の CSV ファイルを 2 回読み込むと、2 回目以降の試行で失敗する問題を修正しました。
 
