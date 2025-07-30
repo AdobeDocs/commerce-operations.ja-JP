@@ -1,5 +1,5 @@
 ---
-source-git-commit: 92907752d92cd7f4a81377a5239dfded10fe3655
+source-git-commit: 1f377ab6e4dcdd2d350366f3889b8befd233474b
 workflow-type: tm+mt
 source-wordcount: '25720'
 ht-degree: 0%
@@ -1878,7 +1878,7 @@ _AC-8353 - [GitHub の問題 ](https://github.com/magento/magento2/issues/37253)
 
 _AC-8356 - [GitHub の問題 ](https://github.com/magento/magento2/issues/37250) - [GitHub コードの投稿 ](https://github.com/magento/magento2/pull/37000)_
 
-#### editorconfig 構文内のスペースは `[&lbrace;composer,auth&rbrace;.json]` のルールを中断します
+#### editorconfig 構文内のスペースは `[{composer,auth}.json]` のルールを中断します
 
 editorconfig の構文エラーを修正した後、composer ファイルと auth.json ファイルに 4 空白のインデントが正しく適用されるようになりました。 以前は、editorconfig 構文にスペースがあったため、これらのファイルが誤って 2 スペースのインデントでフォーマットされていました。
 
@@ -2022,7 +2022,7 @@ _ACP2E-2642 - [GitHub コードの投稿 ](https://github.com/magento/magento2/c
 
 _ACP2E-2653 - [GitHub コードの投稿 ](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### 結果を返さない価格フィルター `&lbrace;from:&quot;0&quot;&rbrace;` 含むGraphQL Products 呼び出し
+#### 結果を返さない価格フィルター `{from:&quot;0&quot;}` 含むGraphQL Products 呼び出し
 
 以前は、graphql 製品はゼロ価格のフィルターを使用して検索していましたが、スローされた例外が原因で結果をまったく返しませんでした。 これで、検索が期待どおりに結果を返します。
 
@@ -2559,8 +2559,8 @@ _LYNX-382_
 
 製品に画像が割り当てられている場合でも、単純な製品（グループ化された製品の一部）を買い物かごに追加すると、プレースホルダーのサムネール画像が返される問題を修正しました。
 修正詳細：
-* 製品のサムネールに、割り当てられた画像が正しく表示されるようになりました（使用可能な場合）。
-* サムネールの選択では、次の場所にある管理設定が適用されます。
+- 製品のサムネールに、割り当てられた画像が正しく表示されるようになりました（使用可能な場合）。
+- サムネールの選択では、次の場所にある管理設定が適用されます。
 ストア /設定/ セールス / チェックアウト /買い物かご/ グループ化された製品画像。
 これにより、ストアの設定に基づいて、グループ化された製品のサムネールの動作が一貫します。
 
@@ -2582,8 +2582,8 @@ _LYNX-402_
 
 オプション付きの親 SKU を使用して追加すると、設定可能な製品に対して only_x_left_in_stock 属性が常に 0 を返す問題を解決しました。
 修正詳細：
-* only_x_left_in_stock 値は、親 SKU ではなく、選択した子バリアントの在庫を正確に反映するようになりました。
-* これにより、設定可能な製品バリエーションの在庫レベルが、買い物かごと製品ページで正しく表示されます。
+- only_x_left_in_stock 値は、親 SKU ではなく、選択した子バリアントの在庫を正確に反映するようになりました。
+- これにより、設定可能な製品バリエーションの在庫レベルが、買い物かごと製品ページで正しく表示されます。
 
 _LYNX-403_
 
