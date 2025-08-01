@@ -2,9 +2,9 @@
 title: 共有責任セキュリティと運用モデル
 description: Adobe Commerce on cloud infrastructure プロジェクトに関与する各パーティのセキュリティ上の責任について説明します。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 4cd71d156ef6833185565180b297ba1b7f42a032
+source-git-commit: fcaf6ff1dce1c1a5084307cd366ca58d71a8f4e4
 workflow-type: tm+mt
-source-wordcount: '2791'
+source-wordcount: '2850'
 ht-degree: 0%
 
 ---
@@ -798,6 +798,28 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 |     | Adobe | 商人 |
 | --- | --- | --- |
 | Product Recommendations サービスの可用性 | R |   |
+
+{style="table-layout:auto"}
+
+#### Live Search
+
+|     | Adobe | 商人 |
+| --- | --- | --- |
+| Live Search サービスの可用性 | R |   |
+
+{style="table-layout:auto"}
+
+#### 製品レコメンデーションとライブ検索出力を強化するストアフロントイベントの品質（データ収集）
+
+|     | Adobe | 商人 |
+| --- | --- | --- |
+| コアテーマ（Luma） | R |   |
+| カスタムテーマ |  | R |
+| コア PWAの実装 | R |   |
+| カスタム PWAの実装 |  | R |
+| コア AEM EDS の実装（Commerce Boilerplate） | R |   |
+| カスタム AEM EDS の実装 |  | R |
+| その他のカスタムストアフロントの実装 |  | R |
 
 {style="table-layout:auto"}
 
