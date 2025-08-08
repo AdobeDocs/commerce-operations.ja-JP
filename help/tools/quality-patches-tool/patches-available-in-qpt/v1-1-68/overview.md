@@ -4,9 +4,9 @@ description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.68 で�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 0a7fdb3e5a7cb2c61ba54af78fadb524a570e20f
+source-git-commit: 47c8541c228f9ed3795c93b67b8ff85cbd4bd555
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ QPT v1.1.68 には、次のパッチが含まれています。
 1. **ACSD-62415**:Adobe Commerce バックエンドによるカテゴリの読み込みに時間がかかる。
 1. **ACSD-65938**：請求書の作成に失敗した場合でも、ギフトカードの E メールが送信されていました。
 1. **ACSD-66072**:[!UICONTROL Related Products Rule] が設定されているときに内部サーバーエラーが発生したため、関連商品が商品詳細ページのGraphQLで返されません。
-1. **ACSD-66082**：製品の読み込みを通じて製品のスウォッチ画像を更新できない。
+1. **ACSD-66082**：製品の読み込みから製品のスウォッチ画像を更新できない。
 1. **ACSD-66179**:「Not Capture」支払タイプの請求書をキャンセルすると、404 エラーページが表示される。
 1. **ACSD-66233**：製品リストポップアップが応答しないため、管理者が製品を追加できない。
 1. **ACSD-66506**：以前に割り当てられた共有カタログの製品が削除され、新しい製品が割り当てられると、バックエンドエラーが発生しました。
