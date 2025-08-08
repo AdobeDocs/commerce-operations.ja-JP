@@ -4,13 +4,13 @@ description: ACSD-66049 パッチを適用すると、古い PHP 環境（バー
 feature: Products
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 39e0b972dfa41f74f3c19e61d8fc1188d5c93f7c
+exl-id: e667d462-87f6-4db5-bf3f-3213edac2f09
+source-git-commit: da11e8bd5c4937ec2a7e548ce487797b83f8fd27
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66049：英語以外のストアフロントで、ICU ライブラリバージョンが原因で誤った価格が表示される
 
@@ -28,7 +28,7 @@ ACSD-66049 パッチは、古い PHP 環境（バージョン 63.1 から 74.1�
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -39,7 +39,7 @@ ACSD-66049 パッチは、古い PHP 環境（バージョン 63.1 から 74.1�
 1. ICU のバージョンを確認します。
    * SSH 経由でサーバーに接続し、コマンド `php -a` を実行します。
    * プロンプトで、`echo INTL_ICU_VERSION;` と入力します。
-1. **[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL General]**/**[!UICONTROL Locale]**/**[!UICONTROL Locale Options]** に移動します。 **[!UICONTROL Configure Locale]** = *[UICONTOL ヘブライ語（イスラエル）]*.
+1. **[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL General]**/**[!UICONTROL Locale]**/**[!UICONTROL Locale Options]** に移動します。**[!UICONTROL Configure Locale]** = *[!UICONTROL Hebrew (Israel)]*。
 1. 価格= 100 の製品を作成します。
 1. ストアフロントの製品ページを表示します。
 
@@ -50,14 +50,13 @@ ACSD-66049 パッチは、古い PHP 環境（バージョン 63.1 から 74.1�
 <u> 実際の結果 </u>:
 
 100 と表示された後、価格はすぐに 0 に更新されます。
-（この問題は PHP ICU ライブラリバージョン 63.1 から 74.1 に影響します。
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
