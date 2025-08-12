@@ -2,9 +2,10 @@
 title: Valkey の設定
 description: Valkey の機能の概要を説明し、Valkey の設定を開始します。
 feature: Configuration, Cache
-source-git-commit: 1850301e0b7f1abbc54613209940dd63d16ef145
+exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
+source-git-commit: b2cf71bfda3e5db8e27eb28d764cf99216454e33
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -27,13 +28,13 @@ Valkey ソフトウェアをインストールして設定するには、次の�
 
 ## Valkey 設定のセットアップ
 
-インストール環境によっては、Valkey 設定は通常 `/etc/valkey/valkey.conf` または `/etc/valkey/<port>.conf` のいずれかで見つけることができます。
+インストール環境によっては、通常 `/etc/valkey/valkey.conf` ファイルまたは `/etc/valkey/<port>.conf` ファイルで Valkey 設定を見つけることができます。
 
 要件に合わせて Valkey インスタンスを最適化するには、各セッション、Commerce キャッシュ、FPC に専用のインスタンスを使用することで、最良の結果を得ることができます。
 
 Adobeでは、セッションの永続性を有効にして、有効なデータをディスクにコピーすることをお勧めします。 有効なデータベースバックアップ（RDB）スナップショットまたはファイルのみ追加（AOF）永続性ログを使用できます。
 
-- **RDB** （Valkey Database）スナップショットは、最後の保存以降に最小数のキーが変更された場合、所定の時間後にデータベース全体をダンプファイルに保存します。 `valkey.conf` ファイル内の `save` 設定を使用して、この設定を構成します。
+- **RDB** （Valkey Database）スナップショットは、最後の保存以降に最小数のキーが変更された場合、所定の時間後にデータベース全体をダンプファイルに保存します。 `save` ファイル内の `valkey.conf` 設定を使用して、この設定を構成します。
 
 - **ファイルのみ追加** （AOF）は、Valkey に送信された各書き込み操作をジャーナルファイルに保存します。 Valkey は、再起動時にのみこのファイルを読み取り、元のデータセットの復元に使用します。
 
