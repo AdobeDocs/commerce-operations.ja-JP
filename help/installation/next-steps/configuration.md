@@ -3,7 +3,7 @@ title: アプリケーションの設定
 description: Adobe Commerceのオンプレミスデプロイメントに必要なインストール後設定について説明します。
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: a28dad04dac23075234a6ac3c2b362d125c9d981
+source-git-commit: a7c98879e027948fc887e28d4baa5fb04214ca95
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
@@ -26,8 +26,8 @@ crontab を削除してコマンドラインから cron を実行する方法な
 
 インストール後は、次の操作をお勧めします。
 
-* ファイルの所有権と権限が正しく設定されていることを確認します
-* [ デフォルトの管理者 URI の `admin` から別の場所への変更 ](../tutorials/admin-uri.md) を強くお勧めします
+* ファイルの所有権と権限が [ 適切に設定されていることを確認 ](../prerequisites/file-system/configure-permissions.md) ます
+* [ デフォルトの管理者 URI の ](../tutorials/admin-uri.md) から別の場所への変更 `admin` を強くお勧めします
 * [`X-Frame-Option` HTTP ヘッダー ](../../configuration/security/xframe-options.md) が正しく設定されていることを確認します。
 * クロスサイトスクリプティング（XSS）に対する予防策として、テンプレートを保護 [ します ](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
 
@@ -65,7 +65,7 @@ UNIX `logrotate` ユーティリティを使用すると、多数のログ・フ
 >
 >* スターター環境にはログローテーションがありません。
 >
->* Pro 統合環境では、ログローテーションを設定できません。 必要に応じて、カスタムのソリューション/スクリプトを実装し、スクリプトを実行するには [cron を設定 ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) する必要があります。
+>* Pro 統合環境では、ログローテーションを設定できません。 必要に応じて、カスタムのソリューション/スクリプトを実装し、スクリプトを実行するには [cron を設定 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) する必要があります。
 
 ### 様々なサービスが通信できるように iptables ルールを設定します
 
