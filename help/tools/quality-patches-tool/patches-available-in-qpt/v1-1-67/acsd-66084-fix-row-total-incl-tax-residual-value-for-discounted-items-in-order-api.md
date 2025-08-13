@@ -1,18 +1,18 @@
 ---
-title: 'ACSD-66084: ''row_total_incl_tax''は、注文 API 応答で完全に割引された項目に対して 0.00 ではなく、ゼロに近い残余価額を返します'
+title: 'ACSD-66084: ''row_total_incl_tax''は、注文 API で完全に割引された項目に対して 0.00 ではなく、ゼロに近い値を返します'
 description: ACSD-66084 パッチを適用すると、注文 API 応答で「row_total_incl_tax」が 0.00 ではなく、ゼロに近い残差値として返されるAdobe Commerceの問題が修正されます。
 feature: Orders, REST, Taxes, Payments, Checkout
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 01f7059e53590c4ff6602c41eb980ac7c141af33
+exl-id: 421c6fe6-b6b1-4f33-acb6-fbd4306bcc4c
+source-git-commit: 951738a4c671ed6fcc47b2a928d2110c78763d26
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
 
-
-# ACSD-66084:`row_total_incl_tax` は、注文 API 応答で完全に割引された項目に対して 0.00 ではなく、ゼロに近い残差値を返します
+# ACSD-66084:`row_total_incl_tax` は、注文 API で完全に割引された項目に対して 0.00 ではなく、ゼロに近い値を返します
 
 ACSD-66084 パッチは、完全に割引された項目に対して 0.00 ではなく、`row_total_incl_tax` が注文 API 応答のゼロに近い残差値として返される問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 がインストールされている場合に使用できます。 パッチ ID は ACSD-66084 です。 この問題はAdobe Commerce 2.4.9 で修正される予定であることに注意してください。
 
@@ -28,7 +28,7 @@ ACSD-66084 パッチは、完全に割引された項目に対して 0.00 では
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -60,8 +60,8 @@ ACSD-66084 パッチは、完全に割引された項目に対して 0.00 では
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
