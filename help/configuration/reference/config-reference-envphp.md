@@ -2,9 +2,9 @@
 title: env.php リファレンス
 description: env.php ファイルの値のリストを参照してください。
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 3f46ee08bb4edc08775bf986804772b88ca35f45
+source-git-commit: 26fac37405ad635f297b65415517451d5149e50f
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## バックエンド
 
-env.php の `backend` ノードを使用して、Commerceの管理者 URL の **frontName** を設定します。
+env.php の **ノードを使用して、Commerceの管理者 URL の** frontName`backend` を設定します。
 
 ```conf
 'backend' => [
@@ -46,7 +46,7 @@ env.php の `backend` ノードを使用して、Commerceの管理者 URL の **
 
 ## キャッシュ
 
-`env.php` ファイルのノードを使用して、redis ページとデフォルト `cache` キャッシュを設定します。
+`cache` ファイルのノードを使用して、redis ページとデフォルト `env.php` キャッシュを設定します。
 
 ```conf
 'cache' => [
@@ -112,17 +112,17 @@ env.php の `backend` ノードを使用して、Commerceの管理者 URL の **
 
 次のオプションを使用できます。
 
-- `1` - コンシューマは、TCP 接続を閉じてコンシューマ・プロセスを終了する前に、メッセージ・キューからメッセージの処理を `env.php` ファイルで指定された `max_messages` 値に達するまで続行します。 キューが `max_messages` 値に達する前に空になった場合、コンシューマーは到着するメッセージがさらに届くのを待ちます。
+- `1` - コンシューマは、TCP 接続を閉じてコンシューマ・プロセスを終了する前に、メッセージ・キューからメッセージの処理を `max_messages` ファイルで指定された `env.php` 値に達するまで続行します。 キューが `max_messages` 値に達する前に空になった場合、コンシューマーは到着するメッセージがさらに届くのを待ちます。
 
   この設定は大規模なマーチャントにお勧めです。メッセージフローが常に発生することが予想され、処理の遅延は望ましくないからです。
 
-- `0` - コンシューマーはキュー内の使用可能なメッセージを処理し、TCP 接続を閉じて終了します。 コンシューマーは、処理されたメッセージの数が `env.php` ファイルで指定された `max_messages` 値より少ない場合でも、追加のメッセージがキューに入るのを待ちません。 これにより、メッセージキューの処理に長い遅延が発生することによる cron ジョブの問題を防ぐことができます。
+- `0` - コンシューマーはキュー内の使用可能なメッセージを処理し、TCP 接続を閉じて終了します。 コンシューマーは、処理されたメッセージの数が `max_messages` ファイルで指定された `env.php` 値より少ない場合でも、追加のメッセージがキューに入るのを待ちません。 これにより、メッセージキューの処理に長い遅延が発生することによる cron ジョブの問題を防ぐことができます。
 
   この設定は、メッセージ フローが常に発生するとは限らない小規模なマーチャントに推奨されます。この場合、数日間メッセージが送信されない可能性がある場合は、小規模な処理の遅延と引き換えに、コンピューティング リソースを節約することをお勧めします。
 
 ## cron
 
-Commerce アプリケーションの cron ジョブを有効または無効にします。 デフォルトでは、cron ジョブが有効になっています。 無効にするには、`env.php` ファイルに `cron` 設定を追加し、値を `0` に設定します。
+Commerce アプリケーションの cron ジョブを有効または無効にします。 デフォルトでは、cron ジョブが有効になっています。 無効にするには、`cron` ファイルに `env.php` 設定を追加し、値を `0` に設定します。
 
 ```conf
 'cron' => [
@@ -146,7 +146,7 @@ Commerceでは、パスワードやその他の機密データを保護するた
 ]
 ```
 
-[ 暗号化キー ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/encryption-key) について詳しくは、_Commerce ユーザーガイド_ を参照してください。
+[ 暗号化キー ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) について詳しくは、_Commerce ユーザーガイド_ を参照してください。
 
 ## db
 
@@ -180,8 +180,8 @@ Commerceでは、パスワードやその他の機密データを保護するた
 ]
 ```
 
-システムの `env.php` ファイルで `queue/default_connection` が指定されている場合、`queue_topology.xml`、`queue_publisher.xml`、または `queue_consumer.xml` ファイルで特定の接続が定義されていない限り、この接続はシステムを通じてすべてのメッセージキューで使用されます。
-例えば、`env.php` に `queue/default_connection` が `amqp` まれているのに、モジュールのキュー設定 XML ファイルで `db` 接続が指定されている場合、モジュールは MySQL をメッセージブローカーとして使用します。
+システムの `queue/default_connection` ファイルで `env.php` が指定されている場合、`queue_topology.xml`、`queue_publisher.xml`、または `queue_consumer.xml` ファイルで特定の接続が定義されていない限り、この接続はシステムを通じてすべてのメッセージキューで使用されます。
+例えば、`queue/default_connection` に `amqp` が `env.php` まれているのに、モジュールのキュー設定 XML ファイルで `db` 接続が指定されている場合、モジュールは MySQL をメッセージブローカーとして使用します。
 
 ## ディレクトリ
 
@@ -203,7 +203,7 @@ Web サーバーが `/pub` ディレクトリからCommerce アプリケーシ�
 ]
 ```
 
-詳細情報 [ ダウンロード可能なドメイン ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
+詳細情報 [ ダウンロード可能なドメイン ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
 
 ## install
 
@@ -347,6 +347,12 @@ export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
 ## 変数によるファイル設定の上書き
 
 OS 環境変数で既存の `env.php` 設定オプションを上書きするには、設定の配列要素を JSON エンコードし、`MAGENTO_DC__OVERRIDE` OS 変数の値として設定する必要があります。
+
+`MAGENTO_DC__OVERRIDE` が設定されている場合、Commerce フレームワークでは `env.php` ファイル内の対応する値をバイパスし、環境変数から直接設定を読み取ります。 `env.php` ファイルの値は変更されませんが、オーバーライドされた設定セクションでは無視されます。
+
+>[!IMPORTANT]
+>
+>`MAGENTO_DC__OVERRIDE` 変数は、`env.php` ファイルで指定された設定セクションを完全にバイパスします。 この動作は、`MAGENTO_DC_` ファイル内の値よりも優先度が低い個々の `env.php` 変数とは異なります。
 
 複数の設定オプションを上書きする必要がある場合は、JSON エンコーディングの前に、すべてを 1 つの配列に組み合わせます。
 
