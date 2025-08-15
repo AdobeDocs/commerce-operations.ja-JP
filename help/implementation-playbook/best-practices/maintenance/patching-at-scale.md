@@ -34,7 +34,7 @@ ht-degree: 0%
 1. **セキュリティパッチ** は、Adobe Commerce リリースの静的コードベースの一部です。
 1. **cweagans/composer-patches** などの `composer install` および `composer update` プラグインを使用した [Composer パッチ ](https://packagist.org/packages/cweagans/composer-patches)。
 1. **Commerce用クラウドパッチ** パッケージに含まれるすべての [ 必須パッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html)。
-1. 選択した **品質パッチ** が [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md) に含まれています。
+1. 選択した **品質パッチ** が [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md) に含まれています。
 1. **カスタムパッチ** およびAdobe Commerceは、パッチ名のアルファベット順に `/m2-hotfixes` ディレクトリ内のパッチをサポートします。
 
    >[!IMPORTANT]

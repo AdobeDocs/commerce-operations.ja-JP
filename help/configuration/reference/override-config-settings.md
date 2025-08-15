@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->[2}Cloud Infrastructure 上のCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) ガイドの { 環境の設定 _のトピックを確認してください。_
+>[2&rbrace;Cloud Infrastructure 上のCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) ガイドの &lbrace; 環境の設定 _のトピックを確認してください。_
 
 ## 環境変数
 

@@ -26,7 +26,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >**[!DNL Support Permissions]** にアクセスするには、アカウントに [!DNL Site-Wide Analysis Tool Dashboard] の権限が付与されている必要があります。
->>詳しくは、ユーザーガイドの [ アカウント  [!DNL Commerce]  共有 ](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) を参照してください。
+>&#x200B;>詳しくは、ユーザーガイドの [ アカウント  [!DNL Commerce]  共有 ](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) を参照してください。
 
 ## ストアの [!DNL Site-Wide Analysis Tool Dashboard] から [!UICONTROL Admin Panel] へのログイン
 

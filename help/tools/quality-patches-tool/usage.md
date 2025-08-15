@@ -29,7 +29,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->まだインストールされていない場合は、[[!DNL Git] をインストールする前に ](https://github.com/git-guides/install-git)[ または ](https://man7.org/linux/man-pages/man1/patch.1.html) パッチ [!DNL Quality Patches Tool] をインストールする必要があります。 `magento/quality-patches` Composer パッケージを `composer.json` ファイルに追加します。
+>まだインストールされていない場合は、[[!DNL Git] をインストールする前に ](https://github.com/git-guides/install-git) [ または ](https://man7.org/linux/man-pages/man1/patch.1.html) パッチ [!DNL Quality Patches Tool] をインストールする必要があります。 `magento/quality-patches` Composer パッケージを `composer.json` ファイルに追加します。
 
 ```bash
 composer require magento/quality-patches

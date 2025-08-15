@@ -187,4 +187,4 @@ e コマースサイトを狙ったマルウェア攻撃は非常に一般的で
 
 ### クリックジャッキング攻撃の防止
 
-Adobeは、ストアフロントへのリクエストに含めることができる `X-Frame-Options` HTTP リクエストヘッダーを提供することで、クリックジャッキング攻撃からストアを保護します。 [2}Adobe Commerce設定ガイド ](../../../configuration/security/xframe-options.md) の「クリックジャッキングの悪用の防止 *を参照してください。*
+Adobeは、ストアフロントへのリクエストに含めることができる `X-Frame-Options` HTTP リクエストヘッダーを提供することで、クリックジャッキング攻撃からストアを保護します。 [2&rbrace;Adobe Commerce設定ガイド ](../../../configuration/security/xframe-options.md) の「クリックジャッキングの悪用の防止 *を参照してください。*

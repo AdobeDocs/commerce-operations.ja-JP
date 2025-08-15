@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40896: ''エラー：TypeError：引数 3'' エラーが非同期製品で発生しました'
-description: 'MDVA-40896 パッチでは、「Error: TypeError: Argument 3 passed to Magento\Framework\Webapi\ServiceInputProcessor::process （）は array 型である必要があり、string given」エラーが非同期製品バルク API に表示される問題を修正しています。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.15 がインストールされている場合に利用できます。 パッチ ID は MDVA-40896。 この問題はAdobe Commerce 2.4.4 で修正されていることに注意してください。'
+description: 'MDVA-40896 パッチでは、「Error: TypeError: Argument 3 passed to MagentoFrameworkWebapiServiceInputProcessor::process （）は array 型である必要があり、string given」エラーが非同期製品バルク API に表示される問題を修正しています。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.15 がインストールされている場合に利用できます。 パッチ ID は MDVA-40896。 この問題はAdobe Commerce 2.4.4 で修正されていることに注意してください。'
 feature: Products
 role: Admin
 exl-id: 24eedd8d-4ae1-4ebc-a3e4-993f0c361a67
@@ -91,7 +91,7 @@ MDVA-40896 パッチは、非同期の製品バルク API に `Error: TypeError:
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

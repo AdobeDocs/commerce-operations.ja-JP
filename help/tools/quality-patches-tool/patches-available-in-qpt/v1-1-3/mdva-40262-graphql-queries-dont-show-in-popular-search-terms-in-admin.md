@@ -45,23 +45,23 @@ GraphQL クエリが、管理者の一般的な検索用語に表示されませ
 
 <pre>
 <code class="language-graphql">
-{
+&lbrace;
   products(
     search: "jackets"
     filter: { price: { to: "50" } }
     pageSize: 20
-   ) {
+   ) &lbrace;
     total_count
-    items {
+    items &lbrace;
       name
       sku
-    }
-    page_info {
+    &rbrace;
+    page_info &lbrace;
       page_size
       current_page
-    }
-  }
-}
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -77,7 +77,7 @@ GraphQL クエリを実行して商品を検索した後、一般的な検索用
 
 個々のパッチを適用するには、デプロイメントタイプに応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

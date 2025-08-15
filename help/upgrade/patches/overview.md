@@ -60,7 +60,7 @@ Adobe エンジニアリングチームが、Adobe Commerce Composer リリー�
 カスタムパッチを作成するには：
 
 1. ローカルプロジェクトに `patches/composer` ディレクトリを作成します。
-1. パッチに使用する GitHub コミットまたはプルリクエストを特定します。 この例では、GitHub の問題 [`2d31571`#6474](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) にリンクされた [](https://github.com/magento/magento2/issues/6474) コミットを使用しています。
+1. パッチに使用する GitHub コミットまたはプルリクエストを特定します。 この例では、GitHub の問題 [`2d31571`#6474](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) にリンクされた [&#128279;](https://github.com/magento/magento2/issues/6474) コミットを使用しています。
 1. コミット URL に `.patch` または `.diff` の拡張子を追加します。 ファイルサイズを小さくするには、`.diff` を使用します。 例：[https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
 1. `patches/composer` ディレクトリにページをファイルとして保存します。 例：`github-issue-6474.diff`。
 1. ファイルを編集し、すべてのパスから `app/code/<VENDOR>/<PACKAGE>` を削除して、`vendor/<VENDOR>/<PACKAGE>` ディレクトリに対する相対パスにします。

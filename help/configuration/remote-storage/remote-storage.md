@@ -91,7 +91,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->sync コマンドは、`pub/media` ディレクトリ内のファイルのみを移行します __ ディレクトリ内のインポート/エクスポートファイルは移行しません `var`。 [2}Commerce 2.4 ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) の「スケジュールされた読み込み/書き出し」 _を参照してください。_
+>sync コマンドは、`pub/media` ディレクトリ内のファイルのみを移行します __ ディレクトリ内のインポート/エクスポートファイルは移行しません `var`。 [2&rbrace;Commerce 2.4 ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) の「スケジュールされた読み込み/書き出し」 _を参照してください。_
 
 <!-- link definitions -->
 

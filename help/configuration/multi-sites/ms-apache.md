@@ -110,7 +110,7 @@ ht-degree: 0%
 >[!INFO]
 >
 >- ホストされた環境に複数の web サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーにお問い合わせください。
->- クラウドインフラストラクチャー上にAdobe Commerceを設定するには、さらに作業が必要です。[2} クラウドインフラストラクチャー上のCommerceガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 複数のクラウド Web サイトまたはストアの設定 _を参照してください。_
+>- クラウドインフラストラクチャー上にAdobe Commerceを設定するには、さらに作業が必要です。[2&rbrace; クラウドインフラストラクチャー上のCommerceガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 複数のクラウド Web サイトまたはストアの設定 _を参照してください。_
 
 ### トラブルシューティング
 

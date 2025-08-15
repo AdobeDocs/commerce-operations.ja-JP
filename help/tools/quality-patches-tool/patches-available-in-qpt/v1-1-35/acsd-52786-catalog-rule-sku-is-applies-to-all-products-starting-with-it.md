@@ -39,7 +39,7 @@ ACSD-52786 パッチでは、特定の SKU で始まるすべての製品にカ�
 1. SKU が「24」の製品と SKU が「24-MB01」の製品の 2 つを作成します。
 1. **[!UICONTROL Marketing]**/**[!UICONTROL Catalog Price Rule]**/**[!UICONTROL Add New Rule]** に移動します。
 1. 次の条件を適用します。
-   * 次の条件の *[!UICONTROL If ** すべて **は** TRUE **]*です。*[!UICONTROL SKU is 24]*
+   * 次の条件の *[!UICONTROL If **&#x200B; すべて &#x200B;** は**&#x200B; TRUE &#x200B;**]*&#x200B;です。*[!UICONTROL SKU is 24]*
 1. アクションで割引金額を設定します。
 1. 「**[!UICONTROL Save and Apply]**」をクリックします。
 1. キャッシュをフラッシュします。
@@ -57,7 +57,7 @@ ACSD-52786 パッチでは、特定の SKU で始まるすべての製品にカ�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

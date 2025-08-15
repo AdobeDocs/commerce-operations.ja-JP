@@ -260,7 +260,7 @@ bin/uct upgrade:check --help
 - 2 つのモジュールに同じ名前を付けないでください。
 - Adobe Commerce[ コーディング標準 ](https://developer.adobe.com/commerce/php/coding-standards/) に従います。
 - Adobe Commerce 2.4[ アップグレードガイド ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) のベストプラクティス。
-- クラウドインフラストラクチャー上の [!DNL Upgrade Compatibility Tool]Adobe Commerce[[!DNL Site-Wide Analysis Tool] プロジェクトの ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html)[ から ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} を実行します。
+- クラウドインフラストラクチャー上の [!DNL Upgrade Compatibility Tool]Adobe Commerce[[!DNL Site-Wide Analysis Tool] プロジェクトの ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) [ から ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} を実行します。
 
 ## 結果を最適化
 

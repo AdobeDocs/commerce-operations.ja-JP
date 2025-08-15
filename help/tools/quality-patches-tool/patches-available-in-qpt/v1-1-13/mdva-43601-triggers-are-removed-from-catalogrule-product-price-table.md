@@ -32,7 +32,7 @@ MDVA-43601 パッチでは、`catalogrule_product_price` または `catalogrule_
 
 ## 問題
 
-`catalogrule_product_price` または `catalogrule_rule``catalogrule_product` 完全に再インデックスすると、トリガーはテーブルから削除されます。
+`catalogrule_product_price` または `catalogrule_rule` `catalogrule_product` 完全に再インデックスすると、トリガーはテーブルから削除されます。
 
 <u> 再現手順 </u>:
 
@@ -58,7 +58,7 @@ MDVA-43601 パッチでは、`catalogrule_product_price` または `catalogrule_
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

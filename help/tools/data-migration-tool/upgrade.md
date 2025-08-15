@@ -53,7 +53,7 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 * [ のリリース済みバージョンを ](install.md#find-released-versions-of-data-migration-tool) 検索 [!DNL Data Migration Tool] します
 
-* [ チェック ](install.md#check-version-of-installed-data-migration-tool)[!DNL Data Migration Tool] バージョン
+* [ チェック ](install.md#check-version-of-installed-data-migration-tool) [!DNL Data Migration Tool] バージョン
 
 ## [!DNL Data Migration Tool] のアップグレード
 

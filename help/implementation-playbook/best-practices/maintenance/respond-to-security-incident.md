@@ -99,7 +99,7 @@ Commerce管理者およびユーザーアカウント、アプリケーション
 
 ### 監査コード
 
-- 管理者から、[ と ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) を含むすべてのスコープ レベルで `website`0}HTML ヘッダーおよびフッターの構成を確認します。 `store view`不明なJavaScript コードがあれば、スクリプト、スタイルシートおよびその他のHTMLの設定から削除します。 トラッキングスニペットなど、認識されたコードのみを保持します。
+- 管理者から、[ と ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) を含むすべてのスコープ レベルで `website`0&rbrace;HTML ヘッダーおよびフッターの構成を確認します。 `store view`不明なJavaScript コードがあれば、スクリプト、スタイルシートおよびその他のHTMLの設定から削除します。 トラッキングスニペットなど、認識されたコードのみを保持します。
 
 - 現在の実稼動コードベースと、バージョン管理システム（VCS）に保存されているコードベースを比較します。
 

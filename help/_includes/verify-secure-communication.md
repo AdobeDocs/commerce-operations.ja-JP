@@ -68,7 +68,7 @@ Connection: keep-alive
 
 ## 管理画面で HTTP 基本認証を設定
 
-[ 検索エンジンの設定 ](../configuration/search/configure-search-engine.md) で説明したのと同じタスクを実行します。*ただし***[!UICONTROL Yes]** リストで「**[!UICONTROL Enable HTTP Auth]**」をクリックし、表示されたフィールドにユーザー名とパスワードを入力します。
+[ 検索エンジンの設定 ](../configuration/search/configure-search-engine.md) で説明したのと同じタスクを実行します。*ただし&#x200B;***[!UICONTROL Yes]** リストで「**[!UICONTROL Enable HTTP Auth]**」をクリックし、表示されたフィールドにユーザー名とパスワードを入力します。
 
 「**[!UICONTROL Test Connection]**」をクリックして機能することを確認し、「**[!UICONTROL Save Config]**」をクリックします。
 

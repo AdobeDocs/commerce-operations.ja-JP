@@ -384,7 +384,7 @@ PHP プロセスの動作は [configuration](https://www.php.net/manual/en/insta
 * &#39;% この問題は、Magento Cloud インフラストラクチャのElasticsearch サービスを&#39;ver_err&#39;として version%&#39;にアップグレードすることで解決できます。
 * &#39;%cluster の正常性状態が\[YELLOW\] から\[RED\] に変更されました（理由：%&#39;が&#39;yel_red&#39;です）
 * &#39;%No space on device%&#39; as &#39;no_space&#39;
-* &#39;% は、&#39;failed_query&#39;として [SearchRequest{searchType=%&#39;を実行できませんでした
+* &#39;% は、&#39;failed_query&#39;として &lbrack;SearchRequest&lbrace;searchType=%&#39;を実行できませんでした
 
 ## [!UICONTROL Cron view]
 

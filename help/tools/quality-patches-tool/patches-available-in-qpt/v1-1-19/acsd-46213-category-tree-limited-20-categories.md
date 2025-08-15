@@ -43,30 +43,30 @@ ACSD-46213 パッチは、カテゴリツリーリクエストが 20 個のカ�
 
    <pre>
     <code class="language-graphql">
-    {
-      categoryList(filters: { parent_id: { in: ["3"] } }) {
+    &lbrace;
+      categoryList(filters: { parent_id: { in: ["3"] } }) &lbrace;
         name
         level
         path
         url_path
-        children {
+        children &lbrace;
           id
           level
           name
           path
           url_path
           url_key
-          children {
+          children &lbrace;
             uid
             level
             name
             path
             url_path
             url_key
-          }
-        }
-      }
-    }
+          &rbrace;
+        &rbrace;
+      &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -84,7 +84,7 @@ ACSD-46213 パッチは、カテゴリツリーリクエストが 20 個のカ�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料

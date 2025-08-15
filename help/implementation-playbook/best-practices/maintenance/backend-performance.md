@@ -110,7 +110,7 @@ Cron のパフォーマンスとタイミングの最適化を担当する場合
 
 Adobe Commerce cron 実装の詳細情報：
 
-- [2}Commerce管理システムユーザーガイドの {Cron （スケジュールされたタスク） ](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html)__
+- [2&rbrace;Commerce管理システムユーザーガイドの &lbrace;Cron （スケジュールされたタスク） ](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html)__
 - [ アプリケーション設定 – crons プロパティ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) （クラウドインフラストラクチャ）
 - [cron の設定と実行 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) （オンプレミス）
 - [Adobe Commerceの監視 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) （「[!UICONTROL Cron]」タブと「[!UICONTROL MySQL]」タブを参照）。

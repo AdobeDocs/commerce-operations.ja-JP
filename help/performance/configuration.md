@@ -69,7 +69,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## 延期された在庫更新
 
-大量の売上高が発生する場 [!DNL Commerce]、注文に関連する在庫の更新を延期できます。 これにより、操作の数が最小限に抑えられ、注文配置プロセスが高速化されます。 ただし、このオプションはリスクが高く、店舗でバックオーダーが有効になっている場合にのみ使用できます。これは、このオプションによって在庫数がマイナスになる可能性があるためです。 このオプションにより、店舗のチェックアウトフローのパフォーマンスが大幅に向上し、必要に応じて簡単に在庫を補充できます。 サイトで延期された在庫更新を有効化するには、**[!UICONTROL Stores]/[!UICONTROL Settings]/[!UICONTROL Configuration]/[!UICONTROL Catalog]/[!UICONTROL Inventory]/[!UICONTROL Product Stock Options]/[!UICONTROL Use Deferred Stock Update]** に移動します。 詳しくは、{2[Adobe Commerce ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud) インベントリの管理 _を参照してください。_
+大量の売上高が発生する場 [!DNL Commerce]、注文に関連する在庫の更新を延期できます。 これにより、操作の数が最小限に抑えられ、注文配置プロセスが高速化されます。 ただし、このオプションはリスクが高く、店舗でバックオーダーが有効になっている場合にのみ使用できます。これは、このオプションによって在庫数がマイナスになる可能性があるためです。 このオプションにより、店舗のチェックアウトフローのパフォーマンスが大幅に向上し、必要に応じて簡単に在庫を補充できます。 サイトで延期された在庫更新を有効化するには、**[!UICONTROL Stores]/[!UICONTROL Settings]/[!UICONTROL Configuration]/[!UICONTROL Catalog]/[!UICONTROL Inventory]/[!UICONTROL Product Stock Options]/[!UICONTROL Use Deferred Stock Update]** に移動します。 詳しくは、&lbrace;2[Adobe Commerce ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud) インベントリの管理 _を参照してください。_
 
 >[!INFO]
 >

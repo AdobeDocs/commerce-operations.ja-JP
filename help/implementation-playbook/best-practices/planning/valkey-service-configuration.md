@@ -91,7 +91,7 @@ Adobe Commerceのオンプレミスインストールの場合は、`bin/magento
 
 >[!WARNING]
 >
->_拡張/分割アーキテクチャ_ を使用して、クラウドインフラストラクチャプロジェクト用の Valkey スレーブ接続を設定しないでください [](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)。 これにより、Valkey 接続エラーが発生します。 詳しくは、[Cloud Infrastructure のCommerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) ガイドの _Valkey 設定ガイダンス_ を参照してください。
+>_拡張/分割アーキテクチャ_ を使用して、クラウドインフラストラクチャプロジェクト用の Valkey スレーブ接続を設定しないでください [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)。 これにより、Valkey 接続エラーが発生します。 詳しくは、[Cloud Infrastructure のCommerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) ガイドの _Valkey 設定ガイダンス_ を参照してください。
 
 ## キーをプリロード
 

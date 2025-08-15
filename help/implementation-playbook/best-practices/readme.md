@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # ベストプラクティス：コンテンツ作成ワークフロー
 
-https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.htmlこのドキュメントでは、*[3}Adobe Commerce実装プレイブック } の ] ベストプラクティス }* コンテンツに対する変更または追加をリクエストするユーザーワークフローについて説明 *ます。*
+https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.htmlこのドキュメントでは、*[3&rbrace;Adobe Commerce実装プレイブック &rbrace; の ] ベストプラクティス &rbrace;* コンテンツに対する変更または追加をリクエストするユーザーワークフローについて説明 *ます。*
 
 ## リクエストを作成できるユーザー
 

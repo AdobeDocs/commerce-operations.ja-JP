@@ -85,5 +85,5 @@ Adobeは、主要なビジネス目標をサポートするのに役立つ、イ
 
 ヘッドレスコマースは API ファーストのコマースです。 Adobe Commerceは、GraphQL API レイヤーを通じてすべてのコマースサービスとデータを提供する、分離されたアーキテクチャを持つ、完全なヘッドレスです。 このアーキテクチャにより、チームはコアアプリケーションとは独立してフロントエンドを開発でき、新しいテクノロジーを使用して新しいタッチポイントを迅速に構築およびテストする俊敏性が提供されます。
 
-Adobeは、ドキュメントベースのオーサリング、パフォーマンスを重視したアーキテクチャ、標準のネイティブ実験により [0}Edge Delivery Servicesと同じメリットと機能を提供する最新のヘッドレスストアフロントテクノロジーを提供します。 ](https://www.aem.live/home)Adobe Commerce[ ストアフロントサービス ](#storefront-services) の拡張性とパフォーマンス、および [ ドロップインコンポーネント ](https://experienceleague.adobe.com/developer/commerce/storefront/) の柔軟性と利便性を活用して、コマース機能を提供します。
+Adobeは、ドキュメントベースのオーサリング、パフォーマンスを重視したアーキテクチャ、標準のネイティブ実験により [0&rbrace;Edge Delivery Servicesと同じメリットと機能を提供する最新のヘッドレスストアフロントテクノロジーを提供します。 ](https://www.aem.live/home)Adobe Commerce[ ストアフロントサービス ](#storefront-services) の拡張性とパフォーマンス、および [ ドロップインコンポーネント ](https://experienceleague.adobe.com/developer/commerce/storefront/) の柔軟性と利便性を活用して、コマース機能を提供します。
 

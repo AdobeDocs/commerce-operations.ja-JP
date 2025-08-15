@@ -42,14 +42,14 @@ MDVA-44147 パッチは、[!DNL GraphQL] のリクエストが [!UICONTROL Requi
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
       generateCustomerToken(
         email: "test@gmail.com"
         password: "xxxxxxxx"
-        ) {
+        ) &lbrace;
           token
-        }
-      }
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 
@@ -59,33 +59,33 @@ MDVA-44147 パッチは、[!DNL GraphQL] のリクエストが [!UICONTROL Requi
 
    <pre>
     <code class="language-graphql">
-    query {
-      customer {
+    query &lbrace;
+      customer &lbrace;
         requisition_lists(
           pageSize: 20
-          ) {
-            items {
+          ) &lbrace;
+            items &lbrace;
               uid
               name
               description
-              items(pageSize: 20) {
-                items {
+              items(pageSize: 20) &lbrace;
+                items &lbrace;
                   uid
-                  product {
+                  product &lbrace;
                     uid
                     name
                     sku
                     __typename
-                  }
+                  &rbrace;
                   quantity
-                }
+                &rbrace;
                 total_pages
-              }
-            }
+              &rbrace;
+            &rbrace;
             total_count
-          }
-        }
-      }
+          &rbrace;
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 
@@ -93,37 +93,37 @@ MDVA-44147 パッチは、[!DNL GraphQL] のリクエストが [!UICONTROL Requi
 
    <pre>
     <code class="language-graphql">
-    {
-      "data": {
-        "customer": {
-          "requisition_lists": {
-            "items": [
-            {
+    &lbrace;
+      "data": &lbrace;
+        "customer": &lbrace;
+          "requisition_lists": &lbrace;
+            "items": &lbrack;
+            &lbrace;
               "uid": "MQ==",
               "name": "Name",
               "description": "Description",
-              "items": {
-                "items": [
-                {
+              "items": &lbrace;
+                "items": &lbrack;
+                &lbrace;
                   "uid": "MQ==",
-                  "product": {
+                  "product": &lbrace;
                     "uid": "MQ==",
                     "name": "Simple 01",
                     "sku": "s00001",
                     "__typename": "SimpleProduct"
-                    },
+                    &rbrace;,
                     "quantity": 1
-                  }
-                  ],
+                  &rbrace;
+                  &rbrack;,
                   "total_pages": 1
-                }
-              }
-              ],
+                &rbrace;
+              &rbrace;
+              &rbrack;,
               "total_count": 1
-            }
-          }
-        }
-      }
+            &rbrace;
+          &rbrace;
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 
@@ -131,38 +131,38 @@ MDVA-44147 パッチは、[!DNL GraphQL] のリクエストが [!UICONTROL Requi
 
    <pre>
     <code class="language-graphql">
-    query {
-      customer {
+    query &lbrace;
+      customer &lbrace;
         requisition_lists(
           pageSize: 20,
-          filter: {
-            uids: {
+          filter: &lbrace;
+            uids: &lbrace;
               eq: "MQ=="
-            }
-          }
-          ) {
-            items {
+            &rbrace;
+          &rbrace;
+          ) &lbrace;
+            items &lbrace;
               uid
               name
               description
-              items(pageSize: 20) {
-                items {
+              items(pageSize: 20) &lbrace;
+                items &lbrace;
                   uid
-                  product {
+                  product &lbrace;
                     uid
                     name
                     sku
                     __typename
-                  }
+                  &rbrace;
                   quantity
-                }
+                &rbrace;
                 total_pages
-              }
-            }
+              &rbrace;
+            &rbrace;
             total_count
-          }
-        }
-      }
+          &rbrace;
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 
@@ -178,7 +178,7 @@ MDVA-44147 パッチは、[!DNL GraphQL] のリクエストが [!UICONTROL Requi
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
