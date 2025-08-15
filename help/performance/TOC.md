@@ -25,4 +25,4 @@ ht-degree: 2%
    - [詳細設定](advanced-setup.md)
    - [詳細バ  [!DNL JavaScript]  ディング](advanced-js-bundling.md)
    - [GraphQL Application Server](application-server.md)
-- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)

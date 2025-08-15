@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、[ クラウドガイド ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) の _スナップショットとバックアップの管理_ を参照してください。
+>クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、[ クラウドガイド ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) の _スナップショットとバックアップの管理_ を参照してください。
 
 ## バックアップを有効にする
 

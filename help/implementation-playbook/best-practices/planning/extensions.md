@@ -36,5 +36,5 @@ Adobe Commerce サードパーティの拡張機能（モジュール）は、�
 
 - [アップグレード計画のベストプラクティス](../../../upgrade/prepare/best-practices.md)
 - クラウドインフラストラクチャー上のAdobe Commerceでのサードパーティ拡張機能の使用
-   - [ 技術と要件 – 開発とテスト ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
-   - [ 統合とステージングで完全にテストする理由 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)
+   - [ 技術と要件 – 開発とテスト ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
+   - [ 統合とステージングで完全にテストする理由 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

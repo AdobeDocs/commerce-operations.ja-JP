@@ -14,11 +14,11 @@ ht-degree: 0%
 # Adobe Commerceの管理アラート
 
 
-重要なダッシュボードとアラートを設定し、サイトが重要なストレージと [!DNL Apdex] ータレベル（アプリケーションとサービスの応答時間に対するユーザーの満足度）に達している時期を把握できるようにします。 これは、応答時間の遅延や停止に気づく前にアクションを実行するのに役立ちます。 以下に示す記事を使用して、アラートのトラブルシューティングを行うことができます。 アラートを使用する前に、まず通知チャネルを設定します。 Commerce on Cloud ガイドの [[!DNL New Relic]  通知チャネルの設定 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) を参照してください。
+重要なダッシュボードとアラートを設定し、サイトが重要なストレージと [!DNL Apdex] ータレベル（アプリケーションとサービスの応答時間に対するユーザーの満足度）に達している時期を把握できるようにします。 これは、応答時間の遅延や停止に気づく前にアクションを実行するのに役立ちます。 以下に示す記事を使用して、アラートのトラブルシューティングを行うことができます。 アラートを使用する前に、まず通知チャネルを設定します。 Commerce on Cloud ガイドの [[!DNL New Relic]  通知チャネルの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) を参照してください。
 
 >[!NOTE]
 >
->Adobe Commerceのアラートポリシーの管理アラートが使用できない場合は、このアカウントが新しく作成されたか、最近設定されたこ [!DNL New Relic] が原因である可能性があります。 これらのアカウントにアラート・ポリシーを追加するプロセスは、毎週火曜日に実行されます。 次のプロセスを実行した翌日に、アラート・ポリシーを使用できるようになります。 ポリシーがまだ見つからない場合は、[Adobe Commerce サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) し、プロジェクト ID を含めます。
+>Adobe Commerceのアラートポリシーの管理アラートが使用できない場合は、このアカウントが新しく作成されたか、最近設定されたこ [!DNL New Relic] が原因である可能性があります。 これらのアカウントにアラート・ポリシーを追加するプロセスは、毎週火曜日に実行されます。 次のプロセスを実行した翌日に、アラート・ポリシーを使用できるようになります。 ポリシーがまだ見つからない場合は、[Adobe Commerce サポートリクエストを送信 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) し、プロジェクト ID を含めます。
 
 これらのアラートのトラブルシューティング手順を示すナレッジベース記事へのリンクについては、以下の表を参照してください。
 

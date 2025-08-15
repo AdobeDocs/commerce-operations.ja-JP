@@ -27,7 +27,7 @@ Adobe Commerce on cloud infrastructure Pro プランアーキテクチャ 2.3.x 
 ## 追加情報
 
 * [ パフォーマンスのベストプラクティス - PHP 設定 ](../../../performance/software.md#php-settings)
-* [PHP オプションの設定 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
+* [PHP オプションの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
 * [クラウドインフラストラクチャー上のAdobe Commerceに関するデータベースのベストプラクティス](database-on-cloud.md)
 * [クラウドインフラストラクチャー上のAdobe Commerceで最も一般的なデータベースの問題](../maintenance/resolve-database-performance-issues.md)
 * [インデクサーの「スケジュールに従った更新」により、Adobe Commerceのパフォーマンスが最適化されます](../maintenance/indexer-configuration.md)

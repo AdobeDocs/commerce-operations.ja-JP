@@ -40,7 +40,7 @@ Source コードは、開発プロセスの間、次のような複数の安定�
 
 >[!TIP]
 >
->クラウドインフラストラクチャプロジェクト上のAdobe Commerceには、様々な環境に対応する特定のブランチが含まれます。 [Cloud Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html) の [Pro プロジェクトワークフロー ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html) および _スタータープロジェクトワークフロー_ を参照してください。
+>クラウドインフラストラクチャプロジェクト上のAdobe Commerceには、様々な環境に対応する特定のブランチが含まれます。 [Cloud Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=ja) の [Pro プロジェクトワークフロー ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=ja) および _スタータープロジェクトワークフロー_ を参照してください。
 
 ## ブランチ戦略
 

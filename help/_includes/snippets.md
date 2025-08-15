@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントも、互換性のある最新の B2B セキュリティパッチリリースに更新する必要があります。 [B2B リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes) を参照してください。
+>このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントも、互換性のある最新の B2B セキュリティパッチリリースに更新する必要があります。 [B2B リリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/release-notes) を参照してください。
 
 ## Adobe Commerceのみ {#ee-only}
 

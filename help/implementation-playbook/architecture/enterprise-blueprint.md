@@ -26,29 +26,29 @@ Commerceは、パフォーマンス、拡張性、セキュリティに関する
 
 ## クラウド基盤
 
-[ クラウドインフラストラクチャー上のAdobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview) は、Commerce実装の基盤となります。 クラウドネイティブ環境でCommerce アプリケーションを構築、デプロイ、モニタリング、管理するためのセルフサービスアプローチを備えた [ セキュア ](../../security-and-compliance/shared-responsibility.md) 自動ホスティングプラットフォームを提供します。
+[ クラウドインフラストラクチャー上のAdobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/overview) は、Commerce実装の基盤となります。 クラウドネイティブ環境でCommerce アプリケーションを構築、デプロイ、モニタリング、管理するためのセルフサービスアプローチを備えた [ セキュア ](../../security-and-compliance/shared-responsibility.md) 自動ホスティングプラットフォームを提供します。
 
 Cloud Foundation の技術的な詳細については、以下を参照してください。
 
-- [**拡張アーキテクチャ**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture)：容量を自動的に調整して、安定した予測可能なパフォーマンスを維持
-- [**複数の環境**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture) - PHP、MySQL （MariaDB）、Redis、RabbitMQ、およびサポートされている検索エンジン技術を使用して事前にプロビジョニングされ、サイトの開発、テスト、デプロイが行われます。
-- [**構成管理**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/overview) - カスタマイズ可能な環境設定ファイルと CLI （コマンド・ライン・インタフェース）により、アプリケーション設定、ルート、アクション、通知の作成と展開を管理します。
-- [**Git ベースのワークフロー**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow) – 迅速な開発と継続的なデプロイメントを実現するために、コードの変更をプッシュした後に、自動的にビルドおよびデプロイします
-- [**組み込みの可観測性**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/performance) – 複数のソースからのログデータを組み合わせて、サイトのパフォーマンスの管理と問題の診断に役立つツール
+- [**拡張アーキテクチャ**](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture)：容量を自動的に調整して、安定した予測可能なパフォーマンスを維持
+- [**複数の環境**](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/pro-architecture) - PHP、MySQL （MariaDB）、Redis、RabbitMQ、およびサポートされている検索エンジン技術を使用して事前にプロビジョニングされ、サイトの開発、テスト、デプロイが行われます。
+- [**構成管理**](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/overview) - カスタマイズ可能な環境設定ファイルと CLI （コマンド・ライン・インタフェース）により、アプリケーション設定、ルート、アクション、通知の作成と展開を管理します。
+- [**Git ベースのワークフロー**](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow) – 迅速な開発と継続的なデプロイメントを実現するために、コードの変更をプッシュした後に、自動的にビルドおよびデプロイします
+- [**組み込みの可観測性**](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/monitor/performance) – 複数のソースからのログデータを組み合わせて、サイトのパフォーマンスの管理と問題の診断に役立つツール
 - コアのCommerce アプリケーションをサードパーティシステムと統合し、GraphQLの機能を拡張するための [**包括的な API の対象範囲**](https://developer.adobe.com/commerce/webapi/get-started/)—[Commerce](https://developer.adobe.com/commerce/webapi/graphql/) および [REST](https://developer.adobe.com/commerce/webapi/rest) API
 
 ## Experience Cloudとの統合
 
-Adobe Commerceは、すべてのExperience Cloud ソリューションと統合して、[ パーソナライズされたコマースエクスペリエンスを大規模に ](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu) 提供します。
+Adobe Commerceは、すべてのExperience Cloud ソリューションと統合して、[ パーソナライズされたコマースエクスペリエンスを大規模に ](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu) 提供します。
 
-[Data Connection](https://experienceleague.adobe.com/en/docs/commerce/data-connection/overview) を使用すると、買い物客の購買行動に関するインサイトを解き放ち、他のAdobe Digital Experience 製品と共に、すべてのチャネルにわたってパーソナライズされたショッピングエクスペリエンスを作成できます。
+[Data Connection](https://experienceleague.adobe.com/ja/docs/commerce/data-connection/overview) を使用すると、買い物客の購買行動に関するインサイトを解き放ち、他のAdobe Digital Experience 製品と共に、すべてのチャネルにわたってパーソナライズされたショッピングエクスペリエンスを作成できます。
 
 >[!NOTE]
 >
 >詳しくは、次のリソースを参照してください。
 >
->- 技術的詳細については、[ デジタルエクスペリエンスブループリント ](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) を参照してください。
->- [ カスタマーエクスペリエンスのパーソナライズ ](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization) を参照してください。
+>- 技術的詳細については、[ デジタルエクスペリエンスブループリント ](https://experienceleague.adobe.com/ja/docs/blueprints-learn/architecture/overview) を参照してください。
+>- [ カスタマーエクスペリエンスのパーソナライズ ](https://experienceleague.adobe.com/ja/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization) を参照してください。
 
 
 ## サードパーティシステムとの統合
@@ -70,20 +70,20 @@ Adobeには、統合とカスタマイズを構築するための次の開発ツ
 
 >[!NOTE]
 >
->[ 最新のアプローチ：Adobe Commerceの効果的な拡張性 ](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility) を参照してください。
+>[ 最新のアプローチ：Adobe Commerceの効果的な拡張性 ](https://experienceleague.adobe.com/ja/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility) を参照してください。
 
 ## ストアフロントサービス
 
 Adobeは、主要なビジネス目標をサポートするのに役立つ、インテリジェントで構成可能なマーチャンダイジングサービスの豊富なセットを提供します。 また、これらのサービスは、パフォーマンスを大規模に最適化するために重要な API も提供します。
 
-- [ ライブ検索 ](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview) – この AI を活用した検索ツールにより、買い物客によりスマートで迅速かつ適切な結果を提供します。
-- [ 製品レコメンデーション ](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/overview) – 買い物客の行動、人気のトレンド、製品の類似性などに基づいて、AI を活用したレコメンデーションを追加します。
-- [ カタログサービス ](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview) – 顧客に最適化された製品体験を提供すると同時に、パフォーマンスの向上、スケーラビリティの向上、コンバージョンの増加を実現します。
-- [ 支払いサービス ](https://experienceleague.adobe.com/en/docs/commerce/payment-services/guide-overview)：利息なしの分割払い、支払い処理、オーダー、請求書の単一ビューなど、さまざまな支払い方法を提供することにより、顧客満足度を向上させます。
+- [ ライブ検索 ](https://experienceleague.adobe.com/ja/docs/commerce/live-search/overview) – この AI を活用した検索ツールにより、買い物客によりスマートで迅速かつ適切な結果を提供します。
+- [ 製品レコメンデーション ](https://experienceleague.adobe.com/ja/docs/commerce/product-recommendations/overview) – 買い物客の行動、人気のトレンド、製品の類似性などに基づいて、AI を活用したレコメンデーションを追加します。
+- [ カタログサービス ](https://experienceleague.adobe.com/ja/docs/commerce/catalog-service/guide-overview) – 顧客に最適化された製品体験を提供すると同時に、パフォーマンスの向上、スケーラビリティの向上、コンバージョンの増加を実現します。
+- [ 支払いサービス ](https://experienceleague.adobe.com/ja/docs/commerce/payment-services/guide-overview)：利息なしの分割払い、支払い処理、オーダー、請求書の単一ビューなど、さまざまな支払い方法を提供することにより、顧客満足度を向上させます。
 
 ## ヘッドレスストアフロント
 
 ヘッドレスコマースは API ファーストのコマースです。 Adobe Commerceは、GraphQL API レイヤーを通じてすべてのコマースサービスとデータを提供する、分離されたアーキテクチャを持つ、完全なヘッドレスです。 このアーキテクチャにより、チームはコアアプリケーションとは独立してフロントエンドを開発でき、新しいテクノロジーを使用して新しいタッチポイントを迅速に構築およびテストする俊敏性が提供されます。
 
-Adobeは、ドキュメントベースのオーサリング、パフォーマンスを重視したアーキテクチャ、標準のネイティブ実験により [0&rbrace;Edge Delivery Servicesと同じメリットと機能を提供する最新のヘッドレスストアフロントテクノロジーを提供します。 ](https://www.aem.live/home)Adobe Commerce[ ストアフロントサービス ](#storefront-services) の拡張性とパフォーマンス、および [ ドロップインコンポーネント ](https://experienceleague.adobe.com/developer/commerce/storefront/) の柔軟性と利便性を活用して、コマース機能を提供します。
+Adobeは、ドキュメントベースのオーサリング、パフォーマンスを重視したアーキテクチャ、標準のネイティブ実験により [0&rbrace;Edge Delivery Servicesと同じメリットと機能を提供する最新のヘッドレスストアフロントテクノロジーを提供します。 ](https://www.aem.live/home)Adobe Commerce[ ストアフロントサービス ](#storefront-services) の拡張性とパフォーマンス、および [ ドロップインコンポーネント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) の柔軟性と利便性を活用して、コマース機能を提供します。
 

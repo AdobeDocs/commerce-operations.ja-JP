@@ -92,4 +92,4 @@ Beta リリースには不具合が含まれている場合があり、いかな
 
 ## カスタムパッチ
 
-問題を修正したり、様々な理由でAdobe Commerce コードを変更したりするために、Adobe以外の担当者によって作成されました。 カスタムパッチは、[Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) を通じて提供されます。
+問題を修正したり、様々な理由でAdobe Commerce コードを変更したりするために、Adobe以外の担当者によって作成されました。 カスタムパッチは、[Quality Patches Tool](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/usage) を通じて提供されます。

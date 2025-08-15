@@ -67,4 +67,4 @@ ht-degree: 3%
    - [Commerceをアンインストールまたは再インストール](tutorials/uninstall.md)
    - [テーマのアンインストール](tutorials/themes.md)
    - [データベーススキーマのアップグレード](tutorials/database-upgrade.md)
-- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)

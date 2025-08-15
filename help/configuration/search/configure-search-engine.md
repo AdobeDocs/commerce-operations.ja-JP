@@ -19,7 +19,7 @@ ht-degree: 0%
 >バージョン 2.4.4 および 2.4.3-p2 では、**Elasticsearch** というラベルの付いたすべてのフィールドも OpenSearch に適用されます。
 >&#x200B;>バージョン 2.4.6 でElasticsearch 8.x がサポートされたとき、Elasticsearch設定と OpenSearch 設定を区別する新しいラベルが作成されました。
 
-検索エンジンの設定について詳しくは、[ ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html) を参照してください。
+検索エンジンの設定について詳しくは、[ ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=ja) を参照してください。
 
 ## 管理者からの検索エンジンの設定
 

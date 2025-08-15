@@ -52,7 +52,7 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様お
 
 これらの新しい条件により、検索クエリのフィルタリングメカニズムが強化され、検索結果を絞り込むことができます。 これらの新しい条件は、メインの検索クエリには影響しません。 ベータ版に参加するには、[commerce-storefront-services](mailto:commerce-storefront-services@adobe.com) にメールリクエストを送信します。
 
-Live Search ベータ版をインストールするには、[Live Search ガイド ](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta) を参照してください。
+Live Search ベータ版をインストールするには、[Live Search ガイド ](https://experienceleague.adobe.com/ja/docs/commerce/live-search/install#install-the-live-search-beta) を参照してください。
 
 ### IBM Sterling Order Management System Integration （Private Beta）
 
@@ -74,7 +74,7 @@ Adobe Commerce Foundation の各アルファ版およびベータ版のリリー
 - GraphQLの改善点
 - 一般的な品質のバグ修正
 - コミュニティの投稿
-- [Adobe Commerce サービスとの互換性をサポートするために必要な変更 ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Adobe Commerce サービスとの互換性をサポートするために必要な変更 ](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
 
 #### 命名規則とスケジュール
 

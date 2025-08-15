@@ -29,7 +29,7 @@ bin/magento module:status [--enabled] [--disabled] <module-list>
 
 >[!NOTE]
 >
->クラウドプロジェクトでモジュールを直接有効または無効にすることはできません。 これらのコマンドをローカルで実行してから、環境の `app/etc/config.php` ファイルに変更をプッシュする必要があります。 [Pro プロジェクトワークフロー：デプロイメントワークフロー ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow) を参照してください。
+>クラウドプロジェクトでモジュールを直接有効または無効にすることはできません。 これらのコマンドをローカルで実行してから、環境の `app/etc/config.php` ファイルに変更をプッシュする必要があります。 [Pro プロジェクトワークフロー：デプロイメントワークフロー ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=ja#deployment-workflow) を参照してください。
 
 ## モジュールの有効化、無効化
 

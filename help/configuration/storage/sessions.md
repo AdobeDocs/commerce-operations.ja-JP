@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ## セッションサイズの管理
 
-[ ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) の _セッション管理_ を参照してください。
+[ ユーザーガイド ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security-session-management) の _セッション管理_ を参照してください。
 
 ## ガベージコレクション設定
 

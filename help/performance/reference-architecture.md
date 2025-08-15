@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ここでは、データセンター（仮想化されていない）で物理的にホストされているプレーンサーバーを使用し、リソースが他のユーザーと共有されていないAdobe Commerce インスタンスの一般的な推奨設定について説明します。 ホスティングプロバイダーは、特にCommerceのハイパフォーマンスホスティングを専門としている場合、要件に対して同等または効果的な別の設定を推奨する場合があります。
 
-クラウドインフラストラクチャ環境でのAdobe Commerceについては、[ スターターアーキテクチャ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture) を参照してください。
+クラウドインフラストラクチャ環境でのAdobe Commerceについては、[ スターターアーキテクチャ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/starter-architecture) を参照してください。
 
 ## [!DNL Commerce] リファレンスアーキテクチャ図
 

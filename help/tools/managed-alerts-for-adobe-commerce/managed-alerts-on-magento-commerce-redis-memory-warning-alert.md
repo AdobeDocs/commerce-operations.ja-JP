@@ -28,8 +28,8 @@ ht-degree: 0%
 **<u>動け！</u>**
 
 * このアラートがクリアされるまで、スケジュールされているデプロイメントを中止することをお勧めします。
-* サイトが完全に応答しなくなった場合、または完全に応答しなくなった場合は、直ちにサイトをメンテナンスモードにします。 手順については、『Commerce インストールガイド』の [ メンテナンスモードの有効化または無効化 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) を参照してください。
-* トラブルシューティングのためにサイトに引き続きアクセスできるように、IP を除外 IP アドレスリストに追加してください。 手順については、『Commerce インストールガイド』の [ 除外 IP アドレスのリストの管理 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses) を参照してください。
+* サイトが完全に応答しなくなった場合、または完全に応答しなくなった場合は、直ちにサイトをメンテナンスモードにします。 手順については、『Commerce インストールガイド』の [ メンテナンスモードの有効化または無効化 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) を参照してください。
+* トラブルシューティングのためにサイトに引き続きアクセスできるように、IP を除外 IP アドレスリストに追加してください。 手順については、『Commerce インストールガイド』の [ 除外 IP アドレスのリストの管理 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses) を参照してください。
 
 **<u>やめて！</u>**
 
@@ -42,14 +42,14 @@ ht-degree: 0%
 
 原因の特定とトラブルシューティングを行うには、次の手順に従います。
 
-1. [!DNL Redis]one.newrelic.com[/](https://login.newrelic.com/login) インフラストラクチャ **/** サードパーティのサービス **ページに移動して、** 使用メモリが増加しているか減少しているかを確認し、[!DNL Redis] のダッシュボードを選択します。 安定しているか増加している場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) して、クラスターをアップサイズするか、`maxmemory` 限を次のレベルに上げます。
+1. [!DNL Redis]one.newrelic.com[/](https://login.newrelic.com/login) インフラストラクチャ **/** サードパーティのサービス **ページに移動して、** 使用メモリが増加しているか減少しているかを確認し、[!DNL Redis] のダッシュボードを選択します。 安定しているか増加している場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) して、クラスターをアップサイズするか、`maxmemory` 限を次のレベルに上げます。
 1. [!DNL Redis] メモリ消費が増加した原因を特定できない場合は、最近の傾向を確認して、最近のコードのデプロイメントまたは設定の変更に関する問題（新しい顧客グループやカタログの大幅な変更など）を特定します。 コードのデプロイメントまたは変更における相関関係について、過去 7 日間のアクティビティを確認することをお勧めします。
 1. サードパーティの拡張機能の動作が正しくないことを確認します。
    * 最近インストールしたサードパーティの拡張機能と、問題が発生した時刻との相関関係を確認します。
    * Adobe Commerceのキャッシュに影響を与え、キャッシュが急速に大きくなる可能性がある拡張機能を確認します。 例えば、カスタムレイアウトブロック、キャッシュ機能の上書き、キャッシュへの大量データの保存などです。
-1. 拡張機能の動作に誤りがある証拠がない場合は、[ クラウドインフラストラクチャ上のAdobe Commerceの問題を修正する  [!DNL Redis]  ための最新のパッチをインストールする ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/install-latest-patches-to-fix-magento-redis-issues) を参照してください。 上記の手順で問題の原因を特定またはトラブルシューティングできない場合は、L2 キャッシュを有効にして、アプリと [!DNL Redis] の間のネットワークトラフィックを減らすことを検討してください。 L2 キャッシュの概要については、『Commerce設定ガイド』の「Adobe Commerce アプリケーションの [L2 キャッシュ ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache)」を参照してください。 クラウドインフラストラクチャの L2 キャッシュを有効にするには、次の操作を試します。
+1. 拡張機能の動作に誤りがある証拠がない場合は、[ クラウドインフラストラクチャ上のAdobe Commerceの問題を修正する  [!DNL Redis]  ための最新のパッチをインストールする ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/install-latest-patches-to-fix-magento-redis-issues) を参照してください。 上記の手順で問題の原因を特定またはトラブルシューティングできない場合は、L2 キャッシュを有効にして、アプリと [!DNL Redis] の間のネットワークトラフィックを減らすことを検討してください。 L2 キャッシュの概要については、『Commerce設定ガイド』の「Adobe Commerce アプリケーションの [L2 キャッシュ ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/level-two-cache)」を参照してください。 クラウドインフラストラクチャの L2 キャッシュを有効にするには、次の操作を試します。
    * 2002.1.2 バージョン未満の場合は、ECE ツールをアップグレードします。
-   * [REDIS\_BACKEND 変数を使用 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend) を使用し、ファイルを更新して、L2 キャッシュ `.magento.env.yaml` 設定します。
+   * [REDIS\_BACKEND 変数を使用 ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend) を使用し、ファイルを更新して、L2 キャッシュ `.magento.env.yaml` 設定します。
 
    ```yaml
    stage:

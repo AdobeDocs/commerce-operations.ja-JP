@@ -42,7 +42,7 @@ Commerceと連携するようにワニスをインストールして設定した
 
 ## Commerceでワニスをパージするように設定する
 
-Commerceは、[`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) コマンドを使用して Varnish ホストを設定した後に、Varnish ホストをパージします。
+Commerceは、[`magento setup:config:set`](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) コマンドを使用して Varnish ホストを設定した後に、Varnish ホストをパージします。
 
 オプションのパラメーター `--http-cache-hosts` パラメーターを使用して、Varnish ホストとリッスンポートのコンマ区切りリストを指定できます。 1 つまたは複数の Varnish ホストをすべて設定します。 （ホストをスペース文字で区切らないでください）。
 

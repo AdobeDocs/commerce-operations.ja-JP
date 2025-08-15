@@ -23,7 +23,7 @@ Commerceは、ハッシュ化されたデータバージョンを Redis に保�
 
 >[!INFO]
 >
->クラウドインフラストラクチャー上のAdobe Commerceの場合、L2 キャッシュ設定に [ 変数をデプロイ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) を使用できます。
+>クラウドインフラストラクチャー上のAdobe Commerceの場合、L2 キャッシュ設定に [ 変数をデプロイ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_backend) を使用できます。
 
 ## 設定例
 

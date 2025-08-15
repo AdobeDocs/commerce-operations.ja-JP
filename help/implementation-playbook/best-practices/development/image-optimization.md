@@ -32,9 +32,9 @@ Commerce サイトに画像をアップロードする前に、パフォーマ�
 
 ## Fastly での画像の最適化の有効化と設定
 
-Adobe Commerce Cloud プロジェクトに Fastly サービスを設定したら、[Fastly 画像の最適化 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization) を参照して、画像の最適化を有効にして設定する手順を確認してください。
+Adobe Commerce Cloud プロジェクトに Fastly サービスを設定したら、[Fastly 画像の最適化 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization) を参照して、画像の最適化を有効にして設定する手順を確認してください。
 
 ## 追加情報
 
-- [Fastly のセットアップ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)
-- [ 画像の最適化が不十分だと、パフォーマンスの問題を引き起こす可能性があります ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)
+- [Fastly のセットアップ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)
+- [ 画像の最適化が不十分だと、パフォーマンスの問題を引き起こす可能性があります ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html?lang=ja)

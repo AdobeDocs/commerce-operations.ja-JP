@@ -54,7 +54,7 @@ _名詞_
 Adobe Commerceでは、管理者ユーザーには、すべての権限に加えて、管理者のすべての機能、オプションおよび機能へのアクセス権があります。
 また、ユーザーや役割を作成することもできます。
 
-詳細情報：[ ユーザーの追加 ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)
+詳細情報：[ ユーザーの追加 ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=ja)
 
 用語の属性（_T） :_
 
@@ -70,7 +70,7 @@ _名詞_
 ユーザーは管理領域にアクセスして、商品、注文、発送、CMSのコンテンツ、ストアフロントのデザイン、お客様の情報など、ストアを管理します。
 管理者ユーザーには、機能、オプションおよび機能へのアクセスを制御する権限に関連付けられた役割があります。
 
-詳細情報：[Adobe Commerce ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
+詳細情報：[Adobe Commerce ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=ja)
 
 用語の属性（_T） :_
 
@@ -84,7 +84,7 @@ _名詞_
 
 管理変数は、管理者ユーザーアカウントの設定を上書きして管理 UI にアクセスするためのプロジェクト環境変数です。
 
-詳細情報：[ADMIN variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html)
+詳細情報：[ADMIN variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html?lang=ja)
 
 用語の属性（_T） :_
 
@@ -96,7 +96,7 @@ _名詞_
 
 管理者に割り当てられた内部領域名。
 
-詳細情報：[Adobe Commerce ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
+詳細情報：[Adobe Commerce ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=ja)
 
 用語の属性（_T） :_
 
@@ -190,7 +190,7 @@ _名詞_
 通貨記号は、製品価格および販売文書（注文や請求書など）に表示されます。
 必要に応じて通貨記号をカスタマイズし、店舗やビューごとに個別に価格の表示を設定できます。
 
-詳細情報：[ 通貨 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html)
+詳細情報：[ 通貨 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html?lang=ja)
 
 用語の属性（_T） :_
 
@@ -212,13 +212,13 @@ _名詞_
 _名詞_
 
 情報の一部であるユーザーインターフェイス要素など、エンドユーザーにとって視覚的に具体的なすべての特有のコンテンツをレンダリングする、ページ出力の単位。
-[ ブロック ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) はモジュールによって実装および提供されます。
+[ ブロック ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=ja) はモジュールによって実装および提供されます。
 ブロックでは、テンプレートを使用してHTMLを生成します。
 ブロックの例としては、カテゴリリスト、ミニカート、製品タグ、製品一覧があります。
 
-[ 動的ブロック ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html) は、価格ルールなどのロジックに基づいてコンテンツを提供します。
+[ 動的ブロック ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html?lang=ja) は、価格ルールなどのロジックに基づいてコンテンツを提供します。
 
-ページビルダーでは、[ ブロック ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) および [ 動的ブロック ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html) のインタラクティブ機能と作成について拡張しています。
+ページビルダーでは、[ ブロック ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html?lang=ja) および [ 動的ブロック ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html?lang=ja) のインタラクティブ機能と作成について拡張しています。
 
 用語の属性（_T） :_
 
@@ -248,7 +248,7 @@ _形容詞_
 
 実質的にまたはインターネットを介してのみ機能するビジネスとは異なり、永続的な物理的な場所を持つ小売業。
 
-[Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) および [Order Management](#oms) の場合、この店舗は商品の数量、発送注文の追跡、店舗内の受け取りをサポートするソースです。
+[Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html?lang=ja) および [Order Management](#oms) の場合、この店舗は商品の数量、発送注文の追跡、店舗内の受け取りをサポートするソースです。
 
 用語の属性（_T） :_
 
@@ -274,7 +274,7 @@ _名詞_
 お客様は、さまざまなオプションや構成から「独自に構築」カスタマイズ可能な製品を組み立てることができます。
 バンドル内の各項目は、個別の単純製品または仮想製品です。
 
-詳細情報：[ 設定可能な製品 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)
+詳細情報：[ 設定可能な製品 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html?lang=ja)
 
 用語の属性（_T） :_
 
@@ -448,7 +448,7 @@ _名詞_
 
 クラウド変数は、クラウドインフラストラクチャ上のAdobe Commerceに固有の環境変数で、**`MAGENTO_CLOUD`** プレフィックスを使用します。
 
-詳細情報：[ クラウド変数 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html)
+詳細情報：[ クラウド変数 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=ja)
 
 用語の属性（_T） :_
 
@@ -458,7 +458,7 @@ _名詞_
 
 _名詞_
 
-[block](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) の特殊なバリアントで、管理でのみ作成でき、レイアウトファイルから参照することはできません。
+[block](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=ja) の特殊なバリアントで、管理でのみ作成でき、レイアウトファイルから参照することはできません。
 
 用語の属性（_T） :_
 
@@ -619,7 +619,7 @@ _名詞_
 
 デプロイ鍵はプロジェクトの SSH 公開鍵であり、Git リポジトリへの読み取り専用または読み取り/書き込み（有効な場合）アクセスを可能にします。
 
-詳細情報：[ 安全な接続 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)
+詳細情報：[ 安全な接続 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)
 
 用語の属性（_T） :_
 
@@ -688,7 +688,7 @@ _名詞_
 
 Commerce アプリケーションの管理とデプロイのために設計された一連のスクリプトとツール。 このパッケージを使用すると、Docker 環境へのデプロイ、クローンの管理、プロジェクト設定の検証、Adobe Commerceのパッチの適用など、クラウドインフラストラクチャプロセス上の多くのAdobeを簡単に実行できます。
 
-詳細情報：[ece-tools パッケージ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
+詳細情報：[ece-tools パッケージ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html?lang=ja)
 
 用語の属性（_T） :_
 
@@ -967,7 +967,7 @@ _名詞_
 MAGEID は、通常、Adobe Commerce アカウントの請求先連絡先です（Adobe Commerce on cloud infrastructure プロジェクトのプロジェクトオーナーではない場合もあります）。
 クラウドインフラストラクチャパッケージ上のAdobe CommerceおよびAdobe Commerceへのアクセス権を付与するには、これらのパッケージへのアクセス権が付与された MAGEID に関連付けられたアクセスキーを使用する必要があります。
 
-詳細情報：[ 認証キーを取得 ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html)
+詳細情報：[ 認証キーを取得 ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=ja)
 
 用語の属性（_T） :_
 
@@ -978,7 +978,7 @@ MAGEID は、通常、Adobe Commerce アカウントの請求先連絡先です�
 _名詞_
 
 マーケティングおよび小売において、小売価格を決定するために品目の原価に追加されたパーセント。
-製品のカスタマイズ可能なオプションを使用して、製品の [ マークアップまたはマークダウンを設定 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html) します。
+製品のカスタマイズ可能なオプションを使用して、製品の [ マークアップまたはマークダウンを設定 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html?lang=ja) します。
 
 （開発）テキストの処理、プレゼンテーション、および書式設定を制御するコンピュータ言語。
 また、マークアップタグは、CMSのページまたはブロックに機能またはコンテンツを追加するコードスニペットです。
@@ -1076,7 +1076,7 @@ _名詞_
 
 オリジンクロークは、クラウドインフラストラクチャ上のAdobe Commerceが Fastly 以外のトラフィックをブロックし、DDoS 攻撃を防ぎ、クラウドインフラストラクチャ（オリジン）に移動できるようにするセキュリティ機能です。
 
-詳細情報：[Fastly オリジンクローキング ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
+詳細情報：[Fastly オリジンクローキング ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=ja)
 
 用語の属性（_T） :_
 
@@ -1094,7 +1094,7 @@ _名詞_
 マーチャントは、コーディングの経験がなくてもレイアウトとページをデザインできます。
 ページビルダーを拡張する開発者向けに拡張機能のサポートが提供されています。
 
-詳細情報：[ ページビルダーユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)、[ ページビルダー DevDocs](https://developer.adobe.com/commerce/frontend-core/page-builder/)
+詳細情報：[ ページビルダーユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=ja)、[ ページビルダー DevDocs](https://developer.adobe.com/commerce/frontend-core/page-builder/)
 
 用語の属性（_T） :_
 
@@ -1406,7 +1406,7 @@ UI コンポーネントシステムの目標は次のとおりです。
 * AJAXを使用したコンポーネントデータの更新
 * 上記の項目を作成するための新しい DSL の導入
 
-詳細情報：[UI コンポーネントガイド ](https://developer.adobe.com/commerce/frontend-core/ui-components/)、[ ページビルダー ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
+詳細情報：[UI コンポーネントガイド ](https://developer.adobe.com/commerce/frontend-core/ui-components/)、[ ページビルダー ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=ja)
 
 用語の属性（_T） :_
 
@@ -1445,7 +1445,7 @@ Commerceの動作を拡張またはカスタマイズし、サードパーティ
 VBE は徹底的にテストされ、サポートされている各Adobe Commerce バージョンに含まれています。
 VBE には、モジュール、テーマ、言語パックを含めることができます。
 
-詳しくは、[ ベンダーバンドル拡張機能のトピック ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) を参照してください。
+詳しくは、[ ベンダーバンドル拡張機能のトピック ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html?lang=ja) を参照してください。
 
 用語の属性（_T） :_
 
@@ -1511,7 +1511,7 @@ Web サイトは、顧客データを共有するように設定することも�
 
 _名詞_
 
-[ ウィジェット ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html) は、ストアページの特定の場所にブロック、リンク、動的コンテンツを配置するために使用できる、コードの準備済みスニペットです。
+[ ウィジェット ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html?lang=ja) は、ストアページの特定の場所にブロック、リンク、動的コンテンツを配置するために使用できる、コードの準備済みスニペットです。
 ウィジェットを使用して、マーケティングキャンペーンのランディングページを作成したり、ストア全体の特定の場所にプロモーションコンテンツを表示したりできます。
 また、ウィジェットを使用して、外部レビューシステム、ビデオチャット、投票、購読フォーム用のインタラクティブ要素とアクションブロックを追加したり、タグクラウドと画像スライダー用のナビゲーション要素を提供したりすることもできます。
 

@@ -51,7 +51,7 @@ Adobe Commerceが提供する設定ファイルを使用すると、コンポー
 例：
 
 - コンポーネントのアンインストール：[`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- コンポーネントのステータスの確認：[`bin/magento module:status`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
+- コンポーネントのステータスの確認：[`bin/magento module:status`](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
 - コンポーネント（[`bin/magento module:disable`](../../installation/tutorials/manage-modules.md)、[`bin/magento module:enable`](../../installation/tutorials/manage-modules.md)）を有効または無効にします。
 
 > _config.php_
