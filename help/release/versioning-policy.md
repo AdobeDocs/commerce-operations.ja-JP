@@ -90,8 +90,8 @@ Beta リリースには不具合が含まれている場合があり、いかな
 
 分離パッチは、完全なセキュリティパッチとは独立してリリースされるセキュリティフィックスで、実装を迅速化します。 個別の各パッチは、特定のセキュリティ問題に対応し、最新または今後の完全なセキュリティパッチに含まれます。 問題の詳細は、関連するセキュリティ速報に記載されています。この速報は、修正の詳細、パッチの適用方法、および追加情報を含むナレッジベース（KB）記事にリンクしています。
 
-Adobe Commerceで利用可能な最新のセキュリティ更新プログラムを見つけるには、[ セキュリティセンター ](https://helpx.adobe.com/security/products/magento.html) を参照してください。
+Adobe Commerceで利用可能な最新のセキュリティ更新プログラムを見つけるには、[ セキュリティセンター ](https://helpx.adobe.com/jp/security/products/magento.html) を参照してください。
 
 ## カスタムパッチ
 
-問題を修正したり、様々な理由でAdobe Commerce コードを変更したりするために、Adobe以外の担当者によって作成されました。 カスタムパッチは、[Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) を通じて提供されます。
+問題を修正したり、様々な理由でAdobe Commerce コードを変更したりするために、Adobe以外の担当者によって作成されました。 カスタムパッチは、[Quality Patches Tool](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/usage) を通じて提供されます。
