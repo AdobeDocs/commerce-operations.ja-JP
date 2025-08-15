@@ -2,7 +2,7 @@
 title: モジュール設定ファイル
 description: 設定タイプを使用してモジュールをカスタマイズする方法を説明します。
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 80d7a7f2592e547ef70f2fac63c25be0cce9365d
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Commerce アプリケーション結合アルゴリズム：
 | --- | --- | --- | --- |
 | `address_formats.xml` | 住所形式宣言 | プライマリ、グローバル | [\Magento\Customer\Model\Address\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Address/Config.php) |
 | `acl.xml` | [ アクセス制御リスト ](https://developer.adobe.com/commerce/webapi/get-started/authentication/#relationship-between-aclxml-and-webapixml) | global | [\Magento\Framework\Acl\AclResource\Provider](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Acl/AclResource/Provider.php) |
-| `analytics.xml` | [ 詳細レポート ]https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/） | プライマリ、グローバル | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
+| `analytics.xml` | [ 高度なレポート ](https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/) | プライマリ、グローバル | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
 | `cache.xml` | キャッシュタイプの宣言 | プライマリ、グローバル | [\Magento\Framework\Cache\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Config/Data.php) |
 | `catalog_attributes.xml` | カタログ属性の設定 | global | [\Magento\Catalog\Model\Attribute\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Attribute/Config/Data.php) |
 | `config.php` と `env.php` | [ デプロイメント設定 ](../reference/deployment-files.md) | これらのファイルは、内部の config プロセッサによって読み取り/書き込み可能です。 | オブジェクトがないため、カスタマイズできません |
