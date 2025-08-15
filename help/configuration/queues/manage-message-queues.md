@@ -35,7 +35,7 @@ Cron ジョブは、コンシューマーを再起動するデフォルトのメ
 >
 >これは、グループ : コンシューマーの管理ストア /設定/設定/詳細/ システム / Cron 設定オプションで設定できます。
 >
->Commerceでの `cron` の使用について詳しくは、[Cron の設定と実行 ](../cli/configure-cron-jobs.md) を参照してください。
+>Commerceでの [ の使用について詳しくは、](../cli/configure-cron-jobs.md)Cron の設定と実行 `cron` を参照してください。
 
 [Supervisor](https://supervisord.readthedocs.io/en/latest/) などのプロセスマネージャーを使用して、プロセスのステータスを監視することもできます。 マネージャーは、コマンドラインを使用して、必要に応じてプロセスを再起動できます。
 
@@ -49,7 +49,7 @@ Cron ジョブは、コンシューマーを再起動するデフォルトのメ
 
 >[!INFO]
 >
->Adobe Commerce ストアがクラウドプラットフォーム上にホストされている場合は、[`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#cron_consumers_runner) を使用して `consumers_runner` cron ジョブを設定します。
+>Adobe Commerce ストアがクラウドプラットフォーム上にホストされている場合は、[`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) を使用して `consumers_runner` cron ジョブを設定します。
 
 ### 特定の設定
 
@@ -82,6 +82,6 @@ Cron ジョブは、コンシューマーを再起動するデフォルトのメ
 
   >[!INFO]
   >
-  >Adobe Commerce ストアがクラウドプラットフォーム上にホストされている場合は、[`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#consumers_wait_for_max_messages) を使用して、コンシューマーがメッセージキューからのメッセージを処理する方法を設定します。
+  >Adobe Commerce ストアがクラウドプラットフォーム上にホストされている場合は、[`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) を使用して、コンシューマーがメッセージキューからのメッセージを処理する方法を設定します。
 
 [ メッセージキューコンシューマーの開始 ](../cli/start-message-queues.md) を参照してください。

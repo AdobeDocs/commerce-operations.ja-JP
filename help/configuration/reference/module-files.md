@@ -104,7 +104,7 @@ Commerce アプリケーション結合アルゴリズム：
 | `module.xml` | モジュール設定データとソフト依存関係を定義します | プライマリ、グローバル | [\Magento\Framework\Module\ModuleList\Loader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Module/ModuleList/Loader.php) |
 | `mview.xml` | [MView 構成 ](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer/#mview-configuration) | プライマリ、グローバル | [\Magento\Framework\Mview\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Mview/Config/Data.php) |
 | `payment.xml` | 支払いモジュールの設定 | プライマリ、グローバル | [\Magento\Payment\Model\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Model/Config.php) |
-| `persistent.xml` | [Configuration_Persistent](https://developer.adobe.com/commerce/php/module-reference/module-persistent/)Magentoファイル | global | [\Magento\Persistent\Helper\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Persistent/Helper/Data.php) |
+| `persistent.xml` | [Magento_Persistent](https://developer.adobe.com/commerce/php/module-reference/module-persistent/) 設定ファイル | global | [\Magento\Persistent\Helper\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Persistent/Helper/Data.php) |
 | `pdf.xml` | PDF設定 | global | [\Magento\Sales\Model\Order\Pdf\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config/Reader.php) |
 | `product_options.xml` | 製品オプションを設定できます | global | [\Magento\Catalog\Model\ProductOptions\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductOptions/Config.php) |
 | `product_types.xml` | 製品タイプを定義します | global | [\Magento\Catalog\Model\ProductTypes\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductTypes/Config.php) |
@@ -128,7 +128,7 @@ Commerce アプリケーション結合アルゴリズム：
 
 ### 設定インターフェイス
 
-Magentoファイルは、[Configuration\Framework\Config](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Config) の下のインターフェイスを使用して操作できます。
+[Magento\Framework\Config](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Config) の下のインターフェイスを使用して、設定ファイルを操作できます。
 
 [ 設定タイプを作成 ](../reference/config-create-types.md#create-configuration-types) する場合、これらのインターフェイスを使用できます。
 

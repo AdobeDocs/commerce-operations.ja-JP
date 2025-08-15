@@ -12,13 +12,13 @@ ht-degree: 0%
 
 ---
 
-# ACP2E-3705:`MAGE_INDEXER_THREADS_COUNT` が設定されている場合、`indexer_update_all_views` cron 実行が失敗する
+# ACP2E-3705:`indexer_update_all_views` が設定されている場合、`MAGE_INDEXER_THREADS_COUNT` cron 実行が失敗する
 
 >[!NOTE]
 >
 >このパッチは、バージョン 2.4.7 以降の [ACSD-64112](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md) に代わるものです。
 
-ACP2E-3705 パッチは、`MAGE_INDEXER_THREADS_COUNT` が設定されているときに `indexer_update_all_views` cron 実行が失敗する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 がインストールされている場合に使用できます。 パッチ ID は ACP2E-3705 です。 この問題はAdobe Commerce 2.4.9 で修正される予定であることに注意してください。
+ACP2E-3705 パッチは、`indexer_update_all_views` が設定されているときに `MAGE_INDEXER_THREADS_COUNT` cron 実行が失敗する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 がインストールされている場合に使用できます。 パッチ ID は ACP2E-3705 です。 この問題はAdobe Commerce 2.4.9 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -32,11 +32,11 @@ ACP2E-3705 パッチは、`MAGE_INDEXER_THREADS_COUNT` が設定されている�
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-`MAGE_INDEXER_THREADS_COUNT` が *2* より大きい値に設定されている場合、`indexer_update_all_views` cron の実行は失敗します。特に、B2B が有効になっている [!UICONTROL Customer Segments] インデクサーに影響します。
+`indexer_update_all_views` が `MAGE_INDEXER_THREADS_COUNT`2 *より大きい値に設定されている場合、* cron の実行は失敗します。特に、B2B が有効になっている [!UICONTROL Customer Segments] インデクサーに影響します。
 
 <u> 再現手順 </u>:
 
@@ -52,7 +52,7 @@ ACP2E-3705 パッチは、`MAGE_INDEXER_THREADS_COUNT` が設定されている�
 1. いくつかの製品を作成してカテゴリに割り当てます。
 1. 完全な再インデックスを実行します。
 1. カテゴリに移動し、**[!UICONTROL Category Permissions]** を設定します。
-1. *8*`indexer_update_all_views` 設定した cron ジョブ `MAGE_INDEXER_THREADS_COUNT` 実行します。
+1. `indexer_update_all_views`8`MAGE_INDEXER_THREADS_COUNT`*設定した cron ジョブ* 実行します。
 
 <u> 期待される結果 </u>:
 
@@ -71,7 +71,7 @@ Magento\Framework\DB\Adapter\TableNotFoundException: SQLSTATE[42S02]: Base table
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * Adobe Commerce on Cloud Infrastructure: アップグレードとパッチ > Commerce on Cloud Infrastructure ガイドのパッチの適用
 
 ## 関連資料

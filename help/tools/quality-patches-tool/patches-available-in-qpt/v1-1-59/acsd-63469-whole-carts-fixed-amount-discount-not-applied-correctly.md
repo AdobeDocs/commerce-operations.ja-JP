@@ -28,7 +28,7 @@ ACSD-63469 パッチは、複数のルールが適用されている場合に、
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -40,10 +40,10 @@ ACSD-63469 パッチは、複数のルールが適用されている場合に、
 1. 次のように 2 つの **[!UICONTROL Cart Price Rules]** を作成します。
    * ルール 1
       * **[!UICONTROL Conditions]**: $850 製品の場合、*数量* を *等しいか、または 2 より大きい* に設定
-      * **[!UICONTROL Actions]**: *$153* 中 **[!UICONTROL Fixed amount discount for whole cart]** 件を適用する
+      * **[!UICONTROL Actions]**: **[!UICONTROL Fixed amount discount for whole cart]**$153 *中* 件を適用する
    * ルール 2
       * **[!UICONTROL Conditions]**: $85 製品の場合、*数量* を *等しいか、または 2 より大きい* に設定します
-      * **[!UICONTROL Actions]**: *$14* 中 **[!UICONTROL Fixed amount discount for whole cart]** 件に適用する
+      * **[!UICONTROL Actions]**: **[!UICONTROL Fixed amount discount for whole cart]**$14 *中* 件に適用する
 1. 両方の商品を買い物かごに追加します。それぞれの商品の数量は 2 です。
 
 <u> 期待される結果 </u>:
@@ -58,8 +58,8 @@ ACSD-63469 パッチは、複数のルールが適用されている場合に、
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## パッチのインストール後に必要な追加手順
 

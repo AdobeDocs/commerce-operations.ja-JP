@@ -56,7 +56,7 @@ ht-degree: 0%
    mysql -h "magento2-mysql" -u root -p -e "DROP DATABASE magento_quote;"
    ```
 
-1. `env.php` ファイルの `connections` セクションおよび `resources` セクションで、`checkout` および `sales` のデプロイメント設定を削除します。
+1. `checkout` ファイルの `sales` セクションおよび `connections` セクションで、`resources` および `env.php` のデプロイメント設定を削除します。
 1. 外部キーを復元：
 
    ```bash
@@ -65,8 +65,8 @@ ht-degree: 0%
 
 ## 作業内容の検証
 
-単一データベースの実装が正常に動作していることを確認するには、次のタスクを実行し、[phpMyAdmin](../../installation/prerequisites/optional-software.md#phpmyadmin) などのデータベースツールを使用して `magento_main` のデータベーステーブルにデータが追加されていることを確認します。
+単一データベースの実装が正常に動作していることを確認するには、次のタスクを実行し、`magento_main`phpMyAdmin[ などのデータベースツールを使用して ](../../installation/prerequisites/optional-software.md#phpmyadmin) のデータベーステーブルにデータが追加されていることを確認します。
 
-1. 外部キーが復元されたことを確認します。 例えば、`quote` データベーステーブルの `QUOTE_STORE_ID_STORE_STORE_ID` キーなどです。
+1. 外部キーが復元されたことを確認します。 例えば、`QUOTE_STORE_ID_STORE_STORE_ID` データベーステーブルの `quote` キーなどです。
 1. 顧客がストアフロントから注文できることを確認します。
 1. 分割されたデータベースを単一のデータベースに戻す前に作成された注文が、管理者で使用できることを確認します。

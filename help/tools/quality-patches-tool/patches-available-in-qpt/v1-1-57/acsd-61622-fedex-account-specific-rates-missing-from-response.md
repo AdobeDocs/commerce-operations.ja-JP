@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-61622:[!DNL FedEx] アカウント固有のレートが REST API 応答にありません
 
-ACSD-61622 パッチを使用すると、REST API 応答 [!DNL FedEx's] アカウント固有のレートが欠落している問題が解決されます。 Adobe Commerceから [!DNL FedEx] に送信される REST API リクエストに `ACCOUNT` 速のリクエストタイプを追加して、SOAP API レスポンスと同様のレスポンスを返します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 がインストールされている場合に使用できます。 パッチ ID は ACSD-61622 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-61622 パッチを使用すると、REST API 応答 [!DNL FedEx's] アカウント固有のレートが欠落している問題が解決されます。 Adobe Commerceから `ACCOUNT` に送信される REST API リクエストに [!DNL FedEx] 速のリクエストタイプを追加して、SOAP API レスポンスと同様のレスポンスを返します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 がインストールされている場合に使用できます。 パッチ ID は ACSD-61622 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -28,7 +28,7 @@ ACSD-61622 パッチを使用すると、REST API 応答 [!DNL FedEx's] アカ�
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -62,8 +62,8 @@ REST API 応答では、SOAP API 応答と同様に、`PAYOR_ACCOUNT_PACKAGE` �
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 

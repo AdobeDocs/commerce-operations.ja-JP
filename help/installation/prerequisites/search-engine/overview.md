@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # 検索エンジンの前提条件
 
-Adobe Commerce Elasticsearch 2.4 以降、すべてのインストールは、[User](https://www.elastic.co) または [OpenSearch](https://opensearch.org/) をカタログ検索ソリューションとして使用するように設定する必要があります。
+Adobe Commerce 2.4 以降、すべてのインストールは、[Elasticsearch](https://www.elastic.co) または [OpenSearch](https://opensearch.org/) をカタログ検索ソリューションとして使用するように設定する必要があります。
 
 >[!NOTE]
 >
->OpenSearch のサポートは 2.4.4 で追加されました。OpenSearch は、互換性のあるElasticsearchのフォークです。 Elasticsearch 7 を設定する手順は、すべて OpenSearch に適用されます。 [Elasticsearchから OpenSearch への移行 ](../../../upgrade/prepare/opensearch-migration.md) は、OpenSearch への切り替えに関するガイダンスを提供します。
+>OpenSearch のサポートは 2.4.4 で追加されました。OpenSearch は、Elasticsearchの互換性のあるフォークです。 Elasticsearch 7 の設定手順はすべて OpenSearch に適用されます。 [Elasticsearchから OpenSearch への移行 ](../../../upgrade/prepare/opensearch-migration.md) は、OpenSearch への切り替えに関するガイダンスを提供します。
 
 ## サポートされているバージョン
 
@@ -41,7 +41,7 @@ Adobe Commerce 2.4.4 以降をインストールする前に、Elasticsearchま�
 
 * Commerce アプリケーションと検索エンジンは、異なるホストにインストールされています。
 
-  別々のホストで実行する場合は、プロキシを機能させる必要があります。 （検索エンジンのクラスタリングはこのガイドの範囲外ですが、詳細については、[Elasticsearchクラスタリングのドキュメント ](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html) を参照してください。）
+  別々のホストで実行する場合は、プロキシを機能させる必要があります。 （検索エンジンのクラスタリングはこのガイドの範囲外ですが、[Elasticsearch クラスタリングのドキュメントで詳細を確認でき ](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html) す。）
 
 * 各ホストには独自の web サーバーがあり、web サーバーは同じである必要はありません。
 
@@ -63,7 +63,7 @@ Adobe Commerce 2.4.4 以降をインストールする前に、Elasticsearchま�
 
 1. 検索エンジンがリクエストを処理します。
 
-1. 通信は同じルートで返され、Elasticsearchの Web サーバーは安全なリバースプロキシとして機能します。
+1. 通信は、同じルートに沿って返され、Elasticsearch web サーバーは安全なリバースプロキシとして機能します。
 
 ## 前提条件
 
@@ -95,7 +95,7 @@ Java が既にインストールされているかどうかを確認するには
 java -version
 ```
 
-メッセージ `java: command not found` が表示された場合は、次の節で説明するように Java SDK をインストールする必要があります。
+メッセージ `java: command not found` が表示された場合は、次の節で説明するように Java SDKをインストールする必要があります。
 
 以下のセクションの 1 つを参照してください。
 
@@ -128,13 +128,13 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-その他のオプションについては、[Oracleドキュメント ](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html) を参照してください。
+その他のオプションについては、[Oracle ドキュメント ](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html) を参照してください。
 
 ### 検索エンジンのインストール
 
 プラットフォーム固有の手順については、[Elasticsearchのインストール ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) または [OpenSearch のインストールと設定 ](https://opensearch.org/docs/latest/opensearch/install/index/) に従ってください。
 
-Elasticsearchが動作していることを確認するには、動作しているサーバで次のコマンドを入力します。
+Elasticsearchが動作していることを確認するには、動作しているサーバーで次のコマンドを入力します。
 
 ```bash
 curl -XGET '<host>:9200/_cat/health?v&pretty'
@@ -159,7 +159,7 @@ curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 
 ## Elasticsearchのアップグレード
 
-データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストに関する手順について詳しくは、[Elasticsearchのアップグレード ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) を参照してください。 現在のElasticsearchのバージョンに応じて、クラスターの完全な再起動は必要な場合と不要な場合があります。
+データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストに関する手順について詳しくは、[Elasticsearchのアップグレード ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) を参照してください。 現在のElasticsearchのバージョンに応じて、クラスターの完全な再起動は必要な場合も必要ない場合もあります。
 
 Elasticsearchには JDK 1.8 以降が必要です。 インストールされている JDK のバージョンを確認するには、[Java Software Development Kit のインストール ](#install-the-java-software-development-kit) を参照してください。
 

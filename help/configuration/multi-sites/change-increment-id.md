@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->また、PayPal の支払い受け取り環境設定で請求書 ID ごとに複数の支払いを許可することで、PayPal の支払いゲートウェイの問題を修正することもできます。 [ ナレッジベース _の「PayPal ゲートウェイの拒否リクエスト – 請求書の重複問題 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=ja)」を参照してください_。
+>また、PayPal の支払い受け取り環境設定で請求書 ID ごとに複数の支払いを許可することで、PayPal の支払いゲートウェイの問題を修正することもできます。 [ ナレッジベース ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) の「PayPal ゲートウェイの拒否リクエスト – 請求書の重複問題 _」を参照してください_。
 
 ## 前提条件の手順
 

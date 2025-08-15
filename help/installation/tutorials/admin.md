@@ -15,7 +15,7 @@ ht-degree: 0%
 このコマンドを使用する前に、次の操作を行う必要があります。
 
 - [デプロイメント設定の作成](deployment.md)
-- [少なくとも user_Authorization モジュールとMagento_Magentoモジュールを有効にします](manage-modules.md)
+- [少なくともMagento_Authorization モジュールとMagento_User モジュールを有効にします](manage-modules.md)
 - データベーススキーマの作成
 
 >[!NOTE]
@@ -75,7 +75,7 @@ Admin last name: Doe Young
 Created Magento administrator user named John
 ```
 
-次の例では、管理者ユーザーの `first name`、`last name`、`password` `j.doe` 更新します。
+次の例では、管理者ユーザーの `first name`、`last name`、`password``j.doe` 更新します。
 
 ```bash
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567

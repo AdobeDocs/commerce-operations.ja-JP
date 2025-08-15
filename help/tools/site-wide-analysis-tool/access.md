@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # [!DNL Site-Wide Analysis Tool] へのアクセス方法
 
-ストアの [!UICONTROL Admin Panel] ージから [!DNL Site-Wide Analysis Tool] ダッシュボードにアクセスできます。
+ストアの [!DNL Site-Wide Analysis Tool] ージから [!UICONTROL Admin Panel] ダッシュボードにアクセスできます。
 
-[!DNL Site-Wide Analysis Tool] サービスは、ユーザー [ 役割リソース ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/developer-tools#operation-modes) にアクセスする権限を持つ [!UICONTROL Admin] ユーザーが [ 実稼動モード ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions-user-roles) で使用できます。
+[!DNL Site-Wide Analysis Tool] サービスは、ユーザー [ 役割リソース ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes) にアクセスする権限を持つ [!UICONTROL Admin] ユーザーが [ 実稼動モード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) で使用できます。
 
 >[!NOTE]
 >
@@ -25,14 +25,14 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL Site-Wide Analysis Tool Dashboard] にアクセスするには、アカウントに **[!DNL Support Permissions]** の権限が付与されている必要があります。
->詳しくは、ユーザーガイドの [ アカウント  [!DNL Commerce]  共有 ](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html?lang=ja) を参照してください。
+>**[!DNL Support Permissions]** にアクセスするには、アカウントに [!DNL Site-Wide Analysis Tool Dashboard] の権限が付与されている必要があります。
+>>詳しくは、ユーザーガイドの [ アカウント  [!DNL Commerce]  共有 ](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) を参照してください。
 
-## ストアの [!UICONTROL Admin Panel] から [!DNL Site-Wide Analysis Tool Dashboard] へのログイン
+## ストアの [!DNL Site-Wide Analysis Tool Dashboard] から [!UICONTROL Admin Panel] へのログイン
 
 ### 手順 1：権限の確認
 
-[!UICONTROL Admin] ユーザーアカウントに、[ 割り当てられたユーザーの役割 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions-user-roles) を通じて [!DNL Site-Wide Analysis Tool] にアクセスする権限があることを確認します。
+[!UICONTROL Admin] ユーザーアカウントに、[!DNL Site-Wide Analysis Tool] 割り当てられたユーザーの役割 [ を通じて ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) にアクセスする権限があることを確認します。
 
 >[!IMPORTANT]
 >
@@ -51,16 +51,16 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ユーザーアカウントが [!DNL Site-Wide Analysis Tool] にアクセスする権限を持ち、[!UICONTROL Admin] からツールにアクセスしようとすると 403 エラーが発生することを確認した場合、クラウドインフラストラクチャー上のAdobe Commerceのインスタンスで HTTP アクセス制御が有効になっている可能性があります。 HTTP 認証が有効になっている場合、[!DNL Site-Wide Analysis Tool] ダッシュボードはサポートされません。 この問題の解決について詳しくは、[ サポート記事 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento) を参照してください。
+>ユーザーアカウントが [!DNL Site-Wide Analysis Tool] にアクセスする権限を持ち、[!UICONTROL Admin] からツールにアクセスしようとすると 403 エラーが発生することを確認した場合、クラウドインフラストラクチャー上のAdobe Commerceのインスタンスで HTTP アクセス制御が有効になっている可能性があります。 HTTP 認証が有効になっている場合、[!DNL Site-Wide Analysis Tool] ダッシュボードはサポートされません。 この問題の解決について詳しくは、[ サポート記事 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento) を参照してください。
 
 ### 手順 2:[!DNL Site-Wide Analysis Tool] へのアクセス
 
 1. *[!UICONTROL Admin]* サイドバーで、**[!UICONTROL Reports]**/*[!UICONTROL System Insights]*/**[!UICONTROL Site-Wide Analysis Tool]** に移動します。
 
    ![Site-Wide Analysis Dashboard](../../assets/tools/ac-admin-panel-marked.jpg)
-   Adobe Commerce内の [!UICONTROL Admin Panel] 内の *[!DNL Site-Wide Analysis Tool]の場所*
+   Adobe Commerce内の *[!DNL Site-Wide Analysis Tool]内の [!UICONTROL Admin Panel] の場所*
 
-1. [!DNL Site-Wide Analysis Tool] の *利用条件* をお読みになり、「**[!UICONTROL Accept]**」をクリックして続行します。
+1. *の* 利用条件 [!DNL Site-Wide Analysis Tool] をお読みになり、「**[!UICONTROL Accept]**」をクリックして続行します。
 
    各ユーザーは、セッションの利用条件に同意する必要があります。 この手順は、ログインしているセッションごとに繰り返されます。
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 | --- | --- |
 | Dashboard | システムの正常性を、現在の通知および推奨事項と共に優先度別に表示します。 |
 | 情報 | お客様の連絡先情報および現在のチケットの概要と、インストールされている各Adobe Commerce製品の詳細情報を提供します。 |
-| Recommendations | サイトで検出された問題に対処するためのベストプラクティスに基づいた推奨事項の一覧を表示します。 |
+| 推奨事項 | サイトで検出された問題に対処するためのベストプラクティスに基づいた推奨事項の一覧を表示します。 |
 | 例外 | エラーハンドラーのない異常な状態によってアプリケーションによってスローされたエラーを一覧表示します。 |
 | 拡張機能 | すべてのサードパーティの拡張機能とサードパーティライブラリを一覧表示します。 |
 

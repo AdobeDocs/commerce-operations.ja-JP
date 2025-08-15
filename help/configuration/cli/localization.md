@@ -48,12 +48,12 @@ bin/magento i18n:collect-phrases [-o|--output="<csv file path and name>"] [-m|--
 | パラメーター | 値 | 必須？ |
 |--- |--- |--- |
 | `<path to directory to translate>` | 翻訳可能なコードを持つディレクトリ（つまり、翻訳するフレーズを含む PHP、PHTML または XML ファイル）へのパス。<br><br> 入力したパスから検索が開始され、そこに含まれるすべてのファイルとサブディレクトリが検索されます。<br><br>`-m --magento` を使用する場合は、このパラメーターを使用しないでください。 | はい（辞書）、いいえ（パッケージ）。 |
-| `-m --magento` | この翻訳辞書から言語パッケージを作成するために必要です。 このプロパティを使用すると、bin/magento を含むディレクトリが検索されます。 このオプションを選択すると、辞書の各行にテーマまたはモジュールが追加されます。Magento <br><br> 次に例を示します。<br><br>&quot;No Items Found&quot;,&quot;No Items Found&quot;,module,Module_Wishlist | 不可 |
+| `-m --magento` | この翻訳辞書から言語パッケージを作成するために必要です。 このプロパティを使用すると、bin/magento を含むディレクトリが検索されます。 このオプションを選択すると、辞書の各行にテーマまたはモジュールが追加されます。<br><br> 次に例を示します。<br><br>&quot;No Items Found&quot;,&quot;No Items Found&quot;,module,Magento_Wishlist | 不可 |
 | `-o --output="<path>"` | 作成する翻訳ディクショナリ CSV ファイルの絶対ファイルシステムパスとファイル名を指定します。 入力する値は、大文字と小文字が区別されます。 CSV ファイルの名前は、文字の大文字と小文字を含め、ロケール名と完全に一致する必要があります。<br><br> このパラメータを省略すると、出力は stdout に送られます。 | 不可 |
 
 >[!INFO]
 >
->翻訳辞書から言語パックを作成するには、`-m|--magento` オプションを使用する _必ず_ 必要です。
+>翻訳辞書から言語パックを作成するには、_オプションを使用する_ 必ず `-m|--magento` 必要です。
 
 ### 翻訳ガイドライン
 
@@ -117,7 +117,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 - 必要なライセンスファイル
 - `composer.json`
-- 言語パッケージを [ レジスタ ] する `registration.php`
+- 言語パッケージを `registration.php` レジスタ [ する ]
 - メ [`language.xml`](#language-package-languagexml) タ情報ファイル
 
 >[!INFO]
@@ -316,7 +316,7 @@ Commerce アプリケーションが `en_GB` パッケージ内の単語や語�
 
 [翻訳の概要]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [翻訳辞書]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[翻訳を設定します]: https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-localize
+[翻訳を設定します]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
 [言語パッケージの詳細情報]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

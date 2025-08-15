@@ -28,7 +28,7 @@ ACSD-63329 パッチでは、REST API を使用して新しい製品を作成す
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -36,7 +36,7 @@ REST API を使用して商品を作成する場合、日時フィールドに�
 
 <u> 再現手順 </u>:
 
-1. **[!UICONTROL Product]** 属性を作成し、そのデフォルト値を `12/31/2020` に設定して、**[!UICONTROL Catalog Input Type for Store Owner]** を ***[!UICONTROL Date]*** または&#x200B;***[!UICONTROL Date and Time]***&#x200B;に設定します。
+1. **[!UICONTROL Product]** 属性を作成し、そのデフォルト値を `12/31/2020` に設定して、**[!UICONTROL Catalog Input Type for Store Owner]** を ***[!UICONTROL Date]*** または***[!UICONTROL Date and Time]***に設定します。
 1. 別のテキストタイプ属性を作成し、デフォルト値を ***テスト値*** に設定します。
 1. `/rest/all/V1/products/` への REST API POST リクエストを使用して、新しい製品を作成します。
 
@@ -74,8 +74,8 @@ API を使用して製品を作成する場合は、デフォルト値を **[!UI
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 

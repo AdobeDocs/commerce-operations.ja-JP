@@ -13,7 +13,7 @@ ht-degree: 0%
 
 パッチは、次のいずれかの方法で適用できます。
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [コマンドライン](../patches/apply.md#command-line)
 - [コンポーザー](../patches/apply.md#composer)
 
@@ -26,12 +26,12 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->公式の品質パッチを適用するには、[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"} を使用します。 カスタムパッチをデプロイする前に、必ず包括的なテストを実施してください。
+>公式の品質パッチを適用するには、[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} を使用します。 カスタムパッチをデプロイする前に、必ず包括的なテストを実施してください。
 
 Composer を使用してカスタム パッチを適用するには：
 
 1. コマンドラインアプリケーションを開き、プロジェクトディレクトリに移動します。
-1. `composer.json` ファイルに `cweagans/composer-patches` プラグインを追加します。
+1. `cweagans/composer-patches` ファイルに `composer.json` プラグインを追加します。
 
    ```bash
    composer require cweagans/composer-patches

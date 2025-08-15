@@ -32,7 +32,7 @@ ACSD-62689 パッチでは、ユーザーが深さ 4 のネストの後に *[!UI
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -41,14 +41,14 @@ ACSD-62689 パッチでは、ユーザーが深さ 4 のネストの後に *[!UI
 <u> 再現手順 </u>:
 
 1. デフォルトのルートカテゴリの下に、*[!UICONTROL Anchor]* と *[!UICONTROL Non-Anchor]* という名前の 2 つのカテゴリを作成します。
-   * *[!UICONTROL Non-Anchor]* カテゴリに対して *[!UICONTROL Is Anchor]* フラグが無効になっていることを確認します。
+   * *[!UICONTROL Is Anchor]* カテゴリに対して *[!UICONTROL Non-Anchor]* フラグが無効になっていることを確認します。
 1. **[!UICONTROL Content]**/**[!UICONTROL Widgets]** に移動し、ウィジェットを作成します。
-1. 「*[!UICONTROL Layout Updates]*」の下の「*[!UICONTROL Display on]*」フィールドで「**[!UICONTROL Non-Anchor Categories]**」を選択します。
+1. 「*[!UICONTROL Layout Updates]*」の下の「**[!UICONTROL Non-Anchor Categories]**」フィールドで「*[!UICONTROL Display on]*」を選択します。
 1. 「**[!UICONTROL Specific Categories]**」をクリックします。
 1. カテゴリ選択アイコンをクリックします。
 1. ルートカテゴリを展開します。
 1. カテゴリを確認します。 両方とも無効にし、選択できないようにする必要があります。
-1. 「*[!UICONTROL Layout Updates]*」の下の「*[!UICONTROL Display on]*」フィールドで「**[!UICONTROL Anchor Categories]**」を選択します。 次に、手順 5 と 6 に従います。
+1. 「*[!UICONTROL Layout Updates]*」の下の「**[!UICONTROL Anchor Categories]**」フィールドで「*[!UICONTROL Display on]*」を選択します。 次に、手順 5 と 6 に従います。
 1. カテゴリを確認します。 両方とも有効かつ選択可能である必要があります。
 
 <u> 期待される結果 </u>:
@@ -63,8 +63,8 @@ ACSD-62689 パッチでは、ユーザーが深さ 4 のネストの後に *[!UI
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 
 ## 関連資料

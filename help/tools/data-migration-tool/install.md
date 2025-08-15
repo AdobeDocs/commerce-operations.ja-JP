@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Data Migration Tool] のインストール'
-description: Magento 1 とMagento 2 間でデータを転送する  [!DNL Data Migration Tool]  をインストールする方法を説明します。
+description: Magento 1 とMagento 2 間でデータを転送する  [!DNL Data Migration Tool]  をインストールする方法について説明します。
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
@@ -18,11 +18,11 @@ ht-degree: 0%
 >Magentoと [!DNL Data Migration Tool] のバージョンが一致している必要があります。
 
 
-Magento 2 と [!DNL Data Migration Tool] の両方で *同じリリース版* を使用していることを確認してください。 例えば、Magentoバージョン 2.2.0 の場合、[!DNL Data Migration Tool] バージョン 2.2.0 も使用する必要があります。
+Magento 2 と *の両方で* 同じリリース版 [!DNL Data Migration Tool] を使用していることを確認してください。 例えば、Magento バージョン 2.2.0 の場合、[!DNL Data Migration Tool] バージョン 2.2.0 も使用する必要があります。
 
 ## バージョンを確認
 
-Magentoのバージョンを確認するには、次のいずれかの方法を使用します。
+次のいずれかの方法で、Magentoのバージョンを確認します。
 
 - [コンポーザー](#composer-metapackage)
 - [GitHub リポジトリ](#github-repository)
@@ -54,7 +54,7 @@ GitHub リポジトリをクローンする場合は、[ （Contributor） GitHu
 
 ## [!DNL Data Migration Tool] のリリース済みバージョンの検索
 
-[!DNL Data Migration Tool] GitHub リポジトリの [ リリース ](https://github.com/magento/data-migration-tool/releases) ページに移動して、使用可能なリリース済みバージョンを見つけます。
+[ GitHub リポジトリの ](https://github.com/magento/data-migration-tool/releases) リリース [!DNL Data Migration Tool] ページに移動して、使用可能なリリース済みバージョンを見つけます。
 
 ## [!DNL Data Migration Tool] のインストール
 
@@ -66,11 +66,11 @@ GitHub リポジトリをクローンする場合は、[ （Contributor） GitHu
 インストールする前に、次のことを確認します。
 
 - [ 前提条件 ](prerequisites.md) セクションに記載されているすべてのタスクを完了しました
-- Magento2 ソフトウェアの [ バージョンの確認 ](install.md#check-your-version)
+- Magento 2 ソフトウェアの [ バージョンの確認 ](install.md#check-your-version)
 
 ### `repo.magento.com` からのインストール
 
-[!DNL Data Migration Tool] をインストールするには、Magentoルートインストールディレクトリの `composer.json` を更新して、[!DNL Data Migration Tool] パッケージの場所を指定する必要があります。
+[!DNL Data Migration Tool] をインストールするには、Magento ルートインストールディレクトリの `composer.json` を更新して、[!DNL Data Migration Tool] パッケージの場所を指定する必要があります。
 
 1. [ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインするか、に切り替えます。
 1. アプリケーションのルートディレクトリに移動します。

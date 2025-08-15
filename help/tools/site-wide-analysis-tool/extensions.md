@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Extensions]'
-description: のタブ、使用するタイミング、メリット  [!DNL Site-Wide Analysis Tool] ベストプラクティスについて説明します  [!DNL Extensions]
+description: のタブ、使用するタイミング、メリット  [!DNL Extensions]  ベストプラクティスについて説明します  [!DNL Site-Wide Analysis Tool]
 exl-id: e0ddc158-b268-44cc-8998-6b853d92b835
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 使用するタイミング
 
-[!DNL Site-Wide Analysis Tool] の「[!DNL Extensions]」タブには、Adobe Commerce インスタンスにインストールされている [!DNL extensions] に関する情報が表示されます。 このタブを使用すると、使用している [!DNL extensions] の一覧、そのバージョン、および説明、機能、使用方法などの詳細情報を確認できます。
+[!DNL Extensions] の「[!DNL Site-Wide Analysis Tool]」タブには、Adobe Commerce インスタンスにインストールされている [!DNL extensions] に関する情報が表示されます。 このタブを使用すると、使用している [!DNL extensions] の一覧、そのバージョン、および説明、機能、使用方法などの詳細情報を確認できます。
 
 ## 利点
 
@@ -31,4 +31,4 @@ ht-degree: 0%
 
 * サードパーティの [!DNL extensions] を最新のバージョンに保つことができない場合は、別の [!DNL extensions] を使用することを検討してください。
 
-* 潜在的な問題を回避するには、[Commerce Marketplace](https://marketplace.magento.com/extensions.html) などの信頼できるソースからサードパーティ [!DNL extensions] をダウンロードまたは購入します。
+* 潜在的な問題を回避するには、[!DNL extensions]Commerce Marketplace[ などの信頼できるソースからサードパーティ ](https://marketplace.magento.com/extensions.html) をダウンロードまたは購入します。

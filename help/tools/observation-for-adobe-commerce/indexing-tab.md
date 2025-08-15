@@ -1,6 +1,6 @@
 ---
 title: 「[!UICONTROL Indexing]」タブ
-description: ' [!DNL Observation for Adobe Commerce] の「[!UICONTROL Indexing]」タブについて説明します。'
+description: '[!UICONTROL Indexing] の「 [!DNL Observation for Adobe Commerce]」タブについて説明します。'
 exl-id: c7e123b7-2d0c-49d4-9f76-128939dc02a8
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7

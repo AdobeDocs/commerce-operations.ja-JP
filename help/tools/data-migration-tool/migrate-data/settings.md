@@ -45,7 +45,7 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 >[!NOTE]
 >
->このコマンドでは、すべての構成設定が移行されるわけではありません。 続行する前に、Magento2 管理者のすべての設定を確認してください。
+>このコマンドでは、すべての構成設定が移行されるわけではありません。 続行する前に、Magento 2 Admin ですべての設定を確認してください。
 
 
 設定が正常に転送されると、`Migration completed` のメッセージが表示されます。
@@ -78,9 +78,9 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 1. `settings.xml` で変更を行います。
 
-1. マッピングの設定ファイルの新しい名前を指定するには、`path/to/config.xml` ファイルの `<settings_map_file>` タグを変更します。
+1. マッピングの設定ファイルの新しい名前を指定するには、`<settings_map_file>` ファイルの `path/to/config.xml` タグを変更します。
 
-詳しくは、ツールの [ 仕様 ](../technical-specification.md) の [ 設定移行モード ](../technical-specification.md#settings-migration-mode) の節を参照してください。
+詳しくは、ツールの [ 仕様 ](../technical-specification.md#settings-migration-mode) の [ 設定移行モード ](../technical-specification.md) の節を参照してください。
 
 ## 次の移行手順
 

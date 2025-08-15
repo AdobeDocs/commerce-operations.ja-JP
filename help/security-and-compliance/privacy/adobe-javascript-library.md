@@ -1,5 +1,5 @@
 ---
-title: AdobeプライバシーJavaScriptライブラリ
+title: Adobe プライバシーJavaScript ライブラリ
 description: カスタムツールを使用して、Adobe Commerceで収集されたお客様の個人情報にアクセスして削除する方法を説明します。
 hide: true
 hidefromtoc: true
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# AdobeプライバシーJavaScriptライブラリ
+# Adobe プライバシーJavaScript ライブラリ
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-[AdobeプライバシーJavaScript ライブラリは ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ja) 非公開データにアクセスして削除するプロセスを作成するためのツール セットです。
+[Adobe Privacy JavaScript ライブラリ ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) は、非公開データへのアクセスおよび削除プロセスを作成するのに役立つ一連のツールです。
 
 Adobe Commerceのデータトラッキングサービスでは、[EU 一般データ保護規則（GDPR） ](gdpr.md) および [ カリフォルニア州消費者プライバシー法（CCPA） ](ccpa.md) などのプライバシー規制に適用される個人情報を保存できます。
 
@@ -30,7 +30,7 @@ Adobe Commerceのデータトラッキングサービスでは、[EU 一般デ�
 
 ファイルを取得したら、Adobe Commerce インスタンスにインストールされたカスタムモジュールまたはテーマにファイルを追加する必要があります。 このタスクを実行するには、「[ カスタム JavaScriptの使用 ](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) トピックに記載されている手順に従います。
 
-## 使用方法
+## 使用状況
 
 AdobePrivacy JS ライブラリは、ブラウザーに保存された ID データを管理するための様々な機能を提供します。
 
@@ -43,7 +43,7 @@ AdobePrivacy JS ライブラリは、ブラウザーに保存された ID デー
 `retrieveThenRemoveIdentities()`
 ：この関数は、ID の配列を取得し、ブラウザーから削除するという点で `removeIdentities()` と似ています。
 
-これらの関数の使用方法と例について詳しくは、[ 公式ライブラリドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ja) を参照してください。
+これらの関数の使用方法と例について詳しくは、[ 公式ライブラリドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) を参照してください。
 
 ### 初期化
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 このコンストラクターは、インスタンス化の際に、パラメーターを含んだ設定オブジェクトを受け入れます。
-これらの設定パラメーターのリストについては、[ 公式ライブラリドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ja) を参照してください。
+これらの設定パラメーターのリストについては、[ 公式ライブラリドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) を参照してください。

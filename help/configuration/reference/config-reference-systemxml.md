@@ -6,7 +6,7 @@ badge: label="執筆：David Lambauer" type="Informative" url="https://github.co
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
 workflow-type: tm+mt
-source-wordcount: '2708'
+source-wordcount: '2709'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 | `id` | セクションを参照するために使用する識別子を定義します。 | `typeId` | 必須 |
 | `translate` | 翻訳可能にするフィールドを定義します。 ラベルを翻訳可能にする `label` を指定します。 | `string` | optional |
 | `sortOrder` | セクションの並べ替え順を定義します。 数値が大きい場合はセクションがページの下部にプッシュされ、数値が小さい場合はセクションが上部にプッシュされます。 | `float` | optional |
-| `class` | 定義済みの CSS クラスを、レンダリングされたタブHTML要素に追加します。 | `string` | optional |
+| `class` | は、定義済みの CSS クラスを、レンダリングされたタブのHTML要素に追加します。 | `string` | optional |
 
 ### タブノードのリファレンス
 
@@ -79,8 +79,8 @@ ht-degree: 0%
 </config>
 ```
 
-上記のスニペットは、識別子が `A_UNIQUE_ID` の新しいタブを作成します。 `translate` 属性が定義され、ラベルを参照すると、`label` ノードが翻訳可能になります。 レンダリングプロセス中に、CSS クラス `a-custom-css-class-to-style-this-tab` がこのタブ用に作成されたHTML要素に適用されます。
-値が `10` の `sortOrder` 属性は、レンダリング時のすべてのタブのリスト内のタブの位置を定義します。
+上記のスニペットは、識別子が `A_UNIQUE_ID` の新しいタブを作成します。 `translate` 属性が定義され、ラベルを参照すると、`label` ノードが翻訳可能になります。 レンダリングプロセス中に、このタブ用に作成されたHTML要素に CSS クラス `a-custom-css-class-to-style-this-tab` が適用されます。
+値が `sortOrder` の `10` 属性は、レンダリング時のすべてのタブのリスト内のタブの位置を定義します。
 
 ## セクション
 
@@ -110,7 +110,7 @@ ht-degree: 0%
 | ノード | 説明 | タイプ |
 |------------------|-----------------------------------------------------------------------------------------------------------------------|---------------------|
 | `label` | フロントエンドに表示されるラベルを定義します。 | `string` |
-| `class` | 定義された CSS クラスを、レンダリングされたセクションHTML要素に追加します。 | `string` |
+| `class` | 定義された CSS クラスを、レンダリングされたセクションのHTML要素に追加します。 | `string` |
 | `tab` | 関連付けられたタブを参照します。 では、タブの ID が想定されます。 | `typeTabId` |
 | `header_css` | このドキュメントの作成時には使用も評価もされません。 | `string` |
 | `resource` | このセクションの権限設定を提供する ACL リソースを参照します。 | `typeAclResourceId` |
@@ -176,7 +176,7 @@ ht-degree: 0%
 | `help_url` | 拡張可能ではありません。 以下を参照してください。 | `typeUrl` |
 | `more_url` | 拡張可能ではありません。 以下を参照してください。 | `typeUrl` |
 | `demo_link` | 拡張可能ではありません。 以下を参照してください。 | `typeUrl` |
-| `comment` | グループラベルの下にコメントを追加します。 HTMLを使用 `<![CDATA[//]]>` て適用することができます。 | `string` |
+| `comment` | グループラベルの下にコメントを追加します。 HTMLを使用 `<![CDATA[//]]>` ると適用できます。 | `string` |
 | `hide_in_single_store_mode` | グループを単一ストアモードで表示するかどうかを指定します。 `1` はグループを非表示にし、`0` はグループを表示します。 | `int` |
 | `field` | このグループで使用できるフィールドを 1 つ以上定義します。 | `field` |
 | `group` | 1 つ以上のサブグループを定義します。 | `unbounded` |
@@ -248,12 +248,12 @@ ht-degree: 0%
 | `select` | 通常のドロップダウン。カスタム `source_model` が必要になる場合があります。 `Yes/No` 選択にも使用されます。 例については、`Magento\Search\Model\Adminhtml\System\Config\Source\Engine` を参照してください。 |
 | `multiselect` | `select` に似ていますが、複数のオプションが有効です。 |
 | `button` | 即時イベントをトリガーにするボタン。 ボタンのテキストとアクションを定義するには、カスタムフロントエンドモデルが必要です。 例については、`Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` を参照してください。 |
-| `obscure` | 値が暗号化され、`**&#x200B;**` として表示されるテキストフィールド。 ブラウザーで「Inspect Element」を使用してタイプを変更しても、値は表示されません。 |
-| `password` | `obscure` と同様に、非表示の値は暗号化されず、ブラウザーで「Inspect Element」を使用して型を強制的に変更すると、値が表示される点が異なります。 |
+| `obscure` | 値が暗号化され、`****` として表示されるテキストフィールド。 ブラウザーで「要素を検査」を使用してタイプを変更しても、値は表示されません。 |
+| `password` | `obscure` と同様に、非表示の値は暗号化されず、ブラウザーで「要素を検査」を使用してタイプを強制的に変更すると、値が表示される点が異なります。 |
 | `file` | ファイルをアップロードして処理できるようにします。 |
 | `label` | 編集可能なフィールドの代わりにラベルを表示します。 フィールドが特定の範囲でのみ編集できる場合に、このタイプを使用します（例：ストア表示レベルのみ）。 |
 | `time` | 時、分、秒の 3 つのドロップダウンを使用して時間を設定するコントロール。 |
-| `allowspecific` | 特定の国の複数選択リスト。 `Magento\Shipping\Model\Config\Source\Allspecificcountries` などの `source_model` が必要です |
+| `allowspecific` | 特定の国の複数選択リスト。 `source_model` などの `Magento\Shipping\Model\Config\Source\Allspecificcountries` が必要です |
 | `image` | 画像のアップロードを許可します。 |
 | `note` | 情報メモをページに追加することを許可します。 このタイプでは、メモをレンダリングする `frontend_model` が必要です。 |
 
@@ -262,7 +262,7 @@ ht-degree: 0%
 - `adminhtml` 領域にブロックを作成する
 - `type=""` をこのブロックへのパスに設定しています
 
-ブロック自体には、少なくとも `__construct` メソッドと `getElementHtml()` メソッドが必要です。 [OfflineShipping](https://github.com/magento/magento2/blob/2.4/app/code/Magento/OfflineShipping) は、カスタムMagentoの簡単な例です。
+ブロック自体には、少なくとも `__construct` メソッドと `getElementHtml()` メソッドが必要です。 [Magento_OfflineShipping](https://github.com/magento/magento2/blob/2.4/app/code/Magento/OfflineShipping) は、カスタムタイプの簡単な例です。
 
 例えば、OfflineShipping モジュールでは、「書き出し」ボタンは `Magento\OfflineShipping\Block\Adminhtml\Form\Field\Export` で定義され、フィールドは次のように定義されます。
 
@@ -279,10 +279,10 @@ ht-degree: 0%
 | ノード | 説明 | タイプ |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
 | `label` | フロントエンドに表示されるラベルを定義します。 | `string` |
-| `comment` | フィールドラベルの下にコメントを追加します。 HTMLを使用 `<![CDATA[//]]>` て適用することができます。 | `string` |
+| `comment` | フィールドラベルの下にコメントを追加します。 HTMLを使用 `<![CDATA[//]]>` ると適用できます。 | `string` |
 | `tooltip` | このフィールドの意味を説明するために使用できるもう 1 つのフロントエンド要素。 フィールドの横に小さなアイコンとして表示されます。 | `string` |
 | `hint` | 追加情報を表示します。 特定の `frontend_model` でのみ使用可能です。 | `string` |
-| `frontend_class` | 定義された CSS クラスを、レンダリングされたセクションHTML要素に追加します。 | `string` |
+| `frontend_class` | 定義された CSS クラスを、レンダリングされたセクションのHTML要素に追加します。 | `string` |
 | `frontend_model` | レンダリングを変更し、出力を変更する別のフロントエンドモデルを指定します。 | `typeModel` |
 | `backend_model` | 設定された値を変更する別のバックエンドモデルを指定します。 | `typeModel` |
 | `source_model` | 特定の値のセットを提供する別のソースモデルを指定します。 | `typeModel` |
@@ -392,8 +392,8 @@ ht-degree: 0%
 | `phoneUK` | （英国）の電話番号を使用できます。 |
 | `phoneUS` | （米国）の電話番号を使用できます。 |
 | `required-entry` | 空の値を許可しません（`validate-no-empty` と同等の検証）。<br> 検証エラーメッセージ：「これは必須フィールドです。」 |
-| `time` | 24 時間形式（00:00 ～ 23:59）で有効な時間を指定できます。 例えば、`15`、`15:05` または `15:05:48` です。 |
-| `time12h` | 12 時間形式（午前 12:00～午後 11:59:59 の間）で有効な時間を指定できます。 例えば、`3 am`、`11:30 pm`、`02:15:00 pm` です。 |
+| `time` | 24 時間形式（00 ～ 23:00）で有効 :59 時間を指定できます。 例えば、`15`、`15:05` または `15:05:48` です。 |
+| `time12h` | 12 時間形式（午前 12 時～午後 11:0059:59:）で有効な時間を指定できます。 例えば、`3 am`、`11:30 pm`、`02:15:00 pm` です。 |
 | `validate-admin-password` | 数字とアルファベットの両方を使用して、7 文字以上の文字を許可します。 |
 | `validate-alphanum-with-spaces` | 文字（a ～ z または A ～ Z）、数字（0 ～ 9）、スペースのみを使用できます。 |
 | `validate-clean-url` | 有効な URL を使用できます。 例えば、`https://www.example.com` や `www.example.com` です。 |
@@ -404,7 +404,7 @@ ht-degree: 0%
 | `validate-emailSender` | 有効なメールアドレスを指定できます。 例えば、johndoe@domain.comです。 |
 | `validate-fax` | 有効な FAX 番号を許可します。 例：123-456-7890 |
 | `validate-no-empty` | 空の値を許可しません（`requried-entry` と同等の検証）。<br> 検証エラーメッセージ：「空の値。」 |
-| `validate-no-html-tags` | HTMLタグの使用を許可しません。 |
+| `validate-no-html-tags` | HTML タグの使用を許可しません。 |
 | `validate-password` | 6 文字以上を使用できます。 先頭と末尾のスペースは無視されます。 |
 | `validate-phoneLax` | 有効な電話番号を許可します。 例えば、（123） 456-7890 や 123-456-7890 などです。 |
 | `validate-phoneStrict` | 有効な電話番号を許可します。 例えば、（123） 456-7890 や 123-456-7890 などです。 |
@@ -418,7 +418,7 @@ ht-degree: 0%
 
 ### デフォルト値
 
-フィールドのデフォルト値は、`section/group/field_ID` ノードでデフォルト値を指定することで、モジュールの `etc/config.xml` ファイルで設定することができます。
+フィールドのデフォルト値は、`etc/config.xml` ノードでデフォルト値を指定することで、モジュールの `section/group/field_ID` ファイルで設定することができます。
 
 #### 例：`ANOTHER_UNIQUE_FIELD_ID` のデフォルト値の設定（デフォルトの範囲）
 

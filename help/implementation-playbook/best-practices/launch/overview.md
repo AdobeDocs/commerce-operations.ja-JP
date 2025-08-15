@@ -26,11 +26,11 @@ ht-degree: 1%
 
 | ベストプラクティス | 説明 |
 |------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Adobe セキュリティ通知サービス ](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Adobeのセキュリティ通知に登録する。 |
+| [Adobe Security Notification Service](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Adobeのセキュリティ通知を購読する。 |
 | [Commerceのサイトとインフラストラクチャを保護 ](security-best-practices.md) | Commerce インストールのセキュリティ体制を強化して、Commerce ストアフロント、管理者、インフラストラクチャおよびデータを、不正アクセスやサイバー攻撃から保護します。 |
-| [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=ja) | 登録ユーザーによって開始される管理者アクセスおよび様々なストアフロントアクション用にGoogle reCAPTCHA を設定する。 |
+| [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) | 登録ユーザーによって開始される管理者アクセスおよび様々なストアフロントアクション用にGoogle reCAPTCHA を設定する。 |
 | [Web クローラーの設定 ](robots-txt.md) | Adobe Commerce サイトに関する手順を Web クローラーに渡します。 |
-| [ セキュリティ設定の確認 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=ja) | クラウドインフラストラクチャサイトでAdobe Commerceを起動する前に、チェックリストの項目を確認します。 |
+| [ セキュリティ設定の確認 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html) | クラウドインフラストラクチャサイトでAdobe Commerceを起動する前に、チェックリストの項目を確認します。 |
 
 ## パフォーマンスの監視
 

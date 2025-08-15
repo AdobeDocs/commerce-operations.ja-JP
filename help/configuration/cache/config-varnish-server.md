@@ -5,7 +5,7 @@ feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -197,7 +197,7 @@ backend default {
 
 ## HTTP 応答ヘッダーの検証
 
-これで、任意のページから返されたHTMLレスポンスヘッダーを確認することで、Varnish がページを提供していることを確認できます。
+これで、任意のページから返されたHTML応答ヘッダーを確認することで、Varnish がページを提供していることを確認できます。
 
 ヘッダーを確認する前に、Commerceを開発者モードに設定する必要があります。 それには複数の方法があります。最も簡単な方法は、Commerce アプリケーションのルートの `.htaccess` を変更することです。 [`magento deploy:mode:set`](../cli/set-mode.md) コマンドを使用することもできます。
 
@@ -234,7 +234,7 @@ Web ブラウザーで、任意のCommerce ページに移動します。
 
 このようなヘッダーが表示 _されない_ 場合は、Varnish を停止し、`default.vcl` を確認して、もう一度試してください。
 
-### HTML応答ヘッダーの確認
+### HTMLの応答ヘッダーの確認
 
 応答ヘッダーを調べる方法はいくつかあり、ブラウザーのプラグインやブラウザーインスペクターを使用する方法などがあります。
 

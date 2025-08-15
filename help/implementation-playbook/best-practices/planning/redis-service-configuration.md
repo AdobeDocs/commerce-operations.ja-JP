@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Redis L2 キャッシュの設定
 
-`.magento.env.yaml` 設定ファイルの `REDIS_BACKEND` デプロイメント変数を設定して、Redis L2 キャッシュを設定します。
+`REDIS_BACKEND` 設定ファイルの `.magento.env.yaml` デプロイメント変数を設定して、Redis L2 キャッシュを設定します。
 
 ```yaml
 stage:
@@ -30,16 +30,16 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-クラウドインフラストラクチャー上の環境設定については、_クラウドインフラストラクチャー上のCommerceガイド_ の [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_backend) を参照してください。
+クラウドインフラストラクチャー上の環境設定については、[`REDIS_BACKEND` クラウドインフラストラクチャー上のCommerceガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) の __ を参照してください。
 
 オンプレミスのインストールの場合は、[ 設定ガイド ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) の _Redis ページ キャッシュの設定_ を参照してください。
 
 >[!NOTE]
 >
->`ece-tools` パッケージの最新バージョンを使用していることを確認します。 そうでない場合は [ 最新バージョンにアップグレード ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=ja) します。 `composer show magento/ece-tools` CLI コマンドを使用すると、ローカル環境にインストールされているバージョンを確認できます。
+>`ece-tools` パッケージの最新バージョンを使用していることを確認します。 そうでない場合は [ 最新バージョンにアップグレード ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) します。 `composer show magento/ece-tools` CLI コマンドを使用すると、ローカル環境にインストールされているバージョンを確認できます。
 
 
-### L2 キャッシュメモリサイズ設定（Adobe Commerce Cloud）
+### L2 キャッシュメモリのサイズ設定（Adobe Commerce Cloud）
 
 L2 キャッシュは、ストレージ メカニズムとして [ 一時ファイル システム ](https://en.wikipedia.org/wiki/Tmpfs) を使用します。 特殊なキー値データベースシステムと比較して、一時ファイルシステムには、メモリの使用を制御するためのキー削除ポリシーがありません。
 
@@ -91,13 +91,13 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-[2&rbrace;Cloud Infrastructure ガイドのCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_use_slave_connection)REDIS_USE_SLAVE_CONNECTION&rbrace; を参照してください __
+[2}Cloud Infrastructure ガイドのCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)REDIS_USE_SLAVE_CONNECTION} を参照してください __
 
-Adobe Commerce オンプレミスのインストールの場合は、`bin/magento:setup` コマンドを使用して新しい Redis キャッシュ実装を設定します。 _設定ガイド_ の [ デフォルトキャッシュに Redis を使用 ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) を参照してください。
+Adobe Commerce オンプレミスのインストールの場合は、`bin/magento:setup` コマンドを使用して新しい Redis キャッシュ実装を設定します。 [ 設定ガイド ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) の _デフォルトキャッシュに Redis を使用_ を参照してください。
 
 >[!WARNING]
 >
->[ 拡張/分割アーキテクチャ _を使用して、クラウドインフラストラクチャプロジェクト用の Redis スレーブ接続を設定する_ しないでください ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html?lang=ja)。 これにより、Redis 接続エラーが発生します。 クラウドインフラストラクチャー上の _Commerce[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_use_slave_connection) ガイドの Redis 設定ガイダンス_ を参照してください。
+>_拡張/分割アーキテクチャ_ を使用して、クラウドインフラストラクチャプロジェクト用の Redis スレーブ接続を設定する [ しないでください ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)。 これにより、Redis 接続エラーが発生します。 クラウドインフラストラクチャー上の [Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) ガイドの _Redis 設定ガイダンス_ を参照してください。
 
 ## キーをプリロード
 
@@ -159,7 +159,7 @@ stage:
 
 >[!NOTE]
 >
->前の例では、`full_page` キャッシュは [Fastly](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly) を使用しているので、クラウドインフラストラクチャプロジェクトのAdobe Commerceには関係ありません。
+>前の例では、`full_page` キャッシュは [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) を使用しているので、クラウドインフラストラクチャプロジェクトのAdobe Commerceには関係ありません。
 
 オンプレミスのインストールを構成する方法については、[ 構成ガイド ](../../../configuration/cache/level-two-cache.md#stale-cache-options) の _古いキャッシュ オプション_ を参照してください。
 
@@ -200,7 +200,7 @@ Redis キャッシュと Redis セッションを分離すると、キャッシ�
        rabbitmq: "rabbitmq:rabbitmq"
    ```
 
-1. [Adobe Commerce サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket) を送信して、実稼動環境とステージング環境のセッション専用の新しい Redis インスタンスのプロビジョニングをリクエストします。 更新された `.magento/services.yaml` と `.magento.app.yaml` の設定ファイルを含めます。 ダウンタイムは発生しませんが、新しいサービスをアクティブ化するにはデプロイメントが必要です。
+1. [Adobe Commerce サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) を送信して、実稼動環境とステージング環境のセッション専用の新しい Redis インスタンスのプロビジョニングをリクエストします。 更新された `.magento/services.yaml` と `.magento.app.yaml` の設定ファイルを含めます。 ダウンタイムは発生しませんが、新しいサービスをアクティブ化するにはデプロイメントが必要です。
 
 1. 新しいインスタンスが実行中であることを確認し、ポート番号をメモします。
 
@@ -212,7 +212,7 @@ Redis キャッシュと Redis セッションを分離すると、キャッシ�
 
    >[!IMPORTANT]
    >
-   >`MAGENTO_CLOUD_RELATIONSHIPS` redis セッションサービス定義から自動的に検出で `ece-tools` ない場合にのみ、redis セッションポートを設定します。
+   >`ece-tools` redis セッションサービス定義から自動的に検出で `MAGENTO_CLOUD_RELATIONSHIPS` ない場合にのみ、redis セッションポートを設定します。
 
    >[!NOTE]
    >
@@ -237,7 +237,7 @@ Redis キャッシュと Redis セッションを分離すると、キャッシ�
    redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
    ```
 
-デプロイメント中、[ ビルドおよびデプロイログ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=ja#build-and-deploy-logs) に次の行が表示されます。
+デプロイメント中、[ ビルドおよびデプロイログ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs) に次の行が表示されます。
 
 ```
 W:   - Downloading colinmollenhour/credis (1.11.1)
@@ -253,7 +253,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 
 ## キャッシュ圧縮
 
-6 GB を超える Redis `maxmemory` を使用している場合は、キャッシュ圧縮を使用して、キーが消費する領域を減らすことができます。 クライアントサイドのパフォーマンスにはトレードオフがあることに注意してください。 予備の CPU がある場合は、有効にします。 _設定ガイド_ の [ セッションストレージに Redis を使用 ](../../../configuration/cache/redis-session.md) を参照してください。
+6 GB を超える Redis `maxmemory` を使用している場合は、キャッシュ圧縮を使用して、キーが消費する領域を減らすことができます。 クライアントサイドのパフォーマンスにはトレードオフがあることに注意してください。 予備の CPU がある場合は、有効にします。 [ 設定ガイド ](../../../configuration/cache/redis-session.md) の _セッションストレージに Redis を使用_ を参照してください。
 
 ```yaml
 stage:

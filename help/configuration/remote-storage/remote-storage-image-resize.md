@@ -34,7 +34,7 @@ ht-degree: 0%
 
 1. 「_カタログメディアの URL 形式_」セクションで、**[!UICONTROL Use system value]** をオフにします。
 
-1. **_カタログメディア URL 形式_** フィールドで `Image optimization based on query parameters` URL を選択します。
+1. `Image optimization based on query parameters` カタログメディア URL 形式 **_フィールドで_** URL を選択します。
 
 1. 「**[!UICONTROL Save Config]**」をクリックします。
 
@@ -52,7 +52,7 @@ ht-degree: 0%
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
    ```
 
-1. 含まれているテンプレート `nginx.conf.sample` ファイルに基づいて `nginx.conf` ファイルを作成します。 例：
+1. 含まれているテンプレート `nginx.conf` ファイルに基づいて `nginx.conf.sample` ファイルを作成します。 例：
 
    ```conf
    location ~* \.(jpg|jpeg|png|gif|webp)$ {

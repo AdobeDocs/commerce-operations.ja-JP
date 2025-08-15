@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->OpenSearch のサポートは 2.4.4 で追加されました。OpenSearch は、互換性のあるElasticsearchのフォークです。 詳しくは、[OpenSearch へのElasticsearchの移行 ](../../../upgrade/prepare/opensearch-migration.md) を参照してください。
+>OpenSearch のサポートは 2.4.4 で追加されました。OpenSearch は、Elasticsearchの互換性のあるフォークです。 詳しくは、[Elasticsearchの OpenSearch への移行 ](../../../upgrade/prepare/opensearch-migration.md) を参照してください。
 
 このセクションでは、このサーバで動作している検索エンジンをAdobe Commerceが使用できるように nginx を *セキュアでない* プロキシとして設定する方法について説明します。 この項では、HTTP 基本認証の設定については説明しません。詳細は、[nginx との安全な通信 ](#secure-communication-with-nginx) を参照してください。
 
@@ -81,7 +81,7 @@ include /etc/nginx/conf.d/*.conf;
 
 ## nginx との安全な通信
 
-この節では、安全なプロキシを使用して [HTTP 基本認証 ](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) を設定する方法について説明します。 TLS と HTTP 基本認証を一緒に使用すると、Elasticsearchや OpenSearch、またはアプリケーションサーバーとの通信がインターセプトされるのを防ぐことができます。
+この節では、安全なプロキシを使用して [HTTP 基本認証 ](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) を設定する方法について説明します。 TLS と HTTP 基本認証を一緒に使用すると、Elasticsearch、OpenSearch またはアプリケーションサーバーとの通信がインターセプトされるのを防ぐことができます。
 
 Nginx は HTTP 基本認証をネイティブでサポートしているので、たとえば、実稼動環境では推奨されない [ ダイジェスト認証 ](https://www.nginx.com/resources/wiki/modules/auth_digest/) を使用することをお勧めします。
 
@@ -89,7 +89,7 @@ Nginx は HTTP 基本認証をネイティブでサポートしているので�
 
 * [Ubuntu 14.04 （Digital Ocean）で Nginx を使用してパスワード認証を設定する方法 ](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
 * [Nginx を使った基本的な HTTP 認証（HowtoForge） ](https://www.howtoforge.com/basic-http-authentication-with-nginx)
-* [Elasticsearchのための Nginx 設定の例 ](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
+* [Elasticsearchの Nginx 設定の例 ](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
 
 詳しくは、次の節を参照してください。
 
@@ -100,7 +100,7 @@ Nginx は HTTP 基本認証をネイティブでサポートしているので�
 
 ### パスワードの作成
 
-Apache `htpasswd` コマンドを使用して、Elasticsearchまたは OpenSearch （この例では `magento_elasticsearch` という名前）にアクセスできるユーザーのパスワードをエンコードすることをお勧めします。
+Apache `htpasswd` コマンドを使用して、Elasticsearchまたは OpenSearch （この例では `magento_elasticsearch`）にアクセスできるユーザーのパスワードをエンコードすることをお勧めします。
 
 パスワードを作成するには：
 

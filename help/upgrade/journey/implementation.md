@@ -17,7 +17,7 @@ ht-degree: 1%
 - 開発と品質保証（QA）
 - ユーザー受け入れテスト（UAT）とローンチの準備
 - ローンチ
-- Post-launch
+- ローンチ後
 
 ## アップグレード分析
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 徹底的な分析に含める項目を次に示します。
 
-- **target リリースの範囲** - [Experience Leagueに関するドキュメント ](../../release/release-notes/overview.md) およびパートナーリリースのウェビナーからの情報には、target のアップグレードについて知っておく必要のあるすべての詳細が含まれています。
+- **target リリースの範囲** - [Experience Leagueに関するドキュメント ](../../release/release-notes/overview.md) およびパートナーリリース web セミナーからの情報では、target のアップグレードについて知っておく必要のあるすべての詳細を提供します。
 
 - **[!DNL Upgrade Compatibility Tool]results**：このツールは、現在のコードをターゲット・バージョンのコードと比較し、対処する必要のあるすべての問題のレポートを生成することによって、アップグレードを迅速かつ容易にします。 [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) を参照してください。 本報告書の主な詳細は以下の通り。
 
@@ -84,8 +84,8 @@ UAT は、サイトのレビューと検証を必要とする、アップグレ�
 
 最後に、チームに報告して、学習した内容や落とし穴を判断します。 この遡及的な処理により、次回のプロセスを改善できます。
 
-## Post - Launch
+## ローンチ後
 
 サイトの起動後は、分析データ、Google検索コンソールおよびその他のリソースを確認して、予期しない問題がなく、すべてが期待どおりに動作していることを確認してください。
 
-適切に設計された監視ツールを使用して、パフォーマンスに目を光らせておくことをお勧めします。 サイトのパフォーマンスを監視するツールや手段は多数あります。組織に適したものを選択してください。 クラウドインフラストラクチャー管理システムを使用しているAdobe Commerceのお客様は、[New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=ja) などのサービスを活用して、サイトのパフォーマンスを監視することをお勧めします。
+適切に設計された監視ツールを使用して、パフォーマンスに目を光らせておくことをお勧めします。 サイトのパフォーマンスを監視するツールや手段は多数あります。組織に適したものを選択してください。 クラウドインフラストラクチャー管理システムを使用しているAdobe Commerceのお客様は、[New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) などのサービスを活用して、サイトのパフォーマンスを監視することをお勧めします。

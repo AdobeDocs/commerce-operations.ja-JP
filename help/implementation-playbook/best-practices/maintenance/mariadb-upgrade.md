@@ -21,11 +21,11 @@ MariaDB を使用している場合は、クラウドインフラストラクチ
 
 ## Adobe Commerce 2.4.6
 
-MariaDB 10.5.1 以降、古いテンポラル形式の列は、`SHOW CREATE TABLE`、`SHOW COLUMNS`、`DESCRIBE` 文の出力および `INFORMATION_SCHEMA.COLUMNS` テーブルの `COLUMN_TYPE` 列に `/* mariadb-5.3 */` コメントでマークされます。 [MariaDB ドキュメントを参照してください ](https://mariadb.com/kb/en/datetime/#internal-format)。
+MariaDB 10.5.1 以降、古いテンポラル形式の列は、`/* mariadb-5.3 */`、`SHOW CREATE TABLE`、`SHOW COLUMNS` 文の出力および `DESCRIBE` テーブルの `COLUMN_TYPE` 列に `INFORMATION_SCHEMA.COLUMNS` コメントでマークされます。 [MariaDB ドキュメントを参照してください ](https://mariadb.com/kb/en/datetime/#internal-format)。
 
 MariaDB コメントが原因で、Adobe Commerceが日付列を適切なデータタイプにマッピングできず、カスタムコードで予期しない動作が起こる可能性があります。
 
-MariaDB を旧バージョンからバージョン 10.6 にアップグレードする際の予期しない動作を避けるために、Adobeでは列を新しい内部フォーマットに移行することをお勧めします。
+Adobeでは、MariaDB を旧バージョンからバージョン 10.6 にアップグレードする際の予期しない動作を避けるために、列を新しい内部フォーマットに移行することをお勧めします。
 
 ### デフォルトの設定
 

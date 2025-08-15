@@ -13,7 +13,7 @@ ht-degree: 0%
 
 サポートされている MySQL のバージョンについては、[ システム要件 ](../../system-requirements.md) を参照してください。
 
-Adobe _強く_ では、データベースを設定する際に、次の標準に従うことをお勧めします。
+Adobe _強く_ は、データベースを設定する際に、次の標準に従うことをお勧めします。
 
 * Adobe Commerceでは、[MySQL データベーストリガー](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) を使用して、インデックス再作成中のデータベースアクセスを改善します。 これらは、インデクサーモードが「[ スケジュール ](../../../configuration/cli/manage-indexers.md#configure-indexers)」に設定されている場合に作成されます。 カスタムトリガーは将来のAdobe Commerceとの互換性を失う可能性があるため、データベース内のカスタムトリガーはサポートされません。
 * 続行する前に [MySQL のトリガーに関する潜在的な制限 ](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) について確認してください。
@@ -88,7 +88,7 @@ _TINYINT （1）_ を除き、すべての整数パディング （TINYINT > 1, 
 
 ### GROUP BY の非推奨の ASC 修飾子と DESC 修飾子
 
-MySQL 8.0.13 以降、廃止された `ASC` 句または `GROUP BY` 句の `DESC` 修飾子は削除されました。 以前に `GROUP BY` の並べ替えに依存していたクエリが、以前の MySQL バージョンとは異なる結果になる場合があります。 指定した並べ替え順を生成するには、`ORDER BY` 句を指定します。
+MySQL 8.0.13 以降、廃止された `ASC` 句または `DESC` 句の `GROUP BY` 修飾子は削除されました。 以前に `GROUP BY` の並べ替えに依存していたクエリが、以前の MySQL バージョンとは異なる結果になる場合があります。 指定した並べ替え順を生成するには、`ORDER BY` 句を指定します。
 
 ## Commerceと MySQL 8
 

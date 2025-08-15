@@ -41,17 +41,17 @@ ht-degree: 0%
 
 ## セッションサイズの管理
 
-[ ユーザーガイド ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security-session-management) の _セッション管理_ を参照してください。
+[ ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) の _セッション管理_ を参照してください。
 
 ## ガベージコレクション設定
 
-期限切れのセッションをクリーンアップするために、システムは `gc_probability / gc_divisor` ディレクティブによって計算される確率に従ってランダムに `gc` （_ガベージコレクション_）ハンドラーを呼び出します。 例えば、これらのディレクティブをそれぞれ `1/100` に設定した場合、`1%` の確率（_100 件のリクエストごとに 1 回のガベージコレクションの呼び出しの確率_）を意味します。
+期限切れのセッションをクリーンアップするために、システムは `gc` ディレクティブによって計算される確率に従ってランダムに _（_ ガベージコレクション `gc_probability / gc_divisor`）ハンドラーを呼び出します。 例えば、これらのディレクティブをそれぞれ `1/100` に設定した場合、`1%` の確率（_100 件のリクエストごとに 1 回のガベージコレクションの呼び出しの確率_）を意味します。
 
 ガベージコレクションハンドラーでは、`gc_maxlifetime` ディレクティブを使用します。このディレクティブは、セッションが _ガベージ_ と見なされてクリーンアップされる秒数を示します。
 
 一部のオペレーティングシステム（Debian/Ubuntu）では、デフォルトの `session.gc_probability` ディレクティブが `0` なので、ガベージコレクションハンドラーを実行できません。
 
-`<magento_root>/app/etc/env.php` ファイルの `php.ini` ファイルから `session.gc_` ディレクティブを上書きできます。
+`session.gc_` ファイルの `php.ini` ファイルから `<magento_root>/app/etc/env.php` ディレクティブを上書きできます。
 
 ```php
  'session' => [

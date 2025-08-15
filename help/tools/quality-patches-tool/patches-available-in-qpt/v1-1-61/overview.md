@@ -19,8 +19,8 @@ ht-degree: 0%
 QPT v1.1.61 には、次のパッチが含まれています。
 
 1. **ACP2E-3689**：カテゴリツリーがより深いレベルに表示され、アンカー/アンカー以外の関係が反映される複数の問題を修正しました。
-1. **ACP2E-3705**:`MAGE_INDEXER_THREADS_COUNT` が設定されている場合に、`indexer_update_all_views` cron 実行が失敗する問題を修正しました。
-1. **ACSD-63883**:[!DNL GraphQL] 応答で [!UICONTROL Requisition List] が誤った `items_count` を返す問題を修正しました。
+1. **ACP2E-3705**:`indexer_update_all_views` が設定されている場合に、`MAGE_INDEXER_THREADS_COUNT` cron 実行が失敗する問題を修正しました。
+1. **ACSD-63883**:[!UICONTROL Requisition List] 応答で `items_count` が誤った [!DNL GraphQL] を返す問題を修正しました。
 1. **ACSD-63974**：項目が多すぎると [!UICONTROL Requisition List] ページの読み込みに時間がかかりすぎる問題を修正しました。ストアフロントの [!UICONTROL Requisition List] グリッドにページネーション機能を追加すると、すべてのレコードを一度に表示するのではなく、1 ページあたりのレコード数に制限されているレコードの部分のみを表示します。
 1. **ACSD-64178**：何千もの製品属性がある場合に、[!UICONTROL Attribute Set] 編集ページの読み込みに時間がかかる問題を修正しました。
 1. **ACSD-64209**:Cron スケジューラーがステータス **[!UICONTROL ordered]** の引用符を除外せずに交渉可能なすべての引用符を取得し、メールまたはメールがトリガーされる問題を修正しました。

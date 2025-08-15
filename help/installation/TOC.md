@@ -5,7 +5,7 @@ feature: Install
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 2%
    - Web サーバー {#web-server}
       - [Nginx](prerequisites/web-server/nginx.md)
       - [Apache](prerequisites/web-server/apache.md)
-   - データベース サーバー {#database-server}
+   - データベースサーバー {#database-server}
       - [MySQL](prerequisites/database/mysql.md)
       - [リモート接続](prerequisites/database/mysql-remote.md)
    - 検索エンジン {#search-engine}
@@ -38,7 +38,7 @@ ht-degree: 2%
    - [オプションソフトウェア](prerequisites/optional-software.md)
 - [クイックスタートインストール](composer.md)
 - [高度なインストール](advanced.md)
-- Postのインストール手順 {#next-steps}
+- インストール後の手順 {#next-steps}
    - [インストールの確認](next-steps/verify.md)
    - [アプリケーションの設定](next-steps/configuration.md)
    - [umask の設定（オプション）](next-steps/set-umask.md)
@@ -47,7 +47,7 @@ ht-degree: 2%
       - [Composer パッケージのダウンロード](sample-data/composer-packages.md)
       - [Git リポジトリのクローン](sample-data/git-repositories.md)
       - [モジュールの削除または更新](sample-data/remove-or-update.md)
-- Tutorials{#tutorials}
+- チュートリアル {#tutorials}
    - [ファイル・システム、メディア、データベースのバックアップとロールバック](tutorials/backup.md)
    - [データベースのステータスの確認](tutorials/database-status.md)
    - [メッセージコンシューマーの行動の設定](tutorials/message-consumers.md)
@@ -67,4 +67,4 @@ ht-degree: 2%
    - [Commerceをアンインストールまたは再インストール](tutorials/uninstall.md)
    - [テーマのアンインストール](tutorials/themes.md)
    - [データベーススキーマのアップグレード](tutorials/database-upgrade.md)
-- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
+- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

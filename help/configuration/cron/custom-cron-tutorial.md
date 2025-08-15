@@ -147,7 +147,7 @@ cron ジョブを実行すると、`cron_schedule` テーブルに行が追加�
 
 `crontab.xml` ファイルは、カスタム cron コードを実行するスケジュールを設定します。
 
-`/var/www/html/magento2/app/code/Magento/SampleMinimal/etc` ディレクトリに、次のように `crontab.xml` を作成します。
+`crontab.xml` ディレクトリに、次のように `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc` を作成します。
 
 ```xml
 <?xml version="1.0"?>
@@ -238,7 +238,7 @@ cron を検証するには：
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 
-   これらのメッセージは、`Test.php` の `execute` メソッドから送信されます。
+   これらのメッセージは、`execute` の `Test.php` メソッドから送信されます。
 
    ```php
    public function execute() {

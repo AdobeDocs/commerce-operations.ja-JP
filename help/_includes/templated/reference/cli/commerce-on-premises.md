@@ -1,7 +1,7 @@
 ---
 source-git-commit: ba444c5f74cdeec86c842014d02775faf16b2f50
 workflow-type: tm+mt
-source-wordcount: '8253'
+source-wordcount: '8232'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 カスタム CLI コマンドを追加するには、[ 「Add CLI commands」 ](https://developer.adobe.com/commerce/php/development/cli-commands/) ガイドを使用します。
 
-完全なコマンド名の代わり `bin/magento` ショートカットを使用して、CLI コマンドを呼び出すことができます。 例えば、`bin/magento s:up`、`bin/magento s:upg` を使用して `bin/magento setup:upgrade` を呼び出すことができます。 CLI コマンドでショートカットを使用する方法については、[ ショートカット構文 ](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) を参照してください。
+完全なコマンド名の代わり `bin/magento` ショートカットを使用して、CLI コマンドを呼び出すことができます。 例えば、`bin/magento setup:upgrade`、`bin/magento s:up` を使用して `bin/magento s:upg` を呼び出すことができます。 CLI コマンドでショートカットを使用する方法については、[ ショートカット構文 ](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) を参照してください。
 
 このリファレンスドキュメントは、アプリケーションソースコードから生成されます。 ドキュメントを変更するには、対応するコマンドのプルリクエストを関連する [ コードベース ](https://github.com/magento) リポジトリで開く必要があります。 詳しくは、[ コードの投稿 ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) を参照してください。
 
@@ -257,7 +257,7 @@ It's also possible to get raw list of commands (useful for embedding command run
 
 ### オプション
 
-グローバル オプションについては、 [グローバル オプション](#global-options)を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 #### `--raw`
 
@@ -275,9 +275,9 @@ It's also possible to get raw list of commands (useful for embedding command run
 
 #### `--short`
 
-コマンドの引数の説明をスキップするには
+説明コマンドの引数をスキップするには
 
-- デフォルト： `false`
+- デフォルト：`false`
 - 値を受け入れません
 
 
@@ -308,9 +308,9 @@ Adobe IMSモジュールを有効にします。
 
 #### `--organization-id`, `-o`
 
-Adobe Systems IMS 設定用の組織 ID 設定。 モジュールを有効にする際の必須
+Adobe IMS設定の組織 ID を設定します。 モジュールを有効にする場合は必須です
 
-- 値を受け取る
+- 値を受け入れる
 
 #### `--client-id`, `-c`
 
@@ -320,9 +320,9 @@ Adobe IMS設定のクライアント ID を設定します。 モジュールを
 
 #### `--client-secret`, `-s`
 
-IMS 設定用にクライアントシークレットAdobe Systems設定します。 モジュールを有効にする際の必須
+Adobe IMS設定用のクライアント秘密鍵を設定します。 モジュールを有効にする場合は必須です
 
-- 値を受け取る
+- 値を受け入れる
 
 #### `--2fa`, `-t`
 
@@ -401,7 +401,7 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 #### `--magento-init-params`
 
-任意のコマンド追加して、Magento初期化パラメーターをカスタマイズします。 例:&quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+任意のコマンドにを追加して、Magento初期化パラメーターをカスタマイズします。例：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -412,7 +412,7 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 bin/magento admin:user:unlock <username>
 ```
 
-管理者アカウントのロック解除
+管理者アカウントのロックを解除
 
 ```
 This command unlocks an admin account by its username.
@@ -695,11 +695,11 @@ bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 bin/magento catalog:product:attributes:cleanup
 ```
 
-使用されていない製品属性を削除します。
+未使用の製品属性を削除します。
 
 ### オプション
 
-グローバル オプションについては、 [グローバル オプション](#global-options)を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 
 ## `cms:wysiwyg:restrict`
@@ -708,7 +708,7 @@ bin/magento catalog:product:attributes:cleanup
 bin/magento cms:wysiwyg:restrict <restrict>
 ```
 
-ユーザー HTML内容検証を適用するか、代わりに警告を表示するか設定
+ユーザーHTML コンテンツの検証を強制するか、代わりに警告を表示するかを設定します
 
 ### 引数
 
@@ -729,7 +729,7 @@ y\n
 bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path> [<value>]]
 ```
 
-設定機密の構成値
+機密性の高い設定値を設定
 
 ### 引数
 
@@ -750,15 +750,15 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 インタラクティブモードを有効にしてすべての機密変数を設定
 
-- デフォルト： `false`
+- デフォルト：`false`
 - 値を受け入れません
 
 #### `--scope`
 
-設定のスコープ (設定されない場合は &#39;default&#39; を使用
+設定されていない場合は、「default」を使用する設定の範囲
 
-- デフォルト： `default`
-- 値を受け取る
+- デフォルト：`default`
+- 値を受け入れる
 
 #### `--scope-code`
 
@@ -1070,7 +1070,7 @@ bin/magento dev:profiler:enable [<type>]
 
 ### オプション
 
-グローバル オプションについては、 [グローバル オプション](#global-options)を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 
 ## `dev:query-log:disable`
@@ -1079,7 +1079,7 @@ bin/magento dev:profiler:enable [<type>]
 bin/magento dev:query-log:disable
 ```
 
-無効化 DB クエリ ログ
+DB クエリ ログを無効にする
 
 ### オプション
 
@@ -1522,7 +1522,7 @@ bin/magento events:list:all <module_name>
 
 ### オプション
 
-グローバル オプションについては、 [グローバル オプション](#global-options)を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 
 ## `events:metadata:populate`
@@ -1531,11 +1531,11 @@ bin/magento events:list:all <module_name>
 bin/magento events:metadata:populate
 ```
 
-設定リストから Adobe Systems I/O でメタデータを作成します (XML および アプリケーション 設定)
+設定リスト（XML およびアプリケーション設定）からAdobe I/Oにメタデータを作成します
 
 ### オプション
 
-グローバル オプションについては、 [グローバル オプション](#global-options)を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 
 ## `events:provider:info`
@@ -1595,12 +1595,12 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 
 イベントデータペイロードのフィールドのリスト。
 
-- デフォルト： `[]`
+- デフォルト：`[]`
 - 値が必要です
 
 #### `--parent`
 
-ルール付きまたはエイリアスとしてイベント購読の親イベントコード。
+ルールまたはエイリアスとしてのイベント購読の親イベントコード。
 
 - 値が必要です
 
@@ -1613,9 +1613,9 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 
 #### `--priority`, `-p`
 
-このイベントの送信を高速化します。 このオプションは、すぐに配信する必要があるイベントに対して指定します。 デフォルトでは、イベントは cron によって 1 分に 1 回送信されます。
+このイベントの送信を高速化します。 すぐに配信する必要があるイベントには、このオプションを指定します。 デフォルトでは、イベントは cron から 1 分ごとに 1 回送信されます。
 
-- デフォルト： `false`
+- デフォルト：`false`
 - 値を受け入れません
 
 #### `--destination`, `-d`
@@ -1725,13 +1725,13 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 
 #### `locale`
 
-辞書のロケールTarget、「de_DE」など
+辞書のターゲットロケール（「de_DE」など）
 
 - 必須
 
 ### オプション
 
-グローバル オプションについては、 [グローバル オプション](#global-options)を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 #### `--mode`, `-m`
 
@@ -1773,9 +1773,9 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 
 #### `--backup-code`, `-b`
 
-コードと構成ファイルをバックアップ取得する (一時ファイルを除く)
+コードおよび設定ファイルのバックアップを作成（一時ファイルを除く）
 
-- デフォルト： `false`
+- デフォルト：`false`
 - 値を受け入れません
 
 
@@ -1785,7 +1785,7 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 bin/magento indexer:info
 ```
 
-許可されたインデクサーを表示します
+許可されているインデクサーを表示
 
 ### オプション
 
@@ -1804,9 +1804,9 @@ bin/magento indexer:reindex [<index>...]
 
 #### `index`
 
-インデックスの種類を スペース 区切ったリストするか、すべてのインデックスに適用する場合は省略します。
+インデックスタイプのスペース区切りリスト、またはすべてのインデックスに適用する場合は省略。
 
-- デフォルト： `[]`
+- デフォルト：`[]`
 - 配列
 
 ### オプション
@@ -2027,11 +2027,11 @@ bin/magento info:currency:list
 bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 ```
 
-フレームワークの依存関係の数を表示しますMagento
+Magento フレームワークへの依存関係数を表示します
 
 ### オプション
 
-グローバル オプションについては、 [グローバル オプション](#global-options)を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 #### `--output`, `-o`
 
@@ -2051,13 +2051,13 @@ bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 
 ### オプション
 
-グローバル オプションについては、 [グローバル オプション](#global-options)を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 #### `--output`, `-o`
 
 レポートファイル名
 
-- デフォルト： `modules-dependencies.csv`
+- デフォルト：`modules-dependencies.csv`
 - 値が必要です
 
 
@@ -2305,7 +2305,7 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### オプション
 
-グローバル オプションについては、 [グローバル オプション](#global-options)を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 #### `--magento-init-params`
 
@@ -2372,7 +2372,7 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 ### オプション
 
-グローバル オプションについては、 [グローバル オプション](#global-options)を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 #### `--force`, `-f`
 
@@ -2385,7 +2385,7 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 すべてのモジュールを無効にする
 
-- デフォルト： `false`
+- デフォルト：`false`
 - 値を受け入れません
 
 #### `--clear-static-content`, `-c`
@@ -2441,7 +2441,7 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 生成された静的ビューファイルをクリアします。 必要（モジュールに静的ビューファイルがある場合）
 
-- デフォルト： `false`
+- デフォルト：`false`
 - 値を受け入れません
 
 #### `--magento-init-params`
@@ -2737,7 +2737,7 @@ bin/magento remote-storage:sync
 
 ### オプション
 
-グローバル オプションについては、 [グローバル オプション](#global-options)を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 
 ## `saas:resync`
@@ -2746,30 +2746,30 @@ bin/magento remote-storage:sync
 bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync] [--by-ids BY-IDS] [--id-type ID-TYPE]
 ```
 
-フィードデータを SaaS サービスに再同期します。
+フィード データを SaaS サービスに再同期します。
 
 ### オプション
 
-グローバル オプションについては、 [グローバル オプション](#global-options)を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 #### `--feed`
 
-SaaS サービスに完全に再同期するためのフィード名。 利用可能なフィード: 注文生産サービス支払、注文サンドボックスサービス支払、注文ステータス生産サービス支払、注文ステータスサンドボックスサービス支払、店舗生産サービス支払、店舗サンドボックスサービス支払
+SaaS サービスに完全に再同期するためのフィード名。 使用可能なフィード：Payment Services Order Production、Payment Services Order Sandbox、Payment Services Order Status Production、Payment Services Order Status Sandbox、Payment Services Store Production、Payment Services Store Sandbox
 
 - 値が必要です
 
 #### `--no-reindex`
 
-フィードデータの再送信を SaaS サービスにのみ実行します。 再インデックスは行われません。 (このオプションは、商品、商品上書き、価格フィードには適用されません)
+フィードデータの再送信を SaaS サービスにのみ実行します。 再インデックスは行われません。 （このオプションは、製品、製品のオーバーライド、価格フィードには適用されません）
 
-- デフォルト： `false`
+- デフォルト：`false`
 - 値を受け入れません
 
 #### `--cleanup-feed`
 
-同期前にインデクサーテーブルフィードクリーンアップを強制します。
+同期前にフィードインデクサーテーブルを強制的にクリーンアップします。
 
-- デフォルト： `false`
+- デフォルト：`false`
 - 値を受け入れません
 
 #### `--dry-run`
@@ -2800,7 +2800,7 @@ SaaS サービスに完全に再同期するためのフィード名。 利用�
 
 #### `--by-ids`
 
-指定された識別子のリストによって部分的に再同期します。 (このオプションは、商品フィード、商品上書きフィード、価格フィードに適用されます)
+指定された識別子のリストによって部分的に再同期します。 （このオプションは、製品、製品の上書き、価格フィードに適用されます）
 
 - 値が必要です
 
@@ -3069,14 +3069,14 @@ Magento アプリケーションコードベース、メディアおよびデー
 
 #### `--media`
 
-メディアバックアップを取る
+メディア バックアップの作成
 
-- デフォルト： `false`
+- デフォルト：`false`
 - 値を受け入れません
 
 #### `--db`
 
-完全なデータベースバックアップ
+完全なデータベースバックアップの実行
 
 - デフォルト：`false`
 - 値を受け入れません
@@ -3094,7 +3094,7 @@ Magento アプリケーションコードベース、メディアおよびデー
 bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-デプロイメント設定を作成または変更します。
+デプロイメント設定を作成または変更します
 
 ### オプション
 
@@ -3133,28 +3133,28 @@ bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--
 
 #### `--remote-storage-key`
 
-リモート ストレージ アクセスキー
+リモート記憶域アクセス キー
 
-- デフォルト: &#39;&#39;
+- デフォルト : &quot;
 - 値が必要です
 
 #### `--remote-storage-secret`
 
-リモートストレージ秘密鍵
+リモート記憶域の秘密鍵
 
 - デフォルト : &quot;
 - 値が必要です
 
 #### `--remote-storage-path-style`
 
-リモートストレージパススタイル
+リモートストレージパスのスタイル
 
-- デフォルト： `0`
+- デフォルト：`0`
 - 値が必要です
 
 #### `--backend-frontname`
 
-バックエンドのフロント名 (存在しない場合は自動生成されます)
+バックエンドの frontname （見つからない場合は自動生成されます）
 
 - 値が必要です
 
@@ -3299,19 +3299,19 @@ Amqp SSL オプション（JSON）
 
 #### `--db-model`
 
-データベースの種類
+データベースタイプ
 
 - 値が必要です
 
 #### `--db-init-statements`
 
-データベース初期コマンドセット
+データベースの初期コマンド・セット
 
 - 値が必要です
 
 #### `--skip-db-validation`, `-s`
 
-指定した場合、db接続検証はスキップされます
+指定した場合、DB 接続の検証はスキップされます
 
 - デフォルト：`false`
 - 値を受け入れません
@@ -3532,7 +3532,7 @@ Redis サーバーパスワード
 
 #### `--cache-backend-redis-compression-lib`
 
-使用するライブラリ圧縮 [snappy,lzf,l4z,zstd,gzip] (自動的に決定するには空白のままにしてください)
+使用する圧縮ライブラリ [snappy、lzf、l4z、zstd、gzip] （自動的に決定するには空白のままにします）
 
 - 値が必要です
 
@@ -3556,9 +3556,9 @@ Redis サーバーパスワード
 
 #### `--allow-parallel-generation`
 
-ノンブロッキング方式でのキャッシュの生成を許可する
+ノンブロッキング方式でキャッシュを生成できるようにする
 
-- デフォルト： `false`
+- デフォルト：`false`
 - 値を受け入れません
 
 #### `--page-cache`
@@ -3677,7 +3677,7 @@ Redis 永続
 
 #### `--backpressure-logger-redis-db`
 
-レディスデータベース番号
+Redis db 番号
 
 - 値が必要です
 
@@ -3750,14 +3750,14 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 ### オプション
 
-グローバル オプションについては、 [グローバル オプション](#global-options)を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 #### `--revertable`
 
 パッチが元に戻すことができるかどうかを確認します。
 
 - デフォルト：`false`
-- 値を受け取る
+- 値を受け入れる
 
 #### `--type`
 
@@ -3942,27 +3942,27 @@ bin/magento setup:db-schema:split-sales [--host HOST] [--dbname DBNAME] [--usern
 
 #### `--password`
 
-Sales DB ユーザー passowrd
+Sales DB ユーザーのパスワード
 
-- 値を受け取る
+- 値を受け入れる
 
 #### `--connection`
 
-販売接続名
+営業接続名
 
-- デフォルト： `sales`
+- デフォルト：`sales`
 - 値を受け入れる
 
 #### `--resource`
 
-営業リソース名
+販売リソース名
 
 - デフォルト：`sales`
-- 値を受け取る
+- 値を受け入れる
 
 #### `--magento-init-params`
 
-任意のコマンド追加して、Magento初期化パラメーターをカスタマイズします。 例:&quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+任意のコマンドにを追加して、Magento初期化パラメーターをカスタマイズします。例：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -3983,12 +3983,12 @@ DB スキーマのインストールとアップグレード
 
 古いスクリプト （InstallSchema、UpgradeSchema）を db_schema.xml 形式に変換できるようにします
 
-- デフォルト： `false`
-- 値を受け取る
+- デフォルト：`false`
+- 値を受け入れる
 
 #### `--magento-init-params`
 
-任意のコマンド追加して、Magento初期化パラメーターをカスタマイズします。 例:&quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+任意のコマンドにを追加して、Magento初期化パラメーターをカスタマイズします。例：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -3999,7 +3999,7 @@ DB スキーマのインストールとアップグレード
 bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-DB スキーマ またはデータのアップグレードが必要かどうかをチェックします。
+DB スキーマまたはデータのアップグレードが必要かどうかを確認します
 
 ### オプション
 
@@ -4270,14 +4270,14 @@ SSL 経由でデータベース接続を確立するためのクライアント�
 
 SSL 経由で DB 接続を確立するためのクライアント証明書ファイルのフルパス
 
-- デフォルト: &#39;&#39;
+- デフォルト : &quot;
 - 値が必要です
 
 #### `--db-ssl-ca`
 
 SSL 経由で DB 接続を確立するためのサーバー証明書ファイルのフルパス
 
-- デフォルト: &#39;&#39;
+- デフォルト : &quot;
 - 値が必要です
 
 #### `--db-ssl-verify`
@@ -4295,7 +4295,7 @@ SSL 経由で DB 接続を確立するためのサーバー証明書ファイル
 
 #### `--session-save-redis-host`
 
-完全修飾ホスト名、IP アドレス、または絶対パス (UNIX ソケットを使用する場合)
+完全修飾ホスト名、IP アドレス、または UNIX ソケットを使用する場合は絶対パス
 
 - 値が必要です
 
@@ -4469,7 +4469,7 @@ Redis サーバーパスワード
 
 #### `--cache-backend-redis-compression-lib`
 
-使用するライブラリ圧縮 [snappy,lzf,l4z,zstd,gzip] (自動的に決定するには空白のままにしてください)
+使用する圧縮ライブラリ [snappy、lzf、l4z、zstd、gzip] （自動的に決定するには空白のままにします）
 
 - 値が必要です
 
@@ -4493,9 +4493,9 @@ Redis サーバーパスワード
 
 #### `--allow-parallel-generation`
 
-ノンブロッキング方式でのキャッシュの生成を許可する
+ノンブロッキング方式でキャッシュを生成できるようにする
 
-- デフォルト： `false`
+- デフォルト：`false`
 - 値を受け入れません
 
 #### `--page-cache`
@@ -4518,7 +4518,7 @@ Redis サーバー
 
 #### `--page-cache-redis-port`
 
-Redis サーバーのリッスンポート
+Redis サーバーリッスンポート
 
 - 値が必要です
 
@@ -4638,31 +4638,31 @@ Redis サーバーユーザー
 
 #### `--base-url`
 
-ストアが使用できる URL。 非推奨（廃止予定）。パス web/unsecure/base_url で config:set を使用してください。
+ストアが使用できる URL。 非推奨（廃止予定）。config:set をパス web/unsecure/base_url と共に使用してください。
 
 - 値が必要です
 
 #### `--language`
 
-デフォルトの言語コード。 非推奨（廃止予定）。パス general/locale/code で config:set を使用してください。
+デフォルトの言語コード。 非推奨（廃止予定）。パス general:setlocale/code と共に config を使用してください。
 
 - 値が必要です
 
 #### `--timezone`
 
-デフォルトのタイムゾーンコード。 非推奨（廃止予定）。config:set をパス general/locale/timezone と共に使用します。
+デフォルトのタイムゾーンコード。 非推奨（廃止予定）。設定を使用し :set パス：general/locale/timezone
 
 - 値が必要です
 
 #### `--currency`
 
-デフォルトの通貨コード。 非推奨（廃止予定）。パス currency/options/base、currency/options/default および currency/options/allow を指定して config:set を使用します。
+デフォルトの通貨コード。 非推奨（廃止予定）。パス currency/options/base:setcurrency/options/default および currency/options/allow を指定して config を使用します。
 
 - 値が必要です
 
 #### `--use-rewrites`
 
-書き換えを使用します。 非推奨（廃止予定）。パス web/seo/use_rewrites で config:set を使用します。
+書き換えを使用します。 非推奨（廃止予定）。パス web/seo/use_rewrites を config:set として使用してください。
 
 - 値が必要です
 
@@ -4674,19 +4674,19 @@ Redis サーバーユーザー
 
 #### `--base-url-secure`
 
-SSL 接続のベース URL。 非推奨（廃止予定）。パス web/secure/base_url で config:set を使用してください。
+SSL 接続のベース URL。 非推奨（廃止予定）。パス web/secure/base_url を config:set として使用してください。
 
 - 値が必要です
 
 #### `--use-secure-admin`
 
-SSL を使用した管理インターフェイスの実行 非推奨（廃止予定）。パス web/secure/use_in_adminhtml で config:set を使用してください。
+SSL を使用した管理インターフェイスの実行 非推奨（廃止予定）。config:set をパス web/secure/use_in_adminhtml と共に使用してください。
 
 - 値が必要です
 
 #### `--admin-use-security-key`
 
-Magentoの管理 URL およびフォームで「セキュリティキー」機能を使用するかどうか。 非推奨（廃止予定）。パス admin/security/use_form_key で config:set を使用します。
+Magentoの管理 URL およびフォームで「セキュリティキー」機能を使用するかどうか。 非推奨（廃止予定）。config:set をパス admin/security/use_form_key と共に使用してください。
 
 - 値が必要です
 
@@ -4758,7 +4758,7 @@ Elasticsearchのパスワード HTTP 認証が有効な場合にのみ適用さ�
 
 #### `--elasticsearch-index-prefix`
 
-Elasticsearchインデックスプレフィックス。
+Elasticsearch インデックスのプレフィックス。
 
 - 値が必要です
 
@@ -4920,11 +4920,11 @@ Magento Application コードベース、メディアおよびデータベース
 
 ### オプション
 
-グローバル オプションについては、 [グローバル オプション](#global-options)を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 #### `--code-file`, `-c`
 
-var/backups 内のコードバックアップファイルのベース名
+var/backups のコードバックアップファイルのベース名
 
 - 値が必要です
 
@@ -4936,13 +4936,13 @@ var/backups 内のメディアバックアップファイルのベース名
 
 #### `--db-file`, `-d`
 
-var/backups 内の db バックアップ ファイルのベース名
+var/backups のデータベースバックアップファイルのベース名
 
 - 値が必要です
 
 #### `--magento-init-params`
 
-任意のコマンド追加して、Magento初期化パラメーターをカスタマイズします。 例:&quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+任意のコマンドにを追加して、Magento初期化パラメーターをカスタマイズします。例：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 値が必要です
 
@@ -4977,23 +4977,23 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 #### `--strategy`, `-s`
 
-指定された方法を使用してファイルをデプロイします。
+指定した方法を使用してファイルをデプロイします。
 
-- デフォルト： `quick`
-- 値を受け取る
+- デフォルト：`quick`
+- 値を受け入れる
 
 #### `--area`, `-a`
 
-指定した領域に対してのみファイルを生成します。
+指定した領域のファイルのみを生成します。
 
-- デフォルト： `all`
-- 複数の値を受け入れる
+- デフォルト：`all`
+- 複数の値を使用できます
 
 #### `--exclude-area`
 
-指定した領域のファイルを生成しない。
+指定した領域のファイルを生成しません。
 
-- デフォルト： `none`
+- デフォルト：`none`
 - 複数の値を使用できます
 
 #### `--theme`, `-t`
@@ -5088,9 +5088,9 @@ LESS ファイルをデプロイしないでください。
 
 #### `--no-images`
 
-画像デプロイしないでください。
+画像をデプロイしないでください。
 
-- デフォルト： `false`
+- デフォルト：`false`
 - 値を受け入れません
 
 #### `--no-fonts`
@@ -5109,16 +5109,16 @@ HTML ファイルをデプロイしないでください。
 
 #### `--no-misc`
 
-他のタイプ(.md、.jbf、.csv など)のファイルデプロイしないでください。
+その他のタイプ（.md、.jbf、.csv など）のファイルはデプロイしないでください。
 
-- デフォルト： `false`
+- デフォルト：`false`
 - 値を受け入れません
 
 #### `--no-html-minify`
 
-HTMLファイルを縮小しないでください。
+HTML ファイルは縮小しないでください。
 
-- デフォルト： `false`
+- デフォルト：`false`
 - 値を受け入れません
 
 #### `--no-parent`
@@ -5135,7 +5135,7 @@ HTMLファイルを縮小しないでください。
 bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-ストア設定をインストールします。 2.2.0 以降で非推奨（廃止予定）。代わりに config:set を使用してください。
+ストア設定をインストールします。 2.2.0 以降で非推奨（廃止予定）。代わりに :set 設定を使用してください
 
 ### オプション
 
@@ -5143,31 +5143,31 @@ bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [
 
 #### `--base-url`
 
-ストアが使用できる URL。 非推奨（廃止予定）。パス web/unsecure/base_url で config:set を使用してください。
+ストアが使用できる URL。 非推奨（廃止予定）。config:set をパス web/unsecure/base_url と共に使用してください。
 
 - 値が必要です
 
 #### `--language`
 
-デフォルトの言語コード。 非推奨（廃止予定）。パス general/locale/code で config:set を使用してください。
+デフォルトの言語コード。 非推奨（廃止予定）。パス general:setlocale/code と共に config を使用してください。
 
 - 値が必要です
 
 #### `--timezone`
 
-デフォルトのタイムゾーンコード。 非推奨（廃止予定）。config:set をパス general/locale/timezone と共に使用します。
+デフォルトのタイムゾーンコード。 非推奨（廃止予定）。設定を使用し :set パス：general/locale/timezone
 
 - 値が必要です
 
 #### `--currency`
 
-デフォルトの通貨コード。 非推奨（廃止予定）。パス currency/options/base、currency/options/default および currency/options/allow を指定して config:set を使用します。
+デフォルトの通貨コード。 非推奨（廃止予定）。パス currency/options/base:setcurrency/options/default および currency/options/allow を指定して config を使用します。
 
 - 値が必要です
 
 #### `--use-rewrites`
 
-書き換えを使用します。 非推奨（廃止予定）。パス web/seo/use_rewrites で config:set を使用します。
+書き換えを使用します。 非推奨（廃止予定）。パス web/seo/use_rewrites を config:set として使用してください。
 
 - 値が必要です
 
@@ -5179,19 +5179,19 @@ bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [
 
 #### `--base-url-secure`
 
-SSL 接続のベース URL。 非推奨（廃止予定）。パス web/secure/base_url で config:set を使用してください。
+SSL 接続のベース URL。 非推奨（廃止予定）。パス web/secure/base_url を config:set として使用してください。
 
 - 値が必要です
 
 #### `--use-secure-admin`
 
-SSL を使用した管理インターフェイスの実行 非推奨（廃止予定）。パス web/secure/use_in_adminhtml で config:set を使用してください。
+SSL を使用した管理インターフェイスの実行 非推奨（廃止予定）。config:set をパス web/secure/use_in_adminhtml と共に使用してください。
 
 - 値が必要です
 
 #### `--admin-use-security-key`
 
-Magentoの管理 URL およびフォームで「セキュリティキー」機能を使用するかどうか。 非推奨（廃止予定）。パス admin/security/use_form_key で config:set を使用します。
+Magentoの管理 URL およびフォームで「セキュリティキー」機能を使用するかどうか。 非推奨（廃止予定）。config:set をパス admin/security/use_form_key と共に使用してください。
 
 - 値が必要です
 
@@ -5353,7 +5353,7 @@ DB バックアップの作成
 
 出力パス
 
-- 値を受け取る
+- 値を受け入れる
 
 #### `--logs`, `-l`
 
@@ -5376,7 +5376,7 @@ DB バックアップの作成
 bin/magento support:utility:check [--hide-paths]
 ```
 
-必要なバックアップユーティリティを確認する
+必要なバックアップユーティリティの確認
 
 ### オプション
 
@@ -5424,7 +5424,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 テーマのパス。 テーマのパスは、領域/ベンダー/名前のフルパスとして指定する必要があります。 例：frontend/Magento/blank
 
-- デフォルト： `[]`
+- デフォルト：`[]`
 - 必須
 
 - 配列
@@ -5483,16 +5483,16 @@ Web バックエンドのポート
 
 #### `--export-version`
 
-ワニスファイルのバージョン
+Varnish ファイルのバージョン
 
-- デフォルト： `6`
+- デフォルト：`6`
 - 値が必要です
 
 #### `--grace-period`
 
-猶予期間 (秒単位)
+猶予期間（秒）
 
-- デフォルト： `300`
+- デフォルト：`300`
 - 値が必要です
 
 #### `--input-file`

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## ワニスパージ
 
-[Varnish のドキュメント ](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html) によると、「*パージ* は、キャッシュからオブジェクトを選択して、そのバリアントと共に破棄する場合に発生します。」 Varnish パージは、キャッシュの消去コマンド（または管理者で **Magentoキャッシュをフラッシュ** をクリックするコマンド）に似ています。
+[Varnish のドキュメント ](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html) によると、「*パージ* は、キャッシュからオブジェクトを選択して、そのバリアントと共に破棄する場合に発生します。」 Varnish パージは、キャッシュクリーンコマンド（または管理者で **Magento キャッシュをフラッシュ** をクリックするコマンド）に似ています。
 
 実際、Commerceのキャッシュをクリーンアップ、フラッシュまたは更新すると、Varnish もパージします。
 
@@ -42,7 +42,7 @@ Commerceと連携するようにワニスをインストールして設定した
 
 ## Commerceでワニスをパージするように設定する
 
-Commerceは、[`magento setup:config:set`](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) コマンドを使用して Varnish ホストを設定した後に、Varnish ホストをパージします。
+Commerceは、[`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) コマンドを使用して Varnish ホストを設定した後に、Varnish ホストをパージします。
 
 オプションのパラメーター `--http-cache-hosts` パラメーターを使用して、Varnish ホストとリッスンポートのコンマ区切りリストを指定できます。 1 つまたは複数の Varnish ホストをすべて設定します。 （ホストをスペース文字で区切らないでください）。
 
@@ -56,6 +56,6 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 
 その後、Admin またはコマンドラインでCommerce キャッシュを更新するとき（キャッシュの *クリーニング* とも呼ばれます）に、Varnish ホストをパージできます。
 
-管理者を使用してキャッシュを更新するには、**[!UICONTROL SYSTEM]** / ツール / **キャッシュ管理** をクリックし、ページ上部の **Magentoキャッシュをフラッシュ** をクリックします。 （個々のキャッシュタイプを更新することもできます）。
+管理者を使用してキャッシュを更新するには、**[!UICONTROL SYSTEM]** / ツール / **キャッシュ管理** をクリックし、ページ上部の **Magento キャッシュをフラッシュ** をクリックします。 （個々のキャッシュタイプを更新することもできます）。
 
 コマンドラインを使用してキャッシュを更新するには、通常、[`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) コマンドを [ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) として使用します。

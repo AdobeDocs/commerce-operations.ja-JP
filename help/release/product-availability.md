@@ -1,6 +1,6 @@
 ---
-title: Product Availability
-description: Learn about what Adobe Commerce features are currently supported and check their compatibility with specific Adobe Commerce releases.
+title: 製品の可用性
+description: 現在サポートされているAdobe Commerce機能について説明し、特定のAdobe Commerce リリースとの互換性を確認します。
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
 source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
@@ -9,37 +9,37 @@ ht-degree: 0%
 
 ---
 
-# Product Availability
+# 製品の可用性
 
-The following table describes the status of Adobe Commerce software availability and where to get it, particularly for software that is available outside the conventional Adobe Commerce Composer package.
+次の表に、Adobe Commerce ソフトウェアの可用性のステータスと、その取得場所（特に、従来のAdobe Commerce Composer パッケージの外部で使用可能なソフトウェアの場合）を示します。
 
-Services and extensions are tested on the latest released version of Commerce at the time of the products&#39; release.
+サービスと拡張機能は、製品のリリース時に、最新リリース版のCommerceでテストされます。
 
-Supported versions have been fully tested by Adobe. Assistance for supported versions is available from Adobe Customer Support. Older versions may work properly but are not officially supported.
+サポートされているバージョンは、Adobeで完全にテストされています。 サポートされているバージョンについては、Adobe カスタマーサポートからサポートを受けることができます。 古いバージョンは正常に動作する可能性がありますが、正式にはサポートされていません。
 
 >[!NOTE]
 >
->Support for Adobe Commerce versions also includes support for [available security patches](versions.md).
+>Adobe Commerce バージョンのサポートには、[ 利用可能なセキュリティパッチ ](versions.md) のサポートも含まれます。
 
-## Adobe Authored Extensions
+## Adobeが作成した拡張機能
 
-These Adobe Commerce extensions are decoupled from the core Adobe Commerce codebase. This allows Adobe to release iterations of these extensions on a more flexible timeframe and provide customers earlier access to new features.
+これらのAdobe Commerce拡張機能は、コア Adobe Commerce コードベースから切り離されています。 これにより、Adobeは、これらの拡張機能のイテレーションをより柔軟な期間でリリースし、お客様が新機能に以前にアクセスできるようにします。
 
-The following table shows the version support for each extension relative to the Adobe Commerce version.
+次の表に、Adobe Commerceのバージョンに対する各拡張機能のバージョンサポートを示します。
 
 {{$include /help/_includes/templated/product-availability-extensions.md}}
 
-## Commerce Services
+## Commerce サービス
 
-[Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja) are a suite of Adobe-hosted features that provide robust functionality and fast response times, in conjunction with your Commerce instance.
+[Commerce サービス ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html) は、Commerce インスタンスと組み合わせて堅牢な機能と高速な応答時間を提供する、Adobeでホストされる機能のスイートです。
 
-It is recommended that merchants use the most recent version of a service to ensure the highest stability and functionality. The documentation describes the currently released version.
+最高の安定性と機能を確保するために、マーチャントは最新バージョンのサービスを使用することをお勧めします。 ドキュメントには、現在リリースされているバージョンが記載されています。
 
-* Adobe Commerce Services are currently compatible with Commerce 2.4.4 and later. It is recommended that merchants use the latest version of the service.
-* Services are considered compatible with earlier versions of Commerce 2.4.x but are not officially supported.
-* Services are not compatible with Commerce 2.3.x, except for Product Recommendations 3.3.7 and earlier.
-* The Payments service is currently compatible with Magento Open Source 2.4.4 and later. It is recommended that merchants use the latest version of the service.
+* 現在、Adobe Commerce サービスはCommerce 2.4.4 以降と互換性があります。 マーチャントは最新バージョンのサービスを使用することをお勧めします。
+* サービスは、Commerce 2.4.x の以前のバージョンと互換性があると見なされますが、公式にはサポートされていません。
+* Product Recommendations 3.3.7 以前を除き、サービスはCommerce 2.3.x と互換性がありません。
+* 支払いサービスは、現在、Magento Open Source 2.4.4 以降と互換性があります。 マーチャントは最新バージョンのサービスを使用することをお勧めします。
 
-The following table shows the version support for each service relative to the Adobe Commerce version.
+次の表に、Adobe Commerceのバージョンに対する各サービスのバージョンサポートを示します。
 
 {{$include /help/_includes/templated/product-availability-services.md}}

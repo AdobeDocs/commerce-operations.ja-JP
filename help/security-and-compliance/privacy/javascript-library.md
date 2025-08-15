@@ -21,7 +21,7 @@ Commerceのデータトラッキングサービスでは、[EU 一般データ�
 
 >[!NOTE]
 >
->[Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ja) が有効になっている場合、Commerceは、買い物客が同意するまで行動データを収集しません。 [!UICONTROL **Cookie 制限モード**] が無効になっている場合、Commerceはデフォルトで行動データを収集します。
+>[Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) が有効になっている場合、Commerceは、買い物客が同意するまで行動データを収集しません。 [!UICONTROL **Cookie 制限モード**] が無効になっている場合、Commerceはデフォルトで行動データを収集します。
 
 ## インストール
 
@@ -47,7 +47,7 @@ const magePriv = new MagentoPrivacy()
 const magePriv = new window.MagentoPrivacy()
 ```
 
-## 使用方法
+## 使用状況
 
 プライバシー JS ライブラリは、ブラウザーに保存された ID データを管理するための様々な機能を提供します。
 

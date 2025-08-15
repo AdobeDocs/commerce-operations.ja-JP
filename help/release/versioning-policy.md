@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Adobe Commerce リリースポリシー
 
-Adobe Commerceでは、個々のモジュールレベル（`magento/framework 101.1.1` など）で [ セマンティックバージョニング ](https://semver.org/) を使用しますが、マーケティングバージョン番号には使用しません。 例：
+Adobe Commerceでは、個々のモジュールレベル（[ など）で ](https://semver.org/) セマンティックバージョニング `magento/framework 101.1.1` を使用しますが、マーケティングバージョン番号には使用しません。 例：
 
 - **メジャーリリース**-2
 - **マイナーリリース**-2.4
@@ -92,4 +92,4 @@ Beta リリースには不具合が含まれている場合があり、いかな
 
 ## カスタムパッチ
 
-問題を修正したり、様々な理由でAdobe Commerce コードを変更したりするために、Adobe以外の担当者によって作成されました。 カスタムパッチは、[Quality Patches Tool](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/usage) を通じて提供されます。
+問題を修正したり、様々な理由でAdobe Commerce コードを変更したりするために、Adobe以外の担当者によって作成されました。 カスタムパッチは、[Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) を通じて提供されます。

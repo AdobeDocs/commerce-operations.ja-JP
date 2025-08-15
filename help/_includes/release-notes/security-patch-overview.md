@@ -17,4 +17,4 @@ ht-degree: 0%
 
 各セキュリティパッチリリースは、以前の完全なパッチリリースに基づいています。 以前のパッチリリースからの品質とセキュリティの修正、および以前の完全なパッチリリースとセキュリティパッチリリースの間に作成されたセキュリティの修正が含まれています。
 
-セキュリティパッチのダウンロードおよび適用方法については、[2&rbrace;Adobe Commerce ナレッジベースの ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) セキュリティパッチの取得および適用方法 _を参照してください。_
+セキュリティパッチのダウンロードおよび適用方法については、[2}Adobe Commerce ナレッジベースの ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) セキュリティパッチの取得および適用方法 _を参照してください。_

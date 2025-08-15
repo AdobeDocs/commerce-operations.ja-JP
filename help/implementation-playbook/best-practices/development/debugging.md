@@ -110,7 +110,7 @@ bin/magento cache:flush
 
   新しいモジュールの `app/etc/config.php` ファイルを確認します。
 
-- ファイルおよびディレクトリ構造のネストを確認します。 例えば、レイアウトファイルは `view/frontend/layout` ディレクトリではなく `view/layout/` ディレクトリにありますか？ テンプレートは `view/frontend/templates` ディレクトリではなく `view/frontend/template` ディレクトリにありますか。
+- ファイルおよびディレクトリ構造のネストを確認します。 例えば、レイアウトファイルは `view/layout/` ディレクトリではなく `view/frontend/layout` ディレクトリにありますか？ テンプレートは `view/frontend/template` ディレクトリではなく `view/frontend/templates` ディレクトリにありますか。
 
 ## トラブルシューティング：半分割
 

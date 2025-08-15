@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Commerce 2.2 [ パイプラインデプロイメントモデル ](../deployment/technical-details.md) を使用して実稼動システムを設定する場合、`config.php` および `env.php` からデータベースに設定を _インポート_ する必要があります。
+Commerce 2.2 [ パイプラインデプロイメントモデル ](../deployment/technical-details.md) を使用して実稼動システムを設定する場合、_および_ からデータベースに設定を `config.php` インポート `env.php` する必要があります。
 これらの設定には、設定パスと値、web サイト、ストア、ストアビュー、テーマが含まれます。
 
 Web サイト、ストア、ストアビュー、テーマを読み込んだ後、製品属性を作成して、実稼動システムの web サイト、ストア、ストアビューに適用できます。
@@ -64,7 +64,7 @@ Nothing to import
 
 ### システム設定
 
-Commerceでは、データベースに読み込む代わりに、`config.php` ファイルまたは `env.php` ファイル内の `system` 配列の値を直接使用します。これらの値には前処理および後処理のアクションが必要なためです。
+Commerceでは、データベースに読み込む代わりに、`system` ファイルまたは `config.php` ファイル内の `env.php` 配列の値を直接使用します。これらの値には前処理および後処理のアクションが必要なためです。
 
 例えば、設定パス `web/secure/base_url` の値は、バックエンドモデルで検証する必要があります。
 
@@ -80,7 +80,7 @@ Commerceでは、データベースに読み込む代わりに、`config.php` �
 ### Web サイト、ストア、ストアグループの設定
 
 次のタイプの設定を読み込みます。
-（これらの設定は、`config.php` の `scopes` 配列の下にあります）。
+（これらの設定は、`scopes` の `config.php` 配列の下にあります）。
 
 - `websites`:web サイト関連の設定
 - `groups`：関連する設定を格納します
@@ -90,7 +90,7 @@ Commerceでは、データベースに読み込む代わりに、`config.php` �
 
 - `create`: `config.php` には、実稼動環境にない新しいエンティティ（`websites`、`groups`、`stores`）が含まれています
 - `update`: `config.php` に、実稼動環境とは異なるエンティティ（`websites`、`groups`、`stores`）が含まれています
-- `delete`: `config.php` には、実稼動環境に存在するエンティティ _`websites`、`groups`、`stores`）が含まれていま_ ん
+- `delete`: `config.php` には、実稼動環境に存在するエンティティ __、`websites`、`groups`）が含まれていま `stores` ん
 
 >[!INFO]
 >
@@ -98,7 +98,7 @@ Commerceでは、データベースに読み込む代わりに、`config.php` �
 
 ### テーマの設定
 
-テーマ設定には、Commerce システムに登録されているすべてのテーマが含まれます。データは、`theme` データベーステーブルから直接取得されます。 （テーマの設定は、`config.php` の `themes` 配列にあります）。
+テーマ設定には、Commerce システムに登録されているすべてのテーマが含まれます。データは、`theme` データベーステーブルから直接取得されます。 （テーマの設定は、`themes` の `config.php` 配列にあります）。
 
 #### テーマデータの構造
 

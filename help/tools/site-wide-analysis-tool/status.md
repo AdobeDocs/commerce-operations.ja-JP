@@ -19,4 +19,4 @@ ht-degree: 0%
 
 **[!UICONTROL Health Index Bar]**：サイト全体の正常性を 0 ～ 100 で測定します。ゼロが最も悪く、100 が完全な正常性です。 アクティブなレコメンデーションの数量と優先度の重み係数に基づいて計算されます。
 
-**[!UICONTROL Download Recommendations Report]**:Recommendations レポートは、プロジェクトに適用可能なパーソナライズされたレコメンデーションを提供します。 PDFレポートをダウンロードするには、この節をクリックします。
+**[!UICONTROL Download Recommendations Report]**: Recommendations レポートは、プロジェクトに適用可能なパーソナライズされたレコメンデーションを提供します。 この節をクリックして、PDF レポートをダウンロードできます。

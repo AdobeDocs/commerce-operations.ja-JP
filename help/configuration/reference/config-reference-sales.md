@@ -14,7 +14,7 @@ ht-degree: 0%
 
 このセクションでは、**ストア**/設定/**設定**/**セールス** の管理でオプションに使用できる変数名と設定パスを示します。
 
-[`magento app:config:dump` コマンドは ](../cli/export-configuration.md) これらの値をソース管理にある共有構成ファイル `app/etc/config.php` に書き込みます。 任意の構成設定を上書きしたり、重要な設定を指定したりするには、[ 環境変数を使用して構成設定を上書き ](override-config-settings.md#environment-variables) を参照してください。 このトピックでは _機密の値とシステム固有の値 [ は_ 表示されません ](config-reference-sens.md)。
+[`magento app:config:dump` コマンドは ](../cli/export-configuration.md) これらの値をソース管理にある共有構成ファイル `app/etc/config.php` に書き込みます。 任意の構成設定を上書きしたり、重要な設定を指定したりするには、[ 環境変数を使用して構成設定を上書き ](override-config-settings.md#environment-variables) を参照してください。 このトピックでは _機密の値とシステム固有の値_ は [ 表示されません ](config-reference-sens.md)。
 
 ## 販売パス
 
@@ -32,8 +32,8 @@ ht-degree: 0%
 | ギフトカード | `sales/totals_sort/giftcardaccount` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
 | 店舗クレジット | `sales/totals_sort/customerbalance` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
 | 並べ替えを許可 | `sales/reorder/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| PDFの印刷出力のロゴ （200 x 50） | `sales/identity/logo` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| HTMLの印刷表示のロゴ | `sales/identity/logo_html` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| PDFの印刷出力（200 x 50）のロゴ | `sales/identity/logo` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| HTML印刷レイアウト表示のロゴ | `sales/identity/logo_html` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | アドレス | `sales/identity/address` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Enable （有効） | `sales/minimum_order/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最小量 | `sales/minimum_order/amount` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -162,7 +162,7 @@ ht-degree: 0%
 | 国境を越えた貿易を可能にする | `tax/calculation/cross_border_trade_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | デフォルトの国 | `tax/defaults/country` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | デフォルトの状態 | `tax/defaults/region` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| デフォルトのPost コード | `tax/defaults/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 既定の Post コード | `tax/defaults/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 製品価格をカタログに表示 | `tax/display/type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 配送料を表示 | `tax/display/shipping` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 価格を表示 | `tax/cart_display/price` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -386,7 +386,7 @@ ht-degree: 0%
 
 ## Google API のパス
 
-これらの設定値は、管理者の **Stores**/設定/**Configuration**/**Sales**/6&rbrace;Google API **で利用できます。**
+これらの設定値は、管理者の **Stores**/設定/**Configuration**/**Sales**/6}Google API **で利用できます。**
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|

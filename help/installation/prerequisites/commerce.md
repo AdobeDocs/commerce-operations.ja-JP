@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## ソフトウェアの入手方法
 
-魅力的な新機能やリリースの提供状況を確認し、それらを入手する方法については、アドビの [ 製品提供ページ ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability) を参照してください。
+魅力的な新機能やリリースの提供状況を確認し、それらを入手する方法については、アドビの [ 製品提供ページ ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) を参照してください。
 
 Adobe Commerceのインストールの概要については、次の表を参照してください。
 
@@ -29,7 +29,7 @@ Adobe Commerceのインストールの概要については、次の表を参照
         </tr>
     <tr>
         <td><p>インテグレーター、パッケージャー</p></td>
-        <td><p>インストールされているすべてのコンポーネントを完全に制御したい、アプリケーションサーバーにアクセスできる、非常に技術的な、他のコンポーネントとMagento Open Sourceを再パッケージ化する可能性があります。</p>
+        <td><p>インストールされているすべてのコンポーネントを完全に制御したい、アプリケーションサーバーにアクセスできる、非常に技術的な、Magento Open Sourceを他のコンポーネントと再パッケージ化したい。</p>
         </td>
         <td><ol><li>使用するコンポーネントのリストを含む Composer <em> プロジェクト </em> を作成します。</li>
             <li>Composer を使用してパッケージの依存関係を更新します。<code>composer create-project</code> を使用して Composer メタパッケージを取得します。</li>
@@ -39,7 +39,7 @@ Adobe Commerceのインストールの概要については、次の表を参照
     </tr>
     <tr>
         <td><p>貢献する開発者</p></td>
-        <td><p>Magento Open Sourceのコードベース、ファイルのバグ、アプリケーションのカスタマイズに役立ちます。 高度な技術を持ち、独自の開発サーバーを持ち、Composer と GitHub を理解しています。</p>
+        <td><p>Magento Open Source コードベースを提供し、ファイルのバグを修正し、アプリケーションをカスタマイズします。 高度な技術を持ち、独自の開発サーバーを持ち、Composer と GitHub を理解しています。</p>
             <p>実稼動環境 <em> はアプリケーションを使用できません </em>。</p>
       <p><a href="../../upgrade/developer/git-installs.md">Composer コマンドと Git コマンド </a> を使用してアップグレードする必要があります。</p></td>
         <td><ol><li>GitHub リポジトリを複製します。</li>
@@ -60,6 +60,6 @@ Adobe Commerceのインストールの概要については、次の表を参照
 
 UNIX システムでは、Web サーバーや PHP などのソフトウェアをインストールおよび設定するために `root` 権限が必要です。 このソフトウェアをインストールする必要がある場合は、アクセス権があ `root` ことを確認します。
 
-Web サーバーがこれらのファイルを操作できない可能性があるので *web サーバーの docroot にアプリケーションを `root` ユーザーとしてインストールし* いでください。
+Web サーバーがこれらのファイルを操作できない可能性があるので *web サーバーの docroot にアプリケーションを* ユーザーとしてインストールし `root` いでください。
 
-[ ファイルシステム所有者 ](file-system/overview.md) を作成し、その所有者を web サーバーのグループに追加するには、`root` 権限が必要です。 ファイルシステムの所有者を使用して、コマンドラインから `bin/magento` コマンドを実行したり、タスクをスケジュールする cron ジョブを設定したりできます。
+`root` ファイルシステム所有者 [ を作成し、その所有者を web サーバーのグループに追加するには、](file-system/overview.md) 権限が必要です。 ファイルシステムの所有者を使用して、コマンドラインから `bin/magento` コマンドを実行したり、タスクをスケジュールする cron ジョブを設定したりできます。

@@ -19,7 +19,7 @@ ht-degree: 0%
 
   ホストされた環境に複数の web サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーにお問い合わせください。
 
-  クラウドインフラストラクチャー上にAdobe Commerceをセットアップするには、追加のタスクが必要になります。 Commerceこのトピックで取り上げる作業が完了したら、_Cloud Infrastructure ガイドの [ 複数の web サイトまたはストアの設定 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja) を参照してください_。
+  クラウドインフラストラクチャー上にAdobe Commerceをセットアップするには、追加のタスクが必要になります。 Commerceこのトピックで取り上げる作業が完了したら、[Cloud Infrastructure ガイドの ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 複数の web サイトまたはストアの設定 _を参照してください_。
 
 - Web サイトごとに 1 つのバーチャルホストを使用します。バーチャルホスト設定ファイルは `/etc/httpd/httpd.conf` です
 
@@ -28,8 +28,8 @@ ht-degree: 0%
 - Commerce ソフトウェアは `/var/www/html/magento2` にインストールされています
 - デフォルト以外に 2 つの web サイトがあります。
 
-   - web サイトコード `french` とストアビューコード `fr` を使用した `french.mysite.mg`
-   - web サイトコード `german` とストアビューコード `de` を使用した `german.mysite.mg`
+   - web サイトコード `french.mysite.mg` とストアビューコード `french` を使用した `fr`
+   - web サイトコード `german.mysite.mg` とストアビューコード `german` を使用した `de`
 
 ## Apache で複数の web サイトを設定するためのロードマップ
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## 手順 2:Apache 仮想ホストを作成する
 
-この節では、仮想ホストで Apache サーバー変数 `SetEnvIf` を使用して `MAGE_RUN_TYPE` および `MAGE_RUN_CODE` の値を設定する方法について説明します。
+この節では、仮想ホストで Apache サーバー変数 `MAGE_RUN_TYPE` を使用して `MAGE_RUN_CODE` および `SetEnvIf` の値を設定する方法について説明します。
 
 `SetEnvIf` について詳しくは、以下を参照してください。
 
@@ -110,7 +110,7 @@ ht-degree: 0%
 >[!INFO]
 >
 >- ホストされた環境に複数の web サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーにお問い合わせください。
->- クラウドインフラストラクチャー上にAdobe Commerceを設定するには、さらに作業が必要です。[2&rbrace; クラウドインフラストラクチャー上のCommerceガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja) 複数のクラウド Web サイトまたはストアの設定 _を参照してください。_
+>- クラウドインフラストラクチャー上にAdobe Commerceを設定するには、さらに作業が必要です。[2} クラウドインフラストラクチャー上のCommerceガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 複数のクラウド Web サイトまたはストアの設定 _を参照してください。_
 
 ### トラブルシューティング
 

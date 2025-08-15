@@ -25,7 +25,7 @@ Adobe Commerceが提供する設定ファイルを使用すると、コンポー
 
 >[!INFO]
 >
->[!DNL Commerce 2] デプロイメント設定は、[!DNL Magento 1.x] の `local.xml` に代わるものです。
+>[!DNL Commerce 2] デプロイメント設定は、`local.xml` の [!DNL Magento 1.x] に代わるものです。
 
 他の [ モジュール設定ファイル ](../reference/module-files.md) とは異なり、Commerce デプロイメント設定は、初期化時にメモリに読み込まれ、他のファイルと結合されず、拡張できません。 （ただし、`config.php` と `env.php` はマージされます）。
 
@@ -51,7 +51,7 @@ Adobe Commerceが提供する設定ファイルを使用すると、コンポー
 例：
 
 - コンポーネントのアンインストール：[`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- コンポーネントのステータスの確認：[`bin/magento module:status`](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
+- コンポーネントのステータスの確認：[`bin/magento module:status`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
 - コンポーネント（[`bin/magento module:disable`](../../installation/tutorials/manage-modules.md)、[`bin/magento module:enable`](../../installation/tutorials/manage-modules.md)）を有効または無効にします。
 
 > _config.php_

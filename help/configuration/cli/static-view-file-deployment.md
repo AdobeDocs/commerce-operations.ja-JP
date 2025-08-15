@@ -36,7 +36,7 @@ _静的ビューファイル_ という用語は、以下を指します。
 **静的表示ファイルをデプロイするには**:
 
 1. Commerce サーバーにとしてログインするか、[ ファイルシステムのオーナーに切り替え ](../../installation/prerequisites/file-system/overview.md) ます。
-1. `.htaccess` ファイルを除く `<magento_root>/pub/static` のコンテンツを削除します。 このファイルは削除しないでください。
+1. `<magento_root>/pub/static` ファイルを除く `.htaccess` のコンテンツを削除します。 このファイルは削除しないでください。
 1. 静的表示ファイル展開ツール `<magento_root>/bin/magento setup:static-content:deploy` を実行します。
 
    >[!INFO]
@@ -68,9 +68,9 @@ _静的ビューファイル_ という用語は、以下を指します。
 | `--no-less` | LESS ファイルをデプロイしないでください。 | 不可 |
 | `--no-images` | 画像をデプロイしないでください。 | 不可 |
 | `--no-fonts` | フォントファイルをデプロイしないでください。 | 不可 |
-| `--no-html` | HTMLファイルをデプロイしないでください。 | 不可 |
-| `--no-misc` | MD、JBF、CSV、JSON、TXT、HTC、SWFなどの他のタイプのファイルはデプロイしないでください | 不可 |
-| `--no-html-minify` | HTMLファイルは縮小しないでください。 | 不可 |
+| `--no-html` | HTML ファイルをデプロイしないでください。 | 不可 |
+| `--no-misc` | 他のタイプのファイル（MD、JBF、CSV、JSON、TXT、HTC、SWF）をデプロイしない | 不可 |
+| `--no-html-minify` | HTML ファイルは縮小しないでください。 | 不可 |
 | `-s <quick\|standard\|compact>` | デプロイメント戦略を定義します。 これらのオプションは、複数のローカルがある場合にのみ使用します。<ul><li>[ クイック戦略 ](static-view-file-strategy.md#quick-strategy) を使用すると、デプロイメント時間を最小限に抑えることができます。 指定されていない場合、これはデフォルトのコマンドオプションです。</li><li>[ 標準方法 ](static-view-file-strategy.md#standard-strategy) を使用して、すべてのパッケージのすべての静的ビューファイルをデプロイします。</li><li>[ コンパクト化 ](static-view-file-strategy.md#compact-strategy) を使用して、サーバー上のディスク領域を節約します。</li></ul> | 不可 |
 | `--no-parent` | 現在のテーマの親テーマ用のファイルを生成しません。 デプロイしようとしている現在のテーマの親テーマを明示的に使用しない場合は、このフラグを使用することを強くお勧めします。 これにより、プロセスの速度が大幅に向上します。 このフラグは、Commerce 2.4.2 で使用できます。 | 不可 |
 | `--force (-f)` | 任意のモードでファイルをデプロイします。 （デフォルトでは、静的コンテンツデプロイメントツールは、実稼動モードでのみ実行できます。 このオプションを使用して、デフォルトまたは開発者モードで実行します。 | 不可 |
@@ -85,7 +85,7 @@ _静的ビューファイル_ という用語は、以下を指します。
 
 ### テーマとHTMLの縮小の除外
 
-次のコマンドは、米国英語（`en_US`）言語用の静的コンテンツをデプロイし、Commerceで提供される Luma テーマを除外し、HTMLファイルを縮小しません。
+次のコマンドは、米国英語（`en_US`）言語用の静的コンテンツをデプロイし、Commerceで提供される Luma テーマを除外し、HTML ファイルを縮小しません。
 
 ```bash
 bin/magento setup:static-content:deploy en_US --exclude-theme Magento/luma --no-html-minify
@@ -172,7 +172,7 @@ ERROR: You need to install the Commerce application before running this utility.
 
 1. [ コマンドライン ](../../installation/composer.md) を使用してCommerce ソフトウェアをインストールします。
 1. ファイルシステムの所有者として、または [ 切り替え先 ](../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインします。
-1. `.htaccess` ファイルを除く `<app_root>/pub/static` ディレクトリのコンテンツを削除します。 このファイルは削除しないでください。
+1. `<app_root>/pub/static` ファイルを除く `.htaccess` ディレクトリのコンテンツを削除します。 このファイルは削除しないでください。
 1. 静的表示ファイルのデプロイ：`bin/magento setup:static-content:deploy`
 
 ## 静的コンテンツ展開ツールをカスタマイズする開発者向けのヒント

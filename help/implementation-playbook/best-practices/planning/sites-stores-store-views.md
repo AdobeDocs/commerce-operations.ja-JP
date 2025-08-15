@@ -28,7 +28,7 @@ ht-degree: 0%
 
 - ロジックをカテゴリに移動してカタログを再構築
 - 外部価格と価格管理システム（PMS）を使用して、カタログ・データから価格表を分離します。
-- Elasticsearchなどの別の noSQL データストレージを使用
+- Elasticsearchなどの別の noSQL データストレージを使用する
 
 ## パフォーマンスに与える可能性のある影響
 
@@ -41,5 +41,5 @@ Web サイトやストアはカタログデータの乗数なので、多くの 
 
 ## 追加情報
 
-- [Web サイト、ストア、ストア表示について ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [ 複数の web サイトまたはストアを設定する ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [Web サイト、ストア、ストア表示について ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [ 複数の web サイトまたはストアを設定する ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)

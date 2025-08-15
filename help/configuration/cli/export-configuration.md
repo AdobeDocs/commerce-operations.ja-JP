@@ -47,6 +47,6 @@ bin/magento app:config:dump scopes themes
 
 `env.php` に書き込まれた機密設定を設定するには、[`bin/magento config:sensitive:set`](set-configuration-values.md#set-values) コマンドを使用します。
 
-設定値は、モジュールの [`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific) ファイル内の [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) を参照することで、機密またはシステム固有として指定されます。
+設定値は、モジュールの [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) ファイル内の [`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific) を参照することで、機密またはシステム固有として指定されます。
 
 `config_types` を使用する際に追加のシステム設定を書き出すには、[`bin/magento config:set`](set-configuration-values.md#set-values) コマンドの使用を検討してください。

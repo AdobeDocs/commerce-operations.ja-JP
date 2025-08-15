@@ -1,6 +1,6 @@
 ---
 title: 「[!UICONTROL Redis]」タブ
-description: ' [!DNL Observation for Adobe Commerce] の「[!UICONTROL Redis]」タブについて説明します。'
+description: '[!UICONTROL Redis] の「 [!DNL Observation for Adobe Commerce]」タブについて説明します。'
 exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 feature: Configuration, Observability
 source-git-commit: 06f015139683f319f11317f8d7f0029cbd2548e3

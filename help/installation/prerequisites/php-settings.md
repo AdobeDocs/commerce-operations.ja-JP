@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >最新バージョンのAdobe Commerceを使用するには、最低でも PHP 8.1 が必要です。サポートされている PHP の全バージョンについては、[ システム要件 ](../system-requirements.md) を参照してください。
 
-クラウド設定のガイダンスについては、_Cloud Infrastructure でのCommerce[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=ja) ガイドの PHP 設定_ を参照してください。
+クラウド設定のガイダンスについては、[Cloud Infrastructure でのCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) ガイドの _PHP 設定_ を参照してください。
 
 ## PHP プロセスコントロール
 
@@ -65,7 +65,7 @@ Adobe Commerceには特定の PHP 拡張モジュールが必要です。 次の
 
 >[!WARNING]
 >
->PHP 7.4.20 を使用している場合は、`php.ini` ファイルで `pcre.jit=0` を設定します。 これは、CSS の読み込みを妨げる PHP[ バグ ](https://bugs.php.net/bug.php?id=81101) を回避するものです。
+>PHP 7.4.20 を使用している場合は、`pcre.jit=0` ファイルで `php.ini` を設定します。 これは、CSS の読み込みを妨げる PHP[ バグ ](https://bugs.php.net/bug.php?id=81101) を回避するものです。
 
 - PHP のシステムタイムゾーンを設定します。設定しないと、インストール中に次のようなエラーが表示され、cron のような時間関連の操作が機能しない場合があります。
 
@@ -75,7 +75,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - PHP のメモリ制限を設定します。
 
-  Adobeでは、次のことをお勧めします。
+  Adobeでは次のことをお勧めします。
 
    - コードのコンパイルまたは静的アセットのデプロイ、`1G`
    - デバッグ，`2G`

@@ -4,7 +4,7 @@ description: 次の手順に従って、Adobe Commerceのデプロイメント�
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
 source-git-commit: a5dbefda6b77d993756143ef0e7270425f824c44
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ bin/magento maintenance:status
 
 >[!NOTE]
 >
->`magento maintenance:disable` で `--ip=<ip address>` を使用すると、後で使用するために IP のリストが保存されます。 除外 IP の一覧をクリアするには、`magento maintenance:enable --ip=none` を使用するか、[ 除外 IP アドレスの一覧の管理 ](#maintain-the-list-of-exempt-ip-addresses) を参照してください。
+>`--ip=<ip address>` で `magento maintenance:disable` を使用すると、後で使用するために IP のリストが保存されます。 除外 IP の一覧をクリアするには、`magento maintenance:enable --ip=none` を使用するか、[ 除外 IP アドレスの一覧の管理 ](#maintain-the-list-of-exempt-ip-addresses) を参照してください。
 
 `bin/magento maintenance:status` コマンドは、メンテナンス モードの状態を表示します。
 
@@ -56,7 +56,7 @@ bin/magento maintenance:status
 bin/magento maintenance:enable
 ```
 
-192.0.2.10 および 192.0.2.11 を除くすべてのクライアントのメンテナンス モードを有効にするには、次の手順に従います。
+192.0.2.10 と 192.0.2.11 を除くすべてのクライアントのメンテナンス・モードを有効にするには、次の手順に従います。
 
 ```bash
 bin/magento maintenance:enable --ip=192.0.2.10 --ip=192.0.2.11
@@ -86,7 +86,7 @@ bin/magento maintenance:allow-ips <ip address> .. <ip address> [--none]
 
 次の例では、`503` タイプのエラーテンプレートファイルを使用します。このファイルにはローカライズされたコンテンツが必要です。
 
-`Error_Processor` クラスのコンストラクタは、レイアウトを変更する `skin` GETパラメーターを受け入れます。
+`Error_Processor` クラスのコンストラクターは、`skin` のGET パラメーターを受け入れて、レイアウトを変更します。
 
 ```php
 if (isset($_GET['skin'])) {
@@ -94,7 +94,7 @@ if (isset($_GET['skin'])) {
 }
 ```
 
-これは、URL に `skin` パラメーターを追加する `.htaccess` ファイルの書き換えルールに追加することもできます。
+これは、URL に `.htaccess` パラメーターを追加する `skin` ファイルの書き換えルールに追加することもできます。
 
 ### $_GET[&#39;skin&#39;] パラメータ
 

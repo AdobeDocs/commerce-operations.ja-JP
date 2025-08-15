@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->OpenSearch のサポートは 2.4.4 で追加されました。OpenSearch は、互換性のあるElasticsearchのフォークです。 詳しくは、[OpenSearch へのElasticsearchの移行 ](../../../upgrade/prepare/opensearch-migration.md) を参照してください。
+>OpenSearch のサポートは 2.4.4 で追加されました。OpenSearch は、Elasticsearchの互換性のあるフォークです。 詳しくは、[Elasticsearchの OpenSearch への移行 ](../../../upgrade/prepare/opensearch-migration.md) を参照してください。
 
 ここでは、Apache を *セキュアでない* プロキシとして設定して、Adobe Commerceがこのサーバーで動作している検索エンジンを使用できるようにする方法について説明します。 この節では、HTTP 基本認証の設定については説明しません。これについては、[Apache との安全な通信 ](#secure-communication-with-apache) で説明しています。
 
@@ -64,7 +64,7 @@ ht-degree: 0%
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
-   例えば、プロキシを使用していて、Elasticsearchがポート 8080 を使用している場合、次のようになります。
+   例えば、Elasticsearchを使用していて、プロキシがポート 8080 を使用している場合、次のようになります。
 
    ```bash
    curl -i http://localhost:8080/_cluster/health
@@ -154,7 +154,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd apache
 ```
 
 **例 2:Elasticsearch**
-2 人のユーザーに対してElasticsearchを設定する必要があります。1 人は nginx にアクセスでき、もう 1 人は認証にアクセスできます。 これらのユーザーのパスワードファイルを作成するには、次のコマンドを入力します。
+2 人のユーザー（1 人は nginx にアクセスできるユーザー、もう 1 人はElasticsearchにアクセスできるユーザー）に対して認証を設定する必要があります。 これらのユーザーのパスワードファイルを作成するには、次のコマンドを入力します。
 
 ```bash
 mkdir -p /usr/local/apache/password
@@ -174,7 +174,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### Apache との安全な通信
 
-この節では、[HTTP 基本認証 ](https://httpd.apache.org/docs/2.2/howto/auth.html) の設定方法について説明します。 TLS と HTTP 基本認証を一緒に使用すると、Elasticsearchや OpenSearch、またはアプリケーションサーバーとの通信がインターセプトされるのを防ぐことができます。
+この節では、[HTTP 基本認証 ](https://httpd.apache.org/docs/2.2/howto/auth.html) の設定方法について説明します。 TLS と HTTP 基本認証を一緒に使用すると、Elasticsearch、OpenSearch またはアプリケーションサーバーとの通信がインターセプトされるのを防ぐことができます。
 
 ここでは、Apache サーバーにアクセスできるユーザーを指定する方法について説明します。
 

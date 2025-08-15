@@ -1,6 +1,6 @@
 ---
 title: 「[!UICONTROL Deploy]」タブ
-description: ' [!DNL Observation for Adobe Commerce] の「[!UICONTROL Deploy]」タブについて説明します。'
+description: '[!UICONTROL Deploy] の「 [!DNL Observation for Adobe Commerce]」タブについて説明します。'
 exl-id: 3e33f7b0-7a40-4598-ae2e-436118e8d99a
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Post Deploy Log Detail]
 
-![Postのデプロイのログの詳細 ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
+![ デプロイ後のログの詳細 ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
 
 **[!UICONTROL Post Deploy Log Detail]** のフレームには、選択した期間に発生したデプロイ後のログの詳細が表示されます。 このフレームでは、次の文字列を含む特定のログメッセージに焦点を当てています。
 

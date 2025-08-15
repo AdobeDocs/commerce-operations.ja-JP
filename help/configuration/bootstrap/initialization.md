@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce アプリケーションを実行するには、次のアクションを [pub/index.php][index] に実装します。
 
-- エラー処理、オートローダーの初期化、プロファイル オプションの設定、および既定のタイムゾーンの設定などの基本的な初期化ルーチンを実行する &rbrack;[bootinitial]0&rbrace;app/bootstrap.php&rbrace; を含めます。&lbrack;
+- エラー処理、オートローダーの初期化、プロファイル オプションの設定、および既定のタイムゾーンの設定などの基本的な初期化ルーチンを実行する [0}app/bootstrap.php} を含めます。][bootinitial]
 - [\Magento\Framework\App\Bootstrap.php][bootstrap] <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. --> のインスタンスを作成します
 - Commerce アプリケーションインスタンスを作成します：[\Magento\Framework\AppInterface][app-face]
 - Commerceの実行

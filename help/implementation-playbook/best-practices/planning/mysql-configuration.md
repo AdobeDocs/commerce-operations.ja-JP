@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このトピックには、業界標準のソフトウェア用語が含まれています。これらの用語を人種差別的、性差別的、または抑圧的と見なす場合があり、読者が苦痛を感じたり、トラウマを抱いたり、歓迎されないと感じたりする場合があります。 Adobeでは、これらの用語をコード、ドキュメントおよびユーザーエクスペリエンスから削除するよう取り組んでいます。
+>このトピックには、業界標準のソフトウェア用語が含まれています。これらの用語を人種差別的、性差別的、または抑圧的と見なす場合があり、読者が苦痛を感じたり、トラウマを抱いたり、歓迎されないと感じたりする場合があります。 Adobeは、これらの用語をコード、ドキュメントおよびユーザーエクスペリエンスから削除するよう取り組んでいます。
 
 ## トリガー
 
@@ -48,11 +48,11 @@ ht-degree: 0%
 
 - トリガーの実行時にデータを書き込むカスタムトリガーがある場合、代わりに、監査テーブルに直接書き込むように、このロジックを移動します。 例えば、トリガーを作成するクエリの後に、アプリケーションコードにクエリを追加します。
 - 既存のカスタムトリガーを確認し、それらを削除して、アプリケーション側からテーブルに直接書き込むことを検討します。 [`SHOW TRIGGERS` SQL 文 ](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html) を使用して、データベース内の既存のトリガーを確認します。
-- その他のサポート、質問または懸念については、[Adobe Commerce サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja&#submit-ticket) してください。
+- その他のサポート、質問または懸念については、[Adobe Commerce サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket) してください。
 
 ## スレーブ接続
 
-Adobe Commerceは、複数のデータベースを非同期で読み取ることができます。 Cloud infrastructure Pro アーキテクチャにデプロイされたCommerce サイトの MySQL データベースに大きな負荷がかかると予想される場合は、Adobeで MYSQL スレーブ接続を有効にすることをお勧めします。
+Adobe Commerceは、複数のデータベースを非同期で読み取ることができます。 Cloud infrastructure Pro アーキテクチャにデプロイされたCommerce サイトの MySQL データベースに大きな負荷がかかると思われる場合は、Adobeで MYSQL スレーブ接続を有効にすることをお勧めします。
 
 MYSQL スレーブ接続を有効にすると、Adobe Commerceはデータベースへの読み取り専用接続を使用して、非マスターノードで読み取り専用トラフィックを受け取ります。 読み取り/書き込みトラフィックを処理するノードが 1 つだけの場合は、ロードバランシングによってパフォーマンスが向上します。
 
@@ -62,7 +62,7 @@ Adobe Commerce on cloud infrastructure、Pro アーキテクチャのみ
 
 ### 設定
 
-クラウドインフラストラクチャー上のAdobe Commerceでは、[MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#mysql_use_slave_connection) 変数を設定することで、MYSQL スレーブ接続のデフォルト設定を上書きできます。 データベースへの読み取り専用接続を自動的に使用するには、この変数を `true` に設定します。
+クラウドインフラストラクチャー上のAdobe Commerceでは、[MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) 変数を設定することで、MYSQL スレーブ接続のデフォルト設定を上書きできます。 データベースへの読み取り専用接続を自動的に使用するには、この変数を `true` に設定します。
 
 **MySQL スレーブ接続を有効にするには**:
 

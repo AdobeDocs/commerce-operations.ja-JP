@@ -1,6 +1,6 @@
 ---
 title: 「[!UICONTROL CDN]」タブ
-description: ' [!DNL Observation for Adobe Commerce] の「[!UICONTROL CDN]」タブについて説明します。'
+description: '[!UICONTROL CDN] の「 [!DNL Observation for Adobe Commerce]」タブについて説明します。'
 exl-id: db22bbca-2033-4e9a-8799-b47d84bdd720
 feature: Configuration, Observability
 source-git-commit: e753528a1d74eda0a1393e2cc455f33f529db739
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 「[!UICONTROL CDN]」タブ
 
-このタブには、[!DNL content delivery network (CDN)] に焦点を当てた情報があります。 Adobe Commerce Cloudの場合は、[!DNL Fastly] のサービスです。
+このタブには、[!DNL content delivery network (CDN)] に焦点を当てた情報があります。 Adobe Commerce Cloud の場合、これは [!DNL Fastly] サービスです。
 
 ## [!UICONTROL HIT rate]
 

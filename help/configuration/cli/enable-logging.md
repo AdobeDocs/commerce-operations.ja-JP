@@ -82,7 +82,7 @@ Commerceは最近、cron のログの詳細度を高めました。これによ�
 
 ## Syslog ログ
 
-デフォルトでは、Commerceはオペレーティングシステムの `syslog` ファイルに _syslog_ ログを書き込みます。
+デフォルトでは、Commerceはオペレーティングシステムの _ファイルに_ syslog`syslog` ログを書き込みます。
 Commerce 2.3.1 では、syslog を有効または無効にするには、`magento` コマンドを使用する必要があります。
 管理者の設定が削除されました。
 

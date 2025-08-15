@@ -30,7 +30,7 @@ Varnish は `http://domain.com/index.php/page_cache/block/esi/blocks` からコ�
 次の条件を満たすと、Commerce フレームワークによって ESI タグが作成されます。
 
 - キャッシュアプリケーションは `Varnish Cache` に設定されています
-- `ttl` 属性を持つ XML レイアウト `block` 要素が追加される
+- `block` 属性を持つ XML レイアウト `ttl` 要素が追加される
 
 ### 例
 

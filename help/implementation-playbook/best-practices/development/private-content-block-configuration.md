@@ -15,7 +15,7 @@ ht-degree: 1%
 
 プライベートコンテンツブロックに `_isScopePrivate` 変数が含まれている場合、ブロックはキャッシュできません。 プライベートブロックはキャッシュされないので、Adobe Commerceは顧客のリクエストごとに同じデータを取得する必要があり、サーバーの負荷が高くなります。
 
-プライベートコンテンツに `_isScopePrivate` 変数を使用する代わりに、ユーザーに依存しないデータを表示するブロックとテンプレートを作成します。 このデータは、Adobe Commerce UI コンポーネントによってユーザー固有のデータに置き換えられ、プリレンダリングのデータをより効率的に処理できます。 手順については、_[!DNL Commerce PHP Extensions Guide]_&#x200B;の [ プライベートコンテンツ ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) を参照してください。
+プライベートコンテンツに `_isScopePrivate` 変数を使用する代わりに、ユーザーに依存しないデータを表示するブロックとテンプレートを作成します。 このデータは、Adobe Commerce UI コンポーネントによってユーザー固有のデータに置き換えられ、プリレンダリングのデータをより効率的に処理できます。 手順については、[ の ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) プライベートコンテンツ _[!DNL Commerce PHP Extensions Guide]_を参照してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -26,9 +26,9 @@ ht-degree: 1%
 
 ## パフォーマンスへの潜在的な影響
 
-`_isScopePrivate` 変数を含むプライベートコンテンツブロックを持つサイトでは、AJAX リクエストをトリガーして、顧客リクエストごとに同じデータを取得します。 これにより、応答時間が長くなり、顧客登録、買い物かごの更新、注文の送信、支払いトランザクションなど、よりビジネスクリティカルなストアフロント操作を処理するのに使用できる追加のリソースが使用されます。
+`_isScopePrivate` 変数を含むプライベートコンテンツブロックを持つサイトでは、AJAXのリクエストをトリガーして、顧客のリクエストごとに同じデータを取得します。 これにより、応答時間が長くなり、顧客登録、買い物かごの更新、注文の送信、支払いトランザクションなど、よりビジネスクリティカルなストアフロント操作を処理するのに使用できる追加のリソースが使用されます。
 
 ## 追加情報
 
 - [非公開コンテンツ](../../../performance/configuration.md#client-side-optimization-settings)
-- [ スループットの高いAJAX リクエストは、パフォーマンスの低下を引き起こします ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=ja)
+- [ スループットの高いAJAX リクエストは、パフォーマンスの低下を引き起こします ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)

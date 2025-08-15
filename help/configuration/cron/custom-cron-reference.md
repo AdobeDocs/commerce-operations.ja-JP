@@ -82,7 +82,7 @@ _cron グループ_ は、一度に複数のプロセスに対して cron を簡
 </config>
 ```
 
-Magento例として、[Customer_crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml) を参照してください。
+例として、[Magento_Customer crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml) を参照してください。
 
 ### Cron グループオプションの指定
 
@@ -123,7 +123,7 @@ Magento例として、[Customer_crontab.xml](https://github.com/magento/magento2
 
 ## Cron ジョブの無効化
 
-Cron ジョブには、[ 監視者 ](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers) 向けの `disable` 機能はありません。 ただし、cron ジョブは、次の手法を使用して無効にすることができます。`schedule` 発生することのない日付を含む時間を無効にします。
+Cron ジョブには、`disable` 監視者 [ 向けの ](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers) 機能はありません。 ただし、cron ジョブは、次の手法を使用して無効にすることができます。`schedule` 発生することのない日付を含む時間を無効にします。
 
 例えば、モジュールで定義した `visitor_clean` cron ジョブ `Magento_Customer` 無効にします。
 
@@ -149,4 +149,4 @@ Cron ジョブには、[ 監視者 ](https://developer.adobe.com/commerce/php/de
 ...
 ```
 
-現在、`visitor_clean` cron ジョブは、2 月 30 日の 00:00 に実行するように設定されています。この日付は、実行されません。
+現在、`visitor_clean` cron ジョブは、2 月 30 日（PT）の 00:00 に実行するように設定されています。この日には実行されません。

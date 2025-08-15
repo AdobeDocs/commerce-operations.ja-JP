@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Adobe Commerceをインストールする前に、次の作業を行う必要があります。
 
-* 「*Commerce オンプレミス [」タブに表示されている ](../system-requirements.md) システム要件* を満たす 1 つ以上のホストを設定します。
+* 「[Commerce オンプレミス ](../system-requirements.md)」タブに表示されている *システム要件* を満たす 1 つ以上のホストを設定します。
 * ロードバランシングを使用して複数の web ノードを設定する場合は、システムのその部分を設定およびテストしてから _アプリケーションをインストール_ ます。
 * 問題が発生した場合にロールバックできるように、インストール中の様々な時点でシステム全体をバックアップできることを確認してください。
 
@@ -66,11 +66,11 @@ Apache をインストールまたはアップグレードするには、[Apache
 
 ### PHP
 
-PHP のサポート対象バージョンの要件については、[&#128279;](../system-requirements.md) system requirements&rbrace; の *Commerce オンプレミス* タブを参照してください。また、PHP の要件については [PHP](../system-requirements.md#php-settings) を参照してください。
+PHP のサポート対象バージョンの要件については、** system requirements} の [Commerce オンプレミス ](../system-requirements.md) タブを参照してください。また、PHP の要件については [PHP](../system-requirements.md#php-settings) を参照してください。
 
 ### MySQL
 
-インストールしているAdobe Commerceのバージョンと互換性のある MySQL のバージョンがあることを確認します。 サポートされているバージョンについては、[ システム要件 ](../system-requirements.md) の「*Commerce オンプレミス*」タブを参照してください。
+インストールしているAdobe Commerceのバージョンと互換性のある MySQL のバージョンがあることを確認します。 サポートされているバージョンについては、*システム要件* の「[Commerce オンプレミス ](../system-requirements.md)」タブを参照してください。
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -98,7 +98,7 @@ owners.
 
 `help` または `\h` と入力してヘルプを表示します。 現在の入力文をクリアするには、`\c` と入力します。
 
-`mysql>` プロンプトで `exit` と入力して終了します。
+`exit` プロンプトで `mysql>` と入力して終了します。
 
 MySQL をインストールまたはアップグレードするには、[MySQL](database/mysql.md) を参照してください。
 

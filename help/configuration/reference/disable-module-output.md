@@ -38,7 +38,7 @@ Commerce アプリケーションの複数のインスタンスを含む、パ�
 ### `Backend` module `config.xml` ファイルを編集します。
 
 1. 元の `config.xml` ファイルをアーカイブします。
-1. `<default>` 要素の直下に、`<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml` ファイルに次のような行を追加します。
+1. `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml` 要素の直下に、`<default>` ファイルに次のような行を追加します。
 
    ```xml
    <advanced>

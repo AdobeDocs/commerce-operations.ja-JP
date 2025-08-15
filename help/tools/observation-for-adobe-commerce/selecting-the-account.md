@@ -1,5 +1,5 @@
 ---
-title: '次を使用：アカウントと期間の選択'
+title: 使用を開始：アカウントと期間の選択
 description: アカウントと期間を選択して  [!DNL Observation for Adobe Commerce] nerdlet の使用を開始する方法を説明します。
 exl-id: f2364fa4-ef83-42f2-992f-e37ff1ac96a1
 feature: Configuration, Observability

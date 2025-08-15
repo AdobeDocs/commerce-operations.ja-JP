@@ -28,7 +28,7 @@ ACSD-63992 パッチは、クーポンの [!UICONTROL Cart Price Rule] と発送
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -40,8 +40,8 @@ _&lt;> クーポン コードが無効です。 コードを確認して、も�
 
 1. 買い物かご価格ルールを作成し、その条件を説明します。
    * *[!UICONTROL Conditions]* の下：発送方法を含めるための条件（例：*[!UICONTROL Flat Rate]*）を追加します。
-   * *[!UICONTROL Rule Information]* の下で、**[!UICONTROL Coupon]** を *[!UICONTROL Specific Coupon]* に設定し、*TEST* として **[!UICONTROL Coupon Code]** と入力します。
-1. Admin Panel から新しい注文を作成し、「**[!UICONTROL Apply Coupon]**」フィールドにクーポンコード *TEST* を入力します。
+   * *[!UICONTROL Rule Information]* の下で、**[!UICONTROL Coupon]** を *[!UICONTROL Specific Coupon]* に設定し、**[!UICONTROL Coupon Code]** TEST *として* と入力します。
+1. Admin Panel から新しい注文を作成し、「*」フィールドにクーポンコード* TEST **[!UICONTROL Apply Coupon]** を入力します。
 
 <u> 期待される結果 </u>:
 
@@ -59,8 +59,8 @@ _&lt;> クーポン コードが無効です。 コードを確認して、も�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 

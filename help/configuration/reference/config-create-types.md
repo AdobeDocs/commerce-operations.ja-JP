@@ -48,7 +48,7 @@ ht-degree: 0%
 1. XML ファイルを作成します。
 1. `di.xml` で設定オブジェクトを定義します。
 
-   次の例は、Configuration_Sales モジュールの [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) から、Magentoオブジェクトがどのように表示されるかを示しています。
+   次のMagento_Sales モジュールの [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) の例は、設定オブジェクトがどのように表示されるかを示しています。
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
@@ -76,7 +76,7 @@ ht-degree: 0%
    </config>
    ```
 
-   - 1 つ目のタイプノードは、Readerのファイル名、関連付けられた `Converter` および `SchemaLocator` クラスを設定します。
+   - 最初のタイプノードでは、Readerのファイル名、関連付けられた `Converter` および `SchemaLocator` クラスを設定します。
    - 次に、`pdfConfigDataStorage` 仮想タイプノードは、リーダークラスを [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php) のインスタンスにアタッチします。
    - 最後に、設定データの仮想タイプを最後のタイプノードで [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) クラスに添付します。このクラスは、これらの [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml) ファイルから実際にの値を読み取るために使用されます。
 
@@ -115,7 +115,7 @@ class Reader extends Filesystem
 
 >[!INFO]
 >
->独自のバージョンのリーダーを作成する場合は、`\Magento\Framework\Config\ReaderInterface` を実装します。 [Config_AnalyticsMagentoリーダーを参照してください ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
+>独自のバージョンのリーダーを作成する場合は、`\Magento\Framework\Config\ReaderInterface` を実装します。 [Magento_Analytics 設定リーダーを参照してください ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
 
 リーダーを定義した後、それを使用して、設定ファイルを収集、結合、検証および内部配列表現に変換します。
 

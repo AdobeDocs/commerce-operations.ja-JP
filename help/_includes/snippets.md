@@ -25,13 +25,13 @@ ht-degree: 0%
 
 >[!TIP]
 >
->`support:backup` コマンドは、`setup:backup` コマンドで実行されるコード バックアップと同じ __ ではない）です。 `support:backup` コマンドは、Adobe Commerce サポートが調査するコードをバックアップすることを目的としています。
+>`support:backup` コマンドは、_コマンドで実行されるコード バックアップと同じ_`setup:backup` ではない）です。 `support:backup` コマンドは、Adobe Commerce サポートが調査するコードをバックアップすることを目的としています。
 
 ## B2B パッチ {#b2b-patches}
 
 >[!NOTE]
 >
->このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントも、互換性のある最新の B2B セキュリティパッチリリースに更新する必要があります。 [B2B リリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/release-notes) を参照してください。
+>このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントも、互換性のある最新の B2B セキュリティパッチリリースに更新する必要があります。 [B2B リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes) を参照してください。
 
 ## Adobe Commerceのみ {#ee-only}
 

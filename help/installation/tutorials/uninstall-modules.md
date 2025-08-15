@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このコマンドは、`composer.json` ファイルで宣言されている依存関係のみを確認します。 `composer.json` ファイルで定義されて _ない_ モジュールをアンインストールする場合、このコマンドは依存関係を確認せずにモジュールをアンインストールします。 ただし、このコマンドはモジュールのコードをファイルシステムから削除 _しません_。 モジュールのコード（例：`rm -rf <path to module>`）を削除するには、ファイルシステムツールを使用する必要があります。 別の方法として、Composer 以外のモジュールを [ 無効 ](manage-modules.md) することもできます。
+>このコマンドは、`composer.json` ファイルで宣言されている依存関係のみを確認します。 _ファイルで定義されて_ ない `composer.json` モジュールをアンインストールする場合、このコマンドは依存関係を確認せずにモジュールをアンインストールします。 ただし、このコマンドはモジュールのコードをファイルシステムから削除 _しません_。 モジュールのコード（例：`rm -rf <path to module>`）を削除するには、ファイルシステムツールを使用する必要があります。 別の方法として、Composer 以外のモジュールを [ 無効 ](manage-modules.md) することもできます。
 
 コマンドの使用法：
 
@@ -50,7 +50,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
 
 1. `--remove-data` が指定されている場合は、モジュールの `Uninstall` クラスで定義されているデータベーススキーマとデータを削除します。
 
-   指定したモジュールをアンインストールするたびに、は `Uninstall` クラスの `uninstall` メソッドを呼び出します。 このクラスは [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php) から継承する必要があります。
+   指定したモジュールをアンインストールするたびに、は `uninstall` クラスの `Uninstall` メソッドを呼び出します。 このクラスは [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php) から継承する必要があります。
 
 1. 指定されたモジュールを `setup_module` データベース テーブルから削除します。
 1. 指定されたモジュールを [ 展開の構成 ](../../configuration/reference/deployment-files.md) のモジュール一覧から削除します。

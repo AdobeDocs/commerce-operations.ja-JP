@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Commerce ソフトウェアのインストール方法に応じて、`<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` ディレクトリまたは `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/` ディレクトリにある CSV ファイルを使用してストップワードを管理する必要があります。
 
-Elasticsearchと OpenSearch でストップワードが使用される仕組みについて詳しくは、次のリソースを参照してください。
+Elasticsearchと OpenSearch でストップワードを使用する方法について詳しくは、次のリソースを参照してください。
 
 - [ ストップワード：パフォーマンスと精度の比較 ](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
 - [ ストップワードの長所と短所 ](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
@@ -63,7 +63,7 @@ Elasticsearchと OpenSearch でストップワードが使用される仕組み�
 
 1. Commerce サーバーにログインするか、[ ファイルシステムのオーナー ](../../installation/prerequisites/file-system/overview.md) に切り替えます。
 
-1. テキストエディターを使用して、`<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` ディレクトリに `stopwords_<locale_code>.csv` というストップワードファイルを作成します。
+1. テキストエディターを使用して、`stopwords_<locale_code>.csv` ディレクトリに `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` というストップワードファイルを作成します。
 
    例えば、イタリア語ロケールのストップワードを作成するには、ファイルに `stopwords_it_IT.csv` という名前を付けます。
 
@@ -106,7 +106,7 @@ Elasticsearchと OpenSearch でストップワードが使用される仕組み�
 
 **ディレクトリを変更するには**:
 
-1. ファイルシステムのオーナーとして、Elasticsearch`di.xml` をテキストエディターで開きます。
+1. ファイルシステムのオーナーとして、Elasticsearch `di.xml` をテキストエディターで開きます。
 
    リポジトリのクローンを作成した場合は、`app/code/Magento/Elasticsearch/etc/di.xml` にあります。
 

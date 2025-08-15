@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## `di.xml` でのカスタムログファイルの設定
 
-この例では、[ 仮想型 ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) を使用して、標準の `/var/log/debug.log` ではなくカスタムログファイルにメッセージ `debug` ログする方法を示します。
+この例では、[ 仮想型 ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) を使用して、標準の `debug` ではなくカスタムログファイルにメッセージ `/var/log/debug.log` ログする方法を示します。
 
 1. モジュールの `di.xml` ファイルで、カスタムログファイルを [ 仮想タイプ ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) として定義します。
 
@@ -44,9 +44,9 @@ ht-degree: 0%
    </virtualType>
    ```
 
-   `Magento\Payment\Model\Method\MyCustomDebug` の `name` 値は一意である必要があります。
+   `name` の `Magento\Payment\Model\Method\MyCustomDebug` 値は一意である必要があります。
 
-1. 一意の `name` を使用して、別の [ 仮想タイプ ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) でハンドラーを定義します。
+1. 一意の [ を使用して、別の ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 仮想タイプ `name` でハンドラーを定義します。
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -58,7 +58,7 @@ ht-degree: 0%
    </virtualType>
    ```
 
-1. `Magento\Payment\Model\Method\Logger` オブジェクトに `MyCustomLogger` [ 仮想型 ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) を挿入します。
+1. `MyCustomLogger` オブジェクトに [ ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 仮想型 `Magento\Payment\Model\Method\Logger` を挿入します。
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -68,7 +68,7 @@ ht-degree: 0%
    </type>
    ```
 
-1. 仮想クラス `Magento\Payment\Model\Method\MyCustomDebug` は、`Magento\Payment\Model\Method\Logger` クラスの `$logger` プロパティの `debug` ハンドラーに挿入されます。
+1. 仮想クラス `Magento\Payment\Model\Method\MyCustomDebug` は、`debug` クラスの `$logger` プロパティの `Magento\Payment\Model\Method\Logger` ハンドラーに挿入されます。
 
    ```xml
    ...
@@ -117,7 +117,7 @@ ht-degree: 0%
    }
    ```
 
-1. モジュールの `di.xml` ファイルで、このクラスのハンドラーを [ 仮想型 ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) として定義します。
+1. モジュールの [ ファイルで、このクラスのハンドラーを ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 仮想型 `di.xml` として定義します。
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -193,7 +193,7 @@ ht-degree: 0%
    }
    ```
 
-1. クラス `Vendor\ModuleName\Logger\Handler\ErrorHandler` は、`Vendor\ModuleName\Observer\MyObserver` の `$logger` プロパティの `error` ハンドラーに挿入されます。
+1. クラス `Vendor\ModuleName\Logger\Handler\ErrorHandler` は、`error` の `$logger` プロパティの `Vendor\ModuleName\Observer\MyObserver` ハンドラーに挿入されます。
 
    ```xml
    ...

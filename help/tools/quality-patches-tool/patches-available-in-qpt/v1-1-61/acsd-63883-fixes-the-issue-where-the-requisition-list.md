@@ -1,5 +1,5 @@
 ---
-title: ACSD-63883:[!UICONTROL Requisition List] に対する応答で間違った「items_count」  [!DNL GraphQL]  修正
+title: 'ACSD-63883: [!DNL GraphQL]  に対する応答で間違った「items_count」 [!UICONTROL Requisition List] 修正'
 description: ACSD-63883 パッチを適用して、[!UICONTROL Requisition List] が応答で誤った「items_count」を返す問題を修正し  [!DNL GraphQL]  ください。
 feature: B2B, GraphQL
 role: Admin, Developer
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-63883:[!UICONTROL Requisition List] に対する応答で誤った `items_count` ータ [!DNL GraphQL] 修正
+# ACSD-63883:`items_count` に対する応答で誤った [!DNL GraphQL] ータ [!UICONTROL Requisition List] 修正
 
-ACSD-63883 パッチは、**[!UICONTROL Requisition List]** が [!DNL GraphQL] 応答で誤った `items_count` を返す問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 がインストールされている場合に使用できます。 パッチ ID は ACSD-63883 です。 この問題はAdobe Commerce B2B 1.5.3 で修正される予定であることに注意してください。
+ACSD-63883 パッチは、**[!UICONTROL Requisition List]** が `items_count` 応答で誤った [!DNL GraphQL] を返す問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 がインストールされている場合に使用できます。 パッチ ID は ACSD-63883 です。 この問題はAdobe Commerce B2B 1.5.3 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -28,11 +28,11 @@ ACSD-63883 パッチは、**[!UICONTROL Requisition List]** が [!DNL GraphQL] �
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-[!DNL GraphQL] 応答で **[!UICONTROL Requisition List]** が誤った `items_count` を返します。
+**[!UICONTROL Requisition List]** 応答で `items_count` が誤った [!DNL GraphQL] を返します。
 
 
 <u> 再現手順 </u>:
@@ -73,8 +73,8 @@ ACSD-63883 パッチは、**[!UICONTROL Requisition List]** が [!DNL GraphQL] �
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 
 ## 関連資料

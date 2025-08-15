@@ -32,6 +32,6 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 
 その後、Admin またはコマンドラインでCommerceのキャッシュ（「キャッシュのクリーニング _とも呼ばれます）を更新すると_ すべての Varnish ホストをパージできます。
 
-管理者を使用してキャッシュを更新するには、**SYSTEM**/ツール/**Cache Management** をクリックし、ページ上部の **Magentoキャッシュをフラッシュ** をクリックします。 （個々のキャッシュタイプを更新することもできます）。
+管理者を使用してキャッシュを更新するには、**SYSTEM**/ツール/**Cache Management** をクリックし、ページ上部の **Magento キャッシュをフラッシュ** をクリックします。 （個々のキャッシュタイプを更新することもできます）。
 
 cli から複数の Varnish インスタンスのキャッシュを更新するには、[`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) コマンドを [ ファイル・システムの所有者 ](../../installation/prerequisites/file-system/overview.md) として使用します。

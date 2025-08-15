@@ -20,7 +20,7 @@ ht-degree: 0%
    - [Redis](config-redis.md)
    - ファイルシステム（デフォルト）: デフォルトのファイルシステムキャッシュを使用するための設定は必要ありません。
 
-- [!DNL Commerce] 設定を変更せずに [ ワニス ](config-varnish.md) を設定します。
+- [ 設定を変更せずに ](config-varnish.md) ワニス [!DNL Commerce] を設定します。
 
 ## キャッシュの用語
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 - 独自のカスタムキャッシュフロントエンドの設定 – 
 
-  `di.xml` ファイル内の同等の設定を上書きするので、`<magento_root>/app/etc/env.php` ファイルのみを変更します。
+  `<magento_root>/app/etc/env.php` ファイル内の同等の設定を上書きするので、`di.xml` ファイルのみを変更します。
 
 >[!TIP]
 >

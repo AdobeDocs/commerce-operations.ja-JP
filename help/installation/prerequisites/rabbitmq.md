@@ -49,7 +49,7 @@ sudo apt install -y rabbitmq-server
 
 詳しくは、[ 手動インストール ](https://www.erlang-solutions.com/downloads/) を参照してください。
 
-正しいバージョンをインストールするには [&#128279;](https://www.rabbitmq.com/which-erlang.html) [!DNL RabbitMQ]/Erlang のバージョンマトリックスを参照してください。
+正しいバージョンをインストールするには [[!DNL RabbitMQ]](https://www.rabbitmq.com/which-erlang.html)/Erlang のバージョンマトリックスを参照してください。
 
 ### [!DNL RabbitMQ] のインストール
 
@@ -90,7 +90,7 @@ Adobe Commerce _after_ をインストールする場合は、インストール
 
 ## Connect [!DNL RabbitMQ]
 
-既にAdobe Commerceをインストールしていて、それを [!DNL RabbitMQ] に接続する場合は、`<install_directory>/app/etc/env.php` ファイルに次のような `queue` セクションを追加します。
+既にAdobe Commerceをインストールしていて、それを [!DNL RabbitMQ] に接続する場合は、`queue` ファイルに次のような `<install_directory>/app/etc/env.php` セクションを追加します。
 
 ```php
 'queue' =>
@@ -106,7 +106,7 @@ Adobe Commerce _after_ をインストールする場合は、インストール
   ),
 ```
 
-`bin/magento setup:config:set` のコマンドを使用 [!DNL RabbitMQ] て、設定値を設定することもできます。
+[!DNL RabbitMQ] のコマンドを使用 `bin/magento setup:config:set` て、設定値を設定することもできます。
 
 ```bash
 bin/magento setup:config:set --amqp-host="rabbitmq.example.com" --amqp-port="11213" --amqp-user="magento" --amqp-password="magento" --amqp-virtualhost="/"
@@ -116,7 +116,7 @@ bin/magento setup:config:set --amqp-host="rabbitmq.example.com" --amqp-port="112
 
 ## SSL を設定
 
-SSL のサポートを設定するには、`<install_directory>/app/etc/env.php` ファイルの `ssl` パラメーターと `ssl_options` パラメーターを次のように編集します。
+SSL のサポートを設定するには、`ssl` ファイルの `ssl_options` パラメーターと `<install_directory>/app/etc/env.php` パラメーターを次のように編集します。
 
 ```php
 'queue' =>

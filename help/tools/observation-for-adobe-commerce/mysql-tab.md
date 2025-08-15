@@ -1,6 +1,6 @@
 ---
 title: 「[!UICONTROL MySQL]」タブ
-description: ' [!DNL Observation for Adobe Commerce] の「[!UICONTROL MySQL]」タブについて説明します。'
+description: '[!UICONTROL MySQL] の「 [!DNL Observation for Adobe Commerce]」タブについて説明します。'
 exl-id: 1d8dd07c-15fd-4ffd-ad10-0d886bf1579e
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ![ ノード別の MySQL% 空きストレージ ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)
 
-多くの問題は、MySQL が MySQL に割り当てられたストレージのストレージを使い果たしたこと（MySQL の設定 `datadir` は、デフォルトは `/data/mysql`）、または `tmpdir` の領域が不足していることが原因です。 デフォルトの `tmpdir` （MySQL 設定）は `/tmp` です。 **[!UICONTROL MySQL% free storage by node]** フレームは、`/, /tmp` （個別のマウントとして定義されている場合）と空きストレージの `/data/mysql` の割合を調べます。 MySQL バージョン 5.7 （MariaDB バージョン 10.2）以降では、非圧縮 `tmp` テーブルはファイルの `/data/mysql` ディレクトリ（ibtmp1）の `tmp` テーブルスペースに書き込まれます。 このファイルは、デフォルトで無制限に自動的に展開されます。 テーブルスペースであるため、サイズが減少せず、MySQL の再起動時に 12 MB にリセットされます。
+多くの問題は、MySQL が MySQL に割り当てられたストレージのストレージを使い果たしたこと（MySQL の設定 `datadir` は、デフォルトは `/data/mysql`）、または `tmpdir` の領域が不足していることが原因です。 デフォルトの `tmpdir` （MySQL 設定）は `/tmp` です。 **[!UICONTROL MySQL% free storage by node]** フレームは、`/, /tmp` （個別のマウントとして定義されている場合）と空きストレージの `/data/mysql` の割合を調べます。 MySQL バージョン 5.7 （MariaDB バージョン 10.2）以降では、非圧縮 `tmp` テーブルはファイルの `tmp` ディレクトリ（ibtmp1）の `/data/mysql` テーブルスペースに書き込まれます。 このファイルは、デフォルトで無制限に自動的に展開されます。 テーブルスペースであるため、サイズが減少せず、MySQL の再起動時に 12 MB にリセットされます。
 
 ## [!UICONTROL MySQL Connections by Node]
 
@@ -125,7 +125,7 @@ FOR UPDATE と一緒に使用すると、`SELECT` ステートメントでもロ
 **[!UICONTROL Deadlocks]** フレームでは、MySQL ログから解析された次の文字列を確認します。
 
 * &#39;%PHP 致命的なエラー：メモリサイズが %&#39;）を php_mem_error として使用できます
-* &#39;%get lock; トランザクションを再起動してみてください。クエリは次のとおりです：DELETEFROM \&#39;cron_schedule%&#39;）を cron_sched_lock_del として指定します
+* &#39;%get lock; トランザクションを再起動してください。クエリは次のとおりです：DELETE FROM \&#39;cron_schedule%&#39;）を cron_sched_lock_del として指定します。
 * cron ジョブの「% ロック : indexer_reindex_all_invalid%」） as &#39;lock_indexer_reindex_all_invalid%&#39;
 * cron ジョブの「% lock : cron_schedule%」） as &#39;lock_cron_schedule&#39;
 * &#39;% lock for cron job:%&#39;） as &#39;total_cron_lock&#39;
@@ -227,7 +227,7 @@ FOR UPDATE と一緒に使用すると、`SELECT` ステートメントでもロ
 * &#39;%SQLSTATE[HY000]：一般エラー：2014%&#39;）を&#39;sql_2014&#39;として返します
 * &#39;%1927 接続が切断されました %&#39;）を&#39;sql_1927&#39;として使用しました
 * &#39;%1062 \[ERROR\] InnoDB:%&#39;）を&#39;sql_1062_e&#39;として使用します
-* &grave;&grave;%[ 注意 ] WSREP: ディスクへのメモリマップをフラッシュしています…%&#39;）を`mem_map_flush`として使用します
+* ``%[ 注意 ] WSREP: ディスクへのメモリマップをフラッシュしています…%&#39;）を`mem_map_flush`として使用します
 * &#39;% 内部 MariaDB エラーコード：1146%&#39;）を&#39;sql_1146&#39;として返します
 * &#39;%Internal MariaDB エラーコード：1062%&#39;）は&#39;sql_1062&#39; * &#39;%1062 [ 警告 ]InnoDB:%&#39;）は&#39;sql_1062_w&#39;です
 * &#39;% 内部 MariaDB エラーコード：1064%&#39;）を&#39;sql_1064&#39;として返します

@@ -33,8 +33,8 @@ bin/magento queue:consumers:start [--max-messages=<value>] [--batch-size=<value>
 bin/magento queue:consumers:start <consumer_name> &
 ```
 
-コマンドのオプション、パラメーター、値について詳しくは、_コマンドラインツールリファレンス_ のCommerceの節の [`queue:consumers:start`](../../tools/reference/commerce-on-premises.md#queueconsumersstart) を参照してください。
+コマンドのオプション、パラメーター、値について詳しくは、[`queue:consumers:start`](../../tools/reference/commerce-on-premises.md#queueconsumersstart) コマンドラインツールリファレンス _のCommerceの節の_ を参照してください。
 
 >[!INFO]
 >
->`queue:consumers:start` コマンドには `--multi-process` オプションがありますが、並列プロセスでコンシューマーを実行するには、`/app/etc/env.php` で [`multiple_processes`](../queues/manage-message-queues.md#configuration) オプションを設定します。 それ以外の場合、`--multi-process` オプションを指定して `queue:consumers:start` を呼び出すと、単一のスレッドでのみ動作します。
+>`--multi-process` コマンドには `queue:consumers:start` オプションがありますが、並列プロセスでコンシューマーを実行するには、[`multiple_processes`](../queues/manage-message-queues.md#configuration) で `/app/etc/env.php` オプションを設定します。 それ以外の場合、`queue:consumers:start` オプションを指定して `--multi-process` を呼び出すと、単一のスレッドでのみ動作します。

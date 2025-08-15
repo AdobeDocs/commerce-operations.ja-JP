@@ -3,22 +3,22 @@ title: Adobe Commerceの管理アラート
 description: Adobe Commerce on cloud infrastructure Pro プランアーキテクチャをご利用のお客様は、管理アラートを使用してサイトの正常性を把握できます。 クラウドインフラストラクチャー上のAdobe Commerce スタータープランアーキテクチャをご利用のお客様は、 [!DNL Apdex]  およびエラー率の条件に関するアラートのみを受け取ることができます。
 feature: Observability, Support, Tools and External Services
 role: Admin
-source-git-commit: efb58b920a9b72ac96bbd28aaae6210ede84e24f
+exl-id: 3fc4b07f-4e27-4833-97a9-cf9741ae5648
+source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
 
-
 # Adobe Commerceの管理アラート
 
 
-重要なダッシュボードとアラートを設定し、サイトが重要なストレージと [!DNL Apdex] ータレベル（アプリケーションとサービスの応答時間に対するユーザーの満足度）に達している時期を把握できるようにします。 これは、応答時間の遅延や停止に気づく前にアクションを実行するのに役立ちます。 以下に示す記事を使用して、アラートのトラブルシューティングを行うことができます。 アラートを使用する前に、まず通知チャネルを設定します。 Commerce on Cloud ガイドの [[!DNL New Relic]  通知チャネルの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) を参照してください。
+重要なダッシュボードとアラートを設定し、サイトが重要なストレージと [!DNL Apdex] ータレベル（アプリケーションとサービスの応答時間に対するユーザーの満足度）に達している時期を把握できるようにします。 これは、応答時間の遅延や停止に気づく前にアクションを実行するのに役立ちます。 以下に示す記事を使用して、アラートのトラブルシューティングを行うことができます。 アラートを使用する前に、まず通知チャネルを設定します。 Commerce on Cloud ガイドの [[!DNL New Relic]  通知チャネルの設定 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) を参照してください。
 
 >[!NOTE]
 >
->Adobe Commerceのアラートポリシーの管理アラートが使用できない場合は、このアカウントが新しく作成されたか、最近設定されたこ [!DNL New Relic] が原因である可能性があります。 これらのアカウントにアラート・ポリシーを追加するプロセスは、毎週火曜日に実行されます。 次のプロセスを実行した翌日に、アラート・ポリシーを使用できるようになります。 ポリシーがまだ見つからない場合は、[Adobe Commerce サポートリクエストを送信 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) し、プロジェクト ID を含めます。
+>Adobe Commerceのアラートポリシーの管理アラートが使用できない場合は、このアカウントが新しく作成されたか、最近設定されたこ [!DNL New Relic] が原因である可能性があります。 これらのアカウントにアラート・ポリシーを追加するプロセスは、毎週火曜日に実行されます。 次のプロセスを実行した翌日に、アラート・ポリシーを使用できるようになります。 ポリシーがまだ見つからない場合は、[Adobe Commerce サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) し、プロジェクト ID を含めます。
 
 これらのアラートのトラブルシューティング手順を示すナレッジベース記事へのリンクについては、以下の表を参照してください。
 

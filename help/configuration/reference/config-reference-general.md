@@ -72,9 +72,9 @@ ht-degree: 0%
 | 安全でない要求のアップグレード | `web/secure/enable_upgrade_insecure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | オフローダーヘッダー | `web/secure/offloader_header` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | CMS ホームページ | `web/default/cms_home_page` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| CMS ルートなしページ | `web/default/cms_no_route` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| CMS No Cookies ページ | `web/default/cms_no_cookies` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| CMS ページのパンくずリストを表示 | `web/default/show_cms_breadcrumbs` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 「CMSルートなし」ページ | `web/default/cms_no_route` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| CMSの Cookie 禁止ページ | `web/default/cms_no_cookies` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| CMSページのパンくずリストを表示 | `web/default/show_cms_breadcrumbs` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Cookie の有効期間 | `web/cookie/cookie_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | HTTP のみを使用 | `web/cookie/cookie_httponly` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Cookie 制限モード | `web/cookie/cookie_restriction` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -83,7 +83,7 @@ ht-degree: 0%
 | HTTP_X_FORWARDED_FOR を検証 | `web/session/use_http_x_forwarded_for` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Http_USER_AGENT を検証する | `web/session/use_http_user_agent` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ストアフロントで SID を使用 | `web/session/use_frontend_sid` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Cookie が無効の場合は CMS ページにリダイレクト | `web/browser_capabilities/cookies` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Cookie が無効の場合はCMSページにリダイレクト | `web/browser_capabilities/cookies` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | JavaScriptが無効の場合に通知を表示 | `web/browser_capabilities/javascript` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ローカルストレージが無効の場合に通知を表示 | `web/browser_capabilities/local_storage` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
@@ -144,8 +144,8 @@ ht-degree: 0%
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|
-| WYSIWYG エディターの有効化 | `cms/wysiwyg/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| カタログ用 WYSIWYG でのメディアコンテンツの静的 URL の使用 | `cms/wysiwyg/use_static_urls_in_catalog` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| WYSIWYG Editor の有効化 | `cms/wysiwyg/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| カタログ用のWYSIWYGにおけるメディアコンテンツの静的 URL の使用 | `cms/wysiwyg/use_static_urls_in_catalog` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 階層機能を有効にする | `cms/hierarchy/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 階層メタデータの有効化 | `cms/hierarchy/metadata_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 階層メニューの既定のレイアウト | `cms/hierarchy/menu_layout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -154,7 +154,7 @@ ht-degree: 0%
 
 ### New Relic レポートのパス
 
-これらの設定値は、管理者の **ストア**/設定/**設定**/**一般**/6&rbrace;New Relic レポート **で利用できます。**
+これらの設定値は、管理者の **ストア**/設定/**設定**/**一般**/6}New Relic レポート **で利用できます。**
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|

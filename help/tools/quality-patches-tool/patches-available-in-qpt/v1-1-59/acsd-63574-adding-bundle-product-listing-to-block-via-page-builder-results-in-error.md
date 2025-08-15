@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-63574:[!DNL Page Builder] を使用してブロックに [!UICONTROL Bundle Product] リストを追加すると、エラーが発生する
+# ACSD-63574:[!UICONTROL Bundle Product] を使用してブロックに [!DNL Page Builder] リストを追加すると、エラーが発生する
 
-ACSD-63574 パッチは、[!DNL Page Builder] を使用して `Checkbox` オプションまたは `Multi Select` オプションの **[!UICONTROL Bundle Product]** をブロックに追加すると、エラーが発生する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 がインストールされている場合に使用できます。 パッチ ID は ACSD-63574 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-63574 パッチは、**[!UICONTROL Bundle Product]** を使用して `Checkbox` オプションまたは `Multi Select` オプションの [!DNL Page Builder] をブロックに追加すると、エラーが発生する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 がインストールされている場合に使用できます。 パッチ ID は ACSD-63574 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -28,11 +28,11 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.4-p11
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-[!DNL Page Builder] を使用してブロックに **[!UICONTROL Bundle Product]** を追加すると、製品ウィジェットのプレビューが壊れ、エラーメッセージ *このコンテンツの生成中にエラーが発生しました* が表示されます。 この問題は、バンドル製品に `Checkbox` または `Multi Select` のオプションタイプが含まれ、`indexer dimension mode` が `website_and_customer_group` に設定されている場合に特に発生します。 例外ログには、次のエラーが表示されます。
+**[!UICONTROL Bundle Product]** を使用してブロックに [!DNL Page Builder] を追加すると、製品ウィジェットのプレビューが壊れ、エラーメッセージ *このコンテンツの生成中にエラーが発生しました* が表示されます。 この問題は、バンドル製品に `Checkbox` または `Multi Select` のオプションタイプが含まれ、`indexer dimension mode` が `website_and_customer_group` に設定されている場合に特に発生します。 例外ログには、次のエラーが表示されます。
 
     ```
     report.CRITICAL: PDOException: SQLSTATE[42S02]：ベース テーブルまたはビューが見つかりません：1146 テーブル &#39;db_name.catalog_product_index_price_cg0_ws0&#39;が/home/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:90
@@ -47,7 +47,7 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.4-p11
 
    `bin/magento indexer:set-dimensions-mode catalog_product_price website_and_customer_group`
 
-1. バンドルオプションタイプ `Checkbox` または `Multi Select` の **[!UICONTROL Bundle Product]** を作成し、製品をカテゴリに割り当てます。
+1. バンドルオプションタイプ **[!UICONTROL Bundle Product]** または `Checkbox` の `Multi Select` を作成し、製品をカテゴリに割り当てます。
 1. **[!UICONTROL Content]**/**[!UICONTROL Blocks]**/**[!UICONTROL Edit Content with Page Builder]** に移動します。
 1. 作成した商品が割り当てられているカテゴリを選択し、**[!UICONTROL Save]** 試行します。
 
@@ -57,15 +57,15 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.4-p11
 
 <u> 実際の結果 </u>:
 
-**[!UICONTROL Bundle Product]** オプションの種類が `Checkbox` または `Multi Select` で、`indexer dimension mode` が `website_and_customer_group` に設定されている場合、[!DNL Page Builder] 経由で製品を追加できない。 次のエラーがスローされます。*申し訳ありません。このコンテンツの生成中にエラーが発生しました*。
+[!DNL Page Builder] オプションの種類が **[!UICONTROL Bundle Product]** または `Checkbox` で、`Multi Select` が `indexer dimension mode` に設定されている場合、`website_and_customer_group` 経由で製品を追加できない。 次のエラーがスローされます。*申し訳ありません。このコンテンツの生成中にエラーが発生しました*。
 
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 
 ## 関連資料

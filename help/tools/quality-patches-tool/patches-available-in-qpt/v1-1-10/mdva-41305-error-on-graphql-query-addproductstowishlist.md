@@ -1,6 +1,6 @@
 ---
 title: MDVA-41305：設定可能な商品に対するGraphQL Query addProductsToWishlist のエラー
-description: MDVA-41305 パッチを適用すると、設定可能な商品に対してGraphQL クエリ「addProductsToWishlist」でエラーが発生する問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.10 がインストールされている場合に利用できます。 パッチ ID は MDVA-41305。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+description: MDVA-41305 パッチを適用すると、設定可能な商品に対してGraphQL クエリ「addProductsToWishlist」でエラーが発生する問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.10 がインストールされている場合に利用できます。 パッチ ID は MDVA-41305。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
 feature: GraphQL, Configuration, Products
 role: Admin
 exl-id: 985c3c46-d2c8-4479-b9e4-e5f9504ab03b
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # MDVA-41305：設定可能な商品に対するGraphQL Query addProductsToWishlist のエラー
 
-MDVA-41305 パッチを適用すると、設定可能な商品に対するGraphQLのクエリ `addProductsToWishlist` でエラーが発生する問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.10 がインストールされている場合に使用できます。 パッチ ID は MDVA-41305。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+MDVA-41305 パッチを適用すると、設定可能な商品に対するGraphQLのクエリ `addProductsToWishlist` でエラーが発生する問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.10 がインストールされている場合に使用できます。 パッチ ID は MDVA-41305。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -28,7 +28,7 @@ MDVA-41305 パッチを適用すると、設定可能な商品に対するGraphQ
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -42,11 +42,11 @@ MDVA-41305 パッチを適用すると、設定可能な商品に対するGraphQ
 
    <pre>
     <code class="language-graphql">
-    mutation &lbrace;
-      generateCustomerToken(email: "", password: "") &lbrace;
+    mutation {
+      generateCustomerToken(email: "", password: "") {
         token
-      &rbrace;
-     &rbrace;
+      }
+     }
      </code>
      </pre>
 
@@ -55,84 +55,84 @@ MDVA-41305 パッチを適用すると、設定可能な商品に対するGraphQ
 
 <pre>
 <code class="language-graphql">
-mutation &lbrace;
+mutation {
  addProductsToWishlist(
    wishlistId: 1
-   wishlistItems: &lbrack;
-     &lbrace;
+   wishlistItems: [
+     {
        sku: "conf2"
-       selected_options: &lbrack;
+       selected_options: [
             "Y29uZmlndXJhYmxlLzkzLzUw"
-       &rbrack;
+       ]
        quantity: 1
-       entered_options: &lbrack;
-         &lbrace;
+       entered_options: [
+         {
            uid: "Y3VzdG9tLW9wdGlvbi8x"
            value: "test"
-         &rbrace;
-       &rbrack;
-     &rbrace;
-    &rbrack;
-  ) &lbrace;
-    wishlist &lbrace;
+         }
+       ]
+     }
+    ]
+  ) {
+    wishlist {
       id
       items_count
-      items_v2 (currentPage: 1, pageSize: 8 ) &lbrace;
-        items &lbrace;
+      items_v2 (currentPage: 1, pageSize: 8 ) {
+        items {
          id
          quantity
-         ... on ConfigurableWishlistItem  &lbrace;
+         ... on ConfigurableWishlistItem  {
            child_sku
-           customizable_options &lbrace;
+           customizable_options {
              customizable_option_uid
-           &rbrace;
-         &rbrace;
-         product &lbrace;
+           }
+         }
+         product {
            uid
            name
            sku
            options_container
-           ... on CustomizableProductInterface &lbrace;
-             options &lbrace;
+           ... on CustomizableProductInterface {
+             options {
               title
               required
               sort_order
               option_id
-              ... on CustomizableFieldOption &lbrace;
-                value &lbrace;
+              ... on CustomizableFieldOption {
+                value {
                   uid
                   sku
                   price
                   price_type
                   max_characters
-                &rbrace;
-              &rbrace;
-            &rbrace;
-          &rbrace;
-          price_range &lbrace;
-            minimum_price &lbrace;
-              regular_price &lbrace;
+                }
+              }
+            }
+          }
+          price_range {
+            minimum_price {
+              regular_price {
                 currency
                 value
-              &rbrace;
-            &rbrace;
-            maximum_price &lbrace;
-               regular_price &lbrace;
+              }
+            }
+            maximum_price {
+               regular_price {
                  currency
                  value
-               &rbrace;
-             &rbrace;
-           &rbrace;
-         &rbrace;
-       &rbrace;
-     &rbrace;
-   &rbrace;
-  user_errors &lbrace;
+               }
+             }
+           }
+         }
+       }
+     }
+   }
+  user_errors {
     code
     message
-   &rbrace;
- &rbrace;
-&rbrace;
+   }
+ }
+}
 </code>
 </pre>
 
@@ -148,14 +148,14 @@ mutation &lbrace;
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
+* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
 * [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
 
-QPT で使用可能なその他のパッチの詳細については、[!DNL Quality Patches Tool] ガイドの「[[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)」を参照してください。
+QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html): Search for patches[!DNL Quality Patches Tool]」を参照してください。

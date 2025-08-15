@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Commerce 2.4.3 以降、オンプレミスのメッセージキューインスタンスの代わりに、Amazon Message Queue （MQ）をクラウド対応として使用できるようになりました。
 
-AWSでメッセージキューを作成するには、_AWS ドキュメントの [Amazon MQ の設定 ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html) を参照してください_。
+AWSでメッセージキューを作成するには、[AWS ドキュメントの ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html)Amazon MQ の設定 _を参照してください_。
 
 ## Commerce for AWS MQ の設定
 
-AWS MQ サービスに接続するには、`env.php` ファイルで `queue.amqp` オブジェクトを設定します。
+AWS MQ サービスに接続するには、`queue.amqp` ファイルで `env.php` オブジェクトを設定します。
 AWS Message Queue には SSL/TLS 接続が必要です。
 
 ```php

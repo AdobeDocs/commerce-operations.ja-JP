@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # 安全な Web サーバー通信
 
-ここでは、Transport Layer Security （TLS）暗号化と [HTTP 基本認証 ](https://datatracker.ietf.org/doc/html/rfc2617) を組み合わせて、web サーバーと検索エンジン（Elasticsearchまたは OpenSearch）間の通信を保護する例について説明します。 オプションで、その他のタイプの認証も設定できます。この情報の参照を提供しています。
+ここでは、Transport Layer Security （TLS）暗号化と [HTTP 基本認証 ](https://datatracker.ietf.org/doc/html/rfc2617) の組み合わせを使用して、web サーバーと検索エンジン（Elasticsearchまたは OpenSearch）間の通信を保護する例について説明します。 オプションで、その他のタイプの認証も設定できます。この情報の参照を提供しています。
 
 （古い用語である Secure Sockets Layer （SSL）は、多くの場合、TLS と同じ意味で使用されます。 このトピックでは、*TLS*）を参照します。
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >特に明記されていない限り、このトピックのすべてのコマンドは、`root` 権限を持つユーザーとして入力する必要があります。
 
-## Recommendations
+## 推奨事項
 
 以下をお勧めします。
 

@@ -1,6 +1,6 @@
 ---
 title: 移行の概要
-description: ' [!DNL Data Migration Tool] を使用して、Magento 1 からMagento 2 へのデータの移行を開始する方法を説明します。'
+description: ' [!DNL Data Migration Tool] を使用してMagento 1 からMagento 2 へのデータ移行を開始する方法を説明します。'
 exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 移行プロセス中は、移行を正しく実行するために次の一般的なルールに従います。
 
-1. **注文の管理** 配送、請求書の作成、クレジット・メモ）を除き、Magento1 管理者に変更を加えないでください。
-1. コードを変更しない **&#x200B;**
-1. **しない**、Magento 2 管理およびストアフロントで変更を行います。
+1. **注** 管理（配送、請求書の作成、およびクレジット メモ）を除き、Magento 1 Admin で変更を行わないでください。
+1. コードを変更しない ****
+1. Magento 2 管理およびストアフロントで変更を加える **しないでください**
 
 >[!TIP]
 >
->Magento 1 のストアフロントでのすべての操作が許可されます。
+>Magento 1 ストアフロントでのすべての操作が許可されています。
 
 ## [!DNL Data Migration Tool] を実行する
 
@@ -44,7 +44,7 @@ ht-degree: 0%
    sudo -u <file system owner>  <command>
    ```
 
-1. 任意のディレクトリからMagentoコマンドを実行するには、`<magento_root>/bin` をシステム `PATH` ードに追加します。
+1. 任意のディレクトリからMagento コマンドを実行するには、`<magento_root>/bin` をシステム `PATH` ードに追加します。
 
    シェルは構文が異なるため、[unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables) などのリファレンスを参照してください。
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
    オプションで、次の方法でコマンドを実行できます。
 
-   - `./magento <command name>` として `cd <magento_root>/bin` び出して実行
+   - `cd <magento_root>/bin` として `./magento <command name>` び出して実行
    - `<magento_root>/bin/magento <command name>`
    - `<magento_root>` は、web サーバーの docroot のサブディレクトリです。
 

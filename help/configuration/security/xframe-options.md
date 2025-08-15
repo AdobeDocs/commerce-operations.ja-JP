@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # クリックジャッキング攻撃の防止
 
-ストアフロントへのリクエストに [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) HTTP リクエストヘッダーを含めることで、[ クリックジャッキング ](https://owasp.org/www-community/attacks/Clickjacking) による悪用を防ぐことができます。
+ストアフロントへのリクエストに [X-Frame-Options](https://owasp.org/www-community/attacks/Clickjacking) HTTP リクエストヘッダーを含めることで、[ クリックジャッキング ](https://datatracker.ietf.org/doc/html/rfc7034) による悪用を防ぐことができます。
 
 `X-Frame-Options` ヘッダーを使用すると、ブラウザーでページを `<frame>`、`<iframe>` または `<object>` でレンダリングできるかどうかを次のように指定できます。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## `X-Frame-Options` の実装
 
-`<project-root>/app/etc/env.php` で `X-Frame-Options` の値を設定します。 デフォルト値は次のように設定されています。
+`X-Frame-Options` で `<project-root>/app/etc/env.php` の値を設定します。 デフォルト値は次のように設定されています。
 
 ```php
 'x-frame-options' => 'SAMEORIGIN',

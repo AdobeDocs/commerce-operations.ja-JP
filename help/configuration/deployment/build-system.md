@@ -124,7 +124,7 @@ Composer をインストールするには：
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   詳しくは [&#128279;](../reference/config-reference-gitignore.md)`.gitignore` リファレンスを参照してください。
+   詳しくは [`.gitignore`](../reference/config-reference-gitignore.md) リファレンスを参照してください。
 
 1. ビルドシステムでは、[ デフォルトモード ](../bootstrap/application-modes.md#default-mode) または [ 開発者モード ](../bootstrap/application-modes.md#developer-mode) を使用する必要があります。
 

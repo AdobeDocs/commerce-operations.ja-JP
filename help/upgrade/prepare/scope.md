@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # アップグレードの範囲を理解する
 
-[ リリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) を確認して、機能強化、バグ修正、サードパーティやカスタムモジュールに影響を与える可能性のある既知の問題など、リリースの範囲を理解します。
+[ リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) を確認して、機能強化、バグ修正、サードパーティやカスタムモジュールに影響を与える可能性のある既知の問題など、リリースの範囲を理解します。
 
 ## 後方互換性のない変更
 
@@ -26,7 +26,7 @@ Adobe Commerce Marketplace の新しい互換性ポリシーにより、リス�
 
 ## カスタムモジュール
 
-アップグレード先のターゲットバージョンと照合して、すべてのカスタムモジュールを確認する必要があります。 これは、アップグレードで最も時間とリソースを消費するプロセスです。 カスタムモジュールを評価する場合、後方互換性のない変更を探し、コントローラの分解などの新しい手法に注意する必要があります。 詳しくは、[ リリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) を参照してください。 また、モジュール開発について [ ベストプラクティス ](https://developer.adobe.com/commerce/php/best-practices/extensions/) に従っていることを確認します。
+アップグレード先のターゲットバージョンと照合して、すべてのカスタムモジュールを確認する必要があります。 これは、アップグレードで最も時間とリソースを消費するプロセスです。 カスタムモジュールを評価する場合、後方互換性のない変更を探し、コントローラの分解などの新しい手法に注意する必要があります。 詳しくは、[ リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) を参照してください。 また、モジュール開発について [ ベストプラクティス ](https://developer.adobe.com/commerce/php/best-practices/extensions/) に従っていることを確認します。
 
 ## [!DNL Upgrade Compatibility Tool]
 

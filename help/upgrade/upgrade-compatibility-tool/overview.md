@@ -25,7 +25,7 @@ ht-degree: 0%
 
 - スタンドアロンの [ コマンドラインインターフェイス ](../upgrade-compatibility-tool/run.md) ツールとして。 使用可能なコマンドの完全なリストについては、[`bin/uct` リファレンスを参照してください ](../../tools/reference/uct.md)。
 - [!DNL Upgrade Compatibility Tool] と [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md) の統合
-- [Magento PHPStorm プラグイン ](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md) 内の実行構成。
+- [Magento PHPStorm プラグイン ](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md) 内の実行設定。
 
 ## ワークフロー
 
@@ -37,23 +37,23 @@ ht-degree: 0%
 
 [!DNL Upgrade Compatibility Tool] について詳しくは、このビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/344385?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/341245?quality=12)
 
 ## [!DNL Upgrade Compatibility Tool] の改善に役立つ
 
 情報が必要な場合や、このガイドで扱われていない質問がある場合は、次のリソースを使用してください。
 
-[!DNL Upgrade Compatibility Tool] チームとつながるには、エンジニアリングSlackチャネル [#upgrade-compatibility-tool](https://magentocommeng.slack.com/archives/C019Y143U9F) でお問い合わせください。 ツールの改善に役立てるため、フィードバック、問題、提案をお聞かせください。
+[!DNL Upgrade Compatibility Tool] チームとつながるには、エンジニアリング Slackのチャネル [#upgrade-compatibility-tool](https://magentocommeng.slack.com/archives/C019Y143U9F) でお問い合わせください。 ツールの改善に役立てるため、フィードバック、問題、提案をお聞かせください。
 
 この [!DNL Upgrade Compatibility Tool] では、アドビの [ コーディング標準 ](https://developer.adobe.com/commerce/php/coding-standards/) 内で定義されたルールを使用して、プロジェクトがAdobe Commerceのベストプラクティスに従っていることを確認し、プロジェクトの改善と拡 [!DNL Upgrade Compatibility Tool] に役立てます。
 
-コーディング標準のコントリビューションの詳細については、[Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing/) を参照してください。
+コーディング標準のコントリビューションの詳細については、[Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing/) のトピックを参照してください。
 
 ## リソース
 
 Adobe Commerceのアップグレードについて理解するには、次のリソースを参照してください。
 
 - [ アップグレードガイド ](../overview.md) では、Adobe Commerceの一般的なアップグレードジャーニーと、そのジャーニーに従うためのベストプラクティスの概要を説明します。
-- [ 今後のリリース ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/schedule) ページには、予定リリースと今後のリリースの日付が表示されます。
+- [ 今後のリリース ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) ページには、予定リリースと今後のリリースの日付が表示されます。
 - [ コミュニティリソース ](https://developer.adobe.com/commerce/contributor/community/) ページでは、ディスカッションを開始したり、詳細情報を検索したりできます。
 - 一般的なアップグレードジャーニーで役に立つツールについては、[ 関連ツール ](../upgrade-compatibility-tool/related-tools.md) ページを確認してください。

@@ -4,7 +4,7 @@ description: 所有しているインフラストラクチャにAdobe Commerce�
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '2094'
+source-wordcount: '2093'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Adobe Commerce バージョン 2.2.8 以降では、インストール中また�
 |--- |--- |--- |
 | `--base-url` | 次のいずれかの形式で管理者およびストアフロントにアクセスするために使用するベース URL:<br><br>`http[s]://<host or ip>/<your install dir>/`。<br><br>**注意：** スキーム（http://またはhttps://）と末尾のスラッシュは両方とも必須です。<br><br>`<your install dir>` は、アプリケーションをインストールするドキュメントルート相対パスです。 Web サーバーと仮想ホストの設定方法に応じて、パスは magento2 になるか、空になります。<br><br>localhost 上のアプリケーションにアクセスするには、`http://127.0.0.1/<your install dir>/` または `http://127.0.0.1/<your install dir>/` を使用します。<br><br> – 仮想ホスト設定または Docker などの仮想化環境によって定義されたベース URL を表す `{{base_url}}`。 例えば、ホスト名がcommerce.example.comの仮想ホストを設定した場合、`--base-url={{base_url}}` を使用してアプリケーションをインストールし、`http://commerce.example.com/admin` のような URL を使用して管理者にアクセスできます。 | はい |
 | `--backend-frontname` | 管理者にアクセスするための URI （Uniform Resource Identifier）。 このパラメーターを省略すると、アプリケーションは次のパターンのランダムな URI を生成できます。<code>admin_jkhgdfq</code>。<br><br> セキュリティ上の理由から、ランダムな URI を使用することをお勧めします。 ランダム URI は、ハッカーや悪意のあるソフトウェアが悪用しにくくなります。<br><br>URI はインストールの最後に表示されます。 `magento info:adminuri` コマンドを使用すれば、後でいつでも表示することができます。<br><br> 値を入力する場合は、admin、backend などの一般的な単語を使用しないことをお勧めします。 管理 URI には、英数字とアンダースコア文字（`_`）のみを含めることができます。 | 不可 |
-| `--db-host` | 次のいずれかを使用します。<br><br>- データベースサーバーの完全修飾ホスト名または IP アドレス。<br><br>- `localhost` （デフォルト）またはデータベースサーバーが web サーバーと同じホスト上にある場合は `127.0.0.1`。localhost は、MySQL クライアントライブラリが UNIX ソケットを使用してデータベースに接続することを意味します。 `127.0.0.1` は、クライアントライブラリで TCP プロトコルを使用します。 ソケットの詳細については、[PHP PDO_MYSQL のドキュメント ](https://www.php.net/manual/en/ref.pdo-mysql.php) を参照してください。<br><br>**注意：** オプションで、www.example.com:9000のようなホスト名でデータベースサーバーポートを指定できます。 | はい |
+| `--db-host` | 次のいずれかを使用します。<br><br>- データベースサーバーの完全修飾ホスト名または IP アドレス。<br><br>- `localhost` （デフォルト）またはデータベースサーバーが web サーバーと同じホスト上にある場合は `127.0.0.1`。localhost は、MySQL クライアントライブラリが UNIX ソケットを使用してデータベースに接続することを意味します。 `127.0.0.1` は、クライアントライブラリで TCP プロトコルを使用します。 ソケットの詳細については、[PHP PDO_MYSQL のドキュメント ](https://www.php.net/manual/en/ref.pdo-mysql.php) を参照してください。<br><br>**注意：** オプションで、www.example.comのようなホスト名でデータベースサーバーポートを指定できます :9000 | はい |
 | `--db-name` | データベーステーブルをインストールするデータベースインスタンスの名前。<br><br> デフォルトは `magento2` です。 | はい |
 | `--db-user` | データベース・インスタンス所有者のユーザー名。<br><br> デフォルトは `root` です。 | はい |
 | `--db-password` | データベースインスタンス所有者のパスワード。 | はい |
@@ -136,7 +136,7 @@ Adobe Commerce バージョン 2.2.8 以降では、インストール中また�
 
 | 名前 | 値 | 必須？ |
 |--- |--- |--- |
-| `--amqp-host` | [!DNL RabbitMQ] のインストールを既にセットアップしていない限り、`--amqp` のオプションは使用しないでください。 [!DNL RabbitMQ] のインストールと設定について詳しくは、[!DNL RabbitMQ] のインストールを参照してください。<br><br>[!DNL RabbitMQ] がインストールされているホスト名。 | 不可 |
+| `--amqp-host` | `--amqp` のインストールを既にセットアップしていない限り、[!DNL RabbitMQ] のオプションは使用しないでください。 [!DNL RabbitMQ] のインストールと設定について詳しくは、[!DNL RabbitMQ] のインストールを参照してください。<br><br>[!DNL RabbitMQ] がインストールされているホスト名。 | 不可 |
 | `--amqp-port` | [!DNL RabbitMQ] への接続に使用するポート。 デフォルトは 5672 です。 | 不可 |
 | `--amqp-user` | [!DNL RabbitMQ] に接続するためのユーザー名。 デフォルトのユーザー `guest` は使用しないでください。 | 不可 |
 | `--amqp-password` | [!DNL RabbitMQ] に接続するためのパスワード デフォルトのパスワード `guest` は使用しないでください。 | 不可 |
@@ -185,7 +185,7 @@ Adobe Commerce バージョン 2.2.8 以降では、インストール中また�
 
 次の例では、次のオプションを使用してアプリケーションをインストールします。
 
-* アプリケーションは、`localhost` 上の Web サーバーの docroot に対する相対パスである `magento2` ディレクトリにインストールされ、Admin へのパスは `admin` になります。したがって、次のようになります。
+* アプリケーションは、`magento2` 上の Web サーバーの docroot に対する相対パスである `localhost` ディレクトリにインストールされ、Admin へのパスは `admin` になります。したがって、次のようになります。
 
   ストアフロント URL は `http://127.0.0.1` です
 
@@ -204,7 +204,7 @@ Adobe Commerce バージョン 2.2.8 以降では、インストール中また�
 * デフォルト言語は `en_US` （英語（米国））
 * デフォルトの通貨は米国ドルです
 * デフォルトのタイムゾーンは米国中部（アメリカ/シカゴ）です
-* Elasticsearch 7 は `es-host.example.com` に取り付けられ、ポート 9200 に接続
+* Elasticsearch 7 は `es-host.example.com` にインストールされ、ポート 9200 に接続します。
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -255,7 +255,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 次の例では、次のオプションを使用してアプリケーションをインストールします。
 
-* Magapplication は、`localhost` 上の web サーバーの docroot に対する相対パスである `magento2` ディレクトリにインストールされ、Admin へのパスは `admin` です。したがって、次のようになります。
+* Magapplication は、`magento2` 上の web サーバーの docroot に対する相対パスである `localhost` ディレクトリにインストールされ、Admin へのパスは `admin` です。したがって、次のようになります。
 
   ストアフロント URL は `http://127.0.0.1` です
 
@@ -276,7 +276,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 * `ORD$` の受注増分プリフィックスを使用します（特殊文字 [`$`] が含まれているため、値は二重引用符で囲む必要があります）
 * セッションデータはデータベースに保存されます
 * サーバーの書き換えを使用
-* Elasticsearch 7 は `es-host.example.com` に取り付けられ、ポート 9200 に接続
+* Elasticsearch 7 は `es-host.example.com` にインストールされ、ポート 9200 に接続します。
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \

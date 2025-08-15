@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # 検索エンジン設定
 
-この節では、Adobe CommerceのオンプレミスデプロイメントでElasticsearchまたは OpenSearch をテストするために必要な最小設定について説明します。
+この節では、Adobe CommerceのオンプレミスデプロイメントでElasticsearchまたは OpenSearch をテストするために選択する必要がある最小設定について説明します。
 
 >[!TIP]
 >
 >バージョン 2.4.4 および 2.4.3-p2 では、**Elasticsearch** というラベルの付いたすべてのフィールドも OpenSearch に適用されます。
->Elasticsearch 2.4.6 でバージョン 8.x のサポートが導入された際には、Elasticsearch設定と OpenSearch 設定を区別する新しいラベルが作成されました。
+>>バージョン 2.4.6 でElasticsearch 8.x がサポートされたとき、Elasticsearch設定と OpenSearch 設定を区別する新しいラベルが作成されました。
 
-検索エンジンの設定について詳しくは、[ ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=ja) を参照してください。
+検索エンジンの設定について詳しくは、[ ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html) を参照してください。
 
 ## 管理者からの検索エンジンの設定
 
@@ -41,7 +41,7 @@ Elasticsearchまたは OpenSearch を使用するようにシステムを設定�
    | **[!UICONTROL Server Port]** | Web サーバーのプロキシポートを入力します。 デフォルトは 9200<br> クラウドインフラストラクチャー上のAdobe Commerceです。この値は、統合システムから取得してください。 |
    | **[!UICONTROL Index Prefix]** | 検索エンジンのインデックスプレフィックスを入力します。 複数のCommerce インストールに 1 つのインスタンスを使用する場合（ステージング環境と実稼動環境）、インストールごとに一意のプレフィックスを指定する必要があります。 それ以外の場合は、デフォルトのプレフィックス magento2 を使用できます。 |
    | **[!UICONTROL Enable HTTP Auth]** | 検索エンジン サーバーの認証を有効にした場合のみ、[**[!UICONTROL Yes]**] をクリックします。 その場合は、指定されたフィールドにユーザー名とパスワードを入力します。 |
-   | **[!UICONTROL Server Timeout]** | Elasticsearchまたは OpenSearch サーバーへの接続を確立しようとするときに待機する時間（秒）を入力します。 |
+   | **[!UICONTROL Server Timeout]** | Elasticsearchまたは OpenSearch サーバーへの接続を確立しようとするときに待機する時間（秒単位）を入力します。 |
 
 1. 「**[!UICONTROL Test Connection]**」をクリックします。
 
@@ -62,7 +62,7 @@ Elasticsearchまたは OpenSearch を使用するようにシステムを設定�
 
 - 検索エンジン サーバーが実行中であることを確認してください。
 - サーバーがCommerceとは別のホスト上にある場合は、Commerce サーバーにログインし、検索エンジンホストに対して ping を実行します。 ネットワーク接続の問題を解決し、接続を再度テストします。
-- Elasticsearchまたは OpenSearch を開始したコマンド ウィンドウで、スタック トレースと例外を調べます。 続行する前にそれらを解決する必要があります。 特に、`root` 権限を持つユーザーとして検索エンジンを起動したことを確認してください。
+- Elasticsearchまたは OpenSearch を起動したコマンドウィンドウで、スタックトレースと例外を調べます。 続行する前にそれらを解決する必要があります。 特に、`root` 権限を持つユーザーとして検索エンジンを起動したことを確認してください。
 - [UNIX ファイアウォールと SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) の両方が無効になっていることを確認するか、検索エンジンとCommerceが相互に通信できるようにルールを設定します。
 - **[!UICONTROL Server Hostname]** フィールドの値を確認します。 サーバーが使用可能であることを確認します。 代わりに、サーバーの IP アドレスを試してみてください。
 - `netstat -an | grep <listen-port>` コマンドを使用して、**[!UICONTROL Server Port]** フィールドで指定されたポートが別のプロセスで使用されていないことを確認します。

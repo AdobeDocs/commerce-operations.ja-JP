@@ -41,4 +41,4 @@ bin/magento dev:urn-catalog:generate <path>
 
 >[!INFO]
 >
->「スキーマと DTD」を最新の状態に保つには、`*.xsd` ファイルを含むCommerce 2 モジュールを追加、変更、削除するたびに `dev:urn-catalog:generate` コマンドを実行します。
+>「スキーマと DTD」を最新の状態に保つには、`dev:urn-catalog:generate` ファイルを含むCommerce 2 モジュールを追加、変更、削除するたびに `*.xsd` コマンドを実行します。

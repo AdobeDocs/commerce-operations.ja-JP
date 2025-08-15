@@ -33,9 +33,9 @@ bin/magento dev:source-theme:deploy [--type="..."] [--locale="..."] [--area="...
 | `--locale` | ロケールコード<br> ロケールコードのリストを表示するには、`bin/magento info:language:list` と入力します | 不可 |
 | `--area` | 領域（管理領域の `adminhtml`、ストアフロントの `frontend`）。 | 不可 |
 | `--theme` | テーマ名（`<VendorName>/<theme-name>` 形式）。 例えば、`Magento/blank` や `Magento/backend` です。 | 不可 |
-| `<file>` | CSS 拡張子を使用せずに LESS に変換する CSS ファイルのスペース区切りリスト。 （adminhtml タイプ `css/styles css/styles-old` の場合、デフォルトは `css/styles-m css/styles-l`） | 不可 |
+| `<file>` | CSS 拡張子を使用せずに LESS に変換する CSS ファイルのスペース区切りリスト。 （adminhtml タイプ `css/styles-m css/styles-l` の場合、デフォルトは `css/styles css/styles-old`） | 不可 |
 
-例えば、`<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css` という CSS ファイルを使用して、`en_US` ロケールの `VendorName/themeName` という名前のフロントエンドテーマに対して LESS ファイルを作成するには、次のコマンドを入力します。
+例えば、`VendorName/themeName` という CSS ファイルを使用して、`en_US` ロケールの `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css` という名前のフロントエンドテーマに対して LESS ファイルを作成するには、次のコマンドを入力します。
 
 ```bash
 bin/magento dev:source-theme:deploy --type="less" --locale="en_US" --area="frontend" --theme="VendorName/themeName" css/styles-l

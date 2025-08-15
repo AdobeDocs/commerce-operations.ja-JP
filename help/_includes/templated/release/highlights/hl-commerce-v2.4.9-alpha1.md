@@ -59,6 +59,6 @@ _AC-13258_
 
 ### セキュリティ
 
-セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB25-50](https://helpx.adobe.com/jp/security/products/magento/apsb25-50.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html) を参照してください。
 
 {{$include /help/_includes/release-notes/highlights/security-2025-06.md}}

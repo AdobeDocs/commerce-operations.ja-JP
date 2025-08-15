@@ -1,6 +1,6 @@
 ---
 title: 「[!UICONTROL Elasticsearch]」タブ
-description: ' [!DNL Observation for Adobe Commerce] の「[!UICONTROL Elasticsearch]」タブについて説明します。'
+description: '[!UICONTROL Elasticsearch] の「 [!DNL Observation for Adobe Commerce]」タブについて説明します。'
 exl-id: e98d351d-b3b1-47bc-bc0d-f96ba9ec2b80
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -50,19 +50,19 @@ ht-degree: 0%
 
 ## [!UICONTROL Elasticsearch index information]
 
-![Elasticsearchインデックス情報 ](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
+![Elasticsearch インデックス情報 ](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
 **[!UICONTROL Elasticsearch index information]** テーブルには、インデックス名、ノード、インデックス付きドキュメントの数、インデックスの正常性、特定の時点でのインデックスサイズ（MB 単位）が表示されます。
 
 ## [!UICONTROL Elasticsearch process CPU %]
 
-![Elasticsearch プロセス CPU](../../assets/tools/elasticsearch-process-cpu.jpg)
+![ElasticsearchプロセスCPU](../../assets/tools/elasticsearch-process-cpu.jpg)
 
-**[!UICONTROL Elasticsearch process CPU %]** のフレームは、選択した期間の [!DNL Elasticsearch] プロセスによるプロセス CPU の割合を示します。
+**[!UICONTROL Elasticsearch process CPU %]** のフレームには、選択した期間の [!DNL Elasticsearch] プロセスのプロセスCPUの割合が表示されます。
 
 ## [!UICONTROL Elasticsearch Memory garbage collection]
 
-![Elasticsearch メモリ ガベージ ](../../assets/tools/elasticsearch-memory-garbage.jpg)
+![Elasticsearch メモリガベージ ](../../assets/tools/elasticsearch-memory-garbage.jpg)
 
 [!DNL Elasticsearch] は Java プロセスです。 割り当てられたメモリが不足している場合は、ガベージコレクションを開始してメモリを解放します。 ガベージコレクションが頻繁に行われる場合は、割り当てられたメモリに対するインデックスまたはシャードが多すぎる可能性があることを示しています。 インデックスやシャードをクリーンアップする機会がある場合や、より多くのメモリが必要 [!DNL Elasticsearch] 場合があります。
 
@@ -74,13 +74,13 @@ ht-degree: 0%
 
 ## [!UICONTROL Elasticsearch Index Size]
 
-![Elasticsearch インデックス サイズ ](../../assets/tools/elasticsearch-index-size.jpg)
+![Elasticsearch インデックスのサイズ ](../../assets/tools/elasticsearch-index-size.jpg)
 
 **[!UICONTROL Elasticsearch Index Size]** のフレームは、選択した期間のインデックス名とサイズを示します。 サイトのインデックス作成方法に関する問題を示している場合があります。
 
 ## [!UICONTROL Elasticsearch Errors]
 
-![Elasticsearchエラー ](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
+![Elasticsearch エラー ](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
 
 **[!UICONTROL Elasticsearch Errors]** フレームには、領域不足、黄色から赤への切り替え、すべてのシャードが失敗した場合、検索でパラメーターに問題がある場合、バージョンエラー、すべてのノードが使用できない場合などの [!DNL Elasticsearch] ラーが表示されます。
 

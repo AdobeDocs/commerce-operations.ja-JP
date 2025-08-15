@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Cron]  タブ'
-description: ' [!DNL Observation for Adobe Commerce] の  [!DNL Cron]  タブについて説明します。'
+description: ' [!DNL Cron]  の  [!DNL Observation for Adobe Commerce] タブについて説明します。'
 exl-id: 66f5ffd6-4118-4534-b2d6-09c7a30e5e13
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7

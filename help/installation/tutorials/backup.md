@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、_クラウドガイド_ の [ スナップショットとバックアップの管理 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) を参照してください。
+>クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、[ クラウドガイド ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) の _スナップショットとバックアップの管理_ を参照してください。
 
 ## バックアップを有効にする
 
@@ -36,7 +36,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**非推奨（廃止予定）のお知らせ：**
->バックアップ機能は、2.1.16、2.2.7、2.3.0 で非推奨（廃止予定）となりました。追加のバックアップテクノロジーとバイナリバックアップツール（Percona XtraBackup など）を調査することをお勧めします。
+>>バックアップ機能は、2.1.16、2.2.7、2.3.0 で非推奨（廃止予定）となりました。追加のバックアップテクノロジーとバイナリバックアップツール（Percona XtraBackup など）を調査することをお勧めします。
 
 ## 開いているファイルの上限を設定
 
@@ -78,7 +78,7 @@ ulimit -s 65536
 
 >[!WARNING]
 >
->`php.ini` ファイルで [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) の値を設定することは避けることをお勧めします。設定すると、エラー通知のない不完全なロールバックが生じる可能性があるからです。
+>[`pcre.recursion_limit` ファイルで ](https://www.php.net/manual/en/pcre.configuration.php)`php.ini` の値を設定することは避けることをお勧めします。設定すると、エラー通知のない不完全なロールバックが生じる可能性があるからです。
 
 ## バックアップ中
 

@@ -21,8 +21,8 @@ ht-degree: 2%
 - [チェックアウトプロセス](high-throughput-order-processing.md)
 - [設定](configuration.md)
 - [デプロイメントフロー](deployment-flow.md)
-- の高度な概念 {#concepts}
+- 高度な概念 {#concepts}
    - [詳細設定](advanced-setup.md)
    - [詳細バ  [!DNL JavaScript]  ディング](advanced-js-bundling.md)
    - [GraphQL Application Server](application-server.md)
-- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
+- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

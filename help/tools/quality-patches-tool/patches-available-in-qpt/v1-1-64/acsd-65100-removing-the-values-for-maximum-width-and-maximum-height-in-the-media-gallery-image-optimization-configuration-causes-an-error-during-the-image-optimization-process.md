@@ -1,6 +1,6 @@
 ---
-title: ACSD-65100:[!UICONTROL Media Gallery Image Optimization] 設定で [!UICONTROL Maximum Width] と [!UICONTROL Maximum Height] の値を削除すると、エラーが発生する
-description: '[!UICONTROL Media Gallery Image Optimization] 設定の [!UICONTROL Maximum Width] と [!UICONTROL Maximum Height] の値を削除すると、画像の最適化プロセス中にエラーが発生するAdobe Commerceの問題を修正するために、ACSD-65100 パッチを適用してください。'
+title: ACSD-65100:[!UICONTROL Maximum Width] 設定で [!UICONTROL Maximum Height] と [!UICONTROL Media Gallery Image Optimization] の値を削除すると、エラーが発生する
+description: '[!UICONTROL Maximum Width] 設定の [!UICONTROL Maximum Height] と [!UICONTROL Media Gallery Image Optimization] の値を削除すると、画像の最適化プロセス中にエラーが発生するAdobe Commerceの問題を修正するために、ACSD-65100 パッチを適用してください。'
 feature: Media
 role: Admin, Developer
 exl-id: 86197602-19a1-41c2-b129-1f695f303ce5
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-65100:[!UICONTROL Media Gallery Image Optimization] 設定で [!UICONTROL Maximum Width] と [!UICONTROL Maximum Height] の値を削除すると、エラーが発生する
+# ACSD-65100:[!UICONTROL Maximum Width] 設定で [!UICONTROL Maximum Height] と [!UICONTROL Media Gallery Image Optimization] の値を削除すると、エラーが発生する
 
-ACSD-65100 パッチでは、**[!UICONTROL Media Gallery Image Optimization]** 設定の **[!UICONTROL Maximum Width]** と **[!UICONTROL Maximum Height]** の値を削除すると、画像の最適化プロセス中にエラーが発生する問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 がインストールされている場合に使用できます。 パッチ ID は ACSD-65100 です。 この問題はAdobe Commerce 2.4.9 で修正される予定であることに注意してください。
+ACSD-65100 パッチでは、**[!UICONTROL Maximum Width]** 設定の **[!UICONTROL Maximum Height]** と **[!UICONTROL Media Gallery Image Optimization]** の値を削除すると、画像の最適化プロセス中にエラーが発生する問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 がインストールされている場合に使用できます。 パッチ ID は ACSD-65100 です。 この問題はAdobe Commerce 2.4.9 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -28,11 +28,11 @@ ACSD-65100 パッチでは、**[!UICONTROL Media Gallery Image Optimization]** �
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-**[!UICONTROL Media Gallery Image Optimization]** 設定で **[!UICONTROL Maximum Width]** と **[!UICONTROL Maximum Height]** の値が削除されると、画像の最適化プロセス中にエラーが発生します。
+**[!UICONTROL Maximum Width]** 設定で **[!UICONTROL Maximum Height]** と **[!UICONTROL Media Gallery Image Optimization]** の値が削除されると、画像の最適化プロセス中にエラーが発生します。
 
 <u> 再現手順 </u>:
 
@@ -64,8 +64,8 @@ report.ERROR: InvalidArgumentException: Invalid image dimensions. in /var/www/ht
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 

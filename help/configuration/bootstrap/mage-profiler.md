@@ -15,7 +15,7 @@ Commerceのプロファイルを使用すると、次のことができます。
 
 - ビルトインプロファイラーを有効にします。
 
-  Commerceに組み込まれているプロファイラーを使用して、パフォーマンスの分析などのタスクを実行できます。 プロファイルの性質は、使用する分析ツールによって異なります。 HTMLを含む複数のフォーマットをサポートしています。 プロファイラーを有効にすると、プロファイラーが有効で構成されていることを示す `var/profiler.flag` ファイルが生成されます。 無効にすると、このファイルは削除されます。
+  Commerceに組み込まれているプロファイラーを使用して、パフォーマンスの分析などのタスクを実行できます。 プロファイルの性質は、使用する分析ツールによって異なります。 HTMLを含む複数の形式をサポートしています。 プロファイラーを有効にすると、プロファイラーが有効で構成されていることを示す `var/profiler.flag` ファイルが生成されます。 無効にすると、このファイルは削除されます。
 
 - Commerceページに依存関係グラフを表示します。
 
@@ -37,8 +37,8 @@ MAGE_PROFILER 変数またはコマンドラインを使用して、プロファ
 
   次のいずれかの値を使用して、特定のプロファイラーを有効にできます。
 
-   - [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile] を使用する `csvfile`
-   - [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html] を使用する空の値を含む、`2` を除く他の値
+   - `csvfile` を使用する [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
+   - `2` を使用する空の値を含む、[`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html] を除く他の値
 
 - 依存関係グラフを有効にする `2`。
 
@@ -50,7 +50,7 @@ MAGE_PROFILER 変数またはコマンドラインを使用して、プロファ
 
 CLI コマンドを使用して、プロファイラーを有効または無効にできます。
 
-- `dev:profiler:enable <type>` は、`html` （デフォルト）または `csvfile` の `type` を持つプロファイラーを有効にします。 有効にすると、フラグファイル `var/profiler.flag` が作成されます。
+- `dev:profiler:enable <type>` は、`type` （デフォルト）または `html` の `csvfile` を持つプロファイラーを有効にします。 有効にすると、フラグファイル `var/profiler.flag` が作成されます。
 - `dev:profiler:disable` はプロファイラーを無効にします。 無効にすると、フラグ ファイル `var/profiler.flag` は削除されます。
 
 依存関係グラフを有効にするには、変数オプションを使用します。

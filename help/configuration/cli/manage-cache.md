@@ -20,7 +20,7 @@ Adobe Commerceのキャッシュ管理システムを使用すると、サイト
 >[!NOTE]
 >
 >
->コマースサイト管理者は、キャッシュ管理システムツールを使用して、管理者からキャッシュを管理できます。 [ 管理システムガイド ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management) の _キャッシュ管理_ を参照してください。
+>コマースサイト管理者は、キャッシュ管理システムツールを使用して、管理者からキャッシュを管理できます。 [ 管理システムガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) の _キャッシュ管理_ を参照してください。
 
 
 ## キャッシュステータスの表示
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Adobe Commerceでサポートされるデフォルトのキャッシュタイプについて詳しくは、『 _管理システムガイド_ 』の [ キャッシュ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management#caches) を参照してください。
+>Adobe Commerceでサポートされるデフォルトのキャッシュタイプについて詳しくは、『 [ 管理システムガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) 』の _キャッシュ_ を参照してください。
 
 
 ## キャッシュタイプを有効または無効にする
@@ -68,7 +68,7 @@ Current status:
 
 >[!INFO]
 >
->バージョン 2.2 以降では、Commerceを実稼働モードで実行している場合に、コマンドラインを使用してのみキャッシュタイプを有効または無効にできます。 Commerceを開発者モードで実行している場合は、コマンドラインまたは手動でキャッシュタイプを有効または無効にできます。 その前に、[ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) によって手動で `<magento_root>/app/etc/env.php` を書き込み可能にする必要があります。
+>バージョン 2.2 以降では、Commerceを実稼働モードで実行している場合に、コマンドラインを使用してのみキャッシュタイプを有効または無効にできます。 Commerceを開発者モードで実行している場合は、コマンドラインまたは手動でキャッシュタイプを有効または無効にできます。 その前に、`<magento_root>/app/etc/env.php` ファイルシステムの所有者 [ によって手動で ](../../installation/prerequisites/file-system/overview.md) を書き込み可能にする必要があります。
 
 コマンドラインまたは Admin を使用して、キャッシュタイプをクリーンアップ（「_フラッシュ_ または _更新_ とも呼ばれます）できます。
 
@@ -128,7 +128,7 @@ bin/magento cache:disable db_ddl full_page
 
   >[!TIP]
   >
-  >Adobe Commerceのバージョンのアップグレード、モジュールからAdobe Commerceへのアップグレード、Adobe Commerceまたは任意のMagento Open Source用の B2B のインストールの後は、必ずキャッシュをクリーンアップしてください。
+  >Adobe Commerceのバージョンのアップグレード、Magento Open SourceからAdobe Commerceへのアップグレード、Adobe Commerceまたは任意のモジュール用の B2B のインストールの後は、必ずキャッシュをクリーンアップしてください。
 
 - キャッシュタイプをフラッシュすると、キャッシュストレージがパージされ、同じストレージを使用している他のプロセスアプリケーションに影響を与える可能性があります。
 
@@ -173,4 +173,4 @@ bin/magento cache:disable db_ddl full_page
 
 >[!TIP]
 >
->また、管理画面でキャッシュタイプのクリーンアップやフラッシュを行うこともできます。 **システム**/**ツール**/**キャッシュ管理** に移動します。 **フラッシュキャッシュストレージ** は `bin/magento cache:flush` と同等です。 **Magentoキャッシュをフラッシュ** は `bin/magento cache:clean` と同等です。
+>また、管理画面でキャッシュタイプのクリーンアップやフラッシュを行うこともできます。 **システム**/**ツール**/**キャッシュ管理** に移動します。 **フラッシュキャッシュストレージ** は `bin/magento cache:flush` と同等です。 **Magento キャッシュをフラッシュ** は `bin/magento cache:clean` と同等です。

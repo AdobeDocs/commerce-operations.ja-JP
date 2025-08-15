@@ -19,7 +19,7 @@ ht-degree: 0%
 QPT v1.1.36 には、次のパッチが含まれています。
 
 1. **ACSD-53239**:[!UICONTROL Update on Schedule] モードでインベントリインデクサーがすべてのキャッシュをクリーンアップする問題を修正しました。
-1. **ACSD-50887**:*[!UICONTROL Use in search]* オプションを *[!UICONTROL Yes]* に設定せずに、製品属性プロパティ *[!UICONTROL Use in Search Results Layered Navigation]* を *[!UICONTROL Yes]* に設定できる問題を修正しました。
+1. **ACSD-50887**:*[!UICONTROL Use in Search Results Layered Navigation]* オプションを *[!UICONTROL Yes]* に設定せずに、製品属性プロパティ *[!UICONTROL Use in search]* を *[!UICONTROL Yes]* に設定できる問題を修正しました。
 1. **ACSD-51846**：すべてのレベルの REST API ペイロードが検証されるわけではないために発生する *内部エラー* 問題を修正しました。
 1. **ACSD-52906**：同じカスタマーセグメントに属するログインした顧客に対して X-Magento-Vary cookie が正しく設定されず、一部のページで不適切なキャッシュが発生する問題を修正しました。
 1. **ACSD-52736**：設定可能な製品数量の要件を含む [!UICONTROL Cart Price Rule] が期待どおりに動作しない問題を修正しました。

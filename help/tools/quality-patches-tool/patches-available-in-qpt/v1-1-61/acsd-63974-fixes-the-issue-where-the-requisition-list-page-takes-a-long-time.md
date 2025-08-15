@@ -28,7 +28,7 @@ ACSD-63974 パッチは、項目が多すぎると **[!UICONTROL Requisition Lis
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -38,7 +38,7 @@ ACSD-63974 パッチは、項目が多すぎると **[!UICONTROL Requisition Lis
 
 1. **[!UICONTROL Admin]**/**[!UICONTROL Stores]**/*[!UICONTROL Settings]*/**[!UICONTROL Configuration]**/*[!UICONTROL General]*/**[!UICONTROL B2B features]** に移動します。
 1. **[!UICONTROL Enable Requisition List]** を *はい* に設定します。
-1. `setup/performance-toolkit/profiles/ce/small.xml` のノードを編集して、2000 以上 `simple_products` 製品を生成する。
+1. `simple_products` のノードを編集して、2000 以上 `setup/performance-toolkit/profiles/ce/small.xml` 製品を生成する。
 1. 次のコマンドを実行します。
 
    ```bash
@@ -63,7 +63,7 @@ ACSD-63974 パッチは、項目が多すぎると **[!UICONTROL Requisition Lis
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
 * Adobe Commerce on Cloud Infrastructure: アップグレードとパッチ > Commerce on Cloud Infrastructure ガイドのパッチの適用
 
 ## 関連資料

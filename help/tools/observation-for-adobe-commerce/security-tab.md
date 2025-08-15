@@ -1,6 +1,6 @@
 ---
 title: 「[!UICONTROL Security]」タブ
-description: ' [!DNL Observation for Adobe Commerce] の「[!UICONTROL Security]」タブについて説明します。'
+description: '[!UICONTROL Security] の「 [!DNL Observation for Adobe Commerce]」タブについて説明します。'
 exl-id: b567e4a4-534e-4151-b6f6-bf59b1bd4028
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -34,20 +34,20 @@ ht-degree: 0%
 
 ## [!UICONTROL POST activities]
 
-**[!UICONTROL POST activities]** のフレームは、[!DNL Fastly] のログの `client_ip` にファセットされた、サイトの `POST` のアクティビティを表示します。 また、IP アドレスによってアクセスされる URL も表示されます。
+**[!UICONTROL POST activities]** のフレームは、`POST` のログの `client_ip` にファセットされた、サイトの [!DNL Fastly] のアクティビティを表示します。 また、IP アドレスによってアクセスされる URL も表示されます。
 
-![POSTアクティビティ ](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
+![POST アクティビティ ](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 
-**[!UICONTROL POST activities summary table]** のフレームは、サイトの `POST` アクティビティの要約を、[!DNL Fastly] のログの `client_ip` にファセットで表示します。 また、IP アドレスによってアクセスされる URL の数も表示されます。 選択した期間のカウントが表示されます。
+**[!UICONTROL POST activities summary table]** のフレームは、サイトの `POST` アクティビティの要約を、`client_ip` のログの [!DNL Fastly] にファセットで表示します。 また、IP アドレスによってアクセスされる URL の数も表示されます。 選択した期間のカウントが表示されます。
 
-![POSTアクティビティの概要 ](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
+![POST-activities-summary](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 
 ## [!UICONTROL POST activities details table]
 
-**[!UICONTROL POST activities details table]** のフレームは、[!DNL Fastly] のログからのサイトの `POST` のアクティビティを示します。 また、これらのリクエストに関する [!DNL Fastly] ログのすべての詳細も表示されます。 過去 2000 件のリクエストに制限されています。
-![POSTアクティビティの詳細 ](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
+**[!UICONTROL POST activities details table]** のフレームは、`POST` のログからのサイトの [!DNL Fastly] のアクティビティを示します。 また、これらのリクエストに関する [!DNL Fastly] ログのすべての詳細も表示されます。 過去 2000 件のリクエストに制限されています。
+![POST-activities-details](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
 
 ## [!UICONTROL Guest Carts activities]
 

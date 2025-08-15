@@ -46,7 +46,7 @@ ht-degree: 1%
     <td>Adobe Commerce Sites で最も一般的な 5 つの設定の問題を修正して防止します。</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=ja">キャッシュ</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html">キャッシュ</a></td>
     <td>キャッシュ管理ツールを使用して、サイトのパフォーマンスを向上させます。</td>
   </tr>
   <tr>
@@ -76,11 +76,11 @@ ht-degree: 1%
     <td colspan="2"><em>サービス設定</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja">Fastly の設定</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html">Fastly の設定</a></td>
     <td>クラウドインフラストラクチャプロジェクト上のAdobe Commerce用に Fastly サービスを設定します。</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html?lang=ja">New Relicの通知チャネルの設定</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html">New Relicの通知チャネルの設定</a></td>
     <td>New Relic ダッシュボードにアクセスし、クラウドインフラストラクチャプロジェクト上のAdobe Commerceからデータを分析します。</td>
   </tr>
   <tr>
@@ -115,7 +115,7 @@ ht-degree: 1%
 
 | ベストプラクティス | 説明 |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [ パートナー・エスカレーション ](partner-escalation.md) | Adobeアカウントチームとパートナーの問題のエスカレーションに備えるか、エスカレーションを回避する方法を学びます。 |
+| [ パートナー・エスカレーション ](partner-escalation.md) | Adobe アカウントチームとパートナーの問題のエスカレーションに備えるか、エスカレーションを回避する方法を説明します。 |
 | [ 支払保管事務 ](payment-processing-storage.md) | 支払いの詳細を安全に処理し、保存します。 |
 
 ## 販売およびマーケティング

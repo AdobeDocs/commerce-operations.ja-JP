@@ -4,7 +4,7 @@ description: Adobe Commerce上のプロジェクトを実行するには、次  
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 分析の結果、[!DNL Upgrade Compatibility Tool] は、重要度、エラーコード、エラーの説明を指定する各ファイルの問題のリストを含むレポートを書き出すことができます。 [!DNL Upgrade Compatibility Tool] では、レポートが次の 2 つの異なる形式で書き出されます。
 
 - [JSON ファイル ](reports.md#json-file)。
-- [HTMLレポート ](reports.md#html-report)。
+- [HTML レポート ](reports.md#html-report)。
 
 レポートの次のコマンドラインインターフェイスの例を参照してください。
 
@@ -81,14 +81,14 @@ bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
 >
 > 出力フォルダーのデフォルトのパスは `var/output/[TIME]-results.json` です。
 
-## HTMLレポート
+## HTML レポート
 
-コマンドラインインターフェイスまたは [!DNL Site-Wide Analysis Tool] を使用してHTMLを実行すると、ツールレポートを取得できます。 HTMLレポートには、次の内容も含まれます。
+ツールをコマンドラインインターフェイスまたは [!DNL Site-Wide Analysis Tool] から実行しているときに、HTML レポートを取得できます。 HTML レポートには、次も含まれます。
 
 - 特定された問題のリスト。
 - 分析の概要です。
 
-![HTMLレポート – 概要 ](../../assets/upgrade-guide/uct-html-summary.png)
+![HTML レポート – 概要 ](../../assets/upgrade-guide/uct-html-summary.png)
 
 分 [!DNL Upgrade Compatibility Tool] 分析中に、特定された問題を簡単に移動できます。
 
@@ -96,13 +96,13 @@ bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
 
 右上隅にドロップダウンがあり、別のレベルを選択できます。 識別された問題のリストは、それに応じてフィルタリングされます。
 
-![HTMLレポート – ドロップダウンの使用状況 ](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
+![HTML レポート – ドロップダウンの使用状況 ](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
 
 >[!NOTE]
 >
 > 問題レベルが低い問題は除外されますが、通知が届くので、モジュールごとに特定された問題を常に認識できます。
 
-HTMLレポートには、次の 4 つの異なるグラフも含まれます。
+HTML レポートには、次の 4 つの異なるグラフも含まれています。
 
 - **問題の重要度別のモジュール**：モジュール別の重要度の分布を表示します。
 - **問題の重大度別のファイル**：ファイルごとの重大度分布を表示します。
@@ -111,15 +111,15 @@ HTMLレポートには、次の 4 つの異なるグラフも含まれます。
 
 これらのグラフを使用すると、最も侵害されているモジュールと、アップグレードの実行に追加の作業が必要なモジュールを識別できます。
 
-![HTMLレポート – 図 ](../../assets/upgrade-guide/uct-html-diagrams.png)
+![HTML レポート – 図 ](../../assets/upgrade-guide/uct-html-diagrams.png)
 
-HTMLレポート図も、それに応じて更新されます。ただし、`Modules with relative sizes and issues` は、組織で設定された `min-issue-level` で生成されます。
+HTML レポート図も、それに応じて更新されます。ただし、`Modules with relative sizes and issues` は、組織で設定された `min-issue-level` で生成されます。
 
 `Modules with relative sizes and issues` の図で異なる結果を表示する場合は、コマンドを再実行して、`--min-issue-level` オプションに別の値を指定する必要があります。
 
-![HTMLレポート – バブル チャート図 ](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
+![HTML レポート – バブル チャート図 ](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
 
-このHTMLレポートを別の出力フォルダーにエクスポートするには：
+このHTML レポートを別の出力フォルダーにエクスポートするには：
 
 ```bash
 bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]

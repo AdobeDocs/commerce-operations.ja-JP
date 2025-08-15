@@ -4,7 +4,7 @@ description: 所有するインフラストラクチャでのAdobe Commerceの�
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
 source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
-source-wordcount: '2314'
+source-wordcount: '2313'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 管理者ユーザーは、インストール中またはインストール後に作成できます。 インストール時にユーザーを作成する場合は、すべての管理者資格情報の変数が必要です。 [ サンプルローカルホストのインストール ](#sample-localhost-installations) を参照してください。
 
-次の表に、使用可能なすべてのインストールパラメーターではなく、多くのパラメーターを示します。 完全な一覧については、[ コマンド ライン ツール リファレンス ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises) を参照してください。
+次の表に、使用可能なすべてのインストールパラメーターではなく、多くのパラメーターを示します。 完全な一覧については、[ コマンド ライン ツール リファレンス ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises) を参照してください。
 
 | 名前 | 値 | 必須？ |
 |--- |--- |--- |
@@ -135,7 +135,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 |--- |--- |--- |
 | `--base-url` | 次のいずれかの形式で管理者およびストアフロントにアクセスするために使用するベース URL:<br><br>`http[s]://<host or ip>/<your install dir>/`。<br><br>**注意：** スキーム（http://またはhttps://）と末尾のスラッシュは両方とも必須です。<br><br>`<your install dir>` は、Adobe Commerce ソフトウェアをインストールするドキュメントルートの相対パスです。 Web サーバーと仮想ホストの設定方法に応じて、パスは magento2 になるか、空になります。<br><br>Adobe Commerceまたは MagenAdobe Commerceuse にアクセスするには、`http://127.0.0.1/<your install dir>/` または `http://127.0.0.1/<your install dir>/` を使用します。<br><br> – 仮想ホスト設定または Docker などの仮想化環境によって定義されたベース URL を表す `{{base_url}}`。 例えば、ホスト名が `magento.example.com` の仮想ホストを設定した場合、`--base-url={{base_url}}` を使用してソフトウェアをインストールし、`http://magento.example.com/admin` のような URL を使用して Admin にアクセスできます。 | はい |
 | `--backend-frontname` | 管理者にアクセスするための URI （Uniform Resource Identifier）。 このパラメーターを省略すると、アプリケーションは次のパターンのランダムな URI を生成できます。<code>admin_jkhgdfq</code>。<br><br> セキュリティ上の理由から、ランダムな URI を使用することをお勧めします。 ランダム URI は、ハッカーや悪意のあるソフトウェアが悪用しにくくなります。<br><br>URI はインストールの最後に表示されます。 `bin/magento info:adminuri` コマンドを使用すれば、後でいつでも表示することができます。<br><br> 値を入力する場合は、admin、backend などの一般的な単語を使用しないことをお勧めします。 管理 URI には、英数字とアンダースコア文字（`_`）のみを含めることができます。 | 不可 |
-| `--db-host` | 次のいずれかを使用します。<br><br>- データベースサーバーの完全修飾ホスト名または IP アドレス。<br><br>- `localhost` （デフォルト）またはデータベースサーバーが web サーバーと同じホスト上にある場合は `127.0.0.1`。localhost は、MySQL クライアントライブラリが UNIX ソケットを使用してデータベースに接続することを意味します。 `127.0.0.1` は、クライアントライブラリで TCP プロトコルを使用します。 ソケットの詳細については、[PHP PDO_MYSQL のドキュメント ](https://www.php.net/manual/en/ref.pdo-mysql.php) を参照してください。<br><br>**注意：** オプションで、www.example.com:9000のようなホスト名でデータベースサーバーポートを指定できます。 | はい |
+| `--db-host` | 次のいずれかを使用します。<br><br>- データベースサーバーの完全修飾ホスト名または IP アドレス。<br><br>- `localhost` （デフォルト）またはデータベースサーバーが web サーバーと同じホスト上にある場合は `127.0.0.1`。localhost は、MySQL クライアントライブラリが UNIX ソケットを使用してデータベースに接続することを意味します。 `127.0.0.1` は、クライアントライブラリで TCP プロトコルを使用します。 ソケットの詳細については、[PHP PDO_MYSQL のドキュメント ](https://www.php.net/manual/en/ref.pdo-mysql.php) を参照してください。<br><br>**注意：** オプションで、www.example.comのようなホスト名でデータベースサーバーポートを指定できます :9000 | はい |
 | `--db-name` | データベーステーブルをインストールするデータベースインスタンスの名前。<br><br> デフォルトは `magento2` です。 | はい |
 | `--db-user` | データベース・インスタンス所有者のユーザー名。<br><br> デフォルトは `root` です。 | はい |
 | `--db-password` | データベースインスタンス所有者のパスワード。 | はい |
@@ -145,7 +145,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 | `--db-ssl-ca` | サーバー証明書へのパス。 | 不可 |
 | `--language` | 管理およびストアフロントで使用する言語コード。 （まだ実行していない場合は、bin ディレクトリから `bin/magento info:language:list` を入力して、言語コードのリストを表示できます）。 | 不可 |
 | `--currency` | ストアフロントで使用するデフォルト通貨。 （まだ行っていない場合は、bin ディレクトリから `bin/magento info:currency:list` と入力して通貨のリストを表示できます）。 | 不可 |
-| `--timezone` | 管理およびストアフロントで使用するデフォルトのタイムゾーン。 （タイムゾーンリストをまだ表示していない場合は、`bin/` ディレクトリから `bin/magento info:timezone:list` と入力して表示できます）。 | 不可 |
+| `--timezone` | 管理およびストアフロントで使用するデフォルトのタイムゾーン。 （タイムゾーンリストをまだ表示していない場合は、`bin/magento info:timezone:list` ディレクトリから `bin/` と入力して表示できます）。 | 不可 |
 | `--use-rewrites` | つま `1`、ストアフロントおよび管理者で生成されたリンクに対して、web サーバーの書き換えを使用します。<br><br>`0` は、web サーバーの書き換えの使用を無効にします。 これがデフォルトです。 | 不可 |
 | `--use-secure` | `1` を使用すると、ストアフロント URL で Secure Sockets Layer （SSL）を使用できます。 このオプションを選択する前に、web サーバーで SSL がサポートされていることを確認してください。<br><br>`0` は SSL の使用を無効にします。 この場合、他のすべてのセキュア URL オプションも 0 と見なされます。 これがデフォルトです。 | 不可 |
 | `--base-url-secure` | 管理者およびストアフロントにアクセスするために使用するセキュアなベース URL を次の形式で指定します：`http[s]://<host or ip>/<your install dir>/` | 不可 |
@@ -163,11 +163,11 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 |--- |--- |--- |
 | `--search-engine` | 検索エンジンとして使用するElasticsearchまたは OpenSearch のバージョン。 デフォルトは `elasticsearch7` です。 Elasticsearch 5 は非推奨（廃止予定）となったので、お勧めしません。 | 不可 |
 | `--elasticsearch-host` | Elasticsearchが動作しているホスト名または IP アドレス。 デフォルトは `localhost` です。 | 不可 |
-| `--elasticsearch-port` | 受信 HTTP リクエストのElasticsearchポート。 デフォルトは `9200` です。 | 不可 |
+| `--elasticsearch-port` | 受信 HTTP リクエストのElasticsearch ポート。 デフォルトは `9200` です。 | 不可 |
 | `--elasticsearch-index-prefix` | Elasticsearch検索インデックスを識別するプレフィックス。 デフォルトは `magento2` です。 | 不可 |
 | `--elasticsearch-timeout` | システムがタイムアウトするまでの秒数。 デフォルトは `15` です。 | 不可 |
-| `--elasticsearch-enable-auth` | Elasticsearchサーバーでの認証を有効にします。 デフォルトは `false` です。 | 不可 |
-| `--elasticsearch-username` | Elasticsearchサーバーに対して認証するユーザー ID。 | いいえ（認証が有効になっていない場合） |
+| `--elasticsearch-enable-auth` | Elasticsearch サーバーで認証を有効にします。 デフォルトは `false` です。 | 不可 |
+| `--elasticsearch-username` | Elasticsearch サーバーに対して認証するユーザー ID。 | いいえ（認証が有効になっていない場合） |
 | `--elasticsearch-password` | Elasticsearchserver に対して認証するパスワード。 | いいえ（認証が有効になっていない場合） |
 | `--opensearch-host` | OpenSearch が実行されているホスト名または IP アドレス。 デフォルトは `localhost` です。 | 不可 |
 | `--opensearch-port` | 受信 HTTP リクエストの OpenSearch ポート。 デフォルトは `9200` です。 | 不可 |
@@ -181,7 +181,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 | 名前 | 値 | 必須？ |
 |--- |--- |--- |
-| `--amqp-host` | [!DNL RabbitMQ] のインストールを既にセットアップしていない限り、`--amqp` のオプションは使用しないでください。 [!DNL RabbitMQ] のインストールと設定について詳しくは、[!DNL RabbitMQ] のインストールを参照してください。<br><br>[!DNL RabbitMQ] がインストールされているホスト名。 | 不可 |
+| `--amqp-host` | `--amqp` のインストールを既にセットアップしていない限り、[!DNL RabbitMQ] のオプションは使用しないでください。 [!DNL RabbitMQ] のインストールと設定について詳しくは、[!DNL RabbitMQ] のインストールを参照してください。<br><br>[!DNL RabbitMQ] がインストールされているホスト名。 | 不可 |
 | `--amqp-port` | [!DNL RabbitMQ] への接続に使用するポート。 デフォルトは 5672 です。 | 不可 |
 | `--amqp-user` | [!DNL RabbitMQ] に接続するためのユーザー名。 デフォルトのユーザー `guest` は使用しないでください。 | 不可 |
 | `--amqp-password` | [!DNL RabbitMQ] に接続するためのパスワード デフォルトのパスワード `guest` は使用しないでください。 | 不可 |
@@ -219,7 +219,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 次の例では、次のオプションを使用してAdobe Commerceをインストールします。
 
-* アプリケーションは、`localhost` 上の Web サーバーの docroot に対する相対パスである `magento2` ディレクトリにインストールされ、Admin へのパスは `admin` になります。したがって、次のようになります。
+* アプリケーションは、`magento2` 上の Web サーバーの docroot に対する相対パスである `localhost` ディレクトリにインストールされ、Admin へのパスは `admin` になります。したがって、次のようになります。
 
   ストアフロント URL は `http://127.0.0.1` です
 
@@ -289,7 +289,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 次の例では、次のオプションを使用してAdobe Commerceをインストールします。
 
-* アプリケーションは、`localhost` 上の Web サーバーの docroot に対する相対パスである `magento2` ディレクトリにインストールされ、Admin へのパスは `admin` になります。したがって、次のようになります。
+* アプリケーションは、`magento2` 上の Web サーバーの docroot に対する相対パスである `localhost` ディレクトリにインストールされ、Admin へのパスは `admin` になります。したがって、次のようになります。
 
   ストアフロント URL は `http://127.0.0.1` です
 

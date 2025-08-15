@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-61200：売上合計の計算で割引税報酬を修正します
 
-ACSD-61200 パッチでは、*[!UICONTROL Total Amount]* および *[!UICONTROL Total Amount Actual]* の計算で *[!UICONTROL Discount Tax Compensation Amount]* および *[!UICONTROL Shipping Discount Tax Compensation Amount]* が欠落し、その結果、受注データとクーポン・レポート・データの間に不一致が生じる問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 がインストールされている場合に使用できます。 パッチ ID は ACSD-61200 です。 この問題はAdobe Commerce バージョン 2.4.8 で修正される予定であることに注意してください。
+ACSD-61200 パッチでは、*[!UICONTROL Discount Tax Compensation Amount]* および *[!UICONTROL Shipping Discount Tax Compensation Amount]* の計算で *[!UICONTROL Total Amount]* および *[!UICONTROL Total Amount Actual]* が欠落し、その結果、受注データとクーポン・レポート・データの間に不一致が生じる問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 がインストールされている場合に使用できます。 パッチ ID は ACSD-61200 です。 この問題はAdobe Commerce バージョン 2.4.8 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -28,7 +28,7 @@ ACSD-61200 パッチでは、*[!UICONTROL Total Amount]* および *[!UICONTROL 
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -65,11 +65,11 @@ ACSD-61200 パッチでは、*[!UICONTROL Total Amount]* および *[!UICONTROL 
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-- Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-- クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+- Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+- クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-[[!DNL Quality Patches Tool]  リリース済み：『ツールガイド』の品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+[[!DNL Quality Patches Tool]  リリース済み：『ツールガイド』の品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。

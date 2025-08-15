@@ -1,6 +1,6 @@
 ---
 title: 「[!UICONTROL PHP]」タブ
-description: ' [!DNL Observation for Adobe Commerce] の「[!UICONTROL PHP]」タブについて説明します。'
+description: '[!UICONTROL PHP] の「 [!DNL Observation for Adobe Commerce]」タブについて説明します。'
 exl-id: 0989a7f5-75b0-4fb5-ac5e-2618603bf548
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ![PHP プロセスのロード ](../../assets/tools/php-process-load.jpg)
 
-**[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** のフレームは、選択した期間における PHP-FPM プロセスの CPU 負荷を示します。
+**[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** のフレームは、選択した期間における PHP-FPM プロセスからのCPUの負荷を示しています。
 
 ## [!UICONTROL PHP Memory detail]
 
@@ -34,9 +34,9 @@ ht-degree: 0%
 
 ## [!UICONTROL PHP CPU Utilization]
 
-![PHP の CPU 使用率 ](../../assets/tools/php-cpu-utilization.jpg)
+![PHP CPUの使用率 ](../../assets/tools/php-cpu-utilization.jpg)
 
-**[!UICONTROL PHP CPU Utilization]** フレームは、選択した期間における PHP プロセスの CPU 使用率を示します。
+**[!UICONTROL PHP CPU Utilization]** のフレームは、選択した期間における PHP プロセスのCPUの使用率を示します。
 
 ## [!UICONTROL PHP Process states]
 

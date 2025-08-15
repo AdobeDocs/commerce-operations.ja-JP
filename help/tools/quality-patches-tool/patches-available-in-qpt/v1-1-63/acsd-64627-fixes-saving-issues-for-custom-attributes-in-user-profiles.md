@@ -28,7 +28,7 @@ ACSD-64627 パッチは、**[!UICONTROL Company Structure]** ページ内でユ�
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -37,8 +37,8 @@ ACSD-64627 パッチは、**[!UICONTROL Company Structure]** ページ内でユ�
 <u> 再現手順 </u>:
 
 1. B2B 機能が有効になっているAdobe Commerce インスタンスをインストールします。
-1. **[!UICONTROL Input Type]** を *[!UICONTROL File (attachment)]* に設定して、*custom_upload* という名前の新しい顧客属性を作成します。
-1. **[!UICONTROL Input Type]** が *[!UICONTROL Image File]* に設定された *image_attachment* という名前の別の顧客属性を作成します。
+1. *を* に設定して、**[!UICONTROL Input Type]** custom_upload *[!UICONTROL File (attachment)]* という名前の新しい顧客属性を作成します。
+1. *が* に設定された **[!UICONTROL Input Type]** image_attachment *[!UICONTROL Image File]* という名前の別の顧客属性を作成します。
 1. **[!UICONTROL Show on Storefront]** を *はい* に設定して、両方の属性をストアフロントに表示します。 すべてのフォームを選択：
    * 顧客登録
    * 顧客アカウントの編集
@@ -47,8 +47,8 @@ ACSD-64627 パッチは、**[!UICONTROL Company Structure]** ページ内でユ�
 1. 会社管理者としてストアフロントにログインします。
 1. **[!UICONTROL Customer Account]**/**[!UICONTROL Company Structure]** または **[!UICONTROL Customer Account]**/**[!UICONTROL Company Users]** に移動します。
 1. 「**[!UICONTROL Add New User]**」をクリックします。
-1. *custom_upload* 属性の **[!UICONTROL Upload]** をクリックします。
-1. *image_attachment* 属性の **[!UICONTROL Select file]** をクリックします。
+1. **[!UICONTROL Upload]** custom_upload *属性の* をクリックします。
+1. **[!UICONTROL Select file]** image_attachment *属性の* をクリックします。
 
 <u> 期待される結果 </u>:
 
@@ -62,8 +62,8 @@ ACSD-64627 パッチは、**[!UICONTROL Company Structure]** ページ内でユ�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 

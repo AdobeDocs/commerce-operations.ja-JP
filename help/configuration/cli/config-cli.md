@@ -34,8 +34,8 @@ Commerceには、インストールおよび設定タスクを実行する次の
 
 CLI の使用を開始する前に、以下を確認します。
 
-1. お使いのシステムは、『インストール ガイド _の [ システム要件 ](../../installation/system-requirements.md) に記載されている要件を満たしてい_ す。
-1. _インストール ガイド_ の [ 前提条件 ](../../installation/prerequisites/overview.md) で説明されているすべての前提条件タスクを完了しました。
+1. お使いのシステムは、『インストール ガイド [ の ](../../installation/system-requirements.md) システム要件 _に記載されている要件を満たしてい_ す。
+1. [ インストール ガイド ](../../installation/prerequisites/overview.md) の _前提条件_ で説明されているすべての前提条件タスクを完了しました。
 1. Commerce サーバーにログインしたら、Commerce ファイルシステムへの書き込み権限を持つユーザーに切り替えます。 [ インストール ガイド ](../../installation/prerequisites/file-system/overview.md) の _ファイル システム所有者に切り替える_ を参照してください。
 
 ## コマンドの実行
@@ -64,6 +64,6 @@ export PATH=$PATH:/var/www/html/magento2/bin
 
 オプションで、次を実行できます。
 
-- `./magento <command name>` として `cd <magento_root>/bin` び出して実行
+- `cd <magento_root>/bin` として `./magento <command name>` び出して実行
 - `<magento_root>/bin/magento <command name>`
 - `<magento_root>` は、web サーバーの docroot のサブディレクトリです。

@@ -1,6 +1,6 @@
 ---
 title: データを移行
-description: ' [!DNL Data Migration Tool] を使用して、Magento 1 からMagento 2 へのデータの移行を開始する方法を説明します。'
+description: ' [!DNL Data Migration Tool] を使用してMagento 1 からMagento 2 へのデータ移行を開始する方法を説明します。'
 exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -35,7 +35,7 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 * `{<path to config.xml>}` は `config.xml` への絶対ファイルシステムパスです。この引数は必須です
 
-この手順では、Magento1[!DNL Data Migration Tool] ータベースのマイグレーション・テーブル用に、追加のテーブルとトリガーが作成されます。 これらは、[ 増分/差分 ](delta.md) 移行手順で使用されます。 追加のテーブルには、最終的な移行の実行後に変更されたレコードに関する情報が含まれます。 データベーストリガーは、これらの追加テーブルへの入力に使用します。したがって、特定のテーブルに対して新しい処理が実行されている（レコードが追加/変更/削除されている）場合、これらのデータベーストリガーによって、この処理に関する情報が追加のテーブルに保存されます。 差分マイグレーションプロセスを実行すると、[!DNL Data Migration Tool] はこれらのテーブルをチェックして未処理のレコードを探し、必要なコンテンツをMagento2 データベースにマイグレートします。
+この手順では、Magento 1 データベースの移行テーブル用に、追加のテーブルとトリガーが [!DNL Data Migration Tool] で作成されます。 これらは、[ 増分/差分 ](delta.md) 移行手順で使用されます。 追加のテーブルには、最終的な移行の実行後に変更されたレコードに関する情報が含まれます。 データベーストリガーは、これらの追加テーブルへの入力に使用します。したがって、特定のテーブルに対して新しい処理が実行されている（レコードが追加/変更/削除されている）場合、これらのデータベーストリガーによって、この処理に関する情報が追加のテーブルに保存されます。 差分マイグレーションプロセスを実行すると、[!DNL Data Migration Tool] はこれらのテーブルをチェックして、未処理のレコードを探し、必要なコンテンツをMagento 2 データベースに移行します。
 
 それぞれの新しいテーブルには、次の内容が含まれます。
 
@@ -85,12 +85,12 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 >[!NOTE]
 >
->[!DNL Data Migration Tool] は、実行時に現在の進行状況を保存します。 エラーまたはユーザーの介入によって実行が停止した場合、ツールは前回正常起動時の状態から進捗を再開します。 [!DNL Data Migration Tool] を最初から強制的に実行するには、`--reset` 引数を使用します。 この場合、以前に移行したデータが重複しないように、Magento2 のデータベースダンプを復元することをお勧めします。
+>[!DNL Data Migration Tool] は、実行時に現在の進行状況を保存します。 エラーまたはユーザーの介入によって実行が停止した場合、ツールは前回正常起動時の状態から進捗を再開します。 [!DNL Data Migration Tool] を最初から強制的に実行するには、`--reset` 引数を使用します。 この場合、以前に移行したデータが重複しないように、Magento 2 データベースダンプを復元することをお勧めします。
 
 
 ## 一貫性エラーの可能性
 
-実行中に、[!DNL Data Migration Tool] はMagento1 とMagento2 のデータベース間の不整合を報告し、次のようなメッセージが表示される場合があります。
+実行中に、[!DNL Data Migration Tool] はMagento 1 とMagento 2 のデータベース間の不整合を報告し、次のようなメッセージが表示される場合があります。
 
 * `Source documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`
 * `Destination documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`

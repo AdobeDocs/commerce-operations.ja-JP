@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # サードパーティ拡張機能の管理
 
-Adobe Commerceの動作を拡張またはカスタマイズするコードは、拡張機能と呼ばれます。 オプションで、[ Commerce Marketplaceまたは別の拡張機能配布システムで ](https://commercemarketplace.adobe.com/) 拡張機能をパッケージ化して配布できます。
+Adobe Commerceの動作を拡張またはカスタマイズするコードは、拡張機能と呼ばれます。 オプションで、[Commerce Marketplace](https://commercemarketplace.adobe.com/) または別の拡張機能配布システムに拡張機能をパッケージ化して配布できます。
 
 拡張機能には次のものが含まれます。
 
@@ -20,7 +20,7 @@ Adobe Commerceの動作を拡張またはカスタマイズするコードは、
 - テーマ（ストアフロントと管理者のルックアンドフィールを変更）
 - 言語パッケージ （ストアフロントをローカライズおよび管理者）
 
-ここでは、コマンド ライン インターフェイスを使用して、（オンプレミス _プロジェクトのCommerce Marketplaceから購入したサード パーティ製の拡張機能を管理する方法について説明します_。 クラウドインフラストラクチャプロジェクトの場合は、[ 拡張機能の管理 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/extensions) を参照してください。
+ここでは、コマンドラインインターフェイスを使用して、（オンプレミス _プロジェクト用にCommerce Marketplaceから購入したサードパーティ製の拡張機能を管理する方法に_ いて説明します。 クラウドインフラストラクチャプロジェクトの場合は、[ 拡張機能の管理 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) を参照してください。
 
 _any_ 拡張機能のインストールにも同じ手順を使用できます。必要なのは、拡張機能の Composer 名とバージョンだけです。 これを見つけるには、拡張機能の `composer.json` ファイルを開き、`"name"` と `"version"` の値を確認します。
 
@@ -37,7 +37,7 @@ _any_ 拡張機能のインストールにも同じ手順を使用できます�
 
 拡張機能をインストールするには、次の手順を実行します。
 
-1. Commerce Marketplaceまたは別の拡張機能開発者から拡張機能を取得します。
+1. Commerce Marketplaceまたは他の拡張機能開発者から拡張機能を取得します。
 1. Commerce Marketplaceから拡張機能をインストールする場合は、`repo.magento.com` リポジトリが `composer.json` ファイルに存在することを確認します。
 
    ```bash
@@ -60,7 +60,7 @@ _any_ 拡張機能のインストールにも同じ手順を使用できます�
 
 Commerce Marketplaceから拡張機能の Composer 名とバージョンを取得するには：
 
-1. 拡張機能の購入に使用したユーザー名とパスワードを使用して [&#128279;](https://commercemarketplace.adobe.com/)Commerce Marketplaceにログインします。
+1. 拡張機能の購入に使用したユーザー名とパスワードを使用して [0}Commerce Marketplace} にログインします。](https://commercemarketplace.adobe.com/)
 
 1. 右上隅で、**あなたの名前**/**マイプロファイル** をクリックします。
 
@@ -76,7 +76,7 @@ Commerce Marketplaceから拡張機能の Composer 名とバージョンを取�
 
 >[!TIP]
 >
->または、Composer の名前とバージョン _any_ 拡張子（Commerce Marketplaceで購入したか他の場所で購入したか）は、拡張機能の `composer.json` ファイルにあります。
+>または、Composer の名前とバージョン _any_ 拡張子（Commerce Marketplaceまたは他の場所で購入した場合）は、拡張機能の `composer.json` ファイルで確認できます。
 
 ### Composer の依存関係の更新
 
@@ -156,7 +156,7 @@ bin/magento module:status
    bin/magento setup:upgrade
    ```
 
-1. プロジェクトの再コンパイル：実稼動モードでは、「Magentoコンパイルコマンドを再実行してください」というメッセージが表示される場合があります。 コンパイル コマンドを開発者モードで実行するように求めるメッセージは表示されません。
+1. プロジェクトの再コンパイル：実稼動モードでは、「Magento コンパイルコマンドを再実行してください」というメッセージが表示される場合があります。 コンパイル コマンドを開発者モードで実行するように求めるメッセージは表示されません。
 
    ```bash
    bin/magento setup:di:compile

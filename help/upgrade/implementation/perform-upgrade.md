@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->- クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、クラウドガイドの [Commerce バージョンのアップグレード ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=ja) を参照してください。
+>- クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、クラウドガイドの [Commerce バージョンのアップグレード ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) を参照してください。
 >- GitHub リポジトリのクローンを作成した場合は、この方法を使用してアップグレードしないでください。 [Git ベースのインストールのアップグレード ](../developer/git-installs.md) を参照してください。
 
 以下の手順は、Composer パッケージ マネージャを使用してアップグレードする方法を示しています。 Adobe Commerce 2.4.2 では、Composer 2 のサポートが導入されました。 &lt;2.4.1 からアップグレードする場合は、まず Composer 1 を使用して Composer 2 と互換性のあるバージョン（たとえば 2.4.2）にアップグレードする必要があります _前に_ 2.4.2 を超えるアップグレードについては Composer 2 にアップグレードします）。 また、PHP の [ サポート対象バージョン ](../../installation/system-requirements.md) を実行する必要があります。
@@ -48,13 +48,13 @@ ht-degree: 0%
 
 1. メッセージキューコンシューマーなどの非同期プロセスの実行中にアップグレードプロセスを開始すると、データが破損する可能性があります。 データの破損を防ぐには、すべての cron ジョブを無効にします。
 
-   _クラウドインフラストラクチャー上のAdobe Commerce:_
+   クラウドインフラストラクチャー上のAdobe Commerce（_A） :_
 
    ```bash
    ./vendor/bin/ece-tools cron:disable
    ```
 
-   _Magento Open Source:_
+   Magento Open Source（_D） :_
 
    ```bash
    bin/magento cron:remove
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 1. 必要に応じて、特定のパッケージを追加または削除します。
 
-   例えば、Magento Open SourceからAdobe Commerceにアップグレードする場合は、Magento Open Sourceパッケージを削除します。
+   例えば、Magento Open SourceからAdobe Commerceにアップグレードする場合は、Magento Open Source パッケージを削除します。
 
    ```bash
    composer remove magento/product-community-edition --no-update
@@ -88,13 +88,13 @@ ht-degree: 0%
    composer require <sample data module-1>:<version> ... <sample data module-n>:<version> --no-update
    ```
 
-   - _Adobe Commerce:_
+   - Adobe Commerce（_D） :_
 
      ```bash
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
      ```
 
-   - _Magento Open Source:_
+   - Magento Open Source（_D） :_
 
      ```bash
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
@@ -178,7 +178,7 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 ## メタデータを更新
 
-1. 必要に応じて、`composer.json` ファイルの `"name"`、`"version"`、`"description"` フィールドを更新します。
+1. 必要に応じて、`"name"` ファイルの `"version"`、`"description"`、`composer.json` フィールドを更新します。
 
    >[!NOTE]
    >

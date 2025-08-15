@@ -28,7 +28,7 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.4-p5 - 2.4.4-p11
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -44,7 +44,7 @@ Adobe Commerce [!UICONTROL B2B] モジュールがインストールされ、有
 1. 会社を作成します。
 1. *[!UICONTROL Purchase Order]* を作成します。
 1. 見積もりが期限切れになり、cron によって削除されるまで待ちます。 見積もりの有効期限は、**[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Sales]**/**[!UICONTROL Quotes]**/**[!UICONTROL General]**/**[!UICONTROL Default Expiration Period configuration]** で設定できます。
-1. *[!UICONTROL My Purchase Order in Customer Dashboard]* または `placeOrderForPurchaseOrder` のミューテーションを使用して、*[!UICONTROL Purchase Order]* を注文 [!DNL GraphQL] 変換します。
+1. *[!UICONTROL Purchase Order]* または *[!UICONTROL My Purchase Order in Customer Dashboard]* のミューテーションを使用して、[!DNL GraphQL] を注文 `placeOrderForPurchaseOrder` 変換します。
 
 <u> 期待される結果 </u>:
 
@@ -58,8 +58,8 @@ Adobe Commerce [!UICONTROL B2B] モジュールがインストールされ、有
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 

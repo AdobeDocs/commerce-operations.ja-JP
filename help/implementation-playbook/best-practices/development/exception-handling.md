@@ -31,7 +31,7 @@ try {
 }
 ```
 
-このアプローチでは、[PSR-3 コンテキスト標準 ](https://www.php-fig.org/psr/psr-3/#13-context) に従って、ログメッセージへの `$e->getMessage` ータと `$e` オブジェクトがコンテキストに自動的に保存されます。 これは `\Magento\Framework\Logger\Monolog::addRecord` で行われます。
+このアプローチでは、`$e->getMessage`PSR-3 コンテキスト標準 `$e` に従って、ログメッセージへの [ ータと ](https://www.php-fig.org/psr/psr-3/#13-context) オブジェクトがコンテキストに自動的に保存されます。 これは `\Magento\Framework\Logger\Monolog::addRecord` で行われます。
 
 ### ![correct](../../../assets/yes.svg) 信号をミュートする
 
@@ -88,7 +88,7 @@ try {
 
 ### ![ 正しくありません ](../../../assets/no.svg) ログに記録する前のロジック
 
-ログに記録する前のロジックは、別の例外や致命的なエラーを引き起こす可能性があり、例外がログに記録されないので、（正しい例 [&#128279;](#logging-always-comes-first) に置き換える必要があります 。
+ログに記録する前のロジックは、別の例外や致命的なエラーを引き起こす可能性があり、例外がログに記録されないので、（正しい例 [ に置き換える必要があります ](#logging-always-comes-first)。
 
 ```php
 try {

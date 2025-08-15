@@ -11,18 +11,18 @@ ht-degree: 0%
 
 # サンプルデータ Git リポジトリのクローン
 
-このトピックでは、Magento Open Source GitHub リポジトリのクローンを作成した場合に、サンプルデータをクローンして追加する方法について説明します。 この方法は、開発者（Magento Open Sourceコードベースにコントリビューションする予定の開発者）のみを対象としています。
+このトピックでは、Magento Open Source GitHub リポジトリのクローンを作成した場合に、サンプルデータをクローンして追加する方法について説明します。 この手法は、コントリビューションをおこなう開発者（Magento Open Source コードベースにコントリビューションする予定の開発者）のみを対象としています。
 
 コントリビューションを行う開発者でない場合は、ページの左側にある目次に表示されている他のオプションの 1 つを選択します。
 
 コントリビューションを行う開発者は、次の条件が満たされる場合に、このサンプルデータのインストール方法を使用できます *のみ*。
 
-* Magento Open Sourceを使用している場合
+* Magento Open Sourceの使用
 * [GitHub リポジトリのクローンを作成しました ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 >[!WARNING]
 >
->サンプルデータは、`develop` ブランチ（より最新）またはリリースされたブランチ（より安定した `2.4` など）で使用できます。 リリース済みのブランチは安定性が高いので、使用することをお勧めします。 リポジトリにコードを提供していて、最新のコードが必要な場合は、`develop` ブランチを使用します。 選択するブランチに関係なく、Magento Open Source GitHub リポジトリの対応するブランチを [ クローン ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) する必要があります。 例えば、`develop` 分岐のサンプルデータは、Magento Open Source `develop` 分岐と共に *のみ* 使用できます。
+>サンプルデータは、`develop` ブランチ（より最新）またはリリースされたブランチ（より安定した `2.4` など）で使用できます。 リリース済みのブランチは安定性が高いので、使用することをお勧めします。 リポジトリにコードを提供していて、最新のコードが必要な場合は、`develop` ブランチを使用します。 選択するブランチに関係なく、Magento Open Source GitHub リポジトリの対応するブランチを [ クローン ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) する必要があります。 例えば、`develop` ブランチのサンプルデータは、Magento Open Source *ブランチと共に* のみ `develop` 使用できます。
 
 ## サンプルデータリポジトリのクローンの作成
 
@@ -159,7 +159,7 @@ HTTPS プロトコルを使用してサンプルデータ GitHub リポジトリ
 
 ## ファイルシステムの所有権と権限の設定
 
-`php build-sample-data.php` スクリプトはサンプル・データ・リポジトリとMagento Open Source・リポジトリの間にシンボリック・リンクを作成するため、サンプル・データ・リポジトリ内のファイル・システム権限と所有権を設定する必要があります。 これをおこなわないと、ストアフロントへのアクセスでエラーが発生します。
+`php build-sample-data.php` スクリプトは、サンプルデータリポジトリとMagento Open Source リポジトリの間にシンボリックリンクを作成するので、ファイルシステムの権限と所有権をサンプルデータリポジトリで設定する必要があります。 これをおこなわないと、ストアフロントへのアクセスでエラーが発生します。
 
 サンプルデータリポジトリに対するファイルシステムの権限と所有権を設定するには、次の手順に従います。
 

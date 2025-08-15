@@ -38,13 +38,13 @@ ht-degree: 0%
 
 共有設定は `app/etc/config.php` に保存され、ソース管理下に置く必要があります。
 
-開発環境（またはクラウドインフラストラクチャー上のAdobe Commerce _integration_）システムの管理者で共有設定を指定し、[`magento app:config:dump` コマンドを使用して設定を `config.php` に書き込みます ](../cli/export-configuration.md)。
+開発環境（またはクラウドインフラストラクチャー上のAdobe Commerce _integration_）システムの管理者で共有設定を指定し、`config.php` コマンドを使用して設定を [`magento app:config:dump` に書き込みます ](../cli/export-configuration.md)。
 
 ### システム固有の設定の管理
 
 システム固有の設定は `app/etc/env.php` に保存されますが、これはソース管理 _にすべきではありません_。
 
-開発（またはクラウドインフラストラクチャ統合のAdobe Commerce）システムの管理者でシステム固有の設定を行い、[`magento app:config:dump` コマンドを使用して設定を `env.php` に書き込みます ](../cli/export-configuration.md)。
+開発（またはクラウドインフラストラクチャ統合のAdobe Commerce）システムの管理者でシステム固有の設定を行い、`env.php` コマンドを使用して設定を [`magento app:config:dump` に書き込みます ](../cli/export-configuration.md)。
 
 また、このコマンドは `env.php` に機密設定を書き込みます。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 次のいずれかの方法で、機密性の高い設定を管理できます。
 
 - 環境変数
-- [`magento config:set:sensitive` コマンドを使用して、実稼動システムの `env.php` に機密性の高い設定を保存し ](../cli/set-configuration-values.md) す。
+- `env.php` コマンドを使用して、実稼動システムの [`magento config:set:sensitive` に機密性の高い設定を保存し ](../cli/set-configuration-values.md) す。
 
 ### 設定は管理者でロックされています
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
   実稼動モードに切り替える前に、これらの変更を行うことをお勧めします。
 
-  環境変数またはパス `general/locale/code` を指定した `config:set` CLI コマンドを使用して、ロケールを引き続き設定できます。
+  環境変数またはパス `config:set` を指定した `general/locale/code` CLI コマンドを使用して、ロケールを引き続き設定できます。
 
 ## Cron のインストールと削除
 
@@ -127,7 +127,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->上記のアプローチに注意してください。 `generated` または `pub` フォルダー内の `.htacces` のファイルを削除すると、問題が発生する可能性があります。
+>上記のアプローチに注意してください。 `.htacces` または `generated` フォルダー内の `pub` のファイルを削除すると、問題が発生する可能性があります。
 
 ### システムを構築
 
@@ -164,13 +164,13 @@ ht-degree: 0%
 
 設定の管理に役立つ次のコマンドを提供します。
 
-- `config.php` および `env.php` に管理者構成設定を書き込むことがで [`magento app:config:dump`](../cli/export-configuration.md) ない（機密設定を除く）
+- [`magento app:config:dump`](../cli/export-configuration.md) および `config.php` に管理者構成設定を書き込むことがで `env.php` ない（機密設定を除く）
 - 実稼動システムでシステム固有の設定の値を設定で [`magento config:set`](../cli/set-configuration-values.md) ます。
 
   オプションの `--lock` オプションを使用して、管理画面でオプションをロックします（つまり、設定を編集不可にします）。 設定が既にロックされている場合は、`--lock` のオプションを使用して設定を変更します。
 
 - 実稼動システムで機密設定の値を設定で [`magento config:sensitive:set`](../cli/set-configuration-values.md) ます。
-- `config.php` および `env.php` から実稼動システムに設定変更を読み込むことがで [`magento app:config:import`](../cli/import-configuration.md) ません。
+- [`magento app:config:import`](../cli/import-configuration.md) および `config.php` から実稼動システムに設定変更を読み込むことがで `env.php` ません。
 
 ## 設定管理の例
 
@@ -178,9 +178,9 @@ ht-degree: 0%
 
 ### デフォルトのロケールの変更
 
-このセクションには、管理（**ストア**/設定/**設定**/一般/**一般**/**ロケールオプション**）を使用してデフォルトの重み付け単位を変更した場合に `config.php` に加えられた変更が表示されます。
+このセクションには、管理（`config.php` ストア **/設定/** 設定 **/一般/** 一般 **/** ロケールオプション **）を使用してデフォルトの重み付け単位を変更した場合に** に加えられた変更が表示されます。
 
-管理者で変更を行った後、`bin/magento app:config:dump` を実行して値を `config.php` に書き込みます。 この値は、次に示すように、`locale` の下の `general` 配列に書き込ま `config.php` ます。
+管理者で変更を行った後、`bin/magento app:config:dump` を実行して値を `config.php` に書き込みます。 この値は、次に示すように、`general` の下の `locale` 配列に書き込ま `config.php` ます。
 
 ```php
 'general' =>

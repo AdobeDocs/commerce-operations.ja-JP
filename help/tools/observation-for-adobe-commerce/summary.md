@@ -1,6 +1,6 @@
 ---
 title: 「[!UICONTROL Summary]」タブ
-description: ' [!DNL Observation for Adobe Commerce] の「[!UICONTROL Summary]」タブについて説明します。'
+description: '[!UICONTROL Summary] の「 [!DNL Observation for Adobe Commerce]」タブについて説明します。'
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
 source-git-commit: 790089c178570ee69f33cc04b17800db5563741e
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 「[!UICONTROL Summary]」タブ
 
-[!DNL Observation for Adobe Commerce] の「[!UICONTROL Summary]」タブを使用すると、サイトで発生した問題をすばやく確認して、サイトの問題の潜在的な根本原因を自動解決または特定するのに役立ちます。 追加のタブでは、コンポーネント・サービス、データベース、インフラストラクチャ、プロセスの状態に関する詳細な情報を提供します。
+[!UICONTROL Summary] の「[!DNL Observation for Adobe Commerce]」タブを使用すると、サイトで発生した問題をすばやく確認して、サイトの問題の潜在的な根本原因を自動解決または特定するのに役立ちます。 追加のタブでは、コンポーネント・サービス、データベース、インフラストラクチャ、プロセスの状態に関する詳細な情報を提供します。
 
 ## [!UICONTROL Transaction Overview]
 
 ![ 取引の概要 ](../../assets/tools/transaction-overview.jpg)
 
-### [ トランザクションとは ](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&amp;text=For%20APM%2C%20it%20will%20often, when%20the%20response%20is%20sent)
+### [ トランザクションとは ](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often, when%20the%20response%20is%20sent)
 
 「[!DNL New Relic] 時点では、トランザクションは、ソフトウェアアプリケーション内の 1 つの作業の論理単位として定義されています。 具体的には、その作業単位を構成する関数呼び出しとメソッド呼び出しを指します。 多くの場合、web トランザクションを指します。これは、アプリケーションが web リクエストを受信したときから応答が送信されたときに発生するアクティビティを表します。」
 
@@ -56,9 +56,9 @@ ht-degree: 0%
 
 ## [!UICONTROL CPU % by host]
 
-![ ホスト別の CPU パーセント ](../../assets/tools/cpu-percent-by-host.jpg)
+![ ホスト別のCPUの割合 ](../../assets/tools/cpu-percent-by-host.jpg)
 
-すべての環境とノードの集計が **[!UICONTROL CPU % by host]** のフレームに表示されます。 非実稼動環境の選択を解除する必要があります。 また、実稼動環境のすべてのノードが存在しないインスタンスも注目してください。 CPU 高使用率に関するヒントについて詳しくは、[Adobe CommerceでNew Relicを使用したパフォーマンスのトラブルシューティング ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=ja) を参照してください。
+すべての環境とノードの集計が **[!UICONTROL CPU % by host]** のフレームに表示されます。 非実稼動環境の選択を解除する必要があります。 また、実稼動環境のすべてのノードが存在しないインスタンスも注目してください。 CPUの使用率が高い場合のヒントについて詳しくは、[Adobe CommerceでNew Relicを使用したパフォーマンスのトラブルシューティング ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html) を参照してください。
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -68,9 +68,9 @@ ht-degree: 0%
 
 ## [!UICONTROL CPU Usage]
 
-![CPU 使用率 ](../../assets/tools/cpu-usage.jpg)
+![CPUの使用状況 ](../../assets/tools/cpu-usage.jpg)
 
-**[!UICONTROL CPU Usage]** フレームが空白の場合は、[!DNL New Relic] のインフラストラクチャアプリケーションが有効になっていないことを示します。 サイトが Starter 上にある場合、この情報は表示されません。 サイトが Pro の場合は、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja) を開いて、サイトを有効に [!DNL New Relic Infrastructure] ます。
+**[!UICONTROL CPU Usage]** フレームが空白の場合は、[!DNL New Relic] のインフラストラクチャアプリケーションが有効になっていないことを示します。 サイトが Starter 上にある場合、この情報は表示されません。 サイトが Pro の場合は、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) を開いて、サイトを有効に [!DNL New Relic Infrastructure] ます。
 
 ## [!UICONTROL Average Response Time]
 
@@ -116,7 +116,7 @@ ht-degree: 0%
 * &#39;% 注意：コマンド生成が完了しました %&#39;）を&#39;gen_compl&#39;として生成します
 * &#39;%NOTICE: Deployment completed%&#39;）を&#39;deploy_compl&#39;として設定します
 * &#39;%NOTICE: ポスト デプロイを開始しています。%&#39;） as &#39;start_pdeploy&#39;
-* &#39;%NOTICE: Post-deploy is complete%&#39;）を&#39;pdeploy&#39;として
+* &#39;%NOTICE: Post-deploy is complete%&#39;） as &#39;pdeploy&#39;
 * &#39;%deploy-complete%&#39;）を&#39;cl_deploy_compl&#39;として使用します。
 
 ## [!UICONTROL IP Frequency]
@@ -245,7 +245,7 @@ ht-degree: 0%
 
 ![ データベース トレース ](../../assets/tools/database-traces.jpg)
 
-**[!UICONTROL Database traces]** フレームは、[!DNL New Relic] の [sql trace](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/) エンティティからのデータを参照し、トレースのパスを返します。
+**[!UICONTROL Database traces]** フレームは、[ の ](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/)sql trace[!DNL New Relic] エンティティからのデータを参照し、トレースのパスを返します。
 
 ## [!UICONTROL Database mysql-slow.log]
 
@@ -310,7 +310,7 @@ PHP プロセスの動作は [configuration](https://www.php.net/manual/en/insta
 
 ![php プロセス ](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/) は、[!DNL Nginx] で使用される [!UICONTROL FastCGI Process Manager] です。 システム要件については、[Adobe Commerceのバージョンにマッピングされる PHP のバージョン要件 ](../../installation/system-requirements.md) を参照してください。 **[!UICONTROL PHP processes]** のフレームは、選択したタイムラインの特定の時点で実行されている PHP プロセスの数を示します。
+[PHP-FPM](https://php-fpm.org/) は、[!UICONTROL FastCGI Process Manager] で使用される [!DNL Nginx] です。 システム要件については、[Adobe Commerceのバージョンにマッピングされる PHP のバージョン要件 ](../../installation/system-requirements.md) を参照してください。 **[!UICONTROL PHP processes]** のフレームは、選択したタイムラインの特定の時点で実行されている PHP プロセスの数を示します。
 
 ## [!UICONTROL Secondary processes]
 
@@ -360,7 +360,7 @@ PHP プロセスの動作は [configuration](https://www.php.net/manual/en/insta
 
 ![ 注文トランザクションのデフォルト ](../../assets/tools/order-transactions-default.jpg)
 
-**[!UICONTROL Order transactions (default?)]** フレームは、名前= `WebTransaction/Action/checkout/onepage/success` のトランザクションから `request.headers.host` まるトランザクションを検索します。 注文成功 URL が異なる場合、このフレームにはデータがありません。
+**[!UICONTROL Order transactions (default?)]** フレームは、名前= `request.headers.host` のトランザクションから `WebTransaction/Action/checkout/onepage/success` まるトランザクションを検索します。 注文成功 URL が異なる場合、このフレームにはデータがありません。
 
 ## [!UICONTROL Elasticsearch Index information]
 
@@ -380,11 +380,11 @@ PHP プロセスの動作は [configuration](https://www.php.net/manual/en/insta
 
 * 「all_shards_failed」として「%all shards failed%」
 * &#39;%NoNodesAvailableException%&#39;を&#39;no_alive_nodes&#39;として
-* &#39;%PHP Fatal error: Uncaught Error: Elasticsearch%&#39;のパラメータが間違っています
-* &#39;% この問題を解決するには、Magento クラウド インフラストラクチャのElasticsearch サービスを&#39;ver_err&#39;として version%&#39;にアップグレードします
+* &#39;%PHP Fatal error: Uncaught Error: Elasticsearch%&#39;の間違ったパラメータを&#39;wrong_param&#39;として設定します
+* &#39;% この問題は、Magento Cloud インフラストラクチャのElasticsearch サービスを&#39;ver_err&#39;として version%&#39;にアップグレードすることで解決できます。
 * &#39;%cluster の正常性状態が\[YELLOW\] から\[RED\] に変更されました（理由：%&#39;が&#39;yel_red&#39;です）
 * &#39;%No space on device%&#39; as &#39;no_space&#39;
-* &#39;% は、&#39;failed_query&#39;として &lbrack;SearchRequest&lbrace;searchType=%&#39;を実行できませんでした
+* &#39;% は、&#39;failed_query&#39;として [SearchRequest{searchType=%&#39;を実行できませんでした
 
 ## [!UICONTROL Cron view]
 

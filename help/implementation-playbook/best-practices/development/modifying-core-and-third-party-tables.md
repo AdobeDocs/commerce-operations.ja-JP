@@ -42,7 +42,7 @@ GraphQLでの API メッシュの使用について詳しくは、[API メッシ
 
 ## 拡張属性を持つ従来のデータの移行
 
-従来のデータを移行する必要がある場合、または新しいデータを [!DNL Adobe Commerce] に保存する必要がある場合は、Adobeでは [extension attributes](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"} を使用することをお勧めします。 拡張属性を使用して追加データを保存すると、次の利点があります。
+従来のデータを移行する必要がある場合、または新しいデータを [!DNL Adobe Commerce] に保存する必要がある場合、Adobeでは [extension attributes](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"} を使用することをお勧めします。 拡張属性を使用して追加データを保存すると、次の利点があります。
 
 - 永続化するデータおよびデータベース構造を制御できます。これにより、データが正しい列タイプおよび適切なインデックスで保存されます。
 - [!DNL Adobe Commerce] のほとんどのエンティティは、拡張属性の使用をサポートしています。
@@ -54,7 +54,7 @@ GraphQLでの API メッシュの使用について詳しくは、[API メッシ
 
 GraphQL メッシュやAdobe App Builderなど、[!DNL Adobe Commerce] 環境以外のツールの使用を常に検討することが開発者にとって不可欠です。 これらのツールは、データへのアクセスを保持するのに役立ちますが、コアコマースアプリケーションやその基礎となるデータベーステーブルには影響しません。 このアプローチでは、API を通じてデータを公開します。 次に、データソースをApp Builder設定に追加します。 GraphQL Mesh を使用すると、これらのデータソースを組み合わせ、[ 従来のデータ ](#legacy-data) で説明されているように 1 つの応答を生成できます。
 
-GraphQL メッシュについて詳しくは、[GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"} を参照してください。 App BuilderのAdobeについて詳しくは、[App Builderの概要 ](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=ja){target="_blank"} を参照してください。
+GraphQL メッシュについて詳しくは、[GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"} を参照してください。 Adobe App Builderについて詳しくは、[App Builderの概要 ](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"} を参照してください。
 
 ## コアテーブルまたはサードパーティのテーブルの変更
 
@@ -73,9 +73,9 @@ Adobeでは、コアデータベーステーブルまたはサードパーティ
 
    例：`app/code/YourCompany/Customer`
 
-1. 適切なファイルを作成してモジュールを有効にします（[ モジュールの作成 ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=ja){target="_blank"}。
+1. 適切なファイルを作成してモジュールを有効にします（[ モジュールの作成 ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}。
 
-1. `etc` フォルダー内に `db_schema.xml` というファイルを作成し、適切な変更を加えます。
+1. `db_schema.xml` フォルダー内に `etc` というファイルを作成し、適切な変更を加えます。
 
    必要に応じて、`db_schema_whitelist.json` ファイルを生成します。 詳しくは、[ 宣言型スキーマ ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"} を参照してください。
 

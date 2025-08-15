@@ -62,7 +62,7 @@ server {
 >
 >詳しくは、[ 前提条件 ](../prerequisites/overview.md) および [ インストールガイド ](../overview.md) を参照してください。
 
-## 1. サーバー設定を編集する
+## &#x200B;1. サーバー設定を編集する
 
 仮想ホストファイルの名前と場所は、実行している Apache のバージョンによって異なります。 この例は、Apache v2.4 上の仮想ホストファイルの名前と場所を示しています。
 
@@ -73,7 +73,7 @@ server {
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
-1. `DocumentRoot` ディレクティブへの `pub/` ディレクトリへのパスを追加します。
+1. `pub/` ディレクティブへの `DocumentRoot` ディレクトリへのパスを追加します。
 
    ```conf
    <VirtualHost *:80>
@@ -96,7 +96,7 @@ server {
    systemctl restart apache2
    ```
 
-## 2. ベース URL を更新する
+## &#x200B;2. ベース URL を更新する
 
 サーバーのホスト名または IP アドレスにディレクトリ名を追加して、アプリケーションのインストール時にベース URL を作成した場合は（例：`http://192.168.33.10/magento2`）、削除する必要があります。
 
@@ -122,7 +122,7 @@ server {
    UPDATE core_config_data SET value='http://192.168.33.10' WHERE path='web/unsecure/base_url';
    ```
 
-## 3. env.php ファイルを更新する
+## &#x200B;3. env.php ファイルを更新する
 
 `env.php` ファイルに次のノードを追加します。
 
@@ -134,9 +134,9 @@ server {
 
 詳しくは、[env.php リファレンス ](../../configuration/reference/config-reference-envphp.md) を参照してください。
 
-## 4. スイッチモード
+## &#x200B;4. スイッチモード
 
-`production` と `developer` を含む [ アプリケーションモード ](../../configuration/bootstrap/application-modes.md) は、セキュリティを向上させ、開発を容易にするために設計されています。 名前が示すように、アプリケーションを拡張またはカスタマイズする場合は `developer` モードに切り替え、実稼働環境で実行する場合は `production` モードに切り替える必要があります。
+[ と ](../../configuration/bootstrap/application-modes.md) を含む `production` アプリケーションモード `developer` は、セキュリティを向上させ、開発を容易にするために設計されています。 名前が示すように、アプリケーションを拡張またはカスタマイズする場合は `developer` モードに切り替え、実稼働環境で実行する場合は `production` モードに切り替える必要があります。
 
 モードの切り替えは、サーバー設定が正しく動作していることを確認するための重要な手順です。 CLI ツールを使用してモードを切り替えることができます。
 
@@ -164,7 +164,7 @@ server {
 
 1. ブラウザーを更新し、ストアフロントが正しく表示されていることを確認します。
 
-## 5. ストアフロントを確認する
+## &#x200B;5. ストアフロントを確認する
 
 Web ブラウザーでストアフロントに移動して、すべてが機能していることを確認します。
 

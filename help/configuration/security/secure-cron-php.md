@@ -161,7 +161,7 @@ Commerceには、最適化されたサンプルの nginx 設定ファイルが�
    }
    ```
 
-1. nginx を再起動します。
+&#x200B;1. nginx を再起動します。
 
 ```bash
 systemctl restart nginx

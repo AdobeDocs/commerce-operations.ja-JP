@@ -35,7 +35,7 @@ Adobe Commerceには、[!UICONTROL Update on Save] と [!DNL Update on Schedule]
 サイトのパフォーマンスを最大化するには、インデックス作成に関する次のベストプラクティスに従います。
 
 - インデックス設定を確認します。
-- 大規模なサイトや、頻繁に更新が行われ、トラフィックが多いサイトでは、インデクサーを _[!UICONTROL Update on Schedule]_&#x200B;に設定します。 [ インデックス管理 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management#change-the-index-mode) を参照してください。
+- 大規模なサイトや、頻繁に更新が行われ、トラフィックが多いサイトでは、インデクサーを _[!UICONTROL Update on Schedule]_に設定します。 [ インデックス管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode) を参照してください。
 - インデックス管理については、[ パフォーマンスのベストプラクティス ](../../../performance/configuration.md) に従ってください。
 
 >[!IMPORTANT]
@@ -48,5 +48,5 @@ Adobe Commerceには、[!UICONTROL Update on Save] と [!DNL Update on Schedule]
 ## 追加情報
 
 - [管理者ユーザー向けのインデックス管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Magento CLI を使用したインデックス管理 ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=ja)
+- [Magento CLI を使用したインデックス管理 ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [ 開発者向けのインデックス作成の概要 ](https://developer.adobe.com/commerce/php/development/components/indexing/)

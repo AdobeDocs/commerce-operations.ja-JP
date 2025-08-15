@@ -19,8 +19,8 @@ ht-degree: 0%
 QPT v1.1.27 には、次のパッチが含まれています。
 
 1. ACSD-48362：交渉可能な見積もりを使用して注文を行う際に、新しい配送先住所の代わりにデフォルトの配送先住所が使用される問題を修正しました。
-1. ACSD-48059:[!UICONTROL Visual Merchandiser] で、マーチャントが [!UICONTROL Categories] 属性の「[!UICONTROL Match product by rule]」を保存できない問題を修正しました。
-1. ACSD-48216:[!UICONTROL UPDATE] 操作で [!UICONTROL inventory_source_item] テーブルの [!UICONTROL AUTO_INCREMENT] が増加する問題を修正しました。
+1. ACSD-48059:[!UICONTROL Visual Merchandiser] で、マーチャントが [!UICONTROL Match product by rule] 属性の「[!UICONTROL Categories]」を保存できない問題を修正しました。
+1. ACSD-48216:[!UICONTROL AUTO_INCREMENT] 操作で [!UICONTROL inventory_source_item] テーブルの [!UICONTROL UPDATE] が増加する問題を修正しました。
 1. ACSD-47908：チェックアウト時の出荷手順でソースと数量を選択する際に、「0 以下の値を想定しています」というエラーが修正されました。
 1. ACSD-49497：発送後に注文が処理状態のままになり、部分的な払い戻しが適用される問題を修正しました。
 1. ACSD-48694:「無効な状態変更がリクエストされました」エラーにより、お客様の注文が妨げられている問題を修正しました。

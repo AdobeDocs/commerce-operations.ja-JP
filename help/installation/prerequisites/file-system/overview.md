@@ -59,7 +59,7 @@ Adobe Commerceでは、3 ビットのデフォルトマスク `002` が使用さ
 - 開発者
 - 実稼動
 
-_設定ガイド_ の [ モードについて ](../../../configuration/bootstrap/application-modes.md) を参照してください。
+[ 設定ガイド ](../../../configuration/bootstrap/application-modes.md) の _モードについて_ を参照してください。
 
 さらに、「構成ガイド [ の「ファイル・システムのアクセス権限 ](../../../configuration/deployment/file-system-permissions.md) におけるアクセス権限の推奨事項 _についても説明_ ます。
 

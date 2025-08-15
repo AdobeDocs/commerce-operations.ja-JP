@@ -148,9 +148,9 @@ Cron ジョブからのすべての例外は `\Magento\Cron\Observer\ProcessCron
 
 - `ERROR` および `MISSED` のステータスを持つ失敗したジョブが `<install_directory>/var/log/support_report.log` に記録されます。
 
-- `ERROR` ステータスのジョブは、常に `<install_directory>/var/log/exception.log` で `CRITICAL` として記録されます。
+- `ERROR` ステータスのジョブは、常に `CRITICAL` で `<install_directory>/var/log/exception.log` として記録されます。
 
-- `MISSED` ステータスのジョブは、`<install_directory>/var/log/debug.log` ディレクトリに `INFO` として記録されます（開発者モードのみ）。
+- `MISSED` ステータスのジョブは、`INFO` ディレクトリに `<install_directory>/var/log/debug.log` として記録されます（開発者モードのみ）。
 
 >[!INFO]
 >

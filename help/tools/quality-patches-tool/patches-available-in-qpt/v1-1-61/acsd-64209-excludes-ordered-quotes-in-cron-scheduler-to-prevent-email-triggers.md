@@ -28,7 +28,7 @@ ACSD-64209 パッチは、cron スケジューラーがステータス **[!UICON
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -38,7 +38,7 @@ cron スケジューラーは、ステータスが **[!UICONTROL Ordered]** の�
 
 
 1. *管理者* サイドバーで、**[!UICONTROL Stores]**/*[!UICONTROL Settings]*/**[!UICONTROL Configuration]**/**[!UICONTROL B2B Features]** に移動し、「会社と B2B 見積」を有効にします。
-1. *管理者*/**[!UICONTROL Stores]**/*[!UICONTROL Settings]*/**[!UICONTROL Configuration]**/**[!UICONTROL Sales]**/**[!UICONTROL Quotes]**/**[!UICONTROL General]** で、**[!UICONTROL Default Expiration Period]** を *1* に設定します。
+1. **[!UICONTROL Default Expiration Period]** 管理者 */*/*/*/**[!UICONTROL Stores]**/*[!UICONTROL Settings]*/**[!UICONTROL Configuration]** で、**[!UICONTROL Sales]** を **[!UICONTROL Quotes]** 1 **[!UICONTROL General]** に設定します。
 1. 会社を作成してアクティブにし、会社管理者としてログインします。
 1. 商品を買い物かごに追加します。
 1. 見積もりを依頼します。
@@ -62,8 +62,8 @@ cron スケジューラーは、ステータスが **[!UICONTROL Ordered]** の�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 

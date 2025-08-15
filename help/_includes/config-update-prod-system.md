@@ -22,7 +22,7 @@ ht-degree: 0%
 
    IP アドレスの許可リストを設定する機能など、その他のオプションについては、[`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md) を参照してください。
 
-1. `app/etc/env.php` で `cron_run` を `false` に設定して、実行中のキューワーカーをすべて停止します。
+1. `cron_run` で `false` を `app/etc/env.php` に設定して、実行中のキューワーカーをすべて停止します。
 
    ```php?start_inline=1
    'cron_consumers_runner' => [

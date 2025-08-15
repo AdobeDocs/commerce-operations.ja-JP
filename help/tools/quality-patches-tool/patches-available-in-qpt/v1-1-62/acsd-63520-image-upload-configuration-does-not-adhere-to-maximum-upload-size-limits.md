@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-63520:[!UICONTROL Image Upload Configuration] 経由でアップロードされた画像が、設定されたサイズ制限を超えています
 
-ACSD-63520 パッチは、[!UICONTROL Images Upload Configuration] を介してアップロードされた画像が、設定された最大アップロードサイズの制限に従わない問題を解決します。 この問題に対処するには、[!UICONTROL Admin] ントロールパネルで [!UICONTROL Images Upload Configuration] の設定を行います。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62 がインストールされている場合に使用できます。 パッチ ID は ACSD-63520 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-63520 パッチは、[!UICONTROL Images Upload Configuration] を介してアップロードされた画像が、設定された最大アップロードサイズの制限に従わない問題を解決します。 この問題に対処するには、[!UICONTROL Images Upload Configuration] ントロールパネルで [!UICONTROL Admin] の設定を行います。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62 がインストールされている場合に使用できます。 パッチ ID は ACSD-63520 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -26,11 +26,11 @@ ACSD-63520 パッチは、[!UICONTROL Images Upload Configuration] を介して�
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがお使いの [!DNL Adobe Commerce] バージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: パッチを検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがお使いの [!DNL Adobe Commerce] バージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: パッチを検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-[!UICONTROL Admin] パネルの [!UICONTROL Images Upload Configuration] を使用してアップロードされた画像は、最大アップロードサイズの制限に従いません。
+[!UICONTROL Images Upload Configuration] パネルの [!UICONTROL Admin] を使用してアップロードされた画像は、最大アップロードサイズの制限に従いません。
 
 <u> 再現手順 </u>:
 
@@ -65,8 +65,8 @@ ACSD-63520 パッチは、[!UICONTROL Images Upload Configuration] を介して�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 

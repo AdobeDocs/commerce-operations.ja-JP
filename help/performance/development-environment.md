@@ -1,5 +1,5 @@
 ---
-title: 開発環境Recommendations
+title: 開発環境の推奨事項
 description: ローカルのAdobe Commerce開発環境を設定するためのパフォーマンスの推奨事項について説明します。
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
@@ -39,8 +39,8 @@ ht-degree: 0%
   bin/magento setup:static-content:deploy
   ```
 
-  開発モードでは、Magentoはオンデマンドでサムネールを実行するので、ユーザーは実行する必要はありません。
+  開発モードでは、Magentoがオンデマンドで実行するので、ユーザーが実行する必要はありません。
 
 ## 仮想マシンの通常のページ読み込み時間
 
-VM 上で開発を行い、Magentoページの読み込みに 2 秒以上かかる場合は、環境設定を確認してください。
+VM 上で開発を行い、Magento ページの読み込みに 2 秒以上かかる場合は、環境設定を確認してください。

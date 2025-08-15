@@ -74,9 +74,9 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 [!DNL JavaScript] のバンドルの目的は、ブラウザーに読み込まれる各ページに対してリクエストされるアセットの数とサイズを減らすことです。 これを行うには、バンドルをビルドして、ストアの各ページがアクセスした各ページに対して共通のバンドルとページ固有のバンドルのみをダウンロードする必要があります。
 
-これを実現する 1 つの方法は、ページのタイプによってバンドルを定義することです。 [!DNL Commerce] のページは、カテゴリ、製品、CMS、顧客、買い物かご、チェックアウトを含む複数のページタイプに分類できます。 これらのページタイプのいずれかに分類されたページごとに、異なる RequireJS モジュール依存関係のセットがあります。 ページタイプ別に RequireJS モジュールをバンドルすると、ストア内のページの依存関係をカバーするバンドルが 1 つだけになります。
+これを実現する 1 つの方法は、ページのタイプによってバンドルを定義することです。 [!DNL Commerce] のページは、カテゴリ、商品、CMS、カスタマー、買い物かご、チェックアウトなど、複数のページタイプに分類できます。 これらのページタイプのいずれかに分類されたページごとに、異なる RequireJS モジュール依存関係のセットがあります。 ページタイプ別に RequireJS モジュールをバンドルすると、ストア内のページの依存関係をカバーするバンドルが 1 つだけになります。
 
-例えば、すべてのページに共通の依存関係のバンドル、CMS のみのページのバンドル、カタログのみのページのバンドル、検索のみのページの別のバンドル、チェックアウトページのバンドルを作成できます。
+例えば、すべてのページに共通の依存関係のバンドル、CMSのみのページのバンドル、カタログのみのページのバンドル、検索のみのページの別のバンドル、チェックアウトページのバンドルを作成できます。
 
 共通機能、製品関連機能、発送機能、チェックアウト機能、税金、フォーム検証用に、目的に応じてバンドルを作成することもできます。 バンドルの定義方法は、ユーザー次第であり、ストアの構造も同じです。 一部のバンドル戦略が他の戦略よりも効果的な場合があります。
 
@@ -102,7 +102,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 #### 1\. build.js ファイルの追加
 
-[!DNL Commerce] ルートディレクトリに `build.js` ファイルを作成します。 このファイルには、バンドルのビルド設定全体が含まれます。
+`build.js` ルートディレクトリに [!DNL Commerce] ファイルを作成します。 このファイルには、バンドルのビルド設定全体が含まれます。
 
 ```javascript
 ({
@@ -131,11 +131,11 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 #### 3\. requirejs-config.js インスタンス値を集計します
 
-この手順では、ストアの `requirejs-config.js` ファイルの複数の `deps`、`shim`、`paths`、`map` 設定ノードをすべて、`build.js` ファイルの対応するノードに集計する必要があります。 これを行うには、ブラウザーのデベロッパーツールパネルの「**[!UICONTROL Network]**」タブを開き、ホームページなど、ストア内の任意のページに移動します。 「ネットワーク」タブで、上部付近の `requirejs-config.js` ファイルのストアのインスタンスが表示され、次のようにハイライト表示されます。
+この手順では、ストアの `deps` ファイルの複数の `shim`、`paths`、`map`、`requirejs-config.js` 設定ノードをすべて、`build.js` ファイルの対応するノードに集計する必要があります。 これを行うには、ブラウザーのデベロッパーツールパネルの「**[!UICONTROL Network]**」タブを開き、ホームページなど、ストア内の任意のページに移動します。 「ネットワーク」タブで、上部付近の `requirejs-config.js` ファイルのストアのインスタンスが表示され、次のようにハイライト表示されます。
 
 ![RequireJS 設定 ](../assets/performance/images/RequireJSConfig.png)
 
-このファイル内には、設定ノード（`deps`、`shim`、`paths`、`map`）ごとに複数のエントリがあります。 これらの複数のノード値を、build.js ファイルの単一の設定ノードに集計する必要があります。 例えば、ストアの `requirejs-config.js` インスタンスに 15 個の個別の `map` ノードのエントリがある場合、15 個のノードすべてのエントリを `build.js` ファイルの単一の `map` ノードに結合する必要があります。 `deps`、`shim`、`paths` の各ノードについても同じことが言えます。 このプロセスを自動化するスクリプトがないと、時間がかかる場合があります。
+このファイル内には、設定ノード（`deps`、`shim`、`paths`、`map`）ごとに複数のエントリがあります。 これらの複数のノード値を、build.js ファイルの単一の設定ノードに集計する必要があります。 例えば、ストアの `requirejs-config.js` インスタンスに 15 個の個別の `map` ノードのエントリがある場合、15 個のノードすべてのエントリを `map` ファイルの単一の `build.js` ノードに結合する必要があります。 `deps`、`shim`、`paths` の各ノードについても同じことが言えます。 このプロセスを自動化するスクリプトがないと、時間がかかる場合があります。
 
 設定ノードで、パス `mage/requirejs/text` を `requirejs/text` に次のように変更 `paths` る必要があります。
 
@@ -337,7 +337,7 @@ bundle/category.txt/bundle/homepage.txt/bundle/product.txt --> knockoutjs/knocko
 
 `build.js` 設定ファイルを開き、バンドルを `modules` ノードに追加します。 各バンドルは、次のプロパティを定義する必要があります。
 
-- `name` - バンドルの名前。 例えば、`bundles/cart` という名前を指定すると、`bundles` サブディレクトリに `cart.js` バンドルが生成されます。
+- `name` - バンドルの名前。 例えば、`bundles/cart` という名前を指定すると、`cart.js` サブディレクトリに `bundles` バンドルが生成されます。
 
 - `create` - バンドルを作成するためのブール値フラグ （値：`true` または `false`）。
 
@@ -411,9 +411,9 @@ mv pub/static/frontend/Magento/{theme}/{locale} pub/static/frontend/Magento/{the
 mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US_tmp
 ```
 
-#### 3. r.js Optimizer を実行する
+#### &#x200B;3. r.js Optimizer を実行する
 
-次に、[!DNL Commerce] のルートディレクトリから `build.js` ファイルに対して r.js optimizer を実行します。 すべてのディレクトリとファイルへのパスは、作業ディレクトリからの相対パスで指定します。
+次に、`build.js` のルートディレクトリから [!DNL Commerce] ファイルに対して r.js optimizer を実行します。 すべてのディレクトリとファイルへのパスは、作業ディレクトリからの相対パスで指定します。
 
 ```bash
 r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
@@ -438,9 +438,9 @@ drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
 -rw-r--r--  1 root root   74233 Mar 28 11:24 shipping.js
 ```
 
-#### 4. バンドルを使用するように RequireJS を設定する
+#### &#x200B;4. バンドルを使用するように RequireJS を設定する
 
-RequireJS でバンドルを使用するには、`build.js` ファイルの `modules` ノードの後に `onModuleBundleComplete` コールバックを追加します。
+RequireJS でバンドルを使用するには、`onModuleBundleComplete` ファイルの `modules` ノードの後に `build.js` コールバックを追加します。
 
 ```javascript
 [
@@ -474,7 +474,7 @@ require.config({});
 }
 ```
 
-#### 5. deploy コマンドを再実行する
+#### &#x200B;5. deploy コマンドを再実行する
 
 次のコマンドを実行してデプロイします。
 
@@ -482,7 +482,7 @@ require.config({});
 r.js -o app/design/frontend/Magento/luma/build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
-`pub/static/frontend/Magento/luma/en_US` ディレクトリで `requirejs-config.js` を開き、RequireJS によってファイルにバンドル設定呼び出しが追加されたことを確認します。
+`requirejs-config.js` ディレクトリで `pub/static/frontend/Magento/luma/en_US` を開き、RequireJS によってファイルにバンドル設定呼び出しが追加されたことを確認します。
 
 ```javascript
 require.config({
@@ -505,11 +505,11 @@ require.config({
 
 空のホームページのページ読み込み時間が、ネイティブの [!DNL Commerce] バンドルを使用する場合の 2 倍の速さになりました。 しかし、私たちはさらに良くすることができます。
 
-#### 7. バンドルを最適化する
+#### &#x200B;7. バンドルを最適化する
 
 gzipped を使用しても、[!DNL JavaScript] ファイルは大きくなります。 RequireJS を使用して縮小します。この場合、[!DNL JavaScript] を縮小して良好な結果を得るために uglifier が使用されます。
 
-`build.js` ファイルでオプティマイザーを有効にするには、`build.js` ファイルの先頭にある optimizer プロパティの値として `uglify2` を追加します。
+`build.js` ファイルでオプティマイザーを有効にするには、`uglify2` ファイルの先頭にある optimizer プロパティの値として `build.js` を追加します。
 
 ```javascript
 ({

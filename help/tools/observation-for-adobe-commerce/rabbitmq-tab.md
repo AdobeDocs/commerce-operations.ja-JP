@@ -1,6 +1,6 @@
 ---
-title: '&lbrack;[!UICONTROL [!DNL RabbitMQ]] タブ'
-description: ' [!DNL Observation for Adobe Commerce] の &lbrack;[!UICONTROL [!DNL RabbitMQ]] タブについて説明します。'
+title: '[[!UICONTROL [!DNL RabbitMQ]] タブ'
+description: '[!UICONTROL [!DNL RabbitMQ] の [ [!DNL Observation for Adobe Commerce]] タブについて説明します。'
 exl-id: c5370c30-fed8-4f45-89c3-ef0d6ad41a89
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7

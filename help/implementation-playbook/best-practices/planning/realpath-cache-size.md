@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Realpath キャッシュは、参照されるファイル名の実際のファイルシステムパスを、毎回検索する代わりにキャッシュします。 様々なファイル関数が実行されたり、ファイルを要求したり、相対パスを使用したりするたびに、PHP はそのファイルが実際に存在する場所を探す必要があります。
 
-Commerceのパフォーマンスを向上させるには、次の推奨設定を使用して、`php.ini` ファイルの `realpath_cache` の設定を行います。
+Commerceのパフォーマンスを向上させるには、次の推奨設定を使用して、`realpath_cache` ファイルの `php.ini` の設定を行います。
 
 - キャッシュサイズを 10 MB に設定します（`realpath cache_size=10M`）。
 - 有効期間（ttl）を 7200 秒（`realpath_cache_ttl=7200`）に設定します
@@ -36,5 +36,5 @@ Realpath のキャッシュ設定値が低すぎる、または高すぎる場�
 - [オンプレミス：PHP 設定](../../../performance/software.md#php-settings)
 - クラウドインフラストラクチャー上：
    - [データベースのベストプラクティス](database-on-cloud.md)
-   - [Magento Commerce Cloudで最もよくあるデータベースの問題](../maintenance/resolve-database-performance-issues.md)
-- [インデクサーの「スケジュールに従った更新」により、Magentoのパフォーマンスが最適化される](../maintenance/indexer-configuration.md)
+   - [Magento Commerce Cloud で最も一般的なデータベースの問題](../maintenance/resolve-database-performance-issues.md)
+- [インデクサーの「スケジュールに従った更新」により、Magentoのパフォーマンスが最適化されます](../maintenance/indexer-configuration.md)

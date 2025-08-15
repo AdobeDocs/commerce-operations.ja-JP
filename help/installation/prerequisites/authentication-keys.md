@@ -11,16 +11,16 @@ ht-degree: 0%
 
 # 認証キーの取得
 
-`repo.magento.com` リポジトリーには、Adobe Commerceとサードパーティの Composer パッケージが格納され、認証が必要です。 Commerce Marketplaceアカウントを使用して、32 文字の *認証キー* のペアを生成し、リポジトリにアクセスします。
+`repo.magento.com` リポジトリーには、Adobe Commerceとサードパーティの Composer パッケージが格納され、認証が必要です。 Commerce Marketplace アカウントを使用して、32 文字の *認証キー* のペアを生成し、リポジトリにアクセスします。
 
 Adobe Commerce パッケージへのアクセス権を付与するには、これらのパッケージへのアクセス権が付与された MAGEID に関連付けられたキーを使用する必要があります。 MAGEID は、通常Adobe Commerce アカウントのプライマリ連絡先となり、Adobe Commerce on cloud インフラストラクチャプロジェクトのプロジェクトオーナーであるとは限りません。
 
 >[!TIP]
 >
->[ エラー ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=ja) が発生した場合は、パッケージにアクセスする権限がないか、アカウントの未払い請求書が原因でアクセス権限が期限切れになっている可能性があります。
+>[ エラー ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html) が発生した場合は、パッケージにアクセスする権限がないか、アカウントの未払い請求書が原因でアクセス権限が期限切れになっている可能性があります。
 >
 >* アカウントのプライマリ担当者の場合は、アカウントに未払いの請求書がリストされていないことを確認してください。
->* プライマリ担当者が提供したキーが機能せず、アカウントに未払いの請求書がない場合は、プライマリ担当者が [Adobe Commerce サポート ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket) に問い合わせる必要があります。
+>* プライマリ担当者が提供したキーが機能せず、アカウントに未払いの請求書がない場合は、プライマリ担当者が [Adobe Commerce サポート ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) に問い合わせる必要があります。
 
 認証キーを作成するには：
 

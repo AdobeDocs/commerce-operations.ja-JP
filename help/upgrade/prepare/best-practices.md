@@ -47,17 +47,17 @@ Adobe Commerce インスタンスのアップグレードに要する労力の�
 
 Adobe Commerce拡張プラットフォームの導入をまだ開始していない場合は、開始します。 このプラットフォームを使用すると、SaaS と同様のアップグレード性を維持しながら、プロセスを効率的にカスタマイズし、システムを統合し、新しい機能をデプロイできます。 次のような機能があります。
 
-- **UI 拡張機能**。 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) を使用して、バックエンドやミドルウェアとは独立してストアフロントを拡張し、発展させます。
+- **UI 拡張機能**。 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) を使用して、バックエンドやミドルウェアとは独立にストアフロントを拡張し、発展させます。
 
 - **API 拡張機能**。 グラフデータモデルを進化させ、グラフレイヤーから直接ラムダ関数を実行することで、[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/index.html) を使用して web API レイヤーを拡張します。
 
-- **Adobe I/Oミドルウェアおよびサービス**。 Adobeのミドルウェアおよび [Adobe I/O](https://www.adobe.io/) 上に構築されたアプリケーション接続のスイートを使用して、システムをAdobe Commerceに接続します。 さらに、デフォルトの動作をAdobe I/O上で実行される独自のビジネスロジックで上書きすることで、コアプラットフォーム機能を拡張できます。
+- **Adobe I/O ミドルウェアおよびサービス**。 Adobeのミドルウェアおよび [Adobe I/O](https://www.adobe.io/) 上に構築されたアプリケーション接続のスイートを使用して、システムをAdobe Commerceに接続します。 さらに、デフォルトの動作をAdobe I/O上で実行される独自のビジネスロジックで上書きすることで、コアプラットフォームの機能を拡張できます。
 
 ### アップグレードの計画
 
 Adobe Commerceの機能を継続的に拡張する際には、利用可能な最新リリースに基づいて開発し、プロジェクト計画にアップグレード方法を定義することが重要です。 これにより、安全でコンプライアンスに対応した最新の機能強化を常に最新の状態に保つことができるため、セールスの迅速な拡大、より効果的な運用、現在および将来にわたる競争優位性の維持が可能になります。
 
-アップグレードの計画と予算に役立つように、[ リリーススケジュール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/schedule) を監視する必要があります。 チームのバックログ内で、事前にアップグレードタスクを計画します。 この作業を一般公開（GA）で完了することを目指します。
+アップグレードの計画と予算に役立つように、[ リリーススケジュール ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) を監視する必要があります。 チームのバックログ内で、事前にアップグレードタスクを計画します。 この作業を一般公開（GA）で完了することを目指します。
 
 - 新しい各リリースについては、プレリリースバージョンを参照してください。 プレリリースは、一般公開の 2 週間前にAdobe Commerceのマーチャントおよびすべてのパートナーが利用できる一般公開コードです。 複数のストアがある場合は、基本ストアでプレリリースを使用し、カスタムモジュールとテーマが互換性があることを確認します。
 
@@ -73,7 +73,7 @@ Adobe Commerceの機能を継続的に拡張する際には、利用可能な最
 
 アップグレードに必要な作業の評価：
 
-- [ リリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) を参照して、新しいバージョンの範囲と影響を理解します。
+- [ リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) を参照して、新しいバージョンの範囲と影響を理解します。
 
 - [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) を使用して、新しいバージョンにアップグレードする前に、カスタムコードで修正する必要がある潜在的な問題を特定します。
 

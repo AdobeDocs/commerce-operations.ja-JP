@@ -1,6 +1,6 @@
 ---
 title: 「[!UICONTROL bots]」タブ
-description: ' [!DNL Observation for Adobe Commerce] の「[!UICONTROL bots]」タブについて説明します。'
+description: '[!UICONTROL bots] の「 [!DNL Observation for Adobe Commerce]」タブについて説明します。'
 exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## [!DNL bots] の概要：
 
-* [!DNL bot] は、繰り返し自動化されたタスクを実行するソフトウェアです。 人工知能と機械学習の進化により、[!DNL bots] ーザーのタスク、方法、やり取りは変化しています。 サイトをクロールしてインターネット検索エンジンに追加すると、サイトに利益をもたらす *良い*[!DNL bots] があります。 その結果、インターネットユーザーは検索エンジンの結果を通じてサイトに誘導されます。 通常 *良い*[!DNL bot] は、`robots.txt` ファイルまたは検索エンジン コンソールの設定によって [!DNL bot] ージに配置された境界を尊重します。 境界は、サイトまたはサイトの一部へのアクセスを制限できます。
+* [!DNL bot] は、繰り返し自動化されたタスクを実行するソフトウェアです。 人工知能と機械学習の進化により、[!DNL bots] ーザーのタスク、方法、やり取りは変化しています。 サイトをクロールしてインターネット検索エンジンに追加すると、サイトに利益をもたらす *良い*[!DNL bots] があります。 その結果、インターネットユーザーは検索エンジンの結果を通じてサイトに誘導されます。 通常 *良い*[!DNL bot] は、[!DNL bot] ファイルまたは検索エンジン コンソールの設定によって `robots.txt` ージに配置された境界を尊重します。 境界は、サイトまたはサイトの一部へのアクセスを制限できます。
 * 悪意のある [!DNL bots] が `robots.txt` ファイルを無視するか、HTTP 要求データの要求ユーザーエージェントフィールドを介して良 [!DNL bot] を偽装する可能性があります。 悪意のある [!DNL bots] ーザーが実行する操作の一部：
    * サイトに負荷を追加して、サイトへの正規のユーザーのアクセスを拒否します。
    * 許可なくコンテンツを削除して再利用します。
@@ -28,7 +28,7 @@ ht-degree: 0%
       * キャッシュされていない [!DNL bot] アクティビティの合計を表示します。このアクティビティでは、[!DNL bot] ーザーがサイトに追加している読み込みと、その読み込みが行われている時間が表示されます。
       * エラーが発生している [!DNL bots] が表示されます。 通常、サイトの問題を引き起こす負荷を [!DNL bot] ーザーが追加している場合、その [!DNL bot] または IP アドレスのエラーの頻度が最も高くなります。
       * [!DNL bot] 名（リクエストユーザーエージェントフィールドの値）と、管理対象の IP アドレスが表示されます。
-         * [!DNL Fastly] （IP アドレス、範囲または [!DNL bots] を名前値でブロックするレート制限または [!DNL VCLs]）。
+         * [!DNL Fastly] （IP アドレス、範囲または [!DNL VCLs] を名前値でブロックするレート制限または [!DNL bots]）。
          * サイトへのアクセス率を制限または制限するために、適切な [!DNL bot] 情報を `robots.txt field` に追加します。
          * 検索エンジンコンソールによる [!DNL Bing] または [!DNL Google bots] の管理。
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 **[!UICONTROL Experimental Potential Malicious Bots frame]** フレームは、12 個の個別の複雑なクエリで構成されます。 悪意のある IP リクエストのシグネチャを検出し、結果を集計し、合計して、降順でカウント別に並べ替えます。 クエリには、CVE の悪用やその他の悪意のあるリクエストの多数のデータ署名が含まれています。 悪用がセキュリティ修正/パッチによってブロックされ、サイトに対する脅威ではない場合でも、リクエストは Web サイトで処理する必要があります。 リクエストの量は、短期間にかなり多くなる可能性があります。 このフレームには、IP アドレスからのリクエストの合計ではなく、リクエストに疑わしい意図があることを示すシグナルを持つリクエストが表示されます。
 
-トラフィックが疑わしく、[!DNL Content Distributed Network] （CDN）アドレスから発信されたものではないこと、また有効なリクエストを配信している可能性があることを確認します。 リクエストが CDN IP アドレスからのものであると判断した場合は、そのサービスの提供者に連絡して、ネットワークを通過する疑わしいトラフィックをブロックするように依頼してください。 アドレスまたはリクエスト URL をブロックする必要がある場合は、Adobe Commerce サポートナレッジベースの [Adobe Commerceの悪意のあるトラフィックのブロック  [!DNL Fastly]  レベル ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html?lang=ja) を参照してください。
+トラフィックが疑わしく、[!DNL Content Distributed Network] （CDN）アドレスから発信されたものではないこと、また有効なリクエストを配信している可能性があることを確認します。 リクエストが CDN IP アドレスからのものであると判断した場合は、そのサービスの提供者に連絡して、ネットワークを通過する疑わしいトラフィックをブロックするように依頼してください。 アドレスまたはリクエスト URL をブロックする必要がある場合は、Adobe Commerce サポートナレッジベースの [Adobe Commerceの悪意のあるトラフィックのブロック  [!DNL Fastly]  レベル ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html) を参照してください。
 
 ## [!UICONTROL Rate of HTTP request per second (top 25) during requested time period]
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ![ 選択した期間におけるボット名別のボットトラフィックの合計：](../../assets/tools/observation-for-adobe-commerce/total-bot-traffic-bot-name.png)
 
-**[!UICONTROL Total Bot traffic by bot name during selected time period]** テーブルには、[!UICONTROL request_user_agent] フィールドの値に [!DNL bots] の文字列が含まれている、キャッシュされていない要求の集計数が含まれています。 [!UICONTROL request_user_agent] フィールド値はスプーフィングされる可能性があるので、これは名前付き [!DNL bot] である場合もあれば、そうでない場合もあります。 [!UICONTROL Count] 列の値が最も重要です。
+**[!UICONTROL Total Bot traffic by bot name during selected time period]** テーブルには、[!UICONTROL request_user_agent] フィールドの値に [!DNL bots] の文字列が含まれている、キャッシュされていない要求の集計数が含まれています。 [!DNL bot] フィールド値はスプーフィングされる可能性があるので、これは名前付き [!UICONTROL request_user_agent] である場合もあれば、そうでない場合もあります。 [!UICONTROL Count] 列の値が最も重要です。
 
 ## [!UICONTROL Total Bot Traffic by Bot name/IP address]
 
@@ -140,13 +140,13 @@ IP アドレスで頻繁にエラーが発生する場合は、何をしてい�
 
 ![ 選択した期間中にブロックされたボット以外の名前/ IP アドレス（Fastly 内）。 このグラフは、403 Forbidden HTTP ステータスコード ](../../assets/tools/observation-for-adobe-commerce/blocked-non-bot-name-ip-addresses.png) が返されたボット以外のトラフィックと IP を表示します
 
-**[!UICONTROL Blocked non-Bot name / IP addresses (in Fastly) during selected time period graph displays non-bot traffic and IPs that were returned a 403 Forbidden HTTP Status code]** フレームは、[!DNL Fastly] でブロックされた [!DNL bot] として識別されない IP アドレスを示します。
+**[!UICONTROL Blocked non-Bot name / IP addresses (in Fastly) during selected time period graph displays non-bot traffic and IPs that were returned a 403 Forbidden HTTP Status code]** フレームは、[!DNL bot] でブロックされた [!DNL Fastly] として識別されない IP アドレスを示します。
 
 ## [!UICONTROL This table shows the number of user agents per IP address, number of successful, unsuccessful and blocked requests:]
 
 ![ 次の表に、IP アドレスごとのユーザーエージェント数、成功、失敗およびブロックされたリクエストの数を示します。](../../assets/tools/observation-for-adobe-commerce/unsuccessful-attempts.png)
 
-悪意のある [!DNL bots] は、[!UICONTROL Request User Agent] フィールドの値を介して他の [!DNL bots] をスプーフィングすることがよくあります。 次の表は、そのフィールドの IP アドレスに含まれる一意の値の数を示しています。 [!UICONTROL Request User Agent] フィールドの値が大きいほど、IP アドレスの疑いが強くなります。
+悪意のある [!DNL bots] は、[!DNL bots] フィールドの値を介して他の [!UICONTROL Request User Agent] をスプーフィングすることがよくあります。 次の表は、そのフィールドの IP アドレスに含まれる一意の値の数を示しています。 [!UICONTROL Request User Agent] フィールドの値が大きいほど、IP アドレスの疑いが強くなります。
 
 ## [!UICONTROL IP with non-200 status errors]
 

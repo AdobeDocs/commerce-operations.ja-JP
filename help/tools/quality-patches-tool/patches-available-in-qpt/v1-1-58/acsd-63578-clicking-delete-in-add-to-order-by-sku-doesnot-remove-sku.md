@@ -1,6 +1,6 @@
 ---
-title: ACSD-63578:[!UICONTROL Add to Order by SKU] で [!UICONTROL Delete] アイコンをクリックしても、SKU が削除されない
-description: ACSD-63578 パッチを適用すると、管理者の [!UICONTROL Add to Order by SKU] の [!UICONTROL Delete] アイコンをクリックしても SKU が削除されないAdobe Commerceの問題が修正されます。
+title: ACSD-63578:[!UICONTROL Delete] で [!UICONTROL Add to Order by SKU] アイコンをクリックしても、SKU が削除されない
+description: ACSD-63578 パッチを適用すると、管理者の [!UICONTROL Delete] の [!UICONTROL Add to Order by SKU] アイコンをクリックしても SKU が削除されないAdobe Commerceの問題が修正されます。
 feature: Orders
 role: Admin, Developer
 exl-id: 12afceb5-db3c-4783-a532-93c4c71f05f4
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-63578:*[!UICONTROL Add to Order by SKU]* で「**[!UICONTROL Delete]**」アイコンをクリックしても、SKU が削除されない
+# ACSD-63578:**[!UICONTROL Delete]** で「*[!UICONTROL Add to Order by SKU]*」アイコンをクリックしても、SKU が削除されない
 
-ACSD-63578 パッチでは、管理者の *[!UICONTROL Add to Order by SKU]* で **[!UICONTROL Delete]** アイコンをクリックしても SKU が削除されない問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 がインストールされている場合に使用できます。 パッチ ID は ACSD-63578 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-63578 パッチでは、管理者の **[!UICONTROL Delete]** で *[!UICONTROL Add to Order by SKU]* アイコンをクリックしても SKU が削除されない問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 がインストールされている場合に使用できます。 パッチ ID は ACSD-63578 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -28,11 +28,11 @@ ACSD-63578 パッチでは、管理者の *[!UICONTROL Add to Order by SKU]* で
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
-管理画面で *[!UICONTROL Add to Order by SKU]* の「**[!UICONTROL Delete]**」アイコンをクリックしても、SKU は注文から削除されません。
+管理画面で **[!UICONTROL Delete]** の「*[!UICONTROL Add to Order by SKU]*」アイコンをクリックしても、SKU は注文から削除されません。
 
 <u> 再現手順 </u>:
 
@@ -58,8 +58,8 @@ ACSD-63578 パッチでは、管理者の *[!UICONTROL Add to Order by SKU]* で
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 

@@ -30,6 +30,6 @@ QPT v1.1.43 には、次のパッチが含まれています。
 1. **ACSD-56090**:GraphQL リクエストが、特別にリクエストされたストアデータではなく、すべてのストアのデータで応答する問題を修正しました。
 1. **ACSD-54983**：ユーザーステータスが *[!UICONTROL Inactive]* に設定されている場合に、GraphQL リクエストで会社ユーザー ID を取得できない問題を修正しました。
 1. **ACSD-53309**：カスタマイズ可能なオプションが選択されているときに、*[!UICONTROL Regular Price]* ラベルに税金が完全に適用されない問題を修正しました。
-1. **ACSD-55305**:**[!UICONTROL myAccount]**/**[!UICONTROL Company Structure]** ページの *[!UICONTROL Edit Company User]* ポップアップが画面のローダーでフリーズする問題を修正。
+1. **ACSD-55305**:*[!UICONTROL Edit Company User]*/**[!UICONTROL myAccount]** ページの **[!UICONTROL Company Structure]** ポップアップが画面のローダーでフリーズする問題を修正。
 
 左側のメニューを使用して、特定のパッチページに移動します。

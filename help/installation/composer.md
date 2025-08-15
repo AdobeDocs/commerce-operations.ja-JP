@@ -23,7 +23,7 @@ Adobeでは [Composer](https://getcomposer.org/) を使用して、Adobe Commerc
 
 >[!NOTE]
 >
->Magento Open Sourceに関与する開発者は、[git ベースの ](https://developer.adobe.com/commerce/contributor/guides/install/) インストール方式を使用する必要があります。
+>Magento Open Sourceに投稿する開発者は、[git ベースの ](https://developer.adobe.com/commerce/contributor/guides/install/) インストール方式を使用する必要があります。
 
 ## 前提条件
 
@@ -65,7 +65,7 @@ Adobeでは [Composer](https://getcomposer.org/) を使用して、Adobe Commerc
 
    オプションで、次の方法でコマンドを実行できます。
 
-   - `./magento <command name>` として `cd <app_root>/bin` び出して実行
+   - `cd <app_root>/bin` として `./magento <command name>` び出して実行
    - `app_root>/bin/magento <command name>`
    - `<app_root>` は、web サーバーの docroot のサブディレクトリです。
 
@@ -89,11 +89,11 @@ Adobe Commerce メタパッケージを入手するには：
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   プロンプトが表示されたら、認証キーを入力します。 公開鍵と秘密鍵は、[Commerce Marketplace- アクセスキー ](https://commercemarketplace.adobe.com/customer/account/login/) から作成および設定されます。 `[!UICONTROL username]` の場合は、公開鍵の値をコピーして貼り付けます。 `[!UICONTROL password]` の場合は、秘密鍵の値をコピー&amp;ペーストします。
+   プロンプトが表示されたら、認証キーを入力します。 公開鍵と秘密鍵は、[Commerce Marketplace - アクセスキー ](https://commercemarketplace.adobe.com/customer/account/login/) から作成および設定されます。 `[!UICONTROL username]` の場合は、公開鍵の値をコピーして貼り付けます。 `[!UICONTROL password]` の場合は、秘密鍵の値をコピー&amp;ペーストします。
 
    >[!NOTE]
    >
-   > Commerce認証キーで設定された Composer `[auth.json](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` ファイルまたは環境変数を使用する場合、認証キーを入力するように求められません。
+   > Commerce認証キーで設定された Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` ファイルまたは環境変数を使用する場合、認証キーを入力するように求められません。
 
    `Could not find package...` や `...no matching package found` などのエラーが発生した場合は、コマンドに入力ミスがないことを確認してください。 それでもエラーが発生する場合は、Adobe Commerceのダウンロードが許可されていない可能性があります。 [Adobe Commerce サポート ](https://support.magento.com/hc/en-us) にお問い合わせください。
 

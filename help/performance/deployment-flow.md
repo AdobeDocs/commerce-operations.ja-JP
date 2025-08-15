@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 依存関係のインストール
 
-`composer.json` ファイルと `composer.lock` ファイルは、[!DNL Commerce] の依存関係を管理し、各パッケージの適切なバージョンをインストールします。 [autoloader](#update-the-autoloader) を更新する場合は、[ 依存関係の挿入手順を前処理 ](#preprocess-dependency-injection-instructions) の前に依存関係をインストールする必要があります。
+`composer.json` ファイルと `composer.lock` ファイルは、[!DNL Commerce] の依存関係を管理し、各パッケージの適切なバージョンをインストールします。 [autoloader](#preprocess-dependency-injection-instructions) を更新する場合は、[ 依存関係の挿入手順を前処理 ](#update-the-autoloader) の前に依存関係をインストールする必要があります。
 
 [!DNL Commerce] 依存関係をインストールするには：
 
@@ -26,7 +26,7 @@ composer install --no-dev
 
 ## 依存関係挿入手順の前処理
 
-依存関係の挿入（DI）手順を前処理してコンパイルする場合、Magentoは次の操作を実行します。
+依存関係の挿入（DI）手順を前処理してコンパイルする場合、Magentoでは次の処理を実行します。
 
 * 現在のすべての設定を読み取って処理します
 * クラス間の依存関係を分析します

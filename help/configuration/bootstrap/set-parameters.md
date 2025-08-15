@@ -9,16 +9,16 @@ ht-degree: 1%
 
 ---
 
-# Bootstrapパラメーター
+# Bootstrap パラメーター
 
 このトピックでは、Commerce アプリケーションのブートストラップパラメーターの値を設定する方法について説明します。 [ アプリケーションの初期化とブートストラップの概要 ](initialization.md) を参照してください。
 
 次の表に、設定可能なブートストラップパラメーターを示します。
 
-| Bootstrapパラメーター | 説明 |
+| Bootstrap パラメーター | 説明 |
 | ------------------- | -------------------------------------------- |
 | MAGE_DIRS | カスタムディレクトリと URL パスを指定します |
-| MAGE_PROFILER | 依存性グラフとHTML・プロファイリングを使用可能にします。 |
+| MAGE_PROFILER | 依存関係のグラフとHTMLのプロファイルを有効にします |
 
 >[!INFO]
 >
@@ -57,7 +57,7 @@ export MAGE_PROFILER=firebug
 
 ### Nginx 設定
 
-詳しくは、[GitHub _の_ Nginx サンプル設定 ] を参照してください。
+詳しくは、[GitHub] の _Nginx サンプル設定_ を参照してください。
 
 ### Apache .htaccess 設定
 

@@ -28,6 +28,6 @@ ht-degree: 0%
 
 ## [!UICONTROL CPU Utilization]
 
-![CPU 使用率 ](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
+![CPU使用率 ](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
 
-**[!UICONTROL CPU Utilization]** のフレームは、選択した期間におけるノード別の CPU 使用率を示します。
+**[!UICONTROL CPU Utilization]** のフレームは、選択した期間のノード別のCPU使用率を示します。

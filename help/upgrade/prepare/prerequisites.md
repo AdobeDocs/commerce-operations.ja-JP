@@ -33,7 +33,7 @@ Adobe Commerceの実行に必要な事項を理解することが重要です。
 
 >[!NOTE]
 >
->Cloud infrastructure Pro プロジェクトのAdobe Commerceの場合、ステージング環境と実稼動環境でサービスをインストールまたは更新するための [ サポート ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket) チケットを作成する必要があります。 必要なサービスの変更を示し、更新した `.magento.app.yaml` ファイルと `services.yaml` ファイル、および PHP バージョンをチケットに含めます。 クラウドインフラストラクチャチームがプロジェクトを更新するまで、最大 48 時間かかる場合があります。 [ サポートされるソフトウェアとサービス ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=ja#supported-software-and-services) を参照してください。
+>Cloud infrastructure Pro プロジェクトのAdobe Commerceの場合、ステージング環境と実稼動環境でサービスをインストールまたは更新するための [ サポート ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) チケットを作成する必要があります。 必要なサービスの変更を示し、更新した `.magento.app.yaml` ファイルと `services.yaml` ファイル、および PHP バージョンをチケットに含めます。 クラウドインフラストラクチャチームがプロジェクトを更新するまで、最大 48 時間かかる場合があります。 [ サポートされるソフトウェアとサービス ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) を参照してください。
 
 ## サポートされている検索エンジンがインストールされていることを確認します
 
@@ -64,10 +64,10 @@ Adobe Commerceを使用するには、Elasticsearchまたは OpenSearch がイ�
 
 ### MySQL 8.4 の変更
 
-Adobe added support for MySQL 8.4 in the 2.4.8 release.
-This section describes major changes to MySQL 8.4 that developers should be aware of.
+Adobeは、2.4.8 リリースで MySQL 8.4 のサポートを追加しました。
+ここでは、開発者が注意すべき MySQL 8.4 の主な変更点を説明します。
 
-#### Deprecated non-standard key
+#### 非標準キーを廃止
 
 外部キーとして一意でないキーや部分的なキーを使用することは非標準であり、MySQL 8.4 では非推奨です。MySQL 8.4.0 以降では、[`restrict_fk_on_non_standard_key`](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_restrict_fk_on_non_standard_key) を `OFF` に設定するか、`--skip-restrict-fk-on-non-standard-key` オプションを使用してサーバーを起動することで、このようなキーを明示的に有効にする必要があります。
 
@@ -88,7 +88,7 @@ MySQL をバージョン 8.0 からバージョン 8.4 に適切にアップグ�
    ```
 
 1. MySQL をバージョン 8.4 にアップグレードしてください。
-1. `my.cnf` ファイルの `[mysqld]` で、`restrict_fk_on_non_standard_key` を `OFF` に設定します。
+1. `restrict_fk_on_non_standard_key` ファイルの `OFF` で、`[mysqld]` を `my.cnf` に設定します。
 
    ```bash
    [mysqld]
@@ -99,7 +99,7 @@ MySQL をバージョン 8.0 からバージョン 8.4 に適切にアップグ�
    >
    >`restrict_fk_on_non_standard_key` の値を `OFF` に変更しない場合、読み込み時に次のエラーが発生します。
    >
-   >```sql
+   ```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. MySQL サーバーを再起動します。
@@ -122,7 +122,7 @@ MySQL をバージョン 8.0 からバージョン 8.4 に適切にアップグ�
 
 ### 検索エンジン
 
-2.4.0 にアップグレードする前に、Elasticsearch 7.6 以降または OpenSearch 1.2 をインストールして設定する必要があります。Adobeは、Elasticsearch 2.x、5.x および 6.x をサポートしなくなりました。_設定ガイド_ の [ 検索エンジンの設定 ](../../configuration/search/configure-search-engine.md) では、Elasticsearchをサポートされているバージョンにアップグレードした後に実行する必要があるタスクについて説明しています。
+2.4.0 にアップグレードする前に、Elasticsearch 7.6 以降または OpenSearch 1.2 をインストールして設定する必要があります。Adobeは、Elasticsearch 2.x、5.x および 6.x をサポートしなくなりました。[ 設定ガイド ](../../configuration/search/configure-search-engine.md) の _検索エンジンの設定_ では、Elasticsearchをサポートされているバージョンにアップグレードした後に実行する必要があるタスクについて説明しています。
 
 データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストに関する手順について詳しくは、[Elasticsearchのアップグレード ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) を参照してください。 現在のElasticsearchのバージョンに応じて、クラスターの完全な再起動は必要な場合も必要ない場合もあります。
 
@@ -130,7 +130,7 @@ Elasticsearchには、Java Development Kit （JDK） 1.8 以降が必要です�
 
 #### OpenSearch
 
-OpenSearch is an open-source fork of Elasticsearch 7.10.2, following Elasticsearch&#39;s licensing change. Adobe Commerceの次のリリースでは、OpenSearch のサポートが導入されています。
+OpenSearch は、Elasticsearch 7.10.2 のオープンソースのフォークで、Elasticsearchのライセンスの変更に従っています。 Adobe Commerceの次のリリースでは、OpenSearch のサポートが導入されています。
 
 * 2.4.6 （OpenSearch には別のモジュールと設定があります）
 * 2.4.5
@@ -154,7 +154,7 @@ Elasticsearch 8.x のサポートは、Adobe Commerce 2.4.6 で導入されま�
 
 1. Elasticsearch 7.x サーバーを 8.x にアップグレードし、が稼働していることを確認します。 [Elasticsearch ドキュメント ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) を参照してください。
 
-1. `elasticsearch.yml` ファイルに次の設定を追加し、Elasticsearch 8.x サービスを再起動して、「`id_field_data`」フィールドを有効にします。
+1. `id_field_data` ファイルに次の設定を追加し、Elasticsearch 8.x サービスを再起動して、「`elasticsearch.yml`」フィールドを有効にします。
 
    ```yaml
    indices:
@@ -164,7 +164,7 @@ Elasticsearch 8.x のサポートは、Adobe Commerce 2.4.6 で導入されま�
 
    >[!INFO]
    >
-   >Elasticsearch 8.x をサポートするために、Adobe Commerce 2.4.6 では `indices.id_field_data` プロパティがデフォルトで許可されず、`docvalue_fields` プロパティの `_id` フィールドが使用されます。
+   >Elasticsearch 8.x をサポートするために、Adobe Commerce 2.4.6 では `indices.id_field_data` プロパティがデフォルトで許可されず、`_id` プロパティの `docvalue_fields` フィールドが使用されます。
 
 1. Adobe Commerce プロジェクトのルート ディレクトリで、Composer の依存関係を更新して `Magento_Elasticsearch7` モジュールを削除し、`Magento_Elasticsearch8` モジュールをインストールします。
 
@@ -178,7 +178,7 @@ Elasticsearch 8.x のサポートは、Adobe Commerce 2.4.6 で導入されま�
 
    Elasticsearch 8 のインストール中、特に `psr/http-message` との間で依存関係の競合が発生した場合は、次の手順に従ってこの問題を解決できます。
 
-   1. First, require the Elasticsearch 8 module without updating other dependencies:
+   1. まず、他の依存関係を更新せずにElasticsearch 8 モジュールを必要とします。
 
       ```bash
       composer require magento/module-elasticsearch-8 --no-update
@@ -200,7 +200,7 @@ Elasticsearch 8.x のサポートは、Adobe Commerce 2.4.6 で導入されま�
    bin/magento setup:upgrade
    ```
 
-1. [!DNL Admin] で [Elasticsearchを設定 ](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) します。
+1. [ で ](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin)Elasticsearchを設定 [!DNL Admin] します。
 
 1. カタログインデックスを再インデックス化します。
 
@@ -232,7 +232,7 @@ Elasticsearch 8.x のサポートは、Adobe Commerce 2.4.6 で導入されま�
    bin/magento setup:upgrade
    ```
 
-1. [!DNL Admin] で [Elasticsearchを設定 ](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) します。
+1. [ で ](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin)Elasticsearchを設定 [!DNL Admin] します。
 
 1. カタログインデックスを再インデックス化します。
 
@@ -283,7 +283,7 @@ Bash シェルに値を設定するには：
 
 >[!IMPORTANT]
 >
->`php.ini` ファイルの `pcre.recursion_limit` プロパティの値は設定しないことをお勧めします。設定すると、エラー通知のない不完全なロールバックが生じる可能性があるからです。
+>`pcre.recursion_limit` ファイルの `php.ini` プロパティの値は設定しないことをお勧めします。設定すると、エラー通知のない不完全なロールバックが生じる可能性があるからです。
 
 ## Cron ジョブが実行中であることを確認
 
@@ -356,7 +356,7 @@ Adobe Commerce 2.4 には、一部のデータをシリアル化されたから 
 
 ## ファイルシステムの権限の確認
 
-セキュリティ上の理由から、Adobe Commerceにはファイルシステムに対する特定の権限が必要です。 権限は _[所有権](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_ とは異なります。 Ownership determines who can perform actions on the file system; permissions determine what the user can do.
+セキュリティ上の理由から、Adobe Commerceにはファイルシステムに対する特定の権限が必要です。 権限は _[所有権](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_ とは異なります。 所有権によってファイルシステムに対してアクションを実行できるユーザーが決まり、権限によってユーザーが実行できる操作が決まります。
 
 ファイルシステム内のディレクトリは、[ ファイルシステム所有者 ](../../installation/prerequisites/file-system/overview.md) グループによって書き込み可能でなければなりません。
 

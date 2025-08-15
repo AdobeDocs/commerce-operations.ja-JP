@@ -32,7 +32,7 @@ Varnish の詳細については、次を参照してください。
 
 ![ ワニスの基本図 ](../../assets/configuration/varnish-basic.png)
 
-上の図では、インターネット経由でのユーザーの HTTP リクエストによって、CSS、HTML、JavaScriptおよび画像（総称して _assets_）に対する多数のリクエストが発生しています。 Varnish は web サーバーの前に配置され、これらのリクエストを web サーバーにプロキシします。
+上の図では、インターネットを介したユーザーの HTTP リクエストにより、CSS、HTML、JavaScriptおよび画像（総称して _assets_）に対する多数のリクエストが発生しています。 Varnish は web サーバーの前に配置され、これらのリクエストを web サーバーにプロキシします。
 
 Web サーバーがアセットを返すと、キャッシュ可能なアセットは Varnish に保存されます。 これらのアセットに対する後続のリクエストは、Varnish によって処理されます（つまり、リクエストは web サーバーに到達しません）。 Varnish は、キャッシュされたコンテンツを非常に迅速に返します。 その結果、コンテンツをユーザーに返す応答時間が短縮され、Commerceで処理する必要があるリクエストの数が減少します。
 
@@ -90,9 +90,9 @@ Varnish に関する次の問題を把握しています。
 
 ワニスのキャッシュは、次を使用してCommerceで機能します。
 
-- Magento 2 GitHub リポジトリから [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)
+- Magento 2 GitHub リポジトリからの [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)
 - Commerce`.htaccess` 提供される Apache 用の分散設定ファイル
-- [Admin](../cache/configure-varnish-commerce.md) を使用して生成された Varnish の `default.vcl` 設定
+- `default.vcl`Admin[ を使用して生成された Varnish の ](../cache/configure-varnish-commerce.md) 設定
 
 >[!INFO]
 >

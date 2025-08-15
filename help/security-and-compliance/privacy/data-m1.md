@@ -1,6 +1,6 @@
 ---
 title: 顧客の個人情報の参照（バージョン 1.x）
-description: Magento 1.x におけるお客様の個人情報のデータフローとデータベースエンティティマッピングについて説明します。
+description: Magento 1.x でのお客様の個人情報のデータフローとデータベースエンティティマッピングについて説明します。
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
@@ -50,11 +50,11 @@ Commerceは、マーチャントが複数のタイプのグリッドを表示し
 
 ## データベースエンティティ
 
-Magento1 は、顧客の情報を customer、sales およびその他のデータベーステーブルに格納します。
+Magento 1 は、顧客に関する情報を、顧客、売上、その他のデータベーステーブルに格納します。
 
 ### 顧客データ
 
-Magento1 は、顧客情報を `customer_entity` テーブルと `customer_address_entity` テーブルに格納します。 これらのテーブルにはどちらも、カスタム顧客属性を含めることができる参照テーブルがいくつかあります。
+Magento 1 は、顧客に関する情報を `customer_entity` テーブルと `customer_address_entity` テーブルに格納します。 これらのテーブルにはどちらも、カスタム顧客属性を含めることができる参照テーブルがいくつかあります。
 
 #### `customer_entity` および参照テーブル
 

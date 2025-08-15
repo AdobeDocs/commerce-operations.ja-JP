@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{commerce-only}}
 
-[!DNL Upgrade Compatibility Tool] をダウンロードして使用するには、[Adobe Commerce アクセスキー ](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) が必要です。 Adobe Commerce アクセスキーを `auth.json` ファイルに追加します。このファイルは、デフォルトで `~/.composer` にあります。
+[ をダウンロードして使用するには、](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys)Adobe Commerce アクセスキー [!DNL Upgrade Compatibility Tool] が必要です。 Adobe Commerce アクセスキーを `auth.json` ファイルに追加します。このファイルは、デフォルトで `~/.composer` にあります。
 
 >[!NOTE]
 >
@@ -80,4 +80,4 @@ Adobe Commerceは、Linux オペレーティングシステムでのみサポー
 
 大きなモジュールやファイルを含むAdobe Commerce インスタンスに対して [!DNL Upgrade Compatibility Tool] を実行する場合、ツールに大量の RAM （少なくとも 2 GB）が必要になることがあります。
 
-クラウドインフラストラクチャー上の [Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ja){target=_blank} プロジェクトの [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=ja) から [!DNL Upgrade Compatibility Tool] を実行します。
+クラウドインフラストラクチャー上の [!DNL Upgrade Compatibility Tool]Adobe Commerce[[!DNL Site-Wide Analysis Tool] プロジェクトの ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html)[ から ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} を実行します。

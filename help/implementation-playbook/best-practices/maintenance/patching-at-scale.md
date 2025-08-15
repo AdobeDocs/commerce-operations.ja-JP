@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->以下の内容は、元々Adobeテクニカルブログの [ 大規模なAdobe Commerce パッチの配布 ](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) 投稿で公開されたものです。 一元的なパッチ適用戦略を実装するための手順とコードサンプルに重点を置くように変更されました。 ここで説明する様々なタイプのパッチの詳細については、元の投稿を参照してください。
+>次の内容は、当初、Adobe テクニカルブログの [ 大規模なAdobe Commerce パッチの配布 ](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) の投稿で公開されました。 一元的なパッチ適用戦略を実装するための手順とコードサンプルに重点を置くように変更されました。 ここで説明する様々なタイプのパッチの詳細については、元の投稿を参照してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -33,13 +33,13 @@ ht-degree: 0%
 
 1. **セキュリティパッチ** は、Adobe Commerce リリースの静的コードベースの一部です。
 1. **cweagans/composer-patches** などの `composer install` および `composer update` プラグインを使用した [Composer パッチ ](https://packagist.org/packages/cweagans/composer-patches)。
-1. **Commerce用クラウドパッチ** パッケージに含まれるすべての [ 必須パッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=ja)。
-1. 選択した **品質パッチ** が [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md) に含まれています。
+1. **Commerce用クラウドパッチ** パッケージに含まれるすべての [ 必須パッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html)。
+1. 選択した **品質パッチ** が [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md) に含まれています。
 1. **カスタムパッチ** およびAdobe Commerceは、パッチ名のアルファベット順に `/m2-hotfixes` ディレクトリ内のパッチをサポートします。
 
    >[!IMPORTANT]
    >
-   >適用するパッチが多いほど、コードがより複雑になります。 複雑なコードを使用すると、Adobeコマースの新しいバージョンへのアップグレードがより難しくなり、総所有コストが増加する場合があります。
+   >適用するパッチが多いほど、コードがより複雑になります。 複雑なコードを使用すると、Adobe commerce を新しいバージョンにアップグレードすることが難しくなり、総所有コストが増加する場合があります。
 
 Adobe Commerceの複数のインストールを管理する必要がある場合は、すべてのインスタンスに同じパッチセットをインストールするのは困難なことがあります。 インストールごとに、独自の Git リポジトリ、`/m2-hotfixes` ディレクトリ、`composer.json` ファイルが用意されています。 唯一の保証は、クラウドユーザー向けの **セキュリティパッチ** および **必要なパッチ** がすべてメインのAdobe Commerce バージョンの一部としてインストールされることです。
 
@@ -49,7 +49,7 @@ Adobe Commerceの複数のインストールを管理する必要がある場合
 
 ## 品質向上パッチおよびホットフィックスの適用
 
-`vendor/bin/magento-patches apply` コマンドを使用すると、クラウドインフラストラクチャとオンプレミスの両方のインストールにクオリティパッチをインストールできます。 `composer install` の操作後に `vendor/bin/magento-patches apply` コマンドが実行されることを確認する必要があります。
+`vendor/bin/magento-patches apply` コマンドを使用すると、クラウドインフラストラクチャとオンプレミスの両方のインストールにクオリティパッチをインストールできます。 `vendor/bin/magento-patches apply` の操作後に `composer install` コマンドが実行されることを確認する必要があります。
 
 >[!NOTE]
 >
@@ -62,11 +62,11 @@ Adobe Commerceの複数のインストールを管理する必要がある場合
 - **コンポーネントパッケージ：** `centralized-patcher`
 
    - インストールする品質向上パッチおよび `m2-hotfixes` のリストを定義します。
-   - `composer install` の操作後に `vendor/bin/magento-patches apply` コマンドを実行する `centralized-patcher-composer-plugin` パッケージが必要です
+   - `centralized-patcher-composer-plugin` の操作後に `vendor/bin/magento-patches apply` コマンドを実行する `composer install` パッケージが必要です
 
 - **プラグイン パッケージ：** `centralized-patcher-composer-plugin`
 
-   - `centralized-patcher` パッケージから品質向上パッチリストを読み取る `CentralizedPatcher` PHP クラスを定義します。
+   - `CentralizedPatcher` パッケージから品質向上パッチリストを読み取る `centralized-patcher` PHP クラスを定義します。
    - `vendor/bin/magento-patches apply` コマンドを実行して、`composer install` 操作後に品質向上パッチのリストをインストールします
 
 ### `centralized-patcher`
@@ -85,7 +85,7 @@ Composer コンポーネントパッケージ（`centralized-patcher`）を作�
 
    >[!NOTE]
    >
-   >次の例の `require` 属性は、この例で後で作成する必要がある [plugin パッケージ ](#centralized-patcher-composer-plugin) への `require` しい依存関係を示しています。
+   >次の例の `require` 属性は、この例で後で作成する必要がある `require`plugin パッケージ [ への ](#centralized-patcher-composer-plugin) しい依存関係を示しています。
 
    ```json
    {
@@ -109,7 +109,7 @@ Composer コンポーネントパッケージ（`centralized-patcher`）を作�
    }
    ```
 
-1. パッケージ内に `/m2-hotfixes` ディレクトリを作成し、`composer.json` ファイルの `map` 属性に追加します。 `map` 属性には、このパッケージからパッチを適用するターゲットプロジェクトのルートにコピーするファイルが含まれます。
+1. パッケージ内に `/m2-hotfixes` ディレクトリを作成し、`map` ファイルの `composer.json` 属性に追加します。 `map` 属性には、このパッケージからパッチを適用するターゲットプロジェクトのルートにコピーするファイルが含まれます。
 
    ```json
    {
@@ -148,7 +148,7 @@ Composer コンポーネントパッケージ（`centralized-patcher`）を作�
    ```
 
 
-前述のコードサンプルの `quality-patches` 属性には、例として [ 完全なパッチリスト ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) の 2 つのパッチが含まれています。  これらの品質向上パッチは、`vendor/bin/magento-patches apply` コマンドを使用して、`centralized-patcher` パッケージを必要とするすべてのプロジェクトにインストールされます。
+前述のコードサンプルの `quality-patches` 属性には、例として [ 完全なパッチリスト ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) の 2 つのパッチが含まれています。  これらの品質向上パッチは、`centralized-patcher` コマンドを使用して、`vendor/bin/magento-patches apply` パッケージを必要とするすべてのプロジェクトにインストールされます。
 
 テストを目的として、サンプルのパッチ（`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`）を作成できます。
 
@@ -175,7 +175,7 @@ index 03a3bf9..681e0b0 100644
 
 ### `centralized-patcher-composer-plugin`
 
-この例ではオンプレミス方式を使用して品質向上パッチをインストールするため、`composer install` の操作後に `vendor/bin/magento-patches apply` コマンドが実行されていることを確認する必要があります。 このプラグインは、`vendor/bin/magento-patches apply` コマンドを実行する `composer install` 操作の後にトリガーされます。
+この例ではオンプレミス方式を使用して品質向上パッチをインストールするため、`vendor/bin/magento-patches apply` の操作後に `composer install` コマンドが実行されていることを確認する必要があります。 このプラグインは、`composer install` コマンドを実行する `vendor/bin/magento-patches apply` 操作の後にトリガーされます。
 
 `centralized-patcher-compose-plugin` コンポーネントパッケージを作成するには：
 
@@ -338,7 +338,7 @@ index 03a3bf9..681e0b0 100644
 
 すべてのプロジェクトでパッチの 95% のみが必要で、いくつかのパッチが特定のインスタンスにのみ適用されるというシナリオが考えられます。 パッチ適用を適用する通常の方法は、引き続き機能します。 プロジェクト固有のパッチを `/m2-hotfixes` ディレクトリに保持し、プロジェクトごとに品質パッチをインストールできます。
 
-この方法を使用する場合は、`centralized-patcher` コンポーネントパッケージによってプロジェクトにコピーされた `/m2-hotfixes` ディレクトリ内のパッチを **コミットしない** でください。 `.gitignore` ファイルに `/m2-hotfixes` を追加することで、誤ったコミットを防ぐことができます。 `.gitignore` ファイルを更新した後は、`git add –force` コマンドを使用してプロジェクト固有の `/m2-hotfixes` を追加する必要があることに注意してください。
+この方法を使用する場合は、**コンポーネントパッケージによってプロジェクトにコピーされた** ディレクトリ内のパッチを `/m2-hotfixes` コミットしない `centralized-patcher` でください。 `/m2-hotfixes` ファイルに `.gitignore` を追加することで、誤ったコミットを防ぐことができます。 `.gitignore` ファイルを更新した後は、`/m2-hotfixes` コマンドを使用してプロジェクト固有の `git add –force` を追加する必要があることに注意してください。
 
 ## 異なるバージョンのAdobe Commerceの実行
 
@@ -346,7 +346,7 @@ index 03a3bf9..681e0b0 100644
 
 ## 結果について
 
-クラウドインフラストラクチャー上のAdobe Commerceの場合と同様に、この記事では、デプロイメントプロセスで新しいコードをサーバーにデプロイする際に `composer update` や `git pull` ではなく、`composer install` コマンドを使用することを前提としています。 一元化されたパッチインストールのフローは、次のようになります。
+クラウドインフラストラクチャー上のAdobe Commerceの場合と同様に、この記事では、デプロイメントプロセスで新しいコードをサーバーにデプロイする際に `composer install` や `composer update` ではなく、`git pull` コマンドを使用することを前提としています。 一元化されたパッチインストールのフローは、次のようになります。
 
 1. Composer のインストール
 
@@ -365,7 +365,7 @@ index 03a3bf9..681e0b0 100644
 
 これにより、すべてのインストールに対するすべてのパッチを一元的に管理でき、Adobe Commerce ストアのセキュリティと安定性をより確実に保証できます。 次の方法を使用して、パッチステータスを確認します。
 
-- [ クラウドインフラストラクチャプロジェクト ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja#view-available-patches-and-status)
+- [ クラウドインフラストラクチャプロジェクト ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html#view-available-patches-and-status)
 - [オンプレミス プロジェクト](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## コードの例

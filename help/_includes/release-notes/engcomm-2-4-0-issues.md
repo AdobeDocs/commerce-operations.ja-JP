@@ -127,7 +127,7 @@ ht-degree: 0%
 | Lukasz Bajsarowicz | [#26125](https://github.com/magento/magento2/pull/26125) | 該当なし |
 | グゼゴルツ ボグシュ | [#26033](https://github.com/magento/magento2/pull/26033) | [25974](https://github.com/magento/magento2/issues/25974) |
 | パヴェル ビストリツキー | [#25915](https://github.com/magento/magento2/pull/25915) | 該当なし |
-| Andreas・マウッツ | [#25838](https://github.com/magento/magento2/pull/25838) | [25674](https://github.com/magento/magento2/issues/25674) |
+| アンドレアス・マウッツ | [#25838](https://github.com/magento/magento2/pull/25838) | [25674](https://github.com/magento/magento2/issues/25674) |
 | マーク・ロドリゲス | [#25315](https://github.com/magento/magento2/pull/25315) | [13136](https://github.com/magento/magento2/issues/13136) |
 | Lukasz Bajsarowicz | [#25957](https://github.com/magento/magento2/pull/25957) | [22047](https://github.com/magento/magento2/issues/22047) |
 | David Lambauer | [#24103](https://github.com/magento/magento2/pull/24103) | 該当なし |
@@ -266,7 +266,7 @@ ht-degree: 0%
 | ジムルド | [#25742](https://github.com/magento/magento2/pull/25742) | 該当なし |
 | ラウル ヴェルドゥゴ ロレンツォ | [#25324](https://github.com/magento/magento2/pull/25324) | [13865](https://github.com/magento/magento2/issues/13865) |
 | George Babarus | [#24648](https://github.com/magento/magento2/pull/24648) | 該当なし |
-| Andreas・フォン・スタジニッツ | [#24485](https://github.com/magento/magento2/pull/24485) | 該当なし |
+| アンドレアス・フォン・スタジニッツ | [#24485](https://github.com/magento/magento2/pull/24485) | 該当なし |
 | クリス・ポック | [#26378](https://github.com/magento/magento2/pull/26378) | [26375](https://github.com/magento/magento2/issues/26375) |
 | パウェウ・タイレク | [#25641](https://github.com/magento/magento2/pull/25641) | [25032](https://github.com/magento/magento2/issues/25032) |
 | アンドレイ・ニコラエフ | [#25285](https://github.com/magento/magento2/pull/25285) | 該当なし |

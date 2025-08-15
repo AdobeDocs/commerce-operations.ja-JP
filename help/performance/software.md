@@ -1,5 +1,5 @@
 ---
-title: ソフトウェアRecommendations
+title: ソフトウェアの推奨事項
 description: Adobe Commerceのデプロイメントの最適なパフォーマンスに関連する推奨ソフトウェアのリストを確認します。
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
@@ -47,7 +47,7 @@ net.core.somaxconn = 1024
 
 ## PHP
 
-Magentoは PHP 7.3 と 7.4 を完全にサポートしています。リクエスト処理の速度と効率を最大限に高めるために PHP を設定する際に考慮すべき要素はいくつかあります。
+Magentoは PHP 7.3 および 7.4 を完全にサポートしています。リクエスト処理の速度と効率を最大限に高めるために PHP を設定する際に考慮すべき要素はいくつかあります。
 
 ### PHP 拡張機能
 
@@ -132,7 +132,7 @@ memory_limit=1G
 
 #### Realpath_cache 構成
 
-[!DNL Commerce] のパフォーマンスを向上させるには、`php.ini` ファイルで以下の推奨 `realpath_cache` 設定を追加または更新します。 この設定により、PHP プロセスは、ページが読み込まれるたびにパスを検索する代わりに、ファイルへのパスをキャッシュすることができます。 PHP ドキュメントの [ パフォーマンスチューニング ](https://www.php.net/manual/en/ini.core.php) を参照してください。
+[!DNL Commerce] のパフォーマンスを向上させるには、`realpath_cache` ファイルで以下の推奨 `php.ini` 設定を追加または更新します。 この設定により、PHP プロセスは、ページが読み込まれるたびにパスを検索する代わりに、ファイルへのパスをキャッシュすることができます。 PHP ドキュメントの [ パフォーマンスチューニング ](https://www.php.net/manual/en/ini.core.php) を参照してください。
 
 ```text
 realpath_cache_size=10M
@@ -151,7 +151,7 @@ opcache.validate_timestamps=0
 opcache.enable_cli=1
 ```
 
-opcache のメモリ割り当てを微調整する場合、Magentoのコードベースとすべてのエクステンションのサイズを考慮します。 Magentoのパフォーマンス・チームは、インストールされた拡張機能の平均数に対して opcache に十分な領域を提供するため、前述の例の値をテストに使用します。
+opcache のメモリ割り当てを微調整する場合は、Magentoのコードベースとすべてのエクステンションのサイズを考慮します。 Magento performance team は、インストールされた拡張機能の平均数に対して opcache に十分な領域を提供するので、上記の例の値をテストに使用します。
 
 低メモリのマシンで、インストールされている拡張機能やカスタマイズの数が少ない場合は、次の設定を使用して同様の結果を得ます。
 
@@ -162,7 +162,7 @@ opcache.max_accelerated_files=60000
 
 #### APCU
 
-[PHP APCu 拡張モジュールを有効にし ](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) それをサポートするために `composer` を設定する [ を有効にして、パフォーマンスを最大限に高めるための最適化を行うことをお勧めします ](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) この拡張機能では、開いたファイルの場所をキャッシュするので、ページ、Ajax 呼び出し、エンドポイントを含む [!DNL Commerce] サーバー呼び出しのパフォーマンスが向上します。
+[PHP APCu 拡張モジュールを有効にし ](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) それをサポートするために [ を設定する `composer` を有効にして、パフォーマンスを最大限に高めるための最適化を行うことをお勧めします ](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) この拡張機能では、開いたファイルの場所をキャッシュするので、ページ、Ajax 呼び出し、エンドポイントを含む [!DNL Commerce] サーバー呼び出しのパフォーマンスが向上します。
 
 `apcu.ini` ファイルを編集して、以下を含めます。
 
@@ -174,7 +174,7 @@ apc.enabled = 1
 
 ## Web サーバー
 
-Magentoは、Nginx および Apache web サーバーを完全にサポートしています。 [!DNL Commerce] には、`<magento_home>/nginx.conf.sample` （Nginx）ファイルと `<magento_home>.htaccess.sample` （Apache）ファイルで推奨される設定ファイルのサンプルが用意されています。  Nginx サンプルには、パフォーマンスを向上させるための設定が含まれており、再設定をほとんど必要としないように設計されています。 サンプルファイルで定義されている主な設定のベストプラクティスには、次のものが含まれます。
+Magentoは、Nginx web サーバーと Apache web サーバーを完全にサポートしています。 [!DNL Commerce] には、`<magento_home>/nginx.conf.sample` （Nginx）ファイルと `<magento_home>.htaccess.sample` （Apache）ファイルで推奨される設定ファイルのサンプルが用意されています。  Nginx サンプルには、パフォーマンスを向上させるための設定が含まれており、再設定をほとんど必要としないように設計されています。 サンプルファイルで定義されている主な設定のベストプラクティスには、次のものが含まれます。
 
 * ブラウザーで静的コンテンツをキャッシュする設定
 * PHP のメモリと実行時間の設定
@@ -210,7 +210,7 @@ Web 層の前にある別のサーバーに [!DNL Varnish] をインストール
 [!DNL Commerce] は、パフォーマンスのためのすべての推奨設定を含む [!DNL Varnish] （バージョン 4 および 5）のサンプル構成ファイルを配布します。 パフォーマンスの面で最も重要なものは次のとおりです。
 
 * **バックエンドのヘルスチェック** は、[!DNL Commerce] サーバーをポーリングして、サーバーが適切なタイミングで応答しているかどうかを判断します。
-* **猶予モード** を使用すると、オブジェクトを有効期間（TTL）の期間を超えてキャッシュに保持し、正常でない場合や新しいコンテンツがまだ取得されていない場合に、この古 [!DNL Commerce] いコンテンツを提供するように [!DNL Varnish] に指示できます。
+* **猶予モード** を使用すると、オブジェクトを有効期間（TTL）の期間を超えてキャッシュに保持し、正常でない場合や新しいコンテンツがまだ取得されていない場合に、この古 [!DNL Varnish] いコンテンツを提供するように [!DNL Commerce] に指示できます。
 * **セントモード** は、設定可能な時間、異常な [!DNL Commerce] サーバーをブラックリストに登録します。 その結果、正常でないバックエンドは、[!DNL Varnish] をロードバランサーとして使用する場合、トラフィックを提供できません。
 
 これらの機能の実装について詳しくは、[ 詳細  [!DNL Varnish]  設定 ](../configuration/cache/config-varnish-advanced.md) を参照してください。
@@ -221,9 +221,9 @@ Web 層の前にある別のサーバーに [!DNL Varnish] をインストール
 
 サイトで多数のロケールをデプロイする必要がなく、サーバーが大部分の顧客と同じ地域にある場合は、CDN を使用する代わりにアセットを [!DNL Varnish] に保存することで、低コストで大幅なパフォーマンスの向上が得られる可能性があります。
 
-アセットを [!DNL Varnish] に保存するには、[!DNL Commerce] for [!DNL Varnish] 5 で生成された `default.vcl` ファイルに次の VCL エントリを追加します。
+アセットを [!DNL Varnish] に保存するには、`default.vcl` for [!DNL Commerce] 5 で生成された [!DNL Varnish] ファイルに次の VCL エントリを追加します。
 
-`vcl_recv` サブルーチンの PURGE リクエストの `if` 文の最後に、次を追加します。
+`if` サブルーチンの PURGE リクエストの `vcl_recv` 文の最後に、次を追加します。
 
 ```javascript
 # static files are cacheable. remove SSL flag and cookie
@@ -235,7 +235,7 @@ if (req.url ~ "^/(pub/)?(media|static)/.*\.(ico|html|css|js|jpg|jpeg|png|gif|tif
 }
 ```
 
-`vcl_backend_response` サブルーチンで、`GET` 要求または `HEAD` 要求の Cookie を設定解除する `if` ステートメントを探します。
+`vcl_backend_response` サブルーチンで、`if` 要求または `GET` 要求の Cookie を設定解除する `HEAD` ステートメントを探します。
 更新された `if` ブロックは次のようになります。
 
 ```javascript
@@ -256,7 +256,7 @@ if (bereq.url !~ "\.(ico|css|js|jpg|jpeg|png|gif|tiff|bmp|gz|tgz|bz2|tbz|mp3|ogg
 
 ## キャッシュサーバーとセッションサーバー
 
-Magentoは、Redis、Memcache、filesystem、database など、キャッシュとセッションデータを保存する多くのオプションを提供します。 これらのオプションの一部については、以下で説明します。
+Magentoには、Redis、Memcache、filesystem、database など、キャッシュとセッションデータを保存する多数のオプションが用意されています。 これらのオプションの一部については、以下で説明します。
 
 ### 単一 Web ノードの設定
 

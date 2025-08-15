@@ -99,7 +99,7 @@ ht-degree: 0%
 
 ### New Relic レポートの機密パスとシステム固有のパス
 
-これらの設定値は、管理者の **ストア**/設定/**設定**/**一般**/6&rbrace;New Relic レポート **で利用できます。**
+これらの設定値は、管理者の **ストア**/設定/**設定**/**一般**/6}New Relic レポート **で利用できます。**
 
 | 名前 | 設定パス | Commerceのみ？ | 暗号化しますか？ | システム固有？ | 機密？ |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -143,16 +143,16 @@ ht-degree: 0%
 | Solr サーバーのユーザー名 | `catalog/search/solr_server_username` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
 | Solr サーバーのパスワード | `catalog/search/solr_server_password` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
 | Solr サーバーのパス | `catalog/search/solr_server_path` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
-| Elasticsearchサーバーのホスト名 | `catalog/search/elasticsearch_server_hostname` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
-| Elasticsearchサーバーポート | `catalog/search/elasticsearch_server_port` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
-| Elasticsearchインデックスプレフィックス | `catalog/search/elasticsearch_index_prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
+| Elasticsearch Server Hostname | `catalog/search/elasticsearch_server_hostname` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
+| Elasticsearch サーバーポート | `catalog/search/elasticsearch_server_port` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
+| Elasticsearch インデックスプレフィックス | `catalog/search/elasticsearch_index_prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
 | Elasticsearch HTTP 認証を有効にする | `catalog/search/elasticsearch_enable_auth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch HTTP ユーザー名 | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch HTTP パスワード | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
-| Elasticsearchサーバーのタイムアウト | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
+| Elasticsearch Server Timeout | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch HTTP ユーザー名 | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch HTTP パスワード | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
-| Elasticsearchサーバーのタイムアウト | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
+| Elasticsearch Server Timeout | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) |
 | OpenSearch Server Hostname | `catalog/search/opensearch_server_hostname` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
 | OpenSearch サーバーポート | `catalog/search/opensearch_server_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
 | OpenSearch インデックス プレフィックス | `catalog/search/opensearch_index_prefix` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![ システム固有 ](/help/assets/configuration/cloud-env.png) | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
@@ -237,7 +237,7 @@ ht-degree: 0%
 
 ### Google API を区別するパスとシステム固有のパス
 
-これらの設定値は、管理者の **Stores**/設定/**Configuration**/**Sales**/6&rbrace;Google API **で利用できます。**
+これらの設定値は、管理者の **Stores**/設定/**Configuration**/**Sales**/6}Google API **で利用できます。**
 
 | 名前 | 設定パス | Commerceのみ？ | 暗号化しますか？ | システム固有？ | 機密？ |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -298,7 +298,7 @@ ht-degree: 0%
 
 ### Google API のパス
 
-これらの設定値は、管理者の **Stores**/設定/**Configuration**/**Sales**/6&rbrace;Google API **で利用できます。**
+これらの設定値は、管理者の **Stores**/設定/**Configuration**/**Sales**/6}Google API **で利用できます。**
 
 | 名前 | 設定パス | Commerceのみ？ | 暗号化しますか？ | システム固有？ | 機密？ |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -464,7 +464,7 @@ ht-degree: 0%
 
 {style="table-layout:auto"}
 
-### Braintree依存のパスとシステム固有のパス
+### Braintreeを区別するパスとシステム固有のパス
 
 | 名前 | 設定パス | Commerceのみ？ | 暗号化しますか？ | システム固有？ | 機密？ |
 |--------------|--------------|--------------|--------------|--------------|--------------|

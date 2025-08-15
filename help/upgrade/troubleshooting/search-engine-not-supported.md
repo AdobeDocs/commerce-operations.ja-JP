@@ -49,7 +49,7 @@ bin/magento config:show catalog/search/engine
 
 ## 検索エンジンが `mysql` の場合
 
-2.4 以前は、MySQL がデフォルトのカタログ検索エンジンでしたが、この機能では MySQL はサポートされなくなりました。 2.4 にアップグレードする前に、Elasticsearchまたは OpenSearch を検索エンジンとしてインストールして設定する必要があります。
+2.4 以前は、MySQL がデフォルトのカタログ検索エンジンでしたが、この機能では MySQL はサポートされなくなりました。 2.4 にアップグレードする前に、検索エンジンとしてElasticsearchまたは OpenSearch をインストールして設定する必要があります。
 
 このプロセスのガイドとして役立つ次のリソースを使用します。
 
@@ -66,12 +66,12 @@ Elasticsearch 6 以前はサポートされなくなりました。
 
 2.4 にアップグレードする前に、次のタスクを実行する必要があります。
 
-1. CommerceでサポートされているElasticsearchのバージョンにアップデートします。 データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストに関する手順について詳しくは、[Elasticsearchのアップグレード ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) を参照してください。 現在のElasticsearchのバージョンに応じて、クラスターの完全な再起動は必要な場合と不要な場合があります。
+1. CommerceでサポートされているElasticsearchのバージョンへのアップデート。 データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストに関する手順について詳しくは、[Elasticsearchのアップグレード ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) を参照してください。 現在のElasticsearchのバージョンに応じて、クラスターの完全な再起動は必要な場合も必要ない場合もあります。
 
    >[!NOTE]
    >
    >Elasticsearchには JDK 1.8 以降が必要です。 インストールされている JDK のバージョンを確認するには、[Java Software Development Kit （JDK）をインストールする ](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) を参照してください。
 
-1. [Elasticsearchを設定 ](../../configuration/search/configure-search-engine.md) してインデックスを再作成します。
+1. [Elasticsearchを設定 ](../../configuration/search/configure-search-engine.md) て、再インデックスを実行します。
 
 検索エンジンを設定して再インデックス化したら、2.4 にアップグレードする準備が整います。

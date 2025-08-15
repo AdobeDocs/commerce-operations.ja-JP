@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ここでは、データセンター（仮想化されていない）で物理的にホストされているプレーンサーバーを使用し、リソースが他のユーザーと共有されていないAdobe Commerce インスタンスの一般的な推奨設定について説明します。 ホスティングプロバイダーは、特にCommerceのハイパフォーマンスホスティングを専門としている場合、要件に対して同等または効果的な別の設定を推奨する場合があります。
 
-クラウドインフラストラクチャ環境でのAdobe Commerceについては、[ スターターアーキテクチャ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/starter-architecture) を参照してください。
+クラウドインフラストラクチャ環境でのAdobe Commerceについては、[ スターターアーキテクチャ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture) を参照してください。
 
 ## [!DNL Commerce] リファレンスアーキテクチャ図
 
@@ -21,8 +21,8 @@ ht-degree: 0%
 
 図中の各要素の色は、その要素がMagento Open Sourceの一部であるかAdobe Commerceの一部であるか、また必要かどうかを示しています。
 
-* Magento Open Sourceにはオレンジ色が必要です
-* グレーの要素はMagento Open Sourceのオプションです
+* Magento Open Sourceにはオレンジの要素が必要です
+* Magento Open Sourceでは、グレーの要素はオプションです
 * Adobe Commerceでは、青い要素はオプションです
 
 ![Commerceのリファレンスアーキテクチャ図 ](../assets/performance/images/ref-architecture-2.3.png)

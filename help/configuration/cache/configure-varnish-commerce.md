@@ -26,7 +26,7 @@ Varnish を使用するようにCommerceを設定するには：
    | バックエンドホスト | Varnish _バックエンド_ または _オリジンサーバー_ の完全修飾ホスト名または IP アドレスとリッスンポートを入力します。つまり、Varnish が加速するコンテンツを提供するサーバーです。 通常、これは web サーバーです。 [Varnish キャッシュバックエンドサーバー ](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) を参照してください。 |
    | バックエンドポート | オリジンサーバーのリッスンポート。 |
    | 猶予期間 | バックエンドが応答しない場合に、ワニスが古いコンテンツを提供する期間を決定します。 デフォルト値は 300 秒です。 |
-   | パラメータサイズを処理 | フルページキャッシュ用に [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) HTTP エンドポイントで処理する [ レイアウトハンドル ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) の最大数を指定します。 サイズを制限すると、セキュリティとパフォーマンスが向上する可能性があります。 デフォルトは 100 です。 |
+   | パラメータサイズを処理 | フルページキャッシュ用に [ HTTP エンドポイントで処理する ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) レイアウトハンドル [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) の最大数を指定します。 サイズを制限すると、セキュリティとパフォーマンスが向上する可能性があります。 デフォルトは 100 です。 |
 
 1. 「**設定を保存**」をクリックします。
 
@@ -48,7 +48,7 @@ bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/cac
 
    ![Admin で Varnish を使用するようにCommerceを設定する ](../../assets/configuration/varnish-admin-22.png)
 
-1. 既存の `default.vcl` をバックアップします。 次に、`default.vcl` に書き出した `varnish.vcl` ファイルの名前を変更します。 次に、ファイルを `/etc/varnish/` ディレクトリにコピーします。
+1. 既存の `default.vcl` をバックアップします。 次に、`varnish.vcl` に書き出した `default.vcl` ファイルの名前を変更します。 次に、ファイルを `/etc/varnish/` ディレクトリにコピーします。
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak2
@@ -62,7 +62,7 @@ bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/cac
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
-1. Adobeは、`default.vcl` を開き、`acl purge` の値を Varnish ホストの IP アドレスに変更することをお勧めします。 （複数のホストを別々の行に指定することも、CIDR 表記を使用することもできます）。
+1. Adobeでは、`default.vcl` を開き、`acl purge` の値を Varnish ホストの IP アドレスに変更することをお勧めします。 （複数のホストを別々の行に指定することも、CIDR 表記を使用することもできます）。
 
    以下に例を挙げます。
 

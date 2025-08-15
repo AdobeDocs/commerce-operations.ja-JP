@@ -5,7 +5,7 @@ feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
 source-git-commit: ba3c656566af47f16f58f476d7bc9f4781bb0234
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Commerceは、ハッシュ化されたデータバージョンを Redis に保�
 
 >[!INFO]
 >
->クラウドインフラストラクチャー上のAdobe Commerceの場合、L2 キャッシュ設定に [ 変数をデプロイ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_backend) を使用できます。
+>クラウドインフラストラクチャー上のAdobe Commerceの場合、L2 キャッシュ設定に [ 変数をデプロイ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) を使用できます。
 
 ## 設定例
 
@@ -70,9 +70,9 @@ Commerceは、ハッシュ化されたデータバージョンを Redis に保�
    - ローカルキャッシュの設定は `local_backend_options` のとおりです。
    - ローカルキャッシュ `cache_dir` 格納されるディレクトリのファイルキャッシュ固有のオプションです。
 
-Adobeでは、リモートキャッシングには Redis （`\Magento\Framework\Cache\Backend\Redis`）を使用し、共有メモリ内のデータのローカルキャッシングには `Cm_Cache_Backend_File` （`'local_backend_options' => ['cache_dir' => '/dev/shm/']`）を使用することをお勧めします。
+Adobeでは、リモートキャッシュ（`\Magento\Framework\Cache\Backend\Redis`）には Redis を使用し、共有メモリ内のデータのローカルキャッシュには `Cm_Cache_Backend_File` を使用する `'local_backend_options' => ['cache_dir' => '/dev/shm/']` とをお勧めします。
 
-Adobeは、Redis への圧力を大幅に減らすため、[`cache preload`](redis-pg-cache.md#redis-preload-feature) 機能を使用することをお勧めします。 プリロードキーには必ずサフィックス「:hash」を追加してください。
+Adobeは、Redis への圧力を大幅に減らすため、[`cache preload`](redis-pg-cache.md#redis-preload-feature) 機能の使用をお勧めします。 プリロードキーにはサフィックス「:hash」を必ず追加してください。
 
 ## 古いキャッシュオプション
 
@@ -82,7 +82,7 @@ Adobeは、Redis への圧力を大幅に減らすため、[`cache preload`](red
 
 古いキャッシュは L2 キャッシュでのみ機能します。 キャッシュが古い場合は、新しいキャッシュが並列プロセスで生成されている間に、古いキャッシュを送信できます。 古いキャッシュを有効にするには、L2 キャッシュのトップ設定に `'use_stale_cache' => true` を追加します。
 
-Adobeでは、`use_stale_cache` オプションを有効にすることをお勧めします。このオプションのメリットが最も大きいキャッシュタイプに対しては、次のようなメリットがあります。
+Adobeでは、次のような最もメリットが大きいキャッシュタイプに対してのみ `use_stale_cache` オプションを有効にすることをお勧めします。
 
 - `block_html`
 - `config_integration_api`
@@ -92,7 +92,7 @@ Adobeでは、`use_stale_cache` オプションを有効にすることをお勧
 - `reflection`
 - `translate`
 
-Adobeでは、`default` しいキャッシュタイプに対して `use_stale_cache` オプションを有効にすることはお勧めしません。
+Adobeでは、`use_stale_cache` キャッシュタイプに対して `default` オプションを有効にすることはお勧めしません。
 
 次のコードは設定例を示しています。
 

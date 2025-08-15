@@ -488,7 +488,7 @@ SET foreign_key_checks = 1;
 
 ### データベース接続の更新
 
-（`'connection'` の下の） `'default'` で始まるブロックを見つけて、`'checkout'` セクションと `'sales'` セクションを追加します。 サンプル値をサイトに適した値に置き換えます。
+（`'default'` の下の） `'connection'` で始まるブロックを見つけて、`'checkout'` セクションと `'sales'` セクションを追加します。 サンプル値をサイトに適した値に置き換えます。
 
 ```php
  'default' =>

@@ -1,6 +1,6 @@
 ---
 title: 手動での移行が必要なデータ
-description: Magento 1 からMagento 2 へのデータ移行時に手動で移行する必要があるデータと、その方法について説明します。
+description: Magento 1 からMagento 2 へのデータ移行時に手動で移行する必要があるデータとその方法について説明します。
 exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -30,12 +30,12 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->データベースメディアのストレージ方式は、Magento 2.4.3 で非推奨（廃止予定）となりました。
+>Magento 2.4.3 以降、データベースメディアのストレージ方式は非推奨（廃止予定）になりました。
 
 
-このセクションは、Magento・データベースにメディア・ファイルを格納する場合 *のみ* に適用されます。 この手順は、[ データの移行 ](data.md) の前に実行する必要があります。
+この節は、メディアファイルをMagento データベースに格納する場合 *のみ* 適用されます。 この手順は、[ データの移行 ](data.md) の前に実行する必要があります。
 
-1. Magento1 の管理パネルに管理者としてログインします。
+1. 管理者としてMagento 1 の管理パネルにログインします。
 
 1. **システム**/**設定**/詳細/**システム** をクリックします。
 
@@ -45,25 +45,25 @@ ht-degree: 0%
 
 1. **同期** をクリックします。
 
-次に、Magento2 管理パネルで同じ手順を繰り返します。
+次に、Magento 2 管理パネルで同じ手順を繰り返します。
 
 ### ファイルシステム内のメディアファイル
 
-すべてのメディアファイル（製品、カテゴリ、WYSIWYG エディターなどの画像）は、`<your Magento 1 install dir>/media` から `<your Magento 2 install dir>/pub/media` に手動でコピーする必要があります。
+すべてのメディアファイル（商品、カテゴリ、WYSIWYGエディターなどの画像）は、`<your Magento 1 install dir>/media` から `<your Magento 2 install dir>/pub/media` に手動でコピーする必要があります。
 
-ただし、Magento 1 `media` フォルダーにある `.htaccess` ファイルはコピーし *いでください* Magento2 には、保存する必要がある独自の `.htaccess` があります。
+ただし、Magento 1 *フォルダーにある* ファイルはコピーし `.htaccess` いでください `media` Magento 2 には、保存する必要がある独自の `.htaccess` があります。
 
 ## ストアフロントのデザイン
 
 * ファイル（CSS、JS、テンプレート、XML レイアウト）のデザインの場所と形式が変更されました
 
-* レイアウト データベースに保存された更新。 CMS ページ、CMS Widgets、Category ページおよび Product ページのMagento 1 管理者を介して配置
+* レイアウト データベースに保存された更新。 Magento 1 管理者を通じてCMS ページ、CMS Widgets、Category Pages および Product Pages に配置される
 
 ## アクセス制御リスト（ACL）
 
 以下のすべてを手動で再作成する必要があります。
 
-* web サービス API （SOAP、XML-RPC、REST）の資格情報
+* web サービス API の資格情報（SOAP、XML-RPC、REST）
 
 * 管理ユーザーアカウントとアクセス権限の関連付け
 

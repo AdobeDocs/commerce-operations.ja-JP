@@ -1,5 +1,5 @@
 ---
-title: Magento Open Sourceパッケージ
+title: Magento Open Source パッケージ
 description: Magento Open Sourceで使用されるすべての依存関係とサードパーティライセンスについて説明します。
 recommendations: noCatalog
 exl-id: 41f875af-9d65-4d4f-af5c-6ad887eeaf0d
