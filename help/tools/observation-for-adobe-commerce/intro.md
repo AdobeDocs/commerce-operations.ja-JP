@@ -38,4 +38,4 @@ Adobe Commerce サイトのパフォーマンスを最適化し、問題を診�
 
 [!DNL Observation for Adobe Commerce] について詳しくは、このビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/344444?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3410749?quality=12&captions=jpn)

@@ -37,7 +37,7 @@ ht-degree: 0%
 
 [!DNL Upgrade Compatibility Tool] について詳しくは、このビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/341245?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/344385?quality=12&captions=jpn)
 
 ## [!DNL Upgrade Compatibility Tool] の改善に役立つ
 

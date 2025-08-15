@@ -21,4 +21,4 @@ ht-degree: 0%
 
 [!DNL Magento PHPStorm plugin] について詳しくは、このビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/340150?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/344407?quality=12&captions=jpn)
