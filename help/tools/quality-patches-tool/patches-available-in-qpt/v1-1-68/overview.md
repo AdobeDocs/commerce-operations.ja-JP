@@ -4,9 +4,9 @@ description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.68 で�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 47c8541c228f9ed3795c93b67b8ff85cbd4bd555
+source-git-commit: 937acc659427b788b8af778f5ea826eacccdc70e
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,6 @@ QPT v1.1.68 には、次のパッチが含まれています。
 1. **ACSD-66889**: CLI でインベントリの再インデックス中にエラーが発生しました。
 1. **ACSD-66963**：仮想商品を含む買い物かごに割引コードが適用された場合、EstimateTotals ミューテーションが割引に対して null を返します。
 1. **ACSD-66965**：購買依頼リスト・ページの「印刷」オプションでエラーが発生します。
-1. **ACSD-67039**: rp_token システム属性の検証により、顧客レコードが保存されませんでした。
+1. **ACSD-67039**:`rp_token` システム属性の検証が原因で、顧客レコードが保存されませんでした。
 
 左側のメニューを使用して、特定のパッチページに移動します。
