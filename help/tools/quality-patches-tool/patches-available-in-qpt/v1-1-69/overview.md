@@ -4,7 +4,7 @@ description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.69 で�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 0dd91496c3117a424c71382e18b9689fff016ada
+source-git-commit: c701c9ff7385821b771af2d19920ead192e4410a
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -26,7 +26,7 @@ QPT v1.1.69 には、次のパッチが含まれています。
 1. **ACSD-57477**：販売ルールの処理により、買い物かごに関連するリクエストのパフォーマンスが低下します。
 1. **ACSD-58108**：結合テーブル名が見つからない場合、グリッド カスタム モジュール拡張順序で SQL エラーが発生します。
 1. **ACSD-65983**：管理者でバンドルされた製品見積もりを再設定するとエラーが発生する。
-1. **[ACSD-66149](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66149-ipn-handler-returns-500-for-unsupported-types.md)**: IPN ハンドラーは、サポートされていない型に対して 500 を返します。
+1. **ACSD-66149**: IPN ハンドラーは、サポートされていない型に対して 500 を返します。
 1. **ACSD-66153**：間違ったレイアウト構造がキャッシュされているので、ページが 500 を返す。
 1. **ACSD-66302**:Web サイトではなくストア ID でフィルターされたウィッシュリスト項目。
 1. **ACSD-66311**：制限付き管理者の会社グリッドの読み込みに時間がかかる。
