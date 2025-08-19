@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Adobe CommerceのデプロイメントでGraphQL Application Server を有効にするには、次の手順に従います。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 8427460cd11169ffe7dd2d4ba0cc1fdaea513702
+source-git-commit: ed46f48472a51db17e1c3ade9bfe3ab134098548
 workflow-type: tm+mt
-source-wordcount: '2184'
+source-wordcount: '2212'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server を使用すると、Adobe CommerceはCommerce GraphQL API リクエストの状態を維持できます。 Swoole 拡張機能に基づいて構築されたGraphQL Application Server は、リクエスト処理を処理するワーカースレッドを使用したプロセスとして動作します。 GraphQL Application Server は、GraphQL API リクエストの間でブートストラップされたアプリケーションの状態を保持することで、リクエスト処理と製品全体のパフォーマンスを向上させます。 API リクエストが大幅に効率的になります。
 
-GraphQL Application Server は、Adobe Commerceでのみ使用できます。 Magento Open Sourceでは使用できません。 Cloud Pro プロジェクトの場合、GraphQL Application Server を有効にするには、[Adobe Commerce サポートを送信 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) チケットが必要です。
+GraphQL Application Server は、Adobe Commerceでのみ使用できます。 Magento Open Sourceでは使用できません。 Cloud Pro プロジェクトの場合、GraphQL Application Server を有効にするには、[Adobe Commerce サポートを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) チケットが必要です。
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ GraphQL Application Server は、Commerce GraphQL API リクエストの間の�
 
 ## メリット
 
-GraphQL Application Server を使用すると、Adobe Commerceは、連続するCommerce GraphQL API リクエストの間にステートを維持できます。 リクエスト間でアプリケーション状態を共有すると、処理オーバーヘッドが最小限に抑えられ、リクエスト処理が最適化されるので、API リクエストの効率が向上します。 その結果、GraphQLのリクエストの応答時間を最大 30% 短縮できます。
+GraphQL Application Server を使用すると、Adobe Commerceは、連続するCommerce GraphQL API リクエストの間にステートを維持できます。 リクエスト間でアプリケーション状態を共有すると、処理オーバーヘッドが最小限に抑えられ、リクエスト処理が最適化されるので、API リクエストの効率が向上します。 その結果、GraphQLのリクエストに対する応答時間を最大 30% 短縮できます。
 
 ## 必要システム構成
 
@@ -38,8 +38,22 @@ GraphQL Application Server を実行するには、以下が必要です。
 
 * Commerce バージョン 2.4.7 以降
 * PHP 8.2 以降
-* Swoole PHP 拡張機能 v5 以降がインストールされている
 * 予想される負荷に基づいた十分な RAM とCPU
+* Swoole PHP 拡張機能 v5 以降（以下のプロジェクト固有の要件を参照）
+
+### クラウドプロジェクト
+
+クラウドインフラストラクチャプロジェクト上のAdobe Commerceには、デフォルトで Swoole 拡張機能が含まれています。 [ ファイルの ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) プロパティで `runtime` 有効 `.magento.app.yaml` することができます。 例：
+
+```yaml
+runtime:
+    extensions:
+        - swoole
+```
+
+### オンプレミス プロジェクト
+
+オンプレミスのプロジェクトでは、Swoole PHP 拡張機能を手動で [ インストールして設定 ](#install-and-configure-swoole) する必要があります。
 
 ## クラウドインフラストラクチャでの有効化とデプロイ
 
@@ -259,7 +273,7 @@ git push
 
 >[!NOTE]
 >
->ルート `.magento.app.yaml` ファイル内のすべてのカスタム設定が、`application-server/.magento/.magento.app.yaml` ファイルに適切に移行されていることを確認します。 `application-server/.magento/.magento.app.yaml` ファイルがプロジェクトに追加されたら、ルート `.magento.app.yaml` ファイルに加えてそのファイルを保持する必要があります。 例えば、[RabbitMQ サービスを設定する ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) または [web プロパティを管理する ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) 必要がある場合、同じ設定を `application-server/.magento/.magento.app.yaml` にも追加する必要があります。
+>ルート `.magento.app.yaml` ファイル内のすべてのカスタム設定が、`application-server/.magento/.magento.app.yaml` ファイルに適切に移行されていることを確認します。 `application-server/.magento/.magento.app.yaml` ファイルがプロジェクトに追加されたら、ルート `.magento.app.yaml` ファイルに加えてそのファイルを保持する必要があります。 例えば、[RabbitMQ サービスを設定する ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) または [web プロパティを管理する ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) 必要がある場合、同じ設定を `application-server/.magento/.magento.app.yaml` にも追加する必要があります。
 
 ### クラウドプロジェクトでのイネーブルメントの検証
 
@@ -473,7 +487,7 @@ GraphQL Application Server が無効になった後：
 
 #### GraphQlStateTest の失敗と潜在的な修正
 
-* **リストの追加、スキップ、フィルタリングはできません**。 リストの追加、スキップまたはフィルタリングでエラーが表示された場合は、可変状態を持つサービスクラスのファクトリを使用するために、下位互換性のある方法でクラスをリファクタリングできるかどうかを検討します。
+* **リストの追加、スキップ、フィルタリングはできません**。 このエラーが発生した場合は、クラスをリファクタリングして、可変状態のサービスクラスに対してファクトリを使用するようにしてください。
 
 * **クラスは可変状態を示します**。 クラス自体が可変状態を示す場合は、この状態を回避するようにコードを書き換えてみてください。 パフォーマンス上の理由で可変状態が必要な場合は、`ResetAfterRequestInterface` を実装し、`_resetState()` を使用してオブジェクトを初期構築状態にリセットします。
 
