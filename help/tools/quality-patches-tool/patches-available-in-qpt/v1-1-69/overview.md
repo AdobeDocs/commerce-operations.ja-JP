@@ -4,9 +4,9 @@ description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.69 で�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: a59d05b93e1ada3416562625ce864b7bda94ee8e
+source-git-commit: 0dd91496c3117a424c71382e18b9689fff016ada
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ QPT v1.1.69 には、次のパッチが含まれています。
 1. **ACP2E-3731**：表示が **[!UICONTROL Catalog, Search]** い製品の書き出しには、他のストア表示のレコードが含まれます。
 1. **ACP2E-3767**：バンドル製品を保存すると、最後のバンドルオプションが再び表示されます。
 1. **ACP2E-3964**:REST API 経由でリストされていないビデオを含む、設定可能な子製品。
-1. **ACP2E-3977**: **[!UICONTROL Cap Reward Points Balance At]** を空白のままにすることはできません。
+1. **ACP2E-3977**: [!UICONTROL Cap Reward Points Balance At] フィールドを空白のままにすることはできません。
 1. **ACP2E-4050**：複数配送（バンドル製品および送料無料）で買い物かごの価格ルールが失敗する。
 1. **ACSD-56226**：読み取りクエリは、`synchronous_replication` が有効な古いデータを返します。
 1. **ACSD-57477**：販売ルールの処理により、買い物かごに関連するリクエストのパフォーマンスが低下します。
 1. **ACSD-58108**：結合テーブル名が見つからない場合、グリッド カスタム モジュール拡張順序で SQL エラーが発生します。
 1. **ACSD-65983**：管理者でバンドルされた製品見積もりを再設定するとエラーが発生する。
-1. **ACSD-66149**: IPN ハンドラーは、サポートされていない型に対して 500 を返します。
+1. **[ACSD-66149](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66149-ipn-handler-returns-500-for-unsupported-types.md)**: IPN ハンドラーは、サポートされていない型に対して 500 を返します。
 1. **ACSD-66153**：間違ったレイアウト構造がキャッシュされているので、ページが 500 を返す。
 1. **ACSD-66302**:Web サイトではなくストア ID でフィルターされたウィッシュリスト項目。
 1. **ACSD-66311**：制限付き管理者の会社グリッドの読み込みに時間がかかる。
