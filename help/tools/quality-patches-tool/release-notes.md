@@ -3,9 +3,9 @@ title: リリースノート
 description: Adobe Commerceで使用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 00153baf1c4a52d17b750db35a678b1950e00ed1
+source-git-commit: 4adac1df0382cd0ae0833599011aeb664a91ceb6
 workflow-type: tm+mt
-source-wordcount: '27482'
+source-wordcount: '28046'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,33 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce プロジェクトにパッチを適用する手順については、[ パッチの適用 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja#apply-individual-patches) を参照してください。 リリース済みパッチの完全なリストを確認するには、『ソフトウェア更新ガイド』の「[[!DNL Quality Patches Tool]：パッチの検索 ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)」を参照してください。
+>Adobe Commerce プロジェクトにパッチを適用する手順については、[ パッチの適用 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) を参照してください。 リリース済みパッチの完全なリストを確認するには、『ソフトウェア更新ガイド』の「[[!DNL Quality Patches Tool]：パッチの検索 ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
 
 >[!INFO]
 >
 >コミュニティがMagento Open Source用に作成した [!DNL quality patches] について詳しくは、[ リリースノート ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+
+## v1.1.69 {#v1-1-69}
+
+* **AC-15223** （Adobe CommerceおよびMagento Open Source >=2.4.8 &lt;2.4.9 の場合） – 2.4.8 ストアフロントで、ストアを切り替えた後にページがキャッシュから提供され、選択したストアが反映されない問題を修正しました。
+* **ACP2E-3731** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.9） – マルチストア環境で、**[!UICONTROL Catalog, Search]** 表示の商品エクスポートに他のストアビューのレコードが正しく含まれない問題を修正しました。
+* **ACP2E-3767** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.9 の場合） – バンドル商品の最後のバンドルオプションが削除できない問題を修正しました。
+* **ACP2E-3964** （Adobe CommerceおよびMagento Open Sourceの場合 >=2.4.7 &lt;2.4.8） – ギャラリーでビデオが設定されている場合に、設定可能な商品の子商品が REST API を介してリストされない問題を修正しました。
+* **ACP2E-3977** （Adobe Commerce >=2.4.4 &lt;2.4.9 の場合） – **[!UICONTROL Cap Reward Points Balance At]** が設定されている場合に [!UICONTROL Rewards Points Balance Redemption Threshold] フィールドを空にできず、検証エラーが発生する問題を修正しました。
+* **ACP2E-4050** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.8） – バンドル商品を使用し、送料無料を有効にしてサブセレクト条件を使用した場合に、複数の配送商品に対する買い物かご価格ルールが正しく適用されない問題を修正しました。
+* **ACSD-56226** （Adobe Commerce >=2.4.6 &lt;2.4.7 の場合） - `synchronous_replication` フラグが有効な場合に、スレーブノードの READ クエリが古いデータを返す問題を修正しました。
+* **ACSD-57477** （Adobe CommerceおよびMagento Open Source >=2.4.6 &lt;2.4.7） – 買い物かごに関連するリクエストで、販売ルールの処理によってパフォーマンスが低下する問題を修正しました。
+* **ACSD-58108** （Adobe CommerceおよびMagento Open Source >=2.4.6 &lt;2.4.8 の場合） – 元の取得テーブルに結合テーブル名がない場合、注文グリッドのカスタムモジュール拡張 SQL でエラーが発生する問題を修正しました。
+* **ACSD-65983** （Adobe Commerce >=2.4.6-p10 &lt;2.4.9） – Admin バックエンドでバンドルされた製品見積もりを再設定するとエラーがスローされる問題を修正しました。
+* **ACSD-66149** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8 の場合） - IPN ハンドラーが、サポートされていない IPN タイプまたは不明な IPN タイプに対して *500* エラーを返す問題を修正しました。
+* **ACSD-66153** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.9 の場合） – レイアウト構造が正しくキャッシュされていないことが原因で、ページが *500* エラーを返す問題を修正しました。
+* **ACSD-66302** （Adobe CommerceおよびMagento Open Source >=2.4.8 &lt;2.4.9 の場合） – ウィッシュリストの項目が web サイトでフィルタリングされるのではなく、ストア ID で誤ってフィルタリングされる問題を修正しました。
+* **ACSD-66311** （Adobe Commerce >=2.4.6-p9 &lt;2.4.9 の場合） - web サイトへのアクセスが制限された管理者ユーザーの場合、会社グリッドの読み込みに時間がかかる問題を修正しました。
+* **ACSD-66404** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.9 の場合） – cron ジョブで変更ログテーブルをクリアできず、大量のデータを処理する際に [!DNL Galera Cluster] がクラッシュする問題を修正しました。
+* **ACSD-66952** （Adobe Commerce >=2.4.4 &lt;2.4.9 の場合） - PLP または買い物かごへの各訪問でキャッシュがクリアされ、ターゲットルールが設定されるとパフォーマンスのオーバーヘッドが発生する問題を修正しました。
+* **ACSD-67264** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8 の場合） – バンドルとダウンロード可能な商品ページレイアウトがデバイス間で一貫していない問題を修正しました。
+* **ACSD-67347** （Adobe CommerceおよびMagento Open Source >=2.4.5-p11 &lt;2.4.6） – 特殊文字を含むクーポンを使用し、ファイルロックが有効になっている場合に、*ロックを取得できません* エラーが発生して注文に失敗する問題を修正しました。
+* 交換済みパッチ：**ACP2E-3841**
 
 ## v1.1.68 {#v1-1-68}
 
