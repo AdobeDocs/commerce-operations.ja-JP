@@ -1,15 +1,16 @@
 ---
-title: 'ACP2E-3977: **[!UICONTROL Cap Reward Points Balance At]** フィールドを空白にすることはできません'
+title: 'ACP2E-3977: [!UICONTROL Cap Reward Points Balance At] フィールドを空白にすることはできません'
 description: ACP2E-3977 パッチを適用して、**[!UICONTROL Cap Reward Points Balance At]** フィールドが設定されている場合に**[!UICONTROL Rewards Points Balance Redemption Threshold]** フィールドを空のままにできず、検証エラーが発生するAdobe Commerceの問題を修正してください。
 feature: Configuration, Rewards
 role: Admin, Developer
-source-git-commit: 4fd9b66967639f3afff322bfd82e68cfb79b2138
+type: Troubleshooting
+exl-id: 5275911f-4f8c-4b37-af11-24ceb69406c9
+source-git-commit: 83ce590c5078d70f0414276e2f03a71bdcdad321
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3977: **[!UICONTROL Cap Reward Points Balance At]** フィールドを空白にすることはできません
 
@@ -27,7 +28,7 @@ ACP2E-3977 パッチは、フィールドを許可する必要がある場合で
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -52,8 +53,8 @@ ACP2E-3977 パッチは、フィールドを許可する必要がある場合で
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 

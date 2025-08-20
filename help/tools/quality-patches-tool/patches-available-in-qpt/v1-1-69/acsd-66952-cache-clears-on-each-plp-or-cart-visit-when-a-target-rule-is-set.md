@@ -3,17 +3,18 @@ title: ACSD-66952：ターゲットルールが設定されると、PLP また�
 description: ACSD-66952 パッチを適用すると、ターゲットルールが設定されたときに、PLP または買い物かごへの訪問ごとにキャッシュがクリアされ、不要なパフォーマンスのオーバーヘッドが発生するAdobe Commerceの問題を修正できます。
 feature: Shopping Cart, Cache, Price Rules
 role: Admin, Developer
-source-git-commit: 1aec8de86696ffc9ecb13100e6ffa1f912b281fb
+type: Troubleshooting
+exl-id: abff5761-bcf1-4cfc-b5d9-6a7e1ca907e7
+source-git-commit: cf0f5992c7b2a51b270a4a1a81fd50305a92759c
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-66952：ターゲットルールが設定されると、PLP または買い物かごへの訪問ごとにキャッシュがクリアされる
 
-ACSD-66952 パッチでは、PLP や買い物かごへの訪問のたびにキャッシュがクリアされ、ターゲットルールが設定されるとパフォーマンスのオーバーヘッドが発生する問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 がインストールされている場合に使用できます。 パッチ ID は ACSD-66952 です。 この問題はAdobe Commerce 2.4.9 で修正される予定であることに注意してください。
+ACSD-66952 パッチでは、PLP または買い物かごへの訪問のたびにキャッシュがクリアされ、ターゲットルールが設定されるとパフォーマンスのオーバーヘッドが発生する問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 がインストールされている場合に使用できます。 パッチ ID は ACSD-66952 です。 この問題はAdobe Commerce 2.4.9 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -27,7 +28,7 @@ ACSD-66952 パッチでは、PLP や買い物かごへの訪問のたびにキ�
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -61,8 +62,8 @@ PLP または買い物かごへの訪問のたびにキャッシュがクリア�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドの
-* クラウドインフラストラクチャー上のAdobe Commerce:[ アップグレードとパッチ適用 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja) クラウドインフラストラクチャー上のCommerce ガイド
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドの
+* クラウドインフラストラクチャー上のAdobe Commerce:[ アップグレードとパッチ適用 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) クラウドインフラストラクチャー上のCommerce ガイド
 
 ## 関連資料
 
