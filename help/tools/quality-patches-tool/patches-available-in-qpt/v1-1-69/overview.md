@@ -4,7 +4,7 @@ description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.69 で�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: c701c9ff7385821b771af2d19920ead192e4410a
+source-git-commit: 29f09e0ee426f9b58a98fdd512d7c1ac3fca2425
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -27,7 +27,7 @@ QPT v1.1.69 には、次のパッチが含まれています。
 1. **ACSD-58108**：結合テーブル名が見つからない場合、グリッド カスタム モジュール拡張順序で SQL エラーが発生します。
 1. **ACSD-65983**：管理者でバンドルされた製品見積もりを再設定するとエラーが発生する。
 1. **ACSD-66149**: IPN ハンドラーは、サポートされていない型に対して 500 を返します。
-1. **ACSD-66153**：間違ったレイアウト構造がキャッシュされているので、ページが 500 を返す。
+1. **ACSD-66153**：間違ったレイアウト構造がキャッシュされているので、ページが 500 エラーを返す。
 1. **ACSD-66302**:Web サイトではなくストア ID でフィルターされたウィッシュリスト項目。
 1. **ACSD-66311**：制限付き管理者の会社グリッドの読み込みに時間がかかる。
 1. **ACSD-66404**：トランザクションサイズの制限により、Cron ジョブで変更ログテーブル [!DNL Galera Cluster] クリアできない。
