@@ -4,9 +4,9 @@ description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.68 で�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: ba4154c109c64d3e45e6de8dc8ffd9bb9741e5b2
+source-git-commit: fa5164f3118ec51e4562f7ae5073781307452bc4
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,8 @@ QPT v1.1.68 には、次のパッチが含まれています。
 1. **ACSD-66865**:**[!UICONTROL Catalog Price Rule]** を保存するとインデクサーが無効になり、影響を受ける製品のみを再インデックス化する代替手段が提供されます。
 1. **ACSD-66889**: CLI でインベントリの再インデックス中にエラーが発生しました。
 1. **ACSD-66963**：仮想商品を含む買い物かごに割引コードが適用された場合、EstimateTotals ミューテーションが割引に対して null を返します。
-1. **ACSD-66965**：購買依頼リスト・ページの「印刷」オプションでエラーが発生します。
+1. **ACSD-66965**：ページの **[!UICONTROL Print]** オプション **[!UICONTROL Requisition List]** 原因でエラーが発生します。
 1. **ACSD-67039**:`rp_token` システム属性の検証が原因で、顧客レコードが保存されませんでした。
+
 
 左側のメニューを使用して、特定のパッチページに移動します。
