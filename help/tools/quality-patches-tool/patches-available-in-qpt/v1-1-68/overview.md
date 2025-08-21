@@ -4,9 +4,9 @@ description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.68 で�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 937acc659427b788b8af778f5ea826eacccdc70e
+source-git-commit: ba4154c109c64d3e45e6de8dc8ffd9bb9741e5b2
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ QPT v1.1.68 には、次のパッチが含まれています。
 1. **ACSD-66179**:「Not Capture」支払タイプの請求書をキャンセルすると、404 エラーページが表示される。
 1. **ACSD-66233**：製品リストポップアップが応答しないため、管理者が製品を追加できない。
 1. **ACSD-66506**：以前に割り当てられた共有カタログの製品が削除され、新しい製品が割り当てられると、バックエンドエラーが発生しました。
-1. **ACSD-66865**：カタログ価格ルールを保存するとインデクサーが無効になり、影響を受ける製品のみを再インデックス化する代替手段が提供されます。
+1. **ACSD-66865**:**[!UICONTROL Catalog Price Rule]** を保存するとインデクサーが無効になり、影響を受ける製品のみを再インデックス化する代替手段が提供されます。
 1. **ACSD-66889**: CLI でインベントリの再インデックス中にエラーが発生しました。
 1. **ACSD-66963**：仮想商品を含む買い物かごに割引コードが適用された場合、EstimateTotals ミューテーションが割引に対して null を返します。
 1. **ACSD-66965**：購買依頼リスト・ページの「印刷」オプションでエラーが発生します。
