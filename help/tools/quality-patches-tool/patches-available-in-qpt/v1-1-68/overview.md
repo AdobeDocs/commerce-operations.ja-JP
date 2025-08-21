@@ -4,7 +4,7 @@ description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.68 で�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: fa5164f3118ec51e4562f7ae5073781307452bc4
+source-git-commit: 53768b017845d0ea8033ebd7651421877ed36a55
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 QPT v1.1.68 には、次のパッチが含まれています。
 1. **ACSD-58131**：メディアギャラリーに 0 バイトの画像が存在するため、ディレクトリ内のすべての画像が表示または選択できません。
 1. **ACSD-62146**：住所検索が有効で、「顧客住所制限の数」が 1 に設定されている場合、選択した請求先住所がチェックアウト支払いページに表示されません。
-1. **ACSD-62415**:Adobe Commerce バックエンドによるカテゴリの読み込みに時間がかかる。
+1. **[ACSD-62415](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62415-adobe-commerce-backend-loads-categories-very-slowly.md)**:Adobe Commerce バックエンドによるカテゴリの読み込みに時間がかかる。
 1. **ACSD-65938**：請求書の作成に失敗した場合でも、ギフトカードの E メールが送信されていました。
 1. **ACSD-66072**:[!UICONTROL Related Products Rule] が設定されているときに内部サーバーエラーが発生したため、関連商品が商品詳細ページのGraphQLで返されません。
 1. **ACSD-66082**：製品の読み込みから製品のスウォッチ画像を更新できない。
