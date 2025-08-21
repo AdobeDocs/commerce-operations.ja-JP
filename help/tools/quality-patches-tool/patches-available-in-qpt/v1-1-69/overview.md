@@ -4,7 +4,7 @@ description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.69 で�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 29f09e0ee426f9b58a98fdd512d7c1ac3fca2425
+source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 QPT v1.1.69 には、次のパッチが含まれています。
 1. **AC-15223**：ストアフロントページで、ストアの切り替え後にキャッシュされたコンテンツが表示される。
-1. **ACP2E-3731**：表示が **[!UICONTROL Catalog, Search]** い製品の書き出しには、他のストア表示のレコードが含まれます。
+1. **ACP2E-3731**：表示が *[!UICONTROL Catalog, Search]* い製品の書き出しには、他のストア表示のレコードが含まれます。
 1. **ACP2E-3767**：バンドル製品を保存すると、最後のバンドルオプションが再び表示されます。
 1. **ACP2E-3964**:REST API 経由でリストされていないビデオを含む、設定可能な子製品。
 1. **ACP2E-3977**: [!UICONTROL Cap Reward Points Balance At] フィールドを空白のままにすることはできません。
