@@ -2,7 +2,7 @@
 title: 環境変数の使用例
 description: 環境変数を使用して、開発システムで共有された値、システム固有の値、機密性の高い値を設定する方法の例を参照してください。
 exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 0%
@@ -197,3 +197,5 @@ $_ENV['VARIABLE'] = 'value';
    「**デフォルトメールドメイン**」フィールドの値が次のように表示されます。 これは、システム固有の設定です。
 
    ![ 実稼動システムでの設定の確認 ](../../assets/configuration/split-default-domain.png)
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->

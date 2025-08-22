@@ -3,7 +3,7 @@ title: PHP 設定
 description: 次の手順に従って、必要な PHP 拡張機能をインストールし、Adobe Commerceのオンプレミス版インストールに必要な PHP 設定を行います。
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >最新バージョンのAdobe Commerceを使用するには、最低でも PHP 8.1 が必要です。サポートされている PHP の全バージョンについては、[ システム要件 ](../system-requirements.md) を参照してください。
 
-クラウド設定のガイダンスについては、[Cloud Infrastructure でのCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=ja) ガイドの _PHP 設定_ を参照してください。
+クラウド設定のガイダンスについては、[Cloud Infrastructure でのCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) ガイドの _PHP 設定_ を参照してください。
 
 ## PHP プロセスコントロール
 
@@ -210,3 +210,5 @@ PHP の問題のトラブルシューティングについては、以下のAdob
 - [PHP mcrypt 拡張モジュールが正しくインストールされていません ](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
 - [PHP バージョン準備チェックの問題 ](https://support.magento.com/hc/en-us/articles/360033546411)
 - [ 一般的な PHP の致命的なエラーと解決策 ](https://support.magento.com/hc/en-us/articles/360030568432)
+
+<!-- Last updated from includes: 2025-04-04 22:27:22 -->

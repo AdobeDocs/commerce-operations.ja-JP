@@ -2,7 +2,7 @@
 title: MySQL ガイドライン
 description: 次の手順に従って、Adobe Commerceのオンプレミスインストール用に MySQL と MariaDB をインストールして設定します。
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 0%
@@ -200,3 +200,5 @@ MySQL データベースインスタンスを設定するには、次の手順�
 >クラウドインフラストラクチャプロジェクト上のAdobe Commerceの場合、MySQL （MariaDB）の `explicit_defaults_for_timestamp` 設定はデフォルトで _オフ_ になっています。
 
 {{$include /help/_includes/maria-db-config.md}}
+
+<!-- Last updated from includes: 2024-02-12 09:51:27 -->

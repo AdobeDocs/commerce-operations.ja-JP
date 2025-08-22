@@ -3,7 +3,7 @@ title: モジュールと拡張機能の管理（開発者）
 description: コマンドラインインターフェイスと Composer パッケージマネージャーを使用して、Adobe Commerce モジュールと拡張機能を管理します。
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 3%
@@ -70,3 +70,5 @@ Composer が依存関係を更新してモジュールをインストールし�
    ```bash
    composer update
    ```
+
+<!-- Last updated from includes: 2022-09-08 16:00:49 -->

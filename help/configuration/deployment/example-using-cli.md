@@ -2,7 +2,7 @@
 title: CLI コマンドの使用例
 description: コマンドラインを使用して開発システムに共有された値、システム固有の値、機密性の高い値を設定する方法の例を参照してください。
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
   これらのプロパティは、**ストア**/設定/**設定**/一般/**一般** にあります。
 
-- **機密性の高い設定値に対する** メールの送信先 &rbrack;。
+- **機密性の高い設定値に対する** メールの送信先 ]。
 
   これは、**ストア**/設定/**設定**/一般/**連絡先** にあります。
 
@@ -181,3 +181,5 @@ bin/magento config:sensitive:set contact/email/recipient_email --scope=website -
    「**デフォルトメールドメイン**」フィールドの値が次のように表示されます。 これは、システム固有の設定です。
 
    ![ 実稼動システムでの設定の確認 ](../../assets/configuration/split-default-domain.png)
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->

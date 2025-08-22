@@ -2,7 +2,7 @@
 title: ストアの設定
 description: 次の手順に従って、Adobe Commerce ストアを設定します。
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # ストアの設定
 
-このコマンドを実行する前に、次の操作を行う必要があります *または* アプリケーションをインストールする必要があります [&#128279;](../advanced.md)。
+このコマンドを実行する前に、次の操作を行う必要があります *または* アプリケーションをインストールする必要があります [](../advanced.md)。
 
 * [デプロイメント設定の作成または更新](deployment.md)
 * [データベーススキーマの作成](database.md)
@@ -42,3 +42,5 @@ bin/magento setup:store-config:set [--<parameter_name>=<value>, ...]
 | `--use-secure-admin` | `1` まり、SSL を使用して管理者にアクセスします。 このオプションを選択する前に、web サーバーで SSL がサポートされていることを確認してください。<br><br>`0` れは、管理者で SSL を使用しないことを意味します。 これがデフォルトです。 | 不可 |
 | `--admin-use-security-key` | `1` を使用すると、アプリケーションはランダムに生成されたキー値を使用して、管理およびフォームのページにアクセスします。 これらのキー値は、クロスサイトスクリプトフォージェリー攻撃を防ぐのに役立ちます。 これがデフォルトです。<br/><br/>`0` はキーの使用を無効にします。 | 不可 |
 | `--magento-init-params` | を任意のコマンドに追加して、アプリケーション初期化パラメーターをカスタマイズ <br/><br/> ます。例：`MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | 不可 |
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->

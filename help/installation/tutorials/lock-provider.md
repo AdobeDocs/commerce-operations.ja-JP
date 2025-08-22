@@ -2,7 +2,7 @@
 title: ロックプロバイダーの設定
 description: 次の手順に従って、Adobe Commerce デプロイメントで重複した cron ジョブと cron グループが実行されないようにします。
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # ロックプロバイダーの設定
 
-このコマンドを実行する前に、次の操作を行う必要があります *または* アプリケーションをインストールする必要があります [&#128279;](../advanced.md)。
+このコマンドを実行する前に、次の操作を行う必要があります *または* アプリケーションをインストールする必要があります [](../advanced.md)。
 
 * [デプロイメント設定の作成または更新](deployment.md)
 * [データベーススキーマの作成](database.md)
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Adobe Commerceは、デフォルトでロックを保存するためにこのデータベースを使用します。 サーバーに複数のノードがある場合は、Zookeeper をロックプロバイダーとして使用することをお勧めします。
 
-クラウドインフラストラクチャー上でAdobe Commerceを実行している場合は、ロックプロバイダーを設定する必要はありません。 アプリケーションは、プロビジョニングプロセス中に、Pro プロジェクトのファイルロックプロバイダを設定します。 [ クラウド変数 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud) を参照してください。
+クラウドインフラストラクチャー上でAdobe Commerceを実行している場合は、ロックプロバイダーを設定する必要はありません。 アプリケーションは、プロビジョニングプロセス中に、Pro プロジェクトのファイルロックプロバイダを設定します。 [ クラウド変数 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud) を参照してください。
 
 ### コマンドの使用法
 
@@ -43,3 +43,5 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 | `--lock-zookeeper-host` | `zookeeper` ロックプロバイダーを使用する場合に Zookeeper クラスターに接続するホストおよびポート。<br><br> 例：`127.0.0.1:2181` | はい（`--lock-provider=zookeeper` を設定した場合） |
 | `--lock-zookeeper-path` | Zookeeper がロックを保存するパス。<br><br> デフォルトパスは `/magento/locks` です。 | 不可 |
 | `--lock-file-path` | ファイルのロックが保存されるパス。 | はい（`--lock-provider=file` を設定した場合） |
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->

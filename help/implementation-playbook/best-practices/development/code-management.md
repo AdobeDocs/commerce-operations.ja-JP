@@ -4,7 +4,7 @@ description: Adobe Commerce プロジェクトの開発段階における、コ�
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -115,3 +115,5 @@ ht-degree: 0%
 1. **Git から開始し、Composer に移動する**
 
    プロジェクトの開始時に、コード管理アプローチを選択します。 Git から Composer への切り替え、またはその逆の切り替えでは、開発が進行中の場合、コードが失われたり、リビジョン履歴が失われたりする可能性があります。
+
+<!-- Last updated from includes: 2023-08-23 15:56:59 -->
