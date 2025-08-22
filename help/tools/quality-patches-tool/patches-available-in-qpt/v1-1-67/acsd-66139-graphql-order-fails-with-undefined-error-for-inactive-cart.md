@@ -4,13 +4,13 @@ description: ACSD-66139 パッチを適用すると、存在しない、また�
 feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 16d95ae0d58dfdc88a5fab725a37d353d3ee5c96
+exl-id: 5a1a94ca-f274-4098-8b44-d3f1a0ea65a1
+source-git-commit: 8681dd706e614f86bbee36c182b47491ec707196
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66139：非アクティブな買い物かごに対して「UNDEFINED」エラーが発生してGraphQLの注文が失敗する
 
@@ -28,7 +28,7 @@ ACSD-66139 パッチは、存在しない、または非アクティブな買い
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを latestvers に更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを latestvers に更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
 
 ## 問題
 
@@ -42,10 +42,11 @@ ACSD-66139 パッチは、存在しない、または非アクティブな買い
 "Could not find a cart with ID ""%masked_cart_id""","Oh noo, we have an UNDEFINED issue, see!",module,Magento_QuoteGraphQl
 ```
 
-1. 管理パネルでストア表示を作成します。 **[!UICONTROL Stores]**/*[!UICONTROL Settings]*/**[!UICONTROL All Stores]** に移動します。 「**[!UICONTROL Create Store View]**」をクリックし、**[!UICONTROL Code]** にコード `test` を入力します。
+1. 管理パネルで、**[!UICONTROL Stores]** / **[!UICONTROL Settings]** / **[!UICONTROL All Stores]** / **[!UICONTROL Create Store View]** に移動して、ストア表示を作成します。
+1. **[!UICONTROL Code]** を *test* に設定します。
 1. 新しく作成 `german` たストア表示に言語を割り当てます。
 1. `setup:upgrade` および `setup:static-content:deploy -f` を実行します。
-1. ヘッダー「Store:test」で次のGraphQL クエリを実行します。
+1. ヘッダー `Store:test` を指定して次のGraphQL クエリを実行します。
 
 ```
 mutation {
@@ -122,8 +123,8 @@ mutation {
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
