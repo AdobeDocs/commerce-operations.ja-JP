@@ -99,7 +99,7 @@ MySQL をバージョン 8.0 からバージョン 8.4 に適切にアップグ�
    >
    >`restrict_fk_on_non_standard_key` の値を `OFF` に変更しない場合、読み込み時に次のエラーが発生します。
    >
-   ```sql
+   >```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. MySQL サーバーを再起動します。
