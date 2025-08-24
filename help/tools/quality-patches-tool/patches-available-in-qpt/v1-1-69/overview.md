@@ -4,9 +4,9 @@ description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.69 で�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
+source-git-commit: eb64190e0c3f9c0dd0690b0174c7a24798f96366
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,6 @@ QPT v1.1.69 には、次のパッチが含まれています。
 1. **ACSD-66404**：トランザクションサイズの制限により、Cron ジョブで変更ログテーブル [!DNL Galera Cluster] クリアできない。
 1. **ACSD-66952**：ターゲットルールが設定されると、PLP または買い物かごへの訪問ごとにキャッシュがクリアされます。
 1. **ACSD-67264**：バンドルおよびダウンロード可能な製品ページレイアウトがデバイス間で一貫していない。
-1. **ACSD-67347**：特殊文字クーポンとファイルロックを使用すると、注文がロックエラーで失敗する。
+1. **ACSD-67347**：クーポンコード使用時にロックを取得できませんで注文が失敗します。
 
 左側のメニューを使用して、特定のパッチページに移動します。
