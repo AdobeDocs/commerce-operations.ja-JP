@@ -4,9 +4,9 @@ description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.68 で�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: f04931fb8223f404bbdab8371cc1e4952948f1c1
+source-git-commit: 674aa68a0f7ecf30481a6d4f33b119d295c51a6b
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,9 @@ QPT v1.1.68 には、次のパッチが含まれています。
 1. **ACSD-66506**：以前に割り当てられた共有カタログの製品が削除され、新しい製品が割り当てられると、バックエンドエラーが発生しました。
 1. **ACSD-66865**:**[!UICONTROL Catalog Price Rule]** を保存するとインデクサーが無効になり、影響を受ける製品のみを再インデックス化する代替手段が提供されます。
 1. **ACSD-66889**: CLI でインベントリの再インデックス中にエラーが発生しました。
+1. **ACSD-66963**：仮想製品の割引に対して、`estimateTotals` mutation が null を返します。
+1. **ACSD-66965**：購買依頼リスト・ページの「印刷」オプションでエラーが発生します。
+1. **ACSD-67039**: rp_token システム属性の検証により、顧客レコードが保存されませんでした。
 1. **ACSD-66963**：仮想商品を含む買い物かごに割引コードが適用された場合、EstimateTotals ミューテーションが割引に対して null を返します。
 1. **ACSD-66965**：ページの **[!UICONTROL Print]** オプション **[!UICONTROL Requisition List]** 原因でエラーが発生します。
 1. **ACSD-67039**:`rp_token` システム属性の検証が原因で、顧客レコードが保存されませんでした。
