@@ -4,9 +4,9 @@ description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.68 で�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 53768b017845d0ea8033ebd7651421877ed36a55
+source-git-commit: f04931fb8223f404bbdab8371cc1e4952948f1c1
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,9 @@ QPT v1.1.68 には、次のパッチが含まれています。
 1. **ACSD-66072**:[!UICONTROL Related Products Rule] が設定されているときに内部サーバーエラーが発生したため、関連商品が商品詳細ページのGraphQLで返されません。
 1. **ACSD-66082**：製品の読み込みから製品のスウォッチ画像を更新できない。
 1. **ACSD-66179**:「Not Capture」支払タイプの請求書をキャンセルすると、404 エラーページが表示される。
+1. **ACSD-66233**：製品を追加ポップアップが読み込まれないので、管理者ユーザーがカテゴリに製品を追加できませんでした。
+1. **ACSD-66506**：共有カタログ製品を削除して再割り当てした後、バックエンドエラーが発生する。
+1. **ACSD-66865**：カタログ価格ルールを保存するとインデクサーが無効になり、影響を受ける製品のみを再インデックス化する代替手段が提供されます。
 1. **ACSD-66233**：製品リストポップアップが応答しないため、管理者が製品を追加できない。
 1. **ACSD-66506**：以前に割り当てられた共有カタログの製品が削除され、新しい製品が割り当てられると、バックエンドエラーが発生しました。
 1. **ACSD-66865**:**[!UICONTROL Catalog Price Rule]** を保存するとインデクサーが無効になり、影響を受ける製品のみを再インデックス化する代替手段が提供されます。
