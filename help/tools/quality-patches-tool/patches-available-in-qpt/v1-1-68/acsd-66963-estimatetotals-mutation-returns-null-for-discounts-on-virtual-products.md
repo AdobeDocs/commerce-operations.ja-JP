@@ -82,24 +82,24 @@ ACSD-66963 パッチは、仮想製品のみを含む買 `estimateTotals` 物か
 仮想商品のみを含む買い物かごには、割引情報が含まれています。
 
     &quot;&#39;
-    {
-    &quot;data&quot;: {
-    &quot;estimateTotals&quot;: {
-    &quot;cart&quot;: {
-    &quot;prices&quot;: {
-    &quot;discounts&quot;: [
-    {
-    &quot;amount&quot;: {
+    &lbrace;
+    &quot;data&quot;: &lbrace;
+    &quot;estimateTotals&quot;: &lbrace;
+    &quot;cart&quot;: &lbrace;
+    &quot;prices&quot;: &lbrace;
+    &quot;discounts&quot;: &lbrack;
+    &lbrace;
+    &quot;amount&quot;: &lbrace;
     &quot;value&quot;: 100.5,
     &quot;currency&quot;: &quot;USD&quot;
-    },
+    &rbrace;,
     &quot;label&quot;: &quot;テスト用の 2 番目の割引コード&quot;,
-    &quot;coupon&quot;: {
+    &quot;coupon&quot;: &lbrace;
     &quot;コード&quot;: &quot;z3r0c00l&quot;
-    },
+    &rbrace;,
     &quot;applied_to&quot;: &quot;ITEM&quot;,
     &quot;type&quot;: null
-    }
+    &rbrace;
      
      
      
@@ -108,31 +108,31 @@ ACSD-66963 パッチは、仮想製品のみを含む買 `estimateTotals` 物か
      {}
      
      
-] 次の値を使用します
+&rbrack; 次の値を使用します
 <u> 実際の結果 </u>:
 
 仮想商品のみを含む買い物かごに対して、割引情報が *null* として返されます。
 
     &quot;&#39;
-    {
-    &quot;data&quot;: {
-    &quot;estimateTotals&quot;: {
-    &quot;cart&quot;: {
-    &quot;prices&quot;: {
+    &lbrace;
+    &quot;data&quot;: &lbrace;
+    &quot;estimateTotals&quot;: &lbrace;
+    &quot;cart&quot;: &lbrace;
+    &quot;prices&quot;: &lbrace;
     &quot;discounts&quot;: null
-    }
-    }
-    }
-    },
+    &rbrace;
+    &rbrace;
+    &rbrace;
+    &rbrace;,
     &quot;extensions&quot;: {}
-    }
+    &rbrace;
     &quot;&#39;
 
 ## パッチの適用
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
