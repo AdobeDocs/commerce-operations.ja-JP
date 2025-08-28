@@ -4,7 +4,7 @@ description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.69 で�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 7a2d626092b19852287c48dc3da1fcc766237212
+source-git-commit: e72c99bbb5e82cd2dc77e33b7d17dfe8955e945a
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -26,7 +26,7 @@ QPT v1.1.69 には、次のパッチが含まれています。
 1. **ACP2E-4050**：複数配送（バンドル製品および送料無料）で買い物かごの価格ルールが失敗する。
 1. **ACSD-56226**：読み取りクエリは、`synchronous_replication` が有効な古いデータを返します。
 1. **ACSD-57477**：販売ルールの処理により、買い物かごに関連するリクエストのパフォーマンスが低下します。
-1. **ACSD-58108**：結合テーブル名が見つからない場合、グリッド カスタム モジュール拡張順序で SQL エラーが発生します。
+1. **[ACSD-58108](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-58108-missing-join-table-name-causes-sql-errors-in-order-grid-custom-module-extension.md)**：結合テーブル名が見つからない場合、グリッド カスタム モジュール拡張順序で SQL エラーが発生します。
 1. **ACSD-65983**：管理者でバンドルされた製品見積もりを再設定するとエラーが発生する。
 1. **ACSD-66149**: IPN ハンドラーは、サポートされていない型に対して 500 を返します。
 1. **ACSD-66153**：間違ったレイアウト構造がキャッシュされているので、ページが 500 エラーを返す。
