@@ -36,12 +36,12 @@ ACSD-58108 パッチでは、注文グリッドのカスタムモジュール拡
 
 <u> 再現手順 </u>:
 
-01. 2.4 開発インスタンスをインストールします。
-02. 新しい注文を作成します。
-03. SQL 拡張機能を持つカスタムモジュールをインストールします。
-04. **[!UICONTROL Admin]**/**[!UICONTROL Sales]**/**[!UICONTROL Orders]** に移動します。
-05. **[!UICONTROL Purchase Date]** フィルターを適用して、結果が出るまで待ちます。
-06. フィルター **[!UICONTROL Product SKU]** 適用します。
+&#x200B;01. 2.4 開発インスタンスをインストールします。
+&#x200B;02. 新しい注文を作成します。
+&#x200B;03. SQL 拡張機能を持つカスタムモジュールをインストールします。
+&#x200B;04. **[!UICONTROL Admin]**/**[!UICONTROL Sales]**/**[!UICONTROL Orders]** に移動します。
+&#x200B;05. **[!UICONTROL Purchase Date]** フィルターを適用して、結果が出るまで待ちます。
+&#x200B;06. フィルター **[!UICONTROL Product SKU]** 適用します。
 
 <u> 期待される結果 </u>:
 
@@ -55,7 +55,7 @@ ACSD-58108 パッチでは、注文グリッドのカスタムモジュール拡
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
 * クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
