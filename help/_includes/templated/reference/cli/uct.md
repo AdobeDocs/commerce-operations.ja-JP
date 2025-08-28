@@ -1,5 +1,5 @@
 ---
-source-git-commit: 305989a5620d858c474c75115849338f565d4730
+source-git-commit: ff21c497db7dd2aab90ded90fb3bba853e3c20f6
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 
 <!-- The template to render with above values -->
-**バージョン**:3.0.23
+**バージョン**:3.0.24
 
 このリファレンスには、`bin/uct` のコマンド ライン ツールで使用できる 9 つのコマンドが含まれています。
 最初のリストは、Adobe Commerceで `bin/uct list` コマンドを使用して自動生成されます。
