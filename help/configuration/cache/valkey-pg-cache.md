@@ -3,9 +3,9 @@ title: デフォルトキャッシュに ValueKey を使用
 description: Adobe Commerceのデフォルトキャッシュとして Valkey を設定する方法を説明します。
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: bc0274074c0254f649af2f9e2b288017ac82ce9b
+source-git-commit: dea0ad57a8c4525be9bc442708bdd2495f28d72d
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,14 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 
 - デフォルトのキャッシュを設定するキーと値のペアのリストを `--cache-backend-valkey-<parameter>=<value>` に示します。
 
+>[!NOTE]
+>
+>**Adobe Commerce 2.4.9-alpha2** 以降、ライセンスの変更により、**Valkey** は CLI ツールで Redis を正式に置き換えました。 Valkey は Redis のフォークであり、ほぼ同じ機能を維持しています。 **バージョン 2.4.8 以前** の場合、Valkey の設定に使用される CLI コマンドは Redis の場合と同じままであり、シームレスな後方互換性が確保され、移行またはデュアル環境のサポートが簡素化されます。 次の例は、Valkey 固有のコマンドを示しています。
+
+```bash
+bin/magento setup:config:set --cache-backend=redis --cache-backend-valkey-<parameter>=<value>...
+```
+
 | コマンドラインパラメーター | 値 | 意味 | デフォルト値 |
 |---------------------------------| --------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `cache-backend-valkey-server` | サーバー | 完全修飾ホスト名、IP アドレス、または UNIX ソケットへの絶対パス。 デフォルト値 `127.0.0.1` は、Valkey がCommerce サーバーにインストールされていることを示します。 | `127.0.0.1` |
@@ -42,6 +50,14 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 
 ```bash
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-server=127.0.0.1 --cache-backend-valkey-db=0
+```
+
+>[!NOTE]
+>
+>**Adobe Commerce 2.4.9-alpha2** 以降、ライセンスの変更により、**Valkey** は CLI ツールで Redis を正式に置き換えました。 Valkey は Redis のフォークであり、ほぼ同じ機能を維持しています。 **バージョン 2.4.8 以前** の場合、Valkey の設定に使用される CLI コマンドは Redis の場合と同じままであり、シームレスな後方互換性が確保され、移行またはデュアル環境のサポートが簡素化されます。 次の例は、Valkey 固有のコマンドを示しています。
+
+```bash
+bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
 ```
 
 ## ページキャッシュの設定
@@ -58,6 +74,14 @@ bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-<parameter>
 
 - ページのキャッシュを設定するキーと値のペアのリストを `--page-cache-valkey-<parameter>=<value>` に示します。
 
+>[!NOTE]
+>
+>**Adobe Commerce 2.4.9-alpha2** 以降、ライセンスの変更により、**Valkey** は CLI ツールで Redis を正式に置き換えました。 Valkey は Redis のフォークであり、ほぼ同じ機能を維持しています。 **バージョン 2.4.8 以前** の場合、Valkey の設定に使用される CLI コマンドは Redis の場合と同じままであり、シームレスな後方互換性が確保され、移行またはデュアル環境のサポートが簡素化されます。 次の例は、Valkey 固有のコマンドを示しています。
+
+```bash
+bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
+```
+
 | コマンドラインパラメーター | 値 | 意味 | デフォルト値 |
 |------------------------------| --------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `page-cache-valkey-server` | サーバー | 完全修飾ホスト名、IP アドレス、または UNIX ソケットへの絶対パス。 デフォルト値 `127.0.0.1` は、Valkey がCommerce サーバーにインストールされていることを示します。 | `127.0.0.1` |
@@ -71,6 +95,14 @@ bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-<parameter>
 
 ```bash
 bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-server=127.0.0.1 --page-cache-valkey-db=1
+```
+
+>[!NOTE]
+>
+>**Adobe Commerce 2.4.9-alpha2** 以降、ライセンスの変更により、**Valkey** は CLI ツールで Redis を正式に置き換えました。 Valkey は Redis のフォークであり、ほぼ同じ機能を維持しています。 **バージョン 2.4.8 以前** の場合、Valkey の設定に使用される CLI コマンドは Redis の場合と同じままであり、シームレスな後方互換性が確保され、移行またはデュアル環境のサポートが簡素化されます。 次の例は、Valkey 固有のコマンドを示しています。
+
+```bash
+bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-valkey-db=1
 ```
 
 ## 結果

@@ -3,9 +3,9 @@ title: セッションストレージに Valkey を使用
 description: セッションストレージ用の Valkey を設定する方法を説明します。
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: bc0274074c0254f649af2f9e2b288017ac82ce9b
+source-git-commit: dea0ad57a8c4525be9bc442708bdd2495f28d72d
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '795'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,15 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parame
 - `--session-save=valkey` は、Valkey セッションストレージを有効にします。 この機能が既に有効になっている場合は、このパラメーターを省略します。
 
 - セッションストレージを構成するパラメーターと値のペアのリストを `--session-save-valkey-<parameter_name>=<parameter_value>` に示します。
+
+
+>[!NOTE]
+>
+>**Adobe Commerce 2.4.9-alpha2** 以降、ライセンスの変更により、**Valkey** は CLI ツールで Redis を正式に置き換えました。 Valkey は Redis のフォークであり、ほぼ同じ機能を維持しています。 **バージョン 2.4.8 以前** の場合、Valkey の設定に使用される CLI コマンドは Redis の場合と同じままであり、シームレスな後方互換性が確保され、移行またはデュアル環境のサポートが簡素化されます。 次の例は、Valkey 固有のコマンドを示しています。
+
+```bash
+bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
+```
 
 | コマンドラインパラメーター | パラメーター名 | 意味 | デフォルト値 |
 |----------------------------------------------|--- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--- |
@@ -60,6 +69,14 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parame
 
 ```bash
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-host=127.0.0.1 --session-save-valkey-log-level=4 --session-save-valkey-db=2
+```
+
+>[!NOTE]
+>
+>**Adobe Commerce 2.4.9** 以降、ライセンスの変更により、**Valkey** は CLI ツールで Redis を正式に置き換えました。 Valkey は Redis のフォークであり、ほぼ同じ機能を維持しています。 **バージョン 2.4.8 以前** の場合、Valkey の設定に使用される CLI コマンドは Redis の場合と同じままであり、シームレスな後方互換性が確保され、移行またはデュアル環境のサポートが簡素化されます。 次の例は、Valkey 固有のコマンドを示しています。
+
+```bash
+bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
 ```
 
 ### 結果
