@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7c72ffc09d5b0147ce3c3f31cf18510a8cd9931f
+source-git-commit: d2071619e0f3150cba4b2ba2ad7ce2c89a187e78
 workflow-type: tm+mt
-source-wordcount: '34'
+source-wordcount: '40'
 ht-degree: 0%
 
 ---
@@ -10,3 +10,5 @@ ht-degree: 0%
 ## 実装のベストプラクティスの新機能
 
 このページには、過去 60 日間に加えられた変更が含まれています。 コピー編集などのマイナーアップデートはすべて、このリストから除外します。
+
+__現時点では、重要なドキュメントの更新はありません。__
