@@ -3,9 +3,9 @@ title: リリースノート
 description: Adobe Commerceで使用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 4adac1df0382cd0ae0833599011aeb664a91ceb6
+source-git-commit: edb7f2351afc346d54f62ae1278f481ba7d732f9
 workflow-type: tm+mt
-source-wordcount: '28046'
+source-wordcount: '28348'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,26 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce プロジェクトにパッチを適用する手順については、[ パッチの適用 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja#apply-individual-patches) を参照してください。 リリース済みパッチの完全なリストを確認するには、『ソフトウェア更新ガイド』の「[[!DNL Quality Patches Tool]：パッチの検索 ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)」を参照してください。
+>Adobe Commerce プロジェクトにパッチを適用する手順については、[ パッチの適用 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) を参照してください。 リリース済みパッチの完全なリストを確認するには、『ソフトウェア更新ガイド』の「[[!DNL Quality Patches Tool]：パッチの検索 ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
 
 >[!INFO]
 >
 >コミュニティがMagento Open Source用に作成した [!DNL quality patches] について詳しくは、[ リリースノート ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+
+## v1.1.70 {#v1-1-70}
+
+* **AC-15210** （Adobe CommerceおよびMagento Open Source >=2.4.6-p3 &lt;2.4.9） - USPS 統合を古い Web Tools API から新しい RESTful USPS API に移行します。
+* **ACSD-67102** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.8 の場合） - Adobe Commerce バックエンドの読み込みに非常に時間がかかる問題 **[!UICONTROL Categories]** 修正しました。
+* **ACSD-66120** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.9 の場合） – カタログ価格に税が含まれるように設定されている場合に、割引率と基本価格が正しく表示され [!DNL GraphQL] い問題を修正しました。
+* **ACSD-66157** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.9 の場合） – 異なるタイムゾーンで作成された web サイトに対して特別価格が有効にならない問題を修正しました。
+* **ACSD-67659** （Adobe CommerceおよびMagento Open Source >=2.4.8 &lt;2.4.9 の場合） – 翻訳済みエラーメッセージが未定義のエラーコードを返す問題を修正しました。
+* **ACSD-67166** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.9 の場合） – ストアフロントに引用を読み込む際に、`cataloginventory_stock_status` クエリが複数回実行され、データベース呼び出しが冗長になる問題を修正しました。
+* **ACSD-67289** （Adobe CommerceおよびMagento Open Source >=2.4.8 &lt;2.4.9） – 特別価格が適用されたときに通常価格が表示されない問題を修正しました。
+* **ACSD-67686** （Adobe CommerceおよびMagento Open Source >=2.4.4-p15 &lt;2.4.5 || >=2.4.5-p14 &lt;2.4.6 || >=2.4.6-p12 &lt;2.4.7） – 空の `Syntax Error: Unexpected <EOF>` リクエストを送信すると [!DNL GraphQL] エラーが発生する問題を修正しました。
+* **ACSD-67250** （Adobe Commerce >=2.4.7-p4 &lt;2.4.8 の場合） - **[!UICONTROL Shared Catalog]** save 操作で、影響を受けた項目だけでなく、すべての項目が更新され、不要な操作がなくなってパフォーマンスが向上する問題を修正しました。
+* **ACSD-67030** （Adobe Commerce >=2.4.4 &lt;2.4.9 の場合） – 制限付き役割管理者が編集すると、設定可能な商品から単純な商品の割り当てが解除される問題を修正しました。
+* 更新されたバージョン：**ACSD-54095**、**ACSD-51636**、**ACSD-51739**、**ACSD-66093**
+* 交換済みパッチ：**ACSD-62415**
 
 ## v1.1.69 {#v1-1-69}
 
