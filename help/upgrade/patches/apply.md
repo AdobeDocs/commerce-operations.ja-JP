@@ -13,7 +13,7 @@ ht-degree: 0%
 
 パッチは、次のいずれかの方法で適用できます。
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}
 - [コマンドライン](../patches/apply.md#command-line)
 - [コンポーザー](../patches/apply.md#composer)
 

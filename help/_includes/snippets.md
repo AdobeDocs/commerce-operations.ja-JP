@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントも、互換性のある最新の B2B セキュリティパッチリリースに更新する必要があります。 [B2B リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes) を参照してください。
+>このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントも、互換性のある最新の B2B セキュリティパッチリリースに更新する必要があります。 [B2B リリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/release-notes) を参照してください。
 
 ## Adobe Commerceのみ {#ee-only}
 
@@ -85,4 +85,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobeは、Adobeが提供する公式パッチをこの方式を使用して適用することはサポートしていません。 自己責任で以下の方法をご利用ください。 公式パッチを適用するには、[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} を使用します。 カスタムパッチをデプロイする前に、必ず包括的なテストを実施してください。
+>Adobeは、Adobeが提供する公式パッチをこの方式を使用して適用することはサポートしていません。 自己責任で以下の方法をご利用ください。 公式パッチを適用するには、[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"} を使用します。 カスタムパッチをデプロイする前に、必ず包括的なテストを実施してください。
