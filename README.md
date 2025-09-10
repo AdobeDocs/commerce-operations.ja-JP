@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7f23a1b123d2ca2e1d116eb66344a67cfe45e409
+source-git-commit: 21a4ec57b49f896cffefbec8db4ce97c161315a0
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '850'
 ht-degree: 3%
 
 ---
@@ -43,13 +43,13 @@ ht-degree: 3%
 
 ## Adobe コンテンツへの投稿について
 
-[Adobe ドキュメント投稿者ガイドを参照してください ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)。
+[Adobe ドキュメント投稿者ガイドを参照してください ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 投稿方法は、投稿者と、投稿したい変更の種類に応じて異なります。
 
 ### 軽微な変更
 
-軽微な変更をコントリビューションする場合は、記事にアクセスして記事の下部に表示されるフィードバックエリアをクリックし、**詳細なフィードバックオプション** をクリックします。次に、**編集の提案** をクリックして、GitHub の Markdown ソースファイルに移動します。 GitHub UI を使用して更新を行います。 一般的な [Adobe ドキュメント投稿者ガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
+軽微な変更をコントリビューションする場合は、記事にアクセスして記事の下部に表示されるフィードバックエリアをクリックし、**詳細なフィードバックオプション** をクリックします。次に、**編集の提案** をクリックして、GitHub の Markdown ソースファイルに移動します。 GitHub UI を使用して更新を行います。 一般的な [Adobe ドキュメント投稿者ガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
 
 このリポジトリのドキュメントおよびコード例について投稿者が送信した軽微な修正や説明は、Adobeの利用規約の対象となります。
 
@@ -67,7 +67,7 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
 
 コミュニティのコントリビューターは、基本的な編集を行う場合は GitHub UI を使用し、大きな変更を加える場合はリポジトリをフォークします。
 
-詳しくは、[Adobe ドキュメント投稿者ガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
+詳しくは、[Adobe ドキュメント投稿者ガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
 
 ## Markdown を使用してトピックを書式設定する方法
 
@@ -86,8 +86,8 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
 テンプレート化されたコンテンツの例としては、次のようなものがあります（ただし、これに限定されません）。
 
 - [CLI ツールリファレンス ](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-- [ 製品可用性テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=ja)
-- [ 必要システム構成テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ja)
+- [ 製品可用性テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+- [ 必要システム構成テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
 
 ### テンプレートコンテンツの生成
 
@@ -96,7 +96,7 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
 >**メモ：**
 >
 >- テンプレート化されたコンテンツを生成するには、ターミナルのコマンドラインで作業する必要があります。
->- レンダリングスクリプトを実行するには、Ruby がインストールされている必要があります。 必要なバージョンについては [_jekyll/.ruby-version] (_jekyll/.ruby-version) を参照してください。
+>- レンダリングスクリプトを実行するには、Ruby がインストールされている必要があります。 必要なバージョンについては [_jekyll/.ruby-version](_jekyll/.ruby-version) を参照してください。
 
 テンプレート化されたコンテンツのファイル構造について詳しくは、次を参照してください。
 
@@ -109,8 +109,8 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
 
 1. テキストエディターで、`/jekyll/_data` ディレクトリにあるデータファイルを開きます。 例：
 
-   - [ 製品可用性テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=ja): `/jekyll/_data/product-availability.yml`
-   - [ 必要システム構成テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ja): `/jekyll/_data/system-requirements.yml`
+   - [ 製品可用性テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
+   - [ 必要システム構成テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
 
 1. 既存の YAML 構造を使用してエントリを作成します。
 
@@ -131,10 +131,10 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
 1. テンプレート化されたコンテンツを生成し、出力を `help/_includes/templated` ディレクトリに書き込みます。
 
    ```bash
-   rake render
+   bundle exec rake render
    ```
 
-   >**注意：** スクリプトは `_jekyll` ディレクトリから実行する必要があります。 スクリプトを初めて実行する場合は、`bundle install` コマンドを使用して Ruby の依存関係をインストールする必要があります。
+   >**注意：** スクリプトは `_jekyll` ディレクトリから実行する必要があります。 スクリプトを初めて実行する場合は、`bundle install` コマンドを使用して Ruby の依存関係をインストールする必要があります。 Rake タスクは、Adobe Commerce ドキュメントリポジトリ全体のメンテナンス性を向上させるために、`adobe-comdox-exl-rake-tasks` gem によって提供されます。
 
 1. `root` ディレクトリに戻ります。
 
@@ -164,3 +164,12 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
    ```
 
 [ データファイル ](https://jekyllrb.com/docs/datafiles)、[ 液体フィルター ](https://jekyllrb.com/docs/liquid/filters/) およびその他の機能について詳しくは、Jekyll のドキュメントを参照してください。
+
+## 使用可能な Rake タスク
+
+このリポジトリは、`adobe-comdox-exl-rake-tasks` gem が提供する rake タスクを使用します。 使用可能なすべてのタスクを表示するには、次を実行します。
+
+```bash
+cd _jekyll
+bundle exec rake --tasks
+```

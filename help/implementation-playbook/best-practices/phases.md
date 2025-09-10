@@ -3,7 +3,7 @@ title: 実装フェーズ
 description: Adobe Commerce プロジェクトの実装フェーズに関するベストプラクティスについて説明します。
 exl-id: c5272f79-7315-46dc-a191-a40004aaa812
 feature: Best Practices
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 21a4ec57b49f896cffefbec8db4ce97c161315a0
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 7%
@@ -63,4 +63,4 @@ Adobe Commerce プロジェクトを実装する方法は多数あります。 �
 
 {{$include /help/_includes/templated/whats-new-bp.md}}
 
-<!-- Last updated from includes: 2025-01-06 16:29:49 -->
+<!-- Last updated from includes: 2025-09-04 11:19:10 -->
