@@ -2,9 +2,9 @@
 title: パッチの適用
 description: Adobe Commerce プロジェクトにパッチを適用する方法について説明します。
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 パッチは、次のいずれかの方法で適用できます。
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [コマンドライン](../patches/apply.md#command-line)
 - [コンポーザー](../patches/apply.md#composer)
 
@@ -24,9 +24,7 @@ ht-degree: 0%
 
 ## コンポーザー
 
->[!IMPORTANT]
->
->公式の品質パッチを適用するには、[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"} を使用します。 カスタムパッチをデプロイする前に、必ず包括的なテストを実施してください。
+{{custom-patches-disclaimer}}
 
 Composer を使用してカスタム パッチを適用するには：
 

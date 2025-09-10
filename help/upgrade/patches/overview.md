@@ -2,7 +2,7 @@
 title: パッチの動作
 description: Adobe Commerceの様々なタイプのパッチとその動作について説明します。
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 個々のパッチには、特定の問題に対する影響の低い品質修正が含まれています。 これらの修正は、最新のサポートされているマイナーバージョン（例：2.4.x）に適用されますが、以前のサポートされているマイナーバージョン（例：2.3.x）には含まれていない場合があります。 Adobeでは、必要に応じて個別のパッチをリリースします。
 
-[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"} を使用して、個別のパッチを適用します。
+[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} を使用して、個別のパッチを適用します。
 
 >[!NOTE]
 >
@@ -51,7 +51,9 @@ ht-degree: 0%
 
 ## カスタムパッチ
 
-Adobe エンジニアリングチームが、Adobe Commerce Composer リリースで GitHub に加えられたバグ修正を含めるのに時間がかかる場合があります。 それまでの間、GitHub からパッチを作成し、[`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) プラグインを使用して Composer ベースのインストールに適用できます。
+Adobe エンジニアリングチームが、GitHub で行われたバグ修正をAdobe Commerceの公式リリースに含めるのに時間がかかる場合があります。 それまでの間、GitHub からパッチを作成し、[`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) プラグインを使用して Composer ベースのインストールに適用できます。
+
+{{custom-patches-disclaimer}}
 
 [ コマンドライン ](apply.md#command-line) または [Composer](apply.md#composer) を使用して、カスタムパッチを適用します。
 
@@ -60,7 +62,7 @@ Adobe エンジニアリングチームが、Adobe Commerce Composer リリー�
 カスタムパッチを作成するには：
 
 1. ローカルプロジェクトに `patches/composer` ディレクトリを作成します。
-1. パッチに使用する GitHub コミットまたはプルリクエストを特定します。 この例では、GitHub の問題 [`2d31571`#6474](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) にリンクされた [&#128279;](https://github.com/magento/magento2/issues/6474) コミットを使用しています。
+1. パッチに使用する GitHub コミットまたはプルリクエストを特定します。 この例では、GitHub の問題 [`2d31571`#6474](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) にリンクされた [](https://github.com/magento/magento2/issues/6474) コミットを使用しています。
 1. コミット URL に `.patch` または `.diff` の拡張子を追加します。 ファイルサイズを小さくするには、`.diff` を使用します。 例：[https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
 1. `patches/composer` ディレクトリにページをファイルとして保存します。 例：`github-issue-6474.diff`。
 1. ファイルを編集し、すべてのパスから `app/code/<VENDOR>/<PACKAGE>` を削除して、`vendor/<VENDOR>/<PACKAGE>` ディレクトリに対する相対パスにします。
@@ -90,10 +92,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 パッチは、次のいずれかの方法で適用できます。
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [コマンドライン](/help/upgrade/patches/apply.md#command-line)
 - [コンポーザー](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->クラウドインフラストラクチャプロジェクト上のAdobe Commerceにパッチを適用するには、[Commerce on Cloud ガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja) の _パッチの適用_ を参照してください。
+>クラウドインフラストラクチャプロジェクト上のAdobe Commerceにパッチを適用するには、[Commerce on Cloud ガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) の _パッチの適用_ を参照してください。

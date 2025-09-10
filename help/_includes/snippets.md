@@ -1,7 +1,7 @@
 ---
-source-git-commit: 102fee9672c75c94c7d18d47562338f8eff97f11
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントも、互換性のある最新の B2B セキュリティパッチリリースに更新する必要があります。 [B2B リリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/release-notes) を参照してください。
+>このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントも、互換性のある最新の B2B セキュリティパッチリリースに更新する必要があります。 [B2B リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes) を参照してください。
 
 ## Adobe Commerceのみ {#ee-only}
 
@@ -80,3 +80,9 @@ ht-degree: 0%
 ## PHP プロセスコントロール {#php-process-control}
 
 インデクサーを並列モードで実行する前に、PHP でプロセス制御サポート （`pcntl`）を有効にする必要があります。 PHP ドキュメントの [ インストール ](https://www.php.net/manual/en/pcntl.installation.php) を参照してください。
+
+## カスタムパッチ {#custom-patches-disclaimer}
+
+>[!IMPORTANT]
+>
+>Adobeは、Adobeが提供する公式パッチをこの方式を使用して適用することはサポートしていません。 自己責任で以下の方法をご利用ください。 公式パッチを適用するには、[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} を使用します。 カスタムパッチをデプロイする前に、必ず包括的なテストを実施してください。
