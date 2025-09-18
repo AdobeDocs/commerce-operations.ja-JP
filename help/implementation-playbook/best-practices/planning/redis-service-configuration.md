@@ -91,7 +91,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-[2}Cloud Infrastructure ガイドのCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)REDIS_USE_SLAVE_CONNECTION} を参照してください __
+[2&rbrace;Cloud Infrastructure ガイドのCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)REDIS_USE_SLAVE_CONNECTION&rbrace; を参照してください __
 
 Adobe Commerce オンプレミスのインストールの場合は、`bin/magento:setup` コマンドを使用して新しい Redis キャッシュ実装を設定します。 [ 設定ガイド ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) の _デフォルトキャッシュに Redis を使用_ を参照してください。
 
