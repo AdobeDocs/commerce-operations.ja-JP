@@ -4,9 +4,9 @@ description: Adobe Commerceの拡張 Redis キャッシュ実装を使用して�
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: bbebb414ae3b8c255e17b1f3673a6c4b7c6f23b2
+source-git-commit: 9dc17a7ec44d9c146fdc2ec48e128beacc298299
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,13 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-クラウドインフラストラクチャー上の環境設定については、[`REDIS_BACKEND` クラウドインフラストラクチャー上のCommerceガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_backend) の __ を参照してください。
+クラウドインフラストラクチャー上の環境設定については、[`REDIS_BACKEND` クラウドインフラストラクチャー上のCommerceガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) の __ を参照してください。
 
 オンプレミスのインストールの場合は、[ 設定ガイド ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) の _Redis ページ キャッシュの設定_ を参照してください。
 
 >[!NOTE]
 >
->`ece-tools` パッケージの最新バージョンを使用していることを確認します。 そうでない場合は [ 最新バージョンにアップグレード ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=ja) します。 `composer show magento/ece-tools` CLI コマンドを使用すると、ローカル環境にインストールされているバージョンを確認できます。
+>`ece-tools` パッケージの最新バージョンを使用していることを確認します。 そうでない場合は [ 最新バージョンにアップグレード ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) します。 `composer show magento/ece-tools` CLI コマンドを使用すると、ローカル環境にインストールされているバージョンを確認できます。
 
 
 ### L2 キャッシュメモリのサイズ設定（Adobe Commerce Cloud）
@@ -91,13 +91,13 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-[2&rbrace;Cloud Infrastructure ガイドのCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_use_slave_connection)REDIS_USE_SLAVE_CONNECTION&rbrace; を参照してください __
+[2}Cloud Infrastructure ガイドのCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)REDIS_USE_SLAVE_CONNECTION} を参照してください __
 
 Adobe Commerce オンプレミスのインストールの場合は、`bin/magento:setup` コマンドを使用して新しい Redis キャッシュ実装を設定します。 [ 設定ガイド ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) の _デフォルトキャッシュに Redis を使用_ を参照してください。
 
 >[!WARNING]
 >
->_拡張/分割アーキテクチャ_ を使用して、クラウドインフラストラクチャプロジェクト用の Redis スレーブ接続を設定する [ しないでください ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html?lang=ja)。 これにより、Redis 接続エラーが発生します。 クラウドインフラストラクチャー上の [Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_use_slave_connection) ガイドの _Redis 設定ガイダンス_ を参照してください。
+>_拡張/分割アーキテクチャ_ を使用して、クラウドインフラストラクチャプロジェクト用の Redis スレーブ接続を設定する [ しないでください ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)。 これにより、Redis 接続エラーが発生します。 クラウドインフラストラクチャー上の [Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) ガイドの _Redis 設定ガイダンス_ を参照してください。
 
 ## キーをプリロード
 
@@ -124,42 +124,49 @@ stage:
 
 ## 古いキャッシュを有効にする
 
-新しいキャッシュを並行して生成しながら古いキャッシュを使用することで、特に多数のブロックとキャッシュキーを処理する場合に、ロックの待機時間を短縮し、パフォーマンスを向上させます。 `.magento.env.yaml` 設定ファイルで、古いキャッシュを有効にして、キャッシュタイプを定義します。
+新しいキャッシュを並行して生成しながら古いキャッシュを使用することで、特に多数のブロックとキャッシュキーを処理する場合に、ロックの待機時間を短縮し、パフォーマンスを向上させます。 古いキャッシュを有効にして、`config.php` 設定ファイルでキャッシュタイプを定義する（クラウドのみ）:
 
-```yaml
-stage:
-  deploy:
-    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-    CACHE_CONFIGURATION:
-      _merge: true
-      default:
-        backend_options:
-          use_stale_cache: false
-      stale_cache_enabled:
-        backend_options:
-          use_stale_cache: true
-      type:
-        default:
-          frontend: "default"
-        layout:
-          frontend: "stale_cache_enabled"
-        block_html:
-          frontend: "stale_cache_enabled"
-        reflection:
-          frontend: "stale_cache_enabled"
-        config_integration:
-          frontend: "stale_cache_enabled"
-        config_integration_api:
-          frontend: "stale_cache_enabled"
-        full_page:
-          frontend: "stale_cache_enabled"
-        translate:
-          frontend: "stale_cache_enabled"
+```php
+'cache' => [
+        'frontend' => [
+            'stale_cache_enabled' => [
+                'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
+                'backend_options' => [
+                    'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
+                    'remote_backend_options' => [
+                        'persistent' => 0,
+                        'server' => 'localhost',
+                        'database' => '4',
+                        'port' => '6370',
+                        'password' => ''
+                    ],
+                    'local_backend' => 'Cm_Cache_Backend_File',
+                    'local_backend_options' => [
+                        'cache_dir' => '/dev/shm/'
+                    ],
+                    'use_stale_cache' => true,
+                ],
+                'frontend_options' => [
+                    'write_control' => false,
+                ],
+            ]
+        ],
+        'type' => [
+            'default' => ['frontend' => 'default'],
+            'layout' => ['frontend' => 'stale_cache_enabled'],
+            'block_html' => ['frontend' => 'stale_cache_enabled'],
+            'reflection' => ['frontend' => 'stale_cache_enabled'],
+            'config_integration' => ['frontend' => 'stale_cache_enabled'],
+            'config_integration_api' => ['frontend' => 'stale_cache_enabled'],
+            'full_page' => ['frontend' => 'stale_cache_enabled'],
+            'translate' => ['frontend' => 'stale_cache_enabled']
+        ],
+    ]
 ```
 
 >[!NOTE]
 >
->前の例では、`full_page` キャッシュは [Fastly](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly) を使用しているので、クラウドインフラストラクチャプロジェクトのAdobe Commerceには関係ありません。
+>前の例では、`full_page` キャッシュは [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) を使用しているので、クラウドインフラストラクチャプロジェクトのAdobe Commerceには関係ありません。
 
 オンプレミスのインストールを構成する方法については、[ 構成ガイド ](../../../configuration/cache/level-two-cache.md#stale-cache-options) の _古いキャッシュ オプション_ を参照してください。
 
@@ -200,7 +207,7 @@ Redis キャッシュと Redis セッションを分離すると、キャッシ�
        rabbitmq: "rabbitmq:rabbitmq"
    ```
 
-1. [Adobe Commerce サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket) を送信して、実稼動環境とステージング環境のセッション専用の新しい Redis インスタンスのプロビジョニングをリクエストします。 更新された `.magento/services.yaml` と `.magento.app.yaml` の設定ファイルを含めます。 ダウンタイムは発生しませんが、新しいサービスをアクティブ化するにはデプロイメントが必要です。
+1. [Adobe Commerce サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) を送信して、実稼動環境とステージング環境のセッション専用の新しい Redis インスタンスのプロビジョニングをリクエストします。 更新された `.magento/services.yaml` と `.magento.app.yaml` の設定ファイルを含めます。 ダウンタイムは発生しませんが、新しいサービスをアクティブ化するにはデプロイメントが必要です。
 
 1. 新しいインスタンスが実行中であることを確認し、ポート番号をメモします。
 
@@ -222,7 +229,6 @@ Redis キャッシュと Redis セッションを分離すると、キャッシ�
    SESSION_CONFIGURATION:
      _merge: true
      redis:
-       port: 6374 # check the port in $MAGENTO_CLOUD_RELATIONSHIPS and put it here (by default, you can delete this line!!)
        timeout: 5
        disable_locking: 1
        bot_first_lifetime: 60
@@ -237,7 +243,7 @@ Redis キャッシュと Redis セッションを分離すると、キャッシ�
    redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
    ```
 
-デプロイメント中、[ ビルドおよびデプロイログ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=ja#build-and-deploy-logs) に次の行が表示されます。
+デプロイメント中、[ ビルドおよびデプロイログ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs) に次の行が表示されます。
 
 ```
 W:   - Downloading colinmollenhour/credis (1.11.1)
@@ -269,6 +275,67 @@ stage:
             compress_threshold: 20480     # don't compress files smaller than this value
             compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~69%)
 ```
+
+## Redis 非同期解放の有効化（lazyfree）
+
+クラウドインフラストラクチャー上のAdobe Commerceで `lazyfree` を有効にするには、[Adobe Commerce サポートチケットを送信し ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 次の Redis 設定が環境に適用されるようにリクエストします。
+
+```
+lazyfree-lazy-eviction yes
+lazyfree-lazy-expire yes
+lazyfree-lazy-server-del yes
+replica-lazy-flush yes
+lazyfree-lazy-user-del yes
+```
+
+lazyfree を有効にすると、Redis はメモリの再利用をバックグラウンド スレッドにオフロードし、削除、サーバーによる削除、ユーザーの削除、レプリカ データセットのフラッシュを行います。 これにより、メインスレッドのブロックが減り、リクエストの待ち時間が短縮されます。
+
+>[!NOTE]
+>
+>`lazyfree-lazy-user-del yes` オプションを指定すると、`DEL` コマンドは `UNLINK` のように動作します。これにより、キーのリンクが直ちに解除され、メモリが非同期で解放されます。
+
+>[!WARNING]
+>
+>バックグラウンドで解放が行われるため、削除/期限切れ/削除されたキーが使用するメモリは、バックグラウンドスレッドが作業を完了するまで割り当てられたままです。 お使いの Redis が既にメモリ負荷が高い場合は、慎重にテストし、最初にメモリ負荷を下げることを検討してください（例えば、特定のケースではブロック キャッシュを無効にし、上記のようにキャッシュとセッションの Redis インスタンスを分離します）。
+
+## Redis マルチスレッド I/O を有効にする
+
+クラウドインフラストラクチャでAdobe Commerceの Redis I/O スレッドを有効にするには、[Adobe Commerce サポートチケットを送信し ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 以下の設定をリクエストします。 これにより、ソケットの読み取り/書き込みとコマンド解析をメインスレッドからオフロードすることで、スループットが向上しますが、CPUの使用率は高くなります。 負荷の下で検証し、ホストを監視します。
+
+```
+io-threads-do-reads yes
+io-threads 8 # choose a value lower than the number of CPU cores (check with nproc), then tune under load
+```
+
+>[!NOTE]
+>
+>I/O スレッドは、クライアント I/O と解析のみを並列化します。 Redis コマンドの実行はシングルスレッドのままです。
+
+>[!WARNING]
+>
+>I/O スレッドを有効にすると、CPUの使用量が増える可能性がありますが、すべてのワークロードにメリットがあるわけではありません。 保守的な価値とベンチマークから始めます。 待ち時間が増加したり、CPUが飽和状態になった場合は、I/O スレッドの読み取りを減らすか、無効 `io-threads` します。
+
+## Redis クライアントのタイムアウトと再試行の回数を増やす
+
+`.magento.env.yaml` でバックエンドオプションを調整して、キャッシュクライアントの許容値を一時的な飽和値に引き上げます。
+
+```yaml
+stage:
+  deploy:
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            read_timeout: 10
+            connect_retries: 5
+```
+
+これらの設定により、Redis のクライアント許容値が増加し、返信待ちウィンドウが拡張され、接続設定が再試行されます。 これにより、短いスパイク時の断続的な `cannot connect to localhost:6370` ールと読み取りタイムアウトのエラーを減らすことができます。
+
+>[!NOTE]
+>
+>これらは、永続的な過負荷の修正ではありません。
 
 ## 追加情報
 
