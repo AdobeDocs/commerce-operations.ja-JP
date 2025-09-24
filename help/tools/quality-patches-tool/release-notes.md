@@ -3,9 +3,9 @@ title: リリースノート
 description: Adobe Commerceで使用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: edb7f2351afc346d54f62ae1278f481ba7d732f9
+source-git-commit: 4718ebd237c73913e8bc03b9370298b3504e619f
 workflow-type: tm+mt
-source-wordcount: '28348'
+source-wordcount: '28592'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,23 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce プロジェクトにパッチを適用する手順については、[ パッチの適用 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja#apply-individual-patches) を参照してください。 リリース済みパッチの完全なリストを確認するには、『ソフトウェア更新ガイド』の「[[!DNL Quality Patches Tool]：パッチの検索 ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)」を参照してください。
+>Adobe Commerce プロジェクトにパッチを適用する手順については、[ パッチの適用 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) を参照してください。 リリース済みパッチの完全なリストを確認するには、『ソフトウェア更新ガイド』の「[[!DNL Quality Patches Tool]：パッチの検索 ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
 
 >[!INFO]
 >
 >コミュニティがMagento Open Source用に作成した [!DNL quality patches] について詳しくは、[ リリースノート ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+
+## v1.1.71 {#v1-1-71}
+
+* **ACSD-60624** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8 の場合） – ページビルダーの **[!UICONTROL Upload Image]**、[!UICONTROL Image]、[!UICONTROL Banner] のセクションの空のコンテンツで [!UICONTROL Slider] が機能しない問題を修正しました。
+* **ACSD-67089** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.9 の場合） - `inventory/export-stock-salable-qty` API のページネーションの問題を修正しました。ページサイズに誤って制限 `total_count` れます。
+* **ACSD-67093** （Adobe CommerceおよびMagento Open Source >=2.4.8 &lt;2.4.9 の場合） – 日付範囲フィルターを使用してGraphQLから注文を取得すると、誤った結果が返される問題を修正しました。
+* **ACSD-67459** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.9） – 説明が 65,536 文字を超える商品を読み込めない問題を修正しました。
+* **ACSD-67603** （Adobe Commerce >=2.4.6 &lt;2.4.8 の場合） – 画像を含めることができる商品のサイトマップ生成の処理時間が長くなる問題を修正しました。
+* **ACSD-67643** （Adobe CommerceおよびMagento Open Source >=2.4.8 &lt;2.4.9 の場合） – ネストされたカテゴリが多数ある環境で、スケジュールされた更新時に重複エントリが作成される問題を修正しました。
+* **ACSD-67652** （Adobe CommerceおよびMagento Open Source >=2.4.8 &lt;2.4.9 の場合） - GraphQL呼び出しで、バンドル商品のステータスが在庫切れとして返される問題を、商品が在庫にある子および親商品の場合でも修正します。
+* **ACSD-67904** （Adobe CommerceおよびMagento Open Source >=2.4.8 &lt;2.4.9 の場合） – 市区町村名に数字（0～9）、アンパサンド（&amp;）、ピリオド（.）または括弧（）が含まれている場合、注文を行うことができない問題を修正しました。
+* 交換後のパッチ：**ACSD-61322**、**ACSD-65848**
 
 ## v1.1.70 {#v1-1-70}
 
