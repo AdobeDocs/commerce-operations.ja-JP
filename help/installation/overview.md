@@ -2,10 +2,10 @@
 title: オンプレミス インストールの概要
 description: Adobe Commerce のオンプレミスデプロイメントに関するインストールプロセスについて説明します。
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 7cc77a204d2a3c0773e6a0ab60e57e6e35f12091
+source-git-commit: 9ad18dac76f171ad0f90330e1a1347baa056403b
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 3%
+source-wordcount: '502'
+ht-degree: 2%
 
 ---
 
@@ -14,13 +14,30 @@ ht-degree: 3%
 
 ここでは、独自のインフラストラクチャにAdobe Commerceをインストールする方法の概要について説明します。 インストールプロセスには、サーバー環境の設定、必要なソフトウェアと資格情報の取得、インストールコマンドの実行が含まれます。
 
-Adobe Commerce ソフトウェアは、約 30～60 分でインストールできます。 ただし、インストール前にサーバー環境をセットアップするのに必要な時間は、経験と選択したテクノロジーによって異なります。
+Adobe Commerceのオンプレミスソフトウェアは、約 30～60 分でインストールできます。 ただし、インストール前にサーバー環境をセットアップするのに必要な時間は、経験と選択したテクノロジーによって異なります。
 
 >[!TIP]
 >
 >正常に続行するには、中程度の技術的知識とサーバーへのアクセス権が必要です。
 
-インストールすると、[ 顧客向けのストアフロント ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/storefront/storefront) と [ 管理パネル ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/admin/admin) の両方を備えた完全に機能するAdobe Commerce ストアが作成されます。 プロセスを開始する前に、データベース資格情報、ドメイン情報および認証キーの準備が完了している必要があります。
+インストールすると、[ 顧客向けのストアフロント ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) と [ 管理パネル ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin) の両方を備えた完全に機能するAdobe Commerce ストアが作成されます。 プロセスを開始する前に、データベース資格情報、ドメイン情報および認証キーの準備が完了している必要があります。
+
+## 販売者の責任
+
+Adobe Commerceをオンプレミスで使用すると、サーバー、ホスティング環境、システムメンテナンスなど、独自のインフラストラクチャをホストおよび管理できます。 Adobeは、特にCommerceのコアアプリケーションをサポートしています。これには、以下が含まれます。
+
+- 製品アップデートおよび修正点へのアクセス
+- 脆弱性に対処するためのセキュリティパッチ
+- セルフホストソリューションの管理と最適化を支援する包括的なドキュメント
+
+環境を完全に制御できるため、カスタマイズと柔軟性を向上できますが、インフラストラクチャのパフォーマンス、セキュリティ、スケーラビリティを確保する責任があります。 例えば、次の業務を担当します。
+
+- すべてのAdobe Commerce オンプレミスシステムの設計、実装、設定、メンテナンス、トラブルシューティング、パフォーマンステスト。
+   - サーバー、オペレーティングシステム、データベース、[!DNL PHP]、検索、キャッシュ、フルページキャッシュおよびコンテンツ配信ネットワーク。 一般的なテーマには、[!DNL Nginx/Apache]、[!DNL PHP]、[!DNL MySQL/MariaDB]、[!DNL Redis]、[!DNL Elasticsearch/OpenSearch]、[!DNL RabbitMQ]、[!DNL Varnish]、[!DNL DNS]、[!DNL SSL/TLS certificates] および使用される [!DNL CDN] が含まれます（ただし、これに限定されるものではありません）。
+- 容量計画、自動拡張、クラスタリング、バックアップ、災害復旧
+- すべての製品および顧客データ、設計、設定およびセットアップ、アプリケーションおよびデータベースの維持、コードのデプロイメント、バージョンのアップグレード、およびパッチアプリケーション
+- APM/logging/alerting を介した監視とアラート（[!DNL New Relic]、[!DNL Datadog]、[!DNL ELK] など）
+- オペレーティングシステム、[!DNL PHP]、データベース、ミドルウェアの堅牢化とアップデートのためのセキュリティパッチ適用
 
 ## ワークフロー
 
