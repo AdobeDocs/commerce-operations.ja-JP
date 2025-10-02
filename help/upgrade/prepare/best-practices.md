@@ -42,8 +42,8 @@ Adobe Commerce インスタンスのアップグレードに要する労力の�
 
 プロジェクトの作業を開始した時点で、現在の作業が今後のアップグレードにどのように影響するかを考慮する必要があります。 次に示すように、Adobe Commerceの開発のベストプラクティスに常に従ってください。
 
-- [ 開発のベストプラクティス ](https://developer.adobe.com/commerce/php/best-practices/)
-- [ コーディング基準等 ](https://developer.adobe.com/commerce/php/coding-standards/)
+- [&#x200B; 開発のベストプラクティス &#x200B;](https://developer.adobe.com/commerce/php/best-practices/)
+- [&#x200B; コーディング基準等 &#x200B;](https://developer.adobe.com/commerce/php/coding-standards/)
 
 Adobe Commerce拡張プラットフォームの導入をまだ開始していない場合は、開始します。 このプラットフォームを使用すると、SaaS と同様のアップグレード性を維持しながら、プロセスを効率的にカスタマイズし、システムを統合し、新しい機能をデプロイできます。 次のような機能があります。
 
@@ -57,11 +57,11 @@ Adobe Commerce拡張プラットフォームの導入をまだ開始していな
 
 Adobe Commerceの機能を継続的に拡張する際には、利用可能な最新リリースに基づいて開発し、プロジェクト計画にアップグレード方法を定義することが重要です。 これにより、安全でコンプライアンスに対応した最新の機能強化を常に最新の状態に保つことができるため、セールスの迅速な拡大、より効果的な運用、現在および将来にわたる競争優位性の維持が可能になります。
 
-アップグレードの計画と予算に役立つように、[ リリーススケジュール ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) を監視する必要があります。 チームのバックログ内で、事前にアップグレードタスクを計画します。 この作業を一般公開（GA）で完了することを目指します。
+アップグレードの計画と予算に役立つように、[&#x200B; リリーススケジュール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) を監視する必要があります。 チームのバックログ内で、事前にアップグレードタスクを計画します。 この作業を一般公開（GA）で完了することを目指します。
 
 - 新しい各リリースについては、プレリリースバージョンを参照してください。 プレリリースは、一般公開の 2 週間前にAdobe Commerceのマーチャントおよびすべてのパートナーが利用できる一般公開コードです。 複数のストアがある場合は、基本ストアでプレリリースを使用し、カスタムモジュールとテーマが互換性があることを確認します。
 
-- アップグレードの計画に役立てるため、Adobe Commerceの [ アップグレード計画のチェックリスト ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist) を確認します。
+- アップグレードの計画に役立てるため、Adobe Commerceの [&#x200B; アップグレード計画のチェックリスト &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist) を確認します。
 
 - 年の初めにアップグレードを計画します。 アップグレードを完了するには、予算とリソースを予約する必要があります。 アップグレード作業は、プロジェクトによって大きく異なる場合があることに注意してください。 経験と知識を活用して、できるだけ正確な計画を立てます。
 
@@ -73,7 +73,7 @@ Adobe Commerceの機能を継続的に拡張する際には、利用可能な最
 
 アップグレードに必要な作業の評価：
 
-- [ リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) を参照して、新しいバージョンの範囲と影響を理解します。
+- [&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) を参照して、新しいバージョンの範囲と影響を理解します。
 
 - [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) を使用して、新しいバージョンにアップグレードする前に、カスタムコードで修正する必要がある潜在的な問題を特定します。
 
@@ -81,7 +81,7 @@ Adobe Commerceの機能を継続的に拡張する際には、利用可能な最
 
 ### アップグレード後のテスト
 
-テストは、最も時間を要するアップグレード段階です。 そのため、このプロセスは可能な限り自動化する必要があります。 コアテストツールを使用することで、メリットを得ることができます。 詳細については、[ アプリケーションテストガイド ](https://developer.adobe.com/commerce/testing/guide/) を参照してください。
+テストは、最も時間を要するアップグレード段階です。 そのため、このプロセスは可能な限り自動化する必要があります。 コアテストツールを使用することで、メリットを得ることができます。 詳細については、[&#x200B; アプリケーションテストガイド &#x200B;](https://developer.adobe.com/commerce/testing/guide/) を参照してください。
 
 実稼動環境に移行する前に、ステージング環境を使用して、アップグレードをテストし検証します。
 
