@@ -3,7 +3,7 @@ title: ベストプラクティス
 description: Adobeが推奨するベストプラクティスを使用して、Adobe Commerce プロジェクトのアップグレードプロセスを管理します。
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 6b3afb93770c1d976dd975a484070e0aee730a98
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 0%
@@ -57,11 +57,11 @@ Adobe Commerce拡張プラットフォームの導入をまだ開始していな
 
 Adobe Commerceの機能を継続的に拡張する際には、利用可能な最新リリースに基づいて開発し、プロジェクト計画にアップグレード方法を定義することが重要です。 これにより、安全でコンプライアンスに対応した最新の機能強化を常に最新の状態に保つことができるため、セールスの迅速な拡大、より効果的な運用、現在および将来にわたる競争優位性の維持が可能になります。
 
-アップグレードの計画と予算に役立つように、[ リリーススケジュール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/schedule) を監視する必要があります。 チームのバックログ内で、事前にアップグレードタスクを計画します。 この作業を一般公開（GA）で完了することを目指します。
+アップグレードの計画と予算に役立つように、[ リリーススケジュール ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) を監視する必要があります。 チームのバックログ内で、事前にアップグレードタスクを計画します。 この作業を一般公開（GA）で完了することを目指します。
 
 - 新しい各リリースについては、プレリリースバージョンを参照してください。 プレリリースは、一般公開の 2 週間前にAdobe Commerceのマーチャントおよびすべてのパートナーが利用できる一般公開コードです。 複数のストアがある場合は、基本ストアでプレリリースを使用し、カスタムモジュールとテーマが互換性があることを確認します。
 
-- アップグレードの計画に役立てるため、Adobe Commerceの [ アップグレード計画のチェックリスト ](https://support.magento.com/hc/en-us/articles/360057968951) を確認します。
+- アップグレードの計画に役立てるため、Adobe Commerceの [ アップグレード計画のチェックリスト ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist) を確認します。
 
 - 年の初めにアップグレードを計画します。 アップグレードを完了するには、予算とリソースを予約する必要があります。 アップグレード作業は、プロジェクトによって大きく異なる場合があることに注意してください。 経験と知識を活用して、できるだけ正確な計画を立てます。
 
@@ -73,7 +73,7 @@ Adobe Commerceの機能を継続的に拡張する際には、利用可能な最
 
 アップグレードに必要な作業の評価：
 
-- [ リリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) を参照して、新しいバージョンの範囲と影響を理解します。
+- [ リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) を参照して、新しいバージョンの範囲と影響を理解します。
 
 - [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) を使用して、新しいバージョンにアップグレードする前に、カスタムコードで修正する必要がある潜在的な問題を特定します。
 
