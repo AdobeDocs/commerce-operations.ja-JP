@@ -22,11 +22,11 @@ Varnish を使用するようにCommerceを設定するには：
 
    | フィールド | 説明 |
    | ----- | ----------- |
-   | アクセスリスト | コンテンツを無効にする完全修飾ホスト名、IP アドレス、または [Classless Inter-domain Routing （CIDR） ](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) 表記の IP アドレス範囲を入力します。 [Varnish キャッシュのパージ ](https://varnish-cache.org/docs/3.0/tutorial/purging.html) を参照してください。 |
-   | バックエンドホスト | Varnish _バックエンド_ または _オリジンサーバー_ の完全修飾ホスト名または IP アドレスとリッスンポートを入力します。つまり、Varnish が加速するコンテンツを提供するサーバーです。 通常、これは web サーバーです。 [Varnish キャッシュバックエンドサーバー ](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) を参照してください。 |
+   | アクセスリスト | コンテンツを無効にする完全修飾ホスト名、IP アドレス、または [Classless Inter-domain Routing （CIDR） &#x200B;](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) 表記の IP アドレス範囲を入力します。 [Varnish キャッシュのパージ &#x200B;](https://varnish-cache.org/docs/3.0/tutorial/purging.html) を参照してください。 |
+   | バックエンドホスト | Varnish _バックエンド_ または _オリジンサーバー_ の完全修飾ホスト名または IP アドレスとリッスンポートを入力します。つまり、Varnish が加速するコンテンツを提供するサーバーです。 通常、これは web サーバーです。 [Varnish キャッシュバックエンドサーバー &#x200B;](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) を参照してください。 |
    | バックエンドポート | オリジンサーバーのリッスンポート。 |
    | 猶予期間 | バックエンドが応答しない場合に、ワニスが古いコンテンツを提供する期間を決定します。 デフォルト値は 300 秒です。 |
-   | パラメータサイズを処理 | フルページキャッシュ用に [ HTTP エンドポイントで処理する ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) レイアウトハンドル [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) の最大数を指定します。 サイズを制限すると、セキュリティとパフォーマンスが向上する可能性があります。 デフォルトは 100 です。 |
+   | パラメータサイズを処理 | フルページキャッシュ用に [&#x200B; HTTP エンドポイントで処理する &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) レイアウトハンドル [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) の最大数を指定します。 サイズを制限すると、セキュリティとパフォーマンスが向上する可能性があります。 デフォルトは 100 です。 |
 
 1. 「**設定を保存**」をクリックします。
 
@@ -46,7 +46,7 @@ bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/cac
 
    次の図に例を示します。
 
-   ![Admin で Varnish を使用するようにCommerceを設定する ](../../assets/configuration/varnish-admin-22.png)
+   ![Admin で Varnish を使用するようにCommerceを設定する &#x200B;](../../assets/configuration/varnish-admin-22.png)
 
 1. 既存の `default.vcl` をバックアップします。 次に、`varnish.vcl` に書き出した `default.vcl` ファイルの名前を変更します。 次に、ファイルを `/etc/varnish/` ディレクトリにコピーします。
 
@@ -72,7 +72,7 @@ bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/cac
     }
    ```
 
-1. Vagrant ヘルスチェック、猶予モードまたは saint モードの設定をカスタマイズする場合は、[ 高度な Varnish 設定 ](config-varnish-advanced.md) を参照してください。
+1. Vagrant ヘルスチェック、猶予モードまたは saint モードの設定をカスタマイズする場合は、[&#x200B; 高度な Varnish 設定 &#x200B;](config-varnish-advanced.md) を参照してください。
 
 1. Varnish と Web サーバーを再起動します。
 

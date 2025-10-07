@@ -16,19 +16,19 @@ ht-degree: 0%
 
 - [!DNL Commerce] 設定で、次のキャッシュメカニズムを設定します。
 
-   - [ データベース ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
+   - [&#x200B; データベース &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
    - [Redis](config-redis.md)
    - ファイルシステム（デフォルト）: デフォルトのファイルシステムキャッシュを使用するための設定は必要ありません。
 
-- [ 設定を変更せずに ](config-varnish.md) ワニス [!DNL Commerce] を設定します。
+- [&#x200B; 設定を変更せずに &#x200B;](config-varnish.md) ワニス [!DNL Commerce] を設定します。
 
 ## キャッシュの用語
 
 [!DNL Commerce] では、次のキャッシュ用語を使用します。
 
 - **フロントエンド** - [Magento\Framework\Cache\Frontend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend) によって実装される、キャッシュストレージへのインターフェイスまたはゲートウェイに似ています。
-- **キャッシュタイプ** - [!DNL Commerce] に用意されているタイプの 1 つにすることも、[ 独自のタイプを作成 ](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/) することもできます。
-- **バックエンド** - [ キャッシュストレージ ](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html) に関する詳細を指定します。[Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend) によって実装されます
+- **キャッシュタイプ** - [!DNL Commerce] に用意されているタイプの 1 つにすることも、[&#x200B; 独自のタイプを作成 &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/) することもできます。
+- **バックエンド** - [&#x200B; キャッシュストレージ &#x200B;](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html) に関する詳細を指定します。[Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend) によって実装されます
 - **2 レベルバックエンド** - キャッシュレコードを 2 つのバックエンドに保存します。高速なバックエンドと低速なバックエンドがあります。
 
   >[!INFO]
@@ -47,4 +47,4 @@ ht-degree: 0%
 
 >[!TIP]
 >
->ワニスは [!DNL Commerce] の構成を変更する必要はありません。 [ ワニスの設定と使用 ](config-varnish.md) を参照してください。
+>ワニスは [!DNL Commerce] の構成を変更する必要はありません。 [&#x200B; ワニスの設定と使用 &#x200B;](config-varnish.md) を参照してください。

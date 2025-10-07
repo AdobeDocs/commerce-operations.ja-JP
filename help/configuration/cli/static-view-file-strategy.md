@@ -14,9 +14,9 @@ ht-degree: 0%
 
 静的ビューファイルをデプロイする場合、3 つの方法から 1 つを選択できます。 それぞれに、様々なユースケースに最適なデプロイメント結果が得られます。
 
-- [ 標準 ](#standard-strategy)：通常のデプロイメントプロセス。
-- [ クイック ](#quick-strategy) （_デフォルト_）：複数のロケールのファイルがデプロイされる場合に、デプロイメントに必要な時間を最小限に抑えます。
-- [ コンパクト ](#compact-strategy)：公開済みのビューファイルにかかるスペースを最小限に抑えます。
+- [&#x200B; 標準 &#x200B;](#standard-strategy)：通常のデプロイメントプロセス。
+- [&#x200B; クイック &#x200B;](#quick-strategy) （_デフォルト_）：複数のロケールのファイルがデプロイされる場合に、デプロイメントに必要な時間を最小限に抑えます。
+- [&#x200B; コンパクト &#x200B;](#compact-strategy)：公開済みのビューファイルにかかるスペースを最小限に抑えます。
 
 次の節では、実装の詳細と各戦略の機能について説明します。
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 標準戦略を使用すると、すべてのパッケージのすべての静的ビューファイルがデプロイされます。つまり、[`\Magento\Framework\App\View\Asset\Publisher`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php) によって処理されます。
 
-詳しくは、[ 静的ビューファイルのデプロイ ](../cli/static-view-file-deployment.md) を参照してください。
+詳しくは、[&#x200B; 静的ビューファイルのデプロイ &#x200B;](../cli/static-view-file-deployment.md) を参照してください。
 
 ## 迅速な戦略
 

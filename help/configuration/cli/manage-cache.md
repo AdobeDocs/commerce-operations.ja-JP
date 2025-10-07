@@ -20,7 +20,7 @@ Adobe Commerceのキャッシュ管理システムを使用すると、サイト
 >[!NOTE]
 >
 >
->Commerce サイト管理者は、キャッシュ管理システムツールを使用して、管理者からキャッシュを管理できます。 [ 管理システムガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) の _キャッシュ管理_ を参照してください。
+>Commerce サイト管理者は、キャッシュ管理システムツールを使用して、管理者からキャッシュを管理できます。 [&#x200B; 管理システムガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) の _キャッシュ管理_ を参照してください。
 
 
 ## キャッシュステータスの表示
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Adobe Commerceでサポートされるデフォルトのキャッシュタイプについて詳しくは、『 [ 管理システムガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) 』の _キャッシュ_ を参照してください。
+>Adobe Commerceでサポートされるデフォルトのキャッシュタイプについて詳しくは、『 [&#x200B; 管理システムガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) 』の _キャッシュ_ を参照してください。
 
 
 ## キャッシュタイプを有効または無効にする
@@ -68,7 +68,7 @@ Current status:
 
 >[!INFO]
 >
->バージョン 2.2 以降では、Commerceを実稼働モードで実行している場合に、コマンドラインを使用してのみキャッシュタイプを有効または無効にできます。 Commerceを開発者モードで実行している場合は、コマンドラインまたは手動でキャッシュタイプを有効または無効にできます。 その前に、`<magento_root>/app/etc/env.php` ファイルシステムの所有者 [ によって手動で ](../../installation/prerequisites/file-system/overview.md) を書き込み可能にする必要があります。
+>バージョン 2.2 以降では、Commerceを実稼働モードで実行している場合に、コマンドラインを使用してのみキャッシュタイプを有効または無効にできます。 Commerceを開発者モードで実行している場合は、コマンドラインまたは手動でキャッシュタイプを有効または無効にできます。 その前に、`<magento_root>/app/etc/env.php` ファイルシステムの所有者 [&#x200B; によって手動で &#x200B;](../../installation/prerequisites/file-system/overview.md) を書き込み可能にする必要があります。
 
 コマンドラインまたは Admin を使用して、キャッシュタイプをクリーンアップ（「_フラッシュ_ または _更新_ とも呼ばれます）できます。
 
@@ -112,7 +112,7 @@ bin/magento cache:disable db_ddl full_page
 
 >[!INFO]
 >
->バージョン 2.3.4 以降、Commerceは、取得時にすべてのシステム EAV 属性をキャッシュします。 この方法で EAV 属性をキャッシュすると、DB に対する挿入/選択リクエストの量が減少するため、パフォーマンスが向上します。 ただし、キャッシュネットワークのサイズも大きくなります。 開発者は、`bin/magento config:set dev/caching/cache_user_defined_attributes 1` コマンドを実行して、カスタム EAV 属性をキャッシュできます。 この操作は、[ 開発者モード ](../bootstrap/application-modes.md) で **ストア**/設定 **設定**/**詳細**/**開発者**/**キャッシュ設定**/**ユーザー定義属性をキャッシュ** を **はい** に設定して、管理者からも実行できます。
+>バージョン 2.3.4 以降、Commerceは、取得時にすべてのシステム EAV 属性をキャッシュします。 この方法で EAV 属性をキャッシュすると、DB に対する挿入/選択リクエストの量が減少するため、パフォーマンスが向上します。 ただし、キャッシュネットワークのサイズも大きくなります。 開発者は、`bin/magento config:set dev/caching/cache_user_defined_attributes 1` コマンドを実行して、カスタム EAV 属性をキャッシュできます。 この操作は、[&#x200B; 開発者モード &#x200B;](../bootstrap/application-modes.md) で **ストア**/設定 **設定**/**詳細**/**開発者**/**キャッシュ設定**/**ユーザー定義属性をキャッシュ** を **はい** に設定して、管理者からも実行できます。
 
 ## キャッシュタイプのクリーンアップとフラッシュ
 

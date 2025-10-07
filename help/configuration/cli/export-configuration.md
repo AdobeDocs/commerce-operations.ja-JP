@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 構成設定のエクスポート
 
-Commerce 2.2 以降 [ パイプラインデプロイメントモデル ](../deployment/technical-details.md) では、システム間で一貫した設定を維持できます。 開発システムの管理者で設定を指定した後、次のコマンドを使用してその設定を設定ファイルに書き出します。
+Commerce 2.2 以降 [&#x200B; パイプラインデプロイメントモデル &#x200B;](../deployment/technical-details.md) では、システム間で一貫した設定を維持できます。 開発システムの管理者で設定を指定した後、次のコマンドを使用してその設定を設定ファイルに書き出します。
 
 ```bash
 bin/magento app:config:dump {config-types}
@@ -32,7 +32,7 @@ bin/magento app:config:dump scopes themes
   これは、すべてのCommerce インスタンス用の共有設定ファイルです。
 これをソースコントロールに含めて、開発、ビルド、実稼動の各システム間で共有できるようにします。
 
-  [config.php リファレンス ](../reference/config-reference-configphp.md) を参照してください。
+  [config.php リファレンス &#x200B;](../reference/config-reference-configphp.md) を参照してください。
 
 - `app/etc/env.php`
 
@@ -41,7 +41,7 @@ bin/magento app:config:dump scopes themes
 
   このファイルをソース管理に含めないでくださ __。
 
-  [env.php リファレンス ](../reference/config-reference-envphp.md) を参照してください。
+  [env.php リファレンス &#x200B;](../reference/config-reference-envphp.md) を参照してください。
 
 ## 機密またはシステム固有の設定
 

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerceには、Redis ページとデフォルトのキャッシングを設定するためのコマンドラインオプションが用意されています。 `<Commerce-install-dir>app/etc/env.php` ファイルを編集してキャッシュを設定できますが、特に初期設定では、コマンドラインを使用する方法をお勧めします。 コマンドラインで検証を行うことにより、設定の構文が正しいことを確認します。
 
-続行する前に [Redis をインストール ](config-redis.md#install-redis) してください。
+続行する前に [Redis をインストール &#x200B;](config-redis.md#install-redis) してください。
 
 ## Redis デフォルトキャッシュの設定
 
@@ -114,9 +114,9 @@ Commerce 2.4.3 以降、Amazon EC2 でホストされるインスタンスは、
 
 ### Redis クラスターの設定
 
-[AWSで Redis クラスターを設定する ](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/) の後、ElastiCache を使用するように EC2 インスタンスを設定します。
+[AWSで Redis クラスターを設定する &#x200B;](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/) の後、ElastiCache を使用するように EC2 インスタンスを設定します。
 
-1. EC2 インスタンスと同じリージョンおよびVPCに [ElastiCache クラスターを作成 ](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html) します。
+1. EC2 インスタンスと同じリージョンおよびVPCに [ElastiCache クラスターを作成 &#x200B;](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html) します。
 1. 接続を確認します。
 
    - EC2 インスタンスへの SSH 接続を開きます。

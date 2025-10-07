@@ -18,7 +18,7 @@ Commerceで生成された `default.vcl` を使用しているので、最終的
 
 Web ブラウザーでCommerce ページにアクセスした場合は、`curl` などのユーティリティを使用して HTTP レスポンスヘッダーを表示します。
 
-最初に、[ 開発者モード ](../cli/set-mode.md#change-to-developer-mode) を使用していることを確認します。使用していない場合、ヘッダーは表示されません。
+最初に、[&#x200B; 開発者モード &#x200B;](../cli/set-mode.md#change-to-developer-mode) を使用していることを確認します。使用していない場合、ヘッダーは表示されません。
 
 以下に例を挙げます。
 
@@ -55,7 +55,7 @@ X-Magento-Cache-Debug: MISS
 
    次の図は、`magento2` インデックスページを読み込む例を示しています。
 
-   ![ 表示しているページをクリックします ](../../assets/configuration/varnish-inspector.png)。
+   ![&#x200B; 表示しているページをクリックします &#x200B;](../../assets/configuration/varnish-inspector.png)。
 
    ページの読み込み時間は、ページ URL の横に表示されます。 この場合、ロード時間は 5 ミリ秒です。 これは、Varnish がページをキャッシュしたことを確認するのに役立ちます。
 
@@ -83,4 +83,4 @@ X-Magento-Cache-Debug: MISS
 
 >[!TIP]
 >
->503 （バックエンド取得に失敗しました）エラーが発生した場合は、[Adobe Commerce ヘルプセンター ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html)503 （サービスを利用できない）エラーのトラブルシューティング _を参照してください_。
+>503 （バックエンド取得に失敗しました）エラーが発生した場合は、[Adobe Commerce ヘルプセンター &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html)503 （サービスを利用できない）エラーのトラブルシューティング _を参照してください_。

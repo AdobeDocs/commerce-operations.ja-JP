@@ -76,7 +76,7 @@ Varnish システムの設定を変更するには：
 
 1. `.host` の値を、Varnish _バックエンド_ または _オリジンサーバー_ の完全修飾ホスト名または IP アドレスおよびリッスンポートに置き換えます。つまり、Varnish が高速化するコンテンツを提供するサーバーです。
 
-   通常、これは web サーバーです。 [Varnish ガイド ](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) の _バックエンドサーバー_ を参照してください。
+   通常、これは web サーバーです。 [Varnish ガイド &#x200B;](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) の _バックエンドサーバー_ を参照してください。
 
 1. `.port` の値を web サーバーのリッスンポート（この例では 8080）に置き換えます。
 
@@ -170,7 +170,7 @@ tcp        0      0 ::1:48509                   :::*                        LIST
 
 `varnishd` の出力が表示されない場合は、Varnish が実行されていることを確認します。
 
-[`netstat` のオプションを参照してください ](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html)。
+[`netstat` のオプションを参照してください &#x200B;](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html)。
 
 ## Commerce ソフトウェアのインストール
 

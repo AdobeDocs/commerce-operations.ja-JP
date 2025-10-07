@@ -14,7 +14,7 @@ ht-degree: 0%
 
 このセクションでは、**ストア**/設定/**設定**/**セールス** の管理でオプションに使用できる変数名と設定パスを示します。
 
-[`magento app:config:dump` コマンドは ](../cli/export-configuration.md) これらの値をソース管理にある共有構成ファイル `app/etc/config.php` に書き込みます。 任意の構成設定を上書きしたり、重要な設定を指定したりするには、[ 環境変数を使用して構成設定を上書き ](override-config-settings.md#environment-variables) を参照してください。 このトピックでは _機密の値とシステム固有の値_ は [ 表示されません ](config-reference-sens.md)。
+[`magento app:config:dump` コマンドは &#x200B;](../cli/export-configuration.md) これらの値をソース管理にある共有構成ファイル `app/etc/config.php` に書き込みます。 任意の構成設定を上書きしたり、重要な設定を指定したりするには、[&#x200B; 環境変数を使用して構成設定を上書き &#x200B;](override-config-settings.md#environment-variables) を参照してください。 このトピックでは _機密の値とシステム固有の値_ は [&#x200B; 表示されません &#x200B;](config-reference-sens.md)。
 
 ## 販売パス
 
@@ -29,8 +29,8 @@ ht-degree: 0%
 | 税 | `sales/totals_sort/tax` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 固定製品税 | `sales/totals_sort/weee` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 総計 | `sales/totals_sort/grand_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| ギフトカード | `sales/totals_sort/giftcardaccount` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 店舗クレジット | `sales/totals_sort/customerbalance` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| ギフトカード | `sales/totals_sort/giftcardaccount` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 店舗クレジット | `sales/totals_sort/customerbalance` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | 並べ替えを許可 | `sales/reorder/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PDFの印刷出力（200 x 50）のロゴ | `sales/identity/logo` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | HTML印刷レイアウト表示のロゴ | `sales/identity/logo_html` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -47,25 +47,25 @@ ht-degree: 0%
 | 保留中の支払い注文の有効期間（分） | `sales/orders/delete_pending_after` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 注文レベルでのギフト メッセージを許可 | `sales/gift_options/allow_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 注文品目のギフト メッセージを許可 | `sales/gift_options/allow_items` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 注文レベルでギフトの折り返しを許可する | `sales/gift_options/wrapping_allow_order` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 注文品目のギフト ラッピングを許可する | `sales/gift_options/wrapping_allow_items` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| ギフト受領書を許可 | `sales/gift_options/allow_gift_receipt` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 印刷されたカードを許可 | `sales/gift_options/allow_printed_card` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 印刷されたカードの既定の価格 | `sales/gift_options/printed_card_price` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 注文レベルでギフトの折り返しを許可する | `sales/gift_options/wrapping_allow_order` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 注文品目のギフト ラッピングを許可する | `sales/gift_options/wrapping_allow_items` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| ギフト受領書を許可 | `sales/gift_options/allow_gift_receipt` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 印刷されたカードを許可 | `sales/gift_options/allow_printed_card` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 印刷されたカードの既定の価格 | `sales/gift_options/printed_card_price` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | マップを有効にする | `sales/msrp/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 実際の価格を表示 | `sales/msrp/display_price_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 既定のポップアップ テキスト メッセージ | `sales/msrp/explanation_message` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | デフォルトの「このことについて」テキストメッセージ | `sales/msrp/explanation_message_whats_this` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| ストアフロントのマイアカウントで SKU による並べ替えを有効にする | `sales/product_sku/my_account_enable` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| ストアフロントのマイアカウントで SKU による並べ替えを有効にする | `sales/product_sku/my_account_enable` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Enabled | `sales/instant_purchase/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ボタンのテキスト | `sales/instant_purchase/button_text` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 顧客グループ | `sales/product_sku/allowed_groups` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| アーカイブを有効にする | `sales/magento_salesarchive/active` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 購入済み注文のアーカイブ | `sales/magento_salesarchive/age` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 注文ステータスをアーカイブ済み | `sales/magento_salesarchive/order_statuses` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| ストアフロントでの RMA の有効化 | `sales/magento_rma/enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 製品レベルで RMA を有効にする | `sales/magento_rma/enabled_on_product` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| ストアアドレスを使用 | `sales/magento_rma/use_store_address` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 顧客グループ | `sales/product_sku/allowed_groups` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| アーカイブを有効にする | `sales/magento_salesarchive/active` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 購入済み注文のアーカイブ | `sales/magento_salesarchive/age` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 注文ステータスをアーカイブ済み | `sales/magento_salesarchive/order_statuses` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| ストアフロントでの RMA の有効化 | `sales/magento_rma/enabled` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 製品レベルで RMA を有効にする | `sales/magento_rma/enabled_on_product` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| ストアアドレスを使用 | `sales/magento_rma/use_store_address` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
@@ -116,26 +116,26 @@ ht-degree: 0%
 | クレジット メモ コメント E メール テンプレート | `sales_email/creditmemo_comment/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ゲスト用クレジット メモ コメント E メール テンプレート | `sales_email/creditmemo_comment/guest_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | クレジット・メモ注釈の送信 E メール・コピー方法 | `sales_email/creditmemo_comment/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Enabled | `sales_email/magento_rma/enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| RMA メール送信者 | `sales_email/magento_rma/identity` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| RMA メールテンプレート | `sales_email/magento_rma/template` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| ゲスト用 RMA メールテンプレート | `sales_email/magento_rma/guest_template` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| RMA メールコピーの送信方法 | `sales_email/magento_rma/copy_method` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| Enabled | `sales_email/magento_rma_auth/enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| RMA 認証メール送信者 | `sales_email/magento_rma_auth/identity` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| RMA 認証メールテンプレート | `sales_email/magento_rma_auth/template` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| ゲスト用 RMA 認証メールテンプレート | `sales_email/magento_rma_auth/guest_template` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| RMA 認証メールのコピー方法を送信 | `sales_email/magento_rma_auth/copy_method` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| Enabled | `sales_email/magento_rma_comment/enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| RMA コメントメール送信者 | `sales_email/magento_rma_comment/identity` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| RMA コメントメールテンプレート | `sales_email/magento_rma_comment/template` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| ゲスト用 RMA コメントメールテンプレート | `sales_email/magento_rma_comment/guest_template` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| RMA メールコピーの送信方法 | `sales_email/magento_rma_comment/copy_method` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| Enabled | `sales_email/magento_rma_customer_comment/enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| RMA コメントメール送信者 | `sales_email/magento_rma_customer_comment/identity` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| RMA コメントの E メール受信者 | `sales_email/magento_rma_customer_comment/recipient` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| RMA コメントメールテンプレート | `sales_email/magento_rma_customer_comment/template` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| RMA メールコピーの送信方法 | `sales_email/magento_rma_customer_comment/copy_method` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| Enabled | `sales_email/magento_rma/enabled` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA メール送信者 | `sales_email/magento_rma/identity` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA メールテンプレート | `sales_email/magento_rma/template` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| ゲスト用 RMA メールテンプレート | `sales_email/magento_rma/guest_template` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA メールコピーの送信方法 | `sales_email/magento_rma/copy_method` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Enabled | `sales_email/magento_rma_auth/enabled` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA 認証メール送信者 | `sales_email/magento_rma_auth/identity` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA 認証メールテンプレート | `sales_email/magento_rma_auth/template` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| ゲスト用 RMA 認証メールテンプレート | `sales_email/magento_rma_auth/guest_template` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA 認証メールのコピー方法を送信 | `sales_email/magento_rma_auth/copy_method` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Enabled | `sales_email/magento_rma_comment/enabled` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA コメントメール送信者 | `sales_email/magento_rma_comment/identity` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA コメントメールテンプレート | `sales_email/magento_rma_comment/template` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| ゲスト用 RMA コメントメールテンプレート | `sales_email/magento_rma_comment/guest_template` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA メールコピーの送信方法 | `sales_email/magento_rma_comment/copy_method` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| Enabled | `sales_email/magento_rma_customer_comment/enabled` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA コメントメール送信者 | `sales_email/magento_rma_customer_comment/identity` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA コメントの E メール受信者 | `sales_email/magento_rma_customer_comment/recipient` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA コメントメールテンプレート | `sales_email/magento_rma_customer_comment/template` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| RMA メールコピーの送信方法 | `sales_email/magento_rma_customer_comment/copy_method` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | ヘッダーに注文 ID を表示 | `sales_pdf/invoice/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ヘッダーに注文 ID を表示 | `sales_pdf/shipment/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ヘッダーに注文 ID を表示 | `sales_pdf/creditmemo/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -149,7 +149,7 @@ ht-degree: 0%
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|
 | 配送用の税クラス | `tax/classes/shipping_tax_class` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| ギフト オプションの税クラス | `tax/classes/wrapping_tax_class` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| ギフト オプションの税クラス | `tax/classes/wrapping_tax_class` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | 商品の既定の税クラス | `tax/classes/default_product_tax_class` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顧客の既定の税クラス | `tax/classes/default_customer_tax_class` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ～に基づく税額算定方法 | `tax/calculation/algorithm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -168,16 +168,16 @@ ht-degree: 0%
 | 価格を表示 | `tax/cart_display/price` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 小計を表示 | `tax/cart_display/subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 配送料を表示 | `tax/cart_display/shipping` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| ギフト包装価格の表示 | `tax/cart_display/gift_wrapping` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 印刷されたカード価格を表示する | `tax/cart_display/printed_card` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| ギフト包装価格の表示 | `tax/cart_display/gift_wrapping` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 印刷されたカード価格を表示する | `tax/cart_display/printed_card` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | 注文合計に税を含める | `tax/cart_display/grandtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 全税概要の表示 | `tax/cart_display/full_summary` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 税の小計ゼロを表示 | `tax/cart_display/zero_tax` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 価格を表示 | `tax/sales_display/price` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 小計を表示 | `tax/sales_display/subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 配送料を表示 | `tax/sales_display/shipping` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| ギフト包装価格の表示 | `tax/sales_display/gift_wrapping` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 印刷されたカード価格を表示する | `tax/sales_display/printed_card` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| ギフト包装価格の表示 | `tax/sales_display/gift_wrapping` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 印刷されたカード価格を表示する | `tax/sales_display/printed_card` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | 注文合計に税を含める | `tax/sales_display/grandtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 全税概要の表示 | `tax/sales_display/full_summary` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 税の小計ゼロを表示 | `tax/sales_display/zero_tax` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -205,7 +205,7 @@ ht-degree: 0%
 | 買い物かごへの製品リダイレクトを追加した後 | `checkout/cart/redirect_to_cart` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | グループ化された製品画像 | `checkout/cart/grouped_product_image` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 設定可能な製品画像 | `checkout/cart/configurable_product_image` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 見積もりの有効期間（分）のプレビュー | `checkout/cart/preview_quota_lifetime` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 見積もりの有効期間（分）のプレビュー | `checkout/cart/preview_quota_lifetime` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | 買い物かごの概要を表示 | `checkout/cart_link/use_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 買い物かごサイドバーを表示 | `checkout/sidebar/display` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最近追加された項目の最大表示数 | `checkout/sidebar/count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -280,7 +280,7 @@ ht-degree: 0%
 | 該当しない場合はメソッドを表示 | `carriers/tablerate/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 並べ替え順序 | `carriers/tablerate/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | チェックアウトを有効 | `carriers/ups/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| RMA に対して有効 | `carriers/ups/active_rma` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| RMA に対して有効 | `carriers/ups/active_rma` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | UPS タイプ | `carriers/ups/type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | モード | `carriers/ups/mode_xml` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 出荷の起源 | `carriers/ups/origin_shipment` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -307,7 +307,7 @@ ht-degree: 0%
 | 該当しない場合はメソッドを表示 | `carriers/ups/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 並べ替え順序 | `carriers/ups/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | チェックアウトを有効 | `carriers/usps/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| RMA に対して有効 | `carriers/usps/active_rma` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| RMA に対して有効 | `carriers/usps/active_rma` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | モード | `carriers/usps/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | パッケージリクエストタイプ | `carriers/usps/shipment_requesttype` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | コンテナ | `carriers/usps/container` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -332,7 +332,7 @@ ht-degree: 0%
 | 該当しない場合はメソッドを表示 | `carriers/usps/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 並べ替え順序 | `carriers/usps/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | チェックアウトを有効 | `carriers/fedex/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| RMA に対して有効 | `carriers/fedex/active_rma` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| RMA に対して有効 | `carriers/fedex/active_rma` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | タイトル | `carriers/fedex/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Web サービス URL （実稼動） | `carriers/fedex/production_webservices_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Web サービス URL （サンドボックス） | `carriers/fedex/sandbox_webservices_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -357,7 +357,7 @@ ht-degree: 0%
 | 該当しない場合はメソッドを表示 | `carriers/fedex/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 並べ替え順序 | `carriers/fedex/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | チェックアウトを有効 | `carriers/dhl/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| RMA に対して有効 | `carriers/dhl/active_rma` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| RMA に対して有効 | `carriers/dhl/active_rma` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | タイトル | `carriers/dhl/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | コンテンツタイプ | `carriers/dhl/content_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 手数料の計算 | `carriers/dhl/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -386,19 +386,19 @@ ht-degree: 0%
 
 ## Google API のパス
 
-これらの設定値は、管理者の **Stores**/設定/**Configuration**/**Sales**/6}Google API **で利用できます。**
+これらの設定値は、管理者の **Stores**/設定/**Configuration**/**Sales**/6&rbrace;Google API **で利用できます。**
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|
 | Enable （有効） | `google/analytics/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| アカウントタイプ | `google/analytics/type` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| アカウントタイプ | `google/analytics/type` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | コンテンツ実験の有効化 | `google/analytics/experiments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| カタログページのリストプロパティ | `google/analytics/catalog_page_list_value` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| クロスセル ブロックのリストプロパティ | `google/analytics/crosssell_block_list_value` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| アップセル ブロックのリスト プロパティ | `google/analytics/upsell_block_list_value` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 関連製品ブロックのリストプロパティ | `google/analytics/related_block_list_value` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 検索結果ページのリストプロパティ | `google/analytics/search_page_list_value` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| プロモーションフィールド「ラベル」の「内部プロモーション」。 | `google/analytics/promotions_list_value` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| カタログページのリストプロパティ | `google/analytics/catalog_page_list_value` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| クロスセル ブロックのリストプロパティ | `google/analytics/crosssell_block_list_value` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| アップセル ブロックのリスト プロパティ | `google/analytics/upsell_block_list_value` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 関連製品ブロックのリストプロパティ | `google/analytics/related_block_list_value` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 検索結果ページのリストプロパティ | `google/analytics/search_page_list_value` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| プロモーションフィールド「ラベル」の「内部プロモーション」。 | `google/analytics/promotions_list_value` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | Enable （有効） | `google/adwords/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | コンバージョン ID | `google/adwords/conversion_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | コンバージョン言語 | `google/adwords/conversion_language` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

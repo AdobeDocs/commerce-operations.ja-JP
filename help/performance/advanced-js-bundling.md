@@ -18,13 +18,13 @@ ht-degree: 0%
 
 モジュール型アプリケーションでは、サーバ要求の数は数百件に及ぶ可能性があります。 例えば、次のスクリーンショットは、クリーンインストールのホームページに読み込まれた [!DNL JavaScript] モジュールのリストの先頭のみを示しています。
 
-![ バンドルなし ](../assets/performance/images/noBundling.png)
+![&#x200B; バンドルなし &#x200B;](../assets/performance/images/noBundling.png)
 
 ## 結合とバンドル
 
 [!DNL Commerce] では、標準で、サーバーリクエストの数を減らす方法として、結合とバンドルの 2 つが用意されています。 これらの設定は、デフォルトではオフになっています。 管理 UI の **[!UICONTROL Stores]**/**設定**/**[!UICONTROL Configuration]**/**[!UICONTROL Advanced]**/**[!UICONTROL Developer]**/**[!UICONTROL [!DNL JavaScript] Settings]** で、またはコマンドラインからオンにできます。
 
-![ バンドル ](../assets/performance/images/bundlingImage.png)
+![&#x200B; バンドル &#x200B;](../assets/performance/images/bundlingImage.png)
 
 ### 基本バンドル
 
@@ -36,7 +36,7 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 
 これは、システム内のすべてのアセットを組み合わせ、同じサイズのバンドル（bundle_0.js、bundle_1.js ... bundle_x.js）間で配布するネイティブの [!DNL Commerce] メカニズムです。
 
-![[!DNL Commerce] のバンドル ](../assets/performance/images/magentoBundling.png)
+![[!DNL Commerce] のバンドル &#x200B;](../assets/performance/images/magentoBundling.png)
 
 より良い方法ですが、ブラウザーは、必要なバンドルだけでなく、引き続きすべての [!DNL JavaScript] バンドルを読み込みます。
 
@@ -52,7 +52,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 このコマンドは、すべての同期 [!DNL JavaScript] ファイルを 1 つのファイルに結合します。 [!DNL Commerce] は RequireJS を使用しているので、バンドルを有効にせずに結合を有効にしても役に立ちません。 バンドルを有効にしない場合、[!DNL Commerce] は RequireJS とその設定のみを結合します。 バンドルと結合の両方を有効にすると、[!DNL Commerce] は単一の [!DNL JavaScript] ファイルを作成します。
 
-![ 実際のマージ ](../assets/performance/images/magentoMergingDevWorld.png)
+![&#x200B; 実際のマージ &#x200B;](../assets/performance/images/magentoMergingDevWorld.png)
 
 ## 実際のレンダリング時間
 
@@ -60,13 +60,13 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 実際のストアフロントのデプロイメントをテストして準備するには、「Slow 3G」のChrome ネイティブスロットルプロファイルを使用してテストすることをお勧めします。 Slow 3G では、以前のバンドルされた出力時間に、多くのユーザーの接続の実情が反映されるようになりました。
 
-![ 現実世界のバンドル ](../assets/performance/images/magentoBundlingRealWorld.png)
+![&#x200B; 現実世界のバンドル &#x200B;](../assets/performance/images/magentoBundlingRealWorld.png)
 
 低速の 3G 接続では、クリーンな [!DNL Commerce] インストールのホームページ用のすべてのバンドルを読み込むのに約 44 秒かかります。
 
 バンドルを 1 つのファイルに結合する場合も同じです。 次に示すように、ユーザーは最初のページの読み込みから約 42 秒待つことができます。
 
-![ 実際のマージ ](../assets/performance/images/magentoMergingRealWorld.png)
+![&#x200B; 実際のマージ &#x200B;](../assets/performance/images/magentoMergingRealWorld.png)
 
 より高度なバンドル [!DNL JavaScript] アプローチにより、これらの読み込み時間を改善できます。
 
@@ -133,7 +133,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 この手順では、ストアの `deps` ファイルの複数の `shim`、`paths`、`map`、`requirejs-config.js` 設定ノードをすべて、`build.js` ファイルの対応するノードに集計する必要があります。 これを行うには、ブラウザーのデベロッパーツールパネルの「**[!UICONTROL Network]**」タブを開き、ホームページなど、ストア内の任意のページに移動します。 「ネットワーク」タブで、上部付近の `requirejs-config.js` ファイルのストアのインスタンスが表示され、次のようにハイライト表示されます。
 
-![RequireJS 設定 ](../assets/performance/images/RequireJSConfig.png)
+![RequireJS 設定 &#x200B;](../assets/performance/images/RequireJSConfig.png)
 
 このファイル内には、設定ノード（`deps`、`shim`、`paths`、`map`）ごとに複数のエントリがあります。 これらの複数のノード値を、build.js ファイルの単一の設定ノードに集計する必要があります。 例えば、ストアの `requirejs-config.js` インスタンスに 15 個の個別の `map` ノードのエントリがある場合、15 個のノードすべてのエントリを `map` ファイルの単一の `build.js` ノードに結合する必要があります。 `deps`、`shim`、`paths` の各ノードについても同じことが言えます。 このプロセスを自動化するスクリプトがないと、時間がかかる場合があります。
 
@@ -501,7 +501,7 @@ require.config({
 
 ページが読み込まれたら、ブラウザーが異なる依存関係とバンドルを読み込んでいることに注意してください。 例えば、「遅い 3G」プロファイルの結果は次のようになります。
 
-![2 倍の速度 ](../assets/performance/images/TwiceAsFast.png)
+![2 倍の速度 &#x200B;](../assets/performance/images/TwiceAsFast.png)
 
 空のホームページのページ読み込み時間が、ネイティブの [!DNL Commerce] バンドルを使用する場合の 2 倍の速さになりました。 しかし、私たちはさらに良くすることができます。
 
@@ -519,6 +519,6 @@ gzipped を使用しても、[!DNL JavaScript] ファイルは大きくなりま
 ```
 
 結果は重要になる場合があります。
-![3 倍の高速化 ](../assets/performance/images/ThreeTimesFaster.png)
+![3 倍の高速化 &#x200B;](../assets/performance/images/ThreeTimesFaster.png)
 
 読み込み時間が、ネイティブの [!DNL Commerce] バンドルの 3 倍になりました。

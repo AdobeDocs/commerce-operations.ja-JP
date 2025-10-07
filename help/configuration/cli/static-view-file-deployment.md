@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-static view files deployment コマンドを使用すると、Commerce ソフトウェアが [ 実稼動モード ](../bootstrap/application-modes.md#production-mode) に設定されている場合に、Commerce ファイルシステムに静的ファイルを書き込むことができます。
+static view files deployment コマンドを使用すると、Commerce ソフトウェアが [&#x200B; 実稼動モード &#x200B;](../bootstrap/application-modes.md#production-mode) に設定されている場合に、Commerce ファイルシステムに静的ファイルを書き込むことができます。
 
 _静的ビューファイル_ という用語は、以下を指します。
 
@@ -24,18 +24,18 @@ _静的ビューファイル_ という用語は、以下を指します。
 
 静的ビューファイルのデプロイメントは、次のようなアプリケーションモードの影響を受けます。
 
-- [ デフォルト ](../bootstrap/application-modes.md#default-mode) および [ 開発者 ](../bootstrap/application-modes.md#developer-mode) モード：Commerceはオンデマンドでそれらを生成しますが、残りはアクセス速度を向上させるためにファイルにキャッシュされます。
-- [ 実稼動 ](../bootstrap/application-modes.md#production-mode) モード：静的ファイルは生成 _れ_ キャッシュされません。
+- [&#x200B; デフォルト &#x200B;](../bootstrap/application-modes.md#default-mode) および [&#x200B; 開発者 &#x200B;](../bootstrap/application-modes.md#developer-mode) モード：Commerceはオンデマンドでそれらを生成しますが、残りはアクセス速度を向上させるためにファイルにキャッシュされます。
+- [&#x200B; 実稼動 &#x200B;](../bootstrap/application-modes.md#production-mode) モード：静的ファイルは生成 _れ_ キャッシュされません。
 
 このトピックで説明したコマンドを使用して、静的ビューファイルをCommerce ファイルシステムに手動で書き込む必要があります。その後、脆弱性を制限し、誤ってファイルを上書きしたり悪意のあるファイルを上書きしたりしないように、アクセス許可を制限できます。
 
 >[!WARNING]
 >
->_開発者モードのみ_：新しいモジュールをインストールまたは有効にすると、新しいJavaScript、CSS、レイアウトなどが読み込まれる場合があります。 静的ファイルの問題を回避するには、新しいモジュールのすべての変更を確実に取得するために、古いファイルを消去する必要があります。 生成された静的ビューファイルは、いくつかの方法でクリーンアップできます。 詳しくは、[ 静的ファイルのキャッシュのクリーンアップに関するトピック ](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) を参照してください。
+>_開発者モードのみ_：新しいモジュールをインストールまたは有効にすると、新しいJavaScript、CSS、レイアウトなどが読み込まれる場合があります。 静的ファイルの問題を回避するには、新しいモジュールのすべての変更を確実に取得するために、古いファイルを消去する必要があります。 生成された静的ビューファイルは、いくつかの方法でクリーンアップできます。 詳しくは、[&#x200B; 静的ファイルのキャッシュのクリーンアップに関するトピック &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) を参照してください。
 
 **静的表示ファイルをデプロイするには**:
 
-1. Commerce サーバーにとしてログインするか、[ ファイルシステムのオーナーに切り替え ](../../installation/prerequisites/file-system/overview.md) ます。
+1. Commerce サーバーにとしてログインするか、[&#x200B; ファイルシステムのオーナーに切り替え &#x200B;](../../installation/prerequisites/file-system/overview.md) ます。
 1. `<magento_root>/pub/static` ファイルを除く `.htaccess` のコンテンツを削除します。 このファイルは削除しないでください。
 1. 静的表示ファイル展開ツール `<magento_root>/bin/magento setup:static-content:deploy` を実行します。
 
@@ -60,7 +60,7 @@ _静的ビューファイル_ という用語は、以下を指します。
 | `--exclude-theme <theme>` | 静的コンテンツのデプロイ時に除外するテーマ。 デフォルト値は **なし** です。<br> 例：`--exclude-theme Magento/blank` | 不可 |
 | `--area (-a)` | 指定した領域のファイルのみを生成します。 オプションを指定しないデフォルトでは、すべての領域のファイルが生成されます。 有効な値は `adminhtml` および `frontend` です。 デフォルト値は **all** です。<br> 例：`--area adminhtml` | 不可 |
 | `--exclude-area` | 指定した領域のファイルを生成しません。 オプションを指定しない場合のデフォルトでは、何も除外されません。 デフォルト値は **なし** です。 | 不可 |
-| `--jobs (-j)` | 指定したジョブ数を使用して [ 並列処理 ](manage-indexers.md#reindexing-in-parallel-mode) を有効にします。 デフォルトは 0 です（並列プロセスでは実行しません）。 既定値は **0** です。 | 不可 |
+| `--jobs (-j)` | 指定したジョブ数を使用して [&#x200B; 並列処理 &#x200B;](manage-indexers.md#reindexing-in-parallel-mode) を有効にします。 デフォルトは 0 です（並列プロセスでは実行しません）。 既定値は **0** です。 | 不可 |
 | `--symlink-locale` | これらのロケールのファイルにシンボリックリンクを作成します。これはデプロイメントに渡されますが、カスタマイズは行われません。 | 不可 |
 | `--content-version=CONTENT-VERSION` | 複数のノードでデプロイメントを実行する場合は、静的コンテンツのカスタムバージョンを使用して、静的コンテンツのバージョンが同じでキャッシュが正しく機能することを確認できます。 | 不可 |
 | `--no-javascript` | JavaScript ファイルをデプロイしない | 不可 |
@@ -71,7 +71,7 @@ _静的ビューファイル_ という用語は、以下を指します。
 | `--no-html` | HTML ファイルをデプロイしないでください。 | 不可 |
 | `--no-misc` | 他のタイプのファイル（MD、JBF、CSV、JSON、TXT、HTC、SWF）をデプロイしない | 不可 |
 | `--no-html-minify` | HTML ファイルは縮小しないでください。 | 不可 |
-| `-s <quick\|standard\|compact>` | デプロイメント戦略を定義します。 これらのオプションは、複数のローカルがある場合にのみ使用します。<ul><li>[ クイック戦略 ](static-view-file-strategy.md#quick-strategy) を使用すると、デプロイメント時間を最小限に抑えることができます。 指定されていない場合、これはデフォルトのコマンドオプションです。</li><li>[ 標準方法 ](static-view-file-strategy.md#standard-strategy) を使用して、すべてのパッケージのすべての静的ビューファイルをデプロイします。</li><li>[ コンパクト化 ](static-view-file-strategy.md#compact-strategy) を使用して、サーバー上のディスク領域を節約します。</li></ul> | 不可 |
+| `-s <quick\|standard\|compact>` | デプロイメント戦略を定義します。 これらのオプションは、複数のローカルがある場合にのみ使用します。<ul><li>[&#x200B; クイック戦略 &#x200B;](static-view-file-strategy.md#quick-strategy) を使用すると、デプロイメント時間を最小限に抑えることができます。 指定されていない場合、これはデフォルトのコマンドオプションです。</li><li>[&#x200B; 標準方法 &#x200B;](static-view-file-strategy.md#standard-strategy) を使用して、すべてのパッケージのすべての静的ビューファイルをデプロイします。</li><li>[&#x200B; コンパクト化 &#x200B;](static-view-file-strategy.md#compact-strategy) を使用して、サーバー上のディスク領域を節約します。</li></ul> | 不可 |
 | `--no-parent` | 現在のテーマの親テーマ用のファイルを生成しません。 デプロイしようとしている現在のテーマの親テーマを明示的に使用しない場合は、このフラグを使用することを強くお勧めします。 これにより、プロセスの速度が大幅に向上します。 このフラグは、Commerce 2.4.2 で使用できます。 | 不可 |
 | `--force (-f)` | 任意のモードでファイルをデプロイします。 （デフォルトでは、静的コンテンツデプロイメントツールは、実稼動モードでのみ実行できます。 このオプションを使用して、デフォルトまたは開発者モードで実行します。 | 不可 |
 
@@ -158,7 +158,7 @@ New version of deployed files: 1466711110
 
 ## 静的表示ファイル展開ツールのトラブルシューティング
 
-[ 最初にCommerce ソフトウェアをインストールします ](../../installation/overview.md)。インストールしないと、静的ビューファイルのデプロイメントツールを実行できません。
+[&#x200B; 最初にCommerce ソフトウェアをインストールします &#x200B;](../../installation/overview.md)。インストールしないと、静的ビューファイルのデプロイメントツールを実行できません。
 
 **症状**：静的ビューファイル展開ツールを実行すると、次のエラーが表示されます：
 
@@ -170,8 +170,8 @@ ERROR: You need to install the Commerce application before running this utility.
 
 次の手順を使用します。
 
-1. [ コマンドライン ](../../installation/composer.md) を使用してCommerce ソフトウェアをインストールします。
-1. ファイルシステムの所有者として、または [ 切り替え先 ](../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインします。
+1. [&#x200B; コマンドライン &#x200B;](../../installation/composer.md) を使用してCommerce ソフトウェアをインストールします。
+1. ファイルシステムの所有者として、または [&#x200B; 切り替え先 &#x200B;](../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインします。
 1. `<app_root>/pub/static` ファイルを除く `.htaccess` ディレクトリのコンテンツを削除します。 このファイルは削除しないでください。
 1. 静的表示ファイルのデプロイ：`bin/magento setup:static-content:deploy`
 

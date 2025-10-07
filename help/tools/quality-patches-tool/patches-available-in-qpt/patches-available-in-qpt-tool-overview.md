@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-* Adobe Commerce オンプレミス、すべて [ サポート対象バージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
-* クラウドインフラストラクチャー上のAdobe Commerce、すべて [ サポート対象バージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* Adobe Commerce オンプレミス、すべて [&#x200B; サポート対象バージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* クラウドインフラストラクチャー上のAdobe Commerce、すべて [&#x200B; サポート対象バージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## 品質向上パッチツールとは
 
@@ -33,18 +33,18 @@ ht-degree: 0%
 
 使用可能なパッチを表示するために取得できるステータステーブルの例を次に示します。
 
-![ 使用可能なパッチとそのインストールステータスを示す「品質向上パッチツールのステータス」テーブル ](/help/assets/tools/status_table.png)
+![&#x200B; 使用可能なパッチとそのインストールステータスを示す「品質向上パッチツールのステータス」テーブル &#x200B;](/help/assets/tools/status_table.png)
 
 このツールの目的は、Adobe Commerceで発生する可能性のある問題のパッチをセルフサービスで提供できるようにしたり、Adobe Commerce サポートから提案されたパッチを簡単に適用できるようにすることです。
 
 >[!NOTE]
 >
->QPT は品質向上パッチ専用です。 セキュリティパッチは、[Adobe CommerceおよびMagento Open Sourceのリリースノート ](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html) で入手できます。
+>QPT は品質向上パッチ専用です。 セキュリティパッチは、[Adobe CommerceおよびMagento Open Sourceのリリースノート &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html) で入手できます。
 
 ## [!DNL Quality Patches Tool] で使用可能なパッチ
 
 Adobe Commerce サポートナレッジベースのこのセクションでは、QPT パッチによって解決された問題の詳細な説明を、QPT リリースバージョン別にグループ化して示します。
-また、サポートナレッジベースの [[!DNL Quality Patches Tool]：パッチを検索ページで、動的に生成されたテーブルを使用して、使用可能な QPT パッチのリストを確認し ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) コンポーネントでフィルタリングすることもできます。
+また、サポートナレッジベースの [[!DNL Quality Patches Tool]：パッチを検索ページで、動的に生成されたテーブルを使用して、使用可能な QPT パッチのリストを確認し &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) コンポーネントでフィルタリングすることもできます。
 
 ## [!DNL Quality Patches Tool] のインストール方法と使用方法
 
@@ -52,12 +52,12 @@ Adobe Commerce オンプレミスの場合と、クラウドインフラスト�
 
 ### Adobe Commerce オンプレミスで QPT をインストールして使用する方法
 
-パッチを適用および元に戻す際に QPT をインストールして使用する方法について詳しくは、開発者向けドキュメントの [Commerce/ツール/使用方法 ](../usage.md) を参照してください。
+パッチを適用および元に戻す際に QPT をインストールして使用する方法について詳しくは、開発者向けドキュメントの [Commerce/ツール/使用方法 &#x200B;](../usage.md) を参照してください。
 
 ### クラウドインフラストラクチャーにAdobe Commerce用 QPT をインストールして使用する方法
 
-クラウドインフラストラクチャ上でCommerceにパッチを適用したり元に戻したりする際に [QPT をインストールして使用する方法について詳しくは、開発者向けドキュメントの ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)Adobe Commerce on Cloud Infrastructure ガイド/パッチの適用を参照してください。
+クラウドインフラストラクチャ上でCommerceにパッチを適用したり元に戻したりする際に [QPT をインストールして使用する方法について詳しくは、開発者向けドキュメントの &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)Adobe Commerce on Cloud Infrastructure ガイド/パッチの適用を参照してください。
 
 ## 関連資料
 
-* 開発者向けドキュメントの [[!DNL Quality Patches Tool]  リリースノート ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)。
+* 開発者向けドキュメントの [[!DNL Quality Patches Tool]  リリースノート &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)。

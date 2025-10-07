@@ -14,7 +14,7 @@ ht-degree: 0%
 
 _これは、Adobe Commerce用 B2B がインストールされたインスタンスで使用できます。_
 
-このトピックでは、Commerce Enterprise B2B Extension の設定パスを示します。 [`magento app:config:dump` コマンドは ](../cli/export-configuration.md) これらの値をソース管理にある共有構成ファイル `app/etc/config.php` に書き込みます。
+このトピックでは、Commerce Enterprise B2B Extension の設定パスを示します。 [`magento app:config:dump` コマンドは &#x200B;](../cli/export-configuration.md) これらの値をソース管理にある共有構成ファイル `app/etc/config.php` に書き込みます。
 
 >[!INFO]
 >
@@ -25,7 +25,7 @@ _これは、Adobe Commerce用 B2B がインストールされたインスタン
 - [支払構成パス](config-reference-payment.md)
 - [機密およびシステム固有の設定パスのリファレンス](config-reference-sens.md)
 
-任意の構成設定を上書きしたり、重要な設定を指定したりするには、[ 環境変数を使用して構成設定を上書き ](override-config-settings.md#environment-variables) を参照してください。
+任意の構成設定を上書きしたり、重要な設定を指定したりするには、[&#x200B; 環境変数を使用して構成設定を上書き &#x200B;](override-config-settings.md#environment-variables) を参照してください。
 
 ## 一般カテゴリ
 
@@ -58,8 +58,8 @@ _これは、Adobe Commerce用 B2B がインストールされたインスタン
 | 名前 | 設定パス | 暗号化しますか？ | システム固有？ | 機密？ |
 |--------------|--------------|--------------|--------------|--------------|
 | ストアフロントからの会社登録を許可 | `company/general/allow_company_registration` | | | |
-| 会社登録の電子メール受信者 | `company/email/company_registration` | | | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
-| 会社登録の電子メール コピーの送信先 | `company/email/company_registration_copy` | | | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
+| 会社登録の電子メール受信者 | `company/email/company_registration` | | | ![&#x200B; 機密 &#x200B;](/help/assets/configuration/cloud-sens.png) |
+| 会社登録の電子メール コピーの送信先 | `company/email/company_registration_copy` | | | ![&#x200B; 機密 &#x200B;](/help/assets/configuration/cloud-sens.png) |
 | Send Email Copy メソッド | `company/email/company_copy_method` | | | |
 | 既定の会社登録 E メール | `company/email/company_notify_admin_template` | | | |
 | 顧客関連のメール | `company/email/heading_customer` | | | |
@@ -72,7 +72,7 @@ _これは、Adobe Commerce用 B2B がインストールされたインスタン
 | 既定の顧客ステータス非アクティブ電子メール | `company/email/customer_account_locked_template` | | | |
 | 会社ステータスの変更 | `company/email/heading_company_status` | | | |
 | 会社ステータス変更のメール受信者 | `company/email/company_status_change` | | | |
-| 会社の状態変更の E メール コピーの送信先 | `company/email/company_status_change_copy` | | | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
+| 会社の状態変更の E メール コピーの送信先 | `company/email/company_status_change_copy` | | | ![&#x200B; 機密 &#x200B;](/help/assets/configuration/cloud-sens.png) |
 | Send Email Copy メソッド | `company/email/company_status_copy_method` | | | |
 | デフォルトの会社ステータスがアクティブ 1 件のメールに変更されました | `company/email/company_status_pending_approval_to_active_template` | | | |
 | デフォルトの会社ステータスがアクティブ 2 のメールに変更される | `company/email/company_status_rejected_blocked_to_active_template` | | | |
@@ -80,7 +80,7 @@ _これは、Adobe Commerce用 B2B がインストールされたインスタン
 | ブロックされたメールに対するデフォルトの会社ステータス変更 | `company/email/company_status_blocked_template` | | | |
 | デフォルトの会社ステータスが承認保留中の E メールに変更される | `company/email/company_status_pending_approval_template` | | | |
 | 会社クレジット | `company/email/heading_company_credit` | | | |
-| 会社のクレジット変更メールの送信者 | `company/email/company_credit_change` |  | | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
+| 会社のクレジット変更メールの送信者 | `company/email/company_credit_change` |  | | ![&#x200B; 機密 &#x200B;](/help/assets/configuration/cloud-sens.png) |
 | 会社のクレジット変更メールのコピーの送信先 | `company/email/company_credit_change_copy` | | | |
 | Send Email Copy メソッド | `company/email/company_credit_copy_method` | | | |
 | 割り当て済みメールテンプレート | `company/email/credit_allocated_email_template` | | | |
@@ -119,7 +119,7 @@ _これは、Adobe Commerce用 B2B がインストールされたインスタン
 | 見積もりの有効期限（48 時間） | `sales_email/quote/expire_two_days_template` | | | |
 | 見積もりの有効期限（24 時間） | `sales_email/quote/expire_one_day_template` | | | |
 | 有効期限のリセット | `sales_email/quote/expire_reset_template` | | | |
-| 見積 E メール コピーの送信先 | `sales_email/quote/copy_to` | | | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
+| 見積 E メール コピーの送信先 | `sales_email/quote/copy_to` | | | ![&#x200B; 機密 &#x200B;](/help/assets/configuration/cloud-sens.png) |
 | 見積書 E メール コピーの送信方法 | `sales_email/quote/copy_method` | | | |
 
 {style="table-layout:auto"}

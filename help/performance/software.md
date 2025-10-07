@@ -23,9 +23,9 @@ ht-degree: 0%
 
 * [[!DNL Varnish] キャッシュ](../configuration/cache/config-varnish.md)
 * セッション用 [Redis](../configuration/cache/redis-session.md) （2.0.6 以降）
-* [ デフォルトキャッシュ ](../configuration/cache/redis-pg-cache.md) として個別の Redis インスタンスを使用します（ページキャッシュにはこのインスタンスを使用しないでください）。
+* [&#x200B; デフォルトキャッシュ &#x200B;](../configuration/cache/redis-pg-cache.md) として個別の Redis インスタンスを使用します（ページキャッシュにはこのインスタンスを使用しないでください）。
 
-各タイプのソフトウェアでサポートされるバージョンの詳細については、[ システム要件 ](../installation/system-requirements.md) を参照してください。
+各タイプのソフトウェアでサポートされるバージョンの詳細については、[&#x200B; システム要件 &#x200B;](../installation/system-requirements.md) を参照してください。
 
 ## オペレーティングシステム
 
@@ -114,7 +114,7 @@ Magento Open SourceとAdobe Commerce:
 
 >[!INFO]
 >
->`php-mcrypt` は PHP 7.2 から削除され、[`sodium` ライブラリ ](https://www.php.net/manual/en/book.sodium.php) に置き換えられました。 PHP のアップグレード時に [sodium](https://www.php.net/manual/en/sodium.installation.php) が適切に有効になっていることを確認してください。
+>`php-mcrypt` は PHP 7.2 から削除され、[`sodium` ライブラリ &#x200B;](https://www.php.net/manual/en/book.sodium.php) に置き換えられました。 PHP のアップグレード時に [sodium](https://www.php.net/manual/en/sodium.installation.php) が適切に有効になっていることを確認してください。
 
 >[!INFO]
 >
@@ -132,7 +132,7 @@ memory_limit=1G
 
 #### Realpath_cache 構成
 
-[!DNL Commerce] のパフォーマンスを向上させるには、`realpath_cache` ファイルで以下の推奨 `php.ini` 設定を追加または更新します。 この設定により、PHP プロセスは、ページが読み込まれるたびにパスを検索する代わりに、ファイルへのパスをキャッシュすることができます。 PHP ドキュメントの [ パフォーマンスチューニング ](https://www.php.net/manual/en/ini.core.php) を参照してください。
+[!DNL Commerce] のパフォーマンスを向上させるには、`realpath_cache` ファイルで以下の推奨 `php.ini` 設定を追加または更新します。 この設定により、PHP プロセスは、ページが読み込まれるたびにパスを検索する代わりに、ファイルへのパスをキャッシュすることができます。 PHP ドキュメントの [&#x200B; パフォーマンスチューニング &#x200B;](https://www.php.net/manual/en/ini.core.php) を参照してください。
 
 ```text
 realpath_cache_size=10M
@@ -162,7 +162,7 @@ opcache.max_accelerated_files=60000
 
 #### APCU
 
-[PHP APCu 拡張モジュールを有効にし ](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) それをサポートするために [ を設定する `composer` を有効にして、パフォーマンスを最大限に高めるための最適化を行うことをお勧めします ](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) この拡張機能では、開いたファイルの場所をキャッシュするので、ページ、Ajax 呼び出し、エンドポイントを含む [!DNL Commerce] サーバー呼び出しのパフォーマンスが向上します。
+[PHP APCu 拡張モジュールを有効にし &#x200B;](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) それをサポートするために [&#x200B; を設定する `composer` を有効にして、パフォーマンスを最大限に高めるための最適化を行うことをお勧めします &#x200B;](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) この拡張機能では、開いたファイルの場所をキャッシュするので、ページ、Ajax 呼び出し、エンドポイントを含む [!DNL Commerce] サーバー呼び出しのパフォーマンスが向上します。
 
 `apcu.ini` ファイルを編集して、以下を含めます。
 
@@ -184,9 +184,9 @@ Magentoは、Nginx web サーバーと Apache web サーバーを完全にサポ
 
 | Web サーバー | 属性名 | 場所 | 関連情報 |
 |--- | --- | --- | ---|
-| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` （Debian） | [ パフォーマンスのための NGINX のチューニング ](https://www.nginx.com/blog/tuning-nginx/) |
-| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` （CentOS） | [Apache パフォーマンスチューニング ](https://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
-| Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` （CentOS） | [Apache MPM 共通ディレクティブ ](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
+| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` （Debian） | [&#x200B; パフォーマンスのための NGINX のチューニング &#x200B;](https://www.nginx.com/blog/tuning-nginx/) |
+| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` （CentOS） | [Apache パフォーマンスチューニング &#x200B;](https://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
+| Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` （CentOS） | [Apache MPM 共通ディレクティブ &#x200B;](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
 
 ## [!DNL MySQL]
 
@@ -213,7 +213,7 @@ Web 層の前にある別のサーバーに [!DNL Varnish] をインストール
 * **猶予モード** を使用すると、オブジェクトを有効期間（TTL）の期間を超えてキャッシュに保持し、正常でない場合や新しいコンテンツがまだ取得されていない場合に、この古 [!DNL Varnish] いコンテンツを提供するように [!DNL Commerce] に指示できます。
 * **セントモード** は、設定可能な時間、異常な [!DNL Commerce] サーバーをブラックリストに登録します。 その結果、正常でないバックエンドは、[!DNL Varnish] をロードバランサーとして使用する場合、トラフィックを提供できません。
 
-これらの機能の実装について詳しくは、[ 詳細  [!DNL Varnish]  設定 ](../configuration/cache/config-varnish-advanced.md) を参照してください。
+これらの機能の実装について詳しくは、[&#x200B; 詳細  [!DNL Varnish]  設定 &#x200B;](../configuration/cache/config-varnish-advanced.md) を参照してください。
 
 ### アセットのパフォーマンスの最適化
 

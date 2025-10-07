@@ -36,7 +36,7 @@ Commerceは、次のデフォルトのヘルスチェックを定義します。
 
 `health_check.php` スクリプトは、`pub` ディレクトリにあります。 Commerceのルートディレクトリが `pub` の場合は、`url` パラメーターのパスを必ず `/pub/health_check.php` から `health_check.php` に変更してください。
 
-詳しくは、[ ワニスのヘルスチェック ](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) のドキュメントを参照してください。
+詳しくは、[&#x200B; ワニスのヘルスチェック &#x200B;](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) のドキュメントを参照してください。
 
 ## 猶予モード
 
@@ -49,7 +49,7 @@ Commerceは、次のデフォルトのヘルスチェックを定義します。
 
 ### Commerce バックエンドが正常な場合
 
-ヘルスチェックによってCommerce バックエンドが正常であることが判断されると、Varnish は時間が猶予期間内に残っているかどうかを確認します。 デフォルトの猶予時間は 300 秒ですが、[Commerceを使用するための設定 ](configure-varnish-commerce.md) で説明されているように、マーチャントは管理者から値を設定できます。 猶予期間が終了していない場合、Varnish は古いコンテンツを配信し、Commerce サーバーからオブジェクトを非同期に更新します。 猶予期間が経過すると、Varnish は古いコンテンツを提供し、Commerce バックエンドからオブジェクトを同期更新します。
+ヘルスチェックによってCommerce バックエンドが正常であることが判断されると、Varnish は時間が猶予期間内に残っているかどうかを確認します。 デフォルトの猶予時間は 300 秒ですが、[Commerceを使用するための設定 &#x200B;](configure-varnish-commerce.md) で説明されているように、マーチャントは管理者から値を設定できます。 猶予期間が終了していない場合、Varnish は古いコンテンツを配信し、Commerce サーバーからオブジェクトを非同期に更新します。 猶予期間が経過すると、Varnish は古いコンテンツを提供し、Commerce バックエンドからオブジェクトを同期更新します。
 
 Varnish が古いオブジェクトを提供する最大時間は、猶予期間（デフォルトでは 300 秒）と TTL 値（デフォルトでは 86400 秒）の合計です。
 
@@ -85,7 +85,7 @@ bin/magento cache:flush
 
 ### インストール
 
-Saint モードはメインのワニスパッケージの一部ではありません。 これは、個別にバージョン管理される `vmod` であり、ダウンロードしてインストールする必要があります。 その結果、お使いのバージョンのワニスの [ インストール手順 ](https://varnish-cache.org/docs/index.html) に記載されているように、ソースからワニスを再コンパイルする必要があります。
+Saint モードはメインのワニスパッケージの一部ではありません。 これは、個別にバージョン管理される `vmod` であり、ダウンロードしてインストールする必要があります。 その結果、お使いのバージョンのワニスの [&#x200B; インストール手順 &#x200B;](https://varnish-cache.org/docs/index.html) に記載されているように、ソースからワニスを再コンパイルする必要があります。
 
 再コンパイル後、Saint モード モジュールをインストールできます。 通常は、次の手順に従います。
 
@@ -101,7 +101,7 @@ Saint モードはメインのワニスパッケージの一部ではありま�
    sudo make install
    ```
 
-Saint モードのモジュールのインストールについては、[Varnish モジュール コレクション ](https://github.com/varnish/varnish-modules) を参照してください。
+Saint モードのモジュールのインストールについては、[Varnish モジュール コレクション &#x200B;](https://github.com/varnish/varnish-modules) を参照してください。
 
 ### サンプル VCL ファイル
 

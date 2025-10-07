@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 依存関係のインストール
 
-`composer.json` ファイルと `composer.lock` ファイルは、[!DNL Commerce] の依存関係を管理し、各パッケージの適切なバージョンをインストールします。 [autoloader](#preprocess-dependency-injection-instructions) を更新する場合は、[ 依存関係の挿入手順を前処理 ](#update-the-autoloader) の前に依存関係をインストールする必要があります。
+`composer.json` ファイルと `composer.lock` ファイルは、[!DNL Commerce] の依存関係を管理し、各パッケージの適切なバージョンをインストールします。 [autoloader](#preprocess-dependency-injection-instructions) を更新する場合は、[&#x200B; 依存関係の挿入手順を前処理 &#x200B;](#update-the-autoloader) の前に依存関係をインストールする必要があります。
 
 [!DNL Commerce] 依存関係をインストールするには：
 
@@ -41,7 +41,7 @@ bin/magento setup:di:compile
 
 ## オートローダーの更新
 
-コンパイルが完了したら、[APCu が有効になっていることを確認し ](../performance/software.md#php-settings) オートローダーを更新します。
+コンパイルが完了したら、[APCu が有効になっていることを確認し &#x200B;](../performance/software.md#php-settings) オートローダーを更新します。
 
 オートローダーを更新するには：
 
@@ -83,7 +83,7 @@ bin/magento setup:static-content:deploy
 
 静的コンテンツがデプロイされていない場合、[!DNL Commerce] はリストされているすべての操作をその場で実行するので、応答時間が大幅に長くなります。
 
-様々なオプションを使用して、ストアのサイズとフルフィルメントのニーズに基づいてデプロイメント操作をカスタマイズできます。 最も一般的なのは、コンパクトなデプロイ戦略です。 [ 静的ファイルのデプロイメント戦略 ](../configuration/cli/static-view-file-strategy.md) を参照してください。
+様々なオプションを使用して、ストアのサイズとフルフィルメントのニーズに基づいてデプロイメント操作をカスタマイズできます。 最も一般的なのは、コンパクトなデプロイ戦略です。 [&#x200B; 静的ファイルのデプロイメント戦略 &#x200B;](../configuration/cli/static-view-file-strategy.md) を参照してください。
 
 静的コンテンツをデプロイするには：
 

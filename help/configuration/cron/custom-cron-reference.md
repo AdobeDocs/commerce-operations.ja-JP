@@ -15,9 +15,9 @@ ht-degree: 0%
 
 オプションとして、カスタムグループを設定できます。このグループを使用することで、他の cron ジョブとは無関係に、そのグループで定義された cron ジョブを実行できます。
 
-詳しい手順のチュートリアルについては、[ カスタム cron ジョブと cron グループの設定（チュートリアル） ](custom-cron-tutorial.md) を参照してください。
+詳しい手順のチュートリアルについては、[&#x200B; カスタム cron ジョブと cron グループの設定（チュートリアル） &#x200B;](custom-cron-tutorial.md) を参照してください。
 
-cron ジョブの概要については、[cron ジョブの設定 ](../cli/configure-cron-jobs.md) を参照してください。
+cron ジョブの概要については、[cron ジョブの設定 &#x200B;](../cli/configure-cron-jobs.md) を参照してください。
 
 ## Cron グループの設定
 
@@ -123,7 +123,7 @@ _cron グループ_ は、一度に複数のプロセスに対して cron を簡
 
 ## Cron ジョブの無効化
 
-Cron ジョブには、`disable` 監視者 [ 向けの ](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers) 機能はありません。 ただし、cron ジョブは、次の手法を使用して無効にすることができます。`schedule` 発生することのない日付を含む時間を無効にします。
+Cron ジョブには、`disable` 監視者 [&#x200B; 向けの &#x200B;](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers) 機能はありません。 ただし、cron ジョブは、次の手法を使用して無効にすることができます。`schedule` 発生することのない日付を含む時間を無効にします。
 
 例えば、モジュールで定義した `visitor_clean` cron ジョブ `Magento_Customer` 無効にします。
 

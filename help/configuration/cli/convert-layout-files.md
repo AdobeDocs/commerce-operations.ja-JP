@@ -15,8 +15,8 @@ ht-degree: 0%
 
 対応する XSLT （Extensible Stylesheet Language Transformations） スタイルシートを更新する場合は、このコマンドを使用してレイアウト XML ファイルを更新します。
 
-- [ レイアウトの説明 ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
-- [ レイアウトファイルのタイプ ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
+- [&#x200B; レイアウトの説明 &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
+- [&#x200B; レイアウトファイルのタイプ &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
 
 コマンドオプション：
 

@@ -115,7 +115,7 @@ class Reader extends Filesystem
 
 >[!INFO]
 >
->独自のバージョンのリーダーを作成する場合は、`\Magento\Framework\Config\ReaderInterface` を実装します。 [Magento_Analytics 設定リーダーを参照してください ](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
+>独自のバージョンのリーダーを作成する場合は、`\Magento\Framework\Config\ReaderInterface` を実装します。 [Magento_Analytics 設定リーダーを参照してください &#x200B;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
 
 リーダーを定義した後、それを使用して、設定ファイルを収集、結合、検証および内部配列表現に変換します。
 

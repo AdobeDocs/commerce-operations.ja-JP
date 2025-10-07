@@ -21,11 +21,11 @@ ht-degree: 0%
 PHP は memcache をネイティブでサポートしていないので、それを使用するには PHP 用の拡張モジュールをインストールする必要があります。 PHP には 2 つの拡張モジュールがあり、どちらを使用するかをデコードすることが重要です。
 
 - `memcache` （_no d_） – 定期的にメンテナンスされていない、古いが一般的な拡張機能。
-`memcache` 拡張モジュールは現在 PHP 7 で動作します _動作しません_。 [memcache に関する PHP のドキュメント ](https://www.php.net/manual/en/book.memcache.php) を参照してください。
+`memcache` 拡張モジュールは現在 PHP 7 で動作します _動作しません_。 [memcache に関する PHP のドキュメント &#x200B;](https://www.php.net/manual/en/book.memcache.php) を参照してください。
 
   CentOS の正確な名前は `php-pecl-memcache` です。
 
-- `memcached` （_と`d`_） – PHP 7 と互換性のある、新しくメンテナンスされた拡張機能です。 [memcached に関する PHP のドキュメント ](https://www.php.net/manual/en/book.memcached.php) を参照してください。
+- `memcached` （_と`d`_） – PHP 7 と互換性のある、新しくメンテナンスされた拡張機能です。 [memcached に関する PHP のドキュメント &#x200B;](https://www.php.net/manual/en/book.memcached.php) を参照してください。
 
   CentOS の正確な名前は `php-pecl-memcached` です。
 
@@ -106,7 +106,7 @@ memcached が Web サーバで認識されることを確認するには、次�
 
 1. memcache が次のように表示されていることを確認します。
 
-![Web サーバーが memcache を認識していることを確認します ](../../assets/configuration/memcache.png)
+![Web サーバーが memcache を認識していることを確認します &#x200B;](../../assets/configuration/memcache.png)
 
 memcached バージョン 3.0.5 以降を使用していることを確認します。
 
@@ -116,7 +116,7 @@ memcache が表示されない場合は、web サーバーを再起動してブ�
 
 このテストでは、MySQL データベース、テーブル、およびデータを使用して、データベースデータを取得して memcache に保存できることを確認します。 PHP スクリプトはまずキャッシュを検索します。 結果が存在しない場合、スクリプトはデータベースにクエリを実行します。 クエリが元のデータベースで実行された後、スクリプトは `set` コマンドを使用して結果を memcache に保存します。
 
-[ このテストの詳細 ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
+[&#x200B; このテストの詳細 &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
 
 MySQL データベースを作成します。
 
@@ -213,4 +213,4 @@ flush_all
 quit
 ```
 
-[Telnet テストに関する追加情報 ](https://darkcoding.net/software/memcached-list-all-keys/)
+[Telnet テストに関する追加情報 &#x200B;](https://darkcoding.net/software/memcached-list-all-keys/)

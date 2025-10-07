@@ -34,4 +34,4 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 
 管理者を使用してキャッシュを更新するには、**SYSTEM**/ツール/**Cache Management** をクリックし、ページ上部の **Magento キャッシュをフラッシュ** をクリックします。 （個々のキャッシュタイプを更新することもできます）。
 
-cli から複数の Varnish インスタンスのキャッシュを更新するには、[`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) コマンドを [ ファイル・システムの所有者 ](../../installation/prerequisites/file-system/overview.md) として使用します。
+cli から複数の Varnish インスタンスのキャッシュを更新するには、[`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) コマンドを [&#x200B; ファイル・システムの所有者 &#x200B;](../../installation/prerequisites/file-system/overview.md) として使用します。

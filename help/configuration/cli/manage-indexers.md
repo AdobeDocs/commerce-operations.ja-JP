@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> Live Search、カタログサービス、Product Recommendations を使用するAdobe Commerce マーチャントには、[SaaS ベースの価格インデックス作成 ](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing) を使用するオプションがあります。
+> Live Search、カタログサービス、Product Recommendations を使用するAdobe Commerce マーチャントには、[SaaS ベースの価格インデックス作成 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing) を使用するオプションがあります。
 
 ## インデクサーのステータスの表示
 
@@ -89,7 +89,7 @@ bin/magento indexer:status [indexer]
 
 >[!INFO]
 >
->このコマンドは 1 回だけ再インデックスを実行します。 インデクサーを最新の状態に保つには、[cron ジョブ ](../cli/configure-cron-jobs.md) を設定する必要があります。
+>このコマンドは 1 回だけ再インデックスを実行します。 インデクサーを最新の状態に保つには、[cron ジョブ &#x200B;](../cli/configure-cron-jobs.md) を設定する必要があります。
 
 コマンドオプション：
 
@@ -219,7 +219,7 @@ Stores Feed indexer has been invalidated.
 - **保存時に更新（`realtime`）**：インデックス付きデータは、管理者で変更が加えられると更新されます。 （例えば、カテゴリ製品インデックスは、製品が管理者のカテゴリに追加された後に再インデックスされます。）
 - **スケジュールで更新（`schedule`）**:cron ジョブで設定したスケジュールに従ってデータのインデックスが作成されます。
 
-[ インデックス作成の詳細情報 ](https://developer.adobe.com/commerce/php/development/components/indexing/)。
+[&#x200B; インデックス作成の詳細情報 &#x200B;](https://developer.adobe.com/commerce/php/development/components/indexing/)。
 
 ### 現在の設定を表示
 
@@ -269,11 +269,11 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8 以降**:[!DNL Customer Grid] インデクサーは、[!UICONTROL Update on Save] モードと [!UICONTROL Update by Schedule] モードの両方をサポートしており、デフォルトは [!UICONTROL Update by Schedule] です。
 >
->[ 実装プレイブック ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) の _インデクサー設定のベストプラクティス_ を参照してください。
+>[&#x200B; 実装プレイブック &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) の _インデクサー設定のベストプラクティス_ を参照してください。
 
 >[!INFO]
 >
->インデクサーモードを切り替える前に、web サイトを [ メンテナンス ](../../installation/tutorials/maintenance-mode.md) モードと [cron ジョブを無効 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) に設定します。 これにより、データベースのロックが発生しないようにします。
+>インデクサーモードを切り替える前に、web サイトを [&#x200B; メンテナンス &#x200B;](../../installation/tutorials/maintenance-mode.md) モードと [cron ジョブを無効 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) に設定します。 これにより、データベースのロックが発生しないようにします。
 
 インデクサー設定を指定するには：
 

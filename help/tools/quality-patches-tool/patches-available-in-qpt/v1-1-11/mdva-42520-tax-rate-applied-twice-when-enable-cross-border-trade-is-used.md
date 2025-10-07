@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # MDVA-42520:[ 国境を越えた貿易を有効にする ] が使用されている場合に 2 回適用される税率
 
-MDVA-42520 パッチは、**Enable Cross Border Trade** が使用されるときに税率が 2 回適用される問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.11 がインストールされている場合に使用できます。 パッチ ID は MDVA-42520。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+MDVA-42520 パッチは、**Enable Cross Border Trade** が使用されるときに税率が 2 回適用される問題を修正します。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.11 がインストールされている場合に使用できます。 パッチ ID は MDVA-42520。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -39,7 +39,7 @@ MDVA-42520 パッチは、**Enable Cross Border Trade** が使用されるとき
 1. **会社**、**共有カタログ** および **見積もり** を有効にする
 1. スクリーンショットに従って税金を設定します。 **クロスボーダー取引** を必ず有効にしてください。
 
-   ![ クロスボーダー取引オプションとレート計算を表示する税金設定ページ ](/help/assets/tools/tax_settings_1.png){width="700"}
+   ![&#x200B; クロスボーダー取引オプションとレート計算を表示する税金設定ページ &#x200B;](/help/assets/tools/tax_settings_1.png){width="700"}
 
 1. ドイツ （10%）の税率を作成します。
 1. 税率を適用する税務処理基準を作成します。
@@ -62,14 +62,14 @@ MDVA-42520 パッチは、**Enable Cross Border Trade** が使用されるとき
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md)[!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
 品質向上パッチツールの詳細については、次を参照してください。
 
-* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
 
 QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html): Search for patches[!DNL Quality Patches Tool]」を参照してください。

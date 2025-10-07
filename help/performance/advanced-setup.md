@@ -36,7 +36,7 @@ ht-degree: 0%
 
 多数の製品 SKU、web サイト、顧客グループまたは共有カタログが、製品価格とカタログルールインデクサーの実行時間に影響を与えます。 これは、デフォルトでは、すべての web サイトがすべての顧客グループ（共有カタログ）に割り当てられるからです。
 
-インデックス作成時間を短縮するには、[ 特定の web サイトを顧客グループから除外（共有カタログ） ](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites) します。
+インデックス作成時間を短縮するには、[&#x200B; 特定の web サイトを顧客グループから除外（共有カタログ） &#x200B;](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites) します。
 
 ## Redis の設定
 
@@ -56,7 +56,7 @@ Adobe Commerceは、[!DNL RabbitMQ] を通じて実装されたメッセージ�
 
 >[!WARNING]
 >
->Adobe Commerceのバージョン 2.4.2 では、分割データベース機能は [ 非推奨 ](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) となりました。 [ 分割データベースから単一データベースへの復帰 ](../configuration/storage/revert-split-database.md) を参照してください。
+>Adobe Commerceのバージョン 2.4.2 では、分割データベース機能は [&#x200B; 非推奨 &#x200B;](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) となりました。 [&#x200B; 分割データベースから単一データベースへの復帰 &#x200B;](../configuration/storage/revert-split-database.md) を参照してください。
 
 Adobe Commerceを使用すると、スケーラブルなデータベースストレージを設定して、拡大するビジネスのニーズに対応できます。 特定のドメインを提供する 3 つの個別のマスター・データベースを設定できます。
 
@@ -95,7 +95,7 @@ bin/magento setup:db-schema:add-slave
 マスター・データベースを分割してスレーブ・データベースを設定した後、[!DNL Commerce] は指定したデータベースへの接続を自動的に調整し、リクエストのタイプ（POST、PUT、GETなど）とデータ・リソースに基づいて判断を行います。 [!DNL Commerce] またはその拡張機能がGET リクエストに対して書き込み操作を実行すると、スレーブからマスターデータベースへの接続が自動的に切り替わります。 マスターデータベースでも同様に機能します。チェックアウト関連のテーブルを操作するとすぐに、システムはすべてのクエリを特定のデータベースにリダイレクトします。 その間、カタログ関連のクエリはすべてメインデータベースに送られます。
 
 設定および複数のマスター/スレーブ設定の利点について詳しくは、を参照してください。
-[ 分割データベースパフォーマンスソリューション ](../configuration/storage/multi-master.md)。
+[&#x200B; 分割データベースパフォーマンスソリューション &#x200B;](../configuration/storage/multi-master.md)。
 
 ## メディアコンテンツの提供
 

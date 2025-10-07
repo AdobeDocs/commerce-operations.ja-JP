@@ -68,9 +68,9 @@ ht-degree: 0%
 
    次の図に、サンプル Web サイトコードを示します。
 
-   ![ 管理者から web サイトまたはストアの表示コードを取得する ](../../assets/configuration/website-code.png)
+   ![&#x200B; 管理者から web サイトまたはストアの表示コードを取得する &#x200B;](../../assets/configuration/website-code.png)
 
-1. [ 値を設定 ](#set-values) を続行します。
+1. [&#x200B; 値を設定 &#x200B;](#set-values) を続行します。
 
 **データベースでスコープ コードを検索するには**:
 
@@ -142,7 +142,7 @@ bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path value
 >
 >Commerce 2.2.4 以降では、「`--lock-env`」オプションと「`--lock-config`」オプションが「`--lock`」オプションに置き換わります。
 >
->`--lock-env` または `--lock-config` オプションを使用して値を設定または変更する場合は、[`bin/magento app:config:import` コマンドを使用して設定を読み込んでから ](../cli/import-configuration.md) 管理者またはストアフロントにアクセスする必要があります。
+>`--lock-env` または `--lock-config` オプションを使用して値を設定または変更する場合は、[`bin/magento app:config:import` コマンドを使用して設定を読み込んでから &#x200B;](../cli/import-configuration.md) 管理者またはストアフロントにアクセスする必要があります。
 
 間違った設定パスを入力すると、このコマンドはエラーを返します
 
@@ -221,7 +221,7 @@ bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 
 >[!INFO]
 >
->`bin/magento config:show` コマンドは、[ 暗号化された値 ](../reference/config-reference-sens.md) の値を一連のアスタリスク（`******`）として表示します。
+>`bin/magento config:show` コマンドは、[&#x200B; 暗号化された値 &#x200B;](../reference/config-reference-sens.md) の値を一連のアスタリスク（`**&#x200B;**&#x200B;**`）として表示します。
 
 ### 例
 
@@ -292,5 +292,5 @@ web/unsecure/base_url - http://example-for-store.com/
 
 >[!INFO]
 >
->スコープ コードには、文字（a ～ z または A ～ Z）、数字（0 ～ 9）、およびアンダースコア （_）のみを使用できます。 また、最初の文字は文字である必要があります。 Web サイト表示またはストア表示を作成する際に大文字または大文字を使用すると、内部的に一致させる際に大文字と小文字が区別されず、環境変数による設定の上書きに対応します。 [ 環境変数を使用して設定を上書き ](../reference/override-config-settings.md#environment-variables) を参照してください。
+>スコープ コードには、文字（a ～ z または A ～ Z）、数字（0 ～ 9）、およびアンダースコア （_）のみを使用できます。 また、最初の文字は文字である必要があります。 Web サイト表示またはストア表示を作成する際に大文字または大文字を使用すると、内部的に一致させる際に大文字と小文字が区別されず、環境変数による設定の上書きに対応します。 [&#x200B; 環境変数を使用して設定を上書き &#x200B;](../reference/override-config-settings.md#environment-variables) を参照してください。
 

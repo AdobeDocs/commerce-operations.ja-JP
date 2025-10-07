@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ここでは、データセンター（仮想化されていない）で物理的にホストされているプレーンサーバーを使用し、リソースが他のユーザーと共有されていないAdobe Commerce インスタンスの一般的な推奨設定について説明します。 ホスティングプロバイダーは、特にCommerceのハイパフォーマンスホスティングを専門としている場合、要件に対して同等または効果的な別の設定を推奨する場合があります。
 
-クラウドインフラストラクチャ環境でのAdobe Commerceについては、[ スターターアーキテクチャ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture) を参照してください。
+クラウドインフラストラクチャ環境でのAdobe Commerceについては、[&#x200B; スターターアーキテクチャ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture) を参照してください。
 
 ## [!DNL Commerce] リファレンスアーキテクチャ図
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 * Magento Open Sourceでは、グレーの要素はオプションです
 * Adobe Commerceでは、青い要素はオプションです
 
-![Commerceのリファレンスアーキテクチャ図 ](../assets/performance/images/ref-architecture-2.3.png)
+![Commerceのリファレンスアーキテクチャ図 &#x200B;](../assets/performance/images/ref-architecture-2.3.png)
 
 次の節では、Commerce リファレンスアーキテクチャの図の各セクションに関する推奨事項と考慮事項を示します。
 
@@ -68,8 +68,8 @@ Magentoでは、複数のフルページキャッシュエンジン（ファイ�
 
 高可用性を必要としないサイトの場合は、Nginx SSL ターミネーションを使用したシンプルな [!DNL Varnish] 設定を使用することをお勧めします。
 
-![SSL ターミネーションを使用したシンプルな [!DNL Varnish] 設定 ](../assets/performance/images/single-varnish-with-ssl-termination.png)
+![SSL ターミネーションを使用したシンプルな [!DNL Varnish] 設定 &#x200B;](../assets/performance/images/single-varnish-with-ssl-termination.png)
 
 高可用性が必要なサイトの場合は、SSL ターミネータ ロード バランサーを使用した 2 層 [!DNL Varnish] 構成を使用することをお勧めします。
 
-![SSL ターミネーター付き、高可用性の 2 層 [!DNL Varnish] 構成 ](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)
+![SSL ターミネーター付き、高可用性の 2 層 [!DNL Varnish] 構成 &#x200B;](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)

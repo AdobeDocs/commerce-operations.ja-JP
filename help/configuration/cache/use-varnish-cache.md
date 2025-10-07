@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## ワニスパージ
 
-[Varnish のドキュメント ](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html) によると、「*パージ* は、キャッシュからオブジェクトを選択して、そのバリアントと共に破棄する場合に発生します。」 Varnish パージは、キャッシュクリーンコマンド（または管理者で **Magento キャッシュをフラッシュ** をクリックするコマンド）に似ています。
+[Varnish のドキュメント &#x200B;](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html) によると、「*パージ* は、キャッシュからオブジェクトを選択して、そのバリアントと共に破棄する場合に発生します。」 Varnish パージは、キャッシュクリーンコマンド（または管理者で **Magento キャッシュをフラッシュ** をクリックするコマンド）に似ています。
 
 実際、Commerceのキャッシュをクリーンアップ、フラッシュまたは更新すると、Varnish もパージします。
 
@@ -58,4 +58,4 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 
 管理者を使用してキャッシュを更新するには、**[!UICONTROL SYSTEM]** / ツール / **キャッシュ管理** をクリックし、ページ上部の **Magento キャッシュをフラッシュ** をクリックします。 （個々のキャッシュタイプを更新することもできます）。
 
-コマンドラインを使用してキャッシュを更新するには、通常、[`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) コマンドを [ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) として使用します。
+コマンドラインを使用してキャッシュを更新するには、通常、[`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) コマンドを [&#x200B; ファイルシステムの所有者 &#x200B;](../../installation/prerequisites/file-system/overview.md) として使用します。

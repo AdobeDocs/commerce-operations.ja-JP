@@ -14,17 +14,17 @@ ht-degree: 0%
 
 ロガーの使用を開始するには、`\Psr\Log\LoggerInterface` のインスタンスを作成する必要があります。 このインターフェイスでは、次の関数を呼び出してデータをログファイルに書き込むことができます。
 
-- [alert （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L43)
-- [critical （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)
-- [debug （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L111)
-- [emergency （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L30)
-- [error （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L66)
-- [info （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L101)
-- [log （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L122)
-- [notice （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L89)
-- [warning （） ](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
+- [alert （） &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L43)
+- [critical （） &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)
+- [debug （） &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L111)
+- [emergency （） &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L30)
+- [error （） &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L66)
+- [info （） &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L101)
+- [log （） &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L122)
+- [notice （） &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L89)
+- [warning （） &#x200B;](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
 
-その方法の 1 つは、[ ログデータベースアクティビティ ](../logs/database-activity.md) 例で説明します。
+その方法の 1 つは、[&#x200B; ログデータベースアクティビティ &#x200B;](../logs/database-activity.md) 例で説明します。
 
 もう 1 つの方法は次のとおりです。
 

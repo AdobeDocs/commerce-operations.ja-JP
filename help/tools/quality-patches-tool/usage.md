@@ -15,11 +15,11 @@ ht-degree: 0%
 
 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) は、AdobeとMagento Open Source コミュニティが開発した個別のパッチを提供します。 インストールされたバージョンのAdobe Commerceで使用可能な個々のパッチに関する一般情報を適用、元に戻して表示できます。 パッチの開発者に関係なく、Adobe Commerce プロジェクトにパッチを適用できます。 例えば、コミュニティが開発したパッチをAdobe Commerce プロジェクトに適用できます。
 
-この [ テクニカルビデオ ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) では、Adobe Commerce用の品質向上パッチツールの使用方法について説明します。
+この [&#x200B; テクニカルビデオ &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) では、Adobe Commerce用の品質向上パッチツールの使用方法について説明します。
 
 >[!INFO]
 >
->Adobe Commerce プロジェクトにパッチを適用する手順については、[ 個別のパッチの適用 ](#apply-individual-patches) を参照してください。 リリースされたパッチの完全なリストを確認するには、「[[!DNL Quality Patches Tool]: パッチの検索 ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
+>Adobe Commerce プロジェクトにパッチを適用する手順については、[&#x200B; 個別のパッチの適用 &#x200B;](#apply-individual-patches) を参照してください。 リリースされたパッチの完全なリストを確認するには、「[[!DNL Quality Patches Tool]: パッチの検索 &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
 
 >[!WARNING]
 >
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->まだインストールされていない場合は、[[!DNL Git] をインストールする前に ](https://github.com/git-guides/install-git)[ または ](https://man7.org/linux/man-pages/man1/patch.1.html) パッチ [!DNL Quality Patches Tool] をインストールする必要があります。 `magento/quality-patches` Composer パッケージを `composer.json` ファイルに追加します。
+>まだインストールされていない場合は、[[!DNL Git] をインストールする前に &#x200B;](https://github.com/git-guides/install-git) [&#x200B; または &#x200B;](https://man7.org/linux/man-pages/man1/patch.1.html) パッチ [!DNL Quality Patches Tool] をインストールする必要があります。 `magento/quality-patches` Composer パッケージを `composer.json` ファイルに追加します。
 
 ```bash
 composer require magento/quality-patches
@@ -77,13 +77,13 @@ Adobe Commerce 2.3.5。
 
 >[!INFO]
 >
->新しいバージョンのAdobe Commerceにアップグレードした後、パッチが新しいバージョンに含まれていない場合は、パッチを再適用する必要があります。 [ アップグレード後のパッチの再適用 ](#re-apply-patches-after-an-upgrade) を参照してください。
+>新しいバージョンのAdobe Commerceにアップグレードした後、パッチが新しいバージョンに含まれていない場合は、パッチを再適用する必要があります。 [&#x200B; アップグレード後のパッチの再適用 &#x200B;](#re-apply-patches-after-an-upgrade) を参照してください。
 
 ## 個別パッチの適用 {#apply-individual-patches}
 
 >[!WARNING]
 >
->実稼動環境にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることをお勧めします。 また、パッチを適用する前に、データをバックアップすることをお勧めします。 [ ファイル・システム、メディア、データベースのバックアップとロールバック ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html) を参照してください。
+>実稼動環境にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることをお勧めします。 また、パッチを適用する前に、データをバックアップすることをお勧めします。 [&#x200B; ファイル・システム、メディア、データベースのバックアップとロールバック &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html) を参照してください。
 
 単一のパッチを適用するには、次のコマンドを実行します。ここで、`MAGETWO-XXXX` は、ステータステーブルで指定されたパッチ ID です。
 
@@ -105,13 +105,13 @@ Adobe Commerce アプリケーションで変更内容を確認するには、�
 
 >[!INFO]
 >
->適用されたパッチのリストを別の場所に保持することを検討してください。 Adobe Commerceの新しいバージョンにアップグレードした後で、一部の機能を再適用する必要が生じる場合があります。 [ アップグレード後のパッチの再適用 ](#re-apply-patches-after-an-upgrade) を参照してください。
+>適用されたパッチのリストを別の場所に保持することを検討してください。 Adobe Commerceの新しいバージョンにアップグレードした後で、一部の機能を再適用する必要が生じる場合があります。 [&#x200B; アップグレード後のパッチの再適用 &#x200B;](#re-apply-patches-after-an-upgrade) を参照してください。
 
 ## 個々のパッチを元に戻す
 
 >[!WARNING]
 >
->実稼動環境にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることをお勧めします。 また、パッチを適用する前に、データをバックアップすることをお勧めします。 [ ファイル・システム、メディア、データベースのバックアップとロールバック ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html) を参照してください。
+>実稼動環境にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることをお勧めします。 また、パッチを適用する前に、データをバックアップすることをお勧めします。 [&#x200B; ファイル・システム、メディア、データベースのバックアップとロールバック &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html) を参照してください。
 
 単一のパッチを元に戻すには、次のコマンドを実行します。ここで、`MAGETWO-XXXX` は、ステータステーブルで指定されたパッチ ID です。
 
@@ -167,7 +167,7 @@ composer update magento/quality-patches
    composer update magento/quality-patches.
    ```
 
-1. [ 個別パッチの適用 ](#apply-individual-patches) で推奨された、以前に適用したパッチのリストを開きます。
+1. [&#x200B; 個別パッチの適用 &#x200B;](#apply-individual-patches) で推奨された、以前に適用したパッチのリストを開きます。
 
 1. パッチを適用します。
 

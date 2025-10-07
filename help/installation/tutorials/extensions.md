@@ -20,7 +20,7 @@ Adobe Commerceの動作を拡張またはカスタマイズするコードは、
 - テーマ（ストアフロントと管理者のルックアンドフィールを変更）
 - 言語パッケージ （ストアフロントをローカライズおよび管理者）
 
-ここでは、コマンドラインインターフェイスを使用して、（オンプレミス _プロジェクト用にCommerce Marketplaceから購入したサードパーティ製の拡張機能を管理する方法に_ いて説明します。 クラウドインフラストラクチャプロジェクトの場合は、[ 拡張機能の管理 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) を参照してください。
+ここでは、コマンドラインインターフェイスを使用して、（オンプレミス _プロジェクト用にCommerce Marketplaceから購入したサードパーティ製の拡張機能を管理する方法に_ いて説明します。 クラウドインフラストラクチャプロジェクトの場合は、[&#x200B; 拡張機能の管理 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) を参照してください。
 
 _any_ 拡張機能のインストールにも同じ手順を使用できます。必要なのは、拡張機能の Composer 名とバージョンだけです。 これを見つけるには、拡張機能の `composer.json` ファイルを開き、`"name"` と `"version"` の値を確認します。
 
@@ -56,23 +56,23 @@ _any_ 拡張機能のインストールにも同じ手順を使用できます�
 
 ### 拡張機能に関する情報の取得
 
-拡張機能の Composer 名とバージョンが既にわかっている場合は、この手順をスキップして [`composer.json` ファイルを更新 ](#update-composer-dependencies) に進みます。
+拡張機能の Composer 名とバージョンが既にわかっている場合は、この手順をスキップして [`composer.json` ファイルを更新 &#x200B;](#update-composer-dependencies) に進みます。
 
 Commerce Marketplaceから拡張機能の Composer 名とバージョンを取得するには：
 
-1. 拡張機能の購入に使用したユーザー名とパスワードを使用して [0}Commerce Marketplace} にログインします。](https://commercemarketplace.adobe.com/)
+1. 拡張機能の購入に使用したユーザー名とパスワードを使用して [0&rbrace;Commerce Marketplace&rbrace; にログインします。](https://commercemarketplace.adobe.com/)
 
 1. 右上隅で、**あなたの名前**/**マイプロファイル** をクリックします。
 
-   ![Marketplace アカウントにアクセス ](../../assets/installation/marketplace-my-profile.png)
+   ![Marketplace アカウントにアクセス &#x200B;](../../assets/installation/marketplace-my-profile.png)
 
 1. **購入状況** をクリックします。
 
-   ![Marketplace の購入履歴 ](../../assets/installation//marketplace-my-purchases.png)
+   ![Marketplace の購入履歴 &#x200B;](../../assets/installation//marketplace-my-purchases.png)
 
 1. インストールする拡張機能を見つけ、コンポーネント名とバージョンをメモします。
 
-   ![ インストール用の Composer パッケージ名を表示する拡張機能の技術的詳細 ](../../assets/installation/marketplace-extension-technical-details.png)
+   ![&#x200B; インストール用の Composer パッケージ名を表示する拡張機能の技術的詳細 &#x200B;](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
@@ -94,7 +94,7 @@ Commerce Marketplaceから拡張機能の Composer 名とバージョンを取�
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. [ 認証キー ](../prerequisites/authentication-keys.md) を入力します。 公開鍵はユーザー名で、秘密鍵はパスワードです。
+1. [&#x200B; 認証キー &#x200B;](../prerequisites/authentication-keys.md) を入力します。 公開鍵はユーザー名で、秘密鍵はパスワードです。
 
 1. Composer がプロジェクトの依存関係の更新を完了するのを待ち、エラーがないことを確認します。
 

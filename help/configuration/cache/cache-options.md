@@ -23,7 +23,7 @@ Commerceは、[Magento\Framework\Cache\Core](https://framework.zend.com/manual/1
 一般に、Commerce アプリケーションは、[Zend_Cache Backends](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html) がサポートする任意のバックエンドキャッシュで動作します。 ただし、このガイドでは、次の低レベルのバックエンドキャッシュのみを扱っています。
 
 - [Redis](config-redis.md)
-- [ データベース ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
+- [&#x200B; データベース &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
 - ファイルシステム（デフォルト）：ファイルシステムのキャッシュを使用するための設定は不要です。
 
 [Varnish](config-varnish.md) では、低レベルのキャッシュバックエンドを設定する必要はありません。

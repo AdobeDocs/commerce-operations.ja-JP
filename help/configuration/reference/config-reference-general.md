@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # 一般設定パスおよび詳細設定パスのリファレンス
 
-このトピックでは、一般的な設定パスと高度な設定パスおよび _非機密_ システム固有の値 [ を一覧表示 ](config-reference-sens.md) ます。 [`magento app:config:dump` コマンドは ](../cli/export-configuration.md) これらの値をソース管理にある共有構成ファイル `app/etc/config.php` に書き込みます。
+このトピックでは、一般的な設定パスと高度な設定パスおよび _非機密_ システム固有の値 [&#x200B; を一覧表示 &#x200B;](config-reference-sens.md) ます。 [`magento app:config:dump` コマンドは &#x200B;](../cli/export-configuration.md) これらの値をソース管理にある共有構成ファイル `app/etc/config.php` に書き込みます。
 
-任意の構成設定を上書きしたり、重要な設定を指定したりするには、[ 環境変数を使用して構成設定を上書き ](override-config-settings.md#environment-variables) を参照してください。
+任意の構成設定を上書きしたり、重要な設定を指定したりするには、[&#x200B; 環境変数を使用して構成設定を上書き &#x200B;](override-config-settings.md#environment-variables) を参照してください。
 
 ## 一般カテゴリ
 
@@ -26,10 +26,10 @@ ht-degree: 0%
 
 | 名前 | 設定パス | Commerceのみ？ | 機密？ |
 |--------------|--------------|--------------|--------------|
-| デフォルトの国 | `general/country/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
-| 国を許可 | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
-| 郵便番号はオプションです | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
-| EU 諸国 | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![ 機密 ](/help/assets/configuration/cloud-sens.png) |
+| デフォルトの国 | `general/country/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![&#x200B; 機密 &#x200B;](/help/assets/configuration/cloud-sens.png) |
+| 国を許可 | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![&#x200B; 機密 &#x200B;](/help/assets/configuration/cloud-sens.png) |
+| 郵便番号はオプションです | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![&#x200B; 機密 &#x200B;](/help/assets/configuration/cloud-sens.png) |
+| EU 諸国 | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![&#x200B; 機密 &#x200B;](/help/assets/configuration/cloud-sens.png) |
 | 上位の宛先 | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 状態が必要な対象： | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 国のオプションである場合に州を選択できるようにする | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
@@ -38,11 +38,11 @@ ht-degree: 0%
 | 重み単位 | `general/locale/weight_unit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | 週の最初の曜日 | `general/locale/firstday` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | 週末日数 | `general/locale/weekend` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
-| アクセス制限 | `general/restriction/is_active` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) | |
-| 制限モード | `general/restriction/mode` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) | |
-| スタートアップページ | `general/restriction/http_redirect` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) | |
-| ランディングページ | `general/restriction/cms_page` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) | |
-| HTTP 応答 | `general/restriction/http_status` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) | |
+| アクセス制限 | `general/restriction/is_active` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) | |
+| 制限モード | `general/restriction/mode` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) | |
+| スタートアップページ | `general/restriction/http_redirect` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) | |
+| ランディングページ | `general/restriction/cms_page` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) | |
+| HTTP 応答 | `general/restriction/http_status` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) | |
 | ストア名 | `general/store_information/name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | 店舗電話番号 | `general/store_information/phone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | 営業時間の保存 | `general/store_information/hours` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
@@ -154,7 +154,7 @@ ht-degree: 0%
 
 ### New Relic レポートのパス
 
-これらの設定値は、管理者の **ストア**/設定/**設定**/**一般**/6}New Relic レポート **で利用できます。**
+これらの設定値は、管理者の **ストア**/設定/**設定**/**一般**/6&rbrace;New Relic レポート **で利用できます。**
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|
@@ -229,20 +229,20 @@ ht-degree: 0%
 | 履歴クリーンアップ間隔 | `system/cron/default/history_cleanup_every` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 成功履歴の有効期間 | `system/cron/default/history_success_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 失敗履歴の有効期間 | `system/cron/default/history_failure_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| スケジュールの生成間隔 | `system/cron/staging/schedule_generate_every` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 事前スケジュール | `system/cron/staging/schedule_ahead_for` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 次の時間内に実行されない場合は失敗 | `system/cron/staging/schedule_lifetime` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 履歴クリーンアップ間隔 | `system/cron/staging/history_cleanup_every` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 成功履歴の有効期間 | `system/cron/staging/history_success_lifetime` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 失敗履歴の有効期間 | `system/cron/staging/history_failure_lifetime` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 別のプロセスを使用 | `system/cron/staging/use_separate_process` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| スケジュールの生成間隔 | `system/cron/catalog/event/schedule_generate_every` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 事前スケジュール | `system/cron/catalog/event/schedule_ahead_for` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 次の時間内に実行されない場合は失敗 | `system/cron/catalog/event/schedule_lifetime` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 履歴クリーンアップ間隔 | `system/cron/catalog/event/history_cleanup_every` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 成功履歴の有効期間 | `system/cron/catalog/event/history_success_lifetime` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 失敗履歴の有効期間 | `system/cron/catalog/event/history_failure_lifetime` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 別のプロセスを使用 | `system/cron/catalog/event/use_separate_process` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| スケジュールの生成間隔 | `system/cron/staging/schedule_generate_every` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 事前スケジュール | `system/cron/staging/schedule_ahead_for` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 次の時間内に実行されない場合は失敗 | `system/cron/staging/schedule_lifetime` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 履歴クリーンアップ間隔 | `system/cron/staging/history_cleanup_every` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 成功履歴の有効期間 | `system/cron/staging/history_success_lifetime` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 失敗履歴の有効期間 | `system/cron/staging/history_failure_lifetime` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 別のプロセスを使用 | `system/cron/staging/use_separate_process` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| スケジュールの生成間隔 | `system/cron/catalog/event/schedule_generate_every` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 事前スケジュール | `system/cron/catalog/event/schedule_ahead_for` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 次の時間内に実行されない場合は失敗 | `system/cron/catalog/event/schedule_lifetime` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 履歴クリーンアップ間隔 | `system/cron/catalog/event/history_cleanup_every` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 成功履歴の有効期間 | `system/cron/catalog/event/history_success_lifetime` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 失敗履歴の有効期間 | `system/cron/catalog/event/history_failure_lifetime` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 別のプロセスを使用 | `system/cron/catalog/event/use_separate_process` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | 別のプロセスを使用 | `system/cron/default/use_separate_process` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | メール通信を無効にする | `system/smtp/disable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Return-Path を設定 | `system/smtp/set_return_path` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

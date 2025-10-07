@@ -100,7 +100,7 @@ ht-degree: 1%
 ]
 ```
 
-[ システム固有の設定 ](config-reference-sens.md) の詳細情報。
+[&#x200B; システム固有の設定 &#x200B;](config-reference-sens.md) の詳細情報。
 
 ## テーマ
 

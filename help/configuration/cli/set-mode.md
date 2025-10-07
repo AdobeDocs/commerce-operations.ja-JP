@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-セキュリティと使いやすさを向上させるために、開発者から実稼動環境へ、またはその逆に [ アプリケーションモード ](../bootstrap/application-modes.md) を切り替えるコマンドを追加しました。
+セキュリティと使いやすさを向上させるために、開発者から実稼動環境へ、またはその逆に [&#x200B; アプリケーションモード &#x200B;](../bootstrap/application-modes.md) を切り替えるコマンドを追加しました。
 
 実稼動モードでは、静的ビューファイルがロー `pub/static` ルディレクトリに入力され、コードがコンパイルされるので、パフォーマンスが向上します。
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 >
 >バージョン 2.0.6 以降では、デフォルト、開発、実稼動の各モードに切り替えても、Commerceはファイルまたはディレクトリの権限を明示的に設定しません。 他のモードとは異なり、開発者モードと実稼動モードは `env.php` ファイルで設定されます。 クラウドインフラストラクチャー上のAdobe Commerceでは、実稼動モードとメンテナンスモードのみをサポートしています。
 >
->詳しくは、[ 開発および実稼動におけるCommerceの所有権と権限 ](../deployment/file-system-permissions.md) を参照してください。
+>詳しくは、[&#x200B; 開発および実稼動におけるCommerceの所有権と権限 &#x200B;](../deployment/file-system-permissions.md) を参照してください。
 
 開発者モードまたは実稼動モードに変更する場合は、次のディレクトリの内容を消去します。
 
@@ -44,7 +44,7 @@ pub/static
 
 ## 現在のモードを表示
 
-これを行う最も簡単な方法は、このコマンドを [ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) として実行することです。 ホスティングを共有している場合、これはプロバイダーからサーバーにログインするためのユーザーです。 プライベートサーバーがある場合、通常はCommerce サーバーのローカルユーザーアカウントになります。
+これを行う最も簡単な方法は、このコマンドを [&#x200B; ファイルシステムの所有者 &#x200B;](../../installation/prerequisites/file-system/overview.md) として実行することです。 ホスティングを共有している場合、これはプロバイダーからサーバーにログインするためのユーザーです。 プライベートサーバーがある場合、通常はCommerce サーバーのローカルユーザーアカウントになります。
 
 コマンドの使用法：
 
@@ -74,7 +74,7 @@ bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 
 - **`{mode}`** が必要です。`developer` または `production` を指定できます
 
-- **`--skip-compilation`** は、実稼動モードに変更する際に [ コードのコンパイル ](../cli/code-compiler.md) をスキップするために使用できるオプションのパラメーターです。
+- **`--skip-compilation`** は、実稼動モードに変更する際に [&#x200B; コードのコンパイル &#x200B;](../cli/code-compiler.md) をスキップするために使用できるオプションのパラメーターです。
 
 次に例を示します。
 
@@ -161,6 +161,6 @@ Enabled default mode.
 
 ### どこからでも CLI コマンドを実行
 
-[CLI コマンドをどこからでも実行する ](../cli/config-cli.md#config-install-cli-first)。
+[CLI コマンドをどこからでも実行する &#x200B;](../cli/config-cli.md#config-install-cli-first)。
 
 `<Commerce-install-directory>/bin` をシステム `PATH` に追加していない場合は、コマンド自体を実行したときにエラーが発生する可能性があります。

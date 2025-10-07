@@ -27,11 +27,11 @@ Adobe Commerceが提供する設定ファイルを使用すると、コンポー
 >
 >[!DNL Commerce 2] デプロイメント設定は、`local.xml` の [!DNL Magento 1.x] に代わるものです。
 
-他の [ モジュール設定ファイル ](../reference/module-files.md) とは異なり、Commerce デプロイメント設定は、初期化時にメモリに読み込まれ、他のファイルと結合されず、拡張できません。 （ただし、`config.php` と `env.php` はマージされます）。
+他の [&#x200B; モジュール設定ファイル &#x200B;](../reference/module-files.md) とは異なり、Commerce デプロイメント設定は、初期化時にメモリに読み込まれ、他のファイルと結合されず、拡張できません。 （ただし、`config.php` と `env.php` はマージされます）。
 
 ## デプロイメント設定の詳細
 
-`config.php` と `env.php` は [ 多次元連想配列 ](https://www.w3schools.com:443/php/php_arrays.asp) を返す PHP ファイルで、基本的には設定パラメータと値の階層的な配列です。
+`config.php` と `env.php` は [&#x200B; 多次元連想配列 &#x200B;](https://www.w3schools.com:443/php/php_arrays.asp) を返す PHP ファイルで、基本的には設定パラメータと値の階層的な配列です。
 
 この配列の最上位には、_設定セグメント_ があります。 セグメントには、任意のキーで区別される任意のコンテンツ（スカラー値またはネストされた配列）があります。キーと値のペアの両方がCommerce フレームワークによって定義されます。
 

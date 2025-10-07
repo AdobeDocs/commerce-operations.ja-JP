@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->続行する前に [Valkey をインストール ](config-valkey.md#install-valkey) する必要があります。
+>続行する前に [Valkey をインストール &#x200B;](config-valkey.md#install-valkey) する必要があります。
 
 Adobe Commerceには、Valkey セッションストレージを設定するためのコマンドラインオプションが用意されています。
 
@@ -44,7 +44,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-valkey-port | ポート | 有効なサーバーリッスンポート。 | 6379 |
 | session-save-valkey-password | password | Valkey サーバーで認証が必要な場合にパスワードを指定します。 | 空 |
 | session-save-valkey-timeout | timeout | 接続タイムアウト （秒）。 | 2.5 |
-| session-save-valkey-persistent-id | persistent_identifier | 永続接続を有効にする一意の文字列（例：sess-db0）。<br>[phpredis および php-fpm の既知の問題 ](https://github.com/phpredis/phpredis/issues/70)。 |
+| session-save-valkey-persistent-id | persistent_identifier | 永続接続を有効にする一意の文字列（例：sess-db0）。<br>[phpredis および php-fpm の既知の問題 &#x200B;](https://github.com/phpredis/phpredis/issues/70)。 |
 | session-save-valkey-db | データベース | 一意の Valkey データベース番号。データの損失から保護することをお勧めします。<br><br>**重要**：複数のタイプのキャッシュに Valkey を使用する場合、データベース番号は異なる必要があります。 デフォルトのキャッシュ・データベース番号を `0`、ページ・キャッシュ・データベース番号を `1`、セッション・ストレージ・データベース番号を `2` に割り当てることをお勧めします。 | 0 |
 | session-save-valkey-compression-threshold | compression_threshold | 圧縮を無効にするには、`0` に設定します（`suhosin.session.encrypt = On` の場合に推奨されます）。 | 2048 |
 | session-save-valkey-compression-lib | compression_library | オプション：gzip、lzf、lz4 または snappy。 | gzip |

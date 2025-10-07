@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Commerceには、有効なページとデフォルトのキャッシュを設定するためのコマンドラインオプションが用意されています。 `<Commerce-install-dir>app/etc/env.php` ファイルを編集してキャッシュを設定できますが、特に初期設定では、コマンドラインを使用する方法をお勧めします。 コマンドラインで検証を行うことにより、設定の構文が正しいことを確認します。
 
-続行する前に [Valkey をインストール ](config-redis.md#install-redis) する必要があります。
+続行する前に [Valkey をインストール &#x200B;](config-redis.md#install-redis) する必要があります。
 
 ## Value のデフォルトキャッシュの設定
 

@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Valkey ソフトウェアをインストールして設定するには、次のリソースを参照してください。
 
-- [Valkey ページをダウンロード ](https://valkey.io/download/)
-- [Valkey クイックスタート ](https://valkey.io/topics/quickstart/)
-- [Valkey ドキュメントページ ](https://valkey.io/docs)
+- [Valkey ページをダウンロード &#x200B;](https://valkey.io/download/)
+- [Valkey クイックスタート &#x200B;](https://valkey.io/topics/quickstart/)
+- [Valkey ドキュメントページ &#x200B;](https://valkey.io/docs)
 
 ## Valkey 設定のセットアップ
 
@@ -38,7 +38,7 @@ Adobeでは、セッションの永続性を有効にして、有効なデータ
 
 - **ファイルのみ追加** （AOF）は、Valkey に送信された各書き込み操作をジャーナルファイルに保存します。 Valkey は、再起動時にのみこのファイルを読み取り、元のデータセットの復元に使用します。
 
-また、RDB オプションと AOF オプションの両方を同時に有効にすることもできます。 永続性オプションの長所と短所など、詳細については、[Valkey Persistence ドキュメント ](https://valkey.io/topics/persistence/) を参照してください。
+また、RDB オプションと AOF オプションの両方を同時に有効にすることもできます。 永続性オプションの長所と短所など、詳細については、[Valkey Persistence ドキュメント &#x200B;](https://valkey.io/topics/persistence/) を参照してください。
 
 キャッシュインスタンスには、Commerce キャッシュ全体を格納するのに十分な大きさになるようにインスタンスを設定します。 サイズ要件は、商品の数やストアの表示など、様々な要因によって異なります。 出発点として、ファイルシステム上のキャッシュフォルダーのサイズを使用できます。 例えば、ファイルシステムの `var/cache` フォルダーが 5 GB の場合、起動するには少なくとも 5 GB の Valkey インスタンスを設定します。 Commerce キャッシュは復元できるので、キャッシュインスタンスには永続性は必要ありません。
 

@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ## 手順 1：キャッシュフロントエンドの定義
 
-Commerce アプリケーションには、任意の `default` キャッシュタイプ [ に使用できる ](../cli/manage-cache.md#clean-and-flush-cache-types) キャッシュフロントエンドがあります。 この節では、オプションで別の名前でキャッシュフロントエンドを定義する方法について説明します。この方法は、フロントエンドをカスタマイズしたい場合に適しています。
+Commerce アプリケーションには、任意の `default` キャッシュタイプ [&#x200B; に使用できる &#x200B;](../cli/manage-cache.md#clean-and-flush-cache-types) キャッシュフロントエンドがあります。 この節では、オプションで別の名前でキャッシュフロントエンドを定義する方法について説明します。この方法は、フロントエンドをカスタマイズしたい場合に適しています。
 
 >[!INFO]
 >
->`default` のキャッシュタイプを使用する場合、`env.php` を変更する必要はありません。Commerceのグローバル `di.xml` を変更する必要があります。 [ 低レベルキャッシュオプション ](cache-options.md) を参照してください。
+>`default` のキャッシュタイプを使用する場合、`env.php` を変更する必要はありません。Commerceのグローバル `di.xml` を変更する必要があります。 [&#x200B; 低レベルキャッシュオプション &#x200B;](cache-options.md) を参照してください。
 
 `app/etc/env.php` またはCommerceのグローバル `app/etc/di.xml` のカスタム キャッシュ フロントエンドを指定する必要があります。
 
@@ -76,4 +76,4 @@ Commerce アプリケーションには、任意の `default` キャッシュタ
 - `<backend_type>` は、低レベルのバックエンドキャッシュタイプです。 `Zend_Cache_Backend` と互換性があり、`Zend_Cache_Backend_Interface` を実装するクラスの名前を指定します。
 - `<backend_option>` と `<backend_option_value>` は、Commerce フレームワークが作成時にバックエンドキャッシュに連想配列として渡すオプションの名前と値です。
 
-最新の Zend 情報については、[Laminas のドキュメント ](https://docs.laminas.dev/) を参照してください。
+最新の Zend 情報については、[Laminas のドキュメント &#x200B;](https://docs.laminas.dev/) を参照してください。

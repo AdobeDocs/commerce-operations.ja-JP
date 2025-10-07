@@ -14,7 +14,7 @@ ht-degree: 0%
 
 この節では、**ストア**/設定/**設定**/**カタログ** の管理でオプションに使用できる変数名と設定パスを示します。
 
-[`magento app:config:dump` コマンドは ](../cli/export-configuration.md) これらの値をソース管理にある共有構成ファイル `app/etc/config.php` に書き込みます。 任意の構成設定を上書きしたり、重要な設定を指定したりするには、[ 環境変数を使用して構成設定を上書き ](override-config-settings.md#environment-variables) を参照してください。 このトピックでは _機密の値とシステム固有の値_ は [ 表示されません ](config-reference-sens.md)。
+[`magento app:config:dump` コマンドは &#x200B;](../cli/export-configuration.md) これらの値をソース管理にある共有構成ファイル `app/etc/config.php` に書き込みます。 任意の構成設定を上書きしたり、重要な設定を指定したりするには、[&#x200B; 環境変数を使用して構成設定を上書き &#x200B;](override-config-settings.md#environment-variables) を参照してください。 このトピックでは _機密の値とシステム固有の値_ は [&#x200B; 表示されません &#x200B;](config-reference-sens.md)。
 
 ## カタログパス
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 | 関連ビデオを表示 | `catalog/product_video/show_related` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ビデオを自動再起動 | `catalog/product_video/video_auto_restart` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | カタログの価格スコープ | `catalog/price/scope` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| デフォルトの製品価格 | `catalog/price/default_product_price` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| デフォルトの製品価格 | `catalog/price/default_product_price` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | 製品数を表示 | `catalog/layered_navigation/display_product_count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 価格ナビゲーション・ステップの計算 | `catalog/layered_navigation/price_range_calculation` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | デフォルトの価格ナビゲーションステップ | `catalog/layered_navigation/price_range_step` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -64,14 +64,14 @@ ht-degree: 0%
 | 最小クエリ長 | `catalog/search/min_query_length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | クエリの最大長 | `catalog/search/max_query_length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 検索エンジン | `catalog/search/engine` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Solr Server Timeout | `catalog/search/solr_server_timeout` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| Solr Server Timeout | `catalog/search/solr_server_timeout` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | インデックス作成モード | `catalog/search/engine_commit_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 検索候補を有効にする | `catalog/search/search_suggestion_enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 検索候補の数 | `catalog/search/search_suggestion_count` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 各提案の結果数を表示 | `catalog/search/search_suggestion_count_results_enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 検索レコメンデーションを有効にする | `catalog/search/search_recommendations_enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| お勧め数を検索 | `catalog/search/search_recommendations_count` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 各レコメンデーションの結果数を表示 | `catalog/search/search_recommendations_count_results_enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 検索候補を有効にする | `catalog/search/search_suggestion_enabled` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 検索候補の数 | `catalog/search/search_suggestion_count` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 各提案の結果数を表示 | `catalog/search/search_suggestion_count_results_enabled` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 検索レコメンデーションを有効にする | `catalog/search/search_recommendations_enabled` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| お勧め数を検索 | `catalog/search/search_recommendations_count` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 各レコメンデーションの結果数を表示 | `catalog/search/search_recommendations_count_results_enabled` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | 一致する最小用語 | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 「カテゴリ/製品」 URL の書き換えを生成 | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | よく使用される検索用語 | `catalog/seo/search_terms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -82,15 +82,15 @@ ht-degree: 0%
 | ページタイトルセパレーター | `catalog/seo/title_separator` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | カテゴリに正規リンクのMeta タグを使用 | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 商品に正規リンクのMeta タグを使用 | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Enable （有効） | `catalog/magento_catalogpermissions/enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 閲覧を許可カテゴリ | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 顧客グループ | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| ランディングページ | `catalog/magento_catalogpermissions/restricted_landing_page` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 製品価格を表示 | `catalog/magento_catalogpermissions/grant_catalog_product_price` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 顧客グループ | `catalog/magento_catalogpermissions/grant_catalog_product_price_groups` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| カートへの追加を許可 | `catalog/magento_catalogpermissions/grant_checkout_items` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 顧客グループ | `catalog/magento_catalogpermissions/grant_checkout_items_groups` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| カタログ検索を許可しない基準 | `catalog/magento_catalogpermissions/deny_catalog_search` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| Enable （有効） | `catalog/magento_catalogpermissions/enabled` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 閲覧を許可カテゴリ | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 顧客グループ | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| ランディングページ | `catalog/magento_catalogpermissions/restricted_landing_page` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 製品価格を表示 | `catalog/magento_catalogpermissions/grant_catalog_product_price` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 顧客グループ | `catalog/magento_catalogpermissions/grant_catalog_product_price_groups` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| カートへの追加を許可 | `catalog/magento_catalogpermissions/grant_checkout_items` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 顧客グループ | `catalog/magento_catalogpermissions/grant_checkout_items_groups` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| カタログ検索を許可しない基準 | `catalog/magento_catalogpermissions/deny_catalog_search` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | ダウンロードを有効にするアイテムの状態を注文する | `catalog/downloadable/order_item_status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | デフォルトの最大ダウンロード数 | `catalog/downloadable/downloads_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 共有可能 | `catalog/downloadable/shareable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -103,19 +103,19 @@ ht-degree: 0%
 | 日付フィールドの順序 | `catalog/custom_options/date_fields_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 時刻の形式 | `catalog/custom_options/time_format` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 年の範囲 | `catalog/custom_options/year_range` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| カタログイベント機能の有効化 | `catalog/magento_catalogevent/enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| ストアフロントでのカタログイベントウィジェットの有効化 | `catalog/magento_catalogevent/lister_output` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| イベントスライダーウィジェットに表示されるイベントの数 | `catalog/magento_catalogevent/lister_widget_limit` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| イベントスライダーウィジェットでクリックごとにスクロールするイベント | `catalog/magento_catalogevent/lister_widget_scroll` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 関連製品リストの最大製品数 | `catalog/magento_targetrule/related_position_limit` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 関連製品を表示 | `catalog/magento_targetrule/related_position_behavior` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 関連商品リスト内の商品のローテーションモード | `catalog/magento_targetrule/related_rotation_mode` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| クロスセル製品リストの最大製品数 | `catalog/magento_targetrule/crosssell_position_limit` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| クロスセル製品を表示 | `catalog/magento_targetrule/crosssell_position_behavior` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| クロスセル製品リスト内の製品のローテーションモード | `catalog/magento_targetrule/crosssell_rotation_mode` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| アップセル製品リストの最大製品数 | `catalog/magento_targetrule/upsell_position_limit` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| アップセル製品の表示 | `catalog/magento_targetrule/upsell_position_behavior` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| アップセル製品リスト内の製品のローテーションモード | `catalog/magento_targetrule/upsell_rotation_mode` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| カタログイベント機能の有効化 | `catalog/magento_catalogevent/enabled` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| ストアフロントでのカタログイベントウィジェットの有効化 | `catalog/magento_catalogevent/lister_output` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| イベントスライダーウィジェットに表示されるイベントの数 | `catalog/magento_catalogevent/lister_widget_limit` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| イベントスライダーウィジェットでクリックごとにスクロールするイベント | `catalog/magento_catalogevent/lister_widget_scroll` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 関連製品リストの最大製品数 | `catalog/magento_targetrule/related_position_limit` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 関連製品を表示 | `catalog/magento_targetrule/related_position_behavior` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 関連商品リスト内の商品のローテーションモード | `catalog/magento_targetrule/related_rotation_mode` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| クロスセル製品リストの最大製品数 | `catalog/magento_targetrule/crosssell_position_limit` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| クロスセル製品を表示 | `catalog/magento_targetrule/crosssell_position_behavior` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| クロスセル製品リスト内の製品のローテーションモード | `catalog/magento_targetrule/crosssell_rotation_mode` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| アップセル製品リストの最大製品数 | `catalog/magento_targetrule/upsell_position_limit` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| アップセル製品の表示 | `catalog/magento_targetrule/upsell_position_behavior` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| アップセル製品リスト内の製品のローテーションモード | `catalog/magento_targetrule/upsell_rotation_mode` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
@@ -130,10 +130,10 @@ ht-degree: 0%
 | 在庫切れ商品の表示 | `cataloginventory/options/show_out_of_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | X 左しきい値のみ | `cataloginventory/options/stock_threshold_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 店頭で商品の在庫状況を表示する | `cataloginventory/options/display_product_stock_status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| カタログと同期 | `cataloginventory/options/synchronize_with_catalog` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| カタログと同期 | `cataloginventory/options/synchronize_with_catalog` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | 在庫の管理 | `cataloginventory/item_options/manage_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | バックオーダー | `cataloginventory/item_options/backorders` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 繰延在庫更新を使用 | `cataloginventory/item_options/use_deferred_stock_update` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 繰延在庫更新を使用 | `cataloginventory/item_options/use_deferred_stock_update` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | 買い物かごで許可される最大数量 | `cataloginventory/item_options/max_sale_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 在庫切れのしきい値 | `cataloginventory/item_options/min_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 買い物かごで許可される最小数量 | `cataloginventory/item_options/min_sale_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -141,8 +141,8 @@ ht-degree: 0%
 | 数量増分を有効にする | `cataloginventory/item_options/enable_qty_increments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 数量の増分 | `cataloginventory/item_options/qty_increments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | クレジット・メモ品目を自動的に在庫に戻す | `cataloginventory/item_options/auto_return` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 非同期で実行 | `cataloginventory/bulk_operations/async` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 非同期バッチサイズ | `cataloginventory/bulk_operations/batch_size` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| 非同期で実行 | `cataloginventory/bulk_operations/async` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 非同期バッチサイズ | `cataloginventory/bulk_operations/batch_size` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 | プロバイダ | `cataloginventory/source_selection_distance_based/provider` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 計算モード | `cataloginventory/source_selection_distance_based_google/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 値 | `cataloginventory/source_selection_distance_based_google/value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -151,16 +151,16 @@ ht-degree: 0%
 
 ## ビジュアルマーチャンダイザーパス
 
-[!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+[!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
 
 これらの設定値は、管理者の **ストア**/設定/**設定**/**カタログ**/**ビジュアルマーチャンダイザー** で使用できます。
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|
-| カテゴリルールに表示される属性 | `visualmerchandiser/options/smart_attributes` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 最小在庫しきい値 | `visualmerchandiser/options/minimum_stock_threshold` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| カラー属性コード | `visualmerchandiser/options/color_attribute_code` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
-| 色の順序 | `visualmerchandiser/options/color_order` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
+| カテゴリルールに表示される属性 | `visualmerchandiser/options/smart_attributes` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 最小在庫しきい値 | `visualmerchandiser/options/minimum_stock_threshold` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| カラー属性コード | `visualmerchandiser/options/color_attribute_code` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
+| 色の順序 | `visualmerchandiser/options/color_order` | ![Commerceのみ &#x200B;](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 

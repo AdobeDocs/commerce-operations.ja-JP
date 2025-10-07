@@ -14,7 +14,7 @@ ht-degree: 0%
 
 パフォーマンスを向上させるために、Commerceでは、画像、JavaScript、CSS ファイルなどの静的リソースの `Expires` ヘッダーを設定します。
 静的リソースに `Expires` ヘッダーを設定すると、その URL のリソースをキャッシュし、有効期限が切れるまでキャッシュされたバージョンを提供するようにブラウザーに指示されます。
-これは、静的リソースをキャッシュする場合に一般的な [ ベストプラクティス ](https://developer.yahoo.com/performance/rules.html#expires=) です。
+これは、静的リソースをキャッシュする場合に一般的な [&#x200B; ベストプラクティス &#x200B;](https://developer.yahoo.com/performance/rules.html#expires=) です。
 
 ブラウザーが静的リソースをキャッシュし、そのリソースがサーバー上で変更された場合、新しいバージョンをダウンロードできるように、ブラウザーキャッシュをクリアする必要があります。
 Web サイト管理者の場合はブラウザーキャッシュの手動によるクリアで機能しますが、静的リソースの新しいバージョンをダウンロードする際に、ユーザーに対して行う適切なリクエストではありません。
@@ -37,10 +37,10 @@ Commerceではデフォルトでこの機能が有効になっています。Ado
 
 静的コンテンツ署名の設定は、[**[!UICONTROL Stores]**/設定/設定/**[!UICONTROL Advanced]**/**[!UICONTROL Developer]**/**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures) にあります。
 
-- **オンプレミスのみ**：この設定は、サイトが **実稼動モード** で [ 使用できない ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode) 場合に使用できます。
+- **オンプレミスのみ**：この設定は、サイトが **実稼動モード** で [&#x200B; 使用できない &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode) 場合に使用できます。
 - **Cloud**：この設定は、実稼動モードが厳密に適用されるので、非表示です。そのため、次に示すように、コマンドラインを使用する必要があります。
 
-![ 静的ファイル設定 ](../../assets/configuration/static-files-settings.png)
+![&#x200B; 静的ファイル設定 &#x200B;](../../assets/configuration/static-files-settings.png)
 
 ステータスを次のように決定します。
 

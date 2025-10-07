@@ -72,7 +72,7 @@ bin/magento app:config:dump
 bin/magento cache:clean config
 ```
 
-[ 設定の書き出し ](../cli/export-configuration.md) を参照してください。
+[&#x200B; 設定の書き出し &#x200B;](../cli/export-configuration.md) を参照してください。
 
 ## シンプルなデプロイメントでのモジュール出力の無効化
 

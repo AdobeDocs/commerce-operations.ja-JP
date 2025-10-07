@@ -16,11 +16,11 @@ ht-degree: 0%
 
 次の図は、Nginx が画像を取得、サイズ変更、およびキャッシュに格納する方法を示しています。 サイズ変更は、URL に含まれているパラメーター（高さや幅など）によって決まります。
 
-![ サーバーブロック設定を示す、リモートストレージの画像サイズ変更のための Nginx 設定 ](../../assets/configuration/remote-storage-nginx-image-resize.png)
+![&#x200B; サーバーブロック設定を示す、リモートストレージの画像サイズ変更のための Nginx 設定 &#x200B;](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 >[!TIP]
 >
->クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、[ クラウドインフラストラクチャ上のCommerceのリモートストレージの設定 ](cloud-support.md) を参照してください。
+>クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、[&#x200B; クラウドインフラストラクチャ上のCommerceのリモートストレージの設定 &#x200B;](cloud-support.md) を参照してください。
 
 ## Adobe Commerceでの URL フォーマットの設定
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 1. 「**[!UICONTROL Save Config]**」をクリックします。
 
-1. [Nginx 設定 ](#configure-nginx) を続行します。
+1. [Nginx 設定 &#x200B;](#configure-nginx) を続行します。
 
 ## Nginx の設定
 

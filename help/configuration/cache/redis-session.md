@@ -14,7 +14,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->続行する前に [Redis をインストール ](config-redis.md#install-redis) してください。
+>続行する前に [Redis をインストール &#x200B;](config-redis.md#install-redis) してください。
 
 
 Commerceには、Redis セッションストレージを設定するためのコマンドラインオプションが追加されました。 以前のリリースでは、`<Commerce install dir>app/etc/env.php` ファイルを編集していました。 コマンドラインで検証を行う場合や、このコマンドラインを使用して設定することをお勧めしますが、`env.php` ファイルは編集できます。
@@ -37,9 +37,9 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-redis-port | ポート | Redis サーバーリッスンポート。 | 6379 |
 | session-save-redis-password | password | Redis サーバーが認証を要求する場合、パスワードを指定します。 | 空 |
 | session-save-redis-timeout | timeout | 接続タイムアウト （秒）。 | 2.5 |
-| session-save-redis-persistent-id | persistent_identifier | 永続接続を有効にする一意の文字列（例：sess-db0）。<br>[phpredis および php-fpm の既知の問題 ](https://github.com/phpredis/phpredis/issues/70)。 |
+| session-save-redis-persistent-id | persistent_identifier | 永続接続を有効にする一意の文字列（例：sess-db0）。<br>[phpredis および php-fpm の既知の問題 &#x200B;](https://github.com/phpredis/phpredis/issues/70)。 |
 | session-save-redis-db | データベース | 一意の Redis データベース番号。データ損失から保護することをお勧めします。<br><br>**重要**：複数のタイプのキャッシュに Redis を使用する場合は、データベース番号が異なっている必要があります。 デフォルトのキャッシュ データベース番号を 0、ページ キャッシュ データベース番号を 1、セッション ストレージ データベース番号を 2 に割り当てることをお勧めします。 | 0 |
-| session-save-redis-compression-threshold | compression_threshold | 0 に設定すると、圧縮が無効になります（`suhosin.session.encrypt = On` の場合に推奨）。<br>[64 KB を超える文字列の既知の問題 ](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18)。 | 2048 |
+| session-save-redis-compression-threshold | compression_threshold | 0 に設定すると、圧縮が無効になります（`suhosin.session.encrypt = On` の場合に推奨）。<br>[64 KB を超える文字列の既知の問題 &#x200B;](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18)。 | 2048 |
 | session-save-redis-compression-lib | compression_library | オプション：gzip、lzf、lz4 または snappy。 | gzip |
 | session-save-redis-log-level | log_level | 最小の詳細から最大の詳細の順にリストされた次のいずれかに設定します：<ul><li>0 （緊急：最も重大なエラーのみ）<li>1 （アラート：直ちにアクションが必要）<li>2 （重大：アプリケーションコンポーネントを使用できない）<li>3 （エラー：実行時エラー。重要ではありませんが監視する必要があります）<li>4 （警告：追加情報、推奨）<li>5 （注意：正常だが重大な状態）<li>6 （情報：情報メッセージ）<li>7 （デバッグ：開発またはテスト用の最も多い情報のみ）</ul> | 1 |
 | session-save-redis-max-concurrency | max_concurrency | 1 つのセッションでロックを待機できるプロセスの最大数。 大規模な実稼動クラスターの場合は、これを PHP プロセス数の 10% 以上に設定します。 | 6 |
