@@ -1,11 +1,11 @@
 ---
 title: リリーススケジュール
-description: アドビが Adobe Commerce の新機能リリースの発表を予定しているタイミングを学びます。
+description: AdobeがAdobe Commerceの新機能とリリースを発表する予定の時期について説明します。 計画性を高めるために、今後のパッチスケジュールと機能配信タイムラインを確認します。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: b908b468f0b8abe8bb7904b9c4a626201dc919bc
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 2%
+source-wordcount: '493'
+ht-degree: 0%
 
 ---
 
@@ -18,11 +18,11 @@ Adobeは、製品のアップグレードをシンプルで予測可能にする
 
 新機能、機能アップデート、クラウドインフラストラクチャー、拡張機能アップデートは、パッチリリースとは独立して提供され、外部のモジュール、拡張機能、ツールまたは web サービスを通じて利用できます。 例を次に示します。
 
-- ![ 機能アイコン ](../assets/icons/feature.svg) [**機能と機能性**](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/release-information/release-notes-all) - パッチリリースとは別に提供される新機能。 例えば、[B2B](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/release-notes)、カタログサービス、データ接続、ライブ検索、製品レコメンデーションなどです。
+- ![ 機能アイコン ](../assets/icons/feature.svg)[**機能と機能性**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all) - パッチリリースとは別に提供される新機能。 例えば、[B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)、カタログサービス、データ接続、ライブ検索、製品レコメンデーションなどです。
 
-- ![ インフラストラクチャアイコン ](../assets/icons/servers.svg) [**クラウドインフラストラクチャ**](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) - クラウドインフラストラクチャ上のAdobe Commerceおよびクラウドプラットフォーム上でAdobe Commerceのインストールとアップグレードをデプロイと管理するCommerce パッケージ用 Cloud Tools スイートの新機能と機能強化について説明します。
+- ![ インフラストラクチャアイコン ](../assets/icons/servers.svg)[**クラウドインフラストラクチャ**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) - クラウドインフラストラクチャ上のAdobe Commerceおよびクラウドプラットフォーム上でAdobe Commerceのインストールとアップグレードをデプロイと管理するCommerce パッケージ用 Cloud Tools スイートの新機能と機能強化について説明します。
 
-- ![ 拡張アイコン ](../assets/icons/brackets.svg) [**拡張機能**](https://developer.adobe.com/commerce/extensibility/) - パッチリリースとは別に提供される、プロセス外の拡張機能のための新しい開発者ツールおよびサービス。 例えば、統合スターターキット、管理 UI SDK、Commerce用Adobe I/O Events、API メッシュなどです。
+- ![ 拡張アイコン ](../assets/icons/brackets.svg)[**拡張機能**](https://developer.adobe.com/commerce/extensibility/) - パッチリリースとは別に提供される、プロセス外の拡張機能のための新しい開発者ツールおよびサービス。 例えば、統合スターターキット、管理 UI SDK、Commerce用Adobe I/O Events、API メッシュなどです。
 
 スケジュールされている機能、クラウドインフラストラクチャおよび拡張リリースの日付は次のリストのとおりです（日付は変更される場合があります）。
 

@@ -1,11 +1,11 @@
 ---
 title: セッションストレージに Redis を使用
-description: セッションストレージ用に Redis を設定する方法を説明します。
+description: Adobe Commerceのセッションストレージに Redis を設定する方法を説明します。 コマンドラインのセットアップ、設定オプション、パフォーマンスの最適化手法について説明します。
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: 3886bf261f8f9d2594602850bef9c54db03fb269
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '724'
 ht-degree: 1%
 
 ---

@@ -3,9 +3,9 @@ title: 「[!UICONTROL Redis]」タブ
 description: '[!UICONTROL Redis] の「 [!DNL Observation for Adobe Commerce]」タブについて説明します。'
 exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 feature: Configuration, Observability
-source-git-commit: 06f015139683f319f11317f8d7f0029cbd2548e3
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Redis node detail]
 
-![Redis ノードの詳細 ](../../assets/tools/observation-for-adobe-commerce/redis-tab-2.jpg)
+![Redis サーバーパフォーマンス指標とノード設定の詳細 ](../../assets/tools/observation-for-adobe-commerce/redis-tab-2.jpg)
 
 **[!UICONTROL Redis node detail]** のフレームは、環境、[!DNL Redis] の役割、ソフトウェアのバージョン、ノードサイズを示します。
 

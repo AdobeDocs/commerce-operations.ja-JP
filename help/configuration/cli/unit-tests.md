@@ -1,10 +1,10 @@
 ---
 title: 単体テストの実行
-description: Adobe Commerce コードベースで定義された単体テストの実行
+description: Adobe Commerce コードベースで定義された単体テストの実行方法を説明します。 テストコマンド、実行オプションおよび結果レポートについて説明します。
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---

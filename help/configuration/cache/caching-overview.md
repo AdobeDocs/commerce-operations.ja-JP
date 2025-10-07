@@ -1,11 +1,11 @@
 ---
 title: キャッシュの設定
-description: キャッシュの概要と、Adobe Commerce アプリケーションのキャッシュメカニズムを設定する方法について説明します。
+description: Adobe Commerce アプリケーションのキャッシュメカニズムと設定オプションについて説明します。 デフォルトのファイルシステムキャッシュに代わる方法について説明します。
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: オンプレミスでのクイックスタートのインストール
-description: 所有しているインフラストラクチャにAdobe Commerceをインストールするには、次の手順に従います。
+description: Composer を使用して独自のインフラストラクチャにAdobe Commerceをインストールする方法を説明します。 クイックスタート手順と設定要件について説明します。
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 60db3da9154e76032c88d687b6b6e22d7b81f9ae
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Adobe Commerce メタパッケージを入手するには：
 
    >[!NOTE]
    >
-   > Commerce認証キーで設定された Composer `[auth.json](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` ファイルまたは環境変数を使用する場合、認証キーを入力するように求められません。
+   > Commerce認証キーで設定された Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` ファイルまたは環境変数を使用する場合、認証キーを入力するように求められません。
 
    `Could not find package...` や `...no matching package found` などのエラーが発生した場合は、コマンドに入力ミスがないことを確認してください。 それでもエラーが発生する場合は、Adobe Commerceのダウンロードが許可されていない可能性があります。 [Adobe Commerce サポート ](https://support.magento.com/hc/en-us) にお問い合わせください。
 

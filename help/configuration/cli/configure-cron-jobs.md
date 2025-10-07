@@ -1,10 +1,10 @@
 ---
 title: Cron ジョブの設定と実行
-description: Cron ジョブの管理方法を説明します。
+description: Adobe Commerceで cron ジョブを設定および管理する方法を説明します。 スケジュール、設定、トラブルシューティングの手法について説明します。
 exl-id: 8ba2b2f9-5200-4e96-9799-1b00d7d23ce1
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---

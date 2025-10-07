@@ -1,11 +1,11 @@
 ---
 title: セッションストレージに Valkey を使用
-description: セッションストレージ用の Valkey を設定する方法を説明します。
+description: Adobe Commerceのセッションストレージに対して Valkey を設定する方法を説明します。 セットアップ手順、設定オプション、パフォーマンスの最適化手法について説明します。
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: dea0ad57a8c4525be9bc442708bdd2495f28d72d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '807'
 ht-degree: 1%
 
 ---

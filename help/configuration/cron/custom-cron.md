@@ -1,10 +1,10 @@
 ---
 title: Cron ジョブ
-description: cron グループと、カスタム cron ジョブの作成について説明します。
+description: cron グループと、Adobe Commerceでカスタム cron ジョブを作成する方法を説明します。 スケジュールされたタスクの設定と cron グループ設定の確認
 exl-id: a9d83af7-9979-4653-adc9-30ffeb13a5ce
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -21,5 +21,5 @@ Commerce アプリケーションは次の cron グループを提供します�
 - `index` インデクサー [ を更新する ](../cli/manage-indexers.md)
 - メッセージキュー `consumers` コンシューマー [ を実行する ](../cli/start-message-queues.md)
 - これらのトピックは、Adobe Commerceでのみ使用できます
-   - `staging` ステージング関連 [ タスクを実行する ](https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/staging/content-staging)
+   - `staging` ステージング関連 [ タスクを実行する ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging)
    - ターゲットと買い物かごルールのタスクを実行する `catalog_event`

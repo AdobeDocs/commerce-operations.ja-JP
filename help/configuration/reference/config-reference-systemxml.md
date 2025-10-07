@@ -1,12 +1,12 @@
 ---
 title: system.xml リファレンス
-description: システム XML ファイルでCommerce アプリケーション設定を管理する方法を説明します。
+description: system.xml ファイルでAdobe Commerce アプリケーション設定を管理する方法を説明します。 システム設定管理、XML 構造、実装技術について説明します。
 feature: Configuration, System
 badge: label="執筆：David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2717'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ ht-degree: 0%
 | `select` | 通常のドロップダウン。カスタム `source_model` が必要になる場合があります。 `Yes/No` 選択にも使用されます。 例については、`Magento\Search\Model\Adminhtml\System\Config\Source\Engine` を参照してください。 |
 | `multiselect` | `select` に似ていますが、複数のオプションが有効です。 |
 | `button` | 即時イベントをトリガーにするボタン。 ボタンのテキストとアクションを定義するには、カスタムフロントエンドモデルが必要です。 例については、`Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` を参照してください。 |
-| `obscure` | 値が暗号化され、`**&#x200B;**` として表示されるテキストフィールド。 ブラウザーで「要素を検査」を使用してタイプを変更しても、値は表示されません。 |
+| `obscure` | 値が暗号化され、`****` として表示されるテキストフィールド。 ブラウザーで「要素を検査」を使用してタイプを変更しても、値は表示されません。 |
 | `password` | `obscure` と同様に、非表示の値は暗号化されず、ブラウザーで「要素を検査」を使用してタイプを強制的に変更すると、値が表示される点が異なります。 |
 | `file` | ファイルをアップロードして処理できるようにします。 |
 | `label` | 編集可能なフィールドの代わりにラベルを表示します。 フィールドが特定の範囲でのみ編集できる場合に、このタイプを使用します（例：ストア表示レベルのみ）。 |

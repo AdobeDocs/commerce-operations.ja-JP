@@ -1,11 +1,11 @@
 ---
 title: 一般設定パスのリファレンス
-description: 一般的な設定値と高度な設定値のリストを参照してください。
+description: Adobe Commerceの一般設定パスと高度な設定パスおよび値について説明します。 システム、セキュリティ、管理構成のオプションを確認します。
 feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ ht-degree: 0%
 
 ### New Relic レポートのパス
 
-これらの設定値は、管理者の **ストア**/設定/**設定**/**一般**/6&rbrace;New Relic レポート **で利用できます。**
+これらの設定値は、管理者の **ストア**/設定/**設定**/**一般**/6}New Relic レポート **で利用できます。**
 
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|

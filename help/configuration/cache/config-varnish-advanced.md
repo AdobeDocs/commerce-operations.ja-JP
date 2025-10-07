@@ -1,11 +1,11 @@
 ---
 title: 高度なワニス設定
-description: ヘルスチェック、グレース、セントモードなどの高度なワニス機能を設定します。
+description: ヘルスチェック、グレース、saint モードなど、Adobe Commerceの高度なワニス機能を設定する方法について説明します。 VCL の最適化テクニックを紹介します。
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---

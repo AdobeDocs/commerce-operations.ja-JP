@@ -1,10 +1,10 @@
 ---
 title: 構成設定のエクスポート
-description: Adobe Commerce設定を設定ファイル（設定ダンプとも呼ばれます）に書き出します。
+description: 設定ダンプを使用して、Adobe Commerce設定をファイルに書き出す方法を説明します。 パイプラインのデプロイメントと設定管理について説明します。
 exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---

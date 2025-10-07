@@ -1,10 +1,10 @@
 ---
 title: 依存関係レポート
-description: モジュール、循環、フレームワークの依存関係の合計を示すレポートを作成します。
+description: Adobe Commerceでモジュール、循環、フレームワークの依存関係を示す依存関係レポートを作成する方法を説明します。 分析およびレポートツールについて説明します。
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: モジュール設定ファイル
-description: 設定タイプを使用してモジュールをカスタマイズする方法を説明します。
+description: Adobe Commerceの設定タイプを使用してモジュールをカスタマイズする方法を説明します。 設定ファイルの管理とモジュールのカスタマイズのベストプラクティスについて説明します。
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 80d7a7f2592e547ef70f2fac63c25be0cce9365d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---

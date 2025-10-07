@@ -1,10 +1,10 @@
 ---
 title: 設定値を設定
-description: 管理者で設定値を設定し、ロックされている値を変更する方法について説明します。
+description: Adobe Commerceで設定値を設定し、ロックされている管理者の値を変更する方法について説明します。 高度な設定コマンドと手法を確認します。
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -221,7 +221,7 @@ bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 
 >[!INFO]
 >
->`bin/magento config:show` コマンドは、[ 暗号化された値 ](../reference/config-reference-sens.md) の値を一連のアスタリスク（`**&#x200B;**&#x200B;**`）として表示します。
+>`bin/magento config:show` コマンドは、[ 暗号化された値 ](../reference/config-reference-sens.md) の値を一連のアスタリスク（`******`）として表示します。
 
 ### 例
 

@@ -1,11 +1,11 @@
 ---
 title: 最終検証
-description: Adobe Commerce アプリケーションで動作するように Varnish 設定が適切に設定されていることを確認します。
+description: Adobe Commerceを使用して Varnish 設定の最終検証を実行する方法を説明します。 テスト手順とトラブルシューティング手法について説明します。
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -83,4 +83,4 @@ X-Magento-Cache-Debug: MISS
 
 >[!TIP]
 >
->503 （バックエンド取得に失敗しました）エラーが発生した場合は、[Adobe Commerce ヘルプセンター ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=ja)503 （サービスを利用できない）エラーのトラブルシューティング _を参照してください_。
+>503 （バックエンド取得に失敗しました）エラーが発生した場合は、[Adobe Commerce ヘルプセンター ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html)503 （サービスを利用できない）エラーのトラブルシューティング _を参照してください_。

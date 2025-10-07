@@ -1,10 +1,10 @@
 ---
 title: 静的表示ファイルのデプロイ
-description: 実稼動モード中に静的ファイルをCommerce ファイルシステムに書き込む方法を説明します。
+description: 実稼働モードで静的ビューファイルをAdobe Commerce ファイルシステムにデプロイする方法を説明します。 デプロイメントコマンドと最適化手法について説明します。
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1133'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: ワニスをインストール
-description: ワニスのインストールに関するアドバイスを参照してください。
+description: Adobe Commerceのキャッシュに対する Varnish のインストール要件について説明します。 インストールリソースとセットアップガイダンスについて説明します。
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,4 @@ ht-degree: 0%
 varnishd -V
 ```
 
-続行する前に、インストールされているバージョンの Varnish[&#128279;](../../installation/system-requirements.md)Adobe Commerceがサポートしていることを確認してください。 サポートされていないバージョンを実行している場合は、サポートされているバージョンにアップグレードする必要があります。 詳細については、Varnish のインストール ドキュメントを参照してください。
+続行する前に、インストールされているバージョンの Varnish[](../../installation/system-requirements.md)Adobe Commerceがサポートしていることを確認してください。 サポートされていないバージョンを実行している場合は、サポートされているバージョンにアップグレードする必要があります。 詳細については、Varnish のインストール ドキュメントを参照してください。

@@ -3,9 +3,9 @@ title: リモートストレージの画像のサイズ変更の設定
 description: サーバー側の画像のサイズ変更を設定して、ディスクリソースを最適化します。
 feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 次の図は、Nginx が画像を取得、サイズ変更、およびキャッシュに格納する方法を示しています。 サイズ変更は、URL に含まれているパラメーター（高さや幅など）によって決まります。
 
-![ 画像のサイズ変更 ](../../assets/configuration/remote-storage-nginx-image-resize.png)
+![ サーバーブロック設定を示す、リモートストレージの画像サイズ変更のための Nginx 設定 ](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 >[!TIP]
 >

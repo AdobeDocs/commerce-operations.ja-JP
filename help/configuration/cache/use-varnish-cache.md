@@ -1,11 +1,11 @@
 ---
 title: Varnish によるキャッシュのクリア
-description: キャッシュクリアが Varnish でどのように機能するか、およびAdobe Commerce アプリケーションの web キャッシュアクセラレーターとして使用する方法について説明します。
+description: キャッシュのクリアがAdobe Commerceの Varnish web-caching アクセラレーターでどのように機能するかを説明します。 キャッシュの管理と最適化の手法について説明します。
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Commerceと連携するようにワニスをインストールして設定した
 
 ## Commerceでワニスをパージするように設定する
 
-Commerceは、[`magento setup:config:set`](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) コマンドを使用して Varnish ホストを設定した後に、Varnish ホストをパージします。
+Commerceは、[`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) コマンドを使用して Varnish ホストを設定した後に、Varnish ホストをパージします。
 
 オプションのパラメーター `--http-cache-hosts` パラメーターを使用して、Varnish ホストとリッスンポートのコンマ区切りリストを指定できます。 1 つまたは複数の Varnish ホストをすべて設定します。 （ホストをスペース文字で区切らないでください）。
 

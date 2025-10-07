@@ -1,11 +1,11 @@
 ---
 title: ワニスの設定と使用
-description: Varnish がファイルを保存し、HTTP トラフィックを改善する方法を理解します。
+description: Adobe Commerce用のワニッシュキャッシュの設定方法と使用方法について説明します。 HTTP 高速化、ファイルストレージ、パフォーマンス最適化の手法について説明します。
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: Valkey の設定
-description: Valkey の機能の概要を説明し、Valkey の設定を開始します。
+description: Adobe Commerceのパフォーマンス最適化のために Valkey キャッシュを設定する方法を説明します。 機能、設定手順、設定のベストプラクティスについて説明します。
 feature: Configuration, Cache
 exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
-source-git-commit: b2cf71bfda3e5db8e27eb28d764cf99216454e33
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---

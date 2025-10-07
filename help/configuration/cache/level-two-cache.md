@@ -1,11 +1,11 @@
 ---
 title: L2 キャッシュ構成
-description: L2 キャッシュの設定方法の説明。
+description: Adobe Commerceのパフォーマンス最適化のために L2 キャッシュを設定する方法を説明します。 設定手順とネットワークトラフィック削減テクニックについて説明します。
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-source-git-commit: ba3c656566af47f16f58f476d7bc9f4781bb0234
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Commerceは、ハッシュ化されたデータバージョンを Redis に保�
 
 >[!INFO]
 >
->クラウドインフラストラクチャー上のAdobe Commerceの場合、L2 キャッシュ設定に [ 変数をデプロイ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_backend) を使用できます。
+>クラウドインフラストラクチャー上のAdobe Commerceの場合、L2 キャッシュ設定に [ 変数をデプロイ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) を使用できます。
 
 ## 設定例
 

@@ -1,11 +1,11 @@
 ---
 title: デプロイメントフロー
-description: 実稼動環境にAdobe Commerceをデプロイするために必要な手順について説明します。
+description: Adobe Commerce実稼動環境のデプロイメントフロープロセスについて説明します。 最大限のパフォーマンスと信頼性を実現する手順を確認します。
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---

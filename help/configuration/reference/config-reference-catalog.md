@@ -1,11 +1,11 @@
 ---
 title: カタログ設定パスのリファレンス
-description: カタログ設定値のリストを参照します。
+description: カタログ設定のパスと値については、Adobe Commerce管理設定を参照してください。 製品、カテゴリ、カタログ管理の設定オプションについて説明します。
 feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
-source-git-commit: 47bda51cdcab964c37d9f652d467d69d795d8641
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 | 名前 | 設定パス | Commerceのみ？ |
 |--------------|--------------|--------------|
 | SKU のマスク | `catalog/fields_masks/sku` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| メタタイトルのマスク | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| メタキーワードのマスク | `catalog/fields_masks/meta_keyword` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| メタ説明のマスク | `catalog/fields_masks/meta_description` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Meta タイトルのマスク | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Meta キーワードのマスク | `catalog/fields_masks/meta_keyword` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Metaの説明のマスク | `catalog/fields_masks/meta_description` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | リストモード | `catalog/frontend/list_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | グリッド許容値の 1 ページあたりの製品数 | `catalog/frontend/grid_per_page_values` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | グリッドのデフォルト値の 1 ページあたりの製品数 | `catalog/frontend/grid_per_page` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -80,8 +80,8 @@ ht-degree: 0%
 | 製品 URL にカテゴリパスを使用 | `catalog/seo/product_use_categories` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | URL キーが変更された場合に URL の永続的なリダイレクトを作成 | `catalog/seo/save_rewrites_history` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ページタイトルセパレーター | `catalog/seo/title_separator` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| カテゴリに正規リンクメタタグを使用 | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 製品に正規リンクメタタグを使用 | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| カテゴリに正規リンクのMeta タグを使用 | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 商品に正規リンクのMeta タグを使用 | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Enable （有効） | `catalog/magento_catalogpermissions/enabled` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
 | 閲覧を許可カテゴリ | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
 | 顧客グループ | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![Commerceのみ ](/help/assets/configuration/cloud-ee.png) |
@@ -151,7 +151,7 @@ ht-degree: 0%
 
 ## ビジュアルマーチャンダイザーパス
 
-[!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+[!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
 
 これらの設定値は、管理者の **ストア**/設定/**設定**/**カタログ**/**ビジュアルマーチャンダイザー** で使用できます。
 

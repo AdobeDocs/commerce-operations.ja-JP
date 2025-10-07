@@ -1,12 +1,12 @@
 ---
 title: カスタムログファイルへの書き込み
-description: カスタムログファイルの設定方法について説明します。
+description: Adobe Commerceでカスタムログファイルを作成および設定する方法について説明します。 ロガーハンドラーとカスタムログの実装について説明します。
 feature: Configuration, Logs
 badge: label="寄稿：Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
-source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 0%
    </virtualType>
    ```
 
-1. `MyCustomLogger` オブジェクトに [&#128279;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 仮想型 `Magento\Payment\Model\Method\Logger` を挿入します。
+1. `MyCustomLogger` オブジェクトに [ ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 仮想型 `Magento\Payment\Model\Method\Logger` を挿入します。
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">

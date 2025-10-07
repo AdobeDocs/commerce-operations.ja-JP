@@ -1,10 +1,10 @@
 ---
 title: env.php リファレンス
-description: env.php ファイルの値のリストを参照してください。
+description: env.php ファイルの設定値と、Adobe Commerceの節について説明します。 環境設定と設定オプションについて説明します。
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 26fac37405ad635f297b65415517451d5149e50f
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Commerceでは、パスワードやその他の機密データを保護するた
 ]
 ```
 
-[ 暗号化キー ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/encryption-key) について詳しくは、_Commerce ユーザーガイド_ を参照してください。
+[ 暗号化キー ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) について詳しくは、_Commerce ユーザーガイド_ を参照してください。
 
 ## db
 
@@ -203,7 +203,7 @@ Web サーバーが `/pub` ディレクトリからCommerce アプリケーシ�
 ]
 ```
 
-詳細情報 [ ダウンロード可能なドメイン ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
+詳細情報 [ ダウンロード可能なドメイン ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
 
 ## install
 

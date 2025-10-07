@@ -1,10 +1,10 @@
 ---
 title: カスタム cron ジョブと cron グループのリファレンス
-description: cron グループを使用して cron をカスタマイズする方法を説明します。
+description: Adobe Commerceで cron グループと crontab を使用して cron をカスタマイズする方法を説明します。 カスタムモジュールの設定とスケジュールされたタスクの設定について説明します。
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---

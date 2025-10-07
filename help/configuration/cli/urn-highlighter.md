@@ -1,10 +1,10 @@
 ---
 title: URN ハイライター
-description: IDE で URN の強調表示を設定する方法を説明します。
+description: Adobe Commerce開発用の IDE で URN のハイライト表示を設定する方法を説明します。 XSD スキーマの設定と開発の最適化について説明します。
 exl-id: 6389ab58-af70-4b33-800e-be3191c5a4cc
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---

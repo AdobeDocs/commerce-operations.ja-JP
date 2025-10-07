@@ -1,11 +1,11 @@
 ---
 title: パフォーマンステスト用のデータの生成
-description: パフォーマンステストに使用する大量のデータを生成する方法を説明します。
+description: Adobe Commerceのパフォーマンステスト用に大量のデータを生成する方法を説明します。 データ生成プロファイルとテスト戦略について説明します。
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '768'
 ht-degree: 9%
 
 ---

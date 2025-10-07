@@ -1,11 +1,11 @@
 ---
 title: 設定のベストプラクティス
-description: これらのベストプラクティスを使用して、Adobe Commerce デプロイメントの応答時間を最適化します。
+description: Adobe Commerceのパフォーマンスを最適化するための設定のベストプラクティスについて説明します。 応答時間とスループットを向上させるための設定とツールについて説明します。
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1424'
 ht-degree: 0%
 
 ---
@@ -32,15 +32,15 @@ Commerceには、応答時間を改善し、スループットを向上させる
 
 ## 非同期メール通知
 
-「非同期メール通知」設定を有効にすると、チェックアウトと注文処理のメール通知を処理するプロセスがバックグラウンドに移動します。 この機能を有効にするには、**[!UICONTROL Stores]/[!UICONTROL Settings]/[!UICONTROL Configuration]/[!UICONTROL Sales]/[!UICONTROL Sales Emails]/[!UICONTROL General Settings]/[!UICONTROL Asynchronous Sending]** に移動します。 詳しくは、『 [ 管理者ユーザーガイド ](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/sales/sales-emails) の _セールスメール_ を参照してください。
+「非同期メール通知」設定を有効にすると、チェックアウトと注文処理のメール通知を処理するプロセスがバックグラウンドに移動します。 この機能を有効にするには、**[!UICONTROL Stores]/[!UICONTROL Settings]/[!UICONTROL Configuration]/[!UICONTROL Sales]/[!UICONTROL Sales Emails]/[!UICONTROL General Settings]/[!UICONTROL Asynchronous Sending]** に移動します。 詳しくは、『 [ 管理者ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/sales-emails) の _セールスメール_ を参照してください。
 
 ## 非同期順序データ処理
 
-ストアフロントで集中的な販売が発生すると同時に、[!DNL Commerce] が集中的な注文処理を実行している場合があります。 データベースレベルでこれら 2 つのトラフィックパターンを区別するように [!DNL Commerce] を設定して、対応するテーブルの読み取り操作と書き込み操作の競合を回避できます。 順序データは非同期で保存およびインデックス作成できます。 注文は一時的なストレージに配置され、衝突することなくOrder Management グリッドに一括で移動されます。 このオプションは、**[!UICONTROL Stores]/[!UICONTROL Settings]/[!UICONTROL Configuration]/[!UICONTROL Advanced]/[!UICONTROL Developer]/[!UICONTROL Grid Settings]/[!UICONTROL Asynchronous indexing]** から有効にできます。 詳しくは、『 [ 管理者ユーザーガイド ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations#enable-scheduled-grid-updates-and-reindexing) の _スケジュールされたグリッドの更新_ を参照してください。
+ストアフロントで集中的な販売が発生すると同時に、[!DNL Commerce] が集中的な注文処理を実行している場合があります。 データベースレベルでこれら 2 つのトラフィックパターンを区別するように [!DNL Commerce] を設定して、対応するテーブルの読み取り操作と書き込み操作の競合を回避できます。 順序データは非同期で保存およびインデックス作成できます。 注文は一時的なストレージに配置され、衝突することなくOrder Management グリッドに一括で移動されます。 このオプションは、**[!UICONTROL Stores]/[!UICONTROL Settings]/[!UICONTROL Configuration]/[!UICONTROL Advanced]/[!UICONTROL Developer]/[!UICONTROL Grid Settings]/[!UICONTROL Asynchronous indexing]** から有効にできます。 詳しくは、『 [ 管理者ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations#enable-scheduled-grid-updates-and-reindexing) の _スケジュールされたグリッドの更新_ を参照してください。
 
 >[!WARNING]
 >
->「**[!UICONTROL Developer]**」タブとオプションは、[ 開発者モード ](../configuration/cli/set-mode.md) でのみ使用できます。 [ クラウドインフラストラクチャー上のAdobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) は `Developer` モードをサポートしていません。
+>「**[!UICONTROL Developer]**」タブとオプションは、[ 開発者モード ](../configuration/cli/set-mode.md) でのみ使用できます。 [ クラウドインフラストラクチャー上のAdobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) は `Developer` モードをサポートしていません。
 
 ## 非同期設定の保存
 
@@ -69,7 +69,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## 延期された在庫更新
 
-大量の売上高が発生する場 [!DNL Commerce]、注文に関連する在庫の更新を延期できます。 これにより、操作の数が最小限に抑えられ、注文配置プロセスが高速化されます。 ただし、このオプションはリスクが高く、店舗でバックオーダーが有効になっている場合にのみ使用できます。これは、このオプションによって在庫数がマイナスになる可能性があるためです。 このオプションにより、店舗のチェックアウトフローのパフォーマンスが大幅に向上し、必要に応じて簡単に在庫を補充できます。 サイトで延期された在庫更新を有効化するには、**[!UICONTROL Stores]/[!UICONTROL Settings]/[!UICONTROL Configuration]/[!UICONTROL Catalog]/[!UICONTROL Inventory]/[!UICONTROL Product Stock Options]/[!UICONTROL Use Deferred Stock Update]** に移動します。 詳しくは、&lbrace;2[Adobe Commerce ユーザーガイド ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud) インベントリの管理 _を参照してください。_
+大量の売上高が発生する場 [!DNL Commerce]、注文に関連する在庫の更新を延期できます。 これにより、操作の数が最小限に抑えられ、注文配置プロセスが高速化されます。 ただし、このオプションはリスクが高く、店舗でバックオーダーが有効になっている場合にのみ使用できます。これは、このオプションによって在庫数がマイナスになる可能性があるためです。 このオプションにより、店舗のチェックアウトフローのパフォーマンスが大幅に向上し、必要に応じて簡単に在庫を補充できます。 サイトで延期された在庫更新を有効化するには、**[!UICONTROL Stores]/[!UICONTROL Settings]/[!UICONTROL Configuration]/[!UICONTROL Catalog]/[!UICONTROL Inventory]/[!UICONTROL Product Stock Options]/[!UICONTROL Use Deferred Stock Update]** に移動します。 詳しくは、{2[Adobe Commerce ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud) インベントリの管理 _を参照してください。_
 
 >[!INFO]
 >
@@ -77,7 +77,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 >[!INFO]
 >
->このオプションは、[Inventory management](high-throughput-order-processing.md#asynchronous-order-placement) と組み合わせて [ 非同期注文プレースメント ](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html?lang=ja) でも機能します。
+>このオプションは、[Inventory management](high-throughput-order-processing.md#asynchronous-order-placement) と組み合わせて [ 非同期注文プレースメント ](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html) でも機能します。
 
 ## クライアントサイドの最適化設定
 
@@ -95,7 +95,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 >[!INFO]
 >
->「**[!UICONTROL Developer]**」タブとオプションは、[ 開発者モード ](../configuration/cli/set-mode.md) でのみ使用できます。 [Adobe [!DNL Commerce]  クラウドインフラストラクチャー ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) は `Developer` モードをサポートしていません。
+>「**[!UICONTROL Developer]**」タブとオプションは、[ 開発者モード ](../configuration/cli/set-mode.md) でのみ使用できます。 [Adobe [!DNL Commerce]  クラウドインフラストラクチャー ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) は `Developer` モードをサポートしていません。
 
 「**[!UICONTROL Enable [!DNL JavaScript] Bundling]**」オプションを有効にすると、Commerceで、すべての JS リソースを、ストアフロントページに読み込まれる 1 つまたは一連のバンドルに結合できます。 JS をバンドルすると、サーバーへのリクエストが少なくなり、ページのパフォーマンスが向上します。 また、ブラウザーが最初の呼び出し時に JS リソースをキャッシュし、それ以降のすべてのブラウジングで再利用するのに役立ちます。 このオプションでも、すべての JS がテキストとして読み込まれるので、遅延評価が行われます。 ページで特定のアクションがトリガーされた後にのみ、コードの分析と評価が開始されます。 ただし、すべての JS コンテンツが最初の呼び出しで読み込まれるので、最初のページの読み込み時間が非常に重要なストアには、この設定はお勧めしません。
 
@@ -111,7 +111,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## 顧客セグメントの検証
 
-多数の [ 顧客セグメント ](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/segments/customer-segments) を持つマーチャントの場合、顧客ログインや買い物かごへの製品の追加など、顧客のアクションによってパフォーマンスが大幅に低下する可能性があります。
+多数の [ 顧客セグメント ](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments) を持つマーチャントの場合、顧客ログインや買い物かごへの製品の追加など、顧客のアクションによってパフォーマンスが大幅に低下する可能性があります。
 
 顧客処理トリガー顧客セグメントの検証プロセス。これにより、パフォーマンスが低下する可能性があります。 デフォルトでは、Adobe Commerceは各セグメントをリアルタイムで検証し、一致する顧客セグメントと一致しない顧客セグメントを定義します。
 

@@ -1,10 +1,10 @@
 ---
 title: レイアウトファイルの変換
-description: XML レイアウトファイルを変換します。
+description: Adobe Commerce コマンドラインツールを使用して XML レイアウトファイルを変換する方法を説明します。 XSLT スタイルシートの更新とファイル変換プロセスについて説明します。
 exl-id: 9852b735-9b4b-43ce-887f-5c37d398bbf7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---

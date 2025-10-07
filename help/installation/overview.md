@@ -1,11 +1,11 @@
 ---
 title: オンプレミス インストールの概要
-description: Adobe Commerce のオンプレミスデプロイメントに関するインストールプロセスについて説明します。
+description: Adobe Commerceのオンプレミスでのインストールプロセスについて説明します。 サーバー要件、設定手順、導入のベストプラクティスについて説明します。
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 9ad18dac76f171ad0f90330e1a1347baa056403b
+source-git-commit: 062267b8b06e41d89f704144e640fc1254952532
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 2%
+source-wordcount: '509'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Commerceのオンプレミスソフトウェアは、約 30～60 分でイ
 >
 >正常に続行するには、中程度の技術的知識とサーバーへのアクセス権が必要です。
 
-インストールすると、[ 顧客向けのストアフロント ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/storefront/storefront) と [ 管理パネル ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/admin/admin) の両方を備えた完全に機能するAdobe Commerce ストアが作成されます。 プロセスを開始する前に、データベース資格情報、ドメイン情報および認証キーの準備が完了している必要があります。
+インストールすると、[ 顧客向けのストアフロント ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) と [ 管理パネル ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin) の両方を備えた完全に機能するAdobe Commerce ストアが作成されます。 プロセスを開始する前に、データベース資格情報、ドメイン情報および認証キーの準備が完了している必要があります。
 
 ## 販売者の責任
 

@@ -1,10 +1,10 @@
 ---
 title: 設定を上書き
-description: 環境変数を使用して、設定を上書きする方法を説明します。
+description: 環境変数を使用してAdobe Commerce設定を上書きする方法を説明します。 設定管理とデプロイメントのベストプラクティスについて説明します。
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->[2&rbrace;Cloud Infrastructure 上のCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=ja) ガイドの &lbrace; 環境の設定 _のトピックを確認してください。_
+>[2}Cloud Infrastructure 上のCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) ガイドの { 環境の設定 _のトピックを確認してください。_
 
 ## 環境変数
 
@@ -62,8 +62,8 @@ ht-degree: 0%
   範囲の詳細については、次を参照してください。
 
    - [手順 1:web サイトまたはストア表示の範囲の値を見つける](#step-1-find-the-website-or-store-view-scope-value)
-   - [ 範囲 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) に関するCommerce ユーザーガイドのトピック
-   - [ 範囲のクイックリファレンス ](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/scope-change#scope-quick-reference)
+   - [ 範囲 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) に関するCommerce ユーザーガイドのトピック
+   - [ 範囲のクイックリファレンス ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` は、`/` の代わりに 2 つのアンダースコア文字が使用される設定パスです。 詳しくは、[ 手順 2：システム変数の設定 ](#step-2-set-global-website-or-store-view-variables) を参照してください。
 
@@ -253,6 +253,6 @@ $_ENV['CONFIG__DEFAULT__GENERAL__STORE_INFORMATION__MERCHANT_VAT_NUMBER'] = '123
 >
 >- `$_ENV` 配列に設定した値を使用するには、`variables_order = "EGPCS"` ファイルに `php.ini` （Environment、Get、Post、Cookie および Server）を設定する必要があります。 詳しくは、[PHP のドキュメント ](https://www.php.net/manual/en/ini.core.php) を参照してください。
 >
->- クラウドインフラストラクチャー上のAdobe Commerceの場合、[Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ja#configure-the-project) を使用して設定を上書きしようとすると、変数名の先頭に `env:` を付ける必要があります。 例：
+>- クラウドインフラストラクチャー上のAdobe Commerceの場合、[Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project) を使用して設定を上書きしようとすると、変数名の先頭に `env:` を付ける必要があります。 例：
 >
 >![ 環境変数の例 ](../../assets/configuration/cloud-console-envvariable.png)

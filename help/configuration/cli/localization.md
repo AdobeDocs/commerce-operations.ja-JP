@@ -1,10 +1,10 @@
 ---
 title: 翻訳辞書と言語パッケージ
-description: 翻訳辞書を生成し、言語パッケージを作成する方法を説明します。
+description: Adobe Commerceの翻訳辞書を生成し、言語パッケージを作成する方法を説明します。 ローカライゼーションと多言語ストアの設定について説明します。
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1441'
 ht-degree: 0%
 
 ---
@@ -316,7 +316,7 @@ Commerce アプリケーションが `en_GB` パッケージ内の単語や語�
 
 [翻訳の概要]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [翻訳辞書]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[翻訳を設定します]: https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-localize
+[翻訳を設定します]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
 [言語パッケージの詳細情報]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

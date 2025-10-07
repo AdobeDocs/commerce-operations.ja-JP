@@ -1,11 +1,11 @@
 ---
 title: デフォルトキャッシュに ValueKey を使用
-description: Adobe Commerceのデフォルトキャッシュとして Valkey を設定する方法を説明します。
+description: Adobe Commerceのデフォルトキャッシュとして Valkey を設定する方法を説明します。 コマンドラインのセットアップ、設定オプション、検証方法について説明します。
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: dea0ad57a8c4525be9bc442708bdd2495f28d72d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---

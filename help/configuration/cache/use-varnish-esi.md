@@ -1,12 +1,12 @@
 ---
 title: ワニス ESI ブロック
-description: Edge サイドインクルードと、それを使用して web ページを埋め込む方法について説明します。
+description: ワニス Edge サイドインクルード（ESI）と、Adobe Commerce用に web ページを埋め込む方法について説明します。 ESI ブロックの実装と最適化について説明します。
 badge: label="執筆：Konstantin G" type="Informative" url="https://github.com/goivvy" tooltip="コンスタンチン G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: B2B 拡張機能の設定パスのリファレンス
-description: B2B 関連の設定値のリストを参照してください。
+description: Adobe Commerceの B2B Extension 設定パスと値について説明します。 会社、支払い、見積もり、B2B 固有の設定オプションについて説明します。
 feature: Configuration, B2B, Companies, Payments, Quotes
 exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '849'
 ht-degree: 0%
 
 ---

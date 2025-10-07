@@ -1,10 +1,10 @@
 ---
 title: インデクサーの管理
-description: Commerce インデクサーの表示および管理方法の例を参照してください。
+description: コマンドラインツールを使用してAdobe Commerce インデクサーを表示および管理する方法について説明します。 インデクサーコマンド、ステータスチェックおよびインデックス再作成手法について説明します。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: ceefb9371dd0a85046cc5bfc0ddc72144d649608
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '974'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> Live Search、カタログサービス、Product Recommendations を使用するAdobe Commerce マーチャントには、[SaaS ベースの価格インデックス作成 ](https://experienceleague.adobe.com/ja/docs/commerce/price-indexer/price-indexing) を使用するオプションがあります。
+> Live Search、カタログサービス、Product Recommendations を使用するAdobe Commerce マーチャントには、[SaaS ベースの価格インデックス作成 ](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing) を使用するオプションがあります。
 
 ## インデクサーのステータスの表示
 
@@ -269,11 +269,11 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8 以降**:[!DNL Customer Grid] インデクサーは、[!UICONTROL Update on Save] モードと [!UICONTROL Update by Schedule] モードの両方をサポートしており、デフォルトは [!UICONTROL Update by Schedule] です。
 >
->[ 実装プレイブック ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) の _インデクサー設定のベストプラクティス_ を参照してください。
+>[ 実装プレイブック ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) の _インデクサー設定のベストプラクティス_ を参照してください。
 
 >[!INFO]
 >
->インデクサーモードを切り替える前に、web サイトを [ メンテナンス ](../../installation/tutorials/maintenance-mode.md) モードと [cron ジョブを無効 ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) に設定します。 これにより、データベースのロックが発生しないようにします。
+>インデクサーモードを切り替える前に、web サイトを [ メンテナンス ](../../installation/tutorials/maintenance-mode.md) モードと [cron ジョブを無効 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) に設定します。 これにより、データベースのロックが発生しないようにします。
 
 インデクサー設定を指定するには：
 

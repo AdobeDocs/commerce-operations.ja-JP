@@ -1,10 +1,10 @@
 ---
 title: キャッシュの管理
-description: Commerce CLI を使用して、コマンドラインからキャッシュタイプを管理し、キャッシュステータスを表示します。
+description: Adobe Commerceの CLI コマンドを使用してキャッシュタイプを管理し、キャッシュステータスを表示する方法について説明します。 キャッシュの管理と最適化の手法について説明します。
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe Commerceのキャッシュ管理システムを使用すると、サイト
 >[!NOTE]
 >
 >
->コマースサイト管理者は、キャッシュ管理システムツールを使用して、管理者からキャッシュを管理できます。 [ 管理システムガイド ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management) の _キャッシュ管理_ を参照してください。
+>Commerce サイト管理者は、キャッシュ管理システムツールを使用して、管理者からキャッシュを管理できます。 [ 管理システムガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) の _キャッシュ管理_ を参照してください。
 
 
 ## キャッシュステータスの表示
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Adobe Commerceでサポートされるデフォルトのキャッシュタイプについて詳しくは、『 [ 管理システムガイド ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management#caches) 』の _キャッシュ_ を参照してください。
+>Adobe Commerceでサポートされるデフォルトのキャッシュタイプについて詳しくは、『 [ 管理システムガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) 』の _キャッシュ_ を参照してください。
 
 
 ## キャッシュタイプを有効または無効にする

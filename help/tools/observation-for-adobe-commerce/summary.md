@@ -3,9 +3,9 @@ title: 「[!UICONTROL Summary]」タブ
 description: '[!UICONTROL Summary] の「 [!DNL Observation for Adobe Commerce]」タブについて説明します。'
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 790089c178570ee69f33cc04b17800db5563741e
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2494'
 ht-degree: 0%
 
 ---
@@ -32,19 +32,19 @@ ht-degree: 0%
 
 ## [!UICONTROL 404 page errors frame]
 
-![404 ページエラーフレーム ](../../assets/tools/404-page-errors.jpg)
+ページが見つからなかったインシデントを経時的に表示する ![404 エラー監視ダッシュボード ](../../assets/tools/404-page-errors.jpg)
 
 **[!UICONTROL 404 page errors]** のフレームには、選択した期間の [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) と 404 ページエラー数が一覧表示されます。
 
 ## [!UICONTROL % of Storage Free frame]
 
-![ ストレージの空きフレームの割合 ](../../assets/tools/percent-of-storage-free.jpg)
+![ 使用可能なディスク容量の割合を表示するストレージ使用率グラフ ](../../assets/tools/percent-of-storage-free.jpg)
 
 **[!UICONTROL % of Storage Free]** フレームには、クラスタのすべてのノードにわたるストレージ・マウントの平均空き率が表示されます。 例えば、3 つのノードクラスターがある場合、フレームには\&lt; マウントポイント\>、\&lt; 環境名\> が表示されます。 このフレームは、3 つのノード間に相違がある場合に偽装される可能性があります。 分散の例としては、`/data/mysql` マウントポイントの解放が 3 つのノードクラスター間で異なる値であった場合があります。 「[!UICONTROL MySQL]」タブの下には、各ノード上の `/data/mysql` ストレージの空き容量をより正確に確認するために、ノード名ごとにマウント・ポイントをファセットするフレームがあります。
 
 ## [!UICONTROL % of system memory that is free frame]
 
-![ システム メモリの空きフレームの割合 ](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
+![ 使用可能な RAM の割合を示すシステムメモリ使用量グラフ ](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
 
 空きシステムメモリの **% のフレームは** 各ノード上の空きシステムメモリの量をノードごとに表示します。
 
@@ -58,11 +58,11 @@ ht-degree: 0%
 
 ![ ホスト別のCPUの割合 ](../../assets/tools/cpu-percent-by-host.jpg)
 
-すべての環境とノードの集計が **[!UICONTROL CPU % by host]** のフレームに表示されます。 非実稼動環境の選択を解除する必要があります。 また、実稼動環境のすべてのノードが存在しないインスタンスも注目してください。 CPUの使用率が高い場合のヒントについて詳しくは、[Adobe CommerceでNew Relicを使用したパフォーマンスのトラブルシューティング ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=ja) を参照してください。
+すべての環境とノードの集計が **[!UICONTROL CPU % by host]** のフレームに表示されます。 非実稼動環境の選択を解除する必要があります。 また、実稼動環境のすべてのノードが存在しないインスタンスも注目してください。 CPUの使用率が高い場合のヒントについて詳しくは、[Adobe CommerceでNew Relicを使用したパフォーマンスのトラブルシューティング ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html) を参照してください。
 
 ## [!UICONTROL Alerts during timeframe]
 
-![ 期間中のアラート ](../../assets/tools/alerts-during-timeframe.jpg)
+![ 選択した期間内のインシデントを表示するアラート通知ダッシュボード ](../../assets/tools/alerts-during-timeframe.jpg)
 
 **[!UICONTROL Alerts during timeframe]** には、Adobe Commerce サポートによって追加された [!UICONTROL Managed Alerts] を含む、すべてのアラートが表示されます。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ![CPUの使用状況 ](../../assets/tools/cpu-usage.jpg)
 
-**[!UICONTROL CPU Usage]** フレームが空白の場合は、[!DNL New Relic] のインフラストラクチャアプリケーションが有効になっていないことを示します。 サイトが Starter 上にある場合、この情報は表示されません。 サイトが Pro の場合は、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja) を開いて、サイトを有効に [!DNL New Relic Infrastructure] ます。
+**[!UICONTROL CPU Usage]** フレームが空白の場合は、[!DNL New Relic] のインフラストラクチャアプリケーションが有効になっていないことを示します。 サイトが Starter 上にある場合、この情報は表示されません。 サイトが Pro の場合は、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) を開いて、サイトを有効に [!DNL New Relic Infrastructure] ます。
 
 ## [!UICONTROL Average Response Time]
 
@@ -139,7 +139,7 @@ ht-degree: 0%
 
 ## [!UICONTROL API Calls by IP, details by URL]
 
-![ip による api 呼び出しの url 別詳細 ](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
+![IP アドレスとエンドポイント URL でグループ化された呼び出しを示す API リクエスト分析 ](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
 
 **[!UICONTROL API Calls by IP, details by URL]** フレームは、API に対する大量のトラフィックの詳細と、リクエストを送信する URL の詳細を提供します。
 
@@ -332,13 +332,13 @@ PHP プロセスの動作は [configuration](https://www.php.net/manual/en/insta
 
 ## [!UICONTROL Page Rendering]
 
-![ ページレンダリング ](../../assets/tools/page-rendering.jpg)
+![ レンダリング時間分析を示すページパフォーマンス指標 ](../../assets/tools/page-rendering.jpg)
 
 **[!UICONTROL Page Rendering]** フレームには、[!DNL New Relic] のページビューソースから得られた今週の平均ページレンダリング時間が、同期間の前週と比較して表示されます。
 
 ## [!UICONTROL Page loading detail]
 
-![ ページ読み込みの詳細 ](../../assets/tools/page-loading-detail.png)
+![ 読み込み時間のコンポーネントを示す、詳細なページ読み込みパフォーマンスの分類 ](../../assets/tools/page-loading-detail.png)
 
 **[!UICONTROL Page loading detail]** のフレームは、ページ読み込みイベントを説明します。 これらの側面の意味を詳しく述べている。 このフレームに対して実行されるクエリは次のとおりです。
 
@@ -384,7 +384,7 @@ PHP プロセスの動作は [configuration](https://www.php.net/manual/en/insta
 * &#39;% この問題は、Magento Cloud インフラストラクチャのElasticsearch サービスを&#39;ver_err&#39;として version%&#39;にアップグレードすることで解決できます。
 * &#39;%cluster の正常性状態が\[YELLOW\] から\[RED\] に変更されました（理由：%&#39;が&#39;yel_red&#39;です）
 * &#39;%No space on device%&#39; as &#39;no_space&#39;
-* &#39;% は、&#39;failed_query&#39;として &lbrack;SearchRequest&lbrace;searchType=%&#39;を実行できませんでした
+* &#39;% は、&#39;failed_query&#39;として [SearchRequest{searchType=%&#39;を実行できませんでした
 
 ## [!UICONTROL Cron view]
 

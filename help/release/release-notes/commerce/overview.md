@@ -1,10 +1,10 @@
 ---
 title: Adobe Commerce リリースノート
-description: Adobe Commerceのリリースノートを確認してください。
+description: 最新機能、機能強化、セキュリティ更新など、Adobe Commerceのリリースノートについて説明します。 バグの修正、既知の問題、アップグレードガイダンスを確認します。
 exl-id: 984d42e1-d8f8-4170-936d-0884a9c50c1b
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '29'
+source-wordcount: '45'
 ht-degree: 0%
 
 ---
