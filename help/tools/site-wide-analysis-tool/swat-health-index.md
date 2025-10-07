@@ -1,9 +1,9 @@
 ---
 title: SWAT ヘルスインデックスのスコアと推奨事項について
 description: Adobe Commerce サイトに対する Site-Wide Analysis Tool ヘルスインデックスの意味について説明します。 スコアを解釈し、レコメンデーションを効果的に使用する方法を説明します。
-source-git-commit: e39e0229538bb245fbe744ebfd642572fc2dc790
+source-git-commit: d9b598e9399c26c8fb7c52e9f211029689343ce9
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 SWAT ダッシュボードから **[!DNL Recommendations Report]** をダウンロードする場合、PDFの **[!DNL Site Wide Analysis Tool Health Index]** 概要 **セクションには** のスコアが表示されます。
 
-![&#x200B; 生成された Recommendations レポートのサイト全体の分析ツールのヘルスインデックススコア &#x200B;](https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/assets/38345/cf56a076-e5a8-488d-927d-a3989966a089)
+![ 生成された Recommendations レポートのサイト全体の分析ツールのヘルスインデックススコア ](/help/assets/tools/swat-health-index-scroe.png)
 
 SWAT ヘルスインデックスは、Adobe Commerce サイトの全体的なヘルスを監視および向上するのに役立ちます。 このスコアはガイダンスツールであり、絶対的な合否尺度ではありません。
 
