@@ -12,7 +12,7 @@ ht-degree: 0%
 
 SWAT ダッシュボードから **[!DNL Recommendations Report]** をダウンロードする場合、PDFの **[!DNL Site Wide Analysis Tool Health Index]** 概要 **セクションには** のスコアが表示されます。
 
-![ 生成された Recommendations レポートのサイト全体の分析ツールのヘルスインデックススコア ](https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/assets/38345/cf56a076-e5a8-488d-927d-a3989966a089)
+![&#x200B; 生成された Recommendations レポートのサイト全体の分析ツールのヘルスインデックススコア &#x200B;](https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/assets/38345/cf56a076-e5a8-488d-927d-a3989966a089)
 
 SWAT ヘルスインデックスは、Adobe Commerce サイトの全体的なヘルスを監視および向上するのに役立ちます。 このスコアはガイダンスツールであり、絶対的な合否尺度ではありません。
 
