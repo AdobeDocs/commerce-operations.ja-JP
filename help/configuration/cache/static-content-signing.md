@@ -35,9 +35,9 @@ http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/ima
 
 Commerceではデフォルトでこの機能が有効になっています。Adobeでは、古い静的リソースを提供するブラウザーに関連する問題を防ぐために、この機能を有効にしておくことをお勧めします。
 
-静的コンテンツ署名の設定は、[**[!UICONTROL Stores]**/設定/設定/**[!UICONTROL Advanced]**/**[!UICONTROL Developer]**/**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures) にあります。
+静的コンテンツ署名の設定は、[**[!UICONTROL Stores]**/設定/設定/**[!UICONTROL Advanced]**/**[!UICONTROL Developer]**/**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures) にあります。
 
-- **オンプレミスのみ**：この設定は、サイトが **実稼動モード** で [&#x200B; 使用できない &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode) 場合に使用できます。
+- **オンプレミスのみ**：この設定は、サイトが **実稼動モード** で [&#x200B; 使用できない &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=ja#production-mode) 場合に使用できます。
 - **Cloud**：この設定は、実稼動モードが厳密に適用されるので、非表示です。そのため、次に示すように、コマンドラインを使用する必要があります。
 
 ![&#x200B; 静的ファイル設定 &#x200B;](../../assets/configuration/static-files-settings.png)

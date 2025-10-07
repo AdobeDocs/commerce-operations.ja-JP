@@ -30,7 +30,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->- リモートストレージは、Commerce バージョン 2.4.2 以降でのみ使用できます。 [2.4.2 リリースノート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2) を参照してください。
+>- リモートストレージは、Commerce バージョン 2.4.2 以降でのみ使用できます。 [2.4.2 リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/magento-open-source/2-4-2) を参照してください。
 >
 >- リモートストレージモジュールは、クラウドインフラストラクチャ上のAdobe Commerceで _制限_ サポートされています。 Adobeが、サードパーティのストレージアダプタサービスのトラブルシューティングを完全に行えない。 クラウドプロジェクトにリモートストレージを実装する方法については、[&#x200B; クラウドインフラストラクチャ上のCommerceのリモートストレージの設定 &#x200B;](cloud-support.md) を参照してください。
 
@@ -91,7 +91,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->sync コマンドは、`pub/media` ディレクトリ内のファイルのみを移行します __ ディレクトリ内のインポート/エクスポートファイルは移行しません `var`。 [2&rbrace;Commerce 2.4 ユーザーガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) の「スケジュールされた読み込み/書き出し」 _を参照してください。_
+>sync コマンドは、`pub/media` ディレクトリ内のファイルのみを移行します __ ディレクトリ内のインポート/エクスポートファイルは移行しません `var`。 [2&rbrace;Commerce 2.4 ユーザーガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=ja) の「スケジュールされた読み込み/書き出し」 _を参照してください。_
 
 <!-- link definitions -->
 

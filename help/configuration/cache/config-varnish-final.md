@@ -83,4 +83,4 @@ X-Magento-Cache-Debug: MISS
 
 >[!TIP]
 >
->503 （バックエンド取得に失敗しました）エラーが発生した場合は、[Adobe Commerce ヘルプセンター &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html)503 （サービスを利用できない）エラーのトラブルシューティング _を参照してください_。
+>503 （バックエンド取得に失敗しました）エラーが発生した場合は、[Adobe Commerce ヘルプセンター &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=ja)503 （サービスを利用できない）エラーのトラブルシューティング _を参照してください_。

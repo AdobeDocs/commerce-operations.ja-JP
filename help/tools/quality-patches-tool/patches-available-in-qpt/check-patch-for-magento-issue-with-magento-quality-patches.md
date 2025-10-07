@@ -39,11 +39,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->QPT は品質向上パッチ専用です。 セキュリティパッチは、[Magento セキュリティセンター &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) で入手できます。
+>QPT は品質向上パッチ専用です。 セキュリティパッチは、[Magento セキュリティセンター &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) で入手できます。
 
 ## 品質向上パッチツールで使用可能なパッチ
 
-使用可能なパッチのリストについては、開発者向けドキュメントの [Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) を参照してください。
+使用可能なパッチのリストについては、開発者向けドキュメントの [Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) を参照してください。
 
 ## 品質向上パッチツールのインストール方法と使用方法
 
@@ -51,13 +51,13 @@ Adobe Commerce オンプレミスの場合と、クラウドインフラスト�
 
 ### Adobe Commerce オンプレミスで QPT をインストールして使用する方法
 
-パッチの適用と元に戻すための QPT のインストールおよび使用方法の詳細については、開発者向けドキュメントの [&#x200B; ソフトウェア更新ガイド/パッチ適用 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) を参照してください。
+パッチの適用と元に戻すための QPT のインストールおよび使用方法の詳細については、開発者向けドキュメントの [&#x200B; ソフトウェア更新ガイド/パッチ適用 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/usage) を参照してください。
 
 ### クラウドインフラストラクチャーにAdobe Commerce用 QPT をインストールして使用する方法
 
-クラウドインフラストラクチャで QPT をインストールして使用し、Adobe Commerceにパッチを適用したり元に戻したりする方法について詳しくは、開発者向けドキュメントの [Cloud for Adobe Commerce/パッチを適用 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) を参照してください。
+クラウドインフラストラクチャで QPT をインストールして使用し、Adobe Commerceにパッチを適用したり元に戻したりする方法について詳しくは、開発者向けドキュメントの [Cloud for Adobe Commerce/パッチを適用 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) を参照してください。
 
 ## 関連資料
 
-* 開発者向けドキュメントの [&#x200B; 品質向上パッチツールのリリースノート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
-* [Adobeが提供する Composer パッチをサポートナレッジベースに適用する方法 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)。
+* 開発者向けドキュメントの [&#x200B; 品質向上パッチツールのリリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+* [Adobeが提供する Composer パッチをサポートナレッジベースに適用する方法 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)。

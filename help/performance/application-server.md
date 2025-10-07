@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server を使用すると、Adobe CommerceはCommerce GraphQL API リクエストの状態を維持できます。 Swoole 拡張機能に基づいて構築されたGraphQL Application Server は、リクエスト処理を処理するワーカースレッドを使用したプロセスとして動作します。 GraphQL Application Server は、GraphQL API リクエストの間でブートストラップされたアプリケーションの状態を保持することで、リクエスト処理と製品全体のパフォーマンスを向上させます。 API リクエストが大幅に効率的になります。
 
-GraphQL Application Server は、Adobe Commerceでのみ使用できます。 Magento Open Sourceでは使用できません。 Cloud Pro プロジェクトの場合、GraphQL Application Server を有効にするには、[Adobe Commerce サポートを送信 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) チケットが必要です。
+GraphQL Application Server は、Adobe Commerceでのみ使用できます。 Magento Open Sourceでは使用できません。 Cloud Pro プロジェクトの場合、GraphQL Application Server を有効にするには、[Adobe Commerce サポートを送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) チケットが必要です。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ GraphQL Application Server を実行するには、以下が必要です。
 
 ### クラウドプロジェクト
 
-クラウドインフラストラクチャプロジェクト上のAdobe Commerceには、デフォルトで Swoole 拡張機能が含まれています。 [&#x200B; ファイルの &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) プロパティで `runtime` 有効 `.magento.app.yaml` することができます。 例：
+クラウドインフラストラクチャプロジェクト上のAdobe Commerceには、デフォルトで Swoole 拡張機能が含まれています。 [&#x200B; ファイルの &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) プロパティで `runtime` 有効 `.magento.app.yaml` することができます。 例：
 
 ```yaml
 runtime:
@@ -273,7 +273,7 @@ git push
 
 >[!NOTE]
 >
->ルート `.magento.app.yaml` ファイル内のすべてのカスタム設定が、`application-server/.magento/.magento.app.yaml` ファイルに適切に移行されていることを確認します。 `application-server/.magento/.magento.app.yaml` ファイルがプロジェクトに追加されたら、ルート `.magento.app.yaml` ファイルに加えてそのファイルを保持する必要があります。 例えば、[RabbitMQ サービスを設定する &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) または [web プロパティを管理する &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) 必要がある場合、同じ設定を `application-server/.magento/.magento.app.yaml` にも追加する必要があります。
+>ルート `.magento.app.yaml` ファイル内のすべてのカスタム設定が、`application-server/.magento/.magento.app.yaml` ファイルに適切に移行されていることを確認します。 `application-server/.magento/.magento.app.yaml` ファイルがプロジェクトに追加されたら、ルート `.magento.app.yaml` ファイルに加えてそのファイルを保持する必要があります。 例えば、[RabbitMQ サービスを設定する &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) または [web プロパティを管理する &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) 必要がある場合、同じ設定を `application-server/.magento/.magento.app.yaml` にも追加する必要があります。
 
 ### クラウドプロジェクトでのイネーブルメントの検証
 

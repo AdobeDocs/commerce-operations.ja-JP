@@ -316,7 +316,7 @@ Commerce アプリケーションが `en_GB` パッケージ内の単語や語�
 
 [翻訳の概要]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [翻訳辞書]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[翻訳を設定します]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
+[翻訳を設定します]: https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-localize
 [言語パッケージの詳細情報]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html
