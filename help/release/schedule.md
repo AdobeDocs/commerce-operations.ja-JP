@@ -18,9 +18,9 @@ Adobeは、製品のアップグレードをシンプルで予測可能にする
 
 新機能、機能アップデート、クラウドインフラストラクチャー、拡張機能アップデートは、パッチリリースとは独立して提供され、外部のモジュール、拡張機能、ツールまたは web サービスを通じて利用できます。 例を次に示します。
 
-- ![&#x200B; 機能アイコン &#x200B;](../assets/icons/feature.svg) [**機能と機能性**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all) - パッチリリースとは別に提供される新機能。 例えば、[B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)、カタログサービス、データ接続、ライブ検索、製品レコメンデーションなどです。
+- ![&#x200B; 機能アイコン &#x200B;](../assets/icons/feature.svg) [**機能と機能性**](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/release-information/release-notes-all) - パッチリリースとは別に提供される新機能。 例えば、[B2B](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/release-notes)、カタログサービス、データ接続、ライブ検索、製品レコメンデーションなどです。
 
-- ![&#x200B; インフラストラクチャアイコン &#x200B;](../assets/icons/servers.svg) [**クラウドインフラストラクチャ**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) - クラウドインフラストラクチャ上のAdobe Commerceおよびクラウドプラットフォーム上でAdobe Commerceのインストールとアップグレードをデプロイと管理するCommerce パッケージ用 Cloud Tools スイートの新機能と機能強化について説明します。
+- ![&#x200B; インフラストラクチャアイコン &#x200B;](../assets/icons/servers.svg) [**クラウドインフラストラクチャ**](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) - クラウドインフラストラクチャ上のAdobe Commerceおよびクラウドプラットフォーム上でAdobe Commerceのインストールとアップグレードをデプロイと管理するCommerce パッケージ用 Cloud Tools スイートの新機能と機能強化について説明します。
 
 - ![&#x200B; 拡張アイコン &#x200B;](../assets/icons/brackets.svg) [**拡張機能**](https://developer.adobe.com/commerce/extensibility/) - パッチリリースとは別に提供される、プロセス外の拡張機能のための新しい開発者ツールおよびサービス。 例えば、統合スターターキット、管理 UI SDK、Commerce用Adobe I/O Events、API メッシュなどです。
 
