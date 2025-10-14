@@ -2,7 +2,7 @@
 title: リリースポリシー
 description: 様々なタイプのAdobe Commerce リリースについて説明します。
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: fd2ebc358850e47975ce6a3b8df058774440bcf2
+source-git-commit: bf7049ad5b805397f823e7e4cb430e9ecca5965e
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Adobe Commerce リリースポリシー
 
-Adobe Commerceでは、個々のモジュールレベル（[&#x200B; など）で &#x200B;](https://semver.org/) セマンティックバージョニング `magento/framework 101.1.1` を使用しますが、マーケティングバージョン番号には使用しません。 例：
+Adobe Commerceでは、個々のモジュールレベル（[ など）で ](https://semver.org/) セマンティックバージョニング `magento/framework 101.1.1` を使用しますが、マーケティングバージョン番号には使用しません。 例：
 
 - **メジャーリリース**-2
 - **マイナーリリース**-2.4
@@ -63,7 +63,7 @@ Beta リリースには不具合が含まれている場合があり、いかな
 
 ## ホットフィックス
 
-ホットフィックスは、多くのマーチャントに影響を与えるゼロデイ脆弱性の修正など、影響の大きいセキュリティ修正や品質修正を含むパッチです。 Adobeでは、サポートされているAdobe Commerce バージョンに対して、セキュリティや品質に関する重大な問題が影響を及ぼす場合に、（必要に応じて）ホットフィックスをリリースします。 ホットフィックスは、ナレッジベースの [&#x200B; 既知の問題セクション &#x200B;](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) に公開されます。 これらの修正は、次回の予定パッチリリースに含まれています。
+ホットフィックスは、多くのマーチャントに影響を与えるゼロデイ脆弱性の修正など、影響の大きいセキュリティ修正や品質修正を含むパッチです。 Adobeでは、サポートされているAdobe Commerce バージョンに対して、セキュリティや品質に関する重大な問題が影響を及ぼす場合に、（必要に応じて）ホットフィックスをリリースします。 ホットフィックスは、ナレッジベースの [ 既知の問題セクション ](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) に公開されます。 これらの修正は、次回の予定パッチリリースに含まれています。
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Beta リリースには不具合が含まれている場合があり、いかな
 
 ## 個々のパッチ
 
-個々のパッチには、特定の問題に対する影響の低い品質修正が含まれています。 これらの修正は、サポートされているAdobe Commerceのマイナーバージョンに適用されます。 Adobeは、[&#x200B; ソフトウェアライフサイクルポリシー &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) に従って、Adobe Commerceで必要になる個々のパッチをリリースします。
+個々のパッチには、特定の問題に対する影響の低い品質修正が含まれています。 これらの修正は、サポートされているAdobe Commerceのマイナーバージョンに適用されます。 Adobeは、[ ソフトウェアライフサイクルポリシー ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) に従って、Adobe Commerceで必要になる個々のパッチをリリースします。
 
 >[!NOTE]
 >
@@ -81,10 +81,10 @@ Beta リリースには不具合が含まれている場合があり、いかな
 
 分離されたパッチは、完全なセキュリティパッチとは別にリリースされた非累積的なセキュリティ修正で、実装を迅速化します。 個別のセキュリティ修正はそれぞれ、特定のセキュリティ問題に対応しており、最新または今後の完全なセキュリティパッチに含まれています。 問題の詳細については、関連するセキュリティ速報を参照してください。この速報は、修正の詳細、修正方法、および追加情報を含むナレッジベース（KB）記事にリンクされています。
 
-Adobe Commerceで利用可能な最新のセキュリティ更新プログラムを見つけるには、[&#x200B; セキュリティセンター &#x200B;](https://helpx.adobe.com/jp/security/products/magento.html) を参照してください。
+Adobe Commerceで利用可能な最新のセキュリティ更新プログラムを見つけるには、[ セキュリティセンター ](https://helpx.adobe.com/security/products/magento.html) を参照してください。
 
 ## カスタムパッチ
 
-問題を修正したり、様々な理由でAdobe Commerce コードを変更したりするために、Adobe以外の担当者によって作成されました。 カスタムパッチは、[Quality Patches Tool](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/usage) を通じて提供されます。
+問題を修正したり、様々な理由でAdobe Commerce コードを変更したりするために、Adobe以外の担当者によって作成されました。 カスタムパッチは、[Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) を通じて提供されます。
 
-<!-- Last updated from includes: 2025-05-28 16:37:31 -->
+<!-- Last updated from includes: 2025-10-09 22:53:22 -->

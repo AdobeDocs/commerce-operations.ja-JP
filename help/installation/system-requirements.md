@@ -2,7 +2,7 @@
 title: 必要システム構成
 description: Adobe Commerceのソフトウェアの依存関係とシステム要件について説明します。 テスト済みの設定を確認して、デプロイメント環境との互換性を確保します。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 8b1a202fde89ab05626194aff010111577ef6993
+source-git-commit: bf7049ad5b805397f823e7e4cb430e9ecca5965e
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Commerce on Cloud の依存関係にはいくつかの違いがあります。 C
 
 >[!NOTE]
 >
->システム要件は、Adobe Commerceのリリース版にのみ適用されます。 Betaまたはアーリーアクセス版は含まれません。 Adobe Commerceの最新のリリースバージョンについて詳しくは、[&#x200B; リリースノート &#x200B;](../release/release-notes/overview.md) を参照してください。
+>システム要件は、Adobe Commerceのリリース版にのみ適用されます。 Betaまたはアーリーアクセス版は含まれません。 Adobe Commerceの最新のリリースバージョンについて詳しくは、[ リリースノート ](../release/release-notes/overview.md) を参照してください。
 
 次の表は、Adobeが特定のAdobe Commerce リリースでテストした、サードパーティ製ソフトウェアの依存関係のバージョンを示しています。
 
@@ -29,11 +29,11 @@ Adobeは、次の表に示すシステム要件の組み合わせのみをサポ
 
 >[!TAB  クラウド上のCommerce]
 
-[Commerce on Cloud テンプレートは &#x200B;](https://github.com/magento/magento-cloud) 特定のCommerce バージョンと互換性のあるサービスのデフォルト設定を提供します。
+[Commerce on Cloud テンプレートは ](https://github.com/magento/magento-cloud) 特定のCommerce バージョンと互換性のあるサービスのデフォルト設定を提供します。
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
-サービスとバージョンは [`services.yaml` ファイル &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) で定義されます。 クラウドインフラストラクチャー上のCommerce 2.4.6 のデフォルトのサービス設定は、次のとおりです。
+サービスとバージョンは [`services.yaml` ファイル ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) で定義されます。 クラウドインフラストラクチャー上のCommerce 2.4.6 のデフォルトのサービス設定は、次のとおりです。
 
 ```yaml
 mysql:
@@ -48,7 +48,7 @@ opensearch:
     disk: 1024
 ```
 
-クラウドインフラストラクチャー上の [2&rbrace;Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html?lang=ja) ガイドの &lbrace; サービスの設定 _を参照してください。_
+クラウドインフラストラクチャー上の [2}Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) ガイドの { サービスの設定 _を参照してください。_
 
 >[!TAB Commerce オンプレミス ]
 
@@ -58,17 +58,17 @@ opensearch:
 
 ## PHP 設定
 
-PHP には `memory_limit` 設定など特定の設定があり、Adobe Commerceを使用する際の一般的な問題を回避するのに役立ちます。 [&#x200B; 必要な PHP 設定 &#x200B;](prerequisites/php-settings.md) を参照してください。
+PHP には `memory_limit` 設定など特定の設定があり、Adobe Commerceを使用する際の一般的な問題を回避するのに役立ちます。 [ 必要な PHP 設定 ](prerequisites/php-settings.md) を参照してください。
 
-クラウド設定のガイダンスについては、[Cloud Infrastructure でのCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=ja) ガイドの _PHP 設定_ を参照してください。
+クラウド設定のガイダンスについては、[Cloud Infrastructure でのCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) ガイドの _PHP 設定_ を参照してください。
 
 ### PHP OPcache
 
 パフォーマンス上の理由から、[PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) が有効になっていることを確認することをお勧めします。 OPcache は多くの PHP ディストリビューションで有効になっています。 `opcache` 拡張機能は、クラウドインフラストラクチャー上のCommerceにデフォルトでインストールされます。
 
-オンプレミスの場合は、PHP OPcache がインストールされていることを確認します。[PHP 設定 &#x200B;](prerequisites/php-settings.md) を参照してください。 パフォーマンス設定に関する具体的なガイダンスについては、『 [&#x200B; パフォーマンスのベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html?lang=ja#php-settings) ガイドの _PHP 設定_ に関するソフトウェアの推奨事項を参照してください。
+オンプレミスの場合は、PHP OPcache がインストールされていることを確認します。[PHP 設定 ](prerequisites/php-settings.md) を参照してください。 パフォーマンス設定に関する具体的なガイダンスについては、『 [ パフォーマンスのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) ガイドの _PHP 設定_ に関するソフトウェアの推奨事項を参照してください。
 
-OPcache を個別にインストールする必要がある場合は、[PHP OPcache のドキュメント &#x200B;](https://www.php.net/manual/en/opcache.setup.php) を参照してください。
+OPcache を個別にインストールする必要がある場合は、[PHP OPcache のドキュメント ](https://www.php.net/manual/en/opcache.setup.php) を参照してください。
 
 ### PHP プロセスコントロール
 
@@ -80,11 +80,11 @@ PHPUnit v9 （コマンドラインツールとして）。
 
 ### PHP 拡張機能
 
-[PHP のインストール手順 &#x200B;](prerequisites/php-settings.md) には、これらの拡張機能をインストールする手順が含まれています。
+[PHP のインストール手順 ](prerequisites/php-settings.md) には、これらの拡張機能をインストールする手順が含まれています。
 
 >[!TIP]
 >
->クラウドインフラストラクチャーでの PHP 拡張機能については、[&#x200B; クラウドインフラストラクチャー上のCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=ja#enable-extensions) ガイドの _PHP 拡張機能を有効にする_ を参照してください。
+>クラウドインフラストラクチャーでの PHP 拡張機能については、[ クラウドインフラストラクチャー上のCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions) ガイドの _PHP 拡張機能を有効にする_ を参照してください。
 
 >[!BEGINTABS]
 
@@ -98,7 +98,7 @@ PHPUnit v9 （コマンドラインツールとして）。
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
-インストールの詳細については、[PHP の公式ドキュメント &#x200B;](https://www.php.net/manual/en/extensions.php) を参照してください。
+インストールの詳細については、[PHP の公式ドキュメント ](https://www.php.net/manual/en/extensions.php) を参照してください。
 
 >[!ENDTABS]
 
@@ -123,11 +123,11 @@ PHPUnit v9 （コマンドラインツールとして）。
 
 ### メールサーバー
 
-メール転送エージェント（MTA）または SMTP サーバー。 クラウドインフラストラクチャー上のCommerceでは、[SendGrid メールサービス &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html?lang=ja) を使用します。
+メール転送エージェント（MTA）または SMTP サーバー。 クラウドインフラストラクチャー上のCommerceでは、[SendGrid メールサービス ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html) を使用します。
 
 ### メモリ
 
-Commerce Marketplaceやその他のソースから取得したアプリケーションや拡張機能をアップグレードするには、最大 2 GB の RAM が必要になる場合があります。 RAM が 2 GB 未満のシステムを使用している場合は、[&#x200B; スワップファイル &#x200B;](https://support.magento.com/hc/en-us/articles/360032980432) を作成します。そうしないと、アップグレードに失敗する可能性があります。
+Commerce Marketplaceやその他のソースから取得したアプリケーションや拡張機能をアップグレードするには、最大 2 GB の RAM が必要になる場合があります。 RAM が 2 GB 未満のシステムを使用している場合は、[ スワップファイル ](https://support.magento.com/hc/en-us/articles/360032980432) を作成します。そうしないと、アップグレードに失敗する可能性があります。
 
 ### オペレーティングシステム （Linux x86 ～ 64）
 
@@ -153,17 +153,17 @@ Adobe Commerceには、一部の操作で次のシステムツールが必要で
 - 自己署名 SSL 証明書はサポートされていません。
 - Transport Layer Security （TLS）要件 – PayPal と `repo.magento.com` の両方で TLS 1.2 以降が必要です。
 
-クラウドインフラストラクチャー上のCommerceについては、[&#x200B; クラウドインフラストラクチャー上のCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja) ガイドの _Fastly 設定_ を参照してください。
+クラウドインフラストラクチャー上のCommerceについては、[ クラウドインフラストラクチャー上のCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) ガイドの _Fastly 設定_ を参照してください。
 
 ### Xdebug
 
 Adobe Commerceの場合は、[php_xdebug 2.5.x](https://xdebug.org/download) 以降を使用します（開発環境のみ。パフォーマンスに悪影響を与える可能性があります）。
 
-Cloud 上のAdobe Commerceについては、[Cloud Infrastructure 上のCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html?lang=ja) ガイドの _Xdebug の設定_ を参照してください。
+Cloud 上のAdobe Commerceについては、[Cloud Infrastructure 上のCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) ガイドの _Xdebug の設定_ を参照してください。
 
 >[!NOTE]
 >
->`xdebug` には既知の問題があり、Adobe Commerceのインストールや、インストール後のストアフロントまたは管理者へのアクセスに影響を与える可能性があります。 [3&rbrace;Commerce サポートナレッジベース `xdebug` の &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html?lang=ja) インストールに影響を与える既知の問題 _を参照してください。_
+>`xdebug` には既知の問題があり、Adobe Commerceのインストールや、インストール後のストアフロントまたは管理者へのアクセスに影響を与える可能性があります。 [3}Commerce サポートナレッジベース `xdebug` の ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) インストールに影響を与える既知の問題 _を参照してください。_
 
 
-<!-- Last updated from includes: 2025-10-09 19:48:53 -->
+<!-- Last updated from includes: 2025-10-10 11:54:17 -->
