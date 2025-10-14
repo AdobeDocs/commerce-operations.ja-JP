@@ -66,12 +66,12 @@ Elasticsearch 6 以前はサポートされなくなりました。
 
 2.4 にアップグレードする前に、次のタスクを実行する必要があります。
 
-1. CommerceでサポートされているElasticsearchのバージョンへのアップデート。 データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストに関する手順について詳しくは、[Elasticsearchのアップグレード ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) を参照してください。 現在のElasticsearchのバージョンに応じて、クラスターの完全な再起動は必要な場合も必要ない場合もあります。
+1. CommerceでサポートされているElasticsearchのバージョンへのアップデート。 データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストに関する手順について詳しくは、[Elasticsearchのアップグレード &#x200B;](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) を参照してください。 現在のElasticsearchのバージョンに応じて、クラスターの完全な再起動は必要な場合も必要ない場合もあります。
 
    >[!NOTE]
    >
-   >Elasticsearchには JDK 1.8 以降が必要です。 インストールされている JDK のバージョンを確認するには、[Java Software Development Kit （JDK）をインストールする ](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) を参照してください。
+   >Elasticsearchには JDK 1.8 以降が必要です。 インストールされている JDK のバージョンを確認するには、[Java Software Development Kit （JDK）をインストールする &#x200B;](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) を参照してください。
 
-1. [Elasticsearchを設定 ](../../configuration/search/configure-search-engine.md) て、再インデックスを実行します。
+1. [Elasticsearchを設定 &#x200B;](../../configuration/search/configure-search-engine.md) て、再インデックスを実行します。
 
 検索エンジンを設定して再インデックス化したら、2.4 にアップグレードする準備が整います。

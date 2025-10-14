@@ -14,9 +14,9 @@ ht-degree: 0%
    * [!UICONTROL **二要素認証の再試行制限**]
    * [!UICONTROL **二要素認証ロックアウト時間（秒）**]
 
-  Adobeでは、ブルートフォース攻撃を軽減するための再試行回数を制限するために、2FA OTP 検証のしきい値を設定することをお勧めします。 詳しくは、『 [ 設定リファレンスガイド ](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/security/2fa) の _セキュリティ/2FA_ を参照してください。<!-- AC-12095 -->
+  Adobeでは、ブルートフォース攻撃を軽減するための再試行回数を制限するために、2FA OTP 検証のしきい値を設定することをお勧めします。 詳しくは、『 [&#x200B; 設定リファレンスガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/security/2fa) の _セキュリティ/2FA_ を参照してください。<!-- AC-12095 -->
 
-* **暗号化キーのローテーション**：新しい CLI コマンドを使用して暗号化キーを変更できるようになりました。 詳しくは、[ 暗号化キーのローテーションのトラブルシューティング：CVE-2024-34102](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102) ナレッジベースの記事を参照してください。
+* **暗号化キーのローテーション**：新しい CLI コマンドを使用して暗号化キーを変更できるようになりました。 詳しくは、[&#x200B; 暗号化キーのローテーションのトラブルシューティング：CVE-2024-34102](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102) ナレッジベースの記事を参照してください。
 
 * **[CVE-2020-27511](https://nvd.nist.gov/vuln/detail/CVE-2020-27511)** の修正 – [!DNL Prototype.js] セキュリティの脆弱性を解決します。<!-- AC-11936 -->
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->企業規模でのAdobe Commerceの一元的なパッチ適用については、[ ベストプラクティス ](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) を参照してください。
+>企業規模でのAdobe Commerceの一元的なパッチ適用については、[&#x200B; ベストプラクティス &#x200B;](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) を参照してください。
 
 ## コンポーザー
 
@@ -72,7 +72,7 @@ Composer を使用してカスタム パッチを適用するには：
 コマンドラインからパッチを適用するには：
 
 1. FTP、SFTP、SSH、または通常の転送方法を使用して、ローカルファイルをサーバー上の `<Magento_root>` ディレクトリにアップロードします。
-1. [admin ユーザー ](../../configuration/cli/config-cli.md#prerequisites) としてサーバーにログインし、ファイルが正しいディレクトリにあることを確認します。
+1. [admin ユーザー &#x200B;](../../configuration/cli/config-cli.md#prerequisites) としてサーバーにログインし、ファイルが正しいディレクトリにあることを確認します。
 1. コマンドラインインターフェイスで、パッチ拡張機能に従って次のコマンドを実行します。
 
    ```bash

@@ -14,10 +14,10 @@ ht-degree: 0%
 
 開始する前に、次の手順に従って準備を行います。
 
-1. アプリケーションサーバーに [ ファイルシステムの所有者 ](../../../installation/prerequisites/file-system/overview.md) としてログインします。
+1. アプリケーションサーバーに [&#x200B; ファイルシステムの所有者 &#x200B;](../../../installation/prerequisites/file-system/overview.md) としてログインします。
 1. アプリケーションのインストールディレクトリに移動するか、システムデ `PATH` クトリに追加されていることを確認します。
 
-詳しくは、[ 最初の手順 ](overview.md#first-steps) の節を参照してください。
+詳しくは、[&#x200B; 最初の手順 &#x200B;](overview.md#first-steps) の節を参照してください。
 
 ## データ移行コマンドの実行
 
@@ -35,7 +35,7 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 * `{<path to config.xml>}` は `config.xml` への絶対ファイルシステムパスです。この引数は必須です
 
-この手順では、Magento 1 データベースの移行テーブル用に、追加のテーブルとトリガーが [!DNL Data Migration Tool] で作成されます。 これらは、[ 増分/差分 ](delta.md) 移行手順で使用されます。 追加のテーブルには、最終的な移行の実行後に変更されたレコードに関する情報が含まれます。 データベーストリガーは、これらの追加テーブルへの入力に使用します。したがって、特定のテーブルに対して新しい処理が実行されている（レコードが追加/変更/削除されている）場合、これらのデータベーストリガーによって、この処理に関する情報が追加のテーブルに保存されます。 差分マイグレーションプロセスを実行すると、[!DNL Data Migration Tool] はこれらのテーブルをチェックして、未処理のレコードを探し、必要なコンテンツをMagento 2 データベースに移行します。
+この手順では、Magento 1 データベースの移行テーブル用に、追加のテーブルとトリガーが [!DNL Data Migration Tool] で作成されます。 これらは、[&#x200B; 増分/差分 &#x200B;](delta.md) 移行手順で使用されます。 追加のテーブルには、最終的な移行の実行後に変更されたレコードに関する情報が含まれます。 データベーストリガーは、これらの追加テーブルへの入力に使用します。したがって、特定のテーブルに対して新しい処理が実行されている（レコードが追加/変更/削除されている）場合、これらのデータベーストリガーによって、この処理に関する情報が追加のテーブルに保存されます。 差分マイグレーションプロセスを実行すると、[!DNL Data Migration Tool] はこれらのテーブルをチェックして、未処理のレコードを探し、必要なコンテンツをMagento 2 データベースに移行します。
 
 それぞれの新しいテーブルには、次の内容が含まれます。
 
@@ -105,7 +105,7 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 * `Incompatibility in data. Source document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 * `Incompatibility in data. Destination document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 
-詳細と推奨事項については、このガイドの [ トラブルシューティング ](https://support.magento.com/hc/en-us/articles/360033020451) の節を参照してください。
+詳細と推奨事項については、このガイドの [&#x200B; トラブルシューティング &#x200B;](https://support.magento.com/hc/en-us/articles/360033020451) の節を参照してください。
 
 ## 次の移行手順
 

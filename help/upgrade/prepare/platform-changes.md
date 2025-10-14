@@ -11,10 +11,10 @@ ht-degree: 0%
 
 # アップグレード前にプラットフォームの変更を確認してください
 
-技術的なプラットフォームの変更点について詳しくは、[ リリースノート ](../../release/release-notes/overview.md) および [ システム要件 ](../../installation/system-requirements.md) を参照してください。
+技術的なプラットフォームの変更点について詳しくは、[&#x200B; リリースノート &#x200B;](../../release/release-notes/overview.md) および [&#x200B; システム要件 &#x200B;](../../installation/system-requirements.md) を参照してください。
 
-Adobe Commerceのお客様やパートナーは、[Adobe Commerce ベータ版リリース ](../../release/beta.md) にアクセスして、一般提供（GA）前のコードに早期にアクセスすることもできます。
+Adobe Commerceのお客様やパートナーは、[Adobe Commerce ベータ版リリース &#x200B;](../../release/beta.md) にアクセスして、一般提供（GA）前のコードに早期にアクセスすることもできます。
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.6 は、Beta プログラムがサポートする最後のリリースです。 2023 年 6 月以降、AdobeはAdobe Commerceの公開ベータをリリースします。 公開ベータ版リリース日のリストについては、[ リリーススケジュール ](../../release/schedule.md) を参照してください。
+>Adobe Commerce 2.4.6 は、Beta プログラムがサポートする最後のリリースです。 2023 年 6 月以降、AdobeはAdobe Commerceの公開ベータをリリースします。 公開ベータ版リリース日のリストについては、[&#x200B; リリーススケジュール &#x200B;](../../release/schedule.md) を参照してください。

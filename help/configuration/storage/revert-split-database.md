@@ -14,7 +14,7 @@ ht-degree: 0%
 
 {{ee-only}}
 
-[Split Database](multi-master.md) を実装しているAdobe Commerceのお客様の場合、次のトピックでは、1 つのデータベースに戻す方法または 1 つのデータベースに戻す方法について説明します。 現在 Split Database を使用しているAdobe Commerce マーチャントは、2.4.2 以降にアップグレードする予定です。これらの手順のほか、予定されている Split Database の廃止に関する [ お知らせ ](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) も確認することをお勧めします。
+[Split Database](multi-master.md) を実装しているAdobe Commerceのお客様の場合、次のトピックでは、1 つのデータベースに戻す方法または 1 つのデータベースに戻す方法について説明します。 現在 Split Database を使用しているAdobe Commerce マーチャントは、2.4.2 以降にアップグレードする予定です。これらの手順のほか、予定されている Split Database の廃止に関する [&#x200B; お知らせ &#x200B;](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) も確認することをお勧めします。
 
 分割データベースから単一データベースに戻すには、`magento_quote` および `magento_sales` データベースのバックアップを作成してから、それらを単一の `magento_main` データベースにロードします。
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 ## 作業内容の検証
 
-単一データベースの実装が正常に動作していることを確認するには、次のタスクを実行し、`magento_main`phpMyAdmin[ などのデータベースツールを使用して ](../../installation/prerequisites/optional-software.md#phpmyadmin) のデータベーステーブルにデータが追加されていることを確認します。
+単一データベースの実装が正常に動作していることを確認するには、次のタスクを実行し、`magento_main`phpMyAdmin[&#x200B; などのデータベースツールを使用して &#x200B;](../../installation/prerequisites/optional-software.md#phpmyadmin) のデータベーステーブルにデータが追加されていることを確認します。
 
 1. 外部キーが復元されたことを確認します。 例えば、`QUOTE_STORE_ID_STORE_STORE_ID` データベーステーブルの `quote` キーなどです。
 1. 顧客がストアフロントから注文できることを確認します。

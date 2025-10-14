@@ -23,7 +23,7 @@ _AC-13916_
 
 composer バージョンのサポートは、composer バージョン 2.2.x まででした。 また、サポート範囲が 2.4.x バージョンに拡張されました。
 
-_AC-13792 - [GitHub コードの投稿 ](https://github.com/magento/magento2/commit/19844aa0)_
+_AC-13792 - [GitHub コードの投稿 &#x200B;](https://github.com/magento/magento2/commit/19844aa0)_
 
 #### 2.4.8、2.4.7、2.4.6 および 2.4.5、2.4.9-alpha1 用の Valkey 8.x の互換性を追加
 

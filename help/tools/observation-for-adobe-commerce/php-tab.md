@@ -16,31 +16,31 @@ ht-degree: 0%
 
 ## [!UICONTROL PHP active process details]
 
-![PHP のアクティブなプロセスの詳細 ](../../assets/tools/php-active-process-details.jpg)
+![PHP のアクティブなプロセスの詳細 &#x200B;](../../assets/tools/php-active-process-details.jpg)
 
 **[!UICONTROL PHP active process details]** のフレームは、選択した期間における php-fpm を含む PHP プロセスを示します。
 
 ## [!UICONTROL PHP process load (# of PHP processes and % of CPU load)]
 
-![PHP プロセスのロード ](../../assets/tools/php-process-load.jpg)
+![PHP プロセスのロード &#x200B;](../../assets/tools/php-process-load.jpg)
 
 **[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** のフレームは、選択した期間における PHP-FPM プロセスからのCPUの負荷を示しています。
 
 ## [!UICONTROL PHP Memory detail]
 
-![PHP メモリの詳細 ](../../assets/tools/php-memory-detail.jpg)
+![PHP メモリの詳細 &#x200B;](../../assets/tools/php-memory-detail.jpg)
 
 **[!UICONTROL PHP Memory detail]** フレームは、選択した期間における PHP プロセスのメモリ使用量を示します。
 
 ## [!UICONTROL PHP CPU Utilization]
 
-![PHP CPUの使用率 ](../../assets/tools/php-cpu-utilization.jpg)
+![PHP CPUの使用率 &#x200B;](../../assets/tools/php-cpu-utilization.jpg)
 
 **[!UICONTROL PHP CPU Utilization]** のフレームは、選択した期間における PHP プロセスのCPUの使用率を示します。
 
 ## [!UICONTROL PHP Process states]
 
-![PHP プロセスの状態 ](../../assets/tools/php-process-states-image-1.jpg)
+![PHP プロセスの状態 &#x200B;](../../assets/tools/php-process-states-image-1.jpg)
 
 **[!UICONTROL PHP Process states]** のフレームは、選択した期間の PHP プロセスの状態を示します。 PHP のプロセスが終了し、再起動すると表示されます。 再起動を表示しない終了した PHP プロセスには注意してください。
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## [!UICONTROL PHP Errors]
 
-![PHP エラー ](../../assets/tools/php-errors-image-1.jpg)
+![PHP エラー &#x200B;](../../assets/tools/php-errors-image-1.jpg)
 
 **[!UICONTROL PHP Errors]** フレームには、選択した期間における PHP ワーカーエラー数が表示されます。 解析および表示されるエラーメッセージは次のとおりです。
 
@@ -69,13 +69,13 @@ ht-degree: 0%
 
 ## [!UICONTROL PHP processes count]
 
-![PHP プロセス数 ](../../assets/tools/php-processes-count.jpg)
+![PHP プロセス数 &#x200B;](../../assets/tools/php-processes-count.jpg)
 
 **[!UICONTROL PHP processes count]** フレームには、選択した期間の PHP プロセスの数が表示されます。
 
 ## [!UICONTROL Database Errors]
 
-![ データベース エラー ](../../assets/tools/php-tab-database-errors.jpg)
+![&#x200B; データベース エラー &#x200B;](../../assets/tools/php-tab-database-errors.jpg)
 
 **[!UICONTROL Database Errors]** のフレームには、選択した期間のデータベースエラーが表示されます。 解析されるエラーは次のとおりです。
 
@@ -121,12 +121,12 @@ ht-degree: 0%
 
 ## [!UICONTROL Database traces]
 
-![ データベース トレース ](../../assets/tools/php-tab-database-traces.jpg)
+![&#x200B; データベース トレース &#x200B;](../../assets/tools/php-tab-database-traces.jpg)
 
 **[!UICONTROL Database traces]** のフレームには、データベース・トレース情報が表示されます。 このフレームは、選択したタイムラインの APM トランザクションの概要ビューに合わせて配置されます。
 
 ## [!UICONTROL Database mysql-slow.log]
 
-![ データベース mysql-slow.log](../../assets/tools/php-tab-database-mysql-slow-log.jpg)
+![&#x200B; データベース mysql-slow.log](../../assets/tools/php-tab-database-mysql-slow-log.jpg)
 
 **[!UICONTROL Database mysql-slow.log]** のフレームは、選択した期間の `mysql-slow.log` ファイルに含まれていたクエリステートメントタイプを示します。

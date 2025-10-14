@@ -16,18 +16,18 @@ ht-degree: 0%
 
 ## [!UICONTROL Alerts]
 
-![ アラート ](../../assets/tools/observation-for-adobe-commerce/quickview_alerts.jpg)
+![&#x200B; アラート &#x200B;](../../assets/tools/observation-for-adobe-commerce/quickview_alerts.jpg)
 
 **[!UICONTROL Alerts]** のフレームには、選択した期間におけるディスク容量の警告およびサーバの使用状況に関するアラートなど、さまざまなアラートが表示されます。 このフレームでは、選択した期間における `SELECT`、`DELETE`、`UPDATE` などのデータベーステーブル操作を確認します。
 
 ## [!UICONTROL Upsize / Downsize by node]
 
-![ ノード別のアップサイズ/ダウンサイズ ](../../assets/tools/observation-for-adobe-commerce/quickview_upsize_by_node.jpg)
+![&#x200B; ノード別のアップサイズ/ダウンサイズ &#x200B;](../../assets/tools/observation-for-adobe-commerce/quickview_upsize_by_node.jpg)
 
 **[!UICONTROL Upsize / Downsize by node]** フレームには、選択した期間におけるノードごとのアップサイズとダウンサイズが表示されます。 これは、選択した期間にクラスターサイズの変更があったかどうかを評価するために使用されます。
 
 ## [!UICONTROL CPU Utilization]
 
-![CPU使用率 ](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
+![CPU使用率 &#x200B;](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
 
 **[!UICONTROL CPU Utilization]** のフレームは、選択した期間のノード別のCPU使用率を示します。

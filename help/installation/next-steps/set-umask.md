@@ -33,7 +33,7 @@ Web サーバーグループには、ファイルシステム内の特定のデ�
 
 `magento_umask` を設定するには：
 
-1. コマンドラインターミナルで、[ ファイルシステムの所有者 ](../prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインします。
+1. コマンドラインターミナルで、[&#x200B; ファイルシステムの所有者 &#x200B;](../prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインします。
 1. アプリケーションインストールディレクトリに移動します。
 
    ```bash
@@ -48,4 +48,4 @@ Web サーバーグループには、ファイルシステム内の特定のデ�
 
    これで、`magento_umask` に `<Magento install dir>` という名前のファイルが作成され、コンテンツは `umask` 番号のみになります。
 
-1. 変更を適用するには、ログアウトしてから [ ファイルシステムの所有者 ](../prerequisites/file-system/overview.md) としてログインし直します。
+1. 変更を適用するには、ログアウトしてから [&#x200B; ファイルシステムの所有者 &#x200B;](../prerequisites/file-system/overview.md) としてログインし直します。

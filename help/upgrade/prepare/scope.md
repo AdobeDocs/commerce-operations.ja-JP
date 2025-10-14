@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # アップグレードの範囲を理解する
 
-[ リリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) を確認して、機能強化、バグ修正、サードパーティやカスタムモジュールに影響を与える可能性のある既知の問題など、リリースの範囲を理解します。
+[&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) を確認して、機能強化、バグ修正、サードパーティやカスタムモジュールに影響を与える可能性のある既知の問題など、リリースの範囲を理解します。
 
 ## 後方互換性のない変更
 
 Adobe Commerce リリースには、後方互換性のない変更が含まれている場合があります。 後方互換性のない変更に関するドキュメントを確認します。以下を参照してください。
 
-- **[大きな変更のハイライト ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)** – 大きな影響を与え、サードパーティモジュールが引き続き機能するように詳細な説明と特別な手順が必要な変更。
-- **[マイナー変更参照 ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)** - クラス、API メンバーシップ、データベース、依存関係の挿入、インターフェイス、レイアウト、システム、および XSD のマイナーな変更について説明するコードベースから生成された参照ドキュメント。
+- **[大きな変更のハイライト &#x200B;](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)** – 大きな影響を与え、サードパーティモジュールが引き続き機能するように詳細な説明と特別な手順が必要な変更。
+- **[マイナー変更参照 &#x200B;](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)** - クラス、API メンバーシップ、データベース、依存関係の挿入、インターフェイス、レイアウト、システム、および XSD のマイナーな変更について説明するコードベースから生成された参照ドキュメント。
 
 ## サードパーティの拡張機能
 
@@ -26,7 +26,7 @@ Adobe Commerce Marketplace の新しい互換性ポリシーにより、リス�
 
 ## カスタムモジュール
 
-アップグレード先のターゲットバージョンと照合して、すべてのカスタムモジュールを確認する必要があります。 これは、アップグレードで最も時間とリソースを消費するプロセスです。 カスタムモジュールを評価する場合、後方互換性のない変更を探し、コントローラの分解などの新しい手法に注意する必要があります。 詳しくは、[ リリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) を参照してください。 また、モジュール開発について [ ベストプラクティス ](https://developer.adobe.com/commerce/php/best-practices/extensions/) に従っていることを確認します。
+アップグレード先のターゲットバージョンと照合して、すべてのカスタムモジュールを確認する必要があります。 これは、アップグレードで最も時間とリソースを消費するプロセスです。 カスタムモジュールを評価する場合、後方互換性のない変更を探し、コントローラの分解などの新しい手法に注意する必要があります。 詳しくは、[&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) を参照してください。 また、モジュール開発について [&#x200B; ベストプラクティス &#x200B;](https://developer.adobe.com/commerce/php/best-practices/extensions/) に従っていることを確認します。
 
 ## [!DNL Upgrade Compatibility Tool]
 
@@ -34,7 +34,7 @@ Adobe Commerce Marketplace の新しい互換性ポリシーにより、リス�
 
 このツールを使用すると、アップグレードの範囲と影響を理解するためにチームが行う手間を軽減できます。 アップグレード時の一般的なコードの問題を回避し、特定された問題を解決する方法について明確な指示を提供するのに役立ちます。 また、アップグレードを成功させるために必要な最も重要な問題の優先順位を付け、アップグレード時の時間とコストの両方を節約することもできます。
 
-[!DNL Upgrade Compatibility Tool] の基本については、次の節を参照してください。 技術的な詳細と高度なユースケースについては、[!DNL Upgrade Compatibility Tool] [ ガイド ](../upgrade-compatibility-tool/overview.md) を参照してください。
+[!DNL Upgrade Compatibility Tool] の基本については、次の節を参照してください。 技術的な詳細と高度なユースケースについては、[!DNL Upgrade Compatibility Tool] [&#x200B; ガイド &#x200B;](../upgrade-compatibility-tool/overview.md) を参照してください。
 
 ### ツールのダウンロード
 
@@ -103,7 +103,7 @@ bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues �
 
 ### ヒントとアドバイス
 
-ツールで特定されたすべての問題は、特定のエラーコードと共にレポートに表示されます。 各問題の詳細については、[ エラーメッセージ参照 ](../upgrade-compatibility-tool/error-messages.md) を参照してください。 Adobeでは、是正手順を計画できるように、各問題のタイプを修正する提案も提供しています。
+ツールで特定されたすべての問題は、特定のエラーコードと共にレポートに表示されます。 各問題の詳細については、[&#x200B; エラーメッセージ参照 &#x200B;](../upgrade-compatibility-tool/error-messages.md) を参照してください。 Adobeでは、是正手順を計画できるように、各問題のタイプを修正する提案も提供しています。
 
 レポートを使用して、アップグレード用のコードの更新に要する作業量を見積もります。 経験に基づいて、特定された問題の合計数と問題の重大度に基づいて、アップグレードに必要な労力を見積もることができます。 これはコマンドラインツールなので、これを自動テストおよびコードチェックスイートに組み込み、JSON 出力を使用してレポートを生成できます。
 

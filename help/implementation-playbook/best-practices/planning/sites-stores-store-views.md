@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -41,5 +41,5 @@ Web サイトやストアはカタログデータの乗数なので、多くの 
 
 ## 追加情報
 
-- [Web サイト、ストア、ストア表示について ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [ 複数の web サイトまたはストアを設定する ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [Web サイト、ストア、ストア表示について &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [&#x200B; 複数の web サイトまたはストアを設定する &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)

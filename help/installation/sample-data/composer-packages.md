@@ -20,19 +20,19 @@ ht-degree: 0%
 
 * 使用済み `composer create-project`
 
-この方法を使用して、Adobe Commerceのサンプルデータを取得できますが、アプリケーションのインストールに使用したのと同じ [ 認証キー ](../prerequisites/authentication-keys.md) を使用する必要があります。
+この方法を使用して、Adobe Commerceのサンプルデータを取得できますが、アプリケーションのインストールに使用したのと同じ [&#x200B; 認証キー &#x200B;](../prerequisites/authentication-keys.md) を使用する必要があります。
 
 >[!NOTE]
 >
->`Could not find package...` や `...no matching package found...` などのエラーが発生した場合は、コマンドに入力ミスがないことを確認してください。 それでもエラーが発生する場合、特にAdobe Commerceを使用している場合は、適切な Composer リポジトリにアクセスできない可能性があります。 [Adobe Commerce サポート ](https://support.magento.com/hc/en-us) にお問い合わせください。
+>`Could not find package...` や `...no matching package found...` などのエラーが発生した場合は、コマンドに入力ミスがないことを確認してください。 それでもエラーが発生する場合、特にAdobe Commerceを使用している場合は、適切な Composer リポジトリにアクセスできない可能性があります。 [Adobe Commerce サポート &#x200B;](https://support.magento.com/hc/en-us) にお問い合わせください。
 
-Composer を使用して、アプリケーションのインストールの前または後にサンプル データをインストールできます。ただし、[ 追加のタスク ](remove-or-update.md) が存在する場合があります。
+Composer を使用して、アプリケーションのインストールの前または後にサンプル データをインストールできます。ただし、[&#x200B; 追加のタスク &#x200B;](remove-or-update.md) が存在する場合があります。
 
-コントリビューションを行う開発者は、[ リポジトリのクローンによるインストール ](git-repositories.md) を参照してください。
+コントリビューションを行う開発者は、[&#x200B; リポジトリのクローンによるインストール &#x200B;](git-repositories.md) を参照してください。
 
 >[!WARNING]
 >
->アプリケーションが [ 実稼動モード ](../../configuration/bootstrap/application-modes.md#production-mode) に設定されている場合は、サンプルデータをインストールしないでください。 最初に [ 開発者モード ](../../configuration/bootstrap/application-modes.md#developer-mode) に切り替えます。 実稼動モードでのサンプルデータのインストール [ 失敗 ](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-)。
+>アプリケーションが [&#x200B; 実稼動モード &#x200B;](../../configuration/bootstrap/application-modes.md#production-mode) に設定されている場合は、サンプルデータをインストールしないでください。 最初に [&#x200B; 開発者モード &#x200B;](../../configuration/bootstrap/application-modes.md#developer-mode) に切り替えます。 実稼動モードでのサンプルデータのインストール [&#x200B; 失敗 &#x200B;](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-)。
 
 コマンドラインを使用してサンプルデータをインストールするには、`<app_root>` ディレクトリで、ファイルシステムの所有者として次のコマンドを入力します。
 
@@ -48,7 +48,7 @@ bin/magento sampledata:deploy
 bin/magento setup:upgrade
 ```
 
-アクションを完了するには、[ 認証 ](../prerequisites/authentication-keys.md) する必要があります。
+アクションを完了するには、[&#x200B; 認証 &#x200B;](../prerequisites/authentication-keys.md) する必要があります。
 
 ## 認証エラー
 
@@ -60,7 +60,7 @@ The 'https://repo.magento.com/packages.json' URL required authentication.
 You must be using the interactive console to authenticate
 ```
 
-エラーが表示された場合は、をアプリケーションのインストールディレクトリに変更して `composer update` を実行します。これにより、[ 認証キー ](../prerequisites/authentication-keys.md) の入力を求められます。
+エラーが表示された場合は、をアプリケーションのインストールディレクトリに変更して `composer update` を実行します。これにより、[&#x200B; 認証キー &#x200B;](../prerequisites/authentication-keys.md) の入力を求められます。
 
 ## サンプルデータのインストールの完了
 

@@ -43,14 +43,14 @@ ht-degree: 0%
 ## 0.5511122
 
 1. すべての開発者は同じ IDE を使用する必要があります。 PhpStorm は、Adobe Commerceの開発に推奨される IDE です。
-1. すべての開発者は、（将来の）実稼動サーバーで使用されるのと同じテクノロジースタックを使用して開発およびテストする必要があります。 このテクノロジースタック内のソフトウェアのバージョンは、実稼動サーバーにインストールされているソフトウェアのメジャーバージョンおよびマイナーバージョンと一致する必要があります。 Adobe Commerceの一般的なテクノロジースタックについて詳しくは、[ システム要件 ](../../../installation/system-requirements.md) を参照してください。
+1. すべての開発者は、（将来の）実稼動サーバーで使用されるのと同じテクノロジースタックを使用して開発およびテストする必要があります。 このテクノロジースタック内のソフトウェアのバージョンは、実稼動サーバーにインストールされているソフトウェアのメジャーバージョンおよびマイナーバージョンと一致する必要があります。 Adobe Commerceの一般的なテクノロジースタックについて詳しくは、[&#x200B; システム要件 &#x200B;](../../../installation/system-requirements.md) を参照してください。
 1. システム管理者またはテクニカルアーキテクトは、一元管理されたローカル開発環境をチームに提供して、同じ最新のローカル環境を確保および促進できます。
 1. 開発者と QA エンジニアは、QA 環境のコマンドライン、データベース、ログファイルにアクセスできる必要があります。 VPN 接続が必要になる場合があります。
 
 ## バージョン管理
 
-モジュールバージョンは、[Semantic Versioning 2.0.0 標準 ](https://semver.org/) に準拠する必要があります。
-Adobe Commerce コードベースの依存関係は、[ モジュールバージョンの依存関係のガイドライン ](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) に従う必要があります。
+モジュールバージョンは、[Semantic Versioning 2.0.0 標準 &#x200B;](https://semver.org/) に準拠する必要があります。
+Adobe Commerce コードベースの依存関係は、[&#x200B; モジュールバージョンの依存関係のガイドライン &#x200B;](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) に従う必要があります。
 
 ## リビジョン管理
 
@@ -58,7 +58,7 @@ Adobe Commerce コードベースの依存関係は、[ モジュールバージ
 
 ## セキュリティ
 
-1. [ セキュアでない関数 ](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/) を使用しないでください。
-1. [XSS 予防戦略 ](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) を適用すべきである。
-1. [ コンテンツセキュリティポリシー ](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) を適用する必要があります。
-1. 新しいAdobe Commerce インスタンスは、「セキュリティ修正の終了」の日付に達していないバージョンの最新のセキュリティリリースに提供する必要があります。 [Adobe Commerce ソフトウェア ライフサイクル ポリシー ](../../../release/lifecycle-policy.md) を参照してください。
+1. [&#x200B; セキュアでない関数 &#x200B;](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/) を使用しないでください。
+1. [XSS 予防戦略 &#x200B;](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) を適用すべきである。
+1. [&#x200B; コンテンツセキュリティポリシー &#x200B;](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) を適用する必要があります。
+1. 新しいAdobe Commerce インスタンスは、「セキュリティ修正の終了」の日付に達していないバージョンの最新のセキュリティリリースに提供する必要があります。 [Adobe Commerce ソフトウェア ライフサイクル ポリシー &#x200B;](../../../release/lifecycle-policy.md) を参照してください。

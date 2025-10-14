@@ -31,13 +31,13 @@ ht-degree: 0%
 1. **データモード**：データベースアセットを一括移行します。
 1. **差分モード**：新規顧客や注文など、増分変更（前回の実行以降に加えられた変更）を移行します。
 
-![ 移行モード ](../../assets/data-migration/MigrationModes2.png)
+![&#x200B; 移行モード &#x200B;](../../assets/data-migration/MigrationModes2.png)
 
 ## 手順
 
-[!DNL Data Migration Tool] では、各モード内で一連の *手順* を使用して、特定のタイプのデータを移行します。 例えば、設定モードでは、すべての設定データを移行する手順として、ストア手順と設定手順の 2 つの手順が使用されます。 これらの各手順（およびその他のモードの手順）で移行される特定のデータについて詳しくは、[[!DNL Data Migration Tool]  技術仕様 ](technical-specification.md) を参照してください。
+[!DNL Data Migration Tool] では、各モード内で一連の *手順* を使用して、特定のタイプのデータを移行します。 例えば、設定モードでは、すべての設定データを移行する手順として、ストア手順と設定手順の 2 つの手順が使用されます。 これらの各手順（およびその他のモードの手順）で移行される特定のデータについて詳しくは、[[!DNL Data Migration Tool]  技術仕様 &#x200B;](technical-specification.md) を参照してください。
 
-![ 移行の概要 ](../../assets/data-migration/MigrationOverview2.png)
+![&#x200B; 移行の概要 &#x200B;](../../assets/data-migration/MigrationOverview2.png)
 
 ## ステージ
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 1. **データ転送**:Magento 1 および 2 からテーブルごとにデータテーブルを転送します。
 1. **ボリュームチェック**：テーブル間のレコード数を比較して、転送が成功したことを確認します。
 
-![ 移行ステージ ](../../assets/data-migration/MigrationSteps2.png)
+![&#x200B; 移行ステージ &#x200B;](../../assets/data-migration/MigrationSteps2.png)
 
 ## ファイルのマッピング
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ## 移行フロー図
 
-![ 移行フロー ](../../assets/data-migration/migration_flow.png)
+![&#x200B; 移行フロー &#x200B;](../../assets/data-migration/migration_flow.png)
 
 [[!DNL Data Migration Tool] 技術仕様](technical-specification.md)
 
@@ -79,13 +79,13 @@ Magento 2 の移行には、データ、拡張機能、カスタムコード、�
 
 アドビでは、Magento 2 でMagento 1 拡張機能を使用するお客様を支援するために、開発コミュニティと協力して取り組んでいます。 お気に入りの拡張機能の最新版をダウンロードまたは購入できる [Commerce Marketplace](https://marketplace.magento.com/) を紹介します。
 
-Magento 2 用の拡張機能の開発について詳しくは、「[PHP 開発者ガイド ](https://developer.adobe.com/commerce/php/development/)」を参照してください。
+Magento 2 用の拡張機能の開発について詳しくは、「[PHP 開発者ガイド &#x200B;](https://developer.adobe.com/commerce/php/development/)」を参照してください。
 
 ### テーマとカスタマイズ
 
-Magento 2 は、マーチャントが革新的なショッピングエクスペリエンスを創出し、新しいレベルに拡張するための比類のない機能を提供する新しいアプローチとテクノロジーを使用しています。 これらの高度な機能を活用するには、開発者はテーマやカスタマイズを変更する必要があります。 Magento 2[ テーマ ](https://developer.adobe.com/commerce/frontend-core/guide/themes/)、[ レイアウト ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) および [ カスタマイズ ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage/) を作成するためのドキュメントがオンラインで利用できます。
+Magento 2 は、マーチャントが革新的なショッピングエクスペリエンスを創出し、新しいレベルに拡張するための比類のない機能を提供する新しいアプローチとテクノロジーを使用しています。 これらの高度な機能を活用するには、開発者はテーマやカスタマイズを変更する必要があります。 Magento 2[&#x200B; テーマ &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/themes/)、[&#x200B; レイアウト &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) および [&#x200B; カスタマイズ &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage/) を作成するためのドキュメントがオンラインで利用できます。
 
 ## 移行の努力
 
 1.x バージョン間（v1.12 から v1.14 など）のアップグレードと同様に、Magento 1 からMagento 2 への移行に必要な作業レベルは、サイトの構築方法とそのカスタマイズレベルによって異なります。
-しかし、私たちは常に [!DNL Data Migration Tool] を改善しています（詳しくは [ 変更ログ ](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md) を参照）。そのため、移行の取り組みは減少し続けています。
+しかし、私たちは常に [!DNL Data Migration Tool] を改善しています（詳しくは [&#x200B; 変更ログ &#x200B;](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md) を参照）。そのため、移行の取り組みは減少し続けています。

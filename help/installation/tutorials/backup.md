@@ -19,11 +19,11 @@ ht-degree: 0%
 
 バックアップは `var/backups` ディレクトリに保存され、[`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンドを使用していつでも復元できます。
 
-バックアップ後、後で [ ロールバック ](#rollback) できます。
+バックアップ後、後で [&#x200B; ロールバック &#x200B;](#rollback) できます。
 
 >[!TIP]
 >
->クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、[ クラウドガイド ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) の _スナップショットとバックアップの管理_ を参照してください。
+>クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、[&#x200B; クラウドガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) の _スナップショットとバックアップの管理_ を参照してください。
 
 ## バックアップを有効にする
 
@@ -50,7 +50,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 
 これをコマンドラインで実行するか、シェルスクリプトを編集してユーザーに恒久的な設定を与えることができます。
 
-続行する前に、まだ実行していない場合は、[ ファイルシステムの所有者 ](../prerequisites/file-system/overview.md) に切り替えます。
+続行する前に、まだ実行していない場合は、[&#x200B; ファイルシステムの所有者 &#x200B;](../prerequisites/file-system/overview.md) に切り替えます。
 
 コマンド：
 
@@ -66,7 +66,7 @@ ulimit -s 65536
 
 ユーザーの Bash シェルにオプションで値を設定するには：
 
-1. まだ切り替えていない場合は、[ ファイルシステムの所有者 ](../prerequisites/file-system/overview.md) に切り替えます。
+1. まだ切り替えていない場合は、[&#x200B; ファイルシステムの所有者 &#x200B;](../prerequisites/file-system/overview.md) に切り替えます。
 1. `/home/<username>/.bashrc` をテキストエディターで開きます。
 1. 次の行を追加します。
 
@@ -78,7 +78,7 @@ ulimit -s 65536
 
 >[!WARNING]
 >
->[`pcre.recursion_limit` ファイルで ](https://www.php.net/manual/en/pcre.configuration.php)`php.ini` の値を設定することは避けることをお勧めします。設定すると、エラー通知のない不完全なロールバックが生じる可能性があるからです。
+>[`pcre.recursion_limit` ファイルで &#x200B;](https://www.php.net/manual/en/pcre.configuration.php)`php.ini` の値を設定することは避けることをお勧めします。設定すると、エラー通知のない不完全なロールバックが生じる可能性があるからです。
 
 ## バックアップ中
 

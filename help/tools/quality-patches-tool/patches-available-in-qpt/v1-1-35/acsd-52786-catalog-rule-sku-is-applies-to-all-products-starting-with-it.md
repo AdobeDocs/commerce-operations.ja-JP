@@ -39,7 +39,7 @@ ACSD-52786 パッチでは、特定の SKU で始まるすべての製品にカ�
 1. SKU が「24」の製品と SKU が「24-MB01」の製品の 2 つを作成します。
 1. **[!UICONTROL Marketing]**/**[!UICONTROL Catalog Price Rule]**/**[!UICONTROL Add New Rule]** に移動します。
 1. 次の条件を適用します。
-   * 次の条件の *[!UICONTROL If **&#x200B; すべて &#x200B;** は**&#x200B; TRUE &#x200B;**]*&#x200B;です。*[!UICONTROL SKU is 24]*
+   * 次の条件の *[!UICONTROL If **&#x200B; すべて &#x200B;** は&#x200B;**&#x200B; TRUE &#x200B;**]*&#x200B;です。*[!UICONTROL SKU is 24]*
 1. アクションで割引金額を設定します。
 1. 「**[!UICONTROL Save and Apply]**」をクリックします。
 1. キャッシュをフラッシュします。
@@ -57,15 +57,15 @@ ACSD-52786 パッチでは、特定の SKU で始まるすべての製品にカ�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [ を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
+* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
 
 
 QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 - Adobe Commerce（オンプレミス）: 2.x.x
 - クラウドインフラストラクチャー上のAdobe Commerce:2.x.x
-- MySQL: [ サポートされている任意のバージョン ](../../installation/prerequisites/database/mysql.md)
+- MySQL: [&#x200B; サポートされている任意のバージョン &#x200B;](../../installation/prerequisites/database/mysql.md)
 
 ## 増分 ID を変更する必要があるのはいつですか？
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->また、PayPal の支払い受け取り環境設定で請求書 ID ごとに複数の支払いを許可することで、PayPal の支払いゲートウェイの問題を修正することもできます。 [ ナレッジベース ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=ja) の「PayPal ゲートウェイの拒否リクエスト – 請求書の重複問題 _」を参照してください_。
+>また、PayPal の支払い受け取り環境設定で請求書 ID ごとに複数の支払いを許可することで、PayPal の支払いゲートウェイの問題を修正することもできます。 [&#x200B; ナレッジベース &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=ja) の「PayPal ゲートウェイの拒否リクエスト – 請求書の重複問題 _」を参照してください_。
 
 ## 前提条件の手順
 

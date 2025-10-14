@@ -23,7 +23,7 @@ Source コードは、開発プロセスの間、次のような複数の安定�
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerceオンプレミス
@@ -40,7 +40,7 @@ Source コードは、開発プロセスの間、次のような複数の安定�
 
 >[!TIP]
 >
->クラウドインフラストラクチャプロジェクト上のAdobe Commerceには、様々な環境に対応する特定のブランチが含まれます。 [Cloud Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=ja) の [Pro プロジェクトワークフロー ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=ja) および _スタータープロジェクトワークフロー_ を参照してください。
+>クラウドインフラストラクチャプロジェクト上のAdobe Commerceには、様々な環境に対応する特定のブランチが含まれます。 [Cloud Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=ja) の [Pro プロジェクトワークフロー &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=ja) および _スタータープロジェクトワークフロー_ を参照してください。
 
 ## ブランチ戦略
 
@@ -48,9 +48,9 @@ Source コードは、開発プロセスの間、次のような複数の安定�
 
 詳しくは、次の外部リソースを参照してください。
 
-- [ 分岐ワークフロー ](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
-- [ 分散ワークフロー ](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
-- [ ソースコードブランチを管理するためのパターン ](https://martinfowler.com/articles/branching-patterns.html)
-- [ 成功した Git ブランチモデル ](https://nvie.com/posts/a-successful-git-branching-model/)
-- [GitHub フロー ](https://docs.github.com/en/get-started/quickstart/github-flow)
-- [GitLab のフロー ](https://about.gitlab.com/blog/2023/07/27/gitlab-flow-duo/)
+- [&#x200B; 分岐ワークフロー &#x200B;](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
+- [&#x200B; 分散ワークフロー &#x200B;](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
+- [&#x200B; ソースコードブランチを管理するためのパターン &#x200B;](https://martinfowler.com/articles/branching-patterns.html)
+- [&#x200B; 成功した Git ブランチモデル &#x200B;](https://nvie.com/posts/a-successful-git-branching-model/)
+- [GitHub フロー &#x200B;](https://docs.github.com/en/get-started/quickstart/github-flow)
+- [GitLab のフロー &#x200B;](https://about.gitlab.com/blog/2023/07/27/gitlab-flow-duo/)

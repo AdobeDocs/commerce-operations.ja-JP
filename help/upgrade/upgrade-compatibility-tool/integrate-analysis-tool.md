@@ -13,25 +13,25 @@ ht-degree: 0%
 
 [!DNL Site-Wide Analysis Tool] は、Adobe Commerce インスタンスのセキュリティと操作性を確保するために、24 時間 365 日、リアルタイムのパフォーマンスモニタリング、レポート、推奨事項を提供します。
 
-[!DNL Upgrade Compatibility Tool] が [!DNL Site-Wide Analysis Tool] と統合され、技術者以外のユーザーが [!DNL Upgrade Compatibility Tool] を実行して、各ファイルの問題のリストを含む [ レポート ](../upgrade-compatibility-tool/reports.md) を取得できるようになりました。
+[!DNL Upgrade Compatibility Tool] が [!DNL Site-Wide Analysis Tool] と統合され、技術者以外のユーザーが [!DNL Upgrade Compatibility Tool] を実行して、各ファイルの問題のリストを含む [&#x200B; レポート &#x200B;](../upgrade-compatibility-tool/reports.md) を取得できるようになりました。
 
-詳しくは、[[!DNL Site-Wide Analysis Tool]  ユーザーガイド ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/site-wide-analysis-tool/access) を参照してください。
+詳しくは、[[!DNL Site-Wide Analysis Tool]  ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/site-wide-analysis-tool/access) を参照してください。
 
 ## [!DNL Upgrade Compatibility Tool] から [!DNL Site-Wide Analysis Tool] を実行します
 
 プロジェクトの [!DNL Site-Wide Analysis Tool] ダッシュボードに移動し、[!DNL Upgrade Compatibility Tool] ウィジェットを見つけます。
 
-![UCT SWAT ウィジェット – 初期 ](../../assets/upgrade-guide/uct-swat-initial.png)
+![UCT SWAT ウィジェット – 初期 &#x200B;](../../assets/upgrade-guide/uct-swat-initial.png)
 
 「**[!UICONTROL Run Upgrade Scan]**」をクリックします。 プロジェクトのサイズによっては、スキャンに時間がかかる場合があります。 スピナーは、スキャンが進行中であることを示します。
 
-![UCT SWAT ウィジェット – 処理中 ](../../assets/upgrade-guide/uct-swat-progress.png)
+![UCT SWAT ウィジェット – 処理中 &#x200B;](../../assets/upgrade-guide/uct-swat-progress.png)
 
 スキャンが完了すると、高レベルの結果がウィジェットに表示されます。
 
-![UCT SWAT ウィジェット – 結果 ](../../assets/upgrade-guide/uct-swat-results.png)
+![UCT SWAT ウィジェット – 結果 &#x200B;](../../assets/upgrade-guide/uct-swat-results.png)
 
-**[!UICONTROL Download Report]** をクリックして [!DNL Upgrade Compatibility Tool] [HTML レポートを取得し ](../upgrade-compatibility-tool/reports.md#html-report) 詳細を確認します。
+**[!UICONTROL Download Report]** をクリックして [!DNL Upgrade Compatibility Tool] [HTML レポートを取得し &#x200B;](../upgrade-compatibility-tool/reports.md#html-report) 詳細を確認します。
 
 
 >[!NOTE]

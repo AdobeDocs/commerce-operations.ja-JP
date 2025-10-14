@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Alerts]
 
-[!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts] ページには、マーチャント向けのAdobe Commerce Managed Alerts パッチが表示されます。 Adobeは、業界のベストプラクティスを使用してパフォーマンス指標をトラッキングする [!DNL Managed Alerts] ールを提供します。 [ の ](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce)Adobe Commerceの管理アラート [!DNL support knowledge base] に関する記事を参照してください。
+[!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts] ページには、マーチャント向けのAdobe Commerce Managed Alerts パッチが表示されます。 Adobeは、業界のベストプラクティスを使用してパフォーマンス指標をトラッキングする [!DNL Managed Alerts] ールを提供します。 [&#x200B; の &#x200B;](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce)Adobe Commerceの管理アラート [!DNL support knowledge base] に関する記事を参照してください。
 
 ## 使用するタイミング
 

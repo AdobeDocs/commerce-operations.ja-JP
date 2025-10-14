@@ -24,14 +24,14 @@ Adobe Commerce サイトの重要な更新や操作をピーク外の時間帯�
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
 
 ## 追加情報
 
-- [ キャッシュのベストプラクティス ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
-- [ プライベートコンテンツ：プライベートコンテンツを無効にする ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [&#x200B; キャッシュのベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
+- [&#x200B; プライベートコンテンツ：プライベートコンテンツを無効にする &#x200B;](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [ハードウェアの推奨事項：キャッシュ](../../../performance/hardware.md#caches)
 - [詳細設定：Redis の設定](../../../performance/advanced-setup.md#set-up-redis)

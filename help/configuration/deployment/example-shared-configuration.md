@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 始める前に
 
-開始する前に、[ 開発、ビルド、および実稼動システムの前提条件 ](../deployment/prerequisites.md) で説明されているように、ファイルシステムの権限と所有権を設定します。
+開始する前に、[&#x200B; 開発、ビルド、および実稼動システムの前提条件 &#x200B;](../deployment/prerequisites.md) で説明されているように、ファイルシステムの権限と所有権を設定します。
 
 ## 前提
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
    次の図に例を示します。
 
-   ![ 開発システムでのロケールオプションの設定 ](../../assets/configuration/split-deploy-set-locale.png)
+   ![&#x200B; 開発システムでのロケールオプションの設定 &#x200B;](../../assets/configuration/split-deploy-set-locale.png)
 
 1. **タイムゾーン** リストで、「**GMT+00:00 （UTC）**」をクリックします。
 1. **重み付け単位** フィールドの横にある **システム値を使用** チェックボックスをオフにします。
@@ -84,10 +84,10 @@ ht-degree: 0%
 
    設定したオプションは次のように表示されます。
 
-   ![ 設定オプションは管理で編集できません ](../../assets/configuration/split-deploy-not-editable.png)
+   ![&#x200B; 設定オプションは管理で編集できません &#x200B;](../../assets/configuration/split-deploy-not-editable.png)
 
 >[!INFO]
 >
->管理者でロックされている設定を変更するには、[`magento config:set --lock` コマンドを使用します ](../cli/set-configuration-values.md)。
+>管理者でロックされている設定を変更するには、[`magento config:set --lock` コマンドを使用します &#x200B;](../cli/set-configuration-values.md)。
 
 <!-- Last updated from includes: 2024-07-18 15:50:54 -->

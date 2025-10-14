@@ -47,14 +47,14 @@ cd <your Magento 2 clone directory>
 git branch
 ```
 
-現在 `develop` ブランチにいる場合は、続行する前に [ リリース済みのブランチ ](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) に変更する必要があります。
+現在 `develop` ブランチにいる場合は、続行する前に [&#x200B; リリース済みのブランチ &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) に変更する必要があります。
 
-Adobe Commerce ソフトウェアをまだインストールしていない場合は、[ 今すぐインストール ](../../installation/prerequisites/commerce.md) してください。
-GitHub リポジトリをクローンする場合は、[ （Contributor） GitHub リポジトリのクローン ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) で説明されているように、リリースタグをチェックアウトしてください。
+Adobe Commerce ソフトウェアをまだインストールしていない場合は、[&#x200B; 今すぐインストール &#x200B;](../../installation/prerequisites/commerce.md) してください。
+GitHub リポジトリをクローンする場合は、[&#x200B; （Contributor） GitHub リポジトリのクローン &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) で説明されているように、リリースタグをチェックアウトしてください。
 
 ## [!DNL Data Migration Tool] のリリース済みバージョンの検索
 
-[ GitHub リポジトリの ](https://github.com/magento/data-migration-tool/releases) リリース [!DNL Data Migration Tool] ページに移動して、使用可能なリリース済みバージョンを見つけます。
+[&#x200B; GitHub リポジトリの &#x200B;](https://github.com/magento/data-migration-tool/releases) リリース [!DNL Data Migration Tool] ページに移動して、使用可能なリリース済みバージョンを見つけます。
 
 ## [!DNL Data Migration Tool] のインストール
 
@@ -65,14 +65,14 @@ GitHub リポジトリをクローンする場合は、[ （Contributor） GitHu
 
 インストールする前に、次のことを確認します。
 
-- [ 前提条件 ](prerequisites.md) セクションに記載されているすべてのタスクを完了しました
-- Magento 2 ソフトウェアの [ バージョンの確認 ](install.md#check-your-version)
+- [&#x200B; 前提条件 &#x200B;](prerequisites.md) セクションに記載されているすべてのタスクを完了しました
+- Magento 2 ソフトウェアの [&#x200B; バージョンの確認 &#x200B;](install.md#check-your-version)
 
 ### `repo.magento.com` からのインストール
 
 [!DNL Data Migration Tool] をインストールするには、Magento ルートインストールディレクトリの `composer.json` を更新して、[!DNL Data Migration Tool] パッケージの場所を指定する必要があります。
 
-1. [ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインするか、に切り替えます。
+1. [&#x200B; ファイルシステムの所有者 &#x200B;](../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインするか、に切り替えます。
 1. アプリケーションのルートディレクトリに移動します。
 1. 次のコマンドを入力します。
 
@@ -96,13 +96,13 @@ GitHub リポジトリをクローンする場合は、[ （Contributor） GitHu
    composer require magento/data-migration-tool:2.2.0
    ```
 
-1. プロンプトが表示されたら、[ 認証キー ](../../installation/prerequisites/authentication-keys.md) を入力します。 公開鍵はユーザー名で、秘密鍵はパスワードです。
+1. プロンプトが表示されたら、[&#x200B; 認証キー &#x200B;](../../installation/prerequisites/authentication-keys.md) を入力します。 公開鍵はユーザー名で、秘密鍵はパスワードです。
 
 ### GitHub からのインストール
 
 GitHub リポジトリのクローンを作成した場合は、次の手順に従って [!DNL Data Migration Tool] をインストールします。
 
-1. [ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインするか、に切り替えます。
+1. [&#x200B; ファイルシステムの所有者 &#x200B;](../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインするか、に切り替えます。
 1. アプリケーションのルートディレクトリに移動します。
 1. 次のコマンドを入力します。
 

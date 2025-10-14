@@ -39,7 +39,7 @@ ACSD-56447 パッチでは、並行する web REST API リクエストを介し�
 1. [!DNL Postman] を使用して REST API 呼び出しリクエストを行うための顧客トークンを生成します。
 1. 顧客の買い物かごを作成します。
 1. 上記で生成したトークンを使用して、顧客用の空の買い物かごを作成します。
-1. CURL を使用すると、並行して実行される 2 つの `AddProductsToCart` リクエストを作成できます。 開発者向けドキュメントの [ 注文処理のチュートリアル ](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/) の手順に従います。
+1. CURL を使用すると、並行して実行される 2 つの `AddProductsToCart` リクエストを作成できます。 開発者向けドキュメントの [&#x200B; 注文処理のチュートリアル &#x200B;](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/) の手順に従います。
 
 <u> 期待される結果 </u>:
 
@@ -53,15 +53,15 @@ ACSD-56447 パッチでは、並行する web REST API リクエストを介し�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [ を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
+* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
 
 
 QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。

@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ## デプロイメント手順
 
-1. [ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) として実稼動サーバーにログインするか、に切り替えます。
+1. [&#x200B; ファイルシステムの所有者 &#x200B;](../../installation/prerequisites/file-system/overview.md) として実稼動サーバーにログインするか、に切り替えます。
 
 1. ディレクトリをCommerceのベースディレクトリに変更します。
 

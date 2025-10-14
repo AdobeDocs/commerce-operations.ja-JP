@@ -16,13 +16,13 @@ Adobe Commerce 2.4 以降、すべてのインストールは、[Elasticsearch](
 
 >[!NOTE]
 >
->OpenSearch のサポートは 2.4.4 で追加されました。OpenSearch は、Elasticsearchの互換性のあるフォークです。 Elasticsearch 7 の設定手順はすべて OpenSearch に適用されます。 [Elasticsearchから OpenSearch への移行 ](../../../upgrade/prepare/opensearch-migration.md) は、OpenSearch への切り替えに関するガイダンスを提供します。
+>OpenSearch のサポートは 2.4.4 で追加されました。OpenSearch は、Elasticsearchの互換性のあるフォークです。 Elasticsearch 7 の設定手順はすべて OpenSearch に適用されます。 [Elasticsearchから OpenSearch への移行 &#x200B;](../../../upgrade/prepare/opensearch-migration.md) は、OpenSearch への切り替えに関するガイダンスを提供します。
 
 ## サポートされているバージョン
 
 Adobe Commerce 2.4.4 以降をインストールする前に、Elasticsearchまたは OpenSearch をインストールして設定する必要があります。
 
-特定のバージョン情報については、[ システム要件 ](../../system-requirements.md) を参照してください。
+特定のバージョン情報については、[&#x200B; システム要件 &#x200B;](../../system-requirements.md) を参照してください。
 
 ## 推奨設定
 
@@ -35,13 +35,13 @@ Adobe Commerce 2.4.4 以降をインストールする前に、Elasticsearchま�
 
 次のタスクは、次の図に従ってシステムを設定していることを前提としています。
 
-![ 検索エンジンの図 ](../../../assets/installation/search-engine-config.svg)
+![&#x200B; 検索エンジンの図 &#x200B;](../../../assets/installation/search-engine-config.svg)
 
 上の図は次の内容を示しています。
 
 * Commerce アプリケーションと検索エンジンは、異なるホストにインストールされています。
 
-  別々のホストで実行する場合は、プロキシを機能させる必要があります。 （検索エンジンのクラスタリングはこのガイドの範囲外ですが、[Elasticsearch クラスタリングのドキュメントで詳細を確認でき ](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html) す。）
+  別々のホストで実行する場合は、プロキシを機能させる必要があります。 （検索エンジンのクラスタリングはこのガイドの範囲外ですが、[Elasticsearch クラスタリングのドキュメントで詳細を確認でき &#x200B;](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html) す。）
 
 * 各ホストには独自の web サーバーがあり、web サーバーは同じである必要はありません。
 
@@ -82,10 +82,10 @@ Adobe Commerce 2.4.4 以降をインストールする前に、Elasticsearchま�
 
 ファイアウォールまたは SELinux が有効な状態での通信を許可するルールを設定するには、次のリソースを参照してください。
 
-* [iptables の使い方 ](https://help.ubuntu.com/community/IptablesHowTo)
-* [iptables ルールの編集方法（fedora プロジェクト） ](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
-* [SELinux の概要（CentOS.org） ](https://www.centos.org)
-* [SELinux のハウツー Wiki （CentOS.org） ](https://wiki.centos.org/HowTos/SELinux)
+* [iptables の使い方 &#x200B;](https://help.ubuntu.com/community/IptablesHowTo)
+* [iptables ルールの編集方法（fedora プロジェクト） &#x200B;](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
+* [SELinux の概要（CentOS.org） &#x200B;](https://www.centos.org)
+* [SELinux のハウツー Wiki （CentOS.org） &#x200B;](https://wiki.centos.org/HowTos/SELinux)
 
 ### Java Software Development Kit のインストール
 
@@ -104,7 +104,7 @@ java -version
 
 #### CentOS への JDK のインストール
 
-詳しくは、この [Digital Ocean チュートリアル ](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8) を参照してください。
+詳しくは、この [Digital Ocean チュートリアル &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8) を参照してください。
 
 JRE ではなく JDK をインストールし *くだ* い。
 
@@ -114,7 +114,7 @@ yum -y install java-1.8.0-openjdk
 
 >[!NOTE]
 >
->Java バージョン 8 は、すべてのオペレーティングシステムで使用できるわけではありません。 例えば、[Ubuntu で利用可能なパッケージのリストを検索 ](https://packages.ubuntu.com/) できます。
+>Java バージョン 8 は、すべてのオペレーティングシステムで使用できるわけではありません。 例えば、[Ubuntu で利用可能なパッケージのリストを検索 &#x200B;](https://packages.ubuntu.com/) できます。
 
 #### Ubuntu への JDK のインストール
 
@@ -128,11 +128,11 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-その他のオプションについては、[Oracle ドキュメント ](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html) を参照してください。
+その他のオプションについては、[Oracle ドキュメント &#x200B;](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html) を参照してください。
 
 ### 検索エンジンのインストール
 
-プラットフォーム固有の手順については、[Elasticsearchのインストール ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) または [OpenSearch のインストールと設定 ](https://opensearch.org/docs/latest/opensearch/install/index/) に従ってください。
+プラットフォーム固有の手順については、[Elasticsearchのインストール &#x200B;](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) または [OpenSearch のインストールと設定 &#x200B;](https://opensearch.org/docs/latest/opensearch/install/index/) に従ってください。
 
 Elasticsearchが動作していることを確認するには、動作しているサーバーで次のコマンドを入力します。
 
@@ -159,9 +159,9 @@ curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 
 ## Elasticsearchのアップグレード
 
-データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストに関する手順について詳しくは、[Elasticsearchのアップグレード ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) を参照してください。 現在のElasticsearchのバージョンに応じて、クラスターの完全な再起動は必要な場合も必要ない場合もあります。
+データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストに関する手順について詳しくは、[Elasticsearchのアップグレード &#x200B;](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) を参照してください。 現在のElasticsearchのバージョンに応じて、クラスターの完全な再起動は必要な場合も必要ない場合もあります。
 
-Elasticsearchには JDK 1.8 以降が必要です。 インストールされている JDK のバージョンを確認するには、[Java Software Development Kit のインストール ](#install-the-java-software-development-kit) を参照してください。
+Elasticsearchには JDK 1.8 以降が必要です。 インストールされている JDK のバージョンを確認するには、[Java Software Development Kit のインストール &#x200B;](#install-the-java-software-development-kit) を参照してください。
 
 ## その他のリソース
 

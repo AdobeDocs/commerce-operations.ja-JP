@@ -20,10 +20,10 @@ Commerce ソフトウェアのインストール方法に応じて、`<magento_r
 
 Elasticsearchと OpenSearch でストップワードを使用する方法について詳しくは、次のリソースを参照してください。
 
-- [ ストップワード：パフォーマンスと精度の比較 ](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
-- [ ストップワードの長所と短所 ](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
-- [ ストップワードの使用 ](https://www.elastic.co/guide/en/elasticsearch/guide/current/using-stopwords.html)
-- [ ストップワードとパフォーマンス ](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords-performance.html)
+- [&#x200B; ストップワード：パフォーマンスと精度の比較 &#x200B;](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
+- [&#x200B; ストップワードの長所と短所 &#x200B;](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
+- [&#x200B; ストップワードの使用 &#x200B;](https://www.elastic.co/guide/en/elasticsearch/guide/current/using-stopwords.html)
+- [&#x200B; ストップワードとパフォーマンス &#x200B;](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords-performance.html)
 
 ## ストップワードの設定
 
@@ -35,7 +35,7 @@ Elasticsearchと OpenSearch でストップワードを使用する方法につ�
 
 **ストップワードを編集するには**:
 
-1. Commerce サーバーにログインするか、[ ファイルシステムのオーナー ](../../installation/prerequisites/file-system/overview.md) に切り替えます。
+1. Commerce サーバーにログインするか、[&#x200B; ファイルシステムのオーナー &#x200B;](../../installation/prerequisites/file-system/overview.md) に切り替えます。
 1. テキストエディターを使用して、ストップワードファイルを `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` ディレクトリで開きます。
 
    CSV ファイルでは、命名規則 `stopwords_<locale_code>.csv` を使用します。 例えば、ドイツ語のストップワードファイルの名前は `stopwords_de_DE.csv` です。
@@ -61,7 +61,7 @@ Elasticsearchと OpenSearch でストップワードを使用する方法につ�
 
 **ロケールのストップワードを追加するには**:
 
-1. Commerce サーバーにログインするか、[ ファイルシステムのオーナー ](../../installation/prerequisites/file-system/overview.md) に切り替えます。
+1. Commerce サーバーにログインするか、[&#x200B; ファイルシステムのオーナー &#x200B;](../../installation/prerequisites/file-system/overview.md) に切り替えます。
 
 1. テキストエディターを使用して、`stopwords_<locale_code>.csv` ディレクトリに `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` というストップワードファイルを作成します。
 
@@ -126,7 +126,7 @@ Elasticsearchと OpenSearch でストップワードを使用する方法につ�
 
 ## モジュールからディレクトリを変更するには
 
-1. [ モジュールの作成 ](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
+1. [&#x200B; モジュールの作成 &#x200B;](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
 1. モジュールに、手順 `etc/di.xml` 追加します。
 
    ```xml

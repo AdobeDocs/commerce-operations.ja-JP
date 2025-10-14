@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # 支払い処理と保存のベストプラクティス
 
-[PCI コンプライアンス ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html?lang=ja) を維持するための主な原則の 1 つは、クレジットカードの支払いを適切に処理し、保存する戦略を持つことです。
+[PCI コンプライアンス &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html?lang=ja) を維持するための主な原則の 1 つは、クレジットカードの支払いを適切に処理し、保存する戦略を持つことです。
 
-Adobe Commerceへのカード会員データの保存は **厳しく禁止** されており、Payment Card Industry Data Security Standard （PCI-DSS）に基づくマーチャントとしての義務に違反する可能性があります。 共有責任モデルと加盟店債務のガイドラインについて詳しくは、Adobe セキュリティ センターの [Adobe Commerce共有責任モデル ガイド ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) を参照してください。
+Adobe Commerceへのカード会員データの保存は **厳しく禁止** されており、Payment Card Industry Data Security Standard （PCI-DSS）に基づくマーチャントとしての義務に違反する可能性があります。 共有責任モデルと加盟店債務のガイドラインについて詳しくは、Adobe セキュリティ センターの [Adobe Commerce共有責任モデル ガイド &#x200B;](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) を参照してください。
 
-以下のベストプラクティスに従って、e コマースサイトで支払い情報を適切に処理してください。 セキュリティのベストプラクティスに関するその他のガイダンスについては、[ サイトとインフラストラクチャのセキュリティ保護 ](../launch/security-best-practices.md) を参照してください。
+以下のベストプラクティスに従って、e コマースサイトで支払い情報を適切に処理してください。 セキュリティのベストプラクティスに関するその他のガイダンスについては、[&#x200B; サイトとインフラストラクチャのセキュリティ保護 &#x200B;](../launch/security-best-practices.md) を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 * クラウドインフラストラクチャー上のAdobe Commerce
 * Adobe Commerce オンプレミス
@@ -53,4 +53,4 @@ Adobe Commerceへのカード会員データの保存は **厳しく禁止** さ
 
 ## 追加情報
 
-Adobeによるお勧めの支払いソリューションを探している場合は、[Adobe支払いサービス ](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html?lang=ja) を検討してください。
+Adobeによるお勧めの支払いソリューションを探している場合は、[Adobe支払いサービス &#x200B;](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html?lang=ja) を検討してください。

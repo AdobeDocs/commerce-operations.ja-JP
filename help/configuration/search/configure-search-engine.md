@@ -19,13 +19,13 @@ ht-degree: 0%
 >バージョン 2.4.4 および 2.4.3-p2 では、**Elasticsearch** というラベルの付いたすべてのフィールドも OpenSearch に適用されます。
 >&#x200B;>バージョン 2.4.6 でElasticsearch 8.x がサポートされたとき、Elasticsearch設定と OpenSearch 設定を区別する新しいラベルが作成されました。
 
-検索エンジンの設定について詳しくは、[ ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=ja) を参照してください。
+検索エンジンの設定について詳しくは、[&#x200B; ユーザーガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=ja) を参照してください。
 
 ## 管理者からの検索エンジンの設定
 
 >[!TIP]
 >
->新しい検索エンジン バージョンにアップグレードする手順については、[ アップグレードの前提条件 ](../../upgrade/prepare/prerequisites.md) を参照してください。
+>新しい検索エンジン バージョンにアップグレードする手順については、[&#x200B; アップグレードの前提条件 &#x200B;](../../upgrade/prepare/prerequisites.md) を参照してください。
 
 Elasticsearchまたは OpenSearch を使用するようにシステムを設定するには：
 
@@ -47,7 +47,7 @@ Elasticsearchまたは OpenSearch を使用するようにシステムを設定�
 
    応答の例：
 
-   ![ 成功 ](../../assets/configuration/elastic_test-success.png)
+   ![&#x200B; 成功 &#x200B;](../../assets/configuration/elastic_test-success.png)
 
    続行：
 
@@ -56,7 +56,7 @@ Elasticsearchまたは OpenSearch を使用するようにシステムを設定�
 
    以下が表示されます。
 
-   ![ 失敗 ](../../assets/configuration/elastic_test-fail.png)
+   ![&#x200B; 失敗 &#x200B;](../../assets/configuration/elastic_test-fail.png)
 
 その場合は、次の操作を試してください。
 
@@ -89,13 +89,13 @@ Elasticsearchまたは OpenSearch を使用するようにシステムを設定�
 1. 「**[!UICONTROL Page Cache]**」の横にあるチェックボックスをオンにします。
 1. 右上の **[!UICONTROL Actions]** リストで、「**更新**」をクリックします。
 
-   ![ キャッシュ管理 ](../../assets/configuration/refresh-cache.png)
+   ![&#x200B; キャッシュ管理 &#x200B;](../../assets/configuration/refresh-cache.png)
 
 コマンドラインを使用してキャッシュをクリーンアップするには：[`bin/magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types)
 
 コマンドラインを使用してインデックスを再作成するには：
 
-1. [ ファイルシステムのオーナー ](../../installation/prerequisites/file-system/overview.md) としてCommerce サーバーにログインするか、に切り替えます。
+1. [&#x200B; ファイルシステムのオーナー &#x200B;](../../installation/prerequisites/file-system/overview.md) としてCommerce サーバーにログインするか、に切り替えます。
 1. 次のいずれかのコマンドを入力します。
 
    次のコマンドを入力して、カタログ検索インデックスのみを再インデックス化します。
@@ -114,4 +114,4 @@ Elasticsearchまたは OpenSearch を使用するようにシステムを設定�
 
    >[!INFO]
    >
-   >キャッシュとは異なり、インデクサーは cron ジョブによって更新されます。 検索エンジンの使用を開始する前に、[cron が有効になっていること ](../cli/configure-cron-jobs.md) を確認します。
+   >キャッシュとは異なり、インデクサーは cron ジョブによって更新されます。 検索エンジンの使用を開始する前に、[cron が有効になっていること &#x200B;](../cli/configure-cron-jobs.md) を確認します。

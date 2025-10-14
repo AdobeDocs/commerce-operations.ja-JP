@@ -39,8 +39,8 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 
 開始する前に、次の操作を行う必要があります。
 
-* データベースサーバーに [MySQL サーバーをインストール ](mysql.md) します。
-* データベースサーバーで [ データベースインスタンスを作成 ](mysql.md#configuring-the-database-instance) します。
+* データベースサーバーに [MySQL サーバーをインストール &#x200B;](mysql.md) します。
+* データベースサーバーで [&#x200B; データベースインスタンスを作成 &#x200B;](mysql.md#configuring-the-database-instance) します。
 * Adobe Commerce web ノードに MySQL クライアントをインストールします。 詳しくは、MySQL のドキュメントを参照してください。
 
 ### 高可用性
@@ -50,7 +50,7 @@ Web サーバーまたはデータベースサーバーがクラスター化さ�
 * Web サーバーノードごとに接続を設定する必要があります。
 * 通常は、データベース・ロード・バランサへのデータベース接続を構成します。ただし、データベース・クラスタリングは複雑になる場合があり、構成はユーザー次第です。 Adobeでは、データベースクラスタリングに関する具体的な推奨事項はありません。
 
-  詳しくは、[MySQL のドキュメント ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) を参照してください。
+  詳しくは、[MySQL のドキュメント &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) を参照してください。
 
 ### 接続の問題の解決
 
@@ -89,7 +89,7 @@ Web サーバーまたはデータベースサーバーがクラスター化さ�
    bind-address = <ip address of your web node>
    ```
 
-   特にクラスター化された web サーバーがある場合は、[MySQL ドキュメント ](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) を参照してください。
+   特にクラスター化された web サーバーがある場合は、[MySQL ドキュメント &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) を参照してください。
 
 1. 設定ファイルに対する変更を保存し、テキストエディターを終了します。
 1. MySQL サービスを再起動します。
@@ -100,7 +100,7 @@ Web サーバーまたはデータベースサーバーがクラスター化さ�
 
    >[!NOTE]
    >
-   >MySQL の起動に失敗した場合は、syslog で問題の原因を調べます。 [MySQL ドキュメント ](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) またはその他の信頼できるソースを使用して、問題を解決します。
+   >MySQL の起動に失敗した場合は、syslog で問題の原因を調べます。 [MySQL ドキュメント &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) またはその他の信頼できるソースを使用して、問題を解決します。
 
 ## データベースユーザーへのアクセス権の付与
 

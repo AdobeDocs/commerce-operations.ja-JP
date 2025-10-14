@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # オンプレミス インストールのセキュリティ
 
-[Security Enhanced Linux （SELinux） ](https://selinuxproject.org/page/Main_Page) により、CentOS および Ubuntu 管理者はサーバーに対するより優れたアクセス制御が可能になります。 SELinux *および* を使用している場合、Apache が別のホストへの接続を開始する必要があります。この節で説明するコマンドを実行する必要があります。
+[Security Enhanced Linux （SELinux） &#x200B;](https://selinuxproject.org/page/Main_Page) により、CentOS および Ubuntu 管理者はサーバーに対するより優れたアクセス制御が可能になります。 SELinux *および* を使用している場合、Apache が別のホストへの接続を開始する必要があります。この節で説明するコマンドを実行する必要があります。
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
 
 上記のコマンドは Apache web サーバーでのみ機能します。 さまざまな設定とセキュリティ要件があるため、これらのコマンドがすべての状況で動作することを保証するものではありません。 詳しくは、以下を参照してください。
 
-* [ マニュアルページ ](https://linux.die.net/man/8/httpd_selinux)
+* [&#x200B; マニュアルページ &#x200B;](https://linux.die.net/man/8/httpd_selinux)
 * [Server Lab](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
 
 ## サーバー間通信を有効にする
@@ -67,5 +67,5 @@ SELinux を有効にして Apache が別のホストへの接続を開始でき�
 
 セキュリティ要件によっては、ポート 80 やその他のポートをファイアウォールで開く必要がある場合があります。 ネットワークセキュリティは機密性が高いため、Adobeでは、先に進む前に IT 部門に問い合わせることを強くお勧めします。 以下に、推奨参照を示します。
 
-* Ubuntu: [Ubuntu ドキュメントページ ](https://help.ubuntu.com/community/IptablesHowTo)
-* CentOS: [CentOS のハウツー ](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)。
+* Ubuntu: [Ubuntu ドキュメントページ &#x200B;](https://help.ubuntu.com/community/IptablesHowTo)
+* CentOS: [CentOS のハウツー &#x200B;](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)。

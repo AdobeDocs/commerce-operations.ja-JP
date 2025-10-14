@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ### Magento ソフトウェアのアップグレード
 
-まだ行っていない場合は、[Magento ソフトウェアをアップグレード ](../../upgrade/overview.md) してください。
+まだ行っていない場合は、[Magento ソフトウェアをアップグレード &#x200B;](../../upgrade/overview.md) してください。
 
 ### `vendor/magento/data-migration-tool` ディレクトリのバックアップ
 
@@ -47,17 +47,17 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 [!DNL Data Migration Tool] とMagento ソフトウェアのバージョンは完全に一致する必要があります。 例えば、Magento 2.1.2 には [!DNL Data Migration Tool] のバージョン 2.1.2 が必要です。
 
-[ インストール  [!DNL Data Migration Tool]](install.md) のトピックを参照して、次の方法を理解してください。
+[&#x200B; インストール  [!DNL Data Migration Tool]](install.md) のトピックを参照して、次の方法を理解してください。
 
-* Magento 2 のバージョン [ 確認 ](install.md#check-your-version)
+* Magento 2 のバージョン [&#x200B; 確認 &#x200B;](install.md#check-your-version)
 
-* [ のリリース済みバージョンを ](install.md#find-released-versions-of-data-migration-tool) 検索 [!DNL Data Migration Tool] します
+* [&#x200B; のリリース済みバージョンを &#x200B;](install.md#find-released-versions-of-data-migration-tool) 検索 [!DNL Data Migration Tool] します
 
-* [ チェック ](install.md#check-version-of-installed-data-migration-tool) [!DNL Data Migration Tool] バージョン
+* [&#x200B; チェック &#x200B;](install.md#check-version-of-installed-data-migration-tool) [!DNL Data Migration Tool] バージョン
 
 ## [!DNL Data Migration Tool] のアップグレード
 
-1. アプリケーションサーバーにとしてログインするか、（ファイルシステムの所有者 [ に切り替え ](../../installation/prerequisites/file-system/overview.md) す。
+1. アプリケーションサーバーにとしてログインするか、（ファイルシステムの所有者 [&#x200B; に切り替え &#x200B;](../../installation/prerequisites/file-system/overview.md) す。
 1. アプリケーションのルートディレクトリに移動します。
 1. 次のコマンドを入力します。
 

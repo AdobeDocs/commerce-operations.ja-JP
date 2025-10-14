@@ -29,7 +29,7 @@ bin/magento module:status [--enabled] [--disabled] <module-list>
 
 >[!NOTE]
 >
->クラウドプロジェクトでモジュールを直接有効または無効にすることはできません。 これらのコマンドをローカルで実行してから、環境の `app/etc/config.php` ファイルに変更をプッシュする必要があります。 [Pro プロジェクトワークフロー：デプロイメントワークフロー ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=ja#deployment-workflow) を参照してください。
+>クラウドプロジェクトでモジュールを直接有効または無効にすることはできません。 これらのコマンドをローカルで実行してから、環境の `app/etc/config.php` ファイルに変更をプッシュする必要があります。 [Pro プロジェクトワークフロー：デプロイメントワークフロー &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=ja#deployment-workflow) を参照してください。
 
 ## モジュールの有効化、無効化
 
@@ -47,12 +47,12 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 
 * `<module-list>` は、有効または無効にするモジュールのスペース区切りのリストです。 モジュール名に特殊文字が含まれる場合は、名前を一重引用符または二重引用符で囲みます。
 * すべてのモジュールを同時に有効または無効にで `--all` ます。
-* 依存関係にかかわらず、モジュールを強制的に有効または無効にするには、`-f` または `--force` を指定します。 このオプションを使用する前に、[ モジュールの有効化および無効化について ](#about-enabling-and-disabling-modules) を参照してください。
-* `-c` または `--clear-static-content` が [ 生成された静的ビューファイル ](../../configuration/cli/static-view-file-deployment.md) をクリーンアップします。
+* 依存関係にかかわらず、モジュールを強制的に有効または無効にするには、`-f` または `--force` を指定します。 このオプションを使用する前に、[&#x200B; モジュールの有効化および無効化について &#x200B;](#about-enabling-and-disabling-modules) を参照してください。
+* `-c` または `--clear-static-content` が [&#x200B; 生成された静的ビューファイル &#x200B;](../../configuration/cli/static-view-file-deployment.md) をクリーンアップします。
 
   静的ビューファイルをクリアしないと、同じ名前のファイルが複数あり、必ずしもすべてをクリアしない場合に問題が発生する可能性があります。
 
-  つまり、[ 静的ファイルのフォールバック ](../../configuration/cli/static-view-file-deployment.md) ルールにより、静的ファイルがクリアされず、`logo.svg` という名前の異なるファイルが複数ある場合、フォールバックによって誤ったファイルが表示される可能性があります。
+  つまり、[&#x200B; 静的ファイルのフォールバック &#x200B;](../../configuration/cli/static-view-file-deployment.md) ルールにより、静的ファイルがクリアされず、`logo.svg` という名前の異なるファイルが複数ある場合、フォールバックによって誤ったファイルが表示される可能性があります。
 
 例えば、`Magento_Weee` モジュールを無効にするには、次のように入力します。
 
@@ -60,7 +60,7 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 bin/magento module:disable Magento_Weee
 ```
 
-モジュールの有効化および無効化に関する重要な情報については、[ モジュールの有効化および無効化について ](#about-enabling-and-disabling-modules) を参照してください。
+モジュールの有効化および無効化に関する重要な情報については、[&#x200B; モジュールの有効化および無効化について &#x200B;](#about-enabling-and-disabling-modules) を参照してください。
 
 ## データベースの更新
 

@@ -15,9 +15,9 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-[Adobe Privacy JavaScript ライブラリ ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ja) は、非公開データへのアクセスおよび削除プロセスを作成するのに役立つ一連のツールです。
+[Adobe Privacy JavaScript ライブラリ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ja) は、非公開データへのアクセスおよび削除プロセスを作成するのに役立つ一連のツールです。
 
-Adobe Commerceのデータトラッキングサービスでは、[EU 一般データ保護規則（GDPR） ](gdpr.md) および [ カリフォルニア州消費者プライバシー法（CCPA） ](ccpa.md) などのプライバシー規制に適用される個人情報を保存できます。
+Adobe Commerceのデータトラッキングサービスでは、[EU 一般データ保護規則（GDPR） &#x200B;](gdpr.md) および [&#x200B; カリフォルニア州消費者プライバシー法（CCPA） &#x200B;](ccpa.md) などのプライバシー規制に適用される個人情報を保存できます。
 
 このライブラリは、プライバシーデータリクエストの作成、各製品の実装への送信、応答の収集のための統合された機能セットを提供します。 このライブラリを使用して、これらのデータトラッキングサービスによってブラウザーに保存されたデータを取得および削除します。
 
@@ -28,7 +28,7 @@ Adobe Commerceのデータトラッキングサービスでは、[EU 一般デ�
 - npm: `npm install @adobe/adobe-privacy`
 - GitHub: [https://github.com/Adobe-Marketing-Cloud/adobe-privacy](https://github.com/Adobe-Marketing-Cloud/adobe-privacy)
 
-ファイルを取得したら、Adobe Commerce インスタンスにインストールされたカスタムモジュールまたはテーマにファイルを追加する必要があります。 このタスクを実行するには、「[ カスタム JavaScriptの使用 ](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) トピックに記載されている手順に従います。
+ファイルを取得したら、Adobe Commerce インスタンスにインストールされたカスタムモジュールまたはテーマにファイルを追加する必要があります。 このタスクを実行するには、「[&#x200B; カスタム JavaScriptの使用 &#x200B;](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) トピックに記載されている手順に従います。
 
 ## 使用状況
 
@@ -43,7 +43,7 @@ AdobePrivacy JS ライブラリは、ブラウザーに保存された ID デー
 `retrieveThenRemoveIdentities()`
 ：この関数は、ID の配列を取得し、ブラウザーから削除するという点で `removeIdentities()` と似ています。
 
-これらの関数の使用方法と例について詳しくは、[ 公式ライブラリドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ja) を参照してください。
+これらの関数の使用方法と例について詳しくは、[&#x200B; 公式ライブラリドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ja) を参照してください。
 
 ### 初期化
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 このコンストラクターは、インスタンス化の際に、パラメーターを含んだ設定オブジェクトを受け入れます。
-これらの設定パラメーターのリストについては、[ 公式ライブラリドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ja) を参照してください。
+これらの設定パラメーターのリストについては、[&#x200B; 公式ライブラリドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ja) を参照してください。

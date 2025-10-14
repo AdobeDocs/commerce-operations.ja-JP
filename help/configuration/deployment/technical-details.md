@@ -17,15 +17,15 @@ ht-degree: 0%
 - [管理者における変更](#changes-in-the-admin)
 - [Cron のインストールと削除](#install-and-remove-cron)
 
-また、このトピックでは、パイプラインデプロイメントの [ 推奨ワークフロー ](#recommended-workflow) についても説明し、その仕組みを理解するのに役立つ例を示します。
+また、このトピックでは、パイプラインデプロイメントの [&#x200B; 推奨ワークフロー &#x200B;](#recommended-workflow) についても説明し、その仕組みを理解するのに役立つ例を示します。
 
-開始する前に、[ 開発、ビルド、実稼動のシステムの前提条件 ](../deployment/prerequisites.md) を確認してください。
+開始する前に、[&#x200B; 開発、ビルド、実稼動のシステムの前提条件 &#x200B;](../deployment/prerequisites.md) を確認してください。
 
 ## 設定管理
 
 開発システムと実稼動システムの設定を同期および維持できるようにするには、次のオーバーライドスキームを使用します。
 
-![ 設定変数値の決定方法 ](../../assets/configuration/override-flow-diagram.png)
+![&#x200B; 設定変数値の決定方法 &#x200B;](../../assets/configuration/override-flow-diagram.png)
 
 次の図に示すように、設定値は次の順序で使用されます。
 
@@ -38,13 +38,13 @@ ht-degree: 0%
 
 共有設定は `app/etc/config.php` に保存され、ソース管理下に置く必要があります。
 
-開発環境（またはクラウドインフラストラクチャー上のAdobe Commerce _integration_）システムの管理者で共有設定を指定し、`config.php` コマンドを使用して設定を [`magento app:config:dump` に書き込みます ](../cli/export-configuration.md)。
+開発環境（またはクラウドインフラストラクチャー上のAdobe Commerce _integration_）システムの管理者で共有設定を指定し、`config.php` コマンドを使用して設定を [`magento app:config:dump` に書き込みます &#x200B;](../cli/export-configuration.md)。
 
 ### システム固有の設定の管理
 
 システム固有の設定は `app/etc/env.php` に保存されますが、これはソース管理 _にすべきではありません_。
 
-開発（またはクラウドインフラストラクチャ統合のAdobe Commerce）システムの管理者でシステム固有の設定を行い、`env.php` コマンドを使用して設定を [`magento app:config:dump` に書き込みます ](../cli/export-configuration.md)。
+開発（またはクラウドインフラストラクチャ統合のAdobe Commerce）システムの管理者でシステム固有の設定を行い、`env.php` コマンドを使用して設定を [`magento app:config:dump` に書き込みます &#x200B;](../cli/export-configuration.md)。
 
 また、このコマンドは `env.php` に機密設定を書き込みます。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 次のいずれかの方法で、機密性の高い設定を管理できます。
 
 - 環境変数
-- `env.php` コマンドを使用して、実稼動システムの [`magento config:set:sensitive` に機密性の高い設定を保存し ](../cli/set-configuration-values.md) す。
+- `env.php` コマンドを使用して、実稼動システムの [`magento config:set:sensitive` に機密性の高い設定を保存し &#x200B;](../cli/set-configuration-values.md) す。
 
 ### 設定は管理者でロックされています
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
      次の図は、デプロイされたロケールが 2 つのみ **示されている、管理者の** アカウント設定 **> インターフェイスロケール** リストの例を示しています。
 
-     ![ 管理者ロケールは、デプロイされたロケールにのみ変更できます ](../../assets/configuration/split-deploy-admin-locale.png)
+     ![&#x200B; 管理者ロケールは、デプロイされたロケールにのみ変更できます &#x200B;](../../assets/configuration/split-deploy-admin-locale.png)
 
 - Admin を使用して、どのスコープのロケール設定も変更できません。
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 ## Cron のインストールと削除
 
-バージョン 2.2 では初めて、[`magento cron:install` コマンド ](../cli/configure-cron-jobs.md) を提供して cron ジョブを設定するのに役立ちます。 このコマンドは、コマンドを実行するユーザーとして crontab を設定します。
+バージョン 2.2 では初めて、[`magento cron:install` コマンド &#x200B;](../cli/configure-cron-jobs.md) を提供して cron ジョブを設定するのに役立ちます。 このコマンドは、コマンドを実行するユーザーとして crontab を設定します。
 
 また、`magento cron:remove` コマンドを使用して crontab を削除することもできます。
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 次の図は、パイプラインデプロイメントを使用して設定を管理することをお勧めする方法を示しています。
 
-![ 推奨されるパイプラインデプロイメントワークフロー ](../../assets/configuration/split-deploy-workflow.png)
+![&#x200B; 推奨されるパイプラインデプロイメントワークフロー &#x200B;](../../assets/configuration/split-deploy-workflow.png)
 
 ### 開発システム
 
@@ -142,7 +142,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[ 静的ビューファイルのデプロイメント方法 ](../cli/static-view-file-strategy.md) を参照してください。
+>[&#x200B; 静的ビューファイルのデプロイメント方法 &#x200B;](../cli/static-view-file-strategy.md) を参照してください。
 
 ### 生産システム
 

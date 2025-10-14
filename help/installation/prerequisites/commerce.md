@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## ソフトウェアの入手方法
 
-魅力的な新機能やリリースの提供状況を確認し、それらを入手する方法については、アドビの [ 製品提供ページ ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability) を参照してください。
+魅力的な新機能やリリースの提供状況を確認し、それらを入手する方法については、アドビの [&#x200B; 製品提供ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability) を参照してください。
 
 Adobe Commerceのインストールの概要については、次の表を参照してください。
 
@@ -62,4 +62,4 @@ UNIX システムでは、Web サーバーや PHP などのソフトウェアを
 
 Web サーバーがこれらのファイルを操作できない可能性があるので *web サーバーの docroot にアプリケーションを* ユーザーとしてインストールし `root` いでください。
 
-`root` ファイルシステム所有者 [ を作成し、その所有者を web サーバーのグループに追加するには、](file-system/overview.md) 権限が必要です。 ファイルシステムの所有者を使用して、コマンドラインから `bin/magento` コマンドを実行したり、タスクをスケジュールする cron ジョブを設定したりできます。
+`root` ファイルシステム所有者 [&#x200B; を作成し、その所有者を web サーバーのグループに追加するには、](file-system/overview.md) 権限が必要です。 ファイルシステムの所有者を使用して、コマンドラインから `bin/magento` コマンドを実行したり、タスクをスケジュールする cron ジョブを設定したりできます。

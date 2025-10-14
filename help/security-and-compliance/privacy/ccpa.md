@@ -26,7 +26,7 @@ CCPA は、コンシューマーに次の新しい権限を付与します。
 
 ## CCPA コンプライアンス
 
-CCPA コンプライアンス・プランを策定して実施するには、調整された作業が必要です。 マーチャントが部門横断的なチームを結成し、[CCPA コンプライアンスガイド ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=ja) に記載されているロードマップに従って、会社を規制に準拠させることをお勧めします。 開発者の場合は、プロセスの手順 2 ～ 5 を中心に、関係者として参加するように招待されることがあります。 詳しくは、『 [CCPA コンプライアンスガイド ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=ja) を参照してください。
+CCPA コンプライアンス・プランを策定して実施するには、調整された作業が必要です。 マーチャントが部門横断的なチームを結成し、[CCPA コンプライアンスガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=ja) に記載されているロードマップに従って、会社を規制に準拠させることをお勧めします。 開発者の場合は、プロセスの手順 2 ～ 5 を中心に、関係者として参加するように招待されることがあります。 詳しくは、『 [CCPA コンプライアンスガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=ja) を参照してください。
 
 1. CCPA コンプライアンスに対応する部門横断的なチームを編成します。
 

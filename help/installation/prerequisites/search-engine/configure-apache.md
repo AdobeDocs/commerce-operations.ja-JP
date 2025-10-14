@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->OpenSearch のサポートは 2.4.4 で追加されました。OpenSearch は、Elasticsearchの互換性のあるフォークです。 詳しくは、[Elasticsearchの OpenSearch への移行 ](../../../upgrade/prepare/opensearch-migration.md) を参照してください。
+>OpenSearch のサポートは 2.4.4 で追加されました。OpenSearch は、Elasticsearchの互換性のあるフォークです。 詳しくは、[Elasticsearchの OpenSearch への移行 &#x200B;](../../../upgrade/prepare/opensearch-migration.md) を参照してください。
 
-ここでは、Apache を *セキュアでない* プロキシとして設定して、Adobe Commerceがこのサーバーで動作している検索エンジンを使用できるようにする方法について説明します。 この節では、HTTP 基本認証の設定については説明しません。これについては、[Apache との安全な通信 ](#secure-communication-with-apache) で説明しています。
+ここでは、Apache を *セキュアでない* プロキシとして設定して、Adobe Commerceがこのサーバーで動作している検索エンジンを使用できるようにする方法について説明します。 この節では、HTTP 基本認証の設定については説明しません。これについては、[Apache との安全な通信 &#x200B;](#secure-communication-with-apache) で説明しています。
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 この節では、Apache との [HTTP Basic](https://datatracker.ietf.org/doc/html/rfc2617) 認証を使用して、Apache と検索エンジン間の通信を保護する方法について説明します。 その他のオプションについては、次のいずれかのリソースを参照してください。
 
-* [Apache 2.4 認証と承認のチュートリアル ](https://httpd.apache.org/docs/2.4/howto/auth.html)
+* [Apache 2.4 認証と承認のチュートリアル &#x200B;](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 以下のセクションの 1 つを参照してください。
 
@@ -174,7 +174,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### Apache との安全な通信
 
-この節では、[HTTP 基本認証 ](https://httpd.apache.org/docs/2.2/howto/auth.html) の設定方法について説明します。 TLS と HTTP 基本認証を一緒に使用すると、Elasticsearch、OpenSearch またはアプリケーションサーバーとの通信がインターセプトされるのを防ぐことができます。
+この節では、[HTTP 基本認証 &#x200B;](https://httpd.apache.org/docs/2.2/howto/auth.html) の設定方法について説明します。 TLS と HTTP 基本認証を一緒に使用すると、Elasticsearch、OpenSearch またはアプリケーションサーバーとの通信がインターセプトされるのを防ぐことができます。
 
 ここでは、Apache サーバーにアクセスできるユーザーを指定する方法について説明します。
 

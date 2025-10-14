@@ -31,7 +31,7 @@ ht-degree: 0%
 
    - _コマンドラインユーザー_ は、cron ジョブとコマンドラインユーティリティを実行します。
 
-  どちらのユーザーもファイルシステムに対して同じ権限が必要なので、[ 共有グループ ](configure-permissions.md#set-ownership-and-permissions-for-two-users) を使用して [`umask`](#restrict-access-with-a-umask) を設定することをお勧めします。
+  どちらのユーザーもファイルシステムに対して同じ権限が必要なので、[&#x200B; 共有グループ &#x200B;](configure-permissions.md#set-ownership-and-permissions-for-two-users) を使用して [`umask`](#restrict-access-with-a-umask) を設定することをお勧めします。
 
 ### umask を使用してアクセスを制限
 
@@ -49,7 +49,7 @@ Adobe Commerceでは、3 ビットのデフォルトマスク `002` が使用さ
 
 - **664 for files** - ユーザーが書き込み可能、グループが書き込み可能、その他のすべてのユーザーが読み取り専用です。
 
-`magento_umask` ファイルの作成の詳細については、[umask の設定 ](../../next-steps/set-umask.md) を参照してください。
+`magento_umask` ファイルの作成の詳細については、[umask の設定 &#x200B;](../../next-steps/set-umask.md) を参照してください。
 
 ## 権限、所有権、アプリケーションモード
 
@@ -59,10 +59,10 @@ Adobe Commerceでは、3 ビットのデフォルトマスク `002` が使用さ
 - 開発者
 - 実稼動
 
-[ 設定ガイド ](../../../configuration/bootstrap/application-modes.md) の _モードについて_ を参照してください。
+[&#x200B; 設定ガイド &#x200B;](../../../configuration/bootstrap/application-modes.md) の _モードについて_ を参照してください。
 
-さらに、「構成ガイド [ の「ファイル・システムのアクセス権限 ](../../../configuration/deployment/file-system-permissions.md) におけるアクセス権限の推奨事項 _についても説明_ ます。
+さらに、「構成ガイド [&#x200B; の「ファイル・システムのアクセス権限 &#x200B;](../../../configuration/deployment/file-system-permissions.md) におけるアクセス権限の推奨事項 _についても説明_ ます。
 
 >[!TIP]
 >
->Adobe Commerceをインストールする前に、[ ファイルの所有権と権限の設定 ](configure-permissions.md) を確認してください。
+>Adobe Commerceをインストールする前に、[&#x200B; ファイルの所有権と権限の設定 &#x200B;](configure-permissions.md) を確認してください。

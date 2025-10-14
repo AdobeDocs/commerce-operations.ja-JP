@@ -26,11 +26,11 @@ Adobe Commerceは Apache 2.4.x をサポートしています。
 
 ## Apache の書き換えとアクセス
 
-このトピックでは、Apache 2.4 の書き換えを有効にする方法と、[ 分散設定ファイル `.htaccess`](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample) の設定を指定する方法について説明します。
+このトピックでは、Apache 2.4 の書き換えを有効にする方法と、[&#x200B; 分散設定ファイル `.htaccess`](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample) の設定を指定する方法について説明します。
 
 Adobe Commerceは、サーバーの書き換えと `.htaccess` き換えを使用して、Apache にディレクトリレベルの手順を提供します。 次の手順は、このトピックの他のすべての節にも含まれています。
 
-このセクションを使用して、Apache 2.4 の書き換えを有効にし、[ 分散設定ファイル、`.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html) の設定を指定します
+このセクションを使用して、Apache 2.4 の書き換えを有効にし、[&#x200B; 分散設定ファイル、`.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html) の設定を指定します
 
 Adobe Commerceは、サーバーの書き換えと `.htaccess` き換えを使用して、Apache にディレクトリレベルの手順を提供します。
 
@@ -44,7 +44,7 @@ Adobe Commerceは、サーバーの書き換えと `.htaccess` き換えを使�
    a2enmod rewrite
    ```
 
-1. アプリケーションで分散 `.htaccess` 設定ファイルを使用できるようにするには、[Apache 2.4 ドキュメント ](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) のガイドラインを参照してください。
+1. アプリケーションで分散 `.htaccess` 設定ファイルを使用できるようにするには、[Apache 2.4 ドキュメント &#x200B;](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) のガイドラインを参照してください。
 
    >[!TIP]
    >
@@ -60,7 +60,7 @@ Adobe Commerceは、サーバーの書き換えと `.htaccess` き換えを使�
 
    >[!NOTE]
    >
-   >追加のパラメーターが必要になる場合があります。 詳しくは、[Apache 2.4 ドキュメント ](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order) を参照してください。
+   >追加のパラメーターが必要になる場合があります。 詳しくは、[Apache 2.4 ドキュメント &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order) を参照してください。
 
 1. Apache 設定を変更した場合は、Apache を再起動します。
 
@@ -307,7 +307,7 @@ Apache のインストールと設定は、基本的に、ソフトウェアの�
 
 ### Apache 2.4 の 403 Forbidden エラーの解決
 
-Web サイトの訪問者がサイトにアクセスできるようにするには、[Require ディレクティブ ](https://httpd.apache.org/docs/2.4/howto/access.html) のいずれかを使用します。
+Web サイトの訪問者がサイトにアクセスできるようにするには、[Require ディレクティブ &#x200B;](https://httpd.apache.org/docs/2.4/howto/access.html) のいずれかを使用します。
 
 例：
 
@@ -322,4 +322,4 @@ Web サイトの訪問者がサイトにアクセスできるようにするに�
 
 >[!NOTE]
 >
->上記の `Order` の値は、すべての場合で機能するとは限りません。 詳しくは、[Apache ドキュメント ](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order) を参照してください。
+>上記の `Order` の値は、すべての場合で機能するとは限りません。 詳しくは、[Apache ドキュメント &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order) を参照してください。

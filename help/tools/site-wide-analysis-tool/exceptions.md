@@ -27,4 +27,4 @@ ht-degree: 0%
 
 ## ベストプラクティス
 
-[!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] ページを監視して、例外が発生したかどうかを確認します。 詳しくは、開発者向けドキュメントの [ ログの表示と管理 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/test/log-locations) を参照してください。
+[!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] ページを監視して、例外が発生したかどうかを確認します。 詳しくは、開発者向けドキュメントの [&#x200B; ログの表示と管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/test/log-locations) を参照してください。

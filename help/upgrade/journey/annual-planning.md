@@ -13,7 +13,7 @@ ht-degree: 0%
 
 多くの企業は、年間予算とロードマップに基づいて業務を行っています。 毎年のディスカッションでは、1 年のプラットフォームの正常性、方向性、アップグレード戦略と、それがビジネスの全体的な目標や主要業績評価指標（KPI）にどのように適合するかについて話し合うことが不可欠です。
 
-[ リリーススケジュール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/schedule) に従って、アップグレードの予算とリリース期間を割り当て、休日、会社の閉鎖、ピーク時間を回避します。 [ リリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) を通じてAdobeのリリーススケジュールを理解し、各リリースの変更点や改善点を把握することで、年をより適切に計画できます。
+[&#x200B; リリーススケジュール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/schedule) に従って、アップグレードの予算とリリース期間を割り当て、休日、会社の閉鎖、ピーク時間を回避します。 [&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) を通じてAdobeのリリーススケジュールを理解し、各リリースの変更点や改善点を把握することで、年をより適切に計画できます。
 
 計画を立てる際には、次の点に注意してください。
 

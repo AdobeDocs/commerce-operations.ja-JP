@@ -21,7 +21,7 @@ MariaDB を使用している場合は、クラウドインフラストラクチ
 
 ## Adobe Commerce 2.4.6
 
-MariaDB 10.5.1 以降、古いテンポラル形式の列は、`/* mariadb-5.3 */`、`SHOW CREATE TABLE`、`SHOW COLUMNS` 文の出力および `DESCRIBE` テーブルの `COLUMN_TYPE` 列に `INFORMATION_SCHEMA.COLUMNS` コメントでマークされます。 [MariaDB ドキュメントを参照してください ](https://mariadb.com/kb/en/datetime/#internal-format)。
+MariaDB 10.5.1 以降、古いテンポラル形式の列は、`/* mariadb-5.3 */`、`SHOW CREATE TABLE`、`SHOW COLUMNS` 文の出力および `DESCRIBE` テーブルの `COLUMN_TYPE` 列に `INFORMATION_SCHEMA.COLUMNS` コメントでマークされます。 [MariaDB ドキュメントを参照してください &#x200B;](https://mariadb.com/kb/en/datetime/#internal-format)。
 
 MariaDB コメントが原因で、Adobe Commerceが日付列を適切なデータタイプにマッピングできず、カスタムコードで予期しない動作が起こる可能性があります。
 
@@ -70,7 +70,7 @@ Adobe Commerce サポートチームがアップグレードプロセスを開�
 
 - サイトのトラフィックが少ない時間帯にコンバージョン作業を完了します。
 
-- データベーステーブルを変換するコマンドを実行する前に、サイトを [ メンテナンスモード ](../../../installation/tutorials/maintenance-mode.md) に切り替えます。
+- データベーステーブルを変換するコマンドを実行する前に、サイトを [&#x200B; メンテナンスモード &#x200B;](../../../installation/tutorials/maintenance-mode.md) に切り替えます。
 
 #### データベース テーブル行の形式を変換する
 
@@ -172,4 +172,4 @@ MariaDB バージョン 10.3、10.4、または 10.6 への予定アップグレ
 
 ### ストレージエンジンの変更
 
-[MyISAM テーブルの InnoDB への変換 ](../planning/database-on-cloud.md) を参照してください。
+[MyISAM テーブルの InnoDB への変換 &#x200B;](../planning/database-on-cloud.md) を参照してください。

@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # 安全な Web サーバー通信
 
-ここでは、Transport Layer Security （TLS）暗号化と [HTTP 基本認証 ](https://datatracker.ietf.org/doc/html/rfc2617) の組み合わせを使用して、web サーバーと検索エンジン（Elasticsearchまたは OpenSearch）間の通信を保護する例について説明します。 オプションで、その他のタイプの認証も設定できます。この情報の参照を提供しています。
+ここでは、Transport Layer Security （TLS）暗号化と [HTTP 基本認証 &#x200B;](https://datatracker.ietf.org/doc/html/rfc2617) の組み合わせを使用して、web サーバーと検索エンジン（Elasticsearchまたは OpenSearch）間の通信を保護する例について説明します。 オプションで、その他のタイプの認証も設定できます。この情報の参照を提供しています。
 
 （古い用語である Secure Sockets Layer （SSL）は、多くの場合、TLS と同じ意味で使用されます。 このトピックでは、*TLS*）を参照します。
 
@@ -35,12 +35,12 @@ ht-degree: 0%
 
 * Apache
 
-   * [Apache 2.4 強力な暗号化の使い方 ](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html)
-   * [Apache for Ubuntu 14.04 で SSL 証明書を作成する方法（Digitalocean チュートリアル） ](https://www.digitalocean.com/community/tutorials/how-to-create-a-ssl-certificate-on-apache-for-ubuntu-14-04)
-   * [CentOS での SSL 保護 web サーバーの設定（CentOS wiki） ](https://wiki.centos.org/HowTos/Https)
+   * [Apache 2.4 強力な暗号化の使い方 &#x200B;](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html)
+   * [Apache for Ubuntu 14.04 で SSL 証明書を作成する方法（Digitalocean チュートリアル） &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-create-a-ssl-certificate-on-apache-for-ubuntu-14-04)
+   * [CentOS での SSL 保護 web サーバーの設定（CentOS wiki） &#x200B;](https://wiki.centos.org/HowTos/Https)
 
 * Nginx
 
-   * [Nginx SSL ターミネーション ](https://www.nginx.com/resources/admin-guide/nginx-ssl-termination/)
-   * [Ubuntu 14.04 用 Nginx で SSL 証明書を作成する方法（Digitalocean チュートリアル） ](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04)
-   * [Nginx SSL 証明書のインストール （digicert） ](https://www.digicert.com/ssl-certificate-installation-nginx.htm)
+   * [Nginx SSL ターミネーション &#x200B;](https://www.nginx.com/resources/admin-guide/nginx-ssl-termination/)
+   * [Ubuntu 14.04 用 Nginx で SSL 証明書を作成する方法（Digitalocean チュートリアル） &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04)
+   * [Nginx SSL 証明書のインストール （digicert） &#x200B;](https://www.digicert.com/ssl-certificate-installation-nginx.htm)

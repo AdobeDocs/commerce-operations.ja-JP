@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->最新バージョンのAdobe Commerceを使用するには、最低でも PHP 8.1 が必要です。サポートされている PHP の全バージョンについては、[ システム要件 ](../system-requirements.md) を参照してください。
+>最新バージョンのAdobe Commerceを使用するには、最低でも PHP 8.1 が必要です。サポートされている PHP の全バージョンについては、[&#x200B; システム要件 &#x200B;](../system-requirements.md) を参照してください。
 
 クラウド設定のガイダンスについては、[Cloud Infrastructure でのCommerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=ja) ガイドの _PHP 設定_ を参照してください。
 
@@ -65,7 +65,7 @@ Adobe Commerceには特定の PHP 拡張モジュールが必要です。 次の
 
 >[!WARNING]
 >
->PHP 7.4.20 を使用している場合は、`pcre.jit=0` ファイルで `php.ini` を設定します。 これは、CSS の読み込みを妨げる PHP[ バグ ](https://bugs.php.net/bug.php?id=81101) を回避するものです。
+>PHP 7.4.20 を使用している場合は、`pcre.jit=0` ファイルで `php.ini` を設定します。 これは、CSS の読み込みを妨げる PHP[&#x200B; バグ &#x200B;](https://bugs.php.net/bug.php?id=81101) を回避するものです。
 
 - PHP のシステムタイムゾーンを設定します。設定しないと、インストール中に次のようなエラーが表示され、cron のような時間関連の操作が機能しない場合があります。
 
@@ -88,7 +88,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
   realpath_cache_ttl=7200
   ```
 
-  これらの設定により、PHP プロセスはページの読み込み時にパスを検索する代わりにファイルへのパスをキャッシュすることができます。 PHP ドキュメントの [ パフォーマンスチューニング ](https://www.php.net/manual/en/ini.core.php) を参照してください。
+  これらの設定により、PHP プロセスはページの読み込み時にパスを検索する代わりにファイルへのパスをキャッシュすることができます。 PHP ドキュメントの [&#x200B; パフォーマンスチューニング &#x200B;](https://www.php.net/manual/en/ini.core.php) を参照してください。
 
 - Adobe Commerce 2.1 以降に必要な [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments) を有効にします。
 
@@ -106,9 +106,9 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 ### 設定ファイル `php.ini` 検索
 
-Web サーバー設定を見つけるには、web ブラウザーで [`phpinfo.php` ファイルを実行し ](optional-software.md#create-phpinfophp) 次のように `Loaded Configuration File` を探します。
+Web サーバー設定を見つけるには、web ブラウザーで [`phpinfo.php` ファイルを実行し &#x200B;](optional-software.md#create-phpinfophp) 次のように `Loaded Configuration File` を探します。
 
-![PHP 情報ページ ](../../assets/installation/config_phpini-webserver.png)
+![PHP 情報ページ &#x200B;](../../assets/installation/config_phpini-webserver.png)
 
 PHP コマンドライン設定を探すには、次のように入力します。
 
@@ -147,7 +147,7 @@ PHP OPcache の設定は、通常 `php.ini` または `opcache.ini` に置かれ
 PHP オプションを設定するには、次の手順に従います。
 
 1. `php.ini` をテキストエディターで開きます。
-1. 利用可能な [ タイムゾーン設定 ](https://www.php.net/manual/en/timezones.php) でサーバーのタイムゾーンを見つけます
+1. 利用可能な [&#x200B; タイムゾーン設定 &#x200B;](https://www.php.net/manual/en/timezones.php) でサーバーのタイムゾーンを見つけます
 1. 次の設定を探し、必要に応じてコメントを解除します。
 
    ```conf
@@ -205,10 +205,10 @@ PHP オプションを設定するには、次の手順に従います。
 
 PHP の問題のトラブルシューティングについては、以下のAdobe Commerce サポートの記事を参照してください。
 
-- [ ブラウザーでAdobe Commerceにアクセスすると、PHP バージョンエラーまたは 404 エラーが発生する ](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [PHP 設定エラー ](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
-- [PHP mcrypt 拡張モジュールが正しくインストールされていません ](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
-- [PHP バージョン準備チェックの問題 ](https://support.magento.com/hc/en-us/articles/360033546411)
-- [ 一般的な PHP の致命的なエラーと解決策 ](https://support.magento.com/hc/en-us/articles/360030568432)
+- [&#x200B; ブラウザーでAdobe Commerceにアクセスすると、PHP バージョンエラーまたは 404 エラーが発生する &#x200B;](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
+- [PHP 設定エラー &#x200B;](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
+- [PHP mcrypt 拡張モジュールが正しくインストールされていません &#x200B;](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
+- [PHP バージョン準備チェックの問題 &#x200B;](https://support.magento.com/hc/en-us/articles/360033546411)
+- [&#x200B; 一般的な PHP の致命的なエラーと解決策 &#x200B;](https://support.magento.com/hc/en-us/articles/360030568432)
 
 <!-- Last updated from includes: 2025-04-04 22:27:22 -->

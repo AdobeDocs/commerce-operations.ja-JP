@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 PhpStorm 検査を実行することにより、スタイルを自動的にテストできます（以下を参照）。
 
-必ず [PHPMD と PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) を設定し、CLI （これも後述）から [ コーディング標準 ](https://github.com/magento/magento-coding-standard) ツールを実行します。 重複する部分もありますが、両方とも一意のテストを実施しています。
+必ず [PHPMD と PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) を設定し、CLI （これも後述）から [&#x200B; コーディング標準 &#x200B;](https://github.com/magento/magento-coding-standard) ツールを実行します。 重複する部分もありますが、両方とも一意のテストを実施しています。
 
 ### 規則と構造
 

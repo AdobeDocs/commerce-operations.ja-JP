@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 始める前に
 
-開始する前に、「開発、ビルド、実稼働システムの前提条件 [ で説明されているように、ファイルシステムの権限と所有権を設定し ](../deployment/prerequisites.md) す。
+開始する前に、「開発、ビルド、実稼働システムの前提条件 [&#x200B; で説明されているように、ファイルシステムの権限と所有権を設定し &#x200B;](../deployment/prerequisites.md) す。
 
 ## 前提
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 1. **ストア**/設定/**設定**/一般/**一般** をクリックします。
 1. 複数の Web サイトを使用できる場合は、左上隅の **ストア表示** リストを使用して、次の図に示すように別の Web サイトに切り替えます。
 
-   ![Web サイトの切り替え ](../../assets/configuration/split-deploy-switch-website.png)
+   ![Web サイトの切り替え &#x200B;](../../assets/configuration/split-deploy-switch-website.png)
 
 1. 右側のペインで、「**Store Information**」を展開します。
 1. 必要に応じて、「**VAT 番号** および **ストア名** フィールドの横にある「デフォルトを使用 **チェックボックスをオフにします**。
@@ -71,7 +71,7 @@ ht-degree: 0%
 1. 「**設定を保存**」をクリックします。
 1. 次の図に示すように、「**ストア表示**」リストを使用して **デフォルト設定** を選択します。
 
-   ![ デフォルト設定に切り替え ](../../assets/configuration/split-deploy-default-config.png)
+   ![&#x200B; デフォルト設定に切り替え &#x200B;](../../assets/configuration/split-deploy-default-config.png)
 
 1. 左側のウィンドウで、顧客/**顧客設定** をクリックします。
 1. 右側のウィンドウで、「新しいアカウントのオプションの作成 **を展開し** す。
@@ -112,7 +112,7 @@ ht-degree: 0%
 
   **Send Emails To** 設定値を設定するには、web サイトコードが必要です。
 
-  この値について詳しくは、[ 環境変数を使用して設定を上書き ](../reference/override-config-settings.md#environment-variables) を参照してください。
+  この値について詳しくは、[&#x200B; 環境変数を使用して設定を上書き &#x200B;](../reference/override-config-settings.md#environment-variables) を参照してください。
 
 - この例で使用する設定の設定パス：
 
@@ -121,7 +121,7 @@ ht-degree: 0%
   | Send Emails To | `contact/email/recipient_email` |
   | デフォルトのメールドメイン | `customer/create_account/email_domain` |
 
-  機密およびシステム固有のすべての設定パスについては、「[ 機密およびシステム固有の設定パスのリファレンス ](../reference/config-reference-sens.md)」を参照してください。
+  機密およびシステム固有のすべての設定パスについては、「[&#x200B; 機密およびシステム固有の設定パスのリファレンス &#x200B;](../reference/config-reference-sens.md)」を参照してください。
 
 ### CLI コマンドを使用して変数を設定する
 
@@ -162,7 +162,7 @@ bin/magento config:sensitive:set contact/email/recipient_email --scope=website -
 
    開発システムで設定した共有設定オプションが、次のように表示されます。
 
-   ![ 実稼動システムでの設定の確認 ](../../assets/configuration/split-deploy-verify-storeinfo.png)
+   ![&#x200B; 実稼動システムでの設定の確認 &#x200B;](../../assets/configuration/split-deploy-verify-storeinfo.png)
 
    >[!INFO]
    >
@@ -173,13 +173,13 @@ bin/magento config:sensitive:set contact/email/recipient_email --scope=website -
 
    次の図に示すように、「**メールの送信先**」フィールドは編集できません。 この設定は慎重に行う必要があります。
 
-   ![ 実稼動システムでの設定の確認 ](../../assets/configuration/split-deploy-verify-contacts.png)
+   ![&#x200B; 実稼動システムでの設定の確認 &#x200B;](../../assets/configuration/split-deploy-verify-contacts.png)
 
 1. 左側のウィンドウで、顧客/**顧客設定** をクリックします。
 1. 右側のウィンドウで、「新しいアカウントのオプションの作成 **を展開し** す。
 
    「**デフォルトメールドメイン**」フィールドの値が次のように表示されます。 これは、システム固有の設定です。
 
-   ![ 実稼動システムでの設定の確認 ](../../assets/configuration/split-default-domain.png)
+   ![&#x200B; 実稼動システムでの設定の確認 &#x200B;](../../assets/configuration/split-default-domain.png)
 
 <!-- Last updated from includes: 2024-07-18 15:50:54 -->

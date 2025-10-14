@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-46703：製品のカスタマイズのドラッグ&amp;ドロップが機能しない
 
-ACSD-46703 パッチは、製品のカスタマイズ可能なオプション（ドラッグ アンド ドロップ）が期待どおりに動作しない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.20 がインストールされている場合に使用できます。 パッチ ID は ACSD-46703 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+ACSD-46703 パッチは、製品のカスタマイズ可能なオプション（ドラッグ アンド ドロップ）が期待どおりに動作しない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.20 がインストールされている場合に使用できます。 パッチ ID は ACSD-46703 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -54,11 +54,11 @@ ACSD-46703 パッチは、製品のカスタマイズ可能なオプション（
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：品質パッチツールガイドの [ 品質パッチ ツール/使用方法 ](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：品質パッチツールガイドの [&#x200B; 品質パッチ ツール/使用方法 &#x200B;](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。

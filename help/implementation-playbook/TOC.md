@@ -49,7 +49,7 @@ ht-degree: 14%
       - [プライベートコンテンツブロック](best-practices/development/private-content-block-configuration.md)
       - [静的コンテンツデプロイメント](best-practices/development/static-content-deployment.md)
       - [データベーステーブルの変更](best-practices/development/modifying-core-and-third-party-tables.md)
-      - [ コアおよびサードパーティコードの変更 ](best-practices/development/modifying-core-and-third-party-code.md)
+      - [&#x200B; コアおよびサードパーティコードの変更 &#x200B;](best-practices/development/modifying-core-and-third-party-code.md)
    - ローンチ {#launch}
       - [概要](best-practices/launch/overview.md)
       - [Web クローラーの設定](best-practices/launch/robots-txt.md)
@@ -69,4 +69,4 @@ ht-degree: 14%
       - [アップグレードチェックリスト](best-practices/maintenance/upgrade-checklist.md)
       - [MariaDB のアップグレードの前提条件](best-practices/maintenance/mariadb-upgrade.md)
 - [用語集](glossary.md)
-- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
+- [&#x200B; 運用ガイドに戻る &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)

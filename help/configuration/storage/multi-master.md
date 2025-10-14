@@ -36,7 +36,7 @@ MySQL データベースは非同期でレプリケートするので、スレ�
 
 次の図に、この機能の仕組みを示します。
 
-![Adobe Commerceは、異なるデータベースを使用してテーブルを保存します ](../../assets/configuration/split-db-diagram-ee.png)
+![Adobe Commerceは、異なるデータベースを使用してテーブルを保存します &#x200B;](../../assets/configuration/split-db-diagram-ee.png)
 
 Magento Open Sourceでは、1 つのマスターデータベースのみが使用されます。
 
@@ -64,7 +64,7 @@ Adobe Commerceでは、レプリケーションに 3 つのマスターデータ
 
   Adobeでは、Commerce ソフトウェアのインストール後できるだけ早くスプリットデータベースを設定することをお勧めします。
 
-- [ 手動で構成 ](multi-master-manual.md) 分割データベース ソリューション。
+- [&#x200B; 手動で構成 &#x200B;](multi-master-manual.md) 分割データベース ソリューション。
 
   コンポーネントを既にインストールしている場合、またはCommerceが既に実稼動環境にある場合は、このタスクを実行する必要があります。 （_実稼動システムは更新しないでください_ 開発システムで更新を行い、テスト後に変更を同期します）。
 

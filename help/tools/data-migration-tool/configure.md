@@ -106,7 +106,7 @@ ht-degree: 0%
 
 1. `config.xml` ファイルでは、アクセスの詳細を M1 および M2 データベースと暗号化キーに設定する必要があります。
 
-1. M1 ストアにカスタムの変更内容がある場合は、残りの設定ファイルをMagento 1 ストアのカスタマイズにマッピングする必要があります。 [ 設定およびマッピングファイルの操作 ](#migration-config) を参照してください。
+1. M1 ストアにカスタムの変更内容がある場合は、残りの設定ファイルをMagento 1 ストアのカスタマイズにマッピングする必要があります。 [&#x200B; 設定およびマッピングファイルの操作 &#x200B;](#migration-config) を参照してください。
 
 ### フォルダーでの移行 `vendor` 設定
 
@@ -114,7 +114,7 @@ ht-degree: 0%
 
 [!DNL Data Migration Tool] を移行用に設定するには：
 
-1. [ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインするか、に切り替えます。
+1. [&#x200B; ファイルシステムの所有者 &#x200B;](../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインするか、に切り替えます。
 
 1. 次のディレクトリに変更します。
 
@@ -242,4 +242,4 @@ TLS プロトコルを使用して（つまり、公開/非公開暗号化キー
 | *Adobe Commerceのみ*. `visual_merchandiser_attribute_groups.xml.dist` | VisualMerchandiser ステップで使用される属性のリストが含まれます。 |
 | *Adobe Commerceのみ*. `visual_merchandiser_document_groups.xml.dist` | VisualMerchandiser ステップで使用されるテーブルのリストが含まれます。 |
 
-詳細については、「技術仕様 [[!DNL Data Migration Tool]  を参照 ](technical-specification.md) てください。
+詳細については、「技術仕様 [[!DNL Data Migration Tool]  を参照 &#x200B;](technical-specification.md) てください。

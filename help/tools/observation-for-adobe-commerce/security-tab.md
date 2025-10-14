@@ -18,13 +18,13 @@ ht-degree: 0%
 
 **[!UICONTROL API calls by IP, details by URL]** フレームには、選択した期間における IP による API 呼び出し数が表示されます。 このフレームには、IP アドレスと、その IP アドレスによってアクセスされた API URL が表示されます。
 
-![IP による API 呼び出し ](../../assets/tools/observation-for-adobe-commerce/calls-by-ip.jpg)
+![IP による API 呼び出し &#x200B;](../../assets/tools/observation-for-adobe-commerce/calls-by-ip.jpg)
 
 ## [!UICONTROL Forgot Password]
 
 **[!UICONTROL Forgot Password]** アクセスフレームには、選択した期間にパスワードを忘れた場合の試行回数が表示されます。 IP アドレスに対するアクティビティが高いと、サイトが攻撃される可能性があります。
 
-![ パスワードを忘れた場合 ](../../assets/tools/observation-for-adobe-commerce/forgot-password.jpg)
+![&#x200B; パスワードを忘れた場合 &#x200B;](../../assets/tools/observation-for-adobe-commerce/forgot-password.jpg)
 
 ## [!UICONTROL Create Account access]
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 **[!UICONTROL POST activities]** のフレームは、`POST` のログの `client_ip` にファセットされた、サイトの [!DNL Fastly] のアクティビティを表示します。 また、IP アドレスによってアクセスされる URL も表示されます。
 
-![POST アクティビティ ](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
+![POST アクティビティ &#x200B;](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 

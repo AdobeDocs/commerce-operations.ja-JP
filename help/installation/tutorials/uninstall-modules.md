@@ -13,11 +13,11 @@ ht-degree: 0%
 
 この節では、1 つ以上のモジュールをアンインストールする方法について説明します。 アンインストール時に、モジュールのコード、データベーススキーマ、データベースデータをオプションで削除できます。 最初にバックアップを作成して、後でデータを回復できるようにします。
 
-モジュールを使用しないことが確実な場合にのみ、モジュールをアンインストールしてください。 モジュールをアンインストールする代わりに、[ モジュールの有効化または無効化 ](manage-modules.md) で説明されているように無効にすることができます。
+モジュールを使用しないことが確実な場合にのみ、モジュールをアンインストールしてください。 モジュールをアンインストールする代わりに、[&#x200B; モジュールの有効化または無効化 &#x200B;](manage-modules.md) で説明されているように無効にすることができます。
 
 >[!NOTE]
 >
->このコマンドは、`composer.json` ファイルで宣言されている依存関係のみを確認します。 _ファイルで定義されて_ ない `composer.json` モジュールをアンインストールする場合、このコマンドは依存関係を確認せずにモジュールをアンインストールします。 ただし、このコマンドはモジュールのコードをファイルシステムから削除 _しません_。 モジュールのコード（例：`rm -rf <path to module>`）を削除するには、ファイルシステムツールを使用する必要があります。 別の方法として、Composer 以外のモジュールを [ 無効 ](manage-modules.md) することもできます。
+>このコマンドは、`composer.json` ファイルで宣言されている依存関係のみを確認します。 _ファイルで定義されて_ ない `composer.json` モジュールをアンインストールする場合、このコマンドは依存関係を確認せずにモジュールをアンインストールします。 ただし、このコマンドはモジュールのコードをファイルシステムから削除 _しません_。 モジュールのコード（例：`rm -rf <path to module>`）を削除するには、ファイルシステムツールを使用する必要があります。 別の方法として、Composer 以外のモジュールを [&#x200B; 無効 &#x200B;](manage-modules.md) することもできます。
 
 コマンドの使用法：
 
@@ -53,7 +53,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
    指定したモジュールをアンインストールするたびに、は `uninstall` クラスの `Uninstall` メソッドを呼び出します。 このクラスは [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php) から継承する必要があります。
 
 1. 指定されたモジュールを `setup_module` データベース テーブルから削除します。
-1. 指定されたモジュールを [ 展開の構成 ](../../configuration/reference/deployment-files.md) のモジュール一覧から削除します。
+1. 指定されたモジュールを [&#x200B; 展開の構成 &#x200B;](../../configuration/reference/deployment-files.md) のモジュール一覧から削除します。
 1. `composer remove` を使用してコードベースからコードを削除します。
 
    >[!NOTE]
@@ -62,7 +62,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
 
 1. キャッシュをクリアします。
 1. 生成されたクラスを更新します。
-1. `--clear-static-content` が指定されている場合、は [ 生成された静的ビューファイル ](../../configuration/cli/static-view-file-deployment.md) をクリーンアップします。
+1. `--clear-static-content` が指定されている場合、は [&#x200B; 生成された静的ビューファイル &#x200B;](../../configuration/cli/static-view-file-deployment.md) をクリーンアップします。
 1. ストアをメンテナンスモードから削除します。
 
 例えば、別のモジュールが依存しているモジュールをアンインストールしようとすると、次のメッセージが表示されます。

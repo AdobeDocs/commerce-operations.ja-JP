@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## デプロイメント設定の作成または更新
 
-[ デプロイメント設定 ](../../configuration/reference/deployment-files.md) は、アプリケーションの初期化とブートストラップに必要な情報を提供します。
+[&#x200B; デプロイメント設定 &#x200B;](../../configuration/reference/deployment-files.md) は、アプリケーションの初期化とブートストラップに必要な情報を提供します。
 
 このコマンドは、次の場合に使用できます。
 
@@ -35,14 +35,14 @@ bin/magento setup:config:set [--<parameter>=<value>, ...]
 | パラメーター | 値 | 必須？ |
 |--- |--- |--- |
 | `--backend-frontname` | 管理者にアクセスするための Uniform Resource Identifier （[URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)）。<br><br> 悪用を防ぐために、admin、backend などの一般的な単語を使用しないことをお勧めします。 管理 URI には、英数字とアンダースコア文字（`_`）のみを含めることができます。 | 不可 |
-| `--db-host` | 次のいずれかを使用します。<br><br>- データベースサーバーの完全修飾ホスト名または IP アドレス。<br><br>- `localhost` （デフォルト）または、データベースサーバーが web サーバーと同じホスト上にある場合は `127.0.0.1`。 localhost は、MySQL クライアントライブラリが UNIX ソケットを使用してデータベースに接続することを意味します。 `127.0.0.1` は、クライアントライブラリで TCP プロトコルを使用します。 ソケットの詳細については、[PHP PDO_MYSQL のドキュメント ](https://www.php.net/manual/en/ref.pdo-mysql.php) を参照してください。<br><br>**注意：** データベース・サーバ・ポートは、ホスト名に `www.example.com:9000` のように指定することもできます。 | 不可 |
+| `--db-host` | 次のいずれかを使用します。<br><br>- データベースサーバーの完全修飾ホスト名または IP アドレス。<br><br>- `localhost` （デフォルト）または、データベースサーバーが web サーバーと同じホスト上にある場合は `127.0.0.1`。 localhost は、MySQL クライアントライブラリが UNIX ソケットを使用してデータベースに接続することを意味します。 `127.0.0.1` は、クライアントライブラリで TCP プロトコルを使用します。 ソケットの詳細については、[PHP PDO_MYSQL のドキュメント &#x200B;](https://www.php.net/manual/en/ref.pdo-mysql.php) を参照してください。<br><br>**注意：** データベース・サーバ・ポートは、ホスト名に `www.example.com:9000` のように指定することもできます。 | 不可 |
 | `--db-name` | データベーステーブルをインストールするデータベースインスタンスの名前。<br><br> デフォルトは `magento2` です。 | 不可 |
 | `--db-user` | データベース・インスタンス所有者のユーザー名。<br><br> デフォルトは `root` です。 | 不可 |
 | `--db-password` | データベースインスタンス所有者のパスワード。 | 不可 |
 | `--db-prefix` | 既にAdobe Commerce テーブルが含まれているデータベースインスタンスにデータベーステーブルをインストールしている場合にのみ、を使用します。<br><br> その場合、プレフィックスを使用して、このインストールのテーブルを識別します。 一部のお客様は、1 台のサーバーで複数のAdobe Commerce インスタンスが実行されており、すべてのテーブルが同じデータベース内にある場合があります。<br><br> プレフィックスの長さは最大 5 文字です。 文字で始まる必要があり、文字、数字、アンダースコア文字のみを含めることができます。<br><br> このオプションを選択すると、複数のAdobe Commerce インストールとデータベースサーバーを共有できます。 | 不可 |
-| `--session-save` | 次のいずれかを使用します。<br><br>- `db` セッションデータを [database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) に保存します。 クラスター化されたデータベースがある場合は、データベースストレージを選択します。そうしないと、ファイルベースのストレージに比べて大きなメリットがない可能性があります。<br><br>- セッションデータをファイルシステムに保存する `files` ール。 ファイルベースのセッションストレージは、ファイルシステムアクセスが遅い場合、クラスター化されたデータベースがある場合、または Redis にセッションデータを保存する場合を除いて、適切です。<br><br>- セッションデータを `redis` セッションストレージに Redis を使用 [ に保存する ](../../configuration/cache/config-redis.md) ール。 デフォルトまたはページキャッシュに Redis を使用している場合は、Redis がインストールされている必要があります。 | 不可 |
-| `--key` | キーがある場合は、データベース内の [ 機密データ ](#sensitive-data) を暗号化するキーを指定します。 ユーザーが定義されていない場合は、自動的に定義されます。 | 不可 |
-| `--db-init-statements` | MySQL の詳細設定パラメーター。 データベース初期化文を使用して、MySQL データベースへの接続時に実行します。<br><br> デフォルトは `SET NAMES utf8;` です。<br><br> 値を設定する前に、[ この ](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) に類似したリファレンスを参照してください。 | 不可 |
+| `--session-save` | 次のいずれかを使用します。<br><br>- `db` セッションデータを [database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) に保存します。 クラスター化されたデータベースがある場合は、データベースストレージを選択します。そうしないと、ファイルベースのストレージに比べて大きなメリットがない可能性があります。<br><br>- セッションデータをファイルシステムに保存する `files` ール。 ファイルベースのセッションストレージは、ファイルシステムアクセスが遅い場合、クラスター化されたデータベースがある場合、または Redis にセッションデータを保存する場合を除いて、適切です。<br><br>- セッションデータを `redis` セッションストレージに Redis を使用 [&#x200B; に保存する &#x200B;](../../configuration/cache/config-redis.md) ール。 デフォルトまたはページキャッシュに Redis を使用している場合は、Redis がインストールされている必要があります。 | 不可 |
+| `--key` | キーがある場合は、データベース内の [&#x200B; 機密データ &#x200B;](#sensitive-data) を暗号化するキーを指定します。 ユーザーが定義されていない場合は、自動的に定義されます。 | 不可 |
+| `--db-init-statements` | MySQL の詳細設定パラメーター。 データベース初期化文を使用して、MySQL データベースへの接続時に実行します。<br><br> デフォルトは `SET NAMES utf8;` です。<br><br> 値を設定する前に、[&#x200B; この &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) に類似したリファレンスを参照してください。 | 不可 |
 | `--http-cache-hosts` | パージリクエストの送信先の HTTP キャッシュゲートウェイホストのコンマ区切りリスト。 （例：Varnish サーバー）。 このパラメーターを使用して、同じリクエストでパージする 1 つ以上のホストを指定します。 （ホストが 1 つだけの場合でも、多数のホストがある場合でも関係ありません）。<br><br> 形式は `<hostname or ip>:<listen port>` にする必要があります。ポート 80 の場合、`<listen port>` を省略できます。 例：`--http-cache-hosts=192.0.2.100,192.0.2.155:6081`。 ホストをスペース文字で区切らないでください。 | 不可 |
 
 ## 設定データの読み込み
@@ -60,7 +60,7 @@ bin/magento app:config:import [-n, --no-interaction]
 
 オプションの `[-n, --no-interaction]` フラグを使用すると、追加の確認を行わずにコマンドを実行できます。
 
-詳しくは、「設定ファイルからのデータのインポート [ を参照してください ](../../configuration/cli/import-configuration.md)
+詳しくは、「設定ファイルからのデータのインポート [&#x200B; を参照してください &#x200B;](../../configuration/cli/import-configuration.md)
 
 ### 機密データ
 

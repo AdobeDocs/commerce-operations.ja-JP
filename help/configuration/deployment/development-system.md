@@ -15,8 +15,8 @@ ht-degree: 0%
 
 - いずれもCommerce 2.2 以降を実行します
 - すべてのCommerce コードは、ビルドシステムおよび実稼動システムと同じリポジトリでソース管理下にあります
-- 各開発システムは、[ デフォルトモード ](../bootstrap/application-modes.md#default-mode) または [ 開発者モード ](../bootstrap/application-modes.md#developer-mode) のいずれかを使用する必要があります
-- [ 開発、ビルド、実稼働システムの前提条件 ](../deployment/technical-details.md) で説明されているように、ファイルシステムの所有権と権限が設定されています。
+- 各開発システムは、[&#x200B; デフォルトモード &#x200B;](../bootstrap/application-modes.md#default-mode) または [&#x200B; 開発者モード &#x200B;](../bootstrap/application-modes.md#developer-mode) のいずれかを使用する必要があります
+- [&#x200B; 開発、ビルド、実稼働システムの前提条件 &#x200B;](../deployment/technical-details.md) で説明されているように、ファイルシステムの所有権と権限が設定されています。
 - 次のすべてがソース管理から _除外_ されていることを確認します。
 
    - `vendor` ディレクトリ（およびサブディレクトリ）
@@ -26,4 +26,4 @@ ht-degree: 0%
 
 - `app/etc/config.php` がソース管理に _含まれる_ ことを確認
 
-Git を使用する場合は、上記のほとんどを `.gitignore` ファイルで提供します。 [`.gitignore` リファレンスを参照してください ](../reference/config-reference-gitignore.md)。
+Git を使用する場合は、上記のほとんどを `.gitignore` ファイルで提供します。 [`.gitignore` リファレンスを参照してください &#x200B;](../reference/config-reference-gitignore.md)。

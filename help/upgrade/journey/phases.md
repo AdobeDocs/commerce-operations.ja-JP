@@ -17,4 +17,4 @@ ht-degree: 0%
 - [年度計画](annual-planning.md)
 - [実装](implementation.md)
 
-![ アップグレードジャーニーフェーズ ](../../assets/upgrade-guide/upgrade-journey-phases.svg)
+![&#x200B; アップグレードジャーニーフェーズ &#x200B;](../../assets/upgrade-guide/upgrade-journey-phases.svg)

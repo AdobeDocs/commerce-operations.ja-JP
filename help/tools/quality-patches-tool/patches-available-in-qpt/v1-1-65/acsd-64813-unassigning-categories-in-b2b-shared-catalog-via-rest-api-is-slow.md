@@ -38,7 +38,7 @@ REST API を使用して [!DNL B2B] 共有カタログのカテゴリの割り�
 
 1. **[!UICONTROL B2B]**、**[!UICONTROL Company]**、**[!UICONTROL Shared Catalog]** を有効にします。
 1. 30,000 個のアクティブな在庫製品を生成します。
-1. [ カスタム共有カタログ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) を作成し、すべての製品を割り当てます。
+1. [&#x200B; カスタム共有カタログ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) を作成し、すべての製品を割り当てます。
 1. デフォルトのルートカテゴリの下に新しいカテゴリを作成し、いくつかの製品を割り当てます。
 1. 管理トークンを使用して、新しいカテゴリ ID で REST API エンドポイント `rest/all/V1/sharedCatalog/<shared_catalog_id>/assignCategories` を呼び出します。
 
@@ -74,11 +74,11 @@ REST API を使用して [!DNL B2B] 共有カタログのカテゴリの割り�
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。

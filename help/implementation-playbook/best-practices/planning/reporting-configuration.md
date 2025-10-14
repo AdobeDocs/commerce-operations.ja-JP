@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # レポート設定のベストプラクティス
 
-ビジネスでレポート機能や動的な顧客セグメント機能が不要な場合は、[ レポート機能 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/general/reports) を無効にして、ストアのパフォーマンスを向上させます。
+ビジネスでレポート機能や動的な顧客セグメント機能が不要な場合は、[&#x200B; レポート機能 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/general/reports) を無効にして、ストアのパフォーマンスを向上させます。
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -32,5 +32,5 @@ ht-degree: 1%
 
 ## 追加情報
 
-- [Adobe Commerceでのレポートの生成 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/reports-menu)
-- [ 顧客の動的セグメント ](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/segments/customer-segments)
+- [Adobe Commerceでのレポートの生成 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/reports-menu)
+- [&#x200B; 顧客の動的セグメント &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/segments/customer-segments)

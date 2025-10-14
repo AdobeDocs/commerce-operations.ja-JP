@@ -19,11 +19,11 @@ ht-degree: 0%
 
   ホストされた環境に複数の web サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーにお問い合わせください。
 
-  クラウドインフラストラクチャー上にAdobe Commerceをセットアップするには、追加のタスクが必要になります。 Commerceこのトピックで取り上げる作業が完了したら、[Cloud Infrastructure ガイドの ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja) 複数の web サイトまたはストアの設定 _を参照してください_。
+  クラウドインフラストラクチャー上にAdobe Commerceをセットアップするには、追加のタスクが必要になります。 Commerceこのトピックで取り上げる作業が完了したら、[Cloud Infrastructure ガイドの &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja) 複数の web サイトまたはストアの設定 _を参照してください_。
 
 - Web サイトごとに 1 つのバーチャルホストを使用します。バーチャルホスト設定ファイルは `/etc/httpd/httpd.conf` です
 
-  異なるオペレーティングシステム上の異なるバージョンの Apache では、異なる方法で仮想ホストを設定します。 [Apache のドキュメント ](https://httpd.apache.org/docs/2.4/vhosts) を参照するか、仮想ホストの設定方法が不明な場合はネットワーク管理者に問い合わせてください。
+  異なるオペレーティングシステム上の異なるバージョンの Apache では、異なる方法で仮想ホストを設定します。 [Apache のドキュメント &#x200B;](https://httpd.apache.org/docs/2.4/vhosts) を参照するか、仮想ホストの設定方法が不明な場合はネットワーク管理者に問い合わせてください。
 
 - Commerce ソフトウェアは `/var/www/html/magento2` にインストールされています
 - デフォルト以外に 2 つの web サイトがあります。
@@ -35,12 +35,12 @@ ht-degree: 0%
 
 複数のストアを設定するには、次のタスクを実行します。
 
-1. 管理画面で [web サイト、ストア、ストア表示を設定 ](ms-admin.md) します。
-1. Commerceの web サイトごとに 1 つの [Apache バーチャルホスト ](#step-2-create-apache-virtual-hosts) を作成します。
+1. 管理画面で [web サイト、ストア、ストア表示を設定 &#x200B;](ms-admin.md) します。
+1. Commerceの web サイトごとに 1 つの [Apache バーチャルホスト &#x200B;](#step-2-create-apache-virtual-hosts) を作成します。
 
 ## 手順 1：管理での web サイト、ストア、ストアビューの作成
 
-詳しくは [ 管理での複数の web サイト、ストア、ストア表示の設定 ](ms-admin.md) を参照してください。
+詳しくは [&#x200B; 管理での複数の web サイト、ストア、ストア表示の設定 &#x200B;](ms-admin.md) を参照してください。
 
 ## 手順 2:Apache 仮想ホストを作成する
 
@@ -110,10 +110,10 @@ ht-degree: 0%
 >[!INFO]
 >
 >- ホストされた環境に複数の web サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーにお問い合わせください。
->- クラウドインフラストラクチャー上にAdobe Commerceを設定するには、さらに作業が必要です。[2&rbrace; クラウドインフラストラクチャー上のCommerceガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja) 複数のクラウド Web サイトまたはストアの設定 _を参照してください。_
+>- クラウドインフラストラクチャー上にAdobe Commerceを設定するには、さらに作業が必要です。[2&rbrace; クラウドインフラストラクチャー上のCommerceガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja) 複数のクラウド Web サイトまたはストアの設定 _を参照してください。_
 
 ### トラブルシューティング
 
-- フランス語およびドイツ語のサイトが 404 を返すが、管理者が読み込む場合は、[ 手順 6：ベース URL にストアコードを追加する ](ms-admin.md#step-6-add-the-store-code-to-the-base-url) を完了していることを確認します。
+- フランス語およびドイツ語のサイトが 404 を返すが、管理者が読み込む場合は、[&#x200B; 手順 6：ベース URL にストアコードを追加する &#x200B;](ms-admin.md#step-6-add-the-store-code-to-the-base-url) を完了していることを確認します。
 - すべての URL が 404 を返す場合は、web サーバーを再起動していることを確認します。
 - 管理者が正しく機能しない場合は、仮想ホストを正しく設定していることを確認してください。

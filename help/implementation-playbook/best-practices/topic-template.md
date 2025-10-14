@@ -34,7 +34,7 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 <!-- Example 1: -->
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerceオンプレミス

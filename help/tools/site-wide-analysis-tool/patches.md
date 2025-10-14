@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Patches]
 
-[!DNL Site-Wide Analysis Tool's] [!UICONTROL Patches] ページには、Adobe Commerce ストアで使用可能なすべてのパッチが表示されます。 これらのパッチは、Adobe Commerceで発生する可能性のある問題の解決に役立ちます。 [ の ](https://support.magento.com/hc/en-us/articles/360047139492)Quality Patches Tool released: new tool to self-serve quality patches[!DNL support knowledge base] の記事を参照してください。
+[!DNL Site-Wide Analysis Tool's] [!UICONTROL Patches] ページには、Adobe Commerce ストアで使用可能なすべてのパッチが表示されます。 これらのパッチは、Adobe Commerceで発生する可能性のある問題の解決に役立ちます。 [&#x200B; の &#x200B;](https://support.magento.com/hc/en-us/articles/360047139492)Quality Patches Tool released: new tool to self-serve quality patches[!DNL support knowledge base] の記事を参照してください。
 
 >[!NOTE]
 >

@@ -40,15 +40,15 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Adobe Commerceでは、Adobe Commerce データベース内のカスタムトリガーをサポートしていません。カスタムバージョンは、今後のAdobe Commerce トリガーとの互換性を失う可能性があるからです。 ベストプラクティスについては、Adobe Commerce ドキュメントの [ 一般的な MySQL ガイドライン ](../../../installation/prerequisites/database/mysql.md) を参照してください。
+>Adobe Commerceでは、Adobe Commerce データベース内のカスタムトリガーをサポートしていません。カスタムバージョンは、今後のAdobe Commerce トリガーとの互換性を失う可能性があるからです。 ベストプラクティスについては、Adobe Commerce ドキュメントの [&#x200B; 一般的な MySQL ガイドライン &#x200B;](../../../installation/prerequisites/database/mysql.md) を参照してください。
 
 ### 効果的な使用
 
 トリガーを使用する際のパフォーマンスの問題を防ぐには、次のガイドラインに従います。
 
 - トリガーの実行時にデータを書き込むカスタムトリガーがある場合、代わりに、監査テーブルに直接書き込むように、このロジックを移動します。 例えば、トリガーを作成するクエリの後に、アプリケーションコードにクエリを追加します。
-- 既存のカスタムトリガーを確認し、それらを削除して、アプリケーション側からテーブルに直接書き込むことを検討します。 [`SHOW TRIGGERS` SQL 文 ](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html) を使用して、データベース内の既存のトリガーを確認します。
-- その他のサポート、質問または懸念については、[Adobe Commerce サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja&#submit-ticket) してください。
+- 既存のカスタムトリガーを確認し、それらを削除して、アプリケーション側からテーブルに直接書き込むことを検討します。 [`SHOW TRIGGERS` SQL 文 &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html) を使用して、データベース内の既存のトリガーを確認します。
+- その他のサポート、質問または懸念については、[Adobe Commerce サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja&#submit-ticket) してください。
 
 ## スレーブ接続
 

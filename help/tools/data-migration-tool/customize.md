@@ -12,18 +12,18 @@ ht-degree: 0%
 
 # [!DNL Data Migration Tool] の設定
 
-[ 拡張機能 ](https://marketplace.magento.com/extensions.html) またはカスタムコードで作成されたデータのフォーマットと構造が、Magento 1 とMagento 2 で異なる場合があります。 [!DNL Data Migration Tool] 内で拡張ポイントを使用して、このデータを移行します。 データの形式と構造が同じ場合、ユーザーの操作なしでツールを使用して自動的にデータを移行できます。
+[&#x200B; 拡張機能 &#x200B;](https://marketplace.magento.com/extensions.html) またはカスタムコードで作成されたデータのフォーマットと構造が、Magento 1 とMagento 2 で異なる場合があります。 [!DNL Data Migration Tool] 内で拡張ポイントを使用して、このデータを移行します。 データの形式と構造が同じ場合、ユーザーの操作なしでツールを使用して自動的にデータを移行できます。
 
-移行時に、[ マップステップ ](technical-specification.md#map-step) は、拡張機能によって作成されたテーブルを含め、すべてのMagento 1 およびMagento 2 テーブルをスキャンして比較します。 テーブルが同じ場合、ツールは自動的にデータを移行します。 テーブルが異なる場合、ツールは終了し、ユーザーに通知します。
+移行時に、[&#x200B; マップステップ &#x200B;](technical-specification.md#map-step) は、拡張機能によって作成されたテーブルを含め、すべてのMagento 1 およびMagento 2 テーブルをスキャンして比較します。 テーブルが同じ場合、ツールは自動的にデータを移行します。 テーブルが異なる場合、ツールは終了し、ユーザーに通知します。
 
 >[!NOTE]
 >
->[ を拡張する前に、](technical-specification.md) 技術仕様 [!DNL Data Migration Tool] をお読みください。 また、移行ツールの使用方法に関する一般的な情報については、[ 移行ガイド ](../overview.md) を参照してください。
+>[&#x200B; を拡張する前に、](technical-specification.md) 技術仕様 [!DNL Data Migration Tool] をお読みください。 また、移行ツールの使用方法に関する一般的な情報については、[&#x200B; 移行ガイド &#x200B;](../overview.md) を参照してください。
 
 
 ## データ形式と構造のマイナーな変更
 
-ほとんどの場合、[ マップステップ ](technical-specification.md#map-step) は、`map.xml` ファイルの次のメソッドを使用して、マイナーなデータ形式および構造の変更を十分に解決します。
+ほとんどの場合、[&#x200B; マップステップ &#x200B;](technical-specification.md#map-step) は、`map.xml` ファイルの次のメソッドを使用して、マイナーなデータ形式および構造の変更を十分に解決します。
 
 - マッピングルールを使用したテーブル名またはフィールド名の変更
 - 既存のハンドラーまたはカスタムハンドラーを使用してデータ形式を変換
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 ### 他の手順でのマッピングの拡張
 
-[EAV ステップ ](technical-specification.md#eav-step) や顧客属性ステップなど、その他のステップはマッピングをサポートします。 これらの手順では、Magento テーブルの事前定義済みのリストを移行します。 例えば、「GreatBlog」拡張機能の `eav_attribute` テーブルにフィールドが追加されていて、名前がMagento 2 で変更されたとします。 テーブルは [EAV Step](technical-specification.md#eav-step) によって処理されるので、マッピングルールは `map-eav.xml` ファイルに書き込む必要があります。 `map.xml` ファイルと `map-eav.xml` ファイルは同じ `map.xsd` スキーマを使用するので、マッピングルールは同じままです。
+[EAV ステップ &#x200B;](technical-specification.md#eav-step) や顧客属性ステップなど、その他のステップはマッピングをサポートします。 これらの手順では、Magento テーブルの事前定義済みのリストを移行します。 例えば、「GreatBlog」拡張機能の `eav_attribute` テーブルにフィールドが追加されていて、名前がMagento 2 で変更されたとします。 テーブルは [EAV Step](technical-specification.md#eav-step) によって処理されるので、マッピングルールは `map-eav.xml` ファイルに書き込む必要があります。 `map.xml` ファイルと `map-eav.xml` ファイルは同じ `map.xsd` スキーマを使用するので、マッピングルールは同じままです。
 
 ## データ形式および構造の大幅な変更
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 - OrderGrids ステップ
 - [EAV ステップ](technical-specification.md#eav-step)
 
-[ マップステップ ](technical-specification.md#map-step) とは異なり、これらのステップでは、すべてのテーブルではなく、事前に定義されたテーブルのリストをスキャンします。
+[&#x200B; マップステップ &#x200B;](technical-specification.md#map-step) とは異なり、これらのステップでは、すべてのテーブルではなく、事前に定義されたテーブルのリストをスキャンします。
 
 データの形式および構造を大幅に変更する場合は、カスタムステップを作成します。
 
@@ -164,10 +164,10 @@ Magento 2 `greatblog_post` テーブルは次のようになります。
 
 >[!NOTE]
 >
->詳しくは、[ 設定 ](technical-specification.md#configuration)、[ ステップの内部 ](technical-specification.md#step-internals)、[ ステージ ](technical-specification.md#step-stages)、および [ 実行モード ](technical-specification.md#running-modes) を参照してください。
+>詳しくは、[&#x200B; 設定 &#x200B;](technical-specification.md#configuration)、[&#x200B; ステップの内部 &#x200B;](technical-specification.md#step-internals)、[&#x200B; ステージ &#x200B;](technical-specification.md#step-stages)、および [&#x200B; 実行モード &#x200B;](technical-specification.md#running-modes) を参照してください。
 
 
-複雑な SQL クエリは、これらのクラス内で組み合わせて、データを取得および移行できます。 また、これらのテーブルは、既存のすべてのテーブルをスキャンし、[ ファイルの ](technical-specification.md#map-step) タグにない限りデータの移行を試みるので `<ignore>` マップ手順 `map.xml` では「無視」する必要があります。
+複雑な SQL クエリは、これらのクラス内で組み合わせて、データを取得および移行できます。 また、これらのテーブルは、既存のすべてのテーブルをスキャンし、[&#x200B; ファイルの &#x200B;](technical-specification.md#map-step) タグにない限りデータの移行を試みるので `<ignore>` マップ手順 `map.xml` では「無視」する必要があります。
 
 整合性チェックの場合は、追加のマップファイルを `config.xml` ファイルに定義して、テーブル構造が期待どおりであることを確認します。
 
@@ -411,6 +411,6 @@ class Delta extends \Migration\App\Step\AbstractDelta
 
 ## 禁止される拡張方法
 
-[!DNL Data Migration Tool] とMagento 2 は常に進化しているため、既存の手順やハンドラーは変更される可能性があります。 [ マップステップ ](technical-specification.md#map-step)、[URL 書き換えステップ ](technical-specification.md#url-rewrite-step)、ハンドラーなどのステップの動作は、クラスを拡張して上書きしないことを強くお勧めします。
+[!DNL Data Migration Tool] とMagento 2 は常に進化しているため、既存の手順やハンドラーは変更される可能性があります。 [&#x200B; マップステップ &#x200B;](technical-specification.md#map-step)、[URL 書き換えステップ &#x200B;](technical-specification.md#url-rewrite-step)、ハンドラーなどのステップの動作は、クラスを拡張して上書きしないことを強くお勧めします。
 
-一部の手順は、マッピングをサポートしておらず、変更するにはコードを変更する必要があります。 移行終了時にデータを変更する追加の手順を作成するか、[GitHub のイシューを作成し ](https://github.com/magento/data-migration-tool/issues) 既存の手順に新しい拡張ポイントを要求できます。
+一部の手順は、マッピングをサポートしておらず、変更するにはコードを変更する必要があります。 移行終了時にデータを変更する追加の手順を作成するか、[GitHub のイシューを作成し &#x200B;](https://github.com/magento/data-migration-tool/issues) 既存の手順に新しい拡張ポイントを要求できます。

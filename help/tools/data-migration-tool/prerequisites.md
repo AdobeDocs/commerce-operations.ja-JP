@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ## Magento2 システム
 
-* [ 必要システム構成 ](../../installation/system-requirements.md) を満たすようにMagento 2 システムを設定します。
+* [&#x200B; 必要システム構成 &#x200B;](../../installation/system-requirements.md) を満たすようにMagento 2 システムを設定します。
 
   少なくとも既存のMagento 1 システムと一致するトポロジとデザインを使用します。
 
-* [Magento 2 をインストールします ](../../installation/overview.md)。
+* [Magento 2 をインストールします &#x200B;](../../installation/overview.md)。
 
 ## Cron
 
@@ -28,7 +28,7 @@ Magento 2 cron ジョブは開始しないでください。
 
 ## データベース
 
-* インストール後、できるだけ早くMagento 2 データベースをバックアップまたは [ ダンプ ](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) します。 これにより、移行が成功しなかった場合に、初期のデータベース状態を復元できます。
+* インストール後、できるだけ早くMagento 2 データベースをバックアップまたは [&#x200B; ダンプ &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) します。 これにより、移行が成功しなかった場合に、初期のデータベース状態を復元できます。
 
 * Magento 1 およびMagento 2 データベースに接続するためのネットワークアクセス権が [!DNL Data Migration Tool] に付与されているかどうかを確認します。
 
@@ -36,7 +36,7 @@ Magento 2 cron ジョブは開始しないでください。
 
 * Magento データベースへのアクセスに必要な権限が MySQL アカウントにすべて付与されていることを確認します。
 
-Magento 1 データベースでバイナリログが有効になっている場合は、グローバル [`log_bin_trust_function_creators`](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_log_bin_trust_function_creators) MySQL システム変数を `1` に設定するか、[SUPER 権限 ](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_super) をアカウントに付与します。
+Magento 1 データベースでバイナリログが有効になっている場合は、グローバル [`log_bin_trust_function_creators`](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_log_bin_trust_function_creators) MySQL システム変数を `1` に設定するか、[SUPER 権限 &#x200B;](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_super) をアカウントに付与します。
 
 * 移行前に、Magento 2 ストアに新しいエンティティ（製品、カテゴリ、属性）を作成することはお勧めしません。[!DNL Data Migration Tool] により、Magento 1 の古いエンティティで新しいエンティティが上書きされるからです。
 

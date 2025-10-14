@@ -66,7 +66,7 @@ Adobe Commerce プロジェクトが Pro アーキテクチャにデプロイさ
 
    ノードを追加する際は、`referenceID` 変数と `column name` 変数をカスタムのカスタム値に置き換えます。
 
-詳しくは、開発者向けドキュメントの [ 宣言型スキーマの設定 ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) を参照してください。
+詳しくは、開発者向けドキュメントの [&#x200B; 宣言型スキーマの設定 &#x200B;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) を参照してください。
 
 ## 重複するインデックスの特定と削除
 
@@ -86,7 +86,7 @@ Pro アーキテクチャマーチャントは、Percona Toolkit `[pt-duplicate-
 
 ### 重複するインデックスの削除
 
-SQL [DROP INDEX ステートメント ](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html) を使用して、重複するインデックスを削除します。
+SQL [DROP INDEX ステートメント &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html) を使用して、重複するインデックスを削除します。
 
 ```SQL
 DROP INDEX

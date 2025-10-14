@@ -15,7 +15,7 @@ Web ブラウザーでストアフロントに移動します。 例えば、イ
 
 次の図は、ストアフロントページのサンプルを示しています。 次のように表示される場合、インストールは成功です。
 
-![Luma テーマを使用したストアフロント ](../../assets/installation/install-success_store-luma.png)
+![Luma テーマを使用したストアフロント &#x200B;](../../assets/installation/install-success_store-luma.png)
 
 ## ストアフロントの検証（サンプルデータなし）
 
@@ -23,9 +23,9 @@ Web ブラウザーでストアフロントに移動します。 例えば、イ
 
 次の図は、ストアフロントページのサンプルを示しています。 次のように表示される場合、インストールは成功です。
 
-![ インストールが成功したことを確認するストアフロント ](../../assets/installation/install-success_store.png)
+![&#x200B; インストールが成功したことを確認するストアフロント &#x200B;](../../assets/installation/install-success_store.png)
 
-ページに `404 (Not Found)` エラーが表示される場合や、スタイルが表示されない場合は、[ トラブルシューティング ](https://support.magento.com/hc/en-us/articles/360032994352) を参照してください。
+ページに `404 (Not Found)` エラーが表示される場合や、スタイルが表示されない場合は、[&#x200B; トラブルシューティング &#x200B;](https://support.magento.com/hc/en-us/articles/360032994352) を参照してください。
 
 ## 管理者の確認
 
@@ -37,9 +37,9 @@ Web ブラウザーで管理者に移動します。 例えば、インストー
 
 次の図に、管理ページのサンプルを示します。 次のように表示される場合、インストールは成功です。
 
-![ インストールが成功したことを確認する Admin](../../assets/installation/install_success_admin.png)
+![&#x200B; インストールが成功したことを確認する Admin](../../assets/installation/install_success_admin.png)
 
-ページにスタイルが表示されない場合は、[ トラブルシューティング ](https://support.magento.com/hc/en-us/articles/360032994352) を参照してください。
+ページにスタイルが表示されない場合は、[&#x200B; トラブルシューティング &#x200B;](https://support.magento.com/hc/en-us/articles/360032994352) を参照してください。
 
 次のような 404 （Not Found） エラーが発生した場合は、[PHP version error or 404 when access Adobe Commerce in browser](https://support.magento.com/hc/en-us/articles/360033117152) を参照してください。
 

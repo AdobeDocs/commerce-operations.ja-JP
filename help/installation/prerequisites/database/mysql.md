@@ -11,22 +11,22 @@ ht-degree: 0%
 
 # 一般的な MySQL ガイドライン
 
-サポートされている MySQL のバージョンについては、[ システム要件 ](../../system-requirements.md) を参照してください。
+サポートされている MySQL のバージョンについては、[&#x200B; システム要件 &#x200B;](../../system-requirements.md) を参照してください。
 
 Adobe _強く_ は、データベースを設定する際に、次の標準に従うことをお勧めします。
 
-* Adobe Commerceでは、[MySQL データベーストリガー](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) を使用して、インデックス再作成中のデータベースアクセスを改善します。 これらは、インデクサーモードが「[ スケジュール ](../../../configuration/cli/manage-indexers.md#configure-indexers)」に設定されている場合に作成されます。 カスタムトリガーは将来のAdobe Commerceとの互換性を失う可能性があるため、データベース内のカスタムトリガーはサポートされません。
-* 続行する前に [MySQL のトリガーに関する潜在的な制限 ](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) について確認してください。
+* Adobe Commerceでは、[MySQL データベーストリガー](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) を使用して、インデックス再作成中のデータベースアクセスを改善します。 これらは、インデクサーモードが「[&#x200B; スケジュール &#x200B;](../../../configuration/cli/manage-indexers.md#configure-indexers)」に設定されている場合に作成されます。 カスタムトリガーは将来のAdobe Commerceとの互換性を失う可能性があるため、データベース内のカスタムトリガーはサポートされません。
+* 続行する前に [MySQL のトリガーに関する潜在的な制限 &#x200B;](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) について確認してください。
 * データベースのセキュリティ体制を強化するには、[`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) SQL モードを有効にして、不要なデータベース操作を引き起こす可能性のある無効なデータ値の保存を防ぎます。
-* Adobe Commerceでは、MySQL 文ベースのレプリケーションはサポート _れていません_。 必ず _only_[ 行ベースのレプリケーション ](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html) を使用してください。
+* Adobe Commerceでは、MySQL 文ベースのレプリケーションはサポート _れていません_。 必ず _only_[&#x200B; 行ベースのレプリケーション &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html) を使用してください。
 
 >[!WARNING]
 >
->Adobe Commerceは現在、トランザクション内で `CREATE TEMPORARY TABLE` ステートメントを使用しています。これは [ データベース実装と互換性がない ](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html)、[Google Cloud SQL 第 2 世代インスタンス ](https://cloud.google.com/sql/docs/features#differences) などの GTID ベースのレプリケーションを使用します。 Cloud SQL 8.0 用の MySQL を代替案として検討してください。
+>Adobe Commerceは現在、トランザクション内で `CREATE TEMPORARY TABLE` ステートメントを使用しています。これは [&#x200B; データベース実装と互換性がない &#x200B;](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html)、[Google Cloud SQL 第 2 世代インスタンス &#x200B;](https://cloud.google.com/sql/docs/features#differences) などの GTID ベースのレプリケーションを使用します。 Cloud SQL 8.0 用の MySQL を代替案として検討してください。
 
 >[!NOTE]
 >
->Web サーバーとデータベースサーバーが異なるホスト上にある場合は、データベースサーバーホスト上でこのトピックで説明されているタスクを実行してから、[ リモート MySQL データベース接続の設定 ](mysql-remote.md) を参照してください。
+>Web サーバーとデータベースサーバーが異なるホスト上にある場合は、データベースサーバーホスト上でこのトピックで説明されているタスクを実行してから、[&#x200B; リモート MySQL データベース接続の設定 &#x200B;](mysql-remote.md) を参照してください。
 
 ## Ubuntu への MySQL のインストール
 
@@ -49,7 +49,7 @@ Adobe Commerce 2.4 には、MySQL 8.0 のクリーンインストールが必要
 SHOW VARIABLES LIKE 'max_allowed_packet';
 ```
 
-次に、[ データベースインスタンスを設定 ](#configuring-the-database-instance) します。
+次に、[&#x200B; データベースインスタンスを設定 &#x200B;](#configuring-the-database-instance) します。
 
 ## MySQL 8 の変更
 
@@ -172,15 +172,15 @@ MySQL データベースインスタンスを設定するには、次の手順�
 
    MySQL モニターが表示された場合は、データベースが正しく作成されています。 エラーが表示された場合は、上記のコマンドを繰り返します。
 
-1. Web サーバーとデータベースサーバーが異なるホスト上にある場合は、データベースサーバーホスト上でこのトピックで説明されているタスクを実行してから、[ リモート MySQL データベース接続の設定 ](mysql-remote.md) を参照してください。
+1. Web サーバーとデータベースサーバーが異なるホスト上にある場合は、データベースサーバーホスト上でこのトピックで説明されているタスクを実行してから、[&#x200B; リモート MySQL データベース接続の設定 &#x200B;](mysql-remote.md) を参照してください。
 
    ビジネスに適したデータベースインスタンスを設定することをお勧めします。 データベースを設定する際は、次の点に注意してください。
 
-   * インデクサーには、より高い `tmp_table_size` と `max_heap_table_size` の値（例：64 M）が必要です。 `batch_size` パラメーターを設定すると、インデクサーのパフォーマンスを向上させるために、テーブルサイズの設定と共にその値を調整できます。 詳しくは、『 [ 最適化ガイド ](../../../performance/configuration.md) を参照してください。
+   * インデクサーには、より高い `tmp_table_size` と `max_heap_table_size` の値（例：64 M）が必要です。 `batch_size` パラメーターを設定すると、インデクサーのパフォーマンスを向上させるために、テーブルサイズの設定と共にその値を調整できます。 詳しくは、『 [&#x200B; 最適化ガイド &#x200B;](../../../performance/configuration.md) を参照してください。
 
    * 最適なパフォーマンスを得るには、すべての MySQL およびAdobe Commerce インデックステーブルをメモリに保持できるようにします（例：`innodb_buffer_pool_size` を設定）。
 
-   * MariaDB 10.4 でのインデックス再作成は、他の MariaDB または MySQL バージョンに比べて時間がかかります。 [ 設定のベストプラクティス ](../../../performance/configuration.md#indexers) を参照してください。
+   * MariaDB 10.4 でのインデックス再作成は、他の MariaDB または MySQL バージョンに比べて時間がかかります。 [&#x200B; 設定のベストプラクティス &#x200B;](../../../performance/configuration.md#indexers) を参照してください。
 
 1. MySQL `TIMESTAMP` フィールドがアプリケーションの宣言型スキーマアーキテクチャが想定する環境設定および構成に従うようにするには、システム変数 `explicit_defaults_for_timestamp` を `on` に設定する必要があります。
 

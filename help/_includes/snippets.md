@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->すべてのMagento CLI コマンドは、[ ファイルシステムの所有者 ](/help/configuration/cli/config-cli.md#prerequisites) によって実行される必要があります。
+>すべてのMagento CLI コマンドは、[&#x200B; ファイルシステムの所有者 &#x200B;](/help/configuration/cli/config-cli.md#prerequisites) によって実行される必要があります。
 
 ## バックアップコマンド {#tip-backup-command}
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントも、互換性のある最新の B2B セキュリティパッチリリースに更新する必要があります。 [B2B リリースノート ](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/release-notes) を参照してください。
+>このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントも、互換性のある最新の B2B セキュリティパッチリリースに更新する必要があります。 [B2B リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/release-notes) を参照してください。
 
 ## Adobe Commerceのみ {#ee-only}
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobe Commerceのバージョン 2.4.2 では、分割データベース機能は [ 非推奨 ](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187?_ga=2.128934671.2024864496.1657558157-1596100530.1657558157) となりました。 [ 分割データベースから単一データベースへの復帰 ](/help/configuration/storage/revert-split-database.md) を参照してください。
+>Adobe Commerceのバージョン 2.4.2 では、分割データベース機能は [&#x200B; 非推奨 &#x200B;](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187?_ga=2.128934671.2024864496.1657558157-1596100530.1657558157) となりました。 [&#x200B; 分割データベースから単一データベースへの復帰 &#x200B;](/help/configuration/storage/revert-split-database.md) を参照してください。
 
 <!-- End of Configuration guide snippets -->
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce リリースには、後方互換性のない変更（BIC）が含まれている場合があります。 後方互換性のない変更を確認するには、[BIC リファレンス ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/) を参照してください。 後方互換性のない主な問題については、[BIC ハイライト ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/) で説明しています。 すべてのリリースで主要な BIC が導入されるわけではありません。
+>Adobe Commerce リリースには、後方互換性のない変更（BIC）が含まれている場合があります。 後方互換性のない変更を確認するには、[BIC リファレンス &#x200B;](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/) を参照してください。 後方互換性のない主な問題については、[BIC ハイライト &#x200B;](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/) で説明しています。 すべてのリリースで主要な BIC が導入されるわけではありません。
 
 ## Alpha免責事項 {#alpha}
 
@@ -75,11 +75,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これらのリリースノートで説明されている機能強化およびバグ修正のコードはAdobe Commerceにバンドルされていますが、これらのプロジェクトの一部（B2B、Page Builder、Progressive Web Applications （PWA） Studio など）も独立してリリースされています。 これらのプロジェクトのバグ修正は、各プロジェクトのドキュメントで利用できる別のプロジェクト固有のリリース情報に記載されています。 [ 製品リリースの概要 ](/help/release/release-notes/overview.md) を参照してください。
+>これらのリリースノートで説明されている機能強化およびバグ修正のコードはAdobe Commerceにバンドルされていますが、これらのプロジェクトの一部（B2B、Page Builder、Progressive Web Applications （PWA） Studio など）も独立してリリースされています。 これらのプロジェクトのバグ修正は、各プロジェクトのドキュメントで利用できる別のプロジェクト固有のリリース情報に記載されています。 [&#x200B; 製品リリースの概要 &#x200B;](/help/release/release-notes/overview.md) を参照してください。
 
 ## PHP プロセスコントロール {#php-process-control}
 
-インデクサーを並列モードで実行する前に、PHP でプロセス制御サポート （`pcntl`）を有効にする必要があります。 PHP ドキュメントの [ インストール ](https://www.php.net/manual/en/pcntl.installation.php) を参照してください。
+インデクサーを並列モードで実行する前に、PHP でプロセス制御サポート （`pcntl`）を有効にする必要があります。 PHP ドキュメントの [&#x200B; インストール &#x200B;](https://www.php.net/manual/en/pcntl.installation.php) を参照してください。
 
 ## カスタムパッチ {#custom-patches-disclaimer}
 

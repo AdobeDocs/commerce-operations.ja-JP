@@ -16,15 +16,15 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-Adobeでは、バージョン 2.4.4 および 2.4.5 のAdobe Commerceのお客様に対して、1 年間のサポート延長を無料で提供します。[ ライフサイクルポリシー ](lifecycle-policy.md) には、これらのバージョンに対する拡張サポートの終了日が一覧表示されます。
+Adobeでは、バージョン 2.4.4 および 2.4.5 のAdobe Commerceのお客様に対して、1 年間のサポート延長を無料で提供します。[&#x200B; ライフサイクルポリシー &#x200B;](lifecycle-policy.md) には、これらのバージョンに対する拡張サポートの終了日が一覧表示されます。
 
 >[!ENDSHADEBOX]
 
 >[!NOTE]
 >
 >- Adobeでは、Adobe Commerceをインストールするか、各リリースで使用可能な最新のセキュリティパッチにアップグレードすることをお勧めします。
->- その他のセキュリティアップデートについては、[Magento/Adobe Commerceのセキュリティアップデート ](https://helpx.adobe.com/jp/security/products/magento.html) を参照してください。
->- 価格については、[Adobe Commerceの価格 ](https://business.adobe.com/products/magento/pricing.html) を参照してください。
+>- その他のセキュリティアップデートについては、[Magento/Adobe Commerceのセキュリティアップデート &#x200B;](https://helpx.adobe.com/jp/security/products/magento.html) を参照してください。
+>- 価格については、[Adobe Commerceの価格 &#x200B;](https://business.adobe.com/products/magento/pricing.html) を参照してください。
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 

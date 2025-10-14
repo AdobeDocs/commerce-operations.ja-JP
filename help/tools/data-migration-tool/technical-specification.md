@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ## リポジトリ
 
-[!DNL Data Migration Tool] のソースコードにアクセスするには、GitHub [ リポジトリ ](https://github.com/magento/data-migration-tool) を参照してください。
+[!DNL Data Migration Tool] のソースコードにアクセスするには、GitHub [&#x200B; リポジトリ &#x200B;](https://github.com/magento/data-migration-tool) を参照してください。
 
 ## 必要システム構成
 
-[ の ](../../installation/system-requirements.md) 必要システム構成 [!DNL Data Migration Tool] は、Magento 2 の場合と同じです。
+[&#x200B; の &#x200B;](../../installation/system-requirements.md) 必要システム構成 [!DNL Data Migration Tool] は、Magento 2 の場合と同じです。
 
 ## 内部構造
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 
 設定 `config.xsd` ファイルのスキーマは、`etc/` ディレクトリにあります。 デフォルトの設定ファイル（`config.xml.dist`）は、Magento 1.x のバージョンごとに作成されます。`etc/` の下の別のディレクトリにあります。
 
-デフォルトの設定ファイルは、カスタムの設定ファイルに置き換えることができます（[ コマンド構文 ](migrate-data/overview.md#command-syntax) を参照）。
+デフォルトの設定ファイルは、カスタムの設定ファイルに置き換えることができます（[&#x200B; コマンド構文 &#x200B;](migrate-data/overview.md#command-syntax) を参照）。
 
 設定ファイルの構造は次のとおりです。
 
@@ -265,7 +265,7 @@ class StageClass implements StageInterface
 
 データステージがロールバックをサポートしている場合は、`RollbackInterface` インターフェイスを実装する必要があります。
 
-実行中のステップのビジュアライゼーションは、Symfony の ProgressBar コンポーネントによって提供されます（[ プログレスバー ](https://symfony.com/doc/current/components/console/helpers/progressbar.html) を参照）。 このコンポーネントには、LogLevelProcessor として手順の中でアクセスします。
+実行中のステップのビジュアライゼーションは、Symfony の ProgressBar コンポーネントによって提供されます（[&#x200B; プログレスバー &#x200B;](https://symfony.com/doc/current/components/console/helpers/progressbar.html) を参照）。 このコンポーネントには、LogLevelProcessor として手順の中でアクセスします。
 
 主な使用方法を次に示します。
 
@@ -453,7 +453,7 @@ Magento 1 で開発された様々なアルゴリズムの中に、Magento 2 と
 
 ### 差分移行モード
 
-メイン移行後に、（ストアフロントのお客様などによって）Magento 1 データベースにデータが追加される場合がありました。 このデータをトラッキングするために、移行プロセスの最初に、テーブルのデータベーストリガーを設定します。 詳しくは、[ サードパーティの拡張機能で作成されたデータを移行する ](migrate-data/delta.md#migrate-data-created-by-third-party-extensions) を参照してください。
+メイン移行後に、（ストアフロントのお客様などによって）Magento 1 データベースにデータが追加される場合がありました。 このデータをトラッキングするために、移行プロセスの最初に、テーブルのデータベーストリガーを設定します。 詳しくは、[&#x200B; サードパーティの拡張機能で作成されたデータを移行する &#x200B;](migrate-data/delta.md#migrate-data-created-by-third-party-extensions) を参照してください。
 
 ## データソース
 
@@ -461,7 +461,7 @@ Magento 1 およびMagento 2 のデータソースにアクセスし、そのデ
 
 次に、これらのクラスのクラス図を示します。
 
-![ 移行ツールのデータ構造 ](../../assets/data-migration/MmigrationToolDataStructure.png)
+![&#x200B; 移行ツールのデータ構造 &#x200B;](../../assets/data-migration/MmigrationToolDataStructure.png)
 
 ## ログ
 

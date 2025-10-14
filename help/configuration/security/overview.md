@@ -18,11 +18,11 @@ ht-degree: 0%
 
 この設定ガイドのセキュリティ セクションのトピックは、Commerceの全機能を網羅しているわけではありません。 他のCommerce ガイドには、次のように、セキュリティに関する多くの重要なトピックがあります。
 
-- [PHP 開発者ガイド ](https://developer.adobe.com/commerce/php/development/security/):Adobe Commerce開発者が、構築するコンポーネントのセキュリティを向上させるために使用できる情報。
-- セキュリティ、プライバシー、規制への準拠に関する情報については、技術リソースへのリンクが記載された [ セキュリティとコンプライアンスガイド ](https://experienceleague.adobe.com/ja/docs/commerce-operations/security-and-compliance/overview) を参照してください。
+- [PHP 開発者ガイド &#x200B;](https://developer.adobe.com/commerce/php/development/security/):Adobe Commerce開発者が、構築するコンポーネントのセキュリティを向上させるために使用できる情報。
+- セキュリティ、プライバシー、規制への準拠に関する情報については、技術リソースへのリンクが記載された [&#x200B; セキュリティとコンプライアンスガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/security-and-compliance/overview) を参照してください。
 
 設定ガイドに一度に含まれていたセキュリティ関連のトピックは、次のガイドに記載されています。
 
-- [ 拡張機能ガイド ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) の _Google reCAPTCHA_。
-- [ 拡張機能ガイド ](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication/) の _二要素認証_。
-- [ セキュリティおよびコンプライアンスガイド ](https://experienceleague.adobe.com/ja/docs/commerce-operations/security-and-compliance/privacy/gdpr) の _GDPR （General Data Protection Regulation）への準拠_。
+- [&#x200B; 拡張機能ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) の _Google reCAPTCHA_。
+- [&#x200B; 拡張機能ガイド &#x200B;](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication/) の _二要素認証_。
+- [&#x200B; セキュリティおよびコンプライアンスガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/security-and-compliance/privacy/gdpr) の _GDPR （General Data Protection Regulation）への準拠_。

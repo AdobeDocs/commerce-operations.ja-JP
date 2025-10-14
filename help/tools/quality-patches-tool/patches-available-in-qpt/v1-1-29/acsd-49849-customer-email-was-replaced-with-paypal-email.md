@@ -39,9 +39,9 @@ GraphQL経由で顧客に注文すると、顧客のメールが [!DNL PayPal's]
 1. **[!UICONTROL Configuration]**/**[!UICONTROL Sales]**/**[!UICONTROL Payments]** に移動します。
 1. [!DNL PayPal Express] を有効にして設定し、**[!UICONTROL Payment Action]** = **[!UICONTROL Sale]** に設定します。
 1. **[!UICONTROL Catalog]**/**[!UICONTROL Products]** に移動して、シンプルな製品を作成します。
-1. GraphQLを使用してゲストのチェックアウトを完了します。 詳しくは、Adobe Commerce開発者向けドキュメントの [GraphQLのチェックアウトチュートリアル ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) を参照してください。
+1. GraphQLを使用してゲストのチェックアウトを完了します。 詳しくは、Adobe Commerce開発者向けドキュメントの [GraphQLのチェックアウトチュートリアル &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) を参照してください。
 1. 支払方法として [!DNL PayPal Express] を使用します。
-1. Adobe Commerce開発者ドキュメントの [ 買い物かごへのメールの設定 ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/set-email-address/) 手順で使用したメールに注意してください。
+1. Adobe Commerce開発者ドキュメントの [&#x200B; 買い物かごへのメールの設定 &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/set-email-address/) 手順で使用したメールに注意してください。
 1. 注文したら、Adobe Commerce管理者に移動し、作成した注文のメールを確認します。
 
 <u> 期待される結果 </u>:
@@ -56,15 +56,15 @@ GraphQL経由で顧客に注文すると、顧客のメールが [!DNL PayPal's]
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [ を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
+* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
 
 
 QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。

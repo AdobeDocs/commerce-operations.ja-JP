@@ -29,7 +29,7 @@ MAGE_PROFILER 変数またはコマンドラインを使用して、プロファ
 
 ## MAGE_PROFILER の設定
 
-`MAGE_PROFILER` の値は、[ ブートストラップパラメーターの値の設定 ](../bootstrap/set-parameters.md) で説明しているいずれかの方法で設定できます。
+`MAGE_PROFILER` の値は、[&#x200B; ブートストラップパラメーターの値の設定 &#x200B;](../bootstrap/set-parameters.md) で説明しているいずれかの方法で設定できます。
 
 `MAGE_PROFILER` では、次の値をサポートしています。
 
@@ -44,7 +44,7 @@ MAGE_PROFILER 変数またはコマンドラインを使用して、プロファ
 
   依存関係グラフは通常、ページの下部に表示されます。 次の図に、出力の一部を示します。
 
-  ![ 依存関係グラフ ](../../assets/configuration/depend-graphs.png)
+  ![&#x200B; 依存関係グラフ &#x200B;](../../assets/configuration/depend-graphs.png)
 
 ## CLI コマンド
 

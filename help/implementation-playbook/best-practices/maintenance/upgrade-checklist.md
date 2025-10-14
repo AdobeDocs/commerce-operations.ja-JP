@@ -21,11 +21,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->正常にアップグレードするための技術的な手順について詳しくは、アドビのユーザードキュメントの [ アップグレードの前提条件を完了 ](../../../upgrade/prepare/prerequisites.md) を参照してください。
+>正常にアップグレードするための技術的な手順について詳しくは、アドビのユーザードキュメントの [&#x200B; アップグレードの前提条件を完了 &#x200B;](../../../upgrade/prepare/prerequisites.md) を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ## 予算とタイミング
 
-▢ Adobe Commerce[ リリーススケジュール ](../../../release/schedule.md) を使用して、次のアップグレードを計画し、事前に準備します。
+▢ Adobe Commerce[&#x200B; リリーススケジュール &#x200B;](../../../release/schedule.md) を使用して、次のアップグレードを計画し、事前に準備します。
 
 ▢ 想定されるニーズに基づいて、どのバージョン（完全またはセキュリティのみ）を採用すると思うかを話し合います。
 
@@ -65,9 +65,9 @@ ht-degree: 0%
 
 ▢ 予算、タイムライン、範囲について合意します。
 
-▢ アップグレード互換性ツール [ を実行してくださ ](../../../upgrade/upgrade-compatibility-tool/overview.md)
+▢ アップグレード互換性ツール [&#x200B; を実行してくださ &#x200B;](../../../upgrade/upgrade-compatibility-tool/overview.md)
 
-▢ サイト全体分析ツール [ で特定された問題に対処するために、アップグレードの使用を検討してくださ ](../../../tools/site-wide-analysis-tool/intro.md)。
+▢ サイト全体分析ツール [&#x200B; で特定された問題に対処するために、アップグレードの使用を検討してくださ &#x200B;](../../../tools/site-wide-analysis-tool/intro.md)。
 
 ▢ ドキュメントの依存関係と、PHP や Elastic Search のバージョンなど、必要な技術的なスタックの変更。
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 ダウンタイム ▢ 予想される場合は、メンテナンスウィンドウを計画します。
 
-▢ テスト方法を確認して承認します。Adobe Commerce[ テストフレームワーク ](https://developer.adobe.com/commerce/testing/) またはサードパーティの自動処理スイートの使用を検討します。
+▢ テスト方法を確認して承認します。Adobe Commerce[&#x200B; テストフレームワーク &#x200B;](https://developer.adobe.com/commerce/testing/) またはサードパーティの自動処理スイートの使用を検討します。
 
 ▢ すべての拡張機能とカスタマイズに互換性があることを確認します。
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 ▢ パフォーマンス、注文処理、分析など、問題に関するサイトの監視。
 
-▢ Adobe Commerce[ セキュリティスキャン ](https://account.magento.com/scanner/dashboard/) またはその他のサードパーティのスキャンを実行し、潜在的なセキュリティの脆弱性を確認します。
+▢ Adobe Commerce[&#x200B; セキュリティスキャン &#x200B;](https://account.magento.com/scanner/dashboard/) またはその他のサードパーティのスキャンを実行し、潜在的なセキュリティの脆弱性を確認します。
 
 ▢ すべての関係者と遡及を実行し、うまくいったこと、うまくいかなかったこと、改善方法を文書化します。
 

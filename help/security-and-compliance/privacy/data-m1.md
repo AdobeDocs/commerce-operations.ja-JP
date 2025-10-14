@@ -28,25 +28,25 @@ ht-degree: 0%
 
 ユーザーは、アカウントの登録時、チェックアウト時などのイベントに、顧客、住所、支払い情報を入力できます。
 
-![ フロントエンドデータエントリポイント ](../../assets/security-compliance/frontend-data-entry-points.svg)
+![&#x200B; フロントエンドデータエントリポイント &#x200B;](../../assets/security-compliance/frontend-data-entry-points.svg)
 
 ### フロントエンド データ アクセス ポイント
 
 Commerceは、ユーザーがログインして複数の異なるページを表示したり、チェックアウトしたりする際に、ユーザー情報を読み込みます。
 
-![ フロントエンドデータアクセスポイント ](../../assets/security-compliance/frontend-data-access-points.svg)
+![&#x200B; フロントエンドデータアクセスポイント &#x200B;](../../assets/security-compliance/frontend-data-access-points.svg)
 
 ### バックエンドデータのエントリポイント
 
 マーチャントは、管理者から顧客、住所、支払い情報を入力して、顧客または注文を作成できます。
 
-![ バックエンドデータエントリポイント ](../../assets/security-compliance/backend-data-entry-points.svg)
+![&#x200B; バックエンドデータエントリポイント &#x200B;](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### バックエンドのデータアクセスポイント
 
 Commerceは、マーチャントが複数のタイプのグリッドを表示したり、グリッドをクリックして詳細情報を表示したり、その他の様々なタスクを実行したりすると、顧客情報を読み込みます。
 
-![ バックエンドのデータアクセスポイント ](../../assets/security-compliance/backend-data-access-points.svg)
+![&#x200B; バックエンドのデータアクセスポイント &#x200B;](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## データベースエンティティ
 

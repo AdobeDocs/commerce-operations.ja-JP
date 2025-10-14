@@ -27,13 +27,13 @@ ht-degree: 1%
 | ベストプラクティス | 説明 |
 |------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Adobe Security Notification Service](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Adobeのセキュリティ通知を購読する。 |
-| [Commerceのサイトとインフラストラクチャを保護 ](security-best-practices.md) | Commerce インストールのセキュリティ体制を強化して、Commerce ストアフロント、管理者、インフラストラクチャおよびデータを、不正アクセスやサイバー攻撃から保護します。 |
+| [Commerceのサイトとインフラストラクチャを保護 &#x200B;](security-best-practices.md) | Commerce インストールのセキュリティ体制を強化して、Commerce ストアフロント、管理者、インフラストラクチャおよびデータを、不正アクセスやサイバー攻撃から保護します。 |
 | [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=ja) | 登録ユーザーによって開始される管理者アクセスおよび様々なストアフロントアクション用にGoogle reCAPTCHA を設定する。 |
-| [Web クローラーの設定 ](robots-txt.md) | Adobe Commerce サイトに関する手順を Web クローラーに渡します。 |
-| [ セキュリティ設定の確認 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=ja) | クラウドインフラストラクチャサイトでAdobe Commerceを起動する前に、チェックリストの項目を確認します。 |
+| [Web クローラーの設定 &#x200B;](robots-txt.md) | Adobe Commerce サイトに関する手順を Web クローラーに渡します。 |
+| [&#x200B; セキュリティ設定の確認 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=ja) | クラウドインフラストラクチャサイトでAdobe Commerceを起動する前に、チェックリストの項目を確認します。 |
 
 ## パフォーマンスの監視
 
 | ベストプラクティス | 説明 |
 |------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [ を使用  [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Adobe Commerce サイトに関する重要なインサイトを 1 か所で表示できます。 |
+| [&#x200B; を使用  [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Adobe Commerce サイトに関する重要なインサイトを 1 か所で表示できます。 |

@@ -13,9 +13,9 @@ ht-degree: 0%
 
 このトピックでは、次の方法について説明します。
 
-* Adobe Commerce インストール [ ージから ](#remove-sample-data-modules) サンプルデータモジュールを削除 `composer.json` します。 このオプションでは *データベースからサンプルデータは削除* されません。
+* Adobe Commerce インストール [&#x200B; ージから &#x200B;](#remove-sample-data-modules) サンプルデータモジュールを削除 `composer.json` します。 このオプションでは *データベースからサンプルデータは削除* されません。
 
-* [ サンプルデータを更新する準備 ](#prepare-to-update-sample-data) （Magento アプリケーションを更新する前など）。
+* [&#x200B; サンプルデータを更新する準備 &#x200B;](#prepare-to-update-sample-data) （Magento アプリケーションを更新する前など）。
 
 ## サンプルデータモジュールの削除
 
@@ -59,4 +59,4 @@ bin/magento sampledata:remove
 bin/magento sampledata:reset
 ```
 
-その後、[ アプリケーションを更新 ](../tutorials/uninstall.md#update-the-application) します。
+その後、[&#x200B; アプリケーションを更新 &#x200B;](../tutorials/uninstall.md#update-the-application) します。

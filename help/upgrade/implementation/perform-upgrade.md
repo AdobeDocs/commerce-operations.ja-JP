@@ -19,18 +19,18 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->- クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、クラウドガイドの [Commerce バージョンのアップグレード ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=ja) を参照してください。
->- GitHub リポジトリのクローンを作成した場合は、この方法を使用してアップグレードしないでください。 [Git ベースのインストールのアップグレード ](../developer/git-installs.md) を参照してください。
+>- クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、クラウドガイドの [Commerce バージョンのアップグレード &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=ja) を参照してください。
+>- GitHub リポジトリのクローンを作成した場合は、この方法を使用してアップグレードしないでください。 [Git ベースのインストールのアップグレード &#x200B;](../developer/git-installs.md) を参照してください。
 
-以下の手順は、Composer パッケージ マネージャを使用してアップグレードする方法を示しています。 Adobe Commerce 2.4.2 では、Composer 2 のサポートが導入されました。 &lt;2.4.1 からアップグレードする場合は、まず Composer 1 を使用して Composer 2 と互換性のあるバージョン（たとえば 2.4.2）にアップグレードする必要があります _前に_ 2.4.2 を超えるアップグレードについては Composer 2 にアップグレードします）。 また、PHP の [ サポート対象バージョン ](../../installation/system-requirements.md) を実行する必要があります。
+以下の手順は、Composer パッケージ マネージャを使用してアップグレードする方法を示しています。 Adobe Commerce 2.4.2 では、Composer 2 のサポートが導入されました。 &lt;2.4.1 からアップグレードする場合は、まず Composer 1 を使用して Composer 2 と互換性のあるバージョン（たとえば 2.4.2）にアップグレードする必要があります _前に_ 2.4.2 を超えるアップグレードについては Composer 2 にアップグレードします）。 また、PHP の [&#x200B; サポート対象バージョン &#x200B;](../../installation/system-requirements.md) を実行する必要があります。
 
 >[!WARNING]
 >
->Adobe Commerceのアップグレード手順が変更されました。 `magento/composer-root-update-plugin` パッケージの新しいバージョンをインストールする必要があります（[ 前提条件 ](../prepare/prerequisites.md) を参照）。 また、アップグレード用のコマンドが `composer require magento/<package_name>` から `composer require-commerce magento/<package_name>` に変更されました。
+>Adobe Commerceのアップグレード手順が変更されました。 `magento/composer-root-update-plugin` パッケージの新しいバージョンをインストールする必要があります（[&#x200B; 前提条件 &#x200B;](../prepare/prerequisites.md) を参照）。 また、アップグレード用のコマンドが `composer require magento/<package_name>` から `composer require-commerce magento/<package_name>` に変更されました。
 
 ## 始める前に
 
-アップグレードプロセスを開始する前に、[ アップグレードの前提条件 ](../prepare/prerequisites.md) を満たして、環境を準備する必要があります。
+アップグレードプロセスを開始する前に、[&#x200B; アップグレードの前提条件 &#x200B;](../prepare/prerequisites.md) を満たして、環境を準備する必要があります。
 
 ## パッケージの管理
 
@@ -44,7 +44,7 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-   その他のオプションについては、[ メンテナンスモードの有効化または無効化 ](../../installation/tutorials/maintenance-mode.md) を参照してください。 オプションで、[ カスタムメンテナンスモードページ ](../troubleshooting/maintenance-mode-options.md) を作成できます。
+   その他のオプションについては、[&#x200B; メンテナンスモードの有効化または無効化 &#x200B;](../../installation/tutorials/maintenance-mode.md) を参照してください。 オプションで、[&#x200B; カスタムメンテナンスモードページ &#x200B;](../troubleshooting/maintenance-mode-options.md) を作成できます。
 
 1. メッセージキューコンシューマーなどの非同期プロセスの実行中にアップグレードプロセスを開始すると、データが破損する可能性があります。 データの破損を防ぐには、すべての cron ジョブを無効にします。
 
@@ -120,7 +120,7 @@ ht-degree: 0%
 
    - `--help` – （任意）プラグインの使用方法の詳細を提供します。
 
-   `--interactive-root-conflicts` も `--force-root-updates` も指定されていない場合、コマンドは競合する既存の値を保持し、警告メッセージを表示します。 このプラグインについて詳しくは、[ プラグインの使用方法の README](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md) を参照してください。
+   `--interactive-root-conflicts` も `--force-root-updates` も指定されていない場合、コマンドは競合する既存の値を保持し、警告メッセージを表示します。 このプラグインについて詳しくは、[&#x200B; プラグインの使用方法の README](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md) を参照してください。
 
 1. 依存関係を更新します。
 
@@ -234,7 +234,7 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 アプリケーションが `We're sorry, an error has occurred while generating this email.` エラーで失敗した場合：
 
-1. [ ファイルシステムの所有権と権限 ](../../installation/prerequisites/file-system/configure-permissions.md) を `root` 権限を持つユーザーとしてリセットします。
+1. [&#x200B; ファイルシステムの所有権と権限 &#x200B;](../../installation/prerequisites/file-system/configure-permissions.md) を `root` 権限を持つユーザーとしてリセットします。
 1. 次のディレクトリをクリアします。
    - `var/cache/`
    - `var/page_cache/`

@@ -25,12 +25,12 @@ ht-degree: 0%
 
 - 互換性のある PHP バージョンがインストールされている必要があります
 - Composer がインストールされている必要があります。
-- [ 開発、ビルド、実稼働システムの前提条件 ](../deployment/technical-details.md) で説明されているように、ファイルシステムの所有権と権限が設定されています。
+- [&#x200B; 開発、ビルド、実稼働システムの前提条件 &#x200B;](../deployment/technical-details.md) で説明されているように、ファイルシステムの所有権と権限が設定されています。
 - ビルドシステムではCommerceをインストールする必要はありませんが、コードを使用できる必要があります。
 
 >[!WARNING]
 >
->`config.php` に既に含まれている場合は、データベース接続は必要ありません。[ 設定のエクスポート ](../cli/export-configuration.md) を参照してください。 それ以外の場合は、データベース接続が必要です。
+>`config.php` に既に含まれている場合は、データベース接続は必要ありません。[&#x200B; 設定のエクスポート &#x200B;](../cli/export-configuration.md) を参照してください。 それ以外の場合は、データベース接続が必要です。
 
 >[!INFO]
 >
@@ -126,7 +126,7 @@ Composer をインストールするには：
 
    詳しくは [`.gitignore`](../reference/config-reference-gitignore.md) リファレンスを参照してください。
 
-1. ビルドシステムでは、[ デフォルトモード ](../bootstrap/application-modes.md#default-mode) または [ 開発者モード ](../bootstrap/application-modes.md#developer-mode) を使用する必要があります。
+1. ビルドシステムでは、[&#x200B; デフォルトモード &#x200B;](../bootstrap/application-modes.md#default-mode) または [&#x200B; 開発者モード &#x200B;](../bootstrap/application-modes.md#developer-mode) を使用する必要があります。
 
    ```bash
    bin/magento deploy:mode:set <mode>

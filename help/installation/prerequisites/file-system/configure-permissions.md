@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ここでは、Adobe Commerceをインストールする前に、web サーバーグループに読み取り/書き込み権限を設定する方法について説明します。 これは、コマンドラインがファイルをファイルシステムに書き込めるようにするために必要です。
 
-使用する手順は、[ 共有ホスティング ](#set-permissions-for-one-user-on-shared-hosting) を使用して 1 人のユーザーが存在するか、[ プライベートサーバー ](#set-ownership-and-permissions-for-two-users) を使用して 2 人のユーザーが存在するかによって異なります。
+使用する手順は、[&#x200B; 共有ホスティング &#x200B;](#set-permissions-for-one-user-on-shared-hosting) を使用して 1 人のユーザーが存在するか、[&#x200B; プライベートサーバー &#x200B;](#set-ownership-and-permissions-for-two-users) を使用して 2 人のユーザーが存在するかによって異なります。
 
 ## 共有ホスティングでの 1 人のユーザーに対する権限の設定
 
@@ -58,13 +58,13 @@ ht-degree: 0%
 1. まだ行っていない場合は、次のいずれかの方法でアプリケーションを取得します。
 
    * [Composer メタパッケージ](../../composer.md)
-   * [ リポジトリのクローンを作成する（コントリビューションを行う開発者のみ） ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+   * [&#x200B; リポジトリのクローンを作成する（コントリビューションを行う開発者のみ） &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
-1. ファイルシステムの所有権と権限を設定したら、[ アプリケーションをインストールします ](../../advanced.md)。
+1. ファイルシステムの所有権と権限を設定したら、[&#x200B; アプリケーションをインストールします &#x200B;](../../advanced.md)。
 
 >[!NOTE]
 >
->アプリケーションのインストール後に権限をさらに制限するには、[umask を構成 ](../../next-steps/set-umask.md) します。
+>アプリケーションのインストール後に権限をさらに制限するには、[umask を構成 &#x200B;](../../next-steps/set-umask.md) します。
 
 ## 2 人のユーザーの所有権と権限の設定
 
@@ -89,7 +89,7 @@ Web サーバがファイル・システムにファイルとディレクトリ�
 
 >[!NOTE]
 >
->既存のユーザーアカウントを使用する予定がある場合は、[Web サーバーユーザーグループを見つける ](#find-the-web-server-user-group) にスキップします。
+>既存のユーザーアカウントを使用する予定がある場合は、[Web サーバーユーザーグループを見つける &#x200B;](#find-the-web-server-user-group) にスキップします。
 
 ### ファイルシステムの所有者を作成し、強力なパスワードをユーザーに付与します。
 
@@ -111,7 +111,7 @@ passwd <username>
 
 >[!WARNING]
 >
->アプリケーションサーバーに対する `root` 権限がない場合は、別のローカルユーザーアカウントを使用できます。 ユーザーに強力なパスワードがあることを確認し、[Web サーバーグループにファイルシステムの所有者を配置する ](#step-3-put-the-file-system-owner-in-the-web-servers-group) を続行します。
+>アプリケーションサーバーに対する `root` 権限がない場合は、別のローカルユーザーアカウントを使用できます。 ユーザーに強力なパスワードがあることを確認し、[Web サーバーグループにファイルシステムの所有者を配置する &#x200B;](#step-3-put-the-file-system-owner-in-the-web-servers-group) を続行します。
 
 例えば、`magento_user` という名前のユーザーを作成し、パスワードを指定するには、次のように入力します。
 
@@ -158,7 +158,7 @@ Web サーバーユーザーのグループを見つけるには：
 
 >[!NOTE]
 >
->`-a -G` のオプションは、`apache` または `www-data` を *セカンダリ* グループとしてユーザーアカウントに追加し、ユーザーの *プライマリ* グループを保持するので重要です。 セカンダリ グループをユーザーアカウントに追加すると、共有グループのメンバーが特定のファイルにのみアクセスできるように [ ファイルの所有権とアクセス許可を制限 ](#set-ownership-and-permissions-for-two-users) できます。
+>`-a -G` のオプションは、`apache` または `www-data` を *セカンダリ* グループとしてユーザーアカウントに追加し、ユーザーの *プライマリ* グループを保持するので重要です。 セカンダリ グループをユーザーアカウントに追加すると、共有グループのメンバーが特定のファイルにのみアクセスできるように [&#x200B; ファイルの所有権とアクセス許可を制限 &#x200B;](#set-ownership-and-permissions-for-two-users) できます。
 
 例えば、ユーザー `magento_user` を CentOS の `apache` プライマリグループに追加するには、次のようにします。
 
@@ -192,7 +192,7 @@ magento_user : magento_user apache
 まだ行っていない場合は、次のいずれかの方法でソフトウェアを入手します。
 
 * [Composer メタパッケージ](../../composer.md)
-* [ リポジトリのクローンを作成する（コントリビューションを行う開発者のみ） ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [&#x200B; リポジトリのクローンを作成する（コントリビューションを行う開発者のみ） &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 ### 共有グループの所有権と権限の設定
 

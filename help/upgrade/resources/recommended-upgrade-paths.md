@@ -20,18 +20,18 @@ e コマースの実装は進化であり、本当の意味で終わることは
 - 開発者エクスペリエンスとツールの向上
 - 他のAdobe Experience Cloud アプリケーションとより深く統合する機能
 
-販売者がアップグレードを柔軟に計画できるように、最近Adobe Commerce[ リリーススケジュール ](../../release/schedule.md) を更新し、2.3 のサポート終了（EOS）の日付を延長し、一部のバージョンに対して新しい拡張サポートオプションを発表しました。 これらの更新について詳しくは、[Adobe Commerceのサポートの拡張 ](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support) を参照してください。
+販売者がアップグレードを柔軟に計画できるように、最近Adobe Commerce[&#x200B; リリーススケジュール &#x200B;](../../release/schedule.md) を更新し、2.3 のサポート終了（EOS）の日付を延長し、一部のバージョンに対して新しい拡張サポートオプションを発表しました。 これらの更新について詳しくは、[Adobe Commerceのサポートの拡張 &#x200B;](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support) を参照してください。
 
 以下は、最新バージョンのいずれかにアップグレードする際に、サイトのセキュリティとパフォーマンスを維持するためにAdobe Commerceが推奨するアップグレードパスです。
 
 ## 2.3.7 からのアップグレード
 
-![ アップグレードパス：2.3.7](../../assets/upgrade-guide/2.3.7.png)
+![&#x200B; アップグレードパス：2.3.7](../../assets/upgrade-guide/2.3.7.png)
 
 ## 2.4.0～2.4.3 からのアップグレード
 
-![ アップグレードパス：2.4.0～2.4.3](../../assets/upgrade-guide/2.4.0-2.4.3.png)
+![&#x200B; アップグレードパス：2.4.0～2.4.3](../../assets/upgrade-guide/2.4.0-2.4.3.png)
 
 ## 2.4.4 および 2.4.5 からのアップグレード
 
-![ アップグレードパス：2.4.4 および 2.4.5 からのパス ](../../assets/upgrade-guide/2.4.4-and-2.4.5.png)
+![&#x200B; アップグレードパス：2.4.4 および 2.4.5 からのパス &#x200B;](../../assets/upgrade-guide/2.4.4-and-2.4.5.png)

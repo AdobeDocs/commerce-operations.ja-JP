@@ -23,7 +23,7 @@ cron ジョブは、スケジュールされた複数のタスクを実行しま
 
 >[!INFO]
 >
->cron グループについて詳しくは、[cron の設定と実行 ](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) を参照してください。
+>cron グループについて詳しくは、[cron の設定と実行 &#x200B;](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) を参照してください。
 
 次の方法で cron ジョブを実行できます。
 
@@ -38,8 +38,8 @@ cron ジョブは、スケジュールされた複数のタスクを実行しま
 
 この節では、Apache で HTTP 基本認証を使用して cron を保護する方法について説明します。 これらの手順は、Apache 2.2 と CentOS 6 に基づいています。 詳しくは、次のいずれかのリソースを参照してください。
 
-- [Apache 2.2 認証と承認のチュートリアル ](https://httpd.apache.org/docs/2.2/howto/auth.html)
-- [Apache 2.4 認証と承認のチュートリアル ](https://httpd.apache.org/docs/2.4/howto/auth.html)
+- [Apache 2.2 認証と承認のチュートリアル &#x200B;](https://httpd.apache.org/docs/2.2/howto/auth.html)
+- [Apache 2.4 認証と承認のチュートリアル &#x200B;](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 ### パスワードファイルの作成
 
@@ -120,7 +120,7 @@ MagentoCronGroup: <username1> ... <usernameN>
    ```
 
 1. `.htaccess` への変更を保存し、テキストエディターを終了します。
-1. [cron が安全であることを確認する ](#verify-cron-is-secure) を続行します。
+1. [cron が安全であることを確認する &#x200B;](#verify-cron-is-secure) を続行します。
 
 ## Nginx で cron を保護
 
@@ -133,8 +133,8 @@ MagentoCronGroup: <username1> ... <usernameN>
 
 続行する前に、次のいずれかのリソースを参照してパスワードファイルを作成してください。
 
-- [Ubuntu 14.04 （DigitalOcean）で Nginx を使用してパスワード認証を設定する方法 ](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
-- [Nginx による基本的な HTTP 認証（howtoforge） ](https://www.howtoforge.com/basic-http-authentication-with-nginx)
+- [Ubuntu 14.04 （DigitalOcean）で Nginx を使用してパスワード認証を設定する方法 &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
+- [Nginx による基本的な HTTP 認証（howtoforge） &#x200B;](https://www.howtoforge.com/basic-http-authentication-with-nginx)
 
 ### `nginx.conf.sample` で cron を保護
 
@@ -167,7 +167,7 @@ Commerceには、最適化されたサンプルの nginx 設定ファイルが�
 systemctl restart nginx
 ```
 
-1. [cron が安全であることを確認する ](#verify-cron-is-secure) を続行します。
+1. [cron が安全であることを確認する &#x200B;](#verify-cron-is-secure) を続行します。
 
 ## Cron が安全であることを確認
 
@@ -219,7 +219,7 @@ systemctl restart nginx
 
 1. プロンプトが表示されたら、承認済みユーザーの名前とパスワードを入力します。 次の図に例を示します。
 
-   ![HTTP Basic を使用した cron の認証 ](../../assets/configuration/cron-auth.png)
+   ![HTTP Basic を使用した cron の認証 &#x200B;](../../assets/configuration/cron-auth.png)
 
 1. 行がテーブルに追加されたことを確認します。
 
@@ -311,4 +311,4 @@ https://magento.example.com/magento2/pub/cron.php?group=index
 
 >[!INFO]
 >
->cron を 2 回実行する必要があります。最初に実行するタスクを見つけ、もう一度タスク自体を実行します。 cron グループについて詳しくは、[cron の設定と実行 ](../cli/configure-cron-jobs.md) を参照してください。
+>cron を 2 回実行する必要があります。最初に実行するタスクを見つけ、もう一度タスク自体を実行します。 cron グループについて詳しくは、[cron の設定と実行 &#x200B;](../cli/configure-cron-jobs.md) を参照してください。

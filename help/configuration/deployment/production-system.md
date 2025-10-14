@@ -22,8 +22,8 @@ ht-degree: 0%
    - `pub/media/wysiwyg` ディレクトリ（およびサブディレクトリ）
    - `pub/static` ディレクトリ（およびサブディレクトリ）
 
-- Commerce 2.2 以降がインストールされ、[ 実稼動モード ](../bootstrap/application-modes.md#production-mode) に設定されている必要があります
-- [ 開発、ビルド、実稼働システムの前提条件 ](../deployment/prerequisites.md) で説明されているように、ファイルシステムの所有権と権限が設定されています。
+- Commerce 2.2 以降がインストールされ、[&#x200B; 実稼動モード &#x200B;](../bootstrap/application-modes.md#production-mode) に設定されている必要があります
+- [&#x200B; 開発、ビルド、実稼働システムの前提条件 &#x200B;](../deployment/prerequisites.md) で説明されているように、ファイルシステムの所有権と権限が設定されています。
 
 ## 実稼動マシンの設定
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
    そのディレクトリに `auth.json` を作成します。
 
-   `auth.json` 認証キー [ が含まれている必要があり ](../../installation/prerequisites/authentication-keys.md) す。
+   `auth.json` 認証キー [&#x200B; が含まれている必要があり &#x200B;](../../installation/prerequisites/authentication-keys.md) す。
 
    次に例を示します。
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 機密性の高い値を設定するには：
 
-1. [ 大文字と小文字を区別した値参照 ](../reference/config-reference-sens.md) を使用して、設定する値を検索します。
+1. [&#x200B; 大文字と小文字を区別した値参照 &#x200B;](../reference/config-reference-sens.md) を使用して、設定する値を検索します。
 1. 設定の設定パスをメモしておきます。
 1. ファイルシステムの所有者として実稼動システムにログインするか、所有者に切り替えます。
 1. Commerce インストールディレクトリに移動します。
@@ -99,4 +99,4 @@ ht-degree: 0%
 
    設定は管理者に表示され、編集できません。 次の図に例を示します。
 
-   ![Admin の機密設定 ](../../assets/configuration/sensitive-set.png)
+   ![Admin の機密設定 &#x200B;](../../assets/configuration/sensitive-set.png)

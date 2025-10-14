@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Commerce 2.4.3 以降、オンプレミスのメッセージキューインスタンスの代わりに、Amazon Message Queue （MQ）をクラウド対応として使用できるようになりました。
 
-AWSでメッセージキューを作成するには、[AWS ドキュメントの ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html)Amazon MQ の設定 _を参照してください_。
+AWSでメッセージキューを作成するには、[AWS ドキュメントの &#x200B;](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html)Amazon MQ の設定 _を参照してください_。
 
 ## Commerce for AWS MQ の設定
 

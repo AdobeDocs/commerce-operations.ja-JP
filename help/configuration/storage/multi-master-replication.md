@@ -28,8 +28,8 @@ MySQL データベースは非同期でレプリケートするので、スレ�
 
 データベースレプリケーションの詳細については、このガイドの範囲外です。 設定するには、次のようなリソースを参照します。
 
-- [MySQL のドキュメント ](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [MySQL でマスタースレーブレプリケーションを設定する方法（digitalocean） ](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [MySQL のドキュメント &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
+- [MySQL でマスタースレーブレプリケーションを設定する方法（digitalocean） &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
 Commerceは、スレーブデータベース用の MySQL 設定のサンプルを提供します。 `ResourceConnections` クラス `README.md` では、簡単な設定が提供されます。
 

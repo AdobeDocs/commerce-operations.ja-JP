@@ -118,9 +118,9 @@ bin/magento cache:flush
 
 次の図を参照してください。
 
-![ 二分割図 ](../../../assets/playbooks/bisect.png)
+![&#x200B; 二分割図 &#x200B;](../../../assets/playbooks/bisect.png)
 
-![ 二分割図 ](../../../assets/playbooks/bisect2.png)
+![&#x200B; 二分割図 &#x200B;](../../../assets/playbooks/bisect2.png)
 
 2 等分する方法はいくつかありますが、Adobeでは次の順序で行うことをお勧めします。
 

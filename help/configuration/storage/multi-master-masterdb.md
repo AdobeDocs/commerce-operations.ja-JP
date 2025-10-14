@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ## Adobe Commerce ソフトウェアのインストール
 
-分割データベースは、Adobe Commerce ソフトウェアのインストール後、いつでも有効にすることができます。つまり、既にチェックアウトと注文のデータがあるAdobe Commerce システムに分割データベースを追加できます。 Adobe Commerceの README または [ インストールガイド ](../../installation/overview.md) の手順に従って、1 つのマスターデータベースを使用してAdobe Commerce ソフトウェアをインストールします。
+分割データベースは、Adobe Commerce ソフトウェアのインストール後、いつでも有効にすることができます。つまり、既にチェックアウトと注文のデータがあるAdobe Commerce システムに分割データベースを追加できます。 Adobe Commerceの README または [&#x200B; インストールガイド &#x200B;](../../installation/overview.md) の手順に従って、1 つのマスターデータベースを使用してAdobe Commerce ソフトウェアをインストールします。
 
 ## 追加のマスターデータベースを設定する
 
@@ -92,7 +92,7 @@ ht-degree: 1%
 
 ### 最初の手順
 
-CLI コマンドにログインして実行するには、[ コマンドの実行 ](../cli/config-cli.md#running-commands) を参照してください。
+CLI コマンドにログインして実行するには、[&#x200B; コマンドの実行 &#x200B;](../cli/config-cli.md#running-commands) を参照してください。
 
 ### チェックアウトデータベースの設定
 

@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # メンテナンスモードの有効化または無効化
 
-次のガイドでは、標準メンテナンスモードのページについて説明しています。 カスタムメンテナンスページを使用する必要がある場合は、[ カスタムメンテナンスページの作成 ](../../upgrade/troubleshooting/maintenance-mode-options.md) を参照してください。
+次のガイドでは、標準メンテナンスモードのページについて説明しています。 カスタムメンテナンスページを使用する必要がある場合は、[&#x200B; カスタムメンテナンスページの作成 &#x200B;](../../upgrade/troubleshooting/maintenance-mode-options.md) を参照してください。
 
-Adobe Commerceは [ メンテナンスモード ](../../configuration/bootstrap/application-modes.md#maintenance-mode) を使用して、ブートストラップを無効にします。 サイトのメンテナンス、アップグレードまたは再構成中は、ブートストラップの無効化が役立ちます。
+Adobe Commerceは [&#x200B; メンテナンスモード &#x200B;](../../configuration/bootstrap/application-modes.md#maintenance-mode) を使用して、ブートストラップを無効にします。 サイトのメンテナンス、アップグレードまたは再構成中は、ブートストラップの無効化が役立ちます。
 
 アプリケーションは、次のようにメンテナンスモードを検出します。
 
@@ -22,7 +22,7 @@ Adobe Commerceは [ メンテナンスモード ](../../configuration/bootstrap/
 
 ## アプリケーションのインストール
 
-このコマンドを使用してメンテナンスモードを有効または無効にする前に、[ アプリケーションをインストールする ](../advanced.md) 必要があります。
+このコマンドを使用してメンテナンスモードを有効または無効にする前に、[&#x200B; アプリケーションをインストールする &#x200B;](../advanced.md) 必要があります。
 
 ## メンテナンスモードの有効化または無効化
 
@@ -46,7 +46,7 @@ bin/magento maintenance:status
 
 >[!NOTE]
 >
->`--ip=<ip address>` で `magento maintenance:disable` を使用すると、後で使用するために IP のリストが保存されます。 除外 IP の一覧をクリアするには、`magento maintenance:enable --ip=none` を使用するか、[ 除外 IP アドレスの一覧の管理 ](#maintain-the-list-of-exempt-ip-addresses) を参照してください。
+>`--ip=<ip address>` で `magento maintenance:disable` を使用すると、後で使用するために IP のリストが保存されます。 除外 IP の一覧をクリアするには、`magento maintenance:enable --ip=none` を使用するか、[&#x200B; 除外 IP アドレスの一覧の管理 &#x200B;](#maintain-the-list-of-exempt-ip-addresses) を参照してください。
 
 `bin/magento maintenance:status` コマンドは、メンテナンス モードの状態を表示します。
 

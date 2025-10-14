@@ -14,37 +14,37 @@ ht-degree: 0%
 
 ## [!UICONTROL MySQL% free storage by node]
 
-![ ノード別の MySQL% 空きストレージ ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)
+![&#x200B; ノード別の MySQL% 空きストレージ &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)
 
 多くの問題は、MySQL が MySQL に割り当てられたストレージのストレージを使い果たしたこと（MySQL の設定 `datadir` は、デフォルトは `/data/mysql`）、または `tmpdir` の領域が不足していることが原因です。 デフォルトの `tmpdir` （MySQL 設定）は `/tmp` です。 **[!UICONTROL MySQL% free storage by node]** フレームは、`/, /tmp` （個別のマウントとして定義されている場合）と空きストレージの `/data/mysql` の割合を調べます。 MySQL バージョン 5.7 （MariaDB バージョン 10.2）以降では、非圧縮 `tmp` テーブルはファイルの `tmp` ディレクトリ（ibtmp1）の `/data/mysql` テーブルスペースに書き込まれます。 このファイルは、デフォルトで無制限に自動的に展開されます。 テーブルスペースであるため、サイズが減少せず、MySQL の再起動時に 12 MB にリセットされます。
 
 ## [!UICONTROL MySQL Connections by Node]
 
-![ ノード別の MySQL 接続 ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-2.jpg)
+![&#x200B; ノード別の MySQL 接続 &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-2.jpg)
 
 **[!UICONTROL MySQL Connections by Node]** のフレームは、データベース・ノードの停止期間または大量の接続を示します。
 
 ## [!UICONTROL MySQL Node Summary]
 
-![MySQL ノードの概要 ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-3.jpg)
+![MySQL ノードの概要 &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-3.jpg)
 
 **[!UICONTROL MySQL Node Summary]** の表に、ソフトウェアバージョンやインスタンスタイプ（サイズ）などのデータベースノードの詳細を示します。
 
 ## [!UICONTROL Galera Number of Nodes in cluster]
 
-![ クラスター内の Galera ノード数 ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-4.jpg)
+![&#x200B; クラスター内の Galera ノード数 &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-4.jpg)
 
 **[!UICONTROL Galera Number of Nodes in cluster]** フレームには、MySQL ログの情報が表示されます。 ノードがクラスターに結合してを離れると、選択した期間のメッセージのみが表示されます。 期間の前にノードがクラスターを離れた場合、その期間中はメッセージは存在しません。 データベースのノードが不足していると思われる場合は、期間を長く展開して、追加情報が表示されるかどうかを確認します。 期間中に [!DNL Galera] クラスター内のすべてのノードよりも少ないことを示す情報がある場合は、期間を展開して、そのノードがクラスターをいつ離脱したかを判断できるかどうかを確認します。
 
 ## [!UICONTROL MySQL shutdowns and starts]
 
-![MySQL のシャットダウンと開始 ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-5.jpg)
+![MySQL のシャットダウンと開始 &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-5.jpg)
 
 **[!UICONTROL MySQL shutdowns and starts]** フレームは、ノードのシャットダウンが発生したことを検出します。 [!DNL Galera] ノードがエビクション対象となり、[!DNL Galera] ノードから自動的にエビクションされます。 これにより、通常は MySQL サービスが再起動されます。
 
 ## [!UICONTROL Galera log]
 
-![Galera ログ ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-6.jpg)
+![Galera ログ &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-6.jpg)
 
 **[!UICONTROL Galera log]** フレームは、[!DNL Galera] ノード、その状態、および [!DNL Galera] クラスタの状態変化に関する MySQL ログからの特定のシグナルの数を表示します。
 
@@ -70,15 +70,15 @@ ht-degree: 0%
 
 ## [!UICONTROL Galera Log by Host]
 
-![ ホスト別 Galera ログ ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-7.jpg)
+![&#x200B; ホスト別 Galera ログ &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-7.jpg)
 
 **[!UICONTROL Galera Log by Host]** フレームは、トラブルシューティングに役立つようにノードによって分割される点を除いて、**[!UICONTROL Galera log]** フレームと同じです。
 
 ## [!UICONTROL Database performance]
 
-![ データベースのパフォーマンス ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-8.jpg)
+![&#x200B; データベースのパフォーマンス &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-8.jpg)
 
-**[!UICONTROL Database performance]** フレームは、特定のリクエスト中のデータベースのパフォーマンスを示します。 グラフの下の色付きアイコンでクリックすると、各指標を確認できます。 [New Relicを使用した MySQL データベースパフォーマンスのモニタリング ](https://newrelic.com/blog/how-to-relic/how-to-monitor-mysql) で呼び出される指標の多くは、このフレームにあります。
+**[!UICONTROL Database performance]** フレームは、特定のリクエスト中のデータベースのパフォーマンスを示します。 グラフの下の色付きアイコンでクリックすると、各指標を確認できます。 [New Relicを使用した MySQL データベースパフォーマンスのモニタリング &#x200B;](https://newrelic.com/blog/how-to-relic/how-to-monitor-mysql) で呼び出される指標の多くは、このフレームにあります。
 
 * average （query.queriesPerSecond）
 * average （query.slowQueriesPerSecond）
@@ -90,19 +90,19 @@ ht-degree: 0%
 
 ## [!UICONTROL Transaction Database Call Count]
 
-![ トランザクション データベース呼び出し数 ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-9.jpg)
+![&#x200B; トランザクション データベース呼び出し数 &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-9.jpg)
 
 **[!UICONTROL Transaction Database Call Count]** フレームは、各トランザクションファセットによって実行されたデータベース呼び出しの数を示します。 これは、行に焦点を当てており、ステートメントではないようです。
 
 ## [!UICONTROL Cron_schedule table updates]
 
-![Cron_schedule テーブルの更新 ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-10.jpg)
+![Cron_schedule テーブルの更新 &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-10.jpg)
 
 **[!UICONTROL Cron_schedule table updates]** フレームには、選択した期間における cron_schedule テーブルに対するデータベース更新の最大期間が表示されます。
 
 ## [!UICONTROL Slow Query Traces]
 
-![ クエリトレースが遅い ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-11.jpg)
+![&#x200B; クエリトレースが遅い &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-11.jpg)
 
 **[!UICONTROL Slow Query Traces]** フレームには、低速なクエリ・トレースが存在するテーブルとリクエスト・タイプが表示されます。 所要時間が 5 秒を超えるクエリトランザクションには、低速のクエリトレースが作成されます。 このフレームで重要なのは、更新クエリです。 テーブルが `UPDATE`、`DELETE`、`INSERT` ステートメントによって更新されている場合、テーブルが一定期間ロックされる場合があります。
 
@@ -110,17 +110,17 @@ FOR UPDATE と一緒に使用すると、`SELECT` ステートメントでもロ
 
 ## [!UICONTROL Datastore Operations tables]
 
-![ データストア操作テーブル ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-12.jpg)
+![&#x200B; データストア操作テーブル &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-12.jpg)
 
 ## [!UICONTROL Cron table change]
 
-![Cron テーブルの変更 ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-13.jpg)
+![Cron テーブルの変更 &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-13.jpg)
 
 **[!UICONTROL Cron table change]** フレームは、「could not acquired lock for cron job:」エラーメッセージと、特定の PHP メモリエラー、および `cron_schedule` テーブルに関するロックを探します。 `cron_schedule` テーブルがロックされている場合（例えば、`DELETE` クエリが実行されている場合）、他の cron の実行がブロックされます。
 
 ## [!UICONTROL Deadlocks]
 
-![ デッドロック ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-14.jpg)
+![&#x200B; デッドロック &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-14.jpg)
 
 **[!UICONTROL Deadlocks]** フレームでは、MySQL ログから解析された次の文字列を確認します。
 
@@ -188,19 +188,19 @@ FOR UPDATE と一緒に使用すると、`SELECT` ステートメントでもロ
 
 ## [!UICONTROL DB Statistics]
 
-![DB 統計 ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-15.jpg)
+![DB 統計 &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-15.jpg)
 
 **[!UICONTROL DB Statistics]** フレームには、1 秒あたりに削除、書き込み、読み取られたロー、更新、低速クエリが表示されます。
 
 ## [!UICONTROL Request frequency]
 
-![ リクエスト頻度 ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-16.jpg)
+![&#x200B; リクエスト頻度 &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-16.jpg)
 
 ## [!UICONTROL Database Errors]
 
-![ データベース エラー ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-17.jpg)
+![&#x200B; データベース エラー &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-17.jpg)
 
-**[!UICONTROL Database Errors]** のフレームには、様々なデータベースが表示されます [ 警告とエラー ](https://mariadb.com/kb/en/mariadb-error-codes/)。
+**[!UICONTROL Database Errors]** のフレームには、様々なデータベースが表示されます [&#x200B; 警告とエラー &#x200B;](https://mariadb.com/kb/en/mariadb-error-codes/)。
 
 * 一時テーブルに割り当てられた&#39;% メモリサイズが、&#39;temp_tbl_buff_pool&#39;として innodb_buffer_pool_size%&#39;の 20% を超えています
 * &#39;%\[ERROR\] WSREP: rbr write fail%&#39;） as &#39;rbr_write_fail&#39;
@@ -243,42 +243,42 @@ FOR UPDATE と一緒に使用すると、`SELECT` ステートメントでもロ
 
 ## [!UICONTROL DB Error Table]
 
-![DB エラーテーブル ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-18.jpg)
+![DB エラーテーブル &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-18.jpg)
 
-**[!UICONTROL DB Error Table]** フレームには、**[!UICONTROL Database Errors]** フレームと同じ情報が表示されますが、ノード別および表形式で表示できます。 詳しくは、[MariaDB エラーコード ](https://mariadb.com/kb/en/mariadb-error-codes/) を参照してください。
+**[!UICONTROL DB Error Table]** フレームには、**[!UICONTROL Database Errors]** フレームと同じ情報が表示されますが、ノード別および表形式で表示できます。 詳しくは、[MariaDB エラーコード &#x200B;](https://mariadb.com/kb/en/mariadb-error-codes/) を参照してください。
 
 ## [!UICONTROL Database Traces]
 
-![ データベース トレース ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-19.jpg)
+![&#x200B; データベース トレース &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-19.jpg)
 
 **[!UICONTROL Database Traces]** のフレームには、選択したタイムライン全体のタイプ別のデータベースのトレースが表示されます。
 
 ## [!UICONTROL Database processes]
 
-![ データベースプロセス ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-20.jpg)
+![&#x200B; データベースプロセス &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-20.jpg)
 
 **[!UICONTROL Database processes]** のフレームには、データベース・プロセス、環境、ノード識別子が表示されます。
 
 ## [!UICONTROL MySQL Non-Sleeping Threads by Node]
 
-![ ノード別の MySQL ノンスリープThreads](../../assets/tools/observation-for-adobe-commerce/mysql-tab-21.jpg)
+![&#x200B; ノード別の MySQL ノンスリープThreads](../../assets/tools/observation-for-adobe-commerce/mysql-tab-21.jpg)
 
 **[!UICONTROL MySQL Non-Sleeping Threads by Node]** フレームには、データベースへの接続スレッドが表示されます。 このフレームには、アクティブなスレッドが表示されます。
 
 ## [!UICONTROL MySQL Running and Sleeping Threads by environment]
 
-![ 環境別の MySQL Threadsの実行とスリープ ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-22.jpg)
+![&#x200B; 環境別の MySQL Threadsの実行とスリープ &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-22.jpg)
 
 **[!UICONTROL MySQL Running and Sleeping Threads by environment]** フレームには、データベースへのアクティブな接続とスリープ状態の接続の両方が表示されます。 低速クエリがスリープ状態になったデータベースへの接続がある場合は、スリープ状態の接続が存在します。 スリープ中の接続は、ロックされた行またはテーブルによってブロックされるデータベース クエリの場合があります。 これらのスリープ状態の接続は、PHP ワーカーの接続も保持しています。
 
 ## [!UICONTROL MySQL mem used by node]
 
-![ ノードが使用する MySQL mem](../../assets/tools/observation-for-adobe-commerce/mysql-tab-23.jpg)
+![&#x200B; ノードが使用する MySQL mem](../../assets/tools/observation-for-adobe-commerce/mysql-tab-23.jpg)
 
 **[!UICONTROL MySQL mem used by node]** フレームは、MySQL によるメモリのノード使用量を示します。 より大きなサイトでは、このフレームは GB 分のメモリを使用した連続したバーである場合があります。
 
 ## [!UICONTROL Database mysql-slow.log]
 
-![ データベース mysql-slow.log](../../assets/tools/observation-for-adobe-commerce/mysql-tab-24.jpg)
+![&#x200B; データベース mysql-slow.log](../../assets/tools/observation-for-adobe-commerce/mysql-tab-24.jpg)
 
 **[!UICONTROL Database mysql-slow.log]** のフレームは、選択した期間の `mysql-slow.log` ファイルに含まれていたクエリステートメントタイプを示します。

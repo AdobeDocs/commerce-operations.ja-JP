@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### ストレージエンジンを InnoDB に変更する
 
-テーブルを宣言する `db_schema.xml` ファイルで、対応する `engine` ノードの `table` 属性値を `innodb` に設定します。 開発者向けドキュメントの [ 宣言型スキーマの設定/テーブルノード ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) を参照してください。
+テーブルを宣言する `db_schema.xml` ファイルで、対応する `engine` ノードの `table` 属性値を `innodb` に設定します。 開発者向けドキュメントの [&#x200B; 宣言型スキーマの設定/テーブルノード &#x200B;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) を参照してください。
 
 宣言型スキームは、クラウドインフラストラクチャバージョン 2.3 上のAdobe Commerceで導入されました。
 
@@ -59,9 +59,9 @@ Adobeでは、Adobe Commerce アプリケーションにサードパーティの
 
 設定手順については、Adobe Commerce on cloud の開発者ガイドを参照してください。
 
-- [OpenSearch サービスの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+- [OpenSearch サービスの設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 
-- [Elasticsearch サービスの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
+- [Elasticsearch サービスの設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
 
 ## カスタムトリガーの回避
 
@@ -76,14 +76,14 @@ Adobeでは、Adobe Commerce アプリケーションにサードパーティの
 
 ## [!DNL ECE-Tools] をバージョン 2002.0.21 以降にアップグレードしてください {#ece-tools-version}
 
-Cron デッドロックの潜在的な問題を回避するには、ECE-Tools をバージョン 2002.0.21 以降にアップグレードしてください。 手順については、開発者向けドキュメントの [ バージョン `ece-tools` 更新 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) を参照してください。
+Cron デッドロックの潜在的な問題を回避するには、ECE-Tools をバージョン 2002.0.21 以降にアップグレードしてください。 手順については、開発者向けドキュメントの [&#x200B; バージョン `ece-tools` 更新 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) を参照してください。
 
 ## インデクサーモードの安全な切り替え
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
 インデクサーを切り替えると、[!DNL data definition language] （DDL） ステートメントが生成され、データベース ロックの原因となる可能性のあるトリガーが作成されます。 この問題を回避するには、web サイトをメンテナンスモードにし、設定を変更する前に cron ジョブを無効にします。
-手順については、[Adobe Commerce設定ガイド ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=ja#configure-indexers-1) の *インデクサーの設定* を参照してください。
+手順については、[Adobe Commerce設定ガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=ja#configure-indexers-1) の *インデクサーの設定* を参照してください。
 
 ## 実稼動環境で DDL ステートメントを実行しない
 
@@ -95,10 +95,10 @@ DDL ステートメントを実行する必要がある場合は、web サイト
 
 管理者からの注文アーカイブを有効にして、注文データの増加に合わせてセールステーブルに必要なスペースを減らします。 アーカイブにより、MySQL のディスク領域が節約され、チェックアウトのパフォーマンスが向上します。
 
-Adobe Commerce マーチャントドキュメントの [ アーカイブの有効化 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html?lang=ja) を参照してください。
+Adobe Commerce マーチャントドキュメントの [&#x200B; アーカイブの有効化 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html?lang=ja) を参照してください。
 
 ## 追加情報
 
-- [MySQL ストレージエンジン ](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
+- [MySQL ストレージエンジン &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [MariaDB のAdobe Commerce 2.3.5 アップグレードの前提条件](../maintenance/mariadb-upgrade.md)
 - [データベースのパフォーマンスの問題を解決するベストプラクティス](../maintenance/resolve-database-performance-issues.md)

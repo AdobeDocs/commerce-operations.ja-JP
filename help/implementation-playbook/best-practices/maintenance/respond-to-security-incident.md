@@ -18,12 +18,12 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Adobeでは、ほとんどのセキュリティインシデントが、対策が講じられていない既存の脆弱性、パスワードの不備、脆弱な所有権と権限の設定がCommerceのアプリケーションとインフラストラクチャの設定に活用される場合に発生することを特定しました。 Adobe Commerce インストールを設定、設定、更新する際に、Adobe セキュリティのベストプラクティスを確認し、従うことで、セキュリティインシデントの発生を最小限に抑えることができます。 [Commerce サイトとインフラストラクチャのセキュリティ保護 ](../launch/security-best-practices.md) を参照してください。
+>Adobeでは、ほとんどのセキュリティインシデントが、対策が講じられていない既存の脆弱性、パスワードの不備、脆弱な所有権と権限の設定がCommerceのアプリケーションとインフラストラクチャの設定に活用される場合に発生することを特定しました。 Adobe Commerce インストールを設定、設定、更新する際に、Adobe セキュリティのベストプラクティスを確認し、従うことで、セキュリティインシデントの発生を最小限に抑えることができます。 [Commerce サイトとインフラストラクチャのセキュリティ保護 &#x200B;](../launch/security-best-practices.md) を参照してください。
 
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -63,22 +63,22 @@ ht-degree: 0%
 
 インシデント分析の最初のステップは、できるだけ早く、できるだけ多くの事実を収集することです。 インシデントに関する情報の収集は、インシデントの潜在的な原因を特定するのに役立ちます。 Adobe Commerceでは、インシデント分析に役立つ以下のツールを提供しています。
 
-- [ 管理者アクションログを監査 ](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html?lang=ja)。
+- [&#x200B; 管理者アクションログを監査 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html?lang=ja)。
 
   アクションログレポートには、ログ記録が有効になっているすべての管理者アクションの詳細な記録が表示されます。 各レコードにはタイムスタンプが付き、ユーザーの IP アドレスと名前が登録されます。 ログの詳細には、管理者ユーザーデータと、アクション中に行われた関連する変更が含まれます。
 
-- [Adobe Commerceの監視ツール ](../../../tools/observation-for-adobe-commerce/intro.md) を使用してイベントを分析します。
+- [Adobe Commerceの監視ツール &#x200B;](../../../tools/observation-for-adobe-commerce/intro.md) を使用してイベントを分析します。
 
   Adobe Commerceの監視ツールを使用すると、複雑な問題を分析して根本原因を特定するのに役立ちます。 異なるデータをトラッキングする代わりに、イベントとエラーを関連付けて時間を費やし、パフォーマンスのボトルネックの原因に関する深いインサイトを得ることができます。
 
   ツールの **セキュリティ** タブを使用して、潜在的なセキュリティの問題を明確に把握し、根本原因を特定してサイトの最適なパフォーマンスを維持するのに役立てます。
 
-- [New Relic ログ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=ja) を使用したログの分析
+- [New Relic ログ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=ja) を使用したログの分析
 
-  クラウドインフラストラクチャー上のAdobe Commerce Pro プロジェクトには、[New Relic ログ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=ja) サービスが含まれます。 このサービスは、ステージング環境と実稼動環境のすべてのログデータを集計して、一元化されたログ管理ダッシュボードに表示するように事前に設定されており、そこで集計データを検索および視覚化できます。
+  クラウドインフラストラクチャー上のAdobe Commerce Pro プロジェクトには、[New Relic ログ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=ja) サービスが含まれます。 このサービスは、ステージング環境と実稼動環境のすべてのログデータを集計して、一元化されたログ管理ダッシュボードに表示するように事前に設定されており、そこで集計データを検索および視覚化できます。
 
-  その他のCommerce プロジェクトの場合は、[New Relic ログ ](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) サービスを設定して使用し、次のタスクを実行できます。
-   - [New Relic クエリ ](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) を使用して、集計ログデータを検索します。
+  その他のCommerce プロジェクトの場合は、[New Relic ログ &#x200B;](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) サービスを設定して使用し、次のタスクを実行できます。
+   - [New Relic クエリ &#x200B;](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) を使用して、集計ログデータを検索します。
    - New Relic Logs アプリケーションを使用してログデータを視覚化します。
 
 ## アカウント、コードおよびデータベースの監査
@@ -89,17 +89,17 @@ Commerce管理者およびユーザーアカウント、アプリケーション
 
 ### 管理者ユーザーアカウントの監査
 
-- [ 管理者ユーザーアクセスの確認 ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=ja) – 古い、未使用、または疑わしいアカウントを削除し、すべての管理者ユーザーのパスワードを入れ替えます。
+- [&#x200B; 管理者ユーザーアクセスの確認 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=ja) – 古い、未使用、または疑わしいアカウントを削除し、すべての管理者ユーザーのパスワードを入れ替えます。
 
-- [ 管理者セキュリティ設定の確認 ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=ja) - Admin Security 設定がセキュリティのベストプラクティスに従っていることを確認します。
+- [&#x200B; 管理者セキュリティ設定の確認 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=ja) - Admin Security 設定がセキュリティのベストプラクティスに従っていることを確認します。
 
-- [ クラウドインフラストラクチャプロジェクト上のAdobe Commerceのユーザーアカウントの確認 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=ja) – 古い、未使用、または疑わしいアカウントを削除し、すべてのクラウドプロジェクト管理者ユーザーのパスワードを入れ替えます。 アカウントのセキュリティ設定が正しく構成されていることを確認してください。
+- [&#x200B; クラウドインフラストラクチャプロジェクト上のAdobe Commerceのユーザーアカウントの確認 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=ja) – 古い、未使用、または疑わしいアカウントを削除し、すべてのクラウドプロジェクト管理者ユーザーのパスワードを入れ替えます。 アカウントのセキュリティ設定が正しく構成されていることを確認してください。
 
-- [ クラウドインフラストラクチャー上のAdobe Commerceの SSH キーを監査 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)- SSH キーを確認、削除、ローテーションします。
+- [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceの SSH キーを監査 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)- SSH キーを確認、削除、ローテーションします。
 
 ### 監査コード
 
-- 管理者から、[ と ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=ja) を含むすべてのスコープ レベルで `website`0&rbrace;HTML ヘッダーおよびフッターの構成を確認します。 `store view`不明なJavaScript コードがあれば、スクリプト、スタイルシートおよびその他のHTMLの設定から削除します。 トラッキングスニペットなど、認識されたコードのみを保持します。
+- 管理者から、[&#x200B; と &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=ja) を含むすべてのスコープ レベルで `website`0&rbrace;HTML ヘッダーおよびフッターの構成を確認します。 `store view`不明なJavaScript コードがあれば、スクリプト、スタイルシートおよびその他のHTMLの設定から削除します。 トラッキングスニペットなど、認識されたコードのみを保持します。
 
 - 現在の実稼動コードベースと、バージョン管理システム（VCS）に保存されているコードベースを比較します。
 
@@ -121,7 +121,7 @@ Commerce管理者およびユーザーアカウント、アプリケーション
 
 ## Googleの警告を削除
 
-サイトに悪意のあるコードが含まれているとGoogleによってフラグが付けられている場合は、サイトがクリーンアップされた後に確認をリクエストします。 マルウェアに感染したサイトのレビューには数日かかります。 Googleがサイトがクリーンであると判断した後、検索結果やブラウザーからの警告は 72 時間以内に消えます。 [ レビューのリクエスト ](https://web.dev/articles/request-a-review) を参照してください。
+サイトに悪意のあるコードが含まれているとGoogleによってフラグが付けられている場合は、サイトがクリーンアップされた後に確認をリクエストします。 マルウェアに感染したサイトのレビューには数日かかります。 Googleがサイトがクリーンであると判断した後、検索結果やブラウザーからの警告は 72 時間以内に消えます。 [&#x200B; レビューのリクエスト &#x200B;](https://web.dev/articles/request-a-review) を参照してください。
 
 ## マルウェア結果チェックリストの確認
 
@@ -133,4 +133,4 @@ Commerce管理者およびユーザーアカウント、アプリケーション
 
 ## 追加情報
 
-- [ 根本原因分析フレームワーク ](https://sansec.io/kb/incident-response/magento-root-cause-analysis)。
+- [&#x200B; 根本原因分析フレームワーク &#x200B;](https://sansec.io/kb/incident-response/magento-root-cause-analysis)。

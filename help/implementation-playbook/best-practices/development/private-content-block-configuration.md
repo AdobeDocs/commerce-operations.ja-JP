@@ -15,11 +15,11 @@ ht-degree: 1%
 
 プライベートコンテンツブロックに `_isScopePrivate` 変数が含まれている場合、ブロックはキャッシュできません。 プライベートブロックはキャッシュされないので、Adobe Commerceは顧客のリクエストごとに同じデータを取得する必要があり、サーバーの負荷が高くなります。
 
-プライベートコンテンツに `_isScopePrivate` 変数を使用する代わりに、ユーザーに依存しないデータを表示するブロックとテンプレートを作成します。 このデータは、Adobe Commerce UI コンポーネントによってユーザー固有のデータに置き換えられ、プリレンダリングのデータをより効率的に処理できます。 手順については、[ の ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) プライベートコンテンツ _[!DNL Commerce PHP Extensions Guide]_&#x200B;を参照してください。
+プライベートコンテンツに `_isScopePrivate` 変数を使用する代わりに、ユーザーに依存しないデータを表示するブロックとテンプレートを作成します。 このデータは、Adobe Commerce UI コンポーネントによってユーザー固有のデータに置き換えられ、プリレンダリングのデータをより効率的に処理できます。 手順については、[&#x200B; の &#x200B;](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) プライベートコンテンツ _[!DNL Commerce PHP Extensions Guide]_&#x200B;を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -31,4 +31,4 @@ ht-degree: 1%
 ## 追加情報
 
 - [非公開コンテンツ](../../../performance/configuration.md#client-side-optimization-settings)
-- [ スループットの高いAJAX リクエストは、パフォーマンスの低下を引き起こします ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=ja)
+- [&#x200B; スループットの高いAJAX リクエストは、パフォーマンスの低下を引き起こします &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=ja)

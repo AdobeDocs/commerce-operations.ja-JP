@@ -14,15 +14,15 @@ ht-degree: 0%
 
 # Adobe Commerce パッチの大規模な配布のベストプラクティス
 
-複数のAdobe Commerceのインストールを管理する場合、[ パッチ適用 ](../../../upgrade/patches/apply.md) は複雑なプロセスになる場合があります。 _パッチの一元化_ は、企業におけるベストプラクティスです。 これにより、すべてのAdobe Commerce インストールに適切なパッチを適用できます。 ここでは、すべてのタイプのAdobe Commerce[ パッチ ](../../../upgrade/patches/overview.md) に対して一元的なパッチ配布を実現する方法について説明します。
+複数のAdobe Commerceのインストールを管理する場合、[&#x200B; パッチ適用 &#x200B;](../../../upgrade/patches/apply.md) は複雑なプロセスになる場合があります。 _パッチの一元化_ は、企業におけるベストプラクティスです。 これにより、すべてのAdobe Commerce インストールに適切なパッチを適用できます。 ここでは、すべてのタイプのAdobe Commerce[&#x200B; パッチ &#x200B;](../../../upgrade/patches/overview.md) に対して一元的なパッチ配布を実現する方法について説明します。
 
 >[!NOTE]
 >
->次の内容は、当初、Adobe テクニカルブログの [ 大規模なAdobe Commerce パッチの配布 ](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) の投稿で公開されました。 一元的なパッチ適用戦略を実装するための手順とコードサンプルに重点を置くように変更されました。 ここで説明する様々なタイプのパッチの詳細については、元の投稿を参照してください。
+>次の内容は、当初、Adobe テクニカルブログの [&#x200B; 大規模なAdobe Commerce パッチの配布 &#x200B;](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) の投稿で公開されました。 一元的なパッチ適用戦略を実装するための手順とコードサンプルに重点を置くように変更されました。 ここで説明する様々なタイプのパッチの詳細については、元の投稿を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerceオンプレミス
@@ -32,8 +32,8 @@ ht-degree: 0%
 パッチには様々な種類があり、適用する方法も多数あるので、最初に適用されるパッチを把握するにはどうすればよいでしょうか。 パッチの数が多いほど、同じファイルや同じコード行に適用される可能性が高くなります。 パッチは次の順序で適用されます。
 
 1. **セキュリティパッチ** は、Adobe Commerce リリースの静的コードベースの一部です。
-1. **cweagans/composer-patches** などの `composer install` および `composer update` プラグインを使用した [Composer パッチ ](https://packagist.org/packages/cweagans/composer-patches)。
-1. **Commerce用クラウドパッチ** パッケージに含まれるすべての [ 必須パッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=ja)。
+1. **cweagans/composer-patches** などの `composer install` および `composer update` プラグインを使用した [Composer パッチ &#x200B;](https://packagist.org/packages/cweagans/composer-patches)。
+1. **Commerce用クラウドパッチ** パッケージに含まれるすべての [&#x200B; 必須パッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=ja)。
 1. 選択した **品質パッチ** が [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md) に含まれています。
 1. **カスタムパッチ** およびAdobe Commerceは、パッチ名のアルファベット順に `/m2-hotfixes` ディレクトリ内のパッチをサポートします。
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 Adobe Commerceの複数のインストールを管理する必要がある場合は、すべてのインスタンスに同じパッチセットをインストールするのは困難なことがあります。 インストールごとに、独自の Git リポジトリ、`/m2-hotfixes` ディレクトリ、`composer.json` ファイルが用意されています。 唯一の保証は、クラウドユーザー向けの **セキュリティパッチ** および **必要なパッチ** がすべてメインのAdobe Commerce バージョンの一部としてインストールされることです。
 
-現在のところ、この問題に対する一元的なソリューションはありませんが、Composer はギャップを埋める方法を提供しています。 [`cweagans/composer-patches`](https://packagist.org/packages/cweagans/composer-patches) パッケージを使用すると、[ 依存関係からパッチを適用 ](https://github.com/cweagans/composer-patches/tree/1.x#allowing-patches-to-be-applied-from-dependencies) できます。 すべてのパッチをインストールする Composer パッケージを作成し、すべてのプロジェクトでそのパッケージを必要とすることができます。
+現在のところ、この問題に対する一元的なソリューションはありませんが、Composer はギャップを埋める方法を提供しています。 [`cweagans/composer-patches`](https://packagist.org/packages/cweagans/composer-patches) パッケージを使用すると、[&#x200B; 依存関係からパッチを適用 &#x200B;](https://github.com/cweagans/composer-patches/tree/1.x#allowing-patches-to-be-applied-from-dependencies) できます。 すべてのパッチをインストールする Composer パッケージを作成し、すべてのプロジェクトでそのパッケージを必要とすることができます。
 
 **セキュリティパッチ**、**必須パッチ**、および **Composer パッチ** について説明しますが、品質パッチおよび `/m2-hotfixes` ディレクトリの内容についてはどうですか？
 
@@ -85,7 +85,7 @@ Composer コンポーネントパッケージ（`centralized-patcher`）を作�
 
    >[!NOTE]
    >
-   >次の例の `require` 属性は、この例で後で作成する必要がある `require`plugin パッケージ [ への ](#centralized-patcher-composer-plugin) しい依存関係を示しています。
+   >次の例の `require` 属性は、この例で後で作成する必要がある `require`plugin パッケージ [&#x200B; への &#x200B;](#centralized-patcher-composer-plugin) しい依存関係を示しています。
 
    ```json
    {
@@ -148,7 +148,7 @@ Composer コンポーネントパッケージ（`centralized-patcher`）を作�
    ```
 
 
-前述のコードサンプルの `quality-patches` 属性には、例として [ 完全なパッチリスト ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) の 2 つのパッチが含まれています。  これらの品質向上パッチは、`centralized-patcher` コマンドを使用して、`vendor/bin/magento-patches apply` パッケージを必要とするすべてのプロジェクトにインストールされます。
+前述のコードサンプルの `quality-patches` 属性には、例として [&#x200B; 完全なパッチリスト &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) の 2 つのパッチが含まれています。  これらの品質向上パッチは、`centralized-patcher` コマンドを使用して、`vendor/bin/magento-patches apply` パッケージを必要とするすべてのプロジェクトにインストールされます。
 
 テストを目的として、サンプルのパッチ（`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`）を作成できます。
 
@@ -365,12 +365,12 @@ index 03a3bf9..681e0b0 100644
 
 これにより、すべてのインストールに対するすべてのパッチを一元的に管理でき、Adobe Commerce ストアのセキュリティと安定性をより確実に保証できます。 次の方法を使用して、パッチステータスを確認します。
 
-- [ クラウドインフラストラクチャプロジェクト ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja#view-available-patches-and-status)
+- [&#x200B; クラウドインフラストラクチャプロジェクト &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja#view-available-patches-and-status)
 - [オンプレミス プロジェクト](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## コードの例
 
-- [Magento Open Sourceでのパッチの一元化 ](https://github.com/AntonEvers/centralized-patches-on-magento-open-source)
-- [ クラウドインフラストラクチャー上のAdobe Commerceにパッチを一元化 ](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
-- [Centralized Patcher Composer プラグイン ](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
-- [ 一元化された Patcher コンポーネント ](https://github.com/AntonEvers/centralized-patcher)
+- [Magento Open Sourceでのパッチの一元化 &#x200B;](https://github.com/AntonEvers/centralized-patches-on-magento-open-source)
+- [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceにパッチを一元化 &#x200B;](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
+- [Centralized Patcher Composer プラグイン &#x200B;](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
+- [&#x200B; 一元化された Patcher コンポーネント &#x200B;](https://github.com/AntonEvers/centralized-patcher)

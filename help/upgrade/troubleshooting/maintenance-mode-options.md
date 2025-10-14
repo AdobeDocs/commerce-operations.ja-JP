@@ -94,7 +94,7 @@ body
    touch <web server docroot>/maintenance.enable
    ```
 
-1. [ システムをアップグレードします ](../implementation/perform-upgrade.md)。
+1. [&#x200B; システムをアップグレードします &#x200B;](../implementation/perform-upgrade.md)。
 1. サイトをテストし、正しく機能することを確認します。
 1. アップグレードが完了したら、`maintenance.enable` を削除します。
 
@@ -154,7 +154,7 @@ body
    service nginx reload
    ```
 
-1. [ システムをアップグレードします ](../implementation/perform-upgrade.md)。
+1. [&#x200B; システムをアップグレードします &#x200B;](../implementation/perform-upgrade.md)。
 1. サイトをテストし、正しく機能することを確認します。
 1. アップグレードが完了したら、`maintenance.enable` を削除するか、名前を変更します。
 1. nginx 設定をリロードします。

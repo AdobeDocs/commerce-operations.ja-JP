@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ### 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ### 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ### 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -100,7 +100,7 @@ MySQL を使用して、未使用の製品属性セットを削除します。
 
 #### 属性セット設定の確認
 
-1. [ サイト データベースに接続します ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database)。
+1. [&#x200B; サイト データベースに接続します &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database)。
 
 1. MySQL を使用して属性セットの数を検索する
 
@@ -138,7 +138,7 @@ MySQL を使用して、未使用の製品属性セットを削除します。
 
 ### 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -170,7 +170,7 @@ MySQL を使用して、未使用の製品属性セットを削除します。
 
 ### 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -179,7 +179,7 @@ MySQL を使用して、未使用の製品属性セットを削除します。
 
 1 つのカテゴリに含まれる製品が多すぎる場合、ストアフロントカタログ設定を更新して、このオプションを無効にし **ページごとにすべての製品を許可** します。
 
-このオプションを無効にすると、Adobe Commerceは商品リストのストアフロントのページネーションコントロールを使用して、ストアフロントコンポーネントに表示される商品の数を管理します。 手順については、[ ページネーションコントロールの設定 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=ja#configure-the-pagination-controls) を参照してください。
+このオプションを無効にすると、Adobe Commerceは商品リストのストアフロントのページネーションコントロールを使用して、ストアフロントコンポーネントに表示される商品の数を管理します。 手順については、[&#x200B; ページネーションコントロールの設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=ja#configure-the-pagination-controls) を参照してください。
 
 ## 製品 SKU 制限
 
@@ -187,7 +187,7 @@ MySQL を使用して、未使用の製品属性セットを削除します。
 
 ### 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -205,7 +205,7 @@ MySQL を使用して、未使用の製品属性セットを削除します。
    - Web サイト、顧客グループ、共有カタログ、製品数または設定可能な製品オプション数を減らすことで、SKU 数を減らします
 - 個別の製品を作成するのではなく、カスタムオプションを使用して、より多くの製品バリエーションを提供します。
 - 有効な SKU には、価格の潜在的な順列がいくつか含まれる場合があることを考慮して、価格は店舗または顧客グループごとに異なる方法で指定できます。
-- モジュールなどの未使用のシステムコンポーネントをディアクティベートまたは削除します。 [ モジュールのアンインストール ](../../../installation/tutorials/uninstall-modules.md) を参照してください。
+- モジュールなどの未使用のシステムコンポーネントをディアクティベートまたは削除します。 [&#x200B; モジュールのアンインストール &#x200B;](../../../installation/tutorials/uninstall-modules.md) を参照してください。
 - 外部のプラットフォーム管理システム（PMS）で製品を管理します。
 
 ## 製品のバリエーション
@@ -214,7 +214,7 @@ MySQL を使用して、未使用の製品属性セットを削除します。
 
 ### 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -249,7 +249,7 @@ MySQL を使用して、未使用の製品属性セットを削除します。
 
 ### 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス

@@ -17,7 +17,7 @@ cron 関連のタスクが適切に実行されるように、NTP をインス�
 
 ## ネットワークタイムプロトコル（NTP）のインストールと設定
 
-[NTP](https://www.ntp.org/) を使用すると、サーバーは [ グローバルに利用可能なプールサーバー ](https://www.ntppool.org/en/) を使用してシステムクロックを同期できます。 社内ネットワークまたは外部のパブリック サーバーの専用ハードウェア ソリューションであるかどうかにかかわらず、信頼できる NTP サーバーを使用することをお勧めします。
+[NTP](https://www.ntp.org/) を使用すると、サーバーは [&#x200B; グローバルに利用可能なプールサーバー &#x200B;](https://www.ntppool.org/en/) を使用してシステムクロックを同期できます。 社内ネットワークまたは外部のパブリック サーバーの専用ハードウェア ソリューションであるかどうかにかかわらず、信頼できる NTP サーバーを使用することをお勧めします。
 
 Adobe Commerceを複数のホストに導入する場合、NTP を使用すると、サーバーのタイムゾーンに関係なく、すべてのクロックが同期していることを簡単に保証できます。 また、cron 関連のタスク（インデックス作成やメールのトランザクション処理など）は、サーバーの時計が正確かどうかに依存します。
 
@@ -29,7 +29,7 @@ Adobe Commerceを複数のホストに導入する場合、NTP を使用する�
 apt-get install ntp
 ```
 
-[NTP プール サーバーを使用する ](#use-ntp-pool-servers) を参照してください。
+[NTP プール サーバーを使用する &#x200B;](#use-ntp-pool-servers) を参照してください。
 
 ### CentOS での NTP のインストールと設定
 
@@ -59,7 +59,7 @@ NTP をインストールして構成するには、次の手順に従います�
 
 ### NTP プール サーバーを使用する
 
-プール・サーバの選択はユーザー次第です。 NTP プールサーバーを使用する場合、ntp.orgでは、[NTP プールプロジェクトページ ](https://www.ntppool.org/en/) で説明されているように、サーバーのタイムゾーンに近い [ プールサーバー ](https://www.ntppool.org/en/use.html) を使用することをお勧めします。 展開環境のすべてのホストが使用できるプライベート NTP サーバーがある場合は、代わりにそのサーバーを使用できます。
+プール・サーバの選択はユーザー次第です。 NTP プールサーバーを使用する場合、ntp.orgでは、[NTP プールプロジェクトページ &#x200B;](https://www.ntppool.org/en/) で説明されているように、サーバーのタイムゾーンに近い [&#x200B; プールサーバー &#x200B;](https://www.ntppool.org/en/use.html) を使用することをお勧めします。 展開環境のすべてのホストが使用できるプライベート NTP サーバーがある場合は、代わりにそのサーバーを使用できます。
 
 1. `/etc/ntp.conf` をテキストエディターで開きます。
 
@@ -113,7 +113,7 @@ Web サーバーの docroot の任意の場所に、次のコードを追加し�
 phpinfo();
 ```
 
-詳しくは、[phpinfo マニュアルページ ](https://www.php.net/manual/en/function.phpinfo.php) を参照してください。
+詳しくは、[phpinfo マニュアルページ &#x200B;](https://www.php.net/manual/en/function.phpinfo.php) を参照してください。
 
 結果を表示するには、ブラウザーの場所または住所フィールドに次の URL を入力します。
 
@@ -126,17 +126,17 @@ http://<web server host or IP>/phpinfo.php
 * 必要に応じて、web サーバーを起動します。
 * ファイアウォールでポート 80 でのトラフィックが許可されていることを確認します。
 
-  [Ubuntu のヘルプ ](https://help.ubuntu.com/community/UFW)
+  [Ubuntu のヘルプ &#x200B;](https://help.ubuntu.com/community/UFW)
 
-  [CentOS のヘルプ ](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
+  [CentOS のヘルプ &#x200B;](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
 
 ## phpMyAdmin
 
 phpMyAdmin アプリケーションは、使いやすく、無料のデータベース管理ユーティリティです。 データベースのコンテンツを確認および操作するために使用できます。 phpMyAdmin に MySQL データベース管理ユーザーとしてログインする必要があります。
 
-phpMyAdmin の詳細については、[phpMyAdmin ホームページ ](https://www.phpmyadmin.net/) を参照してください。
+phpMyAdmin の詳細については、[phpMyAdmin ホームページ &#x200B;](https://www.phpmyadmin.net/) を参照してください。
 
-インストールについて詳しくは、[phpMyAdmin インストールドキュメント ](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install) を参照してください。
+インストールについて詳しくは、[phpMyAdmin インストールドキュメント &#x200B;](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install) を参照してください。
 
 >[!NOTE]
 >

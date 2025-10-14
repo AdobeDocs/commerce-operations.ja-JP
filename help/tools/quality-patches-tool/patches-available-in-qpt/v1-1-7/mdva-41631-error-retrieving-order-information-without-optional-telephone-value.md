@@ -38,8 +38,8 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.1 ～ 2.4.3-p1
 
 1. **ストア**/**設定**/**カスタマー**/**カスタマー設定**/**名前と住所のオプション**/**電話を表示** に移動し、電話番号をオプションとして設定します。
 1. ログインしている顧客として [!DNL GraphQL API] を使用して注文します。
-   * 請求先住所と配送先住所を設定する際は、電話番号を設定しないでください。 アドビの開発者向けドキュメントの [[!DNL GraphQL]  チェックアウトチュートリアル ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) に記載されている手順に従います。
-1. [!DNL GraphQL] [`customerOrders` クエリ ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/orders/) を使用して注文を取得します。
+   * 請求先住所と配送先住所を設定する際は、電話番号を設定しないでください。 アドビの開発者向けドキュメントの [[!DNL GraphQL]  チェックアウトチュートリアル &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) に記載されている手順に従います。
+1. [!DNL GraphQL] [`customerOrders` クエリ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/orders/) を使用して注文を取得します。
 
 <pre>
 <code class="language-graphql">
@@ -93,14 +93,14 @@ country_code
 
 個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 ](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [ アップグレードとパッチ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
+* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
 
 ## 関連資料
 
 [!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
 
-* [ 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
+* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
 
 QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。

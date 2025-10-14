@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Nginx
 
-Adobe Commerceは、nginx 1.x （または [ 最新のメインラインバージョン ](https://nginx.org/en/linux_packages.html#mainline)）をサポートしています。 また、`php-fpm` の最新バージョンをインストールする必要があります。
+Adobe Commerceは、nginx 1.x （または [&#x200B; 最新のメインラインバージョン &#x200B;](https://nginx.org/en/linux_packages.html#mainline)）をサポートしています。 また、`php-fpm` の最新バージョンをインストールする必要があります。
 
 インストール手順は、使用しているオペレーティングシステムによって異なります。 詳しくは、[PHP](../php-settings.md) を参照してください。
 
@@ -25,13 +25,13 @@ Adobe Commerceは、nginx 1.x （または [ 最新のメインラインバー�
 sudo apt -y install nginx
 ```
 
-[ ソースから nginx を構築する ](https://www.armanism.com/blog/install-nginx-on-ubuntu) こともできます。
+[&#x200B; ソースから nginx を構築する &#x200B;](https://www.armanism.com/blog/install-nginx-on-ubuntu) こともできます。
 
-以下のセクションを完了し、アプリケーションをインストールしたら、サンプルの設定ファイルを使用して [nginx を設定 ](#configure-nginx) します。
+以下のセクションを完了し、アプリケーションをインストールしたら、サンプルの設定ファイルを使用して [nginx を設定 &#x200B;](#configure-nginx) します。
 
 ### php-fpm のインストールと設定
 
-Adobe Commerceが正しく機能するには、いくつかの [PHP 拡張 ](../php-settings.md) が必要です。 nginx を使用している場合は、これらの拡張機能に加えて、`php-fpm` 拡張機能もインストールして設定する必要があります。
+Adobe Commerceが正しく機能するには、いくつかの [PHP 拡張 &#x200B;](../php-settings.md) が必要です。 nginx を使用している場合は、これらの拡張機能に加えて、`php-fpm` 拡張機能もインストールして設定する必要があります。
 
 `php-fpm` をインストールして設定するには：
 
@@ -43,7 +43,7 @@ Adobe Commerceが正しく機能するには、いくつかの [PHP 拡張 ](../
 
    >[!NOTE]
    >
-   >このコマンドは、利用可能な最新バージョンの PHP 7.2.X をインストールします。サポートされる PHP のバージョンについては、[ システム要件 ](../../system-requirements.md) を参照してください。
+   >このコマンドは、利用可能な最新バージョンの PHP 7.2.X をインストールします。サポートされる PHP のバージョンについては、[&#x200B; システム要件 &#x200B;](../../system-requirements.md) を参照してください。
 
 1. エディターで `php.ini` のファイルを開きます。
 
@@ -65,7 +65,7 @@ Adobe Commerceが正しく機能するには、いくつかの [PHP 拡張 ](../
 
    >[!NOTE]
    >
-   >Adobe Commerceをテストする際は、メモリ制限を 2 G に設定することをお勧めします。 詳しくは、[ 必須の PHP 設定 ](../php-settings.md) を参照してください。
+   >Adobe Commerceをテストする際は、メモリ制限を 2 G に設定することをお勧めします。 詳しくは、[&#x200B; 必須の PHP 設定 &#x200B;](../php-settings.md) を参照してください。
 
 1. 保存して、エディターを終了します。
 
@@ -85,11 +85,11 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
 
 * [Composer メタパッケージの取得](../../composer.md)
 
-* [Git リポジトリのクローンを作成 ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Git リポジトリのクローンを作成 &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 この例は、コマンドラインを使用した Composer ベースのインストールを示しています。
 
-1. [ ファイルシステムの所有者 ](../file-system/overview.md) として、アプリケーションサーバーにログインします。
+1. [&#x200B; ファイルシステムの所有者 &#x200B;](../file-system/overview.md) として、アプリケーションサーバーにログインします。
 
 1. Web サーバーの docroot ディレクトリまたは仮想ホストの docroot として設定したディレクトリに移動します。 この例では、Ubuntu のデフォルト `/var/www/html` を使用しています。
 
@@ -117,7 +117,7 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   プロンプトが表示されたら、[ 認証キー ](../authentication-keys.md) を入力します。 _公開鍵_ はユーザー名で、_秘密鍵_ はパスワードです。
+   プロンプトが表示されたら、[&#x200B; 認証キー &#x200B;](../authentication-keys.md) を入力します。 _公開鍵_ はユーザー名で、_秘密鍵_ はパスワードです。
 
 1. アプリケーションをインストールする前に、Web サーバーグループの読み取り/書き込み権限を設定します。 これは、コマンドラインがファイルをファイルシステムに書き込めるようにするために必要です。
 
@@ -141,7 +141,7 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
    chmod u+x bin/magento
    ```
 
-1. [ コマンドライン ](../../advanced.md) からをインストールします。 この例では、インストールディレクトリの名前が `magento2ee` で、`db-host` が同じマシン（`localhost`）上にあり、`db-name`、`db-user`、`db-password` がすべて `magento` であることを前提としています。
+1. [&#x200B; コマンドライン &#x200B;](../../advanced.md) からをインストールします。 この例では、インストールディレクトリの名前が `magento2ee` で、`db-host` が同じマシン（`localhost`）上にあり、`db-name`、`db-user`、`db-password` がすべて `magento` であることを前提としています。
 
    ```bash
    bin/magento setup:install \
@@ -231,7 +231,7 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
 
 ### インストールの確認
 
-Web ブラウザーを開き、サイトのベース URL に移動して [ インストールを確認 ](../../next-steps/verify.md) します。
+Web ブラウザーを開き、サイトのベース URL に移動して [&#x200B; インストールを確認 &#x200B;](../../next-steps/verify.md) します。
 
 ## CentOS 7
 
@@ -283,7 +283,7 @@ Adobe Commerceが正しく機能するには、いくつかの [PHP](../php-sett
 
    >[!NOTE]
    >
-   >Adobe Commerceをテストする際は、メモリ制限を 2 G に設定することをお勧めします。 詳しくは、[ 必須の PHP 設定 ](../php-settings.md) を参照してください。
+   >Adobe Commerceをテストする際は、メモリ制限を 2 G に設定することをお勧めします。 詳しくは、[&#x200B; 必須の PHP 設定 &#x200B;](../php-settings.md) を参照してください。
 
 1. セッションパスディレクトリのコメントを解除し、パスを設定します。
 
@@ -364,11 +364,11 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
 
 * [Composer メタパッケージの取得](../../composer.md)
 
-* [Git リポジトリのクローンを作成 ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Git リポジトリのクローンを作成 &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 この例は、コマンドラインを使用した Composer ベースのインストールを示しています。
 
-1. [ ファイルシステムの所有者 ](../file-system/overview.md) として、アプリケーションサーバーにログインします。
+1. [&#x200B; ファイルシステムの所有者 &#x200B;](../file-system/overview.md) として、アプリケーションサーバーにログインします。
 
 1. Web サーバーの docroot ディレクトリまたは仮想ホストの docroot として設定したディレクトリに移動します。 この例では、Ubuntu のデフォルト `/var/www/html` を使用しています。
 
@@ -396,7 +396,7 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   プロンプトが表示されたら、[ 認証キー ](../authentication-keys.md) を入力します。 _公開鍵_ はユーザー名で、_秘密鍵_ はパスワードです。
+   プロンプトが表示されたら、[&#x200B; 認証キー &#x200B;](../authentication-keys.md) を入力します。 _公開鍵_ はユーザー名で、_秘密鍵_ はパスワードです。
 
 1. アプリケーションをインストールする前に、Web サーバーグループの読み取り/書き込み権限を設定します。 これは、コマンドラインがファイルをファイルシステムに書き込めるようにするために必要です。
 
@@ -420,7 +420,7 @@ Adobe Commerceをダウンロードするには、次のようないくつかの
    chmod u+x bin/magento
    ```
 
-1. [ コマンドライン ](../../advanced.md) からをインストールします。 この例では、インストールディレクトリの名前が `magento2ee` で、`db-host` が同じマシン（`localhost`）上にあり、`db-name`、`db-user`、`db-password` がすべて `magento` であることを前提としています。
+1. [&#x200B; コマンドライン &#x200B;](../../advanced.md) からをインストールします。 この例では、インストールディレクトリの名前が `magento2ee` で、`db-host` が同じマシン（`localhost`）上にあり、`db-name`、`db-user`、`db-password` がすべて `magento` であることを前提としています。
 
    ```bash
    bin/magento setup:install \
@@ -569,4 +569,4 @@ SELinux と firewalld を設定するには：
 
 ### インストールの確認
 
-Web ブラウザーを開き、サイトのベース URL に移動して [ インストールを確認 ](../../next-steps/verify.md) します。
+Web ブラウザーを開き、サイトのベース URL に移動して [&#x200B; インストールを確認 &#x200B;](../../next-steps/verify.md) します。

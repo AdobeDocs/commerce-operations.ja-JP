@@ -21,7 +21,7 @@ ht-degree: 0%
 
 このようなデータには、ログ、注文見積、最近表示または比較された製品、訪問者、イベント固有のカテゴリ、プロモーションルールなどが含まれる場合があります。
 
-* **移行を成功させるための一般的なルール [ に従い](migrate-data/overview.md#migration-overview)** す。
+* **移行を成功させるための一般的なルール [&#x200B; に従い](migrate-data/overview.md#migration-overview)** す。
 
 * パフォーマンスを向上させるには、**ファイルで `direct_document_copy`** オプションを有効にする `config.xml` ことができます。
 

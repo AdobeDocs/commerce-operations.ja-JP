@@ -52,7 +52,7 @@ Adobeでは、処理中に問題が発生した場合に復元できるように
 
 **システムをバックアップするには**:
 
-1. [ ファイルシステムのオーナー ](../../installation/prerequisites/file-system/overview.md) としてCommerce サーバーにログインするか、に切り替えます。
+1. [&#x200B; ファイルシステムのオーナー &#x200B;](../../installation/prerequisites/file-system/overview.md) としてCommerce サーバーにログインするか、に切り替えます。
 1. 次のコマンドを入力します。
 
    ```bash
@@ -130,7 +130,7 @@ Sales データベースのテーブル名は次で始まります：
 
 >[!INFO]
 >
->このセクションには、特定のデータベーステーブル名を持つスクリプトが含まれています。 カスタマイズを実行した場合、またはテーブルに対してアクションを実行する前にテーブルの完全なリストを確認する場合は、[ 参照スクリプト ](#reference-scripts) を参照してください。
+>このセクションには、特定のデータベーステーブル名を持つスクリプトが含まれています。 カスタマイズを実行した場合、またはテーブルに対してアクションを実行する前にテーブルの完全なリストを確認する場合は、[&#x200B; 参照スクリプト &#x200B;](#reference-scripts) を参照してください。
 
 詳しくは、以下を参照してください。
 
@@ -263,7 +263,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> seque
 
 #### NDB 要件
 
-[NDB （ネットワーク・データベース）クラスタを使用している場合 ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) 次の手順に従います。
+[NDB （ネットワーク・データベース）クラスタを使用している場合 &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) 次の手順に従います。
 
 1. ダンプファイル内のテーブルを InnoDb から NDB タイプに変換します。
 
@@ -309,7 +309,7 @@ mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattribu
 
 >[!INFO]
 >
->このセクションには、特定のデータベーステーブル名を持つスクリプトが含まれています。 カスタマイズを実行した場合、またはテーブルに対してアクションを実行する前にテーブルの完全なリストを確認する場合は、[ 参照スクリプト ](#reference-scripts) を参照してください。
+>このセクションには、特定のデータベーステーブル名を持つスクリプトが含まれています。 カスタマイズを実行した場合、またはテーブルに対してアクションを実行する前にテーブルの完全なリストを確認する場合は、[&#x200B; 参照スクリプト &#x200B;](#reference-scripts) を参照してください。
 
 引用符データベース テーブル名は `quote` で始まります。 `magento_customercustomattributes_sales_flat_quote` テーブルと `magento_customercustomattributes_sales_flat_quote_address` テーブルも影響を受けます
 
@@ -357,7 +357,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> magen
 
 ### NDB 要件
 
-[NDB （ネットワーク・データベース）クラスタを使用している場合 ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) 次の手順に従います。
+[NDB （ネットワーク・データベース）クラスタを使用している場合 &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) 次の手順に従います。
 
 1. ダンプファイル内のテーブルを InnoDb から NDB タイプに変換します。
 
@@ -477,7 +477,7 @@ SET foreign_key_checks = 1;
 
 デプロイメント設定を更新するには：
 
-1. [ ファイルシステムのオーナー ](../../installation/prerequisites/file-system/overview.md) としてCommerce サーバーにログインするか、に切り替えます。
+1. [&#x200B; ファイルシステムのオーナー &#x200B;](../../installation/prerequisites/file-system/overview.md) としてCommerce サーバーにログインするか、に切り替えます。
 1. デプロイメント設定をバックアップします。
 
    ```bash

@@ -17,7 +17,7 @@ Adobe Commerce 2.4.5 では、Amazon OpenSearch サービスクラスターの�
 ## AWS OpenSearch サービスドメインの作成
 
 まず、AWSで OpenSearch インスタンスを確立する必要があります。
-手順について詳しくは、[Amazon OpenSearch サービスドメインの作成と管理 ](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) を参照してください。
+手順について詳しくは、[Amazon OpenSearch サービスドメインの作成と管理 &#x200B;](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) を参照してください。
 
 ## AWS OpenSearch へのデータの取得
 
@@ -33,11 +33,11 @@ AWSですべてが準備されたら、データを入力する時間です。
 インデックスはAWS インスタンスで簡単に再作成できるので、インデックスを移行する必要はありません。
 ただし、データインデックスを移行する場合は、Elasticsearch/OpenSearch のバージョンに互換性があることを確認します。
 
-詳しくは、Amazonの [Amazon OpenSearch Service への移行 ](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) 手順を参照してください。
+詳しくは、Amazonの [Amazon OpenSearch Service への移行 &#x200B;](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) 手順を参照してください。
 
 ### OpenSearch 用のCommerceの設定
 
-OpenSearch を設定する手順については、[ 詳細インストール ](../../advanced.md) トピックを参照してください。
+OpenSearch を設定する手順については、[&#x200B; 詳細インストール &#x200B;](../../advanced.md) トピックを参照してください。
 
 新しい設定が機能していることをテストするには、OpenSearch エンドポイントを直接テストします。
 
@@ -53,4 +53,4 @@ OpenSearch を設定する手順については、[ 詳細インストール ](.
 
 ## その他のリソース
 
-詳しくは、[OpenSearch AWS ドキュメント ](https://docs.aws.amazon.com/opensearch-service/index.html) を参照してください。
+詳しくは、[OpenSearch AWS ドキュメント &#x200B;](https://docs.aws.amazon.com/opensearch-service/index.html) を参照してください。

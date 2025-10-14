@@ -16,11 +16,11 @@ ht-degree: 0%
 Commerce サイトの応答性を高めるには、CSS およびJavaScript（JS）リソースファイルを最適化し、レンダリングをブロックするリソースを排除します。
 
 - **CSS ファイルと JS ファイルの最適化** - Adobe Commerceで個別のファイルを 1 つのファイルに結合、縮小、バンドルするように設定することで、CSS およびJavaScript（JS）ファイルの読み込みに要する時間を短縮します。
-- **レンダリングを妨げるリソースを排除** – 重要な JS および CSS 機能をインラインで配信し、重要でないすべての JS/CSS スタイルを延期することを検討します。 ガイダンスについては、[ レンダリングをブロックするリソースを排除する ](https://web.dev/render-blocking-resources/) を参照してください。
+- **レンダリングを妨げるリソースを排除** – 重要な JS および CSS 機能をインラインで配信し、重要でないすべての JS/CSS スタイルを延期することを検討します。 ガイダンスについては、[&#x200B; レンダリングをブロックするリソースを排除する &#x200B;](https://web.dev/render-blocking-resources/) を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン、2.3 以降 ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン、2.3 以降 &#x200B;](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -92,6 +92,6 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 ## 追加情報
 
 - [クライアントサイドの最適化設定](../../../performance/configuration.md#client-side-optimization-settings)
-- [ ユーザーガイド：リソースファイルの最適化 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
-- [ フロントエンド開発者ガイド：CSS マージ、縮小、サイトのパフォーマンス ](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [&#x200B; ユーザーガイド：リソースファイルの最適化 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [&#x200B; フロントエンド開発者ガイド：CSS マージ、縮小、サイトのパフォーマンス &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [高度なJavaScriptのバンドル](../../../performance/advanced-js-bundling.md)

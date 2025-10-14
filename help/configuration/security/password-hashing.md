@@ -32,11 +32,11 @@ a853b06f077b686f8a3af80c98acfca763cf10c0e03597c67e756f1c782d1ab0:8qnyO4H1OYIfGCU
 
 ハッシュアップグレードメカニズムがどのように見えるかを検討します。 最初にパスワードが `MD5` でハッシュ化され、その後アルゴリズムが Argon 2ID13 で複数回更新されたとします。 次の図に、ハッシュのアップグレードフローを示します。
 
-![ ハッシュアップグレードワークフロー ](../../assets/configuration/hash-upgrade-algorithm.png)
+![&#x200B; ハッシュアップグレードワークフロー &#x200B;](../../assets/configuration/hash-upgrade-algorithm.png)
 
 各ハッシュアルゴリズムは、前のパスワードハッシュを使用して新しいハッシュを生成します。 Commerceには、元の生のパスワードは保存されません。
 
-![ ハッシュアップグレード方法 ](../../assets/configuration/hash-upgrade-strategy.png)
+![&#x200B; ハッシュアップグレード方法 &#x200B;](../../assets/configuration/hash-upgrade-strategy.png)
 
 上記のように、パスワードハッシュには、元のパスワードに適用された複数のハッシュバージョンが含まれる場合があります。
 顧客の認証中にパスワード検証メカニズムがどのように機能するかを次に示します。

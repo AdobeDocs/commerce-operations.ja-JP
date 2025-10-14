@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
 
 * クラウドインフラストラクチャー上のAdobe Commerce
 * Adobe Commerce オンプレミス

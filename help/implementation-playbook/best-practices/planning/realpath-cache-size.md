@@ -20,7 +20,7 @@ Commerceのパフォーマンスを向上させるには、次の推奨設定を
 - キャッシュサイズを 10 MB に設定します（`realpath cache_size=10M`）。
 - 有効期間（ttl）を 7200 秒（`realpath_cache_ttl=7200`）に設定します
 
-設定手順については、[PHP オプションの設定方法 ](../../../installation/prerequisites/php-settings.md#how-to-set-php-options) を参照してください。
+設定手順については、[PHP オプションの設定方法 &#x200B;](../../../installation/prerequisites/php-settings.md#how-to-set-php-options) を参照してください。
 
 ## 影響を受ける製品とバージョン
 

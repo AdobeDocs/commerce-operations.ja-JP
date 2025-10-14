@@ -16,13 +16,13 @@ ht-degree: 0%
 
 ## [!UICONTROL Deploy log Deployment Troubleshooter]
 
-![ デプロイのログ配置のトラブルシューティング ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-1.jpg)
+![&#x200B; デプロイのログ配置のトラブルシューティング &#x200B;](../../assets/tools/observation-for-adobe-commerce/deploy-tab-1.jpg)
 
 **[!UICONTROL Deploy log Deployment Troubleshooter]** のフレームには、選択した期間に発生したデプロイログイベントの数が表示されます。 の目的は、デプロイメントアクティビティを一目で確認できるようにし、デプロイメントの複雑さをカウントで判断することです。 ログに記録されるメッセージが多いほど、通常、のデプロイメントはより複雑になります。
 
 ## [!UICONTROL Deploy State]
 
-![ デプロイ状態 ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-2.jpg)
+![&#x200B; デプロイ状態 &#x200B;](../../assets/tools/observation-for-adobe-commerce/deploy-tab-2.jpg)
 
 **[!UICONTROL Deploy State]** のフレームには、選択した期間に発生したデプロイイベントが表示されます。 このフレームのパーサは、次の特定のシグナルを探しています：
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Deploy Log Detail]
 
-![ ログの詳細をデプロイ ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-3.jpg)
+![&#x200B; ログの詳細をデプロイ &#x200B;](../../assets/tools/observation-for-adobe-commerce/deploy-tab-3.jpg)
 
 **[!UICONTROL Deploy Log Detail]** のフレームには、選択した期間に発生したデプロイログメッセージの概要の詳細が表示されます。 フレームは、デプロイメントログで次の文字列を解析しています。
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Post Deploy Log Detail]
 
-![ デプロイ後のログの詳細 ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
+![&#x200B; デプロイ後のログの詳細 &#x200B;](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
 
 **[!UICONTROL Post Deploy Log Detail]** のフレームには、選択した期間に発生したデプロイ後のログの詳細が表示されます。 このフレームでは、次の文字列を含む特定のログメッセージに焦点を当てています。
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Cloud Log Detail]
 
-![ クラウドログの詳細 ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
+![&#x200B; クラウドログの詳細 &#x200B;](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
 
 **[!UICONTROL Cloud Log Detail]** フレームには、選択した期間に発生したクラウドログの詳細が表示されます。 次の文字列が解析され、以下の「AS」ラベルで返されます。
 
@@ -151,12 +151,12 @@ ht-degree: 0%
 
 ## [!UICONTROL Count of modules imported during deploy]
 
-![ デプロイ中に読み込んだモジュールの数 ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-6.jpg)
+![&#x200B; デプロイ中に読み込んだモジュールの数 &#x200B;](../../assets/tools/observation-for-adobe-commerce/deploy-tab-6.jpg)
 
 **[!UICONTROL Count of modules imported during deploy]** フレームには、選択した期間のデプロイメント中に読み込まれたモジュールの数が表示されます。
 
 ## [!UICONTROL Deployed module list]
 
-![ デプロイされたモジュールのリスト ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
+![&#x200B; デプロイされたモジュールのリスト &#x200B;](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
 
 **[!UICONTROL Deployed module list]** のフレームには、選択した期間にデプロイされたモジュールが表示されます。

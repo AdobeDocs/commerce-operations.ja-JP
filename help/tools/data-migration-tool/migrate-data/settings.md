@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # データ移行設定
 
-`Settings` モードでは、ストア、web サイト、およびシステム設定（送料、支払い、税金設定など）が移行されます。 データ移行 [ 順序 ](overview.md#migration-order) に従って、まず設定を移行する必要があります。
+`Settings` モードでは、ストア、web サイト、およびシステム設定（送料、支払い、税金設定など）が移行されます。 データ移行 [&#x200B; 順序 &#x200B;](overview.md#migration-order) に従って、まず設定を移行する必要があります。
 
 開始する前に、次の手順に従って準備を行います。
 
-1. [ ファイルシステムの所有者 ](../../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインします。
+1. [&#x200B; ファイルシステムの所有者 &#x200B;](../../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインします。
 
 1. `/bin` ディレクトリに移動するか、システム `PATH` ーバーに追加されていることを確認します。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 >Magento 2 が `default` モードでデプロイされていることを確認します。 開発者モードは、移行ツールで検証エラーを引き起こす可能性があります。
 
 
-詳しくは、[ 最初の手順 ](overview.md#first-steps) の節を参照してください。
+詳しくは、[&#x200B; 最初の手順 &#x200B;](overview.md#first-steps) の節を参照してください。
 
 ## 設定移行コマンドを実行します。
 
@@ -54,7 +54,7 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 設定の移行時に、システム設定を無視、名前変更、変更することができます。 それには、`settings.xml` ファイルでカスタムルールを指定します。
 
-1. [ ファイルシステムの所有者 ](../../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインするか、切り替えます。
+1. [&#x200B; ファイルシステムの所有者 &#x200B;](../../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインするか、切り替えます。
 
 1. 次のディレクトリに変更します。
 
@@ -80,7 +80,7 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 1. マッピングの設定ファイルの新しい名前を指定するには、`<settings_map_file>` ファイルの `path/to/config.xml` タグを変更します。
 
-詳しくは、ツールの [ 仕様 ](../technical-specification.md#settings-migration-mode) の [ 設定移行モード ](../technical-specification.md) の節を参照してください。
+詳しくは、ツールの [&#x200B; 仕様 &#x200B;](../technical-specification.md#settings-migration-mode) の [&#x200B; 設定移行モード &#x200B;](../technical-specification.md) の節を参照してください。
 
 ## 次の移行手順
 

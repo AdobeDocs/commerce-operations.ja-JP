@@ -60,7 +60,7 @@ server {
 
 >[!NOTE]
 >
->詳しくは、[ 前提条件 ](../prerequisites/overview.md) および [ インストールガイド ](../overview.md) を参照してください。
+>詳しくは、[&#x200B; 前提条件 &#x200B;](../prerequisites/overview.md) および [&#x200B; インストールガイド &#x200B;](../overview.md) を参照してください。
 
 ## &#x200B;1. サーバー設定を編集する
 
@@ -132,11 +132,11 @@ server {
 ]
 ```
 
-詳しくは、[env.php リファレンス ](../../configuration/reference/config-reference-envphp.md) を参照してください。
+詳しくは、[env.php リファレンス &#x200B;](../../configuration/reference/config-reference-envphp.md) を参照してください。
 
 ## &#x200B;4. スイッチモード
 
-[ と ](../../configuration/bootstrap/application-modes.md) を含む `production` アプリケーションモード `developer` は、セキュリティを向上させ、開発を容易にするために設計されています。 名前が示すように、アプリケーションを拡張またはカスタマイズする場合は `developer` モードに切り替え、実稼働環境で実行する場合は `production` モードに切り替える必要があります。
+[&#x200B; と &#x200B;](../../configuration/bootstrap/application-modes.md) を含む `production` アプリケーションモード `developer` は、セキュリティを向上させ、開発を容易にするために設計されています。 名前が示すように、アプリケーションを拡張またはカスタマイズする場合は `developer` モードに切り替え、実稼働環境で実行する場合は `production` モードに切り替える必要があります。
 
 モードの切り替えは、サーバー設定が正しく動作していることを確認するための重要な手順です。 CLI ツールを使用してモードを切り替えることができます。
 
@@ -172,12 +172,12 @@ Web ブラウザーでストアフロントに移動して、すべてが機能�
 
    次の図は、ストアフロントページのサンプルを示しています。 次のように表示される場合、インストールは成功です。
 
-   ![ インストールが成功したことを確認するストアフロント ](../../assets/installation/install-success_store.png)
+   ![&#x200B; インストールが成功したことを確認するストアフロント &#x200B;](../../assets/installation/install-success_store.png)
 
-   ページに 404 （見つかりません）が表示される場合や、画像、CSS、JS など他のアセットの読み込みに失敗する場合は、[ トラブルシューティングの節 ](https://support.magento.com/hc/en-us/articles/360032994352) を参照してください。
+   ページに 404 （見つかりません）が表示される場合や、画像、CSS、JS など他のアセットの読み込みに失敗する場合は、[&#x200B; トラブルシューティングの節 &#x200B;](https://support.magento.com/hc/en-us/articles/360032994352) を参照してください。
 
 1. ブラウザーからアプリケーションディレクトリにアクセスしてみてください。 サーバーのホスト名または IP アドレスにディレクトリ名をアドレスバーに追加します。
 
    404 または「アクセスが拒否されました」というメッセージが表示された場合、ファイルシステムへのアクセスが正常に制限されました。
 
-   ![ アクセスが拒否されました ](../../assets/installation/access-denied.png)
+   ![&#x200B; アクセスが拒否されました &#x200B;](../../assets/installation/access-denied.png)

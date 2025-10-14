@@ -13,14 +13,14 @@ ht-degree: 0%
 
 このタスクでは、各ストアのルートカテゴリ（および必要に応じて追加のカテゴリ）を作成する必要があります。 このトピックで説明するタスクは、複数のストアを設定する 1 つの方法となります。 詳しくは、Commerce ユーザーガイドの次の資料を参照してください。
 
-- [ カテゴリ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/categories)
-- [Web サイトの追加 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [URL を保存 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-urls)
-- [ コンテンツ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/content-menu)
+- [&#x200B; カテゴリ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/categories)
+- [Web サイトの追加 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [URL を保存 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [&#x200B; コンテンツ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
->例としてのみ、このトピックで `french` す web サイトコードを含むフランス語の web サイトを使用します。 詳細なチュートリアルについては、[ チュートリアル：Apache で複数の Web サイトを設定する ](ms-apache.md) および [ チュートリアル：nginx で複数の Web サイトを設定する ](ms-nginx.md) を参照してください。
+>例としてのみ、このトピックで `french` す web サイトコードを含むフランス語の web サイトを使用します。 詳細なチュートリアルについては、[&#x200B; チュートリアル：Apache で複数の Web サイトを設定する &#x200B;](ms-apache.md) および [&#x200B; チュートリアル：nginx で複数の Web サイトを設定する &#x200B;](ms-nginx.md) を参照してください。
 
 ## 手順 1：ルートカテゴリの作成
 
@@ -34,11 +34,11 @@ ht-degree: 0%
 1. **カテゴリ名** フィールドに、このカテゴリを識別する一意の名前を入力します。
 1. 「カテゴリを有効にする」が **はい** に設定されていることを確認します。
 
-   このページの他のオプションについて詳しくは、[ ルートカテゴリ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/category-root) を参照してください。
+   このページの他のオプションについて詳しくは、[&#x200B; ルートカテゴリ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/category-root) を参照してください。
 
    次の図に例を示します。
 
-   ![ ルートカテゴリの作成と有効化 ](../../assets/configuration/add-root-category.png)
+   ![&#x200B; ルートカテゴリの作成と有効化 &#x200B;](../../assets/configuration/add-root-category.png)
 
 1. **保存** をクリックします。
 1. これらのタスクを必要な回数だけ繰り返して、ストアのルートカテゴリを作成します。
@@ -57,7 +57,7 @@ Web サイトを作成するには：
 
    次の図に例を示します。
 
-   ![Web サイトの追加 ](../../assets/configuration/multi-site-website.png)
+   ![Web サイトの追加 &#x200B;](../../assets/configuration/multi-site-website.png)
 
 1. **Web サイトを保存** をクリックします。
 1. これらのタスクを必要な回数繰り返して、web サイトを作成します。
@@ -76,7 +76,7 @@ Web サイトを作成するには：
 
    次の図に例を示します。
 
-   ![ ストアを追加 ](../../assets/configuration/multi-site-store.png)
+   ![&#x200B; ストアを追加 &#x200B;](../../assets/configuration/multi-site-store.png)
 
 1. **ストアを保存** をクリックします。
 1. ストアを作成するために、これらのタスクを必要な回数だけ繰り返します。
@@ -95,7 +95,7 @@ Web サイトを作成するには：
 
    次の図に例を示します。
 
-   ![ ストアを追加 ](../../assets/configuration/multi-site-storeview.png)
+   ![&#x200B; ストアを追加 &#x200B;](../../assets/configuration/multi-site-storeview.png)
 
 1. **ストア表示を保存** をクリックします。
 1. これらのタスクを必要な回数だけ繰り返して、ストア表示を作成します。
@@ -109,7 +109,7 @@ Web サイトのベース URL を変更するには：
 1. _管理者_ パネルで、**ストア**/**設定**/**設定**/**一般**/**Web** をクリックします。
 1. ページ上部の **ストア表示** リストで、次の図に示すように、web サイトのいずれかの名前をクリックします。
 
-   ![ 範囲を選択 ](../../assets/configuration/multi-site-scope.png)
+   ![&#x200B; 範囲を選択 &#x200B;](../../assets/configuration/multi-site-scope.png)
 
 1. 右側のパネルで「**ベース URL**」を展開します。
 1. 「_ベース URL_」セクションで、「システム値を使用 **をクリア** します。
@@ -131,20 +131,20 @@ Commerceでは、ストアコードをサイトベース URL に追加するオ�
 
 これにより、今後のアップグレードで `index.php` と `.htaccess` がCommerce コードベースと非同期になるのを防ぐことができます。
 
-[Commerce ユーザーガイド ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-urls) を参照してください。
+[Commerce ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-urls) を参照してください。
 
 ベース URL にストアコードを追加するには：
 
 1. _管理者_ パネルで、**ストア**/**設定**/**設定**/**一般**/**Web** をクリックします。
 1. 次の図に示すように、ページ上部の **ストア表示** リストで **デフォルト設定** をクリックします。
 
-   ![ デフォルトの設定範囲を選択 ](../../assets/configuration/multi-site-default.png)
+   ![&#x200B; デフォルトの設定範囲を選択 &#x200B;](../../assets/configuration/multi-site-default.png)
 
 1. 右側のパネルで「**URL オプション**」を展開します。
 1. **URL にストアコードを追加** の横にある _システム値を使用_ チェックボックスをオフにします。
 1. _Url にストアコードを追加_ リストで、「**はい**」をクリックします。
 
-   ![ ストアベース URL へのストアコードの追加 ](../../assets/configuration/multi-site-add-store-url.png)
+   ![&#x200B; ストアベース URL へのストアコードの追加 &#x200B;](../../assets/configuration/multi-site-add-store-url.png)
 
 1. 「**設定を保存**」をクリックします。
 1. プロンプトが表示されたら、キャッシュをフラッシュします。 （**システム**/**キャッシュ管理**）。
@@ -159,7 +159,7 @@ Commerceでは、ストアコードをサイトベース URL に追加するオ�
 
 1. ページ上部の _ストア表示_ リストで、「**デフォルト設定**」をクリックします。
 
-   ![ デフォルトの設定範囲を選択 ](../../assets/configuration/multi-site-default.png)
+   ![&#x200B; デフォルトの設定範囲を選択 &#x200B;](../../assets/configuration/multi-site-default.png)
 
 1. 右側のパネルで「**ベース URL**」を展開します。
 1. 「_ベース URL_」セクションで、「システム値を使用 **をクリア** します。
@@ -175,4 +175,4 @@ Commerceでは、ストアコードをサイトベース URL に追加するオ�
 
 >[!INFO]
 >
->Web サイト、ストア、ストア表示コードには、文字（a ～ z または A ～ Z）、数字（0 ～ 9）、アンダースコア（_）のみを使用できます。 また、最初の文字は文字である必要があります。 大文字またはキャメルケースを使用する場合、内部的には、環境変数による設定の上書きに対応するために、大文字と小文字が区別されません。 [ 環境変数を使用して設定を上書き ](../reference/override-config-settings.md#environment-variables) を参照してください。
+>Web サイト、ストア、ストア表示コードには、文字（a ～ z または A ～ Z）、数字（0 ～ 9）、アンダースコア（_）のみを使用できます。 また、最初の文字は文字である必要があります。 大文字またはキャメルケースを使用する場合、内部的には、環境変数による設定の上書きに対応するために、大文字と小文字が区別されません。 [&#x200B; 環境変数を使用して設定を上書き &#x200B;](../reference/override-config-settings.md#environment-variables) を参照してください。

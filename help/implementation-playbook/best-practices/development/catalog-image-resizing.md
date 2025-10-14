@@ -116,5 +116,5 @@ find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type
 
 >[!NOTE]
 >
->- クラウドインフラストラクチャプロジェクトのAdobe Commerceでは、商品の画像のサイズ変更を Fastly サービスに任せることができます。 [ クラウドガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=ja#deep-image-optimization) の _ディープ画像の最適化_ を参照してください。
->- リモートストレージモジュールを使用する場合は、画像のサイズ変更を nginx にオフロードすることもできます。 [ 構成ガイド ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=ja) の「リモート・ストレージの画像サイズ変更の構成 _を参照_。
+>- クラウドインフラストラクチャプロジェクトのAdobe Commerceでは、商品の画像のサイズ変更を Fastly サービスに任せることができます。 [&#x200B; クラウドガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=ja#deep-image-optimization) の _ディープ画像の最適化_ を参照してください。
+>- リモートストレージモジュールを使用する場合は、画像のサイズ変更を nginx にオフロードすることもできます。 [&#x200B; 構成ガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=ja) の「リモート・ストレージの画像サイズ変更の構成 _を参照_。

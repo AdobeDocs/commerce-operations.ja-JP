@@ -17,7 +17,7 @@ Commerce データベースプロファイラーは、ページに実装され�
 
 ## 手順 1：デプロイメント設定を変更する
 
-`<magento_root>/app/etc/env.php` を変更して、[database profiler クラス ](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php) に次の参照を追加します。
+`<magento_root>/app/etc/env.php` を変更して、[database profiler クラス &#x200B;](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php) に次の参照を追加します。
 
 ```php?start_inline=1
         'profiler' => [
@@ -91,4 +91,4 @@ echo "</table>";
 
 結果を表示するには、ストアフロントまたは管理者の任意のページに移動します。 次に例を示します。
 
-![ データベース・プロファイラのサンプル結果 ](../../assets/configuration/db-profiler-results.png)
+![&#x200B; データベース・プロファイラのサンプル結果 &#x200B;](../../assets/configuration/db-profiler-results.png)

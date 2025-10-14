@@ -17,7 +17,7 @@ ht-degree: 0%
 
   ホストされた環境に複数の web サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーにお問い合わせください。
 
-  クラウドインフラストラクチャー上にAdobe Commerceをセットアップするには、追加のタスクが必要になります。 Commerceこのトピックで取り上げる作業が完了したら、[Cloud Infrastructure ガイドの ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja) 複数の web サイトまたはストアの設定 _を参照してください_。
+  クラウドインフラストラクチャー上にAdobe Commerceをセットアップするには、追加のタスクが必要になります。 Commerceこのトピックで取り上げる作業が完了したら、[Cloud Infrastructure ガイドの &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja) 複数の web サイトまたはストアの設定 _を参照してください_。
 
 - 1 つの仮想ホストファイルで複数のドメインを使用することも、web サイトごとに 1 つの仮想ホストを使用することもできます。仮想ホスト設定ファイルは `/etc/nginx/sites-available` にあります。
 - Commerceから提供された `nginx.conf.sample` を使用する場合は、このチュートリアルで説明した変更内容のみを適用します。
@@ -30,13 +30,13 @@ ht-degree: 0%
 
 >[!TIP]
 >
->これらの値の見つけ方のヘルプについては、[Web サイトの作成 ](ms-admin.md#step-2-create-websites) および [ ストアビューの作成 ](ms-admin.md#step-4-create-store-views) を参照してください。
+>これらの値の見つけ方のヘルプについては、[Web サイトの作成 &#x200B;](ms-admin.md#step-2-create-websites) および [&#x200B; ストアビューの作成 &#x200B;](ms-admin.md#step-4-create-store-views) を参照してください。
 
 次に、nginx で複数の web サイトを設定するためのロードマップを示します。
 
-1. 管理画面で [web サイト、ストア、ストア表示を設定 ](ms-admin.md) します。
+1. 管理画面で [web サイト、ストア、ストア表示を設定 &#x200B;](ms-admin.md) します。
 1. [Nginx virtual host](#step-2-create-nginx-virtual-hosts)）を作成して、Commerceの web サイトごとに多数の web サイトまたは 1 つの Nginx virtual host をマッピングします（以下の手順を参照）。
-1. Magentoが提供する [ を使用して、](ms-overview.md)MAGE 変数 `$MAGE_RUN_TYPE` の値 `$MAGE_RUN_CODE` および `nginx.conf.sample` を nginx に渡します（以下に説明する手順）。
+1. Magentoが提供する [&#x200B; を使用して、](ms-overview.md)MAGE 変数 `$MAGE_RUN_TYPE` の値 `$MAGE_RUN_CODE` および `nginx.conf.sample` を nginx に渡します（以下に説明する手順）。
 
    - `$MAGE_RUN_TYPE` は、`store` または `website` のいずれかです。
 
@@ -49,17 +49,17 @@ ht-degree: 0%
 
 ## 手順 1：管理での web サイト、ストア、ストアビューの作成
 
-詳しくは [ 管理での複数の web サイト、ストア、ストア表示の設定 ](ms-admin.md) を参照してください。
+詳しくは [&#x200B; 管理での複数の web サイト、ストア、ストア表示の設定 &#x200B;](ms-admin.md) を参照してください。
 
 ## 手順 2:nginx 仮想ホストの作成
 
 この手順では、ストアフロントで web サイトを読み込む方法について説明します。 Web サイトまたはストアビューを使用できます。ストアビューを使用する場合は、パラメーター値を適宜調整する必要があります。 このセクションのタスクは、`sudo` 権限を持つユーザーとして完了する必要があります。
 
-1 つの [nginx 仮想ホストファイル ](#step-2-create-nginx-virtual-hosts) を使用するだけで、nginx 設定をシンプルでクリーンに保つことができます。 複数の仮想ホストファイルを使用すると、各ストアをカスタマイズできます（例えば、`french.mysite.mg` のストアにカスタムの場所を使用する場合）。
+1 つの [nginx 仮想ホストファイル &#x200B;](#step-2-create-nginx-virtual-hosts) を使用するだけで、nginx 設定をシンプルでクリーンに保つことができます。 複数の仮想ホストファイルを使用すると、各ストアをカスタマイズできます（例えば、`french.mysite.mg` のストアにカスタムの場所を使用する場合）。
 
 **1 つの仮想ホストを作成する場合** （シンプル）:
 
-この設定は、[nginx 設定 ](../../installation/prerequisites/web-server/nginx.md) をさらに拡張したものです。
+この設定は、[nginx 設定 &#x200B;](../../installation/prerequisites/web-server/nginx.md) をさらに拡張したものです。
 
 1. テキストエディターを開き、次の内容を `/etc/nginx/sites-available/magento` という名前の新しいファイルに追加します。
 
@@ -105,7 +105,7 @@ ht-degree: 0%
    ln -s /etc/nginx/sites-available/magento magento
    ```
 
-map ディレクティブの詳細については、[map ディレクティブに関する nginx ドキュメント ](http://nginx.org/en/docs/http/ngx_http_map_module.html#map) を参照してください。
+map ディレクティブの詳細については、[map ディレクティブに関する nginx ドキュメント &#x200B;](http://nginx.org/en/docs/http/ngx_http_map_module.html#map) を参照してください。
 
 
 **複数の仮想ホストを作成するには**:
@@ -280,10 +280,10 @@ bin/magento cache:clean config full_page
 >[!INFO]
 >
 >- ホストされた環境に複数の web サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーにお問い合わせください。
->- クラウドインフラストラクチャー上にAdobe Commerceを設定するには、さらに作業が必要です。[2&rbrace; クラウドインフラストラクチャー上のCommerceガイド ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja) 複数のクラウド Web サイトまたはストアの設定 _を参照してください。_
+>- クラウドインフラストラクチャー上にAdobe Commerceを設定するには、さらに作業が必要です。[2&rbrace; クラウドインフラストラクチャー上のCommerceガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja) 複数のクラウド Web サイトまたはストアの設定 _を参照してください。_
 
 ### トラブルシューティング
 
-- フランス語およびドイツ語のサイトが 404 を返すが、管理者が読み込む場合は、[ 手順 6：ベース URL にストアコードを追加する ](ms-admin.md#step-6-add-the-store-code-to-the-base-url) を完了していることを確認します。
+- フランス語およびドイツ語のサイトが 404 を返すが、管理者が読み込む場合は、[&#x200B; 手順 6：ベース URL にストアコードを追加する &#x200B;](ms-admin.md#step-6-add-the-store-code-to-the-base-url) を完了していることを確認します。
 - すべての URL が 404 を返す場合は、web サーバーを再起動していることを確認します。
 - 管理者が正しく機能しない場合は、仮想ホストを正しく設定していることを確認してください。
