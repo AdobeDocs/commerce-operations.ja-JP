@@ -18,7 +18,7 @@ Adobeは、製品のアップグレードをシンプルで予測可能なもの
 
 >[!NOTE]
 >
->新機能、クラウドインフラストラクチャ、拡張機能リリースについて詳しくは、[Adobe Commerce サービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all) リリースドキュメントを参照してください。
+>新機能、クラウドインフラストラクチャ、拡張機能リリースについて詳しくは、[Adobe Commerce サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/release-information/release-notes-all) リリースドキュメントを参照してください。
 
 このページにリストされているスケジュールされた品質、セキュリティ、ベータ版のパッチに加えて、Adobeでは [Quality Patches Tool](versioning-policy.md#individual-patch) を通じて [&#x200B; 個別パッチ &#x200B;](../tools/quality-patches-tool/usage.md) にアクセスできます。 このツールを使用すると、インストールされているバージョンのAdobe Commerceで使用可能な個々のパッチに関する一般情報を適用、元に戻して表示できます。
 
