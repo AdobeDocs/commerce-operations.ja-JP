@@ -2,9 +2,9 @@
 title: Beta リリース
 description: Adobe Commerce ベータ版リリースとリリースへの参加方法について説明します。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: d467ada97a81d64dff358bc83acd489f69ba0677
+source-git-commit: a15422e4e135eba01931172960dfb0a6b359cde8
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様お
 
 ### Cloud Automation Patching Service （Private Beta）
 
-[Cloud Automation Patching Service](../tools/caps-tool/intro.md) は、クラウドインフラストラクチャー上の [Adobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/overview) 環境に個別のセキュリティパッチを適用するプロセスを自動化します。
+[Cloud Automation Patching Service](../tools/caps-tool/intro.md) は、クラウドインフラストラクチャー上の [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) 環境に個別のセキュリティパッチを適用するプロセスを自動化します。
 
-2025 年 10 月に、Cloud Automation パッチ適用サービスのベータ版リリースが [Site-Wide Analysis tool ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) に追加されます。 このサービスは、以下を含む合理化されたパッチ適用ワークフローで、Commerce プロジェクト管理者をサポートします。
+2025 年 10 月に、Cloud Automation パッチ適用サービスのベータ版リリースが [Site-Wide Analysis tool ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) に追加されます。 このサービスは、以下を含む合理化されたパッチ適用ワークフローで、Commerce プロジェクト管理者をサポートします。
 
 - パッチの自動インストール
 - ロールバック・リカバリ
@@ -47,37 +47,9 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様お
 
 >[!NOTE]
 >
->クラウド自動修正パッチサービスは個別のセキュリティパッチを自動的に適用するので、これを使用するには [&#x200B; 投稿者またはプロジェクト管理者の役割 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/project/user-access) が必要です。
+>クラウド自動修正パッチサービスは個別のセキュリティパッチを自動的に適用するので、これを使用するには [ 投稿者またはプロジェクト管理者の役割 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) が必要です。
 
-このベータ版に参加するには、[Cloud Automation Patching Service - Beta サインアップフォーム &#x200B;](https://forms.office.com/r/3Wfxj5nPdB) に記入して送信します。
-
-### Live Search （パブリック Beta）の検索機能の強化
-
-このベータ版では、[`productSearch` の 3 つの新しい機能が &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) クエリでサポートされています。
-
-- **レイヤー検索** – 別の検索コンテキスト内の検索 – この機能を使用すると、検索クエリを最大 2 つのレイヤーで検索できます。 例：
-
-   - **レイヤー 1 検索** – 「product_attribute_1」で「motor」を検索します。
-   - **レイヤー 2 検索** – 「product_attribute_2」の「品番 123」を検索します。 この例では、「motor」の結果に含まれる「part number 123」を検索します。
-
-  レイヤー検索は、以下に説明するように、`startsWith` 検索インデックスと `contains` 検索インデックスの両方で使用できます。
-
-- **startsWith 検索インデックス付け** - `startsWith` インデックス付けを使用して検索します。 この新機能により、次のことが可能になります。
-
-   - 属性値が特定の文字列で始まる製品の検索。
-   - 「次で終わる」検索の設定による、買い物客での属性値が特定の文字列で終わる製品の検索。 「次で終わる」検索を有効にするには、製品属性を逆に取り込む必要があり、API 呼び出しも逆の文字列にする必要があります。
-
-- **contains search indexation** -contains indexation を使用して属性を検索します。 この新機能により、次のことが可能になります。
-
-   - 大きい文字列内でのクエリの検索。 例えば、買い物客が「HAPE-123」という文字列で製品番号「PE-123」を検索するとします。
-
-     >[!NOTE]
-     >
-     >この検索タイプは、オートコンプリート検索を実行する既存の [&#x200B; フレーズ検索 &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) とは異なります。 例えば、製品属性値が「outdoor pants」の場合、フレーズ検索は「out pan」に対する応答を返しますが、「or ants」に対する応答は返しません。 ただし、「を含む」検索では、「または ants」に対する応答が返されます。
-
-これらの新しい条件により、検索クエリのフィルタリングメカニズムが強化され、検索結果を絞り込むことができます。 これらの新しい条件は、メインの検索クエリには影響しません。 ベータ版に参加するには、[commerce-storefront-services](mailto:commerce-storefront-services@adobe.com) にメールリクエストを送信します。
-
-Live Search ベータ版をインストールするには、[Live Search ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/live-search/install#install-the-live-search-beta) を参照してください。
+このベータ版に参加するには、[Cloud Automation Patching Service - Beta サインアップフォーム ](https://forms.office.com/r/3Wfxj5nPdB) に記入して送信します。
 
 ### IBM Sterling Order Management System Integration （Private Beta）
 
@@ -99,7 +71,7 @@ Adobe Commerce Foundation の各アルファ版およびベータ版のリリー
 - GraphQLの改善点
 - 一般的な品質のバグ修正
 - コミュニティの投稿
-- [Adobe Commerce サービスとの互換性をサポートするために必要な変更 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
+- [Adobe Commerce サービスとの互換性をサポートするために必要な変更 ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### 命名規則とスケジュール
 
@@ -115,18 +87,18 @@ Beta リリースパッケージには `-betaX` サフィックスがありま�
 - `2.4.7-beta1`
 - `2.4.7-beta2`
 
-今後の公開アルファ版およびベータ版のリリース日のリストについては、[&#x200B; リリーススケジュール &#x200B;](schedule.md) を参照してください。
+今後の公開アルファ版およびベータ版のリリース日のリストについては、[ リリーススケジュール ](schedule.md) を参照してください。
 
 #### リリースへのアクセス
 
 Adobe Commerceのアルファ版およびベータ版のリリースは、他のAdobe Commerceのパッチリリースと同じ方法で配布されます。つまり、`https://repo.magento.com` 上の Composer メタパッケージとして配布されます。 ソースコードは [GitHub](https://github.com/magento/magento2) で入手できます。
 
-詳細は、「[Composer インストール クイック スタート &#x200B;](../installation/composer.md)」を参照してください。
+詳細は、「[Composer インストール クイック スタート ](../installation/composer.md)」を参照してください。
 
 #### 問題レポート
 
 Adobeは、アルファ版およびベータ版のリリースに対して標準のAdobe サポートサービスを提供しません。
 
-アルファ版およびベータ版リリースに関連するフィードバックを送信するには、[GitHub](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) の [&#x200B; 通常のイシューレポートフロー &#x200B;](https://github.com/magento/magento2) に従います。
+アルファ版およびベータ版リリースに関連するフィードバックを送信するには、[GitHub](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) の [ 通常のイシューレポートフロー ](https://github.com/magento/magento2) に従います。
 
 Adobeは、最新のアルファ版またはベータ版のリリースに対して報告されたすべての重要な問題を監視し、GA リリース日より前に解決されるように優先順位を付けます。
