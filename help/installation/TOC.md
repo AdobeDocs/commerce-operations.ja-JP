@@ -15,7 +15,7 @@ ht-degree: 3%
 - [概要](overview.md)
 - [必要システム構成](system-requirements.md)
 - 前提条件 {#prerequisites}
-   - [ 概要 ](prerequisites/overview.md)
+   - [&#x200B; 概要 &#x200B;](prerequisites/overview.md)
    - ファイルシステム {#file-system}
       - [概要](prerequisites/file-system/overview.md)
       - [権限の設定](prerequisites/file-system/configure-permissions.md)
@@ -69,4 +69,4 @@ ht-degree: 3%
    - [Commerceをアンインストールまたは再インストール](tutorials/uninstall.md)
    - [テーマのアンインストール](tutorials/themes.md)
    - [データベーススキーマのアップグレード](tutorials/database-upgrade.md)
-- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [&#x200B; 運用ガイドに戻る &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

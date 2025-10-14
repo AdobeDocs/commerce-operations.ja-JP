@@ -67,7 +67,7 @@ ht-degree: 0%
 
 **発生した場合：** 復元操作中
 
-**原因：**[!DNL CAPS] で適用されていないパッチを元に戻そうとしています
+**原因：**&#x200B;[!DNL CAPS] で適用されていないパッチを元に戻そうとしています
 
 **解決策：** パッチを最初に適用したときと同じ方法を使用するか、サポートに手動で問い合わせてください
 
@@ -218,8 +218,8 @@ ht-degree: 0%
 
 ### 関連トピック
 
-* [Adobe Commerce Cloud ドキュメント ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview.html)
-* [Adobe Commerce インストールガイド ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview.html)
+* [Adobe Commerce Cloud ドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview.html)
+* [Adobe Commerce インストールガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview.html)
 * [キャップの概要](intro.md)
 * [アクセス方法](access.md)
 * [ワークフロー](workflow.md)

@@ -22,7 +22,7 @@ Adobe Commerceをインストールする前に、メッセージキューシス
 
 >[!NOTE]
 >
->メッセージキューの処理には、MySQL または [!DNL RabbitMQ] を使用できます。 メッセージキューシステムの設定について詳しくは、[ メッセージキューの概要 ](https://developer.adobe.com/commerce/php/development/components/message-queues/) を参照してください。 Adobe Commerceで Bulk API を使用している場合、メッセージキューのシステム設定はデフォルトで [!DNL RabbitMQ] をメッセージブローカーとして使用します。 詳しくは、[ メッセージキューコンシューマーの開始 ](../../configuration/cli/start-message-queues.md) を参照してください。
+>メッセージキューの処理には、MySQL または [!DNL RabbitMQ] を使用できます。 メッセージキューシステムの設定について詳しくは、[&#x200B; メッセージキューの概要 &#x200B;](https://developer.adobe.com/commerce/php/development/components/message-queues/) を参照してください。 Adobe Commerceで Bulk API を使用している場合、メッセージキューのシステム設定はデフォルトで [!DNL RabbitMQ] をメッセージブローカーとして使用します。 詳しくは、[&#x200B; メッセージキューコンシューマーの開始 &#x200B;](../../configuration/cli/start-message-queues.md) を参照してください。
 
 ## Ubuntu への [!DNL RabbitMQ] のインストール
 
@@ -39,7 +39,7 @@ sudo apt install -y rabbitmq-server
 1. [rabbitmq-server](https://www.rabbitmq.com/download.html) から.deb パッケージをダウンロードします。
 1. `dpkg` を含むパッケージをインストールします。
 
-詳しくは、[Debian/Ubuntu へのインストール ](https://www.rabbitmq.com/install-debian.html) を参照してください。
+詳しくは、[Debian/Ubuntu へのインストール &#x200B;](https://www.rabbitmq.com/install-debian.html) を参照してください。
 
 ## CentOS への [!DNL RabbitMQ] のインストール
 
@@ -47,7 +47,7 @@ sudo apt install -y rabbitmq-server
 
 [!DNL RabbitMQ] は、Erlang プログラミング言語を使用して記述されています。この言語は、[!DNL RabbitMQ] と同じシステムにインストールする必要があります。
 
-詳しくは、[ 手動インストール ](https://www.erlang-solutions.com/downloads/) を参照してください。
+詳しくは、[&#x200B; 手動インストール &#x200B;](https://www.erlang-solutions.com/downloads/) を参照してください。
 
 正しいバージョンをインストールするには [[!DNL RabbitMQ]](https://www.rabbitmq.com/which-erlang.html)/Erlang のバージョンマトリックスを参照してください。
 
@@ -57,7 +57,7 @@ sudo apt install -y rabbitmq-server
 
 サポートされている最新のバージョンを取得するには、[!DNL RabbitMQ] のインストール ページを参照してください。 Adobe Commerce 2.3 および 2.4 は、[!DNL RabbitMQ] 3.8.x をサポートしています。
 
-詳しくは、[RPM ベースの Linux へのインストール ](https://www.rabbitmq.com/install-rpm.html) を参照してください。
+詳しくは、[RPM ベースの Linux へのインストール &#x200B;](https://www.rabbitmq.com/install-rpm.html) を参照してください。
 
 ## [!DNL RabbitMQ] の設定
 
@@ -140,4 +140,4 @@ SSL のサポートを設定するには、`ssl` ファイルの `ssl_options` �
 
 ## メッセージキューコンシューマーの開始
 
-Adobe Commerceと [!DNL RabbitMQ] を接続したら、メッセージキューコンシューマーを起動する必要があります。 詳しくは、[ メッセージキューの設定 ](../../configuration/cli/start-message-queues.md) を参照してください。
+Adobe Commerceと [!DNL RabbitMQ] を接続したら、メッセージキューコンシューマーを起動する必要があります。 詳しくは、[&#x200B; メッセージキューの設定 &#x200B;](../../configuration/cli/start-message-queues.md) を参照してください。

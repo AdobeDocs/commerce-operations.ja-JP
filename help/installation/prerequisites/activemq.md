@@ -25,11 +25,11 @@ Adobe Commerceをインストールする前に、メッセージキューシス
 
 >[!NOTE]
 >
->メッセージキューの処理には、MySQL、ActiveMQ、または [!DNL RabbitMQ] を使用できます。 メッセージキューシステムの設定について詳しくは、[ メッセージキューの概要 ](https://developer.adobe.com/commerce/php/development/components/message-queues/) を参照してください。 Adobe Commerceで Bulk API を使用している場合、メッセージキューのシステム設定はデフォルトで [!DNL RabbitMQ] をメッセージブローカーとして使用します。 詳しくは、[ メッセージキューコンシューマーの開始 ](../../configuration/cli/start-message-queues.md) を参照してください。
+>メッセージキューの処理には、MySQL、ActiveMQ、または [!DNL RabbitMQ] を使用できます。 メッセージキューシステムの設定について詳しくは、[&#x200B; メッセージキューの概要 &#x200B;](https://developer.adobe.com/commerce/php/development/components/message-queues/) を参照してください。 Adobe Commerceで Bulk API を使用している場合、メッセージキューのシステム設定はデフォルトで [!DNL RabbitMQ] をメッセージブローカーとして使用します。 詳しくは、[&#x200B; メッセージキューコンシューマーの開始 &#x200B;](../../configuration/cli/start-message-queues.md) を参照してください。
 
 >[!TIP]
 >
->インストール前に、常に [Apache ActiveMQ Artemis ダウンロードページ ](https://activemq.apache.org/components/artemis/download/) で最新の安定したバージョンを確認してください。 このドキュメントの例では、2025 年 9 月現在の最新の安定リリースであるバージョン 2.42.0 を使用しています。
+>インストール前に、常に [Apache ActiveMQ Artemis ダウンロードページ &#x200B;](https://activemq.apache.org/components/artemis/download/) で最新の安定したバージョンを確認してください。 このドキュメントの例では、2025 年 9 月現在の最新の安定リリースであるバージョン 2.42.0 を使用しています。
 
 
 ## Apache ActiveMQ Artemis のインストール
@@ -44,7 +44,7 @@ Docker がシステムにインストールされ、実行されていること�
 
 >[!TIP]
 >
->公式の ActiveMQ Artemis Docker イメージについて詳しくは、[Apache ActiveMQ Artemis Docker Hub ページ ](https://hub.docker.com/r/apache/activemq-artemis) を参照してください。
+>公式の ActiveMQ Artemis Docker イメージについて詳しくは、[Apache ActiveMQ Artemis Docker Hub ページ &#x200B;](https://hub.docker.com/r/apache/activemq-artemis) を参照してください。
 
 #### インストール手順
 
@@ -112,7 +112,7 @@ Java 17 以降がインストールされていることを確認します（Act
 
 ### インストール手順
 
-1. [Apache ActiveMQ Artemis web サイト ](https://activemq.apache.org/components/artemis/download/) から最新バージョンをダウンロードしてインストールします。 2025 年 9 月現在、最新の安定バージョンは 2.42.0 です。
+1. [Apache ActiveMQ Artemis web サイト &#x200B;](https://activemq.apache.org/components/artemis/download/) から最新バージョンをダウンロードしてインストールします。 2025 年 9 月現在、最新の安定バージョンは 2.42.0 です。
 
    ```bash
    sudo mkdir -p /opt/artemis
@@ -351,5 +351,5 @@ echo -e "CONNECT\nhost:localhost\n\n\x00" | telnet localhost 61613
 
 ## メッセージキューコンシューマーの開始
 
-Adobe Commerceと ActiveMQ Artemis を接続したら、メッセージキューコンシューマーを起動する必要があります。 詳しくは、[ メッセージキューの設定 ](../../configuration/cli/start-message-queues.md) を参照してください。
+Adobe Commerceと ActiveMQ Artemis を接続したら、メッセージキューコンシューマーを起動する必要があります。 詳しくは、[&#x200B; メッセージキューの設定 &#x200B;](../../configuration/cli/start-message-queues.md) を参照してください。
 

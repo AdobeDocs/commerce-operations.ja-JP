@@ -35,7 +35,7 @@ Cron ジョブは、コンシューマーを再起動するデフォルトのメ
 >
 >これは、グループ : コンシューマーの管理ストア /設定/設定/詳細/ システム / Cron 設定オプションで設定できます。
 >
->Commerceでの [ の使用について詳しくは、](../cli/configure-cron-jobs.md)Cron の設定と実行 `cron` を参照してください。
+>Commerceでの [&#x200B; の使用について詳しくは、](../cli/configure-cron-jobs.md)Cron の設定と実行 `cron` を参照してください。
 
 [Supervisor](https://supervisord.readthedocs.io/en/latest/) などのプロセスマネージャーを使用して、プロセスのステータスを監視することもできます。 マネージャーは、コマンドラインを使用して、必要に応じてプロセスを再起動できます。
 
@@ -78,7 +78,7 @@ Cron ジョブは、コンシューマーを再起動するデフォルトのメ
 
   >[!INFO]
   >
-  >MySQL 操作キューで複数のコンシューマーを実行することはお勧めしません。 AMQP （RabbitMQ）または STOMP （ActiveMQ Artemis）への切り替えについて詳しくは、[MySQL から外部ブローカーへのメッセージキューの変更 ](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-external-brokers) を参照してください。
+  >MySQL 操作キューで複数のコンシューマーを実行することはお勧めしません。 AMQP （RabbitMQ）または STOMP （ActiveMQ Artemis）への切り替えについて詳しくは、[MySQL から外部ブローカーへのメッセージキューの変更 &#x200B;](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-external-brokers) を参照してください。
 
   >[!INFO]
   >
@@ -88,4 +88,4 @@ Cron ジョブは、コンシューマーを再起動するデフォルトのメ
   >
   >ActiveMQ Artemis （STOMP）は、Adobe Commerce 2.4.6 以降のバージョンで導入されました。
 
-[ メッセージキューコンシューマーの開始 ](../cli/start-message-queues.md) を参照してください。
+[&#x200B; メッセージキューコンシューマーの開始 &#x200B;](../cli/start-message-queues.md) を参照してください。

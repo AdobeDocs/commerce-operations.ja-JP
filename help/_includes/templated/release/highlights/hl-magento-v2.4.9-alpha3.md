@@ -47,7 +47,7 @@ _AC-14558_
 
 chart.js 依存関係が最新バージョン 4.5.0 にアップグレードされます
 
-_AC-15133 - [GitHub コードの投稿 ](https://github.com/magento/magento2/commit/657f983e)_
+_AC-15133 - [GitHub コードの投稿 &#x200B;](https://github.com/magento/magento2/commit/657f983e)_
 
 #### Laminas MVC からの移行
 

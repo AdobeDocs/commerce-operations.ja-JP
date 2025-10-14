@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->失った？ 手伝ってあげようか？ [ クイックスタートインストール ](composer.md) または [ コントリビューターインストール ](https://developer.adobe.com/commerce/contributor/guides/install/) ガイドをお試しください。
+>失った？ 手伝ってあげようか？ [&#x200B; クイックスタートインストール &#x200B;](composer.md) または [&#x200B; コントリビューターインストール &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/) ガイドをお試しください。
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Adobe Commerceには、インストールおよび設定タスク用の単一の
 * CLI は拡張可能なため、サードパーティ開発者がプラグインすることができます。 これには、ユーザーの学習曲線を排除するという追加のメリットがあります。
 * 無効なモジュールのコマンドは表示されません。
 
-このトピックでは、CLI を使用したAdobe Commerce ソフトウェアのインストールについて説明します。 設定については、[ 設定ガイド ](../configuration/overview.md) を参照してください。
+このトピックでは、CLI を使用したAdobe Commerce ソフトウェアのインストールについて説明します。 設定については、[&#x200B; 設定ガイド &#x200B;](../configuration/overview.md) を参照してください。
 
 インストーラーは、必要に応じて複数回実行できるので、次のことが可能です。
 
@@ -53,15 +53,15 @@ Adobe Commerceには、インストールおよび設定タスク用の単一の
 
 開始する前に、次の手順を実行します。
 
-* お使いのシステムが [ システム要件 ](system-requirements.md) で説明されている要件を満たしていることを確認します。
+* お使いのシステムが [&#x200B; システム要件 &#x200B;](system-requirements.md) で説明されている要件を満たしていることを確認します。
 
-* すべての [ 前提条件 ](prerequisites/overview.md) タスクを完了します。
+* すべての [&#x200B; 前提条件 &#x200B;](prerequisites/overview.md) タスクを完了します。
 
-* 最初のインストール手順を完了します。 [ インストールまたはアップグレードのパス ](overview.md) を参照してください。
+* 最初のインストール手順を完了します。 [&#x200B; インストールまたはアップグレードのパス &#x200B;](overview.md) を参照してください。
 
-* アプリケーションサーバーにログインしたら、[ ファイルシステムの所有者に切り替えます ](prerequisites/file-system/overview.md)。
+* アプリケーションサーバーにログインしたら、[&#x200B; ファイルシステムの所有者に切り替えます &#x200B;](prerequisites/file-system/overview.md)。
 
-* [ インストールのクイックスタート ](composer.md) の概要を確認します。
+* [&#x200B; インストールのクイックスタート &#x200B;](composer.md) の概要を確認します。
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Adobe Commerceには、インストールおよび設定タスク用の単一の
 >
 >デフォルトでは、同じデータベースインスタンスにソフトウェアをインストールしても、インストーラーによってデータベースが上書きされることはありません。 この動作を変更するには、オプションの `cleanup-database` パラメーターを使用できます。
 
-[ 更新、再インストール、アンインストール ](tutorials/uninstall.md) も参照してください。
+[&#x200B; 更新、再インストール、アンインストール &#x200B;](tutorials/uninstall.md) も参照してください。
 
 ### 安全なインストール
 
@@ -97,7 +97,7 @@ Adobe Commerceには、インストールおよび設定タスク用の単一の
 
 >[!NOTE]
 >
->これらのコマンドを実行したときにエラーが表示される場合は、[ インストールの依存関係の更新 ](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/) の説明に従って、インストールの依存関係を更新したことを確認してください。
+>これらのコマンドを実行したときにエラーが表示される場合は、[&#x200B; インストールの依存関係の更新 &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/) の説明に従って、インストールの依存関係を更新したことを確認してください。
 
 ## コマンドラインからのインストール
 
@@ -107,7 +107,7 @@ Adobe Commerceには、インストールおよび設定タスク用の単一の
 bin/magento setup:install --<option>=<value> ... --<option>=<value>
 ```
 
-次の表に、インストールオプションの名前と値を示します。 インストールコマンドの例については、[localhost のインストールのサンプル ](#sample-localhost-installations) を参照してください。
+次の表に、インストールオプションの名前と値を示します。 インストールコマンドの例については、[localhost のインストールのサンプル &#x200B;](#sample-localhost-installations) を参照してください。
 
 >[!NOTE]
 >
@@ -117,9 +117,9 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 次のオプションでは、管理者ユーザーのユーザー情報と資格情報を指定します。
 
-管理者ユーザーは、インストール中またはインストール後に作成できます。 インストール時にユーザーを作成する場合は、すべての管理者資格情報の変数が必要です。 [ サンプルローカルホストのインストール ](#sample-localhost-installations) を参照してください。
+管理者ユーザーは、インストール中またはインストール後に作成できます。 インストール時にユーザーを作成する場合は、すべての管理者資格情報の変数が必要です。 [&#x200B; サンプルローカルホストのインストール &#x200B;](#sample-localhost-installations) を参照してください。
 
-次の表に、使用可能なすべてのインストールパラメーターではなく、多くのパラメーターを示します。 完全な一覧については、[ コマンド ライン ツール リファレンス ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises) を参照してください。
+次の表に、使用可能なすべてのインストールパラメーターではなく、多くのパラメーターを示します。 完全な一覧については、[&#x200B; コマンド ライン ツール リファレンス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises) を参照してください。
 
 | 名前 | 値 | 必須？ |
 |--- |--- |--- |
@@ -135,7 +135,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 |--- |--- |--- |
 | `--base-url` | 次のいずれかの形式で管理者およびストアフロントにアクセスするために使用するベース URL:<br><br>`http[s]://<host or ip>/<your install dir>/`。<br><br>**注意：** スキーム（http://またはhttps://）と末尾のスラッシュは両方とも必須です。<br><br>`<your install dir>` は、Adobe Commerce ソフトウェアをインストールするドキュメントルートの相対パスです。 Web サーバーと仮想ホストの設定方法に応じて、パスは magento2 になるか、空になります。<br><br>Adobe Commerceまたは MagenAdobe Commerceuse にアクセスするには、`http://127.0.0.1/<your install dir>/` または `http://127.0.0.1/<your install dir>/` を使用します。<br><br> – 仮想ホスト設定または Docker などの仮想化環境によって定義されたベース URL を表す `{{base_url}}`。 例えば、ホスト名が `magento.example.com` の仮想ホストを設定した場合、`--base-url={{base_url}}` を使用してソフトウェアをインストールし、`http://magento.example.com/admin` のような URL を使用して Admin にアクセスできます。 | はい |
 | `--backend-frontname` | 管理者にアクセスするための URI （Uniform Resource Identifier）。 このパラメーターを省略すると、アプリケーションは次のパターンのランダムな URI を生成できます。<code>admin_jkhgdfq</code>。<br><br> セキュリティ上の理由から、ランダムな URI を使用することをお勧めします。 ランダム URI は、ハッカーや悪意のあるソフトウェアが悪用しにくくなります。<br><br>URI はインストールの最後に表示されます。 `bin/magento info:adminuri` コマンドを使用すれば、後でいつでも表示することができます。<br><br> 値を入力する場合は、admin、backend などの一般的な単語を使用しないことをお勧めします。 管理 URI には、英数字とアンダースコア文字（`_`）のみを含めることができます。 | 不可 |
-| `--db-host` | 次のいずれかを使用します。<br><br>- データベースサーバーの完全修飾ホスト名または IP アドレス。<br><br>- `localhost` （デフォルト）またはデータベースサーバーが web サーバーと同じホスト上にある場合は `127.0.0.1`。localhost は、MySQL クライアントライブラリが UNIX ソケットを使用してデータベースに接続することを意味します。 `127.0.0.1` は、クライアントライブラリで TCP プロトコルを使用します。 ソケットの詳細については、[PHP PDO_MYSQL のドキュメント ](https://www.php.net/manual/en/ref.pdo-mysql.php) を参照してください。<br><br>**注意：** オプションで、www.example.comのようなホスト名でデータベースサーバーポートを指定できます :9000 | はい |
+| `--db-host` | 次のいずれかを使用します。<br><br>- データベースサーバーの完全修飾ホスト名または IP アドレス。<br><br>- `localhost` （デフォルト）またはデータベースサーバーが web サーバーと同じホスト上にある場合は `127.0.0.1`。localhost は、MySQL クライアントライブラリが UNIX ソケットを使用してデータベースに接続することを意味します。 `127.0.0.1` は、クライアントライブラリで TCP プロトコルを使用します。 ソケットの詳細については、[PHP PDO_MYSQL のドキュメント &#x200B;](https://www.php.net/manual/en/ref.pdo-mysql.php) を参照してください。<br><br>**注意：** オプションで、www.example.comのようなホスト名でデータベースサーバーポートを指定できます :9000 | はい |
 | `--db-name` | データベーステーブルをインストールするデータベースインスタンスの名前。<br><br> デフォルトは `magento2` です。 | はい |
 | `--db-user` | データベース・インスタンス所有者のユーザー名。<br><br> デフォルトは `root` です。 | はい |
 | `--db-password` | データベースインスタンス所有者のパスワード。 | はい |
@@ -220,7 +220,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 >[!NOTE]
 >
->Adobe Commerceのインストール後にモジュールを有効または無効にする方法については、[ モジュールの有効/無効 ](tutorials/manage-modules.md) を参照してください。
+>Adobe Commerceのインストール後にモジュールを有効または無効にする方法については、[&#x200B; モジュールの有効/無効 &#x200B;](tutorials/manage-modules.md) を参照してください。
 
 **機密データ：**
 
@@ -298,7 +298,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 ```
 
 インストール後、`admin:user:create` のコマンドを使用して管理者ユーザーを作成できます。
-[ 管理者の作成または編集 ](tutorials/admin.md#create-or-edit-an-administrator)
+[&#x200B; 管理者の作成または編集 &#x200B;](tutorials/admin.md#create-or-edit-an-administrator)
 
 #### 例 3 – 追加オプションを使用したインストール
 

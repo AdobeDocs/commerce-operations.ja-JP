@@ -28,7 +28,7 @@ Adobe Commerce 2.4.4-p16 は、2.4.4 の以前のリリースで特定された�
 
 >[!NOTE]
 >
->2.4.4 用の拡張サポートセキュリティパッチは、Adobe Commerceのお客様のみが利用できます。 これらのパッチは、Magento Open Source コードベースでは使用できません。 [ 拡張サポート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support) を参照してください。
+>2.4.4 用の拡張サポートセキュリティパッチは、Adobe Commerceのお客様のみが利用できます。 これらのパッチは、Magento Open Source コードベースでは使用できません。 [&#x200B; 拡張サポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support) を参照してください。
 
 ## 2.4.4-p15
 
@@ -182,7 +182,7 @@ Adobe Commerce 2.4.4-p5 セキュリティリリースは、以前のリリー�
 
 ### CVE-2022-31160 のホットフィックスを適用する
 
-`jQuery-UI` library バージョン 1.13.1 には、Adobe CommerceおよびMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceとMagento Open Source 2.4.4、2.4.5、2.4.6 の依存関係です。影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事の 2.4.4、2.4.5、2.4.6 リリースの [jQuery UI のセキュリティ脆弱性 CVE-2022-31160 の修正で指定されたパッチを適用する必要 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) あります。
+`jQuery-UI` library バージョン 1.13.1 には、Adobe CommerceおよびMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceとMagento Open Source 2.4.4、2.4.5、2.4.6 の依存関係です。影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事の 2.4.4、2.4.5、2.4.6 リリースの [jQuery UI のセキュリティ脆弱性 CVE-2022-31160 の修正で指定されたパッチを適用する必要 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) あります。
 
 ## 2.4.4-p4
 
@@ -192,7 +192,7 @@ Adobe Commerce 2.4.4-p4 セキュリティリリースは、以前のリリー�
 
 ### CVE-2022-31160 のホットフィックスを適用する
 
-`jQuery-UI` library バージョン 1.13.1 には、Adobe CommerceおよびMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceとMagento Open Source 2.4.4、2.4.5、2.4.6 の依存関係です。影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事の 2.4.4、2.4.5、2.4.6 リリースの [jQuery UI のセキュリティ脆弱性 CVE-2022-31160 の修正で指定されたパッチを適用する必要 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) あります。
+`jQuery-UI` library バージョン 1.13.1 には、Adobe CommerceおよびMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceとMagento Open Source 2.4.4、2.4.5、2.4.6 の依存関係です。影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事の 2.4.4、2.4.5、2.4.6 リリースの [jQuery UI のセキュリティ脆弱性 CVE-2022-31160 の修正で指定されたパッチを適用する必要 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) あります。
 
 ### ハイライト
 
@@ -222,17 +222,17 @@ Adobe Commerce 2.4.4-p2 セキュリティリリースは、以前のリリー�
 
 ### AC-3022.patch を適用して、引き続き配送業者として DHL を提供します
 
-DHL ではスキーマバージョン 6.2 を導入しており、近い将来、スキーマバージョン 6.0 を廃止する予定です。 DHL 統合をサポートするAdobe Commerce 2.4.4 以前のバージョンは、バージョン 6.0 のみをサポートしています。これらのリリースをデプロイするマーチャントは、DHL を配送業者として引き続き提供するために、できるだけ早い時期に `AC-3022.patch` を適用する必要があります。 パッチのダウンロードとインストールについては、ナレッジベースの記事 [DHL を引き続き配送業者として提供するためのパッチを適用する ](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier?_ga=2.201689433.994140970.1661546561-1218319047.1534347481) を参照してください。
+DHL ではスキーマバージョン 6.2 を導入しており、近い将来、スキーマバージョン 6.0 を廃止する予定です。 DHL 統合をサポートするAdobe Commerce 2.4.4 以前のバージョンは、バージョン 6.0 のみをサポートしています。これらのリリースをデプロイするマーチャントは、DHL を配送業者として引き続き提供するために、できるだけ早い時期に `AC-3022.patch` を適用する必要があります。 パッチのダウンロードとインストールについては、ナレッジベースの記事 [DHL を引き続き配送業者として提供するためのパッチを適用する &#x200B;](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier?_ga=2.201689433.994140970.1661546561-1218319047.1534347481) を参照してください。
 
 ## 2.4.4-p1
 
 Adobe Commerce 2.4.4-p1 セキュリティリリースは、以前のリリースで特定された脆弱性の修正を提供します。 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるためのセキュリティの機能強化も含まれています。
 
-セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 ](https://helpx.adobe.com/security/products/magento/apsb22-38.html).t を参照してください
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 &#x200B;](https://helpx.adobe.com/security/products/magento/apsb22-38.html).t を参照してください
 
 ### 配送業者として DHL を引き続き提供するには、`AC-3022.patch` を適用してください
 
-DHL ではスキーマバージョン 6.2 を導入しており、近い将来、スキーマバージョン 6.0 を廃止する予定です。 DHL 統合をサポートするAdobe Commerce 2.4.4 以前のバージョンは、バージョン 6.0 のみをサポートしています。これらのリリースをデプロイするマーチャントは、DHL を配送業者として引き続き提供するために、できるだけ早い時期に `AC-3022.patch` を適用する必要があります。 パッチのダウンロードとインストールについては、ナレッジベースの記事 [DHL を引き続き配送業者として提供するためのパッチを適用する ](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) を参照してください。
+DHL ではスキーマバージョン 6.2 を導入しており、近い将来、スキーマバージョン 6.0 を廃止する予定です。 DHL 統合をサポートするAdobe Commerce 2.4.4 以前のバージョンは、バージョン 6.0 のみをサポートしています。これらのリリースをデプロイするマーチャントは、DHL を配送業者として引き続き提供するために、できるだけ早い時期に `AC-3022.patch` を適用する必要があります。 パッチのダウンロードとインストールについては、ナレッジベースの記事 [DHL を引き続き配送業者として提供するためのパッチを適用する &#x200B;](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) を参照してください。
 
 ### ハイライト
 
@@ -245,6 +245,6 @@ DHL ではスキーマバージョン 6.2 を導入しており、近い将来�
 
 **問題**:2.4.4-p1 パッケージ（`[2022-06-14T16:58:23.694Z] PHP Fatal error:  Declaration of Magento\TestFramework\ErrorLog\Logger::addRecord(int $level, string $message, array $context = []): bool must be compatible with Monolog\Logger::addRecord(int $level, string $message, array $context = [], ?Monolog\DateTimeImmutable $datetime = null): bool in /var/www/html/dev/tests/integration/framework/Magento/TestFramework/ErrorLog/Logger.php on line 69`）で web API および統合テストを実行すると、次のエラーが表示されます。 **回避策**:`require monolog/monolog:2.6.0` コマンドを実行して、以前のバージョンの Monolog をインストールします。<!-- AC-3651-->
 
-**問題**:Adobe Commerce 2.4.4 からAdobe Commerce 2.4.4-p1 にアップグレードする際に、マーチャントがパッケージのバージョンのダウングレードに関する通知に気付く場合があります。 これらのメッセージは無視できます。 パッケージバージョンの不一致は、パッケージ生成時の異常値が原因で発生します。 製品の機能に影響はありません。 影響を受けるシナリオと回避策の説明については、ナレッジベースの記事 [2.4.4 から 2.4.4-p1 へのアップグレード後にダウングレードされたパッケージ ](https://support.magento.com/hc/en-us/articles/8214752983949) を参照してください。
+**問題**:Adobe Commerce 2.4.4 からAdobe Commerce 2.4.4-p1 にアップグレードする際に、マーチャントがパッケージのバージョンのダウングレードに関する通知に気付く場合があります。 これらのメッセージは無視できます。 パッケージバージョンの不一致は、パッケージ生成時の異常値が原因で発生します。 製品の機能に影響はありません。 影響を受けるシナリオと回避策の説明については、ナレッジベースの記事 [2.4.4 から 2.4.4-p1 へのアップグレード後にダウングレードされたパッケージ &#x200B;](https://support.magento.com/hc/en-us/articles/8214752983949) を参照してください。
 
 <!-- Last updated from includes: 2025-10-06 13:12:34 -->

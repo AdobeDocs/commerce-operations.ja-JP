@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server を使用すると、Adobe CommerceはCommerce GraphQL API リクエストの状態を維持できます。 Swoole 拡張機能に基づいて構築されたGraphQL Application Server は、リクエスト処理を処理するワーカースレッドを使用したプロセスとして動作します。 GraphQL Application Server は、GraphQL API リクエストの間でブートストラップされたアプリケーションの状態を保持することで、リクエスト処理と製品全体のパフォーマンスを向上させます。 API リクエストが大幅に効率的になります。
 
-GraphQL Application Server は、Adobe Commerceでのみ使用できます。 Magento Open Sourceでは使用できません。 Cloud Pro プロジェクトの場合、GraphQL Application Server を有効にするには、[Adobe Commerce サポートを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) チケットが必要です。
+GraphQL Application Server は、Adobe Commerceでのみ使用できます。 Magento Open Sourceでは使用できません。 Cloud Pro プロジェクトの場合、GraphQL Application Server を有効にするには、[Adobe Commerce サポートを送信 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) チケットが必要です。
 
 >[!NOTE]
 >
->現在、GraphQL Application Server は [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/) と互換性がありません。 現在、[!DNL AWS S3] for [ リモートストレージ ](../configuration/remote-storage/cloud-support.md) を使用しているクラウドインフラストラクチャー上のAdobe Commerceのお客様は、GraphQL Application Server を使用できません。
+>現在、GraphQL Application Server は [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/) と互換性がありません。 現在、[!DNL AWS S3] for [&#x200B; リモートストレージ &#x200B;](../configuration/remote-storage/cloud-support.md) を使用しているクラウドインフラストラクチャー上のAdobe Commerceのお客様は、GraphQL Application Server を使用できません。
 
 ## アーキテクチャ
 
@@ -43,7 +43,7 @@ GraphQL Application Server を実行するには、以下が必要です。
 
 ### クラウドプロジェクト
 
-クラウドインフラストラクチャプロジェクト上のAdobe Commerceには、デフォルトで Swoole 拡張機能が含まれています。 [ ファイルの ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) プロパティで `runtime` 有効 `.magento.app.yaml` することができます。 例：
+クラウドインフラストラクチャプロジェクト上のAdobe Commerceには、デフォルトで Swoole 拡張機能が含まれています。 [&#x200B; ファイルの &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) プロパティで `runtime` 有効 `.magento.app.yaml` することができます。 例：
 
 ```yaml
 runtime:
@@ -53,7 +53,7 @@ runtime:
 
 ### オンプレミス プロジェクト
 
-オンプレミスのプロジェクトでは、Swoole PHP 拡張機能を手動で [ インストールして設定 ](#install-and-configure-swoole) する必要があります。
+オンプレミスのプロジェクトでは、Swoole PHP 拡張機能を手動で [&#x200B; インストールして設定 &#x200B;](#install-and-configure-swoole) する必要があります。
 
 ## クラウドインフラストラクチャでの有効化とデプロイ
 
@@ -67,8 +67,8 @@ runtime:
 
 Pro プロジェクトで Application Server 機能を有効にした後、GraphQL Application Server をデプロイする前に次の手順を実行します。
 
-1. [2.4.7-appserver ブランチ ](https://github.com/magento/magento-cloud/tree/2.4.7-appserver) のクラウドテンプレートを使用して、クラウドインフラストラクチャにAdobe Commerceをデプロイします。
-1. すべてのCommerceのカスタマイズと拡張機能がGraphQL Application Server と [ 互換性がある ](https://developer.adobe.com/commerce/php/development/components/app-server/) ことを確認します。
+1. [2.4.7-appserver ブランチ &#x200B;](https://github.com/magento/magento-cloud/tree/2.4.7-appserver) のクラウドテンプレートを使用して、クラウドインフラストラクチャにAdobe Commerceをデプロイします。
+1. すべてのCommerceのカスタマイズと拡張機能がGraphQL Application Server と [&#x200B; 互換性がある &#x200B;](https://developer.adobe.com/commerce/php/development/components/app-server/) ことを確認します。
 1. Commerce Cloud プロジェクトのクローンを作成します。
 1. 必要に応じて、「application-server/nginx.conf.sample」ファイルの設定を調整します。
 1. ファイル内のアクティブな「web」セクション `project_root/.magento.app.yaml` 完全にコメントアウトします。
@@ -113,7 +113,7 @@ git push
 
 スタータープロジェクトにGraphQL アプリケーションサーバーをデプロイする前に、次の手順を実行します。
 
-1. [2.4.7-appserver ブランチ ](https://github.com/magento/magento-cloud/tree/2.4.7-appserver) のクラウドテンプレートを使用して、クラウドインフラストラクチャにAdobe Commerceをデプロイします。
+1. [2.4.7-appserver ブランチ &#x200B;](https://github.com/magento/magento-cloud/tree/2.4.7-appserver) のクラウドテンプレートを使用して、クラウドインフラストラクチャにAdobe Commerceをデプロイします。
 1. すべてのCommerceのカスタマイズと拡張機能に、GraphQL Application Server との互換性があることを確認します。
 1. `CRYPT_KEY` 環境変数がインスタンスに対して設定されていることを確認します。 この変数のステータスは、Cloud Console で確認できます。
 1. Commerce Cloud プロジェクトのクローンを作成します。
@@ -273,7 +273,7 @@ git push
 
 >[!NOTE]
 >
->ルート `.magento.app.yaml` ファイル内のすべてのカスタム設定が、`application-server/.magento/.magento.app.yaml` ファイルに適切に移行されていることを確認します。 `application-server/.magento/.magento.app.yaml` ファイルがプロジェクトに追加されたら、ルート `.magento.app.yaml` ファイルに加えてそのファイルを保持する必要があります。 例えば、[RabbitMQ サービスを設定する ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) または [web プロパティを管理する ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) 必要がある場合、同じ設定を `application-server/.magento/.magento.app.yaml` にも追加する必要があります。
+>ルート `.magento.app.yaml` ファイル内のすべてのカスタム設定が、`application-server/.magento/.magento.app.yaml` ファイルに適切に移行されていることを確認します。 `application-server/.magento/.magento.app.yaml` ファイルがプロジェクトに追加されたら、ルート `.magento.app.yaml` ファイルに加えてそのファイルを保持する必要があります。 例えば、[RabbitMQ サービスを設定する &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) または [web プロパティを管理する &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) 必要がある場合、同じ設定を `application-server/.magento/.magento.app.yaml` にも追加する必要があります。
 
 ### クラウドプロジェクトでのイネーブルメントの検証
 
@@ -322,7 +322,7 @@ GraphQL Application Server をローカルで実行するには、Swoole 拡張�
 
 #### Nginx の設定
 
-Commerceの具体的なデプロイメントによって、Nginx の設定方法が決まります。 一般に、Nginx 設定ファイルはデフォルトで `nginx.conf` という名前で、`/usr/local/nginx/conf`、`/etc/nginx`、`/usr/local/etc/nginx` のいずれかのディレクトリに配置されます。 Nginx の設定の詳細については、_[初心者向けガイド ](https://nginx.org/en/docs/beginners_guide.html)_ を参照してください。
+Commerceの具体的なデプロイメントによって、Nginx の設定方法が決まります。 一般に、Nginx 設定ファイルはデフォルトで `nginx.conf` という名前で、`/usr/local/nginx/conf`、`/etc/nginx`、`/usr/local/etc/nginx` のいずれかのディレクトリに配置されます。 Nginx の設定の詳細については、_[初心者向けガイド &#x200B;](https://nginx.org/en/docs/beginners_guide.html)_ を参照してください。
 
 Nginx 設定の例：
 
@@ -432,7 +432,7 @@ GraphQL Application Server は、処理する各リクエストに `X-Backend` �
 
 ### 拡張機能とカスタマイズの互換性の確認
 
-拡張機能の開発者とマーチャントは、まず、拡張機能とカスタマイズコードが _[テクニカルガイドライン ](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/)_ に記載されたガイドラインに従っていることを確認する必要があります。
+拡張機能の開発者とマーチャントは、まず、拡張機能とカスタマイズコードが _[テクニカルガイドライン &#x200B;](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/)_ に記載されたガイドラインに従っていることを確認する必要があります。
 
 コード評価時には、次のガイドラインを考慮してください。
 

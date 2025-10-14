@@ -27,8 +27,8 @@ ht-degree: 0%
 | `downloadable_domains` | ダウンロード可能なドメインのリスト |
 | `install` | インストールの日付 |
 | `lock` | プロバイダ設定のロック |
-| `MAGE_MODE` | [ アプリケーションモード ](../bootstrap/application-modes.md) |
-| `queue` | [ メッセージキュー ](../queues/manage-message-queues.md) 設定 |
+| `MAGE_MODE` | [&#x200B; アプリケーションモード &#x200B;](../bootstrap/application-modes.md) |
+| `queue` | [&#x200B; メッセージキュー &#x200B;](../queues/manage-message-queues.md) 設定 |
 | `resource` | リソース名の接続へのマッピング |
 | `session` | セッションストレージデータ |
 | `system` | 管理者で編集するフィールドを無効にします |
@@ -72,7 +72,7 @@ env.php の **ノードを使用して、Commerceの管理者 URL の** frontNam
 ]
 ```
 
-詳しくは、[Redis 設定 ](../cache/redis-pg-cache.md) を参照してください。
+詳しくは、[Redis 設定 &#x200B;](../cache/redis-pg-cache.md) を参照してください。
 
 ## cache_type
 
@@ -98,7 +98,7 @@ env.php の **ノードを使用して、Commerceの管理者 URL の** frontNam
 ]
 ```
 
-様々な [ キャッシュタイプ ](../cli/manage-cache.md) の詳細をご覧ください。
+様々な [&#x200B; キャッシュタイプ &#x200B;](../cli/manage-cache.md) の詳細をご覧ください。
 
 ## consumers_wait_for_messages
 
@@ -146,7 +146,7 @@ Commerceでは、パスワードやその他の機密データを保護するた
 ]
 ```
 
-[ 暗号化キー ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) について詳しくは、_Commerce ユーザーガイド_ を参照してください。
+[&#x200B; 暗号化キー &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) について詳しくは、_Commerce ユーザーガイド_ を参照してください。
 
 ## db
 
@@ -193,7 +193,7 @@ STOMP （ActiveMQ Artemis）の場合：
 
 ## ディレクトリ
 
-Web サーバーが `/pub` ディレクトリからCommerce アプリケーションを提供するように設定されている場合に設定する必要があるオプションのディレクトリマッピングオプション [ セキュリティの向上 ](../../installation/tutorials/docroot.md)。
+Web サーバーが `/pub` ディレクトリからCommerce アプリケーションを提供するように設定されている場合に設定する必要があるオプションのディレクトリマッピングオプション [&#x200B; セキュリティの向上 &#x200B;](../../installation/tutorials/docroot.md)。
 
 ```conf
 'directories' => [
@@ -211,7 +211,7 @@ Web サーバーが `/pub` ディレクトリからCommerce アプリケーシ�
 ]
 ```
 
-詳細情報 [ ダウンロード可能なドメイン ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
+詳細情報 [&#x200B; ダウンロード可能なドメイン &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
 
 ## install
 
@@ -227,7 +227,7 @@ Commerce アプリケーションのインストール日。
 
 ロックプロバイダーの設定は、`lock` ノードを使用して設定します。
 
-詳細情報 [ ロックプロバイダー設定 ](../../installation/tutorials/lock-provider.md)。
+詳細情報 [&#x200B; ロックプロバイダー設定 &#x200B;](../../installation/tutorials/lock-provider.md)。
 
 ## MAGE_モード
 
@@ -237,7 +237,7 @@ Commerce アプリケーションのインストール日。
 'MAGE_MODE' => 'developer'
 ```
 
-[ アプリケーションモード ](../cli/set-mode.md) の詳細情報。
+[&#x200B; アプリケーションモード &#x200B;](../cli/set-mode.md) の詳細情報。
 
 ## キュー
 
@@ -276,7 +276,7 @@ Commerce アプリケーションのインストール日。
 ],
 ```
 
-詳細情報：[ セッション ](../storage/sessions.md)。
+詳細情報：[&#x200B; セッション &#x200B;](../storage/sessions.md)。
 
 ## x-frame-options
 
