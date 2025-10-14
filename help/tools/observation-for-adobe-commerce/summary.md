@@ -3,7 +3,7 @@ title: 「[!UICONTROL Summary]」タブ
 description: '[!UICONTROL Summary] の「 [!DNL Observation for Adobe Commerce]」タブについて説明します。'
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 5a0455b61824cb1946e29dba3ff7bfd9d225b110
 workflow-type: tm+mt
 source-wordcount: '2494'
 ht-degree: 0%
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 ## [!UICONTROL Transaction Overview]
 
-![&#x200B; 取引の概要 &#x200B;](../../assets/tools/transaction-overview.jpg)
+![ 取引の概要 ](../../assets/tools/transaction-overview.jpg)
 
-### [&#x200B; トランザクションとは &#x200B;](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often, when%20the%20response%20is%20sent)
+### [ トランザクションとは ](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often, when%20the%20response%20is%20sent)
 
 「[!DNL New Relic] 時点では、トランザクションは、ソフトウェアアプリケーション内の 1 つの作業の論理単位として定義されています。 具体的には、その作業単位を構成する関数呼び出しとメソッド呼び出しを指します。 多くの場合、web トランザクションを指します。これは、アプリケーションが web リクエストを受信したときから応答が送信されたときに発生するアクティビティを表します。」
 
@@ -32,79 +32,79 @@ ht-degree: 0%
 
 ## [!UICONTROL 404 page errors frame]
 
-ページが見つからなかったインシデントを経時的に表示する ![404 エラー監視ダッシュボード &#x200B;](../../assets/tools/404-page-errors.jpg)
+ページが見つからなかったインシデントを経時的に表示する ![404 エラー監視ダッシュボード ](../../assets/tools/404-page-errors.jpg)
 
 **[!UICONTROL 404 page errors]** のフレームには、選択した期間の [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) と 404 ページエラー数が一覧表示されます。
 
 ## [!UICONTROL % of Storage Free frame]
 
-![&#x200B; 使用可能なディスク容量の割合を表示するストレージ使用率グラフ &#x200B;](../../assets/tools/percent-of-storage-free.jpg)
+![ 使用可能なディスク容量の割合を表示するストレージ使用率グラフ ](../../assets/tools/percent-of-storage-free.jpg)
 
 **[!UICONTROL % of Storage Free]** フレームには、クラスタのすべてのノードにわたるストレージ・マウントの平均空き率が表示されます。 例えば、3 つのノードクラスターがある場合、フレームには\&lt; マウントポイント\>、\&lt; 環境名\> が表示されます。 このフレームは、3 つのノード間に相違がある場合に偽装される可能性があります。 分散の例としては、`/data/mysql` マウントポイントの解放が 3 つのノードクラスター間で異なる値であった場合があります。 「[!UICONTROL MySQL]」タブの下には、各ノード上の `/data/mysql` ストレージの空き容量をより正確に確認するために、ノード名ごとにマウント・ポイントをファセットするフレームがあります。
 
 ## [!UICONTROL % of system memory that is free frame]
 
-![&#x200B; 使用可能な RAM の割合を示すシステムメモリ使用量グラフ &#x200B;](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
+![ 使用可能な RAM の割合を示すシステムメモリ使用量グラフ ](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
 
 空きシステムメモリの **% のフレームは** 各ノード上の空きシステムメモリの量をノードごとに表示します。
 
 ## [!UICONTROL Swap memory free in bytes]
 
-![&#x200B; メモリ空き容量（バイト単位）のスワップ &#x200B;](../../assets/tools/swap-memory-free-in-bytes.jpg)
+![ メモリ空き容量（バイト単位）のスワップ ](../../assets/tools/swap-memory-free-in-bytes.jpg)
 
 **[!UICONTROL Swap memory free in bytes]** フレームは、ノード上で空いている SWAP メモリの量をノードごとに表示します。
 
 ## [!UICONTROL CPU % by host]
 
-![&#x200B; ホスト別のCPUの割合 &#x200B;](../../assets/tools/cpu-percent-by-host.jpg)
+![ ホスト別のCPUの割合 ](../../assets/tools/cpu-percent-by-host.jpg)
 
-すべての環境とノードの集計が **[!UICONTROL CPU % by host]** のフレームに表示されます。 非実稼動環境の選択を解除する必要があります。 また、実稼動環境のすべてのノードが存在しないインスタンスも注目してください。 CPUの使用率が高い場合のヒントについて詳しくは、[Adobe CommerceでNew Relicを使用したパフォーマンスのトラブルシューティング &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=ja) を参照してください。
+すべての環境とノードの集計が **[!UICONTROL CPU % by host]** のフレームに表示されます。 非実稼動環境の選択を解除する必要があります。 また、実稼動環境のすべてのノードが存在しないインスタンスも注目してください。 CPUの使用率が高い場合のヒントについて詳しくは、[Adobe CommerceでNew Relicを使用したパフォーマンスのトラブルシューティング ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html) を参照してください。
 
 ## [!UICONTROL Alerts during timeframe]
 
-![&#x200B; 選択した期間内のインシデントを表示するアラート通知ダッシュボード &#x200B;](../../assets/tools/alerts-during-timeframe.jpg)
+![ 選択した期間内のインシデントを表示するアラート通知ダッシュボード ](../../assets/tools/alerts-during-timeframe.jpg)
 
 **[!UICONTROL Alerts during timeframe]** には、Adobe Commerce サポートによって追加された [!UICONTROL Managed Alerts] を含む、すべてのアラートが表示されます。
 
 ## [!UICONTROL CPU Usage]
 
-![CPUの使用状況 &#x200B;](../../assets/tools/cpu-usage.jpg)
+![CPUの使用状況 ](../../assets/tools/cpu-usage.jpg)
 
-**[!UICONTROL CPU Usage]** フレームが空白の場合は、[!DNL New Relic] のインフラストラクチャアプリケーションが有効になっていないことを示します。 サイトが Starter 上にある場合、この情報は表示されません。 サイトが Pro の場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja) を開いて、サイトを有効に [!DNL New Relic Infrastructure] ます。
+**[!UICONTROL CPU Usage]** フレームが空白の場合は、[!DNL New Relic] のインフラストラクチャアプリケーションが有効になっていないことを示します。 サイトが Starter 上にある場合、この情報は表示されません。 サイトが Pro の場合は、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) を開いて、サイトを有効に [!DNL New Relic Infrastructure] ます。
 
 ## [!UICONTROL Average Response Time]
 
-![&#x200B; 平均応答時間 &#x200B;](../../assets/tools/average-response-time.jpg)
+![ 平均応答時間 ](../../assets/tools/average-response-time.jpg)
 
 **[!UICONTROL Average Response Time]** グラフは、トランザクション（web など）の平均応答時間を示します。
 
 ## [!UICONTROL Long duration cron_schedule updates]
 
-![&#x200B; 長い期間の cron_schedule の更新 &#x200B;](../../assets/tools/long-duration-cron-schedule-updates.jpg)
+![ 長い期間の cron_schedule の更新 ](../../assets/tools/long-duration-cron-schedule-updates.jpg)
 
 **[!UICONTROL cron_schedule]** テーブルは、cron ジョブの開始と終了の際に書き込まれます。 所要時間が長い cron ジョブでは、このテーブルの更新に遅延が生じる可能性があります。これは、cron スタックアップまたは cron のスケジュール方法に関する問題を示す場合があります。
 
 ## [!UICONTROL Response Code]
 
-![&#x200B; 応答コード &#x200B;](../../assets/tools/response-code.jpg)
+![ 応答コード ](../../assets/tools/response-code.jpg)
 
 **[!UICONTROL Response Code]** フレームは、web トラフィックとリクエストの応答コードを示す優れた指標です。 これはトランザクションデータ [!DNL New Relic's] あり、返された `httpResponseCode` によってファセットされます。
 
 ## [!UICONTROL Web Traffic volume compared with one week ago Magento Managed Alerts Information]
 
-![1 週間前と比較した web トラフィック量 &#x200B;](../../assets/tools/web-traffic-volume-compared.jpg)
+![1 週間前と比較した web トラフィック量 ](../../assets/tools/web-traffic-volume-compared.jpg)
 
 このフレームには、過去 1 週間と現在 1 週間の web トラフィックの比較量が表示されます。
 
 ## [!UICONTROL Deployment Log Entries]
 
-![&#x200B; デプロイメントログエントリ &#x200B;](../../assets/tools/deployment-log-entries.jpg)
+![ デプロイメントログエントリ ](../../assets/tools/deployment-log-entries.jpg)
 
 **[!UICONTROL Deployment Log Entries]** フレームには、デプロイメントとクラウドログエントリの数が表示され、デプロイメントログ名の横にその数をファセットします。
 
 ## [!UICONTROL Deployment State]
 
-![&#x200B; デプロイメントの状態 &#x200B;](../../assets/tools/deployment-state.jpg)
+![ デプロイメントの状態 ](../../assets/tools/deployment-state.jpg)
 
 **[!UICONTROL Deployment State]** のフレームファセットは、デプロイログの特定のデプロイメントフェーズを示しています。 次に、ログにカウントされるフェーズとファセット名の例を示します。
 
@@ -121,7 +121,7 @@ ht-degree: 0%
 
 ## [!UICONTROL IP Frequency]
 
-![IP 頻度 &#x200B;](../../assets/tools/ip-frequency.jpg)
+![IP 頻度 ](../../assets/tools/ip-frequency.jpg)
 
 **[!UICONTROL IP Frequency]** フレームは、[!DNL Fastly] ログから各 IP の（「MISS」および「PASS」）ステータスをカウントします。 これらのステータスを持つ web リクエストは接触チャネルサーバーに到達し、サーバーに読み込みを追加します。 これは、頻度の上位 20 件のアドレスを表示します。 このフレームは、Web サイトに対する IP 攻撃や高負荷のソースを検出するために使用できます。
 
@@ -133,43 +133,43 @@ ht-degree: 0%
 
 ## [!UICONTROL API Calls by IP]
 
-![ip による api 呼び出し &#x200B;](../../assets/tools/api-calls-by-ip.jpg)
+![ip による api 呼び出し ](../../assets/tools/api-calls-by-ip.jpg)
 
 **[!UICONTROL API Calls by IP]** フレームは、API に対する大量のトラフィックや、API の URL からリクエストを送信する IP アドレスを識別するのに役立ちます。
 
 ## [!UICONTROL API Calls by IP, details by URL]
 
-![IP アドレスとエンドポイント URL でグループ化された呼び出しを示す API リクエスト分析 &#x200B;](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
+![IP アドレスとエンドポイント URL でグループ化された呼び出しを示す API リクエスト分析 ](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
 
 **[!UICONTROL API Calls by IP, details by URL]** フレームは、API に対する大量のトラフィックの詳細と、リクエストを送信する URL の詳細を提供します。
 
 ## [!UICONTROL IP Frequency Rate per minute]
 
-![1 分あたりの ip 頻度レート &#x200B;](../../assets/tools/ip-frequency-rate-per-minute.jpg)
+![1 分あたりの ip 頻度レート ](../../assets/tools/ip-frequency-rate-per-minute.jpg)
 
 他のフレームで最も多くのリクエストがどの IP アドレスに割り当てられているかを判断するのが難しい場合があります。 **[!UICONTROL IP Frequency Rate per minute]** フレームには、IP アドレスごとの 1 分あたりのレートが表示されます。
 
 ## [!UICONTROL Potential Bots]
 
-![&#x200B; 潜在的なボット &#x200B;](../../assets/tools/potential-bots.jpg)
+![ 潜在的なボット ](../../assets/tools/potential-bots.jpg)
 
 **[!UICONTROL Potential Bots]** フレームは、request_user_agent 名が NULL または「%bot%」などのリクエストを調べます。 通常、&#39;%bot%&#39; request_user_agent はファイル内のポリシー設定に従 `robots.txt` ます。
 
 ## [!UICONTROL Transaction Errors]
 
-![&#x200B; トランザクションエラー &#x200B;](../../assets/tools/transaction-errors.jpg)
+![ トランザクションエラー ](../../assets/tools/transaction-errors.jpg)
 
 **[!UICONTROL Transaction Errors]** フレームには、[!DNL New Relic] からのトランザクションエラーの数が表示されます。
 
 ## [!UICONTROL Nginx access by node]
 
-![&#x200B; ノードによる nginx アクセス &#x200B;](../../assets/tools/nginx-access-by-node.jpg)
+![ ノードによる nginx アクセス ](../../assets/tools/nginx-access-by-node.jpg)
 
 **[!UICONTROL Nginx access by node]** フレームは、`access.log` からのカウントをノード別に調べます。 負荷が均等に分散されているかどうかを確認すると便利です。 多くの場合、ノードがドロップしたときに表示されます。 また、このフレームには、サイト全体の負荷も表示されます。
 
 ## [!UICONTROL Galera Log]
 
-![galera ログ &#x200B;](../../assets/tools/galera-log.jpg)
+![galera ログ ](../../assets/tools/galera-log.jpg)
 
 [[!DNL Galera]](https://galeracluster.com/library/galera-documentation.pdf) は、データベースクラスターに使用されます。 このフレームは、[!UICONTROL Galera] クラスタからの特定の信号に焦点を当てています。 シグナルは、クラスターに入るノードとクラスターから出るノードに焦点を当てます。これは、データベースのデータ整合性を維持する通常の動作です。 ノードは、[!UICONTROL Galera] のクラスター状態が変更されても、同期されたままになります。
 
@@ -197,7 +197,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Database errors]
 
-![&#x200B; データベース エラー &#x200B;](../../assets/tools/database-errors.jpg)
+![ データベース エラー ](../../assets/tools/database-errors.jpg)
 
 **データベースのエラーまたはメッセージのリストが検出されました：**
 
@@ -243,9 +243,9 @@ ht-degree: 0%
 
 ## [!UICONTROL Database traces]
 
-![&#x200B; データベース トレース &#x200B;](../../assets/tools/database-traces.jpg)
+![ データベース トレース ](../../assets/tools/database-traces.jpg)
 
-**[!UICONTROL Database traces]** フレームは、[&#x200B; の &#x200B;](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/)sql trace[!DNL New Relic] エンティティからのデータを参照し、トレースのパスを返します。
+**[!UICONTROL Database traces]** フレームは、[ の ](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/)sql trace[!DNL New Relic] エンティティからのデータを参照し、トレースのパスを返します。
 
 ## [!UICONTROL Database mysql-slow.log]
 
@@ -255,9 +255,9 @@ ht-degree: 0%
 
 ## [!UICONTROL Redis synchronization from Log]
 
-![&#x200B; ログからの redis 同期 &#x200B;](../../assets/tools/redis-synchronization-from-log.jpg)
+![ ログからの redis 同期 ](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[[!DNL Redis]](https://redis.io/docs/about/) は、データベース、キャッシュ、およびメッセージブローカとして使用されるオープンソース（BSD ライセンス）のメモリ内データ構造ストアです。 データベースおよびセッションのキャッシュが可能です（設定されている場合）。 **[!UICONTROL Redis synchronization from Log]** フレームは [[!DNL Redis]  同期 &#x200B;](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/) に焦点を当てています。 [!DNL Redis] のデータセットが大きいほど、同期に問題が発生する可能性が高くなります（同期を維持するデータが多くなります）。
+[[!DNL Redis]](https://redis.io/about/) は、データベース、キャッシュ、およびメッセージブローカとして使用されるオープンソース（BSD ライセンス）のメモリ内データ構造ストアです。 データベースおよびセッションのキャッシュが可能です（設定されている場合）。 **[!UICONTROL Redis synchronization from Log]** フレームは [[!DNL Redis]  同期 ](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/) に焦点を当てています。 [!DNL Redis] のデータセットが大きいほど、同期に問題が発生する可能性が高くなります（同期を維持するデータが多くなります）。
 
 **[!DNL Redis]のエラーとメッセージ：**
 
@@ -282,15 +282,15 @@ ht-degree: 0%
 
 ## [!UICONTROL PHP process states]
 
-![PHP プロセスの状態 &#x200B;](../../assets/tools/php-process-states.jpg)
+![PHP プロセスの状態 ](../../assets/tools/php-process-states.jpg)
 
 PHP プロセスの動作は [configuration](https://www.php.net/manual/en/install.fpm.configuration.php) に依存します。 設定は複雑で、多くの変数とオプションがあります。 **[!UICONTROL PHP process states]** フレームは、PHP プロセスがいつ終了し、再起動するかを理解するのに役立ちます。
 
 ### [!UICONTROL PHP errors]
 
-![php エラー &#x200B;](../../assets/tools/php-errors.jpg)
+![php エラー ](../../assets/tools/php-errors.jpg)
 
-**[!UICONTROL PHP errors]** フレームには、選択した期間におけるワーカーの PHP エラー数が表示されます。 詳しくは、[Adobe Commerce PHP 設定 &#x200B;](../../installation/prerequisites/php-settings.md) を参照してください。
+**[!UICONTROL PHP errors]** フレームには、選択した期間におけるワーカーの PHP エラー数が表示されます。 詳しくは、[Adobe Commerce PHP 設定 ](../../installation/prerequisites/php-settings.md) を参照してください。
 
 **PHP エラーとメッセージ：**
 
@@ -308,37 +308,37 @@ PHP プロセスの動作は [configuration](https://www.php.net/manual/en/insta
 
 ## [!UICONTROL PHP processes]
 
-![php プロセス &#x200B;](../../assets/tools/php-processes.jpg)
+![php プロセス ](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/) は、[!UICONTROL FastCGI Process Manager] で使用される [!DNL Nginx] です。 システム要件については、[Adobe Commerceのバージョンにマッピングされる PHP のバージョン要件 &#x200B;](../../installation/system-requirements.md) を参照してください。 **[!UICONTROL PHP processes]** のフレームは、選択したタイムラインの特定の時点で実行されている PHP プロセスの数を示します。
+[PHP-FPM](https://php-fpm.org/) は、[!UICONTROL FastCGI Process Manager] で使用される [!DNL Nginx] です。 システム要件については、[Adobe Commerceのバージョンにマッピングされる PHP のバージョン要件 ](../../installation/system-requirements.md) を参照してください。 **[!UICONTROL PHP processes]** のフレームは、選択したタイムラインの特定の時点で実行されている PHP プロセスの数を示します。
 
 ## [!UICONTROL Secondary processes]
 
-![&#x200B; セカンダリ プロセス &#x200B;](../../assets/tools/secondary-processes.jpg)
+![ セカンダリ プロセス ](../../assets/tools/secondary-processes.jpg)
 
 セカンダリプロセスは、サイトの反応に影響を与える可能性があります。 **[!UICONTROL Secondary processes]** のフレームは、サイトに負荷を追加している可能性のあるプロセスを示します。 データベースには、主に実行されているセカンダリ・プロセスが多く含まれています。
 
 ## [!UICONTROL Traffic vs Week Ago]
 
-![&#x200B; トラフィック対週間前 &#x200B;](../../assets/tools/traffic-vs-week-ago.jpg)
+![ トラフィック対週間前 ](../../assets/tools/traffic-vs-week-ago.jpg)
 
 **[!UICONTROL Traffic vs Week Ago]** フレームは、（「MISS」、「PASS」）キャッシュステータスを含む [!DNL Fastly] ログからの web サイトトラフィック（リクエスト）を調べます。 これらのリクエストにより、接触チャネルサーバーに負荷が追加されます。 このフレームには、同じ期間内の現在の週と過去 1 週間前の web リクエストの量の比較が表示されます。
 
 ## [!UICONTROL Fastly Cache]
 
-![fastly キャッシュ &#x200B;](../../assets/tools/fastly-cache.jpg)
+![fastly キャッシュ ](../../assets/tools/fastly-cache.jpg)
 
 **[!UICONTROL Fastly Cache]** フレームは、[!DNL Fastly] ログからのリクエストのキャッシュ ステータスの集約ビューを表示します。 「エラー」を選択すると、リクエストのエラーの割合が表示されます。 これは通常、接触チャネルサーバーがページリクエストに十分な速さで応答しない場合に増加します。
 
 ## [!UICONTROL Page Rendering]
 
-![&#x200B; レンダリング時間分析を示すページパフォーマンス指標 &#x200B;](../../assets/tools/page-rendering.jpg)
+![ レンダリング時間分析を示すページパフォーマンス指標 ](../../assets/tools/page-rendering.jpg)
 
 **[!UICONTROL Page Rendering]** フレームには、[!DNL New Relic] のページビューソースから得られた今週の平均ページレンダリング時間が、同期間の前週と比較して表示されます。
 
 ## [!UICONTROL Page loading detail]
 
-![&#x200B; 読み込み時間のコンポーネントを示す、詳細なページ読み込みパフォーマンスの分類 &#x200B;](../../assets/tools/page-loading-detail.png)
+![ 読み込み時間のコンポーネントを示す、詳細なページ読み込みパフォーマンスの分類 ](../../assets/tools/page-loading-detail.png)
 
 **[!UICONTROL Page loading detail]** のフレームは、ページ読み込みイベントを説明します。 これらの側面の意味を詳しく述べている。 このフレームに対して実行されるクエリは次のとおりです。
 
@@ -346,25 +346,25 @@ PHP プロセスの動作は [configuration](https://www.php.net/manual/en/insta
 
 ## [!UICONTROL Transactions – Avg, Max, Min]
 
-![&#x200B; トランザクション – 平均、最大、最小 &#x200B;](../../assets/tools/transactions-avg-max-min.jpg)
+![ トランザクション – 平均、最大、最小 ](../../assets/tools/transactions-avg-max-min.jpg)
 
 トランザクション期間は秒単位です。 トランザクションによっては、長時間実行されると他のトランザクションに影響を与える可能性があります。 「名前」と「期間」の下にリストされるトランザクションは、特定の期間のものです。 簡潔な問題の期間がある場合は、[!DNL Observation for Adobe Commerce] の日付/時間セレクターのサイズを、その狭い期間に変更します。
 
 ## [!UICONTROL Admin Activities]
 
-![&#x200B; 管理アクティビティ &#x200B;](../../assets/tools/admin-activities.jpg)
+![ 管理アクティビティ ](../../assets/tools/admin-activities.jpg)
 
 **[!UICONTROL Admin Activities]** フレームは、管理者ユーザーとのトランザクションを識別します。
 
 ## [!UICONTROL Order transactions (default?)]
 
-![&#x200B; 注文トランザクションのデフォルト &#x200B;](../../assets/tools/order-transactions-default.jpg)
+![ 注文トランザクションのデフォルト ](../../assets/tools/order-transactions-default.jpg)
 
 **[!UICONTROL Order transactions (default?)]** フレームは、名前= `request.headers.host` のトランザクションから `WebTransaction/Action/checkout/onepage/success` まるトランザクションを検索します。 注文成功 URL が異なる場合、このフレームにはデータがありません。
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![elasticsearch インデックス情報 &#x200B;](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
+![elasticsearch インデックス情報 ](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
 **[Elasticsearchの状態：](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
 
@@ -374,7 +374,7 @@ PHP プロセスの動作は [configuration](https://www.php.net/manual/en/insta
 
 ## [!UICONTROL Elasticsearch Errors]
 
-![elasticsearch エラー &#x200B;](../../assets/tools/elasticsearch-errors.jpg)
+![elasticsearch エラー ](../../assets/tools/elasticsearch-errors.jpg)
 
 **[!DNL Elasticsearch]エラー：**
 
@@ -384,18 +384,18 @@ PHP プロセスの動作は [configuration](https://www.php.net/manual/en/insta
 * &#39;% この問題は、Magento Cloud インフラストラクチャのElasticsearch サービスを&#39;ver_err&#39;として version%&#39;にアップグレードすることで解決できます。
 * &#39;%cluster の正常性状態が\[YELLOW\] から\[RED\] に変更されました（理由：%&#39;が&#39;yel_red&#39;です）
 * &#39;%No space on device%&#39; as &#39;no_space&#39;
-* &#39;% は、&#39;failed_query&#39;として &lbrack;SearchRequest&lbrace;searchType=%&#39;を実行できませんでした
+* &#39;% は、&#39;failed_query&#39;として [SearchRequest{searchType=%&#39;を実行できませんでした
 
 ## [!UICONTROL Cron view]
 
-![cron ビュー &#x200B;](../../assets/tools/cron-view.jpg)
+![cron ビュー ](../../assets/tools/cron-view.jpg)
 
 **[!UICONTROL Cron view]** フレームは、cron ログを参照して、開始した cron 数と終了した cron 数のバランスを確認します。
 
 
 ## [!UICONTROL Cron error]
 
-![cron エラー &#x200B;](../../assets/tools/cron-error.png)
+![cron エラー ](../../assets/tools/cron-error.png)
 
 **cron.log からの Cron エラー：**
 
@@ -407,19 +407,19 @@ PHP プロセスの動作は [configuration](https://www.php.net/manual/en/insta
 
 ## [!UICONTROL cron_schedule table updates]
 
-![cron_schedule テーブルの更新 &#x200B;](../../assets/tools/cron-schedule-table-updates.jpg)
+![cron_schedule テーブルの更新 ](../../assets/tools/cron-schedule-table-updates.jpg)
 
 **[!UICONTROL cron_schedule table updates]** フレームは、データストア操作の更新に cron_schedule テーブルが関与する最大期間（秒単位）を調べます。 これは、SQL リクエストタイプでファセットされます。
 
 ## [!UICONTROL Datastore Operations Tables]
 
-![&#x200B; データストア操作テーブル &#x200B;](../../assets/tools/datastore-operations-tables.jpg)
+![ データストア操作テーブル ](../../assets/tools/datastore-operations-tables.jpg)
 
 この **[!UICONTROL Datastore Operations Tables]** フレームには、期間、テーブル名および SQL 要求タイプ別の上位 25 の操作が表示されます。 スパイクにカーソルを合わせると、アクセスされているテーブルとリクエストタイプの詳細が表示されます。
 
 ## [!UICONTROL Cache Flush]
 
-![&#x200B; キャッシュフラッシュ &#x200B;](../../assets/tools/cache-flush.jpg)
+![ キャッシュフラッシュ ](../../assets/tools/cache-flush.jpg)
 
 **キャッシュのフラッシュが検出されました：**
 
