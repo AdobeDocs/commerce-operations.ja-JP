@@ -1,78 +1,37 @@
 ---
-title: リリーススケジュール
-description: AdobeがAdobe Commerceの新機能とリリースを発表する予定の時期について説明します。 計画性を高めるために、今後のパッチスケジュールと機能配信タイムラインを確認します。
+title: パッチリリーススケジュール
+description: AdobeがAdobe Commerceの新しいパッチとセキュリティ修正のリリースを発表する予定の時期について説明します。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 5f9f0e1dab7f5e4580f077693039ea387df23880
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
 
 
-# リリーススケジュール
+# パッチリリーススケジュール
 
-Adobeは、製品のアップグレードをシンプルで予測可能にすることと、早期導入したユーザーに機能強化や新機能を迅速に提供することの間で、適切なバランスを継続的に見つけ出そうと努めています（[&#x200B; バージョンポリシー &#x200B;](versioning-policy.md) を参照）。 このスケジュールの目的は、Adobeが実質的な新機能のリリースを発表する予定の日付を指定することです。
+Adobeは、製品のアップグレードをシンプルで予測可能なものにすると同時に、早期導入者に対して改善をより迅速に提供することの間で、適切なバランスを継続的に見つけ出そうと努めています（[ バージョンポリシー ](versioning-policy.md) を参照）。
 
-## 機能、クラウドインフラストラクチャ、拡張機能
-
-新機能、機能アップデート、クラウドインフラストラクチャー、拡張機能アップデートは、パッチリリースとは独立して提供され、外部のモジュール、拡張機能、ツールまたは web サービスを通じて利用できます。 例を次に示します。
-
-- ![&#x200B; 機能アイコン &#x200B;](../assets/icons/feature.svg) [**機能と機能性**](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/release-information/release-notes-all) - パッチリリースとは別に提供される新機能。 例えば、[B2B](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/release-notes)、カタログサービス、データ接続、ライブ検索、製品レコメンデーションなどです。
-
-- ![&#x200B; インフラストラクチャアイコン &#x200B;](../assets/icons/servers.svg) [**クラウドインフラストラクチャ**](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) - クラウドインフラストラクチャ上のAdobe Commerceおよびクラウドプラットフォーム上でAdobe Commerceのインストールとアップグレードをデプロイと管理するCommerce パッケージ用 Cloud Tools スイートの新機能と機能強化について説明します。
-
-- ![&#x200B; 拡張アイコン &#x200B;](../assets/icons/brackets.svg) [**拡張機能**](https://developer.adobe.com/commerce/extensibility/) - パッチリリースとは別に提供される、プロセス外の拡張機能のための新しい開発者ツールおよびサービス。 例えば、統合スターターキット、管理 UI SDK、Commerce用Adobe I/O Events、API メッシュなどです。
-
-スケジュールされている機能、クラウドインフラストラクチャおよび拡張リリースの日付は次のリストのとおりです（日付は変更される場合があります）。
-
-- 2025 年 2 月 11 日（Pt）
-- 2025 年 4 月 8 日（Pt）
-- 2025 年 6 月 10 日（Pt）
-- 2025 年 8 月 12 日（Pt）
-- 2025 年 10 月 14 日（Pt）
+このスケジュールの目的は、Adobeがコア Adobe Commerce PHP アプリケーションのサポート対象の各リリースラインに対して [ パッチ ](versioning-policy.md#patch-release) のリリースを発表する予定の日付を指定することです。 パッチリリースは、プラットフォームの安全性、信頼性、パフォーマンスを維持するために、コアコードベースをアップグレードする機会です。
 
 >[!NOTE]
 >
->機能、クラウドインフラストラクチャ、拡張機能のリリースは、年間を通じて異なる場合があります。 ただし、Adobeでは、このページで指定された日付の間、これらの領域の機能強化を定期的かつ継続的にリリースしています。 [Adobe Commerceとは？最新の機能について詳しくは、](https://business.adobe.com/products/magento/magento-commerce.html) を参照してください。
+>新機能、クラウドインフラストラクチャ、拡張機能リリースについて詳しくは、[Adobe Commerce サービス ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all) リリースドキュメントを参照してください。
 
-## パッチ
+このページにリストされているスケジュールされた品質、セキュリティ、ベータ版のパッチに加えて、Adobeでは [Quality Patches Tool](versioning-policy.md#individual-patch) を通じて [ 個別パッチ ](../tools/quality-patches-tool/usage.md) にアクセスできます。 このツールを使用すると、インストールされているバージョンのAdobe Commerceで使用可能な個々のパッチに関する一般情報を適用、元に戻して表示できます。
 
-Adobeでは、コア Adobe Commerce PHP アプリケーションのサポート対象の各リリースラインに対して、[&#x200B; パッチ &#x200B;](versioning-policy.md#patch-release) もリリースします。 パッチリリースは、プラットフォームの安全性、信頼性、パフォーマンスを維持するために、コアコードベースをアップグレードする機会です。
+2026 年 1 月以降、Adobe Commerceは次の方法で毎月のパッチリリーススケジュールに移行します。
 
-このページにリストされているスケジュールされた品質、セキュリティ、ベータ版のパッチに加えて、Adobeでは [Quality Patches Tool](versioning-policy.md#individual-patch) を通じて [&#x200B; 個別パッチ &#x200B;](../tools/quality-patches-tool/usage.md) にアクセスできます。 このツールを使用すると、インストールされているバージョンのAdobe Commerceで使用可能な個々のパッチに関する一般情報を適用、元に戻して表示できます。
+- **個別のセキュリティ修正** – 累積的でない個別の [ セキュリティ修正 ](versioning-policy.md#isolated-patch) が毎月リリースされる場合があり、すべての [ サポートされている ](lifecycle-policy.md) リリース行のセキュリティ修正が含まれます（通常サポートおよび拡張サポートを含む）。
 
-次の表に、予定されているパッチリリースの日付を示します（日付は変更される場合があります）。
+- **セキュリティパッチ** – 最低限、[ セキュリティパッチ ](versioning-policy.md#security-patch-release) は、すべての [ サポート対象 ](lifecycle-policy.md) リリースラインに対して毎年（5 月）リリースされます。 これらのパッチには、以前にリリースされた独立したセキュリティ修正がすべて含まれています。 Adobeは、必要に応じて 11 月に追加のセキュリティパッチをリリースする可能性がありますが、保証されません。
 
-<table>
-<thead>
-  <tr>
-    <th>一般公開</th>
-    <th>パッチ</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-  <tr>
-    <td>2025 年 2 月 11 日（Pt）</td>
-    <td><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">Beta パッチ </a>: 2.4.8-beta2<br><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img><a href="release-notes/security/overview.md"> セキュリティパッチ </a>: 2.4.7、2.4.6、2.4.5、2.4.4 用</td>
-  </tr>
-  <tr>
-    <tr>
-    <td>2025 年 4 月 8 日（Pt）</td>
-    <td><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md"><strong>Adobe Commerce 2.4.8</a></strong>:<ul><li>パフォーマンスの向上</li><li>品質の強化</li><li>セキュリティ機能の強化</li><li>サードパーティの依存関係の更新</li></ul><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md"> セキュリティパッチ </a>:2.4.7、2.4.6、2.4.5、2.4.4 用</td>
-  </tr>
-  <tr>
-    <td>2025 年 6 月 10 日（Pt）</td>
-    <td><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Alpha パッチ </a>: 2.4.9-alpha1<br><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img><a href="release-notes/security/overview.md"> セキュリティパッチ </a>: 2.4.8、2.4.7、2.4.6、2.4.5 用</td>
-  </tr>
-  <tr>
-    <td>2025 年 8 月 12 日（Pt）</td>
-    <td><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Alpha パッチ </a>: 2.4.9-alpha2<br><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img><a href="release-notes/security/overview.md"> セキュリティパッチ </a>: 2.4.8、2.4.7、2.4.6、2.4.5 用</td>
-  </tr>
-  <tr>
-    <td>2025 年 10 月 14 日（Pt）</td>
-    <td><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Alpha パッチ </a>: 2.4.9-alpha3<br><img alt="パッチリリースアイコン" src="../assets/icons/file-code.svg"></img><a href="release-notes/security/overview.md"> セキュリティパッチ </a>: 2.4.8、2.4.7、2.4.6 用</td>
-  </tr>
-</tbody>
-</table>
+- **パッチ** - Adobe Commerce 2.4.x LTS リリースラインの完全な [ パッチ ](versioning-policy.md#patch-release) は、毎年（5 月）にリリースされます。
+
+- **Beta パッチ** - Adobe Commerce 2.4.x LTS リリースラインの 2 つの [ ベータ版パッチ ](versioning-policy.md#beta-patch-release) は、年 2 回（3 月と 11 月）リリースされます。
+
+詳しくは、次の画像を参照してください。
+
+![2026 Adobe Commerceのリリースカレンダー ](../assets/release/release-calendar.drawio.svg)

@@ -2,9 +2,9 @@
 title: Adobe Commerceのインストール
 description: 所有しているインフラストラクチャにAdobe Commerceをインストールするには、次の手順に従います。
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 47525e8d8379061b254bfa90ab46e27a1ee2f524
 workflow-type: tm+mt
-source-wordcount: '2093'
+source-wordcount: '2261'
 ht-degree: 0%
 
 ---
@@ -142,6 +142,21 @@ Adobe Commerce バージョン 2.2.8 以降では、インストール中また�
 | `--amqp-password` | [!DNL RabbitMQ] に接続するためのパスワード デフォルトのパスワード `guest` は使用しないでください。 | 不可 |
 | `--amqp-virtualhost` | [!DNL RabbitMQ] に接続するための仮想ホスト。 デフォルトは `/` です。 | 不可 |
 | `--amqp-ssl` | [!DNL RabbitMQ] に接続するかどうかを示します。 デフォルトは `false` です。 [!DNL RabbitMQ] の SSL の設定については、[!DNL RabbitMQ] を参照してください。 | 不可 |
+| `--consumers-wait-for-messages` | 消費者はキューからのメッセージを待つ必要がありますか？ 1 – はい、0 – いいえ | 不可 |
+
+**ActiveMQ Artemis 設定オプション：**
+
+>[!NOTE]
+>
+>ActiveMQ Artemis は、Adobe Commerce 2.4.6 以降のバージョンで導入されました。
+
+| 名前 | 値 | 必須？ |
+|--- |--- |--- |
+| `--stomp-host` | ActiveMQ Artemis のインストールをセットアップ済みでない限り、`--stomp` のオプションは使用しないでください。 ActiveMQ Artemis のインストールと構成の詳細については、「ActiveMQ Artemis のインストール」を参照してください。<br><br>ActiveMQ Artemis がインストールされているホスト名。 | 不可 |
+| `--stomp-port` | ActiveMQ Artemis への接続に使用するポートです。 デフォルトは 61613 です。 | 不可 |
+| `--stomp-user` | ActiveMQ Artemis に接続するためのユーザー名。 デフォルトのユーザー `artemis` は使用しないでください。 | 不可 |
+| `--stomp-password` | ActiveMQ Artemis に接続するためのパスワードです。 デフォルトのパスワード `artemis` は使用しないでください。 | 不可 |
+| `--stomp-ssl` | SSL を使用して ActiveMQ Artemis に接続するかどうかを示します。 デフォルトは `false` です。 ActiveMQ Artemis の SSL の設定については、ActiveMQ Artemis を参照してください。 | 不可 |
 | `--consumers-wait-for-messages` | 消費者はキューからのメッセージを待つ必要がありますか？ 1 – はい、0 – いいえ | 不可 |
 
 **リモートストレージオプション：**
@@ -302,6 +317,25 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 [SUCCESS]: Magento installation complete.
 [SUCCESS]: Admin Panel URI: /admin_puu71q
 ```
+
+#### 例 4:ActiveMQ Artemis を使用したインストール
+
+次の例は、ActiveMQ Artemis をメッセージブローカーとして使用してAdobe Commerceをインストールする方法を示しています。
+
+```bash
+magento setup:install --base-url=http://127.0.0.1/magento2/ \
+--db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
+--admin-firstname=Commerce --admin-lastname=User --admin-email=user@example.com \
+--admin-user=admin --admin-password=admin123 --language=en_US \
+--currency=USD --timezone=America/Chicago --use-rewrites=1 \
+--search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
+--elasticsearch-port=9200 --stomp-host=localhost --stomp-port=61613 \
+--stomp-user=artemis --stomp-password=artemis
+```
+
+>[!NOTE]
+>
+>ActiveMQ Artemis のインストールには、Adobe Commerce 2.4.6 以降が必要です。
 
 >[!TIP]
 >

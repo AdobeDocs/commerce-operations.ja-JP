@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.8 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.7 のセキュリティパッチリリースに含まれている、セキュリティバグ修正、セキュリティ機能強化、その他のセキュリティ関連アップデートについて説明します。
 exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: ba5b422f40803e6c5e797e939dd2fc9e3e7c195a
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,23 @@ ht-degree: 0%
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+## 2.4.8-p3
+
+Adobe Commerce 2.4.8-p3 セキュリティリリースは、2.4.8 の以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。
+
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html) を参照してください。
+
+{{b2b-patches}}
+
+### ハイライト
+
+{{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
+
 ## 2.4.8-p2
 
 Adobe Commerce 2.4.8-p2 セキュリティリリースは、2.4.8 の以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。
 
-セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB25-71](https://helpx.adobe.com/jp/security/products/magento/apsb25-71.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html) を参照してください。
 
 {{b2b-patches}}
 
@@ -25,7 +37,7 @@ Adobe Commerce 2.4.8-p2 セキュリティリリースは、2.4.8 の以前の�
 
 Adobe Commerce 2.4.8-p1 セキュリティリリースは、2.4.8 の以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。
 
-セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB25-50](https://helpx.adobe.com/jp/security/products/magento/apsb25-50.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html) を参照してください。
 
 {{b2b-patches}}
 
@@ -49,8 +61,8 @@ Adobe Commerce 2.4.8-p1 セキュリティリリースは、2.4.8 の以前の�
 
 >[!BEGINSHADEBOX]
 
-CVE-2025-47110 および VULN-31547 の修正も、独立したパッチとして使用できます。 詳しくは、[ ナレッジベースの記事 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) を参照してください。
+CVE-2025-47110 および VULN-31547 の修正も、独立したパッチとして使用できます。 詳しくは、[ ナレッジベースの記事 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) を参照してください。
 
 >[!ENDSHADEBOX]
 
-<!-- Last updated from includes: 2025-05-28 17:01:56 -->
+<!-- Last updated from includes: 2025-10-06 13:12:34 -->

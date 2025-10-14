@@ -2,9 +2,9 @@
 user-guide-title: インストールガイド
 user-guide-description: オンプレミスデプロイメント用のAdobe Commerceのインストール方法を説明します。
 feature: Install
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '173'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,9 @@ ht-degree: 3%
       - [Nginx の設定](prerequisites/search-engine/configure-nginx.md)
       - [Apache の設定](prerequisites/search-engine/configure-apache.md)
    - [PHP](prerequisites/php-settings.md)
-   - [メッセージブローカー](prerequisites/rabbitmq.md)
+   - メッセージブローカー {#message-brokers}
+      - [Rabbit MQ](prerequisites/rabbitmq.md)
+      - [アクティブ MQ](prerequisites/activemq.md)
    - [セキュリティ](prerequisites/security.md)
    - [認証キー](prerequisites/authentication-keys.md)
    - [Adobe Commerce](prerequisites/commerce.md)
@@ -67,4 +69,4 @@ ht-degree: 3%
    - [Commerceをアンインストールまたは再インストール](tutorials/uninstall.md)
    - [テーマのアンインストール](tutorials/themes.md)
    - [データベーススキーマのアップグレード](tutorials/database-upgrade.md)
-- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
+- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

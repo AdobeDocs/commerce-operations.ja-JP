@@ -1,15 +1,15 @@
 ---
-title: メッセージブローカー
+title: メッセージブローカー（RabbitMQ）
 description: 次の手順に従って、Adobe Commerceのオンプレミスインストールに必要な Message Broker ソフトウェア（ [!DNL RabbitMQ] など）をインストールして設定します。
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
-# メッセージブローカー
+# メッセージブローカー（RabbitMQ）
 
 Adobe Commerceは、[!DNL RabbitMQ] のオープンソースの Message Broker を使用します。 信頼性が高く、可用性が高く、スケーラブルで、ポータブルなメッセージングシステムを提供します。
 
