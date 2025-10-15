@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.4-p16 は、2.4.4 の以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供する、拡張サポートセキュリティリリースです。Adobe Commerceのお客様のみが利用できます。
 
-セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB25-94](https://helpx.adobe.com/jp/security/products/magento/apsb25-94.html) を参照してください。
 
 {{b2b-patches}}
 

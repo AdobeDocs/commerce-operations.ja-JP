@@ -57,6 +57,6 @@ _AC-15160_
 
 ### セキュリティ
 
-セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB25-94](https://helpx.adobe.com/jp/security/products/magento/apsb25-94.html) を参照してください。
 
 {{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
