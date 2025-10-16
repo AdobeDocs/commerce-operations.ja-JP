@@ -37,7 +37,7 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p2
 <u> 再現手順 </u>:
 
 1. *[!DNL PayPal Express]*/**[!UICONTROL Stores]**/**[!UICONTROL Config]**/**[!UICONTROL Sales]**/**[!UICONTROL Payment methods]**/**[!DNL PayPal]** で **[!UICONTROL Express checkout]** を設定します。
-   * [!UICONTROL Enable In-Context Checkout][!UICONTROL Yes] たは [!UICONTROL NO] の場合がありますが、この問題はどちらのシナリオでも発生します。
+   * [!UICONTROL Enable In-Context Checkout]&#x200B;[!UICONTROL Yes] たは [!UICONTROL NO] の場合がありますが、この問題はどちらのシナリオでも発生します。
 1. *[!UICONTROL Cart Rule]*/**[!UICONTROL Marketing]**/**[!UICONTROL Promotions]**/**[!UICONTROL Cart Price Rules]** で **[!UICONTROL Add New Rule]** を作成します。
    * 条件：これらの条件がすべて true の場合：*[!UICONTROL Payment Method]* は *[!DNL PayPal Express Checkout]* です。
    * アクション：任意のアクション。
