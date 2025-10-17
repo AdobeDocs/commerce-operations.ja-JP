@@ -3,9 +3,9 @@ title: リリースノート
 description: Adobe Commerceで使用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 4718ebd237c73913e8bc03b9370298b3504e619f
+source-git-commit: 8ca7b1b616bd5733cc2ecc18cef50dbb176ea0c3
 workflow-type: tm+mt
-source-wordcount: '28592'
+source-wordcount: '29060'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,30 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce プロジェクトにパッチを適用する手順については、[&#x200B; パッチの適用 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja#apply-individual-patches) を参照してください。 リリース済みパッチの完全なリストを確認するには、『ソフトウェア更新ガイド』の「[[!DNL Quality Patches Tool]：パッチの検索 &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)」を参照してください。
+>Adobe Commerce プロジェクトにパッチを適用する手順については、[ パッチの適用 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) を参照してください。 リリース済みパッチの完全なリストを確認するには、『ソフトウェア更新ガイド』の「[[!DNL Quality Patches Tool]：パッチの検索 ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
 
 >[!INFO]
 >
->コミュニティがMagento Open Source用に作成した [!DNL quality patches] について詳しくは、[&#x200B; リリースノート &#x200B;](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+>コミュニティがMagento Open Source用に作成した [!DNL quality patches] について詳しくは、[ リリースノート ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+
+## v1.1.72 {#v1-1-72}
+
+* **ACSD-68040** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.7 の場合） - [!DNL MariaDB] 10.6 および 11.4 で、多くの履歴検索リクエストでフロントエンド検索ページのパフォーマンスが低下する問題を修正しました。
+* **ACSD-67941** （Adobe CommerceおよびMagento Open Source >=2.4.7-p1 &lt;2.4.8） – フィルター名が不明なGraphQL リクエストが PHP 例外ログを引き起こす問題を修正しました。
+* **ACSD-68064** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.8 の場合） – ネストされたカテゴリの数が多い環境で、スケジュールされた更新を作成するとエントリが重複する問題を修正しました。
+* **ACSD-66807** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.9 の場合） – `report_viewed_product_index` テーブルに表示される製品ページビュー数が正しくない問題を修正しました。
+* **ACSD-67383** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8 の場合） – 同じセッションで 2 つの会社管理者アカウントと **[!UICONTROL Login as Customer]** を使用すると、*cartId のそのようなエンティティがありません* エラーが発生する問題を修正しました。
+* **ACSD-67518** （Adobe CommerceおよびMagento Open Source >=2.4.8 &lt;2.4.9 の場合） – 行数がバッチサイズを超えると、高度なレポートで重複したヘッダー行が生成される問題を修正しました。
+* **ACSD-67639** （Adobe CommerceおよびMagento Open Source >=2.4.8 &lt;2.4.9 の場合） - **[!UICONTROL Dynamic Price]** が *No* に設定されているバンドル商品のクレジットメモの作成が失敗する問題を修正しました。
+* **ACSD-67696** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.9 の場合） – キャッシュのフラッシュ後に、`media_gallery` エントリが買い物かごGraphQLの商品ノードに返されない問題を修正しました。
+* **ACSD-67946** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.9 の場合） – 買い物かごの更新で重複したエラーバナーが表示される問題を修正しました。
+* **ACSD-68011** （Adobe Commerceの場合、B2B >=1.5.1 &lt;1.5.3） – `/V1/sharedCatalog/:id/assignProducts` [!DNL REST] API を使用して存在しない SKU を共有カタログに割り当てることができる問題を修正しました。
+* **ACSD-68118** （Adobe CommerceおよびMagento Open Source >=2.4.6 &lt;2.4.9 の場合） - `customerCart` GraphQL クエリが、ストアヘッダーを反映せずに product 属性値を返し、ローカリゼーションの不一致を引き起こす問題を修正しました。
+* **ACSD-68092** （Adobe CommerceおよびMagento Open Source >=2.4.8 &lt;2.4.9 の場合） – 予定されているアップデートとベース製品データの間の不適切な同期が原因で、複数の保存後にバンドル製品のオプションが失われる問題を修正しました。
+* **ACSD-67424** （Adobe Commerceの場合、B2B >=1.5.0 &lt;1.5.3） – `updated_at` `GET /carts/search` API 応答の [!DNL REST] 値が、ネゴシエート可能な引用符を使用するときに **[!UICONTROL Admin panel]** に示す値と一致しない問題を修正します。
+* **ACSD-67187** （Adobe Commerceの場合、B2B >=1.5.1 &lt;1.5.3） – デフォルト以外の web サイトに制限された管理者ユーザーに、「*少なくとも公開共有カタログを作成して続行してください*」というエラーが表示され、会社グリッドの「**[!UICONTROL Add New Company]**」ボタンにアクセスできない問題を修正しました。
+* 更新されたバージョン：**ACSD-49737**、**ACSD-53750**、**ACSD-51819**、**ACSD-55566**、**ACSD-62965**、**ACSD-63323**、**ACSD-63406**、**ACSD-66139**、**ACSD-66404**、**ACSD-67659**、ACSD-**66301**
+* 交換後のパッチ：**ACSD-62577**、**ACSD-63325**、**ACSD-67102**
 
 ## v1.1.71 {#v1-1-71}
 
