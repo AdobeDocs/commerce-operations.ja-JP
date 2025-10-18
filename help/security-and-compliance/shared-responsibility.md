@@ -15,7 +15,7 @@ ht-degree: 0%
 
 この共有モデルを使用すると、マーチャントは、運用に関する責任とコストを最小限に抑えながら、ビジネス要件を満たす柔軟性とカスタマイズ性に優れた拡張性の高いソリューションを設計および実装できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3458392/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3458393/?captions=jpn&learn=on&enablevpops)
 
 一般に、Adobeは次の役割を担います。
 
