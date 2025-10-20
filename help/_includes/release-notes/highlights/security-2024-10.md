@@ -9,7 +9,7 @@ ht-degree: 0%
 
 このリリースには、次のハイライトが含まれています。
 
-* **TinyMCE のアップグレード** - Admin の [WYSIWYG Editor](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/editor) は、最新バージョンの TinyMCE 依存関係（7.3&#x200B;）を使用するようになりました。
+* **TinyMCE のアップグレード** - Admin の [WYSIWYG Editor](https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/wysiwyg/editor) は、最新バージョンの TinyMCE 依存関係（7.3&#x200B;）を使用するようになりました。
 
    * TinyMCE 7.3 は、ユーザーエクスペリエンスの向上、コラボレーションの強化、効率の向上を実現します。 TinyMCE 5 は 2.4.8 リリース行で削除されました&#x200B;
 
