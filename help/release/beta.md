@@ -2,9 +2,9 @@
 title: Beta リリース
 description: Adobe Commerce ベータ版リリースとリリースへの参加方法について説明します。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: a15422e4e135eba01931172960dfb0a6b359cde8
+source-git-commit: 17397fe91806c22272e426d615b11fd383602798
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,24 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様お
 
 アクティブなベータプログラムのリストについては、次の節を参照してください。
 
+### セマンティック検索：よりスマートなコンテキスト対応のショッピングエクスペリエンス（プライベートベータ版）
+
+セマンティック検索は、正確な単語だけでなく、買い物客のクエリの背後にある *意味* を理解する e コマース検索テクノロジーです。 クエリに不慣れな用語やスペルミスのある用語が含まれる場合に失敗することが多い従来のキーワードベースの検索とは異なり、この AI を活用したアプローチは、自然言語処理（NLP）とコンテキストを使用して意図を解釈し、より関連性の高い結果を提供します。
+
+このテクノロジーは、従来の検索における主な制限に対応しています。つまり、買い物客がカタログに存在しない単語を使用した場合に発生する結果がゼロのページです。 AI を活用した手法を使用して、ユーザークエリと製品データを共有された意味空間にマッピングします。 例えば、「ランニングシューズ」と「ジョギングスニーカー」が同じタイプの製品を参照していることをシステムが認識し、次のことが可能になります。
+
+- 同義語認識
+- コンテキスト関連度
+- あいまいなクエリ、スペルミスのクエリ、複合クエリのインテリジェントな処理
+- 自然言語および会話言語の理解
+
+ベータ版プログラムへの招待をリクエストするには、[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com) にメールを送信します。 Adobe チームは、次のステップと実施要件で対応します。
+
 ### Cloud Automation Patching Service （Private Beta）
 
-[Cloud Automation Patching Service](../tools/caps-tool/intro.md) は、クラウドインフラストラクチャー上の [Adobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/overview) 環境に個別のセキュリティパッチを適用するプロセスを自動化します。
+[Cloud Automation Patching Service](../tools/caps-tool/intro.md) は、クラウドインフラストラクチャー上の [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) 環境に個別のセキュリティパッチを適用するプロセスを自動化します。
 
-2025 年 10 月に、Cloud Automation パッチ適用サービスのベータ版リリースが [Site-Wide Analysis tool ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) に追加されます。 このサービスは、以下を含む合理化されたパッチ適用ワークフローで、Commerce プロジェクト管理者をサポートします。
+2025 年 10 月に、Cloud Automation パッチ適用サービスのベータ版リリースが [Site-Wide Analysis tool ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) に追加されます。 このサービスは、以下を含む合理化されたパッチ適用ワークフローで、Commerce プロジェクト管理者をサポートします。
 
 - パッチの自動インストール
 - ロールバック・リカバリ
@@ -47,9 +60,9 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様お
 
 >[!NOTE]
 >
->クラウド自動修正パッチサービスは個別のセキュリティパッチを自動的に適用するので、これを使用するには [&#x200B; 投稿者またはプロジェクト管理者の役割 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/project/user-access) が必要です。
+>クラウド自動修正パッチサービスは個別のセキュリティパッチを自動的に適用するので、これを使用するには [ 投稿者またはプロジェクト管理者の役割 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) が必要です。
 
-このベータ版に参加するには、[Cloud Automation Patching Service - Beta サインアップフォーム &#x200B;](https://forms.office.com/r/3Wfxj5nPdB) に記入して送信します。
+このベータ版に参加するには、[Cloud Automation Patching Service - Beta サインアップフォーム ](https://forms.office.com/r/3Wfxj5nPdB) に記入して送信します。
 
 ### IBM Sterling Order Management System Integration （Private Beta）
 
@@ -71,7 +84,7 @@ Adobe Commerce Foundation の各アルファ版およびベータ版のリリー
 - GraphQLの改善点
 - 一般的な品質のバグ修正
 - コミュニティの投稿
-- [Adobe Commerce サービスとの互換性をサポートするために必要な変更 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
+- [Adobe Commerce サービスとの互換性をサポートするために必要な変更 ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### 命名規則とスケジュール
 
@@ -87,18 +100,18 @@ Beta リリースパッケージには `-betaX` サフィックスがありま�
 - `2.4.7-beta1`
 - `2.4.7-beta2`
 
-今後の公開アルファ版およびベータ版のリリース日のリストについては、[&#x200B; リリーススケジュール &#x200B;](schedule.md) を参照してください。
+今後の公開アルファ版およびベータ版のリリース日のリストについては、[ リリーススケジュール ](schedule.md) を参照してください。
 
 #### リリースへのアクセス
 
 Adobe Commerceのアルファ版およびベータ版のリリースは、他のAdobe Commerceのパッチリリースと同じ方法で配布されます。つまり、`https://repo.magento.com` 上の Composer メタパッケージとして配布されます。 ソースコードは [GitHub](https://github.com/magento/magento2) で入手できます。
 
-詳細は、「[Composer インストール クイック スタート &#x200B;](../installation/composer.md)」を参照してください。
+詳細は、「[Composer インストール クイック スタート ](../installation/composer.md)」を参照してください。
 
 #### 問題レポート
 
 Adobeは、アルファ版およびベータ版のリリースに対して標準のAdobe サポートサービスを提供しません。
 
-アルファ版およびベータ版リリースに関連するフィードバックを送信するには、[GitHub](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) の [&#x200B; 通常のイシューレポートフロー &#x200B;](https://github.com/magento/magento2) に従います。
+アルファ版およびベータ版リリースに関連するフィードバックを送信するには、[GitHub](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) の [ 通常のイシューレポートフロー ](https://github.com/magento/magento2) に従います。
 
 Adobeは、最新のアルファ版またはベータ版のリリースに対して報告されたすべての重要な問題を監視し、GA リリース日より前に解決されるように優先順位を付けます。
