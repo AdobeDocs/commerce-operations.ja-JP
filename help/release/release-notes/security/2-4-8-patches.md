@@ -69,7 +69,7 @@ Adobe Commerce 2.4.8-p1 セキュリティリリースは、2.4.8 の以前の�
 
 >[!BEGINSHADEBOX]
 
-CVE-2025-47110 および VULN-31547 の修正も、独立したパッチとして使用できます。 詳しくは、[ ナレッジベースの記事 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) を参照してください。
+CVE-2025-47110 および VULN-31547 の修正も、独立したパッチとして使用できます。 詳しくは、[&#x200B; ナレッジベースの記事 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) を参照してください。
 
 >[!ENDSHADEBOX]
 
