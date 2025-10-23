@@ -1,7 +1,7 @@
 ---
-source-git-commit: c71367c553dce66c146540389461f36eaa529bfc
+source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -30,31 +30,31 @@ _AC-14104_
 
 jQuery 検証ライブラリをバージョン 1.21.0 にアップグレードして、フォームの検証機能を強化し、ユーザーエクスペリエンスを向上し、管理インターフェイスとフロントエンドインターフェイスの両方ですべてのAdobe Commerce フォームに最新のブラウザー互換性を確保しました。
 
-_AC-14403 - [GitHub コードの投稿 &#x200B;](https://github.com/magento/magento2/commit/98b2848a)_
+_AC-14403 - [GitHub コードの投稿 ](https://github.com/magento/magento2/commit/98b2848a)_
 
 #### 最新バージョンの jquery-ui を調査する
 
 jQuery UI ライブラリをバージョン 1.14.1 にアップグレードして、ユーザーインターフェイスウィジェットを強化し、アクセシビリティを向上し、すべてのAdobe Commerce管理コンポーネントとフロントエンドインターフェイスコンポーネントで最新のブラウザー互換性を確保しました。
 
-_AC-14417 - [GitHub コードの投稿 &#x200B;](https://github.com/magento/magento2/commit/77c589a6)_
+_AC-14417 - [GitHub コードの投稿 ](https://github.com/magento/magento2/commit/77c589a6)_
 
 #### 最新バージョン less.js を調査します。
 
 Less.js CSS プリプロセッサーをバージョン 4.2.2 にアップグレードして、CSS コンパイルのパフォーマンスを高め、構文のサポートを強化し、すべてのAdobe Commerce フロントエンドおよび管理テーマにわたってテーマのビルドプロセスを最新化しました。
 
-_AC-14418 - [GitHub コードの投稿 &#x200B;](https://github.com/magento/magento2/commit/98b2848a)_
+_AC-14418 - [GitHub コードの投稿 ](https://github.com/magento/magento2/commit/98b2848a)_
 
 #### 最新バージョン moment-timezone-with-data.js を調査します。
 
 Moment Timezone ライブラリをバージョン 0.5.43 にアップグレードして、タイムゾーン処理機能を強化し、最新の IANA タイムゾーンデータベース変更でタイムゾーンデータを更新し、Adobe Commerceの国際およびマルチタイムゾーン操作すべてで日付/時刻の処理の精度を高めました。
 
-_AC-14419 - [GitHub コードの投稿 &#x200B;](https://github.com/magento/magento2/commit/98b2848a)_
+_AC-14419 - [GitHub コードの投稿 ](https://github.com/magento/magento2/commit/98b2848a)_
 
 #### 最新バージョンの underscore.js の調査
 
 Underscore.js ユーティリティライブラリをバージョン 1.13.7 にアップグレードして、JavaScriptの機能プログラミング機能を強化し、データ操作のパフォーマンスを向上し、Adobe Commerceのすべてのフロントエンドコンポーネントと管理インターフェイスコンポーネントにおける最新のブラウザー互換性を確保しました。
 
-_AC-14420 - [GitHub コードの投稿 &#x200B;](https://github.com/magento/magento2/commit/98b2848a)_
+_AC-14420 - [GitHub コードの投稿 ](https://github.com/magento/magento2/commit/98b2848a)_
 
 #### TinyMCE からHugerte.orgへの移行
 
@@ -101,7 +101,7 @@ USPS が 2026 年 1 月 25 日（PT）までに従来の Web Tools API の廃止
 * データフォーマットの改善：よりクリーンで効率的な通信のために、XML から JSON に移行されました。
 * 新しい管理フィールド：
    * ゲートウェイ REST URL （モード：開発またはライブに基づく）
-   * クライアント ID と秘密鍵
+   * クライアント ID &amp;amp; シークレット
    * 勘定科目タイプ、勘定科目番号
    * CRID、MID、メーラー識別コード
    * 国際出荷用の AES/ITN
