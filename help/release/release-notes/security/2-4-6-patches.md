@@ -185,7 +185,7 @@ Adobe Commerce 2.4.6-p3 セキュリティリリースは、以前のリリー�
 
 ### このリリースに含まれるホットフィックス
 
-Adobe Commerce 2.4.6-p3 には、パッチ ACSD-51892 によって修正された、パフォーマンスの低下の解決策が含まれています。 マーチャントは、このパッチで対処される問題の影響を受けません。詳しくは、ナレッジベースの記事 [ACSD-51892：設定ファイルが複数回読み込まれるパフォーマンスの問題 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.html) を参照してください。
+Adobe Commerce 2.4.6-p3 には、パッチ ACSD-51892 によって修正された、パフォーマンスの低下の解決策が含まれています。 マーチャントは、このパッチで対処される問題の影響を受けません。詳しくは、ナレッジベースの記事 [ACSD-51892：設定ファイルが複数回読み込まれるパフォーマンスの問題 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.html) を参照してください。
 
 ### 既知の問題
 
@@ -206,7 +206,7 @@ Adobe Commerce 2.4.6-p2 セキュリティリリースは、以前のリリー�
 
 ### CVE-2022-31160 のホットフィックスを適用する
 
-`jQuery-UI` library バージョン 1.13.1 には、Adobe CommerceおよびMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceとMagento Open Source 2.4.4、2.4.5、2.4.6 の依存関係です。影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事の 2.4.4、2.4.5、2.4.6 リリースの [jQuery UI のセキュリティ脆弱性 CVE-2022-31160 の修正で指定されたパッチを適用する必要 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) あります。
+`jQuery-UI` library バージョン 1.13.1 には、Adobe CommerceおよびMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceとMagento Open Source 2.4.4、2.4.5、2.4.6 の依存関係です。影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事の 2.4.4、2.4.5、2.4.6 リリースの [jQuery UI のセキュリティ脆弱性 CVE-2022-31160 の修正で指定されたパッチを適用する必要 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) あります。
 
 ### ハイライト
 
@@ -214,7 +214,7 @@ Adobe Commerce 2.4.6-p2 セキュリティリリースは、以前のリリー�
 
 ### このリリースに含まれるホットフィックス
 
-Adobe Commerce 2.4.6-p2 には、パッチ ACSD-51892 によって対処されたパフォーマンスの低下の解決が含まれています。 マーチャントは、このパッチで対処される問題の影響を受けません。詳しくは、ナレッジベースの記事 [ACSD-51892：設定ファイルが複数回読み込まれるパフォーマンスの問題 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.html) を参照してください。
+Adobe Commerce 2.4.6-p2 には、パッチ ACSD-51892 によって対処されたパフォーマンスの低下の解決が含まれています。 マーチャントは、このパッチで対処される問題の影響を受けません。詳しくは、ナレッジベースの記事 [ACSD-51892：設定ファイルが複数回読み込まれるパフォーマンスの問題 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.html) を参照してください。
 
 ## 2.4.6-p1
 
@@ -224,7 +224,7 @@ Adobe Commerce 2.4.6-p1 セキュリティリリースは、以前のリリー�
 
 ### CVE-2022-31160 のホットフィックスを適用する
 
-`jQuery-UI` library バージョン 1.13.1 には、Adobe CommerceおよびMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceとMagento Open Source 2.4.4、2.4.5、2.4.6 の依存関係です。影響を受けるデプロイメントを実行しているマーチャントは、[Query UI セキュリティ脆弱性 CVE-2022-31160 の 2.4.4、2.4.5、2.4.6 リリースの修正 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) ナレッジベース記事で指定されたパッチを適用する必要があります。
+`jQuery-UI` library バージョン 1.13.1 には、Adobe CommerceおよびMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceとMagento Open Source 2.4.4、2.4.5、2.4.6 の依存関係です。影響を受けるデプロイメントを実行しているマーチャントは、[Query UI セキュリティ脆弱性 CVE-2022-31160 の 2.4.4、2.4.5、2.4.6 リリースの修正 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) ナレッジベース記事で指定されたパッチを適用する必要があります。
 
 #### ハイライト
 
@@ -256,6 +256,6 @@ Adobe Commerce 2.4.6-p1 セキュリティリリースは、以前のリリー�
   Installation failed, reverting ./composer.json and ./composer.lock to their original content.
   ```
 
-  この問題は、[ 安定タグ ](https://getcomposer.org/doc/04-schema.md#package-links) を備えた B2B セキュリティパッケージの手動依存関係を追加することで解決できます。 詳しくは、[B2B リリースノート ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html#known-issue) を参照してください。
+  この問題は、[&#x200B; 安定タグ &#x200B;](https://getcomposer.org/doc/04-schema.md#package-links) を備えた B2B セキュリティパッケージの手動依存関係を追加することで解決できます。 詳しくは、[B2B リリースノート &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html#known-issue) を参照してください。
 
 <!-- Last updated from includes: 2025-10-22 11:16:25 -->
