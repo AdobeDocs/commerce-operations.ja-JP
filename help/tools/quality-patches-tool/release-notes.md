@@ -3,9 +3,9 @@ title: リリースノート
 description: Adobe Commerceで使用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 8ca7b1b616bd5733cc2ecc18cef50dbb176ea0c3
+source-git-commit: 828be0e395980ddd9fca3424dc08324c3fe87244
 workflow-type: tm+mt
-source-wordcount: '29060'
+source-wordcount: '29260'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,21 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce プロジェクトにパッチを適用する手順については、[&#x200B; パッチの適用 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja#apply-individual-patches) を参照してください。 リリース済みパッチの完全なリストを確認するには、『ソフトウェア更新ガイド』の「[[!DNL Quality Patches Tool]：パッチの検索 &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)」を参照してください。
+>Adobe Commerce プロジェクトにパッチを適用する手順については、[ パッチの適用 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) を参照してください。 リリース済みパッチの完全なリストを確認するには、『ソフトウェア更新ガイド』の「[[!DNL Quality Patches Tool]：パッチの検索 ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
 
 >[!INFO]
 >
->コミュニティがMagento Open Source用に作成した [!DNL quality patches] について詳しくは、[&#x200B; リリースノート &#x200B;](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+>コミュニティがMagento Open Source用に作成した [!DNL quality patches] について詳しくは、[ リリースノート ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+
+## v1.1.73 {#v1-1-73}
+
+* **ACSD-67171** （Adobe Commerce >=2.4.4 &lt;2.4.9 の場合） - B2B ユーザーのセッションの有効期限が切れたり、チェックアウト時にセッションが削除されたりした場合に、*[!UICONTROL Access Denied]* ページが表示される問題を修正しました。
+* **ACSD-67908** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.9 の場合） – マルチストアの設定で JS ファイルが正しく結合されない問題を修正しました。
+* **ACSD-68190** （Adobe Commerce >=2.4.4 &lt;2.4.7 の場合） – 割引が適用されない、適用された割引がGraphQLの買い物かご表示の応答に正しく表示されない、クーポン割引を削除するとクーポン以外の割引が削除される問題を修正しました。
+* **ACSD-68206** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.9 の場合） - **[!UICONTROL Rate Limiting]** 拡張機能がインストールされた [!DNL PHP Redis] 機能でGraphQL アプリケーションサーバーを使用した際のエラーを修正しました。
+* **ACSD-68356** （Adobe CommerceおよびMagento Open Source >=2.4.8 &lt;2.4.9 の場合） - GraphQLの買い物かごクエリで、バーチャル見積もりについて誤った割引額が返される問題を修正しました。
+* **ACSD-68391** （Adobe Commerce >=2.4.6-p10 &lt;2.4.9） – **[!UICONTROL Quick Order]** および **[!UICONTROL Requisition Lists]** でカテゴリ関連の権限が正しく適用されなかった問題を修正しました。
+* **ACSD-68400** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.8 の場合） – バーチャルギフトカードの数量が在庫予約テーブルに正確に反映されない問題を修正しました。
 
 ## v1.1.72 {#v1-1-72}
 
