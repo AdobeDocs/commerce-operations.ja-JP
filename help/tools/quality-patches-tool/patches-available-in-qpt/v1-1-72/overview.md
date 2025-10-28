@@ -4,9 +4,9 @@ description: このサブセクションでは、 [!DNL Quality Patches Tool]  �
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4a3060235a4d22764cbb231aca7c1f835d357906
+source-git-commit: 3493a89d40e3dee377be715e71e2f977a3afd382
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ QPT v1.1.72 には、次のパッチが含まれています。
 1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**：キャッシュのフラッシュ後、`media_gallery` エントリが買い物かごGraphQLの商品ノードに返されない。
 1. **ACSD-67946**：買い物かごの更新で、重複したエラーバナーが表示される。
 1. **ACSD-68011**:/V1/sharedCatalog/:id/assignProducts API を介して共有カタログに割り当てられた、存在しない SKU。
-1. **ACSD-68118**:GraphQL クエリ `customerCart`、ストアヘッダーを反映していない product 属性値を返すため、ローカリゼーションに一貫性がなくなります。
+1. **ACSD-68118**: `customerCart` クエリ [!DNL GraphQL]、ストア ビューの誤った製品属性値を返します。
 1. **ACSD-68092**：予定されているアップデートとベース製品データの間の不適切な同期により、複数の保存後にバンドル製品オプションが失われる。
 1. **ACSD-67424**:`updated_at` `GET /carts/search` API 応答の [!DNL REST] 値が、ネゴシエート可能な引用符を使用するときに **[!UICONTROL Admin panel]** に表示される値と一致しません。
 1. **ACSD-67187**：デフォルト以外の web サイトに制限された管理者ユーザーに、「*続行するには少なくとも 1 つの公開共有カタログを作成してください* というエラーが表示され、会社グリッドの「**[!UICONTROL Add New Company]**」ボタンにアクセスできません。
