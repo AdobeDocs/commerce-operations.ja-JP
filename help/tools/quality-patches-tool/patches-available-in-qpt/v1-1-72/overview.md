@@ -4,9 +4,9 @@ description: このサブセクションでは、 [!DNL Quality Patches Tool]  �
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 87f2d57e60ca74e2c90107a0d38517049802c89e
+source-git-commit: 4e2c22626701e342920c8f60caff56af23712306
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 QPT v1.1.72 には、次のパッチが含まれています。
 1. **ACSD-68040**:[!DNL MariaDB] 10.6 でフロントエンド検索ページの速度が低下し、履歴が大きくなる。
 1. **ACSD-67941**：不明なフィルター名を持つGraphQL リクエストが原因で PHP 例外ログが発生する。
-1. **ACSD-68064**：スケジュールされた更新を作成すると、ネストされたカテゴリの数が多い環境でエントリが重複します。
+1. **ACSD-68064**：深くネストされたカテゴリを含む環境で、スケジュールされた更新中に重複エントリが作成されます。
 1. **ACSD-66807**:`report_viewed_product_index` のテーブルに表示される製品ページビューの数が正しくありません。
 1. **ACSD-67383**：同じセッションで 2 つの会社管理者アカウントを持つ顧客としてログインすると、*cartId のそのようなエンティティがありません* エラーが発生する。
 1. **ACSD-67518**：詳細レポートでは、行数がバッチサイズを超えると、重複したヘッダー行が生成されます。
