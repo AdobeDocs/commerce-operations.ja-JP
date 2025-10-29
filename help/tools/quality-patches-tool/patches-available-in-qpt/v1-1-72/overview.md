@@ -4,9 +4,9 @@ description: このサブセクションでは、 [!DNL Quality Patches Tool]  �
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3493a89d40e3dee377be715e71e2f977a3afd382
+source-git-commit: 87f2d57e60ca74e2c90107a0d38517049802c89e
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,7 @@ QPT v1.1.72 には、次のパッチが含まれています。
 1. **ACSD-67383**：同じセッションで 2 つの会社管理者アカウントを持つ顧客としてログインすると、*cartId のそのようなエンティティがありません* エラーが発生する。
 1. **ACSD-67518**：詳細レポートでは、行数がバッチサイズを超えると、重複したヘッダー行が生成されます。
 1. **ACSD-67639**:**[!UICONTROL Dynamic Price]** が *No* に設定されているバンドル製品のクレジットメモの作成に失敗する。
+1. **ACSD-67946**：買い物かごの更新で、重複したエラーバナーが表示される。
 1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**：キャッシュのフラッシュ後、`media_gallery` エントリが買い物かごGraphQLの商品ノードに返されない。
 1. **ACSD-67946**：買い物かごの更新で、重複したエラーバナーが表示される。
 1. **ACSD-68011**:/V1/sharedCatalog/:id/assignProducts API を介して共有カタログに割り当てられた、存在しない SKU。
