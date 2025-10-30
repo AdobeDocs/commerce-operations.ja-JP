@@ -53,7 +53,7 @@ ht-degree: 0%
 
 Adobe Cloud 自動パッチサービスの概要と、このツールを使用してセキュリティパッチをすばやく見つけて適用する方法について説明します。 次のビデオでは、SWAT ダッシュボードからアクセスする方法、プロジェクトと環境を選択する方法、ワンクリックでパッチを適用する方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476248/?captions=jpn&learn=on&enablevpops)
 
 ## 一般的なユースケース
 
