@@ -4,9 +4,9 @@ description: このサブセクションでは、 [!DNL Quality Patches Tool]  �
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4e2c22626701e342920c8f60caff56af23712306
+source-git-commit: 43696165e24e39e25007b5864f8b0c3d0bcb92c2
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ QPT v1.1.72 には、次のパッチが含まれています。
 1. **ACSD-67941**：不明なフィルター名を持つGraphQL リクエストが原因で PHP 例外ログが発生する。
 1. **ACSD-68064**：深くネストされたカテゴリを含む環境で、スケジュールされた更新中に重複エントリが作成されます。
 1. **ACSD-66807**:`report_viewed_product_index` のテーブルに表示される製品ページビューの数が正しくありません。
-1. **ACSD-67383**：同じセッションで 2 つの会社管理者アカウントを持つ顧客としてログインすると、*cartId のそのようなエンティティがありません* エラーが発生する。
+1. **ACSD-67383**：同じセッションで、2 つの会社管理者アカウントを持つ顧客としてログインする際にエラーが発生します。
 1. **ACSD-67518**：詳細レポートでは、行数がバッチサイズを超えると、重複したヘッダー行が生成されます。
 1. **ACSD-67639**:**[!UICONTROL Dynamic Price]** が *No* に設定されているバンドル製品のクレジットメモの作成に失敗する。
 1. **ACSD-67946**：買い物かごの更新で、重複したエラーバナーが表示される。
