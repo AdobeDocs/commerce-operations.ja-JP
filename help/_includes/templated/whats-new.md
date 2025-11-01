@@ -23,7 +23,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424">ACSD-67424:GET /carts/search REST API 応答の Updated_at 値が、交渉可能な引用符を使用するときに管理パネルに表示される値と一致しません </a> の QPT 1.1.72 修正の詳細な説明を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424">ACSD-67424:GET /carts/search REST API 応答の Updated_at 値が、交渉可能な引用符を使用するときに管理パネルに表示される値と一致しません </a> の QPT 1.1.72 修正の詳細な説明を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -31,7 +31,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b8967a4cc8006fc5fa4319f7ffd6d8c7f3edf3d1">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383">ACSD-67383：同じセッションで 2 つの会社管理者アカウントを持つ顧客としてログインすると、「cartId を持つそのようなエンティティがありません」というエラーが発生する </a> の QPT 1.1.72 の修正の詳細な説明を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383">ACSD-67383：同じセッションで 2 つの会社管理者アカウントを持つ顧客としてログインすると、「cartId を持つそのようなエンティティがありません」というエラーが発生する </a> の QPT 1.1.72 の修正の詳細な説明を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -53,7 +53,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview"> 概要：品質向上パッチツール（QPT） v1.1.73</a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview"> 概要：品質向上パッチツール（QPT） v1.1.73</a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -75,7 +75,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064">ACSD-68064：スケジュールされた更新を作成すると、ネストされたカテゴリの数が多い環境でエントリが重複します </a>。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064">ACSD-68064：スケジュールされた更新を作成すると、ネストされたカテゴリの数が多い環境でエントリが重複します </a>。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -83,7 +83,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b8d4046ce9ea0d085cc11f5631d04a8b3adb3239">コミット</a></td>
     </tr>
     <tr>
-      <td><p>の QPT 1.1.72 修正の詳細な説明を追加しました <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946">ACSD-67946：買い物かごの更新に重複したエラーバナーが表示されます </a>。</p>
+      <td><p>の QPT 1.1.72 修正の詳細な説明を追加しました <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946">ACSD-67946：買い物かごの更新に重複したエラーバナーが表示されます </a>。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -113,7 +113,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>の QPT 1.1.72 修正の詳細な説明を追加しました <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68040">ACSD-68040：フロントエンド検索ページは、多くの履歴検索リクエストを含む MariaDB 10.6 および 11.4 でパフォーマンスの低下が発生します </a>。</p>
+      <td><p>の QPT 1.1.72 修正の詳細な説明を追加しました <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68040">ACSD-68040：フロントエンド検索ページは、多くの履歴検索リクエストを含む MariaDB 10.6 および 11.4 でパフォーマンスの低下が発生します </a>。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -121,7 +121,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6dff1447a89c083fb8bd867281d20462cc843baa">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118">ACSD-68118:CustomerCart GraphQL クエリで製品属性値が返されるが、ストアヘッダーが反映されず、ローカリゼーションの不一致が発生します </a>。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118">ACSD-68118:CustomerCart GraphQL クエリで製品属性値が返されるが、ストアヘッダーが反映されず、ローカリゼーションの不一致が発生します </a>。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -129,7 +129,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7dec696f3d87d91902a166314199cf3b6c161f85">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-66807">ACSD-66807:Report_viewed_product_index テーブルに対する QPT 1.1.72 の修正の詳細な説明を追加しました。製品ページビュー数 </a> が正しくありません。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-66807">ACSD-66807:Report_viewed_product_index テーブルに対する QPT 1.1.72 の修正の詳細な説明を追加しました。製品ページビュー数 </a> が正しくありません。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -151,7 +151,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639">ACSD-67639：動的価格が No</a> に設定されているバンドル製品のクレジットメモの作成が失敗する QPT 1.1.72 の修正の詳細な説明を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639">ACSD-67639：動的価格が No</a> に設定されているバンドル製品のクレジットメモの作成が失敗する QPT 1.1.72 の修正の詳細な説明を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
