@@ -2,9 +2,9 @@
 title: 共有責任セキュリティと運用モデル
 description: Adobe Commerce on cloud infrastructure プロジェクトに関与する各パーティのセキュリティ上の責任について説明します。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: fcaf6ff1dce1c1a5084307cd366ca58d71a8f4e4
+source-git-commit: aac78fc95b86951f352a636eef33e0b79b22a183
 workflow-type: tm+mt
-source-wordcount: '2850'
+source-wordcount: '2939'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 この共有モデルを使用すると、マーチャントは、運用に関する責任とコストを最小限に抑えながら、ビジネス要件を満たす柔軟性とカスタマイズ性に優れた拡張性の高いソリューションを設計および実装できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3458393/?captions=jpn&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3458392/?learn=on&enablevpops)
 
 一般に、Adobeは次の役割を担います。
 
@@ -745,9 +745,9 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 
 |     | Adobe | 商人 |
 | --- | --- | --- |
-| Elasticsearchの提供状況 | R |   |
-| デフォルトのElasticsearch設定の指定 | R |   |
-| インストールされたAdobe Commerceと互換性のあるElasticsearchのバージョンをインストールするために、サービスリクエストを送信する |  | R |
+| Elasticsearchまたは OpenSearch の提供 | R |   |
+| デフォルトのElasticsearchまたは OpenSearch 設定の指定 | R |   |
+| サービスリクエストを送信して、インストールされたAdobe Commerceのバージョンと互換性のあるElasticsearchまたは OpenSearch のバージョンをインストールする |  | R |
 
 {style="table-layout:auto"}
 
@@ -793,11 +793,17 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 
 {style="table-layout:auto"}
 
+>
+>マーチャントは、最新バージョンの Live Search、製品レコメンデーション、支払いサービスを使用して、最高の安定性、機能、サポート実施要件を確保する必要があります。
+>Adobeは古いバージョンをサポートしていません。アップグレードにより、最新の機能強化とバグ修正を活用できます。
+>サポートされているバージョンについて詳しくは、[Commerce サービスの製品可用性マトリックス ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services) を参照してください。
+
 #### 製品レコメンデーション
 
 |     | Adobe | 商人 |
 | --- | --- | --- |
 | Product Recommendations サービスの可用性 | R |   |
+| Product Recommendations モジュールのアップグレード |   | R |
 
 {style="table-layout:auto"}
 
@@ -806,6 +812,7 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 |     | Adobe | 商人 |
 | --- | --- | --- |
 | Live Search サービスの可用性 | R |   |
+| Live Search モジュールのアップグレード |   | R |
 
 {style="table-layout:auto"}
 
@@ -820,6 +827,15 @@ Adobeは、Adobe Commerceのクラウドサーバーインフラストラクチ�
 | コア AEM EDS の実装（Commerce Boilerplate） | R |   |
 | カスタム AEM EDS の実装 |  | R |
 | その他のカスタムストアフロントの実装 |  | R |
+
+{style="table-layout:auto"}
+
+#### 支払いサービス
+
+|     | Adobe | 商人 |
+| --- | --- | --- |
+| 支払いサービスの利用可能性 | R |   |
+| 支払モジュールのアップグレード |   | R |
 
 {style="table-layout:auto"}
 
