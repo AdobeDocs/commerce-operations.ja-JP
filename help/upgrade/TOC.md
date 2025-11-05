@@ -55,4 +55,4 @@ ht-degree: 4%
 - リソース {#resources}
    - [推奨読み取り](resources/recommended-reading.md)
    - [Adobe Commerceを使用したプラットフォームの最新化](resources/recommended-upgrade-paths.md)
-- [&#x200B; 運用ガイドに戻る &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [&#x200B; 運用ガイドに戻る &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
