@@ -3,10 +3,10 @@ user-guide-title: アップグレードガイド
 user-guide-description: Adobe Commerce アプリケーションのアップグレードが非常に重要な理由と、アップグレードを正常に計画および実行する方法を説明します。
 feature: Upgrade
 topic: Administration, Commerce, Development, Upgrade
-source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
+source-git-commit: 4616cc6990921b531483213f2904a24b483fb7ac
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 5%
+source-wordcount: '144'
+ht-degree: 4%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 5%
    - [プラットフォームの変更のレビュー](prepare/platform-changes.md)
    - [アップグレードの前提条件の完了](prepare/prerequisites.md)
    - [Elasticsearchから OpenSearch への移行](prepare/opensearch-migration.md)
+   - [RabbitMQ から ActiveMQ への移行](prepare/activemq-migration.md)
    - [アップグレードの範囲について](prepare/scope.md)
 - 実装 {#implementation}
    - [アップグレードの実行](implementation/perform-upgrade.md)
@@ -54,4 +55,4 @@ ht-degree: 5%
 - リソース {#resources}
    - [推奨読み取り](resources/recommended-reading.md)
    - [Adobe Commerceを使用したプラットフォームの最新化](resources/recommended-upgrade-paths.md)
-- [&#x200B; 運用ガイドに戻る &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
+- [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
