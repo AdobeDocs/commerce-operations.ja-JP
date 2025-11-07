@@ -2,9 +2,9 @@
 title: Adobe Commerce ソフトウェアの入手
 description: Adobe Commerce ソフトウェアのダウンロード方法について説明します。
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 0659c19e24e90ca4e3a7ac1c04914bda82b766dd
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,13 @@ ht-degree: 0%
 
 ## ソフトウェアの入手方法
 
-魅力的な新機能やリリースの提供状況を確認し、それらを入手する方法については、アドビの [&#x200B; 製品提供ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability) を参照してください。
+[ 製品の可用性ページ ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) で、Adobeが作成した拡張機能およびAdobe CommerceおよびMagento Open Source用Commerce サービスの可用性と互換性を確認してください。
+
+>[!NOTE]
+>
+>ポリシーが変更されたため、Adobe Commerce コードベースは Composer を介して排他的に配布されるようになりました。 コードベースが「ダウンロード」セクションで使用できなくなったので、Composer を使用してリストに表示されたAdobe Commerce バージョンのいずれかをダウンロードします。
+>
+>詳しくは、[ クラウドインフラストラクチャ上のAdobe Commerceで請求明細にアクセスしてコードベースをダウンロードできない ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611) を参照してください。
 
 Adobe Commerceのインストールの概要については、次の表を参照してください。
 
@@ -62,4 +68,4 @@ UNIX システムでは、Web サーバーや PHP などのソフトウェアを
 
 Web サーバーがこれらのファイルを操作できない可能性があるので *web サーバーの docroot にアプリケーションを* ユーザーとしてインストールし `root` いでください。
 
-`root` ファイルシステム所有者 [&#x200B; を作成し、その所有者を web サーバーのグループに追加するには、](file-system/overview.md) 権限が必要です。 ファイルシステムの所有者を使用して、コマンドラインから `bin/magento` コマンドを実行したり、タスクをスケジュールする cron ジョブを設定したりできます。
+`root` ファイルシステム所有者 [ を作成し、その所有者を web サーバーのグループに追加するには、](file-system/overview.md) 権限が必要です。 ファイルシステムの所有者を使用して、コマンドラインから `bin/magento` コマンドを実行したり、タスクをスケジュールする cron ジョブを設定したりできます。
