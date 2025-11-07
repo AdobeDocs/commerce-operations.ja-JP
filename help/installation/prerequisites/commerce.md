@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## ソフトウェアの入手方法
 
-[ 製品の可用性ページ ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) で、Adobeが作成した拡張機能およびAdobe CommerceおよびMagento Open Source用Commerce サービスの可用性と互換性を確認してください。
+[&#x200B; 製品の可用性ページ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) で、Adobeが作成した拡張機能およびAdobe CommerceおよびMagento Open Source用Commerce サービスの可用性と互換性を確認してください。
 
 >[!NOTE]
 >
 >ポリシーが変更されたため、Adobe Commerce コードベースは Composer を介して排他的に配布されるようになりました。 コードベースが「ダウンロード」セクションで使用できなくなったので、Composer を使用してリストに表示されたAdobe Commerce バージョンのいずれかをダウンロードします。
 >
->詳しくは、[ クラウドインフラストラクチャ上のAdobe Commerceで請求明細にアクセスしてコードベースをダウンロードできない ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611) を参照してください。
+>詳しくは、[&#x200B; クラウドインフラストラクチャ上のAdobe Commerceで請求明細にアクセスしてコードベースをダウンロードできない &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611) を参照してください。
 
 Adobe Commerceのインストールの概要については、次の表を参照してください。
 
@@ -68,4 +68,4 @@ UNIX システムでは、Web サーバーや PHP などのソフトウェアを
 
 Web サーバーがこれらのファイルを操作できない可能性があるので *web サーバーの docroot にアプリケーションを* ユーザーとしてインストールし `root` いでください。
 
-`root` ファイルシステム所有者 [ を作成し、その所有者を web サーバーのグループに追加するには、](file-system/overview.md) 権限が必要です。 ファイルシステムの所有者を使用して、コマンドラインから `bin/magento` コマンドを実行したり、タスクをスケジュールする cron ジョブを設定したりできます。
+`root` ファイルシステム所有者 [&#x200B; を作成し、その所有者を web サーバーのグループに追加するには、](file-system/overview.md) 権限が必要です。 ファイルシステムの所有者を使用して、コマンドラインから `bin/magento` コマンドを実行したり、タスクをスケジュールする cron ジョブを設定したりできます。
