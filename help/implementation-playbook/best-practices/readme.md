@@ -18,7 +18,7 @@ Adobeは、次のグループに属する個人を含む（ただし、これに
 
 ## リクエストを作成するにはどうすればよいですか？
 
-**内部の関係者** は、COMDOX プロジェクトで Jira の問題を開いてリクエストを送信できます。 **外部の関係者** は、このリポジトリで [GitHub イシュー &#x200B;](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose) を開くことで、リクエストを送信できます。
+**内部の関係者** は、COMDOX プロジェクトで Jira の問題を開いてリクエストを送信できます。 **外部の関係者** は、このリポジトリで [GitHub イシュー &#x200B;](https://github.com/AdobeDocs/commerce-operations.ja-JP/issues/new/choose) を開くことで、リクエストを送信できます。
 
 次のタイプのリクエストを送信できます。
 
@@ -29,7 +29,7 @@ Adobeは、次のグループに属する個人を含む（ただし、これに
 ## 全体的なプロセスはどのようなものですか？
 
 
-**Jira チケットまたはイシューの作成** – 内部の関係者が、COMDOX プロジェクトで Jira チケットを作成します。 外部の関係者が GitHub イシューを送信します。 Jira または [GitHub の問題 &#x200B;](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose) の完全な詳細を含めることで、チームがコンテキストを理解し、リクエストの優先順位を付けるのに役立ちます。
+**Jira チケットまたはイシューの作成** – 内部の関係者が、COMDOX プロジェクトで Jira チケットを作成します。 外部の関係者が GitHub イシューを送信します。 Jira または [GitHub の問題 &#x200B;](https://github.com/AdobeDocs/commerce-operations.ja-JP/issues/new/choose) の完全な詳細を含めることで、チームがコンテキストを理解し、リクエストの優先順位を付けるのに役立ちます。
 
 **Adobe プロジェクトチームは、リクエストを評価し、優先順位を付けます** - チームは定期的にリクエストをモニタリングし、優先度を判断したり、リクエストされた変更内容を評価して実装プレイブックのベストプラクティスに含めたりします。 例えば、新しいベストプラクティストピックを作成する代わりに、要求されたコンテンツをExperience LeagueまたはAdobe Developer サイト上の既存の製品ドキュメントに追加すべきだと判断する場合があります。
 

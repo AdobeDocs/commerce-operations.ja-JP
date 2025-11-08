@@ -614,7 +614,7 @@ ht-degree: 1%
       <td>
         メジャーアップデート
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/161">プル要求</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.ja-JP/pull/161">プル要求</a></td>
     </tr>
   </tbody>
 </table>
