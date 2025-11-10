@@ -17,4 +17,4 @@ ht-degree: 0%
 
 {{bics}}
 
-Composer を使用して、Commerceのインストールを最新のリリース バージョンに更新し、新機能、パフォーマンスの向上、およびセキュリティ パッチを活用します。 アップグレード手順について詳しくは、[Adobe Commerce アップグレードガイド ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) を参照してください。
+Composer を使用して、Commerceのインストールを最新のリリース バージョンに更新し、新機能、パフォーマンスの向上、およびセキュリティ パッチを活用します。 アップグレード手順について詳しくは、[Adobe Commerce アップグレードガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) を参照してください。
