@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントも、互換性のある最新の B2B セキュリティパッチリリースに更新する必要があります。 [B2B リリースノート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes) を参照してください。
+>このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントも、互換性のある最新の B2B セキュリティパッチリリースに更新する必要があります。 [B2B リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/release-notes) を参照してください。
 
 ## Adobe Commerceのみ {#ee-only}
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobeは、Adobeが提供する公式パッチをこの方式を使用して適用することはサポートしていません。 自己責任で以下の方法をご利用ください。 公式パッチを適用するには、[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} を使用します。 カスタムパッチをデプロイする前に、必ず包括的なテストを実施してください。
+>Adobeは、Adobeが提供する公式パッチをこの方式を使用して適用することはサポートしていません。 自己責任で以下の方法をご利用ください。 公式パッチを適用するには、[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"} を使用します。 カスタムパッチをデプロイする前に、必ず包括的なテストを実施してください。
 
 ## 2025 年 10 月のセキュリティパッチバックポート {#oct-2025-backports}
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 * **Apache ActiveMQ Artemis STOMP プロトコルのサポートを追加**
 
-  Simple Text Oriented Messaging Protocol （STOMP）を介した ActiveMQ Artemis オープンソースメッセージブローカーのサポートを追加しました。 信頼性と拡張性に優れたメッセージングシステムを提供し、STOMP ベースの統合に柔軟性を提供します。 [2&rbrace;Commerce Configuration Guide](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) の &lbrace;Apache ActiveMQ Artemis *を参照してください。*
+  Simple Text Oriented Messaging Protocol （STOMP）を介した ActiveMQ Artemis オープンソースメッセージブローカーのサポートを追加しました。 信頼性と拡張性に優れたメッセージングシステムを提供し、STOMP ベースの統合に柔軟性を提供します。 [2&rbrace;Commerce Configuration Guide](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) の &lbrace;Apache ActiveMQ Artemis *を参照してください。*
 
 ## チェックアウトページで static.min.js と mixins.min.js の読み込みに失敗する {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
 
@@ -116,4 +116,4 @@ JavaScriptのバンドルと縮小の両方が実稼働モードで有効にな�
 
 **ホットフィックス**:
 
-ホットフィックスが利用可能です。 パッチの詳細については、ナレッジベースの [JS の縮小とバンドルが有効な場合にチェックアウトが失敗する &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) を参照してください。
+ホットフィックスが利用可能です。 パッチの詳細については、ナレッジベースの [JS の縮小とバンドルが有効な場合にチェックアウトが失敗する &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27997) を参照してください。
