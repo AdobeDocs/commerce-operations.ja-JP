@@ -4,9 +4,9 @@ description: Adobe Commerce用の拡張された Valkey キャッシュ実装を
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: ca1598b0-07c6-4338-aed1-f2ba05375197
-source-git-commit: 75dc606da65196619028e99ec44841db3988a73e
+source-git-commit: 9157f0176ca562c25d87c873d220f8987917cb87
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -25,17 +25,17 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-クラウドインフラストラクチャー上の環境設定については、[`VALKEY_BACKEND` クラウドインフラストラクチャー上のCommerceガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) の __ を参照してください。
+クラウドインフラストラクチャー上の環境設定については、[`VALKEY_BACKEND` クラウドインフラストラクチャー上のCommerceガイド ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) の __ を参照してください。
 
-オンプレミスでのインストールの場合は、[&#x200B; 設定ガイド &#x200B;](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) の _Valkey ページのキャッシュの設定_ を参照してください。
+オンプレミスでのインストールの場合は、[ 設定ガイド ](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) の _Valkey ページのキャッシュの設定_ を参照してください。
 
 >[!NOTE]
 >
->`ece-tools` パッケージの最新バージョンを使用していることを確認します。 そうでない場合は [&#x200B; 最新バージョンにアップグレード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) します。 `composer show magento/ece-tools` CLI コマンドを使用すると、ローカル環境にインストールされているバージョンを確認できます。
+>`ece-tools` パッケージの最新バージョンを使用していることを確認します。 そうでない場合は [ 最新バージョンにアップグレード ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) します。 `composer show magento/ece-tools` CLI コマンドを使用すると、ローカル環境にインストールされているバージョンを確認できます。
 
 ### L2 キャッシュメモリのサイズ設定（Adobe Commerce Cloud）
 
-L2 キャッシュは、ストレージ メカニズムとして [&#x200B; 一時ファイル システム &#x200B;](https://en.wikipedia.org/wiki/Tmpfs) を使用します。 特殊なキー値データベース・システムと比較して、一時ファイル・システムには、メモリの使用を制御するためのキー削除ポリシーがありません。
+L2 キャッシュは、ストレージ メカニズムとして [ 一時ファイル システム ](https://en.wikipedia.org/wiki/Tmpfs) を使用します。 特殊なキー値データベース・システムと比較して、一時ファイル・システムには、メモリの使用を制御するためのキー削除ポリシーがありません。
 
 メモリ使用量の制御がないと、古くなったキャッシュが蓄積され、L2 キャッシュのメモリ使用量が時間の経過とともに増加する可能性があります。
 
@@ -85,13 +85,13 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Commerce詳しくは、[Cloud Infrastructure ガイドの &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)VALKEY_USE_SLAVE_CONNECTION _を参照してください_
+Commerce詳しくは、[Cloud Infrastructure ガイドの ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)VALKEY_USE_SLAVE_CONNECTION _を参照してください_
 
-Adobe Commerceのオンプレミスインストールの場合は、`bin/magento:setup` コマンドを使用して、新しい Valkey キャッシュ実装を設定します。 詳しくは、『 [&#x200B; 設定ガイド &#x200B;](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) の _デフォルトキャッシュに対する Valkey の使用_ を参照してください。
+Adobe Commerceのオンプレミスインストールの場合は、`bin/magento:setup` コマンドを使用して、新しい Valkey キャッシュ実装を設定します。 詳しくは、『 [ 設定ガイド ](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) の _デフォルトキャッシュに対する Valkey の使用_ を参照してください。
 
 >[!WARNING]
 >
->_拡張/分割アーキテクチャ_ を使用して、クラウドインフラストラクチャプロジェクト用の Valkey スレーブ接続を設定しないでください [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)。 これにより、Valkey 接続エラーが発生します。 詳しくは、[Cloud Infrastructure のCommerce](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) ガイドの _Valkey 設定ガイダンス_ を参照してください。
+>_拡張/分割アーキテクチャ_ を使用して、クラウドインフラストラクチャプロジェクト用の Valkey スレーブ接続を設定しないでください [](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)。 これにより、Valkey 接続エラーが発生します。 詳しくは、[Cloud Infrastructure のCommerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) ガイドの _Valkey 設定ガイダンス_ を参照してください。
 
 ## キーをプリロード
 
@@ -114,7 +114,7 @@ stage:
               - '061_SYSTEM_DEFAULT:hash'
 ```
 
-オンプレミス環境でのインストールについては、[&#x200B; 設定ガイド &#x200B;](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature) の _Valkey プリロード機能_ を参照してください。
+オンプレミス環境でのインストールについては、[ 設定ガイド ](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature) の _Valkey プリロード機能_ を参照してください。
 
 ## 古いキャッシュを有効にする
 
@@ -153,11 +153,11 @@ stage:
 
 >[!NOTE]
 >
->前の例では、`full_page` キャッシュは [Fastly](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/fastly) を使用しているので、クラウドインフラストラクチャプロジェクトのAdobe Commerceには関係ありません。
+>前の例では、クラウドインフラストラクチャプロジェクトのAdobe Commerceには `full_page` キャッシュが関係しません。それらのプロジェクトでは [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) が使用されているからです。
 
-オンプレミスのインストールを構成する方法については、[&#x200B; 構成ガイド &#x200B;](../../../configuration/cache/level-two-cache.md#stale-cache-options) の _古いキャッシュ オプション_ を参照してください。
+オンプレミスのインストールを構成する方法については、[ 構成ガイド ](../../../configuration/cache/level-two-cache.md#stale-cache-options) の _古いキャッシュ オプション_ を参照してください。
 
-デプロイメント中、[&#x200B; ビルドおよびデプロイログ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/test/log-locations#build-and-deploy-logs) に次の行が表示されます。
+デプロイメント中、[ ビルドおよびデプロイログ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#build-and-deploy-logs) に次の行が表示されます。
 
 ```
 W:   - Downloading colinmollenhour/credis (1.11.1)
@@ -173,7 +173,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 
 ## キャッシュ圧縮
 
-6 GB を超える Valkey `maxmemory` を使用している場合は、キャッシュ圧縮を使用して、キーが消費する領域を減らすことができます。 クライアントサイドのパフォーマンスにはトレードオフがあることに注意してください。 空きの CPU がある場合は、Adobeが有効にすることをお勧めします。 [&#x200B; 設定ガイド &#x200B;](../../../configuration/cache/valkey-session.md) の _セッションストレージに Valkey を使用_ を参照してください。
+6 GB を超える Valkey `maxmemory` を使用している場合は、キャッシュ圧縮を使用して、キーが消費する領域を減らすことができます。 クライアントサイドのパフォーマンスにはトレードオフがあることに注意してください。 空きの CPU がある場合は、Adobeが有効にすることをお勧めします。 [ 設定ガイド ](../../../configuration/cache/valkey-session.md) の _セッションストレージに Valkey を使用_ を参照してください。
 
 ```yaml
 stage:
