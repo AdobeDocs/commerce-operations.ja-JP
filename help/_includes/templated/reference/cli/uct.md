@@ -19,13 +19,13 @@ ht-degree: 1%
 
 ## 一般
 
-ツールについて詳しくは、[ 概要 ](/help/upgrade/upgrade-compatibility-tool/overview.md) を参照してください。
+ツールについて詳しくは、[&#x200B; 概要 &#x200B;](/help/upgrade/upgrade-compatibility-tool/overview.md) を参照してください。
 
 >[!NOTE]
 >
->`composer update` コマンドはこのツールのアップグレードには機能しません。[ 最新バージョンをダウンロードしてインストール ](/help/upgrade/upgrade-compatibility-tool/run.md) する必要があります。
+>`composer update` コマンドはこのツールのアップグレードには機能しません。[&#x200B; 最新バージョンをダウンロードしてインストール &#x200B;](/help/upgrade/upgrade-compatibility-tool/run.md) する必要があります。
 
-このリファレンスドキュメントは、アプリケーションソースコードから生成されます。 ドキュメントを変更するには、対応するコマンドのプルリクエストを関連する [ コードベース ](https://github.com/magento) リポジトリで開く必要があります。 詳しくは、[ コードの投稿 ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) を参照してください。
+このリファレンスドキュメントは、アプリケーションソースコードから生成されます。 ドキュメントを変更するには、対応するコマンドのプルリクエストを関連する [&#x200B; コードベース &#x200B;](https://github.com/magento) リポジトリで開く必要があります。 詳しくは、[&#x200B; コードの投稿 &#x200B;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) を参照してください。
 
 ### グローバルオプション
 
@@ -88,7 +88,7 @@ bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [
 
 ### オプション
 
-グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
+グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
 
 #### `--shell`, `-s`
 
@@ -167,7 +167,7 @@ Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
 
 ### オプション
 
-グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
+グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
 
 #### `--debug`
 
@@ -207,7 +207,7 @@ To display the list of available commands, please use the list command.
 
 ### オプション
 
-グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
+グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
 
 #### `--format`
 
@@ -258,7 +258,7 @@ It's also possible to get raw list of commands (useful for embedding command run
 
 ### オプション
 
-グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
+グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
 
 #### `--raw`
 
@@ -300,7 +300,7 @@ bin/uct refactor <path>
 
 ### オプション
 
-グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
+グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
 
 
 ## `core:code:changes`
@@ -326,7 +326,7 @@ Adobe Commerce vanilla インストールディレクトリ。
 
 ### オプション
 
-グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
+グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
 
 #### `--output`, `-o`
 
@@ -360,7 +360,7 @@ bin/uct dbschema:diff <current-version> <target-version>
 
 ### オプション
 
-グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
+グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
 
 
 ## `graphql:compare`
@@ -388,7 +388,7 @@ GraphQL スキーマの互換性の検証
 
 ### オプション
 
-グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
+グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
 
 #### `--output`, `-o`
 
@@ -415,7 +415,7 @@ Adobe Commerce インストールディレクトリ。
 
 ### オプション
 
-グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
+グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
 
 #### `--current-version`, `-a`
 
