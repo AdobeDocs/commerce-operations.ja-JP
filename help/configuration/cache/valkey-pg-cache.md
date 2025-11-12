@@ -3,7 +3,7 @@ title: デフォルトキャッシュに ValueKey を使用
 description: Adobe Commerceのデフォルトキャッシュとして Valkey を設定する方法を説明します。 コマンドラインのセットアップ、設定オプション、検証方法について説明します。
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: e9f1bef9f97a0e1d738f1221758f1b9a0a238da1
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Commerceには、有効なページとデフォルトのキャッシュを設定するためのコマンドラインオプションが用意されています。 `<Commerce-install-dir>app/etc/env.php` ファイルを編集してキャッシュを設定できますが、特に初期設定では、コマンドラインを使用する方法をお勧めします。 コマンドラインで検証を行うことにより、設定の構文が正しいことを確認します。
 
-続行する前に [Valkey をインストール &#x200B;](config-redis.md#install-redis) する必要があります。
+続行する前に [Valkey をインストール ](config-redis.md#install-redis) する必要があります。
 
 ## Value のデフォルトキャッシュの設定
 
@@ -34,7 +34,7 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 >**Adobe Commerce 2.4.9-alpha2** 以降、ライセンスの変更により、**Valkey** は CLI ツールで Redis を正式に置き換えました。 Valkey は Redis のフォークであり、ほぼ同じ機能を維持しています。 **バージョン 2.4.8 以前** の場合、Valkey の設定に使用される CLI コマンドは Redis の場合と同じままであり、シームレスな後方互換性が確保され、移行またはデュアル環境のサポートが簡素化されます。 次の例は、Valkey 固有のコマンドを示しています。
 
 ```bash
-bin/magento setup:config:set --cache-backend=redis --cache-backend-valkey-<parameter>=<value>...
+bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<parameter>=<value>...
 ```
 
 | コマンドラインパラメーター | 値 | 意味 | デフォルト値 |
@@ -272,7 +272,7 @@ valkey-cli monitor
 ### Valkey ping コマンド
 
 ```bash
-redis-cli ping
+valkey-cli ping
 ```
 
 期待される応答は `PONG` です。
