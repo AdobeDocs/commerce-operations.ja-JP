@@ -25,13 +25,13 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-クラウドインフラストラクチャー上の環境設定については、[`VALKEY_BACKEND` クラウドインフラストラクチャー上のCommerceガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) の __ を参照してください。
+クラウドインフラストラクチャー上の環境設定については、[`VALKEY_BACKEND` クラウドインフラストラクチャー上のCommerceガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) の __ を参照してください。
 
 オンプレミスでのインストールの場合は、[&#x200B; 設定ガイド &#x200B;](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) の _Valkey ページのキャッシュの設定_ を参照してください。
 
 >[!NOTE]
 >
->`ece-tools` パッケージの最新バージョンを使用していることを確認します。 そうでない場合は [&#x200B; 最新バージョンにアップグレード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) します。 `composer show magento/ece-tools` CLI コマンドを使用すると、ローカル環境にインストールされているバージョンを確認できます。
+>`ece-tools` パッケージの最新バージョンを使用していることを確認します。 そうでない場合は [&#x200B; 最新バージョンにアップグレード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) します。 `composer show magento/ece-tools` CLI コマンドを使用すると、ローカル環境にインストールされているバージョンを確認できます。
 
 ### L2 キャッシュメモリのサイズ設定（Adobe Commerce Cloud）
 
@@ -85,13 +85,13 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Commerce詳しくは、[Cloud Infrastructure ガイドの &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)VALKEY_USE_SLAVE_CONNECTION _を参照してください_
+Commerce詳しくは、[Cloud Infrastructure ガイドの &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)VALKEY_USE_SLAVE_CONNECTION _を参照してください_
 
 Adobe Commerceのオンプレミスインストールの場合は、`bin/magento:setup` コマンドを使用して、新しい Valkey キャッシュ実装を設定します。 詳しくは、『 [&#x200B; 設定ガイド &#x200B;](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) の _デフォルトキャッシュに対する Valkey の使用_ を参照してください。
 
 >[!WARNING]
 >
->_拡張/分割アーキテクチャ_ を使用して、クラウドインフラストラクチャプロジェクト用の Valkey スレーブ接続を設定しないでください [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)。 これにより、Valkey 接続エラーが発生します。 詳しくは、[Cloud Infrastructure のCommerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) ガイドの _Valkey 設定ガイダンス_ を参照してください。
+>_拡張/分割アーキテクチャ_ を使用して、クラウドインフラストラクチャプロジェクト用の Valkey スレーブ接続を設定しないでください [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)。 これにより、Valkey 接続エラーが発生します。 詳しくは、[Cloud Infrastructure のCommerce](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) ガイドの _Valkey 設定ガイダンス_ を参照してください。
 
 ## キーをプリロード
 
@@ -153,11 +153,11 @@ stage:
 
 >[!NOTE]
 >
->前の例では、クラウドインフラストラクチャプロジェクトのAdobe Commerceには `full_page` キャッシュが関係しません。それらのプロジェクトでは [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) が使用されているからです。
+>前の例では、クラウドインフラストラクチャプロジェクトのAdobe Commerceには `full_page` キャッシュが関係しません。それらのプロジェクトでは [Fastly](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/fastly) が使用されているからです。
 
 オンプレミスのインストールを構成する方法については、[&#x200B; 構成ガイド &#x200B;](../../../configuration/cache/level-two-cache.md#stale-cache-options) の _古いキャッシュ オプション_ を参照してください。
 
-デプロイメント中、[&#x200B; ビルドおよびデプロイログ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#build-and-deploy-logs) に次の行が表示されます。
+デプロイメント中、[&#x200B; ビルドおよびデプロイログ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/test/log-locations#build-and-deploy-logs) に次の行が表示されます。
 
 ```
 W:   - Downloading colinmollenhour/credis (1.11.1)
