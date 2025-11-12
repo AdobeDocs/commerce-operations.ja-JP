@@ -3,9 +3,9 @@ title: ログを有効にする
 description: Adobe Commerceで様々なタイプのログを有効または無効にする方法について説明します。 ログ設定と管理の手法について説明します。
 feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: aff705cefcd4de38d17cad41628bc8dbd6d630cb
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,23 @@ ht-degree: 0%
 
 デフォルトでは、Commerceはデータベースのアクティビティログを `<install-dir>/var/debug/db.log` ファイルに書き込みます。
 
+### クエリ ログ ストレージの場所
+
+データベースのログが有効な場合、Commerceはクエリログを次の場所に保存します。
+
+- **クエリログファイル**:`<install-directory>/var/debug/db.log`
+- **ログディレクトリ**: `<install-directory>/var/debug/`
+
+クエリログには、次の内容が含まれます。
+- アプリケーションで実行される SQL クエリ
+- クエリの実行時間
+- クエリパラメーターとバインディング
+- データベース接続情報
+
+>[!NOTE]
+>
+>高トラフィック環境では、クエリログファイルが急速に大きくなる可能性があります。 ディスク領域を監視し、ログのローテーションの実装またはクエリログファイルの定期的なクリーンアップを検討してください。
+
 ### データベース ログを有効にするには
 
 1. `dev:query-log` コマンドを使用して、データベース・ログを有効または無効にします。
@@ -71,6 +88,24 @@ ht-degree: 0%
    ```bash
    bin/magento cache:flush
    ```
+
+### クエリログを表示するには
+
+標準のファイル表示コマンドを使用して、クエリログを表示できます。
+
+```bash
+# View the entire query log
+cat var/debug/db.log
+
+# View the last 100 lines of the query log
+tail -n 100 var/debug/db.log
+
+# Monitor the query log in real-time
+tail -f var/debug/db.log
+
+# Search for specific queries
+grep "SELECT" var/debug/db.log
+```
 
 ## Cron ログ
 
