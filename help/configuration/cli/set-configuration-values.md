@@ -2,9 +2,9 @@
 title: 設定値を設定
 description: Adobe Commerceで設定値を設定し、ロックされている管理者の値を変更する方法について説明します。 高度な設定コマンドと手法を確認します。
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 2672c696d672ad72bef7537570ed630bc33c41b4
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -68,9 +68,9 @@ ht-degree: 0%
 
    次の図に、サンプル Web サイトコードを示します。
 
-   ![&#x200B; 管理者から web サイトまたはストアの表示コードを取得する &#x200B;](../../assets/configuration/website-code.png)
+   ![ 管理者から web サイトまたはストアの表示コードを取得する ](../../assets/configuration/website-code.png)
 
-1. [&#x200B; 値を設定 &#x200B;](#set-values) を続行します。
+1. [ 値を設定 ](#set-values) を続行します。
 
 **データベースでスコープ コードを検索するには**:
 
@@ -124,25 +124,25 @@ bin/magento config:set [--scope="..."] [--scope-code="..."] [-le | --lock-env] [
 **機密性の高い設定値を設定するには**:
 
 ```bash
-bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path value
+bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path
 ```
 
 次の表に、`set` のコマンドパラメーターを示します。
 
 | パラメーター | 説明 |
-| --- | --- |
+| --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `--scope` | 設定のスコープ。 使用できる値は、`default`、`website`、`store` です。 デフォルトは `default` です。 |
 | `--scope-code` | 設定の範囲コード（web サイトコードまたはストア表示コード） |
 | `-e or --lock-env` | 値をロックして管理者で編集できないようにするか、既に管理者でロックされている設定を変更します。 このコマンドは、`<Commerce base dir>/app/etc/env.php` ファイルに値を書き込みます。 |
 | `-c or --lock-config` | 値をロックして管理者で編集できないようにするか、既に管理者でロックされている設定を変更します。 このコマンドは、`<Commerce base dir>/app/etc/config.php` ファイルに値を書き込みます。 両方のオプションを指定した場合、`--lock-config` オプションは `--lock-env` を上書きします。 |
 | `path` | _必須_。 設定パス |
-| `value` | _必須_。 設定の値 |
+| `value` | _必須_。 設定の値。 CLI コマンドでは別の引数として渡すことができますが、Adobeでは元のコマンドで指定しないことをお勧めします。 代わりに、値を指定せずにコマンドを実行し、プロンプトが表示されたら値を入力します。 この方法を使用すると、機密性の高いアクセス値を bash_history に書き込むのを防ぐことができます。これは設定を行う最も安全な方法です。 |
 
 >[!INFO]
 >
 >Commerce 2.2.4 以降では、「`--lock-env`」オプションと「`--lock-config`」オプションが「`--lock`」オプションに置き換わります。
 >
->`--lock-env` または `--lock-config` オプションを使用して値を設定または変更する場合は、[`bin/magento app:config:import` コマンドを使用して設定を読み込んでから &#x200B;](../cli/import-configuration.md) 管理者またはストアフロントにアクセスする必要があります。
+>`--lock-env` または `--lock-config` オプションを使用して値を設定または変更する場合は、[`bin/magento app:config:import` コマンドを使用して設定を読み込んでから ](../cli/import-configuration.md) 管理者またはストアフロントにアクセスする必要があります。
 
 間違った設定パスを入力すると、このコマンドはエラーを返します
 
@@ -221,7 +221,7 @@ bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 
 >[!INFO]
 >
->`bin/magento config:show` コマンドは、[&#x200B; 暗号化された値 &#x200B;](../reference/config-reference-sens.md) の値を一連のアスタリスク（`**&#x200B;**&#x200B;**`）として表示します。
+>`bin/magento config:show` コマンドは、[ 暗号化された値 ](../reference/config-reference-sens.md) の値を一連のアスタリスク（`******`）として表示します。
 
 ### 例
 
@@ -292,5 +292,5 @@ web/unsecure/base_url - http://example-for-store.com/
 
 >[!INFO]
 >
->スコープ コードには、文字（a ～ z または A ～ Z）、数字（0 ～ 9）、およびアンダースコア （_）のみを使用できます。 また、最初の文字は文字である必要があります。 Web サイト表示またはストア表示を作成する際に大文字または大文字を使用すると、内部的に一致させる際に大文字と小文字が区別されず、環境変数による設定の上書きに対応します。 [&#x200B; 環境変数を使用して設定を上書き &#x200B;](../reference/override-config-settings.md#environment-variables) を参照してください。
+>スコープ コードには、文字（a ～ z または A ～ Z）、数字（0 ～ 9）、およびアンダースコア （_）のみを使用できます。 また、最初の文字は文字である必要があります。 Web サイト表示またはストア表示を作成する際に大文字または大文字を使用すると、内部的に一致させる際に大文字と小文字が区別されず、環境変数による設定の上書きに対応します。 [ 環境変数を使用して設定を上書き ](../reference/override-config-settings.md#environment-variables) を参照してください。
 
