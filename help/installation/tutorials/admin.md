@@ -75,7 +75,7 @@ Admin last name: Doe Young
 Created Magento administrator user named John
 ```
 
-次の例では、管理者ユーザーの `first name`、`last name`、`password``j.doe` 更新します。
+次の例では、管理者ユーザーの `first name`、`last name`、`password` `j.doe` 更新します。
 
 ```bash
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567
