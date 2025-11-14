@@ -102,6 +102,6 @@ php -f bin/magento config:set dev/js/defer_non_critical 1
 ## 追加情報
 
 - [クライアントサイドの最適化設定](../../../performance/configuration.md#client-side-optimization-settings)
-- [&#x200B; ユーザーガイド：リソースファイルの最適化 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [&#x200B; ユーザーガイド：リソースファイルの最適化 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [&#x200B; フロントエンド開発者ガイド：CSS マージ、縮小、サイトのパフォーマンス &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [高度なJavaScriptのバンドル](../../../performance/advanced-js-bundling.md)
