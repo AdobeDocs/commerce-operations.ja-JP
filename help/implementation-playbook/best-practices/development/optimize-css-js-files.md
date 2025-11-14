@@ -4,9 +4,9 @@ description: 管理またはコマンドラインからAdobe Commerce プロジ�
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 19f874130645fcabe3178a37ec6dedcf75b93afa
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 Commerce サイトの応答性を高めるには、CSS およびJavaScript（JS）リソースファイルを最適化し、レンダリングをブロックするリソースを排除します。
 
 - **CSS ファイルと JS ファイルの最適化** - Adobe Commerceで個別のファイルを 1 つのファイルに結合、縮小、バンドルするように設定することで、CSS およびJavaScript（JS）ファイルの読み込みに要する時間を短縮します。
-- **レンダリングを妨げるリソースを排除** – 重要な JS および CSS 機能をインラインで配信し、重要でないすべての JS/CSS スタイルを延期することを検討します。 ガイダンスについては、[&#x200B; レンダリングをブロックするリソースを排除する &#x200B;](https://web.dev/render-blocking-resources/) を参照してください。
+- **レンダリングを妨げるリソースを排除** – 重要な JS および CSS 機能をインラインで配信し、重要でないすべての JS/CSS スタイルを延期することを検討します。 ガイダンスについては、[ レンダリングをブロックするリソースを排除する ](https://web.dev/render-blocking-resources/) を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[&#x200B; サポートされているすべてのバージョン、2.3 以降 &#x200B;](../../../release/versions.md):
+[ サポートされているすべてのバージョン、2.3 以降 ](../../../release/versions.md):
 
 - クラウドインフラストラクチャー上のAdobe Commerce
 - Adobe Commerce オンプレミス
@@ -65,7 +65,7 @@ CSS の結合または縮小を有効にするには、[!UICONTROL **管理**/**
 
 ### Admin の使用
 
-*管理者* サイドバーで、**ストア**/**設定**/**設定**/**詳細**/**開発者**/12&rbrace;JavaScript設定 **に移動します。**
+*管理者* サイドバーで、**ストア**/**設定**/**設定**/**詳細**/**開発者**/12}JavaScript設定 **に移動します。**
 
 ### コマンドラインの使用
 
@@ -81,7 +81,7 @@ CSS の結合または縮小を有効にするには、[!UICONTROL **管理**/**
 
 ## JS ファイルの結合とバンドル
 
-Commerce管理で結合またはバンドルをオンにできます（結合とバンドルを同時に有効にすることはできません）。[!UICONTROL **ストア**/**設定**/**設定**/**詳細**/**開発者**/10&rbrace;JavaScript設定 **。**]
+Commerce管理で結合またはバンドルをオンにできます（結合とバンドルを同時に有効にすることはできません）。[!UICONTROL **ストア**/**設定**/**設定**/**詳細**/**開発者**/10}JavaScript設定 **。**]
 
 コマンドラインからAdobe Commerceの組み込みバンドル（基本バンドル）を有効にすることもできます。
 
@@ -89,9 +89,19 @@ Commerce管理で結合またはバンドルをオンにできます（結合と
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
+## 重要でないヘッドスクリプトの遅延
+
+次の設定を有効にして、head セクションに読み込まれた重要でない JavaScript を自動的に遅延させます。[!UICONTROL **ストア**/**設定**/**設定**/**詳細**/**開発者**/10}JavaScript設定 **。**]
+
+このフラグはコマンドラインからも有効にできます。
+
+```bash
+php -f bin/magento config:set dev/js/defer_non_critical 1
+```
+
 ## 追加情報
 
 - [クライアントサイドの最適化設定](../../../performance/configuration.md#client-side-optimization-settings)
-- [&#x200B; ユーザーガイド：リソースファイルの最適化 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
-- [&#x200B; フロントエンド開発者ガイド：CSS マージ、縮小、サイトのパフォーマンス &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [ ユーザーガイド：リソースファイルの最適化 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [ フロントエンド開発者ガイド：CSS マージ、縮小、サイトのパフォーマンス ](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [高度なJavaScriptのバンドル](../../../performance/advanced-js-bundling.md)
