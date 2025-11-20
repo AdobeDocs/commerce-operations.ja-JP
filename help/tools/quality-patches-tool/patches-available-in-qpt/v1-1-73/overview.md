@@ -4,9 +4,9 @@ description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.73 で�
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: a604879f63b1cfcf8f21fec53e69984bff0c66d4
+source-git-commit: ae994d8185516dabf88b682a33f1775c0d636515
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ QPT v1.1.73 には、次のパッチが含まれています。
 1. **ACSD-67908**：マルチストアの設定で JS ファイルが正しく結合されない問題を修正しました。
 1. **ACSD-68190**：割引が適用されない、適用された割引がGraphQLの買い物かご表示の応答に正しく表示されない、クーポン割引を削除するとクーポン以外の割引が削除される、という問題を修正しました。
 1. **ACSD-68206**:PHP **[!UICONTROL Rate Limiting]** 拡張機能がインストールされた状態で、GraphQL アプリケーションサーバーを使用した場合のエラーを修正 [!DNL Redis] ました。
-1. **ACSD-68356**:GraphQLの買い物かごクエリで、バーチャル引用符に対して誤った割引額が返される問題を修正しました。
+1. **ACSD-68356**：買い物かごクエリ [!DNL GraphQL]、仮想の引用符に対して誤った割引額を返します。
 1. **ACSD-68391**:**[!UICONTROL Quick Order]** および **[!UICONTROL Requisition Lists]** でカテゴリ関連の権限が正しく適用されない問題を修正しました。
 1. **ACSD-68400**：仮想ギフトカードの数量が **[!UICONTROL Inventory reservation table]** に正確に反映されない問題を修正しました。
 
