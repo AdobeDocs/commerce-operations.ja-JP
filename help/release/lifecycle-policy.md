@@ -14,7 +14,7 @@ ht-degree: 3%
 
 Adobe Commerce 2.4.4 以降のリリースの場合：
 
-- Adobe Commerceのライフサイクルポリシーを合理化し、お客様のミッションクリティカルなニーズをサポートするために、Adobeでは、Adobe Commerce 2.4.4 以降の一般提供（GA）日から 3 年にサポートウィンドウを拡大しました。 Adobeは、2.4.4 以降のリリースに対して、3 年間のサポート期間中、品質に関する修正を提供します。 お客様は、[Adobe Commerce サポートに問い合わせるか &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) バージョンが品質サポートの対象である場合はセルフサービス [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) を通じて、品質修正プログラムにアクセスできます。 次の表に、Adobe Commerce リリースラインのソフトウェアサポート終了日を示します。
+- Adobe Commerceのライフサイクルポリシーを合理化し、お客様のミッションクリティカルなニーズをサポートするために、Adobeでは、Adobe Commerce 2.4.4 以降の一般提供（GA）日から 3 年にサポートウィンドウを拡大しました。 Adobeは、2.4.4 以降のリリースに対して、3 年間のサポート期間中、品質に関する修正を提供します。 お客様は、[Adobe Commerce サポートに問い合わせるか &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) バージョンが品質サポートの対象である場合はセルフサービス [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) を通じて、品質修正プログラムにアクセスできます。 次の表に、Adobe Commerce リリースラインのソフトウェアサポート終了日を示します。
 
 - Adobeでは、3 年間のサポート期間を対象に、セキュリティパッチリリースによりセキュリティ修正を提供しています。
 
