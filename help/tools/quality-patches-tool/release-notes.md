@@ -3,9 +3,9 @@ title: リリースノート
 description: Adobe Commerceで使用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 828be0e395980ddd9fca3424dc08324c3fe87244
+source-git-commit: fff49f8c9b0c1def976c14e72b4ae7ee08f823b9
 workflow-type: tm+mt
-source-wordcount: '29260'
+source-wordcount: '29413'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,20 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce プロジェクトにパッチを適用する手順については、[&#x200B; パッチの適用 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja#apply-individual-patches) を参照してください。 リリース済みパッチの完全なリストを確認するには、『ソフトウェア更新ガイド』の「[[!DNL Quality Patches Tool]：パッチの検索 &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)」を参照してください。
+>Adobe Commerce プロジェクトにパッチを適用する手順については、[ パッチの適用 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) を参照してください。 リリース済みパッチの完全なリストを確認するには、『ソフトウェア更新ガイド』の「[[!DNL Quality Patches Tool]：パッチの検索 ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
 
 >[!INFO]
 >
->コミュニティがMagento Open Source用に作成した [!DNL quality patches] について詳しくは、[&#x200B; リリースノート &#x200B;](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+>コミュニティがMagento Open Source用に作成した [!DNL quality patches] について詳しくは、[ リリースノート ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+
+## v1.1.74 {#v1-1-74}
+
+* **ACSD-68636** （Adobe Commerce >=2.4.4 &lt;2.4.9 の場合） – 別のストアから請求書を作成する際に、ストアの所有者の名前がギフトカードのメールヘッダーに正しく表示されない問題を修正しました。
+* **ACSD-68430** （Adobe CommerceおよびMagento Open Source >=2.4.6 &lt;2.4.8 の場合） – 属性設定から削除された複数の属性オプションがレコードに含まれている場合、顧客または顧客アドレスの保存に失敗する問題を修正しました。
+* **ACSD-68499** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.9 の場合） – 使用可能な在庫を超える数量を更新すると、GraphQL `updateCartItems` ミューテーションが誤った成功応答を返し、数量と合計が水増しする問題を修正しました。
+* **ACSD-68810** （Adobe CommerceおよびMagento Open Source >=2.4.8 &lt;2.4.9 の場合） - **[!UICONTROL Customer Account Sharing]** 設定であるにもかかわらず、別の web サイトで作成されたお客様に注文が割り当てられる問題を修正しました。
+* 更新されたバージョン：**ACSD-49737**, **ACSD-57003-V2**
+* 交換済みパッチ：**ACSD-61969**
 
 ## v1.1.73 {#v1-1-73}
 
