@@ -4,9 +4,9 @@ description: ここでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.73 で�
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: ae994d8185516dabf88b682a33f1775c0d636515
+source-git-commit: e1109aea68d590e5b7fe2fc6ae1fb934b06d4f91
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '182'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,6 @@ QPT v1.1.73 には、次のパッチが含まれています。
 1. **ACSD-68206**:PHP **[!UICONTROL Rate Limiting]** 拡張機能がインストールされた状態で、GraphQL アプリケーションサーバーを使用した場合のエラーを修正 [!DNL Redis] ました。
 1. **ACSD-68356**：買い物かごクエリ [!DNL GraphQL]、仮想の引用符に対して誤った割引額を返します。
 1. **ACSD-68391**:**[!UICONTROL Quick Order]** および **[!UICONTROL Requisition Lists]** でカテゴリ関連の権限が正しく適用されない問題を修正しました。
-1. **ACSD-68400**：仮想ギフトカードの数量が **[!UICONTROL Inventory reservation table]** に正確に反映されない問題を修正しました。
+1. **ACSD-68400**：仮想ギフトカードの数量が **[!UICONTROL Inventory reservation table]** に正確に反映されていません。
 
 左側のメニューを使用して、特定のパッチページに移動します。
