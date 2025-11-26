@@ -2,7 +2,7 @@
 title: オンプレミスでのクイックスタートのインストール
 description: Composer を使用して独自のインフラストラクチャにAdobe Commerceをインストールする方法を説明します。 クイックスタート手順と設定要件について説明します。
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 0532977ff0aeb5d221b1901d73a374cadf95f83b
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 0%
@@ -17,25 +17,25 @@ Adobeでは [Composer](https://getcomposer.org/) を使用して、Adobe Commerc
 
 - サードパーティ製ライブラリをソースコードとバンドルせずに再利用
 - 堅牢な依存関係管理を備えたコンポーネントベースのアーキテクチャを使用することで、拡張機能の競合と互換性の問題を軽減します。
-- [PHP-Framework Interoperability Group （FIG） &#x200B;](https://www.php-fig.org/) 規格に準拠
+- [PHP-Framework Interoperability Group （FIG） ](https://www.php-fig.org/) 規格に準拠
 - Magento Open Sourceを他のコンポーネントと再パッケージ化
 - 実稼動環境でのAdobe Commerce ソフトウェアの使用
 
 >[!NOTE]
 >
->Magento Open Sourceに投稿する開発者は、[git ベースの &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/) インストール方式を使用する必要があります。
+>Magento Open Sourceに投稿する開発者は、[git ベースの ](https://developer.adobe.com/commerce/contributor/guides/install/) インストール方式を使用する必要があります。
 
 ## 前提条件
 
 続行する前に、次の操作を行う必要があります。
 
-- すべての [&#x200B; 前提条件タスク &#x200B;](system-requirements.md) を完了します。
-- [Composer のインストール &#x200B;](https://getcomposer.org/download/)。
-- [&#x200B; 認証キー &#x200B;](prerequisites/authentication-keys.md) をAdobe Commerce Composer リポジトリに取得します。
+- すべての [ 前提条件タスク ](system-requirements.md) を完了します。
+- [Composer のインストール ](https://getcomposer.org/download/)。
+- [ 認証キー ](prerequisites/authentication-keys.md) をAdobe Commerce Composer リポジトリに取得します。
 
 ## ファイルシステム所有者としてログインします。
 
-所有権、権限、ファイルシステムの所有者については、[&#x200B; 所有権と権限の概要 &#x200B;](prerequisites/file-system/overview.md) トピックを参照してください。
+所有権、権限、ファイルシステムの所有者については、[ 所有権と権限の概要 ](prerequisites/file-system/overview.md) トピックを参照してください。
 
 ファイルシステムの所有者に切り替えるには、次の手順に従います。
 
@@ -73,7 +73,7 @@ Adobeでは [Composer](https://getcomposer.org/) を使用して、Adobe Commerc
 
 Adobe Commerce メタパッケージを入手するには：
 
-1. [&#x200B; ファイルシステムの所有者 &#x200B;](prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインするか、に切り替えます。
+1. [ ファイルシステムの所有者 ](prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインするか、に切り替えます。
 1. Web サーバーの docroot ディレクトリまたは仮想ホストの docroot として設定したディレクトリに移動します。
 1. Commerce メタパッケージを使用して Composer プロジェクトを作成します。
 
@@ -89,15 +89,15 @@ Adobe Commerce メタパッケージを入手するには：
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   プロンプトが表示されたら、認証キーを入力します。 公開鍵と秘密鍵は、[Commerce Marketplace - アクセスキー &#x200B;](https://commercemarketplace.adobe.com/customer/account/login/) から作成および設定されます。 `[!UICONTROL username]` の場合は、公開鍵の値をコピーして貼り付けます。 `[!UICONTROL password]` の場合は、秘密鍵の値をコピー&amp;ペーストします。
+   プロンプトが表示されたら、認証キーを入力します。 公開鍵と秘密鍵は、[Commerce Marketplace - アクセスキー ](https://commercemarketplace.adobe.com/customer/account/login/) から作成および設定されます。 `[!UICONTROL username]` の場合は、公開鍵の値をコピーして貼り付けます。 `[!UICONTROL password]` の場合は、秘密鍵の値をコピー&amp;ペーストします。
 
    >[!NOTE]
    >
-   > Commerce認証キーで設定された Composer `[auth.json](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` ファイルまたは環境変数を使用する場合、認証キーを入力するように求められません。
+   > Commerce認証キーで設定された Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` ファイルまたは環境変数を使用する場合、認証キーを入力するように求められません。
 
-   `Could not find package...` や `...no matching package found` などのエラーが発生した場合は、コマンドに入力ミスがないことを確認してください。 それでもエラーが発生する場合は、Adobe Commerceのダウンロードが許可されていない可能性があります。 [Adobe Commerce サポート &#x200B;](https://support.magento.com/hc/en-us) にお問い合わせください。
+   `Could not find package...` や `...no matching package found` などのエラーが発生した場合は、コマンドに入力ミスがないことを確認してください。 それでもエラーが発生する場合は、Adobe Commerceのダウンロードが許可されていない可能性があります。 [Adobe Commerce サポート ](https://support.magento.com/hc/en-us) にお問い合わせください。
 
-   その他のエラーのヘルプについては、[&#x200B; トラブルシューティング &#x200B;](https://support.magento.com/hc/en-us/articles/360033818091) を参照してください。
+   その他のエラーのヘルプについては、[ トラブルシューティング ](https://support.magento.com/hc/en-us/articles/360033818091) を参照してください。
 
 ### 例 – マイナーリリース
 
@@ -172,7 +172,7 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->CLI インストール オプションの詳細については、「[&#x200B; コマンド ラインからアプリケーションをインストールする &#x200B;](advanced.md)」を参照してください。
+>CLI インストール オプションの詳細については、「[ コマンド ラインからアプリケーションをインストールする ](advanced.md)」を参照してください。
 
 ## コマンドの概要
 
@@ -232,4 +232,4 @@ bin/magento help cache:enable
 
 >[!NOTE]
 >
->おめでとうございます。 クイックインストールが完了しました。 より高度なヘルプが必要な場合は、 [&#x200B; 高度なインストール &#x200B;](advanced.md) ガイドを確認してください。
+>おめでとうございます。 クイックインストールが完了しました。 より高度なヘルプが必要な場合は、 [ 高度なインストール ](advanced.md) ガイドを確認してください。

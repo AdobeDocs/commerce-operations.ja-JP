@@ -2,7 +2,7 @@
 title: ' [!DNL Upgrade Compatibility Tool] を実行します。'
 description: Adobe Commerce プロジェクトのコマンドラ  [!DNL Upgrade Compatibility Tool]  ンインターフェイスでコマンドを実行するには、次の手順に従います。
 exl-id: ea467a74-18eb-476b-96e2-23f4fc257d73
-source-git-commit: bfb952d29bd3d7fc7147107216981e05202e44aa
+source-git-commit: 2d17da1f8cbda1462839ad2fa3ea569833443827
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
@@ -29,7 +29,7 @@ chmod +x ./uct/bin/uct
 
 [!DNL Upgrade Compatibility Tool] は、Adobe Commerce カスタマイズ済みインスタンスにインストールされているすべてのモジュールを分析して、そのインスタンスを特定のバージョンと照合するツールです。 Adobe Commerceの最新バージョンにアップグレードする前に対処する必要がある重要な問題、エラー、警告のリストを返します。
 
-[&#x200B; について詳しくは、この &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=ja) ビデオチュートリアル :02 （06[!DNL Upgrade Compatibility Tool]）を参照してください。
+[ について詳しくは、この ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html) ビデオチュートリアル :02 （06[!DNL Upgrade Compatibility Tool]）を参照してください。
 
 コマンドラインインターフェイスで [!DNL Upgrade Compatibility Tool] に使用できるコマンド：
 
@@ -146,7 +146,7 @@ bin/uct core:code:changes <dir> <vanilla dir>
 
 >[!NOTE]
 >
-> カスタムコードをコアコードから除外することをお勧めします。 アップグレードに関するベストプラクティスについて詳しくは、Adobe Commerce 2.4 [&#x200B; アップグレードガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=ja) を参照してください。
+> カスタムコードをコアコードから除外することをお勧めします。 アップグレードに関するベストプラクティスについて詳しくは、Adobe Commerce 2.4 [ アップグレードガイド ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) を参照してください。
 
 ### Vanilla インストール
 
@@ -156,7 +156,7 @@ _バニラ_ インストールは、特定のリリースバージョンの指�
 
 [!DNL Upgrade Compatibility Tool] コマンドを `--vanilla-dir` オプションを使用して実行すると、Adobe Commerce vanilla インストールディレクトリを指定できます。
 
-詳しくは、[vanilla インスタンスのデプロイ &#x200B;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/#deploy-vanilla-magento-open-source-instance) のトピックを参照してください。
+詳しくは、[vanilla インスタンスのデプロイ ](https://developer.adobe.com/commerce/contributor/guides/code-contributions#deploy-vanilla-magento-open-source-instance) のトピックを参照してください。
 
 ## `refactor` コマンドの使用
 
@@ -258,9 +258,9 @@ bin/uct upgrade:check --help
 ## Adobe Commerceのベストプラクティスに従う
 
 - 2 つのモジュールに同じ名前を付けないでください。
-- Adobe Commerce[&#x200B; コーディング標準 &#x200B;](https://developer.adobe.com/commerce/php/coding-standards/) に従います。
-- Adobe Commerce 2.4[&#x200B; アップグレードガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=ja) のベストプラクティス。
-- クラウドインフラストラクチャー上の [!DNL Upgrade Compatibility Tool]Adobe Commerce[[!DNL Site-Wide Analysis Tool] プロジェクトの &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=ja) [&#x200B; から &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ja){target=_blank} を実行します。
+- Adobe Commerce[ コーディング標準 ](https://developer.adobe.com/commerce/php/coding-standards) に従います。
+- Adobe Commerce 2.4[ アップグレードガイド ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) のベストプラクティス。
+- クラウドインフラストラクチャー上の [!DNL Upgrade Compatibility Tool]Adobe Commerce[[!DNL Site-Wide Analysis Tool] プロジェクトの ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html)[ から ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} を実行します。
 
 ## 結果を最適化
 
