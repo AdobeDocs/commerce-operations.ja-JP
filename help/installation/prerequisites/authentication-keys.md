@@ -17,10 +17,10 @@ Adobe Commerce パッケージへのアクセス権を付与するには、こ�
 
 >[!TIP]
 >
->[ エラー ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html) が発生した場合や、「Marketplace」タブに「[!UICONTROL Access Keys]」セクションが表示されない場合は、パッケージにアクセスする権限がない可能性があります。または、アカウントの未払い請求書が原因でアクセス権限が期限切れになっている可能性があります。
+>[&#x200B; エラー &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html) が発生した場合や、「Marketplace」タブに「[!UICONTROL Access Keys]」セクションが表示されない場合は、パッケージにアクセスする権限がない可能性があります。または、アカウントの未払い請求書が原因でアクセス権限が期限切れになっている可能性があります。
 >
 >* アカウントのプライマリ担当者の場合は、アカウントに未払いの請求書がリストされていないことを確認してください。
->* プライマリ担当者が提供したキーが機能せず、アカウントに未払いの請求書がない場合は、プライマリ担当者が [Adobe Commerce サポート ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) に問い合わせる必要があります。
+>* プライマリ担当者が提供したキーが機能せず、アカウントに未払いの請求書がない場合は、プライマリ担当者が [Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) に問い合わせる必要があります。
 
 認証キーを作成するには：
 
@@ -30,7 +30,7 @@ Adobe Commerce パッケージへのアクセス権を付与するには、こ�
 
 1. 「Marketplace」タブの **アクセスキー** をクリックします。
 
-   ![Commerce Marketplaceの安全なアクセスキーの取得 ](../../assets/installation/cloud_access-key.png)
+   ![Commerce Marketplaceの安全なアクセスキーの取得 &#x200B;](../../assets/installation/cloud_access-key.png)
 
 1. **新しいアクセスキーを作成** をクリックします。 キーの特定の名前（キーを受け取る開発者の名前など）を入力し、[**OK**] をクリックします。
 
@@ -48,11 +48,11 @@ Adobe Commerce パッケージへのアクセス権を付与するには、こ�
 
 SSH を使用してAdobe Commerce リリースをダウンロードするには、ダウンロードアクセストークンを生成する必要があります。 トークンを生成するには、次の手順に従います。
 
-1. [magento.com アカウント ](https://account.magento.com/customer/account/login) にログインします。
+1. [magento.com アカウント &#x200B;](https://account.magento.com/customer/account/login) にログインします。
 1. ページ上部の **マイアカウント** をクリックします。
 1. **アカウント設定**/**アクセストークンをダウンロード** をクリックします。
 
-   ![ キーへのアクセス ](../../assets/installation/connect_keys1.png)
+   ![&#x200B; キーへのアクセス &#x200B;](../../assets/installation/connect_keys1.png)
 
 1. 「**新しいトークンの生成**」をクリックし、既存のトークンを置き換えて無効にします。
 
@@ -67,5 +67,5 @@ curl -k https://MAGEID:TOKEN@www.magentocommerce.com/products/downloads/info/hel
 認証キーを使用して、次のことを行います。
 
 * [メタパッケージを入手（インテグレーター、パッケージャ）](../composer.md)
-* [GitHub リポジトリのクローンを作成 ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) （投稿開発者のみ）
+* [GitHub リポジトリのクローンを作成 &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) （投稿開発者のみ）
 * [モジュールのアップグレードと管理](../../upgrade/modules/upgrade.md)

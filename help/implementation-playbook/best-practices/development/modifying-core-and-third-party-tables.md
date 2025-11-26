@@ -22,7 +22,7 @@ ht-degree: 0%
 
 コアテーブルを変更しない主な理由は、Adobe Commerceに生の SQL クエリを含む基礎となるロジックが含まれているからです。 テーブルの構造を変更すると、予期しない副作用が発生する可能性があり、トラブルシューティングが困難になる場合があります。 また、この変更は DDL （データ定義言語）操作に影響を与え、予期しない予期しないパフォーマンスへの影響を引き起こす可能性があります。
 
-データベーステーブルの構造の変更を避けるもう 1 つの理由は、コア開発チームまたはサードパーティの開発者がデータベーステーブルの構造を変更した場合、変更によって問題が発生する可能性があることです。 例えば、`additional_data` という列を持つコアデータベーステーブルがいくつかあります。 これは常に `text` 列タイプです。 ただし、パフォーマンス上の理由から、コアチームが列を `longtext` に変更する場合があります。 このタイプの列は JSON のエイリアスです。 この列タイプに変換すると、その列にパフォーマンスの向上と検索性が追加されますが、`text` の列タイプとしては存在しません。 このトピックについて詳しくは、[JSON データタイプ ](https://mariadb.com/kb/en/json-data-type/){target="_blank"} を参照してください。
+データベーステーブルの構造の変更を避けるもう 1 つの理由は、コア開発チームまたはサードパーティの開発者がデータベーステーブルの構造を変更した場合、変更によって問題が発生する可能性があることです。 例えば、`additional_data` という列を持つコアデータベーステーブルがいくつかあります。 これは常に `text` 列タイプです。 ただし、パフォーマンス上の理由から、コアチームが列を `longtext` に変更する場合があります。 このタイプの列は JSON のエイリアスです。 この列タイプに変換すると、その列にパフォーマンスの向上と検索性が追加されますが、`text` の列タイプとしては存在しません。 このトピックについて詳しくは、[JSON データタイプ &#x200B;](https://mariadb.com/kb/en/json-data-type/){target="_blank"} を参照してください。
 
 ## データを保存または削除するタイミングを把握する
 
@@ -38,7 +38,7 @@ Adobeでは、まずこのデータを保存する必要があるかどうかを
 
 例えば、外部データベース（廃止された古いMagento 1 サイトなど）からの古い注文を一 `stitch` にまとめることができます。 次に、GraphQL メッシュを使用して、顧客の注文履歴の一部として表示します。 これらの古い注文は、現在の [!DNL Adobe Commerce] 環境の注文と組み合わせることができます。
 
-GraphQLでの API メッシュの使用について詳しくは、[API メッシュとは ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}）および [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"} を参照してください。
+GraphQLでの API メッシュの使用について詳しくは、[API メッシュとは &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}）および [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"} を参照してください。
 
 ## 拡張属性を持つ従来のデータの移行
 
@@ -52,9 +52,9 @@ GraphQLでの API メッシュの使用について詳しくは、[API メッシ
 
 ### 他の選択肢を検討する
 
-GraphQL メッシュやAdobe App Builderなど、[!DNL Adobe Commerce] 環境以外のツールの使用を常に検討することが開発者にとって不可欠です。 これらのツールは、データへのアクセスを保持するのに役立ちますが、コアコマースアプリケーションやその基礎となるデータベーステーブルには影響しません。 このアプローチでは、API を通じてデータを公開します。 次に、データソースをApp Builder設定に追加します。 GraphQL Mesh を使用すると、これらのデータソースを組み合わせ、[ 従来のデータ ](#legacy-data) で説明されているように 1 つの応答を生成できます。
+GraphQL メッシュやAdobe App Builderなど、[!DNL Adobe Commerce] 環境以外のツールの使用を常に検討することが開発者にとって不可欠です。 これらのツールは、データへのアクセスを保持するのに役立ちますが、コアコマースアプリケーションやその基礎となるデータベーステーブルには影響しません。 このアプローチでは、API を通じてデータを公開します。 次に、データソースをApp Builder設定に追加します。 GraphQL Mesh を使用すると、これらのデータソースを組み合わせ、[&#x200B; 従来のデータ &#x200B;](#legacy-data) で説明されているように 1 つの応答を生成できます。
 
-GraphQL メッシュについて詳しくは、[GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"} を参照してください。 Adobe App Builderについて詳しくは、[App Builderの概要 ](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"} を参照してください。
+GraphQL メッシュについて詳しくは、[GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"} を参照してください。 Adobe App Builderについて詳しくは、[App Builderの概要 &#x200B;](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"} を参照してください。
 
 ## コアテーブルまたはサードパーティのテーブルの変更
 
@@ -73,11 +73,11 @@ Adobeでは、コアデータベーステーブルまたはサードパーティ
 
    例：`app/code/YourCompany/Customer`
 
-1. 適切なファイルを作成してモジュールを有効にします（[ モジュールの作成 ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}。
+1. 適切なファイルを作成してモジュールを有効にします（[&#x200B; モジュールの作成 &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}。
 
 1. `db_schema.xml` フォルダー内に `etc` というファイルを作成し、適切な変更を加えます。
 
-   必要に応じて、`db_schema_whitelist.json` ファイルを生成します。 詳しくは、[ 宣言型スキーマ ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"} を参照してください。
+   必要に応じて、`db_schema_whitelist.json` ファイルを生成します。 詳しくは、[&#x200B; 宣言型スキーマ &#x200B;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"} を参照してください。
 
 ### 潜在的な影響
 

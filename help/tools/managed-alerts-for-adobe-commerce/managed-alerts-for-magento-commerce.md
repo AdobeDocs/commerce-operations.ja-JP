@@ -14,11 +14,11 @@ ht-degree: 0%
 # Adobe Commerceの管理アラート
 
 
-重要なダッシュボードとアラートを設定し、サイトが重要なストレージと [!DNL Apdex] ータレベル（アプリケーションとサービスの応答時間に対するユーザーの満足度）に達している時期を把握できるようにします。 これは、応答時間の遅延や停止に気づく前にアクションを実行するのに役立ちます。 以下に示す記事を使用して、アラートのトラブルシューティングを行うことができます。 アラートを使用する前に、まず通知チャネルを設定します。 Commerce on Cloud ガイドの [[!DNL New Relic]  通知チャネルの設定 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) を参照してください。
+重要なダッシュボードとアラートを設定し、サイトが重要なストレージと [!DNL Apdex] ータレベル（アプリケーションとサービスの応答時間に対するユーザーの満足度）に達している時期を把握できるようにします。 これは、応答時間の遅延や停止に気づく前にアクションを実行するのに役立ちます。 以下に示す記事を使用して、アラートのトラブルシューティングを行うことができます。 アラートを使用する前に、まず通知チャネルを設定します。 Commerce on Cloud ガイドの [[!DNL New Relic]  通知チャネルの設定 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) を参照してください。
 
 >[!NOTE]
 >
->Adobe Commerceのアラートポリシーの管理アラートが使用できない場合は、このアカウントが新しく作成されたか、最近設定されたこ [!DNL New Relic] が原因である可能性があります。 これらのアカウントにアラート・ポリシーを追加するプロセスは、毎週火曜日に実行されます。 次のプロセスを実行した翌日に、アラート・ポリシーを使用できるようになります。 ポリシーがまだ見つからない場合は、[Adobe Commerce サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) し、プロジェクト ID を含めます。
+>Adobe Commerceのアラートポリシーの管理アラートが使用できない場合は、このアカウントが新しく作成されたか、最近設定されたこ [!DNL New Relic] が原因である可能性があります。 これらのアカウントにアラート・ポリシーを追加するプロセスは、毎週火曜日に実行されます。 次のプロセスを実行した翌日に、アラート・ポリシーを使用できるようになります。 ポリシーがまだ見つからない場合は、[Adobe Commerce サポートリクエストを送信 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) し、プロジェクト ID を含めます。
 
 これらのアラートのトラブルシューティング手順を示すナレッジベース記事へのリンクについては、以下の表を参照してください。
 
@@ -40,18 +40,18 @@ ht-degree: 0%
 
 | 重大度 | CPU | メモリ | ディスク | [!DNL Apdex] | MariaDB | [!DNL Redis] メモリ | トラブルシューティング記事 |
 |----------|-----|--------|------|-------|---------|--------------|-------------------------|
-| 警告 | ✅ |        |      |       |         |              | [Managed alerts for Adobe Commerce:CPUの警告アラート ](managed-alerts-for-magento-commerce-cpu-warning-alert.md) |
-| 重大 | ✅ |        |      |       |         |              | [Adobe Commerceの管理アラート：CPUのクリティカルアラート ](managed-alerts-on-magento-commerce-cpu-critical-alert.md) |
-| 警告 |     | ✅ |      |       |         |              | [Managed alerts for Adobe Commerce:memory warning アラート ](managed-alerts-for-magento-commerce-memory-warning-alert.md) |
-| 重大 |     | ✅ |      |       |         |              | [Managed alerts for Adobe Commerce:memory critical アラート ](managed-alerts-on-magento-commerce-memory-critical-alert.md) |
-| 警告 |     |        |      | ✅ |         |              | [Managed alerts for Adobe Commerce: [!DNL Apdex] warning アラート ](managed-alerts-for-magento-commerce-apdex-warning-alert.md) |
-| 重大 |     |        |      | ✅ |         |              | [Adobe Commerceの管理されたアラート： [!DNL Apdex]  重要なアラート ](managed-alerts-for-magento-commerce-apdex-critical-alert.md) |
-| 警告 |     |        | ✅ |       |         |              | [Managed alerts for Adobe Commerce:disk warning アラート ](managed-alerts-for-magento-commerce-disk-warning-alert.md) |
-| 重大 |     |        | ✅ |       |         |              | [Managed alerts for Adobe Commerce:disk critical アラート ](managed-alerts-for-magento-commerce-disk-critical-alert.md) |
-| 警告と重大 |     |        |      |       | ✅ |              | [Adobe Commerceの管理アラート：MariaDB アラート ](managed-alerts-on-magento-commerce-mariadb-alerts.md) |
-| 警告 |     |        |      |       |         | ✅ | [Managed alerts on Adobe Commerce: [!DNL Redis] memory warning アラート ](managed-alerts-on-magento-commerce-redis-memory-warning-alert.md) |
-| 重大 |     |        |      |       |         | ✅ | [Adobe Commerceの管理アラート： [!DNL Redis] memory critical アラート ](managed-alerts-on-magento-commerce-redis-memory-critical-alert.md) |
+| 警告 | ✅ |        |      |       |         |              | [Managed alerts for Adobe Commerce:CPUの警告アラート &#x200B;](managed-alerts-for-magento-commerce-cpu-warning-alert.md) |
+| 重大 | ✅ |        |      |       |         |              | [Adobe Commerceの管理アラート：CPUのクリティカルアラート &#x200B;](managed-alerts-on-magento-commerce-cpu-critical-alert.md) |
+| 警告 |     | ✅ |      |       |         |              | [Managed alerts for Adobe Commerce:memory warning アラート &#x200B;](managed-alerts-for-magento-commerce-memory-warning-alert.md) |
+| 重大 |     | ✅ |      |       |         |              | [Managed alerts for Adobe Commerce:memory critical アラート &#x200B;](managed-alerts-on-magento-commerce-memory-critical-alert.md) |
+| 警告 |     |        |      | ✅ |         |              | [Managed alerts for Adobe Commerce: [!DNL Apdex] warning アラート &#x200B;](managed-alerts-for-magento-commerce-apdex-warning-alert.md) |
+| 重大 |     |        |      | ✅ |         |              | [Adobe Commerceの管理されたアラート： [!DNL Apdex]  重要なアラート &#x200B;](managed-alerts-for-magento-commerce-apdex-critical-alert.md) |
+| 警告 |     |        | ✅ |       |         |              | [Managed alerts for Adobe Commerce:disk warning アラート &#x200B;](managed-alerts-for-magento-commerce-disk-warning-alert.md) |
+| 重大 |     |        | ✅ |       |         |              | [Managed alerts for Adobe Commerce:disk critical アラート &#x200B;](managed-alerts-for-magento-commerce-disk-critical-alert.md) |
+| 警告と重大 |     |        |      |       | ✅ |              | [Adobe Commerceの管理アラート：MariaDB アラート &#x200B;](managed-alerts-on-magento-commerce-mariadb-alerts.md) |
+| 警告 |     |        |      |       |         | ✅ | [Managed alerts on Adobe Commerce: [!DNL Redis] memory warning アラート &#x200B;](managed-alerts-on-magento-commerce-redis-memory-warning-alert.md) |
+| 重大 |     |        |      |       |         | ✅ | [Adobe Commerceの管理アラート： [!DNL Redis] memory critical アラート &#x200B;](managed-alerts-on-magento-commerce-redis-memory-critical-alert.md) |
 
 ## 管理されたアラートに設定されたアラートしきい値の確認
 
-管理対象アラートに設定されているアラートしきい値は、New Relic アカウントから確認できます。 手順については、[ 管理アラートによるパフォーマンスの監視 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts) を参照してください。
+管理対象アラートに設定されているアラートしきい値は、New Relic アカウントから確認できます。 手順については、[&#x200B; 管理アラートによるパフォーマンスの監視 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts) を参照してください。

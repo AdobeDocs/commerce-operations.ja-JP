@@ -22,7 +22,7 @@ Adobe Commerce 2.4.3-p3 セキュリティリリースは、以前のリリー�
 
 ### AC-3022.patch を適用して、引き続き配送業者として DHL を提供します
 
-DHL ではスキーマバージョン 6.2 を導入しており、近い将来、スキーマバージョン 6.0 を廃止する予定です。 DHL 統合をサポートするAdobe Commerce 2.4.4 以前のバージョンは、バージョン 6.0 のみをサポートしています。これらのリリースをデプロイするマーチャントは、DHL を配送業者として引き続き提供するために、できるだけ早い時期に `AC-3022.patch` を適用する必要があります。 パッチのダウンロードとインストールについては、ナレッジベースの記事 [DHL を引き続き配送業者として提供するためのパッチを適用する ](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) を参照してください。
+DHL ではスキーマバージョン 6.2 を導入しており、近い将来、スキーマバージョン 6.0 を廃止する予定です。 DHL 統合をサポートするAdobe Commerce 2.4.4 以前のバージョンは、バージョン 6.0 のみをサポートしています。これらのリリースをデプロイするマーチャントは、DHL を配送業者として引き続き提供するために、できるだけ早い時期に `AC-3022.patch` を適用する必要があります。 パッチのダウンロードとインストールについては、ナレッジベースの記事 [DHL を引き続き配送業者として提供するためのパッチを適用する &#x200B;](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) を参照してください。
 
 ### セキュリティのハイライト
 
@@ -40,13 +40,13 @@ Adobe Commerce 2.4.3-p2 セキュリティリリースは、以前のリリー�
 
 ### AC-3022.patch を適用して、引き続き配送業者として DHL を提供します
 
-DHL ではスキーマバージョン 6.2 を導入しており、近い将来、スキーマバージョン 6.0 を廃止する予定です。 DHL 統合をサポートするAdobe Commerce 2.4.4 以前のバージョンは、バージョン 6.0 のみをサポートしています。これらのリリースをデプロイするマーチャントは、DHL を配送業者として引き続き提供するために、できるだけ早い時期に `AC-3022.patch` を適用する必要があります。 パッチのダウンロードとインストールについては、ナレッジベースの記事 [DHL を引き続き配送業者として提供するためのパッチを適用する ](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) を参照してください。
+DHL ではスキーマバージョン 6.2 を導入しており、近い将来、スキーマバージョン 6.0 を廃止する予定です。 DHL 統合をサポートするAdobe Commerce 2.4.4 以前のバージョンは、バージョン 6.0 のみをサポートしています。これらのリリースをデプロイするマーチャントは、DHL を配送業者として引き続き提供するために、できるだけ早い時期に `AC-3022.patch` を適用する必要があります。 パッチのダウンロードとインストールについては、ナレッジベースの記事 [DHL を引き続き配送業者として提供するためのパッチを適用する &#x200B;](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) を参照してください。
 
 ### セキュリティのハイライト
 
 * メール変数の使用は、セキュリティリスク軽減の一環として 2.3.4 に廃止され、より厳密な変数構文に置き換わりました。 このレガシー動作は、そのセキュリティリスク軽減の続きとして、このリリースでは完全に削除されています。
 
-  その結果、Adobe Commerce 2.4.3-p2 にアップグレードすると、以前のバージョンで機能していたメールまたはニュースレターのテンプレートが正しく機能しなくなる場合があります。 影響を受けるテンプレートには、管理者の上書き、テーマ、子テーマ、カスタムモジュールまたはサードパーティの拡張機能のテンプレートが含まれます。 [ 互換性アップグレードツール ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) を使用して非推奨（廃止予定）の使用状況を修正した後でも、デプロイメントに影響が及ぶ場合があります。 考えられる影響と影響を受けるテンプレートの移行に関するガイドラインについて詳しくは、[ カスタムメールテンプレートの移行 ](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) を参照してください。
+  その結果、Adobe Commerce 2.4.3-p2 にアップグレードすると、以前のバージョンで機能していたメールまたはニュースレターのテンプレートが正しく機能しなくなる場合があります。 影響を受けるテンプレートには、管理者の上書き、テーマ、子テーマ、カスタムモジュールまたはサードパーティの拡張機能のテンプレートが含まれます。 [&#x200B; 互換性アップグレードツール &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) を使用して非推奨（廃止予定）の使用状況を修正した後でも、デプロイメントに影響が及ぶ場合があります。 考えられる影響と影響を受けるテンプレートの移行に関するガイドラインについて詳しくは、[&#x200B; カスタムメールテンプレートの移行 &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) を参照してください。
 
 * OAuth アクセストークンとパスワードリセットトークンが、データベースに保存される際に暗号化されるようになりました。<!-- AC-520 1323-->
 
@@ -54,9 +54,9 @@ DHL ではスキーマバージョン 6.2 を導入しており、近い将来�
 
 * Adobe Commerceが実稼動モードの場合、Swagger がデフォルトで無効になりました。<!-- AC-1450-->
 
-* 開発者は、Adobe Commerce RESTful エンドポイントで受け入れられる配列のサイズ制限を、エンドポイントごとに設定できるようになりました。 [API セキュリティ ](https://developer.adobe.com/commerce/webapi/get-started/api-security/) を参照してください。<!-- AC-465-->
+* 開発者は、Adobe Commerce RESTful エンドポイントで受け入れられる配列のサイズ制限を、エンドポイントごとに設定できるようになりました。 [API セキュリティ &#x200B;](https://developer.adobe.com/commerce/webapi/get-started/api-security/) を参照してください。<!-- AC-465-->
 
-* ユーザーが web API を使用してシステム全体でリクエストできるリソースのサイズと数を制限し、個々のモジュールのデフォルトを上書きするメカニズムを追加しました。 この機能強化により、`MC-43048__set_rate_limits__2.4.3.patch` で対処された問題が解決します。 [API セキュリティ ](https://developer.adobe.com/commerce/webapi/get-started/api-security/) を参照してください。<!-- AC-1120-->
+* ユーザーが web API を使用してシステム全体でリクエストできるリソースのサイズと数を制限し、個々のモジュールのデフォルトを上書きするメカニズムを追加しました。 この機能強化により、`MC-43048__set_rate_limits__2.4.3.patch` で対処された問題が解決します。 [API セキュリティ &#x200B;](https://developer.adobe.com/commerce/webapi/get-started/api-security/) を参照してください。<!-- AC-1120-->
 
 
 ## 2.4.3-p1
@@ -68,21 +68,21 @@ Adobe Commerce 2.4.3-p1 セキュリティリリースでは、前のリリー�
 
 ### AC-3022.patch を適用して、引き続き配送業者として DHL を提供します
 
-DHL ではスキーマバージョン 6.2 を導入しており、近い将来、スキーマバージョン 6.0 を廃止する予定です。 DHL 統合をサポートするAdobe Commerce 2.4.4 以前のバージョンは、バージョン 6.0 のみをサポートしています。これらのリリースをデプロイするマーチャントは、DHL を配送業者として引き続き提供するために、できるだけ早い時期に `AC-3022.patch` を適用する必要があります。 パッチのダウンロードとインストールについては、ナレッジベースの記事 [DHL を引き続き配送業者として提供するためのパッチを適用する ](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) を参照してください。
+DHL ではスキーマバージョン 6.2 を導入しており、近い将来、スキーマバージョン 6.0 を廃止する予定です。 DHL 統合をサポートするAdobe Commerce 2.4.4 以前のバージョンは、バージョン 6.0 のみをサポートしています。これらのリリースをデプロイするマーチャントは、DHL を配送業者として引き続き提供するために、できるだけ早い時期に `AC-3022.patch` を適用する必要があります。 パッチのダウンロードとインストールについては、ナレッジベースの記事 [DHL を引き続き配送業者として提供するためのパッチを適用する &#x200B;](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) を参照してください。
 
 ### ホットフィックス
 
 このリリースには、次のホットフィックスと、前のパッチリリース用にリリースされたすべてのホットフィックスが含まれています。
 
-* パッチ `AC-384__Fix_Incompatible_PHP_Method__2.3.7-p1_ce.patch to address PHP fatal error on upgrade`。 パッチと問題の両方について詳しくは、[Adobe Commerceのアップグレード 2.4.3、2.3.7-p1 PHP の致命的なエラーに関するホットフィックス ](https://support.magento.com/hc/en-us/articles/4408021533069-Adobe-Commerce-upgrade-2-4-3-2-3-7-p1-PHP-Fatal-error-Hotfix) ナレッジベースの記事を参照してください。
+* パッチ `AC-384__Fix_Incompatible_PHP_Method__2.3.7-p1_ce.patch to address PHP fatal error on upgrade`。 パッチと問題の両方について詳しくは、[Adobe Commerceのアップグレード 2.4.3、2.3.7-p1 PHP の致命的なエラーに関するホットフィックス &#x200B;](https://support.magento.com/hc/en-us/articles/4408021533069-Adobe-Commerce-upgrade-2-4-3-2-3-7-p1-PHP-Fatal-error-Hotfix) ナレッジベースの記事を参照してください。
 
 ### セキュリティのハイライト
 
 **セッション ID がデータベースから削除されました**。 このコードの変更により、マーチャントがデータベースに保存されている生のセッション ID を使用するカスタマイズまたはインストールされた拡張機能を持っている場合、重大な変更が発生する可能性があります。<!-- MC-40976-->
 
-**メディアギャラリーフォルダーへの制限付き管理者アクセス**。 Media Gallery のデフォルトの権限では、設定で明示的に許可されているディレクトリ操作（表示、アップロード、削除、作成）のみが許可されるようになりました。 管理者ユーザーは、`catalog/category` または `wysiwyg` ディレクトリの外部でアップロードされたメディアギャラリーを介してメディアアセットにアクセスできなくなりました。 メディアアセットにアクセスする管理者は、明示的に許可されたフォルダーに移動するか、設定を調整する必要があります。 [Media Library フォルダー権限の変更 ](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/) を参照してください。<!-- B2B-1897-->
+**メディアギャラリーフォルダーへの制限付き管理者アクセス**。 Media Gallery のデフォルトの権限では、設定で明示的に許可されているディレクトリ操作（表示、アップロード、削除、作成）のみが許可されるようになりました。 管理者ユーザーは、`catalog/category` または `wysiwyg` ディレクトリの外部でアップロードされたメディアギャラリーを介してメディアアセットにアクセスできなくなりました。 メディアアセットにアクセスする管理者は、明示的に許可されたフォルダーに移動するか、設定を調整する必要があります。 [Media Library フォルダー権限の変更 &#x200B;](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/) を参照してください。<!-- B2B-1897-->
 
-**GraphQL クエリの複雑さの上限を引き下げ**。 サービス拒否（DOS）攻撃を防ぐために、GraphQLで許可されるクエリの最大複雑度が低下しました。 詳しくは、[GraphQLのセキュリティ設定 ](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/) を参照してください。<!-- PWA-1700-->
+**GraphQL クエリの複雑さの上限を引き下げ**。 サービス拒否（DOS）攻撃を防ぐために、GraphQLで許可されるクエリの最大複雑度が低下しました。 詳しくは、[GraphQLのセキュリティ設定 &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/) を参照してください。<!-- PWA-1700-->
 
 **最近の侵入テストの脆弱性** は、このリリースで修正されました。<!-- MC-42431-->
 
