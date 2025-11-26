@@ -218,8 +218,8 @@ ht-degree: 0%
 
 ### 関連トピック
 
-* [Adobe Commerce Cloud ドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)
-* [Adobe Commerce インストールガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
+* [Adobe Commerce Cloud ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/overview)
+* [Adobe Commerce インストールガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/overview)
 * [キャップの概要](intro.md)
 * [アクセス方法](access.md)
 * [ワークフロー](workflow.md)

@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## ソフトウェアの入手方法
 
-[&#x200B; 製品の可用性ページ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) で、Adobeが作成した拡張機能およびAdobe CommerceおよびMagento Open Source用Commerce サービスの可用性と互換性を確認してください。
+[&#x200B; 製品の可用性ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability) で、Adobeが作成した拡張機能およびAdobe CommerceおよびMagento Open Source用Commerce サービスの可用性と互換性を確認してください。
 
 >[!NOTE]
 >
 >ポリシーが変更されたため、Adobe Commerce コードベースは Composer を介して排他的に配布されるようになりました。 コードベースが「ダウンロード」セクションで使用できなくなったので、Composer を使用してリストに表示されたAdobe Commerce バージョンのいずれかをダウンロードします。
 >
->詳しくは、[&#x200B; クラウドインフラストラクチャ上のAdobe Commerceで請求明細にアクセスしてコードベースをダウンロードできない &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611) を参照してください。
+>詳しくは、[&#x200B; クラウドインフラストラクチャ上のAdobe Commerceで請求明細にアクセスしてコードベースをダウンロードできない &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26611) を参照してください。
 
 Adobe Commerceのインストールの概要については、次の表を参照してください。
 

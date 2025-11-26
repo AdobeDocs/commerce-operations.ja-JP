@@ -65,7 +65,7 @@ UNIX `logrotate` ユーティリティを使用すると、多数のログ・フ
 >
 >* スターター環境にはログローテーションがありません。
 >
->* Pro 統合環境では、ログローテーションを設定できません。 必要に応じて、カスタムのソリューション/スクリプトを実装し、スクリプトを実行するには [cron を設定 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) する必要があります。
+>* Pro 統合環境では、ログローテーションを設定できません。 必要に応じて、カスタムのソリューション/スクリプトを実装し、スクリプトを実行するには [cron を設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) する必要があります。
 
 ### 様々なサービスが通信できるように iptables ルールを設定します
 
