@@ -2,7 +2,7 @@
 title: Adobe Commerceのインストール
 description: 所有しているインフラストラクチャにAdobe Commerceをインストールするには、次の手順に従います。
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 47525e8d8379061b254bfa90ab46e27a1ee2f524
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 0%
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 開始する前に、次の手順を実行します。
 
-* お使いのシステムが [&#x200B; システム要件 &#x200B;](../system-requirements.md) で説明されている要件を満たしていることを確認します。
+* お使いのシステムが [ システム要件 ](../system-requirements.md) で説明されている要件を満たしていることを確認します。
 
-* すべての [&#x200B; 前提条件 &#x200B;](../prerequisites/overview.md) タスクを完了します。
+* すべての [ 前提条件 ](../prerequisites/overview.md) タスクを完了します。
 
-* 最初のインストール手順を完了します。 [&#x200B; インストールまたはアップグレードのパス &#x200B;](../overview.md) を参照してください。
+* 最初のインストール手順を完了します。 [ インストールまたはアップグレードのパス ](../overview.md) を参照してください。
 
-* アプリケーションサーバーにログインしたら、[&#x200B; ファイルシステムの所有者に切り替えます &#x200B;](../prerequisites/file-system/overview.md)。
+* アプリケーションサーバーにログインしたら、[ ファイルシステムの所有者に切り替えます ](../prerequisites/file-system/overview.md)。
 
-* [&#x200B; コマンドラインインストールの基本を学ぶ &#x200B;](../composer.md) の概要を確認します。
+* [ コマンドラインインストールの基本を学ぶ ](../composer.md) の概要を確認します。
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ ht-degree: 0%
 >
 >デフォルトでは、同じデータベースインスタンスにCommerce ソフトウェアをインストールしても、インストーラーによってデータベースが上書きされることはありません。 この動作を変更するには、オプションの `cleanup-database` パラメーターを使用できます。
 
-[&#x200B; 更新、再インストール、アンインストール &#x200B;](uninstall.md) も参照してください。
+[ 更新、再インストール、アンインストール ](uninstall.md) も参照してください。
 
 ## 安全なインストール
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これらのコマンドを実行したときにエラーが表示される場合は、[&#x200B; インストールの依存関係の更新 &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/) の説明に従って、インストールの依存関係を更新したことを確認してください。
+>これらのコマンドを実行したときにエラーが表示される場合は、[ インストールの依存関係の更新 ](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies) の説明に従って、インストールの依存関係を更新したことを確認してください。
 
 ## コマンドラインからのインストール
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 magento setup:install --<option>=<value> ... --<option>=<value>
 ```
 
-次の表に、インストールコマンドなどのインストールオプションの名前と値を示します。 [&#x200B; サンプルローカルホストのインストール &#x200B;](#sample-localhost-installations) を参照してください。
+次の表に、インストールコマンドなどのインストールオプションの名前と値を示します。 [ サンプルローカルホストのインストール ](#sample-localhost-installations) を参照してください。
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ magento setup:install --<option>=<value> ... --<option>=<value>
 
 次のオプションでは、管理者ユーザーのユーザー情報と資格情報を指定します。
 
-Adobe Commerce バージョン 2.2.8 以降では、インストール中またはインストール後に管理者ユーザーを作成できます。 インストール時にユーザーを作成する場合は、すべての管理者資格情報の変数が必要です。 [&#x200B; サンプルローカルホストのインストール &#x200B;](#sample-localhost-installations) を参照してください。
+Adobe Commerce バージョン 2.2.8 以降では、インストール中またはインストール後に管理者ユーザーを作成できます。 インストール時にユーザーを作成する場合は、すべての管理者資格情報の変数が必要です。 [ サンプルローカルホストのインストール ](#sample-localhost-installations) を参照してください。
 
 | 名前 | 値 | 必須？ |
 |--- |--- |--- |
@@ -93,7 +93,7 @@ Adobe Commerce バージョン 2.2.8 以降では、インストール中また�
 |--- |--- |--- |
 | `--base-url` | 次のいずれかの形式で管理者およびストアフロントにアクセスするために使用するベース URL:<br><br>`http[s]://<host or ip>/<your install dir>/`。<br><br>**注意：** スキーム（http://またはhttps://）と末尾のスラッシュは両方とも必須です。<br><br>`<your install dir>` は、アプリケーションをインストールするドキュメントルート相対パスです。 Web サーバーと仮想ホストの設定方法に応じて、パスは magento2 になるか、空になります。<br><br>localhost 上のアプリケーションにアクセスするには、`http://127.0.0.1/<your install dir>/` または `http://127.0.0.1/<your install dir>/` を使用します。<br><br> – 仮想ホスト設定または Docker などの仮想化環境によって定義されたベース URL を表す `{{base_url}}`。 例えば、ホスト名がcommerce.example.comの仮想ホストを設定した場合、`--base-url={{base_url}}` を使用してアプリケーションをインストールし、`http://commerce.example.com/admin` のような URL を使用して管理者にアクセスできます。 | はい |
 | `--backend-frontname` | 管理者にアクセスするための URI （Uniform Resource Identifier）。 このパラメーターを省略すると、アプリケーションは次のパターンのランダムな URI を生成できます。<code>admin_jkhgdfq</code>。<br><br> セキュリティ上の理由から、ランダムな URI を使用することをお勧めします。 ランダム URI は、ハッカーや悪意のあるソフトウェアが悪用しにくくなります。<br><br>URI はインストールの最後に表示されます。 `magento info:adminuri` コマンドを使用すれば、後でいつでも表示することができます。<br><br> 値を入力する場合は、admin、backend などの一般的な単語を使用しないことをお勧めします。 管理 URI には、英数字とアンダースコア文字（`_`）のみを含めることができます。 | 不可 |
-| `--db-host` | 次のいずれかを使用します。<br><br>- データベースサーバーの完全修飾ホスト名または IP アドレス。<br><br>- `localhost` （デフォルト）またはデータベースサーバーが web サーバーと同じホスト上にある場合は `127.0.0.1`。localhost は、MySQL クライアントライブラリが UNIX ソケットを使用してデータベースに接続することを意味します。 `127.0.0.1` は、クライアントライブラリで TCP プロトコルを使用します。 ソケットの詳細については、[PHP PDO_MYSQL のドキュメント &#x200B;](https://www.php.net/manual/en/ref.pdo-mysql.php) を参照してください。<br><br>**注意：** オプションで、www.example.comのようなホスト名でデータベースサーバーポートを指定できます :9000 | はい |
+| `--db-host` | 次のいずれかを使用します。<br><br>- データベースサーバーの完全修飾ホスト名または IP アドレス。<br><br>- `localhost` （デフォルト）またはデータベースサーバーが web サーバーと同じホスト上にある場合は `127.0.0.1`。localhost は、MySQL クライアントライブラリが UNIX ソケットを使用してデータベースに接続することを意味します。 `127.0.0.1` は、クライアントライブラリで TCP プロトコルを使用します。 ソケットの詳細については、[PHP PDO_MYSQL のドキュメント ](https://www.php.net/manual/en/ref.pdo-mysql.php) を参照してください。<br><br>**注意：** オプションで、www.example.comのようなホスト名でデータベースサーバーポートを指定できます :9000 | はい |
 | `--db-name` | データベーステーブルをインストールするデータベースインスタンスの名前。<br><br> デフォルトは `magento2` です。 | はい |
 | `--db-user` | データベース・インスタンス所有者のユーザー名。<br><br> デフォルトは `root` です。 | はい |
 | `--db-password` | データベースインスタンス所有者のパスワード。 | はい |
@@ -117,7 +117,7 @@ Adobe Commerce バージョン 2.2.8 以降では、インストール中また�
 
 >[!TIP]
 >
->インストール中にリモート記憶域サービスを有効にするには、[&#x200B; 構成ガイド &#x200B;](../../configuration/remote-storage/remote-storage.md) の _リモート記憶域の構成_ を参照してください。
+>インストール中にリモート記憶域サービスを有効にするには、[ 構成ガイド ](../../configuration/remote-storage/remote-storage.md) の _リモート記憶域の構成_ を参照してください。
 
 **検索エンジン設定オプション：**
 
@@ -163,7 +163,7 @@ Adobe Commerce バージョン 2.2.8 以降では、インストール中また�
 
 | 名前 | 説明 | 必須？ |
 |--- |--- |--- |
-| `remote-storage-driver` | アダプター名 <br> 使用可能な値：<br>**file**: リモートストレージを無効にし、ローカルファイルシステムを使用します <br>**aws-s3**: [Amazon Simple Storage Service （Amazon S3）を使用 &#x200B;](https://aws.amazon.com/s3/) | 不可 |
+| `remote-storage-driver` | アダプター名 <br> 使用可能な値：<br>**file**: リモートストレージを無効にし、ローカルファイルシステムを使用します <br>**aws-s3**: [Amazon Simple Storage Service （Amazon S3）を使用 ](https://aws.amazon.com/s3/) | 不可 |
 | `remote-storage-bucket` | オブジェクトストレージまたはコンテナ名 | 不可 |
 | `remote-storage-prefix` | オプションのプレフィックス（オブジェクトストレージ内の場所） | 不可 |
 | `remote-storage-region` | 地域名 | 不可 |
@@ -186,7 +186,7 @@ Adobe Commerce バージョン 2.2.8 以降では、インストール中また�
 
 >[!NOTE]
 >
->アプリケーションのインストール後にモジュールを有効または無効にする方法については、[&#x200B; モジュールの有効/無効 &#x200B;](manage-modules.md) を参照してください。
+>アプリケーションのインストール後にモジュールを有効または無効にする方法については、[ モジュールの有効/無効 ](manage-modules.md) を参照してください。
 
 **機密データ：**
 
@@ -264,7 +264,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 ```
 
 インストール後、`admin:user:create` のコマンドを使用して管理者ユーザーを作成できます。
-[&#x200B; 管理者の作成または編集 &#x200B;](admin.md#create-or-edit-an-administrator)
+[ 管理者の作成または編集 ](admin.md#create-or-edit-an-administrator)
 
 #### 例 3 – 追加オプションを使用したインストール
 
@@ -339,6 +339,6 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 >[!TIP]
 >
->1 つのユーザーアカウントでアプリケーションサーバーにアクセスする場合は、[umask の設定 &#x200B;](../next-steps/set-umask.md) を参照してください。 このタイプの設定は、共有ホスティングで一般的です。
+>1 つのユーザーアカウントでアプリケーションサーバーにアクセスする場合は、[umask の設定 ](../next-steps/set-umask.md) を参照してください。 このタイプの設定は、共有ホスティングで一般的です。
 
 <!-- Last updated from includes: 2024-04-16 09:42:31 -->

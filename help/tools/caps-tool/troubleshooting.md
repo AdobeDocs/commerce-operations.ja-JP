@@ -3,7 +3,7 @@ title: '[!DNL Cloud Automation Patching Service (CAPS)] トラブルシューテ
 description: ' [!DNL Cloud Automation Patching Service (CAPS)] の一般的な問題とエラーメッセージのトラブルシューティング'
 hide: true
 hidefromtoc: true
-source-git-commit: eff8c0ae9e1d9db6b46ba7cfbb915685ab5b194d
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '946'
 ht-degree: 0%
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 **発生した場合：** 復元操作中
 
-**原因：**&#x200B;[!DNL CAPS] で適用されていないパッチを元に戻そうとしています
+**原因：**[!DNL CAPS] で適用されていないパッチを元に戻そうとしています
 
 **解決策：** パッチを最初に適用したときと同じ方法を使用するか、サポートに手動で問い合わせてください
 
@@ -218,8 +218,8 @@ ht-degree: 0%
 
 ### 関連トピック
 
-* [Adobe Commerce Cloud ドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview.html)
-* [Adobe Commerce インストールガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview.html)
+* [Adobe Commerce Cloud ドキュメント ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)
+* [Adobe Commerce インストールガイド ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
 * [キャップの概要](intro.md)
 * [アクセス方法](access.md)
 * [ワークフロー](workflow.md)

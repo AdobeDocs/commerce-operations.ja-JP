@@ -1,5 +1,5 @@
 ---
-source-git-commit: d7926b9150137813b1161581bb1d7884a6fe11e9
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%
@@ -10,11 +10,11 @@ ht-degree: 1%
 MariaDB 10.4 および 10.6 でのインデックス再作成は、以前のバージョンの MariaDB または MySQL と比較して時間がかかります。 インデックス再作成を高速化するには、次の MariaDB 設定パラメーターを設定することをお勧めします。
 
 * [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
-* [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
+* [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/docs/server/server-management/variables-and-modes/server-system-variables#optimizer_use_condition_selectivity)
 
 MariaDB 10.6 にアップグレードした後、インデックス作成に関係なくパフォーマンスが低下する場合は、[`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) 設定を有効にすることを検討してください。 例：`--query-cache-type=ON`。
 
-クラウドインフラストラクチャプロジェクトでAdobe Commerceをアップグレードする前に、MariaDB をアップグレードする必要がある場合もあります（[MariaDB のアップグレードのベストプラクティスを参照 &#x200B;](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md)）。
+クラウドインフラストラクチャプロジェクトでAdobe Commerceをアップグレードする前に、MariaDB をアップグレードする必要がある場合もあります（[MariaDB のアップグレードのベストプラクティスを参照 ](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md)）。
 
 例：
 

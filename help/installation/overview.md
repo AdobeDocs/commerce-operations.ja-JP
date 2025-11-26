@@ -2,7 +2,7 @@
 title: オンプレミス インストールの概要
 description: Adobe Commerceのオンプレミスでのインストールプロセスについて説明します。 サーバー要件、設定手順、導入のベストプラクティスについて説明します。
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 062267b8b06e41d89f704144e640fc1254952532
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Adobe Commerceのオンプレミスソフトウェアは、約 30～60 分でイ
 >
 >正常に続行するには、中程度の技術的知識とサーバーへのアクセス権が必要です。
 
-インストールすると、[&#x200B; 顧客向けのストアフロント &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/storefront/storefront) と [&#x200B; 管理パネル &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/admin/admin) の両方を備えた完全に機能するAdobe Commerce ストアが作成されます。 プロセスを開始する前に、データベース資格情報、ドメイン情報および認証キーの準備が完了している必要があります。
+インストールすると、[ 顧客向けのストアフロント ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) と [ 管理パネル ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin) の両方を備えた完全に機能するAdobe Commerce ストアが作成されます。 プロセスを開始する前に、データベース資格情報、ドメイン情報および認証キーの準備が完了している必要があります。
 
 ## 販売者の責任
 
@@ -43,33 +43,33 @@ Adobe Commerceをオンプレミスで使用すると、サーバー、ホステ
 
 次の図は、オンプレミス環境用のAdobe Commerceをインストールする際の主な手順を示しています。
 
-![&#x200B; インストールの仕組み &#x200B;](../assets/installation/on-premises-install.drawio.svg)
+![ インストールの仕組み ](../assets/installation/on-premises-install.drawio.svg)
 
 ### サーバー環境の設定
 
-[&#x200B; 前提条件 &#x200B;](prerequisites/overview.md) に従って、PHP、Web サーバー、データベースおよび検索エンジンをインストールして設定します。
+[ 前提条件 ](prerequisites/overview.md) に従って、PHP、Web サーバー、データベースおよび検索エンジンをインストールして設定します。
 
 ### 認証キーの取得
 
-Adobe Commerce Composer パッケージにアクセスするには、Commerce Marketplaceから新しい [&#x200B; 認証キー &#x200B;](prerequisites/authentication-keys.md) を生成（または既存のキーをコピー）します。
+Adobe Commerce Composer パッケージにアクセスするには、Commerce Marketplaceから新しい [ 認証キー ](prerequisites/authentication-keys.md) を生成（または既存のキーをコピー）します。
 
 ### Adobe Commerce ソフトウェアの入手
 
 [Composer](prerequisites/commerce.md) （推奨）を使用してダウンロードするか、GitHub からクローンを使用して開発の投稿をダウンロードします。
 
-Magento Open Source コードベースに投稿したり、アプリケーションをカスタマイズしたりする場合は、GitHub リポジトリを [&#x200B; クローン &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) します。 この方法を使用するには、GitHub と Composer の両方に関する知識が必要です。
+Magento Open Source コードベースに投稿したり、アプリケーションをカスタマイズしたりする場合は、GitHub リポジトリを [ クローン ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) します。 この方法を使用するには、GitHub と Composer の両方に関する知識が必要です。
 
 ### アプリケーションのインストール
 
-特定の設定でインストールコマンドを実行します。 完全な例については、[&#x200B; クイックスタート &#x200B;](composer.md) を参照してください。
+特定の設定でインストールコマンドを実行します。 完全な例については、[ クイックスタート ](composer.md) を参照してください。
 
 >[!NOTE]
 >
->前提条件ソフトウェアが正しく設定されていないために手順が失敗した場合は、[&#x200B; 前提条件 &#x200B;](prerequisites/overview.md) を確認してください。
+>前提条件ソフトウェアが正しく設定されていないために手順が失敗した場合は、[ 前提条件 ](prerequisites/overview.md) を確認してください。
 
 ### インストールの確認
 
-ストアフロントと管理パネルの [&#x200B; テスト &#x200B;](next-steps/verify.md) を実行して、すべてが正しく動作することを確認します。
+ストアフロントと管理パネルの [ テスト ](next-steps/verify.md) を実行して、すべてが正しく動作することを確認します。
 
 ## インストールに関するよくある問題
 

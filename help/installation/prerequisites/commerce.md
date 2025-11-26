@@ -2,7 +2,7 @@
 title: Adobe Commerce ソフトウェアの入手
 description: Adobe Commerce ソフトウェアのダウンロード方法について説明します。
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 0659c19e24e90ca4e3a7ac1c04914bda82b766dd
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## ソフトウェアの入手方法
 
-[&#x200B; 製品の可用性ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability) で、Adobeが作成した拡張機能およびAdobe CommerceおよびMagento Open Source用Commerce サービスの可用性と互換性を確認してください。
+[ 製品の可用性ページ ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) で、Adobeが作成した拡張機能およびAdobe CommerceおよびMagento Open Source用Commerce サービスの可用性と互換性を確認してください。
 
 >[!NOTE]
 >
 >ポリシーが変更されたため、Adobe Commerce コードベースは Composer を介して排他的に配布されるようになりました。 コードベースが「ダウンロード」セクションで使用できなくなったので、Composer を使用してリストに表示されたAdobe Commerce バージョンのいずれかをダウンロードします。
 >
->詳しくは、[&#x200B; クラウドインフラストラクチャ上のAdobe Commerceで請求明細にアクセスしてコードベースをダウンロードできない &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26611) を参照してください。
+>詳しくは、[ クラウドインフラストラクチャ上のAdobe Commerceで請求明細にアクセスしてコードベースをダウンロードできない ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611) を参照してください。
 
 Adobe Commerceのインストールの概要については、次の表を参照してください。
 
@@ -53,7 +53,7 @@ Adobe Commerceのインストールの概要については、次の表を参照
             <li><a href="../advanced.md"> コマンドライン </a> を使用してアプリケーションをインストールします。</li>
             <li><a href="../../upgrade/developer/git-installs.md">Composer および Git コマンド </a> を使用してアプリケーションをアップグレードします。</li>
             <li><code>app/code</code> ディレクトリの下のコードをカスタマイズします。</li></ol></td>
-        <td><p><a href="https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/">GitHub リポジトリのクローン</a></p></td>
+        <td><p><a href="https://developer.adobe.com/commerce/contributor/guides/install/clone-repository">GitHub リポジトリのクローン</a></p></td>
     </tr>
     </tbody>
 </table>
@@ -68,4 +68,4 @@ UNIX システムでは、Web サーバーや PHP などのソフトウェアを
 
 Web サーバーがこれらのファイルを操作できない可能性があるので *web サーバーの docroot にアプリケーションを* ユーザーとしてインストールし `root` いでください。
 
-`root` ファイルシステム所有者 [&#x200B; を作成し、その所有者を web サーバーのグループに追加するには、](file-system/overview.md) 権限が必要です。 ファイルシステムの所有者を使用して、コマンドラインから `bin/magento` コマンドを実行したり、タスクをスケジュールする cron ジョブを設定したりできます。
+`root` ファイルシステム所有者 [ を作成し、その所有者を web サーバーのグループに追加するには、](file-system/overview.md) 権限が必要です。 ファイルシステムの所有者を使用して、コマンドラインから `bin/magento` コマンドを実行したり、タスクをスケジュールする cron ジョブを設定したりできます。

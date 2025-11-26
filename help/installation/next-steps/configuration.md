@@ -3,7 +3,7 @@ title: アプリケーションの設定
 description: Adobe Commerceのオンプレミスデプロイメントに必要なインストール後設定について説明します。
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: a7c98879e027948fc887e28d4baa5fb04214ca95
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
@@ -20,18 +20,18 @@ UNIX のタスク・スケジューラである cron は、アプリケーショ
 
 *crontab* でAdobe Commerce サービスをインストールする必要があります。インストールしないと、一部のコア機能（および一部のサードパーティの拡張機能）が正しく機能しません。
 
-crontab を削除してコマンドラインから cron を実行する方法など、cron について詳しくは、[cron の設定と実行 &#x200B;](../../configuration/cli/configure-cron-jobs.md) を参照してください。
+crontab を削除してコマンドラインから cron を実行する方法など、cron について詳しくは、[cron の設定と実行 ](../../configuration/cli/configure-cron-jobs.md) を参照してください。
 
 ## セキュリティ設定と推奨事項
 
 インストール後は、次の操作をお勧めします。
 
-* ファイルの所有権と権限が [&#x200B; 適切に設定されていることを確認 &#x200B;](../prerequisites/file-system/configure-permissions.md) ます
-* [&#x200B; デフォルトの管理者 URI の &#x200B;](../tutorials/admin-uri.md) から別の場所への変更 `admin` を強くお勧めします
-* [`X-Frame-Option` HTTP ヘッダー &#x200B;](../../configuration/security/xframe-options.md) が正しく設定されていることを確認します。
-* クロスサイトスクリプティング（XSS）に対する予防策として、テンプレートを保護 [&#x200B; します &#x200B;](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
+* ファイルの所有権と権限が [ 適切に設定されていることを確認 ](../prerequisites/file-system/configure-permissions.md) ます
+* [ デフォルトの管理者 URI の ](../tutorials/admin-uri.md) から別の場所への変更 `admin` を強くお勧めします
+* [`X-Frame-Option` HTTP ヘッダー ](../../configuration/security/xframe-options.md) が正しく設定されていることを確認します。
+* クロスサイトスクリプティング（XSS）に対する予防策として、テンプレートを保護 [ します ](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)
 
-[GitHub リポジトリをクローン &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) してインストールした場合は、アプリケーションをデプロイする際に、実稼動環境に必要なファイルとフォルダーのみが含まれていることを確認してください。 不要なファイルやフォルダーがあると、セキュリティリスクが生じる可能性があります。
+[GitHub リポジトリをクローン ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) してインストールした場合は、アプリケーションをデプロイする際に、実稼動環境に必要なファイルとフォルダーのみが含まれていることを確認してください。 不要なファイルやフォルダーがあると、セキュリティリスクが生じる可能性があります。
 
 ## Apache サーバーの書き換えを有効にする
 
@@ -55,9 +55,9 @@ UNIX `logrotate` ユーティリティを使用すると、多数のログ・フ
 
 詳しくは、次のいずれかを参照してください。
 
-* [HowTo: Ultimate log rotate コマンドのチュートリアルと 10 の例 &#x200B;](https://www.thegeekstuff.com/2010/07/logrotate-examples)
-* [&#x200B; スタック交換 &#x200B;](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
-* [`logrotate` man ページ &#x200B;](https://linuxconfig.org/logrotate-8-manual-page)
+* [HowTo: Ultimate log rotate コマンドのチュートリアルと 10 の例 ](https://www.thegeekstuff.com/2010/07/logrotate-examples)
+* [ スタック交換 ](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
+* [`logrotate` man ページ ](https://linuxconfig.org/logrotate-8-manual-page)
 
 >[!AVAILABILITY]
 >
@@ -65,7 +65,7 @@ UNIX `logrotate` ユーティリティを使用すると、多数のログ・フ
 >
 >* スターター環境にはログローテーションがありません。
 >
->* Pro 統合環境では、ログローテーションを設定できません。 必要に応じて、カスタムのソリューション/スクリプトを実装し、スクリプトを実行するには [cron を設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) する必要があります。
+>* Pro 統合環境では、ログローテーションを設定できません。 必要に応じて、カスタムのソリューション/スクリプトを実装し、スクリプトを実行するには [cron を設定 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) する必要があります。
 
 ### 様々なサービスが通信できるように iptables ルールを設定します
 
@@ -73,8 +73,8 @@ UNIX `logrotate` ユーティリティを使用すると、多数のログ・フ
 
 詳細情報：
 
-* Ubuntu: [Ubuntu ドキュメントページ &#x200B;](https://help.ubuntu.com/community/IptablesHowTo)。
-* CentOS: [CentOS のハウツー &#x200B;](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)。
+* Ubuntu: [Ubuntu ドキュメントページ ](https://help.ubuntu.com/community/IptablesHowTo)。
+* CentOS: [CentOS のハウツー ](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)。
 
 ### Security Enhanced Linux （SELinux）ルール
 
@@ -82,15 +82,15 @@ SELinux を使用するかどうかの推奨事項はありません。ただし
 
 詳細情報：
 
-* Ubuntu: [Debian ハンドブック &#x200B;](https://debian-handbook.info/browse/stable/sect.selinux.html)
+* Ubuntu: [Debian ハンドブック ](https://debian-handbook.info/browse/stable/sect.selinux.html)
 * CentOS: [CentOS の wiki](https://wiki.centos.org/HowTos/SELinux)
 
 ### メールサーバーの設定
 
 Adobe Commerceにはメールサーバーが必要です。 特定のサーバーを使用することはお勧めしませんが、次のいずれかを試すことができます。
 
-* CentOS の Postfix （[Digital Ocean チュートリアル &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6)、[CentOS ドキュメント &#x200B;](https://www.centos.org)）
-* Ubuntu の Postfix （[Digital Ocean チュートリアル &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04)、[Ubuntu ドキュメント &#x200B;](https://help.ubuntu.com/community/MailServer)）
+* CentOS の Postfix （[Digital Ocean チュートリアル ](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6)、[CentOS ドキュメント ](https://www.centos.org)）
+* Ubuntu の Postfix （[Digital Ocean チュートリアル ](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04)、[Ubuntu ドキュメント ](https://help.ubuntu.com/community/MailServer)）
 
 ### 検索エンジンを絞り込んで、パフォーマンスを向上させます。
 
