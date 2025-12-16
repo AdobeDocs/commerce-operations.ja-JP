@@ -2,9 +2,9 @@
 title: RabbitMQ から ActiveMQ への移行
 description: Adobe Commerceのオンプレミスインストールに使用する Message Queue Broker の置き換えについて説明します。
 feature: Services, Configuration
-source-git-commit: 8f57a4fa7744f4647ab96d0fcfae08b8eb4927c6
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ActiveMQ （Apache ActiveMQ Artemis）は、Adobe Commerceでメッセージキューを処理するために RabbitMQ の代わりとなる高性能のマルチプロトコルメッセージブローカーです。
 
-2.4.8-p3、2.4.7-p8 および 2.4.6-p13 以降、Adobe Commerceはメッセージキューブローカーとして ActiveMQ をサポートします。 これにより、オンプレミスインストールがインフラストラクチャ要件と専門知識に基づいて RabbitMQ と ActiveMQ のどちらかを選択する柔軟性が向上します。
+2.4.8-p3、2.4.7-p8、2.4.6-p13 および 2.4.5-p16 の時点で、Adobe Commerceはメッセージキューブローカーとして ActiveMQ をサポートしています。 これにより、オンプレミスインストールがインフラストラクチャ要件と専門知識に基づいて RabbitMQ と ActiveMQ のどちらかを選択する柔軟性が向上します。
 
 ## 始める前に
 
@@ -32,7 +32,7 @@ ActiveMQ への移行は簡単なプロセスですが、保留中のすべて�
 
 ### 手順 1：サイトをメンテナンスモードにする
 
-1. サイトを [&#x200B; メンテナンスモード &#x200B;](../../installation/tutorials/maintenance-mode.md) にします。
+1. サイトを [ メンテナンスモード ](../../installation/tutorials/maintenance-mode.md) にします。
 
    ```bash
    bin/magento maintenance:enable
@@ -55,7 +55,7 @@ ActiveMQ への移行は簡単なプロセスですが、保留中のすべて�
 1. 「**キュー**」タブに移動します
 1. すべてのキューに **0 メッセージが表示されることを確認する**
 
-   ![RabbitMQ 管理ダッシュボード &#x200B;](../../assets/upgrade-guide/rabbitmq_mgmt_dashboard.png)
+   ![RabbitMQ 管理ダッシュボード ](../../assets/upgrade-guide/rabbitmq_mgmt_dashboard.png)
 
 #### 方法 B: rabbitmqctl コマンドラインの使用
 
@@ -168,7 +168,7 @@ RabbitMQ が不要になった場合は、アンインストールできます�
 
 ### 手順 8:Adobe Commerceへの ActiveMQ のインストールと設定
 
-STOMP プロトコルの構成や接続の検証など、ActiveMQ のインストールおよび構成タスクを完了するには、[&#x200B; インストールおよび構成ガイド &#x200B;](../../installation/prerequisites/activemq.md) を参照してください。
+STOMP プロトコルの構成や接続の検証など、ActiveMQ のインストールおよび構成タスクを完了するには、[ インストールおよび構成ガイド ](../../installation/prerequisites/activemq.md) を参照してください。
 
 ### 手順 9:cron ジョブの再インストール
 
