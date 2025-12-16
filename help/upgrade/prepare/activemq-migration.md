@@ -32,7 +32,7 @@ ActiveMQ への移行は簡単なプロセスですが、保留中のすべて�
 
 ### 手順 1：サイトをメンテナンスモードにする
 
-1. サイトを [ メンテナンスモード ](../../installation/tutorials/maintenance-mode.md) にします。
+1. サイトを [&#x200B; メンテナンスモード &#x200B;](../../installation/tutorials/maintenance-mode.md) にします。
 
    ```bash
    bin/magento maintenance:enable
@@ -55,7 +55,7 @@ ActiveMQ への移行は簡単なプロセスですが、保留中のすべて�
 1. 「**キュー**」タブに移動します
 1. すべてのキューに **0 メッセージが表示されることを確認する**
 
-   ![RabbitMQ 管理ダッシュボード ](../../assets/upgrade-guide/rabbitmq_mgmt_dashboard.png)
+   ![RabbitMQ 管理ダッシュボード &#x200B;](../../assets/upgrade-guide/rabbitmq_mgmt_dashboard.png)
 
 #### 方法 B: rabbitmqctl コマンドラインの使用
 
@@ -168,7 +168,7 @@ RabbitMQ が不要になった場合は、アンインストールできます�
 
 ### 手順 8:Adobe Commerceへの ActiveMQ のインストールと設定
 
-STOMP プロトコルの構成や接続の検証など、ActiveMQ のインストールおよび構成タスクを完了するには、[ インストールおよび構成ガイド ](../../installation/prerequisites/activemq.md) を参照してください。
+STOMP プロトコルの構成や接続の検証など、ActiveMQ のインストールおよび構成タスクを完了するには、[&#x200B; インストールおよび構成ガイド &#x200B;](../../installation/prerequisites/activemq.md) を参照してください。
 
 ### 手順 9:cron ジョブの再インストール
 

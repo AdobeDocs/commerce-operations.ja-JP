@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # メッセージキューの概要
 
-メッセージキューフレームワーク（MQF）は、モジュールがキューにメッセージを公開できるようにするシステムです。 また、メッセージを非同期で受信する [ コンシューマー ](consumers.md) も定義します。 MQF は、複数のメッセージブローカーをサポートします。
+メッセージキューフレームワーク（MQF）は、モジュールがキューにメッセージを公開できるようにするシステムです。 また、メッセージを非同期で受信する [&#x200B; コンシューマー &#x200B;](consumers.md) も定義します。 MQF は、複数のメッセージブローカーをサポートします。
 
 - **[[!DNL RabbitMQ]](https://www.rabbitmq.com)** - プライマリメッセージングブローカー。メッセージを送受信するためのスケーラブルなプラットフォームを提供します。 未配信のメッセージを保存するメカニズムが含まれており、Advanced Message Queuing Protocol （AMQP） 0.9.1 仕様に基づいています。
 - **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** - STOMP （Simple Text Oriented Messaging Protocol）を使用して信頼性と拡張性の高いメッセージングを行う代替メッセージングブローカー。 Adobe Commerce 2.4.5 以降のバージョンで導入。
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 次の図に、メッセージキューフレームワークを示します。
 
-![ メッセージキューフレームワーク ](../../assets/configuration/mq-framework.png)
+![&#x200B; メッセージキューフレームワーク &#x200B;](../../assets/configuration/mq-framework.png)
 
 - パブリッシャーは、メッセージを取引所に送信するコンポーネントです。 公開先の交換と、送信するメッセージの形式がわかります。
 
@@ -42,7 +42,7 @@ Adobe Commerceは、RabbitMQ の代わりに、Simple Text Oriented Messaging Pr
 
 次の図は、ActiveMQ Artemis を使用した STOMP フレームワークを示しています。
 
-![STOMP フレームワーク ](../../assets/configuration/stomp-framework.png)
+![STOMP フレームワーク &#x200B;](../../assets/configuration/stomp-framework.png)
 
 ### STOMP フレームワーク・コンポーネント
 
