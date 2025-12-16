@@ -15,7 +15,7 @@ Adobe Commerceは、Simple Text Oriented Messaging Protocol （STOMP）を介し
 
 >[!NOTE]
 >
->ActiveMQ Artemis は、Adobe Commerce 2.4.5 以降のバージョンで導入されました。 クラウドインフラストラクチャプロジェクトのAdobe CommerceCommerceへの ActiveMQ Artemis のインストールについて詳しくは、[Cloud Guide の &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq)ActiveMQ サービスの設定 *を参照してください*
+>ActiveMQ Artemis は、Adobe Commerce 2.4.5 以降のバージョンで導入されました。 クラウドインフラストラクチャプロジェクトのAdobe CommerceCommerceへの ActiveMQ Artemis のインストールについて詳しくは、[Cloud Guide の &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/activemq)ActiveMQ サービスの設定 *を参照してください*
 
 メッセージキューは、メッセージの送信者と受信者が互いに接触しない非同期通信メカニズムを提供します。 また、メッセージキューと同時に通信する必要もありません。 送信者がメッセージをキューに入れると、受信者が受信するまで保存されます。
 
