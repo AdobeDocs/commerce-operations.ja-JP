@@ -23,12 +23,12 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values"> 設定値の設定 </a> について詳しく説明しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values"> 設定値の設定 </a> について詳しく説明しました。</p>
 </td>
       <td>
         ベストプラクティス
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/147">プル要求</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.ja-JP/pull/147">プル要求</a></td>
     </tr>
   </tbody>
 </table>
@@ -45,12 +45,12 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code>Valkey のデフォルトキャッシュの設定 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching"> 手順の </a> CLI コマンドを更新して、<code class="language-plaintext highlighter-rouge">cache-backend</code> パラメーターに正しい値を指定しました。</p>
+      <td><p><code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code>Valkey のデフォルトキャッシュの設定 <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching"> 手順の </a> CLI コマンドを更新して、<code class="language-plaintext highlighter-rouge">cache-backend</code> パラメーターに正しい値を指定しました。</p>
 </td>
       <td>
         ベストプラクティス
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/159">プル要求</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.ja-JP/pull/159">プル要求</a></td>
     </tr>
   </tbody>
 </table>
