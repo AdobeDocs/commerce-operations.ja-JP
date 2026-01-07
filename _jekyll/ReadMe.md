@@ -242,8 +242,8 @@ relationships:
 
 - Ruby と Bundler がインストールされました。
 - Gemfile で指定されている必須の gem （コア依存関係は `adobe-comdox-exl-rake-tasks` で提供されます）。
-- [ タスクと ](https://cli.github.com/) タスク用の `get_released_versions`GitHub CLI`first_merge_date`。
-- [ タスクの Python、](https://www.pygmt.org/latest/install.html)PyGMT[ および ](https://formulae.brew.sh/formula/pdf2svg)pdf2svg`azure_regions`。
+- [&#x200B; タスクと &#x200B;](https://cli.github.com/) タスク用の `get_released_versions`GitHub CLI`first_merge_date`。
+- [&#x200B; タスクの Python、](https://www.pygmt.org/latest/install.html)PyGMT[&#x200B; および &#x200B;](https://formulae.brew.sh/formula/pdf2svg)pdf2svg`azure_regions`。
 
 ## 設定
 

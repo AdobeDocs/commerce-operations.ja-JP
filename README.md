@@ -43,13 +43,13 @@ ht-degree: 3%
 
 ## Adobe コンテンツへの投稿について
 
-[Adobe ドキュメント投稿者ガイドを参照してください ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
+[Adobe ドキュメント投稿者ガイドを参照してください &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 投稿方法は、投稿者と、投稿したい変更の種類に応じて異なります。
 
 ### 軽微な変更
 
-軽微な変更をコントリビューションする場合は、記事にアクセスして記事の下部に表示されるフィードバックエリアをクリックし、**詳細なフィードバックオプション** をクリックします。次に、**編集の提案** をクリックして、GitHub の Markdown ソースファイルに移動します。 GitHub UI を使用して更新を行います。 一般的な [Adobe ドキュメント投稿者ガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
+軽微な変更をコントリビューションする場合は、記事にアクセスして記事の下部に表示されるフィードバックエリアをクリックし、**詳細なフィードバックオプション** をクリックします。次に、**編集の提案** をクリックして、GitHub の Markdown ソースファイルに移動します。 GitHub UI を使用して更新を行います。 一般的な [Adobe ドキュメント投稿者ガイド &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
 
 このリポジトリのドキュメントおよびコード例について投稿者が送信した軽微な修正や説明は、Adobeの利用規約の対象となります。
 
@@ -67,14 +67,14 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
 
 コミュニティのコントリビューターは、基本的な編集を行う場合は GitHub UI を使用し、大きな変更を加える場合はリポジトリをフォークします。
 
-詳しくは、[Adobe ドキュメント投稿者ガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
+詳しくは、[Adobe ドキュメント投稿者ガイド &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
 
 ## Markdown を使用してトピックを書式設定する方法
 
 このリポジトリ内の記事はすべて、GitHub Flavored Markdown を使用しています。 Markdown について詳しくは、以下を参照してください。
 
-- [Markdown の基本 ](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-- [ 印刷用 Markdown チートシート ](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+- [Markdown の基本 &#x200B;](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+- [&#x200B; 印刷用 Markdown チートシート &#x200B;](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## テンプレート
 
@@ -85,9 +85,9 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
 
 テンプレート化されたコンテンツの例としては、次のようなものがあります（ただし、これに限定されません）。
 
-- [CLI ツールリファレンス ](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-- [ 製品可用性テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
-- [ 必要システム構成テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+- [CLI ツールリファレンス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
+- [&#x200B; 製品可用性テーブル &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+- [&#x200B; 必要システム構成テーブル &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
 
 ### テンプレートコンテンツの生成
 
@@ -96,7 +96,7 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
 >**メモ：**
 >
 >- テンプレート化されたコンテンツを生成するには、ターミナルのコマンドラインで作業する必要があります。
->- レンダリングスクリプトを実行するには、Ruby がインストールされている必要があります。 必要なバージョンについては [_jekyll/.ruby-version](_jekyll/.ruby-version) を参照してください。
+>- レンダリングスクリプトを実行するには、Ruby がインストールされている必要があります。 必要なバージョンについては [_jekyll/.ruby-version] (_jekyll/.ruby-version) を参照してください。
 
 テンプレート化されたコンテンツのファイル構造について詳しくは、次を参照してください。
 
@@ -109,8 +109,8 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
 
 1. テキストエディターで、`/jekyll/_data` ディレクトリにあるデータファイルを開きます。 例：
 
-   - [ 製品可用性テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
-   - [ 必要システム構成テーブル ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
+   - [&#x200B; 製品可用性テーブル &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
+   - [&#x200B; 必要システム構成テーブル &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
 
 1. 既存の YAML 構造を使用してエントリを作成します。
 
@@ -163,7 +163,7 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
    git push
    ```
 
-[ データファイル ](https://jekyllrb.com/docs/datafiles)、[ 液体フィルター ](https://jekyllrb.com/docs/liquid/filters/) およびその他の機能について詳しくは、Jekyll のドキュメントを参照してください。
+[&#x200B; データファイル &#x200B;](https://jekyllrb.com/docs/datafiles)、[&#x200B; 液体フィルター &#x200B;](https://jekyllrb.com/docs/liquid/filters/) およびその他の機能について詳しくは、Jekyll のドキュメントを参照してください。
 
 ## 使用可能な Rake タスク
 
