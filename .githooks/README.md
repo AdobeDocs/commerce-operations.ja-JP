@@ -1,7 +1,7 @@
 ---
-source-git-commit: a670f15cf6f0636959b3adb5059e6531d90a7903
+source-git-commit: 4589c405bab743001e967a9825d578ee1a03c216
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ bundle exec rake images:optimize path=../path/to/images
 
 ## 設定
 
-フックは、設定ファイル `_jekyll/.image_optim` を使用して最適化設定をカスタマイズします。
+フックは、設定ファイル `_jekyll/.image_optim.yml` を使用して最適化設定をカスタマイズします。
 
 - **PNG**:`advpng`、`optipng`、`pngquant` を使用します
 - **JPEG**: `jhead`、`jpegoptim`、`jpegtran` を使用します
@@ -120,12 +120,12 @@ bundle exec rake images:optimize path=../path/to/images
 ### 最適化の失敗
 
 - `bundle install` ディレクトリで `_jekyll` が実行されていることを確認します。
-- `image_optim` と `image_optim_pack` gem がインストールされていることを確認します。
-- `.image_optim` 設定ファイルを確認します。
+- `adobe-comdox-exl-rake-tasks` gem がインストールされていることを確認します（`image_optim` を提供）。
+- `.image_optim.yml` 設定ファイルを確認します。
 
 ### パフォーマンスの問題
 
-- `_jekyll/.image_optim` でのスレッド数の調整
+- `_jekyll/.image_optim.yml` でのスレッド数の調整
 - エラー情報 `DEBUG=1` 詳細な環境変数の設定
 
 ## 仕組み

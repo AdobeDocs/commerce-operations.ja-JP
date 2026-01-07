@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9994f486c38df4c0dc2ff477c48f3e8f3259aa9f
+source-git-commit: 4589c405bab743001e967a9825d578ee1a03c216
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,32 @@ Azure リージョン マップを生成します。 入力データファイル
 ```sh
 rake azure_regions
 ```
+
+### `get_released_versions`
+
+最新の 10 リリース済みバージョンを `magento/magento2` リポジトリから取得します。 [GitHub CLI](https://cli.github.com/) がインストールされ、認証されている必要があります。
+
+**使用方法：**
+
+```sh
+rake get_released_versions
+```
+
+**出力：** リリースタグの名前と日付を使用して `tmp/core-release.txt` を生成します。
+
+### `first_merge_date`
+
+指定した分岐への最初の結合の日付を取得します。 [GitHub CLI](https://cli.github.com/) がインストールされ、認証されている必要があります。
+
+**使用方法：**
+
+```sh
+rake first_merge_date base=develop
+```
+
+**引数：**
+
+- `base` （必須）：結合を確認するターゲット分岐名。
 
 ### `includes:maintain_relationships`
 
@@ -215,8 +241,9 @@ relationships:
 ## 前提条件
 
 - Ruby と Bundler がインストールされました。
-- Gemfile で指定されている必須の gems。
-- [&#x200B; タスクの Python、](https://www.pygmt.org/latest/install.html)PyGMT[&#x200B; および &#x200B;](https://formulae.brew.sh/formula/pdf2svg)pdf2svg`azure_regions`。
+- Gemfile で指定されている必須の gem （コア依存関係は `adobe-comdox-exl-rake-tasks` で提供されます）。
+- [ タスクと ](https://cli.github.com/) タスク用の `get_released_versions`GitHub CLI`first_merge_date`。
+- [ タスクの Python、](https://www.pygmt.org/latest/install.html)PyGMT[ および ](https://formulae.brew.sh/formula/pdf2svg)pdf2svg`azure_regions`。
 
 ## 設定
 
