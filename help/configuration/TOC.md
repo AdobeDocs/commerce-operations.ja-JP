@@ -2,9 +2,9 @@
 user-guide-title: 設定ガイド
 user-guide-description: Adobe Commerce アプリケーションの機能とサービスを設定します。
 feature: Configuration
-source-git-commit: 1850301e0b7f1abbc54613209940dd63d16ef145
+source-git-commit: d86b9eb07a9da6dc93234f8a02103c543bbead68
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '372'
 ht-degree: 1%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 1%
       + [Redis の設定](cache/config-redis.md)
       + [既定のキャッシュに Redis を使用](cache/redis-pg-cache.md)
       + [セッションストレージに Redis を使用](cache/redis-session.md)
+      + [EC2 インスタンス用 ElastiCache の設定](cache/redis-elasticache-for-ec2.md)
    + Valkey {#valkey}
       + [Valkey の設定](cache/config-valkey.md)
       + [デフォルトキャッシュに ValueKey を使用](cache/valkey-pg-cache.md)
@@ -150,4 +151,4 @@ ht-degree: 1%
       + [分割データベースの検証](storage/multi-master-verify.md)
       + [データベースレプリケーション](storage/multi-master-replication.md)
       + [単一データベースに戻す](storage/revert-split-database.md)
-+ [&#x200B; 運用ガイドに戻る &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
++ [ 運用ガイドに戻る ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
