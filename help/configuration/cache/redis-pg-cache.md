@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Commerceには、Redis ページとデフォルトのキャッシングを設定するためのコマンドラインオプションが用意されています。 `<Commerce-install-dir>app/etc/env.php` ファイルを編集してキャッシュを設定できますが、特に初期設定では、コマンドラインを使用する方法をお勧めします。 コマンドラインで検証を行うことにより、設定の構文が正しいことを確認します。
 
-続行する前に [Redis をインストール ](config-redis.md#install-redis) してください。
+続行する前に [Redis をインストール &#x200B;](config-redis.md#install-redis) してください。
 
 >[!NOTE]
 >
->EC2 でホストされているCommerce インスタンスの場合、ローカル Redis インスタンスの代わりにAWS ElastiCache を使用することができます。 [EC2 インスタンス用 Elasticache の設定 ](redis-elasticache-for-ec2.md) を参照してください。
+>EC2 でホストされているCommerce インスタンスの場合、ローカル Redis インスタンスの代わりにAWS ElastiCache を使用することができます。 [EC2 インスタンス用 Elasticache の設定 &#x200B;](redis-elasticache-for-ec2.md) を参照してください。
 
 ## Redis デフォルトキャッシュの設定
 
