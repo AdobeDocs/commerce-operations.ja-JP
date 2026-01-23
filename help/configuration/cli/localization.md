@@ -2,9 +2,9 @@
 title: 翻訳辞書と言語パッケージ
 description: Adobe Commerceの翻訳辞書を生成し、言語パッケージを作成する方法を説明します。 ローカライゼーションと多言語ストアの設定について説明します。
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '1441'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Commerce翻訳を使用すると、次の情報を生成することで、複数
 - **翻訳辞書**：カスタムモジュールやテーマなどの _一部_ の単語やフレーズをカスタマイズまたは翻訳する便利な方法です。
 - **言語パッケージ**:Commerce アプリケーションですべて _またはすべて_ の単語やフレーズを翻訳できます。
 
-[ 翻訳の概要 ] を参照してください。
+[ 翻訳の概要 ](https://developer.adobe.com/commerce/frontend-core/guide/translations/) を参照してください。
 
 ## 翻訳辞書の生成
 
-[ 翻訳辞書 ] を生成して、既存の文字列のカスタマイズ、カスタムモジュールでの単語やフレーズの翻訳、テーマのローカライズ、言語パッケージの作成を行うことができます。
+[ 翻訳辞書 ](https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries) を生成して、既存の文字列のカスタマイズ、カスタムモジュールでの単語やフレーズの翻訳、テーマのローカライズ、言語パッケージの作成を行うことができます。
 
 翻訳を開始するには、コマンドを使用して、既存のすべてのフレーズと単語のリストを収集した辞書 CSV ファイルを生成します。
 
@@ -35,7 +35,7 @@ Commerce翻訳を使用すると、次の情報を生成することで、複数
 
 1. 翻訳辞書を言語パッケージにまとめ、Commerce ストア管理者に提供することができます。
 
-1. 管理者は、ストア管理者が [ 翻訳を設定 ] します。
+1. 管理者は、ストア管理者が [ 翻訳を設定 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize) します。
 
 コマンドオプション：
 
@@ -85,14 +85,14 @@ Product 'Multimeter-2000' has been added to shopping cart.
 
 ## 言語パッケージの作成
 
-翻訳辞書とは対照的に、言語パッケージを使用して、Commerce アプリケーションの一部またはすべての単語やフレーズを翻訳できます。 翻訳辞書を使用して、モジュールやテーマなどの特定のコンポーネントを翻訳できます。 [ 言語パッケージの詳細情報 ]。
+翻訳辞書とは対照的に、言語パッケージを使用して、Commerce アプリケーションの一部またはすべての単語やフレーズを翻訳できます。 翻訳辞書を使用して、モジュールやテーマなどの特定のコンポーネントを翻訳できます。 [ 言語パッケージの詳細情報 ](https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages)。
 
 この節では、CSV ファイルをモジュールとテーマに書き込む言語パッケージの作成方法について説明します。 言語パッケージを作成するには、次の節で説明するタスクを実行する必要があります。
 
-1. [&#x200B; 単語やフレーズの収集と翻訳 &#x200B;](#generate-a-translation-dictionary)。 （`--magento` パラメーターは必須です。）
-1. [&#x200B; 言語パッケージコマンドを実行します &#x200B;](#run-the-language-package-command)。
-1. [&#x200B; ディレクトリとファイルの作成 &#x200B;](#create-directories-and-files)。
-1. （任意） [1 つの言語に対して複数のパッケージを設定 &#x200B;](#configure-multiple-packages-for-a-language)。
+1. [ 単語やフレーズの収集と翻訳 ](#generate-a-translation-dictionary)。 （`--magento` パラメーターは必須です。）
+1. [ 言語パッケージコマンドを実行します ](#run-the-language-package-command)。
+1. [ ディレクトリとファイルの作成 ](#create-directories-and-files)。
+1. （任意） [1 つの言語に対して複数のパッケージを設定 ](#configure-multiple-packages-for-a-language)。
 
 ### 言語パッケージコマンドを実行します
 
@@ -106,8 +106,8 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 | パラメーター | 値 | 必須？ |
 |--- |--- |--- |
-| `<source>` | 言語パッケージへの分類に必要な翻訳辞書とメタ情報の組み合わせを含む、CSV ファイルの絶対ファイルシステムパスとファイル名。<br><br>[`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) を使用して CSV ファイルを作成し、「ディレクトリとファイルの作成 [&#x200B; の説明に従って言語パッケージを作成します &#x200B;](#m2devgde-xlate-files)。 | はい |
-| `<locale>` | [ISO 639-1] （言語）および [ISO 3166] （国）生成されるすべての CSV ファイルのファイル名として使用される言語の識別子。 例：`de_DE`、`pt_PT`、`pt_BR`。 | はい |
+| `<source>` | 言語パッケージへの分類に必要な翻訳辞書とメタ情報の組み合わせを含む、CSV ファイルの絶対ファイルシステムパスとファイル名。<br><br>[`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) を使用して CSV ファイルを作成し、「ディレクトリとファイルの作成 [ の説明に従って言語パッケージを作成します ](#m2devgde-xlate-files)。 | はい |
+| `<locale>` | [ISO 639-1](https://www.iso.org/iso-639-language-codes.html) （言語）および [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) （国）生成されるすべての CSV ファイルのファイル名として使用される言語の識別子。 例：`de_DE`、`pt_PT`、`pt_BR`。 | はい |
 | `-m --mode` | ターゲット ファイルが存在する場合、既存の言語パッケージを置き換えるか、新しい言語パックと結合するかを指定します。 結合すると、存在するすべてのフレーズが上書きされ、新しいフレーズが追加されます。<br><br> 値：結合または置換（デフォルト）。 | 不可 |
 | `-d --allow-duplicates` | 言語パックで重複を許可するには、このオプションを含めます。 そうでない場合、異なる翻訳を持つ複数のエントリで同じフレーズが検出されると、コマンドはエラーで失敗します。 | 不可 |
 
@@ -117,12 +117,12 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 - 必要なライセンスファイル
 - `composer.json`
-- 言語パッケージを `registration.php` レジスタ [ する ]
+- 言語パッケージを `registration.php` レジスタ [ する ](https://developer.adobe.com/commerce/php/development/build/component-registration/)
 - メ [`language.xml`](#language-package-languagexml) タ情報ファイル
 
 >[!INFO]
 >
->パス全体を小文字にする必要があります。 例えば、[`de_de`] を参照してください。
+>パス全体を小文字にする必要があります。 例えば、[`de_de`](https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php) を参照してください。
 
 これらのファイルを作成するには：
 
@@ -131,15 +131,15 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
    例えば、Commerce言語パッケージは `app/i18n/magento` にあります
 
 1. 必要なライセンスファイルを追加します。
-1. 言語パッケージの依存関係を指定する [`composer.json`] を追加します。
-1. [`registration.php`] への言語パッケージの登録
+1. 言語パッケージの依存関係を指定する [`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration/) を追加します。
+1. [`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration/) への言語パッケージの登録
 1. 次 `language.xml` 節で説明するように、メタ情報ファイルを追加します。
 
 #### 言語パッケージ language.xml
 
 `language.xml` 設定ファイルで言語パッケージを宣言する場合、このパッケージの言語の継承のシーケンスを指定する必要があります。
 
-言語の継承により、_parent_ と呼ばれる既存の翻訳に基づいて _child_ と呼ばれる翻訳を作成できます。 子翻訳は親よりも優先されます。 ただし、子翻訳のアップロードや表示に失敗した場合や、フレーズや単語が欠落している場合、Commerceでは親ロケールが使用されます。 [&#x200B; 言語パッケージの継承の例 &#x200B;](#example-of-language-inheritance)
+言語の継承により、_parent_ と呼ばれる既存の翻訳に基づいて _child_ と呼ばれる翻訳を作成できます。 子翻訳は親よりも優先されます。 ただし、子翻訳のアップロードや表示に失敗した場合や、フレーズや単語が欠落している場合、Commerceでは親ロケールが使用されます。 [ 言語パッケージの継承の例 ](#example-of-language-inheritance)
 
 パッケージを宣言するには、次の情報を指定します。
 
@@ -195,7 +195,7 @@ Commerce アプリケーションが `en_GB` パッケージ内の単語や語�
 1. `<vendorname>/en_ca_package`
 1. `<vendorname>/en_us_package`
 
-言語パッケージ間のすべての継承を指定すると、循環継承チェーンが作成される可能性があります。 [Magento\Test\Integrity\App\Language\CircularDependencyTest] テストを使用して、このようなチェーンを見つけて修正します。
+言語パッケージ間のすべての継承を指定すると、循環継承チェーンが作成される可能性があります。 [Magento\Test\Integrity\App\Language\CircularDependencyTest](https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php) テストを使用して、このようなチェーンを見つけて修正します。
 
 ### 1 つの言語に対して複数のパッケージを設定
 
@@ -221,7 +221,7 @@ Commerce アプリケーションが `en_GB` パッケージ内の単語や語�
    >
    >CSV ファイル名は、文字の大文字と小文字を含め、ロケールに _完全に一致_ する」必要があります。
 
-1. [&#x200B; これらのガイドライン &#x200B;](#translation-guidelines) を使って単語や語句を翻訳します。
+1. [ これらのガイドライン ](#translation-guidelines) を使って単語や語句を翻訳します。
 1. 必要に応じて、`xx_YY.csv` を `/var/www/html/magento2/app/code/ExampleCorp/SampleModule/i18n` またはモジュールのテーマディレクトリにコピーします（翻訳辞書がモジュール用かテーマ用かによって異なります）。
 
 ### 例：言語パッケージを作成する
@@ -238,7 +238,7 @@ Commerce アプリケーションが `en_GB` パッケージ内の単語や語�
    >
    >CSV ファイル名は、文字の大文字と小文字を含め、ロケールに _完全に一致_ する」必要があります。
 
-1. [&#x200B; これらのガイドライン &#x200B;](#translation-guidelines) を使って単語や語句を翻訳します。
+1. [ これらのガイドライン ](#translation-guidelines) を使って単語や語句を翻訳します。
 1. 言語パッケージを作成します。
 
    ```bash
@@ -312,16 +312,3 @@ Commerce アプリケーションが `en_GB` パッケージ内の単語や語�
    </language>
    ```
 
-<!-- link definitions -->
-
-[翻訳の概要]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
-[翻訳辞書]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[翻訳を設定します]: https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-localize
-[言語パッケージの詳細情報]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
-[ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
-[ISO 3166]: https://www.iso.org/iso-3166-country-codes.html
-[レジスタ]: https://developer.adobe.com/commerce/php/development/build/component-registration/
-[&#39;de_de&#39;]: https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php
-[&#39;composer.json&#39;]: https://developer.adobe.com/commerce/php/development/build/composer-integration/
-[&#39;registration.php&#39;]: https://developer.adobe.com/commerce/php/development/build/component-registration/
-[Magento\Test\Integrity\App\Language\CircularDependencyTest]: https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php

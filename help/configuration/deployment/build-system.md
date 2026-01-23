@@ -3,9 +3,9 @@ title: システム設定の作成
 description: Commerceをビルドシステムにデプロイする方法を説明します。
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -25,12 +25,12 @@ ht-degree: 0%
 
 - 互換性のある PHP バージョンがインストールされている必要があります
 - Composer がインストールされている必要があります。
-- [&#x200B; 開発、ビルド、実稼働システムの前提条件 &#x200B;](../deployment/technical-details.md) で説明されているように、ファイルシステムの所有権と権限が設定されています。
+- [ 開発、ビルド、実稼働システムの前提条件 ](../deployment/technical-details.md) で説明されているように、ファイルシステムの所有権と権限が設定されています。
 - ビルドシステムではCommerceをインストールする必要はありませんが、コードを使用できる必要があります。
 
 >[!WARNING]
 >
->`config.php` に既に含まれている場合は、データベース接続は必要ありません。[&#x200B; 設定のエクスポート &#x200B;](../cli/export-configuration.md) を参照してください。 それ以外の場合は、データベース接続が必要です。
+>`config.php` に既に含まれている場合は、データベース接続は必要ありません。[ 設定のエクスポート ](../cli/export-configuration.md) を参照してください。 それ以外の場合は、データベース接続が必要です。
 
 >[!INFO]
 >
@@ -67,11 +67,11 @@ Composer をインストールするには：
    mv composer.phar /usr/local/bin/composer
    ```
 
-その他のインストール オプションについては、「[Composer インストール ドキュメント ][composer]」を参照してください。
+その他のインストール オプションについては、「[Composer インストール ドキュメント ](https://getcomposer.org/download/)」を参照してください。
 
 ### PHP のインストール
 
-[CentOS] または [Ubuntu] に PHP をインストールします。
+[CentOS](https://wiki.centos.org/HowTos/php7) または [Ubuntu](https://help.ubuntu.com/lts/serverguide/php.html) に PHP をインストールします。
 
 ### ビルドシステムの設定
 
@@ -126,7 +126,7 @@ Composer をインストールするには：
 
    詳しくは [`.gitignore`](../reference/config-reference-gitignore.md) リファレンスを参照してください。
 
-1. ビルドシステムでは、[&#x200B; デフォルトモード &#x200B;](../bootstrap/application-modes.md#default-mode) または [&#x200B; 開発者モード &#x200B;](../bootstrap/application-modes.md#developer-mode) を使用する必要があります。
+1. ビルドシステムでは、[ デフォルトモード ](../bootstrap/application-modes.md#default-mode) または [ 開発者モード ](../bootstrap/application-modes.md#developer-mode) を使用する必要があります。
 
    ```bash
    bin/magento deploy:mode:set <mode>
@@ -134,8 +134,3 @@ Composer をインストールするには：
 
    `<mode>` が必要です。 `default` または `developer` のいずれかです。
 
-<!-- Link Definitions -->
-
-[CentOS]: https://wiki.centos.org/HowTos/php7
-[composer]: https://getcomposer.org/download/
-[Ubuntu]: https://help.ubuntu.com/lts/serverguide/php.html

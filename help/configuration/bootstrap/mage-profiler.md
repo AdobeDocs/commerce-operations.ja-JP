@@ -2,7 +2,7 @@
 title: プロファイルを有効にする
 description: 分析ツールで MAGE プロファイラーを使用できるようにする方法の詳細を説明します。
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -23,13 +23,13 @@ Commerceのプロファイルを使用すると、次のことができます。
 
   _未使用の依存関係_ のリストに特に注目する必要があります。このリストは、コンストラクターから要求を受けたにもかかわらず使用されなかった（つまり、どのメソッドも呼び出されなかった）オブジェクトです。 その結果、これらの依存関係を作成するために費やしたプロセッサー時間とメモリが無駄になります。
 
-Commerceは [`Magento\Framework\Profiler`][profiler] の基本機能を提供します。
+Commerceは [`Magento\Framework\Profiler`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler.php) の基本機能を提供します。
 
 MAGE_PROFILER 変数またはコマンドラインを使用して、プロファイラーを有効にして設定できます。
 
 ## MAGE_PROFILER の設定
 
-`MAGE_PROFILER` の値は、[&#x200B; ブートストラップパラメーターの値の設定 &#x200B;](../bootstrap/set-parameters.md) で説明しているいずれかの方法で設定できます。
+`MAGE_PROFILER` の値は、[ ブートストラップパラメーターの値の設定 ](../bootstrap/set-parameters.md) で説明しているいずれかの方法で設定できます。
 
 `MAGE_PROFILER` では、次の値をサポートしています。
 
@@ -37,14 +37,14 @@ MAGE_PROFILER 変数またはコマンドラインを使用して、プロファ
 
   次のいずれかの値を使用して、特定のプロファイラーを有効にできます。
 
-   - `csvfile` を使用する [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
-   - `2` を使用する空の値を含む、[`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html] を除く他の値
+   - `csvfile`[`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile` を使用する ](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)
+   - `2`[`Magento\Framework\Profiler\Driver\Standard\Output\Html` を使用する空の値を含む、](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php) を除く他の値
 
 - 依存関係グラフを有効にする `2`。
 
   依存関係グラフは通常、ページの下部に表示されます。 次の図に、出力の一部を示します。
 
-  ![&#x200B; 依存関係グラフ &#x200B;](../../assets/configuration/depend-graphs.png)
+  ![ 依存関係グラフ ](../../assets/configuration/depend-graphs.png)
 
 ## CLI コマンド
 
@@ -81,8 +81,3 @@ CLI コマンドを使用して、プロファイラーを有効または無効�
    bin/magento dev:profiler:disable
    ```
 
-<!-- link definitions -->
-
-[csvfile]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php
-[html]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php
-[profiler]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler.php

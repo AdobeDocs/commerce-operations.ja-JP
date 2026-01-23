@@ -2,7 +2,7 @@
 title: ベースディレクトリパスのカスタマイズ
 description: MAGE_DIRS 変数を使用して、絶対パスの配列を設定します。
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
-source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## MAGE_DIRS を設定
 
-キーが [\\Magento\\App\\Filesystem\\DirectoryListの定数で、値がディレクトリの絶対パスまたはその URL パスである連想配列を ][directory-list] それぞれ指定します。
+キーが [\\Magento\\App\\Filesystem\\DirectoryListの定数で、値がディレクトリの絶対パスまたはその URL パスである連想配列を ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php) それぞれ指定します。
 
 `MAGE_DIRS` は、次のいずれかの方法で設定できます。
 
@@ -50,6 +50,3 @@ ht-degree: 0%
 
 上記の例では、`[cache]` ディレクトリと `[media]` ディレクトリのパスをそれぞれ `/mnt/nfs/cache` と `/mnt/nfs/media` に設定します。
 
-<!-- link definitions -->
-
-[directory-list]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php

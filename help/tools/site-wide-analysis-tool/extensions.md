@@ -2,7 +2,7 @@
 title: '[!DNL Extensions]'
 description: のタブ、使用するタイミング、メリット  [!DNL Extensions]  ベストプラクティスについて説明します  [!DNL Site-Wide Analysis Tool]
 exl-id: e0ddc158-b268-44cc-8998-6b853d92b835
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Extensions]
 
-[!DNL extension] は、カスタムモジュール、言語パック、またはカスタムモジュールと言語パックの組み合わせで、Adobe Commerceのコア製品に新しい機能を追加します。 [Commerce Marketplace](https://marketplace.magento.com/extensions.html) には、無料で利用可能な [!DNL extensions] と市販のアプリが用意されています。 Adobe Commerce インスタンスにインストールされている [!DNL extensions] のリストは、[!DNL Site-Wide Analysis Tool] で確認できます。
+[!DNL extension] は、カスタムモジュール、言語パック、またはカスタムモジュールと言語パックの組み合わせで、Adobe Commerceのコア製品に新しい機能を追加します。 [Commerce Marketplace](https://commercemarketplace.adobe.com//extensions.html) には、無料で利用可能な [!DNL extensions] と市販のアプリが用意されています。 Adobe Commerce インスタンスにインストールされている [!DNL extensions] のリストは、[!DNL Site-Wide Analysis Tool] で確認できます。
 
 ## 使用するタイミング
 
@@ -31,4 +31,4 @@ ht-degree: 0%
 
 * サードパーティの [!DNL extensions] を最新のバージョンに保つことができない場合は、別の [!DNL extensions] を使用することを検討してください。
 
-* 潜在的な問題を回避するには、[!DNL extensions]Commerce Marketplace[&#x200B; などの信頼できるソースからサードパーティ &#x200B;](https://marketplace.magento.com/extensions.html) をダウンロードまたは購入します。
+* 潜在的な問題を回避するには、[!DNL extensions]Commerce Marketplace[ などの信頼できるソースからサードパーティ ](https://commercemarketplace.adobe.com//extensions.html) をダウンロードまたは購入します。

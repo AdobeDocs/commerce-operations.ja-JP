@@ -2,16 +2,16 @@
 title: ブートストラップパラメーターの値を設定
 description: Commerce アプリケーションのブートストラップパラメーターを設定する方法を説明します。
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '559'
 ht-degree: 1%
 
 ---
 
 # Bootstrap パラメーター
 
-このトピックでは、Commerce アプリケーションのブートストラップパラメーターの値を設定する方法について説明します。 [&#x200B; アプリケーションの初期化とブートストラップの概要 &#x200B;](initialization.md) を参照してください。
+このトピックでは、Commerce アプリケーションのブートストラップパラメーターの値を設定する方法について説明します。 [ アプリケーションの初期化とブートストラップの概要 ](initialization.md) を参照してください。
 
 次の表に、設定可能なブートストラップパラメーターを示します。
 
@@ -39,7 +39,7 @@ Bootstrap 変数をシステム全体の環境変数として指定すると、�
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
-シェル固有のコマンドを使用して変数を設定します。 シェルは構文が異なるため、[unix.stackexchange.com][unix-stackx] などのリファレンスを参照してください。
+シェル固有のコマンドを使用して変数を設定します。 シェルは構文が異なるため、[unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables) などのリファレンスを参照してください。
 
 CentOS 用の bash シェルの例：
 
@@ -57,7 +57,7 @@ export MAGE_PROFILER=firebug
 
 ### Nginx 設定
 
-詳しくは、[GitHub] の _Nginx サンプル設定_ を参照してください。
+詳しくは、[GitHub](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16) の _Nginx サンプル設定_ を参照してください。
 
 ### Apache .htaccess 設定
 
@@ -92,13 +92,13 @@ Commerce アプリケーションへのエントリポイントに応じて、�
 
 Apache web サーバーは、`mod_env` ディレクティブを使用してアプリケーションモードを設定できます。
 
-Apache `mod_env` ディレクティブは [Apache バージョン 2.2] と [Apache バージョン 2.4] ではやや異なります。
+Apache `mod_env` ディレクティブは [Apache バージョン 2.2](https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv) と [Apache バージョン 2.4](https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv) ではやや異なります。
 
 Apache 仮想ホストでアプリケーションモードを設定する手順を以下に示します。 `mod_env` ディレクティブを使用する方法は、これだけではありません。詳しくは、Apache ドキュメントを参照してください。
 
 >[!TIP]
 >
->次の節では、仮想ホストが既に設定されていることを前提としています。 まだ公開されていない場合は、[&#x200B; この DigitalOcean チュートリアル &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts) などのリソースを参照してください。
+>次の節では、仮想ホストが既に設定されていることを前提としています。 まだ公開されていない場合は、[ この DigitalOcean チュートリアル ](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts) などのリソースを参照してください。
 
 **Ubuntu 上の Apache のブートストラップ変数を指定するには**:
 
@@ -141,7 +141,7 @@ Apache 仮想ホストでアプリケーションモードを設定する手順�
 
 >[!TIP]
 >
->この節では、仮想ホストが既に設定されていることを前提としています。 まだ公開されていない場合は、[&#x200B; この DigitalOcean チュートリアル &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6) などのリソースを参照してください。
+>この節では、仮想ホストが既に設定されていることを前提としています。 まだ公開されていない場合は、[ この DigitalOcean チュートリアル ](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6) などのリソースを参照してください。
 
 **CentOS 上の Apache のブートストラップ変数を指定するには**:
 
@@ -166,9 +166,3 @@ Apache 仮想ホストでアプリケーションモードを設定する手順�
    - Ubuntu: `service apache2 restart`
    - CentOS: `service httpd restart`
 
-<!-- link definitions -->
-
-[Apache バージョン 2.2]: https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv
-[Apache バージョン 2.4]: https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv
-[Nginx サンプル構成]: https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16
-[unix-stackx]: https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables

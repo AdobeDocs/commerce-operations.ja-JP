@@ -2,9 +2,9 @@
 title: config.php リファレンス
 description: Adobe Commerce設定の config.php ファイルの値と節について説明します。 モジュール、範囲、システム設定、デプロイメントのベストプラクティスについて説明します。
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '156'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 1%
 ]
 ```
 
-詳細情報 [ モジュール ]。
+詳細情報 [ モジュール ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html)。
 
 ## スコープ
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 ]
 ```
 
-[Commerce範囲 ][scopes] の詳細情報。
+[Commerce範囲 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) の詳細情報。
 
 ## system
 
@@ -100,7 +100,7 @@ ht-degree: 1%
 ]
 ```
 
-[&#x200B; システム固有の設定 &#x200B;](config-reference-sens.md) の詳細情報。
+[ システム固有の設定 ](config-reference-sens.md) の詳細情報。
 
 ## テーマ
 
@@ -120,10 +120,5 @@ ht-degree: 1%
 ]
 ```
 
-[ テーマ ] の詳細情報。
+[ テーマ ](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/) の詳細情報。
 
-<!-- link definitions -->
-
-[モジュール]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=ja
-[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings
-[テーマ]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/

@@ -2,7 +2,7 @@
 title: アップグレードモジュールおよび拡張機能
 description: コマンドラインインターフェイスと Composer を使用して、Adobe Commerce モジュールと拡張機能をアップグレードします。
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
@@ -47,14 +47,14 @@ ht-degree: 0%
 
 ## ベンダーバンドルの拡張機能（VBE）
 
-Adobeは 2.4.4 ですべての [VBE](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/modules/upgrade) を削除しました。ベンダーは、Adobe Commerce Marketplace でこれらの拡張機能を引き続きサポートします。
+Adobeは 2.4.4 ですべての [VBE](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/modules/upgrade) を削除しました。ベンダーは、Adobe Commerce Marketplace でこれらの拡張機能を引き続きサポートします。
 
 Adobe Commerce 2.4.4 以降で、これらの拡張機能を引き続き使用する場合は、`composer.json` ファイル内の対応するパッケージの依存関係を更新する必要があります _アップグレードする前に_ 2.4.4 に。使用するパッケージの名前とバージョンについては、ベンダーにお問い合わせください。
 
 詳しくは、以下のAdobe Commerce Marketplace のリストを参照してください。
 
-- [Amazon支払 &#x200B;](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
-- [Dotdigital](https://marketplace.magento.com/dotdigital-dotdigital-magento2-os-package.html)
-- [&#x200B; クルナ &#x200B;](https://marketplace.magento.com/klarna-m2-klarna.html)
-- [&#x200B; 頂点 &#x200B;](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
-- [&#x200B; ヨッポ &#x200B;](https://marketplace.magento.com/yotpo-module-yotpo.html)
+- [Amazon支払 ](https://commercemarketplace.adobe.com//amzn-amazon-pay-magento-2-module.html)
+- [Dotdigital](https://commercemarketplace.adobe.com//dotdigital-dotdigital-magento2-os-package.html)
+- [ クルナ ](https://commercemarketplace.adobe.com//klarna-m2-klarna.html)
+- [ 頂点 ](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html)
+- [ ヨッポ ](https://commercemarketplace.adobe.com//yotpo-module-yotpo.html)

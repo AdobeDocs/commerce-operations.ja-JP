@@ -3,23 +3,23 @@ title: データベースアクティビティを記録
 description: Logger インターフェイスを使用して、データベースアクティビティをログに記録するようにCommerceを設定します。
 feature: Configuration, Logs, Storage
 exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
-source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '86'
 ht-degree: 0%
 
 ---
 
 # データベースアクティビティを記録
 
-次の例は、2 つの実装を持つ [`Magento\Framework\DB\LoggerInterface`][interface] を使用してデータベースアクティビティをログに記録する方法を示しています。
+次の例は、2 つの実装を持つ `[Magento\Framework\DB\LoggerInterface](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/LoggerInterface.php)` を使用してデータベースアクティビティをログに記録する方法を示しています。
 
-- ログなし（デフォルト）:[`Magento\Framework\DB\Logger\Quiet`][quiet]
-- `var/log` ディレクトリへのログ：[`Magento\Framework\DB\Logger\File`][file]
+- ログなし（デフォルト）:[`Magento\Framework\DB\Logger\Quiet`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/Quiet.php)
+- `var/log` ディレクトリへのログ：[`Magento\Framework\DB\Logger\File`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/File.php)
 
 >[!TIP]
 >
->Commerce CLI を使用して、[&#x200B; データベースのログ記録を有効または無効にする &#x200B;](../cli/enable-logging.md#database-logging) ことができます。
+>Commerce CLI を使用して、[ データベースのログ記録を有効または無効にする ](../cli/enable-logging.md#database-logging) ことができます。
 
 `\Magento\Framework\DB\Logger\LoggerProxy` のデフォルト設定を変更するには、`app/etc/di.xml` を編集します。
 
@@ -58,8 +58,3 @@ bin/magento setup:di:compile
 bin/magento cache:clean
 ```
 
-<!-- link definitions -->
-
-[file]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/Logger/File.php
-[interface]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/LoggerInterface.php
-[quiet]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/Logger/Quiet.php

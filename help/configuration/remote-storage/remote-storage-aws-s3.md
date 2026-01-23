@@ -3,16 +3,16 @@ title: リモートストレージ用のAWS S3 バケットの設定
 description: Commerce プロジェクトを設定して、AWS S3 ストレージサービスをリモートストレージに使用します。
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 3690043019d70ad15332f757158937a7d5305043
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
 
 # リモートストレージ用のAWS S3 バケットの設定
 
-[Amazon Simple Storage Service （Amazon S3） ][AWS S3] は、業界をリードするスケーラビリティ、データ可用性、セキュリティ、パフォーマンスを提供するオブジェクトストレージサービスです。 AWS S3 サービスでは、データストレージにバケットつまりコンテナを使用します。 この設定では、_private_ バケットを作成する必要があります。 クラウドインフラストラクチャー上のAdobe Commerceについては、[&#x200B; クラウドインフラストラクチャー上のCommerceのリモートストレージの設定 &#x200B;](cloud-support.md) を参照してください。
+[Amazon Simple Storage Service （Amazon S3） ](https://aws.amazon.com/s3) は、業界をリードするスケーラビリティ、データ可用性、セキュリティ、パフォーマンスを提供するオブジェクトストレージサービスです。 AWS S3 サービスでは、データストレージにバケットつまりコンテナを使用します。 この設定では、_private_ バケットを作成する必要があります。 クラウドインフラストラクチャー上のAdobe Commerceについては、[ クラウドインフラストラクチャー上のCommerceのリモートストレージの設定 ](cloud-support.md) を参照してください。
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 1. Amazon S3 ダッシュボードにログインし、_プライベート_ バケットを作成します。
 
-1. [AWS IAM] ロールを設定します。 または、アクセスキーと秘密鍵を生成します。
+1. [AWS IAM](https://aws.amazon.com/iam/) ロールを設定します。 または、アクセスキーと秘密鍵を生成します。
 
 1. デフォルトのデータベースストレージを無効にします。
 
@@ -32,7 +32,7 @@ ht-degree: 0%
    bin/magento config:set system/media_storage_configuration/media_database 0
    ```
 
-1. プライベートバケットを使用するようにCommerceを設定します。 パラメーターの完全なリストについては、[&#x200B; リモートストレージオプション &#x200B;](remote-storage.md#remote-storage-options) を参照してください。
+1. プライベートバケットを使用するようにCommerceを設定します。 パラメーターの完全なリストについては、[ リモートストレージオプション ](remote-storage.md#remote-storage-options) を参照してください。
 
    ```bash
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このアプローチは、クラウドインフラストラクチャプロジェクトのAdobe Commerceには適用されません。 Nginx は、クラウドインフラストラクチャー上のAdobe Commerceでは設定できません。 詳しくは、[&#x200B; クラウド固有のドキュメント &#x200B;](cloud-support.md) を参照してください。
+>このアプローチは、クラウドインフラストラクチャプロジェクトのAdobe Commerceには適用されません。 Nginx は、クラウドインフラストラクチャー上のAdobe Commerceでは設定できません。 詳しくは、[ クラウド固有のドキュメント ](cloud-support.md) を参照してください。
 
 Nginx では、`proxy_pass` ディレクティブを使用して認証を実行するために追加の構成が必要です。 `nginx.conf` ファイルに次のプロキシ情報を追加します。
 
@@ -73,7 +73,7 @@ location ~* \.(ico|jpg|jpeg|png|gif|svg|js|css|swf|eot|ttf|otf|woff|woff2)$ {
 
 ### 認証
 
-[AWS IAM] ロールの代わりにアクセス キーと秘密鍵を使用する場合は、[`ngx_aws_auth` Nginx モジュール ][ngx repo] を含める必要があります。
+[AWS IAM](https://aws.amazon.com/iam/) ロールの代わりにアクセス キーと秘密鍵を使用する場合は、[`ngx_aws_auth` Nginx モジュール ](https://github.com/anomalizer/ngx_aws_auth) を含める必要があります。
 
 ### 権限
 
@@ -83,8 +83,3 @@ S3 統合は、キャッシュされた画像を生成してローカルファ�
 
 ファイルストレージのタイプに関係なく、コーディングまたは拡張機能開発で [!DNL Commerce] ファイルアダプタメソッドを使用することを強くお勧めします。 ストレージに S3 を使用する場合、S3 ファイルはファイルシステム内に配置されないので、`copy`、`rename`、`file_put_contents` などのネイティブの PHP ファイル I/O 操作を使用しないでください。 コード例については、[DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) を参照してください。
 
-<!-- link definitions -->
-
-[AWS S3]: https://aws.amazon.com/s3
-[AWS IAM]: https://aws.amazon.com/iam/
-[ngx repo]: https://github.com/anomalizer/ngx_aws_auth

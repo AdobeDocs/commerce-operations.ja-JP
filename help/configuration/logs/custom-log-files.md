@@ -4,7 +4,7 @@ description: Adobe Commerceでカスタムログファイルを作成および�
 feature: Configuration, Logs
 badge: label="寄稿：Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 | クラス | ログファイル |
 | ----- | -------- |
-| [Magento\Framework\Logger\Handler\Base][base] | - |
-| [Magento\Framework\Logger\Handler\Debug][debug] | `/var/log/debug.log` |
-| [Magento\Framework\Logger\Handler\Exception][exception] | `/var/log/exception.log` |
-| [Magento\Framework\Logger\Handler\Syslog][syslog] | - |
-| [Magento\Framework\Logger\Handler\System][system] | `/var/log/system.log` |
+| [Magento\Framework\Logger\Handler\Base](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Base.php) | - |
+| [Magento\Framework\Logger\Handler\Debug](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Debug.php) | `/var/log/debug.log` |
+| [Magento\Framework\Logger\Handler\Exception](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Exception.php) | `/var/log/exception.log` |
+| [Magento\Framework\Logger\Handler\Syslog](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Syslog.php) | - |
+| [Magento\Framework\Logger\Handler\System](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/System.php) | `/var/log/system.log` |
 
 これらは `lib/internal/Magento/Framework/Logger/Handler` ディレクトリにある場合があります。
 
@@ -32,9 +32,9 @@ ht-degree: 0%
 
 ## `di.xml` でのカスタムログファイルの設定
 
-この例では、[&#x200B; 仮想型 &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) を使用して、標準の `debug` ではなくカスタムログファイルにメッセージ `/var/log/debug.log` ログする方法を示します。
+この例では、[ 仮想型 ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) を使用して、標準の `debug` ではなくカスタムログファイルにメッセージ `/var/log/debug.log` ログする方法を示します。
 
-1. モジュールの `di.xml` ファイルで、カスタムログファイルを [&#x200B; 仮想タイプ &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) として定義します。
+1. モジュールの `di.xml` ファイルで、カスタムログファイルを [ 仮想タイプ ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) として定義します。
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomDebug" type="Magento\Framework\Logger\Handler\Base">
@@ -46,7 +46,7 @@ ht-degree: 0%
 
    `name` の `Magento\Payment\Model\Method\MyCustomDebug` 値は一意である必要があります。
 
-1. 一意の [&#x200B; を使用して、別の &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 仮想タイプ `name` でハンドラーを定義します。
+1. 一意の [ を使用して、別の ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 仮想タイプ `name` でハンドラーを定義します。
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -58,7 +58,7 @@ ht-degree: 0%
    </virtualType>
    ```
 
-1. `MyCustomLogger` オブジェクトに [&#x200B; &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 仮想型 `Magento\Payment\Model\Method\Logger` を挿入します。
+1. `MyCustomLogger` オブジェクトに [ ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 仮想型 `Magento\Payment\Model\Method\Logger` を挿入します。
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -117,7 +117,7 @@ ht-degree: 0%
    }
    ```
 
-1. モジュールの [&#x200B; ファイルで、このクラスのハンドラーを &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 仮想型 `di.xml` として定義します。
+1. モジュールの [ ファイルで、このクラスのハンドラーを ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 仮想型 `di.xml` として定義します。
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -205,10 +205,3 @@ ht-degree: 0%
 
 例外メッセージは、`/var/log/my_custom_logger/error.log` ファイルに記録されます。
 
-<!-- link definitions -->
-
-[base]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Base.php
-[debug]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Debug.php
-[exception]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Exception.php
-[syslog]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Syslog.php
-[system]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/System.php

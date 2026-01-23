@@ -2,16 +2,16 @@
 title: カスタム cron ジョブと cron グループの設定（チュートリアル）
 description: このAdobe Commerceのステップバイステップのチュートリアルを使用してカスタム cron ジョブを作成する方法を説明します。 モジュールのセットアップと cron グループの設定について説明します。
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
 
 # カスタム cron ジョブの設定
 
-このステップバイステップのチュートリアルでは、サンプルモジュールでカスタム cron ジョブとオプションで cron グループを作成する方法を説明します。 既に持っているモジュールを使用するか、[`magento2-samples` リポジトリ ][samples] からサンプルモジュールを使用できます。
+このステップバイステップのチュートリアルでは、サンプルモジュールでカスタム cron ジョブとオプションで cron グループを作成する方法を説明します。 既に持っているモジュールを使用するか、[`magento2-samples` リポジトリ ](https://github.com/magento/magento2-samples) からサンプルモジュールを使用できます。
 
 cron ジョブを実行すると、`cron_schedule` テーブルに行が追加され、その名前は cron ジョブ `custom_cron` になります。
 
@@ -21,7 +21,7 @@ cron ジョブを実行すると、`cron_schedule` テーブルに行が追加�
 
 - Commerce アプリケーションは `/var/www/html/magento2` にインストールされています
 - Commerce データベースのユーザー名とパスワードの両方が `magento` です
-- すべてのアクションは [&#x200B; ファイルシステムの所有者 &#x200B;](../../installation/prerequisites/file-system/overview.md) として実行します。
+- すべてのアクションは [ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) として実行します。
 
 ## 手順 1：サンプルモジュールの取得
 
@@ -31,15 +31,15 @@ cron ジョブを実行すると、`cron_schedule` テーブルに行が追加�
 
 **サンプルモジュールを取得するには**:
 
-1. [&#x200B; ファイルシステムのオーナー &#x200B;](../../installation/prerequisites/file-system/overview.md) としてCommerce サーバーにログインするか、に切り替えます。
+1. [ ファイルシステムのオーナー ](../../installation/prerequisites/file-system/overview.md) としてCommerce サーバーにログインするか、に切り替えます。
 1. をCommerce アプリケーションのルートにないディレクトリ（ホームディレクトリなど）に移動します。
-1. [`magento2-samples` リポジトリのクローンを作成 ][samples] ます。
+1. [`magento2-samples` リポジトリのクローンを作成 ](https://github.com/magento/magento2-samples) ます。
 
    ```bash
    git clone git@github.com:magento/magento2-samples.git
    ```
 
-   エラー `Permission denied (publickey).` が発生してコマンドが失敗した場合は、[SSH 公開鍵を GitHub.com に追加する ][git-ssh] 必要があります。
+   エラー `Permission denied (publickey).` が発生してコマンドが失敗した場合は、[SSH 公開鍵を GitHub.com に追加する ](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) 必要があります。
 
 1. サンプルコードのコピー先となるディレクトリを作成します。
 
@@ -103,7 +103,7 @@ cron ジョブを実行すると、`cron_schedule` テーブルに行が追加�
 
 >[!TIP]
 >
->出力が `Module does not exist` を示している場合は、[&#x200B; 手順 1](#step-1-get-a-sample-module) を慎重に確認します。 コードが正しいディレクトリにあることを確認します。 スペルと大文字と小文字の区別は重要です。何か異なる場合、モジュールは読み込まれません。 また、`magento setup:upgrade` を実行することを忘れないでください。
+>出力が `Module does not exist` を示している場合は、[ 手順 1](#step-1-get-a-sample-module) を慎重に確認します。 コードが正しいディレクトリにあることを確認します。 スペルと大文字と小文字の区別は重要です。何か異なる場合、モジュールは読み込まれません。 また、`magento setup:upgrade` を実行することを忘れないでください。
 
 ## 手順 3:cron を実行するクラスの作成
 
@@ -273,7 +273,7 @@ SQL コマンドとシステム ログにエントリが含まれていない場
    </config>
    ```
 
-このオプションの意味については、[Cron リファレンスのカスタマイズ &#x200B;](custom-cron-reference.md) を参照してください。
+このオプションの意味については、[Cron リファレンスのカスタマイズ ](custom-cron-reference.md) を参照してください。
 
 ## 手順 8：カスタム cron グループの検証
 
@@ -301,9 +301,5 @@ SQL コマンドとシステム ログにエントリが含まれていない場
 
    cron グループは次のように表示されます。
 
-   ![&#x200B; カスタム cron グループ &#x200B;](../../assets/configuration/cron-group.png)
+   ![ カスタム cron グループ ](../../assets/configuration/cron-group.png)
 
-<!-- link definitions -->
-
-[git-ssh]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-[samples]: https://github.com/magento/magento2-samples

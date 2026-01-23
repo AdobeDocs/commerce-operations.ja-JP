@@ -3,7 +3,7 @@ title: 単一マシンの導入
 description: コマンドラインを使用して実稼動サーバーにCommerceのアップデートをデプロイする方法を説明します。
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 1%
@@ -22,11 +22,11 @@ ht-degree: 1%
 >[!WARNING]
 >
 >このガイドは、`git clone` を使用してCommerceをインストールした場合には適用されません。
->投稿する開発者は、[ このガイド ][install] を使用してCommerceのインストールを更新する必要があります。
+>投稿する開発者は、[ このガイド ](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies) を使用してCommerceのインストールを更新する必要があります。
 
 ## デプロイメント手順
 
-1. [&#x200B; ファイルシステムの所有者 &#x200B;](../../installation/prerequisites/file-system/overview.md) として実稼動サーバーにログインするか、に切り替えます。
+1. [ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) として実稼動サーバーにログインするか、に切り替えます。
 
 1. ディレクトリをCommerceのベースディレクトリに変更します。
 
@@ -91,6 +91,3 @@ ht-degree: 1%
    bin/magento maintenance:disable
    ```
 
-<!-- link definitions -->
-
-[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies

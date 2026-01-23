@@ -3,7 +3,7 @@ title: リモートストレージの画像のサイズ変更の設定
 description: サーバー側の画像のサイズ変更を設定して、ディスクリソースを最適化します。
 feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 次の図は、Nginx が画像を取得、サイズ変更、およびキャッシュに格納する方法を示しています。 サイズ変更は、URL に含まれているパラメーター（高さや幅など）によって決まります。
 
-![&#x200B; サーバーブロック設定を示す、リモートストレージの画像サイズ変更のための Nginx 設定 &#x200B;](../../assets/configuration/remote-storage-nginx-image-resize.png)
+![ サーバーブロック設定を示す、リモートストレージの画像サイズ変更のための Nginx 設定 ](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 >[!TIP]
 >
->クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、[&#x200B; クラウドインフラストラクチャ上のCommerceのリモートストレージの設定 &#x200B;](cloud-support.md) を参照してください。
+>クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、[ クラウドインフラストラクチャ上のCommerceのリモートストレージの設定 ](cloud-support.md) を参照してください。
 
 ## Adobe Commerceでの URL フォーマットの設定
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 1. 「**[!UICONTROL Save Config]**」をクリックします。
 
-1. [Nginx 設定 &#x200B;](#configure-nginx) を続行します。
+1. [Nginx 設定 ](#configure-nginx) を続行します。
 
 ## Nginx の設定
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 **Nginx で画像のサイズを変更するには**:
 
-1. [Nginx 画像フィルターモジュール ][nginx-module] をインストールします。
+1. [Nginx 画像フィルターモジュール ](https://nginx.org/en/docs/http/ngx_http_image_filter_module.html) をインストールします。
 
    ```shell
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
@@ -73,6 +73,3 @@ ht-degree: 0%
 
    - [Amazon Simple Storage Service （Amazon S3）](remote-storage-aws-s3.md)
 
-<!-- link definitions -->
-
-[nginx-module]: https://nginx.org/en/docs/http/ngx_http_image_filter_module.html
