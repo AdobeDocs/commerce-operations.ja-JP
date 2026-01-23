@@ -30,15 +30,15 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->- リモートストレージは、Commerce バージョン 2.4.2 以降でのみ使用できます。 [2.4.2 リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2) を参照してください。
+>- リモートストレージは、Commerce バージョン 2.4.2 以降でのみ使用できます。 [2.4.2 リリースノート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2) を参照してください。
 >
->- リモートストレージモジュールは、クラウドインフラストラクチャ上のAdobe Commerceで _制限_ サポートされています。 Adobeが、サードパーティのストレージアダプタサービスのトラブルシューティングを完全に行えない。 クラウドプロジェクトにリモートストレージを実装する方法については、[ クラウドインフラストラクチャ上のCommerceのリモートストレージの設定 ](cloud-support.md) を参照してください。
+>- リモートストレージモジュールは、クラウドインフラストラクチャ上のAdobe Commerceで _制限_ サポートされています。 Adobeが、サードパーティのストレージアダプタサービスのトラブルシューティングを完全に行えない。 クラウドプロジェクトにリモートストレージを実装する方法については、[&#x200B; クラウドインフラストラクチャ上のCommerceのリモートストレージの設定 &#x200B;](cloud-support.md) を参照してください。
 
-![ ローカルストレージとクラウドストレージの関係を示すリモートストレージ設定スキーマ図 ](../../assets/configuration/remote-storage-schema.png)
+![&#x200B; ローカルストレージとクラウドストレージの関係を示すリモートストレージ設定スキーマ図 &#x200B;](../../assets/configuration/remote-storage-schema.png)
 
 ## リモートストレージオプション
 
-`remote-storage` CLI コマンド [`setup` で ](../../installation/tutorials/deployment.md) オプションを使用してリモート ストレージを構成できます。 `remote-storage` オプションでは、次の構文を使用します。
+`remote-storage` CLI コマンド [`setup` で &#x200B;](../../installation/tutorials/deployment.md) オプションを使用してリモート ストレージを構成できます。 `remote-storage` オプションでは、次の構文を使用します。
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"
@@ -48,7 +48,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 | コマンドラインパラメーター | パラメーター名 | 説明 | デフォルト値 |
 |--- |--- |--- |--- |
-| `remote-storage-driver` | ドライバ | アダプター名 <br> 使用可能な値：<br>**file**: リモートストレージを無効にし、ローカルファイルシステムを使用します <br>**aws-s3**: [Amazon Simple Storage Service （Amazon S3）を使用 ](remote-storage-aws-s3.md) | なし |
+| `remote-storage-driver` | ドライバ | アダプター名 <br> 使用可能な値：<br>**file**: リモートストレージを無効にし、ローカルファイルシステムを使用します <br>**aws-s3**: [Amazon Simple Storage Service （Amazon S3）を使用 &#x200B;](remote-storage-aws-s3.md) | なし |
 | `remote-storage-bucket` | バケット | オブジェクトストレージまたはコンテナ名 | なし |
 | `remote-storage-prefix` | prefix | オプションのプレフィックス（オブジェクトストレージ内の場所） | 空 |
 | `remote-storage-region` | 地域 | 地域名 | なし |
@@ -79,7 +79,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!TIP]
 >
->クラウドインフラストラクチャー上のAdobe Commerceについては、[ クラウドインフラストラクチャー上のCommerceのリモートストレージの設定 ](cloud-support.md) を参照してください。
+>クラウドインフラストラクチャー上のAdobe Commerceについては、[&#x200B; クラウドインフラストラクチャー上のCommerceのリモートストレージの設定 &#x200B;](cloud-support.md) を参照してください。
 
 ## コンテンツを移行
 
@@ -91,5 +91,5 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->sync コマンドは、`pub/media` ディレクトリ内のファイルのみを移行します __ ディレクトリ内のインポート/エクスポートファイルは移行しません `var`。 [2}Commerce 2.4 ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) の「スケジュールされた読み込み/書き出し」 _を参照してください。_
+>sync コマンドは、`pub/media` ディレクトリ内のファイルのみを移行します __ ディレクトリ内のインポート/エクスポートファイルは移行しません `var`。 [2&rbrace;Commerce 2.4 ユーザーガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) の「スケジュールされた読み込み/書き出し」 _を参照してください。_
 

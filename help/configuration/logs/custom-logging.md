@@ -28,13 +28,13 @@ Adobeでは、次の理由により、一元的なアプリケーションログ
 
 ## PSR-3 への準拠
 
-[PSR-3 標準 ](https://docs.laminas.dev/laminas-log/) は、ライブラリをロギングするための共通の PHP インタフェースを定義します。 PSR-3 の主な目的は、ライブラリが `Psr\Log\LoggerInterface` オブジェクトを受け取り、ログを簡単かつ普遍的な方法で書き込めるようにすることです。
+[PSR-3 標準 &#x200B;](https://docs.laminas.dev/laminas-log/) は、ライブラリをロギングするための共通の PHP インタフェースを定義します。 PSR-3 の主な目的は、ライブラリが `Psr\Log\LoggerInterface` オブジェクトを受け取り、ログを簡単かつ普遍的な方法で書き込めるようにすることです。
 
 これにより、実装を簡単に置き換えることができ、置き換えるとアプリケーションコードが破損する可能性を心配する必要はありません。 また、システムの将来のバージョンでログの実装が変更された場合でも、カスタムコンポーネントが機能することが保証されます。
 
 ## モノローグ
 
-Commerce 2 は PSR-3 規格に準拠しています。 デフォルトでは、Commerceは [Monolog](https://github.com/Seldaek/monolog) を使用します。 Monolog は、Commerce アプリケーション `Psr\Log\LoggerInterface`[`di.xml` で ](https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9) の環境設定として実装されています。
+Commerce 2 は PSR-3 規格に準拠しています。 デフォルトでは、Commerceは [Monolog](https://github.com/Seldaek/monolog) を使用します。 Monolog は、Commerce アプリケーション `Psr\Log\LoggerInterface`[`di.xml` で &#x200B;](https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9) の環境設定として実装されています。
 
 Monolog は、高度なロギング戦略を構築できる幅広いハンドラを備えた一般的な PHP ログソリューションです。 以下は、モノローグの仕組みの概要です。
 

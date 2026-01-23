@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # カスタム cron ジョブの設定
 
-このステップバイステップのチュートリアルでは、サンプルモジュールでカスタム cron ジョブとオプションで cron グループを作成する方法を説明します。 既に持っているモジュールを使用するか、[`magento2-samples` リポジトリ ](https://github.com/magento/magento2-samples) からサンプルモジュールを使用できます。
+このステップバイステップのチュートリアルでは、サンプルモジュールでカスタム cron ジョブとオプションで cron グループを作成する方法を説明します。 既に持っているモジュールを使用するか、[`magento2-samples` リポジトリ &#x200B;](https://github.com/magento/magento2-samples) からサンプルモジュールを使用できます。
 
 cron ジョブを実行すると、`cron_schedule` テーブルに行が追加され、その名前は cron ジョブ `custom_cron` になります。
 
@@ -21,7 +21,7 @@ cron ジョブを実行すると、`cron_schedule` テーブルに行が追加�
 
 - Commerce アプリケーションは `/var/www/html/magento2` にインストールされています
 - Commerce データベースのユーザー名とパスワードの両方が `magento` です
-- すべてのアクションは [ ファイルシステムの所有者 ](../../installation/prerequisites/file-system/overview.md) として実行します。
+- すべてのアクションは [&#x200B; ファイルシステムの所有者 &#x200B;](../../installation/prerequisites/file-system/overview.md) として実行します。
 
 ## 手順 1：サンプルモジュールの取得
 
@@ -31,15 +31,15 @@ cron ジョブを実行すると、`cron_schedule` テーブルに行が追加�
 
 **サンプルモジュールを取得するには**:
 
-1. [ ファイルシステムのオーナー ](../../installation/prerequisites/file-system/overview.md) としてCommerce サーバーにログインするか、に切り替えます。
+1. [&#x200B; ファイルシステムのオーナー &#x200B;](../../installation/prerequisites/file-system/overview.md) としてCommerce サーバーにログインするか、に切り替えます。
 1. をCommerce アプリケーションのルートにないディレクトリ（ホームディレクトリなど）に移動します。
-1. [`magento2-samples` リポジトリのクローンを作成 ](https://github.com/magento/magento2-samples) ます。
+1. [`magento2-samples` リポジトリのクローンを作成 &#x200B;](https://github.com/magento/magento2-samples) ます。
 
    ```bash
    git clone git@github.com:magento/magento2-samples.git
    ```
 
-   エラー `Permission denied (publickey).` が発生してコマンドが失敗した場合は、[SSH 公開鍵を GitHub.com に追加する ](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) 必要があります。
+   エラー `Permission denied (publickey).` が発生してコマンドが失敗した場合は、[SSH 公開鍵を GitHub.com に追加する &#x200B;](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) 必要があります。
 
 1. サンプルコードのコピー先となるディレクトリを作成します。
 
@@ -103,7 +103,7 @@ cron ジョブを実行すると、`cron_schedule` テーブルに行が追加�
 
 >[!TIP]
 >
->出力が `Module does not exist` を示している場合は、[ 手順 1](#step-1-get-a-sample-module) を慎重に確認します。 コードが正しいディレクトリにあることを確認します。 スペルと大文字と小文字の区別は重要です。何か異なる場合、モジュールは読み込まれません。 また、`magento setup:upgrade` を実行することを忘れないでください。
+>出力が `Module does not exist` を示している場合は、[&#x200B; 手順 1](#step-1-get-a-sample-module) を慎重に確認します。 コードが正しいディレクトリにあることを確認します。 スペルと大文字と小文字の区別は重要です。何か異なる場合、モジュールは読み込まれません。 また、`magento setup:upgrade` を実行することを忘れないでください。
 
 ## 手順 3:cron を実行するクラスの作成
 
@@ -273,7 +273,7 @@ SQL コマンドとシステム ログにエントリが含まれていない場
    </config>
    ```
 
-このオプションの意味については、[Cron リファレンスのカスタマイズ ](custom-cron-reference.md) を参照してください。
+このオプションの意味については、[Cron リファレンスのカスタマイズ &#x200B;](custom-cron-reference.md) を参照してください。
 
 ## 手順 8：カスタム cron グループの検証
 
@@ -301,5 +301,5 @@ SQL コマンドとシステム ログにエントリが含まれていない場
 
    cron グループは次のように表示されます。
 
-   ![ カスタム cron グループ ](../../assets/configuration/cron-group.png)
+   ![&#x200B; カスタム cron グループ &#x200B;](../../assets/configuration/cron-group.png)
 

@@ -53,8 +53,8 @@ Adobe Commerce 2.4.4 以降で、これらの拡張機能を引き続き使用�
 
 詳しくは、以下のAdobe Commerce Marketplace のリストを参照してください。
 
-- [Amazon支払 ](https://commercemarketplace.adobe.com//amzn-amazon-pay-magento-2-module.html)
+- [Amazon支払 &#x200B;](https://commercemarketplace.adobe.com//amzn-amazon-pay-magento-2-module.html)
 - [Dotdigital](https://commercemarketplace.adobe.com//dotdigital-dotdigital-magento2-os-package.html)
-- [ クルナ ](https://commercemarketplace.adobe.com//klarna-m2-klarna.html)
-- [ 頂点 ](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html)
-- [ ヨッポ ](https://commercemarketplace.adobe.com//yotpo-module-yotpo.html)
+- [&#x200B; クルナ &#x200B;](https://commercemarketplace.adobe.com//klarna-m2-klarna.html)
+- [&#x200B; 頂点 &#x200B;](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html)
+- [&#x200B; ヨッポ &#x200B;](https://commercemarketplace.adobe.com//yotpo-module-yotpo.html)

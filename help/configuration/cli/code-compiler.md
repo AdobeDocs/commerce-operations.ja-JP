@@ -46,7 +46,7 @@ Commerce アプリケーションのインストール前にコードをコン�
 
    静的コンテンツをクリアするには、`[-c|--clear-static-content]` オプションを使用します。 これは、以前にモジュールを有効または無効にしていて、以前にモジュールに対して生成された静的コンテンツをクリアする必要がある場合に必要です。
 
-   [ モジュールの有効化 ](../../installation/tutorials/manage-modules.md) を参照してください。
+   [&#x200B; モジュールの有効化 &#x200B;](../../installation/tutorials/manage-modules.md) を参照してください。
 
 1. コードをコンパイルします。
 
@@ -58,5 +58,5 @@ Commerce アプリケーションのインストール前にコードをコン�
    Generated code and dependency injection configuration successfully.
    ```
 
-データベースを使用せずにコードをコンパイルするには、[Magentoをインストールせずに静的ビューファイルをデプロイする ](../cli/static-view-file-deployment.md) を参照してください。
+データベースを使用せずにコードをコンパイルするには、[Magentoをインストールせずに静的ビューファイルをデプロイする &#x200B;](../cli/static-view-file-deployment.md) を参照してください。
 

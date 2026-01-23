@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Commerce CLI を使用して、[ データベースのログ記録を有効または無効にする ](../cli/enable-logging.md#database-logging) ことができます。
+>Commerce CLI を使用して、[&#x200B; データベースのログ記録を有効または無効にする &#x200B;](../cli/enable-logging.md#database-logging) ことができます。
 
 `\Magento\Framework\DB\Logger\LoggerProxy` のデフォルト設定を変更するには、`app/etc/di.xml` を編集します。
 

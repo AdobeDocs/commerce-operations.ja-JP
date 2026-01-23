@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Bootstrap パラメーター
 
-このトピックでは、Commerce アプリケーションのブートストラップパラメーターの値を設定する方法について説明します。 [ アプリケーションの初期化とブートストラップの概要 ](initialization.md) を参照してください。
+このトピックでは、Commerce アプリケーションのブートストラップパラメーターの値を設定する方法について説明します。 [&#x200B; アプリケーションの初期化とブートストラップの概要 &#x200B;](initialization.md) を参照してください。
 
 次の表に、設定可能なブートストラップパラメーターを示します。
 
@@ -98,7 +98,7 @@ Apache 仮想ホストでアプリケーションモードを設定する手順�
 
 >[!TIP]
 >
->次の節では、仮想ホストが既に設定されていることを前提としています。 まだ公開されていない場合は、[ この DigitalOcean チュートリアル ](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts) などのリソースを参照してください。
+>次の節では、仮想ホストが既に設定されていることを前提としています。 まだ公開されていない場合は、[&#x200B; この DigitalOcean チュートリアル &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts) などのリソースを参照してください。
 
 **Ubuntu 上の Apache のブートストラップ変数を指定するには**:
 
@@ -141,7 +141,7 @@ Apache 仮想ホストでアプリケーションモードを設定する手順�
 
 >[!TIP]
 >
->この節では、仮想ホストが既に設定されていることを前提としています。 まだ公開されていない場合は、[ この DigitalOcean チュートリアル ](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6) などのリソースを参照してください。
+>この節では、仮想ホストが既に設定されていることを前提としています。 まだ公開されていない場合は、[&#x200B; この DigitalOcean チュートリアル &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6) などのリソースを参照してください。
 
 **CentOS 上の Apache のブートストラップ変数を指定するには**:
 

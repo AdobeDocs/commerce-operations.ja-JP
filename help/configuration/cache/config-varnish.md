@@ -14,23 +14,23 @@ ht-degree: 0%
 
 [Varnish Cache](https://varnish-cache.org) は、オープンソースの web アプリケーションアクセラレーター（_HTTP アクセラレーター_ または _キャッシュ HTTP リバースプロキシ_ とも呼ばれます）です。 Varnish は、メモリ内のファイルまたはファイルのフラグメントを保存（またはキャッシュ）します。これにより、Varnish は、将来の同等のリクエストに対する応答時間とネットワーク帯域幅の消費を削減できます。 Apache や nginx などの web サーバーとは異なり、Varnish は HTTP プロトコルでのみ使用するように設計されています。
 
-[ 必要システム構成 ](../../installation/system-requirements.md) に、Varnish のサポート対象バージョンを示します。
+[&#x200B; 必要システム構成 &#x200B;](../../installation/system-requirements.md) に、Varnish のサポート対象バージョンを示します。
 
 >[!WARNING]
 >
->私たちは _強くお勧めします_ あなたは生産でワニスを使います。 組み込みのフルページキャッシュ（ファイルシステムまたは [ データベース ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)）は、Varnish よりもはるかに遅く、Varnish は HTTP トラフィックを高速化するように設計されています。
+>私たちは _強くお勧めします_ あなたは生産でワニスを使います。 組み込みのフルページキャッシュ（ファイルシステムまたは [&#x200B; データベース &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)）は、Varnish よりもはるかに遅く、Varnish は HTTP トラフィックを高速化するように設計されています。
 
 Varnish の詳細については、次を参照してください。
 
-- [ 大きなワニスの絵 ](https://www.varnish-cache.org/docs/trunk/users-guide/intro.html)
-- [Varnish スタートアップ オプション ](https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options)
-- [ ワニスとウェブサイトのパフォーマンス ](https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance)
+- [&#x200B; 大きなワニスの絵 &#x200B;](https://www.varnish-cache.org/docs/trunk/users-guide/intro.html)
+- [Varnish スタートアップ オプション &#x200B;](https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options)
+- [&#x200B; ワニスとウェブサイトのパフォーマンス &#x200B;](https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance)
 
 ## ワニスのトポロジ図
 
 次の図は、Commerce トポロジでの Varnish の基本的なビューを示しています。
 
-![ ワニスの基本図 ](../../assets/configuration/varnish-basic.png)
+![&#x200B; ワニスの基本図 &#x200B;](../../assets/configuration/varnish-basic.png)
 
 上の図では、インターネットを介したユーザーの HTTP リクエストにより、CSS、HTML、JavaScriptおよび画像（総称して _assets_）に対する多数のリクエストが発生しています。 Varnish は web サーバーの前に配置され、これらのリクエストを web サーバーにプロキシします。
 
@@ -61,7 +61,7 @@ Varnish によってキャッシュされたAssetsは、設定可能な間隔で
 
 Varnish に関する次の問題を把握しています。
 
-- [ ワニスは SSL をサポートしていません ](https://www.varnish-cache.org/docs/3.0/phk/ssl.html)
+- [&#x200B; ワニスは SSL をサポートしていません &#x200B;](https://www.varnish-cache.org/docs/3.0/phk/ssl.html)
 
   別の方法として、SSL ターミネーションまたは SSL ターミネーションプロキシを使用してください。
 
@@ -92,7 +92,7 @@ Varnish に関する次の問題を把握しています。
 
 - Magento 2 GitHub リポジトリからの [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)
 - Commerce`.htaccess` 提供される Apache 用の分散設定ファイル
-- `default.vcl`Admin[ を使用して生成された Varnish の ](../cache/configure-varnish-commerce.md) 設定
+- `default.vcl`Admin[&#x200B; を使用して生成された Varnish の &#x200B;](../cache/configure-varnish-commerce.md) 設定
 
 >[!INFO]
 >
@@ -114,7 +114,7 @@ Varnish に関する次の問題を把握しています。
 
 次の図は、ブラウザーインスペクターを使用した例を示しています。
 
-![ キャッシュ可能なオブジェクトに対して初めてリクエストが行われると、Varnish はそのリクエストをブラウザーに配信します ](../../assets/configuration/varnish-apache-first-visit.png)
+![&#x200B; キャッシュ可能なオブジェクトに対して初めてリクエストが行われると、Varnish はそのリクエストをブラウザーに配信します &#x200B;](../../assets/configuration/varnish-apache-first-visit.png)
 
 前述の例は、ストアフロントのメインページ（`m2_ce_my`）に対するリクエストを示しています。 CSS とJavaScriptのアセットは、クライアントブラウザーにキャッシュされます。
 
@@ -126,7 +126,7 @@ Varnish に関する次の問題を把握しています。
 
 同じブラウザーが同じページを再度リクエストする場合、次の図に示すように、これらのアセットはローカルブラウザーのキャッシュから配信されます。
 
-![ 次回、同じオブジェクトがリクエストされると、アセットはローカルブラウザーのキャッシュから読み込まれます ](../../assets/configuration/varnish-apache-second-visit.png)
+![&#x200B; 次回、同じオブジェクトがリクエストされると、アセットはローカルブラウザーのキャッシュから読み込まれます &#x200B;](../../assets/configuration/varnish-apache-second-visit.png)
 
 1 番目のリクエストと 2 番目のリクエストの応答時間の違いに注意してください。 ここでも、静的アセットには 200 （OK）の応答コードが含まれています。これは、静的アセットが初めてローカルキャッシュから配信されるためです。
 
@@ -134,13 +134,13 @@ Varnish に関する次の問題を把握しています。
 
 次の例は、特定の静的アセットの応答ヘッダーを示しています。
 
-![ETag を使用すると、静的アセットが変更されたかどうかを簡単に判断できます ](../../assets/configuration/varnish-etag.png)
+![ETag を使用すると、静的アセットが変更されたかどうかを簡単に判断できます &#x200B;](../../assets/configuration/varnish-etag.png)
 
 `calendar.css` には ETag 応答ヘッダーがあります。これは、クライアントブラウザー上の CSS ファイルをサーバー上の CSS ファイルと比較できることを意味します。
 
 さらに、次の図に示すように、静的アセットは 304 （変更なし） HTTP ステータスコードで返されます。
 
-![HTTP 304 （変更なし）応答コードは、ローカルキャッシュの静的アセットがサーバー上のものと同じであることを示します ](../../assets/configuration/varnish-304.png)
+![HTTP 304 （変更なし）応答コードは、ローカルキャッシュの静的アセットがサーバー上のものと同じであることを示します &#x200B;](../../assets/configuration/varnish-304.png)
 
 304 ステータスコードが発生するのは、ユーザーがローカルキャッシュを無効にし、サーバー上のコンテンツが変更されなかったためです。 ステータスコードが 304 なので、静的アセット _コンテンツ_ は転送されません。HTTP ヘッダーのみがブラウザーにダウンロードされます。
 

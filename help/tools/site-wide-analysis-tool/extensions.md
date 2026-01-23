@@ -31,4 +31,4 @@ ht-degree: 0%
 
 * サードパーティの [!DNL extensions] を最新のバージョンに保つことができない場合は、別の [!DNL extensions] を使用することを検討してください。
 
-* 潜在的な問題を回避するには、[!DNL extensions]Commerce Marketplace[ などの信頼できるソースからサードパーティ ](https://commercemarketplace.adobe.com//extensions.html) をダウンロードまたは購入します。
+* 潜在的な問題を回避するには、[!DNL extensions]Commerce Marketplace[&#x200B; などの信頼できるソースからサードパーティ &#x200B;](https://commercemarketplace.adobe.com//extensions.html) をダウンロードまたは購入します。

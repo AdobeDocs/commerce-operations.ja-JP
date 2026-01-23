@@ -32,9 +32,9 @@ ht-degree: 0%
 
 * 既存のMagento 1 システムと少なくとも一致するトポロジおよびデザインを使用して、Magento 2 ハードウェアシステムをセットアップします
 
-* [!DNL Data Migration Tool] 必要システム構成 [ を満たすシステムに、Magento 2 （このリリースのすべてのモジュールを含む）および ](../../installation/system-requirements.md) をインストールします
+* [!DNL Data Migration Tool] 必要システム構成 [&#x200B; を満たすシステムに、Magento 2 （このリリースのすべてのモジュールを含む）および &#x200B;](../../installation/system-requirements.md) をインストールします
 
-* [!DNL Data Migration Tool] コードをカスタマイズして、特定のデータ（CMS ページ、営業ルールなど）をスキップしたり、移行中にカスタマイズを変換したりします。 移行の仕組みについて詳しくは、[!DNL Data Migration Tool] の [ 技術仕様 ](technical-specification.md) を参照してください
+* [!DNL Data Migration Tool] コードをカスタマイズして、特定のデータ（CMS ページ、営業ルールなど）をスキップしたり、移行中にカスタマイズを変換したりします。 移行の仕組みについて詳しくは、[!DNL Data Migration Tool] の [&#x200B; 技術仕様 &#x200B;](technical-specification.md) を参照してください
 
 ## 手順 3：ドライラン
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
    一部の拡張機能に移行するデータがある場合は、Magento 2 に適合したこれらの拡張機能をインストールする必要がある可能性があります。 Magento 2 データベース内で拡張機能の構造が異なる場合は、[!DNL Data Migration Tool] に用意されているマッピングファイルを使用します。
 
-1. すべてのMagento 2 インデクサーのインデックスを再作成します。 詳しくは、『 [ 設定ガイド ](../../configuration/cli/manage-indexers.md) の _インデクサーの管理_ を参照してください。
+1. すべてのMagento 2 インデクサーのインデックスを再作成します。 詳しくは、『 [&#x200B; 設定ガイド &#x200B;](../../configuration/cli/manage-indexers.md) の _インデクサーの管理_ を参照してください。
 
 ## 手順 5：移行したデータに変更を加える（必要な場合）
 
@@ -106,7 +106,7 @@ Magento 2 サイトが完全に移行され、正常に機能したら、カッ�
 
 1. Magento 2 cron ジョブを開始します。
 
-1. Magento 2 システムで、Stock インデクサーのインデックスを再作成します。 詳しくは、『 [ 設定ガイド ](../../configuration/cli/manage-indexers.md) の _インデクサーの管理_ を参照してください。
+1. Magento 2 システムで、Stock インデクサーのインデックスを再作成します。 詳しくは、『 [&#x200B; 設定ガイド &#x200B;](../../configuration/cli/manage-indexers.md) の _インデクサーの管理_ を参照してください。
 
 1. 任意のツールを使用して、Magento 2 システムでページをヒットすると、ストアフロントを使用するお客様の前にページがキャッシュされます。
 

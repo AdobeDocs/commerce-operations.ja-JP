@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## MAGE_DIRS を設定
 
-キーが [\\Magento\\App\\Filesystem\\DirectoryListの定数で、値がディレクトリの絶対パスまたはその URL パスである連想配列を ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php) それぞれ指定します。
+キーが [\\Magento\\App\\Filesystem\\DirectoryListの定数で、値がディレクトリの絶対パスまたはその URL パスである連想配列を &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php) それぞれ指定します。
 
 `MAGE_DIRS` は、次のいずれかの方法で設定できます。
 
