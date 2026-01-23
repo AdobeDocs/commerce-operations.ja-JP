@@ -35,7 +35,7 @@ Commerce翻訳を使用すると、次の情報を生成することで、複数
 
 1. 翻訳辞書を言語パッケージにまとめ、Commerce ストア管理者に提供することができます。
 
-1. 管理者は、ストア管理者が [&#x200B; 翻訳を設定 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize) します。
+1. 管理者は、ストア管理者が [&#x200B; 翻訳を設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-localize) します。
 
 コマンドオプション：
 

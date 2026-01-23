@@ -146,7 +146,7 @@ Commerceでは、パスワードやその他の機密データを保護するた
 ]
 ```
 
-[&#x200B; 暗号化キー &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) について詳しくは、_Commerce ユーザーガイド_ を参照してください。
+[&#x200B; 暗号化キー &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/encryption-key) について詳しくは、_Commerce ユーザーガイド_ を参照してください。
 
 ## db
 
@@ -211,7 +211,7 @@ Web サーバーが `/pub` ディレクトリからCommerce アプリケーシ�
 ]
 ```
 
-詳細情報 [&#x200B; ダウンロード可能なドメイン &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
+詳細情報 [&#x200B; ダウンロード可能なドメイン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
 
 ## install
 

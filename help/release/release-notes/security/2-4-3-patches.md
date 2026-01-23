@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.3-p3 セキュリティリリースは、以前のリリースの 2.4.3 で特定された脆弱性に対するセキュリティ修正を提供します。このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
-セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html) を参照してください。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB22-38](https://helpx.adobe.com/jp/security/products/magento/apsb22-38.html) を参照してください。
 
 ### AC-3022.patch を適用して、引き続き配送業者として DHL を提供します
 
@@ -35,7 +35,7 @@ DHL ではスキーマバージョン 6.2 を導入しており、近い将来�
 
 Adobe Commerce 2.4.3-p2 セキュリティリリースは、以前のリリースで特定された脆弱性に対するセキュリティバグ修正を提供します。 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
-セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html) を参照してください。  また、このパッチリリースでは、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` および `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch` によって対処された脆弱性も解決されています。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB22-13](https://helpx.adobe.com/jp/security/products/magento/apsb22-13.html) を参照してください。  また、このパッチリリースでは、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` および `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch` によって対処された脆弱性も解決されています。
 
 
 ### AC-3022.patch を適用して、引き続き配送業者として DHL を提供します
@@ -46,7 +46,7 @@ DHL ではスキーマバージョン 6.2 を導入しており、近い将来�
 
 * メール変数の使用は、セキュリティリスク軽減の一環として 2.3.4 に廃止され、より厳密な変数構文に置き換わりました。 このレガシー動作は、そのセキュリティリスク軽減の続きとして、このリリースでは完全に削除されています。
 
-  その結果、Adobe Commerce 2.4.3-p2 にアップグレードすると、以前のバージョンで機能していたメールまたはニュースレターのテンプレートが正しく機能しなくなる場合があります。 影響を受けるテンプレートには、管理者の上書き、テーマ、子テーマ、カスタムモジュールまたはサードパーティの拡張機能のテンプレートが含まれます。 [&#x200B; 互換性アップグレードツール &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) を使用して非推奨（廃止予定）の使用状況を修正した後でも、デプロイメントに影響が及ぶ場合があります。 考えられる影響と影響を受けるテンプレートの移行に関するガイドラインについて詳しくは、[&#x200B; カスタムメールテンプレートの移行 &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) を参照してください。
+  その結果、Adobe Commerce 2.4.3-p2 にアップグレードすると、以前のバージョンで機能していたメールまたはニュースレターのテンプレートが正しく機能しなくなる場合があります。 影響を受けるテンプレートには、管理者の上書き、テーマ、子テーマ、カスタムモジュールまたはサードパーティの拡張機能のテンプレートが含まれます。 [&#x200B; 互換性アップグレードツール &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=ja) を使用して非推奨（廃止予定）の使用状況を修正した後でも、デプロイメントに影響が及ぶ場合があります。 考えられる影響と影響を受けるテンプレートの移行に関するガイドラインについて詳しくは、[&#x200B; カスタムメールテンプレートの移行 &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) を参照してください。
 
 * OAuth アクセストークンとパスワードリセットトークンが、データベースに保存される際に暗号化されるようになりました。<!-- AC-520 1323-->
 
@@ -64,7 +64,7 @@ DHL ではスキーマバージョン 6.2 を導入しており、近い将来�
 Adobe Commerce 2.4.3-p1 セキュリティリリースでは、前のリリース（Adobe Commerce 2.4.3 およびMagento Open Source 2.4.3）で特定された脆弱性のセキュリティバグが修正されています。 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
 
-セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html) を参照してください。 また、このパッチリリースでは、ベンダーが開発した [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html)、[Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html) および [Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html) 拡張機能のバグ修正も提供しています。
+セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB21-86](https://helpx.adobe.com/jp/security/products/magento/apsb21-86.html) を参照してください。 また、このパッチリリースでは、ベンダーが開発した [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=ja)、[Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html) および [Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html) 拡張機能のバグ修正も提供しています。
 
 ### AC-3022.patch を適用して、引き続き配送業者として DHL を提供します
 

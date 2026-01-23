@@ -34,7 +34,7 @@ ht-degree: 1%
 ]
 ```
 
-詳細情報 [&#x200B; モジュール &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html)。
+詳細情報 [&#x200B; モジュール &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=ja)。
 
 ## スコープ
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 ]
 ```
 
-[Commerce範囲 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) の詳細情報。
+[Commerce範囲 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings) の詳細情報。
 
 ## system
 
