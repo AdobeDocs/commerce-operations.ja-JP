@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>2026 年のリリースプランを反映するように <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">0}Commerce パッチリリーススケジュールを更新しました。</a></p>
+      <td><p>2026 年のリリースプランを反映するように <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">0&rbrace;Commerce パッチリリーススケジュールを更新しました。</a></p>
 </td>
       <td>
         テクニカル、フィードバック
