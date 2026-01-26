@@ -2,7 +2,7 @@
 title: AWS ElastiCache を使用して Redis を設定します
 description: EC2 でホストされるCommerce インスタンスの場合、ローカル Redis インスタンスの代わりにAWS ElastiCache を使用する方法を説明します。 コマンドラインのセットアップ、設定オプション、検証方法について説明します。
 feature: Configuration, Cache
-source-git-commit: 908796587e78b80d699354c0506ca948d0f37518
+source-git-commit: b66479ee1350d92c1d59212283222e5068c263a6
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Commerce 2.4.3 以降、Amazon EC2 でホストされるインスタンスは、
 
 ## 前提条件
 
-- **Redis OSS サーバーレスキャッシュの作成** - AWS Management Console から、EC2 インスタンスの同じリージョンおよびVPCに Redis キャッシュを作成します。 手順については、[AWS Elasticache ドキュメント ] （https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html）を参照してください。
+- **Redis OSS サーバーレスキャッシュの作成** - AWS Management Console から、EC2 インスタンスの同じリージョンおよびVPCに Redis キャッシュを作成します。 手順については、[AWS Elasticache ドキュメント ](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html) を参照してください。
 
 - **EC2 Commerce インスタンスへの接続の確認**
 
