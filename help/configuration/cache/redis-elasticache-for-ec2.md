@@ -20,7 +20,7 @@ Commerce 2.4.3 以降、Amazon EC2 でホストされるインスタンスは、
 
 ## 前提条件
 
-- **Redis OSS サーバーレスキャッシュの作成** - AWS Management Console から、EC2 インスタンスの同じリージョンおよびVPCに Redis キャッシュを作成します。 手順については、[AWS Elasticache ドキュメント ](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html) を参照してください。
+- **Redis OSS サーバーレスキャッシュの作成** - AWS Management Console から、EC2 インスタンスの同じリージョンおよびVPCに Redis キャッシュを作成します。 手順については、[AWS Elasticache ドキュメント &#x200B;](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html) を参照してください。
 
 - **EC2 Commerce インスタンスへの接続の確認**
 
