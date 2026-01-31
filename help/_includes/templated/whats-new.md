@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68615">ACSD-68615 に対する QPT 1.1.75 修正の詳細な説明を追加しました：処理された組み合わせに注文 ID</a> がない場合、在庫予約報酬 CLI に例外が表示されました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68615">ACSD-68615 に対する QPT 1.1.75 修正の詳細な説明を追加しました：処理された組み合わせに注文 ID</a> がない場合、在庫予約報酬 CLI に例外が表示されました。</p>
 </td>
       <td>
         新しいトピック、qpt
