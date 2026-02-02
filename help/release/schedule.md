@@ -18,7 +18,7 @@ Adobeは、製品のアップグレードをシンプルで予測可能なもの
 
 >[!NOTE]
 >
->新機能、クラウドインフラストラクチャ、拡張機能リリースについて詳しくは、[Adobe Commerce サービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all) リリースドキュメントを参照してください。
+>新機能、クラウドインフラストラクチャ、拡張機能リリースについて詳しくは、[Adobe Commerce サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/release-information/release-notes-all) リリースドキュメントを参照してください。
 
 このページにリストされているスケジュールされた品質、セキュリティ、ベータ版のパッチに加えて、Adobeでは [Quality Patches Tool](versioning-policy.md#individual-patch) を通じて [&#x200B; 個別パッチ &#x200B;](../tools/quality-patches-tool/usage.md) にアクセスできます。 このツールを使用すると、インストールされているバージョンのAdobe Commerceで使用可能な個々のパッチに関する一般情報を適用、元に戻して表示できます。
 
@@ -43,10 +43,10 @@ Adobe Commerceは、次の方法で、毎月のパッチリリーススケジュ
 
 Adobeは、次のチャネルを通じて、新しいパッチリリースについてお客様に通知します。
 
-- [Adobeのセキュリティ速報および情報 &#x200B;](https://helpx.adobe.com/security/security-bulletin.html#magento)
+- [Adobeのセキュリティ速報および情報 &#x200B;](https://helpx.adobe.com/jp/security/security-bulletin.html#magento)
 - 電子メール
 - 製品内アラート
 
 >[!NOTE]
 >
-> すべてのマイナー、パッチ、セキュリティのリリースのリリース日と通常のサポートが終了する日付については、[&#x200B; リリース済みバージョン &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions) を参照してください。
+> すべてのマイナー、パッチ、セキュリティのリリースのリリース日と通常のサポートが終了する日付については、[&#x200B; リリース済みバージョン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/versions) を参照してください。
