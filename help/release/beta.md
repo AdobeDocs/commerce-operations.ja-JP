@@ -47,9 +47,9 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様お
 
 ### Cloud Automation Patching Service （Private Beta）
 
-[Cloud Automation Patching Service](../tools/caps-tool/intro.md) は、クラウドインフラストラクチャー上の [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) 環境に個別のセキュリティパッチを適用するプロセスを自動化します。
+[Cloud Automation Patching Service](../tools/caps-tool/intro.md) は、クラウドインフラストラクチャー上の [Adobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/overview) 環境に個別のセキュリティパッチを適用するプロセスを自動化します。
 
-2025 年 10 月に、Cloud Automation パッチ適用サービスのベータ版リリースが [Site-Wide Analysis tool ダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) に追加されます。 このサービスは、以下を含む合理化されたパッチ適用ワークフローで、Commerce プロジェクト管理者をサポートします。
+2025 年 10 月に、Cloud Automation パッチ適用サービスのベータ版リリースが [Site-Wide Analysis tool ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) に追加されます。 このサービスは、以下を含む合理化されたパッチ適用ワークフローで、Commerce プロジェクト管理者をサポートします。
 
 - パッチの自動インストール
 - ロールバック・リカバリ
@@ -64,7 +64,7 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様お
 
 >[!NOTE]
 >
->クラウド自動修正パッチサービスは個別のセキュリティパッチを自動的に適用するので、これを使用するには [&#x200B; 投稿者またはプロジェクト管理者の役割 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) が必要です。
+>クラウド自動修正パッチサービスは個別のセキュリティパッチを自動的に適用するので、これを使用するには [&#x200B; 投稿者またはプロジェクト管理者の役割 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/project/user-access) が必要です。
 
 このベータ版に参加するには、[Cloud Automation Patching Service - Beta サインアップフォーム &#x200B;](https://forms.office.com/r/3Wfxj5nPdB) に記入して送信します。
 
@@ -88,7 +88,7 @@ Adobe Commerce Foundation の各アルファ版およびベータ版のリリー
 - GraphQLの改善点
 - 一般的な品質のバグ修正
 - コミュニティの投稿
-- [Adobe Commerce サービスとの互換性をサポートするために必要な変更 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Adobe Commerce サービスとの互換性をサポートするために必要な変更 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
 
 #### 命名規則とスケジュール
 
