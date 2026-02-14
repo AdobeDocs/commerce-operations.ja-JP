@@ -3,9 +3,9 @@ title: リリースノート
 description: Adobe Commerceで使用可能なパッチと、それらが解決する問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: a233f39557ef1cc4f27f3e4ce015de554941d676
+source-git-commit: 151dc8bbf046b1c269c34dcfc66718136b4b8b02
 workflow-type: tm+mt
-source-wordcount: '30379'
+source-wordcount: '30792'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,29 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce プロジェクトにパッチを適用する手順については、[&#x200B; パッチの適用 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja#apply-individual-patches) を参照してください。 リリース済みパッチの完全なリストを確認するには、『ソフトウェア更新ガイド』の「[[!DNL Quality Patches Tool]：パッチの検索 &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)」を参照してください。
+>Adobe Commerce プロジェクトにパッチを適用する手順については、[ パッチの適用 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) を参照してください。 リリース済みパッチの完全なリストを確認するには、『ソフトウェア更新ガイド』の「[[!DNL Quality Patches Tool]：パッチの検索 ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
 
 >[!INFO]
 >
->コミュニティがMagento Open Source用に作成した [!DNL quality patches] について詳しくは、[&#x200B; リリースノート &#x200B;](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+>コミュニティがMagento Open Source用に作成した [!DNL quality patches] について詳しくは、[ リリースノート ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md) を参照してください。
+
+## v1.1.77 {#v1-1-77}
+
+* **ACSD-63687** （Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.7 の場合） - Redis キャッシュをクリーンアップできないので、誤った価格が表示される問題を修正しました。
+* **ACSD-68341** （Adobe Commerce >=2.4.4 &lt;2.4.9 用） – PDP の読み込み中に、複数のカスタマーセグメントがストアで作成された場合に、X-Magento-Vary cookie が複数回設定される問題を修正しました。
+* **ACSD-68537** （Adobe Commerce >=2.4.8 &lt;2.4.9 の場合） – お客様セグメントの数が増えるとチェックアウトのパフォーマンスが低下する問題を修正しました。
+* **ACSD-68664** （Adobe Commerce >=2.4.6 &lt;2.4.9 の場合） – カスタムドメインを使用しているストアのコンテンツをプレビューしようとすると、スケジュールされた更新のプレビューが機能しない問題を修正しました。
+* **ACSD-68759** （Adobe CommerceおよびMagento Open Source >=2.4.4-p2 &lt;2.4.5 || >=2.4.5-p1 &lt;2.4.9） – アラビア語ロケールを使用していて、ストアフロントに生年月日（DOB）属性が表示されるように設定されている場合に、顧客アカウントの作成が失敗する問題を修正しました。
+* **ACSD-68892** （Adobe CommerceおよびMagento Open Source >=2.4.8 &lt;2.4.9 の場合） – キャッシュ可能なページが Fastly キャッシュから適切に保存または提供されない問題を修正しました。その結果、キャッシュ動作に一貫性がなくなり、パフォーマンスが低下します。
+* **ACSD-69016** （Adobe Commerce >=2.4.7 &lt;2.4.9 の場合） – 異なるタイムゾーンで作成された web サイトで特別価格が有効にならない問題を修正しました。
+* **ACSD-69020** （Adobe CommerceおよびMagento Open Source >=2.4.7 &lt;2.4.8 の場合） – 子商品のいずれかがフィルター条件を満たしている場合に、設定可能な商品が PageBuilder の商品カルーセルリストに自動的に含まれる問題を修正しました。
+* **ACSD-69237** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.9 の場合） - sales_*_async_insert cron ジョブで処理および挿入できるエントリの数が 1 回の実行あたり 100 に制限される問題を修正しました。
+* **ACSD-69311** （Adobe CommerceおよびMagento Open Source >=2.4.4 &lt;2.4.9 の場合） – 以前のクレジット・メモが受注ビュー・ページから作成されている場合に、請求書から一部払戻を作成する際のクレジット・メモの税金計算が正しくない問題を修正します。
+* **ACSD-69351** （Adobe Commerce >=2.4.4 &lt;2.4.9 の場合） – Web サイトの範囲に基づいてギフトカードの残高と有効期限が表示されない問題を修正しました。
+* **ACSD-69494** （Adobe CommerceおよびMagento Open Source >=2.4.8 &lt;2.4.9 の場合） – 「is_online」パラメーターを含む払い戻しリクエストが正しく処理されない非同期払い戻しオペレーションの問題を修正しました。
+* 更新されたバージョン：**ACSD-67250**
+* 交換後のパッチ：**ACSD-62629**、**ACSD-66157**
+* 非推奨パッチ：**ACSD-66157**
 
 ## v1.1.76 {#v1-1-76}
 
