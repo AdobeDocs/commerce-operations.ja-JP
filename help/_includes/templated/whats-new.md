@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>QPT 1.1.75 の修正の詳細な説明を追加しました <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517">ACSD-68517：カタログおよびカタログ検索ページのフォーム再送信エラーを修正しました </a>。</p>
+      <td><p>QPT 1.1.75 の修正の詳細な説明を追加しました <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517">ACSD-68517：カタログおよびカタログ検索ページのフォーム再送信エラーを修正しました </a>。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -53,7 +53,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8ee6404271170b19ff27a3ab64711061505494b3">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview"> 概要：品質向上パッチツール（QPT） v1.1.76</a> を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview"> 概要：品質向上パッチツール（QPT） v1.1.76</a> を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
