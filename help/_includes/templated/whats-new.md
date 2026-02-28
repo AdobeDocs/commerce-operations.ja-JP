@@ -31,7 +31,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c6d81e7aeb4e2b4d2d5a140e9bf7b8c8ba5f5deb">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494">ACSD-69494:is_online を含む非同期返金リクエストは、オンライン返金をトリガーにしません </a> の QPT 1.1.77 の修正の詳細な説明を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494">ACSD-69494:is_online を含む非同期返金リクエストは、オンライン返金をトリガーにしません </a> の QPT 1.1.77 の修正の詳細な説明を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -39,7 +39,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/29a5f90122336bde78ed00e778b43b7c56549eef">コミット</a></td>
     </tr>
     <tr>
-      <td><p>の QPT 1.1.77 修正の詳細な説明を追加しました <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537">ACSD-68537：多くの顧客セグメントでチェックアウトのパフォーマンスが低下します </a>。</p>
+      <td><p>の QPT 1.1.77 修正の詳細な説明を追加しました <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537">ACSD-68537：多くの顧客セグメントでチェックアウトのパフォーマンスが低下します </a>。</p>
 </td>
       <td>
         新しいトピック、qpt
