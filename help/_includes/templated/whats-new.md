@@ -23,7 +23,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308:QPT 1.1.76 の修正の詳細な説明を追加しました。カタログ価格ルールは、Web サイトレベルでのみ設定された場合（「すべてのストアビュー」では <code class="language-plaintext highlighter-rouge">special_price</code> く）は適用されませんでした。 修正後、最初に web サイトのデフォルトストアを確認することで、カタログの価格ルールが正しく適用されます </a>。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308:QPT 1.1.76 の修正の詳細な説明を追加しました。カタログ価格ルールは、Web サイトレベルでのみ設定された場合（「すべてのストアビュー」では <code class="language-plaintext highlighter-rouge">special_price</code> く）は適用されませんでした。 修正後、最初に web サイトのデフォルトストアを確認することで、カタログの価格ルールが正しく適用されます </a>。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -31,7 +31,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/db07a5d6f991ff36536a4365ee88fa25062dbe43">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541：管理者内の商品の数量を買い物かごに既に存在する数量より少なく減らすと、GraphQLを使用してその買い物かごで商品の数量を編集できなくなりました </a>。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541：管理者内の商品の数量を買い物かごに既に存在する数量より少なく減らすと、GraphQLを使用してその買い物かごで商品の数量を編集できなくなりました </a>。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -39,7 +39,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b2b801b88aee7fc6c275be3fb32a2e75bbe6f20d">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020：子製品がフィルターと一致する場合、設定可能な製品がページビルダーのカルーセルに表示される </a> の QPT 1.1.77 の修正の詳細な説明を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020：子製品がフィルターと一致する場合、設定可能な製品がページビルダーのカルーセルに表示される </a> の QPT 1.1.77 の修正の詳細な説明を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
