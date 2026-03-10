@@ -1,8 +1,8 @@
 ---
-source-git-commit: 48dfdd81992a82bf984c3e7b0f30f8e5a69ee735
+source-git-commit: 0e125de563b4c50ae9e6a657873a3b02aed810fe
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 1%
+source-wordcount: '1004'
+ht-degree: 0%
 
 ---
 # bin/uct
@@ -12,22 +12,22 @@ ht-degree: 1%
 
 
 <!-- The template to render with above values -->
-**バージョン**:3.0.25
+**バージョン**:3.0.26
 
 このリファレンスには、`bin/uct` のコマンド ライン ツールで使用できる 9 つのコマンドが含まれています。
 最初のリストは、Adobe Commerceで `bin/uct list` コマンドを使用して自動生成されます。
 
 ## 一般
 
-ツールについて詳しくは、[&#x200B; 概要 &#x200B;](/help/upgrade/upgrade-compatibility-tool/overview.md) を参照してください。
+ツールについて詳しくは、[ 概要 ](/help/upgrade/upgrade-compatibility-tool/overview.md) を参照してください。
 
 >[!NOTE]
 >
->`composer update` コマンドはこのツールのアップグレードには機能しません。[&#x200B; 最新バージョンをダウンロードしてインストール &#x200B;](/help/upgrade/upgrade-compatibility-tool/run.md) する必要があります。
+>`composer update` コマンドはこのツールのアップグレードには機能しません。[ 最新バージョンをダウンロードしてインストール ](/help/upgrade/upgrade-compatibility-tool/run.md) する必要があります。
 
 このリファレンスドキュメントは、アプリケーションソースコードから生成されます。 ドキュメントを変更するには、を開きます。
-関連する [&#x200B; コードベース &#x200B;](https://github.com/magento) リポジトリ内の対応するコマンドのプルリクエスト。 参照：
-[&#x200B; コードの投稿 &#x200B;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) を参照してください。
+関連する [ コードベース ](https://github.com/magento) リポジトリ内の対応するコマンドのプルリクエスト。 参照：
+[ コードの投稿 ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) を参照してください。
 
 ### グローバルオプション
 
@@ -69,7 +69,6 @@ ANSI 出力を強制（または無効化 – no-ansi）
 
 「– ansi」オプションを否定します
 
-- デフォルト：`false`
 - 値を受け入れません
 
 #### `--no-interaction`, `-n`
@@ -90,7 +89,7 @@ bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [
 
 ### オプション
 
-グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 #### `--shell`, `-s`
 
@@ -141,11 +140,11 @@ Static installation
 
 Dump the script to a global completion file and restart your shell:
 
-    uct/bin/uct completion  | sudo tee /etc/bash_completion.d/uct
+    ./uct/bin/uct completion  | sudo tee /etc/bash_completion.d/uct
 
 Or dump the script to a local file and source it:
 
-    uct/bin/uct completion  > completion.sh
+    ./uct/bin/uct completion  > completion.sh
 
     # source the file whenever you use the project
     source completion.sh
@@ -158,7 +157,7 @@ Dynamic installation
 
 Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
 
-    eval "$(/var/jenkins/workspace/gendocs-uct-cli/uct/bin/uct completion )"
+    eval "$(/apps/uct/bin/uct completion )"
 ```
 
 ### 引数
@@ -169,7 +168,7 @@ Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
 
 ### オプション
 
-グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 #### `--debug`
 
@@ -190,11 +189,11 @@ bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 The help command displays help for a given command:
 
-  uct/bin/uct help list
+  ./uct/bin/uct help list
 
 You can also output the help in other formats by using the --format option:
 
-  uct/bin/uct help --format=xml list
+  ./uct/bin/uct help --format=xml list
 
 To display the list of available commands, please use the list command.
 ```
@@ -209,7 +208,7 @@ To display the list of available commands, please use the list command.
 
 ### オプション
 
-グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 #### `--format`
 
@@ -237,19 +236,19 @@ bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 ```
 The list command lists all commands:
 
-  uct/bin/uct list
+  ./uct/bin/uct list
 
 You can also display the commands for a specific namespace:
 
-  uct/bin/uct list test
+  ./uct/bin/uct list test
 
 You can also output the information in other formats by using the --format option:
 
-  uct/bin/uct list --format=xml
+  ./uct/bin/uct list --format=xml
 
 It's also possible to get raw list of commands (useful for embedding command runner):
 
-  uct/bin/uct list --raw
+  ./uct/bin/uct list --raw
 ```
 
 ### 引数
@@ -260,7 +259,7 @@ It's also possible to get raw list of commands (useful for embedding command run
 
 ### オプション
 
-グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 #### `--raw`
 
@@ -302,7 +301,7 @@ bin/uct refactor <path>
 
 ### オプション
 
-グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 
 ## `core:code:changes`
@@ -328,7 +327,7 @@ Adobe Commerce vanilla インストールディレクトリ。
 
 ### オプション
 
-グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 #### `--output`, `-o`
 
@@ -343,7 +342,7 @@ Adobe Commerce vanilla インストールディレクトリ。
 bin/uct dbschema:diff <current-version> <target-version>
 ```
 
-選択した 2 つのバージョンにおけるAdobe Commerce DB スキーマの違いを一覧表示できます。 使用可能なバージョン：2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2.4.6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7 – ベータ 1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-beta3 | 2.4.7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8 | 2.4.4-p9 | 2.4.5-p8 | 2.4.6-p6 | 2.4.7-p1 | 2.4.4-p10 | 2.4.5-p9 | 2.4.6-p7 | 2.4.7-p2 | 2.4.4-p11 | 2.4.5-p10 | 2.4.6-p8 | 2.4.7-p3 | 2.4.8-beta1 | 2.4.4-p12 | 2.4.5-p11 | 2.4.6-p9 | 2.4.7-p4 | 2.4.8-beta2 | 2.4.4-p13 | 2.4.5-p12 | 2.4.6-p10 | 2.4.7-p5 | 2.4.8 | 2.4.9-alpha2 | 2.4.8-p2 | 2.4.7-p7 | 2.4.6-p12 | 2.4.5-p14 | 2.4.4-p15 | 2.4.9-alpha1 | 2.4.8-p1 | 2.4.7-p6 | 2.4.6-p11 | 2.4.5-p13 | 2.4.4-p14 | 2.4.9-alpha3 | 2.4.8-p3 | 2.4.7-p8 | 2.4.6-p13 | 2.4.5-p15 | 2.4.4-p16
+選択した 2 つのバージョンにおけるAdobe Commerce DB スキーマの違いを一覧表示できます。 使用可能なバージョン：2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2.4.6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7 – ベータ 1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-beta3 | 2.4.7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8 | 2.4.4-p9 | 2.4.5-p8 | 2.4.6-p6 | 2.4.7-p1 | 2.4.4-p10 | 2.4.5-p9 | 2.4.6-p7 | 2.4.7-p2 | 2.4.4-p11 | 2.4.5-p10 | 2.4.6-p8 | 2.4.7-p3 | 2.4.8-beta1 | 2.4.4-p12 | 2.4.5-p11 | 2.4.6-p9 | 2.4.7-p4 | 2.4.8-beta2 | 2.4.4-p13 | 2.4.5-p12 | 2.4.6-p10 | 2.4.7-p5 | 2.4.8 | 2.4.9-alpha2 | 2.4.8-p2 | 2.4.7-p7 | 2.4.6-p12 | 2.4.5-p14 | 2.4.4-p15 | 2.4.9-alpha1 | 2.4.8-p1 | 2.4.7-p6 | 2.4.6-p11 | 2.4.5-p13 | 2.4.4-p14 | 2.4.9-alpha3 | 2.4.8-p3 | 2.4.7-p8 | 2.4.6-p13 | 2.4.5-p15 | 2.4.4-p16 | 2.4.9-beta1 | 2.4.8-p4 | 2.4.7-p9 | 2.4.6-p14 | 2.4.5-p16 | 2.4.4-p17
 
 ### 引数
 
@@ -362,7 +361,7 @@ bin/uct dbschema:diff <current-version> <target-version>
 
 ### オプション
 
-グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 
 ## `graphql:compare`
@@ -390,7 +389,7 @@ GraphQL スキーマの互換性の検証
 
 ### オプション
 
-グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 #### `--output`, `-o`
 
@@ -417,7 +416,7 @@ Adobe Commerce インストールディレクトリ。
 
 ### オプション
 
-グローバルオプションについては、[&#x200B; グローバルオプション &#x200B;](#global-options) を参照してください。
+グローバルオプションについては、[ グローバルオプション ](#global-options) を参照してください。
 
 #### `--current-version`, `-a`
 
@@ -427,7 +426,7 @@ Adobe Commerce インストールディレクトリ。
 
 #### `--coming-version`, `-c`
 
-Target のAdobe Commerceのバージョン。 省略した場合は、最新リリースの安定したAdobe Commerceが使用されます。 使用可能なAdobe Commerceのバージョン：2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3.3\| 2.3.3-p1 \| 2.3.4-p1 \| 2.3.4-p1 \| 2.3.5\| 2.3.5-p2 \| 2.3.6\| 2.3.6-p1 \| 2.3.7-p1 \| 2.3.7-p1 \| 2.3.7-p2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.2-p1 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3-p2 \| 2.4.3-p3 \| 2.4.4\| 2.4.4-p1 \| 2.4.4-p1 \| 2.4.4-p1 \| 2.4-p2 \| 2.4.4-p3 \| 2.4.4-p4 \| 2.4.4-p5 \| 2.4.4-p6 \| 2.4.4-p7 \| 2.4.4-p9 \| 2.4.4-p9 \| 2.4.4-p10 \| 2.4.4-p11 \| 2.4.4-p12 \| 2.4.4-p13 \| 2.4.4-p14 \| 2.4.4-p15 \| 2.4.4-p16 \| 2.4.5 \| 2.4.5-p1 \| 2.4.5-p2 \| 2.4.5-p3 \| 2.4.5-p5 \| 2.4.5-p5 \| 2.4.5-p6 \| 2.4.5-p7 \| 2.4.5-p8 \| 2.4.5-p9 \| 2.4.5-p10 \| 2.4.5-p11 \| 2.4.5-p12 2.4.5-p13 \| 2.4.5-p14 \| 2.4.5-p15 \| 2.4.6 \| 2.4.6-p1 \| 2.4.6-p2 \| 2.4.6-p3 \| 2.4.6-p4 \| 2.4.6-p5 \| 2.4.6-p7 \| 2.4.6-p8 \| 2.4.6-p9 \| 2.4.6-p10 \| 2.4.6-p11 \| 2.4.6-p12 \| 2.4.6-p13 \| 2.4.7-beta1 \| 2.4.7-beta2 \| 2.4.7-beta3 \| 2.4.7-p1 \| 2.4.7-p2 \| 2.4.7-p4 \| 2.4.7-p5 \| 2.4.7-p6 \| 2.4.7-p7\| 2.7-p7\| 2.4 2.4.8-beta1 \| 2.4.8-beta2 \| 2.4.8\| 2.4.8-p1 \| 2.4.8-p2 \| 2.4.8-p3 \| 2.4.9-alpha1 \| 2.4.9-alpha2 \| 2.4.9-alpha2 \| 2.4.9-alpha3
+Target のAdobe Commerceのバージョン。 省略した場合は、最新リリースの安定したAdobe Commerceが使用されます。 使用可能なAdobe Commerceのバージョン：2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3.3\| 2.3.3-p1 \| 2.3.4-p1 \| 2.3.4-p1 \| 2.3.5\| 2.3.5-p2 \| 2.3.6\| 2.3.6-p1 \| 2.3.7-p1 \| 2.3.7-p1 \| 2.3.7-p2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.2-p1 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3-p2 \| 2.4.3-p3 \| 2.4.4\| 2.4.4-p1 \| 2.4.4-p1 \| 2.4.4-p1 \| 2.4-p2 \| 2.4.4-p3 \| 2.4.4-p4 \| 2.4.4-p5 \| 2.4.4-p6 \| 2.4.4-p7 \| 2.4.4-p9 \| 2.4.4-p9 \| 2.4.4-p10 \| 2.4.4-p11 \| 2.4.4-p12 \| 2.4.4-p13 \| 2.4.4-p14 \| 2.4.4-p15 \| 2.4.4-p16 \| 2.4.4-p17 \| 2.4.5 \| 2.4.5-p1 \| 2.4.5-p2 \| 2.4.5-p4 \| 2.4.5-p5 \| 2.4.5-p6 \| 2.4.5-p7 \| 2.4.5-p8 \| 2.4.5-p9 \| 2.4.5-p10 \| 2.4.5-p11 2.4.5-p12 \| 2.4.5-p13 \| 2.4.5-p14 \| 2.4.5-p15 \| 2.4.5-p16 \| 2.4.6 \| 2.4.6-p1 \| 2.4.6-p2 \| 2.4.6-p4 \| 2.4.6-p5 \| 2.4.6-p6 \| 2.4.6-p7 \| 2.4.6-p8 2.4.6-p9 \| 2.4.6-p10 \| 2.4.6-p11 \| 2.4.6-p12 \| 2.4.6-p13 \| 2.4.6-p14 \| 2.4.7-beta1 \| 2.4.7-beta2 \| 2.4.7\| 2.4.7-p1 \| 2.4.7-p2 \| 2.4.7-p3 \| 2.4-p3 \| 2.4-4 2.4.7-p5 \| 2.4.7-p6 \| 2.4.7-p7 \| 2.4.7-p8 \| 2.4.7-p9 \| 2.4.8-beta2 \| 2.4.8-beta2 \| 2.4.8-p1 \| 2.4.8-p2 \| 2.4.8-p4 \| 2.4.9-alpha1 \| 2.4.9-alpha1 \| 2.4.9-alpha2 \| 2.4.9-alpha3 \| 2.4.9-beta1
 
 - 値を受け入れる
 
