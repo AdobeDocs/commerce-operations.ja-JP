@@ -60,4 +60,4 @@ ht-degree: 5%
 - パッケージ {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [&#x200B; 運用ガイドに戻る &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [&#x200B; 運用ガイドに戻る &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)

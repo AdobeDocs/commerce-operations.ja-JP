@@ -3487,7 +3487,7 @@ _ACP2E-4226_
 
 #### スケジュール更新プレビューで web サイト間を移動できない
 
-この修正前は、カスタムドメインを持つストアのコンテンツをプレビューしようとすると、スケジュールされた更新のプレビューが壊れてしまっていました。 この修正後、カスタムストアドメインをそのままプレビューし、プレビュー iframe 内で移動できます。 この修正プログラムは、製品、カテゴリ、CMSページ、CMSブロックを対象とし、`{{store url}}`Adobe Commerce Variables and Markup Tags[&#x200B; に記載されている &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags) のマークアップタグを使用したナビゲーションリンクをサポートします。
+この修正前は、カスタムドメインを持つストアのコンテンツをプレビューしようとすると、スケジュールされた更新のプレビューが壊れてしまっていました。 この修正後、カスタムストアドメインをそのままプレビューし、プレビュー iframe 内で移動できます。 この修正プログラムは、製品、カテゴリ、CMSページ、CMSブロックを対象とし、`{{store url}}`Adobe Commerce Variables and Markup Tags[&#x200B; に記載されている &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/variables/markup-tags) のマークアップタグを使用したナビゲーションリンクをサポートします。
 
 _ACP2E-4308 - [GitHub コードの投稿 &#x200B;](https://github.com/magento/magento2/commit/0a3b7032)_
 
