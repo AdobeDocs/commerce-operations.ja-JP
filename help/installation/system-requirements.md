@@ -48,7 +48,7 @@ opensearch:
     disk: 1024
 ```
 
-クラウドインフラストラクチャー上の [2&rbrace;Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) ガイドの &lbrace; サービスの設定 *を参照してください。*
+クラウドインフラストラクチャー上の [2&rbrace;Commerce](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) ガイドの &lbrace; サービスの設定 *を参照してください。*
 
 >[!TAB Commerce オンプレミス ]
 
@@ -60,7 +60,7 @@ opensearch:
 
 PHP には `memory_limit` 設定など特定の設定があり、Adobe Commerceを使用する際の一般的な問題を回避するのに役立ちます。 [&#x200B; 必要な PHP 設定 &#x200B;](prerequisites/php-settings.md) を参照してください。
 
-クラウド設定のガイダンスについては、[Cloud Infrastructure でのCommerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) ガイドの *PHP 設定* を参照してください。
+クラウド設定のガイダンスについては、[Cloud Infrastructure でのCommerce](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/php-settings) ガイドの *PHP 設定* を参照してください。
 
 ### PHP OPcache
 
@@ -87,7 +87,7 @@ PHPUnit v9 （コマンドラインツールとして）。
 
 >[!TIP]
 >
->クラウドインフラストラクチャーでの PHP 拡張機能については、[&#x200B; クラウドインフラストラクチャー上のCommerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) ガイドの _PHP 拡張機能を有効にする_ を参照してください。
+>クラウドインフラストラクチャーでの PHP 拡張機能については、[&#x200B; クラウドインフラストラクチャー上のCommerce](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) ガイドの _PHP 拡張機能を有効にする_ を参照してください。
 
 >[!BEGINTABS]
 
@@ -126,11 +126,11 @@ PHPUnit v9 （コマンドラインツールとして）。
 
 ### メールサーバー
 
-メール転送エージェント（MTA）または SMTP サーバー。 クラウドインフラストラクチャー上のCommerceでは、[SendGrid メールサービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/sendgrid) を使用します。
+メール転送エージェント（MTA）または SMTP サーバー。 クラウドインフラストラクチャー上のCommerceでは、[SendGrid メールサービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/project/sendgrid) を使用します。
 
 ### メモリ
 
-Commerce Marketplaceやその他のソースから取得したアプリケーションや拡張機能をアップグレードするには、最大 2 GB の RAM が必要になる場合があります。 RAM が 2 GB 未満のシステムを使用している場合は、[&#x200B; スワップファイル &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade) を作成します。 そうしないと、アップグレードが失敗する可能性があります。
+Commerce Marketplaceやその他のソースから取得したアプリケーションや拡張機能をアップグレードするには、最大 2 GB の RAM が必要になる場合があります。 RAM が 2 GB 未満のシステムを使用している場合は、[&#x200B; スワップファイル &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade) を作成します。 そうしないと、アップグレードが失敗する可能性があります。
 
 ### オペレーティングシステム （Linux x86 ～ 64）
 
@@ -156,17 +156,17 @@ Adobe Commerceには、一部の操作で次のシステムツールが必要で
 - 自己署名 SSL 証明書はサポートされていません。
 - Transport Layer Security （TLS）要件 – PayPal と `repo.magento.com` の両方で TLS 1.2 以降が必要です。
 
-クラウドインフラストラクチャー上のCommerceについては、[&#x200B; クラウドインフラストラクチャー上のCommerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration) ガイドの *Fastly 設定* を参照してください。
+クラウドインフラストラクチャー上のCommerceについては、[&#x200B; クラウドインフラストラクチャー上のCommerce](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration) ガイドの *Fastly 設定* を参照してください。
 
 ### Xdebug
 
 Adobe Commerceの場合は、[php_xdebug 2.5.x](https://xdebug.org/download) 以降を使用します（開発環境のみ。パフォーマンスに悪影響を与える可能性があります）。
 
-Cloud 上のAdobe Commerceについては、[Cloud Infrastructure 上のCommerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/debug) ガイドの *Xdebug の設定* を参照してください。
+Cloud 上のAdobe Commerceについては、[Cloud Infrastructure 上のCommerce](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/test/debug) ガイドの *Xdebug の設定* を参照してください。
 
 >[!NOTE]
 >
->`xdebug` には既知の問題があり、Adobe Commerceのインストールや、インストール後のストアフロントまたは管理者へのアクセスに影響を与える可能性があります。 [3&rbrace;Commerce サポートナレッジベース `xdebug` の &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) インストールに影響を与える既知の問題 _を参照してください。_
+>`xdebug` には既知の問題があり、Adobe Commerceのインストールや、インストール後のストアフロントまたは管理者へのアクセスに影響を与える可能性があります。 [3&rbrace;Commerce サポートナレッジベース `xdebug` の &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) インストールに影響を与える既知の問題 _を参照してください。_
 
 
 <!-- Last updated from includes: 2026-03-10 20:36:29 -->

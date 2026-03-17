@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >サポートされる PHP のバージョンは、Adobe Commerceのリリースによって異なります。 インストールしているリリースでサポートされている正確な PHP バージョンについては、[&#x200B; システム要件 &#x200B;](../system-requirements.md) を参照してください。
 
-クラウド設定のガイダンスについては、[Cloud Infrastructure でのCommerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) ガイドの _PHP 設定_ を参照してください。
+クラウド設定のガイダンスについては、[Cloud Infrastructure でのCommerce](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/php-settings) ガイドの _PHP 設定_ を参照してください。
 
 ## PHP プロセスコントロール
 
@@ -206,9 +206,9 @@ PHP オプションを設定するには、次の手順に従います。
 PHP の問題のトラブルシューティングについては、以下のAdobe Commerce サポートの記事を参照してください。
 
 - [&#x200B; ブラウザーでAdobe Commerceにアクセスすると、PHP バージョンエラーまたは 404 エラーが発生する &#x200B;](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [PHP 設定エラー &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
-- [PHP mcrypt 拡張モジュールが正しくインストールされていません &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly)
-- [PHP バージョン準備チェックの問題 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
-- [&#x200B; 一般的な PHP の致命的なエラーと解決策 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
+- [PHP 設定エラー &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
+- [PHP mcrypt 拡張モジュールが正しくインストールされていません &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly)
+- [PHP バージョン準備チェックの問題 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- [&#x200B; 一般的な PHP の致命的なエラーと解決策 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
 <!-- Last updated from includes: 2025-04-04 22:27:22 -->
