@@ -9,7 +9,7 @@ ht-degree: 0%
 
 このリリースには、次のホットフィックスが含まれています。
 
-* [!UICONTROL **PageBuilder**] エディターでGoogle マップが正しくレンダリングされないJavaScript エラーを解決するためのホットフィックスです。 詳しくは、「[すべてのAdobe Commerce バージョンにおけるGoogle マップのアクセス損失に関する修正パッチ ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions) ナレッジベース記事」を参照してください。
+* [!UICONTROL **PageBuilder**] エディターでGoogle マップが正しくレンダリングされないJavaScript エラーを解決するためのホットフィックスです。 詳しくは、「[すべてのAdobe Commerce バージョンにおけるGoogle マップのアクセス損失に関する修正パッチ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions) ナレッジベース記事」を参照してください。
 
 <!--
 ACP2E-3156
@@ -18,7 +18,7 @@ ACP2E-3158
 ACP2E-3159
 -->
 
-* CVE-2024-34102に関連するJSON web トークン（JWT）検証の問題を解決するためのホットフィックス。 詳しくは、Adobe Commerce-APSB24-40[ ナレッジベース記事で利用可能な](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102) セキュリティアップデートを参照してください。
+* CVE-2024-34102に関連するJSON web トークン（JWT）検証の問題を解決するためのホットフィックス。 詳しくは、Adobe Commerce-APSB24-40[&#x200B; ナレッジベース記事で利用可能な](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102) セキュリティアップデートを参照してください。
 
 <!--
 AC-12486

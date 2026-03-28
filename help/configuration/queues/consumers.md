@@ -16,15 +16,15 @@ ht-degree: 0%
 | 消費者と説明 | Adobe Commerce | Adobe CommerceとB2Bの統合 | Magento Open Source |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|-------------------------|---------------------|
 | `async.operations.all` | + | + | + |
-| 品目のインポートまたはエクスポート、大規模な価格変更、倉庫への製品の割り当てなど、[一括操作](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)の各タスクに対するメッセージを作成します。 管理者システム構成設定で&#x200B;[**[!UICONTROL Admin bulk operations]**](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory#admin-bulk-operations) オプションが&#x200B;**[!UICONTROL Run asynchronously]**に設定されている場合は必須です。 |                |                         |                     |
+| 品目のインポートまたはエクスポート、大規模な価格変更、倉庫への製品の割り当てなど、[一括操作](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)の各タスクに対するメッセージを作成します。 管理者システム構成設定で&#x200B;[**[!UICONTROL Admin bulk operations]**](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory#admin-bulk-operations) オプションが&#x200B;**[!UICONTROL Run asynchronously]**&#x200B;に設定されている場合は必須です。 |                |                         |                     |
 | `codegeneratorProcessor` | + | + | + |
-| バックグラウンドでクーポンを非同期生成します。 [ バッチクーポン生成](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html#method-2%3A-generate-a-batch-of-coupons)機能の使用に必要です。 |                |                         |                     |
+| バックグラウンドでクーポンを非同期生成します。 [&#x200B; バッチクーポン生成](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html#method-2%3A-generate-a-batch-of-coupons)機能の使用に必要です。 |                |                         |                     |
 | `commerce.eventing.event.publish` | + | + |                     |
 | Adobe Commerce[の](https://developer.adobe.com/commerce/events/get-started/)Adobe I/O Eventsで優先度として登録されているイベントを確認します。 | | | |
 | `exportProcessor` | + | + | + |
 | 大規模なデータセット（例：200,000個の製品）の[書き出し](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html)中に接続タイムアウトを防止します。 |                |                         |                     |
 | `inventoryQtyCounter` | + | + |                     |
-| 注文または商品が削除された後に、在庫指数を非同期で修正します。 管理者設定で&#x200B;[**[!UICONTROL Use deferred stock update]**](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory#product-stock-options) オプションが有効になっている場合は必須です。 [ パフォーマンスのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#deferred-stock-update)を参照してください。 |                |                         |                     |
+| 注文または商品が削除された後に、在庫指数を非同期で修正します。 管理者設定で&#x200B;[**[!UICONTROL Use deferred stock update]**](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory#product-stock-options) オプションが有効になっている場合は必須です。 [&#x200B; パフォーマンスのベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#deferred-stock-update)を参照してください。 |                |                         |                     |
 | `inventory.source.items.cleanup` | + | + | + |
 | 製品が削除されると、製品SKUによってソース項目が非同期削除されます。 管理者システム構成設定で&#x200B;[**[!UICONTROL Synchronize with Catalog]**](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory) ストックオプションが有効になっている場合に必要です。 |                |                         |                     |
 | `inventory.mass.update` | + | + | + |
@@ -40,7 +40,7 @@ ht-degree: 0%
 | `inventory.indexer.stock` | + | + | + |
 | 在庫の非同期インデックス作成。 管理者システム構成設定で&#x200B;[**[!UICONTROL Stock/Source reindex strategy]**](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory#inventory-indexer-settings)が「[!UICONTROL asynchronous]」に設定されている場合は必須です。 |                |                         |                     |
 | `matchCustomerSegmentProcessor` | + | + |                     |
-| 一時データベーステーブルを作成し、各[顧客セグメント ](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)をその中に移動し、セグメント IDに一致するすべてのセグメントを削除し、セグメント IDを指標として使用して顧客セグメントにコピーします。 これらはすべてトランザクション内で実行されるため、何かが失敗した場合は、トランザクションがこの実行前の状態にロールバックされます。 トランザクションの後、消費者は一時テーブルをドロップします。 |                |                         |                     |
+| 一時データベーステーブルを作成し、各[顧客セグメント &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)をその中に移動し、セグメント IDに一致するすべてのセグメントを削除し、セグメント IDを指標として使用して顧客セグメントにコピーします。 これらはすべてトランザクション内で実行されるため、何かが失敗した場合は、トランザクションがこの実行前の状態にロールバックされます。 トランザクションの後、消費者は一時テーブルをドロップします。 |                |                         |                     |
 | `media.content.synchronization` | + | + | + |
 | 商品、カテゴリ、CMS ブロック、CMS ページに割り当てられたメディアへのリンクが、アセットに正しく割り当てられます。 使用されなくなった古いアセットを削除します。 |                |                         |                     |
 | `media.gallery.renditions.update` | + | + | + |
@@ -48,11 +48,11 @@ ht-degree: 0%
 | `media.gallery.synchronization` | + | + | + |
 | 画像ファイルを`media_gallery_asset` データベース テーブルに読み込みます。 |                |                         |                     |
 | `media.storage.catalog.image.resize` | + | + | + |
-| 非同期[ サイズ変更](https://developer.adobe.com/commerce/frontend-core/guide/themes/configure/#resize-catalog-images) カタログ画像。 |                |                         |                     |
+| 非同期[&#x200B; サイズ変更](https://developer.adobe.com/commerce/frontend-core/guide/themes/configure/#resize-catalog-images) カタログ画像。 |                |                         |                     |
 | `negotiableQuotePriceUpdate` |                | + |                     |
 | 交渉可能な見積の価格を更新します。 管理者システム構成設定で&#x200B;[**[!UICONTROL Quotes]**](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/quotes/quotes) オプションが有効になっている場合に必要です。 |                |                         |                     |
 | `placeOrderProcessor` | + | + |                     |
-| 非同期で[注文を処理](https://developer.adobe.com/commerce/php/module-reference/module-async-order/)します。これにより、注文を受信としてマークし、メッセージキューに配置し、先入れ先出し方式で処理します。 顧客が成功メッセージを表示する前に、バックエンドのプロセスが完了するのを待つ必要がないため、処理可能な注文数を改善するための[ ベストプラクティス ](../../implementation-playbook/best-practices/maintenance/order-processing-configuration.md)を検討しました。 |                |                         |                     |
+| 非同期で[注文を処理](https://developer.adobe.com/commerce/php/module-reference/module-async-order/)します。これにより、注文を受信としてマークし、メッセージキューに配置し、先入れ先出し方式で処理します。 顧客が成功メッセージを表示する前に、バックエンドのプロセスが完了するのを待つ必要がないため、処理可能な注文数を改善するための[&#x200B; ベストプラクティス &#x200B;](../../implementation-playbook/best-practices/maintenance/order-processing-configuration.md)を検討しました。 |                |                         |                     |
 | `product_action_attribute.update` | + | + | + |
 | 管理者を使用した後、データベース内の製品属性に対する変更を非同期で[更新を行います](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update.html)。 |                |                         |                     |
 | `product_action_attribute.website.update` | + | + | + |
@@ -64,7 +64,7 @@ ht-degree: 0%
 | `purchaseorder.transactional.email` |                | + |                     |
 | 発注書の電子メールを送信します。 管理者システム構成設定で&#x200B;[**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) オプションが有効になっている場合に必要です。 |                |                         |                     |
 | `purchaseorder.validation` |                | + |                     |
-| 関連する[承認ルール ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/purchase-orders/account-dashboard-approval-rules)に対して発注書を検証します。 管理者システム構成設定で&#x200B;[**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) オプションが有効になっている場合に必要です。 |                |                         |                     |
+| 関連する[承認ルール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/purchase-orders/account-dashboard-approval-rules)に対して発注書を検証します。 管理者システム構成設定で&#x200B;[**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) オプションが有効になっている場合に必要です。 |                |                         |                     |
 | `saveConfigProcessor` | + |                         | + |
 | 保存ジョブをメッセージキューに配置することで、ストア設定の変更を非同期で保存します。これにより、多数のストアレベル設定を含むデプロイメントのパフォーマンスを向上できます。 [`AsyncConfig`](../../performance/configuration.md#asynchronous-configuration-save) モジュールを使用する必要があります。 |                |                         |                     |
 | `sales.rule.update.coupon.usage` | + | + | + |

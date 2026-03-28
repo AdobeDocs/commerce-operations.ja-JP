@@ -38,7 +38,7 @@ Template instruction: Add details for the product and versions where the best pr
 
 <!-- Example 1: -->
 
-[ サポートされているすべてのバージョン ](../../release/versions.md) /:
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス

@@ -61,7 +61,7 @@ _AC-15473 - [GitHub issue](https://github.com/magento/magento2/issues/39943) - [
 
 _AC-6419 - [GitHub issue](https://github.com/magento/magento2/issues/35934) - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### `/V1/order/{orderId}/ship` API エンドポイントの内部サーバーエラー
+#### `/V1/order/&lbrace;orderId&rbrace;/ship` API エンドポイントの内部サーバーエラー
 
 システムは、`/V1/order/{orderId}/ship` API エンドポイントの内部サーバーエラーを修正し、リクエストの形式が正しくないときに400 エラーを返すようになりました。
 
@@ -2351,7 +2351,7 @@ _AC-8949 - [GitHub コードの貢献度](https://github.com/magento/magento2/co
 
 #### 注文プレースメントのGraphQL応答に例外メッセージが含まれていない
 
-別の形式でエラーを返していた以前の変更を元に戻しました。 現在では、GraphQL スキーマを壊すことなく、一貫した方法で潜在的なエラーが返されます。 これは既知のBICとして追加され、PMによって次のように承認されます：https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
+別の形式でエラーを返していた以前の変更を元に戻しました。 現在では、GraphQL スキーマを壊すことなく、一貫した方法で潜在的なエラーが返されます。 これは既知のBICとして追加され、PMによって次のように承認されます：https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
 
 _ACP2E-3399 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/9608ca21)_
 
