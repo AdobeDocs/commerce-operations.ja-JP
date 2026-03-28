@@ -33,7 +33,7 @@ Adobe Commerceを実行するために必要なことを理解することが重
 
 >[!NOTE]
 >
->Adobe Commerce on cloud infrastructure Pro プロジェクトの場合、ステージング環境と実稼動環境でサービスをインストールまたは更新するには、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) チケットを作成する必要があります。 必要なサービス変更を示し、更新した`.magento.app.yaml`および`services.yaml` ファイルとPHP バージョンをチケットに含めます。 クラウドインフラチームがプロジェクトを更新するのに最大48時間かかります。 [&#x200B; サポートされているソフトウェアとサービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services)を参照してください。
+>Adobe Commerce on cloud infrastructure Pro プロジェクトの場合、ステージング環境と実稼動環境でサービスをインストールまたは更新するには、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) チケットを作成する必要があります。 必要なサービス変更を示し、更新した`.magento.app.yaml`および`services.yaml` ファイルとPHP バージョンをチケットに含めます。 クラウドインフラチームがプロジェクトを更新するのに最大48時間かかります。 [&#x200B; サポートされているソフトウェアとサービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services)を参照してください。
 
 ## サポートされている検索エンジンがインストールされていることを確認します
 

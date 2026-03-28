@@ -797,7 +797,7 @@ Adobe Commerceのクラウドインフラストラクチャソリューション
 >
 >販売者は、最高レベルの安定性、機能、サポート資格を保証するために、最新バージョンのライブサーチ、商品レコメンデーション、決済サービスを利用する必要があります。
 >Adobeは古いバージョンをサポートしておらず、アップグレードすると、最新の機能強化とバグ修正の恩恵を受けることができます。
->サポートされているバージョンについて詳しくは、[Commerce サービスの製品可用性マトリックス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services)を参照してください。
+>サポートされているバージョンについて詳しくは、[Commerce サービスの製品可用性マトリックス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability#commerce-services)を参照してください。
 
 #### 商品レコメンデーション
 

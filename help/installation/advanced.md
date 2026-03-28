@@ -119,7 +119,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 インストール中またはインストール後に管理者ユーザーを作成できます。 インストール中にユーザーを作成する場合は、すべての管理者資格情報変数が必要です。 [&#x200B; サンプル localhost インストール &#x200B;](#sample-localhost-installations)を参照してください。
 
-次の表に、使用可能なインストールパラメーターの多くはありますが、一部ではありません。 完全なリストについては、[&#x200B; コマンドラインツールのリファレンス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises)を参照してください。
+次の表に、使用可能なインストールパラメーターの多くはありますが、一部ではありません。 完全なリストについては、[&#x200B; コマンドラインツールのリファレンス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises)を参照してください。
 
 | 名前 | 値 | 必要ですか？ |
 |--- |--- |--- |

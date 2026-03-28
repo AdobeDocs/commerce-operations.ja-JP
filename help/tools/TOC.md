@@ -47,7 +47,7 @@ ht-degree: 0%
    - [Adobe Commerceの管理されたアラート：CPUの警告アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 品質パッチツール {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]：品質パッチ用のセルフサービスツール](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: パッチを検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+   - [[!DNL Quality Patches Tool]: パッチを検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}
    - [使用状況](quality-patches-tool/usage.md)
    - [リリースノート](quality-patches-tool/release-notes.md)
    - 品質パッチツールで使用可能なパッチ {#patches-available-in-qpt}
@@ -1018,6 +1018,6 @@ ht-degree: 0%
       - [手作業による移行が必要なデータ](data-migration-tool/migrate-data/manual.md)
       - [データ移行後の手順](data-migration-tool/migrate-data/post-migration.md)
    - リソース {#resources}
-      - [&#x200B; トラブルシューティング &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
+      - [&#x200B; トラブルシューティング &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=ja)
       - [変更履歴](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [運用ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
