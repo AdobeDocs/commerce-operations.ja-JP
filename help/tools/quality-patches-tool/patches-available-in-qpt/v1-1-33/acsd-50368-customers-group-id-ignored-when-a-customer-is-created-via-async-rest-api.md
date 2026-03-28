@@ -1,55 +1,55 @@
 ---
-title: ACSD-50368：非同期 REST API または非同期バルク REST API を使用して顧客が作成された場合、顧客 group_id は無視されます
-description: ACSD-50368 パッチを適用すると、非同期 REST API または非同期バルク REST API を介してカスタマーが作成されたときにカスタマー group_id が無視されるAdobe Commerceの問題が修正されます。
+title: ACSD-50368：非同期REST APIまたは非同期Bulk REST APIを使用して顧客を作成すると、顧客group_idが無視される
+description: Async REST APIまたはAsync Bulk REST APIを使用して顧客を作成する際にcustomers group_idが無視されるAdobe Commerceの問題を修正するには、ACSD-50368 パッチを適用します。
 feature: REST
 role: Admin
 exl-id: 1ca78717-2144-4410-a398-764864ee182f
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
-# ACSD-50368：非同期 REST API または非同期バルク REST API を使用して顧客が作成された場合、顧客 group_id は無視されます
+# ACSD-50368：非同期REST APIまたは非同期Bulk REST APIを使用して顧客を作成すると、顧客group_idが無視される
 
 >[!NOTE]
 >
->この問題は、2.4.4 より上のバージョンの必須セキュリティパッチ [APSB25-08](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08) によって対処されるので、ACSD-50368 パッチは部分的に非推奨になっています。
+>ACSD-50368 パッチは部分的に非推奨です。この問題は、2.4.4より前のバージョンの必須セキュリティパッチ [APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08)で解決されています。
 
-ACSD-50368 パッチでは、非同期 REST API または非同期バルク REST API を使用して顧客を作成する際に顧客の group_id が無視される問題を修正しています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.33 がインストールされている場合に使用できます。 パッチ ID は ACSD-50368 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-50368 パッチは、Async REST APIまたはAsync Bulk REST APIを使用して顧客を作成する際にcustomers group_idが無視される問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.33がインストールされている場合に利用できます。 パッチ IDはACSD-50368です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.3 - 2.4.3-p3
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja>) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-顧客 group_id は、非同期 REST API または非同期バルク REST API を使用して顧客が作成される場合、無視されます。
+顧客group_idは、Async REST APIまたはAsync Bulk REST APIを使用して顧客を作成すると無視されます。
 
-<u> 前提条件 </u>:
+<u>前提条件</u>:
 
-処理キュー用に RabbitMQ を設定する：
+処理キュー用にRabbitMQを設定します。
 
 ```
 bin/magento setup:config:set --amqp-host=services --amqp-port=5672 --amqp-user=guest --amqp-password=guest 
 bin/magento setup:upgrade --keep-generated
 ```
 
-<u> 再現手順 </u>
+<u>複製する手順</u>
 
-1. 非同期 Rest API リクエストを使用して顧客を作成します。
+1. Async Rest API リクエストを使用して顧客を作成します。
 
    ```
    curl --location 'https://site.test/rest/default/async/V1/customers' \
@@ -82,7 +82,7 @@ bin/magento setup:upgrade --keep-generated
    }
    ```
 
-1. この非同期要求のステータスを確認します。
+1. この非同期リクエストのステータスを確認します。
 
    ```
    curl --location 'https://site.test/rest/default/V1/bulk/b101ddcb-b7fd-4208-a2a6-2e84c9e61bcd/detailed-status' \
@@ -90,13 +90,13 @@ bin/magento setup:upgrade --keep-generated
    --header 'Cookie: PHPSESSID=844fltmqq1g15qe4ju3l00tiai
    ```
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-新しい顧客の group_id は正しく 2 に設定されています。
+新しい顧客に対してgroup_idが2に正しく設定されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-新しい顧客の group_id はデフォルトで 1 に設定されます。
+group_idは、新規顧客のデフォルト値1に設定されます。
 
 ```
 {
@@ -121,19 +121,19 @@ bin/magento setup:upgrade --keep-generated
 }
 ```
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool]  ガイドの](/help/tools/quality-patches-tool/usage.md)>使用状況[!DNL Quality Patches Tool]。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [ [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) ガイドの[!UICONTROL Quality Patches Tool]を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) ガイドの「[!DNL Quality Patches Tool] パッチを検索する」を参照してください。

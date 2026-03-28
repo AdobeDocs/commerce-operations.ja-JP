@@ -1,68 +1,68 @@
 ---
-title: ACSD-51645：拡張機能Magento_OfflineShipping が無効な場合の、新しい「買い物かご」価格ルールの保存
-description: Magento_OfflineShipping 拡張機能が無効になっている場合、新しい「買い物かご価格」ルールを保存するとエラーが発生するAdobe Commerceの問題を修正するために ACSD-51645 パッチを適用してください。
+title: ACSD-51645：拡張機能「Magento_OfflineShipping」が無効になっている場合の新しいカート価格ルールの保存
+description: 拡張機能のMagento_OfflineShippingが無効になっている場合に新しい買い物かごの価格規則を保存する際にエラーが発生するAdobe Commerceの問題を修正するには、ACSD-51645 パッチを適用します。
 exl-id: ce747ae4-6d2f-41c0-ba75-7da72be359c7
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
-# ACSD-51645：拡張機能Magento_OfflineShipping が無効な場合の、新しい「買い物かご」価格ルールの保存
+# ACSD-51645：拡張機能「Magento_OfflineShipping」が無効になっている場合の新しいカート価格ルールの保存
 
-ACSD-51645 パッチでは、拡張機能のMagento_OfflineShipping が無効になっている場合に、新しい買い物かご価格ルールを保存するとエラーが発生する問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.33 がインストールされている場合に使用できます。 パッチ ID は ACSD-51645 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-51645 パッチでは、拡張機能のMagento_OfflineShippingが無効になっている場合に、新しい買い物かごの価格規則を保存する際にエラーが発生する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.33がインストールされている場合に利用できます。 パッチ IDはACSD-51645です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6 - 2.4.6-p1
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja>) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-拡張機能 `Magento_OfflineShipping` が無効になっている場合、新しい買い物かご価格ルールを保存するとエラーが発生します。
+拡張機能`Magento_OfflineShipping`が無効になっている場合、新しいカート価格ルールを保存する際にエラーが発生します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
 1. `Magento_OfflineShipping` モジュールを無効にします。
-1. **Admin** にログインします。
-1. **[!UICONTROL Marketing]**/**[!UICONTROL Cart Price Rules]** に移動します。
-1. 新しい **[!UICONTROL Cart Price Rule]** を作成します。
+1. **管理者**&#x200B;にログインします。
+1. **[!UICONTROL Marketing]** > **[!UICONTROL Cart Price Rules]**&#x200B;に移動します。
+1. 新しい&#x200B;**[!UICONTROL Cart Price Rule]**&#x200B;を作成します。
 1. 必須フィールドに入力します。
-1. **[!UICONTROL Cart Price Rule]** を保存します。
+1. **[!UICONTROL Cart Price Rule]**&#x200B;を保存します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-買い物かご価格ルールが正常に保存されました。
+買い物かごの価格ルールが正常に保存されました。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
 次のエラーが発生します。
 `report.ERROR: Warning: Undefined array key "simple_free_shipping" in app/code/Magento/SalesRule/Controller/Adminhtml/Promo/Quote/Save.php on line 67 [] []`
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool]  ガイドの](/help/tools/quality-patches-tool/usage.md)>使用状況[!DNL Quality Patches Tool]。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [ [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) ガイドの[!UICONTROL Quality Patches Tool]を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja>): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) ガイドの「[!DNL Quality Patches Tool] パッチを検索する」を参照してください。

@@ -1,11 +1,11 @@
 ---
-title: ベストプラクティストピックのタイトル
-description: 詳細については、こちらを参照してください。
+title: ベストプラクティスのトピックタイトル
+description: 詳細を見る…
 role: Developer
 feature: Best Practices
 hide: true
 hidefromtoc: true
-source-git-commit: 4360a3436f013c1b2a8b95a876d2037a6987acac
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 2%
@@ -13,14 +13,16 @@ ht-degree: 2%
 ---
 
 
-<!-- Template Instructions: 
+<!-- 
+Template Instructions: 
 
 When you create a new best practices topic from this template, remove the hide metadata tags. These values hide this template from the TOC and search indexing.
 
 Metadata values configured in ExL:
 Available roles: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/role.yml
 
-Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/feature.yml  -->
+Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/feature.yml  
+-->
 
 # タイトル
 
@@ -28,30 +30,32 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 ## 影響を受ける製品とバージョン
 
-<!-- Template comment: When we have the ability to tag content by versions, we might be able to remove this explicit header in favor of using tags for versions and editions.-->
+<!-- 
+Template comment: When we have the ability to tag content by versions, we might be able to remove this explicit header in favor of using tags for versions and editions.
 
-<!--Template instruction: Add details for the product and versions where the best practice info is relevant. Below are two examples, adjust and delete unneeded info per best practice requirements. If info applies specifically to B2B or B2C, include that information -->
+Template instruction: Add details for the product and versions where the best practice info is relevant. Below are two examples, adjust and delete unneeded info per best practice requirements. If info applies specifically to B2B or B2C, include that information
+-->
 
 <!-- Example 1: -->
 
-[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
+[ サポートされているすべてのバージョン ](../../release/versions.md) /:
 
-- クラウドインフラストラクチャー上のAdobe Commerce
-- Adobe Commerceオンプレミス
+- Adobe Commerce on cloud infrastructure
+- Adobe Commerce オンプレミス
 
 <!-- Example 2: -->
 
-Adobe Commerce バージョン 2.3.4 以前および MariaDB バージョン 10.0 以前のクラウドインフラストラクチャー上のAdobe Commerce
+Adobe Commerce バージョン 2.3.4以前およびMariaDB バージョン 10.0以前のAdobe Commerce オンクラウドインフラストラクチャ。
 
-&lt;! – ビジネスタイプ：B2C と B2B – 必要に応じてのみ指定/） – >
-
-## ヘッダー…
-
-読みやすくするために、コンテンツをセクションに分割します。 コンテンツには、例（良い場合と悪い場合）を使用したコールトゥアクションや、該当する場合はドキュメントへのリンクを含める必要があります
+&lt;!— ビジネスの種類：B2CおよびB2B – 必要な場合にのみ指定/） – >
 
 ## ヘッダー…
 
-必要なセクションだけを使用する
+コンテンツをセクションに分けて読みやすくします。 コンテンツには、CTAと例（優れているCTAと劣っているCTA）を含め、該当する場合はドキュメントへのリンクを記載する必要があります
+
+## ヘッダー…
+
+必要な数のセクションのみを使用してください
 
 ## 追加情報
 

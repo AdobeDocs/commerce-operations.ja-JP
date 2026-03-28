@@ -1,96 +1,93 @@
 ---
-title: MDVA-37748:GraphQL クエリは、共有カタログに割り当てられていない商品を返します
-description: MDVA-37748 パッチは、GraphQLのクエリーが共有カタログに割り当てられていない商品を返す問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.5 がインストールされている場合に利用できます。 パッチ ID は MDVA-37748。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+title: MDVA-37748:GraphQL クエリで、共有カタログに割り当てられていない商品が返される
+description: MDVA-37748 パッチは、GraphQL クエリが共有カタログに割り当てられていない商品を返す問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.5がインストールされている場合に利用できます。 パッチ IDはMDVA-37748です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 feature: B2B, GraphQL, Catalog Management, Categories, Products
 role: Admin
 exl-id: 8aa00953-dbf0-4533-9b53-b809bf59ec20
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
 
 ---
 
-# MDVA-37748:GraphQL クエリは、共有カタログに割り当てられていない商品を返します
+# MDVA-37748:GraphQL クエリで、共有カタログに割り当てられていない商品が返される
 
-MDVA-37748 パッチは、GraphQLのクエリーが共有カタログに割り当てられていない商品を返す問題を修正します。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.5 がインストールされている場合に使用できます。 パッチ ID は MDVA-37748。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+MDVA-37748 パッチは、GraphQL クエリが共有カタログに割り当てられていない商品を返す問題を修正します。 このパッチは、[品質パッチツール （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5がインストールされている場合に使用できます。 パッチ IDはMDVA-37748です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 Adobe Commerce（すべてのデプロイメント方法） 2.4.2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-Adobe Commerce（すべてのデプロイメント方法） 2.4.2 ～ 2.4.2-p2
+Adobe Commerce（すべてのデプロイメント方法） 2.4.2 - 2.4.2-p2
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-GraphQL クエリは、共有カタログに割り当てられていない製品を返します。
+GraphQL クエリは、共有カタログに割り当てられていない商品を返します。
 
-<u> 前提条件 </u>:
+<u>前提条件</u>:
 
 B2B モジュールがインストールされている。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 2 つの製品を作成してカテゴリに割り当てます。
-   * 製品 1 - パブリック
-   * 製品 2
+1. 2つの製品を作成し、カテゴリに割り当てます。
+   * 製品1 – 公開
+   * 商品2
 
 1. 「Product 1 - Public」を「Default （General）」共有カタログに割り当てます。
-1. 追加のカスタム共有カタログを作成して、「製品 2」に割り当てます。
-1. 新しい会社を作成して、手順 3 で作成した追加の共有カタログに割り当てます。
-1. Cron 実行/再インデックス作成後、フロントエンドで、ログインしていない場合に「製品 1 - パブリック」が表示されることを検証します。
-1. 手順 4 で作成した会社の管理者としてログインし、「Product 2」のみが表示されることを確認します。
+1. 追加のカスタム共有カタログを作成し、「製品2」に割り当てます。
+1. 新しい会社を作成し、手順3で作成した追加の共有カタログに割り当てます。
+1. cronの実行/再インデックスを作成した後、フロントエンドで、ログインしていない場合は「Product 1 - Public」が表示されることを検証します。
+1. 手順4で作成した会社の管理者としてログインし、「製品2」のみが表示されていることを確認します。
 1. 次のGraphQL クエリを使用して、認証トークンをリクエストします。
 
-   <pre>
-    <code class="language-graphql">
-    mutation &lbrace;
-      generateCustomerToken(
-        email: "company.admin@exapmle.test"
-        password: "password"
-      ) &lbrace;
-        token
-      &rbrace;
-    &rbrace;
-    </code>
-    </pre>
+   ```graphql
+   mutation {
+     generateCustomerToken(
+       email: "company.admin@exapmle.test"
+       password: "password"
+     ) {
+       token
+     }
+   }
+   ```
 
-1. ヘッダー **Authorization Bearer value-of-the-token** を追加し、次のGraphQL クエリを実行します。
+1. ヘッダー&#x200B;**Authorization Bearer value-of-the-token**&#x200B;を追加し、次のGraphQL クエリを実行します。
 
-   <pre>
-    <code class="language-graphql">
-    &lbrace;
+   ```graphql
+    {
       products(
           filter: {},
           pageSize: 100,
           currentPage: 1
           sort: {}
-        ) &lbrace;
+        ) {
           total_count
-          page_info &lbrace;
+          page_info {
             page_size
             current_page
-          &rbrace;
-          aggregations &lbrace;
+          }
+          aggregations {
             attribute_code
             count
             label
-            options &lbrace;
+            options {
               label
               value
               count
-            &rbrace;
-          &rbrace;
-          items &lbrace;
+            }
+          }
+          items {
             name
             sku
             created_at
@@ -100,235 +97,232 @@ B2B モジュールがインストールされている。
             short_description {html}
             url_key
             url_path
-            price_tiers&lbrace;
-              final_price&lbrace;
+            price_tiers{
+              final_price{
                   value
                   currency
-                &rbrace;
-              discount&lbrace;
+                }
+              discount{
                   amount_off
                   percent_off
-                &rbrace;
+                }
               quantity
-            &rbrace;
-            price_range &lbrace;
-             maximum_price &lbrace;
-              regular_price &lbrace;
+            }
+            price_range {
+             maximum_price {
+              regular_price {
                 value
-              &rbrace;
-              final_price &lbrace;
+              }
+              final_price {
                 value
-              &rbrace;
-            &rbrace;
-            minimum_price &lbrace;
-              regular_price &lbrace;
+              }
+            }
+            minimum_price {
+              regular_price {
                 value
-              &rbrace;
-              final_price &lbrace;
+              }
+              final_price {
                value
-              &rbrace;
-            &rbrace;
-          &rbrace;
-          image &lbrace;
+              }
+            }
+          }
+          image {
            url
-          &rbrace;
-          thumbnail &lbrace;
+          }
+          thumbnail {
            url
-          &rbrace;
-          small_image &lbrace;
+          }
+          small_image {
            url
-          &rbrace;
-          media_gallery &lbrace;
+          }
+          media_gallery {
            url
-          &rbrace;
-          ... on ConfigurableProduct &lbrace;
-            configurable_options &lbrace;
+          }
+          ... on ConfigurableProduct {
+            configurable_options {
              id
-
+   
              label
              position
              use_default
              attribute_code
-             values &lbrace;
+             values {
                value_index
                label
-               swatch_data &lbrace;
+               swatch_data {
                  value
-               &rbrace;
-            &rbrace;
+               }
+            }
             product_id
-          &rbrace;
-          variants &lbrace;
-            product &lbrace;
+          }
+          variants {
+            product {
               id
               name
               sku
-              &#x200B;#margin
-              &#x200B;#margin_percentage
-              image &lbrace;
+              #margin
+              #margin_percentage
+              image {
                 url
-              &rbrace;
-              small_image &lbrace;
+              }
+              small_image {
                 url
-              &rbrace;
-              thumbnail &lbrace;
+              }
+              thumbnail {
                 url
-              &rbrace;
-              media_gallery&lbrace;
+              }
+              media_gallery{
                 url
-              &rbrace;
+              }
               attribute_set_id
-              ... on PhysicalProductInterface &lbrace;
+              ... on PhysicalProductInterface {
                 weight
-              &rbrace;
-              price_range &lbrace;
-                minimum_price &lbrace;
-                  regular_price &lbrace;
+              }
+              price_range {
+                minimum_price {
+                  regular_price {
                     value
                     currency
-                  &rbrace;
-                &rbrace;
-              &rbrace;
-            &rbrace;
-            attributes &lbrace;
+                  }
+                }
+              }
+            }
+            attributes {
               label
               code
               value_index
-            &rbrace;
-          &rbrace;
-        &rbrace;
-      &rbrace;
+            }
+          }
+        }
+      }
+   
+    }
+   }
+   ```
 
-    &rbrace;
-&rbrace;
-</code>
-</pre>
+<u>期待される結果</u>:
 
-<u> 期待される結果 </u>:
+GraphQLから返されるカウントと商品は、ログインユーザーに関連付けられた共有カタログに割り当てられた商品のみを考慮します。
 
-GraphQLから返されるカウントと商品は、ログインしたユーザーに関連付けられた共有カタログに割り当てられた商品のみを考慮します。
+<u>実際の結果</u>:
 
-<u> 実際の結果 </u>:
+「Product 2」のみが返されますが、`total_count`には2が表示されます。
 
-「Product 2」のみが返されますが、`total_count` には 2 つが表示されます。
-
-<pre>
-<code class="language-graphql">
-&lbrace;
-  "data": &lbrace;
-    "products": &lbrace;
+```graphql
+{
+  "data": {
+    "products": {
       "total_count": 2,
-      "page_info": &lbrace;
+      "page_info": {
         "page_size": 100,
         "current_page": 1
-      &rbrace;,
-      "aggregations": &lbrack;
-        &lbrace;
+      },
+      "aggregations": [
+        {
           "attribute_code": "price",
           "count": 2,
           "label": "Price",
-          "options": &lbrack;
-            &lbrace;
+          "options": [
+            {
               "label": "0-100",
               "value": "0_100",
               "count": 1
-            &rbrace;,
-            &lbrace;
+            },
+            {
               "label": "100-200",
               "value": "100_200",
               "count": 1
-            &rbrace;
-          &rbrack;
-        &rbrace;,
-        &lbrace;
+            }
+          ]
+        },
+        {
           "attribute_code": "category_id",
           "count": 1,
           "label": "Category",
-          "options": &lbrack;
-            &lbrace;
+          "options": [
+            {
               "label": "Cat 1",
               "value": "3",
               "count": 2
-            &rbrace;
-          &rbrack;
-        &rbrace;
-      &rbrack;,
-      "items": &lbrack;
-        &lbrace;
+            }
+          ]
+        }
+      ],
+      "items": [
+        {
           "name": "Product 2",
           "sku": "Product 2",
           "created_at": "2021-05-12 10:51:44",
           "updated_at": "2021-05-12 11:03:24",
           "stock_status": "IN_STOCK",
-          "description": &lbrace;
+          "description": {
             "html": ""
-          &rbrace;,
-          "short_description": &lbrace;
+          },
+          "short_description": {
             "html": ""
-          &rbrace;,
+          },
           "url_key": "product-2",
           "url_path": null,
-          "price_tiers": &lbrack;
-            &lbrace;
-              "final_price": &lbrace;
+          "price_tiers": [
+            {
+              "final_price": {
                 "value": 90,
                 "currency": "USD"
-              &rbrace;,
-              "discount": &lbrace;
+              },
+              "discount": {
                 "amount_off": 10,
                 "percent_off": 10
-              &rbrace;,
+              },
               "quantity": 1
-            &rbrace;
-          &rbrack;,
-          "price_range": &lbrace;
-            "maximum_price": &lbrace;
-              "regular_price": &lbrace;
+            }
+          ],
+          "price_range": {
+            "maximum_price": {
+              "regular_price": {
                 "value": 100
-              &rbrace;,
-              "final_price": &lbrace;
+              },
+              "final_price": {
                 "value": 90
-              &rbrace;
-            &rbrace;,
-            "minimum_price": &lbrace;
-              "regular_price": &lbrace;
+              }
+            },
+            "minimum_price": {
+              "regular_price": {
                 "value": 100
-              &rbrace;,
-              "final_price": &lbrace;
+              },
+              "final_price": {
                 "value": 90
-              &rbrace;
-            &rbrace;
-          &rbrace;,
-          "image": &lbrace;
+              }
+            }
+          },
+          "image": {
             "url": "../pub/static/version1620816308/frontend/Magento/luma/en_US/Magento_Catalog/images/product/placeholder/image.jpg"
-          &rbrace;,
-          "thumbnail": &lbrace;
+          },
+          "thumbnail": {
             "url": "../pub/static/version1620816308/frontend/Magento/luma/en_US/Magento_Catalog/images/product/placeholder/thumbnail.jpg"
-          &rbrace;,
-          "small_image": &lbrace;
+          },
+          "small_image": {
             "url": "../pub/static/version1620816308/frontend/Magento/luma/en_US/Magento_Catalog/images/product/placeholder/small_image.jpg"
-          &rbrace;,
+          },
           "media_gallery": []
-        &rbrace;
-      &rbrack;
-    &rbrace;
-  &rbrace;
-&rbrace;
-</code>
-</pre>
+        }
+      ]
+    }
+  }
+}
+```
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool]  ガイドの](/help/tools/quality-patches-tool/usage.md)>使用状況[!DNL Quality Patches Tool]。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-品質向上パッチツールの詳細については、次を参照してください。
+品質パッチツールについて詳しくは、以下を参照してください。
 
-* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [品質パッチツール ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPT で使用可能なその他のパッチについては、[QPT で使用可能なパッチ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) の節を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、「QPT[で使用可能な](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチ」セクションを参照してください。

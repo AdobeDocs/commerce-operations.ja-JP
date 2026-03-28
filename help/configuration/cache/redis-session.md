@@ -1,64 +1,64 @@
 ---
-title: セッションストレージに Redis を使用
-description: Adobe Commerceのセッションストレージに Redis を設定する方法を説明します。 コマンドラインのセットアップ、設定オプション、パフォーマンスの最適化手法について説明します。
+title: セッション ストレージにRedisを使用
+description: Adobe Commerceでセッションストレージ用にRedisを設定する方法について説明します。 コマンドラインのセットアップ、設定オプション、パフォーマンスの最適化手法について説明します。
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 1%
 
 ---
 
-# セッションストレージに Redis を使用
+# セッション ストレージにRedisを使用
 
 >[!IMPORTANT]
 >
->続行する前に [Redis をインストール &#x200B;](config-redis.md#install-redis) してください。
+>続行する前に、[Redis](config-redis.md#install-redis)をインストールする必要があります。
 
 
-Commerceには、Redis セッションストレージを設定するためのコマンドラインオプションが追加されました。 以前のリリースでは、`<Commerce install dir>app/etc/env.php` ファイルを編集していました。 コマンドラインで検証を行う場合や、このコマンドラインを使用して設定することをお勧めしますが、`env.php` ファイルは編集できます。
+Commerceには、Redis セッションストレージを設定するためのコマンドラインオプションが用意されています。 以前のリリースでは、`<Commerce install dir>app/etc/env.php` ファイルを編集しました。 コマンドラインは検証を提供し、推奨される設定方法ですが、`env.php` ファイルは引き続き編集できます。
 
-`setup:config:set` コマンドを実行し、Redis 固有のパラメーターを指定します。
+`setup:config:set` コマンドを実行し、Redis固有のパラメーターを指定します。
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
 ```
 
-ここで、
+どこで
 
-`--session-save=redis` は Redis セッションストレージを有効にします。 この機能が既に有効になっている場合は、このパラメーターを省略します。
+`--session-save=redis`はRedis セッション ストレージを有効にします。 この機能が既に有効になっている場合は、このパラメーターを省略します。
 
-セッションストレージを構成するパラメーターと値のペアのリストを `--session-save-redis-<parameter_name>=<parameter_value>` に示します。
+`--session-save-redis-<parameter_name>=<parameter_value>`は、セッション ストレージを構成するパラメーター/値のペアのリストです：
 
 | コマンドラインパラメーター | パラメーター名 | 意味 | デフォルト値 |
 |--- |--- |--- |--- |
-| session-save-redis-host | host | 完全修飾ホスト名、IP アドレス、または UNIX ソケットを使用する場合は絶対パス。 | localhost |
-| session-save-redis-port | ポート | Redis サーバーリッスンポート。 | 6379 |
-| session-save-redis-password | password | Redis サーバーが認証を要求する場合、パスワードを指定します。 | 空 |
-| session-save-redis-timeout | timeout | 接続タイムアウト （秒）。 | 2.5 |
-| session-save-redis-persistent-id | persistent_identifier | 永続接続を有効にする一意の文字列（例：sess-db0）。<br>[phpredis および php-fpm の既知の問題 &#x200B;](https://github.com/phpredis/phpredis/issues/70)。 |
-| session-save-redis-db | データベース | 一意の Redis データベース番号。データ損失から保護することをお勧めします。<br><br>**重要**：複数のタイプのキャッシュに Redis を使用する場合は、データベース番号が異なっている必要があります。 デフォルトのキャッシュ データベース番号を 0、ページ キャッシュ データベース番号を 1、セッション ストレージ データベース番号を 2 に割り当てることをお勧めします。 | 0 |
-| session-save-redis-compression-threshold | compression_threshold | 0 に設定すると、圧縮が無効になります（`suhosin.session.encrypt = On` の場合に推奨）。<br>[64 KB を超える文字列の既知の問題 &#x200B;](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18)。 | 2048 |
-| session-save-redis-compression-lib | compression_library | オプション：gzip、lzf、lz4 または snappy。 | gzip |
-| session-save-redis-log-level | log_level | 最小の詳細から最大の詳細の順にリストされた次のいずれかに設定します：<ul><li>0 （緊急：最も重大なエラーのみ）<li>1 （アラート：直ちにアクションが必要）<li>2 （重大：アプリケーションコンポーネントを使用できない）<li>3 （エラー：実行時エラー。重要ではありませんが監視する必要があります）<li>4 （警告：追加情報、推奨）<li>5 （注意：正常だが重大な状態）<li>6 （情報：情報メッセージ）<li>7 （デバッグ：開発またはテスト用の最も多い情報のみ）</ul> | 1 |
-| session-save-redis-max-concurrency | max_concurrency | 1 つのセッションでロックを待機できるプロセスの最大数。 大規模な実稼動クラスターの場合は、これを PHP プロセス数の 10% 以上に設定します。 | 6 |
-| session-save-redis-break-after-frontend | break_after_frontend | フロントエンド（ストアフロント）セッションのロックを解除しようとする前に待機する秒数。 | 5 |
-| session-save-redis-break-after-adminhtml | break_after_adminhtml | 管理者（管理者） セッションのロックを解除しようとする前の待機秒数。 | 30 |
-| session-save-redis-first-lifetime | first_lifetime | 最初の書き込み時の非ボットのセッションの有効期間（秒単位）。0 を使用すると無効になります。 | 600 |
-| session-save-redis-bot-first-lifetime | bot_first_lifetime | 最初の書き込み時のボットのセッションの有効期間（秒単位）。0 を使用すると無効になります。 | 60 |
-| session-save-redis-bot-lifetime | bot_lifetime | 以降の書き込み時のボットのセッションの有効期間（秒単位）。0 を使用すると無効になります。 | 7200 |
+| session-save-redis-host | ホスト | UNIX ソケットを使用している場合は、完全修飾ホスト名、IP アドレス、または絶対パス。 | localhost |
+| session-save-redis-port | ポート | Redis サーバーのリッスン ポート。 | 6379 |
+| session-save-redis-password | パスワード | Redis サーバーで認証が必要な場合にパスワードを指定します。 | empty |
+| session-save-redis-timeout | タイムアウト | 接続タイムアウト（秒単位）。 | 2.5 |
+| session-save-redis-persistent-id | persistent_identifier | 永続的な接続を有効にする一意の文字列（sess-db0など）。<br>[phpredisおよびphp-fpm](https://github.com/phpredis/phpredis/issues/70)に関する既知の問題。 |  |
+| session-save-redis-db | データベース | 一意のRedis データベース番号。データ損失から保護するために推奨されます。<br><br>**重要**：複数のタイプのキャッシュにRedisを使用する場合、データベース番号は異なる必要があります。 デフォルトのキャッシングデータベース番号を0に、ページキャッシングデータベース番号を1に、セッションストレージデータベース番号を2に割り当てることをお勧めします。 | 0 |
+| session-save-redis-compression-threshold | compression_threshold | 圧縮を無効にするには0に設定します（`suhosin.session.encrypt = On`の場合に推奨）。<br>[64 KBを超える文字列に関する既知の問題](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18)。 | 2048 |
+| session-save-redis-compression-lib | compression_library | オプション：gzip、lzf、lz4またはsnappy。 | gzip |
+| session-save-redis-log-level | log_level | 次のいずれかに設定し、最小詳細から最大詳細の順にリストします。<ul><li>0 （緊急：最も重大なエラーのみ）<li>1 （アラート：即時のアクションが必要）<li>2 （クリティカル：アプリケーションコンポーネントが使用できません）<li>3 （エラー：実行時エラー。重要ではありませんが、監視する必要があります）<li>4 （警告：追加情報、推奨）<li>5 （注：正常だが重大な状態）<li>6 （情報：情報メッセージ）<li>7 （デバッグ：開発またはテスト用の情報のみ）</ul> | 1 |
+| session-save-redis-max-concurrency | max_concurrency | 1つのセッションでロックを待機できるプロセスの最大数。 大規模な実稼動クラスターの場合は、これをPHP プロセス数の10%以上に設定します。 | 6 |
+| session-save-redis-break-after-frontend | break_after_frontend | フロントエンド（ストアフロント）セッションのロックを解除するまでの待機時間（秒数）。 | 5 |
+| session-save-redis-break-after-adminhtml | break_after_adminhtml | Adminhtml （つまり、Admin）セッションのロックを解除する前に待機する秒数。 | 30 |
+| session-save-redis-first-lifetime | first_lifetime | 最初の書き込み時に非ボットのセッションの有効期間（秒単位）。または0を使用して無効にします。 | 600 |
+| session-save-redis-bot-first-lifetime | bot_first_lifetime | 最初の書き込み時のボットのセッションのライフタイム（秒単位）または0を使用して無効にします。 | 60 |
+| session-save-redis-bot-lifetime | bot_lifetime | 後続の書き込み時のボットのセッションの有効期間（秒単位）、または0を使用して無効にします。 | 7200 |
 | session-save-redis-disable-locking | disable_locking | セッションロックを完全に無効にします。 | 0 （false） |
-| session-save-redis-min-lifetime | min_lifetime | セッションの最短有効期間（秒単位）。 | 60 |
-| session-save-redis-max-lifetime | max_lifetime | セッションの最長有効期間（秒単位）。 | 2592000 （720 時間） |
-| session-save-redis-sentinel-master | sentinel_master | Redis Sentinel のマスター名 | 空 |
-| session-save-redis-sentinel-servers | sentinel_server | Redis Sentinel サーバーのリスト、コンマ区切り | 空 |
-| session-save-redis-sentinel-verify-master | sentinel_verify_master | Redis Sentinel マスターステータスフラグを確認します。 | 0 （false） |
-| session-save-redis-sentinel-connect-retries | sentinel_connect_retries | 標識の接続再試行 | 5 |
+| session-save-redis-min-lifetime | min_lifetime | セッションの最小有効期間（秒単位）。 | 60 |
+| session-save-redis-max-lifetime | max_lifetime | セッションの最大有効期間（秒）。 | 2592000 （720時間） |
+| session-save-redis-sentinel-master | sentinel_master | Redis Sentinel マスター名 | empty |
+| session-save-redis-sentinel-servers | sentinel_servers | Redis Sentinel サーバーのリスト （コンマ区切り） | empty |
+| session-save-redis-sentinel-verify-master | sentinel_verify_master | Redis Sentinel マスターステータス フラグの検証 | 0 （false） |
+| session-save-redis-sentinel-connect-retries | sentinel_connect_retries | センチネルの接続の再試行 | 5 |
 
 ## 例
 
-次の例では、Redis をセッション データ ストアとして設定し、ホストを `127.0.0.1` に設定し、ログ レベルを 4 に設定し、データベース番号を 2 に設定します。 その他のパラメーターはすべてデフォルト値に設定されます。
+次の例では、Redisをセッションデータストアとして設定し、ホストを`127.0.0.1`に設定し、ログレベルを4に設定し、データベース番号を2に設定します。 その他のパラメーターはすべてデフォルト値に設定されます。
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
@@ -66,7 +66,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.
 
 ### 結果
 
-Commerceは、次のような行を `<magento_root>app/etc/env.php` に追加します。
+Commerceは、次のような行を`<magento_root>app/etc/env.php`に追加します。
 
 ```php
 'session' => [
@@ -96,13 +96,13 @@ Commerceは、次のような行を `<magento_root>app/etc/env.php` に追加し
 
 >[!INFO]
 >
->セッションレコードの TTL は、Cookie の有効期間の値を使用します。この値は、管理者で設定します。 Cookie の有効期間が 0 （デフォルトは 3600）に設定されている場合、Redis セッションは min_lifetime で指定された秒数（デフォルトは 60）で期限切れになります。 この不一致は、Redis とセッション Cookie がライフタイム値 0 を解釈する方法の違いによるものです。 この動作が望ましくない場合は、min_lifetime の値を増やします。
+>セッションレコードのTTLは、管理者で設定されているCookie Lifetimeの値を使用します。 Cookieの有効期間が0に設定されている場合（デフォルトは3600）、Redis セッションはmin_lifetimeで指定された秒数（デフォルトは60）で期限切れになります。 この不一致は、Redisとセッション Cookieが生涯値0をどのように解釈するかによる違いによるものです。 その動作が望ましくない場合は、min_lifetimeの値を増やします。
 
-## Redis 接続の確認
+## Redis接続の確認
 
-Redis とCommerceが連携していることを確認するには、Redis を実行しているサーバにログインし、ターミナルを開いて Redis monitor コマンドまたは ping コマンドを使用します。
+RedisとCommerceが連携していることを確認するには、Redisを実行しているサーバーにログインしてターミナルを開き、Redis monitor コマンドまたはping コマンドを使用します。
 
-### Redis モニターコマンド
+### Redis monitor コマンド
 
 ```bash
 redis-cli monitor
@@ -125,10 +125,10 @@ redis-cli monitor
 redis-cli ping
 ```
 
-応答は `PONG` のようになります。
+`PONG`は応答である必要があります。
 
-両方のコマンドが成功すると、Redis が正しく設定されます。
+両方のコマンドが成功した場合、Redisは適切に設定されます。
 
-### 圧縮データの検査
+### 圧縮されたデータの検査
 
-[RESP.app](https://flathub.org/apps/details/app.resp.RESP) は、圧縮されたセッションデータとページキャッシュを検査するために、Commerce 2 Session and Page cache の自動解凍をサポートし、PHP セッションデータを人間が読み取り可能な形式で表示します。
+圧縮されたセッションデータとページキャッシュを調べるために、[RESP.app](https://flathub.org/apps/details/app.resp.RESP)は、Commerce 2 セッションとページキャッシュの自動解凍をサポートし、PHP セッションデータを人間が読み取り可能な形式で表示します。

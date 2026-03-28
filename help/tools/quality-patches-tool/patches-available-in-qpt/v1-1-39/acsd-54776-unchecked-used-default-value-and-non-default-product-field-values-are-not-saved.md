@@ -1,73 +1,73 @@
 ---
-title: ACSD-54776:2 つ目の web サイト、ストア、ストア表示で、オフの [!UICONTROL Use Default Value] とデフォルト以外の製品フィールドの値が保存されない
-description: ACSD-54776 パッチを適用すると、Adobe Commerceの問題を修正できます。この問題では、2 番目の web サイト、ストア、ストアの表示に対して、オフの [!UICONTROL Use Default Value] フィールドとデフォルト以外の製品フィールドの値が保存されません。
+title: ACSD-54776:2番目のweb サイト、ストア、ストアビューでは、チェックされていない[!UICONTROL Use Default Value]およびデフォルト以外の製品フィールド値が保存されない
+description: ACSD-54776 パッチを適用して、チェックされていない[!UICONTROL Use Default Value]とデフォルト以外の製品フィールド値が2番目のweb サイト、ストア、ストアビューに保存されないAdobe Commerceの問題を修正します。
 feature: Products
 role: Admin, Developer
 exl-id: d9f63abb-5d00-4777-a186-1120344af018
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
 
 ---
 
-# ACSD-54776：オフの *[!UICONTROL Use Default Value]* とデフォルト以外の製品フィールド値は保存されない
+# ACSD-54776：チェックされていない&#x200B;*[!UICONTROL Use Default Value]*&#x200B;とデフォルト以外の製品フィールド値が保存されない
 
 >[!NOTE]
 >
->このパッチは、QPT 1.1.35 でリリースされた [ACSD-51984](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-51984-unchecked-used-default-value-and-non-default-product-field-values-are-not-saved.md) パッチに代わるものです。
+>このパッチは、QPT 1.1.35でリリースされた[ACSD-51984](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-51984-unchecked-used-default-value-and-non-default-product-field-values-are-not-saved.md) パッチに置き換わります。
 
-ACSD-54776 パッチを使用すると、2 番目の web サイト、ストア、ストアの表示で、オフの **[!UICONTROL Use Default Value]** フィールドとデフォルト以外の製品フィールドの値が保存されない問題を修正できます。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.39 がインストールされている場合に使用できます。 パッチ ID は ACSD-54776 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-54776 パッチは、チェックされていない&#x200B;**[!UICONTROL Use Default Value]**&#x200B;およびデフォルト以外の製品フィールド値が、2番目のweb サイト、ストア、ストアビューに保存されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.39がインストールされている場合に利用できます。 パッチ IDはACSD-54776です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.5 ～ 2.4.5-p4、2.4.6 ～ 2.4.6-p3
+* Adobe Commerce（すべてのデプロイメント方式） 2.4.5 - 2.4.5-p4、2.4.6 - 2.4.6-p3
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-オフにした場合 *[!UICONTROL Use Default Value]* デフォルト以外の製品フィールドの値は、2 番目の web サイト、ストア、ストアの表示では保存されません。
+オフになっている&#x200B;*[!UICONTROL Use Default Value]*&#x200B;およびデフォルト以外の製品フィールド値は、2番目のweb サイト、ストア、ストアビューには保存されません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. バックエンドに移動し、**[!UICONTROL Stores]**/**[!UICONTROL All Stores]** に移動して、新しい web サイト、ストア、ストア表示を作成します。
-1. **[!UICONTROL Catalog]**/**[!UICONTROL Products]** に移動してシンプルな製品を作成して保存し、**[!UICONTROL Product in Websites]** から両方の web サイトに製品を割り当てます。
-1. 手順 2 で新しく作成したストア表示に範囲を変更します。
-1. **[!UICONTROL Search Engine Optimization]** に移動し、**[!UICONTROL Use Default Value]**、[!UICONTROL Meta Title]、[!UICONTROL Meta Keywords] の [!UICONTROL Meta Description] のチェックボックスをオフにします。
-1. フィールド（*[!UICONTROL Meta Title]*、*[!UICONTROL Meta Keywords]*、*[!UICONTROL Meta Description]*）からテキストを消去し、「**[!UICONTROL Save]**」をクリックします。
-1. もう一度 **[!UICONTROL Search Engine Optimization]** に移動します。
+1. バックエンドに移動し、**[!UICONTROL Stores]** > **[!UICONTROL All Stores]**&#x200B;に移動して、新しいweb サイト、ストア、ストアビューを作成します。
+1. **[!UICONTROL Catalog]** > **[!UICONTROL Products]**&#x200B;に移動し、シンプルな製品を作成して保存し、**[!UICONTROL Product in Websites]**&#x200B;から両方のweb サイトに製品を割り当てます。
+1. スコープを手順2から新しく作成したストアビューに変更します。
+1. **[!UICONTROL Search Engine Optimization]**&#x200B;に移動し、**[!UICONTROL Use Default Value]**、[!UICONTROL Meta Title]、[!UICONTROL Meta Keywords]の[!UICONTROL Meta Description] チェックボックスのチェックを外します。
+1. フィールド *[!UICONTROL Meta Title]*、*[!UICONTROL Meta Keywords]*&#x200B;および&#x200B;*[!UICONTROL Meta Description]*&#x200B;からテキストを削除し、**[!UICONTROL Save]**&#x200B;をクリックします。
+1. もう一度&#x200B;**[!UICONTROL Search Engine Optimization]**&#x200B;に移動します。
 
-<u> 期待される結果 </u>
+<u>期待される結果</u>
 
 フィールドとチェックボックスの値が保存されます。
 
-<u> 実績 </u>
+<u>実際の結果</u>
 
 フィールドとチェックボックスの値は保存されません。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool]  ガイドの](/help/tools/quality-patches-tool/usage.md)>使用状況[!DNL Quality Patches Tool]。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [ [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) ガイドの[!UICONTROL Quality Patches Tool]を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja>): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) ガイドの「[!DNL Quality Patches Tool] パッチを検索する」を参照してください。

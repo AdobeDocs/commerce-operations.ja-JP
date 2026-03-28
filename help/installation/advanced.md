@@ -1,85 +1,85 @@
 ---
-title: オンプレミスでの高度なインストール
-description: Adobe Commerce オンプレミスデプロイメントの高度なインストールシナリオについて説明します。 複雑な設定やカスタム設定オプションについて説明します。
+title: 高度なオンプレミス インストール
+description: Adobe Commerce オンプレミス展開の高度なインストールのシナリオについて説明します。 複雑な設定とカスタム設定オプションをご確認ください。
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '2485'
+source-wordcount: '2484'
 ht-degree: 0%
 
 ---
 
-# オンプレミスでの高度なインストール
+# 高度なオンプレミス インストール
 
 >[!TIP]
 >
->失った？ 手伝ってあげようか？ [&#x200B; クイックスタートインストール &#x200B;](composer.md) または [&#x200B; コントリビューターインストール &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/) ガイドをお試しください。
+>お忘れですか？ 助ける手が必要ですか？ [ クイックスタートインストール ](composer.md)または[ コントリビューターインストール ](https://developer.adobe.com/commerce/contributor/guides/install/) ガイドをお試しください。
 
 >[!NOTE]
 >
->SELinux を有効にすることを選択した場合は、[SELinux and iptables](prerequisites/security.md) を参照してください。
+>SELinuxを有効にする場合は、[SELinuxとiptables](prerequisites/security.md)を参照してください。
 
 ## コマンドラインインターフェイス（CLI）
 
-Adobe Commerceには、インストールおよび設定タスク用の単一のコマンドラインインターフェイスがあります：`<magento_root>/bin/magento`。 インターフェイスは、次のような複数のタスクを実行します。
+Adobe Commerceには、インストール タスクと設定タスク用の1つのコマンド ライン インターフェイスがあります：`<magento_root>/bin/magento`。 インターフェイスは、次のような複数のタスクを実行します。
 
-* インストール（および、データベーススキーマの作成や更新、デプロイメント設定の作成などの関連タスク）。
-* キャッシュをクリアしています。
-* インデックスの管理（インデックスの再作成など）。
+* インストール（およびデータベーススキーマの作成や更新、デプロイメント設定の作成など）に関連するタスク。
+* キャッシュのクリア。
+* インデックス再作成を含むインデックスの管理。
 * 翻訳辞書と翻訳パッケージの作成。
-* ファクトリやプラグインのインターセプタなど、存在しないクラスを生成し、オブジェクトマネージャの依存関係挿入設定を生成する。
-* 静的ビューファイルのデプロイ
-* Less から CSS を作成する。
+* プラグインのファクトリやインターセプタなどの存在しないクラスを生成し、オブジェクトマネージャーの依存関係インジェクション設定を生成します。
+* 静的ビューファイルのデプロイ。
+* より少ないCSSの作成。
 
-その他のメリット：
+その他の利点：
 
-* 1 つのコマンド（`<magento_root>/bin/magento list`）に、使用可能なすべてのインストールコマンドと設定コマンドが一覧表示されます。
-* Symfony に基づく一貫性のあるユーザーインターフェイス。
-* CLI は拡張可能なため、サードパーティ開発者がプラグインすることができます。 これには、ユーザーの学習曲線を排除するという追加のメリットがあります。
+* 単一のコマンド （`<magento_root>/bin/magento list`）には、使用可能なすべてのインストールおよび設定コマンドが一覧表示されます。
+* Symfonyに基づいた一貫したユーザーインターフェイス。
+* CLIは拡張可能なので、サードパーティの開発者はCLIに「プラグイン」できます。 これは、ユーザーの学習曲線を排除するという追加の利点があります。
 * 無効なモジュールのコマンドは表示されません。
 
-このトピックでは、CLI を使用したAdobe Commerce ソフトウェアのインストールについて説明します。 設定については、[&#x200B; 設定ガイド &#x200B;](../configuration/overview.md) を参照してください。
+このトピックでは、CLIを使用したAdobe Commerce ソフトウェアのインストールについて説明します。 設定について詳しくは、[設定ガイド ](../configuration/overview.md)を参照してください。
 
-インストーラーは、必要に応じて複数回実行できるので、次のことが可能です。
+インストーラーは必要に応じて複数回実行できるので、次のことが可能です。
 
 * 異なる値を指定
 
-  例えば、Web サーバーを Secure Sockets Layer （SSL）用に設定したら、インストーラーを実行して、SSL オプションを設定できます。
+  例えば、セキュアソケットレイヤー（SSL）用にweb サーバーを設定した後、インストーラーを実行してSSL オプションを設定できます。
 
-* 以前のインストールでの誤りを修正する
+* 以前のインストールでの間違いを修正
 * 別のデータベースインスタンスへのAdobe Commerceのインストール
 
-## インストールを開始する前に
+## インストールの開始前
 
 開始する前に、次の手順を実行します。
 
-* お使いのシステムが [&#x200B; システム要件 &#x200B;](system-requirements.md) で説明されている要件を満たしていることを確認します。
+* お使いのシステムが[ システム要件](system-requirements.md)で説明されている要件を満たしていることを確認します。
 
-* すべての [&#x200B; 前提条件 &#x200B;](prerequisites/overview.md) タスクを完了します。
+* すべての[前提条件](prerequisites/overview.md) タスクを完了します。
 
-* 最初のインストール手順を完了します。 [&#x200B; インストールまたはアップグレードのパス &#x200B;](overview.md) を参照してください。
+* 最初のインストール手順を完了します。 [ インストールまたはアップグレードのパス ](overview.md)を参照してください。
 
-* アプリケーションサーバーにログインしたら、[&#x200B; ファイルシステムの所有者に切り替えます &#x200B;](prerequisites/file-system/overview.md)。
+* アプリケーションサーバーにログインした後、[ ファイルシステム所有者](prerequisites/file-system/overview.md)に切り替えます。
 
-* [&#x200B; インストールのクイックスタート &#x200B;](composer.md) の概要を確認します。
+* [ インストールのクイックスタート ](composer.md)の概要を確認します。
 
 >[!NOTE]
 >
->`bin` サブディレクトリからAdobe Commerceをインストールする必要があります。
+>Adobe Commerceを`bin` サブディレクトリからインストールする必要があります。
 
-インストーラーを複数回実行し、様々なオプションを指定して、次のようなインストールタスクを完了することができます。
+インストーラーを複数回実行して、次のようなインストールタスクを完了できます。
 
-* 段階的にインストールする – 例えば、Web サーバーを Secure Sockets Layer （SSL）用に設定した後、インストーラーを再度実行して、SSL オプションを設定できます。
+* 段階的なインストール – 例えば、Web サーバーをSSL （Secure Sockets Layer）用に設定した後、インストーラーを再度実行してSSL オプションを設定できます。
 
-* 以前のインストールでの間違いを修正します。
+* 以前のインストールで発生したエラーを修正します。
 
 * 別のデータベースインスタンスにAdobe Commerceをインストールします。
 
 >[!NOTE]
 >
->デフォルトでは、同じデータベースインスタンスにソフトウェアをインストールしても、インストーラーによってデータベースが上書きされることはありません。 この動作を変更するには、オプションの `cleanup-database` パラメーターを使用できます。
+>デフォルトでは、同じデータベースインスタンスにソフトウェアをインストールしても、インストーラーはデータベースを上書きしません。 オプションの`cleanup-database` パラメーターを使用して、この動作を変更できます。
 
-[&#x200B; 更新、再インストール、アンインストール &#x200B;](tutorials/uninstall.md) も参照してください。
+[更新、再インストール、アンインストール ](tutorials/uninstall.md)も参照してください。
 
 ### 安全なインストール
 
@@ -87,7 +87,7 @@ Adobe Commerceには、インストールおよび設定タスク用の単一の
 
 ## インストーラーヘルプコマンド
 
-次のコマンドを実行すると、必要な引数の値を検索できます。
+次のコマンドを実行して、必須の引数の値を検索できます。
 
 | インストーラー引数 | コマンド |
 | ------------------ | ------------------------------- |
@@ -97,122 +97,122 @@ Adobe Commerceには、インストールおよび設定タスク用の単一の
 
 >[!NOTE]
 >
->これらのコマンドを実行したときにエラーが表示される場合は、[&#x200B; インストールの依存関係の更新 &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies) の説明に従って、インストールの依存関係を更新したことを確認してください。
+>これらのコマンドを実行するとエラーが表示される場合は、[ インストール依存関係の更新](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)で説明したように、インストール依存関係を更新したことを確認してください。
 
-## コマンドラインからのインストール
+## コマンドラインからインストール
 
-インストールコマンドでは、次の形式を使用します。
+install コマンドでは、次の形式が使用されます。
 
 ```bash
 bin/magento setup:install --<option>=<value> ... --<option>=<value>
 ```
 
-次の表に、インストールオプションの名前と値を示します。 インストールコマンドの例については、[localhost のインストールのサンプル &#x200B;](#sample-localhost-installations) を参照してください。
+次の表に、インストールオプションの名前と値を示します。 インストールコマンドの例については、[ サンプル localhost インストール ](#sample-localhost-installations)を参照してください。
 
 >[!NOTE]
 >
->スペースや特殊文字を含むオプションは、一重引用符または二重引用符で囲む必要があります。
+>スペースまたは特殊文字を含むオプションは、1つまたは2つの引用符で囲む必要があります。
 
-**管理者資格情報：**
+**管理者の資格情報：**
 
-次のオプションでは、管理者ユーザーのユーザー情報と資格情報を指定します。
+次のオプションは、管理者ユーザーのユーザー情報と資格情報を指定します。
 
-管理者ユーザーは、インストール中またはインストール後に作成できます。 インストール時にユーザーを作成する場合は、すべての管理者資格情報の変数が必要です。 [&#x200B; サンプルローカルホストのインストール &#x200B;](#sample-localhost-installations) を参照してください。
+インストール中またはインストール後に管理者ユーザーを作成できます。 インストール中にユーザーを作成する場合は、すべての管理者資格情報変数が必要です。 [ サンプル localhost インストール ](#sample-localhost-installations)を参照してください。
 
-次の表に、使用可能なすべてのインストールパラメーターではなく、多くのパラメーターを示します。 完全な一覧については、[&#x200B; コマンド ライン ツール リファレンス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises) を参照してください。
+次の表に、使用可能なインストールパラメーターの多くはありますが、一部ではありません。 完全なリストについては、[ コマンドラインツールのリファレンス ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises)を参照してください。
 
-| 名前 | 値 | 必須？ |
+| 名前 | 値 | 必要ですか？ |
 |--- |--- |--- |
-| `--admin-firstname` | 管理者ユーザーの名。 | はい |
+| `--admin-firstname` | 管理者ユーザーの名前。 | はい |
 | `--admin-lastname` | 管理者ユーザーの姓。 | はい |
 | `--admin-email` | 管理者ユーザーのメールアドレス。 | はい |
 | `--admin-user` | 管理者ユーザー名。 | はい |
-| `--admin-password` | 管理者ユーザーのパスワード。 パスワードは 7 文字以上で、アルファベットと数字が少なくとも 1 つずつ含まれている必要があります。 より長く、より複雑なパスワードをお勧めします。 パスワード文字列全体を一重引用符で囲みます。 例：`--admin-password='A0b9%t3g'` | はい |
+| `--admin-password` | 管理者ユーザーパスワード。 パスワードは、少なくとも7文字の長さである必要があり、少なくとも1つのアルファベットと少なくとも1つの数字を含める必要があります。 より長く複雑なパスワードを使用することをお勧めします。 パスワード文字列全体を一重引用符で囲みます。 例：`--admin-password='A0b9%t3g'` | はい |
 
-**サイトとデータベースの構成オプション：**
+**サイトとデータベースの設定オプション：**
 
-| 名前 | 値 | 必須？ |
+| 名前 | 値 | 必要ですか？ |
 |--- |--- |--- |
-| `--base-url` | 次のいずれかの形式で管理者およびストアフロントにアクセスするために使用するベース URL:<br><br>`http[s]://<host or ip>/<your install dir>/`。<br><br>**注意：** スキーム（http://またはhttps://）と末尾のスラッシュは両方とも必須です。<br><br>`<your install dir>` は、Adobe Commerce ソフトウェアをインストールするドキュメントルートの相対パスです。 Web サーバーと仮想ホストの設定方法に応じて、パスは magento2 になるか、空になります。<br><br>Adobe Commerceまたは MagenAdobe Commerceuse にアクセスするには、`http://127.0.0.1/<your install dir>/` または `http://127.0.0.1/<your install dir>/` を使用します。<br><br> – 仮想ホスト設定または Docker などの仮想化環境によって定義されたベース URL を表す `{{base_url}}`。 例えば、ホスト名が `magento.example.com` の仮想ホストを設定した場合、`--base-url={{base_url}}` を使用してソフトウェアをインストールし、`http://magento.example.com/admin` のような URL を使用して Admin にアクセスできます。 | はい |
-| `--backend-frontname` | 管理者にアクセスするための URI （Uniform Resource Identifier）。 このパラメーターを省略すると、アプリケーションは次のパターンのランダムな URI を生成できます。<code>admin_jkhgdfq</code>。<br><br> セキュリティ上の理由から、ランダムな URI を使用することをお勧めします。 ランダム URI は、ハッカーや悪意のあるソフトウェアが悪用しにくくなります。<br><br>URI はインストールの最後に表示されます。 `bin/magento info:adminuri` コマンドを使用すれば、後でいつでも表示することができます。<br><br> 値を入力する場合は、admin、backend などの一般的な単語を使用しないことをお勧めします。 管理 URI には、英数字とアンダースコア文字（`_`）のみを含めることができます。 | 不可 |
-| `--db-host` | 次のいずれかを使用します。<br><br>- データベースサーバーの完全修飾ホスト名または IP アドレス。<br><br>- `localhost` （デフォルト）またはデータベースサーバーが web サーバーと同じホスト上にある場合は `127.0.0.1`。localhost は、MySQL クライアントライブラリが UNIX ソケットを使用してデータベースに接続することを意味します。 `127.0.0.1` は、クライアントライブラリで TCP プロトコルを使用します。 ソケットの詳細については、[PHP PDO_MYSQL のドキュメント &#x200B;](https://www.php.net/manual/en/ref.pdo-mysql.php) を参照してください。<br><br>**注意：** オプションで、www.example.comのようなホスト名でデータベースサーバーポートを指定できます :9000 | はい |
-| `--db-name` | データベーステーブルをインストールするデータベースインスタンスの名前。<br><br> デフォルトは `magento2` です。 | はい |
-| `--db-user` | データベース・インスタンス所有者のユーザー名。<br><br> デフォルトは `root` です。 | はい |
+| `--base-url` | 次のいずれかの形式で管理者およびストアフロントにアクセスするために使用するベース URL:<br><br>`http[s]://<host or ip>/<your install dir>/`。<br><br>**注意：** スキーム （http://またはhttps://）と末尾のスラッシュは両方とも必須です。<br><br>`<your install dir>`は、Adobe Commerce ソフトウェアをインストールするdocroot相対パスです。 Web サーバーと仮想ホストの設定方法によっては、パスがmagento2であるか、空白である可能性があります。<br><br>Adobe CommerceまたはMagenAdobe Commerceにアクセスするには、`http://127.0.0.1/<your install dir>/`または`http://127.0.0.1/<your install dir>/`のいずれかを使用してください。<br><br>- `{{base_url}}`は、仮想ホスト設定またはDockerなどの仮想化環境によって定義されたベース URLを表します。 例えば、ホスト名`magento.example.com`で仮想ホストを設定する場合、`--base-url={{base_url}}`でソフトウェアをインストールし、`http://magento.example.com/admin`のようなURLで管理者にアクセスできます。 | はい |
+| `--backend-frontname` | 管理者にアクセスするためのURI （Uniform Resource Identifier）。 このパラメーターを省略すると、次のパターン <code>admin_jkhgdfqを持つランダム URIをアプリケーションで生成できます</code>。<br><br> セキュリティ上の理由から、ランダム URIをお勧めします。 ランダム URIは、ハッカーや悪意のあるソフトウェアが悪用するのが困難です。<br><br>URIはインストールの最後に表示されます。 後で`bin/magento info:adminuri` コマンドを使用して、いつでも表示できます。<br><br>値を入力する場合は、「管理者」、「バックエンド」などの一般的な単語を使用しないことをお勧めします。 管理者URIには、英数字とアンダースコア文字（`_`）のみを含めることができます。 | いいえ |
+| `--db-host` | 次のいずれかを使用します。<br><br>- データベース サーバーの完全修飾ホスト名またはIP アドレス。データベース サーバーがweb サーバーと同じホスト上にある場合、<br><br>- `localhost` （デフォルト）または`127.0.0.1`。localhostは、MySQL クライアントライブラリがUNIX ソケットを使用してデータベースに接続することを意味します。 `127.0.0.1`によって、クライアント ライブラリでTCP プロトコルが使用されます。 ソケットについて詳しくは、[PHP PDO_MYSQL ドキュメント ](https://www.php.net/manual/en/ref.pdo-mysql.php)を参照してください。<br><br>**注：** データベース サーバーのポートは、オプションで`www.example.com:9000`のようにホスト名に指定できます | はい |
+| `--db-name` | データベーステーブルをインストールするデータベースインスタンスの名前。<br><br> デフォルトは`magento2`です。 | はい |
+| `--db-user` | データベースインスタンス所有者のユーザー名。<br><br> デフォルトは`root`です。 | はい |
 | `--db-password` | データベースインスタンス所有者のパスワード。 | はい |
-| `--db-prefix` | 既にAdobe Commerce テーブルが含まれているデータベースインスタンスにデータベーステーブルをインストールしている場合にのみ、を使用します。<br><br> その場合、プレフィックスを使用して、このインストールのテーブルを識別します。 一部のお客様は、同じデータベース内のすべてのテーブルを持つ複数のAdobe Commerceまたは MagenAdobe Commerceserver を持っています。<br><br> プレフィックスの長さは最大 5 文字です。 文字で始まる必要があり、文字、数字、アンダースコア文字のみを含めることができます。<br><br> このオプションを使用すると、複数のAdobe Commerce インストールとデータベースサーバーを共有できます |
-| `--db-ssl-key` | クライアントキーへのパス。 | 不可 |
-| `--db-ssl-cert` | クライアント証明書へのパス。 | 不可 |
-| `--db-ssl-ca` | サーバー証明書へのパス。 | 不可 |
-| `--language` | 管理およびストアフロントで使用する言語コード。 （まだ実行していない場合は、bin ディレクトリから `bin/magento info:language:list` を入力して、言語コードのリストを表示できます）。 | 不可 |
-| `--currency` | ストアフロントで使用するデフォルト通貨。 （まだ行っていない場合は、bin ディレクトリから `bin/magento info:currency:list` と入力して通貨のリストを表示できます）。 | 不可 |
-| `--timezone` | 管理およびストアフロントで使用するデフォルトのタイムゾーン。 （タイムゾーンリストをまだ表示していない場合は、`bin/magento info:timezone:list` ディレクトリから `bin/` と入力して表示できます）。 | 不可 |
-| `--use-rewrites` | つま `1`、ストアフロントおよび管理者で生成されたリンクに対して、web サーバーの書き換えを使用します。<br><br>`0` は、web サーバーの書き換えの使用を無効にします。 これがデフォルトです。 | 不可 |
-| `--use-secure` | `1` を使用すると、ストアフロント URL で Secure Sockets Layer （SSL）を使用できます。 このオプションを選択する前に、web サーバーで SSL がサポートされていることを確認してください。<br><br>`0` は SSL の使用を無効にします。 この場合、他のすべてのセキュア URL オプションも 0 と見なされます。 これがデフォルトです。 | 不可 |
-| `--base-url-secure` | 管理者およびストアフロントにアクセスするために使用するセキュアなベース URL を次の形式で指定します：`http[s]://<host or ip>/<your install dir>/` | 不可 |
-| `--use-secure-admin` | `1` まり、SSL を使用して管理者にアクセスします。 このオプションを選択する前に、web サーバーで SSL がサポートされていることを確認してください。<br><br>`0` れは、管理者で SSL を使用しないことを意味します。 これがデフォルトです。 | 不可 |
-| `--admin-use-security-key` | 1 を指定すると、アプリケーションはランダムに生成されたキー値を使用して、管理およびフォームのページにアクセスします。 これらのキー値は、クロスサイトスクリプトフォージェリー攻撃を防ぐのに役立ちます。 これがデフォルトです。<br><br>`0` はキーの使用を無効にします。 | 不可 |
-| `--session-save` | 次のいずれかを使用します。<br><br>- `db` を使用して、セッションデータをデータベースに保存します。 クラスター化されたデータベースがある場合は、データベースストレージを選択します。そうしないと、ファイルベースのストレージに比べて大きなメリットがない可能性があります。<br><br>- セッションデータをファイルシステムに保存する `files` ール。 ファイルベースのセッションストレージは、ファイルシステムアクセスが遅い場合、クラスター化されたデータベースがある場合、または Redis にセッションデータを保存する場合を除いて、適切です。<br><br>- セッションデータを Redis に保存する `redis` ール。 デフォルトまたはページキャッシュに Redis を使用している場合は、Redis がインストールされている必要があります。 Redis のサポートの設定に関する詳細は、セッションストレージに Redis を使用するを参照してください。 | 不可 |
-| `--key` | キーがある場合は、データベース内の機密データを暗号化するキーを指定します。 ユーザーが定義されていない場合は、自動的に定義されます。 | はい |
-| `--cleanup-database` | Adobe Commerceをインストールする前にデータベーステーブルをドロップするには、このパラメーターに値を指定しません。 それ以外の場合、データベースはそのまま残ります。 | 不可 |
-| `--db-init-statements` | MySQL の詳細設定パラメーター。 データベース初期化文を使用して、MySQL データベースへの接続時に実行します。 値を設定する前に、これに類似したリファレンスを参照してください。<br><br> デフォルトは `SET NAMES utf8;` です。 | 不可 |
-| `--sales-order-increment-prefix` | 販売注文のプレフィックスとして使用する文字列値を指定します。 通常、これは支払い処理者向けの一意の注文番号を保証するために使用されます。 | 不可 |
+| `--db-prefix` | 既にAdobe Commerce テーブルが含まれているデータベースインスタンスにデータベーステーブルをインストールする場合にのみ使用します。<br><br>その場合、プレフィックスを使用して、このインストールのテーブルを識別します。 一部のお客様は、同じデータベース内のすべてのテーブルを含む複数のAdobe CommerceまたはMagenAdobe Commerce Serverを持っています。<br><br> プレフィックスは、最大5文字まで指定できます。 文字で始まる必要があり、文字、数字、アンダースコア文字のみを含めることができます。<br><br>このオプションを使用すると、お客様は複数のAdobe Commerce インストールでデータベース サーバーを共有できます | |
+| `--db-ssl-key` | クライアントキーへのパス。 | いいえ |
+| `--db-ssl-cert` | クライアント証明書へのパス。 | いいえ |
+| `--db-ssl-ca` | サーバー証明書へのパス。 | いいえ |
+| `--language` | 管理者とストアフロントで使用する言語コード。 （まだ行っていない場合は、bin ディレクトリから`bin/magento info:language:list`を入力して、言語コードのリストを表示できます）。 | いいえ |
+| `--currency` | ストアフロントで使用するデフォルト通貨。 （まだ行っていない場合は、bin ディレクトリから`bin/magento info:currency:list`を入力して、通貨のリストを表示できます）。 | いいえ |
+| `--timezone` | 管理者とストアフロントで使用するデフォルトのタイムゾーン。 （まだ実行していない場合は、`bin/magento info:timezone:list` ディレクトリから`bin/`を入力して、タイムゾーンのリストを表示できます）。 | いいえ |
+| `--use-rewrites` | `1`とは、ストアフロントおよび管理画面で生成されたリンクにweb サーバーの書き換えを使用することを意味します。<br><br>`0`は、web サーバーの書き換えの使用を無効にします。 これがデフォルトです。 | いいえ |
+| `--use-secure` | `1`では、ストアフロント URLでSSL （Secure Sockets Layer）を使用できます。 このオプションを選択する前に、web サーバーがSSLをサポートしていることを確認してください。<br><br>`0`はSSLの使用を無効にします。 この場合、その他のすべてのセキュア URL オプションも0と見なされます。 これがデフォルトです。 | いいえ |
+| `--base-url-secure` | 管理者およびストアフロントへのアクセスに使用するセキュアなベース URL: `http[s]://<host or ip>/<your install dir>/` | いいえ |
+| `--use-secure-admin` | `1`とは、SSLを使用して管理者にアクセスすることを意味します。 このオプションを選択する前に、web サーバーがSSLをサポートしていることを確認してください。<br><br>`0`は、管理者と一緒にSSLを使用しないことを意味します。 これがデフォルトです。 | いいえ |
+| `--admin-use-security-key` | 1を指定すると、アプリケーションはランダムに生成されたキー値を使用して、管理者およびフォームのページにアクセスできます。 これらのキー値は、クロスサイトスクリプトフォージェリー攻撃を防ぐのに役立ちます。 これがデフォルトです。<br><br>`0`は、キーの使用を無効にします。 | いいえ |
+| `--session-save` | 次のいずれかを使用して、セッションデータをデータベースに保存します。<br><br> ～ `db` クラスター化されたデータベースがある場合は、データベースストレージを選択します。そうでない場合、ファイルベースのストレージよりもメリットが大きくない可能性があります。セッションデータをファイルシステムに保存するための<br><br> ～ `files`。 ファイルベースのセッションストレージは、ファイルシステムのアクセス速度が遅い、クラスター化されたデータベースがある、またはセッションデータをRedisに保存したい場合を除いて適切です。セッションデータをRedisに保存する<br><br> ～ `redis`。 デフォルトまたはページキャッシュにRedisを使用している場合は、Redisが既にインストールされている必要があります。 Redisのサポートの設定について詳しくは、セッションストレージにRedisを使用するを参照してください。 | いいえ |
+| `--key` | データベースがある場合は、データベース内の機密データを暗号化するためのキーを指定します。 アカウントをお持ちでない場合は、アプリケーションによってアカウントが生成されます。 | はい |
+| `--cleanup-database` | Adobe Commerceをインストールする前にデータベーステーブルをドロップするには、値を指定せずにこのパラメーターを指定します。 それ以外の場合は、データベースはそのまま残ります。 | いいえ |
+| `--db-init-statements` | 高度なMySQL設定パラメーター。 データベース初期化ステートメントを使用して、MySQL データベースに接続するときに実行します。 値を設定する前に、このリファレンスと同様のリファレンスを参照してください。<br><br> デフォルトは`SET NAMES utf8;`です。 | いいえ |
+| `--sales-order-increment-prefix` | 受注の接頭辞として使用する文字列値を指定します。 通常、これは決済代行会社の一意の注文番号を保証するために使用されます。 | いいえ |
 
 **検索エンジン設定オプション：**
 
-| 名前 | 値 | 必須？ |
+| 名前 | 値 | 必要ですか？ |
 |--- |--- |--- |
-| `--search-engine` | 検索エンジンとして使用するElasticsearchまたは OpenSearch のバージョン。 デフォルトは `elasticsearch7` です。 Elasticsearch 5 は非推奨（廃止予定）となったので、お勧めしません。 | 不可 |
-| `--elasticsearch-host` | Elasticsearchが動作しているホスト名または IP アドレス。 デフォルトは `localhost` です。 | 不可 |
-| `--elasticsearch-port` | 受信 HTTP リクエストのElasticsearch ポート。 デフォルトは `9200` です。 | 不可 |
-| `--elasticsearch-index-prefix` | Elasticsearch検索インデックスを識別するプレフィックス。 デフォルトは `magento2` です。 | 不可 |
-| `--elasticsearch-timeout` | システムがタイムアウトするまでの秒数。 デフォルトは `15` です。 | 不可 |
-| `--elasticsearch-enable-auth` | Elasticsearch サーバーで認証を有効にします。 デフォルトは `false` です。 | 不可 |
-| `--elasticsearch-username` | Elasticsearch サーバーに対して認証するユーザー ID。 | いいえ（認証が有効になっていない場合） |
-| `--elasticsearch-password` | Elasticsearchserver に対して認証するパスワード。 | いいえ（認証が有効になっていない場合） |
-| `--opensearch-host` | OpenSearch が実行されているホスト名または IP アドレス。 デフォルトは `localhost` です。 | 不可 |
-| `--opensearch-port` | 受信 HTTP リクエストの OpenSearch ポート。 デフォルトは `9200` です。 | 不可 |
-| `--opensearch-index-prefix` | OpenSearch 検索インデックスを識別するプレフィックス。 デフォルトは `magento2` です。 | 不可 |
-| `--opensearch-timeout` | システムがタイムアウトするまでの秒数。 デフォルトは `15` です。 | 不可 |
-| `--opensearch-enable-auth` | OpenSearch サーバーでの認証を有効にします。 デフォルトは `false` です。 | 不可 |
-| `--opensearch-username` | OpenSearch サーバーに対して認証するユーザー ID。 | いいえ（認証が有効になっていない場合） |
-| `--opensearch-password` | OpenSearch サーバーに対して認証するパスワード。 | いいえ（認証が有効になっていない場合） |
+| `--search-engine` | 検索エンジンとして使用するElasticsearchまたはOpenSearchのバージョン。 デフォルトは`elasticsearch7`です。 Elasticsearch 5は非推奨（廃止予定）であり、お勧めしません。 | いいえ |
+| `--elasticsearch-host` | Elasticsearchが実行されているホスト名またはIP アドレス。 デフォルトは`localhost`です。 | いいえ |
+| `--elasticsearch-port` | 受信HTTP リクエスト用のElasticsearch ポート。 デフォルトは`9200`です。 | いいえ |
+| `--elasticsearch-index-prefix` | Elasticsearch検索インデックスを識別するプレフィックス。 デフォルトは`magento2`です。 | いいえ |
+| `--elasticsearch-timeout` | システムがタイムアウトするまでの秒数。 デフォルトは`15`です。 | いいえ |
+| `--elasticsearch-enable-auth` | Elasticsearch サーバーでの認証を有効にします。 デフォルトは`false`です。 | いいえ |
+| `--elasticsearch-username` | Elasticsearch サーバーに対する認証のユーザーID。 | いいえ、認証が有効になっていない限り |
+| `--elasticsearch-password` | Elasticsearchserverに対する認証のパスワード。 | いいえ、認証が有効になっていない限り |
+| `--opensearch-host` | OpenSearchが実行されているホスト名またはIP アドレス。 デフォルトは`localhost`です。 | いいえ |
+| `--opensearch-port` | 受信HTTP リクエストのOpenSearch ポート。 デフォルトは`9200`です。 | いいえ |
+| `--opensearch-index-prefix` | OpenSearch検索インデックスを識別するプレフィックス。 デフォルトは`magento2`です。 | いいえ |
+| `--opensearch-timeout` | システムがタイムアウトするまでの秒数。 デフォルトは`15`です。 | いいえ |
+| `--opensearch-enable-auth` | OpenSearch サーバーでの認証を有効にします。 デフォルトは`false`です。 | いいえ |
+| `--opensearch-username` | OpenSearch サーバーに対して認証するユーザーID。 | いいえ、認証が有効になっていない限り |
+| `--opensearch-password` | OpenSearch サーバーに対する認証のパスワード。 | いいえ、認証が有効になっていない限り |
 
 **[!DNL RabbitMQ]設定オプション：**
 
-| 名前 | 値 | 必須？ |
+| 名前 | 値 | 必要ですか？ |
 |--- |--- |--- |
-| `--amqp-host` | `--amqp` のインストールを既にセットアップしていない限り、[!DNL RabbitMQ] のオプションは使用しないでください。 [!DNL RabbitMQ] のインストールと設定について詳しくは、[!DNL RabbitMQ] のインストールを参照してください。<br><br>[!DNL RabbitMQ] がインストールされているホスト名。 | 不可 |
-| `--amqp-port` | [!DNL RabbitMQ] への接続に使用するポート。 デフォルトは 5672 です。 | 不可 |
-| `--amqp-user` | [!DNL RabbitMQ] に接続するためのユーザー名。 デフォルトのユーザー `guest` は使用しないでください。 | 不可 |
-| `--amqp-password` | [!DNL RabbitMQ] に接続するためのパスワード デフォルトのパスワード `guest` は使用しないでください。 | 不可 |
-| `--amqp-virtualhost` | [!DNL RabbitMQ] に接続するための仮想ホスト。 デフォルトは `/` です。 | 不可 |
-| `--amqp-ssl` | [!DNL RabbitMQ] に接続するかどうかを示します。 デフォルトは `false` です。 [!DNL RabbitMQ] の SSL の設定については、[!DNL RabbitMQ] を参照してください。 | 不可 |
-| `--consumers-wait-for-messages` | 消費者はキューからのメッセージを待つ必要がありますか？ 1 – はい、0 – いいえ | 不可 |
+| `--amqp-host` | `--amqp`のインストールを既に設定していない限り、[!DNL RabbitMQ] オプションを使用しないでください。 [!DNL RabbitMQ]のインストールと設定について詳しくは、[!DNL RabbitMQ] インストールを参照してください。<br><br>[!DNL RabbitMQ]がインストールされているホスト名。 | いいえ |
+| `--amqp-port` | [!DNL RabbitMQ]への接続に使用するポート。 デフォルトは5672です。 | いいえ |
+| `--amqp-user` | [!DNL RabbitMQ]に接続するためのユーザー名。 既定のユーザー`guest`は使用しないでください。 | いいえ |
+| `--amqp-password` | [!DNL RabbitMQ]に接続するためのパスワード。 既定のパスワード `guest`は使用しないでください。 | いいえ |
+| `--amqp-virtualhost` | [!DNL RabbitMQ]に接続するための仮想ホスト。 デフォルトは`/`です。 | いいえ |
+| `--amqp-ssl` | [!DNL RabbitMQ]に接続するかどうかを示します。 デフォルトは`false`です。 [!DNL RabbitMQ]のSSLの設定について詳しくは、[!DNL RabbitMQ]を参照してください。 | いいえ |
+| `--consumers-wait-for-messages` | 消費者はキューからのメッセージを待つべきですか？ 1 – はい、0 – いいえ | いいえ |
 
-**ActiveMQ Artemis 設定オプション：**
+**ActiveMQ Artemis設定オプション：**
 
 >[!NOTE]
 >
->ActiveMQ Artemis は、Adobe Commerce 2.4.5 以降のバージョンで導入されました。
+>ActiveMQ Artemisは、Adobe Commerce 2.4.5以降で導入されました。
 
-| 名前 | 値 | 必須？ |
+| 名前 | 値 | 必要ですか？ |
 |--- |--- |--- |
-| `--stomp-host` | ActiveMQ Artemis のインストールをセットアップ済みでない限り、`--stomp` のオプションは使用しないでください。 ActiveMQ Artemis のインストールと構成の詳細については、「ActiveMQ Artemis のインストール」を参照してください。<br><br>ActiveMQ Artemis がインストールされているホスト名。 | 不可 |
-| `--stomp-port` | ActiveMQ Artemis への接続に使用するポートです。 デフォルトは 61613 です。 | 不可 |
-| `--stomp-user` | ActiveMQ Artemis に接続するためのユーザー名。 デフォルトのユーザー `artemis` は使用しないでください。 | 不可 |
-| `--stomp-password` | ActiveMQ Artemis に接続するためのパスワードです。 デフォルトのパスワード `artemis` は使用しないでください。 | 不可 |
-| `--stomp-ssl` | SSL を使用して ActiveMQ Artemis に接続するかどうかを示します。 デフォルトは `false` です。 ActiveMQ Artemis の SSL の設定については、ActiveMQ Artemis を参照してください。 | 不可 |
-| `--consumers-wait-for-messages` | 消費者はキューからのメッセージを待つ必要がありますか？ 1 – はい、0 – いいえ | 不可 |
+| `--stomp-host` | ActiveMQ Artemisのインストールを既に設定していない限り、`--stomp` オプションを使用しないでください。 ActiveMQ Artemisのインストールと設定について詳しくは、ActiveMQ Artemisのインストールを参照してください。<br><br>ActiveMQ Artemisがインストールされているホスト名。 | いいえ |
+| `--stomp-port` | ActiveMQ Artemisへの接続に使用するポート。 デフォルトは61613です。 | いいえ |
+| `--stomp-user` | ActiveMQ Artemisに接続するためのユーザー名。 既定のユーザー`artemis`は使用しないでください。 | いいえ |
+| `--stomp-password` | ActiveMQ Artemisに接続するためのパスワード。 既定のパスワード `artemis`は使用しないでください。 | いいえ |
+| `--stomp-ssl` | SSLを使用してActiveMQ Artemisに接続するかどうかを示します。 デフォルトは`false`です。 ActiveMQ ArtemisのSSL設定について詳しくは、ActiveMQ Artemisを参照してください。 | いいえ |
+| `--consumers-wait-for-messages` | 消費者はキューからのメッセージを待つべきですか？ 1 – はい、0 – いいえ | いいえ |
 
-**ロック設定オプション：**
+**設定オプションのロック：**
 
-| 名前 | 値 | 必須？ |
+| 名前 | 値 | 必要ですか？ |
 |--- |--- |--- |
-| `--lock-provider` | プロバイダ名をロックします。<br><br> 使用可能なロック プロバイダー：`db`、`zookeeper`、`file`。<br><br> デフォルトのロックプロバイダー：`db` | 不可 |
-| `--lock-db-prefix` | ロックプロバイダーの使用時にロックの競合を回避するため `db` 特定の db プレフィックス。<br><br> デフォルト値：`NULL` | 不可 |
-| `--lock-zookeeper-host` | ロックプロバイダーを使用する際に Zookeeper クラスターに接続するホスト `zookeeper` ポート。<br><br> 例：`127.0.0.1:2181` | はい（`--lock-provider=zookeeper` を設定した場合） |
-| `--lock-zookeeper-path` | Zookeeper がロックを保存するパス。<br><br> デフォルトパスは `/magento/locks` です。 | 不可 |
-| `--lock-file-path` | ファイルのロックが保存されるパス。 | はい（`--lock-provider=file` を設定した場合） |
+| `--lock-provider` | プロバイダー名をロックします。<br><br>使用可能なロック プロバイダー：`db`、`zookeeper`、`file`。<br><br>既定のロック プロバイダー：`db` | いいえ |
+| `--lock-db-prefix` | `db` ロックプロバイダーの使用時にロックの競合を回避するための特定のdb プレフィックス。<br><br> デフォルト値：`NULL` | いいえ |
+| `--lock-zookeeper-host` | `zookeeper` ロックプロバイダーを使用する場合に、Zookeeper クラスターに接続するためのホストとポート。<br><br>例：`127.0.0.1:2181` | はい、`--lock-provider=zookeeper`を設定した場合 |
+| `--lock-zookeeper-path` | Zookeeperがロックを保存するパス。<br><br> デフォルトパスは`/magento/locks`です | いいえ |
+| `--lock-file-path` | ファイルロックが保存されるパス。 | はい、`--lock-provider=file`を設定した場合 |
 
 **コンシューマー設定オプション：**
 
@@ -220,40 +220,40 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 >[!NOTE]
 >
->Adobe Commerceのインストール後にモジュールを有効または無効にする方法については、[&#x200B; モジュールの有効/無効 &#x200B;](tutorials/manage-modules.md) を参照してください。
+>Adobe Commerceのインストール後にモジュールを有効または無効にするには、[ モジュールの有効と無効](tutorials/manage-modules.md)を参照してください。
 
 **機密データ：**
 
 {{$include /help/_includes/sensitive-data.md}}
 
-### ローカルホストのインストールのサンプル
+### localhostのインストール例
 
-次の例は、Adobe Commerceを様々なオプションを使用してローカルにインストールするコマンドを示しています。
+次の例は、様々なオプションを使用してAdobe Commerceをローカルにインストールするコマンドを示しています。
 
-#### 例 1 – 管理者ユーザーアカウントを使用した基本インストール
+#### 例1：管理者ユーザーアカウントを使用した基本的なインストール
 
 次の例では、次のオプションを使用してAdobe Commerceをインストールします。
 
-* アプリケーションは、`magento2` 上の Web サーバーの docroot に対する相対パスである `localhost` ディレクトリにインストールされ、Admin へのパスは `admin` になります。したがって、次のようになります。
+* アプリケーションは、`magento2`のweb サーバーのdocrootに関連する`localhost` ディレクトリにインストールされ、管理者へのパスは`admin`です。したがって、次のようになります。
 
-  ストアフロント URL は `http://127.0.0.1` です
+  ストアフロント URLは`http://127.0.0.1`です
 
 * データベース・サーバは、Web サーバと同じホスト上にあります。
 
-  データベース名は `magento`、ユーザー名とパスワードは両方とも `magento` です
+  データベース名は`magento`で、ユーザー名とパスワードはどちらも`magento`です
 
-* サーバーの書き換えを使用
+* サーバーの書き換えの使用
 
 * 管理者には次のプロパティがあります。
 
-   * 氏名は `Magento User`
-   * ユーザー名は `admin`、パスワードは `admin123`
-   * 電子メール アドレスは `user@example.com` です
+   * 氏名は`Magento User`です
+   * ユーザー名は`admin`、パスワードは`admin123`です
+   * メールアドレスは`user@example.com`です
 
-* デフォルト言語は `en_US` （英語（米国））
-* デフォルトの通貨は米国ドルです
+* 既定の言語は`en_US` （米国英語）です
+* デフォルト通貨は米ドルです
 * デフォルトのタイムゾーンは米国中部（アメリカ/シカゴ）です
-* OpenSearch 1.2 が `os-host.example.com` にインストールされ、ポート 9200 に接続されている
+* OpenSearch 1.2は`os-host.example.com`にインストールされ、ポート 9200に接続しています
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -265,7 +265,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --opensearch-port=9200
 ```
 
-次のようなメッセージが表示され、インストールが成功したことが示されます。
+インストールが成功したことを示す次のようなメッセージが表示されます。
 
 ```
 Post installation file permissions check...
@@ -275,7 +275,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 [SUCCESS]: Admin Panel URI: /admin_puu71q
 ```
 
-#### 例 2 – 管理者ユーザーアカウントを使用しない基本インストール
+#### 例2 – 管理者ユーザーアカウントを持たない基本インストール
 
 次の例に示すように、管理者ユーザーを作成せずにAdobe Commerceをインストールできます。
 
@@ -287,7 +287,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --opensearch-port=9200
 ```
 
-インストールが成功すると、次のようなメッセージが表示されます。
+インストールが成功した場合、次のようなメッセージが表示されます。
 
 ```
 Post installation file permissions check...
@@ -297,35 +297,35 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 [SUCCESS]: Admin Panel URI: /admin_puu71q
 ```
 
-インストール後、`admin:user:create` のコマンドを使用して管理者ユーザーを作成できます。
-[&#x200B; 管理者の作成または編集 &#x200B;](tutorials/admin.md#create-or-edit-an-administrator)
+インストール後、`admin:user:create` コマンドを使用して管理者ユーザーを作成できます。
+[管理者を作成または編集](tutorials/admin.md#create-or-edit-an-administrator)
 
-#### 例 3 – 追加オプションを使用したインストール
+#### 例3：追加のオプションを使用したインストール
 
 次の例では、次のオプションを使用してAdobe Commerceをインストールします。
 
-* アプリケーションは、`magento2` 上の Web サーバーの docroot に対する相対パスである `localhost` ディレクトリにインストールされ、Admin へのパスは `admin` になります。したがって、次のようになります。
+* アプリケーションは、`magento2`のweb サーバーのdocrootに関連する`localhost` ディレクトリにインストールされ、管理者へのパスは`admin`です。したがって、次のようになります。
 
-  ストアフロント URL は `http://127.0.0.1` です
+  ストアフロント URLは`http://127.0.0.1`です
 
 * データベース・サーバは、Web サーバと同じホスト上にあります。
 
-  データベース名は `magento`、ユーザー名とパスワードは両方とも `magento` です
+  データベース名は`magento`で、ユーザー名とパスワードはどちらも`magento`です
 
 * 管理者には次のプロパティがあります。
 
-   * 氏名は `Magento User`
-   * ユーザー名は `admin`、パスワードは `admin123`
-   * 電子メール アドレスは `user@example.com` です
+   * 氏名は`Magento User`です
+   * ユーザー名は`admin`、パスワードは`admin123`です
+   * メールアドレスは`user@example.com`です
 
-* デフォルト言語は `en_US` （英語（米国））
-* デフォルトの通貨は米国ドルです
+* 既定の言語は`en_US` （米国英語）です
+* デフォルト通貨は米ドルです
 * デフォルトのタイムゾーンは米国中部（アメリカ/シカゴ）です
-* インストーラーは、まずデータベースをクリーンアップしてから、テーブルとスキーマをインストールします
-* 受注増分の接頭辞 `ORD$` を使用できます（特殊文字 [`$`] が含まれているため、値は二重引用符で囲む必要があります）
+* インストーラーは、テーブルとスキーマをインストールする前に、まずデータベースをクリーンアップします
+* 販売注文増分プレフィックス `ORD$`を使用できます（特殊文字[`$`]が含まれているため、値は二重引用符で囲む必要があります）
 * セッションデータはデータベースに保存されます
-* サーバーの書き換えを使用
-* OpenSearch は `os-host.example.com` にインストールされ、ポート 9200 に接続されます。
+* サーバーの書き換えの使用
+* OpenSearchは`os-host.example.com`にインストールされ、ポート 9200に接続しています
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -340,9 +340,9 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 >[!NOTE]
 >
->コマンドは、1 行で入力するか、前の例のように、各行の末尾に `\` 文字を付けて入力する必要があります。
+>コマンドは、1行で入力するか、前の例のように、各行の末尾に`\`文字を付けて入力する必要があります。
 
-インストールが成功すると、次のようなメッセージが表示されます。
+インストールが成功した場合、次のようなメッセージが表示されます。
 
 ```
 Post installation file permissions check...
@@ -352,9 +352,9 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 [SUCCESS]: Admin Panel URI: /admin_puu71q
 ```
 
-#### 例 4:ActiveMQ Artemis を使用したインストール
+#### 例4 - ActiveMQ Artemisを使用したインストール
 
-次の例は、ActiveMQ Artemis をメッセージブローカーとして使用してAdobe Commerceをインストールする方法を示しています。
+次に、メッセージブローカーとしてActiveMQ Artemisを使用してAdobe Commerceをインストールする例を示します。
 
 ```bash
 bin/magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -369,6 +369,6 @@ bin/magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 >[!NOTE]
 >
->ActiveMQ Artemis のインストールには、Adobe Commerce 2.4.5 以降が必要です。
+>ActiveMQ Artemisのインストールには、Adobe Commerce 2.4.5以降が必要です。
 
 <!-- Last updated from includes: 2024-04-16 09:42:31 -->

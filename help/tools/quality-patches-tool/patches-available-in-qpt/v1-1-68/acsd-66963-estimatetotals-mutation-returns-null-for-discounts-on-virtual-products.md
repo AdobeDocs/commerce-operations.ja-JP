@@ -1,43 +1,43 @@
 ---
-title: 'ACSD-66963: 「estimateTotals」ミューテーションが、仮想製品の割引に対して null を返す'
-description: ACSD-66963 パッチを適用すると、「estimateTotals」がバーチャル商品のみを含む買い物かごに割引コードが適用された場合に割引のために*null*を返すAdobe Commerceの問題が修正されます。
+title: 'ACSD-66963: ''estimateTotals''の突然変異で、バーチャル製品の割引に対してnullが返される'
+description: ACSD-66963 パッチを適用して、バーチャル商品のみのカートに割引コードが適用された場合、「estimateTotals」が割引の*null*を返すAdobe Commerceの問題を修正します。
 feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 0eede09026df98426cd3b6b1550be274c26d7e13
+exl-id: b62e48f5-a9d6-456a-97e7-96f740d8e927
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
 
+# ACSD-66963: `estimateTotals`の突然変異が仮想製品の割引に対してnullを返します
 
-# ACSD-66963：仮想製品の割引に対して `estimateTotals` mutation が null を返す
-
-ACSD-66963 パッチは、仮想製品のみを含む買 `estimateTotals` 物かごに割引コードが適用された場合に、割引のために *null* が返される問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 がインストールされている場合に使用できます。 パッチ ID は ACSD-66963 です。 この問題はAdobe Commerce 2.4.8 で修正されました。
+ACSD-66963 パッチは、仮想製品のみを含むカートに割引コードが適用された場合、`estimateTotals`が&#x200B;*null*&#x200B;を割引として返す問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68がインストールされている場合に利用できます。 パッチ IDはACSD-66963です。 この問題は、Adobe Commerce 2.4.8で修正されています。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7-p4
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7 - 2.4.7-p6
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-仮想製品のみを含む買い物かごに割引コードが適用された場合、割引に対して `estimateTotals` ミューテーションは *null* を返します。
+仮想商品のみを含むカートに割引コードが適用された場合、`estimateTotals`の変異は&#x200B;*null*&#x200B;を割引として返します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 仮想製品のみを含む買い物かごを作成します。
-1. 割引コードを適用します。
+1. バーチャル商品のみを含むカートを作成します。
+1. 割引コードを適用する：
 
    ```
    mutation {
@@ -77,66 +77,66 @@ ACSD-66963 パッチは、仮想製品のみを含む買 `estimateTotals` 物か
    }
    ```
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-仮想商品のみを含む買い物かごには、割引情報が含まれています。
+バーチャル商品のみを含むカートには、割引情報が含まれています。
 
-    &quot;&#39;
-    &lbrace;
-    &quot;data&quot;: &lbrace;
-    &quot;estimateTotals&quot;: &lbrace;
-    &quot;cart&quot;: &lbrace;
-    &quot;prices&quot;: &lbrace;
-    &quot;discounts&quot;: &lbrack;
-    &lbrace;
-    &quot;amount&quot;: &lbrace;
-    &quot;value&quot;: 100.5,
-    &quot;currency&quot;: &quot;USD&quot;
-    &rbrace;,
-    &quot;label&quot;: &quot;テスト用の 2 番目の割引コード&quot;,
-    &quot;coupon&quot;: &lbrace;
-    &quot;コード&quot;: &quot;z3r0c00l&quot;
-    &rbrace;,
-    &quot;applied_to&quot;: &quot;ITEM&quot;,
-    &quot;type&quot;: null
-    &rbrace;
-     
-     
-     
-     
-     
-     {}
-     
-     
-&rbrack; 次の値を使用します
-<u> 実際の結果 </u>:
+```
+    {
+      "data": {
+        "estimateTotals": {
+          "cart": {
+            "prices": {
+              "discounts": [
+                {
+                  "amount": {
+                    "value": 100.5,
+                    "currency": "USD"
+                  },
+                  "label": "A second discount code for testing",
+                  "coupon": {
+                    "code": "z3r0c00l"
+                  },
+                  "applied_to": "ITEM",
+                  "type": null
+                }
+              ]
+            }
+          }
+        }
+      },
+      "extensions": {}
+    }
+```
 
-仮想商品のみを含む買い物かごに対して、割引情報が *null* として返されます。
+<u>実際の結果</u>:
 
-    &quot;&#39;
-    &lbrace;
-    &quot;data&quot;: &lbrace;
-    &quot;estimateTotals&quot;: &lbrace;
-    &quot;cart&quot;: &lbrace;
-    &quot;prices&quot;: &lbrace;
-    &quot;discounts&quot;: null
-    &rbrace;
-    &rbrace;
-    &rbrace;
-    &rbrace;,
-    &quot;extensions&quot;: {}
-    &rbrace;
-    &quot;&#39;
+仮想商品のみのカートの割引情報は&#x200B;*null*&#x200B;として返されます。
 
-## パッチの適用
+```
+    {
+      "data": {
+        "estimateTotals": {
+          "cart": {
+            "prices": {
+              "discounts": null
+            }
+          }
+        }
+      },
+      "extensions": {}
+    }
+```
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+## パッチを適用する
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-## 関連資料
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool]  ガイドの](/help/tools/quality-patches-tool/usage.md)>使用状況[!DNL Quality Patches Tool]。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+## 関連トピックス
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
+
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

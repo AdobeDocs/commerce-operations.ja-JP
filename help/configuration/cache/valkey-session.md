@@ -1,9 +1,9 @@
 ---
-title: セッションストレージに Valkey を使用
-description: Adobe Commerceのセッションストレージに対して Valkey を設定する方法を説明します。 セットアップ手順、設定オプション、パフォーマンスの最適化手法について説明します。
+title: セッション ストレージにValkeyを使用
+description: Adobe Commerceでセッションストレージ用にValkeyを設定する方法を説明します。 セットアップ手順、設定オプション、パフォーマンス最適化テクニックをご覧ください。
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 1%
@@ -11,28 +11,28 @@ ht-degree: 1%
 ---
 
 
-# セッションストレージに Valkey を使用
+# セッション ストレージにValkeyを使用
 
 >[!IMPORTANT]
 >
->続行する前に [Valkey をインストール &#x200B;](config-valkey.md#install-valkey) する必要があります。
+>続行する前に[Valkey](config-valkey.md#install-valkey)をインストールする必要があります。
 
 Adobe Commerceには、Valkey セッションストレージを設定するためのコマンドラインオプションが用意されています。
 
-`setup:config:set` コマンドを実行し、Valkey 固有のパラメーターを指定します。
+`setup:config:set` コマンドを実行し、Valkey固有のパラメーターを指定します。
 
 ```bash
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parameter_name>=<parameter_value>...
 ```
 
-- `--session-save=valkey` は、Valkey セッションストレージを有効にします。 この機能が既に有効になっている場合は、このパラメーターを省略します。
+- `--session-save=valkey`はValkey セッション ストレージを有効にします。 この機能が既に有効になっている場合は、このパラメーターを省略します。
 
-- セッションストレージを構成するパラメーターと値のペアのリストを `--session-save-valkey-<parameter_name>=<parameter_value>` に示します。
+- `--session-save-valkey-<parameter_name>=<parameter_value>`は、セッション ストレージを構成するパラメーター/値のペアのリストです：
 
 
 >[!NOTE]
 >
->**Adobe Commerce 2.4.9-alpha2** 以降、ライセンスの変更により、**Valkey** は CLI ツールで Redis を正式に置き換えました。 Valkey は Redis のフォークであり、ほぼ同じ機能を維持しています。 **バージョン 2.4.8 以前** の場合、Valkey の設定に使用される CLI コマンドは Redis の場合と同じままであり、シームレスな後方互換性が確保され、移行またはデュアル環境のサポートが簡素化されます。 次の例は、Valkey 固有のコマンドを示しています。
+>**Adobe Commerce 2.4.9-alpha2**&#x200B;以降、**Valkey**&#x200B;は、ライセンスの変更により、CLI ツールのRedisを正式に置き換えました。 ValkeyはRedisのフォークであり、ほぼ同じ機能を維持しています。 **バージョン 2.4.8以前**&#x200B;の場合、Valkeyの設定に使用するCLI コマンドはRedisの場合と同じままとなり、シームレスな後方互換性を確保し、移行またはデュアル環境のサポートを簡素化します。 次の例は、Valkey固有のコマンドを示しています。
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
@@ -40,32 +40,32 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 
 | コマンドラインパラメーター | パラメーター名 | 意味 | デフォルト値 |
 |----------------------------------------------|--- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--- |
-| session-save-valkey-host | host | 完全修飾ホスト名、IP アドレス、または UNIX ソケットを使用する場合は絶対パス。 | localhost |
-| session-save-valkey-port | ポート | 有効なサーバーリッスンポート。 | 6379 |
-| session-save-valkey-password | password | Valkey サーバーで認証が必要な場合にパスワードを指定します。 | 空 |
-| session-save-valkey-timeout | timeout | 接続タイムアウト （秒）。 | 2.5 |
-| session-save-valkey-persistent-id | persistent_identifier | 永続接続を有効にする一意の文字列（例：sess-db0）。<br>[phpredis および php-fpm の既知の問題 &#x200B;](https://github.com/phpredis/phpredis/issues/70)。 |
-| session-save-valkey-db | データベース | 一意の Valkey データベース番号。データの損失から保護することをお勧めします。<br><br>**重要**：複数のタイプのキャッシュに Valkey を使用する場合、データベース番号は異なる必要があります。 デフォルトのキャッシュ・データベース番号を `0`、ページ・キャッシュ・データベース番号を `1`、セッション・ストレージ・データベース番号を `2` に割り当てることをお勧めします。 | 0 |
-| session-save-valkey-compression-threshold | compression_threshold | 圧縮を無効にするには、`0` に設定します（`suhosin.session.encrypt = On` の場合に推奨されます）。 | 2048 |
-| session-save-valkey-compression-lib | compression_library | オプション：gzip、lzf、lz4 または snappy。 | gzip |
-| session-save-valkey-log-level | log_level | 最小の詳細から最大の詳細の順にリストされた次のいずれかに設定します：<ul><li>0 （緊急：最も重大なエラーのみ）<li>1 （アラート：直ちにアクションが必要）<li>2 （重大：アプリケーションコンポーネントを使用できない）<li>3 （エラー：実行時エラー。重要ではありませんが監視する必要があります）<li>4 （警告：追加情報、推奨）<li>5 （注意：正常だが重大な状態）<li>6 （情報：情報メッセージ）<li>7 （デバッグ：開発またはテスト用の最も多い情報のみ）</ul> | 1 |
-| session-save-valkey-max-concurrency | max_concurrency | 1 つのセッションでロックを待機できるプロセスの最大数。 大規模な実稼動クラスターの場合は、これを PHP プロセス数の 10% 以上に設定します。 | 6 |
-| session-save-valkey-break-after-frontend | break_after_frontend | フロントエンド（ストアフロント）セッションのロックを解除しようとする前に待機する秒数。 | 5 |
-| session-save-valkey-break-after-adminhtml | break_after_adminhtml | 管理者（管理者） セッションのロックを解除しようとする前の待機秒数。 | 30 |
-| session-save-valkey-first-lifetime | first_lifetime | 最初の書き込み時の非ボットのセッションの有効期間（秒）、または `0` を使用して無効にします。 | 600 |
-| session-save-valkey-bot-first-lifetime | bot_first_lifetime | 最初の書き込み時のボットのセッションの有効期間（秒単位）。または、`0` を使用して無効にします。 | 60 |
-| session-save-valkey-bot-lifetime | bot_lifetime | 以降の書き込み時のボットのセッションの有効期間（秒単位）。または、`0` を使用して無効にします。 | 7200 |
+| session-save-valkey-host | ホスト | UNIX ソケットを使用している場合は、完全修飾ホスト名、IP アドレス、または絶対パス。 | localhost |
+| session-save-valkey-port | ポート | Valkey サーバーのリッスン ポート。 | 6379 |
+| session-save-valkey-password | パスワード | Valkey サーバーで認証が必要な場合にパスワードを指定します。 | empty |
+| session-save-valkey-timeout | タイムアウト | 接続タイムアウト（秒単位）。 | 2.5 |
+| session-save-valkey-persistent-id | persistent_identifier | 永続的な接続を有効にする一意の文字列（sess-db0など）。<br>[phpredisおよびphp-fpm](https://github.com/phpredis/phpredis/issues/70)に関する既知の問題。 |  |
+| session-save-valkey-db | データベース | 一意のValkey データベース番号。データ損失から保護するために推奨されます。<br><br>**重要**: Valkeyを複数のタイプのキャッシュに使用する場合、データベース番号は異なる必要があります。 既定のキャッシュ データベース番号を`0`に、ページ キャッシュ データベース番号を`1`に、セッション ストレージ データベース番号を`2`に割り当てることをお勧めします。 | 0 |
+| session-save-valkey-compression-threshold | compression_threshold | 圧縮を無効にするには、`0`に設定します（`suhosin.session.encrypt = On`の場合に推奨）。 | 2048 |
+| session-save-valkey-compression-lib | compression_library | オプション：gzip、lzf、lz4またはsnappy。 | gzip |
+| session-save-valkey-log-level | log_level | 次のいずれかに設定し、最小詳細から最大詳細の順にリストします。<ul><li>0 （緊急：最も重大なエラーのみ）<li>1 （アラート：即時のアクションが必要）<li>2 （クリティカル：アプリケーションコンポーネントが使用できません）<li>3 （エラー：実行時エラー。重要ではありませんが、監視する必要があります）<li>4 （警告：追加情報、推奨）<li>5 （注：正常だが重大な状態）<li>6 （情報：情報メッセージ）<li>7 （デバッグ：開発またはテスト用の情報のみ）</ul> | 1 |
+| session-save-valkey-max-concurrency | max_concurrency | 1つのセッションでロックを待機できるプロセスの最大数。 大規模な実稼動クラスターの場合は、これをPHP プロセス数の10%以上に設定します。 | 6 |
+| session-save-valkey-break-after-frontend | break_after_frontend | フロントエンド（ストアフロント）セッションのロックを解除するまでの待機時間（秒数）。 | 5 |
+| session-save-valkey-break-after-adminhtml | break_after_adminhtml | Adminhtml （つまり、Admin）セッションのロックを解除する前に待機する秒数。 | 30 |
+| session-save-valkey-first-lifetime | first_lifetime | 最初の書き込み時に非ボットのセッションの有効期間（秒単位）。または、`0`を使用して無効にします。 | 600 |
+| session-save-valkey-bot-first-lifetime | bot_first_lifetime | 最初の書き込み時のボットのセッションの有効期間（秒単位）。または`0`を使用して無効にします。 | 60 |
+| session-save-valkey-bot-lifetime | bot_lifetime | 後続の書き込み時のボットのセッションの有効期間（秒単位）、または`0`を使用して無効にします。 | 7200 |
 | session-save-valkey-disable-locking | disable_locking | セッションロックを完全に無効にします。 | 0 （false） |
-| session-save-valkey-min-lifetime | min_lifetime | セッションの最短有効期間（秒単位）。 | 60 |
-| session-save-valkey-max-lifetime | max_lifetime | セッションの最長有効期間（秒単位）。 | 2592000 （720 時間） |
-| session-save-valkey-sentinel-master | sentinel_master | Valkey Sentinel のマスター名。 | 空 |
-| session-save-valkey-sentinel-servers | sentinel_server | Valkey Sentinel サーバーのリスト （コンマ区切り）。 | 空 |
-| session-save-valkey-sentinel-verify-master | sentinel_verify_master | Valkey Sentinel のマスターステータスフラグを確認します。 | 0 （false） |
-| session-save-valkey-sentinel-connect-retries | sentinel_connect_retries | センサーの接続が再試行されます。 | 5 |
+| session-save-valkey-min-lifetime | min_lifetime | セッションの最小有効期間（秒単位）。 | 60 |
+| session-save-valkey-max-lifetime | max_lifetime | セッションの最大有効期間（秒）。 | 2592000 （720時間） |
+| session-save-valkey-sentinel-master | sentinel_master | Valkey Sentinel マスター名。 | empty |
+| session-save-valkey-sentinel-servers | sentinel_servers | Valkey Sentinel サーバーのリスト。コンマ区切りです。 | empty |
+| session-save-valkey-sentinel-verify-master | sentinel_verify_master | Valkey Sentinel マスターステータス フラグを確認します。 | 0 （false） |
+| session-save-valkey-sentinel-connect-retries | sentinel_connect_retries | 接続はセンチネルの再試行を行います。 | 5 |
 
 ## 例
 
-次の例では、Valkey をセッション・データ・ストアとして設定し、ホストを `127.0.0.1` に設定し、ログ・レベルを `4` に設定し、データベース番号を `2` に設定します。 その他のパラメーターはすべてデフォルト値に設定されます。
+次の例では、Valkeyをセッションデータストアとして設定し、ホストを`127.0.0.1`に設定し、ログレベルを`4`に設定し、データベース番号を`2`に設定します。 その他のパラメーターはすべてデフォルト値に設定されます。
 
 ```bash
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-host=127.0.0.1 --session-save-valkey-log-level=4 --session-save-valkey-db=2
@@ -73,7 +73,7 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-host=12
 
 >[!NOTE]
 >
->**Adobe Commerce 2.4.9** 以降、ライセンスの変更により、**Valkey** は CLI ツールで Redis を正式に置き換えました。 Valkey は Redis のフォークであり、ほぼ同じ機能を維持しています。 **バージョン 2.4.8 以前** の場合、Valkey の設定に使用される CLI コマンドは Redis の場合と同じままであり、シームレスな後方互換性が確保され、移行またはデュアル環境のサポートが簡素化されます。 次の例は、Valkey 固有のコマンドを示しています。
+>**Adobe Commerce 2.4.9**&#x200B;以降、**Valkey**&#x200B;は、ライセンスの変更により、CLI ツールのRedisを正式に置き換えました。 ValkeyはRedisのフォークであり、ほぼ同じ機能を維持しています。 **バージョン 2.4.8以前**&#x200B;の場合、Valkeyの設定に使用するCLI コマンドはRedisの場合と同じままとなり、シームレスな後方互換性を確保し、移行またはデュアル環境のサポートを簡素化します。 次の例は、Valkey固有のコマンドを示しています。
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
@@ -81,7 +81,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.
 
 ### 結果
 
-Commerceは、次のような行を `<magento_root>app/etc/env.php` に追加します。
+Commerceは、次のような行を`<magento_root>app/etc/env.php`に追加します。
 
 ```php
 'session' => [
@@ -111,11 +111,11 @@ Commerceは、次のような行を `<magento_root>app/etc/env.php` に追加し
 
 >[!INFO]
 >
->セッションレコードの TTL は、Cookie の有効期間の値を使用します。この値は、管理者で設定します。 Cookie の有効期間が `0` に設定されている場合（デフォルトは `3600`）、Valkey セッションは min_lifetime に指定された秒数で期限切れになります（デフォルトは `60`）。 この不一致は、Valkey Cookie とセッション Cookie が `0` のライフタイム値を解釈する方法の違いによるものです。 この動作が望ましくない場合は、min_lifetime の値を増やします。
+>セッションレコードのTTLは、管理者で設定されているCookie Lifetimeの値を使用します。 Cookieの有効期間が`0`に設定されている場合（デフォルトは`3600`）、Valkey セッションはmin_lifetimeで指定された秒数で期限切れになります（デフォルトは`60`）。 この不一致は、Valkeyとセッション Cookieが`0`のライフタイム値をどのように解釈するかに違いがあるためです。 その動作が望ましくない場合は、min_lifetimeの値を増やします。
 
-## Valkey 接続の確認
+## Valkey接続の検証
 
-Valkey とCommerceが正しく連携していることを確認するには、Valkey が動作しているサーバーにログインし、ターミナルを開いて `valkey-cli monitor` コマンドまたは `redis-cli ping` コマンドを使用します。
+ValkeyとCommerceが正常に連携していることを確認するには、Valkeyが動作しているサーバーにログインしてターミナルを開き、`valkey-cli monitor` コマンドまたは`redis-cli ping` コマンドを使用します。
 
 ### Valkey monitor コマンド
 
@@ -140,10 +140,10 @@ valkey-cli monitor
 valkey-cli ping
 ```
 
-期待される応答は `PONG` です。
+予想される応答は`PONG`です。
 
-両方のコマンドが成功した場合は、Valkey が正しく設定されています。
+両方のコマンドが成功した場合、Valkeyは適切に設定されます。
 
-### 圧縮データの検査
+### 圧縮されたデータの検査
 
-[RESP.app](https://flathub.org/apps/app.resp.RESP) は、圧縮されたセッションデータとページキャッシュを検査するために、Commerce 2 セッションとページキャッシュの自動解凍をサポートし、PHP セッションデータを人間が読み取り可能なフォーマットで表示します。
+圧縮されたセッションデータとページキャッシュを調べるために、[RESP.app](https://flathub.org/apps/app.resp.RESP)は、Commerce 2のセッションとページキャッシュの自動解凍をサポートし、PHP セッションデータを人間が読み取り可能な形式で表示します。

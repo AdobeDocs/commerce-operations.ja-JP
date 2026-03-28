@@ -1,71 +1,71 @@
 ---
-title: ACSD-51890:[!UICONTROL Submit review] のボタンは複数回クリックできます
-description: ACSD-51890 パッチを適用すると、検証を行わずに「[!UICONTROL Submit Review]」ボタンを複数回クリックできるAdobe Commerceの問題  [!DNL Google reCAPTCHA v3]  修正できます。
+title: 'ACSD-51890: [!UICONTROL Submit review] ボタンを複数回クリックできます'
+description: ACSD-51890 パッチを適用して、[!UICONTROL Submit Review]検証なしで [!DNL Google reCAPTCHA v3]  ボタンを複数回クリックできるAdobe Commerceの問題を修正します。
 feature: Products
 role: Admin
 exl-id: db69ccdc-c66e-4bdb-9783-772f2af0d33f
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%
 
 ---
 
-# ACSD-51890：検証 **[!UICONTROL Submit Review]** なくてもボタンを複数回クリック **[!DNL Google reCAPTCHA v3]** きます
+# ACSD-51890: **[!UICONTROL Submit Review]**&#x200B;検証なしで&#x200B;**[!DNL Google reCAPTCHA v3]** ボタンを複数回クリックできます
 
 >[!NOTE]
 >
->このパッチは [ACSD-55112](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-55112-submit-review-button-can-be-clicked-multiple-times.md) に置き換えられます。
+>このパッチは[ACSD-55112](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-55112-submit-review-button-can-be-clicked-multiple-times.md)に置き換えられます。
 
-ACSD-51890 パッチは、検証を行わずに **[!UICONTROL Submit Review]** ボタンを複数回クリックできる問題 **[!DNL Google reCAPTCHA v3]** 修正しています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.35 がインストールされている場合に使用できます。 パッチ ID は ACSD-51890 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-51890 パッチは、**[!UICONTROL Submit Review]**&#x200B;検証なしで&#x200B;**[!DNL Google reCAPTCHA v3]** ボタンを複数回クリックできる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.35がインストールされている場合に利用できます。 パッチ IDはACSD-51890です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.0 ～ 2.4.6-p1
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.0 - 2.4.6-p1
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-「**[!UICONTROL Submit Review]**」ボタンは、**[!DNL Google reCAPTCHA v3]** の検証を行わずに複数回クリックできます。
+**[!UICONTROL Submit Review]** ボタンは、**[!DNL Google reCAPTCHA v3]**&#x200B;検証なしで複数回クリックできます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 製品レビュー用に **[!DNL Google reCAPTCHA v3]** を有効にします。
-1. 製品ページを開き、「**[!UICONTROL Review]**」セクションに移動し、[!DNL reCAPTCHA] が表示されていることを確認します。
-1. レビューフォームに入力し、「**[!UICONTROL Submit Review]**」ボタンをできるだけ早く複数回クリックします。
-1. 管理者から「**[!UICONTROL Review]**」セクションを開きます。
+1. 製品レビュー用に&#x200B;**[!DNL Google reCAPTCHA v3]**&#x200B;を有効にします。
+1. 製品ページを開き、**[!UICONTROL Review]** セクションに移動し、[!DNL reCAPTCHA]が表示されていることを確認します。
+1. レビューフォームに入力し、**[!UICONTROL Submit Review]** ボタンをできるだけ早く複数回クリックします。
+1. 管理者から&#x200B;**[!UICONTROL Review]** セクションを開きます。
 
-<u> 期待される結果 </u>
+<u>期待される結果</u>
 
-重複するレビューは作成されません。
+重複したレビューは作成されません。
 
-<u> 実績 </u>
+<u>実際の結果</u>
 
-重複するレビューが作成されます。
+重複したレビューが作成されます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool]  ガイドの](/help/tools/quality-patches-tool/usage.md)>使用状況[!DNL Quality Patches Tool]。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [ [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) ガイドの[!UICONTROL Quality Patches Tool]を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja>): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) ガイドの「[!DNL Quality Patches Tool] パッチを検索する」を参照してください。
