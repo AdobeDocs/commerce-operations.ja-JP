@@ -15,7 +15,7 @@ Adobe Commerce on cloud infrastructureは、共通の責任セキュリティと
 
 この共有モデルにより、販売者は、運用上の責任とコストを最小限に抑えながら、ビジネス要件を満たす柔軟性が高く、カスタマイズ可能で、スケーラブルなソリューションを設計および導入できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3458392/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3458393/?captions=jpn&learn=on&enablevpops)
 
 一般的に、Adobeは次の責任を負います。
 
