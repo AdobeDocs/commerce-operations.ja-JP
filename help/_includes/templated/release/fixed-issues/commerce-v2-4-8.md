@@ -1997,7 +1997,7 @@ _AC-8353 - [GitHub issue](https://github.com/magento/magento2/issues/37253) - [G
 
 _AC-8356 - [GitHub issue](https://github.com/magento/magento2/issues/37250) - [GitHub コードの貢献度](https://github.com/magento/magento2/pull/37000)_
 
-#### editorconfig構文の空白が`[{composer,auth}.json]`のルールを壊しています
+#### editorconfig構文の空白が`[&lbrace;composer,auth&rbrace;.json]`のルールを壊しています
 
 システムは、editorconfigの構文エラーの修正に続いて、コンポーザーおよびauth.json ファイルに4 スペースインデントを正しく適用するようになりました。 以前は、editorconfig構文にスペースがあるため、これらのファイルの形式が正しくなく、2 スペースのインデントが設定されていました。
 
@@ -2155,7 +2155,7 @@ _ACP2E-2642 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 _ACP2E-2653 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### 価格フィルター`{from:"0"}`を含むGraphQL Productsの呼び出しは結果を返しません
+#### 価格フィルター`&lbrace;from:"0"&rbrace;`を含むGraphQL Productsの呼び出しは結果を返しません
 
 以前のgraphql製品では、スローされた例外が原因で、フィルターでゼロ価格を検索しても結果は全く返されませんでした。 これで、検索は期待どおりに結果を返します。
 

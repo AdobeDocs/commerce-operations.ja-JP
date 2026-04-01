@@ -16,11 +16,11 @@ ht-degree: 0%
 Commerceのレスポンシブなサイトを実現するには、CSSとJavaScript（JS）のリソースファイルを最適化し、レンダーブロックリソースを排除します。
 
 - **CSS ファイルとJS ファイルを最適化**- Adobe Commerceを使用してファイルを縮小およびバンドルするように設定することで、CSSおよびJavaScript（JS）ファイルを読み込むのに必要な時間を短縮します。
-- **レンダリング ブロック リソースを排除** – 重要なJSおよびCSS機能をインラインで配信し、重要ではないJS/CSS スタイルをすべて延期することを検討します。 ガイダンスについては、[ レンダーブロッキングリソースの排除](https://web.dev/render-blocking-resources/)を参照してください。
+- **レンダリング ブロック リソースを排除** – 重要なJSおよびCSS機能をインラインで配信し、重要ではないJS/CSS スタイルをすべて延期することを検討します。 ガイダンスについては、[&#x200B; レンダーブロッキングリソースの排除](https://web.dev/render-blocking-resources/)を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン、2.3以降](../../../release/versions.md) /:
+[&#x200B; サポートされているすべてのバージョン、2.3以降](../../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
@@ -104,7 +104,7 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 ## 追加情報
 
 - [クライアントサイド最適化設定](../../../performance/configuration.md#client-side-optimization-settings)
-- [設定のベストプラクティス ](../../../performance/configuration.md#bundling-tips)の&#x200B;*バンドルヒント* - サードパーティのバンドルツール、HTTP/2、非推奨のJSおよびCSS結合に関するガイダンス
-- [ ユーザーガイド：リソースファイルの最適化](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
-- [ フロントエンド開発者ガイド：CSSの結合、縮小、サイトパフォーマンス ](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [設定のベストプラクティス &#x200B;](../../../performance/configuration.md#bundling-tips)の&#x200B;*バンドルヒント* - サードパーティのバンドルツール、HTTP/2、非推奨のJSおよびCSS結合に関するガイダンス
+- [&#x200B; ユーザーガイド：リソースファイルの最適化](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [&#x200B; フロントエンド開発者ガイド：CSSの結合、縮小、サイトパフォーマンス &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [高度なJavaScriptのバンドル](../../../performance/advanced-js-bundling.md)

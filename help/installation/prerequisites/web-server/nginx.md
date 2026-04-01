@@ -27,7 +27,7 @@ Adobeは、お使いのAdobe Commerce リリースの[必要システム構成](
 sudo apt -y install nginx
 ```
 
-[ ソースからNginxをビルドすることもできます](https://www.armanism.com/blog/install-nginx-on-ubuntu)。
+[&#x200B; ソースからNginxをビルドすることもできます](https://www.armanism.com/blog/install-nginx-on-ubuntu)。
 
 次のセクションを完了してアプリケーションをインストールしたら、サンプル設定ファイルを使用して[Nginx](#configure-nginx)を設定します。 この推奨設定では、Commerce アプリケーションの機能とセキュリティの両方が保持されます。
 
@@ -91,7 +91,7 @@ Adobe Commerceは、次のような方法でダウンロードできます。
 
 この例では、コマンドラインを使用したComposer ベースのインストールを示します。
 
-1. [ ファイルシステムの所有者](../file-system/overview.md)として、アプリケーションサーバーにログインします。
+1. [&#x200B; ファイルシステムの所有者](../file-system/overview.md)として、アプリケーションサーバーにログインします。
 
 1. Web サーバーのdocroot ディレクトリまたは仮想ホストのdocrootとして設定したディレクトリに変更します。 この例では、Ubuntuのデフォルト `/var/www/html`を使用しています。
 
@@ -143,7 +143,7 @@ Adobe Commerceは、次のような方法でダウンロードできます。
    chmod u+x bin/magento
    ```
 
-1. [ コマンドライン ](../../advanced.md)からインストールします。 この例では、インストールディレクトリの名前が`magento2ee`で、データベースホストが同じマシン （`localhost`）上にあることが前提としています。
+1. [&#x200B; コマンドライン &#x200B;](../../advanced.md)からインストールします。 この例では、インストールディレクトリの名前が`magento2ee`で、データベースホストが同じマシン （`localhost`）上にあることが前提としています。
 
    ```bash
    bin/magento setup:install \
@@ -241,7 +241,7 @@ Adobeでは、Commerce アプリケーションの機能とセキュリティの
 
 ### インストールの確認
 
-インストールを確認するには、web ブラウザーを開き、サイトのベース URLに移動します。 詳細については、[ インストールの確認](../../next-steps/verify.md)を参照してください。
+インストールを確認するには、web ブラウザーを開き、サイトのベース URLに移動します。 詳細については、[&#x200B; インストールの確認](../../next-steps/verify.md)を参照してください。
 
 ## CentOS 7へのインストール
 
@@ -382,7 +382,7 @@ Adobe Commerceは、次のような方法でダウンロードできます。
 
 この例では、コマンドラインを使用したComposer ベースのインストールを示します。
 
-1. [ ファイルシステムの所有者](../file-system/overview.md)として、アプリケーションサーバーにログインします。
+1. [&#x200B; ファイルシステムの所有者](../file-system/overview.md)として、アプリケーションサーバーにログインします。
 
 1. Web サーバーのdocroot ディレクトリまたは仮想ホストのdocrootとして設定したディレクトリに変更します。 この例では、CentOSのデフォルト `/usr/share/nginx/html`を使用します。
 
@@ -434,7 +434,7 @@ Adobe Commerceは、次のような方法でダウンロードできます。
    chmod u+x bin/magento
    ```
 
-1. [ コマンドライン ](../../advanced.md)からインストールします。 この例では、インストールディレクトリの名前が`magento2ee`で、データベースホストが同じマシン （`localhost`）上にあることが前提としています。
+1. [&#x200B; コマンドライン &#x200B;](../../advanced.md)からインストールします。 この例では、インストールディレクトリの名前が`magento2ee`で、データベースホストが同じマシン （`localhost`）上にあることが前提としています。
 
    ```bash
    bin/magento setup:install \
@@ -587,4 +587,4 @@ SELinuxとfirewalldを設定するには：
 
 ### インストールの確認
 
-インストールを確認するには、web ブラウザーを開き、サイトのベース URLに移動します。 詳細については、[ インストールの確認](../../next-steps/verify.md)を参照してください。
+インストールを確認するには、web ブラウザーを開き、サイトのベース URLに移動します。 詳細については、[&#x200B; インストールの確認](../../next-steps/verify.md)を参照してください。

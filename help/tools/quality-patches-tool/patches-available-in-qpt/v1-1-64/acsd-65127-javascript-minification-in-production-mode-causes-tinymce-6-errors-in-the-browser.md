@@ -46,7 +46,7 @@ bin/magento config:set --lock-config dev/js/merge_files 1
 
 >[!NOTE]
 >
->Adobeでは、**[!UICONTROL Merge JavaScript Files]**&#x200B;を有効にすることはお勧めしません。 [JS ファイルの結合（推奨されません） ](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files)を参照してください。
+>Adobeでは、**[!UICONTROL Merge JavaScript Files]**&#x200B;を有効にすることはお勧めしません。 [JS ファイルの結合（推奨されません） &#x200B;](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files)を参照してください。
 
 1. 実稼動モードを有効にします。
 
@@ -69,10 +69,10 @@ js *のブラウザーコンソールで* 404`tiny_mce_6/plugins/help/js/i18n/ke
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool]  ガイドの](/help/tools/quality-patches-tool/usage.md)>使用状況[!DNL Quality Patches Tool]
-* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」ガイド
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」ガイド
 
 ## 関連トピックス
 
 [!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール

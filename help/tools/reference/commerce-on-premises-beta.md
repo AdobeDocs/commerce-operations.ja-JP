@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> このリファレンスでは、Adobe Commerceの&#x200B;**2.4.9-beta1**版について説明します
+> このリファレンスでは、Adobe Commerceの&#x200B;**2.4.9-beta1**&#x200B;版について説明します
 > オンプレミス CLI。
 
 {{$include /help/_includes/templated/reference/cli/commerce-on-premises-beta.md}}
