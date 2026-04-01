@@ -1,47 +1,47 @@
 ---
-title: CSS および JS リソースファイルの最適化
-description: 管理またはコマンドラインからAdobe Commerce プロジェクトの CSS ファイルとJavaScript（JS）ファイルを結合して縮小する方法を説明します。
+title: CSSおよびJS リソースファイルの最適化
+description: Adobe Commerce プロジェクトのCSS ファイルとJavaScript（JS）ファイルを管理者またはコマンドラインから結合および縮小する方法について説明します。
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 5f4edc2e694c9bdbdffbe48b0e5d69907cbc0027
+source-git-commit: a08560eb307638a36fdc52224c41bdf2c5d47763
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
 
 # リソースファイルの最適化
 
-Commerce サイトの応答性を高めるには、CSS およびJavaScript（JS）リソースファイルを最適化し、レンダリングをブロックするリソースを排除します。
+Commerceのレスポンシブなサイトを実現するには、CSSとJavaScript（JS）のリソースファイルを最適化し、レンダーブロックリソースを排除します。
 
-- **CSS ファイルと JS ファイルの最適化** - Adobe Commerceで個別のファイルを 1 つのファイルに結合、縮小、バンドルするように設定することで、CSS およびJavaScript（JS）ファイルの読み込みに要する時間を短縮します。
-- **レンダリングを妨げるリソースを排除** – 重要な JS および CSS 機能をインラインで配信し、重要でないすべての JS/CSS スタイルを延期することを検討します。 ガイダンスについては、[&#x200B; レンダリングをブロックするリソースを排除する &#x200B;](https://web.dev/render-blocking-resources/) を参照してください。
+- **CSS ファイルとJS ファイルを最適化**- Adobe Commerceを使用してファイルを縮小およびバンドルするように設定することで、CSSおよびJavaScript（JS）ファイルを読み込むのに必要な時間を短縮します。
+- **レンダリング ブロック リソースを排除** – 重要なJSおよびCSS機能をインラインで配信し、重要ではないJS/CSS スタイルをすべて延期することを検討します。 ガイダンスについては、[ レンダーブロッキングリソースの排除](https://web.dev/render-blocking-resources/)を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[&#x200B; サポートされているすべてのバージョン、2.3 以降 &#x200B;](../../../release/versions.md):
+[ サポートされているすべてのバージョン、2.3以降](../../../release/versions.md) /:
 
-- クラウドインフラストラクチャー上のAdobe Commerce
+- Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
 
-## CSS ファイルの結合または縮小
+## CSS ファイルを結合または縮小
 
-CSS およびJavaScript（JS）ファイルの読み込みに要する時間は、個別のファイルを結合、縮小および 1 つのファイルにバンドルすることで、短縮できます。
+CSSおよびJavaScript（JS）ファイルの読み込み時間は、個別のファイルを1つのファイルに結合、縮小、バンドルすることで短縮できます。
 
 >[!IMPORTANT]
 >
->クラウドインフラストラクチャー上のAdobe Commerceは、常に実稼動モードで実行され、それ以外の場合は設定できないので、結合、縮小およびバンドルを有効にするにはコマンドライン方式を使用する必要があります。
+>Adobe Commerce オンクラウドインフラストラクチャは、常に実稼動モードで実行され、それ以外の場合は設定できません。そのため、結合、縮小、バンドルを有効にするには、コマンドラインメソッドを使用する必要があります。
 
-デプロイメントで HTTP/2 を使用している場合は、ファイルを結合またはバンドルしないでください。 HTTP/2 では、静的ファイルが非同期でダウンロードされます。 ブラウザーは、ファイルのコンテンツを処理する前に、結合ファイル全体をダウンロードする必要があります。
+デプロイメントでHTTP/2を使用している場合は、ファイルを結合またはバンドルしないでください。 HTTP/2は、静的ファイルを非同期でダウンロードします。 ブラウザーは、ファイルの内容を処理する前に、結合ファイル全体をダウンロードする必要があります。
 
-### Admin の使用
+### 管理者の使用
 
-CSS の結合または縮小を有効にするには、[!UICONTROL **管理**/**ストア**/**設定**/**設定**/**詳細**/**開発者**/**CSS 設定**] に移動します。
+CSSの結合または縮小を有効にするには、**[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL CSS Settings]**&#x200B;に移動します。
 
 ### コマンドラインの使用
 
-クラウドインフラストラクチャー上のAdobe Commerceで CSS 結合を有効にする手順は次のとおりです。
+クラウドインフラストラクチャ上のAdobe CommerceでCSS結合を有効にするには：
 
 1. 次のコマンドをローカルで実行します。
 
@@ -49,9 +49,9 @@ CSS の結合または縮小を有効にするには、[!UICONTROL **管理**/**
    bin/magento config:set --lock-config dev/css/merge_css_files 1
    ```
 
-1. 変更を `app/etc/config.php` ファイルにコミットし、再デプロイします。
+1. `app/etc/config.php` ファイルに変更をコミットして再デプロイします。
 
-クラウドインフラストラクチャー上のAdobe Commerceで CSS の縮小を有効にする手順は次のとおりです。
+Adobe Commerce クラウドインフラストラクチャでCSSの縮小を有効にするには：
 
 1. 次のコマンドをローカルで実行します。
 
@@ -59,17 +59,17 @@ CSS の結合または縮小を有効にするには、[!UICONTROL **管理**/**
    bin/magento config:set --lock-config dev/css/minify_files 1
    ```
 
-1. 変更を `app/etc/config.php` ファイルにコミットし、再デプロイします。
+1. `app/etc/config.php` ファイルに変更をコミットして再デプロイします。
 
-## JS ファイルの縮小
+## JS ファイルを縮小
 
-### Admin の使用
+### [!UICONTROL Admin]の使用中
 
-*管理者* サイドバーで、**ストア**/**設定**/**設定**/**詳細**/**開発者**/12&rbrace;JavaScript設定 **に移動します。**
+[!UICONTROL Admin] サイドバーで、**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]**&#x200B;に移動します。
 
 ### コマンドラインの使用
 
-クラウドインフラストラクチャー上のAdobe Commerceで JS の縮小を有効にする手順は次のとおりです。
+Adobe Commerce クラウドインフラストラクチャでJSの縮小を有効にするには：
 
 1. 次のコマンドをローカルで実行します。
 
@@ -77,21 +77,34 @@ CSS の結合または縮小を有効にするには、[!UICONTROL **管理**/**
    bin/magento config:set --lock-config dev/js/minify_files 1
    ```
 
-1. 変更を `app/etc/config.php` ファイルにコミットし、再デプロイします。
+1. `app/etc/config.php` ファイルに変更をコミットして再デプロイします。
 
-## JS ファイルの結合とバンドル
+## バンドル JS ファイル
 
-Commerce管理で結合またはバンドルをオンにできます（結合とバンドルを同時に有効にすることはできません）。[!UICONTROL **ストア**/**設定**/**設定**/**詳細**/**開発者**/10&rbrace;JavaScript設定 **。**]
+Commerce [!UICONTROL Admin]でバンドルを有効にできます：**[!UICONTROL Stores]** > ***[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]**。
 
-コマンドラインからAdobe Commerceの組み込みバンドル（基本バンドル）を有効にすることもできます。
+>[!NOTE]
+>
+>結合とバンドルを同時に有効にすることはできません。
+
+コマンドラインからAdobe Commerceのビルトインバンドル（基本バンドル）を有効にすることもできます。
 
 ```bash
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
+## JS ファイルの結合（推奨されません） {#merge-js-files}
+
+>[!WARNING]
+>
+>**[!UICONTROL Merge JavaScript Files]**&#x200B;を有効にすることはお勧めしません。 この設定は、ページの&#x200B;**[!UICONTROL HEAD]** セクションで同期的に読み込まれたJavaScriptに対してのみ設計されており、バンドルと[!DNL RequireJS] ロジックが正しく動作しない可能性があります。 後方互換性のみに保持され、HTTP/2が有効になっている場合にパフォーマンス上のメリットはありません。
+>
+>**[!UICONTROL Merge JavaScript Files]**&#x200B;を有効にして問題が発生した場合は、パッチを適用する前に無効にしてみてください。 結合を無効にできない場合は、[ACSD-67908](../../../tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md)を参照してください。
+
 ## 追加情報
 
-- [クライアントサイドの最適化設定](../../../performance/configuration.md#client-side-optimization-settings)
-- [&#x200B; ユーザーガイド：リソースファイルの最適化 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
-- [&#x200B; フロントエンド開発者ガイド：CSS マージ、縮小、サイトのパフォーマンス &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [クライアントサイド最適化設定](../../../performance/configuration.md#client-side-optimization-settings)
+- [設定のベストプラクティス ](../../../performance/configuration.md#bundling-tips)の&#x200B;*バンドルヒント* - サードパーティのバンドルツール、HTTP/2、非推奨のJSおよびCSS結合に関するガイダンス
+- [ ユーザーガイド：リソースファイルの最適化](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [ フロントエンド開発者ガイド：CSSの結合、縮小、サイトパフォーマンス ](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [高度なJavaScriptのバンドル](../../../performance/advanced-js-bundling.md)

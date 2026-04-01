@@ -1,8 +1,8 @@
 ---
 title: 運用ガイド ホーム
-description: Adobe Commerceのシステム管理と運用の概念について説明します。 Commerceのデプロイメントの計画、設定、保守に関する包括的なガイドを参照します。
+description: Adobe Commerceのシステム管理と運用の概念について説明します。 Commerce導入の計画、設定、保守に関して包括的なガイドをご覧ください。
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 4e04522603b7ed03610ee624a8029a0643bf7c17
+source-git-commit: 2657c83d5467e603a681521886e80592e3b335aa
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 7%
@@ -10,9 +10,9 @@ ht-degree: 7%
 ---
 
 
-# Adobe Commerce運用ガイド
+# Adobe Commerce Operational Guides
 
-次に示すガイドのコレクションを使用して、システム管理のコンセプト、プロセス、ツール、およびAdobe Commerce プロジェクトを計画、設定、デプロイ、および保守するためのベストプラクティスについて学習します。
+次のガイドでは、Adobe Commerce プロジェクトの計画、設定、デプロイ、保守を行うためのシステム管理の概念、プロセス、ツール、ベストプラクティスについて説明します。
 
 ## 計画とガイダンス
 
@@ -23,16 +23,16 @@ ht-degree: 7%
       <img alt="リリース情報" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="../release/release-notes/overview.md"><strong> リリース情報 </strong></a>
+      <a href="../release/release-notes/overview.md"><strong> リリース情報</strong></a>
       <p>Adobe Commerceのパッチとサービスに関するすべてのリリース情報を確認します。</p>
     </div>
   </td>
     <td valign="top">
     <a href="../implementation-playbook/overview.md">
-      <img alt="実装" src="../assets/icons/play.svg" width="40"/>
+      <img alt="導入" src="../assets/icons/play.svg" width="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong> 実装プレイブック </strong></a>
+      <a href="../implementation-playbook/overview.md"><strong>実装プレイブック </strong></a>
       <p>成功する Adobe Commerce サイトの計画と実装の戦略について学習します。</p>
     </div>
   </td>
@@ -42,7 +42,7 @@ ht-degree: 7%
     </a>
     <div>
       <a href="../security-and-compliance/overview.md"><strong> セキュリティとコンプライアンス </strong></a>
-      <p>Adobe Commerceのマーチャントが安全な環境の維持にどのように責任を負うかを説明します。</p>
+      <p>Adobe Commerceを利用している企業が、どのようにセキュリティを確保したのかをご確認ください。</p>
     </div>
   </td>
     <td valign="top">
@@ -51,7 +51,7 @@ ht-degree: 7%
     </a>
     <div>
       <a href="../performance/overview.md"><strong> パフォーマンスのベストプラクティス </strong></a>
-      <p>これらの推奨事項を使用すると、Adobe Commerceのデプロイメントのパフォーマンスを最適化できます。</p>
+      <p>これらの推奨事項を使用して、Adobe Commerceのデプロイメントのパフォーマンスを最適化します。</p>
     </div>
   </td>
 </tr>
@@ -67,7 +67,7 @@ ht-degree: 7%
     </a>
     <div>
       <a href="../installation/overview.md"><strong> インストール </strong></a>
-      <p>オンプレミスデプロイメント用のAdobe Commerceのインストール方法を説明します。</p>
+      <p>オンプレミスのデプロイメント用にAdobe Commerceをインストールする方法について説明します。</p>
     </div>
   </td>
   <td valign="top">
@@ -75,7 +75,7 @@ ht-degree: 7%
       <img alt="設定" src="../assets/icons/settings.svg" width="40"/>
     </a>
     <div>
-      <a href="../configuration/overview.md"><strong> 設定 </strong></a>
+      <a href="../configuration/overview.md"><strong>設定</strong></a>
       <p>Adobe Commerce アプリケーションの機能とサービスを設定します。</p>
     </div>
   </td>
@@ -85,7 +85,7 @@ ht-degree: 7%
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong> アップグレード </strong></a>
-      <p>ストアフロントのセキュリティを確保し、効率的に運用を行うために、Adobe Commerce プロジェクトをアップグレードする方法について説明します。</p>
+      <p>ストアフロントを安全に保ち、効率的に運営するために、Adobe Commerce プロジェクトをアップグレードする方法について説明します。</p>
     </div>
   </td>
   <td valign="top">
@@ -94,7 +94,7 @@ ht-degree: 7%
     </a>
     <div>
       <a href="../tools/overview.md"><strong> ツール </strong></a>
-      <p>Adobe Commerceで使用できるツールについて説明します。</p>
+      <p>Adobe Commerceで利用できるツールについて説明します。</p>
     </div>
   </td>
 </tr>
@@ -102,4 +102,4 @@ ht-degree: 7%
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2026-03-12 18:56:32 -->
+<!-- Last updated from includes: 2026-03-30 10:22:41 -->
