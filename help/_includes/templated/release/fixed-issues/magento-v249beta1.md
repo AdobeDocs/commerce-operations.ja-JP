@@ -3158,7 +3158,7 @@ _ACP2E-4212 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 #### スケジュール更新プレビューでWeb サイト間を移動できない
 
-この修正の前に、カスタムドメインを持つストアのコンテンツをプレビューしようとすると、スケジュールされた更新プレビューが壊れます。 この修正の後、カスタムストアドメインをそのままプレビューし、プレビューiframe内で移動できます。 この修正プログラムは、製品、カテゴリ、CMS ページ、CMS ブロックを対象としており、`{{store url}}`Adobe Commerce変数およびマークアップタグ [に記載されているように、](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags)個のマークアップタグを使用したナビゲーションリンクをサポートしています。
+この修正の前に、カスタムドメインを持つストアのコンテンツをプレビューしようとすると、スケジュールされた更新プレビューが壊れます。 この修正の後、カスタムストアドメインをそのままプレビューし、プレビューiframe内で移動できます。 この修正プログラムは、製品、カテゴリ、CMS ページ、CMS ブロックを対象としており、`{{store url}}`Adobe Commerce変数およびマークアップタグ [に記載されているように、](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/variables/markup-tags)個のマークアップタグを使用したナビゲーションリンクをサポートしています。
 
 _ACP2E-4308 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/0a3b7032)_
 

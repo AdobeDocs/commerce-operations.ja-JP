@@ -105,6 +105,6 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 
 - [クライアントサイド最適化設定](../../../performance/configuration.md#client-side-optimization-settings)
 - [設定のベストプラクティス &#x200B;](../../../performance/configuration.md#bundling-tips)の&#x200B;*バンドルヒント* - サードパーティのバンドルツール、HTTP/2、非推奨のJSおよびCSS結合に関するガイダンス
-- [&#x200B; ユーザーガイド：リソースファイルの最適化](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [&#x200B; ユーザーガイド：リソースファイルの最適化](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [&#x200B; フロントエンド開発者ガイド：CSSの結合、縮小、サイトパフォーマンス &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [高度なJavaScriptのバンドル](../../../performance/advanced-js-bundling.md)
