@@ -48,7 +48,7 @@ ht-degree: 14%
       - [プライベートコンテンツブロック](best-practices/development/private-content-block-configuration.md)
       - [静的コンテンツのデプロイメント](best-practices/development/static-content-deployment.md)
       - [データベーステーブルの変更](best-practices/development/modifying-core-and-third-party-tables.md)
-      - [ コアおよびサードパーティのコードの変更](best-practices/development/modifying-core-and-third-party-code.md)
+      - [&#x200B; コアおよびサードパーティのコードの変更](best-practices/development/modifying-core-and-third-party-code.md)
    - Launch {#launch}
       - [概要](best-practices/launch/overview.md)
       - [Web web クローラーの設定](best-practices/launch/robots-txt.md)

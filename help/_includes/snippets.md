@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2.4.5の拡張サポートセキュリティパッチは、Adobe Commerceのお客様のみが利用できます。 これらのパッチは、Magento Open Source コードベースでは使用できません。 [拡張サポート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support)を参照してください。
+>2.4.5の拡張サポートセキュリティパッチは、Adobe Commerceのお客様のみが利用できます。 これらのパッチは、Magento Open Source コードベースでは使用できません。 [拡張サポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support)を参照してください。
 
 ## Commerceのみ {#commerce-only}
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->すべてのMagento CLI コマンドは、[ ファイルシステム所有者](/help/configuration/cli/config-cli.md#prerequisites)によって実行する必要があります。
+>すべてのMagento CLI コマンドは、[&#x200B; ファイルシステム所有者](/help/configuration/cli/config-cli.md#prerequisites)によって実行する必要があります。
 
 ## バックアップコマンド {#tip-backup-command}
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントは、互換性のある最新のB2B セキュリティパッチリリースにアップデートする必要があります。 [B2B リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)を参照してください。
+>このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントは、互換性のある最新のB2B セキュリティパッチリリースにアップデートする必要があります。 [B2B リリースノート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)を参照してください。
 
 ## Adobe Commerceのみ {#ee-only}
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce リリースには、下位互換性のない変更（BIC）が含まれている場合があります。 後方互換性のない変更を確認するには、[BIC reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)を参照してください。 後方互換性のない主要な問題については、[BIC ハイライト ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)で説明しています。 すべてのリリースが主要なBICを導入しているわけではありません。
+>Adobe Commerce リリースには、下位互換性のない変更（BIC）が含まれている場合があります。 後方互換性のない変更を確認するには、[BIC reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)を参照してください。 後方互換性のない主要な問題については、[BIC ハイライト &#x200B;](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)で説明しています。 すべてのリリースが主要なBICを導入しているわけではありません。
 
 ## Alphaの免責事項 {#alpha}
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 ## PHP プロセス制御 {#php-process-control}
 
-並列モードでインデクサーを実行する前に、PHPでプロセス制御サポート （`pcntl`）を有効にする必要があります。 PHP ドキュメントの[ インストール ](https://www.php.net/manual/en/pcntl.installation.php)を参照してください。
+並列モードでインデクサーを実行する前に、PHPでプロセス制御サポート （`pcntl`）を有効にする必要があります。 PHP ドキュメントの[&#x200B; インストール &#x200B;](https://www.php.net/manual/en/pcntl.installation.php)を参照してください。
 
 ## カスタムパッチ {#custom-patches-disclaimer}
 
