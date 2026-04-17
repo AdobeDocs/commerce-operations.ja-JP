@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Commerce on Cloud インフラストラクチャ環境の場合は、最新バージョンの`ece-tools` パッケージを使用していることを確認します。 そうでない場合は、[最新バージョン &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html)にアップグレードしてください。 ローカル環境にインストールされているバージョンは、`composer show magento/ece-tools` CLI コマンドを使用して確認できます。
+>Commerce on Cloud インフラストラクチャ環境の場合は、最新バージョンの`ece-tools` パッケージを使用していることを確認します。 そうでない場合は、[最新バージョン &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=ja)にアップグレードしてください。 ローカル環境にインストールされているバージョンは、`composer show magento/ece-tools` CLI コマンドを使用して確認できます。
 
 ## L2 キャッシュの設定
 
@@ -48,7 +48,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Cloud Infrastructureでの環境設定については、[`REDIS_BACKEND`Cloud Infrastructure Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend)の&#x200B;__&#x200B;設定リファレンスを参照してください。Commerce on Cloud Infrastructure Guide
+Cloud Infrastructureでの環境設定については、[`REDIS_BACKEND`Cloud Infrastructure Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_backend)の&#x200B;__&#x200B;設定リファレンスを参照してください。Commerce on Cloud Infrastructure Guide
 
 オンプレミスのインストールについては、[設定ガイド &#x200B;](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)の「_Redis ページキャッシュの設定_」を参照してください。
 
@@ -62,7 +62,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-クラウドインフラストラクチャでの環境設定については、[`VALKEY_BACKEND`Commerce on Cloud Infrastructure ガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)の&#x200B;__&#x200B;設定リファレンスを参照してください。
+クラウドインフラストラクチャでの環境設定については、[`VALKEY_BACKEND`Commerce on Cloud Infrastructure ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)の&#x200B;__&#x200B;設定リファレンスを参照してください。
 
 オンプレミスのインストールについては、[設定ガイド &#x200B;](../../../configuration/cache/config-valkey.md)の&#x200B;_Valkey_&#x200B;の設定を参照してください。
 
@@ -145,7 +145,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Commerce Cloud インフラストラクチャの環境設定については、[Commerce on Cloud Infrastructure ガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)の&#x200B;_REDIS_USE_SLAVE_CONNECTION_&#x200B;を参照してください。
+Commerce Cloud インフラストラクチャの環境設定については、[Commerce on Cloud Infrastructure ガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_use_slave_connection)の&#x200B;_REDIS_USE_SLAVE_CONNECTION_&#x200B;を参照してください。
 
 Adobe Commerce オンプレミス インストールの場合、`bin/magento setup` コマンドを使用して新しいRedis キャッシュ実装を設定します。 [設定ガイド &#x200B;](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)の「_デフォルトのキャッシュにRedisを使用する_」を参照してください。
 
@@ -159,7 +159,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Commerce Cloud インフラストラクチャの環境設定については、[Commerce on Cloud Infrastructure ガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection)の&#x200B;_VALKEY_USE_SLAVE_CONNECTION_&#x200B;を参照してください。
+Commerce Cloud インフラストラクチャの環境設定については、[Commerce on Cloud Infrastructure ガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#valkey_use_slave_connection)の&#x200B;_VALKEY_USE_SLAVE_CONNECTION_&#x200B;を参照してください。
 
 Adobe Commerce オンプレミス インストールの場合、`bin/magento setup` コマンドを使用して新しいValkey キャッシュ実装を設定します。 [設定ガイド &#x200B;](../../../configuration/cache/config-valkey.md)の「_Valkey_&#x200B;の設定」を参照してください。
 
@@ -305,7 +305,7 @@ stage:
 
 >[!NOTE]
 >
->`full_page` キャッシュの種類は、[Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)を使用しているため、Cloud インフラストラクチャプロジェクト上のAdobe Commerceとは関係ありません。
+>`full_page` キャッシュの種類は、[Fastly](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly)を使用しているため、Cloud インフラストラクチャプロジェクト上のAdobe Commerceとは関係ありません。
 
 オンプレミスのインストールについては、[設定ガイド &#x200B;](../../../configuration/cache/level-two-cache.md#stale-cache-options)の&#x200B;_古いキャッシュオプション_&#x200B;を参照してください。
 
@@ -490,7 +490,7 @@ stage:
 
 1. 実稼動環境とステージング環境のセッション専用の新しいRedis インスタンスをリクエストします。
 
-   [Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。 更新された`.magento/services.yaml`および`.magento.app.yaml`設定ファイルを含めます。
+   [Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)を送信します。 更新された`.magento/services.yaml`および`.magento.app.yaml`設定ファイルを含めます。
 
    このアップデートはダウンタイムを引き起こしませんが、新しいサービスをアクティブ化するにはデプロイメントが必要です。
 
@@ -565,7 +565,7 @@ stage:
 
 1. 実稼動環境とステージング環境のセッション専用の新しいValkey インスタンスをリクエストします。
 
-   [Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。 更新された`.magento/services.yaml`および`.magento.app.yaml`設定ファイルを含めます。
+   [Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)を送信します。 更新された`.magento/services.yaml`および`.magento.app.yaml`設定ファイルを含めます。
 
    このアップデートはダウンタイムを引き起こしませんが、新しいサービスをアクティブ化するにはデプロイメントが必要です。
 
@@ -625,7 +625,7 @@ stage:
 
 ## 非同期解放を有効にする
 
-クラウドインフラストラクチャ上のAdobe Commerceで`lazyfree`を有効にするには、次のRedisまたはValkey設定を環境に適用することを要求する[Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。
+クラウドインフラストラクチャ上のAdobe Commerceで`lazyfree`を有効にするには、次のRedisまたはValkey設定を環境に適用することを要求する[Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)を送信します。
 
 ```text
 lazyfree-lazy-eviction yes
@@ -647,7 +647,7 @@ lazyfree-lazy-user-del yes
 
 ## マルチスレッド I/Oを有効にする
 
-クラウドインフラストラクチャ上のAdobe CommerceでRedis I/O スレッドを有効にするには、以下のI/O スレッド設定をリクエストする[Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。 これにより、CPUの使用率を高くしながらも、ソケットの読み取りと書き込みをオフロードし、メインスレッドからコマンド解析を行うことで、スループットを向上させることができます。 負荷の下で検証し、ホストを監視します。
+クラウドインフラストラクチャ上のAdobe CommerceでRedis I/O スレッドを有効にするには、以下のI/O スレッド設定をリクエストする[Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)を送信します。 これにより、CPUの使用率を高くしながらも、ソケットの読み取りと書き込みをオフロードし、メインスレッドからコマンド解析を行うことで、スループットを向上させることができます。 負荷の下で検証し、ホストを監視します。
 
 >[!BEGINTABS]
 
