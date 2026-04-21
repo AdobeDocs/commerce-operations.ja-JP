@@ -63,7 +63,7 @@ Beta リリースには欠陥が含まれている場合があり、いかなる
 
 ## ホットフィックス
 
-ホットフィックスは、多くのマーチャントに影響を与える、ゼロデイ脆弱性の修正など、影響の大きいセキュリティまたは品質の修正を含むパッチです。 Adobeは、重要なセキュリティまたは品質の問題が影響を与える場合に、サポート対象のAdobe Commerce バージョンのホットフィックス（必要に応じて）をリリースします。 ホットフィックスは、[品質パッチツール ](../tools/quality-patches-tool/usage.md)を通じて配信されます。 これらの修正は、次に予定されているパッチリリースに含まれています。
+ホットフィックスは、多くのマーチャントに影響を与える、ゼロデイ脆弱性の修正など、影響の大きいセキュリティまたは品質の修正を含むパッチです。 Adobeは、重要なセキュリティまたは品質の問題が影響を与える場合に、サポート対象のAdobe Commerce バージョンのホットフィックス（必要に応じて）をリリースします。 ホットフィックスは、[品質パッチツール &#x200B;](../tools/quality-patches-tool/usage.md)を通じて配信されます。 これらの修正は、次に予定されているパッチリリースに含まれています。
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Beta リリースには欠陥が含まれている場合があり、いかなる
 
 ## 個別パッチ
 
-個々のパッチには、特定の問題に対する影響の小さい品質修正が含まれています。 これらの修正は、サポートされているAdobe Commerceのマイナーバージョンに適用されます。 Adobeは、[ ソフトウェアライフサイクルポリシー](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)に従って、Adobe Commerceの必要に応じて個別のパッチをリリースします。 これらは、[品質パッチツール ](../tools/quality-patches-tool/usage.md)を通じて配信されます。
+個々のパッチには、特定の問題に対する影響の小さい品質修正が含まれています。 これらの修正は、サポートされているAdobe Commerceのマイナーバージョンに適用されます。 Adobeは、[&#x200B; ソフトウェアライフサイクルポリシー](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)に従って、Adobe Commerceの必要に応じて個別のパッチをリリースします。 これらは、[品質パッチツール &#x200B;](../tools/quality-patches-tool/usage.md)を通じて配信されます。
 
 >[!NOTE]
 >

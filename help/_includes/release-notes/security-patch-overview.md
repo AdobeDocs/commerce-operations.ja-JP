@@ -17,11 +17,11 @@ ht-degree: 0%
 
 各セキュリティパッチリリースは、以前のフルパッチリリースに基づいています。 以前のパッチリリースの品質とセキュリティの修正と、以前のフルパッチリリースとセキュリティパッチリリースの間に作成されたセキュリティの修正が含まれています。
 
-セキュリティパッチのダウンロードと適用方法については、[Adobe Commerce ナレッジベース ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches)の「_セキュリティパッチの取得方法_」を参照してください。
+セキュリティパッチのダウンロードと適用方法については、[Adobe Commerce ナレッジベース &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches)の「_セキュリティパッチの取得方法_」を参照してください。
 
 >[!NOTE]
 >
->拡張サポートセキュリティパッチは、Adobe Commerceのお客様のみが利用でき、Magento Open Source コードベースでは利用できません。 [拡張サポート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support)を参照してください。
+>拡張サポートセキュリティパッチは、Adobe Commerceのお客様のみが利用でき、Magento Open Source コードベースでは利用できません。 [拡張サポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support)を参照してください。
 
 ## 分離されたセキュリティパッチファイル
 
@@ -29,5 +29,5 @@ ht-degree: 0%
 
 分離されたセキュリティパッチファイルを適用するには、分離されたセキュリティパッチファイルがそのバージョンに対してのみテストされるので、お客様は、サポートされているリリースラインの最新のセキュリティ専用パッチリリース（最新の – p バージョン）に属している必要があります。
 
-Adobe Commerceで利用可能な最新のセキュリティ更新プログラムについては、[ セキュリティ センター](https://helpx.adobe.com/security/products/magento.html)を参照してください。
+Adobe Commerceで利用可能な最新のセキュリティ更新プログラムについては、[&#x200B; セキュリティ センター](https://helpx.adobe.com/security/products/magento.html)を参照してください。
 
