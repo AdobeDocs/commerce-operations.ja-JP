@@ -1,63 +1,69 @@
 ---
-title: 'ACSD-64111: Fixes the *InvalidArgumentException: Class does not exist* error when setting nested conditions for a Product component in [!DNL Page Builder]'
+title: 'ACSD-64111:  [!DNL Page Builder]で製品コンポーネントのネストされた条件を設定する際の*InvalidArgumentException: Class does not exist* エラーを修正しました'
 feature: Products, Page Builder
 role: Admin, Developer
 exl-id: dc39c65b-fb78-4105-b0e8-92a78b49adaf
 type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 0%
+
 ---
-# ACSD-64111: Fixes the *InvalidArgumentException: Class does not exist* error when setting nested conditions for a Product component in [!DNL Page Builder]
 
-The ACSD-64111 patch fixes the issue where *InvalidArgumentException: Class does not exist* error occurs in `vendor/magento/module-rule/Model/ConditionFactory.php:50` when setting nested conditions for a Product component in [!DNL Page Builder]. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 is installed. The patch ID is ACSD-64111. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+# ACSD-64111: [!DNL Page Builder]の製品コンポーネントにネストされた条件を設定する際に、*InvalidArgumentException: Class does not exist* エラーが修正されました
 
-## Affected products and versions
+ACSD-64111 パッチは、[!DNL Page Builder]で製品コンポーネントのネストされた条件を設定する際に`vendor/magento/module-rule/Model/ConditionFactory.php:50`で&#x200B;*InvalidArgumentException: Class does not exist* エラーが発生する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60がインストールされている場合に利用できます。 パッチ IDはACSD-64111です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
-**The patch is created for Adobe Commerce version:**
+## 影響を受ける製品とバージョン
 
-* Adobe Commerce (all deployment methods)  2.4.6-p8
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
-**Compatible with Adobe Commerce versions:**
+* Adobe Commerce（すべてのデプロイメント方法）  2.4.6-p8
 
-* Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p4
+**Adobe Commerceのバージョンとの互換性：**
+
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p4
 
 >[!NOTE]
 >
->The patch might become applicable to other versions with new [!DNL Quality Patches Tool] releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja). Use the patch ID as a search keyword to locate the patch.
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## Issue
+## イシュー
 
-An error *InvalidArgumentException: Class does not exist in /app/<project id\>/vendor/magento/module-rule/Model/ConditionFactory.php* is thrown when adding a *[!UICONTROL Conditions Combination]* in [!DNL Page Builder] Products widget condition.
+エラー&#x200B;*InvalidArgumentException: クラスが/app/&lt;project id\>/vendor/magento/module-rule/Model/ConditionFactory.php*&#x200B;に存在しません。製品ウィジェット条件[!DNL Page Builder]に&#x200B;*[!UICONTROL Conditions Combination]*&#x200B;を追加すると、スローされます。
 
-<u>Steps to reproduce</u>:
+<u>複製する手順</u>:
 
-1. Log in to the Adobe Commerce admin.
-1. Go to **[!UICONTROL Content]** > *[!UICONTROL Elements]* > **[!UICONTROL Pages]**.
-1. Add a new page (or edit an existing page).
-1. Expand the **[!UICONTROL Content]** section and click **[!UICONTROL Edit with Page Builder]**.
-1. Add a new row and then the **[!UICONTROL Products]** widget.
-1. Configure the **[!UICONTROL Products]** widget.
-1. Select the **[!UICONTROL Condition]** under **[!UICONTROL Select Products By]**.
-1. Add a new condition and select **[!UICONTROL Conditions Combination]** from the dropdown.
+1. Adobe Commerce管理者にログインします。
+1. **[!UICONTROL Content]** > *[!UICONTROL Elements]* > **[!UICONTROL Pages]**&#x200B;に移動します。
+1. 新しいページを追加（または既存のページを編集）。
+1. **[!UICONTROL Content]** セクションを展開し、**[!UICONTROL Edit with Page Builder]**&#x200B;をクリックします。
+1. 新しい行を追加してから&#x200B;**[!UICONTROL Products]** ウィジェットを追加します。
+1. **[!UICONTROL Products]** ウィジェットを設定します。
+1. **[!UICONTROL Select Products By]**&#x200B;の下の&#x200B;**[!UICONTROL Condition]**&#x200B;を選択します。
+1. 新しい条件を追加し、ドロップダウンから「**[!UICONTROL Conditions Combination]**」を選択します。
 
-<u>Expected results</u>:
+<u>期待される結果</u>:
 
-No errors in logs.
+ログにエラーはありません。
 
-<u>Actual results</u>:
+<u>実際の結果</u>:
 
-The below exception is recorded in the logs:
+以下の例外はログに記録されます。
 
-*report.CRITICAL: InvalidArgumentException: Class does not exist in vendor/magento/module-rule/Model/ConditionFactory.php:50*
+*report.CRITICAL: InvalidArgumentException: クラスがvendor/magento/module-rule/Model/ConditionFactory.php:50*&#x200B;に存在しません
 
-## Apply the patch
+## パッチを適用する
 
-To apply individual patches, use the following links depending on your deployment method:
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja) in the Commerce on Cloud Infrastructure guide.
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
 
-## Related reading
+## 関連トピックス
 
-To learn more about [!DNL Quality Patches Tool], refer to:
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。
