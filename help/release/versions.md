@@ -1,31 +1,31 @@
 ---
 title: リリース済みバージョン
-description: Adobe Commerceの特定のバージョンがいつリリースされたかを説明します。
+description: Adobe Commerceの特定のバージョンがいつリリースされたかをご確認ください。
 recommendations: noCatalog
 exl-id: 9b03900c-39ba-4757-ab7e-8bc832277192
-source-git-commit: 65a9bd667d434f1deae69798696f66998e6024a0
+source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
 # リリース済みバージョン
 
-ここでは、Adobe Commerceのリリースバージョンの一覧を示します。 リリース日は、すべてのマイナーリリース、パッチリリース、セキュリティリリースと、**_通常_** サポート終了の日付で構成されています。 **_拡張_** サポートの終了日はリストされていません。
+このページには、Adobe Commerceのリリース版が一覧表示されます。 マイナー、パッチ、セキュリティの各リリースのリリース日と、**_通常_** サポートの終了日が含まれています。 **_拡張_** サポートの終了日は一覧表示されません。
 
 >[!BEGINSHADEBOX]
 
-Adobeでは、バージョン 2.4.4 および 2.4.5 のAdobe Commerceのお客様に対して、1 年間のサポート延長を無料で提供します。[&#x200B; ライフサイクルポリシー &#x200B;](lifecycle-policy.md) には、これらのバージョンに対する拡張サポートの終了日が一覧表示されます。
+Adobeでは、バージョン 2.4.4および2.4.5のAdobe Commerceのお客様に対して、1年間のサポート拡張機能を追加費用なしで提供しています。 [ ライフサイクルポリシー](lifecycle-policy.md)には、これらのバージョンの拡張サポートの終了日が記載されています。
 
 >[!ENDSHADEBOX]
 
 >[!NOTE]
 >
->- Adobeでは、Adobe Commerceをインストールするか、各リリースで使用可能な最新のセキュリティパッチにアップグレードすることをお勧めします。
->- その他のセキュリティアップデートについては、[Magento/Adobe Commerceのセキュリティアップデート &#x200B;](https://helpx.adobe.com/jp/security/products/magento.html) を参照してください。
->- 価格については、[Adobe Commerceの価格 &#x200B;](https://business.adobe.com/jp/products/magento/pricing.html) を参照してください。
+>- Adobeでは、各リリースで利用可能な最新のセキュリティパッチにAdobe Commerceをインストールまたはアップグレードすることをお勧めします。
+>- その他のセキュリティ更新プログラムについては、[Magento / Adobe Commerceのセキュリティ更新プログラム ](https://helpx.adobe.com/security/products/magento.html)を参照してください。
+>- 価格については、[Adobe Commerceの価格](https://business.adobe.com/products/magento/pricing.html)を参照してください。
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
-<!-- Last updated from includes: 2026-03-10 09:59:34 -->
+<!-- Last updated from includes: 2026-04-20 02:12:24 -->
