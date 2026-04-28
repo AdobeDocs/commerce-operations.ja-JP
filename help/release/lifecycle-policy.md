@@ -12,15 +12,15 @@ ht-degree: 2%
 
 # Adobe Commerce ライフサイクルポリシー
 
-Adobe Commerce ライフサイクルポリシーを合理化し、お客様のミッションクリティカルなニーズをサポートするために、Adobeでは、各バージョンの一般提供（GA）日から3年間のサポート期間を提供し、この期間に品質修正をリリースします。 各リリースのソフトウェアサポート終了の日付と詳細については、[ ソフトウェアサポート終了](#end-of-software-support)の表を参照してください。
+Adobe Commerce ライフサイクルポリシーを合理化し、お客様のミッションクリティカルなニーズをサポートするために、Adobeでは、各バージョンの一般提供（GA）日から3年間のサポート期間を提供し、この期間に品質修正をリリースします。 各リリースのソフトウェアサポート終了の日付と詳細については、[&#x200B; ソフトウェアサポート終了](#end-of-software-support)の表を参照してください。
 
 3年間のサポート期間中、お客様は以下にアクセスできます。
 
-- **品質修正** – お客様は、[Adobe Commerce サポート ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)またはセルフサービス [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)を通じて、品質修正にアクセスできます。 次の表に、Adobe Commerceのリリースラインのソフトウェアサポート終了日を示します。
+- **品質修正** – お客様は、[Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)またはセルフサービス [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)を通じて、品質修正にアクセスできます。 次の表に、Adobe Commerceのリリースラインのソフトウェアサポート終了日を示します。
 
-- **セキュリティ修正**-Adobeは、3年間のサポート期間において、累積セキュリティパッチと非累積[個別セキュリティパッチファイル ](versioning-policy.md#isolated-security-fixes)を通じてセキュリティ修正を提供します。
+- **セキュリティ修正**-Adobeは、3年間のサポート期間において、累積セキュリティパッチと非累積[個別セキュリティパッチファイル &#x200B;](versioning-policy.md#isolated-security-fixes)を通じてセキュリティ修正を提供します。
 
-- **ホットフィックス** – ゼロデイ脆弱性などの重大なセキュリティ問題については、最新のパッチまたはセキュリティパッチリリースを使用していない場合でも、Adobeは、サポートされているバージョンのすべてのユーザーに[ ホットフィックス ](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-)を提供します。 ホットフィックスは包括的なものではなく、最新のリリースにアップグレードして解決されるすべてのセキュリティ問題を解決するものではありません。
+- **ホットフィックス** – ゼロデイ脆弱性などの重大なセキュリティ問題については、最新のパッチまたはセキュリティパッチリリースを使用していない場合でも、Adobeは、サポートされているバージョンのすべてのユーザーに[&#x200B; ホットフィックス &#x200B;](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-)を提供します。 ホットフィックスは包括的なものではなく、最新のリリースにアップグレードして解決されるすべてのセキュリティ問題を解決するものではありません。
 
 Adobeでは、Adobe Commerceのサポート期間が3年間または延長されている間にサポート終了に達する可能性があるサードパーティサービスおよびソフトウェアの依存関係（PHPやMySQLなど）に対するセキュリティおよび品質修正は提供されません。 テストおよびサポートされているサードパーティ製テクノロジーの完全な一覧については、[必要システム構成](../installation/system-requirements.md)を参照してください。
 
@@ -47,11 +47,11 @@ Adobeでは、できるだけ早くアップグレードすることをお勧め
 >[!NOTE]
 >
 >- <sup>1</sup> Adobe Commerceをご利用のお客様は、延長サポート期間を通じて、引き続き1年間セキュリティおよび品質修正プログラムを受け取ることができます。
->- [ ソフトウェアライフサイクルポリシー](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)を参照してください。
+>- [&#x200B; ソフトウェアライフサイクルポリシー](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)を参照してください。
 
 >[!IMPORTANT]
 >
->バージョン 2.4.6を実行しており、PHP 8.1を引き続き使用している販売者は、2025年](https://www.php.net/eol.php)に[ サポート終了に達した場合、PCI コンプライアンスを保証できません。 同様に、PHP 8.2は2026年末に[提供終了に達し](https://www.php.net/supported-versions.php)、2027年に引き続き使用する販売者にも同じPCI コンプライアンスのリスクが生じます。
+>バージョン 2.4.6を実行しており、PHP 8.1を引き続き使用している販売者は、2025年[&#128279;](https://www.php.net/eol.php)に サポート終了に達した場合、PCI コンプライアンスを保証できません。 同様に、PHP 8.2は2026年末に[提供終了に達し](https://www.php.net/supported-versions.php)、2027年に引き続き使用する販売者にも同じPCI コンプライアンスのリスクが生じます。
 
 ## Adobe Commerce 2.4.4および2.4.5の追加のセキュリティ修正
 
@@ -63,7 +63,7 @@ Adobeでは、できるだけ早くアップグレードすることをお勧め
 
   分離されたセキュリティパッチファイルを適用するには、分離されたセキュリティ修正プログラムはそのバージョンに対してのみテストされるので、お客様はサポートされているリリースラインの最新のセキュリティ専用パッチリリース（最新の – p バージョン）に属している必要があります。
 
-- **バージョン 2.4.4または2.4.5では、この期間中に品質修正またはエンジニアリング支援** – バグ修正、品質更新（[品質パッチツール ](../tools/quality-patches-tool/usage.md)）、またはエンジニアリング支援（[Adobe Commerce サポート ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)）が提供されません。
+- **バージョン 2.4.4または2.4.5では、この期間中に品質修正またはエンジニアリング支援** – バグ修正、品質更新（[品質パッチツール &#x200B;](../tools/quality-patches-tool/usage.md)）、またはエンジニアリング支援（[Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)）が提供されません。
 
 - **PCI コンプライアンスは保証されていません：**-2.4.4および2.4.5では、使用期限に達したPHP バージョンを使用しているため、これらのリリースの販売者に対してPCI コンプライアンスを保証することはできません。 これらのバージョンを継続的に実行すると、PCI認定のリスクが生じる可能性があります。
 
