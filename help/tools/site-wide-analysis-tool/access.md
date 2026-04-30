@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ストアの[!UICONTROL Admin Panel]から[!DNL Site-Wide Analysis Tool] ダッシュボードにアクセスできます。
 
-[!DNL Site-Wide Analysis Tool] サービスは、ユーザー[役割リソース &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles)へのアクセス権限を持つ[!UICONTROL Admin] ユーザーの[実稼動モード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes)で利用できます。
+[!DNL Site-Wide Analysis Tool] サービスは、ユーザー[役割リソース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions-user-roles)へのアクセス権限を持つ[!UICONTROL Admin] ユーザーの[実稼動モード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/developer-tools#operation-modes)で利用できます。
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ### 手順1：権限の確認
 
-[!UICONTROL Admin] ユーザーアカウントに、[割り当てられたユーザーの役割](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles)を通じて[!DNL Site-Wide Analysis Tool]にアクセスする権限があることを確認します。
+[!UICONTROL Admin] ユーザーアカウントに、[割り当てられたユーザーの役割](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions-user-roles)を通じて[!DNL Site-Wide Analysis Tool]にアクセスする権限があることを確認します。
 
 >[!IMPORTANT]
 >
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!UICONTROL Admin]からツールにアクセスしようとすると、ユーザーアカウントに[!DNL Site-Wide Analysis Tool]へのアクセス権があることを確認し、ユーザーに403 エラーが表示された場合、Adobe Commerce on cloud infrastructureのインスタンスでHTTP アクセス制御が有効になっている可能性があります。 HTTP認証が有効になっている場合、[!DNL Site-Wide Analysis Tool] ダッシュボードはサポートされていません。 この問題の解決について詳しくは、[&#x200B; サポート記事](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento)を参照してください。
+>[!UICONTROL Admin]からツールにアクセスしようとすると、ユーザーアカウントに[!DNL Site-Wide Analysis Tool]へのアクセス権があることを確認し、ユーザーに403 エラーが表示された場合、Adobe Commerce on cloud infrastructureのインスタンスでHTTP アクセス制御が有効になっている可能性があります。 HTTP認証が有効になっている場合、[!DNL Site-Wide Analysis Tool] ダッシュボードはサポートされていません。 この問題の解決について詳しくは、[&#x200B; サポート記事](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento)を参照してください。
 
 ### 手順2: [!DNL Site-Wide Analysis Tool]へのアクセス
 
