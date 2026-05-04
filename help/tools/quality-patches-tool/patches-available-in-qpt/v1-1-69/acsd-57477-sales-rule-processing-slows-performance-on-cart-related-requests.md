@@ -1,51 +1,51 @@
 ---
-title: ACSD-57477：販売ルールの処理により、買い物かごに関連するリクエストのパフォーマンスが低下する
-description: ACSD-57477 パッチを適用すると、多数の製品属性（1000 属性など）が使用可能なプロジェクトで、Commerceが変数を使用して AddProductsToCart Adobe Commerce操作を実行する際に、GraphQLがこれらの製品属性をすべて読み込もうとすると AddProductsToCart GraphQL操作でパフォーマンスの問題が発生する Product の問題を修正できます。
+title: ACSD-57477：販売ルールの処理により、カート関連のリクエストのパフォーマンスが低下する
+description: Acsd-57477 パッチを適用して、使用可能な製品属性が多いプロジェクト（例えば、1000個の属性）で、AddProductsToCart GraphQL オペレーションが変数で実行される場合、Commerceはこれらの製品属性をすべて読み込もうとし、AddProductsToCart GraphQL オペレーションからパフォーマンスの問題が発生するAdobe Commerceの問題を修正します。
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 00fce49fbe5432a16324937e0430a08ec7c41188
+exl-id: 3944b4d4-09c0-49a4-9a7e-8e1758d9d73c
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
 
+# ACSD-57477：販売ルールの処理により、カート関連のリクエストのパフォーマンスが低下する
 
-# ACSD-57477：販売ルールの処理により、買い物かごに関連するリクエストのパフォーマンスが低下する
-
-ACSD-57477 パッチでは、販売ルールの処理によって買い物かごに関連するリクエストのパフォーマンスが低下する問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 がインストールされている場合に使用できます。 パッチ ID は ACSD-57477 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-57477 パッチは、販売ルール処理によってカート関連のリクエストのパフォーマンスが遅くなる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69がインストールされている場合に利用できます。 パッチ IDはACSD-57477です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6 - 2.4.6-p11
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-パラメーターをGraphQL変数として送信すると、販売ルールの処理によって買い物かごに関連するリクエストのパフォーマンスが低下します。
+GraphQL変数としてパラメーターを送信すると、販売ルール処理によってカート関連のリクエストのパフォーマンスが低下します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 1000 の製品属性を追加します。
-1. 以下のGraphQL クエリを使用して、買い物かごを作成します。
+1. 1,000個の製品属性を追加。
+1. 以下のGraphQL クエリを使用してカートを作成します。
 
-   ```
+   ```graphql
    mutation {createEmptyCart}{noformat}
    ```
 
-1. 以下のGraphQL クエリを使用して、商品を買い物かごに追加します。
+1. 以下のGraphQL クエリを使用して、商品をカートに追加します。
 
-   ```
+   ```graphql
    mutation AddProductsToCart($cartId: String!, $products: [CartItemInput!]!) {
        addProductsToCart(cartId: $cartId, cartItems: $products) {
          cart {
@@ -59,7 +59,7 @@ ACSD-57477 パッチでは、販売ルールの処理によって買い物かご
 
 1. これらの変数を設定します。
 
-   ```
+   ```json
    {
      "cartId": "id_here",
      "products": [
@@ -72,10 +72,10 @@ ACSD-57477 パッチでは、販売ルールの処理によって買い物かご
    }
    ```
 
-1. この問題は、パラメーターをGraphQL変数として送信した場合にのみ発生します。 GraphQLのクエリ自体にパラメーターを含めると、この問題は発生しません。
-1. GraphQLのクエリ自体にパラメーターを追加した後、同じ **買い物かごに追加** リクエストを送信します。
+1. この問題は、パラメーターをGraphQL変数として送信する場合にのみ発生します。 GraphQL クエリ自体にパラメーターを含めると、この問題は発生しません。
+1. GraphQL クエリ自体にパラメーターを追加した後、同じ&#x200B;**Add To Cart** リクエストを送信します。
 
-   ```
+   ```graphql
    mutation {
     addProductsToCart(
       cartId: "id_here"
@@ -96,23 +96,23 @@ ACSD-57477 パッチでは、販売ルールの処理によって買い物かご
    }
    ```
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-`AddProductsToCart` GraphQLの操作パフォーマンスは低下しないようにしてください。
+`AddProductsToCart` GraphQL操作のパフォーマンスを低下させないでください。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-パラメーターが変数として送信されると、すべての製品属性が読み込まれるので、`AddProductsToCart` GraphQLの操作パフォーマンスが低下します。
+パラメーターが変数として送信されると、すべての製品属性が読み込まれるため、`AddProductsToCart` GraphQL操作のパフォーマンスが低下します。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドの
-* クラウドインフラストラクチャー上のAdobe Commerce:[&#x200B; アップグレードとパッチ適用 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja) クラウドインフラストラクチャー上のCommerce ガイド
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」ガイド
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]：品質向上パッチを適用するためのセルフサービス &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) ツール（『ツールガイド』）
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール

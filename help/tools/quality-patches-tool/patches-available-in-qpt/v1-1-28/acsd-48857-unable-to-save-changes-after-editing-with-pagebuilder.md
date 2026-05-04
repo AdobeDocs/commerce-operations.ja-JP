@@ -1,79 +1,79 @@
 ---
-title: ACSD-48857：で編集した後に変更を保存できない  [!DNL Page Builder]
-description: ' [!DNL Page Builder] を使用して編集した後、ユーザーが変更を保存できないAdobe Commerceの問題を修正するために、ACSD-48857 パッチを適用します。'
+title: 'ACSD-48857: [!DNL Page Builder]で編集した後に変更を保存できない'
+description: ACSD-48857 パッチを適用して、ユーザーが [!DNL Page Builder]で編集後に変更内容を保存できないAdobe Commerceの問題を修正します。
 feature: Admin Workspace, CMS, Page Builder
 role: Admin
 exl-id: b03cd597-8fef-4528-9699-793dc61d34da
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
 
-# ACSD-48857: [!DNL Page Builder] で編集した後に変更を保存できない
+# ACSD-48857: [!DNL Page Builder]での編集後に変更を保存できない
 
-ACSD-48857 パッチは、[!DNL Page Builder] で編集した後、ユーザーが変更を保存できない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.28 がインストールされている場合に使用できます。 パッチ ID は ACSD-48857 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-48857 パッチは、[!DNL Page Builder]での編集後にユーザーが変更を保存できない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.28がインストールされている場合に利用できます。 パッチ IDはACSD-48857です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 ～ 2.4.6
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 - 2.4.6
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-[!DNL Page Builder] で編集した後、ユーザーが変更を保存できない。
+ユーザーは[!DNL Page Builder]で編集した後、変更内容を保存できません。
 
-<u> 再現手順 </u>
+<u>複製する手順</u>
 
-1. 管理者 Web サイトにログインします。
-1. **[!UICONTROL Content]**/**[!UICONTROL Elements]**/**[!UICONTROL Pages]** に移動して、空のCMSページを作成します。
-1. この SQL スクリプトを実行して、次の **[!UICONTROL Content]** フィールド値を設定します。
+1. Admin Web サイトにログインします。
+1. **[!UICONTROL Content]** > **[!UICONTROL Elements]** > **[!UICONTROL Pages]**&#x200B;に移動して、空のCMS ページを作成します。
+1. このSQL スクリプトを実行して、次の&#x200B;**[!UICONTROL Content]** フィールド値を設定します。
 
    ```SQL
    update cms_page set content = '<div data-content-type="text" data-appearance="default" data-element="main"><h4 style="text-align: center;" contenteditable="true" data-placeholder="Edit Heading Text" data-content-type="heading" data-appearance="default" data-element="main">THE RULES</h4></div>' where page_id=8;
    ```
 
-1. 管理者で **[!UICONTROL Content]**/**[!UICONTROL Elements]**/**[!UICONTROL Pages]** に戻ります。
+1. 管理者の&#x200B;**[!UICONTROL Content]** > **[!UICONTROL Elements]** > **[!UICONTROL Pages]**&#x200B;に戻ります。
 1. ページを編集します。
 1. 「**[!UICONTROL Content]**」タブに移動します。
-1. 「**[!UICONTROL Save]**」をクリックします。
+1. **[!UICONTROL Save]**&#x200B;をクリックします。
 
-<u> 期待される結果 </u>
+<u>期待される結果</u>
 
-HTML コンテンツのサニタイズが実装されます。 これにより [!DNL Page Builder] テキストエディターで生成されたコンテンツ内の予約されたHTML属性が削除されます。
+HTMLのコンテンツのサニタイズが実装されています。 これにより、テキストエディターで生成されたコンテンツ内の[!DNL Page Builder]件の予約済みHTML属性が削除されます。
 
-<u> 実績 </u>
+<u>実際の結果</u>
 
-ページは保存されず、ローダーは回転を続けます。 コンソールで、次のエラーが生成されます。
+ページは保存されず、ローダーは回転し続けます。 コンソールで、次のエラーが生成されます。
 
-```
+```ini
 [ERROR] Page Builder was rendering for 5 seconds without releasing locks.
 ```
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

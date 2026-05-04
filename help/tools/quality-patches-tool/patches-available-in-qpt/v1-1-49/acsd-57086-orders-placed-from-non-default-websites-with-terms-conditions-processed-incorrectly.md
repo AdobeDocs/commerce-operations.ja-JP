@@ -1,105 +1,105 @@
 ---
-title: ACSD-57086：利用条件が有効なデフォルト以外の web サイトからの注文が正しく処理されない
-description: ACSD-57086 パッチを適用すると、利用条件が有効なデフォルト以外の web サイトから注文が正しく処理されないAdobe Commerceの問題を修正できます。
+title: ACSD-57086：条件が有効になっているデフォルト以外のweb サイトからの注文が正しく処理されない
+description: 条件が有効になっているデフォルト以外のweb サイトからの注文が正しく処理されないAdobe Commerceの問題を修正するには、ACSD-57086 パッチを適用します。
 feature: Orders
 role: Admin, Developer
 exl-id: d9f2ef50-12c4-4a2d-b140-dfd0e8948fd3
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
 
-# ACSD-57086：利用条件が有効なデフォルト以外の web サイトからの注文が正しく処理されない
+# ACSD-57086：条件が有効になっているデフォルト以外のweb サイトからの注文が正しく処理されない
 
-ACSD-57086 パッチは、契約条件が有効になっているデフォルト以外の web サイトから注文した注文が正しく処理されない問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.49 がインストールされている場合に使用できます。 パッチ ID は ACSD-57086 です。 この問題はAdobe Commerce 2.4.7 で修正されました。
+ACSD-57086 パッチでは、条件が有効になっているデフォルト以外のweb サイトからの注文が正しく処理されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.49がインストールされている場合に利用できます。 パッチ IDはACSD-57086です。 この問題は、Adobe Commerce 2.4.7で修正されています。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p5
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 ～ 2.4.6-p7
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 - 2.4.6-p7
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-AsyncOrder 処理でマルチストア設定を使用する際に、キューの消費者コードの範囲処理に関する問題が原因で、メインの web サイト以外の web サイト/ストアで注文が拒否されます。
+AsyncOrder処理でマルチストア設定を使用する場合、キューコンシューマーコードでのスコープ処理に関する問題により、メインサイト以外のweb サイトまたはストアで行われた注文は拒否されます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. [!DNL RabbitMQ] をインストールして `bin/magento setup:upgrade` を実行し、[!DNL RabbitMQ] 用のキューを作成します。
-1. 次を使用して AsyncOrder 処理を設定します。
+1. [!DNL RabbitMQ]をインストールして`bin/magento setup:upgrade`を実行し、[!DNL RabbitMQ]のキューを作成します。
+1. AsyncOrder処理を次で設定します。
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --checkout-async 1
    ```
 
-1. セカンダリ Web サイト、ストア、ストアビューを作成します。
-1. 両方の web サイト間で共有される製品を作成します。
+1. セカンダリ web サイト、ストア、ストアビューを作成する。
+1. 両方のweb サイト間で共有される製品を作成します。
 1. 利用条件を有効にする：
-   1. **[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Sales]**/**[!UICONTROL Checkout]**/**[!UICONTROL Checkout Options]** に移動します。
-   1. *[!UICONTROL Enable Terms And Conditions]* を *はい* に設定します。
-1. 両方の web サイトの利用条件を設定します。
-   1. **[!UICONTROL Stores]**/**[!UICONTROL Terms And Conditions]**/**[!UICONTROL Add New Condition]** に移動します。
+   1. **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Checkout]** > **[!UICONTROL Checkout Options]**&#x200B;に移動します。
+   1. *[!UICONTROL Enable Terms And Conditions]*&#x200B;を&#x200B;*はい*&#x200B;に設定します。
+1. 両方のweb サイトの利用条件を設定します。
+   1. **[!UICONTROL Stores]** > **[!UICONTROL Terms And Conditions]** > **[!UICONTROL Add New Condition]**&#x200B;に移動します。
    1. 次の設定を使用します。
-      * *[!UICONTROL Condition Name]*: *すべて*
+      * *[!UICONTROL Condition Name]*: *何でも*
       * *[!UICONTROL Status]*: *[!UICONTROL Enabled]*
       * *[!UICONTROL Applied]*: *[!UICONTROL Manually]*
       * *[!UICONTROL Store View]*: *[!UICONTROL Default Store View]*
-   1. 2 つ目の web サイト/ストア表示に別の条件を作成します。
-1. **[!UICONTROL Stores]**/**[!UICONTROL All Stores]** に移動して、デフォルトの web サイトを変更します。 2 つ目の Web サイトをクリックし、「*[!UICONTROL Set as Default]*」をオンにして保存します。
-1. 次を使用してキャッシュをクリアします。
+   1. 2番目のweb サイト/ストアビュー用に別の条件を作成します。
+1. **[!UICONTROL Stores]** > **[!UICONTROL All Stores]**&#x200B;に移動して、既定のWeb サイトを変更します。 2番目のWeb サイトをクリックし、*[!UICONTROL Set as Default]*&#x200B;を確認して保存します。
+1. 次のコマンドでキャッシュをクリアします。
 
-   ```bash
+   ```shell
    bin/magento cache:clear
    ```
 
-1. ストアフロントに移動し、商品を買い物かごに追加します。 チェックアウトに進み、注文します（利用条件に同意するための支払い方法ステップにチェックボックスが表示されます）。
-1. 注文後に管理者に戻り、デフォルトの web サイトを元のメインの web サイトに変更して保存します。
-1. キャッシュをクリアする：
+1. ストアフロントに移動し、商品をカートに追加します。 チェックアウトに進み、注文します（利用条件に同意するには、支払い方法の手順にチェックボックスが表示されます）。
+1. 注文後に「管理者」に戻り、デフォルトのweb サイトを元のメイン web サイトに戻して保存します。
+1. キャッシュをクリアします。
 
-   ```bash
+   ```shell
    bin/magento cache:clear
    ```
 
 1. 次のコマンドを実行して、キューコンシューマーを起動します。
 
-   ```bash
+   ```shell
    bin/magento queue:cons:start placeOrderProcessor
    ```
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-注文が履行されました。自動的には拒否されません。
+注文は処理され、自動的に拒否されることはありません。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-注文ステータスは *却下* で、次のコメントが付きます。
+次のコメントが付いた注文ステータスは&#x200B;*拒否*&#x200B;です：
 
-*注文は行われませんでした。 まず、利用規約に同意してから、もう一度注文してみてください。*
+*注文が行われませんでした。 最初に利用条件に同意してから、もう一度ご注文ください。*
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

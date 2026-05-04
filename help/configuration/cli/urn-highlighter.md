@@ -1,10 +1,10 @@
 ---
 title: URN ハイライター
-description: Adobe Commerce開発用の IDE で URN のハイライト表示を設定する方法を説明します。 XSD スキーマの設定と開発の最適化について説明します。
+description: Adobe Commerce開発用IDEでURN強調表示を設定する方法を説明します。 XSD スキーマの設定と開発の最適化について説明します。
 exl-id: 6389ab58-af70-4b33-800e-be3191c5a4cc
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -13,32 +13,32 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Commerce コードは、すべての XSD スキーマを [Uniform Resource Name （URN） &#x200B;](https://www.ietf.org/rfc/rfc2141.txt) として参照します。 コードを開発していて、XSD を参照する必要がある場合、このコマンドは、URN を認識して強調表示するように統合開発環境（IDE）を設定します。 これにより、開発が容易になります。
+Commerce コードは、すべてのXSD スキーマを[Uniform Resource Names （URN） ](https://www.ietf.org/rfc/rfc2141.txt)として参照します。 コードを開発しており、XSDを参照する必要がある場合、このコマンドは、URNを認識してハイライト表示するように統合開発者環境（IDE）を設定します。 これにより、開発が容易になります。
 
-デフォルトでは、PhpStorm などの IDE は URN を認識するように設定されていないため、次のように赤いテキストで表示されます。
+デフォルトでは、PhpStormのようなIDEはURNを認識するように設定されていないため、次のように赤いテキストで表示されます。
 
-![URN を認識するように PhpStorm が設定されていません &#x200B;](../../assets/configuration/urn-before.png)
+![PhpStormはURN](../../assets/configuration/urn-before.png)を認識するように設定されていません
 
-`bin/magento dev:urn-catalog:generate` コマンドを使用すると、IDE （現在は PhpStorm と Visual Studio Code のみ）で次のような URN を認識して強調表示できます。
+`bin/magento dev:urn-catalog:generate` コマンドを使用すると、IDE （現在はPhpStormとVisual Studio Codeのみ）で、次のようなURNを認識して強調表示できます。
 
-![URN を認識する IDE の有効化 &#x200B;](../../assets/configuration/urn-after.png)
+![IDEでURNを認識できるようにする](../../assets/configuration/urn-after.png)
 
-具体的には、このコマンドは次の PhpStorm 設定を作成します。
+具体的には、このコマンドは次のPhpStorm設定を作成します。
 
-![PhpStorm の設定例 &#x200B;](../../assets/configuration/urn-settings.png)
+![PhpStorm設定の例](../../assets/configuration/urn-settings.png)
 
-## IDE の設定
+## IDEの設定
 
-現在、PhpStorm と Visual Studio Code のみがサポートされています。
+現在、サポートされているのはPhpStormとVisual Studio Codeのみです。
 
-コマンド構文：
+コマンドの構文：
 
-```bash
+```shell
 bin/magento dev:urn-catalog:generate <path>
 ```
 
-ここで、`<path>` は PhpStorm `misc.xml` ファイルへのパスです。このファイルは、プロジェクトのルートからの相対パスで配置されます。 通常、`<path>` は `.idea/misc.xml` です。
+ここで、`<path>`は、プロジェクトのルートに関連するPhpStorm `misc.xml` ファイルへのパスです。 通常、`<path>`は`.idea/misc.xml`です。
 
 >[!INFO]
 >
->「スキーマと DTD」を最新の状態に保つには、`dev:urn-catalog:generate` ファイルを含むCommerce 2 モジュールを追加、変更、削除するたびに `*.xsd` コマンドを実行します。
+>「スキーマとDTD」を最新の状態に保つには、`*.xsd` ファイルを含むCommerce 2 モジュールを追加、変更、削除するたびに`dev:urn-catalog:generate` コマンドを実行します。

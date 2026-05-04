@@ -1,78 +1,78 @@
 ---
-title: AWS ElastiCache を使用して Redis を設定します
-description: EC2 でホストされるCommerce インスタンスの場合、ローカル Redis インスタンスの代わりにAWS ElastiCache を使用する方法を説明します。 コマンドラインのセットアップ、設定オプション、検証方法について説明します。
+title: AWS ElastiCacheでのRedisの設定
+description: EC2でホストされているCommerce インスタンスの場合、ローカル Redis インスタンスの代わりにAWS ElastiCacheを使用する方法について説明します。 コマンドラインのセットアップ、設定オプション、検証手法について説明します。
 feature: Configuration, Cache
-source-git-commit: b66479ee1350d92c1d59212283222e5068c263a6
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
 
 
-# AWS ElastiCache を使用して Redis を設定します
+# AWS ElastiCacheでのRedisの設定
 
-Commerce 2.4.3 以降、Amazon EC2 でホストされるインスタンスは、ローカル Redis インスタンスの代わりにAWS ElastiCache を使用する場合があります。
+Commerce 2.4.3以降、Amazon EC2でホストされているインスタンスでは、ローカル Redis インスタンスの代わりにAWS ElastiCacheを使用できます。
 
 >[!WARNING]
 >
->このセクションは、Amazon EC2 VPC 上で稼働するCommerce インスタンスにのみ適用されます。 オンプレミスのインストールでは機能しません。
+>このセクションは、Amazon EC2 VPCで動作するCommerce インスタンスにのみ適用されます。 オンプレミスのインストールでは機能しません。
 
 ## 前提条件
 
-- **Redis OSS サーバーレスキャッシュの作成** - AWS Management Console から、EC2 インスタンスの同じリージョンおよびVPCに Redis キャッシュを作成します。 手順については、[AWS Elasticache ドキュメント &#x200B;](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html) を参照してください。
+- **Create a Redis OSS serverless cache**- AWS Management Consoleから、EC2 インスタンスの同じリージョンとVPCにRedis キャッシュを作成します。 手順については、[AWS Elasticache ドキュメント ](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html)を参照してください。
 
-- **EC2 Commerce インスタンスへの接続の確認**
+- **EC2 Commerce インスタンスへの接続を確認する**
 
-   - EC2 インスタンスへの SSH 接続を開きます。
-   - EC2 インスタンスに、Redis クライアントをインストールします。
+   - EC2 インスタンスへのSSH接続を開きます
+   - EC2 インスタンスで、Redis クライアントをインストールします。
 
-     ```bash
+     ```shell
      sudo apt-get install redis
      ```
 
-   - EC2 セキュリティグループにインバウンド規則を追加します：タイプ `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
-   - ElastiCache クラスターセキュリティ グループに受信規則を追加します：タイプ `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
-   - Redis CLI に接続します。
+   - EC2 セキュリティグループにインバウンドルールを追加します：タイプ `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
+   - ElastiCache Cluster セキュリティグループにインバウンドルールを追加します：タイプ `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
+   - Redis CLIに接続します。
 
-     ```bash
+     ```shell
      redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
      ```
 
-### クラスターを使用するようにCommerceを設定します
+### クラスターを使用するようにCommerceを設定する
 
-Commerceでは、複数のタイプのキャッシュ設定をサポートしています。 一般に、キャッシュ設定はフロントエンドとバックエンドに分かれます。 フロントエンドキャッシュは `default` に分類され、あらゆるキャッシュタイプで使用されます。 パフォーマンスを向上させるには、カスタマイズするか、下位レベルのキャッシュに分割します。 一般的な Redis 設定は、デフォルトのキャッシュとページキャッシュを独自の Redis データベース（RDB）に分離することです。
+Commerceは、複数のタイプのキャッシュ設定をサポートしています。 一般的に、キャッシュ設定はフロントエンドとバックエンドに分割されます。 フロントエンド キャッシュは`default`に分類され、任意のキャッシュ タイプに使用されます。 カスタマイズしたり、下位レベルのキャッシュに分割したりすることで、パフォーマンスを向上させることができます。 共通のRedis設定は、デフォルトのキャッシュとページキャッシュを独自のRedis Database （RDB）に分離することです。
 
 `setup` コマンドを実行して、Redis エンドポイントを指定します。
 
-Commerceを Redis 用にデフォルトキャッシュとして設定するには：
+Redis用Commerceをデフォルトのキャッシュとして設定するには：
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=<ElastiCache Primary Endpoint host> --cache-backend-redis-port=<ElastiCache Primary Endpoint port> --cache-backend-redis-db=0
 ```
 
-Commerceを Redis ページキャッシュ用に設定するには：
+Redis ページキャッシュ用にCommerceを設定するには：
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=<ElastiCache Primary Endpoint host> --page-cache-redis-port=<ElastiCache Primary Endpoint port> --page-cache-redis-db=1
 ```
 
-セッションストレージに Redis を使用するようにCommerceを設定するには：
+セッションストレージにRedisを使用するようにCommerceを設定するには：
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=<ElastiCache Primary Endpoint host> --session-save-redis-port=<ElastiCache Primary Endpoint port> --session-save-redis-log-level=4 --session-save-redis-db=2
 ```
 
-## 接続の検証
+## 接続性の確認
 
-**Commerceが ElastiCache と通信していることを確認するには**:
+**CommerceがElastiCacheと通信していることを確認するには**:
 
-1. Commerce EC2 インスタンスへの SSH 接続を開きます。
-1. Redis モニタを起動します。
+1. Commerce EC2 インスタンスへのSSH接続を開きます。
+1. Redis モニターを起動します。
 
-   ```bash
+   ```shell
    redis-cli -h <ElastiCache-Primary-Endpoint-host> -p <ElastiCache-Primary-Endpoint-port> monitor
    ```
 
-1. Commerce UI でページを開きます。
-1. ターミナルで [cache output](#verify-the-redis-connection) を確認します。
+1. Commerce UIでページを開きます。
+1. ターミナルの[ キャッシュ出力](#verify-the-redis-connection)を確認します。

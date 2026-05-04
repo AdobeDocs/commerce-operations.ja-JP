@@ -1,34 +1,34 @@
 ---
 title: プライベートコンテンツブロックのベストプラクティス
-description: ストアフロントのパフォーマンスを最適化するための、プライベートコンテンツブロックの設定に関するベストプラクティスについて説明します。
+description: ストアフロントのパフォーマンスを最適化するために、プライベートコンテンツブロックを設定するためのベストプラクティスを説明します。
 role: Developer
 feature: Best Practices
 exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 1%
+source-wordcount: '210'
+ht-degree: 0%
 
 ---
 
 # プライベートコンテンツブロックのベストプラクティス
 
-プライベートコンテンツブロックに `_isScopePrivate` 変数が含まれている場合、ブロックはキャッシュできません。 プライベートブロックはキャッシュされないので、Adobe Commerceは顧客のリクエストごとに同じデータを取得する必要があり、サーバーの負荷が高くなります。
+プライベートコンテンツブロックに`_isScopePrivate`変数が含まれている場合、ブロックはキャッシュできません。 プライベートブロックはキャッシュされないため、Adobe Commerceは各カスタマーリクエストに対して同じデータを取得する必要があり、サーバーの負荷が増加します。
 
-プライベートコンテンツに `_isScopePrivate` 変数を使用する代わりに、ユーザーに依存しないデータを表示するブロックとテンプレートを作成します。 このデータは、Adobe Commerce UI コンポーネントによってユーザー固有のデータに置き換えられ、プリレンダリングのデータをより効率的に処理できます。 手順については、[&#x200B; の &#x200B;](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) プライベートコンテンツ _[!DNL Commerce PHP Extensions Guide]_&#x200B;を参照してください。
+プライベートコンテンツに`_isScopePrivate`変数を使用する代わりに、ブロックとテンプレートを作成して、ユーザーに依存しないデータを表示します。 このデータは、Adobe Commerce UI コンポーネントによってユーザー固有のデータに置き換えられ、事前レンダリングのデータをより効率的に処理します。 手順については、_[!DNL Commerce PHP Extensions Guide]_の[ プライベートコンテンツ ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/)を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
+[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
 
-- クラウドインフラストラクチャー上のAdobe Commerce
+- Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
 
-## パフォーマンスへの潜在的な影響
+## 潜在的なパフォーマンスへの影響
 
-`_isScopePrivate` 変数を含むプライベートコンテンツブロックを持つサイトでは、AJAXのリクエストをトリガーして、顧客のリクエストごとに同じデータを取得します。 これにより、応答時間が長くなり、顧客登録、買い物かごの更新、注文の送信、支払いトランザクションなど、よりビジネスクリティカルなストアフロント操作を処理するのに使用できる追加のリソースが使用されます。
+`_isScopePrivate`個の変数を含むプライベートコンテンツブロックを持つサイトは、AJAX リクエストをトリガーして、各カスタマーリクエストに対して同じデータを取得します。 これにより、レスポンス時間が増加し、顧客登録、ショッピングカートの更新、注文送信、支払いトランザクションなど、よりビジネスに不可欠なストアフロント業務を処理するために使用できる追加リソースが追加されます。
 
 ## 追加情報
 
-- [非公開コンテンツ](../../../performance/configuration.md#client-side-optimization-settings)
-- [&#x200B; スループットの高いAJAX リクエストは、パフォーマンスの低下を引き起こします &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=ja)
+- [プライベートコンテンツ](../../../performance/configuration.md#client-side-optimization-settings)
+- _[!DNL Commerce PHP Extensions Guide]_の[ キャッシュ可能ブロックとプライベートブロック ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#cacheable-and-private-blocks)

@@ -1,162 +1,162 @@
 ---
-title: PHP 設定
-description: 次の手順に従って、必要な PHP 拡張機能をインストールし、Adobe Commerceのオンプレミス版インストールに必要な PHP 設定を行います。
+title: PHP設定
+description: 次の手順に従って、必要なPHP拡張機能をインストールし、Adobe Commerceのオンプレミスインストールに必要なPHP設定を行います。
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+source-git-commit: e0c62575f71a6d212ba9dab33e38587950e3d783
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
 
 
-# PHP 設定
+# PHP設定
 
-このトピックでは、必要な PHP オプションを設定する方法について説明します。
+このトピックでは、必要なPHP オプションを設定する方法について説明します。
 
 >[!NOTE]
 >
->サポートされる PHP のバージョンは、Adobe Commerceのリリースによって異なります。 インストールしているリリースでサポートされている正確な PHP バージョンについては、[&#x200B; システム要件 &#x200B;](../system-requirements.md) を参照してください。
+>サポートされているPHP バージョンは、Adobe Commerce リリースによって異なります。 インストール中のリリースでサポートされている正確なPHP バージョンについては、[必要システム構成](../system-requirements.md)を参照してください。
 
-クラウド設定のガイダンスについては、[Cloud Infrastructure でのCommerce](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/php-settings) ガイドの _PHP 設定_ を参照してください。
+クラウド設定ガイダンスについては、_Commerce on Cloud Infrastructure_ ガイドの[PHP settings](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings)を参照してください。
 
-## PHP プロセスコントロール
+## PHP プロセス制御
 
 {{php-process-control}}
 
-## PHP がインストールされていることを確認します
+## PHPがインストールされていることを確認する
 
-PHP はほとんどの Linux ディストリビューションにデフォルトでインストールされます。 このトピックは、PHP がすでにインストールされていることを前提としています。 PHP がインストールされているかどうかを確認するには、コマンドラインに以下を入力します。
+PHPは、ほとんどのLinux ディストリビューションにデフォルトでインストールされます。 このトピックでは、既にPHPがインストールされていることを前提としています。 PHPがインストールされているかどうかを確認するには、コマンドラインで次のように入力します。
 
-```bash
+```shell
 php -v
 ```
 
-PHP がインストールされている場合は、次のようなメッセージが表示されます。
+PHPがインストールされている場合は、次のようなメッセージが表示されます。
 
-```
+```text
 PHP <supported-version> (cli) (built: <build-date>) (NTS)
 Copyright (c) The PHP Group
 Zend Engine v<matching-version>, Copyright (c) Zend Technologies
     with Zend OPcache v<matching-version>, Copyright (c), by Zend Technologies
 ```
 
-PHP がインストールされていない（またはアップグレードが必要な）場合は、Linux ディストリビューションの指示に従ってインストールしてください。
+PHPがインストールされていない場合（またはアップグレードが必要な場合）は、Linux ディストリビューションの手順に従ってインストールします。
 
-## インストールされている拡張機能の検証
+## インストールされた拡張機能を確認
 
-Adobe Commerceには特定の PHP 拡張モジュールが必要です。 次のリストに、Commerceの各エディションで必要な拡張機能を示します。 リストは、各エディションの最新バージョンを実行しているデプロイメントから自動生成されます。
+Adobe Commerceには、特定のPHP拡張機能が必要です。 次のリストは、Commerceの各エディションに必要な拡張機能を示しています。 リストは、各エディションの最新バージョンを実行しているデプロイメントから自動生成されます。
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
 インストールされている拡張機能を確認するには：
 
-1. インストールされているモジュールのリスト。
+1. インストール済みモジュールのリスト。
 
-   ```bash
+   ```shell
    php -m
    ```
 
 1. 必要な拡張機能がすべてインストールされていることを確認します。
-1. PHP のインストールに使用するのと同じワークフローを使用して、不足しているモジュールを追加します。
+1. PHPのインストールに使用するのと同じワークフローを使用して、欠落しているモジュールを追加します。
 
-## PHP の設定を確認する
+## PHP設定の確認
 
 >[!WARNING]
 >
->PHP [bug 81101](https://bugs.php.net/bug.php?id=81101) の影響を受けるレガシー環境のトラブルシューティングを行う場合は、`pcre.jit=0` ファイルに `php.ini` を設定して、CSS が読み込まれない問題を回避します。
+>PHP [ バグ 81101](https://bugs.php.net/bug.php?id=81101)の影響を受けるレガシー環境のトラブルシューティングを行う場合は、`php.ini` ファイルの`pcre.jit=0`を設定して、CSSが読み込まれない問題を回避してください。
 
-- PHP のシステムタイムゾーンを設定します。設定しないと、インストール中に次のようなエラーが表示され、cron のような時間関連の操作が機能しない場合があります。
+- PHPのシステムタイムゾーンを設定します。設定しない場合、インストール時に次のようなエラーが表示され、cronなどの時間関連の操作が機能しない場合があります。
 
-```
+```text
 PHP Warning:  date(): It is not safe to rely on the system's timezone settings. [more messages follow]
 ```
 
-- PHP のメモリ制限を設定します。
+- PHPのメモリ制限を設定します。
 
-  Adobeでは次のことをお勧めします。
+  Adobeでは、次の項目を推奨しています。
 
-   - コードのコンパイルまたは静的アセットのデプロイ、`1G`
+   - コードのコンパイルまたは静的アセットのデプロイ，`1G`
    - デバッグ，`2G`
-   - テスト，`~3-4G`
+   - テスト中、`~3-4G`
 
-- PHP `realpath_cache_size` および `realpath_cache_ttl` の値を推奨設定に増やします。
+- PHP `realpath_cache_size`および`realpath_cache_ttl`の値を推奨設定に増やします。
 
   ```conf
   realpath_cache_size=10M
   realpath_cache_ttl=7200
   ```
 
-  これらの設定により、PHP プロセスはページの読み込み時にパスを検索する代わりにファイルへのパスをキャッシュすることができます。 PHP ドキュメントの [&#x200B; パフォーマンスチューニング &#x200B;](https://www.php.net/manual/en/ini.core.php) を参照してください。
+  これらの設定を使用すると、PHP プロセスはページ読み込み時にパスを検索するのではなく、ファイルにパスをキャッシュできます。 PHP ドキュメントの[ パフォーマンスチューニング ](https://www.php.net/manual/en/ini.core.php)を参照してください。
 
-- Adobe Commerce 2.1 以降に必要な [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments) を有効にします。
+- Adobe Commerce 2.1以降に必要な[`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments)を有効にします。
 
-  Adobeでは、パフォーマンス上の理由から、[PHP OPcache](https://www.php.net/manual/en/book.opcache.php) を有効にすることをお勧めします。 OPcache は多くの PHP ディストリビューションで有効になっています。
+  Adobeでは、パフォーマンス上の理由から[PHP OPcache](https://www.php.net/manual/en/book.opcache.php)を有効にすることをお勧めします。 OPcacheは多くのPHP ディストリビューションで有効になっています。
 
-  Adobe Commerce 2.1 以降では、コードの生成に PHP コードコメントを使用します。
+  Adobe Commerce 2.1以降では、コード生成にPHP コードコメントを使用します。
 
 >[!NOTE]
 >
->インストールおよびアップグレード時の問題を回避するために、Adobeでは、PHP コマンドライン設定と PHP Web Server プラグイン設定の両方に同じ PHP 設定を適用することを強くお勧めします。 詳しくは、次の節を参照してください。
+>インストールおよびアップグレード時の問題を回避するために、Adobeでは、PHP コマンドライン設定とPHP web サーバープラグイン設定の両方に同じPHP設定を適用することを強くお勧めします。 詳しくは、次の節を参照してください。
 
-## PHP 設定ファイルの検索
+## PHP設定ファイルの検索
 
-この節では、必要な設定を更新するために必要な設定ファイルを見つける方法について説明します。
+この節では、必要な設定を更新するために必要な設定ファイルの検索方法について説明します。
 
-### 設定ファイル `php.ini` 検索
+### `php.ini`設定ファイルを検索
 
-Web サーバー設定を見つけるには、web ブラウザーで [`phpinfo.php` ファイルを実行し &#x200B;](optional-software.md#create-phpinfophp) 次のように `Loaded Configuration File` を探します。
+Web サーバー設定を検索するには、web ブラウザーで[`phpinfo.php` ファイル ](optional-software.md#create-phpinfophp)を実行し、次のように`Loaded Configuration File`を探します。
 
-![PHP 情報ページ &#x200B;](../../assets/installation/config_phpini-webserver.png)
+![PHP情報ページ ](../../assets/installation/config_phpini-webserver.png)
 
-PHP コマンドライン設定を探すには、次のように入力します。
+PHP コマンドライン設定を見つけるには、次のように入力します
 
-```bash
+```shell
 php --ini | grep "Loaded Configuration File"
 ```
 
 >[!NOTE]
 >
->`php.ini` ファイルが 1 つだけの場合は、そのファイルを変更します。 `php.ini` ファイルが 2 つある場合は、*両方* ファイルを変更します。 そうしないと、予期しないパフォーマンスが発生する可能性があります。
+>`php.ini` ファイルが1つしかない場合は、そのファイルを変更します。 2つの`php.ini` ファイルがある場合は、*両方* ファイルを変更します。 これを怠ると、予期しないパフォーマンスが発生する可能性があります。
 
-### OPcache 構成設定の検索
+### OPcache構成設定の検索
 
-PHP OPcache の設定は、通常 `php.ini` または `opcache.ini` に置かれます。 場所は、オペレーティングシステムと PHP のバージョンによって異なる場合があります。 OPcache 構成ファイルには、`opcache` セクションまたは `opcache.enable` のような設定が含まれる場合があります。
+PHP OPcacheの設定は通常、`php.ini`または`opcache.ini`にあります。 場所は、オペレーティングシステムとPHPのバージョンによって異なる場合があります。 OPcache設定ファイルには、`opcache` セクションまたは`opcache.enable`のような設定が含まれている場合があります。
 
-検索には、次のガイドラインを使用します。
+次のガイドラインを使用して検索します。
 
 - Apache web サーバー：
 
-  Apache を使用する Ubuntu の場合、OPcache 設定は通常、`php.ini` ファイルにあります。
+  Apacheを使用するUbuntuの場合、OPcache設定は通常、`php.ini` ファイルにあります。
 
-  Apache または nginx を使用する CentOS の場合、OPcache 設定は通常、`/etc/php.d/opcache.ini` にあります。
+  Apacheまたはnginxを使用するCentOSの場合、OPcache設定は通常`/etc/php.d/opcache.ini`にあります
 
-  存在しない場合は、次のコマンドを使用して検索します。
+  そうでない場合は、次のコマンドを使用して検索します。
 
-  ```bash
+  ```shell
   sudo find / -name 'opcache.ini'
   ```
 
-- php-FPM を使用する nginx web サーバ：`/etc/php/<supported-php-version>/fpm/php.ini`
+- nginx web サーバーとPHP-FPM: `/etc/php/<supported-php-version>/fpm/php.ini`
 
-複数の `opcache.ini` がある場合は、それらをすべて変更します。
+`opcache.ini`が複数ある場合は、それらをすべて変更します。
 
 ## PHP オプションの設定方法
 
-PHP オプションを設定するには、次の手順に従います。
+PHP オプションを設定するには：
 
-1. `php.ini` をテキストエディターで開きます。
-1. 利用可能な [&#x200B; タイムゾーン設定 &#x200B;](https://www.php.net/manual/en/timezones.php) でサーバーのタイムゾーンを見つけます
+1. テキストエディターで`php.ini`を開きます。
+1. 使用可能な[ タイムゾーン設定](https://www.php.net/manual/en/timezones.php)で、サーバーのタイムゾーンを探します
 1. 次の設定を探し、必要に応じてコメントを解除します。
 
    ```conf
    date.timezone =
    ```
 
-1. 手順 2 で確認したタイムゾーン設定を追加します。
+1. 手順2で見つけたタイムゾーン設定を追加します。
 
-1. `memory_limit` の値を、このセクションの先頭で推奨されている値の 1 つに変更します。
+1. `memory_limit`の値を、このセクションの先頭で推奨されている値のいずれかに変更します。
 
    以下に例を挙げます。
 
@@ -164,7 +164,7 @@ PHP オプションを設定するには、次の手順に従います。
    memory_limit=2G
    ```
 
-1. 次の値に一致するように `realpath_cache` 設定を追加または更新します。
+1. 次の値に一致するように`realpath_cache`設定を追加または更新します。
 
    ```conf
    ;
@@ -180,35 +180,34 @@ PHP オプションを設定するには、次の手順に従います。
 
 1. 変更を保存し、テキストエディターを終了します。
 
-1. 他の `php.ini` を開き（異なる場合）、同じ変更を加えます。
+1. 他の`php.ini`を開き（それらが異なる場合）、同じ変更を加えます。
 
 ## OPcache オプションの設定
 
-`opcache.ini` のオプションを設定するには：
+`opcache.ini` オプションを設定するには：
 
-1. テキストエディターで OPcache 設定ファイルを開きます。
+1. テキストエディターでOPcache設定ファイルを開きます。
 
    - `opcache.ini` （CentOS）
    - `php.ini` （Ubuntu）
-   - `/etc/php/<supported-php-version>/fpm/php.ini` （nginx web サーバ（CentOS または Ubuntu））
+   - `/etc/php/<supported-php-version>/fpm/php.ini` （nginx web サーバー（CentOSまたはUbuntu））
 
-1. `opcache.save_comments` を見つけ、必要に応じてコメントを解除します。
-1. その値が `1` に設定されていることを確認します。
+1. `opcache.save_comments`を探し、必要に応じてコメントを解除します。
+1. 値が`1`に設定されていることを確認してください。
 1. 変更を保存し、テキストエディターを終了します。
 1. Web サーバーを再起動します。
 
-   - Apache、Ubuntu:`service apache2 restart`
+   - Apache、Ubuntu: `service apache2 restart`
    - Apache、CentOS: `service httpd restart`
    - nginx、Ubuntu、CentOS: `service nginx restart`
 
 ## トラブルシューティング
 
-PHP の問題のトラブルシューティングについては、以下のAdobe Commerce サポートの記事を参照してください。
+PHPの問題のトラブルシューティングについては、次のAdobe Commerce サポート記事を参照してください。
 
-- [&#x200B; ブラウザーでAdobe Commerceにアクセスすると、PHP バージョンエラーまたは 404 エラーが発生する &#x200B;](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [PHP 設定エラー &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
-- [PHP mcrypt 拡張モジュールが正しくインストールされていません &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly)
-- [PHP バージョン準備チェックの問題 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
-- [&#x200B; 一般的な PHP の致命的なエラーと解決策 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
+- [ブラウザーでAdobe Commerceにアクセスする際のPHP バージョンエラーまたは404 エラー](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
+- [PHP設定エラー](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
+- [PHPのバージョン準備状況チェックの問題](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- [一般的なPHPの致命的なエラーと解決策](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
 <!-- Last updated from includes: 2025-04-04 22:27:22 -->

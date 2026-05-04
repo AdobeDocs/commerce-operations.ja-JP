@@ -1,81 +1,81 @@
 ---
-title: MySQL 設定のベストプラクティス
-description: MySQL トリガーとスレーブ接続がCommerce サイトのパフォーマンスに与える影響と、それらを効果的に使用する方法について説明します。
+title: MySQL設定のベストプラクティス
+description: MySQL トリガーとスレーブ接続がCommerce サイトのパフォーマンスにどのように影響するか、またそれらを効果的に使用する方法について説明します。
 role: Developer
 feature: Best Practices
 exl-id: 7c2f51fd-9333-4954-bd35-79c2de3cb2ff
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
 
-# MySQL 設定のベストプラクティス
+# MySQL設定のベストプラクティス
 
 >[!NOTE]
 >
->このトピックには、業界標準のソフトウェア用語が含まれています。これらの用語を人種差別的、性差別的、または抑圧的と見なす場合があり、読者が苦痛を感じたり、トラウマを抱いたり、歓迎されないと感じたりする場合があります。 Adobeは、これらの用語をコード、ドキュメントおよびユーザーエクスペリエンスから削除するよう取り組んでいます。
+>このトピックには、業界標準のソフトウェア用語が含まれており、人種差別的、性差別的、または抑圧的である可能性があり、読者が傷ついたり、トラウマを抱いたり、歓迎されていないと感じたりする可能性があります。 Adobeでは、コード、ドキュメント、ユーザーエクスペリエンスからこれらの条件を削除する取り組みを進めています。
 
 ## トリガー
 
-この記事では、MySQL トリガーを使用する際にパフォーマンスの問題を回避する方法について説明します。 トリガーは、変更を監査テーブルに記録するために使用されます。
+この記事では、MySQL トリガーを使用する際のパフォーマンスの問題を回避する方法について説明します。 トリガーは、監査テーブルに変更を記録するために使用されます。
 
 ### 影響を受ける製品とバージョン
 
 - Adobe Commerce オンプレミス
-- クラウドインフラストラクチャー上のAdobe Commerce
+- Adobe Commerce on cloud infrastructure
 
 >[!WARNING]
 >
->クラウドプロジェクト上のAdobe Commerceの場合、実稼動環境用の設定を変更する前に、必ずステージング環境で設定変更をテストしてください。
+>クラウドプロジェクト上のAdobe Commerceの場合は、実稼動環境の設定を変更する前に、必ずステージング環境で設定変更をテストしてください。
 
 ### パフォーマンスへの影響
 
-トリガーは、MySQL が事前にコンパイルしないことを意味するコードとして解釈されます。
+トリガーは、MySQLがプリコンパイルしないコードとして解釈されます。
 
-問い合わせのトランザクション空間に接続すると、トリガーは、テーブルに対して行われる問い合わせごとにパーサとインタプリタにオーバーヘッドを加えます。 トリガーは元の問い合わせと同じトランザクション領域を共有し、それらの問い合わせがテーブルのロックを競合する間、トリガーは別のテーブルのロックを競合しません。
+クエリのトランザクションスペースに接続すると、トリガーは、テーブルで実行される各クエリのパーサーとインタプリターにオーバーヘッドを追加します。 トリガーは元のクエリと同じトランザクションスペースを共有し、それらのクエリはテーブル上のロックを競いますが、トリガーは別のテーブルのロックを競います。
 
-多くのトリガーを使用すると、このオーバーヘッドの増加により、サイトのパフォーマンスが低下する可能性があります。
+多くのトリガーを使用している場合、このようなオーバーヘッドが増えることで、サイトのパフォーマンスに悪影響を及ぼす可能性があります。
 
 >[!WARNING]
 >
->Adobe Commerceでは、Adobe Commerce データベース内のカスタムトリガーをサポートしていません。カスタムバージョンは、今後のAdobe Commerce トリガーとの互換性を失う可能性があるからです。 ベストプラクティスについては、Adobe Commerce ドキュメントの [&#x200B; 一般的な MySQL ガイドライン &#x200B;](../../../installation/prerequisites/database/mysql.md) を参照してください。
+>Adobe Commerceでは、カスタムトリガーが将来のAdobe Commerce バージョンと互換性を持たなくなる可能性があるため、Adobe Commerce データベースのカスタムトリガーはサポートされません。 ベストプラクティスについては、Adobe Commerce ドキュメントの[一般MySQL ガイドライン ](../../../installation/prerequisites/database/mysql.md)を参照してください。
 
-### 効果的な使用
+### 効果的な利用
 
-トリガーを使用する際のパフォーマンスの問題を防ぐには、次のガイドラインに従います。
+トリガーを使用する際のパフォーマンスの問題を回避するには、次のガイドラインに従います。
 
-- トリガーの実行時にデータを書き込むカスタムトリガーがある場合、代わりに、監査テーブルに直接書き込むように、このロジックを移動します。 例えば、トリガーを作成するクエリの後に、アプリケーションコードにクエリを追加します。
-- 既存のカスタムトリガーを確認し、それらを削除して、アプリケーション側からテーブルに直接書き込むことを検討します。 [`SHOW TRIGGERS` SQL 文 &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html) を使用して、データベース内の既存のトリガーを確認します。
-- その他のサポート、質問または懸念については、[Adobe Commerce サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja&#submit-ticket) してください。
+- トリガーの実行時に一部のデータを書き込むカスタムトリガーがある場合は、代わりに監査テーブルに直接書き込むようにこのロジックを移動します。 例えば、トリガーコードにクエリを追加し、クエリの後にアプリケーションコードを追加します。
+- 既存のカスタムトリガーを確認し、それらを削除して、アプリケーション側からテーブルに直接書き込むことを検討します。 [`SHOW TRIGGERS` SQL ステートメント ](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html)を使用して、データベース内の既存のトリガーを確認します。
+- 追加サポート、質問、懸念事項については、[Adobe Commerce サポートチケットを送信してください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket)。
 
 ## スレーブ接続
 
-Adobe Commerceは、複数のデータベースを非同期で読み取ることができます。 Cloud infrastructure Pro アーキテクチャにデプロイされたCommerce サイトの MySQL データベースに大きな負荷がかかると思われる場合は、Adobeで MYSQL スレーブ接続を有効にすることをお勧めします。
+Adobe Commerceは、複数のデータベースを非同期で読み取ることができます。 Cloud Infrastructure Pro アーキテクチャにデプロイされたCommerce サイトのMySQL データベースに高い負荷が発生する場合は、AdobeでMYSQL スレーブ接続を有効にすることをお勧めします。
 
-MYSQL スレーブ接続を有効にすると、Adobe Commerceはデータベースへの読み取り専用接続を使用して、非マスターノードで読み取り専用トラフィックを受け取ります。 読み取り/書き込みトラフィックを処理するノードが 1 つだけの場合は、ロードバランシングによってパフォーマンスが向上します。
+MYSQL スレーブ接続を有効にすると、Adobe Commerceはデータベースへの読み取り専用接続を使用して、非マスターノードで読み取り専用トラフィックを受信します。 読み取りと書き込みのトラフィックを処理するノードが1つしかない場合、負荷分散によってパフォーマンスが向上します。
 
-### 影響を受けるバージョン
+### 影響のあるバージョン
 
-Adobe Commerce on cloud infrastructure、Pro アーキテクチャのみ
+Adobe Commerce オンクラウドインフラストラクチャ、プロアーキテクチャのみ
 
 ### 設定
 
-クラウドインフラストラクチャー上のAdobe Commerceでは、[MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#mysql_use_slave_connection) 変数を設定することで、MYSQL スレーブ接続のデフォルト設定を上書きできます。 データベースへの読み取り専用接続を自動的に使用するには、この変数を `true` に設定します。
+Adobe Commerce on cloud インフラストラクチャでは、[MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection)変数を設定することで、MYSQL スレーブ接続のデフォルト設定を上書きできます。 この変数を`true`に設定すると、データベースへの読み取り専用接続が自動的に使用されます。
 
 **MySQL スレーブ接続を有効にするには**:
 
-1. ローカルワークステーションで、をプロジェクトディレクトリに変更します。
+1. ローカル ワークステーションで、プロジェクト ディレクトリに移動します。
 
-1. `.magento.env.yaml` ファイルで、`MYSQL_USE_SLAVE_CONNECTION` を true に設定します。
+1. `.magento.env.yaml` ファイルで、`MYSQL_USE_SLAVE_CONNECTION`をtrueに設定します。
 
-   ```
+   ```yaml
    stage:
      deploy:
        MYSQL_USE_SLAVE_CONNECTION: true
    ```
 
-1. `.magento.env.yaml` ファイルの変更をコミットし、リモート環境にプッシュします。
+1. `.magento.env.yaml` ファイルの変更を確定し、リモート環境にプッシュします。
 
-   デプロイメントが正常に完了すると、クラウド環境に対して MySQL スレーブ接続が有効になります。
+   デプロイメントが正常に完了すると、クラウド環境でMySQL スレーブ接続が有効になります。

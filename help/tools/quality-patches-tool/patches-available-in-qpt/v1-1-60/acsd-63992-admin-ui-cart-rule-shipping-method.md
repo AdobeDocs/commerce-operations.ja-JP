@@ -1,69 +1,69 @@
 ---
-title: ACSD-63992：管理 UI のクーポンおよび発送方法の条件に関するエラーの [!UICONTROL Cart Price Rule]
-description: ACSD-63992 パッチを適用すると、管理 UI からクーポンの [!UICONTROL Cart Price Rule] と発送方法に基づく条件を正しく適用できないAdobe Commerceの問題を修正できます。
+title: 'ACSD-63992: [!UICONTROL Cart Price Rule] （管理UIでクーポンと配送方法の条件エラー）'
+description: クーポンと配送方法に基づく条件を含む[!UICONTROL Cart Price Rule]がAdmin UIを通じて正しく適用できないAdobe Commerceの問題を修正するには、ACSD-63992 パッチを適用します。
 feature: Price Rules, Admin Workspace
 role: Admin, Developer
 exl-id: 80f407c7-4552-4cfb-96ae-43773d2ec398
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
-# ACSD-63992：管理 UI のクーポンおよび発送方法の条件に関するエラーの [!UICONTROL Cart Price Rule]
+# ACSD-63992: [!UICONTROL Cart Price Rule] （管理UIでクーポンと配送方法の条件エラー）
 
-ACSD-63992 パッチは、クーポンの [!UICONTROL Cart Price Rule] と発送方法に基づく条件を、管理 UI から正しく適用できない問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 がインストールされている場合に使用できます。 パッチ ID は ACSD-63992 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-63992 パッチでは、Admin UIを使用して、クーポンと配送方法に基づく条件を含む[!UICONTROL Cart Price Rule]を正しく適用できない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60がインストールされている場合に利用できます。 パッチ IDはACSD-63992です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7-p3
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p4
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-買い物かごルールの「**[!UICONTROL Conditions]**」セクションに発送方法の条件が含まれている場合、管理パネルを使用して注文を作成する際、関連するクーポンコードは適用されません。 代わりに、次のエラーが表示されます。
+カートルールに&#x200B;**[!UICONTROL Conditions]** セクション内の配送方法の条件が含まれている場合、管理パネルで注文を作成する際に、関連するクーポンコードが適用されません。 代わりに、次のエラーが表示されます。
 
-_&lt;> クーポン コードが無効です。 コードを確認して、もう一度試してください。_
+_&lt;> クーポンコードが無効です。 コードを確認して、もう一度やり直してください。_
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 買い物かご価格ルールを作成し、その条件を説明します。
-   * *[!UICONTROL Conditions]* の下：発送方法を含めるための条件（例：*[!UICONTROL Flat Rate]*）を追加します。
-   * *[!UICONTROL Rule Information]* の下で、**[!UICONTROL Coupon]** を *[!UICONTROL Specific Coupon]* に設定し、**[!UICONTROL Coupon Code]** TEST *として* と入力します。
-1. Admin Panel から新しい注文を作成し、「*」フィールドにクーポンコード* TEST **[!UICONTROL Apply Coupon]** を入力します。
+1. カート価格ルールを作成し、その条件を記述します。
+   * *[!UICONTROL Conditions]*&#x200B;の下：配送方法を含める条件を追加します（例：*[!UICONTROL Flat Rate]*）。
+   * *[!UICONTROL Rule Information]*&#x200B;の下：**[!UICONTROL Coupon]**&#x200B;を&#x200B;*[!UICONTROL Specific Coupon]*&#x200B;に設定し、**[!UICONTROL Coupon Code]**&#x200B;を&#x200B;*TEST*&#x200B;として入力します。
+1. 管理パネルから新しい注文を作成し、**[!UICONTROL Apply Coupon]** フィールドにクーポンコード *TEST*&#x200B;を入力します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-クーポンが正常に適用されました。
+クーポンが正常に適用されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
 次のエラーメッセージが表示されます。
 
-```
+```text
 "The "TEST" coupon code isn't valid. Verify the code and try again."
 ```
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

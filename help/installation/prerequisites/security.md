@@ -1,71 +1,71 @@
 ---
-title: オンプレミス インストールのセキュリティ
-description: Adobe Commerce オンプレミスのインストールのセキュリティ体制を強化する方法について説明します。
+title: オンプレミスのインストールのセキュリティ
+description: Adobe Commerce オンプレミス インストールのセキュリティ対策を強化する方法について説明します。
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
-# オンプレミス インストールのセキュリティ
+# オンプレミスのインストールのセキュリティ
 
-[Security Enhanced Linux （SELinux） &#x200B;](https://selinuxproject.org/page/Main_Page) により、CentOS および Ubuntu 管理者はサーバーに対するより優れたアクセス制御が可能になります。 SELinux *および* を使用している場合、Apache が別のホストへの接続を開始する必要があります。この節で説明するコマンドを実行する必要があります。
+[ セキュリティ強化Linux （SELinux） ](https://selinuxproject.org/page/Main_Page)を使用すると、CentOSおよびUbuntu管理者は、サーバーに対するアクセス制御を強化できます。 SELinux *および*&#x200B;を使用している場合、Apacheは別のホストへの接続を開始する必要があります。この節で説明するコマンドを実行する必要があります。
 
 >[!NOTE]
 >
->Adobeでは、SELinux の使用に関する推奨事項はありません。必要に応じて、セキュリティの強化に使用できます。 SELinux を使用する場合は、適切に設定する必要があります。そうしないと、Adobe Commerceが予期せず機能することがあります。 SELinux を使用する場合は、[CentOS wiki](https://wiki.centos.org/HowTos/SELinux) などのリソースを参照して、通信を有効にするルールを設定してください。
+>Adobeでは、SELinuxの使用に関する推奨事項はありません。必要に応じて、セキュリティを強化するために使用できます。 SELinuxを使用する場合は、適切に設定する必要があります。そうしないと、Adobe Commerceが予測不可能に機能する可能性があります。 SELinuxを使用する場合は、[CentOS wiki](https://wiki.centos.org/HowTos/SELinux)などのリソースを参照して、通信を有効にするルールを設定します。
 
-## を Apache とインストールする際の推奨事項
+## Apacheを使用したインストールの提案
 
-SELinux を有効にすることを選択した場合、次のように一部のディレクトリの *セキュリティコンテキスト* を変更しない限り、インストーラーの実行に問題が生じる可能性があります。
+SELinuxを有効にするように選択した場合、一部のディレクトリの&#x200B;*セキュリティコンテキスト*&#x200B;を次のように変更しない限り、インストーラーの実行に問題が発生する可能性があります。
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/app/etc
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/var
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/pub/media
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/pub/static
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
 ```
 
-上記のコマンドは Apache web サーバーでのみ機能します。 さまざまな設定とセキュリティ要件があるため、これらのコマンドがすべての状況で動作することを保証するものではありません。 詳しくは、以下を参照してください。
+上記のコマンドは、Apache Web サーバーでのみ機能します。 様々な設定やセキュリティ要件があるため、これらのコマンドがすべての状況で機能することを保証するものではありません。 詳細は、次を参照してください。
 
-* [&#x200B; マニュアルページ &#x200B;](https://linux.die.net/man/8/httpd_selinux)
-* [Server Lab](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
+* [man ページ](https://linux.die.net/man/8/httpd_selinux)
+* [サーバーラボ](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
 
-## サーバー間通信を有効にする
+## サーバー間通信の有効化
 
-Apache とデータベースサーバーが同じホスト上にある場合、`curl` を使用する統合を使用する予定があれば次のコマンドを使用します（例： Paypal および USPS）。
-SELinux を有効にして Apache が別のホストへの接続を開始できるようにするには、次の手順に従います。
+Apacheとデータベースサーバーが同じホスト上にある場合、`curl`を使用する統合を使用する予定の場合は、次のコマンドを使用します（例： PaypalとUSPS）。
+SELinuxが有効になっている別のホストへの接続をApacheが開始できるようにするには：
 
-1. SELinux が有効かどうかを確認するには、次のコマンドを使用します。
+1. SELinuxが有効かどうかを判断するには、次のコマンドを使用します。
 
-   ```bash
+   ```shell
    getenforce
    ```
 
-   `Enforcing` が表示され、SELinux が実行中であることを確認します。
+   `Enforcing`が表示され、SELinuxが実行されていることを確認します。
 
    * CentOS: `setsebool -P httpd_can_network_connect=1`
    * Ubuntu: `setsebool -P apache2_can_network_connect=1`
 
 ## ファイアウォールでポートを開く
 
-セキュリティ要件によっては、ポート 80 やその他のポートをファイアウォールで開く必要がある場合があります。 ネットワークセキュリティは機密性が高いため、Adobeでは、先に進む前に IT 部門に問い合わせることを強くお勧めします。 以下に、推奨参照を示します。
+セキュリティ要件に応じて、ファイアウォールのポート 80やその他のポートを開く必要がある場合があります。 ネットワークセキュリティは機密性が高いため、Adobeでは、先に進む前にIT部門に相談することを強くお勧めします。 推奨される参照を次に示します。
 
-* Ubuntu: [Ubuntu ドキュメントページ &#x200B;](https://help.ubuntu.com/community/IptablesHowTo)
-* CentOS: [CentOS のハウツー &#x200B;](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)。
+* Ubuntu: [Ubuntu ドキュメントページ ](https://help.ubuntu.com/community/IptablesHowTo)
+* CentOS: [CentOS ハウツー](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)。

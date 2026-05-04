@@ -2,11 +2,11 @@
 title: オンプレミス デプロイメント用のNginxのインストール
 description: オンプレミス Adobe Commerceのデプロイメント用にNginx web サーバーをインストールおよび設定する方法について説明します。 PHP-FPMと仮想ホストを設定します。
 feature: Install, Configuration
-badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 352a71cb88ff38c0920201f49f1d7b889509fd61
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1477'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ Adobeは、お使いのAdobe Commerce リリースの[必要システム構成](
 
 ### Nginxのインストール
 
-```bash
+```shell
 sudo apt -y install nginx
 ```
 
-[&#x200B; ソースからNginxをビルドすることもできます](https://www.armanism.com/blog/install-nginx-on-ubuntu)。
+[ ソースからNginxをビルドすることもできます](https://www.armanism.com/blog/install-nginx-on-ubuntu)。
 
 次のセクションを完了してアプリケーションをインストールしたら、サンプル設定ファイルを使用して[Nginx](#configure-nginx)を設定します。 この推奨設定では、Commerce アプリケーションの機能とセキュリティの両方が保持されます。
 
@@ -39,7 +39,7 @@ Adobe Commerceを適切に機能させるには、複数の[PHP拡張機能](../
 
 1. Adobe Commerce リリースでサポートされているPHP バージョンの`php-fpm`および`php-cli` パッケージをインストールします。 Ubuntuでは、パッケージ名は通常、次のパターンに従います。
 
-   ```bash
+   ```shell
    apt-get -y install php<php-version>-fpm php<php-version>-cli
    ```
 
@@ -49,11 +49,11 @@ Adobe Commerceを適切に機能させるには、複数の[PHP拡張機能](../
 
 1. エディターで`php.ini` ファイルを開きます。
 
-   ```bash
+   ```shell
    vim /etc/php/<php-version>/fpm/php.ini
    ```
 
-   ```bash
+   ```shell
    vim /etc/php/<php-version>/cli/php.ini
    ```
 
@@ -73,7 +73,7 @@ Adobe Commerceを適切に機能させるには、複数の[PHP拡張機能](../
 
 1. `php-fpm` サービスを再起動します。
 
-   ```bash
+   ```shell
    systemctl restart php<php-version>-fpm
    ```
 
@@ -87,21 +87,21 @@ Adobe Commerceは、次のような方法でダウンロードできます。
 
 * [Composer メタパッケージを入手](../../composer.md)
 
-* [Git リポジトリのクローンを作成](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
+* [Git リポジトリのクローンを作成する](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 この例では、コマンドラインを使用したComposer ベースのインストールを示します。
 
-1. [&#x200B; ファイルシステムの所有者](../file-system/overview.md)として、アプリケーションサーバーにログインします。
+1. [ ファイルシステムの所有者](../file-system/overview.md)として、アプリケーションサーバーにログインします。
 
 1. Web サーバーのdocroot ディレクトリまたは仮想ホストのdocrootとして設定したディレクトリに変更します。 この例では、Ubuntuのデフォルト `/var/www/html`を使用しています。
 
-   ```bash
+   ```shell
    cd /var/www/html
    ```
 
 1. Composerをグローバルにインストールします。 Adobe Commerceをインストールする前に、Composerで依存関係を更新する必要があります。
 
-   ```bash
+   ```shell
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
@@ -109,13 +109,13 @@ Adobe Commerceは、次のような方法でダウンロードできます。
 
    **Magento Open Source**
 
-   ```bash
+   ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
    ```
 
    **Adobe Commerce**
 
-   ```bash
+   ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
@@ -123,29 +123,29 @@ Adobe Commerceは、次のような方法でダウンロードできます。
 
 1. アプリケーションをインストールする前に、web サーバーグループの読み取り/書き込み権限を設定します。 これは、コマンドラインがファイルシステムにファイルを書き込めるようにするために必要です。
 
-   ```bash
+   ```shell
    cd /var/www/html/<magento install directory>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
-   ```bash
+   ```shell
    chown -R :www-data . # Ubuntu
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
-1. [&#x200B; コマンドライン &#x200B;](../../advanced.md)からインストールします。 この例では、インストールディレクトリの名前が`magento2ee`で、データベースホストが同じマシン （`localhost`）上にあることが前提としています。
+1. [ コマンドライン ](../../advanced.md)からインストールします。 この例では、インストールディレクトリの名前が`magento2ee`で、データベースホストが同じマシン （`localhost`）上にあることが前提としています。
 
-   ```bash
+   ```shell
    bin/magento setup:install \
    --base-url=http://localhost/magento2ee \
    --db-host=localhost \
@@ -173,11 +173,11 @@ Adobe Commerceは、次のような方法でダウンロードできます。
 
 1. 開発者モードに切り替える：
 
-   ```bash
+   ```shell
    cd /var/www/html/magento2/bin
    ```
 
-   ```bash
+   ```shell
    ./magento deploy:mode:set developer
    ```
 
@@ -193,7 +193,7 @@ Adobeでは、Commerce アプリケーションの機能とセキュリティの
 
 1. サイトの新しい仮想ホストを作成します。
 
-   ```bash
+   ```shell
    vim /etc/nginx/sites-available/magento
    ```
 
@@ -223,25 +223,25 @@ Adobeでは、Commerce アプリケーションの機能とセキュリティの
 
 1. 新しく作成した仮想ホストをアクティブ化するには、`/etc/nginx/sites-enabled` ディレクトリにシンボリックリンクを作成します。
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/magento /etc/nginx/sites-enabled
    ```
 
 1. 構文が正しいことを確認します。
 
-   ```bash
+   ```shell
    nginx -t
    ```
 
 1. Nginxを再起動します。
 
-   ```bash
+   ```shell
    systemctl restart nginx
    ```
 
 ### インストールの確認
 
-インストールを確認するには、web ブラウザーを開き、サイトのベース URLに移動します。 詳細については、[&#x200B; インストールの確認](../../next-steps/verify.md)を参照してください。
+インストールを確認するには、web ブラウザーを開き、サイトのベース URLに移動します。 詳細については、[ インストールの確認](../../next-steps/verify.md)を参照してください。
 
 ## CentOS 7へのインストール
 
@@ -249,21 +249,21 @@ Adobeでは、Commerce アプリケーションの機能とセキュリティの
 
 ### Nginxのインストール
 
-```bash
+```shell
 yum -y install epel-release
 ```
 
-```bash
+```shell
 yum -y install nginx
 ```
 
 インストールが完了したら、nginxを起動し、起動時に起動するように設定します。
 
-```bash
+```shell
 systemctl start nginx
 ```
 
-```bash
+```shell
 systemctl enable nginx
 ```
 
@@ -275,7 +275,7 @@ Adobe Commerceを適切に機能させるには、いくつかの[PHP](../php-se
 
 1. `php-fpm`をインストール：
 
-   ```bash
+   ```shell
    yum -y install <php-fpm-package>
    ```
 
@@ -334,37 +334,37 @@ Adobe Commerceを適切に機能させるには、いくつかの[PHP](../php-se
 
 1. PHP セッション パスのディレクトリを作成し、所有者を`nginx` ユーザーとグループに変更します。
 
-   ```bash
+   ```shell
    mkdir -p /var/lib/php/session/
    ```
 
-   ```bash
+   ```shell
    chown -R nginx:nginx /var/lib/php/
    ```
 
 1. PHP-FPM ソケットのディレクトリを作成し、所有者を`nginx` ユーザーとグループに変更します。
 
-   ```bash
+   ```shell
    mkdir -p /run/php-fpm/
    ```
 
-   ```bash
+   ```shell
    chown -R nginx:nginx /run/php-fpm/
    ```
 
 1. `php-fpm` サービスを開始し、起動時に開始するように設定します。
 
-   ```bash
+   ```shell
    systemctl start php-fpm
    ```
 
-   ```bash
+   ```shell
    systemctl enable php-fpm
    ```
 
 1. `php-fpm` サービスが実行されていることを確認します。
 
-   ```bash
+   ```shell
    netstat -pl | grep php-fpm.sock
    ```
 
@@ -378,21 +378,21 @@ Adobe Commerceは、次のような方法でダウンロードできます。
 
 * [Composer メタパッケージを入手](../../composer.md)
 
-* [Git リポジトリのクローンを作成](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
+* [Git リポジトリのクローンを作成する](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 この例では、コマンドラインを使用したComposer ベースのインストールを示します。
 
-1. [&#x200B; ファイルシステムの所有者](../file-system/overview.md)として、アプリケーションサーバーにログインします。
+1. [ ファイルシステムの所有者](../file-system/overview.md)として、アプリケーションサーバーにログインします。
 
 1. Web サーバーのdocroot ディレクトリまたは仮想ホストのdocrootとして設定したディレクトリに変更します。 この例では、CentOSのデフォルト `/usr/share/nginx/html`を使用します。
 
-   ```bash
+   ```shell
    cd /usr/share/nginx/html
    ```
 
 1. Composerをグローバルにインストールします。 Adobe Commerceをインストールする前に、Composerで依存関係を更新する必要があります。
 
-   ```bash
+   ```shell
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
@@ -400,13 +400,13 @@ Adobe Commerceは、次のような方法でダウンロードできます。
 
    **Magento Open Source**
 
-   ```bash
+   ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
    ```
 
    **Adobe Commerce**
 
-   ```bash
+   ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
@@ -414,29 +414,29 @@ Adobe Commerceは、次のような方法でダウンロードできます。
 
 1. アプリケーションをインストールする前に、web サーバーグループの読み取り/書き込み権限を設定します。 これは、コマンドラインがファイルシステムにファイルを書き込めるようにするために必要です。
 
-   ```bash
+   ```shell
    cd /usr/share/nginx/html/<magento install directory>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
-   ```bash
+   ```shell
    chown -R :nginx . # CentOS
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
-1. [&#x200B; コマンドライン &#x200B;](../../advanced.md)からインストールします。 この例では、インストールディレクトリの名前が`magento2ee`で、データベースホストが同じマシン （`localhost`）上にあることが前提としています。
+1. [ コマンドライン ](../../advanced.md)からインストールします。 この例では、インストールディレクトリの名前が`magento2ee`で、データベースホストが同じマシン （`localhost`）上にあることが前提としています。
 
-   ```bash
+   ```shell
    bin/magento setup:install \
    --base-url=http://localhost/magento2ee \
    --db-host=localhost \
@@ -457,11 +457,11 @@ Adobe Commerceは、次のような方法でダウンロードできます。
 
 1. 開発者モードに切り替える：
 
-   ```bash
+   ```shell
    cd /usr/share/nginx/html/magento2/bin
    ```
 
-   ```bash
+   ```shell
    ./magento deploy:mode:set developer
    ```
 
@@ -477,7 +477,7 @@ Adobe Commerceは、次のような方法でダウンロードできます。
 
 1. サイトの新しい仮想ホストを作成します。
 
-   ```bash
+   ```shell
    vim /etc/nginx/conf.d/magento.conf
    ```
 
@@ -507,13 +507,13 @@ Adobe Commerceは、次のような方法でダウンロードできます。
 
 1. 構文が正しいことを確認します。
 
-   ```bash
+   ```shell
    nginx -t
    ```
 
 1. Nginxを再起動します。
 
-   ```bash
+   ```shell
    systemctl restart nginx
    ```
 
@@ -521,7 +521,7 @@ Adobe Commerceは、次のような方法でダウンロードできます。
 
 CentOS 7では、SELinuxがデフォルトで有効になっています。 次のコマンドを使用して、実行中であることを確認します。
 
-```bash
+```shell
 sestatus
 ```
 
@@ -529,62 +529,62 @@ SELinuxとfirewalldを設定するには：
 
 1. SELinux管理ツールをインストールします。
 
-   ```bash
+   ```shell
    yum -y install policycoreutils-python
    ```
 
 1. 次のコマンドを実行して、インストールディレクトリのセキュリティコンテキストを変更します。
 
-   ```bash
+   ```shell
    semanage fcontext -a -t httpd_sys_rw_content_t '/usr/share/nginx/html/magento2/app/etc(/.*)?'
    ```
 
-   ```bash
+   ```shell
    semanage fcontext -a -t httpd_sys_rw_content_t '/usr/share/nginx/html/magento2/var(/.*)?'
    ```
 
-   ```bash
+   ```shell
    semanage fcontext -a -t httpd_sys_rw_content_t '/usr/share/nginx/html/magento2/pub/media(/.*)?'
    ```
 
-   ```bash
+   ```shell
    semanage fcontext -a -t httpd_sys_rw_content_t '/usr/share/nginx/html/magento2/pub/static(/.*)?'
    ```
 
-   ```bash
+   ```shell
    restorecon -Rv '/usr/share/nginx/html/magento2/'
    ```
 
 1. firewalld パッケージをインストールします。
 
-   ```bash
+   ```shell
    yum -y install firewalld
    ```
 
 1. ファイアウォールサービスを起動し、起動時に起動するように設定します。
 
-   ```bash
+   ```shell
    systemctl start firewalld
    ```
 
-   ```bash
+   ```shell
    systemctl enable firewalld
    ```
 
 1. 次のコマンドを実行して、HTTPおよびHTTPSのポートを開き、web ブラウザーからベース URLにアクセスできるようにします。
 
-   ```bash
+   ```shell
    firewall-cmd --permanent --add-service=http
    ```
 
-   ```bash
+   ```shell
    firewall-cmd --permanent --add-service=https
    ```
 
-   ```bash
+   ```shell
    firewall-cmd --reload
    ```
 
 ### インストールの確認
 
-インストールを確認するには、web ブラウザーを開き、サイトのベース URLに移動します。 詳細については、[&#x200B; インストールの確認](../../next-steps/verify.md)を参照してください。
+インストールを確認するには、web ブラウザーを開き、サイトのベース URLに移動します。 詳細については、[ インストールの確認](../../next-steps/verify.md)を参照してください。

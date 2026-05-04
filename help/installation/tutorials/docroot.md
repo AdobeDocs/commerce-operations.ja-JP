@@ -1,35 +1,35 @@
 ---
-title: セキュリティを向上させるために docroot を変更する
-description: Adobe Commerce オンプレミスのファイルシステムへの不正なブラウザーベースのアクセスを防ぐ。
+title: セキュリティを向上させるためにdocrootを変更する
+description: Adobe Commerce オンプレミスのファイルシステムへのブラウザーベースの不正アクセスを防止します。
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
 
-# セキュリティを向上させるために docroot を変更する
+# セキュリティを向上させるためにdocrootを変更する
 
-Apache web サーバーを使用した標準インストールでは、Adobe Commerceはデフォルトの web ルート `/var/www/html/magento2` にインストールされます。
+Apache web サーバーを使用した標準インストールでは、Adobe Commerceがデフォルトのweb ルート `/var/www/html/magento2`にインストールされます。
 
-`magento2/` ディレクトリには、次の内容が含まれます。
+`magento2/` ディレクトリには次のものが含まれています。
 
 - `pub/`
 - `setup/`
 - `var/`
 
-アプリケーションは `/var/www/html/magento2/pub` から提供されます。 ブラウザーからアクセスできるので、残りのファイルシステムは脆弱です。
-webroot を `pub/` ディレクトリに設定すると、サイト訪問者がブラウザーからファイルシステムの機密性の高い領域にアクセスできなくなります。
+アプリケーションは`/var/www/html/magento2/pub`から提供されます。 ファイルシステムの残りの部分は、ブラウザーからアクセスできるので脆弱です。
+webrootを`pub/` ディレクトリに設定すると、サイト訪問者はブラウザーからファイルシステムの機密領域にアクセスできなくなります。
 
-このトピックでは、既存のインスタンス上の Apache docroot を変更して、より安全な `pub/` ディレクトリからファイルを提供する方法について説明します。
+このトピックでは、既存のインスタンスのApache docrootを変更して、より安全な`pub/` ディレクトリからファイルを提供する方法について説明します。
 
-## nginx に関するメモ
+## nginxに関するメモ
 
-[nginx](../prerequisites/web-server/nginx.md) と、インストールディレクトリに含まれる [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) ファイルを使用している場合は、おそらく `pub/` ディレクトリのファイルを既に提供しています。
+[nginx](../prerequisites/web-server/nginx.md)と、インストールディレクトリに含まれる[`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) ファイルを使用している場合は、おそらく既に`pub/` ディレクトリのファイルを提供しています。
 
-サイトを定義するサーバーブロックで使用する場合、`nginx.conf.sample` の設定は、サーバーの docroot 設定を上書きして、`pub/` ディレクトリからファイルを提供します。 例えば、次の設定の最後の行を参照してください。
+サイトを定義するサーバーブロックで使用する場合、`nginx.conf.sample`設定は、サーバーのdocroot設定を上書きして、`pub/` ディレクトリからファイルを提供します。 例えば、次の設定の最終行を参照してください。
 
 ```conf
 # /etc/nginx/sites-available/magento
@@ -49,31 +49,31 @@ server {
 
 ## 始める前に
 
-このチュートリアルを完了するには、LAMP スタック上で動作しているインストールにアクセスする必要があります。
+このチュートリアルを完了するには、LAMP スタックで動作する作業用インストールにアクセスする必要があります。
 
 - Linux
-- Apache （2.4 以降）
-- MySQL （5.7 以降）
+- Apache （2.4以降）
+- MySQL （5.7以降）
 - PHP （7.4）
-- Elasticsearch（7.x）または OpenSearch （1.2）
-- Adobe Commerce（2.4 以降）
+- Elasticsearch（7.x）またはOpenSearch （1.2）
+- Adobe Commerce（2.4以降）
 
 >[!NOTE]
 >
->詳しくは、[&#x200B; 前提条件 &#x200B;](../prerequisites/overview.md) および [&#x200B; インストールガイド &#x200B;](../overview.md) を参照してください。
+>詳しくは、[前提条件](../prerequisites/overview.md)および[ インストールガイド ](../overview.md)を参照してください。
 
-## &#x200B;1. サーバー設定を編集する
+## &#x200B;1. サーバー設定の編集
 
-仮想ホストファイルの名前と場所は、実行している Apache のバージョンによって異なります。 この例は、Apache v2.4 上の仮想ホストファイルの名前と場所を示しています。
+仮想ホストファイルの名前と場所は、実行しているApacheのバージョンによって異なります。 この例は、Apache v2.4上の仮想ホストファイルの名前と場所を示しています。
 
 1. アプリケーションサーバーにログインします。
 1. 仮想ホストファイルを編集します。
 
-   ```bash
+   ```shell
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
-1. `pub/` ディレクティブへの `DocumentRoot` ディレクトリへのパスを追加します。
+1. `pub/` ディレクトリへのパスを`DocumentRoot` ディレクティブに追加します。
 
    ```conf
    <VirtualHost *:80>
@@ -90,23 +90,23 @@ server {
     </VirtualHost>
    ```
 
-1. Apache を再起動します。
+1. Apacheを再起動します。
 
-   ```bash
+   ```shell
    systemctl restart apache2
    ```
 
-## &#x200B;2. ベース URL を更新する
+## &#x200B;2. ベース URLを更新
 
-サーバーのホスト名または IP アドレスにディレクトリ名を追加して、アプリケーションのインストール時にベース URL を作成した場合は（例：`http://192.168.33.10/magento2`）、削除する必要があります。
+アプリケーションのインストール時にベース URLを作成するためにサーバーのホスト名またはIP アドレスにディレクトリ名を追加した場合（例：`http://192.168.33.10/magento2`）、そのディレクトリ名を削除する必要があります。
 
 >[!NOTE]
 >
->`192.168.33.10` をサーバーのホスト名に置き換えます。
+>`192.168.33.10`をサーバーのホスト名に置き換えます。
 
 1. データベースにログインします。
 
-   ```bash
+   ```shell
    mysql -u <user> -p
    ```
 
@@ -116,7 +116,7 @@ server {
    use <database-name>
    ```
 
-1. ベース URL を更新します。
+1. ベース URLを更新します。
 
    ```shell
    UPDATE core_config_data SET value='http://192.168.33.10' WHERE path='web/unsecure/base_url';
@@ -124,7 +124,7 @@ server {
 
 ## &#x200B;3. env.php ファイルを更新する
 
-`env.php` ファイルに次のノードを追加します。
+次のノードを`env.php` ファイルに追加します。
 
 ```conf
 'directories' => [
@@ -132,52 +132,52 @@ server {
 ]
 ```
 
-詳しくは、[env.php リファレンス &#x200B;](../../configuration/reference/config-reference-envphp.md) を参照してください。
+詳しくは、[env.php リファレンス ](../../configuration/reference/config-reference-envphp.md)を参照してください。
 
-## &#x200B;4. スイッチモード
+## &#x200B;4. モードを切り替え
 
-[&#x200B; と &#x200B;](../../configuration/bootstrap/application-modes.md) を含む `production` アプリケーションモード `developer` は、セキュリティを向上させ、開発を容易にするために設計されています。 名前が示すように、アプリケーションを拡張またはカスタマイズする場合は `developer` モードに切り替え、実稼働環境で実行する場合は `production` モードに切り替える必要があります。
+`production`と`developer`を含む[ アプリケーションモード ](../../configuration/bootstrap/application-modes.md)は、セキュリティを向上させ、開発を容易にするために設計されています。 名前が示すように、アプリケーションを拡張またはカスタマイズする場合は`developer` モードに切り替え、ライブ環境で実行する場合は`production` モードに切り替える必要があります。
 
-モードの切り替えは、サーバー設定が正しく動作していることを確認するための重要な手順です。 CLI ツールを使用してモードを切り替えることができます。
+モードの切り替えは、サーバー設定が正しく動作していることを確認する際に重要な手順です。 CLI ツールを使用してモードを切り替えることができます。
 
 1. インストールディレクトリに移動します。
 1. `production` モードに切り替えます。
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
-1. ブラウザーを更新し、ストアフロントが正しく表示されていることを確認します。
+1. ブラウザーを更新し、ストアフロントが正しく表示されることを確認します。
 1. `developer` モードに切り替えます。
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set developer
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
-1. ブラウザーを更新し、ストアフロントが正しく表示されていることを確認します。
+1. ブラウザーを更新し、ストアフロントが正しく表示されることを確認します。
 
-## &#x200B;5. ストアフロントを確認する
+## &#x200B;5. ストアフロントの検証
 
-Web ブラウザーでストアフロントに移動して、すべてが機能していることを確認します。
+web ブラウザーのストアフロントに移動し、すべてが機能していることを確認します。
 
-1. Web ブラウザーを開き、アドレスバーにサーバーのホスト名または IP アドレスを入力します。 例：`http://192.168.33.10`。
+1. Web ブラウザーを開き、アドレスバーにサーバーのホスト名またはIP アドレスを入力します。 例：`http://192.168.33.10`。
 
-   次の図は、ストアフロントページのサンプルを示しています。 次のように表示される場合、インストールは成功です。
+   次の図は、ストアフロントページの例を示しています。 次のように表示される場合、インストールは成功しました。
 
-   ![&#x200B; インストールが成功したことを確認するストアフロント &#x200B;](../../assets/installation/install-success_store.png)
+   ![ インストールが成功したことを確認するストアフロント ](../../assets/installation/install-success_store.png)
 
-   ページに 404 （見つかりません）が表示される場合や、画像、CSS、JS など他のアセットの読み込みに失敗する場合は、[&#x200B; トラブルシューティングの節 &#x200B;](https://support.magento.com/hc/en-us/articles/360032994352) を参照してください。
+   ページに404 （見つかりません）が表示されたり、画像、CSS、JSなどの他のアセットが読み込まれない場合は、[ トラブルシューティングの節](https://support.magento.com/hc/en-us/articles/360032994352)を参照してください。
 
-1. ブラウザーからアプリケーションディレクトリにアクセスしてみてください。 サーバーのホスト名または IP アドレスにディレクトリ名をアドレスバーに追加します。
+1. ブラウザーからアプリケーションディレクトリにアクセスしてみてください。 アドレスバーのサーバーのホスト名またはIP アドレスにディレクトリ名を追加します。
 
-   404 または「アクセスが拒否されました」というメッセージが表示された場合、ファイルシステムへのアクセスが正常に制限されました。
+   404または「アクセス拒否」メッセージが表示された場合は、ファイルシステムへのアクセスが正常に制限されています。
 
-   ![&#x200B; アクセスが拒否されました &#x200B;](../../assets/installation/access-denied.png)
+   ![ アクセスが拒否されました](../../assets/installation/access-denied.png)

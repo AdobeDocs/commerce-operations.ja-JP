@@ -1,70 +1,70 @@
 ---
-title: ACSD-62577：ストアフロント検索のパフォーマンスの最適化
-description: ACSD-62577 パッチを適用すると、大きな「search_query」テーブルが原因でクエリの実行が遅くなるため、ストアフロントの検索パフォーマンスが低下するAdobe Commerceの問題が修正されます。
+title: 'ACSD-62577: ストアフロント検索パフォーマンスの最適化'
+description: ACSD-62577 パッチを適用して、大きな「search_query」テーブルによってクエリの実行が遅くなったためにストアフロントの検索パフォーマンスが低下するAdobe Commerceの問題を修正します。
 feature: Search
 role: Admin, Developer
 exl-id: 211c1e3c-0739-4ff6-a25c-b27d335920d1
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
 
-# ACSD-62577：ストアフロント検索のパフォーマンスの最適化
+# ACSD-62577: ストアフロント検索パフォーマンスの最適化
 
-ACSD-62577 パッチは、クエリインデックスとテーブルインデックスの両方を最適化することで、ストアフロント検索クエリのパフォーマンスが遅い問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 で使用できます。パッチ ID は ACSD-62577 です。 この問題はAdobe Commerce 2.4.8 で修正される予定だったことに注意してください。
+ACSD-62577 パッチは、クエリインデックスとテーブルインデックスの両方を最適化することで、ストアフロント検索クエリのパフォーマンスが遅くなる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56で利用できます。 パッチ IDはACSD-62577です。 この問題は、Adobe Commerce 2.4.8で修正される予定であることに注意してください。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 Adobe Commerce（すべてのデプロイメント方法） 2.4.6、2.4.7-p2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-大きな `search_query` テーブルを使用すると、ストアフロントの検索が大幅に遅くなり、クエリの効率が悪く、最適化されたテーブルインデックスがないため、フロントエンドの応答時間が長くなります。
+大きな`search_query` テーブルでは、ストアフロントの検索が大幅に遅くなり、非効率的なクエリと最適化されたテーブルインデックスの欠如により、フロントエンドの応答時間が増加します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. Performance Toolkit `small.xml` を使用して、Adobe Commerce Develop を設定します。
-1. SQL コマンドラインにアクセスし、次のコマンドを使用して `search_query` テーブルを削除します。
+1. パフォーマンス ツールキット `small.xml`を使用してAdobe Commerce Developを設定します。
+1. SQL コマンドラインにアクセスし、次のコマンドを使用して`search_query` テーブルを削除します。
 
-   ```
+   ```text
    SET FOREIGN_KEY_CHECKS = 0;  
    DROP TABLE search_query;  
    SET FOREIGN_KEY_CHECKS = 1;  
    ```
 
-1. 多数のレコード（例：400 万件のレコード）を `search_query` テーブルに入力します。
-1. キャッシュのインデックス再作成とフラッシュのトリガー。
+1. `search_query` テーブルに多数のレコード（例：400万件のレコード）を入力します。
+1. トリガーのインデックス再作成とキャッシュのフラッシュ。
 
-   ```
+   ```shell
    bin/magento indexer:reindex  
    bin/magento c:c  
    bin/magento c:f  
    ```
 
-1. データベースのデバッグログを有効にする：
+1. データベースのデバッグログを有効にします。
 
-   ```
+   ```shell
    bin/magento dev:query-log:enable  
    ```
 
-1. ストアフロント検索バーで用語を検索します（例：）。
+1. ストアフロントの検索バーでキーワードを検索します（例：
    `http://your_magento_instance/default/catalogsearch/result/?q=test.`
-1. 次の SQL のクエリ実行時間の `db.log` を確認します。
+1. 次のSQLのクエリ実行時間については、`db.log`を確認してください。
 
-   ```
+   ```sql
    SELECT COUNT(*) FROM (  
    SELECT DISTINCT `main_table`.`query_text`  
    FROM `search_query` AS `main_table`  
@@ -74,27 +74,27 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p3
    LIMIT 100  ) AS `result` WHERE (result.query_text = 'test')  
    ```
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-クエリの実行時間が最適化されるので、大きな `search_query` テーブルを処理する際の応答時間の増加は目立ちません。
+クエリ実行時間が最適化され、大きな`search_query` テーブルを処理する際の応答時間の大幅な増加が少なくなります。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-大きな `search_query` テーブルに対する処理が非効率的なので、クエリの実行時間が大幅に長くなります。
+大きな`search_query` テーブルの処理が非効率的なため、クエリの実行時間が大幅に増加します。
 
-```
+```text
 TIME: 10.8520 seconds  
 ```
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

@@ -1,48 +1,48 @@
 ---
-title: ACSD-48448：注文のキャンセル中に、inventory_reservation テーブルに重複したエントリが発生する競合状態の問題
-description: ACSD-48448 パッチを適用して、注文のキャンセル中に競合状態の問題が発生し、inventory_reservation テーブルのエントリが重複するAdobe Commerce パフォーマンスの問題を修正してください。
+title: ACSD-48448：注文キャンセル中にレース状況の問題が発生し、inventory_reservation テーブルにエントリが重複する
+description: ACSD-48448 パッチを適用して、注文キャンセル中にレース条件の問題が発生し、inventory_reservation テーブルのエントリが重複するAdobe Commerceのパフォーマンスの問題を修正します。
 feature: Orders, Checkout
 role: Admin
 exl-id: c1905b60-4607-454c-975b-77b0056661ad
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
-# ACSD-48448：注文 *[!UICONTROL Race]* キャンセル中に、テーブル内のエントリが重複する原因となる条件 `inventory_reservation` 問題
+# ACSD-48448：注文キャンセル中に&#x200B;*[!UICONTROL Race]*&#x200B;条件の問題が発生し、`inventory_reservation` テーブルにエントリが重複しています
 
-ACSD-48448 パッチは、注文のキャンセル中に *[!UICONTROL Race]* 条件の問題が発生し、`inventory_reservation` テーブルのエントリが重複する問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.34 がインストールされている場合に使用できます。 パッチ ID は ACSD-48448 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-48448 パッチは、注文キャンセル中に&#x200B;*[!UICONTROL Race]*&#x200B;条件の問題が発生し、`inventory_reservation` テーブルのエントリが重複する問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.34がインストールされている場合に利用できます。 パッチ IDはACSD-48448です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.2-p2 および 2.4.6
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.2-p2および2.4.6
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 ～ 2.4.6-p2
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 - 2.4.6-p2
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-注文 *[!UICONTROL Race]* キャンセル中に条件の問題が発生し、`inventory_reservation` テーブルのエントリが重複します。
+注文キャンセル中に&#x200B;*[!UICONTROL Race]*&#x200B;条件の問題が発生しています。これにより、`inventory_reservation` テーブルのエントリが重複します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 注文します。
-1. `inventory_reservation` テーブルを調べて、`order_placed` イベントのレコードがあることを確認します。
-1. 添付のスクリプトを実行して、注文を並行してキャンセルします（URL と orderID は必ず変更してください）。
+1. 注文する。
+1. `inventory_reservation` テーブルを確認して、`order_placed` イベントのレコードがあることを確認します。
+1. 添付されたスクリプトを実行して、注文を並行してキャンセルします（URLとorderIDを変更することを忘れないでください）。
 
 `bash cancel_order.sh`
 
-```
+```shell
 #!/bin/bash
 baseUrl=" "
 orderId=3
@@ -64,25 +64,25 @@ curl --location --request POST "${baseUrl}/rest/V1/orders/${orderId}/cancel" \
 wait
 ```
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
 レコードは複製されません。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-`inventory_reservation` 用に、重複するレコードが `order_canceled` テーブルに作成されます。
+`order_canceled`の`inventory_reservation` テーブルに重複したレコードが作成されます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドの
-* クラウドインフラストラクチャー上のAdobe Commerce:[&#x200B; アップグレードとパッチ適用 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja) クラウドインフラストラクチャー上のCommerce ガイド
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」ガイド
 
-## 関連資料
+## 関連トピックス
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースに追加しました
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）
-* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [[!DNL Quality Patches Tool]  リリース：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを確認します
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

@@ -1,64 +1,64 @@
 ---
-title: ACSD-46815：静的コンテンツのデプロイがコンパクトな方法で失敗する
-description: ACSD-46815 パッチを適用すると、コンパクト戦略を使用した際に静的コンテンツのデプロイが失敗するAdobe Commerceの問題を修正できます。
+title: 'ACSD-46815: コンパクトな戦略を使用すると、静的コンテンツのデプロイに失敗する'
+description: コンパクトな方法を使用すると、静的コンテンツデプロイが失敗するAdobe Commerceの問題を修正するには、ACSD-46815 パッチを適用します。
 feature: Deploy, Page Content, SCD
 role: Admin
 exl-id: 66941a83-daf8-4bb2-a575-b615e1c5dc7c
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
 
-# ACSD-46815：コンパクト戦略を使用すると静的コンテンツのデプロイに失敗する
+# ACSD-46815: コンパクトな戦略を使用すると、静的コンテンツのデプロイが失敗する
 
-ACSD-46815 パッチは、コンパクトな方法を使用した場合に静的コンテンツのデプロイメントが失敗する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://support.magento.com/hc/en-us/articles/360047139492) 1.1.20 がインストールされている場合に使用できます。 パッチ ID は ACSD-46815 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+ACSD-46815 パッチは、コンパクトな戦略を使用すると静的コンテンツのデプロイメントが失敗する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://support.magento.com/hc/en-us/articles/360047139492) 1.1.20がインストールされている場合に利用できます。 パッチ IDはACSD-46815です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-コンパクトな戦略でデプロイすると、静的コンテンツのデプロイメントが失敗します。
+コンパクトな戦略でデプロイすると、静的コンテンツのデプロイに失敗します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 次のコマンドを実行して、静的コンテンツをコンパクトな方法でデプロイします。
+1. 次のコマンドを実行して、コンパクトな戦略で静的コンテンツをデプロイします。
 
-```bash
+```shell
 bin/magento setup:static-content:deploy -f -s compact
 ```
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
 静的コンテンツのデプロイメントはエラーなしで完了します。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-静的コンテンツのデプロイメントが失敗し、コンパクトな戦略が返される。 デプロイメントプロセス中に、次のエラーが発生します。*コンテンツは/app/pub/static/adminhtml/Magento/base/default/にあります。/node_modules/@spectrum-css/vars/dist/spectrum-global.css ファイルを読み取れません。*
+コンパクトな戦略では、静的コンテンツの展開に失敗します。 デプロイメントプロセス中に次のエラーが発生します。*/app/pub/static/adminhtml/Magento/base/default/./node_modules/@spectrum-css/vars/dist/spectrum-global.css ファイルの内容を読み取ることができません。*
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：開発者向けドキュメントの [&#x200B; アップグレードとパッチ/パッチの適用 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce: [ アップグレードとパッチ > パッチの適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) （開発者用ドキュメント）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

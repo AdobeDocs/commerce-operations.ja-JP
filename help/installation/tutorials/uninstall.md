@@ -1,62 +1,62 @@
 ---
-title: Adobe Commerceをアンインストールまたは再インストール
-description: 次の手順に従って、Adobe Commerceのオンプレミスインストールをアンインストールして再インストールします。
+title: Adobe Commerceのアンインストールまたは再インストール
+description: Adobe Commerceのオンプレミスインストールをアンインストールして再インストールするには、次の手順に従います。
 exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerceをアンインストールまたは再インストール
+# Adobe Commerceのアンインストールまたは再インストール
 
-これらのコマンドを使用する前に、[&#x200B; アプリケーションをインストールする &#x200B;](../tutorials/install.md) 必要があります。
+これらのコマンドを使用する前に、アプリケーションを[ インストールする必要があります](../tutorials/install.md)。
 
 ## アプリケーションの更新
 
 アプリケーションを更新するには：
 
-* アーカイブからソフトウェアをインストールした場合、または「composer-create-project」を使用した場合は、[&#x200B; アップグレード ガイド &#x200B;](../../upgrade/overview.md) を参照してください。
-* コントリビューション開発者（つまり、`git clone` を使用した開発者）の場合は、[&#x200B; アプリケーションの更新 &#x200B;](../../upgrade/developer/git-installs.md) を参照してください。
+* アーカイブからソフトウェアをインストールした場合、または「composer-create-project」を使用した場合は、[ アップグレードガイド ](../../upgrade/overview.md)を参照してください。
+* 提供元の開発者（つまり、`git clone`を使用している）の場合は、[ アプリケーションの更新](../../upgrade/developer/git-installs.md)を参照してください。
 
-## アプリケーションを再インストールします
+## アプリケーションの再インストール
 
-コマンドラインからアプリケーションを再インストールする方法は、ユーザーの役割によって異なります。
+コマンドラインからアプリケーションを再インストールする方法は、役割によって異なります。
 
-* アーカイブからソフトウェアをインストールした場合、または「composer-create-project」を使用した場合は、[&#x200B; インストールの依存関係の更新 &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies) を参照してください。
-* 貢献している開発者（つまり、`git clone` を使用し始めた開発者）の場合は、[&#x200B; インストールの依存関係の更新 &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies) を参照してください。
+* アーカイブからソフトウェアをインストールした場合、または「composer-create-project」を使用した場合は、[ インストール依存関係の更新](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)を参照してください。
+* 提供開発者（つまり、`git clone`を使用し始めた）の場合は、[ インストール依存関係の更新](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)を参照してください。
 
-## アプリケーションをアンインストールします
+## アプリケーションのアンインストール
 
-アプリケーションをアンインストールすると、データベースが削除されて復元され、配置構成が削除されて、`var` のディレクトリがクリアされます。
+アプリケーションをアンインストールすると、データベースが削除および復元され、デプロイメント設定が削除され、`var`の下のディレクトリがクリアされます。
 
 アプリケーションをアンインストールするには、次のコマンドを入力します。
 
-```bash
+```shell
 bin/magento setup:uninstall
 ```
 
-次のメッセージが表示され、アンインストールが正常に完了したことを確認します。
+アンインストールが正常に完了したことを確認するには、次のメッセージが表示されます。
 
-```
+```text
 [SUCCESS]: Magento uninstallation complete.
 ```
 
-## オプションで生成されたファイルの保持
+## 必要に応じて、生成されたファイルを保持
 
-デフォルトでは、`bin/magento setup:upgrade` はコンパイル済みコードとキャッシュをクリアします。 通常は、`bin/magento setup:upgrade` を使用してコンポーネントを更新し、各コンポーネントに異なるコンパイル済みクラスを必要とすることができます。
+デフォルトでは、`bin/magento setup:upgrade`はコンパイルされたコードとキャッシュをクリアします。 通常、`bin/magento setup:upgrade`を使用してコンポーネントを更新します。各コンポーネントには異なるコンパイル済みクラスが必要になる場合があります。
 
-ただし、状況（特に実稼動環境へのデプロイ）によっては、時間がかかるので、コンパイル済みのコードをクリアするのを避けた方がよいでしょう。 （キャッシュはクリアされたままです）。 コンパイル済みコードをクリアせずにデータベース・スキーマおよびデータを更新するには *次のように入力します*
+ただし、状況によっては（特に実稼動環境にデプロイする場合）、コンパイル済みコードのクリアは時間がかかることがあるため、避ける必要があります。 （キャッシュはクリアされたままです）。 コンパイル済みコードを&#x200B;*クリアせずにデータベーススキーマとデータ*&#x200B;を更新するには、次のように入力します。
 
-```bash
+```shell
 bin/magento setup:upgrade --keep-generated
 ```
 
 >[!WARNING]
 >
->オプションの `--keep-generated` オプションは、経験豊富なシステムインテグレーターが限られた状況で使用してください *のみ*。 このオプションは、開発環境では *使用しない* でください。 このオプションパラメーターの使用が正しくないと、コード実行中にエラーが発生する可能性があります。
+>オプションの`--keep-generated` オプションは、経験豊富なシステムインテグレーター&#x200B;*のみ*&#x200B;が限られた状況で使用する必要があります。 このオプションは、開発環境で&#x200B;*never*&#x200B;を使用する必要があります。 このオプションのパラメーターを不適切に使用すると、コードの実行中にエラーが発生する可能性があります。
 
 ## アプリケーションのインストール
 
-* [コマンドラインを使用したのインストール](../advanced.md)
+* [コマンドラインを使用してインストール](../advanced.md)

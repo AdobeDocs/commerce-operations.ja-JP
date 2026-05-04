@@ -1,135 +1,135 @@
 ---
-title: ' [!DNL Data Migration Tool] のインストール'
-description: Magento 1 とMagento 2 間でデータを転送する  [!DNL Data Migration Tool]  をインストールする方法について説明します。
+title: ' [!DNL Data Migration Tool]をインストール'
+description: Magento 1とMagento 2間でデータを転送する [!DNL Data Migration Tool] をインストールする方法について説明します。
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Migration Tool] のインストール
+# [!DNL Data Migration Tool]をインストール
 
 >[!INFO]
 >
->Magentoと [!DNL Data Migration Tool] のバージョンが一致している必要があります。
+>Magentoと[!DNL Data Migration Tool]のバージョンは一致する必要があります。
 
 
-Magento 2 と *の両方で* 同じリリース版 [!DNL Data Migration Tool] を使用していることを確認してください。 例えば、Magento バージョン 2.2.0 の場合、[!DNL Data Migration Tool] バージョン 2.2.0 も使用する必要があります。
+Magento 2と[!DNL Data Migration Tool]の両方で&#x200B;*同じリリースバージョン*&#x200B;を使用していることを確認してください。 例えば、Magento バージョン 2.2.0の場合、[!DNL Data Migration Tool] バージョン 2.2.0も使用する必要があります。
 
 ## バージョンを確認
 
-次のいずれかの方法で、Magentoのバージョンを確認します。
+お使いのMagentoのバージョンを確認するには、次のいずれかの方法を使用します。
 
-- [コンポーザー](#composer-metapackage)
+- [Composer](#composer-metapackage)
 - [GitHub リポジトリ](#github-repository)
 
 ### Composer メタパッケージ
 
 Composer メタパッケージを使用してMagento ソフトウェアをダウンロードした場合は、次のコマンドを入力します。
 
-```bash
+```shell
 php <magento_root>/bin/magento --version
 ```
 
 ### GitHub リポジトリ
 
-Magento 2 GitHub リポジトリのクローンを作成した場合は、次のコマンドを入力します。
+Magento 2 GitHub リポジトリをクローンした場合は、次のコマンドを入力します。
 
-```bash
+```shell
 cd <your Magento 2 clone directory>
 ```
 
-```bash
+```shell
 git branch
 ```
 
-現在 `develop` ブランチにいる場合は、続行する前に [&#x200B; リリース済みのブランチ &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/change-version) に変更する必要があります。
+現在`develop` ブランチにいる場合は、続行する前に[ リリースブランチ ](https://developer.adobe.com/commerce/contributor/guides/install/change-version)に変更する必要があります。
 
-Adobe Commerce ソフトウェアをまだインストールしていない場合は、[&#x200B; 今すぐインストール &#x200B;](../../installation/prerequisites/commerce.md) してください。
-GitHub リポジトリをクローンする場合は、[&#x200B; （Contributor） GitHub リポジトリのクローン &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) で説明されているように、リリースタグをチェックアウトしてください。
+Adobe Commerce ソフトウェアをまだインストールしていない場合は、[今すぐインストールしてください](../../installation/prerequisites/commerce.md)。
+GitHub リポジトリをクローンする場合は、[ （Contributor）の説明に従ってリリースタグをチェックアウトし、GitHub リポジトリをクローンしてください](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)。
 
-## [!DNL Data Migration Tool] のリリース済みバージョンの検索
+## [!DNL Data Migration Tool]のリリース済みバージョンを検索
 
-[&#x200B; GitHub リポジトリの &#x200B;](https://github.com/magento/data-migration-tool/releases) リリース [!DNL Data Migration Tool] ページに移動して、使用可能なリリース済みバージョンを見つけます。
+[!DNL Data Migration Tool] GitHub リポジトリの[ リリース ](https://github.com/magento/data-migration-tool/releases) ページに移動して、使用可能なリリース済みバージョンを確認します。
 
-## [!DNL Data Migration Tool] のインストール
+## [!DNL Data Migration Tool]をインストール
 
-[!DNL Data Migration Tool] は次の場所からインストールできます。
+[!DNL Data Migration Tool]は次の場所からインストールできます。
 
-- [『 repo.magento.com 』](#install-from-repomagentocom)
+- [`repo.magento.com`](#install-from-repomagentocom)
 - [GitHub](#install-from-github)
 
-インストールする前に、次のことを確認します。
+インストールする前に、次のことを確認してください。
 
-- [&#x200B; 前提条件 &#x200B;](prerequisites.md) セクションに記載されているすべてのタスクを完了しました
-- Magento 2 ソフトウェアの [&#x200B; バージョンの確認 &#x200B;](install.md#check-your-version)
+- [前提条件](prerequisites.md) セクションに記載されているすべてのタスクを完了しました
+- [Magento 2 ソフトウェアのバージョン ](install.md#check-your-version)を確認しました
 
-### `repo.magento.com` からのインストール
+### `repo.magento.com`からインストール
 
-[!DNL Data Migration Tool] をインストールするには、Magento ルートインストールディレクトリの `composer.json` を更新して、[!DNL Data Migration Tool] パッケージの場所を指定する必要があります。
+[!DNL Data Migration Tool]をインストールするには、Magento ルート インストール ディレクトリの`composer.json`を更新して、[!DNL Data Migration Tool] パッケージの場所を指定する必要があります。
 
-1. [&#x200B; ファイルシステムの所有者 &#x200B;](../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインするか、に切り替えます。
+1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインするか、切り替えます。
 1. アプリケーションのルートディレクトリに移動します。
 1. 次のコマンドを入力します。
 
-   ```bash
+   ```shell
    composer config repositories.magento composer https://repo.magento.com
    ```
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:<version>
    ```
 
-   `<version>` は、Magento 2 コードベースのバージョンと一致する必要があります。
+   ここで、`<version>`はMagento 2 コードベースのバージョンと一致する必要があります。
 
-   例えば、バージョン 2.2.0 の場合は、次のように入力します。
+   例えば、バージョン 2.2.0の場合、次のように入力します。
 
-   ```bash
+   ```shell
    composer config repositories.magento composer https://repo.magento.com
    ```
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:2.2.0
    ```
 
-1. プロンプトが表示されたら、[&#x200B; 認証キー &#x200B;](../../installation/prerequisites/authentication-keys.md) を入力します。 公開鍵はユーザー名で、秘密鍵はパスワードです。
+1. プロンプトが表示されたら、[認証キー](../../installation/prerequisites/authentication-keys.md)を入力します。 公開鍵はユーザー名、秘密鍵はパスワードです。
 
-### GitHub からのインストール
+### GitHubからインストール
 
-GitHub リポジトリのクローンを作成した場合は、次の手順に従って [!DNL Data Migration Tool] をインストールします。
+GitHub リポジトリをクローンした場合は、次の手順に従って[!DNL Data Migration Tool]をインストールします。
 
-1. [&#x200B; ファイルシステムの所有者 &#x200B;](../../installation/prerequisites/file-system/overview.md) としてアプリケーションサーバーにログインするか、に切り替えます。
+1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインするか、切り替えます。
 1. アプリケーションのルートディレクトリに移動します。
 1. 次のコマンドを入力します。
 
-   ```bash
+   ```shell
    composer config repositories.data-migration-tool git https://github.com/magento/data-migration-tool
    ```
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:<version>
    ```
 
-   `<version>` は、Magento 2 コードベースのバージョンと一致する必要があります。
+   ここで、`<version>`はMagento 2 コードベースのバージョンと一致する必要があります。
 
-   例えば、バージョン 2.2.0 の場合は、次のように入力します。
+   例えば、バージョン 2.2.0の場合、次のように入力します。
 
-   ```bash
+   ```shell
    composer config repositories.data-migration-tool git https://github.com/magento/data-migration-tool
    ```
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:2.2.0
    ```
 
-### インストールされている [!DNL Data Migration Tool] のバージョンを確認
+### インストール済み[!DNL Data Migration Tool]のバージョンを確認してください
 
-1. [!DNL Data Migration Tool] ディレクトリに移動します：`<vendor>/magento/data-migration-tool`。
+1. [!DNL Data Migration Tool] ディレクトリ `<vendor>/magento/data-migration-tool`に変更します。
 
-1. [`composer.json`](https://github.com/magento/data-migration-tool/blob/2.4/composer.json) をテキストエディターで開きます。
+1. [`composer.json`](https://github.com/magento/data-migration-tool/blob/2.4/composer.json)をテキストエディターで開きます。
 
-1. そのファイルの `version` のエントリは、[!DNL Data Migration Tool] のバージョンです。
+1. このファイルの`version` エントリは[!DNL Data Migration Tool]のバージョンです。

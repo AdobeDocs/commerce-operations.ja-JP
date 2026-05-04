@@ -1,57 +1,57 @@
 ---
-title: Adobe プライバシーJavaScript ライブラリ
-description: カスタムツールを使用して、Adobe Commerceで収集されたお客様の個人情報にアクセスして削除する方法を説明します。
+title: Adobe Privacy JavaScript Library
+description: Adobe Commerceで収集したお客様の個人情報にアクセスして削除するためのカスタムツールの使用方法について説明します。
 hide: true
 hidefromtoc: true
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
 
-# Adobe プライバシーJavaScript ライブラリ
+# Adobe Privacy JavaScript Library
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-[Adobe Privacy JavaScript ライブラリ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ja) は、非公開データへのアクセスおよび削除プロセスを作成するのに役立つ一連のツールです。
+[Adobe プライバシーJavaScript ライブラリ ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html)は、プライベートデータへのアクセスと削除のプロセスを作成するのに役立つ一連のツールです。
 
-Adobe Commerceのデータトラッキングサービスでは、[EU 一般データ保護規則（GDPR） &#x200B;](gdpr.md) および [&#x200B; カリフォルニア州消費者プライバシー法（CCPA） &#x200B;](ccpa.md) などのプライバシー規制に適用される個人情報を保存できます。
+Adobe Commerce データトラッキングサービスは、[一般データ保護規則（GDPR） ](gdpr.md)および[ カリフォルニア州消費者プライバシー法（CCPA） ](ccpa.md)などのプライバシー規制に適用される個人情報を保存できます。
 
-このライブラリは、プライバシーデータリクエストの作成、各製品の実装への送信、応答の収集のための統合された機能セットを提供します。 このライブラリを使用して、これらのデータトラッキングサービスによってブラウザーに保存されたデータを取得および削除します。
+このライブラリは、プライバシーデータリクエストを作成し、各製品の実装に送信し、応答を収集するための統合された機能セットを提供します。 このライブラリを使用して、これらのデータトラッキングサービスによってブラウザーに保存されているデータを取得および削除します。
 
 ## インストール
 
-次のいずれかの方法を使用して、ライブラリファイルをダウンロードします。
+ライブラリファイルをダウンロードするには、次のいずれかの方法を使用します。
 
 - npm: `npm install @adobe/adobe-privacy`
 - GitHub: [https://github.com/Adobe-Marketing-Cloud/adobe-privacy](https://github.com/Adobe-Marketing-Cloud/adobe-privacy)
 
-ファイルを取得したら、Adobe Commerce インスタンスにインストールされたカスタムモジュールまたはテーマにファイルを追加する必要があります。 このタスクを実行するには、「[&#x200B; カスタム JavaScriptの使用 &#x200B;](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) トピックに記載されている手順に従います。
+ファイルを用意したら、Adobe Commerce インスタンスにインストールされているカスタムモジュールまたはテーマにファイルを追加する必要があります。 「[ カスタム JavaScriptを使用](https://developer.adobe.com/commerce/frontend-core/javascript/custom)」のトピックに記載されている手順に従って、このタスクを実行します。
 
 ## 使用状況
 
-AdobePrivacy JS ライブラリは、ブラウザーに保存された ID データを管理するための様々な機能を提供します。
+AdobePrivacy JS ライブラリには、ブラウザーに保存されているID データを管理するための様々な機能が用意されています。
 
 `retrieveIdentities()`
-：サービスから ID の配列を、サービスで見つからない ID の配列と共に返します
+：サービスからIDの配列と、サービスに見つからないIDの配列を返します
 
 `removeIdentities()`
-：ブラウザーから ID を削除し、データが削除されたかどうかを示す `isDeleteClientSide` のブール値プロパティを含む、ID オブジェクトの配列を返します。
+：ブラウザーからIDを削除し、データが削除されたかどうかを示す`isDeleteClientSide` ブール型プロパティを持つID オブジェクトの配列を返します。
 
 `retrieveThenRemoveIdentities()`
-：この関数は、ID の配列を取得し、ブラウザーから削除するという点で `removeIdentities()` と似ています。
+：この関数は、IDの配列を取得してブラウザーから削除するという点で`removeIdentities()`と似ています。
 
-これらの関数の使用方法と例について詳しくは、[&#x200B; 公式ライブラリドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ja) を参照してください。
+これらの関数の使用方法と例について詳しくは、[公式ライブラリドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html)を参照してください。
 
 ### 初期化
 
-新しい `AdobePrivacy` オブジェクトをインスタンス化して、実装コードで AdobePrivacy JS ライブラリを使用します。
+実装コードでAdobePrivacy JS ライブラリを使用する新しい`AdobePrivacy` オブジェクトをインスタンス化します。
 
 ```js
 var adobePrivacy = new AdobePrivacy({});
 ```
 
-このコンストラクターは、インスタンス化の際に、パラメーターを含んだ設定オブジェクトを受け入れます。
-これらの設定パラメーターのリストについては、[&#x200B; 公式ライブラリドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ja) を参照してください。
+コンストラクターは、インスタンス化中にパラメーターを含む設定オブジェクトを受け入れます。
+これらの設定パラメーターのリストについては、[公式ライブラリドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html)を参照してください。

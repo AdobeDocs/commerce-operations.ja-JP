@@ -1,68 +1,68 @@
 ---
-title: サンプルの Data Composer パッケージのダウンロード
-description: Composer PHP Package Manager を使用してAdobe Commerce サンプル データをインストールするには、次の手順に従います。
+title: サンプルのdata Composer パッケージのダウンロード
+description: Composer PHP パッケージマネージャーを使用してAdobe Commerce サンプルデータをインストールするには、次の手順に従います。
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
 
-# サンプルの Data Composer パッケージのダウンロード
+# サンプルのdata Composer パッケージのダウンロード
 
-この節では、Adobe Commerce ソフトウェアを次のいずれかの方法で入手した場合、サンプルデータをインストールする方法について説明します。
+この節では、次のいずれかの方法でAdobe Commerce ソフトウェアを入手した場合のサンプルデータのインストール方法について説明します。
 
-* `https://magento.com/tech-resources/download` から圧縮されたアーカイブをダウンロードしました。
+* `https://magento.com/tech-resources/download`から圧縮アーカイブをダウンロードしました。
 
-  GitHub からアーカイブをダウンロードした場合、`composer.json` ファイルに `repo.magento.com` の URL が含まれていないので、このメソッドは機能しません。
+  GitHubからアーカイブをダウンロードした場合、`composer.json` ファイルに`repo.magento.com` URLが含まれていないため、このメソッドは機能しません。
 
-* 使用済み `composer create-project`
+* 使用済み`composer create-project`
 
-この方法を使用して、Adobe Commerceのサンプルデータを取得できますが、アプリケーションのインストールに使用したのと同じ [&#x200B; 認証キー &#x200B;](../prerequisites/authentication-keys.md) を使用する必要があります。
+この方法でAdobe Commerceのサンプルデータを取得できますが、アプリケーションのインストールに使用したのと同じ[認証キー](../prerequisites/authentication-keys.md)を使用する必要があります。
 
 >[!NOTE]
 >
->`Could not find package...` や `...no matching package found...` などのエラーが発生した場合は、コマンドに入力ミスがないことを確認してください。 それでもエラーが発生する場合、特にAdobe Commerceを使用している場合は、適切な Composer リポジトリにアクセスできない可能性があります。 [Adobe Commerce サポート &#x200B;](https://support.magento.com/hc/en-us) にお問い合わせください。
+>`Could not find package...`や`...no matching package found...`などのエラーが発生した場合は、コマンドにタイプミスがないことを確認してください。 それでもエラーが発生する場合は、特にAdobe Commerceを使用している場合は、適切なComposer リポジトリにアクセスできない可能性があります。 ヘルプについては、[Adobe Commerce サポート ](https://support.magento.com/hc/en-us)にお問い合わせください。
 
-Composer を使用して、アプリケーションのインストールの前または後にサンプル データをインストールできます。ただし、[&#x200B; 追加のタスク &#x200B;](remove-or-update.md) が存在する場合があります。
+Composerを使用して、アプリケーションのインストール前またはインストール後にサンプルデータをインストールできます。ただし、[追加タスク ](remove-or-update.md)が発生する場合があります。
 
-コントリビューションを行う開発者は、[&#x200B; リポジトリのクローンによるインストール &#x200B;](git-repositories.md) を参照してください。
+提供開発者の場合は、[ リポジトリを複製してインストールする](git-repositories.md)を参照してください。
 
 >[!WARNING]
 >
->アプリケーションが [&#x200B; 実稼動モード &#x200B;](../../configuration/bootstrap/application-modes.md#production-mode) に設定されている場合は、サンプルデータをインストールしないでください。 最初に [&#x200B; 開発者モード &#x200B;](../../configuration/bootstrap/application-modes.md#developer-mode) に切り替えます。 実稼動モードでのサンプルデータのインストール [&#x200B; 失敗 &#x200B;](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-)。
+>アプリケーションが[実稼動モード ](../../configuration/bootstrap/application-modes.md#production-mode)に設定されている場合は、サンプルデータをインストールしないでください。 最初に[開発者モード ](../../configuration/bootstrap/application-modes.md#developer-mode)に切り替えます。 サンプルデータを実稼動モード [にインストールできませんでした](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-)。
 
-コマンドラインを使用してサンプルデータをインストールするには、`<app_root>` ディレクトリで、ファイルシステムの所有者として次のコマンドを入力します。
+コマンドラインを使用してサンプルデータをインストールするには、`<app_root>` ディレクトリにファイルシステム所有者として次のコマンドを入力します。
 
-```bash
+```shell
 bin/magento sampledata:deploy
 ```
 
 >[!WARNING]
 >
->アプリケーションのインストール後にサンプルデータをインストールする場合は _次のコマンドも実行して、_ ディレクトリ内のデータベースとスキーマを更新する必要があります `<app_root>`。
+>アプリケーションをインストールした&#x200B;_後にサンプルデータ_&#x200B;をインストールする場合は、次のコマンドを実行して、`<app_root>` ディレクトリのデータベースとスキーマを更新する必要があります。
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
-アクションを完了するには、[&#x200B; 認証 &#x200B;](../prerequisites/authentication-keys.md) する必要があります。
+アクションを完了するには、[認証](../prerequisites/authentication-keys.md)する必要があります。
 
 ## 認証エラー
 
 次の認証エラーが表示される場合があります。
 
-```
+```text
 [Composer\Downloader\TransportException]
 The 'https://repo.magento.com/packages.json' URL required authentication.
 You must be using the interactive console to authenticate
 ```
 
-エラーが表示された場合は、をアプリケーションのインストールディレクトリに変更して `composer update` を実行します。これにより、[&#x200B; 認証キー &#x200B;](../prerequisites/authentication-keys.md) の入力を求められます。
+エラーが表示された場合は、アプリケーションのインストールディレクトリに移動して`composer update`を実行し、[認証キー](../prerequisites/authentication-keys.md)の入力を求めます。
 
-## サンプルデータのインストールの完了
+## サンプルデータのインストールを完了します
 
 {{$include /help/_includes/sample-data-complete.md}}
 

@@ -1,29 +1,29 @@
 ---
 title: config.php リファレンス
-description: Adobe Commerce設定の config.php ファイルの値と節について説明します。 モジュール、範囲、システム設定、デプロイメントのベストプラクティスについて説明します。
+description: Adobe Commerce設定のconfig.php ファイルの値とセクションについて説明します。 モジュール、スコープ、システム設定、デプロイメントのベストプラクティスについて説明します。
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '185'
 ht-degree: 1%
 
 ---
 
 # config.php リファレンス
 
-`config.php` ファイルには、次のセクションが含まれます。
+`config.php` ファイルには、次のセクションが含まれています。
 
 | 名前 | 説明 |
 | --------- | -------------------|
 | `i18n` | すべてのインライン翻訳データ。 このセクションからの読み取りはサポートされていません。 |
 | `modules` | 有効なモジュールと無効なモジュールのリスト。 |
-| `scopes` | ストア、ストアグループ、web サイトのリストと関連情報。 |
-| `system` | 静的なコンテンツのデプロイメントに必要なシステム設定。 |
+| `scopes` | 関連情報を含むストア、ストアグループ、およびweb サイトのリスト。 |
+| `system` | 静的コンテンツのデプロイメントに必要なシステム設定。 |
 | `themes` | インストールされたテーマの設定。 |
 
 ## モジュール
 
-モジュールとその状態の配列が含まれます。 モジュールが有効の場合、値は 1 です。 それ以外の場合、値は 0 です。
+モジュールとその状態の配列が含まれます。 モジュールが有効な場合、値は1です。 それ以外の場合、値は0です。
 
 ```conf
 'modules' => [
@@ -34,17 +34,17 @@ ht-degree: 1%
 ]
 ```
 
-詳細情報 [&#x200B; モジュール &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=ja)。
+[ モジュール ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html)の詳細をご覧ください。
 
-## スコープ
+## 範囲
 
-スコープ設定値の配列が含まれます。 このノードには次のサブノードがあります。
+スコープ設定値の配列が含まれます。 次のサブノードがあります。
 
 | 名前 | 説明 |
 | ---------- | -----------------------------------|
-| `websites` | Web サイト設定 |
-| `groups` | 設定を保存 |
-| `stores` | ビューの保存の設定 |
+| `websites` | web サイト設定 |
+| `groups` | ストア設定 |
+| `stores` | ストアビュー設定 |
 
 ```conf
 'scopes' => [
@@ -82,9 +82,9 @@ ht-degree: 1%
 ]
 ```
 
-[Commerce範囲 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings) の詳細情報。
+[Commerce スコープ ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)の詳細をご覧ください。
 
-## system
+## システム
 
 システムフィールド設定値の配列が含まれます。
 
@@ -100,7 +100,7 @@ ht-degree: 1%
 ]
 ```
 
-[&#x200B; システム固有の設定 &#x200B;](config-reference-sens.md) の詳細情報。
+[ システム固有の設定](config-reference-sens.md)について詳しく説明します。
 
 ## テーマ
 
@@ -120,5 +120,5 @@ ht-degree: 1%
 ]
 ```
 
-[&#x200B; テーマ &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/) の詳細情報。
+[ テーマ ](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront)の詳細
 

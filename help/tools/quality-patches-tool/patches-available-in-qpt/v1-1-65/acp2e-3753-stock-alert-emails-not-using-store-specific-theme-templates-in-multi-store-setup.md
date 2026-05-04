@@ -1,70 +1,70 @@
 ---
-title: ACP2E-3753：マルチストア設定でストア固有のテーマテンプレートが使用されないストックアラートメール
-description: ACP2E-3753 パッチを適用すると、ストアやテーマの設定に関係なく、マルチストア設定の商品アラートメールが常にデフォルトのテーマを使用して送信されるAdobe Commerceの問題が修正されます。
+title: ACP2E-3753：複数店舗設定で店舗固有のテーマテンプレートを使用しないストックアラートメール
+description: ACP2E-3753 パッチを適用して、マルチストア設定の商品アラートメールが、ストアまたはテーマ設定に関係なく、常にデフォルトのテーマを使用して送信されるAdobe Commerceの問題を修正します。
 feature: Themes, Personalization
 role: Admin, Developer
 exl-id: ad44ffdd-f122-4119-83e3-1816951b662c
-source-git-commit: 2089fed83a207f9d0211273652ea320d2590f8d5
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
-# ACP2E-3753：マルチストア設定でストア固有のテーマテンプレートが使用されないストックアラートメール
+# ACP2E-3753：複数店舗設定で店舗固有のテーマテンプレートを使用しないストックアラートメール
 
-ACP2E-3753 パッチは、ストアやテーマの設定に関係なく、マルチストア設定の製品アラートメールが常にデフォルトのテーマを使用して送信される問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 がインストールされている場合に使用できます。 パッチ ID は ACP2E-3753 です。 この問題はAdobe Commerce 2.4.9 で修正される予定であることに注意してください。
+ACP2E-3753 パッチでは、マルチストア設定の製品アラートメールが、ストアやテーマ設定に関係なく、常にデフォルトのテーマを使用して送信される問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65がインストールされている場合に利用できます。 パッチ IDはACP2E-3753です。 この問題は、Adobe Commerce 2.4.9で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p11
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p5
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-マルチストア設定での製品アラートメールは、ストアやテーマの設定に関係なく、常にデフォルトのテーマを使用して送信されます。
+マルチストア設定の商品アラートメールは、ストアやテーマの設定に関係なく、常にデフォルトのテーマを使用して送信されます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 2 つの web サイト、ストア、ストア表示を作成します。
-1. 2 つの個別のテーマを作成して、別々のストアに割り当てます。
-1. 製品のアラート設定は、1 分ごとに実行されるデフォルトのスコープです。
-1. 両方のテーマについて、`stock.phtml` ファイルのコンテンツの一部を上書きまたは追加します。 ファイルの場所の例：
+1. Web サイト、実店舗、ストアビューを2つ作成する。
+1. 2つの個別のテーマを作成し、それらを別のストアに割り当てます。
+1. 製品アラート設定は、毎分実行されるデフォルトのスコープです。
+1. 両方のテーマの`stock.phtml` ファイルに一部のコンテンツを上書きまたは追加します。 ファイルの場所の例：
 
-   ```
+   ```text
    app\design\frontend\Adobe\Taiwan\Magento_ProductAlert\templates\email\stock.phtml
    app\design\frontend\Adobe\Japan\Magento_ProductAlert\templates\email\stock.phtml
    ```
 
-1. 各ストアに対してユーザーを作成し、製品 Stock アラートを購読します。
-1. Product stock アラートをトリガーしてメールを送信します。
+1. 各店舗のユーザーを作成し、商品在庫アラートを購読します。
+1. 商品の在庫アラートをトリガーして、メールを送信します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
 メールには、テーマレベルの変更を含める必要があります。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-メールには、それぞれの web サイトやストアで設定されたテンプレートは含まれていません。
+メールには、各web サイト/ストアで設定されたテンプレートが含まれていません。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

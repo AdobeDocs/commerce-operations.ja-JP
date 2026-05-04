@@ -2,7 +2,7 @@
 title: データベーススキーマの作成
 description: Adobe Commerce プロジェクトのデータベースを作成するには、次の手順に従います。
 exl-id: 860c9918-44c4-4ef1-88a5-12614566307c
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '49'
 ht-degree: 0%
@@ -11,18 +11,18 @@ ht-degree: 0%
 
 # データベーススキーマの作成
 
-このコマンドを実行する前に、[&#x200B; 展開構成を作成または更新 &#x200B;](deployment.md) する必要があります。
+このコマンドを実行する前に、[ デプロイメント設定を作成または更新する必要があります](deployment.md)。
 
 ## データベースの設定とデータの追加
 
-コマンドの使用法：
+コマンドの使用状況：
 
-```bash
+```shell
 bin/magento setup:db-schema:upgrade
 ```
 
-データベースのステータスを確認するには、次のように入力します
+データベースのステータスを表示するには、次のように入力します
 
-```bash
+```shell
 bin/magento setup:db:status
 ```

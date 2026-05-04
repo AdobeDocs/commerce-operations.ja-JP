@@ -1,115 +1,115 @@
 ---
-title: ファイル・システム、メディア、データベースのバックアップとロールバック
+title: ファイルシステム、メディア、データベースのバックアップとロールバック
 description: Adobe Commerce アプリケーションをバックアップおよび復元するには、次の手順に従います。
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
 
-# ファイル・システム、メディア、データベースのバックアップとロールバック
+# ファイルシステム、メディア、データベースのバックアップとロールバック
 
-このコマンドを使用すると、次の項目をバックアップできます。
+このコマンドを使用すると、次のバックアップを作成できます。
 
-* ファイルシステム（`var` ディレクトリと `pub/static` ディレクトリを除く）
+* ファイルシステム （`var`および`pub/static` ディレクトリを除く）
 * `pub/media` ディレクトリ
 * データベース
 
-バックアップは `var/backups` ディレクトリに保存され、[`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンドを使用していつでも復元できます。
+バックアップは`var/backups` ディレクトリに保存され、[`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンドを使用していつでも復元できます。
 
-バックアップ後、後で [&#x200B; ロールバック &#x200B;](#rollback) できます。
+バックアップ後、後で[ ロールバック ](#rollback)できます。
 
 >[!TIP]
 >
->クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、[&#x200B; クラウドガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) の _スナップショットとバックアップの管理_ を参照してください。
+>クラウドインフラストラクチャプロジェクト上のAdobe Commerceについては、_クラウドガイド_&#x200B;の[ スナップショットとバックアップ管理](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)を参照してください。
 
 ## バックアップを有効にする
 
-バックアップ機能はデフォルトで無効になっています。 有効にするには、次の CLI コマンドを入力します。
+バックアップ機能はデフォルトで無効になっています。 有効にするには、次のCLI コマンドを入力します。
 
-```bash
+```shell
 bin/magento config:set system/backup/functionality_enabled 1
 ```
 
 >[!WARNING]
 >
->**非推奨（廃止予定）のお知らせ：**
->&#x200B;>バックアップ機能は、2.1.16、2.2.7、2.3.0 で非推奨（廃止予定）となりました。追加のバックアップテクノロジーとバイナリバックアップツール（Percona XtraBackup など）を調査することをお勧めします。
+>**非推奨化のお知らせ：**
+>バックアップ機能は、2.1.16、2.2.7、および2.3.0で廃止されました。 追加のバックアップテクノロジーとバイナリバックアップツール（Percona XtraBackupなど）を調査することをお勧めします。
 
-## 開いているファイルの上限を設定
+## 開いているファイルの制限を設定する
 
-以前のバックアップへのロールバックはサイレントに失敗する場合があり、[`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンドを使用して不完全なデータがファイルシステムまたはデータベースに書き込まれる結果となります。
+以前のバックアップにロールバックすると、サイレントに失敗する可能性があり、不完全なデータが[`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンドを使用してファイルシステムまたはデータベースに書き込まれます。
 
-クエリ文字列が長いと、再帰呼び出しが多すぎることが原因で、ユーザーに割り当てられたメモリ領域がメモリ不足になることがあります。
+クエリ文字列が長すぎると、再帰呼び出しが多すぎるため、ユーザーに割り当てられたメモリ領域がメモリ不足になることがあります。
 
-## 開いているファイルの `ulimit` 定方法
+## 開いているファイル `ulimit`の設定方法
 
-ファイルシステムユーザーに対して開いているファイル [`ulimit`](https://ss64.com/bash/ulimit.html) を `65536` 以上の値に設定することをお勧めします。
+ファイル システム ユーザーの開いているファイル [`ulimit`](https://ss64.com/bash/ulimit.html)を`65536`以上の値に設定することをお勧めします。
 
-これをコマンドラインで実行するか、シェルスクリプトを編集してユーザーに恒久的な設定を与えることができます。
+これはコマンドラインで行うことも、シェルスクリプトを編集してユーザーの永続的な設定にすることもできます。
 
-続行する前に、まだ実行していない場合は、[&#x200B; ファイルシステムの所有者 &#x200B;](../prerequisites/file-system/overview.md) に切り替えます。
+続行する前に、まだ実行していない場合は、[ ファイルシステム所有者](../prerequisites/file-system/overview.md)に切り替えてください。
 
 コマンド：
 
-```bash
+```shell
 ulimit -s 65536
 ```
 
-必要に応じて、これを大きい値に変更できます。
+必要に応じてこれを大きな値に変更できます。
 
 >[!NOTE]
 >
->開いているファイル `ulimit` の構文は、使用する UNIX シェルによって異なります。 上記の設定は、Bash シェルを使用している CentOS および Ubuntu で動作する必要があります。 ただし、macOSの場合、正しい設定は `ulimit -S 65532` です。 詳細については、マニュアルページまたは OS のリファレンスを参照してください。
+>開いているファイル `ulimit`の構文は、使用するUNIX シェルによって異なります。 上記の設定は、CentOSおよびUbuntuとBash シェルで動作する必要があります。 ただし、macOSの場合、正しい設定は`ulimit -S 65532`です。 詳細については、マニュアル ページまたはオペレーティング システム リファレンスを参照してください。
 
-ユーザーの Bash シェルにオプションで値を設定するには：
+オプションで、ユーザーのBash シェルの値を設定するには、次の手順を実行します。
 
-1. まだ切り替えていない場合は、[&#x200B; ファイルシステムの所有者 &#x200B;](../prerequisites/file-system/overview.md) に切り替えます。
-1. `/home/<username>/.bashrc` をテキストエディターで開きます。
+1. まだ実行していない場合は、[ ファイルシステム所有者](../prerequisites/file-system/overview.md)に切り替えます。
+1. `/home/<username>/.bashrc`をテキストエディターで開きます。
 1. 次の行を追加します。
 
-   ```bash
+   ```shell
    ulimit -s 65536
    ```
 
-1. `.bashrc` への変更を保存し、テキストエディターを終了します。
+1. 変更を`.bashrc`に保存して、テキストエディターを終了します。
 
 >[!WARNING]
 >
->[`pcre.recursion_limit` ファイルで &#x200B;](https://www.php.net/manual/en/pcre.configuration.php)`php.ini` の値を設定することは避けることをお勧めします。設定すると、エラー通知のない不完全なロールバックが生じる可能性があるからです。
+>`php.ini` ファイルの[`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php)に値を設定することを避けることをお勧めします。これにより、エラー通知なしで不完全なロールバックが発生する可能性があります。
 
-## バックアップ中
+## バックアップ
 
-コマンドの使用法：
+コマンドの使用状況：
 
-```bash
+```shell
 bin/magento setup:backup [--code] [--media] [--db]
 ```
 
-コマンドは、次のタスクを実行します。
+このコマンドは、次のタスクを実行します。
 
 1. ストアをメンテナンスモードにします。
-1. 次のいずれかのコマンド オプションを実行します。
+1. 次のいずれかのコマンドオプションを実行します。
 
-   | オプション | 意味 | バックアップ ファイルの名前と場所 |
+   | オプション | 意味 | バックアップファイルの名前と場所 |
    |--- |--- |--- |
-   | `--code` | ファイルシステムをバックアップします（var ディレクトリと pub/static ディレクトリを除く）。 | `var/backups/<timestamp>/_filesystem.tgz` |
+   | `--code` | ファイルシステムをバックアップします（varおよびpub/static ディレクトリを除く）。 | `var/backups/<timestamp>/_filesystem.tgz` |
    | `--media` | pub/media ディレクトリをバックアップします。 | `var/backups/<timestamp>/_filesystem_media.tgz` |
    | `--db` | データベースをバックアップします。 | `var/backups/<timestamp>/_db.sql` |
 
-1. ストアをメンテナンスモードから削除します。
+1. メンテナンスモードからストアを取り除きます。
 
-例えば、ファイルシステムとデータベースをバックアップするには、次のように指定します。
+例えば、ファイルシステムとデータベースをバックアップするには，
 
-```bash
+```shell
 bin/magento setup:backup --code --db
 ```
 
 次のようなメッセージが表示されます。
 
-```
+```shell
 Enabling maintenance mode
 Code backup is starting...
 Code backup filename: 1434133011_filesystem.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
@@ -122,33 +122,33 @@ DB backup path: /var/www/html/magento2/var/backups/1434133011_db.sql
 Disabling maintenance mode
 ```
 
-## Rollback
+## ロールバック
 
 このセクションでは、以前に作成したバックアップにロールバックする方法について説明します。 復元するバックアップファイルのファイル名を知っている必要があります。
 
 バックアップの名前を検索するには、次のように入力します。
 
-```bash
+```shell
 bin/magento info:backups:list
 ```
 
-バックアップ ファイル名の最初の文字列はタイムスタンプです。
+バックアップファイル名の最初の文字列はタイムスタンプです。
 
 以前のバックアップにロールバックするには、次のように入力します。
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]
 ```
 
-たとえば、`1440611839_filesystem_media.tgz` という名前のメディア バックアップを復元するには、次のように入力します
+例えば、`1440611839_filesystem_media.tgz`という名前のメディア バックアップを復元するには、次のように入力します
 
-```bash
+```shell
 bin/magento setup:rollback -m 1440611839_filesystem_media.tgz
 ```
 
 次のようなメッセージが表示されます。
 
-```
+```shell
 [SUCCESS]: Media rollback completed successfully.
 Please set file permission of bin/magento to executable
 Disabling maintenance mode

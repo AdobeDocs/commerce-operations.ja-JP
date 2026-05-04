@@ -1,60 +1,60 @@
 ---
-title: 'ACSD-47004: VAT ID のない請求先住所には VAT が適用されません'
-description: VAT ID のない請求先住所に VAT が適用されないAdobe Commerceの問題を修正するには、ACSD-47004 パッチを適用してください。
+title: ACSD-47004:VAT IDのない請求先住所にVATが適用されない
+description: ACSD-47004 パッチを適用して、VAT IDのない請求先住所にVATが適用されないAdobe Commerceの問題を修正します。
 feature: Customer Service, Shipping/Delivery, Orders
 role: Admin
 exl-id: 72a64937-1c04-4fc2-bc61-fd2056e24419
 type: Troubleshooting
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 1%
+source-wordcount: '449'
+ht-degree: 0%
 
 ---
 
-# ACSD-47004: VAT ID のない請求先住所には VAT が適用されません
+# ACSD-47004:VAT IDのない請求先住所にVATが適用されない
 
-ACSD-47004 パッチは、VAT ID のない請求先住所に VAT が適用されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.24 がインストールされている場合に使用できます。 パッチ ID は ACSD-47004 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+ACSD-47004 パッチは、VAT IDのない請求先住所にVATが適用されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.24がインストールされている場合に利用できます。 パッチ IDはACSD-47004です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 ～ 2.4.5-p1
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 - 2.4.5-p1
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-VAT ID のない請求先住所には VAT が適用されません。
+VATは、VAT IDのない請求先住所には適用されません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. [!UICONTROL Commerce Admin]/**[!UICONTROL Store]**/**[!UICONTROL Configuration]**/**[!UICONTROL Customers]**/**[!UICONTROL Customer Configuration]**/**[!UICONTROL Create New Account Options]** を開き、**[!UICONTROL Enable Automatic Assignment to Customer Group]** を *[!UICONTROL Yes]* に設定します。
-1. VAT ID 検証用に別のグループを設定します。 例：
+1. [!UICONTROL Commerce Admin] > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Customer Configuration]** > **[!UICONTROL Create New Account Options]**&#x200B;を開き、**[!UICONTROL Enable Automatic Assignment to Customer Group]**&#x200B;を&#x200B;*[!UICONTROL Yes]*&#x200B;に設定します。
+1. VAT ID検証用に異なるグループを設定します。 例：
 
-   ![&#x200B; 税検証の構成オプションを示す VAT ID 検証設定インターフェイス &#x200B;](/help/assets/tools/vat-id-validations.png)
+   ![VAT ID検証設定インターフェイスに、税金検証の設定オプションが表示されている](/help/assets/tools/vat-id-validations.png)
 
-1. 新規顧客を登録します。
-1. VAT なしで新しい既定の住所を追加します。 例：
+1. 新規顧客の登録。
+1. VATなしで新しいデフォルトアドレスを追加します。 例：
 
-   ```
+   ```text
    123 N University Dr
    Edmond, 73034
    Germany
    T: 0900000000
    ```
 
-1. 顧客のグループが [!UICONTROL General] しいことを確認します。
-1. この住所を編集して、有効な VAT 番号を追加してください：
+1. お客様のグループが[!UICONTROL General]のままであることを確認します。
+1. このアドレスを編集し、有効なVAT番号を追加します。
 
-   ```
+   ```text
    123 N University Dr
    Edmond, 73034
    Germany
@@ -62,37 +62,37 @@ VAT ID のない請求先住所には VAT が適用されません。
    VAT: DE329376919
    ```
 
-1. 顧客のグループが [!UICONTROL Retailer] に変更されていることを確認します。
-1. 住所を編集し、VAT 番号を削除します。
+1. お客様のグループが[!UICONTROL Retailer]に変更されていることを確認してください。
+1. アドレスを編集し、VAT番号を削除します。
 
-   ```
+   ```text
    123 N University Dr
    Edmond, 73034
    Germany
    T: 0900000000
    ```
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-顧客グループは、デフォルトの [!UICONTROL General] グループに自動的に変更されます。
+顧客グループは、自動的にデフォルトの[!UICONTROL General] グループに変更されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-顧客グループは、デフォルトの [!UICONTROL General] グループに自動的には変更されません。
+顧客グループは、自動的にデフォルトの[!UICONTROL General] グループに変更されません。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

@@ -1,48 +1,48 @@
 ---
-title: データを移行
-description: ' [!DNL Data Migration Tool] を使用してMagento 1 からMagento 2 へのデータ移行を開始する方法を説明します。'
+title: データの移行
+description: ' [!DNL Data Migration Tool]を使用してMagento 1からMagento 2へのデータ移行を開始する方法を説明します。'
 exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
 
-# データを移行
+# データの移行
 
-開始する前に、次の手順に従って準備を行います。
+開始する前に、次の手順を実行して準備します。
 
-1. アプリケーションサーバーに [&#x200B; ファイルシステムの所有者 &#x200B;](../../../installation/prerequisites/file-system/overview.md) としてログインします。
-1. アプリケーションのインストールディレクトリに移動するか、システムデ `PATH` クトリに追加されていることを確認します。
+1. アプリケーションサーバーに[ ファイルシステム所有者](../../../installation/prerequisites/file-system/overview.md)としてログインします。
+1. アプリケーション インストール ディレクトリに変更するか、システム `PATH`に追加されていることを確認してください。
 
-詳しくは、[&#x200B; 最初の手順 &#x200B;](overview.md#first-steps) の節を参照してください。
+詳しくは、[最初の手順](overview.md#first-steps) セクションを参照してください。
 
 ## データ移行コマンドの実行
 
-データの移行を開始するには、次を実行します。
+データの移行を開始するには、以下を実行します。
 
-```bash
+```shell
 bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
-ここで、
+どこで：
 
-* `[-a|--auto]` は、整合性チェックエラーが発生した場合に移行が停止するのを防ぐオプション引数です。
+* `[-a|--auto]`は、整合性チェック エラーが発生した場合に移行が停止するのを防ぐオプションの引数です。
 
-* `[-r|--reset]` は、最初から移行を開始するオプションの引数です。 この引数を使用して、移行をテストできます。
+* `[-r|--reset]`は、最初から移行を開始するオプションの引数です。 この引数は、移行のテストに使用できます。
 
-* `{<path to config.xml>}` は `config.xml` への絶対ファイルシステムパスです。この引数は必須です
+* `{<path to config.xml>}`は`config.xml`への絶対ファイルシステムパスです。この引数は必須です
 
-この手順では、Magento 1 データベースの移行テーブル用に、追加のテーブルとトリガーが [!DNL Data Migration Tool] で作成されます。 これらは、[&#x200B; 増分/差分 &#x200B;](delta.md) 移行手順で使用されます。 追加のテーブルには、最終的な移行の実行後に変更されたレコードに関する情報が含まれます。 データベーストリガーは、これらの追加テーブルへの入力に使用します。したがって、特定のテーブルに対して新しい処理が実行されている（レコードが追加/変更/削除されている）場合、これらのデータベーストリガーによって、この処理に関する情報が追加のテーブルに保存されます。 差分マイグレーションプロセスを実行すると、[!DNL Data Migration Tool] はこれらのテーブルをチェックして、未処理のレコードを探し、必要なコンテンツをMagento 2 データベースに移行します。
+この手順では、[!DNL Data Migration Tool]はMagento 1 データベースの移行テーブル用に追加のテーブルとトリガーを作成します。 これらは、[増分/差分](delta.md)移行ステップで使用されます。 追加のテーブルには、最終的な移行実行後に変更されたレコードに関する情報が含まれます。 データベース・トリガーは、これらの追加テーブルにデータを入力するために使用されます。そのため、特定のテーブルに対して新しい操作が実行されている場合（レコードが追加/変更/削除されている場合）、これらのデータベース・トリガーは、この操作に関する情報を追加テーブルに保存します。 差分移行プロセスを実行すると、[!DNL Data Migration Tool]はこれらのテーブルに未処理のレコードを確認し、必要なコンテンツをMagento 2 データベースに移行します。
 
-それぞれの新しいテーブルには、次の内容が含まれます。
+各新しいテーブルには次のものが含まれます。
 
-* `m2_cl` プレフィックス
+* `m2_cl`接頭辞
 * `INSERT`、`UPDATE`、`DELETE` イベントトリガー。
 
-例えば、`sales_flat_order` の場合、[!DNL Data Migration Tool] は次を作成します。
+例えば、`sales_flat_order`の場合、[!DNL Data Migration Tool]は次のように作成します。
 
 * `m2_cl_sales_flat_order` テーブル：
 
@@ -55,7 +55,7 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
   ) COMMENT='m2_cl_sales_flat_order';
   ```
 
-* `trg_sales_flat_order_after_insert`、`trg_sales_flat_order_after_update`、`trg_sales_flat_order_after_delete` のトリガー:
+* `trg_sales_flat_order_after_insert`、`trg_sales_flat_order_after_update`、`trg_sales_flat_order_after_delete`トリガー:
 
   ```sql
   DELIMITER ;;
@@ -85,12 +85,12 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 >[!NOTE]
 >
->[!DNL Data Migration Tool] は、実行時に現在の進行状況を保存します。 エラーまたはユーザーの介入によって実行が停止した場合、ツールは前回正常起動時の状態から進捗を再開します。 [!DNL Data Migration Tool] を最初から強制的に実行するには、`--reset` 引数を使用します。 この場合、以前に移行したデータが重複しないように、Magento 2 データベースダンプを復元することをお勧めします。
+>[!DNL Data Migration Tool]は、実行中に現在の進行状況を保存します。 エラーまたはユーザーの介入によって実行が停止された場合、ツールは最後の正常な状態で進行状況を再開します。 [!DNL Data Migration Tool]を最初から強制的に実行するには、`--reset`引数を使用します。 その場合、以前に移行したデータの重複を防ぐために、Magento 2 データベースダンプを復元することをお勧めします。
 
 
-## 一貫性エラーの可能性
+## 可能性のある一貫性エラー
 
-実行中に、[!DNL Data Migration Tool] はMagento 1 とMagento 2 のデータベース間の不整合を報告し、次のようなメッセージが表示される場合があります。
+実行中に、[!DNL Data Migration Tool]はMagento 1とMagento 2のデータベース間の不整合を報告し、次のようなメッセージを表示する場合があります。
 
 * `Source documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`
 * `Destination documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`
@@ -105,7 +105,7 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 * `Incompatibility in data. Source document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 * `Incompatibility in data. Destination document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 
-詳細と推奨事項については、このガイドの [&#x200B; トラブルシューティング &#x200B;](https://support.magento.com/hc/en-us/articles/360033020451) の節を参照してください。
+詳しい情報と推奨事項については、このガイドの[ トラブルシューティング ](https://support.magento.com/hc/en-us/articles/360033020451)の節を参照してください。
 
 ## 次の移行手順
 

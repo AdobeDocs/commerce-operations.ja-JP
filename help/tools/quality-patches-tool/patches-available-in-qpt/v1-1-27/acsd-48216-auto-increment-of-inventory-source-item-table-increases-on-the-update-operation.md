@@ -1,44 +1,44 @@
 ---
-title: ACSD-48216:*UPDATE*操作で inventory_source_item*テーブルの*AUTO_INCREMENT が増加します
-description: ACSD-48216 パッチを適用して、Adobe Commerceの問題を修正します。この問題では、*UPDATE*処理で inventory_source_item* テーブルの*AUTO_INCREMENT が増加します。
+title: 'ACSD-48216: *UPDATE*操作時にinventory_source_item* テーブルの*AUTO_INCREMENTが増加'
+description: ACSD-48216 パッチを適用して、*UPDATE*操作でinventory_source_item* テーブルの*AUTO_INCREMENTが増加するAdobe Commerceの問題を修正します。
 feature: Admin Workspace, Inventory, Orders
 role: Admin
 exl-id: acb956c8-75d4-4764-8b8d-250bc8620b29
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
 
-# *inventory_source_item* テーブルの *AUTO_INCREMENT* が *UPDATE* 操作で増加する ACSD-48216
+# ACSD-48216: *UPDATE*&#x200B;操作で&#x200B;*inventory_source_item*&#x200B;件中&#x200B;*AUTO_INCREMENT*&#x200B;件のテーブルが増加
 
-ACSD-48216 パッチは、*inventory_source_item* テーブルの *AUTO_INCREMENT* が *UPDATE* 操作で増加する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.27 がインストールされている場合に使用できます。 パッチ ID は ACSD-48216 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-48216 パッチは、*UPDATE*&#x200B;操作で&#x200B;*inventory_source_item* テーブルの&#x200B;*AUTO_INCREMENT*&#x200B;が増加する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.27がインストールされている場合に利用できます。 パッチ IDはACSD-48216です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 ～ 2.4.6
+* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 - 2.4.6
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-`AUTO_INCREMENT` の操作で `inventory_source_item` テーブルの `UPDATE` が増加します。
+`UPDATE`操作で`inventory_source_item` テーブルの`AUTO_INCREMENT`が増加します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. `AUTO_INCREMENT` テーブルの `inventory_source_item` の現在の値を確認します。
+1. `inventory_source_item` テーブルの`AUTO_INCREMENT`の現在の値を確認してください：
 
-```bash
+```shell
 MySQL > show create table inventory_source_item;
 ```
 
@@ -56,7 +56,7 @@ CREATE TABLE `inventory_source_item` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2048 DEFAULT CHARSET=utf8
 ```
 
-1. 特定の製品に対して API リクエストを実行します。
+1. 特定の製品に対してAPI リクエストを行います。
 
 `Endpoint: /rest/V1/inventory/source-items`\
 `Method: POST`\
@@ -77,27 +77,27 @@ CREATE TABLE `inventory_source_item` (
 }
 ```
 
-1. `AUTO_INCREMENT` テーブルの `inventory_source_item` 値を再度確認します。
+1. `inventory_source_item` テーブルの`AUTO_INCREMENT`値をもう一度確認してください。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-`AUTO_INCREMENT` テーブルの `inventory_source_item` 値は、更新操作のたびに増加するわけではありません。
+更新操作のたびに`inventory_source_item` テーブルの`AUTO_INCREMENT`値が増加しません。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-`AUTO_INCREMENT` テーブルの `inventory_source_item` 値は、更新操作のたびに増加します。
+`inventory_source_item` テーブルの`AUTO_INCREMENT`値は、更新操作ごとに増加します。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドの
-* クラウドインフラストラクチャー上のAdobe Commerce:[&#x200B; アップグレードとパッチ適用 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja) クラウドインフラストラクチャー上のCommerce ガイド
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」ガイド
 
-## 関連資料
+## 関連トピックス
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースに追加しました
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）
-* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [[!DNL Quality Patches Tool]  リリース：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを確認します
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

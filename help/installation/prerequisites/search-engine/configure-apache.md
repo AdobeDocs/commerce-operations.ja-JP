@@ -1,16 +1,16 @@
 ---
-title: 検索エンジン用に Apache を設定する
-description: Adobe Commerceのオンプレミスインストール用に Apache web サーバーで検索エンジンを設定するには、次の手順に従います。
+title: 検索エンジン用のApacheの設定
+description: Adobe Commerceのオンプレミスインストール用にApache web サーバーを使用して検索エンジンを設定するには、次の手順に従います。
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
 
-# 検索エンジン用に Apache を設定する
+# 検索エンジン用のApacheの設定
 
 {{$include /help/_includes/web-server-communication.md}}
 
@@ -18,32 +18,32 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->OpenSearch のサポートは 2.4.4 で追加されました。OpenSearch は、Elasticsearchの互換性のあるフォークです。 詳しくは、[Elasticsearchの OpenSearch への移行 &#x200B;](../../../upgrade/prepare/opensearch-migration.md) を参照してください。
+>OpenSearchのサポートは2.4.4で追加されました。 OpenSearchはElasticsearchの互換性のあるフォークです。 詳しくは、[ElasticsearchをOpenSearchに移行](../../../upgrade/prepare/opensearch-migration.md)を参照してください。
 
-ここでは、Apache を *セキュアでない* プロキシとして設定して、Adobe Commerceがこのサーバーで動作している検索エンジンを使用できるようにする方法について説明します。 この節では、HTTP 基本認証の設定については説明しません。これについては、[Apache との安全な通信 &#x200B;](#secure-communication-with-apache) で説明しています。
+この節では、Adobe Commerceがこのサーバーで実行されている検索エンジンを使用できるように、*unsecure* プロキシとしてApacheを設定する方法について説明します。 この節では、HTTP Basic認証の設定については説明しません。詳しくは、[Apacheとの通信の保護](#secure-communication-with-apache)を参照してください。
 
 >[!NOTE]
 >
->この例ではプロキシが保護されていない理由は、設定と検証が容易だからです。 このプロキシでは TLS を使用できます。 これを行う場合は、必ずプロキシ情報を安全な仮想ホスト設定に追加してください。
+>この例でプロキシが保護されていない理由は、設定と検証が簡単だからです。 このプロキシでTLSを使用できます。 これを行う場合は、プロキシ情報をセキュアな仮想ホスト設定に追加してください。
 
-### Apache 2.4 用のプロキシの設定
+### Apache 2.4のプロキシの設定
 
 この節では、仮想ホストを使用してプロキシを設定する方法について説明します。
 
-1. `mod_proxy` を次のように有効にします。
+1. 次のように`mod_proxy`を有効にします。
 
-   ```bash
+   ```shell
    a2enmod proxy_http
    ```
 
-1. テキストエディターを使用して `/etc/apache2/sites-available/000-default.conf` を開く
-1. ファイルの先頭に次のディレクティブを追加します。
+1. テキストエディターを使用して`/etc/apache2/sites-available/000-default.conf`を開く
+1. ファイルの上部に次のディレクティブを追加します。
 
    ```conf
    Listen 8080
    ```
 
-1. ファイルの下部に次を追加します。
+1. ファイルの下部に以下を追加します。
 
    ```conf
    <VirtualHost *:8080>
@@ -52,27 +52,27 @@ ht-degree: 0%
    </VirtualHost>
    ```
 
-1. Apache を再起動します。
+1. Apacheを再起動します。
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
 1. 次のコマンドを入力して、プロキシが機能することを確認します。
 
-   ```bash
+   ```shell
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
-   例えば、Elasticsearchを使用していて、プロキシがポート 8080 を使用している場合、次のようになります。
+   例えば、Elasticsearchを使用しており、プロキシでポート 8080を使用している場合は次のようになります。
 
-   ```bash
+   ```shell
    curl -i http://localhost:8080/_cluster/health
    ```
 
-   次のようなメッセージが成功を示して表示されます。
+   成功を示す次の表示と同様のメッセージ：
 
-   ```
+   ```text
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8
@@ -82,105 +82,105 @@ ht-degree: 0%
    {"cluster_name":"elasticsearch","status":"yellow","timed_out":false,"number_of_nodes":1,"number_of_data_nodes":1,"active_primary_shards":5,"active_shards":5,"relocating_shards":0,"initializing_shards":0,"unassigned_shards":5,"delayed_unassigned_shards":0,"number_of_pending_tasks":0,"number_of_in_flight_fetch":0,"task_max_waiting_in_queue_millis":0,"active_shards_percent_as_number":50.0}
    ```
 
-## Apache との安全な通信
+## Apacheとの安全な通信
 
-この節では、Apache との [HTTP Basic](https://datatracker.ietf.org/doc/html/rfc2617) 認証を使用して、Apache と検索エンジン間の通信を保護する方法について説明します。 その他のオプションについては、次のいずれかのリソースを参照してください。
+この節では、[HTTP Basic](https://datatracker.ietf.org/doc/html/rfc2617)認証とApacheを使用してApacheと検索エンジン間の通信を保護する方法について説明します。 その他のオプションについては、次のいずれかのリソースを参照してください。
 
-* [Apache 2.4 認証と承認のチュートリアル &#x200B;](https://httpd.apache.org/docs/2.4/howto/auth.html)
+* [Apache 2.4認証と認証のチュートリアル](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
-以下のセクションの 1 つを参照してください。
+次のいずれかのセクションを参照してください。
 
 * [パスワードファイルの作成](#create-a-password)
 * [セキュアな仮想ホストの設定](#secure-communication-with-apache)
 
 ### パスワードの作成
 
-セキュリティ上の理由から、web サーバーの docroot を除く任意の場所にパスワードファイルを配置できます。 この例では、パスワードファイルを新しいディレクトリに保存する方法を示します。
+セキュリティ上の理由から、Web サーバーのdocroot以外の場所にパスワードファイルを配置できます。 この例では、パスワードファイルを新しいディレクトリに保存する方法を示します。
 
-#### 必要に応じて htpasswd をインストールします。
+#### 必要に応じてhtpasswdをインストールします
 
-まず、次のように Apache `htpasswd` ユーティリティがインストールされているかどうかを確認します。
+まず、次のようにApache `htpasswd` ユーティリティがインストールされているかどうかを確認します。
 
-1. 次のコマンドを入力して、`htpasswd` が既にインストールされているかどうかを確認します。
+1. 次のコマンドを入力して、`htpasswd`が既にインストールされているかどうかを確認します。
 
-   ```bash
+   ```shell
    which htpasswd
    ```
 
-   パスが表示された場合は、インストールされます。コマンドが出力を返さない場合は、`htpasswd` はインストールされません。
+   パスが表示された場合はインストールされます。コマンドが出力を返さない場合は、`htpasswd`はインストールされません。
 
-1. 必要に応じて、`htpasswd` をインストールします。
+1. 必要に応じて、`htpasswd`をインストールします。
 
    * Ubuntu: `apt-get -y install apache2-utils`
    * CentOS: `yum -y install httpd-tools`
 
 #### パスワードファイルの作成
 
-`root` 権限を持つユーザーとして、次のコマンドを入力します。
+`root`権限を持つユーザーとして次のコマンドを入力します。
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.<password file name> <username>
 ```
 
-ここで、
+どこで
 
-* `<username>` は次になることができます。
+* `<username>`は次の値を指定できます。
 
-   * Cron の設定：web サーバーユーザーまたは別のユーザー。
+   * cronの設定：web サーバーユーザーまたは別のユーザー。
 
-  この例では web サーバーユーザーを使用しますが、ユーザーの選択はユーザー次第です。
+  この例では、web サーバーユーザーを使用していますが、ユーザーの選択はユーザーによって異なります。
 
-   * Elasticsearchの設定：この例では、ユーザーの名前は `magento_elasticsearch` です
+   * Elasticsearchの設定：この例では、ユーザー名は`magento_elasticsearch`です
 
-* `<password file name>` は非表示のファイル （`.` で始まる）であり、ユーザーの名前を反映している必要があります。 詳しくは、この節の後半の例を参照してください。
+* `<password file name>`は非表示ファイル（`.`で始まる）である必要があり、ユーザーの名前を反映する必要があります。 詳しくは、この節の後の例を参照してください。
 
 画面の指示に従って、ユーザーのパスワードを作成します。
 
 #### 例
 
-**例 1:cron**
-cron 用に 1 人のユーザーの認証のみを設定する必要があります。この例では、web サーバーユーザーを使用します。 Web サーバーユーザーのパスワードファイルを作成するには、次のコマンドを入力します。
+**例1: cron**
+cronの認証は1人のユーザーに対してのみ設定する必要があります。この例では、web サーバーユーザーを使用します。 Web サーバーユーザーのパスワードファイルを作成するには、次のコマンドを入力します。
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.htpasswd apache
 ```
 
-**例 2:Elasticsearch**
-2 人のユーザー（1 人は nginx にアクセスできるユーザー、もう 1 人はElasticsearchにアクセスできるユーザー）に対して認証を設定する必要があります。 これらのユーザーのパスワードファイルを作成するには、次のコマンドを入力します。
+**例2: Elasticsearch**
+nginxへのアクセス権を持つユーザーとElasticsearchへのアクセス権を持つユーザーの2人の認証を設定する必要があります。 これらのユーザーのパスワードファイルを作成するには、次のコマンドを入力します。
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticsearch
 ```
 
-#### ユーザーを追加
+#### 追加ユーザーの追加
 
-パスワード・ファイルに別のユーザーを追加するには、`root` 権限を持つユーザーとして次のコマンドを入力します。
+パスワードファイルに別のユーザーを追加するには、`root`権限を持つユーザーとして次のコマンドを入力します。
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/.htpasswd <username>
 ```
 
-### Apache との安全な通信
+### Apacheとの安全な通信
 
-この節では、[HTTP 基本認証 &#x200B;](https://httpd.apache.org/docs/2.2/howto/auth.html) の設定方法について説明します。 TLS と HTTP 基本認証を一緒に使用すると、Elasticsearch、OpenSearch またはアプリケーションサーバーとの通信がインターセプトされるのを防ぐことができます。
+この節では、[HTTP Basic認証](https://httpd.apache.org/docs/2.2/howto/auth.html)を設定する方法について説明します。 TLS認証とHTTP Basic認証を一緒に使用すると、ElasticsearchやOpenSearch、またはアプリケーションサーバーとの通信を誰もが傍受できなくなります。
 
-ここでは、Apache サーバーにアクセスできるユーザーを指定する方法について説明します。
+この節では、Apache サーバーにアクセスできるユーザーを指定する方法について説明します。
 
-1. テキストエディターを使用して、次の内容を安全な仮想ホストに追加します。
+1. テキストエディターを使用して、セキュアな仮想ホストに次のコンテンツを追加します。
 
-   * Apache 2.4:`/etc/apache2/sites-available/default-ssl.conf` を編集
+   * Apache 2.4: `/etc/apache2/sites-available/default-ssl.conf`を編集
 
    ```conf
    <Proxy *>
@@ -200,9 +200,9 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
    </Proxy>
    ```
 
-1. 上記のを安全な仮想ホストに追加した場合は、`Listen 8080` と、以前に追加した `<VirtualHost *:8080>` ディレクティブを安全でない仮想ホストに削除します。
+1. 前のディレクティブをセキュアな仮想ホストに追加した場合は、`Listen 8080`と前にセキュアでない仮想ホストに追加した`<VirtualHost *:8080>` ディレクティブを削除します。
 
-1. 変更を保存し、テキストエディターを終了して、Apache を再起動します。
+1. 変更を保存し、テキストエディターを終了して、Apacheを再起動します。
 
    * CentOS: `service httpd restart`
    * Ubuntu: `service apache2 restart`

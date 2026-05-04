@@ -1,56 +1,56 @@
 ---
-title: リモートストレージ用のAWS S3 バケットの設定
-description: Commerce プロジェクトを設定して、AWS S3 ストレージサービスをリモートストレージに使用します。
+title: リモートストレージ用AWS S3 バケットの設定
+description: リモートストレージにAWS S3 ストレージサービスを使用するようにCommerce プロジェクトを設定します。
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
 
-# リモートストレージ用のAWS S3 バケットの設定
+# リモートストレージ用AWS S3 バケットの設定
 
-[Amazon Simple Storage Service （Amazon S3） &#x200B;](https://aws.amazon.com/s3) は、業界をリードするスケーラビリティ、データ可用性、セキュリティ、パフォーマンスを提供するオブジェクトストレージサービスです。 AWS S3 サービスでは、データストレージにバケットつまりコンテナを使用します。 この設定では、_private_ バケットを作成する必要があります。 クラウドインフラストラクチャー上のAdobe Commerceについては、[&#x200B; クラウドインフラストラクチャー上のCommerceのリモートストレージの設定 &#x200B;](cloud-support.md) を参照してください。
+[Amazon Simple Storage Service （Amazon S3） ](https://aws.amazon.com/s3)は、業界をリードするスケーラビリティ、データ可用性、セキュリティ、パフォーマンスを提供するオブジェクト ストレージ サービスです。 AWS S3 サービスでは、データストレージにバケット（コンテナ）を使用します。 この設定では、_private_ バケットを作成する必要があります。 クラウド インフラストラクチャ上のAdobe Commerceについては、[ クラウド インフラストラクチャ上のCommerceのリモート ストレージの設定](cloud-support.md)を参照してください。
 
 >[!WARNING]
 >
->Adobeでは重大なセキュリティリスクがあるため、公開バケットの使用は避けるべきです。
+>Adobeは深刻なセキュリティリスクを引き起こすため、パブリックバケットの使用を強くお勧めしません。
 >
->お客様が提供する S3 バケットをアセットまたはメディアストレージ用に使用する場合、Adobeは、S3 バケットの設定、管理または操作に関連する問題、データ損失または停止に対して責任を負わず、サポートを提供しません。 S3 バケットのすべてのトラブルシューティングとメンテナンスは、お客様の単独の責任です。
+>お客様が提供するS3 バケットをアセットまたはメディアストレージに使用する場合、Adobeは、S3 バケットの設定、管理、または操作に関連する問題、データの損失、または停止について責任を負わず、サポートも提供しません。 S3 バケットのトラブルシューティングとメンテナンスはすべて、お客様の責任です。
 
-**AWS S3 アダプタでリモートストレージを有効にするには**:
+**AWS S3 アダプタでリモート ストレージを有効にするには**:
 
-1. Amazon S3 ダッシュボードにログインし、_プライベート_ バケットを作成します。
+1. Amazon S3 ダッシュボードにログインし、_private_ バケットを作成します。
 
-1. [AWS IAM](https://aws.amazon.com/iam/) ロールを設定します。 または、アクセスキーと秘密鍵を生成します。
+1. [AWS IAM](https://aws.amazon.com/iam/)の役割を設定します。 または、アクセスキーと秘密鍵を生成します。
 
 1. デフォルトのデータベースストレージを無効にします。
 
-   ```bash
+   ```shell
    bin/magento config:set system/media_storage_configuration/media_database 0
    ```
 
-1. プライベートバケットを使用するようにCommerceを設定します。 パラメーターの完全なリストについては、[&#x200B; リモートストレージオプション &#x200B;](remote-storage.md#remote-storage-options) を参照してください。
+1. プライベートバケットを使用するようにCommerceを設定します。 パラメーターの完全なリストについては、[ リモートストレージオプション ](remote-storage.md#remote-storage-options)を参照してください。
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
    ```
 
-1. メディア ファイルをリモート ストレージと同期します。
+1. メディアファイルをリモートストレージと同期します。
 
-   ```bash
+   ```shell
    bin/magento remote-storage:sync
    ```
 
-## Nginx の設定
+## Nginxの設定
 
 >[!NOTE]
 >
->このアプローチは、クラウドインフラストラクチャプロジェクトのAdobe Commerceには適用されません。 Nginx は、クラウドインフラストラクチャー上のAdobe Commerceでは設定できません。 詳しくは、[&#x200B; クラウド固有のドキュメント &#x200B;](cloud-support.md) を参照してください。
+>このアプローチは、Adobe Commerce on cloud インフラストラクチャプロジェクトには適用できません。 Adobe Commerce on cloud infrastructureでNginxを設定することはできません。 詳しくは、[ クラウド固有のドキュメント ](cloud-support.md)を参照してください。
 
-Nginx では、`proxy_pass` ディレクティブを使用して認証を実行するために追加の構成が必要です。 `nginx.conf` ファイルに次のプロキシ情報を追加します。
+Nginxでは、`proxy_pass` ディレクティブを使用して認証を実行するには、追加の設定が必要です。 次のプロキシ情報を`nginx.conf` ファイルに追加します。
 
 >nginx.conf
 
@@ -73,13 +73,13 @@ location ~* \.(ico|jpg|jpeg|png|gif|svg|js|css|swf|eot|ttf|otf|woff|woff2)$ {
 
 ### 認証
 
-[AWS IAM](https://aws.amazon.com/iam/) ロールの代わりにアクセス キーと秘密鍵を使用する場合は、[`ngx_aws_auth` Nginx モジュール &#x200B;](https://github.com/anomalizer/ngx_aws_auth) を含める必要があります。
+[AWS IAM](https://aws.amazon.com/iam/) ロールの代わりにアクセスキーと秘密鍵を使用する場合は、[`ngx_aws_auth` Nginx モジュール ](https://github.com/anomalizer/ngx_aws_auth)を含める必要があります。
 
 ### 権限
 
-S3 統合は、キャッシュされた画像を生成してローカルファイルシステムに保存する機能に依存しています。 したがって、`pub/media` および同様のディレクトリのフォルダーアクセス権は、ローカルストレージを使用する場合と S3 で同じです。
+S3統合は、キャッシュされた画像を生成してローカルファイルシステムに保存する機能に依存しています。 したがって、`pub/media`および類似のディレクトリに対するフォルダー権限は、ローカルストレージを使用する場合とS3に対して同じです。
 
 ### ファイル操作
 
-ファイルストレージのタイプに関係なく、コーディングまたは拡張機能開発で [!DNL Commerce] ファイルアダプタメソッドを使用することを強くお勧めします。 ストレージに S3 を使用する場合、S3 ファイルはファイルシステム内に配置されないので、`copy`、`rename`、`file_put_contents` などのネイティブの PHP ファイル I/O 操作を使用しないでください。 コード例については、[DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) を参照してください。
+ファイル ストレージの種類に関係なく、コーディングまたは拡張機能の開発で[!DNL Commerce] ファイル アダプターのメソッドを使用することを強くお勧めします。 S3 ファイルはファイルシステム内に存在しないため、ストレージにS3を使用する場合は、`copy`、`rename`、`file_put_contents`などのネイティブ PHP ファイル I/O操作を使用しないでください。 コード例については、[DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18)を参照してください。
 

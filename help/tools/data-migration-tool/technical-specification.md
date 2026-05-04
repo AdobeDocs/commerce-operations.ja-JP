@@ -1,34 +1,34 @@
 ---
-title: '[!DNL Data Migration Tool] 技術仕様'
-description: の実装の詳細と  [!DNL Data Migration Tool] Magento 1 とMagento 2 間でデータを転送する際の拡張方法について説明します。
+title: '[!DNL Data Migration Tool]技術仕様'
+description: ' [!DNL Data Migration Tool] の実装の詳細と、Magento 1とMagento 2間でデータを転送する際の拡張方法について説明します。'
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '2098'
+source-wordcount: '2113'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Migration Tool] 技術仕様
+# [!DNL Data Migration Tool]技術仕様
 
-この節では、実装 [!DNL Data Migration Tool] 詳細と機能の拡張方法について説明します。
+この節では、[!DNL Data Migration Tool]実装の詳細とその機能を拡張する方法について説明します。
 
 ## リポジトリ
 
-[!DNL Data Migration Tool] のソースコードにアクセスするには、GitHub [&#x200B; リポジトリ &#x200B;](https://github.com/magento/data-migration-tool) を参照してください。
+[!DNL Data Migration Tool] ソースコードにアクセスするには、GitHub [ リポジトリ ](https://github.com/magento/data-migration-tool)を参照してください。
 
 ## 必要システム構成
 
-[&#x200B; の &#x200B;](../../installation/system-requirements.md) 必要システム構成 [!DNL Data Migration Tool] は、Magento 2 の場合と同じです。
+[!DNL Data Migration Tool]の[必要システム構成](../../installation/system-requirements.md)は、Magento 2と同じです。
 
 ## 内部構造
 
 ### ディレクトリ構造
 
-次の図は、[!DNL Data Migration Tool] のディレクトリ構造を表しています。
+次の図は、[!DNL Data Migration Tool]のディレクトリ構造を表しています。
 
-```
+```shell
 ├── etc                                    --- all configuration files
 │   ├── opensource-to-opensource            --- configuration files for migration from Magento Open Source 1 to Magento Open Source 2
 │   │   ├── 1.9.1.1
@@ -103,13 +103,13 @@ ht-degree: 0%
 
 ## エントリポイント
 
-移行プロセスを実行するスクリプトは、`magento-root/bin/magento` にあります。
+移行プロセスを実行するスクリプトは次の場所にあります：`magento-root/bin/magento`。
 
 ## 設定
 
-設定 `config.xsd` ファイルのスキーマは、`etc/` ディレクトリにあります。 デフォルトの設定ファイル（`config.xml.dist`）は、Magento 1.x のバージョンごとに作成されます。`etc/` の下の別のディレクトリにあります。
+設定`config.xsd` ファイルのスキーマは、`etc/` ディレクトリにあります。 Magento 1.xの各バージョンに対して、デフォルトの設定ファイル（`config.xml.dist`）が作成されます。 `etc/`の下の別のディレクトリにあります。
 
-デフォルトの設定ファイルは、カスタムの設定ファイルに置き換えることができます（[&#x200B; コマンド構文 &#x200B;](migrate-data/overview.md#command-syntax) を参照）。
+デフォルトの設定ファイルは、カスタム設定ファイルに置き換えることができます（[ コマンド構文](migrate-data/overview.md#command-syntax)を参照）。
 
 設定ファイルの構造は次のとおりです。
 
@@ -156,55 +156,55 @@ ht-degree: 0%
 
 * 手順 – 移行中に処理されるすべての手順を説明します
 
-* ソース – データソースの設定。 使用可能なソースの種類：データベース
+* source - データソースの設定。 使用可能なソースタイプ：データベース
 
-* 宛先 – データ宛先の設定。 使用可能な宛先のタイプ : データベース
+* destination - データ宛先の設定。 使用可能な宛先タイプ：データベース
 
-* options - パラメーターのリスト。 必須（map_file、settings_map_file、bulk_size）とオプション（custom_option、resource_adapter_class_name、prefix_source、prefix_dest、log_file）の両方のパラメーターが含まれる
+* options - パラメーターのリスト。 必須（map_file、settings_map_file、bulk_size）およびオプション（custom_option、resource_adapter_class_name、prefix_source、prefix_dest、log_file）の両方のパラメーターを含みます
 
-Magentoがデータベーステーブルにプレフィックスと共にインストールされた場合は、プレフィックスのオプションを変更します。 Magento 1 およびMagento 2 データベース用に設定できます。 それに応じて、「source_prefix」および「dest_prefix」設定オプションを使用します。
+Magentoがデータベーステーブルのプレフィックスと共にインストールされている場合は、「プレフィックス」オプションを変更します。 これは、Magento 1およびMagento 2のデータベースに設定できます。 それに応じて、「source_prefix」および「dest_prefix」設定オプションを使用します。
 
-設定データには、`\Migration\Config` クラスでアクセスできます。
+設定データには、`\Migration\Config` クラスを使用してアクセスできます。
 
 ## 使用可能な操作の手順
 
 | 文書 | フィールド |
 |---|---|
-| `step` | Steps ノード内の第 2 レベルのノード。 関連するステップの説明は、`title` 属性で指定する必要があります。 |
-| `integrity` | 整合性チェックを行う PHP クラスを指定します。 テーブルフィールド名、タイプ、その他の情報を比較して、Magento 1 と 2 のデータ構造の間の互換性を確認します。 |
-| `data` | データチェックを行う PHP クラスを指定します。 Magento 1 からMagento 2 にテーブル単位でデータを転送します。 |
-| `volume` | ボリュームチェックを行う PHP クラスを指定します。 テーブル間のレコード数を比較して、転送が成功したことを確認します。 |
-| `delta` | 差分チェックを行う PHP クラスを指定します。 完全なデータ移行の後に、差分をMagento 1 からMagento 2 に転送します。 |
+| `step` | Steps ノード内の2番目のレベル ノード。 関連する手順の説明は、`title`属性で指定する必要があります。 |
+| `integrity` | 整合性チェックを担当するPHP クラスを指定します。 テーブルのフィールド名、タイプ、およびその他の情報を比較して、Magento 1と2のデータ構造の互換性を検証します。 |
+| `data` | データチェックを担当するPHP クラスを指定します。 Magento 1からMagento 2に、テーブルごとにデータを転送します。 |
+| `volume` | ボリュームチェックを担当するPHP クラスを指定します。 テーブル間のレコード数を比較して、転送が成功したことを確認します。 |
+| `delta` | 差分チェックを実行するPHP クラスを指定します。 完全なデータ移行後、Magento 1からMagento 2に差分を転送します。 |
 
 ## Source データベース情報属性
 
-| 文書 | フィールド | 必須？ |
+| 文書 | フィールド | 必要ですか？ |
 |---|---|---|
-| `name` | Magento 1 サーバーのデータベース名。 | はい |
-| `host` | Magento 1 サーバーのホスト IP アドレス。 | はい |
-| `port` | Magento 1 サーバーのポート番号。 | なし |
+| `name` | Magento 1 サーバのデータベース名。 | はい |
+| `host` | Magento 1 サーバーのIP アドレスをホストします。 | はい |
+| `port` | Magento 1 サーバのポート番号。 | いいえ |
 | `user` | Magento 1 データベースサーバーのユーザー名。 | はい |
-| `password` | Magento 1 データベースサーバーのパスワード。 | はい |
-| `ssl_ca` | SSL 認証局ファイルへのパス。 | なし |
-| `ssl_cert` | SSL 証明書ファイルへのパス。 | なし |
-| `ssl_key` | SSL キーファイルへのパス。 | なし |
+| `password` | Magento 1 データベース サーバーのパスワード。 | はい |
+| `ssl_ca` | SSL証明機関ファイルへのパス。 | いいえ |
+| `ssl_cert` | SSL証明書ファイルへのパス。 | いいえ |
+| `ssl_key` | SSL キーファイルへのパス。 | いいえ |
 
 ## 宛先データベース情報属性
 
-| 文書 | フィールド | 必須？ |
+| 文書 | フィールド | 必要ですか？ |
 |---|---|---|
 | `name` | Magento 2 サーバーのデータベース名。 | はい |
-| `host` | Magento 2 サーバーのホスト IP アドレス。 | はい |
-| `port` | Magento 2 サーバーのポート番号。 | なし |
-| `user` | Magento 2 データベースサーバーのユーザー名。 | はい |
-| `password` | Magento 2 データベースサーバーのパスワード。 | はい |
-| `ssl_ca` | SSL 認証局ファイルへのパス。 | なし |
-| `ssl_cert` | SSL 証明書ファイルへのパス。 | なし |
-| `ssl_key` | SSL キーファイルへのパス。 | なし |
+| `host` | Magento 2 サーバーのIP アドレスをホストします。 | はい |
+| `port` | Magento 2 サーバのポート番号。 | いいえ |
+| `user` | Magento 2 データベース サーバーのユーザー名。 | はい |
+| `password` | Magento 2 データベース サーバーのパスワード。 | はい |
+| `ssl_ca` | SSL証明機関ファイルへのパス。 | いいえ |
+| `ssl_cert` | SSL証明書ファイルへのパス。 | いいえ |
+| `ssl_key` | SSL キーファイルへのパス。 | いいえ |
 
-## TLS プロトコルを使用して接続
+## TLS プロトコルを使用した接続
 
-TLS プロトコルを使用して（つまり、公開/非公開暗号化キーを使用して） データベースに接続することもできます。 `database` 要素に次のオプションの属性を追加します。
+TLS プロトコルを使用してデータベースに接続することもできます（つまり、公開鍵と秘密鍵を使用します）。 次のオプション属性を`database`要素に追加します。
 
 * `ssl_ca`
 * `ssl_cert`
@@ -221,17 +221,17 @@ TLS プロトコルを使用して（つまり、公開/非公開暗号化キー
 </destination>
 ```
 
-## ステップ内部
+## ステップインターナル
 
-移行プロセスは次の手順で構成されます。
+移行プロセスは手順で構成されます。
 
-ステップは、一部の分離されたデータの移行に必要な機能を提供する単位です。 ステップは、1 つ以上のステージ（整合性チェック、データ、ボリューム・チェック、差分）で構成できます。
+ステップは、分離されたデータの移行に必要な機能を提供するユニットです。 ステップは、1つ以上のステージ（整合性チェック、データ、ボリュームチェック、デルタ）で構成できます。
 
-デフォルトでは、いくつかの手順（[Map](#map-step)、[EAV](#eav)、[URL Rewrites](#url-rewrite-step) など）があります。 オプションで、独自の手順も追加できます。
+デフォルトでは、いくつかの手順（[Map](#map-step)、[EAV](#eav)、[URL書き換え](#url-rewrite-step)など）があります。 また、独自のステップを追加することもできます。
 
 ステップ関連のクラスは、src/Migration/Step ディレクトリにあります。
 
-Step クラスを実行するには、クラスを config.xml ファイルで定義する必要があります。
+ステップクラスを実行するには、クラスをconfig.xml ファイルで定義する必要があります。
 
 ```xml
 <config xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="config.xsd">
@@ -247,7 +247,7 @@ Step クラスを実行するには、クラスを config.xml ファイルで定
 </config>
 ```
 
-すべてのステージクラスは、StageInterface を実装する必要があります。
+各ステージクラスはStageInterfaceを実装する必要があります。
 
 ```php
 class StageClass implements StageInterface
@@ -263,11 +263,11 @@ class StageClass implements StageInterface
 }
 ```
 
-データステージがロールバックをサポートしている場合は、`RollbackInterface` インターフェイスを実装する必要があります。
+データ段階でロールバックがサポートされている場合は、`RollbackInterface` インターフェイスを実装する必要があります。
 
-実行中のステップのビジュアライゼーションは、Symfony の ProgressBar コンポーネントによって提供されます（[&#x200B; プログレスバー &#x200B;](https://symfony.com/doc/current/components/console/helpers/progressbar.html) を参照）。 このコンポーネントには、LogLevelProcessor として手順の中でアクセスします。
+実行中のステップのビジュアライゼーションは、SymfonyのProgressBar コンポーネントによって提供されます（[ プログレスバー](https://symfony.com/doc/current/components/console/helpers/progressbar.html)を参照）。 このコンポーネントには、LogLevelProcessorとして手順でアクセスします。
 
-主な使用方法を次に示します。
+主な使用方法は次のとおりです。
 
 ```xml
 $this->progress->start();
@@ -279,38 +279,38 @@ $this->progress->finish();
 
 ### 整合性チェック
 
-各手順で、データソースの構造（デフォルトではMagento 1）とデータ送信先の構造（Magento 2）に互換性があることを確認する必要があります。 そうでない場合 – 互換性のないエンティティに関してエラーが表示されます。 フィールドのデータタイプが異なる場合（Magento 1 とMagento 2 の整数で同じフィールドの 10 進数データタイプがある場合）、警告メッセージが表示されます（マップファイルで説明されている場合を除く）。
+各ステップでは、データソースの構造（デフォルトではMagento 1）とデータ先の構造（Magento 2）が互換性があるかどうかを確認する必要があります。 そうでない場合 – 互換性のないエンティティを含むエラーが表示されます。 フィールドのデータ型が異なる場合（同じフィールドのデータ型がMagento 1の10進数データ型で、Magento 2の整数である場合）、警告メッセージが表示されます（マップファイルでカバーされている場合を除く）。
 
 ### データ転送
 
-整合性チェックに合格した場合、データ転送は実行中です。 エラーが表示された場合は、ロールバックが実行されて、Magento 2 が以前の状態に戻ります。 ステップクラスが `RollbackInterface` インターフェイスを実装する場合、エラーが発生するとロールバックメソッドが実行されます。
+整合性チェックに合格した場合、データの転送は実行中です。 エラーが表示された場合は、ロールバックが実行され、Magento 2の以前の状態に戻ります。 ステップクラスが`RollbackInterface` インターフェイスを実装する場合、エラーが発生するとロールバックメソッドが実行されます。
 
 ### ボリュームチェック
 
-データ移行後に、ボリュームチェックを使用すると、すべてのデータが正しく転送されたかどうかを確認できます。
+データが移行された後、ボリュームチェックでは、すべてのデータが正しく転送されたかどうかの追加チェックが行われます。
 
-### Delta 配信
+### 差分配信
 
-メイン移行後に追加された残りのデータは、差分機能によって配信されます。
+デルタ機能は、メイン移行後に追加された残りのデータを配信する役割を担います。
 
 ## 実行モード
 
-ツールは、特に次の 3 つの異なるモードで実行する必要があります。
+このツールは、3つのモードで実行する必要があります。
 
 1. 設定 – システム設定の移行
 1. データ – データの主な移行
-1. delta - メイン移行後に追加された残りのデータの移行
+1. 差分 – メイン移行後に追加された残りのデータの移行
 
-各モードには、実行する独自のステップのリストがあります。 config.xml を参照
+各モードには、実行する手順のリストが独自に用意されています。 config.xmlを参照してください
 
 ### 設定の移行モード
 
-このツールの設定移行モードは、次のエンティティの転送に使用されます：
+このツールの設定の移行モードは、次のエンティティの転送に使用されます。
 
-1. Web サイト、ストア、ストアビュー。
-1. ストア設定（主に M2 でのストア/設定、または M1 でのシステム/設定）
+1. web サイト、実店舗、ストアビュー：
+1. ストア設定（主にM2のストア/設定またはM1のシステム/設定）
 
-すべてのストア設定では、データがデータベース内の core_config_data テーブルに保持されます。 settings.xml ファイルには、移行プロセス中に適用されるこのテーブルのルールが含まれています。 このファイルは、無視、名前変更、または値の変更が必要な設定を記述します。 settings.xml ファイルの構造は次のとおりです。
+すべてのストア設定では、データはデータベースのcore_config_data テーブルに保持されます。 settings.xml ファイルには、移行プロセス中に適用されるこのテーブルのルールが含まれています。 このファイルは、無視、名前の変更、または値の変更が必要な設定を記述します。 settings.xml ファイルの構造は次のとおりです。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -333,19 +333,19 @@ $this->progress->finish();
 </settings>
 ```
 
-ノード `<key>` には、`core_config_data` テーブルの「path」列を操作するルールがあります。 `<ignore>` のルールにより、ツールは一部の設定を転送できません。 このノードではワイルドカードを使用できます。 `<ignore>` ノードにリストされていないその他の設定はすべて移行されます。 Magento 2 で設定へのパスが変更された場合は、`//key/rename` のノードに追加してください。ここで、古いパスは `//key/rename/path` のノードを示し、新しいパスは `//key/rename/to` のノードを示します。
+ノード `<key>`の下には、`core_config_data` テーブルの「パス」列で動作するルールがあります。 `<ignore>`個のルールにより、ツールが一部の設定を転送できません。 このノードでは、ワイルドカードを使用できます。 `<ignore>` ノードにリストされていない他のすべての設定が移行されます。 Magento 2で設定へのパスが変更された場合は、`//key/rename` ノードに追加する必要があります。このノードでは、古いパスは`//key/rename/path` ノードで示され、新しいパスは`//key/rename/to` ノードで示されます。
 
-ノード `<value>` の下には、`core_config_data` テーブルの「value」列で動作するルールがあります。 これらのルールは、ハンドラー（`Migration\Handler\HandlerInterface` を実装するクラス）によって設定の値を変換し、Magento 2 に合わせて調整することを目的としています。
+ノード `<value>`の下には、`core_config_data` テーブルの「value」列で動作するルールがあります。 これらのルールは、ハンドラー（`Migration\Handler\HandlerInterface`を実装するクラス）によって設定の値を変換し、Magento 2に適応させることを目的としています。
 
 ### データ移行モード
 
-このモードでは、ほとんどのデータが移行されます。 データを移行する前に、整合性チェックステージが各手順で実行されます。 整合性チェックに合格すると、[!DNL Data Migration Tool] は（プレフィックス `m2_cl_*` が付いた） deltalog テーブルと対応するトリガーをMagento 1 データベースにインストールし、ステップのデータ移行ステージを実行します。 移行がエラーなしで完了すると、ボリュームチェックがデータの整合性をチェックします。 ライブストアを移行すると、警告メッセージが表示される場合があります。 デルタ移行では、この増分データが処理されるので、心配する必要はありません。 最も役に立つ移行手順は、マップ、URL 書き換え、EAV です。
+このモードでは、ほとんどのデータが移行されます。 データ移行前に、整合性チェックの各ステージが実行されます。 整合性チェックに合格すると、[!DNL Data Migration Tool]はdeltalog テーブル （プレフィックス `m2_cl_*`を含む）と対応するトリガーをMagento 1 データベースにインストールし、手順のデータ マイグレーション ステージを実行します。 エラーなしで移行が完了すると、ボリュームチェックでデータの一貫性がチェックされます。 ライブストアを移行すると、警告メッセージが表示される場合があります。 デルタ移行では、この増分データを処理します。 最も価値のある移行手順は、マップ、URL書き換え、EAVです。
 
-#### マップ ステップ
+#### マップステップ
 
-マップステップは、ほとんどのデータをMagento 1 からMagento 2 に転送する役割を果たします。 この手順は、`etc/` ディレクトリにある map.xml ファイルから手順を読み取ります。 このファイルは、ソース（Magento 1）と宛先（Magento 2）のデータ構造の違いを示しています。 Magento 1 に、Magento 2 に存在しない拡張機能に属するテーブルまたはフィールドが含まれている場合、これらのエンティティをここに配置して、マップステップで無視できます。 それ以外の場合は、エラーメッセージが表示されます。
+マップステップは、Magento 1からMagento 2へのほとんどのデータ転送を担当します。 この手順では、（`etc/` ディレクトリにある） map.xml ファイルから手順を読み取ります。 このファイルは、ソース（Magento 1）と宛先（Magento 2）のデータ構造の違いを説明します。 Magento 1に、Magento 2に存在しない拡張機能に属するテーブルまたはフィールドが含まれている場合、これらのエンティティをここに配置してマップステップで無視できます。 それ以外の場合は、エラーメッセージが表示されます。
 
-マップ ファイルには次の形式があります。
+マップファイルには次の形式があります。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -401,47 +401,47 @@ $this->progress->finish();
 
 領域：
 
-* *source* - ソースデータベースのルールを含みます
+* *source* - ソースデータベースのルールが含まれています
 
-* *destination* – 宛先データベースのルールが含まれます
+* *destination* – 宛先データベースのルールが含まれています
 
 オプション：
 
-* *ignore* – このオプションでマークされたドキュメント、フィールド、またはデータタイプは無視されます
+* *ignore* – このオプションでマークされた文書、フィールド、またはデータタイプは無視されます
 
-* *rename* – 異なる名前を持つドキュメント間の名前リレーションを記述します。 宛先ドキュメント名がソースドキュメント名と異なる場合は、名前変更オプションを使用して、宛先テーブル名と同様のソースドキュメント名を設定できます
+* *名前を変更* – 異なる名前のドキュメント間の名前の関係について説明します。 コピー先のドキュメント名がコピー元のドキュメントと同じでない場合は、「名前を変更」オプションを使用して、コピー先のテーブル名と同様のコピー元のドキュメント名を設定できます
 
-* *移動* – 指定したフィールドをソースドキュメントからターゲットドキュメントに移動するためのルールを設定します。 メモ：宛先ドキュメント名は、ソースドキュメント名と同じである必要があります。 移動元と移動先のドキュメントの名前が異なる場合 – 移動したフィールドを含むドキュメントには、名前の変更オプションを使用する必要があります
+* *move* – 指定したフィールドをソース ドキュメントから移動先ドキュメントに移動するルールを設定します。 メモ：宛先ドキュメント名は、ソースドキュメント名と同じである必要があります。 ソースと宛先のドキュメント名が異なる場合は、移動したフィールドを含むドキュメントに名前変更オプションを使用する必要があります
 
-* *transform* - ハンドラーに記載されている動作に従ってフィールドを移行できるオプション
+* *transform* - ハンドラーで説明されている動作に従ってフィールドを移行できるオプションです
 
-* *handler* - フィールドの変換動作を記述します。 ハンドラーを呼び出すには、`<handler>` タグにハンドラークラス名を指定する必要があります。 パラメーター名と値データを持つ `<param>` タグを使用して、ハンドラーに渡します
+* *handler* - フィールドの変換動作について説明します。 ハンドラーを呼び出すには、`<handler>` タグでハンドラークラス名を指定する必要があります。 パラメーター名と値データで`<param>` タグを使用して、ハンドラーに渡します
 
-**Source** 利用可能な操作：
-
-| 文書 | フィールド |
-|--- |--- |
-| 名前変更を無視 | 移動変換を無視 |
-
-**宛先** 使用可能な操作：
+**Source**&#x200B;の使用可能な操作：
 
 | 文書 | フィールド |
 |--- |--- |
-| 無視 | 変換を無視 |
+| 名前変更を無視 | 変形を無視 |
+
+**宛先**&#x200B;の使用可能な操作：
+
+| 文書 | フィールド |
+|--- |--- |
+| 無視 | 変形を無視 |
 
 #### ワイルドカード
 
-類似部品（`document_name_1`、`document_name_2`）を含むドキュメントを無視するには、ワイルドカード機能を使用します。 繰り返しパート（`*`）の代わりに `document_name_*` の記号を入れると、このマスクに一致するすべてのソースドキュメントまたはターゲットドキュメントがこのマスクで覆われます。
+類似の部分（`document_name_1`、`document_name_2`）を持つドキュメントを無視するには、ワイルドカード機能を使用できます。 繰り返し部分（`document_name_*`）の代わりに`*`記号を付けます。このマスクは、このマスクに一致するすべてのソースまたは宛先ドキュメントをカバーします。
 
-#### URL 書き換え手順
+#### URL書き換えステップ
 
-Magento 1 で開発された様々なアルゴリズムの中に、Magento 2 と互換性がないものが多いため、この手順は複雑です。 Magento 1 のバージョンが異なれば、異なるアルゴリズムを使用できます。 したがって、Step/UrlRewrite フォルダーには、特定のバージョンのMagento用に開発されたクラスがあり、Migration\Step\UrlRewrite\Version191to2000はその 1 つです。 URL 書き換えデータをMagento 1.9.1 からMagento 2 に転送できます。
+Magento 1で開発されたMagento 2と互換性のない様々なアルゴリズムが数多くあるため、この手順は複雑です。 Magento 1のバージョンごとに、異なるアルゴリズムを使用できます。 したがって、Step/UrlRewrite フォルダーの下には、Magentoの特定のバージョンのために開発されたクラスがあり、Migration\Step\UrlRewrite\Version191to2000はその1つです。 Magento 1.9.1からMagento 2にURL書き換えデータを転送できます。
 
 #### EAV ステップ
 
-この手順により、すべての属性（製品、顧客、RMA）がMagento 1 からMagento 2 に転送されます。 データの処理の特定のケースに対して、map.xml ファイルのルールと類似したルールを含む map-eav.xml ファイルを使用します。
+このステップでは、すべての属性（product、customer、RMA）をMagento 1からMagento 2に転送します。 データ処理の特定のケースに対して、map.xml ファイル内のルールと類似したルールを含むmap-eav.xml ファイルを使用します。
 
-この手順で処理されるテーブルの一部：
+手順で処理されるテーブルの一部：
 
 * `eav_attribute`
 * `eav_attribute_group`
@@ -451,21 +451,21 @@ Magento 1 で開発された様々なアルゴリズムの中に、Magento 2 と
 * `customer_eav_attribute`
 * `eav_entity_type`
 
-### 差分移行モード
+### Delta移行モード
 
-メイン移行後に、（ストアフロントのお客様などによって）Magento 1 データベースにデータが追加される場合がありました。 このデータをトラッキングするために、移行プロセスの最初に、テーブルのデータベーストリガーを設定します。 詳しくは、[&#x200B; サードパーティの拡張機能で作成されたデータを移行する &#x200B;](migrate-data/delta.md#migrate-data-created-by-third-party-extensions) を参照してください。
+メインマイグレーションの後、Magento 1 データベース（ストアフロントのお客様など）に追加のデータが追加された可能性があります。 このデータをトラッキングするには、移行プロセスの開始時に、テーブルのデータベーストリガーを設定します。 詳しくは、[ サードパーティの拡張機能によって作成されたデータの移行](migrate-data/delta.md#migrate-data-created-by-third-party-extensions)を参照してください。
 
 ## データソース
 
-Magento 1 およびMagento 2 のデータソースにアクセスし、そのデータを使用して操作（select、update、insert、delete）するには、リソースフォルダーに多くのクラスがあります。 Migration\ResourceModel\Sourceおよび Migration\ResourceModel\Destination がメインクラスです。 すべての移行手順でデータの操作に使用されます。 このデータは、Migration\ResourceModel\Document、Migration\ResourceModel\Record、Migration\ResourceModel\Structure などのクラスに含まれています。
+Magento 1およびMagento 2のデータソースにアクセスし、そのデータを使用して操作（選択、更新、挿入、削除）するには、リソースフォルダーに多くのクラスがあります。 Migration\ResourceModel\SourceとMigration\ResourceModel\Destinationはメインのクラスです。 あらゆる移行手順で、データを操作するために利用できます。 このデータは、Migration\ResourceModel\Document、Migration\ResourceModel\Record、Migration\ResourceModel\Structureなどのクラスに含まれています。
 
-次に、これらのクラスのクラス図を示します。
+以下に、これらのクラスのクラス図を示します。
 
-![&#x200B; 移行ツールのデータ構造 &#x200B;](../../assets/data-migration/MmigrationToolDataStructure.png)
+![移行ツール データ構造](../../assets/data-migration/MmigrationToolDataStructure.png)
 
 ## ログ
 
-移行プロセスの出力を実装し、可能なすべてのレベルを制御するために、Magentoで使用される PSR ロガーが適用されます。 `\Migration\Logger\Logger` クラスは、ログ機能を提供するために実装されました。 ロガーを使用するには、コンストラクターの依存関係の挿入を使用してロガーを挿入する必要があります。
+移行プロセスの出力を実装し、Magentoで使用されるすべての可能なレベル PSR ロガーを制御するために、適用されます。 ログ機能を提供するために`\Migration\Logger\Logger` クラスが実装されました。 ロガーを使用するには、コンストラクター依存関係インジェクションを使用してロガーをインジェクトする必要があります。
 
 ```php
 class SomeClass
@@ -481,7 +481,7 @@ class SomeClass
 }
 ```
 
-その後、このクラスを使用していくつかのイベントのログを記録できます。
+その後、このクラスを使用して一部のイベントのログを記録できます。
 
 ```php
 $this->logger->info("Some information message");
@@ -490,13 +490,13 @@ $this->logger->error("Message about error operation");
 $this->logger->warning("Some warning message");
 ```
 
-ログ情報の書き込み先をカスタマイズできる場合があります。 これを行うには、logger の pushHandler （） メソッドを使用して logger にハンドラーを追加します。 各ハンドラーは、インターフェイス `\Monolog\Handler\HandlerInterface` 実装する必要があります。 現時点では、次の 2 つのハンドラーがあります。
+ログ情報を書き込む場所をカスタマイズすることもできます。 これは、ロガーのpushHandler （） メソッドを使用してロガーにハンドラーを追加することで可能です。 各ハンドラーは`\Monolog\Handler\HandlerInterface` インターフェイスを実装する必要があります。 今のところ、2つのハンドラーがあります。
 
-* ConsoleHandler: メッセージをコンソールに書き込む
+* ConsoleHandler: メッセージをコンソールに書き込みます
 
-* FileHandler:「log_file」設定オプションで指定されたログファイルにメッセージを書き込む
+* FileHandler: &quot;log_file&quot;設定オプションで設定されたログファイルにメッセージを書き込みます
 
-また、任意の追加ハンドラーを実装することもできます。 Magento フレームワークには一連のハンドラーがあります。 ロガーにハンドラーを追加する例は次のとおりです。
+また、追加のハンドラーを実装することも可能です。 Magento フレームワークには一連のハンドラーがあります。 ロガーにハンドラーを追加する例：
 
 ```php
 // $this->consoleHandler is the object of Migration\Logger\ConsoleHandler class
@@ -504,7 +504,7 @@ $this->logger->warning("Some warning message");
 $this->logger->pushHandler($this->consoleHandler);
 ```
 
-ロガー（現在のモード、テーブル名）の追加データを設定するには、ロガープロセッサーを使用します。 既存のプロセッサ（MessageProcessor）が 1 つあります。 これは、メッセージをログに記録するための「追加」データを追加するために作成され、ログメソッドが実行されるたびに呼び出されます。 MessageProcessor が、「mode」、「stage」、「step」、「table」の空の値を含む$extra var を保護しました。 追加のデータは、ログメソッドの 2 番目のパラメーター（コンテキスト）としてプロセッサーに渡すことができます。 現在、追加のデータセットは、AbstractStep->runStage （現在のモード、ステージ、ステップをプロセッサーに渡す）メソッドおよび logger->debug メソッド（移行テーブル名を渡す）を使用するデータクラスのプロセッサーに渡されます。 ロガーにプロセッサーを追加する例：
+ロガー（現在のモード、テーブル名）の追加データを設定するには、ロガープロセッサーを使用できます。 既存のプロセッサ（MessageProcessor）が1つあります。 これは、メッセージをログに記録するための「追加」データを追加するために作成され、ログメソッドが実行されるたびに呼び出されます。 MessageProcessorが$extra varを保護しました。このvarには、&#39;mode&#39;、&#39;stage&#39;、&#39;step&#39;および&#39;table&#39;の空の値が含まれています。 余分なデータは、ログメソッドの2番目のパラメーター（コンテキスト）としてプロセッサーに渡すことができます。 現在、AbstractStep->runStage （現在のモード、ステージ、およびステップをプロセッサーに渡す）メソッドおよびlogger->debug メソッドを使用するデータクラス （移行テーブル名を渡す）のプロセッサーに追加のデータセットが追加されています。 ロガーにプロセッサーを追加する例：
 
 ```php
 // $this->processoris the object of Migration\Logger\messageProcessor class
@@ -513,34 +513,34 @@ $this->logger->pushProcessor([$this->processor, 'setExtra']);
 // As a second array value you need to pass method that should be executed when processor called
 ```
 
-冗長レベルを設定する可能性があります。 今のところ、次の 3 つのレベルがあります。
+冗長さのレベルを設定する可能性があります。 今のところ、3つのレベルがあります：
 
-* `ERROR` （エラーのみをログに書き込みます）
-* `INFO` （重要な情報のみがログに書き込まれます。デフォルト値）
-* `DEBUG` （すべてが書かれています）
+* `ERROR` （ログにエラーのみを書き込む）
+* `INFO` （重要な情報のみがログに書き込まれます。既定値）
+* `DEBUG` （すべてが書き込まれます）
 
-メソッドを呼び出して、各ハンドラーの詳細ログレベル `setLevel()` 個別に設定できます。 コマンドラインパラメーターを使用して詳細レベルを設定する場合は、アプリケーションの起動時に「verbose」オプションを変更する必要があります。
+冗長ログレベルは、`setLevel()` メソッドを呼び出して、各ハンドラーに個別に設定できます。 コマンドラインパラメーターを使用して冗長レベルを設定する場合は、アプリケーション起動時に「冗長」オプションを変更する必要があります。
 
-ログメッセージの書式は、モノログフォーマッターで設定できます。 フォーマッター機能を有効にするには、`setFormatter()` メソッドを使用してログハンドラーを指定する必要があります。 現在、メッセージ処理中に（ハンドラーから実行される `MessageFormatter` メソッドを使用して）特定の形式（冗長レベルに依存します）を設定するフォーマッタークラス（`format()`）が 1 つあります。
+モノログフォーマッタを使用してログメッセージをフォーマットできます。 フォーマッター機能を機能させるには、`setFormatter()` メソッドを使用してログハンドラーを指定する必要があります。 現在、メッセージの処理中（ハンドラーから実行される`format()` メソッドを通じて）に特定の形式を設定するフォーマッタークラス （`MessageFormatter`）が1つあります。
 
-ロガーの操作（ハンドラーとプロセッサーの追加）と詳細モードでの処理は、`process()` クラスの `Migration\Logger\Manager` メソッドで実行されます。 メソッドは、アプリケーションの起動時に呼び出されます。
+ロガーの操作（ハンドラーとプロセッサーの追加）と詳細モードでの処理は、`Migration\Logger\Manager` クラスの`process()` メソッドで実行されます。 メソッドは、アプリケーションの開始時に呼び出されます。
 
 ## 自動テスト
 
-[!DNL Data Migration Tool] には 3 種類のテストがあります。
+[!DNL Data Migration Tool]には3種類のテストがあります。
 
 * 静的
-* 単位
+* ユニット
 * 統合
 
-これらはツールの `tests/` ディレクトリにあり、テストの種類と同じです（単体テストは `tests/unit` ディレクトリにあります）。 テストを開始するには、phpunit がインストールされている必要があります。 現在のディレクトリをテストディレクトリに変更し、phpunit を起動します。 例：
+これらは、ツールの`tests/` ディレクトリにあります。これは、テストのタイプと同じです（単体テストは`tests/unit` ディレクトリにあります）。 テストを起動するには、phpunitをインストールしておく必要があります。 現在のディレクトリをテストディレクトリに変更し、phpunitを起動します。 例：
 
-```bash
+```shell
 [10:32 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool]-[git master]
 $ cd tests/unit
 ```
 
-```bash
+```shell
 [10:33 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool/tests/unit]-[git master]
 $ phpunit
 PHPUnit 8.1.0 by Sebastian Bergmann.

@@ -1,48 +1,48 @@
 ---
-title: 自動的にマスタ データベースを構成する
+title: マスターデータベースの自動設定
 description: 分割データベースソリューションの自動設定に関するガイダンスを参照してください。
 recommendations: noCatalog
 exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 1%
 
 ---
 
-# 自動的にマスタ データベースを構成する
+# マスターデータベースの自動設定
 
 {{ee-only}}
 
 {{deprecate-split-db}}
 
-このトピックでは、次の方法で分割データベース・ソリューションを開始する方法について説明します。
+このトピックでは、次の方法でスプリットデータベースソリューションを開始する方法について説明します。
 
-1. 1 つのマスターデータベース（`magento` という名前）を使用したAdobe Commerceのインストール
-1. チェックアウトと OMS 用の 2 つの追加のマスターデータベースの作成（`magento_quote` と `magento_sales` という名前）
-1. チェックアウトおよび販売データベースを使用するためのAdobe Commerceの設定
+1. 1つのマスターデータベース （`magento`という名前）にAdobe Commerceをインストールしています
+1. チェックアウトおよびOMS用に2つの追加のマスターデータベースを作成しています（`magento_quote`および`magento_sales`）
+1. チェックアウトデータベースとセールスデータベースを使用するためのAdobe Commerceの設定
 
 >[!INFO]
 >
->このガイドでは、3 つのデータベースがすべてCommerce アプリケーションと同じホスト上にあり、`magento`、`magento_quote` および `magento_sales` という名前であることを前提としています。 ただし、データベースの場所とデータベースの名前はユーザーが選択できます。 私たちの例が指示に従いやすくなることを願っています。
+>このガイドでは、3つのデータベースがすべてCommerce アプリケーションと同じホスト上にあり、名前が`magento`、`magento_quote`、`magento_sales`であると仮定しています。 ただし、データベースの場所と名前を指定する場所は、ユーザーが選択します。 私たちの例が指示を従いやすくすることを願っています。
 
 ## Adobe Commerce ソフトウェアのインストール
 
-分割データベースは、Adobe Commerce ソフトウェアのインストール後、いつでも有効にすることができます。つまり、既にチェックアウトと注文のデータがあるAdobe Commerce システムに分割データベースを追加できます。 Adobe Commerceの README または [&#x200B; インストールガイド &#x200B;](../../installation/overview.md) の手順に従って、1 つのマスターデータベースを使用してAdobe Commerce ソフトウェアをインストールします。
+Adobe Commerce ソフトウェアをインストールした後は、いつでも分割データベースを有効にできます。つまり、チェックアウトおよび注文データを既に持つAdobe Commerce システムに分割データベースを追加できます。 Adobe Commerce READMEまたは[ インストールガイド ](../../installation/overview.md)の手順に従って、1つのマスターデータベースを使用してAdobe Commerce ソフトウェアをインストールします。
 
-## 追加のマスターデータベースを設定する
+## 追加のマスターデータベースの設定
 
-チェックアウトおよび OMS マスターデータベースを次のように作成します。
+次のように、チェックアウトとOMS マスターデータベースを作成します。
 
-1. 任意のユーザーとしてデータベースサーバーにログインします。
-1. 次のコマンドを入力して、MySQL コマンドプロンプトを表示します。
+1. 任意のユーザーとしてデータベース・サーバにログインします。
+1. 次のコマンドを入力して、MySQL コマンドプロンプトにアクセスします。
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
 1. プロンプトが表示されたら、MySQL `root` ユーザーのパスワードを入力します。
-1. 次のコマンドを表示されている順序で入力して、同じユーザー名とパスワードを持つ `magento_quote` および `magento_sales` という名前のデータベース・インスタンスを作成します。
+1. 同じユーザー名とパスワードを使用して`magento_quote`と`magento_sales`という名前のデータベース インスタンスを作成するには、次のコマンドを順に入力します。
 
    ```shell
    create database magento_quote;
@@ -60,13 +60,13 @@ ht-degree: 1%
    GRANT ALL ON magento_sales.* TO magento_sales@localhost IDENTIFIED BY 'magento_sales';
    ```
 
-1. コマンドプロンプトを終了するには、`exit` と入力します。
+1. コマンド プロンプトを終了するには、`exit`と入力します。
 
-1. データベースを 1 つずつ検証します。
+1. データベースを1つずつ確認します。
 
-   データベースのチェックアウト：
+   チェックアウトデータベース：
 
-   ```bash
+   ```shell
    mysql -u magento_quote -p
    ```
 
@@ -74,9 +74,9 @@ ht-degree: 1%
    exit
    ```
 
-   受注管理システム・データベース：
+   注文管理システムデータベース：
 
-   ```bash
+   ```shell
    mysql -u magento_sales -p
    ```
 
@@ -84,56 +84,56 @@ ht-degree: 1%
    exit
    ```
 
-   MySQL モニターが表示された場合は、データベースが正しく作成されています。 エラーが表示された場合は、上記のコマンドを繰り返します。
+   MySQL モニターが表示される場合は、データベースを適切に作成しました。 エラーが表示された場合は、上記のコマンドを繰り返します。
 
 ## マスターデータベースを使用するようにCommerceを設定する
 
-合計 3 つのマスターデータベースを設定した後、コマンドラインを使用して、Commerceでそれらを使用するように設定します。 （このコマンドは、データベース接続を設定し、マスターデータベース間でテーブルを配布します）。
+合計3つのマスターデータベースを設定した後、コマンドラインを使用してCommerceを設定し、それらを使用します。 （このコマンドは、データベース接続を設定し、マスターデータベース間でテーブルを配布します）。
 
-### 最初の手順
+### 最初のステップ
 
-CLI コマンドにログインして実行するには、[&#x200B; コマンドの実行 &#x200B;](../cli/config-cli.md#running-commands) を参照してください。
+ログインしてCLI コマンドを実行するには、[ コマンドの実行](../cli/config-cli.md#running-commands)を参照してください。
 
 ### チェックアウトデータベースの設定
 
-コマンド構文：
+コマンドの構文：
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
 以下に例を挙げます。
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote --host="localhost" --dbname="magento_quote" --username="magento_quote" --password="magento_quote"
 ```
 
-セットアップが正常に完了したことを確認する次のメッセージが表示されます。
+設定が正常に完了したことを確認するには、次のメッセージが表示されます。
 
-```
+```text
 Migration has been finished successfully!
 ```
 
-### OMS データベースの構成
+### OMS データベースの設定
 
-コマンド構文：
+コマンドの構文：
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
 以下に例を挙げます。
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales --host="localhost" --dbname="magento_sales" --username="magento_sales" --password="magento_sales"
 ```
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
-セットアップが正常に完了したことを確認する次のメッセージが表示されます。
+設定が正常に完了したことを確認するには、次のメッセージが表示されます。
 
-```
+```text
 Migration has been finished successfully!
 ```

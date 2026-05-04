@@ -1,46 +1,46 @@
 ---
-title: ACSD-64431：リクエストのクーポンコードを含む「placeOrder」ミューテーションで、内部サーバーエラーがスローされる
-description: ACSD-64431 パッチを適用すると、リクエストにクーポンコード情報を含む「placeOrder」ミューテーションが、注文を正常に行わずに内部サーバーエラーをスローするAdobe Commerceの問題を修正できます。
+title: 'ACSD-64431: リクエスト内のクーポンコードを持つ「placeOrder」の突然変異が内部サーバーエラーをスローする'
+description: ACSD-64431 パッチを適用して、リクエスト内のクーポンコード情報を含む「placeOrder」変異が注文を正常に配置する代わりに内部サーバーエラーをスローするAdobe Commerceの問題を修正します。
 feature: GraphQL, Orders, Promotions/Events
 role: Admin, Developer
 exl-id: 13918f3e-842b-4b2e-b2e2-2d8add542a87
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
 
-# ACSD-64431：リクエストのクーポンコードを含む「placeOrder」ミューテーションで、内部サーバーエラーがスローされる
+# ACSD-64431: リクエスト内のクーポンコードを持つ「placeOrder」の突然変異が内部サーバーエラーをスローする
 
-ACSD-64431 パッチは、リクエスト内にクーポンコード情報を含む `placeOrder` ームバリエーションが、注文を正常に行わずに内部サーバーエラーをスローする問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 がインストールされている場合に使用できます。 パッチ ID は ACSD-64431 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-64431 パッチは、リクエストにクーポンコード情報を含む`placeOrder`の突然変異が、注文を正常に配置する代わりに内部サーバーエラーをスローする問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61がインストールされている場合に利用できます。 パッチ IDはACSD-64431です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7-p3
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7 - 2.4.7-p4
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-リクエストにクーポンコード情報を含む `placeOrder` の突然変異は、注文を正常に行うのではなく、内部エラーをスローします。
+リクエストにクーポンコード情報が含まれている`placeOrder`の突然変異は、注文を正常に配置する代わりに、内部エラーをスローします。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. _SKU 2836611_ を使用してシンプルな製品を作成します。
-1. **[!UICONTROL Cart Price Rule]** を作成し、**[!UICONTROL Coupon]** を `Specific Coupon` に設定して、クーポンコードとして _TEST1234_ と入力します。
-1. 顧客を作成します。
+1. _SKU 2836611_&#x200B;でシンプルな商品を作成します。
+1. **[!UICONTROL Cart Price Rule]**&#x200B;を作成し、**[!UICONTROL Coupon]**&#x200B;を`Specific Coupon`に設定し、_TEST1234_&#x200B;をクーポンコードとして入力します。
+1. 顧客の作成：
 
-   ```
+   ```graphql
    mutation {
    createCustomer(
        input: {
@@ -61,9 +61,9 @@ ACSD-64431 パッチは、リクエスト内にクーポンコード情報を含
    }
    ```
 
-1. 顧客トークンを生成します。 以降のリクエストでこのトークンを使用できます。
+1. 顧客トークンを生成します。 このトークンは、その後のリクエストに使用できます。
 
-   ```
+   ```graphql
    mutation {
    generateCustomerToken(email: "john.doe@example.com", password: "b1b2b3l@w+") {
        token
@@ -71,17 +71,17 @@ ACSD-64431 パッチは、リクエスト内にクーポンコード情報を含
    }
    ```
 
-1. 空の買い物かごを作成します。 カート ID を保存し、後続のリクエストで使用します。
+1. 空のカートを作成します。 カート IDを保存し、その後のリクエストに使用します。
 
-   ```
+   ```graphql
    mutation {
        createEmptyCart
    } 
    ```
 
-1. 商品を買い物かごに追加します。
+1. 商品をカートに追加します。
 
-   ```
+   ```graphql
    mutation {
        addProductsToCart(
            cartId: "xxxx"
@@ -118,9 +118,9 @@ ACSD-64431 パッチは、リクエスト内にクーポンコード情報を含
    }
    ```
 
-1. クーポンを適用します。
+1. クーポンの適用：
 
-   ```
+   ```graphql
    mutation {
        applyCouponToCart(input: { cart_id: "xxxx", coupon_code: "TEST1234" }) {
            cart {
@@ -154,7 +154,7 @@ ACSD-64431 パッチは、リクエスト内にクーポンコード情報を含
 
 1. 配送先住所の設定：
 
-   ```
+   ```graphql
    mutation {
        setShippingAddressesOnCart(
            input: {
@@ -207,9 +207,9 @@ ACSD-64431 パッチは、リクエスト内にクーポンコード情報を含
    }
    ```
 
-1. 出荷方法を設定します。
+1. 配送方法を設定する：
 
-   ```
+   ```graphql
    mutation {
        setShippingMethodsOnCart(
            input: {
@@ -237,7 +237,7 @@ ACSD-64431 パッチは、リクエスト内にクーポンコード情報を含
 
 1. 請求先住所の設定：
 
-   ```
+   ```graphql
    mutation {
        setBillingAddressOnCart(
            input: {
@@ -282,9 +282,9 @@ ACSD-64431 パッチは、リクエスト内にクーポンコード情報を含
    }
    ```
 
-1. 支払方法を設定します。
+1. 決済方法を設定する：
 
-   ```
+   ```graphql
    mutation {
        setPaymentMethodOnCart(
            input: { cart_id: "xxxx", payment_method: { code: "checkmo" } }
@@ -300,7 +300,7 @@ ACSD-64431 パッチは、リクエスト内にクーポンコード情報を含
 
 1. 注文する：
 
-   ```
+   ```graphql
    mutation {
    placeOrder(
        input: {
@@ -320,31 +320,31 @@ ACSD-64431 パッチは、リクエスト内にクーポンコード情報を含
    ```
 
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
 注文する必要があります。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
 次のエラーメッセージが表示されます。
 `"message": "Internal server error"`
 
-`exception.log` には、次のエラーが含まれます。
+`exception.log`に次のエラーが含まれています：
 
-```
+```text
     report.ERROR: "discount_model" value should be specifiedGraphQL (1:135)
     1: mutation { placeOrder(input: {cart_id: "xxxx"}) { orderV2 { total { discounts { amount { currency value } coupon { code } } } } errors { message code } } }
 ```
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

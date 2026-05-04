@@ -1,29 +1,29 @@
 ---
-title: クラウドインフラストラクチャー上のCommerceのリモートストレージ
-description: クラウドインフラストラクチャー上でAdobe Commerceのリモートストレージを設定する方法については、ガイダンスを参照してください。
+title: クラウドインフラストラクチャ上のCommerceのリモートストレージ
+description: クラウドインフラストラクチャ上にAdobe Commerceのリモートストレージを設定する方法に関するガイダンスを参照してください。
 feature: Configuration, Cloud, Storage
 exl-id: da352466-13f2-42e4-a589-3b0a89728467
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
-# クラウドインフラストラクチャー上のCommerceにリモートストレージを設定
+# Commerce on Cloud インフラストラクチャのリモートストレージの設定
 
-`ece-tools` パッケージ 2002.1.5 以降、環境変数を使用してリモートストレージモジュールを有効にできますが、クラウドインフラストラクチャ上のAdobe Commerceでは、リモートストレージモジュールがサポートされます _制限あり_。 Adobeが、サードパーティのストレージアダプタサービスのトラブルシューティングを完全に行えない。
+`ece-tools` パッケージ 2002.1.5以降では、環境変数を使用してリモートストレージモジュールを有効にできますが、リモートストレージモジュールでは、Adobe Commerce on cloud infrastructureで&#x200B;_制限_&#x200B;がサポートされています。 Adobeでは、サードパーティ製ストレージアダプターサービスのトラブルシューティングを完全に実行できません。
 
 ## 環境変数
 
-`REMOTE_STORAGE` 変数は、クラウドインフラストラクチャプロジェクトの [&#x200B; デプロイフェーズ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=ja) で使用されます。
+`REMOTE_STORAGE`変数は、クラウドインフラストラクチャプロジェクトの[ デプロイメントフェーズ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html)中に使用されます。
 
 ### `REMOTE_STORAGE`
 
-- **Default**—_設定なし_
-- **バージョン** - Commerce 2.4.2 以降
+- **既定**—_設定なし_
+- **バージョン** - Commerce 2.4.2以降
 
-_ストレージアダプタ_ を設定して、AWS S3 などのストレージサービスを使用して、永続的なリモートストレージコンテナにメディアファイルを保存します。 リモートストレージモジュールを有効にして、リソースを共有する必要がある、複雑なマルチサーバー設定を含むクラウドプロジェクトのパフォーマンスを向上させます。 次に、`.magento.env.yaml` ファイルを使用したリモートストレージ設定の例を示します。
+AWS S3などのストレージサービスを使用して、永続的なリモートストレージコンテナにメディアファイルを保存するように&#x200B;_ストレージアダプタ_&#x200B;を設定します。 リモートストレージモジュールを有効にして、リソースを共有する必要がある複雑なマルチサーバー設定を使用して、クラウドプロジェクトのパフォーマンスを向上させます。 次に、`.magento.env.yaml` ファイルを使用したリモートストレージ設定の例を示します。
 
 ```yaml
 stage:
@@ -38,17 +38,17 @@ stage:
         secret: my-secret-key # Optional
 ```
 
-### Cloud CLI での変数設定
+### Cloud CLIでの変数の設定
 
-`REMOTE_STORAGE` 変数を [&#x200B; 環境レベル変数 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=ja) として設定して、実稼動環境、ステージング環境および統合環境でファイルが共有されないようにします。 環境レベルで変数を設定すると、統合環境でのリモートストレージの使用を除外するなど、一部の環境でのみリモートストレージを使用する柔軟性が得られます。
+実稼動環境、ステージング環境、統合環境間でファイルが共有されないように、`REMOTE_STORAGE`変数を[環境レベル変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html)として設定します。 環境レベルで変数を設定すると、リモートストレージの統合環境の使用を除外するなど、一部の環境でリモートストレージのみを使用する柔軟性が得られます。
 
-**Cloud CLI を使用してリモートストレージ変数を追加するには**:
+**Cloud CLI**&#x200B;を使用してリモートストレージ変数を追加するには：
 
-```bash
+```shell
 magento-cloud variable:create --level environment --name REMOTE_STORAGE --json true --inheritable false --value '{"driver":"aws-s3","prefix":"uat","config":{"bucket":"aws-bucket-id","region":"eu-west-1","key":"optional-key","secret":"optional-secret"}}'
 ```
 
-これにより、指定された JSON 設定を持つ `REMOTE_STORAGE` 変数が作成されます。 `REMOTE_STORAGE` 変数は、JSON 文字列を受け取って、リモートストレージを設定します。 以下は JSON 設定の例です。
+これにより、指定されたJSON設定で`REMOTE_STORAGE`変数が作成されます。 `REMOTE_STORAGE`変数は、JSON文字列を使用してリモートストレージを設定します。 次に、JSON設定の例を示します。
 
 ```json
 {
@@ -63,60 +63,60 @@ magento-cloud variable:create --level environment --name REMOTE_STORAGE --json t
 }
 ```
 
-設定を作成してデプロイした後、デプロイメントログには、リモートストレージの設定に関する情報（`INFO: Remote storage driver set to: "aws-s3"` など）を含める必要があります。
+設定を作成してデプロイした後、デプロイメントログには、リモートストレージ設定（例：`INFO: Remote storage driver set to: "aws-s3"`）に関する情報が含まれている必要があります
 
-### Project Web インターフェイスで変数を設定する
+### Project Web Interfaceで変数を設定
 
-または、Project Web Interface を使用して、適切な環境に変数を追加することもできます。
+または、Project Web Interfaceを使用して、変数を適切な環境に追加することもできます。
 
-**Project Web Interface を使用してリモート記憶域変数を追加するには**:
+**Project Web Interface**&#x200B;を使用してリモート ストレージ変数を追加するには：
 
-1. _Project Web インターフェイス_ で、左側から環境を選択します。
+1. _Project Web Interface_&#x200B;で、左側から環境を選択します。
 
-1. **環境を設定** アイコンをクリックします。
+1. **環境の設定** アイコンをクリックします。
 
-1. _環境を設定_ ビューで、「**変数**」タブをクリックします。
+1. _環境の設定_ ビューで、「**変数**」タブをクリックします。
 
-1. **変数を追加** をクリックします。
+1. 「**変数を追加**」をクリックします。
 
-1. 「_名前_」フィールドに「`REMOTE_STORAGE`」と入力します
+1. _名前_ フィールドに、`REMOTE_STORAGE`と入力します
 
-1. 「_値_」フィールドに JSON 設定を追加します。
+1. _値_ フィールドにJSON設定を追加します。
 
-1. **JSON 値** および **機密** を選択し、**子環境によって継承可能** の選択を解除します。
+1. **JSON値**&#x200B;と&#x200B;**機密性**&#x200B;を選択し、**子環境による継承**&#x200B;の選択を解除します。
 
-1. **変数を追加** をクリックします。
+1. 「**変数を追加**」をクリックします。
 
 ### オプションの認証を使用
 
-`key` と `secret` はオプションです。 変数を作成する場合は、「`key`」オプションを選択して、`secret` と `sensitive` を非表示にできます。 この設定では、値は web インターフェイスには表示されません。 [2&rbrace;Cloud Infrastructure 上のCommerce ガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=ja#visibility) の変数の表示 _を参照してください。_
+`key`と`secret`はオプションです。 変数を作成する場合、`sensitive` オプションを選択して`key`と`secret`を非表示にできます。 この設定では、値はweb インターフェイスに表示されません。 _Commerce on Cloud Infrastructure ガイド_&#x200B;の[変数表示](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility)を参照してください。
 
-別の認証方法を使用する場合は、`key` と `secret` を JSON 設定から削除します。 代替認証方法を設定し、サーバーが S3 バケットに対して許可されていることを確認します。
+別の認証方法を使用する場合は、JSON設定から`key`と`secret`を省略します。 別の認証方法を設定し、サーバーがS3 バケットに対して許可されていることを確認します。
 
 ### リモートストレージの同期
 
-リモート記憶域モジュールを有効にした後、現在のメディア ファイルをリモート ストアの場所に同期します。
+リモートストレージモジュールを有効にした後、現在のメディアファイルをリモートストアの場所に同期します。
 
 **同期を開始するには**:
 
-1. SSH を使用して、リモート記憶域が構成されたリモート環境にログインします。
+1. SSHを使用して、リモートストレージが設定されたリモート環境にログインします。
 
 1. 同期を開始します。
 
-```bash
+```shell
 bin/magento remote-storage:sync 
 ```
 
-## Fastly 設定
+## Fastly設定
 
-Adobe Commerce on cloud infrastructure プロジェクトでリモートストレージソリューションを使用する場合は、[Fastly](https://docs.fastly.com/en/guides/amazon-s3) ドキュメントの _Amazon S3_ ガイダンスを使用して、Fastly Image Optimization がAWS S3 で動作することを確認してください。
+Adobe Commerce on cloud インフラストラクチャプロジェクトでリモートストレージソリューションを使用する場合は、_Fastly_ ドキュメントの[Amazon S3](https://docs.fastly.com/en/guides/amazon-s3) ガイダンスを使用して、Fastly Image OptimizationがAWS S3で動作することを確認してください。
 
-[Fastly 資格情報 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja#get-fastly-credentials) を使用して準備します。 Pro プロジェクトでは、SSH を使用してサーバーに接続し、`/mnt/shared/fastly_tokens.txt` ファイルから Fastly 資格情報を取得します。 ステージング環境と実稼動環境には、一意の資格情報があります。 各環境の資格情報を取得する必要があります。
+[Fastlyの資格情報](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#get-fastly-credentials)を使用して準備してください。 Pro プロジェクトでは、SSHを使用してサーバーに接続し、`/mnt/shared/fastly_tokens.txt` ファイルからFastlyの資格情報を取得します。 ステージング環境と実稼動環境には一意の資格情報があります。 各環境の資格情報を取得する必要があります。
 
-次のタスクを使用して、クラウドプロジェクト用のリモートストレージの設定を続行します。
+次のタスクを使用して、クラウドプロジェクトのリモートストレージの設定を続行します。
 
-1. [Fastly バックエンド統合 &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-OTHER-CMS-INTEGRATION.md) を設定します。
+1. [Fastly バックエンド統合](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-OTHER-CMS-INTEGRATION.md)を設定します。
 
-1. [AWS S3 認証 &#x200B;](https://docs.fastly.com/en/guides/amazon-s3#using-an-amazon-s3-private-bucket) の VCL ロジックを作成します。
+1. [AWS S3認証](https://docs.fastly.com/en/guides/amazon-s3#using-an-amazon-s3-private-bucket)のVCL ロジックを作成します。
 
-1. [AWS S3 バケットへのバックエンドリクエスト &#x200B;](https://developer.fastly.com/reference/vcl/variables/backend-connection/req-backend/) 用の VCL ロジックを作成します。
+1. AWS S3 バケット ](https://developer.fastly.com/reference/vcl/variables/backend-connection/req-backend/)に対する[ バックエンドリクエストのVCL ロジックを作成します。

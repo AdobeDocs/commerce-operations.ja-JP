@@ -1,46 +1,46 @@
 ---
-title: ACSD-66434:company[!UICONTROL Customer ID]queries に  [!DNL GraphQL]  がありません
-description: ACSD-66434 パッチを適用して、company[!UICONTROL Customer ID]queries に  [!DNL GraphQL]  が見つからないAdobe Commerceの問題を修正します。
+title: 'ACSD-66434: [!UICONTROL Customer ID]が会社 [!DNL GraphQL]  クエリにありません'
+description: ACSD-66434 パッチを適用して、[!UICONTROL Customer ID]が会社 [!DNL GraphQL] のクエリに見つからないAdobe Commerceの問題を修正します。
 feature: B2B, GraphQL
 role: Admin, Developer
 type: Troubleshooting
 exl-id: cd83c868-29d8-4d7c-9067-af7597056d35
-source-git-commit: e60194341bf79ca3ecdc505cf30f226b8f1b6c7f
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
 
-# ACSD-66434：会社 [!UICONTROL Customer ID] クエリに [!DNL GraphQL] がありません
+# ACSD-66434: [!UICONTROL Customer ID]が会社[!DNL GraphQL] クエリにありません
 
-ACSD-66434 パッチは、会社の **[!UICONTROL Customer ID]** クエリに [!DNL GraphQL] が見つからない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 がインストールされている場合に使用できます。 パッチ ID は ACSD-66434 です。 この問題はAdobe Commerce 2.4.9 で修正される予定であることに注意してください。
+ACSD-66434 パッチは、会社[!DNL GraphQL]のクエリに&#x200B;**[!UICONTROL Customer ID]**&#x200B;が見つからない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67がインストールされている場合に利用できます。 パッチ IDはACSD-66434です。 この問題は、Adobe Commerce 2.4.9で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7-p5
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p10 - 2.4.6-p11、2.4.7-p3 - 2.4.8-p1
+* Adobe Commerce（すべてのデプロイメント方式） 2.4.6-p10 - 2.4.6-p11、2.4.7-p3 - 2.4.8-p1
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-[!DNL GraphQL] の会社クエリは、会社構造内の `null` の **[!UICONTROL Customer ID]** を返します。
+[!DNL GraphQL]会社クエリは、会社構造内の&#x200B;**[!UICONTROL Customer ID]**&#x200B;に対して`null`を返します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. Adobe Commerce 2.4-develop を B2B および Inventory モジュールと共にインストールします。
-1. Commerceの「管理者」で、「B2B 機能」を有効化し、テスト会社を作成します。
-1. 次の [!DNL GraphQL] のバリエーションを使用して、会社管理者のベアラートークンを生成します。
+1. B2Bおよびインベントリモジュールを使用してAdobe Commerce 2.4-developをインストールします。
+1. Commerce管理者から、B2B機能を有効にして、テスト会社を作成します。
+1. 次の[!DNL GraphQL]の突然変異を使用して、会社管理者のベアラートークンを生成します。
 
-```
+```graphql
 mutation {
   generateCustomerToken(email: "admin_email@example.com", password: "admin_password") {
     token
@@ -48,9 +48,9 @@ mutation {
 }
 ```
 
-1. 生成されたトークンを使用して、次の [!DNL GraphQL] クエリで顧客の会社構造を取得します。
+1. 生成されたトークンを使用して、次の[!DNL GraphQL] クエリを含む顧客の会社構造を取得します。
 
-```
+```graphql
 query {
   company {
     id
@@ -74,23 +74,23 @@ query {
 }
 ```
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-**[!UICONTROL Customer ID]** は、会社 [!DNL GraphQL] クエリで返される必要があります。
+会社[!DNL GraphQL] クエリで&#x200B;**[!UICONTROL Customer ID]**&#x200B;を返す必要があります。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-**[!UICONTROL Customer ID]** は、会社 `null` クエリで [!DNL GraphQL] として返されます。
+**[!UICONTROL Customer ID]**&#x200B;は、会社[!DNL GraphQL] クエリで`null`として返されます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

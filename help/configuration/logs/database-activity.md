@@ -1,29 +1,29 @@
 ---
-title: データベースアクティビティを記録
-description: Logger インターフェイスを使用して、データベースアクティビティをログに記録するようにCommerceを設定します。
+title: ログデータベースアクティビティ
+description: Logger インターフェイスを使用して、データベースのアクティビティをログに記録するようにCommerceを設定します。
 feature: Configuration, Logs, Storage
 exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
 
-# データベースアクティビティを記録
+# ログデータベースアクティビティ
 
-次の例は、2 つの実装を持つ `[Magento\Framework\DB\LoggerInterface](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/LoggerInterface.php)` を使用してデータベースアクティビティをログに記録する方法を示しています。
+次の例は、2つの実装を持つ`[Magento\Framework\DB\LoggerInterface](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/LoggerInterface.php)`を使用してデータベースのアクティビティをログに記録する方法を示しています。
 
-- ログなし（デフォルト）:[`Magento\Framework\DB\Logger\Quiet`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/Quiet.php)
-- `var/log` ディレクトリへのログ：[`Magento\Framework\DB\Logger\File`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/File.php)
+- ログなし（デフォルト）: [`Magento\Framework\DB\Logger\Quiet`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/Quiet.php)
+- `var/log` ディレクトリ [`Magento\Framework\DB\Logger\File`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/File.php)にログします
 
 >[!TIP]
 >
->Commerce CLI を使用して、[&#x200B; データベースのログ記録を有効または無効にする &#x200B;](../cli/enable-logging.md#database-logging) ことができます。
+>Commerce CLIを使用して、[ データベースのログを有効または無効にできます](../cli/enable-logging.md#database-logging)。
 
-`\Magento\Framework\DB\Logger\LoggerProxy` のデフォルト設定を変更するには、`app/etc/di.xml` を編集します。
+`\Magento\Framework\DB\Logger\LoggerProxy`のデフォルト設定を変更するには、`app/etc/di.xml`を編集します。
 
-まず、引数 `loggerAlias` および `logCallStack` のデフォルト値を次のように変更します。
+最初に、`loggerAlias`引数と`logCallStack`引数のデフォルト値を次のように変更します。
 
 ```xml
 <type name="Magento\Framework\DB\Logger\LoggerProxy">
@@ -36,7 +36,7 @@ ht-degree: 0%
 </type>
 ```
 
-その後、`Magento\Framework\DB\Logger\File` のファイルパスを指定します。
+その後、`Magento\Framework\DB\Logger\File`のファイルパスを指定します。
 
 ```xml
 <type name="Magento\Framework\DB\Logger\File">
@@ -46,15 +46,15 @@ ht-degree: 0%
 </type>
 ```
 
-最後に、以下を使用してコードをコンパイルします。
+最後に、次のコードをコンパイルします。
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
-次のようにキャッシュをクリーンアップします。
+次のコマンドを使用してキャッシュをクリーニングします。
 
-```bash
+```shell
 bin/magento cache:clean
 ```
 

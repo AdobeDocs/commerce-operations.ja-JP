@@ -1,47 +1,47 @@
 ---
-title: MDVA-43451：共有カタログの価格と構造を設定する際にエラーが発生する
-description: MDVA-43451 パッチは、共有カタログの価格と構造を設定できない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.13 がインストールされている場合に利用できます。 パッチ ID は MDVA-43451。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+title: MDVA-43451：共有カタログの価格と構造を設定中にエラーが発生する
+description: MDVA-43451 パッチは、ユーザーが共有カタログの価格と構造を設定できない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.13がインストールされている場合に利用できます。 パッチ IDはMDVA-43451です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 feature: Catalog Management
 role: Admin
 exl-id: 2cddfca2-ee32-4e73-9ef6-78125fbaa13d
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
 
-# MDVA-43451：共有カタログの価格と構造を設定する際にエラーが発生する
+# MDVA-43451：共有カタログの価格と構造を設定中にエラーが発生する
 
-MDVA-43451 パッチは、共有カタログの価格と構造を設定できない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.13 がインストールされている場合に使用できます。 パッチ ID は MDVA-43451。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+MDVA-43451 パッチは、ユーザーが共有カタログの価格と構造を設定できない問題を解決します。 このパッチは、[品質パッチツール（QPT） ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13がインストールされている場合に使用できます。 パッチ IDはMDVA-43451です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.3-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 ～ 2.4.4
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 - 2.4.4
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-ユーザーは、共有カタログの価格と構造を設定できません。 *リクエストされたストアが見つかりませんでした。 ストアを確認して、もう一度試してください。*
+共有カタログの価格と構造を設定できません。 次のメッセージが表示されます：*リクエストされたストアが見つかりませんでした。 ストアを確認して、もう一度やり直してください。*
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. カスタム web サイトを作成します。 Web サイトの id は、0、1、2 にする必要があります。
-1. 上記の web サイトの下に 1 つのストアを作成します。 ストアの ID は、0,1,2 にする必要があります。
-1. 上記のストアに対して 3 つのストア表示を作成します。 ストアビューの ID は、0、1、2、3、4 にする必要があります。
-1. ID 2 のストア表示を削除します。 これで、ストアテーブルは次のテーブルのようになります。
+1. 独自のweb サイトの構築： Web サイトのIDは0、1、2にする必要があります。
+1. 上記のウェブサイトの下に1つのストアを作成します。 ストアのIDは0,1,2である必要があります。
+1. 上記のストアの3つのストアビューを作成します。 ストアビューのIDは、0,1、2、3、4である必要があります。
+1. ID 2のストアビューを削除します。 これで、ストアテーブルは次のテーブルと同様に見えます。
 
-   ```bash
+   ```shell
    MariaDB [m24devinvb2b]> SELECT store_id,code,website_id,group_id,name FROM store;
    +----------+----------------+------------+----------+--------------------+
    | store_id | code           | website_id | group_id | name               |
@@ -54,30 +54,30 @@ MDVA-43451 パッチは、共有カタログの価格と構造を設定できな
    ```
 
 1. 新しい共有カタログを作成します。
-1. 価格と構造を設定する場合は、手順 2 で作成したストアを選択します。
+1. 価格と構造を設定する場合は、手順2で作成したストアを選択します。
 1. 共有カタログを保存します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
 共有カタログは問題なく保存されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
 共有カタログを保存できません。 次のエラーが表示されます。
-*リクエストされたストアが見つかりませんでした。 ストアを確認して、もう一度試してください。*
+*リクエストされたストアが見つかりませんでした。 ストアを確認して、もう一度やり直してください。*
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-品質向上パッチツールの詳細については、次を参照してください。
+品質パッチツールについて詳しくは、以下を参照してください。
 
-* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [品質パッチツール ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

@@ -1,36 +1,36 @@
 ---
-title: 管理 URI の表示または変更
-description: Adobe Commerce管理アプリケーションの URI を表示および変更するには、次の手順に従います。
+title: 管理者URIの表示または変更
+description: Adobe Commerce Admin アプリケーションのURIを表示および変更するには、次の手順に従います。
 feature: Install, Configuration
 exl-id: 768f9ab4-7123-4460-9df8-a6c98ae55d95
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '91'
+source-wordcount: '99'
 ht-degree: 0%
 
 ---
 
-# 管理 URI の表示または変更
+# 管理者URIの表示または変更
 
-このコマンドを実行する前に、[&#x200B; 展開構成を作成または更新 &#x200B;](deployment.md) する必要があります。
+このコマンドを実行する前に、[ デプロイメント設定を作成または更新する必要があります](deployment.md)。
 
-## 管理 URI の表示
+## 管理者URIの表示
 
-この節では、コマンドラインを使用して Admin Uniform Resource Identifier （[URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)）を表示する方法について説明します。
+この節では、コマンドラインを使用して管理者用の統一リソース ID （[URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)）を表示する方法について説明します。
 
 コマンドオプション：
 
-```bash
+```shell
 bin/magento info:adminuri
 ```
 
-次に結果の例を示します。
+サンプル結果は次のとおりです。
 
-```
+```text
 Admin Panel URI: /admin_1wgrah
 ```
 
-また、`<magento_root>/app/etc/env.php` で管理 URI を表示することもできます。 スニペットは次のとおりです。
+`<magento_root>/app/etc/env.php`で管理者URIを表示することもできます。 スニペットは次のようになります。
 
 ```php?start_inline=1
   'backend' =>
@@ -39,6 +39,6 @@ Admin Panel URI: /admin_1wgrah
   ),
 ```
 
-## 管理者 URL の変更
+## 管理者URLの変更
 
-管理 URI を変更するには、[`magento setup:config:set`](deployment.md) コマンドを使用します。
+管理者URIを変更するには、[`magento setup:config:set`](deployment.md) コマンドを使用します。

@@ -1,10 +1,10 @@
 ---
 title: インデクサーの管理
-description: コマンドラインツールを使用してAdobe Commerce インデクサーを表示および管理する方法について説明します。 インデクサーコマンド、ステータスチェックおよびインデックス再作成手法について説明します。
+description: コマンドラインツールを使用して、Adobe Commerce インデクサーを表示および管理する方法について説明します。 インデクサーコマンド、ステータスチェック、およびインデックス再作成のテクニックを確認します。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: ed21cbaf145493614d274da6eee41f6b1ae39ff2
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '1025'
 ht-degree: 0%
 
 ---
@@ -43,11 +43,11 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> Live Search、カタログサービス、Product Recommendations を使用するAdobe Commerce マーチャントには、[SaaS ベースの価格インデックス作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/price-indexer/price-indexing) を使用するオプションがあります。
+> ライブサーチ、カタログサービス、商品レコメンデーションを使用しているAdobe Commerceのマーチャントには、[SaaS ベースの価格インデックス ](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing)を使用するオプションがあります。
 
-## インデクサーのステータスの表示
+## インデクサーステータスの表示
 
-このコマンドを使用して、すべてのインデクサーまたは特定のインデクサーのステータスを表示します。 例えば、インデクサーのインデックスを再作成する必要があるかどうかを確認します。
+すべてのインデクサーまたは特定のインデクサーのステータスを表示するには、このコマンドを使用します。 例えば、インデクサーのインデックスを再作成する必要があるかどうかを確認します。
 
 コマンドオプション：
 
@@ -55,7 +55,7 @@ store_data_exporter                      Stores Feed
 bin/magento indexer:status [indexer]
 ```
 
-ここで、`[indexer]` はインデクサーのスペース区切りのリストです。 すべてのインデクサーの状態を表示するには、`[indexer]` を省略します。
+ここで、`[indexer]`はスペース区切りのインデクサーのリストです。 すべてのインデクサーのステータスを表示するには、`[indexer]`を省略します。
 
 結果の例：
 
@@ -85,11 +85,11 @@ bin/magento indexer:status [indexer]
 
 ## 再インデックス
 
-すべてのインデクサーまたは選択したインデクサーの再インデックスを 1 回だけ実行するには、このコマンドを使用します。
+このコマンドを使用すると、すべてのインデクサーまたは選択したインデクサーを1回だけ再インデックスできます。
 
 >[!INFO]
 >
->このコマンドは 1 回だけ再インデックスを実行します。 インデクサーを最新の状態に保つには、[cron ジョブ &#x200B;](../cli/configure-cron-jobs.md) を設定する必要があります。
+>このコマンドは、1回だけインデックスを再作成します。 インデックスを最新の状態に保つには、[cron ジョブ ](../cli/configure-cron-jobs.md)を設定する必要があります。
 
 コマンドオプション：
 
@@ -97,7 +97,7 @@ bin/magento indexer:status [indexer]
 bin/magento indexer:reindex [indexer]
 ```
 
-ここで、`[indexer]` はインデクサーのスペース区切りのリストです。 すべてのインデクサーを再インデックス化する場合は、`[indexer]` を省略します。
+ここで、`[indexer]`はスペース区切りのインデクサーのリストです。 すべてのインデクサーのインデックスを再作成するには、`[indexer]`を省略します。
 
 結果の例：
 
@@ -123,56 +123,56 @@ Stores Feed index has been rebuilt successfully in <time>
 
 >[!INFO]
 >
->すべてのインデクサーのインデックス再作成は、製品、顧客、カテゴリおよびプロモーションルールが多数あるストアでは、時間がかかる場合があります。
+>すべてのインデックスを再作成すると、多数の商品、顧客、カテゴリ、およびプロモーションルールを持つストアに時間がかかる場合があります。
 
-### 並列モードでのインデックス再作成
+### パラレルモードでのインデックス再作成
 
 {{php-process-control}}
 
-インデクサーは、並列モードでのインデックス再作成をサポートするために、スコープ指定されマルチスレッド化されます。 インデクサーのディメンションで並列化され、複数のスレッドにわたって実行されるので、処理時間が短縮されます。
+インデクサーはスコープ付きでマルチスレッド化され、パラレルモードでのインデックス再作成をサポートします。 インデクサーのディメンションによって並列化され、複数のスレッドにわたって実行され、処理時間が短縮されます。
 
-このコンテキストでは、インデックス再作成の範囲は `dimension` のとおりです（例：`website` または特定の `customer_group` のみ）。
+このコンテキストでは、`dimension`はインデックス再作成の範囲です。例えば、`website`や特定の`customer_group`などです。
 
-インデックスの並列化は、スコープ指定されたインデクサーにのみ影響します。つまり、Commerceでは、すべてのデータを 1 つのテーブルに保持するのではなく、インデクサーをスコープとして使用して、データを複数のテーブルに分割します。
+インデックスの並列化は、スコープ付きインデクサーにのみ影響します。つまり、Commerceは、すべてのデータを1つのテーブルに保持するのではなく、インデクサーをスコープとして使用してデータを複数のテーブルに分割します。
 
-次のインデックスを並列モードで実行できます。
+パラレルモードでは、次のインデックスを実行できます。
 
-- `Catalog Search Fulltext` は、ストアのビューで並べることができます。
-- `Category Product` は、ストアのビューで並べることができます。
-- `Catalog Price` れは、web サイトと顧客グループで並行できます。
-- `Catalog Permissions` は、顧客グループごとに並行して実行できます。
+- `Catalog Search Fulltext`は、ストアビューで並行させることができます。
+- `Category Product`は、ストアビューで並行させることができます。
+- `Catalog Price`は、web サイトと顧客グループで並行させることができます。
+- `Catalog Permissions`は、顧客グループで並行させることができます。
 
 >[!INFO]
 >
->カタログ検索全文とカテゴリ製品の並列化は、デフォルトで有効になっています。
+>カタログ検索フルテキストとカテゴリ製品の並列化は、デフォルトで有効になっています。
 
-並列化を使用するには、製品価格インデクサーで使用可能なディメンションモードの 1 つを設定します。
+並列化を使用するには、製品価格インデクサーで使用可能な次元モードの1つを設定します。
 
-- `none` （デフォルト）
+- `none` （既定値）
 - `website`
 - `customer_group`
 - `website_and_customer_group`
 
-例えば、web サイトごとにモードを設定するには、次のようにします。
+例えば、web サイトごとにモードを設定するには、次の手順を実行します。
 
 ```bash
 bin/magento indexer:set-dimensions-mode catalog_product_price website
 ```
 
-カタログ権限の並列化を使用するには、カタログ権限インデクサーで使用可能ないずれかのディメンションモードを設定します。
+カタログ権限に並列化を使用するには、カタログ権限インデクサーで使用可能なディメンション モードのいずれかを設定します。
 
-- `none` （デフォルト）
+- `none` （既定値）
 - `customer_group`
 
-または、現在のモードを確認します。
+または、現在のモードを確認するには：
 
 ```bash
 bin/magento indexer:show-dimensions-mode
 ```
 
-並列モードでインデックスを再作成するには、環境変数 `MAGE_INDEXER_THREADS_COUNT` を使用して reindex コマンドを実行するか、`env.php` ファイルに環境変数を追加します。 この変数は、再インデックス処理のスレッド数を設定します。
+並列モードで再インデックスを作成するには、環境変数`MAGE_INDEXER_THREADS_COUNT`を使用して再インデックス コマンドを実行するか、環境変数を`env.php` ファイルに追加します。 この変数は、再インデックス処理のスレッド数を設定します。
 
-例えば、次のコマンドは、3 つのスレッドに対して `Catalog Search Fulltext` インデクサーを実行します。
+例えば、次のコマンドは、3つのスレッドにわたって`Catalog Search Fulltext` インデクサーを実行します。
 
 ```bash
 MAGE_INDEXER_THREADS_COUNT=3 php -f bin/magento indexer:reindex catalogsearch_fulltext
@@ -188,7 +188,7 @@ MAGE_INDEXER_THREADS_COUNT=3 php -f bin/magento indexer:reindex catalogsearch_fu
 bin/magento indexer:reset [indexer]
 ```
 
-ここで、```[indexer]``` はインデクサーのスペース区切りのリストです。 `[indexer]` を省略すると、すべてのインデクサーが無効になります。
+ここで、```[indexer]```はスペース区切りのインデクサーのリストです。 すべてのインデクサーを無効にするには、`[indexer]`を省略します。
 
 結果の例：
 
@@ -216,10 +216,10 @@ Stores Feed indexer has been invalidated.
 
 このコマンドを使用して、次のインデクサーオプションを設定します。
 
-- **保存時に更新（`realtime`）**：インデックス付きデータは、管理者で変更が加えられると更新されます。 （例えば、カテゴリ製品インデックスは、製品が管理者のカテゴリに追加された後に再インデックスされます。）
-- **スケジュールで更新（`schedule`）**:cron ジョブで設定したスケジュールに従ってデータのインデックスが作成されます。
+- **保存時の更新（`realtime`）**：管理者で変更が行われると、インデックス付きデータが更新されます。 （例えば、カテゴリ製品インデックスは、管理者のカテゴリに製品が追加された後に再インデックスされます）。
+- **スケジュール別に更新（`schedule`）**: データは、cron ジョブで設定されたスケジュールに従ってインデックスが作成されます。
 
-[&#x200B; インデックス作成の詳細情報 &#x200B;](https://developer.adobe.com/commerce/php/development/components/indexing/)。
+[ インデックス作成について詳しく見る](https://developer.adobe.com/commerce/php/development/components/indexing/)。
 
 ### 現在の設定を表示
 
@@ -229,7 +229,7 @@ Stores Feed indexer has been invalidated.
 bin/magento indexer:show-mode [indexer]
 ```
 
-ここで、`[indexer]` はインデクサーのスペース区切りのリストです。 `[indexer]` を省略すると、すべてのインデクサーのモードが表示されます。 例えば、すべてのインデクサーのモードを表示するには、次のようにします。
+ここで、`[indexer]`はスペース区切りのインデクサーのリストです。 すべてのインデクサーのモードを表示するには、`[indexer]`を省略します。 例えば、すべてのインデクサーのモードを表示するには：
 
 結果の例：
 
@@ -257,9 +257,9 @@ Stores Feed:                                       Update by Schedule
 
 >[!IMPORTANT]
 >
->[!DNL Customer Grid] のインデクサーの動作は 2.4.8 で変更されました。
+>2.4.8で[!DNL Customer Grid] インデクサーの動作が変更されました。
 >
->- **2.4.8 より前**:[!DNL Customer Grid] インデクサーのインデックスは、[!UICONTROL Update on Save] オプションを使用してのみ再作成でき、[!UICONTROL Update by Schedule] オプションはサポートしていません。
+>- **2.4.8**&#x200B;以前：[!DNL Customer Grid] インデクサーは[!UICONTROL Update on Save] オプションを使用してのみインデックスを再作成でき、[!UICONTROL Update by Schedule] オプションはサポートしていません。
 >
 >   次のコマンドを使用して、保存時にこのインデクサーを更新するように設定します。
 >
@@ -267,13 +267,13 @@ Stores Feed:                                       Update by Schedule
 >   bin/magento indexer:set-mode realtime customer_grid
 >   ```
 >
->- **2.4.8 以降**:[!DNL Customer Grid] インデクサーは、[!UICONTROL Update on Save] モードと [!UICONTROL Update by Schedule] モードの両方をサポートしており、デフォルトは [!UICONTROL Update by Schedule] です。
+>- **2.4.8以降**: [!DNL Customer Grid] インデクサーは[!UICONTROL Update on Save]と[!UICONTROL Update by Schedule] モードの両方をサポートし、デフォルトは[!UICONTROL Update by Schedule]です。
 >
->[&#x200B; 実装プレイブック &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) の _インデクサー設定のベストプラクティス_ を参照してください。
+>_実装プレイブック_&#x200B;の「[ インデクサー設定のベストプラクティス ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration)」を参照してください。
 
 >[!INFO]
 >
->インデクサーモードを切り替える前に、web サイトを [&#x200B; メンテナンス &#x200B;](../../installation/tutorials/maintenance-mode.md) モードと [cron ジョブを無効 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) に設定します。 これにより、データベースのロックが発生しないようにします。
+>インデクサーモードを切り替える前に、web サイトを[ メンテナンス ](../../installation/tutorials/maintenance-mode.md) モードに設定し、[cron ジョブを無効にします](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)。 これにより、データベースのロックが発生しないようにします。
 
 インデクサー設定を指定するには：
 
@@ -281,13 +281,13 @@ Stores Feed:                                       Update by Schedule
 bin/magento indexer:set-mode {realtime|schedule} [indexer]
 ```
 
-ここで、
+どこで：
 
-- `realtime` – 保存時に更新する選択したインデクサーを設定します。
-- `schedule` - cron スケジュールに従って、指定されたインデクサーを保存するように設定します。
-- `indexer` - インデクサーのスペース区切りのリストです。 すべてのインデクサーを同じ方法で設定する場合は、`indexer` を省略します。
+- `realtime` – 選択したインデックスを保存時に更新するように設定します。
+- `schedule` - cron スケジュールに従って保存する指定されたインデクサーを設定します。
+- `indexer` - スペース区切りのインデクサーのリストです。 すべてのインデクサーを同じように設定するには、`indexer`を省略します。
 
-たとえば、スケジュールに従って更新するカテゴリ製品と製品カテゴリのインデクサーのみを変更するには、次のように入力します。
+例えば、カテゴリ製品と製品カテゴリのインデクサーのみをスケジュールに従って更新するように変更するには、次のように入力します。
 
 ```bash
 bin/magento indexer:set-mode schedule catalog_category_product catalog_product_category
@@ -295,31 +295,31 @@ bin/magento indexer:set-mode schedule catalog_category_product catalog_product_c
 
 結果の例：
 
-```
+```text
 Index mode for Indexer Category Products was changed from 'Update on Save' to 'Update by Schedule'
 Index mode for Indexer Product Categories was changed from 'Update on Save' to 'Update by Schedule'
 ```
 
-インデクサー関連のデータベーストリガーは、インデクサーモードが `schedule` に設定されている場合は追加され、インデクサーモードが `realtime` に設定されている場合は削除されます。 インデクサーが `schedule` に設定されているときに、トリガーがデータベースにない場合は、インデクサーを `realtime` に変更してから、`schedule` に戻します。 これにより、トリガーがリセットされます。
+インデクサーモードが`schedule`に設定されている場合はインデクサー関連のデータベーストリガーが追加され、インデクサーモードが`realtime`に設定されている場合は削除されます。 インデックスが`schedule`に設定されている間にトリガーがデータベースに見つからない場合は、インデックスを`realtime`に変更してから、`schedule`に戻します。 これにより、トリガーがリセットされます。
 
-### インデクサーのステータスを設定
+### インデクサーステータスの設定
 
-`bin/magento indexer:set-status` コマンドは、Adobe Commerce 2.4.7 で導入されました。これにより、管理者は 1 つ以上のインデクサーの動作ステータスを変更し、データのインポート、更新、メンテナンスなどの広範な操作中にシステムのパフォーマンスを最適化できます。
+`bin/magento indexer:set-status` コマンドはAdobe Commerce 2.4.7で導入されました。 管理者は、1つ以上のインデクサーの操作ステータスを変更し、データのインポート、更新、メンテナンスなどの広範な操作中にシステムパフォーマンスを最適化できます。
 
-コマンド構文：
+コマンドの構文：
 
 ```bash
 bin/magento indexer:set-status {invalid|suspended|valid} [indexer]
 ```
 
-ここで、
+どこで：
 
-- `invalid` - インデクサーを期限切れとマークし、中断されない限り、次回 cron 実行時にインデックス再作成を促します。
-- `suspended` - インデクサーの cron トリガーによる自動更新を一時的に停止します。 このステータスはリアルタイムモードとスケジュールモードの両方に適用され、集中的な操作中に自動更新を一時停止できます。
-- `valid` - インデクサー・データが最新であることを示し、インデックスの再作成は不要です。
-- `indexer` - インデクサーのスペース区切りのリストです。 すべてのインデクサーを同じ方法で設定する場合は、`indexer` を省略します。
+- `invalid` - インデクサーを古いインデクサーとしてマークし、次のcron実行でインデックス再作成を求めるメッセージを表示します（停止しない限り）。
+- `suspended` - インデクサーの自動クロントリガー更新を一時的に停止します。 このステータスは、リアルタイムモードとスケジュールモードの両方に適用され、集中的な操作中に自動更新が一時停止されるようにします。
+- `valid` - インデックス データが最新であることを示します。インデックスを再作成する必要はありません。
+- `indexer` - スペース区切りのインデクサーのリストです。 すべてのインデクサーを同じように設定するには、`indexer`を省略します。
 
-例えば、特定のインデクサーを休止するには、次のように入力します。
+例えば、特定のインデックスを一時停止するには、次のように入力します。
 
 ```bash
 bin/magento indexer:set-status suspended catalog_category_product catalog_product_category
@@ -327,25 +327,25 @@ bin/magento indexer:set-status suspended catalog_category_product catalog_produc
 
 結果の例：
 
-```
+```text
 Index status for Indexer 'Category Products' was changed from 'valid' to 'suspended'.
 Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspended'.
 ```
 
-#### 中断されたインデクサーのステータスの管理
+#### 休止インデクサーステータスの管理
 
-インデクサーが `suspended` ステータスに設定されると、主に自動インデックス再作成と実体化ビュー（Materialized View）の更新に影響します。 概要を次に示します。
+インデクサーが`suspended` ステータスに設定されている場合、主にインデックス再作成とマテリアライズド ビューの自動更新に影響します。 概要を説明します。
 
-**インデックス再作成がスキップされました**：システムは、`suspended` インデクサーと、同じ `shared_index` を共有するインデクサーの自動インデックス再作成をスキップします。 このアプローチでは、中断されたプロセスに関連するデータのインデックス再作成を回避することで、システムリソースを節約できます。
+**インデックス再作成がスキップされました**: システムは、`suspended`個のインデクサーと同じ`shared_index`を共有する任意のインデクサーの自動インデックス再作成をスキップします。 このアプローチは、中断されたプロセスに関連するデータのインデックス再作成を回避することで、システムリソースを節約します。
 
-**マテリアライズド・ビュー更新のスキップ**：再インデックス化と同様に、`suspended` インデックスまたはその共有インデックスに関連するマテリアライズド・ビューに対する更新も一時停止されます。 この一時停止により、休止期間中のシステムの負荷がさらに軽減されます。
+**マテリアライズド ビューの更新がスキップされました**：インデックス再作成と同様に、システムは、`suspended`個のインデクサーまたはその共有インデックスに関連するマテリアライズド ビューの更新も一時停止します。 この一時停止により、サスペンション期間中のシステム負荷がさらに軽減されます。
 
 >[!INFO]
 >
->`indexer:reindex` コマンドは、`suspended` としてマークされたインデクサーを含むすべてのインデクサーのインデックスを再作成するので、自動インデクサーが一時停止した場合の手動での更新に役立ちます。
+>`indexer:reindex` コマンドは、`suspended`としてマークされたインデックスを含むすべてのインデックスを再作成するので、自動更新が一時停止されたときに手動で更新する場合に便利です。
 
 >[!IMPORTANT]
 >
->インデクサーのステータスを `valid` または `suspended` から `invalid` に変更する場合は注意が必要です。 インデックスのないデータが蓄積されている場合は、パフォーマンスが低下する可能性があります。
+>インデクサーのステータスを`suspended`または`invalid`から`valid`に変更するには、注意が必要です。 このアクションは、インデックス付けされていないデータが蓄積されている場合に、パフォーマンスが低下する可能性があります。
 >
->システムのパフォーマンスとデータの整合性を維持するために、ステータスを `valid` に手動で更新する前に、すべてのデータのインデックスが正確に作成されていることを確認することが重要です。
+>システムのパフォーマンスとデータの整合性を維持するために、ステータスを`valid`に手動で更新する前に、すべてのデータが正確にインデックス作成されていることを確認することが重要です。

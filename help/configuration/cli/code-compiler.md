@@ -1,10 +1,10 @@
 ---
 title: コードコンパイラー
-description: コマンドラインからAdobe Commerce コードコンパイラを実行する方法を説明します。 コンパイルプロセスと最適化手法について説明します。
+description: コマンドラインからAdobe Commerce コードコンパイラーを実行する方法を説明します。 コンピレーションプロセスと最適化手法の詳細。
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -13,50 +13,50 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-コードのコンパイルには、以下が含まれます（特定の順序ではありません）。
+コードのコンパイルには、次の内容が含まれます（特に順序は指定されていません）。
 
-- アプリケーションコードの生成（ファクトリ、プロキシ）
-- エリア設定の集計（エリアごとの依存関係のインジェクション設定の最適化）
-- インターセプターの生成（インターセプターのコード生成を最適化）
-- 傍受キャッシュの生成
-- リポジトリーコード生成（API 用に生成されたコード）
+- アプリケーションコードの生成（工場、プロキシ）
+- エリア設定の集計（エリアごとに最適化された依存関係インジェクション設定）
+- インターセプタ生成（インターセプタの最適化されたコード生成）
+- インターセプションキャッシュの生成
+- リポジトリコード生成（API用に生成されたコード）
 - サービスデータ属性の生成（データオブジェクト用に生成された拡張クラス）
 
-コード コンパイル クラスは、[\Magento\Setup\Module\Di\App\Task\Operation](https://github.com/magento/magento2/blob/2.4.8/setup/src/Magento/Setup/Module/Di/App/Task/Operation) 名前空間にあります。
+コード コンパイル クラスは、[\Magento\Setup\Module\Di\App\Task\Operation](https://github.com/magento/magento2/blob/2.4.8/setup/src/Magento/Setup/Module/Di/App/Task/Operation)名前空間で見つけることができます。
 
 シングルテナントコンパイラーを実行するには：
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
-```
+```text
 Generated code and dependency injection configuration successfully.
 ```
 
-Commerce アプリケーションのインストール前にコードをコンパイルするには：
+Commerce アプリケーションをインストールする前にコードをコンパイルするには：
 
-場合によっては、Commerce アプリケーションをインストールする前にコードをコンパイルする必要があります。
+場合によっては、Commerce アプリケーションをインストールする前にコードをコンパイルすることをお勧めします。
 
 1. モジュールを有効にします。
 
-   ```bash
+   ```shell
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   静的コンテンツをクリアするには、`[-c|--clear-static-content]` オプションを使用します。 これは、以前にモジュールを有効または無効にしていて、以前にモジュールに対して生成された静的コンテンツをクリアする必要がある場合に必要です。
+   静的コンテンツを消去するには、`[-c|--clear-static-content]` オプションを使用します。 これは、以前にモジュールを有効または無効にし、以前に生成した静的コンテンツをクリアする必要がある場合に必要です。
 
-   [&#x200B; モジュールの有効化 &#x200B;](../../installation/tutorials/manage-modules.md) を参照してください。
+   [ モジュールを有効にする](../../installation/tutorials/manage-modules.md)を参照してください。
 
 1. コードをコンパイルします。
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
-   ```
+   ```text
    Generated code and dependency injection configuration successfully.
    ```
 
-データベースを使用せずにコードをコンパイルするには、[Magentoをインストールせずに静的ビューファイルをデプロイする &#x200B;](../cli/static-view-file-deployment.md) を参照してください。
+データベースを使用せずにコードをコンパイルするには、「[Magentoをインストールせずに静的ビューファイルをデプロイする](../cli/static-view-file-deployment.md)」を参照してください。
 

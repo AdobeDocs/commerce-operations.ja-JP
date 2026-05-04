@@ -1,69 +1,69 @@
 ---
 title: コマンドラインツール
-description: Adobe Commerce コマンドラインツールを使用して、インストールタスクと設定タスクを実行する方法を説明します。 CLI のコマンドと管理機能を確認します。
+description: Adobe Commerce コマンドラインツールを使用して、インストールおよび設定タスクを実行する方法を説明します。 CLI コマンドと管理機能について説明します。
 exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
 
 # コマンドラインツール
 
-Commerceには、インストールおよび設定タスクを実行する次のような 1 つのコマンドラインインターフェイス（`<magento_root>/bin/magento`）があります。
+Commerceには、次のようなインストールおよび設定タスクを実行する1つのコマンドラインインターフェイス（`<magento_root>/bin/magento`）があります。
 
 - Commerceのインストール（およびデータベーススキーマの更新、デプロイメント設定の作成などの関連タスク）
 - キャッシュのクリア
-- インデックスの管理（インデックスの再作成など）
+- インデックスの再作成を含むインデックスの管理
 - 翻訳辞書と翻訳パッケージの作成
-- ファクトリやプラグインのインターセプタなど、存在しないクラスを生成し、オブジェクトマネージャの依存関係挿入設定を生成する
+- プラグインのファクトリやインターセプタなどの存在しないクラスを生成し、オブジェクトマネージャーの依存関係インジェクション設定を生成する
 - 静的ビューファイルのデプロイ
-- Less からの CSS の作成
+- LessからのCSSの作成
 
-その他の利点は次のとおりです。
+その他の利点には、次のようなものがあります。
 
-- 1 つのコマンド（`<magento_root>/bin/magento list`）に、使用可能なすべてのインストールコマンドと設定コマンドが一覧表示されます。
-- Symfony に基づく一貫性のあるユーザーインターフェイス。
-- CLI は拡張可能なため、サードパーティ開発者がプラグインすることができます。 これには、ユーザーの学習曲線を排除するという追加のメリットがあります。
+- 単一のコマンド （`<magento_root>/bin/magento list`）には、使用可能なすべてのインストールおよび設定コマンドが一覧表示されます。
+- Symfonyに基づいた一貫したユーザーインターフェイス。
+- CLIは拡張可能なので、サードパーティの開発者はCLIに「プラグイン」できます。 これは、ユーザーの学習曲線を排除するという追加の利点があります。
 - 無効なモジュールのコマンドは表示されません。
 
-ここでは、CLI を使用したAdobe Commerce ソフトウェアの設定について説明します。 Commerceのインストールについて詳しくは、[&#x200B; インストールガイド &#x200B;](../../installation/overview.md) の _インストールフロー_ を参照してください。
+このトピックでは、CLIを使用したAdobe Commerce ソフトウェアの設定について説明します。 Commerceのインストールについて詳しくは、_インストールガイド_&#x200B;の[ インストールフロー](../../installation/overview.md)を参照してください。
 
 ## 前提条件
 
-CLI の使用を開始する前に、以下を確認します。
+CLIの使用を開始する前に、次のことを確認してください。
 
-1. お使いのシステムは、『インストール ガイド [&#x200B; の &#x200B;](../../installation/system-requirements.md) システム要件 _に記載されている要件を満たしてい_ す。
-1. [&#x200B; インストール ガイド &#x200B;](../../installation/prerequisites/overview.md) の _前提条件_ で説明されているすべての前提条件タスクを完了しました。
-1. Commerce サーバーにログインしたら、Commerce ファイルシステムへの書き込み権限を持つユーザーに切り替えます。 [&#x200B; インストール ガイド &#x200B;](../../installation/prerequisites/file-system/overview.md) の _ファイル システム所有者に切り替える_ を参照してください。
+1. お使いのシステムは、_インストールガイド_&#x200B;の[ システム要件](../../installation/system-requirements.md)で説明されている要件を満たしています。
+1. _インストールガイド_&#x200B;の[前提条件](../../installation/prerequisites/overview.md)で説明したすべての前提条件タスクを完了しました。
+1. Commerce サーバーにログインしたら、Commerce ファイルシステムへの書き込み権限を持つユーザーに切り替えます。 _インストールガイド_&#x200B;の「[ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)への切り替え」を参照してください。
 
 ## コマンドの実行
 
-bash シェルの場合は、次の構文を使用してファイルシステム所有者に切り替え、コマンドを同時に入力します。
+bash シェルの場合は、次の構文を使用してファイルシステム所有者に切り替え、同時にコマンドを入力します。
 
-```bash
+```shell
 su <file system owner> -s /bin/bash -c <command>
 ```
 
 ファイルシステムの所有者がログインを許可しない場合は、次を使用できます。
 
-```bash
+```shell
 sudo -u <file system owner> <command>
 ```
 
-**任意のディレクトリから CLI コマンドを実行するには**:
+**任意のディレクトリからCLI コマンドを実行するには**:
 
-`<magento_root>/bin` をシステム `PATH` に追加します。
+システム `PATH`に`<magento_root>/bin`を追加します。
 
-CentOS 用の bash シェルの例：
+CentOSのbash シェルの例：
 
-```bash
+```shell
 export PATH=$PATH:/var/www/html/magento2/bin
 ```
 
-オプションで、次を実行できます。
+必要に応じて、次を実行できます。
 
-- `cd <magento_root>/bin` として `./magento <command name>` び出して実行
+- `cd <magento_root>/bin`として実行`./magento <command name>`
 - `<magento_root>/bin/magento <command name>`
-- `<magento_root>` は、web サーバーの docroot のサブディレクトリです。
+- `<magento_root>`はweb サーバーのdocrootのサブディレクトリです

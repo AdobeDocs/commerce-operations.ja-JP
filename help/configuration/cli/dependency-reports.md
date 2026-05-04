@@ -1,10 +1,10 @@
 ---
 title: 依存関係レポート
-description: Adobe Commerceでモジュール、循環、フレームワークの依存関係を示す依存関係レポートを作成する方法を説明します。 分析およびレポートツールについて説明します。
+description: Adobe Commerceで、モジュール、循環型、フレームワークの依存関係を示す依存関係レポートを作成する方法について説明します。 分析およびレポートツールの詳細。
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 次のタイプのレポートを実行できます。
 
-- **モジュールの依存関係**：モジュール間の依存関係の合計数と、依存関係がハードかソフトかを表示します。
-- **循環依存関係**：依存関係チェーンの合計数と、各モジュールの循環依存関係の数およびリストを表示します。
-- **フレームワークの依存関係**:Commerce フレームワークに対する依存関係の合計数をモジュール別に表示します（各ライブラリのフレームワークエントリの合計数を含む）。
+- **モジュール依存関係**: モジュール間の依存関係の合計数と、依存関係がハードかソフトかを示します。
+- **循環依存関係**：依存関係チェーンの合計数と、各モジュールの循環依存関係の数とリストを表示します。
+- **Framework dependencies**: Commerce フレームワークの依存関係の合計数（各ライブラリのフレームワークエントリの合計数を含む）を表示します。
 
 コメント内の依存関係も依存関係です。
 
@@ -25,21 +25,21 @@ ht-degree: 0%
 
 コマンドオプション：
 
-```bash
+```shell
 bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework} [-d|--directory="<path>"] [-o|--output="<path and filename"]
 ```
 
-次の表に、このコマンドのオプション、パラメーター、および値を示します。
+次の表に、このコマンドのオプション、パラメーターおよび値を示します。
 
-| パラメーター | 値 | 必須？ |
+| パラメーター | 値 | 必要ですか？ |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------- | --------- |
 | `show-modules` | モジュールの依存関係レポート。 | はい |
 | `show-modules-circular` | 循環依存関係レポート。 | はい |
-| `show-framework` | フレームワークの依存関係レポート。 | はい |
-| `-d --directory` | レポートデータの検索を開始するベースディレクトリへのパス。 | 不可 |
-| `-o --output` | レポートのコンマ区切り値（csv）出力ファイルの絶対ファイルシステムパスとファイル名を指定します。 | 不可 |
+| `show-framework` | フレームワークの依存関係レポート： | はい |
+| `-d --directory` | レポートデータの検索を開始するベースディレクトリへのパス。 | いいえ |
+| `-o --output` | レポート用のコンマ区切り値（csv）出力ファイルの絶対ファイルシステムパスとファイル名を指定します。 | いいえ |
 
-ディレクトリまたはファイル名が引数として渡されない場合、次のアプリケーションルートがデフォルトのディレクトリとして使用され、次のデフォルトのファイル名が使用されます。
+ディレクトリまたはファイル名が引数として渡されない場合、次のアプリケーションルートがデフォルトディレクトリとして使用され、次のデフォルトファイル名が使用されます。
 
 | コマンド | ファイル名 |
 | ----------------------------------------------------- | ----------------------------------- |
@@ -47,11 +47,11 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 | `bin/magento info:dependencies:show-modules-circular` | `modules-circular-dependencies.csv` |
 | `bin/magento info:dependencies:show-framework` | `framework-dependencies.csv` |
 
-### モジュール依存関係レポートのサンプル
+### モジュール依存関係レポートの例
 
-次に、サンプルモジュール依存関係レポートの出力の一部を示します。
+次に、モジュール依存関係レポートのサンプルの出力の一部を示します。
 
-```
+```text
 "","All","Hard","Soft"
 "Total number of dependencies","602","587","15"
 
@@ -71,11 +71,11 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 " -- magento/module-import-export","","1","0"
 ```
 
-### 循環依存関係レポートのサンプル
+### 循環依存関係レポートの例
 
-循環依存関係レポートのサンプルの出力の一部を次に示します。
+以下は、循環依存関係レポートのサンプルの出力の一部です。
 
-```
+```text
 "Circular dependencies:","Total number of chains"
 "","848"
 
@@ -97,11 +97,11 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 "magento/module-config->magento/module-backend->magento/module-sales->magento/module-checkout->magento/module-customer->magento/module-review->magento/module-catalog->magento/module-catalog-rule->magento/module-rule->magento/module-eav->magento/module-config"
 ```
 
-### フレームワーク依存関係レポートのサンプル
+### フレームワーク依存関係レポートの例
 
-サンプルフレームワークの依存関係レポートの出力の一部を次に示します。
+以下は、フレームワーク依存関係レポートのサンプルの出力の一部です。
 
-```
+```text
 "Dependencies of framework:","Total number"
 "","111"
 

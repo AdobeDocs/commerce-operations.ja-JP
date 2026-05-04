@@ -1,83 +1,83 @@
 ---
-title: ACSD-53925:[!UICONTROL Product Carousel] でCMS ブロックを保存できない
-description: ACSD-53925 パッチを適用すると、「catalog_product_price」のディメンションモードが web サイトに設定されている場合、管理者が製品カルーセルでCMS ブロックを保存できないAdobe Commerceの問題を修正できます。
+title: 'ACSD-53925: [!UICONTROL Product Carousel]でCMS ブロックを保存できません'
+description: 「catalog_product_price」のディメンションモードがweb サイトに設定されている場合、管理者がProduct Carouselを使用してCMS ブロックを保存できないAdobe Commerceの問題を修正するには、ACSD-53925 パッチを適用します。
 feature: CMS, Page Builder, Price Indexer, Products
 role: Admin, Developer
 exl-id: f6d286ab-d904-4f08-8265-99632f74b88a
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
-# ACSD-53925:*[!UICONTROL Product Carousel]* でCMS ブロックを保存できない
+# ACSD-53925: *[!UICONTROL Product Carousel]*&#x200B;でCMS ブロックを保存できません
 
-*[!UICONTROL Product Carousel]* のディメンションモードが web サイトに設定されている場合、管理者が `catalog_product_price` でCMS ブロックを保存できない問題が ACSD-53925 パッチで修正されました。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.43 がインストールされている場合に使用できます。 パッチ ID は ACSD-53925 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-53925 パッチでは、`catalog_product_price`のディメンションモードがweb サイトに設定されている場合、管理者が&#x200B;*[!UICONTROL Product Carousel]*&#x200B;を含むCMS ブロックを保存できない問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.43がインストールされている場合に利用できます。 パッチ IDはACSD-53925です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p3
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 ～ 2.4.6-p3
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 - 2.4.6-p3
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-*[!UICONTROL Product Carousel]* のディメンションモードが web サイトに設定されている場合、管理者が `catalog_product_price` でCMS ブロックを保存できない。
+`catalog_product_price`のディメンション モードがweb サイトに設定されている場合、管理者は&#x200B;*[!UICONTROL Product Carousel]*&#x200B;のCMS ブロックを保存できません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 次の 2 つのシンプルな製品を作成します。
+1. シンプルな商品を2つ作成する：
    * simple1 - $10
-   * シンプル 2 - 20 ドル
-1. 単純な製品 SKU に基づいた 2 つのオプションを持つバンドル製品「*bundle1-dyn*」を作成します。
-1. 製品価格インデクサーの分析コード モードを設定します：
+   * simple2 - $20
+1. シンプルな製品SKUに基づいて、2つのオプションを含むバンドル製品&#39;*bundle1-dyn*&#39;を作成します。
+1. 製品価格インデクサーのディメンション モードを設定します。
 
    `bin/magento indexer:set-dimensions-mode catalog_product_price website`
 
-1. **[!UICONTROL Content]**/**[!UICONTROL Blocks]** に移動し、新しいCMS ブロックを作成します。
-1. [!DNL Page Builder] を使用してコンテンツを編集します。
-   * *[!UICONTROL Row]* 要素を追加
-   * *[!UICONTROL Products]* 要素を追加
-   * Select *[!UICONTROL Product Carousel]*
-   * 製品 SKU を入力 – *bundle1-dyn*
+1. **[!UICONTROL Content]** > **[!UICONTROL Blocks]**&#x200B;に移動し、新しいCMS ブロックを作成します。
+1. [!DNL Page Builder]を使用してコンテンツを編集します：
+   * *[!UICONTROL Row]*&#x200B;要素を追加
+   * *[!UICONTROL Products]*&#x200B;要素を追加
+   * *[!UICONTROL Product Carousel]*&#x200B;を選択
+   * 製品SKUを入力 – *bundle1-dyn*
 1. CMS ブロックを保存します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-ユーザーがエラーなく製品カルーセルを追加できる。
+ユーザーはエラーなしで製品カルーセルを追加できます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-* UI に次のメッセージがスローされます：*申し訳ありません。このコンテンツの生成中にエラーが発生しました*
-* `var/log/exception.log` には、次のエラーが含まれます。
+* UIにメッセージがスローされました：*申し訳ありません。このコンテンツの生成中にエラーが発生しました*
+* `var/log/exception.log`に次のエラーが含まれています：
 
-  ```
+  ```text
   [2023-08-18T20:58:14.533374+00:00] report.CRITICAL: PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'username_dev.catalog_product_index_price_ws0' doesn't exist in /test/lib/internal/Magento/Framework/DB/Statement/Pdo/Mysql.php:90
   ```
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

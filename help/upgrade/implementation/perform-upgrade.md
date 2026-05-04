@@ -1,10 +1,10 @@
 ---
 title: アップグレードの実行
-description: Adobe Commerceのオンプレミスデプロイメントをアップグレードするには、次の手順に従います。
+description: Adobe Commerceのオンプレミス導入をアップグレードするには、次の手順に従います。
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -12,237 +12,236 @@ ht-degree: 0%
 
 # アップグレードの実行
 
-次の方法でインストールした場合は、コマンドラインからAdobe Commerce アプリケーションの _オンプレミス_ デプロイメントをアップグレードできます。
+次の方法でソフトウェアをインストールした場合、コマンドラインからAdobe Commerce アプリケーションの&#x200B;_オンプレミス_&#x200B;のデプロイメントをアップグレードできます。
 
-- `composer create-project` コマンドを使用して Composer メタパッケージをダウンロードします。
-- 圧縮されたアーカイブをインストールしています。
+- `composer create-project` コマンドを使用してComposer メタパッケージをダウンロードしています。
+- 圧縮アーカイブのインストール。
 
 >[!NOTE]
 >
->- クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、クラウドガイドの [Commerce バージョンのアップグレード &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=ja) を参照してください。
->- GitHub リポジトリのクローンを作成した場合は、この方法を使用してアップグレードしないでください。 [Git ベースのインストールのアップグレード &#x200B;](../developer/git-installs.md) を参照してください。
+>- クラウドインフラストラクチャプロジェクト上のAdobe Commerceについては、「クラウドガイド」の「[Commerce バージョンのアップグレード ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html)」を参照してください。
+>- GitHub リポジトリをクローンした場合は、この方法を使用してアップグレードしないでください。 [Git ベースのインストールのアップグレード ](../developer/git-installs.md)を参照してください。
 
-以下の手順は、Composer パッケージ マネージャを使用してアップグレードする方法を示しています。 Adobe Commerce 2.4.2 では、Composer 2 のサポートが導入されました。 &lt;2.4.1 からアップグレードする場合は、まず Composer 1 を使用して Composer 2 と互換性のあるバージョン（たとえば 2.4.2）にアップグレードする必要があります _前に_ 2.4.2 を超えるアップグレードについては Composer 2 にアップグレードします）。 また、PHP の [&#x200B; サポート対象バージョン &#x200B;](../../installation/system-requirements.md) を実行する必要があります。
+次の手順では、Composer パッケージマネージャーを使用してアップグレードする方法を示します。 Adobe Commerce 2.4.2では、Composer 2のサポートが導入されました。 &lt;2.4.1からアップグレードする場合は、まずComposer 1 _before_ アップグレードを使用してComposer 2と互換性のあるバージョン（2.4.2など）にアップグレードし、2.4.2を超えるアップグレードを実行する必要があります。 さらに、PHPの[ サポートされているバージョン ](../../installation/system-requirements.md)を実行している必要があります。
 
 >[!WARNING]
 >
->Adobe Commerceのアップグレード手順が変更されました。 `magento/composer-root-update-plugin` パッケージの新しいバージョンをインストールする必要があります（[&#x200B; 前提条件 &#x200B;](../prepare/prerequisites.md) を参照）。 また、アップグレード用のコマンドが `composer require magento/<package_name>` から `composer require-commerce magento/<package_name>` に変更されました。
+>Adobe Commerceのアップグレード手順が変更されました。 新しいバージョンの`magento/composer-root-update-plugin` パッケージをインストールする必要があります（[前提条件](../prepare/prerequisites.md)を参照）。 さらに、アップグレード用のコマンドが`composer require magento/<package_name>`から`composer require-commerce magento/<package_name>`に変更されました。
 
 ## 始める前に
 
-アップグレードプロセスを開始する前に、[&#x200B; アップグレードの前提条件 &#x200B;](../prepare/prerequisites.md) を満たして、環境を準備する必要があります。
+アップグレード プロセスを開始する前に、環境を準備するには、[ アップグレードの前提条件](../prepare/prerequisites.md)を完了する必要があります。
 
 >[!IMPORTANT]
 >
->Adobe Commerce バージョン 2.4.6-p13 には、下位互換性のない変更を含む古いマイナーバージョンからのスムーズなアップグレードに必要な `magento/inventory-composer-installer` パッケージが含まれていません。<br>
->&#x200B;>2.3 から 2.4.6-p13 にアップグレードする場合は、アップグレードする前に次のコマンドを実行して `magento/inventory-composer-installer` パッケージをインストールします。
->&#x200B;>`composer require magento/inventory-composer-installer`
+>Adobe Commerce バージョン 2.4.6-p13には、`magento/inventory-composer-installer` パッケージが含まれていません。これは、下位互換性のない変更を含む古いマイナーバージョンからスムーズにアップグレードするために必要です。<br>
+>2.3から2.4.6-p13にアップグレードする場合は、アップグレードする前に次のコマンドを実行して`magento/inventory-composer-installer` パッケージをインストールします。>`composer require magento/inventory-composer-installer`
 
 ## パッケージの管理
 
 >[!NOTE]
 >
->様々なリリースレベルの指定に関するヘルプについては、このセクションの最後にある例を参照してください。 例えば、品質向上パッチやセキュリティパッチなどです。 Composer でこれらのパッケージが見つからない場合は、Adobe Commerce サポートにお問い合わせください。
+>様々なリリースレベルを指定する方法については、この節の最後にある例を参照してください。 例えば、品質パッチやセキュリティパッチなどです。 Composerでこれらのパッケージが見つからない場合は、Adobe Commerce サポートにお問い合わせください。
 
 1. メンテナンスモードに切り替えて、アップグレードプロセス中にストアにアクセスできないようにします。
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
-   その他のオプションについては、[&#x200B; メンテナンスモードの有効化または無効化 &#x200B;](../../installation/tutorials/maintenance-mode.md) を参照してください。 オプションで、[&#x200B; カスタムメンテナンスモードページ &#x200B;](../troubleshooting/maintenance-mode-options.md) を作成できます。
+   その他のオプションについては、[ メンテナンスモードを有効または無効にする](../../installation/tutorials/maintenance-mode.md)を参照してください。 オプションで、[ カスタムメンテナンスモードページ ](../troubleshooting/maintenance-mode-options.md)を作成できます。
 
-1. メッセージキューコンシューマーなどの非同期プロセスの実行中にアップグレードプロセスを開始すると、データが破損する可能性があります。 データの破損を防ぐには、すべての cron ジョブを無効にします。
+1. メッセージキューコンシューマーなどの非同期プロセスの実行中にアップグレードプロセスを開始すると、データが破損する可能性があります。 データの破損を防ぐには、すべてのcron ジョブを無効にします。
 
-   クラウドインフラストラクチャー上のAdobe Commerce（_A） :_
+   _Adobe Commerce（クラウドインフラストラクチャ上） :_
 
-   ```bash
+   ```shell
    ./vendor/bin/ece-tools cron:disable
    ```
 
-   Magento Open Source（_D） :_
+   _Magento Open Source :_
 
-   ```bash
+   ```shell
    bin/magento cron:remove
    ```
 
-1. すべてのメッセージキューコンシューマーを手動で開始して、すべてのメッセージが消費されるようにします。
+1. すべてのメッセージキューのコンシューマーを手動で開始して、すべてのメッセージが確実に消費されるようにします。
 
-   ```bash
+   ```shell
    bin/magento cron:run --group=consumers
    ```
 
-   cron ジョブが完了するのを待ちます。 ジョブのステータスは、プロセスビューアで監視することも、すべてのプロセスが完了するまで `ps aux | grep 'bin/magento queue'` コマンドを複数回実行して監視することもできます。
+   cron ジョブが完了するのを待ちます。 すべてのプロセスが完了するまで、プロセスビューアを使用するか、`ps aux | grep 'bin/magento queue'` コマンドを複数回実行することで、ジョブのステータスを監視できます。
 
 1. `composer.json` ファイルのバックアップを作成します。
 
-   ```bash
+   ```shell
    cp composer.json composer.json.bak
    ```
 
-1. 必要に応じて、特定のパッケージを追加または削除します。
+1. ニーズに基づいて特定のパッケージを追加または削除します。
 
    例えば、Magento Open SourceからAdobe Commerceにアップグレードする場合は、Magento Open Source パッケージを削除します。
 
-   ```bash
+   ```shell
    composer remove magento/product-community-edition --no-update
    ```
 
    サンプルデータをアップグレードすることもできます。
 
-   ```bash
+   ```shell
    composer require <sample data module-1>:<version> ... <sample data module-n>:<version> --no-update
    ```
 
-   - Adobe Commerce（_D） :_
+   - _Adobe Commerce :_
 
-     ```bash
+     ```shell
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
      ```
 
-   - Magento Open Source（_D） :_
+   - _Magento Open Source :_
 
-     ```bash
+     ```shell
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
      ```
 
-1. 次の `composer require-commerce` コマンド構文を使用してインスタンスをアップグレードします。
+1. 次の`composer require-commerce` コマンド構文を使用してインスタンスをアップグレードします。
 
-   ```bash
+   ```shell
    composer require-commerce magento/<product> <version> --no-update [--interactive-root-conflicts] [--force-root-updates] [--help]
    ```
 
-   次のようなコマンドオプションがあります。
+   コマンドオプションには次のものが含まれます。
 
-   - `<product>` – （必須）アップグレードするパッケージ。 オンプレミスのインストールの場合、この値は `product-community-edition` または `product-enterprise-edition` である必要があります。
+   - `<product>` – （必須）アップグレードするパッケージ。 オンプレミス インストールの場合、この値は`product-community-edition`または`product-enterprise-edition`である必要があります。
 
-   - `<version>` – （必須）アップグレード先のAdobe Commerceのバージョン。 例：`2.4.3`。
+   - `<version>` – （必須）アップグレードするAdobe Commerceのバージョン。 例：`2.4.3`。
 
    - `--no-update` – （必須）依存関係の自動更新を無効にします。
 
-   - `--interactive-root-conflicts` – （オプション）以前のバージョンの古い値や、アップグレード先のバージョンと一致しないカスタマイズされた値を、インタラクティブに表示および更新できます。
+   - `--interactive-root-conflicts` – （オプション）以前のバージョンの古い値、またはアップグレードするバージョンと一致しないカスタマイズされた値をインタラクティブに表示して更新できます。
 
-   - `--force-root-updates` – （任意）競合するカスタム値をすべて、期待されるCommerce値で上書きします。
+   - `--force-root-updates` – （オプション）競合するすべてのカスタム値を、想定されるCommerce値で上書きします。
 
-   - `--help` – （任意）プラグインの使用方法の詳細を提供します。
+   - `--help` – （オプション）プラグインの使用状況に関する詳細を提供します。
 
-   `--interactive-root-conflicts` も `--force-root-updates` も指定されていない場合、コマンドは競合する既存の値を保持し、警告メッセージを表示します。 このプラグインについて詳しくは、[&#x200B; プラグインの使用方法の README](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md) を参照してください。
+   `--interactive-root-conflicts`と`--force-root-updates`のどちらも指定しない場合、コマンドは競合している既存の値を保持し、警告メッセージを表示します。 プラグインについて詳しくは、[ プラグインの使用状況README](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md)を参照してください。
 
 1. 依存関係を更新します。
 
-   ```bash
+   ```shell
    composer update
    ```
 
 ### 例 – 使用可能なバージョンのリスト
 
-使用可能な 2.4.x バージョンの完全なリストを表示するには：
+使用可能な2.4.x バージョンの完全なリストを表示するには、次の手順を実行します。
 
 _Magento Open Source_:
 
-```bash
+```shell
 composer show magento/product-community-edition 2.4.* --available | grep -m 1 versions
 ```
 
 _Adobe Commerce_:
 
-```bash
+```shell
 composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 versions
 ```
 
 ### 例 – 品質パッチ
 
-品質向上パッチには、主に機能 _および_ セキュリティ修正が含まれています。 ただし、下位互換性のある新しい機能が含まれることもあります。 Composer を使用して品質パッチをダウンロードします。
+品質パッチには、主に機能的な&#x200B;_および_&#x200B;のセキュリティ修正が含まれています。 しかし、新しい後方互換性のある機能を含むことがあります。 Composerを使用して、高品質のパッチをダウンロードします。
 
 _Adobe Commerce_:
 
-```bash
+```shell
 composer require-commerce magento/product-enterprise-edition 2.4.6 --no-update
 ```
 
 _Magento Open Source_:
 
-```bash
+```shell
 composer require-commerce magento/product-community-edition 2.4.6 --no-update
 ```
 
 ### 例 – セキュリティパッチ
 
-セキュリティパッチには、セキュリティ修正のみが含まれています。 これらは、アップグレードプロセスをより速く、より簡単にするように設計されています。 セキュリティパッチでは、Composer の命名規則 `2.4.x-px` を使用します。
+セキュリティパッチにはセキュリティ修正のみが含まれています。 アップグレードプロセスをより迅速かつ容易に行えるように設計されています。 セキュリティパッチでは、Composerの命名規則`2.4.x-px`が使用されます。
 
 _Adobe Commerce_:
 
-```bash
+```shell
 composer require-commerce magento/product-enterprise-edition 2.4.6-p3 --no-update
 ```
 
 _Magento Open Source_:
 
-```bash
+```shell
 composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 ```
 
 ## メタデータを更新
 
-1. 必要に応じて、`"name"` ファイルの `"version"`、`"description"`、`composer.json` フィールドを更新します。
+1. 必要に応じて、`composer.json` ファイルの`"name"`、`"version"`および`"description"` フィールドを更新します。
 
    >[!NOTE]
    >
-   >`composer.json` ファイル内のメタデータの更新は、機能するのではなく、完全に表面的なものです。
+   >`composer.json` ファイルのメタデータの更新は、完全に表面的で、機能しません。
 
-1. 更新を適用します。
+1. アップデートの適用。
 
-   ```bash
+   ```shell
    composer update
    ```
 
-1. `var/` サブディレクトリと `generated/` サブディレクトリをクリアします。
+1. `var/`と`generated/`個のサブディレクトリをクリアします。
 
-   ```bash
+   ```shell
    rm -rf var/cache/*
    ```
 
-   ```bash
+   ```shell
    rm -rf var/page_cache/*
    ```
 
-   ```bash
+   ```shell
    rm -rf generated/code/*
    ```
 
    >[!NOTE]
    >
-   >Redis や Memcached など、ファイルシステム以外のキャッシュストレージを使用する場合は、手動でキャッシュをクリアする必要があります。
+   >RedisやMemcachedなどのファイルシステム以外のキャッシュストレージを使用する場合は、そのキャッシュも手動でクリアする必要があります。
 
 1. データベーススキーマとデータを更新します。
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. メンテナンスモードを無効にします。
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
-1. _（任意）_ ワニスを再起動します。
+1. _（オプション）_ Varnishを再起動します。
 
-   ページのキャッシュに Varnish を使用する場合は、再起動します。
+   ページのキャッシュにVarnishを使用する場合は、再起動します。
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 
-## 作業内容を確認する
+## 作品を確認する
 
-アップグレードが成功したかどうかを確認するには、web ブラウザーでストアフロント URL を開きます。 アップグレードに失敗した場合、ストアフロントが正しく読み込まれません。
+アップグレードが成功したかどうかを確認するには、web ブラウザーでストアフロント URLを開きます。 アップグレードに失敗した場合、ストアフロントが正しく読み込まれません。
 
-アプリケーションが `We're sorry, an error has occurred while generating this email.` エラーで失敗した場合：
+アプリケーションが`We're sorry, an error has occurred while generating this email.` エラーで失敗した場合：
 
-1. [&#x200B; ファイルシステムの所有権と権限 &#x200B;](../../installation/prerequisites/file-system/configure-permissions.md) を `root` 権限を持つユーザーとしてリセットします。
+1. [ ファイルシステムの所有権と権限](../../installation/prerequisites/file-system/configure-permissions.md)を`root`権限を持つユーザーとしてリセットします。
 1. 次のディレクトリをクリアします。
    - `var/cache/`
    - `var/page_cache/`
    - `generated/code/`
-1. Web ブラウザーでストアフロントを再度確認します。
+1. もう一度web ブラウザーでストアフロントを確認します。

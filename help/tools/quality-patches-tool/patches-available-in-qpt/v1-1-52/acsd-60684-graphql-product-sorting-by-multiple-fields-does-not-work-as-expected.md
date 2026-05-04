@@ -1,45 +1,45 @@
 ---
-title: 'ACSD-60684: [!DNL GraphQL]  製品を複数のフィールドで並べ替えても、期待どおりに動作しない'
-description: ACSD-60684 パッチを適用すると、変数で並べ替えを渡した場合に  [!DNL GraphQL]  複数フィールドで並べ替えが機能しないAdobe Commerceの問題を修正できます。
+title: 'ACSD-60684: [!DNL GraphQL] 複数のフィールドによる製品の並べ替えが期待どおりに機能しない'
+description: ACSD-60684 パッチを適用して、変数で並べ替えが渡されたときに [!DNL GraphQL] 複数のフィールドによる商品の並べ替えが機能しないAdobe Commerceの問題を修正します。
 feature: GraphQL, Products, Search
 role: Admin, Developer
 exl-id: 1c29299b-c85f-4166-886b-357a1486e67e
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
-# ACSD-60684：複数のフィールド [!DNL GraphQL] よる製品の並べ替えが期待どおりに動作しない
+# ACSD-60684：複数のフィールドによる[!DNL GraphQL]製品の並べ替えが期待どおりに機能しない
 
-ACSD-60684 パッチは、複数のフィールドで並べ替え [!DNL GraphQL] れた製品が、変数で並べ替えを渡した場合に機能しない問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.52 がインストールされている場合に使用できます。 パッチ ID は ACSD-60684 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-60684 パッチでは、変数で並べ替えが渡されたときに、複数のフィールドで[!DNL GraphQL]製品の並べ替えが機能しない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.52がインストールされている場合に利用できます。 パッチ IDはACSD-60684です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p6
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6 - 2.4.6-p8
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-複数 [!DNL GraphQL] フィールドで製品を並べ替えても、期待どおりに動作しません。
+複数のフィールドによる[!DNL GraphQL]製品の並べ替えは期待どおりに機能しません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. A、B、C という名前の 3 つの製品を作成します。
-1. 次の [!DNL GraphQL] を使用して、製品を取得します。
+1. A、B、Cという名前の3つの商品を作成します。
+1. 次の[!DNL GraphQL]を使用して製品を取得します。
 
-   ```
+   ```graphql
    query FindProducts($search: String, $filter:ProductAttributeFilterInput!, $pageSize: Int!, $currentPage: Int!, $sort: ProductAttributeSortInput!){
        products(search: $search, filter: $filter, pageSize: $pageSize, currentPage: $currentPage, sort: $sort){
            total_count
@@ -65,7 +65,7 @@ ACSD-60684 パッチは、複数のフィールドで並べ替え [!DNL GraphQL]
 
    変数：
 
-   ```
+   ```json
    {
        "search": null,
        "filter": {
@@ -79,25 +79,25 @@ ACSD-60684 パッチは、複数のフィールドで並べ替え [!DNL GraphQL]
    }  
    ```
 
-1. `sort` : `DESC` を使用してクエリを繰り返します。
+1. `sort` : `DESC`でクエリを繰り返します
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-結果は適切に並べ替えられます。
+結果は適切に分類されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-選択されている並べ替えは適用されていません。
+選択された並べ替えが適用されていません。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

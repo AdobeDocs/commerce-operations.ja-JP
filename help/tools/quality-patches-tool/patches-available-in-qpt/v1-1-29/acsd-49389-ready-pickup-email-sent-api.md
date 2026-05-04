@@ -1,52 +1,52 @@
 ---
-title: ACSD-49389：受け取りの準備が整っていない場合に API から送信される受け取りの準備ができたメール
-description: ACSD-49389 パッチを適用すると、注文の受け取りの準備が整っていない場合に、API から受け取り準備完了のメールが送信されるAdobe Commerceの問題が修正されます。
+title: ACSD-49389：受け取り準備ができていない場合にAPIで送信される受け取り用メールの準備
+description: ACSD-49389 パッチを適用して、注文が受け取り準備ができていない場合に受け取り準備完了メールがAPIによって送信されるAdobe Commerceの問題を修正します。
 feature: REST, Communications
 role: Admin
 exl-id: d1bc430a-3021-40d1-9091-db8ed9125619
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
 
-# ACSD-49389：受け取りの準備が整っていない場合に API から送信される受け取りの準備ができたメール
+# ACSD-49389：受け取り準備ができていない場合にAPIで送信される受け取り用メールの準備
 
-ACSD-49389 パッチは、注文が集荷の準備ができていない場合に、API によって集荷準備完了のメールが送信される問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.29 がインストールされている場合に使用できます。 パッチ ID は ACSD-49389 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-49389 パッチは、注文が受け取り準備ができていない場合にAPIによって受け取り準備完了メールが送信される問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.29がインストールされている場合に利用できます。 パッチ IDはACSD-49389です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.0 ～ 2.4.6
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.0 - 2.4.6
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[QPT ランディングページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[QPT ランディングページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-注文が受け取り準備ができていない場合、受け取り準備が整ったメールが API から送信されます。
+注文の受け取り準備が整っていない場合、APIによって受け取り準備完了メールが送信されます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. メソッド *[!UICONTROL In-Store Delivery]* 有効にします。
-1. 集荷場所が有効な在庫ソースを作成します。
-1. 上記で作成したソースを使用して、メイン web サイトを使用して新しい在庫を作成します。
-1. 同じソースを割り当てる商品を作成します。
-1. 在庫数量= 1 を設定します。
-1. ストアフロントから *[!UICONTROL In-Store Delivery]* メソッドを使用して、手順 4 で作成した製品をチェックアウトします。
+1. *[!UICONTROL In-Store Delivery]* メソッドを有効にします。
+1. 受け取り場所が有効になっているストックソースを作成します。
+1. 上記のソースでメイン web サイトを使用して新しいストックを作成します。
+1. 同じソースを割り当てる製品を作成します。
+1. 在庫数量を設定= 1。
+1. ストアフロントの&#x200B;*[!UICONTROL In-Store Delivery]* メソッドを使用して、手順4で作成した製品をチェックアウトします。
 1. 注文の請求書を作成します。
-1. 製品の数量を *0* に設定して、在庫切れにします。
-1. 次の API リクエストを投稿します。
+1. 商品の数量を&#x200B;*0*&#x200B;に設定し、在庫切れにします。
+1. 次のAPI リクエストを投稿します。
 
-```
+```json
 {
     "orderIds": [
         1
@@ -54,27 +54,27 @@ ACSD-49389 パッチは、注文が集荷の準備ができていない場合に
 }
 ```
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-集荷準備完了の E メールは送信されません。
+受け取り準備完了の電子メールは送信されません。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-API が返ります *注文は受け取りの準備ができていません* が、受け取りの準備が整ったメールが送信されます。
+APIが&#x200B;*注文は受け取り準備ができていませんが*&#x200B;電子メールを受け取る準備ができていることを返します。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[&#x200B; ガイドの &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)QPT で使用可能なパッチ [!DNL Quality Patches Tool] を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[!DNL Quality Patches Tool] ガイドの[QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で使用可能なパッチを参照してください。

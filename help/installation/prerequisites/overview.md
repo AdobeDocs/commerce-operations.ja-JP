@@ -1,53 +1,53 @@
 ---
-title: オンプレミスでのインストールの前提条件
-description: Adobe Commerceのオンプレミスインストールに必要なソフトウェア依存関係について詳しく説明します。
+title: オンプレミスのインストールの前提条件
+description: Adobe Commerceのオンプレミスインストールに必要なソフトウェアの依存関係について詳しくは、こちらを参照してください。
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '356'
 ht-degree: 1%
 
 ---
 
-# オンプレミスでのインストールの前提条件
+# オンプレミスのインストールの前提条件
 
-Adobe Commerceをインストールする前に、次の作業を行う必要があります。
+Adobe Commerceをインストールする前に、次の操作を行う必要があります。
 
-* 「[Commerce オンプレミス &#x200B;](../system-requirements.md)」タブに表示されている *システム要件* を満たす 1 つ以上のホストを設定します。
-* ロードバランシングを使用して複数の web ノードを設定する場合は、システムのその部分を設定およびテストしてから _アプリケーションをインストール_ ます。
-* 問題が発生した場合にロールバックできるように、インストール中の様々な時点でシステム全体をバックアップできることを確認してください。
+* 「*Commerce オンプレミス*」タブに記載されている[ システム要件](../system-requirements.md)を満たす1つ以上のホストを設定します。
+* 負荷分散を使用して複数のweb ノードを設定する場合は、アプリケーションをインストールする&#x200B;_前_&#x200B;に、システムのその部分を設定してテストします。
+* インストール中のさまざまな時点でシステム全体をバックアップして、問題が発生した場合にロールバックできるようにします。
 
 >[!NOTE]
 >
->ここでは、Adobe Commerceを **development environment** にインストールし、マシンへのルートユーザーアクセス権を持ち、マシンのセキュリティを高く保つ必要がない **ことを前提** しています。 より安全なマシンを設定する場合は、ネットワーク管理者に問い合わせてサポートを依頼することを強くお勧めします。
+>マシンへのルートユーザーアクセス権を持つ&#x200B;**開発環境**&#x200B;にAdobe Commerceをインストールし、マシンのセキュリティを高く確保する必要がないことを&#x200B;**および**&#x200B;と仮定します。 より安全なマシンを設定する場合は、追加のサポートを得るためにネットワーク管理者に相談することを強くお勧めします。
 
-オペレーティングシステムのソフトウェアを更新およびアップグレードすることを強くお勧めします。 これらのアップグレードにより、将来の問題を防ぐためのセキュリティとソフトウェアの修正が提供される場合があります。 これは何を意味するのか分からない？ [&#x200B; インストールの概要ページ &#x200B;](../overview.md) をご覧ください。
+オペレーティングシステムのソフトウェアを更新してアップグレードすることを強くお勧めします。 これらのアップグレードは、将来の問題を防ぐ可能性のあるセキュリティとソフトウェアの修正を提供します。 どういうことか分からない？ [ インストールの概要ページ ](../overview.md)をご覧ください。
 
-`root` 権限を持つユーザーとして、次のコマンドを入力します。
+`root`権限を持つユーザーとして次のコマンドを入力します。
 
 * Ubuntu
 
-  ```bash
+  ```shell
   apt-get update
   ```
 
-  ```bash
+  ```shell
   apt-get upgrade
   ```
 
 * CentOS
 
-  ```bash
+  ```shell
   yum -y update
   ```
 
-  ```bash
+  ```shell
   yum -y upgrade
   ```
 
-## 前提条件の確認
+## 前提条件チェック
 
-システムの前提条件を確認するには、次のコマンドを入力します。
+システムに前提条件がないか確認するには、次のコマンドを入力します。
 
 ### Apache
 
@@ -55,36 +55,36 @@ CentOS: `httpd -v`
 
 Ubuntu: `apache2 -v`
 
-次の結果が示すように、Adobe Commerceは Apache バージョン 2.4 をサポートしています。
+次の結果が示すように、Adobe CommerceはApache バージョン 2.4をサポートしています。
 
-```
+```text
 Server version: Apache/2.4.0 (Unix)
 Server built:   Jul 23 2017 14:17:29
 ```
 
-Apache をインストールまたはアップグレードするには、[Apache](web-server/apache.md) を参照してください。
+Apacheをインストールまたはアップグレードするには、[Apache](web-server/apache.md)を参照してください。
 
 ### PHP
 
-PHP のサポート対象バージョンの要件については、** system requirements&rbrace; の [Commerce オンプレミス &#x200B;](../system-requirements.md) タブを参照してください。また、PHP の要件については [PHP](../system-requirements.md#php-settings) を参照してください。
+サポートされているバージョンのPHPについては[ システム要件](../system-requirements.md)の「*Commerce オンプレミス*」タブを、PHP要件については[PHP](../system-requirements.md#php-settings)を参照してください。
 
 ### MySQL
 
-インストールしているAdobe Commerceのバージョンと互換性のある MySQL のバージョンがあることを確認します。 サポートされているバージョンについては、*システム要件* の「[Commerce オンプレミス &#x200B;](../system-requirements.md)」タブを参照してください。
+インストールするAdobe Commerceのバージョンと互換性のあるバージョンのMySQLがあることを確認します。 サポートされているバージョンについては、[ システム要件](../system-requirements.md)の「*Commerce オンプレミス*」タブを参照してください。
 
-```bash
+```shell
 mysql -u <database root user or database owner name> -p
 ```
 
 例：
 
-```bash
+```shell
 mysql -u magento -p
 ```
 
-コマンド出力の `Server version` 行は、実行中のバージョンを示しています。 インストールしているAdobe Commerce リリースでサポートされているバージョンと一致することを確認します。
+コマンド出力では、`Server version`行は、実行中のバージョンを示します。 インストールするAdobe Commerce リリースでサポートされているバージョンと一致することを確認します。
 
-```
+```text
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 871
 Server version: <supported MySQL version> MySQL Community Server (GPL)
@@ -96,33 +96,33 @@ affiliates. Other names may be trademarks of their respective
 owners.
 ```
 
-`help` または `\h` と入力してヘルプを表示します。 現在の入力文をクリアするには、`\c` と入力します。
+`help`または`\h`を入力してヘルプを表示します。 現在の入力ステートメントをクリアするには、`\c`と入力します。
 
-`exit` プロンプトで `mysql>` と入力して終了します。
+`mysql>` プロンプトに`exit`と入力して終了します。
 
-MySQL をインストールまたはアップグレードするには、[MySQL](database/mysql.md) を参照してください。
+MySQLをインストールまたはアップグレードするには、[MySQL](database/mysql.md)を参照してください。
 
 ### 検索エンジン
 
-OpenSearch のインストールを確認するには：
+OpenSearchのインストールを確認するには：
 
-```bash
+```shell
 curl -XGET '<opensearch-hostname>:<opensearch-port>'
 ```
 
 Elasticsearchのインストールを確認するには：
 
-```bash
+```shell
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'
 ```
 
 例：
 
-```bash
+```shell
 curl -XGET 'localhost:9200'
 ```
 
-```
+```json
 {
   "name" : "Z0S2B05",
   "cluster_name" : "elasticsearch_myname",

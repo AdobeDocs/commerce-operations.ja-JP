@@ -1,14 +1,14 @@
 ---
 title: ベストプラクティスのトピックタイトル
-description: 詳細を見る…
+description: Experience Leagueの新しいAdobe Commerce運用ガイダンスを作成する際に、このベストプラクティスのトピックテンプレートを適用する方法について説明します。
 role: Developer
 feature: Best Practices
 hide: true
 hidefromtoc: true
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 2%
+source-wordcount: '107'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +38,7 @@ Template instruction: Add details for the product and versions where the best pr
 
 <!-- Example 1: -->
 
-[&#x200B; サポートされているすべてのバージョン &#x200B;](../../release/versions.md) /:
+[ サポートされているすべてのバージョン ](../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
@@ -47,7 +47,7 @@ Template instruction: Add details for the product and versions where the best pr
 
 Adobe Commerce バージョン 2.3.4以前およびMariaDB バージョン 10.0以前のAdobe Commerce オンクラウドインフラストラクチャ。
 
-&lt;!— ビジネスの種類：B2CおよびB2B – 必要な場合にのみ指定/） – >
+&lt;!— ビジネスタイプ：B2CおよびB2B – 必要な場合にのみ指定/） – >
 
 ## ヘッダー…
 

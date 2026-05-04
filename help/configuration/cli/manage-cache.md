@@ -1,10 +1,10 @@
 ---
 title: キャッシュの管理
-description: Adobe Commerceの CLI コマンドを使用してキャッシュタイプを管理し、キャッシュステータスを表示する方法について説明します。 キャッシュの管理と最適化の手法について説明します。
+description: Adobe Commerce CLI コマンドを使用してキャッシュタイプを管理し、キャッシュステータスを表示する方法を説明します。 キャッシュ管理と最適化の手法をご紹介します。
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -15,27 +15,27 @@ ht-degree: 0%
 
 ## キャッシュタイプ
 
-Adobe Commerceのキャッシュ管理システムを使用すると、サイトのパフォーマンスを向上させることができます。 ここでは、Commerce アプリケーションサーバーへのアクセス権を持つシステム管理者または開発者がコマンドラインからキャッシュを管理する方法について説明します。
+Adobe CommerceのCMSを使用すれば、サイトのパフォーマンスを向上させることができます。 このトピックでは、Commerce アプリケーションサーバーにアクセスできるシステム管理者または開発者が、コマンドラインからキャッシュを管理する方法について説明します。
 
 >[!NOTE]
 >
 >
->Commerce サイト管理者は、キャッシュ管理システムツールを使用して、管理者からキャッシュを管理できます。 [&#x200B; 管理システムガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management) の _キャッシュ管理_ を参照してください。
+>Commerce サイト管理者は、Cache Management System ツールを使用して、管理者からキャッシュを管理できます。 _管理者システムガイド_&#x200B;の「[ キャッシュ管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)」を参照してください。
 
 
 ## キャッシュステータスの表示
 
-Commerce アプリケーションサーバーのコマンドラインから、`cache:status` Commerce CLI コマンドを使用してキャッシュのステータスを表示します。
+Commerce アプリケーションサーバーのコマンドラインで、`cache:status` Commerce CLI コマンドを使用してキャッシュのステータスを表示します。
 
-```bash
+```shell
    bin/magento cache:status
 ```
 
 <!-- where `--bootstrap=` is a URL-encoded associative array of Commerce [application bootstrap parameters](../bootstrap/set-parameters.md) and values. -->
 
-次に例を示します。
+サンプルは次のとおりです。
 
-```
+```text
 Current status:
                         config: 1
                         layout: 1
@@ -59,48 +59,48 @@ Current status:
 
 >[!TIP]
 >
->Adobe Commerceでサポートされるデフォルトのキャッシュタイプについて詳しくは、『 [&#x200B; 管理システムガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management#caches) 』の _キャッシュ_ を参照してください。
+>Adobe Commerceでサポートされているデフォルトのキャッシュタイプについて詳しくは、_管理者システムガイド_&#x200B;の[Caches](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches)を参照してください。
 
 
 ## キャッシュタイプを有効または無効にする
 
-このコマンドを使用すると、すべてのキャッシュ タイプまたは指定したキャッシュ タイプのみを有効または無効にできます。 キャッシュタイプを無効にすると、キャッシュをフラッシュしなくても変更の結果が確認できるので、開発時に便利です。ただし、キャッシュタイプを無効にすると、パフォーマンスに悪影響が出ます。
+このコマンドを使用すると、すべてのキャッシュタイプまたは指定したキャッシュタイプのみを有効または無効にできます。 キャッシュタイプを無効にすると、キャッシュをフラッシュせずに変更の結果が表示されるため、開発中に便利です。ただし、キャッシュタイプを無効にすると、パフォーマンスに悪影響を及ぼします。
 
 >[!INFO]
 >
->バージョン 2.2 以降では、Commerceを実稼働モードで実行している場合に、コマンドラインを使用してのみキャッシュタイプを有効または無効にできます。 Commerceを開発者モードで実行している場合は、コマンドラインまたは手動でキャッシュタイプを有効または無効にできます。 その前に、`<magento_root>/app/etc/env.php` ファイルシステムの所有者 [&#x200B; によって手動で &#x200B;](../../installation/prerequisites/file-system/overview.md) を書き込み可能にする必要があります。
+>バージョン 2.2以降では、実稼動モードでCommerceを実行している場合にのみ、コマンドラインを使用してキャッシュタイプを有効または無効にすることができます。 Commerceをデベロッパーモードで実行している場合は、コマンドラインまたは手動でキャッシュタイプを有効または無効にできます。 その前に、[ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)が`<magento_root>/app/etc/env.php`を手動で書き込み可能にする必要があります。
 
-コマンドラインまたは Admin を使用して、キャッシュタイプをクリーンアップ（「_フラッシュ_ または _更新_ とも呼ばれます）できます。
+コマンドラインまたは管理者を使用して、キャッシュタイプ（_フラッシュ_&#x200B;または&#x200B;_リフレッシュ_&#x200B;とも呼ばれます）をクリーニングできます。
 
 コマンドオプション：
 
-```bash
+```shell
 bin/magento cache:enable [type] ... [type]
 ```
 
-```bash
+```shell
 bin/magento cache:disable [type] ... [type]
 ```
 
-`[type]` を省略すると、すべてのキャッシュタイプが同時に有効または無効になります。 `type` のオプションは、キャッシュタイプのスペース区切りリストです。
+`[type]`を省略すると、すべてのキャッシュタイプを同時に有効または無効にできます。 `type` オプションは、スペース区切りのキャッシュタイプのリストです。
 
 <!-- `--bootstrap=` is a URL-encoded associative array of Commerce [application bootstrap parameters](../bootstrap/set-parameters.md#bootstrap-parameters) and values. -->
 
-キャッシュのタイプとそのステータスを表示するには：
+キャッシュタイプとそのステータスを一覧表示するには、次の手順を実行します。
 
-```bash
+```shell
 bin/magento cache:status
 ```
 
-例えば、フルページキャッシュと DDL キャッシュを無効にするには、次の手順を実行します。
+例えば、フルページキャッシュとDDL キャッシュを無効にするには、次のようにします。
 
-```bash
+```shell
 bin/magento cache:disable db_ddl full_page
 ```
 
 結果の例：
 
-```
+```text
    Changed cache status:
        db_ddl: 1 -> 0
     full_page: 1 -> 0
@@ -108,51 +108,51 @@ bin/magento cache:disable db_ddl full_page
 
 >[!INFO]
 >
->キャッシュ・タイプを有効にすると、そのキャッシュ・タイプは自動的にクリアされます。
+>キャッシュタイプを有効にすると、そのキャッシュタイプは自動的にクリアされます。
 
 >[!INFO]
 >
->バージョン 2.3.4 以降、Commerceは、取得時にすべてのシステム EAV 属性をキャッシュします。 この方法で EAV 属性をキャッシュすると、DB に対する挿入/選択リクエストの量が減少するため、パフォーマンスが向上します。 ただし、キャッシュネットワークのサイズも大きくなります。 開発者は、`bin/magento config:set dev/caching/cache_user_defined_attributes 1` コマンドを実行して、カスタム EAV 属性をキャッシュできます。 この操作は、[&#x200B; 開発者モード &#x200B;](../bootstrap/application-modes.md) で **ストア**/設定 **設定**/**詳細**/**開発者**/**キャッシュ設定**/**ユーザー定義属性をキャッシュ** を **はい** に設定して、管理者からも実行できます。
+>バージョン 2.3.4の時点では、Commerceは取得したシステム EAV属性をすべてキャッシュします。 この方法でEAV属性をキャッシュすると、DBへの挿入/選択リクエストの量が減少するため、パフォーマンスが向上します。 ただし、キャッシュネットワークのサイズも大きくなります。 開発者は、`bin/magento config:set dev/caching/cache_user_defined_attributes 1` コマンドを実行して、カスタム EAV属性をキャッシュできます。 これは、**ストア** >設定&#x200B;**設定** > **詳細** > **開発者** > **キャッシュ設定** > **ユーザー定義属性**&#x200B;から&#x200B;**はい**&#x200B;に設定することで、[開発者モード ](../bootstrap/application-modes.md)の管理者から実行することもできます。
 
-## キャッシュタイプのクリーンアップとフラッシュ
+## キャッシュの種類のクリーニングとフラッシュ
 
 >[!NOTE]
 >
->複数のページキャッシュは、これらのエンティティを編集することなく **_同時かつ自動的に_** 無効化できます。 例えば、カタログ内のいずれかの製品が任意のカテゴリに割り当てられたときや、いずれかの [!UICONTROL related product rule] 品が変更されたとき。
+>複数のページキャッシュは同時に無効化でき、これらのエンティティを&#x200B;_**個の編集なしで自動的に**_&#x200B;無効化できます。 例えば、カタログ内の任意の商品が任意のカテゴリに割り当てられている場合、または[!UICONTROL related product rule]が変更された場合などです。
 
-古い項目をキャッシュからパージするには、次のキャッシュタイプを _クリーン_ または _フラッシュ_ します。
+古い項目をキャッシュからパージするには、_clean_&#x200B;または&#x200B;_flush_&#x200B;のキャッシュタイプを実行できます。
 
-- キャッシュタイプをクリーンアップすると、有効なCommerce キャッシュタイプからのみ、すべての項目が削除されます。 つまり、このオプションは、Commerceが使用するキャッシュのみをクリーンアップするので、他のプロセスやアプリケーションには影響しません。
+- キャッシュタイプをクリーニングすると、有効なCommerce キャッシュタイプのみからすべての項目が削除されます。 つまり、このオプションは、Commerceが使用するキャッシュのみをクリーンアップするため、他のプロセスやアプリケーションには影響しません。
 
-  無効なキャッシュタイプは消去されません。
+  無効なキャッシュタイプはクリーニングされません。
 
   >[!TIP]
   >
-  >Adobe Commerceのバージョンのアップグレード、Magento Open SourceからAdobe Commerceへのアップグレード、Adobe Commerceまたは任意のモジュール用の B2B のインストールの後は、必ずキャッシュをクリーンアップしてください。
+  >Adobe Commerceのバージョンのアップグレード、Magento Open SourceからAdobe Commerceへのアップグレード、またはAdobe Commerceまたは任意のモジュール用のB2Bのインストール後は、常にキャッシュをクリーニングします。
 
-- キャッシュタイプをフラッシュすると、キャッシュストレージがパージされ、同じストレージを使用している他のプロセスアプリケーションに影響を与える可能性があります。
+- キャッシュタイプをフラッシュすると、キャッシュストレージが消去され、同じストレージを使用している他のプロセスアプリケーションに影響を与える可能性があります。
 
-キャッシュのクリーニングを既に試しても、まだ特定できない問題が発生している場合は、キャッシュタイプをフラッシュします。
+キャッシュのクリーニングを既に試していて、まだ分離できない問題がある場合は、キャッシュの種類をフラッシュします。
 
-コマンドの使用法：
+コマンドの使用状況：
 
-```bash
+```shell
    bin/magento cache:clean [type] ... [type]
 ```
 
-```bash
+```shell
    bin/magento cache:flush [type] ... [type]
 ```
 
-`[type]` は、キャッシュタイプのスペース区切りリストです。 `[type]` を省略すると、すべてのキャッシュタイプが同時にクリーンアップまたはフラッシュされます。 例えば、すべてのキャッシュタイプをフラッシュするには、と入力します。
+ここで、`[type]`はスペースで区切られたキャッシュタイプのリストです。 `[type]`を省略すると、すべてのキャッシュタイプを同時に消去またはフラッシュします。 例えば、すべてのキャッシュタイプをフラッシュするには、と入力します
 
-```bash
+```shell
    bin/magento cache:flush
 ```
 
 結果の例：
 
-```
+```text
    Flushed cache types:
    config
    layout
@@ -173,4 +173,4 @@ bin/magento cache:disable db_ddl full_page
 
 >[!TIP]
 >
->また、管理画面でキャッシュタイプのクリーンアップやフラッシュを行うこともできます。 **システム**/**ツール**/**キャッシュ管理** に移動します。 **フラッシュキャッシュストレージ** は `bin/magento cache:flush` と同等です。 **Magento キャッシュをフラッシュ** は `bin/magento cache:clean` と同等です。
+>管理画面でキャッシュタイプをクリーニングおよびフラッシュすることもできます。 **システム** > **ツール** > **キャッシュ管理**&#x200B;に移動します。 **フラッシュキャッシュストレージ**&#x200B;は`bin/magento cache:flush`と同等です。 **フラッシュ Magento キャッシュ**&#x200B;は`bin/magento cache:clean`と同等です。
