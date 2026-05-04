@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Adobe Commerceでは、デフォルトでデータベースを使用してロックを保存します。 サーバーに複数のノードがある場合は、ロックプロバイダーとしてZookeeperを使用することをお勧めします。
 
-Adobe Commerceをクラウドインフラストラクチャ上で実行している場合は、ロックプロバイダーの設定を行う必要はありません。 アプリケーションは、プロビジョニングプロセス中にPro プロジェクトのファイルロックプロバイダーを設定します。 [&#x200B; クラウド変数](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)を参照してください。
+Adobe Commerceをクラウドインフラストラクチャ上で実行している場合は、ロックプロバイダーの設定を行う必要はありません。 アプリケーションは、プロビジョニングプロセス中にPro プロジェクトのファイルロックプロバイダーを設定します。 [&#x200B; クラウド変数](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)を参照してください。
 
 ### コマンドの使用
 

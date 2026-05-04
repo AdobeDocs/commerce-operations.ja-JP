@@ -116,5 +116,5 @@ find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type
 
 >[!NOTE]
 >
->- Adobe Commerceのクラウドインフラプロジェクトでは、Fastly サービスに商品イメージのサイズ変更をオフロードできます。 _クラウドガイド_&#x200B;の[深層画像最適化](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html#deep-image-optimization)を参照してください。
->- リモートストレージモジュールを使用する場合は、画像のサイズをnginxにオフロードすることもできます。 _設定ガイド_&#x200B;の「[&#x200B; リモートストレージ用の画像サイズ変更の設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html)」を参照してください。
+>- Adobe Commerceのクラウドインフラプロジェクトでは、Fastly サービスに商品イメージのサイズ変更をオフロードできます。 _クラウドガイド_&#x200B;の[深層画像最適化](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=ja#deep-image-optimization)を参照してください。
+>- リモートストレージモジュールを使用する場合は、画像のサイズをnginxにオフロードすることもできます。 _設定ガイド_&#x200B;の「[&#x200B; リモートストレージ用の画像サイズ変更の設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=ja)」を参照してください。

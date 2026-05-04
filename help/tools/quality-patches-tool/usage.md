@@ -15,11 +15,11 @@ ht-degree: 0%
 
 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches)は、AdobeとMagento Open Source コミュニティによって開発された個別のパッチを提供します。 インストールされているバージョンのAdobe Commerceで使用できるすべての個々のパッチに関する一般的な情報を適用、取り消し、表示できます。 誰がパッチを開発したかに関係なく、Adobe Commerce プロジェクトにパッチを適用できます。 例えば、コミュニティで開発したパッチをAdobe Commerce プロジェクトに適用できます。
 
-この[&#x200B; テクニカルビデオ &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html)を見て、Adobe Commerceの品質パッチツールの使用方法を学びましょう。
+この[&#x200B; テクニカルビデオ &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=ja)を見て、Adobe Commerceの品質パッチツールの使用方法を学びましょう。
 
 >[!INFO]
 >
->Adobe Commerce プロジェクトにパッチを適用する手順については、[個別のパッチを適用](#apply-individual-patches)を参照してください。 「[[!DNL Quality Patches Tool]: パッチを検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照して、リリースされたパッチの完全なリストを確認してください。
+>Adobe Commerce プロジェクトにパッチを適用する手順については、[個別のパッチを適用](#apply-individual-patches)を参照してください。 「[[!DNL Quality Patches Tool]: パッチを検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)」を参照して、リリースされたパッチの完全なリストを確認してください。
 
 >[!WARNING]
 >
@@ -62,7 +62,7 @@ Adobe Commerce 2.3.5.
 ステータステーブルには次のものが含まれます。
 
 - **種類**:
-   - `Optional` — [!DNL Quality Patches Tool]および[Commerce on Cloud Infrastructure ガイド > パッチの適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) パッケージのすべてのパッチは、Adobe Commerce インストールではオプションです。
+   - `Optional` — [!DNL Quality Patches Tool]および[Commerce on Cloud Infrastructure ガイド > パッチの適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja) パッケージのすべてのパッチは、Adobe Commerce インストールではオプションです。
    - `Deprecated` — Adobeは個別のパッチを非推奨にしました。 パッチを適用した場合は、元に戻すことをお勧めします。 復元操作では、ステータステーブルからもパッチが削除されます。
 
 - **ステータス**:
@@ -83,7 +83,7 @@ Adobe Commerce 2.3.5.
 
 >[!WARNING]
 >
->実稼動にデプロイする前に、ステージング環境または開発環境のすべてのパッチをテストすることをお勧めします。 パッチを適用する前に、データをバックアップすることをお勧めします。 [&#x200B; ファイルシステム、メディア、データベースのバックアップとロールバック &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html)を参照してください。
+>実稼動にデプロイする前に、ステージング環境または開発環境のすべてのパッチをテストすることをお勧めします。 パッチを適用する前に、データをバックアップすることをお勧めします。 [&#x200B; ファイルシステム、メディア、データベースのバックアップとロールバック &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=ja)を参照してください。
 
 単一のパッチを適用するには、次のコマンドを実行します。ここで、`MAGETWO-XXXX`はステータステーブルで指定されたパッチ IDです。
 
@@ -111,7 +111,7 @@ Adobe Commerce 2.3.5.
 
 >[!WARNING]
 >
->実稼動にデプロイする前に、ステージング環境または開発環境のすべてのパッチをテストすることをお勧めします。 パッチを適用する前に、データをバックアップすることをお勧めします。 [&#x200B; ファイルシステム、メディア、データベースのバックアップとロールバック &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html)を参照してください。
+>実稼動にデプロイする前に、ステージング環境または開発環境のすべてのパッチをテストすることをお勧めします。 パッチを適用する前に、データをバックアップすることをお勧めします。 [&#x200B; ファイルシステム、メディア、データベースのバックアップとロールバック &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=ja)を参照してください。
 
 1つのパッチを元に戻すには、次のコマンドを実行します。ここで、`MAGETWO-XXXX`はステータステーブルで指定されたパッチ IDです。
 

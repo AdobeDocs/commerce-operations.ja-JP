@@ -2,7 +2,7 @@
 title: オンプレミス デプロイメント用のNginxのインストール
 description: オンプレミス Adobe Commerceのデプロイメント用にNginx web サーバーをインストールおよび設定する方法について説明します。 PHP-FPMと仮想ホストを設定します。
 feature: Install, Configuration
-badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
 source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt

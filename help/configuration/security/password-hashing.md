@@ -61,4 +61,4 @@ Commerceでは、使用済みのすべてのパスワードハッシュのバー
 
 ## 導入
 
-`\Magento\Framework\Encryption\Encryptor` クラスは、パスワード ハッシュの生成と検証を担当します。 [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) コマンドは、顧客パスワード ハッシュを最新のハッシュ アルゴリズムにアップグレードします。
+`\Magento\Framework\Encryption\Encryptor` クラスは、パスワード ハッシュの生成と検証を担当します。 [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) コマンドは、顧客パスワード ハッシュを最新のハッシュ アルゴリズムにアップグレードします。

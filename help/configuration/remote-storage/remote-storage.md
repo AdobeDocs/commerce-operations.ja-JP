@@ -30,7 +30,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->- リモートストレージは、Commerce バージョン 2.4.2以降でのみ使用できます。 [2.4.2 リリースノート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2)を参照してください。
+>- リモートストレージは、Commerce バージョン 2.4.2以降でのみ使用できます。 [2.4.2 リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/magento-open-source/2-4-2)を参照してください。
 >
 >- リモート ストレージ モジュールは、クラウド インフラストラクチャ上のAdobe Commerceで&#x200B;_制限付き_ サポートされています。 Adobeでは、サードパーティ製ストレージアダプターサービスのトラブルシューティングを完全に実行できません。 クラウドプロジェクトにリモートストレージを実装するガイダンスについては、[Commerce on Cloud インフラストラクチャのリモートストレージの設定](cloud-support.md)を参照してください。
 
@@ -91,5 +91,5 @@ Adobe Commerceのインストール中にリモートストレージをインス
 
 >[!INFO]
 >
->同期コマンドは、`pub/media` ディレクトリ内のファイルのみを移行します。_not_ ファイルは`var` ディレクトリ内のインポート/エクスポート ファイルです。 _Commerce 2.4 ユーザーガイド_&#x200B;の「[&#x200B; スケジュールされた読み込み/書き出し](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html)」を参照してください。
+>同期コマンドは、`pub/media` ディレクトリ内のファイルのみを移行します。_not_ ファイルは`var` ディレクトリ内のインポート/エクスポート ファイルです。 _Commerce 2.4 ユーザーガイド_&#x200B;の「[&#x200B; スケジュールされた読み込み/書き出し](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=ja)」を参照してください。
 

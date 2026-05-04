@@ -20,7 +20,7 @@ Adobe CommerceのCMSを使用すれば、サイトのパフォーマンスを向
 >[!NOTE]
 >
 >
->Commerce サイト管理者は、Cache Management System ツールを使用して、管理者からキャッシュを管理できます。 _管理者システムガイド_&#x200B;の「[&#x200B; キャッシュ管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)」を参照してください。
+>Commerce サイト管理者は、Cache Management System ツールを使用して、管理者からキャッシュを管理できます。 _管理者システムガイド_&#x200B;の「[&#x200B; キャッシュ管理](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management)」を参照してください。
 
 
 ## キャッシュステータスの表示
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Adobe Commerceでサポートされているデフォルトのキャッシュタイプについて詳しくは、_管理者システムガイド_&#x200B;の[Caches](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches)を参照してください。
+>Adobe Commerceでサポートされているデフォルトのキャッシュタイプについて詳しくは、_管理者システムガイド_&#x200B;の[Caches](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management#caches)を参照してください。
 
 
 ## キャッシュタイプを有効または無効にする

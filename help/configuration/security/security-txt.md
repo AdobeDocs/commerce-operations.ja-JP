@@ -15,7 +15,7 @@ ht-degree: 0%
 
 セキュリティ上の脆弱性が研究者によって発見された場合、適切なレポートチャネルが不足していることがよくあります。 その結果、一部の脆弱性は報告されません。 `security.txt` [&#x200B; ファイル形式](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) ファイルの目的は、セキュリティ研究者が調査結果を報告するために使用できる情報を提供することです。
 
-マーチャントは、Commerce _管理者_&#x200B;から[&#x200B; セキュリティ問題レポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-issue-reporting)の連絡先情報を入力できます。 開発者の場合、`Magento_Securitytxt` モジュールには次の機能が用意されています。
+マーチャントは、Commerce _管理者_&#x200B;から[&#x200B; セキュリティ問題レポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security-issue-reporting)の連絡先情報を入力できます。 開発者の場合、`Magento_Securitytxt` モジュールには次の機能が用意されています。
 
 - セキュリティ設定を&#x200B;_管理者_&#x200B;から保存できます。
 - `.well-known/security.txt`および`.well-known/security.txt.sig` ファイルへのリクエストに対するアプリケーションアクションクラスに一致するルーターが含まれています。

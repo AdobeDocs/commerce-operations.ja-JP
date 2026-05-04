@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## ベンダーバンドル拡張機能（VBE）
 
-Adobeは、2.4.4ですべての[VBE](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/modules/upgrade)を削除しました。 Adobe Commerce Marketplaceでこれらの拡張機能を引き続きサポートします。
+Adobeは、2.4.4ですべての[VBE](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/modules/upgrade)を削除しました。 Adobe Commerce Marketplaceでこれらの拡張機能を引き続きサポートします。
 
 Adobe Commerce 2.4.4以降でこれらの拡張機能を引き続き使用する場合は、2.4.4にアップグレードする前に、`composer.json` ファイル _内の対応するパッケージ依存関係を更新する必要があります。_&#x200B;使用するパッケージ名とバージョンについては、ベンダーにお問い合わせください。
 

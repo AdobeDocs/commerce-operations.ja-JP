@@ -93,7 +93,7 @@ Adobe Commerce メタパッケージを取得するには：
 
    >[!NOTE]
    >
-   > Commerce認証キーで構成されたComposer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` ファイルまたは環境変数を使用する場合、認証キーを入力するメッセージは表示されません。
+   > Commerce認証キーで構成されたComposer `[auth.json](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` ファイルまたは環境変数を使用する場合、認証キーを入力するメッセージは表示されません。
 
    `Could not find package...`や`...no matching package found`などのエラーが発生した場合は、コマンドにタイプミスがないことを確認してください。 それでもエラーが発生する場合は、Adobe Commerceのダウンロードが許可されない場合があります。 ヘルプについては、[Adobe Commerce サポート &#x200B;](https://support.magento.com/hc/en-us)にお問い合わせください。
 

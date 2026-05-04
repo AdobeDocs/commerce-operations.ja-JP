@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >サポートされているPHP バージョンは、Adobe Commerce リリースによって異なります。 インストール中のリリースでサポートされている正確なPHP バージョンについては、[必要システム構成](../system-requirements.md)を参照してください。
 
-クラウド設定ガイダンスについては、_Commerce on Cloud Infrastructure_ ガイドの[PHP settings](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings)を参照してください。
+クラウド設定ガイダンスについては、_Commerce on Cloud Infrastructure_ ガイドの[PHP settings](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/php-settings)を参照してください。
 
 ## PHP プロセス制御
 
@@ -206,8 +206,8 @@ PHP オプションを設定するには：
 PHPの問題のトラブルシューティングについては、次のAdobe Commerce サポート記事を参照してください。
 
 - [ブラウザーでAdobe Commerceにアクセスする際のPHP バージョンエラーまたは404 エラー](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [PHP設定エラー](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
-- [PHPのバージョン準備状況チェックの問題](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
-- [一般的なPHPの致命的なエラーと解決策](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
+- [PHP設定エラー](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
+- [PHPのバージョン準備状況チェックの問題](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- [一般的なPHPの致命的なエラーと解決策](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
 <!-- Last updated from includes: 2025-04-04 22:27:22 -->

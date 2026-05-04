@@ -21,17 +21,17 @@ ht-degree: 2%
           <ul>
             <li><a href="https://blog.adobe.com/">Adobeブログ</a></li>
             <li><a href="https://blog.adobe.com/">Adobe Developers ブログ</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">アドビ ヘルプセンター</a></li>
-            <li><a href="https://helpx.adobe.com/security/security-bulletin.html">Adobe セキュリティ情報</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=ja">アドビ ヘルプセンター</a></li>
+            <li><a href="https://helpx.adobe.com/jp/security/security-bulletin.html">Adobe セキュリティ情報</a></li>
             <li><a href="https://developer.adobe.com/commerce/">Adobe Developer サイト上のAdobe Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Adobe Commerce オンクラウドまたはオンプレミスのリリースノート</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html?lang=ja">Adobe Commerce オンクラウドまたはオンプレミスのリリースノート</a></li>
             <li><a href="https://solutionpartners.adobe.com/solution-partners.html">ソリューションパートナーポータル</a></li>
           </ul>
         </td>
       <td><strong> ツール </strong>
         <p>Adobe Commerceの検索や使用が容易になるように設計されたツールを参照します。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/uct-phpstorm">互換性ツール PhpStorm プラグインのアップグレード </a> （ビデオ）</li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/uct-phpstorm">互換性ツール PhpStorm プラグインのアップグレード </a> （ビデオ）</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">互換性のアップグレード ツール</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool Slack channel</a></li>
             <li><a href="../../tools/quality-patches-tool/usage.md">品質パッチツール</a></li>
@@ -42,9 +42,9 @@ ht-degree: 2%
       <td><strong> カレンダーとポリシー</strong>
         <p>Adobe Commerceのリリースとポリシーに関する詳細を確認します。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Adobe Commerce ソフトウェアのサポート終了に関するFAQ</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html?lang=ja">Adobe Commerce ソフトウェアのサポート終了に関するFAQ</a></li>
             <li><a href="https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/requirements">Commerce Marketplace ポリシー</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html">新しいAdobe Commerce リリース戦略、更新されたライフサイクルポリシー、および拡張サポートに関するFAQ</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html?lang=ja">新しいAdobe Commerce リリース戦略、更新されたライフサイクルポリシー、および拡張サポートに関するFAQ</a></li>
             <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">ライフサイクルポリシー</a></li>
             <li><a href="../../release/schedule.md">リリーススケジュール</a></li>
             <li><a href="../../release/versioning-policy.md">リリースタイプ</a></li>
@@ -65,8 +65,8 @@ ht-degree: 2%
         <p>ストアフロントを安全に保ち、効率的に運営する。 Adobeの豊富なテクニカルドキュメントを確認して、Adobe Commerceのアップグレードに備えましょう。</p>
           <ul>
             <li><a href="recommended-upgrade-paths.md">推奨されるアップグレードパス</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/2-4-upgrade-workshop">2.4 テクニカルアップグレードワークショップの録画</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html">プリリリースへのアクセス</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/2-4-upgrade-workshop">2.4 テクニカルアップグレードワークショップの録画</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html?lang=ja">プリリリースへのアクセス</a></li>
             <li><a href="../../release/beta.md">Beta リリースの概要</a></li>
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy">後方互換性のない開発</a></li>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes">後方互換性のない変更</a></li>

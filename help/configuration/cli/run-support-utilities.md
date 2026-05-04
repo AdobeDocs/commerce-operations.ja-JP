@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Adobe Commerce サポートユーティリティ（[Data Collector](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector)とも呼ばれます）を使用すると、お客様のシステムに関するトラブルシューティング情報を収集できます。この情報は、サポートチームで使用できます。
+Adobe Commerce サポートユーティリティ（[Data Collector](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/support#data-collector)とも呼ばれます）を使用すると、お客様のシステムに関するトラブルシューティング情報を収集できます。この情報は、サポートチームで使用できます。
 
 Adobe Commerceでは、コードへのアクセスが必要な問題を分析するために、これらのバックアップ（_ダンプ_&#x200B;とも呼ばれます）を使用します。 一般的なシナリオは次のとおりです。
 
