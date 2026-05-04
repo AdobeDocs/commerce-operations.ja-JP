@@ -22,7 +22,7 @@ Adobe Commerceをインストールする前に、メッセージキューシス
 
 >[!NOTE]
 >
->メッセージキュー処理には、MySQLまたは[!DNL RabbitMQ]を使用できます。 メッセージキューシステムの設定について詳しくは、[ メッセージキューの概要](https://developer.adobe.com/commerce/php/development/components/message-queues/)を参照してください。 Adobe CommerceでBulk APIを使用している場合、メッセージキューシステム設定は、デフォルトで[!DNL RabbitMQ]をメッセージブローカーとして使用します。 詳しくは、[ メッセージキューコンシューマー](../../configuration/cli/start-message-queues.md)の開始を参照してください。
+>メッセージキュー処理には、MySQLまたは[!DNL RabbitMQ]を使用できます。 メッセージキューシステムの設定について詳しくは、[&#x200B; メッセージキューの概要](https://developer.adobe.com/commerce/php/development/components/message-queues/)を参照してください。 Adobe CommerceでBulk APIを使用している場合、メッセージキューシステム設定は、デフォルトで[!DNL RabbitMQ]をメッセージブローカーとして使用します。 詳しくは、[&#x200B; メッセージキューコンシューマー](../../configuration/cli/start-message-queues.md)の開始を参照してください。
 
 ## Ubuntuに[!DNL RabbitMQ]をインストール
 
@@ -39,7 +39,7 @@ sudo apt install -y rabbitmq-server
 1. [rabbitmq-server](https://www.rabbitmq.com/download.html)から.deb パッケージをダウンロードします。
 1. `dpkg`のパッケージをインストールします。
 
-詳しくは、[Debian/Ubuntuへのインストール ](https://www.rabbitmq.com/install-debian.html)を参照してください。
+詳しくは、[Debian/Ubuntuへのインストール &#x200B;](https://www.rabbitmq.com/install-debian.html)を参照してください。
 
 ## CentOSに[!DNL RabbitMQ]をインストール
 
@@ -47,9 +47,9 @@ sudo apt install -y rabbitmq-server
 
 [!DNL RabbitMQ]はErlang プログラミング言語を使用して作成されました。これは[!DNL RabbitMQ]と同じシステムにインストールする必要があります。
 
-詳しくは、[手動インストール ](https://www.erlang-solutions.com/downloads/)を参照してください。
+詳しくは、[手動インストール &#x200B;](https://www.erlang-solutions.com/downloads/)を参照してください。
 
-正しいバージョンをインストールするには、[[!DNL RabbitMQ]/Erlang バージョン マトリックス ](https://www.rabbitmq.com/which-erlang.html)を参照してください。
+正しいバージョンをインストールするには、[[!DNL RabbitMQ]/Erlang バージョン マトリックス &#x200B;](https://www.rabbitmq.com/which-erlang.html)を参照してください。
 
 ### [!DNL RabbitMQ]をインストール
 
@@ -140,4 +140,4 @@ SSLのサポートを設定するには、`<install_directory>/app/etc/env.php` 
 
 ## メッセージキューコンシューマーを開始
 
-Adobe Commerceと[!DNL RabbitMQ]を接続したら、メッセージキューコンシューマーを開始する必要があります。 詳しくは、[ メッセージキューの設定](../../configuration/cli/start-message-queues.md)を参照してください。
+Adobe Commerceと[!DNL RabbitMQ]を接続したら、メッセージキューコンシューマーを開始する必要があります。 詳しくは、[&#x200B; メッセージキューの設定](../../configuration/cli/start-message-queues.md)を参照してください。

@@ -46,7 +46,7 @@ ht-degree: 0%
 |----------------|-----------------|
 | PHP バージョン | >= 7.3 |
 | Composer | 既知の要件はありません。 |
-| Node.js | Node.js バージョン `^12.22.0`、`^14.17.0`または`>=16.0.0` （[Node.jsのインストール ](https://nodejs.org/en/download)を参照） |
+| Node.js | Node.js バージョン `^12.22.0`、`^14.17.0`または`>=16.0.0` （[Node.jsのインストール &#x200B;](https://nodejs.org/en/download)を参照） |
 | メモリの制限 | 2GB以上のRAM。 |
 
 [!DNL Upgrade Compatibility Tool]では、実行に[PCNTL](https://www.php.net/manual/en/book.pcntl.php)およびその他のPHP拡張機能が必要です。 `composer check-platform-reqs` コマンドを使用して、必要なPHP拡張機能を確認します。
@@ -80,4 +80,4 @@ Adobe Commerceは、Linux オペレーティングシステムでのみサポー
 
 大きなモジュールとファイルを含むAdobe Commerce インスタンスに対して[!DNL Upgrade Compatibility Tool]を実行する場合、このツールには大量のRAM （少なくとも2 GB）が必要になる場合があります。
 
-[Adobe Commerceの[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html)から[!DNL Upgrade Compatibility Tool]をクラウドインフラストラクチャ ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} プロジェクトで実行します。
+[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html)Adobe Commerceの[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html){target=_blank}から[!DNL Upgrade Compatibility Tool]をクラウドインフラストラクチャ &#x200B; プロジェクトで実行します。

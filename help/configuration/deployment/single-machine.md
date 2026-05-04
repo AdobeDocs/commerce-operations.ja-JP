@@ -22,11 +22,11 @@ ht-degree: 1%
 >[!WARNING]
 >
 >このガイドは、`git clone`を使用してCommerceをインストールした場合には適用されません。
->共同制作者は、[このガイド ](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)を使用して、Commerce インストールを更新する必要があります。
+>共同制作者は、[このガイド &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)を使用して、Commerce インストールを更新する必要があります。
 
 ## デプロイメントステップ
 
-1. 実稼動サーバーに[ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてログインするか、切り替えます。
+1. 実稼動サーバーに[&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてログインするか、切り替えます。
 
 1. ディレクトリをCommerce ベースディレクトリに変更します。
 

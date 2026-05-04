@@ -98,7 +98,7 @@ Apache `mod_env` ディレクティブは、[Apache バージョン 2.2](https:/
 
 >[!TIP]
 >
->次の節では、仮想ホストを既に設定していることを前提としています。 まだ使用していない場合は、[このDigitalOcean チュートリアル ](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts)などのリソースを参照してください。
+>次の節では、仮想ホストを既に設定していることを前提としています。 まだ使用していない場合は、[このDigitalOcean チュートリアル &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts)などのリソースを参照してください。
 
 **Ubuntu**&#x200B;でApacheのブートストラップ変数を指定するには：
 
@@ -141,7 +141,7 @@ Apache `mod_env` ディレクティブは、[Apache バージョン 2.2](https:/
 
 >[!TIP]
 >
->このセクションでは、仮想ホストが既に設定されていることを前提としています。 まだ使用していない場合は、[このDigitalOcean チュートリアル ](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6)などのリソースを参照してください。
+>このセクションでは、仮想ホストが既に設定されていることを前提としています。 まだ使用していない場合は、[このDigitalOcean チュートリアル &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6)などのリソースを参照してください。
 
 **CentOS**&#x200B;でApacheのブートストラップ変数を指定するには：
 

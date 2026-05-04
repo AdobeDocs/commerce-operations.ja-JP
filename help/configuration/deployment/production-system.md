@@ -22,7 +22,7 @@ ht-degree: 0%
    - `pub/media/wysiwyg` ディレクトリ （およびサブディレクトリ）
    - `pub/static` ディレクトリ （およびサブディレクトリ）
 
-- Commerce 2.2以降をインストールし、[実稼動モード ](../bootstrap/application-modes.md#production-mode)に設定する必要があります
+- Commerce 2.2以降をインストールし、[実稼動モード &#x200B;](../bootstrap/application-modes.md#production-mode)に設定する必要があります
 - このファイル システムには、[開発、ビルド、および実稼動システムの前提条件](../deployment/prerequisites.md)で説明されているように、ファイル システムの所有権と権限が設定されています。
 
 ## 実稼動マシンの設定
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 機密値を設定するには：
 
-1. [機密値リファレンス ](../reference/config-reference-sens.md)を使用して、設定する値を検索します。
+1. [機密値リファレンス &#x200B;](../reference/config-reference-sens.md)を使用して、設定する値を検索します。
 1. 設定の設定パスをメモします。
 1. 本番システムにファイルシステム所有者としてログインするか、ファイルシステム所有者に切り替えます。
 1. Commerceのインストールディレクトリに移動します。

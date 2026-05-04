@@ -76,7 +76,7 @@ Varnishを最小限に設定するには：
 
 1. `.host`の値を、Varnish _バックエンド_&#x200B;または&#x200B;_オリジン サーバー_&#x200B;の完全修飾ホスト名またはIP アドレスとリッスン ポートに置き換えます。つまり、コンテンツ Varnishを提供するサーバーが高速化します。
 
-   通常、これはあなたのweb サーバーです。 _Varnish ガイド_&#x200B;の「[ バックエンドサーバー](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)」を参照してください。
+   通常、これはあなたのweb サーバーです。 _Varnish ガイド_&#x200B;の「[&#x200B; バックエンドサーバー](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)」を参照してください。
 
 1. `.port`の値をWeb サーバーのリッスン ポート （この例では8080）に置き換えます。
 
@@ -170,7 +170,7 @@ tcp        0      0 ::1:48509                   :::*                        LIST
 
 `varnishd`の出力が表示されない場合は、Varnishが実行されていることを確認します。
 
-[`netstat` オプション ](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html)を参照してください。
+[`netstat` オプション &#x200B;](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html)を参照してください。
 
 ## Commerce ソフトウェアのインストール
 

@@ -34,7 +34,7 @@ ht-degree: 1%
 ]
 ```
 
-[ モジュール ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html)の詳細をご覧ください。
+[&#x200B; モジュール &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html)の詳細をご覧ください。
 
 ## 範囲
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 ]
 ```
 
-[Commerce スコープ ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)の詳細をご覧ください。
+[Commerce スコープ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)の詳細をご覧ください。
 
 ## システム
 
@@ -100,7 +100,7 @@ ht-degree: 1%
 ]
 ```
 
-[ システム固有の設定](config-reference-sens.md)について詳しく説明します。
+[&#x200B; システム固有の設定](config-reference-sens.md)について詳しく説明します。
 
 ## テーマ
 
@@ -120,5 +120,5 @@ ht-degree: 1%
 ]
 ```
 
-[ テーマ ](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront)の詳細
+[&#x200B; テーマ &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront)の詳細
 

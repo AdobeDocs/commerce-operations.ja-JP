@@ -17,7 +17,7 @@ ht-degree: 0%
 - [検索エンジンの前提条件](../../installation/prerequisites/search-engine/overview.md)
 - [検索エンジン用にnginxを設定する](../../installation/prerequisites/search-engine/configure-nginx.md)
 - [検索エンジン用のApacheの設定](../../installation/prerequisites/search-engine/configure-apache.md)
-- [Commerce ソフトウェアのインストール ](../../installation/composer.md) （コマンドライン インターフェイス）
+- [Commerce ソフトウェアのインストール &#x200B;](../../installation/composer.md) （コマンドライン インターフェイス）
 
 検索エンジンをインストールしてAdobe Commerceと統合したら、追加のメンテナンスを実行する必要があります。
 

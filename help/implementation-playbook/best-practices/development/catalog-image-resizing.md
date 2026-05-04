@@ -98,7 +98,7 @@ xargs -0 -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url
 
 `-P`引数によってスレッドの数が決まります。
 
->[!TAB  ワンライナー]をバッシュ
+>[!TAB ワンライナーをバッシュ]
 
 `find/curl`の例の1行目。画像が存在するのと同じコンピューターから`curl`を実行できる場合に使用します。
 
@@ -117,4 +117,4 @@ find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type
 >[!NOTE]
 >
 >- Adobe Commerceのクラウドインフラプロジェクトでは、Fastly サービスに商品イメージのサイズ変更をオフロードできます。 _クラウドガイド_&#x200B;の[深層画像最適化](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html#deep-image-optimization)を参照してください。
->- リモートストレージモジュールを使用する場合は、画像のサイズをnginxにオフロードすることもできます。 _設定ガイド_&#x200B;の「[ リモートストレージ用の画像サイズ変更の設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html)」を参照してください。
+>- リモートストレージモジュールを使用する場合は、画像のサイズをnginxにオフロードすることもできます。 _設定ガイド_&#x200B;の「[&#x200B; リモートストレージ用の画像サイズ変更の設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html)」を参照してください。

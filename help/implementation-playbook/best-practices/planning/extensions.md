@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Adobe Commerceのサードパーティ製の拡張機能（モジュール）は、ストアフロントのパフォーマンスに悪影響を与えるさまざまな問題を引き起こす可能性があります。 次のベストプラクティスに従うことで、これらの問題を回避できます。
 
-- [ プロセス外の拡張性](https://developer.adobe.com/commerce/extensibility/)を使用して、可能な限りCommerceの統合とカスタマイズを開発し、メンテナンスとアップグレード性を容易にします。
+- [&#x200B; プロセス外の拡張性](https://developer.adobe.com/commerce/extensibility/)を使用して、可能な限りCommerceの統合とカスタマイズを開発し、メンテナンスとアップグレード性を容易にします。
 - [Commerce Marketplace](https://commercemarketplace.adobe.com//extensions.html)など、信頼できるソースからサードパーティの拡張機能をダウンロードして購入します。
 - すべてのサードパーティ拡張機能を最新バージョンに更新します。
 - サードパーティの拡張機能を最新の状態に保つことができない場合は、別の拡張機能の使用を検討してください。
@@ -23,11 +23,11 @@ Adobe Commerceのサードパーティ製の拡張機能（モジュール）は
 
 >[!NOTE]
 >
-> 新しいCommerce リリースとの互換性を維持するには、Adobe Commerce Marketplaceで利用可能なすべての拡張機能が必要です。 [ リリースの互換性](https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/releases)を参照してください。
+> 新しいCommerce リリースとの互換性を維持するには、Adobe Commerce Marketplaceで利用可能なすべての拡張機能が必要です。 [&#x200B; リリースの互換性](https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/releases)を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス

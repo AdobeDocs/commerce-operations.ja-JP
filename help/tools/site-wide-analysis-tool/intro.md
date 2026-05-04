@@ -25,11 +25,11 @@ ht-degree: 0%
 >
 >レコメンデーションを適用した後、サイト全体の分析ツールダッシュボードまたは生成されたレポートでレコメンデーションを更新するには、数日かかる場合があります。
 >
->[!DNL Site-Wide Analysis Tool]はシステム レベルのデータに関するレポートです。 Adobe Commerce製品、セールス、マーケティング、その他のコマースアプリケーションのデータに関するレポートについては、[Adobe Commerce レポート ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu)を参照してください。
+>[!DNL Site-Wide Analysis Tool]はシステム レベルのデータに関するレポートです。 Adobe Commerce製品、セールス、マーケティング、その他のコマースアプリケーションのデータに関するレポートについては、[Adobe Commerce レポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu)を参照してください。
 
-![ サイト全体の分析ツール ダッシュボード ](../../assets/tools/swat-dashboard.png){width="700" zoomable="yes"}
+![&#x200B; サイト全体の分析ツール ダッシュボード &#x200B;](../../assets/tools/swat-dashboard.png){width="700" zoomable="yes"}
 
-詳しくは、[概要ビデオ ](https://www.youtube.com/watch?v=KW2R8ki_RG4)を参照してください。
+詳しくは、[概要ビデオ &#x200B;](https://www.youtube.com/watch?v=KW2R8ki_RG4)を参照してください。
 
 ## ツールの概要
 
@@ -39,7 +39,7 @@ ht-degree: 0%
    - 次のリソースへのリンクを提供する&#x200B;**[!UICONTROL Security Center Widget]**&#x200B;を表示します。
       - [技術 [!DNL Stack]  バージョンの [!DNL end of life (EOL)]への準拠](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
       - [Adobe セキュリティ情報](https://helpx.adobe.com/security/security-bulletin.html)
-      - [ [!DNL Security Scan Tool]からのおすすめ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)
+      - [&#x200B; [!DNL Security Scan Tool]からのおすすめ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)
       - [[!DNL Site-Wide Analysis Tool]のベストプラクティス セキュリティの推奨事項](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations)
 
 - **情報** – お客様の連絡先情報と現在のチケットの概要を提供し、各インストール済みAdobe Commerce製品に関する詳細情報を記載します。
@@ -47,7 +47,7 @@ ht-degree: 0%
 - **Recommendations** - サイトの健全性を追跡するための[SWAT Health Index Score](#swat-health-index.md)を提供し、サイトで検出された問題に対処するためのベストプラクティスに基づいて推奨事項を一覧表示します。
    - インフラストラクチャの更新が必要な変更については、サポートリクエストを送信してください。
    - アプリケーションの更新が必要な変更については、自分で変更を行います。
-   - [ コードのデプロイメント ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)などの手動による操作が必要な変更については、システム管理者または開発者にサポートを依頼してください。
+   - [&#x200B; コードのデプロイメント &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)などの手動による操作が必要な変更については、システム管理者または開発者にサポートを依頼してください。
 
 - **例外** - エラーハンドラーを使用せずに、異常な状態によって引き起こされたアプリケーションによってスローされるエラーを一覧表示します。
 

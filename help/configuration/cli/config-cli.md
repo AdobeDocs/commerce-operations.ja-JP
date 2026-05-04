@@ -28,15 +28,15 @@ Commerceには、次のようなインストールおよび設定タスクを実
 - CLIは拡張可能なので、サードパーティの開発者はCLIに「プラグイン」できます。 これは、ユーザーの学習曲線を排除するという追加の利点があります。
 - 無効なモジュールのコマンドは表示されません。
 
-このトピックでは、CLIを使用したAdobe Commerce ソフトウェアの設定について説明します。 Commerceのインストールについて詳しくは、_インストールガイド_&#x200B;の[ インストールフロー](../../installation/overview.md)を参照してください。
+このトピックでは、CLIを使用したAdobe Commerce ソフトウェアの設定について説明します。 Commerceのインストールについて詳しくは、_インストールガイド_&#x200B;の[&#x200B; インストールフロー](../../installation/overview.md)を参照してください。
 
 ## 前提条件
 
 CLIの使用を開始する前に、次のことを確認してください。
 
-1. お使いのシステムは、_インストールガイド_&#x200B;の[ システム要件](../../installation/system-requirements.md)で説明されている要件を満たしています。
+1. お使いのシステムは、_インストールガイド_&#x200B;の[&#x200B; システム要件](../../installation/system-requirements.md)で説明されている要件を満たしています。
 1. _インストールガイド_&#x200B;の[前提条件](../../installation/prerequisites/overview.md)で説明したすべての前提条件タスクを完了しました。
-1. Commerce サーバーにログインしたら、Commerce ファイルシステムへの書き込み権限を持つユーザーに切り替えます。 _インストールガイド_&#x200B;の「[ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)への切り替え」を参照してください。
+1. Commerce サーバーにログインしたら、Commerce ファイルシステムへの書き込み権限を持つユーザーに切り替えます。 _インストールガイド_&#x200B;の「[&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)への切り替え」を参照してください。
 
 ## コマンドの実行
 

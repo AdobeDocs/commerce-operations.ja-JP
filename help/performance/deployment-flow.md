@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 依存関係のインストール
 
-`composer.json`および`composer.lock` ファイルは[!DNL Commerce]の依存関係を管理し、各パッケージに適切なバージョンをインストールします。 [ オートローダー](#update-the-autoloader)を更新する予定がある場合は、[依存関係インジェクション手順](#preprocess-dependency-injection-instructions)の前処理前に依存関係をインストールする必要があります。
+`composer.json`および`composer.lock` ファイルは[!DNL Commerce]の依存関係を管理し、各パッケージに適切なバージョンをインストールします。 [&#x200B; オートローダー](#update-the-autoloader)を更新する予定がある場合は、[依存関係インジェクション手順](#preprocess-dependency-injection-instructions)の前処理前に依存関係をインストールする必要があります。
 
 [!DNL Commerce]依存関係をインストールするには：
 

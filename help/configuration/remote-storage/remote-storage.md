@@ -30,15 +30,15 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->- リモートストレージは、Commerce バージョン 2.4.2以降でのみ使用できます。 [2.4.2 リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2)を参照してください。
+>- リモートストレージは、Commerce バージョン 2.4.2以降でのみ使用できます。 [2.4.2 リリースノート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2)を参照してください。
 >
 >- リモート ストレージ モジュールは、クラウド インフラストラクチャ上のAdobe Commerceで&#x200B;_制限付き_ サポートされています。 Adobeでは、サードパーティ製ストレージアダプターサービスのトラブルシューティングを完全に実行できません。 クラウドプロジェクトにリモートストレージを実装するガイダンスについては、[Commerce on Cloud インフラストラクチャのリモートストレージの設定](cloud-support.md)を参照してください。
 
-![ ローカルストレージとクラウドストレージの関係を示すリモートストレージ設定スキーマ図](../../assets/configuration/remote-storage-schema.png)
+![&#x200B; ローカルストレージとクラウドストレージの関係を示すリモートストレージ設定スキーマ図](../../assets/configuration/remote-storage-schema.png)
 
 ## リモートストレージオプション
 
-[`setup` CLI コマンド ](../../installation/tutorials/deployment.md)を使用して、`remote-storage` オプションを使用してリモート ストレージを設定できます。 `remote-storage` オプションでは、次の構文を使用します。
+[`setup` CLI コマンド &#x200B;](../../installation/tutorials/deployment.md)を使用して、`remote-storage` オプションを使用してリモート ストレージを設定できます。 `remote-storage` オプションでは、次の構文を使用します。
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"
@@ -79,7 +79,7 @@ Adobe Commerceのインストール中にリモートストレージをインス
 
 >[!TIP]
 >
->クラウド インフラストラクチャ上のAdobe Commerceについては、[ クラウド インフラストラクチャ上のCommerceのリモート ストレージの設定](cloud-support.md)を参照してください。
+>クラウド インフラストラクチャ上のAdobe Commerceについては、[&#x200B; クラウド インフラストラクチャ上のCommerceのリモート ストレージの設定](cloud-support.md)を参照してください。
 
 ## コンテンツの移行
 
@@ -91,5 +91,5 @@ Adobe Commerceのインストール中にリモートストレージをインス
 
 >[!INFO]
 >
->同期コマンドは、`pub/media` ディレクトリ内のファイルのみを移行します。_not_ ファイルは`var` ディレクトリ内のインポート/エクスポート ファイルです。 _Commerce 2.4 ユーザーガイド_&#x200B;の「[ スケジュールされた読み込み/書き出し](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html)」を参照してください。
+>同期コマンドは、`pub/media` ディレクトリ内のファイルのみを移行します。_not_ ファイルは`var` ディレクトリ内のインポート/エクスポート ファイルです。 _Commerce 2.4 ユーザーガイド_&#x200B;の「[&#x200B; スケジュールされた読み込み/書き出し](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html)」を参照してください。
 

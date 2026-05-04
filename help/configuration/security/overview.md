@@ -18,8 +18,8 @@ ht-degree: 0%
 
 設定ガイドの「セキュリティ」セクションのトピックは、すべてのCommerce機能を網羅しているわけではありません。 その他のCommerce ガイドには、次のような重要なセキュリティ関連のトピックが数多くあります。
 
-- Adobe Commerceの開発者が構築するコンポーネントのセキュリティを強化するために使用できる情報については、[PHP開発者ガイド ](https://developer.adobe.com/commerce/php/development/security/)を参照してください。
-- セキュリティ、プライバシー、規制のコンプライアンスに関する情報は、[ セキュリティとコンプライアンスに関するガイド ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)と、技術リソースへのリンクを参照してください。
+- Adobe Commerceの開発者が構築するコンポーネントのセキュリティを強化するために使用できる情報については、[PHP開発者ガイド &#x200B;](https://developer.adobe.com/commerce/php/development/security/)を参照してください。
+- セキュリティ、プライバシー、規制のコンプライアンスに関する情報は、[&#x200B; セキュリティとコンプライアンスに関するガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)と、技術リソースへのリンクを参照してください。
 
 一度に設定ガイドに含まれていたセキュリティ関連のトピックが、次のガイドに記載されるようになりました。
 

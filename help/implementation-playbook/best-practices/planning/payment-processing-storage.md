@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # 決済処理と保存のベストプラクティス
 
-[PCI コンプライアンス ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html)を維持する際の重要な原則のひとつは、クレジットカード支払いを適切に処理して保存するための戦略を持つことです。
+[PCI コンプライアンス &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html)を維持する際の重要な原則のひとつは、クレジットカード支払いを適切に処理して保存するための戦略を持つことです。
 
-Adobe Commerceへのクレジットカード情報の保存は&#x200B;**固く禁止されています**。これは、PCI-DSS （Payment Card Industry Data Security Standard）に基づく販売者としての義務に違反する可能性があります。 加盟店の義務に関する共有責任モデルとガイドラインについて詳しくは、Adobe Trust Centerの[Adobe Commerce共有責任モデルガイド ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf)を参照してください。
+Adobe Commerceへのクレジットカード情報の保存は&#x200B;**固く禁止されています**。これは、PCI-DSS （Payment Card Industry Data Security Standard）に基づく販売者としての義務に違反する可能性があります。 加盟店の義務に関する共有責任モデルとガイドラインについて詳しくは、Adobe Trust Centerの[Adobe Commerce共有責任モデルガイド &#x200B;](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf)を参照してください。
 
-コマースサイトの決済情報を適切に処理するには、次のベストプラクティスに従ってください。 セキュリティのベストプラクティスに関する追加のガイダンスについては、[ サイトとインフラストラクチャの保護](../launch/security-best-practices.md)を参照してください。
+コマースサイトの決済情報を適切に処理するには、次のベストプラクティスに従ってください。 セキュリティのベストプラクティスに関する追加のガイダンスについては、[&#x200B; サイトとインフラストラクチャの保護](../launch/security-best-practices.md)を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
 
 * Adobe Commerce on cloud infrastructure
 * Adobe Commerce オンプレミス

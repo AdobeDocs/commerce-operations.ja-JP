@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Commerce コードは、すべてのXSD スキーマを[Uniform Resource Names （URN） ](https://www.ietf.org/rfc/rfc2141.txt)として参照します。 コードを開発しており、XSDを参照する必要がある場合、このコマンドは、URNを認識してハイライト表示するように統合開発者環境（IDE）を設定します。 これにより、開発が容易になります。
+Commerce コードは、すべてのXSD スキーマを[Uniform Resource Names （URN） &#x200B;](https://www.ietf.org/rfc/rfc2141.txt)として参照します。 コードを開発しており、XSDを参照する必要がある場合、このコマンドは、URNを認識してハイライト表示するように統合開発者環境（IDE）を設定します。 これにより、開発が容易になります。
 
 デフォルトでは、PhpStormのようなIDEはURNを認識するように設定されていないため、次のように赤いテキストで表示されます。
 

@@ -67,7 +67,7 @@ Composerをインストールするには：
    mv composer.phar /usr/local/bin/composer
    ```
 
-その他のインストールオプションについては、[Composer インストールドキュメント ](https://getcomposer.org/download/)を参照してください。
+その他のインストールオプションについては、[Composer インストールドキュメント &#x200B;](https://getcomposer.org/download/)を参照してください。
 
 ### PHPのインストール
 
@@ -126,7 +126,7 @@ Composerをインストールするには：
 
    詳しくは、[`.gitignore` reference](../reference/config-reference-gitignore.md)を参照してください。
 
-1. ビルドシステムでは、[ デフォルトモード ](../bootstrap/application-modes.md#default-mode)または[開発者モード ](../bootstrap/application-modes.md#developer-mode)を使用する必要があります。
+1. ビルドシステムでは、[&#x200B; デフォルトモード &#x200B;](../bootstrap/application-modes.md#default-mode)または[開発者モード &#x200B;](../bootstrap/application-modes.md#developer-mode)を使用する必要があります。
 
    ```shell
    bin/magento deploy:mode:set <mode>

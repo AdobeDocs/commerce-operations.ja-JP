@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # カスタム cron ジョブの設定
 
-このステップバイステップのチュートリアルでは、サンプルモジュールでカスタム cron ジョブとオプションでcron グループを作成する方法を説明します。 既に持っているモジュールを使用するか、[`magento2-samples` リポジトリ ](https://github.com/magento/magento2-samples)のサンプルモジュールを使用できます。
+このステップバイステップのチュートリアルでは、サンプルモジュールでカスタム cron ジョブとオプションでcron グループを作成する方法を説明します。 既に持っているモジュールを使用するか、[`magento2-samples` リポジトリ &#x200B;](https://github.com/magento/magento2-samples)のサンプルモジュールを使用できます。
 
 cron ジョブを実行すると、cron ジョブの名前`custom_cron`を持つ行が`cron_schedule` テーブルに追加されます。
 
@@ -21,7 +21,7 @@ cron ジョブを実行すると、cron ジョブの名前`custom_cron`を持つ
 
 - Commerce アプリケーションが`/var/www/html/magento2`にインストールされています
 - Commerce データベースのユーザー名とパスワードは両方`magento`です
-- すべてのアクションは、[ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)として実行します
+- すべてのアクションは、[&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)として実行します
 
 ## 手順1：サンプルモジュールを入手する
 
@@ -31,9 +31,9 @@ cron ジョブを実行すると、cron ジョブの名前`custom_cron`を持つ
 
 **サンプルモジュールを取得するには**:
 
-1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてCommerce サーバーにログインするか、切り替えます。
+1. [&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてCommerce サーバーにログインするか、切り替えます。
 1. Commerce アプリケーションルート以外のディレクトリ（ホームディレクトリなど）に移動します。
-1. [`magento2-samples` リポジトリ ](https://github.com/magento/magento2-samples)を複製します。
+1. [`magento2-samples` リポジトリ &#x200B;](https://github.com/magento/magento2-samples)を複製します。
 
    ```shell
    git clone git@github.com:magento/magento2-samples.git
@@ -273,7 +273,7 @@ SQL コマンドとシステム ログにエントリが含まれていない場
    </config>
    ```
 
-オプションの意味については、[crons リファレンスのカスタマイズ ](custom-cron-reference.md)を参照してください。
+オプションの意味については、[crons リファレンスのカスタマイズ &#x200B;](custom-cron-reference.md)を参照してください。
 
 ## 手順8：カスタム cron グループの確認
 
@@ -301,5 +301,5 @@ SQL コマンドとシステム ログにエントリが含まれていない場
 
    cron グループは次のように表示されます。
 
-   ![あなたのカスタム cron グループ ](../../assets/configuration/cron-group.png)
+   ![あなたのカスタム cron グループ &#x200B;](../../assets/configuration/cron-group.png)
 

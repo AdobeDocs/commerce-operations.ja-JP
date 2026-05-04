@@ -83,7 +83,7 @@ include /etc/nginx/conf.d/*.conf;
 
 この節では、セキュアプロキシで[HTTP Basic認証](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html)を設定する方法について説明します。 TLS認証とHTTP Basic認証を一緒に使用すると、ElasticsearchやOpenSearch、またはアプリケーションサーバーとの通信を誰もが傍受できなくなります。
 
-nginxはHTTP Basic認証をネイティブにサポートしているので、実稼動環境では推奨されていない[ ダイジェスト認証](https://www.nginx.com/resources/wiki/modules/auth_digest/)などの方法で認証することをお勧めします。
+nginxはHTTP Basic認証をネイティブにサポートしているので、実稼動環境では推奨されていない[&#x200B; ダイジェスト認証](https://www.nginx.com/resources/wiki/modules/auth_digest/)などの方法で認証することをお勧めします。
 
 関連トピックス：
 

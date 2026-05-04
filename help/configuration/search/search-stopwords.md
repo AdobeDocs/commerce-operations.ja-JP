@@ -35,7 +35,7 @@ ElasticsearchとOpenSearchでのストップワードの使用方法について
 
 **ストップワードを編集するには**:
 
-1. Commerce サーバーにログインするか、[ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
+1. Commerce サーバーにログインするか、[&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
 1. テキストエディターを使用して、`<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` ディレクトリでストップワードファイルを開きます。
 
    CSV ファイルでは、命名規則`stopwords_<locale_code>.csv`が使用されます。 例えば、ドイツ語のストップワードファイルの名前は`stopwords_de_DE.csv`です。
@@ -61,7 +61,7 @@ ElasticsearchとOpenSearchでのストップワードの使用方法について
 
 **ロケールのストップワードを追加するには**:
 
-1. Commerce サーバーにログインするか、[ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
+1. Commerce サーバーにログインするか、[&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
 
 1. テキストエディターを使用して、`<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` ディレクトリに`stopwords_<locale_code>.csv`という名前のストップワードファイルを作成します。
 

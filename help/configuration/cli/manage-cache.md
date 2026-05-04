@@ -20,7 +20,7 @@ Adobe CommerceのCMSを使用すれば、サイトのパフォーマンスを向
 >[!NOTE]
 >
 >
->Commerce サイト管理者は、Cache Management System ツールを使用して、管理者からキャッシュを管理できます。 _管理者システムガイド_&#x200B;の「[ キャッシュ管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)」を参照してください。
+>Commerce サイト管理者は、Cache Management System ツールを使用して、管理者からキャッシュを管理できます。 _管理者システムガイド_&#x200B;の「[&#x200B; キャッシュ管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)」を参照してください。
 
 
 ## キャッシュステータスの表示
@@ -68,7 +68,7 @@ Current status:
 
 >[!INFO]
 >
->バージョン 2.2以降では、実稼動モードでCommerceを実行している場合にのみ、コマンドラインを使用してキャッシュタイプを有効または無効にすることができます。 Commerceをデベロッパーモードで実行している場合は、コマンドラインまたは手動でキャッシュタイプを有効または無効にできます。 その前に、[ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)が`<magento_root>/app/etc/env.php`を手動で書き込み可能にする必要があります。
+>バージョン 2.2以降では、実稼動モードでCommerceを実行している場合にのみ、コマンドラインを使用してキャッシュタイプを有効または無効にすることができます。 Commerceをデベロッパーモードで実行している場合は、コマンドラインまたは手動でキャッシュタイプを有効または無効にできます。 その前に、[&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)が`<magento_root>/app/etc/env.php`を手動で書き込み可能にする必要があります。
 
 コマンドラインまたは管理者を使用して、キャッシュタイプ（_フラッシュ_&#x200B;または&#x200B;_リフレッシュ_&#x200B;とも呼ばれます）をクリーニングできます。
 
@@ -112,13 +112,13 @@ bin/magento cache:disable db_ddl full_page
 
 >[!INFO]
 >
->バージョン 2.3.4の時点では、Commerceは取得したシステム EAV属性をすべてキャッシュします。 この方法でEAV属性をキャッシュすると、DBへの挿入/選択リクエストの量が減少するため、パフォーマンスが向上します。 ただし、キャッシュネットワークのサイズも大きくなります。 開発者は、`bin/magento config:set dev/caching/cache_user_defined_attributes 1` コマンドを実行して、カスタム EAV属性をキャッシュできます。 これは、**ストア** >設定&#x200B;**設定** > **詳細** > **開発者** > **キャッシュ設定** > **ユーザー定義属性**&#x200B;から&#x200B;**はい**&#x200B;に設定することで、[開発者モード ](../bootstrap/application-modes.md)の管理者から実行することもできます。
+>バージョン 2.3.4の時点では、Commerceは取得したシステム EAV属性をすべてキャッシュします。 この方法でEAV属性をキャッシュすると、DBへの挿入/選択リクエストの量が減少するため、パフォーマンスが向上します。 ただし、キャッシュネットワークのサイズも大きくなります。 開発者は、`bin/magento config:set dev/caching/cache_user_defined_attributes 1` コマンドを実行して、カスタム EAV属性をキャッシュできます。 これは、**ストア** >設定&#x200B;**設定** > **詳細** > **開発者** > **キャッシュ設定** > **ユーザー定義属性**&#x200B;から&#x200B;**はい**&#x200B;に設定することで、[開発者モード &#x200B;](../bootstrap/application-modes.md)の管理者から実行することもできます。
 
 ## キャッシュの種類のクリーニングとフラッシュ
 
 >[!NOTE]
 >
->複数のページキャッシュは同時に無効化でき、これらのエンティティを&#x200B;_**個の編集なしで自動的に**_&#x200B;無効化できます。 例えば、カタログ内の任意の商品が任意のカテゴリに割り当てられている場合、または[!UICONTROL related product rule]が変更された場合などです。
+>複数のページキャッシュは同時に無効化でき、これらのエンティティを&#x200B;_&#x200B;**個の編集なしで自動的に**&#x200B;_&#x200B;無効化できます。 例えば、カタログ内の任意の商品が任意のカテゴリに割り当てられている場合、または[!UICONTROL related product rule]が変更された場合などです。
 
 古い項目をキャッシュからパージするには、_clean_&#x200B;または&#x200B;_flush_&#x200B;のキャッシュタイプを実行できます。
 

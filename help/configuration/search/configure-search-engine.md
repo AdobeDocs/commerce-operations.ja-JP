@@ -16,16 +16,16 @@ ht-degree: 0%
 
 >[!TIP]
 >
->バージョン 2.4.4および2.4.3-p2では、**Elasticsearch**というラベルが付けられたすべてのフィールドがOpenSearchにも適用されます。
+>バージョン 2.4.4および2.4.3-p2では、**Elasticsearch**&#x200B;というラベルが付けられたすべてのフィールドがOpenSearchにも適用されます。
 >Elasticsearch 8.xのサポートがバージョン 2.4.6で導入されたときには、ElasticsearchとOpenSearchの設定を区別するために新しいラベルが作成されました。
 
-検索エンジンの設定について詳しくは、[ ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html)を参照してください。
+検索エンジンの設定について詳しくは、[&#x200B; ユーザーガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html)を参照してください。
 
 ## 管理者から検索エンジンを設定します
 
 >[!TIP]
 >
->新しい検索エンジンのバージョンにアップグレードする方法については、[ アップグレードの前提条件](../../upgrade/prepare/prerequisites.md)を参照してください。
+>新しい検索エンジンのバージョンにアップグレードする方法については、[&#x200B; アップグレードの前提条件](../../upgrade/prepare/prerequisites.md)を参照してください。
 
 ElasticsearchまたはOpenSearchを使用するようにシステムを設定するには：
 
@@ -89,13 +89,13 @@ ElasticsearchまたはOpenSearchを使用するようにシステムを設定す
 1. **[!UICONTROL Page Cache]**&#x200B;の横にあるチェックボックスを選択します。
 1. 右上の&#x200B;**[!UICONTROL Actions]** リストから、**更新**&#x200B;をクリックします。
 
-   ![ キャッシュ管理](../../assets/configuration/refresh-cache.png)
+   ![&#x200B; キャッシュ管理](../../assets/configuration/refresh-cache.png)
 
 コマンドラインを使用してキャッシュをクリーンアップするには：[`bin/magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types)
 
 コマンドラインを使用してインデックスを再作成するには：
 
-1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてCommerce サーバーにログインするか、切り替えます。
+1. [&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてCommerce サーバーにログインするか、切り替えます。
 1. 次のいずれかのコマンドを入力します。
 
    カタログ検索インデックスのみを再インデックス化するには、次のコマンドを入力します。

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # .gitignore リファレンス
 
-Magento Open Sourceには、基本`.gitignore` ファイルが含まれています。 最新のCommerce `.gitignore`](https://raw.githubusercontent.com/magento/magento2/2.4/.gitignore) ファイルの[を参照してください。 `.gitignore` リストにあるファイルを追加する必要がある場合は、コミットのステージング時に`-f` （強制）オプションを使用できます。
+Magento Open Sourceには、基本`.gitignore` ファイルが含まれています。 最新のCommerce `.gitignore`[&#128279;](https://raw.githubusercontent.com/magento/magento2/2.4/.gitignore) ファイルのを参照してください。 `.gitignore` リストにあるファイルを追加する必要がある場合は、コミットのステージング時に`-f` （強制）オプションを使用できます。
 
 ```shell
 git add <path/filename> -f

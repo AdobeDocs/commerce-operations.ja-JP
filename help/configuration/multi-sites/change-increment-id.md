@@ -17,7 +17,7 @@ ht-degree: 0%
 
 - Adobe Commerce（オンプレミス）:2.x.x
 - Adobe Commerce オンクラウドインフラストラクチャ：2.x.x
-- MySQL: [ サポートされているすべてのバージョン ](../../installation/prerequisites/database/mysql.md)
+- MySQL: [&#x200B; サポートされているすべてのバージョン &#x200B;](../../installation/prerequisites/database/mysql.md)
 
 ## 増分IDを変更する必要があるタイミング
 

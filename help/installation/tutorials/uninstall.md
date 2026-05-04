@@ -11,21 +11,21 @@ ht-degree: 0%
 
 # Adobe Commerceのアンインストールまたは再インストール
 
-これらのコマンドを使用する前に、アプリケーションを[ インストールする必要があります](../tutorials/install.md)。
+これらのコマンドを使用する前に、アプリケーションを[&#x200B; インストールする必要があります](../tutorials/install.md)。
 
 ## アプリケーションの更新
 
 アプリケーションを更新するには：
 
-* アーカイブからソフトウェアをインストールした場合、または「composer-create-project」を使用した場合は、[ アップグレードガイド ](../../upgrade/overview.md)を参照してください。
-* 提供元の開発者（つまり、`git clone`を使用している）の場合は、[ アプリケーションの更新](../../upgrade/developer/git-installs.md)を参照してください。
+* アーカイブからソフトウェアをインストールした場合、または「composer-create-project」を使用した場合は、[&#x200B; アップグレードガイド &#x200B;](../../upgrade/overview.md)を参照してください。
+* 提供元の開発者（つまり、`git clone`を使用している）の場合は、[&#x200B; アプリケーションの更新](../../upgrade/developer/git-installs.md)を参照してください。
 
 ## アプリケーションの再インストール
 
 コマンドラインからアプリケーションを再インストールする方法は、役割によって異なります。
 
-* アーカイブからソフトウェアをインストールした場合、または「composer-create-project」を使用した場合は、[ インストール依存関係の更新](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)を参照してください。
-* 提供開発者（つまり、`git clone`を使用し始めた）の場合は、[ インストール依存関係の更新](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)を参照してください。
+* アーカイブからソフトウェアをインストールした場合、または「composer-create-project」を使用した場合は、[&#x200B; インストール依存関係の更新](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)を参照してください。
+* 提供開発者（つまり、`git clone`を使用し始めた）の場合は、[&#x200B; インストール依存関係の更新](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)を参照してください。
 
 ## アプリケーションのアンインストール
 

@@ -47,14 +47,14 @@ cd <your Magento 2 clone directory>
 git branch
 ```
 
-現在`develop` ブランチにいる場合は、続行する前に[ リリースブランチ ](https://developer.adobe.com/commerce/contributor/guides/install/change-version)に変更する必要があります。
+現在`develop` ブランチにいる場合は、続行する前に[&#x200B; リリースブランチ &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/change-version)に変更する必要があります。
 
 Adobe Commerce ソフトウェアをまだインストールしていない場合は、[今すぐインストールしてください](../../installation/prerequisites/commerce.md)。
-GitHub リポジトリをクローンする場合は、[ （Contributor）の説明に従ってリリースタグをチェックアウトし、GitHub リポジトリをクローンしてください](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)。
+GitHub リポジトリをクローンする場合は、[&#x200B; （Contributor）の説明に従ってリリースタグをチェックアウトし、GitHub リポジトリをクローンしてください](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)。
 
 ## [!DNL Data Migration Tool]のリリース済みバージョンを検索
 
-[!DNL Data Migration Tool] GitHub リポジトリの[ リリース ](https://github.com/magento/data-migration-tool/releases) ページに移動して、使用可能なリリース済みバージョンを確認します。
+[!DNL Data Migration Tool] GitHub リポジトリの[&#x200B; リリース &#x200B;](https://github.com/magento/data-migration-tool/releases) ページに移動して、使用可能なリリース済みバージョンを確認します。
 
 ## [!DNL Data Migration Tool]をインストール
 
@@ -66,13 +66,13 @@ GitHub リポジトリをクローンする場合は、[ （Contributor）の説
 インストールする前に、次のことを確認してください。
 
 - [前提条件](prerequisites.md) セクションに記載されているすべてのタスクを完了しました
-- [Magento 2 ソフトウェアのバージョン ](install.md#check-your-version)を確認しました
+- [Magento 2 ソフトウェアのバージョン &#x200B;](install.md#check-your-version)を確認しました
 
 ### `repo.magento.com`からインストール
 
 [!DNL Data Migration Tool]をインストールするには、Magento ルート インストール ディレクトリの`composer.json`を更新して、[!DNL Data Migration Tool] パッケージの場所を指定する必要があります。
 
-1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインするか、切り替えます。
+1. [&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインするか、切り替えます。
 1. アプリケーションのルートディレクトリに移動します。
 1. 次のコマンドを入力します。
 
@@ -102,7 +102,7 @@ GitHub リポジトリをクローンする場合は、[ （Contributor）の説
 
 GitHub リポジトリをクローンした場合は、次の手順に従って[!DNL Data Migration Tool]をインストールします。
 
-1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインするか、切り替えます。
+1. [&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインするか、切り替えます。
 1. アプリケーションのルートディレクトリに移動します。
 1. 次のコマンドを入力します。
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Adobe Commerceのエンタープライズ規模での一元的なパッチ適用について詳しくは、[ ベストプラクティス ](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md)を参照してください。
+>Adobe Commerceのエンタープライズ規模での一元的なパッチ適用について詳しくは、[&#x200B; ベストプラクティス &#x200B;](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md)を参照してください。
 
 ## Composer
 

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 開始する前に、次の手順を実行して準備します。
 
-1. アプリケーションサーバーに[ ファイルシステム所有者](../../../installation/prerequisites/file-system/overview.md)としてログインします。
+1. アプリケーションサーバーに[&#x200B; ファイルシステム所有者](../../../installation/prerequisites/file-system/overview.md)としてログインします。
 1. アプリケーション インストール ディレクトリに変更するか、システム `PATH`に追加されていることを確認してください。
 
 詳しくは、[最初の手順](overview.md#first-steps) セクションを参照してください。
@@ -105,7 +105,7 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 * `Incompatibility in data. Source document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 * `Incompatibility in data. Destination document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 
-詳しい情報と推奨事項については、このガイドの[ トラブルシューティング ](https://support.magento.com/hc/en-us/articles/360033020451)の節を参照してください。
+詳しい情報と推奨事項については、このガイドの[&#x200B; トラブルシューティング &#x200B;](https://support.magento.com/hc/en-us/articles/360033020451)の節を参照してください。
 
 ## 次の移行手順
 

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # データベーススキーマとデータのアップグレード
 
-このコマンドを使用する前に、アプリケーションを[ インストールする必要があります](../advanced.md)。
+このコマンドを使用する前に、アプリケーションを[&#x200B; インストールする必要があります](../advanced.md)。
 
 ## データベーススキーマとデータのアップグレード
 
@@ -31,7 +31,7 @@ ht-degree: 0%
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   ここで、`--keep-generated`は、[静的ビューファイル ](../../configuration/cli/static-view-file-deployment.md)を更新しないオプションの引数です。 このオプションの引数は、経験豊富なシステムインテグレーターによる限られた状況で&#x200B;*only*&#x200B;を使用するためのものです。 [実稼動モード ](../../configuration/bootstrap/application-modes.md#production-mode)では&#x200B;*のみ*&#x200B;を使用する必要があります。 *not*&#x200B;は[開発者モード ](../../configuration/bootstrap/application-modes.md#developer-mode)で使用する必要があります。
+   ここで、`--keep-generated`は、[静的ビューファイル &#x200B;](../../configuration/cli/static-view-file-deployment.md)を更新しないオプションの引数です。 このオプションの引数は、経験豊富なシステムインテグレーターによる限られた状況で&#x200B;*only*&#x200B;を使用するためのものです。 [実稼動モード &#x200B;](../../configuration/bootstrap/application-modes.md#production-mode)では&#x200B;*のみ*&#x200B;を使用する必要があります。 *not*&#x200B;は[開発者モード &#x200B;](../../configuration/bootstrap/application-modes.md#developer-mode)で使用する必要があります。
 
 1. キャッシュをクリーニングします。
 

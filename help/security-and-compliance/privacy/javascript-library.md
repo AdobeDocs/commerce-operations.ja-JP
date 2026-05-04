@@ -15,19 +15,19 @@ ht-degree: 0%
 
 Privacy JavaScript Libraryは、Adobe Commerceによって収集されたプライベートデータにアクセスして削除するためのプロセスを構築するのに役立つ一連のツールです。
 
-Commerce データトラッキングサービスは、[一般データ保護規則（GDPR） ](gdpr.md)および[ カリフォルニア州消費者プライバシー法（CCPA） ](ccpa.md)などのプライバシー規制に適用される個人情報を保存できます。
+Commerce データトラッキングサービスは、[一般データ保護規則（GDPR） &#x200B;](gdpr.md)および[&#x200B; カリフォルニア州消費者プライバシー法（CCPA） &#x200B;](ccpa.md)などのプライバシー規制に適用される個人情報を保存できます。
 
 このライブラリは、プライバシーデータリクエストを作成し、その応答を収集するための一連の機能を提供します。 このライブラリを使用すると、Adobe Commerce データトラッキングサービスによってブラウザーに保存されているデータを取得および削除できます。
 
 >[!NOTE]
 >
->[Cookie制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)が有効になっている場合、買い物客が同意するまでCommerceは行動データを収集しません。 [!UICONTROL **Cookie制限モード**]&#x200B;が無効になっている場合、Commerceはデフォルトで行動データを収集します。
+>[Cookie制限モード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)が有効になっている場合、買い物客が同意するまでCommerceは行動データを収集しません。 [!UICONTROL **Cookie制限モード**]&#x200B;が無効になっている場合、Commerceはデフォルトで行動データを収集します。
 
 ## インストール
 
 Privacy JavaScript ライブラリは、次のCDNの場所で利用できます：`commerce.adobe.net/magentoprivacy.js`
 
-ファイルを用意したら、Adobe Commerce インスタンスにインストールされているカスタムモジュールまたはテーマにファイルを追加する必要があります。 「[ カスタム JavaScriptを使用](https://developer.adobe.com/commerce/frontend-core/javascript/custom)」のトピックに記載されている手順に従って、このタスクを実行します。
+ファイルを用意したら、Adobe Commerce インスタンスにインストールされているカスタムモジュールまたはテーマにファイルを追加する必要があります。 「[&#x200B; カスタム JavaScriptを使用](https://developer.adobe.com/commerce/frontend-core/javascript/custom)」のトピックに記載されている手順に従って、このタスクを実行します。
 
 ### 初期化
 

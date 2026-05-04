@@ -17,7 +17,7 @@ Adobeでは、[Composer](https://getcomposer.org/)を使用して、Adobe Commer
 
 - サードパーティライブラリをソースコードにバンドルすることなく再利用
 - 堅牢な依存関係管理を備えたコンポーネントベースのアーキテクチャを使用することで、拡張機能の競合や互換性の問題を軽減できます
-- [PHP フレームワーク相互運用性グループ （FIG） ](https://www.php-fig.org/)標準に準拠
+- [PHP フレームワーク相互運用性グループ （FIG） &#x200B;](https://www.php-fig.org/)標準に準拠
 - Magento Open Sourceと他のコンポーネントの再パッケージ
 - 本番環境でのAdobe Commerce ソフトウェアの使用
 
@@ -29,13 +29,13 @@ Adobeでは、[Composer](https://getcomposer.org/)を使用して、Adobe Commer
 
 続行する前に、次の操作を行う必要があります。
 
-- すべての[前提条件タスク ](system-requirements.md)を完了します。
+- すべての[前提条件タスク &#x200B;](system-requirements.md)を完了します。
 - [Composer](https://getcomposer.org/download/)をインストールします。
 - Adobe Commerce Composer リポジトリに[認証キー](prerequisites/authentication-keys.md)を取得します。
 
 ## ファイルシステム所有者としてログイン
 
-所有権、権限、およびファイルシステムの所有者について詳しくは、[所有権と権限の概要トピック ](prerequisites/file-system/overview.md)を参照してください。
+所有権、権限、およびファイルシステムの所有者について詳しくは、[所有権と権限の概要トピック &#x200B;](prerequisites/file-system/overview.md)を参照してください。
 
 ファイルシステムの所有者に切り替えるには：
 
@@ -73,7 +73,7 @@ Adobeでは、[Composer](https://getcomposer.org/)を使用して、Adobe Commer
 
 Adobe Commerce メタパッケージを取得するには：
 
-1. [ ファイルシステム所有者](prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインするか、切り替えます。
+1. [&#x200B; ファイルシステム所有者](prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインするか、切り替えます。
 1. Web サーバーのdocroot ディレクトリまたは仮想ホストのdocrootとして設定したディレクトリに変更します。
 1. Commerce メタパッケージを使用してComposer プロジェクトを作成します。
 
@@ -95,9 +95,9 @@ Adobe Commerce メタパッケージを取得するには：
    >
    > Commerce認証キーで構成されたComposer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` ファイルまたは環境変数を使用する場合、認証キーを入力するメッセージは表示されません。
 
-   `Could not find package...`や`...no matching package found`などのエラーが発生した場合は、コマンドにタイプミスがないことを確認してください。 それでもエラーが発生する場合は、Adobe Commerceのダウンロードが許可されない場合があります。 ヘルプについては、[Adobe Commerce サポート ](https://support.magento.com/hc/en-us)にお問い合わせください。
+   `Could not find package...`や`...no matching package found`などのエラーが発生した場合は、コマンドにタイプミスがないことを確認してください。 それでもエラーが発生する場合は、Adobe Commerceのダウンロードが許可されない場合があります。 ヘルプについては、[Adobe Commerce サポート &#x200B;](https://support.magento.com/hc/en-us)にお問い合わせください。
 
-   その他のエラーについては、[ トラブルシューティング ](https://support.magento.com/hc/en-us/articles/360033818091)を参照してください。
+   その他のエラーについては、[&#x200B; トラブルシューティング &#x200B;](https://support.magento.com/hc/en-us/articles/360033818091)を参照してください。
 
 ### 例 – マイナーリリース
 
@@ -172,7 +172,7 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->CLI インストールオプションの詳細については、[ コマンドラインからのアプリケーションのインストール ](advanced.md)を参照してください。
+>CLI インストールオプションの詳細については、[&#x200B; コマンドラインからのアプリケーションのインストール &#x200B;](advanced.md)を参照してください。
 
 ## コマンドの概要
 
@@ -232,4 +232,4 @@ bin/magento help cache:enable
 
 >[!NOTE]
 >
->おめでとうございます。 クイックインストールが完了しました。 より高度なサポートが必要ですか？ [詳細インストール ](advanced.md) ガイドをご覧ください。
+>おめでとうございます。 クイックインストールが完了しました。 より高度なサポートが必要ですか？ [詳細インストール &#x200B;](advanced.md) ガイドをご覧ください。

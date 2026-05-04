@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### ストレージ エンジンをInnoDBに変更する
 
-テーブルを宣言する`db_schema.xml` ファイルで、対応する`table` ノードの`engine`属性値を`innodb`に設定します。 参照については、開発者ドキュメントの[宣言スキーマの設定/テーブルノード ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/)を参照してください。
+テーブルを宣言する`db_schema.xml` ファイルで、対応する`table` ノードの`engine`属性値を`innodb`に設定します。 参照については、開発者ドキュメントの[宣言スキーマの設定/テーブルノード &#x200B;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/)を参照してください。
 
 宣言型スキームは、Adobe Commerce on cloud infrastructure バージョン 2.3で導入されました。
 
@@ -76,14 +76,14 @@ Adobeでは、Adobe Commerce アプリケーションのサードパーティ検
 
 ## [!DNL ECE-Tools]をバージョン 2002.0.21以降にアップグレード {#ece-tools-version}
 
-クローンのデッドロックに関する潜在的な問題を回避するには、ECE-Toolsをバージョン 2002.0.21以降にアップグレードします。 手順については、開発者ドキュメントの「[ アップデート `ece-tools` バージョン ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package)」を参照してください。
+クローンのデッドロックに関する潜在的な問題を回避するには、ECE-Toolsをバージョン 2002.0.21以降にアップグレードします。 手順については、開発者ドキュメントの「[&#x200B; アップデート `ece-tools` バージョン &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package)」を参照してください。
 
 ## インデクサーモードを安全に切り替える
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
 インデックスを切り替えると、[!DNL data definition language] （DDL）ステートメントが生成され、データベースのロックの原因となるトリガーが作成されます。 この問題を回避するには、web サイトをメンテナンスモードにし、設定を変更する前にcron ジョブを無効にします。
-手順については、*Adobe Commerce設定ガイド*&#x200B;の「[ インデックスを設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1)」を参照してください。
+手順については、*Adobe Commerce設定ガイド*&#x200B;の「[&#x200B; インデックスを設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1)」を参照してください。
 
 ## 実稼動環境でDDL ステートメントを実行しない
 
@@ -95,7 +95,7 @@ DDL ステートメントを実行する必要がある場合は、web サイト
 
 管理者からの注文アーカイブを有効にして、注文データの増加に合わせてセールステーブルに必要なスペースを削減します。 アーカイブは、MySQL ディスク容量を節約し、チェックアウトのパフォーマンスを向上させます。
 
-Adobe Commerce Merchant ドキュメントの[ アーカイブを有効にする](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html)を参照してください。
+Adobe Commerce Merchant ドキュメントの[&#x200B; アーカイブを有効にする](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html)を参照してください。
 
 ## 追加情報
 

@@ -21,11 +21,11 @@ ht-degree: 0%
 PHPはmemcacheをネイティブにサポートしていないので、PHPで使用するには拡張機能をインストールする必要があります。 利用可能なPHP拡張機能は2つあり、どの拡張機能を使用するかをデコードすることが重要です。
 
 - `memcache` （_no d_） – 古いが人気のある拡張機能で、定期的にメンテナンスされません。
-現在`memcache`拡張機能&#x200B;_はPHP 7で動作しません。_ memcache](https://www.php.net/manual/en/book.memcache.php)については、[PHP ドキュメントを参照してください。
+現在`memcache`拡張機能&#x200B;_はPHP 7で動作しません。_ memcache[&#128279;](https://www.php.net/manual/en/book.memcache.php)については、PHP ドキュメントを参照してください。
 
   Ubuntuの正確な名前は`php5-memcache`です。
 
-- `memcached` （_と`d`_） - PHP 7と互換性のある、新しく保守された拡張機能。 memcached](https://www.php.net/manual/en/book.memcached.php)については、[PHP ドキュメントを参照してください。
+- `memcached` （_と`d`_） - PHP 7と互換性のある、新しく保守された拡張機能。 memcached[&#128279;](https://www.php.net/manual/en/book.memcached.php)については、PHP ドキュメントを参照してください。
 
   Ubuntuの正確な名前は`php5-memcached`です。
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 開始する前に、次の手順を実行して準備します。
 
-1. [ ファイルシステム所有者](../../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインします。
+1. [&#x200B; ファイルシステム所有者](../../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインします。
 
 1. `/bin` ディレクトリに変更するか、システム `PATH`に追加してください。
 
@@ -54,7 +54,7 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 設定を移行する際に、システム設定を無視、名前変更、または変更することができます。 これには、`settings.xml` ファイルでカスタムルールを指定します。
 
-1. [ ファイルシステム所有者](../../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインするか、切り替えます。
+1. [&#x200B; ファイルシステム所有者](../../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインするか、切り替えます。
 
 1. 次のディレクトリに移動します。
 
@@ -80,7 +80,7 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 1. マッピング用の設定ファイルの新しい名前を指定するには、`path/to/config.xml` ファイルの`<settings_map_file>` タグを変更します。
 
-詳しくは、ツールの[仕様](../technical-specification.md)の[設定の移行モード ](../technical-specification.md#settings-migration-mode)の節を参照してください。
+詳しくは、ツールの[仕様](../technical-specification.md)の[設定の移行モード &#x200B;](../technical-specification.md#settings-migration-mode)の節を参照してください。
 
 ## 次の移行手順
 

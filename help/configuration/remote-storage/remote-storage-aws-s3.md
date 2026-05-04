@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # リモートストレージ用AWS S3 バケットの設定
 
-[Amazon Simple Storage Service （Amazon S3） ](https://aws.amazon.com/s3)は、業界をリードするスケーラビリティ、データ可用性、セキュリティ、パフォーマンスを提供するオブジェクト ストレージ サービスです。 AWS S3 サービスでは、データストレージにバケット（コンテナ）を使用します。 この設定では、_private_ バケットを作成する必要があります。 クラウド インフラストラクチャ上のAdobe Commerceについては、[ クラウド インフラストラクチャ上のCommerceのリモート ストレージの設定](cloud-support.md)を参照してください。
+[Amazon Simple Storage Service （Amazon S3） &#x200B;](https://aws.amazon.com/s3)は、業界をリードするスケーラビリティ、データ可用性、セキュリティ、パフォーマンスを提供するオブジェクト ストレージ サービスです。 AWS S3 サービスでは、データストレージにバケット（コンテナ）を使用します。 この設定では、_private_ バケットを作成する必要があります。 クラウド インフラストラクチャ上のAdobe Commerceについては、[&#x200B; クラウド インフラストラクチャ上のCommerceのリモート ストレージの設定](cloud-support.md)を参照してください。
 
 >[!WARNING]
 >
@@ -32,7 +32,7 @@ ht-degree: 0%
    bin/magento config:set system/media_storage_configuration/media_database 0
    ```
 
-1. プライベートバケットを使用するようにCommerceを設定します。 パラメーターの完全なリストについては、[ リモートストレージオプション ](remote-storage.md#remote-storage-options)を参照してください。
+1. プライベートバケットを使用するようにCommerceを設定します。 パラメーターの完全なリストについては、[&#x200B; リモートストレージオプション &#x200B;](remote-storage.md#remote-storage-options)を参照してください。
 
    ```shell
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このアプローチは、Adobe Commerce on cloud インフラストラクチャプロジェクトには適用できません。 Adobe Commerce on cloud infrastructureでNginxを設定することはできません。 詳しくは、[ クラウド固有のドキュメント ](cloud-support.md)を参照してください。
+>このアプローチは、Adobe Commerce on cloud インフラストラクチャプロジェクトには適用できません。 Adobe Commerce on cloud infrastructureでNginxを設定することはできません。 詳しくは、[&#x200B; クラウド固有のドキュメント &#x200B;](cloud-support.md)を参照してください。
 
 Nginxでは、`proxy_pass` ディレクティブを使用して認証を実行するには、追加の設定が必要です。 次のプロキシ情報を`nginx.conf` ファイルに追加します。
 
@@ -73,7 +73,7 @@ location ~* \.(ico|jpg|jpeg|png|gif|svg|js|css|swf|eot|ttf|otf|woff|woff2)$ {
 
 ### 認証
 
-[AWS IAM](https://aws.amazon.com/iam/) ロールの代わりにアクセスキーと秘密鍵を使用する場合は、[`ngx_aws_auth` Nginx モジュール ](https://github.com/anomalizer/ngx_aws_auth)を含める必要があります。
+[AWS IAM](https://aws.amazon.com/iam/) ロールの代わりにアクセスキーと秘密鍵を使用する場合は、[`ngx_aws_auth` Nginx モジュール &#x200B;](https://github.com/anomalizer/ngx_aws_auth)を含める必要があります。
 
 ### 権限
 

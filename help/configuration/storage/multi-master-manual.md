@@ -52,7 +52,7 @@ Adobeでは、プロセス中に問題が発生した場合に復元できるよ
 
 **システムをバックアップするには**:
 
-1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてCommerce サーバーにログインするか、切り替えます。
+1. [&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてCommerce サーバーにログインするか、切り替えます。
 1. 次のコマンドを入力します。
 
    ```shell
@@ -130,7 +130,7 @@ Adobeでは、プロセス中に問題が発生した場合に復元できるよ
 
 >[!INFO]
 >
->このセクションには、特定のデータベーステーブル名を持つスクリプトが含まれます。 カスタマイズを実行した場合、またはアクションを実行する前にテーブルの完全なリストを表示する場合は、[参照スクリプト ](#reference-scripts)を参照してください。
+>このセクションには、特定のデータベーステーブル名を持つスクリプトが含まれます。 カスタマイズを実行した場合、またはアクションを実行する前にテーブルの完全なリストを表示する場合は、[参照スクリプト &#x200B;](#reference-scripts)を参照してください。
 
 詳細は、次を参照してください。
 
@@ -263,7 +263,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> seque
 
 #### NDB要件
 
-[Network Database （NDB） ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) クラスターを使用している場合：
+[Network Database （NDB） &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) クラスターを使用している場合：
 
 1. InnoDbからダンプファイルのNDB タイプにテーブルを変換する：
 
@@ -309,7 +309,7 @@ mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattribu
 
 >[!INFO]
 >
->このセクションには、特定のデータベーステーブル名を持つスクリプトが含まれます。 カスタマイズを実行した場合、またはアクションを実行する前にテーブルの完全なリストを表示する場合は、[参照スクリプト ](#reference-scripts)を参照してください。
+>このセクションには、特定のデータベーステーブル名を持つスクリプトが含まれます。 カスタマイズを実行した場合、またはアクションを実行する前にテーブルの完全なリストを表示する場合は、[参照スクリプト &#x200B;](#reference-scripts)を参照してください。
 
 見積データベース テーブル名は`quote`で始まります。 `magento_customercustomattributes_sales_flat_quote`および`magento_customercustomattributes_sales_flat_quote_address` テーブルも影響を受けます
 
@@ -357,7 +357,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> magen
 
 ### NDB要件
 
-[Network Database （NDB） ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) クラスターを使用している場合：
+[Network Database （NDB） &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) クラスターを使用している場合：
 
 1. InnoDbからダンプファイルのNDB タイプにテーブルを変換する：
 
@@ -477,7 +477,7 @@ SET foreign_key_checks = 1;
 
 デプロイメント設定を更新するには：
 
-1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてCommerce サーバーにログインするか、切り替えます。
+1. [&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてCommerce サーバーにログインするか、切り替えます。
 1. デプロイメント設定をバックアップします。
 
    ```shell

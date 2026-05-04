@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # クリックジャッキングの悪用を防ぐ
 
-[X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) HTTP リクエストヘッダーをストアフロントへのリクエストに含めることで、[ クリックジャッキング ](https://owasp.org/www-community/attacks/Clickjacking)の不正利用を防止します。
+[X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) HTTP リクエストヘッダーをストアフロントへのリクエストに含めることで、[&#x200B; クリックジャッキング &#x200B;](https://owasp.org/www-community/attacks/Clickjacking)の不正利用を防止します。
 
 `X-Frame-Options` ヘッダーを使用すると、ブラウザーが`<frame>`、`<iframe>`、または`<object>`でページをレンダリングできるかどうかを次のように指定できます。
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Commerceでサポートされているブラウザーではサポートされなくなったため、`ALLOW-FROM <uri>` オプションは廃止されました。 [ ブラウザーの互換性](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#browser_compatibility)を参照してください。
+>Commerceでサポートされているブラウザーではサポートされなくなったため、`ALLOW-FROM <uri>` オプションは廃止されました。 [&#x200B; ブラウザーの互換性](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#browser_compatibility)を参照してください。
 
 >[!WARNING]
 >

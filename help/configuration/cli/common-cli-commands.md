@@ -44,14 +44,14 @@ bin/magento help cache:enable
 | [`magento dev:tests:run`](../cli/unit-tests.md) | 自動テストの実行 |
 | [`magento dev:xml:convert`](../cli/convert-layout-files.md) | レイアウト XML ファイルを、新しい拡張可能スタイルシート言語変換（XSLT）スタイルシートに合わせて更新します |
 | [`magento setup:perf:generate-fixtures`](../cli/generate-data.md) | パフォーマンステストに使用するデータを生成。 |
-| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Commerce アプリケーションのインストール後に、オプションのサンプルデータをインストールします。<br><br> サンプルデータについて詳しくは、[ オプションのサンプルデータ ](../../installation/sample-data/overview.md)を参照してください。 |
+| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Commerce アプリケーションのインストール後に、オプションのサンプルデータをインストールします。<br><br> サンプルデータについて詳しくは、[&#x200B; オプションのサンプルデータ &#x200B;](../../installation/sample-data/overview.md)を参照してください。 |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | バックエンド設定の管理 |
 | [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | 管理者ユーザーを作成/編集/ロック解除します。 |
 | [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug) | 開発者テンプレートヒントを有効/無効にします。 |
 
 ## 共通引数
 
-次の引数は、[すべてのコマンド ](/help/tools/reference/commerce-on-premises.md)に共通です。 これらのコマンドは、Commerce ソフトウェアのインストール前またはインストール後に実行できます。
+次の引数は、[すべてのコマンド &#x200B;](/help/tools/reference/commerce-on-premises.md)に共通です。 これらのコマンドは、Commerce ソフトウェアのインストール前またはインストール後に実行できます。
 
 | 長文 | 短いバージョン | 意味 |
 |--- |--- |--- |

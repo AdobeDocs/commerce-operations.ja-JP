@@ -64,15 +64,15 @@ Commerce Marketplaceから拡張機能のコンポーザー名とバージョン
 
 1. 右上隅で、**自分の名前** > **自分のプロファイル**&#x200B;をクリックします。
 
-   ![ マーケットプレイスアカウントにアクセス ](../../assets/installation/marketplace-my-profile.png)
+   ![&#x200B; マーケットプレイスアカウントにアクセス &#x200B;](../../assets/installation/marketplace-my-profile.png)
 
 1. 「**購入履歴**」をクリックします。
 
-   ![ マーケットプレイス購入履歴](../../assets/installation//marketplace-my-purchases.png)
+   ![&#x200B; マーケットプレイス購入履歴](../../assets/installation//marketplace-my-purchases.png)
 
 1. インストールする拡張機能を見つけ、コンポーネント名とバージョンをメモします。
 
-   ![ インストール用のComposer パッケージ名を表示する拡張機能の技術的な詳細](../../assets/installation/marketplace-extension-technical-details.png)
+   ![&#x200B; インストール用のComposer パッケージ名を表示する拡張機能の技術的な詳細](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
