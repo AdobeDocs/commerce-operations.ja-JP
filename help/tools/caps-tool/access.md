@@ -1,52 +1,52 @@
 ---
-title: アクセス方法  [!DNL Cloud Automation Patching Service (CAPS)]
-description: ' [!DNL Cloud Automation Patching Service (CAPS)] のアクセス方法と使用方法について説明します。'
+title: ' [!DNL Cloud Automation Patching Service (CAPS)]へのアクセス方法'
+description: ' [!DNL Cloud Automation Patching Service (CAPS)]へのアクセス方法と使用方法を説明します'
 hide: true
 hidefromtoc: true
-source-git-commit: ca388bd78affd4def19a5539d8529f2563d35e8c
+source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '276'
 ht-degree: 1%
 
 ---
 
-# [!DNL Cloud Automation Patching Service (CAPS)] へのアクセス方法
+# [!DNL Cloud Automation Patching Service (CAPS)]へのアクセス方法
 
 ## 前提条件
 
-[!DNL CAPS] では、Adobe Commerce Cloud の役割ベースのアクセス制御を使用します。 Cloud Console のアクセスレベルによって、[!DNL CAPS] で実行できる操作が決まります。
+[!DNL CAPS]は、Adobe Commerce Cloudの役割ベースのアクセス制御を使用します。 Cloud Consoleのアクセス レベルによって、[!DNL CAPS]で実行できる処理が決まります。
 
-### [!DNL CAPS] を使用できるユーザー
+### [!DNL CAPS]を使用できるユーザー
 
-* **プロジェクト管理者** – すべての環境でパッチを適用または元に戻すことができます。
-* **投稿者** – 割り当てられた環境にパッチを適用したり、元に戻したりできます。
-* **ビューア** - プロジェクトと環境のみを表示できます。アクションは許可されません
+* **プロジェクト管理者** – すべての環境でパッチを適用または元に戻すことができます
+* **Contributor** – 割り当てられた環境にパッチを適用または元に戻すことができます
+* **Viewer** - プロジェクトと環境のみを表示できます。アクションは許可されていません
 
 ### プロジェクトへのアクセスをリクエストする方法
 
 [!DNL CAPS] ユーザーインターフェイスにプロジェクトが表示されない場合は、適切なユーザーにアクセス権をリクエストする必要があります。
 
-* プロジェクトのアカウント所有者またはプロジェクト管理者に連絡してください
-* Cloud Console から適切な役割が付与されます
-* アクセス権が付与されたら、Cloud Console にログインして [!DNL CAPS] を使用できます
+* プロジェクトのアカウントオーナーまたはプロジェクト管理者に連絡する
+* Cloud Consoleを通じて適切な役割が付与されます
+* アクセスを許可したら、Cloud Consoleにログインして[!DNL CAPS]を使用できます
 
 >[!NOTE]
 >
->[!DNL CAPS] は Adobe Commerce Cloud と同じ権限モデルに従うので、Cloud Console のアクセスレベルによって、[!DNL CAPS] で実行できる操作が決まります。
+>[!DNL CAPS]はAdobe Commerce Cloudと同じ権限モデルに従うため、Cloud Consoleのアクセスレベルによって[!DNL CAPS]で何ができるかが決まります。
 
-## [!DNL CAPS] へのアクセス
+## [!DNL CAPS]へのアクセス
 
-CAPS ツールは、[https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/) の Site-Wide Analysis Tool ダッシュボードから使用できます。 「パッチ適用の自動化」タブで、プロジェクトと環境を選択できます。
+CAPS ツールは、[https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/)のサイト全体の分析ツール ダッシュボードから使用できます。 「パッチの自動処理」タブで、プロジェクトと環境を選択できます。
 
-1. Site-Wide Analysis Tool （[https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/)）に移動します。
+1. [https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/)のサイト全体の分析ツールに移動します。
 1. インターフェイスの「[!UICONTROL Patching Automation]」タブをクリックします。
 1. パッチを適用するプロジェクトと環境を選択します。
-1. 使用可能なパッチとその互換性ステータスを確認します。
-1. 適用または復帰するパッチを選択します。
+1. 利用可能なパッチとその互換性ステータスを確認します。
+1. 適用または元に戻すパッチを選択します。
 
-## 実稼動環境へのアクセス
+## 本番環境へのアクセス
 
-実稼動環境の場合は、次の追加の保護機能が適用されます。
+実稼動環境には、追加のセーフガードが適用されます。
 
 * **メンテナンスモード** – 有効にする必要があります
 * **Cron ジョブ** – 無効にする必要があります
@@ -54,7 +54,7 @@ CAPS ツールは、[https://supportinsights.adobe.com/commerce/](https://suppor
 
 >[!IMPORTANT]
 >
->実稼動環境のパッチ適用には、偶発的な中断を防ぐための適切な準備と保護機能が必要です。
+>実稼動環境のパッチを適用するには、誤って中断を防ぐために適切な準備と保護対策が必要です。
 
 ## 関連トピック
 
