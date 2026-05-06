@@ -5,9 +5,9 @@ feature: Page Builder, Page Content
 role: Admin, Developer
 exl-id: bb56c0c2-e094-4173-8260-da154df79748
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 0382d65a4d2ab24e595ede662be113a04db99450
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -28,16 +28,16 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.4-p11
 
 >[!NOTE]
 >
->このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
 [!DNL Page Builder]を使用してブロックに&#x200B;**[!UICONTROL Bundle Product]**&#x200B;を追加すると、製品ウィジェットのプレビューが壊れ、エラーメッセージ *申し訳ありません。このコンテンツの生成中にエラーが発生しました*。 この問題は、バンドル製品に`Checkbox`または`Multi Select`個のオプションタイプが含まれ、`indexer dimension mode`が`website_and_customer_group`に設定されている場合に特に発生します。 例外ログには、次のエラーが表示されます。
 
-    &quot;&#39;yaml
-    report.CRITICAL: PDOException: SQLSTATE[42S02]：基本テーブルまたはビューが見つかりません：1146 テーブル &#39;db_name.catalog_product_index_price_cg0_ws0&#39;が/home/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:90
-    &quot;&#39;
-に存在しません
+```yaml
+report.CRITICAL: PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_name.catalog_product_index_price_cg0_ws0' doesn't exist in /home/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:90
+```
+
 <u>複製する手順</u>:
 
 1. **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]**&#x200B;に移動します。
@@ -65,11 +65,11 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.4-p11
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
 
 ## 関連トピックス
 
 [!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。
