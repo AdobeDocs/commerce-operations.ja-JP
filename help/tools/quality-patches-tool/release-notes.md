@@ -16,11 +16,11 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce プロジェクトにパッチを適用する手順については、[ パッチを適用](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)を参照してください。 リリースされたパッチの完全なリストを確認するには、「[[!DNL Quality Patches Tool]: パッチを検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
+>Adobe Commerce プロジェクトにパッチを適用する手順については、[&#x200B; パッチを適用](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)を参照してください。 リリースされたパッチの完全なリストを確認するには、「[[!DNL Quality Patches Tool]: パッチを検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
 
 >[!INFO]
 >
->Magento Open Sourceのコミュニティによって作成された[!DNL quality patches]について詳しくは、[ リリースノート ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)を参照してください。
+>Magento Open Sourceのコミュニティによって作成された[!DNL quality patches]について詳しくは、[&#x200B; リリースノート &#x200B;](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)を参照してください。
 
 ## v1.1.79 {#v1-1-79}
 
@@ -152,7 +152,7 @@ ht-degree: 0%
 * **ACSD-68092** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.8 &lt;2.4.9） – スケジュールされた更新とベース製品データ間の同期が正しくないため、複数回の保存の後にバンドル製品オプションが失われる問題を修正します。
 * **ACSD-67424** （Adobe Commerceの場合、B2B >=1.5.0 &lt;1.5.3） – 交渉可能な引用符を使用する場合、`GET /carts/search` [!DNL REST] API応答の`updated_at`値が&#x200B;**[!UICONTROL Admin panel]**&#x200B;に表示されている値と一致しない問題を修正します。
 * **ACSD-67187** （Adobe Commerce、B2B >=1.5.1 &lt;1.5.3の場合） – デフォルト以外のweb サイトに制限された管理者ユーザーにエラーが表示される問題を修正します。*少なくともパブリック共有カタログを作成して続行してください*。また、会社グリッドの&#x200B;**[!UICONTROL Add New Company]** ボタンにアクセスできません。
-* 更新されたバージョン：**ACSD-49737**、**ACSD-53750**、**ACSD-51819**、**ACSD-55566**、**ACSD-62965**、**ACSD-63323**、**ACSD-63406**、**ACSD-66139**、**ACSD-66404**、**ACSD-67659 66301**、**ACSD-11}**
+* 更新されたバージョン：**ACSD-49737**、**ACSD-53750**、**ACSD-51819**、**ACSD-55566**、**ACSD-62965**、**ACSD-63323**、**ACSD-63406**、**ACSD-66139**、**ACSD-66404**、**ACSD-67659 66301**、**ACSD-11&rbrace;**
 * 置換されたパッチ：**ACSD-62577**、**ACSD-63325**、**ACSD-67102**
 
 ## v1.1.71 {#v1-1-71}
