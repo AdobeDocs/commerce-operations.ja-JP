@@ -23,7 +23,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665">ACP2E-4665のQPT 1.1.78修正に関する詳細な説明を追加しました。製品ギャラリーにビデオを含む設定可能な製品の子製品が、REST API</a>を介して要求されたときに表示されません。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665">ACP2E-4665のQPT 1.1.78修正に関する詳細な説明を追加しました。製品ギャラリーにビデオを含む設定可能な製品の子製品が、REST API</a>を介して要求されたときに表示されません。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -45,7 +45,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613">ACP2E-4613のQPT 1.1.78の修正に関する詳細な説明を追加しました。大きなメディアディレクトリ構造がgettreeの応答を遅くし、Media Gallery ディレクトリツリーの読み込みを遅くします</a>。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613">ACP2E-4613のQPT 1.1.78の修正に関する詳細な説明を追加しました。大きなメディアディレクトリ構造がgettreeの応答を遅くし、Media Gallery ディレクトリツリーの読み込みを遅くします</a>。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -67,7 +67,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535">ACP2E-4535のQPT 1.1.78修正に関する詳細な説明を追加しました：パスワードを忘れたフォームを送信すると、セッションが破棄または再生成され（PHPSESSIDの変更）、ゲストカートがクリアされます</a>。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535">ACP2E-4535のQPT 1.1.78修正に関する詳細な説明を追加しました：パスワードを忘れたフォームを送信すると、セッションが破棄または再生成され（PHPSESSIDの変更）、ゲストカートがクリアされます</a>。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -75,7 +75,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/953e231d2161d84e2444fa46ac95b93dbba28241">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507">ACP2E-4507のQPT 1.1.78の修正に関する詳細な説明を追加しました：GraphQLの変更を通じて行われたお客様のパスワードリセットのリクエストにパスワードリセットの設定が適用されません</a>。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507">ACP2E-4507のQPT 1.1.78の修正に関する詳細な説明を追加しました：GraphQLの変更を通じて行われたお客様のパスワードリセットのリクエストにパスワードリセットの設定が適用されません</a>。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -83,7 +83,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b657f2e50d48c9179d1c6b3559ee7e6ee99b306d">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609">ACP2E-4609のQPT 1.1.78修正に関する詳細な説明を追加しました。一部の引用符に削除済み製品が含まれている場合、My Quote ページに引用符が表示されません</a>。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609">ACP2E-4609のQPT 1.1.78修正に関する詳細な説明を追加しました。一部の引用符に削除済み製品が含まれている場合、My Quote ページに引用符が表示されません</a>。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -91,7 +91,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/670dacfa2bdc211eb9f4ed6788144ba6c1dac678">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431">ACP2E-4431のQPT 1.1.78修正に関する詳細な説明を追加しました：ターゲットルールと一致する関連製品は、インデックス再作成プロセス </a>中に削除されます。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431">ACP2E-4431のQPT 1.1.78修正に関する詳細な説明を追加しました：ターゲットルールと一致する関連製品は、インデックス再作成プロセス </a>中に削除されます。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -99,7 +99,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f9424da66669c54eb0a794555ea7df66625f6c71">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416">ACP2E-4416のQPT 1.1.78修正に関する詳細な説明を追加しました。Admin</a>で作成すると、顧客報酬ポイントが初期化されません。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416">ACP2E-4416のQPT 1.1.78修正に関する詳細な説明を追加しました。Admin</a>で作成すると、顧客報酬ポイントが初期化されません。</p>
 </td>
       <td>
         新しいトピック、qpt
