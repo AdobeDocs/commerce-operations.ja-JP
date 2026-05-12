@@ -2,7 +2,7 @@
 title: 運用ガイド ホーム
 description: Adobe Commerceのシステム管理と運用の概念について説明します。 Commerce導入の計画、設定、保守に関して包括的なガイドをご覧ください。
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
+source-git-commit: fdd98cea53f1a060b8b56268250b463c74abaaa1
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 6%
@@ -102,4 +102,4 @@ ht-degree: 6%
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2026-04-24 20:40:38 -->
+<!-- Last updated from includes: 2026-05-12 08:06:15 -->
