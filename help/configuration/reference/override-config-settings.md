@@ -13,7 +13,7 @@ ht-degree: 0%
 
 このトピックでは、設定パスを知って環境変数名を導き出す方法について説明します。 Adobe Commerceの設定は、環境変数を使用して上書きできます。 例えば、実稼動システム上の決済代行会社のライブ URLの値を上書きできます。
 
-環境変数を使用して、_any_&#x200B;の構成設定の値を上書きできます。ただし、[ デプロイメントの一般的な概要](../deployment/overview.md)で説明しているように、Adobeでは、共有コンフィギュレーションファイル、`config.php`およびシステム固有のコンフィギュレーションファイル、`env.php`を使用して一貫した設定を維持することをお勧めします。
+環境変数を使用して、_any_&#x200B;の構成設定の値を上書きできます。ただし、[&#x200B; デプロイメントの一般的な概要](../deployment/overview.md)で説明しているように、Adobeでは、共有コンフィギュレーションファイル、`config.php`およびシステム固有のコンフィギュレーションファイル、`env.php`を使用して一貫した設定を維持することをお勧めします。
 
 >[!TIP]
 >
@@ -30,7 +30,7 @@ ht-degree: 0%
 
    - 環境変数
    - [`magento config:set`](../cli/set-configuration-values.md) コマンド
-   - 管理者の後に[`magento app:config:dump` コマンド ](../cli/export-configuration.md)が続きます
+   - 管理者の後に[`magento app:config:dump` コマンド &#x200B;](../cli/export-configuration.md)が続きます
 
 設定パスは、次の場所にあります。
 
@@ -224,7 +224,7 @@ ht-degree: 0%
 
 1. 範囲の決定：
 
-   手順1: web サイトまたはストア ビューのスコープ値の検索で説明されているように、[database](#find-a-website-or-store-view-scope-in-the-database)でスコープを検索します。 （手順2：グローバル、web サイト、またはストアビュー変数の設定](#step-2-set-global-website-or-store-view-variables)の[ テーブルに示すように、管理者で値を見つけることもできます。
+   手順1: web サイトまたはストア ビューのスコープ値の検索で説明されているように、[database](#find-a-website-or-store-view-scope-in-the-database)でスコープを検索します。 （手順2：グローバル、web サイト、またはストアビュー変数の設定[&#128279;](#step-2-set-global-website-or-store-view-variables)の テーブルに示すように、管理者で値を見つけることもできます。
 
    例えば、範囲は`CONFIG__WEBSITES__DEFAULT`である可能性があります。
 
@@ -251,7 +251,7 @@ $_ENV['CONFIG__DEFAULT__GENERAL__STORE_INFORMATION__MERCHANT_VAT_NUMBER'] = '123
 
 >[!WARNING]
 >
->- `$_ENV`配列で設定した値を使用するには、`php.ini` ファイルに`variables_order = "EGPCS"` （Environment、Get、Post、Cookie、およびServer）を設定する必要があります。 詳しくは、[PHP ドキュメント ](https://www.php.net/manual/en/ini.core.php)を参照してください。
+>- `$_ENV`配列で設定した値を使用するには、`php.ini` ファイルに`variables_order = "EGPCS"` （Environment、Get、Post、Cookie、およびServer）を設定する必要があります。 詳しくは、[PHP ドキュメント &#x200B;](https://www.php.net/manual/en/ini.core.php)を参照してください。
 >
 >- Adobe Commerce on cloud infrastructureの場合、[Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project)を使用して構成設定を上書きする場合は、変数名の前に`env:`を付ける必要があります。 例：
 >

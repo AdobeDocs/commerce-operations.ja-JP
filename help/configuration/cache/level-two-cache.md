@@ -25,12 +25,12 @@ Commerceは、ハッシュ化されたデータバージョンをリモートキ
 
 | 導入 | バージョン | 説明 |
 | -------------- | ------- | ----------- |
-| [ レガシー（`RemoteSynchronizedCache`） ](#legacy-l2-cache-configuration-remotesynchronizedcache) | 2.4.x | ローカルストレージ用の`Cm_Cache_Backend_File`を含むZend ベースの2 レベルキャッシュ |
-| [最新（`symfony_l2`） ](#modern-symfony-l2-cache-implementation) | 2.4.9+ | PSR-6準拠のSymfony Cache ベースのL2とパフォーマンスの向上 |
+| [&#x200B; レガシー（`RemoteSynchronizedCache`） &#x200B;](#legacy-l2-cache-configuration-remotesynchronizedcache) | 2.4.x | ローカルストレージ用の`Cm_Cache_Backend_File`を含むZend ベースの2 レベルキャッシュ |
+| [最新（`symfony_l2`） &#x200B;](#modern-symfony-l2-cache-implementation) | 2.4.9+ | PSR-6準拠のSymfony Cache ベースのL2とパフォーマンスの向上 |
 
 >[!INFO]
 >
->Adobe Commerce on cloud infrastructureの場合、L2 キャッシュ設定に[ デプロイ変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend)を使用できます。
+>Adobe Commerce on cloud infrastructureの場合、L2 キャッシュ設定に[&#x200B; デプロイ変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend)を使用できます。
 
 ## 従来のL2 キャッシュ設定（RemoteSynchronizedCache）
 
