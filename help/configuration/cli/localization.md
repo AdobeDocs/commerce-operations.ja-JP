@@ -35,7 +35,7 @@ Commerceの翻訳機能を利用すれば、次の機能を生み出すことで
 
 1. 翻訳ディクショナリを言語パッケージにパッケージ化し、そのパッケージをCommerce ストア管理者に提供できます。
 
-1. 管理画面で、ストア管理者[が翻訳を設定します](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize)。
+1. 管理画面で、ストア管理者[が翻訳を設定します](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-localize)。
 
 コマンドオプション：
 

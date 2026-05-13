@@ -30,7 +30,7 @@ Commerceは、ハッシュ化されたデータバージョンをリモートキ
 
 >[!INFO]
 >
->Adobe Commerce on cloud infrastructureの場合、L2 キャッシュ設定に[&#x200B; デプロイ変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend)を使用できます。
+>Adobe Commerce on cloud infrastructureの場合、L2 キャッシュ設定に[&#x200B; デプロイ変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_backend)を使用できます。
 
 ## 従来のL2 キャッシュ設定（RemoteSynchronizedCache）
 
