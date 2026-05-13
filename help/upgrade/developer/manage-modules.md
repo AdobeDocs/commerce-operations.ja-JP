@@ -3,7 +3,7 @@ title: モジュールと拡張機能の管理（開発者）
 description: コマンドラインインターフェイスとComposer パッケージマネージャーを使用して、Adobe Commerce モジュールと拡張機能を管理します。
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # モジュールと拡張機能の管理
 
-共同制作者は、Adobe Commerce `composer.json` ファイルでバージョンを指定して、モジュールと拡張機能をアップグレードします。 提供元の開発者でない場合は、[&#x200B; アップグレードを実行する](../implementation/perform-upgrade.md)を参照してください。
+共同制作者は、Adobe Commerce `composer.json` ファイルでバージョンを指定して、モジュールと拡張機能をアップグレードします。 提供元の開発者でない場合は、[ アップグレードを実行する](../implementation/perform-upgrade.md)を参照してください。
 
 `require` セクションを`composer.json` ファイルに追加するか、`composer require` コマンドを次のように使用できます。
 
@@ -71,4 +71,4 @@ Composerが依存関係を更新し、モジュールをインストールする
    composer update
    ```
 
-<!-- Last updated from includes: 2022-09-08 16:00:49 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

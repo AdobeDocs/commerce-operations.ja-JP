@@ -1,30 +1,34 @@
 ---
-title: キャッシュタイプ
-description: Adobe Commerceでキャッシュフロントエンドをキャッシュタイプに関連付ける方法を説明します。 キャッシュの設定と管理の手法について説明します。
+title: キャッシュフロントエンドの設定
+description: キャッシュフロントエンドを定義し、Adobe Commerceのキャッシュタイプに関連付ける方法について説明します。 env.phpおよびdi.xmlの設定構文を確認します。
 feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: de613310ad701dd594a6ee8fcd973aa2c3769870
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
-# キャッシュタイプ
+# キャッシュフロントエンドの設定
 
-次の手順では、キャッシュフロントエンドとキャッシュタイプの関連付けを順を追って説明します。
+キャッシュフロントエンドとは、Commerceとキャッシュストレージバックエンド間のインターフェイスのことです。 複数のフロントエンドを定義し、それぞれ異なるバックエンド設定を使用して、特定の[ キャッシュタイプ ](../cli/manage-cache.md#clean-and-flush-cache-types)を各フロントエンドに割り当てることができます。
 
-## 手順 1：キャッシュフロントエンドの定義
+これは、キャッシュされたデータの種類ごとに異なるキャッシュバックエンドまたは設定を使用する場合に便利です。 例えば、`default`のキャッシュに別のデータベースを使用する場合、専用のRedis データベースで`full_page`のキャッシュを行う必要があります。
 
-Commerce アプリケーションには、任意の `default` キャッシュタイプ [&#x200B; に使用できる &#x200B;](../cli/manage-cache.md#clean-and-flush-cache-types) キャッシュフロントエンドがあります。 この節では、オプションで別の名前でキャッシュフロントエンドを定義する方法について説明します。この方法は、フロントエンドをカスタマイズしたい場合に適しています。
+## デフォルトのフロントエンドを使用する
 
->[!INFO]
->
->`default` のキャッシュタイプを使用する場合、`env.php` を変更する必要はありません。Commerceのグローバル `di.xml` を変更する必要があります。 [&#x200B; 低レベルキャッシュオプション &#x200B;](cache-options.md) を参照してください。
+Commerceには、すべてのキャッシュタイプに対応する`default` キャッシュフロントエンドが用意されています。 [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) フロントエンドキャッシュを実装することで、[Zend_Cache_Core](https://framework.zend.com/manual/1.12/en/zend.cache.frontends.html)を拡張します。
 
-`app/etc/env.php` またはCommerceのグローバル `app/etc/di.xml` のカスタム キャッシュ フロントエンドを指定する必要があります。
+ほとんどの場合、フロントエンドをカスタマイズする必要はありません。 バックエンドを設定するだけです。 [ キャッシュバックエンドオプション ](cache-options.md)を参照してください。
 
-次の例は、`env.php` ファイルを上書きする `di.xml` ファイルで定義する方法を示しています。
+## カスタムキャッシュフロントエンドの定義
+
+次の手順では、キャッシュフロントエンドをキャッシュタイプに関連付ける方法を説明します。
+
+### 手順1：キャッシュフロントエンドの定義とキャッシュタイプの割り当て
+
+カスタムキャッシュフロントエンドを定義するには、設定を`app/etc/env.php`に追加します（設定は`di.xml`を上書きします）。
 
 ```php?start_inline=1
 'cache' => [
@@ -37,8 +41,6 @@ Commerce アプリケーションには、任意の `default` キャッシュタ
          <cache type 1> => [
              'frontend' => '<unique frontend id>'
         ],
-    ],
-    'type' => [
          <cache type 2> => [
              'frontend' => '<unique frontend id>'
         ],
@@ -46,13 +48,21 @@ Commerce アプリケーションには、任意の `default` キャッシュタ
 ],
 ```
 
-ここで、`<unique frontend id>` はフロントエンドを識別するための一意の名前で、`<cache options>` れは各タイプのキャッシュ（データベース、Redis など）に固有のトピックで説明されているオプションです。
+どこで：
 
-## 手順 2：キャッシュの設定
+- `<unique frontend id>` — フロントエンドを識別するための一意の名前（例：`default`、`page_cache`、`stale_cache_enabled`）
+- `<cache options>` – このフロントエンドのバックエンドタイプとオプション（[ キャッシュオプション ](cache-options.md)を参照）
+- `<cache type>` – このフロントエンドに割り当てるCommerce キャッシュの種類（例：`config`、`layout`、`block_html`、`full_page`）
 
-`env.php` または `di.xml` で、フロントエンドおよびバックエンドのキャッシュ設定オプションを指定できます。 このタスクはオプションです。
+>[!TIP]
+>
+>**最新のSymfony Cache実装（2.4.9以降）:** Commerce 2.4.9以降では、最新のSymfony Cache実装で`redis`、`valkey`、`file`などの簡素化されたバックエンドタイプを使用できます。 詳しくは、[ デフォルトのキャッシュにRedisを使用](redis-pg-cache.md)および[ デフォルトのキャッシュにValkeyを使用](valkey-pg-cache.md)を参照してください。
 
-`env.php`:
+### 手順2：フロントエンドとバックエンドオプションの設定
+
+フロントエンドとバックエンドのキャッシュ設定オプションは、`env.php`または`di.xml`で指定できます。 このタスクはオプションです。 オプションを指定しない場合、Commerceではデフォルトのフロントエンドとバックエンドの設定が使用されます。
+
+`env.php`例：
 
 ```php?start_inline=1
 'frontend' => <frontend_type>,
@@ -67,13 +77,26 @@ Commerce アプリケーションには、任意の `default` キャッシュタ
 ],
 ```
 
-ここで、
+どこで：
 
-- `<frontend_type>` は低レベルのフロントエンドキャッシュのタイプです。 `Zend\Cache\Core` と互換性のあるクラスの名前を指定します。
-`<frontend_type>` を省略すると、[Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) が使用されます。
+- `<frontend_type>` – 低レベルのフロントエンド キャッシュ タイプ。 `Zend\Cache\Core`と互換性のあるクラス名を指定してください。
+省略した場合は、[Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php)が使用されます。
 
-- `<frontend_option>`、Commerce フレームワーク `<frontend_option_value>` 作成時にフロントエンドキャッシュに連想配列として渡すオプションの名前と値です。
-- `<backend_type>` は、低レベルのバックエンドキャッシュタイプです。 `Zend_Cache_Backend` と互換性があり、`Zend_Cache_Backend_Interface` を実装するクラスの名前を指定します。
-- `<backend_option>` と `<backend_option_value>` は、Commerce フレームワークが作成時にバックエンドキャッシュに連想配列として渡すオプションの名前と値です。
+- `<frontend_option>`、`<frontend_option_value>` — Commerce フレームワークが作成時に自動化配列としてフロントエンドキャッシュに渡すオプションの名前と値。
 
-最新の Zend 情報については、[Laminas のドキュメント &#x200B;](https://docs.laminas.dev/) を参照してください。
+- `<backend_type>` – 下位レベルのバックエンド キャッシュの種類。 次を指定できます。
+   - **最新のSymfony キャッシュ （2.4.9以降、推奨）**: `redis`、`valkey`、`file`などの簡略化された名前
+   - **レガシー（Zend ベース）**: `Zend_Cache_Backend_Interface`を実装する`Zend_Cache_Backend`と互換性のあるフルクラス名
+
+- `<backend_option>`、`<backend_option_value>` — Commerce フレームワークが作成時にバックエンドキャッシュに連想配列として渡すオプションの名前と値。
+
+>[!NOTE]
+>
+>**従来の実装と最新の実装の比較：**
+>
+>- **レガシー（Zend ベース）**: `'backend' => 'Magento\\Framework\\Cache\\Backend\\Redis'`
+>- **最新（Symfony Cache）**: `'backend' => 'redis'` （Commerce 2.4.9以降をお勧めします）
+>
+>最新のSymfony Cache実装は、PSR-6 コンプライアンス、Igbinary シリアル化、gzip圧縮、Lua スクリプト、および永続的な接続を通じて、より優れたパフォーマンスを提供します。
+
+Zend ベースのオプションについては、[Laminasのドキュメント ](https://docs.laminas.dev/)を参照してください。また、[Redis](redis-pg-cache.md)および[Valkey](valkey-pg-cache.md)の最新のSymfony キャッシュガイドも参照してください。

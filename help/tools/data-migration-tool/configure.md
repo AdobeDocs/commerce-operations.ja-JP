@@ -3,7 +3,7 @@ title: ' [!DNL Data Migration Tool]を設定'
 description: Magento 1とMagento 2間でデータを転送するように [!DNL Data Migration Tool] を設定する2つの方法について説明します。
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 0%
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 1. `config.xml` ファイルでは、アクセスの詳細をM1およびM2 データベースと暗号化キーに設定する必要があります。
 
-1. M1 ストアにカスタム変更がある場合は、残りのコンフィギュレーションファイルをMagento 1 ストアのカスタマイズにマッピングする必要があります。 [設定ファイルとマッピングファイルの操作](#migration-config)を参照してください。
+1. M1 ストアにカスタム変更がある場合は、残りのコンフィギュレーションファイルをMagento 1 ストアのカスタマイズにマッピングする必要があります。 [設定ファイルとマッピングファイルの操作](#work-with-configuration-and-mapping-files)を参照してください。
 
 ### `vendor` フォルダーでの移行の設定
 
@@ -114,7 +114,7 @@ ht-degree: 0%
 
 移行用に[!DNL Data Migration Tool]を設定するには：
 
-1. [&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインするか、切り替えます。
+1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインするか、切り替えます。
 
 1. 次のディレクトリに移動します。
 

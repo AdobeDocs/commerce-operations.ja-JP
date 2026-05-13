@@ -1,16 +1,16 @@
 ---
-title: Web サーバーの設定
+title: Varnish キャッシュ用のWeb サーバーの設定
 description: Adobe CommerceのVarnish キャッシュを使用するようにweb サーバーを設定する方法について説明します。 ポートの設定と設定の要件について説明します。
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# Web サーバーの設定
+# Varnish Caching用のWeb サーバーの設定
 
 Varnishはweb サーバーではなく受信HTTP リクエストに直接応答するため、web サーバーをデフォルトのポート 80以外のポートでリッスンするように設定します。
 
@@ -76,7 +76,7 @@ Varnishを最小限に設定するには：
 
 1. `.host`の値を、Varnish _バックエンド_&#x200B;または&#x200B;_オリジン サーバー_&#x200B;の完全修飾ホスト名またはIP アドレスとリッスン ポートに置き換えます。つまり、コンテンツ Varnishを提供するサーバーが高速化します。
 
-   通常、これはあなたのweb サーバーです。 _Varnish ガイド_&#x200B;の「[&#x200B; バックエンドサーバー](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)」を参照してください。
+   通常、これはあなたのweb サーバーです。 _Varnish ガイド_&#x200B;の「[ バックエンドサーバー](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)」を参照してください。
 
 1. `.port`の値をWeb サーバーのリッスン ポート （この例では8080）に置き換えます。
 
@@ -170,7 +170,7 @@ tcp        0      0 ::1:48509                   :::*                        LIST
 
 `varnishd`の出力が表示されない場合は、Varnishが実行されていることを確認します。
 
-[`netstat` オプション &#x200B;](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html)を参照してください。
+[`netstat` オプション ](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html)を参照してください。
 
 ## Commerce ソフトウェアのインストール
 

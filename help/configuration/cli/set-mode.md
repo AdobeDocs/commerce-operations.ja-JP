@@ -2,7 +2,7 @@
 title: 操作モードの設定
 description: 開発者向けと本番向けのAdobe Commerceの運用モードを設定する方法について説明します。 モード切り替えコマンドとセキュリティへの影響をご覧ください。
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-セキュリティと使いやすさを向上させるために、[&#x200B; アプリケーションモード &#x200B;](../bootstrap/application-modes.md)を開発者から実稼動に、またはその逆に切り替えるコマンドを追加しました。
+セキュリティと使いやすさを向上させるために、[ アプリケーションモード ](../bootstrap/application-modes.md)を開発者から実稼動に、またはその逆に切り替えるコマンドを追加しました。
 
 静的ビューファイルが`pub/static` ディレクトリに入力され、コードのコンパイルが原因で実稼動モードのパフォーマンスが向上します。
 
@@ -44,7 +44,7 @@ pub/static
 
 ## 現在のモードを表示
 
-これを行う最も簡単な方法は、このコマンドを[&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)として実行することです。 共有ホスティングがある場合、これは、プロバイダーからサーバーにログインするユーザーです。 プライベートサーバーがある場合は、通常、Commerce サーバーのローカルユーザーアカウントです。
+これを行う最も簡単な方法は、このコマンドを[ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)として実行することです。 共有ホスティングがある場合、これは、プロバイダーからサーバーにログインするユーザーです。 プライベートサーバーがある場合は、通常、Commerce サーバーのローカルユーザーアカウントです。
 
 コマンドの使用状況：
 
@@ -74,7 +74,7 @@ bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 
 - **`{mode}`**&#x200B;が必要です。`developer`または`production`のいずれかです
 
-- **`--skip-compilation`**&#x200B;は、実稼動モードに変更する際に[&#x200B; コードコンパイル &#x200B;](../cli/code-compiler.md)をスキップするために使用できるオプションのパラメーターです。
+- **`--skip-compilation`**&#x200B;は、実稼動モードに変更する際に[ コードコンパイル ](../cli/code-compiler.md)をスキップするために使用できるオプションのパラメーターです。
 
 例は次のとおりです。
 
@@ -161,6 +161,6 @@ Enabled default mode.
 
 ### どこからでもCLI コマンドを実行
 
-[どこからでもCLI コマンドを実行](../cli/config-cli.md#config-install-cli-first)。
+[どこからでもCLI コマンドを実行](../cli/config-cli.md#prerequisites)。
 
 システム `PATH`に`<Commerce-install-directory>/bin`を追加していない場合は、コマンドを単独で実行する際にエラーが発生する可能性があります。

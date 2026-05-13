@@ -1,20 +1,20 @@
 ---
-title: 静的コンテンツキャッシュ
-description: Adobe Commerceの静的コンテンツキャッシュの署名とパフォーマンスの最適化について説明します。 キャッシュ機能を有効、無効、および設定する方法について説明します。
+title: 静的コンテンツ署名とブラウザーキャッシュの無効化
+description: Adobe Commerceで静的コンテンツ署名を使用して、静的リソースのブラウザーキャッシュを無効にする方法を説明します。 この機能を有効にして設定する方法について説明します。
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
 
-# 静的コンテンツキャッシュ
+# 静的コンテンツの署名とブラウザーキャッシュの無効化
 
 Commerceは、パフォーマンスを向上させるために、画像、JavaScript、CSS ファイルなどの静的リソースに`Expires` ヘッダーを設定します。
 静的リソースに`Expires` ヘッダーを設定すると、ブラウザーはそのURLでリソースをキャッシュし、有効期限が切れるまでキャッシュされたバージョンを提供するように指示されます。
-これは、静的リソースをキャッシュするための一般的な[&#x200B; ベストプラクティス &#x200B;](https://developer.yahoo.com/performance/rules.html#expires=)です。
+これは、静的リソースをキャッシュするための一般的な[ ベストプラクティス ](https://developer.yahoo.com/performance/rules.html#expires=)です。
 
 ブラウザーが静的リソースをキャッシュし、そのリソースがサーバー上で変更された場合、ブラウザーのキャッシュをクリアして新しいバージョンをダウンロードできるようにする必要があります。
 Web サイト管理者は、ブラウザーのキャッシュを手動でクリアできますが、静的リソースの新しいバージョンをダウンロードする場合は、ユーザーに適切なリクエストを行う必要はありません。
@@ -35,9 +35,9 @@ http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/ima
 
 Commerceでは、デフォルトでこの機能が有効になっています。Adobeでは、古い静的リソースを提供するブラウザーに関する問題を回避するために、この機能を有効にしておくことをお勧めします。
 
-静的コンテンツ署名の設定は、[**[!UICONTROL Stores]**/ 設定/設定/**[!UICONTROL Advanced]**/**[!UICONTROL Developer]**/**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures)にあります。
+静的コンテンツ署名の設定は、[**[!UICONTROL Stores]**/ 設定/設定/**[!UICONTROL Advanced]**/**[!UICONTROL Developer]**/**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures)にあります。
 
-- **オンプレミスのみ**：この設定は、[実稼動モード &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=ja#production-mode)でサイトが&#x200B;**not**&#x200B;の場合に使用できます。
+- **オンプレミスのみ**：この設定は、[実稼動モード ](../bootstrap/application-modes.md#production-mode)でサイトが&#x200B;**not**&#x200B;の場合に使用できます。
 - **Cloud**：実稼動モードが厳密に適用されているため、この設定は非表示になっています。したがって、次に示すようにコマンドラインを使用する必要があります。
 
 ![静的ファイル設定](../../assets/configuration/static-files-settings.png)

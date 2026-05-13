@@ -2,7 +2,7 @@
 title: CLI コマンドの使用例
 description: コマンドラインを使用して、開発システムで共有、システム固有、および機密性の高い値を設定する方法の例を参照してください。
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '1038'
 ht-degree: 0%
@@ -121,7 +121,7 @@ ht-degree: 0%
   | メール送信先 | `contact/email/recipient_email` |
   | デフォルトのメールドメイン | `customer/create_account/email_domain` |
 
-  すべての機密性の高い設定パスとシステム固有の設定パスについては、[機密性の高い設定パスとシステム固有の設定パスのリファレンス &#x200B;](../reference/config-reference-sens.md)を参照してください。
+  すべての機密性の高い設定パスとシステム固有の設定パスについては、[機密性の高い設定パスとシステム固有の設定パスのリファレンス ](../reference/config-reference-sens.md)を参照してください。
 
 ### CLI コマンドを使用した変数の設定
 
@@ -182,4 +182,4 @@ bin/magento config:sensitive:set contact/email/recipient_email --scope=website -
 
    ![実稼動システムの設定を確認する](../../assets/configuration/split-default-domain.png)
 
-<!-- Last updated from includes: 2024-07-18 15:50:54 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

@@ -3,14 +3,14 @@ title: 複数のVarnish インスタンスによるキャッシュのクリア
 description: Adobe Commerceの複数のVarnish インスタンスでのキャッシュのクリアの仕組みを説明します。 設定と管理のベストプラクティス。
 feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '187'
 ht-degree: 1%
 
 ---
 
-# 複数のVarnish インスタンスのキャッシュのクリア
+# 複数のVarnish インスタンスによるキャッシュのクリア
 
 Adobe Commerceでは、標準搭載の複数のVarnish インスタンスをサポートしています。
 
@@ -34,4 +34,4 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 
 管理者を使用してキャッシュを更新するには、**SYSTEM**/ツール/**Cache Management**&#x200B;をクリックし、ページ上部の&#x200B;**Magento キャッシュのフラッシュ**&#x200B;をクリックします。 （個々のキャッシュタイプを更新することもできます）。
 
-cliから複数のVarnish インスタンスのキャッシュを更新するには、[`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) コマンドを[&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)として使用します。
+cliから複数のVarnish インスタンスのキャッシュを更新するには、[`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) コマンドを[ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)として使用します。

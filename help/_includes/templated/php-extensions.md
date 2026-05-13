@@ -1,13 +1,13 @@
 ---
-source-git-commit: ba444c5f74cdeec86c842014d02775faf16b2f50
+source-git-commit: 44f5debe62afeb55d301a769ca8a3af957e5b6fd
 workflow-type: tm+mt
 source-wordcount: '9'
 ht-degree: 0%
 
 ---
-# PHP 拡張機能
+# PHP拡張機能
 
-Adobe Commerceには次が必要です。
+Adobe Commerceには次の機能が必要です。
 
 - `ext-bcmath`
 - `ext-ctype`
@@ -26,6 +26,7 @@ Adobe Commerceには次が必要です。
 - `ext-openssl`
 - `ext-pcre`
 - `ext-pdo_mysql`
+- `ext-reflection`
 - `ext-simplexml`
 - `ext-soap`
 - `ext-sockets`
@@ -38,7 +39,7 @@ Adobe Commerceには次が必要です。
 - `ext-zlib`
 - `lib-libxml`
 
-Magento Open Sourceには次が必要です。
+Magento Open Sourceには次の機能が必要です。
 
 - `ext-bcmath`
 - `ext-ctype`
@@ -57,6 +58,7 @@ Magento Open Sourceには次が必要です。
 - `ext-openssl`
 - `ext-pcre`
 - `ext-pdo_mysql`
+- `ext-reflection`
 - `ext-simplexml`
 - `ext-soap`
 - `ext-sockets`

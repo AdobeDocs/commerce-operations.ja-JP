@@ -3,7 +3,7 @@ title: サンプルのdata Composer パッケージのダウンロード
 description: Composer PHP パッケージマネージャーを使用してAdobe Commerce サンプルデータをインストールするには、次の手順に従います。
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -24,15 +24,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->`Could not find package...`や`...no matching package found...`などのエラーが発生した場合は、コマンドにタイプミスがないことを確認してください。 それでもエラーが発生する場合は、特にAdobe Commerceを使用している場合は、適切なComposer リポジトリにアクセスできない可能性があります。 ヘルプについては、[Adobe Commerce サポート &#x200B;](https://support.magento.com/hc/en-us)にお問い合わせください。
+>`Could not find package...`や`...no matching package found...`などのエラーが発生した場合は、コマンドにタイプミスがないことを確認してください。 それでもエラーが発生する場合は、特にAdobe Commerceを使用している場合は、適切なComposer リポジトリにアクセスできない可能性があります。 ヘルプについては、[Adobe Commerce サポート ](https://support.magento.com/hc/en-us)にお問い合わせください。
 
-Composerを使用して、アプリケーションのインストール前またはインストール後にサンプルデータをインストールできます。ただし、[追加タスク &#x200B;](remove-or-update.md)が発生する場合があります。
+Composerを使用して、アプリケーションのインストール前またはインストール後にサンプルデータをインストールできます。ただし、[追加タスク ](remove-or-update.md)が発生する場合があります。
 
-提供開発者の場合は、[&#x200B; リポジトリを複製してインストールする](git-repositories.md)を参照してください。
+提供開発者の場合は、[ リポジトリを複製してインストールする](git-repositories.md)を参照してください。
 
 >[!WARNING]
 >
->アプリケーションが[実稼動モード &#x200B;](../../configuration/bootstrap/application-modes.md#production-mode)に設定されている場合は、サンプルデータをインストールしないでください。 最初に[開発者モード &#x200B;](../../configuration/bootstrap/application-modes.md#developer-mode)に切り替えます。 サンプルデータを実稼動モード [にインストールできませんでした](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-)。
+>アプリケーションが[実稼動モード ](../../configuration/bootstrap/application-modes.md#production-mode)に設定されている場合は、サンプルデータをインストールしないでください。 最初に[開発者モード ](../../configuration/bootstrap/application-modes.md#developer-mode)に切り替えます。 サンプルデータを実稼動モード [にインストールできませんでした](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-)。
 
 コマンドラインを使用してサンプルデータをインストールするには、`<app_root>` ディレクトリにファイルシステム所有者として次のコマンドを入力します。
 
@@ -66,4 +66,4 @@ You must be using the interactive console to authenticate
 
 {{$include /help/_includes/sample-data-complete.md}}
 
-<!-- Last updated from includes: 2022-09-08 11:33:05 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

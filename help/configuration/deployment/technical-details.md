@@ -2,7 +2,7 @@
 title: 技術情報
 description: パイプラインのデプロイメントの技術的な詳細、設定の種類、推奨ワークフローについて説明します。
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 0%
@@ -14,10 +14,10 @@ ht-degree: 0%
 このトピックでは、Commerce 2.2以降でのパイプラインのデプロイメントに関する技術的な実装の詳細について説明します。 改善点は、次の領域に分けることができます。
 
 - [設定管理](#configuration-management)
-- [管理者の変更](#changes-in-the-admin)
+- [管理者の変更](#the-commerce-admin)
 - [cronのインストールと削除](#install-and-remove-cron)
 
-このトピックでは、パイプラインのデプロイメントに関する[推奨ワークフロー](#recommended-workflow)についても説明し、その仕組みを理解するのに役立つ例をいくつか紹介します。
+このトピックでは、パイプラインのデプロイメントに関する[推奨ワークフロー](#recommended-pipeline-deployment-workflow)についても説明し、その仕組みを理解するのに役立つ例をいくつか紹介します。
 
 開始する前に、開発、ビルド、実稼動システムの[前提条件を確認してください](../deployment/prerequisites.md)。
 
@@ -38,13 +38,13 @@ ht-degree: 0%
 
 共有設定は`app/etc/config.php`に保存されます。これはソース管理に保存する必要があります。
 
-開発環境（またはAdobe Commerce on cloud infrastructure _integration_）システムの管理者で共有設定を設定し、[`magento app:config:dump` コマンド &#x200B;](../cli/export-configuration.md)を使用して設定を`config.php`に書き込みます。
+開発環境（またはAdobe Commerce on cloud infrastructure _integration_）システムの管理者で共有設定を設定し、[`magento app:config:dump` コマンド ](../cli/export-configuration.md)を使用して設定を`config.php`に書き込みます。
 
 ### システム固有の設定の管理
 
 システム固有の設定は`app/etc/env.php`に保存されます。これは&#x200B;_not_&#x200B;がソース管理に含まれている必要があります。
 
-開発環境（またはAdobe Commerce on cloud infrastructure integration）システムの管理者でシステム固有の設定を行い、[`magento app:config:dump` コマンド &#x200B;](../cli/export-configuration.md)を使用して設定を`env.php`に書き込みます。
+開発環境（またはAdobe Commerce on cloud infrastructure integration）システムの管理者でシステム固有の設定を行い、[`magento app:config:dump` コマンド ](../cli/export-configuration.md)を使用して設定を`env.php`に書き込みます。
 
 このコマンドは、機密設定も`env.php`に書き込みます。
 
@@ -55,12 +55,12 @@ ht-degree: 0%
 機密性の高い設定は、次のいずれかの方法で管理できます。
 
 - 環境変数
-- [`magento config:set:sensitive` コマンド &#x200B;](../cli/set-configuration-values.md)を使用して、本番システムの`env.php`に機密性の高い設定を保存します
+- [`magento config:set:sensitive` コマンド ](../cli/set-configuration-values.md)を使用して、本番システムの`env.php`に機密性の高い設定を保存します
 
 ### 管理者にロックされた設定設定
 
 `config.php`または`env.php`の構成設定はすべて管理者でロックされています。つまり、これらの設定は管理者で変更できません。
-[`magento config:set`または`magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) コマンドを使用して、`config.php`または`env.php` ファイルの設定を変更します。
+[`magento config:set`または`magento config:set --lock`](../cli/set-configuration-values.md#set-values) コマンドを使用して、`config.php`または`env.php` ファイルの設定を変更します。
 
 ## Commerce管理者
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 ## cronのインストールと削除
 
-バージョン 2.2では、初めて[`magento cron:install` コマンド &#x200B;](../cli/configure-cron-jobs.md)を提供することで、cron ジョブの設定を支援します。 このコマンドは、コマンドを実行するユーザーとしてcrontabを設定します。
+バージョン 2.2では、初めて[`magento cron:install` コマンド ](../cli/configure-cron-jobs.md)を提供することで、cron ジョブの設定を支援します。 このコマンドは、コマンドを実行するユーザーとしてcrontabを設定します。
 
 また、`magento cron:remove` コマンドを使用してcrontabを削除することもできます。
 
@@ -142,7 +142,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->静的ビューファイルの[&#x200B; デプロイメント戦略](../cli/static-view-file-strategy.md)を参照してください。
+>静的ビューファイルの[ デプロイメント戦略](../cli/static-view-file-strategy.md)を参照してください。
 
 ### 制作システム
 

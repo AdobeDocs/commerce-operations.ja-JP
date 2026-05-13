@@ -1,10 +1,10 @@
 ---
-title: Adobe Commerce 2.4.2 セキュリティパッチのリリースノート
-description: Adobe Commerce バージョン 2.4.2 のセキュリティパッチリリースに含まれている、セキュリティバグ修正、セキュリティ機能強化、その他のセキュリティ関連アップデートについて説明します。
+title: Adobe Commerce 2.4.2 セキュリティパッチリリースノート
+description: Adobe Commerce バージョン 2.4.2のセキュリティパッチリリースに含まれているセキュリティバグの修正、セキュリティの強化、およびその他のセキュリティ関連アップデートについて説明します。
 exl-id: e6058e96-b810-4a78-8804-15783afef951
-source-git-commit: 2e62c49dd0c338f0913ce5f725f396c2cfa95122
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
@@ -16,12 +16,12 @@ ht-degree: 0%
 
 ## Adobe Commerce 2.4.2-p2
 
-Adobe Commerce 2.4.2-p2 セキュリティリリースは、以前のリリースの 2.4.2 で特定された脆弱性に対するセキュリティバグ修正を提供します。
+Adobe Commerce 2.4.2-p2のセキュリティリリースには、以前のリリースの2.4.2で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティのバグ修正の最新情報については、[Adobe セキュリティ速報 APSB21-64](https://helpx.adobe.com/jp/security/products/magento/apsb21-64.html) を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB21-64](https://helpx.adobe.com/security/products/magento/apsb21-64.html)を参照してください。
 
-## AC-3022.patch を適用して、引き続き配送業者として DHL を提供します
+## 配送業者としてDHLを提供し続けるには、AC-3022.patchを適用します
 
-DHL ではスキーマバージョン 6.2 を導入しており、近い将来、スキーマバージョン 6.0 を廃止する予定です。 DHL 統合をサポートするAdobe Commerce 2.4.4 以前のバージョンは、バージョン 6.0 のみをサポートしています。これらのリリースをデプロイするマーチャントは、DHL を配送業者として引き続き提供するために、できるだけ早い時期に `AC-3022.patch` を適用する必要があります。 パッチのダウンロードとインストールについては、ナレッジベースの記事 [DHL を引き続き配送業者として提供するためのパッチを適用する &#x200B;](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) を参照してください。
+DHLはスキーマバージョン 6.2を導入しており、近い将来スキーマバージョン 6.0を廃止する予定です。 DHL統合をサポートするAdobe Commerce 2.4.4以前のバージョンは、バージョン 6.0のみをサポートします。 これらのリリースを展開する販売者は、DHLを配送業者として提供し続けるために、最も早い都合で`AC-3022.patch`を適用する必要があります。 パッチのダウンロードとインストールについて詳しくは、[配送業者としてDHLを提供し続けるためのパッチの適用](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) ナレッジベースの記事を参照してください。
 
-<!-- Last updated from includes: 2025-05-28 17:01:56 -->
+<!-- Last updated from includes: 2026-04-08 15:01:38 -->
