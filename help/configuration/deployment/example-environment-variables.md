@@ -113,7 +113,7 @@ VAT番号とストア名（**Stores**/設定/**Configuration**/一般/**General*
   | メール送信先 | `contact/email/recipient_email` |
   | デフォルトのメールドメイン | `customer/create_account/email_domain` |
 
-  すべての機密性の高い設定パスとシステム固有の設定パスは、[機密性の高い設定パスとシステム固有の設定パスのリファレンス &#x200B;](../reference/config-reference-sens.md)で確認できます。
+  すべての機密性の高い設定パスとシステム固有の設定パスは、[機密性の高い設定パスとシステム固有の設定パスのリファレンス ](../reference/config-reference-sens.md)で確認できます。
 
 #### 設定パスを変数名に変換する
 

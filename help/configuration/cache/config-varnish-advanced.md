@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Varnishには、Commerce サーバーが正常に機能していない場合に長い遅延やタイムアウトが発生するのを防ぐ機能がいくつか用意されています。 これらの機能は、`default.vcl` ファイルで設定できます。 このトピックでは、AdminからダウンロードしたVCL （Varnish Configuration Language）ファイルにCommerceが提供する追加機能について説明します。
 
-Varnish設定言語の使用について詳しくは、[Varnish リファレンスマニュアル &#x200B;](https://varnish-cache.org/docs/index.html)を参照してください。
+Varnish設定言語の使用について詳しくは、[Varnish リファレンスマニュアル ](https://varnish-cache.org/docs/index.html)を参照してください。
 
 ## ヘルスチェック
 
@@ -36,7 +36,7 @@ Commerceでは、次のデフォルトのヘルスチェックを定義します
 
 `health_check.php` スクリプトは`pub` ディレクトリにあります。 Commerce ルート ディレクトリが`pub`の場合は、`url` パラメーターのパスを`/pub/health_check.php`から`health_check.php`に変更してください。
 
-詳しくは、[Varnish ヘルスチェック &#x200B;](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks)のドキュメントを参照してください。
+詳しくは、[Varnish ヘルスチェック ](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks)のドキュメントを参照してください。
 
 ## 猶予モード
 
@@ -85,11 +85,11 @@ bin/magento cache:flush
 
 ### インストール
 
-Saint モードはメインのVarnish パッケージの一部ではありません。 ダウンロードしてインストールする必要がある、個別にバージョン管理された`vmod`です。 そのため、Varnishのバージョンについては、[&#x200B; インストール手順](https://varnish-cache.org/docs/index.html)の説明に従って、ソースからVarnishを再コンパイルする必要があります。
+Saint モードはメインのVarnish パッケージの一部ではありません。 ダウンロードしてインストールする必要がある、個別にバージョン管理された`vmod`です。 そのため、Varnishのバージョンについては、[ インストール手順](https://varnish-cache.org/docs/index.html)の説明に従って、ソースからVarnishを再コンパイルする必要があります。
 
 再コンパイルしたら、Saint モードモジュールをインストールできます。 一般的には、次の手順に従います。
 
-1. ソースコードを[Varnish モジュール &#x200B;](https://github.com/varnish/varnish-modules)から取得します。 0.9.x バージョンにソースコードエラーが含まれているので、Git バージョン（マスターバージョン）をクローンします。
+1. ソースコードを[Varnish モジュール ](https://github.com/varnish/varnish-modules)から取得します。 0.9.x バージョンにソースコードエラーが含まれているので、Git バージョン（マスターバージョン）をクローンします。
 1. オートツールを使用してソースコードを作成します。
 
    ```shell
@@ -101,7 +101,7 @@ Saint モードはメインのVarnish パッケージの一部ではありませ
    sudo make install
    ```
 
-Saint モードモジュールのインストールについて詳しくは、[Varnish モジュールコレクション &#x200B;](https://github.com/varnish/varnish-modules)を参照してください。
+Saint モードモジュールのインストールについて詳しくは、[Varnish モジュールコレクション ](https://github.com/varnish/varnish-modules)を参照してください。
 
 ### VCL ファイルのサンプル
 

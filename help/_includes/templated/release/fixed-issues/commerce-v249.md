@@ -1,7 +1,7 @@
 ---
-source-git-commit: d70c7f4ea201e0073588f879d19a29ea11962244
+source-git-commit: 04ed1df1fa8601e121811661b81a86672422b639
 workflow-type: tm+mt
-source-wordcount: '36744'
+source-wordcount: '36741'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ _AC-1608 - [GitHub issue](https://github.com/magento/magento2/issues/34342) - [G
 
 _AC-6419 - [GitHub issue](https://github.com/magento/magento2/issues/35934) - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### `/V1/order/&lbrace;orderId&rbrace;/ship` API エンドポイントの内部サーバーエラー
+#### `/V1/order/{orderId}/ship` API エンドポイントの内部サーバーエラー
 
 システムは、`/V1/order/{orderId}/ship` API エンドポイントの内部サーバーエラーを修正し、リクエストの形式が正しくないときに400 エラーを返すようになりました。
 
@@ -707,7 +707,7 @@ _ACP2E-4675 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 #### [Cloud]画像パスは、Pagebuilderでの2回目の編集時に絶対パスです
 
-ポータブル {{media url=...}} ディレクティブを保持する代わりに、ページビルダーテキストのインライン編集で、画像を再編集した後に絶対メディア画像のURLを保存できる問題を修正しました。
+ポータブル `{{media url=...}}` ディレクティブを保持する代わりに、ページビルダーテキストのインライン編集で、画像を再編集した後に絶対メディア画像のURLを保存できる問題を修正しました。
 
 _ACP2E-4698 - [GitHub コードの貢献度](https://github.com/magento/magento2-page-builder/commit/5fd20dbb)_
 
@@ -2077,7 +2077,7 @@ _AC-11511 - [GitHub コードの貢献度](https://github.com/magento/magento2/c
 
 _AC-13535 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/68a45d0a)_
 
-#### お客様の管理者の[管理者][Customer] パスワードのリセットが失敗しています
+#### 顧客管理者上の`[Admin][Customer]` パスワード リセットが失敗しています
 
 管理者パネルから顧客のパスワードをリセットすると、システムエラーとページがクラッシュする問題を修正しました。 ストアの変更を伴うエッジケースでも、パスワードリセットが正しく機能し、リセットリンクをエラーなしで送信するようになりました。
 
@@ -3609,7 +3609,7 @@ _ACP2E-4324 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 _ACP2E-4345 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/0a3b7032)_
 
-#### [CLOUD][CLOUD] [Mainline] sales_clean_quotes getSize （） ボトルネック
+#### `[CLOUD][B2B]` `[Mainline]` sales_clean_quotes getSize （） ボトルネック
 
 sales_clean_quotes cron ジョブのパフォーマンスを向上させます。
 
@@ -4167,7 +4167,7 @@ _ACP2E-4226_
 
 #### スケジュール更新プレビューでWeb サイト間を移動できない
 
-この修正の前に、カスタムドメインを持つストアのコンテンツをプレビューしようとすると、スケジュールされた更新プレビューが壊れます。 この修正の後、カスタムストアドメインをそのままプレビューし、プレビューiframe内で移動できます。 この修正プログラムは、製品、カテゴリ、CMS ページ、CMS ブロックを対象としており、[Adobe Commerce変数およびマークアップタグ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/variables/markup-tags)に記載されているように、`{{store url}}`個のマークアップタグを使用したナビゲーションリンクをサポートしています。
+この修正の前に、カスタムドメインを持つストアのコンテンツをプレビューしようとすると、スケジュールされた更新プレビューが壊れます。 この修正の後、カスタムストアドメインをそのままプレビューし、プレビューiframe内で移動できます。 この修正プログラムは、製品、カテゴリ、CMS ページ、CMS ブロックを対象としており、[Adobe Commerce変数およびマークアップタグ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags)に記載されているように、`{{store url}}`個のマークアップタグを使用したナビゲーションリンクをサポートしています。
 
 _ACP2E-4308 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/0a3b7032)_
 

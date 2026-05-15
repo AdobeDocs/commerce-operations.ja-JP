@@ -114,7 +114,7 @@ ht-degree: 0%
 
 移行用に[!DNL Data Migration Tool]を設定するには：
 
-1. [&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインするか、切り替えます。
+1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインするか、切り替えます。
 
 1. 次のディレクトリに移動します。
 

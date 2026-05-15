@@ -121,7 +121,7 @@ ht-degree: 0%
   | メール送信先 | `contact/email/recipient_email` |
   | デフォルトのメールドメイン | `customer/create_account/email_domain` |
 
-  すべての機密性の高い設定パスとシステム固有の設定パスについては、[機密性の高い設定パスとシステム固有の設定パスのリファレンス &#x200B;](../reference/config-reference-sens.md)を参照してください。
+  すべての機密性の高い設定パスとシステム固有の設定パスについては、[機密性の高い設定パスとシステム固有の設定パスのリファレンス ](../reference/config-reference-sens.md)を参照してください。
 
 ### CLI コマンドを使用した変数の設定
 
