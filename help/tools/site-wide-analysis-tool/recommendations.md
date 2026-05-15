@@ -13,7 +13,7 @@ ht-degree: 0%
 
 [!DNL Site-Wide Analysis Tool] ページの[!UICONTROL Recommendations page]には、次の機能が用意されています。
 
-* Adobe Commerce サイトの全体的な健全性を監視および改善するのに役立つ[SWAT ヘルスインデックススコア ](swat-health-index.md)
+* Adobe Commerce サイトの全体的な健全性を監視および改善するのに役立つ[SWAT ヘルスインデックススコア &#x200B;](swat-health-index.md)
 * サイトで検出された問題に対処するためのベストプラクティスにもとづいて、レコメンデーションリストを作成します。
 
 推奨事項は、POからP4までの優先度で並べ替えられ、POが重要でP4が低くなります。 調査結果には、説明、推奨、サイトへの影響、根本原因、シナリオ/前提条件、期待される結果、使用されたツールなどが含まれます。
