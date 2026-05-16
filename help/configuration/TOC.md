@@ -151,4 +151,4 @@ ht-degree: 1%
       + [スプリットデータベースの検証](storage/multi-master-verify.md)
       + [データベースレプリケーション](storage/multi-master-replication.md)
       + [単一のデータベースに戻す](storage/revert-split-database.md)
-+ [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
++ [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
