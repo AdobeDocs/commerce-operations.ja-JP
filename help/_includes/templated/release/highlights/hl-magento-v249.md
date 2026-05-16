@@ -167,7 +167,7 @@ _AC-15170 - [GitHub コードの貢献度](https://github.com/magento/magento2/c
 
 Adobe Commerce 2.4.9では、clearCart GraphQLの突然変異がすべてのOpen Source ユーザーで使用できるようになりました。 以前は、この変異はAdobe Commerceでのみアクセスできましたが、現在ではOpen Sourceの標準のGraphQL カート機能の一部になっています。
 バージョン 2.4.9のOpen Sourceで利用できるようになったことを反映して、ミューテーションのドキュメントが更新されました。
-[clearCart GraphQLの変異関連ドキュメント ](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/clear-cart/)を参照してください。
+[clearCart GraphQLの変異関連ドキュメント &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/clear-cart/)を参照してください。
 
 _AC-16683 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/4449d914)_
 
