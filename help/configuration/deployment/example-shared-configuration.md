@@ -88,6 +88,6 @@ ht-degree: 0%
 
 >[!INFO]
 >
->管理者でロックされている設定を変更するには、[`magento config:set --lock` コマンド &#x200B;](../cli/set-configuration-values.md)を使用します。
+>管理者でロックされている設定を変更するには、[`magento config:set --lock` コマンド ](../cli/set-configuration-values.md)を使用します。
 
 <!-- Last updated from includes: 2026-04-17 13:49:36 -->

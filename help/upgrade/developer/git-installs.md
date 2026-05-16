@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Git ベースのインストールのアップグレード
 
-このトピックでは、コントリビューターがAdobe Commerceを再インストールせずに更新できる方法について説明します。 提供元の開発者でない場合は、[&#x200B; アップグレードを実行する](../implementation/perform-upgrade.md)を参照してください。
+このトピックでは、コントリビューターがAdobe Commerceを再インストールせずに更新できる方法について説明します。 提供元の開発者でない場合は、[ アップグレードを実行する](../implementation/perform-upgrade.md)を参照してください。
 
 開発者向けにアップグレードするには：
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >`git pull origin develop`が失敗した場合は、[&#x200B; トラブルシューティング &#x200B;](https://support.magento.com/hc/en-us/articles/360034229872)を参照してください。
+   >`git pull origin develop`が失敗した場合は、[ トラブルシューティング ](https://support.magento.com/hc/en-us/articles/360034229872)を参照してください。
 
 1. `composer.json.old` ファイルを`composer.json` ファイルと差分して結合します。
 

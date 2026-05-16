@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.2-p2のセキュリティリリースには、以前のリリースの2.4.2で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB21-64](https://helpx.adobe.com/jp/security/products/magento/apsb21-64.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB21-64](https://helpx.adobe.com/security/products/magento/apsb21-64.html)を参照してください。
 
 ## 配送業者としてDHLを提供し続けるには、AC-3022.patchを適用します
 

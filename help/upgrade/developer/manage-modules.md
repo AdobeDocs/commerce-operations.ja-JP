@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # モジュールと拡張機能の管理
 
-共同制作者は、Adobe Commerce `composer.json` ファイルでバージョンを指定して、モジュールと拡張機能をアップグレードします。 提供元の開発者でない場合は、[&#x200B; アップグレードを実行する](../implementation/perform-upgrade.md)を参照してください。
+共同制作者は、Adobe Commerce `composer.json` ファイルでバージョンを指定して、モジュールと拡張機能をアップグレードします。 提供元の開発者でない場合は、[ アップグレードを実行する](../implementation/perform-upgrade.md)を参照してください。
 
 `require` セクションを`composer.json` ファイルに追加するか、`composer require` コマンドを次のように使用できます。
 
