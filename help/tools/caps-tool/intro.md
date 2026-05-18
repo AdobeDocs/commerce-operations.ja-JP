@@ -2,8 +2,7 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)]'
 description: ' [!DNL Cloud Automation Patching Service (CAPS)]とその用途、アクセス方法、自動パッチ適用のベストプラクティスについて説明します'
 hide: true
-hidefromtoc: true
-source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
+source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -53,7 +52,7 @@ ht-degree: 0%
 
 Adobe Cloud自動パッチサービスの詳細と、このツールがセキュリティパッチの迅速な検索と適用にどのように役立つかをご覧ください。 次のビデオでは、SWAT ダッシュボードからアクセスし、プロジェクトと環境を選択し、ワンクリックでパッチを適用する方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3476248/?captions=jpn&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
 ## 一般的なユースケース
 
