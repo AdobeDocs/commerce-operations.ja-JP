@@ -23,4 +23,4 @@ ht-degree: 1%
 - 参照 {#reference}
    - [お客様の個人情報（バージョン 2.x）](privacy/data-m2.md)
    - [お客様の個人情報（バージョン 1.x）](privacy/data-m1.md)
-- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)

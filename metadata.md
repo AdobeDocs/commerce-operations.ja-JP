@@ -2,7 +2,7 @@
 cloud: Experience Cloud
 description: Adobe Commerce Operational Guides
 feature-set: Commerce
-git-repo: https://github.com/AdobeDocs/commerce-operations.en
+git-repo: https://github.com/AdobeDocs/commerce-operations.ja-JP
 index: true
 level: Experienced
 mini-toc-levels: 2
@@ -14,7 +14,7 @@ product_v2:
 solution-title: Commerce
 topic: Administration, Commerce, Development
 type: Documentation
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 source-git-commit: 441ab23da859cfa2f242aa7c0581203f79f9e60e
 workflow-type: tm+mt
 source-wordcount: 176
