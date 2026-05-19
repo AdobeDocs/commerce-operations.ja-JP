@@ -2,8 +2,7 @@
 title: 'ワークフローの仕組み [!DNL Cloud Automation Patching Service (CAPS)] '
 description: 自動パッチ管理の用語、ワークフローフェーズ、操作など、 [!DNL Cloud Automation Patching Service (CAPS)]  ワークフロープロセスについて説明します。
 hide: true
-hidefromtoc: true
-source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
+source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 0%

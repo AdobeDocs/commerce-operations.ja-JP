@@ -2,7 +2,7 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できるさまざまなツール、その用途、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: bf7216db7919b3f62e66cd7c27c0db023b2b6441
+source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
 workflow-type: tm+mt
 source-wordcount: '9953'
 ht-degree: 0%
@@ -27,11 +27,11 @@ ht-degree: 0%
    - [アラート](site-wide-analysis-tool/alerts.md)
    - [パッチ](site-wide-analysis-tool/patches.md)
 - キャップ {#caps-tool}
-   - [概要](caps-tool/intro.md)
-   - [アクセス](caps-tool/access.md)
-   - [ワークフロー](caps-tool/workflow.md)
-   - [ベストプラクティス](caps-tool/best-practices.md)
-   - [トラブルシューティング](caps-tool/troubleshooting.md)
+   - {hide-from-toc}[はじめに](caps-tool/intro.md)
+   - {hide-from-toc}[&#x200B; アクセス &#x200B;](caps-tool/access.md)
+   - {hide-from-toc}[&#x200B; ワークフロー](caps-tool/workflow.md)
+   - {hide-from-toc}[&#x200B; ベストプラクティス &#x200B;](caps-tool/best-practices.md)
+   - {hide-from-toc}[&#x200B; トラブルシューティング &#x200B;](caps-tool/troubleshooting.md)
 - Adobe Commerceのアラートの管理 {#managed-alerts-for-adobe-commerce}
    - [Adobe Commerceのアラートを管理： [!DNL Redis]  メモリ クリティカル アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
    - [Adobe Commerceの管理アラート：ディスクの警告アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ![&#x200B; 取引の概要 &#x200B;](../../assets/tools/transaction-overview.jpg)
 
-### [&#x200B; トランザクションとは &#x200B;](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often, when%20the%20response%20is%20sent)
+### トランザクションとは
 
 「[!DNL New Relic] 時点では、トランザクションは、ソフトウェアアプリケーション内の 1 つの作業の論理単位として定義されています。 具体的には、その作業単位を構成する関数呼び出しとメソッド呼び出しを指します。 多くの場合、web トランザクションを指します。これは、アプリケーションが web リクエストを受信したときから応答が送信されたときに発生するアクティビティを表します。」
 
