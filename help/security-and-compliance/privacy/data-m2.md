@@ -1,77 +1,77 @@
 ---
-title: 顧客の個人情報の参照（バージョン 2.x）
-description: Adobe Commerce 2.x におけるお客様の個人情報に関するデータフロー図とデータベースエンティティマッピングについて説明します。
+title: お客様の個人情報の参照（バージョン 2.x）
+description: Adobe Commerce 2.xでは、お客様の個人情報のデータフロー図とデータベースエンティティマッピングについて説明します。
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
 
-# 顧客の個人情報の参照（バージョン 2.x）
+# お客様の個人情報の参照（バージョン 2.x）
 
 >[!NOTE]
 >
->これは、Adobe Commerceのマーチャントやデベロッパーがプライバシー規制への準拠に備えるのに役立つ、一連のトピックの 1 つです。 自社のビジネスが法的義務に準拠する必要があるかどうか、またどのように準拠すべきかを判断するには、法務担当者に相談してください。
+>これは、Adobe Commerceを利用するマーチャントや開発者が、プライバシー規制に準拠するための準備を整えるのに役立つ、一連のトピックの1つです。 自社が法的義務を果たすべきかどうか、どのように遵守すべきかを判断するには、法務担当者に相談してください。
 
-プライバシー規制に関するコンプライアンスプログラムを開発する際の参考として、次のデータフロー図とデータベースエンティティのマッピングを使用します。例えば、次のようなものがあります。
+次のデータフロー図とデータベースエンティティのマッピングを、プライバシー規制に準拠したコンプライアンスプログラムを開発する際に参照してください。
 
 - [GDPR](gdpr.md)
 - [CCPA](ccpa.md)
 
 ## データフロー図
 
-データフロー図は、顧客および管理者がストアフロントおよび管理者から入力および取得できるデータのタイプを示しています。
+データフロー図には、顧客と管理者がストアフロントと管理者から入力および取得できるデータの種類が表示されます。
 
-### フロントエンドデータのエントリポイント
+### フロントエンドのデータエントリポイント
 
-ユーザーは、アカウントの登録時、チェックアウト時などのイベントに、顧客、住所、支払い情報を入力できます。
+利用者は、アカウント登録時、チェックアウト時などのイベントで、顧客、住所、支払い情報を入力することができます。
 
 ![&#x200B; フロントエンドデータエントリポイント &#x200B;](../../assets/security-compliance/frontend-data-entry-points.svg)
 
-### フロントエンド データ アクセス ポイント
+### フロントエンドのデータアクセスポイント
 
-Adobe Commerceは、ユーザーがログインして複数の異なるページを表示した場合、またはチェックアウトした場合に、ユーザー情報を読み込みます。
+Adobe Commerceでは、お客様がログインして複数のページを表示したり、チェックアウトしたりすると、お客様の情報が読み込まれます。
 
-![&#x200B; フロントエンドデータアクセスポイント &#x200B;](../../assets/security-compliance/frontend-data-access-points.svg)
+![&#x200B; フロントエンドデータアクセスポイント &#x200B;](../../assets/security-compliance/frontend-data-access-points.png)
 
-### バックエンドデータのエントリポイント
+### バックエンドのデータエントリポイント
 
-マーチャントは、管理者から顧客または注文を作成する際に、顧客情報、住所データおよび支払いデータを入力できます。
+管理者から顧客または注文を作成する際に、加盟店は顧客情報、住所データ、支払いデータを入力できます。
 
-![&#x200B; バックエンドデータエントリポイント &#x200B;](../../assets/security-compliance/backend-data-entry-points.svg)
+![&#x200B; バックエンド データ エントリ ポイント &#x200B;](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### バックエンドのデータアクセスポイント
 
-Adobe Commerceは、マーチャントが複数のタイプのグリッドを表示したり、グリッドをクリックして詳細情報を表示したり、その他の様々なタスクを実行したりすると、顧客情報を読み込みます。
+Adobe Commerceを使用すれば、顧客に関する情報を自動的に読み込み、グリッドをクリックして詳細を確認したり、その他のさまざまなタスクを実行したりできます。
 
-![&#x200B; バックエンドのデータアクセスポイント &#x200B;](../../assets/security-compliance/backend-data-access-points.svg)
+![&#x200B; バックエンド データ アクセス ポイント &#x200B;](../../assets/security-compliance/backend-data-access-points.png)
 
 ## データベースエンティティ
 
-Adobe Commerceは主に、お客様固有の情報を、お客様、住所、注文、見積もり、支払いの各テーブルに格納します。 その他のテーブルには、顧客 ID への参照が含まれます。
+Adobe Commerceでは、主に、顧客、住所、注文、見積もり、支払いテーブルに顧客固有の情報が保存されます。 その他のテーブルには、顧客IDへの参照が含まれています。
 
 ### 顧客データ
 
-Adobe Commerceは、次の顧客属性を格納するように設定できます。
+Adobe Commerceでは、次の顧客属性を保存するように設定できます。
 
 - 生年月日
-- 電子メール
-- 名前（名）
+- メール
+- 名
 - 性別
-- 名前（姓）
+- 姓
 - ミドルネーム/イニシャル
 - 名前のプレフィックス
-- 名前サフィックス
+- 名前の接尾辞
 
 >[!NOTE]
 >
->現在のセキュリティとプライバシーのベストプラクティスに従って、顧客の完全な生年月日（月、日、年）と、フルネームなどのその他の個人識別子の保存に関連して発生する可能性のある法的およびセキュリティリスクを認識してから、そのようなデータを収集または処理してください。
+>現在のセキュリティとプライバシーのベストプラクティスに従って、データを収集または処理する前に、顧客の生年月日（月、日、年）およびその他の個人識別子（氏名など）の保存に関連する潜在的な法的およびセキュリティリスクを必ず認識してください。
 
-#### `customer_entity` および「customer_entity」参照
+#### `customer_entity`および「customer_entity」の参照
 
-顧客情報は、`customer_entity` テーブルの次のカラムに格納されます。
+`customer_entity` テーブルの次の列には、顧客情報が含まれています。
 
 | 列 | データタイプ |
 | ------------ | ------------ |
@@ -84,28 +84,28 @@ Adobe Commerceは、次の顧客属性を格納するように設定できます
 | `dob` | 日付 |
 | `gender` | smallint （5） |
 
-次の表は、`customer_entity` を参照し、カスタム顧客属性を含めることができます。
+これらのテーブルは`customer_entity`を参照し、カスタム顧客属性を含めることができます：
 
 | テーブル | 列 | データタイプ |
 | -------------------------- | ------- | ------------- |
 | `customer_entity_datetime` | `value` | datetime |
 | `customer_entity_decimal` | `value` | decimal （12,4） |
 | `customer_entity_int` | `value` | int （11） |
-| `customer_entity_text` | `value` | text |
+| `customer_entity_text` | `value` | テキスト |
 | `customer_entity_varchar` | `value` | varchar （255） |
 
 #### `customer_grid_flat` テーブル
 
-顧客情報は、`customer_grid_flat` テーブルの次のカラムに格納されます。
+`customer_grid_flat` テーブルの次の列には、顧客情報が含まれています。
 
 | 列 | データタイプ |
 | -------------------- | ------------ |
-| `name` | text |
+| `name` | テキスト |
 | `email` | varchar （255） |
 | `dob` | 日付 |
 | `gender` | int （11） |
-| `shipping_full` | text |
-| `billing_full` | text |
+| `shipping_full` | テキスト |
+| `billing_full` | テキスト |
 | `billing_firstname` | varchar （255） |
 | `billing_lastname` | varchar （255） |
 | `billing_telephone` | varchar （255） |
@@ -119,27 +119,27 @@ Adobe Commerceは、次の顧客属性を格納するように設定できます
 
 ### アドレスデータ
 
-Adobe Commerceには、次の顧客属性が格納されます。
+Adobe Commerceには、次のお客様属性が保存されます。
 
 - 市区町村
 - 会社
 - 国
-- ファックス
-- 名前（名）
-- 名前（姓）
+- Fax
+- 名
+- 姓
 - ミドルネーム/イニシャル
 - 名前のプレフィックス
-- 名前サフィックス
+- 名前の接尾辞
 - 電話番号
 - 都道府県
-- 都道府県 ID
-- 番地
-- VAT 番号
+- 都道府県ID
+- 住所
+- VAT番号
 - 郵便番号
 
-#### `customer_address_entity` と `customer_address_entity` の参照
+#### `customer_address_entity`および`customer_address_entity`参照
 
-顧客情報は、`customer_address_entity` テーブルの次のカラムに格納されます。
+`customer_address_entity` テーブルの次の列には、顧客情報が含まれています。
 
 | 列 | データタイプ |
 | ------------ | ------------ |
@@ -153,28 +153,28 @@ Adobe Commerceには、次の顧客属性が格納されます。
 | `postcode` | varchar （255） |
 | `region` | varchar （255） |
 | `region_id` | int （10） |
-| `street` | text |
+| `street` | テキスト |
 | `suffix` | varchar （40） |
 | `telephone` | varchar （255） |
 | `vat_id` | varchar （255） |
 
-次の表は、`customer_address_entity` を参照し、カスタム顧客属性を含めることができます。
+これらのテーブルは`customer_address_entity`を参照し、カスタム顧客属性を含めることができます：
 
 | テーブル | 列 | データタイプ |
 | ---------------------------------- | ------- | ------------- |
 | `customer_address_entity_datetime` | `value` | datetime |
 | `customer_address_entity_decimal` | `value` | decimal （12,4） |
 | `customer_address_entity_int` | `value` | int （11） |
-| `customer_address_entity_text` | `value` | text |
+| `customer_address_entity_text` | `value` | テキスト |
 | `customer_address_entity_varchar` | `value` | varchar （255） |
 
 ### 注文データ
 
-`sales_order` および関連するテーブルには、顧客名、請求先および配送先住所、関連するデータが含まれています。
+`sales_order`と関連するテーブルには、顧客名、請求先住所と配送先住所、および関連するデータが含まれています。
 
 #### `sales_order` テーブル
 
-顧客情報は、`sales_order` テーブルの次のカラムに格納されます。
+`sales_order` テーブルの次の列には、顧客情報が含まれています。
 
 | 列 | データタイプ |
 | --------------------- | ------------ |
@@ -195,7 +195,7 @@ Adobe Commerceには、次の顧客属性が格納されます。
 
 #### `sales_order_address` テーブル
 
-`sales_order_address` テーブルには、顧客の住所が格納されます。
+`sales_order_address` テーブルに顧客のアドレスが含まれています。
 
 | 列 | データタイプ |
 | --------------------- | ------------ |
@@ -218,7 +218,7 @@ Adobe Commerceには、次の顧客属性が格納されます。
 
 #### `sales_order_grid` テーブル
 
-顧客情報は、`sales_order_grid` テーブルの次のカラムに格納されます。
+`sales_order_grid` テーブルの次の列には、顧客情報が含まれています。
 
 | 列 | データタイプ |
 | ---------------------- | ------------ |
@@ -231,13 +231,13 @@ Adobe Commerceには、次の顧客属性が格納されます。
 | `customer_email` | varchar （255） |
 | `customer_name` | varchar （255） |
 
-### 見積データ
+### 見積もりデータ
 
-見積もりには、顧客の名前、メールアドレス、住所、および関連情報が含まれています。
+見積もりには、顧客の名前、電子メール、住所、関連情報が記載されています。
 
 #### `quote` テーブル
 
-顧客情報は、`quote` テーブルの次のカラムに格納されます。
+`quote` テーブルの次の列には、顧客情報が含まれています。
 
 | 列 | データタイプ |
 | --------------------- | ------------ |
@@ -254,7 +254,7 @@ Adobe Commerceには、次の顧客属性が格納されます。
 
 #### `quote_address` テーブル
 
-顧客情報は、`quote_address` テーブルの次のカラムに格納されます。
+`quote_address` テーブルの次の列には、顧客情報が含まれています。
 
 | 列 | データタイプ |
 | ------------- | ------------ |
@@ -275,9 +275,9 @@ Adobe Commerceには、次の顧客属性が格納されます。
 | `telephone` | varchar （255） |
 | `fax` | varchar （255） |
 
-### 支払いデータ
+### お支払い方法
 
-`sales_order_payment` テーブルは、クレジットカード情報およびその他のトランザクション情報を含む。
+`sales_order_payment` テーブルには、クレジットカード情報およびその他の取引情報が含まれています。
 
 | 列 | データタイプ |
 | ------------------------ | ------------ |
@@ -291,15 +291,15 @@ Adobe Commerceには、次の顧客属性が格納されます。
 | `cc_debug_response_body` | varchar （32） |
 | `echeck_account_name` | varchar （32） |
 | `cc_number_enc` | varchar （128） |
-| `additional_information` | text |
+| `additional_information` | テキスト |
 
 ### 招待データ
 
-Adobe Commerceは、顧客が個人の営業やイベントへの招待状を送信できるように設定できます。
+Adobe Commerceでは、お客様がプライベート セールスやイベントに招待状を送信できるように設定できます。
 
 #### `magento_invitation` テーブル
 
-`magento_invitation` テーブルには、顧客 ID、メールおよびリファラル ID が含まれます。
+`magento_invitation` テーブルには、顧客ID、電子メール、および参照IDが含まれています。
 
 | 列 | データタイプ |
 | ------------- | ------------ |
@@ -309,7 +309,7 @@ Adobe Commerceは、顧客が個人の営業やイベントへの招待状を送
 
 #### `magento_invitation_track` テーブル
 
-`magento_invitation_track` の表には、顧客情報も含まれています。
+`magento_invitation_track` テーブルには顧客情報も含まれています。
 
 | 列 | データタイプ |
 | ------------- | --------- |
@@ -318,7 +318,7 @@ Adobe Commerceは、顧客が個人の営業やイベントへの招待状を送
 
 ### 顧客を参照するその他のテーブル
 
-次のテーブルには、`customer_id` の列が含まれています。
+次のテーブルには`customer_id`列が含まれています。
 
 - `catalog_compare_item`
 - `catalog_product_frontend_action`
