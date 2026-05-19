@@ -33,5 +33,5 @@ ht-degree: 0%
 プラットフォームの強化と最適化を継続し、コマース業務全体を最適化するための適切なサポートモデルを特定することは、導入プロセス中に行われたあらゆる作業を維持するために重要なステップです。 包括的な継続的なサポートプランを導入することで、コマースサイトは顧客の期待に応え、目標も達成することができます。
 
 Adobe Commerceを導入する際は、メンテナンスとサポート戦略に何を含めるかを考えることが重要です。
-エキスパートのサポートは、Adobe Commerce ライセンスに含まれています。 エキスパートサポートとAdobe サポートプランについて詳しくは、[Adobe サポートプラン &#x200B;](https://business.adobe.com/customers/consulting-services/premier-support.html)を参照してください。
+エキスパートのサポートは、Adobe Commerce ライセンスに含まれています。 エキスパートサポートとAdobe サポートプランについて詳しくは、[Adobe サポートプラン &#x200B;](https://business.adobe.com/jp/customers/consulting-services/premier-support.html)を参照してください。
 Adobe サポートプランに加えて、従来のMagento サポート条件もあります。 お客様に適用されるサポートサービスを理解するには、契約を参照して、お客様のサポート契約を確認するか、Adobeのアカウントチームにお問い合わせください。
