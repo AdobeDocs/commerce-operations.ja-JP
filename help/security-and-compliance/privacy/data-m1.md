@@ -1,98 +1,98 @@
 ---
-title: 顧客の個人情報の参照（バージョン 1.x）
-description: Magento 1.x でのお客様の個人情報のデータフローとデータベースエンティティマッピングについて説明します。
+title: お客様の個人情報の参照（バージョン 1.x）
+description: Magento 1.xのお客様の個人情報のデータフローおよびデータベースエンティティマッピングについて説明します。
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
 
-# 顧客の個人情報の参照（バージョン 1.x）
+# お客様の個人情報の参照（バージョン 1.x）
 
 >[!NOTE]
 >
->これは、Adobe Commerceのマーチャントやデベロッパーがプライバシー規制への準拠に備えるのに役立つ、一連のトピックの 1 つです。 自社のビジネスが法的義務に準拠する必要があるかどうか、またどのように準拠すべきかを判断するには、法務担当者に相談してください。
+>これは、Adobe Commerceを利用するマーチャントや開発者が、プライバシー規制に準拠するための準備を整えるのに役立つ、一連のトピックの1つです。 自社が法的義務を果たすべきかどうか、どのように遵守すべきかを判断するには、法務担当者に相談してください。
 
-プライバシー規制に関するコンプライアンスプログラムを開発する際の参考として、次のデータフロー図とデータベースエンティティのマッピングを使用します。例えば、次のようなものがあります。
+次のデータフロー図とデータベースエンティティのマッピングを、プライバシー規制に準拠したコンプライアンスプログラムを開発する際に参照してください。
 
 - [GDPR](gdpr.md)
 - [CCPA](ccpa.md)
 
 ## データフロー図
 
-データフロー図は、顧客および管理者がストアフロントおよび管理者に入力して取得できるデータのタイプを示しています。
+データフロー図には、顧客と管理者がストアフロントと管理者で入力および取得できるデータの種類が表示されます。
 
-### フロントエンドデータのエントリポイント
+### フロントエンドのデータエントリポイント
 
-ユーザーは、アカウントの登録時、チェックアウト時などのイベントに、顧客、住所、支払い情報を入力できます。
+利用者は、アカウント登録時、チェックアウト時などのイベントで、顧客、住所、支払い情報を入力することができます。
 
-![&#x200B; フロントエンドデータエントリポイント &#x200B;](../../assets/security-compliance/frontend-data-entry-points.svg)
+![ フロントエンドデータエントリポイント ](../../assets/security-compliance/frontend-data-entry-points.svg)
 
-### フロントエンド データ アクセス ポイント
+### フロントエンドのデータアクセスポイント
 
-Commerceは、ユーザーがログインして複数の異なるページを表示したり、チェックアウトしたりする際に、ユーザー情報を読み込みます。
+Commerceは、顧客がログインして複数のページを閲覧したり、チェックアウトしたりすると、顧客情報を読み込みます。
 
-![&#x200B; フロントエンドデータアクセスポイント &#x200B;](../../assets/security-compliance/frontend-data-access-points.svg)
+![ フロントエンドデータアクセスポイント ](../../assets/security-compliance/frontend-data-access-points.png)
 
-### バックエンドデータのエントリポイント
+### バックエンドのデータエントリポイント
 
-マーチャントは、管理者から顧客、住所、支払い情報を入力して、顧客または注文を作成できます。
+加盟店は、管理者から顧客、住所、支払い情報を入力して、顧客または注文を作成できます。
 
-![&#x200B; バックエンドデータエントリポイント &#x200B;](../../assets/security-compliance/backend-data-entry-points.svg)
+![ バックエンド データ エントリ ポイント ](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### バックエンドのデータアクセスポイント
 
-Commerceは、マーチャントが複数のタイプのグリッドを表示したり、グリッドをクリックして詳細情報を表示したり、その他の様々なタスクを実行したりすると、顧客情報を読み込みます。
+Commerceを使用すれば、顧客に関する情報を自動的に読み込み、グリッドをクリックして詳細を確認したり、その他のさまざまなタスクを実行したりできます。
 
-![&#x200B; バックエンドのデータアクセスポイント &#x200B;](../../assets/security-compliance/backend-data-access-points.svg)
+![ バックエンド データ アクセス ポイント ](../../assets/security-compliance/backend-data-access-points.png)
 
 ## データベースエンティティ
 
-Magento 1 は、顧客に関する情報を、顧客、売上、その他のデータベーステーブルに格納します。
+Magento 1では、お客様の情報が、お客様テーブル、セールス テーブル、その他のデータベーステーブルに格納されます。
 
 ### 顧客データ
 
-Magento 1 は、顧客に関する情報を `customer_entity` テーブルと `customer_address_entity` テーブルに格納します。 これらのテーブルにはどちらも、カスタム顧客属性を含めることができる参照テーブルがいくつかあります。
+Magento 1は、お客様の情報を`customer_entity`および`customer_address_entity` テーブルに保存します。 これらのテーブルには、カスタム顧客属性を含めることができる複数の参照テーブルがあります。
 
-#### `customer_entity` および参照テーブル
+#### `customer_entity`と参照テーブル
 
-`customer_entity` テーブルの次の列には、顧客情報が表示されます。
+`customer_entity` テーブルの次の列には、顧客情報が含まれています。
 
 | 列 | データタイプ |
 | --- | --- |
 | `email` | varchar （255） |
 
-次の表は、`customer_entity` を参照し、カスタム顧客属性を含めることができます。
+これらのテーブルは`customer_entity`を参照し、カスタム顧客属性を含めることができます：
 
 | テーブル | 列 | データタイプ |
 | --- | --- | --- |
 | `customer_entity_datetime` | `value` | datetime |
 | `customer_entity_decimal` | `value` | decimal （12,4） |
 | `customer_entity_int` | `value` | int （11） |
-| `customer_entity_text` | `value` | text |
+| `customer_entity_text` | `value` | テキスト |
 | `customer_entity_varchar` | `value` | varchar （255） |
 
-#### `customer_address_entity` および参照テーブル
+#### `customer_address_entity`と参照テーブル
 
-次の表は、`customer_address_entity` を参照し、カスタム顧客属性を含めることができます。
+次のテーブルは`customer_address_entity`を参照し、カスタム顧客属性を含めることができます。
 
 | テーブル | 列 | データタイプ |
 | --- | --- | --- |
 | `customer_address_entity_datetime` | `value` | datetime |
 | `customer_address_entity_decimal` | `value` | decimal （12,4） |
 | `customer_address_entity_int` | `value` | int （11） |
-| `customer_address_entity_text` | `value` | text |
+| `customer_address_entity_text` | `value` | テキスト |
 | `customer_address_entity_varchar` | `value` | varchar （255） |
 
 ### 注文データ
 
-`sales_flat_order` および関連するテーブルには、顧客の名前、請求先および配送先住所、関連する情報が含まれています。
+`sales_flat_order`と関連するテーブルには、顧客の名前、請求先住所と配送先住所、および関連情報が含まれています。
 
 #### `sales_flat_order` テーブル
 
-顧客情報は、`sales_order` テーブルの次のカラムに格納されます。
+`sales_order` テーブルの次の列には、顧客情報が含まれています。
 
 | 列 | データタイプ |
 | --- | --- |
@@ -109,7 +109,7 @@ Magento 1 は、顧客に関する情報を `customer_entity` テーブルと `c
 
 #### `sales_flat_order_address` テーブル
 
-`sales_flat_order_address` テーブルには、顧客の住所が格納されます。
+`sales_flat_order_address` テーブルに顧客のアドレスが含まれています。
 
 | 列 | データタイプ |
 | --- | --- |
@@ -127,11 +127,11 @@ Magento 1 は、顧客に関する情報を `customer_entity` テーブルと `c
 | `suffix` | varchar （255） |
 | `middlename` | varchar （255） |
 | `company` | varchar （255） |
-| `vat_id` | text |
+| `vat_id` | テキスト |
 
 #### `sales_flat_order_grid` テーブル
 
-顧客情報は、`sales_flat_order_grid` テーブルの次のカラムに格納されます。
+`sales_flat_order_grid` テーブルの次の列には、顧客情報が含まれています。
 
 | 列 | データタイプ |
 | --- | --- |
@@ -141,7 +141,7 @@ Magento 1 は、顧客に関する情報を `customer_entity` テーブルと `c
 
 #### `sales_flat_order_payment` テーブル
 
-顧客情報は、`sales_flat_order_payment` テーブルの次のカラムに格納されます。
+`sales_flat_order_payment` テーブルの次の列には、顧客情報が含まれています。
 
 | 列 | データタイプ |
 | --- | --- |
@@ -155,13 +155,13 @@ Magento 1 は、顧客に関する情報を `customer_entity` テーブルと `c
 | `echeck_routing_number` | varchar （255） |
 | `echeck_account_name` | varchar （255） |
 
-### 見積データ
+### 見積もりデータ
 
-見積もりには、顧客の名前、メールアドレス、住所、および関連情報が含まれています。
+見積もりには、顧客の名前、電子メール、住所、関連情報が記載されています。
 
 #### `sales_flat_quote` テーブル
 
-顧客情報は、`sales_flat_quote` テーブルの次のカラムに格納されます。
+`sales_flat_quote` テーブルの次の列には、顧客情報が含まれています。
 
 | 列 | データタイプ |
 | --- | --- |
@@ -181,7 +181,7 @@ Magento 1 は、顧客に関する情報を `customer_entity` テーブルと `c
 
 #### `sales_flat_quote_address` テーブル
 
-顧客情報は、`sales_flat_quote_address` テーブルの次のカラムに格納されます。
+`sales_flat_quote_address` テーブルの次の列には、顧客情報が含まれています。
 
 | 列 | データタイプ |
 | --- | --- |
@@ -200,7 +200,7 @@ Magento 1 は、顧客に関する情報を `customer_entity` テーブルと `c
 
 #### `sales_flat_quote_payment` テーブル
 
-`sales_flat_quote_payment` テーブルは、クレジットカード情報およびその他のトランザクション情報を含む。
+`sales_flat_quote_payment` テーブルには、クレジットカード情報およびその他の取引情報が含まれています。
 
 | 列 | データタイプ |
 | --- | --- |
@@ -212,7 +212,7 @@ Magento 1 は、顧客に関する情報を `customer_entity` テーブルと `c
 | `cc_ss_start_month` | smallint （5） |
 | `cc_ss_start_year` | smallint （5） |
 
-### データのアーカイブ
+### データをアーカイブ
 
 次の表と列には、顧客情報が含まれています。
 
@@ -236,7 +236,7 @@ Magento 1 は、顧客に関する情報を `customer_entity` テーブルと `c
 
 ### RMA データ
 
-次の RMA 表および列には、顧客情報が含まれています。
+次のRMAの表と列には、顧客情報が含まれています。
 
 | テーブル | 列 | データタイプ |
 | --- | --- | --- |
@@ -244,7 +244,7 @@ Magento 1 は、顧客に関する情報を `customer_entity` テーブルと `c
 | `enterprise_rma_grid` | `customer_id` | int （10） |
 | `enterprise_rma_grid` | `customer_name` | varchar （255） |
 
-### その他データ
+### その他のデータ
 
 次の表と列には、顧客情報が含まれています。
 
@@ -257,7 +257,7 @@ Magento 1 は、顧客に関する情報を `customer_entity` テーブルと `c
 | `enterprise_giftregistry_person` | `email` | varchar （150） |
 | `enterprise_giftregistry_person` | `firstname` | varchar （100） |
 | `enterprise_giftregistry_person` | `lastname` | varchar （100） |
-| `enterprise_giftregistry_person` | `middlename` | text |
+| `enterprise_giftregistry_person` | `middlename` | テキスト |
 | `enterprise_invitation` | `customer_id` | int （10） |
 | `enterprise_invitation` | `email` | varchar （255） |
 | `enterprise_invitation` | `referral_id` | int （10） |
@@ -271,7 +271,7 @@ Magento 1 は、顧客に関する情報を `customer_entity` テーブルと `c
 | `newsletter_subscriber` | `customer_id` | int （10） |
 | `newsletter_subscriber` | `subscriber_email` | varchar （150） |
 | `persistent_session` | `customer_id` | int （10） |
-| `persistent_session` | `info` | text |
+| `persistent_session` | `info` | テキスト |
 | `poll_vote` | `customer_id` | int （10） |
 | `poll_vote` | `ip_address` | varbinary （16） |
 | `rating_option_vote` | `customer_id` | int （10） |
@@ -279,7 +279,7 @@ Magento 1 は、顧客に関する情報を `customer_entity` テーブルと `c
 | `rating_option_vote` | `remote_ip_long` | varbinary （516） |
 | `send_friend_log` | `ip` | varbinary （16） |
 
-顧客を参照するその他のテーブル：
+お客様を参照するその他のテーブル：
 
 - `catalog_compare_item`
 - `downloadable_link_purchased`

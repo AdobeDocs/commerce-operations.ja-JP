@@ -1,190 +1,190 @@
 ---
-title: Commerceのサイトとインフラストラクチャを保護
-description: Adobe Commerce インストールを設定、設定、更新する際に、セキュリティのベストプラクティスを導入して、セキュリティを維持します。
+title: Commerceのサイトとインフラストラクチャの保護
+description: Adobe Commerceのインストール環境を設定、設定、更新する際にセキュリティのベストプラクティスを実装して、セキュリティを維持します。
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '2173'
 ht-degree: 0%
 
 ---
 
-# Commerceのサイトとインフラストラクチャを保護
+# Commerceのサイトとインフラストラクチャの保護
 
-クラウドインフラストラクチャー上にデプロイされたAdobe Commerce プロジェクトに対してセキュリティで保護された環境を構築および維持することは、Adobe Commerceのお客様、ソリューションパートナー、Adobeの間で共有される責務です。 このガイドの目的は、顧客側の方程式に関するベストプラクティスを提供することです。
+クラウドインフラストラクチャにデプロイされたAdobe Commerce プロジェクトの安全な環境を確立および管理することは、Adobe Commerceのお客様、ソリューションパートナー、Adobe間で共有される責任です。 このガイドの目的は、方程式の顧客側のベストプラクティスを提供することです。
 
-すべてのセキュリティリスクを排除することはできませんが、これらのベストプラクティスを適用すると、Commerce インストールのセキュリティ体制が強化されます。 安全なサイトとインフラストラクチャは、悪意のある攻撃に対するターゲットとしての魅力を損ない、ソリューションと顧客の機密情報のセキュリティを確保し、サイトの中断や高コストな調査を引き起こす可能性のあるセキュリティ関連のインシデントを最小限に抑えます。
+すべてのセキュリティリスクを排除することはできませんが、これらのベストプラクティスを適用すると、Commerce インストールのセキュリティ対策が強化されます。 安全なサイトとインフラストラクチャは、悪意のある攻撃に対する攻撃を低減し、ソリューションと顧客の機密情報のセキュリティを確保し、サイトの障害やコストのかかる調査の原因となるセキュリティ関連のインシデントを最小限に抑えるのに役立ちます。
 
 >[!NOTE]
 >
->クラウドインフラストラクチャ上のAdobe Commerce プロジェクトをセキュリティで保護および維持管理する役割と責務について詳しくは、[Adobe Commerce セキュリティおよびコンプライアンスガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart) の _Shared Responsibility Model_）を参照してください。
+>クラウドインフラストラクチャ上のAdobe Commerce プロジェクトを保護および管理するための役割と責任について詳しくは、_Adobe Commerce セキュリティおよびコンプライアンスガイド_&#x200B;の[Shared Responsibility Model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)）を参照してください。
 
-[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
+[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
 
-- クラウドインフラストラクチャー上のAdobe Commerce
+- Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
 
 ## 優先度の推奨事項
 
-Adobeでは、以下の推奨事項をすべての顧客にとって最も優先度の高いものとみなしています。 すべてのCommerceのデプロイメントで、次の主要なセキュリティのベストプラクティスを実装します。
+Adobeでは、次の推奨事項をすべてのお客様にとって最優先事項と見なしています。 Commerceのすべてのデプロイメントに、次の主要なセキュリティのベストプラクティスを導入します。
 
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)**管理者およびすべての SSH 接続に対して 2 要素認証を有効にする**
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **管理者とすべてのSSH接続に対して2要素認証を有効にする**
 
-- [Commerce管理者のセキュリティ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html?lang=ja)
+- [Commerce管理者のセキュリティ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html)
 
-- [&#x200B; セキュアな SSH 接続 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html?lang=ja) （クラウドインフラストラクチャ）
+- [ セキュアなSSH接続](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html) （クラウドインフラストラクチャ）
 
-プロジェクトで MFA が有効な場合、SSH アクセス権を持つクラウドインフラストラクチャアカウント上のすべてのAdobe Commerceは、認証ワークフローに従う必要があります。 このワークフローでは、環境にアクセスするために 2 要素認証（2FA）コードまたは API トークンと SSH 証明書が必要です。
+プロジェクトでMFAが有効になっている場合、SSH アクセス権を持つすべてのAdobe Commerce on cloud infrastructure アカウントは、認証ワークフローに従う必要があります。 このワークフローには、環境にアクセスするための2要素認証（2FA）コード、またはAPI トークンとSSH証明書が必要です。
 
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) 管理者 **保護**
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **管理者の保護**
 
-- [&#x200B; デフォルトの &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=ja#use-a-custom-admin-url) や一般的な用語（`admin` など）を使用する代わりに `backend` デフォルト以外の管理者 URL を設定します。 この設定により、サイトへの不正アクセスを試みるスクリプトの危険性が軽減されます。
+- [ デフォルトの`admin`や`backend`などの一般的な用語を使用する代わりに、デフォルト以外の管理者URL](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html#use-a-custom-admin-url)を設定します。 この設定により、サイトへの不正アクセスを試みるスクリプトのリスクを軽減できます。
 
-- [&#x200B; セキュリティの詳細設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=ja) - URL に秘密鍵を追加し、パスワードでは大文字と小文字を区別することを要求し、管理者セッションの長さ、パスワードの有効期間、管理者ユーザーアカウントをロックするまでに許可されるログイン試行回数を制限します。 セキュリティを強化するには、現在のセッションの有効期限が切れる前にキーボードが非アクティブであった期間を設定し、ユーザー名とパスワードで大文字と小文字を区別する必要があります。
+- [高度なセキュリティ設定](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)の設定 – URLに秘密鍵を追加し、パスワードを大文字と小文字を区別する必要があり、管理者ユーザーアカウントをロックする前に、管理者セッションの長さ、パスワードの有効期間、ログイン試行回数を制限します。 セキュリティを強化するには、現在のセッションが期限切れになる前にキーボードの非アクティブな長さを設定し、ユーザー名とパスワードを大文字と小文字を区別する必要があります。
 
-- [ReCAPTCHA を有効にする &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=ja) で、自動ブルートフォース攻撃から管理者を保護します。
+- [ReCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html)を有効にして、管理者を自動ブルートフォース攻撃から保護します。
 
-- [&#x200B; 管理者権限 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html?lang=ja) をロールに割り当て、ロールを管理者ユーザーアカウントに割り当てる場合は、最小権限の原則に従います。
+- [管理者権限](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html)を管理者ユーザーアカウントに役割と役割に割り当てる場合は、最小権限の原則に従います。
 
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)**Adobe Commerceの最新リリースへのアップグレード**
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Adobe Commerceの最新リリースへのアップグレード**
 
-Commerce Adobe Commerce、Commerce Services および拡張機能の [&#x200B; 最新リリースへのアップグレード &#x200B;](#upgrade-to-the-latest-release) を行うことで、コードが常にアップデートされます。これには、Adobeで提供されるセキュリティパッチ、ホットフィックス、その他のパッチが含まれます。
+Commerce プロジェクトを最新リリース ](#upgrade-to-the-latest-release)のAdobe Commerce、Commerce サービス、およびAdobeが提供するセキュリティパッチ、ホットフィックス、その他のパッチを含む拡張機能に[ アップグレードすることで、コードを常に最新の状態に保ちます。
 
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)**Secure sensitive configuration values**
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **機密性の高い設定値を保護**
 
-[&#x200B; 構成管理 &#x200B;](../../../configuration/cli/set-configuration-values.md) を使用して、重要な設定値をロックします。
+重要な設定値をロックするには、[構成管理](../../../configuration/cli/set-configuration-values.md)を使用します。
 
-`lock config` および `lock env` CLI コマンドは、環境変数を設定して、管理者から更新されないようにします。 このコマンドは、`<Commerce base dir>/app/etc/env.php` ファイルに値を書き込みます。 （クラウドインフラストラクチャプロジェクト上のCommerceについては、[Store Configuration Management](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=ja#sensitive-data) を参照してください）。
+`lock config`および`lock env` CLI コマンドは、環境変数が管理者から更新されないように設定します。 コマンドは、値を`<Commerce base dir>/app/etc/env.php` ファイルに書き込みます。 （クラウドインフラストラクチャプロジェクト上のCommerceについては、[Store Configuration Management](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data)を参照してください）。
 
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) セキュリティスキャン **実行**
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **セキュリティスキャンの実行**
 
-[Commerce セキュリティスキャンサービス &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html?lang=ja) を使用すると、すべてのAdobe Commerce サイトを監視して既知のセキュリティリスクやマルウェアがないか確認し、サインアップしてパッチの更新やセキュリティの通知を受けることができます。
+[Commerce セキュリティスキャンサービス ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html)を使用して、すべてのAdobe Commerce サイトに既知のセキュリティリスクとマルウェアを監視し、サインアップしてパッチの更新とセキュリティ通知を受け取ります。
 
-## 拡張機能とカスタムコードのセキュリティを確保する
+## 拡張機能とカスタムコードのセキュリティを確保
 
-Adobe Commerce Marketplace からサードパーティの拡張機能を追加してAdobe Commerceを拡張する場合、またはカスタムコードを追加する場合、次のベストプラクティスを適用して、カスタマイズのセキュリティを確保します。
+Adobe Commerce Marketplaceからサードパーティの拡張機能を追加してAdobe Commerceを拡張する場合、またはカスタムコードを追加する場合は、次のベストプラクティスを適用して、これらのカスタマイズのセキュリティを確保してください。
 
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)**セキュリティに精通したパートナーまたはソリューションインテグレーター（SI）を選択してください** – 安全な開発手法に従い、セキュリティ上の問題の防止と対処に関する確かな実績を持つ組織を選択することで、安全な統合とカスタムコードの安全な配信を確保します。
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **セキュリティに精通したパートナーまたはソリューションインテグレーター（SI）を選択** – 安全な開発プラクティスに従い、セキュリティ問題の防止と対処に確かな実績を持つ組織を選択することで、安全な統合とカスタムコードの安全な配信を確保します。
 
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)**セキュアな拡張機能を使用** - ソリューションインテグレーターまたは開発者に相談し、[Commerce拡張機能のベストプラクティスに従って、Adobe デプロイメントに最も適切でセキュアな拡張機能を特定します &#x200B;](../planning/extensions.md)。
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **安全な拡張機能を使用** – お使いのソリューションインテグレーターまたは開発者に相談し、[Adobe拡張機能のベストプラクティス ](../planning/extensions.md)に従って、Commerceのデプロイに最適で安全な拡張機能を特定します。
 
-- Adobe Commerce Marketplace またはソリューションインテグレーターを通じたソース拡張機能のみ。 拡張機能がインテグレーターを通じて提供されている場合は、インテグレーターが変更した場合に拡張機能ライセンスの所有権が譲渡可能であることを確認します。
+- Adobe Commerce Marketplaceまたはソリューションインテグレーターから拡張機能のみを入手してください。 拡張機能がインテグレーターを通じて取得されている場合は、インテグレーターが変更した場合に拡張ライセンスの所有権が引き継ぎ可能であることを確認します。
 
-- 拡張機能とベンダーの数を制限することで、リスクを軽減します。
+- 拡張機能とベンダーの数を制限することで、リスクのリスクを低減します。
 
-- 可能な場合は、Commerce アプリケーションと統合する前に、セキュリティのための拡張機能コードを確認します。
+- 可能であれば、Commerce アプリケーションと統合する前に、拡張機能コードのセキュリティを確認してください。
 
-- PHP Extension Developers が、Adobe Commerceの開発ガイドライン、プロセス、およびセキュリティのベストプラクティスに従っていることを確認してください。 特に、開発者は、リモートコードの実行や暗号化の脆弱性を引き起こす可能性のある PHP の機能を使用しないでください。 [&#x200B; 拡張機能開発者ガイドのベストプラクティス &#x200B;](https://developer.adobe.com/commerce/php/best-practices/security/) セキュリティ *を参照してください*
+- PHP拡張機能の開発者が、Adobe Commerce開発ガイドライン、プロセス、セキュリティのベストプラクティスに従っていることを確認します。 具体的には、開発者は、リモートコードの実行や脆弱な暗号化につながる可能性のあるPHP機能の使用を避ける必要があります。 拡張機能の開発者に関するガイド *のベストプラクティス*&#x200B;の[ セキュリティ ](https://developer.adobe.com/commerce/php/best-practices/security/)を参照してください。
 
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)**監査コード** - サーバーとソースコードリポジトリで、開発の残り部分を確認します。 アクセス可能なログファイル、公開されている.git ディレクトリ、SQL 文を実行するトンネル、データベースダンプ、php 情報ファイル、その他の保護されていない必要のない、攻撃で使用される可能性のあるファイルがないことを確認します。
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **監査コード** - サーバーとソースコードのリポジトリを確認して、残りの開発作業を行います。 アクセス可能なログファイル、公開されている.git ディレクトリ、SQL ステートメントを実行するトンネル、データベースダンプ、php情報ファイル、または必要とされないその他の保護されていないファイルが存在せず、攻撃で使用される可能性があることを確認します。
 
 ## 最新リリースへのアップグレード
 
-Adobeは、セキュリティを強化し、潜在的な侵害からお客様をより適切に保護するために、更新されたソリューションコンポーネントを継続的にリリースしています。 Adobe Commerce アプリケーション、インストール済みサービスおよび拡張機能の最新バージョンにアップグレードし、最新のパッチを適用することは、セキュリティの脅威に対する最初かつ最善の防御策です。
+Adobeでは、セキュリティを強化し、お客様を侵害から保護するために、アップデートされたソリューションコンポーネントを継続的にリリースしています。 最新バージョンのAdobe Commerce アプリケーション、インストール済みのサービス、拡張機能にアップグレードし、現在のパッチを適用することは、セキュリティ脅威に対する最初の最善の防御策です。
 
-Commerceは通常、セキュリティアップデートを四半期ごとにリリースしますが、優先度などの要因に基づいて、主要なセキュリティ上の脅威に対するホットフィックスをリリースする権利を留保します。
+Commerceは通常、四半期ごとにセキュリティアップデートをリリースしますが、優先度やその他の要因に基づいて、重大なセキュリティ脅威に対するホットフィックスをリリースする権利を留保します。
 
-使用可能なAdobe Commerceのバージョン、リリースサイクル、アップグレードおよびパッチプロセスについて詳しくは、次のリソースを参照してください。
+使用可能なAdobe Commerceのバージョン、リリースサイクル、アップグレードとパッチのプロセスについて詳しくは、次のリソースを参照してください。
 
 - [リリース済みバージョン](../../../release/versions.md)
-- [&#x200B; 製品の提供 &#x200B;](../../../release/product-availability.md) （Adobe Commerce サービスおよびAdobeが作成した拡張機能）
+- [製品の可用性](../../../release/product-availability.md) （Adobe Commerce サービスおよびAdobeで作成された拡張機能）
 - [Adobe Commerce ライフサイクルポリシー](../../../release/lifecycle-policy.md)
 - [アップグレードガイド](../../../upgrade/overview.md)
 - [パッチの適用方法](../../../upgrade/patches/overview.md)
 
 >[!TIP]
 >
->[Adobe Security Notification Service](https://www.adobe.com/subscription/adbeSecurityNotifications.html) を登録することで、最新のセキュリティ情報を取得し、セキュリティの既知の問題を軽減できます。
+>[Adobe セキュリティ通知サービス ](https://www.adobe.com/subscription/adbeSecurityNotifications.html)を購読することで、最新のセキュリティ情報を入手し、既知のセキュリティ問題を軽減できます。
 
-## ディザスタリカバリ計画の作成
+## 災害復旧計画の策定
 
-Commerce サイトが危険にさらされた場合は、包括的なディザスタリカバリ計画を策定して実装することで、被害を抑制し、通常の業務を迅速に復旧します。
+Commerceサイトが危険にさらされた場合は、包括的な災害復旧計画を策定して実施することで、被害を管理し、通常の業務を迅速に復旧できます。
 
-災害が原因でCommerce インスタンスを復元する必要がある場合は、Adobeからバックアップファイルを提供できます。 お客様とソリューションインテグレーターは、該当する場合、復元を実行できます。
+お客様が災害のためにCommerce インスタンスを復元する必要がある場合、Adobeはバックアップファイルをお客様に提供できます。 お客様とソリューションインテグレーターは、該当する場合、リストアを実行できます。
 
-Adobeでは、ディザスタリカバリ計画の一環として、ビジネス継続性の目的で再導入が必要な場合に、再導入を容易に行うために [Adobe Commerce アプリケーション設定をエクスポート &#x200B;](../../../configuration/cli/export-configuration.md) することを強くお勧めします。 設定をファイルシステムにエクスポートする主な理由は、システム設定がデータベース設定よりも優先されるためです。 読み取り専用のファイルシステムでは、アプリケーションを再デプロイして機密性の高い設定を変更し、保護レイヤーを追加する必要があります。
+災害復旧計画の一部として、Adobeでは、ビジネス継続性の目的で必要な場合に再デプロイメントを容易にするために、[Adobe Commerce アプリケーション設定](../../../configuration/cli/export-configuration.md)を書き出すことを強くお勧めします。 設定をファイルシステムにエクスポートする主な理由は、システム設定がデータベース設定よりも優先されることです。 読み取り専用のファイルシステムでは、機密性の高い設定を変更するためにアプリケーションを再デプロイする必要があり、保護のレイヤーが追加されます。
 
 ### 追加情報
 
-**クラウドインフラストラクチャにデプロイされたAdobe Commerce**
+**Adobe Commerceがクラウドインフラストラクチャにデプロイされました**
 
-- [&#x200B; バックアップと災害復旧 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=ja#backup-and-disaster-recovery)
+- [バックアップと災害復旧](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#backup-and-disaster-recovery)
 
-- [&#x200B; クラウドインフラストラクチャー上でのAdobe Commerceのストア設定管理 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=ja)
+- [Adobe Commerce on cloud infrastructureのストア構成管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html)
 
-**Adobe Commerceがオンプレミスにデプロイされました**
+**オンプレミスにデプロイされたAdobe Commerce**
 
-- [構成設定のエクスポート](../../../configuration/cli/export-configuration.md)
+- [構成設定の書き出し](../../../configuration/cli/export-configuration.md)
 
-   - [設定を読み込み](../../../configuration/cli/import-configuration.md)
+   - [構成設定のインポート](../../../configuration/cli/import-configuration.md)
 
-   - [ファイル・システム、メディア、データベースのバックアップとロールバック](../../../installation/tutorials/backup.md)
+   - [ファイルシステム、メディア、データベースのバックアップとロールバック](../../../installation/tutorials/backup.md)
 
-## 安全なサイトとインフラストラクチャの維持
+## 安全なサイトとインフラの維持
 
-このセクションでは、Adobe Commerce インストールのサイトおよびインフラストラクチャのセキュリティを維持するためのベストプラクティスの概要を説明します。 これらのベストプラクティスの多くは、コンピューターインフラストラクチャの一般的なセキュリティ保護に重点を置いているので、推奨事項の一部は既に実装されている可能性があります。
+この節では、Adobe Commerce インストールのサイトとインフラストラクチャのセキュリティを維持するためのベストプラクティスについて説明します。 これらのベストプラクティスの多くは、一般的にコンピューターインフラストラクチャのセキュリティを確保することに重点を置いているため、推奨事項のいくつかは既に実装されている可能性があります。
 
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)**不正アクセスのブロック** - ホスティングパートナーと協力して、Commerce サイトとお客様のデータへの不正なアクセスをブロックする VPN トンネルを設定します。 Commerce アプリケーションへの不正アクセスをブロックする SSH トンネルを設定します。
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **不正アクセスをブロック** - ホスティングパートナーと協力してVPN トンネルを設定し、Commerce サイトおよびカスタマーデータへの不正アクセスをブロックします。 Commerce アプリケーションへの不正アクセスをブロックするSSH トンネルを設定します。
 
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)**Web アプリケーションファイアウォールを使用** - トラフィックを分析し、不明な IP アドレスにクレジットカード情報が送信されるなど、不審なパターンを Web アプリケーションファイアウォールで検出します。
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Web アプリケーションファイアウォールを使用**：トラフィックを分析し、Web アプリケーションファイアウォールを使用して不明なIP アドレスにクレジットカード情報を送信するなど、疑わしいパターンを検出します。
 
-クラウドインフラストラクチャにデプロイされたAdobe Commerceのインストールでは、[Fastly サービス統合 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=ja) で利用可能なビルトイン WAF サービスを使用できます
+クラウドインフラストラクチャにデプロイされたAdobe Commerce インストールでは、[Fastly サービス統合](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)で利用可能な組み込みのWAF サービスを使用できます
 
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)**高度なパスワードセキュリティ設定を設定** – 強力なパスワードを設定し、PCI Data Security Standard の 8.2.4 節で推奨されているように、少なくとも 90 日ごとに変更します。[Admin Security 設定の指定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=ja) を参照してください。
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **高度なパスワードセキュリティ設定を設定する** – 強固なパスワードを設定し、少なくとも90日ごとに変更します。これは、セクション 8.2.4のPCI データセキュリティ標準で推奨されています。 [管理者セキュリティ設定の設定](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)を参照してください。
 
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)**HTTPS を使用** - Commerce サイトを新たに実装した場合は、HTTPS を使用してサイト全体を起動します。 Googleでは、ランキング要因として HTTPS を使用するだけでなく、HTTPS で保護されていない限り、多くのユーザーはサイトからの購入さえ検討しません。
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **HTTPS**&#x200B;を使用 – Commerce サイトが新しく実装された場合は、HTTPSを使用してサイト全体を起動します。 Googleでは、HTTPSをランキング要素として使用しているだけでなく、HTTPSで保護されていない限り、多くの利用者はサイトからの購入を検討さえしません。
 
-## マルウェアからの保護
+## マルウェアから保護
 
-e コマースサイトを狙ったマルウェア攻撃は非常に一般的であり、脅威アクターはトランザクションからクレジットカードと個人情報を収集する新しい方法を継続的に開発しています。
+コマースサイトを標的としたマルウェア攻撃は非常に一般的で、脅威者はトランザクションからクレジットカードや個人情報を収集する新しい方法を継続的に開発しています。
 
-ただし、Adobeは、ほとんどのサイトの侵害は、革新的なハッカーによるものではないことがわかりました。 むしろ、脅威アクターは、多くの場合、既存のパッチが適用されていない脆弱性、パスワードの不備、ファイルシステム内の所有権と権限の設定の脆弱性を利用します。
+しかし、Adobeは、ほとんどのサイトの侵害が革新的なハッカーによるものではないことがわかりました。 代わりに、脅威アクターは、多くの場合、既存のパッチが適用されていない脆弱性、パスワードの不足、およびファイルシステム内の弱い所有権と権限の設定を利用します。
 
-最も一般的に経験される攻撃では、悪意のあるコードが顧客ストアの絶対ヘッダーまたは絶対フッターに挿入されます。 コードは、顧客のログイン資格情報やチェックアウトフォームデータなど、顧客がストアフロントに入力するフォームデータを収集します。 その後、このデータは、Commerce バックエンドではなく、悪意のある目的で別の場所に送信されます。 また、マルウェアは、元の支払いフォームを支払いプロバイダーが設定した保護を上書きする偽のフォームに置き換えるコードを管理者に実行させる可能性があります。
+最も一般的な攻撃では、悪意のあるコードがカスタマーストアの絶対ヘッダーまたは絶対フッターに挿入されます。 このコードは、顧客のログイン資格情報やチェックアウトフォームデータなど、顧客がストアフロントに入力するフォームデータを収集します。 その後、このデータはCommerceのバックエンドではなく、悪意のある目的で別の場所に送信されます。 また、マルウェアは、元の支払いフォームを支払いプロバイダーによって設定された保護を上書きする偽のフォームに置き換えるコードを実行する管理者を侵害する可能性があります。
 
-クライアントサイドのクレジットカードスキマーは、次の図に示すように、マーチャントの web サイトコンテンツにコードを埋め込み、ユーザーのブラウザーで実行できるマルウェアの一種です。
+クライアントサイドのクレジットカードのスキマーは、次の図に示すように、ユーザーのブラウザーで実行できるマーチャント web サイトのコンテンツにコードを埋め込むマルウェアの一種です。
 
-![e コマースサイトを狙ったマルウェア攻撃のデータフロー &#x200B;](../../../assets/playbooks/malware-data-flow.svg)
+![ コマースサイトを標的としたマルウェア攻撃のデータフロー](../../../assets/playbooks/malware-data-flow.png)
 
-ユーザーによるフォームの送信やフィールド値の変更など、特定のアクションが発生した後、スキマーはデータをシリアル化し、サードパーティのエンドポイントに送信します。 これらのエンドポイントは、通常、最終的な宛先にデータを送信するためのリレーとして機能する、その他の侵害された web サイトです。
+ユーザーがフォームを送信したり、フィールド値を変更したりするなど、特定のアクションが発生すると、スキマーはデータをシリアライズして、サードパーティのエンドポイントに送信します。 これらのエンドポイントは、通常、データを最終宛先に送信するためのリレーとして機能する、その他の侵害されたweb サイトです。
 
 
 >[!TIP]
 >
->Commerce サイトがマルウェア攻撃の影響を受ける場合は、Adobe Commerceのベストプラクティスに従って [&#x200B; セキュリティインシデントへの対応 &#x200B;](../maintenance/respond-to-security-incident.md) してください。
+>Commerce サイトがマルウェア攻撃の影響を受ける場合は、[ セキュリティインシデントへの対応](../maintenance/respond-to-security-incident.md)に関するAdobe Commerceのベストプラクティスに従ってください。
 
 ### 最も一般的な攻撃を把握
 
-以下は、AdobeがCommerceのお客様に認識し、対策を講じることをお勧めする、一般的なカテゴリの攻撃のリストです。
+以下は、AdobeのすべてのCommerceのお客様が認識し、対策を講じることを推奨する一般的な攻撃カテゴリのリストです。
 
-- **サイトデファリング** – 攻撃者がサイトの外観を変更したり、独自のメッセージを追加したりして、Web サイトに損害を与えます。 サイトやユーザーアカウントへのアクセスは侵害されていますが、多くの場合、支払い情報は安全なままです。
+- **サイトのデフェイス** – 攻撃者は、サイトの外観を変更したり、独自のメッセージを追加したりすることで、web サイトに損害を与えます。 サイトやユーザーアカウントへのアクセスは侵害されていますが、支払い情報は安全に保たれていることが多いです。
 
-- **ボットネット** – 顧客のCommerce サーバーは、スパムメールを送信するボットネットの一部になります。 通常、ユーザーデータは侵害されませんが、顧客のドメイン名がスパムフィルターでブロックリストに加えるされ、ドメインからのメールの配信が妨げられる可能性があります。 または、お客様のサイトがボットネットの一部になり、別のサイトに対して分散型サービス拒否（DDoS）攻撃を引き起こします。ボットネットは、Commerce サーバーへのインバウンド IP トラフィックをブロックし、お客様が買い物できないようにする可能性があります。
+- **ボットネット** – お客様のCommerce サーバーは、スパムメールを送信するボットネットの一部になります。 ユーザーデータは通常、侵害されませんが、顧客のドメイン名がスパムフィルターによってブロックリストに加えるされ、ドメインからのメール配信が妨げられる可能性があります。 または、顧客のサイトがボットネットの一部になり、別のサイトで分散型サービス拒否（DDoS）攻撃が発生します。 ボットネットは、Commerceサーバーへのインバウンド IP トラフィックをブロックし、お客様が買い物できないようにする可能性があります。
 
-- **直接のサーバ攻撃**：データが侵害され、バックドアやマルウェアがインストールされ、サイトの運用に影響が及びます。 サーバーに保存されていない支払い情報は、これらの攻撃によって侵害される可能性が低くなります。
+- **直接サーバー攻撃**：データが侵害され、バックドアとマルウェアがインストールされ、サイトの操作に影響が及びます。 サーバーに保存されていない支払い情報は、これらの攻撃によって侵害される可能性が低くなります。
 
-- **サイレントカードのキャプチャ** – この最も悲惨な攻撃では、侵入者は隠されたマルウェアやカードのキャプチャソフトウェアをインストールするか、さらに悪いことに、クレジットカードデータを収集するためにチェックアウトプロセスを変更します。 その後、データはダークウェブ上の販売のために別のサイトに送信されます。 このような攻撃は、長期間、気付かれず、顧客アカウントや財務情報の大きな漏洩につながる可能性があります。
+- **サイレントカードキャプチャ** – この最も悲惨な攻撃では、侵入者は隠れたマルウェアやカードキャプチャソフトウェアをインストールするか、または最悪の場合、チェックアウトプロセスを変更してクレジットカード情報を収集します。 その後、データはダークウェブ上の販売のために別のサイトに送信されます。 このような攻撃は、長期間にわたって気づかれない可能性があり、顧客アカウントや財務情報の大幅な侵害につながる可能性があります。
 
-- **サイレントキーログ** – 脅威アクターは、管理者ユーザーの資格情報を収集するためにキーログコードを顧客サーバーにインストールして、検出されることなくログインしたり他の攻撃を開始したりできます。
+- **サイレントキーロギング** – 攻撃者は、管理者ユーザーの資格情報を収集するためにキーロギングコードを顧客サーバーにインストールし、ログインして検出されることなく他の攻撃を起動できるようにします。
 
-### パスワード推測攻撃からの保護
+### パスワード推測攻撃から保護
 
-ブルートフォースパスワード推測攻撃により、管理者に不正アクセスが行われる可能性があります。 次のベストプラクティスに従って、これらの攻撃からサイトを保護します。
+ブルートフォースパスワード推測攻撃は、不正な管理者アクセスにつながる可能性があります。 次のベストプラクティスに従って、これらの攻撃からサイトを保護してください。
 
 - Commerceのインストールに外部からアクセスできるすべてのポイントを特定して保護します。
 
-  管理者へのアクセスを保護するには、Commerce プロジェクトの設定時にAdobeの [&#x200B; 優先度の高い推奨事項 &#x200B;](#priority-recommendations) に従うことで、通常は最も保護が必要になります。
+  Commerce プロジェクトの設定時にAdobeの[優先度の推奨事項](#priority-recommendations)に従うことで、最も保護が必要な管理者へのアクセスを保護できます。
 
-- 指定した IP アドレスまたはネットワークからのユーザーのみにアクセスを許可するアクセス制御リストを設定して、Commerce サイトへのアクセスを制御します。
+- 指定したIP アドレスまたはネットワークからのユーザーのみにアクセスを許可するアクセス制御リストを設定して、Commerce サイトへのアクセスを制御します。
 
-  カスタム VCL コードスニペットと共に Fastly Edge ACL を使用して、受信リクエストをフィルタリングし、IP アドレスによるアクセスを許可できます。 [&#x200B; リクエストを許可するためのカスタム VCL](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html?lang=ja) を参照してください。
+  カスタム VCL コードスニペットを使用したFastly Edge ACLを使用して、受信リクエストをフィルタリングし、IP アドレスによるアクセスを許可できます。 リクエスト ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html)を許可するには、[ カスタム VCLを参照してください。
 
 
   >[!TIP]
   >
-  >リモートワーカーを採用している場合は、Commerce サイトへのアクセス権を持つアドレスのリストにリモート社員の IP アドレスが含まれていることを確認してください。
+  >リモートワーカーを使用する場合は、リモート従業員のIP アドレスが、Commerce サイトへのアクセス権限を持つアドレスのリストに含まれていることを確認します。
 
-### クリックジャッキング攻撃の防止
+### クリックジャッキングの不正利用の防止
 
-Adobeは、ストアフロントへのリクエストに含めることができる `X-Frame-Options` HTTP リクエストヘッダーを提供することで、クリックジャッキング攻撃からストアを保護します。 [2&rbrace;Adobe Commerce設定ガイド &#x200B;](../../../configuration/security/xframe-options.md) の「クリックジャッキングの悪用の防止 *を参照してください。*
+Adobeは、ストアフロントへのリクエストに含めることができる`X-Frame-Options` HTTP リクエストヘッダーを提供することで、クリックジャッキング攻撃からストアを保護します。 *Adobe Commerce Configuration Guide*&#x200B;の[ クリックジャッキングの不正利用の防止](../../../configuration/security/xframe-options.md)を参照してください。
