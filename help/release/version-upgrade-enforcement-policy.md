@@ -15,11 +15,11 @@ Adobe Commerce版の通常のサポートと拡張サポートが終了した場
 
 サポートされているAdobe Commerce バージョンに移行するか、リリースラインの延長サポートの公開日[終了](lifecycle-policy.md#end-of-support-dates)までに[!DNL Adobe Commerce as a Cloud Service]に移行する必要があります。
 
-次の節では、Adobeがアップグレードを適用する理由、適用日の計算方法、および適用日に何が発生するかを説明します。 バージョン固有の適用日については、ライフサイクルポリシーの「[ サポート終了日](lifecycle-policy.md#end-of-support-dates)」テーブルを参照してください。
+次の節では、Adobeがアップグレードを適用する理由、適用日の計算方法、および適用日に何が発生するかを説明します。 バージョン固有の適用日については、ライフサイクルポリシーの「[&#x200B; サポート終了日](lifecycle-policy.md#end-of-support-dates)」テーブルを参照してください。
 
 >[!NOTE]
 >
->このトピックでは、クラウド アップグレードの適用についてのみ説明します。 サポート層の定義については、[ サポート終了日](lifecycle-policy.md#end-of-support-dates) テーブル、[ セキュリティのみの移行規定](lifecycle-policy.md#security-only-transitional-provisions)、[ サードパーティ製ソフトウェアの依存関係](lifecycle-policy.md#platform-dependencies)、[PHPの提供終了およびPCI コンプライアンス ](lifecycle-policy.md#php-end-of-life-and-pci-compliance)および[ アップグレードと移行のオプション ](lifecycle-policy.md#upgrade-and-migration-options)については、[ ライフサイクルポリシー](lifecycle-policy.md)を参照してください。 サポート対象のAdobe Commerce バージョンにアップグレードするだけでなく、Adobeでは、サポート対象のバージョンにサードパーティ製ソフトウェアの依存関係を維持する必要があります。
+>このトピックでは、クラウド アップグレードの適用についてのみ説明します。 サポート層の定義については、[&#x200B; サポート終了日](lifecycle-policy.md#end-of-support-dates) テーブル、[&#x200B; セキュリティのみの移行規定](lifecycle-policy.md#security-only-transitional-provisions)、[&#x200B; サードパーティ製ソフトウェアの依存関係](lifecycle-policy.md#platform-dependencies)、[PHPの提供終了およびPCI コンプライアンス &#x200B;](lifecycle-policy.md#php-end-of-life-and-pci-compliance)および[&#x200B; アップグレードと移行のオプション &#x200B;](lifecycle-policy.md#upgrade-and-migration-options)については、[&#x200B; ライフサイクルポリシー](lifecycle-policy.md)を参照してください。 サポート対象のAdobe Commerce バージョンにアップグレードするだけでなく、Adobeでは、サポート対象のバージョンにサードパーティ製ソフトウェアの依存関係を維持する必要があります。
 
 ## Adobeがこのポリシーを導入する理由
 
@@ -39,4 +39,4 @@ Adobe Commerceの各リリース行について、アップグレード実施日
 
 公開されたアップグレード適用日に、Adobeは、影響を受けるリリースバージョンを実行しているすべてのAdobe Commerce on Cloud （PaaS）環境のメンテナンスを停止し、それらを非アクティブ化する権利を留保します。 バージョンのアップグレードの適用日までの主要なマイルストーンに事前通知が届きます。 Adobeでは、環境をディアクティベートする前にデータ書き出しウィンドウが提供されるので、データを取得できます。
 
-このポリシーの最初の実施日は&#x200B;**2027年6月1日**&#x200B;です。この日までに延長サポートが終了するリリースラインの場合は、この日より前です。 バージョン固有の適用日については、[ サポート終了日](lifecycle-policy.md#end-of-support-dates)の表を参照してください。
+このポリシーの最初の実施日は&#x200B;**2027年6月1日**&#x200B;です。この日までに延長サポートが終了するリリースラインの場合は、この日より前です。 バージョン固有の適用日については、[&#x200B; サポート終了日](lifecycle-policy.md#end-of-support-dates)の表を参照してください。
