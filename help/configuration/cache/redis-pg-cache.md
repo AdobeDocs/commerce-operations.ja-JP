@@ -3,9 +3,9 @@ title: デフォルトおよびページキャッシュ用のRedisの設定
 description: Adobe CommerceのデフォルトおよびページキャッシュバックエンドとしてRedisを設定する方法について説明します。 CLI コマンド、env.php設定、接続検証を確認します。
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+source-git-commit: d82061ad2fa4676bd8fa71a9d34a954444eb0f54
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1467'
 ht-degree: 0%
 
 ---
@@ -66,8 +66,19 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parame
 | `cache-backend-redis-port` | ポート | Redis サーバーのリッスン ポート | `6379` |
 | `cache-backend-redis-db` | データベース | デフォルトのキャッシュとページ全体のキャッシュの両方にRedisを使用する場合は必須です。 1つのキャッシュのデータベース番号を指定します。他のキャッシュはデフォルトで0を使用します。<br><br>**重要**: Redisを複数のタイプのキャッシュに使用する場合、データベース番号は異なる必要があります。 デフォルトのキャッシングデータベース番号を0に、ページキャッシングデータベース番号を1に、セッションストレージデータベース番号を2に割り当てることをお勧めします。 | `0` |
 | `cache-backend-redis-password` | パスワード | Redis パスワードを設定すると、組み込みのセキュリティ機能の1つである`auth` コマンドが有効になり、クライアントはデータベースにアクセスするために認証する必要があります。 パスワードは、Redisの設定ファイル `/etc/redis/redis.conf`で直接設定されています | |
-| `cache-backend-redis-use-lua` | use_lua | Luaを有効または無効にします。 <br><br>**Lua**: Luaを使用すると、Redis内でアプリケーションロジックの一部を実行できるようになり、パフォーマンスが向上し、アトミック実行によるデータの一貫性が確保されます。 | `0` |
-| `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | ガベージコレクションのLuaを有効または無効にします。 <br><br>**Lua**: Luaを使用すると、Redis内でアプリケーションロジックの一部を実行できるようになり、パフォーマンスが向上し、アトミック実行によるデータの一貫性が確保されます。 | `1` |
+| `cache-backend-redis-use-lua` | use_lua | すべてのredis操作に対してLua スクリプトを有効または無効にします。 <br><br>**既定：`0`.**&#x200B;に保つ Lua モードはデフォルトで無効になっており、Luaが有効になったときにバンドルされたRedis ライブラリ（1.17.x）で発生する既知のパフォーマンスのリグレッションとGraphQL キャッシュミスの問題を防ぎます。 | `0` |
+| `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | ガベージコレクション （cron ジョブ `backend_clean_cache`）のLua スクリプトを有効または無効にします。 <br><br>**既定：`1`.**&#x200B;に保つ GC中にアトミックタグ設定のクリーンアップを確保するために、意図的に有効にします。 これを指定しないと、`backend_clean_cache` cronがキャッシュ保存操作と同時に実行され、キャッシュタグインデックスに対応するレコードが含まれていないキャッシュエントリが残ると、競合状態が発生する可能性があります。 これにより、タグベースの無効化がサイレントに失敗します。例えば、製品価格を更新しても製品キャッシュが無効化されない場合、代わりに完全なキャッシュのフラッシュが必要になります。 | `1` |
+
+### Lua モード
+
+Lua モードを有効にすると、複数のRedis操作（キャッシュ書き込み、タグ更新、ガベージコレクション）が、`EVALSHA`経由でサーバーサイドで実行される単一のアトミックスクリプトにバンドルされます。 これにより、同時リクエストからのインターリーブを防ぐことができます。例えば、キャッシュエントリとそのタグメンバーシップが一緒に書き込まれます。
+
+>[!WARNING]
+>
+>Adobe Commerce版の影響を理解せずに、`use_lua`および`use_lua_on_gc`のデフォルト値を変更しないでください。
+>
+>- **`use_lua`**：これをAdobe Commerce 2.4.7または2.4.8 （ライブラリ `colinmollenhour/cache-backend-redis` 1.17.1）で有効にすると、キャッシュの破損とGraphQL キャッシュの失敗の問題が発生する可能性があります。
+>- **`use_lua_on_gc`**: Adobe Commerce 2.4.8でこれを無効にすると、ガベージコレクション中にアトミックプロテクションが削除され、タグベースのキャッシュ無効化がサイレントで失敗する可能性があります。その場合、完全なキャッシュフラッシュが必要になります。
 
 ## コマンドの例（デフォルトのキャッシュ）
 
