@@ -73,7 +73,7 @@ _AC-1608 - [GitHub issue](https://github.com/magento/magento2/issues/34342) - [G
 
 _AC-6419 - [GitHub issue](https://github.com/magento/magento2/issues/35934) - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### `/V1/order/{orderId}/ship` API エンドポイントの内部サーバーエラー
+#### `/V1/order/&lbrace;orderId&rbrace;/ship` API エンドポイントの内部サーバーエラー
 
 システムは、`/V1/order/{orderId}/ship` API エンドポイントの内部サーバーエラーを修正し、リクエストの形式が正しくないときに400 エラーを返すようになりました。
 
@@ -3648,7 +3648,7 @@ _ACP2E-4212 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 #### スケジュール更新プレビューでWeb サイト間を移動できない
 
-この修正の前に、カスタムドメインを持つストアのコンテンツをプレビューしようとすると、スケジュールされた更新プレビューが壊れます。 この修正の後、カスタムストアドメインをそのままプレビューし、プレビューiframe内で移動できます。 この修正プログラムは、製品、カテゴリ、CMS ページ、CMS ブロックを対象としており、[Adobe Commerce変数およびマークアップタグ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags)に記載されているように、`{{store url}}`個のマークアップタグを使用したナビゲーションリンクをサポートしています。
+この修正の前に、カスタムドメインを持つストアのコンテンツをプレビューしようとすると、スケジュールされた更新プレビューが壊れます。 この修正の後、カスタムストアドメインをそのままプレビューし、プレビューiframe内で移動できます。 この修正プログラムは、製品、カテゴリ、CMS ページ、CMS ブロックを対象としており、[Adobe Commerce変数およびマークアップタグ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags)に記載されているように、`{{store url}}`個のマークアップタグを使用したナビゲーションリンクをサポートしています。
 
 _ACP2E-4308 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/0a3b7032)_
 
