@@ -1,7 +1,7 @@
 ---
-source-git-commit: 04ed1df1fa8601e121811661b81a86672422b639
+source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '32485'
+source-wordcount: '32399'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## v2.4.9で修正された問題
 
-Magento Open Source 2.4.9 コアコードの581の問題を修正しました。 このリリースに含まれる修正された問題のサブセットについて、以下で説明します。
+Magento Open Source 2.4.9 コアコードの580の問題を修正しました。 このリリースに含まれる修正された問題のサブセットについて、以下で説明します。
 
 ### API
 
@@ -1805,7 +1805,7 @@ _AC-15336 - [GitHub コードの貢献度](https://github.com/magento/magento2/c
 
 #### 無効化されたモジュールのコードをコンパイル中
 
-このプルリクエストエスケープは、コードのコンパイル前にモジュールを無効にしました。
+無効なモジュールのコードをコンパイルしないように`setup:di:compile`の動作を変更しました。
 
 _AC-10933 - [GitHub issue](https://github.com/magento/magento2/issues/38241) - [GitHub コードの貢献度](https://github.com/magento/magento2/pull/39723)_
 
@@ -1924,15 +1924,6 @@ _AC-14312 - [GitHub issue](https://github.com/magento/magento2/issues/39593) - [
 AC-14424
 
 _AC-14424 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/7bdafaa2)_
-
-#### Magento 2.4.8では、セマンティックバージョンに従わない開発パッケージを使用します
-
-Magento 2.4.8では、PHP 8.4との互換性を確保するために、pdepend/pdependおよびphpmd/phpmd （3.x-dev）の開発版が必要です。
-これらの開発バージョンは、SemVer準拠のパッケージを想定しているサードパーティ製ツールと競合し、一部のアップグレードを妨げます。
-一時的な回避策として、composer.jsonの開発バージョン（例：「3.x-dev as 3.99.0」）にエイリアスを設定し、セマンティックバージョンを満たしながら互換性を確保する必要があります。
-これにより、安定したリリースが利用可能になるまで、PHP 8.4がサポートされ、競合を回避できます。
-
-_AC-14519 - [GitHub issue](https://github.com/magento/magento2/issues/39796)_
 
 #### MView メカニズムは、トリガーの実行時にエラーを無視します
 

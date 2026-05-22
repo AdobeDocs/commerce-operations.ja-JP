@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8b631aabebcc37a793d8dda60af0c9194c269e36
+source-git-commit: d90419967a22835efff29ff609caea342a86a438
 workflow-type: tm+mt
-source-wordcount: '2623'
+source-wordcount: '2686'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,66 @@ ht-degree: 0%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年5月22日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新された<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9 リリースノート </a>および<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Magento Open Source 2.4.9 リリースノート </a>:AC-10933 <code class="language-plaintext highlighter-rouge">setup:di:compile</code>の修正を明確にし、AC-14519の修正を取り消し、修正済み問題の数を調整しました。<br /><em> クレジット：<a href="https://github.com/hostep">hostep</a></em></p>
+</td>
+      <td>
+        フィードバック、テクニカル
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e5a69a282839a393d6eb873af9938208706af50">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737">AC-10737: Bin/magento setup:db:status コマンドでJSON データタイプが認識されない</a>のQPT 1.1.79修正に関する詳細な説明を追加しました。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9aad978f42697f74ebd7c8f401e45b4780bd5038">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年5月20日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601">ACP2E-4601のQPT 1.1.79の修正に関する詳細な説明を追加しました。支払認証トランザクションのself-reference parent_idを再保存し、無限ループ/OOM</a>をトリガーします。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3fe9730b1954a07d9ef4a405ee75fcde9511e09d">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p>クラウド バージョンのアップグレード実施日、サポート期間の定義（セキュリティのみの移行期間を含む）、2.4.4～2.4.9のサポート終了テーブル、PHP PCI ガイダンス、およびAdobe Commerce as a Cloud Serviceへの移行またはPaaSでのアップグレードのパスを含む<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/lifecycle-policy"> ソフトウェア ライフサイクル ポリシー</a>を更新しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cd0f27ae6a8dcec9b25af15386d8350c22d2fb95">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年5月13日（PT）
 
@@ -69,7 +129,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/12093993f31c321afc75da6f2c661b4a9e6fd711">コミット</a></td>
     </tr>
     <tr>
-      <td><p>v2.4.9用に<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/packages/adobe-commerce"> パッケージ </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises">bin/magento</a>および<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions">必要なPHP拡張機能</a>を更新しました。<br /> セキュリティパッチリリースノート（2.4.4、2.4.5、2.4.6、2.4.7、2.4.8、2.4.8）を更新し、<a href="https://helpx.adobe.com/security/products/magento/apsb26-49.html">Adobe セキュリティ情報APSB26-49</a>を参照し、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8 パッチ </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2&rbrace;の2&rbrace;新2&rbrace; プラットフォームのの新機能のハイライトををドキュメントをしました<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6 パッチ </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5 パッチ </a>、および<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4 パッチ </a>。</a><br />GA修正された問題データを含む<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9 リリースノート </a>および<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Magento Open Source 2.4.9 リリースノート </a>を更新し、2.4.9 リリースに合わせたパスを含めました（ベータ版の修正済み問題ソースに置き換えます）。<br />GAの<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9 リリースノート </a>および<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Magento Open Source 2.4.9 リリースノート </a>のハイライト節を更新しました。<br />2.10&rbrace;最新111111&rbrace;2.9.9, セキュリティパッチ 2.9, セキュリティパッチ 2.9, オンプレミス 122, オンプレミス 1222222222200000000000000000000000000000000<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements"></a><br />UCT CLI リファレンス </a>をバージョン 3.0.27に更新しました。<br />Commerce 2.4.9 Symfony Cache サポートのキャッシュ設定ドキュメントを更新しました：<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache"> デフォルトのキャッシュにRedisを使用する</a> — ZendおよびSymfony Cache実装用のタブ付きコンテンツをパフォーマンスの最適化に追加しました。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache"> デフォルトのキャッシュにValkeyを使用する</a> — ZendおよびSymfony Cache実装実装用のパフォーマンスパフォーマンスを最適化に追加しました。<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/uct">-<br />-&lbrace;111112 キャッシュ &lbrace;122 キャッシュ {12222222222最新2} — SymfonyがをSymfonyをしました。古いキャッシュをサポートするL2 キャッシュ実装（<code class="language-plaintext highlighter-rouge">symfony_l2</code> バックエンド）です。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/cache-options"> キャッシュオプション </a> — Zend ベースとSymfony Cache バックエンドを比較する実装オプションを追加しました。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/cache-types"> キャッシュタイプ </a> – 最新のSymfony Cache バックエンドタイプへの参照を追加しました。<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/level-two-cache"></a></p>
+      <td><p>v2.4.9用に<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/packages/adobe-commerce"> パッケージ </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises">bin/magento</a>および<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions">必要なPHP拡張機能</a>を更新しました。<br /> セキュリティパッチリリースノート（2.4.4、2.4.5、2.4.6、2.4.7、2.4.8、2.4.8）を更新し、<a href="https://helpx.adobe.com/jp/security/products/magento/apsb26-49.html">Adobe セキュリティ情報APSB26-49</a>を参照し、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8 パッチ </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2&rbrace;の2&rbrace;新2&rbrace; プラットフォームのの新機能のハイライトををドキュメントをしました<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6 パッチ </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5 パッチ </a>、および<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4 パッチ </a>。</a><br />GA修正された問題データを含む<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9 リリースノート </a>および<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Magento Open Source 2.4.9 リリースノート </a>を更新し、2.4.9 リリースに合わせたパスを含めました（ベータ版の修正済み問題ソースに置き換えます）。<br />GAの<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9 リリースノート </a>および<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Magento Open Source 2.4.9 リリースノート </a>のハイライト節を更新しました。<br />2.10&rbrace;最新111111&rbrace;2.9.9, セキュリティパッチ 2.9, セキュリティパッチ 2.9, オンプレミス 122, オンプレミス 1222222222200000000000000000000000000000000<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements"></a><br />UCT CLI リファレンス </a>をバージョン 3.0.27に更新しました。<br />Commerce 2.4.9 Symfony Cache サポートのキャッシュ設定ドキュメントを更新しました：<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache"> デフォルトのキャッシュにRedisを使用する</a> — ZendおよびSymfony Cache実装用のタブ付きコンテンツをパフォーマンスの最適化に追加しました。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache"> デフォルトのキャッシュにValkeyを使用する</a> — ZendおよびSymfony Cache実装実装用のパフォーマンスパフォーマンスを最適化に追加しました。<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/uct">-<br />-&lbrace;111112 キャッシュ &lbrace;122 キャッシュ {12222222222最新2} — SymfonyがをSymfonyをしました。古いキャッシュをサポートするL2 キャッシュ実装（<code class="language-plaintext highlighter-rouge">symfony_l2</code> バックエンド）です。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/cache-options"> キャッシュオプション </a> — Zend ベースとSymfony Cache バックエンドを比較する実装オプションを追加しました。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/cache-types"> キャッシュタイプ </a> – 最新のSymfony Cache バックエンドタイプへの参照を追加しました。<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/level-two-cache"></a></p>
 </td>
       <td>
         メジャーアップデート
@@ -497,72 +557,6 @@ ht-degree: 0%
         技術的、フィードバック
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c96e5b397a2ffee8fadaf638e721799b40d320d3">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月19日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69319">ACSD-69319のQPT 1.1.76修正に関する詳細な説明を追加しました。子製品がカスタムソースの下に在庫を持っていた場合、バンドル価格が適切にインデックス化されませんでした</a>。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7646d46e37385cf0a2bfbee6de82410ca54629a1">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月18日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69086">ACSD-69086のQPT 1.1.76修正に関する詳細な説明を追加しました。サポートされていないデータベース バージョン チェック </a>により、MariaDB 10.11でインストールが失敗しました。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/016d24d990492d009677c218b253ae88c21634e6">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月17日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69331">ACSD-69331のQPT 1.1.76修正に関する詳細な説明を追加しました：メディアギャラリーのコンテンツ作成者は、<code class="language-plaintext highlighter-rouge">create_folder</code>権限のみを持つフォルダーを作成できませんでした。 修正後、期待どおりにフォルダーを作成できます</a>。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/40a14de0a67a0c373dcbb497f1893a98322435b3">コミット</a></td>
     </tr>
   </tbody>
 </table>
