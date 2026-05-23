@@ -2,7 +2,7 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できるさまざまなツール、その用途、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 535c5a6de142008bccd2d5883a9b680c77914264
+source-git-commit: 891f738f4a3db4e361984d11585f3679068c8ced
 workflow-type: tm+mt
 source-wordcount: '9978'
 ht-degree: 0%
@@ -28,10 +28,10 @@ ht-degree: 0%
    - [パッチ](site-wide-analysis-tool/patches.md)
 - キャップ {#caps-tool}
    - {hide-from-toc}[はじめに](caps-tool/intro.md)
-   - {hide-from-toc}[&#x200B; アクセス &#x200B;](caps-tool/access.md)
-   - {hide-from-toc}[&#x200B; ワークフロー](caps-tool/workflow.md)
-   - {hide-from-toc}[&#x200B; ベストプラクティス &#x200B;](caps-tool/best-practices.md)
-   - {hide-from-toc}[&#x200B; トラブルシューティング &#x200B;](caps-tool/troubleshooting.md)
+   - {hide-from-toc}[ アクセス ](caps-tool/access.md)
+   - {hide-from-toc}[ ワークフロー](caps-tool/workflow.md)
+   - {hide-from-toc}[ ベストプラクティス ](caps-tool/best-practices.md)
+   - {hide-from-toc}[ トラブルシューティング ](caps-tool/troubleshooting.md)
 - Adobe Commerceのアラートの管理 {#managed-alerts-for-adobe-commerce}
    - [Adobe Commerceのアラートを管理： [!DNL Redis]  メモリ クリティカル アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
    - [Adobe Commerceの管理アラート：ディスクの警告アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
@@ -47,7 +47,7 @@ ht-degree: 0%
    - [Adobe Commerceの管理されたアラート：CPUの警告アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 品質パッチツール {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]：品質パッチ用のセルフサービスツール](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}
+   - [[!DNL Quality Patches Tool]: パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [使用状況](quality-patches-tool/usage.md)
    - [リリースノート](quality-patches-tool/release-notes.md)
    - 品質パッチツールで使用可能なパッチ {#patches-available-in-qpt}
@@ -371,7 +371,7 @@ ht-degree: 0%
       - v1.1.30 {#v1-1-30}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.30](quality-patches-tool/patches-available-in-qpt/v1-1-30/overview.md)
          - [ACSD-50367：顧客アドレスの書き出しが機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50367-customer-address-export-does-not-work.md)
-         - [BB2B-2598:storeConfig、通貨、国、国、利用可能なStores GraphQl クエリにキャッシュ機能を追加](quality-patches-tool/patches-available-in-qpt/v1-1-30/bb2b-2598-add-caching-capability.md)
+         - [B2B-2598:storeConfig、通貨、国、国、利用可能なStores GraphQl クエリにキャッシュ機能を追加](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2598-add-caching-capability.md)
          - [B2B-2674:customAttributeMetadata GraphQL クエリにキャッシュ機能を追加](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2674-add-caching-capability.md)
          - [ACSD-49973: [!DNL GraphQL]を介したバンドル製品の取得時のパフォーマンスが向上しました](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-49973-improved-performance-fetching-bundled-products-via-graphql.md)
          - [ACSD-50116：管理者ユーザーがURLの書き換えを作成できない](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50116-admin-user-cannot-create-a-url-rewrite.md)
@@ -895,8 +895,8 @@ ht-degree: 0%
          - [ACSD-67603：画像インクルージョンが有効になっている製品のサイトマップ生成時に長い処理時間](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
          - [ACSD-67093：日付範囲フィルターを使用してGraphQLで注文を取得すると、誤った結果が返される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67093.md)
          - [ACSD-67652:GraphQLの通話で在庫切れとして返された商品ステータスをバンドルし、子と親の商品の在庫を保持する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652.md)
-         - [ACSD-60624: [!DNL Page Builder]の画像、バナー、スライダーのセクションで、空のコンテンツのアップロードに失敗しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
-         - [ACSD-67904：市区町村名に数字（0-9）、アンパサンド（&amp;）、ピリオド（。）、括弧（） が含まれている場合、注文を行えません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
+         - [ACSD-60624: [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)の画像、バナー、スライダーのセクションで、空のコンテンツのアップロードに失敗しました
+         - [ACSD-67904：市区町村名に数字（0-9）、アンパサンド（&amp;）、ピリオド（。）、括弧（） ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)が含まれている場合、注文を行えません
          - [ACSD-67459: 65,536文字を超える説明を含む製品を読み込めない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
@@ -1008,7 +1008,7 @@ ht-degree: 0%
    - [フォーカスタブの選択](observation-for-adobe-commerce/choosing-focus-tabs.md)
    - [「概要」タブ](observation-for-adobe-commerce/summary.md)
    - [「Elasticsearch」タブ](observation-for-adobe-commerce/elasticsearch.md)
-   - [Redis タブ &#x200B;](observation-for-adobe-commerce/redis-tab.md)
+   - [Redis タブ ](observation-for-adobe-commerce/redis-tab.md)
    - [「MySQL」タブ](observation-for-adobe-commerce/mysql-tab.md)
    - [「PHP」タブ](observation-for-adobe-commerce/php-tab.md)
    - [「ボット」タブ](observation-for-adobe-commerce/bots.md)
@@ -1020,7 +1020,7 @@ ht-degree: 0%
    - [「Cron」タブ](observation-for-adobe-commerce/cron-tab.md)
    - [「索引付け」タブ](observation-for-adobe-commerce/indexing-tab.md)
    - [「QuickView」タブ](observation-for-adobe-commerce/oac-quickview-tab.md)
-   - [&#x200B; セキュリティ タブ &#x200B;](observation-for-adobe-commerce/security-tab.md)
+   - [ セキュリティ タブ ](observation-for-adobe-commerce/security-tab.md)
    - [「インフラ」タブ](observation-for-adobe-commerce/oac-infra.md)
    - [Adobe CommerceでのObservationの使用方法](observation-for-adobe-commerce/how-to-use.md)
 - データ移行ツール {#data-migration}
@@ -1044,6 +1044,6 @@ ht-degree: 0%
       - [手作業による移行が必要なデータ](data-migration-tool/migrate-data/manual.md)
       - [データ移行後の手順](data-migration-tool/migrate-data/post-migration.md)
    - リソース {#resources}
-      - [トラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=ja)
+      - [トラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [変更ログ](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
+- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
