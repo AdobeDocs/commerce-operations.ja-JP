@@ -2,7 +2,7 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できるさまざまなツール、その用途、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 535c5a6de142008bccd2d5883a9b680c77914264
+source-git-commit: 891f738f4a3db4e361984d11585f3679068c8ced
 workflow-type: tm+mt
 source-wordcount: '9978'
 ht-degree: 0%
@@ -371,7 +371,7 @@ ht-degree: 0%
       - v1.1.30 {#v1-1-30}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.30](quality-patches-tool/patches-available-in-qpt/v1-1-30/overview.md)
          - [ACSD-50367：顧客アドレスの書き出しが機能しない](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50367-customer-address-export-does-not-work.md)
-         - [BB2B-2598:storeConfig、通貨、国、国、利用可能なStores GraphQl クエリにキャッシュ機能を追加](quality-patches-tool/patches-available-in-qpt/v1-1-30/bb2b-2598-add-caching-capability.md)
+         - [B2B-2598:storeConfig、通貨、国、国、利用可能なStores GraphQl クエリにキャッシュ機能を追加](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2598-add-caching-capability.md)
          - [B2B-2674:customAttributeMetadata GraphQL クエリにキャッシュ機能を追加](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2674-add-caching-capability.md)
          - [ACSD-49973: [!DNL GraphQL]を介したバンドル製品の取得時のパフォーマンスが向上しました](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-49973-improved-performance-fetching-bundled-products-via-graphql.md)
          - [ACSD-50116：管理者ユーザーがURLの書き換えを作成できない](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50116-admin-user-cannot-create-a-url-rewrite.md)
