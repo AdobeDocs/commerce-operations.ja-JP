@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> ライブサーチ、カタログサービス、商品レコメンデーションを使用しているAdobe Commerceのマーチャントには、[SaaS ベースの価格インデックス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing)を使用するオプションがあります。
+> ライブサーチ、カタログサービス、商品レコメンデーションを使用しているAdobe Commerceのマーチャントには、[SaaS ベースの価格インデックス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/price-indexer/price-indexing)を使用するオプションがあります。
 
 ## インデクサーステータスの表示
 
@@ -269,11 +269,11 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8以降**: [!DNL Customer Grid] インデクサーは[!UICONTROL Update on Save]と[!UICONTROL Update by Schedule] モードの両方をサポートし、デフォルトは[!UICONTROL Update by Schedule]です。
 >
->_実装プレイブック_&#x200B;の「[&#x200B; インデクサー設定のベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration)」を参照してください。
+>_実装プレイブック_&#x200B;の「[&#x200B; インデクサー設定のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration)」を参照してください。
 
 >[!INFO]
 >
->インデクサーモードを切り替える前に、web サイトを[&#x200B; メンテナンス &#x200B;](../../installation/tutorials/maintenance-mode.md) モードに設定し、[cron ジョブを無効にします](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)。 これにより、データベースのロックが発生しないようにします。
+>インデクサーモードを切り替える前に、web サイトを[&#x200B; メンテナンス &#x200B;](../../installation/tutorials/maintenance-mode.md) モードに設定し、[cron ジョブを無効にします](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)。 これにより、データベースのロックが発生しないようにします。
 
 インデクサー設定を指定するには：
 
