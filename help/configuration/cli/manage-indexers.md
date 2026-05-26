@@ -2,7 +2,7 @@
 title: インデクサーの管理
 description: コマンドラインツールを使用して、Adobe Commerce インデクサーを表示および管理する方法について説明します。 インデクサーコマンド、ステータスチェック、およびインデックス再作成のテクニックを確認します。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: ed21cbaf145493614d274da6eee41f6b1ae39ff2
+source-git-commit: 2c221ccf793a0b469fc6984b443699c30a6064ce
 workflow-type: tm+mt
 source-wordcount: '1025'
 ht-degree: 0%
@@ -188,7 +188,7 @@ MAGE_INDEXER_THREADS_COUNT=3 php -f bin/magento indexer:reindex catalogsearch_fu
 bin/magento indexer:reset [indexer]
 ```
 
-ここで、```[indexer]```はスペース区切りのインデクサーのリストです。 すべてのインデクサーを無効にするには、`[indexer]`を省略します。
+ここで、`[indexer]`はスペース区切りのインデクサーのリストです。 すべてのインデクサーを無効にするには、`[indexer]`を省略します。
 
 結果の例：
 

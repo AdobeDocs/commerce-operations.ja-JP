@@ -3,7 +3,7 @@ title: リリースノート
 description: Adobe Commerceで使用可能なパッチと、それらのパッチで解決される問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 5b81bd7baa4b00a9100c3e01a20a2b0189b85f92
+source-git-commit: 26f4a5c5a23e3df9448898b57495e60e2e51133a
 workflow-type: tm+mt
 source-wordcount: '30379'
 ht-degree: 0%
@@ -745,7 +745,7 @@ ht-degree: 0%
 * **ACSD-51792** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.5 &lt;2.4.6） - [!DNL Google Tag Manager] 4が有効になっている場合に、ページにインプレッションイベントが表示されない問題を修正します。
 * **ACSD-51471** （Adobe Commerce >=2.4.3 &lt;2.4.7の場合） – 管理者ユーザーが、自身がスケジュールされた更新を持つシンプルな製品を使用するバンドル製品のスケジュールされた更新を保存できない問題を修正します。
 * **ACSD-51700** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.3 &lt;2.4.7） – 管理画面でダウンロード可能な商品編集ページでストアビューを切り替える際に発生するエラーを修正します。
-* **ACSD-51120** （Adobe Commerce >=2.3.7 &lt;2.4.3の場合） – ステージング更新で更新されるCMS ブロックを含むCMS ページで、GraphQL GETのキャッシュがクリアされない問題を修正します。
+* **ACSD-51120** （Adobe Commerce >=2.3.7 &lt;2.4.3の場合） – ステージング更新で更新されるCMS ブロックを含むCMS ページで、GraphQL GET リクエストのキャッシュがクリアされない問題を修正します。
 * **ACSD-51240** （Adobe Commerce >=2.4.4 &lt;2.4.6）は、会社登録フォームを使用して登録を行った場合に、アップロードされたファイルが見つからない問題を修正します。
 * **ACSD-51907** （Adobe Commerce >=2.4.2 &lt;2.4.3の場合） – 制限付き管理者ユーザーがオフライン払い戻しを含むクレジットメモを作成できない問題を修正します。
 * **ACSD-52148** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.0 &lt;2.4.4） - [!DNL Google V3 reCAPTCHA]管理者ログインが失敗する問題を修正します。
@@ -938,7 +938,7 @@ ht-degree: 0%
 * **ACSD-44851** （*for Adobe Commerce and Magento Open Source >=2.4.0 &lt;2.4.6*） – サブカテゴリを持つカテゴリを開いたり展開したりできない問題を修正します。
 * **ACSD-46815** （*Adobe CommerceおよびMagento Open Source >=2.4.5 &lt;2.4.6*）は、カテゴリツリーのリクエストが20 カテゴリに制限される問題を修正します。
 * **ACSD-45675** （*Adobe CommerceおよびMagento Open Sourceの場合>=2.4.0 &lt;2.4.6*） – 商品エクスポートで&#x200B;*デフォルトストアビュー* スコープのカテゴリ名が使用される問題を修正します。
-* **ACSD-46869** （*Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.6*） - *PUT REST API* リクエストでカート内の設定可能な商品が商品数量を変更せずに更新されない問題を修正します。
+* **ACSD-46869** （*Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.6*） – カート内の設定可能な商品が&#x200B;*PUT REST API* リクエストを通じて更新されない場合に、商品数量を変更しない問題を修正します。
 * **MDVA-42768-V2** （*Adobe CommerceおよびMagento Open Source >=2.4.2 &lt;2.4.3*） - *在庫切れを表示*&#x200B;が&#x200B;*であるときに、コンフィグ可能な商品が正規価格を* 0 *として表示する問題を修正します。*
 * 更新されたパッチ：MDVA-44562、ACSD-46213、MDVA-41305、MDVA-38346、MDVA-13203。
 * 非推奨パッチ：MDVA-42768.
@@ -991,7 +991,7 @@ ht-degree: 0%
 * **MDVA-40961** （*Adobe CommerceおよびMagento Open Sourceの場合>=2.4.3 &lt;2.4.4*） – 商品の最小数量が既にカートに入っている場合に、追加商品をカートに追加できない問題を修正します。
 * **MDVA-44887** （*Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.5*） - Admin パネルで&#x200B;*Uncaught SyntaxError: Unexpected token &#39;const&#39;* エラーが修正されました。
 * **MDVA-43718** （*Adobe CommerceおよびMagento Open Sourceの場合>=2.3.0 &lt;2.4.5*） - *コンシューマーが%resourcesにアクセスする権限を持っていません。* カスタム統合から共有カタログにアクセスする際に表示されるエラー。
-* **MDVA-44660** （*Adobe CommerceおよびMagento Open Sourceの場合>=2.4.2-p1 &lt;2.4.5*） – お客様の姓と名に重大なアクセント文字``` ` ```を使用できない問題を修正しました。
+* **MDVA-44660** （*Adobe CommerceおよびMagento Open Sourceの場合>=2.4.2-p1 &lt;2.4.5*） – お客様の姓と名に重大なアクセント文字（\&#39;）を使用できない問題を修正しました。
 * **MDVA-40896** （*Adobe CommerceおよびMagento Open Sourceの場合>=2.4.3 &lt;2.4.4*） – 非同期製品の一括APIで&#x200B;*Error: TypeError: Argument 3がMagento*&#x200B;に渡されるエラーを修正します。
 * **MDVA-38559** （*Adobe CommerceおよびMagento Open Sourceの場合>=2.4.0 &lt;2.4.3*） - 1つ以上のサブスクリプションを持つお客様の&#x200B;*/V1/customers/search API* エラーを修正します。
 * **MDVA-44533** （*Adobe CommerceおよびMagento Open Sourceの場合>=2.3.1 &lt;2.4.4*） – バンドル子商品に誤って割引が適用される問題を修正します。
@@ -1373,7 +1373,7 @@ ht-degree: 0%
 * **MDVA-31242** （*for Adobe Commerce >=2.3.0 &lt;2.4.1 with B2B extension*） – クレジットメモのグリッドに間違った通貨記号が表示される問題を修正します。
 * **MDVA-31295** （*for Adobe Commerce >=2.3.0 &lt;2.4.2*） – 部分的な注文が完了し、アイテムに課税されたときに報酬ポイントが計算されない問題を修正します。
 * **MDVA-30112** （*for Adobe Commerce >=2.3.4 &lt;2.4.2*） – 注文数が&#x200B;*bunch-size*&#x200B;の値を超えた場合、Adobe Commerceは&#x200B;*保留中*&#x200B;の状態の注文を不整合と見なす問題を修正します。
-* **MDVA-31150** （*for Adobe Commerce >=2.3.0 &lt;2.4.2*） – 請求書がRest API呼び出しによって転記され、注文が店舗のクレジットカードおよびギフトカードのアカウントによって部分的に支払われた場合に、店舗のクレジットとギフトカードの残高がGET Invoice Rest API呼び出しによって返されない問題を修正しました。
+* **MDVA-31150** （*for Adobe Commerce >=2.3.0 &lt;2.4.2*） – 請求書がRest API呼び出しによって転記され、注文が店舗のクレジットカードおよびギフトカードのアカウントによって部分的に支払われた場合に、GET Invoice Rest API呼び出しによって店舗のクレジットとギフトカードの残高が返されない問題を修正しました。
 * **MDVA-30963** （*for Adobe Commerce >=2.3.2 &lt;2.4.2*） – 製品フィルターの結果が、Adminの&#x200B;*すべてのストアビュー* スコープに指定された値のみを含むように設定され、ストアビューレベルで上書きされた値を含む製品が含まれる問題を修正します。
 * **MDVA-29954** （*for Adobe Commerce >=2.3.0 &lt;2.3.6 || 2.4.0 || 2.4.2 with B2B extension*） - *新規会社登録リクエスト*&#x200B;と&#x200B;*会社にリンクされたときに誤ったアドレスからメールが送信される問題を修正します*。
 * **MDVA-28357** （*for Adobe Commerce >=2.3.2 &lt;2.3.6 || >=2.4.0 &lt;2.4.1*） – 標準アナライザーをカスタムアナライザーに置き換え、[!DNL ElasticSearch] インデックスのSKU フィールドのキーワードトークンを使用して、ワイルドカード検索クエリをハイフン （「 – 」）を含むSKUで動作させます。
