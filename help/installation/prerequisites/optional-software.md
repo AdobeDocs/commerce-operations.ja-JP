@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Network Time Protocol （NTP）のインストールと設定
 
-[NTP](https://www.ntp.org/)を使用すると、サーバーは[ グローバルに利用可能なプールサーバー](https://www.ntppool.org/en/)を使用してシステムクロックを同期できます。 信頼できるNTP サーバーは、専用のハードウェアソリューションであるか、内部ネットワークまたは外部のパブリックサーバーであるかを問わず、使用することをお勧めします。
+[NTP](https://www.ntp.org/)を使用すると、サーバーは[&#x200B; グローバルに利用可能なプールサーバー](https://www.ntppool.org/en/)を使用してシステムクロックを同期できます。 信頼できるNTP サーバーは、専用のハードウェアソリューションであるか、内部ネットワークまたは外部のパブリックサーバーであるかを問わず、使用することをお勧めします。
 
 複数のホストにAdobe Commerceをデプロイする場合、NTPは、サーバーがどのタイムゾーンにあっても、すべてのクロックが同期されていることを保証する簡単な方法です。 また、cron関連のタスク（インデックス作成やトランザクションメールなど）は、サーバークロックの精度に依存します。
 
@@ -59,7 +59,7 @@ NTPをインストールして設定するには：
 
 ### NTP プールサーバーの使用
 
-プールサーバーの選択は自分の責任です。 NTP プールサーバーを使用する場合、ntp.orgでは、[NTP プールプロジェクトページ ](https://www.ntppool.org/en/use.html)で説明されているように、サーバーのタイムゾーンに近い[ プールサーバー](https://www.ntppool.org/en/)を使用することをお勧めします。 デプロイメント内のすべてのホストで利用可能なプライベート NTP サーバーがある場合は、代わりにそのサーバーを使用できます。
+プールサーバーの選択は自分の責任です。 NTP プールサーバーを使用する場合、ntp.orgでは、[NTP プールプロジェクトページ &#x200B;](https://www.ntppool.org/en/use.html)で説明されているように、サーバーのタイムゾーンに近い[&#x200B; プールサーバー](https://www.ntppool.org/en/)を使用することをお勧めします。 デプロイメント内のすべてのホストで利用可能なプライベート NTP サーバーがある場合は、代わりにそのサーバーを使用できます。
 
 1. `/etc/ntp.conf`をテキストエディターで開きます。
 
@@ -113,7 +113,7 @@ Web サーバーのdocroot内の任意の場所に次のコードを追加しま
 phpinfo();
 ```
 
-詳しくは、[phpinfoのマニュアルページ ](https://www.php.net/manual/en/function.phpinfo.php)を参照してください。
+詳しくは、[phpinfoのマニュアルページ &#x200B;](https://www.php.net/manual/en/function.phpinfo.php)を参照してください。
 
 結果を表示するには、ブラウザーの場所または住所フィールドに次のURLを入力します。
 
@@ -134,9 +134,9 @@ http://<web server host or IP>/phpinfo.php
 
 phpMyAdmin アプリケーションは、使いやすい無料のデータベース管理ユーティリティです。 データベースの内容を確認および操作するために使用できます。 phpMyAdminにMySQL データベース管理ユーザーとしてログインする必要があります。
 
-phpMyAdminについて詳しくは、[phpMyAdmin ホームページ ](https://www.phpmyadmin.net/)を参照してください。
+phpMyAdminについて詳しくは、[phpMyAdmin ホームページ &#x200B;](https://www.phpmyadmin.net/)を参照してください。
 
-インストールについて詳しくは、[phpMyAdmin インストールドキュメント ](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install)を参照してください。
+インストールについて詳しくは、[phpMyAdmin インストールドキュメント &#x200B;](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install)を参照してください。
 
 >[!NOTE]
 >
