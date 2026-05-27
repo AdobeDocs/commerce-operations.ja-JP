@@ -1,66 +1,66 @@
 ---
-title: '表示が制限されたプライベート共有カタログの ACSD-61895: [!DNL GraphQL] categories クエリが失敗する'
-description: '同じカテゴリに対して制限付きのプライベート共有カタログが作成された場合、（許可されたすべてのカテゴリを含むパブリック共有カタログを使用して）ゲスト顧客の応答がカテゴリを返さないAdobe Commerceの問題を修正するために ACSD-61895 パッチを適用します  [!DNL GraphQL] '
+title: 'ACSD-61895: [!DNL GraphQL]  カテゴリのクエリが、表示が制限されたプライベート共有カタログに対して失敗します'
+description: ACSD-61895 パッチを適用して、同じカテゴリに対して制限を持つプライベート共有カタログが作成された場合、ゲストのお客様に対する [!DNL GraphQL] 応答が（許可されたすべてのカテゴリを含むパブリック共有カタログを使用して）カテゴリを返さないAdobe Commerceの問題を修正します。
 feature: Categories, GraphQL, Roles/Permissions
 role: Admin, Developer
 exl-id: ef986fa6-e8bc-4322-80f2-fa0c5d5e8d40
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
-# ACSD-61895：表示が制限されたプライベート共有カタログの [!DNL GraphQL] `categories` クエリが失敗する
+# ACSD-61895: [!DNL GraphQL] `categories` クエリが、ビューが制限されたプライベート共有カタログに対して失敗します
 
-ACSD-61895 パッチは、同じカテゴリに対して制限を持つプライベート共有カタログが作成された場合に、ゲスト顧客の [!DNL GraphQL] 応答（許可されたすべてのカテゴリを含むパブリック共有カタログを使用）がカテゴリを返さなかった問題を修正します。
+ACSD-61895 パッチでは、同じカテゴリに制限を持つプライベート共有カタログが作成されたときに、ゲスト顧客に対する[!DNL GraphQL]件の応答（許可されているすべてのカテゴリを含むパブリック共有カタログを使用）がカテゴリを返さない問題を修正します。
 
-修正後、ルートカテゴリがプライベート共有カタログのスコープ内で許可する権限を持っていない場合でも、ゲストユーザーのすべてのカテゴリと許可する権限（パブリック共有カタログ）が返されます。
+修正の後、ルートカテゴリがプライベート共有カタログの範囲で許可アクセス権を持っていない場合でも、ゲストユーザーに対する許可アクセス権（パブリック共有カタログ）を持つすべてのカテゴリが返されます。
 
-このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 がインストールされている場合に使用できます。 パッチ ID は ACSD-61895 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57がインストールされている場合に利用できます。 パッチ IDはACSD-61895です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-同じカテゴリに対して制限を持つプライベート共有カタログを作成する場合、ゲスト顧客の [!DNL GraphQL] 応答（許可されたすべてのカテゴリを含むパブリック共有カタログを使用）では、カテゴリは返されません。
+同じカテゴリに対して制限を持つプライベート共有カタログを作成する場合、ゲスト顧客に対する[!DNL GraphQL]件の応答（許可されているすべてのカテゴリを含むパブリック共有カタログを使用）は、カテゴリを返しません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. B2B とサンプルデータを使用してAdobe Commerceをインストールする
-1. B2B 機能が有効になっていることを確認します。
-1. 2 つの共有カタログ（1 つのパブリックと 1 つのプライベート）を作成します。
+1. B2Bおよびサンプルデータを含むAdobe Commerceをインストールします。
+1. B2B機能が有効になっていることを確認します。
+1. 2つの共有カタログを作成します。1つはパブリックで、1つはプライベートです。
 
-   * 公開共有カタログ :
+   * パブリック共有カタログ：
 
-      * すべてのカテゴリを公開カタログに割り当てます。
+      * すべてのカテゴリをパブリックカタログに割り当てます。
 
    * プライベート共有カタログ：
 
-      * `Gear` カテゴリとその子カテゴリのみをプライベート カタログに割り当てます。
-      * プライベートカタログをテスト会社に割り当てます。
+      * `Gear` カテゴリとその子カテゴリのみをプライベートカタログに割り当てます。
+      * テスト会社にプライベートカタログを割り当てます。
 
-1. 会社ユーザーを作成します。
+1. 会社ユーザーの作成：
 
    * プライベート共有カタログにリンクされたテスト会社に関連付けられたユーザーを作成します。
-   * ユーザーが、ログインしたときに、フロントエンドの `Gear` カテゴリとその子カテゴリにのみアクセスできることを確認します。
+   * ユーザーがログイン時にフロントエンドで`Gear` カテゴリとその子カテゴリにのみアクセスできることを確認します。
 
-1. API を使用してカテゴリをクエリします。
+1. API経由でカテゴリをクエリする：
 
-   * API クライアントを使用して、顧客トークンなしで次の [!DNL GraphQL] クエリを実行します。
+   * API クライアントを使用して、顧客トークンなしで次の[!DNL GraphQL] クエリを実行します。
 
    ```graphql
    query Categories { 
@@ -85,28 +85,28 @@ ACSD-61895 パッチは、同じカテゴリに対して制限を持つプライ
 1. 次に、顧客トークンを使用してカテゴリをクエリします。
 
    * テスト会社ユーザーとしてログインします。
-   * 同じ [!DNL GraphQL] カテゴリクエリを実行し、ログインユーザーの顧客トークンを含めます。
+   * 同じ[!DNL GraphQL] カテゴリ クエリを実行しますが、ログイン ユーザーの顧客トークンを含めます。
    * 応答を監視し、`Gear` カテゴリとその子カテゴリのみが返されるかどうかを確認します。
 
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-ゲストの会社ユーザーとしてクエリを実行する場合は、すべてのカテゴリが（期待どおりに）返されます。
+ゲスト企業ユーザーとしてクエリを実行する場合は、すべてのカテゴリを（想定どおりに）返す必要があります。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-`categories` クエリからの応答にカテゴリが表示されません。
+`categories` クエリからの応答にカテゴリが表示されていません。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。
