@@ -4,7 +4,7 @@ description: このサブセクションでは、 [!DNL Quality Patches Tool]  �
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 36e8242f67e80504118e36574cfe4d3b799b849c
+source-git-commit: f19aeff354345c1635c7f692671c24118551a707
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
