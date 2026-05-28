@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できるさまざまなツール、その用途、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 36e8242f67e80504118e36574cfe4d3b799b849c
+source-git-commit: b5c120d34b84229c006fbeb9ba8d0f93f558aec1
 workflow-type: tm+mt
-source-wordcount: '10059'
+source-wordcount: '10074'
 ht-degree: 0%
 
 ---
@@ -423,7 +423,7 @@ ht-degree: 0%
          - [ACSD-50512：ダウンロード可能な製品ステージング更新プログラムの開始日を更新する際にエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50512-error-when-updating-the-start-date-for-a-downloadable-product-staging-update.md)
          - [ACSD-50895: Google Analytics 4 GTMが設定されていない場合、Google Analytics 3 GTM タグが実行されない](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
          - [ACSD-51471：管理者ユーザーがバンドル製品のスケジュールされた更新を保存できない](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51471-admin-user-cannot-save-scheduled-update-for-bundled-product.md)
-         - [ACSD-51120: GraphQL ブロックを含むCMS ページで、CMS GET リクエストのキャッシュがクリアされない](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
+         - [ACSD-51120: GraphQL ブロックを含むCMS ページに対して、CMS GETのキャッシュがクリアされない](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
          - [ACSD-51700：ダウンロード可能な製品編集ページでストアビューの切り替えエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
          - [ACSD-51735：商品在庫が0の場合、注文品目のステータスが[!UICONTROL Ordered]に誤って設定される](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
          - [ACSD-51497: ドロップダウン型のカスタム属性でカタログページを並べ替えられない](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
@@ -900,7 +900,7 @@ ht-degree: 0%
          - [ACSD-67459: 65,536文字を超える説明を含む製品を読み込めない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
-         - [ACSD-67424: GET /carts/search REST API responseのupdated_at値が[!UICONTROL Negotiable Quotes]の[!UICONTROL Admin Panel]の値と一致しません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
+         - [ACSD-67424: GET /carts/search REST API応答のupdated_at値が[!UICONTROL Negotiable Quotes]の[!UICONTROL Admin Panel]の値と一致しません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
          - [ACSD-67383：同じセッションで2つの会社管理者アカウントを持つ顧客としてログインする際にエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383.md)
          - [ACSD-68064：詳細なネストされたカテゴリを持つ環境で、スケジュールされた更新中に作成されたエントリを複製する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064.md)
          - [ACSD-67946：買い物かごの更新で重複したエラーバナーが表示される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946.md)
@@ -972,6 +972,7 @@ ht-degree: 0%
          - [ACSD-68341:PDPの読み込み時に複数のX-Magento-Vary Cookieの更新が発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
       - v1.1.78 {#v1-1-78}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
+         - [ACP2E-4528：顧客アドレス市区町村の検証で、スラッシュ（/）や無効な文字（!、&quot;、#、?）が処理されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528.md)
          - [ACP2E-4628:Account SharingがGlobalに設定されている場合、大文字のメールアドレスを持つトリガーを読み込むと、未定義の配列キーエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4628.md)
          - [ACSD-60989：宣言型スキーマを使用して外部キーを持つ列を変更すると、 [!DNL MariaDB]にエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acsd-60989.md)
          - [ACP2E-4763: GraphQL customerOrders クエリは、膨らんだoriginal_price_including_taxおよびoriginal_row_total_including_taxを返します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4763.md)
