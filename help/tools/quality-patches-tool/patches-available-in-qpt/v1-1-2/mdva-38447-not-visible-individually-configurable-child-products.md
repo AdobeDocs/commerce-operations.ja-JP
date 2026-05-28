@@ -1,101 +1,101 @@
 ---
-title: MDVA-38447：設定可能な子商品がGraphQL応答で返され、MySQL クエリが遅い
-description: MDVA-38447 Adobe Commerce パッチでは、「Not visible individually （個別に表示されない）」設定可能な子商品がGraphQL レスポンスで返され、カテゴリフィルターを使用したGraphQL商品クエリで MySQL の処理に時間がかかる問題を修正しました。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.2 がインストールされている場合に利用できます。 パッチ ID は MDVA-38447。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+title: MDVA-38447：設定可能な子プロダクトがGraphQLのレスポンスで返され、MySQL クエリが遅くなる
+description: MDVA-38447 Adobe Commerce パッチでは、GraphQLのレスポンスで設定可能な子製品が「個別に表示されない」と返され、カテゴリーフィルターを使用したGraphQL製品クエリのMySQL クエリが遅くなる問題が修正されました。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.2がインストールされている場合に利用できます。 パッチ IDはMDVA-38447です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 feature: B2B, GraphQL, Categories, Configuration, Products, Services
 role: Admin
 exl-id: d97297c5-e8e8-407b-b43b-033937426fe2
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
 
-# MDVA-38447：設定可能な子商品がGraphQL応答で返され、MySQL クエリが遅い
+# MDVA-38447：設定可能な子プロダクトがGraphQLのレスポンスで返され、MySQL クエリが遅くなる
 
-MDVA-38447 Adobe Commerce パッチでは、「Not visible individually （個別に表示されない）」設定可能な子商品がGraphQL レスポンスで返され、カテゴリフィルターを使用したGraphQL商品クエリで MySQL の処理に時間がかかる問題を修正しました。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.2 がインストールされている場合に使用できます。 パッチ ID は MDVA-38447。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+MDVA-38447 Adobe Commerce パッチでは、GraphQLのレスポンスで設定可能な子製品が「個別に表示されない」と返され、カテゴリーフィルターを使用したGraphQL製品クエリのMySQL クエリが遅くなる問題が修正されました。 このパッチは、[品質パッチツール （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2がインストールされている場合に使用できます。 パッチ IDはMDVA-38447です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 ～ 2.4.3
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 - 2.4.3
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-「個別に表示されない」設定可能な子商品がGraphQL応答で返され、カテゴリフィルターを使用したGraphQL商品クエリの低速な MySQL クエリが返されます。
+「個別に表示されない」設定可能な子商品は、GraphQLのレスポンスで返され、カテゴリーフィルターを使用したGraphQL商品クエリのMySQL クエリが遅くなります。
 
-<u> 前提条件 </u>:
+<u>前提条件</u>:
 
 B2B モジュールをインストールする必要があります。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. シンプルな製品を「**個別には表示されない** に設定して、設定可能な製品を作成します。
-1. **full reindex** を実行します。
-1. 次のような **GraphQL クエリ** 実行します。
+1. **個別に表示されない**&#x200B;に設定されたシンプルな製品を使用して、設定可能な製品を作成します。
+1. **完全なインデックス**&#x200B;を実行します。
+1. 次のように&#x200B;**GraphQL クエリ**&#x200B;を実行します。
 
-<pre>getfilteredProducts （
+<pre>クエリ getFilteredProducts （
   $filter: ProductAttributeFilterInput!
   $sort: ProductAttributeSortInput!
   $search：文字列
   $pageSize: Int!
   $currentPage: Int!
-） &lbrace;
+) {
   products （
-    フィルター：$filter
-    並べ替え：$sort
-    検索：$search
+    filter: $filter
+    sort: $sort
+    search: $search
     pageSize: $pageSize
     currentPage: $currentPage
-  ） &lbrace;
+  ) {
     total_count
-    page_info &lbrace;
+    page_info {
       total_pages
       current_page
       page_size
-    &rbrace;
-    項目 &lbrace;
-      名前
+    }
+    items {
+      name
       sku
-    &rbrace;
-  &rbrace;
-&rbrace;</pre>
+    }
+  }
+}</pre>
 
 変数：
 
 <pre>{"filter":{"user_group":{"eq":"}},"search":"config-100","sort":{},"pageSize":200,"currentPage":1}
 </pre>
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-表示が「個別に表示されない」に設定されている製品は、応答では返されません。
+「個別に表示されない」に設定された表示がある製品は、応答として返されません。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-表示が「個別に表示されない」に設定されている製品が、応答で返されます。
+「個別に表示されない」に設定された表示レベルの製品は、応答として返されます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメントタイプに応じて次のリンクを使用します。
+個別のパッチを適用するには、デプロイメントタイプに応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-Adobe Commerce用の高品質パッチの詳細については、次を参照してください。
+Adobe Commerceの高品質なパッチについて詳しくは、次を参照してください。
 
-* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [品質パッチツール ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPT で使用可能なその他のパッチについては、[QPT で使用可能なパッチ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) の節を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、「QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で使用可能な[ パッチ」セクションを参照してください。

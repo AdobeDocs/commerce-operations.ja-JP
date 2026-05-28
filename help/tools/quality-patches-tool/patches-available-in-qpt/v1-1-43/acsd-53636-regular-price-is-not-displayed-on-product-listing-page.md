@@ -1,67 +1,67 @@
 ---
-title: ACSD-53636：通常の価格がページに表示さ [!UICONTROL Product Listing] ない
-description: 特別価格の子商品を持つ設定可能な商品の*[!UICONTROL Product Listing]* ページに通常価格が表示されないAdobe Commerceの問題を修正するために、ACSD-53636 パッチを適用してください。
+title: 'ACSD-53636: [!UICONTROL Product Listing] ページに正規価格が表示されません'
+description: ACSD-53636 パッチを適用して、特別価格の子商品を含む設定可能な商品の*[!UICONTROL Product Listing]* ページに通常価格が表示されないAdobe Commerceの問題を修正します。
 feature: Catalog Management, Products
 role: Admin, Developer
 exl-id: e6d66ae4-2c21-466a-b03c-a1f486e7fa29
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
 
-# ACSD-53636：通常の価格がページに表示さ *[!UICONTROL Product Listing]* ない
+# ACSD-53636: *[!UICONTROL Product Listing]* ページに正規価格が表示されません
 
-ACSD-53636 パッチは、特別価格の子製品を持つ設定可能な製品の *[!UICONTROL Product Listing]* ページに通常価格が表示されない問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.43 がインストールされている場合に使用できます。 パッチ ID は ACSD-53636 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-53636 パッチは、特別価格の子製品を持つ設定可能な製品について、*[!UICONTROL Product Listing]* ページに正規価格が表示されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.43がインストールされている場合に利用できます。 パッチ IDはACSD-53636です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 ～ 2.4.4-p6
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 - 2.4.4-p6
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-特別価格を持つ子製品を持つ設定可能な製品の *[!UICONTROL Product Listing]* ページには、通常価格は表示されません。
+特別価格の子商品を含む設定可能な商品については、*[!UICONTROL Product Listing]* ページに正規価格は表示されません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 管理者にログインして **[!UICONTROL Admin]**/**[!UICONTROL Catalog]** に移動し、設定可能な製品を作成するか開きます。
-2. 子製品を開き、すべてまたは 1 つの子製品に特別価格を追加して、製品を保存します。
-3. フロントエンドに移動し、設定可能な製品の **[!UICONTROL Product Detail]** ページを開きます。特別価格の子製品のスウォッチには、（期待される） *[!UICONTROL Regular price]* が取り除かれています。
-4. フロントエンドに移動し、特別価格の設定可能な製品の **[!UICONTROL Product Listing]** ページを開きます。*[!UICONTROL Product Detail Page]* やその他のシンプルな製品とは異なり、設定可能な製品スウォッチの変更に通常の価格が表示されないことを確認してください。
+1. 管理者にログインして&#x200B;**[!UICONTROL Admin]** > **[!UICONTROL Catalog]**&#x200B;に移動し、設定可能な製品を作成または開きます。
+2. 子商品を開き、子商品のすべてまたは1つに特別価格を追加して、商品を保存します。
+3. フロントエンドに移動して、設定可能な製品の&#x200B;**[!UICONTROL Product Detail]** ページを開きます。特別価格の子製品のスウォッチで、*[!UICONTROL Regular price]*&#x200B;が取り消されます（予想）。
+4. フロントエンドに移動し、特別価格で設定可能な製品の&#x200B;**[!UICONTROL Product Listing]** ページを開きます。設定可能な製品スウォッチの変更で、*[!UICONTROL Product Detail Page]*&#x200B;やその他のシンプルな製品と異なり、通常価格が表示されないことをご確認ください。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-*[!UICONTROL Product Listing]* ページでは、設定可能な製品には、子製品の通常の価格が表示されます。
+*[!UICONTROL Product Listing]* ページで、コンフィグ可能な製品に子製品の通常価格が表示されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-*[!UICONTROL Product Listing]* ページで、設定可能な製品には、子製品の通常の価格は表示されません。
+*[!UICONTROL Product Listing]* ページで、コンフィグ可能な製品には、子製品の通常の価格が表示されません。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。
