@@ -1,44 +1,44 @@
 ---
-title: 'MDVA-44147: [!DNL GraphQL] request が [!UICONTROL Requisition Lists] を返さない'
-description: MDVA-44147 パッチは、 [!DNL GraphQL] request が [!UICONTROL Requisition Lists] を返さない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.14 がインストールされている場合に使用できます。 パッチ ID は MDVA-44147。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+title: 'MDVA-44147: [!DNL GraphQL]  リクエストで[!UICONTROL Requisition Lists]が返されません'
+description: MDVA-44147 パッチは、 [!DNL GraphQL]  リクエストで[!UICONTROL Requisition Lists]が返されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.14がインストールされている場合に利用できます。 パッチ IDはMDVA-44147です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 feature: B2B, GraphQL
 role: Admin
 exl-id: 534c4e45-6521-45c0-ae4e-c60b754f432f
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
 
-# MDVA-44147:[!DNL GraphQL] 要求が [!UICONTROL Requisition Lists] を返さない
+# MDVA-44147: [!DNL GraphQL] リクエストで[!UICONTROL Requisition Lists]が返されません
 
-MDVA-44147 パッチは、[!DNL GraphQL] のリクエストが [!UICONTROL Requisition Lists] を返さない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14 がインストールされている場合に使用できます。 パッチ ID は MDVA-44147。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+MDVA-44147 パッチは、[!DNL GraphQL] リクエストが[!UICONTROL Requisition Lists]を返さない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14がインストールされている場合に利用できます。 パッチ IDはMDVA-44147です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.3-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 ～ 2.4.4
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 - 2.4.4
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-リクエ [!DNL GraphQL] トが [!UICONTROL Requisition Lists] を返しません。
+[!DNL GraphQL] リクエストは[!UICONTROL Requisition Lists]を返しません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. **ストア**/**設定**/**設定**/**一般**/**B2B 機能** に移動し、**[!UICONTROL Requisition List]** を有効にします。
-1. 顧客としてログインし、[[!UICONTROL Requisition List]](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/requisition-lists/requisition-lists) に製品を追加します。
-1. [[!UICONTROL Customer Token]](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/) を作成します。
+1. **Store** > **Settings** > **Configuration** > **General** > **B2B Features**&#x200B;に移動し、**[!UICONTROL Requisition List]**&#x200B;を有効にします。
+1. 顧客としてログインし、製品を[[!UICONTROL Requisition List]](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/requisition-lists/requisition-lists)に追加します。
+1. [[!UICONTROL Customer Token]](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/)を作成します。
 
    <pre>
     <code class="language-graphql">
@@ -53,9 +53,9 @@ MDVA-44147 パッチは、[!DNL GraphQL] のリクエストが [!UICONTROL Requi
       </code>
       </pre>
 
-1. 次のクエリを使用して、顧客からすべての [!UICONTROL Requisition Lists] を取得します。 値が **の** Authorization`Bearer <customer_token>` ヘッダーを使用します。 詳しくは、開発者向けドキュメントの [&#x200B; 顧客クエリ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/) 記事を参照してください。
+1. 次のクエリを使用して、顧客からすべての[!UICONTROL Requisition Lists]を取得します。 値`Bearer <customer_token>`の&#x200B;**Authorization** ヘッダーを使用します。 詳しくは、開発者ドキュメントの[顧客クエリ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/)の記事を参照してください。
 
-   リクエスト :
+   リクエスト：
 
    <pre>
     <code class="language-graphql">
@@ -166,26 +166,26 @@ MDVA-44147 パッチは、[!DNL GraphQL] のリクエストが [!UICONTROL Requi
       </code>
       </pre>
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-1 つの結果が返されます。
+1つの結果が返されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
 ゼロの結果が返されます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) ガイドのの [!DNL Quality Patches Tool] を使用して、Adobe Commerceの問題にパッチが使用可能かどうかを確認します。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [[!DNL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
-[!DNL QPT] で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+[!DNL QPT]で使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索」を参照してください。

@@ -1,74 +1,74 @@
 ---
-title: MDVA-38827：顧客がメールで注文出荷エラーを受信する
-description: MDVA-38827 パッチは、次のエラーメッセージが記載された注文出荷メールが顧客に届く問題を修正します。*申し訳ありません。このコンテンツの生成中にエラーが発生しました*。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.0 がインストールされている場合に利用できます。 パッチ ID は MDVA-38827。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+title: MDVA-38827：お客様が注文出荷エラーを電子メールで受信する
+description: MDVA-38827 パッチは、お客様が次のエラーメッセージを含む注文出荷メールを受信する問題を修正します。*このコンテンツの生成中にエラーが発生しました*。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.0がインストールされている場合に利用できます。 パッチ IDはMDVA-38827です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 feature: Communications, Marketing Tools, Orders, Shipping/Delivery
 role: Admin
 exl-id: ab522c9c-2983-4c2f-b341-4487bdbee34d
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
 
-# MDVA-38827：顧客がメールで注文出荷エラーを受信する
+# MDVA-38827：お客様が注文出荷エラーを電子メールで受信する
 
-MDVA-38827 パッチは、次のエラーメッセージが記載された注文出荷メールが顧客に届く問題を修正します。*申し訳ありません。このコンテンツの生成中にエラーが発生しました*。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.0 がインストールされている場合に使用できます。 パッチ ID は MDVA-38827。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+MDVA-38827 パッチは、顧客が次のエラーメッセージを含む注文出荷メールを受信する問題を修正します。*このコンテンツの生成中にエラーが発生しました*。 このパッチは、[品質パッチツール （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.0がインストールされている場合に使用できます。 パッチ IDはMDVA-38827です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
-クラウドインフラストラクチャー上のAdobe Commerce 2.4.2-p1
+Adobe Commerce on cloud infrastructure 2.4.2-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 Adobe Commerce（すべてのデプロイメント方法） 2.3.3-p1 - 2.4.2-p1
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-出荷について「メールで顧客に通知」オプションを選択すると、顧客は次のエラーメッセージを含むメールを受け取ります。*申し訳ありません。このコンテンツの生成中にエラーが発生しました*。
+「メールで顧客に通知」オプションを選択すると、顧客に次のエラーメッセージがメールで送信されます。*このコンテンツの生成中にエラーが発生しました*。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. **マーケティング**/**コミュニケーション**/**メールテンプレート** に移動し、「**新しいテンプレートを追加**」を選択します。
-   * **Magentoの売上** / **新しい出荷** を選択します。
-   * 「**テンプレートを読み込み**」をクリックします。
-   * テンプレート名（コアシッピングテンプレートなど）を追加し、「**保存**」をクリックします。
-1. **Store**/設定/**構成**/**Sales**/**Sales Email** に移動します。
-   * **出荷注釈** を有効にします。
-   * ゲストの出荷コメントメールテンプレートおよび出荷コメントメールテンプレートで、「**コア出荷テンプレート**」（手順 1 の「テンプレート名の追加」の部分を参照）を選択します。
-1. 注文します。 管理パネル/**営業**/**注文** に移動し、「**表示**」をクリックして注文を出荷します。
-1. 注文の状態が「保留」から「処理中」に変わります。
-1. 左側のサイドバーメニューで **出荷** をクリックし、**表示** をクリックして注文を確認します。
-1. **出荷履歴** の下の **コメントテキスト** にコメントを追加し、「**メールで顧客に通知**」チェックボックスをオンにします。
-1. **コメントを送信** をクリックします。
+1. **マーケティング** > **コミュニケーション** > **電子メールテンプレート**&#x200B;に移動し、**新しいテンプレートを追加**&#x200B;を選択します。
+   * **Magento Sales** > **New Shipment**&#x200B;を選択します。
+   * 「**テンプレートを読み込む**」をクリックします。
+   * テンプレート名（例：コア出荷テンプレート）を追加し、**保存**&#x200B;をクリックします。
+1. **Store** / 設定/**Configuration** / **Sales** / **Sales Email**&#x200B;に移動します。
+   * **送信コメント**&#x200B;を有効にします。
+   * 「出荷コメント電子メールテンプレート」および「ゲスト用の出荷コメント電子メールテンプレート」の下で「**コア出荷テンプレート**」（手順1の「テンプレート名を追加」の部分を参照）を選択します。
+1. 注文する。 管理パネル / **Sales** / **Order**&#x200B;に移動し、**View**&#x200B;をクリックして注文を発送します。
+1. 注文の状態が「保留中」から「処理中」に変わります。
+1. 左側のサイドバーメニューで「**出荷**」をクリックし、**表示**」をクリックして注文を確認します。
+1. **出荷履歴**&#x200B;の下の&#x200B;**コメントテキスト**&#x200B;にコメントを追加し、**電子メールでお客様に通知**&#x200B;のチェックボックスをオンにします。
+1. 「**コメントを送信**」をクリックします。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
 出荷コメント付きの販売メールが生成されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-メールに次のエラーメッセージが表示されます：*申し訳ありません。このコンテンツの生成中にエラーが発生しました。*
+次のエラーメッセージがメールで受信されました：*申し訳ありません。このコンテンツの生成中にエラーが発生しました。*
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-品質向上パッチツールの詳細については、次を参照してください。
+品質パッチツールについて詳しくは、以下を参照してください。
 
-* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [品質パッチツール &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。
