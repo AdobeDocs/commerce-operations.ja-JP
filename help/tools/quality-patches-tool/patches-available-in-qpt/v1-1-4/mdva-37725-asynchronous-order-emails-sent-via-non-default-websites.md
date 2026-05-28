@@ -1,75 +1,75 @@
 ---
-title: MDVA-37725：デフォルト以外のサイトを介して送信されるメールには、デフォルトのサイトのロゴ URL が含まれる
-description: MDVA-37725 パッチは、デフォルト web サイトのロゴ URL を含むデフォルト以外の web サイトから非同期注文 E メールが送信される問題を修正します。
+title: MDVA-37725：デフォルト以外のサイトを介して送信されたメールに、デフォルトのサイトのロゴ URLが含まれる
+description: MDVA-37725 パッチは、デフォルトのweb サイトのロゴ URLを含むデフォルト以外のweb サイトを介して非同期注文メールが送信される問題を修正します。
 feature: Communications, Orders
 role: Admin
 exl-id: 6e72897c-7652-4b5a-8575-090e94188daf
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
 
-# MDVA-37725：デフォルト以外のサイトを介して送信されるメールには、デフォルトのサイトのロゴ URL が含まれる
+# MDVA-37725：デフォルト以外のサイトを介して送信されたメールに、デフォルトのサイトのロゴ URLが含まれる
 
 >[!WARNING]
 >
-> MDVA-37725 パッチは非推奨（廃止予定）です。
+> MDVA-37725 パッチは非推奨です。
 
-MDVA-37725 パッチは、デフォルト web サイトのロゴ URL を含むデフォルト以外の web サイトから非同期注文 E メールが送信される問題を修正します。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.4 がインストールされている場合に使用できます。 パッチ ID は MDVA-37725。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+MDVA-37725 パッチは、デフォルトのweb サイトのロゴ URLを含むデフォルト以外のweb サイトを介して非同期注文メールが送信される問題を修正します。 このパッチは、[品質パッチツール （QPT） ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4がインストールされている場合に使用できます。 パッチ IDはMDVA-37725です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 Adobe Commerce（すべてのデプロイメント方法） 2.4.2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-Adobe Commerce（すべてのデプロイメント方法） 2.3.0 ～ 2.4.3
+Adobe Commerce（すべてのデプロイメント方法） 2.3.0 - 2.4.3
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-非同期注文メールは、デフォルト Web サイトのロゴ URL を含んだデフォルト以外の Web サイトから送信されます。
+非同期注文メールは、デフォルトのweb サイトのロゴ URLを含むデフォルト以外のweb サイトを介して送信されます。
 
-<u> 前提条件 </u>:
+<u>前提条件</u>:
 
-1. 2 つ目の web サイト/ストア/ストアビューを作成する必要があります。
-1. **非同期送信** 設定は、**Stores**/**Settings**/**Configuration**/**Sales**/**Sales Email**/**General Settings** から有効にする必要があります。
-1. **URL へのストアコードの追加** セカンダリ Web サイトへのアクセスを容易にするため、設定を **ストア**/**設定**/**設定**/**URL オプション** からオンにします。
+1. 2つ目のweb サイト/ストア/ストアビューを作成する必要があります。
+1. **非同期送信**&#x200B;設定は、**ストア** > **設定** > **設定** > **セールス** > **セールスメール** > **一般設定**&#x200B;から有効にする必要があります。
+1. **URLにストアコードを追加**&#x200B;設定が有効になっており、セカンダリ web サイトへのアクセスが&#x200B;**Stores** > **Settings** > **Configuration** > **URL オプション**&#x200B;から簡単になります。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 1 号店と 2 号店の両方から注文します。
-1. cron を実行して販売メールを送信します。
-1. 2 番目の web サイトからメールを確認します。
+1. 1号店と2号店の両方から注文します。
+1. cronを実行してセールスメールを送信します。
+1. 2番目のWeb サイトからのメールを確認します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-メールのロゴ URL には、2 番目の web サイトの URL が含まれます。
+メールのロゴ URLには、2番目のweb サイトのURLが含まれています。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-メールのロゴ URL には、デフォルトの web サイトの URL が含まれます。
+メールのロゴ URLには、デフォルトのweb サイトのURLが含まれています。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-品質向上パッチツールの詳細については、次を参照してください。
+品質パッチツールについて詳しくは、以下を参照してください。
 
-* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [品質パッチツール ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPT で使用可能なその他のパッチについては、[QPT で使用可能なパッチ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) の節を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、「QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で使用可能な[ パッチ」セクションを参照してください。
