@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Commerce 2.2 [ パイプライン デプロイメントモデル ](../deployment/technical-details.md)を使用して実稼動システムを設定する場合、`config.php`および`env.php`から&#x200B;_import_設定をデータベースに取り込む必要があります。
+Commerce 2.2 [&#x200B; パイプライン デプロイメントモデル &#x200B;](../deployment/technical-details.md)を使用して実稼動システムを設定する場合、`config.php`および`env.php`から&#x200B;_import_設定をデータベースに取り込む必要があります。
 これらの設定には、設定パスと値、web サイト、ストア、ストアビューおよびテーマが含まれます。
 
 web サイト、ストア、ストアビュー、およびテーマを読み込んだ後、製品属性を作成し、実稼動システム上のweb サイト、ストア、ストアビューに適用できます。
