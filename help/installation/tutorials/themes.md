@@ -16,7 +16,7 @@ ht-degree: 0%
 
 例えば、Adobe Commerceで提供されるLuma テーマへのパスは`frontend/Magento/luma`です。
 
-テーマについて詳しくは、[&#x200B; テーマ構造](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure)を参照してください。
+テーマについて詳しくは、[ テーマ構造](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure)を参照してください。
 
 ## テーマのアンインストールの概要
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 * テーマへの参照を削除するために、`theme.xml`の`parent` ノード情報を更新しています。
 * ファイルシステムからのテーマコードの削除。
 
-  [&#x200B; テーマの継承に関する詳細情報](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance)。
+  [ テーマの継承に関する詳細情報](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance)。
 
 ## テーマのアンインストール
 
@@ -41,7 +41,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 * `{theme path}`は、エリア名で始まるテーマへの相対パスです。 例えば、Adobe Commerceで指定された空白テーマへのパスは`frontend/Magento/blank`です。
 * `--backup-code`は、次の段落で説明されているように、コードベースをバックアップします。
-* `--clear-static-content`は、静的ビューファイルを適切に表示するために必要な[静的ビューファイル &#x200B;](../../configuration/cli/static-view-file-deployment.md)を生成しました。
+* `--clear-static-content`は、静的ビューファイルを適切に表示するために必要な[静的ビューファイル ](../../configuration/cli/static-view-file-deployment.md)を生成しました。
 
 このコマンドは、次のタスクを実行します。
 
@@ -64,7 +64,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 1. `composer remove`を使用してコードベースからテーマを削除します。
 1. キャッシュをクリーニングします。
 1. 生成されたクラスをクリア
-1. `--clear-static-content`が指定されている場合、[生成された静的ビューファイル &#x200B;](../../configuration/cli/static-view-file-deployment.md)をクリーンアップします。
+1. `--clear-static-content`が指定されている場合、[生成された静的ビューファイル ](../../configuration/cli/static-view-file-deployment.md)をクリーンアップします。
 
 例えば、別のテーマが依存しているテーマをアンインストールしようとすると、次のメッセージが表示されます。
 
