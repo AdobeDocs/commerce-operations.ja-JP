@@ -28,7 +28,7 @@ MDVA-44147 パッチは、[!DNL GraphQL] リクエストが[!UICONTROL Requisiti
 
 >[!NOTE]
 >
->このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
@@ -42,50 +42,50 @@ MDVA-44147 パッチは、[!DNL GraphQL] リクエストが[!UICONTROL Requisiti
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
       generateCustomerToken(
         email: "test@gmail.com"
         password: "xxxxxxxx"
-        ) {
+        ) &lbrace;
           token
-        }
-      }
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 
-1. 次のクエリを使用して、顧客からすべての[!UICONTROL Requisition Lists]を取得します。 値`Bearer <customer_token>`の&#x200B;**Authorization** ヘッダーを使用します。 詳しくは、開発者ドキュメントの[顧客クエリ ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/)の記事を参照してください。
+1. 次のクエリを使用して、顧客からすべての[!UICONTROL Requisition Lists]を取得します。 値`Bearer <customer_token>`の&#x200B;**Authorization** ヘッダーを使用します。 詳しくは、開発者ドキュメントの[顧客クエリ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/)の記事を参照してください。
 
    リクエスト：
 
    <pre>
     <code class="language-graphql">
-    query {
-      customer {
+    query &lbrace;
+      customer &lbrace;
         requisition_lists(
           pageSize: 20
-          ) {
-            items {
+          ) &lbrace;
+            items &lbrace;
               uid
               name
               description
-              items(pageSize: 20) {
-                items {
+              items(pageSize: 20) &lbrace;
+                items &lbrace;
                   uid
-                  product {
+                  product &lbrace;
                     uid
                     name
                     sku
                     __typename
-                  }
+                  &rbrace;
                   quantity
-                }
+                &rbrace;
                 total_pages
-              }
-            }
+              &rbrace;
+            &rbrace;
             total_count
-          }
-        }
-      }
+          &rbrace;
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 
@@ -93,37 +93,37 @@ MDVA-44147 パッチは、[!DNL GraphQL] リクエストが[!UICONTROL Requisiti
 
    <pre>
     <code class="language-graphql">
-    {
-      "data": {
-        "customer": {
-          "requisition_lists": {
-            "items": [
-            {
+    &lbrace;
+      "data": &lbrace;
+        "customer": &lbrace;
+          "requisition_lists": &lbrace;
+            "items": &lbrack;
+            &lbrace;
               "uid": "MQ==",
               "name": "Name",
               "description": "Description",
-              "items": {
-                "items": [
-                {
+              "items": &lbrace;
+                "items": &lbrack;
+                &lbrace;
                   "uid": "MQ==",
-                  "product": {
+                  "product": &lbrace;
                     "uid": "MQ==",
                     "name": "Simple 01",
                     "sku": "s00001",
                     "__typename": "SimpleProduct"
-                    },
+                    &rbrace;,
                     "quantity": 1
-                  }
-                  ],
+                  &rbrace;
+                  &rbrack;,
                   "total_pages": 1
-                }
-              }
-              ],
+                &rbrace;
+              &rbrace;
+              &rbrack;,
               "total_count": 1
-            }
-          }
-        }
-      }
+            &rbrace;
+          &rbrace;
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 
@@ -131,38 +131,38 @@ MDVA-44147 パッチは、[!DNL GraphQL] リクエストが[!UICONTROL Requisiti
 
    <pre>
     <code class="language-graphql">
-    query {
-      customer {
+    query &lbrace;
+      customer &lbrace;
         requisition_lists(
           pageSize: 20,
-          filter: {
-            uids: {
+          filter: &lbrace;
+            uids: &lbrace;
               eq: "MQ=="
-            }
-          }
-          ) {
-            items {
+            &rbrace;
+          &rbrace;
+          ) &lbrace;
+            items &lbrace;
               uid
               name
               description
-              items(pageSize: 20) {
-                items {
+              items(pageSize: 20) &lbrace;
+                items &lbrace;
                   uid
-                  product {
+                  product &lbrace;
                     uid
                     name
                     sku
                     __typename
-                  }
+                  &rbrace;
                   quantity
-                }
+                &rbrace;
                 total_pages
-              }
-            }
+              &rbrace;
+            &rbrace;
             total_count
-          }
-        }
-      }
+          &rbrace;
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 
@@ -179,13 +179,13 @@ MDVA-44147 パッチは、[!DNL GraphQL] リクエストが[!UICONTROL Requisiti
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
 [!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
 * [[!DNL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 [!DNL QPT]で使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索」を参照してください。
