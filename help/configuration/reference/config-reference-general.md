@@ -5,14 +5,14 @@ feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
 source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
 
 # 一般および詳細設定パスのリファレンス
 
-このトピックでは、一般的な設定パスと高度な設定パスおよび&#x200B;_not_ [機密値とシステム固有の値](config-reference-sens.md)をリストします。 [`magento app:config:dump` コマンド &#x200B;](../cli/export-configuration.md)は、これらの値をソース コントロールにある共有設定ファイル `app/etc/config.php`に書き込みます。
+このトピックでは、一般的な設定パスと高度な設定パスおよび&#x200B;_not_ [機密値とシステム固有の値](config-reference-sens.md)をリストします。 [`magento app:config:dump` コマンド ](../cli/export-configuration.md)は、これらの値をソース コントロールにある共有設定ファイル `app/etc/config.php`に書き込みます。
 
 任意の構成設定を上書きする方法や、機密設定を設定する方法については、[環境変数を使用して構成設定を上書きする](override-config-settings.md#environment-variables)を参照してください。
 

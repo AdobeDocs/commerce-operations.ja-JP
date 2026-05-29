@@ -5,7 +5,7 @@ feature: Configuration, System
 exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
 source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '4206'
+source-wordcount: '4570'
 ht-degree: 0%
 
 ---
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 このトピックでは、システム固有の設定と機密性の高い設定の設定パスをリストします。
 
-- [`magento app:config:dump` コマンド &#x200B;](../cli/export-configuration.md)は、システム固有の設定をシステム固有の設定ファイル `app/etc/env.php`に書き込みます。これは、_not_&#x200B;がソース管理にあるはずです。 また、すべてのCommerce インスタンスの共有設定を`app/etc/config.php`に書き込みます。このファイル _はソース管理に含まれている必要があります_。
-- [`magento config:sensitive:set` コマンド &#x200B;](../cli/set-configuration-values.md)は、機密性の高い設定を`app/etc/env.php`に書き込みます。
+- [`magento app:config:dump` コマンド ](../cli/export-configuration.md)は、システム固有の設定をシステム固有の設定ファイル `app/etc/env.php`に書き込みます。これは、_not_&#x200B;がソース管理にあるはずです。 また、すべてのCommerce インスタンスの共有設定を`app/etc/config.php`に書き込みます。このファイル _はソース管理に含まれている必要があります_。
+- [`magento config:sensitive:set` コマンド ](../cli/set-configuration-values.md)は、機密性の高い設定を`app/etc/env.php`に書き込みます。
 
   [環境変数を使用して構成設定を上書きする](../reference/override-config-settings.md#environment-variables)で説明しているように、構成変数を使用して機密値を設定することもできます。
 
 その他の設定パスのリストについては、次を参照してください。
 
 - [支払いを除くすべての設定パス](../reference/config-reference-general.md)
-- [支払設定パス &#x200B;](../reference/config-reference-payment.md)。
+- [支払設定パス ](../reference/config-reference-payment.md)。
 
 >[!INFO]
 >
@@ -172,7 +172,7 @@ ht-degree: 0%
 これらの設定値は、**ストア**/設定/**設定**/**カタログ**/**インベントリ**&#x200B;の管理者で使用できます。
 
 |名前|設定パス | Commerce バージョンのサポート |暗号化されていますか？ | システム固有か？ |機密性？ | |
-|--------------|--------------|--------------|--------------|--------------|--------------||
+|--------------|--------------|--------------|--------------|--------------|--------------| |
 | Google API キー| `cataloginventory/source_selection_distance_based_google/api_key` | |暗号化| |機密性|
 
 ### XML サイトマップの機密パスとシステム固有パス
@@ -382,7 +382,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->この変数を選択すると、使用できる[国際パス &#x200B;](#international-paths)が決まります。
+>この変数を選択すると、使用できる[国際パス ](#international-paths)が決まります。
 
 ### PayPalの機密パスとシステム固有のパス
 

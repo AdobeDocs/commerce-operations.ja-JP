@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # チェックアウトのパフォーマンスのベストプラクティス
 
-Adobe Commerceの[&#x200B; チェックアウト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) プロセスは、ストアフロント体験の重要な側面です。 組み込みの[買い物かご](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/storefront/storefront#shopping-cart)機能と[&#x200B; チェックアウト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/storefront/storefront#checkout-page)機能に依存しています。
+Adobe Commerceの[ チェックアウト ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) プロセスは、ストアフロント体験の重要な側面です。 組み込みの[買い物かご](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart)機能と[ チェックアウト ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page)機能に依存しています。
 
 優れた顧客体験を維持するためには、パフォーマンスが重要です。 チェックアウトパフォーマンスを最適化するには、**ハイスループット注文処理**&#x200B;に対して次のオプションを設定します。
 
 - [AsyncOrder](#asynchronous-order-placement)：キューを使用して注文を非同期で処理します。
 - [繰延合計計算](#deferred-total-calculation) - チェックアウトが開始されるまで、注文合計の計算を延期します。
-- [&#x200B; カート読み込み時の在庫チェック &#x200B;](#disable-inventory-check) - カート商品の在庫検証をスキップすることを選択します。
+- [ カート読み込み時の在庫チェック ](#disable-inventory-check) - カート商品の在庫検証をスキップすることを選択します。
 - [負荷分散](#load-balancing) - MySQL データベースとRedis インスタンスのセカンダリ接続を有効にします。
 
 カートの非同期注文、繰延合計計算、および在庫チェック設定オプションの読み込みはすべて独立して機能します。 3つの機能をすべて同時に使用することも、任意の組み合わせで機能を有効または無効にすることもできます。
@@ -32,7 +32,7 @@ Adobe Commerceの[&#x200B; チェックアウト &#x200B;](https://experiencelea
 
 _非同期注文_ モジュールは、注文を`received`としてマークし、注文をキューに配置し、キューからの注文を先入れ先出し方式で処理する非同期注文の配置を有効にします。 AsyncOrderはデフォルトで&#x200B;**無効**&#x200B;です。
 
-例えば、顧客がショッピングカートに商品を追加し、**[!UICONTROL Proceed to Checkout]**&#x200B;を選択したとします。 **[!UICONTROL Shipping Address]** フォームに入力し、希望する&#x200B;**[!UICONTROL Shipping Method]**&#x200B;を選択し、支払い方法を選択して注文します。 買い物かごがクリアされ、注文は&#x200B;**[!UICONTROL Received]**&#x200B;としてマークされますが、製品数量はまだ調整されておらず、顧客に販売メールも送信されません。 注文は受け取りましたが、注文が完全に処理されていないため、注文の詳細はまだ利用できません。 `placeOrderProcess` コンシューマーが開始されるまでキューに残り、[在庫チェック &#x200B;](#disable-inventory-check)機能（デフォルトで有効）で注文を確認し、次のように注文を更新します。
+例えば、顧客がショッピングカートに商品を追加し、**[!UICONTROL Proceed to Checkout]**&#x200B;を選択したとします。 **[!UICONTROL Shipping Address]** フォームに入力し、希望する&#x200B;**[!UICONTROL Shipping Method]**&#x200B;を選択し、支払い方法を選択して注文します。 買い物かごがクリアされ、注文は&#x200B;**[!UICONTROL Received]**&#x200B;としてマークされますが、製品数量はまだ調整されておらず、顧客に販売メールも送信されません。 注文は受け取りましたが、注文が完全に処理されていないため、注文の詳細はまだ利用できません。 `placeOrderProcess` コンシューマーが開始されるまでキューに残り、[在庫チェック ](#disable-inventory-check)機能（デフォルトで有効）で注文を確認し、次のように注文を更新します。
 
 - **製品が利用可能** – 注文状況が&#x200B;_保留中_&#x200B;に変更され、製品数量が調整され、注文詳細を含む電子メールが顧客に送信され、正常な注文の詳細が&#x200B;**注文と返品** リストに表示され、再注文などの実行可能なオプションが表示されます。
 - **在庫切れまたは供給不足** – 注文状況が&#x200B;_拒否_&#x200B;に変更され、製品数量が調整されず、問題に関する注文詳細を含む電子メールが顧客に送信され、拒否された注文詳細が&#x200B;**注文と返品** リストで利用可能になり、実用的なオプションはありません。
@@ -174,13 +174,13 @@ _モジュール参照ガイド_&#x200B;の[DeferredTotalCalculating](https://de
 
 無効にすると、商品をショッピングカートに追加する際に在庫チェックが行われません。 この在庫確認をスキップすると、在庫切れのシナリオによって他の種類のエラーが発生する可能性があります。 在庫確認&#x200B;_Always_&#x200B;は、無効になっている場合でも、注文配置ステップで行われます。
 
-**カート読み込み時に在庫チェックを有効にする**&#x200B;は、デフォルトで有効になっています（Yesに設定）。 カートの読み込み時に在庫チェックを無効にするには、管理UI **ストア** > **構成** > **カタログ** > **在庫** > **在庫オプション** セクションで&#x200B;**[!UICONTROL Enable Inventory Check On Cart Load]**&#x200B;を`No`に設定します。 _ユーザーガイド_&#x200B;の「[&#x200B; グローバルオプションの設定](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/configuration/global-options)および[&#x200B; カタログインベントリ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/guide-overview)」を参照してください。
+**カート読み込み時に在庫チェックを有効にする**&#x200B;は、デフォルトで有効になっています（Yesに設定）。 カートの読み込み時に在庫チェックを無効にするには、管理UI **ストア** > **構成** > **カタログ** > **在庫** > **在庫オプション** セクションで&#x200B;**[!UICONTROL Enable Inventory Check On Cart Load]**&#x200B;を`No`に設定します。 _ユーザーガイド_&#x200B;の「[ グローバルオプションの設定](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options)および[ カタログインベントリ ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview)」を参照してください。
 
 ## 負荷分散
 
 MySQL データベースとRedis インスタンスのセカンダリ接続を有効にすることで、様々なノード間の負荷のバランスを取ることができます。
 
-Adobe Commerceは、複数のデータベースまたはRedis インスタンスを非同期で読み取ることができます。 クラウドインフラストラクチャでCommerceを使用している場合は、`.magento.env.yaml` ファイルの[MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection)および[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)の値を編集して、セカンダリ接続を設定できます。 読み取り/書き込みトラフィックを処理する必要があるのは1つのノードのみなので、変数を`true`に設定すると、読み取り専用トラフィック用のセカンダリ接続が作成されます。 値を`false`に設定して、既存の読み取り専用の接続配列を`env.php` ファイルから削除します。
+Adobe Commerceは、複数のデータベースまたはRedis インスタンスを非同期で読み取ることができます。 クラウドインフラストラクチャでCommerceを使用している場合は、`.magento.env.yaml` ファイルの[MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection)および[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)の値を編集して、セカンダリ接続を設定できます。 読み取り/書き込みトラフィックを処理する必要があるのは1つのノードのみなので、変数を`true`に設定すると、読み取り専用トラフィック用のセカンダリ接続が作成されます。 値を`false`に設定して、既存の読み取り専用の接続配列を`env.php` ファイルから削除します。
 
 `.magento.env.yaml` ファイルの例：
 
