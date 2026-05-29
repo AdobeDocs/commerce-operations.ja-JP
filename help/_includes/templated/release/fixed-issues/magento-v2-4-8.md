@@ -1,7 +1,7 @@
 ---
 source-git-commit: 1dcfbd53f79c83dbf6c44ffce952de101f7e01f1
 workflow-type: tm+mt
-source-wordcount: '25765'
+source-wordcount: '29235'
 ht-degree: 0%
 
 ---
@@ -206,7 +206,7 @@ _AC-12844 - [GitHub コードの貢献度](https://github.com/magento/magento2/c
 
 #### Require.jsを最新バージョン 2.3.7にアップグレードする（セキュリティ脆弱性CVE-2024-38999）
 
-require.jsを最新バージョン 2.3.7に更新しました。以前のバージョンで報告されたセキュリティの脆弱性
+require.jsを最新バージョン 2.3.7に更新しました。 以前のバージョンで報告されたセキュリティの脆弱性
 
 _AC-12901 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/b34c0a75)_
 
@@ -454,7 +454,7 @@ _AC-13529 - [GitHub コードの貢献度](https://github.com/magento/magento2/c
 
 #### 必須の電話番号フィールドには赤いアスタリスクがありません
 
-以前の赤いアスタリスクは電話番号には表示されていませんでしたが  電話番号は必須でした。 現在、赤いアスタリスクが固定されており、電話番号に必須フィールドとして表示されます。
+以前の赤いアスタリスクは電話番号に表示されていませんでしたが、電話番号は必須でした。 現在、赤いアスタリスクが固定されており、電話番号に必須フィールドとして表示されます。
 
 _AC-13850 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/c699c206)_
 
@@ -514,7 +514,7 @@ _ACP2E-2978 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 #### 200件を超える注文をエクスポートできません
 
-以前に送信された選択したIDのリクエストサイズのサーバー制限は、問題を修正するためにGETからのHTTP リクエストをPOSTに変更することで無視されました。 以前は、GET リクエストサイズのサーバーの制限により、この問題が発生していました。
+以前に送信された選択したIDのリクエストサイズのサーバー制限は、問題を修正するためにHTTP リクエストをGETからPOSTに変更することで無視されました。 以前は、GET リクエストサイズのサーバーの制限により、この問題が発生していました。
 
 _ACP2E-3033 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/93d50f8d)_
 
@@ -538,7 +538,7 @@ _ACP2E-3149 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 #### CODは、許可されている特定の国では使用できません
 
-今では代金引換は、必要なときにいつでも許可された特定の国のために利用可能です   AC-3216は正常に動作しています。
+現在では、特定の国で必要な場合は常に代金引換が利用でき、AC-3216は期待どおりに機能しています。
 
 _ACP2E-3171 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/6f4805f8)_
 
@@ -646,7 +646,7 @@ _ACP2E-3169 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 ### 管理UI、配送
 
-#### クーポンコード数は、で更新されません   複数配送で注文した場合、「クーポンコードを管理」タブの「使用時間」列。
+#### 複数配送で注文した場合、「クーポンコードを管理」タブの「使用時間」列でクーポンコード数が更新されません。
 
 以前、複数配送で注文した場合、「クーポンコードを管理」タブの「使用時間」列でクーポンコード数が更新されませんでした。 これで、「使用時間」の両方に正しいカウントが表示され、マルチシッピングで希望の値が反映されます。
 
@@ -1892,13 +1892,13 @@ _AC-6754 - [GitHub issue](https://github.com/magento/magento2/issues/36163) - [G
 
 _AC-8353 - [GitHub issue](https://github.com/magento/magento2/issues/37253) - [GitHub コードの貢献度](https://github.com/magento/magento2/pull/37003)_
 
-#### [問題] `@author`から禁止されている`Magento_Customer` タグを削除（パート 2）
+#### [問題] `Magento_Customer`から禁止されている`@author` タグを削除（パート 2）
 
 特定のモジュールから禁止されている`@author` タグを削除することで、よりクリーンで標準化されたコードを確保し、コーディング標準に準拠するようになりました。 以前は、`@author` タグが一部のモジュールに存在していました。これは、確立されたコーディング標準に違反していました。
 
 _AC-8356 - [GitHub issue](https://github.com/magento/magento2/issues/37250) - [GitHub コードの貢献度](https://github.com/magento/magento2/pull/37000)_
 
-#### editorconfig構文の空白が`[&lbrace;composer,auth&rbrace;.json]`のルールを壊しています
+#### editorconfig構文の空白が`[{composer,auth}.json]`のルールを壊しています
 
 システムは、editorconfigの構文エラーの修正に続いて、コンポーザーおよびauth.json ファイルに4 スペースインデントを正しく適用するようになりました。 以前は、editorconfig構文にスペースがあるため、これらのファイルの形式が正しくなく、2 スペースのインデントが設定されていました。
 
@@ -2042,7 +2042,7 @@ _ACP2E-2642 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 _ACP2E-2653 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### 価格フィルター`&lbrace;from:"0"&rbrace;`を含むGraphQL Productsの呼び出しは結果を返しません
+#### 価格フィルター`{from:"0"}`を含むGraphQL Productsの呼び出しは結果を返しません
 
 以前のgraphql製品では、スローされた例外が原因で、フィルターでゼロ価格を検索しても結果は全く返されませんでした。 これで、検索は期待どおりに結果を返します。
 
@@ -2165,7 +2165,7 @@ _LYNX-486_
 
 _LYNX-488_
 
-#### グループ化された製品サムネールは、設定に従って表示されます     .
+#### グループ化された製品サムネールは、設定に従って表示する必要があります。
 
 構成設定に従って、グループ化された製品サムネールが表示される問題を解決しました
 
@@ -2994,7 +2994,7 @@ _ACP2E-3139 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 _ACP2E-3332 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/581b7ef1)_
 
-#### 買い物かごのルール「買い物かご全体の固定金額割引」  アクションによる割引の誤った適用
+#### 買い物かごのルール「買い物かご全体に対する固定額の割引」の適用に誤りがある
 
 管理画面から順序作成に使用する場合、大文字や小文字を問わず、クーポンコードは適切に検証されます。 以前は、クーポンコードは、設定されたカートルールコードの文字の大文字と小文字が一致しない場合、検証されませんでした。
 
