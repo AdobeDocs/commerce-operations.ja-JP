@@ -14,7 +14,7 @@ ht-degree: 0%
 
 _これは、B2B for Adobe Commerceがインストールされているインスタンスで使用できます。_
 
-このトピックでは、Commerce Enterprise B2B Extensionの設定パスを示します。 [`magento app:config:dump` コマンド ](../cli/export-configuration.md)は、これらの値をソース コントロールにある共有設定ファイル `app/etc/config.php`に書き込みます。
+このトピックでは、Commerce Enterprise B2B Extensionの設定パスを示します。 [`magento app:config:dump` コマンド &#x200B;](../cli/export-configuration.md)は、これらの値をソース コントロールにある共有設定ファイル `app/etc/config.php`に書き込みます。
 
 >[!INFO]
 >
