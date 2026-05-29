@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 環境変数
 
-`REMOTE_STORAGE`変数は、クラウドインフラストラクチャプロジェクトの[&#x200B; デプロイメントフェーズ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html)中に使用されます。
+`REMOTE_STORAGE`変数は、クラウドインフラストラクチャプロジェクトの[&#x200B; デプロイメントフェーズ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=ja)中に使用されます。
 
 ### `REMOTE_STORAGE`
 
@@ -40,7 +40,7 @@ stage:
 
 ### Cloud CLIでの変数の設定
 
-実稼動環境、ステージング環境、統合環境間でファイルが共有されないように、`REMOTE_STORAGE`変数を[環境レベル変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html)として設定します。 環境レベルで変数を設定すると、リモートストレージの統合環境の使用を除外するなど、一部の環境でリモートストレージのみを使用する柔軟性が得られます。
+実稼動環境、ステージング環境、統合環境間でファイルが共有されないように、`REMOTE_STORAGE`変数を[環境レベル変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=ja)として設定します。 環境レベルで変数を設定すると、リモートストレージの統合環境の使用を除外するなど、一部の環境でリモートストレージのみを使用する柔軟性が得られます。
 
 **Cloud CLI**&#x200B;を使用してリモートストレージ変数を追加するには：
 
@@ -89,7 +89,7 @@ magento-cloud variable:create --level environment --name REMOTE_STORAGE --json t
 
 ### オプションの認証を使用
 
-`key`と`secret`はオプションです。 変数を作成する場合、`sensitive` オプションを選択して`key`と`secret`を非表示にできます。 この設定では、値はweb インターフェイスに表示されません。 _Commerce on Cloud Infrastructure ガイド_&#x200B;の[変数表示](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility)を参照してください。
+`key`と`secret`はオプションです。 変数を作成する場合、`sensitive` オプションを選択して`key`と`secret`を非表示にできます。 この設定では、値はweb インターフェイスに表示されません。 _Commerce on Cloud Infrastructure ガイド_&#x200B;の[変数表示](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=ja#visibility)を参照してください。
 
 別の認証方法を使用する場合は、JSON設定から`key`と`secret`を省略します。 別の認証方法を設定し、サーバーがS3 バケットに対して許可されていることを確認します。
 
@@ -111,7 +111,7 @@ bin/magento remote-storage:sync
 
 Adobe Commerce on cloud インフラストラクチャプロジェクトでリモートストレージソリューションを使用する場合は、_Fastly_ ドキュメントの[Amazon S3](https://docs.fastly.com/en/guides/amazon-s3) ガイダンスを使用して、Fastly Image OptimizationがAWS S3で動作することを確認してください。
 
-[Fastlyの資格情報](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#get-fastly-credentials)を使用して準備してください。 Pro プロジェクトでは、SSHを使用してサーバーに接続し、`/mnt/shared/fastly_tokens.txt` ファイルからFastlyの資格情報を取得します。 ステージング環境と実稼動環境には一意の資格情報があります。 各環境の資格情報を取得する必要があります。
+[Fastlyの資格情報](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja#get-fastly-credentials)を使用して準備してください。 Pro プロジェクトでは、SSHを使用してサーバーに接続し、`/mnt/shared/fastly_tokens.txt` ファイルからFastlyの資格情報を取得します。 ステージング環境と実稼動環境には一意の資格情報があります。 各環境の資格情報を取得する必要があります。
 
 次のタスクを使用して、クラウドプロジェクトのリモートストレージの設定を続行します。
 
