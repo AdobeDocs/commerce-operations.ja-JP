@@ -20,7 +20,7 @@ ht-degree: 0%
 
 次の図は、メッセージキューフレームワークを示しています。
 
-![ メッセージキューフレームワーク ](../../assets/configuration/mq-framework.png)
+![&#x200B; メッセージキューフレームワーク &#x200B;](../../assets/configuration/mq-framework.png)
 
 - パブリッシャーは、メッセージを取引所に送信するコンポーネントです。 パブリッシュする取引所と、送信するメッセージの形式を把握できます。
 
@@ -42,7 +42,7 @@ RabbitMQの代わりに、Adobe Commerceでは、Simple Text Oriented Messaging 
 
 次の図は、ActiveMQ Artemisを使用したSTOMP フレームワークを示しています。
 
-![STOMP フレームワーク ](../../assets/configuration/stomp-framework.png)
+![STOMP フレームワーク &#x200B;](../../assets/configuration/stomp-framework.png)
 
 ### STOMP Framework コンポーネント
 

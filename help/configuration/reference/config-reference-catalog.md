@@ -14,7 +14,7 @@ ht-degree: 0%
 
 このセクションでは、管理者の&#x200B;**ストア**/設定/**構成**/**カタログ**&#x200B;で使用できる変数名と構成パスを示します。
 
-[`magento app:config:dump` コマンド ](../cli/export-configuration.md)は、これらの値をソース コントロールにある共有設定ファイル `app/etc/config.php`に書き込みます。 任意の構成設定を上書きする方法や、機密設定を設定する方法については、[環境変数を使用して構成設定を上書きする](override-config-settings.md#environment-variables)を参照してください。 このトピックでは、_not_&#x200B;に[機密値とシステム固有の値](config-reference-sens.md)が一覧表示されています。
+[`magento app:config:dump` コマンド &#x200B;](../cli/export-configuration.md)は、これらの値をソース コントロールにある共有設定ファイル `app/etc/config.php`に書き込みます。 任意の構成設定を上書きする方法や、機密設定を設定する方法については、[環境変数を使用して構成設定を上書きする](override-config-settings.md#environment-variables)を参照してください。 このトピックでは、_not_&#x200B;に[機密値とシステム固有の値](config-reference-sens.md)が一覧表示されています。
 
 ## カタログパス
 

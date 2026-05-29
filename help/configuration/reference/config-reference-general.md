@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 一般および詳細設定パスのリファレンス
 
-このトピックでは、一般的な設定パスと高度な設定パスおよび&#x200B;_not_ [機密値とシステム固有の値](config-reference-sens.md)をリストします。 [`magento app:config:dump` コマンド ](../cli/export-configuration.md)は、これらの値をソース コントロールにある共有設定ファイル `app/etc/config.php`に書き込みます。
+このトピックでは、一般的な設定パスと高度な設定パスおよび&#x200B;_not_ [機密値とシステム固有の値](config-reference-sens.md)をリストします。 [`magento app:config:dump` コマンド &#x200B;](../cli/export-configuration.md)は、これらの値をソース コントロールにある共有設定ファイル `app/etc/config.php`に書き込みます。
 
 任意の構成設定を上書きする方法や、機密設定を設定する方法については、[環境変数を使用して構成設定を上書きする](override-config-settings.md#environment-variables)を参照してください。
 
