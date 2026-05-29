@@ -5,7 +5,7 @@ feature: Configuration, Payments
 exl-id: f3e356aa-7262-4d99-9ed4-d77cbd93708c
 source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '5833'
+source-wordcount: '5835'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 これらの設定値は、**ストア**/設定/**構成**/**販売**/**支払い方法**&#x200B;の管理者で使用できます。
 
-[`magento app:config:dump` コマンド &#x200B;](../cli/export-configuration.md)は、これらの値をソース コントロールにある共有設定ファイル `app/etc/config.php`に書き込みます。 任意の構成設定を上書きする方法や、機密設定を設定する方法については、[環境変数を使用して構成設定を上書きする](override-config-settings.md#environment-variables)を参照してください。 このトピックでは、_Allt_&#x200B;に[機密値とシステム固有の値](config-reference-sens.md)が一覧表示されます。
+[`magento app:config:dump` コマンド ](../cli/export-configuration.md)は、これらの値をソース コントロールにある共有設定ファイル `app/etc/config.php`に書き込みます。 任意の構成設定を上書きする方法や、機密設定を設定する方法については、[環境変数を使用して構成設定を上書きする](override-config-settings.md#environment-variables)を参照してください。 このトピックでは、_Allt_&#x200B;に[機密値とシステム固有の値](config-reference-sens.md)が一覧表示されます。
 
 設定は支払い方法によってさらに整理されています。
 
@@ -104,7 +104,7 @@ ht-degree: 0%
 
 ## Payments Pro Hosted Solution （英国）
 
-これらのオプションは、英国を[&#x200B; マーチャント国](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths)として選択した場合にのみ使用できます。
+これらのオプションは、英国を[ マーチャント国](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths)として選択した場合にのみ使用できます。
 
 | 名前 | 設定パス | Commerce版をサポートしていますか？ |
 |--------------|--------------|--------------|

@@ -1,75 +1,75 @@
 ---
 title: ACSD-62758：設定可能な製品ページでのビデオレンダリングの問題を解決
-description: ACSD-62758 パッチを適用すると、Adobe Commerceの問題を修正できます。この問題では、事前に選択されたスウォッチオプションが URL に含まれている場合、設定可能な製品詳細ページの製品ビデオが正しくレンダリングされません。
+description: ACSD-62758 パッチを適用して、設定可能な商品詳細ページの商品動画が、URLに選択済みのスウォッチオプションが含まれている場合に正しくレンダリングされないAdobe Commerceの問題を修正します。
 feature: Catalog Management
 role: Admin, Developer
 exl-id: 084b497d-4471-4458-bc1d-2a452bfe2662
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
 
 # ACSD-62758：設定可能な製品ページでのビデオレンダリングの問題を解決
 
-ACSD-62758 パッチでは、URL に事前に選択されたスウォッチオプションが含まれている場合、設定可能な製品詳細ページの製品ビデオが正しくレンダリングされない問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 がインストールされている場合に使用できます。 パッチ ID は ACSD-62758 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-62758 パッチは、設定可能な製品詳細ページの製品ビデオが、URLに事前選択されたスウォッチオプションが含まれている場合に正しくレンダリングされない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57がインストールされている場合に利用できます。 パッチ IDはACSD-62758です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-URL に事前に選択されたスウォッチオプションが含まれている場合、設定可能な製品詳細ページで製品ビデオが正しくレンダリングされず、ビデオの代わりに静的画像が表示されます。
+URLに事前に選択されたスウォッチオプションが含まれている場合、設定可能な製品詳細ページで製品ビデオが正しくレンダリングされず、その結果、ビデオではなく静止画像が表示されます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. [!UICONTROL Stores]/[!UICONTROL Attributes]/[!UICONTROL Product] に移動します。
-1. **[!UICONTROL Color]** 属性を選択し、編集します。
+1. [!UICONTROL Stores] > [!UICONTROL Attributes] > [!UICONTROL Product]に移動します。
+1. **[!UICONTROL Color]**&#x200B;属性を選択して編集します。
 1. 次の設定を更新します。
-   1. [!UICONTROL Catalog Input Type for Store Owner] を [!UICONTROL Visual Swatch] に設定します。
-   1. **[!UICONTROL Update Product Preview Image]** を **[!UICONTROL Yes]** に設定します。
-1. この属性にはいくつかのオプションを作成します。
-1. 新しいカテゴリを作成し、**[!UICONTROL Color]** 属性を使用して新しい設定可能な製品をそれに追加します。
-1. 親製品に 1 つのランダム画像を追加します。
-1. 新しく作成された設定可能な子製品を編集し、メディアギャラリーにビデオを追加します。
-   1. 「**[!UICONTROL Add Video]**」をクリックし、テストビデオの URL （https://vimeo.com/12860646）を使用します。
-1. 製品を保存し、キャッシュをクリアして、ストアを再インデックスします。
-1. ストアフロントで新しく作成した製品を開き、スウォッチオプションの 1 つを選択し、プレーヤーボタンが表示された状態でビデオが正しく読み込まれていることを確認します。
-1. ビデオが期待どおりに読み込まれ、プレーヤーボタンが表示されます。
-1. 次に、スウォッチオプションの 1 つを右クリックし、「**[!UICONTROL Inspect]**」を選択して、属性 id およびオプション id を探します。 製品 URL をコピーし、その末尾に次の内容を追加します。`www.product-url.com/producit-test#attribute_id=option_id`。 スウォッチオプションが事前選択されます。 更新された URL を新しいウィンドウで開きます。
+   1. [!UICONTROL Catalog Input Type for Store Owner]を[!UICONTROL Visual Swatch]に設定します。
+   1. **[!UICONTROL Update Product Preview Image]**&#x200B;を&#x200B;**[!UICONTROL Yes]**&#x200B;に設定します。
+1. この属性に対していくつかのオプションを作成します。
+1. **[!UICONTROL Color]**&#x200B;属性を使用して、新しいカテゴリを作成し、新しい設定可能な製品を追加します。
+1. 親商品に1つのランダム画像を追加します。
+1. 新しく作成した設定可能な子製品を編集し、メディアギャラリーにビデオを追加します。
+   1. **[!UICONTROL Add Video]**&#x200B;をクリックし、テスト ビデオ URL https://vimeo.com/12860646を使用します。
+1. 商品を保存し、キャッシュをクリアして、ストアのインデックスを再作成します。
+1. 新しく作成した商品をストアフロントで開き、スウォッチオプションのいずれかを選択して、「プレーヤー」ボタンが表示された状態でビデオが正しく読み込まれることを確認します。
+1. ビデオが期待どおりに読み込まれ、「プレーヤー」ボタンが表示されます。
+1. 次に、スウォッチオプションのいずれかを右クリックし、**[!UICONTROL Inspect]**&#x200B;を選択して、属性IDとオプション IDを見つけます。 製品URLをコピーし、その末尾に以下を追加します：`www.product-url.com/producit-test#attribute_id=option_id`。 これにより、スウォッチ オプションが事前選択されます。 更新されたURLを新しいウィンドウで開きます。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
 スウォッチオプションを手動で選択した場合と同様に、ビデオは正しく読み込まれます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-ビデオの代わりに静的画像が表示されます。 コンソールエラーがログに記録され、ビデオの初期化が失敗したことを示します。
+ビデオの代わりに静止画像が表示されます。 コンソールエラーがログに記録され、ビデオ初期化の失敗を示します。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。
 
