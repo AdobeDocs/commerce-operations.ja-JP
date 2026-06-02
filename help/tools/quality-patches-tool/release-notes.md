@@ -3,9 +3,18 @@ title: リリースノート
 description: Adobe Commerceで使用可能なパッチと、それらのパッチで解決される問題について説明します。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 26f4a5c5a23e3df9448898b57495e60e2e51133a
+autotag-review: '2026-05-29T17:40:45.034Z'
+TQID: 'https://experienceleague.adobe.com/HHiR-UPHRK-dZCKE9L6H1bfm4hykrOgYsBm-XJv8zyE'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: c7b05a4b636b1d4f67e1d3db40dce7fab1cb1b6b
 workflow-type: tm+mt
-source-wordcount: '30379'
+source-wordcount: 30977
 ht-degree: 0%
 
 ---
@@ -21,6 +30,27 @@ ht-degree: 0%
 >[!INFO]
 >
 >Magento Open Sourceのコミュニティによって作成された[!DNL quality patches]について詳しくは、[&#x200B; リリースノート &#x200B;](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)を参照してください。
+
+## v1.1.80 {#v1-1-80}
+
+* **ACP2E-4239** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.7 &lt;2.4.9） – 選択した日付、保存されたUTC値、および設定されたストアタイムゾーンのタイムゾーンの違いにより、日付属性を使用する管理者グリッドフィルターが誤った結果を返す問題を修正します。
+* **ACP2E-4472** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.9） – 「お客様としてログイン」フロー中にヌル引用符が作成される問題を修正します。
+* **ACP2E-4481** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.7 &lt;2.4.9） – 注文がキャンセルされた後、バンドル製品の販売可能性が正しく再計算されない問題を修正します。
+* **ACP2E-4488** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.9） – 属性セットが大きい商品の場合、管理画面での商品の保存または編集が遅くなる問題を修正します。
+* **ACP2E-4493** （Adobe Commerce >=2.4.4 &lt;2.4.9の場合） – 非同期インデックス作成が有効になっている場合に、Sales Order Archive グリッドに誤った注文ステータスが表示される問題を修正します。
+* **ACP2E-4496** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.8 &lt;2.4.9） - Analytics cron ジョブが実行中にパフォーマンスが低下し、システム全体のパフォーマンスが向上する問題を修正します。
+* **ACP2E-4533** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.7 &lt;2.4.8） – ストアコードがURLに含まれている場合に、ストアフロントでプレースホルダー画像が読み込まれない問題を修正します。
+* **ACP2E-4552** （Adobe Commerceの場合、B2B >=1.5.0 &lt;1.5.3） - GraphQL応答で会社ステータスが返されない問題を修正します。
+* **ACP2E-4610** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.9） - sales_clean_quotes cron ジョブでパフォーマンスの問題が発生する問題を修正します。
+* **ACP2E-4615** （Adobe Commerce >=2.4.4-p13 &lt;2.4.4-p17 || >=2.4.4-p18 &lt;2.4.5 |>=2.4.5-p12 &lt;2.4.6 |>=2.4.6-p10 &lt;2.4.7 || >=2.4.7-p5 &lt;2.4.9） – オンライン注文が失敗する問題を修正します。「PayPal ゲートウェイはリクエストを拒否します。 内部エラー&quot;。
+* **ACP2E-4626** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.7 &lt;2.4.9） – 一部のStorefront JavaScript ファイルがリクエストされ、2回実行され、断続的に重複するロードと不安定な動作が発生する問題を修正します。
+* **ACP2E-4653** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.8 &lt;2.4.9） - REST APIを使用してルールを取得または更新する際に、「カテゴリ（親のみ）」および「カテゴリ（子のみ）」のカート価格ルール条件属性の範囲が公開されない問題を修正します。
+* **ACP2E-4808** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.10） – ストアフロント製品ページのWeight属性で、設定された測定単位（lbsまたはkgs）を含まない「Additional Information」または「More Information」セクションに生の数値のみが表示される問題を修正します。
+* **ACP2E-4156** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.8 &lt;2.4.9） - REST APIでの配送先住所の検証が、Adminで定義された属性設定に準拠しない問題を修正します。
+* **ACP2E-4813** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.6-p3 &lt;2.4.6-p15 || >=2.4.7 &lt;2.4.7-p10 || >=2.4.8 &lt;2.4.8-p5） – チェックアウト時にUSPS配送方法が利用できず、複数のパッケージに分割される注文を含む特定の製品の配送見積りが正しくない問題を修正修正しました。
+* **ACSD-53502** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.6） - New Relic モニタリングスクリプトへの再帰呼び出しにより、iOS Safariのストアフロントでカートへの追加が断続的に失敗し、ページがリロードされる問題を修正します。
+* 更新されたバージョン：**AC-15210**、**MDVA-12304**、**ACSD-46520**、**ACSD-48627**、**ACSD-49898**、**ACSD-51291**、**ACSD-51358**、**ACSD-50815**、**ACSD-54106**、**ACSD-53636 55100**、**ACSD-1&rbrace;** ACSD-58008 **、** ACSD-61133 **、** ACSD-63286 **、** ACSD-67941 **、** ACSD-64546 **、** ACSD-64118 **、** ACSD-65822 **、** ACSD-57477 **、** ACSD-58108 66149 66404 67250 67686 68925 **、** ACSD-4&rbrace; **ACSD-**、**ACSD-**、**ACSD-**、**ACSD-**、**ACP2E-4402**、**ACP2E-4505**、**ACP2E-4603**、**ACP2E-475&rbrace;**&#x200B;**&#x200B;**
+* 置き換えられたパッチ：**AC-15210**、**ACSD-58108**
 
 ## v1.1.79 {#v1-1-79}
 

@@ -1,71 +1,71 @@
 ---
-title: 'ACSD-51666: エラー「セッションの有効期限が切れています。もう一度ログインしてください。」 ログイン後'
-description: ACSD-51666 パッチを適用して、「セッションの有効期限が切れました。もう一度ログインしてください。」というエラーが表示されるAdobe Commerceの問題を修正してください。*はログインを試みた後に発生します。
+title: 'ACSD-51666: エラー「セッションの有効期限が切れています。再度ログインしてください。」 ログイン後'
+description: ACSD-51666 パッチを適用して、Adobe Commerceの問題を修正します。*セッションの有効期限が切れています。再度ログインしてください。*ログインを試みると発生します。
 feature: Customers
 role: Admin, Developer
 exl-id: 8968b314-6625-45fa-9733-20560cca7089
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
 
-# ACSD-51666: エラー *セッションの有効期限が切れています。もう一度ログインしてください。ログイン後の*
+# ACSD-51666: エラー&#x200B;*セッションの有効期限が切れています。再度ログインしてください。* ログイン後
 
-ACSD-51666 パッチにより、*セッションの有効期限が切れました。もう一度ログインしてください。ログインを試みた後に* が発生します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.36 がインストールされている場合に使用できます。 パッチ ID は ACSD-51666 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-51666 パッチは、エラー&#x200B;*セッションの有効期限が切れた問題を修正します。もう一度ログインしてください。* ログインを試みた後に発生します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.36がインストールされている場合に利用できます。 パッチ IDはACSD-51666です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 ～ 2.4.6-p2
+* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 - 2.4.6-p2
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-「セッションの有効期限が切れました。もう一度ログインしてください *」というエラーが表示される。別のデバイスでパスワードをリセットした後に、あるデバイスから新しいパスワードでログインしようとすると、* が発生します。 カスタムモジュールによって追加されたページに追加の Ajax リクエストがある場合にのみ発生します。
+エラー&#x200B;*セッションの有効期限が切れています。再度ログインしてください。* 別のデバイスでパスワードをリセットした後、1つのデバイスから新しいパスワードでログインしようとすると。 カスタムモジュールによって追加されたページに追加のAjax リクエストがある場合にのみ発生します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. ストアフロントの各ページに Ajax リクエストを追加するカスタムモジュールをインストールします。
+1. ストアフロントの各ページにAjax リクエストを追加するカスタムモジュールをインストールします。
 1. 新しいアカウントを作成します。
 1. ログアウトして、ログインページに戻ります。
-1. *パスワードを忘れた場合* リンクを別のブラウザーで開き、*パスワードをリセット* メールを送信します。
-1. 最初のブラウザーでパスワードリセットメールを開き、新しいパスワードを設定します。
-1. 2 つ目のブラウザーでログインしてみてください。
+1. 別のブラウザーで&#x200B;*パスワードを忘れた* リンクを開き、*パスワードのリセット*&#x200B;の電子メールを送信します。
+1. 最初のブラウザーでパスワードリセットの電子メールを開き、新しいパスワードを設定します。
+1. 2つ目のブラウザーでログインしてみてください。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
 最初の試行で正常にログインできます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-* *セッションの有効期限が切れています。もう一度ログインしてください。* エラー。
-* ログインせず、ホームページにリダイレクトされる。
-* 2 回目のログインは成功しました。
+* *セッションの有効期限が切れています。再度ログインしてください。* エラー：
+* ログインしておらず、ホームページにリダイレクトされます。
+* 2回目のログインが成功しました。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

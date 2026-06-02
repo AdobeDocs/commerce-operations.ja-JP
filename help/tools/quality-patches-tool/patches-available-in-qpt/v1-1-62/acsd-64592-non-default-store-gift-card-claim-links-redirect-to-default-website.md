@@ -1,65 +1,65 @@
 ---
-title: ACSD-64592：デフォルト以外のストアギフトカード請求リンクは、デフォルトの web サイトにリダイレクト
-description: 複数の Web サイトを設定している場合、仮想ギフトカードをセカンダリ（デフォルト以外）の Web サイトから購入すると、メール内のギフトカードコードリンクにデフォルトの Web サイト URL が含まれる問題を修正するために、ACSD-64592 パッチを適用します。
+title: ACSD-64592：デフォルト以外のストアギフトカードの請求リンクがデフォルトのweb サイトにリダイレクトされる
+description: ACSD-64592 パッチを適用して、複数のweb サイトの設定で、仮想ギフトカードがセカンダリ（デフォルト以外）のweb サイトから購入された場合、メール内のギフトカードコードリンクにデフォルトのweb サイト URLが含まれている問題を修正します。
 feature: Gift, Products
 role: Admin, Developer
 exl-id: 1cc026c0-7487-48e8-a092-3e72085ca38a
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
-# ACSD-64592：デフォルト以外のストアギフトカード請求リンクは、デフォルトの web サイトにリダイレクト
+# ACSD-64592：デフォルト以外のストアギフトカードの請求リンクがデフォルトのweb サイトにリダイレクトされる
 
-マルチサイト環境で、仮想ギフトカードがセカンダリ（非プライマリ） web サイトから購入された場合、ギフトカードコードのリンクを含むメールによって、ユーザーがデフォルトの web サイトの URL に移動する問題が ACSD-64592 パッチによって修正されています。 この問題はAdobe Commerce 2.4.9 で修正される予定であることに注意してください。
+ACSD-64592 パッチでは、マルチサイト環境で、仮想ギフトカードがセカンダリ（プライマリ以外）のweb サイトから購入された場合、ギフトカードコードリンクを含むメールがデフォルトのweb サイトのURLにユーザーを誘導する問題を修正します。 この問題は、Adobe Commerce 2.4.9で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p3
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p4
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-複数の Web サイトを設定する場合、仮想ギフトカードをセカンダリ（デフォルト以外の）サイトから購入すると、ギフトカードコードのリンクを含むメールで、デフォルト Web サイトの URL に移動します。
+複数のweb サイトの設定で、仮想ギフトカードがセカンダリ（デフォルト以外）サイトから購入された場合、ギフトカードコードのリンクを含むメールは、ユーザーをデフォルトのweb サイトのURLに誘導します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. セカンダリ web サイト、ストア、ストア表示を作成します。
-1. ベース Web サイトとセカンダリ Web サイトに異なるベース URL を設定します。
-1. いくつかの金額のオプションを持つ仮想ギフトカードを作成します。
-1. **[!UICONTROL Marketing]**/**[!UICONTROL Promotions]**/**[!UICONTROL Gift Card Accounts]** で新しいコードプールを生成します。
-1. ギフトカード製品をセカンダリ web サイトに注文します。
-1. Commerce管理者で注文を請求します。
-1. *You&#39;ve been sent a gift from Two* メールのギフトカードコードリンクの URL を確認してください。
+1. ふたつ目のweb サイト、実店舗ビューの作成。
+1. ベース Web サイトとセカンダリ Web サイトに対して異なるベース URLを設定します。
+1. いくつかの量のオプションを持つ仮想ギフトカードを作成します。
+1. 新しいコードプールを&#x200B;**[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Gift Card Accounts]**&#x200B;に生成します。
+1. セカンダリ web サイトのギフトカード製品で注文します。
+1. Commerce管理画面で注文を請求書に記入します。
+1. 「*」のギフトカードコードリンクのURLを確認してください。「*」のメールからギフトが送信されました。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-ギフトカードコードのリンクは、2 番目の Web サイトへのリンクである必要があります。
+ギフトカードコードのリンクには、2つ目のWeb サイトへのリンクが必要です。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-注文が 2 番目の web サイトに配置されている場合でも、ギフトカードコード リンクにはデフォルトの web サイト URL が表示されます。
+2つ目のweb サイトで注文が行われたとしても、ギフトカードコードのリンクにはデフォルトのweb サイト URLが含まれています。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

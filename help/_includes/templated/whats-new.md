@@ -1,7 +1,7 @@
 ---
-source-git-commit: 75c28c839ee5e6405550df0149ef4196f7e15a1c
+source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '3282'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,188 @@ ht-degree: 0%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年6月1日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513">ACP2E-4513のQPT 1.1.78修正に関する詳細な説明を追加しました：期限切れのCAPTCHA画像がシステム </a>から削除されません。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/86d06d83592f40bd181b30158cb9d83a2e963b07">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4531">ACP2E-4531のQPT 1.1.79修正に関する詳細な説明を追加しました。子ページ URL キーが変更された場合、CMS階層で階層URLが更新されません</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0a726754a6e171a60a07ccedf76db7505f19706a">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505">ACP2E-4505のQPT 1.1.79修正に関する詳細な説明を追加しました。重複するブラウザータブ </a>に、古いデータを含むカテゴリを保存するカテゴリの循環依存関係を追加しました。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bc87b7024550f49756be23108030fe7bdd571855">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p>オンプレミス Adobe CommerceでサポートされているNginx バージョンを、最新のパッチバージョン 2.4.8から2.4.4の<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements"> システム要件</a>の1.28から1.30に更新しました。 Adobe Commerce on Cloud Infrastructureでは、Nginx 1.28を引き続き使用します。</p>
+</td>
+      <td>
+        テクニカル
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e407df8cff6711d69f0dea5bceff031123e1bee6">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p>v2.4.9の「オンプレミス」タブの<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements"> システム要件</a>のMariaDBおよびNginx バージョンを更新しました。</p>
+</td>
+      <td>
+        テクニカル
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c96653313a98e9fe2e12b26236e0a985049ec523">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年5月29日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720">ACP2E-4720のQPT 1.1.79修正に関する詳細な説明を追加しました。送料無料のカート価格ルールは、出荷商品を個別に含む固定価格同梱商品に対してリセットされません</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8aec766f7377e1ed5a08987a433e676794fc2a59">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/journey/implementation"> アップグレード分析ガイド </a>のシステム依存関係のバージョンを更新しました。</p>
+</td>
+      <td>
+        テクニカル
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dd93d4c8f52d0852f0459e234d66fda2063b6bee">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年5月28日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528">ACP2E-4528のQPT 1.1.78修正に関する詳細な説明を追加しました。お客様の住所の市区町村の検証で、スラッシュ（/）と無効な文字（!、"、#、?</a>など）が誤って処理されました。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7cd24cd0182fc191f64733c2bac361404f9f9a08">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年5月27日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411">ACP2E-4411のQPT 1.1.79修正に関する詳細な説明を追加しました：バンドル製品価格に、複数通貨の設定で製品詳細ページとカートの間に誤った税金と通貨の値が表示されます</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/29ef4059b5ca8b48c628c396771659a39413573e">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110">ACP2E-4110のQPT 1.1.79修正に関する詳細な説明を追加しました：PDP/PLPとカートの間で特別価格で商品価格をバンドルして、デフォルト以外の通貨</a>で異なります。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0133d7598293f529b285737c6ef51613dc5bd826">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475">ACP2E-4475のQPT 1.1.79修正に関する詳細な説明を追加しました。在庫切れのバンドル製品</a>では、価格による注文またはフィルターが機能しません。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2728ac1f484659b1db69b537640e3a5da8f965a7">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603">ACP2E-4603のQPT 1.1.79の修正に関する詳細な説明を追加しました：カタログ権限の製品インデックスを再作成すると、古い権限インデックス行とMySQLのデッドロックが残ります</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e8f56414b758832c77e7f2f93009df527f506c5b">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p>QPT 1.1.79の修正に関する詳細な説明を<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698">AC-10698に追加しました：トランザクションの価格と合計がGoogle タグ </a>に送信されません。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21979ca7c9dd21a871c22271603bcd09b9dfd29a">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年5月23日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2598-add-caching-capability">B2B-2598のQPT 1.1.30修正のタイプミスとURL修正を追加：storeConfig、通貨、国、国、利用可能なStores GraphQl クエリ </a>にキャッシュ機能を追加しました。</p>
+</td>
+      <td>
+        Qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07202bf339331adb7b4103cdd123b0a194b72bf4">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年5月22日（PT）
 
@@ -83,7 +265,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>キャッシュバックエンドガイダンスがAdobe Commerce上でサポートされているValkey on Cloud Infrastructureと一致するように、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#valkey-81-lts-support">2.4.5 セキュリティパッチリリース </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#valkey-81-lts-support">2.4.6 セキュリティパッチリリース </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#valkey-81-lts-support">2.4.8 セキュリティパッチリリース </a>のトピックのValkey LTSの互換性を8.1に修正しました。<br /><em>問題に対処<a href="https://github.com/AdobeDocs/commerce-operations.ja-JP/issues/177">#177</a>.</em></p>
+      <td><p>キャッシュバックエンドガイダンスがAdobe Commerce上でサポートされているValkey on Cloud Infrastructureと一致するように、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#valkey-81-lts-support">2.4.5 セキュリティパッチリリース </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#valkey-81-lts-support">2.4.6 セキュリティパッチリリース </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#valkey-81-lts-support">2.4.8 セキュリティパッチリリース </a>のトピックのValkey LTSの互換性を8.1に修正しました。<br /><em>問題に対処<a href="https://github.com/AdobeDocs/commerce-operations.en/issues/177">#177</a>.</em></p>
 </td>
       <td>
         テクニカル、フィードバック、リリースノート
@@ -505,58 +687,6 @@ ht-degree: 0%
         メジャーアップデート
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a9f3594a0ccf4326b0541a4f2b07fdf49cde7148">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月3日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>キャッシュファイルが目的の場所に保存され、分割キャッシュディレクトリとGlusterFS セグメンテーションエラーを防ぐために、Adobe CommerceのデフォルトのL2 キャッシュディレクトリを<code>env.php</code>で適切に上書きする手順を追加しました。 更新されたガイダンスについては、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration">RedisおよびValkey サービス設定のベストプラクティス </a>を参照してください。</p>
-</td>
-      <td>
-        技術的、フィードバック
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c3030226d7832b17c82be375431795cba44d72f9">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月1日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>最新のリリース情報で<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/schedule">2026 Adobe Commerce リリースカレンダー</a>を更新しました。</p>
-</td>
-      <td>
-        リリースノート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3f32d342cbdc3e962fede45de828d836c242bc9a">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p>RedisおよびValkey設定</a>の<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration"> ベストプラクティスを更新し、関連する設定ガイダンスを提供しました。</p>
-</td>
-      <td>
-        技術的、フィードバック
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c96e5b397a2ffee8fadaf638e721799b40d320d3">コミット</a></td>
     </tr>
   </tbody>
 </table>

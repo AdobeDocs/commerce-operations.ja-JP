@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できるさまざまなツール、その用途、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: b5c120d34b84229c006fbeb9ba8d0f93f558aec1
+source-git-commit: 7625ecbebf7c8ca227f3817a0f4f21bba1bb253a
 workflow-type: tm+mt
-source-wordcount: '10074'
+source-wordcount: '10121'
 ht-degree: 0%
 
 ---
@@ -972,6 +972,7 @@ ht-degree: 0%
          - [ACSD-68341:PDPの読み込み時に複数のX-Magento-Vary Cookieの更新が発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
       - v1.1.78 {#v1-1-78}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
+         - [ACP2E-4513：期限切れのCAPTCHA画像がシステムから削除されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513.md)
          - [ACP2E-4528：顧客アドレス市区町村の検証で、スラッシュ（/）や無効な文字（!、&quot;、#、?）が処理されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528.md)
          - [ACP2E-4628:Account SharingがGlobalに設定されている場合、大文字のメールアドレスを持つトリガーを読み込むと、未定義の配列キーエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4628.md)
          - [ACSD-60989：宣言型スキーマを使用して外部キーを持つ列を変更すると、 [!DNL MariaDB]にエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acsd-60989.md)
@@ -995,6 +996,8 @@ ht-degree: 0%
          - [ACP2E-4419: ストアフロントでreCAPTCHA v2の検証が正常に行われても、チェックアウト時にギフトカードが正しく適用されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4505：古いデータを含むカテゴリを重複するブラウザータブに保存することからのカテゴリの循環依存関係](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
+         - [ACP2E-4720：送料無料カート価格ルールは、出荷商品が別に含まれている固定価格バンドル製品にはリセットされません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
          - [AC-10698：取引価格と合計がGoogle タグに送信されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
          - [ACP2E-4475：在庫切れのバンドル商品で、価格による注文またはフィルターが機能しない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)
          - [ACP2E-4411: バンドル製品の価格に、複数通貨設定で製品詳細ページとカートの間に誤った税金と通貨の値が表示される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)

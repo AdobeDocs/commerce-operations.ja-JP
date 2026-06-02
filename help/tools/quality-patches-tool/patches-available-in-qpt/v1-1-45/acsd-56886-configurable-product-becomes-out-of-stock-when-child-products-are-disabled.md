@@ -1,82 +1,82 @@
 ---
-title: ACSD-56886：子製品が無効になると、設定可能な製品が在庫切れになります
-description: ACSD-56886 パッチを適用して、商品が無効になると設定可能な商品が在庫切れになるAdobe Commerceの問題を修正してください。
+title: ACSD-56886：子商品が無効になっている場合、設定可能な商品が在庫切れになる
+description: ACSD-56886 パッチを適用して、製品が無効になっている場合に設定可能な製品が在庫切れになるAdobe Commerceの問題を修正します。
 feature: Products
 role: Admin, Developer
 exl-id: 5e9c1fd4-b56a-42c0-83e7-75e868213124
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
 
-# ACSD-56886：子製品が無効になると、設定可能な製品が在庫切れになります
+# ACSD-56886：子商品が無効になっている場合、設定可能な商品が在庫切れになる
 
-ACSD-56886 パッチは、子製品が無効になっている場合に設定可能な製品が在庫切れになる問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.45 がインストールされている場合に使用できます。 パッチ ID は ACSD-56886 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-56886 パッチは、子製品が無効になっている場合に設定可能な製品が在庫切れになる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.45がインストールされている場合に利用できます。 パッチ IDはACSD-56886です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p5
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 ～ 2.4.6-p3
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 - 2.4.6-p3
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-子製品が無効になると、設定可能な製品は在庫切れになります。
+子商品が無効になっている場合、コンフィグ可能な商品は在庫切れになります。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
 1. 管理者としてログインします。
-1. すべてのインデクサーを **[!UICONTROL Update By Schedule]** モードで設定します。
+1. **[!UICONTROL Update By Schedule]** モードですべてのインデクサーを設定します。
 1. 次の設定可能な製品を作成します。
 
-   * 名前= *テスト設定可能 1*
-   * Attribute = *color*
-   * 値= *red* および *black*
-   * **赤** 子製品の価格= *$100*;
-   * 「黒」の子製品の価格= *$200*。
+   * 名前= *構成可能なテスト 1*
+   * 属性= *color*
+   * 値= *赤*&#x200B;と&#x200B;*黒*
+   * **red**&#x200B;子商品の価格= *$100*;
+   * 「ブラック」子商品の価格= *$200*。
 
-1. 設定可能な製品に対して、次のスケジュール済み更新を作成します。
+1. 設定可能な製品に対して、次のスケジュールされた更新を作成します。
 
-   * 開始日=今から *3* 分後。
-   * 終了日=開始日から *5* 分後。
-   * 製品名= *テスト設定可能 1 を編集*。
-   * 「**設定可能** セクションの **red** 子製品を無効にします。
+   * 開始日= *3*&#x200B;分後。
+   * 終了日= *開始日から*&#x200B;分後。
+   * 製品名= *TEST CONFIGURABLE 1 edited*.
+   * **設定可能** セクションの&#x200B;**red**&#x200B;子製品を無効にします。
 
 1. 開始日を待ちます。
-1. ストアフロントで設定可能な製品詳細を開きます。
+1. ストアフロントで設定可能な製品の詳細を開きます。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-設定可能な製品は、**在庫中** と **200 以下** のラベルで表示されます。
+設定可能な商品は、**のラベルが200**&#x200B;の低いStock **に**&#x200B;と表示されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-設定可能な商品が「在庫切れ **と表示さ** ます。
+設定可能な製品は&#x200B;**在庫切れ**&#x200B;と表示されます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

@@ -5,7 +5,7 @@ feature: Configuration, System
 exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
 source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '4206'
+source-wordcount: '4570'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ ht-degree: 0%
 これらの設定値は、**ストア**/設定/**設定**/**カタログ**/**インベントリ**&#x200B;の管理者で使用できます。
 
 |名前|設定パス | Commerce バージョンのサポート |暗号化されていますか？ | システム固有か？ |機密性？ | |
-|--------------|--------------|--------------|--------------|--------------|--------------||
+|--------------|--------------|--------------|--------------|--------------|--------------| |
 | Google API キー| `cataloginventory/source_selection_distance_based_google/api_key` | |暗号化| |機密性|
 
 ### XML サイトマップの機密パスとシステム固有パス
