@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できるさまざまなツール、その用途、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 7625ecbebf7c8ca227f3817a0f4f21bba1bb253a
+source-git-commit: 9de5006ef5231f1009e3b6b44a365e151d56e998
 workflow-type: tm+mt
-source-wordcount: '10121'
+source-wordcount: '10131'
 ht-degree: 0%
 
 ---
@@ -996,6 +996,7 @@ ht-degree: 0%
          - [ACP2E-4419: ストアフロントでreCAPTCHA v2の検証が正常に行われても、チェックアウト時にギフトカードが正しく適用されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4402: Target ルールの増分インデクサーで無効な製品が選択されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402.md)
          - [ACP2E-4505：古いデータを含むカテゴリを重複するブラウザータブに保存することからのカテゴリの循環依存関係](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
          - [ACP2E-4720：送料無料カート価格ルールは、出荷商品が別に含まれている固定価格バンドル製品にはリセットされません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
          - [AC-10698：取引価格と合計がGoogle タグに送信されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
