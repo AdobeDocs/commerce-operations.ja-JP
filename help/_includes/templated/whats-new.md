@@ -1,7 +1,7 @@
 ---
-source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
+source-git-commit: b552c5e9aa33c33efe962f5f3661ca26b29ef0b6
 workflow-type: tm+mt
-source-wordcount: '3282'
+source-wordcount: '3380'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,50 @@ ht-degree: 0%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年6月5日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402">ACP2E-4402のQPT 1.1.79修正に関する詳細な説明を追加しました：ターゲット ルールの増分インデクサーが無効な製品を選択しません</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e5aa6a001b0c96b2d0489a444c227a8f0d406675">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年6月2日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>2.4.4および2.4.5のリリースライン（2027年5月）の追加のセキュリティ修正プロビジョニング終了日を含む<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/versions"> リリースバージョン </a>を更新しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7457647b2fc4c0a4786146a9eee74b2050bf5ad9">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年6月1日（PT）
 
@@ -23,7 +67,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513">ACP2E-4513のQPT 1.1.78修正に関する詳細な説明を追加しました：期限切れのCAPTCHA画像がシステム </a>から削除されません。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513">ACP2E-4513のQPT 1.1.78修正に関する詳細な説明を追加しました：期限切れのCAPTCHA画像がシステム </a>から削除されません。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -39,7 +83,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0a726754a6e171a60a07ccedf76db7505f19706a">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505">ACP2E-4505のQPT 1.1.79修正に関する詳細な説明を追加しました。重複するブラウザータブ </a>に、古いデータを含むカテゴリを保存するカテゴリの循環依存関係を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505">ACP2E-4505のQPT 1.1.79修正に関する詳細な説明を追加しました。重複するブラウザータブ </a>に、古いデータを含むカテゴリを保存するカテゴリの循環依存関係を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -77,7 +121,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720">ACP2E-4720のQPT 1.1.79修正に関する詳細な説明を追加しました。送料無料のカート価格ルールは、出荷商品を個別に含む固定価格同梱商品に対してリセットされません</a>。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720">ACP2E-4720のQPT 1.1.79修正に関する詳細な説明を追加しました。送料無料のカート価格ルールは、出荷商品を個別に含む固定価格同梱商品に対してリセットされません</a>。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -129,7 +173,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411">ACP2E-4411のQPT 1.1.79修正に関する詳細な説明を追加しました：バンドル製品価格に、複数通貨の設定で製品詳細ページとカートの間に誤った税金と通貨の値が表示されます</a>。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411">ACP2E-4411のQPT 1.1.79修正に関する詳細な説明を追加しました：バンドル製品価格に、複数通貨の設定で製品詳細ページとカートの間に誤った税金と通貨の値が表示されます</a>。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -137,7 +181,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/29ef4059b5ca8b48c628c396771659a39413573e">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110">ACP2E-4110のQPT 1.1.79修正に関する詳細な説明を追加しました：PDP/PLPとカートの間で特別価格で商品価格をバンドルして、デフォルト以外の通貨</a>で異なります。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110">ACP2E-4110のQPT 1.1.79修正に関する詳細な説明を追加しました：PDP/PLPとカートの間で特別価格で商品価格をバンドルして、デフォルト以外の通貨</a>で異なります。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -145,7 +189,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0133d7598293f529b285737c6ef51613dc5bd826">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475">ACP2E-4475のQPT 1.1.79修正に関する詳細な説明を追加しました。在庫切れのバンドル製品</a>では、価格による注文またはフィルターが機能しません。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475">ACP2E-4475のQPT 1.1.79修正に関する詳細な説明を追加しました。在庫切れのバンドル製品</a>では、価格による注文またはフィルターが機能しません。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -153,7 +197,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2728ac1f484659b1db69b537640e3a5da8f965a7">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603">ACP2E-4603のQPT 1.1.79の修正に関する詳細な説明を追加しました：カタログ権限の製品インデックスを再作成すると、古い権限インデックス行とMySQLのデッドロックが残ります</a>。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603">ACP2E-4603のQPT 1.1.79の修正に関する詳細な説明を追加しました：カタログ権限の製品インデックスを再作成すると、古い権限インデックス行とMySQLのデッドロックが残ります</a>。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -161,7 +205,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e8f56414b758832c77e7f2f93009df527f506c5b">コミット</a></td>
     </tr>
     <tr>
-      <td><p>QPT 1.1.79の修正に関する詳細な説明を<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698">AC-10698に追加しました：トランザクションの価格と合計がGoogle タグ </a>に送信されません。</p>
+      <td><p>QPT 1.1.79の修正に関する詳細な説明を<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698">AC-10698に追加しました：トランザクションの価格と合計がGoogle タグ </a>に送信されません。</p>
 </td>
       <td>
         新しいトピック、qpt
