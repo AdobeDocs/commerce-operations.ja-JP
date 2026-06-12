@@ -1,0 +1,42 @@
+---
+title: 概要： [!DNL Quality Patches Tool]  （QPT） v1.1.80
+description: このサブセクションでは、 [!DNL Quality Patches Tool]  （QPT） v1.1.80で使用可能なパッチによって修正された問題について詳しく説明します。
+feature: Tools and External Services
+role: Admin, Developer
+type: Troubleshooting
+autotag-review: '2026-06-11T01:10:37.916Z'
+TQID: 'https://experienceleague.adobe.com/q2sNWUJQCm4eRUP8RusytBAqQoscU4F9qDtDIeNmm6E'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 393900188a9b3c08184a84665d32890f09703d35
+workflow-type: tm+mt
+source-wordcount: 409
+ht-degree: 0%
+
+---
+
+# 概要：[!DNL Quality Patches Tool] （QPT） v1.1.80
+
+このサブセクションでは、[!DNL Quality Patches Tool] （QPT） v1.1.80で利用可能なパッチによって修正された問題について詳しく説明します。
+
+QPT v1.1.80には、次のパッチが含まれています。
+
+1. **ACP2E-4239**：日付属性を使用する管理者グリッドフィルターが、選択した日付、保存されたUTC値、設定されたストアタイムゾーンのタイムゾーンの違いにより、誤った結果を返す問題を修正しました。
+1. **ACP2E-4472**: **[!UICONTROL Login as Customer]** フロー中にヌル引用符が作成される問題を修正します。
+1. **ACP2E-4481**：注文がキャンセルされた後、バンドル製品の販売可能性が正しく再計算されない問題を修正します。
+1. **ACP2E-4488**：大きな属性セットを持つ製品の[!UICONTROL Admin]での製品の保存または編集が遅くなる問題を修正します。
+1. **ACP2E-4493**：非同期インデックス作成が有効になっている場合に、Sales Order Archive グリッドに誤った注文ステータスが表示される問題を修正します。
+1. **ACP2E-4496**:Analytics cron ジョブが実行中にパフォーマンスの低下を引き起こし、全体的なシステムパフォーマンスが向上する問題を修正します。
+1. **ACP2E-4533**: ストアコードがURLに含まれている場合に、ストアフロントでプレースホルダー画像が読み込まれない問題を修正しました。
+1. **ACP2E-4552**:GraphQLの応答で会社のステータスが返されない問題を修正します。
+1. **ACP2E-4610**: `sales_clean_quotes` cron ジョブにパフォーマンスの問題がある問題を修正します。
+1. **ACP2E-4615**: オンライン注文の返金が失敗し、PayPal エラーが「*PayPal ゲートウェイがリクエストを拒否する」と表示される問題を修正しました。 内部エラー。*.
+1. **ACP2E-4626**：一部のストアフロント JavaScript ファイルがリクエストされ、2回実行され、断続的に重複する読み込みと不安定な動作が発生する問題を修正します。
+1. **ACP2E-4653**: REST APIを使用してルールを取得または更新する際に&#x200B;**[!UICONTROL Category (Parent Only)]**&#x200B;と&#x200B;**[!UICONTROL Category (Children Only)]**&#x200B;の&#x200B;**[!UICONTROL Cart Price Rule]**&#x200B;条件属性のスコープが公開されない問題を修正しました。
+1. **ACP2E-4808**: ストアフロント製品ページのWeight属性に、設定された測定単位（lbsまたはkgs）を含めずに&#x200B;**[!UICONTROL Additional Information]**&#x200B;または&#x200B;**[!UICONTROL More Information]** セクションに生の数値のみが表示される問題を修正しました。
+1. **ACP2E-4156**: REST APIの配送先住所の検証が[!UICONTROL Admin]で定義された属性設定に準拠しない問題を修正します。
+1. **ACP2E-4813**: チェックアウト時にUSPSの配送方法が利用できない問題を修正し、複数のパッケージに分割される注文を含む、特定の製品の配送見積りが正しくありません。
+1. **ACSD-53502**: New Relic モニタリングスクリプトへの再帰呼び出しにより、**[!UICONTROL Add to Cart]**&#x200B;がiOS [!DNL Safari]のストアフロントで断続的に失敗し、ページのリロードが発生する問題を修正します。
+
+左側のメニューを使用して、特定のパッチページに移動します。
