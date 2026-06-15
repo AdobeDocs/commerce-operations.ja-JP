@@ -2,9 +2,9 @@
 title: 必要システム構成
 description: Adobe Commerceのソフトウェアの依存関係と必要システム構成について説明します。 デプロイメント環境との互換性については、テスト済みの設定を参照してください。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
+source-git-commit: 4ffbd0ab5109fb242d3d83c8f6c19c58d1bcb822
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Adobeは、次の表に示すシステム要件の組み合わせのみをサポ
 
 >[!TAB  クラウド上のCommerce]
 
-[Commerce on Cloud テンプレート &#x200B;](https://github.com/magento/magento-cloud)は、特定のCommerce バージョンと互換性のあるサービスのデフォルト設定を提供します。
+[Commerce on Cloud テンプレート &#x200B;](https://github.com/magento/magento-cloud)は、各リリースラインの最新のCommerce バージョンと互換性のあるサービスのデフォルト設定を提供します。
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
