@@ -1,7 +1,7 @@
 ---
-source-git-commit: b552c5e9aa33c33efe962f5f3661ca26b29ef0b6
+source-git-commit: b8c97f7a7d92a75ce54d323344460e2e71e8f548
 workflow-type: tm+mt
-source-wordcount: '3380'
+source-wordcount: '3441'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,58 @@ ht-degree: 0%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年6月12日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview">概要：品質パッチツール （QPT） v1.1.80</a>を追加しました。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6e585cb2150ca7dc2ae6ae883339ef9b894741f0">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p>階層化された一致モデル、重みとマーチャンダイジングルールとのインタラクション、招待状の手順など、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/beta#search-matching-and-ranking-private-beta">Beta リリース </a>に検索一致とランキング（Private Beta）プログラムを追加しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b364a26b6ad3e36652b8309dcb87268d522fa31c">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年6月8日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706">ACP2E-4706のQPT 1.1.79修正に関する詳細な説明を追加しました：ターゲット ルール インデクサーのcronは、ストア ビューの範囲</a>でのみ有効な製品を選択しません。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f1f9890a2a2b7dbe501037ca8dbe919865012b6f">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年6月5日（PT）
 
@@ -701,36 +753,6 @@ ht-degree: 0%
         テクニカル、メジャーアップデート
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0bc6807d7f4bfd84ac698de81f8cf6f56d849af7">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月8日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>リリース別のCommerce on CloudでサポートされているNew Relic（APM）のバージョンで<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements">必要システム構成</a>を更新しました。</p>
-</td>
-      <td>
-        技術的、フィードバック
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f82d05cf0f7d2749b313ef5f7e89e1e36248bf30">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p>SaaS プロジェクト用のカテゴリマーチャンダイジング （パブリックBeta）プログラムを<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/beta">Beta リリース </a>に更新しました。これには、<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/add"> カテゴリマーチャンダイジング </a>および関連するマーチャンダイジングルールのトピックへのリンクが含まれます。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a9f3594a0ccf4326b0541a4f2b07fdf49cde7148">コミット</a></td>
     </tr>
   </tbody>
 </table>
