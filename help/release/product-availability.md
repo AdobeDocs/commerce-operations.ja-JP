@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce版のサポートには、[利用可能なセキュリティパッチ ](versions.md)のサポートも含まれています。
+>Adobe Commerce版のサポートには、[利用可能なセキュリティパッチ &#x200B;](versions.md)のサポートも含まれています。
 
 ## Adobeで作成された拡張機能
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## Commerce Services
 
-[Commerce サービス ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)は、Commerce インスタンスと連携して、堅牢な機能と高速な応答時間を提供する、Adobeでホストされる一連の機能です。
+[Commerce サービス &#x200B;](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)は、Commerce インスタンスと連携して、堅牢な機能と高速な応答時間を提供する、Adobeでホストされる一連の機能です。
 
 最高の安定性と機能性を確保するために、最新バージョンのサービスを使用することをお勧めします。 このドキュメントでは、現在リリースされているバージョンについて説明します。
 
