@@ -31,13 +31,13 @@ Adobeは、次の責任を負います。
 * 安全なアプリケーション開発の確保
 * 加盟店の決済代行会社から要求された場合、PCI認証を取得する
 * セキュリティインシデントへの対応と対応
-* アクティブにサポートされているバージョンでは、すべてのサードパーティ製の依存関係、プラットフォームサービス、Adobe Commerce サービス拡張機能を維持する。 Adobeでは、サポートされていない依存関係バージョンを実行するデプロイメントに対するセキュリティサポートやサポートは提供されていません。 サポートされているバージョンについては、[必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)および[製品の可用性マトリックス ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)を参照してください。
+* アクティブにサポートされているバージョンでは、すべてのサードパーティ製の依存関係、プラットフォームサービス、Adobe Commerce サービス拡張機能を維持する。 Adobeでは、サポートされていない依存関係バージョンを実行するデプロイメントに対するセキュリティサポートやサポートは提供されていません。 サポートされているバージョンについては、[必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)および[製品の可用性マトリックス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)を参照してください。
 
 >[!NOTE]
 >
 >こちらもご覧ください：
 >
->* [ ソフトウェア ライフサイクル ポリシー](../release/lifecycle-policy.md) — サポート終了日、延長サポート、およびセキュリティのみの移行規定
+>* [&#x200B; ソフトウェア ライフサイクル ポリシー](../release/lifecycle-policy.md) — サポート終了日、延長サポート、およびセキュリティのみの移行規定
 >* [Cloud バージョンのアップグレード実施ポリシー](../release/version-upgrade-enforcement-policy.md) – 実施日と必要なアクション
 
 {{supported-versions-only}}
@@ -103,7 +103,7 @@ Adobeは、該当するSLAで合意されている加盟店のインフラスト
    * Adobe Commerce Servicesの拡張機能
    * サードパーティ製の拡張機能とカスタム統合
 
-  Adobeでは、サポートされていないバージョンを実行するデプロイメントのサポートは提供されていません。 サポートされているバージョンについては、[必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)および[製品の可用性マトリックス ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)を参照してください。
+  Adobeでは、サポートされていないバージョンを実行するデプロイメントのサポートは提供されていません。 サポートされているバージョンについては、[必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)および[製品の可用性マトリックス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)を参照してください。
 
 ## クラウドサービスプロバイダーの責任
 
