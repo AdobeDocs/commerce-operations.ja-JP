@@ -1,63 +1,63 @@
 ---
-title: Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。
-description: この記事では、品質向上パッチツール（QPT）の概要と、その使用方法を説明するリソースへのリンクを示します。
+title: Quality Patches ToolでAdobe Commerceの問題が発生した場合のパッチの確認
+description: この記事では、品質パッチツール（QPT）の概要と、その使用方法を説明するリソースへのリンクについて説明します。
 feature: Tools and External Services
 role: Admin
 exl-id: 4d651c3c-95ad-4b53-bf77-92758acb795d
 type: Troubleshooting
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
 
-# Quality Patches Tool を使用して、Adobe Commerceの問題のパッチを確認します。
+# Quality Patches ToolでAdobe Commerceの問題が発生した場合のパッチの確認
 
-この記事では、品質向上パッチツール（QPT）の概要と、その使用方法を説明するリソースへのリンクを示します。
+この記事では、品質パッチツール（QPT）の概要と、その使用方法を説明するリソースへのリンクについて説明します。
 
 ## 影響を受ける製品とバージョン
 
-* Adobe Commerce オンプレミス、すべて [&#x200B; サポート対象バージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
-* クラウドインフラストラクチャー上のAdobe Commerce、すべて [&#x200B; サポート対象バージョン &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* Adobe Commerce オンプレミス、すべて[ サポートされているバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* クラウドインフラストラクチャ上のAdobe Commerce、すべての[ サポートされているバージョン ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
-## 品質向上パッチツールとは
+## 品質パッチツールとは
 
-[Quality Patches Tool](https://github.com/magento/quality-patches) （QPT）は、AdobeとMagento Open Source コミュニティが開発した個別のパッチです。
+[Quality Patches Tool](https://github.com/magento/quality-patches) （QPT）は、AdobeとMagento Open Source コミュニティによって開発された個別のパッチです。
 
-次の操作が可能です。
+これにより、次のことが可能になります。
 
-* パッケージに含まれる品質向上パッチの適用
+* パッケージに含まれる品質パッチを適用する
 * 以前に適用したパッチを元に戻す
-* インストール済みバージョンのAdobe Commerceで使用可能なクオリティパッチに関する一般情報を表示します。
+* インストールされているバージョンのAdobe Commerceで使用できる高品質パッチに関する一般的な情報を表示します。
 
 使用可能なパッチを表示するために取得できるステータステーブルの例を次に示します。
 
-![&#x200B; 使用可能なパッチとそのインストールステータスを示す「品質向上パッチツールのステータス」テーブル &#x200B;](/help/assets/tools/status_table.png)
+![品質パッチツールのステータス テーブルに、使用可能なパッチとそのインストールステータスが表示されている](/help/assets/tools/status_table.png)
 
-このツールの目的は、Adobe Commerceで発生する可能性のある問題のパッチをセルフサービスで提供できるようにしたり、Adobe Commerce サポートから提案されたパッチを簡単に適用できるようにすることです。
+このツールは、Adobe Commerceで発生する可能性のある問題のパッチをセルフサービスで使用したり、Adobe Commerce サポートによって提案されたパッチを簡単に適用したりできるようにすることを目的としています。
 
 >[!NOTE]
 >
->QPT は品質向上パッチ専用です。 セキュリティパッチは、[Magento セキュリティセンター &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) で入手できます。
+>QPTは品質パッチ専用です。 セキュリティパッチは、[Magento セキュリティセンター](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)で入手できます。
 
-## 品質向上パッチツールで使用可能なパッチ
+## 品質パッチツールで使用可能なパッチ
 
-使用可能なパッチのリストについては、開発者向けドキュメントの [Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) を参照してください。
+使用可能なパッチのリストについては、開発者ドキュメントの[品質パッチツール ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)を参照してください。
 
-## 品質向上パッチツールのインストール方法と使用方法
+## 品質パッチツールのインストールと使用方法
 
-Adobe Commerce オンプレミスの場合と、クラウドインフラストラクチャ上のAdobe Commerceの場合は、インストールコマンドと使用コマンドが異なります。クラウドの場合は、QPT パッケージが ece-tools パッケージに含まれています。
+Adobe Commerce オンプレミスとAdobe Commerce オンクラウドインフラストラクチャでは、QPT パッケージがece-tools パッケージに含まれているため、インストールと使用のコマンドが異なります。
 
-### Adobe Commerce オンプレミスで QPT をインストールして使用する方法
+### Adobe Commerce オンプレミス用QPTのインストールおよび使用方法
 
-パッチの適用と元に戻すための QPT のインストールおよび使用方法の詳細については、開発者向けドキュメントの [&#x200B; ソフトウェア更新ガイド/パッチ適用 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/usage) を参照してください。
+パッチの適用と取り消しにQPTをインストールして使用する方法の詳細については、開発者ドキュメントの[ ソフトウェアアップデートガイド > パッチ適用](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)を参照してください。
 
-### クラウドインフラストラクチャーにAdobe Commerce用 QPT をインストールして使用する方法
+### クラウドインフラストラクチャ上のAdobe Commerce用QPTのインストールと使用方法
 
-クラウドインフラストラクチャで QPT をインストールして使用し、Adobe Commerceにパッチを適用したり元に戻したりする方法について詳しくは、開発者向けドキュメントの [Cloud for Adobe Commerce/パッチを適用 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) を参照してください。
+Adobe Commerce向けCloud > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)する方法の詳細については、開発者向けドキュメントの「[Cloud for Cloud Cloud Cloud Cloudでパッチを適用する」を参照してください。クラウド インフラストラクチャ上のAdobe Commerceにパッチを適用および元に戻すためにQPTをインストールおよび使用する方法について詳しくは、開発者向けドキュメントを参照してください。
 
-## 関連資料
+## 関連トピックス
 
-* 開発者向けドキュメントの [&#x200B; 品質向上パッチツールのリリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/release-notes)
-* [Adobeが提供する Composer パッチをサポートナレッジベースに適用する方法 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)。
+* 開発者ドキュメントの[品質パッチツールのリリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)。
+* [Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーのパッチをサポートナレッジベースで適用する方法。
