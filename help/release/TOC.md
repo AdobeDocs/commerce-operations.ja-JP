@@ -4,10 +4,10 @@ user-guide-description: Adobe Commerceのパッチとサービスに関するす
 feature: Release Notes
 recommendations: noDisplay, noCatalog
 nudge: true
-source-git-commit: c8fa72ef4b5bb6f9a2d82e4e9840f683afb8ca54
+source-git-commit: 34c15beb4ddf0f6624295b0ec835de013dd36315
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 34%
+source-wordcount: '101'
+ht-degree: 32%
 
 ---
 
@@ -54,6 +54,7 @@ ht-degree: 34%
 - [Beta リリース](beta.md)
 - 計画とポリシー {#planning}
    - [ライフサイクルポリシー](lifecycle-policy.md)
+   - [バージョンアップグレードの適用ポリシー](version-upgrade-enforcement-policy.md)
    - [バージョン管理ポリシー](versioning-policy.md)
    - [リリーススケジュール](schedule.md)
 - [バージョン別の機能](features.md)
