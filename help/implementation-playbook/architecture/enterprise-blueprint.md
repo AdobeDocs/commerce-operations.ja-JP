@@ -3,7 +3,7 @@ title: エンタープライズリファレンスアーキテクチャ
 description: Adobeの最新のコンポーザブルコマーステクノロジーを使用して、Adobe Commerceを実装する方法について説明します。
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: 0d0922b23bfe9152ef7f8b942b0e839a189e5abf
+source-git-commit: dc4747d96e6f226e90ed95c93512c3e879d408ab
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Commerceは、パフォーマンス、拡張性、セキュリティに対する
 
 次のアーキテクチャ図は、Adobe CommerceとすべてのAdobe Experience Cloud ソリューション間のデータフローを示しています。
 
-![Adobe CommerceとExperience Cloud ソリューションの連携を示すアーキテクチャ図](../../assets/playbooks/commerce-architecture-v3.png){width="800" zoomable="yes"}
+![Adobe CommerceとExperience Cloud ソリューションの連携を示すアーキテクチャ図](../../assets/playbooks/commerce-architecture.png){width="800" zoomable="yes"}
 
 >[!NOTE]
 >

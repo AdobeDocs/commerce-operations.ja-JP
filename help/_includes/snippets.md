@@ -1,7 +1,7 @@
 ---
-source-git-commit: d22f1c660ba2b6bdc507fa8ba728e0a4269bef8d
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,7 @@ ht-degree: 0%
 
 ## 拡張サポート用のセキュリティパッチ {#extended-support}
 
->[!NOTE]
->
->2.4.5の拡張サポートセキュリティパッチは、Adobe Commerceのお客様のみが利用できます。 これらのパッチは、Magento Open Source コードベースでは使用できません。 [拡張サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/lifecycle-policy#extended-support)を参照してください。
+{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
 ## Commerceのみ {#commerce-only}
 

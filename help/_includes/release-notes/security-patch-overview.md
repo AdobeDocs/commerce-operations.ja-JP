@@ -1,7 +1,7 @@
 ---
-source-git-commit: 52c330f62d722a4cae7f7f360ca61eca0f04b961
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,9 @@ ht-degree: 0%
 
 各セキュリティパッチリリースは、以前のフルパッチリリースに基づいています。 以前のパッチリリースの品質とセキュリティの修正と、以前のフルパッチリリースとセキュリティパッチリリースの間に作成されたセキュリティの修正が含まれています。
 
-セキュリティパッチのダウンロードと適用方法については、[Adobe Commerce ナレッジベース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches)の「_セキュリティパッチの取得方法_」を参照してください。
+セキュリティパッチのダウンロードと適用方法については、_Adobe Commerce ナレッジベース_&#x200B;の「[&#x200B; セキュリティパッチの取得方法](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches)」を参照してください。
 
->[!NOTE]
->
->拡張サポートセキュリティパッチは、Adobe Commerceのお客様のみが利用でき、Magento Open Source コードベースでは利用できません。 [拡張サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/lifecycle-policy#extended-support)を参照してください。
+{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
 ## 分離されたセキュリティパッチファイル
 

@@ -2,9 +2,9 @@
 title: リリースポリシー
 description: Adobe Commerceのリリースタイプ、マーケターとモジュールのバージョン管理、パッチとセキュリティのリリース、ベータ版、ホットフィックス、全体的なリリースポリシーについて説明します。
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Beta リリースには欠陥が含まれている場合があり、いかなる
 
 ## 個別パッチ
 
-個々のパッチには、特定の問題に対する影響の小さい品質修正が含まれています。 これらの修正は、サポートされているAdobe Commerceのマイナーバージョンに適用されます。 Adobeは、[&#x200B; ソフトウェアライフサイクルポリシー](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)に従って、Adobe Commerceの必要に応じて個別のパッチをリリースします。 これらは、[品質パッチツール &#x200B;](../tools/quality-patches-tool/usage.md)を通じて配信されます。
+個々のパッチには、特定の問題に対する影響の小さい品質修正が含まれています。 これらの修正は、サポートされているAdobe Commerceのマイナーバージョンに適用されます。 Adobeは、[&#x200B; ソフトウェアライフサイクルポリシー](lifecycle-policy.md)に従って、Adobe Commerceの必要に応じて個別のパッチをリリースします。 法律用語については、[Adobe Commerce Software Lifecycle Policy （PDF） &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)を参照してください。 これらは、[品質パッチツール &#x200B;](../tools/quality-patches-tool/usage.md)を通じて配信されます。
 
 >[!NOTE]
 >
