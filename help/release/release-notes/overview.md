@@ -16,7 +16,7 @@ ht-degree: 2%
 
 >[!TIP]
 >
->- Adobe Commerceを初めて使用する場合は、[&#x200B; エンタープライズアーキテクチャ &#x200B;](../../implementation-playbook/architecture/enterprise-blueprint.md)および[Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about)に関するトピックを参照して、方向性を確認してください。
+>- Adobe Commerceを初めて使用する場合は、[&#x200B; エンタープライズアーキテクチャ &#x200B;](../../implementation-playbook/architecture/enterprise-blueprint.md)および[Adobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/about)に関するトピックを参照して、方向性を確認してください。
 >- アップグレードについて詳しくは、[推奨事項](../../upgrade/resources/recommended-reading.md)を参照してください。
 
 <table>
@@ -30,18 +30,18 @@ ht-degree: 2%
             <li><a href="security/overview.md">セキュリティパッチ</a></li>
             <li><a href="../../lifecycle-policy.md">ソフトウェアライフサイクルポリシー</a></li>
             <li><a href="../../version-upgrade-enforcement-policy.md">Cloud バージョンのアップグレードの適用ポリシー</a></li>
-            <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe セキュリティ情報</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B for Adobe Commerce</a></li>
+            <li><a href="https://helpx.adobe.com/jp/security/products/magento.html">Adobe セキュリティ情報</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=ja">B2B for Adobe Commerce</a></li>
           </ul>
         </td>
       <td><strong> クラウドインフラストラクチャ上のAdobe Commerce</strong>
         <p>Cloud PlatformでのAdobe Commerceのインストールとアップグレードのデプロイと管理を目的としたCloud Suite for Adobe Commerce パッケージの最新の機能強化について説明します。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/backward-incompatible-changes">後方互換性のない変更</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches">Commerce用のクラウドパッチ</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-docker">Cloud Docker for Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-components">Commerceのクラウドコンポーネント</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package">ece-tools</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/backward-incompatible-changes">後方互換性のない変更</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches">Commerce用のクラウドパッチ</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-docker">Cloud Docker for Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-components">Commerceのクラウドコンポーネント</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package">ece-tools</a></li>
           </ul>
       </td>
     </tr>
@@ -49,13 +49,13 @@ ht-degree: 2%
       <td><strong>Adobe Commerce向けサービス </strong>
         <p>Commerceの革新的なマーチャンダイジングサービスの最新の改善点をご紹介します。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html">カタログサービス</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">Experience Platform Connector</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html">ライブサーチ</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html">決済サービス</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html">商品レコメンデーション</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html">サービスコネクタ</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=ja">Audience Activation</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html?lang=ja">カタログサービス</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce/data-connection/release-notes">Experience Platform Connector</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=ja">ライブサーチ</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=ja">決済サービス</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html?lang=ja">商品レコメンデーション</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=ja">サービスコネクタ</a></li>
           </ul>
         </td>
       <td><strong> ツール </strong>
@@ -74,8 +74,8 @@ ht-degree: 2%
        <td><strong> ストアフロント体験</strong>
         <p>顧客にユニークな体験を提供するために利用できる、ストアフロントテクノロジーの最新の改善点について説明します。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/">Adobe Commerce ストアフロント</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">ページビルダー</a></li>
+            <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja">Adobe Commerce ストアフロント</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html?lang=ja">ページビルダー</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
       </td>

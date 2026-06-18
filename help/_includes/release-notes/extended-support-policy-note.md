@@ -15,5 +15,5 @@ ht-degree: 0%
 >
 >こちらもご覧ください：
 >
->- [&#x200B; ソフトウェア ライフサイクル ポリシー](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) — サポート終了日、延長サポート、およびセキュリティのみの移行規定
+>- [&#x200B; ソフトウェア ライフサイクル ポリシー](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/lifecycle-policy) — サポート終了日、延長サポート、およびセキュリティのみの移行規定
 >- [Cloud バージョンのアップグレード実施ポリシー](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy) – 実施日と必要なアクション
