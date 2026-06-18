@@ -1,8 +1,8 @@
 ---
 title: Cloud バージョン アップグレードの適用ポリシー
 description: Adobe Commerce on Cloudのバージョンのアップグレードの適用について説明します。アップグレード、適用日、廃止、必要なアクションをAdobeで適用する理由を説明します。 移行プロビジョニングと移行パスについては、ライフサイクルポリシーを参照してください。
-nudge: true
-source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
+nudge: false
+source-git-commit: 797f067de451c8b1b4d735e82de66a3fd9b56563
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
