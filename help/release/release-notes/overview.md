@@ -25,7 +25,7 @@ ht-degree: 2%
 
 >[!TIP]
 >
->- Adobe Commerceを初めて使用する場合は、[ エンタープライズアーキテクチャ ](../../implementation-playbook/architecture/enterprise-blueprint.md)および[Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about)に関するトピックを参照して、方向性を確認してください。
+>- Adobe Commerceを初めて使用する場合は、[&#x200B; エンタープライズアーキテクチャ &#x200B;](../../implementation-playbook/architecture/enterprise-blueprint.md)および[Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about)に関するトピックを参照して、方向性を確認してください。
 >- アップグレードについて詳しくは、[推奨事項](../../upgrade/resources/recommended-reading.md)を参照してください。
 
 <table>
