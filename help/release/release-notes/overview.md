@@ -2,9 +2,9 @@
 title: Adobe Commerce リリースノート
 description: 特定の Adobe Commerce リリースの情報の入手先について説明します。
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: 3373f83b5c03e9e81c26376f299014e8bf63a6e9
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '493'
 ht-degree: 2%
 
 ---
@@ -12,7 +12,16 @@ ht-degree: 2%
 
 # Adobe Commerceのリリースノート
 
-次の表に、すべてのAdobe Commerce製品、サービス、およびツールの特定のリリースに関連するリリースノートと重要な情報を示します。
+次の表は、Adobe Commerce オンプレミスおよびAdobe Commerce オンクラウド版の製品、サービス、ツールに関するリリースノートと重要な情報を示しています。
+
+>[!BEGINSHADEBOX]
+
+**他の製品のリリースノート：**
+
+- [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes)
+- [Adobe Commerce Optimizer](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/release-notes)
+
+>[!ENDSHADEBOX]
 
 >[!TIP]
 >
@@ -50,9 +59,9 @@ ht-degree: 2%
         <p>Commerceの革新的なマーチャンダイジングサービスの最新の改善点をご紹介します。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=ja">Audience Activation</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html?lang=ja">カタログサービス</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html">カタログサービス</a></li>
             <li><a href="https://experienceleague.adobe.com/ja/docs/commerce/data-connection/release-notes">Experience Platform Connector</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=ja">ライブサーチ</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html">ライブサーチ</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=ja">決済サービス</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html?lang=ja">商品レコメンデーション</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=ja">サービスコネクタ</a></li>
