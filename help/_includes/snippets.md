@@ -1,11 +1,23 @@
 ---
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: f08c48c7e39c506a71bf9e13d0adc06315013d69
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '1059'
 ht-degree: 0%
 
 ---
 # スニペット
+
+## 参照を含むCommerce on Cloud キャッシュ設定メモ {#cloud-cache-config}
+
+>[!NOTE]
+>
+>Adobe Commerce on Cloud プロジェクトのキャッシュ設定手順については、[RedisおよびValkey サービス設定のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)を参照してください。
+
+## 参照を含むCommerce on Cloud Varnish設定メモ {#varnish-config-cloud}
+
+>[!NOTE]
+>
+>Commerce プロジェクトがクラウドにデプロイされている場合、フルページキャッシュでは、Varnishの代わりに[Fastly](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly)が使用されます。 この節のトピックは、オンプレミスのインストールにのみ適用されます。
 
 ## Adobe サービス版サポート {#supported-versions-only}
 

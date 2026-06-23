@@ -1,56 +1,92 @@
 ---
-title: Varnish キャッシュ用のWeb サーバーの設定
+title: Varnish キャッシュ用にnginxを設定する
 description: Adobe CommerceのVarnish キャッシュを使用するようにweb サーバーを設定する方法について説明します。 ポートの設定と設定の要件について説明します。
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
+autotag-review: '2026-06-22T21:49:41.837Z'
+TQID: 'https://experienceleague.adobe.com/0vOg86gRkST8CZGhdIESzhld63HQ5IUlO4go-Hgw9Xs'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: c8faa589c9e9d1dbc01863d90aad5f91b11c0140
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: 806
 ht-degree: 0%
 
 ---
 
-# Varnish Caching用のWeb サーバーの設定
+# Varnish キャッシュ用のnginxの設定 {#configure-web-server-for-varnish-caching}
 
-Varnishはweb サーバーではなく受信HTTP リクエストに直接応答するため、web サーバーをデフォルトのポート 80以外のポートでリッスンするように設定します。
+VarnishがAdobe Commerceのフルページキャッシュとして使用される場合、Varnishは通常、パブリック HTTP ポートでリッスンし、8080などのデフォルト以外のバックエンドポートでnginxにリクエストを転送します。 Varnishが使用するバックエンドポートをリッスンするように、Commerce オリジンサーバーのnginx サイト設定を更新します。
+
+{{varnish-config-cloud}}
 
 次の節では、ポート 8080を例として使用します。
 
-**Apache 2.4 リッスン ポートを変更するには**:
+**Commerce origin サーバー**&#x200B;のnginx リッスン ポートを変更します。
 
-1. `/etc/httpd/conf/httpd.conf`をテキストエディターで開きます。
-1. `Listen` ディレクティブを探します。
-1. リッスン ポートの値を`8080`に変更します。 （使用可能な任意のリッスン ポートを使用できます）。
-1. 変更を`httpd.conf`に保存して、テキストエディターを終了します。
+1. Adobe Commerce origin サーバーのnginx サイト設定をテキストエディターで開きます。
+
+場所は、オペレーティングシステムとnginx レイアウトによって異なります。 例えば、Ubuntuでは、`/etc/nginx/sites-available/`の下のファイルを使用することがよくあります。
+
+1. Commerce サイトの`server` ブロックで、`listen` ディレクティブをパブリック HTTP ポートから、Varnishがnginxへのアクセスに使用するバックエンドポートに変更します。
+
+   例えば、変更します
+
+   ```conf
+   server {
+       listen 80;
+       server_name example.com;
+       root /var/www/html/magento2;
+       include /var/www/html/magento2/nginx.conf.sample;
+   }
+   ```
+
+   宛先：
+
+   ```conf
+   server {
+       listen 8080;
+       server_name example.com;
+       root /var/www/html/magento2;
+       include /var/www/html/magento2/nginx.conf.sample;
+   }
+   ```
+
+1. ファイルを保存します。
+
+1. nginx設定を確認します。
+
+   ```shell
+   nginx -t
+   ```
+
+1. nginxを再起動します。
+
+   ```shell
+   systemctl restart nginx
+   ```
 
 ## Varnish システム設定の変更
 
-Varnish システム設定を変更するには：
+バックエンドポートでリッスンするようにnginxを更新した後、そのホストとポートにリクエストを転送するようにVarnishを設定します。 例：
 
-1. `root`権限を持つユーザーとして、Vanish設定ファイルをテキストエディターで開きます。
-
-   - CentOS 6: `/etc/sysconfig/varnish`
-   - CentOS 7: `/etc/varnish/varnish.params`
-   - Debian: `/etc/default/varnish`
-   - Ubuntu: `/etc/default/varnish`
-
-1. Varnish listen portを80に設定します。
-
-   ```conf
-   VARNISH_LISTEN_PORT=80
-   ```
-
-   Varnish 4.xの場合は、DAEMON_OPTSに`-a` パラメーターの正しいリスニングポートが含まれていることを確認します（VARNISH_LISTEN_PORTが正しい値に設定されている場合でも）。
-
-   ```conf
-   DAEMON_OPTS="-a :80 \
-      -T localhost:6082 \
-      -f /etc/varnish/default.vcl \
-      -S /etc/varnish/secret \
-      -s malloc,256m"
-   ```
-
-1. Varnish設定ファイルに変更を保存し、テキストエディターを終了します。
+```conf
+backend default {
+    .host = "192.0.2.55";
+    .port = "8080";
+}
+```
 
 ### デフォルトのVCLの変更
 
@@ -76,11 +112,11 @@ Varnishを最小限に設定するには：
 
 1. `.host`の値を、Varnish _バックエンド_&#x200B;または&#x200B;_オリジン サーバー_&#x200B;の完全修飾ホスト名またはIP アドレスとリッスン ポートに置き換えます。つまり、コンテンツ Varnishを提供するサーバーが高速化します。
 
-   通常、これはあなたのweb サーバーです。 _Varnish ガイド_&#x200B;の「[ バックエンドサーバー](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)」を参照してください。
+   通常、これはあなたのweb サーバーです。 _Varnish ガイド_&#x200B;の「[&#x200B; バックエンドサーバー](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)」を参照してください。
 
 1. `.port`の値をWeb サーバーのリッスン ポート （この例では8080）に置き換えます。
 
-   例：Apacheはホスト 192.0.2.55にインストールされ、Apacheはポート 8080でリッスンしています：
+   例：nginxはホスト 192.0.2.55にインストールされ、ポート 8080でリッスンしています。
 
    ```conf
    backend default {
@@ -91,7 +127,7 @@ Varnishを最小限に設定するには：
 
    >[!INFO]
    >
-   >VarnishとApacheが同じホストで実行されている場合、Adobeでは、`localhost`ではなくIP アドレスまたはホスト名を使用することをお勧めします。
+   >Varnishとnginxが同じホストで実行されている場合、Adobeでは、`localhost`ではなくIP アドレスまたはホスト名を使用することをお勧めします。
 
 1. 変更を`default.vcl`に保存して、テキストエディターを終了します。
 
@@ -162,15 +198,15 @@ netstat -tulpn
 ```text
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
-tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
+tcp        0      0 :::8080                     :::*                        LISTEN      26822/nginx
 tcp        0      0 ::1:48509                   :::*                        LISTEN      32604/varnishd
 ```
 
-前述の図は、Varnishがポート 80で動作し、Apacheがポート 8080で動作していることを示しています。
+前述の図は、Varnishがポート 80で動作し、nginxがポート 8080で動作していることを示しています。
 
 `varnishd`の出力が表示されない場合は、Varnishが実行されていることを確認します。
 
-[`netstat` オプション ](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html)を参照してください。
+[`netstat` オプション &#x200B;](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html)を参照してください。
 
 ## Commerce ソフトウェアのインストール
 

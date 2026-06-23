@@ -8,9 +8,10 @@ feature: Best Practices, Cache
 feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+badgePaas: label="Commerce on Cloud" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Cloud プロジェクト上のAdobe Commerceにのみ適用されます。"
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '2071'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 # RedisおよびValkey サービス設定のベストプラクティス
 
-以下の推奨事項を使用して、Adobe Commerceのキャッシュとセッション用にRedisまたはValkeyを設定します。
+以下の推奨事項を使用して、Adobe Commerce on CloudのRedisまたはValkeyのキャッシュとセッションを設定します。 オンプレミス キャッシュの設定については、[&#x200B; キャッシュ バックエンド オプションとストレージ リファレンス &#x200B;](../../../configuration/cache/cache-options.md)を参照してください。
 
 - L2 キャッシュの設定
 - スレーブ接続を有効にする
@@ -30,11 +31,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Commerce on Cloud インフラストラクチャ環境の場合は、最新バージョンの`ece-tools` パッケージを使用していることを確認します。 そうでない場合は、[最新バージョン &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=ja)にアップグレードしてください。 ローカル環境にインストールされているバージョンは、`composer show magento/ece-tools` CLI コマンドを使用して確認できます。
+>最新バージョンの`ece-tools` パッケージを使用していることを確認してください。 そうでない場合は、[最新バージョン &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=ja)にアップグレードしてください。 ローカル環境にインストールされているバージョンは、`composer show magento/ece-tools` CLI コマンドを使用して確認できます。
 
 ## L2 キャッシュの設定
 
 `.magento.env.yaml`構成ファイルで`REDIS_BACKEND`または`VALKEY_BACKEND`のデプロイメント変数を設定して、L2 キャッシュを構成します。
+
+実装の詳細、設定例、デプロイメント固有のガイダンスについては、[&#x200B; パフォーマンス最適化のためのL2 キャッシュ設定](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/level-two-cache)を参照してください。
 
 >[!BEGINTABS]
 
@@ -48,9 +51,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Cloud Infrastructureでの環境設定については、_Cloud Infrastructure Guide_&#x200B;の[`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_backend)設定リファレンスを参照してください。Commerce on Cloud Infrastructure Guide
-
-オンプレミスのインストールについては、_設定ガイド_&#x200B;の「[Redis ページキャッシュの設定](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)」を参照してください。
+環境設定の詳細については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_backend)を参照してください。
 
 >[!TAB Valkey設定]
 
@@ -62,9 +63,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-クラウドインフラストラクチャでの環境設定については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[`VALKEY_BACKEND`](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)設定リファレンスを参照してください。
-
-オンプレミスのインストールについては、_設定ガイド_&#x200B;の[Valkey](../../../configuration/cache/config-valkey.md)の設定を参照してください。
+環境の設定の詳細については、「_Commerce on Cloud Infrastructure Guide_」の「[`VALKEY_BACKEND`](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) コンフィギュレーション変数」を参照してください。
 
 >[!ENDTABS]
 
@@ -145,9 +144,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Commerce Cloud インフラストラクチャの環境設定については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_use_slave_connection)を参照してください。
-
-Adobe Commerce オンプレミス インストールの場合、`bin/magento setup` コマンドを使用して新しいRedis キャッシュ実装を設定します。 _設定ガイド_&#x200B;の「[&#x200B; デフォルトのキャッシュにRedisを使用する](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)」を参照してください。
+環境変数の設定の詳細については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)を参照してください。
 
 >[!TAB Valkey設定]
 
@@ -159,9 +156,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Commerce Cloud インフラストラクチャの環境設定については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#valkey_use_slave_connection)を参照してください。
-
-Adobe Commerce オンプレミス インストールの場合、`bin/magento setup` コマンドを使用して新しいValkey キャッシュ実装を設定します。 _設定ガイド_&#x200B;の「[Valkey](../../../configuration/cache/config-valkey.md)の設定」を参照してください。
+環境変数の設定の詳細については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#valkey_use_slave_connection)を参照してください。
 
 >[!ENDTABS]
 
@@ -212,8 +207,6 @@ cat /tmp/list.keys | grep "HGET" | awk '{print $5}' | sort | uniq -c | sort -nr 
 redis-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
 
-オンプレミスのインストールについては、_設定ガイド_&#x200B;の[Redis プリロード機能](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature)を参照してください。
-
 >[!TAB キーの事前読み込みキーの設定が有効です]
 
 プリロードキーは、`.magento.env.yaml`設定ファイルで設定されます。
@@ -252,8 +245,6 @@ cat /tmp/list.keys | grep "HGET" | awk '{print $5}' | sort | uniq -c | sort -nr 
 ```terminal
 valkey-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
-
-オンプレミスのインストールについては、_設定ガイド_&#x200B;の[Valkey プリロード機能](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature)を参照してください。
 
 >[!ENDTABS]
 
@@ -306,8 +297,6 @@ stage:
 >[!NOTE]
 >
 >`full_page` キャッシュの種類は、[Fastly](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly)を使用しているため、Cloud インフラストラクチャプロジェクト上のAdobe Commerceとは関係ありません。
-
-オンプレミスのインストールについては、_設定ガイド_&#x200B;の[古いキャッシュオプション &#x200B;](../../../configuration/cache/level-two-cache.md#stale-cache-options)を参照してください。
 
 >[!WARNING]
 >
@@ -996,7 +985,6 @@ stage:
 
 次の関連トピックを参照してください。
 
-- [Redis ページキャッシュ](../../../configuration/cache/redis-pg-cache.md)
-- [セッション ストレージにRedisを使用](../../../configuration/cache/redis-session.md)
-- [デフォルトのキャッシュにValkeyを使用](../../../configuration/cache/valkey-pg-cache.md)
-- [セッション ストレージにValkeyを使用](../../../configuration/cache/valkey-session.md)
+- [Redis サービスの設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/redis)
+- [変数のデプロイ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
+
