@@ -12,9 +12,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: c7b05a4b636b1d4f67e1d3db40dce7fab1cb1b6b
+source-git-commit: f1cae5b4ad3d75dbc7f83b7687a4614f678263cd
 workflow-type: tm+mt
-source-wordcount: 30977
+source-wordcount: 31322
 ht-degree: 0%
 
 ---
@@ -30,6 +30,21 @@ ht-degree: 0%
 >[!INFO]
 >
 >Magento Open Sourceのコミュニティによって作成された[!DNL quality patches]について詳しくは、[&#x200B; リリースノート &#x200B;](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)を参照してください。
+
+## v1.1.81 {#v1-1-81}
+
+* **ACP2E-4300** （Adobe Commerce >=2.4.5 &lt;2.4.9の場合） – 管理画面で顧客グループを変更しても、ストアフロントのカタログ権限が更新されず、カタログとカートが古い権限を反映する問題を修正します。
+* **ACP2E-4401** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.8 &lt;2.4.9） – ホームページ リンクのスケジュールされた更新プレビューが、製品リストを表示する代わりにメンテナンスページにリダイレクトされる問題を修正します。
+* **ACP2E-4395** （Adobe Commerce >=2.4.5 &lt;2.4.9）は、グローバルスコープに金額が指定されていない場合に、ギフトカード APIの商品作成でエラーが表示されない問題を修正します。
+* **ACP2E-4468** （Adobe Commerce >=2.4.8 &lt;2.4.9）は、web サイトのスコープ権限を持つ管理者ユーザーがバナーコンテンツを編集できない問題を修正します。
+* **ACP2E-4630** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.7 &lt;2.4.9） – カスタムオプションを持つ長い商品名が、複数ページの請求書、出荷、クレジットメモ、返品のPDFの隣接する列またはアイテムとページ区切りの後に重なり、行項目が読み取れなくなる問題を修正しました。
+* **ACP2E-4680** （Adobe Commerceの場合、B2B >=1.5.0 &lt;1.5.3） – 最終交渉可能な見積もりから販売不可または削除済みの商品が消える問題を修正します。
+* **ACP2E-4709** （Adobe Commerce >=2.4.7 &lt;2.4.9）の場合 – ページビルダーを使用するとCMS ページが保存されない問題を修正します。
+* **ACP2E-4786** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.5 &lt;2.4.10） – ストレージドライバーのパス解決が正しくないため、AWS S3 リモートストレージが設定されているときに製品の書き出しがファイルを書き込めない問題を修正します。
+* **ACP2E-4801** （Adobe Commerceの場合、B2B >=1.4.2 &lt;1.5.3） – 管理者からの交渉可能な見積もりの「設定」ボタンを使用してバンドル製品オプションの数量を更新しても適用されず、変更が破棄される問題を修正します。
+* **ACP2E-4815** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.6-p15 &lt;2.4.7 |>=2.4.7-p1 &lt;2.4.9） – ログでPHPの例外が発生する複数のGraphQLの問題、GraphQLを介した注文後に作成されたお客様アカウントとの正しい注文関連付け、HTTP仕様に関するGraphQL応答の整合性を修正します。
+* 更新されたバージョン：**ACSD-64212**、**ACSD-64523**、**ACSD-67347**
+* 置換されたパッチ：**ACSD-67941**、**ACSD-64212**、**ACSD-68925**
 
 ## v1.1.80 {#v1-1-80}
 
