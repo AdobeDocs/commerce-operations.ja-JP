@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-06-11T01:10:37.916Z'
 TQID: 'https://experienceleague.adobe.com/q2sNWUJQCm4eRUP8RusytBAqQoscU4F9qDtDIeNmm6E'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 3eff1670dd536175d4905d386027674431831ae8
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: dace5fedf8e247c3391a8ffae1b2050f3e37367e
 workflow-type: tm+mt
-source-wordcount: 409
+source-wordcount: 410
 ht-degree: 0%
 
 ---
@@ -33,7 +28,7 @@ QPT v1.1.80には、次のパッチが含まれています。
 1. **ACP2E-4488**：大きな属性セットを持つ製品の[!UICONTROL Admin]での製品の保存または編集が遅くなる問題を修正します。
 1. **ACP2E-4493**：非同期インデックス作成が有効になっている場合に、Sales Order Archive グリッドに誤った注文ステータスが表示される問題を修正します。
 1. **ACP2E-4496**:Analytics cron ジョブが実行中にパフォーマンスの低下を引き起こし、全体的なシステムパフォーマンスが向上する問題を修正します。
-1. **ACP2E-4533**: ストアコードがURLに含まれている場合に、ストアフロントでプレースホルダー画像が読み込まれない問題を修正しました。
+1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)**: URLにストアコードが含まれている場合に、ストアフロントでプレースホルダー画像が読み込まれない問題を修正しました。
 1. **ACP2E-4552**:GraphQLの応答で会社のステータスが返されない問題を修正します。
 1. **ACP2E-4610**: `sales_clean_quotes` cron ジョブにパフォーマンスの問題がある問題を修正します。
 1. **ACP2E-4615**: オンライン注文の返金が失敗し、PayPal エラーが「*PayPal ゲートウェイがリクエストを拒否する」と表示される問題を修正しました。 内部エラー。*.
