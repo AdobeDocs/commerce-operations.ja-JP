@@ -3,7 +3,7 @@ title: 静的コンテンツ署名とブラウザーキャッシュの無効化
 description: Adobe Commerceで静的コンテンツ署名を使用して、静的リソースのブラウザーキャッシュを無効にする方法を説明します。 この機能を有効にして設定する方法について説明します。
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce クラウド版およびオンプレミスプロジェクトにのみ適用されます。"
+badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce クラウド版およびオンプレミスプロジェクトにのみ適用されます。"
 autotag-review: '2026-06-22T21:48:08.334Z'
 TQID: 'https://experienceleague.adobe.com/vagWBVnjIS7tjnwVE5Dk56VDmPtbPgjsNVLBHSlOc-s'
 product_v2:
@@ -51,7 +51,7 @@ http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/ima
 
 Commerceでは、デフォルトでこの機能が有効になっています。Adobeでは、古い静的リソースを提供するブラウザーに関する問題を回避するために、この機能を有効にしておくことをお勧めします。
 
-静的コンテンツ署名の設定は、[**[!UICONTROL Stores]**/ 設定/設定/**[!UICONTROL Advanced]**/**[!UICONTROL Developer]**/**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures)にあります。
+静的コンテンツ署名の設定は、[**[!UICONTROL Stores]**/ 設定/設定/**[!UICONTROL Advanced]**/**[!UICONTROL Developer]**/**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures)にあります。
 
 - **オンプレミスのみ**：この設定は、[実稼動モード &#x200B;](../bootstrap/application-modes.md#production-mode)でサイトが&#x200B;**not**&#x200B;の場合に使用できます。
 - **Cloud**：実稼動モードが厳密に適用されているため、この設定は非表示になっています。したがって、次に示すようにコマンドラインを使用する必要があります。
