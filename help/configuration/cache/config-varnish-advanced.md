@@ -4,11 +4,18 @@ description: ヘルスチェック、グレース、サントモードなど、A
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
 badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
-product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
 source-wordcount: 927
@@ -22,7 +29,7 @@ ht-degree: 0%
 
 Varnishには、Commerce サーバーが正常に機能していない場合に長い遅延やタイムアウトが発生するのを防ぐ機能がいくつか用意されています。 これらの機能は、`default.vcl` ファイルで設定できます。 このトピックでは、AdminからダウンロードしたVCL （Varnish Configuration Language）ファイルにCommerceが提供する追加機能について説明します。
 
-Varnish設定言語の使用について詳しくは、[Varnish リファレンスマニュアル ](https://varnish-cache.org/docs/index.html)を参照してください。
+Varnish設定言語の使用について詳しくは、[Varnish リファレンスマニュアル &#x200B;](https://varnish-cache.org/docs/index.html)を参照してください。
 
 ## ヘルスチェック
 
@@ -44,7 +51,7 @@ Commerceでは、次のデフォルトのヘルスチェックを定義します
 
 `health_check.php` スクリプトは`pub` ディレクトリにあります。 Commerce ルート ディレクトリが`pub`の場合は、`url` パラメーターのパスを`/pub/health_check.php`から`health_check.php`に変更してください。
 
-詳しくは、[Varnish ヘルスチェック ](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks)のドキュメントを参照してください。
+詳しくは、[Varnish ヘルスチェック &#x200B;](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks)のドキュメントを参照してください。
 
 ## 猶予モード
 
@@ -93,11 +100,11 @@ bin/magento cache:flush
 
 ### インストール
 
-Saint モードはメインのVarnish パッケージの一部ではありません。 ダウンロードしてインストールする必要がある、個別にバージョン管理された`vmod`です。 そのため、Varnishのバージョンについては、[ インストール手順](https://varnish-cache.org/docs/index.html)の説明に従って、ソースからVarnishを再コンパイルする必要があります。
+Saint モードはメインのVarnish パッケージの一部ではありません。 ダウンロードしてインストールする必要がある、個別にバージョン管理された`vmod`です。 そのため、Varnishのバージョンについては、[&#x200B; インストール手順](https://varnish-cache.org/docs/index.html)の説明に従って、ソースからVarnishを再コンパイルする必要があります。
 
 再コンパイルしたら、Saint モードモジュールをインストールできます。 一般的には、次の手順に従います。
 
-1. ソースコードを[Varnish モジュール ](https://github.com/varnish/varnish-modules)から取得します。 0.9.x バージョンにソースコードエラーが含まれているので、Git バージョン（マスターバージョン）をクローンします。
+1. ソースコードを[Varnish モジュール &#x200B;](https://github.com/varnish/varnish-modules)から取得します。 0.9.x バージョンにソースコードエラーが含まれているので、Git バージョン（マスターバージョン）をクローンします。
 1. オートツールを使用してソースコードを作成します。
 
    ```shell
@@ -109,7 +116,7 @@ Saint モードはメインのVarnish パッケージの一部ではありませ
    sudo make install
    ```
 
-Saint モードモジュールのインストールについて詳しくは、[Varnish モジュールコレクション ](https://github.com/varnish/varnish-modules)を参照してください。
+Saint モードモジュールのインストールについて詳しくは、[Varnish モジュールコレクション &#x200B;](https://github.com/varnish/varnish-modules)を参照してください。
 
 ### VCL ファイルのサンプル
 

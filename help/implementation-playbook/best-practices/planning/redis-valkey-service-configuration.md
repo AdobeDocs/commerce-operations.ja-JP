@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # RedisおよびValkey サービス設定のベストプラクティス
 
-以下の推奨事項を使用して、Adobe Commerce on CloudのRedisまたはValkeyのキャッシュとセッションを設定します。 オンプレミス キャッシュの設定については、[ キャッシュ バックエンド オプションとストレージ リファレンス ](../../../configuration/cache/cache-options.md)を参照してください。
+以下の推奨事項を使用して、Adobe Commerce on CloudのRedisまたはValkeyのキャッシュとセッションを設定します。 オンプレミス キャッシュの設定については、[&#x200B; キャッシュ バックエンド オプションとストレージ リファレンス &#x200B;](../../../configuration/cache/cache-options.md)を参照してください。
 
 - L2 キャッシュの設定
 - スレーブ接続を有効にする
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->最新バージョンの`ece-tools` パッケージを使用していることを確認してください。 そうでない場合は、[最新バージョン ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html)にアップグレードしてください。 ローカル環境にインストールされているバージョンは、`composer show magento/ece-tools` CLI コマンドを使用して確認できます。
+>最新バージョンの`ece-tools` パッケージを使用していることを確認してください。 そうでない場合は、[最新バージョン &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html)にアップグレードしてください。 ローカル環境にインストールされているバージョンは、`composer show magento/ece-tools` CLI コマンドを使用して確認できます。
 
 ## L2 キャッシュの設定
 
 `.magento.env.yaml`構成ファイルで`REDIS_BACKEND`または`VALKEY_BACKEND`のデプロイメント変数を設定して、L2 キャッシュを構成します。
 
-実装の詳細、設定例、デプロイメント固有のガイダンスについては、[ パフォーマンス最適化のためのL2 キャッシュ設定](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache)を参照してください。
+実装の詳細、設定例、デプロイメント固有のガイダンスについては、[&#x200B; パフォーマンス最適化のためのL2 キャッシュ設定](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache)を参照してください。
 
 >[!BEGINTABS]
 
@@ -70,7 +70,7 @@ stage:
 
 ### Adobe Commerce CloudのL2 キャッシュメモリサイズ
 
-L2 キャッシュでは、ストレージメカニズムとして[一時ファイルシステム ](https://en.wikipedia.org/wiki/Tmpfs) （`/dev/shm`）が使用されます。 特殊なキー値ストアとは異なり、tmpfsにはキーの立ち退きポリシーがないので、メモリの使用量は制限なく増加する可能性があります。 Adobe Commerceでは、使用状況が設定可能なしきい値（デフォルトでは95%）に達すると、自動的にL2 ストレージがクリアされます。 大きな`/dev/shm` マウントを要求するか、クリーンアップしきい値を下げることで、メモリ消費を制御できます。
+L2 キャッシュでは、ストレージメカニズムとして[一時ファイルシステム &#x200B;](https://en.wikipedia.org/wiki/Tmpfs) （`/dev/shm`）が使用されます。 特殊なキー値ストアとは異なり、tmpfsにはキーの立ち退きポリシーがないので、メモリの使用量は制限なく増加する可能性があります。 Adobe Commerceでは、使用状況が設定可能なしきい値（デフォルトでは95%）に達すると、自動的にL2 ストレージがクリアされます。 大きな`/dev/shm` マウントを要求するか、クリーンアップしきい値を下げることで、メモリ消費を制御できます。
 
 プロジェクトの要件に基づいて、L2 キャッシュメモリの最大使用量を調整します。 次のいずれかの方法を使用します。
 
@@ -207,7 +207,7 @@ cat /tmp/list.keys | grep "HGET" | awk '{print $5}' | sort | uniq -c | sort -nr 
 redis-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
 
->[!TAB  キーの事前読み込みキーの設定]が有効です
+>[!TAB キーの事前読み込みキーの設定が有効です]
 
 プリロードキーは、`.magento.env.yaml`設定ファイルで設定されます。
 
@@ -260,7 +260,7 @@ valkey-cli -p 6370 -n 1 hgetall "<key_name>"
 
 >[!BEGINTABS]
 
->[!TAB Redis]の古いキャッシュの設定
+>[!TAB Redisの古いキャッシュの設定]
 
 Redisの場合
 
@@ -276,7 +276,7 @@ stage:
             use_stale_cache: true
 ```
 
->[!TAB Valkey]の古いキャッシュの設定
+>[!TAB Valkeyの古いキャッシュの設定]
 
 Valkeyの場合：
 
@@ -303,7 +303,7 @@ stage:
 >上記の設定により、`default` キャッシュフロントエンドで古いキャッシュが有効になり、そのフロントエンドを使用するすべてのキャッシュエントリに古いキャッシュ動作が適用されます。 Magento コアキャッシュの種類は、通常、この設定で期待どおりに動作します。 ただし、専用のキャッシュフロントエンドを使用せずに汎用`\Magento\Framework\App\Cache` API （例：`$this->cache->save()`）を介してキャッシュに書き込むカスタムコードまたは拡張機能がプロジェクトに含まれている場合、それらのエントリは再生中に古い値を提供することもできます。
 >
 >
->これにより、カスタマイズで予期しない動作が発生する場合は、`default` フロントエンドで古いキャッシュを無効のままにし、選択したキャッシュタイプに対してのみ有効にします。これは、一般的に[ オンプレミス ](../../../configuration/cache/level-two-cache.md#stale-cache-options)で行われるのと同じです。
+>これにより、カスタマイズで予期しない動作が発生する場合は、`default` フロントエンドで古いキャッシュを無効のままにし、選択したキャッシュタイプに対してのみ有効にします。これは、一般的に[&#x200B; オンプレミス &#x200B;](../../../configuration/cache/level-two-cache.md#stale-cache-options)で行われるのと同じです。
 
 ### キャッシュタイプごとに個別に古いキャッシュを有効にする
 
@@ -315,7 +315,7 @@ stage:
 
 >[!BEGINTABS]
 
->[!TAB Redis]の古いキャッシュの設定
+>[!TAB Redisの古いキャッシュの設定]
 
 Redisの場合
 
@@ -371,7 +371,7 @@ stage:
         # add other cache types as needed...
 ```
 
->[!TAB Valkey]の古いキャッシュの設定
+>[!TAB Valkeyの古いキャッシュの設定]
 
 Valkeyの場合：
 
@@ -479,7 +479,7 @@ stage:
 
 1. 実稼動環境とステージング環境のセッション専用の新しいRedis インスタンスをリクエストします。
 
-   [Adobe Commerce サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。 更新された`.magento/services.yaml`および`.magento.app.yaml`設定ファイルを含めます。
+   [Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。 更新された`.magento/services.yaml`および`.magento.app.yaml`設定ファイルを含めます。
 
    このアップデートはダウンタイムを引き起こしませんが、新しいサービスをアクティブ化するにはデプロイメントが必要です。
 
@@ -511,7 +511,7 @@ stage:
        min_lifetime: 60
    ```
 
-1. Redis キャッシュインスタンスの[ デフォルト データベース ](../../../configuration/cache/redis-pg-cache.md) （`db 0`）からセッションを削除します。
+1. Redis キャッシュインスタンスの[&#x200B; デフォルト データベース &#x200B;](../../../configuration/cache/redis-pg-cache.md) （`db 0`）からセッションを削除します。
 
    ```terminal
    redis-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
@@ -554,7 +554,7 @@ stage:
 
 1. 実稼動環境とステージング環境のセッション専用の新しいValkey インスタンスをリクエストします。
 
-   [Adobe Commerce サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。 更新された`.magento/services.yaml`および`.magento.app.yaml`設定ファイルを含めます。
+   [Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。 更新された`.magento/services.yaml`および`.magento.app.yaml`設定ファイルを含めます。
 
    このアップデートはダウンタイムを引き起こしませんが、新しいサービスをアクティブ化するにはデプロイメントが必要です。
 
@@ -586,7 +586,7 @@ stage:
        min_lifetime: 60
    ```
 
-1. Valkey キャッシュインスタンスの[ デフォルト データベース ](../../../configuration/cache/redis-pg-cache.md) （`db 0`）からセッションを削除します。
+1. Valkey キャッシュインスタンスの[&#x200B; デフォルト データベース &#x200B;](../../../configuration/cache/redis-pg-cache.md) （`db 0`）からセッションを削除します。
 
    ```terminal
    valkey-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
@@ -596,7 +596,7 @@ stage:
 
 ## キャッシュ圧縮
 
-6 GBを超えるRedisまたはValkey `maxmemory`を使用する場合は、キャッシュ圧縮を有効にして、キーが消費する領域を削減できます。 この設定は、クライアント側のパフォーマンスを処理してメモリを節約することに注意してください。 CPUのキャパシティが空いている場合は、有効にすることを検討してください。 _設定ガイド_&#x200B;の「[ セッションストレージにRedisを使用する](../../../configuration/cache/redis-session.md)」または「[ セッションストレージにValkeyを使用する](../../../configuration/cache/valkey-session.md)」を参照してください。
+6 GBを超えるRedisまたはValkey `maxmemory`を使用する場合は、キャッシュ圧縮を有効にして、キーが消費する領域を削減できます。 この設定は、クライアント側のパフォーマンスを処理してメモリを節約することに注意してください。 CPUのキャパシティが空いている場合は、有効にすることを検討してください。 _設定ガイド_&#x200B;の「[&#x200B; セッションストレージにRedisを使用する](../../../configuration/cache/redis-session.md)」または「[&#x200B; セッションストレージにValkeyを使用する](../../../configuration/cache/valkey-session.md)」を参照してください。
 
 ```yaml
 stage:
@@ -614,7 +614,7 @@ stage:
 
 ## 非同期解放を有効にする
 
-クラウドインフラストラクチャ上のAdobe Commerceで`lazyfree`を有効にするには、次のRedisまたはValkey設定を環境に適用することを要求する[Adobe Commerce サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。
+クラウドインフラストラクチャ上のAdobe Commerceで`lazyfree`を有効にするには、次のRedisまたはValkey設定を環境に適用することを要求する[Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。
 
 ```text
 lazyfree-lazy-eviction yes
@@ -636,11 +636,11 @@ lazyfree-lazy-user-del yes
 
 ## マルチスレッド I/Oを有効にする
 
-クラウドインフラストラクチャ上のAdobe CommerceでRedis I/O スレッドを有効にするには、以下のI/O スレッド設定をリクエストする[Adobe Commerce サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。 これにより、CPUの使用率を高くしながらも、ソケットの読み取りと書き込みをオフロードし、メインスレッドからコマンド解析を行うことで、スループットを向上させることができます。 負荷の下で検証し、ホストを監視します。
+クラウドインフラストラクチャ上のAdobe CommerceでRedis I/O スレッドを有効にするには、以下のI/O スレッド設定をリクエストする[Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。 これにより、CPUの使用率を高くしながらも、ソケットの読み取りと書き込みをオフロードし、メインスレッドからコマンド解析を行うことで、スループットを向上させることができます。 負荷の下で検証し、ホストを監視します。
 
 >[!BEGINTABS]
 
->[!TAB Redis]のI/O スレッドの設定
+>[!TAB RedisのI/O スレッドの設定]
 
 Redisの場合
 
@@ -649,7 +649,7 @@ io-threads-do-reads yes
 io-threads 8 # Choose a value lower than the number of CPU cores (check with nproc), and then tune under load.
 ```
 
->[!TAB Valkey]のI/O スレッドを設定
+>[!TAB ValkeyのI/O スレッドを設定]
 
 Valkeyの場合：
 

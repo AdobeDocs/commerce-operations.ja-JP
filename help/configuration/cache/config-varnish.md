@@ -5,11 +5,19 @@ feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
 autotag-review: '2026-06-22T21:50:49.341Z'
 TQID: 'https://experienceleague.adobe.com/BsUTkhb2QhntUOT3EC181zdsQjqk8Dw0T5Iac0LS318'
-product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 8cbff72c3b765c6ff85a34a3ec3d2f58b52bb9c3
 workflow-type: tm+mt
 source-wordcount: 1077
@@ -25,7 +33,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->本番環境でVarnishを使用することを&#x200B;_強くお勧めします_。 組み込みのフルページキャッシュ（ファイルシステムまたは[ データベース ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)のいずれか）は、Varnishよりもはるかに低速で、VarnishはHTTP トラフィックを高速化するように設計されています。
+>本番環境でVarnishを使用することを&#x200B;_強くお勧めします_。 組み込みのフルページキャッシュ（ファイルシステムまたは[&#x200B; データベース &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)のいずれか）は、Varnishよりもはるかに低速で、VarnishはHTTP トラフィックを高速化するように設計されています。
 
 Varnishについて詳しくは、次を参照してください。
 
@@ -118,7 +126,7 @@ Varnishには次の問題があります。
 
 次の図は、ブラウザーインスペクターを使用した例を示しています。
 
-![ キャッシュ可能なオブジェクトに対して初めてリクエストが行われた場合、Varnishはそれをブラウザーに配信します](../../assets/configuration/varnish-webserver-first-visit.png)
+![&#x200B; キャッシュ可能なオブジェクトに対して初めてリクエストが行われた場合、Varnishはそれをブラウザーに配信します](../../assets/configuration/varnish-webserver-first-visit.png)
 
 前述の例は、ストアフロントのメインページ （`m2_ce_my`）に対するリクエストを示しています。 CSSおよびJavaScript アセットは、クライアントブラウザーにキャッシュされます。
 
