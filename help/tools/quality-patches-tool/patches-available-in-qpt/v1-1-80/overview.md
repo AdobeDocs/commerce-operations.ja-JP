@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: dace5fedf8e247c3391a8ffae1b2050f3e37367e
+source-git-commit: 08101f36665d77f807386f261d39dee1e379a8b1
 workflow-type: tm+mt
-source-wordcount: 410
+source-wordcount: 465
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ QPT v1.1.80には、次のパッチが含まれています。
 1. **ACP2E-4615**: オンライン注文の返金が失敗し、PayPal エラーが「*PayPal ゲートウェイがリクエストを拒否する」と表示される問題を修正しました。 内部エラー。*.
 1. **ACP2E-4626**：一部のストアフロント JavaScript ファイルがリクエストされ、2回実行され、断続的に重複する読み込みと不安定な動作が発生する問題を修正します。
 1. **ACP2E-4653**: REST APIを使用してルールを取得または更新する際に&#x200B;**[!UICONTROL Category (Parent Only)]**&#x200B;と&#x200B;**[!UICONTROL Category (Children Only)]**&#x200B;の&#x200B;**[!UICONTROL Cart Price Rule]**&#x200B;条件属性のスコープが公開されない問題を修正しました。
+1. **[ACP2E-4808](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)**: ストアフロント製品ページのWeight属性に、設定された測定単位（lbsまたはkgs）を含めずに&#x200B;**[!UICONTROL Additional Information]**&#x200B;または&#x200B;**[!UICONTROL More Information]** セクションに生の数値のみが表示される問題を修正しました。
+1. **ACP2E-4156**: REST APIの配送先住所の検証が[!UICONTROL Admin]で定義された属性設定に準拠しない問題を修正します。
 1. **ACP2E-4808**: ストアフロント製品ページのWeight属性に、設定された測定単位（lbsまたはkgs）を含めずに&#x200B;**[!UICONTROL Additional Information]**&#x200B;または&#x200B;**[!UICONTROL More Information]** セクションに生の数値のみが表示される問題を修正しました。
 1. **[ACP2E-4156](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)**: [!DNL REST] APIの配送先住所の検証が、Adminで定義された属性設定に準拠しない問題を修正します。
 1. **ACP2E-4813**: チェックアウト時にUSPSの配送方法が利用できない問題を修正し、複数のパッケージに分割される注文を含む、特定の製品の配送見積りが正しくありません。

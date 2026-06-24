@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できるさまざまなツール、その用途、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: dace5fedf8e247c3391a8ffae1b2050f3e37367e
+source-git-commit: 08101f36665d77f807386f261d39dee1e379a8b1
 workflow-type: tm+mt
-source-wordcount: '10174'
+source-wordcount: '10185'
 ht-degree: 0%
 
 ---
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601：支払い認証トランザクションの自己参照parent_idを再保存し、無限ループ/OOMをトリガーします](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4808：実店舗での測定単位を含まない製品重量ディスプレイ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
          - [ACP2E-4533: URLにストアコードが含まれていると、ストアフロントでプレースホルダー画像の読み込みに失敗する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
          - [ACP2E-4156: [!DNL REST] API出荷アドレスの検証で管理者属性の設定が無視される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
    - [Quality Patches ToolでAdobe Commerceの問題が発生した場合のパッチの確認](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
