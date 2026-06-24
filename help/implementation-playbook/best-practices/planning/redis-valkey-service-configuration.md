@@ -144,7 +144,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-環境変数の設定の詳細については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)を参照してください。
+環境変数の設定の詳細については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_use_slave_connection)を参照してください。
 
 >[!TAB Valkey設定]
 
