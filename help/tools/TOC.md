@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できるさまざまなツール、その用途、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: f1c04fe69abdcdbb425d4488e3095baa2debc274
+source-git-commit: 9a970dd17c8ce444df4af965b0e3340dde05450f
 workflow-type: tm+mt
-source-wordcount: '10206'
+source-wordcount: '10226'
 ht-degree: 0%
 
 ---
@@ -1009,6 +1009,8 @@ ht-degree: 0%
          - [ACP2E-4601：支払い認証トランザクションの自己参照parent_idを再保存し、無限ループ/OOMをトリガーします](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4496：実行中にAnalytics cron ジョブのパフォーマンスが低下する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)
+         - [ACP2E-4488：大規模な属性セットの管理者製品の保存/編集が遅い](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)
          - [ACP2E-4653: カート価格ルール カテゴリ スコープの条件が [!DNL REST] APIにありません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
          - [ACP2E-4472：顧客としてログイン フローを使用して作成されたヌル引用符](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)
          - [ACP2E-4808：実店舗での測定単位を含まない製品重量ディスプレイ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)

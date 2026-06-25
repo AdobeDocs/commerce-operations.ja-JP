@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 54099d0e9607799ea1ea17d8b5b0ea3c38c2d513
+source-git-commit: 9a970dd17c8ce444df4af965b0e3340dde05450f
 workflow-type: tm+mt
-source-wordcount: 418
+source-wordcount: 419
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ QPT v1.1.80には、次のパッチが含まれています。
 1. **ACP2E-4239**：日付属性を使用する管理者グリッドフィルターが、選択した日付、保存されたUTC値、設定されたストアタイムゾーンのタイムゾーンの違いにより、誤った結果を返す問題を修正しました。
 1. **[ACP2E-4472](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)**: **[!UICONTROL Login as Customer]** フロー中に`quote` データベーステーブルにヌル引用符レコードが作成される問題を修正します。
 1. **ACP2E-4481**：注文がキャンセルされた後、バンドル製品の販売可能性が正しく再計算されない問題を修正します。
-1. **ACP2E-4488**：大きな属性セットを持つ製品の[!UICONTROL Admin]での製品の保存または編集が遅くなる問題を修正します。
+1. **[ACP2E-4488](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)**：大規模な属性セットを持つ製品の管理画面での製品の保存または編集が遅くなる問題を修正します。
 1. **ACP2E-4493**：非同期インデックス作成が有効になっている場合に、Sales Order Archive グリッドに誤った注文ステータスが表示される問題を修正します。
-1. **ACP2E-4496**:Analytics cron ジョブが実行中にパフォーマンスの低下を引き起こし、全体的なシステムパフォーマンスが向上する問題を修正します。
+1. **[ACP2E-4496](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)**:Analytics cron ジョブが実行中にパフォーマンスの低下を引き起こし、全体的なシステムパフォーマンスが向上する問題を修正します。
 1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)**: URLにストアコードが含まれている場合に、ストアフロントでプレースホルダー画像が読み込まれない問題を修正しました。
 1. **ACP2E-4552**:GraphQLの応答で会社のステータスが返されない問題を修正します。
 1. **ACP2E-4610**: `sales_clean_quotes` cron ジョブにパフォーマンスの問題がある問題を修正します。
