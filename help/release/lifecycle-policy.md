@@ -3,9 +3,9 @@ title: ソフトウェアライフサイクルポリシー
 description: Adobe Commerce リリースのソフトウェアサポート終了の主な日付について説明します。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: 5846c83cd31e3d253a5ae0b0064b860e5c7af286
+source-git-commit: ed2757282c079ea7399d4df92000f346aecfbdd8
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1376'
 ht-degree: 1%
 
 ---
@@ -170,6 +170,10 @@ Adobeでは、できるだけ早くアップグレードすることをお勧め
 サポート対象のCommerce リリースを維持するには、サポート対象のプラットフォームの依存関係も必要です。 Adobeでは、Adobe Commerceのサポート期間が3年または延長されている間にサポート終了に達する可能性のある、サードパーティサービスおよびソフトウェアの依存関係（MariaDB、OpenSearch、Redis、Valkey、RabbitMQなど）に対するセキュリティおよび品質修正は提供されません。 詳しくは、[共有責任セキュリティと運用モデル &#x200B;](../security-and-compliance/shared-responsibility.md)を参照してください。
 
 お客様は、積極的にサポートされているバージョンに対するすべてのサードパーティの依存関係とプラットフォームサービスを維持する責任があります。 テストおよびサポートされているサードパーティ製テクノロジーの完全な一覧については、[必要システム構成](../installation/system-requirements.md)を参照してください。
+
+>[!IMPORTANT]
+>
+>サポートされていない依存関係バージョンを実行すると、Adobeで解決できないCloud インスタンスのセキュリティ上の脆弱性が発生する可能性があります。 このような場合、Adobeは、影響を受けるソフトウェア依存関係のアップグレードを実施する権利、またはアップグレードが不可能な場合にインスタンスを解約する権利を留保します（Adobe Commerceのバージョンサポートのステータスに関係なく）。
 
 ## PHPのサポート終了とPCI認定
 
