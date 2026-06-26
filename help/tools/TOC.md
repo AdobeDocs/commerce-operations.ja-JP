@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できるさまざまなツール、その用途、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 1816dfaa5145de416decf64482ed81ee82c7448d
+source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
 workflow-type: tm+mt
-source-wordcount: '10235'
+source-wordcount: '10248'
 ht-degree: 0%
 
 ---
@@ -900,7 +900,7 @@ ht-degree: 0%
          - [ACSD-67459: 65,536文字を超える説明を含む製品を読み込めない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
-         - [ACSD-67424: GET /carts/search REST API応答のupdated_at値が[!UICONTROL Negotiable Quotes]の[!UICONTROL Admin Panel]の値と一致しません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
+         - [ACSD-67424: GET /carts/search REST API responseのupdated_at値が[!UICONTROL Negotiable Quotes]の[!UICONTROL Admin Panel]の値と一致しません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
          - [ACSD-67383：同じセッションで2つの会社管理者アカウントを持つ顧客としてログインする際にエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383.md)
          - [ACSD-68064：詳細なネストされたカテゴリを持つ環境で、スケジュールされた更新中に作成されたエントリを複製する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064.md)
          - [ACSD-67946：買い物かごの更新で重複したエラーバナーが表示される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946.md)
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601：支払い認証トランザクションの自己参照parent_idを再保存し、無限ループ/OOMをトリガーします](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4626:Storefront JavaScript ファイルの読み込みが2回発生すると、読み込みが重複し、動作が不安定になる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)
          - [ACP2E-4552:GraphQLの応答が会社ステータスを返さない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552.md)
          - [ACP2E-4496：実行中にAnalytics cron ジョブのパフォーマンスが低下する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)
          - [ACP2E-4488：大規模な属性セットの管理者製品の保存/編集が遅い](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)
