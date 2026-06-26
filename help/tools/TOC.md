@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できるさまざまなツール、その用途、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
+source-git-commit: f8a08611109d9c8e5e686e0c451b0a58ecc12e21
 workflow-type: tm+mt
-source-wordcount: '10248'
+source-wordcount: '10293'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,10 @@ ht-degree: 0%
    - [パッチ](site-wide-analysis-tool/patches.md)
 - キャップ {#caps-tool}
    - {hide-from-toc}[はじめに](caps-tool/intro.md)
-   - {hide-from-toc}[&#x200B; アクセス &#x200B;](caps-tool/access.md)
-   - {hide-from-toc}[&#x200B; ワークフロー](caps-tool/workflow.md)
-   - {hide-from-toc}[&#x200B; ベストプラクティス &#x200B;](caps-tool/best-practices.md)
-   - {hide-from-toc}[&#x200B; トラブルシューティング &#x200B;](caps-tool/troubleshooting.md)
+   - {hide-from-toc}[ アクセス ](caps-tool/access.md)
+   - {hide-from-toc}[ ワークフロー](caps-tool/workflow.md)
+   - {hide-from-toc}[ ベストプラクティス ](caps-tool/best-practices.md)
+   - {hide-from-toc}[ トラブルシューティング ](caps-tool/troubleshooting.md)
 - Adobe Commerceのアラートの管理 {#managed-alerts-for-adobe-commerce}
    - [Adobe Commerceのアラートを管理： [!DNL Redis]  メモリ クリティカル アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
    - [Adobe Commerceの管理アラート：ディスクの警告アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
@@ -47,7 +47,7 @@ ht-degree: 0%
    - [Adobe Commerceの管理されたアラート：CPUの警告アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 品質パッチツール {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]：品質パッチ用のセルフサービスツール](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}
+   - [[!DNL Quality Patches Tool]: パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [使用状況](quality-patches-tool/usage.md)
    - [リリースノート](quality-patches-tool/release-notes.md)
    - 品質パッチツールで使用可能なパッチ {#patches-available-in-qpt}
@@ -895,8 +895,8 @@ ht-degree: 0%
          - [ACSD-67603：画像インクルージョンが有効になっている製品のサイトマップ生成時に長い処理時間](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
          - [ACSD-67093：日付範囲フィルターを使用してGraphQLで注文を取得すると、誤った結果が返される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67093.md)
          - [ACSD-67652:GraphQLの通話で在庫切れとして返された商品ステータスをバンドルし、子と親の商品の在庫を保持する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652.md)
-         - [ACSD-60624: [!DNL Page Builder]の画像、バナー、スライダーのセクションで、空のコンテンツのアップロードに失敗しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
-         - [ACSD-67904：市区町村名に数字（0-9）、アンパサンド（&amp;）、ピリオド（。）、括弧（） が含まれている場合、注文を行えません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
+         - [ACSD-60624: [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)の画像、バナー、スライダーのセクションで、空のコンテンツのアップロードに失敗しました
+         - [ACSD-67904：市区町村名に数字（0-9）、アンパサンド（&amp;）、ピリオド（。）、括弧（） ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)が含まれている場合、注文を行えません
          - [ACSD-67459: 65,536文字を超える説明を含む製品を読み込めない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
@@ -1005,10 +1005,14 @@ ht-degree: 0%
          - [ACP2E-4411: バンドル製品の価格に、複数通貨設定で製品詳細ページとカートの間に誤った税金と通貨の値が表示される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)
          - [ACP2E-4110: PDP/PLPと買い物かごの間で&#x200B;**[!UICONTROL Special Price]**&#x200B;の異なる製品価格をデフォルト以外の通貨でバンドルする](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)
          - [ACP2E-4603: カタログ権限の製品インデックスの再インデックスは、古い権限インデックス行とMySQLのデッドロックを残します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)
-         - [AC-10737: `/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md1` コマンドがJSON データ型を認識しません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
+         - [AC-10737: `bin/magento setup:db:status` コマンドがJSON データ型を認識しません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
          - [ACP2E-4601：支払い認証トランザクションの自己参照parent_idを再保存し、無限ループ/OOMをトリガーします](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [NEW RELIC スクリプトの繰り返しにより、iOS [!DNL Safari] でACSD-53502: **[!UICONTROL Add to Cart]**&#x200B;が断続的に失敗する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)
+         - [ACP2E-4813: USPSの配送方法が利用できないか、マルチパッケージ注文で正しくありません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813.md)
+         - [ACP2E-4615: PayPal オンライン注文の返金が失敗し、エラー&#x200B;*PayPal ゲートウェイがリクエストを拒否します。 内部エラー。*](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615.md)
+         - [ACP2E-4610: `sales_clean_quotes` cronの実行が遅い](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md)
          - [ACP2E-4626:Storefront JavaScript ファイルの読み込みが2回発生すると、読み込みが重複し、動作が不安定になる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)
          - [ACP2E-4552:GraphQLの応答が会社ステータスを返さない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552.md)
          - [ACP2E-4496：実行中にAnalytics cron ジョブのパフォーマンスが低下する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)
@@ -1030,7 +1034,7 @@ ht-degree: 0%
    - [フォーカスタブの選択](observation-for-adobe-commerce/choosing-focus-tabs.md)
    - [「概要」タブ](observation-for-adobe-commerce/summary.md)
    - [「Elasticsearch」タブ](observation-for-adobe-commerce/elasticsearch.md)
-   - [Redis タブ &#x200B;](observation-for-adobe-commerce/redis-tab.md)
+   - [Redis タブ ](observation-for-adobe-commerce/redis-tab.md)
    - [「MySQL」タブ](observation-for-adobe-commerce/mysql-tab.md)
    - [「PHP」タブ](observation-for-adobe-commerce/php-tab.md)
    - [「ボット」タブ](observation-for-adobe-commerce/bots.md)
@@ -1042,7 +1046,7 @@ ht-degree: 0%
    - [「Cron」タブ](observation-for-adobe-commerce/cron-tab.md)
    - [「索引付け」タブ](observation-for-adobe-commerce/indexing-tab.md)
    - [「QuickView」タブ](observation-for-adobe-commerce/oac-quickview-tab.md)
-   - [&#x200B; セキュリティ タブ &#x200B;](observation-for-adobe-commerce/security-tab.md)
+   - [ セキュリティ タブ ](observation-for-adobe-commerce/security-tab.md)
    - [「インフラ」タブ](observation-for-adobe-commerce/oac-infra.md)
    - [Adobe CommerceでのObservationの使用方法](observation-for-adobe-commerce/how-to-use.md)
 - データ移行ツール {#data-migration}
@@ -1066,6 +1070,6 @@ ht-degree: 0%
       - [手作業による移行が必要なデータ](data-migration-tool/migrate-data/manual.md)
       - [データ移行後の手順](data-migration-tool/migrate-data/post-migration.md)
    - リソース {#resources}
-      - [トラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=ja)
+      - [トラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [変更ログ](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
+- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
