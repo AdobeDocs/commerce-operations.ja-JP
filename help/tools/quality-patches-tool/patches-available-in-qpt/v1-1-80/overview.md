@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-06-11T01:10:37.916Z'
 TQID: 'https://experienceleague.adobe.com/q2sNWUJQCm4eRUP8RusytBAqQoscU4F9qDtDIeNmm6E'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 1816dfaa5145de416decf64482ed81ee82c7448d
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
 workflow-type: tm+mt
-source-wordcount: 463
+source-wordcount: 541
 ht-degree: 0%
 
 ---
@@ -39,6 +34,9 @@ QPT v1.1.80には、次のパッチが含まれています。
 1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)**: URLにストアコードが含まれている場合に、ストアフロントでプレースホルダー画像が読み込まれない問題を修正しました。
 1. **ACP2E-4610**: `sales_clean_quotes` cron ジョブにパフォーマンスの問題がある問題を修正します。
 1. **ACP2E-4615**: オンライン注文の返金が失敗し、PayPal エラーが「*PayPal ゲートウェイがリクエストを拒否する」と表示される問題を修正しました。 内部エラー。*.
+1. **[ACP2E-4626](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)**：一部のストアフロント JavaScript ファイルがリクエストされ、2回実行され、断続的に重複する読み込みと不安定な動作が発生する問題を修正します。
+1. **ACP2E-4653**: REST APIを使用してルールを取得または更新する際に&#x200B;**[!UICONTROL Category (Parent Only)]**&#x200B;と&#x200B;**[!UICONTROL Category (Children Only)]**&#x200B;の&#x200B;**[!UICONTROL Cart Price Rule]**&#x200B;条件属性のスコープが公開されない問題を修正しました。
+1. **ACP2E-4808**: ストアフロント製品ページのWeight属性に、設定された測定単位（lbsまたはkgs）を含めずに&#x200B;**[!UICONTROL Additional Information]**&#x200B;または&#x200B;**[!UICONTROL More Information]** セクションに生の数値のみが表示される問題を修正しました。
 1. **ACP2E-4626**：一部のストアフロント JavaScript ファイルがリクエストされ、2回実行され、断続的に重複する読み込みと不安定な動作が発生する問題を修正します。
 1. **[ACP2E-4653](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)**: [!DNL REST] APIを使用してルールを取得または更新する際に&#x200B;**[!UICONTROL Category (Parent Only)]**&#x200B;および&#x200B;**[!UICONTROL Category (Children Only)]**&#x200B;のカート価格ルール条件属性の範囲が公開されない問題を修正しました。
 1. **[ACP2E-4808](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)**: ストアフロント製品ページのWeight属性に、設定された測定単位（lbsまたはkgs）を含めずに&#x200B;**[!UICONTROL Additional Information]**&#x200B;または&#x200B;**[!UICONTROL More Information]** セクションに生の数値のみが表示される問題を修正しました。
