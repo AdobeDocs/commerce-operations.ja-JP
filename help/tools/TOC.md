@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できるさまざまなツール、その用途、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: f8a08611109d9c8e5e686e0c451b0a58ecc12e21
+source-git-commit: b5c22a88e9eb9c4e8122a853deee34a9521c263c
 workflow-type: tm+mt
-source-wordcount: '10293'
+source-wordcount: '10303'
 ht-degree: 0%
 
 ---
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601：支払い認証トランザクションの自己参照parent_idを再保存し、無限ループ/OOMをトリガーします](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4481：注文キャンセル後にバンドル製品の販売可能性が誤って再計算される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)
          - [NEW RELIC スクリプトの繰り返しにより、iOS [!DNL Safari] でACSD-53502: **[!UICONTROL Add to Cart]**&#x200B;が断続的に失敗する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)
          - [ACP2E-4813: USPSの配送方法が利用できないか、マルチパッケージ注文で正しくありません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813.md)
          - [ACP2E-4615: PayPal オンライン注文の返金が失敗し、エラー&#x200B;*PayPal ゲートウェイがリクエストを拒否します。 内部エラー。*](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615.md)
