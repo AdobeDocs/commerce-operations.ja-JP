@@ -21,11 +21,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->正常にアップグレードするための技術的な手順について詳しくは、ユーザードキュメントの「[ アップグレードの前提条件を完了](../../../upgrade/prepare/prerequisites.md)」を参照してください。
+>正常にアップグレードするための技術的な手順について詳しくは、ユーザードキュメントの「[&#x200B; アップグレードの前提条件を完了](../../../upgrade/prepare/prerequisites.md)」を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ## 予算とタイミング
 
-▢ Adobe Commerce [ リリーススケジュール ](../../../release/schedule.md)を使用して、次回のアップグレードを計画し、事前に準備します。
+▢ Adobe Commerce [&#x200B; リリーススケジュール &#x200B;](../../../release/schedule.md)を使用して、次回のアップグレードを計画し、事前に準備します。
 
 ▢想定されるニーズに基づいて（完全またはセキュリティ限定）採用すると思われるバージョンについて話し合います。
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ▢ [互換性のアップグレード ツールを実行](../../../upgrade/upgrade-compatibility-tool/overview.md)
 
-▢ [ サイト全体の分析ツール ](../../../tools/site-wide-analysis-tool/intro.md)によって特定された問題に対処するために、アップグレードの使用を検討してください。
+▢ [&#x200B; サイト全体の分析ツール &#x200B;](../../../tools/site-wide-analysis-tool/intro.md)によって特定された問題に対処するために、アップグレードの使用を検討してください。
 
 ▢ ドキュメントの依存関係と、PHPやElastic Searchのバージョンなど、必要な技術スタックの変更。
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 ▢ ダウンタイムが予想される場合は、メンテナンスウィンドウを計画します。
 
-▢ テスト戦略を確認して承認します。Adobe Commerce [ テストフレームワーク ](https://developer.adobe.com/commerce/testing/)またはサードパーティの自動化スイートの使用を検討してください。
+▢ テスト戦略を確認して承認します。Adobe Commerce [&#x200B; テストフレームワーク &#x200B;](https://developer.adobe.com/commerce/testing/)またはサードパーティの自動化スイートの使用を検討してください。
 
 ▢すべての拡張機能とカスタマイズに互換性があることを確認してください。
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 ▢ パフォーマンス、注文処理、分析などの問題についてサイトを監視します。
 
-▢ Adobe Commerce [ セキュリティスキャン ](https://account.magento.com/scanner/dashboard/)またはその他のサードパーティ製スキャンを実行し、潜在的なセキュリティの脆弱性を確認します。
+▢ Adobe Commerce [&#x200B; セキュリティスキャン &#x200B;](https://account.magento.com/scanner/dashboard/)またはその他のサードパーティ製スキャンを実行し、潜在的なセキュリティの脆弱性を確認します。
 
 ▢すべての関係者に対してレトロスペクティブを実行し、成果を上げた点とそうでない点、改善方法を文書化します。
 
