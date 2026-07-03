@@ -40,7 +40,7 @@ Adobe Commerceは、データベースの負荷を軽減し、冗長な処理を
 
 ## Varnishによるフルページのキャッシュ
 
-[Varnish Cache](config-varnish.md)は、すべてのページをメモリにキャッシュするHTTP アクセラレータです。 オンプレミスの本番環境では、組み込みのフルページキャッシュよりも大幅に高速であるため、AdobeではVarnishを強くお勧めします。 クラウド環境のCommerceでは、Varnishの代わりに[Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)をフルページのキャッシュに使用します。
+[Varnish Cache](config-varnish.md)は、すべてのページをメモリにキャッシュするHTTP アクセラレータです。 オンプレミスの本番環境では、組み込みのフルページキャッシュよりも大幅に高速であるため、AdobeではVarnishを強くお勧めします。 クラウド環境のCommerceでは、Varnishの代わりに[Fastly](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly)をフルページのキャッシュに使用します。
 
 >[!NOTE]
 >

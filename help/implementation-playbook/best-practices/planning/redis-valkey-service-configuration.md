@@ -8,7 +8,7 @@ feature: Best Practices, Cache
 feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-badgePaas: label="Commerce on Cloud" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Cloud プロジェクト上のAdobe Commerceにのみ適用されます。"
+badgePaas: label="Commerce on Cloud" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Cloud プロジェクト上のAdobe Commerceにのみ適用されます。"
 source-git-commit: e8e8471313a4e9f7a595b1222d7a246bce63f097
 workflow-type: tm+mt
 source-wordcount: '2311'
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->最新バージョンの`ece-tools` パッケージを使用していることを確認してください。 そうでない場合は、[最新バージョン &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)にアップグレードしてください。 ローカル環境にインストールされているバージョンは、`composer show magento/ece-tools` CLI コマンドを使用して確認できます。
+>最新バージョンの`ece-tools` パッケージを使用していることを確認してください。 そうでない場合は、[最新バージョン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)にアップグレードしてください。 ローカル環境にインストールされているバージョンは、`composer show magento/ece-tools` CLI コマンドを使用して確認できます。
 
 ## L2 キャッシュの設定
 
@@ -58,7 +58,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-環境の設定の詳細については、「_Commerce on Cloud Infrastructure Guide_」の「[`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) コンフィギュレーション変数」を参照してください。
+環境の設定の詳細については、「_Commerce on Cloud Infrastructure Guide_」の「[`VALKEY_BACKEND`](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) コンフィギュレーション変数」を参照してください。
 
 >[!TAB Redis設定]
 
@@ -70,7 +70,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-環境設定の詳細については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[`REDIS_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend)を参照してください。
+環境設定の詳細については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[`REDIS_BACKEND`](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend)を参照してください。
 
 >[!ENDTABS]
 
@@ -238,7 +238,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-環境変数の設定の詳細については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection)を参照してください。
+環境変数の設定の詳細については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#valkey_use_slave_connection)を参照してください。
 
 >[!TAB Redis設定]
 
@@ -391,7 +391,7 @@ stage:
 
 >[!NOTE]
 >
->`full_page` キャッシュの種類は、[Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)を使用しているため、Cloud インフラストラクチャプロジェクト上のAdobe Commerceとは関係ありません。
+>`full_page` キャッシュの種類は、[Fastly](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly)を使用しているため、Cloud インフラストラクチャプロジェクト上のAdobe Commerceとは関係ありません。
 
 >[!WARNING]
 >
@@ -575,7 +575,7 @@ stage:
 
 1. 実稼動環境とステージング環境のセッション専用の新しいValkey インスタンスをリクエストします。
 
-   [Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。 更新された`.magento/services.yaml`および`.magento.app.yaml`設定ファイルを含めます。
+   [Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)を送信します。 更新された`.magento/services.yaml`および`.magento.app.yaml`設定ファイルを含めます。
 
    このアップデートはダウンタイムを引き起こしませんが、新しいサービスをアクティブ化するにはデプロイメントが必要です。
 
@@ -650,7 +650,7 @@ stage:
 
 1. 実稼動環境とステージング環境のセッション専用の新しいRedis インスタンスをリクエストします。
 
-   [Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。 更新された`.magento/services.yaml`および`.magento.app.yaml`設定ファイルを含めます。
+   [Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)を送信します。 更新された`.magento/services.yaml`および`.magento.app.yaml`設定ファイルを含めます。
 
    このアップデートはダウンタイムを引き起こしませんが、新しいサービスをアクティブ化するにはデプロイメントが必要です。
 
@@ -710,7 +710,7 @@ stage:
 
 ## 非同期解放を有効にする
 
-クラウドインフラストラクチャ上のAdobe Commerceで`lazyfree`を有効にするには、次のRedisまたはValkey設定を環境に適用することを要求する[Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。
+クラウドインフラストラクチャ上のAdobe Commerceで`lazyfree`を有効にするには、次のRedisまたはValkey設定を環境に適用することを要求する[Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)を送信します。
 
 ```text
 lazyfree-lazy-eviction yes
@@ -732,7 +732,7 @@ lazyfree-lazy-user-del yes
 
 ## マルチスレッド I/Oを有効にする
 
-クラウドインフラストラクチャ上のAdobe CommerceでRedis I/O スレッドを有効にするには、以下のI/O スレッド設定をリクエストする[Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。 これにより、CPUの使用率を高くしながらも、ソケットの読み取りと書き込みをオフロードし、メインスレッドからコマンド解析を行うことで、スループットを向上させることができます。 負荷の下で検証し、ホストを監視します。
+クラウドインフラストラクチャ上のAdobe CommerceでRedis I/O スレッドを有効にするには、以下のI/O スレッド設定をリクエストする[Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)を送信します。 これにより、CPUの使用率を高くしながらも、ソケットの読み取りと書き込みをオフロードし、メインスレッドからコマンド解析を行うことで、スループットを向上させることができます。 負荷の下で検証し、ホストを監視します。
 
 >[!BEGINTABS]
 
@@ -1081,7 +1081,7 @@ stage:
 
 次の関連トピックを参照してください。
 
-- [Valkey サービスの設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey)
-- [Redis サービスの設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/redis)
-- [変数のデプロイ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
+- [Valkey サービスの設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/valkey)
+- [Redis サービスの設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/redis)
+- [変数のデプロイ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
 
