@@ -2,10 +2,10 @@
 user-guide-title: 設定ガイド
 user-guide-description: Adobe Commerce アプリケーションの機能とサービスを設定します。
 feature: Configuration
-source-git-commit: 605b2e59d200bc8eeab43e91006a3f95e6a6c138
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 1%
+source-wordcount: '401'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 1%
       + [環境変数の使用](deployment/example-environment-variables.md)
 + キャッシュ {#cache}
    + [キャッシュの概要](cache/caching-overview.md)
-   + [キャッシュフロントエンドの設定](cache/cache-types.md)
+   + [キャッシュフロントエンドとタイプの設定](cache/cache-types.md)
    + [バックエンドオプションのキャッシュ](cache/cache-options.md)
    + [L2 キャッシュ設定](cache/level-two-cache.md)
    + Redis {#redis}
@@ -151,4 +151,4 @@ ht-degree: 1%
       + [スプリットデータベースの検証](storage/multi-master-verify.md)
       + [データベースレプリケーション](storage/multi-master-replication.md)
       + [単一のデータベースに戻す](storage/revert-split-database.md)
-+ [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
++ [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
