@@ -1,7 +1,7 @@
 ---
-source-git-commit: f08c48c7e39c506a71bf9e13d0adc06315013d69
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: '1059'
+source-wordcount: '1114'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce on Cloud プロジェクトのキャッシュ設定手順については、[RedisおよびValkey サービス設定のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)を参照してください。
+>Adobe Commerce on Cloud プロジェクトのキャッシュ設定手順については、[RedisおよびValkey サービス設定のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)を参照してください。 Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14、2.4.7-p9、および2.4.8-p5 リリースライン以降のパッチリリースではサポートされていません。 Redisがサポートされていないキャッシュ設定にはValkeyを使用します。 リリース別のサポートされているキャッシュサービスについては、[必要システム構成](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements)を参照してください。
 
 ## 参照を含むCommerce on Cloud Varnish設定メモ {#varnish-config-cloud}
 

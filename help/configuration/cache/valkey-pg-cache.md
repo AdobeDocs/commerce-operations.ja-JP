@@ -21,9 +21,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: 1281
+source-wordcount: 1315
 ht-degree: 0%
 
 ---
@@ -32,6 +32,10 @@ ht-degree: 0%
 # デフォルトおよびページキャッシュのValkeyの設定
 
 Commerceには、Valkeyのデフォルトとページキャッシュを設定するためのコマンドラインオプションが用意されています。 `<Commerce-install-dir>app/etc/env.php` ファイルを編集してキャッシュを設定できますが、特に初期設定では、コマンドラインを使用することをお勧めします。 コマンドラインは検証を提供し、設定が構文的に正しいことを確認します。
+
+>[!IMPORTANT]
+>
+>Valkeyは、Adobe Commerce 2.4.9および2.4.5-p16、2.4.6-p14、および2.4.7-p9、および2.4.8-p4以降のパッチリリースのキャッシュ設定に必要です。 リリース別のサポートされているキャッシュサービスについては、[必要システム構成](../../installation/system-requirements.md)を参照してください。
 
 {{cloud-cache-config}}
 

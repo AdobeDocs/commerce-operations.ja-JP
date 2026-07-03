@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: dbc1f6d0edff87130604d4762477ee5892a7aafc
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: 589
+source-wordcount: 593
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Adobe Commerceは、データベースの負荷を軽減し、冗長な処理を
 
 ## フロントエンドのキャッシュ
 
-キャッシュフロントエンドとは、Commerceとキャッシュストレージバックエンド間のインターフェイスのことです。 複数のフロントエンドを定義し、それぞれ異なるバックエンド設定を使用して、特定の[&#x200B; キャッシュタイプ &#x200B;](../cli/manage-cache.md#clean-and-flush-cache-types)を各フロントエンドに割り当てることができます。  設定の詳細については、[&#x200B; キャッシュフロントエンドの設定](cache-types.md)を参照してください。
+キャッシュフロントエンドとは、Commerceとキャッシュストレージバックエンド間のインターフェイスのことです。 複数のフロントエンドを定義し、それぞれ異なるバックエンド設定を使用して、特定の[&#x200B; キャッシュタイプ &#x200B;](../cli/manage-cache.md#clean-and-flush-cache-types)を各フロントエンドに割り当てることができます。 設定の詳細については、[&#x200B; キャッシュフロントエンドとタイプの設定](cache-types.md)を参照してください。
 
 ## バックエンドのキャッシュ
 
@@ -74,7 +74,7 @@ Adobe Commerceは、データベースの負荷を軽減し、冗長な処理を
 
 詳細は、次を参照してください。
 
-- [&#x200B; キャッシュフロントエンドの設定](cache-types.md) – 特定のキャッシュタイプにキャッシュフロントエンドを関連付ける
+- [&#x200B; キャッシュフロントエンドとタイプの設定](cache-types.md) – 特定のキャッシュタイプにキャッシュフロントエンドを関連付けます
 - [&#x200B; キャッシュバックエンドオプション &#x200B;](cache-options.md) – バックエンドオプション参照
 
 **クラウド上のAdobe Commerce**-`.magento.env.yaml`の`CACHE_CONFIGURATION`とのキャッシュを設定します。 RedisおよびValkey サービス設定に関する[&#x200B; ベストプラクティス &#x200B;](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md)を参照してください。
