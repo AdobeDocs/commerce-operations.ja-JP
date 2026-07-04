@@ -23,7 +23,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>「<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615: PayPal オンライン注文の返金が失敗し、「PayPal ゲートウェイがリクエストを拒否します」というエラーが発生した場合の、QPT 1.1.80の修正に関する詳細な説明を追加しました。 内部エラーです。"</a>。</p>
+      <td><p>「<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615: PayPal オンライン注文の返金が失敗し、「PayPal ゲートウェイがリクエストを拒否します」というエラーが発生した場合の、QPT 1.1.80の修正に関する詳細な説明を追加しました。 内部エラーです。"</a>。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -47,7 +47,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/55fad95c3110f8150097f410115d89299b9e681b">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813のQPT 1.1.80修正に関する詳細な説明を追加しました：USPSの配送方法が利用できないか、複数パッケージの注文に対して正しくありません</a>。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813のQPT 1.1.80修正に関する詳細な説明を追加しました：USPSの配送方法が利用できないか、複数パッケージの注文に対して正しくありません</a>。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -55,7 +55,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/94b45f953d8a91814fa7359369f976e0cbd94a36">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610のQPT 1.1.80修正に関する詳細な説明を追加しました：sales_clean_quotes cron</a>の実行が遅くなりました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610のQPT 1.1.80修正に関する詳細な説明を追加しました：sales_clean_quotes cron</a>の実行が遅くなりました。</p>
 </td>
       <td>
         新しいトピック、qpt
