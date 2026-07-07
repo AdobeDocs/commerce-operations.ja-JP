@@ -1,57 +1,57 @@
 ---
-title: ' [!DNL Infra]  タブ'
-description: ' [!DNL Infra]  タブは、インフラストラクチャの問題の問題と原因を分離します。'
+title: 「 [!DNL Infra] 」タブ
+description: 「 [!DNL Infra] 」タブには、インフラストラクチャの問題と原因が表示されます。
 exl-id: 45f24177-3264-4848-99bc-951be32c1f7b
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
 
 # 「[!DNL Infra]」タブ
 
-「**[!DNL Infra]**」タブでは、インフラストラクチャの問題の問題と原因を分離します。 さらに、タブに表示されるフレームについて説明します。
+「**[!DNL Infra]**」タブには、インフラストラクチャの問題と原因が表示されます。 さらに、タブに表示されるフレームについて説明します。
 
 ## [!UICONTROL Service Alerts – Infrastructure Alerts by Application name]
 
-![&#x200B; サービスアラート &#x200B;](../../assets/tools/observation-for-adobe-commerce/service-alerts.jpg)
+![ サービスアラート ](../../assets/tools/observation-for-adobe-commerce/service-alerts.jpg)
 
-**[!UICONTROL Service Alerts – Infrastructure Alerts by Application name]** のグラフは、[!DNL New Relic] インフラストラクチャ エージェントによって収集されたサービス アラートを示します。 これにより、サービスの再起動が表示され、多くはデプロイメントに関連しています。
+**[!UICONTROL Service Alerts – Infrastructure Alerts by Application name]** グラフには、[!DNL New Relic] インフラストラクチャ エージェントによって収集されたサービス アラートが表示されます。 これにより、デプロイメントに関連する多くのサービスの再起動が表示されます。
 
 ## [!UICONTROL Inode usage by mount]
 
-![&#x200B; マウントによる inode の使用 &#x200B;](../../assets/tools/observation-for-adobe-commerce/inode-usage-mount.jpg)
+マウント ](../../assets/tools/observation-for-adobe-commerce/inode-usage-mount.jpg)による![Inodeの使用状況
 
-**[!UICONTROL Inode usage by mount]** のフレームは、選択 [!DNL inode] た期間におけるマウントによる使用状況を示しています。 ストレージの空き容量が多い場合でも、ノードの [!DNL inodes] き容量が不足すると、使用可能なストレージが不足することが示されます。 ファイル（特に小さいファイル）を削除すると、両方の領域が解放され、[!DNL inodes] が使用可能になります。
+**[!UICONTROL Inode usage by mount]** フレームには、選択した時間枠でのマウントによる[!DNL inode]の使用状況が表示されます。 ストレージの空き容量が多い場合でも、ノードが[!DNL inodes]不足している場合、利用可能なストレージが不足していることがわかります。 ファイル （特に小さいファイル）を削除すると、両方の領域が解放され、[!DNL inodes]を利用できるようになります。
 
 ## [!UICONTROL vCPU tier view over timeline GREATER 2 weeks]
 
-![2 週間以上のタイムラインにわたる vCPU 層の表示 &#x200B;](../../assets/tools/observation-for-adobe-commerce/vCPU-tier.jpg)
+タイムライン上の![vCPU層ビューが2週間以上](../../assets/tools/observation-for-adobe-commerce/vCPU-tier.jpg)
 
-**[!UICONTROL vCPU tier view over timeline GREATER 2 weeks]** フレームには、選択した期間（2 週間を超える）の vCPU 層ビューが表示されます。 このフレームでは、表示される [!DNL New Relic] アプリケーション名に割り当てられた vCPU の数を確認します。
+**[!UICONTROL vCPU tier view over timeline GREATER 2 weeks]** フレームには、選択した期間が2週間を超えるvCPU階層ビューが表示されます。 このフレームは、表示されている[!DNL New Relic] アプリケーション名に割り当てられたvCPUの数を調べます。
 
 ## [!UICONTROL vCPU tier view over timeline]
 
-![vCPU 層ビューのタイムライン &#x200B;](../../assets/tools/observation-for-adobe-commerce/vcpu-tier-24.jpg)
+タイムライン上の![vCPU層ビュー](../../assets/tools/observation-for-adobe-commerce/vcpu-tier-24.jpg)
 
-**[!UICONTROL vCPU tier view over timeline]** フレームには、選択した期間（24 時間以上）の vCPU 層ビューが表示されます。 このフレームでは、表示される [!DNL New Relic] アプリケーション名に割り当てられた vCPU の数を確認します。 クラスターのアップサイズとダウンサイズの両方が表示されます。
+**[!UICONTROL vCPU tier view over timeline]** フレームには、選択した24時間以上の時間枠にわたってvCPU層ビューが表示されます。 このフレームは、表示されている[!DNL New Relic] アプリケーション名に割り当てられたvCPUの数を調べます。 クラスターのアップサイズとダウンサイズの両方が表示されます。
 
 ## [!UICONTROL vCPU tier view over timeline BY NODE]
 
-![vCPU 層は、ノード別にタイムラインを表示 &#x200B;](../../assets/tools/observation-for-adobe-commerce/infra_by_node.png)
+ノード ](../../assets/tools/observation-for-adobe-commerce/infra_by_node.png)によるタイムライン上の![vCPU層ビュー
 
-**[!UICONTROL vCPU tier view over timeline BY NODE]** フレームには、選択した期間の vCPU 層ビューがノード別に表示されます。 このフレームは、ノードの損失を検出する場合や、ノードがアップサイズまたはダウンサイズされる場合に役立ちます。 ノード別のタイムラインの vCPU 階層ビューは、24 時間未満のタイムラインを表示する必要があります。
+**[!UICONTROL vCPU tier view over timeline BY NODE]** フレームには、選択した時間枠のvCPU階層ビューがノードごとに表示されます。 このフレームは、ノードの損失を検出したり、ノードのサイズを変更したり縮小したりする場合に役立ちます。 ノード別のタイムラインのvCPU層ビューは、24時間未満のタイムラインを見る必要があります。
 
 ## [!UICONTROL Instance details]
 
-![&#x200B; インスタンスの詳細 &#x200B;](../../assets/tools/observation-for-adobe-commerce/instance-details.jpg)
+![ インスタンスの詳細](../../assets/tools/observation-for-adobe-commerce/instance-details.jpg)
 
-**[!UICONTROL Instance details]** の表に、各 [!DNL New Relic] アプリケーションのインスタンスの詳細を示します。
+**[!UICONTROL Instance details]** テーブルには、各[!DNL New Relic] アプリケーションのインスタンスの詳細が表示されます。
 
 ## [!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period]
 
-![&#x200B; レスポンシブノードなし &#x200B;](../../assets/tools/observation-for-adobe-commerce/non-responsive-node.jpg)
+![非レスポンシブノード ](../../assets/tools/observation-for-adobe-commerce/non-responsive-node.jpg)
 
-**[!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period]** フレームには、一定期間にわたって応答しないノードが表示されます。
+**[!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period]** フレームには、期間にわたって応答しないノードが表示されます。
