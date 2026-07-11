@@ -2,9 +2,9 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できるさまざまなツール、その用途、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 1924e1d193461fc96851fb478bbfde8a8232f852
+source-git-commit: 5775ba3b4486899bccd59638db6d54f39aed090b
 workflow-type: tm+mt
-source-wordcount: '10330'
+source-wordcount: '10334'
 ht-degree: 0%
 
 ---
@@ -900,7 +900,7 @@ ht-degree: 0%
          - [ACSD-67459: 65,536文字を超える説明を含む製品を読み込めない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
-         - [ACSD-67424: GET /carts/search REST API responseのupdated_at値が[!UICONTROL Negotiable Quotes]の[!UICONTROL Admin Panel]の値と一致しません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
+         - [ACSD-67424: GET /carts/search REST API応答のupdated_at値が[!UICONTROL Negotiable Quotes]の[!UICONTROL Admin Panel]の値と一致しません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
          - [ACSD-67383：同じセッションで2つの会社管理者アカウントを持つ顧客としてログインする際にエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383.md)
          - [ACSD-68064：詳細なネストされたカテゴリを持つ環境で、スケジュールされた更新中に作成されたエントリを複製する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064.md)
          - [ACSD-67946：買い物かごの更新で重複したエラーバナーが表示される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946.md)
@@ -1024,6 +1024,8 @@ ht-degree: 0%
          - [ACP2E-4808：実店舗での測定単位を含まない製品重量ディスプレイ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
          - [ACP2E-4533: URLにストアコードが含まれていると、ストアフロントでプレースホルダー画像の読み込みに失敗する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
          - [ACP2E-4156: [!DNL REST] API出荷アドレスの検証で管理者属性の設定が無視される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
+      - v1.1.81 {#v1-1-81}
+         - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
    - [Quality Patches ToolでAdobe Commerceの問題が発生した場合のパッチの確認](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - コマンドラインツールリファレンス {#cli-reference}
    - [Adobe Commerce （オンプレミス）](reference/commerce-on-premises.md)
