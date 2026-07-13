@@ -1,62 +1,62 @@
 ---
-title: Adobe Commerceの管理アラート：ディスク・クリティカル・アラート
-description: この記事では、 [!DNL New Relic] でAdobe Commerceの重大なディスクアラートを受け取った場合のトラブルシューティング手順を説明します。 この問題を修正するには、直ちに対処する必要があります。
+title: Adobe Commerceの管理アラート：ディスククリティカルアラート
+description: この記事では、 [!DNL New Relic]でAdobe Commerceのクリティカルディスクアラートを受け取った場合のトラブルシューティング手順について説明します。 この問題を解決するには早急な行動が必要だ。
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
 exl-id: 1378dcfd-cf7c-4234-82bb-6697e23d54ca
 source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerceの管理アラート：ディスク・クリティカル・アラート
+# Adobe Commerceの管理アラート：ディスククリティカルアラート
 
-この記事では、[!DNL New Relic] でAdobe Commerceの重大なディスクアラートを受け取った場合のトラブルシューティング手順を説明します。 この問題を修正するには、直ちに対処する必要があります。 選択したアラート通知チャネルに応じて、アラートは次のようになります。
+この記事では、[!DNL New Relic]でAdobe Commerceのクリティカルディスクアラートを受け取った場合のトラブルシューティング手順について説明します。 この問題を解決するには早急な行動が必要だ。 選択したアラート通知チャネルに応じて、アラートは次のようになります。
 
-![disk critical アラート &#x200B;](../../assets/managed-alerts/disk-critical-magento-managed.png){width="500"}
+![&#x200B; ディスクの重大な警告](../../assets/managed-alerts/disk-critical-magento-managed.png){width="500"}
 
 ## 影響を受ける製品とバージョン
 
-Adobe Commerce クラウドインフラストラクチャー on Pro プランアーキテクチャ
+Pro プランアーキテクチャ上のAdobe Commerce クラウドインフラストラクチャ
 
-## 問題
+## イシュー
 
-[!DNL New Relic]Adobe Commerceの Managed アラート [&#x200B; にサインアップし、1 つ以上のアラートしきい値を超えた場合、](managed-alerts-for-magento-commerce.md) でアラートが届きます。 これらのアラートは、サポートおよびエンジニアリングのインサイトを使用して、標準セットをお客様に提供するために、Adobeで開発されました。
+Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)の管理対象アラートにサインアップし、1つ以上のアラートしきい値を超えた場合、[!DNL New Relic]にアラートが届きます。 これらのアラートは、サポートとエンジニアリングからのインサイトを使用して、お客様に標準セットを提供するためにAdobeによって開発されました。
 
-<u> **動け！**</u>
+<u> **実行！** </u>
 
-* このアラートがクリアされるまで、スケジュールされている展開を中止します。
-* サイトが応答しない、または完全に応答しなくなった場合は、すぐにサイトをメンテナンスモードにします。 手順については、[&#x200B; メンテナンスモードの有効化または無効化 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) を参照してください。 トラブルシューティングのためにサイトに引き続きアクセスできるように、IP を除外 IP アドレスリストに追加してください。 手順については、「[&#x200B; 除外 IP アドレスのリストの管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses)」を参照してください。
+* このアラートがクリアされるまでスケジュールされたデプロイメントをすべて中止します。
+* サイトが完全に応答しない、または応答しなくなった場合は、すぐにメンテナンスモードにします。 手順については、[&#x200B; メンテナンスモードを有効または無効にする](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)を参照してください。 トラブルシューティングのためにサイトにアクセスできるように、IPを免除IP アドレスリストに追加してください。 手順については、[除外IP アドレスのリストの管理](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses)を参照してください。
 
 **やめて！**
 
-* 追加のマーケティングキャンペーンを開始すると、サイトに追加のページビューが表示される場合があります。
-* インデクサーや追加の Cron を実行すると、CPUやディスクにさらに負荷がかかる場合があります。
-* 主要な管理タスク（Commerce管理者、データのインポート/エクスポートなど）を実行します。
+* 追加のページビューをサイトに呼び込む可能性のある、追加のマーケティング施策を開始します。
+* CPUまたはディスクに負荷がかかる可能性があるインデクサーまたは別のクローンを実行します。
+* 主要な管理作業（Commerce管理者、データの読み込み/書き出しなど）を行います。
 * キャッシュをクリアします。
 
-アラートの原因を調査して解決する前に「回避」アクションのいずれかを行った場合、（まだサイトの停止が発生していない場合は）サイトが応答しなくなる可能性があります。
+アラートの原因を調査して解決する前に「実行しない」アクションのいずれかを実行すると、サイトが応答しなくなる可能性があります（サイトの停止がまだ発生していない場合）。
 
-## 解決策
+## Solution
 
-原因の特定とトラブルシューティングを行うには、次の手順に従います。
+以下の手順に従って、原因を特定し、トラブルシューティングします。
 
 >[!WARNING]
 >
->これは重大なアラートなので、問題のトラブルシューティング（手順 2 以降）を行う前に、**手順 1** を完了することを強くお勧めします。
+>これは重大なアラートであるため、問題のトラブルシューティングを行う前に&#x200B;**手順1**&#x200B;を完了することを強くお勧めします（手順2以降）。
 
-1. Adobe Commerce サポートチケットが存在するかどうかを確認します。 手順については、Commerce サポートナレッジベースの [&#x200B; サポートチケットのトラッキング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case) を参照してください。 サポートがしきい値アラートを受け取り、チケッ [!DNL New Relic] を作成して、問題の処理を開始した可能性があります。 チケットが存在しない場合は、作成します。 チケットには、次の情報が含まれている必要があります。
-   * 連絡先の理由：「**[!UICONTROL New Relic CRITICAL alert received]**」を選択します。
+1. Adobe Commerce サポートチケットが存在するかどうかを確認します。 手順については、Commerce サポート サポート サポート サポート サポート技術情報の[&#x200B; サポートチケットの追跡](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case)を参照してください。 サポートは、[!DNL New Relic]しきい値のアラートを受け取り、チケットを作成し、問題に取り組み始めた可能性があります。 チケットが存在しない場合は、チケットを作成します。 チケットには次の情報が必要です。
+   * 連絡先の理由：**[!UICONTROL New Relic CRITICAL alert received]**&#x200B;を選択してください。
    * アラートの説明。
-   * [[!DNL New Relic]  インシデント リンク &#x200B;](https://docs.newrelic.com/docs/alerts/incident-management/view-event-details-incidents/). これは、[Adobe Commerceの Managed アラート &#x200B;](managed-alerts-for-magento-commerce.md) に含まれています。
-1. [!DNL New Relic] では、ディスクの使用率を最も高く確認します。 手順については、**[!UICONTROL Storage]** Infrastructure 監視ホスト ページ：[[!DNL New Relic]  タブ [!UICONTROL Storage] の &#x200B;](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#storage) のタブを参照してください。
-   * ディスクの使用量が徐々に増加する [!DNL New Relic] 合は、次のオプションを試してください。
-      * ディスク領域の割り当てを調整してディスク領域を最適化しています。 Commerce手順については、Cloud ガイドの [&#x200B; ディスク容量の管理 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=ja) を参照してください。 また、より多くのディスク容量をリクエストする必要が生じる場合があります（Adobe アカウントチームにお問い合わせください）。
-      * MySQL のディスク領域をクリアします。 手順については、Commerce サポートナレッジベースの [MySQL ディスク容量が少ない &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud) を参照してください。
-      * ディスク使用量が急激に増加している [!DNL New Relic] 合は、ディレクトリ内のファイルが非常に急速に増加する原因となった問題が存在する可能性があります。 次のチェックを実行します。
-         1. CLI/ターミナルで次のコマンドを実行して、ディスクの空き領域全体を確認し、問題を特定します。`df -h`
-         1. ディスク使用量が予想外に大きく、増加しているディレクトリを特定したら、影響を受けるファイルシステムを確認する必要があります。 次の例は、ファイルディレクトリ `pub/media/` を確認する方法を示しています。 これは、Commerceがログや大きなメディアファイルの保存に使用するディレクトリです。 ただし、予期しないディスク使用量を示すディレクトリに対して、次のコマンドを実行する必要があります：`du -sch ~/pub/media/*`
+   * [[!DNL New Relic]  インシデントリンク &#x200B;](https://docs.newrelic.com/docs/alerts/incident-management/view-event-details-incidents/)。 これは、Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)の管理済みアラートに含まれています。
+1. [!DNL New Relic]で、最も使用頻度の高いディスクを確認します。 手順については、[[!DNL New Relic]  インフラストラクチャ監視ホストページの&#x200B;**[!UICONTROL Storage]** タブを参照してください：[!UICONTROL Storage] タブ &#x200B;](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#storage):
+   * [!DNL New Relic]でディスク使用量の増加が遅い場合は、次のオプションを試してください。
+      * スペース配分を調整してディスク容量を最適化する。 手順については、Commerce on Cloud ガイドの「[&#x200B; ディスク領域を管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=ja)」を参照してください。 また、追加のディスク容量をリクエストする必要がある場合もあります（Adobeのアカウントチームにお問い合わせください）。
+      * MySQL用のディスク領域をクリアします。 手順については、Commerce サポート サポート技術情報の[MySQL ディスク領域が少ない](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud)を参照してください。
+      * [!DNL New Relic]でディスク使用量が急速に増加している場合は、ディレクトリ内でファイルが非常に急速に増加している問題があることを示している可能性があります。 次のチェックを実行します。
+         1. CLI/ターミナルで次のコマンドを実行して、全体的なディスク容量を確認し、問題を特定します：`df -h`
+         1. 予期せず大きくなり、ディスク使用量が増加するディレクトリを特定したら、影響を受けるファイルシステムを確認する必要があります。 次の例は、ファイルディレクトリ `pub/media/`を確認する方法を示しています。 これは、Commerceがログとビッグメディアファイルを保存するために使用するディレクトリです。 ただし、予期しないディスク使用量を示すディレクトリに対しては、このコマンドを実行する必要があります：`du -sch ~/pub/media/*`
 
-端末からの出力で、ディスク使用量が急激に増加しているこれらのディレクトリの 1 つにファイルが表示されていて、そのファイルの内容が不要であることがわかっている場合は、ファイルを削除することを検討してください。 この操作に不安がある場合は、[Adobe Commerce サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) してください。
+ターミナルからの出力で、これらのディレクトリのいずれかにファイルが表示され、ディスク使用量が急速に増加し、ファイルの内容が必要でないことがわかっている場合は、ファイルの削除を検討してください。 この操作に慣れていない場合は、[Adobe Commerce サポートチケットを送信](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case)してください。
