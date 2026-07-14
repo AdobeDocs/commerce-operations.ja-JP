@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-10T16:37:59.584Z'
 TQID: 'https://experienceleague.adobe.com/M-ltaMCaVfRfc3vrobfkBCte-P4K2CELj7r3bD-cfxA'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: aeb532d2e065787e1b23781a50808031e5a5d4ce
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 1a09e8ebb4fdee8b8ab500e5a4f8105fd33774d8
 workflow-type: tm+mt
-source-wordcount: 271
+source-wordcount: 272
 ht-degree: 0%
 
 ---
@@ -27,7 +22,7 @@ ht-degree: 0%
 
 QPT v1.1.81には、次のパッチが含まれています。
 
-1. **ACP2E-4300**: [!UICONTROL Admin]で顧客グループを変更しても、ストアフロントのカタログ権限が更新されず、カタログとカートが古い権限を反映する問題を修正します。
+1. **[ACP2E-4300](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)**：管理画面で顧客グループを変更しても、ストアフロントのカタログ権限が更新されず、カタログとカートが古い権限を反映する問題を修正します。
 1. **ACP2E-4401**：設定可能な製品を含むホームページ リンクの[!UICONTROL Scheduled Update Preview]が、製品リストを表示する代わりにメンテナンスページにリダイレクトされる問題を修正します。
 1. **ACP2E-4395**: グローバル スコープに金額が指定されていない場合、Giftcard API製品の作成でエラーが表示されるようになりました。
 1. **ACP2E-4468**: web サイトのスコープ権限を持つ[!UICONTROL Admin]人のユーザーがバナーコンテンツを編集できない問題を修正します。
