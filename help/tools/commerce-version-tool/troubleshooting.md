@@ -2,9 +2,14 @@
 title: '[!DNL Commerce Version Tool]のトラブルシューティング'
 description: ' [!DNL Commerce Version Tool] Composer検出、内部ドライラン チェック、レジストリ キャッシュ、JSON出力、監査ログの問題のトラブルシューティング方法について説明します。'
 TQID: 'https://experienceleague.adobe.com/JwRSy7pfM89WoifYUzTVPhR-WrDIvj2A2B8SaEnmyWM'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: eafe79321da03f4778dd9e1b290141ef082a5eaf
 workflow-type: tm+mt
 source-wordcount: 1222
@@ -191,7 +196,7 @@ Failed to forward-apply prerequisite 247p9-2026-04-001-EE when preparing dry-run
 
 不明なパッチの場合、具体的には、`var/log/patch_status.log`は生のパッチドライラン出力（前方及び逆）を記録し、どのファイルとチャンクが一致しなかったかを示します。
 
-「パッチが見つかりません」という警告が表示された場合は、[ インストールされているバージョンにパッチが適用されない](#no-patches-apply-to-the-installed-version)を参照してガイダンスを受けてください。
+「パッチが見つかりません」という警告が表示された場合は、[&#x200B; インストールされているバージョンにパッチが適用されない](#no-patches-apply-to-the-installed-version)を参照してガイダンスを受けてください。
 
 **アクション：**
 
