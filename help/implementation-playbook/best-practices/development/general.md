@@ -50,7 +50,7 @@ ht-degree: 0%
 ## バージョン管理
 
 モジュールのバージョンは、[Semantic Versioning 2.0.0標準](https://semver.org/)に準拠している必要があります。
-Adobe Commerce コードベースの依存関係は、[ モジュールバージョン依存関係ガイドライン ](https://developer.adobe.com/commerce/php/development/versioning/dependencies/)に従う必要があります。
+Adobe Commerce コードベースの依存関係は、[&#x200B; モジュールバージョン依存関係ガイドライン &#x200B;](https://developer.adobe.com/commerce/php/development/versioning/dependencies/)に従う必要があります。
 
 ## リビジョン管理
 
@@ -60,5 +60,5 @@ Adobe Commerce コードベースの依存関係は、[ モジュールバージ
 
 1. [安全でない関数](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/)は使用しないでください。
 1. [XSS予防戦略](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)を適用する必要があります。
-1. [ コンテンツセキュリティポリシー](https://developer.adobe.com/commerce/php/development/security/content-security-policies/)を適用する必要があります。
+1. [&#x200B; コンテンツセキュリティポリシー](https://developer.adobe.com/commerce/php/development/security/content-security-policies/)を適用する必要があります。
 1. 新しいAdobe Commerce インスタンスは、まだ「セキュリティ修正の終了」日に達していないバージョンの最新のセキュリティリリースで配信する必要があります。 [Adobe Commerce Software Lifecycle Policy](../../../release/lifecycle-policy.md)を参照してください。
