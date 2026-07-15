@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: afd48570ab4ab29b2d5946e2805b3124b0b7fe82
+source-git-commit: 11f63d811ab907de5e93c121ef8fdf0de294b25f
 workflow-type: tm+mt
-source-wordcount: '10365'
+source-wordcount: '10381'
 ht-degree: 0%
 
 ---
@@ -1033,6 +1033,7 @@ ht-degree: 0%
          - [ACP2E-4156: [!DNL REST] API出荷アドレスの検証で管理者属性の設定が無視される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
       - v1.1.81 {#v1-1-81}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+         - [ACP2E-4630：複数ページの販売PDFで、ページ区切りの後に長い製品名が隣接する列と重なる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)
          - [ACP2E-4680：最終交渉可能な見積もりから販売不可の商品が消える](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
          - [ACP2E-4300：管理者の顧客グループの変更後、ストアフロントカタログの権限が更新されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
    - [Quality Patches ToolでAdobe Commerceの問題が発生した場合のパッチの確認](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
