@@ -2,9 +2,11 @@
 user-guide-title: ツール
 user-guide-description: Adobe Commerceで使用できるさまざまなツール、その用途、インストールプロセス、アクセス方法について説明します。
 feature: Configuration
-source-git-commit: 5775ba3b4486899bccd59638db6d54f39aed090b
+nduge: true
+color: red
+source-git-commit: afd48570ab4ab29b2d5946e2805b3124b0b7fe82
 workflow-type: tm+mt
-source-wordcount: '10334'
+source-wordcount: '10365'
 ht-degree: 0%
 
 ---
@@ -26,6 +28,11 @@ ht-degree: 0%
    - [拡張機能](site-wide-analysis-tool/extensions.md)
    - [アラート](site-wide-analysis-tool/alerts.md)
    - [パッチ](site-wide-analysis-tool/patches.md)
+- [!DNL Commerce Version Tool] {#commerce-version-tool}
+   - [概要](commerce-version-tool/intro.md)
+   - [パッチステータスレポートの生成](commerce-version-tool/generate-report.md)
+   - [トラブルシューティング](commerce-version-tool/troubleshooting.md)
+   - [リリースノート](commerce-version-tool/release-notes.md)
 - キャップ {#caps-tool}
    - {hide-from-toc}[はじめに](caps-tool/intro.md)
    - {hide-from-toc}[&#x200B; アクセス &#x200B;](caps-tool/access.md)
@@ -1026,6 +1033,8 @@ ht-degree: 0%
          - [ACP2E-4156: [!DNL REST] API出荷アドレスの検証で管理者属性の設定が無視される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
       - v1.1.81 {#v1-1-81}
          - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+         - [ACP2E-4680：最終交渉可能な見積もりから販売不可の商品が消える](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
+         - [ACP2E-4300：管理者の顧客グループの変更後、ストアフロントカタログの権限が更新されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
    - [Quality Patches ToolでAdobe Commerceの問題が発生した場合のパッチの確認](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - コマンドラインツールリファレンス {#cli-reference}
    - [Adobe Commerce （オンプレミス）](reference/commerce-on-premises.md)
