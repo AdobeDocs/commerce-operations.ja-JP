@@ -1,116 +1,116 @@
 ---
-title: バックエンドのパフォーマンスの最適化
-description: Adobe Commerce Sites のバックエンドパフォーマンスの最適化について説明します。
-badge: label="寄稿者：objectsource" type="Informative" url="https://objectsource.co.uk/" tooltip="objectsource"
+title: バックエンドパフォーマンスの最適化
+description: Adobe Commerce Sitesのバックエンドのパフォーマンスを最適化する方法について説明します。
+badge: label="協力：objectsource" type="Informative" url="https://objectsource.co.uk/" tooltip="objectsource"
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
 source-git-commit: d884d434e696a911de626dc76983468556cf451f
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
 
-# バックエンドのパフォーマンスを最適化するためのベストプラクティス
+# バックエンドパフォーマンスを最適化するためのベストプラクティス
 
-このトピックでは、データベースの最適化とテストに重点を置いて、Adobe Commerce Sites のバックエンドパフォーマンスを調査および最適化するためのベストプラクティスの概要を説明します。 開発者はこの情報を使用して、各Commerce プロジェクトの固有のコンテキストを調査し、バックエンドの設定と操作を最適化してサイトのパフォーマンスを向上させる機会を特定できます。
+このトピックでは、データベースの最適化とテストに重点を置いて、Adobe Commerce サイトのバックエンドパフォーマンスを調査および最適化するためのベストプラクティスについて説明します。 開発者は、このデータを使用して、各Commerceプロジェクトの固有のコンテキストを調査し、バックエンドの設定と運用を最適化してサイトパフォーマンスを向上させる機会を特定できます。
 
 >[!NOTE]
 >
->Recommendations と例は、objectsource が実際のクライアント契約でたどるプロセスからインスピレーションを得て、パフォーマンスの高いAdobe Commerce サイトを大規模に提供します。
+>レコメンデーションと例は、objectsourceが実際の顧客エンゲージメントに従って、パフォーマンスの高いAdobe Commerce サイトを大規模に提供するプロセスから着想を得ています。
 
 ## 影響を受ける製品とバージョン
 
-[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
 
-- クラウドインフラストラクチャー上のAdobe Commerce
+- Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
 
-## データベースを最適化してパフォーマンスを向上
+## パフォーマンスを向上させるためにデータベースを最適化する
 
-データベースの最適化は、ユーザーエクスペリエンスを向上させ、売上高を増やすための確実な方法です。 Commerce サイトのバックボーンであるデータベースを最適化すると、web サイトのパフォーマンスが低下するのを防ぎ、読み込み時間が長くなることで顧客の手間をかけるのを防ぐことができます。
+データベースの最適化は、ユーザーエクスペリエンスを向上させ、売上を増加させるための優れた方法です。 Commerceサイトのバックボーンであるデータベースを最適化することで、web サイトのパフォーマンスの低下を防ぎ、顧客がつまずきやすい長い読み込み時間を排除することができます。
 
-### 負荷試験
+### ストレステスト
 
-ブラックフライデーのようなトラフィックが多い時期には、Commerce サイトで大量のトラフィックを処理するよう求められます。 このようなイベントに備えて、負荷試験は、指数関数的な負荷の増加の下でサイトがどのように動作するかを理解するために不可欠です。
+ブラックフライデーのようなトラフィックの多い時期には、Commerceのサイトが大量のトラフィックを処理することが求められます。 このようなイベントに備えるためには、負荷が急激に増加する中でサイトの動作を理解するために、ストレステストが不可欠です。
 
-GTmetrix はストレステストに使用できるツールです。 GTmetrix を設定して、通常の訪問者の行動とアクションを再現および乗算することで、負荷の増加に対するサイトの準備状況を測定します。 次に、テストを実行して、主要な買い物イベント中にパフォーマンスとサイトの可用性に影響を与える可能性のある問題を特定し、解決します。
+ストレステストに使用できるツールの1つがGTmetrixです。 Gtmetrixを設定して、通常の訪問者の行動とアクションを再現し、乗算することで、サイトの読み込み増加に対する準備状況を測定します。 その後、テストを実行して、主要なショッピングイベント中のパフォーマンスとサイトの可用性に影響を与える可能性のある問題を特定し、解決します。
 
-トラフィックが多い時期にCommerce プロジェクトを準備する方法の詳細を説明します。
+Commerce プロジェクトのトラフィック量が多い時間帯の準備について詳しくは、以下を参照してください。
 
-- [&#x200B; 休日への対応 &#x200B;](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=ja)
-- [&#x200B; ホリデーショッピング分析 &#x200B;](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=ja)
-- [&#x200B; サージ容量増加 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html?lang=ja)
+- [ホリデーシーズン](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=ja)
+- [ホリデーショッピングの分析](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=ja)
+- [サージキャパシティの増加](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html?lang=ja)
 
 ### 負荷テスト
 
-GTmetrix や同様のツールを使用して、テスト用Commerce プロジェクトを読み込むこともできます。 負荷テストは、ストレステストの前段階として、大規模でトラフィックの多いサイトでは不可欠なプラクティスです。 ピーク時の負荷でサイトのパフォーマンスに影響を与える問題を予測して軽減することで、予期しないサイトの停止、フラストレーションが発生した顧客、財務上の損失を防ぎます。
+また、GTmetrixなどのツールを使用して、テスト用のCommerce プロジェクトを読み込むこともできます。 負荷テストは、負荷テストの先駆者として、大規模でトラフィックの多いサイトに不可欠な手法です。 ピーク時の読み込み時にサイトパフォーマンスに影響を与える問題を予測して軽減することで、予期しないサイトの停止、顧客の不満、経済的損失を防ぎます。
 
-GTmetrix を使用してトラフィック量の多いシミュレーションを行い、サイトのパフォーマンスを分析して、サイトの容量に関する明確な情報を取得します。 この分析は、ボトルネックを特定して対処し、最適化する機会を特定するのに役立ち、負荷が増えた場合にCommerce Sites を効果的に運用できるようになります。
+Gtmetrixを使用して大量のトラフィックをシミュレートし、サイトのパフォーマンスを分析して、サイトのキャパシティに関する明確な情報を取得します。 この分析は、ボトルネックを特定して対処し、最適化する機会を特定するのに役立ちます。これにより、負荷が増加した場合でもCommerceのサイトが効果的に動作できるようになります。
 
-Adobe Commerce プロジェクトのテストの詳細：
+Adobe Commerce プロジェクトのテストについて詳しくは、次を参照してください。
 
-- [&#x200B; テストガイダンス &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html?lang=ja) （クラウドインフラストラクチャ）
-- [&#x200B; アプリケーションのテスト &#x200B;](https://developer.adobe.com/commerce/testing/guide/)
+- [&#x200B; ガイダンスのテスト &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html?lang=ja) （クラウド インフラストラクチャ）
+- [アプリケーションテスト](https://developer.adobe.com/commerce/testing/guide/)
 
-### パフォーマンスの問題の特定と解決
+### パフォーマンスの問題を特定して解決する
 
-New Relicや Observation for Commerceなどの様々なツールを使用してボトルネックを検出し、Adobe Commerce サイトを効果的に最適化することで、パフォーマンスの問題に対処します。 [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=ja) はクラウドインフラストラクチャー上のAdobe Commerceに含まれており、[Adobe Commerceの監視 &#x200B;](/help/tools/observation-for-adobe-commerce/intro.md) はクラウドとオンプレミスの両方のデプロイメントに含まれています。
+New RelicやObservation for Adobe Commerceなどのさまざまなツールを使用して、ボトルネックを検出し、Commerceサイトを効果的に最適化することで、パフォーマンスの問題に対処します。 [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=ja)はAdobe Commerce on cloud infrastructureに含まれており、Adobe Commerce[&#128279;](/help/tools/observation-for-adobe-commerce/intro.md)のObservationはクラウドとオンプレミスの両方のデプロイメントに含まれています。
 
-これらのツールを使用して、サイトのパフォーマンスを分析し、次の項目に関連するパフォーマンスの問題を特定します。
+これらのツールを使用して、サイトパフォーマンスを分析し、次に関連するパフォーマンスの問題を特定します。
 
-- CPUを多用する機能
-- クエリおよびバックエンド操作のキャッシュ管理設定
-- サードパーティ API 呼び出し
+- CPUを多用した機能
+- クエリとバックエンド操作のキャッシュ管理設定
+- サードパーティ API呼び出し
 - Cron スケジュール
 
-例えば、製品の詳細ページやカテゴリページを中心にトランザクションを詳細に調べることができます。 パフォーマンスを向上させるために最適化できる、時間がかかるプロセスを特定します。 あるクライアントエンゲージメントで、objectsource は、製品の詳細ページでパフォーマンスの問題に気づき、パフォーマンス時間の 3.5% を消費している API 呼び出しを見つけました。 この結果に基づいて、ボトルネックとなっている問題をピンポイントで特定し、修正するために、コード実行の階層を調査しました。
+例えば、商品の詳細ページとカテゴリーページに焦点を当てて、取引を綿密に調査できます。 パフォーマンスを向上させるために最適化できる、時間のかかるプロセスを特定します。 ある顧客とのエンゲージメントにおいて、objectsourceは商品の詳細ページでパフォーマンスの問題に気づき、パフォーマンス時間の3.5%を費やしていたAPI呼び出しを発見しました。 この結果に基づいて、コード実行の階層を調べ、ボトルネックの原因となる問題を特定して修正しました。
 
-サイトのパフォーマンス管理の詳細：
+サイトパフォーマンスの管理について詳しく見る：
 
-- [&#x200B; パフォーマンス監視 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=ja) （クラウドインフラストラクチャ）
+- [&#x200B; パフォーマンスの監視](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=ja) （クラウド インフラストラクチャ）
 - [設定のベストプラクティス](/help/performance/configuration.md)
-- [Adobe Commerceの監視](/help/tools/observation-for-adobe-commerce/intro.md)
+- [Adobe Commerceの観測](/help/tools/observation-for-adobe-commerce/intro.md)
 
-### MySQL のパフォーマンスの最適化
+### MySQL パフォーマンスの最適化
 
-データベースクラスタリングとクエリ最適化を実装して MySQL のパフォーマンス問題に対処することは、ブラックフライデーのようなトラフィック量の多い時期の前後でパフォーマンスを向上させるための効果的なアプローチです。
+データベースのクラスタリングとクエリの最適化を実装してMySQLのパフォーマンス問題に対処することは、ブラックフライデーのようなトラフィックの多い時間前と時間中にパフォーマンスを向上させるための効果的なアプローチです。
 
 #### データベースクラスタリングの実装
 
-高トラフィックの Web サイトは、多くの場合、データベースのボトルネックに直面します。これは主に、1 台の MySQL サーバーに依存することに起因します。 パフォーマンスの向上と高可用性の確保を実現する分散アーキテクチャであるデータベース・クラスタリングを導入することで、これらのボトルネックに対処できます。
+トラフィックの多いweb サイトは、主に単一のMySQL サーバーへの依存によって、データベースのボトルネックに直面することがよくあります。 パフォーマンスを向上させ、高可用性を確保する分散型アーキテクチャであるデータベースクラスタリングを導入することで、これらのボトルネックに対処できます。
 
-データベースクラスタリングを使用すると、複数の web ノードを複数の MySQL サーバーに接続できるので、トラフィックのピーク時にデータベースに関する問題の影響を最小限に抑えることができます。 Galera クラスターなどのツールを使用して、Commerce サイトのデータベースクラスタリングを設定します。 Galera クラスターは、[&#x200B; クラウドインフラストラクチャにデプロイされたAdobe Commerce プロジェクト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/pro-architecture) に含まれています。
+データベースクラスタリングは、複数のweb ノードを複数のMySQL サーバーに接続できるようにすることで、トラフィックのピーク時におけるデータベース関連の問題の影響を最小限に抑えます。 Galera Clusterなどのツールを使用して、Commerce サイトのデータベースクラスタリングを設定します。 Galera Clusterは、[&#x200B; クラウドインフラストラクチャにデプロイされたAdobe Commerce プロジェクト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/pro-architecture)に含まれています。
 
 #### MySQL クエリの最適化
 
-通常、ほとんどのAdobe Commerce サイトのインフラストラクチャは、1 台の MySQL サーバーに接続された複数の web ノードで構成されます。
+通常、ほとんどのAdobe Commerce サイトのインフラストラクチャは、1台のMySQL サーバーに接続された複数のweb ノードで構成されます。
 
-この設定では、各フロントエンド web ノードは Galera クラスターに接続され、複数の MySQL サーバーを使用できます。 フロントエンド web ノードの数を増やすと、アプリケーションのパフォーマンスが向上しますが、単一の MySQL サーバーがボトルネックのままになります。
+この設定では、各フロントエンド web ノードがGalera クラスターに接続し、複数のMySQL サーバーを使用できます。 フロントエンド web ノードの数を増やすと、アプリケーションのパフォーマンスが向上しますが、単一のMySQL サーバーがボトルネックのままになります。
 
-MySQL サーバーのパフォーマンスを最適化し、ボトルネックを最小限に抑えるには、不要なクエリを特定して減らすことが不可欠です。 例えば、1 秒あたり 1,000 件のクエリを送信していて、必要なのは 200 件しかない場合、クエリ数を最適化および減らすと、パフォーマンスが大幅に向上する可能性があります。
+MySQL サーバーのパフォーマンスを最適化し、ボトルネックを最小限に抑えるには、不要なクエリを特定して削減することが不可欠です。 例えば、1秒間に1,000件のクエリを送信するものの、200件しか必要ない場合、クエリ数を最適化および削減することでパフォーマンスを大幅に向上できます。
 
-MySQL の設定と最適化の詳細を説明します。
+MySQLの設定と最適化について詳しくは、以下を参照してください。
 
-- [&#x200B; データベース設定のベストプラクティス &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=ja)
-- [Galera DB レプリケーションの低速レプリケーション &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html?lang=ja)
-- [一般的な MySQL ガイドライン](/help/installation/prerequisites/database/mysql.md)
-- [MySQL クエリキャッシュ &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html?lang=ja)
+- [データベース設定のベストプラクティス](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=ja)
+- [Galera DB レプリケーションのレプリケーションが遅い](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html?lang=ja)
+- [一般的なMySQL ガイドライン](/help/installation/prerequisites/database/mysql.md)
+- [MySQL クエリのキャッシュ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html?lang=ja)
 
-## Cron ジョブの効果的な管理：パフォーマンスとタイミング
+## cron ジョブの効果的な管理：パフォーマンスとタイミング
 
-Cron ジョブは、レポートの生成や製品のインデックス作成など、サイトのバックグラウンドタスクを処理する上で重要な役割を果たします。 ただし、cron のジョブ最適化では、全体的なパフォーマンスに対する影響を慎重に考慮する必要があります。 開発者は、スケジュールの頻度を評価し、特定の要件に基づいて最適なタイミングを決定する必要があります。
+Cron ジョブは、レポートの生成や製品のインデックス作成など、サイトのバックグラウンド タスクを処理する上で重要な役割を果たします。 ただし、cron ジョブの最適化には、全体的なパフォーマンスに対する影響を慎重に考慮する必要があります。 開発者は、スケジュール設定の頻度を評価し、特定の要件にもとづいて最適なタイミングを決定する必要があります。
 
-パフォーマンスと利便性のバランスを取りながら、トラフィックが少ない時間帯に cron ジョブをスケジュールすることをお勧めします。 しかし、異なるタイムゾーンでクライアントと取引することは課題を提示する可能性があり、複数の地域で調和のとれたエクスペリエンスを確保するために思慮深いアプローチが必要となります。
+パフォーマンスと利便性のバランスを取りながら、トラフィックの少ない期間にcron ジョブをスケジュールすることをお勧めします。 しかし、異なるタイムゾーンの顧客に対応する場合、複数の地域をまたいで調和の取れた体験を提供するために、入念なアプローチが必要になり、課題が生じる可能性があります。
 
-Cron のパフォーマンスとタイミングの最適化を担当する場合は、Commerce管理者が現在行っている cron 設定を確認し、Commerce プロジェクトの cron ジョブの設定および設定について学習します。
+cronのパフォーマンスとタイミングの最適化を担当する場合は、Commerce管理者から現在のcron設定を確認し、Commerce プロジェクトのcron ジョブの設定と設定について説明します。
 
-また、Adobe Commerceの監視を使用して、cron 関連の業績評価指標を表示できます。 このツールは、複数のソースからのログデータを組み合わせて、Adobe Commerce サイトのパフォーマンスをより適切に管理し、問題を診断するのに役立ちます。
+また、Adobe CommerceのObservationを使用して、cron関連の業績評価指標を表示することもできます。 複数のソースから収集したログデータを組み合わせることで、Adobe Commerceサイトのパフォーマンスをより適切に管理し、問題を診断できます。
 
-Adobe Commerce cron 実装の詳細情報：
+Adobe Commerce cronの導入について詳しく見る：
 
-- [2&rbrace;Commerce管理システムユーザーガイドの &lbrace;Cron （スケジュールされたタスク） &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=ja)__
+- _Commerce Admin Systems ユーザーガイド_&#x200B;の[Cron （スケジュール済みタスク） &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=ja)
 - [&#x200B; アプリケーション設定 – crons プロパティ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=ja) （クラウドインフラストラクチャ）
-- [cron の設定と実行 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=ja) （オンプレミス）
-- [Adobe Commerceの監視 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=ja) （「[!UICONTROL Cron]」タブと「[!UICONTROL MySQL]」タブを参照）。
+- [crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=ja)の設定と実行（オンプレミス）
+- Adobe Commerce[&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=ja)の観察（[!UICONTROL Cron]および[!UICONTROL MySQL] タブを参照）
