@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 11f63d811ab907de5e93c121ef8fdf0de294b25f
+source-git-commit: af9c1cd1091aa70aa247064f076817895286c4b8
 workflow-type: tm+mt
-source-wordcount: 272
+source-wordcount: 273
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ QPT v1.1.81には、次のパッチが含まれています。
 1. **[ACP2E-4630](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)**: カスタムオプションを持つ長い製品名が、複数ページの請求書、出荷、クレジットメモ、およびページ区切り後の返品PDFの隣接する列または項目と重なり、行項目が読み取り不能になる問題を修正します。
 1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)**：最終交渉可能な見積もりから販売不可または削除された製品が消える問題を修正します。
 1. **ACP2E-4709**: ページビルダーを使用する際にCMS ページを保存できない問題を修正しました。
-1. **ACP2E-4786**: ストレージドライバーのパス解決が正しくないため、AWS S3 リモートストレージが構成されている場合に製品の書き出しがファイルを書き込めない問題を修正しました。
-1. **ACP2E-4801**: [!UICONTROL Admin]からの交渉可能な見積もりの[!UICONTROL Configure] ボタンを介してバンドル製品オプションの数量を更新しても適用されず、変更が破棄される問題を修正しました。
+1. **[ACP2E-4786](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786.md)**: ストレージドライバーのパス解決が正しくないため、AWS S3 リモートストレージが構成されている場合に製品の書き出しがファイルを書き込めない問題を修正しました。
+1. **[ACP2E-4801](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801.md)**：管理者からの交渉可能な見積もりの&#x200B;**[!UICONTROL Configure]** ボタンを介してバンドル製品オプションの数量を更新しても適用されず、変更が破棄される問題を修正しました。
 
 左側のメニューを使用して、特定のパッチページに移動します。
