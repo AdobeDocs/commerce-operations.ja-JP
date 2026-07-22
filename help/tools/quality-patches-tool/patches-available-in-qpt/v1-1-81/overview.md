@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: af9c1cd1091aa70aa247064f076817895286c4b8
+source-git-commit: db5e09759abee078ed36e097b397f2dacbc2fef7
 workflow-type: tm+mt
-source-wordcount: 273
+source-wordcount: 270
 ht-degree: 0%
 
 ---
@@ -27,10 +27,11 @@ ht-degree: 0%
 
 QPT v1.1.81には、次のパッチが含まれています。
 
+
+1. **[ACP2E-4401](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401.md)**：設定可能な製品を含む[!UICONTROL Home Page] リンクの[!UICONTROL Scheduled Update Preview]が、製品リストを表示する代わりに[!UICONTROL maintenance page]にリダイレクトされる問題を修正しました。
 1. **[ACP2E-4300](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)**：管理画面で顧客グループを変更しても、ストアフロントのカタログ権限が更新されず、カタログとカートが古い権限を反映する問題を修正します。
-1. **ACP2E-4401**：設定可能な製品を含むホームページ リンクの[!UICONTROL Scheduled Update Preview]が、製品リストを表示する代わりにメンテナンスページにリダイレクトされる問題を修正します。
 1. **ACP2E-4395**: グローバル スコープに金額が指定されていない場合、Giftcard API製品の作成でエラーが表示されるようになりました。
-1. **ACP2E-4468**: web サイトのスコープ権限を持つ[!UICONTROL Admin]人のユーザーがバナーコンテンツを編集できない問題を修正します。
+1. **[ACP2E-4468](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)**: web サイトのスコープ権限を持つ管理者ユーザーがバナーコンテンツを編集できない問題を修正します。
 1. **[ACP2E-4630](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)**: カスタムオプションを持つ長い製品名が、複数ページの請求書、出荷、クレジットメモ、およびページ区切り後の返品PDFの隣接する列または項目と重なり、行項目が読み取り不能になる問題を修正します。
 1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)**：最終交渉可能な見積もりから販売不可または削除された製品が消える問題を修正します。
 1. **ACP2E-4709**: ページビルダーを使用する際にCMS ページを保存できない問題を修正しました。

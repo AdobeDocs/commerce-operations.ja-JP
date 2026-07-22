@@ -1,210 +1,79 @@
 ---
-source-git-commit: 4589c405bab743001e967a9825d578ee1a03c216
+source-git-commit: 90e3f9cb6033c91be67947e84520d3e2537ca5d9
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
 # 概要
 
-このプロジェクトには、ニュースダイジェストのデータ生成、テンプレートファイルのレンダリング、画像の最適化、マップの生成など、ワークフローの様々な側面を自動化するためのいくつかの Rake タスクが含まれています。 Rakefile で定義された各 Rake タスクの説明と使用ガイドラインを以下に示します。
+このプロジェクトでは、Rake タスクを使用して、ドキュメントワークフローの一部を自動化します。 ほとんどのタスクはExL Commerce ドキュメントリポジトリ間で共有され、[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks) gemから取得されます。 以下のいくつかのタスクは、このリポジトリに固有のものです。
 
-## タスクのレイク
+**一般的なタスク（テンプレートのレンダリング、インクルードの管理、画像の最適化/監査、新機能ダイジェストの生成）については、[adobe-comdox-exl-rake-tasks README](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks/blob/main/README.md)を参照してください。**
 
-### `render`
+> GemfileとRakefileが存在するため、以下のすべての`bundle exec rake` コマンドは`_jekyll/` ディレクトリ内から実行する必要があります。
 
-`_jekyll/templates` のデータを使用して、`_jekyll/_data/` ディレクトリのテンプレート化されたファイルをレンダリングします。 結果は、`help/includes/templated` ディレクトリにあります。 このタスクは、レンダリング後、インクルードの関係とタイムスタンプを自動的に維持します。
-
-**使用方法：**
-
-```sh
-rake render
-```
-
-**機能：**
-- レンダリングスクリプトを実行して、テンプレートファイルを生成します
-- `includes:maintain_all` を実行して関係とタイムスタンプを更新する
-- すべてのインクルードメタデータがレンダリング後に最新であることを確認
-
-### `image_optim`
-
-変更されたコミットされていないファイルのイメージを最適化します。 その他の画像の場合は、`path` 引数を使用してディレクトリまたはファイルを指定します。
-
-**使用方法：**
-
-```sh
-rake image_optim
-```
-
-**引数 `path` 使用：**
-
-```sh
-rake image_optim path=../path/to/dir/or/file
-```
-
-### `whatsnew`
-
-ニュースダイジェストのデータを生成します。 デフォルトの期間は前回の更新以降の期間です。 `since` 引数を使用して、別の期間を指定できます。
-
-**使用方法：**
-
-```sh
-rake whatsnew
-```
-
-**引数 `since` 使用：**
-
-```sh
-rake whatsnew since="jul 4"
-```
+## リポジトリ固有のRake タスク
 
 ### `whatsnew_bp`
 
-ベストプラクティスでニュースダイジェストのデータを生成します。 デフォルトの期間は前回の更新以降の期間です。 `since` 引数を使用して、別の期間を指定できます。
+ベストプラクティスでニュースダイジェスト用のデータを生成します。 デフォルトの期間は、前回の更新以降です。 `since`引数を使用して別の期間を指定できます。
 
-**使用方法：**
+**使用状況：**
 
 ```sh
-rake whatsnew_bp
+bundle exec rake whatsnew_bp
 ```
 
-**引数 `since` 使用：**
+**引数`since`付き：**
 
 ```sh
-rake whatsnew_bp since="jul 4"
-```
-
-### `azure_regions`
-
-Azure リージョン マップを生成します。 入力データファイルは `_jekyll/tmp/azure-regions.json` に配置する必要があります。 結果は `_jekyll/tmp/azure-regions.svg` にあります。 Python、[PyGMT](https://www.pygmt.org/latest/install.html)、および [pdf2svg](https://formulae.brew.sh/formula/pdf2svg) がインストールされている必要があります。
-
-**使用方法：**
-
-```sh
-rake azure_regions
+bundle exec rake whatsnew_bp since="jul 4"
 ```
 
 ### `get_released_versions`
 
-最新の 10 リリース済みバージョンを `magento/magento2` リポジトリから取得します。 [GitHub CLI](https://cli.github.com/) がインストールされ、認証されている必要があります。
+`magento/magento2` リポジトリから最新の10 リリース済みバージョンを取得します。 [GitHub CLI](https://cli.github.com/)をインストールして認証する必要があります。
 
-**使用方法：**
+**使用状況：**
 
 ```sh
-rake get_released_versions
+bundle exec rake get_released_versions
 ```
 
-**出力：** リリースタグの名前と日付を使用して `tmp/core-release.txt` を生成します。
+**出力：** リリースタグ名と日付を含む`tmp/core-release.txt`が生成されます。
 
 ### `first_merge_date`
 
-指定した分岐への最初の結合の日付を取得します。 [GitHub CLI](https://cli.github.com/) がインストールされ、認証されている必要があります。
+指定したブランチに最初に結合した日付を取得します。 [GitHub CLI](https://cli.github.com/)をインストールして認証する必要があります。
 
-**使用方法：**
+**使用状況：**
 
 ```sh
-rake first_merge_date base=develop
+bundle exec rake first_merge_date base=develop
 ```
 
 **引数：**
 
-- `base` （必須）：結合を確認するターゲット分岐名。
-
-### `includes:maintain_relationships`
-
-`include-relationships.yml` ディレクトリ内のすべてのマークダウンファイルをスキャンし、パターン `help` を使用してインクルードステートメントを検索することで、`{{$include /help/_includes/filename.md}}` ファイルを検出および更新します。 このタスクでは、メイン コンテンツ ファイルとインクルード ファイルとの関係が自動的に維持されます。
-
-**使用方法：**
-
-```sh
-rake includes:maintain_relationships
-```
-
-**機能：**
-- 既存のインクルードファイルのリストを `help/_includes` ディレクトリから読み取ります
-- すべての主要な Markdown ファイルを検索して、各インクルードを参照するファイルを見つけます。
-- `{{$include /help/_includes/filename.md}}` パターンを使用して参照を識別します
-- 検出された関係で `include-relationships.yml` ファイルを更新します
-- 行われた変更の概要を提供し、参照されていないインクルードを特定します
-
-### `includes:maintain_timestamps`
-
-最新のインクルードファイル変更タイムスタンプをメインファイルに追加して、インクルードタイムスタンプを維持します。 このタスクでは、`include-relationships.yml` ファイルを読み取り、各インクルードファイルの Git 履歴を確認し、メインファイルの最後にタイムスタンプを追加または更新します。
-
-**使用方法：**
-
-```sh
-rake includes:maintain_timestamps
-```
-
-**機能：**
-- 負荷には `include-relationships.yml` からの関係が含まれます
-- メインファイルごとに、インクルードファイル内の最新の Git コミット日を検索します
-- メインファイルの末尾にタイムスタンプが付いたHTML コメントを追加または更新します
-- 次の形式を使用します。`<!-- Last updated from includes: YYYY-MM-DD HH:MM:SS -->`
-- チェックされたインクルードファイルとそのタイムスタンプを示す詳細出力を提供します
-
-**出力例：**
-
-```console
-Processing installation/advanced.md...
-  Latest include change: 2024-04-16 09:42:31
-  Include files checked: help/_includes/cli-consumers.md (2022-09-12 09:38:25), help/_includes/secure-install.md (2022-09-08 11:33:05), help/_includes/sensitive-data.md (2024-04-16 09:42:31)
-  Added new timestamp
-```
-
-### `includes:maintain_all`
-
-`includes:maintain_relationships` と `includes:maintain_timestamps` の両方を順番に実行する便利なタスク。 インクルードの関係とタイムスタンプの両方を維持するには、この方法をお勧めします。
-
-**使用方法：**
-
-```sh
-rake includes:maintain_all
-```
-
-### `unused_includes`
-
-マークダウンファイルで参照されていないインクルードファイルを `help/_includes` ディレクトリで検索します。 これにより、安全に削除できる孤立したインクルードファイルを特定できます。
-
-**使用方法：**
-
-```sh
-rake unused_includes
-```
+- `base` （必須）：結合を確認するターゲットブランチ名。
 
 ## 使用可能なタスクのリスト
 
-使用可能なすべての Rake タスクとその説明を確認するには、次を使用します。
+使用可能なすべてのレイクタスクとその説明を表示するには、次を使用します。
 
 ```sh
-rake --tasks
+bundle exec rake --tasks
 ```
 
-特定のタスクについて詳しくは、以下を使用します。
+特定のタスクの詳細については、次を使用してください。
 
 ```sh
-rake -T [task_name]
-```
-
-## 管理タスクを含める
-
-インクルード関連のすべてのタスクは、整理しやすくするために `includes` 名前空間の下に整理されています。
-
-```sh
-# Discover and maintain include relationships
-rake includes:maintain_relationships
-
-# Add/update timestamps based on include file changes
-rake includes:maintain_timestamps
-
-# Do both operations in sequence (recommended)
-rake includes:maintain_all
+bundle exec rake -T [task_name]
 ```
 
 ## 関係ファイル形式を含める
 
-`include-relationships.yml` ファイルは、メインコンテンツファイルとそれらに含まれるファイルとの関係を追跡します。 このファイルは、既存のインクルードファイルを読み取り、それらを参照するメインファイルを見つけることで関係を検出する `maintain_include_relationships` rake タスクによって自動的に管理されます。
+`include-relationships.yml` ファイルは、メインコンテンツ ファイルと含まれるファイルとの関係を追跡します。 このファイルは、`includes:maintain_relationships` タスクによって自動的に管理されます（タスクの使用状況については、[adobe-comdox-exl-rake-tasks README](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks/blob/main/README.md)を参照）。このタスクは、既存のインクルードファイルを読み取り、それらを参照するメインファイルを見つけることで関係を検出します。
 
 **ファイル構造：**
 
@@ -226,13 +95,13 @@ relationships:
 
 **フィールド：**
 - `metadata.last_updated`：最終更新のタイムスタンプ
-- `metadata.total_relationships`: インクルードを含むメインファイルの合計数
-- `metadata.auto_discovered`：ファイルが自動的に生成されたことを示します
+- `metadata.total_relationships`：次を含むメインファイルの合計数
+- `metadata.auto_discovered`: ファイルが自動的に生成されたことを示します
 - `metadata.discovery_date`：関係が最初に検出された日付
-- `relationships`：メインファイルとインクルードされるファイルとのマッピング
+- `relationships`: メインファイルとインクルードされたファイルのマッピング
 
-**Include ステートメントの形式：**
-メインコンテンツファイルには、次の構文を使用して他のファイルが含まれます。
+**ステートメント形式を含める：**
+メインコンテンツファイルは、次の構文を使用して他のファイルを含めます。
 
 ```markdown
 {{$include /help/_includes/filename.md}}
@@ -240,17 +109,14 @@ relationships:
 
 ## 前提条件
 
-- Ruby と Bundler がインストールされました。
-- Gemfile で指定されている必須の gem （コア依存関係は `adobe-comdox-exl-rake-tasks` で提供されます）。
-- [&#x200B; タスクと &#x200B;](https://cli.github.com/) タスク用の `get_released_versions`GitHub CLI`first_merge_date`。
-- [&#x200B; タスクの Python、](https://www.pygmt.org/latest/install.html)PyGMT[&#x200B; および &#x200B;](https://formulae.brew.sh/formula/pdf2svg)pdf2svg`azure_regions`。
+- RubyとBundlerがインストールされています。
+- Gemfileで指定されている必要な宝石（一般的なタスクは`adobe-comdox-exl-rake-tasks`によって提供されます。`whatsnew` タスクには`whatsup_github`が追加で必要です）。
+- `get_released_versions`および`first_merge_date` タスクの[GitHub CLI](https://cli.github.com/)。
 
 ## 設定
 
-1. 必要な gem をインストールします。
+必要な宝石を取り付けます。
 
-   ```sh
-   bundle install
-   ```
-
-2. `azure_regions` タスクに Python、PyGMT、pdf2svg がインストールされていることを確認します。 設定について詳しくは、[_scripts/azure_regions.py](_scripts/azure_regions.py) のコメントにあるドキュメントを参照してください。
+```sh
+bundle install
+```
