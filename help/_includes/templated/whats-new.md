@@ -1,7 +1,7 @@
 ---
-source-git-commit: 970dcea74edf889a6cb5abf1449d63dfe2d7d654
+source-git-commit: 06df92107c98f188a5dcb4b56aa6d61d3c594a7e
 workflow-type: tm+mt
-source-wordcount: '2772'
+source-wordcount: '2460'
 ht-degree: 0%
 
 ---
@@ -683,88 +683,6 @@ ht-degree: 0%
         新しいトピック、qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21979ca7c9dd21a871c22271603bcd09b9dfd29a">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月23日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2598-add-caching-capability">B2B-2598のQPT 1.1.30修正のタイプミスとURL修正を追加：storeConfig、通貨、国、国、利用可能なStores GraphQl クエリ </a>にキャッシュ機能を追加しました。</p>
-</td>
-      <td>
-        Qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07202bf339331adb7b4103cdd123b0a194b72bf4">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月22日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新された<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9 リリースノート </a>および<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Magento Open Source 2.4.9 リリースノート </a>:AC-10933 <code>setup:di:compile</code>の修正を明確にし、AC-14519の修正を取り消し、修正済み問題の数を調整しました。<br /><em> クレジット：<a href="https://github.com/hostep">hostep</a></em></p>
-</td>
-      <td>
-        フィードバック、テクニカル
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e5a69a282839a393d6eb873af9938208706af50">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737">AC-10737: Bin/magento <code>setup:db:status</code> コマンドのQPT 1.1.79修正に関する詳細な説明を追加しました。JSON データタイプ </a>が認識されません。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9aad978f42697f74ebd7c8f401e45b4780bd5038">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月20日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601">ACP2E-4601のQPT 1.1.79の修正に関する詳細な説明を追加しました。支払認証トランザクションのself-reference parent_idを再保存し、無限ループ/OOM</a>をトリガーします。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3fe9730b1954a07d9ef4a405ee75fcde9511e09d">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p>クラウド バージョンのアップグレード実施日、サポート期間の定義（セキュリティのみの移行期間を含む）、2.4.4～2.4.9のサポート終了テーブル、PHP PCI ガイダンス、およびAdobe Commerce as a Cloud Serviceへの移行またはPaaSでのアップグレードのパスを含む<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/lifecycle-policy"> ソフトウェア ライフサイクル ポリシー</a>を更新しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cd0f27ae6a8dcec9b25af15386d8350c22d2fb95">コミット</a></td>
     </tr>
   </tbody>
 </table>

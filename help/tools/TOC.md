@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: db5e09759abee078ed36e097b397f2dacbc2fef7
+source-git-commit: f28140efde87efac04d64121ecbc603dbe87e6b6
 workflow-type: tm+mt
-source-wordcount: '10433'
+source-wordcount: '10465'
 ht-degree: 0%
 
 ---
@@ -1033,6 +1033,7 @@ ht-degree: 0%
       - [ACP2E-4156: [!DNL REST] API出荷アドレスの検証で管理者属性の設定が無視される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
     - v1.1.81 {#v1-1-81}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+      - [ACP2E-4395：ギフトカード製品は、グローバルスコープで金額を指定せずにAPI経由で作成できます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4395.md)
       - [ACP2E-4401: [!UICONTROL Home Page]のうち[!UICONTROL Scheduled Update Preview]、設定可能な製品が[!UICONTROL maintenance page]にリダイレクトされます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401.md)
       - [ACP2E-4468:Web サイト範囲の管理者ユーザーがページビルダーに動的ブロックを保存できない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)
       - [ACP2E-4786:AWS S3 リモートストレージが設定されていると、製品の書き出しが失敗する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786.md)
@@ -1040,6 +1041,7 @@ ht-degree: 0%
       - [ACP2E-4630：複数ページの販売PDFで、ページ区切りの後に長い製品名が隣接する列と重なる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)
       - [ACP2E-4680：最終交渉可能な見積もりから販売不可の商品が消える](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
       - [ACP2E-4300：管理者の顧客グループの変更後、ストアフロントカタログの権限が更新されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
+      - [ACP2E-4709：ページ階層に二重引用符が含まれている場合、CMS ページがページビルダーに保存されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
   - [Quality Patches ToolでAdobe Commerceの問題が発生した場合のパッチの確認](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - コマンドラインツールリファレンス {#cli-reference}
   - [Adobe Commerce （オンプレミス）](reference/commerce-on-premises.md)

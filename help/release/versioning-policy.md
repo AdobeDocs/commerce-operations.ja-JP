@@ -2,7 +2,7 @@
 title: リリースポリシー
 description: Adobe Commerceのリリースタイプ、マーケターとモジュールのバージョン管理、パッチとセキュリティのリリース、ベータ版、ホットフィックス、全体的なリリースポリシーについて説明します。
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: 48fc318078cbf1800522aeb43d8927b72727e7ed
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -16,9 +16,9 @@ Adobe Commerceでは、個々のモジュールレベル （例：`magento/frame
 - **メジャーリリース**—2
 - **マイナーリリース**—2.4
 - **PATCH リリース**—2.4.8
-   - **セキュリティパッチリリース**—2.4.8-p1
-      - セキュリティバグ修正
-      - セキュリティ強化
+  - **セキュリティパッチリリース**—2.4.8-p1
+    - セキュリティバグ修正
+    - セキュリティ強化
 - **ALPHA パッチリリース**—2.4.8-alpha1
 - **BETA パッチリリース**—2.4.8-beta1
 - **拡張性、インフラストラクチャ、およびサービス リリース**
@@ -81,4 +81,4 @@ Beta リリースには欠陥が含まれている場合があり、いかなる
 
 さまざまな理由で問題を修正したり、Adobe Commerce コードを変更したりするために、Adobe以外の担当者によって作成されました。
 
-<!-- Last updated from includes: 2026-04-20 10:12:04 -->
+<!-- Last updated from includes: 2026-06-16 17:36:23 -->
