@@ -2,7 +2,7 @@
 title: リリースポリシー
 description: Adobe Commerceのリリースタイプ、マーケターとモジュールのバージョン管理、パッチとセキュリティのリリース、ベータ版、ホットフィックス、全体的なリリースポリシーについて説明します。
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 48fc318078cbf1800522aeb43d8927b72727e7ed
+source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -82,3 +82,4 @@ Beta リリースには欠陥が含まれている場合があり、いかなる
 さまざまな理由で問題を修正したり、Adobe Commerce コードを変更したりするために、Adobe以外の担当者によって作成されました。
 
 <!-- Last updated from includes: 2026-06-16 17:36:23 -->
+
