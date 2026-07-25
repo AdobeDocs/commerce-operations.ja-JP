@@ -1,8 +1,8 @@
 ---
-source-git-commit: 06df92107c98f188a5dcb4b56aa6d61d3c594a7e
+source-git-commit: 462c3bcd5e4359d2be1a8f112c2dc50d3b8825bd
 workflow-type: tm+mt
-source-wordcount: '2460'
-ht-degree: 0%
+source-wordcount: '2666'
+ht-degree: 1%
 
 ---
 # 新しいテンプレート
@@ -10,6 +10,80 @@ ht-degree: 0%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年7月23日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce 2.4.9 （12.3推奨、11.8 サポート）のMariaDB Cloud バージョン サポートの詳細を含む<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements">必要システム構成</a>を更新しました。</p>
+</td>
+      <td>
+        テクニカル
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eaf47339d87d296799367f699f9322c14e6ee780">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年7月22日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>RabbitMQ 4.3のアップデートやMariaDB 12.3との互換性の確認など、最新のCommerce on Cloud Service バージョンを使用して、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements">必要システム構成</a>のトピックを更新しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6607852ba3221a1120f3c88007c106ed9704dcec">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年7月21日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401">ACP2E-4401のQPT 1.1.81修正に関する詳細な説明を追加しました。設定可能な製品を含むホームページのスケジュールされた更新プレビューは、メンテナンスページ </a>にリダイレクトされます。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/41aac13f73ff0836f93b8ec30a709bd89fa34a94">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468">ACP2E-4468のQPT 1.1.81修正に関する詳細な説明を追加しました。Web サイト範囲の管理者ユーザーがページビルダー</a>に動的ブロックを保存できません。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f5fbe594284c05aaa9b2461e3628a3444229efb6">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年7月16日（PT）
 
