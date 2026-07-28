@@ -6,15 +6,10 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-24T20:44:59.025Z'
 TQID: 'https://experienceleague.adobe.com/Qoz-3w1ddXeHyDsyfsM0gD1kwi-Z6dc-C6P9Q-nYrUo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 6b7e2463ee1f743fb5e8451a7f9832309aa68ab0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 4358eb2865fbd8a66716ffc6b7a7b133a7e10e5d
 workflow-type: tm+mt
 source-wordcount: 485
 ht-degree: 0%
@@ -34,7 +29,7 @@ QPT v1.1.82には、次のパッチが含まれています。
 1. **ACP2E-4682**：見積`isActive`の状態を確認するストアフロントページにアクセスすると、ページが読み込まれるたびに空の見積もりレコードが作成される問題を修正します。
 1. **ACP2E-4695**: カタログ ルール インデクサーが過剰なメモリを消費し、完了に失敗して、不安定およびメモリ不足エラーが発生する問題を修正します。
 1. **ACP2E-4698**: ページビルダーのテキストコンテンツで画像を再度編集すると、ポータブルメディアディレクティブを保持する代わりに絶対メディア URLが保存される問題を修正しました。
-1. **ACP2E-4748**：大きな報酬ポイント履歴を持つストアで報酬ポイントの有効期限が遅くなり、報酬ポイントの有効期限が遅くなる問題を修正します。
+1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**：報酬ポイントの有効期限が大きな報酬ポイント履歴を持つストアでゆっくりと実行され、報酬ポイントの有効期限が遅くなる問題を修正します。
 1. **ACP2E-4797**: データベースが`utf8mb4`をサポートするように設定されている場合でも、管理者のWYSIWYG エディターまたはページビルダーのコンテンツに4 バイトのUnicode文字を入力すると誤ってブロックされる問題を修正しました。
 1. **ACP2E-4799**: `requisition_lists` GraphQL クエリが、クエリ条件に一致する要件リストの合計数ではなく、現在のページの項目数のみを反映する`total_count`値を返す問題を修正しました。
 1. **ACP2E-4805**：最初の販売可能な子製品がリストの後半に表示される場合、多くの子製品で設定可能な製品のチェックアウト API リクエストが大幅に遅くなる問題を修正しました。
