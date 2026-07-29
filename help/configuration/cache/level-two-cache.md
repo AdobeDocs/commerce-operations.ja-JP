@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
+source-git-commit: 37196b2d34951dd2df4d1e459cc9e29480f4f6e1
 workflow-type: tm+mt
-source-wordcount: 1166
+source-wordcount: 1221
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Commerceは、ハッシュ化されたデータバージョンをリモートキ
   - `local_backend_options`はローカル キャッシュ設定です。
   - `cache_dir`は、ローカルキャッシュが保存されているディレクトリのファイルキャッシュ固有のオプションです。
 
-Adobe Commerce Adobeでは、次を使用して、リモート キャッシュ （`\Magento\Framework\Cache\Backend\Redis`）および`Cm_Cache_Backend_File`にRedisを使用することをお勧めします。共有メモリ内のデータのローカル キャッシュには、`'local_backend_options' => ['cache_dir' => '/dev/shm/']`を使用します
+Adobe Commerceの場合、Adobeでは、共有メモリ内のデータのローカルキャッシュに対するリモートキャッシュ（`\Magento\Framework\Cache\Backend\Redis`）および`Cm_Cache_Backend_File`にRedisを使用することをお勧めします。使用する場所：`'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
 Adobeでは、Redisへの負荷を大幅に軽減するため、[`cache preload`](redis-pg-cache.md#redis-preload-feature)機能の使用をお勧めします。 プリロード キーのサフィックス &#39;:hash&#39;を追加することを忘れないでください。
 
@@ -190,15 +190,11 @@ Adobeでは、`default` キャッシュタイプに`use_stale_cache` オプシ�
 
 Commerce バージョン 2.4.9以降では、従来のL2 キャッシュの代わりにSymfony Cache ベースのL2 キャッシュ実装（`symfony_l2` バックエンド）を使用します。 Symfony L2 キャッシュは、PSR-6に準拠した最新のキャッシュ実装を提供し、従来の`RemoteSynchronizedCache`よりもパフォーマンスが大幅に向上しました。
 
->[!NOTE]
->
->Adobe Commerce on Cloudの場合、ECE ツールパッケージ （`ece-tools`）はこの設定を自動的に管理します。 `app/etc/env.php`を直接編集しないでください。デプロイメントによって手動での変更が上書きされます。 クラウド設定については、代わりに[Symfony L2 キャッシュの設定](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache)を参照してください。
-
 >[!IMPORTANT]
 >
->{{redis-cache-support}}
+>Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14、2.4.7-p9、および2.4.8-p5以降のパッチリリースではサポートされていません。 Redisをサポートしていないバージョンにアップグレードする場合は、Valkeyを設定し、`symfony_l2`を使用するようにキャッシュ設定を更新する必要があります。 Commerce オンプレミスについては、[Valkeyの設定](config-valkey.md)を参照してください。 Commerce on Cloudについては、[Valkeyの設定](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md){target="_blank"}を参照してください
 >
->`symfony_l2`はAdobe Commerce 2.4.9以降でのみ使用できるため、Valkeyをリモートバックエンドとして設定します。 Redisは、`symfony_l2`の正式にサポートされているリモート バックエンドではありません。 リリース別のサポートされているキャッシュサービスについては、[必要システム構成](../../installation/system-requirements.md)を参照してください。
+>Redisは、`symfony_l2`の正式にサポートされているリモート バックエンドではありません。 `symfony_l2`をサポートするリリースを使用している場合は、Valkeyを使用してキャッシュする必要があります。 [必要システム構成](../../installation/system-requirements.md)を参照してください
 
 ### Symfony L2 キャッシュのメリット
 
@@ -210,6 +206,10 @@ Commerce バージョン 2.4.9以降では、従来のL2 キャッシュの代�
 - **簡略化された設定**：よりクリーンなバックエンドの型名（`valkey`、`file`）
 
 ### Symfony L2 キャッシュを使用した設定例
+
+>[!NOTE]
+>
+>Adobe Commerce on Cloudの場合、ECE ツールパッケージ （`ece-tools`）はキャッシュ設定を自動的に管理します。 `app/etc/env.php`を直接編集しないでください。デプロイメントによって手動での変更が上書きされます。 クラウド設定については、代わりに[Symfony L2 キャッシュの設定](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache)を参照してください。
 
 L2 キャッシュに簡略化された`symfony_l2` バックエンドタイプを使用します。
 
