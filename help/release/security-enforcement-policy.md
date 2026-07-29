@@ -2,12 +2,25 @@
 title: セキュリティ実施ポリシー：必要なアクションと期限
 description: 期限、必要なアクション、リスクなど、Cloud版およびソフトウェアの依存関係でサポートされていないAdobe Commerceのセキュリティを適用する方法について説明します。
 TQID: 'https://experienceleague.adobe.com/0JX-Z-dRjsiQk5jO-LLRi-J4GWdylTh4pOfXRPOabxs'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c32adafa-ed01-4b31-997e-2413013911b0id: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2: id: f2261633-201d-46c5-8a66-999e70527a83
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: f2261633-201d-46c5-8a66-999e70527a83
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Adobe Commerce クラウド版のみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Cloud プロジェクト上のAdobe Commerceにのみ適用されます。"
 hide: true
 source-git-commit: 93446d5be993e53e94f714a592d519a945dfbebd
@@ -43,7 +56,7 @@ Adobeの企業セキュリティポリシーでは、Adobeでホストされて�
 
 **表1：必要なアクションとバージョン別の期限**
 
-| **お使いのバージョン** | **[アクション 1:<br> サードパーティ製ソフトウェアの依存関係をアップグレード](#action-1-upgrade-third-party-software-dependencies)** | **アクション 2:<br>[Adobe Commerce バージョンのアップグレードまたは移行](#action-2-upgrade-to-a-supported-adobe-commerce-version)** |
+| **お使いのバージョン** | **[アクション 1:<br> サードパーティ製ソフトウェアの依存関係をアップグレード](#action-1-upgrade-third-party-software-dependencies)**&#x200B; | &#x200B;** アクション 2:<br>[Adobe Commerce バージョンのアップグレードまたは移行](#action-2-upgrade-to-a-supported-adobe-commerce-version)** |
 | --- | --- | --- |
 | 2.4.4または2.4.5 | 2026年10月30日までに必要な措置。 | 2027年6月1日までに必要な措置 |
 | 2.4.6または2.4.7 | ソフトウェアによっては、2026年10月30日（PT）または2027年5月31日（PT）までに実行する必要があります。 | 2028年6月1日までに必要な措置 |
@@ -66,7 +79,7 @@ Adobe Commerce on Cloudの各環境で実行しているバージョンを確認
 
    現在のバージョンは、管理者ページの右下隅に表示されます。
 
-1. 管理者にバージョンが表示されない場合は、[Adobe Commerce コマンドラインツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli){target="_blank"}を使用してversion コマンドを実行します。
+1. 管理者にバージョンが表示されない場合は、[Adobe Commerce コマンドラインツール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli){target="_blank"}を使用してversion コマンドを実行します。
 
    ```shell
    bin/magento --version
@@ -77,7 +90,7 @@ Adobe Commerce on Cloudの各環境で実行しているバージョンを確認
 1. [Cloud Console](https://console.adobecommerce.com/)にログインします。
 1. 関連するプロジェクトを開き、確認する環境を選択します。
 1. クラウドインフラストラクチャ上のAdobe Commerceで使用されるサポートされているサービス名とバージョンを定義する`.magento/services.yaml` ファイルで、その環境のサービス構成を確認します。
-詳細な手順については、[ サービスの設定](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/services/config-services){target="_blank"}のドキュメントを参照してください。
+詳細な手順については、[&#x200B; サービスの設定](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/services/config-services){target="_blank"}のドキュメントを参照してください。
 
 ## このセキュリティマンデートが重要な理由
 
@@ -95,13 +108,13 @@ Adobe Commerce on Cloudの各環境で実行しているバージョンを確認
 
 >[!WARNING]
 >
->お使いの環境が[必要なアクションと期限テーブル ](#determine-your-required-actions)で説明されている期限までに要件を満たさない場合、Adobeは影響を受ける環境へのインバウンドトラフィックを強制的に停止します。 コマースのストアフロントはオフラインになり、買い物客にはサービスを提供しません。
+>お使いの環境が[必要なアクションと期限テーブル &#x200B;](#determine-your-required-actions)で説明されている期限までに要件を満たさない場合、Adobeは影響を受ける環境へのインバウンドトラフィックを強制的に停止します。 コマースのストアフロントはオフラインになり、買い物客にはサービスを提供しません。
 
 ## 各行動の必須条件
 
 ### アクション 1: サードパーティ製ソフトウェアの依存関係をアップグレードする
 
-ソフトウェアによっては、サポートされていないソフトウェアの依存関係はすべて、次の表で共有されているタイムラインに基づいてアップグレードする必要があります。 環境は、[Cloud Console](https://console.adobecommerce.com/)で表示できます。 各環境で実行されている依存関係バージョンを確認するには、[ ソフトウェア依存関係バージョンの確認](#check-software-dependency-versions)を参照してください。 ソフトウェア依存関係のアップグレードは、すべてのAdobe Commerce on Cloud バージョン 2.4.4 ～ 2.4.9に適用されます。
+ソフトウェアによっては、サポートされていないソフトウェアの依存関係はすべて、次の表で共有されているタイムラインに基づいてアップグレードする必要があります。 環境は、[Cloud Console](https://console.adobecommerce.com/)で表示できます。 各環境で実行されている依存関係バージョンを確認するには、[&#x200B; ソフトウェア依存関係バージョンの確認](#check-software-dependency-versions)を参照してください。 ソフトウェア依存関係のアップグレードは、すべてのAdobe Commerce on Cloud バージョン 2.4.4 ～ 2.4.9に適用されます。
 
 **表2: ソフトウェア依存関係のアップグレード要件**
 
@@ -174,9 +187,9 @@ Adobeには、アップグレードや移行を行う場合でも、移行を可
 
 ### Cloud バージョン 2.4.9でのAdobe Commerceへのアップグレード
 
-* **アップグレード互換性レポート：** Adobeには、時間とコストの範囲など、Adobe Commerce バージョン 2.4.9へのアップグレードに必要な内容を正確に示す詳細なレポートが用意されています。 [ アップグレード互換性レポートを生成](https://supportinsights.adobe.com/commerce/tab/main)。
+* **アップグレード互換性レポート：** Adobeには、時間とコストの範囲など、Adobe Commerce バージョン 2.4.9へのアップグレードに必要な内容を正確に示す詳細なレポートが用意されています。 [&#x200B; アップグレード互換性レポートを生成](https://supportinsights.adobe.com/commerce/tab/main)。
 
-* **ソフトウェア依存関係のアップグレード：** ソフトウェア依存関係を直接アップグレードできないため、[Adobeのサポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket){target="_blank"}を開いて、アップグレードを処理してください。 詳しくは、[ サービスの設定](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}を参照してください。
+* **ソフトウェア依存関係のアップグレード：** ソフトウェア依存関係を直接アップグレードできないため、[Adobeのサポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket){target="_blank"}を開いて、アップグレードを処理してください。 詳しくは、[&#x200B; サービスの設定](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}を参照してください。
 
 ### Adobe Commerce as a Cloud Serviceへの移行
 
@@ -184,8 +197,8 @@ Adobeには、Adobe Commerce as a Cloud Serviceへの移行にかかるコスト
 
 * **移行評価：** カスタマイズの移行複雑さを評価します。 [移行評価ツールの概要](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/assessment)を参照してください。
 
-* **データ移行：** [一括および増分データ移行ツール ](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data)を使用すると、データを新しいAdobe Commerce as a Cloud Service環境に移行できます。
+* **データ移行：** [一括および増分データ移行ツール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data)を使用すると、データを新しいAdobe Commerce as a Cloud Service環境に移行できます。
 
-* **ストアフロントと拡張機能の移行：** Adobeの[AI支援による移行と開発者ツール ](https://developer.adobe.com/commerce/extensibility/developer-agent/) （[!DNL Adobe Developer App Builder]と[!DNL Commerce Storefront powered by Edge Delivery Services]を含む）は、ストアフロントの近代化と拡張機能の再プラットフォーム化の促進に役立ちます。
+* **ストアフロントと拡張機能の移行：** Adobeの[AI支援による移行と開発者ツール &#x200B;](https://developer.adobe.com/commerce/extensibility/developer-agent/) （[!DNL Adobe Developer App Builder]と[!DNL Commerce Storefront powered by Edge Delivery Services]を含む）は、ストアフロントの近代化と拡張機能の再プラットフォーム化の促進に役立ちます。
 
-ご不明な点がある場合は、アカウントチーム、ソリューションアカウントマネージャー、リニューアルスペシャリストにお問い合わせいただくか、[ サポートサービス ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
+ご不明な点がある場合は、アカウントチーム、ソリューションアカウントマネージャー、リニューアルスペシャリストにお問い合わせいただくか、[&#x200B; サポートサービス &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
