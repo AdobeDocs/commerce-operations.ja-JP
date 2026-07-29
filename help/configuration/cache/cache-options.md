@@ -3,24 +3,17 @@ title: キャッシュバックエンドオプションとストレージリフ�
 description: ファイルシステム、Redis、Valkey、データベースストレージなど、Adobe Commerceのキャッシュバックエンドオプションについて説明します。 レガシーかつモダンなアプローチをご紹介します。
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
 autotag-review: '2026-06-22T18:37:32.504Z'
 TQID: 'https://experienceleague.adobe.com/m7eUBNrt8UF43iJq9Tpl0Y1WcmR-dlt7Z4PoHvXVNnA'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 37196b2d34951dd2df4d1e459cc9e29480f4f6e1
 workflow-type: tm+mt
-source-wordcount: 331
+source-wordcount: 395
 ht-degree: 0%
 
 ---
@@ -42,13 +35,13 @@ Commerce アプリケーションでは、低レベルのキャッシュフロ�
 | バックエンド | 説明 | 設定ガイド |
 | ------- | ----------- | ------------------- |
 | ファイルシステム | デフォルト： キャッシュデータを`var/cache/`の下のファイルに保存します。 設定は必要ありません。 | 該当なし |
-| [Redis](config-redis.md) | 高性能なキャッシュを実現するインメモリデータストア。 | [&#x200B; デフォルトのキャッシュにRedisを使用](redis-pg-cache.md) |
+| [Redis](config-redis.md) | 高性能なキャッシュを実現するインメモリデータストア。 | [ デフォルトのキャッシュにRedisを使用](redis-pg-cache.md) |
 | [Valkey](config-valkey.md) | オープンソースのRedis互換の代替手段。 | [既定のキャッシュにValkeyを使用](valkey-pg-cache.md) |
-| [&#x200B; データベース &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | データベースに裏打ちされたキャッシュ： | [&#x200B; カスタムキャッシュエンジンの作成](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} （Adobe開発者向けドキュメント） |
+| [ データベース ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | データベースに裏打ちされたキャッシュ： | [ カスタムキャッシュエンジンの作成](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} （Adobe開発者向けドキュメント） |
 
 >[!IMPORTANT]
 >
->{{redis-cache-support}}
+>Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14、2.4.7-p9、および2.4.8-p5以降のパッチリリースではサポートされていません。 Redisをサポートしていないバージョンにアップグレードする場合は、Valkeyを設定し、それを使用するようにキャッシュ設定を更新する必要があります。 Commerce オンプレミスについては、[Valkeyの設定](config-valkey.md)を参照してください。 Commerce on Cloudについては、[Valkeyの設定](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md){target="_blank"}を参照してください。
 
 ## 導入アプローチ
 
@@ -116,5 +109,5 @@ Commerceは、バックエンドの実装アプローチを2つサポートし�
 - [デフォルトのキャッシュにValkeyを使用](valkey-pg-cache.md)
 - [L2 キャッシュ設定](level-two-cache.md)
 
-従来のZend ベースのオプションについては、[Laminas ドキュメント &#x200B;](https://docs.laminas.dev/)を参照してください。
+従来のZend ベースのオプションについては、[Laminas ドキュメント ](https://docs.laminas.dev/)を参照してください。
 

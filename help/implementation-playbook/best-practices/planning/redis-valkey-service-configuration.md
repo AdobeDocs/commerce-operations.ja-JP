@@ -8,11 +8,11 @@ feature: Best Practices, Cache
 feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-badgePaas: label="Commerce on Cloud" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Cloud プロジェクト上のAdobe Commerceにのみ適用されます。"
+badgePaas: label="Commerce on Cloud" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Cloud プロジェクト上のAdobe Commerceにのみ適用されます。"
 nudge: true
-source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
+source-git-commit: 5f0b6f7a04ee96b2aa650ee242e31d383bd7512b
 workflow-type: tm+mt
-source-wordcount: '2454'
+source-wordcount: '2470'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # ValkeyとRedis サービス設定のベストプラクティス
 
-これらの推奨事項を使用して、Adobe Commerce on cloud infrastructureのValkeyまたはRedisのキャッシュとセッションを設定します。 オンプレミス キャッシュの設定については、[&#x200B; キャッシュ バックエンド オプションとストレージ リファレンス &#x200B;](../../../configuration/cache/cache-options.md)を参照してください。
+これらの推奨事項を使用して、Adobe Commerce on cloud infrastructureのValkeyまたはRedisのキャッシュとセッションを設定します。 オンプレミス キャッシュの設定については、[ キャッシュ バックエンド オプションとストレージ リファレンス ](../../../configuration/cache/cache-options.md)を参照してください。
 
 - [!DNL Symfony]個のL2 キャッシュを含むL2 キャッシュの設定
 - 読み取り専用レプリカ接続を有効にする
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->最新バージョンの`ece-tools` パッケージを使用していることを確認してください。 そうでない場合は、[最新バージョン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)にアップグレードしてください。 ローカル環境にインストールされているバージョンは、`composer show magento/ece-tools` CLI コマンドを使用して確認できます。
+>最新バージョンの`ece-tools` パッケージを使用していることを確認してください。 そうでない場合は、[最新バージョン ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)にアップグレードしてください。 ローカル環境にインストールされているバージョンは、`composer show magento/ece-tools` CLI コマンドを使用して確認できます。
 
 ## L2 キャッシュの設定
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.9および2.4.8-p4、2.4.7-p9、2.4.6-p14、および2.4.5-p16以降のバージョンの場合は、Valkeyを使用してL2 キャッシュを設定します。 このページのRedisの設定例は、Redisを使用するサポートされているAdobe Commerce バージョンにのみ適用されます。 リリース別のサポートされているキャッシュサービスについては、[必要システム構成](../../../installation/system-requirements.md)を参照してください。
 
-実装の詳細、設定例、デプロイメント固有のガイダンスについては、[&#x200B; パフォーマンス最適化のためのL2 キャッシュ設定](../../../configuration/cache/level-two-cache.md)を参照してください。
+実装の詳細、設定例、デプロイメント固有のガイダンスについては、[ パフォーマンス最適化のためのL2 キャッシュ設定](../../../configuration/cache/level-two-cache.md)を参照してください。
 
 >[!IMPORTANT]
 >
@@ -70,7 +70,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-環境設定の詳細については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[`REDIS_BACKEND`](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend)を参照してください。
+環境設定の詳細については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[`REDIS_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend)を参照してください。
 
 >[!ENDTABS]
 
@@ -84,7 +84,7 @@ Adobe Commerce 2.4.9以降では、`symfony_l2` キャッシュバックエン�
 
 Adobe Commerce 2.4.9に`symfony_l2` キャッシュを使用するには、次の手順を実行します。
 
-- クラウドプロジェクトで[ECE ツールパッケージ v2002.2.12](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)以降が使用されていることを確認します。
+- クラウドプロジェクトで[ECE ツールパッケージ v2002.2.12](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)以降が使用されていることを確認します。
 
 - デプロイメント変数を`.magento.env.yaml` ファイル `VALKEY_BACKEND`=`symfony_l2`に設定します。
 
@@ -98,7 +98,7 @@ Adobe Commerce 2.4.9に`symfony_l2` キャッシュを使用するには、次�
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.9には、キャッシュ・タグ・ストレージ、無効化、圧縮などのSymfony L2 キャッシュの機能強化が含まれており、ACP2E-5132 パッチの適用、ディスク I/Oの削減、古いキャッシュ・エントリの排除、メモリとネットワークのオーバーヘッドの削減が実現されています。 _Adobe Commerce Configuration Guide_&#x200B;の[Enhanced Symfony L2 cache performance and reliability](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability)を参照してください。
+>Adobe Commerce 2.4.9には、キャッシュ・タグ・ストレージ、無効化、圧縮などのSymfony L2 キャッシュの機能強化が含まれており、ACP2E-5132 パッチの適用、ディスク I/Oの削減、古いキャッシュ・エントリの排除、メモリとネットワークのオーバーヘッドの削減が実現されています。 _Adobe Commerce Configuration Guide_&#x200B;の[Enhanced Symfony L2 cache performance and reliability](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability.md)を参照してください。 パッチ ACP2E-5132 パッチは、クラウドパッチパッチに含まれており、e ツールを介して自動的に適用されます。
 
 #### Symfony L2 キャッシュ設定のカスタマイズ
 
@@ -135,7 +135,7 @@ stage:
 
 ### Adobe Commerce CloudのL2 キャッシュメモリサイズ
 
-L2 キャッシュでは、ストレージメカニズムとして[一時ファイルシステム &#x200B;](https://en.wikipedia.org/wiki/Tmpfs) （`/dev/shm`）が使用されます。 特殊なキー値ストアとは異なり、tmpfsにはキーの立ち退きポリシーがないので、メモリの使用量は制限なく増加する可能性があります。 Adobe Commerceでは、使用状況が設定可能なしきい値（デフォルトでは95%）に達すると、自動的にL2 ストレージがクリアされます。 大きな`/dev/shm` マウントを要求するか、クリーンアップしきい値を下げることで、メモリ消費を制御できます。
+L2 キャッシュでは、ストレージメカニズムとして[一時ファイルシステム ](https://en.wikipedia.org/wiki/Tmpfs) （`/dev/shm`）が使用されます。 特殊なキー値ストアとは異なり、tmpfsにはキーの立ち退きポリシーがないので、メモリの使用量は制限なく増加する可能性があります。 Adobe Commerceでは、使用状況が設定可能なしきい値（デフォルトでは95%）に達すると、自動的にL2 ストレージがクリアされます。 大きな`/dev/shm` マウントを要求するか、クリーンアップしきい値を下げることで、メモリ消費を制御できます。
 
 プロジェクトの要件に基づいて、L2 キャッシュメモリの最大使用量を調整します。 次のいずれかの方法を使用します。
 
@@ -209,7 +209,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-環境変数の設定の詳細については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#valkey_use_slave_connection)を参照してください。
+環境変数の設定の詳細については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection)を参照してください。
 
 >[!TAB Redis設定]
 
@@ -221,7 +221,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-環境変数の設定の詳細については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_use_slave_connection)を参照してください。
+環境変数の設定の詳細については、_Commerce on Cloud Infrastructure ガイド_&#x200B;の[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)を参照してください。
 
 >[!ENDTABS]
 
@@ -233,7 +233,7 @@ RedisまたはValkeyでアクティブなコマンドを監視することで、
 
 >[!BEGINTABS]
 
->[!TAB キーの事前読み込みキーの設定が有効です]
+>[!TAB  キーの事前読み込みキーの設定]が有効です
 
 プリロードキーは、`.magento.env.yaml`設定ファイルで設定されます。
 
@@ -326,7 +326,7 @@ redis-cli -p 6370 -n 1 hgetall "<key_name>"
 >[!BEGINTABS]
 
 
->[!TAB Valkeyの古いキャッシュの設定]
+>[!TAB Valkey]の古いキャッシュの設定
 
 Valkeyの場合：
 
@@ -342,7 +342,7 @@ stage:
             use_stale_cache: true
 ```
 
->[!TAB Redisの古いキャッシュの設定]
+>[!TAB Redis]の古いキャッシュの設定
 
 Redisの場合
 
@@ -362,14 +362,14 @@ stage:
 
 >[!NOTE]
 >
->`full_page` キャッシュの種類は、[Fastly](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly)を使用しているため、Cloud インフラストラクチャプロジェクト上のAdobe Commerceとは関係ありません。
+>`full_page` キャッシュの種類は、[Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)を使用しているため、Cloud インフラストラクチャプロジェクト上のAdobe Commerceとは関係ありません。
 
 >[!WARNING]
 >
 >上記の設定により、`default` キャッシュフロントエンドで古いキャッシュが有効になり、そのフロントエンドを使用するすべてのキャッシュエントリに古いキャッシュ動作が適用されます。 Magento コアキャッシュの種類は、通常、この設定で期待どおりに動作します。 ただし、専用のキャッシュフロントエンドを使用せずに汎用`\Magento\Framework\App\Cache` API （例：`$this->cache->save()`）を介してキャッシュに書き込むカスタムコードまたは拡張機能がプロジェクトに含まれている場合、それらのエントリは再生中に古い値を提供することもできます。
 >
 >
->これにより、カスタマイズで予期しない動作が発生する場合は、`default` フロントエンドで古いキャッシュを無効のままにし、選択したキャッシュタイプに対してのみ有効にします。これは、一般的に[&#x200B; オンプレミス &#x200B;](../../../configuration/cache/level-two-cache.md#stale-cache-options)で行われるのと同じです。
+>これにより、カスタマイズで予期しない動作が発生する場合は、`default` フロントエンドで古いキャッシュを無効のままにし、選択したキャッシュタイプに対してのみ有効にします。これは、一般的に[ オンプレミス ](../../../configuration/cache/level-two-cache.md#stale-cache-options)で行われるのと同じです。
 
 ### キャッシュタイプごとに個別に古いキャッシュを有効にする
 
@@ -381,7 +381,7 @@ stage:
 
 >[!BEGINTABS]
 
->[!TAB Valkeyの古いキャッシュの設定]
+>[!TAB Valkey]の古いキャッシュの設定
 
 Valkeyの場合：
 
@@ -437,7 +437,7 @@ stage:
         # add other cache types as needed...
 ```
 
->[!TAB Redisの古いキャッシュの設定]
+>[!TAB Redis]の古いキャッシュの設定
 
 Redisの場合
 
@@ -546,7 +546,7 @@ stage:
 
 1. 実稼動環境とステージング環境のセッション専用の新しいValkey インスタンスをリクエストします。
 
-   [Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)を送信します。 更新された`.magento/services.yaml`および`.magento.app.yaml`設定ファイルを含めます。
+   [Adobe Commerce サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。 更新された`.magento/services.yaml`および`.magento.app.yaml`設定ファイルを含めます。
 
    このアップデートはダウンタイムを引き起こしませんが、新しいサービスをアクティブ化するにはデプロイメントが必要です。
 
@@ -578,7 +578,7 @@ stage:
        min_lifetime: 60
    ```
 
-1. Valkey キャッシュインスタンスの[&#x200B; デフォルト データベース &#x200B;](../../../configuration/cache/redis-pg-cache.md) （`db 0`）からセッションを削除します。
+1. Valkey キャッシュインスタンスの[ デフォルト データベース ](../../../configuration/cache/redis-pg-cache.md) （`db 0`）からセッションを削除します。
 
    ```terminal
    valkey-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
@@ -621,7 +621,7 @@ stage:
 
 1. 実稼動環境とステージング環境のセッション専用の新しいRedis インスタンスをリクエストします。
 
-   [Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)を送信します。 更新された`.magento/services.yaml`および`.magento.app.yaml`設定ファイルを含めます。
+   [Adobe Commerce サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。 更新された`.magento/services.yaml`および`.magento.app.yaml`設定ファイルを含めます。
 
    このアップデートはダウンタイムを引き起こしませんが、新しいサービスをアクティブ化するにはデプロイメントが必要です。
 
@@ -653,7 +653,7 @@ stage:
        min_lifetime: 60
    ```
 
-1. Redis キャッシュインスタンスの[&#x200B; デフォルト データベース &#x200B;](../../../configuration/cache/redis-pg-cache.md) （`db 0`）からセッションを削除します。
+1. Redis キャッシュインスタンスの[ デフォルト データベース ](../../../configuration/cache/redis-pg-cache.md) （`db 0`）からセッションを削除します。
 
    ```terminal
    redis-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
@@ -663,7 +663,7 @@ stage:
 
 ## キャッシュ圧縮
 
-6 GBを超えるRedisまたはValkey `maxmemory`を使用する場合は、キャッシュ圧縮を有効にして、キーが消費する領域を削減できます。 この設定は、クライアント側のパフォーマンスを処理してメモリを節約することに注意してください。 CPUのキャパシティが空いている場合は、有効にすることを検討してください。 _設定ガイド_&#x200B;の「[&#x200B; セッションストレージにRedisを使用する](../../../configuration/cache/redis-session.md)」または「[&#x200B; セッションストレージにValkeyを使用する](../../../configuration/cache/valkey-session.md)」を参照してください。
+6 GBを超えるRedisまたはValkey `maxmemory`を使用する場合は、キャッシュ圧縮を有効にして、キーが消費する領域を削減できます。 この設定は、クライアント側のパフォーマンスを処理してメモリを節約することに注意してください。 CPUのキャパシティが空いている場合は、有効にすることを検討してください。 _設定ガイド_&#x200B;の「[ セッションストレージにRedisを使用する](../../../configuration/cache/redis-session.md)」または「[ セッションストレージにValkeyを使用する](../../../configuration/cache/valkey-session.md)」を参照してください。
 
 ```yaml
 stage:
@@ -681,7 +681,7 @@ stage:
 
 ## 非同期解放を有効にする
 
-クラウドインフラストラクチャ上のAdobe Commerceで`lazyfree`を有効にするには、次のRedisまたはValkey設定を環境に適用することを要求する[Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)を送信します。
+クラウドインフラストラクチャ上のAdobe Commerceで`lazyfree`を有効にするには、次のRedisまたはValkey設定を環境に適用することを要求する[Adobe Commerce サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。
 
 ```text
 lazyfree-lazy-eviction yes
@@ -703,11 +703,11 @@ lazyfree-lazy-user-del yes
 
 ## マルチスレッド I/Oを有効にする
 
-クラウドインフラストラクチャ上のAdobe CommerceでRedis I/O スレッドを有効にするには、以下のI/O スレッド設定をリクエストする[Adobe Commerce サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)を送信します。 これにより、CPUの使用率を高くしながらも、ソケットの読み取りと書き込みをオフロードし、メインスレッドからコマンド解析を行うことで、スループットを向上させることができます。 負荷の下で検証し、ホストを監視します。
+クラウドインフラストラクチャ上のAdobe CommerceでRedis I/O スレッドを有効にするには、以下のI/O スレッド設定をリクエストする[Adobe Commerce サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信します。 これにより、CPUの使用率を高くしながらも、ソケットの読み取りと書き込みをオフロードし、メインスレッドからコマンド解析を行うことで、スループットを向上させることができます。 負荷の下で検証し、ホストを監視します。
 
 >[!BEGINTABS]
 
->[!TAB RedisのI/O スレッドの設定]
+>[!TAB Redis]のI/O スレッドの設定
 
 Redisの場合
 
@@ -716,7 +716,7 @@ io-threads-do-reads yes
 io-threads 8 # Choose a value lower than the number of CPU cores (check with nproc), and then tune under load.
 ```
 
->[!TAB ValkeyのI/O スレッドを設定]
+>[!TAB Valkey]のI/O スレッドを設定
 
 Valkeyの場合：
 
@@ -1052,8 +1052,8 @@ stage:
 
 次の関連トピックを参照してください。
 
-- [Valkey サービスの設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/valkey)
-- [Redis サービスの設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/redis)
-- [変数のデプロイ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
+- [Valkey サービスの設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey)
+- [Redis サービスの設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/redis)
+- [変数のデプロイ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
 
 
