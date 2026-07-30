@@ -1,71 +1,71 @@
 ---
-title: 'MDVA-38852: カタログ在庫によりテーブルがロックされ、パフォーマンスが低下する'
-description: MDVA-38852 パッチを適用すると、複数の並列オーダーが行われた場合に、更新のためにカタログ インベントリがテーブルをロックし、パフォーマンスが大幅に低下する問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.2 がインストールされている場合に利用できます。 パッチ ID は MDVA-38852。 この問題はAdobe Commerce 2.3.6 で修正されました。
+title: 'MDVA-38852: カタログインベントリでテーブルがロックされ、パフォーマンスが低下する'
+description: MDVA-38852 パッチは、カタログの在庫が更新のためにテーブルをロックし、複数の並列注文が行われた場合にパフォーマンスが大幅に低下する問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.2がインストールされている場合に利用できます。 パッチ IDはMDVA-38852です。 この問題は、Adobe Commerce 2.3.6で修正されています。
 feature: Catalog Management, Inventory, Orders
 role: Admin
 exl-id: ce93130b-8d96-47b8-96c6-da5988b34ae0
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
 
-# MDVA-38852: カタログ在庫によりテーブルがロックされ、パフォーマンスが低下する
+# MDVA-38852: カタログインベントリでテーブルがロックされ、パフォーマンスが低下する
 
-MDVA-38852 パッチを適用すると、複数の並列オーダーが行われた場合に、更新のためにカタログ インベントリがテーブルをロックし、パフォーマンスが大幅に低下する問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.2 がインストールされている場合に使用できます。 パッチ ID は MDVA-38852。 この問題はAdobe Commerce 2.3.6 で修正されました。
+MDVA-38852 パッチは、カタログの在庫が更新のためにテーブルをロックし、複数の並列注文が行われた場合にパフォーマンスが大幅に低下する問題を解決します。 このパッチは、[品質パッチツール （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2がインストールされている場合に使用できます。 パッチ IDはMDVA-38852です。 この問題は、Adobe Commerce 2.3.6で修正されています。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.3.3
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.3.0 ～ 2.3.5-p2
+* Adobe Commerce（すべてのデプロイメント方法） 2.3.0 - 2.3.5-p2
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-カタログ在庫は、複数の並列オーダーが行われる場合にパフォーマンスが大幅に低下する更新のためにテーブルをロックします。
+カタログ在庫では、複数の同時注文が発生した場合にパフォーマンスを大幅に低下させる更新のために、テーブルがロックされます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 商品を買い物かごに追加します。
-1. チェックアウトに進み、注文してみてください。
+1. 商品をカートに追加する。
+1. チェックアウトに進み、注文を試みます。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-* デッドロックは発生しません。
-* 複数の並列オーダーが行われる場合、パフォーマンスは低下しません。
+* デッドロックはありません。
+* 複数並列注文した場合もパフォーマンスが低下することはありません。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-* 同時に複数のユーザーが存在する場合、注文の送信が非常に遅くなります。
-* デッドロックエラーが発生すると、次のようになります。
+* 複数の同時ユーザーがいる場合、注文は非常に遅くなります。
+* 次のようなデッドロックエラーが発生します。
 
 ```SQL
 "SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to get lock; try restarting transaction, query was:
 INSERT INTO `quote_payment` (`quote_id`, `method`, `additional_information`) VALUES (?, ?, ?)"
 ```
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-品質向上パッチツールの詳細については、次を参照してください。
+品質パッチツールについて詳しくは、以下を参照してください。
 
-* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [品質パッチツール &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

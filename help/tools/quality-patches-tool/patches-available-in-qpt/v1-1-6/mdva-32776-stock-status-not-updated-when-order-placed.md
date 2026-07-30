@@ -1,74 +1,74 @@
 ---
-title: MDVA-32776：発注時に在庫ステータスが更新されない
-description: MDVA-32776 パッチは、注文が行われても出荷されなかった場合に在庫ステータスが更新されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.6 がインストールされている場合に利用できます。 パッチ ID は MDVA-32776。 この問題はAdobe Commerce 2.4.2 で修正されました。
+title: MDVA-32776：注文の配置で在庫ステータスが更新されない
+description: MDVA-32776 パッチでは、注文が行われても配送されないときに在庫状況が更新されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.6がインストールされている場合に利用できます。 パッチ IDはMDVA-32776です。 この問題はAdobe Commerce 2.4.2で修正されています。
 feature: Orders
 role: Admin
 exl-id: 6f872c72-c96f-4c23-b6df-44e3da3a81c2
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
 
-# MDVA-32776：発注時に在庫ステータスが更新されない
+# MDVA-32776：注文の配置で在庫ステータスが更新されない
 
-MDVA-32776 パッチは、注文が行われても出荷されなかった場合に在庫ステータスが更新されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.6 がインストールされている場合に使用できます。 パッチ ID は MDVA-32776。 この問題はAdobe Commerce 2.4.2 で修正されました。
+MDVA-32776 パッチでは、注文が行われても配送されないときに在庫状況が更新されない問題を修正します。 このパッチは、[品質パッチツール （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6がインストールされている場合に使用できます。 パッチ IDはMDVA-32776です。 この問題はAdobe Commerce 2.4.2で修正されています。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 Adobe Commerce（すべてのデプロイメント方法） 2.4.0
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-Adobe Commerce（すべてのデプロイメント方法） 2.4.0 ～ 2.4.1-p1
+Adobe Commerce（すべてのデプロイメント方法） 2.4.0 - 2.4.1-p1
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-注文したが出荷されていない場合、在庫ステータスは更新されません。
+注文しても在庫状況は更新されませんが、発送はされません。
 
-<u> 前提条件 </u>:
+<u>前提条件</u>:
 
-1. 在庫モジュールがインストールされています。
-1. 在庫切れ商品を表示が *はい* に設定されている。
+1. インベントリモジュールがインストールされている。
+1. 在庫切れ商品の表示は&#x200B;*はい*&#x200B;に設定されています。
 
-   設定するには、**Stores**/**Configuration**/**Catalog**/**Inventory**/**在庫切れ商品を表示**=*Yes* に移動します。
+   設定するには、**Stores** > **Configuration** > **Catalog** > **Inventory** > **在庫切れ商品の表示** = *Yes*&#x200B;に移動します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 数量=11 と 22 の 2 つの単純な製品を作成します。
-1. 手順 1 で作成した簡単な製品を使用して、グループ化された製品を作成します。
-1. 製品数量の 1 つを 11 に設定し、他の単純な製品を在庫切れにすることで、グループ化された製品を買い物かごに追加します。
-1. チェックアウトを完了し、注文を行います。
+1. qty = 11と22の2つの単純な製品を作成します。
+1. 手順1で作成したシンプルな製品を使用して、グループ化された製品を作成します。
+1. いずれかの商品数量を11に設定し、他のシンプルな商品を在庫切れにすることで、グループ化された商品をカートに追加します。
+1. チェックアウトを完了し、注文します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-関連付けられたシンプルな製品が在庫切れになった場合、グループ化された製品には `out-of-stock` ラベルが表示されます。
+グループ化された商品は、関連付けられたシンプルな商品が在庫切れになると`out-of-stock` ラベルが表示されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-1. 数量= 11 のシンプル製品は、在庫切れを示しています。
-1. グループ化された製品には、数量= 11 の製品の *在庫切れ* メッセージは表示されません。 ただし、この製品を買い物かごに追加すると *在庫切れ* エラーが発生します。
+1. qty = 11のシンプルな商品は在庫切れです。
+1. グループ化された製品には、数量= 11の製品に対する&#x200B;*在庫切れ* メッセージが表示されません。 ただし、この商品をカートに追加すると、*在庫切れ*&#x200B;のエラーが発生します。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-品質向上パッチツールの詳細については、次を参照してください。
+品質パッチツールについて詳しくは、以下を参照してください。
 
-* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [品質パッチツール &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPT で使用可能なその他のパッチについては、[QPT で使用可能なパッチ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) の節を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、「QPT[&#128279;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で使用可能な パッチ」セクションを参照してください。

@@ -1,72 +1,72 @@
 ---
-title: 'ACSD-60234: [!DNL PayPal]  割引が適用されている場合に、間違った金額が表示される'
-description: ACSD-60234 パッチを適用すると、支払い方法を通じて割引が適用された際に  [!DNL PayPal]  が誤った金額を表示するAdobe Commerceの問題を修正できます。
+title: 'ACSD-60234: [!DNL PayPal] では、割引が適用された場合に誤った金額が表示されます'
+description: ACSD-60234 パッチを適用して、Adobe Commerceの問題を修正します。割引が支払い方法を通じて適用された場合、 [!DNL PayPal] に誤った金額が表示されます。
 feature: Products, Configuration
 role: Admin, Developer
 exl-id: 2ce7bde5-02a4-4989-80d6-ab1be0ca5fe9
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
 
-# ACSD-60234：割引が適用されると、[!DNL PayPal] に間違った金額が表示される
+# ACSD-60234: [!DNL PayPal]では、割引が適用されたときに誤った金額が表示されます
 
-ACSD-60234 パッチは、支払い方法を通じて割引が適用され [!DNL PayPal] 際に誤った金額が表示される問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.51 がインストールされている場合に使用できます。 パッチ ID は ACSD-60234 です。 この問題はAdobe Commerce 2.5.0 で修正される予定であることに注意してください。
+ACSD-60234 パッチは、支払い方法で割引が適用された場合に[!DNL PayPal]に誤った金額が表示される問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.51がインストールされている場合に利用できます。 パッチ IDはACSD-60234です。 この問題は、Adobe Commerce 2.5.0で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p2
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-支払方法 [!DNL PayPal] 割引が適用される場合、正しくない金額が表示されます。
+支払い方法で割引が適用された場合、[!DNL PayPal]に誤った金額が表示されます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. *[!DNL PayPal Express]*/**[!UICONTROL Stores]**/**[!UICONTROL Config]**/**[!UICONTROL Sales]**/**[!UICONTROL Payment methods]**/**[!DNL PayPal]** で **[!UICONTROL Express checkout]** を設定します。
-   * [!UICONTROL Enable In-Context Checkout]&#x200B;[!UICONTROL Yes] たは [!UICONTROL NO] の場合がありますが、この問題はどちらのシナリオでも発生します。
-1. *[!UICONTROL Cart Rule]*/**[!UICONTROL Marketing]**/**[!UICONTROL Promotions]**/**[!UICONTROL Cart Price Rules]** で **[!UICONTROL Add New Rule]** を作成します。
-   * 条件：これらの条件がすべて true の場合：*[!UICONTROL Payment Method]* は *[!DNL PayPal Express Checkout]* です。
+1. *[!DNL PayPal Express]*&#x200B;を&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Config]** > **[!UICONTROL Sales]** > **[!UICONTROL Payment methods]** > **[!DNL PayPal]** > **[!UICONTROL Express checkout]**&#x200B;に設定します。
+   * [!UICONTROL Enable In-Context Checkout]には[!UICONTROL Yes]または[!UICONTROL NO]を指定できます。両方のシナリオで問題が再現されます。
+1. *[!UICONTROL Cart Rule]*&#x200B;を&#x200B;**[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]** > **[!UICONTROL Add New Rule]**&#x200B;に作成します。
+   * 条件：これらの条件がすべてtrueの場合：*[!UICONTROL Payment Method]*&#x200B;は&#x200B;*[!DNL PayPal Express Checkout]*&#x200B;です。
    * アクション：任意のアクション。
-1. 商品を作成します。
-1. ストアフロントに移動し、商品を買い物かごに追加して、チェックアウトの **[!UICONTROL Payment Method]** の手順に移動します。
-1. *[!DNL PayPal Express]* を選択し、割引が正しく適用されていることを検証してください。
-1. **[!DNL PayPal]** ボタンをクリックします。
-1. ログインし、ポップアップの内容を確認します。
+1. 商品を作成する。
+1. ストアフロントに移動し、商品をカートに追加してから、チェックアウトの&#x200B;**[!UICONTROL Payment Method]** ステップに進みます。
+1. *[!DNL PayPal Express]*&#x200B;を選択し、割引が正しく適用されていることを確認してください。
+1. 「**[!DNL PayPal]**」ボタンをクリックします。
+1. ログインして、ポップアップの内容を確認します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-[!DNL PayPal] に渡される支払い金額には、買い物かごにある割引が含まれます。
+[!DNL PayPal]に渡される支払い金額には、カート内の割引が含まれます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-合計支払額には割引は含まれません。
+支払う合計金額には割引は含まれておりません。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [[!DNL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。
