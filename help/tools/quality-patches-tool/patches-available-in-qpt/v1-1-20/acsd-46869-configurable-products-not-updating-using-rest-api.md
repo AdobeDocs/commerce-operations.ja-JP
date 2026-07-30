@@ -1,44 +1,44 @@
 ---
-title: ACSD-46869：設定可能な製品が、チェックアウト時に REST API を使用して更新されない
-description: ACSD-46869 パッチを適用すると、チェックアウト時に設定可能な製品が REST API を使用して更新されない問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.20 がインストールされている場合に利用できます。 パッチ ID は ACSD-46869 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+title: ACSD-46869：チェックアウト時にREST APIを使用して設定可能な製品が更新されない
+description: ACSD-46869 パッチは、チェックアウト時にREST APIを使用して、設定可能な製品が更新されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.20がインストールされている場合に利用できます。 パッチ IDはACSD-46869です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
 feature: REST, Checkout, Configuration, Orders, Products
 role: Admin
 exl-id: f03d4b24-ac95-406e-8e9d-908149b9207c
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
 
-# ACSD-46869：設定可能な製品が、チェックアウト時に REST API を使用して更新されない
+# ACSD-46869：チェックアウト時にREST APIを使用して設定可能な製品が更新されない
 
-ACSD-46869 パッチにより、チェックアウト時に設定可能な製品が REST API を使用して更新されない問題が修正されました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.20 がインストールされている場合に使用できます。 パッチ ID は ACSD-46869 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+ACSD-46869 パッチは、チェックアウト時にREST APIを使用して設定可能な製品が更新されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.20がインストールされている場合に利用できます。 パッチ IDはACSD-46869です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.5
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがお使いのAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL QPT]  ランディングページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL QPT]  ランディングページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-設定可能な製品は、チェックアウト時に REST API を使用して更新されません。
+チェックアウト時にREST APIを使用して設定可能な製品が更新されない。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
 1. カラー属性とサイズ属性を使用して設定可能な商品を作成します。
-1. **[!UICONTROL Options]** を選択し、商品を買い物かごに追加します。
-1. **[!UICONTROL Checkout]** に移動し、数量を除いてサイズを複数回更新し、リクエストと応答を確認します。
+1. **[!UICONTROL Options]**&#x200B;を選択し、商品をカートに追加します。
+1. **[!UICONTROL Checkout]**&#x200B;に移動し、数量を除いてサイズを複数回更新し、リクエストと応答を確認します。
 1. サイズを更新すると、次の応答が表示されます。
 
 ```REST API
@@ -48,23 +48,23 @@ ACSD-46869 パッチにより、チェックアウト時に設定可能な製品
 ]}}
 ```
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
 値は変更に従って更新されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-`option_value` は更新されないので、注文されると、古いサイズ値になります。
+`option_value`は更新されないので、注文が行われると、古いサイズの値になります。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tools] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) （品質パッチツールガイド）。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：品質パッチツールガイドの[[!DNL Quality Patches Tools] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

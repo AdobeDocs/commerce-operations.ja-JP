@@ -1,89 +1,89 @@
 ---
-title: ACSD-59865：製品数量が不十分なため、[!UICONTROL Cart Price Rule] が以前のルールのキャンセルに失敗します
-description: ACSD-59865 パッチを適用すると、Adobe Commerceの問題を修正できます。この問題では、固定金額割引、*製品価格割引の割合、*Buy X get Y*の*割引数量ステップ*の値によって、以前のルールのアクション [!UICONTROL Cart Price Rules] キャンセルされなくなります。
+title: 'ACSD-59865: [!UICONTROL Cart Price Rule]は、製品数量が不足しているため、以前のルールをキャンセルできません'
+description: ACSD-59865 パッチを適用して、Adobe Commerceの問題を修正します。この問題では、*値引き*の*割引量*値、*値引き**および*買いXはYを取得* [!UICONTROL Cart Price Rules]で以前のルールのアクションがキャンセルされなくなりました。
 feature: Price Rules
 role: Admin, Developer
 exl-id: 5838a740-018d-44c2-8135-54426ea08627
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
 
-# ACSD-59865：製品数量が不十分なため、[!UICONTROL Cart Price Rule] が以前のルールのキャンセルに失敗します
+# ACSD-59865: [!UICONTROL Cart Price Rule]は、製品数量が不足しているため、以前のルールをキャンセルできません
 
-ACSD-59865 パッチは、*[!UICONTROL Discount quantity step]*、*[!UICONTROL Fixed amount discount]*、*[!UICONTROL Percent of product price discount]および* *[!UICONTROL Buy X get Y]* の [!UICONTROL Cart Price Rules] 値によって以前のルールのアクションがキャンセルされなくなる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.52 がインストールされている場合に使用できます。 パッチ ID は ACSD-59865 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-59865 パッチは、*[!UICONTROL Fixed amount discount]、*、*[!UICONTROL Percent of product price discount]、*、*[!UICONTROL Buy X get Y]* [!UICONTROL Cart Price Rules]の&#x200B;*[!UICONTROL Discount quantity step]*&#x200B;値が以前のルールのアクションをキャンセルしなくなった問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.52がインストールされている場合に利用できます。 パッチ IDはACSD-59865です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.6-p7
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-カート内の製品数量が不十分なため、[!UICONTROL Cart Price Rule] は以前に適用されたルールをキャンセルできません。
+カート内の製品数量が不十分なため、以前に適用したルールを[!UICONTROL Cart Price Rule]でキャンセルできません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
 1. 管理者としてログインします。
-1. **[!UICONTROL Marketing]**/**[!UICONTROL Cart Price Rules]** に移動し、「**[!UICONTROL Add New rule]**」をクリックします。
-   * Set **[!UICONTROL Rule Name]** = *テスト - 1*
-   * すべての *Web サイト* および *顧客グループ* を選択します
+1. **[!UICONTROL Marketing]** > **[!UICONTROL Cart Price Rules]**&#x200B;に移動し、**[!UICONTROL Add New rule]**&#x200B;をクリックします。
+   * Set **[!UICONTROL Rule Name]** = *Test - 1*
+   * すべての&#x200B;*Web サイト*&#x200B;と&#x200B;*顧客グループ*&#x200B;を選択
    * Set **[!UICONTROL Priority]** = *0*
-   * **[!UICONTROL Actions]** のセクションに移動します。
-      * Set **[!UICONTROL Apply]** = *製品価格割引のパーセント*
-      * Set **[!UICONTROL Discount amount]** = *10*
-      * Set **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
-      * Set **[!UICONTROL Discount Qty Step (Buy X)]** = *0*
-      * **[!UICONTROL Discard subsequent rules]** を *いいえ* に設定
+   * **[!UICONTROL Actions]** セクションに移動します。
+     * セット **[!UICONTROL Apply]** = *製品価格割引のパーセント*
+     * Set **[!UICONTROL Discount amount]** = *10*
+     * Set **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
+     * Set **[!UICONTROL Discount Qty Step (Buy X)]** = *0*
+     * **[!UICONTROL Discard subsequent rules]**&#x200B;を&#x200B;*No*&#x200B;に設定
 1. キャッシュをクリアします。
-1. ストアフロントに移動し、買い物かごに商品を 1 つ追加して、*チェックアウト/買い物かご* に進みます。
-1. *10%* の割引が買い物かごに適用されることを確認します。
-1. **[!UICONTROL Cart Price Rules]** に戻り、新しいルールを作成します。
-   * Set **[!UICONTROL Rule Name]** = *テスト - 2*
-   * すべての **[!UICONTROL Websites]** と **[!UICONTROL Customer Groups]** を選択
+1. ストアフロントに移動し、1つの商品をカートに追加して、*チェックアウト/カート*&#x200B;に進みます。
+1. *10%*&#x200B;割引がカートに適用されていることを確認します。
+1. **[!UICONTROL Cart Price Rules]**&#x200B;に戻り、新しいルールを作成します。
+   * Set **[!UICONTROL Rule Name]** = *Test - 2*
+   * **[!UICONTROL Websites]**&#x200B;と&#x200B;**[!UICONTROL Customer Groups]**&#x200B;をすべて選択
    * Set **[!UICONTROL Priority]** = *2*
-   * **[!UICONTROL Actions]** のセクションに移動します。
-      * Set **[!UICONTROL Apply]** = *製品価格割引のパーセント*
-      * Set **[!UICONTROL Discount amount]** = *20*
-      * Set **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
-      * Set **[!UICONTROL Discount Qty Step (Buy X)]** = *3*
+   * 「**[!UICONTROL Actions]**」セクションに移動します。
+     * セット **[!UICONTROL Apply]** = *製品価格割引のパーセント*
+     * Set **[!UICONTROL Discount amount]** = *20*
+     * Set **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
+     * Set **[!UICONTROL Discount Qty Step (Buy X)]** = *3*
 1. キャッシュをクリアします。
-1. 再びストアフロントに戻ります。
-1. 買い物かごを更新して、ルールを更新します。 *10%* 割引が適用されなくなったことを確認します。
-1. 数量が 2 番目のルールに必要な *ステップ* 値を満たすまで、買い物かごに品目を追加します。
+1. もう一度ストアフロントに戻ります。
+1. カートを更新してルールを更新します。 *10%*&#x200B;割引が適用されなくなったことを確認します。
+1. 数量が2番目のルールに必要な&#x200B;*ステップ*&#x200B;の値を満たすまで、商品をカートに追加します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-2 番目のルールの条件が満たされると、最初の [!UICONTROL Cart Price Rule] が適用されます。
+最初の[!UICONTROL Cart Price Rule]は、2番目のルールの条件が満たされたときに適用されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-価格ルールは、管理ダッシュボードで設定されたとおりに適用されます。
+価格ルールは、管理者ダッシュボードの設定に従って適用されます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。
