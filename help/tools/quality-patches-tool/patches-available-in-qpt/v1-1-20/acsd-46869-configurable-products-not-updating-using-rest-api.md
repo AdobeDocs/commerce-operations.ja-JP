@@ -1,6 +1,6 @@
 ---
 title: ACSD-46869：チェックアウト時にREST APIを使用して設定可能な製品が更新されない
-description: ACSD-46869 パッチは、チェックアウト時にREST APIを使用して、設定可能な製品が更新されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.20がインストールされている場合に利用できます。 パッチ IDはACSD-46869です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
+description: ACSD-46869 パッチは、チェックアウト時にREST APIを使用して、設定可能な製品が更新されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.20がインストールされている場合に利用できます。 パッチ IDはACSD-46869です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
 feature: REST, Checkout, Configuration, Orders, Products
 role: Admin
 exl-id: f03d4b24-ac95-406e-8e9d-908149b9207c
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-46869：チェックアウト時にREST APIを使用して設定可能な製品が更新されない
 
-ACSD-46869 パッチは、チェックアウト時にREST APIを使用して設定可能な製品が更新されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.20がインストールされている場合に利用できます。 パッチ IDはACSD-46869です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
+ACSD-46869 パッチは、チェックアウト時にREST APIを使用して設定可能な製品が更新されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.20がインストールされている場合に利用できます。 パッチ IDはACSD-46869です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
@@ -28,7 +28,7 @@ ACSD-46869 パッチは、チェックアウト時にREST APIを使用して設�
 
 >[!NOTE]
 >
->このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL QPT]  ランディングページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL QPT]  ランディングページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
@@ -61,7 +61,7 @@ ACSD-46869 パッチは、チェックアウト時にREST APIを使用して設�
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：品質パッチツールガイドの[[!DNL Quality Patches Tools] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
