@@ -10,9 +10,9 @@ topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 badgePaas: label="Commerce on Cloud" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Cloud プロジェクト上のAdobe Commerceにのみ適用されます。"
 nudge: true
-source-git-commit: 5f0b6f7a04ee96b2aa650ee242e31d383bd7512b
+source-git-commit: 0c69ccdfcb3592a717b8b3a5a59762c8daeceec7
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2524'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,9 @@ Adobe Commerce 2.4.9に`symfony_l2` キャッシュを使用するには、次�
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.9には、キャッシュ・タグ・ストレージ、無効化、圧縮などのSymfony L2 キャッシュの機能強化が含まれており、ACP2E-5132 パッチの適用、ディスク I/Oの削減、古いキャッシュ・エントリの排除、メモリとネットワークのオーバーヘッドの削減が実現されています。 _Adobe Commerce Configuration Guide_&#x200B;の[Enhanced Symfony L2 cache performance and reliability](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability.md)を参照してください。 パッチ ACP2E-5132 パッチは、クラウドパッチパッチに含まれており、e ツールを介して自動的に適用されます。
+>ACP2E-5132 for Adobe Commerce 2.4.9は、Symfony L2 キャッシュのパフォーマンスと信頼性を向上させ、最適化されたタグストレージ、古いキャッシュの再生成ロック、およびリタグ後の古いタグメンバーシップの修正、未変更の保存での冗長なリモート書き込み、およびL1 サイズベースの立ち退き（`cleanup_percentage`）を行います。 これにより、キャッシュの一貫性を向上させながら、ディスク I/Oとバックエンドの負荷を軽減します。 _Adobe Commerce Configuration Guide_&#x200B;の[Enhanced Symfony L2 cache performance and reliability](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability)を参照してください。
+>
+>このパッチは、[Cloud Patches for Commerce パッケージ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) （依存関係`ece-tools`）に含まれており、最新の`ece-tools` バージョンに更新すると、デプロイメント中に自動的に適用されます。 最新バージョンの`ece-tools`に更新して、パッチを受け取ります。
 
 #### Symfony L2 キャッシュ設定のカスタマイズ
 
