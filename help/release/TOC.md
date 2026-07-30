@@ -53,7 +53,7 @@ ht-degree: 30%
 - [Beta リリース](beta.md)
 - 計画とポリシー {#planning}
   - [ライフサイクルポリシー](lifecycle-policy.md)
-  - {hide-from-toc}[ セキュリティポリシー：必要なアクションと期限](security-enforcement-policy.md)
+  - {hide-from-toc}[&#x200B; セキュリティポリシー：必要なアクションと期限](security-enforcement-policy.md)
   - [バージョンアップグレードの適用ポリシー](version-upgrade-enforcement-policy.md)
   - [バージョン管理ポリシー](versioning-policy.md)
   - [リリーススケジュール](schedule.md)
