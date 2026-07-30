@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-61134: *[!UICONTROL Braintree Vault]*&#x200B;支払い方法がチェックアウトワークフローで自動的に選択解除される
 
-ACSD-61134 パッチは、買い物客が&#x200B;*[!UICONTROL My billing and shipping address are the same]* チェックボックスの選択を解除して請求先住所を更新すると、チェックアウトワークフローで&#x200B;*[!UICONTROL Braintree Vault]*&#x200B;支払い方法が自動的に選択解除される問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.54がインストールされている場合に利用できます。 パッチ IDはACSD-61134です。 この問題は、Adobe Commerce 2.4.7-beta1で修正される予定です。
+ACSD-61134 パッチは、買い物客が&#x200B;*[!UICONTROL My billing and shipping address are the same]* チェックボックスの選択を解除して請求先住所を更新すると、チェックアウトワークフローで&#x200B;*[!UICONTROL Braintree Vault]*&#x200B;支払い方法が自動的に選択解除される問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.54がインストールされている場合に利用できます。 パッチ IDはACSD-61134です。 この問題は、Adobe Commerce 2.4.7-beta1で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
@@ -28,7 +28,7 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.6-p8
 
 >[!NOTE]
 >
->このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
@@ -55,7 +55,7 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.6-p8
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
