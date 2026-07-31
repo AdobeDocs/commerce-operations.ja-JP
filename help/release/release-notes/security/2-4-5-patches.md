@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 2.4.5-p17
 
-Adobe Commerce 2.4.5-p17は、以前のリリース 2.4.5で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース ](../../lifecycle-policy.md#security-only-transitional-period)です。
+Adobe Commerce 2.4.5-p17は、以前のリリース 2.4.5で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](../../lifecycle-policy.md#security-only-transitional-period)です。
 
 セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html)を参照してください。
 
@@ -47,7 +47,7 @@ Adobe Commerce 2.4.5は、2026年2月に予定されているRabbitMQ 4.1のサ�
 
 ## 2.4.5-p16
 
-Adobe Commerce 2.4.5-p16は、以前のリリース 2.4.5で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース ](../../lifecycle-policy.md#security-only-transitional-period)です。
+Adobe Commerce 2.4.5-p16は、以前のリリース 2.4.5で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](../../lifecycle-policy.md#security-only-transitional-period)です。
 
 セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html)を参照してください。
 
@@ -71,7 +71,7 @@ Adobe Commerce 2.4.5-p16は、MariaDB 10.11との互換性が確認されてい�
 
 ## 2.4.5-p15
 
-Adobe Commerce 2.4.5-p15は、以前のリリース 2.4.5で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース ](../../lifecycle-policy.md#security-only-transitional-period)です。
+Adobe Commerce 2.4.5-p15は、以前のリリース 2.4.5で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](../../lifecycle-policy.md#security-only-transitional-period)です。
 
 セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)を参照してください。
 
@@ -241,7 +241,7 @@ Adobe Commerce 2.4.5-p4のセキュリティリリースには、以前のリリ
 
 ### CVE-2022-31160のホットフィックスを適用する
 
-`jQuery-UI` ライブラリ バージョン 1.13.1には、Adobe CommerceとMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceおよびMagento Open Source 2.4.4、2.4.5、および2.4.6の依存関係です。 影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事「[jQuery UI セキュリティ脆弱性CVE-2022-31160修正プログラム（2.4.4、2.4.5、2.4.6 リリース ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6)）を適用する必要があります。
+`jQuery-UI` ライブラリ バージョン 1.13.1には、Adobe CommerceとMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceおよびMagento Open Source 2.4.4、2.4.5、および2.4.6の依存関係です。 影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事「[jQuery UI セキュリティ脆弱性CVE-2022-31160修正プログラム（2.4.4、2.4.5、2.4.6 リリース &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6)）を適用する必要があります。
 
 ## 2.4.5-p3
 
@@ -251,7 +251,7 @@ Adobe Commerce 2.4.5-p3 セキュリティリリースでは、以前のリリ�
 
 ### CVE-2022-31160のホットフィックスを適用する
 
-`jQuery-UI` ライブラリ バージョン 1.13.1には、Adobe CommerceとMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceおよびMagento Open Source 2.4.4、2.4.5、および2.4.6の依存関係です。 影響を受けるデプロイメントを実行している販売者は、ナレッジベース記事[Query UI セキュリティ脆弱性CVE-2022-31160で指定されたパッチを、2.4.4、2.4.5、および2.4.6 リリース ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6)に適用する必要があります。
+`jQuery-UI` ライブラリ バージョン 1.13.1には、Adobe CommerceとMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceおよびMagento Open Source 2.4.4、2.4.5、および2.4.6の依存関係です。 影響を受けるデプロイメントを実行している販売者は、ナレッジベース記事[Query UI セキュリティ脆弱性CVE-2022-31160で指定されたパッチを、2.4.4、2.4.5、および2.4.6 リリース &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6)に適用する必要があります。
 
 ### ハイライト
 

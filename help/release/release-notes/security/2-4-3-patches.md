@@ -47,7 +47,7 @@ DHLはスキーマバージョン 6.2を導入しており、近い将来スキ�
 
 * メール変数の使用は、より厳格な変数の構文を優先するセキュリティリスク軽減の一環として、2.3.4で廃止されました。 このレガシー動作は、そのセキュリティリスク軽減の継続として、このリリースで完全に削除されました。
 
-  その結果、以前のバージョンで動作していた電子メールやニュースレターのテンプレートが、Adobe Commerce 2.4.3-p2にアップグレードした後で正しく動作しない場合があります。 影響を受けるテンプレートには、管理者の上書き、テーマ、子テーマ、カスタムモジュールまたはサードパーティの拡張機能のテンプレートが含まれます。 非推奨の使用を修正するために[ アップグレード互換性ツール ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html)を使用した後でも、デプロイメントが影響を受ける可能性があります。 影響を受けるテンプレートを移行する際の潜在的な影響とガイドラインについては、[ カスタムメールテンプレートの移行](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration)を参照してください。
+  その結果、以前のバージョンで動作していた電子メールやニュースレターのテンプレートが、Adobe Commerce 2.4.3-p2にアップグレードした後で正しく動作しない場合があります。 影響を受けるテンプレートには、管理者の上書き、テーマ、子テーマ、カスタムモジュールまたはサードパーティの拡張機能のテンプレートが含まれます。 非推奨の使用を修正するために[&#x200B; アップグレード互換性ツール &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html)を使用した後でも、デプロイメントが影響を受ける可能性があります。 影響を受けるテンプレートを移行する際の潜在的な影響とガイドラインについては、[&#x200B; カスタムメールテンプレートの移行](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration)を参照してください。
 
 * OAuth アクセストークンとパスワードリセットトークンは、データベースに保存されたときに暗号化されるようになりました。<!-- AC-520 1323-->
 
@@ -55,9 +55,9 @@ DHLはスキーマバージョン 6.2を導入しており、近い将来スキ�
 
 * Adobe Commerceが実稼動モードの場合、Swaggerはデフォルトで無効になりました。<!-- AC-1450-->
 
-* 開発者は、エンドポイントごとに、Adobe Commerce RESTful エンドポイントで受け入れられる配列のサイズ制限を設定できるようになりました。 [API セキュリティ ](https://developer.adobe.com/commerce/webapi/get-started/api-security/)を参照してください。<!-- AC-465-->
+* 開発者は、エンドポイントごとに、Adobe Commerce RESTful エンドポイントで受け入れられる配列のサイズ制限を設定できるようになりました。 [API セキュリティ &#x200B;](https://developer.adobe.com/commerce/webapi/get-started/api-security/)を参照してください。<!-- AC-465-->
 
-* ユーザーがweb APIを通じてシステム全体でリクエストできるリソースのサイズと数を制限し、個々のモジュールのデフォルトを上書きするためのメカニズムを追加しました。 この機能強化により、`MC-43048__set_rate_limits__2.4.3.patch`が対処した問題が解決されます。 [API セキュリティ ](https://developer.adobe.com/commerce/webapi/get-started/api-security/)を参照してください。<!-- AC-1120-->
+* ユーザーがweb APIを通じてシステム全体でリクエストできるリソースのサイズと数を制限し、個々のモジュールのデフォルトを上書きするためのメカニズムを追加しました。 この機能強化により、`MC-43048__set_rate_limits__2.4.3.patch`が対処した問題が解決されます。 [API セキュリティ &#x200B;](https://developer.adobe.com/commerce/webapi/get-started/api-security/)を参照してください。<!-- AC-1120-->
 
 
 ## 2.4.3-p1
@@ -81,7 +81,7 @@ DHLはスキーマバージョン 6.2を導入しており、近い将来スキ�
 
 **セッション IDがデータベース**&#x200B;から削除されました。 このコードの変更により、マーチャントがカスタマイズを行ったり、データベースに保存されている生のセッション IDを使用する拡張機能をインストールしたりすると、破損する可能性があります。<!-- MC-40976-->
 
-**Media Gallery フォルダー**&#x200B;への管理者アクセスが制限されています。 デフォルトのメディアギャラリー権限で、設定で明示的に許可されているディレクトリ操作（表示、アップロード、削除、作成）のみが許可されるようになりました。 管理者ユーザーは、`catalog/category`または`wysiwyg` ディレクトリ以外にアップロードされたメディアギャラリーを通じてメディアアセットにアクセスできなくなります。 メディアアセットにアクセスする管理者は、明示的に許可されたフォルダーに移動するか、設定を調整する必要があります。 [ メディアライブラリフォルダーの権限の変更](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/)を参照してください。<!-- B2B-1897-->
+**Media Gallery フォルダー**&#x200B;への管理者アクセスが制限されています。 デフォルトのメディアギャラリー権限で、設定で明示的に許可されているディレクトリ操作（表示、アップロード、削除、作成）のみが許可されるようになりました。 管理者ユーザーは、`catalog/category`または`wysiwyg` ディレクトリ以外にアップロードされたメディアギャラリーを通じてメディアアセットにアクセスできなくなります。 メディアアセットにアクセスする管理者は、明示的に許可されたフォルダーに移動するか、設定を調整する必要があります。 [&#x200B; メディアライブラリフォルダーの権限の変更](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/)を参照してください。<!-- B2B-1897-->
 
 **GraphQL クエリの複雑さの制限を下げました**。 サービス拒否（DOS）攻撃を防ぐために、GraphQLで許可される最大クエリの複雑さが軽減されました。 [GraphQL セキュリティ設定](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/)を参照してください。<!-- PWA-1700-->
 

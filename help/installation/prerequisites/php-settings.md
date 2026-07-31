@@ -66,7 +66,7 @@ Adobe Commerceには、特定のPHP拡張機能が必要です。 次のリス�
 
 >[!WARNING]
 >
->PHP [ バグ 81101](https://bugs.php.net/bug.php?id=81101)の影響を受けるレガシー環境のトラブルシューティングを行う場合は、`php.ini` ファイルの`pcre.jit=0`を設定して、CSSが読み込まれない問題を回避してください。
+>PHP [&#x200B; バグ 81101](https://bugs.php.net/bug.php?id=81101)の影響を受けるレガシー環境のトラブルシューティングを行う場合は、`php.ini` ファイルの`pcre.jit=0`を設定して、CSSが読み込まれない問題を回避してください。
 
 - PHPのシステムタイムゾーンを設定します。設定しない場合、インストール時に次のようなエラーが表示され、cronなどの時間関連の操作が機能しない場合があります。
 
@@ -89,7 +89,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
   realpath_cache_ttl=7200
   ```
 
-  これらの設定を使用すると、PHP プロセスはページ読み込み時にパスを検索するのではなく、ファイルにパスをキャッシュできます。 PHP ドキュメントの[ パフォーマンスチューニング ](https://www.php.net/manual/en/ini.core.php)を参照してください。
+  これらの設定を使用すると、PHP プロセスはページ読み込み時にパスを検索するのではなく、ファイルにパスをキャッシュできます。 PHP ドキュメントの[&#x200B; パフォーマンスチューニング &#x200B;](https://www.php.net/manual/en/ini.core.php)を参照してください。
 
 - Adobe Commerce 2.1以降に必要な[`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments)を有効にします。
 
@@ -107,9 +107,9 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 ### `php.ini`設定ファイルを検索
 
-Web サーバー設定を検索するには、web ブラウザーで[`phpinfo.php` ファイル ](optional-software.md#create-phpinfophp)を実行し、次のように`Loaded Configuration File`を探します。
+Web サーバー設定を検索するには、web ブラウザーで[`phpinfo.php` ファイル &#x200B;](optional-software.md#create-phpinfophp)を実行し、次のように`Loaded Configuration File`を探します。
 
-![PHP情報ページ ](../../assets/installation/config_phpini-webserver.png)
+![PHP情報ページ &#x200B;](../../assets/installation/config_phpini-webserver.png)
 
 PHP コマンドライン設定を見つけるには、次のように入力します
 
@@ -148,7 +148,7 @@ PHP OPcacheの設定は通常、`php.ini`または`opcache.ini`にあります�
 PHP オプションを設定するには：
 
 1. テキストエディターで`php.ini`を開きます。
-1. 使用可能な[ タイムゾーン設定](https://www.php.net/manual/en/timezones.php)で、サーバーのタイムゾーンを探します
+1. 使用可能な[&#x200B; タイムゾーン設定](https://www.php.net/manual/en/timezones.php)で、サーバーのタイムゾーンを探します
 1. 次の設定を探し、必要に応じてコメントを解除します。
 
    ```conf
