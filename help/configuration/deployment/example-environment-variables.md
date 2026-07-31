@@ -2,7 +2,8 @@
 title: 環境変数の使用例
 description: 環境変数を使用して、開発システムで共有、システム固有、および機密性の高い値を設定する方法の例を参照してください。
 exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 0%
@@ -113,7 +114,7 @@ VAT番号とストア名（**Stores**/設定/**Configuration**/一般/**General*
   | メール送信先 | `contact/email/recipient_email` |
   | デフォルトのメールドメイン | `customer/create_account/email_domain` |
 
-  すべての機密性の高い設定パスとシステム固有の設定パスは、[機密性の高い設定パスとシステム固有の設定パスのリファレンス &#x200B;](../reference/config-reference-sens.md)で確認できます。
+  すべての機密性の高い設定パスとシステム固有の設定パスは、[機密性の高い設定パスとシステム固有の設定パスのリファレンス ](../reference/config-reference-sens.md)で確認できます。
 
 #### 設定パスを変数名に変換する
 

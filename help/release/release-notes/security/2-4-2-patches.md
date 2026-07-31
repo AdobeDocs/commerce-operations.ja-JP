@@ -2,7 +2,8 @@
 title: Adobe Commerce 2.4.2 セキュリティパッチリリースノート
 description: Adobe Commerce バージョン 2.4.2のセキュリティパッチリリースに含まれているセキュリティバグの修正、セキュリティの強化、およびその他のセキュリティ関連アップデートについて説明します。
 exl-id: e6058e96-b810-4a78-8804-15783afef951
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-05-12T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.2-p2のセキュリティリリースには、以前のリリースの2.4.2で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB21-64](https://helpx.adobe.com/jp/security/products/magento/apsb21-64.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB21-64](https://helpx.adobe.com/security/products/magento/apsb21-64.html)を参照してください。
 
 ## 配送業者としてDHLを提供し続けるには、AC-3022.patchを適用します
 

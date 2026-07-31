@@ -2,7 +2,8 @@
 title: サンプルデータ Git リポジトリのクローン
 description: Git リポジトリを複製してAdobe Commerce サンプルデータをインストールするには、次の手順に従います。
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
@@ -22,20 +23,20 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->サンプルデータは、`develop` ブランチ （より最新）またはリリース済みのブランチ （`2.4` （より安定）のいずれかで使用できます。 より安定したリリース済みのブランチを使用することをお勧めします。 リポジトリにコードを提供していて、最新のコードが必要な場合は、`develop` ブランチを使用します。 選択したブランチに関係なく、Magento Open Source GitHub リポジトリの対応するブランチを[&#x200B; クローン &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)する必要があります。 例えば、`develop` ブランチのサンプルデータは、Magento Open Source `develop` ブランチで&#x200B;*only*&#x200B;使用できます。
+>サンプルデータは、`develop` ブランチ （より最新）またはリリース済みのブランチ （`2.4` （より安定）のいずれかで使用できます。 より安定したリリース済みのブランチを使用することをお勧めします。 リポジトリにコードを提供していて、最新のコードが必要な場合は、`develop` ブランチを使用します。 選択したブランチに関係なく、Magento Open Source GitHub リポジトリの対応するブランチを[ クローン ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)する必要があります。 例えば、`develop` ブランチのサンプルデータは、Magento Open Source `develop` ブランチで&#x200B;*only*&#x200B;使用できます。
 
 ## サンプルデータリポジトリを複製する
 
 この節では、サンプルデータリポジトリを複製してサンプルデータをインストールする方法について説明します。 サンプルデータリポジトリは、次のいずれかの方法で複製できます。
 
-* [SSH プロトコル &#x200B;](#clone-with-ssh)を使用したクローン
-* [HTTPS プロトコル &#x200B;](#clone-with-https)を使用して複製
+* [SSH プロトコル ](#clone-with-ssh)を使用したクローン
+* [HTTPS プロトコル ](#clone-with-https)を使用して複製
 
 ### SSHによるクローン作成
 
 SSH プロトコルを使用してサンプルデータ GitHub リポジトリを複製するには、次の手順を実行します。
 
-1. Web ブラウザーで、[&#x200B; サンプルデータリポジトリ &#x200B;](https://github.com/magento/magento2-sample-data)に移動します。
+1. Web ブラウザーで、[ サンプルデータリポジトリ ](https://github.com/magento/magento2-sample-data)に移動します。
 1. ブランチの名前の横にある、リストから&#x200B;**SSH**&#x200B;をクリックします。
 1. 「**クリップボードにコピー**」をクリックします
 
@@ -88,7 +89,7 @@ SSH プロトコルを使用してサンプルデータ GitHub リポジトリ�
 
 1. コマンドが完了するのを待ちます。
 
-1. [&#x200B; ファイルシステムの権限と所有権の設定](#set-file-system-ownership-and-permissions)を参照してください。
+1. [ ファイルシステムの権限と所有権の設定](#set-file-system-ownership-and-permissions)を参照してください。
 
 1. 次のコマンドを実行します。
 
@@ -100,7 +101,7 @@ SSH プロトコルを使用してサンプルデータ GitHub リポジトリ�
 
 HTTPS プロトコルを使用してサンプルデータ GitHub リポジトリを複製するには、次の手順を実行します。
 
-1. Web ブラウザーで、[&#x200B; サンプルデータリポジトリ &#x200B;](https://github.com/magento/magento2-sample-data)に移動します。
+1. Web ブラウザーで、[ サンプルデータリポジトリ ](https://github.com/magento/magento2-sample-data)に移動します。
 1. ページの右側の&#x200B;**クローン URL** フィールドで、**HTTPS**&#x200B;をクリックします。
 1. 「**クリップボードにコピー**」をクリックします。
 

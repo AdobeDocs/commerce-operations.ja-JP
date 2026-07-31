@@ -2,9 +2,10 @@
 title: 共有設定の使用例
 description: 共有設定ファイルを使用して開発システムの設定を変更する方法の例を参照してください。
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -88,6 +89,6 @@ ht-degree: 0%
 
 >[!INFO]
 >
->管理者でロックされている設定を変更するには、[`magento config:set --lock` コマンド &#x200B;](../cli/set-configuration-values.md)を使用します。
+>管理者でロックされている設定を変更するには、[`magento config:set --lock` コマンド ](../cli/set-configuration-values.md)を使用します。
 
 <!-- Last updated from includes: 2026-04-17 13:49:36 -->

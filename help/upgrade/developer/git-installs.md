@@ -2,7 +2,8 @@
 title: Git ベースのインストールのアップグレード
 description: Git リポジトリからクローンしたAdobe Commerce インストールをアップグレードします。
 exl-id: a8c42857-7221-4b21-8377-4bfb6308c418
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # Git ベースのインストールのアップグレード
 
-このトピックでは、コントリビューターがAdobe Commerceを再インストールせずに更新できる方法について説明します。 提供元の開発者でない場合は、[&#x200B; アップグレードを実行する](../implementation/perform-upgrade.md)を参照してください。
+このトピックでは、コントリビューターがAdobe Commerceを再インストールせずに更新できる方法について説明します。 提供元の開発者でない場合は、[ アップグレードを実行する](../implementation/perform-upgrade.md)を参照してください。
 
 開発者向けにアップグレードするには：
 
@@ -33,7 +34,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >`git pull origin develop`が失敗した場合は、[&#x200B; トラブルシューティング &#x200B;](https://support.magento.com/hc/en-us/articles/360034229872)を参照してください。
+   >`git pull origin develop`が失敗した場合は、[ トラブルシューティング ](https://support.magento.com/hc/en-us/articles/360034229872)を参照してください。
 
 1. `composer.json.old` ファイルを`composer.json` ファイルと差分して結合します。
 

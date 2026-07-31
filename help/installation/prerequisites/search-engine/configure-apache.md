@@ -3,7 +3,8 @@ title: 検索エンジン用のApacheの設定
 description: Adobe Commerceのオンプレミスインストール用にApache web サーバーを使用して検索エンジンを設定するには、次の手順に従います。
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 0%
@@ -130,11 +131,11 @@ htpasswd -c /usr/local/apache/password/.<password file name> <username>
 
 * `<username>`は次の値を指定できます。
 
-   * cronの設定：web サーバーユーザーまたは別のユーザー。
+  * cronの設定：web サーバーユーザーまたは別のユーザー。
 
   この例では、web サーバーユーザーを使用していますが、ユーザーの選択はユーザーによって異なります。
 
-   * Elasticsearchの設定：この例では、ユーザー名は`magento_elasticsearch`です
+  * Elasticsearchの設定：この例では、ユーザー名は`magento_elasticsearch`です
 
 * `<password file name>`は非表示ファイル（`.`で始まる）である必要があり、ユーザーの名前を反映する必要があります。 詳しくは、この節の後の例を参照してください。
 

@@ -3,7 +3,8 @@ title: PHP設定
 description: 次の手順に従って、必要なPHP拡張機能をインストールし、Adobe Commerceのオンプレミスインストールに必要なPHP設定を行います。
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: fdd98cea53f1a060b8b56268250b463c74abaaa1
+last-update: 2026-05-12T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 >
 >サポートされているPHP バージョンは、Adobe Commerce リリースによって異なります。 インストール中のリリースでサポートされている正確なPHP バージョンについては、[必要システム構成](../system-requirements.md)を参照してください。
 
-クラウド設定ガイダンスについては、_Commerce on Cloud Infrastructure_ ガイドの[PHP settings](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/php-settings)を参照してください。
+クラウド設定ガイダンスについては、_Commerce on Cloud Infrastructure_ ガイドの[PHP settings](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings)を参照してください。
 
 ## PHP プロセス制御
 
@@ -65,7 +66,7 @@ Adobe Commerceには、特定のPHP拡張機能が必要です。 次のリス�
 
 >[!WARNING]
 >
->PHP [&#x200B; バグ 81101](https://bugs.php.net/bug.php?id=81101)の影響を受けるレガシー環境のトラブルシューティングを行う場合は、`php.ini` ファイルの`pcre.jit=0`を設定して、CSSが読み込まれない問題を回避してください。
+>PHP [ バグ 81101](https://bugs.php.net/bug.php?id=81101)の影響を受けるレガシー環境のトラブルシューティングを行う場合は、`php.ini` ファイルの`pcre.jit=0`を設定して、CSSが読み込まれない問題を回避してください。
 
 - PHPのシステムタイムゾーンを設定します。設定しない場合、インストール時に次のようなエラーが表示され、cronなどの時間関連の操作が機能しない場合があります。
 
@@ -77,9 +78,9 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
   Adobeでは、次の項目を推奨しています。
 
-   - コードのコンパイルまたは静的アセットのデプロイ，`1G`
-   - デバッグ，`2G`
-   - テスト中、`~3-4G`
+  - コードのコンパイルまたは静的アセットのデプロイ，`1G`
+  - デバッグ，`2G`
+  - テスト中、`~3-4G`
 
 - PHP `realpath_cache_size`および`realpath_cache_ttl`の値を推奨設定に増やします。
 
@@ -88,7 +89,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
   realpath_cache_ttl=7200
   ```
 
-  これらの設定を使用すると、PHP プロセスはページ読み込み時にパスを検索するのではなく、ファイルにパスをキャッシュできます。 PHP ドキュメントの[&#x200B; パフォーマンスチューニング &#x200B;](https://www.php.net/manual/en/ini.core.php)を参照してください。
+  これらの設定を使用すると、PHP プロセスはページ読み込み時にパスを検索するのではなく、ファイルにパスをキャッシュできます。 PHP ドキュメントの[ パフォーマンスチューニング ](https://www.php.net/manual/en/ini.core.php)を参照してください。
 
 - Adobe Commerce 2.1以降に必要な[`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments)を有効にします。
 
@@ -106,9 +107,9 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 ### `php.ini`設定ファイルを検索
 
-Web サーバー設定を検索するには、web ブラウザーで[`phpinfo.php` ファイル &#x200B;](optional-software.md#create-phpinfophp)を実行し、次のように`Loaded Configuration File`を探します。
+Web サーバー設定を検索するには、web ブラウザーで[`phpinfo.php` ファイル ](optional-software.md#create-phpinfophp)を実行し、次のように`Loaded Configuration File`を探します。
 
-![PHP情報ページ &#x200B;](../../assets/installation/config_phpini-webserver.png)
+![PHP情報ページ ](../../assets/installation/config_phpini-webserver.png)
 
 PHP コマンドライン設定を見つけるには、次のように入力します
 
@@ -147,7 +148,7 @@ PHP OPcacheの設定は通常、`php.ini`または`opcache.ini`にあります�
 PHP オプションを設定するには：
 
 1. テキストエディターで`php.ini`を開きます。
-1. 使用可能な[&#x200B; タイムゾーン設定](https://www.php.net/manual/en/timezones.php)で、サーバーのタイムゾーンを探します
+1. 使用可能な[ タイムゾーン設定](https://www.php.net/manual/en/timezones.php)で、サーバーのタイムゾーンを探します
 1. 次の設定を探し、必要に応じてコメントを解除します。
 
    ```conf
@@ -206,8 +207,8 @@ PHP オプションを設定するには：
 PHPの問題のトラブルシューティングについては、次のAdobe Commerce サポート記事を参照してください。
 
 - [ブラウザーでAdobe Commerceにアクセスする際のPHP バージョンエラーまたは404 エラー](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [PHP設定エラー](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
-- [PHPのバージョン準備状況チェックの問題](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
-- [一般的なPHPの致命的なエラーと解決策](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
+- [PHP設定エラー](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
+- [PHPのバージョン準備状況チェックの問題](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- [一般的なPHPの致命的なエラーと解決策](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
 <!-- Last updated from includes: 2026-05-11 20:38:54 -->

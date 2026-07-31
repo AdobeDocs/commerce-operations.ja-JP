@@ -2,7 +2,8 @@
 title: 高度なオンプレミス インストール
 description: Adobe Commerce オンプレミス展開の高度なインストールのシナリオについて説明します。 複雑な設定とカスタム設定オプションをご確認ください。
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '2527'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->お忘れですか？ 助ける手が必要ですか？ [&#x200B; クイックスタートインストール &#x200B;](composer.md)または[&#x200B; コントリビューターインストール &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/) ガイドをお試しください。
+>お忘れですか？ 助ける手が必要ですか？ [ クイックスタートインストール ](composer.md)または[ コントリビューターインストール ](https://developer.adobe.com/commerce/contributor/guides/install/) ガイドをお試しください。
 
 >[!NOTE]
 >
@@ -38,7 +39,7 @@ Adobe Commerceには、インストール タスクと設定タスク用の1つ�
 * CLIは拡張可能なので、サードパーティの開発者はCLIに「プラグイン」できます。 これは、ユーザーの学習曲線を排除するという追加の利点があります。
 * 無効なモジュールのコマンドは表示されません。
 
-このトピックでは、CLIを使用したAdobe Commerce ソフトウェアのインストールについて説明します。 設定について詳しくは、[設定ガイド &#x200B;](../configuration/overview.md)を参照してください。
+このトピックでは、CLIを使用したAdobe Commerce ソフトウェアのインストールについて説明します。 設定について詳しくは、[設定ガイド ](../configuration/overview.md)を参照してください。
 
 インストーラーは必要に応じて複数回実行できるので、次のことが可能です。
 
@@ -53,15 +54,15 @@ Adobe Commerceには、インストール タスクと設定タスク用の1つ�
 
 開始する前に、次の手順を実行します。
 
-* お使いのシステムが[&#x200B; システム要件](system-requirements.md)で説明されている要件を満たしていることを確認します。
+* お使いのシステムが[ システム要件](system-requirements.md)で説明されている要件を満たしていることを確認します。
 
 * すべての[前提条件](prerequisites/overview.md) タスクを完了します。
 
-* 最初のインストール手順を完了します。 [&#x200B; インストールまたはアップグレードのパス &#x200B;](overview.md)を参照してください。
+* 最初のインストール手順を完了します。 [ インストールまたはアップグレードのパス ](overview.md)を参照してください。
 
-* アプリケーションサーバーにログインした後、[&#x200B; ファイルシステム所有者](prerequisites/file-system/overview.md)に切り替えます。
+* アプリケーションサーバーにログインした後、[ ファイルシステム所有者](prerequisites/file-system/overview.md)に切り替えます。
 
-* [&#x200B; インストールのクイックスタート &#x200B;](composer.md)の概要を確認します。
+* [ インストールのクイックスタート ](composer.md)の概要を確認します。
 
 >[!NOTE]
 >
@@ -79,7 +80,7 @@ Adobe Commerceには、インストール タスクと設定タスク用の1つ�
 >
 >デフォルトでは、同じデータベースインスタンスにソフトウェアをインストールしても、インストーラーはデータベースを上書きしません。 オプションの`cleanup-database` パラメーターを使用して、この動作を変更できます。
 
-[更新、再インストール、アンインストール &#x200B;](tutorials/uninstall.md)も参照してください。
+[更新、再インストール、アンインストール ](tutorials/uninstall.md)も参照してください。
 
 ### 安全なインストール
 
@@ -97,7 +98,7 @@ Adobe Commerceには、インストール タスクと設定タスク用の1つ�
 
 >[!NOTE]
 >
->これらのコマンドを実行するとエラーが表示される場合は、[&#x200B; インストール依存関係の更新](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)で説明したように、インストール依存関係を更新したことを確認してください。
+>これらのコマンドを実行するとエラーが表示される場合は、[ インストール依存関係の更新](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)で説明したように、インストール依存関係を更新したことを確認してください。
 
 ## コマンドラインからインストール
 
@@ -107,7 +108,7 @@ install コマンドでは、次の形式が使用されます。
 bin/magento setup:install --<option>=<value> ... --<option>=<value>
 ```
 
-次の表に、インストールオプションの名前と値を示します。 インストールコマンドの例については、[&#x200B; サンプル localhost インストール &#x200B;](#sample-localhost-installations)を参照してください。
+次の表に、インストールオプションの名前と値を示します。 インストールコマンドの例については、[ サンプル localhost インストール ](#sample-localhost-installations)を参照してください。
 
 >[!NOTE]
 >
@@ -117,9 +118,9 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 次のオプションは、管理者ユーザーのユーザー情報と資格情報を指定します。
 
-インストール中またはインストール後に管理者ユーザーを作成できます。 インストール中にユーザーを作成する場合は、すべての管理者資格情報変数が必要です。 [&#x200B; サンプル localhost インストール &#x200B;](#sample-localhost-installations)を参照してください。
+インストール中またはインストール後に管理者ユーザーを作成できます。 インストール中にユーザーを作成する場合は、すべての管理者資格情報変数が必要です。 [ サンプル localhost インストール ](#sample-localhost-installations)を参照してください。
 
-次の表に、使用可能なインストールパラメーターの多くはありますが、一部ではありません。 完全なリストについては、[&#x200B; コマンドラインツールのリファレンス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises)を参照してください。
+次の表に、使用可能なインストールパラメーターの多くはありますが、一部ではありません。 完全なリストについては、[ コマンドラインツールのリファレンス ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises)を参照してください。
 
 | 名前 | 値 | 必要ですか？ |
 |--- |--- |--- |
@@ -135,7 +136,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 |--- |--- |--- |
 | `--base-url` | 次のいずれかの形式で管理者およびストアフロントにアクセスするために使用するベース URL:<br><br>`http[s]://<host or ip>/<your install dir>/`。<br><br>**注意：** スキーム（http://またはhttps://）と末尾のスラッシュはどちらも必要です。<br><br>`<your install dir>` は、Adobe Commerce ソフトウェアをインストールするdocroot相対パスです。 Web サーバーと仮想ホストの設定方法によっては、パスがmagento2であるか、空白である可能性があります。<br><br>Adobe CommerceまたはMagenAdobe Commerceにアクセスするには、`http://127.0.0.1/<your install dir>/`または`http://127.0.0.1/<your install dir>/`.<br><br>-`{{base_url}}`のいずれかを使用します。これは、仮想ホスト設定またはDockerなどの仮想化環境で定義されたベース URLを表します。 例えば、ホスト名`magento.example.com`で仮想ホストを設定する場合、`--base-url={{base_url}}`でソフトウェアをインストールし、`http://magento.example.com/admin`のようなURLで管理者にアクセスできます。 | はい |
 | `--backend-frontname` | 管理者にアクセスするためのURI （Uniform Resource Identifier）。 このパラメーターを省略すると、次のパターン <code>admin_jkhgdfqを持つランダム URIをアプリケーションで生成できます</code>.<br><br> セキュリティ上の理由から、ランダムなURIを使用することをお勧めします。 ランダム URIは、ハッカーや悪意のあるソフトウェアが悪用するのが困難です。<br><br>URIはインストールの最後に表示されます。 後で`bin/magento info:adminuri` コマンドを使用して、いつでも表示できます。<br><br>値を入力する場合は、「管理者」、「バックエンド」などの一般的な単語を使用しないことをお勧めします。 管理者URIには、英数字とアンダースコア文字（`_`）のみを含めることができます。 | いいえ |
-| `--db-host` | 次のいずれかを使用します。<br><br>- データベースサーバーの完全修飾ホスト名またはIP アドレス。<br><br>- `localhost` （デフォルト）または`127.0.0.1` （データベースサーバーがweb サーバーと同じホスト上にある場合）。localhostは、MySQL クライアントライブラリがUNIX ソケットを使用してデータベースに接続することを意味します。 `127.0.0.1`によって、クライアント ライブラリでTCP プロトコルが使用されます。 ソケットについて詳しくは、[PHP PDO_MYSQLのドキュメント &#x200B;](https://www.php.net/manual/en/ref.pdo-mysql.php)を参照してください。<br><br>**注：** データベース・サーバー・ポートは、`www.example.com:9000`のようにホスト名にオプションで指定できます | はい |
+| `--db-host` | 次のいずれかを使用します。<br><br>- データベースサーバーの完全修飾ホスト名またはIP アドレス。<br><br>- `localhost` （デフォルト）または`127.0.0.1` （データベースサーバーがweb サーバーと同じホスト上にある場合）。localhostは、MySQL クライアントライブラリがUNIX ソケットを使用してデータベースに接続することを意味します。 `127.0.0.1`によって、クライアント ライブラリでTCP プロトコルが使用されます。 ソケットについて詳しくは、[PHP PDO_MYSQLのドキュメント ](https://www.php.net/manual/en/ref.pdo-mysql.php)を参照してください。<br><br>**注：** データベース・サーバー・ポートは、`www.example.com:9000`のようにホスト名にオプションで指定できます | はい |
 | `--db-name` | データベーステーブルをインストールするデータベースインスタンスの名前。<br><br> デフォルトは`magento2`です。 | はい |
 | `--db-user` | データベースインスタンス所有者のユーザー名。<br><br> デフォルトは`root`です。 | はい |
 | `--db-password` | データベースインスタンス所有者のパスワード。 | はい |
@@ -220,7 +221,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 >[!NOTE]
 >
->Adobe Commerceのインストール後にモジュールを有効または無効にするには、[&#x200B; モジュールの有効と無効](tutorials/manage-modules.md)を参照してください。
+>Adobe Commerceのインストール後にモジュールを有効または無効にするには、[ モジュールの有効と無効](tutorials/manage-modules.md)を参照してください。
 
 **機密データ：**
 
@@ -246,9 +247,9 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 * 管理者には次のプロパティがあります。
 
-   * 氏名は`Magento User`です
-   * ユーザー名は`admin`、パスワードは`admin123`です
-   * メールアドレスは`user@example.com`です
+  * 氏名は`Magento User`です
+  * ユーザー名は`admin`、パスワードは`admin123`です
+  * メールアドレスは`user@example.com`です
 
 * 既定の言語は`en_US` （米国英語）です
 * デフォルト通貨は米ドルです
@@ -314,9 +315,9 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 * 管理者には次のプロパティがあります。
 
-   * 氏名は`Magento User`です
-   * ユーザー名は`admin`、パスワードは`admin123`です
-   * メールアドレスは`user@example.com`です
+  * 氏名は`Magento User`です
+  * ユーザー名は`admin`、パスワードは`admin123`です
+  * メールアドレスは`user@example.com`です
 
 * 既定の言語は`en_US` （米国英語）です
 * デフォルト通貨は米ドルです

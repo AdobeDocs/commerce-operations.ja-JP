@@ -3,7 +3,8 @@ title: 検索エンジン用にNginxを設定する
 description: 次の手順に従って、Adobe Commerceのオンプレミスインストール用にNginx web サーバーを使用して検索エンジンを設定します。
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -83,7 +84,7 @@ include /etc/nginx/conf.d/*.conf;
 
 この節では、セキュアプロキシで[HTTP Basic認証](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html)を設定する方法について説明します。 TLS認証とHTTP Basic認証を一緒に使用すると、ElasticsearchやOpenSearch、またはアプリケーションサーバーとの通信を誰もが傍受できなくなります。
 
-nginxはHTTP Basic認証をネイティブにサポートしているので、実稼動環境では推奨されていない[&#x200B; ダイジェスト認証](https://www.nginx.com/resources/wiki/modules/auth_digest/)などの方法で認証することをお勧めします。
+nginxはHTTP Basic認証をネイティブにサポートしているので、実稼動環境では推奨されていない[ ダイジェスト認証](https://www.nginx.com/resources/wiki/modules/auth_digest/)などの方法で認証することをお勧めします。
 
 関連トピックス：
 
