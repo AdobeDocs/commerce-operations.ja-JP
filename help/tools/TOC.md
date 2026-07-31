@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: e52becee703b046f5ffb00b01ca780311d711ec8
+source-git-commit: d8ad9344c866eeffeda81e45ebe7de9376905638
 workflow-type: tm+mt
-source-wordcount: '10517'
+source-wordcount: '10538'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,7 @@ ht-degree: 0%
       - [ACP2E-4709：ページ階層に二重引用符が含まれている場合、CMS ページがページビルダーに保存されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4547：管理者は、ユーザーの共有カタログに割り当てられていない場合、デフォルトのカタログ製品を見積もりに追加できません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)
       - [ACP2E-4805：最初の販売可能な子がリストの後半に表示される場合、設定可能な製品のチェックアウトリクエストが遅くなる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
       - [ACP2E-4748：報酬ポイントの有効期限が大きな報酬ポイント履歴を持つストアで遅く実行される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)
       - [ACP2E-4875：大規模なアドレス帳を使用して顧客アカウントを開くときに管理者ユーザーがログアウトする](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
