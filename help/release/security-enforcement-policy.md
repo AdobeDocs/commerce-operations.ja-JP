@@ -23,9 +23,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Adobe Commerce クラウド版のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce Cloud バージョン 2.4.4 ～ 2.4.9にのみ適用"
 nudge: true
-source-git-commit: 85ff49e8a7dbf4ee8c2eef801bd44f45db0a21a5
+source-git-commit: 7512d5cd3fa1917c87b53e25ca69a3dc3c813727
 workflow-type: tm+mt
-source-wordcount: 1983
+source-wordcount: 1985
 ht-degree: 0%
 
 ---
@@ -195,7 +195,7 @@ Adobeには、Adobe Commerce as a Cloud Serviceへの移行にかかるコスト
 
 * **移行評価：** カスタマイズの移行複雑さを評価します。 [移行評価ツールの概要](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/migration-tools/assessment)を参照してください。
 
-* **データ移行：** [一括および増分データ移行ツール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data)を使用すると、データを新しいAdobe Commerce as a Cloud Service環境に移行できます。
+* **データ移行：** [一括および増分データ移行ツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool)を使用すると、データを新しいAdobe Commerce as a Cloud Service環境に移行できます。
 
 * Adobeの[AI支援による移行および開発者ツール &#x200B;](https://developer.adobe.com/commerce/extensibility/developer-agent/) （**[!DNL Adobe Developer App Builder]**&#x200B;および&#x200B;**[!DNL Commerce Storefront powered by Edge Delivery Services]**&#x200B;を含む）は、ストアフロントの近代化と拡張機能の再プラットフォーム化を加速するのに役立ちます。
 
