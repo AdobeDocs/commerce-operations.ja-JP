@@ -2,9 +2,10 @@
 title: Adobe Commerceのインストール
 description: 所有しているインフラストラクチャにAdobe Commerceをインストールするには、次の手順に従います。
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '2281'
+source-wordcount: '2282'
 ht-degree: 0%
 
 ---
@@ -93,7 +94,7 @@ Adobe Commerce バージョン 2.2.8以降では、インストール中また�
 |--- |--- |--- |
 | `--base-url` | 次のいずれかの形式で管理者およびストアフロントにアクセスするために使用するベース URL:<br><br>`http[s]://<host or ip>/<your install dir>/`。<br><br>**注意：** スキーム（http://またはhttps://）と末尾のスラッシュはどちらも必要です。<br><br>`<your install dir>` は、アプリケーションをインストールするdocroot相対パスです。 Web サーバーと仮想ホストの設定方法によっては、パスがmagento2であるか、空白である可能性があります。<br><br>localhost上のアプリケーションにアクセスするには、`http://127.0.0.1/<your install dir>/`または`http://127.0.0.1/<your install dir>/`のいずれかを使用できます。<br><br>- `{{base_url}}`は、仮想ホスト設定またはDockerなどの仮想化環境で定義されたベース URLを表します。 例えば、ホスト名commerce.example.comで仮想ホストを設定した場合、`--base-url={{base_url}}`でアプリケーションをインストールし、`http://commerce.example.com/admin`のようなURLで管理者にアクセスできます。 | はい |
 | `--backend-frontname` | 管理者にアクセスするためのURI （Uniform Resource Identifier）。 このパラメーターを省略すると、次のパターン <code>admin_jkhgdfqを持つランダム URIをアプリケーションで生成できます</code>.<br><br> セキュリティ上の理由から、ランダムなURIを使用することをお勧めします。 ランダム URIは、ハッカーや悪意のあるソフトウェアが悪用するのが困難です。<br><br>URIはインストールの最後に表示されます。 後で`magento info:adminuri` コマンドを使用して、いつでも表示できます。<br><br>値を入力する場合は、「管理者」、「バックエンド」などの一般的な単語を使用しないことをお勧めします。 管理者URIには、英数字とアンダースコア文字（`_`）のみを含めることができます。 | いいえ |
-| `--db-host` | 次のいずれかを使用します。<br><br>- データベースサーバーの完全修飾ホスト名またはIP アドレス。<br><br>- `localhost` （デフォルト）または`127.0.0.1` （データベースサーバーがweb サーバーと同じホスト上にある場合）。localhostは、MySQL クライアントライブラリがUNIX ソケットを使用してデータベースに接続することを意味します。 `127.0.0.1`によって、クライアント ライブラリでTCP プロトコルが使用されます。 ソケットについて詳しくは、[PHP PDO_MYSQLのドキュメント &#x200B;](https://www.php.net/manual/en/ref.pdo-mysql.php)を参照してください。<br><br>**注：** www.example.com:9000のように、ホスト名にデータベースサーバーポートをオプションで指定できます | はい |
+| `--db-host` | 次のいずれかを使用します。<br><br>- データベースサーバーの完全修飾ホスト名またはIP アドレス。<br><br>- `localhost` （デフォルト）または`127.0.0.1` （データベースサーバーがweb サーバーと同じホスト上にある場合）。localhostは、MySQL クライアントライブラリがUNIX ソケットを使用してデータベースに接続することを意味します。 `127.0.0.1`によって、クライアント ライブラリでTCP プロトコルが使用されます。 ソケットについて詳しくは、[PHP PDO_MYSQLのドキュメント &#x200B;](https://www.php.net/manual/en/ref.pdo-mysql.php)を参照してください。<br><br>**注：** www.example.com:9000のように、任意でデータベース・サーバ・ポートをホスト名に指定できます | はい |
 | `--db-name` | データベーステーブルをインストールするデータベースインスタンスの名前。<br><br> デフォルトは`magento2`です。 | はい |
 | `--db-user` | データベースインスタンス所有者のユーザー名。<br><br> デフォルトは`root`です。 | はい |
 | `--db-password` | データベースインスタンス所有者のパスワード。 | はい |
@@ -212,9 +213,9 @@ Adobe Commerce バージョン 2.2.8以降では、インストール中また�
 
 * 管理者には次のプロパティがあります。
 
-   * 氏名は`Commerce User`です
-   * ユーザー名は`admin`、パスワードは`admin123`です
-   * メールアドレスは`user@example.com`です
+  * 氏名は`Commerce User`です
+  * ユーザー名は`admin`、パスワードは`admin123`です
+  * メールアドレスは`user@example.com`です
 
 * 既定の言語は`en_US` （米国英語）です
 * デフォルト通貨は米ドルです
@@ -280,9 +281,9 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 * 管理者には次のプロパティがあります。
 
-   * 氏名は`Commerce User`です
-   * ユーザー名は`admin`、パスワードは`admin123`です
-   * メールアドレスは`user@example.com`です
+  * 氏名は`Commerce User`です
+  * ユーザー名は`admin`、パスワードは`admin123`です
+  * メールアドレスは`user@example.com`です
 
 * 既定の言語は`en_US` （米国英語）です
 * デフォルト通貨は米ドルです

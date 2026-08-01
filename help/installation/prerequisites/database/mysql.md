@@ -2,9 +2,10 @@
 title: MySQL ガイドライン
 description: Adobe Commerceのオンプレミスインストール用にMySQLとMariaDBをインストールして設定するには、次の手順に従います。
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -83,7 +84,7 @@ _TINYINT （1）_&#x200B;を除き、すべての整数パディング （TINYIN
 
 ### ビヘイビアーによるデフォルトの順序
 
-8.0以前は、エントリは外部キーでソートされていました。 デフォルトの並べ替え順序は、使用するエンジンによって異なります。
+8.0以前は、エントリは外部キーでソートされていました。デフォルトの並べ替え順序は、使用するエンジンによって異なります。
 コードが特定のソートに依存する場合は、常にソート順序を指定します。
 
 ### GROUP BYのASCおよびDESC修飾子は非推奨

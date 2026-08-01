@@ -23,9 +23,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Adobe Commerce クラウド版のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce Cloud バージョン 2.4.4 ～ 2.4.9にのみ適用"
 nudge: true
-source-git-commit: 7512d5cd3fa1917c87b53e25ca69a3dc3c813727
+source-git-commit: 6ecb6002982432b8d67c122569043da55939d915
 workflow-type: tm+mt
-source-wordcount: 1985
+source-wordcount: 1981
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Adobeの企業セキュリティポリシーでは、Adobeでホストされて�
 
 ### アクション 1: サードパーティ製ソフトウェアの依存関係をアップグレードする
 
-ソフトウェアによっては、サポートされていないソフトウェアの依存関係はすべて、次の表で共有されているタイムラインでアップグレードする必要があります。 [Cloud Console](https://console.adobecommerce.com/)で環境を表示し、これらの[手順](#check-software-dependency-versions)を使用して実行中の依存関係バージョンを確認できます。 ソフトウェア依存関係のアップグレードは、すべてのAdobe Commerce on Cloud バージョン 2.4.4 ～ 2.4.9に適用されます。
+ソフトウェアによっては、サポートされていないソフトウェアの依存関係はすべて、次の表で共有されているタイムラインでアップグレードする必要があります。 [Cloud Console](https://console.adobecommerce.com/)で環境を表示し、これらの[手順](#how-to-check-the-versions-you-are-running)を使用して実行中の依存関係バージョンを確認できます。 ソフトウェア依存関係のアップグレードは、すべてのAdobe Commerce on Cloud バージョン 2.4.4 ～ 2.4.9に適用されます。
 
 | 依存関係 | バージョン | にアップグレードする必要があります | 施行日 |
 | --- | --- | --- | --- |
@@ -136,7 +136,7 @@ Adobeの企業セキュリティポリシーでは、Adobeでホストされて�
 
 Adobeを使用すると、これらのソフトウェアの依存関係を直接アップグレードできます。
 
-* **はじめに：** アップグレードが必要な環境と関連する依存関係が一覧表示された[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)を開きます。 少なくとも30日前にチケットを開き、当社のチームが作業をスケジュールできるようにします。
+* **はじめに：** アップグレードが必要な環境と関連する依存関係が一覧表示された[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)を開きます。 少なくとも30日前にチケットを開き、当社のチームが作業をスケジュールできるようにします。
 
 * **ダウンタイム：** Adobeは、スケジュールを設定するときに、想定されるウィンドウを確定します。
 
@@ -187,7 +187,7 @@ Adobeには、アップグレードや移行を行う場合でも、移行を可
 
 * **アップグレード互換性レポート：** Adobeには、時間とコストの範囲など、Adobe Commerce バージョン 2.4.9へのアップグレードに必要な内容を正確に示す詳細なレポートが用意されています。 [&#x200B; アップグレード互換性レポートを生成](https://supportinsights.adobe.com/commerce/tab/main)。
 
-* **ソフトウェア依存関係のアップグレード：** ソフトウェア依存関係を直接アップグレードできないため、[Adobeのサポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket){target="_blank"}を開いて、アップグレードを処理してください。 詳しくは、[&#x200B; サービスの設定](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}を参照してください。
+* **ソフトウェア依存関係のアップグレード：** ソフトウェア依存関係を直接アップグレードできないため、[Adobeのサポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"}を開いて、アップグレードを処理してください。 詳しくは、[&#x200B; サービスの設定](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}を参照してください。
 
 **Adobe Commerce as a Cloud Serviceへの移行を選択した場合**
 

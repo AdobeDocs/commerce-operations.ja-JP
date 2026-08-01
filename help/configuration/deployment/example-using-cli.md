@@ -2,9 +2,10 @@
 title: CLI コマンドの使用例
 description: コマンドラインを使用して、開発システムで共有、システム固有、および機密性の高い値を設定する方法の例を参照してください。
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---

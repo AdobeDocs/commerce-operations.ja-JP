@@ -2,7 +2,8 @@
 title: ストアの設定
 description: セキュアインストールオプションを含む、デプロイメント設定とデータベーススキーマの設定後に、コマンドラインからAdobe Commerce ストアを設定する方法について説明します。
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%

@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: d8ad9344c866eeffeda81e45ebe7de9376905638
+source-git-commit: 989662bcb4c1a3cc50cffae1d706501409898c64
 workflow-type: tm+mt
-source-wordcount: '10538'
+source-wordcount: '10533'
 ht-degree: 0%
 
 ---
@@ -1051,7 +1051,6 @@ ht-degree: 0%
   - [Quality Patches ToolでAdobe Commerceの問題が発生した場合のパッチの確認](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - コマンドラインツールリファレンス {#cli-reference}
   - [Adobe Commerce （オンプレミス）](reference/commerce-on-premises.md)
-  - [Adobe Commerce Beta（オンプレミス）](reference/commerce-on-premises-beta.md)
   - [互換性のアップグレード ツール](reference/uct.md)
 - Adobe Commerceの観測 {#observation-for-adobe-commerce}
   - [概要](observation-for-adobe-commerce/intro.md)

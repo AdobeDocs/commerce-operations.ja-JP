@@ -2,7 +2,8 @@
 title: Adobe Commerce 2.4.3 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.3のセキュリティパッチリリースに含まれているセキュリティバグの修正、セキュリティの強化、およびその他のセキュリティ関連アップデートについて説明します。
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-05-12T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 0%

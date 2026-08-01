@@ -2,7 +2,8 @@
 title: 高度なオンプレミス インストール
 description: Adobe Commerce オンプレミス展開の高度なインストールのシナリオについて説明します。 複雑な設定とカスタム設定オプションをご確認ください。
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '2527'
 ht-degree: 0%
@@ -246,9 +247,9 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 * 管理者には次のプロパティがあります。
 
-   * 氏名は`Magento User`です
-   * ユーザー名は`admin`、パスワードは`admin123`です
-   * メールアドレスは`user@example.com`です
+  * 氏名は`Magento User`です
+  * ユーザー名は`admin`、パスワードは`admin123`です
+  * メールアドレスは`user@example.com`です
 
 * 既定の言語は`en_US` （米国英語）です
 * デフォルト通貨は米ドルです
@@ -314,9 +315,9 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 * 管理者には次のプロパティがあります。
 
-   * 氏名は`Magento User`です
-   * ユーザー名は`admin`、パスワードは`admin123`です
-   * メールアドレスは`user@example.com`です
+  * 氏名は`Magento User`です
+  * ユーザー名は`admin`、パスワードは`admin123`です
+  * メールアドレスは`user@example.com`です
 
 * 既定の言語は`en_US` （米国英語）です
 * デフォルト通貨は米ドルです

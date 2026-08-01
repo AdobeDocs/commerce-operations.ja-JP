@@ -2,9 +2,10 @@
 title: Adobe Commerce 2.4.7 セキュリティパッチリリースノート
 description: Adobe Commerce バージョン 2.4.7のセキュリティパッチリリースに含まれているセキュリティバグの修正、セキュリティの強化、およびその他のセキュリティ関連アップデートについて説明します。
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: f731debd7e0734d1bb1b8c821149ffafea735337
+last-update: 2026-05-12T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1352'
 ht-degree: 0%
 
 ---
@@ -18,9 +19,9 @@ ht-degree: 0%
 >
 >MySQL 8.0は、2026年4月30日からサポート終了（EOS）に到達します。
 >
->この日付に続いて、Adobe Commerce 2.4.7では互換性が提供されません。または>mysql 8.0以降にリリースされたMySQL バージョンをサポートします。 Adobeでは>このAdobeの新しいMySQL メジャーバージョンの検証またはサポートの提供>Commerce リリースライン。
+>この日付に続いて、Adobe Commerce 2.4.7では、MySQL 8.0以降にリリースされたMySQL バージョンの互換性または> サポートは提供されません。Adobeは、このAdobe>Commerce リリース ラインで新しいMySQL メジャーバージョンを検証またはサポートしません。>
 >
->バージョン 2.4.7を実行しているすべてのAdobe Commerce オンプレミスのお客様は、以下の点に強く同意します。>データベースサーバーを互換性のあるMariaDB バージョンに移行することをお勧めします。
+>バージョン 2.4.7を実行しているすべてのAdobe Commerce オンプレミスのお客様には、データベース サーバーを互換性のあるMariaDB バージョンに移行することを強くお勧めします>。
 
 ## 2.4.7-p10
 
