@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Adobe Commerce クラウド版のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce Cloud バージョン 2.4.4 ～ 2.4.9にのみ適用"
-nudge: true
-source-git-commit: 6ecb6002982432b8d67c122569043da55939d915
+color: blue
+source-git-commit: 7cd1bf694234196313373dea6620bdf67e08e82c
 workflow-type: tm+mt
-source-wordcount: 1981
+source-wordcount: 2017
 ht-degree: 0%
 
 ---
@@ -63,6 +63,8 @@ Adobeの企業セキュリティポリシーでは、Adobeでホストされて�
 | 2.4.8または2.4.9 | ソフトウェアによっては、2026年10月30日（PT）または2027年5月31日（PT）までに必要となります。 | 現時点では必要ありません |
 
 **表1：必要なアクションとバージョン別の期限**
+
+期限の延長が必要な場合は、アカウントチームまたは[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
 
 ## アクションを起こす必要がない
 
