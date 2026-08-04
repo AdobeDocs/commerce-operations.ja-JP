@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->クラウドインフラストラクチャ上のAdobe Commerce プロジェクトを保護および管理するための役割と責任について詳しくは、_Adobe Commerce セキュリティおよびコンプライアンスガイド_&#x200B;の[Shared Responsibility Model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)を参照してください。
+>クラウドインフラストラクチャ上のAdobe Commerce プロジェクトを保護および管理するための役割と責任について詳しくは、_Adobe Commerce セキュリティおよびコンプライアンスガイド_&#x200B;の[Shared Responsibility Model](https://experienceleague.adobe.com/ja/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)を参照してください。
 
 [&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
 
@@ -31,21 +31,21 @@ Adobeでは、次の推奨事項をすべてのお客様にとって最優先事
 
 ![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **管理者とすべてのSSH接続に対して2要素認証を有効にする**
 
-- [Commerce管理者のセキュリティ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)
+- [Commerce管理者のセキュリティ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security-admin)
 
-- [&#x200B; セキュアなSSH接続](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/multi-factor-authentication) （クラウドインフラストラクチャ）
+- [&#x200B; セキュアなSSH接続](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/project/multi-factor-authentication) （クラウドインフラストラクチャ）
 
 プロジェクトでMFAが有効になっている場合、SSH アクセス権を持つすべてのAdobe Commerce on cloud infrastructure アカウントは、認証ワークフローに従う必要があります。 このワークフローには、環境にアクセスするための2要素認証（2FA）コード、またはAPI トークンとSSH証明書が必要です。
 
 ![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **管理者の保護**
 
-- [&#x200B; デフォルトの`admin`や`backend`などの一般的な用語を使用する代わりに、デフォルト以外の管理者URL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url)を設定します。 この設定により、サイトへの不正アクセスを試みるスクリプトのリスクを軽減できます。
+- [&#x200B; デフォルトの`admin`や`backend`などの一般的な用語を使用する代わりに、デフォルト以外の管理者URL](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url)を設定します。 この設定により、サイトへの不正アクセスを試みるスクリプトのリスクを軽減できます。
 
-- [高度なセキュリティ設定](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)を構成 – URLに秘密鍵を追加し、大文字と小文字を区別するパスワードを必要とし、管理者セッションの長さ、パスワードの有効期間、ログイン試行を制限します。 セキュリティを強化するには、現在のセッションが期限切れになる前にキーボードの非アクティブな長さを設定し、ユーザー名とパスワードを大文字と小文字を区別する必要があります。
+- [高度なセキュリティ設定](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security-admin)を構成 – URLに秘密鍵を追加し、大文字と小文字を区別するパスワードを必要とし、管理者セッションの長さ、パスワードの有効期間、ログイン試行を制限します。 セキュリティを強化するには、現在のセッションが期限切れになる前にキーボードの非アクティブな長さを設定し、ユーザー名とパスワードを大文字と小文字を区別する必要があります。
 
-- [reCAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha)を有効にして、管理者を自動ブルートフォース攻撃から保護します。
+- [reCAPTCHA](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/captcha/security-google-recaptcha)を有効にして、管理者を自動ブルートフォース攻撃から保護します。
 
-- [管理者権限](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions)を管理者ユーザーアカウントに役割と役割に割り当てる場合は、最小権限の原則に従います。
+- [管理者権限](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions)を管理者ユーザーアカウントに役割と役割に割り当てる場合は、最小権限の原則に従います。
 
 ![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Adobe Commerceの最新リリースへのアップグレード**
 
@@ -55,11 +55,11 @@ Commerce プロジェクトを最新リリース [&#128279;](#upgrade-to-the-lat
 
 重要な設定値をロックするには、[構成管理](../../../configuration/cli/set-configuration-values.md)を使用します。
 
-`lock config`および`lock env` CLI コマンドは、環境変数が管理者から更新されないように設定します。 コマンドは、値を`<Commerce base dir>/app/etc/env.php` ファイルに書き込みます。 （クラウドインフラストラクチャプロジェクト上のCommerceについては、[Store Configuration Management](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/store-settings#sensitive-data)を参照してください）。
+`lock config`および`lock env` CLI コマンドは、環境変数が管理者から更新されないように設定します。 コマンドは、値を`<Commerce base dir>/app/etc/env.php` ファイルに書き込みます。 （クラウドインフラストラクチャプロジェクト上のCommerceについては、[Store Configuration Management](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/store-settings#sensitive-data)を参照してください）。
 
 ![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **セキュリティスキャンの実行**
 
-[Commerce セキュリティスキャンサービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)を使用して、すべてのAdobe Commerce サイトに既知のセキュリティリスクとマルウェアを監視し、サインアップしてパッチの更新とセキュリティ通知を受け取ります。
+[Commerce セキュリティスキャンサービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security-scan)を使用して、すべてのAdobe Commerce サイトに既知のセキュリティリスクとマルウェアを監視し、サインアップしてパッチの更新とセキュリティ通知を受け取ります。
 
 ## 拡張機能とカスタムコードのセキュリティを確保
 
@@ -110,9 +110,9 @@ Commerceサイトが危険にさらされた場合は、包括的な災害復旧
 
 **Adobe Commerceがクラウドインフラストラクチャにデプロイされました**
 
-- [バックアップと災害復旧](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+- [バックアップと災害復旧](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
 
-- [Adobe Commerce on cloud infrastructureのストア構成管理](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/store-settings)
+- [Adobe Commerce on cloud infrastructureのストア構成管理](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/store-settings)
 
 **オンプレミスにデプロイされたAdobe Commerce**
 
@@ -130,9 +130,9 @@ Commerceサイトが危険にさらされた場合は、包括的な災害復旧
 
 ![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Web アプリケーションファイアウォールを使用**：トラフィックを分析し、Web アプリケーションファイアウォールを使用して不明なIP アドレスにクレジットカード情報を送信するなど、疑わしいパターンを検出します。
 
-クラウドインフラストラクチャにデプロイされたAdobe Commerce インストールでは、[Fastly サービス統合](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)で利用可能な組み込みのWAF サービスを使用できます
+クラウドインフラストラクチャにデプロイされたAdobe Commerce インストールでは、[Fastly サービス統合](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/fastly)で利用可能な組み込みのWAF サービスを使用できます
 
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **高度なパスワードセキュリティ設定を設定する** – 強固なパスワードを設定し、少なくとも90日ごとに変更します。これは、セクション 8.2.4のPCI データセキュリティ標準で推奨されています。 [管理者セキュリティ設定の設定](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)を参照してください。
+![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **高度なパスワードセキュリティ設定を設定する** – 強固なパスワードを設定し、少なくとも90日ごとに変更します。これは、セクション 8.2.4のPCI データセキュリティ標準で推奨されています。 [管理者セキュリティ設定の設定](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security-admin)を参照してください。
 
 ![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **HTTPS**&#x200B;を使用 – Commerce サイトが新しく実装された場合は、HTTPSを使用してサイト全体を起動します。 Googleでは、HTTPSをランキング要素として使用し、多くの利用者は、HTTPSで保護されたサイトからのみ購入を検討しています。
 
@@ -179,7 +179,7 @@ e コマースサイトを標的としたマルウェア攻撃は頻繁に発生
 
 - 指定したIP アドレスまたはネットワークからのユーザーのみにアクセスを許可するアクセス制御リストを設定して、Commerce サイトへのアクセスを制御します。
 
-  カスタム VCL コードスニペットを使用したFastly Edge ACLを使用して、受信リクエストをフィルタリングし、IP アドレスによるアクセスを許可できます。 リクエスト [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist)を許可するには、 カスタム VCLを参照してください。
+  カスタム VCL コードスニペットを使用したFastly Edge ACLを使用して、受信リクエストをフィルタリングし、IP アドレスによるアクセスを許可できます。 リクエスト [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist)を許可するには、 カスタム VCLを参照してください。
 
 
   >[!TIP]

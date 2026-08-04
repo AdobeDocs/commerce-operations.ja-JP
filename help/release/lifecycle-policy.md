@@ -21,7 +21,7 @@ Adobeでは、Adobe Commerceのサポート期間が3年間または延長され
 
 一般提供（GA）日からの標準の3年間のサポート期間。 標準サポートには、品質修正、セキュリティパッチ、Adobe Commerceのオンコールサポートが含まれています。
 
-- **品質修正** – お客様は、[Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)またはセルフサービス [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)を通じて、品質修正にアクセスできます。
+- **品質修正** – お客様は、[Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)またはセルフサービス [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)を通じて、品質修正にアクセスできます。
 
 - **セキュリティ修正** - Adobeは、3年間のサポート期間において、累積セキュリティパッチと非累積[個別セキュリティパッチファイル &#x200B;](versioning-policy.md#isolated-security-patch-file)を通じてセキュリティ修正を提供します。
 
@@ -205,7 +205,7 @@ Adobeでは、できるだけ早くアップグレードすることをお勧め
 - Adobeの最新機能である、AIを活用したマーチャンダイジング、コンポーザブルストアフロントアーキテクチャ、Adobe Experience Cloudとのネイティブ統合にアクセスできます。
 - 定期的なアップグレードサイクルを排除できます。
 
-移行の評価を開始するには、Adobe アカウントチームにお問い合わせください。 詳しくは、[Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)を参照してください。
+移行の評価を開始するには、Adobe アカウントチームにお問い合わせください。 詳しくは、[Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/overview)を参照してください。
 
 ### 代替パス：サポート対象のAdobe Commerce オンクラウド版またはオンプレミス リリースへのアップグレード
 
