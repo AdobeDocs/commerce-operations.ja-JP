@@ -17,12 +17,12 @@ ht-degree: 0%
 
 - [Adobe Product Security](https://helpx.adobe.com/security.html): Adobe Commerceの最新パッチ、セキュリティアップデート、ベストプラクティスについて説明します。
 - [Adobe Trust Center](https://www.adobe.com/trust.html)：すべてのAdobe クラウドサービスの運用上の健全性、セキュリティ、プライバシー、およびコンプライアンスに関する利用可能な最新情報にアクセスします。
-- [ サイト全体の分析ツール ](../tools/site-wide-analysis-tool/dashboard.md): セキュリティスキャン、提供終了サービス、セキュリティに関する推奨事項など、Adobe Commerce サイトに関する合理的なセキュリティインサイトを表示します。
-- [ セキュリティとコンプライアンスに関する通知](../release/security-enforcement-policy.md)：安全でコンプライアンスを維持するために、Cloud バージョン 2.4.4 ～ 2.4.9でAdobe Commerceに必要なアクションと期限について説明します。
+- [&#x200B; サイト全体の分析ツール &#x200B;](../tools/site-wide-analysis-tool/dashboard.md): セキュリティスキャン、提供終了サービス、セキュリティに関する推奨事項など、Adobe Commerce サイトに関する合理的なセキュリティインサイトを表示します。
+- [&#x200B; セキュリティとコンプライアンスに関する通知](../release/security-enforcement-policy.md)：安全でコンプライアンスを維持するために、Cloud バージョン 2.4.4 ～ 2.4.9でAdobe Commerceに必要なアクションと期限について説明します。
 
 ## コンプライアンス
 
-加盟店は、安全な環境を維持するための業界ガイドライン、管轄区域の法的要件、オンラインコマースのベストプラクティスを満たす義務を負います。 ビジネスの観点から詳しくは、[ ストアプライバシーポリシー](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html)を参照してください。
+加盟店は、安全な環境を維持するための業界ガイドライン、管轄区域の法的要件、オンラインコマースのベストプラクティスを満たす義務を負います。 ビジネスの観点から詳しくは、[&#x200B; ストアプライバシーポリシー](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html)を参照してください。
 
 このコンプライアンスドキュメントでは、Adobe Commerceのインストールが特定のプライバシー法の要件に準拠していることを確認するための技術情報を提供します。 これらの要件の中には、コンプライアンスを達成するために追加の開発作業を完了する必要があるものもあります。 詳しくは、次のトピックを参照してください。
 
