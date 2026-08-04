@@ -2,9 +2,9 @@
 title: 責任セキュリティと運用モデルの共有
 description: Adobe Commerce on cloud インフラストラクチャプロジェクトに関与する各パーティのセキュリティ責任について説明します。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 7dcd7f79417df28402a29e1e52d99eb288e8c6b9
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '3253'
+source-wordcount: '3270'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Adobe Commerce on cloud infrastructureは、共通の責任セキュリティと
 
 この共有モデルにより、販売者は、運用上の責任とコストを最小限に抑えながら、ビジネス要件を満たす、柔軟でカスタマイズ可能でスケーラブルなソリューションを設計および導入できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3458393/?captions=jpn&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3458392/?learn=on&enablevpops)
 
 Adobeは、次の責任を負います。
 
@@ -31,14 +31,15 @@ Adobeは、次の責任を負います。
 * 安全なアプリケーション開発の確保
 * 加盟店の決済代行会社から要求された場合、PCI認証を取得する
 * セキュリティインシデントへの対応と対応
-* アクティブにサポートされているバージョンでは、すべてのサードパーティ製の依存関係、プラットフォームサービス、Adobe Commerce サービス拡張機能を維持する。 Adobeでは、サポートされていない依存関係バージョンを実行するデプロイメントに対するセキュリティサポートやサポートは提供されていません。 サポートされているバージョンについては、[必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ja)および[製品の可用性マトリックス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability)を参照してください。
+* アクティブにサポートされているバージョンでは、すべてのサードパーティ製の依存関係、プラットフォームサービス、Adobe Commerce サービス拡張機能を維持する。 Adobeでは、サポートされていない依存関係バージョンを実行するデプロイメントに対するセキュリティサポートやサポートは提供されていません。 サポートされているバージョンについては、[必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)および[製品の可用性マトリックス ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)を参照してください。
 
 >[!NOTE]
 >
 >こちらもご覧ください：
 >
->* [&#x200B; ソフトウェア ライフサイクル ポリシー](../release/lifecycle-policy.md) — サポート終了日、延長サポート、およびセキュリティのみの移行規定
+>* [ ソフトウェア ライフサイクル ポリシー](../release/lifecycle-policy.md) — サポート終了日、延長サポート、およびセキュリティのみの移行規定
 >* [Cloud バージョンのアップグレード実施ポリシー](../release/version-upgrade-enforcement-policy.md) – 実施日と必要なアクション
+>* [ セキュリティとコンプライアンスに関する通知](../release/security-enforcement-policy.md) — Cloud バージョン 2.4.4 ～ 2.4.9でAdobe Commerceに必要なアクションと期限
 
 {{supported-versions-only}}
 
@@ -99,11 +100,11 @@ Adobeは、該当するSLAで合意されている加盟店のインフラスト
 * Adobe Commerce on cloud インフラストラクチャアプリケーションに接続するシステムやネットワークのセキュリティを維持する
 * それぞれのベンダーまたはAdobeがアクティブにサポートしているバージョンに対して、すべてのプラットフォームサービス、サードパーティの依存関係、Adobe Commerce サービス拡張機能を維持する。 次の項目を含みます。
 
-   * データベース、キャッシュ、検索、PHP ランタイム、web サーバーなどのインフラストラクチャサービス
-   * Adobe Commerce Servicesの拡張機能
-   * サードパーティ製の拡張機能とカスタム統合
+  * データベース、キャッシュ、検索、PHP ランタイム、web サーバーなどのインフラストラクチャサービス
+  * Adobe Commerce Servicesの拡張機能
+  * サードパーティ製の拡張機能とカスタム統合
 
-  Adobeでは、サポートされていないバージョンを実行するデプロイメントのサポートは提供されていません。 サポートされているバージョンについては、[必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ja)および[製品の可用性マトリックス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability)を参照してください。
+  Adobeでは、サポートされていないバージョンを実行するデプロイメントのサポートは提供されていません。 サポートされているバージョンについては、[必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)および[製品の可用性マトリックス ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)を参照してください。
 
 ## クラウドサービスプロバイダーの責任
 

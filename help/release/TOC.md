@@ -3,11 +3,10 @@ user-guide-title: リリース情報
 user-guide-description: Adobe Commerceのパッチとサービスに関するすべてのリリース情報に1か所でアクセスできます。
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-nudge: true
-source-git-commit: b620d433a896d576e0f61edce0f6b4b8bb816706
+source-git-commit: d6db4e5dc61b126f8f5ed44c4683aa4dd367b37e
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 30%
+source-wordcount: '105'
+ht-degree: 31%
 
 ---
 
@@ -54,7 +53,7 @@ ht-degree: 30%
 - [Beta リリース](beta.md)
 - 計画とポリシー {#planning}
   - [ライフサイクルポリシー](lifecycle-policy.md)
-  - [セキュリティポリシー：必要なアクションと期限](security-enforcement-policy.md)
+  - [セキュリティとコンプライアンスに関する通知](security-enforcement-policy.md)
   - [バージョンアップグレードの適用ポリシー](version-upgrade-enforcement-policy.md)
   - [バージョン管理ポリシー](versioning-policy.md)
   - [リリーススケジュール](schedule.md)
@@ -63,4 +62,4 @@ ht-degree: 30%
 - パッケージ {#packages}
   - [Adobe Commerce](packages/adobe-commerce.md)
   - [Magento Open Source](packages/magento-open-source.md)
-- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
+- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
