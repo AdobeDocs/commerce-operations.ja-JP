@@ -2,9 +2,9 @@
 title: Adobe Commerce リリースノート
 description: 特定の Adobe Commerce リリースの情報の入手先について説明します。
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 3373f83b5c03e9e81c26376f299014e8bf63a6e9
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '497'
 ht-degree: 2%
 
 ---
@@ -37,8 +37,9 @@ ht-degree: 2%
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">後方互換性のない変更</a></li>
             <li><a href="commerce/overview.md">Adobe Commerce</a></li>
             <li><a href="security/overview.md">セキュリティパッチ</a></li>
-            <li><a href="../../lifecycle-policy.md">ソフトウェアライフサイクルポリシー</a></li>
-            <li><a href="../../version-upgrade-enforcement-policy.md">Cloud バージョンのアップグレードの適用ポリシー</a></li>
+            <li><a href="../lifecycle-policy.md">ソフトウェアライフサイクルポリシー</a></li>
+            <li><a href="../version-upgrade-enforcement-policy.md">Cloud バージョンのアップグレードの適用ポリシー</a></li>
+            <li><a href="../security-enforcement-policy.md">セキュリティとコンプライアンスに関する通知</a></li>
             <li><a href="https://helpx.adobe.com/jp/security/products/magento.html">Adobe セキュリティ情報</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=ja">B2B for Adobe Commerce</a></li>
           </ul>
