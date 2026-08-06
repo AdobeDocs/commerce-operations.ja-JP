@@ -1,5 +1,5 @@
 ---
-title: セキュリティとコンプライアンス：必要なアクションと期限
+title: Commerce環境を保護するために必要なアクションと期限
 description: 期限、必要なアクション、リスクなど、Cloud版およびソフトウェアの依存関係でサポートされていないAdobe Commerceのセキュリティを適用する方法について説明します。
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -20,25 +20,23 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-badgePaas: label="Adobe Commerce クラウド版のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Cloud バージョン 2.4.4 ～ 2.4.9のAdobe Commerceにのみ適用されます"
+badgePaas: label="Cloud 2.4.4上のAdobe Commerce - 2.4.9のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Cloud バージョン 2.4.4 ～ 2.4.9のAdobe Commerceにのみ適用されます"
 nudge: true
-source-git-commit: 582016bc43802ed71563eaf033167e0a4bb0191b
+source-git-commit: c3ea400087a14aa1021ab6998b9de48c33787cc9
 workflow-type: tm+mt
-source-wordcount: 2108
+source-wordcount: 2174
 ht-degree: 0%
 
 ---
 
 
-# セキュリティとコンプライアンスに関するお知らせ：必要なアクションと期限
+# Commerce環境を保護するために必要なアクションと期限
 
 >[!NOTE]
 >
 > **Adobe Commerce バージョン 2.4.4 ～ 2.4.9を実行しているAdobe Commerce on Cloud （PaaS）環境**&#x200B;に適用されます。
->
-> このガイダンスは、[!DNL Adobe Commerce as a Cloud Service] （SaaS）環境またはAdobe Commerce オンプレミスのデプロイメントには適用されません。
 
-サイバーセキュリティを取り巻く状況は根本的に変化しており、企業が導入する防御的メカニズムは急速に進化する必要があります。 セキュリティは、e コマースビジネスにとって非常に重要です。オンライン取引では、機密性の高い個人データとビジネスデータを扱う必要があり、侵害が発生した場合に財務リスクやID リスクに晒す必要があるからです。 PaaS e コマース環境では、アプリケーション層の依存関係、サードパーティ製ソフトウェアとの統合、デプロイメントパイプラインのセキュリティとメンテナンスについて、お客様が責任を負う共通の責任モデルが用意されています。
+サイバーセキュリティを取り巻く状況は根本的に変化しており、企業が導入する防御的メカニズムは急速に進化する必要があります。 セキュリティは、e コマースビジネスにとって非常に重要です。オンライン取引では、機密性の高い個人データとビジネスデータを扱う必要があり、侵害が発生した場合に財務リスクやID リスクに晒す必要があります。 PaaS e コマース環境では、アプリケーション層の依存関係、サードパーティ製ソフトウェアとの統合、デプロイメントパイプラインのセキュリティとメンテナンスについて、お客様が責任を負う共通の責任モデルが用意されています。
 
 Adobeでは、進化するリスクに対処し、Adobe Commerce on Cloudのお客様を最高のセキュリティ基準に設定することを保証することに引き続き取り組んでいます。 次の項目を含みます。
 
@@ -53,7 +51,7 @@ Adobeでは、進化するリスクに対処し、Adobe Commerce on Cloudのお�
 5. 長期サポート付きの年間パッチリリース
 
 
-Adobeは、お客様のセキュリティを維持するために必要な手順を実行します。Adobe Commerce on Cloudの共通の責任モデルでは、お客様が常にサポート対象バージョンのAdobe Commerce on Cloudおよびサードパーティのソフトウェアを使用し、アプリケーションパッチを適用し、サードパーティの拡張機能を監査し、カスタムコードを保護する必要があります。 ベンダーサポートを終了したソフトウェアには、セキュリティパッチが適用されなくなり、ソフトウェアのセキュリティ問題は未解決のままになります。サポートされていないソフトウェアでe コマースストアフロントを実行し続けると、セキュリティリスクが増大します。
+Adobeは、お客様のセキュリティを維持するために必要な手順を実行します。Adobe Commerce on Cloudの共通責任モデルでは、お客様が常にサポート対象バージョンのAdobe Commerce on Cloudおよびサードパーティのソフトウェアを使用し、アプリケーションパッチを適用し、サードパーティの拡張機能を監査し、カスタムコードを保護する必要があります。 ベンダーサポートを終了したソフトウェアには、セキュリティパッチが適用されなくなり、ソフトウェアのセキュリティ問題は未解決のままになります。サポートされていないソフトウェアでe コマースストアフロントを実行し続けると、セキュリティリスクが増大します。
 
 このページでは、Adobe Commerce on Cloud （バージョン 2.4.4～2.4.9）を利用しているすべてのお客様が、e コマース環境を安全に保つために必要なアクションの概要と、セキュリティ要件が満たされない場合に想定される措置について説明します。
 
@@ -63,9 +61,13 @@ Adobeは、お客様のセキュリティを維持するために必要な手順
 
 1. サポートされているすべてのサードパーティソフトウェアの依存関係のバージョン（PHP、MariaDB、Elasticsearch、OpenSearch、Redis、RabbitMQ）
 
-1. Adobe Commerce on Cloudの安全なサポート対象。 完全にサポートされているバージョンには、2.4.8、2.4.9、または利用可能な最新リリースが含まれています。 ライフサイクルポリシー[こちら](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/lifecycle-policy)を参照してください。
+1. Adobe Commerce on Cloudの安全なサポート対象。 完全にサポートされているバージョンには、2.4.8、2.4.9、または利用可能な最新リリースが含まれています。 [&#x200B; ライフサイクルポリシー](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/lifecycle-policy)のドキュメントを参照してください。
 
-Adobe Commerce on Cloud環境を保護するためにアクションを実行する必要があるかどうかを確認するには、次のガイドラインに従います。 以下の表1に記載されている期限までにセキュリティ要件を満たさない環境では、ストアフロントをオフラインにしてインバウンドトラフィックが停止します。 期限の遵守が懸念され、短期間の延長が必要な場合は、アカウントチームまたはAdobeサポートにお問い合わせください。
+Adobe Commerce on Cloud環境を保護するためにアクションを実行する必要があるかどうかを確認するには、次のガイドラインに従います。 以下の表1に記載されている期限までにセキュリティ要件を満たさない環境では、ストアフロントをオフラインにしてインバウンドトラフィックが停止します。 期限の遵守について懸念がある場合は、できるだけ早くアカウントチームまたは[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
+
+>[!NOTE]
+>
+> このガイダンスは、[!DNL Adobe Commerce as a Cloud Service] （SaaS）環境またはAdobe Commerce オンプレミスのデプロイメントには適用されません。
 
 **表1: セキュリティ要件と期限**
 
@@ -77,7 +79,7 @@ Adobe Commerce on Cloud環境を保護するためにアクションを実行す
 
 ## 環境を保護するための詳細な手順
 
-コマース管理者に次の手順に従ってもらいます。
+Commerce管理者に次の手順を実行してもらいます。
 
 ### アクション 1: サードパーティ製ソフトウェアの依存関係を確認してアップグレードする
 
@@ -85,7 +87,7 @@ Adobe Commerce on Cloud環境を保護するためにアクションを実行す
 
 #### 手順1：サードパーティソフトウェアの依存関係のバージョンを確認する
 
-1. [Cloud Console](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/start/cloud-console)にログインします。
+1. [Cloud Console](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/start/cloud-console)にログインすると、すべての環境を表示できます。
 2. 関連するプロジェクトを開き、確認する環境を選択します。
 3. Adobe Commerce on Cloudでサポートされているサービス名とバージョンを定義する`.magento/services.yaml` ファイルで、その環境のサービス設定を確認します。
 4. 各環境が実行している依存関係のバージョンを、[Configure Services](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)の指示に従って確認します。
@@ -142,7 +144,7 @@ Adobeを使用すると、これらのソフトウェアの依存関係を直接
 
 | Adobe Commerce on Cloudの現在のバージョン | 必要なアクション | 期限 |
 | --- |--- |--- |
-| バージョン 2.4.4または2.4.5 | Cloud バージョン 2.4.9 （または最新バージョン）でAdobe Commerceにアップグレードするか、[!DNL Adobe Commerce as a Cloud Service]に移行します。<br>理由：v2.4.4および2.4.5では、2027年5月31日（PT）まで、コアアプリケーションに対する限定的な個別のセキュリティ修正のみが適用されます。これには、品質修正、アプリケーション依存関係（PHPなど）の互換性サポート、プラットフォーム依存関係の更新は含まれません。 Adobeの[&#x200B; ライフサイクルポリシー](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/lifecycle-policy)を参照してください。 | 2027年6月1日（PT） |
+| バージョン 2.4.4または2.4.5 | Cloud バージョン 2.4.9 （または最新バージョン）でAdobe Commerceにアップグレードするか、[!DNL Adobe Commerce as a Cloud Service]に移行します。理由：バージョン 2.4.4および2.4.5では、2027年5月31日まで、コアアプリケーションに対する限定的な個別のセキュリティ修正のみが提供されます。 <br>これには、品質の修正、アプリケーション依存関係（PHPなど）の互換性サポート、プラットフォーム依存関係の更新は含まれません。 Adobeの[&#x200B; ライフサイクルポリシー](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/lifecycle-policy)を参照してください。 | 2027年6月1日（PT） |
 | バージョン 2.4.6または2.4.7 | Cloud バージョン 2.4.9 （または最新バージョン）でAdobe Commerceにアップグレードするか、[!DNL Adobe Commerce as a Cloud Service]に移行します。理由：バージョン 2.4.6は、2027年8月30日（PT）まで延長サポートを受け、2028年5月31日（PT）までコアアプリケーションに対する限定的な個別のセキュリティ修正のみを受け取ります。 <br>バージョン 2.4.7は、2027年5月31日（PT）まで標準サポートを受け、2028年5月31日（PT）まで拡張サポートを受けます。 Adobeの[&#x200B; ライフサイクルポリシー](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/lifecycle-policy)を参照してください。 | 2028年6月1日（PT） |
 | バージョン 2.4.8または2.4.9 | Adobe Commerce Cloud版のアップグレードアクションは必要ありません。 アクション 1のサードパーティ製ソフトウェアの依存関係の期限は引き続き適用されます。<br>理由：期限が設定されていません。 | 影響しない |
 
@@ -165,11 +167,11 @@ Adobe Commerce Cloud版をアップグレードする必要がある場合は、
 
 ## 期限までに何も行動を起こさなかったらどうなるか。
 
-Adobeは、サポート対象バージョンのサードパーティソフトウェアの導入、最新バージョンのAdobe Commerce on Cloudへのアップグレード、またはAdobe Commerce as a Cloud Serviceへの移行を行うために必要な手順を実行する際に、お客様をサポートすることを引き続き保証します。  期限の遵守に関して懸念があり、短い延長が必要な場合は、アカウントチームまたは[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
+Adobeは、サポート対象バージョンのサードパーティソフトウェアの導入、最新バージョンのAdobe Commerce on Cloudへのアップグレード、またはAdobe Commerce as a Cloud Serviceへの移行を行うために必要な手順を実行する際に、お客様をサポートすることを引き続き保証します。  期限の遵守に関して懸念があり、短い延長が必要な場合は、できるだけ早くアカウントチームまたは[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
 
-上記の実施日までにセキュリティ要件を満たさない環境がある場合、Adobeは、Adobe Commerce プラットフォームとその顧客のセキュリティを保証するために適切な措置を講じることを余儀なくされます。 これには、影響を受けるインフラストラクチャへのトラフィックの一時停止が含まれます。これにより、e コマースのストアフロントがオフラインになります。
+上記の実施日までにセキュリティ要件を満たさない環境がある場合、Adobeは、Adobe Commerce プラットフォームおよびお客様のセキュリティを維持するための適切な措置を講じることを余儀なくされます。 これには、影響を受けるインフラストラクチャへのトラフィックの一時停止が含まれます。これにより、Commerce ストアフロントがオフラインになります。
 
-トラフィックの停止後もコンプライアンスを遵守していない環境が続く場合、Adobeはクラウドサービスを終了し、廃止プロセスを開始する可能性があります。 廃止の結果、ホストされているe コマース環境内のすべてのデータとアセット（すべてのインスタンス、環境、ブランチを含む）が完全に削除され、復元できなくなります。
+トラフィックの停止後もコンプライアンスを遵守していない環境が続く場合、Adobeはクラウドサービスを終了し、廃止プロセスを開始する可能性があります。 廃止の結果、ホストされているコマース環境内のすべてのデータとアセット（すべてのインスタンス、環境、ブランチを含む）が完全に削除され、復元できなくなります。
 
 ## アップグレードや移行に役立つリソース
 
@@ -185,7 +187,7 @@ Adobeには、[!DNL Adobe Commerce as a Cloud Service]への移行にかかる�
 
 * **移行評価：** カスタマイズの移行複雑さを評価します。 [移行評価ツールの概要](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/migration-tools/assessment)を参照してください。
 
-* **データ移行：** [一括および増分データ移行ツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool)は、データを新しい[!DNL Adobe Commerce as a Cloud Service]環境に移動します。
+* **データ移行：** [一括および増分データ移行ツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool)は、データを新しい[!DNL Adobe Commerce as a Cloud Service]環境に移動します。 アクセスについては、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
 
 * **AIを活用した移行と開発ツール：** Edge Delivery Servicesを搭載したAdobe Developer App BuilderとCommerce Storefrontは、ストアフロントの近代化と拡張機能の再プラットフォーム化を加速するのに役立ちます。
 
