@@ -3,9 +3,9 @@ title: 必要システム構成
 description: Adobe Commerceのソフトウェアの依存関係と必要システム構成について説明します。 デプロイメント環境との互換性については、テスト済みの設定を参照してください。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 last-update: 2026-07-23T00:00:00Z
-source-git-commit: 6da5a8645b46807eed654f6958f19f10d0095945
+source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Adobeは、次の表に示すシステム要件の組み合わせのみをサポ
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
 既定の設定では、サービスとバージョンは[`services.yaml` ファイル &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml)で定義されます。
-詳しくは、「*Commerce on Cloud Infrastructure* ガイドの[Configure services](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)」を参照してください。
+詳しくは、*Commerce on Cloud Infrastructure* ガイドの[Configure services](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)を参照してください。
 
 >[!TAB Commerce オンプレミス ]
 
@@ -48,7 +48,7 @@ Adobeは、次の表に示すシステム要件の組み合わせのみをサポ
 
 **MySQL 8.0は2026年4月30日にサポート終了（EOS）に達しました。**
 この日付に続いて、Adobe Commerce 2.4.7、2.4.6、2.4.5、および2.4.4では互換性が提供されません。
-mysql 8.0以降にリリースされたMySQL バージョンをサポートします。Adobeでは
+mysql 8.0以降にリリースされたMySQL バージョンをサポートします。 Adobeでは
 このAdobeの新しいMySQL メジャーバージョンの検証またはサポートの提供
 Commerce リリースライン。
 バージョン 2.4.7、2.4.6、2.4.5、2.4.4を実行しているすべてのAdobe Commerce オンプレミスのお客様は、以下の点に強く同意します。
@@ -58,7 +58,7 @@ Adobe Commerce on Cloudのお客様は、サポートされているバージョ
 
 **Elasticsearch 7.17は、2026年1月15日にサポート終了（EOS）に達しました。**
 この日付に続いて、Adobe Commerce 2.4.6、2.4.5、および2.4.4では互換性が提供されません。
-Elasticsearch 7以降にリリースされたElasticsearchのバージョンをサポートします。Adobeでは
+Elasticsearch 7以降にリリースされたElasticsearchのバージョンをサポートします。 Adobeでは
 このAdobeの新しいElasticsearch メジャーバージョンの検証またはサポートの提供
 Commerce リリースライン。
 バージョン 2.4.6、2.4.5、2.4.4を実行しているすべてのAdobe Commerce オンプレミスのお客様は、以下の点に強く同意します。
@@ -89,7 +89,7 @@ Commerce リリースライン。
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
 既定の設定では、サービスとバージョンは[`services.yaml` ファイル &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml)で定義されます。
-詳しくは、「*Commerce on Cloud Infrastructure* ガイドの[Configure services](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)」を参照してください。
+詳しくは、*Commerce on Cloud Infrastructure* ガイドの[Configure services](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)を参照してください。
 
 >[!TAB Commerce オンプレミス ]
 
@@ -97,7 +97,7 @@ Commerce リリースライン。
 
 **MySQL 8.0は2026年4月30日にサポート終了（EOS）に達しました。**
 この日付に続いて、Adobe Commerce 2.4.7、2.4.6、2.4.5、および2.4.4では互換性が提供されません。
-mysql 8.0以降にリリースされたMySQL バージョンをサポートします。Adobeでは
+mysql 8.0以降にリリースされたMySQL バージョンをサポートします。 Adobeでは
 このAdobeの新しいMySQL メジャーバージョンの検証またはサポートの提供
 Commerce リリースライン。
 バージョン 2.4.7、2.4.6、2.4.5、2.4.4を実行しているすべてのAdobe Commerce オンプレミスのお客様は、以下の点に強く同意します。
@@ -107,7 +107,7 @@ Adobe Commerce on Cloudのお客様は、サポートされているバージョ
 
 **Elasticsearch 7.17は、2026年1月15日にサポート終了（EOS）に達しました。**
 この日付に続いて、Adobe Commerce 2.4.6、2.4.5、および2.4.4では互換性が提供されません。
-Elasticsearch 7以降にリリースされたElasticsearchのバージョンをサポートします。Adobeでは
+Elasticsearch 7以降にリリースされたElasticsearchのバージョンをサポートします。 Adobeでは
 このAdobeの新しいElasticsearch メジャーバージョンの検証またはサポートの提供
 Commerce リリースライン。
 バージョン 2.4.6、2.4.5、2.4.4を実行しているすべてのAdobe Commerce オンプレミスのお客様は、以下の点に強く同意します。
@@ -230,5 +230,4 @@ Adobe Commerce on Cloudについては、*Commerce on Cloud Infrastructure* ガ�
 >
 >Adobe Commerceのインストールまたはインストール後のストアフロントまたは管理者へのアクセスに影響を与える可能性がある`xdebug`に既知の問題があります。 _Commerce サポート サポート ナレッジベース_&#x200B;の「`xdebug` インストール [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)」に影響する既知の問題を参照してください。
 
-<!-- Last updated from includes: 2026-07-22 16:57:39 -->
-
+<!-- Last updated from includes: 2026-07-23 16:17:19 -->
