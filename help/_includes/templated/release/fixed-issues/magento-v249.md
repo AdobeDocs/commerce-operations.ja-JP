@@ -1,7 +1,7 @@
 ---
 source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '32399'
+source-wordcount: '32815'
 ht-degree: 0%
 
 ---
@@ -3465,9 +3465,9 @@ href属性が見つからないか、正しくバインドされていないた�
 
 _AC-15547 - [GitHub issue](https://github.com/magento/magento2/issues/40185) - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/c95ed7d7)_
 
-#### エラーメッセージがGET リクエストに対してレンダリングされない
+#### エラーメッセージがGET リクエスト用にレンダリングされない
 
-無効なGET リクエストに対して、エラーメッセージがすぐに表示されない問題を修正しました。 追加のユーザー操作を必要とせずにエラーメッセージが正しく表示されるようになり、ユーザーのフィードバックと一貫性が向上しました。
+無効なGET リクエストに対してエラーメッセージがすぐに表示されない問題を修正しました。 追加のユーザー操作を必要とせずにエラーメッセージが正しく表示されるようになり、ユーザーのフィードバックと一貫性が向上しました。
 
 _AC-16296 - [GitHub issue](https://github.com/magento/magento2/issues/40411) - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/8391dbcc)_
 
@@ -3529,7 +3529,7 @@ _ACP2E-4285 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 #### 内部サーバーエラー
 
-非同期REST エンドポイント POST /rest/default/async/V1/carts/mine/itemsを使用すると、Magentoがお客様のカートに商品を正常に追加するようになりました。 以前は、この非同期「カートに追加」リクエストにより内部サーバーエラーが発生し、Magentoは次のエラーを記録しました。エラー：app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162のnullでメンバー関数setFinalPrice （）への呼び出し。
+非同期REST エンドポイント POST /rest/default/async/V1/carts/mine/itemsを使用すると、Magentoがお客様のカートに商品を正常に追加するようになりました。 以前は、この非同期「カートに追加」リクエストにより内部サーバーエラーが発生し、Magentoが次のエラーを記録しました。エラー：app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162のnullでメンバー関数setFinalPrice （）への呼び出し。
 
 _AC-16344 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/8670a2b4)_
 
@@ -3648,7 +3648,7 @@ _ACP2E-4212 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 #### スケジュール更新プレビューでWeb サイト間を移動できない
 
-この修正の前に、カスタムドメインを持つストアのコンテンツをプレビューしようとすると、スケジュールされた更新プレビューが壊れます。 この修正の後、カスタムストアドメインをそのままプレビューし、プレビューiframe内で移動できます。 この修正プログラムは、製品、カテゴリ、CMS ページ、CMS ブロックを対象としており、[Adobe Commerce変数およびマークアップタグ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/variables/markup-tags)に記載されているように、`{{store url}}`個のマークアップタグを使用したナビゲーションリンクをサポートしています。
+この修正の前に、カスタムドメインを持つストアのコンテンツをプレビューしようとすると、スケジュールされた更新プレビューが壊れます。 この修正の後、カスタムストアドメインをそのままプレビューし、プレビューiframe内で移動できます。 この修正プログラムは、製品、カテゴリ、CMS ページ、CMS ブロックを対象としており、[Adobe Commerce変数およびマークアップタグ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags)に記載されているように、`{{store url}}`個のマークアップタグを使用したナビゲーションリンクをサポートしています。
 
 _ACP2E-4308 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/0a3b7032)_
 
