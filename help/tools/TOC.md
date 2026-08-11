@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: f9962ead84372461e69df158f17456d5cdf0d89e
+source-git-commit: b5b0f88fa2b7c168ab51f457994e4ed0578794a2
 workflow-type: tm+mt
-source-wordcount: '10549'
+source-wordcount: '10598'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,10 @@ ht-degree: 0%
       - [ACP2E-4709：ページ階層に二重引用符が含まれている場合、CMS ページがページビルダーに保存されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4870：商品アラートメールがストアビューのメール設定を無視する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)
+      - [ACP2E-4799: GraphQL query requisition_listsがページネーションを使用して誤ったtotal_countを返す](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)
+      - [ACP2E-4797：管理者のWYSIWYG エディターとページビルダーは、utf8mb4がサポートされている場合、4 バイトのUnicode文字をブロックします](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)
+      - [ACP2E-4682：見積がアクティブであることを確認するストアフロントページが空の見積もりレコードを作成する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)
       - [ACP2E-4593：複数のweb サイトのストアフロントで、セカンダリ web サイトに表示されるWeb サイトの制限事項が間違っているCMS ページ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)
       - [ACP2E-4547：管理者は、ユーザーの共有カタログに割り当てられていない場合、デフォルトのカタログ製品を見積もりに追加できません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)
       - [ACP2E-4805：最初の販売可能な子がリストの後半に表示される場合、設定可能な製品のチェックアウトリクエストが遅くなる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)

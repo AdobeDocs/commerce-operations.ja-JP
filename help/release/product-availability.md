@@ -3,7 +3,7 @@ title: 製品の可用性
 description: 現在サポートされているAdobe Commerce機能について説明し、特定のAdobe Commerce リリースとの互換性を確認します。
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
 last-update: 2026-08-06T00:00:00Z
-source-git-commit: 356d4252bb21e3be9108eb8646a41b4a542aacdd
+source-git-commit: a5120adab9f624677447889722359951e775c3f3
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -45,4 +45,4 @@ ht-degree: 0%
 
 {{$include /help/_includes/templated/product-availability-services.md}}
 
-<!-- Last updated from includes: 2026-04-28 12:43:37 -->
+<!-- Last updated from includes: 2026-08-07 13:08:01 -->
