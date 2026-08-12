@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-24T20:44:59.025Z'
 TQID: 'https://experienceleague.adobe.com/Qoz-3w1ddXeHyDsyfsM0gD1kwi-Z6dc-C6P9Q-nYrUo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: e8b1a5c1161eab0a0e76e1cca6a4b8b528124b45
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 2864bda142df307248f5e29524eaf42441538f5b
 workflow-type: tm+mt
-source-wordcount: 488
+source-wordcount: 489
 ht-degree: 0%
 
 ---
@@ -33,7 +28,7 @@ QPT v1.1.82には、次のパッチが含まれています。
 1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**：管理者ユーザーが管理者の&#x200B;**[!UICONTROL Add Products By SKU]**&#x200B;を使用して、共有カタログにリンクされていない顧客グループに割り当てられた会社の注文にデフォルトカタログから製品を追加できない問題を修正しました。
 1. **[ACP2E-4593](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)**: マルチサイト展開のセカンダリ web サイトで、web サイトの制限用に表示されるCMS ページが正しく表示されない問題を修正しました。
 1. **ACP2E-4695**: カタログ ルール インデクサーが過剰なメモリを消費し、完了に失敗して、不安定およびメモリ不足エラーが発生する問題を修正します。
-1. **ACP2E-4698**: ページビルダーのテキストコンテンツで画像を再度編集すると、ポータブルメディアディレクティブを保持する代わりに絶対メディア URLが保存される問題を修正しました。
+1. **[ACP2E-4698](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)**: ページビルダーのテキストコンテンツで画像を再度編集すると、ポータブルメディアディレクティブを保持する代わりに絶対メディア URLを保存できる問題を修正しました。
 1. **[ACP2E-4797](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)**: データベースがutf8mb4をサポートするように設定されている場合でも、管理者のWYSIWYG エディターまたはページビルダーコンテンツに4 バイトのUnicode文字を入力すると誤ってブロックされる問題を修正しました。
 1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**：報酬ポイントの有効期限が大きな報酬ポイント履歴を持つストアでゆっくりと実行され、報酬ポイントの有効期限が遅くなる問題を修正します。
 1. **[ACP2E-4799](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)**: `requisition_lists GraphQL` クエリが、クエリ条件に一致する要求リストの合計数ではなく、現在のページの項目数のみを反映する`total_count`値を返す問題を修正しました。
