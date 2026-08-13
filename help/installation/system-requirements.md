@@ -2,10 +2,10 @@
 title: 必要システム構成
 description: Adobe Commerceのソフトウェアの依存関係と必要システム構成について説明します。 デプロイメント環境との互換性については、テスト済みの設定を参照してください。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-last-update: 2026-07-23T00:00:00Z
-source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
+last-update: 2026-08-11T00:00:00Z
+source-git-commit: 81442a33c3dabcaa3b9eda56a2132bf7b7432ba2
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1649'
 ht-degree: 0%
 
 ---
@@ -230,4 +230,4 @@ Adobe Commerce on Cloudについては、*Commerce on Cloud Infrastructure* ガ�
 >
 >Adobe Commerceのインストールまたはインストール後のストアフロントまたは管理者へのアクセスに影響を与える可能性がある`xdebug`に既知の問題があります。 _Commerce サポート サポート ナレッジベース_&#x200B;の「`xdebug` インストール [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)」に影響する既知の問題を参照してください。
 
-<!-- Last updated from includes: 2026-07-23 16:17:19 -->
+<!-- Last updated from includes: 2026-08-10 23:39:34 -->

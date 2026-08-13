@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: b5b0f88fa2b7c168ab51f457994e4ed0578794a2
+source-git-commit: 2864bda142df307248f5e29524eaf42441538f5b
 workflow-type: tm+mt
-source-wordcount: '10598'
+source-wordcount: '10632'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,8 @@ ht-degree: 0%
       - [ACP2E-4709：ページ階層に二重引用符が含まれている場合、CMS ページがページビルダーに保存されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4698: ページビルダーテキストのインライン編集で、ポータブルディレクティブではなく絶対メディア URLが保存される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)
+      - [ACP2E-4894：非同期インデックス作成が有効になっている場合、新しい注文が管理注文グリッドに表示され、遅延が発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)
       - [ACP2E-4870：商品アラートメールがストアビューのメール設定を無視する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)
       - [ACP2E-4799: GraphQL query requisition_listsがページネーションを使用して誤ったtotal_countを返す](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)
       - [ACP2E-4797：管理者のWYSIWYG エディターとページビルダーは、utf8mb4がサポートされている場合、4 バイトのUnicode文字をブロックします](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)

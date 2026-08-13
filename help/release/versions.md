@@ -4,7 +4,7 @@ description: Adobe Commerceの特定のバージョンがいつリリースさ�
 recommendations: noCatalog
 exl-id: 9b03900c-39ba-4757-ab7e-8bc832277192
 last-update: 2026-06-02T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+source-git-commit: 90f54aef167dd29ec6bdc0639cf3eb6c5d7244ce
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%
@@ -29,4 +29,4 @@ Adobeでは、バージョン 2.4.4および2.4.5のAdobe Commerceのお客様�
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
-<!-- Last updated from includes: 2026-06-02 11:13:39 -->
+<!-- Last updated from includes: 2026-08-12 14:19:05 -->

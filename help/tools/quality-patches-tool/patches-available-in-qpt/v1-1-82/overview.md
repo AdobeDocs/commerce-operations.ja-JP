@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: b5b0f88fa2b7c168ab51f457994e4ed0578794a2
+source-git-commit: 2864bda142df307248f5e29524eaf42441538f5b
 workflow-type: tm+mt
-source-wordcount: 488
+source-wordcount: 489
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ QPT v1.1.82には、次のパッチが含まれています。
 1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**：管理者ユーザーが管理者の&#x200B;**[!UICONTROL Add Products By SKU]**&#x200B;を使用して、共有カタログにリンクされていない顧客グループに割り当てられた会社の注文にデフォルトカタログから製品を追加できない問題を修正しました。
 1. **[ACP2E-4593](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)**: マルチサイト展開のセカンダリ web サイトで、web サイトの制限用に表示されるCMS ページが正しく表示されない問題を修正しました。
 1. **ACP2E-4695**: カタログ ルール インデクサーが過剰なメモリを消費し、完了に失敗して、不安定およびメモリ不足エラーが発生する問題を修正します。
-1. **ACP2E-4698**: ページビルダーのテキストコンテンツで画像を再度編集すると、ポータブルメディアディレクティブを保持する代わりに絶対メディア URLが保存される問題を修正しました。
+1. **[ACP2E-4698](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)**: ページビルダーのテキストコンテンツで画像を再度編集すると、ポータブルメディアディレクティブを保持する代わりに絶対メディア URLを保存できる問題を修正しました。
 1. **[ACP2E-4797](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)**: データベースがutf8mb4をサポートするように設定されている場合でも、管理者のWYSIWYG エディターまたはページビルダーコンテンツに4 バイトのUnicode文字を入力すると誤ってブロックされる問題を修正しました。
 1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**：報酬ポイントの有効期限が大きな報酬ポイント履歴を持つストアでゆっくりと実行され、報酬ポイントの有効期限が遅くなる問題を修正します。
 1. **[ACP2E-4799](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)**: `requisition_lists GraphQL` クエリが、クエリ条件に一致する要求リストの合計数ではなく、現在のページの項目数のみを反映する`total_count`値を返す問題を修正しました。
@@ -41,7 +41,7 @@ QPT v1.1.82には、次のパッチが含まれています。
 1. **ACP2E-4840**: `products` GraphQL クエリで要求された数量の値が&#x200B;*null*&#x200B;を返す問題を修正します。
 1. **[ACP2E-4870](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)**：商品アラートのメール通知がストアビューのメール設定を無視する問題を修正します。
 1. **[ACP2E-4875](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)**：管理者で大きなアドレス帳を持つ顧客アカウントを表示すると、管理者ユーザーが予期せずログアウトする問題を修正しました。
-1. **ACP2E-4894**: **[!UICONTROL Asynchronous Indexing]**&#x200B;が大容量ストアで有効になっている場合に、管理注文管理グリッドに新しい注文が表示されにくくなる問題を修正します。
+1. **[ACP2E-4894](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)**: **[!UICONTROL Asynchronous Indexing]**&#x200B;が大容量ストアで有効になっている場合に、管理注文管理グリッドに新しい注文が表示されにくくなる問題を修正します。
 1. **ACP2E-4981**: ページビルダー製品カルーセルで、管理者で設定された位置を反映しない順序で製品が表示され、一致する子製品が個別に表示される場合に設定可能な製品が含まれる問題を修正しました。
 
 左側のメニューを使用して、特定のパッチページに移動します。

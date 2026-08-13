@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2c9dd65bbfff402767450508d3760d0281cb3296
+source-git-commit: 81442a33c3dabcaa3b9eda56a2132bf7b7432ba2
 workflow-type: tm+mt
-source-wordcount: '2201'
+source-wordcount: '2109'
 ht-degree: 1%
 
 ---
@@ -627,36 +627,6 @@ ht-degree: 1%
         フィードバック、テクニカル
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aaa05baf7a213a2f949e2eadbf72bc13e1ed247a">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月12日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview">概要：品質パッチツール （QPT） v1.1.80</a>を追加しました。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6e585cb2150ca7dc2ae6ae883339ef9b894741f0">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p>階層化された一致モデル、重みとマーチャンダイジングルールとのインタラクション、招待状の手順など、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/beta#search-matching-and-ranking-private-beta">Beta リリース </a>に検索一致とランキング（Private Beta）プログラムを追加しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b364a26b6ad3e36652b8309dcb87268d522fa31c">コミット</a></td>
     </tr>
   </tbody>
 </table>
