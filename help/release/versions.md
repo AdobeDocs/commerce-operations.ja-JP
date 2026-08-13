@@ -24,8 +24,8 @@ Adobeでは、バージョン 2.4.4および2.4.5のAdobe Commerceのお客様�
 >[!NOTE]
 >
 >- Adobeでは、各リリースで利用可能な最新のセキュリティパッチにAdobe Commerceをインストールまたはアップグレードすることをお勧めします。
->- その他のセキュリティ更新プログラムについては、[Magento / Adobe Commerceのセキュリティ更新プログラム &#x200B;](https://helpx.adobe.com/security/products/magento.html)を参照してください。
->- 価格については、[Adobe Commerceの価格](https://business.adobe.com/products/magento/pricing.html)を参照してください。
+>- その他のセキュリティ更新プログラムについては、[Magento / Adobe Commerceのセキュリティ更新プログラム &#x200B;](https://helpx.adobe.com/jp/security/products/magento.html)を参照してください。
+>- 価格については、[Adobe Commerceの価格](https://business.adobe.com/jp/products/magento/pricing.html)を参照してください。
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
