@@ -3,7 +3,7 @@ title: ソフトウェアライフサイクルポリシー
 description: Adobe Commerce リリースのソフトウェアサポート終了の主な日付について説明します。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: e40305c77d2900a7741f1d97e022a28c04c0630c
+source-git-commit: bde0fd61b02eaf5a962cc9b79cf39a08199e83c8
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 1%
@@ -52,8 +52,8 @@ Adobeでは、できるだけ早くアップグレードすることをお勧め
 | Adobe Commerce 2.4.9 | 2026年5月12日（PT） | 2029年5月31日（PT） | TBD | 該当なし | TBD |
 | Adobe Commerce 2.4.8 | 2025年4月8日（PT） | 2028年5月31日（PT） | TBD | 該当なし | TBD |
 | Adobe Commerce 2.4.7 | 2024年4月9日（PT） | 2027年5月31日（PT） | 2028年5月31日（PT） | 該当なし | 2028年6月1日（PT） |
-| Adobe Commerce 2.4.6 | 2023年3月14日（PT） | 2026年8月11日（PT） | 2027年8月30日（PT） | 2028年5月31日（PT） | 2028年6月1日（PT） |
-| Adobe Commerce 2.4.5 | 2022年8月9日（PT） | 2025年8月12日（PT） | 2026年8月12日（PT） | 2027年5月31日（PT） | 2027年6月1日（PT） |
+| Adobe Commerce 2.4.6 | 2023年3月14日（PT） | 2026年8月11日（PT） | 2027年8月31日（PT） | 2028年5月31日（PT） | 2028年6月1日（PT） |
+| Adobe Commerce 2.4.5 | 2022年8月9日（PT） | 2025年8月12日（PT） | 2026年8月11日（PT） | 2027年5月31日（PT） | 2027年6月1日（PT） |
 | Adobe Commerce 2.4.4 | 2022年4月12日（PT） | 2025年4月12日（PT） | 2026年4月14日（PT） | 2027年5月31日（PT） | 2027年6月1日（PT） |
 
 {style="table-layout:auto"}
