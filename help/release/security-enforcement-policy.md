@@ -22,9 +22,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Cloud 2.4.4上のAdobe Commerce - 2.4.9のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Cloud バージョン 2.4.4 ～ 2.4.9のAdobe Commerceにのみ適用されます"
 nudge: true
-source-git-commit: c3ea400087a14aa1021ab6998b9de48c33787cc9
+source-git-commit: e2b86c349bdd085717f732532f68e3fae8455d13
 workflow-type: tm+mt
-source-wordcount: 2174
+source-wordcount: 2200
 ht-degree: 0%
 
 ---
@@ -87,10 +87,11 @@ Commerce管理者に次の手順を実行してもらいます。
 
 #### 手順1：サードパーティソフトウェアの依存関係のバージョンを確認する
 
-1. [Cloud Console](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/start/cloud-console)にログインすると、すべての環境を表示できます。
+1. [Cloud Console](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/start/cloud-console)にログインすると、すべてのCloud プロジェクトを表示できます。
 2. 関連するプロジェクトを開き、確認する環境を選択します。
-3. Adobe Commerce on Cloudでサポートされているサービス名とバージョンを定義する`.magento/services.yaml` ファイルで、その環境のサービス設定を確認します。
-4. 各環境が実行している依存関係のバージョンを、[Configure Services](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)の指示に従って確認します。
+3. 「Containers」タブを開くと、選択した環境で現在使用されているすべてのサービスのリストが表示されます。
+4. 各サービスリンクをクリックして、環境で現在実行中の正確なバージョンを確認します。
+詳しくは、[Configure Services](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)の手順を参照してください。
 
 サポートされていないソフトウェアの依存関係はすべて、以下の表2で共有されているタイムラインで概説されているバージョンにアップグレードする必要があります。
 
@@ -177,7 +178,7 @@ Adobeは、サポート対象バージョンのサードパーティソフトウ
 
 **Cloud バージョン 2.4.9でAdobe Commerceにアップグレードする場合：**
 
-* **アップグレード互換性レポート：** Adobeには、更新が必要なモジュールやファイル、重大な問題の数など、Adobe Commerce バージョン 2.4.9へのアップグレードに必要な内容を正確に特定するための詳細なレポートが用意されています。 [&#x200B; アップグレード互換性レポートを生成](https://supportinsights.adobe.com/commerce/tab/main)。
+* **アップグレード互換性レポート：** Adobeには、更新が必要なモジュールやファイル、重大な問題の数など、Adobe Commerce バージョン 2.4.9へのアップグレードに必要な内容を正確に特定するための詳細なレポートが用意されています。 アップグレード互換性レポートの生成方法について詳しくは、[&#x200B; サイト全体の分析ツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/site-wide-analysis-tool/access)のドキュメントを参照してください。
 
 * **ソフトウェア依存関係のアップグレード：** ソフトウェア依存関係を直接アップグレードできないので、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)をAdobeで開いて、アップグレードを処理してください。 詳しくは、[&#x200B; サービスの設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)を参照してください。
 
