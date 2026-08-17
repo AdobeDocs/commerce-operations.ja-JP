@@ -3,9 +3,10 @@ title: ソフトウェアライフサイクルポリシー
 description: Adobe Commerce リリースのソフトウェアサポート終了の主な日付について説明します。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: bde0fd61b02eaf5a962cc9b79cf39a08199e83c8
+last-update: 2026-08-13T00:00:00Z
+source-git-commit: dd6d284c1761248515bae5324a90e330b6aabf9b
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1350'
 ht-degree: 1%
 
 ---
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 # Adobe Commerce ライフサイクルポリシー
 
-Adobe Commerce ライフサイクルポリシーを合理化し、お客様のミッションクリティカルなニーズをサポートするために、Adobeでは、各バージョンの一般提供（GA）日から3年間の標準サポートウィンドウを提供し、この期間に品質修正をリリースします。 各リリースのソフトウェアサポート終了の日付と詳細については、[&#x200B; サポート終了日](#end-of-support-dates)の表を参照してください。
+Adobe Commerce ライフサイクルポリシーを合理化し、お客様のミッションクリティカルなニーズをサポートするために、Adobeでは、各バージョンの一般提供（GA）日から3年間の標準サポートウィンドウを提供し、この期間に品質修正をリリースします。 各リリースのソフトウェアサポート終了の日付と詳細については、[ サポート終了日](#end-of-support-dates)の表を参照してください。
 
 Adobeでは、Adobe Commerceのサポート期間が3年間または延長されている間にサポート終了に達する可能性があるサードパーティサービスおよびソフトウェアの依存関係（PHPやMySQLなど）に対するセキュリティおよび品質修正は提供されません。 テストおよびサポートされているサードパーティ製テクノロジーの完全な一覧については、[必要システム構成](../installation/system-requirements.md)を参照してください。
 
@@ -21,11 +22,11 @@ Adobeでは、Adobe Commerceのサポート期間が3年間または延長され
 
 一般提供（GA）日からの標準の3年間のサポート期間。 標準サポートには、品質修正、セキュリティパッチ、Adobe Commerceのオンコールサポートが含まれています。
 
-- **品質修正** – お客様は、[Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)またはセルフサービス [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)を通じて、品質修正にアクセスできます。
+- **品質修正** – お客様は、[Adobe Commerce サポート ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)またはセルフサービス [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)を通じて、品質修正にアクセスできます。
 
-- **セキュリティ修正** - Adobeは、3年間のサポート期間において、累積セキュリティパッチと非累積[個別セキュリティパッチファイル &#x200B;](versioning-policy.md#isolated-security-patch-file)を通じてセキュリティ修正を提供します。
+- **セキュリティ修正** - Adobeは、3年間のサポート期間において、累積セキュリティパッチと非累積[個別セキュリティパッチファイル ](versioning-policy.md#isolated-security-patch-file)を通じてセキュリティ修正を提供します。
 
-- **ホットフィックス** - ゼロデイ脆弱性などの重大なセキュリティ問題については、最新のパッチまたはセキュリティパッチリリースを使用していない場合でも、Adobeは、サポートされているバージョンのすべてのユーザーに[&#x200B; ホットフィックス &#x200B;](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-)を提供します。 ホットフィックスは包括的なものではなく、最新のリリースにアップグレードして解決されるすべてのセキュリティ問題を解決するものではありません。
+- **ホットフィックス** - ゼロデイ脆弱性などの重大なセキュリティ問題については、最新のパッチまたはセキュリティパッチリリースを使用していない場合でも、Adobeは、サポートされているバージョンのすべてのユーザーに[ ホットフィックス ](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-)を提供します。 ホットフィックスは包括的なものではなく、最新のリリースにアップグレードして解決されるすべてのセキュリティ問題を解決するものではありません。
 
 ## 拡張サポート
 
@@ -33,7 +34,7 @@ Adobeでは、できるだけ早くアップグレードすることをお勧め
 
 >[!NOTE]
 >
->Adobeでは、すべてのユーザーが安全でサポートされたプラットフォームを利用できるよう、Adobe Commerce on Cloudの強制的なバージョンアップポリシーを導入しています。 2027年6月1日（PT）以降、Adobeは、サポートされていないCommerce バージョンを実行しているCloud環境を管理しなくなり、Adobe Commerce プラットフォームとそのユーザーのセキュリティを保証するために適切な対応が必要になります。 **&#x200B;**&#x200B;これには、影響を受けるインフラストラクチャへのトラフィックの一時停止が含まれます。 その結果、コマースストアフロントがオフラインになります。 Cloudで実行する場合は、リリースラインの延長サポートの公開日[終了日](lifecycle-policy.md#end-of-support-dates)までに、サポートされているAdobe Commerce バージョンに移行するか、[!DNL Adobe Commerce as a Cloud Service]に移行する必要があります。 バージョン 2.4.4から2.4.9を使用している場合は、環境に適用される特定のアクションと期限について、[&#x200B; セキュリティとコンプライアンスに関する通知](security-enforcement-policy.md)を参照してください。
+>Adobeでは、すべてのユーザーが安全でサポートされたプラットフォームを利用できるよう、Adobe Commerce on Cloudの強制的なバージョンアップポリシーを導入しています。 2027年6月1日（PT）以降、Adobeは、サポートされていないCommerce バージョンを実行しているCloud環境を管理しなくなり、Adobe Commerce プラットフォームとそのユーザーのセキュリティを保証するために適切な対応が必要になります。 ****&#x200B;これには、影響を受けるインフラストラクチャへのトラフィックの一時停止が含まれます。 その結果、コマースストアフロントがオフラインになります。 Cloudで実行する場合は、リリースラインの延長サポートの公開日[終了日](lifecycle-policy.md#end-of-support-dates)までに、サポートされているAdobe Commerce バージョンに移行するか、[!DNL Adobe Commerce as a Cloud Service]に移行する必要があります。 バージョン 2.4.4から2.4.9を使用している場合は、環境に適用される特定のアクションと期限について、[ セキュリティとコンプライアンスに関する通知](security-enforcement-policy.md)を参照してください。
 
 ## セキュリティのみの移行期間
 
@@ -47,16 +48,7 @@ Adobeでは、できるだけ早くアップグレードすることをお勧め
 
 次の表に、Adobe Commerce on Cloud環境の新しいバージョンアップグレードの適用日を含む、各Adobe Commerce バージョンの完全なライフサイクルを示します。
 
-| リリース | 一般提供 | 標準サポートの終了 | 拡張サポートの終了 | セキュリティのみの期間の終了 | [&#x200B; バージョンアップグレードの実施日（クラウドのみ） &#x200B;](version-upgrade-enforcement-policy.md) |
-| --------- | ---------------------- | ------------------------ | ------------------------- |-----------------------------| ----------------------------------------------- |
-| Adobe Commerce 2.4.9 | 2026年5月12日（PT） | 2029年5月31日（PT） | TBD | 該当なし | TBD |
-| Adobe Commerce 2.4.8 | 2025年4月8日（PT） | 2028年5月31日（PT） | TBD | 該当なし | TBD |
-| Adobe Commerce 2.4.7 | 2024年4月9日（PT） | 2027年5月31日（PT） | 2028年5月31日（PT） | 該当なし | 2028年6月1日（PT） |
-| Adobe Commerce 2.4.6 | 2023年3月14日（PT） | 2026年8月11日（PT） | 2027年8月31日（PT） | 2028年5月31日（PT） | 2028年6月1日（PT） |
-| Adobe Commerce 2.4.5 | 2022年8月9日（PT） | 2025年8月12日（PT） | 2026年8月11日（PT） | 2027年5月31日（PT） | 2027年6月1日（PT） |
-| Adobe Commerce 2.4.4 | 2022年4月12日（PT） | 2025年4月12日（PT） | 2026年4月14日（PT） | 2027年5月31日（PT） | 2027年6月1日（PT） |
-
-{style="table-layout:auto"}
+{{$include /help/_includes/templated/release/end-of-support-dates.md}}
 
 ## サポートタイムライン
 
@@ -167,7 +159,7 @@ Adobeでは、できるだけ早くアップグレードすることをお勧め
 
 ## プラットフォームの依存関係
 
-サポート対象のCommerce リリースを維持するには、サポート対象のプラットフォームの依存関係も必要です。 Adobeでは、Adobe Commerceのサポート期間が3年または延長されている間にサポート終了に達する可能性のある、サードパーティサービスおよびソフトウェアの依存関係（MariaDB、OpenSearch、Redis、Valkey、RabbitMQなど）に対するセキュリティおよび品質修正は提供されません。 詳しくは、[共有責任セキュリティと運用モデル &#x200B;](../security-and-compliance/shared-responsibility.md)を参照してください。
+サポート対象のCommerce リリースを維持するには、サポート対象のプラットフォームの依存関係も必要です。 Adobeでは、Adobe Commerceのサポート期間が3年または延長されている間にサポート終了に達する可能性のある、サードパーティサービスおよびソフトウェアの依存関係（MariaDB、OpenSearch、Redis、Valkey、RabbitMQなど）に対するセキュリティおよび品質修正は提供されません。 詳しくは、[共有責任セキュリティと運用モデル ](../security-and-compliance/shared-responsibility.md)を参照してください。
 
 お客様は、積極的にサポートされているバージョンに対するすべてのサードパーティの依存関係とプラットフォームサービスを維持する責任があります。 テストおよびサポートされているサードパーティ製テクノロジーの完全な一覧については、[必要システム構成](../installation/system-requirements.md)を参照してください。
 
@@ -192,7 +184,7 @@ Adobeでは、できるだけ早くアップグレードすることをお勧め
 
 >[!IMPORTANT]
 >
->**PCI コンプライアンス通知：** PCI コンプライアンスは、販売者が評価する責任です。 Adobeでは、影響を受けるバージョンのマーチャントは、適格なセキュリティ担当者と相談し、サポート対象のCommerce バージョンとサポート対象のPHP バージョンへの移行を優先することを強くお勧めします。 PHP サポートのタイムラインについては、[PHP サポート対象バージョン &#x200B;](https://www.php.net/supported-versions.php)および[PHP提供終了](https://www.php.net/eol.php)を参照してください。
+>**PCI コンプライアンス通知：** PCI コンプライアンスは、販売者が評価する責任です。 Adobeでは、影響を受けるバージョンのマーチャントは、適格なセキュリティ担当者と相談し、サポート対象のCommerce バージョンとサポート対象のPHP バージョンへの移行を優先することを強くお勧めします。 PHP サポートのタイムラインについては、[PHP サポート対象バージョン ](https://www.php.net/supported-versions.php)および[PHP提供終了](https://www.php.net/eol.php)を参照してください。
 
 ## アップグレードと移行のオプション
 
@@ -207,7 +199,7 @@ Adobeでは、できるだけ早くアップグレードすることをお勧め
 - Adobeの最新機能である、AIを活用したマーチャンダイジング、コンポーザブルストアフロントアーキテクチャ、Adobe Experience Cloudとのネイティブ統合にアクセスできます。
 - 定期的なアップグレードサイクルを排除できます。
 
-移行の評価を開始するには、Adobe アカウントチームにお問い合わせください。 詳しくは、[Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/overview)を参照してください。
+移行の評価を開始するには、Adobe アカウントチームにお問い合わせください。 詳しくは、[Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)を参照してください。
 
 ### 代替パス：サポート対象のAdobe Commerce オンクラウド版またはオンプレミス リリースへのアップグレード
 
