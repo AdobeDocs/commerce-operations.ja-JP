@@ -2,9 +2,9 @@
 title: ' [!DNL Cloud Automation Patching Service (CAPS)]へのアクセス方法'
 description: ' [!DNL Cloud Automation Patching Service (CAPS)]へのアクセス方法と使用方法を説明します'
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '279'
 ht-degree: 1%
 
 ---
@@ -58,6 +58,7 @@ CAPS ツールは、[https://supportinsights.adobe.com/commerce/](https://suppor
 ## 関連トピック
 
 * [キャップの概要](intro.md)
-* [ワークフロー](workflow.md)
+* [ワークフローの概要](workflow.md)
+* [GitHubとの統合](github-integration.md)
 * [ベストプラクティス](best-practices.md)
 * [トラブルシューティング](troubleshooting.md)
