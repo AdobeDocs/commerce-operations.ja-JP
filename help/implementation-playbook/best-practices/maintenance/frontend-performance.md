@@ -1,41 +1,41 @@
 ---
 title: フロントエンドパフォーマンスの監査
-description: Web パフォーマンスツールを使用してAdobe Commerce ストアフロントの操作を監査することで、サイトのパフォーマンスに悪影響を与える問題を特定し、対処します。
+description: web パフォーマンスツールを使用して、Adobe Commerceストアフロントの業務を監査することで、サイトパフォーマンスに悪影響を与える問題を特定し、対処します。
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: bafae565-9d09-4cc0-8507-e89a11dbd915
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 1%
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
-# フロントエンドパフォーマンスのベストプラクティス
+# フロントエンドのパフォーマンスに関するベストプラクティス
 
-Web パフォーマンスツールを使用して、Adobe Commerce ストアのフロントエンドパフォーマンスを確認します。
-これらのツールでは、様々な指標を使用して強力なインサイトと推奨事項を提供し、オンラインストアのパフォーマンスを向上させます。
+web パフォーマンスツールを使用して、Adobe Commerceストアのフロントエンドのパフォーマンスを確認します。
+これらのツールでは、さまざまな指標を利用して、オンラインストアのパフォーマンスを向上させるための強力なインサイトとレコメンデーションを提供します。
 
 ## 影響を受ける製品とバージョン
 
-[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
 
-- クラウドインフラストラクチャー上のAdobe Commerce
+- Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
 
-## フロントエンドパフォーマンスの確認
+## フロントエンドのパフォーマンスを確認
 
-Web サイトストアのフロントエンドパフォーマンスを確認するには：
+web サイトストアのフロントエンドのパフォーマンスを確認するには：
 
-1. 次のような web パフォーマンスツールを使用して、フロントエンドのパフォーマンスを監査します。
+1. 次のようなweb パフォーマンスツールを使用して、フロントエンドのパフォーマンスを監査します。
 
-   - **[Google Lighthouse](https://web.dev/measure/)** - Lighthouse は、パフォーマンス、アクセシビリティ、プログレッシブ web アプリ、SEO などに関する監査を実施しています。 lighthouse を実行する様々な方法について詳しくは、[Lighthouse の概要 &#x200B;](https://developer.chrome.com/docs/lighthouse/overview)）を参照してください。
-   - **[Google PageSpeed Insights](https://pagespeed.web.dev/)** - PageSpeed Insights では、web ページのパフォーマンスが遅くなる原因に関する詳細なレポートとその修正方法に関する推奨事項をすばやく提供します。
+   - **[Google Lighthouse](https://web.dev/measure/)**:Lighthouseには、パフォーマンス、アクセシビリティ、プログレッシブ web アプリ、SEOなどの監査があります。 Lighthouseの様々な実行方法について詳しくは、[Lighthouseの概要](https://developer.chrome.com/docs/lighthouse/overview)を参照してください。）
+   - **[Google PageSpeed Insights](https://pagespeed.web.dev/)** - PageSpeed Insightsは、web ページのパフォーマンスが低下する原因に関する詳細なレポートと、その解決方法に関する推奨事項をすばやく提供します。
 
-1. 監査レポートを確認し、提示される推奨事項を実装して、ストアのパフォーマンスを向上させます。
+1. 監査レポートを確認し、提供された推奨事項を実施して、ストアのパフォーマンスを向上させます。
 
 ## 追加情報
 
-- [管理者ユーザー向けのインデックス管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [CLI を使用したインデックス管理 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=ja)
-- [&#x200B; 開発者向けのインデックス作成の概要 &#x200B;](https://developer.adobe.com/commerce/php/development/components/indexing/)
+- [管理者ユーザーのインデックス管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
+- [CLIを使用したインデックス管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=ja)
+- [開発者向けインデックス作成の概要](https://developer.adobe.com/commerce/php/development/components/indexing/)
