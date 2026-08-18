@@ -15,7 +15,7 @@ ht-degree: 0%
 
 技術者以外のユーザーが[!DNL Upgrade Compatibility Tool]を実行し、各ファイルの問題のリストを含む[&#x200B; レポート &#x200B;](../upgrade-compatibility-tool/reports.md)を取得する機能を提供するために、[!DNL Upgrade Compatibility Tool]が[!DNL Site-Wide Analysis Tool]と統合されました。
 
-詳しくは、[[!DNL Site-Wide Analysis Tool]  ユーザーガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access)を参照してください。
+詳しくは、[[!DNL Site-Wide Analysis Tool]  ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/site-wide-analysis-tool/access)を参照してください。
 
 ## [!DNL Site-Wide Analysis Tool]から[!DNL Upgrade Compatibility Tool]を実行
 

@@ -37,5 +37,5 @@ web サイトストアのフロントエンドのパフォーマンスを確認�
 ## 追加情報
 
 - [管理者ユーザーのインデックス管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [CLIを使用したインデックス管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+- [CLIを使用したインデックス管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=ja)
 - [開発者向けインデックス作成の概要](https://developer.adobe.com/commerce/php/development/components/indexing/)

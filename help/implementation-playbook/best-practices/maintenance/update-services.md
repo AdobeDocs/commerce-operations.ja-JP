@@ -23,9 +23,9 @@ Adobe Commerce on cloud infrastructure 2.4.x以降
 
 Adobe Commerceで使用するサービスとコンポーネントは、使用期限に達する前または使用期限に近づく前にアップグレードします。 これにより、PCI認定に対応し、セキュリティ脆弱性を低減できます。
 
-スタータープランをご利用のお客様は、サービスのアップグレードをセルフサービスで利用できます。 この方法について詳しくは、[&#x200B; サービスバージョンの変更](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version)を参照してください。
+スタータープランをご利用のお客様は、サービスのアップグレードをセルフサービスで利用できます。 この方法について詳しくは、[&#x200B; サービスバージョンの変更](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version)を参照してください。
 
-Pro プランをご利用のお客様は、[統合環境](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html)でのサービスのアップグレードでのみセルフサービスを利用できます。 実稼動環境でのサービスのアップグレードの場合、アップグレードをリクエストするには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信する必要があります。
+Pro プランをご利用のお客様は、[統合環境](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=ja)でのサービスのアップグレードでのみセルフサービスを利用できます。 実稼動環境でのサービスのアップグレードの場合、アップグレードをリクエストするには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)を送信する必要があります。
 
 >[!WARNING]
 >

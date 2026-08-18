@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ## 追加情報
 
-- [キャッシュのベストプラクティス](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
+- [キャッシュのベストプラクティス](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
 - [プライベートコンテンツ：プライベートコンテンツを無効にする](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [ハードウェアの推奨事項：キャッシュ](../../../performance/hardware.md#caches)
 - [アドバンスド設定：Redisの設定](../../../performance/advanced-setup.md#set-up-redis)

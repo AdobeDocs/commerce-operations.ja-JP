@@ -388,7 +388,7 @@ Adobeは、Managed Services システム上でのAdobe Commerceのプロビジ�
 
 Managed ServicesのAdobeセキュリティスタックは、あらゆるレベルのセキュリティを強化し、自動化と一貫性を確保してヒューマンエラーを低減します。 開発チームと運用チームは、スタックの様々なレベルからセキュリティ制御を自動的に継承します。
 
-Amazon Web ServicesやMicrosoft Azureなどのプラットフォームパートナーは、プラットフォームのカスタマイズを適用する際に最大限のセキュリティを確保します。一方、AdobeのManaged Servicesチームは、コンプライアンス、ロギング、認証、スキャン、モニタリングなどのコアセキュリティサービスや、サーバーセキュリティおよびセキュアアプリケーション設定を提供します。 詳しくは、[Adobe Commerce セキュリティ &#x200B;](https://business.adobe.com/products/magento/secure-ecommerce.html)を参照してください。
+Amazon Web ServicesやMicrosoft Azureなどのプラットフォームパートナーは、プラットフォームのカスタマイズを適用する際に最大限のセキュリティを確保します。一方、AdobeのManaged Servicesチームは、コンプライアンス、ロギング、認証、スキャン、モニタリングなどのコアセキュリティサービスや、サーバーセキュリティおよびセキュアアプリケーション設定を提供します。 詳しくは、[Adobe Commerce セキュリティ &#x200B;](https://business.adobe.com/jp/products/magento/secure-ecommerce.html)を参照してください。
 
 次の図は、Adobe Managed Servicesのセキュリティテクノロジースタックを示しています。
 
