@@ -95,7 +95,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->プロジェクトで外部GitHub リポジトリを使用している場合、[!DNL CAPS]は[[!DNL CAPS] GitHub アプリ ](github-integration.md)を使用して認証を自動的に処理します。 追加の資格情報は必要ありません。
+>プロジェクトで外部GitHub リポジトリを使用している場合、[!DNL CAPS]は[[!DNL CAPS] GitHub アプリ &#x200B;](github-integration.md)を使用して認証を自動的に処理します。 追加の資格情報は必要ありません。
 
 #### ステージ 2c：ターゲット環境にマージ・バック
 
