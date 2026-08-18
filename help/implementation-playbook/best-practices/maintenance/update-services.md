@@ -1,41 +1,41 @@
 ---
 title: 更新サービスのベストプラクティス
-description: クラウドインフラストラクチャテクノロジースタック上のAdobe Commerceを最新の状態に保つ方法について説明します。
+description: Adobe Commerce on クラウド基盤テクノロジースタックを最新の状態に保つ方法について説明します。
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
 source-git-commit: 5e3289b328b51eb50354efdc1571283791175b9a
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
 
 # 更新サービスのベストプラクティス
 
-この記事では、クラウドインフラストラクチャテクノロジースタック上のAdobe Commerceを常に最新の状態に保つための推奨事項と、役立つリソースへのリンクを示します。
+この記事では、Adobe Commerce on cloud infrastructure テクノロジースタックを最新の状態に保つための推奨事項と、役立つリソースへのリンクを提供します。
 
 ## 影響を受ける製品とバージョン
 
-クラウドインフラストラクチャー 2.4.x 以降でのAdobe Commerce
+Adobe Commerce on cloud infrastructure 2.4.x以降
 
-## サービスの更新
+## サービスを更新
 
-Adobe Commerceで使用されるサービスやコンポーネントが、提供終了日に達するか、提供終了日に近づく前にアップグレードする。 これにより、PCI コンプライアンスに対応でき、セキュリティの脆弱性を減らすことができます。
+Adobe Commerceで使用するサービスとコンポーネントは、使用期限に達する前または使用期限に近づく前にアップグレードします。 これにより、PCI認定に対応し、セキュリティ脆弱性を低減できます。
 
-スタータープランをご利用のお客様は、サービスのアップグレードをセルフサービスで行うことができます。 この方法について詳しくは、[&#x200B; サービスバージョンの変更 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version) を参照してください。
+スタータープランをご利用のお客様は、サービスのアップグレードをセルフサービスで利用できます。 この方法について詳しくは、[ サービスバージョンの変更](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version)を参照してください。
 
-Pro プランのお客様は、[&#x200B; 統合環境 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=ja) でのサービスのアップグレードに関してのみセルフサービスを利用できます。 実稼動環境でのサービスのアップグレードの場合は、アップグレードをリクエストする [&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket) 必要があります。
+Pro プランをご利用のお客様は、[統合環境](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html)でのサービスのアップグレードでのみセルフサービスを利用できます。 実稼動環境でのサービスのアップグレードの場合、アップグレードをリクエストするには、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)を送信する必要があります。
 
 >[!WARNING]
 >
->サービスのアップグレードは、Adobeのインフラストラクチャチームに 48 営業時間以内通知しない限り、実稼動環境にプッシュできません。 これは、実稼動環境のダウンタイムを最小限に抑え、希望する期間内に設定を更新するためにAdobeがインフラストラクチャサポートエンジニアを利用できるようにするために必要です。 Adobeでは、サービスのアップグレード中にサイトをメンテナンスモードにすることをお勧めします。
+>サービスのアップグレードを本番環境にプッシュするには、48営業時間前にAdobeのインフラストラクチャチームに通知する必要があります。 これは、Adobeがインフラストラクチャサポートエンジニアが、実稼動環境へのダウンタイムを最小限に抑えながら、必要な時間枠で設定を更新できることを確認するために必要です。 Adobeでは、サービスのアップグレード中にサイトをメンテナンスモードにすることをお勧めします。
 
-サービス バージョンと提供終了日の一覧は、[https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml) のファイルで確認できます。
+サービスのバージョンとサポート終了日のリストは、[https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml)のファイルで表示できます。
 
 >[!NOTE]
 >
->このファイルは、唯一の情報源と見なすことはできません。 これらのテクノロジーに関して不明な点がある場合は、ベンダーの公式 web サイトを参照してください。
+>このファイルを信頼できる唯一の情報源とみなすことはできません。 不明な点がある場合は、これらのテクノロジーの公式ベンダーのweb サイトを参照してください。
 
 ## 追加情報
 
