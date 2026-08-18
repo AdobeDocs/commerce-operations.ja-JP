@@ -17,7 +17,7 @@ Adobe Commerce Cloud プロジェクトがGitHub リポジトリに接続され�
 ## 前提条件
 
 * Adobe Commerce Cloudのアクティブなサブスクリプション
-* [GitHub統合](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github)は既にAdobe Commerce Cloud プロジェクト用に設定されており、[`fetch-branches` オプションが有効になっています](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)。 [!DNL CAPS]は一時的な統合環境ブランチを作成およびプッシュするので、このオプションが無効になっている場合、パッチ操作で環境を作成できません。
+* [GitHub統合](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github)は既にAdobe Commerce Cloud プロジェクト用に設定されており、[`fetch-branches` オプションが有効になっています](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)。 [!DNL CAPS]は一時的な統合環境ブランチを作成およびプッシュするので、このオプションが無効になっている場合、パッチ操作で環境を作成できません。
 * [!DNL github.com]でホストされているリポジトリ。 カスタムドメインで設定されたGitHub統合はサポートされていません。
 * GitHub組織またはリポジトリへの所有者または管理者アクセス
 
