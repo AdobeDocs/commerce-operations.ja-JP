@@ -31,7 +31,7 @@ ht-degree: 0%
 
   - _コマンドラインユーザー_&#x200B;は、cron ジョブとコマンドラインユーティリティを実行します。
 
-  両方のユーザーがファイルシステムに対して同じ権限を必要とするため、[共有グループ ](configure-permissions.md#set-ownership-and-permissions-for-two-users)を使用して[`umask`](#restrict-access-with-a-umask)を設定することをお勧めします。
+  両方のユーザーがファイルシステムに対して同じ権限を必要とするため、[共有グループ &#x200B;](configure-permissions.md#set-ownership-and-permissions-for-two-users)を使用して[`umask`](#restrict-access-with-a-umask)を設定することをお勧めします。
 
 ### umaskを使用したアクセス制限
 
@@ -59,10 +59,10 @@ Adobe Commerceのさまざまなアプリケーションモードを使用する
 - 開発者
 - 本番
 
-_設定ガイド_&#x200B;の「[ モードについて](../../../configuration/bootstrap/application-modes.md)」を参照してください。
+_設定ガイド_&#x200B;の「[&#x200B; モードについて](../../../configuration/bootstrap/application-modes.md)」を参照してください。
 
-さらに、_設定ガイド_&#x200B;の[ ファイルシステムアクセス権限](../../../configuration/deployment/file-system-permissions.md)の権限に関する推奨事項について説明します。
+さらに、_設定ガイド_&#x200B;の[&#x200B; ファイルシステムアクセス権限](../../../configuration/deployment/file-system-permissions.md)の権限に関する推奨事項について説明します。
 
 >[!TIP]
 >
->Adobe Commerceをインストールする前に、[ ファイルの所有権と権限の設定](configure-permissions.md)を確認してください。
+>Adobe Commerceをインストールする前に、[&#x200B; ファイルの所有権と権限の設定](configure-permissions.md)を確認してください。

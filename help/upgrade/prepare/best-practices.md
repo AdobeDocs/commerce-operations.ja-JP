@@ -57,11 +57,11 @@ Adobe Commerce インスタンスをアップグレードする労力のレベ�
 
 Adobe Commerceの機能を継続的に拡張するには、利用可能な最新リリースを開発し、プロジェクト計画にアップグレード戦略を定義することが重要です。 これにより、セキュリティを確保し、コンプライアンスを遵守し、最新の機能強化を把握できるため、セールスを迅速に拡大し、より効果的に運用をおこない、現在および将来にわたって競合他社の一歩先を行くことができます。
 
-アップグレードの計画と予算を支援するには、[ リリーススケジュール ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)を監視する必要があります。 チームのバックログ内のアップグレードタスクを事前に計画します。 GAでこの作業を完了することを目指します。
+アップグレードの計画と予算を支援するには、[&#x200B; リリーススケジュール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)を監視する必要があります。 チームのバックログ内のアップグレードタスクを事前に計画します。 GAでこの作業を完了することを目指します。
 
 - プレリリース版を使用して、新しい各リリースについて説明します。 プレリリースは、一般公開の2週間前にAdobe Commerce マーチャントおよびすべてのパートナーが利用できる一般公開コードです。 複数のストアがある場合は、ベースストアでプレリリースを使用し、カスタムモジュールとテーマが互換性があることを確認します。
 
-- Adobe Commerceの[ アップグレードプランのチェックリスト ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist)を確認して、アップグレードの計画を立ててください。
+- Adobe Commerceの[&#x200B; アップグレードプランのチェックリスト &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist)を確認して、アップグレードの計画を立ててください。
 
 - 年初にアップグレードの計画を立てる。 各アップグレードを完了するには、予算とリソースを予約する必要があります。 アップグレードの労力は、プロジェクトによって大きく異なる場合があることを忘れないでください。 経験と知識を活用して、できるだけ正確な計画を立てる必要があります。
 
@@ -73,7 +73,7 @@ Adobe Commerceの機能を継続的に拡張するには、利用可能な最新
 
 アップグレードのために行う作業を評価します。
 
-- [ リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)を確認して、新しいバージョンの範囲と影響を確認してください。
+- [&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)を確認して、新しいバージョンの範囲と影響を確認してください。
 
 - 新しいバージョンにアップグレードする前に、カスタムコードで修正する必要がある潜在的な問題を特定するには、[[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md)を使用します。
 
@@ -81,7 +81,7 @@ Adobe Commerceの機能を継続的に拡張するには、利用可能な最新
 
 ### アップグレード後のテスト
 
-テストは、最も時間を要するアップグレードのフェーズです。 そのため、プロセスは可能な限り自動化する必要があります。 主要なテストツールを活用することで、さまざまなメリットを得られます。 詳細については、[ アプリケーションテストガイド ](https://developer.adobe.com/commerce/testing/guide/)を参照してください。
+テストは、最も時間を要するアップグレードのフェーズです。 そのため、プロセスは可能な限り自動化する必要があります。 主要なテストツールを活用することで、さまざまなメリットを得られます。 詳細については、[&#x200B; アプリケーションテストガイド &#x200B;](https://developer.adobe.com/commerce/testing/guide/)を参照してください。
 
 実稼動環境に移行する前に、ステージング環境を使用してアップグレードをテストおよび検証します。
 

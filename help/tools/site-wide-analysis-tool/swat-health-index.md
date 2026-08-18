@@ -12,7 +12,7 @@ ht-degree: 0%
 
 SWAT ダッシュボードから&#x200B;**[!DNL Recommendations Report]**&#x200B;をダウンロードすると、PDFには&#x200B;**概要** セクションに&#x200B;**[!DNL Site Wide Analysis Tool Health Index]** スコアが含まれます。
 
-生成されたRecommendations レポートの![Site Wide Analysis Tool Health Index スコア ](/help/assets/tools/swat-health-index-scroe.png)
+生成されたRecommendations レポートの![Site Wide Analysis Tool Health Index スコア &#x200B;](/help/assets/tools/swat-health-index-scroe.png)
 
 SWAT Health Indexは、Adobe Commerceサイトの全体的な健全性を監視および向上させるのに役立ちます。 このスコアはガイダンスツールであり、絶対的な合否メジャーではありません。
 

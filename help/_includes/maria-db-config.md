@@ -14,7 +14,7 @@ MariaDB 10.4および10.6でのインデックス再作成は、以前のMariaDB
 
 MariaDB 10.6へのアップグレード後にインデックス作成に関連しないパフォーマンス低下が発生した場合は、[`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type)設定を有効にすることを検討してください。 例：`--query-cache-type=ON`。
 
-クラウドインフラストラクチャプロジェクト上のAdobe Commerceをアップグレードする前に、MariaDBをアップグレードする必要がある場合もあります（[MariaDB アップグレードのベストプラクティス ](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md)を参照）。
+クラウドインフラストラクチャプロジェクト上のAdobe Commerceをアップグレードする前に、MariaDBをアップグレードする必要がある場合もあります（[MariaDB アップグレードのベストプラクティス &#x200B;](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md)を参照）。
 
 例：
 
