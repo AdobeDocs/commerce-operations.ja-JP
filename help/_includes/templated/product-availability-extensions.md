@@ -1,5 +1,5 @@
 ---
-source-git-commit: 832481dbf2753af8bc7b86c92c54414c888b3332
+source-git-commit: cbf9e9c49aedb8265c15389c344bde8ea6071f4c
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 20%
@@ -24,7 +24,7 @@ ht-degree: 20%
   <tbody>
       <tr>
           <td>Adobe I/O Events for Adobe Commerce</td>
-          <td>1.22.0</td>
+          <td>1.22.1</td>
           <td>1.8+</td>
           <td>1.5+</td>
           <td>1.5+</td>
@@ -70,8 +70,8 @@ ht-degree: 20%
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>
-              <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/configure-commerce"> コンポーザー</a><br/>
-              <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/release-notes"> リリースノート </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-commerce"> コンポーザー</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes"> リリースノート </a><br/>
           </td>
       </tr>
       <tr>
@@ -84,7 +84,7 @@ ht-degree: 20%
           <td>1.0.0+</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-audiences.html"> マーケットプレイス </a><br/>
-              <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/audience-activation#release-notes"> リリースノート </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation#release-notes"> リリースノート </a><br/>
           </td>
       </tr>
       <tr>
@@ -96,8 +96,8 @@ ht-degree: 20%
           <td>1.3.4</td>
           <td>1.3.3</td>
           <td>
-              <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/install"> コンポーザー</a><br/>
-              <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/release-notes"> リリースノート </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install"> コンポーザー</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes"> リリースノート </a><br/>
           </td>
       </tr>
       <tr>
@@ -110,7 +110,7 @@ ht-degree: 20%
           <td>3.6.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html"> マーケットプレイス </a><br/>
-              <a href="https://experienceleague.adobe.com/ja/docs/commerce/data-connection/release-notes"> リリースノート </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes"> リリースノート </a><br/>
           </td>
       </tr>
   </tbody>
