@@ -5,11 +5,21 @@ feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
 badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
-product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 7ebadd26eee51aa2c2f3dfe8a8a2ed3dc20657b9
 workflow-type: tm+mt
 source-wordcount: 1725
@@ -32,8 +42,8 @@ Adobe Commerceでは、次の2つのL2 キャッシュ実装を使用できま�
 
 | 導入 | バージョン | 説明 |
 | -------------- | ------- | ----------- |
-| [ レガシー（`RemoteSynchronizedCache`） ](#legacy-l2-cache-configuration-remotesynchronizedcache) | &lt;2.4.9 | ローカルストレージ用の`Cm_Cache_Backend_File`を含むZend ベースの2 レベルキャッシュ |
-| [最新（`symfony_l2`） ](#modern-symfony-l2-cache-implementation) | 2.4.9+ | PSR-6準拠のSymfony Cache ベースのL2とパフォーマンスの向上。 Valkeyをサポートしています。 |
+| [&#x200B; レガシー（`RemoteSynchronizedCache`） &#x200B;](#legacy-l2-cache-configuration-remotesynchronizedcache) | &lt;2.4.9 | ローカルストレージ用の`Cm_Cache_Backend_File`を含むZend ベースの2 レベルキャッシュ |
+| [最新（`symfony_l2`） &#x200B;](#modern-symfony-l2-cache-implementation) | 2.4.9+ | PSR-6準拠のSymfony Cache ベースのL2とパフォーマンスの向上。 Valkeyをサポートしています。 |
 
 Symfony L2 キャッシュは、Adobe Commerce 2.4.9以降のリリースで推奨される実装です。 PSR-6に準拠した最新のキャッシュ実装を提供し、従来の`RemoteSynchronizedCache`よりも大幅にパフォーマンスが向上します。
 
@@ -94,7 +104,7 @@ Adobeでは、Redisへの負荷を大幅に軽減するため、[`cache preload`
 
 ## 古いキャッシュオプション
 
-Commerce 2.4以降、`use_stale_cache` オプションは、以前にキャッシュされたデータを処理し、新しいキャッシュデータを並行プロセスで生成することで、特定の場合のパフォーマンスを向上させることができます。 この節で説明する推奨されるキャッシュタイプとトレードオフは、従来の`RemoteSynchronizedCache`実装と`symfony_l2`実装の両方に適用されます。 `symfony_l2`の設定例については、[古いキャッシュを持つSymfony L2 キャッシュ ](#symfony-l2-cache-with-stale-cache)を参照してください。
+Commerce 2.4以降、`use_stale_cache` オプションは、以前にキャッシュされたデータを処理し、新しいキャッシュデータを並行プロセスで生成することで、特定の場合のパフォーマンスを向上させることができます。 この節で説明する推奨されるキャッシュタイプとトレードオフは、従来の`RemoteSynchronizedCache`実装と`symfony_l2`実装の両方に適用されます。 `symfony_l2`の設定例については、[古いキャッシュを持つSymfony L2 キャッシュ &#x200B;](#symfony-l2-cache-with-stale-cache)を参照してください。
 
 一般的に、ロック待ちのトレードオフは、パフォーマンスの観点から許容されます。 ただし、ブロック数やキャッシュエントリ数が増えると、ロック待ちに時間がかかります。 一部のシナリオでは、プロセスの待機時間は最大&#x200B;**キー数** x **検索タイムアウト**&#x200B;です。 まれに、マーチャントが`Block/Config` キャッシュに数百のキーを持つことがあるため、ロックの小さなルックアップタイムアウトでも数秒かかる場合があります。
 
@@ -114,7 +124,7 @@ Adobeでは、`use_stale_cache` オプションを有効にすることをお勧
 
 Adobeでは、`default` キャッシュタイプに`use_stale_cache` オプションを有効にすることはお勧めしません。
 
-次のコードは、従来の`RemoteSynchronizedCache` バックエンドの設定例を示しています。 `symfony_l2`の例については、[古いキャッシュを持つSymfony L2 キャッシュ ](#symfony-l2-cache-with-stale-cache)を参照してください。
+次のコードは、従来の`RemoteSynchronizedCache` バックエンドの設定例を示しています。 `symfony_l2`の例については、[古いキャッシュを持つSymfony L2 キャッシュ &#x200B;](#symfony-l2-cache-with-stale-cache)を参照してください。
 
 ```php
 'cache' => [
@@ -209,9 +219,9 @@ Commerce バージョン 2.4.9以降では、従来のL2 キャッシュの代�
 
 - **`preload_keys`は`symfony_l2`.**&#x200B;では推奨されません レガシー設定に`preload_keys`が含まれている場合は、移行の一部として削除します。 キーのプリロードは`symfony_l2`のパフォーマンスを向上させず、追加の不要なキー検索をトリガーすることでValkeyの負荷を増やす可能性があります。
 
-- **圧縮には明示的なフラグが必要です。** `compression_lib`のみを設定すると、`symfony_l2`の下で圧縮が有効になりません。 必要な`compress_data`設定については、[Symfony L2 キャッシュのバックエンドオプション ](#backend-options-for-symfony-l2-cache)を参照してください。
+- **圧縮には明示的なフラグが必要です。** `compression_lib`のみを設定すると、`symfony_l2`の下で圧縮が有効になりません。 必要な`compress_data`設定については、[Symfony L2 キャッシュのバックエンドオプション &#x200B;](#backend-options-for-symfony-l2-cache)を参照してください。
 
-- **オンプレミスのデプロイメントを手動で設定した場合、既定では古いキャッシュは有効になっていません。** `use_stale_cache`のデフォルトは`symfony_l2`の`false`です（[ バックエンドオプションの表](#backend-options-for-symfony-l2-cache)を参照）。 従来の設定で`stale_cache_enabled` フロントエンドを使用していた場合は、古いキャッシュを含む[Symfony L2 キャッシュのパターンを使用して明示的に再作成する必要があります](#symfony-l2-cache-with-stale-cache)。
+- **オンプレミスのデプロイメントを手動で設定した場合、既定では古いキャッシュは有効になっていません。** `use_stale_cache`のデフォルトは`symfony_l2`の`false`です（[&#x200B; バックエンドオプションの表](#backend-options-for-symfony-l2-cache)を参照）。 従来の設定で`stale_cache_enabled` フロントエンドを使用していた場合は、古いキャッシュを含む[Symfony L2 キャッシュのパターンを使用して明示的に再作成する必要があります](#symfony-l2-cache-with-stale-cache)。
 
 >[!NOTE]
 >
@@ -265,7 +275,7 @@ Commerce バージョン 2.4.9以降では、従来のL2 キャッシュの代�
 
 ### Symfony L2 キャッシュと古いキャッシュ
 
-どのキャッシュタイプが古いキャッシュから恩恵を受けるか、その理由については、[古いキャッシュオプション ](#stale-cache-options)を参照してください。
+どのキャッシュタイプが古いキャッシュから恩恵を受けるか、その理由については、[古いキャッシュオプション &#x200B;](#stale-cache-options)を参照してください。
 
 次の例を使用して、`symfony_l2`個の古いキャッシュ サポート用に個別のフロントエンドを設定します。
 
@@ -351,7 +361,7 @@ Commerce バージョン 2.4.9以降では、従来のL2 キャッシュの代�
 
 >[!NOTE]
 >
->これらの機能強化は、`symfony_l2`を使用したAdobe Commerce 2.4.9のデプロイメントに適用され、ACP2E-5132 パッチで利用できます。 Adobe Commerce オンプレミスの場合は、品質パッチツール（QPT）を使用してこのパッチを適用します。 Adobe Commerce on Cloudの場合、このパッチは[CommerceのCloud パッチ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)を介して自動的に配信されます。
+>これらの機能強化は、`symfony_l2`を使用したAdobe Commerce 2.4.9のデプロイメントに適用され、ACP2E-5132 パッチで利用できます。 Adobe Commerce オンプレミスの場合は、品質パッチツール（QPT）を使用してこのパッチを適用します。 Adobe Commerce on Cloudの場合、このパッチは[CommerceのCloud パッチ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)を介して自動的に配信されます。
 
 最新のアップデートにより、Symfony L2 キャッシュのスケーラビリティが向上し、不要なファイルシステム I/Oが減り、キャッシュの一貫性と信頼性が向上しました。
 
@@ -394,7 +404,7 @@ L1 サイズベースの立ち退きに使用されたしきい値`cleanup_perce
 
 >[!MORELIKETHIS]
 >
->- [ キャッシュの概要と設定オプション ](caching-overview.md)
->- [ キャッシュバックエンドオプションとストレージ参照](cache-options.md)
->- [ キャッシュフロントエンドとタイプの設定](cache-types.md)
->- [ デフォルトおよびページキャッシュ用にRedisを設定](redis-pg-cache.md)
+>- [&#x200B; キャッシュの概要と設定オプション &#x200B;](caching-overview.md)
+>- [&#x200B; キャッシュバックエンドオプションとストレージ参照](cache-options.md)
+>- [&#x200B; キャッシュフロントエンドとタイプの設定](cache-types.md)
+>- [&#x200B; デフォルトおよびページキャッシュ用にRedisを設定](redis-pg-cache.md)
