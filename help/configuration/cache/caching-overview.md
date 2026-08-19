@@ -56,7 +56,7 @@ Commerce アプリケーションキャッシュは、次のように構成さ�
 HTTP フルページキャッシングでは、HTTPまたはCDN レイヤーに完全な応答を保存します。 実稼動デプロイメントの場合：
 
 - **Adobe Commerce オンプレミス**:Adobeでは、フルページ キャッシュに[Varnish](config-varnish.md)をお勧めします。 Varnishは、web サーバーの前でリバースプロキシとして動作します。
-- **クラウド インフラストラクチャ上のAdobe Commerce**&#x200B;は、エッジおよびページ全体のキャッシュ レイヤーに[Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"}を使用します。 クラウドインフラストラクチャでは、個別に管理されたVarnish サービスは使用されません。
+- **クラウド インフラストラクチャ上のAdobe Commerce**&#x200B;は、エッジおよびページ全体のキャッシュ レイヤーに[Fastly](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"}を使用します。 クラウドインフラストラクチャでは、個別に管理されたVarnish サービスは使用されません。
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Commerceでは、デプロイメントバージョンをURLに追加すること
 | タスク | オンプレミス | クラウド基盤 |
 | --- | --- | --- |
 | アプリケーションキャッシュバックエンド | [&#x200B; キャッシュバックエンドオプションとストレージ参照](cache-options.md) | [ValkeyとRedis サービス設定のベストプラクティス &#x200B;](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) |
-| HTTP フルページキャッシュ | [Varnish](config-varnish.md)の設定 | [Fastly サービスの概要](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) |
+| HTTP フルページキャッシュ | [Varnish](config-varnish.md)の設定 | [Fastly サービスの概要](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/fastly) |
 
 次のタスクは、すべてのデプロイメントタイプに適用されます。
 

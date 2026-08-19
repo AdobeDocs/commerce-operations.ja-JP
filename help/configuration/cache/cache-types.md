@@ -39,7 +39,7 @@ Commerce キャッシュ アーキテクチャの概要については、[&#x200
 
 >[!NOTE]
 >
->クラウドインフラストラクチャ上のAdobe Commerceの場合は、クラウドガイドに記載されている[&#x200B; クラウドのデプロイメント設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml)を使用します。 `app/etc/env.php`を直接編集しないでください。 デプロイメントツールはこのファイルを生成し、手動での変更を上書きできます。
+>クラウドインフラストラクチャ上のAdobe Commerceの場合は、クラウドガイドに記載されている[&#x200B; クラウドのデプロイメント設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml)を使用します。 `app/etc/env.php`を直接編集しないでください。 デプロイメントツールはこのファイルを生成し、手動での変更を上書きできます。
 
 ## デフォルトのフロントエンドを使用する
 

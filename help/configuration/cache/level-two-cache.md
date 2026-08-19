@@ -3,7 +3,7 @@ title: パフォーマンス最適化のためのL2 キャッシュ設定
 description: Adobe CommerceでL2 キャッシュを設定して、ネットワークトラフィックを削減し、パフォーマンスを向上させる方法を説明します。 レガシーおよびSymfonyの実装オプションをご覧ください。
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -361,7 +361,7 @@ Commerce バージョン 2.4.9以降では、従来のL2 キャッシュの代�
 
 >[!NOTE]
 >
->これらの機能強化は、`symfony_l2`を使用したAdobe Commerce 2.4.9のデプロイメントに適用され、ACP2E-5132 パッチで利用できます。 Adobe Commerce オンプレミスの場合は、品質パッチツール（QPT）を使用してこのパッチを適用します。 Adobe Commerce on Cloudの場合、このパッチは[CommerceのCloud パッチ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)を介して自動的に配信されます。
+>これらの機能強化は、`symfony_l2`を使用したAdobe Commerce 2.4.9のデプロイメントに適用され、ACP2E-5132 パッチで利用できます。 Adobe Commerce オンプレミスの場合は、品質パッチツール（QPT）を使用してこのパッチを適用します。 Adobe Commerce on Cloudの場合、このパッチは[CommerceのCloud パッチ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)を介して自動的に配信されます。
 
 最新のアップデートにより、Symfony L2 キャッシュのスケーラビリティが向上し、不要なファイルシステム I/Oが減り、キャッシュの一貫性と信頼性が向上しました。
 

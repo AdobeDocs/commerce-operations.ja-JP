@@ -69,4 +69,4 @@ ht-degree: 14%
     - [チェックリストをアップグレード](best-practices/maintenance/upgrade-checklist.md)
     - [MariaDBのアップグレードの前提条件](best-practices/maintenance/mariadb-upgrade.md)
 - [用語集](glossary.md)
-- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)

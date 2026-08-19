@@ -3,7 +3,7 @@ title: キャッシュバックエンドオプションとストレージリフ�
 description: ファイルシステム、Redis、Valkey、データベースストレージなど、Adobe Commerceのキャッシュバックエンドオプションについて説明します。 レガシーかつモダンなアプローチをご紹介します。
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
 autotag-review: '2026-06-22T18:37:32.504Z'
 TQID: 'https://experienceleague.adobe.com/m7eUBNrt8UF43iJq9Tpl0Y1WcmR-dlt7Z4PoHvXVNnA'
 product_v2:
@@ -31,13 +31,13 @@ ht-degree: 0%
 >
 >このページでは、オンプレミス `app/etc/env.php`の設定について説明します。
 >
->[!DNL Adobe Commerce on Cloud] プロジェクトの場合、`ece-tools` パッケージは、`.magento.env.yaml`のデプロイ変数設定に基づいて、デプロイ時に結果の`app/etc/env.php`設定を生成します。 `env.php` ファイルは編集できません。  ValkeyおよびRedis サービス設定[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)および[変数のデプロイ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)に関する ベストプラクティスを参照してください。
+>[!DNL Adobe Commerce on Cloud] プロジェクトの場合、`ece-tools` パッケージは、`.magento.env.yaml`のデプロイ変数設定に基づいて、デプロイ時に結果の`app/etc/env.php`設定を生成します。 `env.php` ファイルは編集できません。  ValkeyおよびRedis サービス設定[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)および[変数のデプロイ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)に関する ベストプラクティスを参照してください。
 
 Commerce アプリケーションでは、低レベルのキャッシュフロントエンドとバックエンドを使用して、キャッシュストレージへのアクセスを提供します。 Commerceは、複数のキャッシングバックエンドと戦略をサポートしており、それぞれ異なるユースケースに適しています。 このページでは、使用可能なバックエンドとその違いについて説明します。
 
 >[!NOTE]
 >
->[Varnish](config-varnish-install.md)は、オンプレミスのデプロイメントのHTTP レベルでフルページ キャッシュを処理します。 [Fastly サービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)は、クラウドのデプロイメントに対して処理します。 どちらのソリューションも低レベルのキャッシュバックエンドを使用しません。
+>[Varnish](config-varnish-install.md)は、オンプレミスのデプロイメントのHTTP レベルでフルページ キャッシュを処理します。 [Fastly サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/fastly)は、クラウドのデプロイメントに対して処理します。 どちらのソリューションも低レベルのキャッシュバックエンドを使用しません。
 
 ## バックエンドキャッシュオプション
 
@@ -158,10 +158,10 @@ L2 （2 レベル）キャッシュでは、各web ノードのローカルキ�
 
 オンプレミス設定については、[L2 キャッシュ設定](level-two-cache.md)を参照してください。
 
-クラウドプロジェクトの場合、[&#x200B; デプロイ変数](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}で説明されているデプロイメント変数を使用してL2 キャッシュを設定します。
+クラウドプロジェクトの場合、[&#x200B; デプロイ変数](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}で説明されているデプロイメント変数を使用してL2 キャッシュを設定します。
 
 #### L2 キャッシュ設定
 
 - **[!DNL Adobe Commerce on-premises]**&#x200B;設定の詳細については、[L2 キャッシュ設定](level-two-cache.md)を参照してください。
 
-- **[!DNL Adobe Commerce on Cloud]**&#x200B;の場合、`app/etc/env.php`を直接編集するのではなく、適切なデプロイメント変数を使用してL2 キャッシュを設定します。 _Adobe Commerce on Cloud_ ドキュメントの[変数のデプロイ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}を参照してください。
+- **[!DNL Adobe Commerce on Cloud]**&#x200B;の場合、`app/etc/env.php`を直接編集するのではなく、適切なデプロイメント変数を使用してL2 キャッシュを設定します。 _Adobe Commerce on Cloud_ ドキュメントの[変数のデプロイ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}を参照してください。
