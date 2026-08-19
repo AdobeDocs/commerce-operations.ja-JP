@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 3bb6679e2a5e254ef066b47816e527123ca8dcb3
+source-git-commit: 2fce4e7794a3defe46c03b3795df3e62f96dbf73
 workflow-type: tm+mt
-source-wordcount: '10658'
+source-wordcount: '10661'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,8 @@ ht-degree: 0%
 - キャップ {#caps-tool}
   - {hide-from-toc}[はじめに](caps-tool/intro.md)
   - {hide-from-toc}[&#x200B; アクセス &#x200B;](caps-tool/access.md)
-  - {hide-from-toc}[&#x200B; ワークフロー](caps-tool/workflow.md)
+  - {hide-from-toc}[&#x200B; ワークフローの概要](caps-tool/workflow.md)
+  - {hide-from-toc}[GitHub統合](caps-tool/github-integration.md)
   - {hide-from-toc}[&#x200B; ベストプラクティス &#x200B;](caps-tool/best-practices.md)
   - {hide-from-toc}[&#x200B; トラブルシューティング &#x200B;](caps-tool/troubleshooting.md)
 - Adobe Commerceのアラートの管理 {#managed-alerts-for-adobe-commerce}

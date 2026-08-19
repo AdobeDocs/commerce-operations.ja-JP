@@ -1,27 +1,27 @@
 ---
-title: 'ワークフローの仕組み [!DNL Cloud Automation Patching Service (CAPS)] '
+title: '[!DNL Cloud Automation Patching Service (CAPS)] ワークフローの概要'
 description: 自動パッチ管理の用語、ワークフローフェーズ、操作など、 [!DNL Cloud Automation Patching Service (CAPS)]  ワークフロープロセスについて説明します。
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '854'
 ht-degree: 0%
 
 ---
 
-# [!DNL Cloud Automation Patching Service (CAPS)] ワークフローの仕組み
+# [!DNL Cloud Automation Patching Service (CAPS)] ワークフローの概要
 
 このトピックでは、[!DNL CAPS (Cloud Automation Patching Service)]を使用したパッチ操作の仕組みの概要を説明します。
 
 ## 用語
 
 * **操作** - [!DNL CAPS]によって実行された主なアクション：
-   * 適用
-   * 元に戻す
+  * 適用
+  * 元に戻す
 * **フェーズ** - ワークフローの3つのフェーズ：
-   * 事前チェック
-   * パッチ
-   * 検証
+  * 事前チェック
+  * パッチ
+  * 検証
 * **環境** - パッチが適用されるAdobe Commerce Cloud環境。
 
 ## 業務運営
@@ -53,10 +53,10 @@ ht-degree: 0%
 **何が起こるか：**
 
 * **実稼動環境のセーフガード** （実稼動環境のみ）:
-   * ストアがメンテナンスモードになっているかどうかを確認します
-   * cron ジョブが無効になっていることを確認します
-   * 条件が満たされない場合、パッチ適用をブロック
-   * 条件が満たされた場合、確認ダイアログを表示します
+  * ストアがメンテナンスモードになっているかどうかを確認します
+  * cron ジョブが無効になっていることを確認します
+  * 条件が満たされない場合、パッチ適用をブロック
+  * 条件が満たされた場合、確認ダイアログを表示します
 * **パッチ検証** - パッチファイルが有効で互換性があることを確認します
 * **環境評価** – 環境の準備状況とリソースを確認します
 * **競合の検出** – 既存のコードとの潜在的な競合を特定します
@@ -92,6 +92,10 @@ ht-degree: 0%
 **Git操作** – 変更がコミットされ、統合環境ブランチにプッシュされます
 
 **環境のアクティブ化** - パッチを適用したコードをデプロイするために統合環境がアクティブ化されます
+
+>[!NOTE]
+>
+>プロジェクトで外部GitHub リポジトリを使用している場合、[!DNL CAPS]は[[!DNL CAPS] GitHub アプリ &#x200B;](github-integration.md)を使用して認証を自動的に処理します。 追加の資格情報は必要ありません。
 
 #### ステージ 2c：ターゲット環境にマージ・バック
 
@@ -159,5 +163,6 @@ ht-degree: 0%
 
 * [キャップの概要](intro.md)
 * [アクセス方法](access.md)
+* [GitHubとの統合](github-integration.md)
 * [ベストプラクティス](best-practices.md)
 * [トラブルシューティング](troubleshooting.md)

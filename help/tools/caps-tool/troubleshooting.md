@@ -2,9 +2,9 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)] トラブルシューティングガイド'
 description: ' [!DNL Cloud Automation Patching Service (CAPS)]の一般的な問題とエラーメッセージのトラブルシューティング'
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '1137'
 ht-degree: 0%
 
 ---
@@ -156,6 +156,32 @@ ht-degree: 0%
 * 環境管理権限があることを確認します
 * デプロイメントの権限があることを確認します
 
+### GitHub統合エラー
+
+#### 「プロバイダーのGitで使用できるGit資格情報はありません。 このリポジトリ用のCAPS GitHub アプリのインストール&quot;
+
+**発生時：** GitHubに接続されたプロジェクトのパッチ運用中
+
+**原因：** [!DNL CAPS] GitHub アプリがリポジトリにインストールされていません
+
+**解決策：** [GitHub統合の設定 [!DNL CAPS]](github-integration.md)の手順に従います
+
+#### &quot;GitHub API リクエストに失敗しました&quot;
+
+**発生時：** GitHub接続プロジェクトのパッチ操作中
+
+**原因：**&#x200B;一時的な問題により、[!DNL CAPS]はGitHubに接続できませんでした
+
+**解決策：**&#x200B;数分待って、操作をやり直してください。 エラーが解決しない場合は、[Adobe Commerce Cloud サポート &#x200B;](https://experienceleague.adobe.com/home?lang=ja#support)にお問い合わせください
+
+#### 「タイムアウト内に環境が作成されない」（GitHub接続プロジェクト）
+
+**それが発生した場合：**&#x200B;統合環境の作成中
+
+**原因：** プロジェクトのGitHub統合で`fetch-branches` オプションが無効になっているため、一時ブランチ [!DNL CAPS] プッシュは同期されず、統合環境は作成されません。
+
+**解決策：**&#x200B;統合の[`fetch-branches` オプション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)を有効にしてから、操作を再試行してください。 「[GitHub統合を [!DNL CAPS]](github-integration.md)に設定する」を参照してください。
+
 ### リソースおよびクォータのエラー
 
 #### 「環境クォータを超えました」
@@ -221,5 +247,6 @@ ht-degree: 0%
 * [Adobe Commerce インストールガイド](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/overview)
 * [キャップの概要](intro.md)
 * [アクセス方法](access.md)
-* [ワークフロー](workflow.md)
+* [ワークフローの概要](workflow.md)
+* [GitHubとの統合](github-integration.md)
 * [ベストプラクティス](best-practices.md)
