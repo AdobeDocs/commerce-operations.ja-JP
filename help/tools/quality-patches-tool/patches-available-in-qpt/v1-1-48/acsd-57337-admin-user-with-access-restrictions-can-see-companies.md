@@ -1,69 +1,69 @@
 ---
-title: ACSD-57337：アクセス制限を持つ管理者ユーザーが、*会社* グリッドのすべての会社を表示できる
-description: ACSD-57337 パッチを適用すると、特定の web サイトへのアクセス制限を持つ管理者ユーザーが*会社* グリッドのすべての web サイトの会社を表示できるAdobe Commerceの問題を修正できます。
+title: 'ACSD-57337: アクセス制限を持つ管理者ユーザーは、*Companies* グリッド内のすべての会社を表示できます'
+description: 特定のweb サイトへのアクセス制限を持つ管理者ユーザーが*Companies*グリッドのすべてのweb サイトから会社を表示できるAdobe Commerceの問題を修正するには、ACSD-57337 パッチを適用します。
 feature: Companies, B2B, Configuration
 role: Admin, Developer
 exl-id: 7a05d335-5ed8-460e-80c4-dbc51d06c5bd
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
 
-# ACSD-57337：アクセス制限を持つ管理者ユーザーが、*会社* グリッド内のすべての会社を表示できる
+# ACSD-57337: アクセス制限を持つ管理者ユーザーが、*会社* グリッド内のすべての会社を表示する可能性があります
 
-ACSD-57337 パッチは、特定の web サイトへのアクセス制限を持つ管理者ユーザーが *会社* グリッド内のすべての web サイトの会社を表示できる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.48 がインストールされている場合に使用できます。 パッチ ID は ACSD-57337 です。 この問題はAdobe Commerce 2.5.0 で修正される予定であることに注意してください。
+ACSD-57337 パッチでは、特定のWeb サイトへのアクセス制限を持つ管理者ユーザーが、*会社* グリッドのすべてのWeb サイトの会社を表示できる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.48がインストールされている場合に利用できます。 パッチ IDはACSD-57337です。 この問題は、Adobe Commerce 2.5.0で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.5-p6
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-特定の web サイトへのアクセス制限を持つ管理者ユーザーは、*会社* グリッド内のすべての web サイトの会社を表示できます。
+特定のweb サイトへのアクセス制限を持つ管理者ユーザーは、*会社* グリッド内のすべてのweb サイトの会社を表示できます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 追加の web サイトを作成し、保存およびレビューします。
-1. 異なる web サイトに割り当てられている会社をいくつか作成します。
-1. 管理者ユーザーロールを作成し、作成した web サイトにロール範囲を設定します。
+1. 追加のweb サイト、ストア、ストアビューを作成する。
+1. 複数の企業を作成し、さまざまなweb サイトに割り当て。
+1. 管理者ユーザーの役割を作成し、作成したweb サイトに役割の範囲を設定します。
 1. 管理者を作成し、作成した役割に割り当てます。
 1. 新しい管理者でログインします。
-1. **[!UICONTROL Customers]**/**[!UICONTROL Companies]** を開き、会社のリストを確認します。
+1. **[!UICONTROL Customers]** > **[!UICONTROL Companies]**&#x200B;を開き、企業の一覧を確認します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-追加の web サイトに割り当てられている会社が *会社* グリッドに表示されます。
+追加のweb サイトに割り当てられた会社は、*会社*&#x200B;のグリッドに表示されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-すべての会社が *会社* グリッドに表示されます。
+すべての会社が&#x200B;*会社* グリッドに表示されます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

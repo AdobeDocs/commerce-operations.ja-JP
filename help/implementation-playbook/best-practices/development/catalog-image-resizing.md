@@ -4,9 +4,9 @@ description: Adobe Commerce サイトの本番環境のローンチ前に、パ�
 feature: Best Practices
 role: Developer
 exl-id: 591b1a62-bdba-4301-858a-77620ee657a9
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ xargs -0 -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url
 
 `-P`引数によってスレッドの数が決まります。
 
->[!TAB ワンライナーをバッシュ]
+>[!TAB  ワンライナー]をバッシュ
 
 `find/curl`の例の1行目。画像が存在するのと同じコンピューターから`curl`を実行できる場合に使用します。
 
@@ -116,5 +116,5 @@ find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type
 
 >[!NOTE]
 >
->- Adobe Commerceのクラウドインフラプロジェクトでは、Fastly サービスに商品イメージのサイズ変更をオフロードできます。 _クラウドガイド_&#x200B;の[深層画像最適化](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=ja#deep-image-optimization)を参照してください。
->- リモートストレージモジュールを使用する場合は、画像のサイズをnginxにオフロードすることもできます。 _設定ガイド_&#x200B;の「[&#x200B; リモートストレージ用の画像サイズ変更の設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=ja)」を参照してください。
+>- Adobe Commerceのクラウドインフラプロジェクトでは、Fastly サービスに商品イメージのサイズ変更をオフロードできます。 _クラウドガイド_&#x200B;の[深層画像最適化](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly-image-optimization#deep-image-optimization)を参照してください。
+>- リモートストレージモジュールを使用する場合は、画像のサイズをnginxにオフロードすることもできます。 _設定ガイド_&#x200B;の「[ リモートストレージ用の画像サイズ変更の設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html)」を参照してください。

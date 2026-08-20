@@ -4,9 +4,9 @@ description: Adobe Commerce プロジェクトの計画段階での実装のベ�
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 28ca422543728123edcaa41dedca6e3cc53536b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -46,11 +46,11 @@ ht-degree: 1%
     <td>Adobe Commerce サイトの最も一般的な5つの設定問題を修正して防止します。</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=ja">キャッシュ</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html">キャッシュ</a></td>
     <td>キャッシュ管理ツールを使用して、サイトのパフォーマンスを向上させます。</td>
   </tr>
   <tr>
-    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">ページ全体のキャッシュ</a></td>
+    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content">ページ全体のキャッシュ</a></td>
     <td>Adobe Commerce拡張機能にキャッシュを実装する際に、公開データを操作する方法について説明します。</td>
   </tr>
   <tr>
@@ -76,11 +76,11 @@ ht-degree: 1%
     <td colspan="2"><em>サービス設定</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja">Fastlyの設定</a></td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration">Fastlyの設定</a></td>
     <td>Adobe Commerce on cloud インフラプロジェクト用にFastly サービスを設定します。</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html?lang=ja">New Relicの通知チャネルの設定</a></td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic">New Relicの通知チャネルの設定</a></td>
     <td>New Relicダッシュボードにアクセスし、Adobe Commerce on cloud インフラプロジェクトのデータを分析します。</td>
   </tr>
   <tr>
@@ -98,7 +98,7 @@ ht-degree: 1%
 
 | ベストプラクティス | 説明 |
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [&#x200B; カテゴリ設定](catalog-management.md#category-limits) | 最適なパフォーマンスを得るために商品カテゴリを設定します。 |
+| [ カテゴリ設定](catalog-management.md#category-limits) | 最適なパフォーマンスを得るために商品カテゴリを設定します。 |
 | [製品設定&#x200B;](catalog-management.md#product-sku-limits) | 最適なパフォーマンスを実現するための製品SKUの設定。 |
 | [製品バリエーション設定](catalog-management.md#product-variations) | 最適なパフォーマンスを得るために製品バリエーションを設定します。 |
 | [製品オプション設定](catalog-management.md#product-options) | 最適なパフォーマンスを実現するための製品オプションを設定する。 |
@@ -115,7 +115,7 @@ ht-degree: 1%
 
 | ベストプラクティス | 説明 |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [&#x200B; パートナーのエスカレーション &#x200B;](partner-escalation.md) | Adobe アカウントチームでパートナーの問題をエスカレーションする準備をするか、エスカレーションを回避する方法について説明します。 |
+| [ パートナーのエスカレーション ](partner-escalation.md) | Adobe アカウントチームでパートナーの問題をエスカレーションする準備をするか、エスカレーションを回避する方法について説明します。 |
 | [支払いストレージ処理](payment-processing-storage.md) | 支払いの詳細を安全に処理して保存。 |
 
 ## セールス部門とマーケティング部門
@@ -123,4 +123,4 @@ ht-degree: 1%
 | ベストプラクティス | 説明 |
 |------------------------------------------------------------|--------------------------------------------------------------|
 | [製品カート制限](catalog-management.md#cart-limits) | 最適なパフォーマンスのためにカート制限を管理します。 |
-| [&#x200B; プロモーションの設定](catalog-management.md#promotions) | ショッピングカート内の商品の販売とプロモーションを設定します。 |
+| [ プロモーションの設定](catalog-management.md#promotions) | ショッピングカート内の商品の販売とプロモーションを設定します。 |

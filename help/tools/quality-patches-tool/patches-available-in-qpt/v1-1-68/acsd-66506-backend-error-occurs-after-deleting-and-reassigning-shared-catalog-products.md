@@ -1,70 +1,70 @@
 ---
-title: ACSD-66506：共有カタログ製品を削除して再割り当てした後に、バックエンドエラーが発生する
-description: ACSD-66506 パッチを適用して、バックエンドがエラーをスローするAdobe Commerceの問題を修正してください。 以前に割り当てた製品を削除し、新しい製品を共有カタログに割り当ててから、製品を確認して再試行してください*。
+title: ACSD-66506：共有カタログ製品の削除と再割り当て後にバックエンドエラーが発生する
+description: バックエンドがエラーをスローするAdobe Commerceの問題を修正するには、ACSD-66506 パッチを適用します。 製品を確認し、以前に割り当てられた製品を削除し、新しい製品を共有カタログに割り当てた後に、もう一度試してください*。
 feature: B2B
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8f77101832ccfb415d040c202f0fc7221f97419a
+exl-id: db08c58b-7e14-4bd8-af85-8f63aba9051b
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
 
+# ACSD-66506：共有カタログ製品の削除と再割り当て後にバックエンドエラーが発生する
 
-# ACSD-66506：共有カタログ製品を削除して再割り当てした後に、バックエンドエラーが発生する
-
-ACSD-66506 パッチは、バックエンドが *リクエストされた製品が存在しない。 以前に割り当てた製品を削除し* 新しい製品を共有カタログに割り当ててから、製品を確認して、もう一度試してください。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 がインストールされている場合に使用できます。 パッチ ID は ACSD-66506 です。 この問題はAdobe Commerce 2.4.9 で修正される予定であることに注意してください。
+ACSD-66506 パッチは、バックエンドがエラー&#x200B;*をスローする問題を修正します。要求された製品は存在しません。 製品を確認し、以前に割り当てられた製品を削除し、新しい製品を共有カタログに割り当てた後、もう一度試してください*。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68がインストールされている場合に利用できます。 パッチ IDはACSD-66506です。 この問題は、Adobe Commerce 2.4.9で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7-p3
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7-p3 - 2.4.8-p1
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-以前に割り当てた製品を削除し、新しい製品を **[!UICONTROL Shared Catalog]** に割り当てると、バックエンドが次のエラーを返します。*リクエストされた製品が存在しません。 製品を確認して、もう一度試してください*
+以前に割り当てられた製品を削除し、**[!UICONTROL Shared Catalog]**&#x200B;に新しい製品を割り当てると、バックエンドで次のエラーが返されます：*要求された製品が存在しません。 製品を確認して、もう一度試してください*
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. パフォーマンス・ツールキットを使用して製品を作成します。`bin/magento setup:perf:generate-fixtures setup/performance-toolkit/profiles/ce/small.xml`
-1. **[!UICONTROL [!DNL B2B] Features]** Configuration に移動し、**[!UICONTROL Enable Company]** を設定し、**[!UICONTROL Enable Shared Catalog]** を `Yes` に設定します。
+1. パフォーマンス ツールキットを使用して製品をいくつか作成します：`bin/magento setup:perf:generate-fixtures setup/performance-toolkit/profiles/ce/small.xml`
+1. **[!UICONTROL [!DNL B2B] Features]**&#x200B;設定に移動し、**[!UICONTROL Enable Company]**&#x200B;と&#x200B;**[!UICONTROL Enable Shared Catalog]**&#x200B;を`Yes`に設定します。
 1. 新しい共有カタログを作成します。
-1. 生成されたすべての製品を、新しく作成した共有カタログに割り当てます。
-1. 共有カタログに割り当てられた製品を削除するには、**[!UICONTROL Product Import]** を使用します。
-   1. SKU でフィルターされた製品のエクスポート。
-   1. **[!UICONTROL Import Behavior: Delete]** を選択してから、同じファイルを読み込みます。
-1. **[!UICONTROL Shared Catalog]** を開き、価格と構造を設定します。
-   1. 「**[!UICONTROL Set Pricing and Structure]**」を選択します。
-   1. 「**[!UICONTROL Next]**」をクリックし、「**[!UICONTROL Generate Catalog]**」をクリックします。
-   1. 「**[!UICONTROL Save]**」をクリックします。
+1. 生成されたすべての商品を、新しく作成した共有カタログに割り当てます。
+1. 共有カタログに割り当てられた製品を削除するには、**[!UICONTROL Product Import]**&#x200B;を使用します。
+   1. SKUでフィルタリングされた製品を書き出します。
+   1. **[!UICONTROL Import Behavior: Delete]**&#x200B;を選択してから、同じファイルを読み込みます。
+1. **[!UICONTROL Shared Catalog]**&#x200B;を開き、価格と構造を設定します。
+   1. **[!UICONTROL Set Pricing and Structure]**&#x200B;を選択します。
+   1. 「**[!UICONTROL Next]**」、「**[!UICONTROL Generate Catalog]**」の順にクリックします。
+   1. **[!UICONTROL Save]**&#x200B;をクリックします。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-エラーは発生せず、エラーが発生しても製品は共有カタログに残ります。
+エラーが発生しても、エラーは発生せず、製品は共有カタログに残ります。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-エラーが発生しました：*リクエストされた製品が存在しません。 製品を確認して再試行すると* すべての製品が共有カタログから削除されます。
+エラーが発生しました：*要求された製品が存在しません。 製品を確認して再試行してください*。すべての製品が共有カタログから削除されます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

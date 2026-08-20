@@ -1,73 +1,73 @@
 ---
-title: 'MDVA-40609: cataloginventory_stock_status テーブルに無効な製品データがあります'
-description: MDVA-40609 パッチを適用すると、無効な製品データが「cataloginventory_stock_status」インデックス テーブルに表示されず、誤った製品数が表示される問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.6 がインストールされている場合に利用できます。 パッチ ID は MDVA-40609。 この問題はAdobe Commerce 2.4.3 で修正されました。
+title: 'MDVA-40609: cataloginventory_stock_status テーブルに存在しない無効な製品データ'
+description: MDVA-40609 パッチは、無効な製品データが「cataloginventory_stock_status」インデックステーブルに表示されず、誤った製品数量が表示される問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.6がインストールされている場合に利用できます。 パッチ IDはMDVA-40609です。 この問題は、Adobe Commerce 2.4.3で修正されています。
 feature: Catalog Management, Inventory, Orders, Products
 role: Admin
 exl-id: e207ee55-b6ce-4065-bae1-2be89dcf5092
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
 
-# MDVA-40609: cataloginventory_stock_status テーブルに無効な製品データがあります
+# MDVA-40609: cataloginventory_stock_status テーブルに存在しない無効な製品データ
 
-MDVA-40609 パッチを使用すると、`cataloginventory_stock_status` インデックス テーブルに無効な製品データが表示されず、誤った製品数が表示される問題を解決できます。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.6 がインストールされている場合に使用できます。 パッチ ID は MDVA-40609。 この問題はAdobe Commerce 2.4.3 で修正されました。
+MDVA-40609 パッチは、無効な製品データが`cataloginventory_stock_status` インデックステーブルに表示されず、誤った製品数量が表示される問題を解決します。 このパッチは、[品質パッチツール （QPT） ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.6がインストールされている場合に使用できます。 パッチ IDはMDVA-40609です。 この問題は、Adobe Commerce 2.4.3で修正されています。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 ～ 2.4.2-p2
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 - 2.4.2-p2
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-無効になった製品データは `cataloginventory_stock_status` インデックステーブルに表示されず、誤った製品数量が表示されます。
+無効な製品データが`cataloginventory_stock_status` インデックステーブルに表示されないため、誤った製品数量が表示されます。
 
-<u> 前提条件 </u>:
+<u>前提条件</u>:
 
-在庫モジュールがインストールされています。
+インベントリモジュールがインストールされている。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. ストアとストアビューを含む 2 つの web サイトを設定します。
-1. 追加のソースと在庫を作成します。
-1. シンプルな製品を追加します。
-   * 「製品を有効にする」を *いいえ* に設定します。
-   * Sourceの項目ステータス =在庫および数量が 0 より大きい 2 つのソースを割り当てます。
-1. 商品を保存します。
-1. 「**製品の販売可能数量**」タブを確認します。
+1. ストアビューとストアビューを持つ2つのweb サイトを設定する。
+1. 新しいソースと在庫を作成します。
+1. シンプルな商品を追加する：
+   * 「製品を有効にする」を&#x200B;*No*&#x200B;に設定します。
+   * Source Item Status = InstockおよびQtyが0より大きい2つのソースを割り当てます。
+1. 製品を保存します。
+1. 「**製品販売可能数量**」タブを確認します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-両方の在庫が 0 より大きい値を入力しました。
+両方の株式が0より大きい値を入力しました。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-1 つの在庫の値がゼロです。
+1つの在庫の価値はゼロです。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-品質向上パッチツールの詳細については、次を参照してください。
+品質パッチツールについて詳しくは、以下を参照してください。
 
-* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [品質パッチツール ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPT で使用可能なその他のパッチについては、[QPT で使用可能なパッチ &#x200B;](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) の節を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、「QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-)で使用可能な[ パッチ」セクションを参照してください。

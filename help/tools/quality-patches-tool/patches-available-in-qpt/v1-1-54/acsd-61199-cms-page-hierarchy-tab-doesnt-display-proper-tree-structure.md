@@ -1,67 +1,67 @@
 ---
-title: ACSD-61199:「CMS」ページの「[!UICONTROL Hierarchy]」タブに適切なツリー構造が表示されない
-description: CMS ページを既存の*[!UICONTROL Hierarchy]*で編集する際に、CMS ページの*[!UICONTROL Hierarchy]* タブに適切なツリー構造が表示されないAdobe Commerceの問題を修正するため、ACSD-61199 パッチを適用してください。
+title: 'ACSD-61199: CMS ページ [!UICONTROL Hierarchy] タブに適切なツリー構造が表示されない'
+description: 既存の*[!UICONTROL Hierarchy]*でAdobe Commerce ページを編集する際に、CMS ページの*[!UICONTROL Hierarchy]* タブに適切なツリー構造が表示されないCMSの問題を修正するには、ACSD-61199 パッチを適用します。
 feature: Page Content
 role: Admin, Developer
 exl-id: f541d001-9680-431a-9a62-816c2d10b6d5
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
 
-# ACSD-61199:CMSページの「[!UICONTROL Hierarchy]」タブに適切なツリー構造が表示されない
+# ACSD-61199: CMS ページの[!UICONTROL Hierarchy] タブに適切なツリー構造が表示されない
 
-ACSD-61199 パッチでは、既存の *[!UICONTROL Hierarchy]* を使用してCMS ページを編集すると、CMS ページの「*[!UICONTROL Hierarchy]*」タブに適切なツリー構造が表示されない問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 がインストールされている場合に使用できます。 パッチ ID は ACSD-61199 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-61199 パッチは、既存の&#x200B;*[!UICONTROL Hierarchy]*&#x200B;でCMS ページを編集する際に、CMS ページの&#x200B;*[!UICONTROL Hierarchy]* タブに適切なツリー構造が表示されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54がインストールされている場合に利用できます。 パッチ IDはACSD-61199です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-既存の *[!UICONTROL Hierarchy]* を使用してCMSページを編集すると、CMSページの「*[!UICONTROL Hierarchy]*」タブに適切なツリー構造が表示されない。
+CMS ページの&#x200B;*[!UICONTROL Hierarchy]* タブは、既存の&#x200B;*[!UICONTROL Hierarchy]*&#x200B;でCMS ページを編集する際に、適切なツリー構造を表示しません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. **[!UICONTROL Admin]**/**[!UICONTROL Content]**/**[!UICONTROL Pages]** に移動します。
-1. 新しい **[!UICONTROL CMS page]** を作成します。 これは *[!UICONTROL Hierarchy]* の web サイトのルートに追加されます。
-1. ページを保存します
-1. **[!UICONTROL Admin]**/**[!UICONTROL Content]**/**[!UICONTROL Hierarchy]** に移動します。
-1. その他の既存のページを *[!UICONTROL Hierarchy]* に追加します。
-1. *[!UICONTROL Hierarchy]* を保存します。
-1. **[!UICONTROL Admin]**/**[!UICONTROL Content]**/**[!UICONTROL Pages]** に移動します。
-1. 既存のページを編集し、*[!UICONTROL Hierarchy]* ージを開きます。
+1. **[!UICONTROL Admin]** > **[!UICONTROL Content]** > **[!UICONTROL Pages]**&#x200B;に移動します。
+1. 新しい&#x200B;**[!UICONTROL CMS page]**&#x200B;を作成します。 *[!UICONTROL Hierarchy]*&#x200B;のweb サイトのルートに追加されます。
+1. ページを保存します。
+1. **[!UICONTROL Admin]** > **[!UICONTROL Content]** > **[!UICONTROL Hierarchy]**&#x200B;に移動します。
+1. 他の既存のページを&#x200B;*[!UICONTROL Hierarchy]*&#x200B;に追加します。
+1. *[!UICONTROL Hierarchy]*&#x200B;を保存します。
+1. **[!UICONTROL Admin]** > **[!UICONTROL Content]** > **[!UICONTROL Pages]**&#x200B;に移動します。
+1. 既存のページのいずれかを編集し、*[!UICONTROL Hierarchy]*&#x200B;を開きます。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-*[!UICONTROL Hierarchy]* は、期待どおりに読み込まれます。
+*[!UICONTROL Hierarchy]*&#x200B;は期待どおりに読み込まれます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-*[!UICONTROL Hierarchy]* は「」タブに読み込まれません。
+*[!UICONTROL Hierarchy]*&#x200B;がタブに読み込まれていません。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-[[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+[[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

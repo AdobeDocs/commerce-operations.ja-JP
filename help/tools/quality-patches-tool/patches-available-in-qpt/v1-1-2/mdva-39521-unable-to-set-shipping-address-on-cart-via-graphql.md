@@ -1,44 +1,44 @@
 ---
-title: MDVA-39521:GraphQL経由で買い物かごに配送先住所を設定できない
-description: MDVA-39521 パッチを使用すると、GraphQLを介して電話番号が空の買い物かごに配送先住所を設定できない問題を解決できます。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.2 がインストールされている場合に利用できます。 パッチ ID は MDVA-39521。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+title: 'MDVA-39521: GraphQLを介してカートに配送先住所を設定できない'
+description: MDVA-39521 パッチは、GraphQLを介して、空の電話番号を持つカートに配送先住所を設定できない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.2がインストールされている場合に利用できます。 パッチ IDはMDVA-39521です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 feature: GraphQL, Orders, Shipping/Delivery, Shopping Cart
 role: Admin
 exl-id: aac44c20-b244-472b-bab0-7d6e7d99608a
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
 
-# MDVA-39521:GraphQL経由で買い物かごに配送先住所を設定できない
+# MDVA-39521: GraphQLを介してカートに配送先住所を設定できない
 
-MDVA-39521 パッチを使用すると、GraphQLを介して電話番号が空の買い物かごに配送先住所を設定できない問題を解決できます。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.2 がインストールされている場合に使用できます。 パッチ ID は MDVA-39521。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+MDVA-39521 パッチは、GraphQLを介して、空の電話番号を持つカートに配送先住所を設定できない問題を解決します。 このパッチは、[品質パッチツール （QPT） ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.2がインストールされている場合に使用できます。 パッチ IDはMDVA-39521です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.2-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.0 ～ 2.4.3
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.0 - 2.4.3
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-「電話番号を表示」がオプションとして設定されているにもかかわらず、GraphQLを使用して、空の電話番号を持つ買い物かごに配送先住所を設定できない。
+「Show Telephone」がオプションに設定されているにもかかわらず、GraphQLを介して空の電話番号を持つカートに配送先住所を設定することはできません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. シンプルな製品を作成します。
-1. **ストア**/**設定**/**カスタマー**/**カスタマー設定**/**名前と住所のオプション** に移動し、「電話を表示」をオプションとして設定します。
-1. GraphQL リクエスト経由で空の買い物かごを作成します。
+1. シンプルな商品の作成。
+1. **Stores** > **Configuration** > **Customers** > **Customer Configuration** > **名前と住所のオプション**&#x200B;に移動し、「電話を表示」をオプションとして設定します。
+1. GraphQL リクエストを介して空のカートを作成します。
 
    ```GraphQL
    mutation {
@@ -46,7 +46,7 @@ MDVA-39521 パッチを使用すると、GraphQLを介して電話番号が空�
    }
    ```
 
-1. 商品を買い物かごに追加します。
+1. 商品をカートに追加。
 
    ```GraphQL
    mutation {
@@ -110,7 +110,7 @@ MDVA-39521 パッチを使用すると、GraphQLを介して電話番号が空�
    }
    ```
 
-   結果：
+   施策：
 
    ```GraphQL
      {
@@ -140,7 +140,7 @@ MDVA-39521 パッチを使用すると、GraphQLを介して電話番号が空�
      }
    ```
 
-1. 電話番号が空のアドレスを追加します。
+1. 空の電話番号を持つアドレスを追加します。
 
    ```GraphQL
    mutation ($cartId: String!) {
@@ -167,7 +167,7 @@ MDVA-39521 パッチを使用すると、GraphQLを介して電話番号が空�
    }
    ```
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
 ```GraphQL
  {
@@ -197,7 +197,7 @@ MDVA-39521 パッチを使用すると、GraphQLを介して電話番号が空�
  }
 ```
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
 ```GraphQL
 {
@@ -211,18 +211,18 @@ MDVA-39521 パッチを使用すると、GraphQLを介して電話番号が空�
 }
 ```
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメントタイプに応じて次のリンクを使用します。
+個別のパッチを適用するには、デプロイメントタイプに応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-品質向上パッチツールの詳細については、次を参照してください。
+品質パッチツールについて詳しくは、以下を参照してください。
 
-* [&#x200B; 品質パッチツールがリリースされました：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)。
+* [品質パッチツールがリリースされました：品質パッチをセルフサービスで提供するための新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [品質パッチツール ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを確認します。
 
-QPT で使用可能なその他のパッチについては、[QPT で使用可能なパッチ &#x200B;](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) の節を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、「QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-)で使用可能な[ パッチ」セクションを参照してください。

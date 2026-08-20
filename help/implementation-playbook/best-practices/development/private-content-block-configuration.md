@@ -4,7 +4,7 @@ description: ストアフロントのパフォーマンスを最適化するた�
 role: Developer
 feature: Best Practices
 exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 プライベートコンテンツブロックに`_isScopePrivate`変数が含まれている場合、ブロックはキャッシュできません。 プライベートブロックはキャッシュされないため、Adobe Commerceは各カスタマーリクエストに対して同じデータを取得する必要があり、サーバーの負荷が増加します。
 
-プライベートコンテンツに`_isScopePrivate`変数を使用する代わりに、ブロックとテンプレートを作成して、ユーザーに依存しないデータを表示します。 このデータは、Adobe Commerce UI コンポーネントによってユーザー固有のデータに置き換えられ、事前レンダリングのデータをより効率的に処理します。 手順については、_[!DNL Commerce PHP Extensions Guide]_&#x200B;の[&#x200B; プライベートコンテンツ &#x200B;](https://developer.adobe.com/commerce/php/development/cache/page/private-content/)を参照してください。
+プライベートコンテンツに`_isScopePrivate`変数を使用する代わりに、ブロックとテンプレートを作成して、ユーザーに依存しないデータを表示します。 このデータは、Adobe Commerce UI コンポーネントによってユーザー固有のデータに置き換えられ、事前レンダリングのデータをより効率的に処理します。 手順については、_[!DNL Commerce PHP Extensions Guide]_の[ プライベートコンテンツ ](https://developer.adobe.com/commerce/php/development/cache/page/private-content)を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
+[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
@@ -31,4 +31,4 @@ ht-degree: 0%
 ## 追加情報
 
 - [プライベートコンテンツ](../../../performance/configuration.md#client-side-optimization-settings)
-- _[!DNL Commerce PHP Extensions Guide]_&#x200B;の[&#x200B; キャッシュ可能ブロックとプライベートブロック &#x200B;](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#cacheable-and-private-blocks)
+- _[!DNL Commerce PHP Extensions Guide]_の[ キャッシュ可能ブロックとプライベートブロック ](https://developer.adobe.com/commerce/php/development/cache/page/private-content#cacheable-and-private-blocks)

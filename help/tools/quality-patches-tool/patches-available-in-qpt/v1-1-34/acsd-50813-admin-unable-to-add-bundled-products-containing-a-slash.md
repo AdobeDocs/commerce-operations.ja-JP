@@ -1,74 +1,74 @@
 ---
-title: ACSD-50813：管理者が、スラッシュを含むバンドルされた製品を追加できない
-description: ACSD-50813 パッチを適用すると、管理者が、スラッシュ （「/」）を含むバンドル製品を SKU に追加できず、*SKU による製品の追加*機能を管理者の指示に追加できない、Adobe Commerceのパフォーマンスの問題が修正されます。
+title: ACSD-50813：管理者がスラッシュを含むバンドル製品を追加できない
+description: 管理者がSKUにスラッシュマーク（'/'）を含むバンドル商品を管理者注文に*Add Products by SKU*機能でSKUに追加できないAdobe Commerceのパフォーマンス問題を修正するには、ACSD-50813 パッチを適用します。
 exl-id: ff6fa673-bac1-4ef8-a427-60c2f56068f3
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
 
-# ACSD-50813：管理者が、スラッシュを含むバンドルされた製品を追加できない
+# ACSD-50813：管理者がスラッシュを含むバンドル製品を追加できない
 
-ACSD-50813 パッチにより、管理者が、`/` 機能を備えた SKU にスラッシュ記号（*[!UICONTROL Add Products by SKU]*）を含むバンドル製品を管理注文に追加できない問題が修正されました。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.34 がインストールされている場合に使用できます。 パッチ ID は ACSD-50813 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-50813 パッチは、管理者が管理者注文に&#x200B;*[!UICONTROL Add Products by SKU]*&#x200B;機能を持つSKUにスラッシュマーク（`/`）を含むバンドル製品を管理者が追加できない問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.34がインストールされている場合に利用できます。 パッチ IDはACSD-50813です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.5 ～ 2.4.6-p1
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.5 - 2.4.6-p1
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-管理者は、`/` 機能を持つ SKU にスラッシュ（*[!UICONTROL Add Products by SKU]*）が含まれているバンドル製品を管理注文に追加することはできません。
+管理者は、管理者注文に&#x200B;*[!UICONTROL Add Products by SKU]*&#x200B;機能を持つSKUにスラッシュマーク （`/`）を含むバンドル製品を追加できません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. **[!UICONTROL Catalog]**/**[!UICONTROL Products]** に移動します。
-1. シンプルな製品を作成します。
+1. **[!UICONTROL Catalog]** > **[!UICONTROL Products]**&#x200B;に移動します。
+1. シンプルな商品の作成。
 1. 新しいバンドル製品を作成します。
-1. SKU の中央にスラッシュ（`/`）を追加します（例：*Bu/ndle*）。
-1. **[!UICONTROL Input Type]** = *[!UICONTROL Dropdown]* のバンドルオプションを追加します。
-1. オプションに少なくとも 1 つのシンプルな製品を割り当てます。
-1. **[!UICONTROL Sales]**/**[!UICONTROL Orders]** に移動し、新しい注文を作成します。
-1. 「**[!UICONTROL Add Products by SKU]**」をクリックします。
-1. SKU を入力し、「**[!UICONTROL Add to Order]**」をクリックします。
+1. SKUの中央にスラッシュマーク（`/`）を追加します（例：*Bu/ndle*）。
+1. **[!UICONTROL Input Type]** = *[!UICONTROL Dropdown]*&#x200B;のバンドルオプションを追加します。
+1. オプションに少なくとも1つのシンプルな製品を割り当てます。
+1. **[!UICONTROL Sales]** > **[!UICONTROL Orders]**&#x200B;に移動し、新しい注文を作成します。
+1. **[!UICONTROL Add Products by SKU]**&#x200B;をクリックします。
+1. SKUを入力し、**[!UICONTROL Add to Order]**&#x200B;をクリックします。
 1. ブラウザーコンソールを開きます。
-1. 「**[!UICONTROL Configure]**」をクリックします。
+1. **[!UICONTROL Configure]**&#x200B;をクリックします。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
 エラーはありません。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-コンソールの JS エラー：
+コンソールのJS エラー：
 
-*見つからないエラー：構文エラー、認識されない式：div[id=sku_bu/ndle]*
+*エラー：構文エラー、認識できない式：div[id=sku_bu/ndle]*
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

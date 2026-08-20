@@ -1,73 +1,73 @@
 ---
-title: ACSD-49877：ビデオの自動再生がモバイルで機能しない  [!DNL Safari]
-description: ビデオがリモートビデオファイルに直接リンクされている場合に、ビデオの自動再生オプションがモバイルで機能しないAdobe Commerceの問題を修正するため  [!DNL Safari] ACSD-49877 パッチを適用してください。
+title: 'ACSD-49877: モバイルでビデオ自動再生が機能しない [!DNL Safari]'
+description: 'ビデオがリモート ビデオ ファイルに直接リンクされている場合に、モバイルでビデオ自動再生オプションが機能しないAdobe Commerceの問題を修正するには、ACSD-49877 パッチを適用します。 [!DNL Safari] '
 feature: CMS
 role: Admin
 exl-id: aa2557e2-4bed-4004-b9bc-36c59f1e9cdc
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
 
-# ACSD-49877：ビデオの自動再生がモバイル [!DNL Safari] で機能しない
+# ACSD-49877: モバイル [!DNL Safari]でビデオ自動再生が機能しない
 
-ACSD-49877 は、ビデオがリモートビデオファイルに直接リンクされている場合に、モバイル [!DNL Safari] の自動再生オプションが機能しない問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.30 がインストールされている場合に使用できます。 パッチ ID は ACSD-49877 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-49877は、ビデオがリモート ビデオ ファイルに直接リンクされている場合に、モバイル [!DNL Safari]の自動再生オプションが機能しない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.30がインストールされている場合に利用できます。 パッチ IDはACSD-49877です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 ～ 2.4.6
+* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 - 2.4.6
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、[ !magento/quality-patches] パッケージを最新のバージョンに更新し、[[!DNL Quality Patches Tool]：パッチを検索 ] ページで互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、[!magento/quality-patches] パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: パッチを検索]で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-ビデオがストリーミングサービスではなくリモートビデオファイルに直接リンクされている場合、ビデオの自動再生がモバイル [!DNL Safari] で機能しません。
+ビデオがストリーミングサービスではなくリモートのビデオファイルに直接リンクされている場合、モバイル [!DNL Safari]でビデオ自動再生が機能しません。
 
-<u> 前提条件 </u>:
-[!DNL Page Builder] 個のモジュールがインストールされています。
+<u>前提条件</u>:
+[!DNL Page Builder]個のモジュールがインストールされています。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 新しいCMSページを作成し、**[!UICONTROL Content Value]** で [!DNL Page Builder] を編集します。
-1. *Tab* 要素をコンテンツに追加し、*Tab* 内に *ビデオ要素* を追加します。
-1. 次に、歯車ボタンをクリックして *ビデオ要素* を編集します。
-1. [!UICONTROL Video URL] フィールドに mp4 ビデオファイルへのリンクを追加します。
-1. 「**[!UICONTROL Autoplay]**」フィールドを *はい* としてマークします。
-1. 「**[!UICONTROL Save]**」をクリックします。
-1. iPhoneを使用して、[!DNL Safari] で最近作成したページを開きます。
+1. 新しいCMS ページを作成し、**[!UICONTROL Content Value]**&#x200B;を[!DNL Page Builder]で編集します。
+1. コンテンツに&#x200B;*Tab*&#x200B;要素を追加し、*Tab*&#x200B;内に&#x200B;*Video Element*&#x200B;を追加します。
+1. 次に、歯車ボタンをクリックして、*ビデオ要素*&#x200B;を編集します。
+1. MP4 ビデオファイルへのリンクを[!UICONTROL Video URL] フィールドに追加します。
+1. **[!UICONTROL Autoplay]** フィールドに「*はい*」のマークを付けます。
+1. **[!UICONTROL Save]**&#x200B;をクリックします。
+1. IPhoneを使用して、[!DNL Safari]で最近作成したページを開きます。
 
-<u> 期待される結果 </u>
+<u>期待される結果</u>
 
-自動再生オプションは、iPhoneを使用する [!DNL Safari] で機能します。
+自動再生オプションは、iPhoneを使用して[!DNL Safari]で機能します。
 
-<u> 実績 </u>
+<u>実際の結果</u>
 
-iPhoneを使用している [!DNL Safari] ーザーでは、自動再生オプションは機能しません。
+IPhoneを使用している[!DNL Safari]では、自動再生オプションは機能しません。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

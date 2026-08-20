@@ -1,71 +1,71 @@
 ---
-title: ACSD-49898：製品グリッドが例外をスロー
-description: ACSD-49898 パッチを適用すると、バンドルされた商品の特別価格が 1000 を超えると商品グリッドが例外をスローするAdobe Commerceの問題を修正できます。
+title: ACSD-49898：製品グリッドが例外をスローする
+description: バンドルされた商品の特別価格が1000を超える場合、商品グリッドが例外をスローするAdobe Commerceの問題を修正するには、ACSD-49898 パッチを適用します。
 feature: Admin Workspace, Orders, Products
 role: Admin
 exl-id: adc8f12e-73e4-4ed5-8081-a9907ec13342
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
 
-# ACSD-49898：製品グリッドが例外をスロー
+# ACSD-49898：製品グリッドが例外をスローする
 
-ACSD-49898 パッチは、バンドルされた製品の価格が 1000 を超える特別価格の場合に、製品グリッドが例外をスローする問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.29 がインストールされている場合に使用できます。 パッチ ID は ACSD-49898 です。 この問題はAdobe Commerce 2.4.6 で修正されました。
+ACSD-49898 パッチでは、バンドルされた製品の特別価格が1000を超える場合に、製品グリッドで例外がスローされる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.29がインストールされている場合に利用できます。 パッチ IDはACSD-49898です。 この問題は、Adobe Commerce 2.4.6で修正されています。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.5-p2
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-バンドルされた製品の特別価格が 1000 を超えると、製品グリッドが例外をスローする。 この問題は、特定のロケールで、小数値にドットではなくコンマを使用することに関連しています。
+商品グリッド：バンドルされた商品の特別価格が1000を超える場合、例外が発生します。 この問題は、特定のロケールの小数点以下の数値にドットではなくコンマを使用することに関連しています。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. バンドルされた製品を作成します。
-1. 特別価格を 9999 に設定し、保存して閉じます。
-1. **[!UICONTROL Catalog]**/**[!UICONTROL Products]** に移動します。
+1. セット商品を作成。
+1. 特別価格を9999に設定します。保存して閉じます。
+1. **[!UICONTROL Catalog]** > **[!UICONTROL Products]**&#x200B;に移動します
 
 >[!NOTE]
 >
->バンドルされた製品 SKU が表示されない場合は検索します。
+>表示されていない場合は、バンドルされた商品SKUを検索します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-* ユーザーは、バンドルされた製品を特別価格でフィルタリングまたは表示できます。
-* 特別価格は、バンドル製品の割合および他の製品タイプの価格として表示されます。
+* ユーザーは、特別価格でバンドルされた商品をフィルタリングまたは表示できます。
+* 特別価格は、同梱商品の場合は割合、その他の商品タイプの場合は価格として表示されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-次のエラーがスローされます。*数値以外の値が発生しました*。
+次のエラーがスローされます：*数値以外の値が見つかりました*。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

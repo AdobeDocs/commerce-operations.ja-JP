@@ -1,62 +1,62 @@
 ---
-title: ACSD-64684:1,000 のコンマが原因で、999 を超える値のギフトカードを保存すると検証エラーが発生する
-description: ACSD-64684 パッチを適用すると、「1,000」のコンマにより、999 を超える値のギフトカードを保存すると検証エラーが発生するAdobe Commerceの問題を修正できます。
+title: 'ACSD-64684: コンマが1,000 （1,000）の場合、値が999を超えるギフトカードを保存すると検証エラーが発生する'
+description: コンマが「1000」（1,000）の場合に、999を超える値のギフトカードを保存すると検証エラーが発生するAdobe Commerceの問題を修正するには、ACSD-64684 パッチを適用します。
 feature: Catalog Management
 role: Admin, Developer
 exl-id: 327c5d28-b52c-4da9-a905-8a3deb755241
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
 
-# ACSD-64684:1,000 のコンマが原因で、999 を超える値のギフトカードを保存すると検証エラーが発生する
+# ACSD-64684: コンマが1,000 （1,000）の場合、値が999を超えるギフトカードを保存すると検証エラーが発生する
 
-ACSD-64684 パッチでは、「1,000」のコンマが原因で、999 を超える値のギフトカードを保存すると検証エラーが発生する問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 がインストールされている場合に使用できます。 パッチ ID は ACSD-64684 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-64684 パッチでは、コンマが「1000」（1,000）であるため、999を超える値のギフトカードを保存すると検証エラーが発生する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61がインストールされている場合に利用できます。 パッチ IDはACSD-64684です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7-p3
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p4
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-999 より大きい値を持つギフト カードを編集および保存すると、検証エラーが発生します。これは、「1,000」（1,000）などの数字のコンマ （桁区切り記号）が原因です。
+「千」（1,000）など、数字のコンマ（千区切り記号）が原因で、999を超える値のギフトカードを編集して保存すると、検証エラーが発生します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. ギフトカード製品を作成します。
-   1. [!UICONTROL Amount] として 1,000 と入力します。
-   1. 「**[!UICONTROL Save]**」をクリックします。
+1. ギフトカード商品の作成。
+   1. [!UICONTROL Amount]に1,000と入力します。
+   1. **[!UICONTROL Save]**&#x200B;をクリックします。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-* 金額が 1,000 の新しいギフトカードが保存されます。
+* 1,000枚の新しいギフトカードが保存されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-* ギフトカードの金額が 999 を超えると、検証エラーが発生します。
+* ギフトカードの金額が999を超えると、検証エラーが発生します。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

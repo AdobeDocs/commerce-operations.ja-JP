@@ -5,9 +5,9 @@ feature: Admin Workspace
 role: Admin, Developer
 exl-id: cd934aa9-901a-4f03-ab83-716131e6bd85
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ACSD-62355 パッチは、製品に多数の値を持つ多くの属性がある
 
 >[!NOTE]
 >
->このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
@@ -56,8 +56,8 @@ ACSD-62355 パッチは、製品に多数の値を持つ多くの属性がある
 
 1. 新しく作成した属性を使用する設定可能な製品を作成します。
    * 次の設定で1つの子製品を追加します。
-      * 属性1の最後のオプションと、属性2から9の最初のオプションを使用します。
-      * この結果、1つの設定可能な製品と1つの子製品が得られます。
+     * 属性1の最後のオプションと、属性2から9の最初のオプションを使用します。
+     * この結果、1つの設定可能な製品と1つの子製品が得られます。
 1. 設定可能な製品の「**[!UICONTROL Configurations]**」タブに移動します。
 1. **[!UICONTROL Add Products]**&#x200B;を手動でクリックし、以前に作成したシンプルな製品を1つずつ追加します。
 1. 各追加後に変更を保存します。
@@ -77,7 +77,7 @@ ACSD-62355 パッチは、製品に多数の値を持つ多くの属性がある
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 

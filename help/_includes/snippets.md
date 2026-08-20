@@ -1,7 +1,7 @@
 ---
-source-git-commit: d8197ca0e1028cb50fae0415843c80ac68e49566
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1077'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce on Cloud プロジェクトのキャッシュ設定手順については、[RedisおよびValkey サービス設定のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)を参照してください。
+>Adobe Commerce on Cloud プロジェクトのキャッシュ設定手順については、[RedisおよびValkey サービス設定のベストプラクティス ](/help/implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md)を参照してください。
 
 ## Redis キャッシュのサポート {#redis-cache-support}
 
@@ -21,7 +21,7 @@ Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14
 
 >[!NOTE]
 >
->Commerce プロジェクトがクラウドにデプロイされている場合、フルページキャッシュでは、Varnishの代わりに[Fastly](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly)が使用されます。 この節のトピックは、オンプレミスのインストールにのみ適用されます。
+>Commerce プロジェクトがクラウドにデプロイされている場合、フルページキャッシュでは、Varnishの代わりに[Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)が使用されます。 この節のトピックは、オンプレミスのインストールにのみ適用されます。
 
 ## Adobe サービス版サポート {#supported-versions-only}
 
@@ -29,13 +29,13 @@ Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14
 >
 >Adobeでは、サポートされているすべての依存関係とサービスのバージョンを実行するデプロイメントのみがサポートされます。 これは次の場合に適用されます。
 >
->* **Platform サービス** （PHP、MariaDB/MySQL、Redis、Elasticsearch/OpenSearch、RabbitMQ、およびNginxを含むが、これらに限定されない） – 販売者は、デプロイされたAdobe Commerce リリースと互換性のあるバージョンを維持する必要があります。 [必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ja)を参照してください。
+>* **Platform サービス** （PHP、MariaDB/MySQL、Redis、Elasticsearch/OpenSearch、RabbitMQ、およびNginxを含むが、これらに限定されない） – 販売者は、デプロイされたAdobe Commerce リリースと互換性のあるバージョンを維持する必要があります。 [必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)を参照してください。
 >* **Commerce サービスの拡張機能** （ライブサーチ、商品レコメンデーション、決済サービスを含むがこれらに限定されない） – 最新のリリース版のみがサポートされます。
 >* **カスタム拡張機能とサードパーティ統合** – 販売者は、これらの拡張機能がベンダーがサポートするバージョンに残るようにする責任があります。
 >
 >サポートされていないバージョンを実行すると、ストアがセキュリティ上の脆弱性にさらされる可能性があります。また、Adobeでは、ベンダーが管理しなくなった依存関係に対するセキュリティパッチを提供できません。
 >
->サポートされているバージョンの完全なリストについては、[製品可用性マトリックス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability)を参照してください。
+>サポートされているバージョンの完全なリストについては、[製品可用性マトリックス ](/help/release/product-availability.md)を参照してください。
 
 ## 拡張サポート用のセキュリティパッチ {#extended-support}
 
@@ -53,7 +53,7 @@ Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14
 
 >[!WARNING]
 >
->すべてのMagento CLI コマンドは、[&#x200B; ファイルシステム所有者](/help/configuration/cli/config-cli.md#prerequisites)によって実行する必要があります。
+>すべてのMagento CLI コマンドは、[ ファイルシステム所有者](/help/configuration/cli/config-cli.md#prerequisites)によって実行する必要があります。
 
 ## バックアップコマンド {#tip-backup-command}
 
@@ -65,7 +65,7 @@ Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14
 
 >[!NOTE]
 >
->このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントは、互換性のある最新のB2B セキュリティパッチリリースにアップデートする必要があります。 [B2B リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/release-notes)を参照してください。
+>このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントは、互換性のある最新のB2B セキュリティパッチリリースにアップデートする必要があります。 [B2B リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)を参照してください。
 
 ## Adobe Commerceのみ {#ee-only}
 
@@ -85,7 +85,7 @@ Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14
 
 >[!NOTE]
 >
->Adobe Commerce リリースには、下位互換性のない変更（BIC）が含まれている場合があります。 後方互換性のない変更を確認するには、[BIC reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)を参照してください。 後方互換性のない主要な問題については、[BIC ハイライト &#x200B;](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)で説明しています。 すべてのリリースが主要なBICを導入しているわけではありません。
+>Adobe Commerce リリースには、下位互換性のない変更（BIC）が含まれている場合があります。 後方互換性のない変更を確認するには、[BIC reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference)を参照してください。 後方互換性のない主要な問題については、[BIC ハイライト ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)で説明しています。 すべてのリリースが主要なBICを導入しているわけではありません。
 
 ## Alphaの免責事項 {#alpha}
 
@@ -113,13 +113,13 @@ Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14
 
 ## PHP プロセス制御 {#php-process-control}
 
-並列モードでインデクサーを実行する前に、PHPでプロセス制御サポート （`pcntl`）を有効にする必要があります。 PHP ドキュメントの[&#x200B; インストール &#x200B;](https://www.php.net/manual/en/pcntl.installation.php)を参照してください。
+並列モードでインデクサーを実行する前に、PHPでプロセス制御サポート （`pcntl`）を有効にする必要があります。 PHP ドキュメントの[ インストール ](https://www.php.net/manual/en/pcntl.installation.php)を参照してください。
 
 ## カスタムパッチ {#custom-patches-disclaimer}
 
 >[!IMPORTANT]
 >
->Adobeでは、この方法を使用したAdobeが提供する公式のパッチの適用はサポートされていません。 ご自身のリスクで次の方法を使用してください。 公式パッチを適用するには、[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}を使用します。 カスタムパッチをデプロイする前に、必ず包括的なテストを実行してください。
+>Adobeでは、この方法を使用したAdobeが提供する公式のパッチの適用はサポートされていません。 ご自身のリスクで次の方法を使用してください。 公式パッチを適用するには、[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}を使用します。 カスタムパッチをデプロイする前に、必ず包括的なテストを実行してください。
 
 ## 2025年10月のセキュリティパッチバックポート {#oct-2025-backports}
 
@@ -133,7 +133,7 @@ Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14
 
 * **Apache ActiveMQ Artemis STOMP プロトコルのサポートを追加しました**
 
-  Simple Text Oriented Messaging Protocol （STOMP）によるActiveMQ Artemis オープンソースのメッセージブローカーのサポートを追加しました。 信頼性の高いスケーラブルなメッセージングシステムを提供し、STOMP ベースの統合に柔軟に対応できます。 *Commerce Configuration Guide*&#x200B;の[Apache ActiveMQ Artemis](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp)を参照してください。
+  Simple Text Oriented Messaging Protocol （STOMP）によるActiveMQ Artemis オープンソースのメッセージブローカーのサポートを追加しました。 信頼性の高いスケーラブルなメッセージングシステムを提供し、STOMP ベースの統合に柔軟に対応できます。 *Commerce Configuration Guide*&#x200B;の[Apache ActiveMQ Artemis](/help/configuration/queues/message-queue-framework.md#apache-activemq-artemis-stomp)を参照してください。
 
 ## チェックアウトページでstatic.min.jsとmixins.min.jsの読み込みに失敗する {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
 
@@ -150,11 +150,11 @@ JavaScriptのバンドルと縮小の両方が実稼動モードで有効にな�
 
 **ホットフィックス**:
 
-ホットフィックスが利用可能です。 パッチの詳細については、ナレッジベースで「[JSの縮小とバンドルが有効になっている場合にチェックアウトが失敗する](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27997)」を参照してください。
+ホットフィックスが利用可能です。 パッチの詳細については、ナレッジベースで「[JSの縮小とバンドルが有効になっている場合にチェックアウトが失敗する](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)」を参照してください。
 
 ## Valkey Redis CLI メモ {#valkey-redis-cli-note}
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.9以降、Valkeyは正式にCLI ツールのRedisに取って代わりました。 **バージョン 2.4.8以前**&#x200B;の場合は、同等の[Redis CLI コマンド &#x200B;](/help/configuration/cache/config-redis.md#set-up-redis-configuration)を使用します。
+>Adobe Commerce 2.4.9以降、Valkeyは正式にCLI ツールのRedisに取って代わりました。 **バージョン 2.4.8以前**&#x200B;の場合は、同等の[Redis CLI コマンド ](/help/configuration/cache/config-redis.md#set-up-redis-configuration)を使用します。
 

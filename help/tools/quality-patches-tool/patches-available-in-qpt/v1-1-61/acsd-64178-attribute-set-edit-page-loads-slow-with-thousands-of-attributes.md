@@ -1,62 +1,62 @@
 ---
-title: ACSD-64178：何千もの製品属性 [!UICONTROL Edit Attribute Set] 持つページの読み込みに時間がかかる
-description: 何千もの製品属性がある場合に [!UICONTROL Edit Attribute Set] ページの読み込みに時間がかかるAdobe Commerceの問題を修正するために、ACSD-64178 パッチを適用してください。
+title: 'ACSD-64178: [!UICONTROL Edit Attribute Set] ページは、何千もの製品属性を使用して読み込みが遅い'
+description: ACSD-64178 パッチを適用して、[!UICONTROL Edit Attribute Set] ページが数千の製品属性がある場合に読み込みが遅くなるAdobe Commerceの問題を修正します。
 feature: Catalog Management
 role: Admin, Developer
 exl-id: 959d825d-1b7b-49f0-b49f-64e149106e91
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
 
-# ACSD-64178：何千もの製品属性 [!UICONTROL Edit Attribute Set] 持つページの読み込みに時間がかかる
+# ACSD-64178: [!UICONTROL Edit Attribute Set] ページは、何千もの製品属性を使用して読み込みが遅い
 
-ACSD-64178 パッチは、何千もの製品属性がある場合に **[!UICONTROL Edit Attribute Set]** ページの読み込みに時間がかかる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 がインストールされている場合に使用できます。 パッチ ID は ACSD-64178 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-64178 パッチは、製品属性が数千ある場合に&#x200B;**[!UICONTROL Edit Attribute Set]** ページの読み込みが遅くなる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61がインストールされている場合に利用できます。 パッチ IDはACSD-64178です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7-p4
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7 - 2.4.7-p4
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-何千もの製品属性がある場合、**[!UICONTROL Edit Attribute Set]** ページの読み込みに時間がかかります。
+数千もの製品属性がある場合、**[!UICONTROL Edit Attribute Set]** ページの読み込みが遅くなります。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. どの属性セットにも割り当てられていない属性を 4,200 個以上作成します。
-1. 管理者サイドバーで、**[!UICONTROL Stores]**/*[!UICONTROL Attributes]*/**[!UICONTROL Attribute Set]** に移動します。 編集する属性セットをクリックします。
+1. いずれかの属性セットに割り当てられていない少なくとも4200個の属性を作成します。
+1. 管理者サイドバーで、**[!UICONTROL Stores]** > *[!UICONTROL Attributes]* > **[!UICONTROL Attribute Set]**&#x200B;に移動します。 編集する任意の属性セットをクリックします。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-適切な時間にページが読み込まれます。
+ページは合理的な時間で読み込まれます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
 ページの読み込みに数分かかります。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

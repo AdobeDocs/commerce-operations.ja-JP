@@ -1,70 +1,70 @@
 ---
-title: ACSD-48910：複数のソースが割り当てられたバンドル製品が、請求書および発送後に在庫切れになる
-description: ACSD-48910 パッチを適用すると、複数のソースに割り当てられたバンドル製品が、注文の請求および出荷後に（まだ数量がゼロ以外の場合でも）在庫切れになるAdobe Commerceの問題を修正できます。
+title: ACSD-48910：複数のソースが割り当てられたバンドル商品が、請求書と発送後に在庫切れになる
+description: ACSD-48910 パッチを適用して、複数のソースに割り当てられたバンドル商品が、注文の請求後に在庫切れになり、ゼロ以外の数量が残っている場合でも発送されるAdobe Commerceの問題を修正します。
 feature: Products, Inventory
 role: Admin, Developer
 exl-id: c8d86531-2db5-4115-92d5-a8d391c4f75d
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
 
-# ACSD-48910：複数のソースが割り当てられたバンドル製品が、請求書および発送後に在庫切れになる
+# ACSD-48910：複数のソースが割り当てられたバンドル商品が、請求書と発送後に在庫切れになる
 
-ACSD-48910 パッチは、複数のソースに割り当てられたバンドル製品が注文の請求および出荷後に在庫切れになる問題を修正します（数量がまだ 0 以外の場合でも）。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.42 がインストールされている場合に使用できます。 パッチ ID は ACSD-48910 です。 この問題はAdobe Commerce 2.4.6 で修正されました。
+ACSD-48910 パッチは、注文が請求され、発送された後、ゼロ以外の数量がまだあっても、複数のソースに割り当てられたバンドル製品が在庫切れになる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.42がインストールされている場合に利用できます。 パッチ IDはACSD-48910です。 この問題は、Adobe Commerce 2.4.6で修正されています。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p3
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.5 ～ 2.4.5-p5
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.5 - 2.4.5-p5
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-複数のソースに割り当てられたバンドル製品は、まだ使用可能な場合でも、請求および出荷後に在庫切れになります。
+複数のソースに割り当てられたバンドル商品は、請求書や配送後、まだ入手可能であっても在庫切れとなります。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 2 つの web サイトを作成します。
-1. 2 つのストア/ストアビューを作成します（Web サイトごとに 1 つ）。
-1. 2 つのシンプルな製品（数量= 10）を作成し、それらを在庫と web サイトの両方に割り当てます。
-1. バンドルされた製品を作成し、これらのシンプルな製品をそれに追加します。 バンドルされた製品を両方の web サイトに割り当てます。
-1. ストアフロントに移動し、バンドルされた製品を買い物かごに追加します。
+1. 2つのweb サイトを作成する：
+1. 2つのストア/ストアビューを作成します（web サイトごとに1つ）。
+1. 2つのシンプルな商品（数量= 10）を作成し、在庫とweb サイトの両方に割り当てます。
+1. バンドル商品を作成し、これらのシンプルな商品を追加します。 バンドルされた商品を両方のweb サイトに割り当てます。
+1. ストアフロントに移動し、バンドルされた商品をカートに追加します。
 1. チェックアウトして注文します。
-1. 管理者から、注文を請求して出荷します。
+1. 管理者から、請求書と注文の発送を行います。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-10 個の商品のうち 1 個しか購入していないため、バンドルされた商品は在庫として残っています。
+10個の商品のうち1個しか購入していないため、同梱商品は在庫を維持します。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-バンドルされた製品のステータスが在庫切れに変更されます。
+同梱商品は、在庫切れというステータスに変わります。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

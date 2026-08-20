@@ -2,7 +2,7 @@
 title: 翻訳辞書と言語パッケージ
 description: Adobe Commerceの翻訳辞書を生成し、言語パッケージを構築する方法について説明します。 ローカライゼーションと多言語ストアの設定。
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Commerceの翻訳機能を利用すれば、次の機能を生み出すことで
 
 1. 翻訳ディクショナリを言語パッケージにパッケージ化し、そのパッケージをCommerce ストア管理者に提供できます。
 
-1. 管理画面で、ストア管理者[が翻訳を設定します](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-localize)。
+1. 管理画面で、ストア管理者[が翻訳を設定します](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize)。
 
 コマンドオプション：
 
@@ -91,7 +91,7 @@ Product 'Multimeter-2000' has been added to shopping cart.
 
 1. [単語やフレーズを収集して翻訳する](#generate-a-translation-dictionary)。 （`--magento` パラメーターが必要です）。
 1. [言語パッケージコマンドを実行します](#run-the-language-package-command)。
-1. [&#x200B; ディレクトリとファイルを作成](#create-directories-and-files)。
+1. [ ディレクトリとファイルを作成](#create-directories-and-files)。
 1. （オプション） [1つの言語に対して複数のパッケージを設定](#configure-multiple-packages-for-a-language)。
 
 ### 言語パッケージコマンドの実行
@@ -106,7 +106,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 | パラメーター | 値 | 必要ですか？ |
 |--- |--- |--- |
-| `<source>` | 言語パッケージへの分類に必要な翻訳辞書とメタ情報を組み合わせたCSV ファイルの絶対ファイルシステムパスとファイル名。<br><br>[`bin/magento i18n:collect-phrases`](#generate-a-translation-dictionary)を使用してCSV ファイルを作成し、[&#x200B; ディレクトリとファイルの作成](#create-directories-and-files)で説明したように言語パッケージを作成します。 | はい |
+| `<source>` | 言語パッケージへの分類に必要な翻訳辞書とメタ情報を組み合わせたCSV ファイルの絶対ファイルシステムパスとファイル名。<br><br>[`bin/magento i18n:collect-phrases`](#generate-a-translation-dictionary)を使用してCSV ファイルを作成し、[ ディレクトリとファイルの作成](#create-directories-and-files)で説明したように言語パッケージを作成します。 | はい |
 | `<locale>` | [ISO 639-1](https://www.iso.org/iso-639-language-codes.html) （言語）および[ISO 3166](https://www.iso.org/iso-3166-country-codes.html) （国）の言語の識別子は、結果のすべてのCSV ファイルのファイル名として使用されます。 例：`de_DE`、`pt_PT`、`pt_BR`。 | はい |
 | `-m --mode` | ターゲットファイルが存在する場合は、既存の言語パッケージを置き換えるか、新しい言語パックと結合するかを指定します。 結合すると、既存のフレーズが上書きされ、新しいフレーズが追加されます。<br><br>値：結合または置換（デフォルト）。 | いいえ |
 | `-d --allow-duplicates` | 言語パックで重複を許可するには、このオプションを含めます。 そうでなければ、異なる翻訳を持つ複数のエントリで同じフレーズが発生した場合、コマンドはエラーで失敗します。 | いいえ |
@@ -117,7 +117,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 - 必要なライセンスファイル
 - `composer.json`
-- [が言語パッケージを](https://developer.adobe.com/commerce/php/development/build/component-registration/)登録する`registration.php`
+- [が言語パッケージを](https://developer.adobe.com/commerce/php/development/build/component-registration)登録する`registration.php`
 - [`language.xml`](#language-package-languagexml) メタ情報ファイル
 
 >[!INFO]
@@ -131,8 +131,8 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
    例えば、Commerceの言語パッケージは`app/i18n/magento`にあります
 
 1. 必要なライセンスファイルを追加します。
-1. 言語パッケージの依存関係を指定する[`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration/)を追加します。
-1. 言語パッケージを[`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration/)に登録します
+1. 言語パッケージの依存関係を指定する[`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration)を追加します。
+1. 言語パッケージを[`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration)に登録します
 1. 次の節で説明するように、`language.xml`のメタ情報ファイルを追加します。
 
 #### 言語パッケージ language.xml
@@ -221,7 +221,7 @@ Commerce アプリケーションが`en_GB` パッケージ内の単語または
    >
    >CSV ファイル名は、文字の大文字と小文字を含め、ロケールが&#x200B;_完全に_&#x200B;一致している必要があります。
 
-1. [これらのガイドライン &#x200B;](#translation-guidelines)を使用して、単語やフレーズを翻訳します。
+1. [これらのガイドライン ](#translation-guidelines)を使用して、単語やフレーズを翻訳します。
 1. 必要に応じて、`xx_YY.csv`を`/var/www/html/magento2/app/code/ExampleCorp/SampleModule/i18n`またはモジュールのテーマディレクトリにコピーします（翻訳ディクショナリがモジュール用かテーマ用かによって異なります）。
 
 ### 例：言語パッケージの作成
@@ -238,7 +238,7 @@ Commerce アプリケーションが`en_GB` パッケージ内の単語または
    >
    >CSV ファイル名は、文字の大文字と小文字を含め、ロケールが&#x200B;_完全に_&#x200B;一致している必要があります。
 
-1. [これらのガイドライン &#x200B;](#translation-guidelines)を使用して、単語やフレーズを翻訳します。
+1. [これらのガイドライン ](#translation-guidelines)を使用して、単語やフレーズを翻訳します。
 1. 言語パッケージを作成します。
 
    ```shell

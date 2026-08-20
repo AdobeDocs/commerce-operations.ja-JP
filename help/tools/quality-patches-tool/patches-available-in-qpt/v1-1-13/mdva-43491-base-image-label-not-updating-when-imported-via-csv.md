@@ -1,77 +1,77 @@
 ---
-title: MDVA-43491:CSV 経由で読み込むと、ベース画像ラベルが更新されない
-description: MDVA-43491 パッチでは、マルチストア web サイトの CSV ファイルを使用して読み込んだ場合に「base_image_label」が更新されない問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.13 がインストールされている場合に利用できます。 パッチ ID は MDVA-43491。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+title: MDVA-43491:CSV経由で読み込むと、ベース画像ラベルが更新されない
+description: MDVA-43491 パッチは、マルチストア web サイトのCSV ファイルを介して読み込んだときに「base_image_label」が更新されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.13がインストールされている場合に利用できます。 パッチ IDはMDVA-43491です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 feature: Data Import/Export
 role: Admin
 exl-id: f6a5f641-aaf0-4b6e-afa9-7f436f8f59e6
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
-# MDVA-43491:CSV 経由で読み込むと、ベース画像ラベルが更新されない
+# MDVA-43491:CSV経由で読み込むと、ベース画像ラベルが更新されない
 
-MDVA-43491 パッチでは、マルチストア web サイトの CSV ファイルを介して読み込んだ場合に `base_image_label` が更新されない問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.13 がインストールされている場合に使用できます。 パッチ ID は MDVA-43491。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+MDVA-43491 パッチは、マルチストア web サイトのCSV ファイルを介して読み込んだときに`base_image_label`が更新されない問題を修正します。 このパッチは、[品質パッチツール（QPT） ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.13がインストールされている場合に使用できます。 パッチ IDはMDVA-43491です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.2-p2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.3.5 ～ 2.4.4
+* Adobe Commerce（すべてのデプロイメント方法） 2.3.5 - 2.4.4
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-マルチストア web サイトの CSV ファイルを使用して読み込んだ場合、`base_image_label` は更新されません。
+マルチストア web サイトのCSV ファイルを使用して読み込むと、`base_image_label`が更新されません。
 
-<u> 前提条件 </u>:
+<u>前提条件</u>:
 
-1 つ以上の既存のデフォルト以外の web サイト、ストア、ストアビュー。
+1つ以上の既存のデフォルト以外のweb サイト、ストア、ストアビュー。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 新しい製品を作成します。
+1. 新製品を作成します。
 
    * 画像をアップロードします。
-   * 新しく作成した web サイトに製品を割り当てます。
+   * 新しく作成したweb サイトに製品を割り当てます。
 
-1. 製品を CSV として書き出します。
-1. CSV ファイルのデフォルトの行を複製して、各ストア表示の `base_image_label` を更新します。
-1. CSV ファイルを読み込みます。 各ストアのラベルが正しく更新され、製品の編集ページの「**画像とビデオ**」タブで確認できます。
-1. CSV ファイルを再度エクスポートし、`base_image_label` 列を異なる値で更新します。
-1. CSV ファイルを再度読み込みます。
-1. 管理で製品を開き、ストア表示ごとにラベルが更新されているかどうかを確認します。
+1. 製品をCSVとしてエクスポートします。
+1. CSV ファイルの既定の行を複製して、各ストアビューの`base_image_label`を更新します。
+1. CSV ファイルを読み込みます。 各店舗のラベルが正しく更新され、商品編集ページの「**画像と動画**」タブで確認できます。
+1. CSV ファイルをもう一度書き出し、異なる値で`base_image_label`列を更新します。
+1. CSV ファイルをもう一度インポートします。
+1. Adminで製品を開き、各ストアビューのラベルが更新されているかどうかを確認します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-代替テキスト（画像ラベル）が、CSV ファイルに従って、ストア固有の値で更新されます。
+代替テキスト（画像ラベル）は、CSV ファイルに従って、ストア固有の値で更新されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-代替テキスト（画像ラベル）が、CSV ファイルの `base_image_label` 値で更新されない。
+代替テキスト（画像ラベル）がCSV ファイルの`base_image_label`値で更新されません。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-品質向上パッチツールの詳細については、次を参照してください。
+品質パッチツールについて詳しくは、以下を参照してください。
 
-* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [品質パッチツール ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。
