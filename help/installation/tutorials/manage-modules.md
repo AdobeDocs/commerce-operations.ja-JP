@@ -47,12 +47,12 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 
 * `<module-list>`は、有効または無効にするモジュールのスペース区切りリストです。 モジュール名に特殊文字が含まれる場合は、名前を一重引用符または二重引用符で囲みます。
 * `--all`を使用すると、すべてのモジュールを同時に有効または無効にできます。
-* `-f`または`--force`は、依存関係にもかかわらず、モジュールを強制的に有効または無効にします。 このオプションを使用する前に、[ モジュールの有効化と無効化について](#about-enabling-and-disabling-modules)を参照してください。
-* `-c`または`--clear-static-content`は、[生成された静的ビューファイル ](../../configuration/cli/static-view-file-deployment.md)をクリーンアップします。
+* `-f`または`--force`は、依存関係にもかかわらず、モジュールを強制的に有効または無効にします。 このオプションを使用する前に、[&#x200B; モジュールの有効化と無効化について](#about-enabling-and-disabling-modules)を参照してください。
+* `-c`または`--clear-static-content`は、[生成された静的ビューファイル &#x200B;](../../configuration/cli/static-view-file-deployment.md)をクリーンアップします。
 
   静的ビューファイルをクリアしないと、同じ名前のファイルが複数あり、すべてのファイルをクリアできない場合に問題が発生する可能性があります。
 
-  つまり、[静的ファイルのフォールバック ](../../configuration/cli/static-view-file-deployment.md) ルールにより、静的ファイルをクリアせず、`logo.svg`という名前の異なるファイルが複数ある場合、フォールバックによって間違ったファイルが表示される可能性があります。
+  つまり、[静的ファイルのフォールバック &#x200B;](../../configuration/cli/static-view-file-deployment.md) ルールにより、静的ファイルをクリアせず、`logo.svg`という名前の異なるファイルが複数ある場合、フォールバックによって間違ったファイルが表示される可能性があります。
 
 例えば、`Magento_Weee` モジュールを無効にするには、次のように入力します。
 
@@ -60,7 +60,7 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 bin/magento module:disable Magento_Weee
 ```
 
-モジュールの有効化と無効化に関する重要な情報については、[ モジュールの有効化と無効化についてを参照してください](#about-enabling-and-disabling-modules)。
+モジュールの有効化と無効化に関する重要な情報については、[&#x200B; モジュールの有効化と無効化についてを参照してください](#about-enabling-and-disabling-modules)。
 
 ## データベースの更新
 

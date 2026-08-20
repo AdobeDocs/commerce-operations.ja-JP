@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-44851：サブカテゴリを開いたり展開したりできないカテゴリ
 
-ACSD-44851 パッチは、ユーザーがサブカテゴリを持つカテゴリを開いたり拡張したりできない問題を解決します。 このパッチは、[品質パッチツール （QPT） ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.20がインストールされている場合に使用できます。 パッチ IDはACSD-44851です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
+ACSD-44851 パッチは、ユーザーがサブカテゴリを持つカテゴリを開いたり拡張したりできない問題を解決します。 このパッチは、[品質パッチツール （QPT） &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.20がインストールされている場合に使用できます。 パッチ IDはACSD-44851です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
@@ -28,7 +28,7 @@ ACSD-44851 パッチは、ユーザーがサブカテゴリを持つカテゴリ
 
 >[!NOTE]
 >
->パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
@@ -56,10 +56,10 @@ ACSD-44851 パッチは、ユーザーがサブカテゴリを持つカテゴリ
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：品質パッチツールガイドの「[品質パッチツール/使用状況](/help/tools/quality-patches-tool/usage.md)」。
 
-* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
 [!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

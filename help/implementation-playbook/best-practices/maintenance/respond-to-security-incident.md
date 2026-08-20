@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
@@ -67,18 +67,18 @@ Adobe Commerce on cloud インフラストラクチャプロジェクトがセ�
 
   アクションログレポートには、ログ記録が有効になっているすべての管理者アクションの詳細な記録が表示されます。 各レコードにはタイムスタンプが付けられ、ユーザーのIP アドレスと名前が登録されます。 ログの詳細には、管理者ユーザーデータと、アクション中に行われた関連する変更が含まれます。
 
-- [Observation for Adobe Commerce ツール ](../../../tools/observation-for-adobe-commerce/intro.md)を使用してイベントを分析します。
+- [Observation for Adobe Commerce ツール &#x200B;](../../../tools/observation-for-adobe-commerce/intro.md)を使用してイベントを分析します。
 
   Adobe Commerceの観察ツールを使用すると、複雑な問題を分析して根本原因を特定できます。 異なるデータを追跡する代わりに、イベントとエラーを関連付けることに時間を費やし、パフォーマンスのボトルネックの原因についてより深いインサイトを得ることができます。
 
   ツールの「**セキュリティ**」タブを使用すると、潜在的なセキュリティ問題を明確に把握して、根本原因を特定し、サイトのパフォーマンスを最適に維持できます。
 
-- [New Relic ログ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)を使用したログの分析
+- [New Relic ログ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)を使用したログの分析
 
   Adobe Commerce on cloud infrastructure Pro プロジェクトには、[New Relic Logs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management) サービスが含まれます。 このサービスは、ステージング環境と実稼動環境のすべてのログデータを集約するように事前設定されており、集約されたデータを検索して視覚化できる一元化されたログ管理ダッシュボードに表示されます。
 
   その他のCommerce プロジェクトの場合、[New Relic Logs](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) サービスを設定して使用すると、次のタスクを実行できます。
-  - [New Relic クエリ ](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs)を使用して、集計されたログデータを検索します。
+  - [New Relic クエリ &#x200B;](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs)を使用して、集計されたログデータを検索します。
   - New Relic Logs アプリケーションを使用してログデータを視覚化します。
 
 ## 監査アカウント、コード、データベース
@@ -93,9 +93,9 @@ Commerceの管理者アカウントとユーザーアカウント、アプリケ
 
 - [管理者のセキュリティ設定を確認](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html) – 管理者のセキュリティ設定がセキュリティのベストプラクティスに従っていることを確認します。
 
-- [ クラウドインフラストラクチャプロジェクト上のAdobe Commerceのユーザーアカウントを確認](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) – 古い、未使用の、または疑わしいアカウントを削除し、すべてのクラウドプロジェクト管理者ユーザーのパスワードをローテーションします。 アカウントのセキュリティ設定が正しく設定されていることを確認します。
+- [&#x200B; クラウドインフラストラクチャプロジェクト上のAdobe Commerceのユーザーアカウントを確認](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) – 古い、未使用の、または疑わしいアカウントを削除し、すべてのクラウドプロジェクト管理者ユーザーのパスワードをローテーションします。 アカウントのセキュリティ設定が正しく設定されていることを確認します。
 
-- [ クラウドインフラストラクチャ上のAdobe CommerceのSSH キーの監査](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) - SSH キーの確認、削除、回転。
+- [&#x200B; クラウドインフラストラクチャ上のAdobe CommerceのSSH キーの監査](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) - SSH キーの確認、削除、回転。
 
 ### 監査コード
 
@@ -121,7 +121,7 @@ Commerceの管理者アカウントとユーザーアカウント、アプリケ
 
 ## Googleの警告を削除
 
-サイトに悪意のあるコードが含まれているとしてGoogleによってフラグが立てられている場合は、サイトのクリーニングが完了したら、レビューを依頼してください。 マルウェアに感染したサイトのレビューには数日かかります。 Googleでサイトがクリーンであると判断された後、検索結果とブラウザーからの警告は72時間以内に消える必要があります。 「[ レビューを依頼](https://web.dev/articles/request-a-review)」を参照してください。
+サイトに悪意のあるコードが含まれているとしてGoogleによってフラグが立てられている場合は、サイトのクリーニングが完了したら、レビューを依頼してください。 マルウェアに感染したサイトのレビューには数日かかります。 Googleでサイトがクリーンであると判断された後、検索結果とブラウザーからの警告は72時間以内に消える必要があります。 「[&#x200B; レビューを依頼](https://web.dev/articles/request-a-review)」を参照してください。
 
 ## マルウェアの結果チェックリストを確認する
 
@@ -133,4 +133,4 @@ Commerceの管理者アカウントとユーザーアカウント、アプリケ
 
 ## 追加情報
 
-- [根本原因分析フレームワーク ](https://sansec.io/kb/incident-response/magento-root-cause-analysis)。
+- [根本原因分析フレームワーク &#x200B;](https://sansec.io/kb/incident-response/magento-root-cause-analysis)。

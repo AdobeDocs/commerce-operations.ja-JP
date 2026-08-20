@@ -86,7 +86,7 @@ Pro アーキテクチャのマーチャントは、Percona Toolkit `[pt-duplica
 
 ### 重複したインデックスの削除
 
-SQL [DROP INDEX ステートメント ](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html)を使用して、重複するインデックスを削除します。
+SQL [DROP INDEX ステートメント &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html)を使用して、重複するインデックスを削除します。
 
 ```SQL
 DROP INDEX

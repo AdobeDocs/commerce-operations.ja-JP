@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 環境変数
 
-`REMOTE_STORAGE`変数は、クラウドインフラストラクチャプロジェクトの[ デプロイメントフェーズ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process)中に使用されます。
+`REMOTE_STORAGE`変数は、クラウドインフラストラクチャプロジェクトの[&#x200B; デプロイメントフェーズ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process)中に使用されます。
 
 ### `REMOTE_STORAGE`
 
@@ -119,4 +119,4 @@ Adobe Commerce on cloud インフラストラクチャプロジェクトでリ�
 
 1. [AWS S3認証](https://docs.fastly.com/en/guides/amazon-s3#using-an-amazon-s3-private-bucket)のVCL ロジックを作成します。
 
-1. AWS S3 バケット ](https://developer.fastly.com/reference/vcl/variables/backend-connection/req-backend/)に対する[ バックエンドリクエストのVCL ロジックを作成します。
+1. AWS S3 バケット [&#128279;](https://developer.fastly.com/reference/vcl/variables/backend-connection/req-backend/)に対する バックエンドリクエストのVCL ロジックを作成します。

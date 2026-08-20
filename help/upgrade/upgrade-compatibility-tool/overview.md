@@ -23,9 +23,9 @@ ht-degree: 0%
 
 [!DNL Upgrade Compatibility Tool]は次の方法で使用できます。
 
-- スタンドアロンの[ コマンドラインインターフェイス ](../upgrade-compatibility-tool/run.md) ツールとして。 使用可能なコマンドの完全なリストについては、[`bin/uct` リファレンス ](../../tools/reference/uct.md)を参照してください。
+- スタンドアロンの[&#x200B; コマンドラインインターフェイス &#x200B;](../upgrade-compatibility-tool/run.md) ツールとして。 使用可能なコマンドの完全なリストについては、[`bin/uct` リファレンス &#x200B;](../../tools/reference/uct.md)を参照してください。
 - [!DNL Upgrade Compatibility Tool]を[[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md)と統合しています。
-- [Magento PHPStorm プラグイン ](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)内の実行設定。
+- [Magento PHPStorm プラグイン &#x200B;](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)内の実行設定。
 
 ## ワークフロー
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 [!DNL Upgrade Compatibility Tool] チームとつながるには、エンジニアリング Slack チャンネル [#upgrade-compatibility-tool](https://magentocommeng.slack.com/archives/C019Y143U9F)でお問い合わせください。 フィードバック、問題、提案を聞いて、ツールの改善に役立てたいと考えています。
 
-[!DNL Upgrade Compatibility Tool]では、[ コーディング標準](https://developer.adobe.com/commerce/php/coding-standards/)で定義されたルールを使用して、プロジェクトがAdobe Commerceのベストプラクティスに従っていることを確認し、[!DNL Upgrade Compatibility Tool]の改善と拡張を支援します。
+[!DNL Upgrade Compatibility Tool]では、[&#x200B; コーディング標準](https://developer.adobe.com/commerce/php/coding-standards/)で定義されたルールを使用して、プロジェクトがAdobe Commerceのベストプラクティスに従っていることを確認し、[!DNL Upgrade Compatibility Tool]の改善と拡張を支援します。
 
 コーディング標準の提供について詳しくは、[Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing) トピックを参照してください。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 Adobe Commerceのアップグレードについて理解するには、次の資料を参照してください。
 
-- [ アップグレードガイド ](../overview.md)では、Adobe Commerceの一般的なアップグレードジャーニーとそのジャーニーに従うべきベストプラクティスの概要を説明しています。
-- [今後のリリース ](/help/release/schedule.md) ページには、スケジュール済みリリースと今後のリリースの日付が表示されます。
-- [ コミュニティリソース ](https://developer.adobe.com/commerce/contributor/community/) ページは、ディスカッションを開始するか、より多くの情報を見つけるために配置されます。
-- [関連ツール ](../upgrade-compatibility-tool/related-tools.md) ページで、一般的なアップグレードジャーニーに役立つツールを確認してください。
+- [&#x200B; アップグレードガイド &#x200B;](../overview.md)では、Adobe Commerceの一般的なアップグレードジャーニーとそのジャーニーに従うべきベストプラクティスの概要を説明しています。
+- [今後のリリース &#x200B;](/help/release/schedule.md) ページには、スケジュール済みリリースと今後のリリースの日付が表示されます。
+- [&#x200B; コミュニティリソース &#x200B;](https://developer.adobe.com/commerce/contributor/community/) ページは、ディスカッションを開始するか、より多くの情報を見つけるために配置されます。
+- [関連ツール &#x200B;](../upgrade-compatibility-tool/related-tools.md) ページで、一般的なアップグレードジャーニーに役立つツールを確認してください。

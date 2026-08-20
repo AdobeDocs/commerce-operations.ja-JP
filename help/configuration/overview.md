@@ -25,8 +25,8 @@ _Configuration_ ガイドでは、設定可能なCommerce アプリケーショ�
 
 ## Commerce管理者設定
 
-[Commerce ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview)には、Commerce Adminの各設定項目のフィールド説明を理解するのに役立つ対応するトピックがあります。
+[Commerce ユーザーガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview)には、Commerce Adminの各設定項目のフィールド説明を理解するのに役立つ対応するトピックがあります。
 
 ## クラウド設定
 
-[!DNL Commerce on cloud infrastructure]は、[一連の設定ファイル ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/overview)を使用して、ホスト環境のCommerce アプリケーションの機能とサービスを更新します。 Adobe クラウドホスティング環境には固有の性質があるため、その他の設定要件については、常に[Cloud ガイド ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)を確認する必要があります。
+[!DNL Commerce on cloud infrastructure]は、[一連の設定ファイル &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/overview)を使用して、ホスト環境のCommerce アプリケーションの機能とサービスを更新します。 Adobe クラウドホスティング環境には固有の性質があるため、その他の設定要件については、常に[Cloud ガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)を確認する必要があります。

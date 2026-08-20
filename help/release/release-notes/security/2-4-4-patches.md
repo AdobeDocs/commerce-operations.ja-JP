@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 2.4.4-p18
 
-Adobe Commerce 2.4.4-p18は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース ](../../lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
+Adobe Commerce 2.4.4-p18は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](../../lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
 
 セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html)を参照してください。
 
@@ -27,7 +27,7 @@ Adobe Commerce 2.4.4-p18は、以前のリリース 2.4.4で特定された脆�
 
 ## 2.4.4-p17
 
-Adobe Commerce 2.4.4-p17は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース ](../../lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
+Adobe Commerce 2.4.4-p17は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](../../lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
 
 セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html)を参照してください。
 
@@ -35,7 +35,7 @@ Adobe Commerce 2.4.4-p17は、以前のリリース 2.4.4で特定された脆�
 
 ## 2.4.4-p16
 
-Adobe Commerce 2.4.4-p16は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース ](../../lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
+Adobe Commerce 2.4.4-p16は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](../../lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
 
 セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)を参照してください。
 
@@ -53,7 +53,7 @@ Adobe Commerce 2.4.4-p16は、以前のリリース 2.4.4で特定された脆�
 
 ## 2.4.4-p15
 
-Adobe Commerce 2.4.4-p15は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース ](../../lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
+Adobe Commerce 2.4.4-p15は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](../../lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
 
 セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html)を参照してください。
 
@@ -61,7 +61,7 @@ Adobe Commerce 2.4.4-p15は、以前のリリース 2.4.4で特定された脆�
 
 ## 2.4.4-p14
 
-Adobe Commerce 2.4.4-p14は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース ](../../lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
+Adobe Commerce 2.4.4-p14は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](../../lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
 
 セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)を参照してください。
 
@@ -203,7 +203,7 @@ Adobe Commerce 2.4.4-p5 セキュリティリリースには、以前のリリ�
 
 ### CVE-2022-31160のホットフィックスを適用する
 
-`jQuery-UI` ライブラリ バージョン 1.13.1には、Adobe CommerceとMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceおよびMagento Open Source 2.4.4、2.4.5、および2.4.6の依存関係です。 影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事「[jQuery UI セキュリティ脆弱性CVE-2022-31160修正プログラム（2.4.4、2.4.5、2.4.6 リリース ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176)）を適用する必要があります。
+`jQuery-UI` ライブラリ バージョン 1.13.1には、Adobe CommerceとMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceおよびMagento Open Source 2.4.4、2.4.5、および2.4.6の依存関係です。 影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事「[jQuery UI セキュリティ脆弱性CVE-2022-31160修正プログラム（2.4.4、2.4.5、2.4.6 リリース &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176)）を適用する必要があります。
 
 ## 2.4.4-p4
 
@@ -213,7 +213,7 @@ Adobe Commerce 2.4.4-p4 セキュリティリリースには、以前のリリ�
 
 ### CVE-2022-31160のホットフィックスを適用する
 
-`jQuery-UI` ライブラリ バージョン 1.13.1には、Adobe CommerceとMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceおよびMagento Open Source 2.4.4、2.4.5、および2.4.6の依存関係です。 影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事「[jQuery UI セキュリティ脆弱性CVE-2022-31160修正プログラム（2.4.4、2.4.5、2.4.6 リリース ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176)）を適用する必要があります。
+`jQuery-UI` ライブラリ バージョン 1.13.1には、Adobe CommerceとMagento Open Sourceの複数のバージョンに影響する既知のセキュリティ脆弱性（CVE-2022-31160）があります。 このライブラリは、Adobe CommerceおよびMagento Open Source 2.4.4、2.4.5、および2.4.6の依存関係です。 影響を受けるデプロイメントを実行しているマーチャントは、ナレッジベース記事「[jQuery UI セキュリティ脆弱性CVE-2022-31160修正プログラム（2.4.4、2.4.5、2.4.6 リリース &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176)）を適用する必要があります。
 
 ### ハイライト
 
@@ -266,6 +266,6 @@ DHLはスキーマバージョン 6.2を導入しており、近い将来スキ�
 
 **問題**: 2.4.4-p1 パッケージ `[2022-06-14T16:58:23.694Z] PHP Fatal error:  Declaration of Magento\TestFramework\ErrorLog\Logger::addRecord(int $level, string $message, array $context = []): bool must be compatible with Monolog\Logger::addRecord(int $level, string $message, array $context = [], ?Monolog\DateTimeImmutable $datetime = null): bool in /var/www/html/dev/tests/integration/framework/Magento/TestFramework/ErrorLog/Logger.php on line 69`で実行すると、Web APIと統合テストにこのエラーが表示されます。 **回避策**: `require monolog/monolog:2.6.0` コマンドを実行して、以前のバージョンのMonologをインストールします。<!-- AC-3651-->
 
-**問題**:Adobe Commerce 2.4.4からAdobe Commerce 2.4.4-p1へのアップグレード中に、パッケージ バージョンのダウングレードに関する通知が表示される場合があります。 これらのメッセージは無視できます。 パッケージバージョンの相違は、パッケージ生成時の異常に起因します。 製品機能には影響はありません。 影響を受けるシナリオと回避策について詳しくは、ナレッジベースの記事「2.4.4から2.4.4-p1](https://support.magento.com/hc/en-us/articles/8214752983949)」にアップグレードした後にダウングレードされた[ パッケージを参照してください。
+**問題**:Adobe Commerce 2.4.4からAdobe Commerce 2.4.4-p1へのアップグレード中に、パッケージ バージョンのダウングレードに関する通知が表示される場合があります。 これらのメッセージは無視できます。 パッケージバージョンの相違は、パッケージ生成時の異常に起因します。 製品機能には影響はありません。 影響を受けるシナリオと回避策について詳しくは、ナレッジベースの記事「2.4.4から2.4.4-p1[&#128279;](https://support.magento.com/hc/en-us/articles/8214752983949)」にアップグレードした後にダウングレードされた パッケージを参照してください。
 
 <!-- Last updated from includes: 2026-04-08 15:01:38 -->

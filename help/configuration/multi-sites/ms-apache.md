@@ -23,7 +23,7 @@ ht-degree: 0%
 
 - Web サイトごとに1つの仮想ホストを使用します。仮想ホスト設定ファイルは`/etc/httpd/httpd.conf`です
 
-  異なるオペレーティングシステム上のApacheの異なるバージョンは、仮想ホストを異なる方法で設定します。 仮想ホストの設定方法がわからない場合は、[Apache ドキュメント ](https://httpd.apache.org/docs/2.4/vhosts)またはネットワーク管理者に問い合わせてください。
+  異なるオペレーティングシステム上のApacheの異なるバージョンは、仮想ホストを異なる方法で設定します。 仮想ホストの設定方法がわからない場合は、[Apache ドキュメント &#x200B;](https://httpd.apache.org/docs/2.4/vhosts)またはネットワーク管理者に問い合わせてください。
 
 - Commerce ソフトウェアが`/var/www/html/magento2`にインストールされています
 - デフォルト以外に2つのWeb サイトがあります。
@@ -36,7 +36,7 @@ ht-degree: 0%
 複数のストアを設定するには、次のタスクを実行します。
 
 1. [管理画面でweb サイト、ストア、ストアビューを設定](ms-admin.md)。
-1. Commerce web サイトごとに[Apache バーチャルホスト ](#step-2-create-apache-virtual-hosts)を1つ作成します。
+1. Commerce web サイトごとに[Apache バーチャルホスト &#x200B;](#step-2-create-apache-virtual-hosts)を1つ作成します。
 
 ## 手順1：管理画面でweb サイト、ストアビュー、ストアビューを作成する
 
