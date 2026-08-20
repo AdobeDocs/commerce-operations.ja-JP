@@ -1,71 +1,71 @@
 ---
 title: MDVA-42046：製品属性に割り当てられた値が正しくありません
-description: MDVA-42046 パッチでは、日付入力フィールドを持つ製品の更新時に、製品属性に誤った値が割り当てられる問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.13 がインストールされている場合に利用できます。 パッチ ID は MDVA-42046。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+description: MDVA-42046 パッチは、日付入力フィールドを持つ製品を更新する際に、製品属性に誤った値が割り当てられる問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.13がインストールされている場合に利用できます。 パッチ IDはMDVA-42046です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 feature: Attributes, Products
 role: Admin
 exl-id: ff5903ff-70b3-4274-a8a1-450c2fde9750
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
 
 # MDVA-42046：製品属性に割り当てられた値が正しくありません
 
-MDVA-42046 パッチでは、日付入力フィールドを持つ製品の更新時に、製品属性に誤った値が割り当てられる問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.13 がインストールされている場合に使用できます。 パッチ ID は MDVA-42046。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+MDVA-42046 パッチは、日付入力フィールドを持つ製品を更新する際に、製品属性に誤った値が割り当てられる問題を修正します。 このパッチは、[品質パッチツール（QPT） ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.13がインストールされている場合に使用できます。 パッチ IDはMDVA-42046です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.2-p2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.3.4 ～ 2.3.5-p2 および 2.4.0 ～ 2.4.4
+* Adobe Commerce（すべてのデプロイメント方式） 2.3.4 - 2.3.5-p2および2.4.0 - 2.4.4
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-`news_from_date` または `news_to_date` のフィールドを使用して製品を保存すると、これらのフィールドの値がデフォルトにリセットされます。
+`news_from_date`および/または`news_to_date` フィールドを含む製品を保存すると、それらのフィールドの値はデフォルトにリセットされます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. シンプルな製品を作成します。
-1. 手順 1 で作成した製品をエクスポートします。
-1. 書き出された CSV ファイルで、「`news_from_date`」および「`news_to_date`」フィールドに値を入力します。 例えば、2021-05-15 や 2021-06-18 などです。
-1. 変更した CSV ファイルを使用して製品を読み込みます。
-1. 製品グリッドに、「製品を新規開始日に設定」および「製品を新規終了日に設定」の列を追加します。
-1. 製品の編集ページを開き、変更せずに **保存** をクリックします。
-1. 製品グリッドに戻り、製品のデータを確認します。
+1. シンプルな商品の作成。
+1. 手順1で作成した製品を書き出します。
+1. 書き出されたCSV ファイルで、`news_from_date`および`news_to_date` フィールドにいくつかの値を入力します。 例：2021-05-15および2021-06-18
+1. 変更したCSV ファイルを使用して製品を読み込みます。
+1. 製品グリッドに「製品を日付から新規に設定」および「製品を日付から新規に設定」の追加の列を追加します。
+1. 製品の編集ページを開き、変更を加えずに「**保存**」をクリックします。
+1. 商品グリッドに戻り、商品のデータを確認します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-「製品を新規開始日に設定」と「製品を新規終了日に設定」は、保存前と同じです。
+「製品を日付から新規に設定」と「製品を日付から新規に設定」の両方は、保存前と同じです。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-* 「製品を新しい開始日に設定」列と「製品を新しい終了日に設定」列の値が変更されました。
+* 「製品を新しい日付に設定」列と「製品を新しい日付に設定」列の値が変更されます。
 
-* 「製品を新規開始日として設定」列には現在の日付が表示され、「製品を新規終了日として設定」列には何も表示されません。
+* 「製品を日付から新しく設定」列には現在の日付が表示され、「製品を日付から新しく設定」列には空の値が表示されます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-品質向上パッチツールの詳細については、次を参照してください。
+品質パッチツールについて詳しくは、以下を参照してください。
 
-* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [品質パッチツール ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

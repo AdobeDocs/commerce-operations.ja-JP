@@ -4,7 +4,7 @@ description: サードパーティのAdobe Commerce拡張機能に起因する�
 role: Admin
 feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Adobe Commerceのサードパーティ製の拡張機能（モジュール）は、ストアフロントのパフォーマンスに悪影響を与えるさまざまな問題を引き起こす可能性があります。 次のベストプラクティスに従うことで、これらの問題を回避できます。
 
-- [&#x200B; プロセス外の拡張性](https://developer.adobe.com/commerce/extensibility/)を使用して、可能な限りCommerceの統合とカスタマイズを開発し、メンテナンスとアップグレード性を容易にします。
+- [ プロセス外の拡張性](https://developer.adobe.com/commerce/extensibility/)を使用して、可能な限りCommerceの統合とカスタマイズを開発し、メンテナンスとアップグレード性を容易にします。
 - [Commerce Marketplace](https://commercemarketplace.adobe.com//extensions.html)など、信頼できるソースからサードパーティの拡張機能をダウンロードして購入します。
 - すべてのサードパーティ拡張機能を最新バージョンに更新します。
 - サードパーティの拡張機能を最新の状態に保つことができない場合は、別の拡張機能の使用を検討してください。
@@ -23,11 +23,11 @@ Adobe Commerceのサードパーティ製の拡張機能（モジュール）は
 
 >[!NOTE]
 >
-> 新しいCommerce リリースとの互換性を維持するには、Adobe Commerce Marketplaceで利用可能なすべての拡張機能が必要です。 [&#x200B; リリースの互換性](https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/releases)を参照してください。
+> 新しいCommerce リリースとの互換性を維持するには、Adobe Commerce Marketplaceで利用可能なすべての拡張機能が必要です。 [ リリースの互換性](https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/releases)を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
+[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
@@ -36,5 +36,5 @@ Adobe Commerceのサードパーティ製の拡張機能（モジュール）は
 
 - [アップグレード計画のベストプラクティス](../../../upgrade/prepare/best-practices.md)
 - Adobe Commerce on cloud インフラストラクチャでサードパーティの拡張機能を使用する
-   - [テクノロジーと要件 – 開発とテスト](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
-   - [Integration and Stagingで完全にテストする理由](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)
+  - [テクノロジーと要件 – 開発とテスト](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/overview#cloud-req-devtest)
+  - [Integration and Stagingで完全にテストする理由](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

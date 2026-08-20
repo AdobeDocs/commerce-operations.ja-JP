@@ -3,44 +3,44 @@ title: アプリケーションの初期化とブートストラップ
 description: Commerce アプリケーションの初期化とブートストラップロジックについて説明します。
 feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
 
 # 初期化とブートストラップの概要
 
-Commerce アプリケーションを実行するには、次のアクションを [pub/index.php](https://github.com/magento/magento2/tree/2.4.8/pub/index.php) に実装します。
+Commerce アプリケーションを実行するには、[pub/index.php](https://github.com/magento/magento2/tree/2.4.8/pub/index.php)に次のアクションが実装されます。
 
-- お使いの環境にデプロイされたCommerce バージョンの [app/bootstrap.php](https://github.com/magento/magento2/blob/2.4.8/app/bootstrap.php) ファイルを含めます。 このファイルは、エラー処理、オートローダーの初期化、プロファイルオプションの設定、デフォルトのタイムゾーンの設定などの基本的な初期化ルーチンを実行します。
-- [\Magento\Framework\App\Bootstrap.php](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Bootstrap.php) <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. --> のインスタンスを作成します
-- Commerce アプリケーションインスタンスを作成します：[\Magento\Framework\AppInterface](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/AppInterface.php)
-- Commerceの実行
+- 環境にデプロイされたCommerce バージョンの[app/bootstrap.php](https://github.com/magento/magento2/blob/2.4.8/app/bootstrap.php) ファイルを含めます。 このファイルは、エラー処理、オートローダの初期化、プロファイルオプションの設定、デフォルトのタイムゾーンの設定など、重要な初期化ルーチンを実行します。
+- [\Magento\Framework\App\Bootstrap.php](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Bootstrap.php) <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. -->のインスタンスを作成します
+- Commerce アプリケーション インスタンスを作成します：[\Magento\Framework\AppInterface](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/AppInterface.php)
+- Commerceを実行
 
-## Bootstrap実行ロジック
+## Bootstrap run logic
 
-[Bootstrap オブジェクト &#x200B;](https://github.com/magento/magento2/tree/2.4.8/app/bootstrap.php) は、次のアルゴリズムを使用してCommerce アプリケーションを実行します。
+[ ブートストラップオブジェクト ](https://github.com/magento/magento2/tree/2.4.8/app/bootstrap.php)は、次のアルゴリズムを使用してCommerce アプリケーションを実行します。
 
 1. エラーハンドラーを初期化します。
-1. すべての場所で使用され、環境の影響を受ける [&#x200B; オブジェクト マネージャ &#x200B;](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/ObjectManager) と基本的な共有サービスを作成します。 環境パラメーターは、これらのオブジェクトに適切に挿入されます。
-1. メンテナンスモードが有効 _ではない_ とアサートし、有効でない場合は終了します。
-1. Commerce アプリケーションがインストールされていることをアサートします。インストールされていない場合は終了します。
+1. どこでも使用され、環境の影響を受ける[object manager](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/ObjectManager)と基本的な共有サービスを作成します。 環境パラメーターは、これらのオブジェクトに適切に挿入されます。
+1. メンテナンスモードが&#x200B;_not_&#x200B;有効になっていることを確認します。有効になっていない場合は終了します。
+1. Commerce アプリケーションがインストールされていることを確認します。インストールしていない場合は終了します。
 1. Commerce アプリケーションを起動します。
 
-   アプリケーションの起動中にキャッチされなかった例外は、例外の処理に使用できる `catchException()` メソッドでCommerceに自動的に返されます。 後者は、`true` または `false` のいずれかを返す必要があります。
+   アプリケーションの起動中に検出されない例外は、例外を処理するために使用できる`catchException()` メソッドでCommerceに自動的に渡されます。 後者は`true`または`false`のいずれかを返す必要があります。
 
-   - `true` の場合：Commerceが正常に例外を処理しました。 他に何もする必要はありません。
-   - `false`: （またはその他の空の結果）Commerceが例外を処理しなかった場合。 Bootstrap オブジェクトは、デフォルトの例外処理サブルーチンを実行します。
+   - `true`の場合：Commerceは例外を正常に処理しました。 他に何もする必要はありません。
+   - `false`: （またはその他の空の結果）の場合、Commerceは例外を処理しませんでした。 bootstrap オブジェクトは、デフォルトの例外処理サブルーチンを実行します。
 
-1. アプリケーションオブジェクトによって提供された応答を送信します。
+1. アプリケーションオブジェクトが提供する応答を送信します。
 
    >[!INFO]
    >
-   >Commerce アプリケーションがインストールされており、メンテナンスモードではないというアサーションが、`\Magento\Framework\App\Bootstrap` クラスのデフォルトの動作です。 Bootstrap オブジェクトの作成時に、エントリポイントスクリプトを使用して変更できます。
+   >Commerce アプリケーションがインストールされていて、メンテナンスモードになっていないというアサーションは、`\Magento\Framework\App\Bootstrap` クラスのデフォルトの動作です。 ブートストラップオブジェクトの作成時に、エントリポイントスクリプトを使用して変更できます。
 
-   Bootstrap オブジェクトを変更するエントリ ポイント スクリプトの例：
+   ブートストラップオブジェクトを変更するエントリポイントスクリプトの例：
 
    ```php
    <?php
@@ -59,53 +59,53 @@ Commerce アプリケーションを実行するには、次のアクション�
 
 ## デフォルトの例外処理
 
-ブートストラップオブジェクトは、Commerce アプリケーションがキャッチされなかった例外を処理する方法を次のように指定します。
+bootstrap オブジェクトは、次のように、Commerce アプリケーションが捕捉されない例外を処理する方法を指定します。
 
-- [&#x200B; 開発者モード &#x200B;](../bootstrap/application-modes.md#developer-mode) では、は例外をそのまま表示します。
-- その他のモードでは、は例外をログに記録し、一般的なエラーメッセージを表示しようとします。
-- エラーコード `1` でCommerceを終了します
+- [開発者モード ](../bootstrap/application-modes.md#developer-mode)では、例外をそのまま表示します。
+- 他のモードでは、例外をログに記録し、一般的なエラーメッセージを表示しようとします。
+- エラーコード `1`でCommerceを終了します
 
 ## エントリポイントアプリケーション
 
-次のエントリポイントアプリケーション（Web サーバーでディレクトリインデックスとして使用される、Commerceで定義されたアプリケーション）があります。
+次のエントリポイントアプリケーション（Commerceで定義されたアプリケーションで、web サーバーがディレクトリインデックスとして使用するもの）があります。
 
 ### HTTP エントリポイント
 
-[\Magento\Framework\App\Http](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Http) は次のように動作します。
+[\Magento\Framework\App\Http](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Http)は次のように動作します。
 
-1. [&#x200B; アプリケーション領域 &#x200B;](https://developer.adobe.com/commerce/php/architecture/modules/areas/) を決定します。
-1. コントローラ アクションを検索して実行するために、フロント コントローラとルーティング システムを開始します。
-1. HTTP 応答オブジェクトを使用して、コントローラアクションから取得した結果を返します。
-1. エラー処理（優先順位が次の順）:
+1. [ アプリケーション領域](https://developer.adobe.com/commerce/php/architecture/modules/areas)を決定します。
+1. コントローラのアクションを検索して実行するために、フロント コントローラとルーティング システムを開始します。
+1. HTTP応答オブジェクトを使用して、コントローラーアクションから取得した結果を返します。
+1. エラー処理（次の優先順位付け）:
 
-   1. [&#x200B; 開発者モード &#x200B;](../bootstrap/application-modes.md#developer-mode) を使用している場合：
-      - Commerce アプリケーションがインストールされていない場合は、セットアップウィザードにリダイレクトします。
-      - Commerce アプリケーションがインストールされている場合は、エラーと HTTP ステータスコード 500 （内部サーバーエラー）を表示します。
-   1. Commerce アプリケーションがメンテナンスモードの場合は、HTTP ステータスコード 503 （サービス利用不可）の、使いやすい「サービス利用不可」ランディングページを表示します。
-   1. Commerce アプリケーションがインストールされて _ない_ 場合は、セットアップウィザードにリダイレクトします。
+   1. [開発者モード ](../bootstrap/application-modes.md#developer-mode)を使用している場合：
+      - Commerce アプリケーションがインストールされていない場合は、Setup Wizardにリダイレクトします。
+      - Commerce アプリケーションがインストールされている場合は、エラーとHTTP ステータスコード 500 （内部サーバーエラー）が表示されます。
+   1. Commerce アプリケーションがメンテナンスモードの場合は、HTTP ステータスコード 503 （サービス利用不可）のユーザーフレンドリーな「サービス利用不可」ランディングページを表示します。
+   1. Commerce アプリケーションが&#x200B;_not_ インストールされている場合は、セットアップ ウィザードにリダイレクトします。
    1. セッションが無効な場合は、ホームページにリダイレクトします。
-   1. その他のアプリケーション初期化エラーがある場合は、HTTP ステータスコード 404 （見つかりません）を含む、ユーザーにわかりやすい「ページが見つかりません」ページを表示します。
-   1. その他のエラーでは、HTTP 応答 503 を使用してユーザーにわかりやすい「サービス利用不可」ページを表示し、エラーレポートを生成して、その ID をページに表示します。
+   1. 他のアプリケーション初期化エラーがある場合は、HTTP ステータスコード 404 （Not Found）のユーザーフレンドリーな「ページが見つかりません」ページを表示します。
+   1. 他のエラーの場合は、HTTP応答503のユーザーフレンドリーな「サービス利用不可」ページを表示し、エラーレポートを生成して、ページにIDを表示します。
 
 ### 静的リソースエントリポイント
 
-[\Magento\Framework\App\StaticResource](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/StaticResource.php) は、静的リソース （CSS、JavaScript、画像など）を取得するためのアプリケーションです。 リソースがリクエストされるまで、静的リソースを使用したすべてのアクションが延期されます。
+[\Magento\Framework\App\StaticResource](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/StaticResource.php)は、静的リソース （CSS、JavaScript、画像など）を取得するためのアプリケーションです。 リソースがリクエストされるまで、静的リソースを使用したアクションは延期されます。
 
 >[!INFO]
 >
->静的ビューファイルのエントリポイントは、サーバーでの潜在的な攻撃を回避するために [&#x200B; 実稼動モード &#x200B;](application-modes.md#production-mode) では使用されません。 実稼動モードでは、Commerce アプリケーションは、必要なすべてのリソースが `<your Commerce install dir>/pub/static` ディレクトリに存在することを想定します。
+>静的ビューファイルのエントリポイントは、[実稼動モード ](application-modes.md#production-mode)では、サーバー上の潜在的な悪用を避けるために使用されません。 実稼動モードでは、Commerce アプリケーションは、すべての必要なリソースが`<your Commerce install dir>/pub/static` ディレクトリに存在することを想定しています。
 
-デフォルトまたは開発者モードでは、存在しない静的リソースに対するリクエストは、適切な `.htaccess` で指定された書き換えルールに従って静的エントリポイントにリダイレクトされます。
-リクエストがエントリポイントにリダイレクトされると、Commerce アプリケーションは、取得されたパラメーターに基づいてリクエストされた URL を解析し、リクエストされたリソースを見つけます。
+デフォルトまたは開発者モードでは、存在しない静的リソースのリクエストは、適切な`.htaccess`によって指定された書き換えルールに従って、静的エントリポイントにリダイレクトされます。
+リクエストがエントリポイントにリダイレクトされると、Commerce アプリケーションは、取得したパラメーターに基づいてリクエスト URLを解析し、リクエストされたリソースを見つけます。
 
-- [&#x200B; 開発者 &#x200B;](application-modes.md#developer-mode) モードでは、リソースがリクエストされるたびに返されるコンテンツが最新の状態になるように、ファイルのコンテンツが返されます。
-- [&#x200B; デフォルト &#x200B;](application-modes.md#default-mode) モードでは、取得したリソースは公開され、以前にリクエストした URL からアクセスできるようになります。
+- [developer](application-modes.md#developer-mode) モードでは、リソースが要求されるたびに、返されるコンテンツが最新になるように、ファイルのコンテンツが返されます。
+- [default](application-modes.md#default-mode) モードでは、取得したリソースが公開され、以前に要求されたURLからアクセスできるようになります。
 
-  静的リソースに対する今後のリクエストはすべて、静的ファイルと同じようにサーバーによって処理されます。つまり、エントリポイントが関係なくなります。 公開済みのファイルを元のファイルと同期する必要がある場合は、`pub/static` ディレクトリを削除する必要があります。その結果、ファイルは次のリクエストで自動的に再公開されます。
+  静的リソースに対する今後のすべてのリクエストは、サーバーによって静的ファイルと同じように処理されます。つまり、エントリポイントは含まれません。 公開されたファイルを元のファイルと同期する必要がある場合は、`pub/static` ディレクトリを削除する必要があります。その結果、ファイルは次のリクエストで自動的に再公開されます。
 
-### メディアリソースのエントリポイント
+### メディアリソースエントリポイント
 
-[Magento\MediaStorage\App\Media](https://github.com/magento/magento2/tree/2.4.8/app/code/Magento/MediaStorage/App/Media.php) メディア リソース （メディア ストレージにアップロードされたファイル）をデータベースから取得します。 これは、データベースがメディアストレージとして設定されている場合は常に使用されます。
+[Magento\MediaStorage\App\Media](https://github.com/magento/magento2/tree/2.4.8/app/code/Magento/MediaStorage/App/Media.php)は、メディアリソース（つまり、メディアストレージにアップロードされたすべてのファイル）をデータベースから取得します。 データベースがメディアストレージとして設定されるたびに使用されます。
 
-`\Magento\Core\App\Media` は、構成されたデータベース・ストレージ内でメディア・ファイルを検索し、`pub/static` ディレクトリに書き込んでから、その内容を返します。 エラーの場合、内容を含まない HTTP 404 （見つかりません）ステータスコードがヘッダーに返されます。
+`\Magento\Core\App\Media`は、設定されたデータベースストレージ内のメディアファイルを検索して`pub/static` ディレクトリに書き込み、その内容を返そうとします。 エラーが発生すると、ヘッダーにHTTP 404 （Not Found）ステータスコードが返され、内容は返されません。
 

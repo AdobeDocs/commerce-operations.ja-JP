@@ -1,72 +1,72 @@
 ---
-title: ACSD-52202：デフォルト以外の在庫が順番に 0 数量に設定されると、デフォルトの在庫販売可能数量がエラーで 0 に変更される
-description: 注文でデフォルト以外の在庫が数量 0 に設定されている場合に、デフォルトの在庫販売可能数量が誤って 0 に変わるAdobe Commerceの問題を修正するために、ACSD-52202 パッチを適用します。
+title: ACSD-52202：初期設定の在庫販売可能数量が、初期設定の在庫以外の在庫を順番に0数量に設定すると、エラーで0に変更される
+description: ACSD-52202 パッチを適用して、注文でデフォルト以外の在庫が0数量に設定されている場合にデフォルトの在庫販売可能数量が0に変わるAdobe Commerceの問題を修正します。
 feature: Inventory, Products
 role: Admin
 exl-id: 2ba5cc3b-9774-49f6-948f-371ab3c0c9df
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
 
-# ACSD-52202：注文でデフォルト以外の在庫が数量 0 に設定されると、デフォルトの在庫販売可能数量がエラーで 0 に変更される
+# ACSD-52202：注文でデフォルト以外の在庫を0に設定すると、デフォルトの在庫販売可能数量が0に変更される
 
-ACSD-52202 パッチは、注文でデフォルト以外の在庫が 0 数量に設定されている場合に、デフォルトの在庫販売可能数量（数量）がエラーで 0 に変更される問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.35 がインストールされている場合に使用できます。 パッチ ID は ACSD-52202 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-52202 パッチでは、注文でデフォルト以外の在庫が0数量に設定されている場合に、デフォルトの在庫販売可能数量（qty）がエラーで0に変更される問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.35がインストールされている場合に利用できます。 パッチ IDはACSD-52202です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 ～ 2.4.6-p1
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 - 2.4.6-p1
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-注文でデフォルト以外の在庫が 0 数量に設定されている場合、デフォルトの在庫販売可能数量がエラーで 0 に変更される。
+注文でデフォルト以外の在庫が0に設定されている場合、デフォルトの在庫販売可能数量はエラーで0に変更されます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. [!DNL Admin] にログインします。
-1. **website2** を作成します。
-1. カスタム **source2** を作成します。
-1. カスタム **stock2** を作成します。
-1. **source2** と **stock2** を **website1** に割り当て、デフォルトのソースと stock をデフォルトの web サイトに割り当てます。
-1. シンプルな製品を作成し、デフォルトソースに **qty** = *10*、ソースに **qty** = *1* を割り当てます **source2**。
-1. **website2** の場合は、*qty* = **1** の注文を行います。
-1. 請求書と出荷を作成します。
-1. 簡易製品 **販売可能数量** を確認します。
+1. [!DNL Admin]にログインします。
+1. **web サイト 2**&#x200B;を作成します。
+1. カスタム **source2**&#x200B;を作成します。
+1. カスタム **stock2**&#x200B;を作成します。
+1. **source2**&#x200B;と&#x200B;**stock2**&#x200B;を&#x200B;**website1**&#x200B;に割り当て、デフォルトのソースと在庫をデフォルトのweb サイトに割り当てます。
+1. シンプルな商品を作成し、デフォルトソースに&#x200B;**qty** = *10*&#x200B;を割り当て、**source2** ソースに&#x200B;**qty** = *1*&#x200B;を割り当てます。
+1. **web サイト 2**&#x200B;の&#x200B;**qty** = *1*&#x200B;で注文します。
+1. 請求書と配送を作成します。
+1. 簡易商品&#x200B;**販売可能数量**&#x200B;を確認してください。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-**source2** の *salable quantity* = **10**。
+**source2**&#x200B;の&#x200B;**販売可能数量** = *10*。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-両方のソースの **販売可能数量** = *0*。
+両方のソースの&#x200B;**販売可能な数量** = *0*。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

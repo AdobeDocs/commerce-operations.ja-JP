@@ -5,9 +5,9 @@ feature: Data Import/Export
 role: Admin, Developer
 exl-id: 785907dc-aa3f-49e2-bd52-c3afe4393456
 type: Troubleshooting
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ACSD-63139 パッチでは、製品属性に数千ものオプション値が含
 
 >[!NOTE]
 >
->このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
@@ -38,16 +38,16 @@ ACSD-63139 パッチでは、製品属性に数千ものオプション値が含
 
 1. B2B モジュールを使用してAdobe Commerceをインストールします。
 1. 以下を使用して大規模なデータベースダンプを読み込みます。
-   &#x200B;- ～7,000製品
-   &#x200B;- ～450個の製品属性
-   &#x200B;- 100を超えるオプションを持つ一部の属性
+   - ～7,000製品
+   - ～450個の製品属性
+   - 100を超えるオプションを持つ一部の属性
 1. 次のコマンドを実行して、cronをインストールします（まだインストールされていない場合）。
 
    ```shell
    bin/magento cron:install
    ```
 
-1. [[!DNL RabbitMQ] 前提条件](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/message-brokers/rabbitmq)の指示に従って[!DNL RabbitMQ]を設定します。
+1. [[!DNL RabbitMQ] 前提条件](/help/installation/prerequisites/rabbitmq.md)の指示に従って[!DNL RabbitMQ]を設定します。
 1. `php.ini` ファイルを開き、メモリ制限を4Gに設定し、PHP サービスを再起動します。
 1. 管理パネルで、**[!UICONTROL System]** > *[!UICONTROL Data Transfer]* > **[!UICONTROL Export]**&#x200B;に移動します。
 1. *[!UICONTROL Export Settings]* セクションで、**[!UICONTROL Entity Type]**&#x200B;を&#x200B;*製品*&#x200B;に設定し、一番下までスクロールして&#x200B;**[!UICONTROL Continue]**&#x200B;をクリックします。
@@ -74,10 +74,10 @@ Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocat
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
 [!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

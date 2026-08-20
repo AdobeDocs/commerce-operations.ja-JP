@@ -1,93 +1,93 @@
 ---
-title: 'ACSD-50887: *[!UICONTROL Use in Search Results Layered Navigation]* オプションを指定せずに*[!UICONTROL Use in Search]*を [ はい ] に設定'
-description: ACSD-50887 パッチを適用すると、Adobe Commerceの問題が修正されます。この問題では、*[!UICONTROL Use in Search Results Layered Navigation]* オプションも*Yes*に設定されていない場合に、product 属性プロパティ*[!UICONTROL Use in Search]*を*Yes*に設定できます。
+title: 'ACSD-50887: *[!UICONTROL Use in Search Results Layered Navigation]*は、*[!UICONTROL Use in Search]* オプションなしで「はい」に設定されています'
+description: ACSD-50887 パッチを適用して、*[!UICONTROL Use in Search]* オプションも*Yes*に設定されずにproduct attribute プロパティ *[!UICONTROL Use in Search Results Layered Navigation]*を*Yes*に設定できるAdobe Commerceの問題を修正します。
 feature: Attributes, Products, Search, Storefront
 role: Admin, Developer
 exl-id: 5e797121-c386-4aca-9139-0a02a60be38a
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
 
-# ACSD-50887:*[!UICONTROL Use in Search Results Layered Navigation]* オプションを指定せずに *を* はい *[!UICONTROL Use in Search]* に設定する
+# ACSD-50887: *[!UICONTROL Use in Search Results Layered Navigation]*&#x200B;が&#x200B;*[!UICONTROL Use in Search]* オプションなしで&#x200B;*Yes*&#x200B;に設定されました
 
-ACSD-50887 パッチでは、*[!UICONTROL Use in Search Results Layered Navigation]* オプションも *Yes* に設定されていない状態で、product 属性プロパティの *[!UICONTROL Use in Search]* が *Yes* に設定される問題が修正されています。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.36 がインストールされている場合に使用できます。 パッチ ID は ACSD-50887 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-50887 パッチでは、*[!UICONTROL Use in Search]* オプションも&#x200B;*Yes*&#x200B;に設定されずに、製品属性プロパティ *[!UICONTROL Use in Search Results Layered Navigation]*&#x200B;を&#x200B;*Yes*&#x200B;に設定できる問題が修正されました。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.36がインストールされている場合に利用できます。 パッチ IDはACSD-50887です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.0 ～ 2.4.6-p2
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.0 - 2.4.6-p2
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-製品属性プロパティ *[!UICONTROL Use in Search Results Layered Navigation]* は *はい* に設定できます。*[!UICONTROL Use in Search]* オプションも *はい* に設定する必要はありません。
+製品属性プロパティ *[!UICONTROL Use in Search Results Layered Navigation]*&#x200B;は、*[!UICONTROL Use in Search]* オプションも&#x200B;*Yes*&#x200B;に設定しなくても、*Yes*&#x200B;に設定できます。
 
-これらの設定は、一緒に使用するように設計されています。 パッチを適用した状態で *[!UICONTROL Use in Search]* オプションを *いいえ* に設定すると、*[!UICONTROL Use in Search Results Layered Navigation]* オプションも *いいえ* に設定されているかのように機能します。
+これらの設定は一緒に使用するように設計されています。 パッチが適用された場合、*[!UICONTROL Use in Search]* オプションが&#x200B;*No*&#x200B;に設定されている場合、*[!UICONTROL Use in Search Results Layered Navigation]* オプションは非表示になり、*No*&#x200B;にも設定されているかのように動作します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 管理者で、**[!UICONTROL Stores]** / **[!UICONTROL Attribute]** / **[!UICONTROL Product]** に移動し、複数選択タイプの属性を作成して、以下を設定します。
+1. 管理者で、**[!UICONTROL Stores]** > **[!UICONTROL Attribute]** > **[!UICONTROL Product]**&#x200B;に移動し、multiselect タイプを持つ属性を作成して、次を設定します。
 
    * *[!UICONTROL Use in Search]= No*
    * *[!UICONTROL Use in Layered Navigation]= （任意のオプション）*
    * *[!UICONTROL Use in Search Results Layered Navigation]=はい*
-   * *Name = Test_attribute*
+   * *名前= テスト属性*
    * *オプション*:
-      * *ステッカー*
-      * *ピッカー*
+     * *ステッカー*
+     * *ピッカー*
 
 1. 新しい属性をデフォルトの属性セットに追加します。
-1. 2 つの製品を作成します。
+1. 2つの製品を作成します。
 
    1. 最初の製品：
       * 名前= ステッカー
-      * 価格、数量、重量を 1 に設定
-      * Test_attribute = select option *ステッカー*
+      * 価格、数量、重量を1に設定
+      * Test_attribute = オプション *ステッカー*&#x200B;を選択
 
-   1. 2 番目の製品：
-      * 名前= ピッカー
-      * 価格、数量、重量を 1 に設定
-      * Test_attribute =両方のオプションを選択します
+   1. 2つ目の製品：
+      * 名前=ピッカー
+      * 価格、数量、重量を1に設定
+      * Test_attribute =両方のオプションを選択
 
-1. 再インデックス `catalogsearch_fulltext` 実行します。
+1. `catalogsearch_fulltext`のインデックス再作成を実行：
 
    `bin/magento indexer:reindex catalogsearch_fulltext`
 
-1. 店頭で *ステッカー* という言葉で検索します。
+1. ストアフロントで「*sticker*」という単語で検索します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-製品 *Sticker* のみが返されます。これは、[!DNL Elasticsearch] が *[!UICONTROL Use in Search]* No *に設定されている場合、* が Test_attribute のインデックスを作成しないためです。
+*[!UICONTROL Use in Search]*&#x200B;が&#x200B;*No*&#x200B;に設定されている場合、[!DNL Elasticsearch]はTest_attributeのインデックスを作成しないため、製品&#x200B;*ステッカー*&#x200B;のみが返されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-両方の製品が返されます。
+両方の製品が返品されます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

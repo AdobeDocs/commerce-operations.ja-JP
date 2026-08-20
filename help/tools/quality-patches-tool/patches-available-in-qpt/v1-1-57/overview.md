@@ -5,9 +5,9 @@ feature: Tools and External Services
 role: Admin, Developer
 exl-id: 3e252a71-f35f-4046-9353-169060451ffe
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ QPT v1.1.57には、次のパッチが含まれています。
 1. **ACSD-57570**：特定のストアへのアクセス権を持つ制限付き管理者ユーザーが、製品が割り当てられているすべての共有カタログを常に表示できない、または保存できない顧客を表示できるため、システムの不整合が生じる、という問題を修正します。
 1. **ACSD-58325**：検証エラーの後でも[!UICONTROL Import] ボタンが使用できる問題を修正します。
 1. **ACSD-59083**: [!DNL mview]の更新が同時に実行されている場合に、一部のデータベースの更新操作が&#x200B;_ベーステーブルまたはビューが見つからない_ エラーが発生する問題を修正します。
-1. **ACSD-61622**：応答で[!DNL FedEx] アカウント固有のレートが欠落している問題を修正します。 ACSD-61622は、 [!DNL SOAP] から [!DNL RESTful API][&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api)への[!DNL FedEx] 出荷方法の統合移行で説明されている修正に代わるものです。
+1. **ACSD-61622**：応答で[!DNL FedEx] アカウント固有のレートが欠落している問題を修正します。 ACSD-61622は、 [!DNL SOAP] から [!DNL RESTful API]](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27131)への[[!DNL FedEx] 出荷方法の統合移行で説明されている修正に代わるものです。
 1. **ACSD-61895**: ルートカテゴリに&#x200B;*allow*&#x200B;権限がない場合でも、カテゴリ [!DNL GraphQL] クエリが&#x200B;*allow*&#x200B;権限を持つカテゴリを返す問題を修正しました。
 1. **ACSD-62212**: [!UICONTROL Forgot Password]電子メールコンテンツがストアビューの言語に翻訳されない問題を修正します。
 1. **ACSD-62481**: [!UICONTROL Persistence]が有効になっている場合でも、顧客の買い物かごが空になる問題を修正します。

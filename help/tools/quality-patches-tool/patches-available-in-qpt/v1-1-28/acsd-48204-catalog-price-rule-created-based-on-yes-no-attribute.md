@@ -1,81 +1,81 @@
 ---
-title: ACSD-48204:*Yes/No*属性に基づいて作成されたカタログ価格ルールで、選択した範囲が考慮されない
-description: ACSD-48204 パッチを適用すると、*Yes/No*属性に基づいて作成されたカタログ価格ルールが選択した範囲を考慮しないAdobe Commerceの問題が修正されます。
+title: 'ACSD-48204: *Yes/No*属性に基づいて作成されたカタログ価格ルールで、選択した範囲が考慮されない'
+description: ACSD-48204 パッチを適用して、*Yes/No*属性に基づいて作成されたカタログ価格ルールが選択した範囲を考慮しないAdobe Commerceの問題を修正します。
 feature: Admin Workspace, Attributes, Catalog Management, Orders, Price Rules
 role: Admin
 exl-id: 69f2b35c-856e-4f96-ae2f-fb0c64d5eb94
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 0%
+source-wordcount: '488'
+ht-degree: 2%
 
 ---
 
-# ACSD-48204: *Yes/No* 属性に基づいて作成されたカタログ価格ルールで、選択した範囲が考慮されない
+# ACSD-48204: *Yes/No*&#x200B;属性に基づいて作成されたカタログ価格ルールは、選択した範囲を考慮しません
 
-ACSD-48204 パッチは、*Yes/No* 属性に基づいて作成されたカタログ価格ルールが選択した範囲を考慮しない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.28 がインストールされている場合に使用できます。 パッチ ID は ACSD-48204 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-48204 パッチは、*Yes/No*&#x200B;属性に基づいて作成されたカタログ価格ルールが、選択した範囲を考慮しない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.28がインストールされている場合に利用できます。 パッチ IDはACSD-48204です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.2-p2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 ～ 2.4.2-p2
+* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 - 2.4.2-p2
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-*Yes/No* 属性に基づいて作成されたカタログ価格ルールでは、選択した範囲が考慮されません。
+*Yes/No*&#x200B;属性に基づいて作成されたカタログ価格ルールは、選択した範囲を考慮しません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 2 つの web サイト（デフォルトと W2）を作成します。
-1. *はい/いいえ* タイプの製品属性を作成します。
+1. 2つのWeb サイト（デフォルトとW2）を作成します。
+1. *Yes/No* タイプの製品属性を作成します。
    * Set [!UICONTROL Default value] = [!UICONTROL No]
    * [!UICONTROL Scope] = [!UICONTROL Website]
    * [!UICONTROL Use for Promo Rule Conditions] = [!UICONTROL Yes]
-1. 2 つのバリエーション（V1 と V2）を持つ任意の属性に基づいて、設定可能な製品を作成します。
-   * 設定可能なバリエーション属性セットに *はい/いいえ* 属性を追加します
-   * バリエーション（V1）の場合は、デフォルト以外の web サイト（W2）で値を *[!UICONTROL Yes]* に設定します
-1. カタログルールを作成します。
-   * 両方の web サイトに適用
-   * 条件：*はい/いいえ* 属性値は *[!UICONTROL Yes]* です
+1. 2つのバリエーション（V1とV2）を持つ任意の属性に基づいて、設定可能な製品を作成します。
+   * 設定可能なバリエーション属性セットに&#x200B;*Yes/No*&#x200B;属性を追加します
+   * バリエーション（V1）の1つについては、デフォルト以外のweb サイト（W2）で値を&#x200B;*[!UICONTROL Yes]*&#x200B;に設定します
+1. カタログルールの作成：
+   * 両方のウェブサイトに適用
+   * 条件：*はい/いいえ*&#x200B;属性値は&#x200B;*[!UICONTROL Yes]*&#x200B;です
    * 割引= 50%
-1. 設定可能な製品を非デフォルト web サイト（W2）で開きます。
-1. V1 バリエーションに 50% のディスカウントが適用されていることを確認します。
-1. Adobe Commerce Admin で V1 バリエーションを開きます。
-   * デフォルトの Web サイトに切り替える
-   * 何も変更せず、商品を保存する
+1. デフォルト以外のweb サイト（W2）で設定可能な製品を開きます。
+1. V1のバリエーションに50%の割引が適用されていることを確認します。
+1. Adobe Commerce管理者でV1 バリエーションを開きます。
+   * 既定のWeb サイトに切り替える
+   * 変更を加えずに製品を保存します
 1. 設定可能な製品ストアフロントページを更新します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-V1 バリエーションには、変更が行われていないので、引き続き 50% のディスカウントが適用されます。
+V1のバリエーションは、変更が行われなかったため、50%の割引が引き続き適用されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-割引が消える。
+割引は消えます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

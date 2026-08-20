@@ -1,42 +1,42 @@
 ---
 title: env.php リファレンス
-description: env.php ファイルの設定値と、Adobe Commerceの節について説明します。 環境設定と設定オプションについて説明します。
+description: Adobe Commerceのenv.php ファイルの設定値とセクションについて説明します。 環境設定と設定オプションの詳細。
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
 
 # env.php リファレンス
 
-`env.php` ファイルには、次のセクションが含まれます。
+`env.php` ファイルには、次のセクションが含まれています。
 
 | 名前 | 説明 |
 |-------------------------------|-----------------------------------------------------------------|
-| `backend` | 管理領域の設定 |
-| `cache` | redis ページとデフォルトキャッシュの設定 |
+| `backend` | 管理者領域の設定 |
+| `cache` | redis ページとデフォルトのキャッシュの設定 |
 | `cache_types` | キャッシュストレージ設定 |
-| `consumers_wait_for_messages` | コンシューマーがメッセージキューからのメッセージを処理する方法を設定します |
+| `consumers_wait_for_messages` | 消費者がメッセージキューからのメッセージを処理する方法を設定します |
 | `cron` | cron ジョブを有効または無効にする |
-| `crypt` | 暗号化機能の暗号化キー |
-| `db` | データベース接続設定 |
+| `crypt` | 暗号関数の暗号化キー |
+| `db` | データベース接続の設定 |
 | `default_connection` | メッセージキューのデフォルト接続 |
-| `directories` | Commerce ディレクトリのマッピング設定 |
+| `directories` | Commerce ディレクトリマッピング設定 |
 | `downloadable_domains` | ダウンロード可能なドメインのリスト |
-| `install` | インストールの日付 |
-| `lock` | プロバイダ設定のロック |
-| `MAGE_MODE` | [&#x200B; アプリケーションモード &#x200B;](../bootstrap/application-modes.md) |
-| `queue` | [&#x200B; メッセージキュー &#x200B;](../queues/manage-message-queues.md) 設定 |
-| `resource` | リソース名の接続へのマッピング |
+| `install` | インストール日 |
+| `lock` | プロバイダー設定のロック |
+| `MAGE_MODE` | [ アプリケーションモード ](../bootstrap/application-modes.md) |
+| `queue` | [ メッセージキュー](../queues/manage-message-queues.md)設定 |
+| `resource` | 接続へのリソース名のマッピング |
 | `session` | セッションストレージデータ |
-| `system` | 管理者で編集するフィールドを無効にします |
-| `x-frame-options` | [x-frame-options](../security/xframe-options.md) の設定 |
+| `system` | 管理画面で編集するフィールドを無効にします |
+| `x-frame-options` | [x-frame-options](../security/xframe-options.md)の設定 |
 
 ## バックエンド
 
-env.php の **ノードを使用して、Commerceの管理者 URL の** frontName`backend` を設定します。
+env.phpの`backend` ノードを使用して、Commerce管理者URLの&#x200B;**frontName**&#x200B;を設定します。
 
 ```conf
 'backend' => [
@@ -46,7 +46,7 @@ env.php の **ノードを使用して、Commerceの管理者 URL の** frontNam
 
 ## キャッシュ
 
-`cache` ファイルのノードを使用して、redis ページとデフォルト `env.php` キャッシュを設定します。
+`env.php` ファイルの`cache` ノードを使用して、redis ページとデフォルトのキャッシュを設定します。
 
 ```conf
 'cache' => [
@@ -72,11 +72,11 @@ env.php の **ノードを使用して、Commerceの管理者 URL の** frontNam
 ]
 ```
 
-詳しくは、[Redis 設定 &#x200B;](../cache/redis-pg-cache.md) を参照してください。
+詳しくは、[Redis Configuration](../cache/redis-pg-cache.md)を参照してください。
 
-## cache_type
+## cache_types
 
-このノードからは、すべてのキャッシュタイプ設定を使用できます。
+すべてのキャッシュタイプ設定は、このノードから使用できます。
 
 ```conf
 'cache_types' => [
@@ -98,11 +98,11 @@ env.php の **ノードを使用して、Commerceの管理者 URL の** frontNam
 ]
 ```
 
-様々な [&#x200B; キャッシュタイプ &#x200B;](../cli/manage-cache.md) の詳細をご覧ください。
+様々な[ キャッシュタイプ ](../cli/manage-cache.md)について詳しく説明します。
 
 ## consumers_wait_for_messages
 
-処理されたメッセージの数が `max_messages` 未満の場合に、コンシューマーがメッセージのポーリングを続行するかどうかを指定します。 デフォルト値は `1` です。
+処理済みメッセージの数が`max_messages`値未満の場合、消費者がメッセージのポーリングを続行するかどうかを指定します。 デフォルト値は`1`です。
 
 ```conf
 'queue' => [
@@ -112,17 +112,17 @@ env.php の **ノードを使用して、Commerceの管理者 URL の** frontNam
 
 次のオプションを使用できます。
 
-- `1` - コンシューマは、TCP 接続を閉じてコンシューマ・プロセスを終了する前に、メッセージ・キューからメッセージの処理を `max_messages` ファイルで指定された `env.php` 値に達するまで続行します。 キューが `max_messages` 値に達する前に空になった場合、コンシューマーは到着するメッセージがさらに届くのを待ちます。
+- `1` - TCP接続を閉じてコンシューマープロセスを終了する前に、`env.php` ファイルで指定された`max_messages`値に達するまで、消費者はメッセージキューからのメッセージを処理し続けます。 キューが`max_messages`の値に達する前に空になった場合、消費者はより多くのメッセージが届くのを待ちます。
 
-  この設定は大規模なマーチャントにお勧めです。メッセージフローが常に発生することが予想され、処理の遅延は望ましくないからです。
+  一定のメッセージフローが期待され、処理の遅延が望ましくないため、大規模なマーチャントにこの設定をお勧めします。
 
-- `0` - コンシューマーはキュー内の使用可能なメッセージを処理し、TCP 接続を閉じて終了します。 コンシューマーは、処理されたメッセージの数が `max_messages` ファイルで指定された `env.php` 値より少ない場合でも、追加のメッセージがキューに入るのを待ちません。 これにより、メッセージキューの処理に長い遅延が発生することによる cron ジョブの問題を防ぐことができます。
+- `0` - コンシューマーはキュー内の使用可能なメッセージを処理し、TCP接続を閉じて終了します。 処理済みメッセージの数が`env.php` ファイルで指定された`max_messages`値より少ない場合でも、消費者は追加のメッセージがキューに入るのを待ちません。 これにより、メッセージキュー処理の遅延が長くなることによるcron ジョブの問題を回避できます。
 
-  この設定は、メッセージ フローが常に発生するとは限らない小規模なマーチャントに推奨されます。この場合、数日間メッセージが送信されない可能性がある場合は、小規模な処理の遅延と引き換えに、コンピューティング リソースを節約することをお勧めします。
+  この設定は、一定のメッセージフローを期待せず、メッセージが何日も表示されない可能性がある場合に小さな処理の遅延と引き換えにコンピューティングリソースを節約することを好む小規模なマーチャントにお勧めします。
 
 ## cron
 
-Commerce アプリケーションの cron ジョブを有効または無効にします。 デフォルトでは、cron ジョブが有効になっています。 無効にするには、`cron` ファイルに `env.php` 設定を追加し、値を `0` に設定します。
+Commerce アプリケーションのcron ジョブを有効または無効にします。 デフォルトでは、cron ジョブは有効になっています。 無効にするには、`cron`設定を`env.php` ファイルに追加し、値を`0`に設定します。
 
 ```conf
 'cron' => [
@@ -132,13 +132,13 @@ Commerce アプリケーションの cron ジョブを有効または無効に�
 
 >[!WARNING]
 >
->cron ジョブを無効にする場合は注意が必要です。 無効にすると、Commerce アプリケーションで必要な必須プロセスは実行されません。
+>cron ジョブを無効にする場合は注意してください。 無効にすると、Commerce アプリケーションで必要な基本的なプロセスが実行されません。
 
-詳しくは、[Cron](../cli/configure-cron-jobs.md) を参照してください。
+[Crons](../cli/configure-cron-jobs.md)の詳細をご覧ください。
 
-## 陰窩
+## 暗号化
 
-Commerceでは、パスワードやその他の機密データを保護するために暗号化キーを使用します。 このキーは、インストールプロセス中に生成されます。
+Commerceでは、暗号化キーを使用してパスワードやその他の機密データを保護しています。 このキーは、インストールプロセス中に生成されます。
 
 ```conf
 'crypt' => [
@@ -146,11 +146,11 @@ Commerceでは、パスワードやその他の機密データを保護するた
 ]
 ```
 
-[&#x200B; 暗号化キー &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/encryption-key) について詳しくは、_Commerce ユーザーガイド_ を参照してください。
+[暗号化キー](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)の詳細については、_Commerce ユーザーガイド_&#x200B;を参照してください。
 
 ## db
 
-このノードでは、すべてのデータベース設定を使用できます。
+すべてのデータベース設定は、このノードで使用できます。
 
 ```conf
 'db' => [
@@ -172,7 +172,7 @@ Commerceでは、パスワードやその他の機密データを保護するた
 
 ## default_connection
 
-メッセージキューのデフォルト接続を定義します。 値には、`db`、`amqp`、`stomp`、`redismq` などのカスタムキューシステムを指定できます。 `db` 以外の値を指定する場合は、最初にメッセージキューソフトウェアをインストールして設定する必要があります。 そうしないと、メッセージは正しく処理されません。
+メッセージキューのデフォルト接続を定義します。 値は、`db`、`amqp`、`stomp`、または`redismq`のようなカスタムキューシステムにすることができます。 `db`以外の値を指定する場合は、最初にメッセージキューソフトウェアをインストールして設定する必要があります。 それ以外の場合、メッセージは正しく処理されません。
 
 ```conf
 'queue' => [
@@ -188,12 +188,12 @@ STOMP （ActiveMQ Artemis）の場合：
 ]
 ```
 
-システムの `queue/default_connection` ファイルで `env.php` が指定されている場合、`queue_topology.xml`、`queue_publisher.xml`、または `queue_consumer.xml` ファイルで特定の接続が定義されていない限り、この接続はシステムを通じてすべてのメッセージキューで使用されます。
-例えば、`queue/default_connection` に `amqp` が `env.php` まれているのに、モジュールのキュー設定 XML ファイルで `db` 接続が指定されている場合、モジュールは MySQL をメッセージブローカーとして使用します。
+`queue/default_connection`がシステム `env.php` ファイルで指定されている場合、特定の接続が`queue_topology.xml`、`queue_publisher.xml`または`queue_consumer.xml` ファイルで定義されていない限り、この接続はシステムを介するすべてのメッセージキューに使用されます。
+例えば、`queue/default_connection`が`env.php`の`amqp`であるが、`db`接続がモジュールのキュー構成XML ファイルで指定されている場合、モジュールはMySQLをメッセージブローカーとして使用します。
 
 ## ディレクトリ
 
-Web サーバーが `/pub` ディレクトリからCommerce アプリケーションを提供するように設定されている場合に設定する必要があるオプションのディレクトリマッピングオプション [&#x200B; セキュリティの向上 &#x200B;](../../installation/tutorials/docroot.md)。
+Web サーバーが`/pub` ディレクトリから[ セキュリティの向上](../../installation/tutorials/docroot.md)のためにCommerce アプリを提供するように設定されている場合に設定する必要がある、オプションのディレクトリマッピングオプション。
 
 ```conf
 'directories' => [
@@ -201,9 +201,9 @@ Web サーバーが `/pub` ディレクトリからCommerce アプリケーシ�
 ]
 ```
 
-## downloadable_domains
+## downloadable_domain
 
-このノードで利用できるダウンロード可能なドメインのリスト。 追加のドメインは、CLI コマンドを使用して追加、削除、一覧表示できます。
+このノードで使用可能なダウンロード可能なドメインのリスト。 追加のドメインは、CLI コマンドを使用して追加、削除、または一覧表示できます。
 
 ```conf
 'downloadable_domains' => [
@@ -211,9 +211,9 @@ Web サーバーが `/pub` ディレクトリからCommerce アプリケーシ�
 ]
 ```
 
-詳細情報 [&#x200B; ダウンロード可能なドメイン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
+[ ダウンロード可能なドメイン ](/help/tools/reference/commerce-on-premises.md#downloadabledomainsadd)の詳細をご覧ください。
 
-## install
+## インストール
 
 Commerce アプリケーションのインストール日。
 
@@ -225,11 +225,11 @@ Commerce アプリケーションのインストール日。
 
 ## ロック
 
-ロックプロバイダーの設定は、`lock` ノードを使用して設定します。
+ロックプロバイダーの設定は、`lock` ノードを使用して設定されます。
 
-詳細情報 [&#x200B; ロックプロバイダー設定 &#x200B;](../../installation/tutorials/lock-provider.md)。
+[ プロバイダ設定のロック ](../../installation/tutorials/lock-provider.md)の詳細を説明します。
 
-## MAGE_モード
+## MAGE_MODE
 
 デプロイモードは、このノードで設定できます。
 
@@ -237,11 +237,11 @@ Commerce アプリケーションのインストール日。
 'MAGE_MODE' => 'developer'
 ```
 
-[&#x200B; アプリケーションモード &#x200B;](../cli/set-mode.md) の詳細情報。
+[ アプリケーションモード ](../cli/set-mode.md)の詳細をご覧ください。
 
 ## キュー
 
-このノードでは、メッセージキュー設定を使用できます。 RabbitMQ （AMQP）または ActiveMQ Artemis （STOMP）をメッセージブローカーとして設定できます。
+メッセージキューの設定は、このノードで使用できます。 RabbitMQ （AMQP）またはActiveMQ Artemis （STOMP）をメッセージブローカーとして設定できます。
 
 ```conf
 'queue' => [
@@ -252,9 +252,9 @@ Commerce アプリケーションのインストール日。
 ]
 ```
 
-詳細情報：[&#x200B; メッセージキュー &#x200B;](https://developer.adobe.com/commerce/php/development/components/message-queues/)。
+[ メッセージキュー](https://developer.adobe.com/commerce/php/development/components/message-queues/)の詳細をご覧ください。
 
-## resource
+## リソース
 
 リソース設定は、このノードで使用できます。
 
@@ -266,9 +266,9 @@ Commerce アプリケーションのインストール日。
 ]
 ```
 
-## session
+## セッション
 
-セッション設定は、`session` ノードに保存されます。
+セッション設定は`session` ノードに保存されます。
 
 ```conf
 'session' => [
@@ -276,7 +276,7 @@ Commerce アプリケーションのインストール日。
 ],
 ```
 
-詳細情報：[&#x200B; セッション &#x200B;](../storage/sessions.md)。
+[ セッション ](../storage/sessions.md)の詳細をご覧ください。
 
 ## x-frame-options
 
@@ -286,11 +286,11 @@ x-frame-options ヘッダーは、このノードを使用して設定できま�
 'x-frame-options' => 'SAMEORIGIN'
 ```
 
-詳しくは、[x-frame-options](../security/xframe-options.md) を参照してください。
+[x-frame-options](../security/xframe-options.md)の詳細をご覧ください。
 
-## system
+## システム
 
-このノードを使用して、Commerceは `env.php` ファイル内の設定値をロックし、管理者でそのフィールドを無効にします。
+このノードを使用すると、Commerceは`env.php` ファイル内の設定値をロックし、管理者のフィールドを無効にします。
 
 ```conf
 'system' => [
@@ -303,7 +303,7 @@ x-frame-options ヘッダーは、このノードを使用して設定できま�
   ]
 ```
 
-詳しくは、[env-php-config-set](../cli/set-configuration-values.md) を参照してください。
+詳しくは、[env-php-config-set](../cli/set-configuration-values.md)を参照してください。
 
 
 
@@ -311,9 +311,9 @@ x-frame-options ヘッダーは、このノードを使用して設定できま�
 
 オペレーティングシステム（OS）レベルの環境変数を使用して、すべての設定オプション（値を持つ変数）を設定または上書きできます。
 
-`env.php` 設定は、ネストされたレベルを持つ配列に格納されます。 ネストされた配列パスを OS 環境変数の文字列に変換するには、パス内の各キーを、アンダースコアを 2 文字の `__`、大文字および `MAGENTO_DC_` のプレフィックスで連結します。
+`env.php`設定は、ネストされたレベルを持つ配列に格納されます。 ネストされた配列パスをOS環境変数の文字列に変換するには、パス内の各キーをダブルアンダースコア文字`__`、大文字、および接頭辞`MAGENTO_DC_`で連結します。
 
-例えば、セッション保存ハンドラーを設定から OS 環境変数 `env.php` 変換します。
+例えば、セッション保存ハンドラーを`env.php`設定からOS環境変数に変換します。
 
 ```conf
 'session' => [
@@ -321,15 +321,15 @@ x-frame-options ヘッダーは、このノードを使用して設定できま�
 ],
 ```
 
-`__` と連結され、大文字のキーが `SESSION__SAVE` になります。
+`__`と連結され、大文字のキーは`SESSION__SAVE`になります。
 
-次に、プレフィックスとして `MAGENTO_DC_` を指定し、結果の OS 環境変数名 `MAGENTO_DC_SESSION__SAVE` を取得します。
+次に、`MAGENTO_DC_`という接頭辞を付けて、結果として得られるOS環境変数名`MAGENTO_DC_SESSION__SAVE`を取得します。
 
 ```shell
 export MAGENTO_DC_SESSION__SAVE=files
 ```
 
-別の例として、スカラー `env.php` 設定オプションのパスを変換します。
+別の例として、スカラー`env.php`設定オプションパスを変換してみましょう。
 
 ```conf
 'x-frame-options' => 'SAMEORIGIN'
@@ -337,9 +337,9 @@ export MAGENTO_DC_SESSION__SAVE=files
 
 >[!INFO]
 >
->変数名は大文字にする必要がありますが、値は大文字と小文字が区別され、ドキュメントに記載されているように保持される必要があります。
+>変数名は大文字にする必要がありますが、値は大文字と小文字が区別され、文書化されたとおりに保持する必要があります。
 
-単に大文字にして `MAGENTO_DC_` というプレフィックスを付けることで、最終的な OS 環境変数名 `MAGENTO_DC_X-FRAME-OPTIONS` を受け取ります。
+最終的なOS環境変数名`MAGENTO_DC_X-FRAME-OPTIONS`を受け取るには、大文字と`MAGENTO_DC_`をプレフィックスするだけです。
 
 ```shell
 export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
@@ -347,21 +347,21 @@ export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
 
 >[!INFO]
 >
->コンテンツ `env.php`OS の環境変数よりも優先されることに注意してください。
+>`env.php` コンテンツは、OS環境変数よりも優先されます。
 
-## 変数によるファイル設定の上書き
+## 変数でファイル設定を上書き
 
-OS 環境変数で既存の `env.php` 設定オプションを上書きするには、設定の配列要素を JSON エンコードし、`MAGENTO_DC__OVERRIDE` OS 変数の値として設定する必要があります。
+既存の`env.php`設定オプションをOS環境変数で上書きするには、設定の配列要素をJSON エンコードし、`MAGENTO_DC__OVERRIDE` OS変数の値として設定する必要があります。
 
-`MAGENTO_DC__OVERRIDE` が設定されている場合、Commerce フレームワークでは `env.php` ファイル内の対応する値をバイパスし、環境変数から直接設定を読み取ります。 `env.php` ファイルの値は変更されませんが、オーバーライドされた設定セクションでは無視されます。
+`MAGENTO_DC__OVERRIDE`が設定されると、Commerce フレームワークは`env.php` ファイル内の対応する値をバイパスし、環境変数から直接設定を読み取ります。 `env.php` ファイルの値は変更されませんが、上書きされた設定セクションでは無視されます。
 
 >[!IMPORTANT]
 >
->`MAGENTO_DC__OVERRIDE` 変数は、`env.php` ファイルで指定された設定セクションを完全にバイパスします。 この動作は、`MAGENTO_DC_` ファイル内の値よりも優先度が低い個々の `env.php` 変数とは異なります。
+>`MAGENTO_DC__OVERRIDE`変数は、`env.php` ファイル内の指定された構成セクションを完全にバイパスします。 この動作は、`env.php` ファイルの値よりも優先度が低い個々の`MAGENTO_DC_`変数とは異なります。
 
-複数の設定オプションを上書きする必要がある場合は、JSON エンコーディングの前に、すべてを 1 つの配列に組み合わせます。
+複数の設定オプションを上書きする必要がある場合は、JSON エンコーディングの前に、すべての設定を1つの配列に組み立てます。
 
-例えば、次の `env.php` 設定を上書きします。
+例えば、次の`env.php`設定を上書きします。
 
 ```conf
 'session' => [
@@ -370,10 +370,10 @@ OS 環境変数で既存の `env.php` 設定オプションを上書きするに
 'x-frame-options' => 'SAMEORIGIN'
 ```
 
-上記の配列の JSON エンコードされたテキストは、次のようになります
-`{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}`。
+上記の配列のJSON エンコードされたテキストは
+`{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}`.
 
-次に、これを `MAGENTO_DC__OVERRIDE` OS 変数の値として設定します。
+次に、`MAGENTO_DC__OVERRIDE` OS変数の値として設定します。
 
 ```shell
 export MAGENTO_DC__OVERRIDE='{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}'
@@ -381,4 +381,4 @@ export MAGENTO_DC__OVERRIDE='{"session":{"save":"files"},"x-frame-options":"SAME
 
 >[!INFO]
 >
->OS によってエンコードされた文字列が破損するのを防ぐため、JSON でエンコードされた配列が適切に引用符で囲まれているか、必要に応じてエスケープされていることを確認します。
+>JSON エンコードされた配列が適切に引用符で囲まれているか、必要に応じてエスケープされていることを確認し、OSがエンコードされた文字列を破損しないようにします。

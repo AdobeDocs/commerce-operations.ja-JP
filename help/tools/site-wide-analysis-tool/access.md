@@ -2,9 +2,9 @@
 title: ' [!DNL Site-Wide Analysis Tool]へのアクセス方法'
 description: Adobe Commerce管理パネルからSite-Wide Analysis Tool ダッシュボードにアクセスする方法について説明します。 ユーザーの権限と役割の要件について説明します。
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: d75d8fe87b5bf5cf5cd1d5a15371a456b82f18db
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -13,14 +13,14 @@ ht-degree: 0%
 
 ストアの[!UICONTROL Admin Panel]から[!DNL Site-Wide Analysis Tool] ダッシュボードにアクセスできます。
 
-[!DNL Site-Wide Analysis Tool] サービスは、ユーザー[役割リソース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions-user-roles)へのアクセス権限を持つ[!UICONTROL Admin] ユーザーの[実稼動モード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/developer-tools#operation-modes)で利用できます。
+[!DNL Site-Wide Analysis Tool] サービスは、ユーザー[役割リソース ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles)へのアクセス権限を持つ[!UICONTROL Admin] ユーザーの[実稼動モード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes)で利用できます。
 
 >[!NOTE]
 >
 >2024年4月23日（PT）をもって、[!DNL Site-Wide Analysis Tool]は廃止され、Adobe Commerce オンプレミスのお客様は使用できなくなります。
 
 
-![&#x200B; サイト全体の分析ダッシュボード](../../assets/tools/site-wide-analysis-tool-dashboard.png)
+![ サイト全体の分析ダッシュボード](../../assets/tools/site-wide-analysis-tool-dashboard.png)
 *[!DNL Site-Wide Analysis Tool]ダッシュボード*
 
 >[!NOTE]
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ### 手順1：権限の確認
 
-[!UICONTROL Admin] ユーザーアカウントに、[割り当てられたユーザーの役割](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions-user-roles)を通じて[!DNL Site-Wide Analysis Tool]にアクセスする権限があることを確認します。
+[!UICONTROL Admin] ユーザーアカウントに、[割り当てられたユーザーの役割](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles)を通じて[!DNL Site-Wide Analysis Tool]にアクセスする権限があることを確認します。
 
 >[!IMPORTANT]
 >
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Reports]** > *[!UICONTROL System Insights]* > **[!UICONTROL Site-Wide Analysis Tool]**&#x200B;の役割リソースを選択します。
 
-   ![&#x200B; サイト全体の分析ダッシュボード](../../assets/tools/swat-role-access.png)
+   ![ サイト全体の分析ダッシュボード](../../assets/tools/swat-role-access.png)
    役割&#x200B;*に*[!DNL Site-Wide Analysis Tool]&#x200B;権限が選択されました
 
 1. **[!UICONTROL Save Role]**&#x200B;をクリックします。
@@ -50,13 +50,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!UICONTROL Admin]からツールにアクセスしようとすると、ユーザーアカウントに[!DNL Site-Wide Analysis Tool]へのアクセス権があることを確認し、ユーザーに403 エラーが表示された場合、Adobe Commerce on cloud infrastructureのインスタンスでHTTP アクセス制御が有効になっている可能性があります。 HTTP認証が有効になっている場合、[!DNL Site-Wide Analysis Tool] ダッシュボードはサポートされていません。 この問題の解決について詳しくは、[&#x200B; サポート記事](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento)を参照してください。
+>[!UICONTROL Admin]からツールにアクセスしようとすると、ユーザーアカウントに[!DNL Site-Wide Analysis Tool]へのアクセス権があることを確認し、ユーザーに403 エラーが表示された場合、Adobe Commerce on cloud infrastructureのインスタンスでHTTP アクセス制御が有効になっている可能性があります。 HTTP認証が有効になっている場合、[!DNL Site-Wide Analysis Tool] ダッシュボードはサポートされていません。 この問題の解決について詳しくは、[ サポート記事](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26852)を参照してください。
 
 ### 手順2: [!DNL Site-Wide Analysis Tool]へのアクセス
 
 1. *[!UICONTROL Admin]* サイドバーで、**[!UICONTROL Reports]** > *[!UICONTROL System Insights]* > **[!UICONTROL Site-Wide Analysis Tool]**&#x200B;に移動します。
 
-   ![&#x200B; サイト全体の分析ダッシュボード](../../assets/tools/ac-admin-panel-marked.jpg)
+   ![ サイト全体の分析ダッシュボード](../../assets/tools/ac-admin-panel-marked.jpg)
    Adobe Commerce *の[!UICONTROL Admin Panel]にある*[!DNL Site-Wide Analysis Tool]&#x200B;の場所
 
 1. [!DNL Site-Wide Analysis Tool]の&#x200B;*利用条件*&#x200B;をお読みになり、**[!UICONTROL Accept]**&#x200B;をクリックして続行してください。
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 1. ダッシュボードの上部で、表示するタブをクリックします。
 
-   ![&#x200B; サイト全体の分析ダッシュボード](../../assets/tools/swat-information-tab.png)
+   ![ サイト全体の分析ダッシュボード](../../assets/tools/swat-information-tab.png)
    *[!DNL Site-Wide Analysis Tool]情報*
 
 ## [!DNL Site-Wide Analysis Tool Dashboard]からレポートを生成
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Generate Report]**&#x200B;をクリックします。
 
-   ![&#x200B; サイト全体の分析ダッシュボード](../../assets/tools/swat-report-settings.png)
+   ![ サイト全体の分析ダッシュボード](../../assets/tools/swat-report-settings.png)
    *レポート設定*
 
 | タブ | DESCRIPTION |

@@ -1,59 +1,59 @@
 ---
-title: Adobe Commerceの管理アラート：MariaDB アラート
-description: この記事では、 [!DNL New Relic] でAdobe Commerceの MariaDB アラートを受信した場合のトラブルシューティング手順を説明します。 MariaDB アラートは、高いクエリ負荷と過剰なデータ操作言語（DML）クエリを監視します。 どちらも、ユーザーエクスペリエンスの低下やダウンタイムにつながる可能性があります。 2 種類のアラートを受信できます。
+title: Adobe Commerceでのアラートの管理：MariaDB アラート
+description: この記事では、 [!DNL New Relic]でAdobe CommerceのMariaDB アラートを受け取った場合のトラブルシューティング手順について説明します。 MariaDB アラートは、高いクエリロードと過剰なData Manipulation Language （DML）クエリを監視します。 どちらも、ユーザーエクスペリエンスの低下やダウンタイムにつながる可能性があります。 2種類のアラートを受け取ることができます。
 feature: Cache, Observability, Support, Tools and External Services
 role: Admin
 exl-id: d85af2e1-090c-4ad7-a898-3a3c4a5efe3b
-source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerceの管理アラート：MariaDB アラート
+# Adobe Commerceでのアラートの管理：MariaDB アラート
 
-この記事では、[!DNL New Relic] でAdobe Commerceの MariaDB アラートを受信した場合のトラブルシューティング手順を説明します。 MariaDB アラートは、高いクエリ負荷と過剰なデータ操作言語（DML）クエリを監視します。 どちらも、ユーザーエクスペリエンスの低下やダウンタイムにつながる可能性があります。 次の 2 種類のアラートを受信できます。
+この記事では、[!DNL New Relic]でAdobe CommerceのMariaDB アラートを受け取った場合のトラブルシューティング手順について説明します。 MariaDB アラートは、高いクエリロードと過剰なData Manipulation Language （DML）クエリを監視します。 どちらも、ユーザーエクスペリエンスの低下やダウンタイムにつながる可能性があります。 次の2種類のアラートを受け取ることができます。
 
-* DML 問合せの警告
-* DML 問合せクリティカル
+* DML クエリの警告
+* DML クエリが重要
 
 ## 影響を受ける製品とバージョン
 
 Adobe Commerce on cloud infrastructure Pro プランアーキテクチャ
 
-## 問題
+## イシュー
 
-[!DNL New Relic]Adobe Commerceの Managed アラート [&#x200B; にサインアップし、1 つ以上のアラートしきい値を超えた場合、](managed-alerts-for-magento-commerce.md) で管理アラートを受け取ります。 これらのアラートは、サポートおよびエンジニアリングのインサイトを使用して、標準セットをお客様に提供するために、Adobeで開発されました。
+Adobe Commerce](managed-alerts-for-magento-commerce.md)の[管理対象アラートにサインアップし、1つ以上のアラートしきい値を超えた場合、[!DNL New Relic]に管理対象アラートが届きます。 これらのアラートは、サポートとエンジニアリングからのインサイトを使用して、お客様に標準セットを提供するためにAdobeによって開発されました。
 
-**動け！**
+**実行！**
 
-* このアラートがクリアされるまで、スケジュールされている展開を中止します。
-* サイトが応答しない、または完全に応答しなくなった場合は、すぐにサイトをメンテナンスモードにします。 手順については、『Commerce インストールガイド』の [&#x200B; メンテナンスモードの有効化または無効化 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) を参照してください。 トラブルシューティングのためにサイトに引き続きアクセスできるように、IP を除外 IP アドレスリストに追加してください。 手順については、「[&#x200B; 除外 IP アドレスのリストの管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses)」を参照してください。
-* サイトパフォーマンスに影響が出ている場合は、読み込みなどのスクリプトを終了し、アラートの原因を特定してください。
+* このアラートがクリアされるまでスケジュールされたデプロイメントをすべて中止します。
+* サイトが完全に応答しない、または応答しなくなった場合は、すぐにメンテナンスモードにします。 手順については、『Commerce インストールガイド』の「[ メンテナンスモードを有効または無効にする](/help/installation/tutorials/maintenance-mode.md)」を参照してください。 トラブルシューティングのためにサイトにアクセスできるように、IPを免除IP アドレスリストに追加してください。 手順については、[除外IP アドレスのリストの管理](/help/installation/tutorials/maintenance-mode.md#maintain-the-list-of-exempt-ip-addresses)を参照してください。
+* サイトパフォーマンスに影響がある場合は、アラートの原因となるインポートなどのスクリプトを終了します。
 
 **やめて！**
 
-* MariaDB に追加の負荷がかかる可能性のあるインデクサーや追加のクローンを実行します。
-* 主要な管理タスク（Commerce管理者、データのインポート/エクスポートなど）を実行します。
+* MariaDBに追加のストレスを与える可能性があるインデクサーまたは追加のcronを実行します。
+* 主要な管理作業（Commerce管理者、データの読み込み/書き出しなど）を行います。
 * キャッシュをクリアします。
 
-## 解決策
+## Solution
 
-**DML 問合せ（UPDATE、INSERT およびDELETEを使用してデータベースを変更する問合せ）**
+**DML クエリ （UPDATE、INSERT、およびDELETEを使用してデータベースを変更するクエリ）**
 
-DML クエリ・クリティカル・アラートを受け取った場合は、手順 1 から開始します。 DML クエリの警告アラートを受け取った場合は、手順 2 から開始します。
+DML Queries Critical アラートを受け取った場合は、最初の手順から開始します。 DML クエリの警告アラートを受け取った場合は、手順2から開始します。
 
-1. Adobe Commerce サポートチケットが存在するかどうかを確認します。 手順については、ナレッジベース [&#x200B; サポートチケットの追跡 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case) を参照してください。 サポートがしきい値アラートを受け取り、チケッ [!DNL New Relic] を作成して、問題の処理を開始した可能性があります。 チケットが存在しない場合は、作成します。 チケットには、次の情報が含まれている必要があります。
-   * 連絡先の理由：「**[!UICONTROL New Relic MariaDB alert received]**」を選択します。
+1. Adobe Commerce サポートチケットが存在するかどうかを確認します。 手順については、ナレッジベース [ サポートチケットの追跡](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case)を参照してください。 サポートは、[!DNL New Relic]しきい値のアラートを受け取り、チケットを作成し、問題に取り組み始めた可能性があります。 チケットが存在しない場合は、チケットを作成します。 チケットには次の情報が必要です。
+   * 連絡先の理由：**[!UICONTROL New Relic MariaDB alert received]**&#x200B;を選択してください。
    * アラートの説明。
-   * [[!DNL New Relic]  インシデント リンク &#x200B;](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). これは、[Adobe Commerceの Managed アラート &#x200B;](managed-alerts-for-magento-commerce.md) に含まれています。
-1. 問題の原因を特定するには、DML 問合せを特定します。
-   1. New Relic[&#x200B; データベースページ &#x200B;](https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/databases-page-view-operations-throughput-response-time) の手順を使用して、データベース操作を確認します。
-   1. **[!UICONTROL CALL COUNT]** で並べ替え、次に **[!UICONTROL OPERATION]** で並べ替えます。 `INSERT`、`DELETE`、`UPDATE` の操作を確認します。
-   1. 高い AVG を探します。
-   1. クリックスルーしてデータベース操作呼び出し元を検索します。 これにより、そのクエリを使用しているトランザクションが時間別に識別されます。
-   1. コードの最適化または運用の最適化を探します。
-      * コードの最適化：一括挿入/更新、インデックス使用の最小化、コードのスロットルなどを使用してクエリを最適化する場合を想定しています。
-      * 運用の最適化：リソースを大量に消費するデータ変更の負荷を軽減し、トラフィック時間を短縮します。
-      * その他の最適化：ECE-Tools の最新バージョンを使用していることを確認してください。 手順については、Cloud ガイドのCommerceの [ece-tools バージョンを更新 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) を参照してください。
+   * [[!DNL New Relic]  インシデントリンク ](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents)。 これは、Adobe Commerce](managed-alerts-for-magento-commerce.md)の[管理済みアラートに含まれています。
+1. 問題の原因を特定するには、DML クエリを特定してみてください。
+   1. New Relic [ データベース ページ ](https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/databases-page-view-operations-throughput-response-time)の手順を使用して、データベース操作を確認します。
+   1. **[!UICONTROL CALL COUNT]**、次に&#x200B;**[!UICONTROL OPERATION]**&#x200B;で並べ替えます。 `INSERT`、`DELETE`および`UPDATE`操作を確認してください。
+   1. 高いAVGを探します。
+   1. クリックして、データベース操作の呼び出し元を検索します。 これにより、クエリを使用しているトランザクションを時間ごとに特定できます。
+   1. コードの最適化や運用上の最適化について調べます。
+      * コードの最適化：一括挿入/更新、インデックスの使用を最小限に抑える、コードのスロットリングを使用して、クエリを最適化します。
+      * 運用の最適化：リソースを大量に消費するデータの変更をオフロードして、トラフィック時間を短縮します。
+      * 追加の最適化：最新バージョンのECE-Toolsを使用していることを確認します。 手順については、『Commerce on Cloud Guide 』の「[e-tools バージョンを更新](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)」を参照してください。

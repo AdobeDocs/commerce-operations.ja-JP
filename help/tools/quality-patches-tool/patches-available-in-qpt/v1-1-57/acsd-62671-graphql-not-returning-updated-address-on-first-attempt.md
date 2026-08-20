@@ -1,70 +1,70 @@
 ---
-title: 'ACSD-62671: [!DNL GraphQL]  は、最初の試行時に更新されたアドレスを返しません'
-description: ACSD-62671 パッチを適用すると、Adobe Commerceの問題を修正できます。この問題では、ア  [!DNL GraphQL]  リクエストが最初の試行で最新のアドレス情報を返しません。
+title: 'ACSD-62671: [!DNL GraphQL] は、最初の試行で更新されたアドレスを返しません'
+description: ACSD-62671 パッチを適用して、 [!DNL GraphQL]  リクエストが最初の試行で最新のアドレス情報を返さないAdobe Commerceの問題を修正します。
 feature: GraphQL
 role: Admin, Developer
 exl-id: afd75ad2-e801-4f8a-b68f-526ca5168413
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
-# ACSD-62671: [!DNL GraphQL] は、最初の試行時に更新されたアドレスを返しません
+# ACSD-62671: [!DNL GraphQL]が最初の試行で更新されたアドレスを返さない
 
-ACSD-62671 パッチは、[!DNL GraphQL] リクエストが最初の試行で最新のアドレス情報を返さない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja) 1.1.57 がインストールされている場合に使用できます。 パッチ ID は ACSD-62671 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-62671 パッチは、[!DNL GraphQL] リクエストが最初の試行で最新のアドレス情報を返さない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.57がインストールされている場合に利用できます。 パッチ IDはACSD-62671です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-[!DNL GraphQL Application Server] を使用する場合、顧客アドレスのリクエストで最新のデータが返されない。
+[!DNL GraphQL Application Server]を使用する場合、お客様のアドレス要求は最新のデータを返しません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. [!DNL GraphQL Application Server] をインストールして起動します。
-1. キャッシュタイプ `graphQL_query_resolver_result` 有効になっていることを確認します。
-1. [!DNL GraphQL] を使用すると、次のことができます。
+1. [!DNL GraphQL Application Server]をインストールして開始します。
+1. `graphQL_query_resolver_result` キャッシュの種類が有効になっていることを確認します。
+1. [!DNL GraphQL]を使用して以下を行います：
 
-   * 顧客を作成します。
+   * 顧客の構築：
    * トークンを生成します。
-   * トークンを使用して、上記の顧客用に複数のアドレスを作成します。
+   * トークンを使用して、上記のお客様の複数のアドレスを作成します。
 
-1. 顧客 [!DNL GraphQL] アドレスを取得するリクエストを送信します。
-1. 新しい住所を顧客に追加します。
-1. 応答で返されるアドレス数を監視しながら、ステップ #4 からのリクエストを複数回繰り返します。
+1. [!DNL GraphQL] リクエストを送信して、顧客のアドレスを取得します。
+1. 顧客に新しい住所を追加します。
+1. 応答で返されるアドレス数を監視しながら、Step #4からのリクエストを複数回繰り返します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-応答 [!DNL GraphQL] 正しい数の顧客アドレスが含まれています。
+[!DNL GraphQL]件の応答に正しい数の顧客アドレスが含まれています。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-場合によっては、[!DNL GraphQL] 応答で誤ったアドレス数が返されます。
+場合によっては、[!DNL GraphQL]応答で誤った数のアドレスが返されることがあります。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

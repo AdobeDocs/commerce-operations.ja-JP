@@ -1,70 +1,70 @@
 ---
-title: ACSD-51574：別の画像に置き換えても、フロントエンドで画像が更新されない
-description: ACSD-51574 パッチを適用して、別の画像に置き換えた後にフロントエンドで画像が更新されないAdobe Commerceの問題を修正してください。
+title: ACSD-51574：別の画像に置き換えると、フロントエンドで画像が更新されない
+description: ACSD-51574 パッチを適用して、別の画像に置き換えた後、フロントエンドで画像が更新されないAdobe Commerceの問題を修正します。
 feature: Configuration
 role: Admin
 exl-id: 199674fc-c3b3-4fee-9061-f0546833c1cd
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
 
-# ACSD-51574：別の画像に置き換えても、フロントエンドで画像が更新されない
+# ACSD-51574：別の画像に置き換えると、フロントエンドで画像が更新されない
 
-ACSD-51574 パッチは、画像を別の画像に置き換えた後、フロントエンドで画像が更新されない問題を修正しました。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.37 がインストールされている場合に使用できます。 パッチ ID は ACSD-51574 です。 この問題はAdobe Commerce 2.4.7 で修正されました。
+ACSD-51574 パッチは、別の画像に置き換えた後にフロントエンドで画像が更新されない問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.37がインストールされている場合に利用できます。 パッチ IDはACSD-51574です。 この問題は、Adobe Commerce 2.4.7で修正されています。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 ～ 2.4.7
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 - 2.4.7
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-画像を別の画像に置き換えた後、フロントエンドで画像が更新されません。
+別の画像に置き換えた後、画像はフロントエンドで更新されません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. いくつかの画像を使用して製品を作成します。
+1. いくつかの画像を含む商品を作成する。
 1. 製品を編集し、既知の名前の画像をアップロードします（例：*image.jpg*）。
-1. 商品を保存します。
-1. 製品を再度編集し、古いバージョンの画像を削除して、同じ名前の新しいバージョンの画像をアップロードします。 **問題を確認するには、新しいバージョンが異なることを確認してください。**
-1. 商品を保存します。 管理者とフロントエンドの両方が画像を表示します。
-1. 製品を再度編集し、同じ名前を使用して、同じ新しい画像を再度アップロードします。
-1. 製品を保存し、フロントエンドの製品ページを確認します。
+1. 製品を保存します。
+1. 製品をもう一度編集し、古いバージョンの画像を削除し、同じ名前の新しいバージョンの画像をアップロードします。 **新しいバージョンが明らかに異なることを確認して、問題を確認してください。**
+1. 製品を保存します。 管理者とフロントエンドの両方が画像を表示します。
+1. 製品をもう一度編集し、同じ新しい画像をもう一度アップロードします（同じ名前を使用）。
+1. 商品を保存し、フロントエンドの商品ページを確認します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-2 回目にアップロードされる画像は、名前が変更された画像名と共に、新しい画像である必要があります。
+2回目にアップロードされた画像は、名前を変更した画像名とともに、新しい画像になります。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-2 回目にアップロードされる画像は、同じ新しい画像ではなく、以前に削除された古いバージョンの画像です。
+2回目にアップロードされた画像は、同じ新しい画像ではなく、以前に削除された古いバージョンの画像です。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

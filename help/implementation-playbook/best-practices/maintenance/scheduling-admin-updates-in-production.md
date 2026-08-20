@@ -4,7 +4,7 @@ description: パフォーマンスの低下や停止を防ぐために、Adobe C
 role: Admin, User
 feature: Best Practices
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 1%
@@ -24,14 +24,14 @@ ht-degree: 1%
 
 ## 影響を受ける製品とバージョン
 
-[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
+[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
 
 ## 追加情報
 
-- [キャッシュのベストプラクティス](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
-- [プライベートコンテンツ：プライベートコンテンツを無効にする](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [キャッシュのベストプラクティス](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
+- [プライベートコンテンツ：プライベートコンテンツを無効にする](https://developer.adobe.com/commerce/php/development/cache/page/private-content#invalidate-private-content)
 - [ハードウェアの推奨事項：キャッシュ](../../../performance/hardware.md#caches)
 - [アドバンスド設定：Redisの設定](../../../performance/advanced-setup.md#set-up-redis)

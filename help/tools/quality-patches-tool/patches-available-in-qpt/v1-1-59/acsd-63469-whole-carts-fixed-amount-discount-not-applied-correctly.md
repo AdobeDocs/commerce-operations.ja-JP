@@ -1,72 +1,72 @@
 ---
-title: ACSD-63469：複数のルールで固定金額の買い物かごの割引が正しく適用されない
-description: 複数のルールが適用されている場合に、買い物かご全体に対する固定金額の割引が適切に適用されないAdobe Commerceの問題を修正するために、ACSD-63469 パッチを適用してください。
+title: ACSD-63469：複数のルールで固定金額のカート割引が正しく適用されない
+description: 複数のルールが適用される場合、カート全体の固定額の割引が正しく適用されないAdobe Commerceの問題を修正するには、ACSD-63469 パッチを適用します。
 feature: Price Rules
 role: Admin, Developer
 exl-id: fb6dee57-281e-4165-8b70-7ff5949eb677
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
 
-# ACSD-63469：複数のルールで固定金額の買い物かごの割引が正しく適用されない
+# ACSD-63469：複数のルールで固定金額のカート割引が正しく適用されない
 
-ACSD-63469 パッチは、複数のルールが適用されている場合に、買い物かご全体に対する固定金額の割引が適切に適用されない問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 がインストールされている場合に使用できます。 パッチ ID は ACSD-63469 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-63469 パッチでは、複数のルールが適用された場合、カート全体の固定額の割引が正しく適用されない問題が修正されました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59がインストールされている場合に利用できます。 パッチ IDはACSD-63469です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7-p2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7 - 2.4.7-p4
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-複数の **[!UICONTROL Fixed amount discount for whole cart]** ルールが同時に適用され、製品に割引または特別価格が設定されている場合、割引値が正しく計算されません。
+複数の&#x200B;**[!UICONTROL Fixed amount discount for whole cart]** ルールが同時に適用され、製品に割引または特別価格が適用されている場合、割引値は誤って計算されます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 850 ドルと 85 ドルの価格の 2 つの製品を作成し、それぞれ 765 ドルと 68 ドルに特別価格を設定します。
-1. 次のように 2 つの **[!UICONTROL Cart Price Rules]** を作成します。
+1. 850 ドルと85 ドルの2つの商品を制作し、それぞれの特別価格を765 ドルと68 ドルに設定します。
+1. 次のように2つの&#x200B;**[!UICONTROL Cart Price Rules]**&#x200B;を作成します。
    * ルール 1
-      * **[!UICONTROL Conditions]**: $850 製品の場合、*数量* を *等しいか、または 2 より大きい* に設定
-      * **[!UICONTROL Actions]**: **[!UICONTROL Fixed amount discount for whole cart]**$153 *中* 件を適用する
+     * **[!UICONTROL Conditions]**: $850の商品の場合、*Qty*&#x200B;を&#x200B;*と設定し、2*&#x200B;以上とします
+     * **[!UICONTROL Actions]**: **[!UICONTROL Fixed amount discount for whole cart]**&#x200B;を&#x200B;*$153*&#x200B;件中に適用
    * ルール 2
-      * **[!UICONTROL Conditions]**: $85 製品の場合、*数量* を *等しいか、または 2 より大きい* に設定します
-      * **[!UICONTROL Actions]**: **[!UICONTROL Fixed amount discount for whole cart]**$14 *中* 件に適用する
-1. 両方の商品を買い物かごに追加します。それぞれの商品の数量は 2 です。
+     * **[!UICONTROL Conditions]**: $85の商品の場合、*数量*&#x200B;を&#x200B;*と設定し、2*&#x200B;以上とします
+     * **[!UICONTROL Actions]**: **[!UICONTROL Fixed amount discount for whole cart]**&#x200B;を&#x200B;*$14*&#x200B;件中に適用
+1. 両方の商品をカートに追加し、それぞれの商品の数量を2にします。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-買い物かごに適用される割引は 167 ドルです。
+買い物かごに適用される割引は167 ドルです。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-買い物かごに適用される割引は 41 ドルです。
+カートに適用される割引は41 ドルです。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## パッチのインストール後に必要な追加手順
 
-（この節はオプションです。問題を修正するためにパッチを適用した後に必要な手順が含まれる場合があります）。 
+（このセクションはオプションです。問題を修正するためにパッチを適用した後に必要な手順がいくつかある場合があります）。 
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。
