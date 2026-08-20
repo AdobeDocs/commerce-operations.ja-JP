@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. **セキュリティパッチ**&#x200B;は、Adobe Commerce リリースの静的コードベースの一部です。
 1. **コンポーザーのパッチ** ～ `composer install`および[cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches)などの`composer update`個のプラグイン。
-1. すべての&#x200B;**必要なパッチ**&#x200B;は、[Cloud Patches for Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) パッケージに含まれています。
+1. すべての&#x200B;**必要なパッチ**&#x200B;は、[Cloud Patches for Commerce](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) パッケージに含まれています。
 1. [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md)に含まれる高品質のパッチ **を選択しました。**
 1. **カスタムパッチ**&#x200B;とAdobe Commerceは、パッチ名でアルファベット順に`/m2-hotfixes` ディレクトリのパッチをサポートします。
 
@@ -148,7 +148,7 @@ Composer コンポーネントパッケージ （`centralized-patcher`）を作�
    ```
 
 
-前述のコードサンプルの`quality-patches`属性には、例として[&#x200B; フルパッチリスト &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)の2つのパッチが含まれています。  これらの品質のパッチは、`vendor/bin/magento-patches apply` コマンドを使用して`centralized-patcher` パッケージを必要とするすべてのプロジェクトにインストールされます。
+前述のコードサンプルの`quality-patches`属性には、例として[&#x200B; フルパッチリスト &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)の2つのパッチが含まれています。  これらの品質のパッチは、`vendor/bin/magento-patches apply` コマンドを使用して`centralized-patcher` パッケージを必要とするすべてのプロジェクトにインストールされます。
 
 テストの目的で、サンプル パッチ （`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`）を作成できます。
 
@@ -365,7 +365,7 @@ Adobe Commerce on cloud infrastructureと同様に、この記事では、デプ
 
 これにより、すべてのインストールのすべてのパッチを一元管理でき、Adobe Commerce ストアのセキュリティと安定性をより確実に保証できます。 パッチのステータスを確認するには、次の方法を使用します。
 
-- [クラウドインフラプロジェクト](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+- [クラウドインフラプロジェクト](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 - [オンプレミスプロジェクト](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## コード例

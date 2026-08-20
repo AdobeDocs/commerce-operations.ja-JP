@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40609: cataloginventory_stock_status テーブルに存在しない無効な製品データ'
-description: MDVA-40609 パッチは、無効な製品データが「cataloginventory_stock_status」インデックステーブルに表示されず、誤った製品数量が表示される問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.6がインストールされている場合に利用できます。 パッチ IDはMDVA-40609です。 この問題は、Adobe Commerce 2.4.3で修正されています。
+description: MDVA-40609 パッチは、無効な製品データが「cataloginventory_stock_status」インデックステーブルに表示されず、誤った製品数量が表示される問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.6がインストールされている場合に利用できます。 パッチ IDはMDVA-40609です。 この問題は、Adobe Commerce 2.4.3で修正されています。
 feature: Catalog Management, Inventory, Orders, Products
 role: Admin
 exl-id: e207ee55-b6ce-4065-bae1-2be89dcf5092
@@ -61,7 +61,7 @@ MDVA-40609 パッチは、無効な製品データが`cataloginventory_stock_sta
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 

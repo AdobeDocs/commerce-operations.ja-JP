@@ -1,6 +1,6 @@
 ---
 title: MDVA-25631：顧客セグメントを保存して更新できない
-description: MDVA-25631 パッチは、ユーザーが多数の顧客を含む顧客セグメントを保存および更新できない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.4がインストールされている場合に利用できます。 パッチ IDはMDVA-25631です。 この問題はAdobe Commerce 2.4.2で修正されています。
+description: MDVA-25631 パッチは、ユーザーが多数の顧客を含む顧客セグメントを保存および更新できない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.4がインストールされている場合に利用できます。 パッチ IDはMDVA-25631です。 この問題はAdobe Commerce 2.4.2で修正されています。
 feature: Customer Service
 role: Admin
 exl-id: 3cf40538-822a-4d3e-b8fa-20f9ef9228ae
@@ -55,7 +55,7 @@ MDVA-25631 パッチは、ユーザーが多数の顧客を含む顧客セグメ
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 

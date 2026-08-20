@@ -21,7 +21,7 @@ Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14
 
 >[!NOTE]
 >
->Commerce プロジェクトがクラウドにデプロイされている場合、フルページキャッシュでは、Varnishの代わりに[Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)が使用されます。 この節のトピックは、オンプレミスのインストールにのみ適用されます。
+>Commerce プロジェクトがクラウドにデプロイされている場合、フルページキャッシュでは、Varnishの代わりに[Fastly](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/fastly)が使用されます。 この節のトピックは、オンプレミスのインストールにのみ適用されます。
 
 ## Adobe サービス版サポート {#supported-versions-only}
 
@@ -29,7 +29,7 @@ Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14
 >
 >Adobeでは、サポートされているすべての依存関係とサービスのバージョンを実行するデプロイメントのみがサポートされます。 これは次の場合に適用されます。
 >
->* **Platform サービス** （PHP、MariaDB/MySQL、Redis、Elasticsearch/OpenSearch、RabbitMQ、およびNginxを含むが、これらに限定されない） – 販売者は、デプロイされたAdobe Commerce リリースと互換性のあるバージョンを維持する必要があります。 [必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)を参照してください。
+>* **Platform サービス** （PHP、MariaDB/MySQL、Redis、Elasticsearch/OpenSearch、RabbitMQ、およびNginxを含むが、これらに限定されない） – 販売者は、デプロイされたAdobe Commerce リリースと互換性のあるバージョンを維持する必要があります。 [必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ja)を参照してください。
 >* **Commerce サービスの拡張機能** （ライブサーチ、商品レコメンデーション、決済サービスを含むがこれらに限定されない） – 最新のリリース版のみがサポートされます。
 >* **カスタム拡張機能とサードパーティ統合** – 販売者は、これらの拡張機能がベンダーがサポートするバージョンに残るようにする責任があります。
 >
@@ -65,7 +65,7 @@ Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14
 
 >[!NOTE]
 >
->このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントは、互換性のある最新のB2B セキュリティパッチリリースにアップデートする必要があります。 [B2B リリースノート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)を参照してください。
+>このセキュリティパッチをインストールした後、Adobe Commerce B2B マーチャントは、互換性のある最新のB2B セキュリティパッチリリースにアップデートする必要があります。 [B2B リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/release-notes)を参照してください。
 
 ## Adobe Commerceのみ {#ee-only}
 
@@ -119,7 +119,7 @@ Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14
 
 >[!IMPORTANT]
 >
->Adobeでは、この方法を使用したAdobeが提供する公式のパッチの適用はサポートされていません。 ご自身のリスクで次の方法を使用してください。 公式パッチを適用するには、[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}を使用します。 カスタムパッチをデプロイする前に、必ず包括的なテストを実行してください。
+>Adobeでは、この方法を使用したAdobeが提供する公式のパッチの適用はサポートされていません。 ご自身のリスクで次の方法を使用してください。 公式パッチを適用するには、[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}を使用します。 カスタムパッチをデプロイする前に、必ず包括的なテストを実行してください。
 
 ## 2025年10月のセキュリティパッチバックポート {#oct-2025-backports}
 
@@ -150,7 +150,7 @@ JavaScriptのバンドルと縮小の両方が実稼動モードで有効にな�
 
 **ホットフィックス**:
 
-ホットフィックスが利用可能です。 パッチの詳細については、ナレッジベースで「[JSの縮小とバンドルが有効になっている場合にチェックアウトが失敗する](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)」を参照してください。
+ホットフィックスが利用可能です。 パッチの詳細については、ナレッジベースで「[JSの縮小とバンドルが有効になっている場合にチェックアウトが失敗する](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27997)」を参照してください。
 
 ## Valkey Redis CLI メモ {#valkey-redis-cli-note}
 

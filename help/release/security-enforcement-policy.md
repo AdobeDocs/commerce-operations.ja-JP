@@ -20,7 +20,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-badgePaas: label="Cloud 2.4.4上のAdobe Commerce - 2.4.9のみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Cloud バージョン 2.4.4 ～ 2.4.9のAdobe Commerceにのみ適用されます"
+badgePaas: label="Cloud 2.4.4上のAdobe Commerce - 2.4.9のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Cloud バージョン 2.4.4 ～ 2.4.9のAdobe Commerceにのみ適用されます"
 nudge: true
 source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
@@ -63,7 +63,7 @@ Adobeは、お客様のセキュリティを維持するために必要な手順
 
 1. Adobe Commerce on Cloudの安全なサポート対象。 完全にサポートされているバージョンには、2.4.8、2.4.9、または利用可能な最新リリースが含まれています。 [&#x200B; ライフサイクルポリシー](/help/release/lifecycle-policy.md)のドキュメントを参照してください。
 
-Adobe Commerce on Cloud環境を保護するためにアクションを実行する必要があるかどうかを確認するには、次のガイドラインに従います。 以下の表1に記載されている期限までにセキュリティ要件を満たさない環境では、ストアフロントをオフラインにしてインバウンドトラフィックが停止します。 期限の遵守について懸念がある場合は、できるだけ早くアカウントチームまたは[Adobe サポート &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
+Adobe Commerce on Cloud環境を保護するためにアクションを実行する必要があるかどうかを確認するには、次のガイドラインに従います。 以下の表1に記載されている期限までにセキュリティ要件を満たさない環境では、ストアフロントをオフラインにしてインバウンドトラフィックが停止します。 期限の遵守について懸念がある場合は、できるだけ早くアカウントチームまたは[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
 
 >[!NOTE]
 >
@@ -87,11 +87,11 @@ Commerce管理者に次の手順を実行してもらいます。
 
 #### 手順1：サードパーティソフトウェアの依存関係のバージョンを確認する
 
-1. [Cloud Console](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/cloud-console)にログインすると、すべてのCloud プロジェクトを表示できます。
+1. [Cloud Console](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/start/cloud-console)にログインすると、すべてのCloud プロジェクトを表示できます。
 2. 関連するプロジェクトを開き、確認する環境を選択します。
 3. 「Containers」タブを開くと、選択した環境で現在使用されているすべてのサービスのリストが表示されます。
 4. 各サービスリンクをクリックして、環境で現在実行中の正確なバージョンを確認します。
-詳しくは、[Configure Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)の手順を参照してください。
+詳しくは、[Configure Services](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)の手順を参照してください。
 
 サポートされていないソフトウェアの依存関係はすべて、以下の表2で共有されているタイムラインで概説されているバージョンにアップグレードする必要があります。
 
@@ -112,7 +112,7 @@ Commerce管理者に次の手順を実行してもらいます。
 
 Adobeを使用すると、これらのソフトウェアの依存関係を直接アップグレードできます。
 
-* **開始：** アップグレードが必要な環境と関連する依存関係を一覧表示する[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を開きます。 Adobeが作業をスケジュールできるように、少なくとも施行日の30日前にチケットを開きます。
+* **開始：** アップグレードが必要な環境と関連する依存関係を一覧表示する[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を開きます。 Adobeが作業をスケジュールできるように、少なくとも施行日の30日前にチケットを開きます。
 
 * **ダウンタイム：** Adobeは、スケジュールを設定するときに、想定されるウィンドウを確定します。
 
@@ -162,13 +162,13 @@ Adobe Commerce Cloud版をアップグレードする必要がある場合は、
 
 | | Adobe Commerce Cloud版バージョン 2.4.9 | [!DNL Adobe Commerce as a Cloud Service] |
 |---|---|---|
-| **概要** | 完全なセキュリティ範囲、品質修正、プラットフォーム依存関係のアップデートを含む最新のAdobe Commerce リリース。 | 継続的なイノベーションのために構築され、アップグレードのオーバーヘッドを排除できる、Adobeのフルマネージドコマースプラットフォーム。 [学習を増やす](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)。 |
+| **概要** | 完全なセキュリティ範囲、品質修正、プラットフォーム依存関係のアップデートを含む最新のAdobe Commerce リリース。 | 継続的なイノベーションのために構築され、アップグレードのオーバーヘッドを排除できる、Adobeのフルマネージドコマースプラットフォーム。 [学習を増やす](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/overview)。 |
 | **お客様に最適** | 今後も独自のインフラストラクチャ、アップグレード、パッチを管理する必要があります。 | アップグレードサイクルを大幅に短縮し、総所有コストを削減しながら、Adobeの最新の機能を追加の作業なしで自動的に入手できます。 |
 | **主なメリット** | 既存の設定を維持しながら、セキュリティ要件を満たします。 | 高速でエッジ配信のストアフロント、拡張性の高いカタログ、ネイティブのデジタルアセット管理、組み込みの生成AIなど、Adobeが管理するインフラストラクチャ上に構築されています。 |
 
 ## 期限までに何も行動を起こさなかったらどうなるか。
 
-Adobeは、サポート対象バージョンのサードパーティソフトウェアの導入、最新バージョンのAdobe Commerce on Cloudへのアップグレード、またはAdobe Commerce as a Cloud Serviceへの移行を行うために必要な手順を実行する際に、お客様をサポートすることを引き続き保証します。  期限の遵守に関して懸念があり、短い延長が必要な場合は、できるだけ早くアカウントチームまたは[Adobe サポート &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
+Adobeは、サポート対象バージョンのサードパーティソフトウェアの導入、最新バージョンのAdobe Commerce on Cloudへのアップグレード、またはAdobe Commerce as a Cloud Serviceへの移行を行うために必要な手順を実行する際に、お客様をサポートすることを引き続き保証します。  期限の遵守に関して懸念があり、短い延長が必要な場合は、できるだけ早くアカウントチームまたは[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
 
 上記の実施日までにセキュリティ要件を満たさない環境がある場合、Adobeは、Adobe Commerce プラットフォームおよびお客様のセキュリティを維持するための適切な措置を講じることを余儀なくされます。 これには、影響を受けるインフラストラクチャへのトラフィックの一時停止が含まれます。これにより、Commerce ストアフロントがオフラインになります。
 
@@ -180,19 +180,19 @@ Adobeは、サポート対象バージョンのサードパーティソフトウ
 
 * **アップグレード互換性レポート：** Adobeには、更新が必要なモジュールやファイル、重大な問題の数など、Adobe Commerce バージョン 2.4.9へのアップグレードに必要な内容を正確に特定するための詳細なレポートが用意されています。 アップグレード互換性レポートの生成方法について詳しくは、[&#x200B; サイト全体の分析ツール &#x200B;](/help/tools/site-wide-analysis-tool/access.md)のドキュメントを参照してください。
 
-* **ソフトウェア依存関係のアップグレード：** ソフトウェア依存関係を直接アップグレードできないので、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)をAdobeで開いて、アップグレードを処理してください。 詳しくは、[&#x200B; サービスの設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)を参照してください。
+* **ソフトウェア依存関係のアップグレード：** ソフトウェア依存関係を直接アップグレードできないので、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)をAdobeで開いて、アップグレードを処理してください。 詳しくは、[&#x200B; サービスの設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)を参照してください。
 
 **[!DNL Adobe Commerce as a Cloud Service]への移行を選択した場合：**
 
-Adobeには、[!DNL Adobe Commerce as a Cloud Service]への移行にかかるコストと時間を削減するツールが用意されています。 無料でご利用いただけます。 これらのツールは、移行にのみ適用されます。 Adobe Commerce on Cloud バージョンのアップグレードには使用されません。 移行パスとフェーズを含む完全な移行ガイドについては、[移行の概要](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview)を参照してください。
+Adobeには、[!DNL Adobe Commerce as a Cloud Service]への移行にかかるコストと時間を削減するツールが用意されています。 無料でご利用いただけます。 これらのツールは、移行にのみ適用されます。 Adobe Commerce on Cloud バージョンのアップグレードには使用されません。 移行パスとフェーズを含む完全な移行ガイドについては、[移行の概要](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/overview)を参照してください。
 
-* **移行評価：** カスタマイズの移行複雑さを評価します。 [移行評価ツールの概要](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/assessment)を参照してください。
+* **移行評価：** カスタマイズの移行複雑さを評価します。 [移行評価ツールの概要](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/migration-tools/assessment)を参照してください。
 
-* **データ移行：** [一括および増分データ移行ツール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool)は、データを新しい[!DNL Adobe Commerce as a Cloud Service]環境に移動します。 アクセスについては、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
+* **データ移行：** [一括および増分データ移行ツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool)は、データを新しい[!DNL Adobe Commerce as a Cloud Service]環境に移動します。 アクセスについては、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
 
 * **AIを活用した移行と開発ツール：** Edge Delivery Servicesを搭載したAdobe Developer App BuilderとCommerce Storefrontは、ストアフロントの近代化と拡張機能の再プラットフォーム化を加速するのに役立ちます。
 
-ご不明な点がある場合は、アカウントチームにお問い合わせいただくか、[&#x200B; サポートサービス &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
+ご不明な点がある場合は、アカウントチームにお問い合わせいただくか、[&#x200B; サポートサービス &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
 
 >[!MORELIKETHIS]
 >

@@ -19,7 +19,7 @@ ht-degree: 0%
 
   ホスト環境に複数のweb サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーを確認してください。
 
-  クラウドインフラストラクチャでAdobe Commerceを設定するには、追加のタスクが必要です。 このトピックで説明したタスクを完了したら、_Commerce on Cloud Infrastructure ガイド_&#x200B;の「[複数のweb サイトまたはストアを設定する](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)」を参照してください。
+  クラウドインフラストラクチャでAdobe Commerceを設定するには、追加のタスクが必要です。 このトピックで説明したタスクを完了したら、_Commerce on Cloud Infrastructure ガイド_&#x200B;の「[複数のweb サイトまたはストアを設定する](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)」を参照してください。
 
 - Web サイトごとに1つの仮想ホストを使用します。仮想ホスト設定ファイルは`/etc/httpd/httpd.conf`です
 
@@ -110,7 +110,7 @@ ht-degree: 0%
 >[!INFO]
 >
 >- ホスト環境に複数のweb サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーを確認してください。
->- クラウドインフラストラクチャ上にAdobe Commerceを設定するには、追加のタスクが必要です。_クラウドインフラストラクチャ上のCommerce ガイド_&#x200B;の[複数のクラウドウェブサイトまたはストアの設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)を参照してください。
+>- クラウドインフラストラクチャ上にAdobe Commerceを設定するには、追加のタスクが必要です。_クラウドインフラストラクチャ上のCommerce ガイド_&#x200B;の[複数のクラウドウェブサイトまたはストアの設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)を参照してください。
 
 ### トラブルシューティング
 

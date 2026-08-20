@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> ライブサーチ、カタログサービス、商品レコメンデーションを使用しているAdobe Commerceのマーチャントには、[SaaS ベースの価格インデックス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing)を使用するオプションがあります。
+> ライブサーチ、カタログサービス、商品レコメンデーションを使用しているAdobe Commerceのマーチャントには、[SaaS ベースの価格インデックス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/price-indexer/price-indexing)を使用するオプションがあります。
 
 ## インデクサーステータスの表示
 
@@ -273,7 +273,7 @@ Stores Feed:                                       Update by Schedule
 
 >[!INFO]
 >
->インデクサーモードを切り替える前に、web サイトを[&#x200B; メンテナンス &#x200B;](../../installation/tutorials/maintenance-mode.md) モードに設定し、[cron ジョブを無効にします](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)。 これにより、データベースのロックが発生しないようにします。
+>インデクサーモードを切り替える前に、web サイトを[&#x200B; メンテナンス &#x200B;](../../installation/tutorials/maintenance-mode.md) モードに設定し、[cron ジョブを無効にします](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)。 これにより、データベースのロックが発生しないようにします。
 
 インデクサー設定を指定するには：
 

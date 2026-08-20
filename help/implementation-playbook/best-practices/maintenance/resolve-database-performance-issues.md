@@ -38,7 +38,7 @@ MySQLを使用すると、任意のAdobe Commerce on cloud インフラストラ
 Adobe Commerce プロジェクトがPro アーキテクチャにデプロイされている場合は、Percona Toolkitを使用してクエリを分析できます。
 
 1. MySQLの低速クエリログに対して`pt-query-digest --type=slowlog` コマンドを実行します。
-   * 低速なクエリログの場所については、開発者ドキュメントの&#x200B;**[!UICONTROL Log locations > Service Logs]** （https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#service-logs）を参照してください。
+   * 低速なクエリログの場所については、開発者ドキュメントの&#x200B;**[!UICONTROL Log locations > Service Logs]** （https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/test/log-locations#service-logs）を参照してください。
    * [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) ドキュメントを参照してください。
 1. 見つかった問題に基づいて、クエリをより迅速に実行できるように修正する手順を実行します。
 

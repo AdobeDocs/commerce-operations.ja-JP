@@ -88,4 +88,4 @@ UATは、アップグレードの最終段階のひとつであり、サイト�
 
 サイトのローンチ後、分析データ、Google Search Console、その他のリソースを必ず確認し、予期しない問題がなく、すべてが期待どおりに動作していることを確認してください。
 
-適切に設計されたモニタリングツールを使用して、パフォーマンスに目を配ることは常に推奨されます。 サイトパフォーマンスを監視するツールや手段は、数多くあります。自社に適したものを選択しましょう。 クラウドインフラストラクチャ管理システムを使用するAdobe Commerceのお客様は、[New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)などのサービスを利用して、サイトのパフォーマンスを監視することをお勧めします。
+適切に設計されたモニタリングツールを使用して、パフォーマンスに目を配ることは常に推奨されます。 サイトパフォーマンスを監視するツールや手段は、数多くあります。自社に適したものを選択しましょう。 クラウドインフラストラクチャ管理システムを使用するAdobe Commerceのお客様は、[New Relic](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)などのサービスを利用して、サイトのパフォーマンスを監視することをお勧めします。

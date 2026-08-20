@@ -47,7 +47,7 @@ DHLはスキーマバージョン 6.2を導入しており、近い将来スキ�
 
 * メール変数の使用は、より厳格な変数の構文を優先するセキュリティリスク軽減の一環として、2.3.4で廃止されました。 このレガシー動作は、そのセキュリティリスク軽減の継続として、このリリースで完全に削除されました。
 
-  その結果、以前のバージョンで動作していた電子メールやニュースレターのテンプレートが、Adobe Commerce 2.4.3-p2にアップグレードした後で正しく動作しない場合があります。 影響を受けるテンプレートには、管理者の上書き、テーマ、子テーマ、カスタムモジュールまたはサードパーティの拡張機能のテンプレートが含まれます。 非推奨の使用を修正するために[&#x200B; アップグレード互換性ツール &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html)を使用した後でも、デプロイメントが影響を受ける可能性があります。 影響を受けるテンプレートを移行する際の潜在的な影響とガイドラインについては、[&#x200B; カスタムメールテンプレートの移行](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration)を参照してください。
+  その結果、以前のバージョンで動作していた電子メールやニュースレターのテンプレートが、Adobe Commerce 2.4.3-p2にアップグレードした後で正しく動作しない場合があります。 影響を受けるテンプレートには、管理者の上書き、テーマ、子テーマ、カスタムモジュールまたはサードパーティの拡張機能のテンプレートが含まれます。 非推奨の使用を修正するために[&#x200B; アップグレード互換性ツール &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=ja)を使用した後でも、デプロイメントが影響を受ける可能性があります。 影響を受けるテンプレートを移行する際の潜在的な影響とガイドラインについては、[&#x200B; カスタムメールテンプレートの移行](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration)を参照してください。
 
 * OAuth アクセストークンとパスワードリセットトークンは、データベースに保存されたときに暗号化されるようになりました。<!-- AC-520 1323-->
 
@@ -65,7 +65,7 @@ DHLはスキーマバージョン 6.2を導入しており、近い将来スキ�
 Adobe Commerce 2.4.3-p1 セキュリティリリースには、以前のリリース（Adobe Commerce 2.4.3およびMagento Open Source 2.4.3）で特定された脆弱性に対するセキュリティバグ修正が含まれています。 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html)を参照してください。 このパッチリリースでは、[Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html)、[Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html)、[Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html)のベンダーが開発した拡張機能のバグ修正も提供されています。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html)を参照してください。 このパッチリリースでは、[Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=ja)、[Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html)、[Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html)のベンダーが開発した拡張機能のバグ修正も提供されています。
 
 ### 配送業者としてDHLを提供し続けるには、AC-3022.patchを適用します
 

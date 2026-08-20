@@ -18,7 +18,7 @@ Adobeでは、製品のアップグレードをシンプルにすることと、
 
 >[!NOTE]
 >
->新機能、クラウドインフラストラクチャ、および拡張性リリースについて詳しくは、[Adobe Commerce サービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all) リリースドキュメントを参照してください。
+>新機能、クラウドインフラストラクチャ、および拡張性リリースについて詳しくは、[Adobe Commerce サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/release-information/release-notes-all) リリースドキュメントを参照してください。
 
 このページに記載されている予定されている品質、セキュリティ、ベータ版パッチに加えて、Adobeは[品質パッチツール &#x200B;](../tools/quality-patches-tool/usage.md)を通じて[個々のパッチ &#x200B;](versioning-policy.md#individual-patch)へのアクセスを提供します。 このツールを使用すると、インストールされているバージョンのAdobe Commerceで使用できるすべての個々のパッチに関する一般的な情報を適用、取り消し、表示できます。
 
@@ -45,7 +45,7 @@ Adobe Commerce パッチリリースは、次のガイドラインに基づい�
 
 Adobeは、次のチャネルを通じて、新しいパッチリリースについてお客様に通知します。
 
-- [Adobe セキュリティ情報とアドバイザリー](https://helpx.adobe.com/security/security-bulletin.html#magento)
+- [Adobe セキュリティ情報とアドバイザリー](https://helpx.adobe.com/jp/security/security-bulletin.html#magento)
 - メール
 - 製品内アラート
 

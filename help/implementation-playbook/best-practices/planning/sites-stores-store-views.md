@@ -41,5 +41,5 @@ web サイトと実店舗は、カタログデータを増やすための乗数�
 
 ## 追加情報
 
-- [web サイト、実店舗、店舗表示について](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
-- [複数のweb サイトや店舗の設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)
+- [web サイト、実店舗、店舗表示について](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
+- [複数のweb サイトや店舗の設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)

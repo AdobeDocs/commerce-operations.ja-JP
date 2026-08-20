@@ -1,6 +1,6 @@
 ---
 title: MDVA-38447：設定可能な子プロダクトがGraphQLのレスポンスで返され、MySQL クエリが遅くなる
-description: MDVA-38447 Adobe Commerce パッチでは、GraphQLのレスポンスで設定可能な子製品が「個別に表示されない」と返され、カテゴリーフィルターを使用したGraphQL製品クエリのMySQL クエリが遅くなる問題が修正されました。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.2がインストールされている場合に利用できます。 パッチ IDはMDVA-38447です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
+description: MDVA-38447 Adobe Commerce パッチでは、GraphQLのレスポンスで設定可能な子製品が「個別に表示されない」と返され、カテゴリーフィルターを使用したGraphQL製品クエリのMySQL クエリが遅くなる問題が修正されました。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.2がインストールされている場合に利用できます。 パッチ IDはMDVA-38447です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 feature: B2B, GraphQL, Categories, Configuration, Products, Services
 role: Admin
 exl-id: d97297c5-e8e8-407b-b43b-033937426fe2
@@ -89,7 +89,7 @@ B2B モジュールをインストールする必要があります。
 個別のパッチを適用するには、デプロイメントタイプに応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
@@ -98,4 +98,4 @@ Adobe Commerceの高品質なパッチについて詳しくは、次を参照し
 * [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
 * [品質パッチツール &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPTで使用可能な他のパッチについて詳しくは、「QPT[&#128279;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で使用可能な パッチ」セクションを参照してください。
+QPTで使用可能な他のパッチについて詳しくは、「QPT[&#128279;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で使用可能な パッチ」セクションを参照してください。

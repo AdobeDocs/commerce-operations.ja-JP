@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-26005: カート価格ルール条件のツリーでカテゴリを選択できません'
-description: MDVA-26005 パッチは、ユーザーがカテゴリ ツリーで買い物かごの価格ルール条件のカテゴリを選択できない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.4がインストールされている場合に利用できます。 パッチ IDはMDVA-26005です。 この問題は、Adobe Commerce 2.3.6で修正されています。
+description: MDVA-26005 パッチは、ユーザーがカテゴリ ツリーで買い物かごの価格ルール条件のカテゴリを選択できない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.4がインストールされている場合に利用できます。 パッチ IDはMDVA-26005です。 この問題は、Adobe Commerce 2.3.6で修正されています。
 feature: Categories, Orders, Price Rules, Shopping Cart
 role: Admin
 exl-id: 02d9eef4-89f0-48be-8bb9-c62bbdad76a5
@@ -53,7 +53,7 @@ JS エラーのため、カテゴリを選択できません。
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 

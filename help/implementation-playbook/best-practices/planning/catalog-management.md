@@ -100,7 +100,7 @@ MySQLを使用して、未使用の製品属性セットを削除します。
 
 #### 属性セット設定の確認
 
-1. [&#x200B; サイト データベースに接続](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database)。
+1. [&#x200B; サイト データベースに接続](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database)。
 
 1. MySQLを使用して属性セットの数を検索する
 
@@ -179,7 +179,7 @@ MySQLを使用して、未使用の製品属性セットを削除します。
 
 カテゴリに商品が多すぎる場合は、ストアフロントカタログ設定を更新して、**ページごとにすべての商品を許可**&#x200B;するオプションを無効にします。
 
-このオプションを無効にすると、Adobe Commerceでは、ストアフロントコンポーネントに表示される商品の数を管理するために、商品リストのストアフロントのページネーション コントロールが使用されます。 手順については、[&#x200B; ページネーション コントロールの設定](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls)を参照してください。
+このオプションを無効にすると、Adobe Commerceでは、ストアフロントコンポーネントに表示される商品の数を管理するために、商品リストのストアフロントのページネーション コントロールが使用されます。 手順については、[&#x200B; ページネーション コントロールの設定](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=ja#configure-the-pagination-controls)を参照してください。
 
 ## 製品SKUの制限
 
