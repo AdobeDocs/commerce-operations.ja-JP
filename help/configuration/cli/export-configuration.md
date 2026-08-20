@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 構成設定の書き出し
 
-Commerce 2.2以降[ パイプライン デプロイメントモデル ](../deployment/technical-details.md)では、システム間で一貫した設定を維持できます。 開発システムの管理者で設定を行った後、次のコマンドを使用して、これらの設定を設定ファイルに書き出します。
+Commerce 2.2以降[&#x200B; パイプライン デプロイメントモデル &#x200B;](../deployment/technical-details.md)では、システム間で一貫した設定を維持できます。 開発システムの管理者で設定を行った後、次のコマンドを使用して、これらの設定を設定ファイルに書き出します。
 
 ```shell
 bin/magento app:config:dump {config-types}

@@ -40,17 +40,17 @@ ht-degree: 0%
 
 | 重要度 | CPU | メモリ | 円盤 | [!DNL Apdex] | MariaDB | [!DNL Redis] メモリ | トラブルシューティング記事 |
 |----------|-----|--------|------|-------|---------|--------------|-------------------------|
-| 警告 | ✅ |        |      |       |         |              | [Adobe Commerceの管理アラート：CPUの警告アラート ](managed-alerts-for-magento-commerce-cpu-warning-alert.md) |
-| 重要 | ✅ |        |      |       |         |              | [Adobe Commerceのアラートの管理：CPU クリティカルアラート ](managed-alerts-on-magento-commerce-cpu-critical-alert.md) |
-| 警告 |     | ✅ |      |       |         |              | [Adobe Commerceの管理アラート：メモリ警告アラート ](managed-alerts-for-magento-commerce-memory-warning-alert.md) |
-| 重要 |     | ✅ |      |       |         |              | [Adobe Commerceの管理アラート：メモリ クリティカル アラート ](managed-alerts-on-magento-commerce-memory-critical-alert.md) |
-| 警告 |     |        |      | ✅ |         |              | Adobe Commerceの[管理アラート： [!DNL Apdex] 警告アラート ](managed-alerts-for-magento-commerce-apdex-warning-alert.md) |
-| 重要 |     |        |      | ✅ |         |              | Adobe Commerceの[管理アラート： [!DNL Apdex]  クリティカルアラート ](managed-alerts-for-magento-commerce-apdex-critical-alert.md) |
-| 警告 |     |        | ✅ |       |         |              | [Adobe Commerceの管理アラート：ディスク警告アラート ](managed-alerts-for-magento-commerce-disk-warning-alert.md) |
-| 重要 |     |        | ✅ |       |         |              | [Adobe Commerceの管理アラート：ディスク クリティカル アラート ](managed-alerts-for-magento-commerce-disk-critical-alert.md) |
-| 警告/重要 |     |        |      |       | ✅ |              | [Adobe Commerceのアラートの管理：MariaDB アラート ](managed-alerts-on-magento-commerce-mariadb-alerts.md) |
-| 警告 |     |        |      |       |         | ✅ | [Adobe Commerceのアラートを管理： [!DNL Redis]  メモリ警告アラート ](managed-alerts-on-magento-commerce-redis-memory-warning-alert.md) |
-| 重要 |     |        |      |       |         | ✅ | Adobe Commerceの[管理アラート： [!DNL Redis]  メモリ クリティカル アラート ](managed-alerts-on-magento-commerce-redis-memory-critical-alert.md) |
+| 警告 | ✅ |        |      |       |         |              | [Adobe Commerceの管理アラート：CPUの警告アラート &#x200B;](managed-alerts-for-magento-commerce-cpu-warning-alert.md) |
+| 重要 | ✅ |        |      |       |         |              | [Adobe Commerceのアラートの管理：CPU クリティカルアラート &#x200B;](managed-alerts-on-magento-commerce-cpu-critical-alert.md) |
+| 警告 |     | ✅ |      |       |         |              | [Adobe Commerceの管理アラート：メモリ警告アラート &#x200B;](managed-alerts-for-magento-commerce-memory-warning-alert.md) |
+| 重要 |     | ✅ |      |       |         |              | [Adobe Commerceの管理アラート：メモリ クリティカル アラート &#x200B;](managed-alerts-on-magento-commerce-memory-critical-alert.md) |
+| 警告 |     |        |      | ✅ |         |              | Adobe Commerceの[管理アラート： [!DNL Apdex] 警告アラート &#x200B;](managed-alerts-for-magento-commerce-apdex-warning-alert.md) |
+| 重要 |     |        |      | ✅ |         |              | Adobe Commerceの[管理アラート： [!DNL Apdex]  クリティカルアラート &#x200B;](managed-alerts-for-magento-commerce-apdex-critical-alert.md) |
+| 警告 |     |        | ✅ |       |         |              | [Adobe Commerceの管理アラート：ディスク警告アラート &#x200B;](managed-alerts-for-magento-commerce-disk-warning-alert.md) |
+| 重要 |     |        | ✅ |       |         |              | [Adobe Commerceの管理アラート：ディスク クリティカル アラート &#x200B;](managed-alerts-for-magento-commerce-disk-critical-alert.md) |
+| 警告/重要 |     |        |      |       | ✅ |              | [Adobe Commerceのアラートの管理：MariaDB アラート &#x200B;](managed-alerts-on-magento-commerce-mariadb-alerts.md) |
+| 警告 |     |        |      |       |         | ✅ | [Adobe Commerceのアラートを管理： [!DNL Redis]  メモリ警告アラート &#x200B;](managed-alerts-on-magento-commerce-redis-memory-warning-alert.md) |
+| 重要 |     |        |      |       |         | ✅ | Adobe Commerceの[管理アラート： [!DNL Redis]  メモリ クリティカル アラート &#x200B;](managed-alerts-on-magento-commerce-redis-memory-critical-alert.md) |
 
 ## 管理アラート用に設定されたアラートしきい値の確認
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->実稼動にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることを強くお勧めします。 また、パッチを適用する前にデータをバックアップすることを強くお勧めします。 [ ファイルシステムのバックアップとロールバック ](../../installation/tutorials/backup.md)を参照してください。
+>実稼動にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることを強くお勧めします。 また、パッチを適用する前にデータをバックアップすることを強くお勧めします。 [&#x200B; ファイルシステムのバックアップとロールバック &#x200B;](../../installation/tutorials/backup.md)を参照してください。
 
 パッチ（または差分）ファイルは、次の点に注意するテキストファイルです。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 パッチには3つのタイプがあります。
 
-- **ホットフィックス** - Adobeが[ セキュリティセンター](https://magento.com/security/patches)で公開するパッチ。
+- **ホットフィックス** - Adobeが[&#x200B; セキュリティセンター](https://magento.com/security/patches)で公開するパッチ。
 - **個別パッチ** - Adobe Commerce サポートが個別に作成および配布するパッチ。
 - **カスタムパッチ** - Git コミットから作成できる非公式パッチ。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 修正プログラムは、多くのマーチャントに影響を与える影響の大きいセキュリティまたは品質の修正プログラムを含むパッチです。 これらの修正は、該当するマイナーバージョンの次のパッチリリースに適用されます。 Adobeは、必要に応じてホットフィックスをリリースします。
 
-修正プログラムは、[ セキュリティ センター](https://magento.com/security/patches)で見つけることができます。 パッチファイルをダウンロードするには、バージョンとインストールタイプに応じて、ページの指示に従います。 [ コマンドライン ](../patches/apply.md#)または[Composer](../patches/apply.md)を使用して、ホットフィックス パッチを適用します。
+修正プログラムは、[&#x200B; セキュリティ センター](https://magento.com/security/patches)で見つけることができます。 パッチファイルをダウンロードするには、バージョンとインストールタイプに応じて、ページの指示に従います。 [&#x200B; コマンドライン &#x200B;](../patches/apply.md#)または[Composer](../patches/apply.md)を使用して、ホットフィックス パッチを適用します。
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Adobeのエンジニアリングチームが、GitHubで行われたバグ修正
 
 {{custom-patches-disclaimer}}
 
-カスタムパッチを適用するには、[ コマンドライン ](apply.md#command-line)または[Composer](apply.md#composer)を使用します。
+カスタムパッチを適用するには、[&#x200B; コマンドライン &#x200B;](apply.md#command-line)または[Composer](apply.md#composer)を使用します。
 
 カスタムパッチファイルを作成する方法はたくさんあります。 次の例では、既知のGit コミットからパッチを作成することに焦点を当てています。
 
@@ -98,4 +98,4 @@ index c8a6fef58d31..7d01c195791e 100644
 
 >[!NOTE]
 >
->Adobe Commerce on Cloud Infrastructure プロジェクトにパッチを適用するには、_Commerce on Cloud ガイド_&#x200B;の「[ パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」を参照してください。
+>Adobe Commerce on Cloud Infrastructure プロジェクトにパッチを適用するには、_Commerce on Cloud ガイド_&#x200B;の「[&#x200B; パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」を参照してください。

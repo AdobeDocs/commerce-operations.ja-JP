@@ -17,4 +17,4 @@ Adobe Commerceの最新の改善点（機能強化、セキュリティ、バグ
 
 {{bics}}
 
-Composerを使用して、Commerceのインストール環境を最新のリリースバージョンに更新し、新機能、パフォーマンスの向上、セキュリティパッチを活用します。 アップグレード手順について詳しくは、[Adobe Commerce アップグレードガイド ](/help/upgrade/overview.md)を参照してください。
+Composerを使用して、Commerceのインストール環境を最新のリリースバージョンに更新し、新機能、パフォーマンスの向上、セキュリティパッチを活用します。 アップグレード手順について詳しくは、[Adobe Commerce アップグレードガイド &#x200B;](/help/upgrade/overview.md)を参照してください。

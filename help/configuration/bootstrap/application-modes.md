@@ -18,7 +18,7 @@ Commerce アプリケーションは、次のいずれかの&#x200B;_モード_&
 | [default](#default-mode) | 設定を変更することなく、Commerce アプリケーションを1台のサーバーにデプロイして実行します。 _実稼動用に最適化されていません_。 | いいえ |
 | [開発者](#developer-mode) | Commerce アプリケーションを拡張またはカスタマイズする際の開発に最適です。 | いいえ |
 | [本番](#production-mode) | Commerce アプリケーションを実稼動システムにデプロイして実行します。 | はい |
-| [ メンテナンス ](#maintenance-mode) | 更新と設定の実行中にサイトへのアクセスを防止します。 | はい |
+| [&#x200B; メンテナンス &#x200B;](#maintenance-mode) | 更新と設定の実行中にサイトへのアクセスを防止します。 | はい |
 
 Adobe Commerceの操作モードを手動で変更する方法については、[操作モードの設定](../cli/set-mode.md)を参照してください。
 
@@ -26,9 +26,9 @@ Adobe Commerceの操作モードを手動で変更する方法については、
 
 読み取り専用のファイルシステムのため、リモートクラウド環境のモードを変更することは厳しく制限されており、Adobe Commerce サポートで上書きすることはできません。 `ece-tools` パッケージが複数の構成ソースに基づいてファイルを上書きするため、`app/etc/env.php` ファイルを変更してモードを変更しようとしないでください。
 
-クラウド インフラストラクチャ上のAdobe Commerceは、デプロイメント中に&#x200B;_maintenance_ モードでアプリケーションを自動的に実行し、デプロイメントが完了するまでサイトをオフラインにします。 それ以外の場合、アプリケーションは&#x200B;_本番_ モードのままです。 _Commerce on Cloud Infrastructure ガイド_&#x200B;の「[ デプロイメントプロセス ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process#deploy-phase)」を参照してください。
+クラウド インフラストラクチャ上のAdobe Commerceは、デプロイメント中に&#x200B;_maintenance_ モードでアプリケーションを自動的に実行し、デプロイメントが完了するまでサイトをオフラインにします。 それ以外の場合、アプリケーションは&#x200B;_本番_ モードのままです。 _Commerce on Cloud Infrastructure ガイド_&#x200B;の「[&#x200B; デプロイメントプロセス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process#deploy-phase)」を参照してください。
 
-Commerce用Cloud Dockerを開発ツールとして使用する場合、_developer_ モードでDocker環境にクラウドインフラストラクチャプロジェクトをデプロイできますが、追加のファイル同期操作によりパフォーマンスが低下します。 _Cloud Docker for Commerce ガイド_&#x200B;の「[Docker環境のデプロイ ](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode)」を参照してください。
+Commerce用Cloud Dockerを開発ツールとして使用する場合、_developer_ モードでDocker環境にクラウドインフラストラクチャプロジェクトをデプロイできますが、追加のファイル同期操作によりパフォーマンスが低下します。 _Cloud Docker for Commerce ガイド_&#x200B;の「[Docker環境のデプロイ &#x200B;](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode)」を参照してください。
 
 
 ## デフォルトモード
@@ -49,7 +49,7 @@ Commerce アプリケーションを拡張およびカスタマイズするに�
 
 開発者向けモード：
 
-- [自動コードコンパイル ](../cli/code-compiler.md)と強化されたデバッグを有効にします
+- [自動コードコンパイル &#x200B;](../cli/code-compiler.md)と強化されたデバッグを有効にします
 - 捕捉されない例外がブラウザーに表示されます
 - `var/report`にログインしているシステムは詳細です
 - 例外は、ログではなくエラーハンドラーにスローされます
@@ -62,9 +62,9 @@ Commerce アプリケーションを拡張およびカスタマイズするに�
 
 ## 実稼動モード
 
-_実稼動_ モードは、実稼動システムにCommerce アプリケーションをデプロイするのに最適です。 データベースやweb サーバーなどのサーバー環境を最適化した後、[静的ビューファイルのデプロイメントツール ](../cli/static-view-file-deployment.md)を実行して、静的ビューファイルを`pub/static` ディレクトリに書き込む必要があります。 これにより、実行時にCommerce アプリケーションが静的ファイルを必要に応じて動的に検索してコピー（マテリアライズ）するのではなく、デプロイメント時に必要なすべての静的ファイルを提供することで、パフォーマンスが向上します。
+_実稼動_ モードは、実稼動システムにCommerce アプリケーションをデプロイするのに最適です。 データベースやweb サーバーなどのサーバー環境を最適化した後、[静的ビューファイルのデプロイメントツール &#x200B;](../cli/static-view-file-deployment.md)を実行して、静的ビューファイルを`pub/static` ディレクトリに書き込む必要があります。 これにより、実行時にCommerce アプリケーションが静的ファイルを必要に応じて動的に検索してコピー（マテリアライズ）するのではなく、デプロイメント時に必要なすべての静的ファイルを提供することで、パフォーマンスが向上します。
 
-管理者の「詳細」セクションや「開発者」システム設定セクションなどの一部のフィールドは、実稼動モードでは使用できません。 例えば、_では、管理者を使用してキャッシュタイプを有効または無効にすることはできません_。 キャッシュタイプ _のみ_&#x200B;は、[ コマンドライン ](../cli/manage-cache.md#enable-or-disable-cache-types)を使用して有効または無効にできます。
+管理者の「詳細」セクションや「開発者」システム設定セクションなどの一部のフィールドは、実稼動モードでは使用できません。 例えば、_では、管理者を使用してキャッシュタイプを有効または無効にすることはできません_。 キャッシュタイプ _のみ_&#x200B;は、[&#x200B; コマンドライン &#x200B;](../cli/manage-cache.md#enable-or-disable-cache-types)を使用して有効または無効にできます。
 
 実稼動モード：
 
@@ -76,9 +76,9 @@ _実稼動_ モードは、実稼動システムにCommerce アプリケーシ�
 
 _メンテナンス_ モードは、改善、更新、設定タスク中にサイトへのアクセスを制限または禁止します。 既定では、サイトは訪問者を既定の`Service Temporarily Unavailable` ページにリダイレクトします。
 
-[ カスタムメンテナンスページ ](../../upgrade/troubleshooting/maintenance-mode-options.md)を作成し、メンテナンスモードを手動で有効または無効にし、メンテナンスモードを設定して、許可されたIP アドレスからの訪問者がストアを通常どおりに表示できるようにすることができます。 _インストールガイド_&#x200B;の「[ メンテナンスモードを有効にして無効にする](../../installation/tutorials/maintenance-mode.md)」を参照してください。
+[&#x200B; カスタムメンテナンスページ &#x200B;](../../upgrade/troubleshooting/maintenance-mode-options.md)を作成し、メンテナンスモードを手動で有効または無効にし、メンテナンスモードを設定して、許可されたIP アドレスからの訪問者がストアを通常どおりに表示できるようにすることができます。 _インストールガイド_&#x200B;の「[&#x200B; メンテナンスモードを有効にして無効にする](../../installation/tutorials/maintenance-mode.md)」を参照してください。
 
-クラウドインフラストラクチャでCommerceを使用している場合、Commerce アプリケーションはデプロイメントフェーズでメンテナンスモードで実行されます。 デプロイメントが正常に完了すると、Commerce アプリケーションは実稼動モードで動作に戻ります。 _Commerce on Cloud Infrastructure ガイド_&#x200B;の[ デプロイメントフック ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices#phase-5%3A-deployment-hooks)を参照してください。
+クラウドインフラストラクチャでCommerceを使用している場合、Commerce アプリケーションはデプロイメントフェーズでメンテナンスモードで実行されます。 デプロイメントが正常に完了すると、Commerce アプリケーションは実稼動モードで動作に戻ります。 _Commerce on Cloud Infrastructure ガイド_&#x200B;の[&#x200B; デプロイメントフック &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices#phase-5%3A-deployment-hooks)を参照してください。
 
 メンテナンスモードで：
 

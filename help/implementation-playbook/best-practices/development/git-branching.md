@@ -23,7 +23,7 @@ Source コードは、開発プロセス中に複数の安定性フェーズを�
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
@@ -40,7 +40,7 @@ Source コードは、開発プロセス中に複数の安定性フェーズを�
 
 >[!TIP]
 >
->Adobe Commerceのクラウドインフラストラクチャプロジェクトには、さまざまな環境に対応する特定のブランチが含まれています。 _クラウドガイド_&#x200B;の[Pro プロジェクトワークフロー](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow)および[ スタータープロジェクトワークフロー](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)を参照してください。
+>Adobe Commerceのクラウドインフラストラクチャプロジェクトには、さまざまな環境に対応する特定のブランチが含まれています。 _クラウドガイド_&#x200B;の[Pro プロジェクトワークフロー](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow)および[&#x200B; スタータープロジェクトワークフロー](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)を参照してください。
 
 ## ブランチ戦略
 

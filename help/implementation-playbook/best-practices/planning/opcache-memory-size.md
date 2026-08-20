@@ -22,11 +22,11 @@ Adobe Commerce on cloud infrastructure Pro プランアーキテクチャ 2.3.x�
 
 ## メモリの設定
 
-[OPcache PHP モジュール ](https://www.php.net/manual/en/book.opcache.php)に少なくとも&#x200B;**2 GB**&#x200B;のメモリを割り当てます。 OPcache モジュールは`php.ini` ファイルで構成されています。 2048 MBのメモリを割り当てるには、`opcache.memory_consumption = 2048`を設定します。
+[OPcache PHP モジュール &#x200B;](https://www.php.net/manual/en/book.opcache.php)に少なくとも&#x200B;**2 GB**&#x200B;のメモリを割り当てます。 OPcache モジュールは`php.ini` ファイルで構成されています。 2048 MBのメモリを割り当てるには、`opcache.memory_consumption = 2048`を設定します。
 
 ## 追加情報
 
-* [ パフォーマンスのベストプラクティス - PHP設定](../../../performance/software.md#php-settings)
+* [&#x200B; パフォーマンスのベストプラクティス - PHP設定](../../../performance/software.md#php-settings)
 * [PHP オプションの設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/configure-app-yaml)
 * [Adobe Commerce on cloud infrastructureのデータベースのベストプラクティス](database-on-cloud.md)
 * [Adobe Commerceのクラウドインフラストラクチャで最も一般的なデータベースの問題](../maintenance/resolve-database-performance-issues.md)

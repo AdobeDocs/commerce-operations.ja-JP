@@ -15,5 +15,5 @@ ht-degree: 0%
 >
 >こちらもご覧ください：
 >
->- [ ソフトウェア ライフサイクル ポリシー](/help/release/lifecycle-policy.md) — サポート終了日、延長サポート、およびセキュリティのみの移行規定
+>- [&#x200B; ソフトウェア ライフサイクル ポリシー](/help/release/lifecycle-policy.md) — サポート終了日、延長サポート、およびセキュリティのみの移行規定
 >- [Cloud バージョンのアップグレード実施ポリシー](/help/release/version-upgrade-enforcement-policy.md) – 実施日と必要なアクション

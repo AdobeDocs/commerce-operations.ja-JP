@@ -217,7 +217,7 @@ Adobe Commerce 2.4.7-p1 セキュリティリリースでは、以前のリリ�
 
 このリリースには、次のハイライトが含まれています。
 
-* **Google Authenticator**&#x200B;の[ ワンタイムパスワード（OTP）設定](https://experienceleague.adobe.com/en/docs/commerce-admin/config/security/2fa)を更新します。この更新は、2.4.7の[後方互換性のない変更](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value)によって発生したエラーを解決するために必要です。 **[!UICONTROL OTP Window]** フィールドの説明で、設定が正確に説明されるようになりました。デフォルト値は`1`から`29`に変更されました。
+* **Google Authenticator**&#x200B;の[&#x200B; ワンタイムパスワード（OTP）設定](https://experienceleague.adobe.com/en/docs/commerce-admin/config/security/2fa)を更新します。この更新は、2.4.7の[後方互換性のない変更](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value)によって発生したエラーを解決するために必要です。 **[!UICONTROL OTP Window]** フィールドの説明で、設定が正確に説明されるようになりました。デフォルト値は`1`から`29`に変更されました。
 
 * **B2B バージョンの互換性** - Commerce バージョン 2.4.7-p1との互換性を保つために、Adobe Commerce B2B拡張機能を持つマーチャントは、[B2B バージョン 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1)にアップグレードする必要があります。
 

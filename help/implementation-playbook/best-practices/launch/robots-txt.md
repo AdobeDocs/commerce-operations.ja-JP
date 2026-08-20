@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
@@ -64,14 +64,14 @@ ht-degree: 0%
 
 >[!INFO]
 >
->詳しい手順については、[ サイトマップと検索エンジンロボットの追加](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/robots-sitemap)を参照してください。
+>詳しい手順については、[&#x200B; サイトマップと検索エンジンロボットの追加](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/robots-sitemap)を参照してください。
 
 
 ### マルチサイトのストアフロント
 
 Adobe Commerce on cloud infrastructureを1回実装して、複数のストアを設定および実行できます。 「[複数のweb サイトまたはストアを設定する](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)」を参照してください。
 
-[ シングルサイトストアフロント ](#single-site-storefronts)の`robots.txt`および`sitemap.xml` ファイルを設定する場合と同じベストプラクティスが、2つの重要な違いを伴うマルチサイトストアフロントに適用されます。
+[&#x200B; シングルサイトストアフロント &#x200B;](#single-site-storefronts)の`robots.txt`および`sitemap.xml` ファイルを設定する場合と同じベストプラクティスが、2つの重要な違いを伴うマルチサイトストアフロントに適用されます。
 
 - `robots.txt`および`sitemap.xml` ファイル名に、対応するサイトの名前が含まれていることを確認してください。 例：
   - `domaineone_robots.txt`
@@ -93,7 +93,7 @@ Adobe Commerce on cloud infrastructureを1回実装して、複数のストア�
 
 ## Adobe Commerce オンプレミス
 
-管理者アプリケーションを使用して、`robots.txt`および`sitemap.xml` ファイルを設定し、ボットが不要なコンテンツをスキャンおよびインデックス作成しないようにします（[検索エンジンロボット ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)を参照）。
+管理者アプリケーションを使用して、`robots.txt`および`sitemap.xml` ファイルを設定し、ボットが不要なコンテンツをスキャンおよびインデックス作成しないようにします（[検索エンジンロボット &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)を参照）。
 
 >[!TIP]
 >
@@ -103,7 +103,7 @@ Adobe Commerce on cloud infrastructureを1回実装して、複数のストア�
 
 `robots.txt` ファイル内の管理者パスを公開しないでください。 管理パスを公開すると、サイトハッキングの脆弱性やデータの損失の可能性があります。 `robots.txt` ファイルから管理者パスを削除します。
 
-`robots.txt` ファイルを編集し、管理パスのすべてのエントリを削除する手順については、[ マーケティングユーザーガイド > SEOおよび検索>検索エンジンロボット ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)を参照してください。
+`robots.txt` ファイルを編集し、管理パスのすべてのエントリを削除する手順については、[&#x200B; マーケティングユーザーガイド > SEOおよび検索>検索エンジンロボット &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)を参照してください。
 
 >[!TIP]
 >

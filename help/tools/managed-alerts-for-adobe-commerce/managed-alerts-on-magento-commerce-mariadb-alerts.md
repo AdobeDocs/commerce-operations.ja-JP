@@ -24,12 +24,12 @@ Adobe Commerce on cloud infrastructure Pro プランアーキテクチャ
 
 ## イシュー
 
-Adobe Commerce](managed-alerts-for-magento-commerce.md)の[管理対象アラートにサインアップし、1つ以上のアラートしきい値を超えた場合、[!DNL New Relic]に管理対象アラートが届きます。 これらのアラートは、サポートとエンジニアリングからのインサイトを使用して、お客様に標準セットを提供するためにAdobeによって開発されました。
+Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)の管理対象アラートにサインアップし、1つ以上のアラートしきい値を超えた場合、[!DNL New Relic]に管理対象アラートが届きます。 これらのアラートは、サポートとエンジニアリングからのインサイトを使用して、お客様に標準セットを提供するためにAdobeによって開発されました。
 
 **実行！**
 
 * このアラートがクリアされるまでスケジュールされたデプロイメントをすべて中止します。
-* サイトが完全に応答しない、または応答しなくなった場合は、すぐにメンテナンスモードにします。 手順については、『Commerce インストールガイド』の「[ メンテナンスモードを有効または無効にする](/help/installation/tutorials/maintenance-mode.md)」を参照してください。 トラブルシューティングのためにサイトにアクセスできるように、IPを免除IP アドレスリストに追加してください。 手順については、[除外IP アドレスのリストの管理](/help/installation/tutorials/maintenance-mode.md#maintain-the-list-of-exempt-ip-addresses)を参照してください。
+* サイトが完全に応答しない、または応答しなくなった場合は、すぐにメンテナンスモードにします。 手順については、『Commerce インストールガイド』の「[&#x200B; メンテナンスモードを有効または無効にする](/help/installation/tutorials/maintenance-mode.md)」を参照してください。 トラブルシューティングのためにサイトにアクセスできるように、IPを免除IP アドレスリストに追加してください。 手順については、[除外IP アドレスのリストの管理](/help/installation/tutorials/maintenance-mode.md#maintain-the-list-of-exempt-ip-addresses)を参照してください。
 * サイトパフォーマンスに影響がある場合は、アラートの原因となるインポートなどのスクリプトを終了します。
 
 **やめて！**
@@ -44,12 +44,12 @@ Adobe Commerce](managed-alerts-for-magento-commerce.md)の[管理対象アラー
 
 DML Queries Critical アラートを受け取った場合は、最初の手順から開始します。 DML クエリの警告アラートを受け取った場合は、手順2から開始します。
 
-1. Adobe Commerce サポートチケットが存在するかどうかを確認します。 手順については、ナレッジベース [ サポートチケットの追跡](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case)を参照してください。 サポートは、[!DNL New Relic]しきい値のアラートを受け取り、チケットを作成し、問題に取り組み始めた可能性があります。 チケットが存在しない場合は、チケットを作成します。 チケットには次の情報が必要です。
+1. Adobe Commerce サポートチケットが存在するかどうかを確認します。 手順については、ナレッジベース [&#x200B; サポートチケットの追跡](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case)を参照してください。 サポートは、[!DNL New Relic]しきい値のアラートを受け取り、チケットを作成し、問題に取り組み始めた可能性があります。 チケットが存在しない場合は、チケットを作成します。 チケットには次の情報が必要です。
    * 連絡先の理由：**[!UICONTROL New Relic MariaDB alert received]**&#x200B;を選択してください。
    * アラートの説明。
-   * [[!DNL New Relic]  インシデントリンク ](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents)。 これは、Adobe Commerce](managed-alerts-for-magento-commerce.md)の[管理済みアラートに含まれています。
+   * [[!DNL New Relic]  インシデントリンク &#x200B;](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents)。 これは、Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)の管理済みアラートに含まれています。
 1. 問題の原因を特定するには、DML クエリを特定してみてください。
-   1. New Relic [ データベース ページ ](https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/databases-page-view-operations-throughput-response-time)の手順を使用して、データベース操作を確認します。
+   1. New Relic [&#x200B; データベース ページ &#x200B;](https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/databases-page-view-operations-throughput-response-time)の手順を使用して、データベース操作を確認します。
    1. **[!UICONTROL CALL COUNT]**、次に&#x200B;**[!UICONTROL OPERATION]**&#x200B;で並べ替えます。 `INSERT`、`DELETE`および`UPDATE`操作を確認してください。
    1. 高いAVGを探します。
    1. クリックして、データベース操作の呼び出し元を検索します。 これにより、クエリを使用しているトランザクションを時間ごとに特定できます。

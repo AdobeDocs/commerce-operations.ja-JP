@@ -28,7 +28,7 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.1 - 2.4.3-p1
 
 >[!NOTE]
 >
->パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
@@ -38,21 +38,21 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.1 - 2.4.3-p1
 
 1. **Store** > **Configuration** > **Customers** > **Customer Configuration** > **名前と住所のオプション** > **電話を表示**&#x200B;に移動し、電話番号をオプションとして設定します。
 1. [!DNL GraphQL API]をログイン顧客として使用して注文します。
-   * 請求先住所と配送先住所を設定する場合は、電話番号を設定しないでください。 開発者向けドキュメントの[[!DNL GraphQL]  チェックアウトチュートリアル ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/)に記載されている手順に従ってください。
-1. [!DNL GraphQL] [`customerOrders` クエリ ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/orders/)を使用して注文を取得します。
+   * 請求先住所と配送先住所を設定する場合は、電話番号を設定しないでください。 開発者向けドキュメントの[[!DNL GraphQL]  チェックアウトチュートリアル &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/)に記載されている手順に従ってください。
+1. [!DNL GraphQL] [`customerOrders` クエリ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/orders/)を使用して注文を取得します。
 
 <pre>
 <code class="language-graphql">
-{
-  customer {
+&lbrace;
+  customer &lbrace;
     firstname
     lastname
     suffix
     email
 
-    orders(filter:{number:{eq:"000000001"}}){
-        items{
-          billing_address {
+    orders(filter:{number:{eq:"000000001"}&#x200B;})&lbrace;
+        items&lbrace;
+          billing_address &lbrace;
 firstname
 lastname
 street
@@ -62,8 +62,8 @@ region_id
 postcode
 telephone
 country_code
-}
-shipping_address {
+&rbrace;
+shipping_address &lbrace;
 firstname
 lastname
 street
@@ -73,11 +73,11 @@ region_id
 postcode
 telephone
 country_code
-}
-        }
-    }
-  }
-}
+&rbrace;
+        &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -94,13 +94,13 @@ country_code
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
 [!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
-* [品質パッチツール ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [品質パッチツール &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
 QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

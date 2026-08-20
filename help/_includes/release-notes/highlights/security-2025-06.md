@@ -23,6 +23,6 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-CVE-2025-47110の修正プログラムは、独立したパッチとしても利用できます。 詳しくは、[ ナレッジベース記事](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27181)を参照してください。
+CVE-2025-47110の修正プログラムは、独立したパッチとしても利用できます。 詳しくは、[&#x200B; ナレッジベース記事](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27181)を参照してください。
 
 >[!ENDSHADEBOX]

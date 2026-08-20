@@ -12,7 +12,7 @@ ht-degree: 0%
 # [!UICONTROL Dashboard]
 
 [!UICONTROL Dashboard] ページには、Adobe Commerce web サイトの正常性と現在のステータスの「一元的なウィンドウ表示」を提供する[!DNL widgets]が一目で表示されます。 各[!DNL widget]には、各機能のページ、各ツール自体、またはレポートへのアクセス リンクが含まれています（[!DNL widget]によって異なります）。
-Adobe Commerceの[!UICONTROL External Resources]のリンクのリストもあります。たとえば、[Adobe Commerce ヘルプセンターのサポートナレッジベース（ヘルプセンター） ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)、[Adobe Commerce開発者向けドキュメント（開発ドキュメント） ](https://developer.adobe.com/commerce/docs/)、[[!DNL Quality Patches Tool]：パッチを検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}、[ セキュリティセンター](https://helpx.adobe.com/security.html)、および[Adobe Commerceの観察（OAC） ](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html)です。
+Adobe Commerceの[!UICONTROL External Resources]のリンクのリストもあります。たとえば、[Adobe Commerce ヘルプセンターのサポートナレッジベース（ヘルプセンター） &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)、[Adobe Commerce開発者向けドキュメント（開発ドキュメント） &#x200B;](https://developer.adobe.com/commerce/docs/)、[[!DNL Quality Patches Tool]：パッチを検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}、[&#x200B; セキュリティセンター](https://helpx.adobe.com/security.html)、および[Adobe Commerceの観察（OAC） &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html)です。
 
 ## 要素
 
@@ -28,7 +28,7 @@ Adobe Commerceの[!UICONTROL External Resources]のリンクのリストもあ�
 
 * **[!UICONTROL Extensions]**：現在Adobe Commerce インスタンスにインストールされている拡張機能を表示します。 [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com//extensions.html)の情報は、利用可能な場合、そこに記載されている拡張機能について提供されます。
 
-* **[!UICONTROL Alerts]**: Adobe Commerce インスタンスの最新の[!DNL New Relic Managed Alerts]を表示します。 Adobe Commerce](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)の[管理済みアラートの詳細と、New Relic サービス ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/access-new-relic-services)へのアクセス方法については、Adobe Commerce サポート サポート ナレッジベースを参照してください。[
+* **[!UICONTROL Alerts]**: Adobe Commerce インスタンスの最新の[!DNL New Relic Managed Alerts]を表示します。 Adobe Commerce[&#128279;](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)の[管理済みアラートの詳細と、New Relic サービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/access-new-relic-services)へのアクセス方法については、Adobe Commerce サポート サポート ナレッジベースを参照してください。
 
 * **[!UICONTROL Non-recommended software in use]**: Adobe Commerceのバージョンに基づいて、現在Adobe Commerce インスタンスで使用している推奨されないソフトウェアを表示します。 推奨されないソフトウェアは、[!UICONTROL Name]、[!UICONTROL Installed Version]および[!UICONTROL Recommended Version]によってリストされています。
 
@@ -57,4 +57,4 @@ Adobe Commerce インスタンスに表示する推奨パッチがない場合�
 
 * [!UICONTROL Security Scan Tool] [!DNL widget]に移動し、[!UICONTROL View Report]をクリックして、サイトの[!UICONTROL Recommendations] レポートを表示します。
 
-* [!DNL External Resources]のリンクを使用して、詳細情報の確認、セキュリティパッチ、アップデート、ベストプラクティスの最新情報の入手、insightの[Adobe Commerce ヘルプセンターサポートナレッジベース（ヘルプセンター） ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)、[Adobe Commerce開発者用ドキュメント（DevDocs） ](https://developer.adobe.com/commerce/docs/)、[[!DNL Quality Patches Tool]: パッチ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}、[ セキュリティセンター](https://helpx.adobe.com/security.html)、[Observation for Adobe Commerce（OAC） ](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html)の活用を行います。
+* [!DNL External Resources]のリンクを使用して、詳細情報の確認、セキュリティパッチ、アップデート、ベストプラクティスの最新情報の入手、insightの[Adobe Commerce ヘルプセンターサポートナレッジベース（ヘルプセンター） &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)、[Adobe Commerce開発者用ドキュメント（DevDocs） &#x200B;](https://developer.adobe.com/commerce/docs/)、[[!DNL Quality Patches Tool]: パッチ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}、[&#x200B; セキュリティセンター](https://helpx.adobe.com/security.html)、[Observation for Adobe Commerce（OAC） &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html)の活用を行います。

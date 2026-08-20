@@ -54,7 +54,7 @@ _名詞_
 Adobe Commerceでは、管理者ユーザーは管理者のすべての権限を持ち、管理者のすべての機能、オプション、および機能にアクセスできます。
 また、ユーザーや役割を作成することもできます。
 
-詳細：[ ユーザーの追加](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)
+詳細：[&#x200B; ユーザーの追加](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)
 
 _Term属性&#x200B;:_
 
@@ -70,7 +70,7 @@ _名詞_
 管理画面にアクセスすると、商品、注文、配送、CMSのコンテンツ、ストアフロントのデザイン、お客様情報など、ストアを管理できます。
 管理者ユーザーには、機能、オプション、および機能へのアクセスを制御する権限を持つ関連する役割があります。
 
-詳細：[Adobe Commerce ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
+詳細：[Adobe Commerce ユーザーガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
 
 _Term属性&#x200B;:_
 
@@ -96,7 +96,7 @@ _名詞_
 
 管理者に割り当てられた内部領域名。
 
-詳細：[Adobe Commerce ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
+詳細：[Adobe Commerce ユーザーガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
 
 _Term属性&#x200B;:_
 
@@ -212,13 +212,13 @@ _Term属性&#x200B;:_
 _名詞_
 
 特定のコンテンツ（情報、ユーザーインターフェイス要素）をレンダリングする、ページ出力の単位です。エンドユーザーにとって視覚的に有形なものです。
-[ ブロック ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html)は実装され、モジュールによって提供されます。
+[&#x200B; ブロック &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html)は実装され、モジュールによって提供されます。
 ブロックは、テンプレートを使用してHTMLを生成します。
 ブロックの例には、カテゴリーリスト、ミニカート、製品タグ、製品リストなどがあります。
 
-[動的ブロック ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html)は、価格ルールなどのロジックに基づいてコンテンツを提供します。
+[動的ブロック &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html)は、価格ルールなどのロジックに基づいてコンテンツを提供します。
 
-ページビルダーは、[ ブロック ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html)と[動的ブロック ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html)のインタラクティブな操作と作成を拡張します。
+ページビルダーは、[&#x200B; ブロック &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html)と[動的ブロック &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html)のインタラクティブな操作と作成を拡張します。
 
 _Term属性&#x200B;:_
 
@@ -436,7 +436,7 @@ _名詞_
 
 チェックアウトには、すぐに使える拡張機能を含め、様々なオプションや設定が用意されています。
 
-詳細：[ チェックアウトチュートリアル ](https://developer.adobe.com/commerce/php/tutorials/frontend/custom-checkout/)
+詳細：[&#x200B; チェックアウトチュートリアル &#x200B;](https://developer.adobe.com/commerce/php/tutorials/frontend/custom-checkout/)
 
 _Term属性&#x200B;:_
 
@@ -448,7 +448,7 @@ _名詞_
 
 クラウド変数は、クラウドインフラストラクチャ上のAdobe Commerceに固有の環境変数で、**`MAGENTO_CLOUD`**&#x200B;接頭辞を使用します。
 
-詳細：[ クラウド変数](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud)
+詳細：[&#x200B; クラウド変数](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud)
 
 _Term属性&#x200B;:_
 
@@ -458,7 +458,7 @@ _Term属性&#x200B;:_
 
 _名詞_
 
-管理画面でのみ作成でき、レイアウトファイルを通じて参照できない[ ブロック ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html)の特殊バリアント。
+管理画面でのみ作成でき、レイアウトファイルを通じて参照できない[&#x200B; ブロック &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html)の特殊バリアント。
 
 _Term属性&#x200B;:_
 
@@ -688,7 +688,7 @@ _名詞_
 
 Commerce アプリケーションを管理およびデプロイするために設計された一連のスクリプトとツール。 このパッケージにより、Docker環境へのデプロイ、クローンの管理、プロジェクト設定の検証、Adobe パッチの適用など、多くのAdobe Commerce on cloud インフラストラクチャプロセスが簡素化されます。
 
-詳細：[ece-tools パッケージ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/package-overview)
+詳細：[ece-tools パッケージ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/package-overview)
 
 _Term属性&#x200B;:_
 
@@ -752,7 +752,7 @@ _名詞_
 
 機能を拡張し、多くの場合、カスタム属性よりも複雑なデータタイプを使用します。 これらの属性はGUIには表示されません。
 
-詳細：[ エンティティへの拡張子属性の追加](https://developer.adobe.com/commerce/php/development/components/add-attributes)
+詳細：[&#x200B; エンティティへの拡張子属性の追加](https://developer.adobe.com/commerce/php/development/components/add-attributes)
 
 _Term属性&#x200B;:_
 
@@ -896,7 +896,7 @@ _Term属性&#x200B;:_
 
 _名詞_
 
-[ テナント ID](#tenant-id)を参照してください。
+[&#x200B; テナント ID](#tenant-id)を参照してください。
 
 _Term属性&#x200B;:_
 
@@ -989,7 +989,7 @@ _Term属性&#x200B;:_
 _名詞_
 
 マーケティングおよび小売業では、製品のコストに対する割合を追加して、小売価格を決定します。
-[製品のカスタマイズ可能なオプションを使用して、製品のマークアップ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html)またはマークダウンを設定します。
+[製品のカスタマイズ可能なオプションを使用して、製品のマークアップ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html)またはマークダウンを設定します。
 
 開発中、テキストの処理、プレゼンテーション、書式設定を制御するコンピューター言語。
 また、マークアップタグは、CMSのページやブロックに機能やコンテンツを追加するコードのスニペットです。
@@ -1023,7 +1023,7 @@ _Term属性&#x200B;:_
 
 _名詞_
 
-MFTFは[機能テスト フレームワーク ](https://developer.adobe.com/commerce/testing/functional-testing-framework/)です。
+MFTFは[機能テスト フレームワーク &#x200B;](https://developer.adobe.com/commerce/testing/functional-testing-framework/)です。
 QA スペシャリスト、PHP開発者、システムインテグレーターなど、Commerceの開発者やソフトウェアエンジニア向けのテストフレームワークを提供します。
 開発者とQAは、web アプリケーションでのユーザーインタラクションを試し、機能を検証し、回帰テストを自動化するためのテストを作成できます。
 
@@ -1073,7 +1073,7 @@ OMSの機能は次のとおりです。
 * カスタマーサービスの負担を軽減し、応答性を向上
 * 顧客体験とロイヤルティの向上
 
-詳細：[ アーカイブされたOMS ドキュメント サイト ](https://commerce-docs.github.io/oms-documentation-archive/)
+詳細：[&#x200B; アーカイブされたOMS ドキュメント サイト &#x200B;](https://commerce-docs.github.io/oms-documentation-archive/)
 
 _Term属性&#x200B;:_
 
@@ -1087,7 +1087,7 @@ _名詞_
 
 オリジンのクローキングは、クラウドインフラストラクチャ（オリジン）に送信されるDDoS攻撃を防ぐために、Fastly以外のトラフィックをAdobe Commerceクラウドインフラストラクチャ上でブロックできるセキュリティ機能です。
 
-詳細：[Fastly オリジンクローキング ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)
+詳細：[Fastly オリジンクローキング &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)
 
 _Term属性&#x200B;:_
 
@@ -1105,7 +1105,7 @@ Page Builderは、事前定義済みのコントロールをドラッグ&amp;ド
 また、コーディングの経験がなくても、レイアウトやページをデザインすることができます。
 ページビルダーを拡張する開発者には、拡張機能のサポートが提供されます。
 
-詳細：[ ページビルダーユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)、[ ページビルダー開発ドキュメント ](https://developer.adobe.com/commerce/frontend-core/page-builder/)
+詳細：[&#x200B; ページビルダーユーザーガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)、[&#x200B; ページビルダー開発ドキュメント &#x200B;](https://developer.adobe.com/commerce/frontend-core/page-builder/)
 
 _Term属性&#x200B;:_
 
@@ -1435,7 +1435,7 @@ UI コンポーネントシステムの目標には、次のものが含まれ�
 * AJAXを使用したコンポーネントデータの更新
 * 上記の項目を作成するための新しいDSLの導入
 
-詳細：[UI コンポーネントガイド ](https://developer.adobe.com/commerce/frontend-core/ui-components/)、[ ページビルダー](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
+詳細：[UI コンポーネントガイド &#x200B;](https://developer.adobe.com/commerce/frontend-core/ui-components/)、[&#x200B; ページビルダー](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
 
 _Term属性&#x200B;:_
 
@@ -1474,7 +1474,7 @@ Commerceの動作を拡張またはカスタマイズし、サードパーティ
 VBEは徹底的にテストされ、サポートされている各バージョンのAdobe Commerceに含まれています。
 VBEには、モジュール、テーマ、言語パックが含まれます。
 
-詳しくは、[ ベンダーのバンドル拡張機能のトピック ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html)を参照してください。
+詳しくは、[&#x200B; ベンダーのバンドル拡張機能のトピック &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html)を参照してください。
 
 _Term属性&#x200B;:_
 
@@ -1540,7 +1540,7 @@ _Term属性&#x200B;:_
 
 _名詞_
 
-[ ウィジェット ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html)は、ストアページの特定の場所にブロック、リンク、動的コンテンツを配置するために使用できる、準備されたコードのスニペットです。
+[&#x200B; ウィジェット &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html)は、ストアページの特定の場所にブロック、リンク、動的コンテンツを配置するために使用できる、準備されたコードのスニペットです。
 ウィジェットを使用して、マーケティングキャンペーンのランディングページを作成したり、ストア全体の特定の場所にプロモーションコンテンツを表示したりできます。
 ウィジェットは、外部レビューシステム、ビデオチャット、投票、購読フォームのインタラクティブ要素やアクションブロックを追加したり、タグクラウドや画像スライダーのナビゲーション要素を提供したりするためにも使用できます。
 

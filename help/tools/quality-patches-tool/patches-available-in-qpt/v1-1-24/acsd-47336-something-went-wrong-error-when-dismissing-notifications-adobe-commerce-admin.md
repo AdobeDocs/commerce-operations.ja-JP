@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# ADOBE COMMERCE Adminで通知を閉じるときにACSD-47336: _[!UICONTROL Something went wrong]_エラーが発生しました
+# ADOBE COMMERCE Adminで通知を閉じるときにACSD-47336: _[!UICONTROL Something went wrong]_&#x200B;エラーが発生しました
 
-ACSD-47336 パッチは、[!DNL Commerce]管理者で通知を却下する際にユーザーに&#x200B;_[!UICONTROL Something went wrong]_エラーが表示される問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.24がインストールされている場合に利用できます。 パッチ IDはACSD-47336です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
+ACSD-47336 パッチは、[!DNL Commerce]管理者で通知を却下する際にユーザーに&#x200B;_[!UICONTROL Something went wrong]_&#x200B;エラーが表示される問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.24がインストールされている場合に利用できます。 パッチ IDはACSD-47336です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
@@ -28,11 +28,11 @@ ACSD-47336 パッチは、[!DNL Commerce]管理者で通知を却下する際に
 
 >[!NOTE]
 >
->このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
-[!DNL Commerce]管理者で通知を閉じると、_[!UICONTROL Something went wrong]_エラーが表示されます。
+[!DNL Commerce]管理者で通知を閉じると、_[!UICONTROL Something went wrong]_&#x200B;エラーが表示されます。
 
 <u>複製する手順</u>:
 
@@ -42,24 +42,24 @@ ACSD-47336 パッチは、[!DNL Commerce]管理者で通知を却下する際に
 
 <u>期待される結果</u>:
 
-完了したタスクをクリアすると、_[!UICONTROL Something went wrong]_エラーは表示されません。
+完了したタスクをクリアすると、_[!UICONTROL Something went wrong]_&#x200B;エラーは表示されません。
 
 <u>実際の結果</u>:
 
-_[!UICONTROL Something went wrong]_エラーが表示されます。
+_[!UICONTROL Something went wrong]_&#x200B;エラーが表示されます。
 
 ## パッチを適用する
 
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
 [!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
 * [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 

@@ -21,7 +21,7 @@ Commerce アプリケーションを実行するには、[pub/index.php](https:/
 
 ## Bootstrap run logic
 
-[ ブートストラップオブジェクト ](https://github.com/magento/magento2/tree/2.4.8/app/bootstrap.php)は、次のアルゴリズムを使用してCommerce アプリケーションを実行します。
+[&#x200B; ブートストラップオブジェクト &#x200B;](https://github.com/magento/magento2/tree/2.4.8/app/bootstrap.php)は、次のアルゴリズムを使用してCommerce アプリケーションを実行します。
 
 1. エラーハンドラーを初期化します。
 1. どこでも使用され、環境の影響を受ける[object manager](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/ObjectManager)と基本的な共有サービスを作成します。 環境パラメーターは、これらのオブジェクトに適切に挿入されます。
@@ -61,7 +61,7 @@ Commerce アプリケーションを実行するには、[pub/index.php](https:/
 
 bootstrap オブジェクトは、次のように、Commerce アプリケーションが捕捉されない例外を処理する方法を指定します。
 
-- [開発者モード ](../bootstrap/application-modes.md#developer-mode)では、例外をそのまま表示します。
+- [開発者モード &#x200B;](../bootstrap/application-modes.md#developer-mode)では、例外をそのまま表示します。
 - 他のモードでは、例外をログに記録し、一般的なエラーメッセージを表示しようとします。
 - エラーコード `1`でCommerceを終了します
 
@@ -73,12 +73,12 @@ bootstrap オブジェクトは、次のように、Commerce アプリケーシ�
 
 [\Magento\Framework\App\Http](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Http)は次のように動作します。
 
-1. [ アプリケーション領域](https://developer.adobe.com/commerce/php/architecture/modules/areas)を決定します。
+1. [&#x200B; アプリケーション領域](https://developer.adobe.com/commerce/php/architecture/modules/areas)を決定します。
 1. コントローラのアクションを検索して実行するために、フロント コントローラとルーティング システムを開始します。
 1. HTTP応答オブジェクトを使用して、コントローラーアクションから取得した結果を返します。
 1. エラー処理（次の優先順位付け）:
 
-   1. [開発者モード ](../bootstrap/application-modes.md#developer-mode)を使用している場合：
+   1. [開発者モード &#x200B;](../bootstrap/application-modes.md#developer-mode)を使用している場合：
       - Commerce アプリケーションがインストールされていない場合は、Setup Wizardにリダイレクトします。
       - Commerce アプリケーションがインストールされている場合は、エラーとHTTP ステータスコード 500 （内部サーバーエラー）が表示されます。
    1. Commerce アプリケーションがメンテナンスモードの場合は、HTTP ステータスコード 503 （サービス利用不可）のユーザーフレンドリーな「サービス利用不可」ランディングページを表示します。
@@ -93,7 +93,7 @@ bootstrap オブジェクトは、次のように、Commerce アプリケーシ�
 
 >[!INFO]
 >
->静的ビューファイルのエントリポイントは、[実稼動モード ](application-modes.md#production-mode)では、サーバー上の潜在的な悪用を避けるために使用されません。 実稼動モードでは、Commerce アプリケーションは、すべての必要なリソースが`<your Commerce install dir>/pub/static` ディレクトリに存在することを想定しています。
+>静的ビューファイルのエントリポイントは、[実稼動モード &#x200B;](application-modes.md#production-mode)では、サーバー上の潜在的な悪用を避けるために使用されません。 実稼動モードでは、Commerce アプリケーションは、すべての必要なリソースが`<your Commerce install dir>/pub/static` ディレクトリに存在することを想定しています。
 
 デフォルトまたは開発者モードでは、存在しない静的リソースのリクエストは、適切な`.htaccess`によって指定された書き換えルールに従って、静的エントリポイントにリダイレクトされます。
 リクエストがエントリポイントにリダイレクトされると、Commerce アプリケーションは、取得したパラメーターに基づいてリクエスト URLを解析し、リクエストされたリソースを見つけます。

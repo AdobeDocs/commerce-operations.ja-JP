@@ -27,8 +27,8 @@ ht-degree: 0%
 | `downloadable_domains` | ダウンロード可能なドメインのリスト |
 | `install` | インストール日 |
 | `lock` | プロバイダー設定のロック |
-| `MAGE_MODE` | [ アプリケーションモード ](../bootstrap/application-modes.md) |
-| `queue` | [ メッセージキュー](../queues/manage-message-queues.md)設定 |
+| `MAGE_MODE` | [&#x200B; アプリケーションモード &#x200B;](../bootstrap/application-modes.md) |
+| `queue` | [&#x200B; メッセージキュー](../queues/manage-message-queues.md)設定 |
 | `resource` | 接続へのリソース名のマッピング |
 | `session` | セッションストレージデータ |
 | `system` | 管理画面で編集するフィールドを無効にします |
@@ -98,7 +98,7 @@ env.phpの`backend` ノードを使用して、Commerce管理者URLの&#x200B;**
 ]
 ```
 
-様々な[ キャッシュタイプ ](../cli/manage-cache.md)について詳しく説明します。
+様々な[&#x200B; キャッシュタイプ &#x200B;](../cli/manage-cache.md)について詳しく説明します。
 
 ## consumers_wait_for_messages
 
@@ -193,7 +193,7 @@ STOMP （ActiveMQ Artemis）の場合：
 
 ## ディレクトリ
 
-Web サーバーが`/pub` ディレクトリから[ セキュリティの向上](../../installation/tutorials/docroot.md)のためにCommerce アプリを提供するように設定されている場合に設定する必要がある、オプションのディレクトリマッピングオプション。
+Web サーバーが`/pub` ディレクトリから[&#x200B; セキュリティの向上](../../installation/tutorials/docroot.md)のためにCommerce アプリを提供するように設定されている場合に設定する必要がある、オプションのディレクトリマッピングオプション。
 
 ```conf
 'directories' => [
@@ -211,7 +211,7 @@ Web サーバーが`/pub` ディレクトリから[ セキュリティの向上]
 ]
 ```
 
-[ ダウンロード可能なドメイン ](/help/tools/reference/commerce-on-premises.md#downloadabledomainsadd)の詳細をご覧ください。
+[&#x200B; ダウンロード可能なドメイン &#x200B;](/help/tools/reference/commerce-on-premises.md#downloadabledomainsadd)の詳細をご覧ください。
 
 ## インストール
 
@@ -227,7 +227,7 @@ Commerce アプリケーションのインストール日。
 
 ロックプロバイダーの設定は、`lock` ノードを使用して設定されます。
 
-[ プロバイダ設定のロック ](../../installation/tutorials/lock-provider.md)の詳細を説明します。
+[&#x200B; プロバイダ設定のロック &#x200B;](../../installation/tutorials/lock-provider.md)の詳細を説明します。
 
 ## MAGE_MODE
 
@@ -237,7 +237,7 @@ Commerce アプリケーションのインストール日。
 'MAGE_MODE' => 'developer'
 ```
 
-[ アプリケーションモード ](../cli/set-mode.md)の詳細をご覧ください。
+[&#x200B; アプリケーションモード &#x200B;](../cli/set-mode.md)の詳細をご覧ください。
 
 ## キュー
 
@@ -252,7 +252,7 @@ Commerce アプリケーションのインストール日。
 ]
 ```
 
-[ メッセージキュー](https://developer.adobe.com/commerce/php/development/components/message-queues/)の詳細をご覧ください。
+[&#x200B; メッセージキュー](https://developer.adobe.com/commerce/php/development/components/message-queues/)の詳細をご覧ください。
 
 ## リソース
 
@@ -276,7 +276,7 @@ Commerce アプリケーションのインストール日。
 ],
 ```
 
-[ セッション ](../storage/sessions.md)の詳細をご覧ください。
+[&#x200B; セッション &#x200B;](../storage/sessions.md)の詳細をご覧ください。
 
 ## x-frame-options
 

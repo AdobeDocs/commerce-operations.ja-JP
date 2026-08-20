@@ -25,22 +25,22 @@ ht-degree: 0%
 
    * [2.4.4-p9](/help/release/release-notes/security/2-4-4-patches.md#adobe-commerce-244-p9)
 
-1. 2024年7月17日にリリースされた[ ホットフィックス ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136)を適用します。
+1. 2024年7月17日にリリースされた[&#x200B; ホットフィックス &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136)を適用します。
 
 1. [暗号化キーを](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)回転します。
 
 オプション 2:
 
-1. [分離パッチ ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136)を適用します。
+1. [分離パッチ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136)を適用します。
 
 1. [暗号化キーを](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)回転します。
 
 **2024年6月11日にリリースされたセキュリティ パッチまたは2024年6月28日にリリースされた個別パッチを既に適用しているお客様：**
 
-1. 2024年7月17日にリリースされた[ ホットフィックス ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136)を適用します。
+1. 2024年7月17日にリリースされた[&#x200B; ホットフィックス &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136)を適用します。
 
 1. [暗号化キーを](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)回転します。
 
 **既に1） 2024年6月11日にリリースされたセキュリティ パッチを適用したお客様、または2） 2024年6月28日にリリースされた個別パッチ、および3）暗号化キーをローテーションしたお客様：**
  
-1. 2024年7月17日にリリースされた[ ホットフィックス ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136)を適用します。
+1. 2024年7月17日にリリースされた[&#x200B; ホットフィックス &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136)を適用します。

@@ -27,11 +27,11 @@ CSPのエラーが発生したときに確認し、必要なリソースがす�
 
 Adobe Commerce CSPの実装の最初のフェーズはAdobe Commerce 2.3.5で導入され、CSPはデフォルトで`report-only mode`で利用できるようになりました。  Adobe Commerce 2.4.7以降では、CSPは、ストアフロントおよび管理領域の支払いページに対してデフォルトで`restrict-mode`に設定され、その他のすべてのページに対して`report-only` モードで設定されます。 対応するCSP ヘッダーには、支払いページの`script-src` ディレクティブ内に`unsafe-inline` キーワードが含まれていません。 また、許可されるのは、ホワイトリストに登録されたインラインスクリプトのみです。
 
-CSPは管理者ではなくサーバーから設定されるため、ほとんどのマーチャントは、システムインテグレータまたは開発者の支援を受けて適切に設定する必要があります。 _Commerce PHP開発者ガイド_&#x200B;の[ コンテンツセキュリティポリシー](https://developer.adobe.com/commerce/php/development/security/content-security-policies)を参照してください。
+CSPは管理者ではなくサーバーから設定されるため、ほとんどのマーチャントは、システムインテグレータまたは開発者の支援を受けて適切に設定する必要があります。 _Commerce PHP開発者ガイド_&#x200B;の[&#x200B; コンテンツセキュリティポリシー](https://developer.adobe.com/commerce/php/development/security/content-security-policies)を参照してください。
 
 
 ## レポート
 
-デフォルトでは、CSPはブラウザーコンソールにエラーを送信しますが、HTTP リクエストでエラーログを収集するように設定できます。 さらに、CSP違反の監視、収集、報告に使用できるサードパーティサービスがいくつかあります。 CSP違反は、管理者またはカスタムモジュールの`config.xml` ファイルからURIを追加することで、収集のためにエンドポイントに報告できます。  _Commerce PHP Extensions Developer Guide_&#x200B;の[ レポート URI設定](https://developer.adobe.com/commerce/php/development/security/content-security-policies#report-uri-configuration)を参照してください。
+デフォルトでは、CSPはブラウザーコンソールにエラーを送信しますが、HTTP リクエストでエラーログを収集するように設定できます。 さらに、CSP違反の監視、収集、報告に使用できるサードパーティサービスがいくつかあります。 CSP違反は、管理者またはカスタムモジュールの`config.xml` ファイルからURIを追加することで、収集のためにエンドポイントに報告できます。  _Commerce PHP Extensions Developer Guide_&#x200B;の[&#x200B; レポート URI設定](https://developer.adobe.com/commerce/php/development/security/content-security-policies#report-uri-configuration)を参照してください。
 
-[ レポート URI](https://report-uri.io/)は、CSP違反を監視し、その結果をダッシュボードに表示するサービスです。 マーチャントと開発者の両方が、CSP違反が発生するたびにレポートを受信するためにサービスを使用できます。
+[&#x200B; レポート URI](https://report-uri.io/)は、CSP違反を監視し、その結果をダッシュボードに表示するサービスです。 マーチャントと開発者の両方が、CSP違反が発生するたびにレポートを受信するためにサービスを使用できます。

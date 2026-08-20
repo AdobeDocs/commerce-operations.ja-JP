@@ -17,7 +17,7 @@ Adobe Commerce on cloud infrastructureのデプロイメントの場合は、画
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
 
 Adobe Commerce on cloud infrastructure
 

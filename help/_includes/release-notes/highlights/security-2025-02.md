@@ -13,9 +13,9 @@ ht-degree: 0%
 
   新しいCLI コマンドが、[変更](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) キーと[再暗号化](https://developer.adobe.com/commerce/php/development/security/data-encryption)特定のシステム設定、支払い、およびカスタムフィールドデータに対して使用できるようになりました。 このリリースでは、Admin UIでのキーの変更はサポートされなくなりました。 CLI コマンドを使用する必要があります。
 
-* **CVE-2025-24434](https://nvd.nist.gov/vuln/detail/CVE-2025-24434)**&#x200B;の修正 – 認証の脆弱性を解決します。[
+* **CVE-2025-24434[&#128279;](https://nvd.nist.gov/vuln/detail/CVE-2025-24434)**&#x200B;の修正 – 認証の脆弱性を解決します。
 
-  この修正プログラムは、独立したパッチとしても利用できます。 詳しくは、[ ナレッジベース記事](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)を参照してください。<!-- AC-12755 -->
+  この修正プログラムは、独立したパッチとしても利用できます。 詳しくは、[&#x200B; ナレッジベース記事](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)を参照してください。<!-- AC-12755 -->
 
 * **TinyMCE バージョンのダウングレード** - ライセンスの互換性の問題に対処するために、TinyMCE依存関係がバージョン 7から6.8.5にダウングレードされました。
 

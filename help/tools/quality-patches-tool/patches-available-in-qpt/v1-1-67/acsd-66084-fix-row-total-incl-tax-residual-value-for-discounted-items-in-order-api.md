@@ -28,7 +28,7 @@ ACSD-66084 パッチでは、完全に割引された項目に対して0.00で�
 
 >[!NOTE]
 >
->このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
@@ -37,7 +37,7 @@ ACSD-66084 パッチでは、完全に割引された項目に対して0.00で�
 <u>複製する手順</u>:
 
 1. 価格と特別な価格で商品を作成します。 **[!UICONTROL Catalog]** > **[!UICONTROL Products]**&#x200B;に移動し、**[!UICONTROL Add Product]**&#x200B;をクリックして、**[!UICONTROL Price]**&#x200B;を$25に、**[!UICONTROL Special Price]**&#x200B;を$16.99を&#x200B;**[!UICONTROL Advanced Pricing]**&#x200B;の下に設定します。
-1. **[!UICONTROL Stores]** > **[!UICONTROL Taxes]** > **[!UICONTROL Tax Zones and Rates]**&#x200B;に移動し、20%のレートを追加します。 次に、**[!UICONTROL Tax Rules]**に移動し、ルールを作成して割り当てます
+1. **[!UICONTROL Stores]** > **[!UICONTROL Taxes]** > **[!UICONTROL Tax Zones and Rates]**&#x200B;に移動し、20%のレートを追加します。 次に、**[!UICONTROL Tax Rules]**&#x200B;に移動し、ルールを作成して割り当てます
    製品税区分として&#x200B;**[!UICONTROL Taxable Goods]**&#x200B;を指定します。
 1. 100%割引とクーポン付きのセールスルールを作成する。 **[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]**&#x200B;に移動し、100%割引のルールを追加してから、**[!UICONTROL Specific Coupon]**&#x200B;を使用してコードを入力してください。
 1. **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Tax]** >に移動し、税金設定を構成します。
@@ -61,10 +61,10 @@ ACSD-66084 パッチでは、完全に割引された項目に対して0.00で�
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
 [!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。
