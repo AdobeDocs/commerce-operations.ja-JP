@@ -91,5 +91,5 @@ Adobe Commerceのインストール中にリモートストレージをインス
 
 >[!INFO]
 >
->同期コマンドは、`pub/media` ディレクトリ内のファイルのみを移行します。_not_ ファイルは`var` ディレクトリ内のインポート/エクスポート ファイルです。 _Commerce 2.4 ユーザーガイド_&#x200B;の「[&#x200B; スケジュールされた読み込み/書き出し](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html)」を参照してください。
+>同期コマンドは、`pub/media` ディレクトリ内のファイルのみを移行します。_not_ ファイルは`var` ディレクトリ内のインポート/エクスポート ファイルです。 _Commerce 2.4 ユーザーガイド_&#x200B;の「[&#x200B; スケジュールされた読み込み/書き出し](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=ja)」を参照してください。
 

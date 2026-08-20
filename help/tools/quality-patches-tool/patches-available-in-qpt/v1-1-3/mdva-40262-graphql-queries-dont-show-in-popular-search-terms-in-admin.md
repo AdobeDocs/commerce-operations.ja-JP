@@ -1,6 +1,6 @@
 ---
 title: MDVA-40262：管理画面でGraphQLのクエリが人気のある検索語に表示されない
-description: MDVA-40262 Adobe Commerce品質パッチでは、GraphQLの検索クエリが管理画面の一般的な検索語句に表示されない問題が修正されました。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.3がインストールされている場合に利用できます。 パッチ IDはMDVA-40262です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
+description: MDVA-40262 Adobe Commerce品質パッチでは、GraphQLの検索クエリが管理画面の一般的な検索語句に表示されない問題が修正されました。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.3がインストールされている場合に利用できます。 パッチ IDはMDVA-40262です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 feature: Admin Workspace, GraphQL, Search
 role: Admin
 exl-id: 9442ac86-e632-4ab3-8cb3-d29487a1ecbe
@@ -87,4 +87,4 @@ Adobe Commerceの高品質なパッチについて詳しくは、次を参照し
 * [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
 * [品質パッチツール &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPTで使用可能な他のパッチについて詳しくは、「QPT[&#128279;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で使用可能な パッチ」セクションを参照してください。
+QPTで使用可能な他のパッチについて詳しくは、「QPT[&#128279;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で使用可能な パッチ」セクションを参照してください。

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-60267：設定可能な製品オプションを通じて製品が追加されると、FPTが正しく適用されない
 
-ACSD-60267 パッチは、単純な製品をカートに直接追加する際に固定製品税（FPT）が正しく適用されますが、設定可能な製品オプションを使用して同じ製品を選択する際に失敗する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.54がインストールされている場合に利用できます。 パッチ IDはACSD-60267です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
+ACSD-60267 パッチは、単純な製品をカートに直接追加する際に固定製品税（FPT）が正しく適用されますが、設定可能な製品オプションを使用して同じ製品を選択する際に失敗する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja) 1.1.54がインストールされている場合に利用できます。 パッチ IDはACSD-60267です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
@@ -28,7 +28,7 @@ ACSD-60267 パッチは、単純な製品をカートに直接追加する際に
 
 >[!NOTE]
 >
->このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 

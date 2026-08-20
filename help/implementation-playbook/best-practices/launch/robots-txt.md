@@ -35,7 +35,7 @@ ht-degree: 0%
 
 シングルサイトストアフロント用に`robots.txt`および`sitemap.xml` ファイルを設定する場合は、次のベストプラクティスに従ってください。
 
-- プロジェクトが[`ece-tools`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package) バージョン 2002.0.12以降を使用していることを確認してください。
+- プロジェクトが[`ece-tools`](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package) バージョン 2002.0.12以降を使用していることを確認してください。
 - Admin アプリケーションを使用して、`robots.txt` ファイルにコンテンツを追加します。
 
   >[!TIP]
@@ -64,12 +64,12 @@ ht-degree: 0%
 
 >[!INFO]
 >
->詳しい手順については、[&#x200B; サイトマップと検索エンジンロボットの追加](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/robots-sitemap)を参照してください。
+>詳しい手順については、[&#x200B; サイトマップと検索エンジンロボットの追加](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/robots-sitemap)を参照してください。
 
 
 ### マルチサイトのストアフロント
 
-Adobe Commerce on cloud infrastructureを1回実装して、複数のストアを設定および実行できます。 「[複数のweb サイトまたはストアを設定する](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)」を参照してください。
+Adobe Commerce on cloud infrastructureを1回実装して、複数のストアを設定および実行できます。 「[複数のweb サイトまたはストアを設定する](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)」を参照してください。
 
 [&#x200B; シングルサイトストアフロント &#x200B;](#single-site-storefronts)の`robots.txt`および`sitemap.xml` ファイルを設定する場合と同じベストプラクティスが、2つの重要な違いを伴うマルチサイトストアフロントに適用されます。
 
@@ -93,7 +93,7 @@ Adobe Commerce on cloud infrastructureを1回実装して、複数のストア�
 
 ## Adobe Commerce オンプレミス
 
-管理者アプリケーションを使用して、`robots.txt`および`sitemap.xml` ファイルを設定し、ボットが不要なコンテンツをスキャンおよびインデックス作成しないようにします（[検索エンジンロボット &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)を参照）。
+管理者アプリケーションを使用して、`robots.txt`および`sitemap.xml` ファイルを設定し、ボットが不要なコンテンツをスキャンおよびインデックス作成しないようにします（[検索エンジンロボット &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=ja#search-engine-robots)を参照）。
 
 >[!TIP]
 >
@@ -103,15 +103,15 @@ Adobe Commerce on cloud infrastructureを1回実装して、複数のストア�
 
 `robots.txt` ファイル内の管理者パスを公開しないでください。 管理パスを公開すると、サイトハッキングの脆弱性やデータの損失の可能性があります。 `robots.txt` ファイルから管理者パスを削除します。
 
-`robots.txt` ファイルを編集し、管理パスのすべてのエントリを削除する手順については、[&#x200B; マーケティングユーザーガイド > SEOおよび検索>検索エンジンロボット &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)を参照してください。
+`robots.txt` ファイルを編集し、管理パスのすべてのエントリを削除する手順については、[&#x200B; マーケティングユーザーガイド > SEOおよび検索>検索エンジンロボット &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=ja#search-engine-robots)を参照してください。
 
 >[!TIP]
 >
->サポートが必要な場合は、[Adobe Commerce サポートチケットを送信してください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
+>サポートが必要な場合は、[Adobe Commerce サポートチケットを送信してください](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
 
 ## 追加情報
 
-- [web サイト、実店舗、店舗表示について](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
-- [Web サイトの追加](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [Fastlyを使用して、Adobe Commerceサイトの悪意のあるトラフィックをブロックする](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
-- [robots.txtで、cloud infrastructure 2.3.x上のAdobe Commerceで404 エラーが発生する](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26885)
+- [web サイト、実店舗、店舗表示について](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
+- [Web サイトの追加](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Fastlyを使用して、Adobe Commerceサイトの悪意のあるトラフィックをブロックする](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
+- [robots.txtで、cloud infrastructure 2.3.x上のAdobe Commerceで404 エラーが発生する](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26885)

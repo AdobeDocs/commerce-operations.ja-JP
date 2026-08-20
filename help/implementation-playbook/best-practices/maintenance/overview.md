@@ -73,7 +73,7 @@ ht-degree: 2%
 | [&#x200B; フロントエンドパフォーマンスの監査](frontend-performance.md) | web パフォーマンスツールを使用して、サイトパフォーマンスに悪影響を与える問題を特定および対処します。 |
 | [準備完了、設定、維持](https://business.adobe.com/blog/basics/ready-set-maintain) | Adobe Commerceサイトをメンテナンスし、ビジネス価値とアップタイムを最大化するためのヒントを解説します。 |
 | [を使用 [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Adobe Commerceサイトに関する重要なインサイトを一元的に確認できます。 |
-| [&#x200B; パフォーマンス、ディスク容量、ログの監視](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance) | New Relicを使用して、Adobe Commerce on cloud infrastructure サイトに関する主要なパフォーマンスインサイトをモニタリングします。 |
+| [&#x200B; パフォーマンス、ディスク容量、ログの監視](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/monitor/performance) | New Relicを使用して、Adobe Commerce on cloud infrastructure サイトに関する主要なパフォーマンスインサイトをモニタリングします。 |
 | [&#x200B; セキュリティインシデントへの対応](respond-to-security-incident.md) | New Relicを使用して、Adobe Commerce on cloud infrastructure サイトに関する主要なパフォーマンスインサイトをモニタリングします。 |
 
 ### アップグレード

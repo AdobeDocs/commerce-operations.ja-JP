@@ -44,7 +44,7 @@ Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)の管理対象
 
 DML Queries Critical アラートを受け取った場合は、最初の手順から開始します。 DML クエリの警告アラートを受け取った場合は、手順2から開始します。
 
-1. Adobe Commerce サポートチケットが存在するかどうかを確認します。 手順については、ナレッジベース [&#x200B; サポートチケットの追跡](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case)を参照してください。 サポートは、[!DNL New Relic]しきい値のアラートを受け取り、チケットを作成し、問題に取り組み始めた可能性があります。 チケットが存在しない場合は、チケットを作成します。 チケットには次の情報が必要です。
+1. Adobe Commerce サポートチケットが存在するかどうかを確認します。 手順については、ナレッジベース [&#x200B; サポートチケットの追跡](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case)を参照してください。 サポートは、[!DNL New Relic]しきい値のアラートを受け取り、チケットを作成し、問題に取り組み始めた可能性があります。 チケットが存在しない場合は、チケットを作成します。 チケットには次の情報が必要です。
    * 連絡先の理由：**[!UICONTROL New Relic MariaDB alert received]**&#x200B;を選択してください。
    * アラートの説明。
    * [[!DNL New Relic]  インシデントリンク &#x200B;](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents)。 これは、Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)の管理済みアラートに含まれています。
@@ -56,4 +56,4 @@ DML Queries Critical アラートを受け取った場合は、最初の手順�
    1. コードの最適化や運用上の最適化について調べます。
       * コードの最適化：一括挿入/更新、インデックスの使用を最小限に抑える、コードのスロットリングを使用して、クエリを最適化します。
       * 運用の最適化：リソースを大量に消費するデータの変更をオフロードして、トラフィック時間を短縮します。
-      * 追加の最適化：最新バージョンのECE-Toolsを使用していることを確認します。 手順については、『Commerce on Cloud Guide 』の「[e-tools バージョンを更新](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)」を参照してください。
+      * 追加の最適化：最新バージョンのECE-Toolsを使用していることを確認します。 手順については、『Commerce on Cloud Guide 』の「[e-tools バージョンを更新](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)」を参照してください。

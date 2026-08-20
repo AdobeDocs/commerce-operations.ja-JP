@@ -3,7 +3,7 @@ title: Varnish設定の確認
 description: Adobe Commerceを使用してVarnish設定を最終的に検証する方法について説明します。 テスト手順とトラブルシューティング手法について説明します。
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -98,4 +98,4 @@ Varnishが動作している場合、キャッシュ可能なブロックを持�
 
 >[!TIP]
 >
->503 （バックエンドの取得に失敗しました）エラーが発生した場合は、_Adobe Commerce ヘルプセンター_&#x200B;の[503 （サービスが利用できません）エラーのトラブルシューティング &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors)を参照してください。
+>503 （バックエンドの取得に失敗しました）エラーが発生した場合は、_Adobe Commerce ヘルプセンター_&#x200B;の[503 （サービスが利用できません）エラーのトラブルシューティング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors)を参照してください。

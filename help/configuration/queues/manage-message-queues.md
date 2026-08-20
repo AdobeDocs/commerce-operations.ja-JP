@@ -49,7 +49,7 @@ Cron ジョブは、消費者を再起動するためのデフォルトのメカ
 
 >[!INFO]
 >
->Adobe Commerce ストアがCloud Platform上でホストされている場合は、[`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner)を使用して`consumers_runner` cron ジョブを設定します。
+>Adobe Commerce ストアがCloud Platform上でホストされている場合は、[`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner)を使用して`consumers_runner` cron ジョブを設定します。
 
 ### 特定の設定
 
@@ -82,7 +82,7 @@ Cron ジョブは、消費者を再起動するためのデフォルトのメカ
 
   >[!INFO]
   >
-  >Adobe Commerce ストアがCloud Platform上でホストされている場合は、[`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#consumers_wait_for_max_messages)を使用して、消費者がメッセージキューからメッセージを処理する方法を設定します。
+  >Adobe Commerce ストアがCloud Platform上でホストされている場合は、[`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#consumers_wait_for_max_messages)を使用して、消費者がメッセージキューからメッセージを処理する方法を設定します。
 
   >[!NOTE]
   >

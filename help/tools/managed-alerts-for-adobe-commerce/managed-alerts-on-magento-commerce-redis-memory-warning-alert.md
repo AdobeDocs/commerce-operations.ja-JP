@@ -42,14 +42,14 @@ Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)の管理対象
 
 以下の手順に従って、原因を特定し、トラブルシューティングします。
 
-1. [!DNL Redis]使用済みメモリが増加または減少しているかどうかを確認するには、[one.newrelic.com](https://login.newrelic.com/login) > **インフラストラクチャ** > **サードパーティサービス** ページに移動し、[!DNL Redis] ダッシュボードを選択します。 安定または増加している場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を送信してクラスターをアップグレードするか、`maxmemory`制限を次のレベルに増やします。
+1. [!DNL Redis]使用済みメモリが増加または減少しているかどうかを確認するには、[one.newrelic.com](https://login.newrelic.com/login) > **インフラストラクチャ** > **サードパーティサービス** ページに移動し、[!DNL Redis] ダッシュボードを選択します。 安定または増加している場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を送信してクラスターをアップグレードするか、`maxmemory`制限を次のレベルに増やします。
 1. メモリ消費量が[!DNL Redis]増加する原因を特定できない場合は、最近の傾向を確認して、最近のコードのデプロイや設定の変更（新しい顧客グループやカタログの大規模な変更など）に関する問題を特定します。 コードのデプロイメントまたは変更の相関関係については、過去7日間のアクティビティを確認することをお勧めします。
 1. サードパーティの拡張機能が正しく動作しないか確認してください：
    * 最近インストールされたサードパーティの拡張機能と問題が発生した時間との相関関係を確認してください。
    * Adobe Commerce キャッシュに影響を与え、キャッシュが迅速に拡張される可能性がある拡張機能を確認します。 たとえば、カスタムレイアウトブロック、キャッシュ機能の上書き、大量のデータのキャッシュへの保存などです。
 1. 上記の手順で問題の原因を特定またはトラブルシューティングできない場合は、L2 キャッシュを有効にしてアプリと[!DNL Redis]間のネットワークトラフィックを削減することを検討してください。 L2 キャッシュの概要については、『Commerce Configuration Guide 』の「[L2 caching in the Adobe Commerce application](/help/configuration/cache/level-two-cache.md)」を参照してください。 クラウドインフラストラクチャのL2 キャッシュを有効にするには、次の手順を実行します。
    * 2002.1.2 バージョン未満の場合は、ECE ツールをアップグレードします。
-   * [REDIS\_BACKEND変数](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend)を使用して`.magento.env.yaml` ファイルを更新し、L2 キャッシュを設定します。
+   * [REDIS\_BACKEND変数](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend)を使用して`.magento.env.yaml` ファイルを更新し、L2 キャッシュを設定します。
 
    ```yaml
    stage:

@@ -40,7 +40,7 @@ Source コードは、開発プロセス中に複数の安定性フェーズを�
 
 >[!TIP]
 >
->Adobe Commerceのクラウドインフラストラクチャプロジェクトには、さまざまな環境に対応する特定のブランチが含まれています。 _クラウドガイド_&#x200B;の[Pro プロジェクトワークフロー](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow)および[&#x200B; スタータープロジェクトワークフロー](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)を参照してください。
+>Adobe Commerceのクラウドインフラストラクチャプロジェクトには、さまざまな環境に対応する特定のブランチが含まれています。 _クラウドガイド_&#x200B;の[Pro プロジェクトワークフロー](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow)および[&#x200B; スタータープロジェクトワークフロー](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)を参照してください。
 
 ## ブランチ戦略
 

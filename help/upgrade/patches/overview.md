@@ -43,7 +43,7 @@ ht-degree: 0%
 
 個々のパッチには、特定の問題に対する影響の小さい品質修正が含まれています。 これらの修正は、サポートされている最新のマイナーバージョン（2.4.xなど）に適用されますが、サポートされている以前のマイナーバージョン（2.3.xなど）には反映されない可能性があります。 Adobeでは、必要に応じて個別のパッチをリリースします。
 
-個別のパッチを適用するには、[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}を使用します。
+個別のパッチを適用するには、[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}を使用します。
 
 >[!NOTE]
 >
@@ -92,10 +92,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 パッチは、次のいずれかの方法を使用して適用できます。
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}
 - [コマンドライン](/help/upgrade/patches/apply.md#command-line)
 - [Composer](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->Adobe Commerce on Cloud Infrastructure プロジェクトにパッチを適用するには、_Commerce on Cloud ガイド_&#x200B;の「[&#x200B; パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」を参照してください。
+>Adobe Commerce on Cloud Infrastructure プロジェクトにパッチを適用するには、_Commerce on Cloud ガイド_&#x200B;の「[&#x200B; パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」を参照してください。

@@ -1,6 +1,6 @@
 ---
 title: MDVA-32776：注文の配置で在庫ステータスが更新されない
-description: MDVA-32776 パッチでは、注文が行われても配送されないときに在庫状況が更新されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.6がインストールされている場合に利用できます。 パッチ IDはMDVA-32776です。 この問題はAdobe Commerce 2.4.2で修正されています。
+description: MDVA-32776 パッチでは、注文が行われても配送されないときに在庫状況が更新されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.6がインストールされている場合に利用できます。 パッチ IDはMDVA-32776です。 この問題はAdobe Commerce 2.4.2で修正されています。
 feature: Orders
 role: Admin
 exl-id: 6f872c72-c96f-4c23-b6df-44e3da3a81c2

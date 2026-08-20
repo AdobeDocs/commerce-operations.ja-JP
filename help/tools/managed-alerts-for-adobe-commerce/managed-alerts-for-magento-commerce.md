@@ -14,11 +14,11 @@ ht-degree: 0%
 # Adobe Commerceのアラートの管理
 
 
-サイトが重要なストレージと[!DNL Apdex] レベルに達しているタイミングを把握するために、主要なダッシュボードとアラートを設定しました（アプリケーションとサービスの応答時間に対するユーザーの満足度）。 これにより、応答時間の遅れや障害に気づく前に対応することができます。 以下の記事を含むアラートをトラブルシューティングできます。 アラートを使用する前に、まず通知チャネルを設定します。 Commerce on Cloud ガイドの[[!DNL New Relic] 通知チャネルの設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)を参照してください。
+サイトが重要なストレージと[!DNL Apdex] レベルに達しているタイミングを把握するために、主要なダッシュボードとアラートを設定しました（アプリケーションとサービスの応答時間に対するユーザーの満足度）。 これにより、応答時間の遅れや障害に気づく前に対応することができます。 以下の記事を含むアラートをトラブルシューティングできます。 アラートを使用する前に、まず通知チャネルを設定します。 Commerce on Cloud ガイドの[[!DNL New Relic] 通知チャネルの設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)を参照してください。
 
 >[!NOTE]
 >
->Adobe Commerce アラートポリシーの管理アラートが利用できない場合は、このアカウントが新しく作成されたか、最近設定された[!DNL New Relic]が原因である可能性があります。 これらのアカウントにアラートポリシーを追加するプロセスが毎週火曜日に実行されます。 アラートポリシーは、次のプロセスを実行した翌日に使用できます。 まだポリシーが見つからない場合は、[Adobe Commerce サポートリクエストを送信し](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) プロジェクト IDを含めてください。
+>Adobe Commerce アラートポリシーの管理アラートが利用できない場合は、このアカウントが新しく作成されたか、最近設定された[!DNL New Relic]が原因である可能性があります。 これらのアカウントにアラートポリシーを追加するプロセスが毎週火曜日に実行されます。 アラートポリシーは、次のプロセスを実行した翌日に使用できます。 まだポリシーが見つからない場合は、[Adobe Commerce サポートリクエストを送信し](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) プロジェクト IDを含めてください。
 
 これらのアラートのトラブルシューティング手順を提供するKB記事へのリンクについては、以下の表を参照してください。
 
@@ -54,4 +54,4 @@ ht-degree: 0%
 
 ## 管理アラート用に設定されたアラートしきい値の確認
 
-New Relic アカウントから、管理対象アラート用に設定されたアラートしきい値を確認できます。 手順については、[管理済みアラートを使用したパフォーマンスの監視](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts)を参照してください。
+New Relic アカウントから、管理対象アラート用に設定されたアラートしきい値を確認できます。 手順については、[管理済みアラートを使用したパフォーマンスの監視](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts)を参照してください。

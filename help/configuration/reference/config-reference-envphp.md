@@ -146,7 +146,7 @@ Commerceでは、暗号化キーを使用してパスワードやその他の機
 ]
 ```
 
-[暗号化キー](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)の詳細については、_Commerce ユーザーガイド_&#x200B;を参照してください。
+[暗号化キー](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/encryption-key)の詳細については、_Commerce ユーザーガイド_&#x200B;を参照してください。
 
 ## db
 

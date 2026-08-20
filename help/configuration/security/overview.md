@@ -23,6 +23,6 @@ ht-degree: 0%
 
 一度に設定ガイドに含まれていたセキュリティ関連のトピックが、次のガイドに記載されるようになりました。
 
-- _拡張機能ガイド_&#x200B;の[Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha)。
+- _拡張機能ガイド_&#x200B;の[Google reCAPTCHA](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/captcha/security-google-recaptcha)。
 - _拡張機能ガイド_&#x200B;の[2要素認証](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication)。
 - _セキュリティとコンプライアンスに関するガイド_&#x200B;の[一般データ保護規則（GDPR）への準拠](/help/security-and-compliance/privacy/gdpr.md)。

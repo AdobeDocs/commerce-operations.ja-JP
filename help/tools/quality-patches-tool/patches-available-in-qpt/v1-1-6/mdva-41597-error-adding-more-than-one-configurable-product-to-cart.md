@@ -1,6 +1,6 @@
 ---
 title: MDVA-41597：複数の設定可能な製品をカートに追加する際にエラーが発生する
-description: MDVA-41597 パッチは、GraphQLを使用して複数の設定可能な商品をカートに追加する際にエラーが発生する問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.6がインストールされている場合に利用できます。 パッチ IDはMDVA-41597です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
+description: MDVA-41597 パッチは、GraphQLを使用して複数の設定可能な商品をカートに追加する際にエラーが発生する問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.6がインストールされている場合に利用できます。 パッチ IDはMDVA-41597です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 feature: Configuration, Orders, Products, Shopping Cart
 role: Admin
 exl-id: a4bb2aea-c477-40f0-a016-50886dc2cd4b
@@ -51,7 +51,7 @@ GraphQLの変更を使用して、複数の設定可能な商品をカートに�
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 

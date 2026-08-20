@@ -43,7 +43,7 @@ ht-degree: 0%
 
 ## 品質パッチツールで使用可能なパッチ
 
-使用可能なパッチのリストについては、開発者ドキュメントの[品質パッチツール &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)を参照してください。
+使用可能なパッチのリストについては、開発者ドキュメントの[品質パッチツール &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)を参照してください。
 
 ## 品質パッチツールのインストールと使用方法
 
@@ -55,9 +55,9 @@ Adobe Commerce オンプレミスとAdobe Commerce オンクラウドインフ�
 
 ### クラウドインフラストラクチャ上のAdobe Commerce用QPTのインストールと使用方法
 
-Adobe Commerce向けCloud > パッチを適用[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)する方法の詳細については、開発者向けドキュメントの「Cloud for Cloud Cloud Cloud Cloudでパッチを適用する」を参照してください。クラウド インフラストラクチャ上のAdobe Commerceにパッチを適用および元に戻すためにQPTをインストールおよび使用する方法について詳しくは、開発者向けドキュメントを参照してください。
+Adobe Commerce向けCloud > パッチを適用[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)する方法の詳細については、開発者向けドキュメントの「Cloud for Cloud Cloud Cloud Cloudでパッチを適用する」を参照してください。クラウド インフラストラクチャ上のAdobe Commerceにパッチを適用および元に戻すためにQPTをインストールおよび使用する方法について詳しくは、開発者向けドキュメントを参照してください。
 
 ## 関連トピックス
 
 * 開発者ドキュメントの[品質パッチツールのリリースノート &#x200B;](/help/tools/quality-patches-tool/release-notes.md)。
-* [Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーのパッチをサポートナレッジベースで適用する方法。
+* [Adobe](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーのパッチをサポートナレッジベースで適用する方法。
