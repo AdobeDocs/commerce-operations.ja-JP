@@ -2,7 +2,7 @@
 title: ファイルシステム、メディア、データベースのバックアップとロールバック
 description: Adobe Commerce アプリケーションをバックアップおよび復元するには、次の手順に従います。
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->クラウドインフラストラクチャプロジェクト上のAdobe Commerceについては、_クラウドガイド_&#x200B;の[&#x200B; スナップショットとバックアップ管理](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)を参照してください。
+>クラウドインフラストラクチャプロジェクト上のAdobe Commerceについては、_クラウドガイド_&#x200B;の[&#x200B; スナップショットとバックアップ管理](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)を参照してください。
 
 ## バックアップを有効にする
 

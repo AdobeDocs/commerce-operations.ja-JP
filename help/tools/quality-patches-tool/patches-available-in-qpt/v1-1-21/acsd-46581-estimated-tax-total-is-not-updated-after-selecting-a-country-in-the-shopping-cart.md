@@ -1,71 +1,71 @@
 ---
-title: ACSD-46581：買い物かごで国を選択した後、推定税合計が更新されない
-description: ACSD-46581 パッチを適用すると、買い物かごで国を切り替えても税率が更新されないAdobe Commerceの問題を解決できます。
+title: 'ACSD-46581: ショッピングカートで国を選択した後、推定税額が更新されない'
+description: ACSD-46581 パッチを適用して、ショッピングカート内の国を切り替えた後に税率が更新されないAdobe Commerceの問題を解決します。
 feature: Orders, Shopping Cart
 role: Admin
 exl-id: 45800055-8556-4f87-8938-c6be5d82938d
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
-# ACSD-46581：買い物かごで国を選択した後、推定税合計が更新されない
+# ACSD-46581: ショッピングカートで国を選択した後、推定税額が更新されない
 
-この ACSD-46581 パッチは、買い物かごで国を切り替えても税率が更新されない問題を解決します。 出荷方法を選択した後にのみ更新されます。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.21 がインストールされている場合に使用できます。 パッチ ID は ACSD-46581 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+このACSD-46581 パッチは、ショッピングカート内の国を切り替えた後に税率が更新されない問題を解決します。 出荷方法を選択した後にのみ更新されます。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.21がインストールされている場合に利用できます。 パッチ IDはACSD-46581です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.1-p1
 
-**Adobe Commerce バージョンとの互換性：**
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.0 ～ 2.4.5
+**Adobe Commerceのバージョンとの互換性：**
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.0 - 2.4.5
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-買い物かごで国を切り替えても、税率が更新されない。
+ショッピングカート内の国を切り替えた後、税率は更新されません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. Adobe Commerce管理者で、**[!UICONTROL Stores]**/**[!UICONTROL Tax Zone and Rates]** に移動します。
-1. **[!UICONTROL Country]** = _米国_、**[!UICONTROL State]** = _*_、**[!UICONTROL Rate]** = _8.25_ の新しい税率を作成します。
-1. **[!UICONTROL Country]** = _インド_、**[!UICONTROL State]** = _*_、**[!UICONTROL Rate]** = _10_ の新しい税率を作成します。
-1. 米国とインドの両方の税率を使用して税務処理基準を作成します。
-1. **[!UICONTROL Configuration]**/**[!UICONTROL Sales]**/**[!UICONTROL Shipping Methods]** に移動し、複数の発送方法（_定額_ および _送料無料_ など）を有効にします。
-1. **[!UICONTROL Taxable Goods]** 税クラスを持つシンプルな製品を作成します。
-1. 商品を店舗正面の買い物かごに追加します。
-1. 買い物かごを開いて、税額を確認します。
-1. 米国のデフォルトの税金設定が適用され、8.25% の税率に基づいて税金が計算されます。
-1. 国をインドに切り替えなさい。
+1. Adobe Commerce Adminで、**[!UICONTROL Stores]** > **[!UICONTROL Tax Zone and Rates]**&#x200B;に移動します。
+1. **[!UICONTROL Country]** = _米国_、**[!UICONTROL State]** = _*_、**[!UICONTROL Rate]** = _8.25_&#x200B;の新しい税率を作成します。
+1. **[!UICONTROL Country]** = _インド_、**[!UICONTROL State]** = _*_、**[!UICONTROL Rate]** = _10_&#x200B;の新しい税率を作成します。
+1. 米国とインドの両方の税率を使用する税ルールを作成します。
+1. **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Shipping Methods]**&#x200B;に移動し、複数の配送方法（_定額料金_&#x200B;と&#x200B;_送料無料_&#x200B;など）を有効にします。
+1. **[!UICONTROL Taxable Goods]**&#x200B;税区分を使用して簡単な製品を作成します。
+1. ストアのフロントのカートに商品を追加します。
+1. 買い物かごを開いて税額を確認します。
+1. 米国のデフォルトの税金設定が適用され、8.25%の税率に基づいて税金が計算されます。
+1. 国をインドに切り替える。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-インドに切り替えると 10% に変わりました。
+インドに切り替えると税額が10%に変わりました。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-買い物かごの合計セクションの税額は同じままです。
+税額は、ショッピングカートの合計セクションで同じままです。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

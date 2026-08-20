@@ -1,102 +1,102 @@
 ---
-title: ACSD-63062：複数の重複するルールがある、買い物かごの割引計算が正しくない
-description: 複数の重複するルールが適用されている場合に、誤った買い物かごの割引計算が発生するAdobe Commerceの問題を修正するために、ACSD-63062 パッチを適用します。
+title: ACSD-63062：複数のルールが重複するカート割引の計算が正しくない
+description: 複数の重複ルールが適用される場合にカート割引の計算が間違って発生するAdobe Commerceの問題を修正するには、ACSD-63062 パッチを適用します。
 feature: Price Rules
 role: Admin, Developer
 exl-id: c4a93063-b640-444e-ba0e-552dd8d1895b
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 0%
+source-wordcount: '406'
+ht-degree: 1%
 
 ---
 
-# ACSD-63062：複数の重複するルールがある、買い物かごの割引計算が正しくない
+# ACSD-63062：複数のルールが重複するカート割引の計算が正しくない
 
-ACSD-63062 パッチは、複数の重複するルールが適用されている場合に、誤った買い物かご割引計算が発生する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 がインストールされている場合に使用できます。 パッチ ID は ACSD-63062 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-63062 パッチは、複数の重複ルールが適用される場合に誤ったカート割引の計算が発生する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56がインストールされている場合に利用できます。 パッチ IDはACSD-63062です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 Adobe Commerce（すべてのデプロイメント方法） 2.4.7-p2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 Adobe Commerce（すべてのデプロイメント方法） 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-複数の重複するルールが適用されると、買い物かごの割引計算が正しく行われません。
+複数の重複するルールが適用されている場合、誤ったカート割引の計算が発生します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. サンプルデータを含んだ新しいインスタンスをインストールします。
-1. 次の 3 つのシンプルな製品を作成します。
+1. サンプルデータを使用して新しいインスタンスをインストールします。
+1. シンプルな3つの商品を作成する：
 
    * simple1: $1080
-   * simple2: $260
+   * simple2:260 ドル
    * simple3:280 ドル
 
-1. 次のように 4 つの *[!UICONTROL Cart Price Rules]* を作成します。
+1. 次のように4つの&#x200B;*[!UICONTROL Cart Price Rules]*&#x200B;を作成します。
 
    * ルール 1:
 
-      * *[!UICONTROL Priority]*: 100
-      * *[!UICONTROL Conditions]* タブ：合計数量が 3 以上の場合は、simple2 （$280）製品を使用
-      * 「*[!UICONTROL Actions]*」タブ：SKU は simple2 です
-      * *[!UICONTROL Fixed Amount Discount]*: 80 ドル
+     * *[!UICONTROL Priority]*: 100
+     * *[!UICONTROL Conditions]* タブ：合計数量が3以上の場合は、simple2 （$280）製品を使用します
+     * *[!UICONTROL Actions]* タブ：SKUは単純です2
+     * *[!UICONTROL Fixed Amount Discount]*: $80
 
    * ルール 2:
 
-      * *[!UICONTROL Priority]*: 200
-      * 「*[!UICONTROL Actions]*」タブ：SKU は simple2 です
-      * *[!UICONTROL Percentage of Product Price Discount]*: 20%
+     * *[!UICONTROL Priority]*: 200
+     * *[!UICONTROL Actions]* タブ：SKUは単純です2
+     * *[!UICONTROL Percentage of Product Price Discount]*: 20%
 
    * ルール 3:
 
-      * *[!UICONTROL Priority]*: 300
-      * *[!UICONTROL Conditions]* タブ：小計が$1000 以上
-      * 買い物かご全体の *[!UICONTROL Fixed Amount Discount]* ール：100 ドル
+     * *[!UICONTROL Priority]*: 300
+     * *[!UICONTROL Conditions]* タブ：小計が$1000以上である
+     * 買い物かご全体の&#x200B;*[!UICONTROL Fixed Amount Discount]*: $100
 
    * ルール 4:
 
-      * *[!UICONTROL Priority]*: 400
-      * *[!UICONTROL Conditions]* タブ：合計数量が 2 以上の場合は、simple1 （$1080）製品を使用
-      * 「*[!UICONTROL Actions]*」タブ：SKU は simple1
-      * 買い物かご全体の *[!UICONTROL Fixed Amount Discount]*: 960 ドル
+     * *[!UICONTROL Priority]*: 400
+     * *[!UICONTROL Conditions]* タブ：合計数量が2より大きい場合は、simple1 （$1080）製品を使用します
+     * *[!UICONTROL Actions]* タブ：SKUは単純です1
+     * 買い物かご全体の&#x200B;*[!UICONTROL Fixed Amount Discount]*: $960
 
-1. ストアフロントに移動し、指定された数量の次の製品を買い物かごに追加します。
+1. ストアフロントに移動し、特定の数量の次の商品をカートに追加します。
 
    * simple1 = 2
    * simple2 = 1
    * simple3 = 3
 
-1. 買い物かごを確認します。
+1. 買い物かごをチェック。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-適用される割引は$1352 です。
+適用される割引は1352 ドルです。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-適用される割引は$1525.33 です。
+適用される割引は$1525.33です。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

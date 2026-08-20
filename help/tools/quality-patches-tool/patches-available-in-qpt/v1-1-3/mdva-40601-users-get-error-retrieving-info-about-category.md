@@ -5,16 +5,16 @@ feature: Categories, GraphQL
 role: Admin
 exl-id: c50e9f77-66eb-4c4c-b0b5-b77db84a4a0b
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
 
 # MDVA-40601: GraphQLを介してスケジュールされた更新によって変更されたカテゴリに関するデータを取得できない
 
-MDVA-40601 Adobe Commerce品質パッチは、GraphQLを通じて予定された更新によって変更されたカテゴリに関する情報を取得する際にエラーが発生する問題を修正します。 このパッチは、[品質パッチツール （QPT） ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3がインストールされている場合に使用できます。 パッチ IDはMDVA-40601です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
+MDVA-40601 Adobe Commerce品質パッチは、GraphQLを通じて予定された更新によって変更されたカテゴリに関する情報を取得する際にエラーが発生する問題を修正します。 このパッチは、[品質パッチツール （QPT） &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.3がインストールされている場合に使用できます。 パッチ IDはMDVA-40601です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
@@ -28,7 +28,7 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.1 - 2.4.2-p2
 
 >[!NOTE]
 >
->パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
@@ -50,14 +50,14 @@ GraphQLを介してスケジュールされた更新によって変更された�
 
    <pre>
     <code class="language-graphql">
-    query {
-     category(id: 49) {
+    query &lbrace;
+     category(id: 49) &lbrace;
       name
-      children {
+      children &lbrace;
         name
-       }
-     }
-   }
+       &rbrace;
+     &rbrace;
+   &rbrace;
    </code>
    </pre>
 
@@ -65,18 +65,18 @@ GraphQLを介してスケジュールされた更新によって変更された�
 
    <pre>
     <code class="language-graphql">
-    {
-      "data": {
-        "category": {
+    &lbrace;
+      "data": &lbrace;
+        "category": &lbrace;
           "name": "Some category",
-          "children": [
-            {
+          "children": &lbrack;
+            &lbrace;
               "name": "Some child category"
-            }
-          ]
-        }
-      }
-    }
+            &rbrace;
+          &rbrack;
+        &rbrace;
+      &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -94,29 +94,29 @@ GraphQLを介してスケジュールされた更新によって変更された�
 
 <pre>
 <code class="language-graphql">
-{
-  "errors": [
-    {
+&lbrace;
+  "errors": &lbrack;
+    &lbrace;
       "debugMessage": "uasort() expects parameter 1 to be array, string given",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 2,
           "column": 3
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "category"
-      ]
-    }
-  ],
-  "data": {
+      &rbrack;
+    &rbrace;
+  &rbrack;,
+  "data": &lbrace;
     "category": null
-  }
-}
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -124,14 +124,14 @@ GraphQLを介してスケジュールされた更新によって変更された�
 
 個別のパッチを適用するには、デプロイメントタイプに応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」（Commerce クラウドインフラストラクチャガイド）。
+&#x200B;* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+&#x200B;* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
 Adobe Commerceの高品質なパッチについて詳しくは、次を参照してください。
 
-* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
-* [品質パッチツール ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
+&#x200B;* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+&#x200B;* [品質パッチツール &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPTで使用可能な他のパッチについて詳しくは、「QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で使用可能な[ パッチ」セクションを参照してください。
+QPTで使用可能な他のパッチについて詳しくは、「QPT[&#128279;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で使用可能な パッチ」セクションを参照してください。

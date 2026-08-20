@@ -1,60 +1,60 @@
 ---
-title: 'MDVA-41164: カスタム顧客属性を持つ会社を保存または編集できない'
-description: MDVA-41164 パッチを使用すると、管理者ユーザーが、ファイルまたは画像のカスタム顧客属性を持つ会社を保存または編集できない問題を解決できます。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.5 がインストールされている場合に利用できます。 パッチ ID は MDVA-41164。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+title: MDVA-41164：カスタム顧客属性を持つ会社を保存または編集できない
+description: MDVA-41164 パッチは、管理者ユーザーがファイルまたは任意のタイプの画像のカスタム顧客属性を持つ会社を保存または編集できない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.5がインストールされている場合に利用できます。 パッチ IDはMDVA-41164です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 feature: Admin Workspace, Attributes, B2B, Companies
 role: Developer
 exl-id: 9d1792e0-ba7b-444b-b1b1-771fd0e328eb
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
 
-# MDVA-41164: カスタム顧客属性を持つ会社を保存または編集できない
+# MDVA-41164：カスタム顧客属性を持つ会社を保存または編集できない
 
-MDVA-41164 パッチを使用すると、管理者ユーザーが、ファイルまたは画像のカスタム顧客属性を持つ会社を保存または編集できない問題を解決できます。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.5 がインストールされている場合に使用できます。 パッチ ID は MDVA-41164。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+MDVA-41164 パッチは、管理者ユーザーがファイルまたは任意のタイプの画像のカスタム顧客属性を持つ会社を保存または編集できない問題を解決します。 このパッチは、[品質パッチツール （QPT） &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.5がインストールされている場合に使用できます。 パッチ IDはMDVA-41164です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 ～ 2.4.3
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 - 2.4.3
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-管理者ユーザーが、どのタイプのファイルまたは画像のカスタム顧客属性を持つ会社を保存または編集できません。
+管理者ユーザーは、任意のタイプのファイルまたは画像のカスタム顧客属性を持つ会社を保存または編集できません。
 
-<u> 前提条件 </u>:
+<u>前提条件</u>:
 
 B2B モジュールがインストールされています。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. **Stores**/**Config**/**B2B Features** で Company を有効にします。
-1. **Stores**/**Attributes**/**Customers**/**Add New Attribute** で顧客属性を作成します。
-   * 入力タイプ : ファイル（添付）
-   * ストアフロントに表示：はい
-   * 並べ替え順：任意
-   * で使用するForms：すべてを選択
-1. **顧客**/**会社**/**新しい会社を追加** で新しい会社を作成し、上記で作成した新しい属性のファイルをアップロードします。
+1. **Stores** > **Config** > **B2B機能**&#x200B;で会社を有効にします。
+1. **ストア** > **属性** > **顧客** > **新しい属性を追加**&#x200B;で顧客属性を作成します。
+   * 入力タイプ：ファイル（添付）
+   * ストアフロントで表示：はい
+   * 並べ替え順序：任意
+   * 使用するForms：すべて選択
+1. **Customers** > **Companies** > **Add New Company**&#x200B;に新しい会社を作成し、上記で作成した新しい属性のファイルをアップロードします。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-ユーザーが会社の作成を完了でき、添付ファイルがエラーなくアップロードされる。
+ユーザーは会社の作成を完了することができ、添付ファイルはエラーなくアップロードされます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-* 「*ファイルの保存中に問題が発生しました。* というエラーメッセージが表示されます。
+* 次のエラーメッセージが表示されます：*ファイルの保存中に問題が発生しました。*
 * 例外ログには、次のようなレコードが含まれます。
 
   ```php
@@ -62,18 +62,18 @@ B2B モジュールがインストールされています。
   ../app/code/Magento/Customer/Controller/Adminhtml/File/Customer/Upload.php on line 69
   ```
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-品質向上パッチツールの詳細については、次を参照してください。
+品質パッチツールについて詳しくは、以下を参照してください。
 
-* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [品質パッチツール &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPT で使用可能なその他のパッチについては、[QPT で使用可能なパッチ &#x200B;](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) の節を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、「QPT[&#128279;](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-)で使用可能な パッチ」セクションを参照してください。

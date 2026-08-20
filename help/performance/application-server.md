@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Adobe Commerceのgraphql アプリケーションサーバーについて説明します。 導入に関するガイダンスと最適化戦略。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2467'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL Application Serverを使用すると、Adobe CommerceはCommerce GraphQL API リクエスト間のステートを維持できます。 Swoole拡張機能で構築されているGraphQL Application Serverは、リクエスト処理を処理するワーカースレッドを持つプロセスとして動作します。 GraphQL API リクエスト間でブートストラップされたアプリケーションのステートを保持することで、GraphQL Application Serverはリクエスト処理と全体的な製品パフォーマンスを向上させます。 API リクエストが大幅に効率化されます。
 
-GraphQL Application Serverは、Adobe Commerceでのみ使用できます。 Magento Open Sourceでは使用できません。 Cloud Pro プロジェクトの場合、GraphQL Application Serverを有効にするには、[Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) チケットを送信する必要があります。
+GraphQL Application Serverは、Adobe Commerceでのみ使用できます。 Magento Open Sourceでは使用できません。 Cloud Pro プロジェクトの場合、GraphQL Application Serverを有効にするには、[Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) チケットを送信する必要があります。
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ runtime:
 Pro プロジェクトでApplication Server機能を有効にした後、GraphQL Application Serverをデプロイする前に次の手順を実行します。
 
 1. [2.4.7-appserver ブランチ &#x200B;](https://github.com/magento/magento-cloud/tree/2.4.7-appserver)のクラウドテンプレートを使用して、Adobe Commerceをクラウドインフラストラクチャにデプロイします。
-1. すべてのCommerce カスタマイズと拡張機能が[GraphQL Application Serverと互換性があることを確認してください。](https://developer.adobe.com/commerce/php/development/components/app-server/)
+1. すべてのCommerce カスタマイズと拡張機能が[GraphQL Application Serverと互換性があることを確認してください。](https://developer.adobe.com/commerce/php/development/components/app-server)
 1. Commerce Cloud プロジェクトを複製します。
 1. 必要に応じて、「application-server/nginx.conf.sample」ファイルの設定を調整します。
 1. `project_root/.magento.app.yaml` ファイル内のアクティブな「web」セクションを完全にコメントします。
@@ -432,7 +432,7 @@ GraphQL Application Serverは、処理する各リクエストに、値`graphql_
 
 ### 拡張機能とカスタマイズの互換性を確認
 
-拡張機能の開発者と販売者は、最初に、拡張機能とカスタマイズ コードが&#x200B;_[テクニカル ガイドライン &#x200B;](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/)_&#x200B;に記載されているガイドラインに準拠していることを確認する必要があります。
+拡張機能の開発者と販売者は、最初に、拡張機能とカスタマイズ コードが&#x200B;_[テクニカル ガイドライン &#x200B;](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines)_&#x200B;に記載されているガイドラインに準拠していることを確認する必要があります。
 
 コードの評価時に、次のガイドラインを検討します。
 

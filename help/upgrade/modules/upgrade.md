@@ -2,9 +2,9 @@
 title: モジュールと拡張機能のアップグレード
 description: コマンドラインインターフェイスとComposerを使用して、Adobe Commerce モジュールと拡張機能をアップグレードします。
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## ベンダーバンドル拡張機能（VBE）
 
-Adobeは、2.4.4ですべての[VBE](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/modules/upgrade)を削除しました。 Adobe Commerce Marketplaceでこれらの拡張機能を引き続きサポートします。
+Adobeは、2.4.4ですべての[VBE](/help/upgrade/modules/upgrade.md)を削除しました。 Adobe Commerce Marketplaceでこれらの拡張機能を引き続きサポートします。
 
 Adobe Commerce 2.4.4以降でこれらの拡張機能を引き続き使用する場合は、2.4.4にアップグレードする前に、`composer.json` ファイル _内の対応するパッケージ依存関係を更新する必要があります。_&#x200B;使用するパッケージ名とバージョンについては、ベンダーにお問い合わせください。
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '83'
 ht-degree: 0%
 
 ---
@@ -15,5 +15,5 @@ ht-degree: 0%
 >
 >こちらもご覧ください：
 >
->- [&#x200B; ソフトウェア ライフサイクル ポリシー](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/lifecycle-policy) — サポート終了日、延長サポート、およびセキュリティのみの移行規定
->- [Cloud バージョンのアップグレード実施ポリシー](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy) – 実施日と必要なアクション
+>- [&#x200B; ソフトウェア ライフサイクル ポリシー](/help/release/lifecycle-policy.md) — サポート終了日、延長サポート、およびセキュリティのみの移行規定
+>- [Cloud バージョンのアップグレード実施ポリシー](/help/release/version-upgrade-enforcement-policy.md) – 実施日と必要なアクション

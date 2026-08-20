@@ -2,9 +2,9 @@
 title: アップグレードに関する推奨事項
 description: Adobe Commerce のアップグレードの計画時に推奨ドキュメントを確認してください。
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '441'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
           <ul>
             <li><a href="https://blog.adobe.com/">Adobeブログ</a></li>
             <li><a href="https://blog.adobe.com/">Adobe Developers ブログ</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=ja">アドビ ヘルプセンター</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview">アドビ ヘルプセンター</a></li>
             <li><a href="https://helpx.adobe.com/jp/security/security-bulletin.html">Adobe セキュリティ情報</a></li>
             <li><a href="https://developer.adobe.com/commerce/">Adobe Developer サイト上のAdobe Commerce</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html?lang=ja">Adobe Commerce オンクラウドまたはオンプレミスのリリースノート</a></li>
@@ -42,9 +42,9 @@ ht-degree: 2%
       <td><strong> カレンダーとポリシー</strong>
         <p>Adobe Commerceのリリースとポリシーに関する詳細を確認します。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html?lang=ja">Adobe Commerce ソフトウェアのサポート終了に関するFAQ</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-eos-policy-faq">Adobe Commerce ソフトウェアのサポート終了に関するFAQ</a></li>
             <li><a href="https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/requirements">Commerce Marketplace ポリシー</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html?lang=ja">新しいAdobe Commerce リリース戦略、更新されたライフサイクルポリシー、および拡張サポートに関するFAQ</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy">新しいAdobe Commerce リリース戦略、更新されたライフサイクルポリシー、および拡張サポートに関するFAQ</a></li>
             <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">ライフサイクルポリシー</a></li>
             <li><a href="../../release/schedule.md">リリーススケジュール</a></li>
             <li><a href="../../release/versioning-policy.md">リリースタイプ</a></li>
@@ -66,10 +66,10 @@ ht-degree: 2%
           <ul>
             <li><a href="recommended-upgrade-paths.md">推奨されるアップグレードパス</a></li>
             <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/2-4-upgrade-workshop">2.4 テクニカルアップグレードワークショップの録画</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html?lang=ja">プリリリースへのアクセス</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release">プリリリースへのアクセス</a></li>
             <li><a href="../../release/beta.md">Beta リリースの概要</a></li>
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy">後方互換性のない開発</a></li>
-            <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes">後方互換性のない変更</a></li>
+            <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">後方互換性のない変更</a></li>
             <li><a href="../../implementation-playbook/best-practices/maintenance/upgrade-checklist.md">アップグレードプランのチェックリスト</a></li>
             <li><a href="../prepare/best-practices.md">アップグレードのベストプラクティス</a></li>
             <li><a href="../../release/product-availability.md">ソフトウェアの可用性</a></li>

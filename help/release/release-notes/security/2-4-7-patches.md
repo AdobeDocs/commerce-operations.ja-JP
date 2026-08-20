@@ -3,9 +3,9 @@ title: Adobe Commerce 2.4.7 セキュリティパッチリリースノート
 description: Adobe Commerce バージョン 2.4.7のセキュリティパッチリリースに含まれているセキュリティバグの修正、セキュリティの強化、およびその他のセキュリティ関連アップデートについて説明します。
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
 last-update: 2026-05-12T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1374'
 ht-degree: 0%
 
 ---
@@ -19,15 +19,19 @@ ht-degree: 0%
 >
 >MySQL 8.0は、2026年4月30日からサポート終了（EOS）に到達します。
 >
->この日付に続いて、Adobe Commerce 2.4.7では、MySQL 8.0以降にリリースされたMySQL バージョンの互換性または> サポートは提供されません。Adobeは、このAdobe>Commerce リリース ラインで新しいMySQL メジャーバージョンを検証またはサポートしません。>
+>この日付に続いて、Adobe Commerce 2.4.7では互換性が提供されません。または
+>mysql 8.0以降にリリースされたMySQL バージョンをサポートします。 Adobeでは
+>このAdobeの新しいMySQL メジャーバージョンの検証またはサポートの提供
+>Commerce リリースライン。
 >
->バージョン 2.4.7を実行しているすべてのAdobe Commerce オンプレミスのお客様には、データベース サーバーを互換性のあるMariaDB バージョンに移行することを強くお勧めします>。
+>バージョン 2.4.7を実行しているすべてのAdobe Commerce オンプレミスのお客様は、以下の点に強く同意します。
+>データベースサーバーを互換性のあるMariaDB バージョンに移行することをお勧めします。
 
 ## 2.4.7-p10
 
 Adobe Commerce 2.4.7-p10 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-49](https://helpx.adobe.com/jp/security/products/magento/apsb26-49.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -63,7 +67,7 @@ Laminas MVCの退職に対処するため、Adobe CommerceはMagentoが所有す
 
 Adobe Commerce 2.4.7-p9 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグ修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-05](https://helpx.adobe.com/jp/security/products/magento/apsb26-05.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -83,7 +87,7 @@ Adobe Commerce 2.4.7が更新され、Composer 2.9.xがサポートされるよ�
 
 Adobe Commerce 2.4.7-p8 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-94](https://helpx.adobe.com/jp/security/products/magento/apsb25-94.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -103,7 +107,7 @@ Adobe Commerce 2.4.7-p8 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p7 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-71](https://helpx.adobe.com/jp/security/products/magento/apsb25-71.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -111,7 +115,7 @@ Adobe Commerce 2.4.7-p7 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p6 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-50](https://helpx.adobe.com/jp/security/products/magento/apsb25-50.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -135,7 +139,7 @@ Adobe Commerce 2.4.7-p6 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p5 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-26](https://helpx.adobe.com/jp/security/products/magento/apsb25-26.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -161,7 +165,7 @@ Adobe Commerce 2.4.7-p5 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p4 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグ修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-08](https://helpx.adobe.com/jp/security/products/magento/apsb25-08.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -173,7 +177,7 @@ Adobe Commerce 2.4.7-p4 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p3 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-73](https://helpx.adobe.com/jp/security/products/magento/apsb24-73.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -189,7 +193,7 @@ Adobe Commerce 2.4.7-p3 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p2のセキュリティリリースには、以前のリリースの2.4.7で特定された脆弱性に対するセキュリティバグ修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-61](https://helpx.adobe.com/jp/security/products/magento/apsb24-61.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html)を参照してください。
 
 ### ハイライト
 
@@ -203,7 +207,7 @@ Adobe Commerce 2.4.7-p2のセキュリティリリースには、以前のリリ
 
 Adobe Commerce 2.4.7-p1 セキュリティリリースでは、以前のリリースの2.4.7で特定された脆弱性に対するセキュリティバグ修正が提供されています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-40](https://helpx.adobe.com/jp/security/products/magento/apsb24-40.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)を参照してください。
 
 ### CVE-2024-34102のホットフィックスを適用する
 
@@ -219,6 +223,6 @@ Adobe Commerce 2.4.7-p1 セキュリティリリースでは、以前のリリ�
 
 ### このリリースに含まれるホットフィックス
 
-Adobe Commerce 2.4.7-p1は、SOAPからREST APIへのUPS統合の移行範囲で発生した問題を解決します。 この問題は、米国外に出荷するお客様に影響を及ぼし、UPSで出荷を作成するパッケージに対してメトリックシステム/SI測定（kgとcm）を使用できないようにしました。 詳しくは、[UPS shipping method integration migration from SOAP to RESTful API](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api)のナレッジベース記事を参照してください。
+Adobe Commerce 2.4.7-p1は、SOAPからREST APIへのUPS統合の移行範囲で発生した問題を解決します。 この問題は、米国外に出荷するお客様に影響を及ぼし、UPSで出荷を作成するパッケージに対してメトリックシステム/SI測定（kgとcm）を使用できないようにしました。 詳しくは、[UPS shipping method integration migration from SOAP to RESTful API](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27146)のナレッジベース記事を参照してください。
 
 <!-- Last updated from includes: 2026-04-08 15:01:38 -->

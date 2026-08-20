@@ -3,7 +3,7 @@ title: チェックアウトのパフォーマンスのベストプラクティ�
 description: Adobe Commerceのチェックアウトパフォーマンスのベストプラクティスについて説明します。 導入に関するガイダンスと最適化戦略。
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: 5d94ecbe32b94acf9604db9618a9ae6eb1ae04f9
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1299'
 ht-degree: 0%
@@ -56,7 +56,7 @@ bin/magento setup:config:set --checkout-async 1
    ]
 ```
 
-_モジュール参照ガイド_&#x200B;の[AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/module-async-order/)を参照してください。
+_モジュール参照ガイド_&#x200B;の[AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/module-async-order)を参照してください。
 
 **AsyncOrder**&#x200B;を無効にするには：
 
@@ -162,7 +162,7 @@ bin/magento setup:config:set --deferred-total-calculating 0
    ]
 ```
 
-_モジュール参照ガイド_&#x200B;の[DeferredTotalCalculating](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/)を参照してください。
+_モジュール参照ガイド_&#x200B;の[DeferredTotalCalculating](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating)を参照してください。
 
 ### 固定製品税
 
@@ -180,7 +180,7 @@ _モジュール参照ガイド_&#x200B;の[DeferredTotalCalculating](https://de
 
 MySQL データベースとRedis インスタンスのセカンダリ接続を有効にすることで、様々なノード間の負荷のバランスを取ることができます。
 
-Adobe Commerceは、複数のデータベースまたはRedis インスタンスを非同期で読み取ることができます。 クラウドインフラストラクチャでCommerceを使用している場合は、`.magento.env.yaml` ファイルの[MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection)および[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)の値を編集して、セカンダリ接続を設定できます。 読み取り/書き込みトラフィックを処理する必要があるのは1つのノードのみなので、変数を`true`に設定すると、読み取り専用トラフィック用のセカンダリ接続が作成されます。 値を`false`に設定して、既存の読み取り専用の接続配列を`env.php` ファイルから削除します。
+Adobe Commerceは、複数のデータベースまたはRedis インスタンスを非同期で読み取ることができます。 クラウドインフラストラクチャでCommerceを使用している場合は、`.magento.env.yaml` ファイルの[MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection)および[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)の値を編集して、セカンダリ接続を設定できます。 読み取り/書き込みトラフィックを処理する必要があるのは1つのノードのみなので、変数を`true`に設定すると、読み取り専用トラフィック用のセカンダリ接続が作成されます。 値を`false`に設定して、既存の読み取り専用の接続配列を`env.php` ファイルから削除します。
 
 `.magento.env.yaml` ファイルの例：
 

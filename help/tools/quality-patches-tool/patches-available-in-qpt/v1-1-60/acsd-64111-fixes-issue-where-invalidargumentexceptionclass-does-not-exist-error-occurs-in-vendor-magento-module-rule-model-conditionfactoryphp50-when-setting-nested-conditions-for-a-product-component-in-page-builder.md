@@ -1,12 +1,13 @@
 ---
 title: 'ACSD-64111:  [!DNL Page Builder]で製品コンポーネントのネストされた条件を設定する際の*InvalidArgumentException: Class does not exist* エラーを修正しました'
+description: ACSD-64111 パッチを適用して、Page Builderで製品ウィジェット条件に条件の組み合わせを追加すると、クラスがvendor/magento/module-rule/Model/ConditionFactory.phpに存在しないため、InvalidArgumentExceptionがスローされるAdobe Commerceの問題を修正します。
 feature: Products, Page Builder
 role: Admin, Developer
 exl-id: dc39c65b-fb78-4105-b0e8-92a78b49adaf
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ ACSD-64111 パッチは、[!DNL Page Builder]で製品コンポーネントの�
 
 **パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
-* Adobe Commerce（すべてのデプロイメント方法）  2.4.6-p8
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p8
 
 **Adobe Commerceのバージョンとの互換性：**
 
@@ -27,11 +28,11 @@ ACSD-64111 パッチは、[!DNL Page Builder]で製品コンポーネントの�
 
 >[!NOTE]
 >
->このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
-エラー&#x200B;*InvalidArgumentException: クラスが/app/&lt;project id\>/vendor/magento/module-rule/Model/ConditionFactory.php*&#x200B;に存在しません。製品ウィジェット条件[!DNL Page Builder]に&#x200B;*[!UICONTROL Conditions Combination]*&#x200B;を追加すると、スローされます。
+エラー&#x200B;*InvalidArgumentException: クラスが/app/&lt;project id\>/vendor/magento/module-rule/Model/ConditionFactory.php*&#x200B;に存在しません。これは、[!DNL Page Builder]製品ウィジェットの条件で&#x200B;*[!UICONTROL Conditions Combination]*&#x200B;を追加する際にスローされます。
 
 <u>複製する手順</u>:
 
@@ -59,7 +60,7 @@ ACSD-64111 パッチは、[!DNL Page Builder]で製品コンポーネントの�
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 
 ## 関連トピックス

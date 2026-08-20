@@ -2,7 +2,7 @@
 title: メッセージキューコンシューマー
 description: Adobe Commerce メッセージキューコンシューマーに関連する機能やシステム設定など、メッセージキューコンシューマーについて説明します。
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 | 消費者と説明 | Adobe Commerce | Adobe CommerceとB2Bの統合 | Magento Open Source |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|-------------------------|---------------------|
 | `async.operations.all` | + | + | + |
-| 品目のインポートまたはエクスポート、大規模な価格変更、倉庫への製品の割り当てなど、[一括操作](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)の各タスクに対するメッセージを作成します。 管理者システム構成設定で&#x200B;[**[!UICONTROL Admin bulk operations]**](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/catalog/inventory#admin-bulk-operations) オプションが&#x200B;**[!UICONTROL Run asynchronously]**&#x200B;に設定されている場合は必須です。 |                |                         |                     |
+| 品目のインポートまたはエクスポート、大規模な価格変更、倉庫への製品の割り当てなど、[一括操作](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations)の各タスクに対するメッセージを作成します。 管理者システム構成設定で&#x200B;[**[!UICONTROL Admin bulk operations]**](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/catalog/inventory#admin-bulk-operations) オプションが&#x200B;**[!UICONTROL Run asynchronously]**&#x200B;に設定されている場合は必須です。 |                |                         |                     |
 | `codegeneratorProcessor` | + | + | + |
 | バックグラウンドでクーポンを非同期生成します。 [&#x200B; バッチクーポン生成](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html?lang=ja#method-2%3A-generate-a-batch-of-coupons)機能の使用に必要です。 |                |                         |                     |
 | `commerce.eventing.event.publish` | + | + |                     |
@@ -52,7 +52,7 @@ ht-degree: 0%
 | `negotiableQuotePriceUpdate` |                | + |                     |
 | 交渉可能な見積の価格を更新します。 管理者システム構成設定で&#x200B;[**[!UICONTROL Quotes]**](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/quotes/quotes) オプションが有効になっている場合に必要です。 |                |                         |                     |
 | `placeOrderProcessor` | + | + |                     |
-| 非同期で[注文を処理](https://developer.adobe.com/commerce/php/module-reference/module-async-order/)します。これにより、注文を受信としてマークし、メッセージキューに配置し、先入れ先出し方式で処理します。 顧客が成功メッセージを表示する前に、バックエンドのプロセスが完了するのを待つ必要がないため、処理可能な注文数を改善するための[&#x200B; ベストプラクティス &#x200B;](../../implementation-playbook/best-practices/maintenance/order-processing-configuration.md)を検討しました。 |                |                         |                     |
+| 非同期で[注文を処理](https://developer.adobe.com/commerce/php/module-reference/module-async-order)します。これにより、注文を受信としてマークし、メッセージキューに配置し、先入れ先出し方式で処理します。 顧客が成功メッセージを表示する前に、バックエンドのプロセスが完了するのを待つ必要がないため、処理可能な注文数を改善するための[&#x200B; ベストプラクティス &#x200B;](../../implementation-playbook/best-practices/maintenance/order-processing-configuration.md)を検討しました。 |                |                         |                     |
 | `product_action_attribute.update` | + | + | + |
 | 管理者を使用した後、データベース内の製品属性に対する変更を非同期で[更新を行います](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update.html?lang=ja)。 |                |                         |                     |
 | `product_action_attribute.website.update` | + | + | + |

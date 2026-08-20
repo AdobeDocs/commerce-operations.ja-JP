@@ -1,40 +1,40 @@
 ---
-title: ACP2E-3841：副選択条件を使用し、送料無料が有効になっている場合、複数出荷製品の買い物かご価格ルールが正しく適用されない
-description: ACP2E-3841 パッチを適用すると、副選択条件が使用され、送料無料が有効になっている場合に、複数配送商品の買い物かご価格ルールが正しく適用されないAdobe Commerceの問題を修正できます。
+title: ACP2E-3841：サブセレクト条件を使用し、送料無料が有効になっている場合、複数配送の商品のカート価格ルールが正しく適用されない
+description: ACP2E-3841 パッチを適用して、サブセレクト条件を使用し、送料無料が有効になっている場合に、複数配送の商品のカート価格ルールが正しく適用されないAdobe Commerceの問題を修正します。
 feature: Shopping Cart, Price Rules
 role: Admin, Developer
 exl-id: 73979b71-9b15-4a4b-a1c9-37d3213c177f
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 0%
+source-wordcount: '467'
+ht-degree: 2%
 
 ---
 
-# ACP2E-3841：副選択条件を使用し、送料無料が有効になっている場合、複数出荷製品の買い物かご価格ルールが正しく適用されない
+# ACP2E-3841：サブセレクト条件を使用し、送料無料が有効になっている場合、複数配送の商品のカート価格ルールが正しく適用されない
 
-ACP2E-3841 パッチは、副選択条件が使用され、送料無料が有効になっている場合に、複数配送製品の買い物かご価格ルールが正しく適用されない問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 がインストールされている場合に使用できます。 パッチ ID は ACP2E-3841 です。 この問題はAdobe Commerce 2.4.9 で修正される予定であることに注意してください。
+ACP2E-3841 パッチでは、サブセレクト条件が使用され、送料無料が有効になっている場合に、複数配送の商品のカート価格ルールが正しく適用されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64がインストールされている場合に利用できます。 パッチ IDはACP2E-3841です。 この問題は、Adobe Commerce 2.4.9で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p9
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.5 ～ 2.4.7-p5
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.5 - 2.4.7-p5
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-複数出荷製品の買い物かご価格ルールは、副選択条件が使用され、送料無料が有効になっている場合、正しく適用されません。
+サブセレクト条件を使用し、送料無料が有効になっている場合、複数配送の商品のカート価格ルールが正しく適用されません。
 
-<u> 前提条件 </u>:
+<u>前提条件</u>:
 
 **設定：**
 1. **[!UICONTROL Free Shipping]** = *有効*
@@ -49,19 +49,19 @@ ACP2E-3841 パッチは、副選択条件が使用され、送料無料が有効
    1. カテゴリ：カテゴリテスト 1
    1. 価格：45 ドル
 1. 製品テスト 2:
-   1. カテゴリ：カテゴリテスト 2
+   1. カテゴリー：カテゴリテスト 2
    1. 価格：56.25 ドル 
-      **（テストが正しく動作することを確認するために、価格はこちらと同じにする必要があります。）**
+      **（テストが正しく動作するようにするには、価格がここに示す価格と同じである必要があります。）**
 
-**買い物かご価格ルール：**
+**買い物かごの価格ルール：**
 
-管理者としてログインし、**[!UICONTROL Marketing]**/**[!UICONTROL Promotions]**/**[!UICONTROL Cart Price Rules]**/**[!UICONTROL Add new rule]** に移動します。 次の値を使用します。
+管理者としてログインし、**[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]** > **[!UICONTROL Add new rule]**&#x200B;に移動します。 次の値を使用します。
 
 **[!UICONTROL Rule Information]:**
 1. **[!UICONTROL Rule Name]**：送料無料のテスト
 1. **[!UICONTROL Active]**: *はい*
 1. **[!UICONTROL Websites]**: *メイン Web サイト*
-1. **[!UICONTROL Customer Groups]**: *ログインしていない、一般、卸売、Retailer*
+1. **[!UICONTROL Customer Groups]**: *ログインしていません、一般、卸売、Retailer*
 1. **[!UICONTROL Coupon]**: *クーポンなし*
 1. **[!UICONTROL Uses per Customer]**: *0*
 1. **[!UICONTROL Priority]**: *1*
@@ -80,33 +80,33 @@ ACP2E-3841 パッチは、副選択条件が使用され、送料無料が有効
 
 **[!UICONTROL Percent of product price discount]** = *10*
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
 1. ストアフロントにログインします。
-2. 製品テスト 1 を追加します。
-3. 2 つの製品テストを追加します。
-4. 買い物かごにアクセスします。
-5. 「**[!UICONTROL Check Out with Multiple Addresses]**」を選択します。
+2. 製品テスト 1を追加します。
+3. Product Test 2を2個追加します。
+4. カートにアクセス。
+5. **[!UICONTROL Check Out with Multiple Addresses]**&#x200B;を選択します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-エラーはありません。
+エラーがありません。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
 *500 エラー*
 
-*メッセージ：非推奨（廃止予定）の機能：float 112.5 から int への暗黙的な変換により、214 行目の/app/code/Magento/SalesRule/Model/Rule/Condition/Product/Subselect.phpで精度が失われます*
+*メッセージ：非推奨の機能：浮動小数112.5からintへの暗黙的な変換は、214行目の/app/code/Magento/SalesRule/Model/Rule/Condition/Product/Subselect.phpで精度を失います*
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

@@ -3,9 +3,9 @@ title: リモートストレージの設定
 description: オンプレミス Commerce アプリケーション用のリモート ストレージ モジュールの設定方法について説明します。
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->- リモートストレージは、Commerce バージョン 2.4.2以降でのみ使用できます。 [2.4.2 リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/magento-open-source/2-4-2)を参照してください。
+>- リモートストレージは、Commerce バージョン 2.4.2以降でのみ使用できます。 [2.4.2 リリースノート &#x200B;](/help/release/release-notes/open-source/2-4-2.md)を参照してください。
 >
 >- リモート ストレージ モジュールは、クラウド インフラストラクチャ上のAdobe Commerceで&#x200B;_制限付き_ サポートされています。 Adobeでは、サードパーティ製ストレージアダプターサービスのトラブルシューティングを完全に実行できません。 クラウドプロジェクトにリモートストレージを実装するガイダンスについては、[Commerce on Cloud インフラストラクチャのリモートストレージの設定](cloud-support.md)を参照してください。
 

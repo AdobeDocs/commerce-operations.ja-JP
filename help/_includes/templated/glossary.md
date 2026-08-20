@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3948c3c59a53a023edc16698fcb9ec6150cbca21
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '6818'
+source-wordcount: '6806'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ _名詞_
 
 管理者変数は、管理者ユーザーアカウントが管理者UIにアクセスするための設定設定を上書きするためのプロジェクト環境変数です。
 
-詳細：[管理者変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html?lang=ja)
+詳細：[管理者変数](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin)
 
 _Term属性&#x200B;:_
 
@@ -136,7 +136,7 @@ Adobe Commerce ユーザーは、カスタム属性を作成して、デフォ�
 
 Google Shopping ads ChannelやAmazon Sales Channelなどの統合機能では、Commerceの属性をサードパーティの属性にマッピングし、商品の適切な表示や販売、広告の表示を行うことができます。
 
-詳細：[EAVおよびextension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+詳細：[EAVおよびextension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes)
 
 _Term属性&#x200B;:_
 
@@ -261,7 +261,7 @@ _名詞_
 一括操作とは、大規模に実行されるアクションのことです。
 一括運用タスクの例には、品目のインポートまたはエクスポート、大規模な価格変更、倉庫への製品の割り当てなどがあります。
 
-詳細：[DevDocs Bulk Operations](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
+詳細：[DevDocs Bulk Operations](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations)
 
 _Term属性&#x200B;:_
 
@@ -448,7 +448,7 @@ _名詞_
 
 クラウド変数は、クラウドインフラストラクチャ上のAdobe Commerceに固有の環境変数で、**`MAGENTO_CLOUD`**&#x200B;接頭辞を使用します。
 
-詳細：[&#x200B; クラウド変数](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=ja)
+詳細：[&#x200B; クラウド変数](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud)
 
 _Term属性&#x200B;:_
 
@@ -619,7 +619,7 @@ _名詞_
 
 デプロイキーは、プロジェクトのSSH公開鍵であり、Git リポジトリへの読み取り専用または読み取り/書き込み（有効な場合）アクセスを有効にします。
 
-詳細：[安全な接続](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)
+詳細：[安全な接続](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/secure-connections)
 
 _Term属性&#x200B;:_
 
@@ -688,7 +688,7 @@ _名詞_
 
 Commerce アプリケーションを管理およびデプロイするために設計された一連のスクリプトとツール。 このパッケージにより、Docker環境へのデプロイ、クローンの管理、プロジェクト設定の検証、Adobe パッチの適用など、多くのAdobe Commerce on cloud インフラストラクチャプロセスが簡素化されます。
 
-詳細：[ece-tools パッケージ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html?lang=ja)
+詳細：[ece-tools パッケージ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/package-overview)
 
 _Term属性&#x200B;:_
 
@@ -716,7 +716,7 @@ _名詞_
 エンコーディングでは、エンティティを記述するために使用できる属性の数は広範囲に拡張できますが、特定のエンティティに適用される数は最小限に抑えられます。
 このデータモデルは柔軟ですが、時間がかかります。
 
-詳細：[EAVおよびextension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+詳細：[EAVおよびextension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes)
 
 _Term属性&#x200B;:_
 
@@ -752,7 +752,7 @@ _名詞_
 
 機能を拡張し、多くの場合、カスタム属性よりも複雑なデータタイプを使用します。 これらの属性はGUIには表示されません。
 
-詳細：[&#x200B; エンティティへの拡張子属性の追加](https://developer.adobe.com/commerce/php/development/components/add-attributes/)
+詳細：[&#x200B; エンティティへの拡張子属性の追加](https://developer.adobe.com/commerce/php/development/components/add-attributes)
 
 _Term属性&#x200B;:_
 
@@ -1087,7 +1087,7 @@ _名詞_
 
 オリジンのクローキングは、クラウドインフラストラクチャ（オリジン）に送信されるDDoS攻撃を防ぐために、Fastly以外のトラフィックをAdobe Commerceクラウドインフラストラクチャ上でブロックできるセキュリティ機能です。
 
-詳細：[Fastly オリジンクローキング &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=ja)
+詳細：[Fastly オリジンクローキング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/fastly)
 
 _Term属性&#x200B;:_
 

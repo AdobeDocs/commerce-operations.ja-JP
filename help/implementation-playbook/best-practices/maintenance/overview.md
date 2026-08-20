@@ -3,9 +3,9 @@ title: 導入の保守フェーズ
 description: Adobe Commerce プロジェクトのメンテナンス段階での実装のベストプラクティスについて説明します。
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '429'
 ht-degree: 2%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 2%
 | [&#x200B; フロントエンドパフォーマンスの監査](frontend-performance.md) | web パフォーマンスツールを使用して、サイトパフォーマンスに悪影響を与える問題を特定および対処します。 |
 | [準備完了、設定、維持](https://business.adobe.com/blog/basics/ready-set-maintain) | Adobe Commerceサイトをメンテナンスし、ビジネス価値とアップタイムを最大化するためのヒントを解説します。 |
 | [を使用 [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Adobe Commerceサイトに関する重要なインサイトを一元的に確認できます。 |
-| [&#x200B; パフォーマンス、ディスク容量、ログの監視](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=ja) | New Relicを使用して、Adobe Commerce on cloud infrastructure サイトに関する主要なパフォーマンスインサイトをモニタリングします。 |
+| [&#x200B; パフォーマンス、ディスク容量、ログの監視](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/monitor/performance) | New Relicを使用して、Adobe Commerce on cloud infrastructure サイトに関する主要なパフォーマンスインサイトをモニタリングします。 |
 | [&#x200B; セキュリティインシデントへの対応](respond-to-security-incident.md) | New Relicを使用して、Adobe Commerce on cloud infrastructure サイトに関する主要なパフォーマンスインサイトをモニタリングします。 |
 
 ### アップグレード

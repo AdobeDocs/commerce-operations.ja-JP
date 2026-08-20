@@ -1,63 +1,63 @@
 ---
-title: ACP2E-3789:WebAPI を使用した製品アップデートでメディアファイルが重複する
-description: ACP2E-3789 パッチを適用して、WebAPI を介した製品のアップデートでメディア ID が指定された場合にメディアファイルが重複するAdobe Commerceの問題を修正してください。
+title: ACP2E-3789：製品アップデートでWebAPI経由でメディアファイルが重複する
+description: ACP2E-3789 パッチを適用して、WebAPIを介した製品の更新でメディア IDが指定されたときにメディアファイルが重複するAdobe Commerceの問題を修正します。
 feature: Catalog Management, Media, REST, Products, Cache
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 1eaa8ed0-fde6-47c4-9339-8f5e7bce7b19
-source-git-commit: f82dcd6c76ba3512e59275c26815b6bb89e53733
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
 
-# ACP2E-3789:WebAPI を使用した製品アップデートでメディアファイルが重複する
+# ACP2E-3789：製品アップデートでWebAPI経由でメディアファイルが重複する
 
-ACP2E-3789 パッチは、メディア ID が指定されている場合に、WebAPI を介した製品のアップデートによってメディアファイルが重複する問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 がインストールされている場合に使用できます。 パッチ ID は ACP2E-3789 です。 この問題はAdobe Commerce 2.4.9 で修正される予定であることに注意してください。
+ACP2E-3789 パッチは、メディア IDが指定された場合に、WebAPIを介して製品の更新がメディアファイルを重複する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66がインストールされている場合に利用できます。 パッチ IDはACP2E-3789です。 この問題は、Adobe Commerce 2.4.9で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7-p3
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.5 ～ 2.4.8
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.5 - 2.4.8
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-WebAPI を使用して製品をメディア ID で更新すると、システムはメディアファイルを置き換えるのではなく複製し、API 呼び出しごとに新しいファイルを作成し、`/pub/media/catalog/products/cache/` ディレクトリをオーバーロードする画像の蓄積が発生します。
+WebAPI経由でメディア IDを使用して製品を更新すると、メディアファイルを置き換える代わりにシステムがメディアファイルを複製し、API呼び出しごとに新しいファイルを作成し、`/pub/media/catalog/products/cache/` ディレクトリをオーバーロードする画像のビルドアップが発生します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 製品を作成して画像を追加します。
-1. `base_url/rest/V1/products/<sku>` で REST API を使用して製品の詳細を取得します。
-1. PUT リクエストを実行して、`media_gallery_entrie` を変更しない（画像名とファイルが同じ）まま、商品をアップデートします。
-1. 更新前と更新後に `pub/media/catalog/product/xx/yy` ディレクトリを確認します。
+1. 商品を作成し、画像を追加する。
+1. `base_url/rest/V1/products/<sku>`のREST APIを使用して製品の詳細を取得します。
+1. PUT リクエストを実行して、`media_gallery_entrie`を変更せずに製品を更新します（同じ画像名とファイル）。
+1. 更新の前後に`pub/media/catalog/product/xx/yy` ディレクトリを確認します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-画像ファイルは、メディア ID がリクエストに含まれる際に置き換えられます。
+メディア IDがリクエストに含まれると、画像ファイルが置き換えられます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-画像が新しい名前（wb04-blue-1.jpg など）で複製されるので、不要なファイルが蓄積されます。
+画像が新しい名前（wb04-blue-1.jpgなど）で複製され、不要なファイルのビルドアップが発生します。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

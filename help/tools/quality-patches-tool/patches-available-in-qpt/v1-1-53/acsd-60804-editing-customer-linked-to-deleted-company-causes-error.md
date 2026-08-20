@@ -1,69 +1,69 @@
 ---
 title: ACSD-60804：削除された会社に関連付けられている顧客を編集すると、エラーが発生する
-description: 削除された会社に関連付けられたカスタマーを編集すると、*null のメンバー関数 getSuperUserId （）の呼び出し*が発生するAdobe Commerceの問題を修正するために、ACSD-60804 パッチを適用します。
+description: 削除された会社に関連付けられたお客様を編集すると、null*で*メンバー関数getSuperUserId （）への呼び出しが発生するAdobe Commerceの問題を修正するには、ACSD-60804 パッチを適用します。
 feature: Companies, Customers, B2B
 role: Admin, Developer
 exl-id: 09241160-f5ed-41f8-8bb6-2bb8ed5cccd5
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
 
 # ACSD-60804：削除された会社に関連付けられている顧客を編集すると、エラーが発生する
 
-ACSD-60804 パッチでは、削除された会社に関連付けられた顧客を編集すると、エラー *メンバー関数 getSuperUserId （）の null での呼び出し* が発生する問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.53 がインストールされている場合に使用できます。 パッチ ID は ACSD-60804 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-60804 パッチは、削除された会社に関連付けられている顧客を編集すると、null *でメンバー関数getSuperUserId （）への呼び出しがエラーになる問題を修正します。*&#x200B;このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.53がインストールされている場合に利用できます。 パッチ IDはACSD-60804です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-削除された会社に関連付けられている顧客を編集すると、エラー *メンバー関数 getSuperUserId （）の null での呼び出し* が発生します。
+削除された会社に関連付けられている顧客を編集すると、null *のメンバー関数getSuperUserId （）への呼び出しがエラーになります。*
 
-<u> 前提条件：</u>:
+<u>前提条件：</u>:
 
-Adobe Commerce B2B モジュールをインストールして有効にします。
+Adobe Commerce B2B モジュールをインストールして有効にする。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. **[!UICONTROL Settings]**/**[!UICONTROL B2B]**/**[!UICONTROL Enable Company]** に移動します。
-1. **[!UICONTROL Customers]**/**[!UICONTROL Company]**/**[!UICONTROL Create New Company]** に移動します。
-1. インスタンスの `mysql` にログインします。
-1. `entity_id` = *1* の会社を削除します。
-1. **[!UICONTROL Customers]**/**[!UICONTROL All Customers]** に移動します。
+1. **[!UICONTROL Settings]** > **[!UICONTROL B2B]** > **[!UICONTROL Enable Company]**&#x200B;に移動します。
+1. **[!UICONTROL Customers]** > **[!UICONTROL Company]** > **[!UICONTROL Create New Company]**&#x200B;に移動します。
+1. インスタンスの`mysql`にログインします。
+1. `entity_id` = *1*&#x200B;の会社を削除します。
+1. **[!UICONTROL Customers]** > **[!UICONTROL All Customers]**&#x200B;に移動します。
 1. 会社の作成時に自動的に作成された顧客を編集します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-顧客は編集されますが、例外エラーはスローされません。
+例外エラーが発生することなく、お客様が編集されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-エラーが発生します。*会社が顧客に関連付けられていない場合に* null のメンバー関数 getSuperUserId （）の呼び出し。
+エラーが発生します。*会社が顧客に関連付けられていない場合、null*&#x200B;のメンバー関数getSuperUserId （）への呼び出し。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

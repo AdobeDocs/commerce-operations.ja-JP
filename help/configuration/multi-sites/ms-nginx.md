@@ -2,9 +2,9 @@
 title: Nginxで複数のweb サイトを設定する
 description: このチュートリアルに従って、Nginxで複数のweb サイトを設定します。
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '974'
 ht-degree: 0%
 
 ---
@@ -17,16 +17,16 @@ ht-degree: 0%
 
   ホスト環境に複数のweb サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーを確認してください。
 
-  クラウドインフラストラクチャでAdobe Commerceを設定するには、追加のタスクが必要です。 このトピックで説明したタスクを完了したら、_Commerce on Cloud Infrastructure ガイド_&#x200B;の「[複数のweb サイトまたはストアを設定する](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja)」を参照してください。
+  クラウドインフラストラクチャでAdobe Commerceを設定するには、追加のタスクが必要です。 このトピックで説明したタスクを完了したら、_Commerce on Cloud Infrastructure ガイド_&#x200B;の「[複数のweb サイトまたはストアを設定する](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)」を参照してください。
 
 - 1つの仮想ホストファイルで複数のドメインを受け入れるか、web サイトごとに1つの仮想ホストを使用します。仮想ホスト設定ファイルは`/etc/nginx/sites-available`にあります。
 - Commerceが提供する`nginx.conf.sample`を、このチュートリアルで説明した変更のみを使用します。
 - Commerce ソフトウェアが`/var/www/html/magento2`にインストールされています。
 - デフォルト以外に2つのWeb サイトがあります。
 
-   - `french.mysite.mg` （web サイト コード `french`およびストアビューコード `fr`）
-   - `german.mysite.mg` （web サイト コード `german`およびストアビューコード `de`）
-   - `mysite.mg`は既定のweb サイトと既定のストアビューです
+  - `french.mysite.mg` （web サイト コード `french`およびストアビューコード `fr`）
+  - `german.mysite.mg` （web サイト コード `german`およびストアビューコード `de`）
+  - `mysite.mg`は既定のweb サイトと既定のストアビューです
 
 >[!TIP]
 >
@@ -40,8 +40,8 @@ ht-degree: 0%
 
    - `$MAGE_RUN_TYPE`は`store`または`website`のいずれかです：
 
-      - `website`を使用して、ストアフロントにweb サイトを読み込みます。
-      - `store`を使用して、ストアフロントの任意のストアビューを読み込みます。
+     - `website`を使用して、ストアフロントにweb サイトを読み込みます。
+     - `store`を使用して、ストアフロントの任意のストアビューを読み込みます。
 
    - `$MAGE_RUN_CODE`は、`$MAGE_RUN_TYPE`に対応する一意のweb サイトまたはストアビューコードです。
 
@@ -280,7 +280,7 @@ bin/magento cache:clean config full_page
 >[!INFO]
 >
 >- ホスト環境に複数のweb サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーを確認してください。
->- クラウドインフラストラクチャ上にAdobe Commerceを設定するには、追加のタスクが必要です。_クラウドインフラストラクチャ上のCommerce ガイド_&#x200B;の[複数のクラウドウェブサイトまたはストアの設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ja)を参照してください。
+>- クラウドインフラストラクチャ上にAdobe Commerceを設定するには、追加のタスクが必要です。_クラウドインフラストラクチャ上のCommerce ガイド_&#x200B;の[複数のクラウドウェブサイトまたはストアの設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)を参照してください。
 
 ### トラブルシューティング
 

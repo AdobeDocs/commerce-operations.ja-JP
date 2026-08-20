@@ -1,73 +1,73 @@
 ---
-title: ACSD-45168:url_key 属性が上書きされた製品で、SEO に対応する URL が生成されない
-description: ACSD-45168 パッチを適用すると、ストアビューレベルで url_key 属性が上書きされた商品に対して SEO に対応する URL が生成されないAdobe Commerceの問題が修正されます。
+title: ACSD-45168:url_key属性がオーバーライドされた製品に対して、SEO対応URLが生成されない
+description: ストアビューレベルでurl_key属性がオーバーライドされている商品に対してSEO対応URLが生成されないAdobe Commerceの問題を修正するには、ACSD-45168 パッチを適用します。
 feature: Attributes, Cache, Categories, Marketing Tools, Products
 role: Admin
 exl-id: 7d908307-f60c-4758-ad0f-f108ebb94558
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
 
-# ACSD-45168:url_key 属性が上書きされた製品で、SEO に対応する URL が生成されない
+# ACSD-45168:url_key属性がオーバーライドされた製品に対して、SEO対応URLが生成されない
 
-ACSD-45168 パッチでは、ストアビューレベルで url_key 属性が上書きされた製品で、SEO に対応する URL が生成されない問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.24 がインストールされている場合に使用できます。 パッチ ID は ACSD-45168 です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+ACSD-45168 パッチでは、ストアビューレベルでurl_key属性がオーバーライドされた製品に対して、SEO対応URLが生成されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.24がインストールされている場合に利用できます。 パッチ IDはACSD-45168です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 ～ 2.4.5-p1
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 - 2.4.5-p1
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-ストアビューレベルで url_key 属性が上書きされている製品については、SEO に対応する URL は生成されません。
+url_key属性がstore-view レベルで上書きされた製品に対して、SEO対応URLは生成されません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. **[!UICONTROL Commerce Admin]**/**[!UICONTROL Stores]**/**[!UICONTROL Settings]**/**[!UICONTROL Configuration]**/**[!UICONTROL Catalog]**/**[!UICONTROL Search Engine Optimization]** に移動して、次のように設定します。
+1. **[!UICONTROL Commerce Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Search Engine Optimization]**&#x200B;に移動して、設定を次のように設定します。
    * [!UICONTROL Use Categories Path for Product URLs] = *はい*
    * [!UICONTROL Generate "category/product" URL Rewrites] = *はい*
-1. 設定キャッシュをクリーンアップします。
-1. [!UICONTROL Category 1] と [!UICONTROL Category 2] の 2 つのカテゴリを作成します。
-1. [!UICONTROL Product 1] に [!UICONTROL Category 1]、[!UICONTROL Product 2] に [!UICONTROL Category 1] という 2 つの製品を作成します。
-1. [!UICONTROL Default Store View] の範囲を [!UICONTROL Product 1] に変更します。
-1. [!UICONTROL Key] のオプションの URL [!UICONTROL Search Engine Optimization] のチェックを外します。
-1. 商品を保存します。
-1. [!UICONTROL All Store Views] に戻ります。
-1. [!UICONTROL Product 1] を [!UICONTROL Category 2] に追加し、[!UICONTROL Product 2] を [!UICONTROL Category 2] に追加します。
-1. `url_rewrite` テーブルまたは [!UICONTROL Marketing]/[!UICONTROL SEO & Search]/[!UICONTROL URL Rewrites] を確認します。
+1. 設定キャッシュをクリーニングします。
+1. [!UICONTROL Category 1]と[!UICONTROL Category 2]の2つのカテゴリを作成します。
+1. 2つの製品を作成します：[!UICONTROL Category 1]の[!UICONTROL Product 1]、[!UICONTROL Category 1]の[!UICONTROL Product 2]。
+1. [!UICONTROL Product 1]の範囲を[!UICONTROL Default Store View]に変更します。
+1. [!UICONTROL Search Engine Optimization]のオプションのURL [!UICONTROL Key]のチェックを外します。
+1. 製品を保存します。
+1. [!UICONTROL All Store Views]に切り替えます。
+1. [!UICONTROL Product 1]を[!UICONTROL Category 2]に追加し、[!UICONTROL Product 2]を[!UICONTROL Category 2]に追加します。
+1. `url_rewrite` テーブルまたは[!UICONTROL Marketing] > [!UICONTROL SEO & Search] > [!UICONTROL URL Rewrites]を確認してください。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-[!UICONTROL Category 2] の SEO に対応する URL が [!UICONTROL Product 1] 用に作成されます。
+[!UICONTROL Category 2]のSEO対応URLは、[!UICONTROL Product 1]用に作成されています。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-[!UICONTROL Category 2] の SEO に対応した URL が、ストア表示範囲の URL キー属性で上書きされていたため、[!UICONTROL Product 1] にありません。
+[!UICONTROL Category 2]のSEOに適したURLが、[!UICONTROL Product 1]には見つかりません。ストア ビューのスコープ用にURL キー属性が上書きされたからです。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドの
-* クラウドインフラストラクチャー上のAdobe Commerce:[&#x200B; アップグレードとパッチ適用 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja) クラウドインフラストラクチャー上のCommerce ガイド
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」ガイド
 
-## 関連資料
+## 関連トピックス
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースに追加しました
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）
-* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [[!DNL Quality Patches Tool]  リリース：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを確認します
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](/help/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables.md#why-adobe-recommends-avoiding-modifications)
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

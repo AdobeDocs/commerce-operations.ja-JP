@@ -1,80 +1,80 @@
 ---
-title: ACSD-47875：在庫管理を使用したストア表示範囲の買い物かごに製品を追加できない
-description: ACSD-47875 パッチを適用すると、在庫管理の特定のストア表示範囲で、管理者から商品を買い物かごに追加できないAdobe Commerceの問題を修正できます。
+title: ACSD-47875：在庫管理機能で、ストアビューの範囲をカートに商品を追加できない
+description: 在庫管理機能を使用して、特定のストアビュー範囲の管理者から商品をカスタマーカートに追加できないAdobe Commerceの問題を修正するには、ACSD-47875 パッチを適用します。
 feature: Inventory, Shopping Cart, Products
 role: Admin, Developer
 exl-id: 10862e09-d561-4ed5-ab6f-cf002fae6850
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
 
-# ACSD-47875：在庫管理を使用したストア表示範囲の買い物かごに製品を追加できない
+# ACSD-47875：在庫管理機能で、ストアビューの範囲をカートに商品を追加できない
 
-ACSD-47875 パッチを使用すると、在庫管理の特定のストア表示範囲に対して管理者から製品を顧客の買い物かごに追加できない問題を修正できます。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.36 がインストールされている場合に使用できます。 パッチ ID は ACSD-47875 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-47875 パッチは、在庫管理機能を使用して特定のストアビュースコープの管理者から顧客カートに商品を追加できない問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.36がインストールされている場合に利用できます。 パッチ IDはACSD-47875です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 ～ 2.4.6-p2
+* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 - 2.4.6-p2
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-管理者ユーザーは、MSI がインストールされている特定のストア表示範囲に対して、管理者の **[!UICONTROL Manage Shopping Cart]** 機能を使用して製品を顧客の買い物かごに追加できません。
+管理者ユーザーは、MSIがインストールされた特定のストアビュースコープの管理者機能&#x200B;**[!UICONTROL Manage Shopping Cart]**&#x200B;を使用して、製品を顧客カートに追加できません。
 
-<u> 前提条件 </u>:
+<u>前提条件</u>:
 
-[!DNL Adobe Commerce Inventory Management (MSI)] モジュールがインストールされ、有効になっています。
+[!DNL Adobe Commerce Inventory Management (MSI)]個のモジュールがインストールされ、有効になっています。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. Web サイト、ストア、ストアビューを作成します。
-1. *デフォルト* 以外の追加ソースを作成します。
-1. 新しい在庫を作成し、新しい web サイトと新しいソースに割り当てます。
-1. 新しい web サイトの新しい顧客を作成します。
-1. 新しい web サイトにのみ製品を割り当て、デフォルトの web サイトから割り当てを解除します。
+1. web サイト、ストア、ストアビューを作成する。
+1. *Default*&#x200B;以外のソースを追加します。
+1. 新しい在庫を作成し、新しいweb サイトと新しいソースに割り当てます。
+1. 新しいweb サイトの新規顧客を作成します。
+1. 新しいweb サイトにのみ製品を割り当てる。デフォルトのweb サイトから割り当てを解除する。
 
-   * 新しいソースを割り当て、新しいソースには数量 *0 より上*、デフォルトソースには *0* を設定します。
+   * 新しいソースを割り当て、新しいソースには数量&#x200B;*0*&#x200B;を、デフォルトのソースには&#x200B;*0*&#x200B;を設定します。
 
-1. 管理者の **[!UICONTROL Customer Edit]** ページに移動します。 「**[!UICONTROL Manage Shopping Cart]**」をクリックします。
-1. ストア表示の範囲を新しいストア表示に変更します。
+1. 管理画面の&#x200B;**[!UICONTROL Customer Edit]** ページに移動します。 **[!UICONTROL Manage Shopping Cart]**&#x200B;をクリックします。
+1. ストアビューの範囲を新しいストアビューに変更します。
 1. 「**[!UICONTROL Products]**」セクションに移動し、製品を検索します。
-1. 製品を選択し、「**[!UICONTROL Add selections to my cart]**」をクリックします。
+1. 製品を選択し、**[!UICONTROL Add selections to my cart]**&#x200B;をクリックします。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-商品が買い物かごに追加されます。
+商品がカートに追加されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-* 次のエラーが発生します。*追加しようとしている製品は使用できません。*
-* 商品は買い物かごに追加されません。
+* 次のエラーがスローされます：*追加しようとしている製品は利用できません。*
+* 商品がショッピングカートに追加されない。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

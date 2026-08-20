@@ -20,9 +20,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: 405
+source-wordcount: 392
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ VarnishをインストールしてCommerceで動作するように設定した�
 
   例えば、管理画面で行う操作はすべて次のようになります。
 
-   - **STORES** > **Settings** > **Configuration** > GENERAL > **General**
-   - **STORES** > **Settings** > **Configuration** >GENERAL > **Currency Setup**
-   - **STORES** > **Settings** > **Configuration** >GENERAL > **メールアドレスの保存**
+  - **STORES** > **Settings** > **Configuration** > GENERAL > **General**
+  - **STORES** > **Settings** > **Configuration** >GENERAL > **Currency Setup**
+  - **STORES** > **Settings** > **Configuration** >GENERAL > **メールアドレスの保存**
 
   Commerceでこのような変更が検出されると、キャッシュを更新するように通知するメッセージが表示されます。
 
@@ -61,7 +61,7 @@ VarnishをインストールしてCommerceで動作するように設定した�
 
 ## VarnishをパージするためのCommerceの設定
 
-Commerceは、[`magento setup:config:set`](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) コマンドを使用してVarnish ホストを設定した後、Varnish ホストをパージします。
+Commerceは、[`magento setup:config:set`](/help/tools/reference/commerce-on-premises.md#setupconfigset) コマンドを使用してVarnish ホストを設定した後、Varnish ホストをパージします。
 
 オプションのパラメーター`--http-cache-hosts` パラメーターを使用して、Varnish ホストとリッスン ポートのコンマ区切りリストを指定できます。 1台または複数のVarnish ホストを設定します。 （ホストをスペース文字で区切らないでください）。
 

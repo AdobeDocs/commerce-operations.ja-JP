@@ -3,9 +3,9 @@ title: 設定のベストプラクティス
 description: Adobe Commerceのパフォーマンスを最適化するための設定のベストプラクティスについて説明します。 レスポンス時間とスループットを向上させる設定とツールを確認します。
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Commerceでの集中的な注文処理と同時に、ストアフロントでの
 
 >[!WARNING]
 >
->**[!UICONTROL Developer]** タブとオプションは、[開発者モード &#x200B;](../configuration/cli/set-mode.md)でのみ使用できます。 [&#x200B; クラウドインフラストラクチャ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)上のAdobe Commerceは`Developer` モードをサポートしていません。
+>**[!UICONTROL Developer]** タブとオプションは、[開発者モード &#x200B;](../configuration/cli/set-mode.md)でのみ使用できます。 [&#x200B; クラウドインフラストラクチャ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/overview#cloud-req-test)上のAdobe Commerceは`Developer` モードをサポートしていません。
 
 ## 非同期設定の保存
 
@@ -69,7 +69,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## 繰延在庫更新
 
-集中的なセールスが発生した場合、Commerceでは、注文に関連する在庫更新を延期することができます。 これにより、操作数を最小限に抑え、注文配置プロセスを高速化できます。 ただし、このオプションはリスクが高く、ストアでバックオーダーがアクティブ化された場合にのみ使用できます。このオプションは、在庫量がマイナスになる可能性があるためです。 このオプションにより、チェックアウトフローを大幅に改善し、オンデマンドで容易に在庫を補充できる店舗を実現できます。 サイトで延期された在庫更新を有効にするには、**[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**&#x200B;に移動します。 詳しくは、_Adobe Commerce ユーザーガイド_&#x200B;の[在庫管理](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)を参照してください。
+集中的なセールスが発生した場合、Commerceでは、注文に関連する在庫更新を延期することができます。 これにより、操作数を最小限に抑え、注文配置プロセスを高速化できます。 ただし、このオプションはリスクが高く、ストアでバックオーダーがアクティブ化された場合にのみ使用できます。このオプションは、在庫量がマイナスになる可能性があるためです。 このオプションにより、チェックアウトフローを大幅に改善し、オンデマンドで容易に在庫を補充できる店舗を実現できます。 サイトで延期された在庫更新を有効にするには、**[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**&#x200B;に移動します。 詳しくは、_Adobe Commerce ユーザーガイド_&#x200B;の[在庫管理](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud)を参照してください。
 
 >[!INFO]
 >
@@ -95,19 +95,19 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 >[!INFO]
 >
->**[!UICONTROL Developer]** タブとオプションは、[開発者モード &#x200B;](../configuration/cli/set-mode.md)でのみ使用できます。 [&#x200B; クラウドインフラストラクチャ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)上のAdobe Commerceは`Developer` モードをサポートしていません。
+>**[!UICONTROL Developer]** タブとオプションは、[開発者モード &#x200B;](../configuration/cli/set-mode.md)でのみ使用できます。 [&#x200B; クラウドインフラストラクチャ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/overview#cloud-req-test)上のAdobe Commerceは`Developer` モードをサポートしていません。
 
 **[!UICONTROL Enable [!DNL JavaScript] Bundling]** オプションを有効にすると、CommerceがすべてのJS リソースを1つまたはストアフロントページに読み込まれる一連のバンドルに統合できるようになります。 JSをバンドルすると、サーバーへのリクエストが少なくなり、ページのパフォーマンスが向上します。 また、ブラウザが最初の呼び出しでJS リソースをキャッシュし、それ以降のすべてのブラウジングに再利用するのに役立ちます。 このオプションでは、すべてのJSがテキストとして読み込まれるため、遅延評価も行われます。 特定のアクションがページ上でトリガーされた後にのみ、コードの分析と評価が開始されます。 ただし、すべてのJS コンテンツが最初の呼び出しに読み込まれるため、最初のページ読み込み時間が非常に重要なストアでは、この設定はお勧めしません。
 
 >[!INFO]
 >
->CSSとJavascriptの最適化について詳しくは、[&#x200B; リソースファイルの最適化](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files)を参照してください。
+>CSSとJavascriptの最適化について詳しくは、[&#x200B; リソースファイルの最適化](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md)を参照してください。
 
 ### バンドルのヒント {#bundling-tips}
 
 * 縮小とバンドルには、サードパーティ製ツール（[r.js](https://requirejs.org/)など）を使用することをお勧めします。 Commerceの組み込みメカニズムは最適ではなく、代替として提供されます。
 * HTTP/2 プロトコルをアクティブ化することは、JS バンドルを使用する代わりに良い方法です。 プロトコルは、同じ利点の多くを提供します。 クラウドインフラストラクチャプロジェクトのAdobe Commerceでは、デフォルトで有効になっています。
-* JSやCSS ファイルの結合など、非推奨の設定を使用することはお勧めしません。これらの設定は、ページのHEAD セクションで同期ロードされたJSにのみ設計されています。 この手法を使用すると、バンドルが発生し、JS ロジックが正しく動作しない可能性があります。
+* JS ファイルやCSS ファイルの結合など、非推奨の設定を使用することはお勧めしません。これらの設定は、ページのHEAD セクションで同期ロードされたJSにのみ設計されています。 この手法を使用すると、バンドルが発生し、JS ロジックが正しく動作しない可能性があります。
 
 ## 顧客セグメントの検証
 

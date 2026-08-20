@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7fdc2a2c19eccf36940d9b4545b443eabbab4220
+source-git-commit: 7ebadd26eee51aa2c2f3dfe8a8a2ed3dc20657b9
 workflow-type: tm+mt
-source-wordcount: 1378
+source-wordcount: 1725
 ht-degree: 0%
 
 ---
@@ -38,24 +38,24 @@ L2 キャッシュでは、各web ノードは頻繁にアクセスされるデ�
 
 Commerceは、ハッシュ化されたデータバージョンをリモートキャッシュに保存し、サフィックス `:hash`を通常のキーに追加します。 ローカルキャッシュが古くなると、データはキャッシュアダプタを介してリモートマシンから取得されます。
 
-使用可能なL2 キャッシュ実装は2つあります。
+Adobe Commerceでは、次の2つのL2 キャッシュ実装を使用できます。
 
 | 導入 | バージョン | 説明 |
 | -------------- | ------- | ----------- |
 | [&#x200B; レガシー（`RemoteSynchronizedCache`） &#x200B;](#legacy-l2-cache-configuration-remotesynchronizedcache) | &lt;2.4.9 | ローカルストレージ用の`Cm_Cache_Backend_File`を含むZend ベースの2 レベルキャッシュ |
-| [最新（`symfony_l2`） &#x200B;](#modern-symfony-l2-cache-implementation) | 2.4.9+ | PSR-6準拠のSymfony Cache ベースのL2とパフォーマンスの向上。 Valkeyのみをサポートします。 |
+| [最新（`symfony_l2`） &#x200B;](#modern-symfony-l2-cache-implementation) | 2.4.9+ | PSR-6準拠のSymfony Cache ベースのL2とパフォーマンスの向上。 Valkeyをサポートしています。 |
+
+Symfony L2 キャッシュは、Adobe Commerce 2.4.9以降のリリースで推奨される実装です。 PSR-6に準拠した最新のキャッシュ実装を提供し、従来の`RemoteSynchronizedCache`よりも大幅にパフォーマンスが向上します。
 
 ## 従来のL2 キャッシュ設定（RemoteSynchronizedCache）
 
+従来のL2 キャッシュの設定手順は、古いバージョンのAdobe Commerceに適用されます。 Adobe Commerce バージョン 2.4.9以降を使用している場合は、[Modern Symfony L2 キャッシュ実装](#modern-symfony-l2-cache-implementation)でValkeyを使用します。
+
 >[!NOTE]
 >
->従来のL2 キャッシュの設定手順は、古いバージョンのAdobe Commerceに適用されます。 Adobe Commerce バージョン 2.4.9以降を使用している場合は、[Symfony 2でValkeyを使用してL2 キャッシュ &#x200B;](#modern-symfony-l2-cache-implementation)を実行します。
+>このページでは、オンプレミス設定についてのみ説明します。 Adobe Commerce on Cloudについては、[L2 キャッシュの設定](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)を参照してください。
 
-キャッシュ設定の手順は、デプロイメントタイプによって異なります。
-
-- **Cloud**&#x200B;上のAdobe Commerceの場合、`.magento.env.yaml`で[`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#redis_backend)または[`VALKEY_BACKEND`](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) デプロイ変数を設定してL2 キャッシュを構成します。 設定例については、[L2 キャッシュの設定](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)を参照してください。
-
-- **Redis**&#x200B;をサポートするAdobe Commerce オンプレミス バージョンの場合、次の例を使用して、`app/etc/env.php` ファイルの既存のキャッシュ セクションを変更または置換します。
+RedisをサポートするAdobe Commerce オンプレミス バージョンの場合、次の例を使用して、`app/etc/env.php` ファイルの既存のキャッシュ セクションを変更または置き換えます。
 
 ```php
 'cache' => [
@@ -94,17 +94,17 @@ Commerceは、ハッシュ化されたデータバージョンをリモートキ
 - `backend_options`はL2 キャッシュ設定です。
   - `remote_backend`はリモート キャッシュ実装です：RedisまたはMySQL。
   - `remote_backend_options`はリモート キャッシュ設定です。
-  - `local_backend`はローカル キャッシュ実装です：`Cm_Cache_Backend_File`
+  - `local_backend`はローカル キャッシュ実装です：`Cm_Cache_Backend_File`。
   - `local_backend_options`はローカル キャッシュ設定です。
   - `cache_dir`は、ローカルキャッシュが保存されているディレクトリのファイルキャッシュ固有のオプションです。
 
-Adobe Commerceの場合、Adobeでは、共有メモリ内のデータのローカルキャッシュに対するリモートキャッシュ（`\Magento\Framework\Cache\Backend\Redis`）および`Cm_Cache_Backend_File`にRedisを使用することをお勧めします。使用する場所：`'local_backend_options' => ['cache_dir' => '/dev/shm/']`
+Redisをサポートする2.4.9より前のAdobe Commerce バージョンの場合、Adobeでは、次を使用して、共有メモリ内のデータのローカルキャッシュにRedisを使用することをお勧めします（`\Magento\Framework\Cache\Backend\Redis`）と`Cm_Cache_Backend_File`。`'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
-Adobeでは、Redisへの負荷を大幅に軽減するため、[`cache preload`](redis-pg-cache.md#redis-preload-feature)機能の使用をお勧めします。 プリロード キーのサフィックス &#39;:hash&#39;を追加することを忘れないでください。
+Adobeでは、Redisへの負荷を大幅に軽減するため、[`cache preload`](redis-pg-cache.md#redis-preload-feature)機能の使用をお勧めします。 プリロードキーのサフィックス `:hash`を追加することを忘れないでください。
 
 ## 古いキャッシュオプション
 
-Commerce 2.4以降、`use_stale_cache` オプションは、以前にキャッシュされたデータを処理し、新しいキャッシュデータを並行プロセスで生成することで、特定の場合のパフォーマンスを向上させることができます。
+Commerce 2.4以降、`use_stale_cache` オプションは、以前にキャッシュされたデータを処理し、新しいキャッシュデータを並行プロセスで生成することで、特定の場合のパフォーマンスを向上させることができます。 この節で説明する推奨されるキャッシュタイプとトレードオフは、従来の`RemoteSynchronizedCache`実装と`symfony_l2`実装の両方に適用されます。 `symfony_l2`の設定例については、[古いキャッシュを持つSymfony L2 キャッシュ &#x200B;](#symfony-l2-cache-with-stale-cache)を参照してください。
 
 一般的に、ロック待ちのトレードオフは、パフォーマンスの観点から許容されます。 ただし、ブロック数やキャッシュエントリ数が増えると、ロック待ちに時間がかかります。 一部のシナリオでは、プロセスの待機時間は最大&#x200B;**キー数** x **検索タイムアウト**&#x200B;です。 まれに、マーチャントが`Block/Config` キャッシュに数百のキーを持つことがあるため、ロックの小さなルックアップタイムアウトでも数秒かかる場合があります。
 
@@ -124,7 +124,7 @@ Adobeでは、`use_stale_cache` オプションを有効にすることをお勧
 
 Adobeでは、`default` キャッシュタイプに`use_stale_cache` オプションを有効にすることはお勧めしません。
 
-次のコードは、設定例を示しています。
+次のコードは、従来の`RemoteSynchronizedCache` バックエンドの設定例を示しています。 `symfony_l2`の例については、[古いキャッシュを持つSymfony L2 キャッシュ &#x200B;](#symfony-l2-cache-with-stale-cache)を参照してください。
 
 ```php
 'cache' => [
@@ -192,26 +192,50 @@ Commerce バージョン 2.4.9以降では、従来のL2 キャッシュの代�
 
 >[!IMPORTANT]
 >
->Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14、2.4.7-p9、および2.4.8-p5以降のパッチリリースではサポートされていません。 Redisをサポートしていないバージョンにアップグレードする場合は、Valkeyを設定し、`symfony_l2`を使用するようにキャッシュ設定を更新する必要があります。 Commerce オンプレミスについては、[Valkeyの設定](config-valkey.md)を参照してください。 Commerce on Cloudについては、[Valkeyの設定](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md){target="_blank"}を参照してください
+>Redisは、次のようなリモートキャッシュバックエンドとしてサポートされていません。
 >
->Redisは、`symfony_l2`の正式にサポートされているリモート バックエンドではありません。 `symfony_l2`をサポートするリリースを使用している場合は、Valkeyを使用してキャッシュする必要があります。 [必要システム構成](../../installation/system-requirements.md)を参照してください
+>- Adobe Commerce 2.4.9以降
+>- 2.4.8-p4以降のパッチ
+>- 2.4.7-p9以降のパッチ
+>- 2.4.6-p14以降のパッチ
+>- 2.4.5-p16以降のパッチ
+>
+>以前のバージョンをアップグレードする場合は、Valkeyを設定し、キャッシュ設定を更新して`symfony_l2`を使用します。 [Valkeyの設定](config-valkey.md)および[必要システム構成](../../installation/system-requirements.md)を参照してください。
 
 ### Symfony L2 キャッシュのメリット
 
-- **最新のアーキテクチャ**: Symfony Cache コンポーネント上に構築（PSR-6準拠）
-- **パフォーマンスの向上**: Igbinaryのシリアル化、gzip圧縮、およびLua スクリプトのネイティブサポート
-- **永続的な接続**：接続プールでValkey接続のオーバーヘッドを削減
-- **キーのプリロード**：重要なデータのキャッシュ キーのプリロードをサポートしています
-- **古いキャッシュ サポート**: `use_stale_cache` オプションとの完全な互換性
-- **簡略化された設定**：よりクリーンなバックエンドの型名（`valkey`、`file`）
+- **最新のアーキテクチャ：**&#x200B;はSymfony Cache コンポーネント上に構築されています（PSR-6準拠）
+- **より優れたパフォーマンス：** Igbinaryのシリアル化、gzip圧縮、およびLua スクリプトのネイティブサポート
+- **永続的な接続：**&#x200B;は、接続プールによってValkey接続のオーバーヘッドを削減します
+- **プリロードキー：**&#x200B;は、重要なデータのキャッシュキーのプリロードをサポートしています
+- **古いキャッシュのサポート：**&#x200B;と`use_stale_cache` オプションの完全な互換性
+- **簡略化された設定：** クリーナーバックエンドの型名（`valkey`、`file`）
+
+### RemoteSynchronizedCacheからSymfony L2への移行
+
+オンプレミスのインストールを従来の`RemoteSynchronizedCache` バックエンドから`symfony_l2`にアップグレードする場合は、`app/etc/env.php`を更新する前に、次の点を確認してください。 `backend`値のみを変更するだけでは不十分です。 設定構造、キー名、および一部のデフォルト動作が異なります。
+
+- **構成構造が変更されます。** `remote_backend`、`remote_backend_options`および`local_backend`は、`symfony_l2`の下で異なる値を使用しています。 例えば、`remote_backend`は完全修飾クラス名ではなく`'valkey'`になります。 既存のレガシー設定を編集するのではなく、以下の[設定例](#configuration-example-with-symfony-l2-cache)を出発点として使用します。
+
+- **`preload_keys`は`symfony_l2`.**&#x200B;では推奨されません レガシー設定に`preload_keys`が含まれている場合は、移行の一部として削除します。 キーのプリロードは`symfony_l2`のパフォーマンスを向上させず、追加の不要なキー検索をトリガーすることでValkeyの負荷を増やす可能性があります。
+
+- **圧縮には明示的なフラグが必要です。** `compression_lib`のみを設定すると、`symfony_l2`の下で圧縮が有効になりません。 必要な`compress_data`設定については、[Symfony L2 キャッシュのバックエンドオプション &#x200B;](#backend-options-for-symfony-l2-cache)を参照してください。
+
+- **オンプレミスのデプロイメントを手動で設定した場合、既定では古いキャッシュは有効になっていません。** `use_stale_cache`のデフォルトは`symfony_l2`の`false`です（[&#x200B; バックエンドオプションの表](#backend-options-for-symfony-l2-cache)を参照）。 従来の設定で`stale_cache_enabled` フロントエンドを使用していた場合は、古いキャッシュを含む[Symfony L2 キャッシュのパターンを使用して明示的に再作成する必要があります](#symfony-l2-cache-with-stale-cache)。
+
+>[!NOTE]
+>
+>`VALKEY_BACKEND: symfony_l2` デプロイ変数を設定するAdobe Commerce on Cloud環境には、`stale_cache_enabled` フロントエンドを含む完全なL2設定が`ece-tools`によって自動生成されます。 クラウド固有の動作については、[Symfony L2 キャッシュの設定](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache)を参照してください。
+
+- **Redisは、`symfony_l2`のサポートされているリモート バックエンドではありません。** この変更の一環としてValkeyに移行します。 [Valkeyの設定](config-valkey.md)を参照してください。
 
 ### Symfony L2 キャッシュを使用した設定例
 
 >[!NOTE]
 >
->Adobe Commerce on Cloudの場合、ECE ツールパッケージ （`ece-tools`）はキャッシュ設定を自動的に管理します。 `app/etc/env.php`を直接編集しないでください。デプロイメントによって手動での変更が上書きされます。 クラウド設定については、代わりに[Symfony L2 キャッシュの設定](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache)を参照してください。
+>この例は、オンプレミス `app/etc/env.php`の設定を対象としています。 Adobe Commerce on Cloudの場合、キャッシュ設定は`ece-tools`によって自動的に管理されます。 `env.php`を直接編集する代わりに、[Symfony L2 キャッシュの設定](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache)を参照してください。
 
-L2 キャッシュに簡略化された`symfony_l2` バックエンドタイプを使用します。
+`app/etc/env.php` ファイルで、L2 キャッシュに簡略化された`symfony_l2` バックエンド タイプを使用します。 この例には、`symfony_l2`では推奨されていない`preload_keys`設定は含まれていません。 詳しくは、[RemoteSynchronizedCacheからSymfony L2](#migrating-from-remotesynchronizedcache-to-symfony-l2)への移行を参照してください。
 
 ```php
 'cache' => [
@@ -228,16 +252,11 @@ L2 キャッシュに簡略化された`symfony_l2` バックエンドタイプ�
                     'password' => '',
                     'serializer' => 'igbinary',
                     'compression_lib' => 'gzip',
+                    'compress_data' => '1',
                     'persistent_id' => 'magento_l2_default',
                     'timeout' => '2.5',
                     'read_timeout' => '2.0',
                     'use_lua' => '1',
-                    'preload_keys' => [
-                        'prefix_EAV_ENTITY_TYPES:hash',
-                        'prefix_GLOBAL_PLUGIN_LIST:hash',
-                        'prefix_DB_IS_UP_TO_DATE:hash',
-                        'prefix_SYSTEM_DEFAULT:hash',
-                    ],
                 ],
                 // L1 (Local): File cache
                 'local_backend' => 'file',
@@ -256,7 +275,9 @@ L2 キャッシュに簡略化された`symfony_l2` バックエンドタイプ�
 
 ### Symfony L2 キャッシュと古いキャッシュ
 
-古いキャッシュをサポートするように個別のフロントエンドを設定します。
+どのキャッシュタイプが古いキャッシュから恩恵を受けるか、その理由については、[古いキャッシュオプション &#x200B;](#stale-cache-options)を参照してください。
+
+次の例を使用して、`symfony_l2`個の古いキャッシュ サポート用に個別のフロントエンドを設定します。
 
 ```php
 'cache' => [
@@ -272,6 +293,7 @@ L2 キャッシュに簡略化された`symfony_l2` バックエンドタイプ�
                     'port' => '6379',
                     'serializer' => 'igbinary',
                     'compression_lib' => 'gzip',
+                    'compress_data' => '1',
                     'persistent_id' => 'magento_l2_default',
                 ],
                 'local_backend' => 'file',
@@ -291,6 +313,7 @@ L2 キャッシュに簡略化された`symfony_l2` バックエンドタイプ�
                     'port' => '6379',
                     'serializer' => 'igbinary',
                     'compression_lib' => 'gzip',
+                    'compress_data' => '1',
                     'persistent_id' => 'magento_l2_stale',
                 ],
                 'local_backend' => 'file',
@@ -317,23 +340,28 @@ L2 キャッシュに簡略化された`symfony_l2` バックエンドタイプ�
 ### Symfony L2 キャッシュのバックエンドオプション
 
 | オプション | タイプ | Default | 説明 |
-|--------|------|---------|-------------------------------------------------------------------|
+| -------- | ------ | --------- | --------------------------------------------------------------------- |
 | `remote_backend` | 文字列 | `'valkey'` | リモート バックエンドの種類：`valkey`または`file` L2 キャッシュに`valkey`を使用します。 |
 | `remote_backend_options` | 配列 | `[]` | リモートバックエンド設定（Valkey ドキュメントを参照） |
 | `local_backend` | 文字列 | `'file'` | ローカル バックエンドの種類：`file`または`apcu` |
 | `local_backend_options` | 配列 | `[]` | ローカルバックエンド設定 |
 | `cleanup_percentage` | 整数 | `95` | L1 キャッシュ クリーンアップしきい値（1 ～ 100） |
 | `use_stale_cache` | ブーリアン | `false` | 高可用性のために古いキャッシュを有効にする |
+| `compress_data` | ブーリアン | `false` | `compression_lib`と組み合わせると圧縮を有効にします。 `compression_lib`のみを設定すると、圧縮は有効になりません。 |
+| `persistent` | ブーリアン | `true` | リモートバックエンドへの永続的な接続を制御します。 従来のZend キャッシュ動作に一致するように`false` （`'0'`）に設定します。デフォルトは非永続的な接続です。 |
+
 
 >[!NOTE]
 >
->`remote_backend` オプションは`redis`の値も受け入れます。 ただし、Redisは、Adobe Commerce 2.4.9以降で正式にサポートされているキャッシュサービスではありません。 Adobeでは、`symfony_l2`を`valkey`のみで設定することをお勧めします。 リリース別のサポートされているキャッシュサービスについては、[必要システム構成](../../installation/system-requirements.md)を参照してください。
+>- `remote_backend` オプションは`redis`の値も受け入れますが、Redisは正式にはサポートされていません（[最新のSymfony L2 キャッシュ実装](#modern-symfony-l2-cache-implementation)の上記のメモを参照）。
+>
+>- レガシー`RemoteSynchronizedCache`設定で使用されている`frontend_options.write_control`は、`symfony_l2`には適用されません。
 
 ### Symfony L2 キャッシュのパフォーマンスと信頼性の向上
 
 >[!NOTE]
 >
->これらの機能強化は、`symfony_l2`を使用したAdobe Commerce 2.4.9のデプロイメントに適用され、ACP2E-5132 パッチで利用できます。 最新のパッチリリースノートについては、「[Commerceのクラウドパッチ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)」を参照してください。
+>これらの機能強化は、`symfony_l2`を使用したAdobe Commerce 2.4.9のデプロイメントに適用され、ACP2E-5132 パッチで利用できます。 Adobe Commerce オンプレミスの場合は、品質パッチツール（QPT）を使用してこのパッチを適用します。 Adobe Commerce on Cloudの場合、このパッチは[CommerceのCloud パッチ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)を介して自動的に配信されます。
 
 最新のアップデートにより、Symfony L2 キャッシュのスケーラビリティが向上し、不要なファイルシステム I/Oが減り、キャッシュの一貫性と信頼性が向上しました。
 
@@ -345,19 +373,19 @@ L2 キャッシュに簡略化された`symfony_l2` バックエンドタイプ�
 
 ファイルベースのキャッシュ（Valkeyを使用しない）を使用するデプロイメントの場合、ローカルタグインデックスは引き続き維持され、キャッシュの無効化がサポートされます。 タグインデックスは、以前にハードコードされた`var/cache`の場所ではなく、設定された`cache_dir`に書き込まれるようになりました。これにより、キャッシュディレクトリの使用状況が一貫し、カスタムキャッシュ設定のサポートが向上しました。
 
-#### リタグ後の固定古いタグメンバーシップ
+#### 再タグ化後の古いタグメンバーシップの修正
 
 キャッシュエントリを再タグ化すると、そのエントリが属していないタグに関連付けられたままになる可能性があります。 古いタグメンバーシップは再タグ時にクリアされるようになったため、キャッシュエントリは現在割り当てられているタグによってのみ無効化されます。
 
-#### 変更されていない保存時の冗長なリモート書き込みを修正
+#### 変更されていない保存に対する冗長なリモート書き込み修正
 
 変更されていないコンテンツを含むキャッシュエントリを保存すると、リモート（Valkey）バックエンドへの書き込みがトリガーされます。 コンテンツが変更されていないときに保存がスキップされ、不要なリモート書き込みが減少するようになりました。
 
-#### 固定L1 サイズベースの立ち退き（cleanup_percentage）
+#### L1 サイズベースの立ち退き修正（cleanup_percentage）
 
 L1 サイズベースの立ち退きに使用されたしきい値`cleanup_percentage`は、常にトリガークリーンアップを実行できませんでした。 L1 キャッシュの削除が、設定済みの`cleanup_percentage`を正しく尊重するようになりました。
 
-#### 古いキャッシュの再生成ロックを追加
+#### 古いキャッシュの再生ロック
 
 `use_stale_cache`が有効になっていて、エントリのリモートコピーが一時的に利用できない場合、1つのプロセスのみが、そのエントリを再生成するために短時間のみ有効なロックを取得するようになりました。 同じエントリに対するその他の同時リクエストは、それ自体を再生成するのではなく、既存のローカル値を引き続き提供し、再生成スタンプードと冗長なバックエンド負荷を軽減します。
 
@@ -371,5 +399,12 @@ L1 サイズベースの立ち退きに使用されたしきい値`cleanup_perce
 - キーごとに1つのリジェネレーターを選択することで、`use_stale_cache`個のエントリの再生スタンプを減らします。これは、同じリクエストが同じキーを再構築するたびに行われるものではありません。
 
 設定オプションの詳細については、次を参照してください。
+
 - [Symfony Cacheを使用したValkey キャッシュ設定](valkey-pg-cache.md)
 
+>[!MORELIKETHIS]
+>
+>- [&#x200B; キャッシュの概要と設定オプション &#x200B;](caching-overview.md)
+>- [&#x200B; キャッシュバックエンドオプションとストレージ参照](cache-options.md)
+>- [&#x200B; キャッシュフロントエンドとタイプの設定](cache-types.md)
+>- [&#x200B; デフォルトおよびページキャッシュ用にRedisを設定](redis-pg-cache.md)

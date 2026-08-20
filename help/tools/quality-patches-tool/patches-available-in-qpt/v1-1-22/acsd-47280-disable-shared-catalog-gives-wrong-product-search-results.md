@@ -1,42 +1,42 @@
 ---
-title: '[!DNL ACSD-47280]：共有カタログを無効にすると間違った製品検索結果が表示される'
-description: 共有カタログ機能が無効な場合に正しい検索結果が表示されるように、 [!DNL ACSD-47280] patch を適用して修正します。
-source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
+title: '[!DNL ACSD-47280]：共有カタログを無効にすると、間違った商品検索結果が表示される'
+description: 共有カタログ機能が無効になっている場合に、正しい検索結果を表示するように修正するには、 [!DNL ACSD-47280]  パッチを適用します。
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
 
-# [!DNL ACSD-47280]：共有カタログを無効にすると間違った製品検索結果が表示される
+# [!DNL ACSD-47280]：共有カタログを無効にすると、間違った商品検索結果が表示される
 
-[!DNL ACSD-47280] パッチは、[!DNL shared catalog] 機能が無効な場合の正しい検索結果の表示を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.22 がインストールされている場合に使用できます。 [!DNL patch ID] は [!DNL ACSD-47280] です。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+[!DNL ACSD-47280] パッチは、[!DNL shared catalog]機能が無効になっている場合の正しい検索結果の表示を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.22がインストールされている場合に利用できます。 [!DNL patch ID]は[!DNL ACSD-47280]です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5
 
-**Adobe Commerce バージョンとの互換性：**
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.0 ～ 2.4.5-p1
+**Adobe Commerceのバージョンとの互換性：**
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.0 - 2.4.5-p1
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 [!DNL patch ID] を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 検索キーワードとして[!DNL patch ID]を使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-[!DNL shared catalog] を無効にすると、誤った製品検索結果が表示される。
+[!DNL shared catalog]を無効にすると、間違った商品検索結果が表示されます。
 
-<u> 前提条件 </u>:
+<u>前提条件</u>:
 
-* [!DNL B2B] モジュールがインストールされました
+* [!DNL B2B]個のモジュールがインストールされました
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 2 番目の web サイトを作成します。
-1. 2 つ目の web サイトに製品を割り当てます。
-1. **2 番目の web サイト** で次の [!DNL GraphQL] を使用して製品を確認します。
+1. 2つ目のweb サイトの構築。
+1. 2番目のweb サイトに製品を割り当てます。
+1. [!DNL GraphQL]を使用して&#x200B;**秒のweb サイト**&#x200B;で製品を確認します：
 
    ```GraphQL
    {
@@ -54,31 +54,31 @@ ht-degree: 0%
    }
    ```
 
-1. デフォルト **[!UICONTROL Shared Catalog]** で [!DNL scope] を有効にします。
-1. [!DNL GraphQL] のリクエストで、2 番目の web サイトの製品が表示されなくなりました。これは正しい結果です。
-1. 2 つ目の web サイトの [!DNL scope] に移動し、**[!UICONTROL Company]** を無効にします。
+1. 既定の[!DNL scope]で&#x200B;**[!UICONTROL Shared Catalog]**&#x200B;を有効にします。
+1. [!DNL GraphQL] リクエストで、2番目のWeb サイトの製品が表示されなくなりました。これは正しい結果です。
+1. 2番目のWeb サイトの[!DNL scope]に移動し、**[!UICONTROL Company]**&#x200B;を無効にします。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-[!DNL GraphQL] のリクエストでは、2 番目の web サイトの製品が引き続き表示されます。
+[!DNL GraphQL] リクエストには、引き続き2番目のweb サイトの製品が表示されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-[!DNL GraphQL] のリクエストでは、2 番目の web サイトの製品は表示されません。
+[!DNL GraphQL] リクエストには、2番目のweb サイトの製品が表示されません。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

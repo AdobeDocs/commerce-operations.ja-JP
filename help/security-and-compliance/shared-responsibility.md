@@ -2,9 +2,9 @@
 title: 責任セキュリティと運用モデルの共有
 description: Adobe Commerce on cloud インフラストラクチャプロジェクトに関与する各パーティのセキュリティ責任について説明します。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '3270'
+source-wordcount: '3252'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Adobeは、次の責任を負います。
 * 安全なアプリケーション開発の確保
 * 加盟店の決済代行会社から要求された場合、PCI認証を取得する
 * セキュリティインシデントへの対応と対応
-* アクティブにサポートされているバージョンでは、すべてのサードパーティ製の依存関係、プラットフォームサービス、Adobe Commerce サービス拡張機能を維持する。 Adobeでは、サポートされていない依存関係バージョンを実行するデプロイメントに対するセキュリティサポートやサポートは提供されていません。 サポートされているバージョンについては、[必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ja)および[製品の可用性マトリックス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability)を参照してください。
+* アクティブにサポートされているバージョンでは、すべてのサードパーティ製の依存関係、プラットフォームサービス、Adobe Commerce サービス拡張機能を維持する。 Adobeでは、サポートされていない依存関係バージョンを実行するデプロイメントに対するセキュリティサポートやサポートは提供されていません。 サポートされているバージョンについては、[必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ja)および[製品の可用性マトリックス &#x200B;](/help/release/product-availability.md)を参照してください。
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Adobeは、該当するSLAで合意されている加盟店のインフラスト
   * Adobe Commerce Servicesの拡張機能
   * サードパーティ製の拡張機能とカスタム統合
 
-  Adobeでは、サポートされていないバージョンを実行するデプロイメントのサポートは提供されていません。 サポートされているバージョンについては、[必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ja)および[製品の可用性マトリックス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability)を参照してください。
+  Adobeでは、サポートされていないバージョンを実行するデプロイメントのサポートは提供されていません。 サポートされているバージョンについては、[必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ja)および[製品の可用性マトリックス &#x200B;](/help/release/product-availability.md)を参照してください。
 
 ## クラウドサービスプロバイダーの責任
 

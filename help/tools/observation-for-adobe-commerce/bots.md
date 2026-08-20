@@ -3,9 +3,9 @@ title: 「[!UICONTROL bots]」タブ
 description: ' [!DNL Observation for Adobe Commerce]の[!UICONTROL bots] タブについて説明します。'
 exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1944'
+source-wordcount: '1952'
 ht-degree: 0%
 
 ---
@@ -18,19 +18,19 @@ ht-degree: 0%
 
 * [!DNL bot]は、反復的な自動化タスクを実行するソフトウェアの一部です。 AIとマシンラーニングの進化に伴い、[!DNL bots]のタスク、方法、インタラクションは変化しています。 サイトをクロールしてインターネット検索エンジンに追加することで、サイトにメリットをもたらす&#x200B;*good* [!DNL bots]があります。 その結果、インターネットユーザーは検索エンジンの結果を通じてサイトに誘導されます。 *good* [!DNL bot]は、通常、`robots.txt` ファイルまたは検索エンジンコンソールの設定によって[!DNL bot]に配置された境界を尊重します。 境界は、サイトまたはサイトの一部へのアクセスを制限できます。
 * 悪意のある[!DNL bots]は`robots.txt` ファイルを無視するか、HTTP リクエストデータのリクエストユーザーエージェントフィールドを通じて良い[!DNL bot]をスプーフィングする可能性があります。 悪意のある[!DNL bots]が実行する一部のアクション：
-   * サイトに読み込みを追加して、正当なユーザーによるサイトへのアクセスを拒否します。
-   * コンテンツを勝手にスクレイピングして再利用。
-   * 偽アカウントを登録して、メールサービスやアドレスをフラッディングしたり、他のサイト （[!DNL SPAM bots]）にリダイレクトしたりします。
-   * 偽のビュー（[!DNL Viewbots]）を作成します。
-   * 製品またはチケットを購入します（[!DNL Focused bots]）。
+  * サイトに読み込みを追加して、正当なユーザーによるサイトへのアクセスを拒否します。
+  * コンテンツを勝手にスクレイピングして再利用。
+  * 偽アカウントを登録して、メールサービスやアドレスをフラッディングしたり、他のサイト （[!DNL SPAM bots]）にリダイレクトしたりします。
+  * 偽のビュー（[!DNL Viewbots]）を作成します。
+  * 製品またはチケットを購入します（[!DNL Focused bots]）。
 * [!DNL bots]の管理
-   * [!DNL Observation for Adobe Commerce]には、[!DNL bot] トラフィックのビューがあります：
-      * キャッシュされていない合計[!DNL bot] アクティビティが表示され、[!DNL bot]がサイトに追加している負荷と、その負荷がいつ発生しているかが表示されます。
-      * エラーを生成している[!DNL bots]が表示されます。 通常、[!DNL bot]がサイトの問題を引き起こす読み込みを追加している場合、その[!DNL bot]またはIP アドレスはエラーの頻度が最も高くなります。
-      * 次の方法で管理する[!DNL bot]名（リクエストユーザーエージェントフィールド値）とIP アドレスが表示されます。
-         * [!DNL Fastly] （IP アドレス、範囲、または名前値で[!DNL bots]をブロックするレート制限または[!DNL VCLs]）。
-         * `robots.txt field`に良好な[!DNL bot]情報を追加して、サイト アクセスの速度を制限または制限します。
-         * 検索エンジンコンソールで[!DNL Bing]または[!DNL Google bots]を管理しています。
+  * [!DNL Observation for Adobe Commerce]には、[!DNL bot] トラフィックのビューがあります：
+    * キャッシュされていない合計[!DNL bot] アクティビティが表示され、[!DNL bot]がサイトに追加している負荷と、その負荷がいつ発生しているかが表示されます。
+    * エラーを生成している[!DNL bots]が表示されます。 通常、[!DNL bot]がサイトの問題を引き起こす読み込みを追加している場合、その[!DNL bot]またはIP アドレスはエラーの頻度が最も高くなります。
+    * 次の方法で管理する[!DNL bot]名（リクエストユーザーエージェントフィールド値）とIP アドレスが表示されます。
+      * [!DNL Fastly] （IP アドレス、範囲、または名前値で[!DNL bots]をブロックするレート制限または[!DNL VCLs]）。
+      * `robots.txt field`に良好な[!DNL bot]情報を追加して、サイト アクセスの速度を制限または制限します。
+      * 検索エンジンコンソールで[!DNL Bing]または[!DNL Google bots]を管理しています。
 
 ## [!UICONTROL Experimental Potential Malicious Bots frame]
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 **[!UICONTROL Experimental Potential Malicious Bots frame]** フレームは、12個の独立した複雑なクエリで実行されます。 悪意のあるIP リクエストの署名を検出し、結果を集計し、合計し、降順で数で並べ替えます。 クエリには、CVE エクスプロイトおよびその他の悪意のあるリクエストの多数のデータ署名が含まれています。 セキュリティの修正やパッチによって攻撃がブロックされ、サイトに対する脅威ではない場合でも、そのリクエストはweb サイトで処理する必要があります。 リクエスト数は短期間で大幅に増加する可能性があります。 このフレームには、IP アドレスからのリクエストの合計数は表示されませんが、リクエストが疑わしい意図を持っていることを示すシグナルを持つリクエストが表示されます。
 
-トラフィックが疑わしいものであり、有効なリクエストを配信している可能性のある[!DNL Content Distributed Network] （CDN）アドレスから送信されていないことを確認してください。 リクエストがCDN IP アドレスからのものであると判断された場合は、そのネットワークを介した疑わしいトラフィックのブロックを支援するために、そのサービスサプライヤーに連絡してください。 アドレスまたはリクエスト URLをブロックする必要がある場合は、Adobe Commerce サポート サポート ナレッジベースの [!DNL Fastly]  レベル [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html?lang=ja)のAdobe Commerceの悪意のあるトラフィックをブロックするを参照してください。
+トラフィックが疑わしいものであり、有効なリクエストを配信している可能性のある[!DNL Content Distributed Network] （CDN）アドレスから送信されていないことを確認してください。 リクエストがCDN IP アドレスからのものであると判断された場合は、そのネットワークを介した疑わしいトラフィックのブロックを支援するために、そのサービスサプライヤーに連絡してください。 アドレスまたはリクエスト URLをブロックする必要がある場合は、Adobe Commerce サポート サポート ナレッジベースの [!DNL Fastly]  レベル [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level)のAdobe Commerceの悪意のあるトラフィックをブロックするを参照してください。
 
 ## [!UICONTROL Rate of HTTP request per second (top 25) during requested time period]
 

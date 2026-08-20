@@ -1,68 +1,68 @@
 ---
-title: ACSD-47054：すべてのストアのインデックスを再作成するとコンテンツのプレビューが遅くなる
-description: ACSD-47054 パッチを適用して、すべてのストアのインデックスを再作成したためにプレビューページの読み込みが遅くなるAdobe Commerceの問題を修正してください。
+title: ACSD-47054：すべてのストアのインデックスが再作成されるため、コンテンツのプレビューが遅くなる
+description: ACSD-47054 パッチを適用して、すべてのストアの再インデックスが原因でプレビューページの読み込みが遅くなるAdobe Commerceの問題を修正します。
 feature: Page Content
 role: Admin, Developer
 exl-id: bfbda95a-354b-4b67-8081-84aefbbd7cb4
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
 
-# ACSD-47054：すべてのストアのインデックスを再作成するとコンテンツのプレビューが遅くなる
+# ACSD-47054：すべてのストアのインデックスが再作成されるため、コンテンツのプレビューが遅くなる
 
-ACSD-47054 パッチを使用すると、ストアが多数ある場合にコンテンツのステージングのプレビューの読み込みに時間がかかる問題を修正できます。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.37 がインストールされている場合に使用できます。 パッチ ID は ACSD-47054 です。 この問題はAdobe Commerce 2.4.6 で修正されました。
+ACSD-47054 パッチは、ストアが多い場合にコンテンツステージングのプレビューの読み込みに時間がかかる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.37がインストールされている場合に利用できます。 パッチ IDはACSD-47054です。 この問題は、Adobe Commerce 2.4.6で修正されています。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法）:2.4.2-p2、2.4.5-p2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法）:2.4.2 ～ 2.4.5-p4
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-すべてのストアのインデックスが再作成されるので、プレビューページの読み込みに時間がかかる。
+プレビューページは、すべてのストアのインデックスが再作成されるので、読み込みに時間がかかります。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. Commerce管理者に移動します。
-1. スケジュールされている更新を作成します。
-1. **[!UICONTROL Content]**/**[!UICONTROL Dashboard]** に移動します。
+1. Commerce Adminに移動します。
+1. スケジュールされた更新を作成します。
+1. **[!UICONTROL Content]** > **[!UICONTROL Dashboard]**&#x200B;に移動します。
 1. スケジュールされた更新をプレビューします。
 1. 任意のカテゴリを開きます。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-プレビューページは、許容可能な時間内に読み込まれます。
+プレビューページは、許容される時間内に読み込まれます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-コンテンツのステージングのプレビューに時間がかかる。
+コンテンツのステージングのプレビューに時間がかかっています。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

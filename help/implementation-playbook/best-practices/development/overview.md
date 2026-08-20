@@ -4,9 +4,9 @@ description: Adobe Commerce プロジェクトの開発段階での実装のベ�
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 | ベストプラクティス | 説明 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [&#x200B; ビルドとデプロイメント &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=ja){target="_blank"} | クラウドインフラストラクチャプロジェクトでのAdobe Commerceのビルドとデプロイのステージに関するベストプラクティスについて説明します |
+| [&#x200B; ビルドとデプロイメント &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices){target="_blank"} | クラウドインフラストラクチャプロジェクトでのAdobe Commerceのビルドとデプロイのステージに関するベストプラクティスについて説明します |
 | デバッグ | Adobe Commerceフレームワークを体系的かつ効果的にデバッグする |
 | [静的コンテンツのデプロイメント &#x200B;](static-content-deployment.md) | ストアフロントに静的コンテンツが表示されない問題を回避します |
 | [&#x200B; トラブルシューティング &#x200B;](troubleshooting.md) | Adobe Commerceの導入に関する一般的な問題のトラブルシューティング |

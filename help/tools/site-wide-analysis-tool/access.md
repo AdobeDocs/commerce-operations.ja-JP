@@ -2,9 +2,9 @@
 title: ' [!DNL Site-Wide Analysis Tool]へのアクセス方法'
 description: Adobe Commerce管理パネルからSite-Wide Analysis Tool ダッシュボードにアクセスする方法について説明します。 ユーザーの権限と役割の要件について説明します。
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: d75d8fe87b5bf5cf5cd1d5a15371a456b82f18db
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!UICONTROL Admin]からツールにアクセスしようとすると、ユーザーアカウントに[!DNL Site-Wide Analysis Tool]へのアクセス権があることを確認し、ユーザーに403 エラーが表示された場合、Adobe Commerce on cloud infrastructureのインスタンスでHTTP アクセス制御が有効になっている可能性があります。 HTTP認証が有効になっている場合、[!DNL Site-Wide Analysis Tool] ダッシュボードはサポートされていません。 この問題の解決について詳しくは、[&#x200B; サポート記事](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento)を参照してください。
+>[!UICONTROL Admin]からツールにアクセスしようとすると、ユーザーアカウントに[!DNL Site-Wide Analysis Tool]へのアクセス権があることを確認し、ユーザーに403 エラーが表示された場合、Adobe Commerce on cloud infrastructureのインスタンスでHTTP アクセス制御が有効になっている可能性があります。 HTTP認証が有効になっている場合、[!DNL Site-Wide Analysis Tool] ダッシュボードはサポートされていません。 この問題の解決について詳しくは、[&#x200B; サポート記事](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26852)を参照してください。
 
 ### 手順2: [!DNL Site-Wide Analysis Tool]へのアクセス
 

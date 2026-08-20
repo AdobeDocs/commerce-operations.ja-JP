@@ -1,75 +1,75 @@
 ---
-title: 'ACSD-56415: 「DELETE」クエリが原因で [!UICONTROL Partial Price Indexing] のパフォーマンスが低下しました'
-description: ACSD-56415 パッチを適用すると、データベースにインデックスに対する部分的な価格データが多くある場合に、「DELETE」クエリが原因で [!UICONTROL Partial Price Indexing] のパフォーマンスが低下するAdobe Commerceの問題を修正できます。
+title: 'ACSD-56415: ''DELETE'' クエリが原因で[!UICONTROL Partial Price Indexing]のパフォーマンスが低下しました'
+description: ACSD-56415 パッチを適用して、Adobe Commerceに部分的な価格データが多くインデックスに含まれている場合、「DELETE」クエリが原因で[!UICONTROL Partial Price Indexing]のパフォーマンスが低下するデータベースの問題を修正します。
 feature: Catalog Service
 role: Admin, Developer
 exl-id: c877844e-79d3-4756-97a5-de44e6fb5170
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
 
-# ACSD-56415：クエリが原因で [!UICONTROL Partial Price Indexing] のパフォーマンスが低下 `DELETE` る
+# ACSD-56415: `DELETE` クエリが原因で[!UICONTROL Partial Price Indexing]のパフォーマンスが遅くなっています
 
-ACSD-56415 パッチは、データベースに多くの部分価格データインデックスがある場合に、[!UICONTROL Partial Price Indexing] のクエリが原因で `DELETE` のパフォーマンスが低下する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.45 がインストールされている場合に使用できます。 パッチ ID は ACSD-56023 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-56415 パッチは、データベースに部分的な価格データインデックスが多い場合に`DELETE` クエリが原因で[!UICONTROL Partial Price Indexing]のパフォーマンスが低下する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.45がインストールされている場合に利用できます。 パッチ IDはACSD-56023です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p3
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.5 ～ 2.4.6-p3
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.5 - 2.4.6-p3
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-データベースに多くの部分価格データインデックスがある場合、[!UICONTROL Partial Price Indexing] のクエリが原因で `DELETE` のパフォーマンスが低下します。
+データベースに部分的な価格データインデックスが多い場合、`DELETE` クエリが原因で、[!UICONTROL Partial Price Indexing]のパフォーマンスが低下します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 大規模なパフォーマンスプロファイルを使用して ** 300000 製品および *10 web サイト* 作成します。
-1. 管理パネルにログインします。
-1. *10 の顧客グループ* を作成します。
-1. 次のクエリを実行して、`_cl` テーブルに製品を追加します。
+1. 大きなパフォーマンスプロファイルを使用して&#x200B;*300000製品*&#x200B;と&#x200B;*10 web サイト*&#x200B;を作成します。
+1. Admin Panelにログインします。
+1. *10個の顧客グループ*&#x200B;を作成します。
+1. 以下のクエリを実行して、製品を`_cl` テーブルに追加します。
 
    &grave;&grave;
     insert into catalog_product_price_cl (entity_id) select entity_id from catalog_product_entity
  &grave;&grave;
 
-1. 次のコマンドを実行して、部分価格インデックス作成プロセスをトリガーします。
+1. 次のコマンドを実行して、価格インデックス作成プロセスの一部をトリガーします。
 
    &grave;&grave;
     bin/magento cron:run --group=index --bootstrap=standaloneProcessStarted=1
  &grave;&grave;
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-DELETE `main_table` FROM `catalog_product_index_price` の SQL クエリは迅速に実行されます。
+`catalog_product_index_price`からのSQL クエリ DELETE `main_table`が迅速に実行されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-DELETE `main_table` FROM `catalog_product_index_price` の SQL クエリの実行に非常に時間がかかる。
+`catalog_product_index_price`からのSQL クエリ DELETE `main_table`の実行が非常に遅くなっています。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドの
-* クラウドインフラストラクチャー上のAdobe Commerce:[&#x200B; アップグレードとパッチ適用 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja) クラウドインフラストラクチャー上のCommerce ガイド
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」ガイド
 
-## 関連資料
+## 関連トピックス
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースに追加しました
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）
-* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [[!DNL Quality Patches Tool]  リリース：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを確認します
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](/help/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables.md#why-adobe-recommends-avoiding-modifications)
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

@@ -1,70 +1,70 @@
 ---
-title: 'ACSD-65202: マイアカウントページに、他のストアビューからの最近の注文が表示されない'
-description: ACSD-65202 パッチを適用すると、マイアカウント ページに同じストア内の他のストアビューからの最近の注文が表示されないAdobe Commerceの問題を修正できます。
+title: ACSD-65202：マイアカウントページに、他のストアビューからの最近の注文が表示されない
+description: 同じストア内の他のストアビューからの最近の注文がマイアカウントページに表示されないAdobe Commerceの問題を修正するには、ACSD-65202 パッチを適用します。
 feature: Orders, User Account
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 031f12f2-1b70-4cbc-92a0-8eb561e34067
-source-git-commit: b1912bbc5aabd36067563326ee5c6bb84e14441d
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
 
-# ACSD-65202:[!UICONTROL My Account] ページに他のストア ビューからの最近の注文が表示されない
+# ACSD-65202: [!UICONTROL My Account] ページに、他のストアビューからの最近注文が表示されない
 
-ACSD-65202 パッチにより、**[!UICONTROL My Account]** ページに同じストア内の他のストアビューからの最近の注文が表示されない問題が修正されました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 がインストールされている場合に使用できます。 パッチ ID は ACSD-65202 です。 この問題はAdobe Commerce 2.4.9 で修正される予定であることに注意してください。
+ACSD-65202 パッチは、同じストア内の他のストアビューからの最近の注文が&#x200B;**[!UICONTROL My Account]** ページに表示されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65がインストールされている場合に利用できます。 パッチ IDはACSD-65202です。 この問題は、Adobe Commerce 2.4.9で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4-p12
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p5
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-顧客アカウントページ（セクション **[!UICONTROL My Account]**）に移動すると、別のストア表示に最近の注文が表示されません。 ただし、注文履歴（セクション *[!UICONTROL My Orders]*）に移動すると、両方のストアビューにすべての注文が表示されます。
+顧客アカウントページ（セクション **[!UICONTROL My Account]**）に移動すると、最近の注文が別のストアビューに表示されません。 ただし、注文履歴（セクション *[!UICONTROL My Orders]*）に移動すると、両方のストアビューにすべての注文が表示されます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
 1. Adobe Commerceをインストールします。
-1. *管理* パネルで、新しいストアビューを作成し、そのコードを *second* として入力して、ビューを識別します。
-1. シンプルな製品を作成して、インデックスを再作成します。
-1. 顧客アカウントを作成し、デフォルトのストア表示でコードを *デフォルト* して注文します。
-1. **[!UICONTROL My Orders]** ページに移動し、両方のストア表示に注文が表示されていることを確認します。次に例を示します。
+1. *管理者* パネルで、新しいストアビューを作成し、そのコードを&#x200B;*second*&#x200B;と入力して、ビューを識別します。
+1. シンプルな商品を作成し、インデックスを再作成。
+1. 顧客アカウントを作成し、コードが&#x200B;*default*&#x200B;のデフォルトストアビューで注文します。
+1. **[!UICONTROL My Orders]** ページに移動し、両方のストアビューに順序が表示されていることを確認します。例：
 1. デフォルト：https://localhost/pub/default/sales/order/history/
-1. 2 番目：https://localhost/pub/second/sales/order/history/
+1. 2つ目：https://localhost/pub/second/sales/order/history/
 
-1. 両方のストア表示で **[!UICONTROL My Account]** ページに移動します。
+1. 両方のストアビューで&#x200B;**[!UICONTROL My Account]** ページに移動します。
 1. デフォルト：https://localhost/pub/default/customer/account/
-1. 2 番目：https://localhost/pub/second/customer/account/
+1. 2つ目：https://localhost/pub/second/customer/account/
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-注文は、両方のストア表示の注文ページで確認できます。 同じ店舗で、単に別の店舗ビューです。
+両方のストアビューの注文は、「注文」ページで確認できます。 同じストアですが、異なるストアビューです。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-動作が一貫していません。 注文は 2 番目のストア表示には表示されません。
+動作に一貫性がありません。 2番目のストアビューには注文は表示されません。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

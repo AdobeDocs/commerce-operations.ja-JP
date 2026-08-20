@@ -3,9 +3,9 @@ title: パスワードハッシュ
 description: Adobe Commerceのパスワードハッシュ、Argon2やSHA256などのサポートされているアルゴリズム、パスワードを変更せずに従来のハッシュをアップグレードする方法について説明します。
 feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -61,4 +61,4 @@ Commerceでは、使用済みのすべてのパスワードハッシュのバー
 
 ## 導入
 
-`\Magento\Framework\Encryption\Encryptor` クラスは、パスワード ハッシュの生成と検証を担当します。 [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) コマンドは、顧客パスワード ハッシュを最新のハッシュ アルゴリズムにアップグレードします。
+`\Magento\Framework\Encryption\Encryptor` クラスは、パスワード ハッシュの生成と検証を担当します。 [`bin/magento customer:hash:upgrade`](/help/tools/reference/commerce-on-premises.md#customerhashupgrade) コマンドは、顧客パスワード ハッシュを最新のハッシュ アルゴリズムにアップグレードします。
