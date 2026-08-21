@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
@@ -51,12 +51,12 @@ Gtmetrixを使用して大量のトラフィックをシミュレートし、サ
 
 Adobe Commerce プロジェクトのテストについて詳しくは、次を参照してください。
 
-- [ ガイダンスのテスト ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/guidance) （クラウド インフラストラクチャ）
+- [&#x200B; ガイダンスのテスト &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/guidance) （クラウド インフラストラクチャ）
 - [アプリケーションテスト](https://developer.adobe.com/commerce/testing/guide/)
 
 ### パフォーマンスの問題を特定して解決する
 
-New RelicやObservation for Adobe Commerceなどのさまざまなツールを使用して、ボトルネックを検出し、Commerceサイトを効果的に最適化することで、パフォーマンスの問題に対処します。 [New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)はAdobe Commerce on cloud infrastructureに含まれており、Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md)の[Observationはクラウドとオンプレミスの両方のデプロイメントに含まれています。
+New RelicやObservation for Adobe Commerceなどのさまざまなツールを使用して、ボトルネックを検出し、Commerceサイトを効果的に最適化することで、パフォーマンスの問題に対処します。 [New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)はAdobe Commerce on cloud infrastructureに含まれており、Adobe Commerce[&#128279;](/help/tools/observation-for-adobe-commerce/intro.md)のObservationはクラウドとオンプレミスの両方のデプロイメントに含まれています。
 
 これらのツールを使用して、サイトパフォーマンスを分析し、次に関連するパフォーマンスの問題を特定します。
 
@@ -69,7 +69,7 @@ New RelicやObservation for Adobe Commerceなどのさまざまなツールを�
 
 サイトパフォーマンスの管理について詳しく見る：
 
-- [ パフォーマンスの監視](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance) （クラウド インフラストラクチャ）
+- [&#x200B; パフォーマンスの監視](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance) （クラウド インフラストラクチャ）
 - [設定のベストプラクティス](/help/performance/configuration.md)
 - [Adobe Commerceの観測](/help/tools/observation-for-adobe-commerce/intro.md)
 
@@ -81,7 +81,7 @@ New RelicやObservation for Adobe Commerceなどのさまざまなツールを�
 
 トラフィックの多いweb サイトは、主に単一のMySQL サーバーへの依存によって、データベースのボトルネックに直面することがよくあります。 パフォーマンスを向上させ、高可用性を確保する分散型アーキテクチャであるデータベースクラスタリングを導入することで、これらのボトルネックに対処できます。
 
-データベースクラスタリングは、複数のweb ノードを複数のMySQL サーバーに接続できるようにすることで、トラフィックのピーク時におけるデータベース関連の問題の影響を最小限に抑えます。 Galera Clusterなどのツールを使用して、Commerce サイトのデータベースクラスタリングを設定します。 Galera Clusterは、[ クラウドインフラストラクチャにデプロイされたAdobe Commerce プロジェクト ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture)に含まれています。
+データベースクラスタリングは、複数のweb ノードを複数のMySQL サーバーに接続できるようにすることで、トラフィックのピーク時におけるデータベース関連の問題の影響を最小限に抑えます。 Galera Clusterなどのツールを使用して、Commerce サイトのデータベースクラスタリングを設定します。 Galera Clusterは、[&#x200B; クラウドインフラストラクチャにデプロイされたAdobe Commerce プロジェクト &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture)に含まれています。
 
 #### MySQL クエリの最適化
 
@@ -110,7 +110,7 @@ cronのパフォーマンスとタイミングの最適化を担当する場合�
 
 Adobe Commerce cronの導入について詳しく見る：
 
-- _Commerce Admin Systems ユーザーガイド_&#x200B;の[Cron （スケジュール済みタスク） ](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html)
-- [ アプリケーション設定 – crons プロパティ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) （クラウドインフラストラクチャ）
+- _Commerce Admin Systems ユーザーガイド_&#x200B;の[Cron （スケジュール済みタスク） &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html)
+- [&#x200B; アプリケーション設定 – crons プロパティ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) （クラウドインフラストラクチャ）
 - [crons](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)の設定と実行（オンプレミス）
-- Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html)の[観察（[!UICONTROL Cron]および[!UICONTROL MySQL] タブを参照）
+- Adobe Commerce[&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html)の観察（[!UICONTROL Cron]および[!UICONTROL MySQL] タブを参照）

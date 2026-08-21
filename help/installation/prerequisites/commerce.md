@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## ソフトウェアの入手方法
 
-Adobeで作成された拡張機能とAdobe CommerceおよびMagento Open Source用のCommerce サービスの可用性と互換性については、[製品の可用性ページ ](/help/release/product-availability.md)を参照してください。
+Adobeで作成された拡張機能とAdobe CommerceおよびMagento Open Source用のCommerce サービスの可用性と互換性については、[製品の可用性ページ &#x200B;](/help/release/product-availability.md)を参照してください。
 
 >[!NOTE]
 >
@@ -68,4 +68,4 @@ UNIX システムでは、Web サーバーやPHPなどのソフトウェアを�
 
 Web サーバーがそれらのファイルを操作できない可能性があるため、*not*&#x200B;は`root` ユーザーとしてweb サーバーのdocrootにアプリケーションをインストールしないでください。
 
-[ ファイルシステム所有者](file-system/overview.md)を作成し、その所有者をweb サーバーのグループに追加するには、`root`権限が必要です。 ファイルシステム所有者を使用して、コマンドラインから`bin/magento` コマンドを実行し、タスクをスケジュールするcron ジョブを設定します。
+[&#x200B; ファイルシステム所有者](file-system/overview.md)を作成し、その所有者をweb サーバーのグループに追加するには、`root`権限が必要です。 ファイルシステム所有者を使用して、コマンドラインから`bin/magento` コマンドを実行し、タスクをスケジュールするcron ジョブを設定します。

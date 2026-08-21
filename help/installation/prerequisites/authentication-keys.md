@@ -17,16 +17,16 @@ Adobe Commerce パッケージへのアクセス権限を付与するには、�
 
 >[!TIP]
 >
->[ エラー](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25968)が発生した場合、または「[!UICONTROL Access Keys]」セクションが「Marketplace」タブに表示されない場合、パッケージへのアクセス権限がないか、アカウントの未払いの請求書が原因でアクセス権限が期限切れになっている可能性があります。
+>[&#x200B; エラー](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25968)が発生した場合、または「[!UICONTROL Access Keys]」セクションが「Marketplace」タブに表示されない場合、パッケージへのアクセス権限がないか、アカウントの未払いの請求書が原因でアクセス権限が期限切れになっている可能性があります。
 >
 >* アカウントのプライマリ連絡担当者である場合は、アカウントに未払いの請求書がリストされていないことを確認してください。
->* プライマリ担当者から提供されたキーが機能せず、アカウントに未払いの請求書がない場合、プライマリ担当者は[Adobe Commerce サポート ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)に連絡してサポートを受ける必要があります。
+>* プライマリ担当者から提供されたキーが機能せず、アカウントに未払いの請求書がない場合、プライマリ担当者は[Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)に連絡してサポートを受ける必要があります。
 
 認証キーを作成するには：
 
 >[!NOTE]
 >
->2022年8月現在、アカウントオーナーはAdobe IDを持ち、そのアカウントがCommerce アカウントにリンクされていることを確認する必要があります。 アカウント所有者がAdobe IDを持っていない場合は、認証キーを生成する前に、アカウントを作成し、Commerce アカウントにリンクする必要があります。[Commerce アカウントを作成してアクセス ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
+>2022年8月現在、アカウントオーナーはAdobe IDを持ち、そのアカウントがCommerce アカウントにリンクされていることを確認する必要があります。 アカウント所有者がAdobe IDを持っていない場合は、認証キーを生成する前に、アカウントを作成し、Commerce アカウントにリンクする必要があります。[Commerce アカウントを作成してアクセス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
 
 1. [Commerce Marketplace](https://commercemarketplace.adobe.com/)にログインします。 アカウントをお持ちでない場合は、**登録**&#x200B;をクリックしてください。
 
@@ -52,11 +52,11 @@ Adobe Commerce パッケージへのアクセス権限を付与するには、�
 
 SSHを使用してAdobe Commerce リリースをダウンロードするには、ダウンロードアクセストークンを生成する必要があります。 トークンを生成するには：
 
-1. [magento.com アカウント ](https://account.magento.com/customer/account/login)にログインします。
+1. [magento.com アカウント &#x200B;](https://account.magento.com/customer/account/login)にログインします。
 1. ページの上部にある「**マイアカウント**」をクリックします。
 1. **アカウント設定**/**アクセス トークンをダウンロード**&#x200B;をクリックします。
 
-   ![ キーにアクセス ](../../assets/installation/connect_keys1.png)
+   ![&#x200B; キーにアクセス &#x200B;](../../assets/installation/connect_keys1.png)
 
 1. 「**新しいトークンを生成**」をクリックして、既存のトークンを置き換えて無効にします。
 

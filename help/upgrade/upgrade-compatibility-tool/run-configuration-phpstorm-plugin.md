@@ -13,7 +13,7 @@ ht-degree: 0%
 
 [!DNL Magento PHPStorm plugin]は、日常的なコーディング作業を最適化し、Adobe Commerce開発エクスペリエンスを向上させるために、コミュニティによって作成されたツールです。 このプラグインは、IntelliJ IDEA UltimateおよびPhpStorm IDEと互換性があります。 この機能には、Adobe Commerce固有のコード生成ショートカット、コードインスペクション、コンフィギュレーションファイルのオートコンプリート機能、MFTF テスト、およびRequireJSが含まれます。
 
-[!DNL Magento PHPStorm plugin]のインストール方法の詳細については、[ インストール ](https://developer.adobe.com/commerce/php/best-practices/phpstorm/install)のトピックを参照してください。
+[!DNL Magento PHPStorm plugin]のインストール方法の詳細については、[&#x200B; インストール &#x200B;](https://developer.adobe.com/commerce/php/best-practices/phpstorm/install)のトピックを参照してください。
 
 [!DNL Magento PHPStorm plugin]を介して、実行設定で[!DNL Upgrade Compatibility Tool]を実行できます。 詳しくは、[[!DNL Upgrade Compatibility Tool] 設定の実行](https://developer.adobe.com/commerce/php/best-practices/phpstorm/run-configuration)のトピックを参照してください。
 

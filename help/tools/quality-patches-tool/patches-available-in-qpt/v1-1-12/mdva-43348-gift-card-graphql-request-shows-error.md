@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # MDVA-43348：ギフトカードのGraphQL リクエストでエラーが表示される
 
-MDVA-43348 パッチは、`gift_card_options`に「uid」が含まれている場合にギフトカードGraphQL リクエストでエラーが表示される問題を修正します。 このパッチは、[品質パッチツール（QPT） ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.12がインストールされている場合に使用できます。 パッチ IDはMDVA-43348です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
+MDVA-43348 パッチは、`gift_card_options`に「uid」が含まれている場合にギフトカードGraphQL リクエストでエラーが表示される問題を修正します。 このパッチは、[品質パッチツール（QPT） &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.12がインストールされている場合に使用できます。 パッチ IDはMDVA-43348です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
@@ -28,7 +28,7 @@ MDVA-43348 パッチは、`gift_card_options`に「uid」が含まれている�
 
 >[!NOTE]
 >
->パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
@@ -42,12 +42,12 @@ MDVA-43348 パッチは、`gift_card_options`に「uid」が含まれている�
 
 <pre>
 <code class="language-graphql">
-query getProductOptionsForProductPage_bypassFastly($urlKey: String!) {
-  products(filter: { url_key: { eq: $urlKey } }) {
-    items {
+query getProductOptionsForProductPage_bypassFastly($urlKey: String!) &lbrace;
+  products(filter: { url_key: { eq: $urlKey } }) &lbrace;
+    items &lbrace;
       id
       url_key
-      ... on GiftCardProduct {
+      ... on GiftCardProduct &lbrace;
         allow_open_amount
         open_amount_min
         open_amount_max
@@ -56,15 +56,15 @@ query getProductOptionsForProductPage_bypassFastly($urlKey: String!) {
         lifetime
         allow_message
         message_max_length
-        gift_card_options {
+        gift_card_options &lbrace;
           uid
           title
           required
-        }
-      }
-    }
-  }
-}
+        &rbrace;
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -78,118 +78,118 @@ query getProductOptionsForProductPage_bypassFastly($urlKey: String!) {
 
 <pre>
 <code class="language-graphql">
-{
-  "errors": [
-    {
+&lbrace;
+  "errors": &lbrack;
+    &lbrace;
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 16,
           "column": 1
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "products",
         "items",
         0,
         "gift_card_options",
         0,
         "uid"
-      ]
-    },
-    {
+      &rbrack;
+    &rbrace;,
+    &lbrace;
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 16,
           "column": 1
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "products",
         "items",
         0,
         "gift_card_options",
         1,
         "uid"
-      ]
-    },
-    {
+      &rbrack;
+    &rbrace;,
+    &lbrace;
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 16,
           "column": 1
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "products",
         "items",
         0,
         "gift_card_options",
         2,
         "uid"
-      ]
-    },
-    {
+      &rbrack;
+    &rbrace;,
+    &lbrace;
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 16,
           "column": 1
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "products",
         "items",
         0,
         "gift_card_options",
         3,
         "uid"
-      ]
-    },
-    {
+      &rbrack;
+    &rbrace;,
+    &lbrace;
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 16,
           "column": 1
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "products",
         "items",
         0,
         "gift_card_options",
         4,
         "uid"
-      ]
-    }
-  ],
-  "data": {
-    "products": {
-      "items": [
-        {
+      &rbrack;
+    &rbrace;
+  &rbrack;,
+  "data": &lbrace;
+    "products": &lbrace;
+      "items": &lbrack;
+        &lbrace;
           "id": 2,
           "url_key": "gitf-card",
           "allow_open_amount": false,
@@ -200,18 +200,18 @@ query getProductOptionsForProductPage_bypassFastly($urlKey: String!) {
           "lifetime": 0,
           "allow_message": true,
           "message_max_length": 255,
-          "gift_card_options": [
+          "gift_card_options": &lbrack;
             null,
             null,
             null,
             null,
             null
-          ]
-        }
-      ]
-    }
-  }
-}
+          &rbrack;
+        &rbrace;
+      &rbrack;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -220,13 +220,13 @@ query getProductOptionsForProductPage_bypassFastly($urlKey: String!) {
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
 品質パッチツールについて詳しくは、以下を参照してください。
 
-* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
-* [品質パッチツール ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [品質パッチツール &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
 QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

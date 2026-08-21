@@ -28,7 +28,7 @@ ACSD-58108 パッチでは、注文グリッドカスタムモジュール拡張
 
 >[!NOTE]
 >
->このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
@@ -36,12 +36,12 @@ ACSD-58108 パッチでは、注文グリッドカスタムモジュール拡張
 
 <u>複製する手順</u>:
 
-01. 2.4-develop インスタンスをインストールします。
-02. 新しい注文を作成します。
-03. SQL拡張機能を使用したカスタムモジュールのインストール。
-04. **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**&#x200B;に移動します。
-05. **[!UICONTROL Purchase Date]** フィルターを適用し、結果を待ちます。
-06. **[!UICONTROL Product SKU]** フィルターを適用します。
+&#x200B;01. 2.4-develop インスタンスをインストールします。
+&#x200B;02. 新しい注文を作成します。
+&#x200B;03. SQL拡張機能を使用したカスタムモジュールのインストール。
+&#x200B;04. **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**&#x200B;に移動します。
+&#x200B;05. **[!UICONTROL Purchase Date]** フィルターを適用し、結果を待ちます。
+&#x200B;06. **[!UICONTROL Product SKU]** フィルターを適用します。
 
 <u>期待される結果</u>:
 
@@ -56,10 +56,10 @@ ACSD-58108 パッチでは、注文グリッドカスタムモジュール拡張
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
 [!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

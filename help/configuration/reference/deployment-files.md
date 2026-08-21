@@ -27,7 +27,7 @@ Adobe Commerceには、コンポーネントを簡単にカスタマイズし、
 >
 >[!DNL Commerce 2]のデプロイメント設定は、[!DNL Magento 1.x]の`local.xml`に置き換わります。
 
-他の[ モジュール設定ファイル ](../reference/module-files.md)とは異なり、Commerce デプロイメント設定は、初期化中にメモリに読み込まれ、他のファイルと結合されず、拡張できません。 （`config.php`と`env.php`は互いに結合されます）。
+他の[&#x200B; モジュール設定ファイル &#x200B;](../reference/module-files.md)とは異なり、Commerce デプロイメント設定は、初期化中にメモリに読み込まれ、他のファイルと結合されず、拡張できません。 （`config.php`と`env.php`は互いに結合されます）。
 
 ## デプロイメント設定の詳細
 
