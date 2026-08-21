@@ -1,6 +1,6 @@
 ---
 title: MDVA-41046：割り当てに使用できないカスタムオプションを含むシンプルな製品
-description: MDVA-41046 パッチは、カスタムオプションを持つシンプルな製品が、設定可能な製品やグループ化された製品への割り当てに使用できない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.5がインストールされている場合に利用できます。 パッチ IDはMDVA-41046です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
+description: MDVA-41046 パッチは、カスタムオプションを持つシンプルな製品が、設定可能な製品やグループ化された製品への割り当てに使用できない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.5がインストールされている場合に利用できます。 パッチ IDはMDVA-41046です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 feature: Products
 role: Developer
 exl-id: 7fd7a9db-f834-4aea-a9d7-6e9535c037c8
@@ -58,7 +58,7 @@ MDVA-41046 パッチは、カスタムオプションを持つシンプルな製
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 

@@ -1,6 +1,6 @@
 ---
 title: ACSD-46192：非同期/bulk/V1/configurable-products/bySku/options エンドポイントの問題
-description: ACSD-46192 パッチは、「async/bulk/V1/configurable-products/bySku/options」エンドポイントの問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.19がインストールされている場合に利用できます。 パッチ IDはACSD-46192です。 この問題はAdobe Commerce 2.4.5で修正されています。
+description: ACSD-46192 パッチは、「async/bulk/V1/configurable-products/bySku/options」エンドポイントの問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.19がインストールされている場合に利用できます。 パッチ IDはACSD-46192です。 この問題はAdobe Commerce 2.4.5で修正されています。
 feature: Configuration, Products
 role: Admin
 exl-id: 5a54f4b5-8467-40de-9d8f-ba46880ed5ad
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この問題は必須のセキュリティ パッチ [APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)によって解決されているため、ACSD-46192 パッチは部分的に非推奨です。
+>この問題は必須のセキュリティ パッチ [APSB25-08](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27149)によって解決されているため、ACSD-46192 パッチは部分的に非推奨です。
 
 ACSD-46192 パッチは、`async/bulk/V1/configurable-products/bySku/options` エンドポイントの問題を修正します。 このパッチは、[品質パッチツール（QPT） &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.19がインストールされている場合に使用できます。 パッチ IDはACSD-46192です。 この問題はAdobe Commerce 2.4.5で修正されています。
 
@@ -90,7 +90,7 @@ TypeError: Argument 3 passed to Magento\Framework\Webapi\ServiceInputProcessor::
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
@@ -99,4 +99,4 @@ TypeError: Argument 3 passed to Magento\Framework\Webapi\ServiceInputProcessor::
 * [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
 * [品質パッチツール &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

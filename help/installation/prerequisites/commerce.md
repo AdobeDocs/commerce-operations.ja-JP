@@ -21,7 +21,7 @@ Adobeで作成された拡張機能とAdobe CommerceおよびMagento Open Source
 >
 >Adobe Commerce コードベースは、ポリシーの変更により、Composer経由でのみ配布されるようになりました。 コードベースはダウンロードセクションで使用できなくなったため、Composerを使用して、リストされているAdobe Commerce バージョンのいずれかをダウンロードします。
 >
->詳しくは、[請求明細書にアクセスできず、クラウドインフラストラクチャ上のAdobe Commerceでコードベースをダウンロードできない](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)を参照してください
+>詳しくは、[請求明細書にアクセスできず、クラウドインフラストラクチャ上のAdobe Commerceでコードベースをダウンロードできない](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26611)を参照してください
 
 Adobe Commerceのインストールを開始するには、次の表を参照してください。
 

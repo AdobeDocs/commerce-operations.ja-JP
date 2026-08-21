@@ -1,6 +1,6 @@
 ---
 title: 'MC-42528: categoryListのGraphQL クエリにすべてのカテゴリが表示される'
-description: MC-42528 パッチでは、特定のカテゴリの「参照カテゴリ」が「拒否」に設定されている場合、「categoryList」のGraphQL クエリで割り当てられたカテゴリと割り当てられていないカテゴリの両方が返される問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.4がインストールされている場合に利用できます。 パッチ IDはMC-42528です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
+description: MC-42528 パッチでは、特定のカテゴリの「参照カテゴリ」が「拒否」に設定されている場合、「categoryList」のGraphQL クエリで割り当てられたカテゴリと割り当てられていないカテゴリの両方が返される問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.4がインストールされている場合に利用できます。 パッチ IDはMC-42528です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 feature: Catalog Management, Categories, GraphQL, Customer Service
 role: Admin
 exl-id: 0611a7ff-9d55-4d95-9d4e-9ce1d9096bb6
@@ -56,7 +56,7 @@ MC-42528 パッチは、特定のカテゴリのブラウジングカテゴリ�
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 

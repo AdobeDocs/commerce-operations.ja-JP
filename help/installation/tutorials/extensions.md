@@ -20,7 +20,7 @@ Adobe Commerce ビヘイビアーを拡張またはカスタマイズするコ�
 - テーマ（ストアフロントと管理者のルック&amp;フィールの変更）
 - 言語パッケージ（ストアフロントと管理者のローカライズ）
 
-このトピックでは、コマンドラインインターフェイスを使用して、_オンプレミス_ プロジェクト用にCommerce Marketplaceから購入したサードパーティ製の拡張機能を管理する方法について説明します。 クラウドインフラプロジェクトについては、[拡張機能の管理](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)を参照してください。
+このトピックでは、コマンドラインインターフェイスを使用して、_オンプレミス_ プロジェクト用にCommerce Marketplaceから購入したサードパーティ製の拡張機能を管理する方法について説明します。 クラウドインフラプロジェクトについては、[拡張機能の管理](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/extensions)を参照してください。
 
 同じ手順で&#x200B;_any_&#x200B;拡張機能をインストールできます。必要なのは、拡張機能のコンポーザー名とバージョンだけです。 見つけるには、拡張機能の`composer.json` ファイルを開き、`"name"`と`"version"`の値を書き留めます。
 

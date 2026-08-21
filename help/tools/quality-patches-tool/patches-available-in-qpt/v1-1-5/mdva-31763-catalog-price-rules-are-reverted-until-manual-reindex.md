@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-31763: カタログの価格ルールが手動でインデックスを再作成するまで元に戻される'
-description: MDVA-31763 パッチは、カタログ価格ルールが手動でインデックス再作成されるまで元に戻される問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.5がインストールされている場合に利用できます。 パッチ IDはMDVA-31763です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
+description: MDVA-31763 パッチは、カタログ価格ルールが手動でインデックス再作成されるまで元に戻される問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.5がインストールされている場合に利用できます。 パッチ IDはMDVA-31763です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 feature: Catalog Management, Orders, Price Rules
 role: Admin
 exl-id: 1d144bfc-c26b-43d0-a80c-26a9c2d8ef32
@@ -67,7 +67,7 @@ MDVA-31763 パッチは、カタログ価格ルールが手動でインデック
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
