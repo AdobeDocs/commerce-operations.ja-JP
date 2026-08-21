@@ -2,9 +2,9 @@
 title: 認証キーを取得
 description: repo.magento.comでAdobe Commerce Composer パッケージにアクセスするための資格情報を取得するには、次の手順に従います。
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,10 @@ Adobe Commerce パッケージへのアクセス権限を付与するには、�
 
 >[!TIP]
 >
->[&#x200B; エラー](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=ja)が発生した場合、または「[!UICONTROL Access Keys]」セクションが「Marketplace」タブに表示されない場合、パッケージへのアクセス権限がないか、アカウントの未払いの請求書が原因でアクセス権限が期限切れになっている可能性があります。
+>[&#x200B; エラー](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-25968)が発生した場合、または「[!UICONTROL Access Keys]」セクションが「Marketplace」タブに表示されない場合、パッケージへのアクセス権限がないか、アカウントの未払いの請求書が原因でアクセス権限が期限切れになっている可能性があります。
 >
 >* アカウントのプライマリ連絡担当者である場合は、アカウントに未払いの請求書がリストされていないことを確認してください。
->* プライマリ担当者から提供されたキーが機能せず、アカウントに未払いの請求書がない場合、プライマリ担当者は[Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)に連絡してサポートを受ける必要があります。
+>* プライマリ担当者から提供されたキーが機能せず、アカウントに未払いの請求書がない場合、プライマリ担当者は[Adobe Commerce サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)に連絡してサポートを受ける必要があります。
 
 認証キーを作成するには：
 

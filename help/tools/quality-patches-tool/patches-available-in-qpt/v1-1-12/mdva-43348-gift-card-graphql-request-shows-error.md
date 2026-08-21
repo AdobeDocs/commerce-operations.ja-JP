@@ -1,44 +1,44 @@
 ---
-title: MDVA-43348：ギフトカードのGraphQLリクエストにエラーが表示される
-description: MDVA-43348 パッチは、「gift_card_options」に「uid」が含まれている場合にギフトカードのGraphQL リクエストがエラーを示す問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.12 がインストールされている場合に利用できます。 パッチ ID は MDVA-43348。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+title: MDVA-43348：ギフトカードのGraphQL リクエストでエラーが表示される
+description: MDVA-43348 パッチは、「gift_card_options」に「uid」が含まれている場合にギフトカードGraphQL リクエストでエラーが表示される問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.12がインストールされている場合に利用できます。 パッチ IDはMDVA-43348です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 feature: Gift, GraphQL
 role: Admin
 exl-id: 94cb939a-fad2-4f01-a641-d8d5b656d931
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
 
-# MDVA-43348：ギフトカードのGraphQLリクエストにエラーが表示される
+# MDVA-43348：ギフトカードのGraphQL リクエストでエラーが表示される
 
-MDVA-43348 パッチでは、「uid」が含まれていると Gift Card GraphQL リクエストでエラーが表示され `gift_card_options` 問題が修正されています。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.12 がインストールされている場合に使用できます。 パッチ ID は MDVA-43348。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+MDVA-43348 パッチは、`gift_card_options`に「uid」が含まれている場合にギフトカードGraphQL リクエストでエラーが表示される問題を修正します。 このパッチは、[品質パッチツール（QPT） &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.12がインストールされている場合に使用できます。 パッチ IDはMDVA-43348です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 ～ 2.4.4
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 - 2.4.4
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-gift_card_options に「uid」が含まれている場合、ギフトカードのGraphQL リクエストにエラーが表示されます。
+ギフトカード GraphQL リクエストで、gift_card_optionsに「uid」が含まれている場合、エラーが表示されます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. ギフトカード製品を作成します。
+1. ギフトカード商品を作成する。
 1. 再インデックスを実行します。
-1. URL キーが「gift-card」であるGraphQL呼び出しを行います。
+1. URL キーが「ギフトカード」のGraphQL呼び出しを行います。
 
 <pre>
 <code class="language-graphql">
@@ -68,13 +68,13 @@ query getProductOptionsForProductPage_bypassFastly($urlKey: String!) &lbrace;
 </code>
 </pre>
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-ギフトカードのデータは、リクエストに応じて返されます。
+ギフトカードのデータはリクエストに応じて返されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-ギフト カードのデータを要求すると、次のエラーが発生します。
+ギフトカードのデータのリクエスト時に、次のエラーが発生します。
 
 <pre>
 <code class="language-graphql">
@@ -215,18 +215,18 @@ query getProductOptionsForProductPage_bypassFastly($urlKey: String!) &lbrace;
 </code>
 </pre>
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-品質向上パッチツールの詳細については、次を参照してください。
+品質パッチツールについて詳しくは、以下を参照してください。
 
-* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [品質パッチツール &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

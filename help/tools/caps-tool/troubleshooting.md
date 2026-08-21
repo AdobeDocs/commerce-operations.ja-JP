@@ -2,9 +2,9 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)] トラブルシューティングガイド'
 description: ' [!DNL Cloud Automation Patching Service (CAPS)]の一般的な問題とエラーメッセージのトラブルシューティング'
 hide: true
-source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
@@ -243,8 +243,8 @@ ht-degree: 0%
 
 ### 関連トピック
 
-* [Adobe Commerceのドキュメント](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/overview)
-* [Adobe Commerce インストールガイド](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/overview)
+* [Adobe Commerceのドキュメント](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/overview)
+* [Adobe Commerce インストールガイド](/help/installation/overview.md)
 * [キャップの概要](intro.md)
 * [アクセス方法](access.md)
 * [ワークフローの概要](workflow.md)

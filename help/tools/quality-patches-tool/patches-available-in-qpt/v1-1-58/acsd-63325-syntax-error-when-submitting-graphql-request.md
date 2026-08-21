@@ -5,7 +5,7 @@ feature: GraphQL
 Role: Admin, Developer
 exl-id: a83a8c5f-a43a-4733-a601-7b92656e5325
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -63,7 +63,7 @@ HTTP/1.1 500 Internal Server Error
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* Cloud Infrastructure上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > Commerce Cloud Infrastructure ガイドのパッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)」。
+* Cloud Infrastructure上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > Commerce Cloud Infrastructure ガイドのパッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」。
 
 ## 関連トピックス
 

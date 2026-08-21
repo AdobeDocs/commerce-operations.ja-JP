@@ -2,7 +2,7 @@
 title: Adobe Commerce リリースノート
 description: 特定の Adobe Commerce リリースの情報の入手先について説明します。
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 2%
@@ -40,18 +40,18 @@ ht-degree: 2%
             <li><a href="../lifecycle-policy.md">ソフトウェアライフサイクルポリシー</a></li>
             <li><a href="../version-upgrade-enforcement-policy.md">Cloud バージョンのアップグレードの適用ポリシー</a></li>
             <li><a href="../security-enforcement-policy.md">セキュリティとコンプライアンスに関する通知</a></li>
-            <li><a href="https://helpx.adobe.com/jp/security/products/magento.html">Adobe セキュリティ情報</a></li>
+            <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe セキュリティ情報</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=ja">B2B for Adobe Commerce</a></li>
           </ul>
         </td>
       <td><strong> クラウドインフラストラクチャ上のAdobe Commerce</strong>
         <p>Cloud PlatformでのAdobe Commerceのインストールとアップグレードのデプロイと管理を目的としたCloud Suite for Adobe Commerce パッケージの最新の機能強化について説明します。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/backward-incompatible-changes">後方互換性のない変更</a></li>
-            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches">Commerce用のクラウドパッチ</a></li>
-            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-docker">Cloud Docker for Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/cloud-components">Commerceのクラウドコンポーネント</a></li>
-            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package">ece-tools</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/backward-incompatible-changes">後方互換性のない変更</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Commerce用のクラウドパッチ</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker">Cloud Docker for Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-components">Commerceのクラウドコンポーネント</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package">ece-tools</a></li>
           </ul>
       </td>
     </tr>

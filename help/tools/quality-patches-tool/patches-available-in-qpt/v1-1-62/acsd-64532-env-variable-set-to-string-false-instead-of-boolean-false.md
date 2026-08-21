@@ -1,41 +1,41 @@
 ---
-title: ACSD-64532:*false*に設定された環境変数は、ブール値*FALSE*ではなく、文字列*false*として扱われます
-description: ACSD-64532 パッチを適用すると、「ENV」変数が*false*に設定された場合、「BOOLEAN」*FALSE*ではなく文字列*false*として扱われるAdobe Commerceの問題が修正されます。
+title: 'ACSD-64532: ENV変数を*false*に設定すると、BOOLEAN *FALSE*ではなく、文字列*false*として扱われます'
+description: ACSD-64532 パッチを適用して、「ENV」変数が*false*に設定されているAdobe Commerceの問題を、「BOOLEAN」*FALSE*ではなく文字列*false*として扱う問題を修正します。
 feature: Variables
 role: Admin, Developer
 exl-id: 7940df1f-d527-4b57-bde7-7a0216b12436
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
 
-# ACSD-64532:「false」に設定された環境変数が、ブール値 FALSE ではなく、文字列「false」として扱われる
+# ACSD-64532: ENV変数が「false」に設定されている場合、BOOLEAN FALSEではなく文字列「false」として扱われます
 
-ACSD-64532 パッチでは、`ENV`false *に設定された* 変数が *数* FALSE`BOOLEAN` ではなく文字列 *false* として扱われる問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62 がインストールされている場合に使用できます。 パッチ ID は ACSD-64532 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-64532 パッチでは、`ENV`変数が&#x200B;*false*&#x200B;に設定されていても、`BOOLEAN` *FALSE*&#x200B;ではなく&#x200B;*false*&#x200B;文字列として扱われる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62がインストールされている場合に利用できます。 パッチ IDはACSD-64532です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチは次のAdobe Commerce バージョン用に作成されます。**
 Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p8
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerce版との互換性：**
 Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p2 - 2.4.7-p4
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-`ENV`false *に設定* れた変数は、*数* FALSE`BOOLEAN` ではなく文字列 *false* として扱われます。
+*false*&#x200B;に設定された`ENV`変数は、`BOOLEAN` *FALSE*&#x200B;ではなく、*false*&#x200B;文字列として扱われます。
 
-<u> 再現手順 </u>:
-1. クラウドインフラストラクチャー上のAdobe Commerceの環境変数に、値 `env:MAGENTO_DC_INDEXER__USE_APPLICATION_LOCK`false *の* を追加します。
-1. 再デプロイを待ちます。
-1. スクリプトを実行して、値を確認します。
+<u>複製する手順</u>:
+1. クラウドインフラストラクチャ上のAdobe Commerceの環境変数に、値&#x200B;*false*&#x200B;の`env:MAGENTO_DC_INDEXER__USE_APPLICATION_LOCK`を追加します。
+1. 再展開を待ちます。
+1. 値を確認するスクリプトを実行します。
 
    ```php
    <?php
@@ -52,20 +52,20 @@ Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p2 - 2.4.7-p4
    var_dump($configParsedValue); 
    ```
 
-<u> 期待される結果 </u>:
-メソッド `$configParsedValue` の結果である `isUseApplicationLock()` がメソッド `\Magento\Indexer\Model\Mview\View\State::getStatus()` 内で正しく解釈されるためには、負の値を返す必要があります。
+<u>期待される結果</u>:
+メソッド `isUseApplicationLock()`の結果である`$configParsedValue`は、メソッド `\Magento\Indexer\Model\Mview\View\State::getStatus()`内で正しく解釈するために負の値を返す必要があります。
 
-<u> 実際の結果 </u>:
-`$configParsedValue` の値は *`string(5) false`* です。
+<u>実際の結果</u>:
+`$configParsedValue`の値は&#x200B;*`string(5) false`*&#x200B;です。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

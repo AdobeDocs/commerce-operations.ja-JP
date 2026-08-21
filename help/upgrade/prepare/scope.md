@@ -2,23 +2,23 @@
 title: アップグレード範囲について
 description: Adobe Commerce カスタムモジュールまたはサードパーティの拡張機能に影響を与える可能性のあるリリースの下位互換性のない変更について説明します。
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
 
 # アップグレードの範囲について
 
-[&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview)を確認して、サードパーティおよびカスタムモジュールに影響を与える可能性のある機能強化、バグ修正、既知の問題など、リリースの範囲を理解します。
+[&#x200B; リリースノート &#x200B;](/help/release/release-notes/overview.md)を確認して、サードパーティおよびカスタムモジュールに影響を与える可能性のある機能強化、バグ修正、既知の問題など、リリースの範囲を理解します。
 
 ## 後方互換性のない変更
 
 Adobe Commerce リリースには、下位互換性のない変更が含まれている場合があります。 下位互換性のない変更に関するドキュメントを確認するには、次を参照してください。
 
 - **[重大な変更のハイライト &#x200B;](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)** – 大きな影響を与える変更で、サードパーティモジュールが引き続き機能するようにするために、詳細な説明と特別な指示が必要です。
-- **[軽微な変更の参照](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)** - クラス、API メンバーシップ、データベース、依存関係インジェクション、インターフェイス、レイアウト、システム、およびXSDの軽微な変更について説明する、コードベースから生成された参照ドキュメント。
+- **[軽微な変更の参照](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference)** - クラス、API メンバーシップ、データベース、依存関係インジェクション、インターフェイス、レイアウト、システム、およびXSDの軽微な変更について説明する、コードベースから生成された参照ドキュメント。
 
 ## サードパーティの拡張機能
 
@@ -26,7 +26,7 @@ Adobe Commerce Marketplaceの新しい互換性ポリシーにより、リスト
 
 ## カスタムモジュール
 
-すべてのカスタムモジュールは、アップグレードするターゲットバージョンに対してチェックする必要があります。 これは、アップグレードの中で最も時間とリソースを必要とするプロセスです。 カスタムモジュールを評価するときは、後方互換性のない変更を探し、コントローラの分解などの新しいプラクティスを認識する必要があります。 詳しくは、[&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview)を参照してください。 また、モジュール開発に関する[&#x200B; ベストプラクティス &#x200B;](https://developer.adobe.com/commerce/php/best-practices/extensions/)に従っていることを確認してください。
+すべてのカスタムモジュールは、アップグレードするターゲットバージョンに対してチェックする必要があります。 これは、アップグレードの中で最も時間とリソースを必要とするプロセスです。 カスタムモジュールを評価するときは、後方互換性のない変更を探し、コントローラの分解などの新しいプラクティスを認識する必要があります。 詳しくは、[&#x200B; リリースノート &#x200B;](/help/release/release-notes/overview.md)を参照してください。 また、モジュール開発に関する[&#x200B; ベストプラクティス &#x200B;](https://developer.adobe.com/commerce/php/best-practices/extensions/)に従っていることを確認してください。
 
 ## [!DNL Upgrade Compatibility Tool]
 

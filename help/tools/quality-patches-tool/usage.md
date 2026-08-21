@@ -4,9 +4,9 @@ description: Adobe Commerceのパッチの適用と管理にQuality Patches Tool
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '940'
 ht-degree: 0%
 
 ---
@@ -62,18 +62,18 @@ Adobe Commerce 2.3.5.
 ステータステーブルには次のものが含まれます。
 
 - **種類**:
-   - `Optional` — [!DNL Quality Patches Tool]および[Commerce on Cloud Infrastructure ガイド > パッチの適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja) パッケージのすべてのパッチは、Adobe Commerce インストールではオプションです。
-   - `Deprecated` — Adobeは個別のパッチを非推奨にしました。 パッチを適用した場合は、元に戻すことをお勧めします。 復元操作では、ステータステーブルからもパッチが削除されます。
+  - `Optional` — [!DNL Quality Patches Tool]および[Commerce on Cloud Infrastructure ガイド > パッチの適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) パッケージのすべてのパッチは、Adobe Commerce インストールではオプションです。
+  - `Deprecated` — Adobeは個別のパッチを非推奨にしました。 パッチを適用した場合は、元に戻すことをお勧めします。 復元操作では、ステータステーブルからもパッチが削除されます。
 
 - **ステータス**:
-   - `Applied` — パッチが適用されました。
-   - `Not applied` — パッチが適用されていません。
-   - `N/A` – 競合のため、パッチのステータスを定義できません。
+  - `Applied` — パッチが適用されました。
+  - `Not applied` — パッチが適用されていません。
+  - `N/A` – 競合のため、パッチのステータスを定義できません。
 
 - **詳細**:
-   - `Affected components` – 影響を受けるモジュールのリスト。
-   - `Required patches` – 指定されたパッチが正しく動作するために適用する必要があるパッチのリスト（依存関係）。
-   - `Recommended replacement` – 非推奨パッチの推奨される代替パッチです。
+  - `Affected components` – 影響を受けるモジュールのリスト。
+  - `Required patches` – 指定されたパッチが正しく動作するために適用する必要があるパッチのリスト（依存関係）。
+  - `Recommended replacement` – 非推奨パッチの推奨される代替パッチです。
 
 >[!INFO]
 >

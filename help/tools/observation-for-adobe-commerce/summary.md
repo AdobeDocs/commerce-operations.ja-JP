@@ -3,9 +3,9 @@ title: 「[!UICONTROL Summary]」タブ
 description: ' [!DNL Observation for Adobe Commerce]の[!UICONTROL Summary] タブについて説明します。'
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 818c25db0442f5288191ee414b7e2ab07c4cbedf
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '2636'
+source-wordcount: '2640'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 ![CPUの使用状況](../../assets/tools/cpu-usage.jpg)
 
-**[!UICONTROL CPU Usage]** フレームが空白の場合は、[!DNL New Relic]のインフラストラクチャ アプリケーションが有効になっていないことを示します。 サイトがスターターにある場合、この情報は表示されません。 サイトがProを利用している場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja)を開いて、サイトで[!DNL New Relic Infrastructure]を有効にします。
+**[!UICONTROL CPU Usage]** フレームが空白の場合は、[!DNL New Relic]のインフラストラクチャ アプリケーションが有効になっていないことを示します。 サイトがスターターにある場合、この情報は表示されません。 サイトがProを利用している場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)を開いて、サイトで[!DNL New Relic Infrastructure]を有効にします。
 
 ## [!UICONTROL Average Response Time]
 

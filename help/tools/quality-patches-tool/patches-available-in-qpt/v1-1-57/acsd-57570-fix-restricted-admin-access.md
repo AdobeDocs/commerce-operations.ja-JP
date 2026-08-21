@@ -1,78 +1,78 @@
 ---
-title: ACSD-57570：共有カタログへの管理者ユーザーアクセスが制限される問題を修正
-description: ACSD-57570 パッチを適用すると、特定のストアへのアクセス権を持つ制限付き管理者ユーザーが、製品に割り当てられたすべての共有カタログを一貫して表示したり、顧客情報を保存したりできず、システムの不整合が発生するAdobe Commerceの問題を修正できます。
+title: ACSD-57570：管理者ユーザーによる共有カタログへのアクセス制限を修正
+description: 特定のストアへのアクセス権を持つ制限付き管理者ユーザーが、製品に割り当てられたすべての共有カタログを一貫して表示したり、お客様の情報を保存したりできないAdobe Commerceの問題を修正するには、ACSD-57570 パッチを適用します。これにより、システムの不整合が発生します。
 feature: B2B, Companies, Roles/Permissions
 role: Admin, Developer
 exl-id: 3eeaf1f1-0338-459f-99ec-53764f3f12db
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
-# ACSD-57570：共有カタログへの管理者ユーザーアクセスが制限される問題を修正
+# ACSD-57570：管理者ユーザーによる共有カタログへのアクセス制限を修正
 
-ACSD-57570 パッチは、特定のストアへのアクセスを持つ制限付き管理者ユーザーが、製品に割り当てられたすべての共有カタログを一貫して表示したり、顧客情報を保存したりできず、システムの不整合が発生する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 がインストールされている場合に使用できます。 パッチ ID は ACSD-57570 です。 この問題はAdobe Commerce 2.5.0 で修正される予定であることに注意してください。
+ACSD-57570 パッチでは、特定のストアへのアクセス権を持つ制限付き管理者ユーザーが、製品に割り当てられたすべての共有カタログを一貫して表示したり、顧客情報を保存したりできず、システムの不整合が生じる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57がインストールされている場合に利用できます。 パッチ IDはACSD-57570です。 この問題は、Adobe Commerce 2.5.0で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4-p3
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 ～ 2.4.4-p9
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 - 2.4.4-p9
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-特定のストアへのアクセス権を持つ制限付き管理者ユーザーは、すべての共有カタログを表示したり、顧客を保存したりできないので、不整合が発生します。 複数のストアがある場合、制限付き管理者は、新しい会社またはカスタム共有カタログを表示できません。
+特定のストアへのアクセスが制限されている管理者ユーザーが、すべての共有カタログを常に表示したり、顧客を保存したりすることはできず、不整合が生じます。 複数のストアがある場合、制限付き管理者は新しい会社やカスタム共有カタログを表示できません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
 1. 次の順序でストアを設定します。
-   * W2 という名前の新しい web サイトを作成します。
-   * デフォルトの web サイトの新しいストア表示を作成します。
-   * Web サイト W2 に W2S2 という名前の新しいストアを作成します。
-   * ストア W2S2 に W2S2SV1 という名前の新しいストアビューを作成します。
-   * ストア W2S2 に対して、W2S2SV2 という名前の別の新しいストアビューを作成します。
-   * W2 の会社を作成します。
+   * W2という名前の新しいweb サイトを作成します。
+   * デフォルトのweb サイトの新しいストアビューを作成します。
+   * Web サイト W2用にW2S2という名前の新しいストアを作成します。
+   * ストア W2S2のW2S2SV1という名前の新しいストアビューを作成します。
+   * W2S2S2という名前の別の新しいストアビューをストア W2S2用に作成します。
+   * W2の会社を作成します。
 1. 製品の割り当て：
-   * 一部の製品を W1 のみに割り当てます。
-   * 一部の製品を W2 のみに割り当てます。
-   * 一部の製品を W1 と W2 の両方に割り当てます。
-1. カスタムの共有カタログを作成し、すべての製品を割り当てます。
-1. **W2** ではなく、**W2S2** のみにアクセスできるカスタムの管理者の役割を作成します。
-1. 制限付き管理者ユーザーを新しいカスタム管理者の役割に割り当てます。
-1. 制限付きの管理者ユーザーとしてログインします。
-1. アクセスの確認：
-   * 表示できる会社を確認します。
-   * 表示できる共有カタログを確認します。
+   * 一部の製品はW1にのみ割り当てます。
+   * 一部の製品をW2にのみ割り当てます。
+   * W1とW2の両方に製品を割り当てます。
+1. カスタム共有カタログを作成し、それにすべての製品を割り当てます。
+1. **W2**&#x200B;ではなく&#x200B;**W2S2**&#x200B;のみにアクセスできるカスタム管理者ロールを作成します。
+1. 制限付き管理者ユーザーを新しいカスタム管理者ロールに割り当てます。
+1. 制限付き管理者ユーザーとしてログインします。
+1. アクセスを確認：
+   * どの企業を見ているか調べてみましょう。
+   * 表示されている共有カタログを確認します。
    * 製品リストを開き、製品が割り当てられているすべての共有カタログを表示できるかどうかを確認します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-この動作は一貫している必要があります。
+動作は一貫している必要があります。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-追加の web サイト、ストア、ストア表示を 1 つだけ作成した場合、制限された管理者ユーザーは、会社、共有カタログおよび両方の共有カタログを製品リストに表示できます。 上記の設定では、制限付き管理者は新しい会社やカスタムの共有カタログを表示できず、製品リストにはデフォルトの共有カタログのみが表示されます。
+追加のweb サイト、ストア、ストアビューを1つだけ作成した場合、制限付き管理者ユーザーは、製品リストに会社、共有カタログ、および両方の共有カタログを表示できます。 上記の設定では、制限付き管理者は新しい会社またはカスタム共有カタログを表示できず、デフォルトの共有カタログのみが製品リストに表示されます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

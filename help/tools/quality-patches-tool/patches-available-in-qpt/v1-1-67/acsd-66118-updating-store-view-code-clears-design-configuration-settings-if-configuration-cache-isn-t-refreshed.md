@@ -1,65 +1,65 @@
 ---
-title: ACSD-66118:[!UICONTROL Store View Code] を更新すると、[!UICONTROL Design Configuration] が更新されない場合 [!UICONTROL Configuration Cache] 設定がクリアされる
-description: ACSD-66118 パッチを適用して、Adobe Commerceの問題を修正してください。[!UICONTROL Store View Code] を更新すると、テー [!UICONTROL Design Configuration] が正しく更新されない場合に [!UICONTROL Configuration Cache] （テーマとカスタム設定）がクリアされます。
+title: 'ACSD-66118: [!UICONTROL Configuration Cache]が更新されない場合、[!UICONTROL Store View Code]を更新すると[!UICONTROL Design Configuration]設定がクリアされる'
+description: '[!UICONTROL Configuration Cache]が正しく更新されない場合、[!UICONTROL Store View Code]を更新すると[!UICONTROL Design Configuration] （テーマとカスタム設定）がクリアされるAdobe Commerceの問題を修正するには、ACSD-66118 パッチを適用します。'
 feature: Cache, Configuration, Themes
 role: Admin, Developer
 type: Troubleshooting
 exl-id: ecfdff54-99e0-4dbe-a0bb-80f60aafc7b6
-source-git-commit: 468c780f355c99cf06d557e530e81c414a01961e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
-# ACSD-66118:**[!UICONTROL Store View Code]** を更新すると、**[!UICONTROL Design Configuration]** が更新されない場合 **[!UICONTROL Configuration Cache]** 設定がクリアされる
+# ACSD-66118: **[!UICONTROL Configuration Cache]**&#x200B;が更新されない場合、**[!UICONTROL Store View Code]**&#x200B;を更新すると&#x200B;**[!UICONTROL Design Configuration]**&#x200B;設定がクリアされる
 
-ACSD-66118 パッチは、**[!UICONTROL Store View Code]** が更新されない場合に **[!UICONTROL Design Configuration]** を更新すると **[!UICONTROL Configuration Cache]** 設定がクリアされる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 がインストールされている場合に使用できます。 パッチ ID は ACSD-66118 です。 この問題はAdobe Commerce 2.4.9 で修正される予定であることに注意してください。
+ACSD-66118 パッチは、**[!UICONTROL Configuration Cache]**&#x200B;が更新されない場合、**[!UICONTROL Store View Code]**&#x200B;を更新すると&#x200B;**[!UICONTROL Design Configuration]**&#x200B;設定がクリアされる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67がインストールされている場合に利用できます。 パッチ IDはACSD-66118です。 この問題は、Adobe Commerce 2.4.9で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7-p4
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.8-p1
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-テー **[!UICONTROL Design Configuration]** ルが更新されない場合、**[!UICONTROL Store View Code]** フィールドを更新すると、**[!UICONTROL Configuration Cache]** の設定（テーマやカスタム設定など）がクリアされます。
+**[!UICONTROL Configuration Cache]**&#x200B;が更新されない場合、**[!UICONTROL Store View Code]** フィールドの更新時に&#x200B;**[!UICONTROL Design Configuration]**&#x200B;設定（テーマ設定やカスタム設定など）がクリアされます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. パネルにログイ **[!UICONTROL Admin]** します。
-2. **[!UICONTROL Stores]**/*[!UICONTROL Settings]*/**[!UICONTROL All Stores]** に移動します。
-3. **[!UICONTROL Content]**/*[!UICONTROL Design]*/**[!UICONTROL Configuration]** でカスタムテーマが設定されているストア表示を編集します。
-4. **[!UICONTROL Code]** フィールドを変更します（例：`storeview_1` から `storeview_main`）。
-5. 「**[!UICONTROL Save Store View]**」をクリックして、変更を保存します。
-6. 更新された **[!UICONTROL Content]** の *[!UICONTROL Design]* / **[!UICONTROL Configuration]** / **[!UICONTROL Store View]** ページを更新するか再度開きます。テーマは選択されません。
+1. **[!UICONTROL Admin]** パネルにログインします。
+2. **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL All Stores]**&#x200B;に移動します。
+3. カスタムテーマが&#x200B;**[!UICONTROL Content]** > *[!UICONTROL Design]* > **[!UICONTROL Configuration]**&#x200B;に設定されているストアビューを編集します。
+4. **[!UICONTROL Code]** フィールドを変更します（例：`storeview_1`から`storeview_main`）。
+5. **[!UICONTROL Save Store View]**&#x200B;をクリックして変更を保存します。
+6. 更新された&#x200B;**[!UICONTROL Store View]**&#x200B;の&#x200B;**[!UICONTROL Content]** > *[!UICONTROL Design]* > **[!UICONTROL Configuration]** ページを更新または再度開くと、テーマは選択されません。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-**[!UICONTROL Store View Code]** を更新した後も、**[!UICONTROL Design Configuration]** （テーマやカスタム設定を含む）は変更されません。
+**[!UICONTROL Store View Code]**&#x200B;を更新した後も、**[!UICONTROL Design Configuration]** （テーマとカスタム設定を含む）は変更されません。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-**[!UICONTROL Design Configuration]** がクリアされます。 テーマがデフォルトに戻り、カスタム設定は失われます。
+**[!UICONTROL Design Configuration]**&#x200B;がクリアされます。 テーマはデフォルトに戻り、カスタム設定は失われます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

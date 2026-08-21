@@ -4,7 +4,7 @@ description: Adobe Commerce プロジェクトの開発段階におけるコー�
 feature: Best Practices
 role: Developer
 exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1180'
 ht-degree: 0%
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 スタイルは、PhpStorm検査を実行することで自動的にテストできます（以下を参照）。
 
-[PHPMDおよびPHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/)を設定し、CLIから[&#x200B; コーディング標準](https://github.com/magento/magento-coding-standard) ツールを実行してください（以下も参照）。 重複もありますが、それぞれ固有のテストもあります。
+[PHPMDおよびPHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection)を設定し、CLIから[&#x200B; コーディング標準](https://github.com/magento/magento-coding-standard) ツールを実行してください（以下も参照）。 重複もありますが、それぞれ固有のテストもあります。
 
 ### 条約と構造
 

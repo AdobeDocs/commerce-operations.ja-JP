@@ -1,49 +1,49 @@
 ---
-title: MDVA-43102：販売可能数量が正しく更新されていません
-description: MDVA-43102 パッチは、REST API を介して払い戻しが行われた際に、販売可能数量が正しく更新されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.14 がインストールされている場合に利用できます。 パッチ ID は MDVA-43102。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+title: MDVA-43102：販売可能数量が正しく更新されない
+description: MDVA-43102 パッチは、REST APIを介して払い戻しが行われたときに販売可能な数量が正しく更新されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.14がインストールされている場合に利用できます。 パッチ IDはMDVA-43102です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 feature: Variables
 role: Admin
 exl-id: 6a10f586-bbde-4252-9b8e-9b2b712f0fb3
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
 
-# MDVA-43102：販売可能数量が正しく更新されていません
+# MDVA-43102：販売可能数量が正しく更新されない
 
-MDVA-43102 パッチは、REST API を介して払い戻しが行われた際に、販売可能数量が正しく更新されない問題を修正します。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.14 がインストールされている場合に使用できます。 パッチ ID は MDVA-43102。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+MDVA-43102 パッチは、REST APIを介して払い戻しが行われたときに販売可能な数量が正しく更新されない問題を修正します。 このパッチは、[品質パッチツール（QPT） &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.14がインストールされている場合に使用できます。 パッチ IDはMDVA-43102です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.3
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.3.1 ～ 2.4.4
+* Adobe Commerce（すべてのデプロイメント方法） 2.3.1 - 2.4.4
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-REST API を使用して返金を行った場合、販売可能数量が正しく更新されない。
+REST APIを使用して払い戻しが行われた場合、販売可能な数量が正しく更新されない。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 買い物かごに商品を追加します。
-1. 「在庫数量」と「販売可能数量」をチェックします。
-1. オーダーを作成します。
+1. カートに商品を追加します。
+1. 在庫数量と販売可能数量を確認します。
+1. 注文の作成。
 1. 必要に応じて請求書を作成します。
-1. 次のペイロードを使用して、請求書の払い戻しに REST リクエストを送信します。
+1. 次のペイロードを使用して請求書を返金するには、REST リクエストを送信します。
 
-   * オフライン方法/注文/`<order_id>` 注/返金
-   * オンライン方法/請求書/`<invoice_id>` 金/払戻
+   * offline method/order/`<order_id>`/refund
+   * オンライン メソッド/請求書/`<invoice_id>`/返金
 
    ```rest
    {
@@ -65,29 +65,29 @@ REST API を使用して返金を行った場合、販売可能数量が正し�
    }
    ```
 
-1. アイテムを出荷しないでください。
-1. 以前の在庫数量と販売可能数量を比較します。 両方とも同じ量で更新する必要があります。
+1. 商品を出荷しないでください。
+1. 以前の在庫数量と販売可能数量を比較します。 両方とも同じ金額で更新されます。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-注文を出荷する前に払い戻しが発行され、製品が在庫に戻されると、販売可能な数量が正しく更新されます。
+注文発送前に払い戻しが行われ、商品が在庫に戻ったときに、販売可能な数量が正しく更新されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-注文を発送する前に払い戻しが発行され、商品が在庫に戻された場合、販売可能数量は更新されません。
+注文発送前に返金が行われ、商品が在庫に返品された場合、販売可能な数量は更新されません。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-品質向上パッチツールの詳細については、次を参照してください。
+品質パッチツールについて詳しくは、以下を参照してください。
 
-* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [品質パッチツール &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

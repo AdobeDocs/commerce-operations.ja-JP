@@ -1,75 +1,75 @@
 ---
-title: ACSD-62689：深さ 4 の後で、[!UICONTROL Related Product Rules] およびウィジェットにカテゴリを追加できない
-description: ACSD-62689 パッチを適用すると、ユーザーが深さ 4 のネストの後に [!UICONTROL Related Product Rules] および widgets にカテゴリを追加できないというAdobe Commerceの問題を修正できます。
+title: 'ACSD-62689: [!UICONTROL Related Product Rules]のカテゴリと深度4の後のウィジェットを追加できない'
+description: ACSD-62689 パッチを適用して、お客様が[!UICONTROL Related Product Rules]にカテゴリを追加できず、深度4のネストの後にウィジェットを追加できないAdobe Commerceの問題を修正します。
 feature: Categories
 role: Admin, Developer
 exl-id: 2506744a-01c8-462b-9a27-cd0bdb5664f9
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
-# ACSD-62689：深さ 4 の後で、*[!UICONTROL Related Product Rules]* およびウィジェットにカテゴリを追加できない
+# ACSD-62689: *[!UICONTROL Related Product Rules]*&#x200B;のカテゴリと深度4の後のウィジェットを追加できない
 
 >[!NOTE]
 >
->このパッチは [ACP2E-3689](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md) に置き換えられています。
+>このパッチは[ACP2E-3689](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)に置き換えられます。
 
-ACSD-62689 パッチでは、ユーザーが深さ 4 のネストの後に *[!UICONTROL Related Product Rules]* およびウィジェットにカテゴリを追加できない問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 がインストールされている場合に使用できます。 パッチ ID は ACSD-62689 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-62689 パッチは、顧客が&#x200B;*[!UICONTROL Related Product Rules]*&#x200B;にカテゴリを追加できず、深度4のネスト後にウィジェットを追加できない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57がインストールされている場合に利用できます。 パッチ IDはACSD-62689です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7-p3
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-ユーザーが、深さ 4 のネストの後に、*[!UICONTROL Related Product Rules]* およびウィジェットでカテゴリを追加できません。
+顧客は&#x200B;*[!UICONTROL Related Product Rules]*&#x200B;にカテゴリを追加できず、深度4のネストの後にウィジェットを追加できません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. デフォルトのルートカテゴリの下に、*[!UICONTROL Anchor]* と *[!UICONTROL Non-Anchor]* という名前の 2 つのカテゴリを作成します。
-   * *[!UICONTROL Is Anchor]* カテゴリに対して *[!UICONTROL Non-Anchor]* フラグが無効になっていることを確認します。
-1. **[!UICONTROL Content]**/**[!UICONTROL Widgets]** に移動し、ウィジェットを作成します。
-1. 「*[!UICONTROL Layout Updates]*」の下の「**[!UICONTROL Non-Anchor Categories]**」フィールドで「*[!UICONTROL Display on]*」を選択します。
-1. 「**[!UICONTROL Specific Categories]**」をクリックします。
+1. 既定のルート カテゴリの下に&#x200B;*[!UICONTROL Anchor]*&#x200B;と&#x200B;*[!UICONTROL Non-Anchor]*&#x200B;という名前の2つのカテゴリを作成します。
+   * *[!UICONTROL Non-Anchor]* カテゴリの&#x200B;*[!UICONTROL Is Anchor]* フラグが無効になっていることを確認します。
+1. **[!UICONTROL Content]** > **[!UICONTROL Widgets]**&#x200B;に移動し、ウィジェットを作成します。
+1. *[!UICONTROL Layout Updates]*&#x200B;で、*[!UICONTROL Display on]* フィールドの&#x200B;**[!UICONTROL Non-Anchor Categories]**&#x200B;を選択します。
+1. **[!UICONTROL Specific Categories]**&#x200B;をクリックします。
 1. カテゴリ選択アイコンをクリックします。
 1. ルートカテゴリを展開します。
-1. カテゴリを確認します。 両方とも無効にし、選択できないようにする必要があります。
-1. 「*[!UICONTROL Layout Updates]*」の下の「**[!UICONTROL Anchor Categories]**」フィールドで「*[!UICONTROL Display on]*」を選択します。 次に、手順 5 と 6 に従います。
-1. カテゴリを確認します。 両方とも有効かつ選択可能である必要があります。
+1. カテゴリを確認します。 両方を無効にし、選択できません。
+1. *[!UICONTROL Layout Updates]*&#x200B;で、*[!UICONTROL Display on]* フィールドの&#x200B;**[!UICONTROL Anchor Categories]**&#x200B;を選択します。 次に、手順5と6に従います。
+1. カテゴリを確認します。 両方を有効にして選択可能にする必要があります。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-手順 7 では、*[!UICONTROL Non-Anchor]* カテゴリのみを選択可能にする必要があります。 手順 9 では、*[!UICONTROL Anchor]* カテゴリを選択可能にする必要があります。
+手順7では、*[!UICONTROL Non-Anchor]* カテゴリのみを選択可能にする必要があります。 手順9では、*[!UICONTROL Anchor]* カテゴリを選択可能にする必要があります。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-手順 7 では、両方のカテゴリを選択できません。 ステップ 9 では、両方のカテゴリを選択可能にする。
+手順7では、両方のカテゴリは選択できません。 手順9では、両方のカテゴリを選択できます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。
 
