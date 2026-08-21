@@ -2,7 +2,7 @@
 title: 参照アーキテクチャ
 description: Adobe Commerceのリファレンスアーキテクチャについて詳しく見る。 導入に関するガイダンスと最適化戦略。
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 このトピックでは、リソースが他のユーザーと共有されない、データセンター（仮想化されていない）で物理的にホストされるプレーンサーバーを使用するAdobe Commerce インスタンスの一般的な推奨設定について説明します。 ホスティングプロバイダーは、特にCommerceの高性能ホスティングに特化している場合、要件に等しくまたはより効果的な別の設定を推奨する可能性があります。
 
-クラウドインフラストラクチャ環境上のAdobe Commerceについては、[&#x200B; スターターアーキテクチャ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/starter-architecture)を参照してください。
+クラウドインフラストラクチャ環境上のAdobe Commerceについては、[ スターターアーキテクチャ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-architecture)を参照してください。
 
 ## [!DNL Commerce]参照アーキテクチャ ダイアグラム
 

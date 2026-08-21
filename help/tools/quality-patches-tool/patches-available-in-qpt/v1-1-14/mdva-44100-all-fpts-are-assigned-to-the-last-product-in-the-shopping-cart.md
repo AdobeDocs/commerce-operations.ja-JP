@@ -1,73 +1,73 @@
 ---
-title: MDVA-44100：すべての FPT が買い物かごの最後の製品に割り当てられる
-description: MDVA-44100 パッチを適用すると、買い物かごの最後の製品にすべての FPT が割り当てられる問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.14 がインストールされている場合に利用できます。 パッチ ID は MDVA-44100。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+title: MDVA-44100：すべてのFPTがショッピングカート内の最後の製品に割り当てられます
+description: MDVA-44100 パッチは、すべてのFPTがショッピングカート内の最後の製品に割り当てられる問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.14がインストールされている場合に利用できます。 パッチ IDはMDVA-44100です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 feature: Orders, Products, Shopping Cart
 role: Admin
 exl-id: b370dcbb-cbe9-4f5d-9b8f-1722ab521fcb
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
 
-# MDVA-44100：すべての FPT が買い物かごの最後の製品に割り当てられる
+# MDVA-44100：すべてのFPTがショッピングカート内の最後の製品に割り当てられます
 
-MDVA-44100 パッチを適用すると、買い物かごの最後の製品にすべての FPT が割り当てられる問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.14 がインストールされている場合に使用できます。 パッチ ID は MDVA-44100。 この問題はAdobe Commerce 2.4.5 で修正される予定であることに注意してください。
+MDVA-44100 パッチは、すべてのFPTがショッピングカート内の最後の製品に割り当てられる問題を解決します。 このパッチは、[品質パッチツール（QPT） ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.14がインストールされている場合に使用できます。 パッチ IDはMDVA-44100です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.3-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 ～ 2.4.4
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 - 2.4.4
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-すべての FPT が買い物かごの最後の製品に割り当てられ、残りの製品の FPT 値はリセットされます。
+すべてのFPTはショッピングカート内の最後の製品に割り当てられ、残りの製品のFPT値はリセットされます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. **Stores**/**Configuration**/**Sales**/**Tax** に移動し、次のように設定します。
-   * FPT を有効にする= Yes
-   * FPT への税金の適用= Yes
-   * 小計に FPT を含める=はい
-1. **ストア**/**属性**/**製品** に移動し、type = Fixed Product Tax という新しい属性を作成します。
-1. 属性セットに属性を追加します。
-1. 属性セットから 2 つの製品を作成し、国と州の FPT 属性を設定します。
-1. 両方の品目を受注に追加します。
-1. FPT の支払いが必要な住所を入力します。
-1. 注文します。
-1. 注文の品目リストを確認します。
+1. **Stores** > **Configuration** > **Sales** > **Tax**&#x200B;に移動して、次の項目を設定します。
+   * FPTを有効にする=はい
+   * FPTに税金を適用=はい
+   * 小計にFPTを含める= Yes
+1. **ストア** > **属性** > **製品**&#x200B;に移動し、タイプ =固定製品税を持つ新しい属性を作成します。
+1. 属性を属性セットに追加します。
+1. 属性セットから2つの製品を作成し、国と州のFPT属性を設定します。
+1. 両方の項目を注文に追加します。
+1. FPTの支払いが必要なアドレスを入力してください。
+1. 注文する。
+1. 注文のアイテムリストを確認してください。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-FPT は各製品の下に表示されます。
+FPTは各製品の下に表示されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-両方の項目の FPT 値が 2 番目の項目の下に表示されます。
+両方の項目のFPT値は、2番目の項目の下に表示されます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-品質向上パッチツールの詳細については、次を参照してください。
+品質パッチツールについて詳しくは、以下を参照してください。
 
-* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [品質パッチツール ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

@@ -2,9 +2,9 @@
 title: アップグレードの実行
 description: Adobe Commerceのオンプレミス導入をアップグレードするには、次の手順に従います。
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->- クラウドインフラストラクチャプロジェクト上のAdobe Commerceについては、「クラウドガイド」の「[Commerce バージョンのアップグレード ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=ja)」を参照してください。
+>- クラウドインフラストラクチャプロジェクト上のAdobe Commerceについては、「クラウドガイド」の「[Commerce バージョンのアップグレード ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version)」を参照してください。
 >- GitHub リポジトリをクローンした場合は、この方法を使用してアップグレードしないでください。 [Git ベースのインストールのアップグレード ](../developer/git-installs.md)を参照してください。
 
 次の手順では、Composer パッケージマネージャーを使用してアップグレードする方法を示します。 Adobe Commerce 2.4.2では、Composer 2のサポートが導入されました。 &lt;2.4.1からアップグレードする場合は、まずComposer 1 _before_ アップグレードを使用してComposer 2と互換性のあるバージョン（2.4.2など）にアップグレードし、2.4.2を超えるアップグレードを実行する必要があります。 さらに、PHPの[ サポートされているバージョン ](../../installation/system-requirements.md)を実行している必要があります。
@@ -35,7 +35,8 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >Adobe Commerce バージョン 2.4.6-p13には、`magento/inventory-composer-installer` パッケージが含まれていません。これは、下位互換性のない変更を含む古いマイナーバージョンからスムーズにアップグレードするために必要です。<br>
->2.3から2.4.6-p13にアップグレードする場合は、アップグレードする前に次のコマンドを実行して`magento/inventory-composer-installer` パッケージをインストールします。>`composer require magento/inventory-composer-installer`
+>2.3から2.4.6-p13にアップグレードする場合は、アップグレードする前に次のコマンドを実行して`magento/inventory-composer-installer` パッケージをインストールします。
+>`composer require magento/inventory-composer-installer`
 
 ## パッケージの管理
 

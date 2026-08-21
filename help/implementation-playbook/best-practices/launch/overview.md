@@ -3,9 +3,9 @@ title: 導入フェーズ
 description: Adobe Commerce プロジェクトのローンチ段階での実装のベストプラクティスについて説明します。
 exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
 feature: Best Practices
-source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '181'
 ht-degree: 1%
 
 ---
@@ -26,11 +26,11 @@ ht-degree: 1%
 
 | ベストプラクティス | 説明 |
 |------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Adobe セキュリティ通知サービス &#x200B;](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Adobeのセキュリティ通知を購読します。 |
+| [Adobe セキュリティ通知サービス ](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Adobeのセキュリティ通知を購読します。 |
 | [Commerce サイトとインフラストラクチャの保護](security-best-practices.md) | Commerceを導入する際のセキュリティ体制を強化し、Commerceストアフロント、管理者、インフラストラクチャ、データを不正アクセスやサイバー攻撃から保護します。 |
-| [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=ja) | 登録ユーザーが開始した管理者アクセスと様々なストアフロントアクション用にGoogle reCAPTCHAを設定します。 |
+| [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) | 登録ユーザーが開始した管理者アクセスと様々なストアフロントアクション用にGoogle reCAPTCHAを設定します。 |
 | [Web web クローラーの設定](robots-txt.md) | Adobe Commerce サイトに関する手順をweb web クローラーに渡します。 |
-| [&#x200B; セキュリティ設定の確認](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=ja) | Adobe Commerce on cloud infrastructure サイトを立ち上げる前に、チェックリスト項目を確認します。 |
+| [ セキュリティ設定の確認](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist) | Adobe Commerce on cloud infrastructure サイトを立ち上げる前に、チェックリスト項目を確認します。 |
 
 ## パフォーマンス監視
 

@@ -2,8 +2,8 @@
 title: Adobe Commerce 2.4.8 セキュリティパッチリリースノート
 description: Adobe Commerce バージョン 2.4.8のセキュリティパッチリリースに含まれているセキュリティバグの修正、セキュリティの強化、およびその他のセキュリティ関連アップデートについて説明します。
 exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
-last-update: 2026-05-13T00:00:00Z
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
@@ -132,7 +132,7 @@ Adobe Commerce 2.4.8-p1 セキュリティリリースには、以前のリリ�
 
 >[!BEGINSHADEBOX]
 
-CVE-2025-47110およびVULN-31547の修正プログラムは、独立したパッチとしても利用できます。 詳しくは、[&#x200B; ナレッジベース記事](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27181)を参照してください。
+CVE-2025-47110およびVULN-31547の修正プログラムは、独立したパッチとしても利用できます。 詳しくは、[ ナレッジベース記事](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27181)を参照してください。
 
 >[!ENDSHADEBOX]
 

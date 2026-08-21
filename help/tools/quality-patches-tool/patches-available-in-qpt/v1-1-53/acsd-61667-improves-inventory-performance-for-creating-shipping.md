@@ -1,69 +1,69 @@
 ---
-title: ACSD-61667：配送作成のための在庫パフォーマンスを向上
-description: ACSD-60584 パッチを適用して、店舗内ピックアップを伴う多くのソースの場合に出荷を作成するための在庫パフォーマンスを向上させます。
+title: ACSD-61667：配送を作成するための在庫パフォーマンスを向上させる
+description: ACSD-60584 パッチを適用して、実店舗での受け取りに関する多くのソースの場合に出荷を作成するための在庫パフォーマンスを向上させます。
 feature: Customers, Shipping/Delivery
 role: Admin, Developer
 exl-id: 47682daf-9117-45f1-ab09-a66c13132ff3
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
-# ACSD-61667：配送作成のための在庫パフォーマンスを向上
+# ACSD-61667：配送を作成するための在庫パフォーマンスを向上させる
 
-ACSD-61667 パッチは、[[!DNL Inventory Management for Commerce]](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/introduction) （旧称 MSI）ピックアップストアが複数のソースで有効になっている場合に、マーチャントが注文を発送できない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.53 がインストールされている場合に使用できます。 パッチ ID は ACSD-61667 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-61667 パッチは、複数のソースで[[!DNL Inventory Management for Commerce]](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) （旧MSI）受け取りストアが有効になっている場合に、加盟店が注文を配送できない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.53がインストールされている場合に利用できます。 パッチ IDはACSD-61667です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p5
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-複数のソースで MSI ピックアップ ストアが有効になっている場合、注文を出荷できません。 このパッチにより、在庫パフォーマンスが向上し、店舗での受け取りで多くのソースが発生した場合の出荷が可能になります。
+複数のソースを含むMSI ピックアップストアが有効になっている場合、注文を配送できません。 このパッチは、実店舗での受け取りに多くのソースが該当する場合に出荷を作成するために、在庫のパフォーマンスを向上させます。
 
-<u> 前提条件：</u>:
+<u>前提条件：</u>:
 
-Adobe Commerce インベントリモジュールがインストールされ、有効になっています。
+Adobe Commerce Inventory モジュールがインストールされ、有効になります。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. *10* を超えるソースを作成し、ピックアップ場所を有効にします。
-1. ピックアップ ストアは、**[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]** で有効になっています。
-1. 大量の集荷注文を作成します。
-1. **[!UICONTROL Admin login]** に移動し、**[!UICONTROL Sales]**/**[!UICONTROL Orders]**/**[!UICONTROL View]** を選択します。
+1. *10*&#x200B;以上のソースを作成し、それらの受け取り場所を有効にします。
+1. ピックアップストアは、**[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]**&#x200B;の下で有効になっています。
+1. 大量の受け取り注文の作成。
+1. **[!UICONTROL Admin login]**&#x200B;に移動し、**[!UICONTROL Sales]** > **[!UICONTROL Orders]** > **[!UICONTROL View]**&#x200B;を選択します。
 1. 保留中の注文をフィルタリングして確認します。
-1. 「**[!UICONTROL Ship]**」をクリックします。
+1. **[!UICONTROL Ship]**&#x200B;をクリックします。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-出荷ページが期待どおりに読み込まれます。
+発送ページが期待どおりに読み込まれます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-*503 最大実行タイムアウト* エラーが発生します。
+「*503 Maximum execution time out*」エラーが発生します。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

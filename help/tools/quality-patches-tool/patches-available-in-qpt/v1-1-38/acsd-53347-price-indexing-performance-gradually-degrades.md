@@ -1,68 +1,68 @@
 ---
-title: ACSD-53347：価格インデックス作成のパフォーマンスが時間とともに徐々に低下
-description: ACSD-53347 パッチを適用すると、大規模な商品カタログのインデックスを再作成する際にパフォーマンスが徐々に低下するAdobe Commerceの問題を修正できます。
+title: ACSD-53347：価格インデックスのパフォーマンスが時間の経過とともに低下する
+description: 大規模な商品カタログの価格をインデックス再作成する際にパフォーマンスが徐々に低下するAdobe Commerceの問題を修正するには、ACSD-53347 パッチを適用します。
 feature: Price Indexer
 role: Admin
 exl-id: 8986b685-55e4-47c7-852c-aca18e3b02e9
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
 
-# ACSD-53347：価格インデックス作成のパフォーマンスが時間とともに徐々に低下
+# ACSD-53347：価格インデックスのパフォーマンスが時間の経過とともに低下する
 
-ACSD-53347 パッチは、大規模な製品カタログの価格のインデックスを再作成するとパフォーマンスが徐々に低下する問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.38 がインストールされている場合に使用できます。 パッチ ID は ACSD-53347 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-53347 パッチは、大規模な製品カタログの価格をインデックス再作成する際にパフォーマンスが徐々に低下する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.38がインストールされている場合に利用できます。 パッチ IDはACSD-53347です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 ～ 2.4.6-p2
+* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 - 2.4.6-p2
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-大規模な製品カタログの価格のインデックスを再作成すると、インデックス作成プロセス中に実行されるクエリのパフォーマンスが徐々に低下します。
+大規模な製品カタログの価格をインデックス再作成する場合、インデックス作成処理中に実行されるクエリのパフォーマンスは徐々に低下します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 大きなシンプルなカタログを作成し、これらの製品にカスタムオプションを割り当てます（カスタムオプションでは、インデックス作成時に一時テーブルを使用します）。
-1. 少なくとも 200 以上の顧客グループを作成して、イシューの可視性を高めます。
-1. 10 以上の web サイトを作成し、それぞれに製品をすべて割り当てます。
-1. 読み込まれる製品はほぼ同じで、SKU と名前のみが異なります。
-1. **[!UICONTROL DB Logging]** を有効にします。
+1. 大規模なシンプルなカタログを作成し、これらの製品にカスタムオプションを割り当てます（カスタムオプションは、インデックス作成時に一時テーブルを使用します）。
+1. 少なくとも200以上の顧客グループを作成して、問題の可視性を向上させます。
+1. 10以上のweb サイトを作成し、それぞれに全製品を割り当てる：
+1. 読み込まれた製品はほぼ同じで、SKUと名前だけが異なります。
+1. **[!UICONTROL DB Logging]**&#x200B;を有効にします。
 1. `bin/magento index:reindex catalog_product_price` コマンドを実行します。
-1. *で`catalog_product_index_price_opt_agr_temp`* から `db.log`DELETEを確認してください。
+1. `db.log`の&#x200B;`catalog_product_index_price_opt_agr_temp`*から* DELETEを確認します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-*DB クエリ* の実行は効率的に行われます。
+*DB クエリ*&#x200B;の実行が効率的に実行されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-一時テーブルに対する *DB クエリ* のパフォーマンスが長時間遅くなるため、価格インデックス作成テーブルの完了に多くの時間がかかります。
+一時テーブル上の&#x200B;*DB クエリ*&#x200B;のパフォーマンスが時間の経過とともに遅くなるため、価格インデックス テーブルの完了には多くの時間がかかります。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドの
-* クラウドインフラストラクチャー上のAdobe Commerce:[&#x200B; アップグレードとパッチ適用 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja) クラウドインフラストラクチャー上のCommerce ガイド
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」ガイド
 
-## 関連資料
+## 関連トピックス
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースに追加しました
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）
-* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [[!DNL Quality Patches Tool]  リリース：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを確認します
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス ](/help/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables.md#why-adobe-recommends-avoiding-modifications)
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

@@ -2,9 +2,9 @@
 title: Adobe Commerceの導入
 description: Composerを使用してAdobe Commerce ソフトウェアを入手する方法、拡張機能の互換性を確認する方法、インストールに適したディストリビューションを選択する方法について説明します。
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## ソフトウェアの入手方法
 
-Adobeで作成された拡張機能とAdobe CommerceおよびMagento Open Source用のCommerce サービスの可用性と互換性については、[製品の可用性ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability)を参照してください。
+Adobeで作成された拡張機能とAdobe CommerceおよびMagento Open Source用のCommerce サービスの可用性と互換性については、[製品の可用性ページ ](/help/release/product-availability.md)を参照してください。
 
 >[!NOTE]
 >
 >Adobe Commerce コードベースは、ポリシーの変更により、Composer経由でのみ配布されるようになりました。 コードベースはダウンロードセクションで使用できなくなったため、Composerを使用して、リストされているAdobe Commerce バージョンのいずれかをダウンロードします。
 >
->詳しくは、[請求明細書にアクセスできず、クラウドインフラストラクチャ上のAdobe Commerceでコードベースをダウンロードできない](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26611)を参照してください
+>詳しくは、[請求明細書にアクセスできず、クラウドインフラストラクチャ上のAdobe Commerceでコードベースをダウンロードできない](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)を参照してください
 
 Adobe Commerceのインストールを開始するには、次の表を参照してください。
 
@@ -68,4 +68,4 @@ UNIX システムでは、Web サーバーやPHPなどのソフトウェアを�
 
 Web サーバーがそれらのファイルを操作できない可能性があるため、*not*&#x200B;は`root` ユーザーとしてweb サーバーのdocrootにアプリケーションをインストールしないでください。
 
-[&#x200B; ファイルシステム所有者](file-system/overview.md)を作成し、その所有者をweb サーバーのグループに追加するには、`root`権限が必要です。 ファイルシステム所有者を使用して、コマンドラインから`bin/magento` コマンドを実行し、タスクをスケジュールするcron ジョブを設定します。
+[ ファイルシステム所有者](file-system/overview.md)を作成し、その所有者をweb サーバーのグループに追加するには、`root`権限が必要です。 ファイルシステム所有者を使用して、コマンドラインから`bin/magento` コマンドを実行し、タスクをスケジュールするcron ジョブを設定します。

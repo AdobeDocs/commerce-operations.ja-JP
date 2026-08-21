@@ -2,7 +2,7 @@
 title: アドバンスド設定
 description: Adobe Commerceの高度な設定の方法を説明します。 ステップバイステップ形式の手順と必要な設定をご確認ください。
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 多数の製品SKU、web サイト、顧客グループ、または共有カタログは、製品価格およびカタログルールのインデックスの実行時間に影響します。 これは、デフォルトでは、すべてのweb サイトがすべての顧客グループ（共有カタログ）に割り当てられるためです。
 
-インデックス作成時間を短縮するには、[顧客グループ（共有カタログ）から特定のweb サイトを除外する](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites)ことができます。
+インデックス作成時間を短縮するには、[顧客グループ（共有カタログ）から特定のweb サイトを除外する](https://developer.adobe.com/commerce/php/development/components/indexing/optimization#customer-group-limitations-by-websites)ことができます。
 
 ## Redisの設定
 
@@ -92,10 +92,10 @@ bin/magento setup:db-schema:add-slave
 
 このコマンドは、設定変更を実行しますが、レプリケーション自体は設定しません。 これは手作業でやるべきことです。
 
-マスターデータベースを分割し、スレーブデータベースを設定すると、[!DNL Commerce]はリクエストの種類（POST、PUT、GETなど）とデータリソースに基づいて意思決定を行い、特定のデータベースへの接続を自動的に規制します。 [!DNL Commerce]またはその拡張機能がGET リクエストに対して書き込み操作を実行すると、接続がスレーブからマスターデータベースに自動的に切り替わります。 マスターデータベースでも同じように機能します。チェックアウト関連のテーブルを操作すると、システムはすべてのクエリを特定のデータベースにリダイレクトします。 一方、カタログ関連のクエリはすべてメインデータベースに送信されます。
+マスターデータベースを分割し、スレーブ データベースを設定すると、[!DNL Commerce]は特定のデータベースへの接続を自動的に規制し、要求の種類（POST、PUT、GETなど）とデータ リソースに基づいて意思決定を行います。 [!DNL Commerce]またはその拡張機能がGET リクエストに対して書き込み操作を実行すると、接続がスレーブからマスターデータベースに自動的に切り替わります。 マスターデータベースでも同じように機能します。チェックアウト関連のテーブルを操作すると、システムはすべてのクエリを特定のデータベースにリダイレクトします。 一方、カタログ関連のクエリはすべてメインデータベースに送信されます。
 
 複数のマスター/スレーブ設定の設定と利点について詳しくは、を参照してください
-[分割データベース パフォーマンス ソリューション &#x200B;](../configuration/storage/multi-master.md)。
+[分割データベース パフォーマンス ソリューション ](../configuration/storage/multi-master.md)。
 
 ## メディアコンテンツの提供
 

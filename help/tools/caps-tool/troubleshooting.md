@@ -2,9 +2,9 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)] トラブルシューティングガイド'
 description: ' [!DNL Cloud Automation Patching Service (CAPS)]の一般的な問題とエラーメッセージのトラブルシューティング'
 hide: true
-source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ ht-degree: 0%
 
 **原因：**&#x200B;一時的な問題により、[!DNL CAPS]はGitHubに接続できませんでした
 
-**解決策：**&#x200B;数分待って、操作をやり直してください。 エラーが解決しない場合は、[Adobe Commerce Cloud サポート &#x200B;](https://experienceleague.adobe.com/home?lang=ja#support)にお問い合わせください
+**解決策：**&#x200B;数分待って、操作をやり直してください。 エラーが解決しない場合は、[Adobe Commerce Cloud サポート ](https://experienceleague.adobe.com/home#support)にお問い合わせください
 
 #### 「タイムアウト内に環境が作成されない」（GitHub接続プロジェクト）
 
@@ -180,7 +180,7 @@ ht-degree: 0%
 
 **原因：** プロジェクトのGitHub統合で`fetch-branches` オプションが無効になっているため、一時ブランチ [!DNL CAPS] プッシュは同期されず、統合環境は作成されません。
 
-**解決策：**&#x200B;統合の[`fetch-branches` オプション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)を有効にしてから、操作を再試行してください。 「[GitHub統合を [!DNL CAPS]](github-integration.md)に設定する」を参照してください。
+**解決策：**&#x200B;統合の[`fetch-branches` オプション ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)を有効にしてから、操作を再試行してください。 「[GitHub統合を [!DNL CAPS]](github-integration.md)に設定する」を参照してください。
 
 ### リソースおよびクォータのエラー
 
@@ -243,8 +243,8 @@ ht-degree: 0%
 
 ### 関連トピック
 
-* [Adobe Commerceのドキュメント](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/overview)
-* [Adobe Commerce インストールガイド](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/overview)
+* [Adobe Commerceのドキュメント](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+* [Adobe Commerce インストールガイド](/help/installation/overview.md)
 * [キャップの概要](intro.md)
 * [アクセス方法](access.md)
 * [ワークフローの概要](workflow.md)

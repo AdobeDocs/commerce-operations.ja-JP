@@ -1,75 +1,75 @@
 ---
-title: MDVA-40175：並べ替え時にラジオボタンが表示されない
-description: MDVA-40175 パッチを適用すると、ユーザが並べ替えをしようとするとラジオ ボタンが表示されない問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.10 がインストールされている場合に利用できます。 パッチ ID は MDVA-40175。 この問題はAdobe Commerce 2.4.3 で修正されました。
+title: MDVA-40175：再発注時にラジオボタンが表示されない
+description: MDVA-40175 パッチは、ユーザーが並べ替えようとしたときにラジオボタンが表示されない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.10がインストールされている場合に利用できます。 パッチ IDはMDVA-40175です。 この問題は、Adobe Commerce 2.4.3で修正されています。
 feature: Admin Workspace, Orders
 role: Admin
 exl-id: e84ff581-13ba-4f9f-9247-519b0b54807a
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
 
-# MDVA-40175：並べ替え時にラジオボタンが表示されない
+# MDVA-40175：再発注時にラジオボタンが表示されない
 
-MDVA-40175 パッチを適用すると、ユーザが並べ替えをしようとするとラジオ ボタンが表示されない問題が解決されます。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.10 がインストールされている場合に使用できます。 パッチ ID は MDVA-40175。 この問題はAdobe Commerce 2.4.3 で修正されました。
+MDVA-40175 パッチは、ユーザーが並べ替えようとしたときにラジオボタンが表示されない問題を解決します。 このパッチは、[品質パッチツール（QPT） ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.10がインストールされている場合に使用できます。 パッチ IDはMDVA-40175です。 この問題は、Adobe Commerce 2.4.3で修正されています。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.2-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.0 ～ 2.4.2-p2
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.0 - 2.4.2-p2
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-ユーザーが並べ替えを試みると、「支払いと発送情報」セクションにラジオボタンが表示されません。
+ユーザーが再発注しようとすると、「支払いと配送情報」セクションにラジオボタンが表示されません。
 
-<u> 前提条件 </u>:
+<u>前提条件</u>:
 
-1. 発送先住所と請求先住所を含む顧客アカウントが作成されます。
-1. シンプルな商品が作成されます。
-1. 複数の配信方法が設定されています。
-1. 1 つ以上のオーダーが作成されます。
+1. 配送先住所と請求先住所を持つ顧客アカウントが作成されます。
+1. シンプルな製品が作成されます。
+1. いくつかの配信方法が設定されています。
+1. 少なくとも1つの注文が作成されます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 管理パネル/**営業**/**注文** に移動します。
-1. 作成したオーダーを選択します。
-1. **表示** リンクをクリックします。
+1. 管理パネル / **Sales** / **Orders**&#x200B;に移動します。
+1. 作成した注文を選択します。
+1. 「**表示**」リンクをクリックします。
 1. 「**並べ替え**」ボタンをクリックします。
-1. ページを下にスクロールして、「支払いと発送情報 **セクションに移動** ます。
-1. **クリックして発送方法を変更** をクリックします。
+1. ページを下にスクロールして、**支払いと配送情報** セクションに移動します。
+1. **クリックして配送方法を変更**&#x200B;します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
 ラジオボタンを使用した配信方法のリストが表示されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
 ラジオボタンのない配信方法のリストが表示されます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-品質向上パッチツールの詳細については、次を参照してください。
+品質パッチツールについて詳しくは、以下を参照してください。
 
-* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [品質パッチツール ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。

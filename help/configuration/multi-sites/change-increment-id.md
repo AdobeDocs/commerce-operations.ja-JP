@@ -2,9 +2,9 @@
 title: 増分IDを変更
 description: サイトを結合または復元する際にSQLを使用して、注文、請求書、クレジットメモおよびその他のCommerce データベースエンティティの増分IDを変更する方法について説明します。
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 - Adobe Commerce（オンプレミス）:2.x.x
 - Adobe Commerce オンクラウドインフラストラクチャ：2.x.x
-- MySQL: [&#x200B; サポートされているすべてのバージョン &#x200B;](../../installation/prerequisites/database/mysql.md)
+- MySQL: [ サポートされているすべてのバージョン ](../../installation/prerequisites/database/mysql.md)
 
 ## 増分IDを変更する必要があるタイミング
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->また、PayPalの支払い受取設定で請求書IDごとに複数の支払いを許可することで、PayPalの支払いゲートウェイの問題を修正することもできます。 _ナレッジベース_&#x200B;の「[PayPal ゲートウェイがリクエストを拒否しました – 重複した請求書の問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=ja)」を参照してください。
+>また、PayPalの支払い受取設定で請求書IDごとに複数の支払いを許可することで、PayPalの支払いゲートウェイの問題を修正することもできます。 _ナレッジベース_&#x200B;の「[PayPal ゲートウェイがリクエストを拒否しました – 重複した請求書の問題](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838)」を参照してください。
 
 ## 前提条件のステップ
 
