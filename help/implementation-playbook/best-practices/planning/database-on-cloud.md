@@ -4,7 +4,7 @@ description: Adobe Commerceをクラウドインフラストラクチャにデ�
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### ストレージ エンジンをInnoDBに変更する
 
-テーブルを宣言する`db_schema.xml` ファイルで、対応する`table` ノードの`engine`属性値を`innodb`に設定します。 参照については、開発者ドキュメントの[宣言スキーマの設定/テーブルノード &#x200B;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/)を参照してください。
+テーブルを宣言する`db_schema.xml` ファイルで、対応する`table` ノードの`engine`属性値を`innodb`に設定します。 参照については、開発者ドキュメントの[宣言スキーマの設定/テーブルノード &#x200B;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration)を参照してください。
 
 宣言型スキームは、Adobe Commerce on cloud infrastructure バージョン 2.3で導入されました。
 
@@ -59,9 +59,9 @@ Adobeでは、Adobe Commerce アプリケーションのサードパーティ検
 
 設定手順については、Adobe Commerce on cloudの開発者向けガイドを参照してください。
 
-- [OpenSearch サービスの設定](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+- [OpenSearch サービスの設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/opensearch)
 
-- [Elasticsearch サービスの設定](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
+- [Elasticsearch サービスの設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/elasticsearch)
 
 ## カスタムトリガーを避ける
 
@@ -76,7 +76,7 @@ Adobeでは、Adobe Commerce アプリケーションのサードパーティ検
 
 ## [!DNL ECE-Tools]をバージョン 2002.0.21以降にアップグレード {#ece-tools-version}
 
-クローンのデッドロックに関する潜在的な問題を回避するには、ECE-Toolsをバージョン 2002.0.21以降にアップグレードします。 手順については、開発者ドキュメントの「[&#x200B; アップデート `ece-tools` バージョン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package)」を参照してください。
+クローンのデッドロックに関する潜在的な問題を回避するには、ECE-Toolsをバージョン 2002.0.21以降にアップグレードします。 手順については、開発者ドキュメントの「[&#x200B; アップデート `ece-tools` バージョン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)」を参照してください。
 
 ## インデクサーモードを安全に切り替える
 

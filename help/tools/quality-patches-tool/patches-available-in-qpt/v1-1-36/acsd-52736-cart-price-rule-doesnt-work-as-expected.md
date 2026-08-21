@@ -1,75 +1,75 @@
 ---
-title: ACSD-52736:[!UICONTROL Cart Price Rule] が期待どおりに動作しない
-description: 設定可能な製品数量の要件を含む [!UICONTROL Cart Price Rule] が期待どおりに動作しないAdobe Commerceの問題を修正するには、ACSD-52736 パッチを適用してください。
+title: 'ACSD-52736: [!UICONTROL Cart Price Rule]が期待どおりに動作しません'
+description: 設定可能な製品数量の要件を含む[!UICONTROL Cart Price Rule]が期待どおりに動作しないAdobe Commerceの問題を修正するには、ACSD-52736 パッチを適用します。
 feature: Shopping Cart, Products
 role: Admin, Developer
 exl-id: 80c3b14e-62ce-4cfc-b1ff-968e70e3a6f8
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
-# ACSD-52736:[!UICONTROL Cart Price Rule] が期待どおりに動作しない
+# ACSD-52736: [!UICONTROL Cart Price Rule]が期待どおりに動作しません
 
-ACSD-52736 パッチを適用すると、設定可能な製品数量の要件を含む [!UICONTROL Cart Price Rule] が期待どおりに動作しない問題が修正されます。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.36 がインストールされている場合に使用できます。 パッチ ID は ACSD-52736 です。 この問題はAdobe Commerce 2.4.6 で修正されました。
+ACSD-52736 パッチは、設定可能な製品数量の要件を含む[!UICONTROL Cart Price Rule]が期待どおりに動作しない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.36がインストールされている場合に利用できます。 パッチ IDはACSD-52736です。 この問題は、Adobe Commerce 2.4.6で修正されています。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 ～ 2.4.5-p4
+* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 - 2.4.5-p4
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-設定可能な製品数量の要件を含む [!UICONTROL Cart Price Rule] は、期待どおりに動作しません。
+設定可能な製品数量の要件を含む[!UICONTROL Cart Price Rule]が期待どおりに機能しません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 買い物かごルールを作成します。
-   * [!UICONTROL Apply] =製品価格割引率
+1. 買い物かごルールの作成：
+   * [!UICONTROL Apply] =製品価格割引の割合
    * [!UICONTROL Discount Amount] = 60
    * [!UICONTROL Maximum Qty Discount is Applied to] = 1
    * [!UICONTROL Discount Qty Step (Buy X)] = 1
-   * 次の条件に一致する買い物かご品目にのみルールを適用します：買い物かごの数量は 1 です
-2. [!UICONTROL Qty] = 2 の製品を買い物かごに追加します。
-3. 買い物かごの価格を確認します。
+   * 次の条件に一致するカート項目にのみルールを適用します。カート内の数量は1です
+2. [!UICONTROL Qty] = 2の商品をカートに追加します。
+3. カートの価格を確認する：
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-カート内の商品の数量が *2* であるため、ルールは適用されません。
+買い物かごに入っている商品の数量が&#x200B;*2*&#x200B;であるため、このルールは適用されません。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
 割引が適用されます。
 
-パッチ <u> インストール後に必要な追加手順は </u> のとおりです。
+<u> パッチのインストール後に必要な追加の手順</u>:
 
-パッチを適用した後で、*Quantity* 属性を使用した買い物かごルールの条件を削除し、再度追加する必要があります。
+パッチを適用した後、*数量*&#x200B;属性を使用したカートルール条件を削除して、もう一度追加する必要があります。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

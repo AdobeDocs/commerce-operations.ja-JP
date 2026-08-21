@@ -1,72 +1,72 @@
 ---
-title: MDVA-39923:B2B での SKU による検索クイックオーダー機能では、大文字と小文字が区別されます
-description: MDVA-39923 パッチでは、B2B クイックオーダー機能で SKU で注文を検索する際に、名前が保存されている場合とは異なるケースでエラーが発生する問題を修正しました。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.2 がインストールされている場合に利用できます。 パッチ ID は MDVA-39923。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+title: MDVA-39923:B2B クイック注文機能のSKUによる検索では、大文字と小文字が区別されます
+description: MDVA-39923 パッチでは、名前が保存されているケースとは異なるケースで、B2B クイック注文機能でSKUで注文を検索すると、エラーが発生する問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.2がインストールされている場合に利用できます。 パッチ IDはMDVA-39923です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 feature: B2B, Catalog Management, Orders, Search
 role: Admin
 exl-id: 9bed5615-b398-42f5-8313-ae2acca59155
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
 
-# MDVA-39923:B2B での SKU による検索クイックオーダー機能では、大文字と小文字が区別されます
+# MDVA-39923:B2B クイック注文機能のSKUによる検索では、大文字と小文字が区別されます
 
-MDVA-39923 パッチでは、B2B クイックオーダー機能で SKU で注文を検索する際に、名前が保存されている場合とは異なるケースでエラーが発生する問題を修正しました。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.2 がインストールされている場合に使用できます。 パッチ ID は MDVA-39923。 この問題はAdobe Commerce 2.4.4 で修正される予定であることに注意してください。
+MDVA-39923 パッチでは、名前が保存されているケースとは異なるケースで、B2B クイック注文機能でSKUで注文を検索すると、エラーが発生する問題を修正します。 このパッチは、[品質パッチツール （QPT） &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.2がインストールされている場合に使用できます。 パッチ IDはMDVA-39923です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 Adobe Commerce（すべてのデプロイメント方法） 2.4.1-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-Adobe Commerce（すべてのデプロイメント方法） 2.4.1 ～ 2.4.2-p2
+Adobe Commerce（すべてのデプロイメント方法） 2.4.1 - 2.4.2-p2
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-B2B のクイックオーダー機能での SKU による検索では大文字と小文字が区別され、SKU が保存されたものとは異なる大文字と小文字が使用されている場合にエラーが表示されます。
+B2B クイック注文機能でSKUで検索する場合、大文字と小文字が区別され、SKUが保存されている場合とは異なる大文字と小文字が区別され、エラーが表示されます。
 
-<u> 前提条件 </u>:
+<u>前提条件</u>:
 
 B2B モジュールがインストールされている。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 管理者にログインし、**ストア**/**設定**/**B2B** に移動します。
-1. **共有カタログ** と **クイックオーダー** を有効にします。
-1. 大文字の SKU を使用して製品（TEST20-1234 など）を作成します
-1. 作成した製品を **共有カタログ** に割り当てます。
-1. 顧客としてログインし、「クイックオーダー **をクリック** します。
-1. SKU を小文字で入力します（例：test20-1234）。
+1. 管理者にログインし、**Stores** > **Configuration** > **B2B**&#x200B;に移動します。
+1. **共有カタログ**&#x200B;と&#x200B;**クイックオーダー**&#x200B;を有効にします。
+1. TEST20-1234など、大文字のSKUを使用した製品の作成
+1. 作成した製品を&#x200B;**共有カタログ**&#x200B;に割り当てます。
+1. 顧客としてログインし、**クイックオーダー**&#x200B;をクリックします。
+1. test20-1234など、SKUを小文字で入力します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-製品は、使用されているケースに関係なく見つかるはずです。
+使用するケースに関係なく、製品を見つける必要があります。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-次のエラーメッセージが表示されます：*1 個の製品に注意が必要*。
+次のエラーメッセージを受信しました：*1個の製品には注意が必要です*。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-品質向上パッチツールの詳細については、次を参照してください。
+品質パッチツールについて詳しくは、以下を参照してください。
 
-* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [品質パッチツール &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

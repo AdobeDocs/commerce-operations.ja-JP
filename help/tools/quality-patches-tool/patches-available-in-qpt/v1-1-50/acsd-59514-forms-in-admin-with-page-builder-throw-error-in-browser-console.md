@@ -1,72 +1,72 @@
 ---
-title: ACSD-59514：ブラウザーコンソールの管理者のFormsで  [!DNL Page Builder]  スローエラーが発生する
-description: ACSD-59514 パッチを適用すると、管理者のフォームで「 [!DNL Page Builder]  はロックを解除せずに 5 秒間レンダリングしてい [!DNL Page Builder] した」というエラーがスローされるAdobe Commerceの問題が修正されます。 フォームの送信後にブラウザーコンソールで開き、変更を保存できない。
+title: ACSD-59514：管理画面でFormsがブラウザーコンソールで [!DNL Page Builder]  スローのエラーが発生する
+description: ACSD-59514 パッチを適用して、Admin with  [!DNL Page Builder] のフォームがロックを解除せずに5秒間レンダリングされたというエラー「[!DNL Page Builder]」をスローするAdobe Commerceの問題を修正します。 フォームの送信後にブラウザーコンソールで変更を保存できません。
 feature: Page Builder
 role: Admin, Developer
 exl-id: 3d1167d2-0a75-48ac-bc31-5bbd3c4a409e
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
 
-# ACSD-59514：ブラウザーコンソールの投 [!DNL Page Builder] エラーを伴う管理画面のForms
+# ACSD-59514：管理画面のFormsで[!DNL Page Builder] スローエラーが発生しました
 
-ACSD-59514 パッチは、[!DNL Page Builder] を持つ管理画面のフォームが、ロックを解除せずにレンダリングしてい *[!DNL Page Builder]エラーを 5 秒間スローする問題を修正しました。フォームの送信後にブラウザーコンソールを* リックすると、変更を保存できない。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.50 がインストールされている場合に使用できます。 パッチ ID は ACSD-59514 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-59514 パッチでは、[!DNL Page Builder]を持つ管理者のフォームがエラー&#x200B;*[!DNL Page Builder]をスローし、ロックを解除せずに5秒間レンダリングしていた問題を修正します。* フォームの送信後にブラウザーコンソールで変更を保存できません。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.50がインストールされている場合に利用できます。 パッチ IDはACSD-59514です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4-p8
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.6-p7
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-[!DNL Page Builder] を使用している管理者のFormsで、レンダリング中のエラー *[!DNL Page Builder]ロックを解放せずに 5 秒間スローされる。フォームの送信後にブラウザーコンソールを* リックすると、変更を保存できない。
+管理画面で[!DNL Page Builder]を使用しているFormsで、エラー&#x200B;*[!DNL Page Builder]が5秒間ロックを解除せずにレンダリングされていたというエラーがスローされました。* フォームの送信後にブラウザーコンソールで変更を保存できません。
 
-<u> 前提条件 </u>:
+<u>前提条件</u>:
 
 Adobe Commerce [!DNL Page Builder] モジュールがインストールされ、有効になっています。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 管理パネルを開き、「[!UICONTROL Content]」ボタンをクリックします。
+1. 管理パネルを開き、[!UICONTROL Content] ボタンをクリックします。
 1. ブロックを選択し、ブロックを編集します。
-1. コンテンツを変更し、「変 [!UICONTROL Save]」をクリックします。
+1. コンテンツを変更して、[!UICONTROL Save]をクリックします。
 1. コンソールを開き、エラーメッセージを確認します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
 ブロックが正常に保存されました。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-ローダーは回転を停止せず、ブロックは保存されません。 次のエラーがブラウザーコンソールに表示されます。
-*[!DNL Page Builder]は、ロックを解除せずに 5 秒間レンダリングされていました。*
+ローダーは回転を停止せず、ブロックは保存されません。 ブラウザーコンソールに次のエラーが表示されます。
+*[!DNL Page Builder]はロックを解除せずに5秒間レンダリングしていました。*
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

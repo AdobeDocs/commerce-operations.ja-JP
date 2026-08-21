@@ -4,9 +4,9 @@ description: Adobe Commerce ベータ版のリリースと参加方法につい�
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
-source-git-commit: bf0f269900468870a1da7b5360548d49e009097c
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >**法的免責事項**<br/>
->Betaのリリースには、不具合を含む可能性のあるプレリリース機能とコードが含まれており、いかなる保証もなく「現状のまま」提供されます。Adobeは、ベータ版リリースを一般公開するかどうかを単独で決定します。Adobeは、（Adobe サポートサービスまたはその他の方法を介して）メンテナンス、修正、更新、変更、変更、サポートを行う義務を負いません。また、特定の日付までにそのようなベータリリースを提供する義務も負いません。ベータリリースが一般公開された場合、適用手数料を含む追加の条件が適用される場合があります。Betaのリリースは、中止を含め、予告なく変更される場合があります。お客様は、ベータ版リリースの中断のない、またはエラーのない機能やパフォーマンスに依存しないように、慎重に使用することをお勧めします。 したがって、ベータ版リリースの使用は、完全にお客様の責任で行います。
+>Betaのリリースには、不具合を含む可能性のあるプレリリース機能とコードが含まれており、いかなる保証もなく「現状のまま」提供されます。 Adobeは、ベータ版リリースを一般公開するかどうかを単独で決定します。 Adobeは、（Adobe サポートサービスまたはその他の方法を介して）メンテナンス、修正、更新、変更、変更、サポートを行う義務を負いません。また、特定の日付までにそのようなベータリリースを提供する義務も負いません。 ベータリリースが一般公開された場合、適用手数料を含む追加の条件が適用される場合があります。 Betaのリリースは、中止を含め、予告なく変更される場合があります。 お客様は、ベータ版リリースの中断のない、またはエラーのない機能やパフォーマンスに依存しないように、慎重に使用することをお勧めします。  したがって、ベータ版リリースの使用は、完全にお客様の責任で行います。
 
 ## 参加の利点
 
@@ -73,7 +73,7 @@ Adobeでは、[!DNL Adobe Commerce]および[!DNL Adobe Commerce Optimizer]の[!
 
 [Cloud Automation Patching Service](../tools/caps-tool/intro.md)は、Cloud Infrastructure[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/overview)環境のAdobe Commerceに個別のセキュリティ パッチを適用するプロセスを自動化します。
 
-2025年10月、Cloud Automation Patching Serviceのベータ版リリースが[&#x200B; サイト全体の分析ツール ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard)に追加されます。 このサービスは、次のような合理化されたパッチワークフローにより、Commerce プロジェクト管理者をサポートします。
+2025年10月、Cloud Automation Patching Serviceのベータ版リリースが[&#x200B; サイト全体の分析ツール ダッシュボード &#x200B;](/help/tools/site-wide-analysis-tool/dashboard.md)に追加されます。 このサービスは、次のような合理化されたパッチワークフローにより、Commerce プロジェクト管理者をサポートします。
 
 - 自動パッチインストール
 - ロールバック回復

@@ -4,9 +4,9 @@ description: Adobe Commerce プロジェクトの計画段階での実装のベ�
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 28ca422543728123edcaa41dedca6e3cc53536b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 1%
     <td>キャッシュ管理ツールを使用して、サイトのパフォーマンスを向上させます。</td>
   </tr>
   <tr>
-    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">ページ全体のキャッシュ</a></td>
+    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content">ページ全体のキャッシュ</a></td>
     <td>Adobe Commerce拡張機能にキャッシュを実装する際に、公開データを操作する方法について説明します。</td>
   </tr>
   <tr>
@@ -76,11 +76,11 @@ ht-degree: 1%
     <td colspan="2"><em>サービス設定</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ja">Fastlyの設定</a></td>
+    <td><a href="https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration">Fastlyの設定</a></td>
     <td>Adobe Commerce on cloud インフラプロジェクト用にFastly サービスを設定します。</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html?lang=ja">New Relicの通知チャネルの設定</a></td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic">New Relicの通知チャネルの設定</a></td>
     <td>New Relicダッシュボードにアクセスし、Adobe Commerce on cloud インフラプロジェクトのデータを分析します。</td>
   </tr>
   <tr>

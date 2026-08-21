@@ -22,9 +22,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Cloud 2.4.4上のAdobe Commerce - 2.4.9のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Cloud バージョン 2.4.4 ～ 2.4.9のAdobe Commerceにのみ適用されます"
 nudge: true
-source-git-commit: e2b86c349bdd085717f732532f68e3fae8455d13
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: 2200
+source-wordcount: 2158
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Adobeは、お客様のセキュリティを維持するために必要な手順
 
 1. サポートされているすべてのサードパーティソフトウェアの依存関係のバージョン（PHP、MariaDB、Elasticsearch、OpenSearch、Redis、RabbitMQ）
 
-1. Adobe Commerce on Cloudの安全なサポート対象。 完全にサポートされているバージョンには、2.4.8、2.4.9、または利用可能な最新リリースが含まれています。 [&#x200B; ライフサイクルポリシー](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/lifecycle-policy)のドキュメントを参照してください。
+1. Adobe Commerce on Cloudの安全なサポート対象。 完全にサポートされているバージョンには、2.4.8、2.4.9、または利用可能な最新リリースが含まれています。 [&#x200B; ライフサイクルポリシー](/help/release/lifecycle-policy.md)のドキュメントを参照してください。
 
 Adobe Commerce on Cloud環境を保護するためにアクションを実行する必要があるかどうかを確認するには、次のガイドラインに従います。 以下の表1に記載されている期限までにセキュリティ要件を満たさない環境では、ストアフロントをオフラインにしてインバウンドトラフィックが停止します。 期限の遵守について懸念がある場合は、できるだけ早くアカウントチームまたは[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
 
@@ -145,8 +145,8 @@ Adobeを使用すると、これらのソフトウェアの依存関係を直接
 
 | Adobe Commerce on Cloudの現在のバージョン | 必要なアクション | 期限 |
 | --- |--- |--- |
-| バージョン 2.4.4または2.4.5 | Cloud バージョン 2.4.9 （または最新バージョン）でAdobe Commerceにアップグレードするか、[!DNL Adobe Commerce as a Cloud Service]に移行します。理由：バージョン 2.4.4および2.4.5では、2027年5月31日まで、コアアプリケーションに対する限定的な個別のセキュリティ修正のみが提供されます。 <br>これには、品質の修正、アプリケーション依存関係（PHPなど）の互換性サポート、プラットフォーム依存関係の更新は含まれません。 Adobeの[&#x200B; ライフサイクルポリシー](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/lifecycle-policy)を参照してください。 | 2027年6月1日（PT） |
-| バージョン 2.4.6または2.4.7 | Cloud バージョン 2.4.9 （または最新バージョン）でAdobe Commerceにアップグレードするか、[!DNL Adobe Commerce as a Cloud Service]に移行します。理由：バージョン 2.4.6は、2027年8月30日（PT）まで延長サポートを受け、2028年5月31日（PT）までコアアプリケーションに対する限定的な個別のセキュリティ修正のみを受け取ります。 <br>バージョン 2.4.7は、2027年5月31日（PT）まで標準サポートを受け、2028年5月31日（PT）まで拡張サポートを受けます。 Adobeの[&#x200B; ライフサイクルポリシー](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/lifecycle-policy)を参照してください。 | 2028年6月1日（PT） |
+| バージョン 2.4.4または2.4.5 | Cloud バージョン 2.4.9 （または最新バージョン）でAdobe Commerceにアップグレードするか、[!DNL Adobe Commerce as a Cloud Service]に移行します。理由：バージョン 2.4.4および2.4.5では、2027年5月31日まで、コアアプリケーションに対する限定的な個別のセキュリティ修正のみが提供されます。 <br>これには、品質の修正、アプリケーション依存関係（PHPなど）の互換性サポート、プラットフォーム依存関係の更新は含まれません。 Adobeの[&#x200B; ライフサイクルポリシー](/help/release/lifecycle-policy.md)を参照してください。 | 2027年6月1日（PT） |
+| バージョン 2.4.6または2.4.7 | Cloud バージョン 2.4.9 （または最新バージョン）でAdobe Commerceにアップグレードするか、[!DNL Adobe Commerce as a Cloud Service]に移行します。理由：バージョン 2.4.6は、2027年8月30日（PT）まで延長サポートを受け、2028年5月31日（PT）までコアアプリケーションに対する限定的な個別のセキュリティ修正のみを受け取ります。 <br>バージョン 2.4.7は、2027年5月31日（PT）まで標準サポートを受け、2028年5月31日（PT）まで拡張サポートを受けます。 Adobeの[&#x200B; ライフサイクルポリシー](/help/release/lifecycle-policy.md)を参照してください。 | 2028年6月1日（PT） |
 | バージョン 2.4.8または2.4.9 | Adobe Commerce Cloud版のアップグレードアクションは必要ありません。 アクション 1のサードパーティ製ソフトウェアの依存関係の期限は引き続き適用されます。<br>理由：期限が設定されていません。 | 影響しない |
 
 #### 手順2：アップグレードまたは移行パスの決定
@@ -178,7 +178,7 @@ Adobeは、サポート対象バージョンのサードパーティソフトウ
 
 **Cloud バージョン 2.4.9でAdobe Commerceにアップグレードする場合：**
 
-* **アップグレード互換性レポート：** Adobeには、更新が必要なモジュールやファイル、重大な問題の数など、Adobe Commerce バージョン 2.4.9へのアップグレードに必要な内容を正確に特定するための詳細なレポートが用意されています。 アップグレード互換性レポートの生成方法について詳しくは、[&#x200B; サイト全体の分析ツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/site-wide-analysis-tool/access)のドキュメントを参照してください。
+* **アップグレード互換性レポート：** Adobeには、更新が必要なモジュールやファイル、重大な問題の数など、Adobe Commerce バージョン 2.4.9へのアップグレードに必要な内容を正確に特定するための詳細なレポートが用意されています。 アップグレード互換性レポートの生成方法について詳しくは、[&#x200B; サイト全体の分析ツール &#x200B;](/help/tools/site-wide-analysis-tool/access.md)のドキュメントを参照してください。
 
 * **ソフトウェア依存関係のアップグレード：** ソフトウェア依存関係を直接アップグレードできないので、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)をAdobeで開いて、アップグレードを処理してください。 詳しくは、[&#x200B; サービスの設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)を参照してください。
 

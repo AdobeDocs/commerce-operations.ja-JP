@@ -4,9 +4,9 @@ description: この記事では、 [!DNL New Relic]でAdobe Commerceに関する
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
 exl-id: 8629ab18-5eef-4d76-9cf8-88fe2d3439df
-source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)の管理対象
 <u>**実行！**</u>:
 
 * このアラートがクリアされるまでスケジュールされたデプロイメントをすべて中止します。
-* サイトが完全に応答しない、または応答しなくなった場合は、すぐにメンテナンスモードにします。 手順については、『Commerce インストールガイド』の「[&#x200B; メンテナンスモードを有効または無効にする](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)」を参照してください。 トラブルシューティングのためにサイトにアクセスできるように、IPを免除IP アドレスリストに追加してください。 手順については、Commerce インストールガイドの「[除外IP アドレスのリストを管理する](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses)」を参照してください。
+* サイトが完全に応答しない、または応答しなくなった場合は、すぐにメンテナンスモードにします。 手順については、『Commerce インストールガイド』の「[&#x200B; メンテナンスモードを有効または無効にする](/help/installation/tutorials/maintenance-mode.md)」を参照してください。 トラブルシューティングのためにサイトにアクセスできるように、IPを免除IP アドレスリストに追加してください。 手順については、Commerce インストールガイドの「[除外IP アドレスのリストを管理する](/help/installation/tutorials/maintenance-mode.md#maintain-the-list-of-exempt-ip-addresses)」を参照してください。
 
 <u>**やめて！**</u>:
 
@@ -47,7 +47,7 @@ Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)の管理対象
 >
 >これは重大なアラートであるため、問題のトラブルシューティングを行う前に&#x200B;**手順1**&#x200B;を完了することを強くお勧めします（手順2以降）。
 
-Adobe Commerce サポートチケットが存在するかどうかを確認します。 手順については、Commerce サポート サポート サポート サポート サポート技術情報の[&#x200B; サポートチケットの追跡](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case)を参照してください。 サポートは、[!DNL New Relic]しきい値のアラートを受け取り、チケットを作成し、問題に取り組み始めた可能性があります。 チケットが存在しない場合は、チケットを作成します。 チケットには次の情報が必要です。
+Adobe Commerce サポートチケットが存在するかどうかを確認します。 手順については、Commerce サポート サポート サポート サポート サポート技術情報の[&#x200B; サポートチケットの追跡](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case)を参照してください。 サポートは、[!DNL New Relic]しきい値のアラートを受け取り、チケットを作成し、問題に取り組み始めた可能性があります。 チケットが存在しない場合は、チケットを作成します。 チケットには次の情報が必要です。
 
 1. 連絡先の理由：**[!UICONTROL New Relic CRITICAL alert received]**&#x200B;を選択してください。
 1. アラートの説明。
@@ -56,9 +56,9 @@ Adobe Commerce サポートチケットが存在するかどうかを確認し�
    * Apdex スコアを昇順にしてトランザクションを並べ替えます。 [[!DNL Apdex]](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction)は、web アプリケーションおよびサービスの応答時間に対するユーザー満足度を指します。 [低 [!DNL Apdex]  スコア &#x200B;](managed-alerts-for-magento-commerce-apdex-warning-alert.md)は、ボトルネック（応答時間が長いトランザクション）を示している可能性があります。 通常、データベース、[!DNL Redis]、またはPHPに関連しています。 手順については、New Relic [最も高いトランザクションを表示 [!DNL Apdex] 不満](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/view-your-apdex-score#apdex-dissat)を参照してください。
    * 最も高いスループット、最も遅い平均応答時間、最も時間がかかるその他のしきい値などによってトランザクションを並べ替えます。 手順については、[!DNL New Relic] [特定のパフォーマンスの問題を見つける](https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems)を参照してください。
 1. まだソースの特定に苦慮している場合は、[[!DNL New Relic] APMのインフラストラクチャページ &#x200B;](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page)を使用して、リソース量の多いサービスを特定してください。 手順については、「[!DNL New Relic] [&#x200B; インフラストラクチャ監視ホスト」ページ「プロセス」タブ &#x200B;](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes)を参照してください。
-1. ソースを特定した場合は、環境にSSHで接続して、さらに調査します。 手順については、『Commerce on Cloud Guide 』の「[SSH into your environment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja)」を参照してください。
+1. ソースを特定した場合は、環境にSSHで接続して、さらに調査します。 手順については、『Commerce on Cloud Guide 』の「[SSH into your environment](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/secure-connections)」を参照してください。
 1. ソースの特定に苦慮している場合：
    * 最近の傾向を確認して、最近のコードのデプロイや設定の変更（新しい顧客グループやカタログの大幅な変更など）に関する問題を特定します。 コードのデプロイメントまたは変更の相関関係については、過去7日間のアクティビティを確認することをお勧めします。
    * フラットカタログのチェックと無効化を検討してください。 手順については、Commerce サポート サポート サポート技術情報の「[&#x200B; パフォーマンスが遅い、動作が遅い、動作が長い](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons)」を参照してください。
    * DDoS攻撃が疑われる場合は、ボットトラフィックのブロックを試してください。 手順については、Commerce サポート サポート ナレッジベースの「[Fastly レベルでAdobe Commerce on cloud infrastructureの悪意のあるトラフィックをブロックする方法](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level)」を参照してください。
-1. 問題が一時的なものと思われる場合は、アップサイズなどの軽減手順を実行するか、サイトをメンテナンスモードに移行します。 手順については、Commerce サポート サポート サポート技術情報の[一時サイズ変更をリクエストする方法](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize)およびCommerce インストールガイドの[&#x200B; メンテナンスモードを有効または無効にする](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)を参照してください。 アップサイズによってサイトが通常の動作に戻る場合は、永続的なアップサイズをリクエストするか（Adobeのアカウントチームにお問い合わせください）、ロードテストを実行して、サービスへのプレッシャーを軽減するクエリやコードを最適化することで、専用ステージングの問題を再現してみてください。 手順については、Cloud GuideのCommerceの[負荷テストと負荷テスト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/test/staging-and-production#load-and-stress-testing)を参照してください。
+1. 問題が一時的なものと思われる場合は、アップサイズなどの軽減手順を実行するか、サイトをメンテナンスモードに移行します。 手順については、Commerce サポート サポート サポート技術情報の[一時サイズ変更をリクエストする方法](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize)およびCommerce インストールガイドの[&#x200B; メンテナンスモードを有効または無効にする](/help/installation/tutorials/maintenance-mode.md)を参照してください。 アップサイズによってサイトが通常の動作に戻る場合は、永続的なアップサイズをリクエストするか（Adobeのアカウントチームにお問い合わせください）、ロードテストを実行して、サービスへのプレッシャーを軽減するクエリやコードを最適化することで、専用ステージングの問題を再現してみてください。 手順については、Cloud GuideのCommerceの[負荷テストと負荷テスト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/test/staging-and-production#load-and-stress-testing)を参照してください。

@@ -2,9 +2,9 @@
 title: アップグレードの実装
 description: Adobe Commerce プロジェクトのアップグレード実装の様々なフェーズについて説明します。
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 3c54a3c429a3dadc826bffcb91f99a5a3a31b42c
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '857'
 ht-degree: 1%
 
 ---
@@ -29,9 +29,9 @@ ht-degree: 1%
 
 - **[!DNL Upgrade Compatibility Tool]結果** – 現在のコードをターゲット バージョンのコードと比較し、対処する必要があるすべての問題のレポートを生成することで、アップグレードをより迅速かつ簡単にします。 [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md)を参照してください。 本レポートの主な内容は次の通りです。
 
-   - 現在インストールされているバージョン
-   - ターゲットバージョンのアップグレード
-   - 見つかった重大なエラーの数と詳細
+  - 現在インストールされているバージョン
+  - ターゲットバージョンのアップグレード
+  - 見つかった重大なエラーの数と詳細
 
   >[!TIP]
   >
@@ -88,4 +88,4 @@ UATは、アップグレードの最終段階のひとつであり、サイト�
 
 サイトのローンチ後、分析データ、Google Search Console、その他のリソースを必ず確認し、予期しない問題がなく、すべてが期待どおりに動作していることを確認してください。
 
-適切に設計されたモニタリングツールを使用して、パフォーマンスに目を配ることは常に推奨されます。 サイトパフォーマンスを監視するツールや手段は、数多くあります。自社に適したものを選択しましょう。 クラウドインフラストラクチャ管理システムを使用するAdobe Commerceのお客様は、[New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=ja)などのサービスを利用して、サイトのパフォーマンスを監視することをお勧めします。
+適切に設計されたモニタリングツールを使用して、パフォーマンスに目を配ることは常に推奨されます。 サイトパフォーマンスを監視するツールや手段は、数多くあります。自社に適したものを選択しましょう。 クラウドインフラストラクチャ管理システムを使用するAdobe Commerceのお客様は、[New Relic](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)などのサービスを利用して、サイトのパフォーマンスを監視することをお勧めします。

@@ -2,8 +2,8 @@
 title: Adobe Commerce 2.4.7 セキュリティパッチリリースノート
 description: Adobe Commerce バージョン 2.4.7のセキュリティパッチリリースに含まれているセキュリティバグの修正、セキュリティの強化、およびその他のセキュリティ関連アップデートについて説明します。
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-last-update: 2026-05-12T00:00:00Z
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 0%

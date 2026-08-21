@@ -1,45 +1,45 @@
 ---
-title: サイト、ストア、ストア表示を設定するためのベストプラクティス
-description: サイト、ストア、ストア表示を設定してサイトのパフォーマンスを最大化するためのベストプラクティスについて説明します。
+title: サイト、ストア、ストアビューの設定に関するベストプラクティス
+description: サイト パフォーマンスを最大化するためのサイト、ストア、ストアビューの設定に関するベストプラクティスについて説明します。
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
-# サイト、ストア、ストア表示を設定するためのベストプラクティス
+# サイト、ストア、ストアビューの設定に関するベストプラクティス
 
-クラウドインフラストラクチャー上のAdobe Commerceの場合、ベストプラクティスは特に、統合環境や開発環境よりも多くのリソースを持つ実稼動環境（場合によっては Pro アーキテクチャ上のステージング）に適用されます。
+Adobe Commerce on cloud infrastructureの場合、ベストプラクティスは、実稼動環境（およびリソースの制約を受けるPro アーキテクチャ上のステージング）に特に適用され、統合環境や開発環境よりも多くのリソースが必要になります。
 
 ## 影響を受ける製品とバージョン
 
-[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md):
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
 
-- クラウドインフラストラクチャー上のAdobe Commerce
+- Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
 
-## パフォーマンスを向上させるための戦略
+## パフォーマンスを向上させる戦略
 
-プロジェクトで多数のサイト、ストア、またはストアビューが必要な場合は、次の方法を使用してパフォーマンスを向上させることができます。
+プロジェクトで多数のサイト、ストア、またはストアビューが必要な場合は、次の戦略を使用してパフォーマンスを向上させることができます。
 
-- ロジックをカテゴリに移動してカタログを再構築
-- 外部価格と価格管理システム（PMS）を使用して、カタログ・データから価格表を分離します。
-- Elasticsearchなどの別の noSQL データストレージを使用する
+- ロジックをカテゴリーに移行して、カタログを再構築する
+- 外部価格と価格管理システム（PMS）を使用して、カタログデータからプライスリストを分離します。
+- Elasticsearchなどの代替のnoSQL データストレージを使用する
 
-## パフォーマンスに与える可能性のある影響
+## 潜在的なパフォーマンスへの影響
 
-Web サイトやストアはカタログデータの乗数なので、多くの Web サイトやストアを持つと、次の点でサイトのパフォーマンスに悪影響を与える可能性があります。
+web サイトと実店舗は、カタログデータを増やすための乗数です。そのため、多くのweb サイトと実店舗を運営すると、次のようなサイトパフォーマンスに悪影響を及ぼす可能性があります。
 
-- インデックス・テーブルが大きくなると、インデックス作成操作の完了に要する時間が長くなります [ 価格インデックス ]。
-- アプリケーション設定の取得時間が長くなると、キャッシュされていないカタログページのストアフロントの応答時間が遅くなります。
-- データは web サイトごとに個別に保存されるので、管理者が保存操作を完了するのに必要な時間が大幅に増加しました。
+- インデックス テーブルが大きいほど、インデックス作成の操作[価格指数]を完了するのに必要な時間が長くなります。
+- アプリケーション設定の取得時間が増加すると、キャッシュされていないカタログページのストアフロントの応答時間が低下します。
+- Web サイトごとにデータが個別に保存されるため、管理者で保存操作を完了するのに必要な時間が大幅に増加します。
 
 
 ## 追加情報
 
-- [Web サイト、ストア、ストア表示について &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [&#x200B; 複数の web サイトまたはストアを設定する &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [web サイト、実店舗、店舗表示について](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
+- [複数のweb サイトや店舗の設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)

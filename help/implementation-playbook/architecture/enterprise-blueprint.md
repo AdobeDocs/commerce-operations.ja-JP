@@ -3,7 +3,7 @@ title: エンタープライズリファレンスアーキテクチャ
 description: Adobeの最新のコンポーザブルコマーステクノロジーを使用して、Adobe Commerceを実装する方法について説明します。
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: dc4747d96e6f226e90ed95c93512c3e879d408ab
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -26,18 +26,18 @@ Commerceは、パフォーマンス、拡張性、セキュリティに対する
 
 ## クラウド基盤
 
-[&#x200B; クラウド インフラストラクチャ上のAdobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/overview)は、Commerceの実装の基盤です。 これは、クラウドネイティブ環境でのCommerce アプリケーションの構築、デプロイ、モニタリング、管理に対するセルフサービスアプローチを備えた[&#x200B; セキュア &#x200B;](../../security-and-compliance/shared-responsibility.md)自動ホスティングプラットフォームを提供します。
+[&#x200B; クラウド インフラストラクチャ上のAdobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/overview)は、Commerceの実装の基盤です。 これは、クラウドネイティブ環境でのCommerce アプリケーションの構築、デプロイ、モニタリング、管理に対するセルフサービスアプローチを備えた[&#x200B; セキュア &#x200B;](../../security-and-compliance/shared-responsibility.md)自動ホスティングプラットフォームを提供します。
 
 次のクラウド基盤の技術的な詳細を参照してください。
 
-- [**拡張されたアーキテクチャ**](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture) – 安定した予測可能なパフォーマンスを維持するために自動的に調整された容量
-- [**複数の環境**](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/pro-architecture) - PHP、MySQL （MariaDB）、Redis、RabbitMQ、およびサポートされている検索エンジンテクノロジーを事前にプロビジョニングして、サイトを開発、テスト、デプロイします
-- [**構成管理**](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/overview) - アプリケーション設定、ルート、ビルドおよびデプロイのアクション、通知を管理するためのカスタマイズ可能な環境設定ファイルおよびコマンドラインインターフェイス（CLI）です。
-- [**Git ベースのワークフロー**](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow)：迅速な開発と継続的なデプロイメントのためにコード変更をプッシュした後、自動的にビルドおよびデプロイします
-- [**組み込みの可観測性**](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/monitor/performance) – 複数のソースからのログデータを組み合わせて、サイトのパフォーマンスの管理と問題の診断に役立つツール
+- [**拡張されたアーキテクチャ**](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture) – 安定した予測可能なパフォーマンスを維持するために自動的に調整された容量
+- [**複数の環境**](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/pro-architecture) - PHP、MySQL （MariaDB）、Redis、RabbitMQ、およびサポートされている検索エンジンテクノロジーを事前にプロビジョニングして、サイトを開発、テスト、デプロイします
+- [**構成管理**](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/overview) - アプリケーション設定、ルート、ビルドおよびデプロイのアクション、通知を管理するためのカスタマイズ可能な環境設定ファイルおよびコマンドラインインターフェイス（CLI）です。
+- [**Git ベースのワークフロー**](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow)：迅速な開発と継続的なデプロイメントのためにコード変更をプッシュした後、自動的にビルドおよびデプロイします
+- [**組み込みの可観測性**](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/monitor/performance) – 複数のソースからのログデータを組み合わせて、サイトのパフォーマンスの管理と問題の診断に役立つツール
 - [**包括的なAPI カバレッジ**](https://developer.adobe.com/commerce/webapi/get-started/)—[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/)および[REST](https://developer.adobe.com/commerce/webapi/rest) APIにより、主要なCommerce アプリケーションをサードパーティシステムと統合し、Commerce機能を拡張
 
-## Experience Cloudとの連携
+## Adobe Experience Cloudとの連携
 
 Adobe Commerceは、すべてのExperience Cloud ソリューションと統合して、[&#x200B; パーソナライズされたコマース体験を大規模に提供します](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu)。
 
@@ -48,7 +48,7 @@ Adobe Commerceは、すべてのExperience Cloud ソリューションと統合�
 >詳しくは、次のリソースを参照してください。
 >
 >- 技術的な詳細については、[&#x200B; デジタルエクスペリエンスの設計図](https://experienceleague.adobe.com/ja/docs/blueprints-learn/architecture/overview)を参照してください。
->- [顧客体験のパーソナライズ &#x200B;](https://experienceleague.adobe.com/ja/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)を参照してください。
+>- [顧客体験のパーソナライズ &#x200B;](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)を参照してください。
 
 
 ## サードパーティシステムとの統合
@@ -70,7 +70,7 @@ Adobeには、統合とカスタマイズを構築するための次の開発者
 
 >[!NOTE]
 >
->[最新のアプローチ：Adobe Commerceの効果的な拡張性](https://experienceleague.adobe.com/ja/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)を参照してください。
+>[最新のアプローチ：Adobe Commerceの効果的な拡張性](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)を参照してください。
 
 ## ストアフロントサービス
 

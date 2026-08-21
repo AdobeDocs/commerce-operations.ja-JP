@@ -1,67 +1,67 @@
 ---
-title: 'ACSD-63406: persistent_clear_expired cron ジョブの実行時に期限切れの永続的な引用符がクリアされない'
-description: 「persistent_clear_expired」 cron ジョブが実行されたときに、期限切れの永続的な引用符が cron ジョブでクリアされないAdobe Commerceの問題を修正するために、ACSD-63406 パッチを適用します。
+title: ACSD-63406:persistent_clear_expired cron ジョブの実行時に期限切れの永続的な引用符がクリアされない
+description: ACSD-63406 パッチを適用して、「persistent_clear_expired」 cron ジョブの実行時に、期限切れの永続的な引用符がcron ジョブによってクリアされないAdobe Commerceの問題を修正します。
 feature: Quotes, Shopping Cart
 role: Admin, Developer
 exl-id: 795d1ddf-0d5b-406c-870b-36cb92cf07fa
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-# ACSD-63406:Cron ジョブの実行時に、期限切れの永続的な引用符がクリア `persistent_clear_expired` れない
+# ACSD-63406: `persistent_clear_expired` cron ジョブの実行時に期限切れの永続的な引用符がクリアされない
 
-ACSD-63406 パッチは、`persistent_clear_expired` cron ジョブが実行されたときに、期限切れの永続的な引用符が cron ジョブによってクリアされない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62 がインストールされている場合に使用できます。 パッチ ID は ACSD-63406 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-63406 パッチは、`persistent_clear_expired` cron ジョブの実行時に、期限切れの永続的な引用符がcron ジョブによってクリアされない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62がインストールされている場合に利用できます。 パッチ IDはACSD-63406です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.7-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.4-p9 - 2.4.4-p12、2.4.5-p8 - 2.4.5-p11、2.4.6-p6 - 2.4.7-p4
+* Adobe Commerce（すべてのデプロイメント方式） 2.4.4-p9 - 2.4.4-p12、2.4.5-p8 - 2.4.5-p11、2.4.6-p6 - 2.4.7-p4
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-期限切れの永続的な引用符は、`persistent_clear_expired` cron ジョブの実行時にいずれの cron ジョブでもクリアされません。
+期限切れの永続的な引用符は、`persistent_clear_expired` cron ジョブの実行時にcron ジョブによってクリアされません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. カテゴリと製品を作成します。
-1. **[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Customers]**/**[!UICONTROL Persistent Shopping Cart]** に移動します。
-   1. すべてのオプションを *はい* に設定します。
-   1. **[!UICONTROL Persistence Lifetime (seconds)]** を *60* に設定します。
+1. カテゴリと製品の作成。
+1. **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Persistent Shopping Cart]**&#x200B;に移動します。
+   1. すべてのオプションを&#x200B;*はい*&#x200B;に設定します。
+   1. **[!UICONTROL Persistence Lifetime (seconds)]**&#x200B;を&#x200B;*60*&#x200B;に設定します。
 1. ストアフロントで顧客アカウントを作成し、ログインします。
-1. 商品を買い物かごに追加します。
-1. ログアウトし、60 秒待ってから、もう一度ログインします。
+1. 商品をカートに追加する。
+1. ログアウトし、60秒待ってから、再度ログインします。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-`persistent_clear_expired` cron ジョブでは、設定の永続性有効期間の設定に基づいて、永続的な引用符を削除する必要があります。
+`persistent_clear_expired` cron ジョブは、設定の永続性有効期間の設定に基づいて、永続的な引用符を削除する必要があります。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-顧客の見積もりの `is_persistent` 値は、見積もりテーブルに *1* 残ります。
+顧客の見積の`is_persistent`値は、見積テーブルの&#x200B;*1*&#x200B;のままです。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

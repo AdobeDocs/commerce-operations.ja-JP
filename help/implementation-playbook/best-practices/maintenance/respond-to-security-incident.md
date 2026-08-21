@@ -3,9 +3,9 @@ title: セキュリティインシデントへの対応
 description: サイトの可用性とパフォーマンスに影響を与えるセキュリティ問題に対応して修正するためのベストプラクティスに従って、セキュリティインシデントを処理します。
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
-source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -46,18 +46,18 @@ Adobe Commerce on cloud インフラストラクチャプロジェクトがセ�
 - システムインテグレーターと適切なセキュリティ担当者に調査と修復の取り組みを依頼します。
 
 - 攻撃の範囲を決定します。
-   - クレジットカード情報はアクセスされたか？
-   - どんな情報が盗まれましたか？
-   - 妥協からどれくらいの時間が経ちましたか？
-   - 情報は暗号化されていますか？
+  - クレジットカード情報はアクセスされたか？
+  - どんな情報が盗まれましたか？
+  - 妥協からどれくらいの時間が経ちましたか？
+  - 情報は暗号化されていますか？
 
 - サーバーのログファイルとファイルの変更を確認して、サイトがいつ、どのように侵害されたかを判断するために、攻撃ベクターを見つけてみましょう。
 
-   - 特定の状況では、すべてをワイプして再インストールするか、仮想ホスティングの場合は、新しいインスタンスを作成することをお勧めします。 マルウェアは、自分自身を回復するのを待っているだけで、疑わしい場所に隠される可能性があります。
+  - 特定の状況では、すべてをワイプして再インストールするか、仮想ホスティングの場合は、新しいインスタンスを作成することをお勧めします。 マルウェアは、自分自身を回復するのを待っているだけで、疑わしい場所に隠される可能性があります。
 
-   - 不要なファイルをすべて削除します。 次に、既知のクリーンソースから必要なファイルを再インストールします。 例えば、バージョン管理システムのファイルまたはAdobeの元の配布ファイルを使用して、再インストールできます。
+  - 不要なファイルをすべて削除します。 次に、既知のクリーンソースから必要なファイルを再インストールします。 例えば、バージョン管理システムのファイルまたはAdobeの元の配布ファイルを使用して、再インストールできます。
 
-   - データベース、ファイルアクセス、支払いと配送の統合、web サービス、管理者ログインなど、すべての資格情報をリセットします。 また、システムの攻撃に使用される可能性のあるすべての統合キーとAPI キーおよびアカウントもリセットします。
+  - データベース、ファイルアクセス、支払いと配送の統合、web サービス、管理者ログインなど、すべての資格情報をリセットします。 また、システムの攻撃に使用される可能性のあるすべての統合キーとAPI キーおよびアカウントもリセットします。
 
 ## インシデントの分析
 
@@ -73,13 +73,13 @@ Adobe Commerce on cloud インフラストラクチャプロジェクトがセ�
 
   ツールの「**セキュリティ**」タブを使用すると、潜在的なセキュリティ問題を明確に把握して、根本原因を特定し、サイトのパフォーマンスを最適に維持できます。
 
-- [New Relic ログ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=ja)を使用したログの分析
+- [New Relic ログ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)を使用したログの分析
 
-  Adobe Commerce on cloud infrastructure Pro プロジェクトには、[New Relic Logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=ja) サービスが含まれます。 このサービスは、ステージング環境と実稼動環境のすべてのログデータを集約するように事前設定されており、集約されたデータを検索して視覚化できる一元化されたログ管理ダッシュボードに表示されます。
+  Adobe Commerce on cloud infrastructure Pro プロジェクトには、[New Relic Logs](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management) サービスが含まれます。 このサービスは、ステージング環境と実稼動環境のすべてのログデータを集約するように事前設定されており、集約されたデータを検索して視覚化できる一元化されたログ管理ダッシュボードに表示されます。
 
   その他のCommerce プロジェクトの場合、[New Relic Logs](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) サービスを設定して使用すると、次のタスクを実行できます。
-   - [New Relic クエリ &#x200B;](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs)を使用して、集計されたログデータを検索します。
-   - New Relic Logs アプリケーションを使用してログデータを視覚化します。
+  - [New Relic クエリ &#x200B;](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs)を使用して、集計されたログデータを検索します。
+  - New Relic Logs アプリケーションを使用してログデータを視覚化します。
 
 ## 監査アカウント、コード、データベース
 
@@ -93,9 +93,9 @@ Commerceの管理者アカウントとユーザーアカウント、アプリケ
 
 - [管理者のセキュリティ設定を確認](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=ja) – 管理者のセキュリティ設定がセキュリティのベストプラクティスに従っていることを確認します。
 
-- [&#x200B; クラウドインフラストラクチャプロジェクト上のAdobe Commerceのユーザーアカウントを確認](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=ja) – 古い、未使用の、または疑わしいアカウントを削除し、すべてのクラウドプロジェクト管理者ユーザーのパスワードをローテーションします。 アカウントのセキュリティ設定が正しく設定されていることを確認します。
+- [&#x200B; クラウドインフラストラクチャプロジェクト上のAdobe Commerceのユーザーアカウントを確認](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/project/user-access) – 古い、未使用の、または疑わしいアカウントを削除し、すべてのクラウドプロジェクト管理者ユーザーのパスワードをローテーションします。 アカウントのセキュリティ設定が正しく設定されていることを確認します。
 
-- [&#x200B; クラウドインフラストラクチャ上のAdobe CommerceのSSH キーの監査](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ja) - SSH キーの確認、削除、回転。
+- [&#x200B; クラウドインフラストラクチャ上のAdobe CommerceのSSH キーの監査](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/secure-connections) - SSH キーの確認、削除、回転。
 
 ### 監査コード
 

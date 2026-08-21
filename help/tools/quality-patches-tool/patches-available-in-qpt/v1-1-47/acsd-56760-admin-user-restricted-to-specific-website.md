@@ -1,73 +1,73 @@
 ---
-title: ACSD-56760：管理者ユーザーが特定の web サイトに制限されており、新しい製品を並べ替えたり追加したりすることができません
-description: ACSD-56760 パッチを適用すると、特定の web サイトに制限されている管理者ユーザーが、web ストアに独自のルートカテゴリがある場合、カテゴリ内で新しい商品の並べ替えや追加ができないAdobe Commerceの問題を修正できます。
+title: ACSD-56760：管理者ユーザーが特定のweb サイトに制限されており、新製品を並べ替えたり追加したりできない
+description: ACSD-56760 パッチを適用して、Adobe Commerceの問題を修正します。この問題は、特定のweb サイトに制限されている管理者ユーザーが、web ストアに独自のルートカテゴリがある場合に、カテゴリ内で新製品を並べ替えたり追加したりできない場合に発生します。
 role: Admin
 exl-id: 2d75164e-c463-4e1a-aa6f-f420dbe0aaeb
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
 
-# ACSD-56760：管理者ユーザーが特定の web サイトに制限されており、新しい製品を並べ替えたり追加したりすることができません
+# ACSD-56760：管理者ユーザーが特定のweb サイトに制限されており、新製品を並べ替えたり追加したりできない
 
-ACSD-56760 パッチは、特定の web サイトに制限されている管理者ユーザーが、web ストアに独自のルートカテゴリがある場合に、カテゴリ内で新しい製品の並べ替えや追加ができない問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.47 がインストールされている場合に使用できます。 パッチ ID は ACSD-56760 です。 この問題はAdobe Commerce 2.4.8-beta1 で修正される予定であることに注意してください。
+ACSD-56760 パッチでは、特定のweb サイトに制限されている管理者ユーザーが、web ストアに独自のルートカテゴリがある場合に、カテゴリ内で新製品を並べ替えたり追加したりできない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.47がインストールされている場合に利用できます。 パッチ IDはACSD-56760です。 この問題は、Adobe Commerce 2.4.8-beta1で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6 - 2.4.6-p4
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-管理者ユーザーが特定の web サイトに限定されており、web ストアに独自のルートカテゴリがある場合に、カテゴリ内で新しい製品を並べ替えたり追加したりできない。
+特定のweb サイトに制限され、web ストアに独自のルートカテゴリがある場合に備えて、カテゴリ内で新製品を並べ替えたり追加したりできない管理者ユーザー。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. *2* web サイトを作成します。
-1. **[!UICONTROL restricted admin user]** 1 *web サイトのみにアクセスできる* を作成します。
-1. **[!UICONTROL restricted admin user]** としてログインし、カテゴリ内の製品の位置を変更してみてください。
+1. *2*&#x200B;個のWeb サイトを作成します。
+1. *1* web サイトのみにアクセスできる&#x200B;**[!UICONTROL restricted admin user]**&#x200B;を作成します。
+1. **[!UICONTROL restricted admin user]**&#x200B;としてログインし、カテゴリ内の製品の位置を変更してみてください。
 
 *ケース 1*:
 
-* *2* ストア。
-* *2* ルートカテゴリ。各 web サイトはそれ自身のカテゴリルートに割り当てられます。
+* *2*&#x200B;店舗。
+* *2*&#x200B;個のルートカテゴリ。各web サイトは独自のカテゴリルートに割り当てられています。
 
 *ケース 2*:
 
-* *2* ストア。
-* 両方の Web サイトに割り当てられるのは *1* ルートカテゴリのみです。
+* *2*&#x200B;店舗。
+* 両方のweb サイトに割り当てられているのは&#x200B;*1* ルートカテゴリのみです。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-* *ケース 1*：制限付き管理者は、利用可能なカテゴリ内の製品を並べ替えられるはずです。
-* *ケース 2*：制限された管理者は、使用可能なカテゴリ内の製品を並べ替えることができません。これは、制限されたストアにも影響を与えるからです。
+* *ケース 1*：制限付き管理者は、使用可能なカテゴリ内の製品を並べ替えることができるようにする必要があります。
+* *ケース 2*：制限付き管理者は、使用可能なカテゴリ内の製品を並べ替えることができません。これは、制限付きストアにも影響を与えるためです。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-* *ケース 1*：制限された管理者が、利用可能なカテゴリ内の製品を並べ替えることができない。
-* *ケース 2*：制限付き管理者は、利用可能なカテゴリ内の製品を並べ替えることができ、制限付きストアに影響を与えます。
+* *ケース 1*：制限付き管理者は、使用可能なカテゴリ内の製品を並べ替えることができません。
+* *ケース 2*：制限付き管理者は、使用可能なカテゴリ内の製品を並べ替えることができ、制限されたストアに影響を与えます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: 『ツールガイド』にあるクオリティパッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) セルフサービスツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

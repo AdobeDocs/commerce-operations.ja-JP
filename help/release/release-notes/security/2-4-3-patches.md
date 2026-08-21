@@ -2,8 +2,8 @@
 title: Adobe Commerce 2.4.3 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.3のセキュリティパッチリリースに含まれているセキュリティバグの修正、セキュリティの強化、およびその他のセキュリティ関連アップデートについて説明します。
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-last-update: 2026-05-12T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.3-p3 セキュリティリリースでは、以前のリリースの2.4.3で特定された脆弱性に対するセキュリティ修正が提供されています。 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB22-38](https://helpx.adobe.com/jp/security/products/magento/apsb22-38.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html)を参照してください。
 
 ### 配送業者としてDHLを提供し続けるには、AC-3022.patchを適用します
 
@@ -36,7 +36,7 @@ DHLはスキーマバージョン 6.2を導入しており、近い将来スキ�
 
 Adobe Commerce 2.4.3-p2 セキュリティリリースには、以前のリリースで特定された脆弱性に対するセキュリティバグ修正が含まれています。 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB22-13](https://helpx.adobe.com/jp/security/products/magento/apsb22-13.html)を参照してください。  パッチリリースでは、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch`、`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`が解決した脆弱性も解決されます。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html)を参照してください。  パッチリリースでは、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch`、`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`が解決した脆弱性も解決されます。
 
 
 ### 配送業者としてDHLを提供し続けるには、AC-3022.patchを適用します
@@ -55,9 +55,9 @@ DHLはスキーマバージョン 6.2を導入しており、近い将来スキ�
 
 * Adobe Commerceが実稼動モードの場合、Swaggerはデフォルトで無効になりました。<!-- AC-1450-->
 
-* 開発者は、エンドポイントごとに、Adobe Commerce RESTful エンドポイントで受け入れられる配列のサイズ制限を設定できるようになりました。 [API セキュリティ &#x200B;](https://developer.adobe.com/commerce/webapi/get-started/api-security/)を参照してください。<!-- AC-465-->
+* 開発者は、エンドポイントごとに、Adobe Commerce RESTful エンドポイントで受け入れられる配列のサイズ制限を設定できるようになりました。 [API セキュリティ &#x200B;](https://developer.adobe.com/commerce/webapi/get-started/api-security)を参照してください。<!-- AC-465-->
 
-* ユーザーがweb APIを通じてシステム全体でリクエストできるリソースのサイズと数を制限し、個々のモジュールのデフォルトを上書きするためのメカニズムを追加しました。 この機能強化により、`MC-43048__set_rate_limits__2.4.3.patch`が対処した問題が解決されます。 [API セキュリティ &#x200B;](https://developer.adobe.com/commerce/webapi/get-started/api-security/)を参照してください。<!-- AC-1120-->
+* ユーザーがweb APIを通じてシステム全体でリクエストできるリソースのサイズと数を制限し、個々のモジュールのデフォルトを上書きするためのメカニズムを追加しました。 この機能強化により、`MC-43048__set_rate_limits__2.4.3.patch`が対処した問題が解決されます。 [API セキュリティ &#x200B;](https://developer.adobe.com/commerce/webapi/get-started/api-security)を参照してください。<!-- AC-1120-->
 
 
 ## 2.4.3-p1
@@ -65,7 +65,7 @@ DHLはスキーマバージョン 6.2を導入しており、近い将来スキ�
 Adobe Commerce 2.4.3-p1 セキュリティリリースには、以前のリリース（Adobe Commerce 2.4.3およびMagento Open Source 2.4.3）で特定された脆弱性に対するセキュリティバグ修正が含まれています。 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB21-86](https://helpx.adobe.com/jp/security/products/magento/apsb21-86.html)を参照してください。 このパッチリリースでは、[Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=ja)、[Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html)、[Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html)のベンダーが開発した拡張機能のバグ修正も提供されています。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html)を参照してください。 このパッチリリースでは、[Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=ja)、[Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html)、[Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html)のベンダーが開発した拡張機能のバグ修正も提供されています。
 
 ### 配送業者としてDHLを提供し続けるには、AC-3022.patchを適用します
 
@@ -81,7 +81,7 @@ DHLはスキーマバージョン 6.2を導入しており、近い将来スキ�
 
 **セッション IDがデータベース**&#x200B;から削除されました。 このコードの変更により、マーチャントがカスタマイズを行ったり、データベースに保存されている生のセッション IDを使用する拡張機能をインストールしたりすると、破損する可能性があります。<!-- MC-40976-->
 
-**Media Gallery フォルダー**&#x200B;への管理者アクセスが制限されています。 デフォルトのメディアギャラリー権限で、設定で明示的に許可されているディレクトリ操作（表示、アップロード、削除、作成）のみが許可されるようになりました。 管理者ユーザーは、`catalog/category`または`wysiwyg` ディレクトリ以外にアップロードされたメディアギャラリーを通じてメディアアセットにアクセスできなくなります。 メディアアセットにアクセスする管理者は、明示的に許可されたフォルダーに移動するか、設定を調整する必要があります。 [&#x200B; メディアライブラリフォルダーの権限の変更](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/)を参照してください。<!-- B2B-1897-->
+**Media Gallery フォルダー**&#x200B;への管理者アクセスが制限されています。 デフォルトのメディアギャラリー権限で、設定で明示的に許可されているディレクトリ操作（表示、アップロード、削除、作成）のみが許可されるようになりました。 管理者ユーザーは、`catalog/category`または`wysiwyg` ディレクトリ以外にアップロードされたメディアギャラリーを通じてメディアアセットにアクセスできなくなります。 メディアアセットにアクセスする管理者は、明示的に許可されたフォルダーに移動するか、設定を調整する必要があります。 [&#x200B; メディアライブラリフォルダーの権限の変更](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions)を参照してください。<!-- B2B-1897-->
 
 **GraphQL クエリの複雑さの制限を下げました**。 サービス拒否（DOS）攻撃を防ぐために、GraphQLで許可される最大クエリの複雑さが軽減されました。 [GraphQL セキュリティ設定](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/)を参照してください。<!-- PWA-1700-->
 

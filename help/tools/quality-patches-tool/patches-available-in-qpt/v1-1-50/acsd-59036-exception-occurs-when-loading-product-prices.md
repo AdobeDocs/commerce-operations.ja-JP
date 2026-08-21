@@ -1,78 +1,78 @@
 ---
-title: ACSD-59036：下限と上限の両方が$0 に設定された製品価格を読み込むと、例外が発生します
-description: ACSD-59036 パッチを適用すると、下限と上限の両方が*$0*に設定された商品価格を読み込む際に例外が発生するAdobe Commerceの問題を修正できます。
+title: ACSD-59036：下限と上限の両方が$0に設定された製品価格を読み込むと、例外が発生する
+description: ACSD-59036 パッチを適用して、下限と上限の両方を*$0*に設定した製品価格を読み込む際に例外が発生するAdobe Commerceの問題を修正します。
 feature: Categories, Products, Storefront, Search
 role: Admin, Developer
 exl-id: a7d05108-0b03-4eb4-84ab-0dc5601530cb
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
-# ACSD-59036：下限と上限の両方が *$0 に設定された製品価格を読み込むと、例外が発生します*
+# ACSD-59036：下限と上限の両方が&#x200B;*$0*&#x200B;に設定された製品価格を読み込むと例外が発生する
 
-ACSD-59036 パッチは、下限と上限の両方が *$0* に設定された製品価格を読み込む際に例外が発生する問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.50 がインストールされている場合に使用できます。 パッチ ID は ACSD-59036 です。 この問題はAdobe Commerce 2.4.8 で修正される予定であることに注意してください。
+ACSD-59036 パッチは、下限と上限の両方を&#x200B;*$0*&#x200B;に設定した製品価格を読み込む際に例外が発生する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.50がインストールされている場合に利用できます。 パッチ IDはACSD-59036です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 Adobe Commerce（すべてのデプロイメント方法） 2.4.7
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-Adobe Commerce（すべてのデプロイメント方法） 2.4.7 ～ 2.4.7-p2
+Adobe Commerce（すべてのデプロイメント方法） 2.4.7 - 2.4.7-p2
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-下限と上限の両方が *$0* に設定された製品価格を読み込むと、例外が発生します。
+下限と上限の両方が&#x200B;*$0*&#x200B;に設定された製品価格を読み込むと、例外が発生します。
 
-この問題は、価格範囲を含むクエリを読み込む際に、アルゴリズムが NULL 値を考慮しないために発生しています。 これを修正するには、下限と上限の両方の範囲が NULL かどうかを確認し、NULL の場合は、両方の制限に *0* の値を割り当てます。 これにより、エラーがスローされるのを防ぐことができます。
+価格帯を含むクエリを読み込む際に、アルゴリズムがNULL値を考慮しないため、問題が発生しています。 これを修正するには、下位範囲と上位範囲の両方がNULLであるかどうかを確認し、それらがNULLである場合は、両方の制限に&#x200B;*0*&#x200B;の値を割り当てます。 これにより、エラーがスローされるのを防ぐ必要があります。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. *13* のシンプルな製品を作成します。
-1. すべての *13* 製品を 1 つのカテゴリに割り当てます。
-1. 1 つの製品の価格を 1322.94 *ド* に設定してください。
-1. その他の商品はすべて 0 *ド* に設定してください。
-1. [!DNL OpenSearch] を検索エンジンとして設定します。
-1. **[!UICONTROL Stores]**/**[!UICONTROL Configuration]**/**[!UICONTROL Catalog]**/**[!UICONTROL Storefront]** に移動し、**[!UICONTROL PLP]** のカウントを *16* に設定します。
-1. **[!UICONTROL Price Navigation Step Calculation]** を *自動（製品数を平均化）* に設定します。
-1. 完全な再インデックスを実行します。
+1. *13*&#x200B;個のシンプルな商品を作成します。
+1. すべての&#x200B;*13*&#x200B;製品をカテゴリに割り当てます。
+1. 1つの商品の価格を&#x200B;*$1322.94*&#x200B;に設定します。
+1. その他のすべての商品の価格を&#x200B;*$0*&#x200B;に設定します。
+1. [!DNL OpenSearch]を検索エンジンとして設定します。
+1. **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Storefront]**&#x200B;に移動し、**[!UICONTROL PLP]** カウントを&#x200B;*16*&#x200B;に設定します。
+1. **[!UICONTROL Price Navigation Step Calculation]**&#x200B;を&#x200B;*自動（製品数を等しくする）*&#x200B;に設定します。
+1. 完全なインデックス再作成を実行します。
 1. *[!UICONTROL Category]* ページを開きます。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-*[!UICONTROL Category]* のページには、すべての製品が表示されます。
+*[!UICONTROL Category]* ページには、すべての製品が表示されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-エラーが発生しました：
+エラーが発生します。
 
 ```JSON
 report.CRITICAL: OpenSearch\Common\Exceptions\BadRequest400Exception: {"error":{"root_cause":[{"type":"x_content_parse_exception","reason":"[1:193] [bool] failed to parse field [must]"}],"type":"x_content_parse_exception","reason":"[1:193] [bool] failed to parse field [filter]","caused_by":{"type":"x_content_parse_exception","reason":"[1:193] [bool] failed to parse field [must]","caused_by":{"type":"illegal_argument_exception","reason":"field name is null or empty"}}},"status":400} in /vendor/opensearch-project/opensearch-php/src/OpenSearch/Connections/Connection.php:664
 ```
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

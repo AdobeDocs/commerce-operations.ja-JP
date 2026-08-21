@@ -1,67 +1,67 @@
 ---
-title: ACSD-50512：ダウンロード可能な製品のステージング更新の開始日を更新する際にエラーが発生する
-description: ダウンロード可能な製品のステージングアップデートの開始日を更新する際に、「ダウンロード可能なリンクが製品に関連していません。リンクを確認して、もう一度やり直してください」というエラーが発生するAdobe Commerceのパフォーマンスの問題を修正するために、ACSD-51892 パッチを適用します。
+title: ACSD-50512：ダウンロード可能な製品ステージング更新プログラムの開始日を更新する際にエラーが発生する
+description: ACSD-51892 パッチを適用して、エラー*ダウンロード可能なリンクが製品に関連しないAdobe Commerceのパフォーマンス問題を修正します。ダウンロード可能な製品ステージング更新プログラムの開始日を更新する際に、リンクを確認して、もう一度試してください*。
 feature: Products, Staging
 role: Admin
 exl-id: 9c3b4d45-c500-46a7-8679-a8aa9e0a66d6
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
-# ACSD-50512：ダウンロード可能な製品のステージング更新の開始日を更新する際にエラーが発生しました
+# ACSD-50512：ダウンロード可能な製品ステージング更新の開始日を更新する際にエラーが発生する
 
-ACSD-50512 パッチは、エラー *ダウンロード可能なリンクは製品に関連していません。 ダウンロード可能な製品のステージング更新の開始日を更新する際に、リンクを確認して* もう一度試してください。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.33 がインストールされている場合に使用できます。 パッチ ID は ACSD-51502 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-50512 パッチは、エラー&#x200B;*ダウンロード可能なリンクが製品に関連しない問題を修正します。 ダウンロード可能な製品ステージング更新プログラムの開始日を更新する際に、リンクを確認して再試行してください*。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.33がインストールされている場合に利用できます。 パッチ IDはACSD-51502です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.5-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.5 ～ 2.4.6-p1
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.5 - 2.4.6-p1
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-エラー *ダウンロード可能なリンクは製品に関連していません。 ダウンロード可能な製品のステージング更新の開始日を更新する際に、リンクを確認して* もう一度試してください。
+エラー&#x200B;*ダウンロード可能なリンクが製品と関連していません。 ダウンロード可能な製品ステージング更新プログラムの開始日を更新する際に、リンクを確認して再試行してください*。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. *ダウンロード可能なリンク* および *サンプルリンク* を含む、ダウンロード可能な製品を作成します。
-1. 同じ商品のスケジュールされた更新を作成し、商品を保存します。
-1. （手順 2 で）事前設定されたスケジュール済み更新を編集し、開始日を変更します。
+1. *ダウンロード可能なリンク*&#x200B;と&#x200B;*サンプルリンク*&#x200B;を含むダウンロード可能な製品を作成します。
+1. 同じ製品に対してスケジュールされた更新を作成し、製品を保存します。
+1. 事前設定済みのスケジュールされた更新（手順2から）を編集し、開始日を変更します。
 1. スケジュールされた更新を保存します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-スケジュールされた更新に対する変更は正常に保存されました。
+スケジュールされた更新への変更が正常に保存されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-*ダウンロード可能なリンクは製品に関連していません。 リンクを確認して、もう一度やり直してください*。
+次のエラーが発生します：*ダウンロード可能なリンクが製品と関連しません。 リンクを確認して、もう一度やり直してください*。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

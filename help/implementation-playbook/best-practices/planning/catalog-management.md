@@ -4,7 +4,7 @@ description: カート制限と製品属性の設定、ページネーション�
 role: Developer
 feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 0%
@@ -100,7 +100,7 @@ MySQLを使用して、未使用の製品属性セットを削除します。
 
 #### 属性セット設定の確認
 
-1. [&#x200B; サイト データベースに接続](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database)。
+1. [&#x200B; サイト データベースに接続](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database)。
 
 1. MySQLを使用して属性セットの数を検索する
 

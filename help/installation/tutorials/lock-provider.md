@@ -2,8 +2,8 @@
 title: ロックプロバイダーの設定
 description: Adobe Commerceのデプロイメントで、重複するcron ジョブとcron グループが実行されないようにするには、次の手順に従います。
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Adobe Commerceでは、デフォルトでデータベースを使用してロックを保存します。 サーバーに複数のノードがある場合は、ロックプロバイダーとしてZookeeperを使用することをお勧めします。
 
-Adobe Commerceをクラウドインフラストラクチャ上で実行している場合は、ロックプロバイダーの設定を行う必要はありません。 アプリケーションは、プロビジョニングプロセス中にPro プロジェクトのファイルロックプロバイダーを設定します。 [&#x200B; クラウド変数](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)を参照してください。
+Adobe Commerceをクラウドインフラストラクチャ上で実行している場合は、ロックプロバイダーの設定を行う必要はありません。 アプリケーションは、プロビジョニングプロセス中にPro プロジェクトのファイルロックプロバイダーを設定します。 [&#x200B; クラウド変数](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud)を参照してください。
 
 ### コマンドの使用
 

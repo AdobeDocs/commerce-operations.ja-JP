@@ -5,9 +5,9 @@ feature: REST
 role: Admin, Developer
 type: Troubleshooting
 exl-id: c2a8f4ef-3998-4e73-af9e-69b17a10d684
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ACSD-65775 パッチは、同じ項目の複数の数量が注文されたとき
    }
    ```
 
-1. GET リクエストを使用して注文の詳細を`/rest/default/V1/orders/1`に取得します。
+1. `/rest/default/V1/orders/1`へのGET リクエストを使用して、注文の詳細を取得します。
 
 <u>期待される結果</u>:
 
@@ -64,7 +64,7 @@ ACSD-65775 パッチは、同じ項目の複数の数量が注文されたとき
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 

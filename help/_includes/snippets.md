@@ -1,7 +1,7 @@
 ---
-source-git-commit: d8197ca0e1028cb50fae0415843c80ac68e49566
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1077'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce on Cloud プロジェクトのキャッシュ設定手順については、[RedisおよびValkey サービス設定のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)を参照してください。
+>Adobe Commerce on Cloud プロジェクトのキャッシュ設定手順については、[RedisおよびValkey サービス設定のベストプラクティス &#x200B;](/help/implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md)を参照してください。
 
 ## Redis キャッシュのサポート {#redis-cache-support}
 
@@ -21,7 +21,7 @@ Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14
 
 >[!NOTE]
 >
->Commerce プロジェクトがクラウドにデプロイされている場合、フルページキャッシュでは、Varnishの代わりに[Fastly](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/cdn/fastly)が使用されます。 この節のトピックは、オンプレミスのインストールにのみ適用されます。
+>Commerce プロジェクトがクラウドにデプロイされている場合、フルページキャッシュでは、Varnishの代わりに[Fastly](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/fastly)が使用されます。 この節のトピックは、オンプレミスのインストールにのみ適用されます。
 
 ## Adobe サービス版サポート {#supported-versions-only}
 
@@ -35,7 +35,7 @@ Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14
 >
 >サポートされていないバージョンを実行すると、ストアがセキュリティ上の脆弱性にさらされる可能性があります。また、Adobeでは、ベンダーが管理しなくなった依存関係に対するセキュリティパッチを提供できません。
 >
->サポートされているバージョンの完全なリストについては、[製品可用性マトリックス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability)を参照してください。
+>サポートされているバージョンの完全なリストについては、[製品可用性マトリックス &#x200B;](/help/release/product-availability.md)を参照してください。
 
 ## 拡張サポート用のセキュリティパッチ {#extended-support}
 
@@ -85,7 +85,7 @@ Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14
 
 >[!NOTE]
 >
->Adobe Commerce リリースには、下位互換性のない変更（BIC）が含まれている場合があります。 後方互換性のない変更を確認するには、[BIC reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)を参照してください。 後方互換性のない主要な問題については、[BIC ハイライト &#x200B;](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)で説明しています。 すべてのリリースが主要なBICを導入しているわけではありません。
+>Adobe Commerce リリースには、下位互換性のない変更（BIC）が含まれている場合があります。 後方互換性のない変更を確認するには、[BIC reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference)を参照してください。 後方互換性のない主要な問題については、[BIC ハイライト &#x200B;](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)で説明しています。 すべてのリリースが主要なBICを導入しているわけではありません。
 
 ## Alphaの免責事項 {#alpha}
 
@@ -133,7 +133,7 @@ Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14
 
 * **Apache ActiveMQ Artemis STOMP プロトコルのサポートを追加しました**
 
-  Simple Text Oriented Messaging Protocol （STOMP）によるActiveMQ Artemis オープンソースのメッセージブローカーのサポートを追加しました。 信頼性の高いスケーラブルなメッセージングシステムを提供し、STOMP ベースの統合に柔軟に対応できます。 *Commerce Configuration Guide*&#x200B;の[Apache ActiveMQ Artemis](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp)を参照してください。
+  Simple Text Oriented Messaging Protocol （STOMP）によるActiveMQ Artemis オープンソースのメッセージブローカーのサポートを追加しました。 信頼性の高いスケーラブルなメッセージングシステムを提供し、STOMP ベースの統合に柔軟に対応できます。 *Commerce Configuration Guide*&#x200B;の[Apache ActiveMQ Artemis](/help/configuration/queues/message-queue-framework.md#apache-activemq-artemis-stomp)を参照してください。
 
 ## チェックアウトページでstatic.min.jsとmixins.min.jsの読み込みに失敗する {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
 

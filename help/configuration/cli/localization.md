@@ -2,7 +2,7 @@
 title: 翻訳辞書と言語パッケージ
 description: Adobe Commerceの翻訳辞書を生成し、言語パッケージを構築する方法について説明します。 ローカライゼーションと多言語ストアの設定。
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
@@ -117,7 +117,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 - 必要なライセンスファイル
 - `composer.json`
-- [が言語パッケージを](https://developer.adobe.com/commerce/php/development/build/component-registration/)登録する`registration.php`
+- [が言語パッケージを](https://developer.adobe.com/commerce/php/development/build/component-registration)登録する`registration.php`
 - [`language.xml`](#language-package-languagexml) メタ情報ファイル
 
 >[!INFO]
@@ -131,8 +131,8 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
    例えば、Commerceの言語パッケージは`app/i18n/magento`にあります
 
 1. 必要なライセンスファイルを追加します。
-1. 言語パッケージの依存関係を指定する[`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration/)を追加します。
-1. 言語パッケージを[`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration/)に登録します
+1. 言語パッケージの依存関係を指定する[`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration)を追加します。
+1. 言語パッケージを[`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration)に登録します
 1. 次の節で説明するように、`language.xml`のメタ情報ファイルを追加します。
 
 #### 言語パッケージ language.xml

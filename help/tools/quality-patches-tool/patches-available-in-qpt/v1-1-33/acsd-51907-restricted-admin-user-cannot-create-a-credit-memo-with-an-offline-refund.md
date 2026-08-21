@@ -1,76 +1,76 @@
 ---
-title: ACSD-51907：制限付き管理者ユーザーは、オフライン払い戻しのクレジット メモを作成できません
-description: ACSD-51907 パッチを適用すると、制限付き管理者ユーザーは、オフライン払い戻しではクレジットメモを作成できないAdobe Commerceの問題を修正できます。
+title: ACSD-51907：制限付きの管理者ユーザーが、オフラインの払い戻し用のクレジットメモを作成できない
+description: ACSD-51907 パッチを適用して、制限された管理者ユーザーがオフラインの払い戻しを含むクレジットメモを作成できないAdobe Commerceの問題を修正します。
 exl-id: 1c44d99b-7633-4768-b7e7-332f3666a5d9
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
 
-# ACSD-51907：制限付き管理者ユーザーは、オフライン払い戻しのクレジット メモを作成できません
+# ACSD-51907：制限付きの管理者ユーザーが、オフラインの払い戻し用のクレジットメモを作成できない
 
-ACSD-51907 パッチは、制限付き管理者ユーザーがオフライン払い戻しによるクレジットメモを作成できないパフォーマンスの問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.33 がインストールされている場合に使用できます。 パッチ ID は ACSD-51907 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-51907 パッチは、制限された管理者ユーザーがオフラインの払い戻しを含むクレジットメモを作成できないパフォーマンスの問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.33がインストールされている場合に利用できます。 パッチ IDはACSD-51907です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.2-p2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.2 &lt; 2.4.3-p3
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-制限付き管理者ユーザーは、オフライン払い戻しを含むクレジット メモを作成できません。
+制限付き管理者ユーザーは、オフライン払い戻しを含むクレジットメモを作成できません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. デフォルトの web サイトに **顧客** を作成します。
-1. 関連する **ストア** および *ストア表示* を使用して *新しい web サイト* を作成します。
-1. デフォルトの web サイトを新しい web サイトに設定し、キャッシュをクリアします。
-1. 顧客設定を変更：**管理者**/**ストア**/**設定**/**顧客**/**顧客設定**/**顧客アカウントを共有= グローバル**
-1. *管理者*/**システム**/**権限** で、役割の範囲を新しく作成された web サイト **（販売データへのアクセスのみ）** 設定した新しい管理者ユーザーロールを作成します。
-1. この役割で新しい管理者アカウントを作成します。
-1. オンライン支払い方法 *（例：Auth.netまたは PayPal）* を使用して新しい注文を作成します。
+1. 既定のweb サイトに&#x200B;**顧客**&#x200B;を作成します。
+1. 関連する&#x200B;*ストア*&#x200B;と&#x200B;*ストアビュー*&#x200B;を使用して&#x200B;**新しいweb サイト**&#x200B;を作成します。
+1. デフォルトのweb サイトを新しいweb サイトに設定し、キャッシュをクリアします。
+1. 顧客設定の変更：**管理者** > **店舗** > **設定** > **顧客** > **顧客設定** > **顧客アカウントの共有= グローバル**。
+1. **管理者** > **システム** > **権限**&#x200B;で、役割の範囲が新しく作成されたweb サイト *（セールスデータへのアクセスのみ）*&#x200B;に設定された新しい管理者ユーザーの役割を作成します。
+1. この役割を持つ新しい管理者アカウントを作成します。
+1. オンライン支払い方法&#x200B;*（例：Auth.netまたはPayPal）*&#x200B;を使用して新しい注文を作成します。
 1. 制限付き管理者ユーザーとしてログインします。
-1. **Sales**/**Orders**/**order view page** に移動します。
+1. **Sales** > **Orders** > then **order view page**&#x200B;に移動します。
 1. 請求書を作成します。
-1. 「請求書」タブにナビゲートします。
-1. **請求書** をクリックします。
-1. 「**[!UICONTROL Credit Memo]**」をクリックします。
-1. 「**[!UICONTROL Refund to Store Credit]**」チェックボックスをオンにして、その近くのテキストフィールドを *1* 値に設定します。
+1. 「請求書」タブに移動します。
+1. **請求書**&#x200B;をクリックします。
+1. **[!UICONTROL Credit Memo]**&#x200B;をクリックします。
+1. 「**[!UICONTROL Refund to Store Credit]**」チェックボックスをオンにし、その近くのテキストフィールドを&#x200B;*1*&#x200B;値に設定します。
 1. 「**[!UICONTROL Refund Offline]**」ボタンをクリックします。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-クレジットメモが作成され、*$1* が店舗クレジットに払い戻されます。
+クレジットメモが作成され、*$1*&#x200B;が店舗のクレジットに返金されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-*この項目を表示するには、さらに権限が必要です* というエラーメッセージが表示されます。
+エラーメッセージ「*この項目を表示するには、さらに権限が必要です*」が表示されます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

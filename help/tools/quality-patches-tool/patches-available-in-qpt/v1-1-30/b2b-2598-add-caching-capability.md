@@ -23,16 +23,16 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 industry_v2:
   - id: aad1e361-483a-40cf-9a88-144325515074
-source-git-commit: 17c3f587a16209876a9713881eff0034d872581e
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: 457
+source-wordcount: 422
 ht-degree: 0%
 
 ---
 
 # B2B-2598: `storeConfig`、`currency`、`country`、`countries`、および`availableStores`個のGraphQl クエリにキャッシュ機能を追加
 
-B2B-2598 パッチでは、`storeConfig`、`currency`、`country`、`countries`、および`availableStores`個のGraphQl クエリにキャッシュ機能が追加されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.30がインストールされている場合に利用できます。 パッチ IDはB2B-2598です。 この問題は、Adobe Commerce 2.4.7-beta1で修正される予定です。
+B2B-2598 パッチでは、`storeConfig`、`currency`、`country`、`countries`、および`availableStores`個のGraphQl クエリにキャッシュ機能が追加されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.30がインストールされている場合に利用できます。 パッチ IDはB2B-2598です。 この問題は、Adobe Commerce 2.4.7-beta1で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
@@ -68,13 +68,13 @@ B2B-2598 パッチでは、`storeConfig`、`currency`、`country`、`countries`�
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」ガイド
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」ガイド
 
 ## 関連トピックス
 
 [!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)
+* [[!DNL Quality Patches Tool]  リリース：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
 * [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを確認します
 
 

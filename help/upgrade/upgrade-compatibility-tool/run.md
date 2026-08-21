@@ -2,9 +2,9 @@
 title: ' [!DNL Upgrade Compatibility Tool]を実行'
 description: Adobe Commerce プロジェクトのコマンドラインインターフェイスで [!DNL Upgrade Compatibility Tool] を実行するには、次の手順に従います。
 exl-id: ea467a74-18eb-476b-96e2-23f4fc257d73
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -258,9 +258,9 @@ bin/uct upgrade:check --help
 ## Adobe Commerceのベストプラクティス
 
 - 同じ名前の2つのモジュールを使用しないでください。
-- Adobe Commerce [&#x200B; コーディング標準](https://developer.adobe.com/commerce/php/coding-standards)に従います。
+- Adobe Commerce [&#x200B; コーディング標準](https://developer.adobe.com/commerce/php/coding-standards/)に従います。
 - Adobe Commerce 2.4 [&#x200B; アップグレード ガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=ja)のベストプラクティス。
-- [&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ja)Adobe Commerceの[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=ja){target=_blank}から[!DNL Upgrade Compatibility Tool]をクラウドインフラストラクチャ &#x200B; プロジェクトで実行します。
+- [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/project/overview)Adobe Commerceの[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=ja){target=_blank}から[!DNL Upgrade Compatibility Tool]をクラウドインフラストラクチャ &#x200B; プロジェクトで実行します。
 
 ## 成果の最適化
 

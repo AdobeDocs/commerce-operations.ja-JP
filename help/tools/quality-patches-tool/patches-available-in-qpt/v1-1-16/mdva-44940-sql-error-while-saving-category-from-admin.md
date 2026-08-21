@@ -1,70 +1,70 @@
 ---
-title: MDVA-44940：管理者からカテゴリを保存中に SQL エラーが発生しました
-description: MDVA-44940 パッチを適用すると、管理者からカテゴリを保存中に SQL エラーが発生する問題が修正されます。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.16 がインストールされている場合に利用できます。 パッチ ID は MDVA-44940。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+title: MDVA-44940：管理者からカテゴリを保存中にSQL エラーが発生する
+description: MDVA-44940 パッチは、管理者からカテゴリを保存する際にSQL エラーが発生する問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.16がインストールされている場合に利用できます。 パッチ IDはMDVA-44940です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
 feature: Admin Workspace, Categories, Sales Channels
 role: Admin
 exl-id: de4384f1-a75d-4726-810f-6560a7c57b82
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
 
-# MDVA-44940：管理者からカテゴリを保存中に SQL エラーが発生しました
+# MDVA-44940：管理者からカテゴリを保存中にSQL エラーが発生する
 
-MDVA-44940 パッチを適用すると、管理者からカテゴリを保存中に SQL エラーが発生する問題が修正されます。 このパッチは、[Quality Patches Tool （QPT） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)1.1.16 がインストールされている場合に使用できます。 パッチ ID は MDVA-44940。 この問題はAdobe Commerce 2.4.6 で修正される予定であることに注意してください。
+MDVA-44940 パッチは、管理者からカテゴリを保存する際にSQL エラーが発生する問題を修正します。 このパッチは、[品質パッチツール（QPT） &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.16がインストールされている場合に使用できます。 パッチ IDはMDVA-44940です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.3-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 ～ 2.4.4
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.3 - 2.4.4
 
 >[!NOTE]
 >
->パッチは、新しい Quality Patches Tool リリースを使用する他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
 管理者からカテゴリを保存すると、SQL エラーが発生します。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
 1. サンプルデータをインストールします。
-1. デフォルトカテゴリにストアグループを割り当てた 2 つ目の web サイトを作成します。
+1. デフォルトカテゴリに割り当てられたストアグループを持つ2番目のweb サイトを作成します。
 
-   * 新しいストアグループに割り当てるストア表示を作成します。
+   * 新しいストアグループに割り当てられたストアビューを作成します。
 
-1. 在庫と、この在庫に割り当てられた追加のソース、および 2 つ目の web サイトに割り当てられた販売チャネルを作成します。
-1. 2 つ目の web サイトに割り当てたテスト製品を作成します。
-1. **管理者**/**カタログ**/**カテゴリ** に移動し、**範囲** = **2 番目の Web サイト** を選択して **カテゴリの製品**/**自動並べ替え**/在庫切れの製品を下部に移動して **保存** をクリックします。
+1. 在庫を作成し、この在庫に割り当てられた追加ソースと、2番目のweb サイトに割り当てられた販売チャネルを作成します。
+1. 2番目のweb サイトに割り当てられたテスト製品を作成します。
+1. **管理者** > **カタログ** > **カテゴリー**&#x200B;に移動し、**スコープ** = **秒のWeb サイト**&#x200B;を選択して、**カテゴリー内の製品** > **自動並べ替え** >在庫切れの製品を下部に移動し、**保存**&#x200B;をクリックします。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
 カテゴリが保存されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-次のエラーが発生します。*カテゴリの保存中に問題が発生しました*。
+次のエラーが発生します：*カテゴリの保存中に問題が発生しました*。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-品質向上パッチツールの詳細については、次を参照してください。
+品質パッチツールについて詳しくは、以下を参照してください。
 
-* [&#x200B; 品質向上パッチツールがリリースされました：品質向上パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) がサポートナレッジベースに追加されました。
-* [Quality Patches Tool を使用して、Adobe Commerceの問題に対するパッチが使用可能かどうかを確認します &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!DNL Quality Patches Tool] ガイド）。
+* [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [品質パッチツール &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

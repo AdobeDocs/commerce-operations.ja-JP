@@ -1,73 +1,73 @@
 ---
-title: ACSD-53414：制限付き管理者ユーザーが、権限適用範囲外のCMS ページを表示できる
-description: ACSD-53414 パッチを適用すると、制限付き管理者ユーザーが権限適用範囲外のCMS ページを表示できるAdobe Commerceの問題を修正できます。
+title: ACSD-53414：制限付き管理者ユーザーが、権限の範囲外のCMS ページを表示する
+description: ACSD-53414 パッチを適用して、制限付き管理者ユーザーが権限範囲外のCMS ページを表示できるAdobe Commerceの問題を修正します。
 feature: CMS
 role: Admin, Developer
 exl-id: 86658336-679b-4fe0-9d26-56064ff0c604
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
 
-# ACSD-53414：制限付き管理者ユーザーが、権限適用範囲外のCMS ページを表示できる
+# ACSD-53414：制限付き管理者ユーザーが、権限の範囲外のCMS ページを表示する
 
-ACSD-53414 パッチでは、制限付き管理者ユーザーが、自身の権限適用範囲外にあるCMS ページを表示できる問題を修正しました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.40 がインストールされている場合に使用できます。 パッチ ID は ACSD-53414 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-53414 パッチでは、制限付き管理者ユーザーが権限範囲外のCMS ページを表示できる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.40がインストールされている場合に利用できます。 パッチ IDはACSD-53414です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p1
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6 - 2.4.6-p3
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-制限付き管理者ユーザーには、権限適用範囲外のCMS ページも表示されます。
+制限付き管理者ユーザーは、権限の範囲を超えてCMS ページを表示できます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 新しい web サイト（sub_website）、ストア（sub_store）、ストレビュー（sub_storeview）を作成します。
-1. sub_expert ロールを作成して、sub_website および sub_store の範囲を許可します。 [!UICONTROL Dashboard] および [!UICONTROL Pages] の権限のみを割り当てます。
-1. 新しい管理者ユーザーを作成して、sub_expert ロールに割り当てます。
-1. 以下の CSM ページを sub_storereview と default storereview に割り当てます。
+1. 新しいweb サイト（sub_website）、ストア（sub_store）、およびストアビュー（sub_storeview）を作成します。
+1. sub_expertの役割を作成し、sub_websiteとsub_storeの範囲を許可します。 次の権限のみを割り当てます：[!UICONTROL Dashboard]および[!UICONTROL Pages]。
+1. 新しい管理者ユーザーを作成し、sub_expertの役割に割り当てます。
+1. 次のCSM ページをsub_storeviewとデフォルトのstoreviewに割り当てます。
 
-   * [!UICONTROL 404 Not Found] > サブストアの確認
-   * [!UICONTROL 503 Service Unavailable] > デフォルトの storereview
+   * [!UICONTROL 404 Not Found] > サブストアビュー
+   * [!UICONTROL 503 Service Unavailable] > デフォルトのストアビュー
 
-1. 手順 3 で作成した管理者ユーザーを使用して管理者にログインします。
-1. CMS ページグリッドを確認します。
+1. 手順3で作成した管理者ユーザーを使用して、管理者にログインします。
+1. CMSのページグリッドを確認します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-*[!UICONTROL 503 Service Unavailable]* ページは、web 管理者には表示されません。
+*[!UICONTROL 503 Service Unavailable]* ページはweb管理者には表示されません。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-*[!UICONTROL 503 Service Unavailable]* は、web 管理者に表示されます。
+*[!UICONTROL 503 Service Unavailable]*&#x200B;はweb管理者に表示されます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

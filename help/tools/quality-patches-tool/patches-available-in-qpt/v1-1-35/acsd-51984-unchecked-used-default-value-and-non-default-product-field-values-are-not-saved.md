@@ -5,9 +5,9 @@ feature: Products
 role: Admin
 exl-id: 51a810fa-d416-4b37-b5bd-66eed9fe4626
 type: Troubleshooting
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >このパッチは古く、1.1.39 QPT リリースで追加された[ACSD-54776](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-54776-unchecked-used-default-value-and-non-default-product-field-values-are-not-saved.md) パッチに置き換えられました。
 
-ACSD-51984 パッチは、チェックされていない&#x200B;**[!UICONTROL Use Default Value]**&#x200B;およびデフォルト以外の製品フィールド値が、2番目のweb サイト、ストア、ストアビューに保存されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.35がインストールされている場合に利用できます。 パッチ IDはACSD-51984です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
+ACSD-51984 パッチは、チェックされていない&#x200B;**[!UICONTROL Use Default Value]**&#x200B;およびデフォルト以外の製品フィールド値が、2番目のweb サイト、ストア、ストアビューに保存されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.35がインストールされている場合に利用できます。 パッチ IDはACSD-51984です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
@@ -43,7 +43,7 @@ ACSD-51984 パッチは、チェックされていない&#x200B;**[!UICONTROL Us
 1. バックエンドに移動し、**[!UICONTROL Stores]** > **[!UICONTROL All Stores]**&#x200B;に移動して、新しいweb サイト、ストア、ストアビューを作成します。
 1. **[!UICONTROL Catalog]** > **[!UICONTROL Products]**&#x200B;に移動し、シンプルな製品を作成して保存し、両方のweb サイト（**[!UICONTROL Product in Websites]**&#x200B;から）に製品を割り当てます。
 1. スコープを手順2から新しく作成したストアビューに変更します。
-1. **[!UICONTROL Search Engine Optimization]**&#x200B;に移動し、**[!UICONTROL Use Default Value]**、[!UICONTROL Meta Title]、[!UICONTROL Meta Keywords]の[!UICONTROL Meta Description] チェックボックスのチェックを外します。
+1. **[!UICONTROL Search Engine Optimization]**&#x200B;に移動し、[!UICONTROL Meta Title]、[!UICONTROL Meta Keywords]、[!UICONTROL Meta Description]の&#x200B;**[!UICONTROL Use Default Value]** チェックボックスのチェックを外します。
 1. フィールド *[!UICONTROL Meta Title]*、*[!UICONTROL Meta Keywords]*&#x200B;および&#x200B;*[!UICONTROL Meta Description]*&#x200B;からテキストを削除し、**[!UICONTROL Save]**&#x200B;をクリックします。
 1. もう一度&#x200B;**[!UICONTROL Search Engine Optimization]**&#x200B;に移動します。
 
@@ -59,15 +59,15 @@ ACSD-51984 パッチは、チェックされていない&#x200B;**[!UICONTROL Us
 
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool]  ガイドの](/help/tools/quality-patches-tool/usage.md)>使用状況[!DNL Quality Patches Tool]。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)」（Commerce クラウドインフラストラクチャガイド）。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
 [!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。
-* [&#x200B; [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) ガイドの[!UICONTROL Quality Patches Tool]を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) ガイドの「[!DNL Quality Patches Tool] パッチを検索する」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

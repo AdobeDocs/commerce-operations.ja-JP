@@ -2,9 +2,9 @@
 title: パッチリリーススケジュール
 description: Adobe Commerce の新しいパッチとセキュリティ修正のリリースに関して、アドビが発表を予定している時期について説明します。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 0f46bdfd0afbca07e0d60e995ee9426f5408671d
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '402'
 ht-degree: 4%
 
 ---
@@ -51,4 +51,4 @@ Adobeは、次のチャネルを通じて、新しいパッチリリースにつ
 
 >[!NOTE]
 >
-> マイナー、パッチ、セキュリティの各リリースのリリース日と、通常のサポートの終了日については、[&#x200B; リリース済みバージョン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/versions)を参照してください。
+> マイナー、パッチ、セキュリティの各リリースのリリース日と、通常のサポートの終了日については、[&#x200B; リリース済みバージョン &#x200B;](/help/release/versions.md)を参照してください。

@@ -1,77 +1,77 @@
 ---
-title: ACSD-48212：製品のインポートによって製品が誤ったソースに割り当てられる
-description: 製品の読み込みによって製品が誤ったソースに割り当てられるAdobe Commerceの問題を修正するには、ACSD-48212 パッチを適用してください。
+title: ACSD-48212：製品の読み込みで、間違ったソースに製品が割り当てられる
+description: ACSD-48212 パッチを適用して、製品の読み込みが間違ったソースに製品を割り当てるAdobe Commerceの問題を修正します。
 feature: Admin Workspace, Data Import/Export, Products
 role: Admin
 exl-id: d573d95b-95fc-4f59-b518-18088855a154
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
 
-# ACSD-48212：製品のインポートによって製品が誤ったソースに割り当てられる
+# ACSD-48212：製品の読み込みで、間違ったソースに製品が割り当てられる
 
-ACSD-48212 パッチは、製品の読み込みによって製品が誤ったソースに割り当てられる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.26 がインストールされている場合に使用できます。 パッチ ID は ACSD-48212 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-48212 パッチは、製品のインポートで製品が間違ったソースに割り当てられる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.26がインストールされている場合に利用できます。 パッチ IDはACSD-48212です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.4-p2
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 ～ 2.4.6
+* Adobe Commerce（すべてのデプロイメント方法） 2.3.7 - 2.4.6
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-製品の読み込みによって、製品が誤ったソースに割り当てられる。
+製品の読み込みでは、間違ったソースに製品が割り当てられます。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. サブ在庫ソースを作成します。
-1. デフォルトの在庫ソースのみを持つ製品を作成します。
-1. 商品を書き出します。
-1. `bin/magento cron:run` を実行します。
-1. **[!UICONTROL Catalog]**/**[!UICONTROL Prdoucts]** を開きます。
-1. グリッドから製品を選択します。
-1. *[!UICONTROL mass action]* メニューを使用して在庫を割り当て解除します。
-1. `bin/magento cron:run` を実行します。
-1. *[!UICONTROL mass action]* メニューを使用してセカンダリソースを割り当てます。
-1. `bin/magento cron:run` を実行します。
-1. *[!UICONTROL mass action]* メニューを使用して商品を削除します。
-1. `bin/magento cron:run` を実行します。
-1. 以前に書き出した CSV を使用して製品を読み込みます。
+1. セカンダリ在庫ソースを作成。
+1. デフォルトの在庫ソースのみを使用して商品を作成します。
+1. 製品をエクスポートします。
+1. `bin/magento cron:run`を実行します。
+1. **[!UICONTROL Catalog]** > **[!UICONTROL Prdoucts]**&#x200B;を開きます。
+1. グリッドから商品を選択します。
+1. *[!UICONTROL mass action]* メニューを使用して在庫の割り当てを解除します。
+1. `bin/magento cron:run`を実行します。
+1. *[!UICONTROL mass action]* メニューを使用してセカンダリ ソースを割り当てます。
+1. `bin/magento cron:run`を実行します。
+1. *[!UICONTROL mass action]* メニューを使用して製品を削除します。
+1. `bin/magento cron:run`を実行します。
+1. 以前に書き出したCSVを使用して製品を読み込みます。
 1. ソース割り当てを確認します。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-製品は、デフォルトソースにのみ割り当てられます。
+製品はデフォルトのソースにのみ割り当てられます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-製品は、デフォルトとセカンダリの両方のソースに割り当てられます。
+製品はデフォルトとセカンダリの両方のソースに割り当てられます。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドに記載されています。
-* クラウドインフラストラクチャー上のAdobe Commerce：クラウドインフラストラクチャー上のCommerce ガイドの [&#x200B; アップグレードとパッチ &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja)/ パッチの適用」を参照してください。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
-## 関連資料
+## 関連トピックス
 
-[!DNL Quality Patches Tool] について詳しくは、以下を参照してください。
+[!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースから入手できます。
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）。
+* [[!DNL Quality Patches Tool] がリリースされました：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題に対してパッチが利用可能かどうかを確認します。
 
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

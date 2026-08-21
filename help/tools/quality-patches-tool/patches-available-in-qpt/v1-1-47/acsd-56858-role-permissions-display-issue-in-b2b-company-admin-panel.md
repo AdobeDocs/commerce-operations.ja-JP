@@ -1,68 +1,68 @@
 ---
-title: ACSD-56858:B2B 会社管理者の役割の権限の不一致
-description: ACSD-56858 パッチを適用すると、B2B 環境で制限された会社管理者のロール権限が正しく表示されないAdobe Commerceの問題を修正できます。
+title: ACSD-56858:B2B会社管理者の役割の権限の違い
+description: ACSD-56858 パッチを適用して、B2B環境の制限付き会社管理者に対してロール権限が誤って表示されるAdobe Commerceの問題を修正します。
 feature: Companies, B2B, Roles/Permissions
 role: Admin, Developer
 exl-id: 28f90c8b-5d8b-4444-99ef-c91cfb5d6081
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
 
-# ACSD-56858:B2B 会社管理者の役割の権限の不一致
+# ACSD-56858:B2B会社管理者の役割の権限の違い
 
-ACSD-56858 パッチでは、B2B 環境の制限された会社管理者に対して役割の権限が正しく表示されない問題を修正しています。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.47 がインストールされている場合に使用できます。 パッチ ID は ACSD-56858 です。 この問題はAdobe Commerce 2.4.7 で修正される予定であることに注意してください。
+ACSD-56858 パッチは、B2B環境の制限付き会社管理者に対して、役割の権限が誤って表示される問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.47がインストールされている場合に利用できます。 パッチ IDはACSD-56858です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
-**Adobe Commerce バージョン用のパッチが作成されます。**
+**パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p3
 
-**Adobe Commerce バージョンとの互換性：**
+**Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 ～ 2.4.6-p4
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.2 - 2.4.6-p4
 
 >[!NOTE]
 >
->このパッチは、新しい [!DNL Quality Patches Tool] リリースを含む他のバージョンにも適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) で互換性を確認します。 パッチ ID を検索キーワードとして使用して、パッチを見つけます。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
-## 問題
+## イシュー
 
-B2B 環境で制限された会社管理者の役割の権限が正しく表示されません。
+B2B環境の制限付き会社管理者に対するロール権限が正確に表示されません。
 
-<u> 再現手順 </u>:
+<u>複製する手順</u>:
 
-1. 会社の設定から開始し、会社管理者と会社ユーザーを追加します。
-1. ストアフロントで会社管理者としてログインし、様々なユーザー向けの様々な役割を作成します。
-1. 必要に応じてこれらの役割を割り当てます。例えば、一部のタスクにはアクセスを制限し、他のタスクには完全なアクセスを許可します。
-1. これらの役割を、会社管理者以外のユーザーへのフルアクセス権で割り当てます。
-1. 会社以外の管理者ユーザー（会社_manager など）にログインします。
-1. **[!UICONTROL Roles and permission]** に移動し、役割を編集します。
-1. 表示される権限は、その役割 ID に対して会社のデータベースに設定された権限と一致しないことに注意してください。
+1. まず、会社を設定し、会社管理者と会社ユーザーを追加します。
+1. ストアフロントの会社管理者としてログインし、様々なユーザーに対して様々な役割を作成します。
+1. 必要に応じて役割を割り当てます。例えば、一部のタスクにはアクセスを制限し、他のタスクには完全なアクセスを許可します。
+1. 会社の管理者以外のユーザーに完全なアクセス権を持つ役割を割り当てます。
+1. company_managerなど、会社以外の管理者ユーザーにログインします。
+1. **[!UICONTROL Roles and permission]**&#x200B;に移動し、役割を編集します。
+1. 表示される権限が、その役割IDに対して会社のデータベースで設定された権限と一致しないことに注意してください。
 
-<u> 期待される結果 </u>:
+<u>期待される結果</u>:
 
-会社以外の管理者ユーザーの役割と権限は正しく表示されます。
+会社以外の管理者ユーザーの役割と権限が正しく表示されます。
 
-<u> 実際の結果 </u>:
+<u>実際の結果</u>:
 
-権限テーブルのデータベースレコードに従って、会社以外の管理者ユーザーの役割が正しく表示されません。
+権限テーブルのデータベースレコードに従って、会社以外の管理者ユーザーに対して役割が正しく表示されません。
 
-## パッチの適用
+## パッチを適用する
 
-個々のパッチを適用するには、デプロイメント方法に応じて、次のリンクを使用します。
+個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[[!DNL Quality Patches Tool] > 使用状況 &#x200B;](/help/tools/quality-patches-tool/usage.md) [!DNL Quality Patches Tool] ガイドの
-* クラウドインフラストラクチャー上のAdobe Commerce:[&#x200B; アップグレードとパッチ適用 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ja) クラウドインフラストラクチャー上のCommerce ガイド
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」ガイド
 
-## 関連資料
+## 関連トピックス
 
-* [[!DNL Quality Patches Tool]  リリース済み：品質パッチをセルフサービスで提供する新しいツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) をサポートナレッジベースに追加しました
-* [&#x200B; を使用して、Adobe Commerceの問題にパッチが適用できるかどうかを確認します  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) （[!UICONTROL Quality Patches Tool] ガイド）
-* Commerce実装プレイブックの [&#x200B; データベーステーブルを変更する際のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
+* [[!DNL Quality Patches Tool]  リリース：サポート ナレッジベースの品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
+* [[!UICONTROL Quality Patches Tool] ガイドの [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを確認します
+* [Commerce実装プレイブックのデータベーステーブルを修正するためのベストプラクティス &#x200B;](/help/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables.md#why-adobe-recommends-avoiding-modifications)
 
-QPT で使用可能なその他のパッチの詳細については、[[!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja): Search for patches[!DNL Quality Patches Tool]」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

@@ -18,7 +18,7 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 8cbff72c3b765c6ff85a34a3ec3d2f58b52bb9c3
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: 1077
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->本番環境でVarnishを使用することを&#x200B;_強くお勧めします_。 組み込みのフルページキャッシュ（ファイルシステムまたは[&#x200B; データベース &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)のいずれか）は、Varnishよりもはるかに低速で、VarnishはHTTP トラフィックを高速化するように設計されています。
+>本番環境でVarnishを使用することを&#x200B;_強くお勧めします_。 組み込みのフルページキャッシュ（ファイルシステムまたは[&#x200B; データベース &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching)のいずれか）は、Varnishよりもはるかに低速で、VarnishはHTTP トラフィックを高速化するように設計されています。
 
 Varnishについて詳しくは、次を参照してください。
 

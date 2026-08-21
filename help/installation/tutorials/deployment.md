@@ -3,10 +3,10 @@ title: デプロイメント設定の作成または更新
 description: Adobe Commerce デプロイメント設定を管理するには、次の手順に従います。
 feature: Install, Deploy, Configuration
 exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ bin/magento setup:config:set [--<parameter>=<value>, ...]
 | `--db-user` | データベースインスタンス所有者のユーザー名。<br><br> デフォルトは`root`です。 | いいえ |
 | `--db-password` | データベースインスタンス所有者のパスワード。 | いいえ |
 | `--db-prefix` | 既にAdobe Commerce テーブルが含まれているデータベースインスタンスにデータベーステーブルをインストールする場合にのみ使用します。<br><br>その場合、プレフィックスを使用して、このインストールのテーブルを識別します。 一部のお客様は、同じデータベース内のすべてのテーブルを含むサーバー上で複数のAdobe Commerce インスタンスを実行しています。<br><br> プレフィックスは、最大5文字まで指定できます。 文字で始まる必要があり、文字、数字、アンダースコア文字のみを含めることができます。<br><br>このオプションを使用すると、お客様は複数のAdobe Commerce インストールでデータベース サーバーを共有できます。 | いいえ |
-| `--session-save` | 次のいずれかを使用して、<br><br> ～ `db`のセッションデータを[&#x200B; データベース &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)に保存します。 クラスター化されたデータベースがある場合は、データベース ストレージを選択します。そうでない場合は、ファイルベースのストレージよりもメリットが少ない可能性があります。<br><br>- `files` セッションデータをファイルシステムに保存します。 ファイルベースのセッションストレージは、ファイルシステムのアクセス速度が遅い、クラスター化されたデータベースがある、またはセッションデータをRedisに保存する場合を除いて適切です。<br><br>- `redis` セッションデータを[&#x200B; セッションストレージにRedisを使用](../../configuration/cache/config-redis.md)します。 デフォルトまたはページキャッシュにRedisを使用している場合は、Redisが既にインストールされている必要があります。 | いいえ |
+| `--session-save` | 次のいずれかを使用して、<br><br> ～ `db`のセッションデータを[&#x200B; データベース &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching)に保存します。 クラスター化されたデータベースがある場合は、データベース ストレージを選択します。そうでない場合は、ファイルベースのストレージよりもメリットが少ない可能性があります。<br><br>- `files` セッションデータをファイルシステムに保存します。 ファイルベースのセッションストレージは、ファイルシステムのアクセス速度が遅い、クラスター化されたデータベースがある、またはセッションデータをRedisに保存する場合を除いて適切です。<br><br>- `redis` セッションデータを[&#x200B; セッションストレージにRedisを使用](../../configuration/cache/config-redis.md)します。 デフォルトまたはページキャッシュにRedisを使用している場合は、Redisが既にインストールされている必要があります。 | いいえ |
 | `--key` | データベースがある場合は、データベース内の[機密データ &#x200B;](#sensitive-data)を暗号化するキーを指定します。 アカウントをお持ちでない場合は、アプリケーションによってアカウントが生成されます。 | いいえ |
 | `--db-init-statements` | 高度なMySQL設定パラメーター。 データベース初期化ステートメントを使用して、MySQL データベースに接続するときに実行します。<br><br> デフォルトは`SET NAMES utf8;`です。<br><br>値を設定する前に、[この](https://dev.mysql.com/doc/refman/5.6/en/server-options.html)と同様の参照を参照してください。 | いいえ |
 | `--http-cache-hosts` | パージ要求を送信するHTTP キャッシュゲートウェイホストのコンマ区切りリスト。 （例えば、Varnish サーバー）。 このパラメーターを使用して、同じリクエストでパージするホストを指定します。 （ホストが1つだけ、またはホストが多くても問題ありません。） <br><br>形式は`<hostname or ip>:<listen port>`である必要があります。ポート 80の場合は`<listen port>`を省略できます。 例：`--http-cache-hosts=192.0.2.100,192.0.2.155:6081`。 スペース文字でホストを分離しないでください。 | いいえ |

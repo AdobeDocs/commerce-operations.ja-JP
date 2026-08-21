@@ -2,9 +2,9 @@
 title: インデクサーの管理
 description: コマンドラインツールを使用して、Adobe Commerce インデクサーを表示および管理する方法について説明します。 インデクサーコマンド、ステータスチェック、およびインデックス再作成のテクニックを確認します。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 2c221ccf793a0b469fc6984b443699c30a6064ce
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
@@ -269,7 +269,7 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8以降**: [!DNL Customer Grid] インデクサーは[!UICONTROL Update on Save]と[!UICONTROL Update by Schedule] モードの両方をサポートし、デフォルトは[!UICONTROL Update by Schedule]です。
 >
->_実装プレイブック_&#x200B;の「[&#x200B; インデクサー設定のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration)」を参照してください。
+>_実装プレイブック_&#x200B;の「[&#x200B; インデクサー設定のベストプラクティス &#x200B;](/help/implementation-playbook/best-practices/maintenance/indexer-configuration.md)」を参照してください。
 
 >[!INFO]
 >
