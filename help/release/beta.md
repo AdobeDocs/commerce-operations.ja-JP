@@ -44,7 +44,7 @@ Adobeでは、[!DNL Adobe Commerce]および[!DNL Adobe Commerce Optimizer]の[!
 - クエリ時に、重み付け、インテリジェントなランキング、手動のルールをどのように組み合わせるかについて明確な期待値を示します。
 - 変更後に価値の高いクエリを検証し、ブーストルールを調整するためのガイダンス。
 
-[Adobe Commerce Optimizer （SaaS） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/manage-results/search-relevance-matching)および[&#x200B; ライブサーチ （PaaS） &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching)の検索マッチングとランキング戦略について詳しく説明します。
+[Adobe Commerce Optimizer （SaaS） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/manage-results/search-relevance-matching)および[&#x200B; ライブサーチ （PaaS） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/search-relevance-matching)の検索マッチングとランキング戦略について詳しく説明します。
 
 このプライベートベータ版への招待をリクエストするには、[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)にメールを送信してください。 Adobeチームは、次のステップと適格要件で対応します。
 

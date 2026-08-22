@@ -1,6 +1,6 @@
 ---
 title: MDVA-40816：商品グリッドに在庫データが表示されない
-description: MDVA-40816 パッチは、商品SKUに特殊文字が含まれている場合に、商品グリッドに在庫情報が表示されない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.10がインストールされている場合に利用できます。 パッチ IDはMDVA-40816です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
+description: MDVA-40816 パッチは、商品SKUに特殊文字が含まれている場合に、商品グリッドに在庫情報が表示されない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.10がインストールされている場合に利用できます。 パッチ IDはMDVA-40816です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 feature: Admin Workspace, Inventory, Orders, Products
 role: Admin
 exl-id: be1dbf75-389d-4bb2-847f-56afb746e4ce
