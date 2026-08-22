@@ -1,6 +1,6 @@
 ---
 title: ACSD-45255：制限付き管理者ユーザーの低在庫報告書ページの例外
-description: ACSD-45255 パッチは、制限付き管理者ユーザーのLow Stock レポートページで例外がスローされる問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.18がインストールされている場合に利用できます。 パッチ IDはACSD-45255です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
+description: ACSD-45255 パッチは、制限付き管理者ユーザーのLow Stock レポートページで例外がスローされる問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.18がインストールされている場合に利用できます。 パッチ IDはACSD-45255です。 この問題は、Adobe Commerce 2.4.6で修正される予定です。
 feature: Admin Workspace, Orders
 role: Admin
 exl-id: bf7e0893-e4a7-4184-a223-02ceef7a30d9

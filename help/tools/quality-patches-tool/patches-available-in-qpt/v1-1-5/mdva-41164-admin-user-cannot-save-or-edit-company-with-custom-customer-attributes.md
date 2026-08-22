@@ -1,6 +1,6 @@
 ---
 title: MDVA-41164：カスタム顧客属性を持つ会社を保存または編集できない
-description: MDVA-41164 パッチは、管理者ユーザーがファイルまたは任意のタイプの画像のカスタム顧客属性を持つ会社を保存または編集できない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.5がインストールされている場合に利用できます。 パッチ IDはMDVA-41164です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
+description: MDVA-41164 パッチは、管理者ユーザーがファイルまたは任意のタイプの画像のカスタム顧客属性を持つ会社を保存または編集できない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.5がインストールされている場合に利用できます。 パッチ IDはMDVA-41164です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 feature: Admin Workspace, Attributes, B2B, Companies
 role: Developer
 exl-id: 9d1792e0-ba7b-444b-b1b1-771fd0e328eb
@@ -67,7 +67,7 @@ B2B モジュールがインストールされています。
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 

@@ -1,6 +1,6 @@
 ---
 title: MDVA-41399：お客様がウィッシュリストに商品を追加した場合、ショッピングカートの管理にアクセスできない
-description: MDVA-41399 パッチは、お客様がウィッシュリストに商品を追加した場合に、管理者ユーザーがショッピングカートの管理ページにアクセスできない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.6がインストールされている場合に利用できます。 パッチ IDはMDVA-41399です。 この問題はAdobe Commerce 2.4.2で修正されています。
+description: MDVA-41399 パッチは、お客様がウィッシュリストに商品を追加した場合に、管理者ユーザーがショッピングカートの管理ページにアクセスできない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.6がインストールされている場合に利用できます。 パッチ IDはMDVA-41399です。 この問題はAdobe Commerce 2.4.2で修正されています。
 feature: Orders, Products, Shopping Cart
 role: Admin
 exl-id: 81a128b5-0c38-4f8f-b297-1f264952d431

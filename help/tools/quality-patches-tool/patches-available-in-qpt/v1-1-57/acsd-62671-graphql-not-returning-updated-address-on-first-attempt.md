@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-62671: [!DNL GraphQL]が最初の試行で更新されたアドレスを返さない
 
-ACSD-62671 パッチは、[!DNL GraphQL] リクエストが最初の試行で最新のアドレス情報を返さない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.57がインストールされている場合に利用できます。 パッチ IDはACSD-62671です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
+ACSD-62671 パッチは、[!DNL GraphQL] リクエストが最初の試行で最新のアドレス情報を返さない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja) 1.1.57がインストールされている場合に利用できます。 パッチ IDはACSD-62671です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
@@ -61,7 +61,7 @@ ACSD-62671 パッチは、[!DNL GraphQL] リクエストが最初の試行で最
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
