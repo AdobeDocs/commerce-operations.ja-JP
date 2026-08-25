@@ -1,8 +1,8 @@
 ---
-source-git-commit: 0537a7cf89e2c427c5c525f2d510d29eb8bb8aa6
+source-git-commit: 9f9c38163d91b655bf44cac81875dab59ee2c77d
 workflow-type: tm+mt
-source-wordcount: '2690'
-ht-degree: 1%
+source-wordcount: '2845'
+ht-degree: 0%
 
 ---
 # 新しいテンプレート
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年8月19日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Commerce キャッシュに関するドキュメントを更新し、オンプレミスとクラウドのガイダンスと、Symfony L2 キャッシュを使用してValkeyに移行するための新しい移行ガイダンスを更新しました：<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/caching-overview"> キャッシュの概要と設定オプション </a>。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/cache-types"> キャッシュフロントエンドとタイプを更新</a>。<br />- パフォーマンス最適化のための<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/cache-options"> キャッシュバックエンドオプションとストレージ参照</a>を更新しました。<br />- </a>から1&rbrace;Symfony2 キャッシュへのへのへの移行移行ガイダンスをに更新しました。<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/level-two-cache">- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration"> クラウド固有の移行手順を使用したValkeyとRedis サービス設定</a>のベストプラクティスと、Symfony L2 キャッシュを使用したValkeyへの移行の手順。<code>RemoteSynchronizedCache</code><br /></p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a840b544de95a4bb17ef49d0325b16d461aecaa">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年8月14日（PT）
 
