@@ -1,19 +1,19 @@
 ---
-title: '[!DNL Cloud Automation Patching Service (CAPS)]のベストプラクティスガイド'
-description: ' [!DNL Cloud Automation Patching Service (CAPS)] を効果的かつ安全に使用するためのベストプラクティスについて説明します'
+title: '[!DNL Adobe Commerce Patching Automation]のベストプラクティスガイド'
+description: ' [!DNL Adobe Commerce Patching Automation] を使用してパッチを安全に計画、検証、適用し、デプロイメントリスクとサービスの中断を最小限に抑える方法について説明します。'
 hide: true
-source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
+source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
-# [!DNL Cloud Automation Patching Service (CAPS)]のベストプラクティスガイド
+# [!DNL Adobe Commerce Patching Automation]のベストプラクティスガイド
 
-[!DNL Cloud Automation Patching Service] （[!DNL CAPS]）でのパッチの正常かつ安全な操作には、次のベストプラクティスが不可欠です。 このガイドでは、効果的なパッチ操作、環境管理、およびオペレーショナルエクセレンスに関する包括的なベストプラクティスを提供します。
+[!DNL Adobe Commerce Patching Automation]を使用したパッチの正常かつ安全な操作には、ベストプラクティスに従うことが不可欠です。 このガイドでは、効果的なパッチ操作、環境管理、およびオペレーショナルエクセレンスに関する包括的なベストプラクティスを提供します。
 
-## プリパッチのベストプラクティス
+## パッチ適用前のベストプラクティス
 
 ### 環境対応
 
@@ -24,21 +24,21 @@ ht-degree: 0%
 * **Adobe Commerce Cloud アカウント**
   * Adobe Commerce Cloudのアクティブなサブスクリプション
   * 有効なAdobe Commerce ライセンス
-  * 設定されたリポジトリアクセス資格情報
+  * Adobe Commerce リポジトリにアクセスするように設定された[Composer認証キー](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
   * プロジェクトと環境の権限
 
 * **環境リソース**
-  * 一時的なテスト用に利用可能な環境スロット
+  * プロジェクトには、パッチ操作のための追加のアクティブ統合環境を作成する能力があります。アクティブな環境制限について詳しくは、[Cloud Consoleでブランチを管理](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches)を参照してください
   * 十分なストレージ、CPU、およびメモリリソース
   * Adobeリポジトリへのネットワークアクセス
   * 同期のための安定した親環境
 
 * **実稼動環境の準備** （実稼動環境のパッチ適用用）
-  * メンテナンスモードを有効にできます
-  * Cron ジョブは無効にできます
-  * 保守ウィンドウ手順の確立
-  * 文書化されたロールバック手順
-  * 関係者向けコミュニケーションプランの準備完了
+  * メンテナンスモードを有効にする
+  * Cron ジョブを無効にする
+  * メンテナンス期間手続きの確立
+  * ドキュメントのロールバック手順
+  * 関係者とのコミュニケーション計画の準備
 
 ## パッチアプリケーションのベストプラクティス
 
@@ -141,7 +141,7 @@ ht-degree: 0%
 
 ## 主なベストプラクティスの概要
 
-### [!DNL CAPS]の成功に関する重要なベストプラクティス
+### [!DNL Patching Automation]の成功に関する重要なベストプラクティス
 
 * 本番環境にパッチを適用する前に、必ずプリプロダクションでテストをおこないます
 * メンテナンスモードを有効にし、実稼動パッチ操作のcron ジョブを無効にする
@@ -154,7 +154,7 @@ ht-degree: 0%
 
 ## 関連トピック
 
-* [キャップの概要](intro.md)
+* [パッチ自動処理の概要](intro.md)
 * [アクセス方法](access.md)
 * [ワークフローの概要](workflow.md)
 * [GitHubとの統合](github-integration.md)

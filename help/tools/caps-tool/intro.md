@@ -1,21 +1,21 @@
 ---
-title: '[!DNL Cloud Automation Patching Service (CAPS)]'
-description: ' [!DNL Cloud Automation Patching Service (CAPS)]とその用途、アクセス方法、自動パッチ適用のベストプラクティスについて説明します'
+title: '[!DNL Adobe Commerce Patching Automation]'
+description: ' [!DNL Adobe Commerce Patching Automation]とその用途、アクセス方法、自動パッチ適用のベストプラクティスについて説明します'
 hide: true
-source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
+source-git-commit: f70924d6f0d1777104c59f3f9e776360308abceb
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
 
-# [!DNL Cloud Automation Patching Service (CAPS)]
+# [!DNL Adobe Commerce Patching Automation]
 
-[!DNL Cloud Automation Patching Service] （[!DNL CAPS]）は、Cloud環境でAdobe Commerceのパッチを適用および元に戻すプロセスを自動化するツールです。 Commerce プロジェクト管理者は、Cloud環境が安定して安全に保たれるように、組み込みの検証とヘルスチェックを含むパッチの適用と取り消しのワークフローを合理化できます。
+[!DNL Adobe Commerce Patching Automation]は、クラウド環境でAdobe Commerceのパッチを適用および元に戻すプロセスを自動化するツールです。 Commerceのプロジェクト管理者は、パッチの適用と取り消しのワークフローを合理化できます。 組み込みの検証とヘルスチェックにより、クラウド環境を安定して安全に保つことができます。
 
 このガイドは、パッチ適用プロセスを合理化し、パッチ関連の問題のリスクを軽減し、環境のセキュリティと安定性を向上させ、定期的なパッチ運用を自動化したいAdobe Commerce Cloudのマーチャントおよびパートナー向けに設計されています。
 
-## [!DNL CAPS]件のトピック
+## [!DNL Patching Automation]件のトピック
 
 * **[アクセス方法](access.md)**
 * **[ワークフローの概要](workflow.md)**
@@ -37,27 +37,26 @@ ht-degree: 0%
 * **構造化ワークフローを使用した自動パッチサービス**
   * **予備チェック** - パッチの互換性と環境の準備状況を検証します
   * **パッチ適用** – 統合環境でパッチを自動的に適用または元に戻します
-  * **検証** - ヘルスチェックを実行し、重要な機能が影響を受けないことを確認します
+  * **検証** - アプリケーションが開始され、そのデータベースとキャッシュ接続に到達できることを確認するヘルスチェックを実行します
 
 * **安全機能**
-  * テスト用の一時的な統合環境を作成します
   * アプリケーションの前にパッチの互換性を検証
-  * パッチが一時的な環境で検証に合格するまで、ターゲット環境は変更されません
+  * 最初に一時的な統合環境にパッチを適用します。パッチが正常にデプロイされ、ヘルスチェックに合格したことを確認してからターゲット環境にマージし、デプロイ直後に最終的なヘルスチェックを実行します
   * リバージョン時に自動的に削除された`m2-hotfixes` フォルダーにパッチを適用します
 
 ## Adobe Commerce Cloudとの統合
 
-[!DNL CAPS]はAdobe Commerce Cloud インフラストラクチャと完全に統合され、既存のクラウド環境とシームレスに連携します。 最適なパフォーマンスを実現するためにクラウドネイティブ機能を活用し、詳細なログ記録と監視を提供し、Adobe Commerce クラウドサポートツールと統合しています。
+[!DNL Patching Automation]はAdobe Commerce Cloud インフラストラクチャと完全に統合され、既存のクラウド環境とシームレスに連携します。 最適なパフォーマンスを実現するためにクラウドネイティブ機能を活用し、詳細なログ記録と監視を提供し、Adobe Commerce クラウドサポートツールと統合しています。
 
 ## ビデオチュートリアル
 
-Adobe Cloud自動パッチサービスの詳細と、このツールがセキュリティパッチの迅速な検索と適用にどのように役立つかをご覧ください。 次のビデオでは、SWAT ダッシュボードからアクセスし、プロジェクトと環境を選択し、ワンクリックでパッチを適用する方法について説明します。
+[!DNL Adobe Commerce Patching Automation]について説明し、このツールがユーザーがセキュリティ パッチをすばやく検索して適用するのにどのように役立つかについて説明します。 次のビデオでは、サイト全体の分析ツール（SWAT）ダッシュボードからアクセスし、プロジェクトと環境を選択し、ワンクリックでパッチを適用する方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3476248/?captions=jpn&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
 ## 一般的なユースケース
 
 * **セキュリティパッチ** – 重要なセキュリティアップデートをすばやく適用
-* **パッチロールバック** - [!DNL CAPS]を通じて適用された問題のあるパッチを安全に復元します
+* **パッチロールバック** - サービスを通じて適用された問題のあるパッチを安全に元に戻します
 * **セキュリティコンプライアンス** – 自動パッチ適用でセキュリティ標準を維持
-* **運用上の安定性** – 自動検証による環境の安定性の確保
+* **動作安定性** - アプリケーションが起動し、各パッチ操作の後にヘルスチェックに合格することを確認します
