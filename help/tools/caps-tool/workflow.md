@@ -82,7 +82,7 @@ ht-degree: 0%
 
 **データの複製なし** – 統合環境は、ターゲット環境のデータ（データベース、メディア、またはその他の保存されたコンテンツ）のコピーを受け取りません。コードベースのみがパッチの適用と検証に使用されます
 
-**リソース要件** - Cloud プロジェクトの合計ストレージ容量が契約で定義されています。 （アカウントページまたは`magento-cloud subscription:info`で確認してください）。 各環境のディスク割り当ては、`.magento.app.yaml`/`.magento/services.yaml`の`disk` プロパティを介して個別に設定されます。 詳しくは、[&#x200B; ディスク領域の管理](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)を参照してください。 ストレージの制限によりパッチ操作が失敗した場合は、統合環境のディスク使用率（`magento-cloud db:size` / `magento-cloud mount:size`）を、設定された割り当てに照らし合わせて確認します。
+**リソース要件** - Cloud プロジェクトの合計ストレージ容量が契約で定義されています。 （アカウントページまたは`magento-cloud subscription:info`で確認してください）。 各環境のディスク割り当ては、`.magento.app.yaml`/`.magento/services.yaml`の`disk` プロパティを介して個別に設定されます。 詳しくは、[&#x200B; ディスク領域の管理](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)を参照してください。 ストレージの制限によりパッチ操作が失敗した場合は、統合環境のディスク使用率（`magento-cloud db:size` / `magento-cloud mount:size`）を、設定された割り当てに照らし合わせて確認します。
 
 #### ステージ 2b：統合環境でのパッチアプリケーション
 
