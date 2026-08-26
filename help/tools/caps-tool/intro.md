@@ -52,7 +52,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Patching Automation]について説明し、このツールがユーザーがセキュリティ パッチをすばやく検索して適用するのにどのように役立つかについて説明します。 次のビデオでは、サイト全体の分析ツール（SWAT）ダッシュボードからアクセスし、プロジェクトと環境を選択し、ワンクリックでパッチを適用する方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476248/?captions=jpn&learn=on&enablevpops)
 
 ## 一般的なユースケース
 
