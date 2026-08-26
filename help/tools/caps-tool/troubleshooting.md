@@ -179,7 +179,7 @@ ht-degree: 0%
 
 **原因：**&#x200B;一時的な問題により、サービスはGitHubに接続できませんでした
 
-**解決策：**&#x200B;数分待って、操作をやり直してください。 エラーが解決しない場合は、[Adobe Commerce Cloud サポート ](https://experienceleague.adobe.com/home#support)にお問い合わせください
+**解決策：**&#x200B;数分待って、操作をやり直してください。 エラーが解決しない場合は、[Adobe Commerce Cloud サポート &#x200B;](https://experienceleague.adobe.com/home#support)にお問い合わせください
 
 #### 「タイムアウト内に環境が作成されない」（GitHub接続プロジェクト）
 
@@ -187,7 +187,7 @@ ht-degree: 0%
 
 **原因：** プロジェクトのGitHub統合で、`fetch-branches` オプションが無効になっています。 その結果、サービスによってプッシュされた一時的なブランチは同期されず、統合環境は作成されません。
 
-**解決策：**&#x200B;統合の[`fetch-branches` オプション ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)を有効にしてから、操作を再試行してください。 「[GitHub統合を [!DNL Patching Automation]](github-integration.md)に設定する」を参照してください。
+**解決策：**&#x200B;統合の[`fetch-branches` オプション &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)を有効にしてから、操作を再試行してください。 「[GitHub統合を [!DNL Patching Automation]](github-integration.md)に設定する」を参照してください。
 
 ### 環境アクティベーションエラー
 
@@ -203,7 +203,7 @@ ht-degree: 0%
 * プロジェクトのComposerの公開キーと秘密キーのペアが正しいことを確認します。[認証キー](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)を参照してください。
 * [https://account.magento.com/](https://account.magento.com/)にログインし（またはアカウント所有者にログインを依頼）、アカウントにCommerce Enterprise コードベースへのアクセス権があることを確認します。
 * プロジェクトのComposerの公開認証キーと非公開認証キーが正しいことを確認します。 [認証キー](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)を参照してください。
-* エラーメッセージで指定されたパッケージが、お使いのCommerce版で使用可能であることを確認します。 [Adobe Commerce パッケージ ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce)を参照してください。
+* エラーメッセージで指定されたパッケージが、お使いのCommerce版で使用可能であることを確認します。 [Adobe Commerce パッケージ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce)を参照してください。
 
 **詳細に環境スロットまたはリソースが記載されている場合：**
 

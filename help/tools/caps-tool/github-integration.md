@@ -25,7 +25,7 @@ Adobe Commerce Cloud プロジェクトがGitHub リポジトリに接続され�
 
 UIの&#x200B;**[!UICONTROL Install GitHub App]**&#x200B;をクリックしてインストールページに移動するか、インストールページに直接移動することで、[!DNL Patching Automation]からインストールを開始できます。
 
-1. [自動処理GitHub アプリのインストール ページ ](https://github.com/apps/adobe-commerce-patching-automation)を開きます。
+1. [自動処理GitHub アプリのインストール ページ &#x200B;](https://github.com/apps/adobe-commerce-patching-automation)を開きます。
 1. **[!UICONTROL Install]**&#x200B;をクリックします。
 1. Adobe Commerce リポジトリを所有するGitHub組織を選択します。
 1. **[!UICONTROL Repository access]**&#x200B;で「**[!UICONTROL Only select repositories]**」を選択し、Adobe Commerce プロジェクトのリポジトリを選択します。

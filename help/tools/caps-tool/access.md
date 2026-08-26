@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## [!DNL Patching Automation]へのアクセス
 
-[!DNL Patching Automation]は、[!DNL Site-Wide Analysis Tool] ダッシュボード内のタブとして利用できます。 管理者パネルからアクセスするには、管理者サイドバーの&#x200B;**レポート** > **システムインサイト** > **サイト全体の分析ツール**&#x200B;に移動します。 前提条件と権限の設定については、[ サイト全体の分析ツールにアクセスする方法](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access)を参照してください。
+[!DNL Patching Automation]は、[!DNL Site-Wide Analysis Tool] ダッシュボード内のタブとして利用できます。 管理者パネルからアクセスするには、管理者サイドバーの&#x200B;**レポート** > **システムインサイト** > **サイト全体の分析ツール**&#x200B;に移動します。 前提条件と権限の設定については、[&#x200B; サイト全体の分析ツールにアクセスする方法](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access)を参照してください。
 
 ダッシュボードにアクセスすると、次のことが可能になります。
 
