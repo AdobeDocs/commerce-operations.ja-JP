@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Core index invalidated]
 
-![ コアインデックスが無効になりました](../../assets/tools/observation-for-adobe-commerce/indexing-tab-1.jpg)
+![&#x200B; コアインデックスが無効になりました](../../assets/tools/observation-for-adobe-commerce/indexing-tab-1.jpg)
 
 **[!UICONTROL Core index invalidated]** フレームは、選択した期間のインデックス無効化を確認します。 他のリソースを多く使用する[!DNL crons]と同時にインデックス作成を行う場合、サイト リソースに大きな負荷がかかります。
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Core index rebuilds]
 
-![ コアインデックスの再構築](../../assets/tools/observation-for-adobe-commerce/indexing-tab-2.jpg)
+![&#x200B; コアインデックスの再構築](../../assets/tools/observation-for-adobe-commerce/indexing-tab-2.jpg)
 
 **[!UICONTROL Core index rebuilds]** フレームは、選択した時間枠でコアインデックスの再構築を確認します。 インデックスの再構築の完了を示すために、ログから解析される文字列を以下に示します。
 
@@ -57,12 +57,12 @@ ht-degree: 0%
 
 ## [!UICONTROL catalogsearch index table(s)]
 
-![ カタログ検索インデックス テーブル ](../../assets/tools/observation-for-adobe-commerce/indexing-tab-3.jpg)
+![&#x200B; カタログ検索インデックス テーブル &#x200B;](../../assets/tools/observation-for-adobe-commerce/indexing-tab-3.jpg)
 
 **[!UICONTROL catalogsearch index table(s)]** フレームは、選択した時間枠のカタログ検索インデックス テーブルを参照します。 このクエリは、テーブル名に`%catalogsearch%`が含まれるテーブルに対するデータストア操作の期間を調べています。
 
 ## [!UICONTROL product index table(s)]
 
-![製品インデックステーブル ](../../assets/tools/observation-for-adobe-commerce/indexing-tab-4.jpg)
+![製品インデックステーブル &#x200B;](../../assets/tools/observation-for-adobe-commerce/indexing-tab-4.jpg)
 
 **[!UICONTROL product index table(s)]** フレームは、選択した期間の製品インデックステーブルを参照します。 このクエリは、テーブル名に`%product%`が含まれるテーブルに対するデータストア操作の期間を調べています。
