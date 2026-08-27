@@ -26,7 +26,7 @@ CCPAは、消費者に次の新しい権利を付与します。
 
 ## CCPAへの準拠
 
-CCPA コンプライアンス計画を策定、実施するには、調整した取り組みが必要です。 販売者には、部門横断的なチームを編成し、[CCPA コンプライアンスガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html)に記載されているロードマップに従って、この規制に準拠するように促します。 開発者は、プロセスのステップ 2から5を重視する関係者として参加するように促されるかもしれません。 詳しくは、[CCPA コンプライアンスガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html)を参照してください。
+CCPA コンプライアンス計画を策定、実施するには、調整した取り組みが必要です。 販売者には、部門横断的なチームを編成し、[CCPA コンプライアンスガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=ja)に記載されているロードマップに従って、この規制に準拠するように促します。 開発者は、プロセスのステップ 2から5を重視する関係者として参加するように促されるかもしれません。 詳しくは、[CCPA コンプライアンスガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=ja)を参照してください。
 
 1. CCPA コンプライアンスに対応するための部門横断的なチームの編成。
 
