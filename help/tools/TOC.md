@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+source-git-commit: c1fe8b4c04514603b6625f4b3cae5a9fac039cb1
 workflow-type: tm+mt
-source-wordcount: '10678'
+source-wordcount: '10695'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
   - [パッチステータスレポートの生成](commerce-version-tool/generate-report.md)
   - [トラブルシューティング](commerce-version-tool/troubleshooting.md)
   - [リリースノート](commerce-version-tool/release-notes.md)
-- キャップ {#caps-tool}
+- パッチの自動適用 {#caps-tool}
   - {hide-from-toc}[はじめに](caps-tool/intro.md)
   - {hide-from-toc}[&#x200B; アクセス &#x200B;](caps-tool/access.md)
   - {hide-from-toc}[&#x200B; ワークフローの概要](caps-tool/workflow.md)
@@ -1046,6 +1046,7 @@ ht-degree: 0%
       - [ACP2E-4709：ページ階層に二重引用符が含まれている場合、CMS ページがページビルダーに保存されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4840:GraphQL商品クエリで、カスタム在庫在庫の在庫商品に関するnull数量が返される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840.md)
       - [ACP2E-4695：過剰なメモリ使用によるカタログ ルール インデクサーのメモリ不足エラー](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695.md)
       - [ACP2E-4194：不明なフィルター名を持つGraphQL リクエストでPHP例外ログが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194.md)
       - [ACP2E-4698: ページビルダーテキストのインライン編集で、ポータブルディレクティブではなく絶対メディア URLが保存される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)
