@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Redis node roles timeline]
 
-![Redis ノードの役割のタイムライン ](../../assets/tools/observation-for-adobe-commerce/redis-tab-3.jpg)
+![Redis ノードの役割のタイムライン &#x200B;](../../assets/tools/observation-for-adobe-commerce/redis-tab-3.jpg)
 
 **[!UICONTROL Redis node roles timeline]** フレームは、特定の役割で[!DNL Redis] サービスが失われたことを示します。 行がディップした場合、その行が表す特定の役割がノードまたはノードを失ったことを示します。
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Commands per second by node]
 
-![ ノードごとの1秒あたりのコマンド ](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)
+![&#x200B; ノードごとの1秒あたりのコマンド &#x200B;](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)
 
 **[!UICONTROL Commands per second by node]** フレームには、選択した時間枠に対する1秒あたりのノード別の[!DNL Redis] コマンドが表示されます。
 
@@ -62,6 +62,6 @@ ht-degree: 0%
 
 ## [!UICONTROL Redis synchronization from Log]
 
-![ ログからのRedis同期](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
+![&#x200B; ログからのRedis同期](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
 
-**[!UICONTROL Redis synchronization from Log]** フレームは、[!DNL Redis]の同期中に発生したエラーまたは同期の問題が原因で発生したエラーに焦点を当てています。 [!DNL Redis]について詳しくは、[[!DNL Redis]  ドキュメント ](https://redis.io/docs/)を参照してください。
+**[!UICONTROL Redis synchronization from Log]** フレームは、[!DNL Redis]の同期中に発生したエラーまたは同期の問題が原因で発生したエラーに焦点を当てています。 [!DNL Redis]について詳しくは、[[!DNL Redis]  ドキュメント &#x200B;](https://redis.io/docs/)を参照してください。

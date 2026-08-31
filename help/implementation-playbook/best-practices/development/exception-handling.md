@@ -137,11 +137,11 @@ try {
 
 この方法では、PSR-3に準拠していないメッセージに改行が発生します。 スタックトレースを含む例外は、メッセージコンテキストの一部として、New Relicまたはその他のPSR-3 モノログ互換ログストレージにメッセージと共に正しく保存できるようにする必要があります。
 
-この問題を修正するには、[例外ログに書き込む](#write-to-the-exception-log)または[ ダウングレード例外](#downgrade-exceptions)に示す正しい例に従ってコードを置き換えます。
+この問題を修正するには、[例外ログに書き込む](#write-to-the-exception-log)または[&#x200B; ダウングレード例外](#downgrade-exceptions)に示す正しい例に従ってコードを置き換えます。
 
 ### コンテキストのない![不正な](../../../assets/no.svg) ダウングレードの例外
 
-例外はエラーにダウングレードされ、オブジェクトを渡すことができず、文字列のみが渡されないため、`getMessage()`が返されます。 これにより、トレースが失われ、[例外ログへの書き込み](#write-to-the-exception-log)または[ ダウングレード例外](#downgrade-exceptions)に示す正しい例に置き換える必要があります。
+例外はエラーにダウングレードされ、オブジェクトを渡すことができず、文字列のみが渡されないため、`getMessage()`が返されます。 これにより、トレースが失われ、[例外ログへの書き込み](#write-to-the-exception-log)または[&#x200B; ダウングレード例外](#downgrade-exceptions)に示す正しい例に置き換える必要があります。
 
 ```php
 try {
@@ -153,7 +153,7 @@ try {
 
 ### ![正しくない](../../../assets/no.svg)例外ログにメッセージのみを記録します
 
-オブジェクト `$e`を渡す代わりに、`$e->getMessage()`のみが渡されます。 これにより、トレースが失われ、[例外ログへの書き込み](#write-to-the-exception-log)または[ ダウングレード例外](#downgrade-exceptions)に示す正しい例に置き換える必要があります。
+オブジェクト `$e`を渡す代わりに、`$e->getMessage()`のみが渡されます。 これにより、トレースが失われ、[例外ログへの書き込み](#write-to-the-exception-log)または[&#x200B; ダウングレード例外](#downgrade-exceptions)に示す正しい例に置き換える必要があります。
 
 ```php
 try {
@@ -165,7 +165,7 @@ try {
 
 ### ![不正な](../../../assets/no.svg) `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`がありません
 
-`phpcs:ignore`行を省略すると、PHPCSで警告がトリガーされ、CIを渡してはなりません。 これは、[ ミュート信号](#mute-signals)に示す正しい例に置き換える必要があります。
+`phpcs:ignore`行を省略すると、PHPCSで警告がトリガーされ、CIを渡してはなりません。 これは、[&#x200B; ミュート信号](#mute-signals)に示す正しい例に置き換える必要があります。
 
 ```php
 try {

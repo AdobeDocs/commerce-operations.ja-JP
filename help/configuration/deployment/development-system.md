@@ -15,7 +15,7 @@ ht-degree: 0%
 
 - これらはすべてCommerce 2.2以降を実行します
 - すべてのCommerce コードは、ビルドシステムと実稼動システムと同じリポジトリ内のソース管理の下にあります
-- 各開発システムでは、[ デフォルトモード ](../bootstrap/application-modes.md#default-mode)または[開発者モード ](../bootstrap/application-modes.md#developer-mode)のいずれかを使用する必要があります
+- 各開発システムでは、[&#x200B; デフォルトモード &#x200B;](../bootstrap/application-modes.md#default-mode)または[開発者モード &#x200B;](../bootstrap/application-modes.md#developer-mode)のいずれかを使用する必要があります
 - このファイル システムには、[開発、ビルド、および実稼動システムの前提条件](../deployment/technical-details.md)で説明されているように、ファイル システムの所有権と権限が設定されています。
 - 次のすべてが&#x200B;_ソース管理から除外_&#x200B;されていることを確認します。
 
