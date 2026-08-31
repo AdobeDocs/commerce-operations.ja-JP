@@ -1,5 +1,5 @@
 ---
-source-git-commit: 9d4cd97d654a4837068876bb539559979a4a10e8
+source-git-commit: 5d8a71ce87b4a3e2fff956b9fbb52c60c4b6df57
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 24%
@@ -31,13 +31,13 @@ ht-degree: 24%
           <td>3.5.0</td>
           <td>3.5.0</td>
           <td>
-              <a href="https://experienceleague.adobe.com/ja/docs/commerce/catalog-service/guide-overview">概要</a><br/>
-              <a href="https://experienceleague.adobe.com/ja/docs/commerce/catalog-service/release-notes"> リリースノート </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">概要</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes"> リリースノート </a><br/>
           </td>
       </tr>
       <tr>
           <td>ライブサーチ</td>
-          <td>4.7.2</td>
+          <td>4.7.3</td>
           <td>4.7.2</td>
           <td>4.7.2</td>
           <td>4.7.2</td>
@@ -45,7 +45,7 @@ ht-degree: 24%
           <td>4.7.2</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html"> マーケットプレイス </a><br/>
-              <a href="https://experienceleague.adobe.com/ja/docs/commerce/live-search/release-notes"> リリースノート </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes"> リリースノート </a><br/>
           </td>
       </tr>
       <tr>
@@ -58,7 +58,7 @@ ht-degree: 24%
           <td>2.16.1</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-payment-services.html"> マーケットプレイス </a><br/>
-              <a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/release-notes"> リリースノート </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes"> リリースノート </a><br/>
           </td>
       </tr>
       <tr>
@@ -71,7 +71,7 @@ ht-degree: 24%
           <td>6.7.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html"> マーケットプレイス </a><br/>
-              <a href="https://experienceleague.adobe.com/ja/docs/commerce/product-recommendations/release-notes"> リリースノート </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes"> リリースノート </a><br/>
           </td>
       </tr>
   </tbody>
