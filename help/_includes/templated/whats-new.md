@@ -1,8 +1,8 @@
 ---
-source-git-commit: 9f9c38163d91b655bf44cac81875dab59ee2c77d
+source-git-commit: 3d85f2181ca7d234ceb181583533b25884b12fe1
 workflow-type: tm+mt
-source-wordcount: '2845'
-ht-degree: 0%
+source-wordcount: '2047'
+ht-degree: 1%
 
 ---
 # 新しいテンプレート
@@ -10,6 +10,28 @@ ht-degree: 0%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年8月26日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840">ACP2E-4840のQPT 1.1.82修正に関する詳細な説明を追加しました：GraphQL製品クエリは、カスタム在庫在庫の在庫商品に対してnull数量を返します</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/edfc38af34925749c5acb36d2c0bcfc5d16a577a">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年8月19日（PT）
 
@@ -567,218 +589,6 @@ ht-degree: 0%
         新しいトピック、qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2fdbf6a4fd4924947a2cb2a508e067b8bb0d694c">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年7月2日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239">ACP2E-4239のQPT 1.1.80修正に関する詳細な説明を追加：管理者グリッド日付フィルターは、タイムゾーンの不一致</a>が原因で結果を返しません。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/58f157a5f863973df723a6bce5844883f2aa12f4">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月29日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481">ACP2E-4481のQPT 1.1.80修正に関する詳細な説明を追加しました：注文キャンセル </a>後にバンドル製品の販売可能性が誤って再計算されました。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ccea0456268862ba11e77ef16318bc8b2d76b0b1">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月26日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>「<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615: PayPal オンライン注文の返金が失敗し、「PayPal ゲートウェイがリクエストを拒否します」というエラーが発生した場合の、QPT 1.1.80の修正に関する詳細な説明を追加しました。 内部エラーです。"</a>。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/056f30558d8d9f3e218f589e2819ec5d8d6274e3">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502">ACSD-53502: New Relic スクリプトの繰り返しにより、iOS Safariでカートに追加が断続的に失敗する</a>のQPT 1.1.80修正に関する詳細な説明を追加しました。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/95cfe4554c4501fa9526e0c8b0c039cf99228207">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626">ACP2E-4626のQPT 1.1.80修正に関する詳細な説明を追加しました：ストアフロント JavaScript ファイルが2回読み込まれると、重複した読み込みと不安定な動作が発生します</a>。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/55fad95c3110f8150097f410115d89299b9e681b">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813のQPT 1.1.80修正に関する詳細な説明を追加しました：USPSの配送方法が利用できないか、複数パッケージの注文に対して正しくありません</a>。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/94b45f953d8a91814fa7359369f976e0cbd94a36">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610のQPT 1.1.80修正に関する詳細な説明を追加しました：sales_clean_quotes cron</a>の実行が遅くなりました。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a7e34f7858dd74cf1c4702dfc877a793094ad042">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月25日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488">ACP2E-4488のQPT 1.1.80の修正に関する詳細な説明を追加しました：大規模な属性セットの管理者製品の保存/編集が遅い</a>。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ac57acc5c527f1c7cc7dbd3198f23e75f08fe207">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496">ACP2E-4496のQPT 1.1.80修正に関する詳細な説明を追加しました。Analytics cron ジョブは、実行時にパフォーマンスを低下させます</a>。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0b7826459c116ef03a34f0a01e5db235294c3cb1">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552">ACP2E-4552のQPT 1.1.80修正に関する詳細な説明を追加しました：GraphQLの回答が会社のステータスを返しません</a>。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6988b8b17bd1f2161e8fd8c7dd128a75c0023de8">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月24日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808">ACP2E-4808のQPT 1.1.80修正に関する詳細な説明を追加しました：ストアフロント </a>で商品の重みが測定単位なしで表示されます。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/538221930434b21b92d587fd889e556564a0a45c">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472">ACP2E-4472のQPT 1.1.80修正に関する詳細な説明を追加しました：「顧客としてログイン」フロー</a>を使用して作成されたNull見積もり。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/49b49560901525aa9e635eb0ea6542339270cabf">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653">ACP2E-4653のQPT 1.1.80修正に関する詳細な説明を追加しました：カート価格ルール カテゴリ スコープの条件がREST API</a>から見つかりません。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f6f4ed205def1cc5f9932857d75222015683fd08">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月23日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>クラウドとオンプレミスのスコープを明確にし、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/caching-overview">設定ガイド </a>のキャッシュ設定のトピック全体で、クラウドのデプロイメントに関する<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">RedisとValkey サービス設定のベストプラクティス </a>を更新しました。 クラウドのデプロイメントに関するCommerceのベストプラクティス。</p>
-</td>
-      <td>
-        フィードバック
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5d8876789a01e0e27cedfb67e0dd8b3dbc4543f7">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156">ACP2E-4156のQPT 1.1.80修正に関する詳細な説明を追加しました。REST APIの出荷先住所の検証では、管理者属性の設定</a>が無視されます。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/897bbc5b6624dfe17deac6ca878669a5245c34ea">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533">ACP2E-4533のQPT 1.1.80修正に関する詳細な説明を追加しました。URLにストアコード </a>が含まれている場合、ストアフロントでプレースホルダー画像の読み込みに失敗します。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eb7012dd29323ae70a19c7b37ab82dac5215c705">コミット</a></td>
     </tr>
   </tbody>
 </table>
