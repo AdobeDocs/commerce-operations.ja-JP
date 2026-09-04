@@ -4,9 +4,9 @@ description: Adobe Commerce ベータ版のリリースと参加方法につい�
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: ba69e06096892027bd50485eaf69cef94b40d6ce
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,23 @@ Adobeで開発している機能に早期にアクセスできれば、顧客や
 ## 現在のBeta プログラム
 
 アクティブなベータ版プログラムの一覧については、次の節を参照してください。
+
+### 属性ランキング（パブリックBeta） {#attribute-ranking-public-beta}
+
+[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"}
+
+[!DNL Adobe Commerce Optimizer]のマーチャンダイジングルールで&#x200B;**属性ランキング**&#x200B;がサポートされるようになりました。これは、**Boost**、**Bury**、**Hide** アクションを、1つ以上の属性条件（ブランド、カテゴリ、製造元など）に一致する製品に自動的に適用し、個々のSKUの選択は必要ありません。 属性のランキングは、ルールエディターに表示され、インテリジェントなランキングと手動のランキングが表示されます。 **すべての製品リスト**、**カテゴリルール**、**検索ルール**&#x200B;で使用します。
+
+**主なメリット**
+
+- 個々のSKUではなく属性値をターゲットにすることで、大規模なカタログをまたいでマーチャンダイジングを拡大できます。
+- 例えば、ブランド全体を宣伝したり、廃止されたカラーを抑制したりするなど、1つのルールを使用して、すべてのマッチング商品をブースト、埋め込み、非表示にすることができます。
+- 属性条件とインテリジェントなランキングを組み合わせる：一致した商品が優先され、一致しない商品はランキング戦略で引き続き注文されます。
+- 条件ごとに「ブースト」または「埋め込み強度」を設定して、ルールが一致する製品に与える影響を微調整します。
+
+詳しくは、マーチャンダイジングルールガイドの[属性ランキング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking)を参照してください。
+
+このベータ機能に関するフィードバックを共有するには、[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)に電子メールを送信してください。
 
 ### 検索マッチングとランキング（Private Beta）
 
