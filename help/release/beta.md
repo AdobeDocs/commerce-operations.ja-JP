@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce ベータ版リリース
 
-[Adobe Commerce製品ソリューション ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions)のBeta プログラムは、販売者がプレリリース機能とコードにアクセスし、フィードバックを提供し、Adobe Commerceの将来を導くための手段です。 ベータプログラムには2種類あります。
+[Adobe Commerce製品ソリューション &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions)のBeta プログラムは、販売者がプレリリース機能とコードにアクセスし、フィードバックを提供し、Adobe Commerceの将来を導くための手段です。 ベータプログラムには2種類あります。
 
 - パブリック Beta:Adobe Commerceのすべてのユーザーおよびパートナーは、パブリックベータプログラムを利用できます
 - Private Beta：プライベートベータプログラムに参加するには、資格基準に基づく承認が必要になる場合があります
@@ -44,7 +44,7 @@ Adobeで開発している機能に早期にアクセスできれば、顧客や
 - 属性条件とインテリジェントなランキングを組み合わせる：一致した商品が優先され、一致しない商品はランキング戦略で引き続き注文されます。
 - 条件ごとに「ブースト」または「埋め込み強度」を設定して、ルールが一致する製品に与える影響を微調整します。
 
-詳しくは、マーチャンダイジングルールガイドの[属性ランキング ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking)を参照してください。
+詳しくは、マーチャンダイジングルールガイドの[属性ランキング &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking)を参照してください。
 
 このベータ機能に関するフィードバックを共有するには、[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)に電子メールを送信してください。
 
@@ -61,7 +61,7 @@ Adobeでは、[!DNL Adobe Commerce]および[!DNL Adobe Commerce Optimizer]の[!
 - クエリ時に、重み付け、インテリジェントなランキング、手動のルールをどのように組み合わせるかについて明確な期待値を示します。
 - 変更後に価値の高いクエリを検証し、ブーストルールを調整するためのガイダンス。
 
-[Adobe Commerce Optimizer （SaaS） ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/search-relevance-matching)および[ ライブサーチ （PaaS） ](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching)の検索マッチングとランキング戦略について詳しく説明します。
+[Adobe Commerce Optimizer （SaaS） &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/search-relevance-matching)および[&#x200B; ライブサーチ （PaaS） &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching)の検索マッチングとランキング戦略について詳しく説明します。
 
 このプライベートベータ版への招待をリクエストするには、[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)にメールを送信してください。 Adobeチームは、次のステップと適格要件で対応します。
 
@@ -80,7 +80,7 @@ Adobeでは、[!DNL Adobe Commerce]および[!DNL Adobe Commerce Optimizer]の[!
 - 商品詳細ページで動的な価格ルールを使用して、閲覧中の商品に対して同等の価格帯の中で代替品を表示します。
 - フィルタリングと表示に使用されるアクティブな価格表と同じ最終価格である、買い物客が表示する価格に合わせてフィルタリングを調整します。
 
-詳しくは、マーチャントガイドの「[ レコメンデーションフィルター – 価格](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters#price)」、ストアフロントドロップインガイドの「[商品レコメンデーションの設定](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/)」を参照してください。
+詳しくは、マーチャントガイドの「[&#x200B; レコメンデーションフィルター – 価格](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters#price)」、ストアフロントドロップインガイドの「[商品レコメンデーションの設定](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/)」を参照してください。
 
 このベータ版の機能を使用する際にフィードバックを共有するには、[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)にメールを送信してください。
 
@@ -88,9 +88,9 @@ Adobeでは、[!DNL Adobe Commerce]および[!DNL Adobe Commerce Optimizer]の[!
 
 [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
 
-[Cloud Automation Patching Service](../tools/caps-tool/intro.md)は、Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)環境の[Adobe Commerceに個別のセキュリティ パッチを適用するプロセスを自動化します。
+[Cloud Automation Patching Service](../tools/caps-tool/intro.md)は、Cloud Infrastructure[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)環境のAdobe Commerceに個別のセキュリティ パッチを適用するプロセスを自動化します。
 
-2025年10月、Cloud Automation Patching Serviceのベータ版リリースが[ サイト全体の分析ツール ダッシュボード ](/help/tools/site-wide-analysis-tool/dashboard.md)に追加されます。 このサービスは、次のような合理化されたパッチワークフローにより、Commerce プロジェクト管理者をサポートします。
+2025年10月、Cloud Automation Patching Serviceのベータ版リリースが[&#x200B; サイト全体の分析ツール ダッシュボード &#x200B;](/help/tools/site-wide-analysis-tool/dashboard.md)に追加されます。 このサービスは、次のような合理化されたパッチワークフローにより、Commerce プロジェクト管理者をサポートします。
 
 - 自動パッチインストール
 - ロールバック回復
@@ -105,9 +105,9 @@ Adobeでは、[!DNL Adobe Commerce]および[!DNL Adobe Commerce Optimizer]の[!
 
 >[!NOTE]
 >
->Cloud Automation Patching Serviceは分離されたセキュリティ パッチを自動的に適用するため、それを使用するには[ コントリビューターまたはプロジェクト管理者の役割](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)が必要です。
+>Cloud Automation Patching Serviceは分離されたセキュリティ パッチを自動的に適用するため、それを使用するには[&#x200B; コントリビューターまたはプロジェクト管理者の役割](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)が必要です。
 
-このベータ版に参加するには、[Cloud Automation Patching Service - Beta サインアップフォーム ](https://forms.office.com/r/3Wfxj5nPdB)に記入して送信してください。
+このベータ版に参加するには、[Cloud Automation Patching Service - Beta サインアップフォーム &#x200B;](https://forms.office.com/r/3Wfxj5nPdB)に記入して送信してください。
 
 ### Merchant Productivity AI アシスタント （パブリック Beta）
 
@@ -133,7 +133,7 @@ Adobe Commerce Foundationの各アルファ版およびベータ版リリース�
 - GraphQLの機能強化
 - 一般的な品質バグの修正
 - コミュニティへの貢献
-- [Adobe Commerce サービス ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)との互換性をサポートするために必要な変更点
+- [Adobe Commerce サービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)との互換性をサポートするために必要な変更点
 
 #### 命名規則とスケジュール
 
@@ -149,13 +149,13 @@ Beta リリースパッケージには、`-betaX`という接尾辞が付いて�
 - `2.4.7-beta1`
 - `2.4.7-beta2`
 
-今後の公開アルファ版とベータ版のリリース日のリストについては、[ リリーススケジュール ](schedule.md)を参照してください。
+今後の公開アルファ版とベータ版のリリース日のリストについては、[&#x200B; リリーススケジュール &#x200B;](schedule.md)を参照してください。
 
 #### リリースアクセス
 
 Adobe Commerce アルファ版とベータ版のリリースは、他のAdobe Commerce パッチリリースと同じように配布されます：`https://repo.magento.com`のComposer メタパッケージと同じです。 ソースコードは[GitHub](https://github.com/magento/magento2)で入手できます。
 
-詳しくは、[Composer インストールクイックスタート ](../installation/composer.md)を参照してください。
+詳しくは、[Composer インストールクイックスタート &#x200B;](../installation/composer.md)を参照してください。
 
 #### 問題レポート
 
