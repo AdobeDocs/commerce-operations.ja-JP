@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3d85f2181ca7d234ceb181583533b25884b12fe1
+source-git-commit: 1459bd6961b08d778d43a87b380e23c3041c89bb
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: '1988'
 ht-degree: 1%
 
 ---
@@ -567,28 +567,6 @@ ht-degree: 1%
         新しいトピック、qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2cc434ac8efd0d9344140ad07f2f68d2d48b1fb4">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年7月6日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493">ACP2E-4493のQPT 1.1.80修正に関する詳細な説明を追加しました。非同期インデックス作成が有効になっている場合、Sales Order Archive グリッドに誤った注文ステータスが表示されます</a>。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2fdbf6a4fd4924947a2cb2a508e067b8bb0d694c">コミット</a></td>
     </tr>
   </tbody>
 </table>
