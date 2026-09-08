@@ -1,8 +1,7 @@
 ---
 title: ' [!DNL Adobe Commerce Patching Automation]へのアクセス方法'
 description: ' [!DNL Adobe Commerce Patching Automation]へのアクセス方法と使用方法を説明します'
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 1%
@@ -35,7 +34,7 @@ ht-degree: 1%
 
 ## [!DNL Patching Automation]へのアクセス
 
-[!DNL Patching Automation]は、[!DNL Site-Wide Analysis Tool] ダッシュボード内のタブとして利用できます。 管理者パネルからアクセスするには、管理者サイドバーの&#x200B;**レポート** > **システムインサイト** > **サイト全体の分析ツール**&#x200B;に移動します。 前提条件と権限の設定については、[&#x200B; サイト全体の分析ツールにアクセスする方法](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/site-wide-analysis-tool/access)を参照してください。
+[!DNL Patching Automation]は、[!DNL Site-Wide Analysis Tool] ダッシュボード内のタブとして利用できます。 管理者パネルからアクセスするには、管理者サイドバーの&#x200B;**レポート** > **システムインサイト** > **サイト全体の分析ツール**&#x200B;に移動します。 前提条件と権限の設定については、[ サイト全体の分析ツールにアクセスする方法](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access)を参照してください。
 
 ダッシュボードにアクセスすると、次のことが可能になります。
 

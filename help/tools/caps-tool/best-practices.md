@@ -1,8 +1,7 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation]のベストプラクティスガイド'
 description: ' [!DNL Adobe Commerce Patching Automation] を使用してパッチを安全に計画、検証、適用し、デプロイメントリスクとサービスの中断を最小限に抑える方法について説明します。'
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -24,11 +23,11 @@ ht-degree: 0%
 * **Adobe Commerce Cloud アカウント**
   * Adobe Commerce Cloudのアクティブなサブスクリプション
   * 有効なAdobe Commerce ライセンス
-  * Adobe Commerce リポジトリにアクセスするように設定された[Composer認証キー](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
+  * Adobe Commerce リポジトリにアクセスするように設定された[Composer認証キー](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
   * プロジェクトと環境の権限
 
 * **環境リソース**
-  * プロジェクトには、パッチ操作のための追加のアクティブ統合環境を作成する能力があります。アクティブな環境制限について詳しくは、[Cloud Consoleでブランチを管理](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/project/console-branches)を参照してください
+  * プロジェクトには、パッチ操作のための追加のアクティブ統合環境を作成する能力があります。アクティブな環境制限について詳しくは、[Cloud Consoleでブランチを管理](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches)を参照してください
   * 十分なストレージ、CPU、およびメモリリソース
   * Adobeリポジトリへのネットワークアクセス
   * 同期のための安定した親環境

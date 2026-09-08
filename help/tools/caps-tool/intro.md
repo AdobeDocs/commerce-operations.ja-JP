@@ -1,8 +1,7 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation]'
 description: ' [!DNL Adobe Commerce Patching Automation]とその用途、アクセス方法、自動パッチ適用のベストプラクティスについて説明します'
-hide: true
-source-git-commit: f70924d6f0d1777104c59f3f9e776360308abceb
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
@@ -52,7 +51,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Patching Automation]について説明し、このツールがユーザーがセキュリティ パッチをすばやく検索して適用するのにどのように役立つかについて説明します。 次のビデオでは、サイト全体の分析ツール（SWAT）ダッシュボードからアクセスし、プロジェクトと環境を選択し、ワンクリックでパッチを適用する方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3476248/?captions=jpn&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
 ## 一般的なユースケース
 
