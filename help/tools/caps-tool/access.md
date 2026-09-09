@@ -1,10 +1,9 @@
 ---
 title: ' [!DNL Adobe Commerce Patching Automation]へのアクセス方法'
 description: ' [!DNL Adobe Commerce Patching Automation]へのアクセス方法と使用方法を説明します'
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: e7e2cb120377e73f2a6f80edcacfcf644b48be84
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
@@ -26,7 +25,7 @@ ht-degree: 1%
 [!DNL Patching Automation] ユーザーインターフェイスにプロジェクトが表示されない場合は、適切なユーザーにアクセスをリクエストしてください。
 
 * プロジェクトのアカウントオーナーまたはプロジェクト管理者に連絡する
-* Cloud Consoleを通じて適切な役割が付与されます
+* Cloud Consoleから適切な役割を付与できます
 * アクセスを許可したら、Cloud Consoleにログインしてサービスを使用できます
 
 >[!NOTE]

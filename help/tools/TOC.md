@@ -4,7 +4,7 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: c1fe8b4c04514603b6625f4b3cae5a9fac039cb1
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '10695'
 ht-degree: 0%
@@ -34,12 +34,12 @@ ht-degree: 0%
   - [トラブルシューティング](commerce-version-tool/troubleshooting.md)
   - [リリースノート](commerce-version-tool/release-notes.md)
 - パッチの自動適用 {#caps-tool}
-  - {hide-from-toc}[はじめに](caps-tool/intro.md)
-  - {hide-from-toc}[&#x200B; アクセス &#x200B;](caps-tool/access.md)
-  - {hide-from-toc}[&#x200B; ワークフローの概要](caps-tool/workflow.md)
-  - {hide-from-toc}[GitHub統合](caps-tool/github-integration.md)
-  - {hide-from-toc}[&#x200B; ベストプラクティス &#x200B;](caps-tool/best-practices.md)
-  - {hide-from-toc}[&#x200B; トラブルシューティング &#x200B;](caps-tool/troubleshooting.md)
+  - [概要](caps-tool/intro.md)
+  - [アクセス](caps-tool/access.md)
+  - [ワークフローの概要](caps-tool/workflow.md)
+  - [GitHubとの統合](caps-tool/github-integration.md)
+  - [ベストプラクティス](caps-tool/best-practices.md)
+  - [トラブルシューティング](caps-tool/troubleshooting.md)
 - Adobe Commerceのアラートの管理 {#managed-alerts-for-adobe-commerce}
   - [Adobe Commerceのアラートを管理： [!DNL Redis]  メモリ クリティカル アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
   - [Adobe Commerceの管理アラート：ディスクの警告アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)

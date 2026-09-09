@@ -4,9 +4,9 @@ description: Adobe Commerce ベータ版のリリースと参加方法につい�
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
-source-git-commit: ba69e06096892027bd50485eaf69cef94b40d6ce
+source-git-commit: efdc4734b5c0db8efc0c83bef41e7ccaafd9b6af
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1490'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 [Adobe Commerce製品ソリューション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions)のBeta プログラムは、販売者がプレリリース機能とコードにアクセスし、フィードバックを提供し、Adobe Commerceの将来を導くための手段です。 ベータプログラムには2種類あります。
 
 - パブリック Beta:Adobe Commerceのすべてのユーザーおよびパートナーは、パブリックベータプログラムを利用できます
-- Private Beta：プライベートベータプログラムに参加するには、資格基準に基づく承認が必要になる場合があります
+- Private Beta：プライベートベータプログラムに参加するには、資格基準に基づく承認が必要です
 
 >[!IMPORTANT]
 >
@@ -35,14 +35,14 @@ Adobeで開発している機能に早期にアクセスできれば、顧客や
 
 [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"}
 
-[!DNL Adobe Commerce Optimizer]のマーチャンダイジングルールで&#x200B;**属性ランキング**&#x200B;がサポートされるようになりました。これは、**Boost**、**Bury**、**Hide** アクションを、1つ以上の属性条件（ブランド、カテゴリ、製造元など）に一致する製品に自動的に適用し、個々のSKUの選択は必要ありません。 属性のランキングは、ルールエディターに表示され、インテリジェントなランキングと手動のランキングが表示されます。 **すべての製品リスト**、**カテゴリルール**、**検索ルール**&#x200B;で使用します。
+[!DNL Adobe Commerce Optimizer] マーチャンダイジングルールで&#x200B;**属性ランキング**&#x200B;がサポートされるようになりました。これにより、**Boost**、**Bury**、**Hide** アクションが、属性条件に一致する製品（ブランド、カテゴリー、メーカーなど）に自動的に適用され、個々のSKUの選択は必要ありません。 属性のランキングは、ルールエディターに表示され、インテリジェントなランキングと手動のランキングが表示されます。 **すべての製品リスト**、**カテゴリルール**、**検索ルール**&#x200B;で使用します。
 
 **主なメリット**
 
 - 個々のSKUではなく属性値をターゲットにすることで、大規模なカタログをまたいでマーチャンダイジングを拡大できます。
 - 例えば、ブランド全体を宣伝したり、廃止されたカラーを抑制したりするなど、1つのルールを使用して、すべてのマッチング商品をブースト、埋め込み、非表示にすることができます。
-- 属性条件とインテリジェントなランキングを組み合わせる：一致した商品が優先され、一致しない商品はランキング戦略で引き続き注文されます。
-- 条件ごとに「ブースト」または「埋め込み強度」を設定して、ルールが一致する製品に与える影響を微調整します。
+- 属性条件とインテリジェントなランキングを組み合わせる：一致した商品を優先し、ランキング戦略で一致しない商品の注文を継続します。
+- 条件ごとにブーストまたはバリーの強度を設定して、ルールが一致する製品に与える影響を微調整します。
 
 詳しくは、マーチャンダイジングルールガイドの[属性ランキング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking)を参照してください。
 
@@ -50,7 +50,7 @@ Adobeで開発している機能に早期にアクセスできれば、顧客や
 
 ### 検索マッチングとランキング（Private Beta）
 
-Adobeでは、[!DNL Adobe Commerce]および[!DNL Adobe Commerce Optimizer]の[!DNL Live Search]の検索結果を商品の検索でランク付けする方法を改善しています。 更新では、**完全一致とほぼフレーズ一致**&#x200B;が優先され、次に&#x200B;**すべてのクエリ用語が同じ検索可能な属性**&#x200B;に表示され、最後に&#x200B;**クロスフィールド**&#x200B;が一致します（オートコンプリート形式の提案をサポートする動作を含む）。 この階層化されたモデルは、高い意図を示すクエリが、最も関連性の高い製品を最初に表示でありながら、有用な代替品を返すのに役立ちます。
+Adobeでは、[!DNL Adobe Commerce]および[!DNL Adobe Commerce Optimizer]の[!DNL Live Search]の検索結果を商品の検索でランク付けする方法を改善しています。 更新では、**完全一致とほぼフレーズ一致**&#x200B;が優先され、次に&#x200B;**すべてのクエリ用語が同じ検索可能な属性**&#x200B;に表示され、最後に&#x200B;**クロスフィールド**&#x200B;が一致します（オートコンプリート形式の提案をサポートする動作を含む）。 この階層化されたモデルにより、インテント度の高いクエリは、最も関連性の高い商品を最初に表示しながら、有用な代替品を返すことができます。
 
 同じ関連性モデルが、**検索ウェイト**、**インテリジェントランキング**、**類義語**、および&#x200B;**マーチャンダイジングルール** （ピン、ブースト、埋め込み）と相互作用します。 ドイツのストアフロントでは、同様の全体的な優先順位付けアプローチで、複合語に&#x200B;**減算**&#x200B;を使用できます。
 
@@ -63,7 +63,7 @@ Adobeでは、[!DNL Adobe Commerce]および[!DNL Adobe Commerce Optimizer]の[!
 
 [Adobe Commerce Optimizer （SaaS） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/manage-results/search-relevance-matching)および[&#x200B; ライブサーチ （PaaS） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/search-relevance-matching)の検索マッチングとランキング戦略について詳しく説明します。
 
-このプライベートベータ版への招待をリクエストするには、[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)にメールを送信してください。 Adobeチームは、次のステップと適格要件で対応します。
+このプライベートベータ版への招待をリクエストするには、[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)にメールを送信してください。 Adobeチームは、次のステップや適格性の要件で対応しています。
 
 ### 推奨価格フィルター（パブリックBeta） {#recommendation-price-filters-public-beta}
 
@@ -83,31 +83,6 @@ Adobeでは、[!DNL Adobe Commerce]および[!DNL Adobe Commerce Optimizer]の[!
 詳しくは、マーチャントガイドの「[&#x200B; レコメンデーションフィルター – 価格](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/recommendations/filters#price)」、ストアフロントドロップインガイドの「[商品レコメンデーションの設定](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/?lang=ja)」を参照してください。
 
 このベータ版の機能を使用する際にフィードバックを共有するには、[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)にメールを送信してください。
-
-### Cloud Automation Patching Service （Private Beta）
-
-[!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
-
-[Cloud Automation Patching Service](../tools/caps-tool/intro.md)は、Cloud Infrastructure[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/overview)環境のAdobe Commerceに個別のセキュリティ パッチを適用するプロセスを自動化します。
-
-2025年10月、Cloud Automation Patching Serviceのベータ版リリースが[&#x200B; サイト全体の分析ツール ダッシュボード &#x200B;](/help/tools/site-wide-analysis-tool/dashboard.md)に追加されます。 このサービスは、次のような合理化されたパッチワークフローにより、Commerce プロジェクト管理者をサポートします。
-
-- 自動パッチインストール
-- ロールバック回復
-- 導入後の検証：
-
-このサービスは、最小限の手作業とリスクで、安全で安定した、更新された環境を維持できることを保証します。
-
-ベータ版には次の機能が含まれています。
-
-- **パッチのインストールの自動化**：環境全体で重要な脆弱性にパッチを適用するプロセスを簡略化および自動化します。
-- **リスクを最小限に抑える**：デプロイメント後のヘルスチェックとロールバック機能により、サイトの停止を防ぎます。
-
->[!NOTE]
->
->Cloud Automation Patching Serviceは分離されたセキュリティ パッチを自動的に適用するため、それを使用するには[&#x200B; コントリビューターまたはプロジェクト管理者の役割](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/project/user-access)が必要です。
-
-このベータ版に参加するには、[Cloud Automation Patching Service - Beta サインアップフォーム &#x200B;](https://forms.office.com/r/3Wfxj5nPdB)に記入して送信してください。
 
 ### Merchant Productivity AI アシスタント （パブリック Beta）
 

@@ -1,8 +1,7 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation]のベストプラクティスガイド'
 description: ' [!DNL Adobe Commerce Patching Automation] を使用してパッチを安全に計画、検証、適用し、デプロイメントリスクとサービスの中断を最小限に抑える方法について説明します。'
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
