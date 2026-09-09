@@ -1,9 +1,9 @@
 ---
 title: ' [!DNL Adobe Commerce Patching Automation]のGitHub統合の設定'
 description: GitHubに接続しているAdobe Commerce Cloud プロジェクトのパッチ操作を有効にするために [!DNL Adobe Commerce Patching Automation] GitHub アプリをインストールする方法について説明します。
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: bc614967131d4458e004a06baa94bbe9261c4cee
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Adobe Commerce Cloud プロジェクトがGitHub リポジトリに接続され�
 ## 前提条件
 
 * Adobe Commerce Cloudのアクティブなサブスクリプション
-* [GitHub統合](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github)は既にAdobe Commerce Cloud プロジェクト用に設定されており、[`fetch-branches` オプションが有効になっています](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)。 [!DNL Patching Automation]は一時的な統合環境ブランチを作成およびプッシュするので、このオプションが無効になっている場合、パッチ操作で環境を作成できません。
+* [GitHub統合](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github)は既にAdobe Commerce Cloud プロジェクト用に設定されており、[`fetch-branches` オプションが有効になっています](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)。 [!DNL Patching Automation]は一時的な統合環境ブランチを作成およびプッシュするので、このオプションが無効になっている場合、パッチ操作で環境を作成できません。
 * [!DNL github.com]でホストされているリポジトリ。 カスタムドメインで設定されたGitHub統合はサポートされていません。
 * GitHub組織またはリポジトリへの所有者または管理者アクセス
 
@@ -24,7 +24,7 @@ Adobe Commerce Cloud プロジェクトがGitHub リポジトリに接続され�
 
 UIの&#x200B;**[!UICONTROL Install GitHub App]**&#x200B;をクリックしてインストールページに移動するか、インストールページに直接移動することで、[!DNL Patching Automation]からインストールを開始できます。
 
-1. [自動処理GitHub アプリのインストール ページ &#x200B;](https://github.com/apps/adobe-commerce-patching-automation)を開きます。
+1. [自動処理GitHub アプリのインストール ページ ](https://github.com/apps/adobe-commerce-patching-automation)を開きます。
 1. **[!UICONTROL Install]**&#x200B;をクリックします。
 1. Adobe Commerce リポジトリを所有するGitHub組織を選択します。
 1. **[!UICONTROL Repository access]**&#x200B;で「**[!UICONTROL Only select repositories]**」を選択し、Adobe Commerce プロジェクトのリポジトリを選択します。
@@ -38,7 +38,7 @@ UIの&#x200B;**[!UICONTROL Install GitHub App]**&#x200B;をクリックしてイ
 
 * **[!UICONTROL Refresh]** / **[!UICONTROL Refresh status]** – 変更を加えずに接続ステータスを再確認します。
 * **[!UICONTROL Reinstall]** - インストールが無効になった場合（例えば、インストールが中断された場合、またはCloud プロジェクトに接続されているリポジトリが変更された場合）に表示されます。 上記と同じインストールフローを開始します。
-* **[!UICONTROL Unlink GitHub App]** - [!DNL Patching Automation]の保存されたGitHub アプリへの接続を削除します。 これにより、**not**&#x200B;はGitHub リポジトリからアプリをアンインストールします。アクセスを完全に削除するには、以下の「アンインストール」セクションを参照してください。
+* **[!UICONTROL Unlink GitHub App]** - [!DNL Patching Automation]の保存されたGitHub アプリへの接続を削除します。 このアクションは、GitHub リポジトリからアプリを&#x200B;**not** アンインストールします。アクセスを完全に削除するには、以下のアンインストールの節を参照してください。
 
 ## [!DNL Patching Automation] GitHub アプリのアンインストール
 

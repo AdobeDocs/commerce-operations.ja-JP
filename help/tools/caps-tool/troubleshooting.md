@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation] トラブルシューティングガイド'
 description: ' [!DNL Adobe Commerce Patching Automation]の一般的な問題とエラーメッセージのトラブルシューティング'
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: f2b9ba118bfe4982a67ec5041141e5ee7548fc4d
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1639'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ### パッチ操作期間
 
-ほとんどの環境では、次のタイムラインは、パッチ操作にかかる時間を示していますが、環境のサイズと複雑さによっては時間がかかる場合があります。
+ほとんどの環境では、次のタイムラインでパッチ操作の期間を説明しますが、環境のサイズと複雑さによっては時間がかかる場合があります。
 
 * **前処理：** 2～5分
 * **パッチ適用：** 5～15分
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->パッチ操作が開始されると、完了できるようにします。 このシステムには、操作が失敗した場合でも実行されるクリーンアップ手順が含まれています。 プロセスを中断すると、環境が一貫性のない状態になる場合があります。
+>パッチ操作が開始されると、完了できるようにします。 このシステムには、操作が失敗した場合でも実行されるクリーンアップ手順が含まれています。 プロセスを中断すると、環境の一貫性が失われる可能性があります。
 
 ## 一般的な成功メッセージ
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->考えられるすべてのエラーが以下にリストされているわけではありません。 事前確認中の非掲載エラーは一般的な「事前確認中のエラー」として表示されます。検証中の非掲載エラーは一般的な「後処理中のエラー」として表示されます。いずれにしても、正確なエラーテキストをサポートにお問い合わせください。 パッチを適用すると、予期しないエラーが発生し、一般的なフォールバックの代わりに生のエラーメッセージが直接表示されます。
+>考えられるすべてのエラーが以下にリストされているわけではありません。 事前確認または検証中のリストにないエラーは、汎用エラーとして表示されます。 正確なエラーテキストをサポートに問い合わせてください。 パッチを適用すると、予期しないエラーが発生し、一般的なフォールバックの代わりに生のエラーメッセージが直接表示されます。
 
 ### 環境準備エラー
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 **解決策：**
 
-* 数分待って、もう一度環境ステータスを確認します。 多くの場合、この問題は単独で解決します
+* 数分待って、もう一度環境ステータスを確認します。 多くの場合、この問題は自動的に解決します
 * 数分経っても環境が一致しない場合は、Adobe サポートにお問い合わせください。
 
 #### 「cronが有効でメンテナンスモードが無効になっている場合、実稼動環境でパッチジョブを作成できません。 パッチを適用する前に、メンテナンスモードを有効にし、cron ジョブを無効にしてください。」
@@ -131,7 +131,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
-> [!DNL Patching Automation]は、メンテナンスモードを自動的に有効にしたり、cron ジョブを無効にしたりしません。これらは、外部で実行する必要があります
+> [!DNL Patching Automation]は、自動的にメンテナンスモードを有効にしたり、cron ジョブを無効にしたりしません。 これらの手順を手動で実行します。
 
 #### 「パッチ操作は完了しましたが、環境のヘルスチェックに失敗しました。 これは、デプロイメントの潜在的な問題を示します。 環境ステータスを確認し、変更を元に戻すことを検討してください。」
 
@@ -141,11 +141,11 @@ ht-degree: 0%
 
 **解決策：**
 
-* ストアフロントと重要なチェックアウトおよび管理ワークフローをテストして、顧客が実際に影響を受けるかどうかを確認します
+* ストアフロントと重要なチェックアウトおよび管理ワークフローをテストして、顧客が影響を受けるかどうかを確認します
 * Cloud Consoleで、環境のステータスを確認し、プロジェクト **アクティビティ** フィードのアプリケーションとデプロイメントのログを調べます。 パッチの操作またはデプロイメントに関連するエラーを探します。
-* 一時的なデプロイメントまたはインフラストラクチャの問題が原因でヘルスチェックに失敗したかどうかを判断するために、手動での再デプロイメントをトリガーします。
-* 問題が解決しない場合は、パッチを元に戻します。 パッチが[!DNL Patching Automation]によって管理され、操作が利用可能な場合は、[!UICONTROL Revert]を選択します。 パッチが`m2-hotfixes` ディレクトリ内のカスタムパッチである場合は、プロジェクトリポジトリからパッチファイルを削除します。 変更をコミットしてプッシュしてから、環境を再デプロイします。
-* 問題が解決しない場合は、Adobe サポートにお問い合わせください。サポートリクエストに次の情報を含めます。サポート プロジェクト ID、環境ID、およびこの正確なメッセージ：最後の操作が正常に完了しなかったため、サポートは環境の状態を確認する必要がある場合があります。
+* 一時的なデプロイメントまたはインフラストラクチャの問題がヘルスチェックのエラーの原因になったかどうかを判断するために、手動での再デプロイメントをトリガーします。
+* 問題が解決しない場合は、パッチを元に戻します。 [!DNL Patching Automation]がパッチを管理し、操作が利用可能な場合は、[!UICONTROL Revert]を選択します。 パッチが`m2-hotfixes` ディレクトリ内のカスタムパッチである場合は、プロジェクトリポジトリからパッチファイルを削除します。 変更をコミットしてプッシュしてから、環境を再デプロイします。
+* 問題が解決しない場合は、Adobe サポートにお問い合わせください。 サポートリクエストに次の情報を含めます：サポートプロジェクト ID、環境ID、およびこの正確なメッセージ：最後の操作が正常に完了しなかったため、サポートは環境の状態を確認する必要があります。
 
 ### 認証エラーとアクセスエラー
 
@@ -178,7 +178,7 @@ ht-degree: 0%
 
 **原因：**&#x200B;一時的な問題により、サービスはGitHubに接続できませんでした
 
-**解決策：**&#x200B;数分待って、操作をやり直してください。 エラーが解決しない場合は、[Adobe Commerce Cloud サポート &#x200B;](https://experienceleague.adobe.com/home?lang=ja#support)にお問い合わせください
+**解決策：**&#x200B;数分待って、操作をやり直してください。 エラーが解決しない場合は、[Adobe Commerce Cloud サポート ](https://experienceleague.adobe.com/home#support)にお問い合わせください
 
 #### 「タイムアウト内に環境が作成されない」（GitHub接続プロジェクト）
 
@@ -186,7 +186,7 @@ ht-degree: 0%
 
 **原因：** プロジェクトのGitHub統合で、`fetch-branches` オプションが無効になっています。 その結果、サービスによってプッシュされた一時的なブランチは同期されず、統合環境は作成されません。
 
-**解決策：**&#x200B;統合の[`fetch-branches` オプション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)を有効にしてから、操作を再試行してください。 「[GitHub統合を [!DNL Patching Automation]](github-integration.md)に設定する」を参照してください。
+**解決策：**&#x200B;統合の[`fetch-branches` オプション ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)を有効にしてから、操作を再試行してください。 「[GitHub統合を [!DNL Patching Automation]](github-integration.md)に設定する」を参照してください。
 
 ### 環境アクティベーションエラー
 
@@ -198,15 +198,13 @@ ht-degree: 0%
 
 **詳細にComposerまたはAdobe Commerce パッケージが記載されている場合：**
 
-* [https://account.magento.com/](https://account.magento.com/)にログインし、アカウント所有者にCommerce Enterprise コードベースへのアクセス権があることを確認します。
-* プロジェクトのComposerの公開キーと秘密キーのペアが正しいことを確認します。[認証キー](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/authentication-keys)を参照してください。
-* [https://account.magento.com/](https://account.magento.com/)にログインし（またはアカウント所有者にログインを依頼）、アカウントにCommerce Enterprise コードベースへのアクセス権があることを確認します。
-* プロジェクトのComposerの公開認証キーと非公開認証キーが正しいことを確認します。 [認証キー](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/authentication-keys)を参照してください。
-* エラーメッセージで指定されたパッケージが、お使いのCommerce版で使用可能であることを確認します。 [Adobe Commerce パッケージ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/packages/adobe-commerce)を参照してください。
+* [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login)にログインし、アカウント所有者にCommerce Enterprise コードベースへのアクセス権があることを確認します。
+* プロジェクトのComposerの公開認証キーと非公開認証キーが正しいことを確認します。 [認証キー](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)を参照してください。
+* エラーメッセージで指定されたパッケージが、お使いのCommerce版で使用可能であることを確認します。 [Adobe Commerce パッケージ ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce)を参照してください。
 
 **詳細に環境スロットまたはリソースが記載されている場合：**
 
-* Cloud Consoleでプロジェクトの概要を開き、環境とそのステータスを確認します。 未使用の統合環境を非アクティブ化または削除する：環境を選択します。 **[!UICONTROL Settings]>[!UICONTROL General]**&#x200B;に移動します。 環境ステータスを「非アクティブ」に設定します。
+* Cloud Consoleでプロジェクトの概要を開き、環境とそのステータスを確認します。 未使用の統合環境を非アクティブ化または削除する：環境を選択します。 **[!UICONTROL Settings]>[!UICONTROL General]**&#x200B;に移動します。 環境を非アクティブにするには、ステータスを非アクティブに設定します。
 
   または、CLIを使用します：`magento-cloud environment:list` / `magento-cloud environment:deactivate <environment-name>`
 * プロジェクトに十分なリソース（ディスク容量など）があることを確認します。
@@ -248,7 +246,7 @@ ht-degree: 0%
 
 ### 関連トピック
 
-* [Adobe Commerceのドキュメント](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/overview)
+* [Adobe Commerceのドキュメント](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
 * [Adobe Commerce インストールガイド](/help/installation/overview.md)
 * [パッチ自動処理の概要](intro.md)
 * [アクセス方法](access.md)
