@@ -54,7 +54,7 @@ GraphQLでのAPI メッシュの使用について詳しくは、[API Mesh](http
 
 開発者は、GraphQL meshやAdobe App Builderなど、[!DNL Adobe Commerce]環境以外のツールの使用を常に検討することが重要です。 これらのツールは、データへのアクセスを維持するのに役立ちますが、コアコマースアプリケーションやその基盤となるデータベーステーブルには影響を与えません。 このアプローチでは、APIを通じてデータを公開します。 次に、App Builder設定にデータソースを追加します。 GraphQL Meshを使用すると、これらのデータソースを組み合わせて、[従来のデータ &#x200B;](#legacy-data)で説明したように1つの応答を生成できます。
 
-GraphQL メッシュの詳細については、[GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}を参照してください。 Adobe App Builderについて詳しくは、[App Builderの概要](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}を参照してください。
+GraphQL メッシュの詳細については、[GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}を参照してください。 Adobe App Builderについて詳しくは、[App Builderの概要](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=ja){target="_blank"}を参照してください。
 
 ## コアテーブルまたはサードパーティテーブルの変更
 

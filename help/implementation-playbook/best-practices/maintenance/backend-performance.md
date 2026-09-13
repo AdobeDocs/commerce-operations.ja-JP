@@ -39,7 +39,7 @@ ht-degree: 0%
 
 Commerce プロジェクトのトラフィック量が多い時間帯の準備について詳しくは、以下を参照してください。
 
-- [ホリデーシーズン](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
+- [ホリデーシーズン](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=ja)
 - [ホリデーショッピングの分析](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=ja)
 - [サージキャパシティの増加](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/holiday-surge-capacity-requests-for-magento-commerce-cloud)
 

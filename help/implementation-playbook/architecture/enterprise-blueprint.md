@@ -48,7 +48,7 @@ Adobe Commerceは、すべてのExperience Cloud ソリューションと統合�
 >詳しくは、次のリソースを参照してください。
 >
 >- 技術的な詳細については、[&#x200B; デジタルエクスペリエンスの設計図](https://experienceleague.adobe.com/ja/docs/blueprints-learn/architecture/overview)を参照してください。
->- [顧客体験のパーソナライズ &#x200B;](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)を参照してください。
+>- [顧客体験のパーソナライズ &#x200B;](https://experienceleague.adobe.com/ja/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)を参照してください。
 
 
 ## サードパーティシステムとの統合
@@ -70,7 +70,7 @@ Adobeには、統合とカスタマイズを構築するための次の開発者
 
 >[!NOTE]
 >
->[最新のアプローチ：Adobe Commerceの効果的な拡張性](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)を参照してください。
+>[最新のアプローチ：Adobe Commerceの効果的な拡張性](https://experienceleague.adobe.com/ja/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)を参照してください。
 
 ## ストアフロントサービス
 

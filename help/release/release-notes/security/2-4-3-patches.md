@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.3-p3 セキュリティリリースでは、以前のリリースの2.4.3で特定された脆弱性に対するセキュリティ修正が提供されています。 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB22-38](https://helpx.adobe.com/jp/security/products/magento/apsb22-38.html)を参照してください。
 
 ### 配送業者としてDHLを提供し続けるには、AC-3022.patchを適用します
 
@@ -36,7 +36,7 @@ DHLはスキーマバージョン 6.2を導入しており、近い将来スキ�
 
 Adobe Commerce 2.4.3-p2 セキュリティリリースには、以前のリリースで特定された脆弱性に対するセキュリティバグ修正が含まれています。 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html)を参照してください。  パッチリリースでは、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch`、`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`が解決した脆弱性も解決されます。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB22-13](https://helpx.adobe.com/jp/security/products/magento/apsb22-13.html)を参照してください。  パッチリリースでは、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch`、`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`が解決した脆弱性も解決されます。
 
 
 ### 配送業者としてDHLを提供し続けるには、AC-3022.patchを適用します
@@ -65,7 +65,7 @@ DHLはスキーマバージョン 6.2を導入しており、近い将来スキ�
 Adobe Commerce 2.4.3-p1 セキュリティリリースには、以前のリリース（Adobe Commerce 2.4.3およびMagento Open Source 2.4.3）で特定された脆弱性に対するセキュリティバグ修正が含まれています。 このリリースには、最新のセキュリティのベストプラクティスへのコンプライアンスを向上させるセキュリティの機能強化も含まれています。
 
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html)を参照してください。 このパッチリリースでは、[Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=ja)、[Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html)、[Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html)のベンダーが開発した拡張機能のバグ修正も提供されています。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB21-86](https://helpx.adobe.com/jp/security/products/magento/apsb21-86.html)を参照してください。 このパッチリリースでは、[Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=ja)、[Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html)、[Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html)のベンダーが開発した拡張機能のバグ修正も提供されています。
 
 ### 配送業者としてDHLを提供し続けるには、AC-3022.patchを適用します
 

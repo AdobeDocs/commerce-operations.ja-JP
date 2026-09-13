@@ -27,5 +27,5 @@ ht-degree: 0%
 
 分離されたセキュリティパッチファイルを適用するには、分離されたセキュリティパッチファイルがそのバージョンに対してのみテストされるので、お客様は、サポートされているリリースラインの最新のセキュリティ専用パッチリリース（最新の – p バージョン）に属している必要があります。
 
-Adobe Commerceで利用可能な最新のセキュリティ更新プログラムについては、[&#x200B; セキュリティ センター](https://helpx.adobe.com/security/products/magento.html)を参照してください。
+Adobe Commerceで利用可能な最新のセキュリティ更新プログラムについては、[&#x200B; セキュリティ センター](https://helpx.adobe.com/jp/security/products/magento.html)を参照してください。
 
