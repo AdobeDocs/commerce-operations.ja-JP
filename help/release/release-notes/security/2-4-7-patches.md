@@ -31,7 +31,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.7-p10 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-49](https://helpx.adobe.com/jp/security/products/magento/apsb26-49.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -67,7 +67,7 @@ Laminas MVCの退職に対処するため、Adobe CommerceはMagentoが所有す
 
 Adobe Commerce 2.4.7-p9 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグ修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-05](https://helpx.adobe.com/jp/security/products/magento/apsb26-05.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -87,7 +87,7 @@ Adobe Commerce 2.4.7が更新され、Composer 2.9.xがサポートされるよ�
 
 Adobe Commerce 2.4.7-p8 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-94](https://helpx.adobe.com/jp/security/products/magento/apsb25-94.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -107,7 +107,7 @@ Adobe Commerce 2.4.7-p8 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p7 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-71](https://helpx.adobe.com/jp/security/products/magento/apsb25-71.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -115,7 +115,7 @@ Adobe Commerce 2.4.7-p7 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p6 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-50](https://helpx.adobe.com/jp/security/products/magento/apsb25-50.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -139,7 +139,7 @@ Adobe Commerce 2.4.7-p6 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p5 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-26](https://helpx.adobe.com/jp/security/products/magento/apsb25-26.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -165,7 +165,7 @@ Adobe Commerce 2.4.7-p5 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p4 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグ修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-08](https://helpx.adobe.com/jp/security/products/magento/apsb25-08.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -177,7 +177,7 @@ Adobe Commerce 2.4.7-p4 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p3 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-73](https://helpx.adobe.com/jp/security/products/magento/apsb24-73.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -193,7 +193,7 @@ Adobe Commerce 2.4.7-p3 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p2のセキュリティリリースには、以前のリリースの2.4.7で特定された脆弱性に対するセキュリティバグ修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-61](https://helpx.adobe.com/jp/security/products/magento/apsb24-61.html)を参照してください。
 
 ### ハイライト
 
@@ -207,7 +207,7 @@ Adobe Commerce 2.4.7-p2のセキュリティリリースには、以前のリリ
 
 Adobe Commerce 2.4.7-p1 セキュリティリリースでは、以前のリリースの2.4.7で特定された脆弱性に対するセキュリティバグ修正が提供されています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-40](https://helpx.adobe.com/jp/security/products/magento/apsb24-40.html)を参照してください。
 
 ### CVE-2024-34102のホットフィックスを適用する
 

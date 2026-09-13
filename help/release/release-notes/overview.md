@@ -40,7 +40,7 @@ ht-degree: 2%
             <li><a href="../lifecycle-policy.md">ソフトウェアライフサイクルポリシー</a></li>
             <li><a href="../version-upgrade-enforcement-policy.md">Cloud バージョンのアップグレードの適用ポリシー</a></li>
             <li><a href="../security-enforcement-policy.md">セキュリティとコンプライアンスに関する通知</a></li>
-            <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe セキュリティ情報</a></li>
+            <li><a href="https://helpx.adobe.com/jp/security/products/magento.html">Adobe セキュリティ情報</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=ja">B2B for Adobe Commerce</a></li>
           </ul>
         </td>
