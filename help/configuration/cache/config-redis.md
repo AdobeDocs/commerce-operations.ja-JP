@@ -3,28 +3,33 @@ title: Redisのインストールとセットアップ
 description: Adobe Commerceを使用して、キャッシュとセッションストレージ用にRedisをインストールおよび設定する方法について説明します。 最適化とパフォーマンス調整のためのオプションをご紹介します。
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
 autotag-review: '2026-06-22T20:26:29.348Z'
 TQID: 'https://experienceleague.adobe.com/N61AAy4ihSIlhEjdvpji2XVOdZuHWhytp9zgoAU41K4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+    internal-label: Implementation
+source-git-commit: c17dcd295b7a27ac1732a700b97af26316a98b7d
 workflow-type: tm+mt
-source-wordcount: 456
+source-wordcount: '460'
 ht-degree: 0%
-
 ---
-
 # Redisのインストールとセットアップ
 
 Redisは、キャッシュバックエンドおよびセッションストレージとして使用できるメモリ内データストアです。 主な機能は次のとおりです。
@@ -48,7 +53,7 @@ Redis ソフトウェアのインストールと設定は、このガイドの�
 
 インストールに応じて、Redis設定は通常、`/etc/redis/redis.conf`または`/etc/redis/<port>.conf`のいずれかのファイルで見つけることができます
 
-要件に合わせてRedis インスタンスを最適化するには、各セッション、Commerce キャッシュ、FPCに専用のインスタンスを使用することで、最適な結果を得ることができます。
+要件に合わせてRedis インスタンスを最適化するには、各セッション用の専用インスタンス、Commerce キャッシュ、フルページキャッシュ（FPC）を使用することで、最適な結果を得ることができます。
 
 セッションの場合、Adobeでは、永続性を有効にして、通常のRedis Database Backup （RDB）スナップショットまたはAppend Only File （AOF）永続ログのいずれかを使用して、Redis データをディスクにコピーすることをお勧めします。
 
@@ -56,9 +61,17 @@ Redis ソフトウェアのインストールと設定は、このガイドの�
 
 - **ファイルのみを追加** （AOF）は、Redisに送信された各書き込み操作をジャーナルファイルに保存します。 Redisは、このファイルを再起動時にのみ読み取り、それを使用して元のデータセットを復元します。
 
-RDB オプションとAOF オプションの両方を同時に有効にすることもできます。 永続性オプションの利点と欠点を含む詳細については、[Redis永続性ドキュメント &#x200B;](https://redis.io/topics/persistence)を参照してください。
+RDB オプションとAOF オプションの両方を同時に有効にすることもできます。 永続性オプションの利点と欠点を含む詳細については、[Redis永続性ドキュメント ](https://redis.io/docs/latest/operate/rs/databases/configure/database-persistence/)を参照してください。
 
-キャッシュインスタンスの場合は、Commerce キャッシュ全体を格納するのに十分な大きさになるようにインスタンスを設定します。 サイズの要件は、商品数やストアビューなどの要因によって異なります。 出発点として、ファイルシステム上のキャッシュフォルダーのサイズを使用できます。 例えば、ファイルシステム上の`var/cache` フォルダーが5 GBの場合は、少なくとも5 GBのRedis インスタンスを設定して開始します。 Commerce キャッシュを復元できるため、キャッシュインスタンスに永続性は必要ありません。 [Redis キャッシュガイド &#x200B;](https://redis.io/docs/latest/develop/use/)を参照してください。
+キャッシュインスタンスの場合は、Commerce キャッシュ全体を格納するのに十分な大きさになるようにインスタンスを設定します。
+
+- サイズの要件は、商品数やストアビューなどの要因によって異なります。
+
+  出発点として、ファイルシステム上の`var/cache` フォルダーのサイズを使用します。 例えば、`var/cache`が5 GBの場合は、少なくとも5 GBのRedis インスタンスを設定して開始します。
+
+- Commerce キャッシュを復元できるため、キャッシュインスタンスに永続性は必要ありません。
+
+  詳しくは、[Redis キャッシュガイド ](https://redis.io/docs/latest/develop/use/)を参照してください。
 
 パフォーマンス調整の場合は、非同期削除に対して次の設定を有効にできます。 これらの設定は、Redisの動作を変更しません。
 

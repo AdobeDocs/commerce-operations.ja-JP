@@ -3,31 +3,39 @@ title: デフォルトおよびページキャッシュ用のRedisの設定
 description: Adobe CommerceのデフォルトおよびページキャッシュバックエンドとしてRedisを設定する方法について説明します。 CLI コマンド、env.php設定、接続検証を確認します。
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
 autotag-review: '2026-06-22T21:55:53.227Z'
 TQID: 'https://experienceleague.adobe.com/2KjWE19ud32PUdvJQWNWkK338ysaa5vt0mA4EyyP66I'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: ec95c99d060f3c45095236d41729648abf389dd1
+    internal-label: Security
+source-git-commit: 23f63c896760992da9b0d30b756a37de2117f6b8
 workflow-type: tm+mt
-source-wordcount: 1411
+source-wordcount: '1407'
 ht-degree: 0%
-
 ---
-
 # デフォルトおよびページキャッシュ用にRedisを設定
 
 {{cloud-cache-config}}
@@ -46,7 +54,7 @@ Commerceには、Redis ページとデフォルトのキャッシュを設定す
 
 Adobe Commerceでは、以下のRedis キャッシュバックエンド実装を使用しています。
 
-- **従来のRedis バックエンド** （`Cm_Cache_Backend_Redis`） – 古いRedis構成で使用されている非推奨の実装。
+- **非推奨のRedis バックエンド** （`Cm_Cache_Backend_Redis`） – 古いRedis構成で使用されています。推奨されなくなりました。
 - **Redis backend** （`Magento\Framework\Cache\Backend\Redis`） – このトピックのコマンドライン設定でデフォルトおよびページキャッシュに使用されるバックエンド。
 - **L2 キャッシュ バックエンド** （`Magento\Framework\Cache\Backend\RemoteSynchronizedCache`） - Redisをリモート バックエンドおよびローカル ファイル キャッシュ ストレージとして使用し、ノード間でキャッシュ データを同期する2段階キャッシュ実装。 [2 レベル キャッシュ設定](level-two-cache.md)を参照してください。
 
@@ -202,7 +210,7 @@ L2 キャッシュでプリロード機能を使用する場合は、キーに`:
 
 ### 並列生成
 
-Commerce 2.4.0 リリース以降、Adobeでは、ロック待ちを排除するユーザーに対して`allow_parallel_generation` オプションが導入されました。 デフォルトでは無効になっています。Adobeでは、過剰な設定やブロックがあるまで無効にすることをお勧めします。
+Adobe Commerceでは、ロック待ちを排除するユーザーに`allow_parallel_generation` オプションを提供しています。 デフォルトでは無効になっています。Adobeでは、過剰な設定やブロックがあるまで無効にすることをお勧めします。
 
 **並列生成を有効にするには**:
 

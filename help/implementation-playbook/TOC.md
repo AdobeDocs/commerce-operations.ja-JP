@@ -3,20 +3,18 @@ user-guide-title: 実装プレイブック
 user-guide-description: 成功する Adobe Commerce サイトの計画と実装の戦略について学習します。
 mini-toc-levels: 3
 nudge: true
-source-git-commit: 9343b1fb2832ea0865614e8fb58e5283a72c990d
+source-git-commit: d891254482ae9d0fa5b154f56de83a4a483feef7
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 14%
-
 ---
-
 
 # 実装プレイブック {#implementation-playbook}
 
 - [概要](overview.md)
 - アーキテクチャと統合 {#architecture}
   - [エンタープライズリファレンス](architecture/enterprise-blueprint.md)
-- メンテナンスとサポート {#maintenance}
+- メンテナンスとサポート {#maintenance-and-support}
   - [概要](maintenance/overview.md)
   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - ベストプラクティス {#best-practices}
@@ -49,7 +47,7 @@ ht-degree: 14%
     - [プライベートコンテンツブロック](best-practices/development/private-content-block-configuration.md)
     - [静的コンテンツのデプロイメント](best-practices/development/static-content-deployment.md)
     - [データベーステーブルの変更](best-practices/development/modifying-core-and-third-party-tables.md)
-    - [&#x200B; コアおよびサードパーティのコードの変更](best-practices/development/modifying-core-and-third-party-code.md)
+    - [コアコードとサードパーティコードの変更](best-practices/development/modifying-core-and-third-party-code.md)
   - Launch {#launch}
     - [概要](best-practices/launch/overview.md)
     - [Web web クローラーの設定](best-practices/launch/robots-txt.md)
@@ -69,4 +67,4 @@ ht-degree: 14%
     - [チェックリストをアップグレード](best-practices/maintenance/upgrade-checklist.md)
     - [MariaDBのアップグレードの前提条件](best-practices/maintenance/mariadb-upgrade.md)
 - [用語集](glossary.md)
-- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
+- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
