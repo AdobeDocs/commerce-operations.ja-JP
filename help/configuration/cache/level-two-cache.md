@@ -51,7 +51,7 @@ Commerceは、ハッシュ化されたデータバージョンをリモートキ
 | 導入 | Commerce版 | リモートキャッシュサービス | 説明 |
 | -------------- | ---------------- | -------------------- | ----------- |
 | [`RemoteSynchronizedCache`](#remotesynchronizedcache-l2-cache-configuration) | 2.4.9より前（サポートされている場合） | リリースとパッチレベルに応じて、RedisまたはValkey | ローカルストレージ用の`Cm_Cache_Backend_File`を含むZend ベースの2 レベルキャッシュ |
-| [Symfony L2 （`symfony_l2`） ](#symfony-l2-cache-implementation) | 2.4.9以降 | バルキー | PSR-6準拠の最新のSymfony Cache ベースのL2実装 |
+| [Symfony L2 （`symfony_l2`） &#x200B;](#symfony-l2-cache-implementation) | 2.4.9以降 | バルキー | PSR-6準拠の最新のSymfony Cache ベースのL2実装 |
 
 ## RemoteSynchronizedCache L2 キャッシュ設定
 
@@ -60,7 +60,7 @@ Commerceは、ハッシュ化されたデータバージョンをリモートキ
 >
 >この節では、2.4.9より前のAdobe Commerce オンプレミス版の`RemoteSynchronizedCache` L2設定について説明します。このバージョンは、正確なCommerce リリースとパッチレベルのサポート マトリックスでサポートされています。
 >
->Adobe Commerce 2.4.9以降では、[Symfony L2 キャッシュ ](#symfony-l2-cache-implementation)でValkeyを使用します。
+>Adobe Commerce 2.4.9以降では、[Symfony L2 キャッシュ &#x200B;](#symfony-l2-cache-implementation)でValkeyを使用します。
 >
 >Adobe Commerce on Cloud インフラストラクチャの場合、`.magento.env.yaml`のデプロイメント変数を使用してL2 キャッシュを設定します。 `app/etc/env.php`を直接編集しないでください。 [L2 キャッシュの設定](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)を参照してください。
 
@@ -121,7 +121,7 @@ Adobeでは、Redisの負荷を軽減するため、`[cache preload](redis-pg-ca
 
 ## 古いキャッシュオプション
 
-Commerce 2.4以降、`use_stale_cache` オプションは、以前にキャッシュされたデータを処理し、新しいキャッシュデータを並行プロセスで生成することで、特定の場合のパフォーマンスを向上させることができます。 この節で説明する推奨キャッシュの種類とトレードオフは、`RemoteSynchronizedCache`と`symfony_l2`の両方の実装に適用されます。 `symfony_l2`の設定例については、[古いキャッシュを持つSymfony L2 キャッシュ ](#symfony-l2-cache-with-stale-cache)を参照してください。
+Commerce 2.4以降、`use_stale_cache` オプションは、以前にキャッシュされたデータを処理し、新しいキャッシュデータを並行プロセスで生成することで、特定の場合のパフォーマンスを向上させることができます。 この節で説明する推奨キャッシュの種類とトレードオフは、`RemoteSynchronizedCache`と`symfony_l2`の両方の実装に適用されます。 `symfony_l2`の設定例については、[古いキャッシュを持つSymfony L2 キャッシュ &#x200B;](#symfony-l2-cache-with-stale-cache)を参照してください。
 
 一般的に、ロック待ちのトレードオフは、パフォーマンスの観点から許容されます。 ただし、ブロック数やキャッシュエントリ数が増えると、ロック待ちに時間がかかります。 一部のシナリオでは、プロセスの待機時間は最大&#x200B;**キー数** x **検索タイムアウト**&#x200B;です。 まれに、ユーザーが`Block/Config` キャッシュに数百のキーを持つことがあるため、ロックの小さなルックアップタイムアウトでも数秒かかる場合があります。
 
@@ -141,7 +141,7 @@ Adobeでは、`use_stale_cache` オプションを有効にすることをお勧
 
 Adobeでは、`default` キャッシュタイプに`use_stale_cache` オプションを有効にすることはお勧めしません。
 
-次のコードは、`RemoteSynchronizedCache` バックエンドの設定例を示しています。 `symfony_l2`の例については、[古いキャッシュを持つSymfony L2 キャッシュ ](#symfony-l2-cache-with-stale-cache)を参照してください。
+次のコードは、`RemoteSynchronizedCache` バックエンドの設定例を示しています。 `symfony_l2`の例については、[古いキャッシュを持つSymfony L2 キャッシュ &#x200B;](#symfony-l2-cache-with-stale-cache)を参照してください。
 
 ```php
 'cache' => [
@@ -229,9 +229,9 @@ Commerce バージョン 2.4.9以降では、`RemoteSynchronizedCache`の代わ�
 
 - **`preload_keys`は`symfony_l2`.**&#x200B;では推奨されません `RemoteSynchronizedCache`設定に`preload_keys`が含まれている場合は、移行の一部として削除します。 キーのプリロードは`symfony_l2`のパフォーマンスを向上させず、追加の不要なキー検索をトリガーすることでValkeyの負荷を増やす可能性があります。
 
-- **圧縮には明示的なフラグが必要です。** `compression_lib`のみを設定すると、`symfony_l2`の下で圧縮が有効になりません。 必要な`compress_data`設定については、[Symfony L2 キャッシュのバックエンドオプション ](#backend-options-for-symfony-l2-cache)を参照してください。
+- **圧縮には明示的なフラグが必要です。** `compression_lib`のみを設定すると、`symfony_l2`の下で圧縮が有効になりません。 必要な`compress_data`設定については、[Symfony L2 キャッシュのバックエンドオプション &#x200B;](#backend-options-for-symfony-l2-cache)を参照してください。
 
-- **手動で構成されたオンプレミスのデプロイメントでは、デフォルトで古いキャッシュが有効になっていません。** `use_stale_cache`のデフォルトは`symfony_l2`の`false`です（[ バックエンドオプションの表](#backend-options-for-symfony-l2-cache)を参照）。 `RemoteSynchronizedCache`設定で`stale_cache_enabled` フロントエンドを使用している場合は、[Symfony L2 キャッシュのパターンを使用して、古いキャッシュ ](#symfony-l2-cache-with-stale-cache)で明示的に再作成する必要があります。
+- **手動で構成されたオンプレミスのデプロイメントでは、デフォルトで古いキャッシュが有効になっていません。** `use_stale_cache`のデフォルトは`symfony_l2`の`false`です（[&#x200B; バックエンドオプションの表](#backend-options-for-symfony-l2-cache)を参照）。 `RemoteSynchronizedCache`設定で`stale_cache_enabled` フロントエンドを使用している場合は、[Symfony L2 キャッシュのパターンを使用して、古いキャッシュ &#x200B;](#symfony-l2-cache-with-stale-cache)で明示的に再作成する必要があります。
 
 >[!NOTE]
 >
@@ -287,7 +287,7 @@ Commerce バージョン 2.4.9以降では、`RemoteSynchronizedCache`の代わ�
 
 ### Symfony L2 キャッシュと古いキャッシュ
 
-どのキャッシュタイプが古いキャッシュから恩恵を受けるか、その理由については、[古いキャッシュオプション ](#stale-cache-options)を参照してください。
+どのキャッシュタイプが古いキャッシュから恩恵を受けるか、その理由については、[古いキャッシュオプション &#x200B;](#stale-cache-options)を参照してください。
 
 次の例を使用して、`symfony_l2`個の古いキャッシュ サポート用に個別のフロントエンドを設定します。
 

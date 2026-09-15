@@ -61,7 +61,7 @@ Redis ソフトウェアのインストールと設定は、このガイドの�
 
 - **ファイルのみを追加** （AOF）は、Redisに送信された各書き込み操作をジャーナルファイルに保存します。 Redisは、このファイルを再起動時にのみ読み取り、それを使用して元のデータセットを復元します。
 
-RDB オプションとAOF オプションの両方を同時に有効にすることもできます。 永続性オプションの利点と欠点を含む詳細については、[Redis永続性ドキュメント ](https://redis.io/docs/latest/operate/rs/databases/configure/database-persistence/)を参照してください。
+RDB オプションとAOF オプションの両方を同時に有効にすることもできます。 永続性オプションの利点と欠点を含む詳細については、[Redis永続性ドキュメント &#x200B;](https://redis.io/docs/latest/operate/rs/databases/configure/database-persistence/)を参照してください。
 
 キャッシュインスタンスの場合は、Commerce キャッシュ全体を格納するのに十分な大きさになるようにインスタンスを設定します。
 
@@ -71,7 +71,7 @@ RDB オプションとAOF オプションの両方を同時に有効にするこ
 
 - Commerce キャッシュを復元できるため、キャッシュインスタンスに永続性は必要ありません。
 
-  詳しくは、[Redis キャッシュガイド ](https://redis.io/docs/latest/develop/use/)を参照してください。
+  詳しくは、[Redis キャッシュガイド &#x200B;](https://redis.io/docs/latest/develop/use/)を参照してください。
 
 パフォーマンス調整の場合は、非同期削除に対して次の設定を有効にできます。 これらの設定は、Redisの動作を変更しません。
 

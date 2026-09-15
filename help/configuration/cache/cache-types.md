@@ -41,19 +41,19 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-Commerce キャッシュ アーキテクチャの概要については、[ キャッシュの概要と設定オプション ](caching-overview.md)を参照してください。
+Commerce キャッシュ アーキテクチャの概要については、[&#x200B; キャッシュの概要と設定オプション &#x200B;](caching-overview.md)を参照してください。
 
 >[!NOTE]
 >
->クラウドインフラストラクチャ上のAdobe Commerceの場合は、クラウドガイドに記載されている[ クラウドのデプロイメント設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml)を使用します。 `app/etc/env.php`を直接編集しないでください。 デプロイメントツールはこのファイルを生成し、手動での変更を上書きできます。
+>クラウドインフラストラクチャ上のAdobe Commerceの場合は、クラウドガイドに記載されている[&#x200B; クラウドのデプロイメント設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml)を使用します。 `app/etc/env.php`を直接編集しないでください。 デプロイメントツールはこのファイルを生成し、手動での変更を上書きできます。
 
 ## デフォルトのフロントエンドを使用する
 
 Commerceには、すべてのキャッシュタイプで使用できるデフォルトのフロントエンドが用意されています。
 
-ほとんどの場合、カスタムフロントエンドを定義する必要はありません。 すべてのキャッシュタイプで同じバックエンドオプションとバックエンドオプションを使用できる場合は、デフォルトのフロントエンドを使用し、バックエンドを設定します。 バックエンド固有の設定については、[ キャッシュバックエンドオプション ](cache-options.md)を参照してください。
+ほとんどの場合、カスタムフロントエンドを定義する必要はありません。 すべてのキャッシュタイプで同じバックエンドオプションとバックエンドオプションを使用できる場合は、デフォルトのフロントエンドを使用し、バックエンドを設定します。 バックエンド固有の設定については、[&#x200B; キャッシュバックエンドオプション &#x200B;](cache-options.md)を参照してください。
 
-2.4.9より前のAdobe Commerce バージョンの場合、デフォルトのフロントエンドでは、従来のZend ベースのキャッシュ実装が使用されます。 `Magento\Framework\Cache\Core` フロントエンドは`Zend_Cache_Core`を拡張しています。 Adobe Commerce 2.4.9以降では、最新のSymfonyの実装を使用しています。 バージョン固有のガイダンスについては、[ キャッシュバックエンドオプション ](cache-options.md)を参照してください。
+2.4.9より前のAdobe Commerce バージョンの場合、デフォルトのフロントエンドでは、従来のZend ベースのキャッシュ実装が使用されます。 `Magento\Framework\Cache\Core` フロントエンドは`Zend_Cache_Core`を拡張しています。 Adobe Commerce 2.4.9以降では、最新のSymfonyの実装を使用しています。 バージョン固有のガイダンスについては、[&#x200B; キャッシュバックエンドオプション &#x200B;](cache-options.md)を参照してください。
 
 ## カスタムフロントエンドを定義する
 
@@ -87,7 +87,7 @@ Commerceには、すべてのキャッシュタイプで使用できるデフォ
 - `<cache-type-id>`は、`config`、`layout`、`block_html`、`full_page`などのCommerce キャッシュの種類です。
 
 
-バックエンドタイプ、サポートされているオプション、リリース固有の設定例については、[ キャッシュバックエンドオプション ](cache-options.md)を参照してください。
+バックエンドタイプ、サポートされているオプション、リリース固有の設定例については、[&#x200B; キャッシュバックエンドオプション &#x200B;](cache-options.md)を参照してください。
 
 ## フロントエンドへのキャッシュタイプの割り当て
 
@@ -116,9 +116,9 @@ Commerceには、すべてのキャッシュタイプで使用できるデフォ
 
 >[!NOTE]
 >
->Zend ベースのクラス名と`valkey`や`file`などのSymfony Cache簡略名などのバックエンドの値フォーマットについては、[ キャッシュバックエンドオプション ](cache-options.md)を参照してください。
+>Zend ベースのクラス名と`valkey`や`file`などのSymfony Cache簡略名などのバックエンドの値フォーマットについては、[&#x200B; キャッシュバックエンドオプション &#x200B;](cache-options.md)を参照してください。
 
 >[!MORELIKETHIS]
 >
 >- パフォーマンス最適化のための[L2 キャッシュ設定](level-two-cache.md)
->- [ キャッシュの管理](../cli/manage-cache.md)
+>- [&#x200B; キャッシュの管理](../cli/manage-cache.md)
