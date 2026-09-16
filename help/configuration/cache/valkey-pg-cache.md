@@ -8,26 +8,34 @@ autotag-review: '2026-06-22T22:00:55.389Z'
 TQID: 'https://experienceleague.adobe.com/AjJ86dYGRVFuY1T73ct1Gpcf6iDbb4ewP8OiGX8otQs'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
+    internal-label: Security
+source-git-commit: 23f63c896760992da9b0d30b756a37de2117f6b8
 workflow-type: tm+mt
-source-wordcount: 1315
+source-wordcount: '1309'
 ht-degree: 0%
-
 ---
-
 
 # デフォルトおよびページキャッシュのValkeyの設定
 
@@ -49,15 +57,15 @@ Commerceには、Valkeyのデフォルトとページキャッシュを設定す
 
 >[!TAB Zend キャッシュ （2.4.8以前） ]
 
-- **Zend Cache （2.4.8以前）** — Commerce 2.4.8以前の以前のValkey バックエンド：
-  - **Legacy Valkey backend** – 完全なクラス パス （`Magento\Framework\Cache\Backend\Valkey`）を使用します
+- **Zend Cache （2.4.8以前）** — Commerce 2.4.8以前のValkey バックエンド：
+  - **Zend ベースのValkey バックエンド** – 完全なクラス パス （`Magento\Framework\Cache\Backend\Valkey`）を使用します
   - **プリロード キー** – 頻繁に使用するキャッシュ キーのプリロードをサポート
   - **Lua スクリプト** — ガベージコレクション用Lua
   - **圧縮** — データ圧縮をサポート
 
 >[!TAB Symfony キャッシュ （2.4.9+） ]
 
-- **Symfony Cache （2.4.9+）** — Commerce 2.4.9以降、Symfony CacheはValkeyに最新のPSR-6準拠キャッシュ実装を提供し、大幅なパフォーマンス向上を実現しました。
+- **Symfony Cache （2.4.9+）** — Commerce 2.4.9以降、Symfony CacheはValkeyにPSR-6準拠のキャッシュ実装を提供し、パフォーマンスが大幅に向上しました。
   - **自動バルキーパイプライン** – 複数の操作を単一のリクエストにバッチ処理して、待ち時間を短縮します
   - **PSR-6 TagAwareAdapter** — アトミックオペレーションによる効率的なタグベースのキャッシュ無効化
   - **Igbinary serialization** — バイナリのシリアル化により、キャッシュ エントリ サイズが45%削減され、速度が5 ～ 10%向上します
@@ -279,7 +287,7 @@ L2 キャッシュでプリロード機能を使用する場合は、キーに`:
 
 ### 並列生成
 
-Commerce 2.4.0 リリース以降、Adobeでは、ロック待ちを排除するユーザーに対して`allow_parallel_generation` オプションが導入されました。 デフォルトでは無効になっています。Adobeでは、過剰な設定やブロックがあるまで無効にすることをお勧めします。
+Adobe Commerceでは、ロック待ちを排除するユーザーに`allow_parallel_generation` オプションを提供しています。 デフォルトでは無効になっています。Adobeでは、過剰な設定やブロックがあるまで無効にすることをお勧めします。
 
 **並列生成を有効にするには**:
 

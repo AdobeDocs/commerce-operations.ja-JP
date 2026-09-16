@@ -7,23 +7,28 @@ badgePaas: label="オンプレミス" type="Informative" url="https://experience
 TQID: 'https://experienceleague.adobe.com/Ef4WREy0eq0ChsrI5-0FtrjMZWNjwr7l71Pm-RHD1GI'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+    internal-label: Implementation
+source-git-commit: c17dcd295b7a27ac1732a700b97af26316a98b7d
 workflow-type: tm+mt
-source-wordcount: 414
+source-wordcount: '428'
 ht-degree: 0%
-
 ---
-
 # Valkeyのインストールと設定
 
 Valkeyは、Redis互換のオープンソースのメモリ内データストアで、キャッシュバックエンドおよびセッションストレージとして使用できます。 主な機能は次のとおりです。
@@ -56,7 +61,15 @@ Adobeでは、Valkey データをディスクにコピーするセッション�
 
 RDB オプションとAOF オプションの両方を同時に有効にすることもできます。 永続性オプションの利点と欠点を含む詳細については、[Valkey Persistence ドキュメント &#x200B;](https://valkey.io/topics/persistence/)を参照してください。
 
-キャッシュインスタンスの場合は、Commerce キャッシュ全体を格納するのに十分な大きさになるようにインスタンスを設定します。 サイズの要件は、商品数やストアビューなどの要因によって異なります。 出発点として、ファイルシステム上のキャッシュフォルダーのサイズを使用できます。 例えば、ファイルシステム上の`var/cache` フォルダーが5 GBの場合、Valkey インスタンスを5 GB以上で設定して開始します。 Commerce キャッシュを復元できるため、キャッシュインスタンスに永続性は必要ありません。
+キャッシュインスタンスの場合は、Commerce キャッシュ全体を格納するのに十分な大きさになるようにインスタンスを設定します。
+
+- サイズの要件は、商品数やストアビューなどの要因によって異なります。
+
+  出発点として、ファイルシステム上のキャッシュフォルダーのサイズを使用できます。 例えば、ファイルシステム上の`var/cache` フォルダーが5 GBの場合、Valkey インスタンスを5 GB以上で設定して開始します。
+
+- Commerce キャッシュを復元できるため、キャッシュインスタンスに永続性は必要ありません。
+
+  詳しくは、[Valkey キャッシュガイド &#x200B;](https://valkey.io/docs/latest/develop/use/)を参照してください。
 
 パフォーマンス調整の場合は、非同期削除に対して次の設定を有効にできます。 これらの設定は、Valkeyの動作を変更しません。
 
