@@ -2,14 +2,12 @@
 title: Adobe Commerce 2.4.2 セキュリティパッチリリースノート
 description: Adobe Commerce バージョン 2.4.2のセキュリティパッチリリースに含まれているセキュリティバグの修正、セキュリティの強化、およびその他のセキュリティ関連アップデートについて説明します。
 exl-id: e6058e96-b810-4a78-8804-15783afef951
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Commerce 2.4.2 セキュリティパッチのリリースノート
 
@@ -25,4 +23,4 @@ Adobe Commerce 2.4.2-p2のセキュリティリリースには、以前のリリ
 
 DHLはスキーマバージョン 6.2を導入しており、近い将来スキーマバージョン 6.0を廃止する予定です。 DHL統合をサポートするAdobe Commerce 2.4.4以前のバージョンは、バージョン 6.0のみをサポートします。 これらのリリースを展開する販売者は、DHLを配送業者として提供し続けるために、最も早い都合で`AC-3022.patch`を適用する必要があります。 パッチのダウンロードとインストールについて詳しくは、[配送業者としてDHLを提供し続けるためのパッチの適用](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) ナレッジベースの記事を参照してください。
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->

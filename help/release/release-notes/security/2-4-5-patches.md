@@ -2,14 +2,12 @@
 title: Adobe Commerce 2.4.5 セキュリティパッチリリースノート
 description: Adobe Commerce バージョン 2.4.5のセキュリティパッチリリースに含まれているセキュリティバグの修正、セキュリティの強化、およびその他のセキュリティ関連アップデートについて説明します。
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '2007'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Commerce 2.4.5 セキュリティパッチのリリースノート
 
@@ -281,8 +279,8 @@ Adobe Commerce 2.4.5-p2のセキュリティリリースでは、以前のリリ
 
 Adobe Commerce 2.4.5-p1 セキュリティリリースでは、以前のリリースの2.4.5で特定された脆弱性に対するセキュリティバグ修正が提供されています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB22-48](https://helpx.adobe.com/jp/security/products/magento/apsb22-48.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html)を参照してください。
 
 セキュリティのバグ修正の1つは、新しい設定設定の作成でした。 [!UICONTROL **電子メールが変更された場合は電子メールの確認を必要とする**]&#x200B;の設定設定により、管理者ユーザーが電子メールアドレスを変更する際に、管理者は電子メールの確認を必要とすることができます。<!-- AC-6292-->
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->

@@ -2,14 +2,12 @@
 title: 必要システム構成
 description: Adobe Commerceのソフトウェアの依存関係と必要システム構成について説明します。 デプロイメント環境との互換性については、テスト済みの設定を参照してください。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-last-update: 2026-08-11T00:00:00Z
-source-git-commit: 81442a33c3dabcaa3b9eda56a2132bf7b7432ba2
+last-update: 2026-08-11
+source-git-commit: 0e218207eb48d6c93139bd05215f5804b21ee216
 workflow-type: tm+mt
-source-wordcount: '1649'
+source-wordcount: '1651'
 ht-degree: 0%
-
 ---
-
 # 必要システム構成
 
 次の情報は、Adobe Commerceでテストされたソフトウェアの依存関係とサービスをまとめたものです。
@@ -74,7 +72,7 @@ Commerce リリースライン。
 >
 >Adobe Commerce 2.4.6は[延長サポート &#x200B;](../release/lifecycle-policy.md#extended-support)から&#x200B;**2027年8月30日**&#x200B;までで、その後[&#x200B; セキュリティのみの移行期間](../release/lifecycle-policy.md#security-only-transitional-period) ～ **2028年5月31日**&#x200B;が続きます。 これらの規定は、Adobe Commerceのお客様のみが利用できます。 MySQLなどのサードパーティの依存関係のサポートは拡張されません。
 >
->Adobe Commerce on Cloudを実行する場合は、**2028年6月1日** [&#x200B; バージョンのアップグレード実施日](../release/version-upgrade-enforcement-policy.md)より前に、サポートされているリリースにアップグレードするか、[!DNL Adobe Commerce as a Cloud Service]に移行する必要があります。 ライフサイクルの全期間については、[&#x200B; サポート終了日](../release/lifecycle-policy.md#end-of-support-dates)の表を参照してください。
+>Adobe Commerce on Cloudを実行する場合は、**2028年6月1日**&#x200B;[のセキュリティ要件と期限](../release/security-enforcement-policy.md)より前に、サポートされているリリースにアップグレードするか、[!DNL Adobe Commerce as a Cloud Service]に移行する必要があります。 ライフサイクルの全期間については、[&#x200B; サポート終了日](../release/lifecycle-policy.md#end-of-support-dates)の表を参照してください。
 >
 >この記事の長さを最小限に抑えるために、表を折りたたみます。 ヘッダーを選択して展開します。
 

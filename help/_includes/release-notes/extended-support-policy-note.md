@@ -1,9 +1,8 @@
 ---
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '86'
 ht-degree: 0%
-
 ---
 # 拡張サポートポリシーノート
 
@@ -16,4 +15,4 @@ ht-degree: 0%
 >こちらもご覧ください：
 >
 >- [&#x200B; ソフトウェア ライフサイクル ポリシー](/help/release/lifecycle-policy.md) — サポート終了日、延長サポート、およびセキュリティのみの移行規定
->- [Cloud バージョンのアップグレード実施ポリシー](/help/release/version-upgrade-enforcement-policy.md) – 実施日と必要なアクション
+>- [Commerce環境を保護するために必要なアクションと期限](/help/release/security-enforcement-policy.md) – 実施日と必要なアクション

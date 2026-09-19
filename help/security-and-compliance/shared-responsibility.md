@@ -2,13 +2,11 @@
 title: 責任セキュリティと運用モデルの共有
 description: Adobe Commerce on cloud インフラストラクチャプロジェクトに関与する各パーティのセキュリティ責任について説明します。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3242'
 ht-degree: 0%
-
 ---
-
 # 責任セキュリティと運用モデルの共有
 
 Adobe Commerce on cloud infrastructureは、共通の責任セキュリティと運用モデルに依存するPaaS （Platform-as-a-Service）製品です。 Adobe、マーチャント、クラウドサービスプロバイダー、コンテンツ配信ネットワーク（CDN）プロバイダーは、これらの責任を分担しています。 Adobe Commerceアプリケーションと、クラウドインフラストラクチャにデプロイされたマーチャント固有のコードおよび拡張機能のセキュリティと運用については、各当事者が明確な責任を負います。
@@ -38,7 +36,6 @@ Adobeは、次の責任を負います。
 >こちらもご覧ください：
 >
 >* [&#x200B; ソフトウェア ライフサイクル ポリシー](../release/lifecycle-policy.md) — サポート終了日、延長サポート、およびセキュリティのみの移行規定
->* [Cloud バージョンのアップグレード実施ポリシー](../release/version-upgrade-enforcement-policy.md) – 実施日と必要なアクション
 >* [&#x200B; セキュリティとコンプライアンスに関する通知](../release/security-enforcement-policy.md) — Cloud バージョン 2.4.4 ～ 2.4.9でAdobe Commerceに必要なアクションと期限
 
 {{supported-versions-only}}

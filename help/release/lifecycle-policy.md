@@ -3,14 +3,12 @@ title: ソフトウェアライフサイクルポリシー
 description: Adobe Commerce リリースのソフトウェアサポート終了の主な日付について説明します。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
-
 ---
-
 
 # Adobe Commerce ライフサイクルポリシー
 
@@ -206,3 +204,5 @@ Adobeでは、できるだけ早くアップグレードすることをお勧め
 [!DNL Adobe Commerce as a Cloud Service]にすぐに移行できない場合は、現在サポートされている最新のAdobe Commerce Cloud版リリースにアップグレードできます。 これにより、既存のCommerce on Cloud デプロイメントモデルを維持しながら、完全にサポートされた最新のインフラストラクチャスタックに移行できます。
 
 このパスでは、今後のアップグレードの義務がなくなるわけではありません。 Adobe Commerce on Cloud デプロイメントを使用しているお客様は、リリースラインがバージョンアップグレードの実施日に達すると、アップグレードを続行する必要があります。
+
+<!-- Last updated from includes: 2026-09-17 13:05:40 -->

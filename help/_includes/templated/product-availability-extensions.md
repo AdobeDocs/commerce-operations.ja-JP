@@ -1,9 +1,8 @@
 ---
-source-git-commit: 6f547fe6438782791d693234eb72fd9204c1c2a4
+source-git-commit: 6bec5b1e84a8e4ab49bd78c40be972292fb83f1c
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 20%
-
 ---
 # Adobe オーサリング拡張機能の製品入手方法
 
@@ -37,7 +36,7 @@ ht-degree: 20%
       </tr>
       <tr>
           <td>Adobe Commerce管理UI SDK</td>
-          <td>4.2.1</td>
+          <td>5.0.0</td>
           <td>2.0+</td>
           <td>1.3+</td>
           <td>1.3+</td>

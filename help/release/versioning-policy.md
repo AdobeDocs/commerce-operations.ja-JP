@@ -2,14 +2,12 @@
 title: リリースポリシー
 description: Adobe Commerceのリリースタイプ、マーケターとモジュールのバージョン管理、パッチとセキュリティのリリース、ベータ版、ホットフィックス、全体的なリリースポリシーについて説明します。
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce リリースポリシー
 
 Adobe Commerceでは、個々のモジュールレベル （例：`magento/framework 101.1.1`）で[&#x200B; セマンティックバージョン管理](https://semver.org/)が使用されますが、マーケティングバージョン番号には使用されません。 例：
@@ -82,4 +80,4 @@ Beta リリースには欠陥が含まれている場合があり、いかなる
 
 さまざまな理由で問題を修正したり、Adobe Commerce コードを変更したりするために、Adobe以外の担当者によって作成されました。
 
-<!-- Last updated from includes: 2026-06-16 17:36:23 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->

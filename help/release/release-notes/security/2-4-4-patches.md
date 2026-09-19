@@ -2,14 +2,12 @@
 title: Adobe Commerce 2.4.4 セキュリティパッチリリースノート
 description: Adobe Commerce バージョン 2.4.4のセキュリティパッチリリースに含まれているセキュリティバグの修正、セキュリティの強化、およびその他のセキュリティ関連アップデートについて説明します。
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '2160'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Commerce 2.4.4 セキュリティパッチのリリースノート
 
@@ -239,7 +237,7 @@ Adobe Commerce 2.4.4-p3 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.4-p2のセキュリティリリースでは、以前のリリースで特定された脆弱性に対する修正が提供されています。 1つの修正には、新しい設定設定の作成が含まれます。 [!UICONTROL **電子メールが変更された場合は電子メールの確認を必要とする**]&#x200B;の設定設定により、管理者ユーザーが電子メールアドレスを変更したときに管理者が電子メールの確認を必要とすることができます。<!-- AC-6292-->
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB22-48](https://helpx.adobe.com/jp/security/products/magento/apsb22-48.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html)を参照してください。
 
 ### 配送業者としてDHLを提供し続けるには、AC-3022.patchを適用します
 
@@ -268,4 +266,4 @@ DHLはスキーマバージョン 6.2を導入しており、近い将来スキ�
 
 **問題**:Adobe Commerce 2.4.4からAdobe Commerce 2.4.4-p1へのアップグレード中に、パッケージ バージョンのダウングレードに関する通知が表示される場合があります。 これらのメッセージは無視できます。 パッケージバージョンの相違は、パッケージ生成時の異常に起因します。 製品機能には影響はありません。 影響を受けるシナリオと回避策について詳しくは、ナレッジベースの記事「2.4.4から2.4.4-p1[&#128279;](https://support.magento.com/hc/en-us/articles/8214752983949)」にアップグレードした後にダウングレードされた パッケージを参照してください。
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->

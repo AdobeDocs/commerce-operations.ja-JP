@@ -1,17 +1,15 @@
 ---
-title: 使用状況
+title: インストールと使用
 description: Adobe Commerceのパッチの適用と管理にQuality Patches Toolを使用する方法について説明します。 テスト、アプリケーション、パッチ管理などの手法を紹介します。
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+source-git-commit: 2b2ac06c54af242407ae4f3fbfb23180e6ec3ae8
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '944'
 ht-degree: 0%
-
 ---
-
-# 使用状況
+# インストールと使用
 
 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches)は、AdobeとMagento Open Source コミュニティによって開発された個別のパッチを提供します。 インストールされているバージョンのAdobe Commerceで使用できるすべての個々のパッチに関する一般的な情報を適用、取り消し、表示できます。 誰がパッチを開発したかに関係なく、Adobe Commerce プロジェクトにパッチを適用できます。 例えば、コミュニティで開発したパッチをAdobe Commerce プロジェクトに適用できます。
 

@@ -2,14 +2,12 @@
 title: Adobe Commerce 2.4.3 セキュリティパッチのリリースノート
 description: Adobe Commerce バージョン 2.4.3のセキュリティパッチリリースに含まれているセキュリティバグの修正、セキュリティの強化、およびその他のセキュリティ関連アップデートについて説明します。
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Commerce 2.4.3 セキュリティパッチのリリースノート
 
@@ -89,4 +87,4 @@ DHLはスキーマバージョン 6.2を導入しており、近い将来スキ�
 
 サポートされていないソース式`unsafe-inline`がコンテンツセキュリティポリシー`frame-ancestors` ディレクティブから削除されました。 [GitHub-33101](https://github.com/magento/magento2/issues/33101)<!-- MC-42632-->
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->

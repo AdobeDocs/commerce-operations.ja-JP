@@ -2,14 +2,12 @@
 title: Adobe Commerce 2.4.6 セキュリティパッチリリースノート
 description: Adobe Commerce バージョン 2.4.6のセキュリティパッチリリースに含まれているセキュリティバグの修正、セキュリティの強化、およびその他のセキュリティ関連アップデートについて説明します。
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '2365'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Commerce 2.4.6 セキュリティパッチのリリースノート
 
@@ -31,7 +29,7 @@ ht-degree: 0%
 >
 >Adobe Commerce 2.4.6は[延長サポート &#x200B;](../../lifecycle-policy.md#extended-support)から&#x200B;**2027年8月30日**&#x200B;までで、その後[&#x200B; セキュリティのみの移行期間](../../lifecycle-policy.md#security-only-transitional-period) ～ **2028年5月31日**&#x200B;が続きます。 これらの規定は、Adobe Commerceのお客様のみが利用できます。 MySQLなどのサードパーティの依存関係のサポートは拡張されません。
 >
->Adobe Commerce on Cloudを実行する場合は、**2028年6月1日** [&#x200B; バージョンのアップグレード実施日](../../version-upgrade-enforcement-policy.md)より前に、サポートされているリリースにアップグレードするか、[!DNL Adobe Commerce as a Cloud Service]に移行する必要があります。 ライフサイクルの全期間については、[&#x200B; サポート終了日](../../lifecycle-policy.md#end-of-support-dates)の表を参照してください。
+>Adobe Commerce on Cloudを実行する場合は、**2028年6月1日** [&#x200B; バージョンのアップグレード実施日](../../security-enforcement-policy.md)より前に、サポートされているリリースにアップグレードするか、[!DNL Adobe Commerce as a Cloud Service]に移行する必要があります。 ライフサイクルの全期間については、[&#x200B; サポート終了日](../../lifecycle-policy.md#end-of-support-dates)の表を参照してください。
 
 ## 2.4.6-p15
 
@@ -61,7 +59,7 @@ Adobe Commerce 2.4.6は、2026年2月に予定されているRabbitMQ 4.1のサ�
 
 USPS出荷統合では、従来のWeb ツール APIに加えて、最新のRESTful USPS APIがサポートされるようになりました。 管理者は、管理者設定から使用するUSPS統合APIを選択できます。 このアップデートは、USPS Web Tools APIの非推奨化に備えています。
 
-#### Magento所有のラミナス MVC フォーク
+#### Magento所有のLaminas MVC フォーク
 
 Laminas MVCの退職に対処するため、Adobe CommerceはMagentoが所有する`laminas-mvc` （公開名：`magento/magento-zf-mvc`）のフォークを使用するようになりました。 このフォークは、Adobe Commerce 2.4.6の継続的なパッチ適用と長期的なセキュリティコンプライアンスを保証します。
 
@@ -331,4 +329,4 @@ Adobe Commerce 2.4.6-p1 セキュリティリリースには、以前のリリ�
 
   この問題は、[安定性タグ &#x200B;](https://getcomposer.org/doc/04-schema.md#package-links)を持つB2B セキュリティパッケージの手動の依存関係を追加することで解決できます。 詳しくは、[B2B リリースノート &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=ja#known-issue)を参照してください。
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->
