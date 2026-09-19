@@ -3,7 +3,7 @@ title: 製品の可用性
 description: 現在サポートされているAdobe Commerce機能について説明し、特定のAdobe Commerce リリースとの互換性を確認します。
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
 last-update: 2026-09-11
-source-git-commit: 89543d430e145c9fd9b153fac9610a0b10171d45
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce版のサポートには、[利用可能なセキュリティパッチ &#x200B;](versions.md)のサポートも含まれています。
+>Adobe Commerce版のサポートには、[利用可能なセキュリティパッチ ](versions.md)のサポートも含まれています。
 
 ## Adobeで作成された拡張機能
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## Commerce Services
 
-[Commerce サービス &#x200B;](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)は、Commerce インスタンスと連携して、堅牢な機能と高速な応答時間を提供する、Adobeでホストされる一連の機能です。
+[Commerce サービス ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)は、Commerce インスタンスと連携して、堅牢な機能と高速な応答時間を提供する、Adobeでホストされる一連の機能です。
 
 最高の安定性と機能性を確保するために、最新バージョンのサービスを使用することをお勧めします。 このドキュメントでは、現在リリースされているバージョンについて説明します。
 
@@ -43,4 +43,4 @@ ht-degree: 0%
 
 {{$include /help/_includes/templated/product-availability-services.md}}
 
-<!-- Last updated from includes: 2026-08-14 18:04:17 -->
+<!-- Last updated from includes: 2026-09-11 07:57:18 -->

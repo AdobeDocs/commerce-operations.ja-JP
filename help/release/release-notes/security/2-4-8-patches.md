@@ -2,14 +2,12 @@
 title: Adobe Commerce 2.4.8 セキュリティパッチリリースノート
 description: Adobe Commerce バージョン 2.4.8のセキュリティパッチリリースに含まれているセキュリティバグの修正、セキュリティの強化、およびその他のセキュリティ関連アップデートについて説明します。
 exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce 2.4.8 セキュリティパッチのリリースノート
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
@@ -18,7 +16,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.8-p5 セキュリティリリースには、以前のリリース 2.4.8で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-49](https://helpx.adobe.com/jp/security/products/magento/apsb26-49.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -46,7 +44,7 @@ Adobe Commerce 2.4.8は、2026年2月に予定されているRabbitMQ 4.1のサ�
 
 USPS出荷統合では、従来のWeb ツール APIに加えて、最新のRESTful USPS APIがサポートされるようになりました。 管理者は、管理者設定から使用するUSPS統合APIを選択できます。 このアップデートは、USPS Web Tools APIの非推奨化に備えています。
 
-#### Magento所有のラミナス MVC フォーク
+#### Magento所有のLaminas MVC フォーク
 
 Laminas MVCの退職に対処するため、Adobe CommerceはMagentoが所有する`laminas-mvc` （公開名：`magento/magento-zf-mvc`）のフォークを使用するようになりました。 このフォークは、Adobe Commerce 2.4.8の継続的なパッチ適用と長期的なセキュリティコンプライアンスを保証します。
 
@@ -54,7 +52,7 @@ Laminas MVCの退職に対処するため、Adobe CommerceはMagentoが所有す
 
 Adobe Commerce 2.4.8-p4 セキュリティリリースには、以前のリリース 2.4.8で特定された脆弱性に対するセキュリティバグ修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-05](https://helpx.adobe.com/jp/security/products/magento/apsb26-05.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -74,7 +72,7 @@ Adobe Commerce 2.4.8が更新され、Composer 2.9.xがサポートされるよ�
 
 Adobe Commerce 2.4.8-p3 セキュリティリリースには、以前のリリース 2.4.8で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-94](https://helpx.adobe.com/jp/security/products/magento/apsb25-94.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -100,7 +98,7 @@ Adobe Commerce 2.4.8-p3 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.8-p2 セキュリティリリースには、以前のリリース 2.4.8で特定された脆弱性に対するセキュリティバグ修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-71](https://helpx.adobe.com/jp/security/products/magento/apsb25-71.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -108,7 +106,7 @@ Adobe Commerce 2.4.8-p2 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.8-p1 セキュリティリリースには、以前のリリース 2.4.8で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-50](https://helpx.adobe.com/jp/security/products/magento/apsb25-50.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -132,8 +130,8 @@ Adobe Commerce 2.4.8-p1 セキュリティリリースには、以前のリリ�
 
 >[!BEGINSHADEBOX]
 
-CVE-2025-47110およびVULN-31547の修正プログラムは、独立したパッチとしても利用できます。 詳しくは、[&#x200B; ナレッジベース記事](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27181)を参照してください。
+CVE-2025-47110およびVULN-31547の修正プログラムは、独立したパッチとしても利用できます。 詳しくは、[ ナレッジベース記事](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27181)を参照してください。
 
 >[!ENDSHADEBOX]
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->
