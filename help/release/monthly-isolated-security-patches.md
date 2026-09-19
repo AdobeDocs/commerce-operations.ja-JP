@@ -40,7 +40,7 @@ ht-degree: 0%
 ---
 # 月別隔離セキュリティパッチポリシー
 
-Adobe Commerceのお客様が重要なセキュリティ修正を迅速に適用できるよう、Adobe Commerceでは、パッチ火曜日（月の第2火曜日）に毎月の個別セキュリティパッチを配信するようになりました。 日付については、[Adobe Commerce リリーススケジュール ](schedule.md)を参照してください。 これらのパッチは、Adobe Commerce on Cloud、Adobe Commerce オンプレミス、およびMagento Open Sourceのインストールで使用できます。
+Adobe Commerceのお客様が重要なセキュリティ修正を迅速に適用できるよう、Adobe Commerceでは、パッチ火曜日（月の第2火曜日）に毎月の個別セキュリティパッチを配信するようになりました。 日付については、[Adobe Commerce リリーススケジュール &#x200B;](schedule.md)を参照してください。 これらのパッチは、Adobe Commerce on Cloud、Adobe Commerce オンプレミス、およびMagento Open Sourceのインストールで使用できます。
 
 分離されたセキュリティパッチファイルには、1つ以上の特定のセキュリティ脆弱性を解決するために必要なコードのみが含まれ、完全なComposer パッケージではなく、範囲が狭いcode-diff ファイルとして配信されます。 変更はセキュリティ脆弱性に固有であるため、セキュリティパッチバージョンのアップグレードに必要なより広範な依存関係の解決と回帰テストをトリガーすることなく、セキュリティパッチリリースよりも迅速にレビュー、テスト、および適用できます。 毎月の個別のセキュリティパッチファイルは、次の完全なセキュリティパッチリリースに折り畳まれるため、お客様は、次のセキュリティパッチ（`-pN`）リリースを通じて、リリースされたすべての個別パッチファイルを取得できます。
 
@@ -74,7 +74,7 @@ Adobe Commerceのお客様が重要なセキュリティ修正を迅速に適用
 
 毎月の隔離されたセキュリティパッチファイルを適用し、最新の修正プログラムを最新の状態に保つには、次の手順に従います。
 
-1. **[ リリーススケジュール ](schedule.md)を確認してください。**
+1. **[&#x200B; リリーススケジュール &#x200B;](schedule.md)を確認してください。**
 
    新しい月別の孤立パッチファイルは、リリーススケジュールに従って出荷されます。 影響を受けるコンポーネントとCVEについて、対応するセキュリティ情報を確認します。 各掲示板は、その月の独立したパッチファイルをインストールするための手順ごとの手順を含むリリースノートにリンクしています。
 
@@ -145,8 +145,8 @@ Cloudのお客様は、[Adobe Commerce Patching Automation](https://experiencele
 
 >[!MORELIKETHIS]
 >
->* [ ソフトウェアライフサイクルポリシー](lifecycle-policy.md)
->* [ リリースポリシー](versioning-policy.md)
->* [ パッチリリーススケジュール ](schedule.md)
+>* [&#x200B; ソフトウェアライフサイクルポリシー](lifecycle-policy.md)
+>* [&#x200B; リリースポリシー](versioning-policy.md)
+>* [&#x200B; パッチリリーススケジュール &#x200B;](schedule.md)
 >* [Commerce Version Tool](../tools/commerce-version-tool/intro.md)
 >* [Adobeのセキュリティ情報とアドバイザリー](https://helpx.adobe.com/security/security-bulletin.html)
