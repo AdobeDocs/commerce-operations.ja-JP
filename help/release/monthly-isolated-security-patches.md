@@ -78,7 +78,7 @@ Adobe Commerceのお客様が重要なセキュリティ修正を迅速に適用
 
    新しい月別の孤立パッチファイルは、リリーススケジュールに従って出荷されます。 影響を受けるコンポーネントとCVEについて、対応するセキュリティ情報を確認します。 各掲示板は、その月の独立したパッチファイルをインストールするための手順ごとの手順を含むリリースノートにリンクしています。
 
-1. **Commerce バージョン ツール [を使用して、Commerce インストールのセキュリティ状態を確認します](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro)。**
+1. **Commerce バージョン ツール [を使用して、Commerce インストールのセキュリティ状態を確認します](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/commerce-version-tool/intro)。**
 
    ツールは、現在インストールされている月次パッチ、欠落しているパッチ、およびインストールされているCVEの公開を報告します。 これにより、バージョン番号だけに頼るのではなく、必要なアクションについて確実に評価できます。
 
@@ -92,7 +92,7 @@ Adobe Commerceのお客様が重要なセキュリティ修正を迅速に適用
 
    >[!NOTE]
    >
-   >**Cloudのお客様：** インストール済みのCloud Patches for Commerce [version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)を最初に確認してください。 修正プログラムは既に含まれている可能性があり、手動で適用すると、競合が発生したり、修正プログラムが複製されたりする可能性があります。
+   >**Cloudのお客様：** インストール済みのCloud Patches for Commerce [version](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)を最初に確認してください。 修正プログラムは既に含まれている可能性があり、手動で適用すると、競合が発生したり、修正プログラムが複製されたりする可能性があります。
 
 1. **インストールされているコンポーネントにファイルを一致させます。**
 
@@ -106,7 +106,7 @@ Adobe Commerceのお客様が重要なセキュリティ修正を迅速に適用
 
    通常の変更プロセスに従って、本番環境にプロモートする前にステージングを検証します。
 
-Cloudのお客様は、[Adobe Commerce Patching Automation](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/caps-tool/intro)を使用して、上記の手動Gitおよびコンポーザー手順の代わりに、管理パネルからパッチを適用または元に戻すこともできます。
+Cloudのお客様は、[Adobe Commerce Patching Automation](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/caps-tool/intro)を使用して、上記の手動Gitおよびコンポーザー手順の代わりに、管理パネルからパッチを適用または元に戻すこともできます。
 
 ## 展開タイプ別のパッチアクション
 
@@ -131,7 +131,7 @@ Cloudのお客様は、[Adobe Commerce Patching Automation](https://experiencele
 
 ### パッチがパッチにレイヤー化されている場合、インストールのセキュリティ状態を知るにはどうすればよいですか？
 
-毎月のセキュリティパッチのリリースに伴い、Adobe Commerceは、インストールされているパッチまたは欠落しているパッチと、インストールで保護されているCVEを報告するスタンドアロンユーティリティである[Commerce Version Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro)を導入しました。 バージョン番号に依存するのではなく、パッチメタデータを読み取り、レポートと継続的インテグレーション（CI）用に機械で読み取り可能な出力を提供します。
+毎月のセキュリティパッチのリリースに伴い、Adobe Commerceは、インストールされているパッチまたは欠落しているパッチと、インストールで保護されているCVEを報告するスタンドアロンユーティリティである[Commerce Version Tool](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/commerce-version-tool/intro)を導入しました。 バージョン番号に依存するのではなく、パッチメタデータを読み取り、レポートと継続的インテグレーション（CI）用に機械で読み取り可能な出力を提供します。
 
 ### これは、Adobeが累積的なバージョン付きセキュリティリリースから一歩下がったことを意味しますか？
 
@@ -149,4 +149,4 @@ Cloudのお客様は、[Adobe Commerce Patching Automation](https://experiencele
 >* [&#x200B; リリースポリシー](versioning-policy.md)
 >* [&#x200B; パッチリリーススケジュール &#x200B;](schedule.md)
 >* [Commerce Version Tool](../tools/commerce-version-tool/intro.md)
->* [Adobeのセキュリティ情報とアドバイザリー](https://helpx.adobe.com/security/security-bulletin.html)
+>* [Adobeのセキュリティ情報とアドバイザリー](https://helpx.adobe.com/jp/security/security-bulletin.html)
