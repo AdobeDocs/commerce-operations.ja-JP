@@ -129,7 +129,7 @@ Adobe Commerce 2.4.6-p12のセキュリティリリースには、以前のリ�
 
 Adobe Commerce 2.4.6-p11 セキュリティリリースでは、以前のリリース 2.4.6で特定された脆弱性に対するセキュリティバグの修正が行われています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-50](https://helpx.adobe.com/jp/security/products/magento/apsb25-50.html)を参照してください。
 
 {{b2b-patches}}
 
