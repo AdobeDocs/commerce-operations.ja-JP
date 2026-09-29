@@ -1,17 +1,15 @@
 ---
-title: ACSD-65127：実稼動モードでのJavaScriptの縮小により、ブラウザーで [!DNL TinyMCE] 6 エラーが発生する
-description: ACSD-65127 パッチを適用して、Adobe Commerceの問題を修正します。実稼動モードでJavaScriptの縮小を有効にすると、 [!DNL TinyMCE] 6がブラウザーコンソールでエラーが発生し、機能とユーザーエクスペリエンスに影響が及ぶ場合があります。
+title: ACSD-65127：実稼動モードでJavaScriptを縮小すると、ブラウザーで[!DNL TinyMCE] 6個のエラーが発生する
+description: ACSD-65127 パッチを適用して、JavaScriptの縮小を実稼動モードで有効にすると、[!DNL TinyMCE] 6がブラウザーコンソールでエラーを生成し、機能とユーザーエクスペリエンスに影響を与えるAdobe Commerceの問題を修正します。
 feature: Page Builder, Page Content
 role: Admin, Developer
 exl-id: c878d5a4-8059-4bfc-93a8-0a9606e866fc
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 2465ecf45a0990ac40c3ba8c243381ce5484adaa
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '363'
 ht-degree: 0%
-
 ---
-
 # ACSD-65127：実稼動モードでJavaScriptを縮小すると、ブラウザーで[!DNL TinyMCE] 6個のエラーが発生する
 
 ACSD-65127 パッチでは、実稼動モードでJavaScriptの縮小を有効にすると、[!DNL TinyMCE] 6でブラウザーコンソールにエラーが発生し、機能とユーザーエクスペリエンスに影響が及ぶ問題が修正されました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64がインストールされている場合に利用できます。 パッチ IDはACSD-65127です。 この問題は、Adobe Commerce 2.4.8で修正されています。
@@ -28,7 +26,7 @@ ACSD-65127 パッチでは、実稼動モードでJavaScriptの縮小を有効�
 
 >[!NOTE]
 >
->このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) ページで互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) ページで互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
@@ -38,15 +36,15 @@ ACSD-65127 パッチでは、実稼動モードでJavaScriptの縮小を有効�
 
 1. 次のコマンドを実行して、設定を設定します。
 
-```shell
-bin/magento config:set --lock-config dev/js/minify_files 1
-bin/magento config:set --lock-config dev/js/enable_js_bundling 1
-bin/magento config:set --lock-config dev/js/merge_files 1
-```
+   ```shell
+   bin/magento config:set --lock-config dev/js/minify_files 1
+   bin/magento config:set --lock-config dev/js/enable_js_bundling 1
+   bin/magento config:set --lock-config dev/js/merge_files 1
+   ```
 
->[!NOTE]
->
->Adobeでは、**[!UICONTROL Merge JavaScript Files]**&#x200B;を有効にすることはお勧めしません。 [JS ファイルの結合（推奨されません） &#x200B;](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files)を参照してください。
+   >[!NOTE]
+   >
+   >Adobeでは、**[!UICONTROL Merge JavaScript Files]**&#x200B;を有効にすることはお勧めしません。 [JS ファイルの結合（推奨されません） ](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files)を参照してください。
 
 1. 実稼動モードを有効にします。
 
@@ -69,10 +67,10 @@ js `tiny_mce_6/plugins/help/js/i18n/keynav/en.js`のブラウザーコンソー�
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」ガイド
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」ガイド
 
 ## 関連トピックス
 
 [!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール
