@@ -2,14 +2,12 @@
 title: 共有設定の使用例
 description: 共有設定ファイルを使用して開発システムの設定を変更する方法の例を参照してください。
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-04-28
+source-git-commit: 2465ecf45a0990ac40c3ba8c243381ce5484adaa
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%
-
 ---
-
 # 共有設定の使用例
 
 この例では、開発システムで次の設定を変更し、ビルドシステムで共有設定ファイル `config.php`を更新し、実稼動システムに同じ設定を実装する方法を示します。
@@ -87,8 +85,8 @@ ht-degree: 0%
 
    ![管理者で構成オプションを編集できません](../../assets/configuration/split-deploy-not-editable.png)
 
->[!INFO]
->
->管理者でロックされている設定を変更するには、[`magento config:set --lock` コマンド &#x200B;](../cli/set-configuration-values.md)を使用します。
+   >[!INFO]
+   >
+   >管理者でロックされている設定を変更するには、[`magento config:set --lock` コマンド &#x200B;](../cli/set-configuration-values.md)を使用します。
 
 <!-- Last updated from includes: 2026-04-17 13:49:36 -->

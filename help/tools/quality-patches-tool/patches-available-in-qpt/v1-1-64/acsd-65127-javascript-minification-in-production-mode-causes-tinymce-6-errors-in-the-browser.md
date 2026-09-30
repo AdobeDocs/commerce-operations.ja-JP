@@ -1,17 +1,15 @@
 ---
-title: ACSD-65127：実稼動モードでのJavaScriptの縮小により、ブラウザーで [!DNL TinyMCE] 6 エラーが発生する
-description: ACSD-65127 パッチを適用して、Adobe Commerceの問題を修正します。実稼動モードでJavaScriptの縮小を有効にすると、 [!DNL TinyMCE] 6がブラウザーコンソールでエラーが発生し、機能とユーザーエクスペリエンスに影響が及ぶ場合があります。
+title: ACSD-65127：実稼動モードでJavaScriptを縮小すると、ブラウザーで[!DNL TinyMCE] 6個のエラーが発生する
+description: ACSD-65127 パッチを適用して、JavaScriptの縮小を実稼動モードで有効にすると、[!DNL TinyMCE] 6がブラウザーコンソールでエラーを生成し、機能とユーザーエクスペリエンスに影響を与えるAdobe Commerceの問題を修正します。
 feature: Page Builder, Page Content
 role: Admin, Developer
 exl-id: c878d5a4-8059-4bfc-93a8-0a9606e866fc
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 2465ecf45a0990ac40c3ba8c243381ce5484adaa
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '363'
 ht-degree: 0%
-
 ---
-
 # ACSD-65127：実稼動モードでJavaScriptを縮小すると、ブラウザーで[!DNL TinyMCE] 6個のエラーが発生する
 
 ACSD-65127 パッチでは、実稼動モードでJavaScriptの縮小を有効にすると、[!DNL TinyMCE] 6でブラウザーコンソールにエラーが発生し、機能とユーザーエクスペリエンスに影響が及ぶ問題が修正されました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64がインストールされている場合に利用できます。 パッチ IDはACSD-65127です。 この問題は、Adobe Commerce 2.4.8で修正されています。
@@ -38,15 +36,15 @@ ACSD-65127 パッチでは、実稼動モードでJavaScriptの縮小を有効�
 
 1. 次のコマンドを実行して、設定を設定します。
 
-```shell
-bin/magento config:set --lock-config dev/js/minify_files 1
-bin/magento config:set --lock-config dev/js/enable_js_bundling 1
-bin/magento config:set --lock-config dev/js/merge_files 1
-```
+   ```shell
+   bin/magento config:set --lock-config dev/js/minify_files 1
+   bin/magento config:set --lock-config dev/js/enable_js_bundling 1
+   bin/magento config:set --lock-config dev/js/merge_files 1
+   ```
 
->[!NOTE]
->
->Adobeでは、**[!UICONTROL Merge JavaScript Files]**&#x200B;を有効にすることはお勧めしません。 [JS ファイルの結合（推奨されません） &#x200B;](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files)を参照してください。
+   >[!NOTE]
+   >
+   >Adobeでは、**[!UICONTROL Merge JavaScript Files]**&#x200B;を有効にすることはお勧めしません。 [JS ファイルの結合（推奨されません） &#x200B;](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files)を参照してください。
 
 1. 実稼動モードを有効にします。
 
