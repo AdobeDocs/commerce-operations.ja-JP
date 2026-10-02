@@ -16,9 +16,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: ed51278b96a445aab6d1194e473e55d85ce6ef1d
+source-git-commit: ec5bfb45c2c170168c0e30a8c2197ba3ab58ccfe
 workflow-type: tm+mt
-source-wordcount: '32496'
+source-wordcount: '33143'
 ht-degree: 0%
 ---
 # リリースノート
@@ -32,6 +32,30 @@ ht-degree: 0%
 >[!INFO]
 >
 >Magento Open Sourceのコミュニティによって作成された[!DNL quality patches]について詳しくは、[&#x200B; リリースノート &#x200B;](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)を参照してください。
+
+## v1.1.84 {#v1-1-84}
+
+* **ACP2E-4913** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.7 &lt;2.4.9） – デッドロックにより出荷処理と請求処理が失敗する問題を修正します。
+* **ACP2E-5005** （Adobe Commerceの場合、B2B >=1.5.0 &lt;1.5.4） – バンドル商品が管理者で再設定され、数量が編集されたときに、交渉可能な見積のバンドル商品オプションの数量が以前の値に戻る問題を修正します。
+* **ACP2E-5009** （Adobe Commerce >=2.4.5 &lt;2.4.10）は、Magento Open SourceからAdobe Commerceへのデータ移行で、カテゴリのスケジュールされたデザイン変更と製品の特別価格のスケジュールされた更新が正しく移行されない問題を修正し、移行中に一部のスケジュールされた更新が欠落またはスキップされる原因となり、移行のパフォーマンスが向上します。
+* **ACP2E-5017** （Adobe Commerceの場合、B2B >=1.5.0 &lt;1.5.4） – お客様が会社に割り当てられていない場合に、GraphQLを通じてお客様の役割を照会すると&#x200B;*社内サーバーエラー*&#x200B;が返される問題を修正します。
+* **ACP2E-5027** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.10） – ファイルのロックが有効になっている場合にインデクサーがループ内で停止し、インデックス再作成が完了しない問題を修正します。
+* **ACP2E-5029** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.7 &lt;2.4.10） – カタログの価格規則の変更が[!DNL Live Search]に表示されない問題を修正します。手動での再同期が実行されます。
+* **ACP2E-5041** （Adobe Commerce >=2.4.5 &lt;2.4.9）は、スケジュールされた更新中に商品を保存すると、更新後にストアフロントに[!UICONTROL Special Price]ではなく通常価格が表示される問題を修正します。
+* **ACP2E-5059** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.8 &lt;2.4.10） – 同じ注文に対して重複した注文確認メールを顧客が受信する問題を修正します。
+* **ACP2E-5122** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.10） – ショッピングカートに対するGraphQL リクエストから処理されたエラーが、例外ログにアプリケーションエラーとして誤って記録される問題を修正します。
+* **ACP2E-5143** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.8） – ルーティング メタデータのみが要求された場合にGraphQL route クエリがCMSのページ全体をレンダリングし、ページビルダーウィジェットを含むCMS ページのデータベースクエリを増やす問題を修正します。
+* **ACP2E-5183** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.10） - `@magento_import` ディレクティブを使用する`LESS` ファイルをコンパイルしているときにPHP 8.5で静的コンテンツのデプロイメントが失敗する問題を修正します。
+* **ACP2E-5242** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.9 &lt;2.4.10） – カートに商品を追加する際に商品の在庫状況を確認すると、web サイトが見つからないことを示すエラーが表示される問題を修正します。
+* **ACP2E-5263** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.5 &lt;2.4.9） – すべての商品が含まれる前に商品をCSV ファイルに書き出すのが停止し、ファイルが不完全になる問題を修正します。
+* **ACP2E-5034** （Adobe Commerceの場合、B2B >=1.5.0 &lt;1.5.3） – 配送方法を選択した後に見積もりを再計算する際に、交渉可能な見積もり管理が誤って合計を&#x200B;*ゼロ*&#x200B;にリセットし、管理者の[!UICONTROL Configure] アクションを通じて行われた商品オプション数量の更新を破棄し、見積サブトータルにの商品に動的商品に商品レベルレベルレベルレベルが適用正反映されない問題を修正しました。
+* **ACP2E-4741** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.9 &lt;2.4.10） – デフォルト以外の在庫とソースを使用している間に、商品に[!UICONTROL Related Product]、[!UICONTROL Up-Sell]またはクロスセルとしてリンクされた商品が保存された後、ストアフロントから商品が消える問題を修正します。
+* **ACP2E-5079** （Adobe Commerce >=2.4.4 &lt;2.4.10）は、複数のweb サイトに割り当てられた顧客セグメントを評価すると、顧客アカウントがグローバルに共有された場合に、最初のweb サイトからのみ一致する顧客が返される問題を修正します。
+* **ACP2E-5127** （Adobe Commerceの場合、B2B >=1.3.3 &lt;1.5.4） – デフォルト以外のロケールを使用して管理パネルで会社アカウントを編集すると、[!UICONTROL Credit Limit]が&#x200B;*0*&#x200B;にリセットされる問題を修正します。
+* **AC-15494** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.8 &lt;2.4.9） – 商品クエリで、元の文字ではなくHTML エスケープされた特殊文字を使用して商品名が返される問題を修正します。
+* 更新されたバージョン：**AC-18096**、**ACSD-60584**、**ACSD-65775**
+* 置き換えられたパッチ：**ACP2E-4801**、**ACP2E-4194**
+* 更新されたパッチ：**ACP2E-4815**
 
 ## v1.1.83 {#v1-1-83}
 
@@ -576,7 +600,7 @@ ht-degree: 0%
 * **ACSD-58442** （Adobe Commerce >=2.4.4 &lt;2.4.7-p1の場合） – 幅が768pxのデバイスがモバイルとして扱われ、メニューとヘッダーがデスクトップではなくモバイルビューで読み込まれる問題を修正します。
 * **ACSD-58790** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.8） - [!DNL Chrome]のモバイルビューで、商品詳細ページの画像にピンチからズームする機能を修正しました。
 * **ACSD-59036** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.7 &lt;2.4.8） – 下限と上限の両方が$0に等しい商品の価格を読み込む際に発生する例外を修正します。
-* **ACSD-59229** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.7） - X-Magento-Vary in リクエストの古い値が原因で、カスタマーグループに関連する情報が間違ったセグメントに保存される問題を修正します。
+* **ACSD-59229** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.7） – リクエストでX-Magento-Varyの古い値が原因で、カスタマーグループに関連する情報が間違ったセグメントに保存される問題を修正します。
 * **ACSD-59378** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.5 &lt;2.4.6） – インポート中にストアレベル URLの書き換えが正しく更新されない問題を修正します。
 * **ACSD-59514** （Adobe Commerce >=2.4.4 &lt;2.4.7-p2の場合） - [!DNL Page Builder]の管理領域のフォームで、エラー&#x200B;*[!DNL Page Builder]が5秒間ロックを解除せずにレンダリングされていた問題を修正します。* フォームの送信後にブラウザーコンソールで変更を保存できません。
 * **ACSD-60303** （Adobe Commerce >=2.4.4-p9 &lt;2.4.5 |>=2.4.5-p8 &lt;2.4.6 |>=2.4.6-p6 &lt;2.4.8の場合） - HTMLの縮小が有効になっている場合に管理者からの注文を配置できない問題を修正します。
@@ -733,7 +757,7 @@ ht-degree: 0%
 * **ACSD-54776** （Adobe Commerce >=2.4.5 &lt;2.4.7の場合） - 2番目のweb サイト、ストア、ストアビューで、チェックされていない&#x200B;*[!UICONTROL Use Default Value]*&#x200B;とデフォルト以外の製品フィールド値が保存されない問題を修正しました。
 * **ACSD-53998** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4-p2 &lt;2.4.5 |>=2.4.5-p1 &lt;2.4.7） – カスタマーアカウントからログアウトした後に&#x200B;**[!UICONTROL Customer Segment]**&#x200B;に基づく&#x200B;**[!UICONTROL Dynamic Block]**&#x200B;が正しく機能しない問題を修正します。
 * **ACSD-53204** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.6 &lt;2.4.7） - *商品を保存できない問題を修正しました。* `rest/V1/products/<sku>/media` エンドポイントを使用して製品ギャラリーに画像を追加する同時要求を行う際にエラーが発生しました。
-* **ACSD-47657** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.7） - AWS資格情報のキャッシュメカニズムを追加しました。 認証情報プロバイダーは、Magento キャッシュを使用して、EC2設定のためにAWSから取得した認証情報をキャッシュするようになりました。
+* **ACSD-47657** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.7） - AWS資格情報のキャッシュメカニズムを追加しました。 認証情報プロバイダーは、EC2設定のためにAWSから取得した認証情報をキャッシュするために、Magento キャッシュを使用するようになりました。
 * 更新されたパッチ：ACSD-51984、ACSD-51574。
 
 ## v1.1.38 {#v1-1-38}
@@ -771,7 +795,7 @@ ht-degree: 0%
 * **ACSD-53239** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.3 &lt; 2.4.6） – インベントリインデクサーが「スケジュールに従って更新」モードのすべてのキャッシュをクリーニングする問題を修正します。
 * **ACSD-50887** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.0 &lt;2.4.7） - *[!UICONTROL Use in search]* オプションを&#x200B;*Yes*&#x200B;に設定せずに、product属性プロパティ *[!UICONTROL Use in Search Results Layered Navigation]*&#x200B;を&#x200B;*Yes*&#x200B;に設定できる問題を修正しました。
 * **ACSD-51846** （Adobe CommerceおよびMagento Open Source >=2.4.3-p2 &lt;2.4.6の場合） - REST API ペイロードのすべてのレベルが検証されないために発生する&#x200B;*内部エラー*&#x200B;の問題を修正します。
-* **ACSD-52906** （Adobe Commerce >=2.3.7 &lt;2.4.7の場合） – 同じカスタマーセグメントに属するログイン顧客に対してX-Magento-Vary Cookieが誤って設定され、一部のページでキャッシュが不適切になる問題を修正します。
+* **ACSD-52906** （Adobe Commerce >=2.3.7 &lt;2.4.7の場合） – 同じカスタマーセグメントに属するログイン顧客に対して、X-Magento-Vary Cookieが誤って設定され、一部のページでキャッシュが不適切になる問題を修正します。
 * **ACSD-52736** （Adobe CommerceおよびMagento Open Sourceの場合>=2.3.7 &lt;2.4.6） – 設定可能な商品数量の要件を含む&#x200B;*カート価格規則*&#x200B;が期待どおりに機能しない問題を修正します。
 * **ACSD-47875** （Adobe CommerceおよびMagento Open Sourceの場合>=2.3.7 &lt;2.4.7） – 管理者ユーザーが、在庫管理を使用して特定のストアビュースコープの管理者から顧客カートに商品を追加できない問題を修正します。
 * **ACSD-53176** （Adobe Commerce >=2.3.7 &lt;2.4.5の場合） - *の*&#x200B;関連製品ルール *が*&#x200B;条件の1つに一致しない問題を修正します。
