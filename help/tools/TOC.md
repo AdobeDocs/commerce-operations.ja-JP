@@ -4,13 +4,11 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: 9c17eea494812648e488f181d025e0eb78eda0ff
 workflow-type: tm+mt
-source-wordcount: '10695'
+source-wordcount: '10699'
 ht-degree: 0%
-
 ---
-
 
 # ツール {#tools}
 
@@ -1060,6 +1058,8 @@ ht-degree: 0%
       - [ACP2E-4805：最初の販売可能な子がリストの後半に表示される場合、設定可能な製品のチェックアウトリクエストが遅くなる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
       - [ACP2E-4748：報酬ポイントの有効期限が大きな報酬ポイント履歴を持つストアで遅く実行される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)
       - [ACP2E-4875：大規模なアドレス帳を使用して顧客アカウントを開くときに管理者ユーザーがログアウトする](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
+    - v1.1.83 {#v1-1-83}
+      - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
   - [Quality Patches ToolでAdobe Commerceの問題が発生した場合のパッチの確認](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - コマンドラインツールリファレンス {#cli-reference}
   - [Adobe Commerce （オンプレミス）](reference/commerce-on-premises.md)

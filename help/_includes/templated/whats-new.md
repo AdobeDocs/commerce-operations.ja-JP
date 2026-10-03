@@ -1,7 +1,7 @@
 ---
-source-git-commit: 076f76112159204c0f23d3ddfbb606e274c406eb
+source-git-commit: 206f502c41b53c822cca42957d7705184f18c0ab
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1282'
 ht-degree: 1%
 ---
 # 新しいテンプレート
@@ -9,6 +9,28 @@ ht-degree: 1%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年10月2日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview">概要：品質パッチツール （QPT） v1.1.83</a>を追加しました。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/266c8529352dac198568dca4676aebd88ce50fc1">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年9月18日（PT）
 
@@ -342,88 +364,6 @@ ht-degree: 1%
         テクニカル
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/50fb71aa968abf1302e86ffeb3d3b3a66b3c33d5">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年7月31日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547">ACP2E-4547のQPT 1.1.82修正に関する詳細な説明を追加しました。管理者は、ユーザーの共有カタログ </a>に割り当てられていない場合、既定のカタログ製品を見積もりに追加できません。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6d0313c01e979d3d4bd3e781e2f0e9c336bbd8c5">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年7月30日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>サポートされていないバージョンまたはサードパーティ製ソフトウェアの依存関係を実行しているAdobe Commerce on Cloud デプロイメントをアップグレードするための要件、タイムライン、手順を説明するために、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/security-enforcement-policy"> セキュリティポリシー：Adobe Commerce on Cloudのお客様に対する必須のアクションと期限</a>を追加しました。</p>
-</td>
-      <td>
-        新しいトピック
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b7649aae1f8cab020c1081db2b2363bca22adfed">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年7月28日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805">ACP2E-4805のQPT 1.1.82修正に関する詳細な説明を追加しました。最初の販売可能な子がリスト </a>の後半に表示されるときに、設定可能な製品のチェックアウトリクエストが遅くなります。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1b5fb4826f6599d7b7609dedfeb545f29454ba4d">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748">ACP2E-4748のQPT 1.1.82修正に関する詳細な説明を追加しました。報酬ポイントの有効期限は、大きな報酬ポイント履歴を持つストアでゆっくりと実行されます</a>。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/30fe149f9743ceca7f40374246b4fc9b9503c590">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875">ACP2E-4875のQPT 1.1.82修正に関する詳細な説明を追加しました。管理者ユーザーは、大きなアドレス帳を含む顧客アカウントを開くときにログアウトしました</a>。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3174f84e0a8c64aaed50cc075a9287bc011778ef">コミット</a></td>
     </tr>
   </tbody>
 </table>
