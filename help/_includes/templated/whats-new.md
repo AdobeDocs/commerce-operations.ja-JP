@@ -22,7 +22,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview">概要：品質パッチツール （QPT） v1.1.83</a>を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview">概要：品質パッチツール （QPT） v1.1.83</a>を追加しました。</p>
 </td>
       <td>
         新しいトピック、qpt
