@@ -3,7 +3,18 @@ title: Adobe Commerce 2.4.7 セキュリティパッチリリースノート
 description: Adobe Commerce バージョン 2.4.7のセキュリティパッチリリースに含まれているセキュリティバグの修正、セキュリティの強化、およびその他のセキュリティ関連アップデートについて説明します。
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
 last-update: 2026-08-19
-source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 0%
@@ -29,7 +40,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.7-p10 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-49](https://helpx.adobe.com/jp/security/products/magento/apsb26-49.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -65,7 +76,7 @@ Laminas MVCの退職に対処するため、Adobe CommerceはMagentoが所有す
 
 Adobe Commerce 2.4.7-p9 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグ修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-05](https://helpx.adobe.com/jp/security/products/magento/apsb26-05.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -85,7 +96,7 @@ Adobe Commerce 2.4.7が更新され、Composer 2.9.xがサポートされるよ�
 
 Adobe Commerce 2.4.7-p8 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-94](https://helpx.adobe.com/jp/security/products/magento/apsb25-94.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -105,7 +116,7 @@ Adobe Commerce 2.4.7-p8 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p7 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-71](https://helpx.adobe.com/jp/security/products/magento/apsb25-71.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -113,7 +124,7 @@ Adobe Commerce 2.4.7-p7 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p6 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-50](https://helpx.adobe.com/jp/security/products/magento/apsb25-50.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -137,7 +148,7 @@ Adobe Commerce 2.4.7-p6 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p5 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-26](https://helpx.adobe.com/jp/security/products/magento/apsb25-26.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -147,7 +158,7 @@ Adobe Commerce 2.4.7-p5 セキュリティリリースには、以前のリリ�
 
 >[!BEGINSHADEBOX]
 
-このリリースでは、Adobe Commerce [HIPAA対応拡張機能](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)のサポートも導入されています。
+このリリースでは、Adobe Commerce [HIPAA対応拡張機能](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)のサポートも導入されています。
 
 >[!ENDSHADEBOX]
 
@@ -163,7 +174,7 @@ Adobe Commerce 2.4.7-p5 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p4 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグ修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-08](https://helpx.adobe.com/jp/security/products/magento/apsb25-08.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -175,7 +186,7 @@ Adobe Commerce 2.4.7-p4 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p3 セキュリティリリースには、以前のリリース 2.4.7で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-73](https://helpx.adobe.com/jp/security/products/magento/apsb24-73.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -191,7 +202,7 @@ Adobe Commerce 2.4.7-p3 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.7-p2のセキュリティリリースには、以前のリリースの2.4.7で特定された脆弱性に対するセキュリティバグ修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-61](https://helpx.adobe.com/jp/security/products/magento/apsb24-61.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html)を参照してください。
 
 ### ハイライト
 
@@ -205,7 +216,7 @@ Adobe Commerce 2.4.7-p2のセキュリティリリースには、以前のリリ
 
 Adobe Commerce 2.4.7-p1 セキュリティリリースでは、以前のリリースの2.4.7で特定された脆弱性に対するセキュリティバグ修正が提供されています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-40](https://helpx.adobe.com/jp/security/products/magento/apsb24-40.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)を参照してください。
 
 ### CVE-2024-34102のホットフィックスを適用する
 
@@ -215,12 +226,12 @@ Adobe Commerce 2.4.7-p1 セキュリティリリースでは、以前のリリ�
 
 このリリースには、次のハイライトが含まれています。
 
-* **Google Authenticator**&#x200B;の[&#x200B; ワンタイムパスワード（OTP）設定](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/security/2fa)を更新します。この更新は、2.4.7の[後方互換性のない変更](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value)によって発生したエラーを解決するために必要です。 **[!UICONTROL OTP Window]** フィールドの説明で、設定が正確に説明されるようになりました。デフォルト値は`1`から`29`に変更されました。
+* **Google Authenticator**&#x200B;の[ ワンタイムパスワード（OTP）設定](https://experienceleague.adobe.com/en/docs/commerce-admin/config/security/2fa)を更新します。この更新は、2.4.7の[後方互換性のない変更](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value)によって発生したエラーを解決するために必要です。 **[!UICONTROL OTP Window]** フィールドの説明で、設定が正確に説明されるようになりました。デフォルト値は`1`から`29`に変更されました。
 
-* **B2B バージョンの互換性** - Commerce バージョン 2.4.7-p1との互換性を保つために、Adobe Commerce B2B拡張機能を持つマーチャントは、[B2B バージョン 1.4.2-p1](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/release-notes#b2b-v142-p1)にアップグレードする必要があります。
+* **B2B バージョンの互換性** - Commerce バージョン 2.4.7-p1との互換性を保つために、Adobe Commerce B2B拡張機能を持つマーチャントは、[B2B バージョン 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1)にアップグレードする必要があります。
 
 ### このリリースに含まれるホットフィックス
 
-Adobe Commerce 2.4.7-p1は、SOAPからREST APIへのUPS統合の移行範囲で発生した問題を解決します。 この問題は、米国外に出荷するお客様に影響を及ぼし、UPSで出荷を作成するパッケージに対してメトリックシステム/SI測定（kgとcm）を使用できないようにしました。 詳しくは、[UPS shipping method integration migration from SOAP to RESTful API](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27146)のナレッジベース記事を参照してください。
+Adobe Commerce 2.4.7-p1は、SOAPからREST APIへのUPS統合の移行範囲で発生した問題を解決します。 この問題は、米国外に出荷するお客様に影響を及ぼし、UPSで出荷を作成するパッケージに対してメトリックシステム/SI測定（kgとcm）を使用できないようにしました。 詳しくは、[UPS shipping method integration migration from SOAP to RESTful API](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27146)のナレッジベース記事を参照してください。
 
 <!-- Last updated from includes: 2026-08-19 13:47:15 -->

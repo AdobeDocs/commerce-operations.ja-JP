@@ -4,14 +4,24 @@ description: Adobe Commerce プロジェクトの開発段階におけるコー�
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-last-update: 2024-11-25T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2024-11-25
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerceのコード管理のベストプラクティス
 
 このトピックは、リリース管理、コードの複雑さ、依存関係の管理を考慮して、GitまたはComposerを使用してカスタムコードを配布するかどうかを決定するのに役立つように設計されています。
@@ -22,7 +32,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
+[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
@@ -89,14 +99,14 @@ ht-degree: 0%
 | プルリクエストの複雑さ | シンプル | 複雑 |
 | コードレビューの複雑さ | シンプル | シンプル |
 | 開発/QA/UAT環境の更新の複雑さ | シンプル | 複雑 |
-| GRA サポート | ![はいアイコン &#x200B;](../../../assets/yes.svg) | ![はいアイコン &#x200B;](../../../assets/yes.svg) |
-| モジュールは、外部ライブラリを自動的にインストールできます | ![&#x200B; アイコンなし](../../../assets/no.svg) | ![はいアイコン &#x200B;](../../../assets/yes.svg) |
-| GRA構成の柔軟性 | ![&#x200B; アイコンなし](../../../assets/no.svg) | ![はいアイコン &#x200B;](../../../assets/yes.svg) |
-| モジュール依存関係の管理 | ![はいアイコン &#x200B;](../../../assets/yes.svg) `module.xml`までのみ、機能は限定的 | ![はいアイコン &#x200B;](../../../assets/yes.svg)完全な依存関係の管理 – `composer.json` |
-| モジュールのバージョン | ![はいアイコン &#x200B;](../../../assets/yes.svg) バージョンを定義できますが、特定のバージョンをインストールすることはできません | ![はいアイコン &#x200B;](../../../assets/yes.svg)完全版のサポート |
+| GRA サポート | ![はいアイコン ](../../../assets/yes.svg) | ![はいアイコン ](../../../assets/yes.svg) |
+| モジュールは、外部ライブラリを自動的にインストールできます | ![ アイコンなし](../../../assets/no.svg) | ![はいアイコン ](../../../assets/yes.svg) |
+| GRA構成の柔軟性 | ![ アイコンなし](../../../assets/no.svg) | ![はいアイコン ](../../../assets/yes.svg) |
+| モジュール依存関係の管理 | ![はいアイコン ](../../../assets/yes.svg) `module.xml`までのみ、機能は限定的 | ![はいアイコン ](../../../assets/yes.svg)完全な依存関係の管理 – `composer.json` |
+| モジュールのバージョン | ![はいアイコン ](../../../assets/yes.svg) バージョンを定義できますが、特定のバージョンをインストールすることはできません | ![はいアイコン ](../../../assets/yes.svg)完全版のサポート |
 | 必要な有料サービス | Git リポジトリ | Git リポジトリ、プライベートパッケージスト（±年間600 ユーロ） |
-| JiraとのBitbucket統合が可能 | ![はいアイコン &#x200B;](../../../assets/yes.svg) | ![はいアイコン &#x200B;](../../../assets/yes.svg) |
-| すぐにインストール可能なコードの変更 | ![はいアイコン &#x200B;](../../../assets/yes.svg) | ![はいアイコン &#x200B;](../../../assets/yes.svg) |
+| JiraとのBitbucket統合が可能 | ![はいアイコン ](../../../assets/yes.svg) | ![はいアイコン ](../../../assets/yes.svg) |
+| すぐにインストール可能なコードの変更 | ![はいアイコン ](../../../assets/yes.svg) | ![はいアイコン ](../../../assets/yes.svg) |
 
 ## 回避すべきソリューション
 

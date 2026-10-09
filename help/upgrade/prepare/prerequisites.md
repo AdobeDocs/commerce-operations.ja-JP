@@ -2,14 +2,23 @@
 title: 前提条件を完了
 description: 次の前提条件に従って、Adobe Commerce プロジェクトのアップグレードを準備します。
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-04-28
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '1991'
 ht-degree: 0%
-
 ---
-
 # アップグレードの前提条件を完了
 
 Adobe Commerceを実行するために必要なことを理解することが重要です。 最初に、アップグレードを計画しているバージョンの[必要システム構成](../../installation/system-requirements.md)を確認する必要があります。
@@ -34,7 +43,7 @@ Adobe Commerceを実行するために必要なことを理解することが重
 
 >[!NOTE]
 >
->Adobe Commerce on cloud infrastructure Pro プロジェクトの場合、ステージング環境と実稼動環境でサービスをインストールまたは更新するには、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) チケットを作成する必要があります。 必要なサービス変更を示し、更新した`.magento.app.yaml`および`services.yaml` ファイルとPHP バージョンをチケットに含めます。 クラウドインフラチームがプロジェクトを更新するのに最大48時間かかります。 [&#x200B; サポートされているソフトウェアとサービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services)を参照してください。
+>Adobe Commerce on cloud infrastructure Pro プロジェクトの場合、ステージング環境と実稼動環境でサービスをインストールまたは更新するには、[ サポート ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) チケットを作成する必要があります。 必要なサービス変更を示し、更新した`.magento.app.yaml`および`services.yaml` ファイルとPHP バージョンをチケットに含めます。 クラウドインフラチームがプロジェクトを更新するのに最大48時間かかります。 [ サポートされているソフトウェアとサービス ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services)を参照してください。
 
 ## サポートされている検索エンジンがインストールされていることを確認します
 
@@ -126,9 +135,9 @@ MySQLをバージョン 8.0からバージョン 8.4に適切にアップグレ�
 
 2.4.0にアップグレードする前に、Elasticsearch 7.6以降またはOpenSearch 1.2をインストールして設定する必要があります。 Adobeは、Elasticsearch 2.x、5.x、および6.xをサポートしなくなりました。 _設定ガイド_&#x200B;の[検索エンジンの設定](../../configuration/search/configure-search-engine.md)では、Elasticsearchをサポート対象のバージョンにアップグレードした後に実行する必要があるタスクについて説明しています。
 
-データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストについて詳しくは、[Elasticsearchのアップグレード &#x200B;](https://www.elastic.co/docs/deploy-manage/upgrade/deployment-or-cluster)を参照してください。 現在のバージョンのElasticsearchによっては、クラスター全体の再起動が必要な場合とそうでない場合があります。
+データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストについて詳しくは、[Elasticsearchのアップグレード ](https://www.elastic.co/docs/deploy-manage/upgrade/deployment-or-cluster)を参照してください。 現在のバージョンのElasticsearchによっては、クラスター全体の再起動が必要な場合とそうでない場合があります。
 
-Elasticsearchには、Java Development Kit （JDK） 1.8以降が必要です。 [Java Software Development Kit （JDK） &#x200B;](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit)をインストールして、どのバージョンのJDKがインストールされているかを確認してください。
+Elasticsearchには、Java Development Kit （JDK） 1.8以降が必要です。 [Java Software Development Kit （JDK） ](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit)をインストールして、どのバージョンのJDKがインストールされているかを確認してください。
 
 #### OpenSearch
 
@@ -140,9 +149,9 @@ OpenSearchは、Elasticsearchのライセンス変更に伴うElasticsearch 7.10
 * 2.4.3-p2
 * 2.3.7-p3
 
-ElasticsearchからOpenSearch[&#128279;](opensearch-migration.md)に移行できるのは、上記のバージョンのAdobe Commerce（またはそれ以上）にアップグレードする場合のみです。
+ElasticsearchからOpenSearch](opensearch-migration.md)に[移行できるのは、上記のバージョンのAdobe Commerce（またはそれ以上）にアップグレードする場合のみです。
 
-OpenSearchにはJDK 1.8以降が必要です。 [Java Software Development Kit （JDK） &#x200B;](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit)をインストールして、どのバージョンのJDKがインストールされているかを確認してください。
+OpenSearchにはJDK 1.8以降が必要です。 [Java Software Development Kit （JDK） ](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit)をインストールして、どのバージョンのJDKがインストールされているかを確認してください。
 
 [検索エンジン設定](../../configuration/search/configure-search-engine.md)は、検索エンジンを変更した後に実行する必要があるタスクについて説明します。
 
@@ -154,7 +163,7 @@ Elasticsearch 8.xのサポートは、Adobe Commerce 2.4.6で導入されまし�
 >
 >これらの手順は、Adobe Commerce 2.4.6および2.4.7にのみ適用されます。 Adobe Commerce 2.4.8以降では、Elasticsearchはサポートされなくなりました。代わりにOpenSearchを使用してください。
 
-1. Elasticsearch 7.x サーバーを8.xにアップグレードし、インストールが完了していることを確認します。 [Elasticsearchのドキュメント &#x200B;](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch)を参照してください。
+1. Elasticsearch 7.x サーバーを8.xにアップグレードし、インストールが完了していることを確認します。 [Elasticsearchのドキュメント ](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch)を参照してください。
 
 1. 次の設定を`elasticsearch.yml` ファイルに追加し、Elasticsearch 8.x サービスを再起動して、`id_field_data` フィールドを有効にします。
 
@@ -220,7 +229,7 @@ Elasticsearch 8.xのサポートは、Adobe Commerce 2.4.6で導入されまし�
 
 誤ってサーバー上のElasticsearchのバージョンをアップグレードしたり、他の理由でダウングレードが必要と判断した場合は、Adobe Commerce プロジェクトの依存関係も更新する必要があります。 例えば、Elasticsearch 8.xから7.xにダウングレードするには
 
-1. Elasticsearch 8.x サーバーを7.xにダウングレードし、インストールが完了していることを確認します。 [Elasticsearchのドキュメント &#x200B;](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch)を参照してください。
+1. Elasticsearch 8.x サーバーを7.xにダウングレードし、インストールが完了していることを確認します。 [Elasticsearchのドキュメント ](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch)を参照してください。
 
 1. Adobe Commerce プロジェクトのルートディレクトリで、Composerの依存関係を更新して、`Magento_Elasticsearch8` モジュールとそのComposerの依存関係を削除し、`Magento_Elasticsearch7` モジュールをインストールします。
 
@@ -254,7 +263,7 @@ Elasticsearch 8.xのサポートは、Adobe Commerce 2.4.6で導入されまし�
 
 ## データベース テーブル形式の変換
 
-すべてのデータベース テーブルの形式を`COMPACT`から`DYNAMIC`に変換する必要があります。 また、ストレージ エンジンの種類を`MyISAM`から`InnoDB`に変換する必要があります。 [&#x200B; ベストプラクティス &#x200B;](../../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md)を参照してください。
+すべてのデータベース テーブルの形式を`COMPACT`から`DYNAMIC`に変換する必要があります。 また、ストレージ エンジンの種類を`MyISAM`から`InnoDB`に変換する必要があります。 [ ベストプラクティス ](../../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md)を参照してください。
 
 ## 開いているファイルの制限を設定する
 
@@ -264,7 +273,7 @@ Adobeでは、開いているファイル [ulimit](https://www.gnu.org/software/
 
 コマンドラインからulimitを設定するには：
 
-1. [&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
+1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
 1. ulimitを`65536`に設定します。
 
    ```shell
@@ -273,7 +282,7 @@ Adobeでは、開いているファイル [ulimit](https://www.gnu.org/software/
 
 Bash シェルで値を設定するには：
 
-1. [&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
+1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
 1. `/home/<username>/.bashrc`をテキストエディターで開きます。
 1. 次の行を追加します。
 
@@ -311,11 +320,11 @@ crontab -l
 
 cronが実行されないもう1つの症状は、管理者の次のエラーです。
 
-![&#x200B; システム メッセージ - cronが実行されていません](../../assets/upgrade-guide/cron-not-running.png)
+![ システム メッセージ - cronが実行されていません](../../assets/upgrade-guide/cron-not-running.png)
 
 エラーを確認するには、ウィンドウ上部の&#x200B;**システムメッセージ**&#x200B;を次のようにクリックします。
 
-![&#x200B; システムメッセージ通知](../../assets/upgrade-guide/system-messages.png)
+![ システムメッセージ通知](../../assets/upgrade-guide/system-messages.png)
 
 詳しくは、[cron](../../configuration/cli/configure-cron-jobs.md)の設定と実行を参照してください。
 
@@ -339,7 +348,7 @@ Adobe Commerce 2.4には、シリアル化されたデータをJSONに変換す�
 
 環境変数を設定するには：
 
-1. [&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
+1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
 1. 変数を設定します。
 
    ```shell
@@ -360,7 +369,7 @@ Adobe Commerce 2.4には、シリアル化されたデータをJSONに変換す�
 
 セキュリティ上の理由から、Adobe Commerceにはファイルシステムに対する特定の権限が必要です。 権限が&#x200B;_[所有権](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_&#x200B;と異なります。 所有権によって、ファイルシステム上でアクションを実行できるユーザーが決まります。権限によって、ユーザーが何をできるかが決まります。
 
-ファイルシステム内のディレクトリは、[&#x200B; ファイルシステム所有者の](../../installation/prerequisites/file-system/overview.md) グループによって書き込み可能である必要があります。
+ファイルシステム内のディレクトリは、[ ファイルシステム所有者の](../../installation/prerequisites/file-system/overview.md) グループによって書き込み可能である必要があります。
 
 ファイルシステムの権限が適切に設定されていることを確認するには、アプリケーションサーバーにログインするか、ホスティングプロバイダーのファイルマネージャーアプリケーションを使用します。
 
@@ -421,7 +430,7 @@ ls -la /var/www/html/magento2/pub
 
 Adobe Commerceでは静的ファイルアセットが`pub`のサブディレクトリにデプロイされるので、権限と所有権も確認することをお勧めします。
 
-詳しくは、[&#x200B; ファイルシステムの権限と所有権](../../installation/prerequisites/file-system/overview.md)を参照してください。
+詳しくは、[ ファイルシステムの権限と所有権](../../installation/prerequisites/file-system/overview.md)を参照してください。
 
 ## `pub/` ディレクトリのルートを設定
 

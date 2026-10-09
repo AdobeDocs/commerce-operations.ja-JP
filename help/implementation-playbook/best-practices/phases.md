@@ -3,14 +3,26 @@ title: 実装フェーズ
 description: Adobe Commerce プロジェクトの実装フェーズに関するベストプラクティスについて説明します。
 exl-id: c5272f79-7315-46dc-a191-a40004aaa812
 feature: Best Practices
-last-update: 2026-01-20T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-01-20
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 7%
-
 ---
-
 # 実装のベストプラクティス
 
 Adobe Commerce プロジェクトを実装するには、多くの方法があります。 この節で説明するベストプラクティスでは、Adobeがお客様やパートナーに対して特定のユースケースの実装を期待する方法について説明します。 これらのレコメンデーションは、サイトの設定とカスタマイズ、デプロイメント、運用、パフォーマンス、アップグレードに関する一般的な問題と、潜在的な問題を回避するために設計されています。

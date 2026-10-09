@@ -2,14 +2,23 @@
 title: 環境変数の使用例
 description: 環境変数を使用して、開発システムで共有、システム固有、および機密性の高い値を設定する方法の例を参照してください。
 exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-04-28
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 0%
-
 ---
-
 # 環境変数の使用例
 
 この例では、開発システムで共有、システム固有、および機密性の高い値を設定し、共有設定、`config.php`、およびPHP環境変数の組み合わせを使用して実稼動システムのすべての値を設定する方法を示します。
@@ -114,7 +123,7 @@ VAT番号とストア名（**Stores**/設定/**Configuration**/一般/**General*
   | メール送信先 | `contact/email/recipient_email` |
   | デフォルトのメールドメイン | `customer/create_account/email_domain` |
 
-  すべての機密性の高い設定パスとシステム固有の設定パスは、[機密性の高い設定パスとシステム固有の設定パスのリファレンス &#x200B;](../reference/config-reference-sens.md)で確認できます。
+  すべての機密性の高い設定パスとシステム固有の設定パスは、[機密性の高い設定パスとシステム固有の設定パスのリファレンス ](../reference/config-reference-sens.md)で確認できます。
 
 #### 設定パスを変数名に変換する
 
