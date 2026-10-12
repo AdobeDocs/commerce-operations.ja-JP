@@ -1,17 +1,30 @@
 ---
-title: MDVA-39305-V3：有効になっているログインの問題 [!DNL Google reCAPTCHA]
-description: MDVA-39305-V3 パッチを適用して、 [!DNL Google reCAPTCHA] が有効になっている場合に登録ユーザーがログインできないAdobe Commerceの問題を修正します。 このパッチは、 [!DNL Google reCAPTCHA] 完全に読み込まれる前にフォームを送信できる問題も修正します。 さらに、CMS ページのデフォルト以外の場所でブロックが使用されている場合に、null*で*メンバー関数への呼び出し*isDisabled （）というエラーが修正されます。
+title: MDVA-39305-V3：有効な[!DNL Google reCAPTCHA]でのログインの問題
+description: MDVA-39305-V3 パッチを適用して、[!DNL Google reCAPTCHA]が有効になっている場合に登録ユーザーがログインできないAdobe Commerceの問題を修正します。 このパッチは、[!DNL Google reCAPTCHA]が完全に読み込まれる前にフォームを送信できる問題も修正します。 さらに、CMS ページのデフォルト以外の場所でブロックが使用されている場合に、null*で*メンバー関数への呼び出し*isDisabled （）というエラーが修正されます。
 feature: Console
 role: Admin
 exl-id: 63e880aa-9a2e-4c34-9ead-20bfc5204f2c
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '489'
 ht-degree: 0%
-
 ---
-
 # MDVA-39305-V3：有効な[!DNL Google reCAPTCHA]でのログインの問題
 
 >[!NOTE]
@@ -20,7 +33,7 @@ ht-degree: 0%
 
 MDVA-39305-V3 パッチは、[!DNL Google reCAPTCHA]が有効になっている場合に登録された顧客がログインできない問題を修正します。 このパッチは、[!DNL Google reCAPTCHA]が完全に読み込まれる前にフォームを送信できる問題も修正します。 さらに、CMS ページのデフォルト以外の場所でブロックが使用されている場合、null *のメンバー関数への呼び出し*&#x200B;が無効（）になるエラーを修正します。
 
-このパッチは、[品質パッチツール （QPT） &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.48 リリースで追加されました。 QPT 1.1.58 リリースで更新され、新しいAdobe Commerce バージョン 2.4.7 - 2.4.7-p4が含まれるようになりました。 パッチ IDはMDVA-39305-V3です。 この問題は、Adobe Commerce バージョン 2.4.4、2.4.5-p2、および2.4.7で修正されています。
+このパッチは、[品質パッチツール （QPT） ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.48 リリースで追加されました。 QPT 1.1.58 リリースで更新され、新しいAdobe Commerce バージョン 2.4.7 - 2.4.7-p4が含まれるようになりました。 パッチ IDはMDVA-39305-V3です。 この問題は、Adobe Commerce バージョン 2.4.4、2.4.5-p2、および2.4.7で修正されています。
 
 ## 影響を受ける製品とバージョン
 
@@ -34,7 +47,7 @@ MDVA-39305-V3 パッチは、[!DNL Google reCAPTCHA]が有効になっている�
 
 >[!NOTE]
 >
->パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>パッチは、新しい品質パッチツールのリリースを含む他のバージョンに適用される場合があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
@@ -45,7 +58,7 @@ MDVA-39305-V3 パッチは、[!DNL Google reCAPTCHA]が有効になっている�
 
 <u>複製する手順</u>:
 
-1. **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Security]** > **[!DNL Google reCAPTCHA Storefront]**&#x200B;に移動し、***[!DNL Google reCAPTCHA]***&#x200B;を有効にします。
+1. **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Security]** > **[!DNL Google reCAPTCHA Storefront]**&#x200B;に移動し、***[!DNL Google reCAPTCHA]***を有効にします。
 1. フロントエンドに移動します。
 1. ブラウザーで&#x200B;**[!UICONTROL Developer Tool Console]**&#x200B;を開きます。
 
@@ -86,10 +99,10 @@ CMS ページのデフォルト以外の場所でブロックを使用すると�
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
 [!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。
