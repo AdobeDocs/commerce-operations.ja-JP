@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
+[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
@@ -47,8 +47,8 @@ Adobe Commerceには、2種類のインデクサーモードがあります：[!
 サイトパフォーマンスを最大化するには、インデックス作成に関する次のベストプラクティスに従います。
 
 - インデックス設定を確認します。
-- 大規模なサイトや、頻繁な更新と大量のトラフィックを伴うサイトでは、インデックスを&#x200B;_[!UICONTROL Update on Schedule]_に設定します。 [ インデックス管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)を参照してください。
-- インデックスの管理については、[ パフォーマンスのベストプラクティス ](../../../performance/configuration.md)に従ってください。
+- 大規模なサイトや、頻繁な更新と大量のトラフィックを伴うサイトでは、インデックスを&#x200B;_[!UICONTROL Update on Schedule]_&#x200B;に設定します。 [&#x200B; インデックス管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)を参照してください。
+- インデックスの管理については、[&#x200B; パフォーマンスのベストプラクティス &#x200B;](../../../performance/configuration.md)に従ってください。
 
 >[!IMPORTANT]
 >

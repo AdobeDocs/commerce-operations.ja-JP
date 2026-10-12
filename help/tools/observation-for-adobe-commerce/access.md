@@ -32,4 +32,4 @@ ht-degree: 0%
 
 次に、[!DNL New Relic] ホームページから、「アプリ」メニュー項目を選択します。
 
-![New Relic ホームページ ](../../assets/tools/observation-for-adobe-commerce/new-relic-homepage.jpeg)
+![New Relic ホームページ &#x200B;](../../assets/tools/observation-for-adobe-commerce/new-relic-homepage.jpeg)

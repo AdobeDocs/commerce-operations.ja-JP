@@ -22,7 +22,7 @@ ht-degree: 0%
 
 このトピックでは、Adobe Commerceをインストールする前に、web サーバーグループに対する読み取り/書き込み権限を設定する方法について説明します。 これは、コマンドラインがファイルシステムにファイルを書き込めるようにするために必要です。
 
-使用する手順は、[共有ホスティング ](#set-permissions-for-one-user-on-shared-hosting)を使用し、1人のユーザーを持っているか、[ プライベートサーバー](#set-ownership-and-permissions-for-two-users)を使用し、2人のユーザーを持っているかによって異なります。
+使用する手順は、[共有ホスティング &#x200B;](#set-permissions-for-one-user-on-shared-hosting)を使用し、1人のユーザーを持っているか、[&#x200B; プライベートサーバー](#set-ownership-and-permissions-for-two-users)を使用し、2人のユーザーを持っているかによって異なります。
 
 ## 共有ホスティングで1人のユーザーの権限を設定する
 
@@ -69,7 +69,7 @@ ht-degree: 0%
    * [Composer メタパッケージ](../../composer.md)
    * [リポジトリのクローンを作成する（開発者向け）](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
-1. ファイルシステムの所有権と権限を設定したら、[ アプリケーションをインストール ](../../advanced.md)
+1. ファイルシステムの所有権と権限を設定したら、[&#x200B; アプリケーションをインストール &#x200B;](../../advanced.md)
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ Web サーバーがファイルシステムにファイルやディレクトリ�
 
 >[!NOTE]
 >
->既存のユーザーアカウントを使用する予定がある場合は、[Web サーバーユーザーグループ ](#find-the-web-server-user-group)にスキップします。
+>既存のユーザーアカウントを使用する予定がある場合は、[Web サーバーユーザーグループ &#x200B;](#find-the-web-server-user-group)にスキップします。
 
 ### ファイルシステムの所有者を作成し、ユーザーに強力なパスワードを付与します
 
@@ -134,7 +134,7 @@ sudo passwd magento_user
 
 >[!WARNING]
 >
->このユーザーを作成する目的は、セキュリティを強化することなので、[強力なパスワード ](https://en.wikipedia.org/wiki/Password_strength)を作成してください。
+>このユーザーを作成する目的は、セキュリティを強化することなので、[強力なパスワード &#x200B;](https://en.wikipedia.org/wiki/Password_strength)を作成してください。
 
 ### Web サーバーのユーザーグループを見つける
 
@@ -167,7 +167,7 @@ Web サーバーのプライマリグループにファイルシステム所有�
 
 >[!NOTE]
 >
->`-a -G` オプションは、`apache`または`www-data`を&#x200B;*セカンダリ* グループとしてユーザーアカウントに追加し、ユーザーの&#x200B;*プライマリ* グループを保持するため、重要です。 ユーザーアカウントにセカンダリグループを追加すると、[ ファイルの所有権と権限を制限](#set-ownership-and-permissions-for-two-users)して、共有グループのメンバーが特定のファイルのみにアクセスできるようにします。
+>`-a -G` オプションは、`apache`または`www-data`を&#x200B;*セカンダリ* グループとしてユーザーアカウントに追加し、ユーザーの&#x200B;*プライマリ* グループを保持するため、重要です。 ユーザーアカウントにセカンダリグループを追加すると、[&#x200B; ファイルの所有権と権限を制限](#set-ownership-and-permissions-for-two-users)して、共有グループのメンバーが特定のファイルのみにアクセスできるようにします。
 
 例えば、ユーザー`magento_user`をCentOSの`apache` プライマリグループに追加するには、次の手順を実行します。
 

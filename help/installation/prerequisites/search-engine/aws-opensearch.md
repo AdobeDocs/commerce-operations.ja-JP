@@ -54,7 +54,7 @@ AWS インスタンスで簡単に再作成できるため、インデックス�
 
 ### OpenSearch用にCommerceを設定
 
-OpenSearchを設定する手順については、[高度なインストール ](../../advanced.md) トピックを参照してください。
+OpenSearchを設定する手順については、[高度なインストール &#x200B;](../../advanced.md) トピックを参照してください。
 
 新しい設定が機能していることをテストするには、OpenSearch エンドポイントを直接テストします。
 
@@ -70,4 +70,4 @@ OpenSearchを設定する手順については、[高度なインストール ](
 
 ## 関連資料
 
-詳しくは、[OpenSearch AWSのドキュメント ](https://docs.aws.amazon.com/opensearch-service/index.html)を参照してください。
+詳しくは、[OpenSearch AWSのドキュメント &#x200B;](https://docs.aws.amazon.com/opensearch-service/index.html)を参照してください。

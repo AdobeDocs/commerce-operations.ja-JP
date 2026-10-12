@@ -37,7 +37,7 @@ ht-degree: 0%
 
 * [[!DNL Varnish] キャッシュ](../configuration/cache/config-varnish.md)
 * セッション用[Redis](../configuration/cache/redis-session.md) （2.0.6以降）
-* [ デフォルトキャッシュ ](../configuration/cache/redis-pg-cache.md)として別のRedis インスタンスを使用します（このインスタンスをページキャッシュに使用しないでください）
+* [&#x200B; デフォルトキャッシュ &#x200B;](../configuration/cache/redis-pg-cache.md)として別のRedis インスタンスを使用します（このインスタンスをページキャッシュに使用しないでください）
 
 各タイプのソフトウェアでサポートされているバージョンについて詳しくは、[必要システム構成](../installation/system-requirements.md)を参照してください。
 
@@ -128,7 +128,7 @@ Magento Open SourceとAdobe Commerce:
 
 >[!INFO]
 >
->`php-mcrypt`はPHP 7.2から削除され、[`sodium` ライブラリ ](https://www.php.net/manual/en/book.sodium.php)に置き換えられました。 PHPをアップグレードする際は、[ ナトリウム ](https://www.php.net/manual/en/sodium.installation.php)が適切に有効になっていることを確認してください。
+>`php-mcrypt`はPHP 7.2から削除され、[`sodium` ライブラリ &#x200B;](https://www.php.net/manual/en/book.sodium.php)に置き換えられました。 PHPをアップグレードする際は、[&#x200B; ナトリウム &#x200B;](https://www.php.net/manual/en/sodium.installation.php)が適切に有効になっていることを確認してください。
 
 >[!INFO]
 >
@@ -146,7 +146,7 @@ memory_limit=1G
 
 #### Realpath_cache設定
 
-[!DNL Commerce]のパフォーマンスを向上させるには、`php.ini` ファイルに次の推奨`realpath_cache`設定を追加または更新してください。 この設定を使用すると、PHP プロセスは、ページが読み込まれるたびにファイルを検索するのではなく、ファイルにパスをキャッシュできます。 PHP ドキュメントの[ パフォーマンスチューニング ](https://www.php.net/manual/en/ini.core.php)を参照してください。
+[!DNL Commerce]のパフォーマンスを向上させるには、`php.ini` ファイルに次の推奨`realpath_cache`設定を追加または更新してください。 この設定を使用すると、PHP プロセスは、ページが読み込まれるたびにファイルを検索するのではなく、ファイルにパスをキャッシュできます。 PHP ドキュメントの[&#x200B; パフォーマンスチューニング &#x200B;](https://www.php.net/manual/en/ini.core.php)を参照してください。
 
 ```text
 realpath_cache_size=10M
@@ -198,8 +198,8 @@ Magentoは、NginxおよびApacheのweb サーバーを完全にサポートし�
 
 | Web サーバー | 属性名 | ロケーション | 関連情報 |
 |--- | --- | --- | ---|
-| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` （Debian） | [ パフォーマンス用NGINXのチューニング ](https://www.f5.com/company/blog/nginx/tuning-nginx) |
-| Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` （CentOS） | [Apache MPM共通ディレクティブ ](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
+| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` （Debian） | [&#x200B; パフォーマンス用NGINXのチューニング &#x200B;](https://www.f5.com/company/blog/nginx/tuning-nginx) |
+| Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` （CentOS） | [Apache MPM共通ディレクティブ &#x200B;](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
 
 ## [!DNL MySQL]
 

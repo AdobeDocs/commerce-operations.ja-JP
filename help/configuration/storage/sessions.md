@@ -28,8 +28,8 @@ ht-degree: 0%
 
 このトピックでは、セッションファイルの保存場所を特定する方法について説明します。 システムは、次のロジックを使用してセッションファイルを保存します。
 
-- memcachedを設定した場合、セッションはRAMに保存されます。[ セッションストレージにmemcachedを使用](memcached.md)を参照してください。
-- Redisを設定した場合、セッションはRedis サーバーに保存されます。[ セッションストレージにRedisを使用](../cache/redis-session.md)を参照してください。
+- memcachedを設定した場合、セッションはRAMに保存されます。[&#x200B; セッションストレージにmemcachedを使用](memcached.md)を参照してください。
+- Redisを設定した場合、セッションはRedis サーバーに保存されます。[&#x200B; セッションストレージにRedisを使用](../cache/redis-session.md)を参照してください。
 - デフォルトのファイルベースのセッションストレージを使用している場合は、次の場所にセッションを次の順序で保存します。
 
   1. [`env.php`](#example-in-envphp)で定義されたディレクトリ
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ## セッションサイズの管理
 
-_ユーザーガイド_&#x200B;の[ セッション管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management)を参照してください。
+_ユーザーガイド_&#x200B;の[&#x200B; セッション管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management)を参照してください。
 
 ## ガベージコレクション設定
 

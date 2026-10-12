@@ -134,7 +134,7 @@ MagentoCronGroup: <username1> ... <usernameN>
    ```
 
 1. 変更を`.htaccess`に保存して、テキストエディターを終了します。
-1. [ クローンが安全であることを確認します](#verify-cron-is-secure)。
+1. [&#x200B; クローンが安全であることを確認します](#verify-cron-is-secure)。
 
 ## Nginxでcronを保護
 
@@ -181,7 +181,7 @@ Commerceには、最適化されたサンプル nginx コンフィギュレー�
 systemctl restart nginx
 ```
 
-1. [ クローンが安全であることを確認します](#verify-cron-is-secure)。
+1. [&#x200B; クローンが安全であることを確認します](#verify-cron-is-secure)。
 
 ## cronが安全であることを確認する
 

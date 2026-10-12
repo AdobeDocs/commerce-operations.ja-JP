@@ -22,9 +22,9 @@ ht-degree: 0%
 
 主な内容：
 
-* [Adobe Commerce インストール `composer.json`からサンプルデータモジュール ](#remove-sample-data-modules)を削除します。 このオプションを選択すると、*not*&#x200B;がデータベースからサンプルデータを削除します。
+* [Adobe Commerce インストール `composer.json`からサンプルデータモジュール &#x200B;](#remove-sample-data-modules)を削除します。 このオプションを選択すると、*not*&#x200B;がデータベースからサンプルデータを削除します。
 
-* [ サンプルデータを更新する準備](#prepare-to-update-sample-data) （例えば、Magento アプリケーションを更新する前）。
+* [&#x200B; サンプルデータを更新する準備](#prepare-to-update-sample-data) （例えば、Magento アプリケーションを更新する前）。
 
 ## サンプルデータモジュールの削除
 
@@ -68,4 +68,4 @@ bin/magento sampledata:remove
 bin/magento sampledata:reset
 ```
 
-その後、[ アプリケーションを更新します](../tutorials/uninstall.md#update-the-application)。
+その後、[&#x200B; アプリケーションを更新します](../tutorials/uninstall.md#update-the-application)。

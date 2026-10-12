@@ -30,13 +30,13 @@ ht-degree: 0%
 
 ## [!UICONTROL Cron transaction duration in seconds]
 
-![Cron トランザクション時間（秒） ](../../assets/tools/observation-for-adobe-commerce/cron-tab-1.jpg)
+![Cron トランザクション時間（秒） &#x200B;](../../assets/tools/observation-for-adobe-commerce/cron-tab-1.jpg)
 
 **[!UICONTROL Cron transaction duration in seconds]** フレームには、[!DNL crons] トランザクション期間が秒単位で表示されます。 これにより、実行時間が長いトランザクションが表示されます。 APMの詳細では、トランザクション/オペレーションが実行している可能性のあるクエリの詳細が表示されます。
 
 ## [!UICONTROL MySQL Non-Sleeping Threads by Node]
 
-![ ノード別のMySQL Non Sleeping Threads](../../assets/tools/observation-for-adobe-commerce/cron-tab-2.jpg)
+![&#x200B; ノード別のMySQL Non Sleeping Threads](../../assets/tools/observation-for-adobe-commerce/cron-tab-2.jpg)
 
 **[!UICONTROL MySQL Non-Sleeping Threads by Node]** フレームには、選択した時間枠のノード別のMySQL非スリープスレッドが表示されます。
 
@@ -54,19 +54,19 @@ ht-degree: 0%
 
 ## [!UICONTROL Cron schedule table locks]
 
-![Cron スケジュール テーブルのロック ](../../assets/tools/observation-for-adobe-commerce/cron-tab-5.jpg)
+![Cron スケジュール テーブルのロック &#x200B;](../../assets/tools/observation-for-adobe-commerce/cron-tab-5.jpg)
 
 **[!UICONTROL Cron schedule table locks]** フレームは、選択した時間枠で[!DNL cron]個のスケジュール テーブルのロックを確認します。
 
 ## [!UICONTROL Cron schedule clean cron fired]
 
-![Cron スケジュール テーブルのロック ](../../assets/tools/observation-for-adobe-commerce/cron-tab-6.jpg)
+![Cron スケジュール テーブルのロック &#x200B;](../../assets/tools/observation-for-adobe-commerce/cron-tab-6.jpg)
 
 **[!UICONTROL Cron schedule clean cron fired]** フレームは、選択した時間枠でクリーンアップされた[!DNL crons]の数を調べます。 このフレームにデータが表示されない場合は、[!DNL crons]が正しく実行されていないという問題を示している可能性があります。 [!DNL cron] ジョブ スケジュールがクリーニングされない場合、[!DNL crons]は最適に実行されず、実行に時間がかかる可能性があります。
 
 ## [!UICONTROL Cron schedule clean records details table]
 
-![Cron スケジュールのクリーン レコードの詳細テーブル ](../../assets/tools/observation-for-adobe-commerce/cron-tab-7.jpg)
+![Cron スケジュールのクリーン レコードの詳細テーブル &#x200B;](../../assets/tools/observation-for-adobe-commerce/cron-tab-7.jpg)
 
 **[!UICONTROL Cron schedule clean records details table]** テーブルには、選択した期間にわたって`cron_schedule` テーブルからレコードをクリーニングするジョブの詳細が表示されます。
 
@@ -78,6 +78,6 @@ ht-degree: 0%
 
 ## [!UICONTROL Datastore Operations Tables]
 
-![ データストア操作テーブル ](../../assets/tools/observation-for-adobe-commerce/cron-tab-9.jpg)
+![&#x200B; データストア操作テーブル &#x200B;](../../assets/tools/observation-for-adobe-commerce/cron-tab-9.jpg)
 
 **[!UICONTROL Datastore Operations Tables]**&#x200B;は、選択した期間の`SELECT`、`DELETE`および`UPDATE`を含むデータベース テーブル操作を確認します。 このフレームは、データベースのテーブルに対して最も高い操作頻度を示しています。

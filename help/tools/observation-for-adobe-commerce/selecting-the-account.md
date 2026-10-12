@@ -30,14 +30,14 @@ ht-degree: 0%
 
 1. 「**アカウントを選択**」ドロップダウンをクリックします。 **アカウントを選択** ドロップダウンが表示されない場合は、アクセスできない可能性があります。 アクセスをリクエストするには、[ここ](https://adobe.sharepoint.com/sites/MG/it/IT%20Services%20Wiki/Requesting%20access%20to%20Magento%20Commerce%20New%20Relic.aspx)をクリックします。
 
-   ![ アカウントを選択](../../assets/tools/observation-for-adobe-commerce/start-using-1.jpeg)
+   ![&#x200B; アカウントを選択](../../assets/tools/observation-for-adobe-commerce/start-using-1.jpeg)
 
 1. project_idを貼り付けたり、[!DNL New Relic] アカウント番号またはアカウント名を入力したり、アカウントのリストを参照したりできます。
 
-   ![ アカウントのリストを参照](../../assets/tools/observation-for-adobe-commerce/start-using-2.jpg)
+   ![&#x200B; アカウントのリストを参照](../../assets/tools/observation-for-adobe-commerce/start-using-2.jpg)
 
 1. 時計アイコンが表示されている&#x200B;**水色** （ナードレットウィンドウの右上）ドロップダウンメニューをクリックします。
 
-   ![ ドロップダウンメニューをクリック ](../../assets/tools/observation-for-adobe-commerce/start-using-3.jpg)
+   ![&#x200B; ドロップダウンメニューをクリック &#x200B;](../../assets/tools/observation-for-adobe-commerce/start-using-3.jpg)
 
 1. チケットの日時の前の時間を設定して、先行するイベント/データがあるかどうかを確認する必要があります。 左側のプリセットタイムフレームを使用するか、**カスタム設定**&#x200B;を選択してカスタムタイムフレームを設定できます。

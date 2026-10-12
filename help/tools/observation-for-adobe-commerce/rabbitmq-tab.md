@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## [!UICONTROL [!DNL RabbitMQ] Infrastructure events]
 
-![[!DNL RabbitMQ] インフラストラクチャ イベント ](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
+![[!DNL RabbitMQ] インフラストラクチャ イベント &#x200B;](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
 
 **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** フレームには、選択した時間枠で発生した[!DNL RabbitMQ]を含むインフラストラクチャ イベントが表示されます。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ## [!UICONTROL [!DNL RabbitMQ] service start/stop signals]
 
-![[!DNL RabbitMQ] サービスの開始/停止シグナル ](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
+![[!DNL RabbitMQ] サービスの開始/停止シグナル &#x200B;](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
 
 このフレームには、選択した期間に発生した[!DNL RabbitMQ] サービス開始/停止シグナルが表示されます。
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 ## [!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]
 
-キュー](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)別![[!DNL RabbitMQ] メッセージの概要ステータス
+キュー![&#128279;](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)別[!DNL RabbitMQ] メッセージの概要ステータス
 
 **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** グラフには、選択した期間に[!DNL RabbitMQ] キューが公開したメッセージの数が表示されます。
 
@@ -108,24 +108,24 @@ ht-degree: 0%
 
 ## [!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]
 
-キュー](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)によって![[!DNL RabbitMQ]件の公開されたメッセージ
+キュー![&#128279;](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)によって[!DNL RabbitMQ]件の公開されたメッセージ
 
 **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** グラフには、選択した期間に各[!DNL RabbitMQ] キューが消費したバイト数が表示されます。
 
 ## [!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]
 
-キュー](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)による![[!DNL RabbitMQ]の公開メッセージ スループット
+キュー![&#128279;](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)による[!DNL RabbitMQ]の公開メッセージ スループット
 
 **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** グラフには、選択した期間における各[!DNL RabbitMQ] キューの1秒あたりの公開メッセージの平均数が表示されます。
 
 ## [!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]
 
-キュー](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)によるメッセージ スループットの合計![[!DNL RabbitMQ]
+キュー![&#128279;](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)によるメッセージ スループットの合計[!DNL RabbitMQ]
 
 **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** グラフには、選択した期間における各[!DNL RabbitMQ] キューの1秒あたりのメッセージの平均合計数が表示されます。
 
 ## [!UICONTROL [!DNL RabbitMQ] Consumers by Queue]
 
-キュー](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)別![[!DNL RabbitMQ] コンシューマー
+キュー![&#128279;](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)別[!DNL RabbitMQ] コンシューマー
 
 **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** グラフには、選択した期間における各[!DNL RabbitMQ] キューの平均合計コンシューマー数が表示されます。

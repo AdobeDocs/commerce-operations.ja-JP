@@ -46,7 +46,7 @@ Commerce 2.4.3以降、Amazon EC2でホストされているインスタンス�
 
 ## 前提条件
 
-- **Create a Redis OSS serverless cache**- AWS Management Consoleから、EC2 インスタンスの同じリージョンとVPCにRedis キャッシュを作成します。 手順については、[AWS Elasticache ドキュメント ](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html)を参照してください。
+- **Create a Redis OSS serverless cache**- AWS Management Consoleから、EC2 インスタンスの同じリージョンとVPCにRedis キャッシュを作成します。 手順については、[AWS Elasticache ドキュメント &#x200B;](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html)を参照してください。
 
 - **EC2 Commerce インスタンスへの接続を確認する**
 
@@ -101,4 +101,4 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
    ```
 
 1. Commerce UIでページを開きます。
-1. ターミナルの[ キャッシュ出力](#verify-connectivity)を確認します。
+1. ターミナルの[&#x200B; キャッシュ出力](#verify-connectivity)を確認します。

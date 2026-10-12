@@ -104,6 +104,6 @@ Adobe Commerceの毎月のセキュリティパッチは累積されないので
 
 次のトピックを使用して、パッチのステータスに関するレポートを生成、トラブルシューティング、追跡します。
 
-- [ パッチ ステータス レポートを生成](generate-report.md)して、[!DNL CVT] ツールを実行し、コマンド オプションを確認し、レポート結果を解釈します。
-- 予期しない結果またはコマンドエラーを解決するための[[!DNL Commerce Version Tool]  トラブルシューティング ](troubleshooting.md)。
-- [[!DNL Commerce Version Tool]  リリースノート ](release-notes.md)を使用して、リリースアップデートを確認します。
+- [&#x200B; パッチ ステータス レポートを生成](generate-report.md)して、[!DNL CVT] ツールを実行し、コマンド オプションを確認し、レポート結果を解釈します。
+- 予期しない結果またはコマンドエラーを解決するための[[!DNL Commerce Version Tool]  トラブルシューティング &#x200B;](troubleshooting.md)。
+- [[!DNL Commerce Version Tool]  リリースノート &#x200B;](release-notes.md)を使用して、リリースアップデートを確認します。

@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## リポジトリ
 
-[!DNL Data Migration Tool] ソースコードにアクセスするには、GitHub [ リポジトリ ](https://github.com/magento/data-migration-tool)を参照してください。
+[!DNL Data Migration Tool] ソースコードにアクセスするには、GitHub [&#x200B; リポジトリ &#x200B;](https://github.com/magento/data-migration-tool)を参照してください。
 
 ## 必要システム構成
 
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 設定`config.xsd` ファイルのスキーマは、`etc/` ディレクトリにあります。 Magento 1.xのバージョンごとに、デフォルトの設定ファイル （`config.xml.dist`）が作成されます。 `etc/`の下の別のディレクトリにあります。
 
-デフォルトの設定ファイルは、カスタム設定ファイルに置き換えることができます（[ コマンド構文](migrate-data/overview.md#command-syntax)を参照）。
+デフォルトの設定ファイルは、カスタム設定ファイルに置き換えることができます（[&#x200B; コマンド構文](migrate-data/overview.md#command-syntax)を参照）。
 
 設定ファイルの構造は次のとおりです。
 
@@ -274,7 +274,7 @@ class StageClass implements StageInterface
 
 データ段階でロールバックがサポートされている場合は、`RollbackInterface` インターフェイスを実装する必要があります。
 
-実行中のステップのビジュアライゼーションは、SymfonyのProgressBar コンポーネントによって提供されます（[ プログレスバー](https://symfony.com/doc/current/components/console/helpers/progressbar.html)を参照）。 このコンポーネントには、LogLevelProcessorとして手順でアクセスします。
+実行中のステップのビジュアライゼーションは、SymfonyのProgressBar コンポーネントによって提供されます（[&#x200B; プログレスバー](https://symfony.com/doc/current/components/console/helpers/progressbar.html)を参照）。 このコンポーネントには、LogLevelProcessorとして手順でアクセスします。
 
 主な使用方法は次のとおりです。
 
@@ -462,7 +462,7 @@ Magento 1では、Magento 2と互換性のない様々なアルゴリズムが�
 
 ### Delta移行モード
 
-メインの移行後、Magento 1 データベースに追加のデータを追加できました（例えば、ストアフロントの顧客）。 このデータをトラッキングするには、移行プロセスの開始時に、テーブルのデータベーストリガーを設定します。 詳しくは、[ サードパーティの拡張機能によって作成されたデータの移行](migrate-data/delta.md#migrate-data-created-by-third-party-extensions)を参照してください。
+メインの移行後、Magento 1 データベースに追加のデータを追加できました（例えば、ストアフロントの顧客）。 このデータをトラッキングするには、移行プロセスの開始時に、テーブルのデータベーストリガーを設定します。 詳しくは、[&#x200B; サードパーティの拡張機能によって作成されたデータの移行](migrate-data/delta.md#migrate-data-created-by-third-party-extensions)を参照してください。
 
 ## データソース
 

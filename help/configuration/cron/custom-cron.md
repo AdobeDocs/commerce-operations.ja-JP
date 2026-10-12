@@ -27,8 +27,8 @@ Commerceが提供するcron グループを使用する場合、カスタム cro
 Commerce アプリケーションには、次のcron グループが用意されています。
 
 - `default`。ほとんどのcron ジョブが含まれています
-- `index`が[ インデクサー](../cli/manage-indexers.md)を更新します
+- `index`が[&#x200B; インデクサー](../cli/manage-indexers.md)を更新します
 - メッセージ キュー[consumers](../cli/start-message-queues.md)を実行する`consumers`
 - これらのトピックは、Adobe Commerceでのみ使用できます
-  - `staging`。[ ステージング関連](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) タスクを実行します
+  - `staging`。[&#x200B; ステージング関連](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) タスクを実行します
   - ターゲットと買い物かごのルールのタスクを実行する`catalog_event`

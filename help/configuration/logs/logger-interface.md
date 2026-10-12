@@ -39,7 +39,7 @@ ht-degree: 0%
 - [notice （）](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L89)
 - [warning （）](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
 
-そのひとつの方法は、[ ログデータベースアクティビティ ](../logs/database-activity.md)の例で説明されています。
+そのひとつの方法は、[&#x200B; ログデータベースアクティビティ &#x200B;](../logs/database-activity.md)の例で説明されています。
 
 もうひとつの方法は次のとおりです。
 

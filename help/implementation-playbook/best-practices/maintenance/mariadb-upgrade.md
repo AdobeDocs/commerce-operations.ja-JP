@@ -31,7 +31,7 @@ MariaDBを使用している場合は、クラウドインフラストラクチ�
 
 ## Adobe Commerce 2.4.6
 
-MariaDB 10.5.1以降、古い時間形式の列は、`SHOW CREATE TABLE`、`SHOW COLUMNS`、`DESCRIBE` ステートメントの出力および`INFORMATION_SCHEMA.COLUMNS` テーブルの`COLUMN_TYPE`列に`/* mariadb-5.3 */` コメントでマークされます。 [MariaDB ドキュメント ](https://mariadb.com/kb/en/datetime/#internal-format)を参照してください。
+MariaDB 10.5.1以降、古い時間形式の列は、`SHOW CREATE TABLE`、`SHOW COLUMNS`、`DESCRIBE` ステートメントの出力および`INFORMATION_SCHEMA.COLUMNS` テーブルの`COLUMN_TYPE`列に`/* mariadb-5.3 */` コメントでマークされます。 [MariaDB ドキュメント &#x200B;](https://mariadb.com/kb/en/datetime/#internal-format)を参照してください。
 
 MariaDB コメントにより、Adobe Commerceで日付列を適切なデータタイプにマッピングできないため、カスタムコードで予期しない動作が発生する可能性があります。
 
@@ -80,7 +80,7 @@ Adobe Commerce サポートチームがアップグレードプロセスを開�
 
 - トラフィックが少ない期間にサイトのコンバージョンを促進。
 
-- データベーステーブルを変換するコマンドを実行する前に、サイトを[ メンテナンスモード ](../../../installation/tutorials/maintenance-mode.md)に切り替えます。
+- データベーステーブルを変換するコマンドを実行する前に、サイトを[&#x200B; メンテナンスモード &#x200B;](../../../installation/tutorials/maintenance-mode.md)に切り替えます。
 
 #### データベース テーブルの行の形式を変換
 

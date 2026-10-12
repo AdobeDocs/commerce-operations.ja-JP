@@ -43,7 +43,7 @@ Commerceのいくつかの機能には、少なくとも1つのcron ジョブが
 
 UNIX システムは、_crontab_&#x200B;を使用して特定のユーザーが実行するタスクをスケジュールします。これは、実際にデーモンに「この日付でこのコマンドを実行する」ように指示するcron デーモンへの指示を含むファイルです。 各ユーザーには独自のcrontabがあり、特定のcrontab内のコマンドは、それを所有するユーザーとして実行されます。
 
-Web ブラウザーでcronを実行するには、[ ブラウザーで実行するcron.phpのセキュリティ保護](../security/secure-cron-php.md)を参照してください。
+Web ブラウザーでcronを実行するには、[&#x200B; ブラウザーで実行するcron.phpのセキュリティ保護](../security/secure-cron-php.md)を参照してください。
 
 ## Commerce crontabの作成または削除
 
@@ -66,7 +66,7 @@ Commerceのcrontabは、crontab内の`#~ MAGENTO START`件と`#~ MAGENTO END`件
 
 Commerce crontabを作成するには：
 
-1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてログインするか、切り替えます。
+1. [&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてログインするか、切り替えます。
 1. Commerceのインストールディレクトリに移動します。
 1. 次のコマンドを入力します。
 
@@ -107,7 +107,7 @@ Commerce アプリケーションをアンインストールする前にのみ�
 
 Commerceのcrontabを削除するには：
 
-1. としてログインするか、[ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
+1. としてログインするか、[&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
 1. Commerceのインストールディレクトリに移動します。
 1. 次のコマンドを入力します。
 
@@ -141,7 +141,7 @@ bin/magento cron:run --group index
 bin/magento cron:run --group default
 ```
 
-カスタム cron ジョブとグループを設定するには、[ カスタム cron ジョブとcron グループの設定](../cron/custom-cron.md)を参照してください。
+カスタム cron ジョブとグループを設定するには、[&#x200B; カスタム cron ジョブとcron グループの設定](../cron/custom-cron.md)を参照してください。
 
 >[!INFO]
 >

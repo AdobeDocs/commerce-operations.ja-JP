@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Database Errors]
 
-![ データベースエラー](../../assets/tools/php-tab-database-errors.jpg)
+![&#x200B; データベースエラー](../../assets/tools/php-tab-database-errors.jpg)
 
 **[!UICONTROL Database Errors]** フレームには、選択した期間のデータベース エラーが表示されます。 解析されるエラーは次のとおりです。
 
@@ -135,12 +135,12 @@ ht-degree: 0%
 
 ## [!UICONTROL Database traces]
 
-![ データベース トレース ](../../assets/tools/php-tab-database-traces.jpg)
+![&#x200B; データベース トレース &#x200B;](../../assets/tools/php-tab-database-traces.jpg)
 
 **[!UICONTROL Database traces]** フレームには、データベースのトレース情報が表示されます。 このフレームは、選択したタイムラインのAPM トランザクションの概要ビューと一致します。
 
 ## [!UICONTROL Database mysql-slow.log]
 
-![ データベース mysql-slow.log](../../assets/tools/php-tab-database-mysql-slow-log.jpg)
+![&#x200B; データベース mysql-slow.log](../../assets/tools/php-tab-database-mysql-slow-log.jpg)
 
 **[!UICONTROL Database mysql-slow.log]** フレームには、選択した期間の`mysql-slow.log` ファイル内にあったクエリ文の種類が表示されます。

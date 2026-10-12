@@ -45,7 +45,7 @@ ht-degree: 0%
 
 Web ブラウザーでCommerce ページにアクセスすると、`curl`または別のユーティリティを使用して、HTTP応答ヘッダーを表示します。
 
-まず、[開発者モード ](../cli/set-mode.md#change-to-developer-mode)を使用していることを確認してください。使用しない場合は、ヘッダーが表示されません。
+まず、[開発者モード &#x200B;](../cli/set-mode.md#change-to-developer-mode)を使用していることを確認してください。使用しない場合は、ヘッダーが表示されません。
 
 以下に例を挙げます。
 
@@ -110,4 +110,4 @@ Varnishが動作している場合、キャッシュ可能なブロックを持�
 
 >[!TIP]
 >
->503 （バックエンドの取得に失敗しました）エラーが発生した場合は、_Adobe Commerce ヘルプセンター_&#x200B;の[503 （サービスが利用できません）エラーのトラブルシューティング ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors)を参照してください。
+>503 （バックエンドの取得に失敗しました）エラーが発生した場合は、_Adobe Commerce ヘルプセンター_&#x200B;の[503 （サービスが利用できません）エラーのトラブルシューティング &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors)を参照してください。

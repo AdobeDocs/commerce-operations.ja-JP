@@ -40,7 +40,7 @@ Magento 1.xからMagento 2.xにデータを転送して適応させるには、�
 1. **データモード**: データベースアセットを一括で移行します。
 1. **デルタモード**：新規顧客や注文などの増分変更（前回の実行以降の変更）を移行します。
 
-![移行モード ](../../assets/data-migration/MigrationModes2.png)
+![移行モード &#x200B;](../../assets/data-migration/MigrationModes2.png)
 
 ## 手順
 
@@ -56,7 +56,7 @@ Magento 1.xからMagento 2.xにデータを転送して適応させるには、�
 1. **データ転送**: Magento 1および2からテーブルでデータテーブルを転送します。
 1. **ボリュームチェック**: テーブル間のレコード数を比較して、転送が成功したことを確認します。
 
-![移行ステージ ](../../assets/data-migration/MigrationSteps2.png)
+![移行ステージ &#x200B;](../../assets/data-migration/MigrationSteps2.png)
 
 ## ファイルをマップ
 
@@ -88,11 +88,11 @@ Magento 2への移行には、データ、拡張機能、カスタムコード�
 
 Magento 2でMagento 1拡張機能を使用できるよう、開発コミュニティと懸命に取り組んできました。 お気に入りの拡張機能の最新版をダウンロードまたは購入できる[Commerce Marketplace](https://commercemarketplace.adobe.com//)を発表できたことを誇りに思います。
 
-Magento 2の拡張機能の開発について詳しくは、[PHP開発者ガイド ](https://developer.adobe.com/commerce/php/development/)を参照してください。
+Magento 2の拡張機能の開発について詳しくは、[PHP開発者ガイド &#x200B;](https://developer.adobe.com/commerce/php/development/)を参照してください。
 
 ### テーマとカスタマイズ
 
-Magento 2は、革新的なショッピング体験を構築し、新たなレベルに拡大するための比類のない能力をマーチャントに提供する新しいアプローチとテクノロジーを活用しています。 開発者は、こうした進歩を活用するために、テーマやカスタマイズに変更を加える必要があります。 Magento 2 [ テーマ ](https://developer.adobe.com/commerce/frontend-core/guide/themes/)、[ レイアウト ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/)、[ カスタマイズ ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage)を作成するためのドキュメントをオンラインで利用できます。
+Magento 2は、革新的なショッピング体験を構築し、新たなレベルに拡大するための比類のない能力をマーチャントに提供する新しいアプローチとテクノロジーを活用しています。 開発者は、こうした進歩を活用するために、テーマやカスタマイズに変更を加える必要があります。 Magento 2 [&#x200B; テーマ &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/themes/)、[&#x200B; レイアウト &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/)、[&#x200B; カスタマイズ &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage)を作成するためのドキュメントをオンラインで利用できます。
 
 ## 移行の試み
 

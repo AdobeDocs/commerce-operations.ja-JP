@@ -207,7 +207,7 @@ Failed to forward-apply prerequisite 247p9-2026-04-001-EE when preparing dry-run
 
 不明なパッチの場合、具体的には、`var/log/patch_status.log`は生のパッチドライラン出力（前方及び逆）を記録し、どのファイルとチャンクが一致しなかったかを示します。
 
-「パッチが見つかりません」という警告が表示された場合は、[ インストールされているバージョンにパッチが適用されない](#no-patches-apply-to-the-installed-version)を参照してガイダンスを受けてください。
+「パッチが見つかりません」という警告が表示された場合は、[&#x200B; インストールされているバージョンにパッチが適用されない](#no-patches-apply-to-the-installed-version)を参照してガイダンスを受けてください。
 
 **アクション：**
 

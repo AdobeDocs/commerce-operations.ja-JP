@@ -55,7 +55,7 @@ Commerce アプリケーションをインストールする前にコードを�
 
    静的コンテンツを消去するには、`[-c|--clear-static-content]` オプションを使用します。 これは、以前にモジュールを有効または無効にし、以前に生成した静的コンテンツをクリアする必要がある場合に必要です。
 
-   [ モジュールを有効にする](../../installation/tutorials/manage-modules.md)を参照してください。
+   [&#x200B; モジュールを有効にする](../../installation/tutorials/manage-modules.md)を参照してください。
 
 1. コードをコンパイルします。
 

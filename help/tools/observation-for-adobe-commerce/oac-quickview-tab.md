@@ -30,13 +30,13 @@ ht-degree: 0%
 
 ## [!UICONTROL Alerts]
 
-![ アラート ](../../assets/tools/observation-for-adobe-commerce/quickview_alerts.jpg)
+![&#x200B; アラート &#x200B;](../../assets/tools/observation-for-adobe-commerce/quickview_alerts.jpg)
 
 **[!UICONTROL Alerts]** フレームには、選択した期間のディスク空き容量に関する警告やサーバー使用状況に関する警告など、様々なアラートが表示されます。 このフレームでは、選択した期間の`SELECT`、`DELETE`、`UPDATE`を含むデータベーステーブルの操作を確認します。
 
 ## [!UICONTROL Upsize / Downsize by node]
 
-![ ノード別のアップサイズ / ダウンサイズ ](../../assets/tools/observation-for-adobe-commerce/quickview_upsize_by_node.jpg)
+![&#x200B; ノード別のアップサイズ / ダウンサイズ &#x200B;](../../assets/tools/observation-for-adobe-commerce/quickview_upsize_by_node.jpg)
 
 **[!UICONTROL Upsize / Downsize by node]** フレームには、選択した期間のノード別のアップサイズとダウンサイズが表示されます。 これは、選択した期間にクラスターサイズが変更されたかどうかを評価するために使用されます。
 

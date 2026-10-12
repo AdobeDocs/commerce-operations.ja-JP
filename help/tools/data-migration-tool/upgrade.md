@@ -58,15 +58,15 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 [Install [!DNL Data Migration Tool]](install.md) トピックを参照して、以下の方法を確認してください。
 
-* Magento 2 バージョンを[ チェック ](install.md#check-your-version)
+* Magento 2 バージョンを[&#x200B; チェック &#x200B;](install.md#check-your-version)
 
 * [Find](install.md#find-released-versions-of-data-migration-tool)がリリースした[!DNL Data Migration Tool]のバージョン
 
-* [!DNL Data Migration Tool] バージョンを[ チェック ](install.md#check-version-of-installed-data-migration-tool)
+* [!DNL Data Migration Tool] バージョンを[&#x200B; チェック &#x200B;](install.md#check-version-of-installed-data-migration-tool)
 
 ## [!DNL Data Migration Tool]をアップグレード
 
-1. アプリケーションサーバーに[ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてログインするか、切り替えます。
+1. アプリケーションサーバーに[&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてログインするか、切り替えます。
 1. アプリケーションのルートディレクトリに移動します。
 1. 次のコマンドを入力します。
 

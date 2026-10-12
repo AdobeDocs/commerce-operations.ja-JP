@@ -26,7 +26,7 @@ ht-degree: 0%
 ---
 # オンプレミスのインストールのセキュリティ
 
-[ セキュリティ強化Linux （SELinux） ](https://selinuxproject.org/page/Main_Page)を使用すると、CentOSおよびUbuntu管理者は、サーバーに対するアクセス制御を強化できます。 SELinux *および*&#x200B;を使用している場合、Apacheは別のホストへの接続を開始する必要があります。この節で説明するコマンドを実行する必要があります。
+[&#x200B; セキュリティ強化Linux （SELinux） &#x200B;](https://selinuxproject.org/page/Main_Page)を使用すると、CentOSおよびUbuntu管理者は、サーバーに対するアクセス制御を強化できます。 SELinux *および*&#x200B;を使用している場合、Apacheは別のホストへの接続を開始する必要があります。この節で説明するコマンドを実行する必要があります。
 
 >[!NOTE]
 >
@@ -81,5 +81,5 @@ SELinuxが有効になっている別のホストへの接続をApacheが開始�
 
 セキュリティ要件に応じて、ファイアウォールのポート 80やその他のポートを開く必要がある場合があります。 ネットワークセキュリティは機密性が高いため、Adobeでは、先に進む前にIT部門に相談することを強くお勧めします。 推奨される参照を次に示します。
 
-* Ubuntu: [Ubuntu ドキュメントページ ](https://help.ubuntu.com/community/IptablesHowTo)
+* Ubuntu: [Ubuntu ドキュメントページ &#x200B;](https://help.ubuntu.com/community/IptablesHowTo)
 * CentOS: [CentOS ハウツー](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)。

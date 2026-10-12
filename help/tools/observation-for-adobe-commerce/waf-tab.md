@@ -42,19 +42,19 @@ ht-degree: 0%
 
 ## [!DNL WAF Top 10 countries for blocked requests]
 
-![ ブロックされたリクエストのWAF上位10か国](../../assets/tools/observation-for-adobe-commerce/waf-3.jpg)
+![&#x200B; ブロックされたリクエストのWAF上位10か国](../../assets/tools/observation-for-adobe-commerce/waf-3.jpg)
 
 **[!DNL WAF Top 10 countries for blocked requests]** フレームには、[!DNL firewall]によるブロック済みリクエストの上位10以内の国に対するブロック済みリクエストの数が表示されます。
 
 ## [!DNL WAF Top 10 logged IP Addresses]
 
-![WAFのログに記録された上位10個のIP アドレス ](../../assets/tools/observation-for-adobe-commerce/waf-4.jpg)
+![WAFのログに記録された上位10個のIP アドレス &#x200B;](../../assets/tools/observation-for-adobe-commerce/waf-4.jpg)
 
 **[!DNL WAF Top 10 logged IP Addresses]** フレームには、[!DNL firewall]によって記録された上位10個のIP アドレスにIP アドレスが表示されます。
 
 ## [!DNL Top 10 WAF Rules Executed and Logged by IP address]
 
-![IP アドレスによって実行および記録された上位10個のWAF ルール ](../../assets/tools/observation-for-adobe-commerce/waf-5.jpg)
+![IP アドレスによって実行および記録された上位10個のWAF ルール &#x200B;](../../assets/tools/observation-for-adobe-commerce/waf-5.jpg)
 
 **[!DNL Top 10 WAF Rules Executed and Logged by IP address]** フレームには、上位10件のIP アドレスが表示されます。最も頻繁に一致するのは[!DNL firewall] ルールです。
 

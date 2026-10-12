@@ -46,7 +46,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->本番環境でVarnishを使用することを&#x200B;_強くお勧めします_。 組み込みのフルページキャッシュ（ファイルシステムまたは[ データベース ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching)のいずれか）は、Varnishよりもはるかに低速で、VarnishはHTTP トラフィックを高速化するように設計されています。
+>本番環境でVarnishを使用することを&#x200B;_強くお勧めします_。 組み込みのフルページキャッシュ（ファイルシステムまたは[&#x200B; データベース &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching)のいずれか）は、Varnishよりもはるかに低速で、VarnishはHTTP トラフィックを高速化するように設計されています。
 
 Varnishについて詳しくは、次を参照してください。
 
@@ -139,7 +139,7 @@ Varnishには次の問題があります。
 
 次の図は、ブラウザーインスペクターを使用した例を示しています。
 
-![ キャッシュ可能なオブジェクトに対して初めてリクエストが行われた場合、Varnishはそれをブラウザーに配信します](../../assets/configuration/varnish-webserver-first-visit.png)
+![&#x200B; キャッシュ可能なオブジェクトに対して初めてリクエストが行われた場合、Varnishはそれをブラウザーに配信します](../../assets/configuration/varnish-webserver-first-visit.png)
 
 前述の例は、ストアフロントのメインページ （`m2_ce_my`）に対するリクエストを示しています。 CSSおよびJavaScript アセットは、クライアントブラウザーにキャッシュされます。
 

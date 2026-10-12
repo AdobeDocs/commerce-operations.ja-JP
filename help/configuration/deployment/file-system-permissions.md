@@ -26,9 +26,9 @@ ht-degree: 0%
 ---
 # ファイルシステムアクセス権限
 
-この節では、開発用および実稼動用のCommerce ファイルシステムのオーナーを設定する方法について説明します。 続行する前に、[ ファイルシステムの所有権と権限の概要](../../installation/prerequisites/file-system/overview.md)で説明されている概念を確認してください。
+この節では、開発用および実稼動用のCommerce ファイルシステムのオーナーを設定する方法について説明します。 続行する前に、[&#x200B; ファイルシステムの所有権と権限の概要](../../installation/prerequisites/file-system/overview.md)で説明されている概念を確認してください。
 
-このトピックでは、Commerceの開発および運用システムに焦点を当てます。 Commerceをインストールする場合は、[ インストール前の所有権と権限の設定](../../installation/prerequisites/file-system/configure-permissions.md)を参照してください。
+このトピックでは、Commerceの開発および運用システムに焦点を当てます。 Commerceをインストールする場合は、[&#x200B; インストール前の所有権と権限の設定](../../installation/prerequisites/file-system/configure-permissions.md)を参照してください。
 
 以下の節では、1人または2人のファイルシステム所有者の要件について説明します。 つまり次の式になります。
 
@@ -118,7 +118,7 @@ Web サーバーユーザーのグループからファイルとディレクト�
 
 ### オプションで`magento_umask`を設定します
 
-_インストールガイド_&#x200B;の「[ オプションでumask](../../installation/next-steps/set-umask.md)を設定する」を参照してください。
+_インストールガイド_&#x200B;の「[&#x200B; オプションでumask](../../installation/next-steps/set-umask.md)を設定する」を参照してください。
 
 ## プライベートホスティングの実稼動ファイルシステムの所有権（2人のユーザー）
 
@@ -136,7 +136,7 @@ _インストールガイド_&#x200B;の「[ オプションでumask](../../inst
   >
   >コマンドラインユーザーは&#x200B;_ファイルシステム所有者_&#x200B;とも呼ばれます。
 
-これらのユーザーは同じファイルにアクセスする必要があるため、両方が属する[共有グループ ](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group)を作成することをお勧めします。 次の手順では、既にこの操作を行っていることを前提としています。
+これらのユーザーは同じファイルにアクセスする必要があるため、両方が属する[共有グループ &#x200B;](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group)を作成することをお勧めします。 次の手順では、既にこの操作を行っていることを前提としています。
 
 次のいずれかのセクションを参照してください。
 

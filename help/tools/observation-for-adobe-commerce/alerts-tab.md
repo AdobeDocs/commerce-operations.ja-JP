@@ -30,24 +30,24 @@ ht-degree: 0%
 
 ## [!UICONTROL Open Alert Details]
 
-![ クリティカルアラートを開く](../../assets/tools/observation-for-adobe-commerce/alerts-tab-1.jpg)
+![&#x200B; クリティカルアラートを開く](../../assets/tools/observation-for-adobe-commerce/alerts-tab-1.jpg)
 
 **[!UICONTROL Open Alert Details]** フレームには、選択した時間枠で開いているクリティカルアラートの数が表示されます。 このアラートには、Adobeで作成されたアラートと、パートナーまたはマーチャントが作成したアラートが含まれます。
 
 ## [!UICONTROL Closed Critical Alerts]
 
-![ クリティカルアラートを閉じました](../../assets/tools/observation-for-adobe-commerce/alerts-tab-2.jpg)
+![&#x200B; クリティカルアラートを閉じました](../../assets/tools/observation-for-adobe-commerce/alerts-tab-2.jpg)
 
 **[!UICONTROL Closed Critical Alerts]** フレームには、選択した時間枠のクローズ済みクリティカルアラートの数が表示されます。 このアラートには、Adobeで作成されたアラートと、パートナーまたはマーチャントが作成したアラートが含まれます。
 
 ## [!UICONTROL Critical Alert Details]
 
-![ クリティカルアラートの詳細](../../assets/tools/observation-for-adobe-commerce/alerts-tab-3.jpg)
+![&#x200B; クリティカルアラートの詳細](../../assets/tools/observation-for-adobe-commerce/alerts-tab-3.jpg)
 
 **[!UICONTROL Critical Alert Details]** フレームには、タイムスタンプ、条件名、およびアラートイベントが開いているか閉じているかなど、選択した時間枠のクリティカルアラートの詳細のカウントが表示されます。
 
 ## [!UICONTROL Infrastructure Alert Details]
 
-![ インフラストラクチャのアラートの詳細](../../assets/tools/observation-for-adobe-commerce/alerts-tab-4.jpg)
+![&#x200B; インフラストラクチャのアラートの詳細](../../assets/tools/observation-for-adobe-commerce/alerts-tab-4.jpg)
 
 **[!UICONTROL Infrastructure Alert Details]** フレームには、選択した期間のアプリケーション、ホスト、およびその他のインフラストラクチャ イベントが表示されます。

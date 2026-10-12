@@ -31,7 +31,7 @@ Commerce データベースプロファイラーは、各クエリの時間と�
 
 ## 手順1：デプロイメント設定の変更
 
-`<magento_root>/app/etc/env.php`を変更して、[ データベースプロファイラークラス ](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php)に次の参照を追加します。
+`<magento_root>/app/etc/env.php`を変更して、[&#x200B; データベースプロファイラークラス &#x200B;](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php)に次の参照を追加します。
 
 ```php?start_inline=1
         'profiler' => [
@@ -105,4 +105,4 @@ echo "</table>";
 
 ストアフロントまたは管理画面の任意のページに移動して、結果を表示します。 サンプルは次のとおりです。
 
-![ データベースプロファイラーの結果の例](../../assets/configuration/db-profiler-results.png)
+![&#x200B; データベースプロファイラーの結果の例](../../assets/configuration/db-profiler-results.png)

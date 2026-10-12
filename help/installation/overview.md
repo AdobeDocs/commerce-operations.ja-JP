@@ -29,7 +29,7 @@ Adobe Commerce オンプレミス ソフトウェアは、約30 ～ 60分でイ�
 >
 >正常に処理するには、中級の技術的な知識とサーバーアクセスが必要です。
 
-インストールすると、[お客様向けのストアフロント ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront)と[管理パネル ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin)の両方を備えた機能的なAdobe Commerce ストアが作成されます。 プロセスを開始する前に、データベースの資格情報、ドメイン情報、認証キーを準備しておく必要があります。
+インストールすると、[お客様向けのストアフロント &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront)と[管理パネル &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin)の両方を備えた機能的なAdobe Commerce ストアが作成されます。 プロセスを開始する前に、データベースの資格情報、ドメイン情報、認証キーを準備しておく必要があります。
 
 ## 加盟店の責任
 
@@ -52,7 +52,7 @@ Adobe Commerceをオンプレミスで利用すれば、サーバー、ホステ
 
 次の図は、オンプレミス環境用のAdobe Commerceのインストールに関する主な手順を示しています。
 
-![ インストールの仕組み](../assets/installation/on-premises-install.png)
+![&#x200B; インストールの仕組み](../assets/installation/on-premises-install.png)
 
 ### サーバー環境の設定
 
@@ -66,11 +66,11 @@ Commerce Marketplaceから新しい[認証キー](prerequisites/authentication-k
 
 [Composer](prerequisites/commerce.md) （推奨）を使用してダウンロードするか、開発用コントリビューション用にGitHubからクローンします。
 
-Magento Open Source コードベースにコントリビューションする場合やアプリケーションをカスタマイズする場合は、GitHub リポジトリを[ クローン ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)します。 この方法を使用するには、GitHubとComposerの両方に精通している必要があります。
+Magento Open Source コードベースにコントリビューションする場合やアプリケーションをカスタマイズする場合は、GitHub リポジトリを[&#x200B; クローン &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)します。 この方法を使用するには、GitHubとComposerの両方に精通している必要があります。
 
 ### アプリケーションのインストール
 
-特定の設定でインストールコマンドを実行します。 完全な例については、[ クイックスタート ](composer.md)を参照してください。
+特定の設定でインストールコマンドを実行します。 完全な例については、[&#x200B; クイックスタート &#x200B;](composer.md)を参照してください。
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ Magento Open Source コードベースにコントリビューションする場
 
 ### インストールの確認
 
-ストアフロントと管理パネルを[ テスト ](next-steps/verify.md)して、すべてが正しく動作することを確認します。
+ストアフロントと管理パネルを[&#x200B; テスト &#x200B;](next-steps/verify.md)して、すべてが正しく動作することを確認します。
 
 ## 一般的なインストールの問題
 

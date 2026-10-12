@@ -44,7 +44,7 @@ ht-degree: 1%
 
 ![新機能](../../assets/new.svg)
 ![修正](../../assets/fix.svg)修正と機能強化
-![ バグ ](../../assets/bug.svg)既知の問題
+![&#x200B; バグ &#x200B;](../../assets/bug.svg)既知の問題
 
 ## バージョン 1.0.2 - 2026年8月 {#version-1-0-2}
 

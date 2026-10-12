@@ -35,16 +35,16 @@ OpenSearchは、Elasticsearchのライセンス変更後に作成されたElasti
 
 ## 移行パス
 
-OpenSearchに移行する手順は簡単で、主にElasticsearch設定の手順に従います。 これらの手順では、Adobe Commerceが検索エンジンを使用する唯一のアプリケーションであることを前提としています。 複数のアプリケーションが検索エンジンを使用する場合は、公式の移行ガイド [ オープンソース ElasticsearchからOpenSearchへの移行](https://opensearch.org/blog/moving-from-opensource-elasticsearch-to-opensearch/)に従ってください。
+OpenSearchに移行する手順は簡単で、主にElasticsearch設定の手順に従います。 これらの手順では、Adobe Commerceが検索エンジンを使用する唯一のアプリケーションであることを前提としています。 複数のアプリケーションが検索エンジンを使用する場合は、公式の移行ガイド [&#x200B; オープンソース ElasticsearchからOpenSearchへの移行](https://opensearch.org/blog/moving-from-opensource-elasticsearch-to-opensearch/)に従ってください。
 
 1. インストールが[検索エンジンの前提条件](../../installation/prerequisites/search-engine/overview.md)を満たしていることを確認してください。
 
-1. サイトを[ メンテナンスモード ](../../installation/tutorials/maintenance-mode.md)に配置します。
+1. サイトを[&#x200B; メンテナンスモード &#x200B;](../../installation/tutorials/maintenance-mode.md)に配置します。
 
 1. 必要に応じて、Elasticsearchをアンインストールします。
 
 1. [OpenSearch](https://opensearch.org/docs/latest/opensearch/install/important-settings/)をインストールします。
 
-1. [検索エンジン ](../../configuration/search/configure-search-engine.md)を設定し、キャッシュのフラッシュやカタログ検索インデックスのインデックス再作成などの関連タスクを実行します。
+1. [検索エンジン &#x200B;](../../configuration/search/configure-search-engine.md)を設定し、キャッシュのフラッシュやカタログ検索インデックスのインデックス再作成などの関連タスクを実行します。
 
 これ以上の設定値の変更は必要ありません。

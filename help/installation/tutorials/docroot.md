@@ -74,7 +74,7 @@ server {
 
 >[!NOTE]
 >
->詳しくは、[前提条件](../prerequisites/overview.md)および[ インストールガイド ](../overview.md)を参照してください。
+>詳しくは、[前提条件](../prerequisites/overview.md)および[&#x200B; インストールガイド &#x200B;](../overview.md)を参照してください。
 
 ## &#x200B;1. サーバー設定の編集
 
@@ -146,11 +146,11 @@ server {
 ]
 ```
 
-詳しくは、[env.php リファレンス ](../../configuration/reference/config-reference-envphp.md)を参照してください。
+詳しくは、[env.php リファレンス &#x200B;](../../configuration/reference/config-reference-envphp.md)を参照してください。
 
 ## &#x200B;4. モードを切り替え
 
-`production`と`developer`を含む[ アプリケーションモード ](../../configuration/bootstrap/application-modes.md)は、セキュリティを向上させ、開発を容易にするために設計されています。 名前が示すように、アプリケーションを拡張またはカスタマイズする場合は`developer` モードに切り替え、ライブ環境で実行する場合は`production` モードに切り替える必要があります。
+`production`と`developer`を含む[&#x200B; アプリケーションモード &#x200B;](../../configuration/bootstrap/application-modes.md)は、セキュリティを向上させ、開発を容易にするために設計されています。 名前が示すように、アプリケーションを拡張またはカスタマイズする場合は`developer` モードに切り替え、ライブ環境で実行する場合は`production` モードに切り替える必要があります。
 
 モードの切り替えは、サーバー設定が正しく動作していることを確認する際に重要な手順です。 CLI ツールを使用してモードを切り替えることができます。
 
@@ -186,12 +186,12 @@ web ブラウザーのストアフロントに移動し、すべてが機能し�
 
    次の図は、ストアフロントページの例を示しています。 次のように表示される場合、インストールは成功しました。
 
-   ![ インストールが成功したことを確認するストアフロント ](../../assets/installation/install-success_store.png)
+   ![&#x200B; インストールが成功したことを確認するストアフロント &#x200B;](../../assets/installation/install-success_store.png)
 
-   ページに404 （見つかりません）が表示されたり、画像、CSS、JSなどの他のアセットが読み込まれない場合は、[ トラブルシューティングの節](https://support.magento.com/hc/en-us/articles/360032994352)を参照してください。
+   ページに404 （見つかりません）が表示されたり、画像、CSS、JSなどの他のアセットが読み込まれない場合は、[&#x200B; トラブルシューティングの節](https://support.magento.com/hc/en-us/articles/360032994352)を参照してください。
 
 1. ブラウザーからアプリケーションディレクトリにアクセスしてみてください。 アドレスバーのサーバーのホスト名またはIP アドレスにディレクトリ名を追加します。
 
    404または「アクセス拒否」メッセージが表示された場合は、ファイルシステムへのアクセスが正常に制限されています。
 
-   ![ アクセスが拒否されました](../../assets/installation/access-denied.png)
+   ![&#x200B; アクセスが拒否されました](../../assets/installation/access-denied.png)

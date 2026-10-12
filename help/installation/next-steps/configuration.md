@@ -41,11 +41,11 @@ crontabを削除してコマンドラインからcronを実行する方法など
 インストール後は、以下をお勧めします。
 
 * ファイルの所有権と権限が[適切に設定されていることを確認してください](../prerequisites/file-system/configure-permissions.md)
-* [ デフォルトの管理者URI](../tutorials/admin-uri.md)を`admin`から別の場所に変更することを強くお勧めします
+* [&#x200B; デフォルトの管理者URI](../tutorials/admin-uri.md)を`admin`から別の場所に変更することを強くお勧めします
 * [`X-Frame-Option` HTTP ヘッダー](../../configuration/security/xframe-options.md)が正しく設定されていることを確認してください。
-* [ テンプレートを保護する](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)することによって、クロスサイトスクリプティング（XSS）に対する予防策を講じる
+* [&#x200B; テンプレートを保護する](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)することによって、クロスサイトスクリプティング（XSS）に対する予防策を講じる
 
-GitHub リポジトリ ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)を[複製してインストールした場合は、アプリケーションをデプロイするときに、実稼動環境に必要なファイルとフォルダーのみを含めるようにしてください。 不要なファイルやフォルダーは、セキュリティリスクを引き起こす可能性があります。
+GitHub リポジトリ [&#128279;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)を複製してインストールした場合は、アプリケーションをデプロイするときに、実稼動環境に必要なファイルとフォルダーのみを含めるようにしてください。 不要なファイルやフォルダーは、セキュリティリスクを引き起こす可能性があります。
 
 ## Apache サーバーの書き換えを有効にする
 
@@ -87,7 +87,7 @@ UNIX `logrotate` ユーティリティを使用すると、大量のログ フ�
 
 詳細：
 
-* Ubuntu: [Ubuntu ドキュメント ページ ](https://help.ubuntu.com/community/IptablesHowTo)。
+* Ubuntu: [Ubuntu ドキュメント ページ &#x200B;](https://help.ubuntu.com/community/IptablesHowTo)。
 * CentOS: [CentOS ハウツー](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)。
 
 ### セキュリティ強化Linux （SELinux）ルール
@@ -96,15 +96,15 @@ SELinuxを使用するかどうかに関する推奨事項はありませんが�
 
 詳細：
 
-* Ubuntu: [Debian ハンドブック ](https://debian-handbook.info/browse/stable/sect.selinux.html)
+* Ubuntu: [Debian ハンドブック &#x200B;](https://debian-handbook.info/browse/stable/sect.selinux.html)
 * CentOS: [CentOS wiki](https://wiki.centos.org/HowTos/SELinux)
 
 ### 電子メールサーバーの設定
 
 Adobe Commerceには電子メールサーバーが必要です。 特定のサーバーはお勧めしませんが、次のいずれかを試すことができます。
 
-* CentOSのポストフィックス （[Digital Ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6)、[CentOS ドキュメント ](https://www.centos.org)）
-* UbuntuのPostfix （[Digital Ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04)、[Ubuntu ドキュメント ](https://help.ubuntu.com/community/MailServer)）
+* CentOSのポストフィックス （[Digital Ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6)、[CentOS ドキュメント &#x200B;](https://www.centos.org)）
+* UbuntuのPostfix （[Digital Ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04)、[Ubuntu ドキュメント &#x200B;](https://help.ubuntu.com/community/MailServer)）
 
 ### 検索エンジンを調整してパフォーマンスを向上させます。
 

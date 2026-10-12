@@ -27,15 +27,15 @@ JavaScriptのモジュールをバンドルしてパフォーマンスを向上�
 
 モジュラーアプリケーションでは、サーバーリクエストの数は数百に達することができます。 例えば、次のスクリーンショットは、クリーンインストールのホームページに読み込まれたJavaScript モジュールのリストの開始のみを示しています。
 
-![ バンドルなし](../assets/performance/images/noBundling.png)
+![&#x200B; バンドルなし](../assets/performance/images/noBundling.png)
 
 ## 結合とバンドル
 
 Commerceでは、サーバーリクエストの数を減らすためにバンドルをサポートしています。 バンドルはデフォルトでオフになっています。 この機能は、**[!UICONTROL Stores]** > **設定** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]**&#x200B;で有効にするか、コマンドラインから有効にできます。
 
-サードパーティ製ツール、HTTP/2、非推奨のJSおよびCSS結合に関するガイダンスについては、*設定のベストプラクティス*&#x200B;の[ バンドルヒント ](configuration.md#bundling-tips)を参照してください。
+サードパーティ製ツール、HTTP/2、非推奨のJSおよびCSS結合に関するガイダンスについては、*設定のベストプラクティス*&#x200B;の[&#x200B; バンドルヒント &#x200B;](configuration.md#bundling-tips)を参照してください。
 
-![ バンドル ](../assets/performance/images/bundlingImage.png)
+![&#x200B; バンドル &#x200B;](../assets/performance/images/bundlingImage.png)
 
 ### 基本バンドル
 
@@ -47,7 +47,7 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 
 これは、システムに存在するすべてのアセットを組み合わせて、同じサイズのバンドル（bundle_0.js、bundle_1.js ... bundle_x.js）に配布するネイティブのCommerce メカニズムです。
 
-![Commerce バンドル ](../assets/performance/images/magentoBundling.png)
+![Commerce バンドル &#x200B;](../assets/performance/images/magentoBundling.png)
 
 より良い、しかし、ブラウザは依然として必要なものだけでなく、すべてのJavaScriptバンドルを読み込みます。
 
@@ -76,7 +76,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 実際のストアフロントのデプロイメントをテストおよび準備するには、Chromeの「Slow 3G」のネイティブスロットリングプロファイルを使用してテストすることをお勧めします。 遅い3Gでは、以前のバンドルされた出力時間は、多くのユーザーの接続の現実を反映するようになりました。
 
-![実世界バンドル ](../assets/performance/images/magentoBundlingRealWorld.png)
+![実世界バンドル &#x200B;](../assets/performance/images/magentoBundlingRealWorld.png)
 
 遅い3G接続では、クリーンなCommerceインストールのホームページのすべてのバンドルを読み込むのに約44秒かかります。
 
@@ -90,7 +90,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 JavaScript バンドルの目標は、ブラウザーに読み込まれるページごとに、リクエストされたアセットの数とサイズを減らすことです。 それには、ストアの各ページがアクセスした各ページに共通のバンドルとページ固有のバンドルのみをダウンロードする必要があるように、バンドルを構築します。
 
-これを実現する方法のひとつは、ページタイプごとにバンドルを定義することです。 Commerceのページは、カテゴリー、商品、CMS、お客様、カート、チェックアウトなど、いくつかの種類のページに分類できます。 これらのページタイプのいずれかに分類された各ページには、異なるモジュール依存関係のセットが設定されています。 [!DNL RequireJS][!DNL RequireJS] モジュールをページタイプ別にバンドルすると、ストア内の任意のページの依存関係をカバーする少数のバンドルのみが作成されます。
+これを実現する方法のひとつは、ページタイプごとにバンドルを定義することです。 Commerceのページは、カテゴリー、商品、CMS、お客様、カート、チェックアウトなど、いくつかの種類のページに分類できます。 これらのページタイプのいずれかに分類された各ページには、異なるモジュール依存関係のセットが設定されています。 [!DNL RequireJS]&#x200B;[!DNL RequireJS] モジュールをページタイプ別にバンドルすると、ストア内の任意のページの依存関係をカバーする少数のバンドルのみが作成されます。
 
 例えば、すべてのページに共通する依存関係のバンドル、CMS専用ページのバンドル、カタログ専用ページのバンドル、検索専用ページのバンドル、チェックアウトページのバンドルが作成されます。
 

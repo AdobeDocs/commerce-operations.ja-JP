@@ -29,7 +29,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->例えば、このトピックでは、web サイトのコード `french`を含むフランスのweb サイトのみを使用します。 ステップバイステップチュートリアルについては、[ チュートリアル：Apacheを使用して複数のweb サイトを設定](ms-apache.md)および[ チュートリアル：nginx](ms-nginx.md)を使用して複数のweb サイトを設定する
+>例えば、このトピックでは、web サイトのコード `french`を含むフランスのweb サイトのみを使用します。 ステップバイステップチュートリアルについては、[&#x200B; チュートリアル：Apacheを使用して複数のweb サイトを設定](ms-apache.md)および[&#x200B; チュートリアル：nginx](ms-nginx.md)を使用して複数のweb サイトを設定する
 
 ## 手順1：ルートカテゴリの作成
 
@@ -43,11 +43,11 @@ ht-degree: 0%
 1. 「**カテゴリ名**」フィールドに、このカテゴリを識別するための一意の名前を入力します。
 1. 「カテゴリを有効にする」が&#x200B;**はい**&#x200B;に設定されていることを確認します。
 
-   このページのその他のオプションについて詳しくは、[ ルートカテゴリ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root)を参照してください。
+   このページのその他のオプションについて詳しくは、[&#x200B; ルートカテゴリ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root)を参照してください。
 
    次の図は、例を示しています。
 
-   ![ ルートカテゴリを作成して有効にする](../../assets/configuration/add-root-category.png)
+   ![&#x200B; ルートカテゴリを作成して有効にする](../../assets/configuration/add-root-category.png)
 
 1. **保存**&#x200B;をクリックします。
 1. これらのタスクを必要な回数だけ繰り返して、ストアのルートカテゴリを作成します。
@@ -85,7 +85,7 @@ Web サイトを作成するには：
 
    次の図は、例を示しています。
 
-   ![ ストアを追加](../../assets/configuration/multi-site-store.png)
+   ![&#x200B; ストアを追加](../../assets/configuration/multi-site-store.png)
 
 1. 「**ストアを保存**」をクリックします。
 1. これらのタスクを必要な回数だけ繰り返して、ストアを作成します。
@@ -104,7 +104,7 @@ Web サイトを作成するには：
 
    次の図は、例を示しています。
 
-   ![ ストアを追加](../../assets/configuration/multi-site-storeview.png)
+   ![&#x200B; ストアを追加](../../assets/configuration/multi-site-storeview.png)
 
 1. 「**ストアビューを保存**」をクリックします。
 1. これらのタスクを必要な回数だけ繰り返して、ストアビューを作成します。
@@ -140,7 +140,7 @@ Commerceでは、ストアコードをサイトベース URLに追加するオ�
 
 これにより、`index.php`と`.htaccess`が今後のアップグレードでCommerce コードベースと同期しなくなります。
 
-[Commerce ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)を参照してください。
+[Commerce ユーザーガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)を参照してください。
 
 ストアコードをベース URLに追加するには：
 
@@ -153,7 +153,7 @@ Commerceでは、ストアコードをサイトベース URLに追加するオ�
 1. 「_ストア コードをUrl_&#x200B;に追加」の横にある「**システム値を使用**」チェックボックスをオフにします。
 1. _ストア コードをUrl_&#x200B;に追加リストから、**はい**&#x200B;をクリックします。
 
-   ![ ストアベース URL](../../assets/configuration/multi-site-add-store-url.png)にストアコードを追加します
+   ![&#x200B; ストアベース URL](../../assets/configuration/multi-site-add-store-url.png)にストアコードを追加します
 
 1. 「**設定を保存**」をクリックします。
 1. プロンプトが表示されたら、キャッシュをフラッシュします。 （**システム** > **キャッシュ管理**）。

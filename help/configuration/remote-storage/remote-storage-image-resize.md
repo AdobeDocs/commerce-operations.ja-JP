@@ -30,11 +30,11 @@ ht-degree: 0%
 
 次の図は、Nginxがキャッシュ内の画像を取得、サイズ変更、および保存する方法を示しています。 サイズ変更は、高さや幅など、URLに含まれるパラメーターによって決まります。
 
-![ リモートストレージのNginx設定による画像サイズ変更サーバーブロック設定の表示](../../assets/configuration/remote-storage-nginx-image-resize.png)
+![&#x200B; リモートストレージのNginx設定による画像サイズ変更サーバーブロック設定の表示](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 >[!TIP]
 >
->クラウドインフラストラクチャプロジェクト上のAdobe Commerceについては、[ クラウドインフラストラクチャ上のCommerceのリモートストレージの設定](cloud-support.md)を参照してください
+>クラウドインフラストラクチャプロジェクト上のAdobe Commerceについては、[&#x200B; クラウドインフラストラクチャ上のCommerceのリモートストレージの設定](cloud-support.md)を参照してください
 
 ## Adobe CommerceでのURL フォーマットの設定
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 **Nginxによる画像サイズの変更を有効にするには**:
 
-1. [Nginx画像フィルターモジュール ](https://nginx.org/en/docs/http/ngx_http_image_filter_module.html)をインストールします。
+1. [Nginx画像フィルターモジュール &#x200B;](https://nginx.org/en/docs/http/ngx_http_image_filter_module.html)をインストールします。
 
    ```shell
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;

@@ -30,13 +30,13 @@ ht-degree: 0%
 
 ## [!UICONTROL HIT rate]
 
-![ ヒット率](../../assets/tools/observation-for-adobe-commerce/cdn-tab-1.png)
+![&#x200B; ヒット率](../../assets/tools/observation-for-adobe-commerce/cdn-tab-1.png)
 
 **[!UICONTROL HIT rate]** フレームには、最後の1分間に[!UICONTROL HITS]に至ったキャッシュ可能なリクエストの数が表示されます。 これは、キャッシュが成功したことを示します。 右側の矢印は、1週間前の同じ時間に上下の割合を示します。
 
 ## [!UICONTROL HIT Processing]
 
-![ ヒット処理](../../assets/tools/observation-for-adobe-commerce/cdn-tab-2.png)
+![&#x200B; ヒット処理](../../assets/tools/observation-for-adobe-commerce/cdn-tab-2.png)
 
 この&#x200B;**[!UICONTROL HIT processing]** ボックスには、1週間に[!UICONTROL HITS]が発生したキャッシュ可能なリクエストの数が表示されます。
 
@@ -52,41 +52,41 @@ ht-degree: 0%
 
 ## [!UICONTROL HIT Ratio]
 
-![ ヒット率](../../assets/tools/observation-for-adobe-commerce/cdn-tab-5.png)
+![&#x200B; ヒット率](../../assets/tools/observation-for-adobe-commerce/cdn-tab-5.png)
 
 ## [!UICONTROL Error Percentage]
 
-![ エラー率](../../assets/tools/observation-for-adobe-commerce/cdn-tab-6.png)
+![&#x200B; エラー率](../../assets/tools/observation-for-adobe-commerce/cdn-tab-6.png)
 
 **[!UICONTROL Error Percentage]** ボックスには、リクエストのERROR パーセンテージの値が表示され、1週間前の同じ時間と比較した相対的な増減が表示されます。
 
 ## [!UICONTROL Total Requests]
 
-![ リクエストの合計数](../../assets/tools/observation-for-adobe-commerce/cdn-tab-7.png)
+![&#x200B; リクエストの合計数](../../assets/tools/observation-for-adobe-commerce/cdn-tab-7.png)
 
 ## [!UICONTROL ERROR rate]
 
-![ エラー率](../../assets/tools/observation-for-adobe-commerce/cdn-tab-8.png)
+![&#x200B; エラー率](../../assets/tools/observation-for-adobe-commerce/cdn-tab-8.png)
 
 ## [!UICONTROL Fastly Cache Average Response for selected time period in seconds]
 
-![選択した期間のFastly キャッシュの平均応答時間（秒） ](../../assets/tools/observation-for-adobe-commerce/cdn-tab-9.png)
+![選択した期間のFastly キャッシュの平均応答時間（秒） &#x200B;](../../assets/tools/observation-for-adobe-commerce/cdn-tab-9.png)
 
 このフレームは、キャッシュ可能なリクエストの期間を秒単位で示します。つまり、`cache_response`が[!UICONTROL MISS]の場合、選択した時間のキャッシュされた応答が欠落した場合の平均が表示されます。
 
 ## [!UICONTROL Fastly Cache Average Response for selected time period in seconds, faceted by POP]
 
-![選択した期間のFastly キャッシュの平均応答時間（POPによってファセットされる秒単位） ](../../assets/tools/observation-for-adobe-commerce/cdn-tab-10.png)
+![選択した期間のFastly キャッシュの平均応答時間（POPによってファセットされる秒単位） &#x200B;](../../assets/tools/observation-for-adobe-commerce/cdn-tab-10.png)
 
-このコンテキストの&#x200B;*POP*&#x200B;は、キャッシュ ストレージのプールとして機能するように構成されたPOP （Point of Presence）を指します。 [ プレゼンスのポイント ](https://developer.fastly.com/learning/concepts/pop/)を参照してください。
+このコンテキストの&#x200B;*POP*&#x200B;は、キャッシュ ストレージのプールとして機能するように構成されたPOP （Point of Presence）を指します。 [&#x200B; プレゼンスのポイント &#x200B;](https://developer.fastly.com/learning/concepts/pop/)を参照してください。
 
 ## [!UICONTROL Total Bandwidth (All POPs) during the selected timeframe, compared with 1 week ago (% increase/decrease)]
 
-選択した時間枠内の![合計帯域幅（すべてのPOP）、1週間前と比較（%増加/減少） ](../../assets/tools/observation-for-adobe-commerce/cdn-tab-11.png)
+選択した時間枠内の![合計帯域幅（すべてのPOP）、1週間前と比較（%増加/減少） &#x200B;](../../assets/tools/observation-for-adobe-commerce/cdn-tab-11.png)
 
 ## [!UICONTROL Requests – Since selected timeframe compared with one week ago]
 
-![ リクエスト – 選択した時間枠から1週間前と比較](../../assets/tools/observation-for-adobe-commerce/cdn-tab-12.png)
+![&#x200B; リクエスト – 選択した時間枠から1週間前と比較](../../assets/tools/observation-for-adobe-commerce/cdn-tab-12.png)
 
 このフレームは、上部の[!UICONTROL Total Requests]の概要ボックスと似ていますが、前週のリクエスト数が表示されます。 これらは、キャッシュ可能なリクエストだけでなく、すべてのリクエストです（`is_cacheable`がtrueの場合）。
 
@@ -100,13 +100,13 @@ ht-degree: 0%
 
 ## [!UICONTROL Top 5 URLs (5xx or 3xx status codes)]
 
-![上位5つのURL （5xxまたは3xx ステータスコード） ](../../assets/tools/observation-for-adobe-commerce/cdn-tab-15.gif)
+![上位5つのURL （5xxまたは3xx ステータスコード） &#x200B;](../../assets/tools/observation-for-adobe-commerce/cdn-tab-15.gif)
 
 **[!UICONTROL Top 5 URLs]** ビューには、5xxまたは3xx エラー応答が発生しているURLの上位5件が表示されます。 スペース制約のため、URLにマウスポインターを置いて、そのURLに関連付けられている特定のエラーコードを確認する必要があります。 （上の図の赤いボックスの例）。
 
 ## [!UICONTROL Top 25 URLs (200 status)]
 
-![上位25個のURL （200 ステータス） ](../../assets/tools/observation-for-adobe-commerce/cdn-tab-16.gif)
+![上位25個のURL （200 ステータス） &#x200B;](../../assets/tools/observation-for-adobe-commerce/cdn-tab-16.gif)
 
 **[!UICONTROL Top 25 URLs]** フレームには、選択した期間にカウント別に200 ステータスを返したURLが表示されます。
 
@@ -130,13 +130,13 @@ ht-degree: 0%
 
 ## [!UICONTROL Error Count by POP timeline]
 
-POP タイムライン別![ エラー数](../../assets/tools/observation-for-adobe-commerce/cdn-tab-20.png)
+POP タイムライン別![&#x200B; エラー数](../../assets/tools/observation-for-adobe-commerce/cdn-tab-20.png)
 
 **[!UICONTROL Error Count by POP timeline]** グラフには、選択した時間枠タイムラインに沿ったエラーステータスのカウントが、エラーコードによってファセットされて表示されます。
 
 ## [!UICONTROL Duration by Response status, top 25 client IP, non-200 status]
 
-![応答状態、上位25 クライアント IP、非200 ステータス ](../../assets/tools/observation-for-adobe-commerce/cdn-tab-21.gif)による期間
+![応答状態、上位25 クライアント IP、非200 ステータス &#x200B;](../../assets/tools/observation-for-adobe-commerce/cdn-tab-21.gif)による期間
 
 **[!UICONTROL Duration by Response status, top 25 client IP, non 200 status]** グラフには、選択した時間枠でステータスエラーコードが発生した場合の平均期間によるIP アドレスが表示されます。
 

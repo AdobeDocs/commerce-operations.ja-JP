@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## Magento 2 システム
 
-* Magento 2 システムを[ システム要件](../../installation/system-requirements.md)を満たすように設定します。
+* Magento 2 システムを[&#x200B; システム要件](../../installation/system-requirements.md)を満たすように設定します。
 
   既存のMagento 1 システムと少なくとも一致するトポロジとデザインを使用します。
 
@@ -37,7 +37,7 @@ Magento 2 cron ジョブを開始しないでください。
 
 ## データベース
 
-* インストール後、できるだけ早くMagento 2 データベースをバックアップまたは[ ダンプ ](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)します。 これにより、移行が成功しなかった場合は、データベースの初期ステートを復元できます。
+* インストール後、できるだけ早くMagento 2 データベースをバックアップまたは[&#x200B; ダンプ &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)します。 これにより、移行が成功しなかった場合は、データベースの初期ステートを復元できます。
 
 * [!DNL Data Migration Tool]にMagento 1およびMagento 2 データベースを接続するためのネットワーク アクセス権があるかどうかを確認します。
 
@@ -53,6 +53,6 @@ Magento 1 データベースでバイナリロギングが有効になってい�
 
 Magento 1拡張機能コードをMagento 2に移行します。
 
-最新の拡張機能バージョンを見つけるには、[!DNL [Commerce Marketplace]](https://commercemarketplace.adobe.com//)にアクセスするか、拡張機能プロバイダーにお問い合わせください。
+最新の拡張機能バージョンを見つけるには、[[!DNL [Commerce Marketplace]]](https://commercemarketplace.adobe.com//)にアクセスするか、拡張機能プロバイダーにお問い合わせください。
 
-[!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md)を使用することもできます。
+[[!DNL [Code Migration Tool]]](https://github.com/magento-commerce/code-migration/blob/develop/README.md)を使用することもできます。
