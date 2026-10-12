@@ -2,18 +2,27 @@
 title: パッチの動作
 description: Adobe Commerceの様々な種類のパッチとその仕組みについて説明します。
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 0%
-
 ---
-
 # パッチの動作
 
 >[!WARNING]
 >
->実稼動にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることを強くお勧めします。 また、パッチを適用する前にデータをバックアップすることを強くお勧めします。 [&#x200B; ファイルシステムのバックアップとロールバック &#x200B;](../../installation/tutorials/backup.md)を参照してください。
+>実稼動にデプロイする前に、ステージング環境または開発環境ですべてのパッチをテストすることを強くお勧めします。 また、パッチを適用する前にデータをバックアップすることを強くお勧めします。 [ ファイルシステムのバックアップとロールバック ](../../installation/tutorials/backup.md)を参照してください。
 
 パッチ（または差分）ファイルは、次の点に注意するテキストファイルです。
 
@@ -25,7 +34,7 @@ ht-degree: 0%
 
 パッチには3つのタイプがあります。
 
-- **ホットフィックス** - Adobeが[&#x200B; セキュリティセンター](https://magento.com/security/patches)で公開するパッチ。
+- **ホットフィックス** - Adobeが[ セキュリティセンター](https://magento.com/security/patches)で公開するパッチ。
 - **個別パッチ** - Adobe Commerce サポートが個別に作成および配布するパッチ。
 - **カスタムパッチ** - Git コミットから作成できる非公式パッチ。
 
@@ -33,7 +42,7 @@ ht-degree: 0%
 
 修正プログラムは、多くのマーチャントに影響を与える影響の大きいセキュリティまたは品質の修正プログラムを含むパッチです。 これらの修正は、該当するマイナーバージョンの次のパッチリリースに適用されます。 Adobeは、必要に応じてホットフィックスをリリースします。
 
-修正プログラムは、[&#x200B; セキュリティ センター](https://magento.com/security/patches)で見つけることができます。 パッチファイルをダウンロードするには、バージョンとインストールタイプに応じて、ページの指示に従います。 [&#x200B; コマンドライン &#x200B;](../patches/apply.md#)または[Composer](../patches/apply.md)を使用して、ホットフィックス パッチを適用します。
+修正プログラムは、[ セキュリティ センター](https://magento.com/security/patches)で見つけることができます。 パッチファイルをダウンロードするには、バージョンとインストールタイプに応じて、ページの指示に従います。 [ コマンドライン ](../patches/apply.md#)または[Composer](../patches/apply.md)を使用して、ホットフィックス パッチを適用します。
 
 >[!NOTE]
 >
@@ -43,7 +52,7 @@ ht-degree: 0%
 
 個々のパッチには、特定の問題に対する影響の小さい品質修正が含まれています。 これらの修正は、サポートされている最新のマイナーバージョン（2.4.xなど）に適用されますが、サポートされている以前のマイナーバージョン（2.3.xなど）には反映されない可能性があります。 Adobeでは、必要に応じて個別のパッチをリリースします。
 
-個別のパッチを適用するには、[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}を使用します。
+個別のパッチを適用するには、[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}を使用します。
 
 >[!NOTE]
 >
@@ -55,7 +64,7 @@ Adobeのエンジニアリングチームが、GitHubで行われたバグ修正
 
 {{custom-patches-disclaimer}}
 
-カスタムパッチを適用するには、[&#x200B; コマンドライン &#x200B;](apply.md#command-line)または[Composer](apply.md#composer)を使用します。
+カスタムパッチを適用するには、[ コマンドライン ](apply.md#command-line)または[Composer](apply.md#composer)を使用します。
 
 カスタムパッチファイルを作成する方法はたくさんあります。 次の例では、既知のGit コミットからパッチを作成することに焦点を当てています。
 
@@ -92,10 +101,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 パッチは、次のいずれかの方法を使用して適用できます。
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [コマンドライン](/help/upgrade/patches/apply.md#command-line)
 - [Composer](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->Adobe Commerce on Cloud Infrastructure プロジェクトにパッチを適用するには、_Commerce on Cloud ガイド_&#x200B;の「[&#x200B; パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」を参照してください。
+>Adobe Commerce on Cloud Infrastructure プロジェクトにパッチを適用するには、_Commerce on Cloud ガイド_&#x200B;の「[ パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」を参照してください。

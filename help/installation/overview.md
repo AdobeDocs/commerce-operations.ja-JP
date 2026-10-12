@@ -2,13 +2,22 @@
 title: オンプレミス インストールの概要
 description: Adobe Commerce のオンプレミスでのインストールプロセスについて説明します。 サーバー要件、設定手順、デプロイメントのベストプラクティスを確認します。
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 3%
-
 ---
-
 
 # オンプレミス インストールの概要
 
@@ -20,7 +29,7 @@ Adobe Commerce オンプレミス ソフトウェアは、約30 ～ 60分でイ�
 >
 >正常に処理するには、中級の技術的な知識とサーバーアクセスが必要です。
 
-インストールすると、[お客様向けのストアフロント &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/storefront/storefront)と[管理パネル &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/admin/admin)の両方を備えた機能的なAdobe Commerce ストアが作成されます。 プロセスを開始する前に、データベースの資格情報、ドメイン情報、認証キーを準備しておく必要があります。
+インストールすると、[お客様向けのストアフロント ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront)と[管理パネル ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin)の両方を備えた機能的なAdobe Commerce ストアが作成されます。 プロセスを開始する前に、データベースの資格情報、ドメイン情報、認証キーを準備しておく必要があります。
 
 ## 加盟店の責任
 
@@ -33,7 +42,7 @@ Adobe Commerceをオンプレミスで利用すれば、サーバー、ホステ
 お客様は環境を完全に制御し、より高度なカスタマイズと柔軟性を実現できますが、インフラストラクチャのパフォーマンス、セキュリティ、スケーラビリティを確保する責任があります。 例えば、次のような責任を負います。
 
 - すべてのAdobe Commerce オンプレミスシステムの設計、実装、設定、メンテナンス、トラブルシューティング、パフォーマンステスト。
-   - サーバー、オペレーティングシステム、データベース、[!DNL PHP]、検索、キャッシュ、フルページキャッシュ、コンテンツ配信ネットワーク。 一般的なテーマには、[!DNL Nginx/Apache]、[!DNL PHP]、[!DNL MySQL/MariaDB]、[!DNL Redis]、[!DNL Elasticsearch/OpenSearch]、[!DNL RabbitMQ]、[!DNL Varnish]、[!DNL DNS]、[!DNL SSL/TLS certificates]および使用されている[!DNL CDN]が含まれます（ただし、これらに限定されません）。
+  - サーバー、オペレーティングシステム、データベース、[!DNL PHP]、検索、キャッシュ、フルページキャッシュ、コンテンツ配信ネットワーク。 一般的なテーマには、[!DNL Nginx/Apache]、[!DNL PHP]、[!DNL MySQL/MariaDB]、[!DNL Redis]、[!DNL Elasticsearch/OpenSearch]、[!DNL RabbitMQ]、[!DNL Varnish]、[!DNL DNS]、[!DNL SSL/TLS certificates]および使用されている[!DNL CDN]が含まれます（ただし、これらに限定されません）。
 - キャパシティプランニング、自動スケーリング、クラスタリング、バックアップ、災害復旧
 - すべての製品および顧客データ、設計、設定および設定、アプリケーションおよびデータベースの維持管理、コードのデプロイメント、バージョンのアップグレード、パッチアプリケーション
 - APM/ログ/アラートによる監視とアラート（例：[!DNL New Relic]、[!DNL Datadog]、[!DNL ELK]）
@@ -43,7 +52,7 @@ Adobe Commerceをオンプレミスで利用すれば、サーバー、ホステ
 
 次の図は、オンプレミス環境用のAdobe Commerceのインストールに関する主な手順を示しています。
 
-![&#x200B; インストールの仕組み](../assets/installation/on-premises-install.png)
+![ インストールの仕組み](../assets/installation/on-premises-install.png)
 
 ### サーバー環境の設定
 
@@ -57,11 +66,11 @@ Commerce Marketplaceから新しい[認証キー](prerequisites/authentication-k
 
 [Composer](prerequisites/commerce.md) （推奨）を使用してダウンロードするか、開発用コントリビューション用にGitHubからクローンします。
 
-Magento Open Source コードベースにコントリビューションする場合やアプリケーションをカスタマイズする場合は、GitHub リポジトリを[&#x200B; クローン &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)します。 この方法を使用するには、GitHubとComposerの両方に精通している必要があります。
+Magento Open Source コードベースにコントリビューションする場合やアプリケーションをカスタマイズする場合は、GitHub リポジトリを[ クローン ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)します。 この方法を使用するには、GitHubとComposerの両方に精通している必要があります。
 
 ### アプリケーションのインストール
 
-特定の設定でインストールコマンドを実行します。 完全な例については、[&#x200B; クイックスタート &#x200B;](composer.md)を参照してください。
+特定の設定でインストールコマンドを実行します。 完全な例については、[ クイックスタート ](composer.md)を参照してください。
 
 >[!NOTE]
 >
@@ -69,7 +78,7 @@ Magento Open Source コードベースにコントリビューションする場
 
 ### インストールの確認
 
-ストアフロントと管理パネルを[&#x200B; テスト &#x200B;](next-steps/verify.md)して、すべてが正しく動作することを確認します。
+ストアフロントと管理パネルを[ テスト ](next-steps/verify.md)して、すべてが正しく動作することを確認します。
 
 ## 一般的なインストールの問題
 

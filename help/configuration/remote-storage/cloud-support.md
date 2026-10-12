@@ -3,20 +3,36 @@ title: クラウドインフラストラクチャ上のCommerceのリモート�
 description: クラウドインフラストラクチャ上にAdobe Commerceのリモートストレージを設定する方法に関するガイダンスを参照してください。
 feature: Configuration, Cloud, Storage
 exl-id: da352466-13f2-42e4-a589-3b0a89728467
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
-
 ---
-
 # Commerce on Cloud インフラストラクチャのリモートストレージの設定
 
 `ece-tools` パッケージ 2002.1.5以降では、環境変数を使用してリモートストレージモジュールを有効にできますが、リモートストレージモジュールでは、Adobe Commerce on cloud infrastructureで&#x200B;_制限_&#x200B;がサポートされています。 Adobeでは、サードパーティ製ストレージアダプターサービスのトラブルシューティングを完全に実行できません。
 
 ## 環境変数
 
-`REMOTE_STORAGE`変数は、クラウドインフラストラクチャプロジェクトの[&#x200B; デプロイメントフェーズ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/deploy/process)中に使用されます。
+`REMOTE_STORAGE`変数は、クラウドインフラストラクチャプロジェクトの[ デプロイメントフェーズ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process)中に使用されます。
 
 ### `REMOTE_STORAGE`
 
@@ -40,7 +56,7 @@ stage:
 
 ### Cloud CLIでの変数の設定
 
-実稼動環境、ステージング環境、統合環境間でファイルが共有されないように、`REMOTE_STORAGE`変数を[環境レベル変数](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/variable-levels)として設定します。 環境レベルで変数を設定すると、リモートストレージの統合環境の使用を除外するなど、一部の環境でリモートストレージのみを使用する柔軟性が得られます。
+実稼動環境、ステージング環境、統合環境間でファイルが共有されないように、`REMOTE_STORAGE`変数を[環境レベル変数](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/variable-levels)として設定します。 環境レベルで変数を設定すると、リモートストレージの統合環境の使用を除外するなど、一部の環境でリモートストレージのみを使用する柔軟性が得られます。
 
 **Cloud CLI**&#x200B;を使用してリモートストレージ変数を追加するには：
 
@@ -89,7 +105,7 @@ magento-cloud variable:create --level environment --name REMOTE_STORAGE --json t
 
 ### オプションの認証を使用
 
-`key`と`secret`はオプションです。 変数を作成する場合、`sensitive` オプションを選択して`key`と`secret`を非表示にできます。 この設定では、値はweb インターフェイスに表示されません。 _Commerce on Cloud Infrastructure ガイド_&#x200B;の[変数表示](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/variable-levels#visibility)を参照してください。
+`key`と`secret`はオプションです。 変数を作成する場合、`sensitive` オプションを選択して`key`と`secret`を非表示にできます。 この設定では、値はweb インターフェイスに表示されません。 _Commerce on Cloud Infrastructure ガイド_&#x200B;の[変数表示](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/variable-levels#visibility)を参照してください。
 
 別の認証方法を使用する場合は、JSON設定から`key`と`secret`を省略します。 別の認証方法を設定し、サーバーがS3 バケットに対して許可されていることを確認します。
 
@@ -111,7 +127,7 @@ bin/magento remote-storage:sync
 
 Adobe Commerce on cloud インフラストラクチャプロジェクトでリモートストレージソリューションを使用する場合は、_Fastly_ ドキュメントの[Amazon S3](https://docs.fastly.com/en/guides/amazon-s3) ガイダンスを使用して、Fastly Image OptimizationがAWS S3で動作することを確認してください。
 
-[Fastlyの資格情報](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration#get-fastly-credentials)を使用して準備してください。 Pro プロジェクトでは、SSHを使用してサーバーに接続し、`/mnt/shared/fastly_tokens.txt` ファイルからFastlyの資格情報を取得します。 ステージング環境と実稼動環境には一意の資格情報があります。 各環境の資格情報を取得する必要があります。
+[Fastlyの資格情報](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration#get-fastly-credentials)を使用して準備してください。 Pro プロジェクトでは、SSHを使用してサーバーに接続し、`/mnt/shared/fastly_tokens.txt` ファイルからFastlyの資格情報を取得します。 ステージング環境と実稼動環境には一意の資格情報があります。 各環境の資格情報を取得する必要があります。
 
 次のタスクを使用して、クラウドプロジェクトのリモートストレージの設定を続行します。
 
@@ -119,4 +135,4 @@ Adobe Commerce on cloud インフラストラクチャプロジェクトでリ�
 
 1. [AWS S3認証](https://docs.fastly.com/en/guides/amazon-s3#using-an-amazon-s3-private-bucket)のVCL ロジックを作成します。
 
-1. AWS S3 バケット [&#128279;](https://developer.fastly.com/reference/vcl/variables/backend-connection/req-backend/)に対する バックエンドリクエストのVCL ロジックを作成します。
+1. AWS S3 バケット ](https://developer.fastly.com/reference/vcl/variables/backend-connection/req-backend/)に対する[ バックエンドリクエストのVCL ロジックを作成します。

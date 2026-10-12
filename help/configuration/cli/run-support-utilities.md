@@ -2,20 +2,29 @@
 title: サポートユーティリティの実行
 description: サポートユーティリティを実行して、Adobe Commerce プロジェクトのトラブルシューティングを行う方法について説明します。 組み込みの診断ツールとサポートツールをご紹介します。
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
-
 ---
-
 # サポートユーティリティの実行
 
 {{ee-only}}
 
 {{file-system-owner}}
 
-Adobe Commerce サポートユーティリティ（[Data Collector](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/support#data-collector)とも呼ばれます）を使用すると、お客様のシステムに関するトラブルシューティング情報を収集できます。この情報は、サポートチームで使用できます。
+Adobe Commerce サポートユーティリティ（[Data Collector](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector)とも呼ばれます）を使用すると、お客様のシステムに関するトラブルシューティング情報を収集できます。この情報は、サポートチームで使用できます。
 
 Adobe Commerceでは、コードへのアクセスが必要な問題を分析するために、これらのバックアップ（_ダンプ_&#x200B;とも呼ばれます）を使用します。 一般的なシナリオは次のとおりです。
 

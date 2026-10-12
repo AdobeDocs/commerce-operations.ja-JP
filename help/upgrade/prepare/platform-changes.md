@@ -1,20 +1,29 @@
 ---
-title: プラットフォームの変更のレビュー
-description: Adobe Commerce プロジェクトをアップグレードする準備をする際に、リリースのプラットフォームの主な変更点を理解します。
+title: プラットフォームの変更の確認
+description: Adobe Commerce プロジェクトをアップグレードする準備をしながら、リリースの主要なプラットフォームの変更について説明します。
 exl-id: 08af5786-8d16-46da-90d4-5cc201288b1f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '99'
 ht-degree: 0%
-
 ---
+# アップグレード前にプラットフォームの変更を確認する
 
-# アップグレード前にプラットフォームの変更を確認してください
+テクニカルプラットフォームの変更について詳しくは、[ リリースノート ](../../release/release-notes/overview.md)および[必要システム構成](../../installation/system-requirements.md)を参照してください。
 
-技術的なプラットフォームの変更点について詳しくは、[&#x200B; リリースノート &#x200B;](../../release/release-notes/overview.md) および [&#x200B; システム要件 &#x200B;](../../installation/system-requirements.md) を参照してください。
-
-Adobe Commerceのお客様やパートナーは、[Adobe Commerce ベータ版リリース &#x200B;](../../release/beta.md) にアクセスして、一般提供（GA）前のコードに早期にアクセスすることもできます。
+Adobe Commerceのお客様およびパートナーは、[Adobe Commerce ベータ版リリース ](../../release/beta.md)にアクセスして、一般提供（GA）前にコードに早期アクセスすることもできます。
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.6 は、Beta プログラムがサポートする最後のリリースです。 2023 年 6 月以降、AdobeはAdobe Commerceの公開ベータをリリースします。 公開ベータ版リリース日のリストについては、[&#x200B; リリーススケジュール &#x200B;](../../release/schedule.md) を参照してください。
+>Adobe Commerce 2.4.6は、Beta プログラムがサポートする最後のリリースです。 2023年6月以降、AdobeはAdobe Commerceのパブリックベータ版をリリースします。 パブリックベータ版のリリース日の一覧については、[ リリーススケジュール ](../../release/schedule.md)を参照してください。

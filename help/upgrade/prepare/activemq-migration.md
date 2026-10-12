@@ -2,13 +2,27 @@
 title: RabbitMQからActiveMQへの移行
 description: Adobe Commerceのオンプレミス インストールに使用されるメッセージキューブローカーの置き換えについて説明します。
 feature: Services, Configuration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
-
 ---
-
 # ActiveMQへの移行
 
 ActiveMQ （Apache ActiveMQ Artemis）は、Adobe Commerceのメッセージキューを処理するRabbitMQの代わりに使用できる、高性能なマルチプロトコルのメッセージブローカーです。
@@ -32,7 +46,7 @@ ActiveMQへの移行は簡単なプロセスですが、ブローカーを切り
 
 ### 手順1：メンテナンスモードでのサイトの配置
 
-1. サイトを[&#x200B; メンテナンスモード &#x200B;](../../installation/tutorials/maintenance-mode.md)に配置します。
+1. サイトを[ メンテナンスモード ](../../installation/tutorials/maintenance-mode.md)に配置します。
 
    ```shell
    bin/magento maintenance:enable
@@ -55,7 +69,7 @@ ActiveMQへの移行は簡単なプロセスですが、ブローカーを切り
 1. 「**キュー**」タブに移動します
 1. すべてのキューに&#x200B;**0件のメッセージが表示されていることを確認します**
 
-   ![RabbitMQ管理ダッシュボード &#x200B;](../../assets/upgrade-guide/rabbitmq_mgmt_dashboard.png)
+   ![RabbitMQ管理ダッシュボード ](../../assets/upgrade-guide/rabbitmq_mgmt_dashboard.png)
 
 #### 方法B: rabbitmqctl コマンドラインを使用する
 
@@ -168,7 +182,7 @@ cp app/etc/env.php app/etc/env.php.backup.rabbitmq
 
 ### 手順8:Adobe CommerceでのActiveMQのインストールと設定
 
-STOMP プロトコルの設定や接続の検証など、ActiveMQのインストールおよび設定タスクを完了するには、[&#x200B; インストールおよび設定ガイド &#x200B;](../../installation/prerequisites/activemq.md)を参照してください。
+STOMP プロトコルの設定や接続の検証など、ActiveMQのインストールおよび設定タスクを完了するには、[ インストールおよび設定ガイド ](../../installation/prerequisites/activemq.md)を参照してください。
 
 ### 手順9: cron ジョブの再インストール
 

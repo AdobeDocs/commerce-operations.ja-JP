@@ -2,13 +2,22 @@
 title: Nginxで複数のweb サイトを設定する
 description: このチュートリアルに従って、Nginxで複数のweb サイトを設定します。
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 0%
-
 ---
-
 # Nginxで複数のweb サイトを設定する
 
 私たちは、次のことを想定しています。
@@ -17,7 +26,7 @@ ht-degree: 0%
 
   ホスト環境に複数のweb サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーを確認してください。
 
-  クラウドインフラストラクチャでAdobe Commerceを設定するには、追加のタスクが必要です。 このトピックで説明したタスクを完了したら、_Commerce on Cloud Infrastructure ガイド_&#x200B;の「[複数のweb サイトまたはストアを設定する](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)」を参照してください。
+  クラウドインフラストラクチャでAdobe Commerceを設定するには、追加のタスクが必要です。 このトピックで説明したタスクを完了したら、_Commerce on Cloud Infrastructure ガイド_&#x200B;の「[複数のweb サイトまたはストアを設定する](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)」を参照してください。
 
 - 1つの仮想ホストファイルで複数のドメインを受け入れるか、web サイトごとに1つの仮想ホストを使用します。仮想ホスト設定ファイルは`/etc/nginx/sites-available`にあります。
 - Commerceが提供する`nginx.conf.sample`を、このチュートリアルで説明した変更のみを使用します。
@@ -30,13 +39,13 @@ ht-degree: 0%
 
 >[!TIP]
 >
->これらの値を見つける方法については、[Web サイトの作成](ms-admin.md#step-2-create-websites)および[&#x200B; ストアビューの作成](ms-admin.md#step-4-create-store-views)を参照してください。
+>これらの値を見つける方法については、[Web サイトの作成](ms-admin.md#step-2-create-websites)および[ ストアビューの作成](ms-admin.md#step-4-create-store-views)を参照してください。
 
 以下は、nginxを使用して複数のweb サイトを設定するためのロードマップです。
 
 1. [管理画面でweb サイト、ストア、ストアビューを設定](ms-admin.md)。
-1. [Nginx バーチャルホスト &#x200B;](#step-2-create-nginx-virtual-hosts)を作成して、多数のWeb サイトまたは1つのNginx バーチャルホストをCommerce web サイトごとにマッピングします（以下の手順を参照）。
-1. Magentoが提供する`nginx.conf.sample`を使用して、[MAGE変数](ms-overview.md) `$MAGE_RUN_TYPE`および`$MAGE_RUN_CODE`の値をnginxに渡します（以下で説明する手順）。
+1. [Nginx バーチャルホスト ](#step-2-create-nginx-virtual-hosts)を作成して、多数のWeb サイトまたは1つのNginx バーチャルホストをCommerce web サイトごとにマッピングします（以下の手順を参照）。
+1. Magentoが提供する`nginx.conf.sample`を使用して、[MAGE変数](ms-overview.md) `$MAGE_RUN_TYPE`および`$MAGE_RUN_CODE`の値をnginxに渡します（以下で詳しく説明する手順）。
 
    - `$MAGE_RUN_TYPE`は`store`または`website`のいずれかです：
 
@@ -55,7 +64,7 @@ ht-degree: 0%
 
 このステップでは、ストアフロントにweb サイトを読み込む方法について説明します。 Web サイトまたはストアビューのいずれかを使用できます。ストアビューを使用する場合は、それに応じてパラメーター値を調整する必要があります。 このセクションのタスクは、`sudo`権限を持つユーザーとして完了する必要があります。
 
-1つの[nginx仮想ホストファイル &#x200B;](#step-2-create-nginx-virtual-hosts)のみを使用することで、nginx設定をシンプルかつクリーンに保つことができます。 複数の仮想ホストファイルを使用すると、各ストアをカスタマイズできます（例えば、`french.mysite.mg`のカスタム場所を使用する）。
+1つの[nginx仮想ホストファイル ](#step-2-create-nginx-virtual-hosts)のみを使用することで、nginx設定をシンプルかつクリーンに保つことができます。 複数の仮想ホストファイルを使用すると、各ストアをカスタマイズできます（例えば、`french.mysite.mg`のカスタム場所を使用する）。
 
 **1つの仮想ホストを作成するには** （簡略化）:
 
@@ -105,7 +114,7 @@ ht-degree: 0%
    ln -s /etc/nginx/sites-available/magento magento
    ```
 
-マップディレクティブについて詳しくは、マップディレクティブ [&#128279;](http://nginx.org/en/docs/http/ngx_http_map_module.html#map)のnginx ドキュメントを参照してください。
+マップディレクティブについて詳しくは、マップディレクティブ ](http://nginx.org/en/docs/http/ngx_http_map_module.html#map)の[nginx ドキュメントを参照してください。
 
 
 **複数の仮想ホストを作成するには**:
@@ -280,7 +289,7 @@ bin/magento cache:clean config full_page
 >[!INFO]
 >
 >- ホスト環境に複数のweb サイトをデプロイするには、追加のタスクが必要になる場合があります。詳しくは、ホスティングプロバイダーを確認してください。
->- クラウドインフラストラクチャ上にAdobe Commerceを設定するには、追加のタスクが必要です。_クラウドインフラストラクチャ上のCommerce ガイド_&#x200B;の[複数のクラウドウェブサイトまたはストアの設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)を参照してください。
+>- クラウドインフラストラクチャ上にAdobe Commerceを設定するには、追加のタスクが必要です。_クラウドインフラストラクチャ上のCommerce ガイド_&#x200B;の[複数のクラウドウェブサイトまたはストアの設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)を参照してください。
 
 ### トラブルシューティング
 

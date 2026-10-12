@@ -1,17 +1,38 @@
 ---
-title: ACSD-62332：製品リスト GraphQL クエリが10,000個の製品に制限され、現在のページが [!DNL Live Search] に1に設定されました
-description: ACSD-62332 パッチを適用して、GraphQL クエリがtotal_countに制限されているAdobe Commerceの問題を修正します。GraphQLを介してクエリを実行すると、検索条件で*2*ではなく*1*に現在のページが [!DNL Live Search] 設定されます。
+title: ACSD-62332：製品リスト GraphQL クエリが10,000個の製品に制限され、[!DNL Live Search]が現在のページを1に設定します
+description: ACSD-62332 パッチを適用して、GraphQL クエリがtotal_countに制限されているAdobe Commerceの問題を修正します。GraphQLを介してクエリを実行すると、検索条件で*2*ではなく*1*に現在のページが設定されます。[!DNL Live Search]
 feature: GraphQL, Products, Search
 role: Admin, Developer
 exl-id: 3623a337-32e9-468b-a82b-6a7f7fa943c9
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '370'
 ht-degree: 0%
-
 ---
-
 # ACSD-62332：製品リスト GraphQL クエリが10,000個の製品に制限され、[!DNL Live Search]が現在のページを1に設定します
 
 >[!NOTE]
@@ -32,7 +53,7 @@ ACSD-62332 パッチでは、GraphQLを介してクエリを実行する際に�
 
 >[!NOTE]
 >
->このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
@@ -43,11 +64,11 @@ GraphQL クエリの商品リストは、合計数が10,000件に制限されて
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 
 ## 関連トピックス
 
 [!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。

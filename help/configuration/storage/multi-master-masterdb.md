@@ -3,13 +3,22 @@ title: マスターデータベースの自動設定
 description: 分割データベースソリューションの自動設定に関するガイダンスを参照してください。
 recommendations: noCatalog
 exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 1%
-
 ---
-
 # マスターデータベースの自動設定
 
 {{ee-only}}
@@ -28,7 +37,7 @@ ht-degree: 1%
 
 ## Adobe Commerce ソフトウェアのインストール
 
-Adobe Commerce ソフトウェアをインストールした後は、いつでも分割データベースを有効にできます。つまり、チェックアウトおよび注文データを既に持つAdobe Commerce システムに分割データベースを追加できます。 Adobe Commerce READMEまたは[&#x200B; インストールガイド &#x200B;](../../installation/overview.md)の手順に従って、1つのマスターデータベースを使用してAdobe Commerce ソフトウェアをインストールします。
+Adobe Commerce ソフトウェアをインストールした後は、いつでも分割データベースを有効にできます。つまり、チェックアウトおよび注文データを既に持つAdobe Commerce システムに分割データベースを追加できます。 Adobe Commerce READMEまたは[ インストールガイド ](../../installation/overview.md)の手順に従って、1つのマスターデータベースを使用してAdobe Commerce ソフトウェアをインストールします。
 
 ## 追加のマスターデータベースの設定
 
@@ -92,7 +101,7 @@ Adobe Commerce ソフトウェアをインストールした後は、いつで�
 
 ### 最初のステップ
 
-ログインしてCLI コマンドを実行するには、[&#x200B; コマンドの実行](../cli/config-cli.md#running-commands)を参照してください。
+ログインしてCLI コマンドを実行するには、[ コマンドの実行](../cli/config-cli.md#running-commands)を参照してください。
 
 ### チェックアウトデータベースの設定
 

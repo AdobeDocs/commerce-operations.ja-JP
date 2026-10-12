@@ -4,23 +4,33 @@ description: Adobe Commerce プロジェクトのCSS ファイルとJavaScript�
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 0%
-
 ---
-
 # リソースファイルの最適化
 
 Commerceのレスポンシブなサイトを実現するには、CSSとJavaScript（JS）のリソースファイルを最適化し、レンダーブロックリソースを排除します。
 
 - **CSS ファイルとJS ファイルを最適化**- Adobe Commerceを使用してファイルを縮小およびバンドルするように設定することで、CSSおよびJavaScript（JS）ファイルを読み込むのに必要な時間を短縮します。
-- **レンダリング ブロック リソースを排除** – 重要なJSおよびCSS機能をインラインで配信し、重要ではないJS/CSS スタイルをすべて延期することを検討します。 ガイダンスについては、[&#x200B; レンダーブロッキングリソースの排除](https://web.dev/render-blocking-resources/)を参照してください。
+- **レンダリング ブロック リソースを排除** – 重要なJSおよびCSS機能をインラインで配信し、重要ではないJS/CSS スタイルをすべて延期することを検討します。 ガイダンスについては、[ レンダーブロッキングリソースの排除](https://web.dev/render-blocking-resources/)を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[&#x200B; サポートされているすべてのバージョン、2.3以降](../../../release/versions.md) /:
+[ サポートされているすべてのバージョン、2.3以降](../../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
@@ -104,7 +114,7 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 ## 追加情報
 
 - [クライアントサイド最適化設定](../../../performance/configuration.md#client-side-optimization-settings)
-- *設定のベストプラクティス*&#x200B;の[&#x200B; バンドルヒント &#x200B;](../../../performance/configuration.md#bundling-tips) - サードパーティのバンドルツール、HTTP/2、非推奨のJSおよびCSS結合に関するガイダンス
-- [ユーザーガイド：リソースファイルの最適化](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- *設定のベストプラクティス*&#x200B;の[ バンドルヒント ](../../../performance/configuration.md#bundling-tips) - サードパーティのバンドルツール、HTTP/2、非推奨のJSおよびCSS結合に関するガイダンス
+- [ユーザーガイド：リソースファイルの最適化](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [フロントエンド開発者ガイド：CSSの結合、縮小、サイトパフォーマンス](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [高度なJavaScriptのバンドル](../../../performance/advanced-js-bundling.md)

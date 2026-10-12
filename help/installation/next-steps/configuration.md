@@ -3,13 +3,27 @@ title: アプリケーションの設定
 description: Adobe Commerce オンプレミスのデプロイメントに必要なインストール後の設定について説明します。
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 0%
-
 ---
-
 # アプリケーションの設定
 
 Adobe Commerceのインストールが完了したら、設定する必要があります。 このトピックでは、推奨される設定設定をいくつか紹介します。
@@ -27,11 +41,11 @@ crontabを削除してコマンドラインからcronを実行する方法など
 インストール後は、以下をお勧めします。
 
 * ファイルの所有権と権限が[適切に設定されていることを確認してください](../prerequisites/file-system/configure-permissions.md)
-* [&#x200B; デフォルトの管理者URI](../tutorials/admin-uri.md)を`admin`から別の場所に変更することを強くお勧めします
+* [ デフォルトの管理者URI](../tutorials/admin-uri.md)を`admin`から別の場所に変更することを強くお勧めします
 * [`X-Frame-Option` HTTP ヘッダー](../../configuration/security/xframe-options.md)が正しく設定されていることを確認してください。
-* [&#x200B; テンプレートを保護する](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)することによって、クロスサイトスクリプティング（XSS）に対する予防策を講じる
+* [ テンプレートを保護する](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)することによって、クロスサイトスクリプティング（XSS）に対する予防策を講じる
 
-GitHub リポジトリ [&#128279;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)を複製してインストールした場合は、アプリケーションをデプロイするときに、実稼動環境に必要なファイルとフォルダーのみを含めるようにしてください。 不要なファイルやフォルダーは、セキュリティリスクを引き起こす可能性があります。
+GitHub リポジトリ ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)を[複製してインストールした場合は、アプリケーションをデプロイするときに、実稼動環境に必要なファイルとフォルダーのみを含めるようにしてください。 不要なファイルやフォルダーは、セキュリティリスクを引き起こす可能性があります。
 
 ## Apache サーバーの書き換えを有効にする
 
@@ -65,7 +79,7 @@ UNIX `logrotate` ユーティリティを使用すると、大量のログ フ�
 >
 >* スターター環境にはログのローテーションがありません。
 >
->* Pro統合環境では、ログローテーションを設定できません。 カスタムソリューション/スクリプトを実装し、必要に応じてスクリプトを実行するように[cron](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)を設定する必要があります。
+>* Pro統合環境では、ログローテーションを設定できません。 カスタムソリューション/スクリプトを実装し、必要に応じてスクリプトを実行するように[cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)を設定する必要があります。
 
 ### 様々なサービスが通信できるようにiptables ルールを設定します
 
@@ -73,7 +87,7 @@ UNIX `logrotate` ユーティリティを使用すると、大量のログ フ�
 
 詳細：
 
-* Ubuntu: [Ubuntu ドキュメント ページ &#x200B;](https://help.ubuntu.com/community/IptablesHowTo)。
+* Ubuntu: [Ubuntu ドキュメント ページ ](https://help.ubuntu.com/community/IptablesHowTo)。
 * CentOS: [CentOS ハウツー](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)。
 
 ### セキュリティ強化Linux （SELinux）ルール
@@ -82,15 +96,15 @@ SELinuxを使用するかどうかに関する推奨事項はありませんが�
 
 詳細：
 
-* Ubuntu: [Debian ハンドブック &#x200B;](https://debian-handbook.info/browse/stable/sect.selinux.html)
+* Ubuntu: [Debian ハンドブック ](https://debian-handbook.info/browse/stable/sect.selinux.html)
 * CentOS: [CentOS wiki](https://wiki.centos.org/HowTos/SELinux)
 
 ### 電子メールサーバーの設定
 
 Adobe Commerceには電子メールサーバーが必要です。 特定のサーバーはお勧めしませんが、次のいずれかを試すことができます。
 
-* CentOSのポストフィックス （[Digital Ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6)、[CentOS ドキュメント &#x200B;](https://www.centos.org)）
-* UbuntuのPostfix （[Digital Ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04)、[Ubuntu ドキュメント &#x200B;](https://help.ubuntu.com/community/MailServer)）
+* CentOSのポストフィックス （[Digital Ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6)、[CentOS ドキュメント ](https://www.centos.org)）
+* UbuntuのPostfix （[Digital Ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04)、[Ubuntu ドキュメント ](https://help.ubuntu.com/community/MailServer)）
 
 ### 検索エンジンを調整してパフォーマンスを向上させます。
 

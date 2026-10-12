@@ -2,25 +2,34 @@
 title: パッチを適用
 description: Adobe Commerce プロジェクトにパッチを適用する方法について説明します。
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
-
 ---
-
 # パッチを適用
 
 パッチは、次のいずれかの方法を使用して適用できます。
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [コマンドライン](../patches/apply.md#command-line)
 - [Composer](../patches/apply.md#composer)
 
 
 >[!TIP]
 >
->Adobe Commerceのエンタープライズ規模での一元的なパッチ適用について詳しくは、[&#x200B; ベストプラクティス &#x200B;](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md)を参照してください。
+>Adobe Commerceのエンタープライズ規模での一元的なパッチ適用について詳しくは、[ ベストプラクティス ](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md)を参照してください。
 
 ## Composer
 

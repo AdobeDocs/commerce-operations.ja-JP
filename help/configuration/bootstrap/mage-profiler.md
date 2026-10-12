@@ -2,13 +2,22 @@
 title: プロファイルを有効にする
 description: MAGE プロファイラーを分析ツールで使用できるようにする方法について詳しくは、こちらを参照してください。
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
-
 ---
-
 # プロファイルを有効にする
 
 Commerceを使用すると、次のことが可能になります。
@@ -29,7 +38,7 @@ MAGE_PROFILER変数またはコマンドラインを使用して、プロファ�
 
 ## MAGE_PROFILERを設定
 
-`MAGE_PROFILER`の値は、[&#x200B; ブートストラップパラメーターの値を設定](../bootstrap/set-parameters.md)で説明したいずれかの方法で設定できます。
+`MAGE_PROFILER`の値は、[ ブートストラップパラメーターの値を設定](../bootstrap/set-parameters.md)で説明したいずれかの方法で設定できます。
 
 `MAGE_PROFILER`は次の値をサポートしています：
 
@@ -37,14 +46,14 @@ MAGE_PROFILER変数またはコマンドラインを使用して、プロファ�
 
   次のいずれかの値を使用して、特定のプロファイラーを有効にできます。
 
-   - [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)を使用する`csvfile`
-   - [`Magento\Framework\Profiler\Driver\Standard\Output\Html`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php)を使用する空の値を含む、その他の値（`2`を除く）
+  - [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)を使用する`csvfile`
+  - [`Magento\Framework\Profiler\Driver\Standard\Output\Html`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php)を使用する空の値を含む、その他の値（`2`を除く）
 
 - `2`を使用して依存関係グラフを有効にします。
 
   依存関係グラフは通常、ページの下部に表示されます。 次の図は、出力の一部を示しています。
 
-  ![依存関係グラフ &#x200B;](../../assets/configuration/depend-graphs.png)
+  ![依存関係グラフ ](../../assets/configuration/depend-graphs.png)
 
 ## CLI コマンド
 

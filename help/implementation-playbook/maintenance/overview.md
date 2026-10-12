@@ -3,13 +3,25 @@ title: メンテナンスとサポートの概要
 description: 新しく開始されたAdobe Commerceの導入を適切に管理し、サポートします。
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '531'
 ht-degree: 0%
-
 ---
-
 # メンテナンスとサポートの概要
 
 消費者はこれまで以上に多くの選択肢に触れています。 ブランドはいくらでも注目を集めることができるので、消費者に競合他社を見る理由を与えることはできません。 これまで説明してきたように、顧客ロイヤルティと顧客に対する忍耐力は薄れています。 企業を諦めることもあまりなく、e コマース体験の質が低いことは、顧客にとって簡単にあきらめる方法です。
@@ -33,5 +45,5 @@ ht-degree: 0%
 プラットフォームの強化と最適化を継続し、コマース業務全体を最適化するための適切なサポートモデルを特定することは、導入プロセス中に行われたあらゆる作業を維持するために重要なステップです。 包括的な継続的なサポートプランを導入することで、コマースサイトは顧客の期待に応え、目標も達成することができます。
 
 Adobe Commerceを導入する際は、メンテナンスとサポート戦略に何を含めるかを考えることが重要です。
-エキスパートのサポートは、Adobe Commerce ライセンスに含まれています。 エキスパートサポートとAdobe サポートプランについて詳しくは、[Adobe サポートプラン &#x200B;](https://business.adobe.com/jp/customers/consulting-services/premier-support.html)を参照してください。
+エキスパートのサポートは、Adobe Commerce ライセンスに含まれています。 エキスパートサポートとAdobe サポートプランについて詳しくは、[Adobe サポートプラン ](https://business.adobe.com/customers/consulting-services/premier-support.html)を参照してください。
 Adobe サポートプランに加えて、従来のMagento サポート条件もあります。 お客様に適用されるサポートサービスを理解するには、契約を参照して、お客様のサポート契約を確認するか、Adobeのアカウントチームにお問い合わせください。

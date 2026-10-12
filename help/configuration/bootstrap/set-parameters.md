@@ -2,13 +2,22 @@
 title: ブートストラップパラメーターの値を設定する
 description: Commerce アプリケーションのブートストラップパラメーターを設定する方法について説明します。
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 1%
-
 ---
-
 # Bootstrap パラメーター
 
 このトピックでは、Commerce アプリケーションのブートストラップパラメーターの値を設定する方法を説明します。 アプリケーションの初期化とブートストラップの概要[を参照してください](initialization.md)。
@@ -98,7 +107,7 @@ Apache `mod_env` ディレクティブは、[Apache バージョン 2.2](https:/
 
 >[!TIP]
 >
->次の節では、仮想ホストを既に設定していることを前提としています。 まだ使用していない場合は、[このDigitalOcean チュートリアル &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts)などのリソースを参照してください。
+>次の節では、仮想ホストを既に設定していることを前提としています。 まだ使用していない場合は、[このDigitalOcean チュートリアル ](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts)などのリソースを参照してください。
 
 **Ubuntu**&#x200B;でApacheのブートストラップ変数を指定するには：
 
@@ -141,7 +150,7 @@ Apache `mod_env` ディレクティブは、[Apache バージョン 2.2](https:/
 
 >[!TIP]
 >
->このセクションでは、仮想ホストが既に設定されていることを前提としています。 まだ使用していない場合は、[このDigitalOcean チュートリアル &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6)などのリソースを参照してください。
+>このセクションでは、仮想ホストが既に設定されていることを前提としています。 まだ使用していない場合は、[このDigitalOcean チュートリアル ](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6)などのリソースを参照してください。
 
 **CentOS**&#x200B;でApacheのブートストラップ変数を指定するには：
 

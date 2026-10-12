@@ -5,7 +5,26 @@ feature: Page Builder, Page Content
 role: Admin, Developer
 exl-id: c878d5a4-8059-4bfc-93a8-0a9606e866fc
 type: Troubleshooting
-source-git-commit: 2465ecf45a0990ac40c3ba8c243381ce5484adaa
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 17d326fa-534a-55a5-b46f-8ae1de1e2f75
+    internal-label: Page Content
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+subfeature_v2:
+  - id: ed510963-0b8c-4764-86f6-f3c7735bc334
+    internal-label: Page Builder
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -26,7 +45,7 @@ ACSD-65127 パッチでは、実稼動モードでJavaScriptの縮小を有効�
 
 >[!NOTE]
 >
->このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) ページで互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]: パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) ページで互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
@@ -44,7 +63,7 @@ ACSD-65127 パッチでは、実稼動モードでJavaScriptの縮小を有効�
 
    >[!NOTE]
    >
-   >Adobeでは、**[!UICONTROL Merge JavaScript Files]**&#x200B;を有効にすることはお勧めしません。 [JS ファイルの結合（推奨されません） &#x200B;](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files)を参照してください。
+   >Adobeでは、**[!UICONTROL Merge JavaScript Files]**&#x200B;を有効にすることはお勧めしません。 [JS ファイルの結合（推奨されません） ](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files)を参照してください。
 
 1. 実稼動モードを有効にします。
 
@@ -67,10 +86,10 @@ js `tiny_mce_6/plugins/help/js/i18n/keynav/en.js`のブラウザーコンソー�
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」ガイド
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」ガイド
 
 ## 関連トピックス
 
 [!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール

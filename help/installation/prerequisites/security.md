@@ -3,16 +3,30 @@ title: オンプレミスのインストールのセキュリティ
 description: Adobe Commerce オンプレミス インストールのセキュリティ対策を強化する方法について説明します。
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
-
 ---
-
 # オンプレミスのインストールのセキュリティ
 
-[&#x200B; セキュリティ強化Linux （SELinux） &#x200B;](https://selinuxproject.org/page/Main_Page)を使用すると、CentOSおよびUbuntu管理者は、サーバーに対するアクセス制御を強化できます。 SELinux *および*&#x200B;を使用している場合、Apacheは別のホストへの接続を開始する必要があります。この節で説明するコマンドを実行する必要があります。
+[ セキュリティ強化Linux （SELinux） ](https://selinuxproject.org/page/Main_Page)を使用すると、CentOSおよびUbuntu管理者は、サーバーに対するアクセス制御を強化できます。 SELinux *および*&#x200B;を使用している場合、Apacheは別のホストへの接続を開始する必要があります。この節で説明するコマンドを実行する必要があります。
 
 >[!NOTE]
 >
@@ -67,5 +81,5 @@ SELinuxが有効になっている別のホストへの接続をApacheが開始�
 
 セキュリティ要件に応じて、ファイアウォールのポート 80やその他のポートを開く必要がある場合があります。 ネットワークセキュリティは機密性が高いため、Adobeでは、先に進む前にIT部門に相談することを強くお勧めします。 推奨される参照を次に示します。
 
-* Ubuntu: [Ubuntu ドキュメントページ &#x200B;](https://help.ubuntu.com/community/IptablesHowTo)
+* Ubuntu: [Ubuntu ドキュメントページ ](https://help.ubuntu.com/community/IptablesHowTo)
 * CentOS: [CentOS ハウツー](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)。

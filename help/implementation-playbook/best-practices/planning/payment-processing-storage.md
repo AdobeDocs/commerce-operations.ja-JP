@@ -4,24 +4,34 @@ description: PCI認定を維持し、禁止されているクレジットカー�
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
-
 ---
-
 # 決済処理と保存のベストプラクティス
 
-[PCI コンプライアンス &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html?lang=ja)を維持する際の重要な原則のひとつは、クレジットカード支払いを適切に処理して保存するための戦略を持つことです。
+[PCI コンプライアンス ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html)を維持する際の重要な原則のひとつは、クレジットカード支払いを適切に処理して保存するための戦略を持つことです。
 
-Adobe Commerceへのクレジットカード情報の保存は&#x200B;**固く禁止されています**。これは、PCI-DSS （Payment Card Industry Data Security Standard）に基づく販売者としての義務に違反する可能性があります。 加盟店の義務に関する共有責任モデルとガイドラインについて詳しくは、Adobe Trust Centerの[Adobe Commerce共有責任モデルガイド &#x200B;](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf)を参照してください。
+Adobe Commerceへのクレジットカード情報の保存は&#x200B;**固く禁止されています**。これは、PCI-DSS （Payment Card Industry Data Security Standard）に基づく販売者としての義務に違反する可能性があります。 加盟店の義務に関する共有責任モデルとガイドラインについて詳しくは、Adobe Trust Centerの[Adobe Commerce共有責任モデルガイド ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf)を参照してください。
 
-コマースサイトの決済情報を適切に処理するには、次のベストプラクティスに従ってください。 セキュリティのベストプラクティスに関する追加のガイダンスについては、[&#x200B; サイトとインフラストラクチャの保護](../launch/security-best-practices.md)を参照してください。
+コマースサイトの決済情報を適切に処理するには、次のベストプラクティスに従ってください。 セキュリティのベストプラクティスに関する追加のガイダンスについては、[ サイトとインフラストラクチャの保護](../launch/security-best-practices.md)を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
+[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
 
 * Adobe Commerce on cloud infrastructure
 * Adobe Commerce オンプレミス
@@ -53,4 +63,4 @@ Adobe Commerceへのクレジットカード情報の保存は&#x200B;**固く�
 
 ## 追加情報
 
-Adobeによるお勧めの決済ソリューションをお探しの場合は、[Adobe Payment Services](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html?lang=ja)をご検討ください。
+Adobeによるお勧めの決済ソリューションをお探しの場合は、[Adobe Payment Services](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html)をご検討ください。

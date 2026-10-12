@@ -3,7 +3,7 @@ title: Valkeyのインストールと設定
 description: Adobe Commerceを使用して、キャッシュとセッションストレージ用にValkeyをインストールして設定する方法について説明します。 最適化とパフォーマンス調整のためのオプションをご紹介します。
 feature: Configuration, Cache
 exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
-badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
 TQID: 'https://experienceleague.adobe.com/Ef4WREy0eq0ChsrI5-0FtrjMZWNjwr7l71Pm-RHD1GI'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -13,6 +13,11 @@ product_v2:
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -21,10 +26,12 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: c17dcd295b7a27ac1732a700b97af26316a98b7d
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -59,7 +66,7 @@ Adobeでは、Valkey データをディスクにコピーするセッション�
 
 - **ファイルのみを追加** （AOF）は、Valkeyに送信された各書き込み操作をジャーナルファイルに保存します。 Valkeyは、このファイルを再起動時にのみ読み取り、それを使用して元のデータセットを復元します。
 
-RDB オプションとAOF オプションの両方を同時に有効にすることもできます。 永続性オプションの利点と欠点を含む詳細については、[Valkey Persistence ドキュメント &#x200B;](https://valkey.io/topics/persistence/)を参照してください。
+RDB オプションとAOF オプションの両方を同時に有効にすることもできます。 永続性オプションの利点と欠点を含む詳細については、[Valkey Persistence ドキュメント ](https://valkey.io/topics/persistence/)を参照してください。
 
 キャッシュインスタンスの場合は、Commerce キャッシュ全体を格納するのに十分な大きさになるようにインスタンスを設定します。
 
@@ -69,7 +76,7 @@ RDB オプションとAOF オプションの両方を同時に有効にするこ
 
 - Commerce キャッシュを復元できるため、キャッシュインスタンスに永続性は必要ありません。
 
-  詳しくは、[Valkey キャッシュガイド &#x200B;](https://valkey.io/docs/latest/develop/use/)を参照してください。
+  詳しくは、[Valkey キャッシュガイド ](https://valkey.io/docs/latest/develop/use/)を参照してください。
 
 パフォーマンス調整の場合は、非同期削除に対して次の設定を有効にできます。 これらの設定は、Valkeyの動作を変更しません。
 

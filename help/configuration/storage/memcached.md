@@ -3,13 +3,32 @@ title: セッション ストレージにmemcachedを使用
 description: env.phpのセッションストレージにmemcachedを使用するようにAdobe Commerceを設定する方法と、他のキャッシュレイヤーにRedisまたはVarnishを優先する場合について説明します。
 feature: Configuration, Cache, Storage
 exl-id: 24077929-e732-4579-8d7d-717a4902fc64
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
-
 ---
-
 # セッション ストレージにmemcachedを使用
 
 Memcachedは、汎用の分散型メモリキャッシングシステムです。 多くの場合、RAMにデータとオブジェクトをキャッシュすることで、外部データソース（データベースやAPIなど）を読み取る必要がある回数を減らし、動的なデータベース駆動型のweb サイトを高速化するために使用されます。

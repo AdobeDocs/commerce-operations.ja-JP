@@ -2,21 +2,30 @@
 title: Beta リリース
 description: Adobe Commerce ベータ版のリリースと参加方法について説明します。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
-badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
-source-git-commit: efdc4734b5c0db8efc0c83bef41e7ccaafd9b6af
+badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce ベータ版リリース
 
-[Adobe Commerce製品ソリューション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions)のBeta プログラムは、販売者がプレリリース機能とコードにアクセスし、フィードバックを提供し、Adobe Commerceの将来を導くための手段です。 ベータプログラムには2種類あります。
+[Adobe Commerce製品ソリューション ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions)のBeta プログラムは、販売者がプレリリース機能とコードにアクセスし、フィードバックを提供し、Adobe Commerceの将来を導くための手段です。 ベータプログラムには2種類あります。
 
 - パブリック Beta:Adobe Commerceのすべてのユーザーおよびパートナーは、パブリックベータプログラムを利用できます
-- Private Beta：プライベートベータプログラムに参加するには、資格基準に基づく承認が必要です
+- Private beta：プライベートベータプログラムに参加するには、資格基準に基づく承認が必要です
 
 >[!IMPORTANT]
 >
@@ -33,7 +42,7 @@ Adobeで開発している機能に早期にアクセスできれば、顧客や
 
 ### 属性ランキング（パブリックBeta） {#attribute-ranking-public-beta}
 
-[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"}
+[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"}
 
 [!DNL Adobe Commerce Optimizer] マーチャンダイジングルールで&#x200B;**属性ランキング**&#x200B;がサポートされるようになりました。これにより、**Boost**、**Bury**、**Hide** アクションが、属性条件に一致する製品（ブランド、カテゴリー、メーカーなど）に自動的に適用され、個々のSKUの選択は必要ありません。 属性のランキングは、ルールエディターに表示され、インテリジェントなランキングと手動のランキングが表示されます。 **すべての製品リスト**、**カテゴリルール**、**検索ルール**&#x200B;で使用します。
 
@@ -44,11 +53,11 @@ Adobeで開発している機能に早期にアクセスできれば、顧客や
 - 属性条件とインテリジェントなランキングを組み合わせる：一致した商品を優先し、ランキング戦略で一致しない商品の注文を継続します。
 - 条件ごとにブーストまたはバリーの強度を設定して、ルールが一致する製品に与える影響を微調整します。
 
-詳しくは、マーチャンダイジングルールガイドの[属性ランキング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking)を参照してください。
+詳しくは、マーチャンダイジングルールガイドの[属性ランキング ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking)を参照してください。
 
 このベータ機能に関するフィードバックを共有するには、[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)に電子メールを送信してください。
 
-### 検索マッチングとランキング（Private Beta）
+### 検索マッチングとランキング（Private beta）
 
 Adobeでは、[!DNL Adobe Commerce]および[!DNL Adobe Commerce Optimizer]の[!DNL Live Search]の検索結果を商品の検索でランク付けする方法を改善しています。 更新では、**完全一致とほぼフレーズ一致**&#x200B;が優先され、次に&#x200B;**すべてのクエリ用語が同じ検索可能な属性**&#x200B;に表示され、最後に&#x200B;**クロスフィールド**&#x200B;が一致します（オートコンプリート形式の提案をサポートする動作を含む）。 この階層化されたモデルにより、インテント度の高いクエリは、最も関連性の高い商品を最初に表示しながら、有用な代替品を返すことができます。
 
@@ -61,13 +70,13 @@ Adobeでは、[!DNL Adobe Commerce]および[!DNL Adobe Commerce Optimizer]の[!
 - クエリ時に、重み付け、インテリジェントなランキング、手動のルールをどのように組み合わせるかについて明確な期待値を示します。
 - 変更後に価値の高いクエリを検証し、ブーストルールを調整するためのガイダンス。
 
-[Adobe Commerce Optimizer （SaaS） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/manage-results/search-relevance-matching)および[&#x200B; ライブサーチ （PaaS） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/search-relevance-matching)の検索マッチングとランキング戦略について詳しく説明します。
+[Adobe Commerce Optimizer （SaaS） ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/search-relevance-matching)および[ ライブサーチ （PaaS） ](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching)の検索マッチングとランキング戦略について詳しく説明します。
 
 このプライベートベータ版への招待をリクエストするには、[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)にメールを送信してください。 Adobeチームは、次のステップや適格性の要件で対応しています。
 
 ### 推奨価格フィルター（パブリックBeta） {#recommendation-price-filters-public-beta}
 
-[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"}
+[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"}
 
 [!DNL Adobe Commerce Optimizer]では、商品レコメンデーションに&#x200B;**価格フィルター**&#x200B;が追加されるので、レコメンデーション単位を作成または編集する際に、価格に基づいて推奨される商品を含めたり除外したりできます。 フィルターでは、ストアフロントの&#x200B;**アクティブな価格表**&#x200B;から各商品の&#x200B;**最終計算価格**&#x200B;を使用し、その価格表の割引やプロモーションを含めます（リスト価格だけではありません）。 プライスルールは、候補セットを絞り込みます。これらは、商品を再ランク付けしません。
 
@@ -80,7 +89,7 @@ Adobeでは、[!DNL Adobe Commerce]および[!DNL Adobe Commerce Optimizer]の[!
 - 商品詳細ページで動的な価格ルールを使用して、閲覧中の商品に対して同等の価格帯の中で代替品を表示します。
 - フィルタリングと表示に使用されるアクティブな価格表と同じ最終価格である、買い物客が表示する価格に合わせてフィルタリングを調整します。
 
-詳しくは、マーチャントガイドの「[&#x200B; レコメンデーションフィルター – 価格](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/recommendations/filters#price)」、ストアフロントドロップインガイドの「[商品レコメンデーションの設定](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/?lang=ja)」を参照してください。
+詳しくは、マーチャントガイドの「[ レコメンデーションフィルター – 価格](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters#price)」、ストアフロントドロップインガイドの「[商品レコメンデーションの設定](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/)」を参照してください。
 
 このベータ版の機能を使用する際にフィードバックを共有するには、[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)にメールを送信してください。
 
@@ -99,7 +108,7 @@ Adobeでは、[!DNL Adobe Commerce]および[!DNL Adobe Commerce Optimizer]の[!
 
 ### （財）Adobe Commerce財団（パブリックAlpha/Beta）
 
-[!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
+[!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
 
 Adobe Commerce Foundationの各アルファ版およびベータ版リリースには、次の機能領域を含むがこれに限定されない、リリース予定日までにAdobe Commerce コアコードに配信されたすべての変更点が含まれます。
 
@@ -108,7 +117,7 @@ Adobe Commerce Foundationの各アルファ版およびベータ版リリース�
 - GraphQLの機能強化
 - 一般的な品質バグの修正
 - コミュニティへの貢献
-- [Adobe Commerce サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)との互換性をサポートするために必要な変更点
+- [Adobe Commerce サービス ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)との互換性をサポートするために必要な変更点
 
 #### 命名規則とスケジュール
 
@@ -124,13 +133,13 @@ Beta リリースパッケージには、`-betaX`という接尾辞が付いて�
 - `2.4.7-beta1`
 - `2.4.7-beta2`
 
-今後の公開アルファ版とベータ版のリリース日のリストについては、[&#x200B; リリーススケジュール &#x200B;](schedule.md)を参照してください。
+今後の公開アルファ版とベータ版のリリース日のリストについては、[ リリーススケジュール ](schedule.md)を参照してください。
 
 #### リリースアクセス
 
 Adobe Commerce アルファ版とベータ版のリリースは、他のAdobe Commerce パッチリリースと同じように配布されます：`https://repo.magento.com`のComposer メタパッケージと同じです。 ソースコードは[GitHub](https://github.com/magento/magento2)で入手できます。
 
-詳しくは、[Composer インストールクイックスタート &#x200B;](../installation/composer.md)を参照してください。
+詳しくは、[Composer インストールクイックスタート ](../installation/composer.md)を参照してください。
 
 #### 問題レポート
 

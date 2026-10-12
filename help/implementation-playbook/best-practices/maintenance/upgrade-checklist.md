@@ -4,13 +4,23 @@ description: アップグレードチェックリストを作成して使用し�
 role: Leader
 feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
-
 ---
-
 # チェックリストのベストプラクティスのアップグレード
 
 このチェックリストは、e コマース部門との年次および四半期次の会話中に使用します。 多くの企業が年間予算とロードマップにもとづいて業務を行っています。 年次議論では、自社のプラットフォームの健全性、方向性、アップグレード戦略、およびビジネス全体の目標とKPIとの適合性について話し合うことが不可欠です。 四半期ごとの会話中に、作成した年間プランが現在の状況に合ったものであることを確認し、合わない場合は方向転換します。 このアップグレードプランのチェックリストの目的は、Adobe Commerceのアップグレードを計画およびスケジュールして、1年間のアップグレードプロセスを成功させることです。 このチェックリストは、次のオーディエンスが年間計画と四半期レビューに使用することを目的としています。
@@ -21,11 +31,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->正常にアップグレードするための技術的な手順について詳しくは、ユーザードキュメントの「[&#x200B; アップグレードの前提条件を完了](../../../upgrade/prepare/prerequisites.md)」を参照してください。
+>正常にアップグレードするための技術的な手順について詳しくは、ユーザードキュメントの「[ アップグレードの前提条件を完了](../../../upgrade/prepare/prerequisites.md)」を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
+[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
@@ -46,7 +56,7 @@ ht-degree: 0%
 
 ## 予算とタイミング
 
-▢ Adobe Commerce [&#x200B; リリーススケジュール &#x200B;](../../../release/schedule.md)を使用して、次回のアップグレードを計画し、事前に準備します。
+▢ Adobe Commerce [ リリーススケジュール ](../../../release/schedule.md)を使用して、次回のアップグレードを計画し、事前に準備します。
 
 ▢想定されるニーズに基づいて（完全またはセキュリティ限定）採用すると思われるバージョンについて話し合います。
 
@@ -67,7 +77,7 @@ ht-degree: 0%
 
 ▢ [互換性のアップグレード ツールを実行](../../../upgrade/upgrade-compatibility-tool/overview.md)
 
-▢ [&#x200B; サイト全体の分析ツール &#x200B;](../../../tools/site-wide-analysis-tool/intro.md)によって特定された問題に対処するために、アップグレードの使用を検討してください。
+▢ [ サイト全体の分析ツール ](../../../tools/site-wide-analysis-tool/intro.md)によって特定された問題に対処するために、アップグレードの使用を検討してください。
 
 ▢ ドキュメントの依存関係と、PHPやElastic Searchのバージョンなど、必要な技術スタックの変更。
 
@@ -77,7 +87,7 @@ ht-degree: 0%
 
 ▢ ダウンタイムが予想される場合は、メンテナンスウィンドウを計画します。
 
-▢ テスト戦略を確認して承認します。Adobe Commerce [&#x200B; テストフレームワーク &#x200B;](https://developer.adobe.com/commerce/testing/)またはサードパーティの自動化スイートの使用を検討してください。
+▢ テスト戦略を確認して承認します。Adobe Commerce [ テストフレームワーク ](https://developer.adobe.com/commerce/testing/)またはサードパーティの自動化スイートの使用を検討してください。
 
 ▢すべての拡張機能とカスタマイズに互換性があることを確認してください。
 
@@ -87,7 +97,7 @@ ht-degree: 0%
 
 ▢ パフォーマンス、注文処理、分析などの問題についてサイトを監視します。
 
-▢ Adobe Commerce [&#x200B; セキュリティスキャン &#x200B;](https://account.magento.com/scanner/dashboard/)またはその他のサードパーティ製スキャンを実行し、潜在的なセキュリティの脆弱性を確認します。
+▢ Adobe Commerce [ セキュリティスキャン ](https://account.magento.com/scanner/dashboard/)またはその他のサードパーティ製スキャンを実行し、潜在的なセキュリティの脆弱性を確認します。
 
 ▢すべての関係者に対してレトロスペクティブを実行し、成果を上げた点とそうでない点、改善方法を文書化します。
 

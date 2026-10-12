@@ -3,13 +3,25 @@ title: Adobe Managed Services
 description: Adobe Managed Servicesが、Adobe Commerceの導入をサポートし、維持するのにどのように役立つのかをご確認ください。
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Managed Services
 
@@ -19,7 +31,7 @@ Adobe Managed Servicesは、Adobe Commerce on cloud infrastructure Pro プラン
 
 ## Adobe Workfrontの利点
 
-![Adobe Managed Servicesのメリットを示すインフォグラフィック &#x200B;](../../assets/playbooks/managed-services-benefits.png)
+![Adobe Managed Servicesのメリットを示すインフォグラフィック ](../../assets/playbooks/managed-services-benefits.png)
 
 ### 実装オプションの比較
 
@@ -388,7 +400,7 @@ Adobeは、Managed Services システム上でのAdobe Commerceのプロビジ�
 
 Managed ServicesのAdobeセキュリティスタックは、あらゆるレベルのセキュリティを強化し、自動化と一貫性を確保してヒューマンエラーを低減します。 開発チームと運用チームは、スタックの様々なレベルからセキュリティ制御を自動的に継承します。
 
-Amazon Web ServicesやMicrosoft Azureなどのプラットフォームパートナーは、プラットフォームのカスタマイズを適用する際に最大限のセキュリティを確保します。一方、AdobeのManaged Servicesチームは、コンプライアンス、ロギング、認証、スキャン、モニタリングなどのコアセキュリティサービスや、サーバーセキュリティおよびセキュアアプリケーション設定を提供します。 詳しくは、[Adobe Commerce セキュリティ &#x200B;](https://business.adobe.com/jp/products/magento/secure-ecommerce.html)を参照してください。
+Amazon Web ServicesやMicrosoft Azureなどのプラットフォームパートナーは、プラットフォームのカスタマイズを適用する際に最大限のセキュリティを確保します。一方、AdobeのManaged Servicesチームは、コンプライアンス、ロギング、認証、スキャン、モニタリングなどのコアセキュリティサービスや、サーバーセキュリティおよびセキュアアプリケーション設定を提供します。 詳しくは、[Adobe Commerce セキュリティ ](https://business.adobe.com/products/magento/secure-ecommerce.html)を参照してください。
 
 次の図は、Adobe Managed Servicesのセキュリティテクノロジースタックを示しています。
 

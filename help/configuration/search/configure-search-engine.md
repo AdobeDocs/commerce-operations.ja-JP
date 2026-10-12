@@ -3,29 +3,44 @@ title: 検索エンジン設定
 description: Adobe Commerceのオンプレミス展開用に検索エンジンを設定します。
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
-
 ---
-
 # 検索エンジン設定
 
 この節では、Adobe CommerceのオンプレミスのデプロイメントでElasticsearchまたはOpenSearchをテストするために選択する必要がある最小設定について説明します。
 
 >[!TIP]
 >
->バージョン 2.4.4および2.4.3-p2では、**Elasticsearch**&#x200B;というラベルが付けられたすべてのフィールドがOpenSearchにも適用されます。
+>バージョン 2.4.4および2.4.3-p2では、**Elasticsearch**というラベルが付けられたすべてのフィールドがOpenSearchにも適用されます。
 >Elasticsearch 8.xのサポートがバージョン 2.4.6で導入されたときには、ElasticsearchとOpenSearchの設定を区別するために新しいラベルが作成されました。
 
-検索エンジンの設定について詳しくは、[&#x200B; ユーザーガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=ja)を参照してください。
+検索エンジンの設定について詳しくは、[ ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html)を参照してください。
 
 ## 管理者から検索エンジンを設定します
 
 >[!TIP]
 >
->新しい検索エンジンのバージョンにアップグレードする方法については、[&#x200B; アップグレードの前提条件](../../upgrade/prepare/prerequisites.md)を参照してください。
+>新しい検索エンジンのバージョンにアップグレードする方法については、[ アップグレードの前提条件](../../upgrade/prepare/prerequisites.md)を参照してください。
 
 ElasticsearchまたはOpenSearchを使用するようにシステムを設定するには：
 
@@ -89,13 +104,13 @@ ElasticsearchまたはOpenSearchを使用するようにシステムを設定す
 1. **[!UICONTROL Page Cache]**&#x200B;の横にあるチェックボックスを選択します。
 1. 右上の&#x200B;**[!UICONTROL Actions]** リストから、**更新**&#x200B;をクリックします。
 
-   ![&#x200B; キャッシュ管理](../../assets/configuration/refresh-cache.png)
+   ![ キャッシュ管理](../../assets/configuration/refresh-cache.png)
 
 コマンドラインを使用してキャッシュをクリーンアップするには：[`bin/magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types)
 
 コマンドラインを使用してインデックスを再作成するには：
 
-1. [&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてCommerce サーバーにログインするか、切り替えます。
+1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてCommerce サーバーにログインするか、切り替えます。
 1. 次のいずれかのコマンドを入力します。
 
    カタログ検索インデックスのみを再インデックス化するには、次のコマンドを入力します。

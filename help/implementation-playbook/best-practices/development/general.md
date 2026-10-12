@@ -4,13 +4,23 @@ description: Adobe Commerce プロジェクトの開発に関する一般的な�
 feature: Best Practices
 role: Developer
 exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerceの一般的な開発のベストプラクティス
 
 このトピックでは、健全なAdobe Commerce開発プロセスのベースラインについて説明します。 開発者を導くための基本的なプロセス、コーディングの原則、アプリケーション設計の原則について説明します。
@@ -50,7 +60,7 @@ ht-degree: 0%
 ## バージョン管理
 
 モジュールのバージョンは、[Semantic Versioning 2.0.0標準](https://semver.org/)に準拠している必要があります。
-Adobe Commerce コードベースの依存関係は、[&#x200B; モジュールバージョン依存関係ガイドライン &#x200B;](https://developer.adobe.com/commerce/php/development/versioning/dependencies)に従う必要があります。
+Adobe Commerce コードベースの依存関係は、[ モジュールバージョン依存関係ガイドライン ](https://developer.adobe.com/commerce/php/development/versioning/dependencies)に従う必要があります。
 
 ## リビジョン管理
 
@@ -60,5 +70,5 @@ Adobe Commerce コードベースの依存関係は、[&#x200B; モジュール�
 
 1. [安全でない関数](https://developer.adobe.com/commerce/php/development/security/non-secure-functions)は使用しないでください。
 1. [XSS予防戦略](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)を適用する必要があります。
-1. [&#x200B; コンテンツセキュリティポリシー](https://developer.adobe.com/commerce/php/development/security/content-security-policies)を適用する必要があります。
+1. [ コンテンツセキュリティポリシー](https://developer.adobe.com/commerce/php/development/security/content-security-policies)を適用する必要があります。
 1. 新しいAdobe Commerce インスタンスは、まだ「セキュリティ修正の終了」日に達していないバージョンの最新のセキュリティリリースで配信する必要があります。 [Adobe Commerce Software Lifecycle Policy](../../../release/lifecycle-policy.md)を参照してください。

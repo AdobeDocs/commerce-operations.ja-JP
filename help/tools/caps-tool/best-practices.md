@@ -1,13 +1,22 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation]のベストプラクティスガイド'
-description: ' [!DNL Adobe Commerce Patching Automation] を使用してパッチを安全に計画、検証、適用し、デプロイメントリスクとサービスの中断を最小限に抑える方法について説明します。'
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+description: '[!DNL Adobe Commerce Patching Automation]を使用してパッチを安全に計画、検証、適用し、デプロイメントリスクとサービスの中断を最小限に抑える方法について説明します。'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 0%
-
 ---
-
 # [!DNL Adobe Commerce Patching Automation]のベストプラクティスガイド
 
 [!DNL Adobe Commerce Patching Automation]を使用したパッチの正常かつ安全な操作には、ベストプラクティスに従うことが不可欠です。 このガイドでは、効果的なパッチ操作、環境管理、およびオペレーショナルエクセレンスに関する包括的なベストプラクティスを提供します。
@@ -23,11 +32,11 @@ ht-degree: 0%
 * **Adobe Commerce Cloud アカウント**
   * Adobe Commerce Cloudのアクティブなサブスクリプション
   * 有効なAdobe Commerce ライセンス
-  * Adobe Commerce リポジトリにアクセスするように設定された[Composer認証キー](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
+  * Adobe Commerce リポジトリにアクセスするように設定された[Composer認証キー](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
   * プロジェクトと環境の権限
 
 * **環境リソース**
-  * プロジェクトには、パッチ操作のための追加のアクティブ統合環境を作成する能力があります。アクティブな環境制限について詳しくは、[Cloud Consoleでブランチを管理](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/project/console-branches)を参照してください
+  * プロジェクトには、パッチ操作のための追加のアクティブ統合環境を作成する能力があります。アクティブな環境制限について詳しくは、[Cloud Consoleでブランチを管理](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches)を参照してください
   * 十分なストレージ、CPU、およびメモリリソース
   * Adobeリポジトリへのネットワークアクセス
   * 同期のための安定した親環境

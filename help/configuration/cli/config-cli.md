@@ -2,13 +2,22 @@
 title: コマンドラインツール
 description: Adobe Commerce コマンドラインツールを使用して、インストールおよび設定タスクを実行する方法を説明します。 CLI コマンドと管理機能について説明します。
 exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 0%
-
 ---
-
 # コマンドラインツール
 
 Commerceには、次のようなインストールおよび設定タスクを実行する1つのコマンドラインインターフェイス（`<magento_root>/bin/magento`）があります。
@@ -28,15 +37,15 @@ Commerceには、次のようなインストールおよび設定タスクを実
 - CLIは拡張可能なので、サードパーティの開発者はCLIに「プラグイン」できます。 これは、ユーザーの学習曲線を排除するという追加の利点があります。
 - 無効なモジュールのコマンドは表示されません。
 
-このトピックでは、CLIを使用したAdobe Commerce ソフトウェアの設定について説明します。 Commerceのインストールについて詳しくは、_インストールガイド_&#x200B;の[&#x200B; インストールフロー](../../installation/overview.md)を参照してください。
+このトピックでは、CLIを使用したAdobe Commerce ソフトウェアの設定について説明します。 Commerceのインストールについて詳しくは、_インストールガイド_&#x200B;の[ インストールフロー](../../installation/overview.md)を参照してください。
 
 ## 前提条件
 
 CLIの使用を開始する前に、次のことを確認してください。
 
-1. お使いのシステムは、_インストールガイド_&#x200B;の[&#x200B; システム要件](../../installation/system-requirements.md)で説明されている要件を満たしています。
+1. お使いのシステムは、_インストールガイド_&#x200B;の[ システム要件](../../installation/system-requirements.md)で説明されている要件を満たしています。
 1. _インストールガイド_&#x200B;の[前提条件](../../installation/prerequisites/overview.md)で説明したすべての前提条件タスクを完了しました。
-1. Commerce サーバーにログインしたら、Commerce ファイルシステムへの書き込み権限を持つユーザーに切り替えます。 _インストールガイド_&#x200B;の「[&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)への切り替え」を参照してください。
+1. Commerce サーバーにログインしたら、Commerce ファイルシステムへの書き込み権限を持つユーザーに切り替えます。 _インストールガイド_&#x200B;の「[ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)への切り替え」を参照してください。
 
 ## コマンドの実行
 

@@ -1,22 +1,31 @@
 ---
 title: データ移行の設定
-description: ' [!DNL Data Migration Tool]を使用してMagento 1からMagento 2への設定の移行を開始する方法について説明します。'
+description: '[!DNL Data Migration Tool]を使用してMagento 1からMagento 2への設定の移行を開始する方法について説明します。'
 exl-id: 6fc8285a-9f26-48a5-9034-49a6a1b66b40
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
-
 ---
-
 # データ移行の設定
 
 `Settings` モードでは、ストア、web サイト、および送料、支払い、税金設定などのシステム設定が移行されます。 データ移行[order](overview.md#migration-order)によると、最初に設定を移行する必要があります。
 
 開始する前に、次の手順を実行して準備します。
 
-1. [&#x200B; ファイルシステム所有者](../../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインします。
+1. [ ファイルシステム所有者](../../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインします。
 
 1. `/bin` ディレクトリに変更するか、システム `PATH`に追加してください。
 
@@ -54,7 +63,7 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 設定を移行する際に、システム設定を無視、名前変更、または変更することができます。 これには、`settings.xml` ファイルでカスタムルールを指定します。
 
-1. [&#x200B; ファイルシステム所有者](../../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインするか、切り替えます。
+1. [ ファイルシステム所有者](../../../installation/prerequisites/file-system/overview.md)としてアプリケーションサーバーにログインするか、切り替えます。
 
 1. 次のディレクトリに移動します。
 
@@ -80,7 +89,7 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 1. マッピング用の設定ファイルの新しい名前を指定するには、`path/to/config.xml` ファイルの`<settings_map_file>` タグを変更します。
 
-詳しくは、ツールの[仕様](../technical-specification.md)の[設定の移行モード &#x200B;](../technical-specification.md#settings-migration-mode)の節を参照してください。
+詳しくは、ツールの[仕様](../technical-specification.md)の[設定の移行モード ](../technical-specification.md#settings-migration-mode)の節を参照してください。
 
 ## 次の移行手順
 

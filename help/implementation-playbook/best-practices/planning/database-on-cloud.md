@@ -4,13 +4,25 @@ description: Adobe Commerceをクラウドインフラストラクチャにデ�
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
-
 ---
-
 # データベース設定のベストプラクティス
 
 Adobe Commerceをクラウドインフラストラクチャにデプロイする際に、データベースのパフォーマンスを向上させ、データベースを効率的に操作するためのベストプラクティスについて説明します。
@@ -37,7 +49,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### ストレージ エンジンをInnoDBに変更する
 
-テーブルを宣言する`db_schema.xml` ファイルで、対応する`table` ノードの`engine`属性値を`innodb`に設定します。 参照については、開発者ドキュメントの[宣言スキーマの設定/テーブルノード &#x200B;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration)を参照してください。
+テーブルを宣言する`db_schema.xml` ファイルで、対応する`table` ノードの`engine`属性値を`innodb`に設定します。 参照については、開発者ドキュメントの[宣言スキーマの設定/テーブルノード ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration)を参照してください。
 
 宣言型スキームは、Adobe Commerce on cloud infrastructure バージョン 2.3で導入されました。
 
@@ -59,9 +71,9 @@ Adobeでは、Adobe Commerce アプリケーションのサードパーティ検
 
 設定手順については、Adobe Commerce on cloudの開発者向けガイドを参照してください。
 
-- [OpenSearch サービスの設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/opensearch)
+- [OpenSearch サービスの設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch)
 
-- [Elasticsearch サービスの設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/elasticsearch)
+- [Elasticsearch サービスの設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/elasticsearch)
 
 ## カスタムトリガーを避ける
 
@@ -76,14 +88,14 @@ Adobeでは、Adobe Commerce アプリケーションのサードパーティ検
 
 ## [!DNL ECE-Tools]をバージョン 2002.0.21以降にアップグレード {#ece-tools-version}
 
-クローンのデッドロックに関する潜在的な問題を回避するには、ECE-Toolsをバージョン 2002.0.21以降にアップグレードします。 手順については、開発者ドキュメントの「[&#x200B; アップデート `ece-tools` バージョン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)」を参照してください。
+クローンのデッドロックに関する潜在的な問題を回避するには、ECE-Toolsをバージョン 2002.0.21以降にアップグレードします。 手順については、開発者ドキュメントの「[ アップデート `ece-tools` バージョン ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)」を参照してください。
 
 ## インデクサーモードを安全に切り替える
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
 インデックスを切り替えると、[!DNL data definition language] （DDL）ステートメントが生成され、データベースのロックの原因となるトリガーが作成されます。 この問題を回避するには、web サイトをメンテナンスモードにし、設定を変更する前にcron ジョブを無効にします。
-手順については、*Adobe Commerce設定ガイド*&#x200B;の「[&#x200B; インデックスを設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=ja#configure-indexers-1)」を参照してください。
+手順については、*Adobe Commerce設定ガイド*&#x200B;の「[ インデックスを設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1)」を参照してください。
 
 ## 実稼動環境でDDL ステートメントを実行しない
 
@@ -95,7 +107,7 @@ DDL ステートメントを実行する必要がある場合は、web サイト
 
 管理者からの注文アーカイブを有効にして、注文データの増加に合わせてセールステーブルに必要なスペースを削減します。 アーカイブは、MySQL ディスク容量を節約し、チェックアウトのパフォーマンスを向上させます。
 
-Adobe Commerce Merchant ドキュメントの[&#x200B; アーカイブを有効にする](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html?lang=ja)を参照してください。
+Adobe Commerce Merchant ドキュメントの[ アーカイブを有効にする](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html)を参照してください。
 
 ## 追加情報
 

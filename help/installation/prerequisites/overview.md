@@ -2,18 +2,27 @@
 title: オンプレミスのインストールの前提条件
 description: Adobe Commerceのオンプレミスインストールに必要なソフトウェアの依存関係について詳しくは、こちらを参照してください。
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 1%
-
 ---
-
 # オンプレミスのインストールの前提条件
 
 Adobe Commerceをインストールする前に、次の操作を行う必要があります。
 
-* 「*Commerce オンプレミス*」タブに記載されている[&#x200B; システム要件](../system-requirements.md)を満たす1つ以上のホストを設定します。
+* 「*Commerce オンプレミス*」タブに記載されている[ システム要件](../system-requirements.md)を満たす1つ以上のホストを設定します。
 * 負荷分散を使用して複数のweb ノードを設定する場合は、アプリケーションをインストールする&#x200B;_前_&#x200B;に、システムのその部分を設定してテストします。
 * インストール中のさまざまな時点でシステム全体をバックアップして、問題が発生した場合にロールバックできるようにします。
 
@@ -21,7 +30,7 @@ Adobe Commerceをインストールする前に、次の操作を行う必要が
 >
 >マシンへのルートユーザーアクセス権を持つ&#x200B;**開発環境**&#x200B;にAdobe Commerceをインストールし、マシンのセキュリティを高く確保する必要がないことを&#x200B;**および**&#x200B;と仮定します。 より安全なマシンを設定する場合は、追加のサポートを得るためにネットワーク管理者に相談することを強くお勧めします。
 
-オペレーティングシステムのソフトウェアを更新してアップグレードすることを強くお勧めします。 これらのアップグレードは、将来の問題を防ぐ可能性のあるセキュリティとソフトウェアの修正を提供します。 どういうことか分からない？ [&#x200B; インストールの概要ページ &#x200B;](../overview.md)をご覧ください。
+オペレーティングシステムのソフトウェアを更新してアップグレードすることを強くお勧めします。 これらのアップグレードは、将来の問題を防ぐ可能性のあるセキュリティとソフトウェアの修正を提供します。 どういうことか分からない？ [ インストールの概要ページ ](../overview.md)をご覧ください。
 
 `root`権限を持つユーザーとして次のコマンドを入力します。
 
@@ -66,11 +75,11 @@ Apacheをインストールまたはアップグレードするには、[Apache]
 
 ### PHP
 
-サポートされているバージョンのPHPについては[&#x200B; システム要件](../system-requirements.md)の「*Commerce オンプレミス*」タブを、PHP要件については[PHP](../system-requirements.md#php-settings)を参照してください。
+サポートされているバージョンのPHPについては[ システム要件](../system-requirements.md)の「*Commerce オンプレミス*」タブを、PHP要件については[PHP](../system-requirements.md#php-settings)を参照してください。
 
 ### MySQL
 
-インストールするAdobe Commerceのバージョンと互換性のあるバージョンのMySQLがあることを確認します。 サポートされているバージョンについては、[&#x200B; システム要件](../system-requirements.md)の「*Commerce オンプレミス*」タブを参照してください。
+インストールするAdobe Commerceのバージョンと互換性のあるバージョンのMySQLがあることを確認します。 サポートされているバージョンについては、[ システム要件](../system-requirements.md)の「*Commerce オンプレミス*」タブを参照してください。
 
 ```shell
 mysql -u <database root user or database owner name> -p

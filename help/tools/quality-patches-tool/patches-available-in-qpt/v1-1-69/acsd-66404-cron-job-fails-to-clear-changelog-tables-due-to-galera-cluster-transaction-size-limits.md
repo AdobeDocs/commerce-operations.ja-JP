@@ -1,17 +1,29 @@
 ---
-title: 'ACSD-66404:  [!DNL Galera Cluster]  トランザクションサイズの制限により、Cron ジョブで変更ログテーブルをクリアできない'
-description: ACSD-66404 パッチを適用して、cron ジョブで変更ログテーブルがクリアされず、これらのテーブル内の大量のデータが発生した場合に [!DNL Galera Cluster] 問題が発生するAdobe Commerceの問題を修正します。
+title: 'ACSD-66404: [!DNL Galera Cluster]個のトランザクションサイズの制限により、Cron ジョブで変更ログテーブルをクリアできない'
+description: ACSD-66404 パッチを適用して、cron ジョブで変更ログテーブルがクリアされず、これらのテーブル内の大量のデータが発生した場合に[!DNL Galera Cluster]件の問題が発生するAdobe Commerceの問題を修正します。
 feature: System
 role: Admin, Developer
 type: Troubleshooting
 exl-id: d7ad3b11-aee6-4a26-8892-369fbfe6932e
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '382'
 ht-degree: 0%
-
 ---
-
 # ACSD-66404: [!DNL Galera Cluster]個のトランザクションサイズの制限により、Cron ジョブで変更ログテーブルをクリアできない
 
 ACSD-66404 パッチは、cron ジョブが変更ログテーブルをクリアできない問題を修正し、大量のデータを処理する際に[!DNL Galera Cluster]の問題を引き起こします。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69がインストールされている場合に利用できます。 パッチ IDはACSD-66404です。 この問題は、Adobe Commerce 2.4.9で修正される予定です。
@@ -28,7 +40,7 @@ ACSD-66404 パッチは、cron ジョブが変更ログテーブルをクリア�
 
 >[!NOTE]
 >
->このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
+>このパッチは、新しい[!DNL Quality Patches Tool] リリースを含む他のバージョンに適用される可能性があります。 パッチがAdobe Commerceのバージョンと互換性があるかどうかを確認するには、`magento/quality-patches` パッケージを最新バージョンに更新し、[[!DNL Quality Patches Tool]：パッチの検索ページ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で互換性を確認します。 パッチ IDを検索キーワードとして使用して、パッチを検索します。
 
 ## イシュー
 
@@ -53,10 +65,10 @@ Cron ジョブが変更ログ テーブルをクリアせず、これらのテ�
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」ガイド
+* クラウドインフラストラクチャ上のAdobe Commerce:「[ アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」ガイド
 
 ## 関連トピックス
 
 [!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール

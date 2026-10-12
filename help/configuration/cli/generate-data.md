@@ -3,13 +3,27 @@ title: パフォーマンステスト用のデータ生成
 description: Adobe Commerceのパフォーマンステスト用に大量のデータを生成する方法について説明します。 データ生成プロファイルとテスト戦略の詳細。
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 9%
-
 ---
-
 # パフォーマンステストデータ
 
 ## プロファイル
@@ -52,7 +66,7 @@ _プロファイル_ （小、中、大、および超大）を使用して、�
 >
 >パフォーマンスのテスト中に[!DNL Adobe I/O Events for Adobe Commerce]を使用してイベントを実装する場合は、[events](https://developer.adobe.com/commerce/extensibility/events/)をサブスクライブする前に、このコマンドを実行してください。 最初にイベントを購読すると、エラーが発生する可能性があります。
 
-この節で説明するようにコマンドを実行します。 コマンドの実行後、すべてのインデクサーを[&#x200B; インデックス再作成](../cli/manage-indexers.md)する必要があります。
+この節で説明するようにコマンドを実行します。 コマンドの実行後、すべてのインデクサーを[ インデックス再作成](../cli/manage-indexers.md)する必要があります。
 
 コマンドオプション：
 

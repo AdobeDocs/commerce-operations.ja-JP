@@ -2,13 +2,22 @@
 title: 翻訳辞書と言語パッケージ
 description: Adobe Commerceの翻訳辞書を生成し、言語パッケージを構築する方法について説明します。 ローカライゼーションと多言語ストアの設定。
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
-
 ---
-
 # ローカライズ
 
 {{file-system-owner}}
@@ -35,7 +44,7 @@ Commerceの翻訳機能を利用すれば、次の機能を生み出すことで
 
 1. 翻訳ディクショナリを言語パッケージにパッケージ化し、そのパッケージをCommerce ストア管理者に提供できます。
 
-1. 管理画面で、ストア管理者[が翻訳を設定します](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-localize)。
+1. 管理画面で、ストア管理者[が翻訳を設定します](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize)。
 
 コマンドオプション：
 
@@ -48,7 +57,7 @@ bin/magento i18n:collect-phrases [-o|--output="<csv file path and name>"] [-m|--
 | パラメーター | 値 | 必要ですか？ |
 |--- |--- |--- |
 | `<path to directory to translate>` | 翻訳可能なコードを持つディレクトリへのパス。つまり、翻訳するフレーズを持つPHP、PHTML、またはXML ファイルです。<br><br> ツールは、入力したパスで検索を開始し、そのパスに含まれるすべてのファイルとサブディレクトリを検索します。<br><br>`-m --magento`を使用する場合は、このパラメーターを使用しないでください。 | はい（辞書）、いいえ（パッケージ）。 |
-| `-m --magento` | この翻訳ディクショナリから言語パッケージを作成する必要があります。 使用する場合は、bin/magentoを含むディレクトリを検索します。 このオプションを選択すると、ディクショナリの各行にテーマまたはモジュールが追加されます。<br><br> サンプルは<br><br>&quot;No Items Found&quot;,&quot;No Items Found&quot;,module,Magento_Wishlist | いいえ |
+| `-m --magento` | この翻訳ディクショナリから言語パッケージを作成する必要があります。 使用する場合は、bin/magentoを含むディレクトリを検索します。 このオプションは、ディクショナリの各行にテーマまたはモジュールを追加します。<br><br> サンプルは次のとおりです：<br><br>&quot;No Items Found&quot;,&quot;No Items Found&quot;,module,Magento_Wishlist | いいえ |
 | `-o --output="<path>"` | 作成する翻訳辞書CSV ファイルの絶対ファイルシステムパスとファイル名を指定します。 入力する値では、大文字と小文字が区別されます。 CSV ファイルの名前は、文字の大文字と小文字を含むロケール名と完全に一致している必要があります。<br><br>このパラメーターを省略すると、出力はstdoutに送信されます。 | いいえ |
 
 >[!INFO]
@@ -91,7 +100,7 @@ Product 'Multimeter-2000' has been added to shopping cart.
 
 1. [単語やフレーズを収集して翻訳する](#generate-a-translation-dictionary)。 （`--magento` パラメーターが必要です）。
 1. [言語パッケージコマンドを実行します](#run-the-language-package-command)。
-1. [&#x200B; ディレクトリとファイルを作成](#create-directories-and-files)。
+1. [ ディレクトリとファイルを作成](#create-directories-and-files)。
 1. （オプション） [1つの言語に対して複数のパッケージを設定](#configure-multiple-packages-for-a-language)。
 
 ### 言語パッケージコマンドの実行
@@ -106,7 +115,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 | パラメーター | 値 | 必要ですか？ |
 |--- |--- |--- |
-| `<source>` | 言語パッケージへの分類に必要な翻訳辞書とメタ情報を組み合わせたCSV ファイルの絶対ファイルシステムパスとファイル名。<br><br>[`bin/magento i18n:collect-phrases`](#generate-a-translation-dictionary)を使用してCSV ファイルを作成し、[&#x200B; ディレクトリとファイルの作成](#create-directories-and-files)で説明したように言語パッケージを作成します。 | はい |
+| `<source>` | 言語パッケージへの分類に必要な翻訳辞書とメタ情報を組み合わせたCSV ファイルの絶対ファイルシステムパスとファイル名。<br><br>[`bin/magento i18n:collect-phrases`](#generate-a-translation-dictionary)を使用してCSV ファイルを作成し、[ ディレクトリとファイルの作成](#create-directories-and-files)で説明したように言語パッケージを作成します。 | はい |
 | `<locale>` | [ISO 639-1](https://www.iso.org/iso-639-language-codes.html) （言語）および[ISO 3166](https://www.iso.org/iso-3166-country-codes.html) （国）の言語の識別子は、結果のすべてのCSV ファイルのファイル名として使用されます。 例：`de_DE`、`pt_PT`、`pt_BR`。 | はい |
 | `-m --mode` | ターゲットファイルが存在する場合は、既存の言語パッケージを置き換えるか、新しい言語パックと結合するかを指定します。 結合すると、既存のフレーズが上書きされ、新しいフレーズが追加されます。<br><br>値：結合または置換（デフォルト）。 | いいえ |
 | `-d --allow-duplicates` | 言語パックで重複を許可するには、このオプションを含めます。 そうでなければ、異なる翻訳を持つ複数のエントリで同じフレーズが発生した場合、コマンドはエラーで失敗します。 | いいえ |
@@ -221,7 +230,7 @@ Commerce アプリケーションが`en_GB` パッケージ内の単語または
    >
    >CSV ファイル名は、文字の大文字と小文字を含め、ロケールが&#x200B;_完全に_&#x200B;一致している必要があります。
 
-1. [これらのガイドライン &#x200B;](#translation-guidelines)を使用して、単語やフレーズを翻訳します。
+1. [これらのガイドライン ](#translation-guidelines)を使用して、単語やフレーズを翻訳します。
 1. 必要に応じて、`xx_YY.csv`を`/var/www/html/magento2/app/code/ExampleCorp/SampleModule/i18n`またはモジュールのテーマディレクトリにコピーします（翻訳ディクショナリがモジュール用かテーマ用かによって異なります）。
 
 ### 例：言語パッケージの作成
@@ -238,7 +247,7 @@ Commerce アプリケーションが`en_GB` パッケージ内の単語または
    >
    >CSV ファイル名は、文字の大文字と小文字を含め、ロケールが&#x200B;_完全に_&#x200B;一致している必要があります。
 
-1. [これらのガイドライン &#x200B;](#translation-guidelines)を使用して、単語やフレーズを翻訳します。
+1. [これらのガイドライン ](#translation-guidelines)を使用して、単語やフレーズを翻訳します。
 1. 言語パッケージを作成します。
 
    ```shell

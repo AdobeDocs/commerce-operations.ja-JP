@@ -3,13 +3,27 @@ title: セキュリティを向上させるためにdocrootを変更する
 description: Adobe Commerce オンプレミスのファイルシステムへのブラウザーベースの不正アクセスを防止します。
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '594'
 ht-degree: 0%
-
 ---
-
 # セキュリティを向上させるためにdocrootを変更する
 
 Apache web サーバーを使用した標準インストールでは、Adobe Commerceがデフォルトのweb ルート `/var/www/html/magento2`にインストールされます。
@@ -60,7 +74,7 @@ server {
 
 >[!NOTE]
 >
->詳しくは、[前提条件](../prerequisites/overview.md)および[&#x200B; インストールガイド &#x200B;](../overview.md)を参照してください。
+>詳しくは、[前提条件](../prerequisites/overview.md)および[ インストールガイド ](../overview.md)を参照してください。
 
 ## &#x200B;1. サーバー設定の編集
 
@@ -132,11 +146,11 @@ server {
 ]
 ```
 
-詳しくは、[env.php リファレンス &#x200B;](../../configuration/reference/config-reference-envphp.md)を参照してください。
+詳しくは、[env.php リファレンス ](../../configuration/reference/config-reference-envphp.md)を参照してください。
 
 ## &#x200B;4. モードを切り替え
 
-`production`と`developer`を含む[&#x200B; アプリケーションモード &#x200B;](../../configuration/bootstrap/application-modes.md)は、セキュリティを向上させ、開発を容易にするために設計されています。 名前が示すように、アプリケーションを拡張またはカスタマイズする場合は`developer` モードに切り替え、ライブ環境で実行する場合は`production` モードに切り替える必要があります。
+`production`と`developer`を含む[ アプリケーションモード ](../../configuration/bootstrap/application-modes.md)は、セキュリティを向上させ、開発を容易にするために設計されています。 名前が示すように、アプリケーションを拡張またはカスタマイズする場合は`developer` モードに切り替え、ライブ環境で実行する場合は`production` モードに切り替える必要があります。
 
 モードの切り替えは、サーバー設定が正しく動作していることを確認する際に重要な手順です。 CLI ツールを使用してモードを切り替えることができます。
 
@@ -172,12 +186,12 @@ web ブラウザーのストアフロントに移動し、すべてが機能し�
 
    次の図は、ストアフロントページの例を示しています。 次のように表示される場合、インストールは成功しました。
 
-   ![&#x200B; インストールが成功したことを確認するストアフロント &#x200B;](../../assets/installation/install-success_store.png)
+   ![ インストールが成功したことを確認するストアフロント ](../../assets/installation/install-success_store.png)
 
-   ページに404 （見つかりません）が表示されたり、画像、CSS、JSなどの他のアセットが読み込まれない場合は、[&#x200B; トラブルシューティングの節](https://support.magento.com/hc/en-us/articles/360032994352)を参照してください。
+   ページに404 （見つかりません）が表示されたり、画像、CSS、JSなどの他のアセットが読み込まれない場合は、[ トラブルシューティングの節](https://support.magento.com/hc/en-us/articles/360032994352)を参照してください。
 
 1. ブラウザーからアプリケーションディレクトリにアクセスしてみてください。 アドレスバーのサーバーのホスト名またはIP アドレスにディレクトリ名を追加します。
 
    404または「アクセス拒否」メッセージが表示された場合は、ファイルシステムへのアクセスが正常に制限されています。
 
-   ![&#x200B; アクセスが拒否されました](../../assets/installation/access-denied.png)
+   ![ アクセスが拒否されました](../../assets/installation/access-denied.png)

@@ -1,41 +1,50 @@
 ---
-title: カスタム cron ジョブと cron グループのリファレンス
-description: Adobe Commerceで cron グループと crontab を使用して cron をカスタマイズする方法を説明します。 カスタムモジュールの設定とスケジュールされたタスクの設定について説明します。
+title: カスタム cron ジョブとcron グループ参照
+description: Adobe Commerceでcron グループとcrontabsを使用してcronをカスタマイズする方法について説明します。 カスタムモジュールの設定とスケジュールされたタスクの設定について説明します。
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '549'
 ht-degree: 0%
-
 ---
+# crons リファレンスのカスタマイズ
 
-# Cron リファレンスのカスタマイズ
+このトピックでは、カスタムモジュール用にcrontabsとcron グループを設定する方法を説明します。 カスタムモジュールでタスクを定期的にスケジュールする必要がある場合は、そのモジュールにcrontabを設定する必要があります。 _crontab_&#x200B;はcron ジョブ設定です。
 
-このトピックは、カスタムモジュールの crontab とオプションで cron グループの設定に役立ちます。 カスタムモジュールでタスクを定期的にスケジュールする必要がある場合は、そのモジュールの crontab を設定する必要があります。 _crontab_ は cron ジョブ設定です。
+オプションで、カスタムグループを設定できます。特に、そのグループで定義されたcron ジョブを他のcron ジョブとは独立して実行できます。
 
-オプションとして、カスタムグループを設定できます。このグループを使用することで、他の cron ジョブとは無関係に、そのグループで定義された cron ジョブを実行できます。
+ステップバイステップチュートリアルについては、[ カスタム cron ジョブとcron グループの設定（チュートリアル） ](custom-cron-tutorial.md)を参照してください。
 
-詳しい手順のチュートリアルについては、[&#x200B; カスタム cron ジョブと cron グループの設定（チュートリアル） &#x200B;](custom-cron-tutorial.md) を参照してください。
+cron ジョブの概要については、[cron ジョブの設定](../cli/configure-cron-jobs.md)を参照してください。
 
-cron ジョブの概要については、[cron ジョブの設定 &#x200B;](../cli/configure-cron-jobs.md) を参照してください。
+## cron グループの設定
 
-## Cron グループの設定
+この節では、カスタムモジュールのcron グループをオプションで作成する方法について説明します。 これを行う必要がない場合は、次のセクションに進みます。
 
-この節では、カスタムモジュールの cron グループをオプションで作成する方法について説明します。 これを行う必要がない場合は、次の節に進みます。
+_cron グループ_&#x200B;は、一度に複数のプロセスでcronを簡単に実行できる論理グループです。 ほとんどのCommerce モジュールは`default` cron グループを使用しています。一部のモジュールは`index` グループを使用しています。
 
-_cron グループ_ は、一度に複数のプロセスに対して cron を簡単に実行できる論理グループです。 ほとんどのCommerce モジュールは `default` cron グループを使用します。一部のモジュールは `index` グループを使用します。
+カスタムモジュールにcronを実装する場合は、`default` グループまたは別のグループを使用できます。
 
-カスタムモジュール用に cron を実装する場合は、`default` グループを使用するか、別のグループを使用するかを選択できます。
+**モジュールのcron グループを設定するには**:
 
-**モジュールに cron グループを設定するには**:
-
-モジュールディレクトリに `crontab.xml` ファイルを作成します。
+モジュールディレクトリに`crontab.xml` ファイルを作成します。
 
 ```text
 <your component base dir>/<vendorname>/module-<name>/etc/crontab.xml
 ```
 
-1 つのグループの場合、ファイルには次の内容が含まれている必要があります。
+1つのグループの場合、ファイルには次の内容が含まれている必要があります。
 
 ```xml
 <?xml version="1.0"?>
@@ -48,17 +57,17 @@ _cron グループ_ は、一度に複数のプロセスに対して cron を簡
 </config>
 ```
 
-ここで、
+どこで：
 
 | 値 | 説明 |
 |---|---|
-| `group_name` | Cron グループの名前。 グループ名は一意である必要はありません。 一度に 1 つのグループに対して cron を実行できます。 |
-| `job_name` | この Cron ジョブの一意の ID。 |
+| `group_name` | cron グループの名前。 グループ名は一意である必要はありません。 cronは一度に1つのグループに対して実行できます。 |
+| `job_name` | このcron ジョブの一意のID。 |
 | `classpath` | インスタンス化するクラス （クラスパス）。 |
-| `method` | 呼び出 `classpath` メソッド。 |
-| `time` | cron 形式でスケジュールします。 スケジュールがCommerce データベースまたは他のストレージで定義されている場合は、このパラメーターを省略します。 |
+| `method` | 呼び出す`classpath`のメソッド。 |
+| `time` | cron形式でスケジュールします。 スケジュールがCommerce データベースまたはその他のストレージで定義されている場合は、このパラメーターを省略します。 |
 
-2 つのグループを持つ結果の `crontab.xml` は、次のようになります。
+2つのグループを持つ結果の`crontab.xml`は次のようになります。
 
 ```xml
 <?xml version="1.0"?>
@@ -82,11 +91,11 @@ _cron グループ_ は、一度に複数のプロセスに対して cron を簡
 </config>
 ```
 
-例として、[Magento_Customer crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml) を参照してください。
+例として、[Magento_Customer crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml)を参照してください。
 
 ### Cron グループオプションの指定
 
-新しいグループを宣言し、次の場所にある `cron_groups.xml` ファイルを介して設定オプション（すべてのグループがストアビュースコープで実行される）を指定できます。
+新しいグループを宣言し、次の場所にある`cron_groups.xml` ファイルを使用して、その構成オプション（すべてストアビュースコープで実行）を指定できます。
 
 ```text
 <your component base dir>/<vendorname>/module-<name>/etc/cron_groups.xml
@@ -109,23 +118,23 @@ _cron グループ_ は、一度に複数のプロセスに対して cron を簡
 </config>
 ```
 
-ここで、
+どこで：
 
 | オプション | 説明 |
 | -------------------------- | ------------------------------------------------------------------------------------------------------ |
-| `schedule_generate_every` | スケジュールが `cron_schedule` テーブルに書き込まれる頻度（分）。 |
-| `schedule_ahead_for` | スケジュールが `cron_schedule` テーブルに書き込まれる前の時間（分単位）。 |
-| `schedule_lifetime` | Cron ジョブを開始しなければならない時間（分単位）、または Cron ジョブを見逃したと見なす時間（「遅すぎる」）。 |
-| `history_cleanup_every` | Cron 履歴がデータベースに保持される時間（分単位）。 |
-| `history_success_lifetime` | 正常に完了した cron ジョブの記録がデータベースに保持される時間（分単位）。 |
-| `history_failure_lifetime` | 失敗した cron ジョブの記録がデータベースに保持される時間（分単位）。 |
-| `use_separate_process` | 別の php プロセスでこの cron グループのジョブを実行します。 |
+| `schedule_generate_every` | スケジュールが`cron_schedule` テーブルに書き込まれる頻度（分単位）。 |
+| `schedule_ahead_for` | スケジュールが`cron_schedule` テーブルに書き込まれる前の時間（分単位）。 |
+| `schedule_lifetime` | cron ジョブを開始する必要がある時間（分単位）またはcron ジョブが見逃されたと見なされる時間（「実行が遅すぎます」）。 |
+| `history_cleanup_every` | cron履歴がデータベースに保持される時間（分単位）。 |
+| `history_success_lifetime` | 正常に完了したcron ジョブのレコードがデータベースに保持される時間（分単位）。 |
+| `history_failure_lifetime` | 失敗したcron ジョブのレコードがデータベースに保持される時間（分単位）。 |
+| `use_separate_process` | このcron グループのジョブを別のphp プロセスで実行する |
 
-## Cron ジョブの無効化
+## cron ジョブを無効にする
 
-Cron ジョブには、`disable` 監視者 [&#x200B; 向けの &#x200B;](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers) 機能はありません。 ただし、cron ジョブは、次の手法を使用して無効にすることができます。`schedule` 発生することのない日付を含む時間を無効にします。
+Cron ジョブには、[ オブザーバー](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers)と同様に`disable`機能がありません。 ただし、cron ジョブは、次の手法を使用して無効にできます。`schedule`は、発生しない日付を含む時間です。
 
-例えば、モジュールで定義した `visitor_clean` cron ジョブ `Magento_Customer` 無効にします。
+例えば、`Magento_Customer` モジュールで定義された`visitor_clean` cron ジョブを無効にします。
 
 ```xml
 ...
@@ -137,7 +146,7 @@ Cron ジョブには、`disable` 監視者 [&#x200B; 向けの &#x200B;](https:/
 ...
 ```
 
-`visitor_clean` cron ジョブを無効にするには、カスタムモジュールを作成し、`visitor_clean` cron ジョブを次の `schedule` うに書き換えます。
+`visitor_clean` cron ジョブを無効にするには、カスタムモジュールを作成し、`visitor_clean` cron ジョブ `schedule`を書き換えます。
 
 ```xml
 ...
@@ -149,4 +158,4 @@ Cron ジョブには、`disable` 監視者 [&#x200B; 向けの &#x200B;](https:/
 ...
 ```
 
-現在、`visitor_clean` cron ジョブは、2 月 30 日（PT）の 00:00 に実行するように設定されています。この日には実行されません。
+これで、`visitor_clean` cron ジョブが2月30日の00:00に実行されるように設定されました。この日付は実行されません。

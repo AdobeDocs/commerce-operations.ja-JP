@@ -2,30 +2,39 @@
 title: Adobe Commerceのアンインストールまたは再インストール
 description: Adobe Commerceのオンプレミスインストールをアンインストールして再インストールするには、次の手順に従います。
 exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerceのアンインストールまたは再インストール
 
-これらのコマンドを使用する前に、アプリケーションを[&#x200B; インストールする必要があります](../tutorials/install.md)。
+これらのコマンドを使用する前に、アプリケーションを[ インストールする必要があります](../tutorials/install.md)。
 
 ## アプリケーションの更新
 
 アプリケーションを更新するには：
 
-* アーカイブからソフトウェアをインストールした場合、または「composer-create-project」を使用した場合は、[&#x200B; アップグレードガイド &#x200B;](../../upgrade/overview.md)を参照してください。
-* 提供元の開発者（つまり、`git clone`を使用している）の場合は、[&#x200B; アプリケーションの更新](../../upgrade/developer/git-installs.md)を参照してください。
+* アーカイブからソフトウェアをインストールした場合、または「composer-create-project」を使用した場合は、[ アップグレードガイド ](../../upgrade/overview.md)を参照してください。
+* 提供元の開発者（つまり、`git clone`を使用している）の場合は、[ アプリケーションの更新](../../upgrade/developer/git-installs.md)を参照してください。
 
 ## アプリケーションの再インストール
 
 コマンドラインからアプリケーションを再インストールする方法は、役割によって異なります。
 
-* アーカイブからソフトウェアをインストールした場合、または「composer-create-project」を使用した場合は、[&#x200B; インストール依存関係の更新](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)を参照してください。
-* 提供開発者（つまり、`git clone`を使用し始めた）の場合は、[&#x200B; インストール依存関係の更新](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)を参照してください。
+* アーカイブからソフトウェアをインストールした場合、または「composer-create-project」を使用した場合は、[ インストール依存関係の更新](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)を参照してください。
+* 提供開発者（つまり、`git clone`を使用し始めた）の場合は、[ インストール依存関係の更新](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)を参照してください。
 
 ## アプリケーションのアンインストール
 

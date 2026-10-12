@@ -2,13 +2,22 @@
 title: env.php リファレンス
 description: Adobe Commerceのenv.php ファイルの設定値とセクションについて説明します。 環境設定と設定オプションの詳細。
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 0%
-
 ---
-
 # env.php リファレンス
 
 `env.php` ファイルには、次のセクションが含まれています。
@@ -27,8 +36,8 @@ ht-degree: 0%
 | `downloadable_domains` | ダウンロード可能なドメインのリスト |
 | `install` | インストール日 |
 | `lock` | プロバイダー設定のロック |
-| `MAGE_MODE` | [&#x200B; アプリケーションモード &#x200B;](../bootstrap/application-modes.md) |
-| `queue` | [&#x200B; メッセージキュー](../queues/manage-message-queues.md)設定 |
+| `MAGE_MODE` | [ アプリケーションモード ](../bootstrap/application-modes.md) |
+| `queue` | [ メッセージキュー](../queues/manage-message-queues.md)設定 |
 | `resource` | 接続へのリソース名のマッピング |
 | `session` | セッションストレージデータ |
 | `system` | 管理画面で編集するフィールドを無効にします |
@@ -98,7 +107,7 @@ env.phpの`backend` ノードを使用して、Commerce管理者URLの&#x200B;**
 ]
 ```
 
-様々な[&#x200B; キャッシュタイプ &#x200B;](../cli/manage-cache.md)について詳しく説明します。
+様々な[ キャッシュタイプ ](../cli/manage-cache.md)について詳しく説明します。
 
 ## consumers_wait_for_messages
 
@@ -146,7 +155,7 @@ Commerceでは、暗号化キーを使用してパスワードやその他の機
 ]
 ```
 
-[暗号化キー](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/encryption-key)の詳細については、_Commerce ユーザーガイド_&#x200B;を参照してください。
+[暗号化キー](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)の詳細については、_Commerce ユーザーガイド_&#x200B;を参照してください。
 
 ## db
 
@@ -193,7 +202,7 @@ STOMP （ActiveMQ Artemis）の場合：
 
 ## ディレクトリ
 
-Web サーバーが`/pub` ディレクトリから[&#x200B; セキュリティの向上](../../installation/tutorials/docroot.md)のためにCommerce アプリを提供するように設定されている場合に設定する必要がある、オプションのディレクトリマッピングオプション。
+Web サーバーが`/pub` ディレクトリから[ セキュリティの向上](../../installation/tutorials/docroot.md)のためにCommerce アプリを提供するように設定されている場合に設定する必要がある、オプションのディレクトリマッピングオプション。
 
 ```conf
 'directories' => [
@@ -211,7 +220,7 @@ Web サーバーが`/pub` ディレクトリから[&#x200B; セキュリティ�
 ]
 ```
 
-[&#x200B; ダウンロード可能なドメイン &#x200B;](/help/tools/reference/commerce-on-premises.md#downloadabledomainsadd)の詳細をご覧ください。
+[ ダウンロード可能なドメイン ](/help/tools/reference/commerce-on-premises.md#downloadabledomainsadd)の詳細をご覧ください。
 
 ## インストール
 
@@ -227,7 +236,7 @@ Commerce アプリケーションのインストール日。
 
 ロックプロバイダーの設定は、`lock` ノードを使用して設定されます。
 
-[&#x200B; プロバイダ設定のロック &#x200B;](../../installation/tutorials/lock-provider.md)の詳細を説明します。
+[ プロバイダ設定のロック ](../../installation/tutorials/lock-provider.md)の詳細を説明します。
 
 ## MAGE_MODE
 
@@ -237,7 +246,7 @@ Commerce アプリケーションのインストール日。
 'MAGE_MODE' => 'developer'
 ```
 
-[&#x200B; アプリケーションモード &#x200B;](../cli/set-mode.md)の詳細をご覧ください。
+[ アプリケーションモード ](../cli/set-mode.md)の詳細をご覧ください。
 
 ## キュー
 
@@ -252,7 +261,7 @@ Commerce アプリケーションのインストール日。
 ]
 ```
 
-[&#x200B; メッセージキュー](https://developer.adobe.com/commerce/php/development/components/message-queues/)の詳細をご覧ください。
+[ メッセージキュー](https://developer.adobe.com/commerce/php/development/components/message-queues/)の詳細をご覧ください。
 
 ## リソース
 
@@ -276,7 +285,7 @@ Commerce アプリケーションのインストール日。
 ],
 ```
 
-[&#x200B; セッション &#x200B;](../storage/sessions.md)の詳細をご覧ください。
+[ セッション ](../storage/sessions.md)の詳細をご覧ください。
 
 ## x-frame-options
 

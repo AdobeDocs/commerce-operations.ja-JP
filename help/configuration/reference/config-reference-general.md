@@ -3,16 +3,34 @@ title: 一般設定パスのリファレンス
 description: Adobe Commerceの一般的および高度な設定パスと値について説明します。 システム、セキュリティ、管理設定オプションの詳細。
 feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 0%
-
 ---
-
 # 一般および詳細設定パスのリファレンス
 
-このトピックでは、一般的な設定パスと高度な設定パスおよび&#x200B;_not_ [機密値とシステム固有の値](config-reference-sens.md)をリストします。 [`magento app:config:dump` コマンド &#x200B;](../cli/export-configuration.md)は、これらの値をソース コントロールにある共有設定ファイル `app/etc/config.php`に書き込みます。
+このトピックでは、一般的な設定パスと高度な設定パスおよび&#x200B;_not_ [機密値とシステム固有の値](config-reference-sens.md)をリストします。 [`magento app:config:dump` コマンド ](../cli/export-configuration.md)は、これらの値をソース コントロールにある共有設定ファイル `app/etc/config.php`に書き込みます。
 
 任意の構成設定を上書きする方法や、機密設定を設定する方法については、[環境変数を使用して構成設定を上書きする](override-config-settings.md#environment-variables)を参照してください。
 

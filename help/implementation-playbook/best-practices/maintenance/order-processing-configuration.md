@@ -4,24 +4,36 @@ description: チェックアウトと注文処理のパフォーマンスを向�
 role: Admin, User
 feature: Best Practices
 exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
-
 ---
-
 # 注文処理の設定のベストプラクティス
 
 Commerce サイトでの注文量が増加すると、次のストア設定オプションを有効にすることで、チェックアウトのパフォーマンスと注文処理を最適化できます。
 
 - **[!UICONTROL Asynchronous indexing]** – このオプションを有効にすると、多数の注文が同時に行われる場合に発生する可能性のある、データベースのロックと処理速度の低下を防ぐことができます。
 - **[!UICONTROL Asynchronous email notifications]** – このオプションを有効にすると、チェックアウトと注文処理のメール通知をすぐに送信するのではなく、指定された間隔で送信して、チェックアウトのパフォーマンスを高速化できます。
-- **[!UICONTROL Enable Archiving]** – このオプションを有効にすると、注文、請求書、出荷、およびクレジット メモのパフォーマンスが向上し、ワークスペースに不要な情報がなくなるため、現在のビジネスに集中できるようになります。 「[&#x200B; アーカイブを有効にする](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/order-archive)」を参照してください。
+- **[!UICONTROL Enable Archiving]** – このオプションを有効にすると、注文、請求書、出荷、およびクレジット メモのパフォーマンスが向上し、ワークスペースに不要な情報がなくなるため、現在のビジネスに集中できるようになります。 「[ アーカイブを有効にする](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive)」を参照してください。
 
 ## 影響を受ける製品とバージョン
 
-[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
+[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
@@ -38,7 +50,7 @@ Commerce サイトでの注文量が増加すると、次のストア設定オ�
 
 - デフォルトモードまたは実稼動モードのAdobe Commerce オンプレミスサイトの場合は、AdminでGrid Settings設定を更新して非同期インデックス作成を有効にします。
 
-  [&#x200B; スケジュールされたグリッドの更新とインデックス再作成の有効化](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html?lang=ja#enable-scheduled-grid-updates-and-reindexing)を参照してください
+  [ スケジュールされたグリッドの更新とインデックス再作成の有効化](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)を参照してください
 
   >[!WARNING]
   >

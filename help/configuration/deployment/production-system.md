@@ -2,13 +2,22 @@
 title: 実稼動システムの設定
 description: Commerce アプリケーションの実稼動システムを設定する方法について説明します。
 exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
-
 ---
-
 # 実稼動システムの設定
 
 1つの生産システムを持つことができます。 次の条件をすべて満たしている必要があります。
@@ -16,13 +25,13 @@ ht-degree: 0%
 - すべてのCommerce コードは、開発およびビルドシステムと同じリポジトリ内のソースコントロールにあります
 - ソース管理に&#x200B;_インクルード_&#x200B;が含まれていることを確認してください。
 
-   - `app/etc/config.php`
-   - `generated` ディレクトリ （およびサブディレクトリ）
-   - `pub/media` ディレクトリ
-   - `pub/media/wysiwyg` ディレクトリ （およびサブディレクトリ）
-   - `pub/static` ディレクトリ （およびサブディレクトリ）
+  - `app/etc/config.php`
+  - `generated` ディレクトリ （およびサブディレクトリ）
+  - `pub/media` ディレクトリ
+  - `pub/media/wysiwyg` ディレクトリ （およびサブディレクトリ）
+  - `pub/static` ディレクトリ （およびサブディレクトリ）
 
-- Commerce 2.2以降をインストールし、[実稼動モード &#x200B;](../bootstrap/application-modes.md#production-mode)に設定する必要があります
+- Commerce 2.2以降をインストールし、[実稼動モード ](../bootstrap/application-modes.md#production-mode)に設定する必要があります
 - このファイル システムには、[開発、ビルド、および実稼動システムの前提条件](../deployment/prerequisites.md)で説明されているように、ファイル システムの所有権と権限が設定されています。
 
 ## 実稼動マシンの設定
@@ -68,7 +77,7 @@ ht-degree: 0%
 
 機密値を設定するには：
 
-1. [機密値リファレンス &#x200B;](../reference/config-reference-sens.md)を使用して、設定する値を検索します。
+1. [機密値リファレンス ](../reference/config-reference-sens.md)を使用して、設定する値を検索します。
 1. 設定の設定パスをメモします。
 1. 本番システムにファイルシステム所有者としてログインするか、ファイルシステム所有者に切り替えます。
 1. Commerceのインストールディレクトリに移動します。

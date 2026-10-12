@@ -2,13 +2,22 @@
 title: サードパーティ製の拡張機能を管理
 description: Adobe Commerce拡張機能をインストール、有効化、アップグレード、アンインストールするには、次の手順に従います。
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 0%
-
 ---
-
 
 # サードパーティ製の拡張機能を管理
 
@@ -20,7 +29,7 @@ Adobe Commerce ビヘイビアーを拡張またはカスタマイズするコ�
 - テーマ（ストアフロントと管理者のルック&amp;フィールの変更）
 - 言語パッケージ（ストアフロントと管理者のローカライズ）
 
-このトピックでは、コマンドラインインターフェイスを使用して、_オンプレミス_ プロジェクト用にCommerce Marketplaceから購入したサードパーティ製の拡張機能を管理する方法について説明します。 クラウドインフラプロジェクトについては、[拡張機能の管理](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/extensions)を参照してください。
+このトピックでは、コマンドラインインターフェイスを使用して、_オンプレミス_ プロジェクト用にCommerce Marketplaceから購入したサードパーティ製の拡張機能を管理する方法について説明します。 クラウドインフラプロジェクトについては、[拡張機能の管理](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)を参照してください。
 
 同じ手順で&#x200B;_any_&#x200B;拡張機能をインストールできます。必要なのは、拡張機能のコンポーザー名とバージョンだけです。 見つけるには、拡張機能の`composer.json` ファイルを開き、`"name"`と`"version"`の値を書き留めます。
 
@@ -64,15 +73,15 @@ Commerce Marketplaceから拡張機能のコンポーザー名とバージョン
 
 1. 右上隅で、**自分の名前** > **自分のプロファイル**&#x200B;をクリックします。
 
-   ![&#x200B; マーケットプレイスアカウントにアクセス &#x200B;](../../assets/installation/marketplace-my-profile.png)
+   ![ マーケットプレイスアカウントにアクセス ](../../assets/installation/marketplace-my-profile.png)
 
 1. 「**購入履歴**」をクリックします。
 
-   ![&#x200B; マーケットプレイス購入履歴](../../assets/installation//marketplace-my-purchases.png)
+   ![ マーケットプレイス購入履歴](../../assets/installation//marketplace-my-purchases.png)
 
 1. インストールする拡張機能を見つけ、コンポーネント名とバージョンをメモします。
 
-   ![&#x200B; インストール用のComposer パッケージ名を表示する拡張機能の技術的な詳細](../../assets/installation/marketplace-extension-technical-details.png)
+   ![ インストール用のComposer パッケージ名を表示する拡張機能の技術的な詳細](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
@@ -156,7 +165,7 @@ bin/magento module:status
    bin/magento setup:upgrade
    ```
 
-1. プロジェクトを再コンパイルする：実稼動モードでは、「Magento コンパイルコマンドを再実行してください」というメッセージが表示されることがあります。 アプリケーションは、開発者モードでコンパイルコマンドを実行するように求めるプロンプトを表示しません。
+1. プロジェクトを再コンパイルする：実稼動モードで、「Magento コンパイル コマンドを再実行してください」というメッセージが表示される場合があります。 アプリケーションは、開発者モードでコンパイルコマンドを実行するように求めるプロンプトを表示しません。
 
    ```shell
    bin/magento setup:di:compile

@@ -1,13 +1,22 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation] トラブルシューティングガイド'
-description: ' [!DNL Adobe Commerce Patching Automation]の一般的な問題とエラーメッセージのトラブルシューティング'
-source-git-commit: f2b9ba118bfe4982a67ec5041141e5ee7548fc4d
+description: '[!DNL Adobe Commerce Patching Automation]の一般的な問題とエラーメッセージのトラブルシューティング'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 0%
-
 ---
-
 # [!DNL Adobe Commerce Patching Automation]のトラブルシューティング ガイド
 
 パッチ操作に[!DNL Patching Automation]を使用する場合、エラーメッセージや問題が発生し、パッチの適用やリバージョンが正常に行われなくなる可能性があります。 このガイドでは、最も一般的な問題の解決策を提供します。
@@ -178,7 +187,7 @@ ht-degree: 0%
 
 **原因：**&#x200B;一時的な問題により、サービスはGitHubに接続できませんでした
 
-**解決策：**&#x200B;数分待って、操作をやり直してください。 エラーが解決しない場合は、[Adobe Commerce Cloud サポート &#x200B;](https://experienceleague.adobe.com/home?lang=ja#support)にお問い合わせください
+**解決策：**&#x200B;数分待って、操作をやり直してください。 エラーが解決しない場合は、[Adobe Commerce Cloud サポート ](https://experienceleague.adobe.com/home#support)にお問い合わせください
 
 #### 「タイムアウト内に環境が作成されない」（GitHub接続プロジェクト）
 
@@ -186,7 +195,7 @@ ht-degree: 0%
 
 **原因：** プロジェクトのGitHub統合で、`fetch-branches` オプションが無効になっています。 その結果、サービスによってプッシュされた一時的なブランチは同期されず、統合環境は作成されません。
 
-**解決策：**&#x200B;統合の[`fetch-branches` オプション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)を有効にしてから、操作を再試行してください。 「[GitHub統合を [!DNL Patching Automation]](github-integration.md)に設定する」を参照してください。
+**解決策：**&#x200B;統合の[`fetch-branches` オプション ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)を有効にしてから、操作を再試行してください。 「[GitHub統合を [!DNL Patching Automation]](github-integration.md)に設定する」を参照してください。
 
 ### 環境アクティベーションエラー
 
@@ -199,8 +208,8 @@ ht-degree: 0%
 **詳細にComposerまたはAdobe Commerce パッケージが記載されている場合：**
 
 * [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login)にログインし、アカウント所有者にCommerce Enterprise コードベースへのアクセス権があることを確認します。
-* プロジェクトのComposerの公開認証キーと非公開認証キーが正しいことを確認します。 [認証キー](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/authentication-keys)を参照してください。
-* エラーメッセージで指定されたパッケージが、お使いのCommerce版で使用可能であることを確認します。 [Adobe Commerce パッケージ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/packages/adobe-commerce)を参照してください。
+* プロジェクトのComposerの公開認証キーと非公開認証キーが正しいことを確認します。 [認証キー](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)を参照してください。
+* エラーメッセージで指定されたパッケージが、お使いのCommerce版で使用可能であることを確認します。 [Adobe Commerce パッケージ ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce)を参照してください。
 
 **詳細に環境スロットまたはリソースが記載されている場合：**
 
@@ -246,7 +255,7 @@ ht-degree: 0%
 
 ### 関連トピック
 
-* [Adobe Commerceのドキュメント](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/overview)
+* [Adobe Commerceのドキュメント](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
 * [Adobe Commerce インストールガイド](/help/installation/overview.md)
 * [パッチ自動処理の概要](intro.md)
 * [アクセス方法](access.md)

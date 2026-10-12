@@ -1,45 +1,59 @@
 ---
 title: ソフトウェアの推奨事項
-description: Adobe Commerceのソフトウェア要件と推奨事項について説明します。 実稼動でサポートされるバージョンと設定のベストプラクティスについて説明します。
+description: Adobe Commerceの必要ソフトウェア構成と推奨事項について説明します。 本番環境でサポートされているバージョンと設定のベストプラクティスを確認します。
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1488'
 ht-degree: 0%
-
 ---
-
 # ソフトウェアの推奨事項
 
-[!DNL Commerce] の実稼動インスタンスには、次のソフトウェアが必要です。
+実稼動インスタンス [!DNL Commerce]には次のソフトウェアが必要です：
 
 * [PHP](../installation/system-requirements.md)
-* Nginx と [PHP-FPM](https://www.php.net/manual/en/install.fpm.php)
+* Nginxおよび[PHP-FPM](https://www.php.net/manual/en/install.fpm.php)
 * [[!DNL MySQL]](../installation/prerequisites/database/mysql.md)
-* [[!DNL Elasticsearch] または OpenSearch](../installation/prerequisites/search-engine/overview.md)
+* [[!DNL Elasticsearch]またはOpenSearch](../installation/prerequisites/search-engine/overview.md)
 
-マルチサーバー環境の場合、またはビジネスの拡大・縮小を計画しているマーチャントの場合は、次の操作をお勧めします。
+マルチサーバー展開の場合、またはビジネスの拡大を計画しているマーチャントの場合は、次をお勧めします。
 
 * [[!DNL Varnish] キャッシュ](../configuration/cache/config-varnish.md)
-* セッション用 [Redis](../configuration/cache/redis-session.md) （2.0.6 以降）
-* [&#x200B; デフォルトキャッシュ &#x200B;](../configuration/cache/redis-pg-cache.md) として個別の Redis インスタンスを使用します（ページキャッシュにはこのインスタンスを使用しないでください）。
+* セッション用[Redis](../configuration/cache/redis-session.md) （2.0.6以降）
+* [ デフォルトキャッシュ ](../configuration/cache/redis-pg-cache.md)として別のRedis インスタンスを使用します（このインスタンスをページキャッシュに使用しないでください）
 
-各タイプのソフトウェアでサポートされるバージョンの詳細については、[&#x200B; システム要件 &#x200B;](../installation/system-requirements.md) を参照してください。
+各タイプのソフトウェアでサポートされているバージョンについて詳しくは、[必要システム構成](../installation/system-requirements.md)を参照してください。
 
 ## オペレーティングシステム
 
-オペレーティングシステムの設定と最適化は、他の高負荷 web アプリケーションと比較して、[!DNL Commerce] で同様です。 サーバーが処理する同時接続の数が増えると、使用可能なソケットの数が完全に割り当てられることがあります。 Linux カーネルは、TCP 接続を「再利用」するメカニズムをサポートしている。 このメカニズムを有効にするには、`/etc/sysctl.conf` に次の値を設定します。
+オペレーティングシステムの設定と最適化は、他の高負荷web アプリケーションと比較して[!DNL Commerce]で類似しています。 サーバーが処理する同時接続の数が増えると、利用可能なソケットの数が完全に割り当てられます。 Linux カーネルは、TCP接続を「再利用」するメカニズムをサポートしています。 このメカニズムを有効にするには、`/etc/sysctl.conf`に次の値を設定します。
 
 >[!INFO]
 >
->net.ipv4.tcp_tw_reuse を有効にしても、着信接続には影響しません。
+>net.ipv4.tcp_tw_reuseを有効にしても、着信接続には影響しません。
 
 ```text
 net.ipv4.tcp_tw_reuse = 1
 ```
 
-カーネルパラメータ `net.core.somaxconn` は、接続を待っている開いているソケットの最大数を制御します。 この値は 1024 に安全に増やすことができますが、この量を処理するサーバーの機能と相関させる必要があります。 このカーネルパラメーターを有効にするには、`/etc/sysctl.conf` に次の値を設定します。
+カーネルパラメーター`net.core.somaxconn`は、接続を待機している開いているソケットの最大数を制御します。 この値は1024に安全に増やすことができますが、この量を処理するサーバーの能力と相関させる必要があります。 このカーネルパラメーターを有効にするには、`/etc/sysctl.conf`に次の値を設定します。
 
 ```text
 net.core.somaxconn = 1024
@@ -47,11 +61,11 @@ net.core.somaxconn = 1024
 
 ## PHP
 
-[&#x200B; システム要件 &#x200B;](../installation/system-requirements.md) に記載されているように、インストールするAdobe Commerce リリースでサポートされている PHP バージョンを使用します。 リクエスト処理の速度と効率を最大限に高めるために PHP を設定する際に考慮すべき要素はいくつかあります。
+[必要システム構成](../installation/system-requirements.md)に記載されているように、インストール中のAdobe Commerce リリースでサポートされているPHP バージョンを使用します。 PHPを設定してリクエスト処理の速度と効率を最大化する場合は、いくつかの要素を考慮する必要があります。
 
-### PHP 拡張機能
+### PHP拡張機能
 
-アクティブな PHP 拡張モジュールのリストは、[!DNL Commerce] の機能に必要なものに制限することをお勧めします。
+アクティブなPHP拡張機能のリストは、[!DNL Commerce]機能に必要な拡張機能に制限することをお勧めします。
 
 Magento Open SourceとAdobe Commerce:
 
@@ -73,7 +87,7 @@ Magento Open SourceとAdobe Commerce:
 * ext-simplexml
 * ext-soap
 * ext-sockets
-* 外部ナトリウム
+* ext-sodium
 * ext-tokenizer
 * ext-xmlwriter
 * ext-xsl
@@ -81,7 +95,7 @@ Magento Open SourceとAdobe Commerce:
 * lib-libxml
 * lib-openssl
 
-また、Adobe Commerceには次の項目が必要です。
+さらに、Adobe Commerceには次の機能が必要です。
 
 * ext-bcmath
 * ext-ctype
@@ -101,7 +115,7 @@ Magento Open SourceとAdobe Commerce:
 * ext-simplexml
 * ext-soap
 * ext-sockets
-* 外部ナトリウム
+* ext-sodium
 * ext-spl
 * ext-tokenizer
 * ext-xmlwriter
@@ -110,29 +124,29 @@ Magento Open SourceとAdobe Commerce:
 * lib-libxml
 * lib-openssl
 
-拡張機能を追加すると、ライブラリの読み込み時間が長くなります。
+拡張機能を追加すると、ライブラリの読み込み時間が増加します。
 
 >[!INFO]
 >
->`php-mcrypt` は PHP 7.2 から削除され、[`sodium` ライブラリ &#x200B;](https://www.php.net/manual/en/book.sodium.php) に置き換えられました。 PHP のアップグレード時に [sodium](https://www.php.net/manual/en/sodium.installation.php) が適切に有効になっていることを確認してください。
+>`php-mcrypt`はPHP 7.2から削除され、[`sodium` ライブラリ ](https://www.php.net/manual/en/book.sodium.php)に置き換えられました。 PHPをアップグレードする際は、[ ナトリウム ](https://www.php.net/manual/en/sodium.installation.php)が適切に有効になっていることを確認してください。
 
 >[!INFO]
 >
->プロファイリングとデバッグの拡張機能が存在すると、ページの応答時間に悪影響を与える可能性があります。 例えば、デバッグセッションがないアクティブな xDebug モジュールでは、ページの応答時間が最大 30% 長くなる可能性があります。
+>プロファイリング拡張機能とデバッグ拡張機能が存在すると、ページの応答時間に悪影響を及ぼす可能性があります。 例えば、デバッグセッションのないアクティブなxDebug モジュールでは、ページの応答時間が最大30%向上します。
 
-### PHP 設定
+### PHP設定
 
-データやコードをディスクにダンプせずに、すべての [!DNL Commerce] インスタンスが正常に実行されるようにするには、次のようにメモリ制限を設定します。
+データまたはコードをディスクにダンプせずに、すべての[!DNL Commerce] インスタンスを正常に実行することを保証するには、メモリ制限を次のように設定します。
 
 ```text
 memory_limit=1G
 ```
 
-デバッグの場合は、この値を 2G に増やします。
+デバッグの場合は、この値を2Gに増やします。
 
-#### Realpath_cache 構成
+#### Realpath_cache設定
 
-[!DNL Commerce] のパフォーマンスを向上させるには、`realpath_cache` ファイルで以下の推奨 `php.ini` 設定を追加または更新します。 この設定により、PHP プロセスは、ページが読み込まれるたびにパスを検索する代わりに、ファイルへのパスをキャッシュすることができます。 PHP ドキュメントの [&#x200B; パフォーマンスチューニング &#x200B;](https://www.php.net/manual/en/ini.core.php) を参照してください。
+[!DNL Commerce]のパフォーマンスを向上させるには、`php.ini` ファイルに次の推奨`realpath_cache`設定を追加または更新してください。 この設定を使用すると、PHP プロセスは、ページが読み込まれるたびにファイルを検索するのではなく、ファイルにパスをキャッシュできます。 PHP ドキュメントの[ パフォーマンスチューニング ](https://www.php.net/manual/en/ini.core.php)を参照してください。
 
 ```text
 realpath_cache_size=10M
@@ -141,7 +155,7 @@ realpath_cache_ttl=7200
 
 #### ByteCode
 
-[!DNL Commerce] から最大速度を得るには、OpCache モジュールをアクティブ化し、適切に設定する必要があります。 モジュールには、次の設定をお勧めします。
+[!DNL Commerce]から最大速度を得るには、OpCache モジュールをアクティブ化し、適切に設定する必要があります。 モジュールには、次の設定をお勧めします。
 
 ```text
 opcache.memory_consumption=512
@@ -151,9 +165,9 @@ opcache.validate_timestamps=0
 opcache.enable_cli=1
 ```
 
-opcache のメモリ割り当てを微調整する場合は、Magentoのコードベースとすべてのエクステンションのサイズを考慮します。 Magento performance team は、インストールされた拡張機能の平均数に対して opcache に十分な領域を提供するので、上記の例の値をテストに使用します。
+opcacheのメモリ割り当てを微調整する場合は、Magentoのコードベースのサイズとすべての拡張機能を考慮してください。 Magentoのパフォーマンスチームは、インストールされている拡張機能の平均数に対してopcacheに十分なスペースを提供するため、テストに上記の例の値を使用します。
 
-低メモリのマシンで、インストールされている拡張機能やカスタマイズの数が少ない場合は、次の設定を使用して同様の結果を得ます。
+低メモリのマシンがあり、多くの拡張機能やカスタマイズがインストールされていない場合は、次の設定を使用して同様の結果を得ます。
 
 ```text
 opcache.memory_consumption=64
@@ -162,9 +176,9 @@ opcache.max_accelerated_files=60000
 
 #### APCU
 
-[PHP APCu 拡張モジュールを有効にし &#x200B;](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) それをサポートするために [&#x200B; を設定する `composer` を有効にして、パフォーマンスを最大限に高めるための最適化を行うことをお勧めします &#x200B;](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) この拡張機能では、開いたファイルの場所をキャッシュするので、ページ、Ajax 呼び出し、エンドポイントを含む [!DNL Commerce] サーバー呼び出しのパフォーマンスが向上します。
+[PHP APCu拡張機能](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache)と[を有効にして、パフォーマンスを最大化するために](../performance/deployment-flow.md#preprocess-dependency-injection-instructions)をサポートするように`composer`を設定することをお勧めします。 この拡張機能は、開いているファイルのファイルの場所をキャッシュします。これにより、ページ、Ajax呼び出し、エンドポイントを含む[!DNL Commerce] サーバー呼び出しのパフォーマンスが向上します。
 
-`apcu.ini` ファイルを編集して、以下を含めます。
+`apcu.ini` ファイルを編集して、次の内容を含めます。
 
 ```text
 extension=apcu.so
@@ -174,55 +188,55 @@ apc.enabled = 1
 
 ## Web サーバー
 
-Magentoは、Nginx web サーバーと Apache web サーバーを完全にサポートしています。 [!DNL Commerce] には、`<magento_home>/nginx.conf.sample` （Nginx）ファイルと `<magento_home>.htaccess.sample` （Apache）ファイルで推奨される設定ファイルのサンプルが用意されています。  Nginx サンプルには、パフォーマンスを向上させるための設定が含まれており、再設定をほとんど必要としないように設計されています。 サンプルファイルで定義されている主な設定のベストプラクティスには、次のものが含まれます。
+Magentoは、NginxおよびApacheのweb サーバーを完全にサポートしています。 [!DNL Commerce]は、`<magento_home>/nginx.conf.sample` （Nginx）および`<magento_home>.htaccess.sample` （Apache）ファイルに推奨される構成ファイルのサンプルを提供します。  Nginxのサンプルには、パフォーマンスを向上させるための設定が含まれており、再構成が少ない必要があるように設計されています。 サンプルファイルで定義される主な設定のベストプラクティスには、次のものが含まれます。
 
-* ブラウザーで静的コンテンツをキャッシュする設定
-* PHP のメモリと実行時間の設定
+* ブラウザーで静的コンテンツをキャッシュするための設定
+* PHPのメモリと実行時間の設定
 * コンテンツ圧縮設定
 
-また、次に示すように、入力リクエスト処理のスレッドの数を設定する必要があります。
+また、次に示すように、入力リクエスト処理のスレッド数を設定する必要があります。
 
 | Web サーバー | 属性名 | ロケーション | 関連情報 |
 |--- | --- | --- | ---|
-| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` （Debian） | [&#x200B; パフォーマンスのための NGINX のチューニング &#x200B;](https://www.f5.com/company/blog/nginx/tuning-nginx) |
-| Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` （CentOS） | [Apache MPM 共通ディレクティブ &#x200B;](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
+| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` （Debian） | [ パフォーマンス用NGINXのチューニング ](https://www.f5.com/company/blog/nginx/tuning-nginx) |
+| Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` （CentOS） | [Apache MPM共通ディレクティブ ](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
 
 ## [!DNL MySQL]
 
-このドキュメントでは、各ストアと環境が異な [!DNL MySQL] ので、詳細なチューニング手順は提供しませんが、一般的な推奨事項を作成しておくことはできます。
+このドキュメントでは、各ストアと環境が異なるため、詳細な[!DNL MySQL]の調整手順は提供されていませんが、一般的な推奨事項をいくつか確認できます。
 
-最近の [!DNL MySQL] リリースには、多くのパフォーマンス改善が含まれており、通常、[!DNL MySQL] は適切なデフォルト設定で配布されます。 最も重要な設定は次のとおりです。
+最近の[!DNL MySQL]件のリリースには多くのパフォーマンス改善が含まれており、[!DNL MySQL]は一般的に適切なデフォルト設定で配布されています。 最も重要な設定は次のとおりです。
 
-| パラメーター | デフォルト | 説明 |
+| パラメーター | Default | 説明 |
 |--- | --- | ---|
-| `innodb_buffer_pool_instances` | 8 | デフォルト値は 8 に設定されています。これにより、同じインスタンスに複数のスレッドがアクセスしようとする問題を回避できます。 |
-| `innodb_buffer_pool_size` | 128MB | 前述の複数のプールインスタンスと組み合わせると、デフォルトのメモリ割り当ては 1024 MB になります。 合計サイズは、すべてのバッファ プールで分割されます。 最適な効率を得るには、`innodb_buffer_pool_instances` と `innodb_buffer_pool_size` の組み合わせを指定して、各バッファープールインスタンスが少なくとも 1 GB になるようにします。 |
-| `max_connections` | 150 | `max_connections` パラメーターの値は、アプリケーションサーバーで設定された PHP スレッドの合計数に関連付ける必要があります。 一般的な推奨事項は、小規模の場合は 300、中規模の環境の場合は 1,000 です。 |
+| `innodb_buffer_pool_instances` | 8 | デフォルト値は8に設定され、複数のスレッドが同じインスタンスにアクセスしようとする問題を回避します。 |
+| `innodb_buffer_pool_size` | 128MB | 上記の複数のプールインスタンスと組み合わせると、デフォルトのメモリ割り当て量は1024 MBになります。 合計サイズは、すべてのバッファープール間で分割されます。 最高の効率を得るには、各バッファープールインスタンスが1 GB以上になるように、`innodb_buffer_pool_instances`と`innodb_buffer_pool_size`の組み合わせを指定します。 |
+| `max_connections` | 150 | `max_connections` パラメーターの値は、アプリケーションサーバーで設定されたPHP スレッドの合計数と関連付ける必要があります。 一般的な推奨事項は、小規模の場合は300、中規模の環境の場合は1,000です。 |
 | `innodb_thread_concurrency` | 0 | この設定の最適な値は、次の式で計算する必要があります：`innodb_thread_concurrency = 2 * (NumCPUs + NumDisks)` |
 
 ## [!DNL Varnish]
 
-Magentoでは、ストアのフルページキャッシュサーバーとして [!DNL Varnish] を使用することを強くお勧めします。 PageCache モジュールはコードベースにまだ存在していますが、開発目的でのみ使用する必要があります。 [!DNL Varnish] と一緒に、または代わりに使用しないでください。
+Magentoでは、ストアのフルページキャッシュサーバーとして[!DNL Varnish]を使用することを強くお勧めします。 PageCache モジュールは引き続きコードベースに存在しますが、開発目的でのみ使用する必要があります。 [!DNL Varnish]と一緒に、またはの代わりに使用しないでください。
 
-Web 層の前にある別のサーバーに [!DNL Varnish] をインストールします。 すべての受信リクエストを受け入れ、キャッシュされたページコピーを提供する必要があります。 セキュリティで保護されたページで [!DNL Varnish] が効果的に作業できるように、SSL ターミネーションプロキシを [!DNL Varnish] の前に配置できます。 Nginx はこの目的に使用できます。
+Web層の前にある別のサーバーに[!DNL Varnish]をインストールします。 すべての受信リクエストを受け入れ、キャッシュされたページコピーを提供する必要があります。 [!DNL Varnish]がセキュリティで保護されたページで効果的に作業できるようにするには、SSL終了プロキシを[!DNL Varnish]の前に配置します。 Nginxは、この目的で使用できます。
 
-[!DNL Commerce] は、パフォーマンスのすべての推奨設定を含む、サポートされる [!DNL Varnish] バージョンのサンプル設定ファイルを配布します。 パフォーマンスの面で最も重要なものは次のとおりです。
+[!DNL Commerce]は、パフォーマンスのすべての推奨設定を含む、サポートされている[!DNL Varnish] バージョンのサンプル設定ファイルを配布します。 その中でもパフォーマンスに関して最も重要なのは次の通りです。
 
-* **バックエンドのヘルスチェック** は、[!DNL Commerce] サーバーをポーリングして、サーバーが適切なタイミングで応答しているかどうかを判断します。
-* **猶予モード** を使用すると、オブジェクトを有効期間（TTL）の期間を超えてキャッシュに保持し、正常でない場合や新しいコンテンツがまだ取得されていない場合に、この古 [!DNL Varnish] いコンテンツを提供するように [!DNL Commerce] に指示できます。
-* **セントモード** は、設定可能な時間、異常な [!DNL Commerce] サーバーをブラックリストに登録します。 その結果、正常でないバックエンドは、[!DNL Varnish] をロードバランサーとして使用する場合、トラフィックを提供できません。
+* **バックエンド ヘルスチェック**&#x200B;は、[!DNL Commerce] サーバーをポーリングして、タイムリーに応答しているかどうかを判断します。
+* **猶予モード**&#x200B;を使用すると、[!DNL Varnish]に対して、オブジェクトを有効期間（TTL）を超えてキャッシュに保持するように指示できます。また、[!DNL Commerce]が正常でない場合や、新しいコンテンツがまだ取得されていない場合は、この古いコンテンツを提供できます。
+* **Saint mode**&#x200B;は、設定可能な時間に対して異常な[!DNL Commerce] サーバーをブラックリストに登録します。 その結果、[!DNL Varnish]をロードバランサーとして使用する場合、正常でないバックエンドはトラフィックを提供できません。
 
-これらの機能の実装について詳しくは、[&#x200B; 詳細  [!DNL Varnish]  設定 &#x200B;](../configuration/cache/config-varnish-advanced.md) を参照してください。
+これらの機能の実装について詳しくは、[詳細 [!DNL Varnish] 設定](../configuration/cache/config-varnish-advanced.md)を参照してください。
 
-### アセットのパフォーマンスの最適化
+### アセットのパフォーマンスを最適化
 
-通常、最適なパフォーマンスを得るには、アセット（画像、JS、CSS など）を CDN に保存することをお勧めします。
+一般的に、最適なパフォーマンスを実現するために、アセット（画像、JS、CSSなど）をCDNに保存することをお勧めします。
 
-サイトで多数のロケールをデプロイする必要がなく、サーバーが大部分の顧客と同じ地域にある場合は、CDN を使用する代わりにアセットを [!DNL Varnish] に保存することで、低コストで大幅なパフォーマンスの向上が得られる可能性があります。
+サイトで多数のロケールをデプロイする必要がなく、サーバーが大部分の顧客と同じ地域にある場合は、CDNを使用する代わりに[!DNL Varnish]にアセットを保存することで、パフォーマンスが大幅に向上する可能性があります。
 
-アセットを [!DNL Varnish] に保存するには、`default.vcl` で生成された [!DNL Commerce] ファイルに次の VCL エントリを追加します。
+アセットを[!DNL Varnish]に保存するには、[!DNL Commerce]によって生成された`default.vcl` ファイルに次のVCL エントリを追加します。
 
-`if` サブルーチンの PURGE リクエストの `vcl_recv` 文の最後に、次を追加します。
+`vcl_recv` サブルーチンのPURGE リクエストの`if` ステートメントの最後に、次を追加します。
 
 ```javascript
 # static files are cacheable. remove SSL flag and cookie
@@ -234,8 +248,8 @@ if (req.url ~ "^/(pub/)?(media|static)/.*\.(ico|html|css|js|jpg|jpeg|png|gif|tif
 }
 ```
 
-`vcl_backend_response` サブルーチンで、`if` 要求または `GET` 要求の Cookie を設定解除する `HEAD` ステートメントを探します。
-更新された `if` ブロックは次のようになります。
+`vcl_backend_response` サブルーチンで、`GET`または`HEAD`要求のCookieを設定解除する`if` ステートメントを探します。
+更新された`if` ブロックは次のようになります。
 
 ```javascript
 # validate if we need to cache it and prevent from setting cookie
@@ -251,20 +265,20 @@ if (bereq.url !~ "\.(ico|css|js|jpg|jpeg|png|gif|tiff|bmp|gz|tgz|bz2|tbz|mp3|ogg
 }
 ```
 
-サイトをアップグレードしたり、アセットをデプロイまたは更新したりするたびに、[!DNL Varnish] サーバーを再起動して、キャッシュされたアセットをフラッシュします。
+サイトをアップグレードするか、アセットをデプロイまたは更新するたびに、キャッシュされたアセットをフラッシュするには、[!DNL Varnish] サーバーを再起動します。
 
-## キャッシュサーバーとセッションサーバー
+## キャッシュおよびセッションサーバー
 
-Magentoには、Redis、Memcache、filesystem、database など、キャッシュとセッションデータを保存する多数のオプションが用意されています。 これらのオプションの一部については、以下で説明します。
+Magentoには、Redis、Memcache、ファイルシステム、データベースなど、キャッシュおよびセッションデータを保存するための多くのオプションが用意されています。 これらのオプションの一部については、以下で説明します。
 
-### 単一 Web ノードの設定
+### 単一のweb ノードの設定
 
-1 つの web ノードですべてのトラフィックを処理する予定がある場合、リモート Redis サーバーにキャッシュを配置しても意味がありません。 代わりに、ファイルシステムまたはローカルの Redis サーバーを使用します。 ファイルシステムを使用する場合は、RAM ファイルシステムにマウントされたボリュームにキャッシュフォルダーを配置します。 ローカルの Redis サーバーを使用する場合は、HTTP 経由でデータを交換するのではなく、直接接続にソケットを使用するように Redis を設定することを強くお勧めします。
+1つのweb ノードだけであらゆるトラフィックを処理する場合、キャッシュをリモート Redis サーバーに配置することは意味がありません。 代わりに、ファイルシステムまたはローカルのRedis サーバーを使用してください。 ファイルシステムを使用する場合は、RAM ファイルシステムにマウントされたボリュームにキャッシュフォルダーを配置します。 ローカル Redis サーバーを使用する場合は、HTTP経由でデータを交換するのではなく、直接接続にソケットを使用するようにRedisを設定することを強くお勧めします。
 
-### 複数の web ノードの設定
+### 複数のweb ノードの設定
 
-複数の Web ノードを設定する場合は、Redis が最適なオプションです。 パフォーマンスを向上 [!DNL Commerce] せるために大量のデータを能動的にキャッシュするので、web ノードと Redis サーバーの間のネットワークチャネルに注意を払います。 チャネルがリクエスト処理のボトルネックになることを望まない場合。
+複数のweb ノードを設定する場合は、Redisが最適なオプションです。 [!DNL Commerce]はパフォーマンスを向上させるために大量のデータを積極的にキャッシュするので、Web ノードとRedis サーバー間のネットワーク チャネルに注意してください。 チャネルをリクエスト処理のボトルネックにしたくはありません。
 
 >[!INFO]
 >
->何百何千もの同時リクエストに対応する必要がある場合は、Redis サーバーに最大 1 Gbit （またはそれ以上）のチャネルが必要になる場合があります。
+>何十万もの同時リクエストを処理する必要がある場合、Redis サーバーに最大1 Gbit （またはさらに広い）のチャネルが必要になる場合があります。

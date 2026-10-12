@@ -2,13 +2,22 @@
 title: 設定ガイドの概要
 description: Adobe Commerce アプリケーションの設定可能な機能とサービスについて説明します。 デプロイメント、キャッシュ、セキュリティ、その他の重要な設定の管理方法について説明します。
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 12%
-
 ---
-
 # 設定ガイド
 
 _Configuration_ ガイドでは、設定可能なCommerce アプリケーションの機能とサービスを管理するための参考資料と制限付きガイダンスを提供しています。 Commerce アプリケーションの設定を担当するテクニカルユーザーは、次の項目に関するガイダンスを見つけることができます。
@@ -25,8 +34,8 @@ _Configuration_ ガイドでは、設定可能なCommerce アプリケーショ�
 
 ## Commerce管理者設定
 
-[Commerce ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/guide-overview)には、Commerce Adminの各設定項目のフィールド説明を理解するのに役立つ対応するトピックがあります。
+[Commerce ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview)には、Commerce Adminの各設定項目のフィールド説明を理解するのに役立つ対応するトピックがあります。
 
 ## クラウド設定
 
-[!DNL Commerce on cloud infrastructure]は、[一連の設定ファイル &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/overview)を使用して、ホスト環境のCommerce アプリケーションの機能とサービスを更新します。 Adobe クラウドホスティング環境には固有の性質があるため、その他の設定要件については、常に[Cloud ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/overview)を確認する必要があります。
+[!DNL Commerce on cloud infrastructure]は、[一連の設定ファイル ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/overview)を使用して、ホスト環境のCommerce アプリケーションの機能とサービスを更新します。 Adobe クラウドホスティング環境には固有の性質があるため、その他の設定要件については、常に[Cloud ガイド ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)を確認する必要があります。

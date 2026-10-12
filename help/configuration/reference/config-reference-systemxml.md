@@ -4,13 +4,27 @@ description: system.xml ファイルでAdobe Commerce アプリケーション�
 feature: Configuration, System
 badge: label="David Lambauerによる投稿" type="Informative" url="https://github.com/DavidLambauer" tooltip="デヴィッド・ランバウアー"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '2740'
+source-wordcount: '2751'
 ht-degree: 0%
-
 ---
-
 # system.xml リファレンス
 
 `system.xml` ファイルを使用すると、Commerce システム設定を管理できます。 このトピックは、`system.xml` ファイルの一般的な参照として使用します。 `system.xml` ファイルは、特定のCommerce 2拡張機能の`etc/adminhtml/system.xml`の下にあります。
@@ -35,7 +49,7 @@ ht-degree: 0%
 `system.xml` ファイルでは、互いに関連する4つの異なるタイプのエンティティを定義できます。 次の節では、タブ、セクション、グループ、フィールド間の関係について説明します。 次のスクリーンショットは、管理者バックエンドのCommerce 2 System Configurationを示しています。
 赤い四角形は、`system.xml` ファイルで定義されている様々なタイプを示します。
 
-管理者に設定済みのセクションを表示する![&#x200B; スクリーンショット。](../../assets/configuration/magento2-system-configuration.png)
+管理者に設定済みのセクションを表示する![ スクリーンショット。](../../assets/configuration/magento2-system-configuration.png)
 
 タブは、様々な設定領域をセマンティックに分割するために使用されます。 各タブには1つ以上のセクションを含めることができ、サブメニューとしても参照できます。 セクションには、1つ以上のグループが含まれています。
 各グループには、1つ以上のフィールドが一覧表示されます。 グループを使用して、次のフィールドの一般的な説明を追加することもできます。 前述したように、各グループには1つ以上のフィールドを含めることができます。 フィールドは最小エンティティです
@@ -392,8 +406,8 @@ ht-degree: 0%
 | `phoneUK` | （英国）の電話番号を許可します。 |
 | `phoneUS` | （米国）の電話番号を許可します。 |
 | `required-entry` | 空の値（`validate-no-empty`と同等の検証）を無効にします。<br>検証エラーメッセージ：「これは必須フィールドです。」 |
-| `time` | 00:00 ～ 23:59の間の24時間形式で有効な時間を許可します。 例：`15`、`15:05`、`15:05:48`。 |
-| `time12h` | 午前12:00時から午後11:59:59時までの12時間形式で有効な時間を許可します。 例：`3 am`、`11:30 pm`、`02:15:00 pm`。 |
+| `time` | 00:00 ～ 23:59の間の24時間形式の有効な時間を許可します。 例：`15`、`15:05`、`15:05:48`。 |
+| `time12h` | 午前12:00から午後11:59:59までの12時間形式の有効な時間を許可します。 例：`3 am`、`11:30 pm`、`02:15:00 pm`。 |
 | `validate-admin-password` | 数字とアルファベットの両方を使用して、7文字以上の文字を使用できます。 |
 | `validate-alphanum-with-spaces` | 文字（a ～ zまたはA ～ Z）、数字（0 ～ 9）、またはスペースのみを使用できます。 |
 | `validate-clean-url` | 有効なURLを許可します。 例：`https://www.example.com`または`www.example.com` |

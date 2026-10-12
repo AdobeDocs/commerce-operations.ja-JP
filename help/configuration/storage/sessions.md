@@ -1,30 +1,44 @@
 ---
 title: セッションストレージの場所
-description: Adobe Commerceのセッションストレージの場所とファイル管理について説明します。 ストレージのロジックと構成オプションについて説明します。
+description: Adobe Commerceのセッションストレージの場所とファイル管理について説明します。 ストレージロジックと設定オプションの詳細。
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '279'
 ht-degree: 0%
-
 ---
-
 # セッションストレージの場所
 
-このトピックでは、セッションファイルが格納されている場所を特定する方法について説明します。 システムでは、次のロジックを使用してセッションファイルを保存します。
+このトピックでは、セッションファイルの保存場所を特定する方法について説明します。 システムは、次のロジックを使用してセッションファイルを保存します。
 
-- memcached を設定した場合、セッションは RAM に保存されます。[&#x200B; セッションストレージに memcached を使用 &#x200B;](memcached.md) を参照してください。
-- Redis を設定した場合、セッションは Redis サーバに保存されます。[&#x200B; セッションストレージに Redis を使用する &#x200B;](../cache/redis-session.md) を参照してください。
-- デフォルトのファイルベースのセッションストレージを使用している場合は、以下の場所に、表示されている順序でセッションが保存されます。
+- memcachedを設定した場合、セッションはRAMに保存されます。[ セッションストレージにmemcachedを使用](memcached.md)を参照してください。
+- Redisを設定した場合、セッションはRedis サーバーに保存されます。[ セッションストレージにRedisを使用](../cache/redis-session.md)を参照してください。
+- デフォルトのファイルベースのセッションストレージを使用している場合は、次の場所にセッションを次の順序で保存します。
 
-   1. [`env.php`](#example-in-envphp) で定義されたディレクトリ
-   1. [`php.ini`](#example-in-phpini) で定義されたディレクトリ
-   1. `<magento_root>/var/session` ディレクトリ
+  1. [`env.php`](#example-in-envphp)で定義されたディレクトリ
+  1. [`php.ini`](#example-in-phpini)で定義されたディレクトリ
+  1. `<magento_root>/var/session` ディレクトリ
 
-## `env.php` の例
+## `env.php`の例
 
-`<magento_root>/app/etc/env.php` のサンプルスニペットを次に示します。
+`<magento_root>/app/etc/env.php`のサンプルスニペットは次のとおりです。
 
 ```php
  'session' => [
@@ -33,25 +47,25 @@ ht-degree: 0%
  ],
 ```
 
-上記の例では、セッションファイルを `/var/www/session` に保存します
+前の例では、`/var/www/session`にセッションファイルを保存しています
 
-## `php.ini` の例
+## `php.ini`の例
 
-`root` 権限を持つユーザーとして、`php.ini` ファイルを開き、`session.save_path` の値を検索します。 これは、セッションが格納される場所を識別します。
+`root`権限を持つユーザーとして`php.ini` ファイルを開き、`session.save_path`の値を検索します。 これは、セッションの保存場所を特定します。
 
 ## セッションサイズの管理
 
-[&#x200B; ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security-session-management) の _セッション管理_ を参照してください。
+_ユーザーガイド_&#x200B;の[ セッション管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management)を参照してください。
 
 ## ガベージコレクション設定
 
-期限切れのセッションをクリーンアップするために、システムは `gc` ディレクティブによって計算される確率に従ってランダムに _（_ ガベージコレクション `gc_probability / gc_divisor`）ハンドラーを呼び出します。 例えば、これらのディレクティブをそれぞれ `1/100` に設定した場合、`1%` の確率（_100 件のリクエストごとに 1 回のガベージコレクションの呼び出しの確率_）を意味します。
+期限切れのセッションをクリーンアップするために、システムは`gc_probability / gc_divisor` ディレクティブによって計算された確率に従って、`gc` （_ガベージコレクション_）ハンドラーをランダムに呼び出します。 例えば、これらのディレクティブをそれぞれ`1/100`に設定した場合、それは`1%`の確率を意味します（_ガベージコレクションの呼び出しを100 リクエストごとに1回行う確率_）。
 
-ガベージコレクションハンドラーでは、`gc_maxlifetime` ディレクティブを使用します。このディレクティブは、セッションが _ガベージ_ と見なされてクリーンアップされる秒数を示します。
+ガベージコレクションハンドラーは、`gc_maxlifetime` ディレクティブを使用します。このディレクティブの秒数を使用すると、セッションが&#x200B;_ガベージ_&#x200B;と見なされ、クリーンアップされる可能性があります。
 
-一部のオペレーティングシステム（Debian/Ubuntu）では、デフォルトの `session.gc_probability` ディレクティブが `0` なので、ガベージコレクションハンドラーを実行できません。
+一部のオペレーティングシステム （Debian/Ubuntu）では、デフォルトの`session.gc_probability` ディレクティブは`0`であるため、ガベージコレクションハンドラーの実行が妨げられます。
 
-`session.gc_` ファイルの `php.ini` ファイルから `<magento_root>/app/etc/env.php` ディレクティブを上書きできます。
+`<magento_root>/app/etc/env.php` ファイルの`php.ini` ファイルから`session.gc_` ディレクティブを上書きできます。
 
 ```php
  'session' => [
@@ -62,4 +76,4 @@ ht-degree: 0%
  ],
 ```
 
-設定は、マーチャントの web サイトのトラフィックや特定のニーズに応じて異なります。
+設定は、マーチャントのweb サイトのトラフィックと特定のニーズによって異なります。

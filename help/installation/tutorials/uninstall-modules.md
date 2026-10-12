@@ -2,22 +2,31 @@
 title: モジュールのアンインストール
 description: コード、スキーマ、データをオプションで削除してAdobe Commerce モジュールをアンインストールする方法と、アンインストールする代わりにモジュールを無効にするタイミングについて説明します。
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 0%
-
 ---
-
 # モジュールのアンインストール
 
 この節では、1つ以上のモジュールをアンインストールする方法について説明します。 アンインストール時に、オプションでモジュールのコード、データベーススキーマ、データベースデータを削除できます。 最初にバックアップを作成して、後でデータを復元できます。
 
-モジュールは、確実に使用できない場合にのみアンインストールする必要があります。 モジュールをアンインストールする代わりに、[&#x200B; モジュールの有効化または無効化](manage-modules.md)で説明したようにモジュールを無効化できます。
+モジュールは、確実に使用できない場合にのみアンインストールする必要があります。 モジュールをアンインストールする代わりに、[ モジュールの有効化または無効化](manage-modules.md)で説明したようにモジュールを無効化できます。
 
 >[!NOTE]
 >
->このコマンドは、`composer.json` ファイルで宣言された依存関係のみをチェックします。 `composer.json` ファイルで定義されている&#x200B;_not_&#x200B;のモジュールをアンインストールすると、このコマンドは依存関係を確認せずにモジュールをアンインストールします。 ただし、このコマンドは&#x200B;_not_&#x200B;を実行しますが、モジュールのコードをファイルシステムから削除します。 モジュールのコード （例：`rm -rf <path to module>`）を削除するには、ファイル システム ツールを使用する必要があります。 代わりに、[&#x200B; コンポーザー以外のモジュールを](manage-modules.md)無効にできます。
+>このコマンドは、`composer.json` ファイルで宣言された依存関係のみをチェックします。 `composer.json` ファイルで定義されている&#x200B;_not_&#x200B;のモジュールをアンインストールすると、このコマンドは依存関係を確認せずにモジュールをアンインストールします。 ただし、このコマンドは&#x200B;_not_&#x200B;を実行しますが、モジュールのコードをファイルシステムから削除します。 モジュールのコード （例：`rm -rf <path to module>`）を削除するには、ファイル システム ツールを使用する必要があります。 代わりに、[ コンポーザー以外のモジュールを](manage-modules.md)無効にできます。
 
 コマンドの使用状況：
 
@@ -53,7 +62,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
    指定された各モジュールをアンインストールするには、その`Uninstall` クラスで`uninstall` メソッドを呼び出します。 このクラスは[Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php)から継承する必要があります。
 
 1. 指定されたモジュールを`setup_module` データベース テーブルから削除します。
-1. 指定されたモジュールを[&#x200B; デプロイメント設定](../../configuration/reference/deployment-files.md)のモジュールリストから削除します。
+1. 指定されたモジュールを[ デプロイメント設定](../../configuration/reference/deployment-files.md)のモジュールリストから削除します。
 1. `composer remove`を使用してコードベースからコードを削除します。
 
    >[!NOTE]
@@ -62,7 +71,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
 
 1. キャッシュをクリーニングします。
 1. 生成されたクラスを更新します。
-1. `--clear-static-content`が指定されている場合、[生成された静的ビューファイル &#x200B;](../../configuration/cli/static-view-file-deployment.md)をクリーンアップします。
+1. `--clear-static-content`が指定されている場合、[生成された静的ビューファイル ](../../configuration/cli/static-view-file-deployment.md)をクリーンアップします。
 1. メンテナンスモードからストアを取り除きます。
 
 例えば、別のモジュールが依存しているモジュールをアンインストールしようとすると、次のメッセージが表示されます。

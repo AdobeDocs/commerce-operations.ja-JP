@@ -2,13 +2,22 @@
 title: cron ジョブの設定と実行
 description: Adobe Commerceでcron ジョブを設定および管理する方法について説明します。 スケジュール設定、トラブルシューティングなどの手法を紹介します。
 exl-id: 8ba2b2f9-5200-4e96-9799-1b00d7d23ce1
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '769'
 ht-degree: 0%
-
 ---
-
 # cron ジョブの設定
 
 {{file-system-owner}}
@@ -34,7 +43,7 @@ Commerceのいくつかの機能には、少なくとも1つのcron ジョブが
 
 UNIX システムは、_crontab_&#x200B;を使用して特定のユーザーが実行するタスクをスケジュールします。これは、実際にデーモンに「この日付でこのコマンドを実行する」ように指示するcron デーモンへの指示を含むファイルです。 各ユーザーには独自のcrontabがあり、特定のcrontab内のコマンドは、それを所有するユーザーとして実行されます。
 
-Web ブラウザーでcronを実行するには、[&#x200B; ブラウザーで実行するcron.phpのセキュリティ保護](../security/secure-cron-php.md)を参照してください。
+Web ブラウザーでcronを実行するには、[ ブラウザーで実行するcron.phpのセキュリティ保護](../security/secure-cron-php.md)を参照してください。
 
 ## Commerce crontabの作成または削除
 
@@ -57,7 +66,7 @@ Commerceのcrontabは、crontab内の`#~ MAGENTO START`件と`#~ MAGENTO END`件
 
 Commerce crontabを作成するには：
 
-1. [&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてログインするか、切り替えます。
+1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてログインするか、切り替えます。
 1. Commerceのインストールディレクトリに移動します。
 1. 次のコマンドを入力します。
 
@@ -98,7 +107,7 @@ Commerce アプリケーションをアンインストールする前にのみ�
 
 Commerceのcrontabを削除するには：
 
-1. としてログインするか、[&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
+1. としてログインするか、[ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
 1. Commerceのインストールディレクトリに移動します。
 1. 次のコマンドを入力します。
 
@@ -132,7 +141,7 @@ bin/magento cron:run --group index
 bin/magento cron:run --group default
 ```
 
-カスタム cron ジョブとグループを設定するには、[&#x200B; カスタム cron ジョブとcron グループの設定](../cron/custom-cron.md)を参照してください。
+カスタム cron ジョブとグループを設定するには、[ カスタム cron ジョブとcron グループの設定](../cron/custom-cron.md)を参照してください。
 
 >[!INFO]
 >

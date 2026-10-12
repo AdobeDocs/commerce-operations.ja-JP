@@ -3,13 +3,30 @@ title: 検索エンジンの前提条件
 description: 次の手順に従って、Adobe Commerceのオンプレミスインストール用にサポートされる検索エンジンソフトウェアをインストールおよび設定します。
 feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 0%
-
 ---
-
 # 検索エンジンの前提条件
 
 Adobe Commerce 2.4以降、すべてのインストールでは、カタログ検索ソリューションとして[Elasticsearch](https://www.elastic.co)または[OpenSearch](https://opensearch.org/)を使用するように設定する必要があります。
@@ -41,7 +58,7 @@ Adobe Commerce 2.4.4以降をインストールする前に、Elasticsearchま�
 
 * Commerce アプリケーションと検索エンジンは、異なるホストにインストールされます。
 
-  別々のホストで実行するには、プロキシが機能する必要があります。 （検索エンジンのクラスタリングは、このガイドの範囲を超えていますが、詳しくは、[Elasticsearch クラスタリングに関するドキュメント &#x200B;](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html)を参照してください）。
+  別々のホストで実行するには、プロキシが機能する必要があります。 （検索エンジンのクラスタリングは、このガイドの範囲を超えていますが、詳しくは、[Elasticsearch クラスタリングに関するドキュメント ](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html)を参照してください）。
 
 * 各ホストは独自のWeb サーバーを持っています。Web サーバーは同じである必要はありません。
 
@@ -104,7 +121,7 @@ java -version
 
 #### CentOSへのJDKのインストール
 
-この[Digital Ocean チュートリアル &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8)を参照してください。
+この[Digital Ocean チュートリアル ](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8)を参照してください。
 
 JDKと&#x200B;*not* the JREをインストールしてください。
 
@@ -128,11 +145,11 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-その他のオプションについては、[Oracle ドキュメント &#x200B;](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)を参照してください。
+その他のオプションについては、[Oracle ドキュメント ](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)を参照してください。
 
 ### 検索エンジンのインストール
 
-プラットフォーム固有の手順に応じて、[Elasticsearchのインストール &#x200B;](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)または[OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/)をインストールして設定します。
+プラットフォーム固有の手順に応じて、[Elasticsearchのインストール ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)または[OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/)をインストールして設定します。
 
 Elasticsearchが動作していることを確認するには、実行中のサーバーで次のコマンドを入力します。
 
@@ -159,9 +176,9 @@ curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 
 ## Elasticsearchのアップグレード
 
-データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストについて詳しくは、[Elasticsearchのアップグレード &#x200B;](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)を参照してください。 現在のバージョンのElasticsearchによっては、クラスター全体の再起動が必要な場合とそうでない場合があります。
+データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストについて詳しくは、[Elasticsearchのアップグレード ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)を参照してください。 現在のバージョンのElasticsearchによっては、クラスター全体の再起動が必要な場合とそうでない場合があります。
 
-ElasticsearchにはJDK 1.8以降が必要です。 [Java ソフトウェア開発キットのインストール &#x200B;](#install-the-java-software-development-kit)を参照して、どのバージョンのJDKがインストールされているかを確認してください。
+ElasticsearchにはJDK 1.8以降が必要です。 [Java ソフトウェア開発キットのインストール ](#install-the-java-software-development-kit)を参照して、どのバージョンのJDKがインストールされているかを確認してください。
 
 ## 関連資料
 

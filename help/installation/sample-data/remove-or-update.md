@@ -2,20 +2,29 @@
 title: サンプルデータモジュールの削除または更新
 description: Adobe Commerce サンプルデータモジュールを管理するには、次の手順に従います。
 exl-id: d23f999f-18bf-449b-be23-bdf392dda539
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%
-
 ---
-
 # サンプルデータモジュールの削除または更新
 
 主な内容：
 
-* [Adobe Commerce インストール `composer.json`からサンプルデータモジュール &#x200B;](#remove-sample-data-modules)を削除します。 このオプションを選択すると、*not*&#x200B;がデータベースからサンプルデータを削除します。
+* [Adobe Commerce インストール `composer.json`からサンプルデータモジュール ](#remove-sample-data-modules)を削除します。 このオプションを選択すると、*not*&#x200B;がデータベースからサンプルデータを削除します。
 
-* [&#x200B; サンプルデータの更新を準備します](#prepare-to-update-sample-data) （例えば、Magento アプリケーションを更新する前）。
+* [ サンプルデータを更新する準備](#prepare-to-update-sample-data) （例えば、Magento アプリケーションを更新する前）。
 
 ## サンプルデータモジュールの削除
 
@@ -59,4 +68,4 @@ bin/magento sampledata:remove
 bin/magento sampledata:reset
 ```
 
-その後、[&#x200B; アプリケーションを更新します](../tutorials/uninstall.md#update-the-application)。
+その後、[ アプリケーションを更新します](../tutorials/uninstall.md#update-the-application)。

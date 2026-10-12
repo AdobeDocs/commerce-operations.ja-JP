@@ -1,14 +1,23 @@
 ---
 title: お客様の個人情報の参照（バージョン 1.x）
-description: Magento 1.xのお客様の個人情報のデータフローおよびデータベースエンティティマッピングについて説明します。
+description: Magento 1.xの顧客個人情報のデータフローおよびデータベースエンティティマッピングについて説明します。
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 0%
-
 ---
-
 # お客様の個人情報の参照（バージョン 1.x）
 
 >[!NOTE]
@@ -28,33 +37,33 @@ ht-degree: 0%
 
 利用者は、アカウント登録時、チェックアウト時などのイベントで、顧客、住所、支払い情報を入力することができます。
 
-![&#x200B; フロントエンドデータエントリポイント &#x200B;](../../assets/security-compliance/frontend-data-entry-points.svg)
+![ フロントエンドデータエントリポイント ](../../assets/security-compliance/frontend-data-entry-points.svg)
 
 ### フロントエンドのデータアクセスポイント
 
 Commerceは、顧客がログインして複数のページを閲覧したり、チェックアウトしたりすると、顧客情報を読み込みます。
 
-![&#x200B; フロントエンドデータアクセスポイント &#x200B;](../../assets/security-compliance/frontend-data-access-points.png)
+![ フロントエンドデータアクセスポイント ](../../assets/security-compliance/frontend-data-access-points.png)
 
 ### バックエンドのデータエントリポイント
 
 加盟店は、管理者から顧客、住所、支払い情報を入力して、顧客または注文を作成できます。
 
-![&#x200B; バックエンド データ エントリ ポイント &#x200B;](../../assets/security-compliance/backend-data-entry-points.svg)
+![ バックエンド データ エントリ ポイント ](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### バックエンドのデータアクセスポイント
 
 Commerceを使用すれば、顧客に関する情報を自動的に読み込み、グリッドをクリックして詳細を確認したり、その他のさまざまなタスクを実行したりできます。
 
-![&#x200B; バックエンド データ アクセス ポイント &#x200B;](../../assets/security-compliance/backend-data-access-points.png)
+![ バックエンド データ アクセス ポイント ](../../assets/security-compliance/backend-data-access-points.png)
 
 ## データベースエンティティ
 
-Magento 1では、お客様の情報が、お客様テーブル、セールス テーブル、その他のデータベーステーブルに格納されます。
+Magento 1は、顧客データを顧客テーブル、セールステーブル、その他のデータベーステーブルに保存します。
 
 ### 顧客データ
 
-Magento 1は、お客様の情報を`customer_entity`および`customer_address_entity` テーブルに保存します。 これらのテーブルには、カスタム顧客属性を含めることができる複数の参照テーブルがあります。
+Magento 1は、顧客情報を`customer_entity`および`customer_address_entity` テーブルに保存します。 これらのテーブルには、カスタム顧客属性を含めることができる複数の参照テーブルがあります。
 
 #### `customer_entity`と参照テーブル
 

@@ -4,13 +4,23 @@ description: Adobe Commerce プロジェクトの開発時に例外をログに�
 feature: Best Practices
 role: Developer
 exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
-source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
-
 ---
-
 # 例外処理のベストプラクティス
 
 例外モデルをコンテキストとして使用して`exception.log` ファイルに例外が書き込まれない場合、New Relicまたはその他のPSR-3 モノログ互換ログストレージで例外が認識されず、正しく分析されません。 例外の一部のみをログに記録する（または間違ったファイルにログに記録する）と、例外が見落とされたときに本番環境でバグが発生します。
@@ -137,11 +147,11 @@ try {
 
 この方法では、PSR-3に準拠していないメッセージに改行が発生します。 スタックトレースを含む例外は、メッセージコンテキストの一部として、New Relicまたはその他のPSR-3 モノログ互換ログストレージにメッセージと共に正しく保存できるようにする必要があります。
 
-この問題を修正するには、[例外ログに書き込む](#write-to-the-exception-log)または[&#x200B; ダウングレード例外](#downgrade-exceptions)に示す正しい例に従ってコードを置き換えます。
+この問題を修正するには、[例外ログに書き込む](#write-to-the-exception-log)または[ ダウングレード例外](#downgrade-exceptions)に示す正しい例に従ってコードを置き換えます。
 
 ### コンテキストのない![不正な](../../../assets/no.svg) ダウングレードの例外
 
-例外はエラーにダウングレードされ、オブジェクトを渡すことができず、文字列のみが渡されないため、`getMessage()`が返されます。 これにより、トレースが失われ、[例外ログへの書き込み](#write-to-the-exception-log)または[&#x200B; ダウングレード例外](#downgrade-exceptions)に示す正しい例に置き換える必要があります。
+例外はエラーにダウングレードされ、オブジェクトを渡すことができず、文字列のみが渡されないため、`getMessage()`が返されます。 これにより、トレースが失われ、[例外ログへの書き込み](#write-to-the-exception-log)または[ ダウングレード例外](#downgrade-exceptions)に示す正しい例に置き換える必要があります。
 
 ```php
 try {
@@ -153,7 +163,7 @@ try {
 
 ### ![正しくない](../../../assets/no.svg)例外ログにメッセージのみを記録します
 
-オブジェクト `$e`を渡す代わりに、`$e->getMessage()`のみが渡されます。 これにより、トレースが失われ、[例外ログへの書き込み](#write-to-the-exception-log)または[&#x200B; ダウングレード例外](#downgrade-exceptions)に示す正しい例に置き換える必要があります。
+オブジェクト `$e`を渡す代わりに、`$e->getMessage()`のみが渡されます。 これにより、トレースが失われ、[例外ログへの書き込み](#write-to-the-exception-log)または[ ダウングレード例外](#downgrade-exceptions)に示す正しい例に置き換える必要があります。
 
 ```php
 try {
@@ -165,7 +175,7 @@ try {
 
 ### ![不正な](../../../assets/no.svg) `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`がありません
 
-`phpcs:ignore`行を省略すると、PHPCSで警告がトリガーされ、CIを渡してはなりません。 これは、[&#x200B; ミュート信号](#mute-signals)に示す正しい例に置き換える必要があります。
+`phpcs:ignore`行を省略すると、PHPCSで警告がトリガーされ、CIを渡してはなりません。 これは、[ ミュート信号](#mute-signals)に示す正しい例に置き換える必要があります。
 
 ```php
 try {

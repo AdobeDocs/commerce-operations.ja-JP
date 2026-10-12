@@ -2,15 +2,29 @@
 title: オンプレミス デプロイメント用Apacheのインストール
 description: オンプレミス Adobe Commerce デプロイメント用にApacheをインストールして設定する方法について説明します。 必要なモジュール、書き換え、および「.htaccess」設定を有効にします。
 feature: Install, Configuration
-badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 0%
-
 ---
-
 # オンプレミス デプロイメント用のApacheのインストール {#apache}
 
 このガイドでは、Commerce オンプレミスのデプロイメント用Apacheのインストールと、Adobe Commerceに必要なApache設定の設定について説明します。 これには、UbuntuとCentOSのApache要件とオペレーティングシステム固有の手順が共有されています。 Adobeでは、Commerce アプリケーションの機能とセキュリティの両方を保持するために、このガイドに記載されている設定手順に従うことをお勧めします。
@@ -21,7 +35,7 @@ Adobeでは、Adobe Commerce リリースの[必要システム構成](../../sys
 
 - Apacheが既にインストールされている場合は、[Apache要件の確認](#review-apache-requirements)から始めます。
 - UbuntuでApacheをインストールまたはアップグレードする必要がある場合は、[Ubuntu](#installing-or-upgrading-apache-on-ubuntu)でApacheをインストールまたはアップグレードします。
-- CentOSにApacheをインストールする必要がある場合は、[CentOSにApacheをインストール &#x200B;](#installing-apache-on-centos)に移動します。
+- CentOSにApacheをインストールする必要がある場合は、[CentOSにApacheをインストール ](#installing-apache-on-centos)に移動します。
 
 ## Apacheの要件の確認
 
@@ -40,7 +54,7 @@ Adobe Commerceをホストする任意のApache サーバーで、これらの�
 
 ### 書き換えと.htaccessの設定 {#apache-rewrites-and-htaccess}
 
-このセクションを使用して、Apacheの書き換えを有効にし、[分散`.htaccess` ファイル &#x200B;](https://httpd.apache.org/docs/current/howto/htaccess.html)を設定します。 Adobe Commerceは、Apacheのディレクトリレベルの手順を提供するために、サーバーの書き換えと`.htaccess`を使用します。
+このセクションを使用して、Apacheの書き換えを有効にし、[分散`.htaccess` ファイル ](https://httpd.apache.org/docs/current/howto/htaccess.html)を設定します。 Adobe Commerceは、Apacheのディレクトリレベルの手順を提供するために、サーバーの書き換えと`.htaccess`を使用します。
 
 >[!IMPORTANT]
 >
@@ -54,7 +68,7 @@ Adobe Commerceをホストする任意のApache サーバーで、これらの�
 
 1. 分散`.htaccess`構成ファイルを使用するようにアプリケーションを有効にします。
 
-   1. Ubuntuで、`/etc/apache2/sites-available/000-default.conf`を編集します。 その他のApache レイアウトまたは追加のパラメーターが必要な場合は、[Apache ドキュメント &#x200B;](https://httpd.apache.org/docs/current/mod/mod_rewrite.html)および[Apache アクセス制御ドキュメント &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order)を参照してください。
+   1. Ubuntuで、`/etc/apache2/sites-available/000-default.conf`を編集します。 その他のApache レイアウトまたは追加のパラメーターが必要な場合は、[Apache ドキュメント ](https://httpd.apache.org/docs/current/mod/mod_rewrite.html)および[Apache アクセス制御ドキュメント ](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order)を参照してください。
 
    1. Adobe Commerceをインストールするディレクトリの`AllowOverride` ディレクティブを追加または更新します。
 
@@ -103,8 +117,8 @@ Server built: <build-date>
 ```
 
 - Apacheが&#x200B;*not* インストールされている場合は、次を参照してください。
-   - [UbuntuでのApacheのインストールまたはアップグレード](#installing-or-upgrading-apache-on-ubuntu)
-   - [CentOSへのApacheのインストール](#installing-apache-on-centos)
+  - [UbuntuでのApacheのインストールまたはアップグレード](#installing-or-upgrading-apache-on-ubuntu)
+  - [CentOSへのApacheのインストール](#installing-apache-on-centos)
 
 ## UbuntuでのApacheのインストールまたはアップグレード {#installing-or-upgrading-apache-on-ubuntu}
 
@@ -173,7 +187,7 @@ Apacheが既にインストールされていて、`2.4`より前のバージョ
 
 1. インストールされているバージョンが、[必要システム構成](../../system-requirements.md)のAdobe Commerce リリースでサポートされているバージョンと一致することを確認してください。
 
-1. Ubuntu[&#128279;](#enable-rewrites-and-htaccess-for-ubuntu)の書き換えと`.htaccess`を有効にします。
+1. Ubuntu](#enable-rewrites-and-htaccess-for-ubuntu)の[書き換えと`.htaccess`を有効にします。
 
 ### Ubuntuの書き換えと.htaccessを有効にする
 
@@ -290,7 +304,7 @@ Apache サーバーの書き換えを設定する場合は、`.htaccess`で使�
 
    >[!NOTE]
    >
-   >`Order`の前の値は、すべての場合で機能しない可能性があります。 詳しくは、[Apache ドキュメント &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)を参照してください。
+   >`Order`の前の値は、すべての場合で機能しない可能性があります。 詳しくは、[Apache ドキュメント ](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)を参照してください。
 
 1. ファイルを保存し、テキストエディターを終了します。
 
@@ -310,7 +324,7 @@ Apache サーバーの書き換えを設定する場合は、`.htaccess`で使�
 
 ### Apacheの403 Forbidden エラーを解決する
 
-Web サイト訪問者がサイトにアクセスできるようにするには、[要求ディレクティブ &#x200B;](https://httpd.apache.org/docs/2.4/howto/access.html)のいずれかを使用します。
+Web サイト訪問者がサイトにアクセスできるようにするには、[要求ディレクティブ ](https://httpd.apache.org/docs/2.4/howto/access.html)のいずれかを使用します。
 
 例：
 
@@ -325,4 +339,4 @@ Web サイト訪問者がサイトにアクセスできるようにするには�
 
 >[!NOTE]
 >
->`Order`の前の値は、すべての場合で機能しない可能性があります。 詳しくは、[Apache ドキュメント &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order)を参照してください。
+>`Order`の前の値は、すべての場合で機能しない可能性があります。 詳しくは、[Apache ドキュメント ](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order)を参照してください。

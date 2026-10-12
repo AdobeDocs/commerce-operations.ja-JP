@@ -2,13 +2,22 @@
 title: モジュールを有効または無効にする
 description: モジュールステータスと関連オプションを使用して、コマンドラインからAdobe Commerce モジュールのステータスを有効、無効、および確認する方法を説明します。
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 0%
-
 ---
-
 # モジュールを有効または無効にする
 
 このコマンドには前提条件はありません。
@@ -29,7 +38,7 @@ bin/magento module:status [--enabled] [--disabled] <module-list>
 
 >[!NOTE]
 >
->クラウドプロジェクトでモジュールを直接有効または無効にすることはできません。 これらのコマンドをローカルで実行してから、環境の`app/etc/config.php` ファイルに変更をプッシュする必要があります。 [Pro プロジェクトワークフロー：デプロイメントワークフロー](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)を参照してください。
+>クラウドプロジェクトでモジュールを直接有効または無効にすることはできません。 これらのコマンドをローカルで実行してから、環境の`app/etc/config.php` ファイルに変更をプッシュする必要があります。 [Pro プロジェクトワークフロー：デプロイメントワークフロー](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)を参照してください。
 
 ## モジュールの有効化、無効化
 
@@ -47,12 +56,12 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 
 * `<module-list>`は、有効または無効にするモジュールのスペース区切りリストです。 モジュール名に特殊文字が含まれる場合は、名前を一重引用符または二重引用符で囲みます。
 * `--all`を使用すると、すべてのモジュールを同時に有効または無効にできます。
-* `-f`または`--force`は、依存関係にもかかわらず、モジュールを強制的に有効または無効にします。 このオプションを使用する前に、[&#x200B; モジュールの有効化と無効化について](#about-enabling-and-disabling-modules)を参照してください。
-* `-c`または`--clear-static-content`は、[生成された静的ビューファイル &#x200B;](../../configuration/cli/static-view-file-deployment.md)をクリーンアップします。
+* `-f`または`--force`は、依存関係にもかかわらず、モジュールを強制的に有効または無効にします。 このオプションを使用する前に、[ モジュールの有効化と無効化について](#about-enabling-and-disabling-modules)を参照してください。
+* `-c`または`--clear-static-content`は、[生成された静的ビューファイル ](../../configuration/cli/static-view-file-deployment.md)をクリーンアップします。
 
   静的ビューファイルをクリアしないと、同じ名前のファイルが複数あり、すべてのファイルをクリアできない場合に問題が発生する可能性があります。
 
-  つまり、[静的ファイルのフォールバック &#x200B;](../../configuration/cli/static-view-file-deployment.md) ルールにより、静的ファイルをクリアせず、`logo.svg`という名前の異なるファイルが複数ある場合、フォールバックによって間違ったファイルが表示される可能性があります。
+  つまり、[静的ファイルのフォールバック ](../../configuration/cli/static-view-file-deployment.md) ルールにより、静的ファイルをクリアせず、`logo.svg`という名前の異なるファイルが複数ある場合、フォールバックによって間違ったファイルが表示される可能性があります。
 
 例えば、`Magento_Weee` モジュールを無効にするには、次のように入力します。
 
@@ -60,7 +69,7 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 bin/magento module:disable Magento_Weee
 ```
 
-モジュールの有効化と無効化に関する重要な情報については、[&#x200B; モジュールの有効化と無効化についてを参照してください](#about-enabling-and-disabling-modules)。
+モジュールの有効化と無効化に関する重要な情報については、[ モジュールの有効化と無効化についてを参照してください](#about-enabling-and-disabling-modules)。
 
 ## データベースの更新
 

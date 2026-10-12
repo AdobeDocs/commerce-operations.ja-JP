@@ -1,25 +1,39 @@
 ---
 title: '[!DNL Commerce Version Tool]'
-description: Adobe Commerceの [!DNL Commerce Version Tool] について説明し、vendor/bin/patch-statusを使用して毎月のセキュリティパッチステータスを確認します。
+description: Adobe Commerceの[!DNL Commerce Version Tool]について説明し、vendor/bin/patch-statusを使用して毎月のセキュリティパッチのステータスを確認します。
 TQID: 'https://experienceleague.adobe.com/9lDQtCrcCSIFjt3jUJkqCo-rMlIhhy3tPTtPyT4wt1Q'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: eafe79321da03f4778dd9e1b290141ef082a5eaf
+    internal-label: Security
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: 586
+source-wordcount: '587'
 ht-degree: 0%
-
 ---
-
 # [!DNL Commerce Version Tool]
 
 Adobe Commerceの毎月のセキュリティパッチは累積されないので、順番に適用する必要があります。 [!DNL Commerce Version Tool] （[!DNL CVT]）は、インストールされている毎月のセキュリティパッチ、欠落しているパッチ、インストールで保護されているCVEを報告することで、パッチのカバレッジを確認するのに役立ちます。
@@ -90,6 +104,6 @@ Adobe Commerceの毎月のセキュリティパッチは累積されないので
 
 次のトピックを使用して、パッチのステータスに関するレポートを生成、トラブルシューティング、追跡します。
 
-- [&#x200B; パッチ ステータス レポートを生成](generate-report.md)して、[!DNL CVT] ツールを実行し、コマンド オプションを確認し、レポート結果を解釈します。
-- 予期しない結果またはコマンドエラーを解決するための[[!DNL Commerce Version Tool]  トラブルシューティング &#x200B;](troubleshooting.md)。
-- [[!DNL Commerce Version Tool]  リリースノート &#x200B;](release-notes.md)を使用して、リリースアップデートを確認します。
+- [ パッチ ステータス レポートを生成](generate-report.md)して、[!DNL CVT] ツールを実行し、コマンド オプションを確認し、レポート結果を解釈します。
+- 予期しない結果またはコマンドエラーを解決するための[[!DNL Commerce Version Tool]  トラブルシューティング ](troubleshooting.md)。
+- [[!DNL Commerce Version Tool]  リリースノート ](release-notes.md)を使用して、リリースアップデートを確認します。

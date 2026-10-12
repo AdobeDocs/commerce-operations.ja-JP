@@ -4,13 +4,23 @@ description: MySQL トリガーとスレーブ接続がCommerce サイトのパ�
 role: Developer
 feature: Best Practices
 exl-id: 7c2f51fd-9333-4954-bd35-79c2de3cb2ff
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
-
 ---
-
 # MySQL設定のベストプラクティス
 
 >[!NOTE]
@@ -40,15 +50,15 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Adobe Commerceでは、カスタムトリガーが将来のAdobe Commerce バージョンと互換性を持たなくなる可能性があるため、Adobe Commerce データベースのカスタムトリガーはサポートされません。 ベストプラクティスについては、Adobe Commerce ドキュメントの[一般MySQL ガイドライン &#x200B;](../../../installation/prerequisites/database/mysql.md)を参照してください。
+>Adobe Commerceでは、カスタムトリガーが将来のAdobe Commerce バージョンと互換性を持たなくなる可能性があるため、Adobe Commerce データベースのカスタムトリガーはサポートされません。 ベストプラクティスについては、Adobe Commerce ドキュメントの[一般MySQL ガイドライン ](../../../installation/prerequisites/database/mysql.md)を参照してください。
 
 ### 効果的な利用
 
 トリガーを使用する際のパフォーマンスの問題を回避するには、次のガイドラインに従います。
 
 - トリガーの実行時に一部のデータを書き込むカスタムトリガーがある場合は、代わりに監査テーブルに直接書き込むようにこのロジックを移動します。 例えば、トリガーコードにクエリを追加し、クエリの後にアプリケーションコードを追加します。
-- 既存のカスタムトリガーを確認し、それらを削除して、アプリケーション側からテーブルに直接書き込むことを検討します。 [`SHOW TRIGGERS` SQL ステートメント &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html)を使用して、データベース内の既存のトリガーを確認します。
-- 追加サポート、質問、懸念事項については、[Adobe Commerce サポートチケットを送信してください](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
+- 既存のカスタムトリガーを確認し、それらを削除して、アプリケーション側からテーブルに直接書き込むことを検討します。 [`SHOW TRIGGERS` SQL ステートメント ](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html)を使用して、データベース内の既存のトリガーを確認します。
+- 追加サポート、質問、懸念事項については、[Adobe Commerce サポートチケットを送信してください](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
 
 ## スレーブ接続
 
@@ -62,7 +72,7 @@ Adobe Commerce オンクラウドインフラストラクチャ、プロアー�
 
 ### 設定
 
-Adobe Commerce on cloud インフラストラクチャでは、[MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection)変数を設定することで、MYSQL スレーブ接続のデフォルト設定を上書きできます。 この変数を`true`に設定すると、データベースへの読み取り専用接続が自動的に使用されます。
+Adobe Commerce on cloud インフラストラクチャでは、[MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection)変数を設定することで、MYSQL スレーブ接続のデフォルト設定を上書きできます。 この変数を`true`に設定すると、データベースへの読み取り専用接続が自動的に使用されます。
 
 **MySQL スレーブ接続を有効にするには**:
 

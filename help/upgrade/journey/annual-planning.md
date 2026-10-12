@@ -2,18 +2,27 @@
 title: アップグレードに関する年次計画
 description: Adobe Commerce プロジェクトの年間アップグレードプランを作成するためのヒントを確認します。
 exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
-
 ---
-
 # アップグレードに関する年次計画
 
 多くの企業が年間予算とロードマップにもとづいて業務を行っています。 こうした年次議論では、プラットフォームの健全性、方向性、アップグレード戦略、およびビジネスの全体的な目標と主要業績評価指標（KPI）との整合性について話し合うことが不可欠です。
 
-[&#x200B; リリーススケジュール &#x200B;](/help/release/schedule.md)に従って、予算とリリースウィンドウを割り当ててアップグレードを行い、休日、会社の閉鎖、ピーク時を回避します。 Adobe リリーススケジュールを理解し、[&#x200B; リリースノート &#x200B;](/help/release/release-notes/overview.md)を通じて、各リリースに含まれる変更点と改善点について情報を得ることで、年をより適切に計画することができます。
+[ リリーススケジュール ](/help/release/schedule.md)に従って、予算とリリースウィンドウを割り当ててアップグレードを行い、休日、会社の閉鎖、ピーク時を回避します。 Adobe リリーススケジュールを理解し、[ リリースノート ](/help/release/release-notes/overview.md)を通じて、各リリースに含まれる変更点と改善点について情報を得ることで、年をより適切に計画することができます。
 
 プランニングの際には、次のように自問してみてください。
 

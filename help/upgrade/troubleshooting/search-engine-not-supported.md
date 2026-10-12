@@ -3,13 +3,30 @@ title: 現在の検索エンジンはサポートされていません
 description: サポートされていない検索エンジンに関するエラーが発生した場合のAdobe Commerce アップグレードのトラブルシューティング。
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
-
 ---
-
 # 現在の検索エンジンはサポートされていません
 
 次のエラーメッセージは、アップグレード元のAdobe Commerce バージョンが、アップグレード先のバージョンでサポートされていないカタログ検索エンジンを使用するように設定されていることを示しています。
@@ -66,11 +83,11 @@ Elasticsearch 6以前はサポートされなくなりました。
 
 2.4にアップグレードする前に、次のタスクを実行する必要があります。
 
-1. CommerceでサポートされているElasticsearchのバージョンにアップデートします。 データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストについて詳しくは、[Elasticsearchのアップグレード &#x200B;](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)を参照してください。 現在のバージョンのElasticsearchによっては、クラスター全体の再起動が必要な場合とそうでない場合があります。
+1. CommerceでサポートされているElasticsearchのバージョンにアップデートします。 データのバックアップ、潜在的な移行の問題の検出、実稼動環境にデプロイする前のアップグレードのテストについて詳しくは、[Elasticsearchのアップグレード ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)を参照してください。 現在のバージョンのElasticsearchによっては、クラスター全体の再起動が必要な場合とそうでない場合があります。
 
    >[!NOTE]
    >
-   >ElasticsearchにはJDK 1.8以降が必要です。 [Java Software Development Kit （JDK） &#x200B;](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit)をインストールして、どのバージョンのJDKがインストールされているかを確認してください。
+   >ElasticsearchにはJDK 1.8以降が必要です。 [Java Software Development Kit （JDK） ](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit)をインストールして、どのバージョンのJDKがインストールされているかを確認してください。
 
 1. [Elasticsearch](../../configuration/search/configure-search-engine.md)を構成してインデックスを再作成します。
 

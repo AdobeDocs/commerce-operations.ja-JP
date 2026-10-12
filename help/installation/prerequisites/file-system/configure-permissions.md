@@ -2,18 +2,27 @@
 title: ファイルの所有権と権限の設定
 description: Adobe Commerceのオンプレミスインストールのファイルシステム権限を設定するには、次の手順に従います。
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1005'
 ht-degree: 0%
-
 ---
-
 # ファイルの所有権と権限の設定
 
 このトピックでは、Adobe Commerceをインストールする前に、web サーバーグループに対する読み取り/書き込み権限を設定する方法について説明します。 これは、コマンドラインがファイルシステムにファイルを書き込めるようにするために必要です。
 
-使用する手順は、[共有ホスティング &#x200B;](#set-permissions-for-one-user-on-shared-hosting)を使用し、1人のユーザーを持っているか、[&#x200B; プライベートサーバー](#set-ownership-and-permissions-for-two-users)を使用し、2人のユーザーを持っているかによって異なります。
+使用する手順は、[共有ホスティング ](#set-permissions-for-one-user-on-shared-hosting)を使用し、1人のユーザーを持っているか、[ プライベートサーバー](#set-ownership-and-permissions-for-two-users)を使用し、2人のユーザーを持っているかによって異なります。
 
 ## 共有ホスティングで1人のユーザーの権限を設定する
 
@@ -60,7 +69,7 @@ ht-degree: 0%
    * [Composer メタパッケージ](../../composer.md)
    * [リポジトリのクローンを作成する（開発者向け）](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
-1. ファイルシステムの所有権と権限を設定したら、[&#x200B; アプリケーションをインストール &#x200B;](../../advanced.md)
+1. ファイルシステムの所有権と権限を設定したら、[ アプリケーションをインストール ](../../advanced.md)
 
 >[!NOTE]
 >
@@ -89,7 +98,7 @@ Web サーバーがファイルシステムにファイルやディレクトリ�
 
 >[!NOTE]
 >
->既存のユーザーアカウントを使用する予定がある場合は、[Web サーバーユーザーグループ &#x200B;](#find-the-web-server-user-group)にスキップします。
+>既存のユーザーアカウントを使用する予定がある場合は、[Web サーバーユーザーグループ ](#find-the-web-server-user-group)にスキップします。
 
 ### ファイルシステムの所有者を作成し、ユーザーに強力なパスワードを付与します
 
@@ -125,7 +134,7 @@ sudo passwd magento_user
 
 >[!WARNING]
 >
->このユーザーを作成する目的は、セキュリティを強化することなので、[強力なパスワード &#x200B;](https://en.wikipedia.org/wiki/Password_strength)を作成してください。
+>このユーザーを作成する目的は、セキュリティを強化することなので、[強力なパスワード ](https://en.wikipedia.org/wiki/Password_strength)を作成してください。
 
 ### Web サーバーのユーザーグループを見つける
 
@@ -158,7 +167,7 @@ Web サーバーのプライマリグループにファイルシステム所有�
 
 >[!NOTE]
 >
->`-a -G` オプションは、`apache`または`www-data`を&#x200B;*セカンダリ* グループとしてユーザーアカウントに追加し、ユーザーの&#x200B;*プライマリ* グループを保持するため、重要です。 ユーザーアカウントにセカンダリグループを追加すると、[&#x200B; ファイルの所有権と権限を制限](#set-ownership-and-permissions-for-two-users)して、共有グループのメンバーが特定のファイルのみにアクセスできるようにします。
+>`-a -G` オプションは、`apache`または`www-data`を&#x200B;*セカンダリ* グループとしてユーザーアカウントに追加し、ユーザーの&#x200B;*プライマリ* グループを保持するため、重要です。 ユーザーアカウントにセカンダリグループを追加すると、[ ファイルの所有権と権限を制限](#set-ownership-and-permissions-for-two-users)して、共有グループのメンバーが特定のファイルのみにアクセスできるようにします。
 
 例えば、ユーザー`magento_user`をCentOSの`apache` プライマリグループに追加するには、次の手順を実行します。
 

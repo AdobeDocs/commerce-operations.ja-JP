@@ -2,13 +2,22 @@
 title: 共通コマンド
 description: 一般的なAdobe Commerce CLI コマンドとその使用例について説明します。 開発と管理に必要なコマンドラインツールを確認します。
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
-
 ---
-
 # 共通コマンド
 
 次に、使用可能なコマンドの一部を示します。
@@ -44,14 +53,14 @@ bin/magento help cache:enable
 | [`magento dev:tests:run`](../cli/unit-tests.md) | 自動テストの実行 |
 | [`magento dev:xml:convert`](../cli/convert-layout-files.md) | レイアウト XML ファイルを、新しい拡張可能スタイルシート言語変換（XSLT）スタイルシートに合わせて更新します |
 | [`magento setup:perf:generate-fixtures`](../cli/generate-data.md) | パフォーマンステストに使用するデータを生成。 |
-| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Commerce アプリケーションのインストール後に、オプションのサンプルデータをインストールします。<br><br> サンプルデータについて詳しくは、[&#x200B; オプションのサンプルデータ &#x200B;](../../installation/sample-data/overview.md)を参照してください。 |
+| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Commerce アプリケーションのインストール後に、オプションのサンプルデータをインストールします。<br><br> サンプルデータについて詳しくは、[ オプションのサンプルデータ ](../../installation/sample-data/overview.md)を参照してください。 |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | バックエンド設定の管理 |
 | [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | 管理者ユーザーを作成/編集/ロック解除します。 |
 | [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug) | 開発者テンプレートヒントを有効/無効にします。 |
 
 ## 共通引数
 
-次の引数は、[すべてのコマンド &#x200B;](/help/tools/reference/commerce-on-premises.md)に共通です。 これらのコマンドは、Commerce ソフトウェアのインストール前またはインストール後に実行できます。
+次の引数は、[すべてのコマンド ](/help/tools/reference/commerce-on-premises.md)に共通です。 これらのコマンドは、Commerce ソフトウェアのインストール前またはインストール後に実行できます。
 
 | 長文 | 短いバージョン | 意味 |
 |--- |--- |--- |

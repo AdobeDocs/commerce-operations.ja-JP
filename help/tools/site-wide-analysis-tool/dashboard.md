@@ -1,18 +1,27 @@
 ---
 title: '[!DNL Dashboard]'
-description: ' [!DNL Site-Wide Analysis Tool]の [!DNL Dashboard]  タブについて、要素、使用するタイミング、利点、ベストプラクティスを説明します。'
+description: '[!DNL Site-Wide Analysis Tool]の「[!DNL Dashboard]」タブについて、要素、使用時期、利点、ベストプラクティスを説明します。'
 exl-id: 37d848ff-2cff-48b1-8391-520531300bbc
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '867'
 ht-degree: 0%
-
 ---
-
 # [!UICONTROL Dashboard]
 
 [!UICONTROL Dashboard] ページには、Adobe Commerce web サイトの正常性と現在のステータスの「一元的なウィンドウ表示」を提供する[!DNL widgets]が一目で表示されます。 各[!DNL widget]には、各機能のページ、各ツール自体、またはレポートへのアクセス リンクが含まれています（[!DNL widget]によって異なります）。
-Adobe Commerceの[!UICONTROL External Resources]のリンクのリストもあります。たとえば、[Adobe Commerce ヘルプセンターのサポートナレッジベース（ヘルプセンター） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview)、[Adobe Commerce開発者向けドキュメント（開発ドキュメント） &#x200B;](https://developer.adobe.com/commerce/docs/)、[[!DNL Quality Patches Tool]：パッチを検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}、[&#x200B; セキュリティセンター](https://helpx.adobe.com/jp/security.html)、および[Adobe Commerceの観察（OAC） &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=ja)です。
+Adobe Commerceの[!UICONTROL External Resources]のリンクのリストもあります。たとえば、[Adobe Commerce ヘルプセンターのサポートナレッジベース（ヘルプセンター） ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)、[Adobe Commerce開発者向けドキュメント（開発ドキュメント） ](https://developer.adobe.com/commerce/docs/)、[[!DNL Quality Patches Tool]：パッチを検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}、[ セキュリティセンター](https://helpx.adobe.com/security.html)、および[Adobe Commerceの観察（OAC） ](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html)です。
 
 ## 要素
 
@@ -23,16 +32,16 @@ Adobe Commerceの[!UICONTROL External Resources]のリンクのリストもあ�
 [!UICONTROL Upgrade Compatibility Tool]を使用すると、カスタマイズされた機能にコアコードが変更されたタイミングを特定できます。
 
 * **[!UICONTROL Security Center Widget]**: サイトのセキュリティインサイトを表示します。
-表示されるセキュリティ情報には、[技術 [!DNL Stack]  バージョンのコンプライアンスに関する [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ja), [Adobe Security Bulletin](https://helpx.adobe.com/jp/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html?lang=ja), and [[!DNL Site-Wide Analysis Tool]  ベストプラクティス セキュリティの推奨事項](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html?lang=ja)が含まれています。<br>
-[[!UICONTROL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html?lang=ja)は、セキュリティ リスクについてAdobe Commerce サイトを監視します。 また、セキュリティリスク、マルウェア、脅威が発生した場合には、加盟店ストア上のマルウェアを先見的かつ効率的に検出して、加盟店に通知したり、Adobe Commerceのパッチやアップデートが欠けていることを特定したりできます。
+表示されるセキュリティ情報には、[技術 [!DNL Stack]  バージョンのコンプライアンスに関する [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html), and [[!DNL Site-Wide Analysis Tool]  ベストプラクティス セキュリティの推奨事項](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html)が含まれています。<br>
+[[!UICONTROL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html)は、セキュリティ リスクについてAdobe Commerce サイトを監視します。 また、セキュリティリスク、マルウェア、脅威が発生した場合には、加盟店ストア上のマルウェアを先見的かつ効率的に検出して、加盟店に通知したり、Adobe Commerceのパッチやアップデートが欠けていることを特定したりできます。
 
 * **[!UICONTROL Extensions]**：現在Adobe Commerce インスタンスにインストールされている拡張機能を表示します。 [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com//extensions.html)の情報は、利用可能な場合、そこに記載されている拡張機能について提供されます。
 
-* **[!UICONTROL Alerts]**: Adobe Commerce インスタンスの最新の[!DNL New Relic Managed Alerts]を表示します。 Adobe Commerce[&#128279;](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)の[管理済みアラートの詳細と、New Relic サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/faq/access-new-relic-services)へのアクセス方法については、Adobe Commerce サポート サポート ナレッジベースを参照してください。
+* **[!UICONTROL Alerts]**: Adobe Commerce インスタンスの最新の[!DNL New Relic Managed Alerts]を表示します。 Adobe Commerce](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)の[管理済みアラートの詳細と、New Relic サービス ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/access-new-relic-services)へのアクセス方法については、Adobe Commerce サポート サポート ナレッジベースを参照してください。[
 
 * **[!UICONTROL Non-recommended software in use]**: Adobe Commerceのバージョンに基づいて、現在Adobe Commerce インスタンスで使用している推奨されないソフトウェアを表示します。 推奨されないソフトウェアは、[!UICONTROL Name]、[!UICONTROL Installed Version]および[!UICONTROL Recommended Version]によってリストされています。
 
-* **[!UICONTROL Recommended Patches]**：既にインストールしている可能性のあるパッチとAdobe Commerceのバージョンの両方に基づいて、推奨されるパッチの簡単なリストを表示します。 推奨されるパッチの完全なリストは、**[!UICONTROL Patches]**&#x200B;機能タブにあります。このタブは、[!DNL Site-Wide Analysis Tool]内にあります。 パッチは、[[!DNL Quality Patches Tool]: パッチを検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}することによって提供されます。 リストされているすべてのパッチは、現在のAdobe Commerce インスタンスと互換性があります。
+* **[!UICONTROL Recommended Patches]**：既にインストールしている可能性のあるパッチとAdobe Commerceのバージョンの両方に基づいて、推奨されるパッチの簡単なリストを表示します。 推奨されるパッチの完全なリストは、**[!UICONTROL Patches]**&#x200B;機能タブにあります。このタブは、[!DNL Site-Wide Analysis Tool]内にあります。 パッチは、[[!DNL Quality Patches Tool]: パッチを検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}することによって提供されます。 リストされているすべてのパッチは、現在のAdobe Commerce インスタンスと互換性があります。
 Adobe Commerce インスタンスに表示する推奨パッチがない場合、この[!DNL widget]は&#x200B;**[!UICONTROL No Recommended Patches]**&#x200B;と表示されます。
 
 ## 使用するタイミング
@@ -57,4 +66,4 @@ Adobe Commerce インスタンスに表示する推奨パッチがない場合�
 
 * [!UICONTROL Security Scan Tool] [!DNL widget]に移動し、[!UICONTROL View Report]をクリックして、サイトの[!UICONTROL Recommendations] レポートを表示します。
 
-* [!DNL External Resources]のリンクを使用して、詳細情報の確認、セキュリティパッチ、アップデート、ベストプラクティスの最新情報の入手、insightの[Adobe Commerce ヘルプセンターサポートナレッジベース（ヘルプセンター） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview)、[Adobe Commerce開発者用ドキュメント（DevDocs） &#x200B;](https://developer.adobe.com/commerce/docs/)、[[!DNL Quality Patches Tool]: パッチ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}、[&#x200B; セキュリティセンター](https://helpx.adobe.com/jp/security.html)、[Observation for Adobe Commerce（OAC） &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=ja)の活用を行います。
+* [!DNL External Resources]のリンクを使用して、詳細情報の確認、セキュリティパッチ、アップデート、ベストプラクティスの最新情報の入手、insightの[Adobe Commerce ヘルプセンターサポートナレッジベース（ヘルプセンター） ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)、[Adobe Commerce開発者用ドキュメント（DevDocs） ](https://developer.adobe.com/commerce/docs/)、[[!DNL Quality Patches Tool]: パッチ ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}、[ セキュリティセンター](https://helpx.adobe.com/security.html)、[Observation for Adobe Commerce（OAC） ](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html)の活用を行います。

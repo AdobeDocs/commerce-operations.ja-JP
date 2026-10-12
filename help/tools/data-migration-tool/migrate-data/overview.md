@@ -1,15 +1,24 @@
 ---
 title: 移行について
-description: ' [!DNL Data Migration Tool]を使用してMagento 1からMagento 2へのデータ移行を開始する方法を説明します。'
+description: '[!DNL Data Migration Tool]を使用してMagento 1からMagento 2へのデータ移行を開始する方法を説明します。'
 exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
-
 ---
-
 # 移行について
 
 移行を開始する前に、すべてのMagento 1 cron ジョブを停止します。
@@ -22,7 +31,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Magento 1のストアフロントでは、すべての操作が許可されます。
+>Magento 1 ストアフロントでは、あらゆる操作が可能です。
 
 ## [!DNL Data Migration Tool]を実行
 
@@ -30,7 +39,7 @@ ht-degree: 0%
 
 ### 最初のステップ
 
-1. ファイルシステムへの書き込み権限を持つユーザーとしてアプリケーションサーバーにログインするか、切り替えます。 「[&#x200B; ファイルシステム所有者に切り替える](../../../installation/prerequisites/file-system/overview.md)」を参照してください。
+1. ファイルシステムへの書き込み権限を持つユーザーとしてアプリケーションサーバーにログインするか、切り替えます。 「[ ファイルシステム所有者に切り替える](../../../installation/prerequisites/file-system/overview.md)」を参照してください。
 
    bash シェルを使用する場合は、次の構文を使用してファイルシステム所有者に切り替え、同時にコマンドを入力できます。
 

@@ -3,13 +3,22 @@ title: マスターデータベースの手動設定
 description: スプリットデータベースソリューションの手動での設定に関するガイダンスを参照してください。
 recommendations: noCatalog
 exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
-
 ---
-
 # マスターデータベースの手動設定
 
 {{ee-only}}
@@ -23,9 +32,9 @@ Commerce アプリケーションが既に実稼動環境にある場合や、�
 - チェックアウトおよび注文管理システム（OMS）データベースの作成
 - 次のような一連のSQL スクリプトを実行します。
 
-   - 外部キーをドロップ
-   - セールスおよび見積データベース テーブルのバックアップ
-   - テーブルをメイン データベースからセールス データベースおよび見積データベースに移動する
+  - 外部キーをドロップ
+  - セールスおよび見積データベース テーブルのバックアップ
+  - テーブルをメイン データベースからセールス データベースおよび見積データベースに移動する
 
 >[!WARNING]
 >
@@ -52,7 +61,7 @@ Adobeでは、プロセス中に問題が発生した場合に復元できるよ
 
 **システムをバックアップするには**:
 
-1. [&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてCommerce サーバーにログインするか、切り替えます。
+1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてCommerce サーバーにログインするか、切り替えます。
 1. 次のコマンドを入力します。
 
    ```shell
@@ -130,7 +139,7 @@ Adobeでは、プロセス中に問題が発生した場合に復元できるよ
 
 >[!INFO]
 >
->このセクションには、特定のデータベーステーブル名を持つスクリプトが含まれます。 カスタマイズを実行した場合、またはアクションを実行する前にテーブルの完全なリストを表示する場合は、[参照スクリプト &#x200B;](#reference-scripts)を参照してください。
+>このセクションには、特定のデータベーステーブル名を持つスクリプトが含まれます。 カスタマイズを実行した場合、またはアクションを実行する前にテーブルの完全なリストを表示する場合は、[参照スクリプト ](#reference-scripts)を参照してください。
 
 詳細は、次を参照してください。
 
@@ -263,7 +272,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> seque
 
 #### NDB要件
 
-[Network Database （NDB） &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) クラスターを使用している場合：
+[Network Database （NDB） ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) クラスターを使用している場合：
 
 1. InnoDbからダンプファイルのNDB タイプにテーブルを変換する：
 
@@ -309,7 +318,7 @@ mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattribu
 
 >[!INFO]
 >
->このセクションには、特定のデータベーステーブル名を持つスクリプトが含まれます。 カスタマイズを実行した場合、またはアクションを実行する前にテーブルの完全なリストを表示する場合は、[参照スクリプト &#x200B;](#reference-scripts)を参照してください。
+>このセクションには、特定のデータベーステーブル名を持つスクリプトが含まれます。 カスタマイズを実行した場合、またはアクションを実行する前にテーブルの完全なリストを表示する場合は、[参照スクリプト ](#reference-scripts)を参照してください。
 
 見積データベース テーブル名は`quote`で始まります。 `magento_customercustomattributes_sales_flat_quote`および`magento_customercustomattributes_sales_flat_quote_address` テーブルも影響を受けます
 
@@ -357,7 +366,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> magen
 
 ### NDB要件
 
-[Network Database （NDB） &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) クラスターを使用している場合：
+[Network Database （NDB） ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) クラスターを使用している場合：
 
 1. InnoDbからダンプファイルのNDB タイプにテーブルを変換する：
 
@@ -477,7 +486,7 @@ SET foreign_key_checks = 1;
 
 デプロイメント設定を更新するには：
 
-1. [&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてCommerce サーバーにログインするか、切り替えます。
+1. [ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)としてCommerce サーバーにログインするか、切り替えます。
 1. デプロイメント設定をバックアップします。
 
    ```shell

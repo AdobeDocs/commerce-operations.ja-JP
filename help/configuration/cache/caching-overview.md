@@ -7,23 +7,37 @@ autotag-review: '2026-06-22T20:28:12.484Z'
 TQID: 'https://experienceleague.adobe.com/oDoZ1o2IWXsDTo84XQygWZYVmfVHWbk-CuqaU47laU4'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 8c5dc151b00fd73e939c32fdc083fb0e8fc41dc8
+    internal-label: Implementation
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: 536
+source-wordcount: '536'
 ht-degree: 0%
-
 ---
-
 # キャッシュの概要と設定オプション
 
 Adobe Commerceでは、複数のキャッシングレイヤーを使用して、繰り返し処理の削減、データベースの読み込みの低減、応答時間の短縮を実現します。 これらのレイヤーは、リクエストとアセット配信の異なるポイントで動作します。
@@ -33,7 +47,7 @@ Adobe Commerceでは、複数のキャッシングレイヤーを使用して、
 - **L2 キャッシュ**&#x200B;は、共有リモートキャッシュストレージの前にある各web ノードにローカルキャッシュを追加できます。
 - **静的コンテンツキャッシュ**&#x200B;を使用すると、ブラウザーでCSS、JavaScript、画像、その他の静的リソースを再利用できます。
 
-このページでは、これらのレイヤーの概念的な概要と、それらの設定ガイダンスへのリンクについて説明します。 バックエンドの選択、実装の詳細、バージョン固有の設定については、[&#x200B; バックエンドのオプションとストレージの参照](cache-options.md)を参照してください。
+このページでは、これらのレイヤーの概念的な概要と、それらの設定ガイダンスへのリンクについて説明します。 バックエンドの選択、実装の詳細、バージョン固有の設定については、[ バックエンドのオプションとストレージの参照](cache-options.md)を参照してください。
 
 ## レイヤーのキャッシュ
 
@@ -47,16 +61,16 @@ Commerce アプリケーションキャッシュは、次のように構成さ�
 
 >[!ENDSHADEBOX]
 
-キャッシュの種類&#x200B;**は、設定、レイアウト、ブロック HTML、ページ全体の内容など、キャッシュされるデータの種類を示します。**&#x200B;**キャッシュフロントエンド**&#x200B;は、1つ以上のキャッシュタイプをストレージに接続します。 **キャッシュバックエンド**&#x200B;は、ストレージ実装を提供します。
+キャッシュの種類&#x200B;**は、設定、レイアウト、ブロック HTML、ページ全体の内容など、キャッシュされるデータの種類を示します。****キャッシュフロントエンド**&#x200B;は、1つ以上のキャッシュタイプをストレージに接続します。 **キャッシュバックエンド**&#x200B;は、ストレージ実装を提供します。
 
-個別のキャッシュ設定またはストレージが必要な場合は、異なるキャッシュタイプを異なるフロントエンドに割り当てることができます。 設定の詳細については、[&#x200B; キャッシュフロントエンドとタイプの設定](cache-types.md)を参照してください。
+個別のキャッシュ設定またはストレージが必要な場合は、異なるキャッシュタイプを異なるフロントエンドに割り当てることができます。 設定の詳細については、[ キャッシュフロントエンドとタイプの設定](cache-types.md)を参照してください。
 
 ### フルページ HTTP キャッシュ
 
 HTTP フルページキャッシングでは、HTTPまたはCDN レイヤーに完全な応答を保存します。 実稼動デプロイメントの場合：
 
 - **Adobe Commerce オンプレミス**:Adobeでは、フルページ キャッシュに[Varnish](config-varnish.md)をお勧めします。 Varnishは、web サーバーの前でリバースプロキシとして動作します。
-- **クラウド インフラストラクチャ上のAdobe Commerce**&#x200B;は、エッジおよびページ全体のキャッシュ レイヤーに[Fastly](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"}を使用します。 クラウドインフラストラクチャでは、個別に管理されたVarnish サービスは使用されません。
+- **クラウド インフラストラクチャ上のAdobe Commerce**&#x200B;は、エッジおよびページ全体のキャッシュ レイヤーに[Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"}を使用します。 クラウドインフラストラクチャでは、個別に管理されたVarnish サービスは使用されません。
 
 >[!NOTE]
 >
@@ -78,11 +92,11 @@ Commerceでは、デプロイメントバージョンをURLに追加すること
 
 | タスク | オンプレミス | クラウド基盤 |
 | --- | --- | --- |
-| アプリケーションキャッシュバックエンド | [&#x200B; キャッシュバックエンドオプションとストレージ参照](cache-options.md) | [ValkeyとRedis サービス設定のベストプラクティス &#x200B;](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) |
-| HTTP フルページキャッシュ | [Varnish](config-varnish.md)の設定 | [Fastly サービスの概要](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/fastly) |
+| アプリケーションキャッシュバックエンド | [ キャッシュバックエンドオプションとストレージ参照](cache-options.md) | [ValkeyとRedis サービス設定のベストプラクティス ](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) |
+| HTTP フルページキャッシュ | [Varnish](config-varnish.md)の設定 | [Fastly サービスの概要](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) |
 
 次のタスクは、すべてのデプロイメントタイプに適用されます。
 
-- **キャッシュタイプとフロントエンドの設定** [&#x200B; キャッシュフロントエンドとキャッシュの種類をキャッシュフロントエンドに関連付けるようにキャッシュフロントエンドとタイプ &#x200B;](cache-types.md)を設定します。
+- **キャッシュタイプとフロントエンドの設定** [ キャッシュフロントエンドとキャッシュの種類をキャッシュフロントエンドに関連付けるようにキャッシュフロントエンドとタイプ ](cache-types.md)を設定します。
 - **L2 キャッシュの設定**—[L2 キャッシュの設定](level-two-cache.md)。
 - **静的コンテンツのブラウザーキャッシュ無効化を設定**—[静的コンテンツ署名とブラウザーキャッシュ無効化](static-content-signing.md)。

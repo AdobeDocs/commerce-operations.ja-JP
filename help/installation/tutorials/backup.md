@@ -2,13 +2,22 @@
 title: ファイルシステム、メディア、データベースのバックアップとロールバック
 description: Adobe Commerce アプリケーションをバックアップおよび復元するには、次の手順に従います。
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 0%
-
 ---
-
 # ファイルシステム、メディア、データベースのバックアップとロールバック
 
 このコマンドを使用すると、次のバックアップを作成できます。
@@ -19,11 +28,11 @@ ht-degree: 0%
 
 バックアップは`var/backups` ディレクトリに保存され、[`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) コマンドを使用していつでも復元できます。
 
-バックアップ後、後で[&#x200B; ロールバック &#x200B;](#rollback)できます。
+バックアップ後、後で[ ロールバック ](#rollback)できます。
 
 >[!TIP]
 >
->クラウドインフラストラクチャプロジェクト上のAdobe Commerceについては、_クラウドガイド_&#x200B;の[&#x200B; スナップショットとバックアップ管理](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)を参照してください。
+>クラウドインフラストラクチャプロジェクト上のAdobe Commerceについては、_クラウドガイド_&#x200B;の[ スナップショットとバックアップ管理](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)を参照してください。
 
 ## バックアップを有効にする
 
@@ -50,7 +59,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 
 これはコマンドラインで行うことも、シェルスクリプトを編集してユーザーの永続的な設定にすることもできます。
 
-続行する前に、まだ実行していない場合は、[&#x200B; ファイルシステム所有者](../prerequisites/file-system/overview.md)に切り替えてください。
+続行する前に、まだ実行していない場合は、[ ファイルシステム所有者](../prerequisites/file-system/overview.md)に切り替えてください。
 
 コマンド：
 
@@ -66,7 +75,7 @@ ulimit -s 65536
 
 オプションで、ユーザーのBash シェルの値を設定するには、次の手順を実行します。
 
-1. まだ実行していない場合は、[&#x200B; ファイルシステム所有者](../prerequisites/file-system/overview.md)に切り替えます。
+1. まだ実行していない場合は、[ ファイルシステム所有者](../prerequisites/file-system/overview.md)に切り替えます。
 1. `/home/<username>/.bashrc`をテキストエディターで開きます。
 1. 次の行を追加します。
 

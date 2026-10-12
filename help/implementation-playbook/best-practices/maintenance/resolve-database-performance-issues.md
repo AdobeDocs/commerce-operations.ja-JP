@@ -4,13 +4,25 @@ description: クラウドインフラストラクチャにデプロイされたA
 role: Developer, Admin
 feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
-
 ---
-
 <!--Consider moving this topic to the Maintenance section-->
 
 # データベースのパフォーマンスの問題を解決するためのベストプラクティス
@@ -38,7 +50,7 @@ MySQLを使用すると、任意のAdobe Commerce on cloud インフラストラ
 Adobe Commerce プロジェクトがPro アーキテクチャにデプロイされている場合は、Percona Toolkitを使用してクエリを分析できます。
 
 1. MySQLの低速クエリログに対して`pt-query-digest --type=slowlog` コマンドを実行します。
-   * 低速なクエリログの場所については、開発者ドキュメントの&#x200B;**[!UICONTROL Log locations > Service Logs]** （https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/test/log-locations#service-logs）を参照してください。
+   * 低速なクエリログの場所については、開発者ドキュメントの&#x200B;**[!UICONTROL Log locations > Service Logs]** （https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#service-logs）を参照してください。
    * [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) ドキュメントを参照してください。
 1. 見つかった問題に基づいて、クエリをより迅速に実行できるように修正する手順を実行します。
 
@@ -86,7 +98,7 @@ Pro アーキテクチャのマーチャントは、Percona Toolkit `[pt-duplica
 
 ### 重複したインデックスの削除
 
-SQL [DROP INDEX ステートメント &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html)を使用して、重複するインデックスを削除します。
+SQL [DROP INDEX ステートメント ](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html)を使用して、重複するインデックスを削除します。
 
 ```SQL
 DROP INDEX

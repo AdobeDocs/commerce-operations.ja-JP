@@ -2,13 +2,22 @@
 title: メッセージキューの管理
 description: Adobe Commerceのコマンドラインからメッセージキューを管理する方法について説明します。
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
-
 ---
-
 # メッセージキューの管理
 
 cron ジョブまたは外部プロセスマネージャーを使用して、コマンドラインからメッセージキューを管理し、消費者がメッセージを取得していることを確認できます。 これは、RabbitMQ （AMQP）、Apache ActiveMQ Artemis （STOMP）、MySQL アダプタなど、サポートされているすべてのメッセージブローカーに適用されます。
@@ -37,7 +46,7 @@ Cron ジョブは、消費者を再起動するためのデフォルトのメカ
 >
 >Commerceでの`cron`の使用について詳しくは、[cron](../cli/configure-cron-jobs.md)の設定と実行を参照してください。
 
-[&#x200B; スーパーバイザー](https://supervisord.readthedocs.io/en/latest/)などのプロセスマネージャーを使用して、プロセスのステータスを監視することもできます。 マネージャーはコマンドラインを使用して、必要に応じてプロセスを再起動できます。
+[ スーパーバイザー](https://supervisord.readthedocs.io/en/latest/)などのプロセスマネージャーを使用して、プロセスのステータスを監視することもできます。 マネージャーはコマンドラインを使用して、必要に応じてプロセスを再起動できます。
 
 ## 設定
 
@@ -49,7 +58,7 @@ Cron ジョブは、消費者を再起動するためのデフォルトのメカ
 
 >[!INFO]
 >
->Adobe Commerce ストアがCloud Platform上でホストされている場合は、[`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner)を使用して`consumers_runner` cron ジョブを設定します。
+>Adobe Commerce ストアがCloud Platform上でホストされている場合は、[`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner)を使用して`consumers_runner` cron ジョブを設定します。
 
 ### 特定の設定
 
@@ -82,7 +91,7 @@ Cron ジョブは、消費者を再起動するためのデフォルトのメカ
 
   >[!INFO]
   >
-  >Adobe Commerce ストアがCloud Platform上でホストされている場合は、[`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#consumers_wait_for_max_messages)を使用して、消費者がメッセージキューからメッセージを処理する方法を設定します。
+  >Adobe Commerce ストアがCloud Platform上でホストされている場合は、[`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#consumers_wait_for_max_messages)を使用して、消費者がメッセージキューからメッセージを処理する方法を設定します。
 
   >[!NOTE]
   >

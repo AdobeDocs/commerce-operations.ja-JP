@@ -3,15 +3,25 @@ title: データベーステーブルの修正に関するベストプラクテ�
 description: Adobe Commerceおよびサードパーティのデータベーステーブルを変更する方法とタイミングについて説明します。
 role: Developer
 feature: Best Practices
-last-substantial-update: 2022-11-15T00:00:00Z
+last-substantial-update: 2022-11-15T00:00:00.000Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1591'
 ht-degree: 0%
-
 ---
-
 # データベーステーブルの修正に関するベストプラクティス
 
 この記事では、[!DNL Adobe Commerce]またはサードパーティのモジュールによって作成されたデータベース テーブルを修正するためのベストプラクティスについて説明します。 テーブルを効果的に変更するタイミングと方法を把握することは、コマースプラットフォームの長期的な存続可能性と安定性を確保するのに役立ちます。
@@ -22,7 +32,7 @@ ht-degree: 0%
 
 コアテーブルの変更を避ける主な理由は、Adobe Commerceに生のSQL クエリを含む基になるロジックが含まれていることです。 テーブルの構造を変更すると、予期しない副作用が発生する可能性があり、トラブルシューティングが困難です。 この変更は、DDL （Data Definition Language）操作にも影響し、パフォーマンスに予期しない影響を与える可能性があります。
 
-データベーステーブル構造の変更を避けるもう1つの理由は、コア開発チームまたはサードパーティの開発者がデータベーステーブルの構造を変更した場合、変更が問題を引き起こす可能性があることです。 例えば、`additional_data`という列を持つコアデータベーステーブルがいくつかあります。 これは常に`text`列タイプです。 ただし、パフォーマンス上の理由から、コアチームは列を`longtext`に変更する場合があります。 このタイプの列は、JSONのエイリアスです。 この列タイプに変換すると、その列にパフォーマンスの向上と検索性が追加されますが、これは`text` タイプとしては存在しません。 このトピックについて詳しくは、[JSON データタイプ &#x200B;](https://mariadb.com/kb/en/json-data-type/){target="_blank"}を参照してください。
+データベーステーブル構造の変更を避けるもう1つの理由は、コア開発チームまたはサードパーティの開発者がデータベーステーブルの構造を変更した場合、変更が問題を引き起こす可能性があることです。 例えば、`additional_data`という列を持つコアデータベーステーブルがいくつかあります。 これは常に`text`列タイプです。 ただし、パフォーマンス上の理由から、コアチームは列を`longtext`に変更する場合があります。 このタイプの列は、JSONのエイリアスです。 この列タイプに変換すると、その列にパフォーマンスの向上と検索性が追加されますが、これは`text` タイプとしては存在しません。 このトピックについて詳しくは、[JSON データタイプ ](https://mariadb.com/kb/en/json-data-type/){target="_blank"}を参照してください。
 
 ## データを保存または削除するタイミングを把握
 
@@ -36,7 +46,7 @@ Adobeでは、まず、このデータを保存する必要があるかどうか
 
 データをコマースの外部に保管し、リアルタイムで使用できるようにするもうひとつの関連する選択肢は、GraphQL meshなどの他のツールを活用することです。 このオプションは、異なるデータソースを組み合わせて、1つの応答として返します。
 
-例えば、外部データベース（廃止予定の旧Magento 1 サイトなど）からの古い注文を`stitch`まとめることができます。 次に、GraphQL meshを使用して、お客様の注文履歴の一部として表示します。 これらの古い注文は、現在の[!DNL Adobe Commerce]環境の注文と組み合わせることができます。
+例えば、外部データベースから古い注文を`stitch`組み合わせることができます。おそらく、廃止された古いMagento 1 サイトです。 次に、GraphQL meshを使用して、お客様の注文履歴の一部として表示します。 これらの古い注文は、現在の[!DNL Adobe Commerce]環境の注文と組み合わせることができます。
 
 GraphQLでのAPI メッシュの使用について詳しくは、[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/){target="_blank"}とは何か）および[GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}を参照してください。
 
@@ -52,9 +62,9 @@ GraphQLでのAPI メッシュの使用について詳しくは、[API Mesh](http
 
 ### 他の選択肢を検討する
 
-開発者は、GraphQL meshやAdobe App Builderなど、[!DNL Adobe Commerce]環境以外のツールの使用を常に検討することが重要です。 これらのツールは、データへのアクセスを維持するのに役立ちますが、コアコマースアプリケーションやその基盤となるデータベーステーブルには影響を与えません。 このアプローチでは、APIを通じてデータを公開します。 次に、App Builder設定にデータソースを追加します。 GraphQL Meshを使用すると、これらのデータソースを組み合わせて、[従来のデータ &#x200B;](#legacy-data)で説明したように1つの応答を生成できます。
+開発者は、GraphQL meshやAdobe App Builderなど、[!DNL Adobe Commerce]環境以外のツールの使用を常に検討することが重要です。 これらのツールは、データへのアクセスを維持するのに役立ちますが、コアコマースアプリケーションやその基盤となるデータベーステーブルには影響を与えません。 このアプローチでは、APIを通じてデータを公開します。 次に、App Builder設定にデータソースを追加します。 GraphQL Meshを使用すると、これらのデータソースを組み合わせて、[従来のデータ ](#legacy-data)で説明したように1つの応答を生成できます。
 
-GraphQL メッシュの詳細については、[GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}を参照してください。 Adobe App Builderについて詳しくは、[App Builderの概要](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=ja){target="_blank"}を参照してください。
+GraphQL メッシュの詳細については、[GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}を参照してください。 Adobe App Builderについて詳しくは、[App Builderの概要](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}を参照してください。
 
 ## コアテーブルまたはサードパーティテーブルの変更
 
@@ -73,11 +83,11 @@ GraphQL メッシュの詳細については、[GraphQL Mesh Gateway](https://de
 
    例：`app/code/YourCompany/Customer`
 
-1. モジュールを有効にする適切なファイルを作成します（[&#x200B; モジュールの作成](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=ja){target="_blank"}を参照）。
+1. モジュールを有効にする適切なファイルを作成します（[ モジュールの作成](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}を参照）。
 
 1. `etc` フォルダーに`db_schema.xml`という名前のファイルを作成し、適切な変更を行います。
 
-   該当する場合は、`db_schema_whitelist.json` ファイルを生成します。 詳しくは、[宣言型スキーマ &#x200B;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration){target="_blank"}を参照してください。
+   該当する場合は、`db_schema_whitelist.json` ファイルを生成します。 詳しくは、[宣言型スキーマ ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration){target="_blank"}を参照してください。
 
 ### 潜在的な影響
 
@@ -155,7 +165,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## 大きなMySQL テーブルの検索
 
-大きなテーブルを識別するには、[&#x200B; データベースへの接続](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database)記事の説明に従ってデータベースに接続し、次のコマンドを実行します。 実稼動環境には`project_id`を使用します。 ステージング環境の場合は、`[project_id]_stg`、`[project_id]_stg2`を使用します。
+大きなテーブルを識別するには、[ データベースへの接続](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database)記事の説明に従ってデータベースに接続し、次のコマンドを実行します。 実稼動環境には`project_id`を使用します。 ステージング環境の場合は、`[project_id]_stg`、`[project_id]_stg2`を使用します。
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

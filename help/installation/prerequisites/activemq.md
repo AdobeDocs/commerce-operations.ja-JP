@@ -1,13 +1,22 @@
 ---
 title: メッセージブローカー（ActiveMQ Artemis）
 description: Adobe Commerceのオンプレミス インストール用にApache ActiveMQ Artemis Message Brokerをインストールして設定するには、次の手順に従います。
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '938'
 ht-degree: 0%
-
 ---
-
 # メッセージブローカー（ActiveMQ Artemis）
 
 Adobe Commerceは、Simple Text Oriented Messaging Protocol （STOMP）を通じて、ActiveMQ Artemis オープンソースのメッセージブローカーもサポートしています。 信頼性の高いスケーラブルなメッセージングシステムを提供し、STOMP ベースの統合に柔軟に対応できます。
@@ -15,7 +24,7 @@ Adobe Commerceは、Simple Text Oriented Messaging Protocol （STOMP）を通じ
 
 >[!NOTE]
 >
->ActiveMQ Artemisは、Adobe Commerce 2.4.5以降で導入されました。 クラウドインフラストラクチャプロジェクトにAdobe CommerceにActiveMQ Artemisをインストールする方法について詳しくは、「*Commerce on Cloud Guide*」の「[ActiveMQ サービスの設定](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/activemq)」を参照してください。
+>ActiveMQ Artemisは、Adobe Commerce 2.4.5以降で導入されました。 クラウドインフラストラクチャプロジェクトにAdobe CommerceにActiveMQ Artemisをインストールする方法について詳しくは、「*Commerce on Cloud Guide*」の「[ActiveMQ サービスの設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq)」を参照してください。
 
 メッセージキューは、メッセージの送信者と受信者が互いに接触しない非同期通信メカニズムを提供します。 また、メッセージキューと同時に通信する必要もありません。 送信者がメッセージをキューに入れると、受信者が受信するまで保存されます。
 
@@ -26,11 +35,11 @@ Adobe Commerceをインストールする前に、メッセージキューシス
 
 >[!NOTE]
 >
->メッセージキュー処理には、MySQL、ActiveMQ、または[!DNL RabbitMQ]を使用できます。 メッセージキューシステムの設定について詳しくは、[&#x200B; メッセージキューの概要](https://developer.adobe.com/commerce/php/development/components/message-queues/)を参照してください。 Adobe CommerceでBulk APIを使用している場合、メッセージキューシステム設定は、デフォルトで[!DNL RabbitMQ]をメッセージブローカーとして使用します。 詳しくは、[&#x200B; メッセージキューコンシューマー](../../configuration/cli/start-message-queues.md)の開始を参照してください。
+>メッセージキュー処理には、MySQL、ActiveMQ、または[!DNL RabbitMQ]を使用できます。 メッセージキューシステムの設定について詳しくは、[ メッセージキューの概要](https://developer.adobe.com/commerce/php/development/components/message-queues/)を参照してください。 Adobe CommerceでBulk APIを使用している場合、メッセージキューシステム設定は、デフォルトで[!DNL RabbitMQ]をメッセージブローカーとして使用します。 詳しくは、[ メッセージキューコンシューマー](../../configuration/cli/start-message-queues.md)の開始を参照してください。
 
 >[!TIP]
 >
->インストールする前に、常に[Apache ActiveMQ Artemis ダウンロードページ &#x200B;](https://activemq.apache.org/components/artemis/download/)で最新の安定バージョンを確認してください。 このドキュメントの例では、2025年9月の最新の安定リリースであるバージョン 2.42.0を使用しています。
+>インストールする前に、常に[Apache ActiveMQ Artemis ダウンロードページ ](https://activemq.apache.org/components/artemis/download/)で最新の安定バージョンを確認してください。 このドキュメントの例では、2025年9月の最新の安定リリースであるバージョン 2.42.0を使用しています。
 
 
 ## Apache ActiveMQ Artemisのインストール
@@ -45,7 +54,7 @@ Dockerがシステムにインストールされ、実行されていること�
 
 >[!TIP]
 >
->公式のActiveMQ Artemis Docker イメージについて詳しくは、[Apache ActiveMQ Artemis Docker Hub ページ &#x200B;](https://hub.docker.com/r/apache/activemq-artemis)を参照してください。
+>公式のActiveMQ Artemis Docker イメージについて詳しくは、[Apache ActiveMQ Artemis Docker Hub ページ ](https://hub.docker.com/r/apache/activemq-artemis)を参照してください。
 
 #### インストール手順
 
@@ -113,7 +122,7 @@ Java 17以降がインストールされていることを確認します（Acti
 
 ### インストール手順
 
-1. [Apache ActiveMQ Artemis web サイト &#x200B;](https://activemq.apache.org/components/artemis/download/)から最新バージョンをダウンロードしてインストールします。 2025年9月現在、最新の安定バージョンは2.42.0です。
+1. [Apache ActiveMQ Artemis web サイト ](https://activemq.apache.org/components/artemis/download/)から最新バージョンをダウンロードしてインストールします。 2025年9月現在、最新の安定バージョンは2.42.0です。
 
    ```shell
    sudo mkdir -p /opt/artemis
@@ -352,5 +361,5 @@ echo -e "CONNECT\nhost:localhost\n\n\x00" | telnet localhost 61613
 
 ## メッセージキューコンシューマーを開始
 
-Adobe CommerceとActiveMQ Artemisを接続したら、メッセージキューコンシューマーを開始する必要があります。 詳しくは、[&#x200B; メッセージキューの設定](../../configuration/cli/start-message-queues.md)を参照してください。
+Adobe CommerceとActiveMQ Artemisを接続したら、メッセージキューコンシューマーを開始する必要があります。 詳しくは、[ メッセージキューの設定](../../configuration/cli/start-message-queues.md)を参照してください。
 

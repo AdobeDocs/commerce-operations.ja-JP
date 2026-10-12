@@ -2,13 +2,22 @@
 title: リモート MySQL データベース接続の設定
 description: Adobe Commerceのオンプレミス インストール用にリモート データベース接続を設定するには、次の手順に従います。
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 0%
-
 ---
-
 # リモート MySQL データベース接続の設定
 
 同じマシン上でデータベースサーバーとweb サーバーを実行する代わりに、別のサーバーでデータベースをホストしたい場合があります。
@@ -39,8 +48,8 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 
 始める前に、次のことをおこなう必要があります。
 
-* [&#x200B; データベース サーバーにMySQL サーバー](mysql.md)をインストールします。
-* [&#x200B; データベースサーバー上にデータベースインスタンス &#x200B;](mysql.md#configuring-the-database-instance)を作成します。
+* [ データベース サーバーにMySQL サーバー](mysql.md)をインストールします。
+* [ データベースサーバー上にデータベースインスタンス ](mysql.md#configuring-the-database-instance)を作成します。
 * MySQL クライアントをAdobe Commerce web ノードにインストールします。 詳しくは、MySQLのドキュメントを参照してください。
 
 ### 高い可用性
@@ -50,7 +59,7 @@ Web サーバーまたはデータベースサーバーがクラスター化さ�
 * Web サーバーノードごとに接続を設定する必要があります。
 * 通常、データベース ロード バランサーに対するデータベース接続を設定しますが、データベース クラスタリングは複雑になる可能性があり、設定は自分で行います。 Adobeでは、データベースクラスタリングに関する具体的な推奨事項は示されていません。
 
-  詳しくは、[MySQL ドキュメント &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html)を参照してください。
+  詳しくは、[MySQL ドキュメント ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html)を参照してください。
 
 ### 接続の問題の解決
 
@@ -89,7 +98,7 @@ Web サーバーまたはデータベースサーバーがクラスター化さ�
    bind-address = <ip address of your web node>
    ```
 
-   特にクラスター化されたWeb サーバーがある場合は、[MySQL ドキュメント &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/server-options.html)を参照してください。
+   特にクラスター化されたWeb サーバーがある場合は、[MySQL ドキュメント ](https://dev.mysql.com/doc/refman/5.6/en/server-options.html)を参照してください。
 
 1. 設定ファイルに変更を保存し、テキストエディターを終了します。
 1. MySQL サービスを再起動します。
@@ -100,7 +109,7 @@ Web サーバーまたはデータベースサーバーがクラスター化さ�
 
    >[!NOTE]
    >
-   >MySQLが起動しない場合は、syslogで問題の原因を探します。 [MySQL ドキュメント &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address)またはその他の信頼できるソースを使用して、問題を解決します。
+   >MySQLが起動しない場合は、syslogで問題の原因を探します。 [MySQL ドキュメント ](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address)またはその他の信頼できるソースを使用して、問題を解決します。
 
 ## データベースユーザーへのアクセス権の付与
 

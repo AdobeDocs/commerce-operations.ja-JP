@@ -2,13 +2,22 @@
 title: コードコンパイラー
 description: コマンドラインからAdobe Commerce コードコンパイラーを実行する方法を説明します。 コンピレーションプロセスと最適化手法の詳細。
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
-
 ---
-
 # コードコンパイラー
 
 {{file-system-owner}}
@@ -46,7 +55,7 @@ Commerce アプリケーションをインストールする前にコードを�
 
    静的コンテンツを消去するには、`[-c|--clear-static-content]` オプションを使用します。 これは、以前にモジュールを有効または無効にし、以前に生成した静的コンテンツをクリアする必要がある場合に必要です。
 
-   [&#x200B; モジュールを有効にする](../../installation/tutorials/manage-modules.md)を参照してください。
+   [ モジュールを有効にする](../../installation/tutorials/manage-modules.md)を参照してください。
 
 1. コードをコンパイルします。
 
@@ -58,5 +67,5 @@ Commerce アプリケーションをインストールする前にコードを�
    Generated code and dependency injection configuration successfully.
    ```
 
-データベースを使用せずにコードをコンパイルするには、「[Magentoをインストールせずに静的ビューファイルをデプロイする](../cli/static-view-file-deployment.md)」を参照してください。
+データベースを使用せずにコードをコンパイルするには、[Magento](../cli/static-view-file-deployment.md)をインストールせずに静的ビューファイルをデプロイするを参照してください。
 

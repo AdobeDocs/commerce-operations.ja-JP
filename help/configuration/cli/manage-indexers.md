@@ -2,13 +2,22 @@
 title: インデクサーの管理
 description: コマンドラインツールを使用して、Adobe Commerce インデクサーを表示および管理する方法について説明します。 インデクサーコマンド、ステータスチェック、およびインデックス再作成のテクニックを確認します。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 0%
-
 ---
-
 # インデクサーの管理
 
 {{file-system-owner}}
@@ -43,7 +52,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> ライブサーチ、カタログサービス、商品レコメンデーションを使用しているAdobe Commerceのマーチャントには、[SaaS ベースの価格インデックス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/price-indexer/price-indexing)を使用するオプションがあります。
+> ライブサーチ、カタログサービス、商品レコメンデーションを使用しているAdobe Commerceのマーチャントには、[SaaS ベースの価格インデックス ](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing)を使用するオプションがあります。
 
 ## インデクサーステータスの表示
 
@@ -89,7 +98,7 @@ bin/magento indexer:status [indexer]
 
 >[!INFO]
 >
->このコマンドは、1回だけインデックスを再作成します。 インデックスを最新の状態に保つには、[cron ジョブ &#x200B;](../cli/configure-cron-jobs.md)を設定する必要があります。
+>このコマンドは、1回だけインデックスを再作成します。 インデックスを最新の状態に保つには、[cron ジョブ ](../cli/configure-cron-jobs.md)を設定する必要があります。
 
 コマンドオプション：
 
@@ -219,7 +228,7 @@ Stores Feed indexer has been invalidated.
 - **保存時の更新（`realtime`）**：管理者で変更が行われると、インデックス付きデータが更新されます。 （例えば、カテゴリ製品インデックスは、管理者のカテゴリに製品が追加された後に再インデックスされます）。
 - **スケジュール別に更新（`schedule`）**: データは、cron ジョブで設定されたスケジュールに従ってインデックスが作成されます。
 
-[&#x200B; インデックス作成について詳しく見る](https://developer.adobe.com/commerce/php/development/components/indexing/)。
+[ インデックス作成について詳しく見る](https://developer.adobe.com/commerce/php/development/components/indexing/)。
 
 ### 現在の設定を表示
 
@@ -269,11 +278,11 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8以降**: [!DNL Customer Grid] インデクサーは[!UICONTROL Update on Save]と[!UICONTROL Update by Schedule] モードの両方をサポートし、デフォルトは[!UICONTROL Update by Schedule]です。
 >
->_実装プレイブック_&#x200B;の「[&#x200B; インデクサー設定のベストプラクティス &#x200B;](/help/implementation-playbook/best-practices/maintenance/indexer-configuration.md)」を参照してください。
+>_実装プレイブック_&#x200B;の「[ インデクサー設定のベストプラクティス ](/help/implementation-playbook/best-practices/maintenance/indexer-configuration.md)」を参照してください。
 
 >[!INFO]
 >
->インデクサーモードを切り替える前に、web サイトを[&#x200B; メンテナンス &#x200B;](../../installation/tutorials/maintenance-mode.md) モードに設定し、[cron ジョブを無効にします](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)。 これにより、データベースのロックが発生しないようにします。
+>インデクサーモードを切り替える前に、web サイトを[ メンテナンス ](../../installation/tutorials/maintenance-mode.md) モードに設定し、[cron ジョブを無効にします](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)。 これにより、データベースのロックが発生しないようにします。
 
 インデクサー設定を指定するには：
 

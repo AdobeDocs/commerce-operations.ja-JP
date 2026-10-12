@@ -1,22 +1,31 @@
 ---
 title: '[!DNL Upgrade Compatibility Tool] レポート'
-description: Adobe Commerce プロジェクトで [!DNL Upgrade Compatibility Tool] を実行するには、次の手順に従います。
+description: Adobe Commerce プロジェクトで[!DNL Upgrade Compatibility Tool]を実行するには、次の手順に従います。
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '589'
 ht-degree: 0%
-
 ---
-
 # レポート
 
 {{commerce-only}}
 
 分析の結果、[!DNL Upgrade Compatibility Tool]は、重大度、エラーコード、エラーの説明を指定する各ファイルの問題のリストを含むレポートを書き出すことができます。 [!DNL Upgrade Compatibility Tool]は、レポートを2つの異なる形式で書き出します。
 
-- [JSON ファイル &#x200B;](reports.md#json-file)。
-- [HTML レポート &#x200B;](reports.md#html-report)。
+- [JSON ファイル ](reports.md#json-file)。
+- [HTML レポート ](reports.md#html-report)。
 
 次のコマンドラインインターフェイスのレポートの例を参照してください。
 
@@ -27,7 +36,7 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
  * [ERROR][1328] Line 10: Implemented interface 'Magento\Framework\App\Action\HttpGetActionInterface' that is non API on version '2.4.4'
 ```
 
-このレポートで生成できるさまざまなエラーについて詳しくは、[&#x200B; エラーメッセージ参照](../upgrade-compatibility-tool/error-messages.md)のトピックを参照してください。
+このレポートで生成できるさまざまなエラーについて詳しくは、[ エラーメッセージ参照](../upgrade-compatibility-tool/error-messages.md)のトピックを参照してください。
 
 本レポートには、次の項目を示す詳細な要約も含まれています。
 

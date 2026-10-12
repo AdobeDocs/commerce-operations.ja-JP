@@ -2,13 +2,22 @@
 title: お客様の個人情報の参照（バージョン 2.x）
 description: Adobe Commerce 2.xでは、お客様の個人情報のデータフロー図とデータベースエンティティマッピングについて説明します。
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 0%
-
 ---
-
 # お客様の個人情報の参照（バージョン 2.x）
 
 >[!NOTE]
@@ -28,25 +37,25 @@ ht-degree: 0%
 
 利用者は、アカウント登録時、チェックアウト時などのイベントで、顧客、住所、支払い情報を入力することができます。
 
-![&#x200B; フロントエンドデータエントリポイント &#x200B;](../../assets/security-compliance/frontend-data-entry-points.svg)
+![ フロントエンドデータエントリポイント ](../../assets/security-compliance/frontend-data-entry-points.svg)
 
 ### フロントエンドのデータアクセスポイント
 
 Adobe Commerceでは、お客様がログインして複数のページを表示したり、チェックアウトしたりすると、お客様の情報が読み込まれます。
 
-![&#x200B; フロントエンドデータアクセスポイント &#x200B;](../../assets/security-compliance/frontend-data-access-points.png)
+![ フロントエンドデータアクセスポイント ](../../assets/security-compliance/frontend-data-access-points.png)
 
 ### バックエンドのデータエントリポイント
 
 管理者から顧客または注文を作成する際に、加盟店は顧客情報、住所データ、支払いデータを入力できます。
 
-![&#x200B; バックエンド データ エントリ ポイント &#x200B;](../../assets/security-compliance/backend-data-entry-points.svg)
+![ バックエンド データ エントリ ポイント ](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### バックエンドのデータアクセスポイント
 
 Adobe Commerceを使用すれば、顧客に関する情報を自動的に読み込み、グリッドをクリックして詳細を確認したり、その他のさまざまなタスクを実行したりできます。
 
-![&#x200B; バックエンド データ アクセス ポイント &#x200B;](../../assets/security-compliance/backend-data-access-points.png)
+![ バックエンド データ アクセス ポイント ](../../assets/security-compliance/backend-data-access-points.png)
 
 ## データベースエンティティ
 

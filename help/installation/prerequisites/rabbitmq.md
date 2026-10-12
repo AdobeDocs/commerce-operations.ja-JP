@@ -1,14 +1,23 @@
 ---
 title: メッセージブローカー（RabbitMQ）
-description: Adobe Commerceのオンプレミス インストールに必要なメッセージブローカーソフトウェア（ [!DNL RabbitMQ]など）をインストールして設定するには、次の手順に従います。
+description: Adobe Commerceのオンプレミス インストールに必要なメッセージブローカーソフトウェア（[!DNL RabbitMQ]など）をインストールして設定するには、次の手順に従います。
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
-
 ---
-
 # メッセージブローカー（RabbitMQ）
 
 Adobe Commerceは、[!DNL RabbitMQ] オープンソースのメッセージブローカーを使用しています。 信頼性、高可用性、拡張性、ポータブルなメッセージングシステムを提供します。
@@ -22,7 +31,7 @@ Adobe Commerceをインストールする前に、メッセージキューシス
 
 >[!NOTE]
 >
->メッセージキュー処理には、MySQLまたは[!DNL RabbitMQ]を使用できます。 メッセージキューシステムの設定について詳しくは、[&#x200B; メッセージキューの概要](https://developer.adobe.com/commerce/php/development/components/message-queues/)を参照してください。 Adobe CommerceでBulk APIを使用している場合、メッセージキューシステム設定は、デフォルトで[!DNL RabbitMQ]をメッセージブローカーとして使用します。 詳しくは、[&#x200B; メッセージキューコンシューマー](../../configuration/cli/start-message-queues.md)の開始を参照してください。
+>メッセージキュー処理には、MySQLまたは[!DNL RabbitMQ]を使用できます。 メッセージキューシステムの設定について詳しくは、[ メッセージキューの概要](https://developer.adobe.com/commerce/php/development/components/message-queues/)を参照してください。 Adobe CommerceでBulk APIを使用している場合、メッセージキューシステム設定は、デフォルトで[!DNL RabbitMQ]をメッセージブローカーとして使用します。 詳しくは、[ メッセージキューコンシューマー](../../configuration/cli/start-message-queues.md)の開始を参照してください。
 
 ## Ubuntuに[!DNL RabbitMQ]をインストール
 
@@ -39,7 +48,7 @@ sudo apt install -y rabbitmq-server
 1. [rabbitmq-server](https://www.rabbitmq.com/download.html)から.deb パッケージをダウンロードします。
 1. `dpkg`のパッケージをインストールします。
 
-詳しくは、[Debian/Ubuntuへのインストール &#x200B;](https://www.rabbitmq.com/install-debian.html)を参照してください。
+詳しくは、[Debian/Ubuntuへのインストール ](https://www.rabbitmq.com/install-debian.html)を参照してください。
 
 ## CentOSに[!DNL RabbitMQ]をインストール
 
@@ -47,9 +56,9 @@ sudo apt install -y rabbitmq-server
 
 [!DNL RabbitMQ]はErlang プログラミング言語を使用して作成されました。これは[!DNL RabbitMQ]と同じシステムにインストールする必要があります。
 
-詳しくは、[手動インストール &#x200B;](https://www.erlang-solutions.com/downloads/)を参照してください。
+詳しくは、[手動インストール ](https://www.erlang-solutions.com/downloads/)を参照してください。
 
-正しいバージョンをインストールするには、[[!DNL RabbitMQ]/Erlang バージョン マトリックス &#x200B;](https://www.rabbitmq.com/which-erlang.html)を参照してください。
+正しいバージョンをインストールするには、[[!DNL RabbitMQ]/Erlang バージョン マトリックス ](https://www.rabbitmq.com/which-erlang.html)を参照してください。
 
 ### [!DNL RabbitMQ]をインストール
 
@@ -140,4 +149,4 @@ SSLのサポートを設定するには、`<install_directory>/app/etc/env.php` 
 
 ## メッセージキューコンシューマーを開始
 
-Adobe Commerceと[!DNL RabbitMQ]を接続したら、メッセージキューコンシューマーを開始する必要があります。 詳しくは、[&#x200B; メッセージキューの設定](../../configuration/cli/start-message-queues.md)を参照してください。
+Adobe Commerceと[!DNL RabbitMQ]を接続したら、メッセージキューコンシューマーを開始する必要があります。 詳しくは、[ メッセージキューの設定](../../configuration/cli/start-message-queues.md)を参照してください。

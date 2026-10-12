@@ -1,14 +1,23 @@
 ---
-title: ' [!DNL Upgrade Compatibility Tool]の概要'
-description: ' [!DNL Upgrade Compatibility Tool] と、それがAdobe Commerce プロジェクトにどのように役立つかについて説明します。'
+title: '[!DNL Upgrade Compatibility Tool]の概要'
+description: '[!DNL Upgrade Compatibility Tool]と、それがAdobe Commerce プロジェクトにどのように役立つかについて説明します。'
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '349'
 ht-degree: 0%
-
 ---
-
 # ガイド概要
 
 {{commerce-only}}
@@ -23,9 +32,9 @@ ht-degree: 0%
 
 [!DNL Upgrade Compatibility Tool]は次の方法で使用できます。
 
-- スタンドアロンの[&#x200B; コマンドラインインターフェイス &#x200B;](../upgrade-compatibility-tool/run.md) ツールとして。 使用可能なコマンドの完全なリストについては、[`bin/uct` リファレンス &#x200B;](../../tools/reference/uct.md)を参照してください。
+- スタンドアロンの[ コマンドラインインターフェイス ](../upgrade-compatibility-tool/run.md) ツールとして。 使用可能なコマンドの完全なリストについては、[`bin/uct` リファレンス ](../../tools/reference/uct.md)を参照してください。
 - [!DNL Upgrade Compatibility Tool]を[[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md)と統合しています。
-- [Magento PHPStorm プラグイン &#x200B;](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)内の実行設定。
+- [Magento PHPStorm プラグイン ](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)内の実行設定。
 
 ## ワークフロー
 
@@ -37,7 +46,7 @@ ht-degree: 0%
 
 [!DNL Upgrade Compatibility Tool]について詳しくは、このビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/344385?captions=jpn&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/341245?quality=12)
 
 ## [!DNL Upgrade Compatibility Tool]の改善にご協力ください
 
@@ -45,7 +54,7 @@ ht-degree: 0%
 
 [!DNL Upgrade Compatibility Tool] チームとつながるには、エンジニアリング Slack チャンネル [#upgrade-compatibility-tool](https://magentocommeng.slack.com/archives/C019Y143U9F)でお問い合わせください。 フィードバック、問題、提案を聞いて、ツールの改善に役立てたいと考えています。
 
-[!DNL Upgrade Compatibility Tool]では、[&#x200B; コーディング標準](https://developer.adobe.com/commerce/php/coding-standards/)で定義されたルールを使用して、プロジェクトがAdobe Commerceのベストプラクティスに従っていることを確認し、[!DNL Upgrade Compatibility Tool]の改善と拡張を支援します。
+[!DNL Upgrade Compatibility Tool]では、[ コーディング標準](https://developer.adobe.com/commerce/php/coding-standards/)で定義されたルールを使用して、プロジェクトがAdobe Commerceのベストプラクティスに従っていることを確認し、[!DNL Upgrade Compatibility Tool]の改善と拡張を支援します。
 
 コーディング標準の提供について詳しくは、[Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing) トピックを参照してください。
 
@@ -53,7 +62,7 @@ ht-degree: 0%
 
 Adobe Commerceのアップグレードについて理解するには、次の資料を参照してください。
 
-- [&#x200B; アップグレードガイド &#x200B;](../overview.md)では、Adobe Commerceの一般的なアップグレードジャーニーとそのジャーニーに従うべきベストプラクティスの概要を説明しています。
-- [今後のリリース &#x200B;](/help/release/schedule.md) ページには、スケジュール済みリリースと今後のリリースの日付が表示されます。
-- [&#x200B; コミュニティリソース &#x200B;](https://developer.adobe.com/commerce/contributor/community/) ページは、ディスカッションを開始するか、より多くの情報を見つけるために配置されます。
-- [関連ツール &#x200B;](../upgrade-compatibility-tool/related-tools.md) ページで、一般的なアップグレードジャーニーに役立つツールを確認してください。
+- [ アップグレードガイド ](../overview.md)では、Adobe Commerceの一般的なアップグレードジャーニーとそのジャーニーに従うべきベストプラクティスの概要を説明しています。
+- [今後のリリース ](/help/release/schedule.md) ページには、スケジュール済みリリースと今後のリリースの日付が表示されます。
+- [ コミュニティリソース ](https://developer.adobe.com/commerce/contributor/community/) ページは、ディスカッションを開始するか、より多くの情報を見つけるために配置されます。
+- [関連ツール ](../upgrade-compatibility-tool/related-tools.md) ページで、一般的なアップグレードジャーニーに役立つツールを確認してください。

@@ -3,13 +3,28 @@ title: 検索ストップワードの設定
 description: CSV ファイルを使用してAdobe Commerceのストップワードを管理する方法について説明します。
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 0%
-
 ---
-
 # 検索ストップワードの設定
 
 一般的に、_ストップワード_&#x200B;は、検索エンジンがテキストを処理した後に除外する一般的な単語です。 もともと、ディスク容量とメモリが非常に限られていたときは、1 キロバイトの節約ごとにパフォーマンスが大幅に向上しました。 そのため、検索エンジンは、特定の単語を無視し、インデックスを小さく保つことで、パフォーマンスの向上を実現しました。
@@ -35,7 +50,7 @@ ElasticsearchとOpenSearchでのストップワードの使用方法について
 
 **ストップワードを編集するには**:
 
-1. Commerce サーバーにログインするか、[&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
+1. Commerce サーバーにログインするか、[ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
 1. テキストエディターを使用して、`<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` ディレクトリでストップワードファイルを開きます。
 
    CSV ファイルでは、命名規則`stopwords_<locale_code>.csv`が使用されます。 例えば、ドイツ語のストップワードファイルの名前は`stopwords_de_DE.csv`です。
@@ -61,7 +76,7 @@ ElasticsearchとOpenSearchでのストップワードの使用方法について
 
 **ロケールのストップワードを追加するには**:
 
-1. Commerce サーバーにログインするか、[&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
+1. Commerce サーバーにログインするか、[ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)に切り替えます。
 
 1. テキストエディターを使用して、`<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` ディレクトリに`stopwords_<locale_code>.csv`という名前のストップワードファイルを作成します。
 

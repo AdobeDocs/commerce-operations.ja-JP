@@ -1,15 +1,29 @@
 ---
 title: 「[!UICONTROL Redis]」タブ
-description: ' [!DNL Observation for Adobe Commerce]の[!UICONTROL Redis] タブについて説明します。'
+description: '[!DNL Observation for Adobe Commerce]の「[!UICONTROL Redis]」タブについて説明します。'
 exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 feature: Configuration, Observability
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
-
 ---
-
 # 「[!DNL Redis]」タブ
 
 ## [!UICONTROL Redis Node summary]
@@ -26,7 +40,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Redis node roles timeline]
 
-![Redis ノードの役割のタイムライン &#x200B;](../../assets/tools/observation-for-adobe-commerce/redis-tab-3.jpg)
+![Redis ノードの役割のタイムライン ](../../assets/tools/observation-for-adobe-commerce/redis-tab-3.jpg)
 
 **[!UICONTROL Redis node roles timeline]** フレームは、特定の役割で[!DNL Redis] サービスが失われたことを示します。 行がディップした場合、その行が表す特定の役割がノードまたはノードを失ったことを示します。
 
@@ -38,7 +52,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Commands per second by node]
 
-![&#x200B; ノードごとの1秒あたりのコマンド &#x200B;](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)
+![ ノードごとの1秒あたりのコマンド ](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)
 
 **[!UICONTROL Commands per second by node]** フレームには、選択した時間枠に対する1秒あたりのノード別の[!DNL Redis] コマンドが表示されます。
 
@@ -62,6 +76,6 @@ ht-degree: 0%
 
 ## [!UICONTROL Redis synchronization from Log]
 
-![&#x200B; ログからのRedis同期](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
+![ ログからのRedis同期](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
 
-**[!UICONTROL Redis synchronization from Log]** フレームは、[!DNL Redis]の同期中に発生したエラーまたは同期の問題が原因で発生したエラーに焦点を当てています。 [!DNL Redis]について詳しくは、[[!DNL Redis]  ドキュメント &#x200B;](https://redis.io/docs/)を参照してください。
+**[!UICONTROL Redis synchronization from Log]** フレームは、[!DNL Redis]の同期中に発生したエラーまたは同期の問題が原因で発生したエラーに焦点を当てています。 [!DNL Redis]について詳しくは、[[!DNL Redis]  ドキュメント ](https://redis.io/docs/)を参照してください。
