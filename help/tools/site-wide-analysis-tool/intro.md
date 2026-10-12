@@ -85,4 +85,4 @@ Adobe Commerceのweb サイトをより詳細に可視化したいマーチャ�
 
 [!DNL Site-Wide Analysis Tool]について詳しくは、このビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/344001?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3410779?captions=jpn&quality=12)
