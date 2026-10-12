@@ -69,7 +69,7 @@ Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)の管理対象
 
 以下の手順に従って、原因を特定し、トラブルシューティングします。
 
-1. [!DNL Redis]使用済みメモリが増加または減少しているかどうかを確認するには、[one.newrelic.com](https://login.newrelic.com/login) > **インフラストラクチャ** > **サードパーティサービス** ページに移動し、[!DNL Redis] ダッシュボードを選択します。 安定または増加している場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を送信してクラスターをアップグレードするか、`maxmemory`制限を次のレベルに増やします。
+1. [!DNL Redis]使用済みメモリが増加または減少しているかどうかを確認するには、[one.newrelic.com](https://login.newrelic.com/login) > **インフラストラクチャ** > **サードパーティサービス** ページに移動し、[!DNL Redis] ダッシュボードを選択します。 安定または増加している場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を送信してクラスターをアップグレードするか、`maxmemory`制限を次のレベルに増やします。
 1. メモリ消費量が[!DNL Redis]増加する原因を特定できない場合は、最近の傾向を確認して、最近のコードのデプロイや設定の変更（新しい顧客グループやカタログの大規模な変更など）に関する問題を特定します。 コードのデプロイメントまたは変更の相関関係については、過去7日間のアクティビティを確認することをお勧めします。
 1. サードパーティの拡張機能が正しく動作しないか確認してください：
    * 最近インストールされたサードパーティの拡張機能と問題が発生した時間との相関関係を確認してください。

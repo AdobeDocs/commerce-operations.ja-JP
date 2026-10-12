@@ -47,7 +47,7 @@ Adobe Commerceには、2種類のインデクサーモードがあります：[!
 サイトパフォーマンスを最大化するには、インデックス作成に関する次のベストプラクティスに従います。
 
 - インデックス設定を確認します。
-- 大規模なサイトや、頻繁な更新と大量のトラフィックを伴うサイトでは、インデックスを&#x200B;_[!UICONTROL Update on Schedule]_&#x200B;に設定します。 [&#x200B; インデックス管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)を参照してください。
+- 大規模なサイトや、頻繁な更新と大量のトラフィックを伴うサイトでは、インデックスを&#x200B;_[!UICONTROL Update on Schedule]_&#x200B;に設定します。 [&#x200B; インデックス管理](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)を参照してください。
 - インデックスの管理については、[&#x200B; パフォーマンスのベストプラクティス &#x200B;](../../../performance/configuration.md)に従ってください。
 
 >[!IMPORTANT]
@@ -60,5 +60,5 @@ Adobe Commerceには、2種類のインデクサーモードがあります：[!
 ## 追加情報
 
 - [管理者ユーザーのインデックス管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Magento CLIを使用したインデックス管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+- [Magento CLIを使用したインデックス管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=ja)
 - [開発者向けインデックス作成の概要](https://developer.adobe.com/commerce/php/development/components/indexing/)

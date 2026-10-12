@@ -28,7 +28,7 @@ ht-degree: 0%
 
 [!DNL New Relic Observation for Adobe Commerce] ナードレットを使用するには、[!DNL New Relic]へのアクセス権があることを確認してください。
 
-[New Relic account management](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
+[New Relic account management](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
 
 次に、[!DNL New Relic] ホームページから、「アプリ」メニュー項目を選択します。
 

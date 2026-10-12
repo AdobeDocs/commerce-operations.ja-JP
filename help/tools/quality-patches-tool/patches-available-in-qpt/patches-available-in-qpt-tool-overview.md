@@ -54,7 +54,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->QPTは品質パッチ専用です。 セキュリティパッチは、[Adobe CommerceおよびMagento Open Sourceのリリースノート &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html)で入手できます。
+>QPTは品質パッチ専用です。 セキュリティパッチは、[Adobe CommerceおよびMagento Open Sourceのリリースノート &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html?lang=ja)で入手できます。
 
 ## [!DNL Quality Patches Tool]で使用可能なパッチ
 
@@ -75,4 +75,4 @@ Cloud Infrastructure上のAdobe Commerceにパッチを適用および元に戻�
 
 ## 関連トピックス
 
-* 開発者ドキュメントの[[!DNL Quality Patches Tool]  リリースノート &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)。
+* 開発者ドキュメントの[[!DNL Quality Patches Tool]  リリースノート &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=ja)。

@@ -30,5 +30,5 @@ Commerce アプリケーションには、次のcron グループが用意され
 - `index`が[&#x200B; インデクサー](../cli/manage-indexers.md)を更新します
 - メッセージ キュー[consumers](../cli/start-message-queues.md)を実行する`consumers`
 - これらのトピックは、Adobe Commerceでのみ使用できます
-  - `staging`。[&#x200B; ステージング関連](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) タスクを実行します
+  - `staging`。[&#x200B; ステージング関連](https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/staging/content-staging) タスクを実行します
   - ターゲットと買い物かごのルールのタスクを実行する`catalog_event`

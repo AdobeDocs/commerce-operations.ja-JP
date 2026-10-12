@@ -73,4 +73,4 @@ Adobe Commerce向けCloud > パッチを適用[&#128279;](https://experienceleag
 ## 関連トピックス
 
 * 開発者ドキュメントの[品質パッチツールのリリースノート &#x200B;](/help/tools/quality-patches-tool/release-notes.md)。
-* [Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーのパッチをサポートナレッジベースで適用する方法。
+* [Adobe](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーのパッチをサポートナレッジベースで適用する方法。

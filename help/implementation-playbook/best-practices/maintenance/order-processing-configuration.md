@@ -29,7 +29,7 @@ Commerce サイトでの注文量が増加すると、次のストア設定オ�
 
 - **[!UICONTROL Asynchronous indexing]** – このオプションを有効にすると、多数の注文が同時に行われる場合に発生する可能性のある、データベースのロックと処理速度の低下を防ぐことができます。
 - **[!UICONTROL Asynchronous email notifications]** – このオプションを有効にすると、チェックアウトと注文処理のメール通知をすぐに送信するのではなく、指定された間隔で送信して、チェックアウトのパフォーマンスを高速化できます。
-- **[!UICONTROL Enable Archiving]** – このオプションを有効にすると、注文、請求書、出荷、およびクレジット メモのパフォーマンスが向上し、ワークスペースに不要な情報がなくなるため、現在のビジネスに集中できるようになります。 「[&#x200B; アーカイブを有効にする](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive)」を参照してください。
+- **[!UICONTROL Enable Archiving]** – このオプションを有効にすると、注文、請求書、出荷、およびクレジット メモのパフォーマンスが向上し、ワークスペースに不要な情報がなくなるため、現在のビジネスに集中できるようになります。 「[&#x200B; アーカイブを有効にする](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/order-archive)」を参照してください。
 
 ## 影響を受ける製品とバージョン
 
@@ -50,7 +50,7 @@ Commerce サイトでの注文量が増加すると、次のストア設定オ�
 
 - デフォルトモードまたは実稼動モードのAdobe Commerce オンプレミスサイトの場合は、AdminでGrid Settings設定を更新して非同期インデックス作成を有効にします。
 
-  [&#x200B; スケジュールされたグリッドの更新とインデックス再作成の有効化](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)を参照してください
+  [&#x200B; スケジュールされたグリッドの更新とインデックス再作成の有効化](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html?lang=ja#enable-scheduled-grid-updates-and-reindexing)を参照してください
 
   >[!WARNING]
   >

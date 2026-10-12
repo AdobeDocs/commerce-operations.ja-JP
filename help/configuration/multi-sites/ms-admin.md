@@ -22,10 +22,10 @@ ht-degree: 0%
 
 このタスクでは、各ストアのルートカテゴリ（および必要に応じて追加のカテゴリ）を作成する必要があります。 このトピックで説明するタスクは、複数のストアを設定する1つの方法を提供します。 詳しくは、Commerce ユーザーガイドの次の資料を参照してください。
 
-- [カテゴリ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
-- [Web サイトの追加](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [URLの保存](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
-- [コンテンツ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
+- [カテゴリ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/categories)
+- [Web サイトの追加](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [URLの保存](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [コンテンツ](https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -43,7 +43,7 @@ ht-degree: 0%
 1. 「**カテゴリ名**」フィールドに、このカテゴリを識別するための一意の名前を入力します。
 1. 「カテゴリを有効にする」が&#x200B;**はい**&#x200B;に設定されていることを確認します。
 
-   このページのその他のオプションについて詳しくは、[&#x200B; ルートカテゴリ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root)を参照してください。
+   このページのその他のオプションについて詳しくは、[&#x200B; ルートカテゴリ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/category-root)を参照してください。
 
    次の図は、例を示しています。
 
@@ -140,7 +140,7 @@ Commerceでは、ストアコードをサイトベース URLに追加するオ�
 
 これにより、`index.php`と`.htaccess`が今後のアップグレードでCommerce コードベースと同期しなくなります。
 
-[Commerce ユーザーガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)を参照してください。
+[Commerce ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-urls)を参照してください。
 
 ストアコードをベース URLに追加するには：
 

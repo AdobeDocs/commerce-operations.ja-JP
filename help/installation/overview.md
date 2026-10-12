@@ -29,7 +29,7 @@ Adobe Commerce オンプレミス ソフトウェアは、約30 ～ 60分でイ�
 >
 >正常に処理するには、中級の技術的な知識とサーバーアクセスが必要です。
 
-インストールすると、[お客様向けのストアフロント &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront)と[管理パネル &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin)の両方を備えた機能的なAdobe Commerce ストアが作成されます。 プロセスを開始する前に、データベースの資格情報、ドメイン情報、認証キーを準備しておく必要があります。
+インストールすると、[お客様向けのストアフロント &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/storefront/storefront)と[管理パネル &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/admin/admin)の両方を備えた機能的なAdobe Commerce ストアが作成されます。 プロセスを開始する前に、データベースの資格情報、ドメイン情報、認証キーを準備しておく必要があります。
 
 ## 加盟店の責任
 

@@ -30,7 +30,7 @@ Commerce データトラッキングサービスは、[一般データ保護規�
 
 >[!NOTE]
 >
->[Cookie制限モード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)が有効になっている場合、買い物客が同意するまでCommerceは行動データを収集しません。 [!UICONTROL **Cookie制限モード**]&#x200B;が無効になっている場合、Commerceはデフォルトで行動データを収集します。
+>[Cookie制限モード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ja)が有効になっている場合、買い物客が同意するまでCommerceは行動データを収集しません。 [!UICONTROL **Cookie制限モード**]&#x200B;が無効になっている場合、Commerceはデフォルトで行動データを収集します。
 
 ## インストール
 

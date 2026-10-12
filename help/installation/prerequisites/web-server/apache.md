@@ -2,7 +2,7 @@
 title: オンプレミス デプロイメント用Apacheのインストール
 description: オンプレミス Adobe Commerce デプロイメント用にApacheをインストールして設定する方法について説明します。 必要なモジュール、書き換え、および「.htaccess」設定を有効にします。
 feature: Install, Configuration
-badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047

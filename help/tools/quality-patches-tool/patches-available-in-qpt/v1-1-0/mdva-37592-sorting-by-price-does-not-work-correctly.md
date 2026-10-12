@@ -1,6 +1,6 @@
 ---
 title: MDVA-37592：価格がゼロの製品では価格によるソートが機能しない
-description: MDVA-37592 Adobe Commerce パッチは、価格によるソートが、共有カタログに価格ゼロが割り当てられている商品に対して正しく機能しない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.0がインストールされている場合に利用できます。 パッチ IDはMDVA-37592です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
+description: MDVA-37592 Adobe Commerce パッチは、価格によるソートが、共有カタログに価格ゼロが割り当てられている商品に対して正しく機能しない問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.0がインストールされている場合に利用できます。 パッチ IDはMDVA-37592です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 feature: B2B, Catalog Management, Categories, Orders, Products
 role: Admin
 exl-id: 4d4a158c-2020-42a4-9b8b-14c9b48b4107

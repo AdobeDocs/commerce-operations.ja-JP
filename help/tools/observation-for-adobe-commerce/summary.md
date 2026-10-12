@@ -74,7 +74,7 @@ ht-degree: 0%
 
 ホスト別![CPUの割合](../../assets/tools/cpu-percent-by-host.jpg)
 
-すべての環境とノードの集計が&#x200B;**[!UICONTROL CPU % by host]** フレームに表示されます。 実稼動以外の環境の選択を解除する必要があります。 実稼動環境用のすべてのノードが存在しない場合も注意してください。 CPUの使用率の向上に関するヒントについては、[Adobe CommerceでのNew Relicを使用したパフォーマンスのトラブルシューティング &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html)を参照してください。
+すべての環境とノードの集計が&#x200B;**[!UICONTROL CPU % by host]** フレームに表示されます。 実稼動以外の環境の選択を解除する必要があります。 実稼動環境用のすべてのノードが存在しない場合も注意してください。 CPUの使用率の向上に関するヒントについては、[Adobe CommerceでのNew Relicを使用したパフォーマンスのトラブルシューティング &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=ja)を参照してください。
 
 ## [!UICONTROL Alerts during timeframe]
 
