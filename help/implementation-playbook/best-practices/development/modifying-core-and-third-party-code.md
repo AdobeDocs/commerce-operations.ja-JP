@@ -5,13 +5,23 @@ role: Developer
 feature: Best Practices
 last-substantial-update: 2023-12-8
 exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1767'
 ht-degree: 0%
-
 ---
-
 # コアおよびサードパーティのPHP コードを変更または上書きするためのベストプラクティス
 
 このドキュメントでは、オーサリングを行っていない、または直接コントロールしていないコードの機能、結果、または入力を変更する必要が生じた場合のベストプラクティスについて説明します。 言い換えれば、コアコードとサードパーティコードです。 このドキュメントでは、主にバックエンド PHP コードに焦点を当てます。

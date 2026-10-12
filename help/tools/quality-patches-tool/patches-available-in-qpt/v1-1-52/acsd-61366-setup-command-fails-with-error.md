@@ -1,17 +1,29 @@
 ---
-title: 'ACSD-61366: ''bin/magento setup:static-content:deploy —jobs 4'' コマンドで、エラーが発生して複数のジョブが失敗します'
-description: ACSD-61366 パッチを適用して、「bin/magento setup:static-content:deploy —jobs 4」コマンドで、DB接続のポートを指定しているにもかかわらず、*Portをhost parameter*エラー内で設定する必要がある複数のジョブエラーが発生するAdobe Commerceの問題を修正します。
+title: 'ACSD-61366: ''bin/magento setup:static-content:deploy —jobs 4'' コマンドで、エラーが発生して複数のジョブエラーが発生する'
+description: 「bin/magento setup:static-content:deploy —jobs 4」コマンドで複数のジョブエラーが発生し、DB接続のポートを指定しているにもかかわらず、*Portをhost parameter* エラー内で設定する必要があるAdobe Commerceの問題を修正するには、ACSD-61366 パッチを適用します。
 feature: SCD
 role: Admin, Developer
 exl-id: d71a4833-a236-429b-a4e5-7d7d51c2caeb
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d05f97c9-0a96-5792-92cf-f66ce7326e3a
+    internal-label: SCD
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '403'
 ht-degree: 0%
-
 ---
-
 # ACSD-61366: `bin/magento setup:static-content:deploy --jobs 4` コマンドで、エラーを伴う複数のジョブの失敗が発生しました
 
 ACSD-61366 パッチでは、DB接続のポートを指定しているにもかかわらず、*ポートで複数のジョブエラーが発生し、ホストパラメーター* エラー内で設定する必要がある`bin/magento setup:static-content:deploy --jobs 4` コマンドが発生する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.52がインストールされている場合に利用できます。 パッチ IDはACSD-61366です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。

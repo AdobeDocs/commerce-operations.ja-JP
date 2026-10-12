@@ -1,18 +1,27 @@
 ---
 title: 変更を移行
-description: 前回のMagento 1 データ移行以降に変更されたデータのみを [!DNL Data Migration Tool]に移行する方法について説明します。
+description: 前回のMagento 1 データ移行以降に変更されたデータのみを[!DNL Data Migration Tool]に移行する方法について説明します。
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
-
 ---
-
 # 変更を移行
 
-増分移行ツールは、データ [&#128279;](data.md)の移行中に、Magento 1 データベースに（プレフィックス `m2_cl_*`を含む）差分テーブルと（変更履歴を追跡するための）トリガーをインストールします。 これらの差分テーブルとトリガーは、データの前回の移行以降にMagento 1で行われた変更のみを移行するために不可欠です。 変更点は次のとおりです。
+増分移行ツールは、データ [&#128279;](data.md)の移行中に、Magento 1 データベースに（プレフィックス `m2_cl_*`を含む）差分テーブルと（変更履歴を追跡するための）トリガーをインストールします。 これらの差分テーブルとトリガーは、前回データを移行してからMagento 1で行った変更のみを移行するために不可欠です。 変更点は次のとおりです。
 
 * 顧客がストアフロントで追加したデータ（作成された注文、レビュー、顧客プロファイルの変更）
 
@@ -53,7 +62,7 @@ bin/magento migrate:delta [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 ## サードパーティの拡張機能によって作成されたデータを移行する
 
-`Delta` モードでは、[!DNL Data Migration Tool]は、Magentoの独自のモジュールのみが作成したデータを移行します。サードパーティのデベロッパーが作成したコードや拡張機能については責任を負いません。 これらの拡張機能がストアフロントデータベースでデータを作成し、マーチャントがMagento 2でこのデータを取得する場合は、それに応じて[!DNL Data Migration Tool]の設定ファイルを作成して変更する必要があります。
+`Delta` モードでは、[!DNL Data Migration Tool]はMagento独自のモジュールのみが作成したデータを移行し、サードパーティの開発者が作成したコードまたは拡張機能については責任を負いません。 これらの拡張機能によってストアフロントデータベースにデータが作成され、マーチャントがこのデータをMagento 2に取り込む場合は、[!DNL Data Migration Tool]の設定ファイルを適切に作成して変更する必要があります。
 
 拡張機能に独自のテーブルがあり、差分移行のために変更内容を追跡する必要がある場合は、次の手順に従います。
 

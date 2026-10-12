@@ -1,41 +1,55 @@
 ---
 title: '[!DNL Observation for Adobe Commerce]'
-description: ' [!DNL Observation for Adobe Commerce]、その使用方法、使用するタイミング、アクセス方法について説明します。'
+description: '[!DNL Observation for Adobe Commerce]とその用途、使用するタイミング、アクセス方法について説明します。'
 exl-id: a787be0f-5dd8-4acc-adbf-5cedd96b08d6
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '365'
 ht-degree: 0%
-
 ---
-
 # [!DNL Observation for Adobe Commerce]
 
-このガイドでは、[!DNL Observation for Adobe Commerce] の全体的な概要を説明します。 使用方法、使用するタイミング、使用方法、問題を確認するための一般的なアプローチ、ツールへのアクセス方法について説明します。
+このガイドでは、[!DNL Observation for Adobe Commerce]の全体像を説明します。 使用状況、使用時期、使用方法、問題を確認するための一般的なアプローチ、ツールへのアクセス方法について説明します。
 
-## [!DNL Observation for Adobe Commerce] とは
+## [!DNL Observation for Adobe Commerce]とは
 
-[!DNL Observation for Adobe Commerce] は、複数のソースのログデータを組み合わせて、Adobe Commerce サイトのパフォーマンスをより適切に管理し、問題を診断するのに役立つツールです。 アプリケーションログデータと [!DNL New Relic observability] プラットフォームのデータを組み合わせて、わかりやすいダッシュボードで、単一のパネルに視覚的に表示します。 このソリューションは [!DNL New Relic Nerdlets] に基づいています。これは、[!DNL New Relic One] のプログラマビリティインターフェイスで構築されたカスタムアプリケーションです。
+[!DNL Observation for Adobe Commerce]は、複数のソースからのログデータを組み合わせて、Adobe Commerce サイトのパフォーマンスをより適切に管理し、問題を診断するのに役立つツールです。 アプリケーションのログデータと、[!DNL New Relic observability] プラットフォームのデータを、わかりやすいダッシュボードで視覚的に表示します。 ソリューションは[!DNL New Relic Nerdlets]に基づいています。これは、[!DNL New Relic One]個のプログラマビリティ インターフェイスで構築されたカスタム アプリケーションです。
 
-問題が発生すると、その問題が根付いている場所を特定し、修正する知識を持っている時間がかかる場合があります。 Adobeのサポート組織は、問題のトラブルシューティングを行いながら、ログやコマンドライン出力を長年にわたって調べることに基づいて構築された部族的な知識を蓄積しています。 このツールは、そのような知識を活用して、共通のタイムラインに対して重要な信号を識別します。 タイムラインを拡張または縮小できるので、ログデータを視覚化してパフォーマンス管理や問題の解決に役立てることができます。
+問題が発生したときに、その問題がどこから発生したのかを把握し、その問題を解決するための知識を得るのに時間がかかることがあります。 Adobeのサポート組織は、問題のトラブルシューティングを行いながら、ログとコマンドライン出力を長年調べることに基づいて構築された部族的な知識を積み重ねてきました。 このツールは、そのような知識を活用して、共通のタイムラインに対する重要なシグナルを特定します。 タイムラインは拡張または縮小でき、ログデータを視覚化して、パフォーマンス管理と問題解決に役立てることができます。
 
-[!DNL Observation for Adobe Commerce] を使用すると、サポートで発生した複雑な問題を分析して、根本原因を特定するのに役立ちます。 異なるデータをトラッキングする代わりに、イベントとエラーを関連付けて時間を費やし、パフォーマンスのボトルネックの原因に関する深いインサイトを得ることができます。 このツールは、サイトで発生する問題のいくつかをより明確に把握し、問題の潜在的な根本原因を特定してサイトの最適なパフォーマンスを維持するのに役立ちます。 これには、サイトの問題を引き起こしているかどうかと何を引き起こしてい [!DNL bots] かを特定することが含まれます。
+[!DNL Observation for Adobe Commerce]を使用すると、サポートが発生した複雑な問題を分析して、根本原因を特定できます。 さまざまなデータを追跡する代わりに、イベントとエラーを関連付けて時間を費やし、パフォーマンスのボトルネックの原因に関する詳細なインサイトを得ることができます。 このツールは、問題の潜在的な根本原因を特定し、サイトのパフォーマンスを最適に維持するために、サイトが経験する問題のいくつかをより明確に把握することを目的としています。 これには、サイトの問題を引き起こしているかどうか、および何の[!DNL bots]を特定することが含まれます。
 
-## このガイドは誰を対象としていますか？
+## このガイドは誰のためのものでしょうか？
 
-Adobe Commerce サイトのパフォーマンスを最適化し、問題を診断したいマーチャントやパートナーです。 [!DNL Observation for Adobe Commerce] を使用すると、次のことができます。
+Adobe Commerceサイトのパフォーマンスを最適化して、問題を診断したい販売者とパートナー。 [!DNL Observation for Adobe Commerce]は次の目的で使用できます。
 
-* サイトに問題が発生する前に共通のタイムラインと情報を比較し、パフォーマンスが低下した原因を確認できます。
+* サイトに問題が発生する前に、共通のタイムラインと情報を比較することで、パフォーマンスが低下している原因を確認することができます。
 
-* 停止時に何を探すか、何百万ものログメッセージをどこで探すかを把握します。
+* 障害時に数百万のログメッセージを探す場所と探すべき場所を把握します。
 
-* ログからの重要なエラーメッセージの視覚的な要約を使用して、データの収集と解析を簡略化します。
+* ログから重要なエラーメッセージを視覚的に要約することで、データの収集と解析を簡素化できます。
 
-* IP リクエストの頻度、アクセスした URL、使用する API など、様々なサービスにわたるパースペクティブを取得します。
+* IP リクエストの頻度、アクセスされたURL、使用されたAPIなど、様々なサービスをまたいで視点を獲得できます。
 
 ## [!DNL Observation for Adobe Commerce] デモ
 
-[!DNL Observation for Adobe Commerce] について詳しくは、このビデオをご覧ください。
+[!DNL Observation for Adobe Commerce]について詳しくは、このビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3410749?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3410749?captions=jpn&quality=12)

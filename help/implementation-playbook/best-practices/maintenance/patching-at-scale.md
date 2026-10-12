@@ -5,13 +5,23 @@ role: Developer
 feature: Best Practices
 badge: label="Contributed by Tony Evers, シニア・テクニカル・アーキテクト，Adobe" type="Informative" url="https://www.linkedin.com/in/evers-tony/" tooltip="アーティスト：Tony Evers"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1361'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce パッチを大規模に配布するためのベストプラクティス
 
 複数のAdobe Commerce インストールを管理する場合、[&#x200B; パッチ適用](../../../upgrade/patches/apply.md)は複雑なプロセスになる可能性があります。 _一元的なパッチ適用_&#x200B;は、企業にとってベストプラクティスです。 Adobe Commerceのすべてのインストールに適切なパッチを適用するのに役立ちます。 このトピックでは、すべての種類のAdobe Commerce [&#x200B; パッチ &#x200B;](../../../upgrade/patches/overview.md)に対して一元的にパッチを配布する方法について説明します。

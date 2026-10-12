@@ -3,13 +3,27 @@ title: 顧客設定パス リファレンス
 description: Adobe Commerceの管理者設定で、お客様の設定パスと値について説明します。 ニュースレター、アカウント管理、カスタマーサービスの各オプションをご確認ください。
 feature: Configuration, Customers
 exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 22bad240-8308-569b-a9d5-578f1ff890ca
+    internal-label: Customers
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 0%
-
 ---
-
 # 顧客設定パス リファレンス
 
 このセクションでは、管理者の&#x200B;**ストア**/設定/**構成**/**顧客**&#x200B;のオプションで使用できる変数名と構成パスを一覧表示します。

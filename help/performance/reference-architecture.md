@@ -2,13 +2,22 @@
 title: 参照アーキテクチャ
 description: Adobe Commerceのリファレンスアーキテクチャについて詳しく見る。 導入に関するガイダンスと最適化戦略。
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
-
 ---
-
 # 参照アーキテクチャ
 
 このトピックでは、リソースが他のユーザーと共有されない、データセンター（仮想化されていない）で物理的にホストされるプレーンサーバーを使用するAdobe Commerce インスタンスの一般的な推奨設定について説明します。 ホスティングプロバイダーは、特にCommerceの高性能ホスティングに特化している場合、要件に等しくまたはより効果的な別の設定を推奨する可能性があります。
@@ -64,7 +73,7 @@ ht-degree: 0%
 
 ### 推奨される[!DNL Varnish]参照アーキテクチャ
 
-Magentoでは、標準搭載の複数のフルページキャッシングエンジン（File、Memcache、Redis、[!DNL Varnish]）と、拡張機能によるカバレッジの拡張をサポートしています。 [!DNL Varnish]は、推奨されるフルページキャッシュエンジンです。 [!DNL Commerce]は、様々な[!DNL Varnish]設定をサポートしています。
+Magentoは、すぐに使える複数のフルページキャッシュエンジン（File、Memcache、Redis、[!DNL Varnish]）をサポートしており、拡張機能によるカバレッジの拡大も可能です。 [!DNL Varnish]は、推奨されるフルページキャッシュエンジンです。 [!DNL Commerce]は、様々な[!DNL Varnish]設定をサポートしています。
 
 高可用性を必要としないサイトの場合は、Nginx SSL終了でシンプルな[!DNL Varnish]設定を使用することをお勧めします。
 

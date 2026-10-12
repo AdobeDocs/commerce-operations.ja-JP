@@ -1,17 +1,32 @@
 ---
 title: 'ACSD-65684: B2B 1.5.2のMagento_Companyのアップグレードは、company_structureの100,000 レコードを超えると遅くなります'
-description: B2B 1.5.2のMagento_Company モジュールのアップグレードに時間がかかり、company_structure テーブルで多数のレコード（約100,000以上）を処理する場合にAdobe Commerceの問題を修正するには、ACSD-65684 パッチを適用します。
+description: B2B 1.5.2でMagento_Company モジュールをアップグレードする際に、company_structure テーブルで多数のレコード（約100,000以上）を処理するために時間がかかりすぎるというAdobe Commerceの問題を修正するには、ACSD-65684 パッチを適用します。
 feature: B2B
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 1b45ebe4-4fb4-4fb5-b107-a2d44ec784e0
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
-
 ---
-
 # ACSD-65684: [!DNL B2B] 1.5.2の`Magento_Company`のアップグレードに時間がかかり、`company_structure`のレコード数が100,000を超えています
 
 ACSD-65684 パッチは、`company_structure` テーブルの100,000以上のレコードを処理する際に、[!DNL B2B] 1.5.2の`Magento_Company` モジュールのアップグレードに時間がかかりすぎるというパフォーマンスの問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64がインストールされている場合に利用できます。 パッチ IDはACSD-65684です。 この問題は、Adobe Commerce 2.4.9で修正される予定です。

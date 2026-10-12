@@ -1,17 +1,30 @@
 ---
 title: 'ACSD-52613: キャッシュとインデックスが更新されずに更新される'
-description: ACSD-52613 パッチを適用して、 [!DNL REST API]までに「Inventory_source」項目に更新が行われない場合にキャッシュとインデックスが更新されるAdobe Commerceの問題を修正します。
+description: ACSD-52613 パッチを適用して、[!DNL REST API]までに「Inventory_source」項目に更新が行われない場合にキャッシュとインデックスが更新されるAdobe Commerceの問題を修正します。
 feature: REST
 role: Admin
 exl-id: 18878161-da4e-4d6e-9f58-706519f837f8
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
-
 ---
-
 # ACSD-52613：更新なしでキャッシュとインデックスが更新される
 
 ACSD-52613 パッチは、[!DNL REST API]によって`Inventory_source`個の項目に更新が行われない場合にキャッシュとインデックスが更新されるAdobe Commerceの問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.37がインストールされている場合に利用できます。 パッチ IDはACSD-52613です。 この問題は、Adobe Commerce 2.4.7で修正されています。

@@ -4,13 +4,23 @@ description: Adobe Commerce サイトの本番環境のローンチ前に、パ�
 feature: Best Practices
 role: Developer
 exl-id: 591b1a62-bdba-4301-858a-77620ee657a9
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 0%
-
 ---
-
 # カタログ画像のサイズ変更のベストプラクティス
 
 ストアを本番環境に導入する前に、あらゆるカタログ画像のサイズを変更する必要があります。 本番環境に導入する前に画像のサイズを変更しないと、ページの読み込み中に画像のサイズが変更されるため、サイトの読み込み速度が大幅に低下し、導入後の最初の数日から数週間でサーバーの読み込みが増加します。

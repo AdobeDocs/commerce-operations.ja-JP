@@ -4,13 +4,23 @@ description: Adobe Commerce プロジェクトの開発段階におけるコー�
 feature: Best Practices
 role: Developer
 exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1180'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerceのコードレビューのベストプラクティス
 
 コードレビューの主な目的は、実装された機能が、パフォーマンス、アーキテクチャ、セキュリティの観点から、最適な方法で要件を満たしているかどうかを検証することです。

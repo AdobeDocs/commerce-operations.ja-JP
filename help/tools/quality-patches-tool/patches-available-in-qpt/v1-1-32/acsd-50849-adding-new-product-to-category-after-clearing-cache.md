@@ -5,13 +5,32 @@ feature: Cache, Categories, Products
 role: Admin
 exl-id: e7fd0614-eaa3-48ad-95ff-87f7ad3d76c1
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
-
 ---
-
 # ACSD-50849: キャッシュをクリアした後に新しい製品を追加すると、結果が一致しない
 
 ACSD-50849 パッチは、キャッシュをクリアした後に新しい製品をカテゴリに追加すると、既存の製品の位置と選択が一致しない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) QPT 1.1.32がインストールされている場合に利用できます。 パッチ IDはACSD-50849です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。

@@ -4,13 +4,27 @@ description: オンプレミス Adobe Commerceのデプロイメント用にNgin
 feature: Install, Configuration
 badgePaas: label="オンプレミス" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce オンプレミス プロジェクトにのみ適用されます。"
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1477'
 ht-degree: 0%
-
 ---
-
 # オンプレミスのデプロイメント用にNginxをインストールする {#nginx}
 
 このガイドでは、Adobe Commerce オンプレミスのデプロイメント用にNginxをインストールし、Commerceに必要なNginx設定を設定する方法について説明します。 これには、UbuntuおよびCentOSのオペレーティングシステム固有の手順と、PHP-FPMの設定に関するガイダンスが含まれます。 Adobeでは、Commerce アプリケーションの機能とセキュリティの両方を保持するために、このガイドに記載されている設定手順に従うことをお勧めします。

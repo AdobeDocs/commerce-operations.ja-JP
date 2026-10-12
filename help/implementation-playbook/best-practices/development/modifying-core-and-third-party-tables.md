@@ -3,15 +3,25 @@ title: データベーステーブルの修正に関するベストプラクテ�
 description: Adobe Commerceおよびサードパーティのデータベーステーブルを変更する方法とタイミングについて説明します。
 role: Developer
 feature: Best Practices
-last-substantial-update: 2022-11-15T00:00:00Z
+last-substantial-update: 2022-11-15T00:00:00.000Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1591'
 ht-degree: 0%
-
 ---
-
 # データベーステーブルの修正に関するベストプラクティス
 
 この記事では、[!DNL Adobe Commerce]またはサードパーティのモジュールによって作成されたデータベース テーブルを修正するためのベストプラクティスについて説明します。 テーブルを効果的に変更するタイミングと方法を把握することは、コマースプラットフォームの長期的な存続可能性と安定性を確保するのに役立ちます。
@@ -36,7 +46,7 @@ Adobeでは、まず、このデータを保存する必要があるかどうか
 
 データをコマースの外部に保管し、リアルタイムで使用できるようにするもうひとつの関連する選択肢は、GraphQL meshなどの他のツールを活用することです。 このオプションは、異なるデータソースを組み合わせて、1つの応答として返します。
 
-例えば、外部データベース（廃止予定の旧Magento 1 サイトなど）からの古い注文を`stitch`まとめることができます。 次に、GraphQL meshを使用して、お客様の注文履歴の一部として表示します。 これらの古い注文は、現在の[!DNL Adobe Commerce]環境の注文と組み合わせることができます。
+例えば、外部データベースから古い注文を`stitch`組み合わせることができます。おそらく、廃止された古いMagento 1 サイトです。 次に、GraphQL meshを使用して、お客様の注文履歴の一部として表示します。 これらの古い注文は、現在の[!DNL Adobe Commerce]環境の注文と組み合わせることができます。
 
 GraphQLでのAPI メッシュの使用について詳しくは、[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/){target="_blank"}とは何か）および[GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}を参照してください。
 

@@ -1,15 +1,29 @@
 ---
 title: 「[!UICONTROL Summary]」タブ
-description: ' [!DNL Observation for Adobe Commerce]の[!UICONTROL Summary] タブについて説明します。'
+description: '[!DNL Observation for Adobe Commerce]の「[!UICONTROL Summary]」タブについて説明します。'
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '2640'
 ht-degree: 0%
-
 ---
-
 # 「[!UICONTROL Summary]」タブ
 
 [!DNL Observation for Adobe Commerce]の「[!UICONTROL Summary]」タブでは、サイトで発生した問題の一部をすばやく確認して、サイトの問題の潜在的な根本原因を自動解決または特定できます。 追加のタブでは、コンポーネントサービス、データベース、インフラストラクチャ、プロセスの状態に関する詳細な情報を提供します。
@@ -72,7 +86,7 @@ ht-degree: 0%
 
 ![CPUの使用状況](../../assets/tools/cpu-usage.jpg)
 
-**[!UICONTROL CPU Usage]** フレームが空白の場合は、[!DNL New Relic]のインフラストラクチャ アプリケーションが有効になっていないことを示します。 サイトがスターターにある場合、この情報は表示されません。 サイトがProを利用している場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)を開いて、サイトで[!DNL New Relic Infrastructure]を有効にします。
+**[!UICONTROL CPU Usage]** フレームが空白の場合は、[!DNL New Relic]のインフラストラクチャ アプリケーションが有効になっていないことを示します。 サイトがスターターにある場合、この情報は表示されません。 サイトがProを利用している場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)を開いて、サイトで[!DNL New Relic Infrastructure]を有効にします。
 
 ## [!UICONTROL Average Response Time]
 
@@ -383,7 +397,7 @@ PHP プロセスの動作は、[設定](https://www.php.net/manual/en/install.fp
 * &#39;%all shards failed%&#39; as &#39;all_shards_failed&#39;
 * &#39;%NoNodesAvailableException%&#39; as &#39;no_alive_nodes&#39;
 * &#39;%PHP Fatal error: Uncaught Error: Wrong parameters for Elasticsearch%&#39; as &#39;wrong_param&#39;
-* &#39;%この問題を解決するには、Magento Cloud インフラストラクチャのElasticsearch サービスを「ver_err」としてversion%にアップグレードします
+* &#39;%この問題を解決するには、Magento Cloud インフラストラクチャのElasticsearch サービスをversion%に&#39;ver_err&#39;としてアップグレードします
 * &#39;%clusterのヘルスステータスが\[YELLOW\]から\[RED\]に変更されました（理由：%&#39;は&#39;yel_red&#39;です）
 * &#39;%No space left on device%&#39; as &#39;no_space&#39;
 * &#39;% &lbrack;SearchRequest&lbrace;searchType=%&#39;を&#39;failed_query&#39;として実行できませんでした

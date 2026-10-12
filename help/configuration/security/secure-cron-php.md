@@ -3,13 +3,27 @@ title: セキュアなcron PHP
 description: pub/cron.phpへのブラウザーアクセスを制限し、不正または悪意のあるcronの実行に対してAdobe Commerceのスケジュールされたタスクを保護する方法について説明します。
 feature: Configuration, Security
 exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
-
 ---
-
 # セキュアなcron PHP
 
 このトピックでは、悪意のあるエクスプロイトで使用されないようにするための`pub/cron.php`のセキュリティの確保について説明します。 cronを保護しないと、誰でもcronを実行してCommerce アプリケーションを攻撃する可能性があります。

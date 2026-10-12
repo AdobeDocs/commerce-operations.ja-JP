@@ -1,17 +1,29 @@
 ---
 title: ACSD-56741：カスタム MySQL トリガーを使用したデータベース設定エラーのトラブルシューティング
-description: ACSD-56741 パッチを適用して、インデックス付けと [!DNL MView]に関係のないデータベース内のカスタム MySQL トリガーが原因で、「setup:upgrade」中に「setup:upgrade」タイプの値で配列オフセットにアクセスしようとすると、エラーメッセージ*が表示されるAdobe Commerceの問題を修正します。
+description: ACSD-56741 パッチを適用して、インデックスと[!DNL MView]に関係のないデータベース内のカスタム MySQL トリガーが原因で、「setup:upgrade」中にエラーメッセージ * null*型の値で配列オフセットにアクセスしようとすると表示されるAdobe Commerceの問題を修正します。
 feature: Install
 role: Admin, Developer
 exl-id: 93a1c75f-8a45-49df-9fa4-6ba1234c822d
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
-
 ---
-
 # ACSD-56741：カスタム MySQL トリガーを使用したデータベース設定エラーのトラブルシューティング
 
 ACSD-56741 パッチは、データベース内のカスタム MySQL トリガーがインデックスと[!DNL MView]に関連しないために、`setup:upgrade`中にエラーメッセージ *型null*&#x200B;の値で配列オフセットにアクセスしようとすると表示される問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.48がインストールされている場合に利用できます。 パッチ IDはACSD-56741です。 この問題は、Adobe Commerce 2.5.0で修正される予定です

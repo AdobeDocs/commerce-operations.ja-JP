@@ -3,13 +3,25 @@ title: セキュリティインシデントへの対応
 description: サイトの可用性とパフォーマンスに影響を与えるセキュリティ問題に対応して修正するためのベストプラクティスに従って、セキュリティインシデントを処理します。
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 0%
-
 ---
-
 # セキュリティインシデントに対応するためのベストプラクティス
 
 次の記事では、セキュリティインシデントに対応し、Adobe Commerce サイトの可用性、信頼性、およびパフォーマンスに影響を与える問題を修正するためのベストプラクティスをまとめます。

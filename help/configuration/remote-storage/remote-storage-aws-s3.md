@@ -3,13 +3,27 @@ title: リモートストレージ用AWS S3 バケットの設定
 description: リモートストレージにAWS S3 ストレージサービスを使用するようにCommerce プロジェクトを設定します。
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
-
 ---
-
 # リモートストレージ用AWS S3 バケットの設定
 
 [Amazon Simple Storage Service （Amazon S3） &#x200B;](https://aws.amazon.com/s3)は、業界をリードするスケーラビリティ、データ可用性、セキュリティ、パフォーマンスを提供するオブジェクト ストレージ サービスです。 AWS S3 サービスでは、データストレージにバケット（コンテナ）を使用します。 この設定では、_private_ バケットを作成する必要があります。 クラウド インフラストラクチャ上のAdobe Commerceについては、[&#x200B; クラウド インフラストラクチャ上のCommerceのリモート ストレージの設定](cloud-support.md)を参照してください。

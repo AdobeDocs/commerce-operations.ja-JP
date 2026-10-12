@@ -5,13 +5,28 @@ feature: REST
 role: Admin, Developer
 type: Troubleshooting
 exl-id: c2a8f4ef-3998-4e73-af9e-69b17a10d684
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
-
 ---
-
 # ACSD-65775：複数の量のREST API順序の詳細で`base_row_total`と`row_total`の値が正しくありません
 
 ACSD-65775 パッチは、同じ項目の複数の数量が注文されたときに、REST APIの注文の詳細が誤った`base_row_total`値と`row_total`値を返す問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66がインストールされている場合に利用できます。 パッチ IDはACSD-65775です。 この問題は、Adobe Commerce 2.4.9で修正される予定です。

@@ -1,25 +1,34 @@
 ---
 title: ベースディレクトリパスのカスタマイズ
-description: MAGE_DIRS 変数を使用して、絶対パスの配列を設定します。
+description: MAGE_DIRS変数を使用して、絶対パスの配列を設定します。
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '128'
 ht-degree: 0%
-
 ---
-
 # ベースディレクトリのパス
 
-`MAGE_DIRS` 環境変数を使用すると、カスタムベースディレクトリパスと、Commerce アプリケーションで様々なファイルへの絶対パスの構築または URL の生成に使用されるベース URL のフラグメントを指定できます。
+`MAGE_DIRS`環境変数を使用すると、カスタムベースディレクトリのパスとベース URLのフラグメントを指定できます。このフラグメントは、Commerce アプリケーションが様々なファイルへの絶対パスを作成したり、URLを生成したりするために使用します。
 
-## MAGE_DIRS を設定
+## MAGE_DIRSを設定
 
-キーが [\\Magento\\App\\Filesystem\\DirectoryListの定数で、値がディレクトリの絶対パスまたはその URL パスである連想配列を &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php) それぞれ指定します。
+キーが[\\Magento\\App\\Filesystem\\DirectoryList](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php)からの定数で、値がそれぞれディレクトリまたはそのURL パスの絶対パスである連想配列を指定します。
 
-`MAGE_DIRS` は、次のいずれかの方法で設定できます。
+次のいずれかの方法で`MAGE_DIRS`を設定できます。
 
-- [ブートストラップパラメーターの値を設定](../bootstrap/set-parameters.md)
+- [ブートストラップパラメーターの値を設定する](../bootstrap/set-parameters.md)
 - 次のようなカスタムエントリポイントスクリプトを使用します。
 
   ```php
@@ -48,5 +57,5 @@ ht-degree: 0%
   $bootstrap->run($app);
   ```
 
-上記の例では、`[cache]` ディレクトリと `[media]` ディレクトリのパスをそれぞれ `/mnt/nfs/cache` と `/mnt/nfs/media` に設定します。
+前述の例では、`[cache]`および`[media]`個のディレクトリのパスをそれぞれ`/mnt/nfs/cache`および`/mnt/nfs/media`に設定しています。
 

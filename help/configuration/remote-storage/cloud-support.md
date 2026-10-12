@@ -3,13 +3,29 @@ title: クラウドインフラストラクチャ上のCommerceのリモート�
 description: クラウドインフラストラクチャ上にAdobe Commerceのリモートストレージを設定する方法に関するガイダンスを参照してください。
 feature: Configuration, Cloud, Storage
 exl-id: da352466-13f2-42e4-a589-3b0a89728467
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
-
 ---
-
 # Commerce on Cloud インフラストラクチャのリモートストレージの設定
 
 `ece-tools` パッケージ 2002.1.5以降では、環境変数を使用してリモートストレージモジュールを有効にできますが、リモートストレージモジュールでは、Adobe Commerce on cloud infrastructureで&#x200B;_制限_&#x200B;がサポートされています。 Adobeでは、サードパーティ製ストレージアダプターサービスのトラブルシューティングを完全に実行できません。

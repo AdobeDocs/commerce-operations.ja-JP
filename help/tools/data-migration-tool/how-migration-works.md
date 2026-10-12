@@ -1,31 +1,40 @@
 ---
 title: データ移行の仕組み
-description: 用語、ワークフロー図、手順など、Magento 1とMagento 2間のデータ移行プロセスについて説明します。
+description: 用語、ワークフロー図、手順など、Magento 1とMagento 2の間のデータ移行プロセスについて説明します。
 exl-id: 821492dc-ee5b-4c4a-9479-680ee8c5756d
 topic: Commerce, Migration
-source-git-commit: 65ee7e84800c781577b1e210971a62b430d6300a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 0%
-
 ---
-
 # データ移行の仕組み
 
 このトピックでは、[!DNL Data Migration Tool]を使用してMagento 1からMagento 2にデータを移行する方法の概要を説明します。
 
-[!DNL Data Migration Tool]は、Magento 1からMagento 2へのデータ転送に使用されるコマンドラインインターフェイス（CLI）ツールです。 このツールは、Magento 1と2のデータベース構造（テーブルとフィールド）の整合性を検証し、データ転送の進行状況を追跡し、ログを作成し、データ検証テストを実行します。
+[!DNL Data Migration Tool]は、Magento 1からMagento 2へのデータ転送に使用されるコマンドラインインターフェイス（CLI）ツールです。 このツールは、Magento 1と2のデータベース構造（テーブルとフィールド）間の一貫性を検証し、データ転送の進行状況を追跡し、ログを作成し、データ検証テストを実行します。
 
 ## 用語
 
 * **モード** - Magento 1.xからMagento 2.xにデータを移行するための順序付き一連の操作。
 * **手順** – 移行するデータの種類を定義するモードのタスク。
 * **ステージ** - データを検証、転送、検証する手順のタスク。
-* **マップ ファイル** - ステージを完了するためのMagento 1.xとMagento 2.x データ構造間のルールと接続を定義するXML ファイル。
+* **マップ ファイル** - Magento 1.xとMagento 2.xのデータ構造の間のルールと接続を定義し、ステージを完了するためのXML ファイル。
 
 ## モード
 
-[!DNL Data Migration Tool]は、Magento 1.xからMagento 2.xにデータを転送して適応させるために、移行プロセスを3つのフェーズまたは&#x200B;*モード*&#x200B;に分割します。 3つのモードは以下に示されており、この順序で実行する必要があります。
+Magento 1.xからMagento 2.xにデータを転送して適応させるには、移行プロセスを3つのフェーズまたは&#x200B;*モード*&#x200B;に分割します。 [!DNL Data Migration Tool]3つのモードは以下に示されており、この順序で実行する必要があります。
 
 1. **設定モード**：システム設定とweb サイト関連の設定を移行します。
 1. **データモード**: データベースアセットを一括で移行します。
@@ -43,7 +52,7 @@ ht-degree: 0%
 
 各ステップ内には、データが適切に移行されるように、常にこの順序で実行される3つの&#x200B;*ステージ*&#x200B;があります。
 
-1. **整合性チェック**: テーブル フィールド名、型、およびその他の情報を比較して、Magento 1と2のデータ構造の互換性を検証します。
+1. **整合性チェック**: テーブル フィールド名、タイプ、およびその他の情報を比較して、Magento 1と2のデータ構造の互換性を検証します。
 1. **データ転送**: Magento 1および2からテーブルでデータテーブルを転送します。
 1. **ボリュームチェック**: テーブル間のレコード数を比較して、転送が成功したことを確認します。
 
@@ -53,7 +62,7 @@ ht-degree: 0%
 
 移行プロセスの最下位レベルには、XML *マップファイル*&#x200B;があります。 [!DNL Data Migration Tool]は、ステップのステージ内でマップファイルを使用して、Magento 1.x テーブルと2.x テーブルの間で異なるデータ構造を変換します。
 
-例えば、Magento Open Source 1.8.0.0 データベースからMagento Open Source 2.x.xにデータを変換する場合、マップファイルは、テーブルの名前が変更されたという事実を考慮し、宛先データベースの名前を変更します。 データ構造またはデータ形式に違いがない場合、[!DNL Data Migration Tool]は、拡張機能で作成されたテーブルのデータを含め、そのままMagento 2 データベースに転送します。
+例えば、Magento Open Source 1.8.0.0 データベースからMagento Open Source 2.x.xにデータを変換する場合、マップファイルは、テーブルの名前が変更されたという事実を考慮し、宛先データベースの名前を変更します。 データ構造またはデータ形式に違いがない場合、[!DNL Data Migration Tool]は、拡張機能によって作成されたテーブルのデータを含め、そのままの状態でMagento 2 データベースに転送します。
 
 差分がマップ ファイルで宣言されていない場合、[!DNL Data Migration Tool]はエラーを表示し、開始しません。
 
@@ -65,7 +74,7 @@ ht-degree: 0%
 
 [[!DNL Data Migration Tool]技術仕様](technical-specification.md)
 
-アドビは、世界的な#1 コマース基盤であるMagento 1.xから、将来のプラットフォームであるMagento 2への移行を検討しています。 移行と呼ばれるこのプロセスについて、詳しくお話しできることを嬉しく思います。
+Adobe Commerceを#1用するプラットフォームであるMagento 1.xから、未来のプラットフォームであるMagento 2への移行を検討されています。 移行と呼ばれるこのプロセスについて、詳しくお話しできることを嬉しく思います。
 
 ## 移行コンポーネント
 
@@ -73,11 +82,11 @@ Magento 2への移行には、データ、拡張機能、カスタムコード�
 
 ### データ
 
-**Magento 2[!DNL Data Migration Tool]**&#x200B;は、商品、お客様、注文データ、店舗構成、プロモーションなどをMagento 2に効率的に移行するために開発されました。 このガイドでは、データの移行に使用するツールとベストプラクティスについて説明します。
+商品、顧客、注文データ、店舗構成、プロモーションなどを効率的にMagento 2に移行するために、**Magento 2[!DNL Data Migration Tool]**&#x200B;を開発しました。 このガイドでは、データの移行に使用するツールとベストプラクティスについて説明します。
 
 ### 拡張機能とカスタムコード
 
-Magento 2でMagento 1拡張機能を使用できるよう、開発コミュニティと懸命に取り組んでいます。 お気に入りの拡張機能の最新版をダウンロードまたは購入できる[Commerce Marketplace](https://commercemarketplace.adobe.com//)を発表できたことを誇りに思います。
+Magento 2でMagento 1拡張機能を使用できるよう、開発コミュニティと懸命に取り組んできました。 お気に入りの拡張機能の最新版をダウンロードまたは購入できる[Commerce Marketplace](https://commercemarketplace.adobe.com//)を発表できたことを誇りに思います。
 
 Magento 2の拡張機能の開発について詳しくは、[PHP開発者ガイド &#x200B;](https://developer.adobe.com/commerce/php/development/)を参照してください。
 
@@ -87,4 +96,5 @@ Magento 2は、革新的なショッピング体験を構築し、新たなレ�
 
 ## 移行の試み
 
-1.x バージョン（v1.12からv1.14など）間のアップグレードと同様に、Magento 1からMagento 2への移行の労力レベルは、サイトの構築方法とカスタマイズのレベルによって異なります。ただし、常に[!DNL Data Migration Tool]を改善しています（詳細は[変更履歴](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md)を参照）。そのため、移行作業は継続的に減少しています。
+1.x バージョン（v1.12からv1.14など）の間でアップグレードする場合と同様に、Magento 1からMagento 2への移行に必要な労力レベルは、サイトの構築方法とカスタマイズのレベルによって異なります。
+ただし、常に[!DNL Data Migration Tool]を改善しています（詳細は[変更履歴](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md)を参照）。そのため、移行作業は継続的に減少しています。

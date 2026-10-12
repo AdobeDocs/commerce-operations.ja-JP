@@ -5,13 +5,25 @@ feature: Orders
 role: Admin, Developer
 exl-id: 12afceb5-db3c-4783-a532-93c4c71f05f4
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
-
 ---
-
 # ACSD-63578: *[!UICONTROL Add to Order by SKU]*&#x200B;の&#x200B;**[!UICONTROL Delete]** アイコンをクリックしても、SKUが削除されない
 
 ACSD-63578 パッチでは、管理画面で&#x200B;*[!UICONTROL Add to Order by SKU]*&#x200B;の&#x200B;**[!UICONTROL Delete]** アイコンをクリックしてもSKUが削除されない問題が修正されました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58がインストールされている場合に利用できます。 パッチ IDはACSD-63578です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。

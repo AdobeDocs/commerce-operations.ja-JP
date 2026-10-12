@@ -2,13 +2,22 @@
 title: Nginxで複数のweb サイトを設定する
 description: このチュートリアルに従って、Nginxで複数のweb サイトを設定します。
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 0%
-
 ---
-
 # Nginxで複数のweb サイトを設定する
 
 私たちは、次のことを想定しています。
@@ -36,7 +45,7 @@ ht-degree: 0%
 
 1. [管理画面でweb サイト、ストア、ストアビューを設定](ms-admin.md)。
 1. [Nginx バーチャルホスト &#x200B;](#step-2-create-nginx-virtual-hosts)を作成して、多数のWeb サイトまたは1つのNginx バーチャルホストをCommerce web サイトごとにマッピングします（以下の手順を参照）。
-1. Magentoが提供する`nginx.conf.sample`を使用して、[MAGE変数](ms-overview.md) `$MAGE_RUN_TYPE`および`$MAGE_RUN_CODE`の値をnginxに渡します（以下で説明する手順）。
+1. Magentoが提供する`nginx.conf.sample`を使用して、[MAGE変数](ms-overview.md) `$MAGE_RUN_TYPE`および`$MAGE_RUN_CODE`の値をnginxに渡します（以下で詳しく説明する手順）。
 
    - `$MAGE_RUN_TYPE`は`store`または`website`のいずれかです：
 

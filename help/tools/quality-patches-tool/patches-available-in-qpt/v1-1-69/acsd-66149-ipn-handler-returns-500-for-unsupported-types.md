@@ -5,13 +5,25 @@ feature: Payments
 role: Admin, Developer
 type: Troubleshooting
 exl-id: d4794e24-1b6b-4bb5-b54c-9a248fa5f3bd
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
-
 ---
-
 # ACSD-66149: IPN ハンドラーが、サポートされていないタイプの&#x200B;*500*&#x200B;を返します
 
 ACSD-66149 パッチは、IPN （即時支払通知）ハンドラーが、サポートされていないIPN タイプまたは不明なIPN タイプに対して500 エラーを返す問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69がインストールされている場合に利用できます。 パッチ IDはACSD-66149です。 この問題は、Adobe Commerce 2.4.9で修正される予定です。

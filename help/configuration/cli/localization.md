@@ -2,13 +2,22 @@
 title: 翻訳辞書と言語パッケージ
 description: Adobe Commerceの翻訳辞書を生成し、言語パッケージを構築する方法について説明します。 ローカライゼーションと多言語ストアの設定。
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
-
 ---
-
 # ローカライズ
 
 {{file-system-owner}}
@@ -48,7 +57,7 @@ bin/magento i18n:collect-phrases [-o|--output="<csv file path and name>"] [-m|--
 | パラメーター | 値 | 必要ですか？ |
 |--- |--- |--- |
 | `<path to directory to translate>` | 翻訳可能なコードを持つディレクトリへのパス。つまり、翻訳するフレーズを持つPHP、PHTML、またはXML ファイルです。<br><br> ツールは、入力したパスで検索を開始し、そのパスに含まれるすべてのファイルとサブディレクトリを検索します。<br><br>`-m --magento`を使用する場合は、このパラメーターを使用しないでください。 | はい（辞書）、いいえ（パッケージ）。 |
-| `-m --magento` | この翻訳ディクショナリから言語パッケージを作成する必要があります。 使用する場合は、bin/magentoを含むディレクトリを検索します。 このオプションを選択すると、ディクショナリの各行にテーマまたはモジュールが追加されます。<br><br> サンプルは<br><br>&quot;No Items Found&quot;,&quot;No Items Found&quot;,module,Magento_Wishlist | いいえ |
+| `-m --magento` | この翻訳ディクショナリから言語パッケージを作成する必要があります。 使用する場合は、bin/magentoを含むディレクトリを検索します。 このオプションは、ディクショナリの各行にテーマまたはモジュールを追加します。<br><br> サンプルは次のとおりです：<br><br>&quot;No Items Found&quot;,&quot;No Items Found&quot;,module,Magento_Wishlist | いいえ |
 | `-o --output="<path>"` | 作成する翻訳辞書CSV ファイルの絶対ファイルシステムパスとファイル名を指定します。 入力する値では、大文字と小文字が区別されます。 CSV ファイルの名前は、文字の大文字と小文字を含むロケール名と完全に一致している必要があります。<br><br>このパラメーターを省略すると、出力はstdoutに送信されます。 | いいえ |
 
 >[!INFO]

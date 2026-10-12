@@ -5,13 +5,27 @@ badge: label="協力：objectsource" type="Informative" url="https://objectsourc
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 0%
-
 ---
-
 # バックエンドパフォーマンスを最適化するためのベストプラクティス
 
 このトピックでは、データベースの最適化とテストに重点を置いて、Adobe Commerce サイトのバックエンドパフォーマンスを調査および最適化するためのベストプラクティスについて説明します。 開発者は、このデータを使用して、各Commerceプロジェクトの固有のコンテキストを調査し、バックエンドの設定と運用を最適化してサイトパフォーマンスを向上させる機会を特定できます。

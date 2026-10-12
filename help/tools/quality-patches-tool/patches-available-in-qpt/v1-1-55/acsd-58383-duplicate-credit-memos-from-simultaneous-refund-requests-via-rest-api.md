@@ -1,17 +1,36 @@
 ---
-title: 'ACSD-58383:  [!DNL REST API]を介した同時払い戻し要求からクレジットメモを複製する'
-description: ACSD-58383 パッチを適用して、 [!DNL REST API] を介して払い戻しを行うAdobe Commerceの問題を修正します。2つの同じリクエストが同時に実行され、重複したクレジットメモが作成されます。
+title: 'ACSD-58383: [!DNL REST API]を介した同時払い戻し要求からクレジットメモを複製する'
+description: ACSD-58383 パッチを適用して、[!DNL REST API]を介して払い戻しを行い、同時に実行される2つの同じリクエストを使用すると、重複したクレジットメモが作成されるAdobe Commerceの問題を修正します。
 feature: REST, Payments, Returns
 role: Admin, Developer
 exl-id: 962970d5-22e7-4bdc-afa0-70e1fa21ecec
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: ac07462c-732c-5c1c-947b-4ce533b4fcfb
+    internal-label: Returns
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '357'
 ht-degree: 0%
-
 ---
-
 # ACSD-58383: [!DNL REST API]を介した同時払い戻し要求からクレジットメモを複製する
 
 ACSD-58383 パッチでは、2つの同じリクエストを同時に実行して[!DNL REST API]を介して払い戻しを発行すると、クレジットメモが重複する問題が修正されました。

@@ -1,17 +1,36 @@
 ---
 title: 'ACSD-50234: [!DNL PayPal]を使用して行われた注文の確認メールに含まれる顧客名が正しくありません'
-description: ACSD-50234 パッチを適用して、 [!DNL PayPal]を使用して行われた注文の確認メールに顧客名が誤って表示されるAdobe Commerceの問題を修正します。
+description: ACSD-50234 パッチを適用して、[!DNL PayPal]を使用して行われた注文の確認メールにお客様の名前が正しく表示されないAdobe Commerceの問題を修正します。
 feature: Admin Workspace, Communications, Orders, Payments
 role: Admin
 exl-id: 9a8a7cef-0166-4b4b-96a0-87fd4f1a0ef3
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bb03f6c4-cab9-560e-9d02-5816e1808d17
+    internal-label: Communications
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 0%
-
 ---
-
 # ACSD-50234: [!DNL PayPal]を使用して行われた注文の確認メールに含まれる顧客名が正しくありません
 
 ACSD-50234 パッチは、[!DNL PayPal]を使用して行われた注文の確認メールに顧客名が正しく表示されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.29がインストールされている場合に利用できます。 パッチ IDはACSD-50234です。 この問題はAdobe Commerce 2.4.5で修正されています。

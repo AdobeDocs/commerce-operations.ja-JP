@@ -1,17 +1,29 @@
 ---
-title: ACSD-59378：読み込み中にストアレベル  [!DNL URL] の書き換えが正しく更新されない
-description: ストアレベル  [!DNL URL] の書き換えが読み込み中に誤って更新されるAdobe Commerceの問題を修正するには、ACSD-59378 パッチを適用します。
+title: 'ACSD-59378: インポート中にストアレベル [!DNL URL]の書き換えが正しく更新されない'
+description: ストアレベル [!DNL URL]の書き換えが読み込み中に誤って更新されるAdobe Commerceの問題を修正するには、ACSD-59378 パッチを適用します。
 feature: Data Import/Export
 role: Admin, Developer
 exl-id: dc54d810-dcc6-42c6-a877-d00d3cf4f9a5
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '394'
 ht-degree: 0%
-
 ---
-
 # ACSD-59378: インポート中にストアレベル [!DNL URL]の書き換えが正しく更新されない
 
 ACSD-59378 パッチは、ストアレベル [!DNL URL]の書き換えが読み込み中に誤って更新される問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.50がインストールされている場合に利用できます。 パッチ IDはACSD-59378です。 この問題は、Adobe Commerce 2.4.7で修正されています。

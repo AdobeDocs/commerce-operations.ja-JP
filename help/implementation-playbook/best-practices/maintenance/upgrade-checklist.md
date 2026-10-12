@@ -4,13 +4,23 @@ description: アップグレードチェックリストを作成して使用し�
 role: Leader
 feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
-
 ---
-
 # チェックリストのベストプラクティスのアップグレード
 
 このチェックリストは、e コマース部門との年次および四半期次の会話中に使用します。 多くの企業が年間予算とロードマップにもとづいて業務を行っています。 年次議論では、自社のプラットフォームの健全性、方向性、アップグレード戦略、およびビジネス全体の目標とKPIとの適合性について話し合うことが不可欠です。 四半期ごとの会話中に、作成した年間プランが現在の状況に合ったものであることを確認し、合わない場合は方向転換します。 このアップグレードプランのチェックリストの目的は、Adobe Commerceのアップグレードを計画およびスケジュールして、1年間のアップグレードプロセスを成功させることです。 このチェックリストは、次のオーディエンスが年間計画と四半期レビューに使用することを目的としています。

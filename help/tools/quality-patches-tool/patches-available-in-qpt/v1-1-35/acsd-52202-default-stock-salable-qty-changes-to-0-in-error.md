@@ -5,13 +5,25 @@ feature: Inventory, Products
 role: Admin
 exl-id: 2ba5cc3b-9774-49f6-948f-371ab3c0c9df
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8dc0e58b-adf0-51bb-8db5-bb36e3e656fb
+    internal-label: Inventory
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
-
 ---
-
 # ACSD-52202：注文でデフォルト以外の在庫を0に設定すると、デフォルトの在庫販売可能数量が0に変更される
 
 ACSD-52202 パッチでは、注文でデフォルト以外の在庫が0数量に設定されている場合に、デフォルトの在庫販売可能数量（qty）がエラーで0に変更される問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.35がインストールされている場合に利用できます。 パッチ IDはACSD-52202です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。

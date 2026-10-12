@@ -5,13 +5,34 @@ feature: Catalog Management, Media, Products, REST
 role: Admin, Developer
 exl-id: 7fdf41e5-46ef-4505-b8ce-c330bd899fa1
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
-
 ---
-
 # ACSD-53204: ギャラリーに画像を追加する同時リクエストで「*製品を保存できません*」エラーが発生する
 
 ACSD-53204 パッチは、`rest/V1/products/<sku>/media` エンドポイントを使用して製品ギャラリーに画像を追加するリクエストを同時に行うと、「*製品を保存できません*」エラーがスローされる問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.39がインストールされている場合に利用できます。 パッチ IDはACSD-53204です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。

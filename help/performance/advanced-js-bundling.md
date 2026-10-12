@@ -2,13 +2,22 @@
 title: 高度なJavaScript バンドル
 description: Adobe Commerceの高度なJavaScript バンドルについて説明します。 導入に関するガイダンスと最適化戦略。
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2301'
 ht-degree: 0%
-
 ---
-
 # 高度なJavaScriptのバンドル
 
 JavaScriptのモジュールをバンドルしてパフォーマンスを向上させるには、次の2つの点を軽減する必要があります。
@@ -48,7 +57,7 @@ Commerce バンドルは、ページあたりの接続数を減らしますが�
 
 >[!NOTE]
 >
->**[!UICONTROL Merge JavaScript Files]**&#x200B;を使用することはお勧めしません。 この設定は、ページのHEAD セクションで同期的に読み込まれたJavaScriptに対してのみ設計されており、バンドルと[!DNL RequireJS] ロジックが正しく動作しない可能性があります。 後方互換性のみが維持され、HTTP/2が有効になっている場合にパフォーマンス上のメリットはありません。
+>**[!UICONTROL Merge JavaScript Files]**&#x200B;を使用することはお勧めしません。 この設定は、ページのHEAD セクションに同期して読み込まれたJavaScriptに対してのみ設計されており、バンドルと[!DNL RequireJS] ロジックが正しく動作しない可能性があります。 後方互換性のみが維持され、HTTP/2が有効になっている場合にパフォーマンス上のメリットはありません。
 >**[!UICONTROL Merge JavaScript Files]**&#x200B;を有効にして問題が発生した場合は、パッチを適用する前に無効にしてみてください。 結合を無効にできない場合は、[ACSD-67908](../tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md)を参照してください。
 
 コマンドラインから組み込み結合を有効にするには：

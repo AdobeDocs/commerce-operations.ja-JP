@@ -5,13 +5,25 @@ feature: Shopping Cart
 role: Admin, Developer
 exl-id: f7b57361-9056-4eec-a393-dadb65aa595b
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: df8eaa0e-dd74-553a-8ad5-28129f8e8d3d
+    internal-label: Shopping Cart
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 0%
-
 ---
-
 # ACSD-54418：動的に価格が設定されたバンドルの子商品に誤って割引額が追加される問題を修正しました。
 
 ACSD-54418 パッチは、動的に価格が設定されたバンドルの各子製品に固定割引額が誤って適用される問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.42がインストールされている場合に利用できます。 パッチ IDはACSD-54418です。 この問題は、Adobe Commerce 2.4.7で修正されています。

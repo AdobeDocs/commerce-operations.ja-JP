@@ -5,13 +5,25 @@ feature: Checkout
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 30790492-330e-4810-8069-fce87b40ebb2
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
-
 ---
-
 # ACSD-66093: ゲスト顧客名フィールドでメール入力が許可され、注文メールが無効になる
 
 ACSD-66093 パッチでは、ゲスト顧客の&#x200B;**[!UICONTROL First Name]**&#x200B;および&#x200B;**[!UICONTROL Last Name]**&#x200B;のフィールドに電子メールアドレスを入力すると、注文確認メールが無効になる問題が修正されています。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65がインストールされている場合に利用できます。 パッチ IDはACSD-66093です。 この問題は、Adobe Commerce 2.4.8で修正されています。

@@ -3,13 +3,27 @@ title: デプロイメントフロー
 description: Adobe Commerce実稼動環境のデプロイメントフロープロセスについて説明します。 パフォーマンスと信頼性を最大化するためのステップをご紹介します。
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
-
 ---
-
 # デプロイメントフロー
 
 実稼動デプロイメントフロー[!DNL Commerce]は、ストアのパフォーマンスを最大化するのに役立ちます。
@@ -26,7 +40,7 @@ composer install --no-dev
 
 ## 依存関係インジェクションの前処理の指示
 
-依存関係インジェクション（DI）命令を前処理してコンパイルする場合、Magentoは次の操作を行います。
+依存関係インジェクション（DI）命令を前処理してコンパイルする場合、Magentoは次の手順を実行します。
 
 * 現在のすべての設定を読み取り、処理します
 * クラス間の依存関係を分析します

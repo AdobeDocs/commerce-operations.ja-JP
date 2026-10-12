@@ -5,13 +5,23 @@ feature: Page Content
 role: Admin
 exl-id: d4943772-cbb8-4b6e-b553-7d3f5a50500e
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 17d326fa-534a-55a5-b46f-8ae1de1e2f75
+    internal-label: Page Content
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
-
 ---
-
 # ACSD-50527：空の動的ブロックを含むページを保存する際にエラーが発生する
 
 ACSD-50527 パッチは、空の動的ブロックを含むページを保存する際にエラーが発生する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.30がインストールされている場合に利用できます。 パッチ IDはACSD-50527です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。

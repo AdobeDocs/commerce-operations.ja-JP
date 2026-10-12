@@ -5,13 +5,23 @@ feature: Configuration
 role: Admin
 exl-id: 199674fc-c3b3-4fee-9061-f0546833c1cd
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
-
 ---
-
 # ACSD-51574：別の画像に置き換えると、フロントエンドで画像が更新されない
 
 ACSD-51574 パッチは、別の画像に置き換えた後にフロントエンドで画像が更新されない問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.37がインストールされている場合に利用できます。 パッチ IDはACSD-51574です。 この問題は、Adobe Commerce 2.4.7で修正されています。

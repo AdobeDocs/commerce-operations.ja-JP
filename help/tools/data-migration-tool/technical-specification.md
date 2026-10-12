@@ -1,15 +1,24 @@
 ---
 title: '[!DNL Data Migration Tool]技術仕様'
-description: ' [!DNL Data Migration Tool] の実装の詳細と、Magento 1とMagento 2間でデータを転送する際の拡張方法について説明します。'
+description: '[!DNL Data Migration Tool]の実装の詳細と、Magento 1とMagento 2間でデータを転送する際の拡張方法について説明します。'
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2114'
 ht-degree: 0%
-
 ---
-
 # [!DNL Data Migration Tool]技術仕様
 
 この節では、[!DNL Data Migration Tool]実装の詳細とその機能を拡張する方法について説明します。
@@ -107,7 +116,7 @@ ht-degree: 0%
 
 ## 設定
 
-設定`config.xsd` ファイルのスキーマは、`etc/` ディレクトリにあります。 Magento 1.xの各バージョンに対して、デフォルトの設定ファイル（`config.xml.dist`）が作成されます。 `etc/`の下の別のディレクトリにあります。
+設定`config.xsd` ファイルのスキーマは、`etc/` ディレクトリにあります。 Magento 1.xのバージョンごとに、デフォルトの設定ファイル （`config.xml.dist`）が作成されます。 `etc/`の下の別のディレクトリにあります。
 
 デフォルトの設定ファイルは、カスタム設定ファイルに置き換えることができます（[&#x200B; コマンド構文](migrate-data/overview.md#command-syntax)を参照）。
 
@@ -162,7 +171,7 @@ ht-degree: 0%
 
 * options - パラメーターのリスト。 必須（map_file、settings_map_file、bulk_size）およびオプション（custom_option、resource_adapter_class_name、prefix_source、prefix_dest、log_file）の両方のパラメーターを含みます
 
-Magentoがデータベーステーブルのプレフィックスと共にインストールされている場合は、「プレフィックス」オプションを変更します。 これは、Magento 1およびMagento 2のデータベースに設定できます。 それに応じて、「source_prefix」および「dest_prefix」設定オプションを使用します。
+Magentoがデータベーステーブルに接頭辞を付けてインストールされた場合のプレフィックスオプションを変更します。 Magento 1およびMagento 2のデータベースに設定できます。 それに応じて、「source_prefix」および「dest_prefix」設定オプションを使用します。
 
 設定データには、`\Migration\Config` クラスを使用してアクセスできます。
 
@@ -180,11 +189,11 @@ Magentoがデータベーステーブルのプレフィックスと共にイン�
 
 | 文書 | フィールド | 必要ですか？ |
 |---|---|---|
-| `name` | Magento 1 サーバのデータベース名。 | はい |
-| `host` | Magento 1 サーバーのIP アドレスをホストします。 | はい |
-| `port` | Magento 1 サーバのポート番号。 | いいえ |
+| `name` | Magento 1 サーバーのデータベース名。 | はい |
+| `host` | Magento 1 サーバーのホスト IP アドレス。 | はい |
+| `port` | Magento 1 サーバーのポート番号。 | いいえ |
 | `user` | Magento 1 データベースサーバーのユーザー名。 | はい |
-| `password` | Magento 1 データベース サーバーのパスワード。 | はい |
+| `password` | Magento 1 データベースサーバーのパスワード。 | はい |
 | `ssl_ca` | SSL証明機関ファイルへのパス。 | いいえ |
 | `ssl_cert` | SSL証明書ファイルへのパス。 | いいえ |
 | `ssl_key` | SSL キーファイルへのパス。 | いいえ |
@@ -194,10 +203,10 @@ Magentoがデータベーステーブルのプレフィックスと共にイン�
 | 文書 | フィールド | 必要ですか？ |
 |---|---|---|
 | `name` | Magento 2 サーバーのデータベース名。 | はい |
-| `host` | Magento 2 サーバーのIP アドレスをホストします。 | はい |
-| `port` | Magento 2 サーバのポート番号。 | いいえ |
-| `user` | Magento 2 データベース サーバーのユーザー名。 | はい |
-| `password` | Magento 2 データベース サーバーのパスワード。 | はい |
+| `host` | Magento 2 サーバーのホスト IP アドレス。 | はい |
+| `port` | Magento 2 サーバーのポート番号。 | いいえ |
+| `user` | Magento 2 データベースサーバーのユーザー名。 | はい |
+| `password` | Magento 2 データベースサーバーのパスワード。 | はい |
 | `ssl_ca` | SSL証明機関ファイルへのパス。 | いいえ |
 | `ssl_cert` | SSL証明書ファイルへのパス。 | いいえ |
 | `ssl_key` | SSL キーファイルへのパス。 | いいえ |
@@ -279,11 +288,11 @@ $this->progress->finish();
 
 ### 整合性チェック
 
-各ステップでは、データソースの構造（デフォルトではMagento 1）とデータ先の構造（Magento 2）が互換性があるかどうかを確認する必要があります。 そうでない場合 – 互換性のないエンティティを含むエラーが表示されます。 フィールドのデータ型が異なる場合（同じフィールドのデータ型がMagento 1の10進数データ型で、Magento 2の整数である場合）、警告メッセージが表示されます（マップファイルでカバーされている場合を除く）。
+各ステップでは、データソースの構造（デフォルトではMagento 1）とデータ宛先の構造（Magento 2）が互換性があるかどうかを確認する必要があります。 そうでない場合 – 互換性のないエンティティを含むエラーが表示されます。 フィールドのデータ型が異なる場合（同じフィールドのデータ型がMagento 1の10進数データ型でMagento 2の整数である場合）、警告メッセージが表示されます（マップファイルで説明されている場合を除く）。
 
 ### データ転送
 
-整合性チェックに合格した場合、データの転送は実行中です。 エラーが表示された場合は、ロールバックが実行され、Magento 2の以前の状態に戻ります。 ステップクラスが`RollbackInterface` インターフェイスを実装する場合、エラーが発生するとロールバックメソッドが実行されます。
+整合性チェックに合格した場合、データの転送は実行中です。 エラーが表示された場合、ロールバックが実行され、Magento 2の以前の状態に戻ります。 ステップクラスが`RollbackInterface` インターフェイスを実装する場合、エラーが発生するとロールバックメソッドが実行されます。
 
 ### ボリュームチェック
 
@@ -339,11 +348,11 @@ $this->progress->finish();
 
 ### データ移行モード
 
-このモードでは、ほとんどのデータが移行されます。 データ移行前に、整合性チェックの各ステージが実行されます。 整合性チェックに合格すると、[!DNL Data Migration Tool]はdeltalog テーブル （プレフィックス `m2_cl_*`を含む）と対応するトリガーをMagento 1 データベースにインストールし、手順のデータ マイグレーション ステージを実行します。 エラーなしで移行が完了すると、ボリュームチェックでデータの一貫性がチェックされます。 ライブストアを移行すると、警告メッセージが表示される場合があります。 デルタ移行では、この増分データを処理します。 最も価値のある移行手順は、マップ、URL書き換え、EAVです。
+このモードでは、ほとんどのデータが移行されます。 データ移行前に、整合性チェックの各ステージが実行されます。 整合性チェックに合格すると、[!DNL Data Migration Tool]はDeltalog テーブル （プレフィックス `m2_cl_*`を含む）と対応するトリガーをMagento 1 データベースにインストールし、手順のData Migration ステージを実行します。 エラーなしで移行が完了すると、ボリュームチェックでデータの一貫性がチェックされます。 ライブストアを移行すると、警告メッセージが表示される場合があります。 デルタ移行では、この増分データを処理します。 最も価値のある移行手順は、マップ、URL書き換え、EAVです。
 
 #### マップステップ
 
-マップステップは、Magento 1からMagento 2へのほとんどのデータ転送を担当します。 この手順では、（`etc/` ディレクトリにある） map.xml ファイルから手順を読み取ります。 このファイルは、ソース（Magento 1）と宛先（Magento 2）のデータ構造の違いを説明します。 Magento 1に、Magento 2に存在しない拡張機能に属するテーブルまたはフィールドが含まれている場合、これらのエンティティをここに配置してマップステップで無視できます。 それ以外の場合は、エラーメッセージが表示されます。
+Map ステップは、Magento 1からMagento 2へのデータのほとんどを転送する責任があります。 この手順では、（`etc/` ディレクトリにある） map.xml ファイルから手順を読み取ります。 このファイルでは、ソース（Magento 1）と宛先（Magento 2）のデータ構造の違いについて説明します。 Magento 1にMagento 2に存在しない拡張機能に属するテーブルまたはフィールドが含まれている場合、これらのエンティティをここに配置してマップステップで無視できます。 それ以外の場合は、エラーメッセージが表示されます。
 
 マップファイルには次の形式があります。
 
@@ -435,11 +444,11 @@ $this->progress->finish();
 
 #### URL書き換えステップ
 
-Magento 1で開発されたMagento 2と互換性のない様々なアルゴリズムが数多くあるため、この手順は複雑です。 Magento 1のバージョンごとに、異なるアルゴリズムを使用できます。 したがって、Step/UrlRewrite フォルダーの下には、Magentoの特定のバージョンのために開発されたクラスがあり、Migration\Step\UrlRewrite\Version191to2000はその1つです。 Magento 1.9.1からMagento 2にURL書き換えデータを転送できます。
+Magento 1では、Magento 2と互換性のない様々なアルゴリズムが開発されているため、このステップは複雑です。 Magento 1のバージョンによって、異なるアルゴリズムが使用される場合があります。 したがって、Step/UrlRewrite フォルダーの下には、Magentoの特定のバージョンのために開発されたクラスがあり、Migration\Step\UrlRewrite\Version191to2000はその1つです。 URLを転送できますMagento 1.9.1からMagento 2にデータを書き換えます。
 
 #### EAV ステップ
 
-このステップでは、すべての属性（product、customer、RMA）をMagento 1からMagento 2に転送します。 データ処理の特定のケースに対して、map.xml ファイル内のルールと類似したルールを含むmap-eav.xml ファイルを使用します。
+このステップでは、あらゆる属性（製品、顧客、RMA）をMagento 1からMagento 2に転送します。 データ処理の特定のケースに対して、map.xml ファイル内のルールと類似したルールを含むmap-eav.xml ファイルを使用します。
 
 手順で処理されるテーブルの一部：
 
@@ -453,11 +462,11 @@ Magento 1で開発されたMagento 2と互換性のない様々なアルゴリ�
 
 ### Delta移行モード
 
-メインマイグレーションの後、Magento 1 データベース（ストアフロントのお客様など）に追加のデータが追加された可能性があります。 このデータをトラッキングするには、移行プロセスの開始時に、テーブルのデータベーストリガーを設定します。 詳しくは、[&#x200B; サードパーティの拡張機能によって作成されたデータの移行](migrate-data/delta.md#migrate-data-created-by-third-party-extensions)を参照してください。
+メインの移行後、Magento 1 データベースに追加のデータを追加できました（例えば、ストアフロントの顧客）。 このデータをトラッキングするには、移行プロセスの開始時に、テーブルのデータベーストリガーを設定します。 詳しくは、[&#x200B; サードパーティの拡張機能によって作成されたデータの移行](migrate-data/delta.md#migrate-data-created-by-third-party-extensions)を参照してください。
 
 ## データソース
 
-Magento 1およびMagento 2のデータソースにアクセスし、そのデータを使用して操作（選択、更新、挿入、削除）するには、リソースフォルダーに多くのクラスがあります。 Migration\ResourceModel\SourceとMigration\ResourceModel\Destinationはメインのクラスです。 あらゆる移行手順で、データを操作するために利用できます。 このデータは、Migration\ResourceModel\Document、Migration\ResourceModel\Record、Migration\ResourceModel\Structureなどのクラスに含まれています。
+Magento 1およびMagento 2のデータソースにアクセスし、そのデータを操作するには（選択、更新、挿入、削除）、リソースフォルダーに多くのクラスがあります。 Migration\ResourceModel\SourceとMigration\ResourceModel\Destinationはメインのクラスです。 あらゆる移行手順で、データを操作するために利用できます。 このデータは、Migration\ResourceModel\Document、Migration\ResourceModel\Record、Migration\ResourceModel\Structureなどのクラスに含まれています。
 
 以下に、これらのクラスのクラス図を示します。
 
@@ -465,7 +474,7 @@ Magento 1およびMagento 2のデータソースにアクセスし、そのデ�
 
 ## ログ
 
-移行プロセスの出力を実装し、Magentoで使用されるすべての可能なレベル PSR ロガーを制御するために、適用されます。 ログ機能を提供するために`\Migration\Logger\Logger` クラスが実装されました。 ロガーを使用するには、コンストラクター依存関係インジェクションを使用してロガーをインジェクトする必要があります。
+移行プロセスの出力を実装し、Magentoで使用されているすべての可能なレベル PSR ロガーを制御するために、適用されます。 ログ機能を提供するために`\Migration\Logger\Logger` クラスが実装されました。 ロガーを使用するには、コンストラクター依存関係インジェクションを使用してロガーをインジェクトする必要があります。
 
 ```php
 class SomeClass

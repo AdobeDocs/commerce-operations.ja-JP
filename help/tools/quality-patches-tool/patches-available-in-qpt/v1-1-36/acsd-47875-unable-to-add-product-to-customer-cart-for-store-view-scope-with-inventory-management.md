@@ -5,13 +5,29 @@ feature: Inventory, Shopping Cart, Products
 role: Admin, Developer
 exl-id: 10862e09-d561-4ed5-ab6f-cf002fae6850
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8dc0e58b-adf0-51bb-8db5-bb36e3e656fb
+    internal-label: Inventory
+  - id: df8eaa0e-dd74-553a-8ad5-28129f8e8d3d
+    internal-label: Shopping Cart
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
-
 ---
-
 # ACSD-47875：在庫管理機能で、ストアビューの範囲をカートに商品を追加できない
 
 ACSD-47875 パッチは、在庫管理機能を使用して特定のストアビュースコープの管理者から顧客カートに商品を追加できない問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.36がインストールされている場合に利用できます。 パッチ IDはACSD-47875です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。

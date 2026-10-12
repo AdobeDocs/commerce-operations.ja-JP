@@ -1,17 +1,32 @@
 ---
 title: 'ACSD-62635: [!DNL GraphQL]でマルチストア関連商品が正しく表示されない'
-description: マルチストア関連商品が [!DNL GraphQL] 商品クエリに正しく表示されないAdobe Commerceの問題を修正するには、ACSD-62635 パッチを適用します。
+description: マルチストア関連商品が[!DNL GraphQL]商品クエリに正しく表示されないAdobe Commerceの問題を修正するには、ACSD-62635 パッチを適用します。
 feature: B2B
 role: Admin, Developer
 exl-id: 540cd37b-4dc5-42d1-a968-2989262effdd
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '417'
 ht-degree: 0%
-
 ---
-
 # ACSD-62635: [!DNL GraphQL]でマルチストア関連商品が正しく表示されない
 
 ACSD-62635 パッチは、[!DNL GraphQL]製品クエリでマルチストア関連製品が正しく表示されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja) 1.1.57がインストールされている場合に利用できます。 パッチ IDはACSD-62635です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。

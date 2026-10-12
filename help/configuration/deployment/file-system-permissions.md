@@ -3,13 +3,27 @@ title: ファイルシステムアクセス権限
 description: 開発用および実稼動用システム用のCommerce アプリケーションファイルシステムのオーナーを設定する方法を参照してください。
 feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 0%
-
 ---
-
 # ファイルシステムアクセス権限
 
 この節では、開発用および実稼動用のCommerce ファイルシステムのオーナーを設定する方法について説明します。 続行する前に、[&#x200B; ファイルシステムの所有権と権限の概要](../../installation/prerequisites/file-system/overview.md)で説明されている概念を確認してください。
@@ -24,9 +38,9 @@ ht-degree: 0%
 
   代わりに、次のユーザーが別々に存在します。
 
-   - 管理者とストアフロントを実行するweb サーバーユーザー。
+  - 管理者とストアフロントを実行するweb サーバーユーザー。
 
-   - _コマンドラインユーザー_&#x200B;は、サーバーへのログインに使用できるローカルユーザーアカウントです。 このユーザーは、Commerce cron ジョブとコマンドラインユーティリティを実行します。
+  - _コマンドラインユーザー_&#x200B;は、サーバーへのログインに使用できるローカルユーザーアカウントです。 このユーザーは、Commerce cron ジョブとコマンドラインユーティリティを実行します。
 
 ## 共有ホスティングの実稼動ファイルシステムの所有権（1 ユーザー）
 

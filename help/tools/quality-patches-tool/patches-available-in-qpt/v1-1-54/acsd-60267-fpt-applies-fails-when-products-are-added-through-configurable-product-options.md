@@ -5,13 +5,25 @@ feature: Taxes
 role: Admin, Developer
 exl-id: 919b3b96-1995-4faf-aaf1-b5cbb20e46bf
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 42e094d8-211b-5acf-b52f-d8979151ab30
+    internal-label: Taxes
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
-
 ---
-
 # ACSD-60267：設定可能な製品オプションを通じて製品が追加されると、FPTが正しく適用されない
 
 ACSD-60267 パッチは、単純な製品をカートに直接追加する際に固定製品税（FPT）が正しく適用されますが、設定可能な製品オプションを使用して同じ製品を選択する際に失敗する問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja) 1.1.54がインストールされている場合に利用できます。 パッチ IDはACSD-60267です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。

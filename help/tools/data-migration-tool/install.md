@@ -1,28 +1,42 @@
 ---
-title: ' [!DNL Data Migration Tool]をインストール'
-description: Magento 1とMagento 2間でデータを転送する [!DNL Data Migration Tool] をインストールする方法について説明します。
+title: '[!DNL Data Migration Tool]をインストール'
+description: Magento 1とMagento 2の間でデータを転送するために[!DNL Data Migration Tool]をインストールする方法について説明します。
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '389'
 ht-degree: 0%
-
 ---
-
 # [!DNL Data Migration Tool]をインストール
 
 >[!INFO]
 >
->Magentoと[!DNL Data Migration Tool]のバージョンは一致する必要があります。
+>Magentoと[!DNL Data Migration Tool]のバージョンが一致する必要があります。
 
 
 Magento 2と[!DNL Data Migration Tool]の両方で&#x200B;*同じリリースバージョン*&#x200B;を使用していることを確認してください。 例えば、Magento バージョン 2.2.0の場合、[!DNL Data Migration Tool] バージョン 2.2.0も使用する必要があります。
 
 ## バージョンを確認
 
-お使いのMagentoのバージョンを確認するには、次のいずれかの方法を使用します。
+お使いのMagentoのバージョンを確認するには、次のいずれかの方法をご利用ください。
 
 - [Composer](#composer-metapackage)
 - [GitHub リポジトリ](#github-repository)
@@ -66,7 +80,7 @@ GitHub リポジトリをクローンする場合は、[&#x200B; （Contributor�
 インストールする前に、次のことを確認してください。
 
 - [前提条件](prerequisites.md) セクションに記載されているすべてのタスクを完了しました
-- [Magento 2 ソフトウェアのバージョン &#x200B;](install.md#check-your-version)を確認しました
+- Magento 2 ソフトウェアのバージョン [&#128279;](install.md#check-your-version)を確認しました
 
 ### `repo.magento.com`からインストール
 

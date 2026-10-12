@@ -1,17 +1,27 @@
 ---
-title: 'ACSD-49502: [!DNL staging] 更新後にダウンロード可能なリンクが正しく更新されない'
-description: ACSD-49502 パッチを適用して、ダウンロード可能な製品に [!DNL staging] 更新が適用された後にダウンロード可能なリンクが正しく更新されないAdobe Commerceの問題を修正します。
+title: 'ACSD-49502: [!DNL staging]の更新後にダウンロード可能なリンクが正しく更新されない'
+description: ダウンロード可能な製品に[!DNL staging]の更新が適用された後、ダウンロード可能なリンクが正しく更新されないAdobe Commerceの問題を修正するには、ACSD-49502 パッチを適用します。
 feature: Staging
 role: Admin
 exl-id: 9bdc9a7e-4291-4438-9ba0-65fcab1f95bb
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 0054e3a7-7067-583b-bfd2-ab39dada9ab5
+    internal-label: Staging
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '406'
 ht-degree: 0%
-
 ---
-
 # ACSD-49502: [!DNL staging]の更新後にダウンロード可能なリンクが正しく更新されない
 
 ACSD-49502 パッチは、[!DNL staging]更新がダウンロード可能な製品に適用された後、ダウンロード可能なリンクが正しく更新されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.29がインストールされている場合に利用できます。 パッチ IDはACSD-49502です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。

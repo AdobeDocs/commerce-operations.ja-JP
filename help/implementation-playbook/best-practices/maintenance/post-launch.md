@@ -4,13 +4,27 @@ description: Adobe Commerceストアの最適なパフォーマンスとセキ�
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: f02a13ca-c851-4508-a2bd-e5bc196a330c
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '2297'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerceのローンチ後のサポートとメンテナンス
 
 Adobe Commerceをスムーズに運用し、優れたパフォーマンスを発揮し、セキュリティを維持して、ビジネス目標を達成し続けるためには、ローンチ後のサポートとメンテナンスが不可欠です。 この段階では、継続的なモニタリング、最適化、バグ修正、アップデート、ユーザーサポートが必要です。 次のセクションでは、**ローンチ後のサポート**&#x200B;を主要なカテゴリに分割します。
@@ -122,7 +136,7 @@ Adobe Commerce Cloudでのエラーログを監視するために、Adobeには�
 
 >[!TIP]
 >
->パッチの適用とセキュリティの維持について詳しくは、[&#x200B; セキュリティパッチリリースノート &#x200B;](../../../release/release-notes/security/overview.md)および[&#x200B; セキュリティパッチの適用方法](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches)を参照してください。 また、[&#x200B; サイト全体の分析ツール &#x200B;](/help/tools/site-wide-analysis-tool/access.md)のレポートを確認する必要があります。
+>パッチの適用とセキュリティの維持について詳しくは、[&#x200B; セキュリティパッチリリースノート &#x200B;](../../../release/release-notes/security/overview.md)および[&#x200B; セキュリティパッチの適用方法](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches)を参照してください。 また、[&#x200B; サイト全体の分析ツール &#x200B;](/help/tools/site-wide-analysis-tool/access.md)のレポートを確認する必要があります。
 
 #### PCI認定
 

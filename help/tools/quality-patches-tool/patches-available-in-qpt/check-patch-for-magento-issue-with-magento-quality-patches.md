@@ -5,13 +5,26 @@ feature: Tools and External Services
 role: Admin
 exl-id: 4d651c3c-95ad-4b53-bf77-92758acb795d
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
-
 ---
-
 # Quality Patches ToolでAdobe Commerceの問題が発生した場合のパッチの確認
 
 この記事では、品質パッチツール（QPT）の概要と、その使用方法を説明するリソースへのリンクについて説明します。
@@ -39,11 +52,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->QPTは品質パッチ専用です。 セキュリティパッチは、[Magento セキュリティセンター](/help/release/release-notes/overview.md)で入手できます。
+>QPTは品質パッチ専用です。 セキュリティパッチは、[Magento Security Center](/help/release/release-notes/overview.md)で入手できます。
 
 ## 品質パッチツールで使用可能なパッチ
 
-使用可能なパッチのリストについては、開発者ドキュメントの[品質パッチツール &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)を参照してください。
+使用可能なパッチのリストについては、開発者ドキュメントの[品質パッチツール &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)を参照してください。
 
 ## 品質パッチツールのインストールと使用方法
 
@@ -55,7 +68,7 @@ Adobe Commerce オンプレミスとAdobe Commerce オンクラウドインフ�
 
 ### クラウドインフラストラクチャ上のAdobe Commerce用QPTのインストールと使用方法
 
-Adobe Commerce向けCloud > パッチを適用[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)する方法の詳細については、開発者向けドキュメントの「Cloud for Cloud Cloud Cloud Cloudでパッチを適用する」を参照してください。クラウド インフラストラクチャ上のAdobe Commerceにパッチを適用および元に戻すためにQPTをインストールおよび使用する方法について詳しくは、開発者向けドキュメントを参照してください。
+Adobe Commerce向けCloud > パッチを適用[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)する方法の詳細については、開発者向けドキュメントの「Cloud for Cloud Cloud Cloud Cloudでパッチを適用する」を参照してください。クラウド インフラストラクチャ上のAdobe Commerceにパッチを適用および元に戻すためにQPTをインストールおよび使用する方法について詳しくは、開発者向けドキュメントを参照してください。
 
 ## 関連トピックス
 

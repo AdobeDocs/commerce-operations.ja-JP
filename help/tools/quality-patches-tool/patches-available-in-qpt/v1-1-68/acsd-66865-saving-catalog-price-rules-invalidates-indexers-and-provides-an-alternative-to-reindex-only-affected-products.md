@@ -5,13 +5,30 @@ feature: Price Rules, Price Indexer
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 68baf176-ee6e-4ba8-8a34-8adb8d1e16fe
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: a507b1ed-4937-53da-97ae-57d36bd5b9e0
+    internal-label: Price Rules
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: b0d35b91-b9b0-5983-b37c-f35bd2650b53
+    internal-label: Price Indexer
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
-
 ---
-
 # ACSD-66865: **[!UICONTROL Catalog Price Rule]**&#x200B;を保存すると、インデクサーが無効になり、影響を受ける製品のみを再インデックスする代わりに使用できます
 
 ACSD-66865 パッチは、**[!UICONTROL Catalog Price Rule]**&#x200B;を保存するとインデクサーが無効になり、影響を受ける製品のみを再インデックス化する代わりに使用できる問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68がインストールされている場合に利用できます。 パッチ IDはACSD-66865です。 この問題は、Adobe Commerce 2.4.8で修正されています。

@@ -4,13 +4,20 @@ description: ACSD-56760 パッチを適用して、Adobe Commerceの問題を修
 role: Admin
 exl-id: 2d75164e-c463-4e1a-aa6f-f420dbe0aaeb
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%
-
 ---
-
 # ACSD-56760：管理者ユーザーが特定のweb サイトに制限されており、新製品を並べ替えたり追加したりできない
 
 ACSD-56760 パッチでは、特定のweb サイトに制限されている管理者ユーザーが、web ストアに独自のルートカテゴリがある場合に、カテゴリ内で新製品を並べ替えたり追加したりできない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.47がインストールされている場合に利用できます。 パッチ IDはACSD-56760です。 この問題は、Adobe Commerce 2.4.8-beta1で修正される予定です。

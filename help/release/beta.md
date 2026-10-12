@@ -4,19 +4,28 @@ description: Adobe Commerce ベータ版のリリースと参加方法につい�
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
-source-git-commit: efdc4734b5c0db8efc0c83bef41e7ccaafd9b6af
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce ベータ版リリース
 
 [Adobe Commerce製品ソリューション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions)のBeta プログラムは、販売者がプレリリース機能とコードにアクセスし、フィードバックを提供し、Adobe Commerceの将来を導くための手段です。 ベータプログラムには2種類あります。
 
 - パブリック Beta:Adobe Commerceのすべてのユーザーおよびパートナーは、パブリックベータプログラムを利用できます
-- Private Beta：プライベートベータプログラムに参加するには、資格基準に基づく承認が必要です
+- Private beta：プライベートベータプログラムに参加するには、資格基準に基づく承認が必要です
 
 >[!IMPORTANT]
 >
@@ -48,7 +57,7 @@ Adobeで開発している機能に早期にアクセスできれば、顧客や
 
 このベータ機能に関するフィードバックを共有するには、[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)に電子メールを送信してください。
 
-### 検索マッチングとランキング（Private Beta）
+### 検索マッチングとランキング（Private beta）
 
 Adobeでは、[!DNL Adobe Commerce]および[!DNL Adobe Commerce Optimizer]の[!DNL Live Search]の検索結果を商品の検索でランク付けする方法を改善しています。 更新では、**完全一致とほぼフレーズ一致**&#x200B;が優先され、次に&#x200B;**すべてのクエリ用語が同じ検索可能な属性**&#x200B;に表示され、最後に&#x200B;**クロスフィールド**&#x200B;が一致します（オートコンプリート形式の提案をサポートする動作を含む）。 この階層化されたモデルにより、インテント度の高いクエリは、最も関連性の高い商品を最初に表示しながら、有用な代替品を返すことができます。
 

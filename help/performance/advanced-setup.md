@@ -2,13 +2,22 @@
 title: アドバンスド設定
 description: Adobe Commerceの高度な設定の方法を説明します。 ステップバイステップ形式の手順と必要な設定をご確認ください。
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
-
 ---
-
 # 詳細設定
 
 [!DNL Commerce]は、あらゆる規模のマーチャント向けのソリューションを含む、柔軟性と拡張性の高い製品です。 このセクションでは、大量のデータ、極端な負荷、その他のエンタープライズ ケースで動作するように[!DNL Commerce]を設定する際のベストプラクティスと推奨事項について説明します。
@@ -99,7 +108,7 @@ bin/magento setup:db-schema:add-slave
 
 ## メディアコンテンツの提供
 
-Magentoでは、メディアコンテンツの提供と配信に特化した統合機能は提供されていません。 Magentoでは、すべての一般的なアプローチを同時に使用できます。
+Magentoは、メディアコンテンツの提供と配信に関して、特定の統合機能を提供していません。 Adobe Magento Engageでは、あらゆる一般的なアプローチを同時に利用できます。
 
 メディアコンテンツを配信する最も簡単な方法は、[!DNL Varnish] サーバーに配信してキャッシュすることです。 このアプローチでは、メディアコンテンツを保存するための共有ファイルシステム、または[!DNL Varnish]を指す専用サーバーのいずれかを前提としています。
 

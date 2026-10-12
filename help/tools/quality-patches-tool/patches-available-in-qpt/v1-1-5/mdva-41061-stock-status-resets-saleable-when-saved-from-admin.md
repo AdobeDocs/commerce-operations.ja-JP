@@ -5,13 +5,30 @@ feature: Admin Workspace, Orders, Products
 role: Admin
 exl-id: ddbc30ef-bc88-4878-8bd8-6880823819a2
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%
-
 ---
-
 # MDVA-41061：管理者から製品を保存すると、Stock ステータスが販売可能にリセットされる
 
 MDVA-41061 パッチは、製品が管理者から保存されたときに在庫状況が販売可能にリセットされる問題を修正します。 このパッチは、[品質パッチツール （QPT） &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.5がインストールされている場合に使用できます。 パッチ IDはMDVA-41061です。 最新のパッチバージョンは、MDVA-41061-V3 パッチ IDを含むQPT 1.1.15で利用できます。 この問題は、Adobe Commerce 2.4.4で修正されています。

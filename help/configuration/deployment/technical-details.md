@@ -2,13 +2,22 @@
 title: 技術情報
 description: パイプラインのデプロイメントの技術的な詳細、設定の種類、推奨ワークフローについて説明します。
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1282'
 ht-degree: 0%
-
 ---
-
 # 技術情報
 
 このトピックでは、Commerce 2.2以降でのパイプラインのデプロイメントに関する技術的な実装の詳細について説明します。 改善点は、次の領域に分けることができます。
@@ -69,16 +78,16 @@ ht-degree: 0%
 - 管理者でキャッシュタイプを有効または無効にすることはできません
 - 開発者の設定は利用できません（**ストア** >設定> **設定** >詳細> **開発者**）。次を含む：
 
-   - CSS、JavaScript、HTMLの最小化
-   - CSSとJavaScriptの統合
-   - サーバーサイドまたはクライアントサイドのLESS コンパイル
-   - インライン翻訳
-   - 前述したように、`config.php`または`env.php`の構成設定はロックされており、管理者で編集することはできません。
-   - 管理者ロケールは、デプロイされたテーマで使用される言語にのみ変更できます
+  - CSS、JavaScript、HTMLの最小化
+  - CSSとJavaScriptの統合
+  - サーバーサイドまたはクライアントサイドのLESS コンパイル
+  - インライン翻訳
+  - 前述したように、`config.php`または`env.php`の構成設定はロックされており、管理者で編集することはできません。
+  - 管理者ロケールは、デプロイされたテーマで使用される言語にのみ変更できます
 
-     次の図は、管理者の&#x200B;**アカウント設定** > **インターフェイス ロケール** リストの例を示しています。デプロイされたロケールは2つしかありません。
+    次の図は、管理者の&#x200B;**アカウント設定** > **インターフェイス ロケール** リストの例を示しています。デプロイされたロケールは2つしかありません。
 
-     ![管理者ロケールは、デプロイされたロケールにのみ変更できます](../../assets/configuration/split-deploy-admin-locale.png)
+    ![管理者ロケールは、デプロイされたロケールにのみ変更できます](../../assets/configuration/split-deploy-admin-locale.png)
 
 - 管理者を使用して、任意のスコープのロケール設定を変更することはできません。
 

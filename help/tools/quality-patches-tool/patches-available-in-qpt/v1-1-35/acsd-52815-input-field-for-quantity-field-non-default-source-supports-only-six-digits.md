@@ -5,13 +5,25 @@ feature: Inventory, Products
 role: Admin
 exl-id: d863af1f-8a7f-4a43-893e-54525ab68cd7
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8dc0e58b-adf0-51bb-8db5-bb36e3e656fb
+    internal-label: Inventory
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
-
 ---
-
 # ACSD-52815：デフォルト以外のソースの数量フィールドの入力フィールドでは、最大6桁しかサポートされていません
 
 ACSD-52815 パッチでは、デフォルト以外のソースの数量フィールドの入力フィールドが最大6桁のみをサポートし、デフォルトの在庫の8桁をサポートする問題を修正します。 このパッチは、[!DNL Quality Patches Tool (QPT)] 1.1.35がインストールされている場合に利用できます。 パッチ IDはACSD-52815です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。

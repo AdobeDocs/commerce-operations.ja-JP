@@ -1,35 +1,44 @@
 ---
-title: EU 一般データ保護規則（GDPR）
-description: 欧州連合（EU）および欧州経済地域のすべての個人のデータ保護とプライバシーを規制する法律である一般データ保護規則（GDPR）について説明します。
+title: 一般データ保護規則（GDPR）
+description: 一般データ保護規則（GDPR）とは、欧州連合（EU）と欧州経済地域のすべての個人のデータ保護とプライバシーを規制する法律です。
 exl-id: 30e60601-f4f7-419e-b2dd-8c82c8a2ed33
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '288'
 ht-degree: 0%
-
 ---
-
-# EU 一般データ保護規則（GDPR）
+# 一般データ保護規則（GDPR）
 
 >[!NOTE]
 >
->これは、Adobe Commerceのマーチャントや開発者が、EU 一般データ保護規則（GDPR）の影響を理解するのに役立つ、一連のトピックの 1 つです。 情報は情報提供のみを目的としており、法的な助言と見なされるべきではありません。 自社のビジネスが法的義務に準拠する必要があるかどうか、またどのように準拠すべきかを判断するには、法務担当者に相談してください。
+>これは、Adobe Commerceを利用するマーチャントや開発者が、GDPR （一般データ保護規則）の影響を理解するのに役立つ一連のトピックのひとつです。 この情報は情報提供のみを目的としており、法的アドバイスとして解釈されるべきではありません。 自社が法的義務を果たすべきかどうか、どのように遵守すべきかを判断するには、法務担当者に相談してください。
 
-欧州連合（EU）は、市民が自分の個人データをより詳細に管理できるように、[&#x200B; 一般データ保護規則 &#x200B;](https://ec.europa.eu/info/law/law-topic/data-protection_en) （GDPR）を制定しました。 GDPR は、EU 内で活動するすべての組織に適用されます。 また、EU 域外の顧客や企業に商品やサービスを提供する組織にも適用されます。
+欧州連合（EU）は、市民が個人データをより詳細に制御できるようにするために、[一般データ保護規則](https://ec.europa.eu/info/law/law-topic/data-protection_en) （GDPR）を制定しました。 GDPRは、EU内で活動するあらゆる組織に適用されます。 また、EU域外の企業がEU内の顧客または企業に商品またはサービスを提供する場合にも適用されます。
 
-システムインテグレーターは、個人情報リファレンスのデータフロー図とデータベース情報を使用してスクリプトを作成し、次のようなユースケースを解決できます。
+システムインテグレーターは、『個人情報リファレンス』のデータフロー図とデータベース情報を使用して、次のようなユースケースを解決するスクリプトを作成できます。
 
-- 買い物客は、販売者が保存したデータのコピーを要求します
-- 買い物客が情報の削除をリクエストした
+- 買い物客は、マーチャントが保存しているデータのコピーを要求します
+- 買い物客が情報の削除を要求
 
 ## 個人情報の参照
 
-技術情報については、サポートしているAdobe Commerceの各バージョンに適用される Personal Information Reference のデータフロー図とデータベースエンティティのマッピングを参照してください。
+技術情報については、サポートする各バージョンのAdobe Commerceに適用される個人情報参照のデータフロー図とデータベースエンティティのマッピングを参照してください。
 
-- [顧客の個人情報の参照（バージョン 2.x）](data-m2.md)
-- [お客様の個人情報の参照（バージョン 1.x）](data-m1.md)
+- [お客様の個人情報の参照（バージョン 2.x）](data-m2.md)
+- [お客様の個人情報の参照（バージョン） 1.x）](data-m1.md)
 
-Adobe Commerceを使用してマーチャントが GDPR に準拠する方法について詳しくは、次を参照してください。
+Adobe Commerceを利用して、マーチャントがGDPRを遵守する方法について詳しくは、次を参照してください。
 
-- [GDPR コンプライアンス &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html?lang=ja)
-- [Adobe Commerceで GDPR を受け入れる準備ができました &#x200B;](https://business.adobe.com/jp/privacy/general-data-protection-regulation.html)
+- [GDPRへの準拠](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html?lang=ja)
+- [Adobe CommerceにおけるGDPRへの対応](https://business.adobe.com/privacy/general-data-protection-regulation.html)

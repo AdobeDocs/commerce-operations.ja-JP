@@ -1,17 +1,34 @@
 ---
-title: 'ACSD-60816: [!DNL New Relic] APM エージェントによって挿入されたブラウザー監視スクリプトがCSPに準拠していません'
-description: ACSD-60816 パッチを適用して、APM エージェントによって挿入された [!DNL New Relic]  ブラウザーモニタリングスクリプトがContent Security Policy （CSP）に準拠しておらず、実行が妨げられるAdobe Commerceの問題を修正します。
+title: 'ACSD-60816: APM エージェントによって挿入された[!DNL New Relic] ブラウザー監視スクリプトがCSPに準拠していません'
+description: APM エージェントによって挿入された[!DNL New Relic] ブラウザー監視スクリプトがContent Security Policy （CSP）に準拠しておらず、実行が妨げられているAdobe Commerceの問題を修正するには、ACSD-60816 パッチを適用します。
 feature: Tools and External Services, Checkout
 role: Admin, Developer
 exl-id: d03c25e0-ed25-4877-8470-737d3499473f
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '366'
 ht-degree: 0%
-
 ---
-
 # ACSD-60816: APM エージェントによって挿入された[!DNL New Relic] ブラウザー監視スクリプトがCSPに準拠していません
 
 ACSD-60816 パッチは、APM エージェントによって挿入された[!DNL New Relic] ブラウザー監視スクリプトがコンテンツセキュリティポリシー（CSP）に準拠していない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.51がインストールされている場合に利用できます。 パッチ IDはACSD-60816です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。

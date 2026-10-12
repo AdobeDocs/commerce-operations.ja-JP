@@ -2,13 +2,22 @@
 title: サンプルデータの概要
 description: デモとトレーニング用のAdobe Commerce サンプルデータのインストール、Luma ベースのストアフロントの動作、実稼動開発の制限について説明します。
 exl-id: 828b009d-a6ff-4db2-aa1a-838f6f55a194
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
-
 ---
-
 # サンプルデータの概要
 
 サンプルデータは、Luma テーマに基づいたストアフロントを提供します。これには、製品、カテゴリー、顧客登録などが含まれます。 Commerceのストアフロントと同様に機能し、管理者を使用して価格、在庫、プロモーションの価格設定を調整できます。
