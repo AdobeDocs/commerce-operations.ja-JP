@@ -2,7 +2,7 @@
 title: 製品の可用性
 description: 現在サポートされているAdobe Commerce機能について説明し、特定のAdobe Commerce リリースとの互換性を確認します。
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-last-update: 2026-10-07
+last-update: 2026-10-12
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: a6c0c808ce57bf00b1ee0cfac6a17008df4d4e22
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce版のサポートには、[利用可能なセキュリティパッチ &#x200B;](versions.md)のサポートも含まれています。
+>Adobe Commerce版のサポートには、[利用可能なセキュリティパッチ ](versions.md)のサポートも含まれています。
 
 ## Adobeで作成された拡張機能
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ## Commerce Services
 
-[Commerce サービス &#x200B;](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)は、Commerce インスタンスと連携して、堅牢な機能と高速な応答時間を提供する、Adobeでホストされる一連の機能です。
+[Commerce サービス ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)は、Commerce インスタンスと連携して、堅牢な機能と高速な応答時間を提供する、Adobeでホストされる一連の機能です。
 
 最高の安定性と機能性を確保するために、最新バージョンのサービスを使用することをお勧めします。 このドキュメントでは、現在リリースされているバージョンについて説明します。
 
@@ -54,4 +54,4 @@ ht-degree: 0%
 
 {{$include /help/_includes/templated/product-availability-services.md}}
 
-<!-- Last updated from includes: 2026-09-11 07:57:18 -->
+<!-- Last updated from includes: 2026-10-07 07:57:15 -->
