@@ -5,13 +5,29 @@ feature: Communications, Marketing Tools, Orders, Shipping/Delivery
 role: Admin
 exl-id: ab522c9c-2983-4c2f-b341-4487bdbee34d
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bb03f6c4-cab9-560e-9d02-5816e1808d17
+    internal-label: Communications
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 04d3134c-2afb-5bd7-ac14-e19fa935e848
+    internal-label: Shipping/Delivery
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 0%
-
 ---
-
 # MDVA-38827：お客様が注文出荷エラーを電子メールで受信する
 
 MDVA-38827 パッチは、顧客が次のエラーメッセージを含む注文出荷メールを受信する問題を修正します。*このコンテンツの生成中にエラーが発生しました*。 このパッチは、[品質パッチツール （QPT） &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.0がインストールされている場合に使用できます。 パッチ IDはMDVA-38827です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
@@ -37,7 +53,7 @@ Adobe Commerce（すべてのデプロイメント方法） 2.3.3-p1 - 2.4.2-p1
 <u>複製する手順</u>:
 
 1. **マーケティング** > **コミュニケーション** > **電子メールテンプレート**&#x200B;に移動し、**新しいテンプレートを追加**&#x200B;を選択します。
-   * **Magento Sales** > **New Shipment**&#x200B;を選択します。
+   * **Magento Sales** > **新しい出荷**&#x200B;を選択します。
    * 「**テンプレートを読み込む**」をクリックします。
    * テンプレート名（例：コア出荷テンプレート）を追加し、**保存**&#x200B;をクリックします。
 1. **Store** / 設定/**Configuration** / **Sales** / **Sales Email**&#x200B;に移動します。

@@ -5,13 +5,25 @@ feature: Price Rules
 role: Admin, Developer
 exl-id: 2fe27959-5e5f-4d25-9f56-b0f8319fd562
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: a507b1ed-4937-53da-97ae-57d36bd5b9e0
+    internal-label: Price Rules
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 0%
-
 ---
-
 # ACSD-60673：チェックアウト時に複数の支払い方法で修正された[!UICONTROL Cart Price Rule]の問題
 
 ACSD-60673 パッチでは、支払い方法の条件を使用する[!UICONTROL Cart Price Rule]からの割引が必ずしも合計に表示されない問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.52がインストールされている場合に利用できます。 パッチ IDはACSD-60673です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。

@@ -1,17 +1,29 @@
 ---
-title: 'ACSD-54890: ''aggregate_sales_report_bestsellers_data''が [!DNL MySQL]  エラーを引き起こします'
-description: ACSD-54890 パッチを適用して、'/tmpdisk'の空き容量が不足しているため、'aggregate_sales_report_bestsellers_data'が [!DNL MySQL]  エラーを引き起こすAdobe Commerceの問題を修正します。
+title: 'ACSD-54890: ''aggregate_sales_report_bestsellers_data''が[!DNL MySQL] エラーを引き起こします'
+description: ACSD-54890 パッチを適用して、'/tmpdisk'の空き容量が不足しているため、'aggregate_sales_report_bestsellers_data'が[!DNL MySQL] エラーを引き起こすAdobe Commerceの問題を修正します。
 feature: Attributes
 role: Admin, Developer
 exl-id: 21f926e0-a4f4-45ae-9397-4885a85db947
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 76cfaac4-e563-56dd-8938-708bf8b84956
+    internal-label: Attributes
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '335'
 ht-degree: 0%
-
 ---
-
 # ACSD-54890: `aggregate_sales_report_bestsellers_data`がMySQL エラーを引き起こします
 
 ACSD-54890 パッチは、`/tmpdisk`の空き容量が不足しているため、`aggregate_sales_report_bestsellers_data`が[!DNL MySQL] エラーを引き起こす問題を修正します。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.42がインストールされている場合に利用できます。 パッチ IDはACSD-54890です。 この問題は、Adobe Commerce 2.4.7で修正される予定です。
