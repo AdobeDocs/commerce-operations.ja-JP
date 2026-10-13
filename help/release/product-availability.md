@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a6c0c808ce57bf00b1ee0cfac6a17008df4d4e22
+source-git-commit: 2456f0e28fa24e23eb7692a905c708007a00bd96
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce版のサポートには、[利用可能なセキュリティパッチ &#x200B;](versions.md)のサポートも含まれています。
+>Adobe Commerce版のサポートには、[利用可能なセキュリティパッチ ](versions.md)のサポートも含まれています。
 
 ## Adobeで作成された拡張機能
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ## Commerce Services
 
-[Commerce サービス &#x200B;](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)は、Commerce インスタンスと連携して、堅牢な機能と高速な応答時間を提供する、Adobeでホストされる一連の機能です。
+[Commerce サービス ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)は、Commerce インスタンスと連携して、堅牢な機能と高速な応答時間を提供する、Adobeでホストされる一連の機能です。
 
 最高の安定性と機能性を確保するために、最新バージョンのサービスを使用することをお勧めします。 このドキュメントでは、現在リリースされているバージョンについて説明します。
 
@@ -54,4 +54,4 @@ ht-degree: 0%
 
 {{$include /help/_includes/templated/product-availability-services.md}}
 
-<!-- Last updated from includes: 2026-10-07 07:57:15 -->
+<!-- Last updated from includes: 2026-10-12 21:19:44 -->
