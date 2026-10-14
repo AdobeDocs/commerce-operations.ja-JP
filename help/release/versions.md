@@ -15,9 +15,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 37a993a1f9b187dcfa74ecde581cf705eb66570d
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '133'
 ht-degree: 0%
 ---
 # リリース済みバージョン
@@ -26,15 +26,15 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-Adobeでは、バージョン 2.4.4および2.4.5のAdobe Commerceのお客様に対して、1年間のサポート拡張機能を追加費用なしで提供しています。 [&#x200B; ライフサイクルポリシー](lifecycle-policy.md)には、これらのバージョンの拡張サポートの終了日が記載されています。
+Adobeでは、バージョン 2.4.4および2.4.5のAdobe Commerceのお客様に対して、1年間のサポート拡張機能を追加費用なしで提供しています。 [ ライフサイクルポリシー](lifecycle-policy.md)には、これらのバージョンの拡張サポートの終了日が記載されています。
 
 >[!ENDSHADEBOX]
 
 >[!NOTE]
 >
 >- Adobeでは、各リリースで利用可能な最新のセキュリティパッチにAdobe Commerceをインストールまたはアップグレードすることをお勧めします。
->- その他のセキュリティ更新プログラムについては、[Magento / Adobe Commerceのセキュリティ更新プログラム &#x200B;](https://helpx.adobe.com/jp/security/products/magento.html)を参照してください。
->- 価格については、[Adobe Commerceの価格](https://business.adobe.com/jp/products/magento/pricing.html)を参照してください。
+>- その他のセキュリティ更新プログラムについては、Trust Centerの[Adobe セキュリティ速報とアドバイザリー](https://www.adobe.com/trust/security/bulletins-and-advisories.html)を参照してください。
+>- 価格については、[Adobe Commerceの価格](https://business.adobe.com/products/magento/pricing.html)を参照してください。
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 

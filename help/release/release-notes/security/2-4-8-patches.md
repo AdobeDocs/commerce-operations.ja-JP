@@ -14,9 +14,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '781'
 ht-degree: 0%
 ---
 # Adobe Commerce 2.4.8 セキュリティパッチのリリースノート
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.8-p5 セキュリティリリースには、以前のリリース 2.4.8で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-49](https://helpx.adobe.com/jp/security/products/magento/apsb26-49.html)を参照してください。
+{{security-bulletin-apsb26-49}}
 
 {{b2b-patches}}
 
@@ -63,7 +63,7 @@ Laminas MVCの退職に対処するため、Adobe CommerceはMagentoが所有す
 
 Adobe Commerce 2.4.8-p4 セキュリティリリースには、以前のリリース 2.4.8で特定された脆弱性に対するセキュリティバグ修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-05](https://helpx.adobe.com/jp/security/products/magento/apsb26-05.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -83,7 +83,7 @@ Adobe Commerce 2.4.8が更新され、Composer 2.9.xがサポートされるよ�
 
 Adobe Commerce 2.4.8-p3 セキュリティリリースには、以前のリリース 2.4.8で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-94](https://helpx.adobe.com/jp/security/products/magento/apsb25-94.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -109,7 +109,7 @@ Adobe Commerce 2.4.8-p3 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.8-p2 セキュリティリリースには、以前のリリース 2.4.8で特定された脆弱性に対するセキュリティバグ修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-71](https://helpx.adobe.com/jp/security/products/magento/apsb25-71.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -117,7 +117,7 @@ Adobe Commerce 2.4.8-p2 セキュリティリリースには、以前のリリ�
 
 Adobe Commerce 2.4.8-p1 セキュリティリリースには、以前のリリース 2.4.8で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-50](https://helpx.adobe.com/jp/security/products/magento/apsb25-50.html)を参照してください。
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)を参照してください。
 
 {{b2b-patches}}
 
@@ -141,7 +141,7 @@ Adobe Commerce 2.4.8-p1 セキュリティリリースには、以前のリリ�
 
 >[!BEGINSHADEBOX]
 
-CVE-2025-47110およびVULN-31547の修正プログラムは、独立したパッチとしても利用できます。 詳しくは、[&#x200B; ナレッジベース記事](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27181)を参照してください。
+CVE-2025-47110およびVULN-31547の修正プログラムは、独立したパッチとしても利用できます。 詳しくは、[ ナレッジベース記事](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27181)を参照してください。
 
 >[!ENDSHADEBOX]
 
