@@ -1,11 +1,31 @@
 ---
-source-git-commit: 420e4af6778d3f493e9ad4fcc4ae175446d31243
+source-git-commit: a412b5ff5dd9267c9078f9847e466bec90dcde50
 workflow-type: tm+mt
-source-wordcount: '2131'
+source-wordcount: '2169'
 ht-degree: 3%
-
 ---
 # リリース済みバージョン
+
+## 2.4.10
+
+2.4.10 リリースラインのサポート終了の日付はまだ設定されていません。
+
+<table>
+  <thead>
+    <tr>
+      <th>パッチバージョン</th>
+      <th>リリース日</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-10">2.4.10-alpha1</a>
+        </td>
+        <td>2026年10月13日（PT）</td>
+    </tr><!-- patch_releases -->
+  </tbody>
+</table>
 
 ## 2.4.9
 

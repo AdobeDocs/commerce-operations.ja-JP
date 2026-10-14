@@ -1,9 +1,8 @@
 ---
-source-git-commit: 1dcfbd53f79c83dbf6c44ffce952de101f7e01f1
+source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
 workflow-type: tm+mt
-source-wordcount: '31311'
+source-wordcount: '31312'
 ht-degree: 0%
-
 ---
 # Adobe Commerceで修正された問題（v2.4.8）
 
@@ -265,7 +264,7 @@ _AC-11427 - [GitHub issue](https://github.com/magento/magento2/issues/31232) - [
 
 _AC-11588 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/0574ac23)_
 
-#### [Bug] Magento 2.4.7では、大文字のファイル拡張子を持つ商品写真は使用できません。
+#### [ バグ ] Magento 2.4.7では、大文字のファイル拡張子を持つ製品写真を使用できません。
 
 大文字のファイル拡張子を持つ製品画像のアップロードを受け付け、スムーズな製品作成プロセスを実現しました。 以前は、大文字のファイル拡張子を持つ画像のアップロードは拒否され、ユーザーはファイル拡張子を小文字に変更せざるを得ませんでした。
 
@@ -421,7 +420,7 @@ _ACP2E-3294 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 _ACP2E-3364 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/5184c067)_
 
-#### Magento管理者URL ルーティングの誤った検出とCORS エラー
+#### Magento管理URLのルーティング時の検出エラーとCORS エラー
 
 修正の後、カスタム管理者ドメインがメインドメインのサブドメインである場合、管理者は設定されたサブドメインからのみアクセスできます。
 
@@ -483,9 +482,9 @@ _ACP2E-3559 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 ### 管理UI、B2B
 
-#### B2B Login as Customer headerにはMagentoのブランディングが残っています
+#### 顧客ヘッダーに引き続きMagento ブランドを使用したB2B ログイン
 
-以前のストアフロントのヘッダーには、「&lt;store name>に&lt;customer name>として接続されました」とMagento ブランディングが表示されていました。 これは修正され、ヘッダーはADOBEのブランディングで表示されます。
+以前、ストアフロントのヘッダーに「Magento ブランディングで&lt;store name>に&lt;customer name>として接続されました」と表示されていました。 これは修正され、ヘッダーはADOBEのブランディングで表示されます。
 
 _AC-13628 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/96dec499)_
 
@@ -752,9 +751,9 @@ _バンドル–3373_
 
 _AC-10826 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/3ea26621)_
 
-#### 順序関連のテストケースでMagento例外がスローされる
+#### 一部の順序関連のテストケースで発生したMagento例外
 
-様々なテストケースで「sendGuestPaymentInformation」ステップが正しく処理され、Magentoの例外がスローされるのを防ぐことができます。 以前は、これらの例外はnull支払い方法が原因で発生しており、いくつかのテストケースで失敗が発生していました。
+さまざまなテストケースで「sendGuestPaymentInformation」ステップが正しく処理され、Magentoの例外がスローされるのを防ぐことができます。 以前は、これらの例外はnull支払い方法が原因で発生しており、いくつかのテストケースで失敗が発生していました。
 
 _AC-13321_
 
@@ -778,7 +777,7 @@ _AC-10698 - [GitHub issue](https://github.com/magento/magento2/issues/37348) - [
 
 _AC-11641 - [GitHub issue](https://github.com/magento/magento2/issues/32781) - [GitHub コードの貢献度](https://github.com/magento/magento2/pull/32511)_
 
-#### Firefox ブラウザーの既存のお客様とのチェックアウト内のMagento 2 ログインでコンソールエラーが発生する
+#### Firefox ブラウザーで既存の顧客とのチェックアウト内のMagento 2 ログインでコンソールエラーが発生する
 
 Firefox ブラウザーでコンソールエラーが発生することなく、チェックアウトプロセス中にユーザーがログインできるようになりました。 以前は、チェックアウト時に既存の顧客としてログインしようとすると、Firefoxでコンソールエラーが発生していました。
 
@@ -802,7 +801,7 @@ _AC-11914 - [GitHub issue](https://github.com/magento/magento2/issues/38694) - [
 
 _AC-11993 - [GitHub issue](https://github.com/magento/magento2/issues/38742) - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/1bafc571)_
 
-#### Magento 2.4.7のチェックアウトページで、クーポンコード機能が正しく機能しない
+#### Magento 2.4.7のチェックアウトページで、クーポンコード機能が正しく動作しない
 
 バーチャルおよびダウンロード可能な商品のチェックアウトページに「割引コード/クーポン入力」フィールドを追加し、顧客が期待どおりの割引コードを適用できるようにしました。 以前は、割引コード/クーポン入力は無効になっており、ボタンのタイトルテキストは「クーポンをキャンセル」と表示され、ユーザーが割引コードを適用できないようにしていました。
 
@@ -880,7 +879,7 @@ _ACP2E-2646 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 _ACP2E-2664 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/f89a447e)_
 
-#### Gift Registry Magento 2.4.4 Enterprise/Commerceからの注文に関する問題
+#### Gift Registry Magento 2.4.4 Enterprise/Commerceからの注文時の問題
 
 ギフトレジストリから商品を購入できない問題が解決され、注文を行い、ギフトレジストリを適切に更新できるようになりました。 以前は、ギフトレジストリから注文を行おうとしたときにエラーが発生し、購入が完了しませんでした。
 
@@ -1225,7 +1224,7 @@ _ACP2E-2888_
 
 _ACP2E-2905 - [GitHubの問題](https://github.com/magento/magento2/issues/38506) - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/a4fbf702)_
 
-#### dynamic-rows.js:658 バンドル製品の編集中に見つからないTypeError: dataRecord.slice
+#### dynamic-rows.js:658 バンドル製品の編集中にTypeError: dataRecord.sliceが検出されない
 
 バンドル製品からオプションを削除する際に、ブラウザーコンソールでJavaScript エラーが発生しません。
 
@@ -1269,7 +1268,7 @@ _ACP2E-3058 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 #### 顧客が他の顧客グループの価格を見る
 
-X-Magento-Vary in リクエストの古い値により、お客様グループに関連する情報が間違ったセグメントに保存される問題を修正しました
+リクエストのX-Magento-Varyの古い値により、顧客グループ関連情報が間違ったセグメントに保存される問題を修正しました
 
 _ACP2E-3069 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/d1f7dc95)_
 
@@ -1497,7 +1496,7 @@ _ACP2E-3053 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 _ACP2E-3345 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/1366ae5e)_
 
-#### Magento管理者に保存した後、フロントエンドで商品に関する[CLOUD]の問題が表示されない
+#### Magento Adminに保存すると、製品に関する[CLOUD]の問題がフロントエンドで表示されない
 
 修正後、長い名前の子製品を持つ設定可能な製品は、ストアフロントで見逃されることはありません。
 
@@ -1913,7 +1912,7 @@ _AC-12778 - [GitHub issue](https://github.com/magento/magento2/issues/39062) - [
 
 _AC-12857 - [GitHub issue](https://github.com/magento/magento2/issues/39083) - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/47b448e2)_
 
-#### [問題] Magento モジュールで参照されている間違ったクラスを修正します。
+#### [問題]Magento モジュールで参照されている不正なクラスを修正します。
 
 システムがモジュール内のクラスを正しく参照するようになり、よりスムーズな操作が可能になり、存在しないクラスによるクラッシュを防ぐことができます。 これには、Indexer モジュールとCreditmemo モジュールのバグ修正と、PrintAction クラスでのHttpGetActionInterfaceの実装が含まれます。 以前は、クラスの参照が正しくなかったため、エラーが発生し、システムクラッシュが発生する可能性がありました。また、creditmemo PDF ファイルのファイル名やストックのインデックス再作成などの特定の機能が期待どおりに動作しませんでした。
 
@@ -2015,7 +2014,7 @@ _AC-8662 - [GitHub issue](https://github.com/magento/magento2/issues/37453) - [G
 
 _AC-8984 - [GitHub issue](https://github.com/magento/magento2/issues/29335) - [GitHub コードの貢献度](https://github.com/magento/magento2/pull/29298)_
 
-#### Magentoをアップグレードすると、新しい国に必要な都道府県が追加された場合に、general/region/state_requiredがリセットされます。
+#### Magentoをアップグレードすると、必要な州/地域を持つ新しい国が追加された場合、general/region/state_requiredがリセットされます。
 
 必要な状態を持つ新しい国が追加された場合にのみ、変更された国が「一般/地域/状態_必須」設定に追加されるようになりました。これにより、地域が無効になっていると仮定するカスタムコードの中断を防ぐことができます。 以前は、必須の状態を持つ新しい国を追加すると、「general/region/state_required」設定が必須の状態を持つデフォルトの国にリセットされ、ショップが壊れる可能性がありました。
 
@@ -2125,7 +2124,7 @@ _ACP2E-3324 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 ### GraphQL
 
-#### Magento_GraphQl ヘッダー値が検証に合格しない場合でも、ヘッダー処理を実行します
+#### Magento_GraphQlは、ヘッダー値が検証に合格しない場合でもヘッダー処理を実行します
 
 これにより、ヘッダー値が検証に合格した場合にのみヘッダー処理が実行され、セキュリティが強化され、潜在的な脆弱性が防止されるようになりました。 以前は、ヘッダー値が検証に合格しない場合でもヘッダー処理が実行され、ヘッダー値の二重処理による潜在的な脆弱性や予期しない動作が発生していました。
 
@@ -2993,9 +2992,9 @@ _LYNX-757_
 
 _LYNX-758_
 
-#### adobe-commerce/storefront-compatibility パッケージがインストールされている場合、OPTIONS メソッドを使用したGraphQL呼び出しは500の応答コードを返します
+#### OPTIONS メソッドを使用したGraphQL呼び出しは、adobe-commerce/storefront-compatibility パッケージがインストールされている場合に500の応答コードを返します
 
-Adobe-commerce/storefront互換パッケージがインストールされたときに、OPTIONS メソッドを使用したGraphQL呼び出しで500 Internal Server Errorが返される問題を修正しました。 エンドポイントが200/204応答を正しく返すようになりました。
+ADOBE-commerce/storefront互換パッケージのインストール時に、OPTIONS メソッドを使用したGraphQLの呼び出しで500 Internal Server Errorが返される問題を修正しました。 エンドポイントが200/204応答を正しく返すようになりました。
 
 _LYNX-778_
 
@@ -3105,7 +3104,7 @@ _AC-12176 - [GitHub issue](https://github.com/magento/magento2/issues/38799) - [
 
 #### Magento CLIでのSymfonyのCommandLoaderInterfaceのサポート
 
-この変更により、必要になるまでコマンドを繰り返し初期化できるため、Magento CLI アプリの初期化時間が短縮されます。
+この変更により、必要になるまでコマンドの初期化を遅らせることができるため、Magento CLI アプリの初期化時間が短縮されます。
 
 _AC-13471 - [GitHub issue](https://github.com/magento/magento2/issues/29266) - [GitHub コードの貢献度](https://github.com/magento/magento2/pull/29355)_
 
@@ -3182,7 +3181,7 @@ _AC-11992 - [GitHub issue](https://github.com/magento/magento2/issues/30857) - [
 
 _AC-13173 - [GitHub issue](https://github.com/magento/magento2/issues/38961) - [GitHub コードの貢献度](https://github.com/magento/magento2/pull/38940)_
 
-#### [問題] Magentoで壊れたバンドルとダウンロード可能な商品ページのレイアウトが修正されました>= 2.4.7
+#### [問題] Magento >= 2.4.7で壊れたバンドルとダウンロード可能な製品ページのレイアウトを修正しました
 
 バンドルおよびダウンロード可能な製品ページのレイアウトが修正され、すべてのデバイスで一貫した正しい表示が可能になりました。 以前は、これらのページでは、製品情報メディアブロックの並べ替えにより、レイアウトの問題が発生していました。
 

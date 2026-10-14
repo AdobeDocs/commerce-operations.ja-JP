@@ -19,7 +19,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 06034766e0c2e09e414e1ebc7a5b388a07593406
 workflow-type: tm+mt
 source-wordcount: '4570'
 ht-degree: 0%
@@ -185,9 +185,9 @@ ht-degree: 0%
 
 これらの設定値は、**ストア**/設定/**設定**/**カタログ**/**インベントリ**&#x200B;の管理者で使用できます。
 
-|名前|設定パス | Commerce バージョンのサポート |暗号化されていますか？ | システム固有か？ |機密性？ | |
-|--------------|--------------|--------------|--------------|--------------|--------------| |
-| Google API キー| `cataloginventory/source_selection_distance_based_google/api_key` | |暗号化| |機密性|
+| 名前 | 設定パス | Commerce版サポート | 暗号化？ | システム固有ですか？ | 繊細な？ |
+|--------------|--------------|--------------|--------------|--------------|--------------|
+| Google API キー | `cataloginventory/source_selection_distance_based_google/api_key` |  | 暗号化 | | 機密 |
 
 ### XML サイトマップの機密パスとシステム固有パス
 

@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 758cab5d4002ddba607dadb3c4b44553adf8d8ba
+source-git-commit: 09eedab06d326baa0d4155274266dc3ef5356589
 workflow-type: tm+mt
-source-wordcount: '10740'
+source-wordcount: '10752'
 ht-degree: 0%
 ---
 
@@ -1060,6 +1060,7 @@ ht-degree: 0%
       - [ACP2E-4875：大規模なアドレス帳を使用して顧客アカウントを開くときに管理者ユーザーがログアウトする](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-4639:Adobe Commerce GraphQL スキーマで要求リストのアイテムの種類のスペルが間違っている](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)
       - [ACP2E-5223: カタログ権限インデックスには、顧客グループから除外されたweb サイトが含まれます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)
       - [ACP2E-5101：インデクサーで「スケジュールによる更新」を使用すると、Adobe Commerce B2B インストールが失敗する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)
       - [AC-12854：管理者の再注文では、元の注文番号と–1の接尾辞が使用されます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)

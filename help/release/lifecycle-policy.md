@@ -15,7 +15,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
@@ -216,4 +216,4 @@ Adobeでは、できるだけ早くアップグレードすることをお勧め
 
 このパスでは、今後のアップグレードの義務がなくなるわけではありません。 Adobe Commerce on Cloud デプロイメントを使用しているお客様は、リリースラインがバージョンアップグレードの実施日に達すると、アップグレードを続行する必要があります。
 
-<!-- Last updated from includes: 2026-09-17 13:05:40 -->
+<!-- Last updated from includes: 2026-09-17 14:58:18 -->

@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 758cab5d4002ddba607dadb3c4b44553adf8d8ba
+source-git-commit: 09eedab06d326baa0d4155274266dc3ef5356589
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '515'
 ht-degree: 0%
 ---
 # 概要：[!DNL Quality Patches Tool] （QPT） v1.1.83
@@ -35,7 +35,7 @@ QPT v1.1.83には次のパッチが含まれています。
 1. **AC-17975**：特定のPHP環境での管理者ワークフロー、チェックアウト認証、CAPTCHA処理、カテゴリ管理、設定ページ、コマンドライン操作に影響する複数のPHP 8.5互換性の問題を修正します。
 1. **AC-18128**: GraphQLから返された注文日と注文コメントのタイムスタンプが、英語以外のロケール設定で誤ったカレンダー日付を表示する問題を修正しました。
 1. **AC-18096**: Sales GraphQLの日付フィールドで、日付の形式をスラッシュ区切り（`/`）からダッシュ区切り（`-`）に戻すことで、以前のリリースとは異なる形式で日付が返される問題を修正しました。
-1. **ACP2E-4639**：古い項目フィールドと`RequistionListItems`型は引き続き利用できますが、非推奨のままですが、GraphQL スキーマで購買依頼リストの項目タイプのスペルが間違っていた問題を修正します。
+1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**:GraphQL スキーマで購買リストのアイテムの種類のスペルが間違っている問題を修正します。 古い`items` フィールドと`RequistionListItems` タイプは引き続き使用できますが、非推奨です。
 1. **ACP2E-4838**：権限が制限された管理者ユーザーが顧客グリッドから顧客を削除できない問題を修正します。
 1. **ACP2E-4877**: *保留中*&#x200B;の状態で&#x200B;**[!UICONTROL Payment on Account]**&#x200B;を使用して配置された注文を管理者で編集できない問題を修正しました。
 1. **ACP2E-4908**：各ストアビューで各製品に対して別々のレイアウトキャッシュエントリが作成されたため、大きなカタログがRedisまたはValkeyで過度のメモリ使用を引き起こす問題を修正します。
