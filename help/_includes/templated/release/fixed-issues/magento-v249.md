@@ -3,7 +3,6 @@ source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
 source-wordcount: '32815'
 ht-degree: 0%
-
 ---
 # Magento Open Sourceで修正された問題（v2.4.9）
 
@@ -3033,7 +3032,7 @@ _ACP2E-4455 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 #### 管理者がリターンの作成時に誤った通貨記号を表示する
 
-異なる通貨（EUR/USD/GBP）を使用した複数のweb サイト設定では、管理画面の返品商品選択ページに正しい通貨記号が表示されるようになりました。 以前は、デフォルトの通貨記号が表示されていました。
+異なる通貨（EUR/USD/GBP）を使用した複数のweb サイト設定で、管理画面の返品商品選択ページに正しい通貨記号が表示されるようになりました。 以前は、デフォルトの通貨記号が表示されていました。
 
 _ACP2E-3658 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/df92debe)_
 
@@ -3648,7 +3647,7 @@ _ACP2E-4212 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 #### スケジュール更新プレビューでWeb サイト間を移動できない
 
-この修正の前に、カスタムドメインを持つストアのコンテンツをプレビューしようとすると、スケジュールされた更新プレビューが壊れます。 この修正の後、カスタムストアドメインをそのままプレビューし、プレビューiframe内で移動できます。 この修正プログラムは、製品、カテゴリ、CMS ページ、CMS ブロックを対象としており、[Adobe Commerce変数およびマークアップタグ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/variables/markup-tags)に記載されているように、`{{store url}}`個のマークアップタグを使用したナビゲーションリンクをサポートしています。
+この修正の前に、カスタムドメインを持つストアのコンテンツをプレビューしようとすると、スケジュールされた更新プレビューが壊れます。 この修正の後、カスタムストアドメインをそのままプレビューし、プレビューiframe内で移動できます。 この修正プログラムは、製品、カテゴリ、CMS ページ、CMS ブロックを対象としており、[Adobe Commerce変数およびマークアップタグ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags)に記載されているように、`{{store url}}`個のマークアップタグを使用したナビゲーションリンクをサポートしています。
 
 _ACP2E-4308 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/0a3b7032)_
 
