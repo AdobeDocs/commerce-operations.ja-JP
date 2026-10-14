@@ -21,7 +21,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 6a3ffddee54d8f9f04e8f72a0d2708baa5c1f37a
+source-git-commit: 42ccea80dbbf503f58ba7d63d4731687b3c310a8
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -35,8 +35,8 @@ QPT v1.1.83には次のパッチが含まれています。
 1. **AC-17975**：特定のPHP環境での管理者ワークフロー、チェックアウト認証、CAPTCHA処理、カテゴリ管理、設定ページ、コマンドライン操作に影響する複数のPHP 8.5互換性の問題を修正します。
 1. **AC-18128**: GraphQLから返された注文日と注文コメントのタイムスタンプが、英語以外のロケール設定で誤ったカレンダー日付を表示する問題を修正しました。
 1. **AC-18096**: Sales GraphQLの日付フィールドで、日付の形式をスラッシュ区切り（`/`）からダッシュ区切り（`-`）に戻すことで、以前のリリースとは異なる形式で日付が返される問題を修正しました。
+1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**：権限が制限された管理者ユーザーが顧客グリッドから顧客を削除できない問題を修正します。
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**:GraphQL スキーマで購買リストのアイテムの種類のスペルが間違っている問題を修正します。 古い`items` フィールドと`RequistionListItems` タイプは引き続き使用できますが、非推奨です。
-1. **ACP2E-4838**：権限が制限された管理者ユーザーが顧客グリッドから顧客を削除できない問題を修正します。
 1. **ACP2E-4877**: *保留中*&#x200B;の状態で&#x200B;**[!UICONTROL Payment on Account]**&#x200B;を使用して配置された注文を管理者で編集できない問題を修正しました。
 1. **ACP2E-4908**：各ストアビューで各製品に対して別々のレイアウトキャッシュエントリが作成されたため、大きなカタログがRedisまたはValkeyで過度のメモリ使用を引き起こす問題を修正します。
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**：管理画面で注文を再注文すると、次の順序番号を割り当てるのではなく、`-1`接尾辞を付けた新しい注文番号が作成される問題を修正します。
