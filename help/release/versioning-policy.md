@@ -2,7 +2,7 @@
 title: リリースポリシー
 description: Adobe Commerceのリリースタイプ、マーケターとモジュールのバージョン管理、パッチとセキュリティのリリース、ベータ版、ホットフィックス、全体的なリリースポリシーについて説明します。
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-last-update: 2026-09-18
+last-update: 2026-10-14
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,14 +14,14 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 8959478d84467d8589a79e908b3f8750cb0a1c8b
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
 ---
 # Adobe Commerce リリースポリシー
 
-Adobe Commerceでは、個々のモジュールレベル （例：`magento/framework 101.1.1`）で[&#x200B; セマンティックバージョン管理](https://semver.org/)が使用されますが、マーケティングバージョン番号には使用されません。 例：
+Adobe Commerceでは、個々のモジュールレベル （例：`magento/framework 101.1.1`）で[ セマンティックバージョン管理](https://semver.org/)が使用されますが、マーケティングバージョン番号には使用されません。 例：
 
 - **メジャーリリース**—2
 - **マイナーリリース**—2.4
@@ -73,7 +73,7 @@ Beta リリースには欠陥が含まれている場合があり、いかなる
 
 ## ホットフィックス
 
-ホットフィックスは、多くのマーチャントに影響を与える、ゼロデイ脆弱性の修正など、影響の大きいセキュリティまたは品質の修正を含むパッチです。 Adobeは、重要なセキュリティまたは品質の問題が影響を与える場合に、サポート対象のAdobe Commerce バージョンのホットフィックス（必要に応じて）をリリースします。 ホットフィックスは、[品質パッチツール &#x200B;](../tools/quality-patches-tool/usage.md)を通じて配信されます。 これらの修正は、次に予定されているパッチリリースに含まれています。
+ホットフィックスは、多くのマーチャントに影響を与える、ゼロデイ脆弱性の修正など、影響の大きいセキュリティまたは品質の修正を含むパッチです。 Adobeは、重要なセキュリティまたは品質の問題が影響を与える場合に、サポート対象のAdobe Commerce バージョンのホットフィックス（必要に応じて）をリリースします。 ホットフィックスは、[品質パッチツール ](../tools/quality-patches-tool/usage.md)を通じて配信されます。 これらの修正は、次に予定されているパッチリリースに含まれています。
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ Beta リリースには欠陥が含まれている場合があり、いかなる
 
 ## 個別パッチ
 
-個々のパッチには、特定の問題に対する影響の小さい品質修正が含まれています。 これらの修正は、サポートされているAdobe Commerceのマイナーバージョンに適用されます。 Adobeは、[&#x200B; ソフトウェアライフサイクルポリシー](lifecycle-policy.md)に従って、Adobe Commerceの必要に応じて個別のパッチをリリースします。 法律用語については、[Adobe Commerce Software Lifecycle Policy （PDF） &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)を参照してください。 これらは、[品質パッチツール &#x200B;](../tools/quality-patches-tool/usage.md)を通じて配信されます。
+個々のパッチには、特定の問題に対する影響の小さい品質修正が含まれています。 これらの修正は、サポートされているAdobe Commerceのマイナーバージョンに適用されます。 Adobeは、[ ソフトウェアライフサイクルポリシー](lifecycle-policy.md)に従って、Adobe Commerceの必要に応じて個別のパッチをリリースします。 法律用語については、[Adobe Commerce Software Lifecycle Policy （PDF） ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)を参照してください。 これらは、[品質パッチツール ](../tools/quality-patches-tool/usage.md)を通じて配信されます。
 
 >[!NOTE]
 >
