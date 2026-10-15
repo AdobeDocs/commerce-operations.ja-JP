@@ -1,9 +1,8 @@
 ---
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1188'
 ht-degree: 0%
-
 ---
 # スニペット
 
@@ -39,7 +38,20 @@ Redis キャッシュは、Adobe Commerce 2.4.9、または2.4.5-p16、2.4.6-p14
 
 ## 拡張サポート用のセキュリティパッチ {#extended-support}
 
-{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
+>[!NOTE]
+>
+>**拡張サポート** セキュリティパッチは、Adobe Commerceのお客様のみが利用できます。 Magento Open Source コードベースでは使用できません。
+>
+>**Adobe Commerce クラウド版（リリース ライン 2.4.4-2.4.6）** — サポートされているリリースにアップグレードするか、バージョン アップグレードの適用日より前に[!DNL Adobe Commerce as a Cloud Service]に移行します。 移行サポートの規定は、Cloud アップグレードの適用に代わるものではありません。
+>
+>こちらもご覧ください：
+>
+>- [&#x200B; ソフトウェア ライフサイクル ポリシー](/help/release/lifecycle-policy.md) — サポート終了日、延長サポート、およびセキュリティのみの移行規定
+>- [Commerce環境を保護するために必要なアクションと期限](/help/release/security-enforcement-policy.md) – 実施日と必要なアクション
+
+## Adobeセキュリティ情報APSB26-49 {#security-bulletin-apsb26-49}
+
+セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-49](https://www.adobe.com/trust/security/products/commerce/apsb26-49.html)を参照してください。
 
 ## Commerceのみ {#commerce-only}
 

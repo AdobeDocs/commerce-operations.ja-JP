@@ -14,9 +14,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '2160'
+source-wordcount: '2137'
 ht-degree: 0%
 ---
 
@@ -28,15 +28,15 @@ ht-degree: 0%
 
 ## 2.4.4-p18
 
-Adobe Commerce 2.4.4-p18は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](../../lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
+Adobe Commerce 2.4.4-p18は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](/help/release/lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-49](https://helpx.adobe.com/jp/security/products/magento/apsb26-49.html)を参照してください。
+{{security-bulletin-apsb26-49}}
 
 {{b2b-patches}}
 
 ## 2.4.4-p17
 
-Adobe Commerce 2.4.4-p17は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](../../lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
+Adobe Commerce 2.4.4-p17は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](/help/release/lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
 
 セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-05](https://helpx.adobe.com/jp/security/products/magento/apsb26-05.html)を参照してください。
 
@@ -44,7 +44,7 @@ Adobe Commerce 2.4.4-p17は、以前のリリース 2.4.4で特定された脆�
 
 ## 2.4.4-p16
 
-Adobe Commerce 2.4.4-p16は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](../../lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
+Adobe Commerce 2.4.4-p16は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](/help/release/lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
 
 セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-94](https://helpx.adobe.com/jp/security/products/magento/apsb25-94.html)を参照してください。
 
@@ -62,7 +62,7 @@ Adobe Commerce 2.4.4-p16は、以前のリリース 2.4.4で特定された脆�
 
 ## 2.4.4-p15
 
-Adobe Commerce 2.4.4-p15は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](../../lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
+Adobe Commerce 2.4.4-p15は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](/help/release/lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
 
 セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-71](https://helpx.adobe.com/jp/security/products/magento/apsb25-71.html)を参照してください。
 
@@ -70,7 +70,7 @@ Adobe Commerce 2.4.4-p15は、以前のリリース 2.4.4で特定された脆�
 
 ## 2.4.4-p14
 
-Adobe Commerce 2.4.4-p14は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](../../lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
+Adobe Commerce 2.4.4-p14は、以前のリリース 2.4.4で特定された脆弱性に対するセキュリティバグ修正を提供する[拡張サポートセキュリティリリース &#x200B;](/help/release/lifecycle-policy.md#security-only-transitional-period)です。 Adobe Commerceのお客様のみが利用できます。
 
 セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB25-50](https://helpx.adobe.com/jp/security/products/magento/apsb25-50.html)を参照してください。
 

@@ -3,7 +3,7 @@ title: リリース済みバージョン
 description: Adobe Commerceの特定のバージョンがいつリリースされたかをご確認ください。
 recommendations: noCatalog
 exl-id: 9b03900c-39ba-4757-ab7e-8bc832277192
-last-update: 2026-08-12
+last-update: 2026-10-13
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -15,9 +15,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '133'
 ht-degree: 0%
 ---
 # リリース済みバージョン
@@ -33,7 +33,7 @@ Adobeでは、バージョン 2.4.4および2.4.5のAdobe Commerceのお客様�
 >[!NOTE]
 >
 >- Adobeでは、各リリースで利用可能な最新のセキュリティパッチにAdobe Commerceをインストールまたはアップグレードすることをお勧めします。
->- その他のセキュリティ更新プログラムについては、[Magento / Adobe Commerceのセキュリティ更新プログラム &#x200B;](https://helpx.adobe.com/jp/security/products/magento.html)を参照してください。
+>- その他のセキュリティ更新プログラムについては、Trust Centerの[Adobe セキュリティ速報とアドバイザリー](https://www.adobe.com/trust/security/bulletins-and-advisories.html)を参照してください。
 >- 価格については、[Adobe Commerceの価格](https://business.adobe.com/jp/products/magento/pricing.html)を参照してください。
 
 {{$include /help/_includes/templated/release/core-releases.md}}

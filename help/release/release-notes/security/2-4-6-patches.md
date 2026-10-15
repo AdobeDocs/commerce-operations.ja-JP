@@ -14,9 +14,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '2365'
+source-wordcount: '2342'
 ht-degree: 0%
 ---
 
@@ -36,17 +36,17 @@ ht-degree: 0%
 >バージョン 2.4.6を実行しているすべてのAdobe Commerce オンプレミスのお客様は、以下の点に強く同意します。
 >データベースサーバーを互換性のあるMariaDB バージョンに移行することをお勧めします。
 >
->Adobe Commerce on Cloudのお客様は、サポートされているバージョンにプラットフォームの依存関係を維持する必要があります。 ライフサイクルポリシーの[Platform依存関係](../../lifecycle-policy.md#platform-dependencies)を参照してください。
+>Adobe Commerce on Cloudのお客様は、サポートされているバージョンにプラットフォームの依存関係を維持する必要があります。 ライフサイクルポリシーの[Platform依存関係](/help/release/lifecycle-policy.md#platform-dependencies)を参照してください。
 >
->Adobe Commerce 2.4.6は[延長サポート &#x200B;](../../lifecycle-policy.md#extended-support)から&#x200B;**2027年8月30日**&#x200B;までで、その後[&#x200B; セキュリティのみの移行期間](../../lifecycle-policy.md#security-only-transitional-period) ～ **2028年5月31日**&#x200B;が続きます。 これらの規定は、Adobe Commerceのお客様のみが利用できます。 MySQLなどのサードパーティの依存関係のサポートは拡張されません。
+>Adobe Commerce 2.4.6は[延長サポート &#x200B;](/help/release/lifecycle-policy.md#extended-support)から&#x200B;**2027年8月30日**&#x200B;までで、その後[&#x200B; セキュリティのみの移行期間](/help/release/lifecycle-policy.md#security-only-transitional-period) ～ **2028年5月31日**&#x200B;が続きます。 これらの規定は、Adobe Commerceのお客様のみが利用できます。 MySQLなどのサードパーティの依存関係のサポートは拡張されません。
 >
->Adobe Commerce on Cloudを実行する場合は、**2028年6月1日** [&#x200B; バージョンのアップグレード実施日](../../security-enforcement-policy.md)より前に、サポートされているリリースにアップグレードするか、[!DNL Adobe Commerce as a Cloud Service]に移行する必要があります。 ライフサイクルの全期間については、[&#x200B; サポート終了日](../../lifecycle-policy.md#end-of-support-dates)の表を参照してください。
+>Adobe Commerce on Cloudを実行する場合は、**2028年6月1日** [&#x200B; バージョンのアップグレード実施日](../../security-enforcement-policy.md)より前に、サポートされているリリースにアップグレードするか、[!DNL Adobe Commerce as a Cloud Service]に移行する必要があります。 ライフサイクルの全期間については、[&#x200B; サポート終了日](/help/release/lifecycle-policy.md#end-of-support-dates)の表を参照してください。
 
 ## 2.4.6-p15
 
 Adobe Commerce 2.4.6-p15のセキュリティリリースには、以前のリリースの2.4.6で特定された脆弱性に対するセキュリティバグの修正が含まれています。
 
-セキュリティ バグの修正に関する最新情報については、[Adobe セキュリティ情報APSB26-49](https://helpx.adobe.com/jp/security/products/magento/apsb26-49.html)を参照してください。
+{{security-bulletin-apsb26-49}}
 
 {{b2b-patches}}
 

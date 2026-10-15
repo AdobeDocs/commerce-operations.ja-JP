@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 6a3ffddee54d8f9f04e8f72a0d2708baa5c1f37a
+source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
 workflow-type: tm+mt
-source-wordcount: '10764'
+source-wordcount: '10826'
 ht-degree: 0%
 ---
 
@@ -639,7 +639,7 @@ ht-degree: 0%
       - [ACSD-46938：セットアップ中のDB トリガーのパフォーマンスの問題:upgrade](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
       - [ACSD-54887：顧客セッションの有効期限が切れた後、顧客ショッピングカートがクリアされる](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-54887-customer-shopping-cart-gets-cleared-after-session-expiry.md)
       - [ACSD-58141: L2 Redis キャッシュが有効になっている場合、PHPSESSIDがログイン顧客向けのPOST リクエストで再生成される](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
-      - [ACSD-59229：古いX-Magento-Vary値による顧客グループのデータ割り当て間違い](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
+      - [ACSD-59229：古いX-Magento-Vary値による顧客グループ データの割り当て間違い](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
       - [ACSD-60441: V1/customers [!DNL REST] API エンドポイントを使用して顧客を更新すると、エラーがスローされる](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
       - [ACSD-58352: デフォルトストアの属性ラベルを [!DNL GraphQL] APIを介して返す](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
       - [ACSD-59514：管理画面でFormsがブラウザーコンソールで [!DNL Page Builder]  スローのエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
@@ -1060,6 +1060,9 @@ ht-degree: 0%
       - [ACP2E-4875：大規模なアドレス帳を使用して顧客アカウントを開くときに管理者ユーザーがログアウトする](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [AC-18096: Sales GraphQLの日付フィールドが正しくないローカライズされた書式を返す](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)
+      - [AC-18128：英語以外のロケールで、GraphQLの注文日とコメントのタイムスタンプが正しくない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)
+      - [ACP2E-4838：制限付き管理者ユーザーが、許可されたweb サイトから顧客を削除できない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)
       - [ACP2E-4998: SKUが見つからない場合、有効な製品の一括価格更新が行われません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)
       - [ACP2E-4639:Adobe Commerce GraphQL スキーマで要求リストのアイテムの種類のスペルが間違っている](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)
       - [ACP2E-5223: カタログ権限インデックスには、顧客グループから除外されたweb サイトが含まれます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)
@@ -1067,6 +1070,8 @@ ht-degree: 0%
       - [AC-12854：管理者の再注文では、元の注文番号と–1の接尾辞が使用されます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5143: GraphQL route クエリーが要求されないCMS ページコンテンツをレンダリングする](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)
+      - [ACP2E-4741：リンクされた商品を保存すると、カスタムストックを使用して別の商品がストアフロントから非表示になる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
   - [Quality Patches ToolでAdobe Commerceの問題が発生した場合のパッチの確認](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - コマンドラインツールリファレンス {#cli-reference}
   - [Adobe Commerce （オンプレミス）](reference/commerce-on-premises.md)

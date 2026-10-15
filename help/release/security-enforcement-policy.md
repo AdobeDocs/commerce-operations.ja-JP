@@ -35,9 +35,9 @@ level_v2:
     internal-label: Experienced
 badgePaas: label="Cloud 2.4.4上のAdobe Commerce - 2.4.9のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Cloud バージョン 2.4.4 ～ 2.4.9のAdobe Commerceにのみ適用されます"
 nudge: true
-source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
+source-git-commit: 5cfbac0f93bc8f82c1af04057c0d9ac3b1f3abb4
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2181'
 ht-degree: 0%
 ---
 
@@ -74,7 +74,7 @@ Adobeは、お客様のセキュリティを維持するために必要な手順
 
 1. Adobe Commerce on Cloudの安全なサポート対象。 完全にサポートされているバージョンには、2.4.8、2.4.9、または利用可能な最新リリースが含まれています。 [&#x200B; ライフサイクルポリシー](/help/release/lifecycle-policy.md)のドキュメントを参照してください。
 
-Adobe Commerce on Cloud環境を保護するためにアクションを実行する必要があるかどうかを確認するには、次のガイドラインに従います。 以下の表1に記載されている期限までにセキュリティ要件を満たさない環境では、ストアフロントをオフラインにしてインバウンドトラフィックが停止します。 期限の遵守について懸念がある場合は、できるだけ早くアカウントチームまたは[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
+Adobe Commerce on Cloud環境を保護するためにアクションを実行する必要があるかどうかを確認するには、次のガイドラインに従います。 以下の表1に記載されている期限までにセキュリティ要件を満たさない環境では、ストアフロントがオンラインのままである間、管理者アクセスが一時停止されている可能性があります。また、ストアフロントをオフラインにしてインバウンドトラフィックが停止している可能性もあります。 期限の遵守について懸念がある場合は、できるだけ早くアカウントチームまたは[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ Adobe Commerce Cloud版をアップグレードする必要がある場合は、
 
 Adobeは、サポート対象バージョンのサードパーティソフトウェアの導入、最新バージョンのAdobe Commerce on Cloudへのアップグレード、またはAdobe Commerce as a Cloud Serviceへの移行を行うために必要な手順を実行する際に、お客様をサポートすることを引き続き保証します。  期限の遵守に関して懸念があり、短い延長が必要な場合は、できるだけ早くアカウントチームまたは[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)にお問い合わせください。
 
-上記の実施日までにセキュリティ要件を満たさない環境がある場合、Adobeは、Adobe Commerce プラットフォームおよびお客様のセキュリティを維持するための適切な措置を講じることを余儀なくされます。 これには、影響を受けるインフラストラクチャへのトラフィックの一時停止が含まれます。これにより、Commerce ストアフロントがオフラインになります。
+上記の実施日までにセキュリティ要件を満たさない環境がある場合、Adobeは、Adobe Commerce プラットフォームおよびお客様のセキュリティを維持するための適切な措置を講じることを余儀なくされます。 これには、影響を受ける環境上のすべてのユーザーに対するAdobe Commerce管理者へのアクセスの一時停止、ストアフロントがオンラインのままであること、および/または影響を受けるインフラストラクチャへのトラフィックの一時停止が含まれます。これにより、Commerce ストアフロントがオフラインになります。
 
 トラフィックの停止後もコンプライアンスを遵守していない環境が続く場合、Adobeはクラウドサービスを終了し、廃止プロセスを開始する可能性があります。 廃止の結果、ホストされているコマース環境内のすべてのデータとアセット（すべてのインスタンス、環境、ブランチを含む）が完全に削除され、復元できなくなります。
 

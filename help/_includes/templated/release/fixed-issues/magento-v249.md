@@ -3,7 +3,6 @@ source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
 source-wordcount: '32815'
 ht-degree: 0%
-
 ---
 # Magento Open Sourceで修正された問題（v2.4.9）
 
@@ -3033,7 +3032,7 @@ _ACP2E-4455 - [GitHub コードの貢献度](https://github.com/magento/magento2
 
 #### 管理者がリターンの作成時に誤った通貨記号を表示する
 
-異なる通貨（EUR/USD/GBP）を使用した複数のweb サイト設定では、管理画面の返品商品選択ページに正しい通貨記号が表示されるようになりました。 以前は、デフォルトの通貨記号が表示されていました。
+異なる通貨（EUR/USD/GBP）を使用した複数のweb サイト設定で、管理画面の返品商品選択ページに正しい通貨記号が表示されるようになりました。 以前は、デフォルトの通貨記号が表示されていました。
 
 _ACP2E-3658 - [GitHub コードの貢献度](https://github.com/magento/magento2/commit/df92debe)_
 

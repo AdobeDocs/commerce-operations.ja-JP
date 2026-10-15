@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '496'
 ht-degree: 2%
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 >[!TIP]
 >
->- Adobe Commerceを初めて使用する場合は、[&#x200B; エンタープライズアーキテクチャ &#x200B;](../../implementation-playbook/architecture/enterprise-blueprint.md)および[Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about)に関するトピックを参照して、方向性を確認してください。
+>- Adobe Commerceを初めて使用する場合は、[&#x200B; エンタープライズアーキテクチャ &#x200B;](../../implementation-playbook/architecture/enterprise-blueprint.md)および[Adobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/about)に関するトピックを参照して、方向性を確認してください。
 >- アップグレードについて詳しくは、[推奨事項](../../upgrade/resources/recommended-reading.md)を参照してください。
 
 <table>
@@ -48,7 +48,7 @@ ht-degree: 2%
             <li><a href="security/overview.md">セキュリティパッチ</a></li>
             <li><a href="../lifecycle-policy.md">ソフトウェアライフサイクルポリシー</a></li>
             <li><a href="../security-enforcement-policy.md">セキュリティとコンプライアンスに関する通知</a></li>
-            <li><a href="https://helpx.adobe.com/jp/security/products/magento.html">Adobe セキュリティ情報</a></li>
+            <li><a href="https://www.adobe.com/trust/security/bulletins-and-advisories.html">Adobe セキュリティ情報とアドバイザリー</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=ja">B2B for Adobe Commerce</a></li>
           </ul>
         </td>
