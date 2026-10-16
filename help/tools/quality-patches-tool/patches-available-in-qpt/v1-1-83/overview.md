@@ -21,7 +21,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 353838f9e0d70ed280e41037731715fde449bedc
+source-git-commit: 9c67720bcc00fe0b3e783e6c5cc77dea59ee007a
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
@@ -48,7 +48,7 @@ QPT v1.1.83には次のパッチが含まれています。
 1. **AC-14940**：管理画面で顧客アカウントの&#x200B;**[!UICONTROL Reset Password]**&#x200B;をクリックしても、ストア関連の一部のケースでパスワードリセットの電子メールが送信されない問題を修正しました。
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**: インデクサーが&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;に設定されている場合にB2B モジュールのインストールが失敗する問題を修正します。
 1. **ACP2E-5205**: カテゴリの読み込みに多額の時間がかかったり、多数のカテゴリや製品が含まれている場合にタイムアウトが発生したりする問題を修正します。 また、カテゴリのリーフごとに製品数が適切に表示されるようになりました。
-1. **ACP2E-3211**: ストアフロントで同じ商品を同時にカートに追加すると、同じSKUのカート内に同じ商品を1つの商品にまとめるのではなく、別の商品が作成される問題を修正します。
+1. **[ACP2E-3211](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)**: ストアフロントで同じ商品を同時にカートに追加すると、同じSKUのカート内に同じ商品を1つの商品に組み合わせるのではなく、別の商品が作成される問題を修正します。
 1. **[ACP2E-5223](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)**: **[!UICONTROL Catalog Permissions]** インデックスに顧客グループから除外されたWeb サイトが含まれている問題を修正します。
 
 左側のメニューを使用して、特定のパッチページに移動します。
