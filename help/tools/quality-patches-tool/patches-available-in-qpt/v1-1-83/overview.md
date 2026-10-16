@@ -21,7 +21,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0e4d8845da584cd8a58b49d1adf892df80155734
+source-git-commit: 353838f9e0d70ed280e41037731715fde449bedc
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
@@ -43,8 +43,8 @@ QPT v1.1.83には次のパッチが含まれています。
 1. **ACP2E-4977**：設定可能な製品の請求書とクレジットメモの総計に&#x200B;**[!UICONTROL Fixed Product Tax]** （FPT）が含まれず、合計が注文合計よりも低くなる問題を修正します。
 1. **AC-16530**: ショッピングカートがカタログ価格ルールの更新スケジュールを一貫して反映しなかった問題を修正します。
 1. **AC-11389**：一部の丸めシナリオで割引、税金、注文合計が正しく計算されない問題を修正します。
+1. **[ACP2E-5015](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)**：管理者に共有カタログを保存すると、必要なカタログデータが利用できない場合に、割り当てられた製品と価格を誤って削除できる問題を修正しました。
 1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)**: ペイロード内の1つのSKUが存在しない場合、`POST /V1/products/tier-prices` REST API リクエストが完全に失敗し、有効なSKUが更新されない問題を修正します。
-1. **ACP2E-5015**：管理者に共有カタログを保存すると、必要なカタログデータが利用できない場合に、割り当てられた製品と価格を誤って削除できる問題を修正しました。
 1. **AC-14940**：管理画面で顧客アカウントの&#x200B;**[!UICONTROL Reset Password]**&#x200B;をクリックしても、ストア関連の一部のケースでパスワードリセットの電子メールが送信されない問題を修正しました。
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**: インデクサーが&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;に設定されている場合にB2B モジュールのインストールが失敗する問題を修正します。
 1. **ACP2E-5205**: カテゴリの読み込みに多額の時間がかかったり、多数のカテゴリや製品が含まれている場合にタイムアウトが発生したりする問題を修正します。 また、カテゴリのリーフごとに製品数が適切に表示されるようになりました。
