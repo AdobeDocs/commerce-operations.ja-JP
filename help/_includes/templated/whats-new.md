@@ -1,7 +1,7 @@
 ---
-source-git-commit: d3d2fcd6dd6023ced00872b04bbf6b624deca3be
+source-git-commit: 42acba2c908566207c9cbdd3b1c5b849366f9d32
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1283'
 ht-degree: 1%
 ---
 # 新しいテンプレート
@@ -9,6 +9,136 @@ ht-degree: 1%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年10月16日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015">ACP2E-5015のQPT 1.1.83修正に関する詳細な説明を追加しました。共有カタログの保存は、セッション読み取りエラー</a>の後に製品の割り当てと価格を削除します。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5277785149087405dfe01a3e059d7f617869fbf2">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211">ACP2E-3211のQPT 1.1.83修正に関する詳細な説明を追加しました：並列のカート追加要求で、同じSKU</a>に対して別々の項目が作成されました。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fc196176d3fe1af2805f6733aae99d88563a2532">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月14日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998">ACP2E-4998のQPT 1.1.83修正に関する詳細な説明を追加しました：SKUが欠落すると、有効な製品</a>の一括価格更新が妨げられます。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c881ed90036eae94fc5ecb5a86bfab6a8343f9f1">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838">ACP2E-4838のQPT 1.1.83修正に関する詳細な説明を追加しました。制限付き管理者ユーザーは、許可されたweb サイトから顧客を削除できません</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/828758f6d2a65776578db16ab18a35fa20383e39">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741">ACP2E-4741のQPT 1.1.84修正に関する詳細な説明を追加しました：リンクされた製品を保存すると、カスタムストックを含む別の製品がストアフロントから非表示になります</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e826183cf7e720ab4ab8e824f2bb6c8cd27e3477">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143">ACP2E-5143のQPT 1.1.84修正に関する詳細な説明を追加しました：GraphQL route query renders unrequested CMS page content</a>.</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/30dceea6191f7cdd9e00a23ba71de49806295ef5">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128">AC-18128のQPT 1.1.83修正に関する詳細な説明を追加しました。英語以外のロケール </a>では、GraphQLの注文日とコメントのタイムスタンプが正しくありません。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9573db54f723502aed37dd91f58091bf1cdb7510">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p>QPT 1.1.83修正の詳細な説明を<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096">AC-18096に追加しました：Sales GraphQLの日付フィールドで、ローカライズされた形式が正しくありません</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e402772c2b4de56f3b83702a82f8328a6e0ef848">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月13日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>2.4.10-alpha1 リリースのドキュメントを追加しました：<br />- リリースハイライトと修正済みの問題を含む<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-10">Adobe Commerce リリースノート </a>を追加しました。<br />- リリースハイライトと修正済みの問題を含む<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-10">Magento Open Source リリースノート </a>を追加しました。<br />- 2.4.10-alpha用のクラウドとオンプレミスの依存関係テーブルを分離した<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements"> システム要件</a>を更新しました。<br />-<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/uct">UCT CLIをを1111111111111111111110.218.28.28.28.18.18.0.0.18.0.0.0.0.0.0.08.0.0.0.0.0.0.08.0.0.0.0.08.0.0</a></p>
+</td>
+      <td>
+        メジャーアップデート、新しいトピック、リリースノート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/78a34dc069a30b72a1e0baff36085a2458a05983">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p>2.4.10-alpha1 リリースを<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/versions"> リリースバージョン </a> トピックに追加しました。</p>
+</td>
+      <td>
+        リリースノート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b045cf0b6bd0e74da1cfbaafe6b5493934f31039">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639">ACP2E-4639のQPT 1.1.83の修正に関する詳細な説明を追加しました。Adobe Commerce GraphQL スキーマ </a>で、要求リストの項目タイプのスペルが間違っています。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9b18103789197712c457854d2c78c678e974e357">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年10月9日（PT）
 
@@ -22,7 +152,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101">ACP2E-5101のQPT 1.1.83修正に関する詳細な説明を追加しました。インデクサーがスケジュールによる更新</a>を使用すると、Adobe Commerce B2B インストールが失敗します。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101">ACP2E-5101のQPT 1.1.83修正に関する詳細な説明を追加しました。インデクサーがスケジュールによる更新</a>を使用すると、Adobe Commerce B2B インストールが失敗します。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -30,7 +160,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aae0dcd4753bf36df994a76e1311057fce65e32a">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223">ACP2E-5223のQPT 1.1.83修正に関する詳細な説明を追加しました：カタログ権限インデックスには、顧客グループから除外されたweb サイトが含まれています</a>。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223">ACP2E-5223のQPT 1.1.83修正に関する詳細な説明を追加しました：カタログ権限インデックスには、顧客グループから除外されたweb サイトが含まれています</a>。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -52,7 +182,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854">AC-12854のQPT 1.1.83修正に関する詳細な説明を追加しました。管理者による並べ替えでは、元の注文番号と–1のサフィックス </a>が使用されます。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854">AC-12854のQPT 1.1.83修正に関する詳細な説明を追加しました。管理者による並べ替えでは、元の注文番号と–1のサフィックス </a>が使用されます。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -212,134 +342,6 @@ ht-degree: 1%
         メジャーアップデート
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a840b544de95a4bb17ef49d0325b16d461aecaa">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月14日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>お客様がCloud UIでサービスの依存関係のバージョンを確認する方法の手順を更新し、お客様がストアのアップグレード互換性レポートを生成する方法に関するガイドのリンクを<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/security-enforcement-policy#action-1-verify-and-upgrade-third-party-software-dependencies"> サードパーティのソフトウェアの依存関係を確認してアップグレード </a>で更新しました。</p>
-</td>
-      <td>
-        テクニカル
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/54ac98c35e1f161f390587601484db4e3294b6af">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月13日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194">ACP2E-4194のQPT 1.1.82修正に関する詳細な説明を追加しました。不明なフィルター名を持つGraphQL リクエストは、PHP例外ログ </a>を引き起こします。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d4202395c5b7bb5e8c4a95d8fb353ec0fc523fcb">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695">ACP2E-4695のQPT 1.1.82修正に関する詳細な説明を追加しました：カタログ ルール インデクサーのメモリ不足エラーは、メモリの過度の使用によって発生します</a>。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dc891435d573c4c333e58e25b2dbe003ffa08f27">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p>Adobe Commerce 2.4.5および2.4.6 バージョンのEOSの日付のタイプミスを修正しました。</p>
-</td>
-      <td>
-        テクニカル
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8de65d309dcd4158627910ce5c0b87966db5c948">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月12日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>実稼動環境での使用は推奨されず、アップグレードの互換性のためにのみ存在するため、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#php-and-composer">2.4.9 リリースノート </a>でサポート対象のPHP バージョンとしてPHP 8.4を削除しました。</p>
-</td>
-      <td>
-        リリースノート、テクニカル
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/603bb70012a2f92ceeaad644d5252c4677a1a47c">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894">ACP2E-4894のQPT 1.1.82修正に関する詳細な説明を追加しました。非同期インデックス作成が有効になっている場合に、新しい注文が管理注文グリッドに表示されます</a>。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ad40d94c1618f7e423fd6a773185b8fba48c2c72">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698">ACP2E-4698のQPT 1.1.82修正に関する詳細な説明を追加しました：ページビルダーテキストのインライン編集により、ポータブルディレクティブの代わりに絶対メディア URLが保存されます</a>。</p>
-</td>
-      <td>
-        新しいトピック、qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/68e5e99ac0717b0e358acd6acf9934044a917a82">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/versions"> リリースバージョン </a> ページの複数のAdobe Commerce リリースラインのサポート終了、拡張サポート、その他のセキュリティ修正プロビジョニング日を修正および完了しました。</p>
-</td>
-      <td>
-        テクニカル
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fc5a7f7a466e6419a3e712bcbec4224f98f8c480">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月11日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adobe Commerce 2.4.4-p18 （最新）のサポート対象バージョンとしてRabbitMQ 3.13を追加するために、<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements">必要システム構成</a>を更新し、Debian OS アップグレードパスのブロッカーを解決しました。</p>
-</td>
-      <td>
-        テクニカル
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/046d641dc45b269c6495bef0c06c53bdc500227b">コミット</a></td>
     </tr>
   </tbody>
 </table>
