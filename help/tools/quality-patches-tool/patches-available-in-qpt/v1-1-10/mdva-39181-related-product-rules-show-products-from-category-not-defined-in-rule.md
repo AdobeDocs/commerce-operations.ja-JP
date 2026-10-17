@@ -1,6 +1,6 @@
 ---
 title: MDVA-39181：関連する製品ルールに、ルールで定義されていないカテゴリの製品が表示される
-description: MDVA-39181 パッチは、関連する製品ルールがルールで定義されていないカテゴリの製品を表示する問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.10がインストールされている場合に利用できます。 パッチ IDはMDVA-39181です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
+description: MDVA-39181 パッチは、関連する製品ルールがルールで定義されていないカテゴリの製品を表示する問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.10がインストールされている場合に利用できます。 パッチ IDはMDVA-39181です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 feature: Categories, Products
 role: Admin
 exl-id: 98f65b7d-2cb3-49ff-95ef-c23a922e49f2

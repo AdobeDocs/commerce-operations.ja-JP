@@ -1,6 +1,6 @@
 ---
 title: MDVA-41350：管理者がアクセス以外の場所に製品を追加する場合の例外
-description: MDVA-41350 パッチでは、管理者ユーザーがSKUで製品を追加する際に、アクセスが制限されたアクセス通知ではなく例外エラーがスローされる問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.11がインストールされている場合に利用できます。 パッチ IDはMDVA-41350です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
+description: MDVA-41350 パッチでは、管理者ユーザーがSKUで製品を追加する際に、アクセスが制限されたアクセス通知ではなく例外エラーがスローされる問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.11がインストールされている場合に利用できます。 パッチ IDはMDVA-41350です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 feature: Admin Workspace, Products
 role: Admin
 exl-id: 4dc5ee5c-bd93-42e1-9c63-93ffb8e5f21c
@@ -80,4 +80,4 @@ MDVA-41350 パッチでは、管理者ユーザーがSKUで製品を追加する
 * [品質パッチツールがリリースされました：サポートナレッジベースで品質パッチをセルフサービスで提供する新しいツール &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
 * [品質パッチツール &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)を使用して、Adobe Commerceの問題にパッチが適用されているかどうかを、[!DNL Quality Patches Tool] ガイドで確認してください。
 
-QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) パッチを検索する」を参照してください。
+QPTで使用可能な他のパッチについて詳しくは、[[!DNL Quality Patches Tool]: [!DNL Quality Patches Tool] ガイドの「](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja) パッチを検索する」を参照してください。

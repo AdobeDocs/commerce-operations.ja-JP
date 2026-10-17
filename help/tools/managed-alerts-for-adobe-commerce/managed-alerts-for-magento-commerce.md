@@ -71,4 +71,4 @@ ht-degree: 0%
 
 ## 管理アラート用に設定されたアラートしきい値の確認
 
-New Relic アカウントから、管理対象アラート用に設定されたアラートしきい値を確認できます。 手順については、[管理済みアラートを使用したパフォーマンスの監視](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts)を参照してください。
+New Relic アカウントから、管理対象アラート用に設定されたアラートしきい値を確認できます。 手順については、[管理済みアラートを使用したパフォーマンスの監視](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts)を参照してください。

@@ -59,7 +59,7 @@ ht-degree: 0%
 ## [!DNL Quality Patches Tool]で使用可能なパッチ
 
 Adobe Commerce サポート ナレッジベースのこのセクションでは、QPT パッチによって解決された問題の詳細な説明を、QPT リリースバージョン別にグループ化して示します。
-また、使用可能なQPT パッチのリストを表示し、[[!DNL Quality Patches Tool]: パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)で動的に生成されたテーブルを使用して、コンポーネントごとにフィルターを適用することもできます。
+また、使用可能なQPT パッチのリストを表示し、[[!DNL Quality Patches Tool]: パッチの検索ページ &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)で動的に生成されたテーブルを使用して、コンポーネントごとにフィルターを適用することもできます。
 
 ## [!DNL Quality Patches Tool]のインストールと使用方法
 
@@ -71,7 +71,7 @@ Adobe Commerce オンプレミスとAdobe Commerce オンクラウドインフ�
 
 ### クラウドインフラストラクチャ上のAdobe Commerce用QPTのインストールと使用方法
 
-Cloud Infrastructure上のAdobe Commerceにパッチを適用および元に戻すためにQPTをインストールして使用する方法について詳しくは、開発者向けドキュメントの[Commerce Cloud Infrastructure ガイド/パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)を参照してください。
+Cloud Infrastructure上のAdobe Commerceにパッチを適用および元に戻すためにQPTをインストールして使用する方法について詳しくは、開発者向けドキュメントの[Commerce Cloud Infrastructure ガイド/パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)を参照してください。
 
 ## 関連トピックス
 

@@ -86,7 +86,7 @@ ht-degree: 0%
 
 ![CPUの使用状況](../../assets/tools/cpu-usage.jpg)
 
-**[!UICONTROL CPU Usage]** フレームが空白の場合は、[!DNL New Relic]のインフラストラクチャ アプリケーションが有効になっていないことを示します。 サイトがスターターにある場合、この情報は表示されません。 サイトがProを利用している場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)を開いて、サイトで[!DNL New Relic Infrastructure]を有効にします。
+**[!UICONTROL CPU Usage]** フレームが空白の場合は、[!DNL New Relic]のインフラストラクチャ アプリケーションが有効になっていないことを示します。 サイトがスターターにある場合、この情報は表示されません。 サイトがProを利用している場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)を開いて、サイトで[!DNL New Relic Infrastructure]を有効にします。
 
 ## [!UICONTROL Average Response Time]
 
