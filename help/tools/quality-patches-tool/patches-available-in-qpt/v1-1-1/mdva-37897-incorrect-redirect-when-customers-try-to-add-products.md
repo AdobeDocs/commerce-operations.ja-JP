@@ -1,6 +1,6 @@
 ---
 title: MDVA-37897：最近表示した商品を追加する際にリダイレクトが正しくない
-description: MDVA-37897 パッチは、ユーザーが最近表示されたウィジェットからオプションを持つ製品を追加しようとすると、誤ったリダイレクトの問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.1がインストールされている場合に利用できます。 パッチ IDはMDVA-37897です。 この問題は、Adobe Commerce バージョン 2.4.4で修正される予定です。
+description: MDVA-37897 パッチは、ユーザーが最近表示されたウィジェットからオプションを持つ製品を追加しようとすると、誤ったリダイレクトの問題を解決します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.1がインストールされている場合に利用できます。 パッチ IDはMDVA-37897です。 この問題は、Adobe Commerce バージョン 2.4.4で修正される予定です。
 feature: Products
 role: Admin
 exl-id: d4d1d735-38e4-455e-9045-a2443ce33851
@@ -64,7 +64,7 @@ MDVA-37897 パッチは、ユーザーが最近表示されたウィジェット
 個別のパッチを適用するには、デプロイメントタイプに応じて次のリンクを使用します。
 
 * Adobe Commerce オンプレミス：[&#x200B; ソフトウェア更新ガイド > パッチの適用](/help/tools/quality-patches-tool/usage.md)を開発者向けドキュメントでご覧ください。
-* クラウドインフラストラクチャ上のAdobe Commerce: [&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)開発者向けドキュメントをご覧ください。
+* クラウドインフラストラクチャ上のAdobe Commerce: [&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)開発者向けドキュメントをご覧ください。
 
 ## 関連トピックス
 

@@ -22,7 +22,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015">ACP2E-5015のQPT 1.1.83修正に関する詳細な説明を追加しました。共有カタログの保存は、セッション読み取りエラー</a>の後に製品の割り当てと価格を削除します。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015">ACP2E-5015のQPT 1.1.83修正に関する詳細な説明を追加しました。共有カタログの保存は、セッション読み取りエラー</a>の後に製品の割り当てと価格を削除します。</p>
 </td>
       <td>
         新しいトピック、qpt
@@ -30,7 +30,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5277785149087405dfe01a3e059d7f617869fbf2">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211">ACP2E-3211のQPT 1.1.83修正に関する詳細な説明を追加しました：並列のカート追加要求で、同じSKU</a>に対して別々の項目が作成されました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211">ACP2E-3211のQPT 1.1.83修正に関する詳細な説明を追加しました：並列のカート追加要求で、同じSKU</a>に対して別々の項目が作成されました。</p>
 </td>
       <td>
         新しいトピック、qpt

@@ -1,6 +1,6 @@
 ---
 title: MDVA-39923:B2B クイック注文機能のSKUによる検索では、大文字と小文字が区別されます
-description: MDVA-39923 パッチでは、名前が保存されているケースとは異なるケースで、B2B クイック注文機能でSKUで注文を検索すると、エラーが発生する問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.2がインストールされている場合に利用できます。 パッチ IDはMDVA-39923です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
+description: MDVA-39923 パッチでは、名前が保存されているケースとは異なるケースで、B2B クイック注文機能でSKUで注文を検索すると、エラーが発生する問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.2がインストールされている場合に利用できます。 パッチ IDはMDVA-39923です。 この問題は、Adobe Commerce 2.4.4で修正される予定です。
 feature: B2B, Catalog Management, Orders, Search
 role: Admin
 exl-id: 9bed5615-b398-42f5-8313-ae2acca59155
@@ -81,7 +81,7 @@ B2B モジュールがインストールされている。
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 

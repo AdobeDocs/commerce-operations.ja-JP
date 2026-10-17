@@ -41,4 +41,4 @@ ht-degree: 0%
 Adobe Commerceを利用して、マーチャントがGDPRを遵守する方法について詳しくは、次を参照してください。
 
 - [GDPRへの準拠](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html?lang=ja)
-- [Adobe CommerceにおけるGDPRへの対応](https://business.adobe.com/privacy/general-data-protection-regulation.html)
+- [Adobe CommerceにおけるGDPRへの対応](https://business.adobe.com/jp/privacy/general-data-protection-regulation.html)

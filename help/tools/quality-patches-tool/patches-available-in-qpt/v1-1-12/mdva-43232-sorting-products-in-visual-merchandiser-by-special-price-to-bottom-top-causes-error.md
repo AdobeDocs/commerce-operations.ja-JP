@@ -1,6 +1,6 @@
 ---
 title: MDVA-43232：ビジュアルマーチャンダイザーの商品を特別価格で上（または下）に並べ替えるとエラーが発生する
-description: MDVA-43232 パッチは、ビジュアルマーチャンダイザーの商品を特別価格で上位（または下位）に並べ替えると、カテゴリを保存する際にエラーが発生する問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.12がインストールされている場合に利用できます。 パッチ IDはMDVA-43232です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
+description: MDVA-43232 パッチは、ビジュアルマーチャンダイザーの商品を特別価格で上位（または下位）に並べ替えると、カテゴリを保存する際にエラーが発生する問題を修正します。 このパッチは、[Quality Patches Tool （QPT） ] （https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches） 1.1.12がインストールされている場合に利用できます。 パッチ IDはMDVA-43232です。 この問題は、Adobe Commerce 2.4.5で修正される予定です。
 feature: Categories, Merchandising, Orders, Personalization, Products
 role: Admin
 exl-id: c977bec8-f99c-4799-abce-26aad49b77e8
@@ -87,7 +87,7 @@ MDVA-43232 パッチは、ビジュアルマーチャンダイザーの商品を
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
 * Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
 
 ## 関連トピックス
 
