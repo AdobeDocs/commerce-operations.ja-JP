@@ -21,7 +21,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: c8d03788bf553af1808c2511114b14efaf27c7c5
+source-git-commit: baa1eb193d1cda28ee9891324b616ddee5f23f53
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 0%
@@ -39,7 +39,7 @@ QPT v1.1.84には、次のパッチが含まれています。
 1. **ACP2E-5027**: ファイルのロックが有効になっている場合に、インデックスがループ内で停止したままになり、インデックス再作成が完了しない問題を修正します。
 1. **ACP2E-5029**: カタログ価格ルールの変更が&#x200B;**[!DNL Live Search]**&#x200B;に表示されない問題を修正して、手動再同期を実行します。
 1. **ACP2E-5041**：更新スケジュール中に製品を保存すると、ストアフロントで更新終了後に&#x200B;**[!UICONTROL Special Price]**&#x200B;ではなく通常価格が表示される問題を修正しました。
-1. **ACP2E-5059**：顧客が同じ注文に対して重複した注文確認メールを受信する問題を修正します。
+1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**：顧客が同じ注文に対して重複した注文確認メールを受信する問題を修正します。
 1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)**：ショッピングカートに対するGraphQL リクエストから処理されたエラーが、例外ログにアプリケーションエラーとして誤って記録される問題を修正します。
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: メタデータのルーティングのみが要求された場合にGraphQL `route` クエリがCMS ページ全体のコンテンツをレンダリングする問題を修正し、Page Builder ウィジェットを含むCMS ページのデータベースクエリの数を増やしました。
 1. **ACP2E-5183**: `@magento_import` ディレクティブを使用する`LESS` ファイルのコンパイル中にPHP 8.5で静的コンテンツのデプロイメントが失敗する問題を修正します。
