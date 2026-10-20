@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: e90d6a07d3f4deef685d64d9521fd6cd3165fbae
+source-git-commit: c8d03788bf553af1808c2511114b14efaf27c7c5
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '558'
 ht-degree: 0%
 ---
 # 概要：[!DNL Quality Patches Tool] （QPT） v1.1.84
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 QPT v1.1.84には、次のパッチが含まれています。
 
-1. **ACP2E-4913**：デッドロックにより出荷処理と請求処理が失敗する問題を修正します。
+1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: データベースのデッドロック後にREST APIの出荷と請求書の作成が永続的に失敗する問題を修正します。
 1. **ACP2E-5005**：管理でバンドル製品を再設定し、数量を編集すると、交渉可能な見積もりのバンドル製品オプションの数量が以前の値に戻る問題を修正します。
 1. **ACP2E-5009**: Magento Open SourceからAdobe Commerceへのデータ移行で、カテゴリのスケジュールされたデザイン変更と製品&#x200B;**[!UICONTROL Special Price]**&#x200B;のスケジュールされた更新が正しく移行されず、移行中に一部のスケジュールされた更新が欠落またはスキップする問題が修正され、移行のパフォーマンスが向上します。
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**：お客様が会社に割り当てられていない場合に、GraphQLを通じてお客様`role`にクエリを実行すると&#x200B;*社内サーバーエラー*&#x200B;が返される問題を修正しました。
@@ -40,7 +40,7 @@ QPT v1.1.84には、次のパッチが含まれています。
 1. **ACP2E-5029**: カタログ価格ルールの変更が&#x200B;**[!DNL Live Search]**&#x200B;に表示されない問題を修正して、手動再同期を実行します。
 1. **ACP2E-5041**：更新スケジュール中に製品を保存すると、ストアフロントで更新終了後に&#x200B;**[!UICONTROL Special Price]**&#x200B;ではなく通常価格が表示される問題を修正しました。
 1. **ACP2E-5059**：顧客が同じ注文に対して重複した注文確認メールを受信する問題を修正します。
-1. **ACP2E-5122**：ショッピングカートに対するGraphQL リクエストから処理されたエラーが、例外ログにアプリケーションエラーとして誤って記録される問題を修正します。
+1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)**：ショッピングカートに対するGraphQL リクエストから処理されたエラーが、例外ログにアプリケーションエラーとして誤って記録される問題を修正します。
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: メタデータのルーティングのみが要求された場合にGraphQL `route` クエリがCMS ページ全体のコンテンツをレンダリングする問題を修正し、Page Builder ウィジェットを含むCMS ページのデータベースクエリの数を増やしました。
 1. **ACP2E-5183**: `@magento_import` ディレクティブを使用する`LESS` ファイルのコンパイル中にPHP 8.5で静的コンテンツのデプロイメントが失敗する問題を修正します。
 1. **ACP2E-5242**: カートに商品を追加する際に製品の可用性を確認すると、web サイトが見つからないことを示すエラーが表示される問題を修正しました。
