@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 827148df3d53885c24ee333b9a0e8c5eb8d95216
+source-git-commit: baa1eb193d1cda28ee9891324b616ddee5f23f53
 workflow-type: tm+mt
-source-wordcount: '10911'
+source-wordcount: '10961'
 ht-degree: 0%
 ---
 
@@ -1076,6 +1076,10 @@ ht-degree: 0%
       - [AC-12854：管理者の再注文では、元の注文番号と–1の接尾辞が使用されます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5059：同時cron ジョブが重複した注文確認メールを送信する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)
+      - [ACP2E-5122：処理されたGraphQL カートのエラーが例外ログに正しく書き込まれない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)
+      - [ACP2E-4913: データベースのデッドロック後にREST APIの出荷と請求書の作成が再試行されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)
+      - [ACP2E-5017:GraphQLのカスタマーロールのクエリが、会社を持たない顧客に対して失敗する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)
       - [ACP2E-5143: GraphQL route クエリーが要求されないCMS ページコンテンツをレンダリングする](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)
       - [ACP2E-4741：リンクされた商品を保存すると、カスタムストックを使用して別の商品がストアフロントから非表示になる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
   - [Quality Patches ToolでAdobe Commerceの問題が発生した場合のパッチの確認](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)

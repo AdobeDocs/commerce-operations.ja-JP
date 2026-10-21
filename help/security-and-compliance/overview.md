@@ -25,7 +25,7 @@ ht-degree: 0%
 ## セキュリティ
 
 - [Adobe Product Security](https://helpx.adobe.com/jp/security.html): Adobe Commerceの最新パッチ、セキュリティアップデート、ベストプラクティスについて説明します。
-- [Adobe Trust Center](https://www.adobe.com/trust.html)：すべてのAdobe クラウドサービスの運用上の健全性、セキュリティ、プライバシー、およびコンプライアンスに関する利用可能な最新情報にアクセスします。
+- [Adobe Trust Center](https://www.adobe.com/jp/trust.html)：すべてのAdobe クラウドサービスの運用上の健全性、セキュリティ、プライバシー、およびコンプライアンスに関する利用可能な最新情報にアクセスします。
 - [&#x200B; サイト全体の分析ツール &#x200B;](../tools/site-wide-analysis-tool/dashboard.md): セキュリティスキャン、提供終了サービス、セキュリティに関する推奨事項など、Adobe Commerce サイトに関する合理的なセキュリティインサイトを表示します。
 - [&#x200B; セキュリティとコンプライアンスに関する通知](../release/security-enforcement-policy.md)：安全でコンプライアンスを維持するために、Cloud バージョン 2.4.4 ～ 2.4.9でAdobe Commerceに必要なアクションと期限について説明します。
 

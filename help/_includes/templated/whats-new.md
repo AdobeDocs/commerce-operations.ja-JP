@@ -114,7 +114,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>2.4.10-alpha1 リリースのドキュメントを追加しました：<br />- リリースハイライトと修正済みの問題を含む<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-10">Adobe Commerce リリースノート </a>を追加しました。<br />- リリースハイライトと修正済みの問題を含む<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-10">Magento Open Source リリースノート </a>を追加しました。<br />- 2.4.10-alpha用のクラウドとオンプレミスの依存関係テーブルを分離した<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements"> システム要件</a>を更新しました。<br />-<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/uct">UCT CLIをを1111111111111111111110.218.28.28.28.18.18.0.0.18.0.0.0.0.0.0.08.0.0.0.0.0.0.08.0.0.0.0.08.0.0</a></p>
+      <td><p>2.4.10-alpha1 リリースのドキュメントを追加しました：<br />- リリースハイライトと修正済みの問題を含む<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-10">Adobe Commerce リリースノート </a>を追加しました。<br />- リリースハイライトと修正済みの問題を含む<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/magento-open-source/2-4-10">Magento Open Source リリースノート </a>を追加しました。<br />- 2.4.10-alpha用のクラウドとオンプレミスの依存関係テーブルを分離した<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements"> システム要件</a>を更新しました。<br />-<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/uct">UCT CLIをを1111111111111111111110.218.28.28.28.18.18.0.0.18.0.0.0.0.0.0.08.0.0.0.0.0.0.08.0.0.0.0.08.0.0</a></p>
 </td>
       <td>
         メジャーアップデート、新しいトピック、リリースノート

@@ -20,7 +20,7 @@ ht-degree: 3%
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-10">2.4.10-alpha1</a>
+          <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-10">2.4.10-alpha1</a>
         </td>
         <td>2026年10月13日（PT）</td>
     </tr><!-- patch_releases -->
