@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 422a6e38f4e2298baa02090ee71d4f0fdfc95e3b
+source-git-commit: ea739d12f02672cf585925b90860bca3b44de02a
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '555'
 ht-degree: 0%
 ---
 # 概要：[!DNL Quality Patches Tool] （QPT） v1.1.84
@@ -32,8 +32,8 @@ ht-degree: 0%
 
 QPT v1.1.84には、次のパッチが含まれています。
 
+1. **[ACP2E-5005](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)**：管理でバンドル製品を再設定し、数量を編集すると、交渉可能な見積もりのバンドル製品オプションの数量が以前の値に戻る問題を修正します。
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: データベースのデッドロック後にREST APIの出荷と請求書の作成が永続的に失敗する問題を修正します。
-1. **ACP2E-5005**：管理でバンドル製品を再設定し、数量を編集すると、交渉可能な見積もりのバンドル製品オプションの数量が以前の値に戻る問題を修正します。
 1. **ACP2E-5009**: Magento Open SourceからAdobe Commerceへのデータ移行で、カテゴリのスケジュールされたデザイン変更と製品&#x200B;**[!UICONTROL Special Price]**&#x200B;のスケジュールされた更新が正しく移行されず、移行中に一部のスケジュールされた更新が欠落またはスキップする問題が修正され、移行のパフォーマンスが向上します。
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**：お客様が会社に割り当てられていない場合に、GraphQLを通じてお客様`role`にクエリを実行すると&#x200B;*社内サーバーエラー*&#x200B;が返される問題を修正しました。
 1. **ACP2E-5027**: ファイルのロックが有効になっている場合に、インデックスがループ内で停止したままになり、インデックス再作成が完了しない問題を修正します。
@@ -48,7 +48,6 @@ QPT v1.1.84には、次のパッチが含まれています。
 1. **ACP2E-5034**：配送方法を選択した後に見積もりを再計算する際に、交渉可能な見積もり管理が誤って合計を&#x200B;*ゼロ*&#x200B;にリセットし、管理者の&#x200B;**[!UICONTROL Configure]** アクションを通じて行われた製品オプション数量のバンドルの更新を破棄し、見積もり小計の動的な価格バンドル製品に適用されたアイテムレベル割引が正正反映反映されない問題を修正しました。
 1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**：既定以外の在庫とソースを使用している間に、関連製品、アップセル、またはクロスセルとしてリンクされている製品が保存された後、ストアフロントから製品が消える問題を修正します。
 1. **[ACP2E-5127](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)**: デフォルト以外のロケールを使用して管理者で会社アカウントを編集すると、その&#x200B;**[!UICONTROL Credit Limit]**&#x200B;が`0`にリセットされる問題を修正します。
-1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**：デフォルト以外の在庫とソースを使用している間に、その商品に[!UICONTROL Related Product]、[!UICONTROL Up-Sell]または[!UICONTROL Cross-Sell]としてリンクされている商品が保存された後、ストアフロントから商品が消える問題を修正します。
 1. **[ACP2E-5079](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)**：顧客アカウントがグローバルに共有されている場合、複数のweb サイトに割り当てられた顧客セグメントが最初のweb サイトからのみ一致する顧客を返す問題を修正します。
 1. **AC-15494**：商品クエリで、元の文字の代わりにHTML エスケープされた特殊文字を含む商品名が返される問題を修正します。
 
