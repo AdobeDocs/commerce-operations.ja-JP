@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ea739d12f02672cf585925b90860bca3b44de02a
+source-git-commit: 9d7a2fd125245848466442b66f53fd9b0476da4e
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 0%
 ---
 # 概要：[!DNL Quality Patches Tool] （QPT） v1.1.84
@@ -34,7 +34,7 @@ QPT v1.1.84には、次のパッチが含まれています。
 
 1. **[ACP2E-5005](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)**：管理でバンドル製品を再設定し、数量を編集すると、交渉可能な見積もりのバンドル製品オプションの数量が以前の値に戻る問題を修正します。
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: データベースのデッドロック後にREST APIの出荷と請求書の作成が永続的に失敗する問題を修正します。
-1. **ACP2E-5009**: Magento Open SourceからAdobe Commerceへのデータ移行で、カテゴリのスケジュールされたデザイン変更と製品&#x200B;**[!UICONTROL Special Price]**&#x200B;のスケジュールされた更新が正しく移行されず、移行中に一部のスケジュールされた更新が欠落またはスキップする問題が修正され、移行のパフォーマンスが向上します。
+1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)**: Magento Open SourceからAdobe Commerceへのデータ移行で、カテゴリのスケジュールされたデザイン変更と製品&#x200B;**[!UICONTROL Special Price]**&#x200B;のスケジュールされた更新が正しく移行されず、移行中に一部のスケジュールされた更新が欠落またはスキップされる問題が修正され、移行のパフォーマンスが向上します。
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**：お客様が会社に割り当てられていない場合に、GraphQLを通じてお客様`role`にクエリを実行すると&#x200B;*社内サーバーエラー*&#x200B;が返される問題を修正しました。
 1. **ACP2E-5027**: ファイルのロックが有効になっている場合に、インデックスがループ内で停止したままになり、インデックス再作成が完了しない問題を修正します。
 1. **ACP2E-5029**: カタログ価格ルールの変更が&#x200B;**[!DNL Live Search]**&#x200B;に表示されない問題を修正して、手動再同期を実行します。
