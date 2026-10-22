@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: baa1eb193d1cda28ee9891324b616ddee5f23f53
+source-git-commit: bbbc64cec77399dcff1a28326227858e7bf1f3a4
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '551'
 ht-degree: 0%
 ---
 # 概要：[!DNL Quality Patches Tool] （QPT） v1.1.84
@@ -46,8 +46,8 @@ QPT v1.1.84には、次のパッチが含まれています。
 1. **ACP2E-5242**: カートに商品を追加する際に製品の可用性を確認すると、web サイトが見つからないことを示すエラーが表示される問題を修正しました。
 1. **ACP2E-5263**：すべての製品が含まれる前にCSV ファイルへの製品の書き出しが停止し、ファイルが不完全になる問題を修正します。
 1. **ACP2E-5034**：配送方法を選択した後に見積もりを再計算する際に、交渉可能な見積もり管理が誤って合計を&#x200B;*ゼロ*&#x200B;にリセットし、管理者の&#x200B;**[!UICONTROL Configure]** アクションを通じて行われた製品オプション数量のバンドルの更新を破棄し、見積もり小計の動的な価格バンドル製品に適用されたアイテムレベル割引が正正反映反映されない問題を修正しました。
-1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**：既定以外の在庫とソースを使用している間に、関連製品、アップセル、またはクロスセルとしてリンクされている製品が保存された後、ストアフロントから製品が消える問題を修正します。
-1. **ACP2E-5079**：複数のweb サイトに割り当てられた顧客セグメントを評価すると、顧客アカウントがグローバルに共有された場合に、最初のweb サイトからのみ一致する顧客が返される問題を修正します。
+1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**：デフォルト以外の在庫とソースを使用している間に、その商品に[!UICONTROL Related Product]、[!UICONTROL Up-Sell]または[!UICONTROL Cross-Sell]としてリンクされている商品が保存された後、ストアフロントから商品が消える問題を修正します。
+1. **[ACP2E-5079](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)**：顧客アカウントがグローバルに共有されている場合、複数のweb サイトに割り当てられた顧客セグメントが最初のweb サイトからのみ一致する顧客を返す問題を修正します。
 1. **ACP2E-5127**: デフォルト以外のロケールを使用して管理パネルで会社アカウントを編集すると、その&#x200B;**[!UICONTROL Credit Limit]**&#x200B;が&#x200B;*ゼロ*&#x200B;にリセットされる問題を修正します。
 1. **AC-15494**：商品クエリで、元の文字の代わりにHTML エスケープされた特殊文字を含む商品名が返される問題を修正します。
 
