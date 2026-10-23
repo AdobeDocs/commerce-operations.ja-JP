@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 4ed8f5ee3aefe44d3139421a178ca6834a2815f6
+source-git-commit: b9ce2de42db0056d16d8df5e650231ae2b013653
 workflow-type: tm+mt
-source-wordcount: '11012'
+source-wordcount: '11022'
 ht-degree: 0%
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 0%
   - [Adobe Commerceの管理されたアラート：CPUの警告アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 品質パッチツール {#quality-patches-tool}
   - [[!DNL Quality Patches Tool]：品質パッチ用のセルフサービスツール](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-  - [[!DNL Quality Patches Tool]: パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}
+  - [[!DNL Quality Patches Tool]: パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
   - [使用状況](quality-patches-tool/usage.md)
   - [リリースノート](quality-patches-tool/release-notes.md)
   - 品質パッチツールで使用可能なパッチ {#patches-available-in-qpt}
@@ -901,8 +901,8 @@ ht-degree: 0%
       - [ACSD-67603：画像インクルージョンが有効になっている製品のサイトマップ生成時に長い処理時間](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
       - [ACSD-67093：日付範囲フィルターを使用してGraphQLで注文を取得すると、誤った結果が返される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67093.md)
       - [ACSD-67652:GraphQLの通話で在庫切れとして返された商品ステータスをバンドルし、子と親の商品の在庫を保持する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652.md)
-      - [ACSD-60624: [!DNL Page Builder]の画像、バナー、スライダーのセクションで、空のコンテンツのアップロードに失敗しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
-      - [ACSD-67904：市区町村名に数字（0-9）、アンパサンド（&amp;）、ピリオド（。）、括弧（） が含まれている場合、注文を行えません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
+      - [ACSD-60624: [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)の画像、バナー、スライダーのセクションで、空のコンテンツのアップロードに失敗しました
+      - [ACSD-67904：市区町村名に数字（0-9）、アンパサンド（&amp;）、ピリオド（。）、括弧（） ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)が含まれている場合、注文を行えません
       - [ACSD-67459: 65,536文字を超える説明を含む製品を読み込めない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
     - v1.1.72 {#v1-1-72}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
@@ -975,7 +975,7 @@ ht-degree: 0%
       - [ACSD-69494: 「is_online」を使用した非同期の返金要求がオンラインで返金されないトリガー](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)
       - [ACSD-68537：多くの顧客セグメントでチェックアウトパフォーマンスが低下する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537.md)
       - [ACSD-69311：請求書からの一部払い戻し後のクレジットメモでの誤った税計算](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)
-      - [ACSD-68341: PDPの読み込み時に複数のX-Magento-Vary Cookieの更新が発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
+      - [ACSD-68341:PDPの読み込み時に複数のX-Magento-Vary Cookieの更新が発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
     - v1.1.78 {#v1-1-78}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
       - [ACP2E-4513：期限切れのCAPTCHA画像がシステムから削除されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513.md)
@@ -1076,6 +1076,7 @@ ht-degree: 0%
       - [AC-12854：管理者の再注文では、元の注文番号と–1の接尾辞が使用されます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5263：製品CSVの書き出しが早期に停止し、製品が省略される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)
       - [ACP2E-5009: コンテンツ ステージングの移行で無効な更新が作成され、設定が遅くなります:upgrade](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)
       - [ACP2E-5005：バンドル製品数量が管理者交渉可能な引用符で更新されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)
       - [ACP2E-5127：英語以外の管理者ロケールを持つ会社を保存すると、クレジット制限がゼロにリセットされる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)
@@ -1097,7 +1098,7 @@ ht-degree: 0%
   - [フォーカスタブの選択](observation-for-adobe-commerce/choosing-focus-tabs.md)
   - [「概要」タブ](observation-for-adobe-commerce/summary.md)
   - [「Elasticsearch」タブ](observation-for-adobe-commerce/elasticsearch.md)
-  - [Redis タブ &#x200B;](observation-for-adobe-commerce/redis-tab.md)
+  - [Redis タブ ](observation-for-adobe-commerce/redis-tab.md)
   - [「MySQL」タブ](observation-for-adobe-commerce/mysql-tab.md)
   - [「PHP」タブ](observation-for-adobe-commerce/php-tab.md)
   - [「ボット」タブ](observation-for-adobe-commerce/bots.md)
@@ -1109,7 +1110,7 @@ ht-degree: 0%
   - [「Cron」タブ](observation-for-adobe-commerce/cron-tab.md)
   - [「索引付け」タブ](observation-for-adobe-commerce/indexing-tab.md)
   - [「QuickView」タブ](observation-for-adobe-commerce/oac-quickview-tab.md)
-  - [&#x200B; セキュリティ タブ &#x200B;](observation-for-adobe-commerce/security-tab.md)
+  - [ セキュリティ タブ ](observation-for-adobe-commerce/security-tab.md)
   - [「インフラ」タブ](observation-for-adobe-commerce/oac-infra.md)
   - [Adobe CommerceでのObservationの使用方法](observation-for-adobe-commerce/how-to-use.md)
 - データ移行ツール {#data-migration}
@@ -1133,6 +1134,6 @@ ht-degree: 0%
     - [手作業による移行が必要なデータ](data-migration-tool/migrate-data/manual.md)
     - [データ移行後の手順](data-migration-tool/migrate-data/post-migration.md)
   - リソース {#resources}
-    - [トラブルシューティング](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
+    - [トラブルシューティング](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
     - [変更ログ](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
+- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
