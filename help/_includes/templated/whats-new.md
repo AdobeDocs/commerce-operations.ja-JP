@@ -1,7 +1,7 @@
 ---
-source-git-commit: 42acba2c908566207c9cbdd3b1c5b849366f9d32
+source-git-commit: e402a703aa2b493618d866ba001273d4f3b21bc6
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1830'
 ht-degree: 1%
 ---
 # 新しいテンプレート
@@ -9,6 +9,180 @@ ht-degree: 1%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年10月23日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263">ACP2E-5263のQPT 1.1.84修正に関する詳細な説明を追加しました。製品CSVの書き出しは早めに停止し、製品</a>を省略します。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b9382dc0f240bcebddcb833940f6074854949964">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月22日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127">ACP2E-5127のQPT 1.1.84修正に関する詳細な説明を追加しました。英語以外の管理者ロケールを持つ会社を保存すると、クレジット制限がゼロにリセットされます</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/67377f54c43f6dc50cb33aafbd003d4b365cbaf5">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005">ACP2E-5005のQPT 1.1.84修正に関する詳細な説明を追加しました：バンドル製品数量が管理者交渉可能な引用符</a>で更新されません。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d6fa3a2ebb8591baad26251a7e0adde24b7adab6">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009">ACP2E-5009のQPT 1.1.84修正に関する詳細な説明を追加しました。コンテンツ ステージングの移行により、無効な更新が作成され、セットアップが遅くなります：upgrade</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9ee0ee2a0dd1f55f4b49b6023d69f61065387d49">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月21日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079">ACP2E-5079のQPT 1.1.84修正に関する詳細な説明を追加しました。顧客セグメントは、グローバルアカウント共有を持つ最初のweb サイトにのみ一致します</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b243d218091c48dc97f2ff7ffa3e79325aa889c5">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月20日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913">ACP2E-4913のQPT 1.1.84修正に関する詳細な説明を追加しました：データベースのデッドロック後にREST APIの出荷と請求書の作成が再試行されない</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf4c32b6c0780b2f6f8dbccd27f4d7bba3579520">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017">ACP2E-5017のQPT 1.1.84の修正に関する詳細な説明を追加しました。GraphQLのお客様のロールのクエリが、会社を持たないお客様に対して失敗しました</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a5cc23e2d9c50215402b7454267cfe7a3c3201cd">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122">ACP2E-5122のQPT 1.1.84の修正に関する詳細な説明を追加しました：処理されたGraphQL カート エラーが例外ログに誤って書き込まれます</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ba9e8ab95a6e8f079953f6de8906512f64ade22f">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059">ACP2E-5059のQPT 1.1.84修正に関する詳細な説明を追加しました：同時cron ジョブが重複した注文確認メールを送信します</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7e234cf6acf7fa74f7f5eff0e39f606123dcc485">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月19日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940">AC-14940のQPT 1.1.83修正に関する詳細な説明を追加しました。お客様のストアビューを削除した後、パスワードリセットの電子メールが送信されません</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7ab75a56bd8ca9bc9bcc96dc21678c99711b6ef3">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p>QPT 1.1.83の修正に関する詳細な説明を<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389">AC-11389に追加しました。注文合計は、商品がカートに追加された注文に応じて異なります</a>。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3e45719183a23e37a98a94aca955b902f5e795ed">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877">ACP2E-4877のQPT 1.1.83修正に関する詳細な説明を追加しました。管理者</a>のアカウント注文の保留中の支払いに対する編集ボタンが見つかりません。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/620de17746347e5cb352b2c9f6a345bd5b41accb">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977">ACP2E-4977のQPT 1.1.83修正に関する詳細な説明を追加しました。設定可能な製品請求書とクレジットメモ合計は、固定製品税</a>を除外します。</p>
+</td>
+      <td>
+        新しいトピック、qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd42ed03b4661e13c24dd3ce8df29375ae1c9e32">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年10月16日（PT）
 
@@ -320,28 +494,6 @@ ht-degree: 1%
         新しいトピック、qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/edfc38af34925749c5acb36d2c0bcfc5d16a577a">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月19日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Commerce キャッシュに関するドキュメントを更新し、オンプレミスとクラウドのガイダンスと、Symfony L2 キャッシュを使用してValkeyに移行するための新しい移行ガイダンスを更新しました：<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/caching-overview"> キャッシュの概要と設定オプション </a>。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/cache-types"> キャッシュフロントエンドとタイプを更新</a>。<br />- パフォーマンス最適化のための<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/cache-options"> キャッシュバックエンドオプションとストレージ参照</a>を更新しました。<br />- </a>から1&rbrace;Symfony2 キャッシュへのへのへの移行移行ガイダンスをに更新しました。<a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cache/level-two-cache">- <a href="https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration"> クラウド固有の移行手順を使用したValkeyとRedis サービス設定</a>のベストプラクティスと、Symfony L2 キャッシュを使用したValkeyへの移行の手順。<code>RemoteSynchronizedCache</code><br /></p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a840b544de95a4bb17ef49d0325b16d461aecaa">コミット</a></td>
     </tr>
   </tbody>
 </table>
