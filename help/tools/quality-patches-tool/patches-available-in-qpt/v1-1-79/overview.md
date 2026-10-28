@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 5c33cd529bff9208d640cec3c4068f578a9e376c
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '335'
 ht-degree: 0%
 ---
 # 概要：[!DNL Quality Patches Tool] （QPT） v1.1.79
@@ -39,7 +39,7 @@ QPT v1.1.79には次のパッチが含まれています。
 1. **[ACP2E-4706](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706.md)**：管理者スコープで有効になっていない製品が[!UICONTROL Target Rule] インデクサーによってスキップされた問題を修正します。
 1. **[ACP2E-4720](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)**: カート割引ルールを適用したバンドル商品に対して送料無料が適切に適用または削除されなかった問題を修正します。
 1. **[ACP2E-4475](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)**: [!UICONTROL Display Out of Stock Products] オプションが有効になっている場合に、商品リストページで誤って在庫切れのバンドル商品がフィルタリングされ、価格で並べ替えられる問題を修正します。
-1. **[AC-10698](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)**: システムが通貨を個別の注文に関連付けるのではなく、全注文レベルで送信した問題を修正します。
+1. **[AC-10698](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)**: システムが通貨を個別の注文に関連付けるのではなく、すべての注文レベルで送信した問題を修正します。 トランザクションの価格と合計が注文ごとに[!DNL Google Tag]に送信されるようになり、e コマースデータの追跡精度が向上しました。
 1. **[ACP2E-4411](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)**: カートページおよび複数通貨販売店のミニカートでバンドル商品に誤った価格が表示される問題を修正します。
 1. **[ACP2E-4110](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)**: **[!UICONTROL Special Price]**&#x200B;のバンドル製品がデフォルト以外の通貨でPDPおよびPLPに誤った金額を表示する問題を修正します。
 1. **[AC-10737](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)**: `bin/magento setup:db:status` コマンドがJSON データタイプを認識しない問題を修正します。
