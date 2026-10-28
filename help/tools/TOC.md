@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: d83b72ab0780e56af7cf7732de2bfe8de7d7b9c5
+source-git-commit: 04e36db108c59bd9be2431a5b1a9ee86891b6268
 workflow-type: tm+mt
-source-wordcount: '11051'
+source-wordcount: '11061'
 ht-degree: 0%
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 0%
   - [Adobe Commerceの管理されたアラート：CPUの警告アラート](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 品質パッチツール {#quality-patches-tool}
   - [[!DNL Quality Patches Tool]：品質パッチ用のセルフサービスツール](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-  - [[!DNL Quality Patches Tool]: パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja){target="_blank"}
+  - [[!DNL Quality Patches Tool]: パッチの検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
   - [使用状況](quality-patches-tool/usage.md)
   - [リリースノート](quality-patches-tool/release-notes.md)
   - 品質パッチツールで使用可能なパッチ {#patches-available-in-qpt}
@@ -417,7 +417,7 @@ ht-degree: 0%
     - v1.1.33 {#v1-1-33}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.33](quality-patches-tool/patches-available-in-qpt/v1-1-33/overview.md)
       - [ACSD-51792: ページにインプレッションイベントがありません](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51792-page-does-not-have-impression-event.md)
-      - [ACSD-51645：拡張機能「Magento_OfflineShipping」が無効になっている場合の新しいカート価格ルールの保存](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
+      - [ACSD-51645：拡張機能Magento_OfflineShippingが無効になっている場合の新しいカート価格ルールの保存](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
       - [ACSD-51240：会社登録フォームによる登録中にアップロードされたファイルが見つからない](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51240-uploaded-file-missing-while-registering-via-company-registration-form.md)
       - [ACSD-51907：制限付きの管理者ユーザーが、オフラインの払い戻し用のクレジットメモを作成できない](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51907-restricted-admin-user-cannot-create-a-credit-memo-with-an-offline-refund.md)
       - [ACSD-51892：設定ファイルが複数回読み込まれるパフォーマンスの問題](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.md)
@@ -639,7 +639,7 @@ ht-degree: 0%
       - [ACSD-46938：セットアップ中のDB トリガーのパフォーマンスの問題:upgrade](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
       - [ACSD-54887：顧客セッションの有効期限が切れた後、顧客ショッピングカートがクリアされる](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-54887-customer-shopping-cart-gets-cleared-after-session-expiry.md)
       - [ACSD-58141: L2 Redis キャッシュが有効になっている場合、PHPSESSIDがログイン顧客向けのPOST リクエストで再生成される](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
-      - [ACSD-59229：古いX-Magento-Vary値による顧客グループのデータ割り当て間違い](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
+      - [ACSD-59229：古いX-Magento-Vary値による顧客グループ データの割り当て間違い](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
       - [ACSD-60441: V1/customers [!DNL REST] API エンドポイントを使用して顧客を更新すると、エラーがスローされる](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
       - [ACSD-58352: デフォルトストアの属性ラベルを [!DNL GraphQL] APIを介して返す](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
       - [ACSD-59514：管理画面でFormsがブラウザーコンソールで [!DNL Page Builder]  スローのエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
@@ -901,8 +901,8 @@ ht-degree: 0%
       - [ACSD-67603：画像インクルージョンが有効になっている製品のサイトマップ生成時に長い処理時間](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
       - [ACSD-67093：日付範囲フィルターを使用してGraphQLで注文を取得すると、誤った結果が返される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67093.md)
       - [ACSD-67652:GraphQLの通話で在庫切れとして返された商品ステータスをバンドルし、子と親の商品の在庫を保持する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652.md)
-      - [ACSD-60624: [!DNL Page Builder]の画像、バナー、スライダーのセクションで、空のコンテンツのアップロードに失敗しました](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
-      - [ACSD-67904：市区町村名に数字（0-9）、アンパサンド（&amp;）、ピリオド（。）、括弧（） が含まれている場合、注文を行えません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
+      - [ACSD-60624: [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)の画像、バナー、スライダーのセクションで、空のコンテンツのアップロードに失敗しました
+      - [ACSD-67904：市区町村名に数字（0-9）、アンパサンド（&amp;）、ピリオド（。）、括弧（） ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)が含まれている場合、注文を行えません
       - [ACSD-67459: 65,536文字を超える説明を含む製品を読み込めない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
     - v1.1.72 {#v1-1-72}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
@@ -975,7 +975,7 @@ ht-degree: 0%
       - [ACSD-69494: 「is_online」を使用した非同期の返金要求がオンラインで返金されないトリガー](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)
       - [ACSD-68537：多くの顧客セグメントでチェックアウトパフォーマンスが低下する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537.md)
       - [ACSD-69311：請求書からの一部払い戻し後のクレジットメモでの誤った税計算](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)
-      - [ACSD-68341: PDPの読み込み時に複数のX-Magento-Vary Cookieの更新が発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
+      - [ACSD-68341:PDPの読み込み時に複数のX-Magento-Vary Cookieの更新が発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
     - v1.1.78 {#v1-1-78}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
       - [ACP2E-4513：期限切れのCAPTCHA画像がシステムから削除されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513.md)
@@ -1076,6 +1076,7 @@ ht-degree: 0%
       - [AC-12854：管理者の再注文では、元の注文番号と–1の接尾辞が使用されます](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [AC-15494: GraphQL製品クエリがHTML エスケープされた製品名を返す](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)
       - [ACP2E-5242:GraphQLは、カートへの追加リクエスト時にストア IDをweb サイト IDとして使用します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)
       - [ACP2E-5027：アプリケーションロックでファイルロックプロバイダーが使用されていると、インデクサーが終了しない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)
       - [ACP2E-5263：製品CSVの書き出しが早期に停止し、製品が省略される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)
@@ -1100,7 +1101,7 @@ ht-degree: 0%
   - [フォーカスタブの選択](observation-for-adobe-commerce/choosing-focus-tabs.md)
   - [「概要」タブ](observation-for-adobe-commerce/summary.md)
   - [「Elasticsearch」タブ](observation-for-adobe-commerce/elasticsearch.md)
-  - [Redis タブ &#x200B;](observation-for-adobe-commerce/redis-tab.md)
+  - [Redis タブ ](observation-for-adobe-commerce/redis-tab.md)
   - [「MySQL」タブ](observation-for-adobe-commerce/mysql-tab.md)
   - [「PHP」タブ](observation-for-adobe-commerce/php-tab.md)
   - [「ボット」タブ](observation-for-adobe-commerce/bots.md)
@@ -1112,7 +1113,7 @@ ht-degree: 0%
   - [「Cron」タブ](observation-for-adobe-commerce/cron-tab.md)
   - [「索引付け」タブ](observation-for-adobe-commerce/indexing-tab.md)
   - [「QuickView」タブ](observation-for-adobe-commerce/oac-quickview-tab.md)
-  - [&#x200B; セキュリティ タブ &#x200B;](observation-for-adobe-commerce/security-tab.md)
+  - [ セキュリティ タブ ](observation-for-adobe-commerce/security-tab.md)
   - [「インフラ」タブ](observation-for-adobe-commerce/oac-infra.md)
   - [Adobe CommerceでのObservationの使用方法](observation-for-adobe-commerce/how-to-use.md)
 - データ移行ツール {#data-migration}
@@ -1136,6 +1137,6 @@ ht-degree: 0%
     - [手作業による移行が必要なデータ](data-migration-tool/migrate-data/manual.md)
     - [データ移行後の手順](data-migration-tool/migrate-data/post-migration.md)
   - リソース {#resources}
-    - [トラブルシューティング](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
+    - [トラブルシューティング](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
     - [変更ログ](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
+- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
