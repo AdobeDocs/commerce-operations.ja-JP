@@ -18,9 +18,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 244ff697888c6feed99861b3e7b63c8cccc3676c
 workflow-type: tm+mt
-source-wordcount: '33143'
+source-wordcount: '33534'
 ht-degree: 0%
 ---
 # リリースノート
@@ -29,11 +29,28 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce プロジェクトにパッチを適用する手順については、[&#x200B; パッチを適用](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ja#apply-individual-patches)を参照してください。 リリースされたパッチの完全なリストを確認するには、「[[!DNL Quality Patches Tool]: パッチを検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ja)」を参照してください。
+>Adobe Commerce プロジェクトにパッチを適用する手順については、[ パッチを適用](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)を参照してください。 リリースされたパッチの完全なリストを確認するには、「[[!DNL Quality Patches Tool]: パッチを検索](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)」を参照してください。
 
 >[!INFO]
 >
->Magento Open Sourceのコミュニティによって作成された[!DNL quality patches]について詳しくは、[&#x200B; リリースノート &#x200B;](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)を参照してください。
+>Magento Open Sourceのコミュニティによって作成された[!DNL quality patches]について詳しくは、[ リリースノート ](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)を参照してください。
+
+## v1.1.85 {#v1-1-85}
+
+* **ACP2E-4929** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.5 &lt;2.4.10） - [!UICONTROL Compare Products] ページの属性ラベルに、現在のストアビューではなく、別のストアビューからの翻訳が表示される問題を修正します。
+* **ACP2E-5075** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.8 &lt;2.4.10） – カテゴリ条件を持つ固定金額カート価格ルールで、ルールがバンドルの親商品のみに一致する場合に、動的価格バンドル商品のすべての子に誤って割引が適用される問題を修正します。
+* **ACP2E-5077** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.7-p7 &lt;2.4.10） – 同時に&lt;ph=&#39;114&#39;/>件のGraphQL クエリまたは`POST /V1/carts/mine REST`件のリクエストで、アクティブなカートを持っていないユーザーに対して重複するアクティブなカートが作成される問題を修正します。`customerCart`
+* **ACP2E-5088** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.8 &lt;2.4.10） – セッションの有効期限が切れると、顧客の永続的なショッピングカートがクリアされる問題を修正します。
+* **ACP2E-3991** （Adobe Commerce >=2.4.7 &lt;2.4.9）の場合 – クライアント IP アドレスが正しく判断されない問題を修正します。
+* **ACP2E-5092** （Adobe Commerceの場合、B2B >=1.3.4 &lt;1.5.4） - [!UICONTROL Company Profile] ページと管理者[!UICONTROL Customer Edit] ページで、リージョンなしで保存された会社の住所が後でその国に追加された場合にエラーが表示される問題を修正します。
+* **ACP2E-5124** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.5 &lt;2.4.10） - [!UICONTROL Validation Strategy]が&#x200B;*エラー*&#x200B;で停止に設定されている場合に、検証結果で[!UICONTROL Import] ボタンが引き続き有効になる問題を修正します。
+* **AC-17456** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.9 &lt;2.4.10） – 管理パネルの[!UICONTROL Design Configuration] ページで&#x200B;*[!UICONTROL Global]* スコープを編集すると、PHP 8.4および8.5で&#x200B;*HTTP 500* エラーが返される問題を修正します。
+* **ACP2E-5212** （Adobe Commerceの場合、B2B >=1.3.4 &lt;1.5.4） - [!UICONTROL Quick Order]が`.csv`拡張子で名前変更された非CSV ファイルを受け入れる問題を修正します。
+* **ACP2E-5300** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.9 &lt;2.4.10） - Admin Panel [!UICONTROL Orders] グリッドで複数のスペース区切りまたはコンマ区切りの注文番号を検索すると、一致する注文が返されない問題を修正します。
+* **ACP2E-5354** （Adobe Commerceの場合、B2B >=1.5.3 &lt;1.5.4） - REST APIを使用してお客様を更新すると、企業アカウントに関連付けられたお客様が管理者[!UICONTROL Customers] グリッドに複数回表示される問題を修正します。
+* **ACP2E-5208** （Adobe Commerceの場合、B2B >=1.5.1 &lt;1.5.4） - [!UICONTROL Requisition List] セクションが、変更が加えられていない場合でも、すべてのStorefront ページナビゲーションで再読み込みされる問題を修正します。
+* 更新されたバージョン：**ACP2E-4894**
+* 置き換えられたパッチ：**ACP2E-4626**
 
 ## v1.1.84 {#v1-1-84}
 
@@ -136,7 +153,7 @@ ht-degree: 0%
 * **ACP2E-4156** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.8 &lt;2.4.9） - REST APIでの配送先住所の検証が、Adminで定義された属性設定に準拠しない問題を修正します。
 * **ACP2E-4813** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.6-p3 &lt;2.4.6-p15 || >=2.4.7 &lt;2.4.7-p10 || >=2.4.8 &lt;2.4.8-p5） – チェックアウト時にUSPS配送方法が利用できず、複数のパッケージに分割される注文を含む特定の製品の配送見積りが正しくない問題を修正修正しました。
 * **ACSD-53502** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.4 &lt;2.4.6） - New Relic モニタリングスクリプトへの再帰呼び出しにより、iOS Safariのストアフロントでカートへの追加が断続的に失敗し、ページがリロードされる問題を修正します。
-* 更新されたバージョン：**AC-15210**、**MDVA-12304**、**ACSD-46520**、**ACSD-48627**、**ACSD-49898**、**ACSD-51291**、**ACSD-51358**、**ACSD-50815**、**ACSD-54106**、**ACSD-53636 55100**、**ACSD-1&rbrace;** ACSD-58008 **、** ACSD-61133 **、** ACSD-63286 **、** ACSD-67941 **、** ACSD-64546 **、** ACSD-64118 **、** ACSD-65822 **、** ACSD-57477 **、** ACSD-58108 66149 66404 67250 67686 68925 **、** ACSD-4&rbrace; **ACSD-**、**ACSD-**、**ACSD-**、**ACSD-**、**ACP2E-4402**、**ACP2E-4505**、**ACP2E-4603**、**ACP2E-475&rbrace;**&#x200B;**&#x200B;**
+* 更新されたバージョン：**AC-15210**、**MDVA-12304**、**ACSD-46520**、**ACSD-48627**、**ACSD-49898**、**ACSD-51291**、**ACSD-51358**、**ACSD-50815**、**ACSD-54106**、**ACSD-53636 55100**、**ACSD-1}** ACSD-58008 **、** ACSD-61133 **、** ACSD-63286 **、** ACSD-67941 **、** ACSD-64546 **、** ACSD-64118 **、** ACSD-65822 **、** ACSD-57477 **、** ACSD-58108 66149 66404 67250 67686 68925 **、** ACSD-4} **ACSD-**、**ACSD-**、**ACSD-**、**ACSD-**、**ACP2E-4402**、**ACP2E-4505**、**ACP2E-4603**、**ACP2E-475}******
 * 置き換えられたパッチ：**AC-15210**、**ACSD-58108**
 
 ## v1.1.79 {#v1-1-79}
@@ -269,7 +286,7 @@ ht-degree: 0%
 * **ACSD-68092** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.8 &lt;2.4.9） – スケジュールされた更新とベース製品データ間の同期が正しくないため、複数回の保存の後にバンドル製品オプションが失われる問題を修正します。
 * **ACSD-67424** （Adobe Commerceの場合、B2B >=1.5.0 &lt;1.5.3） – 交渉可能な引用符を使用する場合、`GET /carts/search` [!DNL REST] API応答の`updated_at`値が&#x200B;**[!UICONTROL Admin panel]**&#x200B;に表示されている値と一致しない問題を修正します。
 * **ACSD-67187** （Adobe Commerce、B2B >=1.5.1 &lt;1.5.3の場合） – デフォルト以外のweb サイトに制限された管理者ユーザーにエラーが表示される問題を修正します。*少なくともパブリック共有カタログを作成して続行してください*。また、会社グリッドの&#x200B;**[!UICONTROL Add New Company]** ボタンにアクセスできません。
-* 更新されたバージョン：**ACSD-49737**、**ACSD-53750**、**ACSD-51819**、**ACSD-55566**、**ACSD-62965**、**ACSD-63323**、**ACSD-63406**、**ACSD-66139**、**ACSD-66404**、**ACSD-67659 66301**、**ACSD-11&rbrace;**
+* 更新されたバージョン：**ACSD-49737**、**ACSD-53750**、**ACSD-51819**、**ACSD-55566**、**ACSD-62965**、**ACSD-63323**、**ACSD-63406**、**ACSD-66139**、**ACSD-66404**、**ACSD-67659 66301**、**ACSD-11}**
 * 置換されたパッチ：**ACSD-62577**、**ACSD-63325**、**ACSD-67102**
 
 ## v1.1.71 {#v1-1-71}
