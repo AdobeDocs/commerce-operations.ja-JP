@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d864a5fb8d9093a14575f017e7b66a19219d503f
+source-git-commit: cbba2086ee177da6a26da84984153b54c725e1a8
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '525'
 ht-degree: 0%
 ---
 # 概要：[!DNL Quality Patches Tool] （QPT） v1.1.83
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 QPT v1.1.83には次のパッチが含まれています。
 
-1. **AC-17975**：特定のPHP環境での管理者ワークフロー、チェックアウト認証、CAPTCHA処理、カテゴリ管理、設定ページ、コマンドライン操作に影響する複数のPHP 8.5互換性の問題を修正します。
+1. **[AC-17975](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)**: PHP 8.5を使用すると、Adobe Commerce 2.4.9でCLI コマンド、カテゴリ編集、デザイン設定、AJAX カスタマーログインが失敗する問題を修正しました。
 1. **[ACP2E-4877](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)**: *保留中*&#x200B;の状態で、アカウントの支払いを使用して行われた注文を管理者で編集できない問題を修正しました。
 1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)**: Sales GraphQLの日付フィールドで、以前のリリースとは異なる形式で日付が返される問題を修正します。日付の形式をスラッシュ区切り（/）からダッシュ区切り（ – ）に戻します。
 1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)**: GraphQLから返される注文日と注文コメントのタイムスタンプが、英語以外のロケール設定で誤ったカレンダー日付を表示する問題を修正しました。
