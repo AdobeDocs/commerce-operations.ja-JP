@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 04e36db108c59bd9be2431a5b1a9ee86891b6268
+source-git-commit: cbba2086ee177da6a26da84984153b54c725e1a8
 workflow-type: tm+mt
-source-wordcount: '11061'
+source-wordcount: '11091'
 ht-degree: 0%
 ---
 
@@ -1060,6 +1060,8 @@ ht-degree: 0%
       - [ACP2E-4875：大規模なアドレス帳を使用して顧客アカウントを開くときに管理者ユーザーがログアウトする](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [AC-17975: PHP 8.5の互換性の問題は、CLI コマンド、カテゴリ編集、デザイン設定、および顧客ログインに影響します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)
+      - [AC-16530：予定されたカタログ価格ルールの更新後、ショッピングカートに一貫性のない価格が表示される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530.md)
       - [ACP2E-4977：設定可能な製品請求書とクレジットメモの合計が固定製品税を除外](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)
       - [AC-11389：注文合計は、商品がカートに追加された注文によって異なります](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)
       - [ACP2E-4877：管理画面でアカウント注文の支払いを保留中の場合、編集ボタンが表示されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)

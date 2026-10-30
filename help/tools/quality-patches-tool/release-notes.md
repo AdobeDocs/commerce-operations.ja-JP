@@ -18,9 +18,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 244ff697888c6feed99861b3e7b63c8cccc3676c
 workflow-type: tm+mt
-source-wordcount: '33143'
+source-wordcount: '33534'
 ht-degree: 0%
 ---
 # リリースノート
@@ -34,6 +34,23 @@ ht-degree: 0%
 >[!INFO]
 >
 >Magento Open Sourceのコミュニティによって作成された[!DNL quality patches]について詳しくは、[&#x200B; リリースノート &#x200B;](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)を参照してください。
+
+## v1.1.85 {#v1-1-85}
+
+* **ACP2E-4929** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.5 &lt;2.4.10） - [!UICONTROL Compare Products] ページの属性ラベルに、現在のストアビューではなく、別のストアビューからの翻訳が表示される問題を修正します。
+* **ACP2E-5075** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.8 &lt;2.4.10） – カテゴリ条件を持つ固定金額カート価格ルールで、ルールがバンドルの親商品のみに一致する場合に、動的価格バンドル商品のすべての子に誤って割引が適用される問題を修正します。
+* **ACP2E-5077** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.7-p7 &lt;2.4.10） – 同時に&lt;ph=&#39;114&#39;/>件のGraphQL クエリまたは`POST /V1/carts/mine REST`件のリクエストで、アクティブなカートを持っていないユーザーに対して重複するアクティブなカートが作成される問題を修正します。`customerCart`
+* **ACP2E-5088** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.8 &lt;2.4.10） – セッションの有効期限が切れると、顧客の永続的なショッピングカートがクリアされる問題を修正します。
+* **ACP2E-3991** （Adobe Commerce >=2.4.7 &lt;2.4.9）の場合 – クライアント IP アドレスが正しく判断されない問題を修正します。
+* **ACP2E-5092** （Adobe Commerceの場合、B2B >=1.3.4 &lt;1.5.4） - [!UICONTROL Company Profile] ページと管理者[!UICONTROL Customer Edit] ページで、リージョンなしで保存された会社の住所が後でその国に追加された場合にエラーが表示される問題を修正します。
+* **ACP2E-5124** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.5 &lt;2.4.10） - [!UICONTROL Validation Strategy]が&#x200B;*エラー*&#x200B;で停止に設定されている場合に、検証結果で[!UICONTROL Import] ボタンが引き続き有効になる問題を修正します。
+* **AC-17456** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.9 &lt;2.4.10） – 管理パネルの[!UICONTROL Design Configuration] ページで&#x200B;*[!UICONTROL Global]* スコープを編集すると、PHP 8.4および8.5で&#x200B;*HTTP 500* エラーが返される問題を修正します。
+* **ACP2E-5212** （Adobe Commerceの場合、B2B >=1.3.4 &lt;1.5.4） - [!UICONTROL Quick Order]が`.csv`拡張子で名前変更された非CSV ファイルを受け入れる問題を修正します。
+* **ACP2E-5300** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.9 &lt;2.4.10） - Admin Panel [!UICONTROL Orders] グリッドで複数のスペース区切りまたはコンマ区切りの注文番号を検索すると、一致する注文が返されない問題を修正します。
+* **ACP2E-5354** （Adobe Commerceの場合、B2B >=1.5.3 &lt;1.5.4） - REST APIを使用してお客様を更新すると、企業アカウントに関連付けられたお客様が管理者[!UICONTROL Customers] グリッドに複数回表示される問題を修正します。
+* **ACP2E-5208** （Adobe Commerceの場合、B2B >=1.5.1 &lt;1.5.4） - [!UICONTROL Requisition List] セクションが、変更が加えられていない場合でも、すべてのStorefront ページナビゲーションで再読み込みされる問題を修正します。
+* 更新されたバージョン：**ACP2E-4894**
+* 置き換えられたパッチ：**ACP2E-4626**
 
 ## v1.1.84 {#v1-1-84}
 
