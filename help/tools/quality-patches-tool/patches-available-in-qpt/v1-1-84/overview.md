@@ -21,7 +21,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 04e36db108c59bd9be2431a5b1a9ee86891b6268
+source-git-commit: c97df849a9fba077fc75b194298ab759e3129ad5
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -39,10 +39,10 @@ QPT v1.1.84には、次のパッチが含まれています。
 1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)**: ファイルのロックが有効になっている場合に、インデックスがループ内で停止したままになり、インデックス再作成が完了しない問題を修正します。
 1. **ACP2E-5029**: カタログ価格ルールの変更が&#x200B;**[!DNL Live Search]**&#x200B;に表示されない問題を修正して、手動再同期を実行します。
 1. **ACP2E-5041**：更新スケジュール中に製品を保存すると、ストアフロントで更新終了後に&#x200B;**[!UICONTROL Special Price]**&#x200B;ではなく通常価格が表示される問題を修正しました。
+1. **[ACP2E-5183](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)**: `@magento_import` ディレクティブを使用する`LESS` ファイルのコンパイル中にPHP 8.5で静的コンテンツのデプロイメントが失敗する問題を修正します。
 1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**：顧客が同じ注文に対して重複した注文確認メールを受信する問題を修正します。
 1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)**：ショッピングカートに対するGraphQL リクエストから処理されたエラーが、例外ログにアプリケーションエラーとして誤って記録される問題を修正します。
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: メタデータのルーティングのみが要求された場合にGraphQL `route` クエリがCMS ページ全体をレンダリングし、[!DNL Page Builder] ウィジェットを含むCMS ページのデータベースクエリを増やす問題を修正しました。
-1. **ACP2E-5183**: `@magento_import` ディレクティブを使用する`LESS` ファイルのコンパイル中にPHP 8.5で静的コンテンツのデプロイメントが失敗する問題を修正します。
 1. **[ACP2E-5242](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)**: カートに商品を追加する際に製品の可用性を確認すると、web サイトが見つからないことを示すエラーが表示される問題を修正しました。
 1. **[ACP2E-5263](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)**：すべての製品が含まれる前にCSV ファイルへの製品の書き出しが停止し、ファイルが不完全になる問題を修正します。
 1. **ACP2E-5034**：配送方法を選択した後に見積もりを再計算する際に、交渉可能な見積もり管理が誤って合計を&#x200B;*ゼロ*&#x200B;にリセットし、管理者の&#x200B;**[!UICONTROL Configure]** アクションを通じて行われた製品オプション数量のバンドルの更新を破棄し、見積もり小計の動的な価格バンドル製品に適用されたアイテムレベル割引が正正反映反映されない問題を修正しました。

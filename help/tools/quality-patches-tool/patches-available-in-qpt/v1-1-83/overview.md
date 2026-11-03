@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: cbba2086ee177da6a26da84984153b54c725e1a8
+source-git-commit: a376b03617703097396bef92f8174bfe1da34c52
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '524'
 ht-degree: 0%
 ---
 # 概要：[!DNL Quality Patches Tool] （QPT） v1.1.83
@@ -32,13 +32,13 @@ ht-degree: 0%
 
 QPT v1.1.83には次のパッチが含まれています。
 
+1. **[ACP2E-4908](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908.md)**：各ストアビューで各製品に対して別々のレイアウトキャッシュエントリが作成されたため、大きなカタログが[!DNL Valkey] （または[!DNL Redis]）で過度のメモリ使用を引き起こす可能性がある問題を修正します。
 1. **[AC-17975](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)**: PHP 8.5を使用すると、Adobe Commerce 2.4.9でCLI コマンド、カテゴリ編集、デザイン設定、AJAX カスタマーログインが失敗する問題を修正しました。
 1. **[ACP2E-4877](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)**: *保留中*&#x200B;の状態で、アカウントの支払いを使用して行われた注文を管理者で編集できない問題を修正しました。
 1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)**: Sales GraphQLの日付フィールドで、以前のリリースとは異なる形式で日付が返される問題を修正します。日付の形式をスラッシュ区切り（/）からダッシュ区切り（ – ）に戻します。
 1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)**: GraphQLから返される注文日と注文コメントのタイムスタンプが、英語以外のロケール設定で誤ったカレンダー日付を表示する問題を修正しました。
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**：権限が制限された管理者ユーザーが顧客グリッドから顧客を削除できない問題を修正します。
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**:GraphQL スキーマで購買リストのアイテムの種類のスペルが間違っている問題を修正します。 古い`items` フィールドと`RequistionListItems` タイプは引き続き使用できますが、非推奨です。
-1. **ACP2E-4908**：各ストアビューで各製品に対して別々のレイアウトキャッシュエントリが作成されたため、大きなカタログがRedisまたはValkeyで過度のメモリ使用を引き起こす問題を修正します。
 1. **[AC-16530](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530.md)**: ショッピングカートがカタログ価格ルールの更新スケジュールを一貫して反映しなかった問題を修正します。
 1. **[ACP2E-4977](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)**：設定可能な製品の請求書とクレジットメモの総計に固定製品税（FPT）が含まれていない問題を修正し、合計が注文合計よりも少なくなりました。
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**：管理画面で注文を再注文すると、次の順序番号を割り当てるのではなく、`-1`接尾辞を付けた新しい注文番号が作成される問題を修正します。
