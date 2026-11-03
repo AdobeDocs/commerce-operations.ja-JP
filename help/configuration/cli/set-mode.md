@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: a6400a85be93c8576f5bb2866f4f5107acb5ec1d
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '420'
 ht-degree: 0%
 ---
 # 操作モードの設定
@@ -135,6 +135,10 @@ Enabled production mode.
 ```
 
 ### 開発者向けモードに変更
+
+>[!NOTE]
+>
+>Adobe Commerce Cloud環境では、デベロッパーモードはサポートされておらず、Adobe Commerce サポートはアプリケーションモードの変更を促進できません。
 
 実稼動環境から開発者モードに変更する場合は、予期しないエラーを防ぐために、生成されたクラスとプロキシなどのObject Manager エンティティをクリアする必要があります。 その後、モードを変更できます。 次の手順を使用します。
 
