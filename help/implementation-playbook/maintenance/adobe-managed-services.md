@@ -6,6 +6,8 @@ feature: Services
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: da76473c-f99b-5ad0-9b14-896aed473f8a
     internal-label: Services
@@ -17,9 +19,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+badgePaas: label="Commerce on Cloud" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Cloud プロジェクト上のAdobe Commerceにのみ適用されます。"
+source-git-commit: f1894f3a95e38f64affff0769e80557fe0b4a4d7
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1201'
 ht-degree: 0%
 ---
 
@@ -31,7 +34,7 @@ Adobe Managed Servicesは、Adobe Commerce on cloud infrastructure Pro プラン
 
 ## Adobe Workfrontの利点
 
-![Adobe Managed Servicesのメリットを示すインフォグラフィック &#x200B;](../../assets/playbooks/managed-services-benefits.png)
+![Adobe Managed Servicesのメリットを示すインフォグラフィック ](../../assets/playbooks/managed-services-benefits.png)
 
 ### 実装オプションの比較
 
@@ -400,7 +403,7 @@ Adobeは、Managed Services システム上でのAdobe Commerceのプロビジ�
 
 Managed ServicesのAdobeセキュリティスタックは、あらゆるレベルのセキュリティを強化し、自動化と一貫性を確保してヒューマンエラーを低減します。 開発チームと運用チームは、スタックの様々なレベルからセキュリティ制御を自動的に継承します。
 
-Amazon Web ServicesやMicrosoft Azureなどのプラットフォームパートナーは、プラットフォームのカスタマイズを適用する際に最大限のセキュリティを確保します。一方、AdobeのManaged Servicesチームは、コンプライアンス、ロギング、認証、スキャン、モニタリングなどのコアセキュリティサービスや、サーバーセキュリティおよびセキュアアプリケーション設定を提供します。 詳しくは、[Adobe Commerce セキュリティ &#x200B;](https://business.adobe.com/jp/products/magento/secure-ecommerce.html)を参照してください。
+Amazon Web ServicesやMicrosoft Azureなどのプラットフォームパートナーは、プラットフォームのカスタマイズを適用する際に最大限のセキュリティを確保します。一方、AdobeのManaged Servicesチームは、コンプライアンス、ロギング、認証、スキャン、モニタリングなどのコアセキュリティサービスや、サーバーセキュリティおよびセキュアアプリケーション設定を提供します。 詳しくは、[Adobe Commerce セキュリティ ](https://business.adobe.com/products/magento/secure-ecommerce.html)を参照してください。
 
 次の図は、Adobe Managed Servicesのセキュリティテクノロジースタックを示しています。
 
