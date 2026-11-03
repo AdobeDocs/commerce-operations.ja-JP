@@ -13,16 +13,16 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: a6400a85be93c8576f5bb2866f4f5107acb5ec1d
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '420'
 ht-degree: 0%
 ---
 # 操作モードの設定
 
 {{file-system-owner}}
 
-セキュリティと使いやすさを向上させるために、[&#x200B; アプリケーションモード &#x200B;](../bootstrap/application-modes.md)を開発者から実稼動に、またはその逆に切り替えるコマンドを追加しました。
+セキュリティと使いやすさを向上させるために、[ アプリケーションモード ](../bootstrap/application-modes.md)を開発者から実稼動に、またはその逆に切り替えるコマンドを追加しました。
 
 静的ビューファイルが`pub/static` ディレクトリに入力され、コードのコンパイルが原因で実稼動モードのパフォーマンスが向上します。
 
@@ -53,7 +53,7 @@ pub/static
 
 ## 現在のモードを表示
 
-これを行う最も簡単な方法は、このコマンドを[&#x200B; ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)として実行することです。 共有ホスティングがある場合、これは、プロバイダーからサーバーにログインするユーザーです。 プライベートサーバーがある場合は、通常、Commerce サーバーのローカルユーザーアカウントです。
+これを行う最も簡単な方法は、このコマンドを[ ファイルシステム所有者](../../installation/prerequisites/file-system/overview.md)として実行することです。 共有ホスティングがある場合、これは、プロバイダーからサーバーにログインするユーザーです。 プライベートサーバーがある場合は、通常、Commerce サーバーのローカルユーザーアカウントです。
 
 コマンドの使用状況：
 
@@ -83,7 +83,7 @@ bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 
 - **`{mode}`**&#x200B;が必要です。`developer`または`production`のいずれかです
 
-- **`--skip-compilation`**&#x200B;は、実稼動モードに変更する際に[&#x200B; コードコンパイル &#x200B;](../cli/code-compiler.md)をスキップするために使用できるオプションのパラメーターです。
+- **`--skip-compilation`**&#x200B;は、実稼動モードに変更する際に[ コードコンパイル ](../cli/code-compiler.md)をスキップするために使用できるオプションのパラメーターです。
 
 例は次のとおりです。
 
@@ -135,6 +135,10 @@ Enabled production mode.
 ```
 
 ### 開発者向けモードに変更
+
+>[!NOTE]
+>
+>Adobe Commerce Cloud環境では、デベロッパーモードはサポートされておらず、Adobe Commerce サポートはアプリケーションモードの変更を促進できません。
 
 実稼動環境から開発者モードに変更する場合は、予期しないエラーを防ぐために、生成されたクラスとプロキシなどのObject Manager エンティティをクリアする必要があります。 その後、モードを変更できます。 次の手順を使用します。
 
