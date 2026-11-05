@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a376b03617703097396bef92f8174bfe1da34c52
+source-git-commit: ea5f12bca7e8a3969ffa775d6a675a224f08155f
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '523'
 ht-degree: 0%
 ---
 # 概要：[!DNL Quality Patches Tool] （QPT） v1.1.83
@@ -47,7 +47,7 @@ QPT v1.1.83には次のパッチが含まれています。
 1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)**: ペイロード内の1つのSKUが存在せず、有効なSKUが更新されない場合、`POST /V1/products/tier-prices` REST API リクエストがリクエスト全体に対して失敗する問題を修正します。
 1. **[AC-14940](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)**：管理画面で顧客アカウントの[!UICONTROL Reset Password]をクリックしても、ストア関連の一部のケースでパスワードリセットの電子メールが送信されない問題を修正しました。
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**: インデクサーが&#x200B;**[!UICONTROL Update on Schedule]**&#x200B;に設定されている場合にB2B モジュールのインストールが失敗する問題を修正します。
-1. **ACP2E-5205**: カテゴリの読み込みに多額の時間がかかったり、多数のカテゴリや製品が含まれている場合にタイムアウトが発生したりする問題を修正します。 また、カテゴリのリーフごとに製品数が適切に表示されるようになりました。
+1. **[ACP2E-5205](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5205.md)**: カテゴリの読み込みに多額の時間がかかったり、多数のカテゴリや製品が含まれている場合にタイムアウトが発生したりする問題を修正します。 また、カテゴリのリーフごとに製品数が適切に表示されます。
 1. **[ACP2E-3211](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)**: ストアフロントで同じ商品を同時にカートに追加すると、同じSKUのカート内に同じ商品を1つの商品に組み合わせるのではなく、別の商品が作成される問題を修正します。
 1. **[ACP2E-5223](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)**: **[!UICONTROL Catalog Permissions]** インデックスに顧客グループから除外されたWeb サイトが含まれている問題を修正します。
 
