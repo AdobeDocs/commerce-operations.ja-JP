@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 316b2f5efb35b6500a702ec1754a87da881ba961
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '195'
 ht-degree: 0%
 ---
 # 概要：[!DNL Quality Patches Tool] （QPT） v1.1.73
@@ -36,8 +36,8 @@ QPT v1.1.73には次のパッチが含まれています。
 1. **ACSD-67908**: マルチストア設定でJS ファイルが正しく結合できない問題を修正しました。
 1. **ACSD-68190**：割引が適用されない、適用された割引がGraphQLのカートビューの応答に正しく表示されない、クーポン割引を削除するとクーポン以外の割引が削除される問題を修正しました。
 1. **ACSD-68206**: PHP [!DNL Redis]拡張機能がインストールされた&#x200B;**[!UICONTROL Rate Limiting]**&#x200B;機能でGraphQL Application Serverを使用する際のエラーを修正しました。
-1. **ACSD-68356**: [!DNL GraphQL] カート クエリで、バーチャル見積もりに対して誤った割引額が返されます。
-1. **ACSD-68391**: カテゴリー関連の権限が&#x200B;**[!UICONTROL Quick Order]**&#x200B;および&#x200B;**[!UICONTROL Requisition Lists]**&#x200B;に適用されていません。
-1. **ACSD-68400**：仮想ギフトカードの数量が&#x200B;**[!UICONTROL Inventory reservation table]**&#x200B;に正確に反映されていません。
+1. **ACSD-68356**: [!DNL GraphQL] カート クエリで、バーチャル見積もりに対して誤った割引額が返される問題を修正しました。
+1. **ACSD-68391**: **[!UICONTROL Quick Order]**&#x200B;と&#x200B;**[!UICONTROL Requisition Lists]**&#x200B;でカテゴリ関連の権限が正しく適用されなかった問題を修正しました。
+1. **ACSD-68400**：仮想ギフトカードの数量が&#x200B;**[!UICONTROL Inventory reservation table]**&#x200B;に正確に反映されない問題を修正しました。
 
 左側のメニューを使用して、特定のパッチページに移動します。
