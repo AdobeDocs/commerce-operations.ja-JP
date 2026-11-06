@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 5c33cd529bff9208d640cec3c4068f578a9e376c
+source-git-commit: 49785473e0154e72e675b54f9d8119460c53bd8c
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '284'
 ht-degree: 0%
 ---
 # 概要：[!DNL Quality Patches Tool] （QPT） v1.1.75
@@ -35,7 +35,7 @@ QPT v1.1.75には、次のパッチが含まれています。
 1. **ACSD-68359**：大きな買い物かごで&#x200B;**[!UICONTROL Pick in Store]**&#x200B;を選択する際の&#x200B;*414* エラーを修正します。
 1. **ACSD-68451**：会社の管理者が1つのweb サイトでログインし、別のweb サイトで無関係な会社を作成し、その無関係な会社に誤ってリンクされる複数のweb サイトの問題を修正します。
 1. **ACSD-68517**: **[!UICONTROL Catalog]**&#x200B;および&#x200B;**[!UICONTROL Catalog Search]** ページでフォーム再送信エラーが修正されました。
-1. **ACSD-68490**: **[!UICONTROL Add New Attribute]** ボタンは、設定可能な製品の作成中に制限付き管理者に表示されます。
+1. **ACSD-68490**：設定可能な製品作成中に、制限付き管理者ユーザーに&#x200B;**[!UICONTROL Add New Attribute]** ボタンが表示される問題を修正します。
 1. **ACSD-68573**: カテゴリの権限が顧客のウィッシュリスト項目に正しく適用されなかった問題を修正します。 修正が完了すると、webとGraphQLの両方でウィッシュリスト項目が適切に表示され、ページが設定されます。
 1. **ACSD-68615**：処理済みの組み合わせに注文IDが見つからない場合に、在庫予約補償CLIで例外が表示される問題を修正します。
 1. **ACSD-68793**：共有カタログに割り当てる際に有効な製品が誤って拒否される問題を修正します。
