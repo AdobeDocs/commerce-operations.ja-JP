@@ -1,7 +1,7 @@
 ---
-source-git-commit: f805a1d27c2237ed7f9885524d01c6bd0df1b85c
+source-git-commit: 114e203ce1226139cf2d31b758329ccd8a00205c
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '2082'
 ht-degree: 0%
 ---
 # 新しいテンプレート
@@ -12,6 +12,9 @@ ht-degree: 0%
 
 | 説明 | タイプ | 日付/ソース |
 | --- | --- | --- |
+| [ACP2E-5205のQPT 1.1.83修正に関する詳細な説明を追加しました。大きなカタログは、Admin](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5205)でカテゴリの読み込みが遅くなり、タイムアウトが発生します。 | 新しいトピック、qpt | [2026年11月5日](https://github.com/AdobeDocs/commerce-operations.en/commit/39e85100b07e742c5d21708af62fd1da3462226b) |
+| [ACP2E-4908のQPT 1.1.83修正に関する詳細な説明を追加しました。大きなカタログは、過剰なRedisまたはValkey メモリの使用を引き起こします](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908)。 | 新しいトピック、qpt | [2026年11月2日](https://github.com/AdobeDocs/commerce-operations.en/commit/a0924456f529fcc4378c65e81eacfdd6711ae1ca) |
+| [ACP2E-5183のQPT 1.1.84修正に関する詳細な説明を追加しました。静的コンテンツのデプロイメントがPHP 8.5で@magento_import](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183)で失敗します。 | 新しいトピック、qpt | [2026年11月2日](https://github.com/AdobeDocs/commerce-operations.en/commit/3a5e0c4cc2f879416a8e8bc544cc709ef4db3c32) |
 | [AC-16530のQPT 1.1.83修正に関する詳細な説明を追加しました。予定されているカタログ価格ルールの更新後、ショッピングカートに一貫性のない価格が表示されます](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530)。 | 新しいトピック、qpt | [2026年10月29日](https://github.com/AdobeDocs/commerce-operations.en/commit/87bb58152a37d84e7ca9c4a882b014bf45224981) |
 | [AC-15494のQPT 1.1.84修正に関する詳細な説明を追加しました：GraphQL製品クエリは、HTML エスケープされた製品名](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494)を返します。 | 新しいトピック、qpt | [2026年10月28日](https://github.com/AdobeDocs/commerce-operations.en/commit/d8d3bfc8adf81046abf9d46ff2dba43c742e2945) |
 | [ACP2E-5242のQPT 1.1.84の修正に関する詳細な説明を追加しました。GraphQLは、カート追加時のリクエスト時にストア IDをweb サイト IDとして使用します](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242)。 | 新しいトピック、qpt | [2026年10月27日](https://github.com/AdobeDocs/commerce-operations.en/commit/9b84a4c224d31afe6452fd609f6202bc9ac7c1c8) |
@@ -47,4 +50,3 @@ ht-degree: 0%
 | [概要：品質パッチツール （QPT） v1.1.83](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview)を追加しました。 | 新しいトピック、qpt | [2026年10月2日](https://github.com/AdobeDocs/commerce-operations.en/commit/266c8529352dac198568dca4676aebd88ce50fc1) |
 | 完全なセキュリティパッチリリース間のパッチ火曜日に、Adobe Commerceがターゲットを絞った個別CVE修正をどのように提供するか、またそれらを適用して検証する方法を説明する、[月間個別セキュリティパッチポリシー](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/monthly-isolated-security-patches)を追加しました。 | 新しいトピック | [2026年9月18日](https://github.com/AdobeDocs/commerce-operations.en/commit/681f7f0589aed8787aaf165d36ac00f670d751ce) |
 | [Redis/Valkey サービス設定](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) ガイドを修正して、`VALKEY_BACKEND`および`REDIS_BACKEND`のデプロイ変数で、Adobe Commerceが実際に使用するキャッシュサービスが決まらないこと、および`VALKEY_USE_SLAVE_CONNECTION`/`REDIS_USE_SLAVE_CONNECTION`が実際に利用可能なサービスと一致する必要があることを確認しました。 | テクニカル | [2026年9月15日](https://github.com/AdobeDocs/commerce-operations.en/commit/49781ad38a266fffa1be080b5a093327a28cf6a6) |
-| Adobe Commerce パッチオートメーションが一般公開されました。 詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/caps-tool/intro)を参照してください。 | メジャーアップデート、新しいトピック | [2026年9月8日](https://github.com/AdobeDocs/commerce-operations.en/commit/a88bfea449616c0b79c5bd3380bec74c68687052) |
