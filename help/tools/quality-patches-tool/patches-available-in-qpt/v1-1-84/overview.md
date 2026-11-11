@@ -21,7 +21,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: c97df849a9fba077fc75b194298ab759e3129ad5
+source-git-commit: 1904bb69074eca0a679ec41b4a3817d954f8f488
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -38,7 +38,7 @@ QPT v1.1.84には、次のパッチが含まれています。
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**：お客様が会社に割り当てられていない場合に、GraphQLを通じてお客様`role`にクエリを実行すると&#x200B;*社内サーバーエラー*&#x200B;が返される問題を修正しました。
 1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)**: ファイルのロックが有効になっている場合に、インデックスがループ内で停止したままになり、インデックス再作成が完了しない問題を修正します。
 1. **ACP2E-5029**: カタログ価格ルールの変更が&#x200B;**[!DNL Live Search]**&#x200B;に表示されない問題を修正して、手動再同期を実行します。
-1. **ACP2E-5041**：更新スケジュール中に製品を保存すると、ストアフロントで更新終了後に&#x200B;**[!UICONTROL Special Price]**&#x200B;ではなく通常価格が表示される問題を修正しました。
+1. **[ACP2E-5041](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041.md)**：更新スケジュール中に製品を保存すると、ストアフロントで更新終了後に&#x200B;**[!UICONTROL Special Price]**&#x200B;ではなく通常価格が表示される問題を修正しました。
 1. **[ACP2E-5183](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)**: `@magento_import` ディレクティブを使用する`LESS` ファイルのコンパイル中にPHP 8.5で静的コンテンツのデプロイメントが失敗する問題を修正します。
 1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**：顧客が同じ注文に対して重複した注文確認メールを受信する問題を修正します。
 1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)**：ショッピングカートに対するGraphQL リクエストから処理されたエラーが、例外ログにアプリケーションエラーとして誤って記録される問題を修正します。
