@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: c97df849a9fba077fc75b194298ab759e3129ad5
+source-git-commit: 3d95ebd821afb07c08b65e5e8b911ada2d9e58ae
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '546'
 ht-degree: 0%
 ---
 # 概要：[!DNL Quality Patches Tool] （QPT） v1.1.84
@@ -34,21 +34,21 @@ QPT v1.1.84には、次のパッチが含まれています。
 
 1. **[ACP2E-5005](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)**：管理でバンドル製品を再設定し、数量を編集すると、交渉可能な見積もりのバンドル製品オプションの数量が以前の値に戻る問題を修正します。
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**：デッドロックにより出荷処理と請求処理が失敗する問題を修正します。
-1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)**: Magento Open SourceからAdobe Commerceへのデータ移行で、カテゴリのスケジュールされたデザイン変更と製品&#x200B;**[!UICONTROL Special Price]**&#x200B;のスケジュールされた更新が正しく移行されず、移行中に一部のスケジュールされた更新が欠落またはスキップされる問題が修正され、移行のパフォーマンスが向上します。
-1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**：お客様が会社に割り当てられていない場合に、GraphQLを通じてお客様`role`にクエリを実行すると&#x200B;*社内サーバーエラー*&#x200B;が返される問題を修正しました。
+1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)**: Magento Open SourceからAdobe Commerceへのデータ移行で、カテゴリのスケジュールされたデザイン変更と製品&#x200B;**[!UICONTROL Special Price]**&#x200B;のスケジュールされた更新が正しく移行されず、移行中に一部のスケジュールされた更新が欠落またはスキップする問題が修正され、移行のパフォーマンスが向上します。
+1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**：お客様が会社に割り当てられていない場合に、GraphQLを通じてお客様`role`に問い合わせると&#x200B;*社内サーバーエラー*&#x200B;が返される問題を修正しました。
 1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)**: ファイルのロックが有効になっている場合に、インデックスがループ内で停止したままになり、インデックス再作成が完了しない問題を修正します。
 1. **ACP2E-5029**: カタログ価格ルールの変更が&#x200B;**[!DNL Live Search]**&#x200B;に表示されない問題を修正して、手動再同期を実行します。
-1. **ACP2E-5041**：更新スケジュール中に製品を保存すると、ストアフロントで更新終了後に&#x200B;**[!UICONTROL Special Price]**&#x200B;ではなく通常価格が表示される問題を修正しました。
+1. **[ACP2E-5041](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041.md)**：更新スケジュール中に製品を保存すると、ストアフロントで更新終了後に&#x200B;**[!UICONTROL Special Price]**&#x200B;ではなく通常価格が表示される問題を修正しました。
 1. **[ACP2E-5183](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)**: `@magento_import` ディレクティブを使用する`LESS` ファイルのコンパイル中にPHP 8.5で静的コンテンツのデプロイメントが失敗する問題を修正します。
 1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**：顧客が同じ注文に対して重複した注文確認メールを受信する問題を修正します。
 1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)**：ショッピングカートに対するGraphQL リクエストから処理されたエラーが、例外ログにアプリケーションエラーとして誤って記録される問題を修正します。
-1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: メタデータのルーティングのみが要求された場合にGraphQL `route` クエリがCMS ページ全体をレンダリングし、[!DNL Page Builder] ウィジェットを含むCMS ページのデータベースクエリを増やす問題を修正しました。
+1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: メタデータのルーティングのみが要求された場合にGraphQL `route` クエリがCMS ページ全体をレンダリングし、ページビルダーウィジェットを含むCMS ページのデータベースクエリを増やす問題を修正しました。
 1. **[ACP2E-5242](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)**: カートに商品を追加する際に製品の可用性を確認すると、web サイトが見つからないことを示すエラーが表示される問題を修正しました。
 1. **[ACP2E-5263](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)**：すべての製品が含まれる前にCSV ファイルへの製品の書き出しが停止し、ファイルが不完全になる問題を修正します。
-1. **ACP2E-5034**：配送方法を選択した後に見積もりを再計算する際に、交渉可能な見積もり管理が誤って合計を&#x200B;*ゼロ*&#x200B;にリセットし、管理者の&#x200B;**[!UICONTROL Configure]** アクションを通じて行われた製品オプション数量のバンドルの更新を破棄し、見積もり小計の動的な価格バンドル製品に適用されたアイテムレベル割引が正正反映反映されない問題を修正しました。
+1. **[ACP2E-5034](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5034.md)**：配送方法を選択した後に見積もりを再計算する際に、交渉可能な見積もり管理が誤って合計を&#x200B;*ゼロ*&#x200B;にリセットし、管理者の&#x200B;**[!UICONTROL Configure]** アクションを通じて行われた製品オプション数量のバンドルの更新を破棄し、見積もり小計の動的な価格バンドル製品に適用されたアイテムレベル割引が正正反映反映されない問題を修正しました。
 1. **[AC-15494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)**：商品クエリで、元の文字の代わりにHTML エスケープされた特殊文字を含む商品名が返される問題を修正します。
-1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**：既定以外の在庫とソースを使用している間に、関連製品、アップセル、またはクロスセルとしてリンクされている製品が保存された後、ストアフロントから製品が消える問題を修正します。
-1. **[ACP2E-5127](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)**: デフォルト以外のロケールを使用して管理者で会社アカウントを編集すると、その&#x200B;**[!UICONTROL Credit Limit]**&#x200B;が`0`にリセットされる問題を修正します。
+1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**：デフォルト以外の在庫とソースを使用している間に、その商品に[!UICONTROL Related Product]、[!UICONTROL Up-Sell]またはクロスセルとしてリンクされている商品が保存された後、ストアフロントから商品が消える問題を修正します。
+1. **[ACP2E-5127](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)**: デフォルト以外のロケールを使用して管理者で会社アカウントを編集すると、その&#x200B;**[!UICONTROL Credit Limit]**&#x200B;が&#x200B;*0*&#x200B;にリセットされる問題を修正します。
 1. **[ACP2E-5079](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)**：複数のweb サイトに割り当てられた顧客セグメントを評価すると、顧客アカウントがグローバルに共有された場合に、最初のweb サイトからのみ一致する顧客が返される問題を修正します。
 
 左側のメニューを使用して、特定のパッチページに移動します。
