@@ -18,9 +18,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 244ff697888c6feed99861b3e7b63c8cccc3676c
+source-git-commit: b386ae4fb7b26db8498fb78d1a354c3267a862ca
 workflow-type: tm+mt
-source-wordcount: '33534'
+source-wordcount: '34321'
 ht-degree: 0%
 ---
 # リリースノート
@@ -34,6 +34,35 @@ ht-degree: 0%
 >[!INFO]
 >
 >Magento Open Sourceのコミュニティによって作成された[!DNL quality patches]について詳しくは、[&#x200B; リリースノート &#x200B;](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)を参照してください。
+
+## v1.1.86 {#v1-1-86}
+
+* **ACP2E-3094** （Adobe Commerce >=2.4.5 &lt;2.4.8の場合） – 多くの権限を持つカテゴリの[!UICONTROL Category Permissions]を表示または編集すると、ブラウザーが応答しなくなる問題を修正します。
+* **ACP2E-5046** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.5 &lt;2.4.10） – 管理者で注文を作成しているときにページを更新すると、同じSKUが複数回追加される問題を修正します。
+* **ACP2E-5050** （Adobe Commerce >=2.4.6 &lt;2.4.10）管理者がRMAを表示または保存すると、[!UICONTROL Action Logs] レポートにRMA番号が表示されない問題を修正します。
+* **ACP2E-5057** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.7 &lt;2.4.8） - [!UICONTROL Catalog Price Scope]が&#x200B;*Web サイト*&#x200B;に設定されている場合に、GraphQLのバンドル製品用クエリでweb サイト固有の価格ではなくグローバルバンドルオプション価格が返される問題を修正しました。
+* **ACP2E-5061** （Adobe Commerce >=2.4.5 &lt;2.4.10）は、カテゴリマーチャンダイジングルールが`AND`条件を複数の値のいずれかに一致する条件と組み合わせることができない問題を修正します。
+* **ACP2E-5071** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.7 &lt;2.4.10） – 買い物客のカートに既に全数量が含まれている場合に、在庫切れメッセージが商品ページに常に表示されない問題を修正します。
+* **ACP2E-5094** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.6-p3 &lt;2.4.7 |>=2.4.8 &lt;2.4.10） - `MAGENTO_DC_*`環境変数が設定されている場合にページの読み込みが大幅に遅くなる問題を修正します。
+* **ACP2E-5118** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.5 &lt;2.4.10） - [!UICONTROL Translations] キャッシュが無効になっている場合にページビルダーのプレビューがレンダリングされない問題を修正します。
+* **ACP2E-5134** （Adobe Commerce >=2.4.6 &lt;2.4.10） – 企業の[!UICONTROL Shared Catalog]からバンドルに含まれる商品を削除すると、バンドル商品がショッピングカートに残り、カート内およびチェックアウト中にエラーが発生する問題を修正します。
+* **ACP2E-5146** （Adobe Commerceの場合、B2B >=1.3.4 &lt;1.5.4） – 別のweb サイトの顧客が管理者ユーザーと同じIDを持つ場合に、特定のweb サイトに制限された管理者ユーザーが顧客を削除できない問題を修正します。
+* **ACP2E-5176** （Adobe Commerce >=2.4.7 &lt;2.4.10）は、[!DNL Google Analytics] 4 ～ [!DNL Google Tag Manager]に送信されたe コマースイベントが[!DNL Universal Analytics]形式を使用し、複数のチェックアウトイベントを省略する問題を修正します。
+* **ACP2E-5185** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.5 &lt;2.4.10） – カテゴリーツリー内のカテゴリを移動するとエラーが表示される問題を修正します。*カテゴリ移動エラー*&#x200B;が発生しました。また、ストアで多数のURL書き換えが行われている場合は、完了までに数分かかります。
+* **ACP2E-4191** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.5 &lt;2.4.9） - EAV タイプと属性のキャッシュが無効になっている場合に、特定のREST API リクエストが無限ループに入る問題を修正します。
+* **ACP2E-4973** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.8-p1 &lt;2.4.9） - [!UICONTROL In-Store Delivery]から別の配信方法に切り替えても、関連付けられているストア アドレスがカートからクリアされない問題を修正します。
+* **ACP2E-5221** （Adobe Commerceの場合、B2B >=1.5.3 &lt;1.5.4） - [!UICONTROL Quick Order]が多くのストアやカスタマーグループを含むインストールで有効になっている場合、[!UICONTROL Catalog Product Permissions] インデクサーが大幅に長くなる問題を修正します。
+* **ACP2E-5245** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.8 &lt;2.4.9） – 最初の注文で同じ住所を使用して配送および請求を行う新規登録のお客様が、次回のチェックアウト時に、その住所が2回表示される問題を修正します。
+* **ACP2E-5248** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.5 &lt;2.4.10） - PHP 8.5で[!UICONTROL Add Product] ページを開くときに、[!UICONTROL Edit Product Status]権限のない管理者ユーザーが&#x200B;*nullを配列オフセット*&#x200B;の非推奨エラーとして表示する問題を修正します。
+* **ACP2E-5254** （Adobe Commerceの場合、B2B >=1.5.2 &lt;1.5.4） – お客様がリストを開くと、キャッシュがクリアされるまで購買リストに追加された商品が表示されない問題を修正します。
+* **ACP2E-5268** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.9 &lt;2.4.10） - [!UICONTROL Enable Frontend Resize]が&#x200B;*No*&#x200B;に設定されている場合に設定可能な商品の作成が失敗する問題を修正します。
+* **ACP2E-3752** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.7 &lt;2.4.9） – 多くの商品インポート操作が作成されると、商品インポート処理で&#x200B;*未定義の配列キー&quot;apply_to&quot;*&#x200B;がスローされる問題を修正します。
+* **ACP2E-5280** （Adobe Commerce >=2.4.9 &lt;2.4.10）の場合、[!UICONTROL Category Permissions]が有効になっている間にログイン時にエラーが発生する問題を修正します。
+* **ACP2E-5295** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.5 &lt;2.4.10） – 同じプロセスで[!UICONTROL Inventory] インデクサーの後に実行すると、並列商品価格のインデックス再作成がエラー&#x200B;*子プロセス*&#x200B;で失敗する問題を修正します。
+* **ACP2E-5298** （Adobe Commerce >=2.4.5 &lt;2.4.10）は、カート価格ルールへの表示専用アクセス権を持つ管理者ユーザーがクーポンコードを生成または削除できる問題を修正します。
+* **ACP2E-5333** （Adobe Commerce >=2.4.5 &lt;2.4.10）は、`is not`演算子を使用し、1つ以上の値を持つ[!UICONTROL Total Number of Orders]条件で顧客セグメントを更新すると、エラーが発生し、*不明な演算子が指定された場合に失敗する問題を修正します。*
+* **ACP2E-5425** （Adobe CommerceおよびMagento Open Sourceの場合>=2.4.5 &lt;2.4.8） – 同じ注文に対して重複した注文確認メールを顧客が受信する問題を修正します。
+* 更新されたバージョン：**ACSD-63578**
 
 ## v1.1.85 {#v1-1-85}
 
