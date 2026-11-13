@@ -19,24 +19,25 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: b6b79249367c0f104cf05269759d69747525b957
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '326'
 ht-degree: 0%
 ---
-# ACSD-63578: *[!UICONTROL Add to Order by SKU]*&#x200B;の&#x200B;**[!UICONTROL Delete]** アイコンをクリックしても、SKUが削除されない
+# ACSD-63578: **[!UICONTROL Add to Order by SKU]**&#x200B;の&#x200B;**[!UICONTROL Delete]** アイコンをクリックしても、SKUが削除されない
 
-ACSD-63578 パッチでは、管理画面で&#x200B;*[!UICONTROL Add to Order by SKU]*&#x200B;の&#x200B;**[!UICONTROL Delete]** アイコンをクリックしてもSKUが削除されない問題が修正されました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58がインストールされている場合に利用できます。 パッチ IDはACSD-63578です。 この問題は、Adobe Commerce 2.4.8で修正される予定です。
+ACSD-63578 パッチでは、管理画面で&#x200B;**[!UICONTROL Add to Order by SKU]**&#x200B;の&#x200B;**[!UICONTROL Delete]** アイコンをクリックしてもSKUが削除されない問題が修正されました。 このパッチは、[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58がインストールされている場合に利用できます。 パッチ IDはACSD-63578です。 この問題は、Adobe Commerce 2.4.9で修正される予定です。
 
 ## 影響を受ける製品とバージョン
 
 **パッチはAdobe Commerceのバージョン**&#x200B;用に作成されました
 
 * Adobe Commerce（すべてのデプロイメント方法） 2.4.6-p7
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.8-p5
 
 **Adobe Commerceのバージョンとの互換性：**
 
-* Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.7-p3
+* Adobe Commerce（すべてのデプロイメント方法） 2.4.4 - 2.4.8-p5
 
 >[!NOTE]
 >
@@ -44,11 +45,11 @@ ACSD-63578 パッチでは、管理画面で&#x200B;*[!UICONTROL Add to Order by
 
 ## イシュー
 
-管理画面の&#x200B;*[!UICONTROL Add to Order by SKU]*&#x200B;の&#x200B;**[!UICONTROL Delete]** アイコンをクリックしても、SKUが注文から削除されません。
+管理画面の&#x200B;**[!UICONTROL Add to Order by SKU]**&#x200B;の&#x200B;**[!UICONTROL Delete]** アイコンをクリックしても、SKUが注文から削除されません。
 
 <u>複製する手順</u>:
 
-1. 管理者/**[!UICONTROL Sales]** / **[!UICONTROL Orders]**&#x200B;に移動し、**[!UICONTROL Create New Order]**&#x200B;をクリックします。
+1. **管理者** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**&#x200B;に移動し、**[!UICONTROL Create New Order]**&#x200B;をクリックします。
 1. 顧客を選ぶ。
 1. **[!UICONTROL Add to Order by SKU]**&#x200B;をクリックします。
    * SKUを入力します。
@@ -70,11 +71,11 @@ ACSD-63578 パッチでは、管理画面で&#x200B;*[!UICONTROL Add to Order by
 
 個別のパッチを適用するには、デプロイメント方法に応じて次のリンクを使用します。
 
-* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)。
-* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > パッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」（Commerce クラウドインフラストラクチャガイド）。
+* Adobe CommerceまたはMagento Open Source オンプレミス：[!DNL Quality Patches Tool] ガイドの[[!DNL Quality Patches Tool] >使用状況](/help/tools/quality-patches-tool/usage.md)
+* クラウドインフラストラクチャ上のAdobe Commerce:「[&#x200B; アップグレードとパッチ > Commerce クラウドインフラストラクチャ上のパッチを適用](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)」ガイド
 
 ## 関連トピックス
 
 [!DNL Quality Patches Tool]について詳しくは、次を参照してください。
 
-* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール。
+* [[!DNL Quality Patches Tool]: ツール ガイドの品質パッチ &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)のセルフサービス ツール
