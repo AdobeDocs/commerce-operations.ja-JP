@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1300'
 ht-degree: 0%
 ---
 # セキュリティインシデントに対応するためのベストプラクティス
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## 影響を受ける製品とバージョン
 
-[&#x200B; サポートされているすべてのバージョン &#x200B;](../../../release/versions.md) /:
+[ サポートされているすべてのバージョン ](../../../release/versions.md) /:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce オンプレミス
@@ -47,7 +47,7 @@ Adobe Commerce on cloud インフラストラクチャプロジェクトがセ�
 - すべての管理者ユーザーアカウントアクセスを監査する
 - 高度な多要素認証（MFA）制御の有効化
 - クリティカルログの保持
-- お使いのバージョンのAdobe Commerceのセキュリティアップグレードをご確認ください。
+- お使いのバージョンのAdobe Commerceの[ セキュリティパッチリリースノート ](../../../release/release-notes/security/overview.md)を確認し、必要なセキュリティパッチを適用します。
 
 その他の推奨事項については以下で詳しく説明します。
 
@@ -75,22 +75,22 @@ Adobe Commerce on cloud インフラストラクチャプロジェクトがセ�
 
 インシデント分析の最初のステップは、できるだけ多くの事実をできるだけ早く収集することです。 インシデントに関する情報を収集することは、インシデントの潜在的な原因を特定するのに役立ちます。 Adobe Commerceには、インシデント分析に役立つ以下のツールが用意されています。
 
-- [管理者のアクション ログを監査](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html?lang=ja)。
+- [管理者のアクション ログを監査](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html)。
 
   アクションログレポートには、ログ記録が有効になっているすべての管理者アクションの詳細な記録が表示されます。 各レコードにはタイムスタンプが付けられ、ユーザーのIP アドレスと名前が登録されます。 ログの詳細には、管理者ユーザーデータと、アクション中に行われた関連する変更が含まれます。
 
-- [Observation for Adobe Commerce ツール &#x200B;](../../../tools/observation-for-adobe-commerce/intro.md)を使用してイベントを分析します。
+- [Observation for Adobe Commerce ツール ](../../../tools/observation-for-adobe-commerce/intro.md)を使用してイベントを分析します。
 
   Adobe Commerceの観察ツールを使用すると、複雑な問題を分析して根本原因を特定できます。 異なるデータを追跡する代わりに、イベントとエラーを関連付けることに時間を費やし、パフォーマンスのボトルネックの原因についてより深いインサイトを得ることができます。
 
   ツールの「**セキュリティ**」タブを使用すると、潜在的なセキュリティ問題を明確に把握して、根本原因を特定し、サイトのパフォーマンスを最適に維持できます。
 
-- [New Relic ログ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)を使用したログの分析
+- [New Relic ログ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)を使用したログの分析
 
-  Adobe Commerce on cloud infrastructure Pro プロジェクトには、[New Relic Logs](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management) サービスが含まれます。 このサービスは、ステージング環境と実稼動環境のすべてのログデータを集約するように事前設定されており、集約されたデータを検索して視覚化できる一元化されたログ管理ダッシュボードに表示されます。
+  Adobe Commerce on cloud infrastructure Pro プロジェクトには、[New Relic Logs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management) サービスが含まれます。 このサービスは、ステージング環境と実稼動環境のすべてのログデータを集約するように事前設定されており、集約されたデータを検索して視覚化できる一元化されたログ管理ダッシュボードに表示されます。
 
   その他のCommerce プロジェクトの場合、[New Relic Logs](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) サービスを設定して使用すると、次のタスクを実行できます。
-  - [New Relic クエリ &#x200B;](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs)を使用して、集計されたログデータを検索します。
+  - [New Relic クエリ ](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs)を使用して、集計されたログデータを検索します。
   - New Relic Logs アプリケーションを使用してログデータを視覚化します。
 
 ## 監査アカウント、コード、データベース
@@ -101,17 +101,17 @@ Commerceの管理者アカウントとユーザーアカウント、アプリケ
 
 ### 監査管理者ユーザーアカウント
 
-- [管理者ユーザーアクセスを確認](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=ja) – 古い、未使用、または疑わしいアカウントを削除し、すべての管理者ユーザーのパスワードをローテーションします。
+- [管理者ユーザーアクセスを確認](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html) – 古い、未使用、または疑わしいアカウントを削除し、すべての管理者ユーザーのパスワードをローテーションします。
 
-- [管理者のセキュリティ設定を確認](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=ja) – 管理者のセキュリティ設定がセキュリティのベストプラクティスに従っていることを確認します。
+- [管理者のセキュリティ設定を確認](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html) – 管理者のセキュリティ設定がセキュリティのベストプラクティスに従っていることを確認します。
 
-- [&#x200B; クラウドインフラストラクチャプロジェクト上のAdobe Commerceのユーザーアカウントを確認](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/project/user-access) – 古い、未使用の、または疑わしいアカウントを削除し、すべてのクラウドプロジェクト管理者ユーザーのパスワードをローテーションします。 アカウントのセキュリティ設定が正しく設定されていることを確認します。
+- [ クラウドインフラストラクチャプロジェクト上のAdobe Commerceのユーザーアカウントを確認](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) – 古い、未使用の、または疑わしいアカウントを削除し、すべてのクラウドプロジェクト管理者ユーザーのパスワードをローテーションします。 アカウントのセキュリティ設定が正しく設定されていることを確認します。
 
-- [&#x200B; クラウドインフラストラクチャ上のAdobe CommerceのSSH キーの監査](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/secure-connections) - SSH キーの確認、削除、回転。
+- [ クラウドインフラストラクチャ上のAdobe CommerceのSSH キーの監査](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) - SSH キーの確認、削除、回転。
 
 ### 監査コード
 
-- 管理者から、`website`と`store view`を含むすべてのスコープレベルで[HTML ヘッダーとフッターの設定](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=ja)を確認します。 スクリプトやスタイルシート、その他のHTML設定から、不明なJavaScript コードを削除します。 トラッキングスニペットなど、認識できるコードのみを保持します。
+- 管理者から、`website`と`store view`を含むすべてのスコープレベルで[HTML ヘッダーとフッターの設定](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html)を確認します。 スクリプトやスタイルシート、その他のHTML設定から、不明なJavaScript コードを削除します。 トラッキングスニペットなど、認識できるコードのみを保持します。
 
 - 現在の実稼動コードベースと、バージョン管理システム（VCS）に保存されているコードベースを比較します。
 
@@ -133,7 +133,7 @@ Commerceの管理者アカウントとユーザーアカウント、アプリケ
 
 ## Googleの警告を削除
 
-サイトに悪意のあるコードが含まれているとしてGoogleによってフラグが立てられている場合は、サイトのクリーニングが完了したら、レビューを依頼してください。 マルウェアに感染したサイトのレビューには数日かかります。 Googleでサイトがクリーンであると判断された後、検索結果とブラウザーからの警告は72時間以内に消える必要があります。 「[&#x200B; レビューを依頼](https://web.dev/articles/request-a-review)」を参照してください。
+サイトに悪意のあるコードが含まれているとしてGoogleによってフラグが立てられている場合は、サイトのクリーニングが完了したら、レビューを依頼してください。 マルウェアに感染したサイトのレビューには数日かかります。 Googleでサイトがクリーンであると判断された後、検索結果とブラウザーからの警告は72時間以内に消える必要があります。 「[ レビューを依頼](https://web.dev/articles/request-a-review)」を参照してください。
 
 ## マルウェアの結果チェックリストを確認する
 
@@ -145,4 +145,4 @@ Commerceの管理者アカウントとユーザーアカウント、アプリケ
 
 ## 追加情報
 
-- [根本原因分析フレームワーク &#x200B;](https://sansec.io/kb/incident-response/magento-root-cause-analysis)。
+- [根本原因分析フレームワーク ](https://sansec.io/kb/incident-response/magento-root-cause-analysis)。

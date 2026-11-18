@@ -20,9 +20,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '2297'
+source-wordcount: '2228'
 ht-degree: 0%
 ---
 # Adobe Commerceのローンチ後のサポートとメンテナンス
@@ -49,7 +49,7 @@ Adobe Commerceをスムーズに運用し、優れたパフォーマンスを発
 
   >[!TIP]
   >
-  >_クラウドガイド_&#x200B;の[&#x200B; パフォーマンスモニタリング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/monitor/performance)を参照してください。
+  >_クラウドガイド_&#x200B;の[ パフォーマンスモニタリング ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance)を参照してください。
 
 
 - **データベースパフォーマンスの最適化**: Adobe Commerce Cloudでデータベースパフォーマンスを最適化するには、次の操作を実行します。
@@ -62,7 +62,7 @@ Adobe Commerceをスムーズに運用し、優れたパフォーマンスを発
 
   >[!TIP]
   >
-  >データベース パフォーマンスの問題を解決するための[&#x200B; ベストプラクティス &#x200B;](resolve-database-performance-issues.md)を参照してください。
+  >データベース パフォーマンスの問題を解決するための[ ベストプラクティス ](resolve-database-performance-issues.md)を参照してください。
 
 - **CDN**&#x200B;を監視：Adobe Commerce CloudでFastly CDNのパフォーマンスを監視するには、次の操作を実行します。
 
@@ -80,15 +80,13 @@ Adobe Commerceをスムーズに運用し、優れたパフォーマンスを発
 
 >[!TIP]
 >
->_クラウドガイド_&#x200B;の[Fastly サービスの概要](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/fastly)を参照してください。
+>_クラウドガイド_&#x200B;の[Fastly サービスの概要](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)を参照してください。
 
 #### 定期的なセキュリティ監視
 
 Adobe Commerce Cloudでは、定期的なセキュリティモニタリングを維持するために、Adobeでは、継続的なスキャン、ロギング、プロアクティブなセキュリティプラクティスを含む多面的なアプローチをお勧めします。 継続的なセキュリティを確保するための主な取り組みには、次のようなものがあります。
 
 - **セキュリティスキャン**: Adobeのセキュリティスキャンツールを使用して、Commerce サイト全体で既知の脆弱性とマルウェアを監視します。 このツールは、潜在的なセキュリティリスクとコンプライアンスの問題に関するアラートを提供します。
-
-- **定期的なパッチとアップデートのメンテナンス**:Adobeのセキュリティパッチとアップデートが利用可能になったときに適用します。 最新のAdobe Commerce バージョンにアップグレードすると、最新のセキュリティ対策が確実に実行されます。
 
 - **監査とログの監視**: New Relic ログ （Pro プロジェクトで使用可能）などのツールを活用して、ステージング環境と実稼動環境の両方のセキュリティログを一元化および分析し、潜在的なセキュリティ問題と侵害の可視性を向上させます。
 
@@ -100,7 +98,7 @@ Adobe Commerce Cloudでは、定期的なセキュリティモニタリングを
 
 >[!TIP]
 >
->_管理者システムガイド_&#x200B;の「[&#x200B; セキュリティ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security)」を参照してください。
+>_管理者システムガイド_&#x200B;の「[ セキュリティ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security)」を参照してください。
 
 #### エラーログと監視
 
@@ -116,19 +114,19 @@ Adobe Commerce Cloudでのエラーログを監視するために、Adobeには�
 
 >[!TIP]
 >
->Adobe Commerce Cloudでのログ記録とエラートラッキングの方法について詳しくは、[New Relic ログ管理](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management)および[例外モニタリング &#x200B;](/help/tools/site-wide-analysis-tool/exceptions.md)を参照してください。
+>Adobe Commerce Cloudでのログ記録とエラートラッキングの方法について詳しくは、[New Relic ログ管理](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management)および[例外モニタリング ](/help/tools/site-wide-analysis-tool/exceptions.md)を参照してください。
 
 ### セキュリティとアップデート
 
 #### セキュリティパッチとアップデート
 
-引き続き最新情報を入手し、Adobe Commerce クラウドシステムのセキュリティを確保するために、セキュリティパッチとアップデートを監視するための主な方法を以下に示します。
+Adobe Commerce インストールを最新の状態に保ち、安全に保つには、次の方法を使用します。
 
-- **Adobe Commerce セキュリティ アラートを購読する**: [Adobeからの通知を登録すると、セキュリティ上の脆弱性に関する情報を常に入手できます](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security)。
+- **Adobe Commerce セキュリティ アラートを購読する**: [Adobeからの通知を登録すると、セキュリティ上の脆弱性に関する情報を常に入手できます](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security)。
 
-- **リリースノート**&#x200B;を確認：バージョン （2.3.5-p1など）に「 – pN」でタグ付けされた[&#x200B; セキュリティパッチリリースノート &#x200B;](/help/release/release-notes/security/overview.md)を定期的に確認し、重要な修正と改善を含みます。
+- **リリースノート**&#x200B;を確認：バージョン （2.3.5-p1など）に「 – pN」でタグ付けされた[ セキュリティパッチリリースノート ](/help/release/release-notes/security/overview.md)を定期的に確認し、重要な修正と改善を含みます。
 
-- **セキュリティパッチを迅速に適用**：セキュリティパッチが利用可能になればすぐに適用します。 これには、最新バージョンへのアップデートや、特定のパッチファイルの適用が含まれます。
+- **セキュリティパッチを迅速に適用する**：セキュリティアップデートが利用可能になり次第すぐにインストールします。 個別のパッチファイルについては、_Adobe サポートおよびツールガイド_&#x200B;の「[Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)」で提供されているコンポーザーパッチの適用方法を参照してください。
 
 - **クラウドパッチを使用**: Adobe Commerce Cloudの場合、セキュリティパッチはCloud Tools Suiteにバンドルできます。 これらの修正を受け取るには、スイートまたはCommerce バージョンをアップグレードしてください。
 
@@ -136,7 +134,7 @@ Adobe Commerce Cloudでのエラーログを監視するために、Adobeには�
 
 >[!TIP]
 >
->パッチの適用とセキュリティの維持について詳しくは、[&#x200B; セキュリティパッチリリースノート &#x200B;](../../../release/release-notes/security/overview.md)および[&#x200B; セキュリティパッチの適用方法](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches)を参照してください。 また、[&#x200B; サイト全体の分析ツール &#x200B;](/help/tools/site-wide-analysis-tool/access.md)のレポートを確認する必要があります。
+>調査が必要な問題を特定するには、[ サイト全体の分析ツール レポート ](/help/tools/site-wide-analysis-tool/access.md)を確認してください。
 
 #### PCI認定
 
@@ -146,15 +144,15 @@ Adobe Commerce CloudのPCI認定を維持するには、次の重要なベスト
 
 - **安全な送信プロトコルを使用**：暗号化と適切なキー管理を使用して、常にTLSなどの安全なプロトコルを介して支払いデータを送信します。
 
-- **Web アプリケーション ファイアウォール （WAF）**&#x200B;を利用する：Fastlyを搭載したWAF サービスは、PCI DSS 6.6の要件を満たすのに役立ち、悪意のあるトラフィックがサイトに到達する前にブロックすることで、一般的な脆弱性から保護します。 詳細については、[こちら](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md)および[こちら](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/fastly-waf-service)を参照してください。
+- **Web アプリケーションファイアウォール（WAF）**&#x200B;を利用する：PCI DSS 6.6要件のサポートに関するガイダンスについては、[通常のセキュリティモニタリング ](#regular-security-monitoring)および[Fastly WAF サービス ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly-waf-service)を参照してください。
 
-- **アクセス制限**：許可された担当者のみが機密性の高い支払いデータにアクセスできるようにし、[&#x200B; アクセス制御を適用して露出リスクを低減します](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md)。
+- **アクセス制限**：機密性の高い支払いデータへのアクセスを制限します。 アカウントとアクセスの管理方法については、[通常のセキュリティ監視](#regular-security-monitoring)を参照してください。
 
 - **定期的なセキュリティスキャン**：定期的なPCI ASV スキャンを実行し、[環境を監視](/help/security-and-compliance/shared-responsibility.md)して、潜在的な脆弱性に対処します。
 
 >[!TIP]
 >
->Adobe CommerceでPCI認定を維持するための詳細なガイドラインについては、[決済処理とストレージに関するベストプラクティス &#x200B;](../planning/payment-processing-storage.md)を参照してください。
+>Adobe CommerceでPCI認定を維持するための詳細なガイドラインについては、[決済処理とストレージに関するベストプラクティス ](../planning/payment-processing-storage.md)を参照してください。
 
 ### ユーザーおよびカスタマーサポート
 
@@ -216,9 +214,9 @@ Adobe Commerce CloudのPCI認定を維持するには、次の重要なベスト
 
 - **トラフィック処理の自動スケーリング**:
 
-  - Adobe Commerce Cloudは、リアルタイムのトラフィック要求にもとづいてサーバーリソース（web ノードなど）を動的に調整する自動スケーリングをサポートしており、ストアで手作業なしに高い訪問者数に対応できるようになります。 _クラウドガイド_&#x200B;の「[自動スケーリング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/autoscaling)」を参照してください。
+  - Adobe Commerce Cloudは、リアルタイムのトラフィック要求にもとづいてサーバーリソース（web ノードなど）を動的に調整する自動スケーリングをサポートしており、ストアで手作業なしに高い訪問者数に対応できるようになります。 _クラウドガイド_&#x200B;の「[自動スケーリング ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/autoscaling)」を参照してください。
 
-  - web層とサービス層は独立して拡張でき、トラフィックを増やすためにweb ノードを追加し、ピーク時にバックエンドのパフォーマンスのためにデータベースノードやサービスノードを拡張します。 _クラウドガイド_&#x200B;の「[&#x200B; スケールアーキテクチャ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)」を参照してください。
+  - web層とサービス層は独立して拡張でき、トラフィックを増やすためにweb ノードを追加し、ピーク時にバックエンドのパフォーマンスのためにデータベースノードやサービスノードを拡張します。 _クラウドガイド_&#x200B;の「[ スケールアーキテクチャ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)」を参照してください。
 
 - **パフォーマンス監視**:
 
@@ -240,17 +238,17 @@ Adobe Commerce CloudのPCI認定を維持するには、次の重要なベスト
 
 >[!TIP]
 >
->詳細なガイダンスについては、[&#x200B; メンテナンスのベストプラクティス &#x200B;](overview.md)、[&#x200B; パーソナライゼーション &#x200B;](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization)および[機能開発](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization)を参照してください。
+>詳細なガイダンスについては、[ メンテナンスのベストプラクティス ](overview.md)、[ パーソナライゼーション ](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization)および[機能開発](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization)を参照してください。
 
 ### レポートと分析
 
-- **Adobe Commerce Intelligence:** Adobe Commerceのコア機能であるCommerce Intelligenceは、複数のデータソースにまたがるベストプラクティスのインサイトを提供し、マーチャントが科学的なデータに基づいた意思決定を行い、明確で情報に基づいたアクションを実行できるようにします。 [_Commerce Intelligence ユーザーガイド_](https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/getting-started)を参照してください。
+- **Adobe Commerce Intelligence:** Adobe Commerceのコア機能であるCommerce Intelligenceは、複数のデータソースにまたがるベストプラクティスのインサイトを提供し、マーチャントが科学的なデータに基づいた意思決定を行い、明確で情報に基づいたアクションを実行できるようにします。 [_Commerce Intelligence ユーザーガイド_](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/getting-started)を参照してください。
 
 - **Adobe Analytics:** Adobe Analyticsは、オンラインストアのパフォーマンスを追跡、分析、最適化するための強力なソリューションを提供します。 Adobe Analyticsは、コマース企業が、顧客行動、商品のパフォーマンス、コンバージョン率などの主要指標に関するより深いインサイトを得られるように支援し、データ主導の意思決定を可能にします。
 
 - **Google Analytics:** Google Analyticsを使用して、お客様の行動、トラフィックソース、コンバージョン率を追跡します。
 
-- **その他のCommerce Intelligence ツール：** Adobe Commerceには、高度なレポート機能が含まれています。 この機能を使用すると、製品、注文、顧客データに基づく一連の動的レポートにアクセスできます。ビジネスのニーズに合わせてパーソナライズされたダッシュボードを使用できます。詳しくは、_管理者ユーザーガイド_&#x200B;の[高度なレポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting)を参照してください。
+- **その他のCommerce Intelligence ツール：** Adobe Commerceには、高度なレポート機能が含まれています。 この機能を使用すると、製品、注文、顧客データに基づく一連の動的レポートにアクセスできます。ビジネスのニーズに合わせてパーソナライズされたダッシュボードを使用できます。詳しくは、_管理者ユーザーガイド_&#x200B;の[高度なレポート ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting)を参照してください。
 
 ### まとめ
 
