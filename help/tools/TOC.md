@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 25d545e300a0a32f982a41c7d3d82b3ed5daf5ef
+source-git-commit: 8e93fbc0f771dd2b4ca1a5049ef8dd15f947cd82
 workflow-type: tm+mt
-source-wordcount: '11153'
+source-wordcount: '11157'
 ht-degree: 0%
 ---
 
@@ -417,7 +417,7 @@ ht-degree: 0%
     - v1.1.33 {#v1-1-33}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.33](quality-patches-tool/patches-available-in-qpt/v1-1-33/overview.md)
       - [ACSD-51792: ページにインプレッションイベントがありません](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51792-page-does-not-have-impression-event.md)
-      - [ACSD-51645：拡張機能Magento_OfflineShippingが無効になっている場合の新しいカート価格ルールの保存](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
+      - [ACSD-51645：拡張機能「Magento_OfflineShipping」が無効になっている場合の新しいカート価格ルールの保存](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
       - [ACSD-51240：会社登録フォームによる登録中にアップロードされたファイルが見つからない](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51240-uploaded-file-missing-while-registering-via-company-registration-form.md)
       - [ACSD-51907：制限付きの管理者ユーザーが、オフラインの払い戻し用のクレジットメモを作成できない](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51907-restricted-admin-user-cannot-create-a-credit-memo-with-an-offline-refund.md)
       - [ACSD-51892：設定ファイルが複数回読み込まれるパフォーマンスの問題](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.md)
@@ -1097,6 +1097,8 @@ ht-degree: 0%
       - [ACP2E-5017:GraphQLのカスタマーロールのクエリが、会社を持たない顧客に対して失敗する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)
       - [ACP2E-5143: GraphQL route クエリーが要求されないCMS ページコンテンツをレンダリングする](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)
       - [ACP2E-4741：リンクされた商品を保存すると、カスタムストックを使用して別の商品がストアフロントから非表示になる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
+    - v1.1.85 {#v1-1-85}
+      - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
   - [Quality Patches ToolでAdobe Commerceの問題が発生した場合のパッチの確認](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - コマンドラインツールリファレンス {#cli-reference}
   - [Adobe Commerce （オンプレミス）](reference/commerce-on-premises.md)
