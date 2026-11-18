@@ -18,4 +18,4 @@ ht-degree: 0%
 
 * [Adobe Commerce セキュリティパッチリリースの概要](/help/release/release-notes/security/overview.md#about-security-patch-releases)
 * セキュリティパッチリリースへのアップグレードの手順については、[&#x200B; セキュリティパッチアップグレードの例](/help/upgrade/implementation/perform-upgrade.md#example---security-patch)を参照してください。
-* 個々のセキュリティパッチファイルを適用するには、[Adobe サポートおよびツールガイド _の「](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) Adobeが提供するコンポーザーパッチの適用方法」を参照してください。_
+* 個々のセキュリティパッチファイルを適用するには、[Adobe サポートおよびツールガイド _の「](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) Adobeが提供するコンポーザーパッチの適用方法」を参照してください。_

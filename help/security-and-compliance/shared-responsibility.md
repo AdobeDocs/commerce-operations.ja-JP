@@ -40,7 +40,7 @@ Adobeは、次の責任を負います。
 * 安全なアプリケーション開発の確保
 * 加盟店の決済代行会社から要求された場合、PCI認証を取得する
 * セキュリティインシデントへの対応と対応
-* アクティブにサポートされているバージョンでは、すべてのサードパーティ製の依存関係、プラットフォームサービス、Adobe Commerce サービス拡張機能を維持する。 Adobeでは、サポートされていない依存関係バージョンを実行するデプロイメントに対するセキュリティサポートやサポートは提供されていません。 サポートされているバージョンについては、[必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)および[製品の可用性マトリックス &#x200B;](/help/release/product-availability.md)を参照してください。
+* アクティブにサポートされているバージョンでは、すべてのサードパーティ製の依存関係、プラットフォームサービス、Adobe Commerce サービス拡張機能を維持する。 Adobeでは、サポートされていない依存関係バージョンを実行するデプロイメントに対するセキュリティサポートやサポートは提供されていません。 サポートされているバージョンについては、[必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ja)および[製品の可用性マトリックス &#x200B;](/help/release/product-availability.md)を参照してください。
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Adobeは、該当するSLAで合意されている加盟店のインフラスト
 マーチャントには、カスタマイズしたAdobe Commerce on cloud インフラストラクチャソリューションのインスタンスに関する次のセキュリティのベストプラクティスを実施する責任があります。
 
 * 必要なAdobe Commerce on cloud infrastructure設定ファイルをリポジトリに追加する
-* Adobeによるリリース直後に、カスタムのAdobe Commerce on cloud インフラストラクチャソリューションにセキュリティやその他のパッチを適用する。 個々のセキュリティパッチファイルについては、_Adobe サポートおよびツールガイド_&#x200B;の「[Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)」で提供されているコンポーザーパッチの適用方法を参照してください。
+* Adobeによるリリース直後に、カスタムのAdobe Commerce on cloud インフラストラクチャソリューションにセキュリティやその他のパッチを適用する。 個々のセキュリティパッチファイルについては、_Adobe サポートおよびツールガイド_&#x200B;の「[Adobe](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)」で提供されているコンポーザーパッチの適用方法を参照してください。
 * ベンダーによるリリース後すぐに、すべてのカスタム拡張機能とコードにセキュリティやその他のパッチを適用する
 * カスタム Varnish VCL ファイルの作成、デプロイ、テスト
 * あらゆるカスタム拡張機能やコードを含む、カスタマイズされたAdobe Commerce on cloud インフラストラクチャソリューションの設計、テーマ設定、インストール、統合、保護
@@ -112,7 +112,7 @@ Adobeは、該当するSLAで合意されている加盟店のインフラスト
   * Adobe Commerce Servicesの拡張機能
   * サードパーティ製の拡張機能とカスタム統合
 
-  Adobeでは、サポートされていないバージョンを実行するデプロイメントのサポートは提供されていません。 サポートされているバージョンについては、[必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)および[製品の可用性マトリックス &#x200B;](/help/release/product-availability.md)を参照してください。
+  Adobeでは、サポートされていないバージョンを実行するデプロイメントのサポートは提供されていません。 サポートされているバージョンについては、[必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ja)および[製品の可用性マトリックス &#x200B;](/help/release/product-availability.md)を参照してください。
 
 ## クラウドサービスプロバイダーの責任
 
