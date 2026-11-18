@@ -57,13 +57,13 @@ whatsnew_consolidated:
   projects:
     - repo: commerce-operations.en
       title: Adobe Commerce operational guides
-      website: https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home
+      website: https://experienceleague.adobe.com/ja/docs/commerce-operations/operational-guides/home
     - repo: commerce-webapi
       title: Adobe Commerce web APIs
       website: https://developer.adobe.com/commerce/webapi/
     - repo: commerce.en
       title: Adobe Commerce
-      website: https://experienceleague.adobe.com/en/docs/commerce
+      website: https://experienceleague.adobe.com/ja/docs/commerce
 ```
 
 エントリを移動してセクションの順序を変更します。 両方のプラットフォームからプロジェクトを自由に切り替えることができます。 `.en`で終わるリポジトリ名は、ExL ソースパス `help/_includes/templated/whats-new.md`を使用します。 その他のすべてのリポジトリは、開発サイトのソース パス `src/pages/_includes/templated/whats-new.md`を使用しています。

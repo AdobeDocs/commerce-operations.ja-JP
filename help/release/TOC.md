@@ -64,4 +64,4 @@ ht-degree: 30%
   - [Adobe Commerce](packages/adobe-commerce.md)
   - [Magento Open Source](packages/magento-open-source.md)
 - [ドキュメントの更新](documentation-updates.md)
-- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)
