@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1300'
 ht-degree: 0%
 ---
 # セキュリティインシデントに対応するためのベストプラクティス
@@ -47,7 +47,7 @@ Adobe Commerce on cloud インフラストラクチャプロジェクトがセ�
 - すべての管理者ユーザーアカウントアクセスを監査する
 - 高度な多要素認証（MFA）制御の有効化
 - クリティカルログの保持
-- お使いのバージョンのAdobe Commerceのセキュリティアップグレードをご確認ください。
+- お使いのバージョンのAdobe Commerceの[&#x200B; セキュリティパッチリリースノート &#x200B;](../../../release/release-notes/security/overview.md)を確認し、必要なセキュリティパッチを適用します。
 
 その他の推奨事項については以下で詳しく説明します。
 

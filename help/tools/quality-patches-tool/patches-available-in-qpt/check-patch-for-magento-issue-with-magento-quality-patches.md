@@ -20,9 +20,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 28065887dc2539b1e594792cbbff3bfff146163a
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '445'
 ht-degree: 0%
 ---
 # Quality Patches ToolでAdobe Commerceの問題が発生した場合のパッチの確認
@@ -73,4 +73,4 @@ Adobe Commerce向けCloud > パッチを適用[&#128279;](https://experienceleag
 ## 関連トピックス
 
 * 開発者ドキュメントの[品質パッチツールのリリースノート &#x200B;](/help/tools/quality-patches-tool/release-notes.md)。
-* [Adobe](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーのパッチをサポートナレッジベースで適用する方法。
+* [Adobe サポートとツール ガイド _の_ Adobe](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)が提供するコンポーザーのパッチを適用する方法。

@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2129'
 ht-degree: 0%
 ---
 # Commerceのサイトとインフラストラクチャの保護
@@ -105,6 +105,7 @@ Commerceは通常、四半期ごとにセキュリティアップデートをリ
 - [&#x200B; セキュリティとコンプライアンスに関する通知](../../../release/security-enforcement-policy.md) （Adobe Commerce on Cloud バージョン 2.4.4 ～ 2.4.9）
 - [アップグレードガイド](../../../upgrade/overview.md)
 - [パッチの適用方法](../../../upgrade/patches/overview.md)
+- 個々のセキュリティパッチファイルについては、_Adobe サポートおよびツールガイド_&#x200B;の「[Adobe](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)」で提供されているコンポーザーパッチの適用方法を参照してください。
 
 >[!TIP]
 >

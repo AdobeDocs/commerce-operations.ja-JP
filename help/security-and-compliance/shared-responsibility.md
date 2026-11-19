@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3286'
 ht-degree: 0%
 ---
 # 責任セキュリティと運用モデルの共有
@@ -85,7 +85,7 @@ Adobeは、該当するSLAで合意されている加盟店のインフラスト
 マーチャントには、カスタマイズしたAdobe Commerce on cloud インフラストラクチャソリューションのインスタンスに関する次のセキュリティのベストプラクティスを実施する責任があります。
 
 * 必要なAdobe Commerce on cloud infrastructure設定ファイルをリポジトリに追加する
-* Adobeによるリリース直後に、カスタムのAdobe Commerce on cloud infrastructure ソリューションにセキュリティやその他のパッチを適用する
+* Adobeによるリリース直後に、カスタムのAdobe Commerce on cloud インフラストラクチャソリューションにセキュリティやその他のパッチを適用する。 個々のセキュリティパッチファイルについては、_Adobe サポートおよびツールガイド_&#x200B;の「[Adobe](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)」で提供されているコンポーザーパッチの適用方法を参照してください。
 * ベンダーによるリリース後すぐに、すべてのカスタム拡張機能とコードにセキュリティやその他のパッチを適用する
 * カスタム Varnish VCL ファイルの作成、デプロイ、テスト
 * あらゆるカスタム拡張機能やコードを含む、カスタマイズされたAdobe Commerce on cloud インフラストラクチャソリューションの設計、テーマ設定、インストール、統合、保護
@@ -979,4 +979,3 @@ Adobe Commerceのクラウドインフラストラクチャソリューション
 | 制限に対するvCPU使用率の監視 | R |   |
 
 {style="table-layout:auto"}
-

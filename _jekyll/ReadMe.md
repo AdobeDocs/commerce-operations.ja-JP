@@ -10,9 +10,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 63e52c8451f368e2d2a36096fc11c7ead62ee94e
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '704'
 ht-degree: 0%
 ---
 
@@ -41,6 +41,66 @@ bundle exec rake whatsnew_bp
 ```sh
 bundle exec rake whatsnew_bp since="jul 4"
 ```
+
+### `whatsnew_consolidated`
+
+公開済みの新機能テーブルを、設定されたCommerce ドキュメントプロジェクトから`help/_includes/automated/whatsnew/consolidated.md`に統合します。
+
+```sh
+bundle exec rake whatsnew_consolidated
+```
+
+[`_config.yml`](_config.yml)の`whatsnew_consolidated.projects`のプロジェクトを設定します。 各エントリには、リポジトリ名、プロジェクトタイトル、絶対HTTP （S） web サイト URLが必要です。
+
+```yaml
+whatsnew_consolidated:
+  projects:
+    - repo: commerce-operations.en
+      title: Adobe Commerce operational guides
+      website: https://experienceleague.adobe.com/ja/docs/commerce-operations/operational-guides/home
+    - repo: commerce-webapi
+      title: Adobe Commerce web APIs
+      website: https://developer.adobe.com/commerce/webapi/
+    - repo: commerce.en
+      title: Adobe Commerce
+      website: https://experienceleague.adobe.com/ja/docs/commerce
+```
+
+エントリを移動してセクションの順序を変更します。 両方のプラットフォームからプロジェクトを自由に切り替えることができます。 `.en`で終わるリポジトリ名は、ExL ソースパス `help/_includes/templated/whats-new.md`を使用します。 その他のすべてのリポジトリは、開発サイトのソース パス `src/pages/_includes/templated/whats-new.md`を使用しています。
+
+タスクは、`AdobeDocs` GitHub組織からパブリック `main` ファイルを取得します。 各プロジェクトタイトルをプレーンテキストの見出しとして表示し、`website`で設定されたドキュメントのホームページにプロジェクトタイトルをリンクする文を含む各テーブルを新機能の更新のソースとして紹介します。 全体で`Description | Type | Date/source`個のテーブルヘッダーを使用します。 DevSite プロジェクトの場合のみ、エスケープされた`\<br/\>` タグは`<br/>`になります。 それ以外の場合、本文の行、重複、リンク、ソース行の順序は変更されません。 各ソースが独自の期間を定義します。
+
+認識された更新なしメッセージを含むプロジェクトは省略されます。 すべてのプロジェクトにエントリがない場合、インクルードには、全体的な更新なしメッセージが1つ含まれます。 設定、取得、解析、または書き込みの失敗は、既存のインクルードを置き換えずにタスクに失敗します。
+
+タスクは、生成をスケジュールしたり、消費ページを更新したりしません。
+
+焦点を絞ったテストスイートには、`_jekyll` RakefileをロードしてBundlerを実行するRake エントリポイントテストが含まれています。 バンドラーと`_jekyll` バンドルを最初にインストールします。
+
+```sh
+cd _jekyll && bundle install
+```
+
+次に、リポジトリルートからテストを実行します。
+
+```sh
+ruby _jekyll/test/consolidated_whatsnew_test.rb
+```
+
+### `whatsnew_feedback`
+
+既存のローカル `help/_includes/automated/whatsnew/consolidated.md`のインクルードをフィルタリングして`help/_includes/automated/whatsnew/consolidated-feedback.md`を作成します。
+
+```sh
+bundle exec rake whatsnew_feedback
+```
+
+タスクは、大文字と小文字を区別し、周囲の空白を無視して、コンマ区切りの完全なType値として`Feedback`と一致します。 `Feedback, technical`などの組み合わせ型が含まれます。 説明、ソースリンク、または部分的な型名のメンションは適用されません。
+
+一致する行、重複、プレーンテキストのプロジェクト見出し、存在する場合はソース文、プロジェクトと行の順序は変更されません。 一致するエントリがないプロジェクトは省略されます。 何も一致しない場合、出力には1つの全体的なノーフィードバックメッセージが含まれます。
+
+入力は既に存在している必要があります。 更新する場合は、`bundle exec rake whatsnew_consolidated`を個別に実行します。 フィードバックタスクは、リモートコンテンツの取得、プロジェクト設定の読み取り、入力の再生成を行いません。
+
+入力が見つからないか、形式が正しくない場合は、既存のフィルターされたインクルードを置き換えずにタスクに失敗します。 入力ファイルは変更されず、フィルタリングされた出力はアトミックにパブリッシュされます。
 
 ### `get_released_versions`
 

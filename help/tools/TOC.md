@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 8e93fbc0f771dd2b4ca1a5049ef8dd15f947cd82
+source-git-commit: 73b32dcbf7f306d5b98277ff757e8e9b2eb4f0fa
 workflow-type: tm+mt
-source-wordcount: '11157'
+source-wordcount: '11161'
 ht-degree: 0%
 ---
 
@@ -639,7 +639,7 @@ ht-degree: 0%
       - [ACSD-46938：セットアップ中のDB トリガーのパフォーマンスの問題:upgrade](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
       - [ACSD-54887：顧客セッションの有効期限が切れた後、顧客ショッピングカートがクリアされる](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-54887-customer-shopping-cart-gets-cleared-after-session-expiry.md)
       - [ACSD-58141: L2 Redis キャッシュが有効になっている場合、PHPSESSIDがログイン顧客向けのPOST リクエストで再生成される](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
-      - [ACSD-59229：古いX-Magento-Vary値による顧客グループのデータ割り当て間違い](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
+      - [ACSD-59229：古いX-Magento-Vary値による顧客グループ データの割り当て間違い](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
       - [ACSD-60441: V1/customers [!DNL REST] API エンドポイントを使用して顧客を更新すると、エラーがスローされる](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
       - [ACSD-58352: デフォルトストアの属性ラベルを [!DNL GraphQL] APIを介して返す](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
       - [ACSD-59514：管理画面でFormsがブラウザーコンソールで [!DNL Page Builder]  スローのエラーが発生する](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
@@ -1099,6 +1099,8 @@ ht-degree: 0%
       - [ACP2E-4741：リンクされた商品を保存すると、カスタムストックを使用して別の商品がストアフロントから非表示になる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
     - v1.1.85 {#v1-1-85}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
+    - v1.1.86 {#v1-1-86}
+      - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
   - [Quality Patches ToolでAdobe Commerceの問題が発生した場合のパッチの確認](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - コマンドラインツールリファレンス {#cli-reference}
   - [Adobe Commerce （オンプレミス）](reference/commerce-on-premises.md)

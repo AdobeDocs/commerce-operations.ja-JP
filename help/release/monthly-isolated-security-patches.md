@@ -33,9 +33,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 66d7c9fd19785e791635d8e8bdf3d6ff3aa27a20
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1570'
 ht-degree: 0%
 ---
 # 月別隔離セキュリティパッチポリシー
@@ -84,7 +84,7 @@ Adobe Commerceのお客様が重要なセキュリティ修正を迅速に適用
 
 1. **ベースラインバージョンを確認します。**
 
-   分離されたパッチは、最新のセキュリティのみの`-p` リリースに対してのみテストされます。 ベースラインが遅れている場合は、まずそれを適用してください。
+   分離されたパッチは、最新のセキュリティのみの`-p` リリースに対してのみテストされます。 ベースラインが遅れている場合は、まずそれを適用してください。 アップグレード中にセキュリティパッチリリースを指定する手順については、[&#x200B; セキュリティパッチアップグレードの例](../upgrade/implementation/perform-upgrade.md#example---security-patch)を参照してください。
 
 1. **欠落しているパッチをすべて順番に適用します。**
 

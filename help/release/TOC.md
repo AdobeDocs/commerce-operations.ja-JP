@@ -4,10 +4,10 @@ user-guide-description: Adobe Commerceのパッチとサービスに関するす
 feature: Release Notes
 recommendations: noDisplay, noCatalog
 nudge: true
-source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
+source-git-commit: ffc6ecc659b60ec50957942a2102f4b804a8b424
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 31%
+source-wordcount: '114'
+ht-degree: 30%
 ---
 
 # リリース情報 {#release}
@@ -63,4 +63,5 @@ ht-degree: 31%
 - パッケージ {#packages}
   - [Adobe Commerce](packages/adobe-commerce.md)
   - [Magento Open Source](packages/magento-open-source.md)
+- [ドキュメントの更新](documentation-updates.md)
 - [業務ガイドに戻る](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja)

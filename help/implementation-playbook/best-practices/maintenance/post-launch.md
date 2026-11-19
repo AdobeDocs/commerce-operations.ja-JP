@@ -20,9 +20,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '2297'
+source-wordcount: '2228'
 ht-degree: 0%
 ---
 # Adobe Commerceのローンチ後のサポートとメンテナンス
@@ -88,8 +88,6 @@ Adobe Commerce Cloudでは、定期的なセキュリティモニタリングを
 
 - **セキュリティスキャン**: Adobeのセキュリティスキャンツールを使用して、Commerce サイト全体で既知の脆弱性とマルウェアを監視します。 このツールは、潜在的なセキュリティリスクとコンプライアンスの問題に関するアラートを提供します。
 
-- **定期的なパッチとアップデートのメンテナンス**:Adobeのセキュリティパッチとアップデートが利用可能になったときに適用します。 最新のAdobe Commerce バージョンにアップグレードすると、最新のセキュリティ対策が確実に実行されます。
-
 - **監査とログの監視**: New Relic ログ （Pro プロジェクトで使用可能）などのツールを活用して、ステージング環境と実稼動環境の両方のセキュリティログを一元化および分析し、潜在的なセキュリティ問題と侵害の可視性を向上させます。
 
 - **アカウントとアクセス管理**：不正または古いアカウントを削除するために、ユーザーと管理者アカウントを定期的に監査します。 管理者ユーザー向けの多要素認証（MFA）でアクセス制御を強化します。
@@ -122,13 +120,13 @@ Adobe Commerce Cloudでのエラーログを監視するために、Adobeには�
 
 #### セキュリティパッチとアップデート
 
-引き続き最新情報を入手し、Adobe Commerce クラウドシステムのセキュリティを確保するために、セキュリティパッチとアップデートを監視するための主な方法を以下に示します。
+Adobe Commerce インストールを最新の状態に保ち、安全に保つには、次の方法を使用します。
 
 - **Adobe Commerce セキュリティ アラートを購読する**: [Adobeからの通知を登録すると、セキュリティ上の脆弱性に関する情報を常に入手できます](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security)。
 
 - **リリースノート**&#x200B;を確認：バージョン （2.3.5-p1など）に「 – pN」でタグ付けされた[&#x200B; セキュリティパッチリリースノート &#x200B;](/help/release/release-notes/security/overview.md)を定期的に確認し、重要な修正と改善を含みます。
 
-- **セキュリティパッチを迅速に適用**：セキュリティパッチが利用可能になればすぐに適用します。 これには、最新バージョンへのアップデートや、特定のパッチファイルの適用が含まれます。
+- **セキュリティパッチを迅速に適用する**：セキュリティアップデートが利用可能になり次第すぐにインストールします。 個別のパッチファイルについては、_Adobe サポートおよびツールガイド_&#x200B;の「[Adobe](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)」で提供されているコンポーザーパッチの適用方法を参照してください。
 
 - **クラウドパッチを使用**: Adobe Commerce Cloudの場合、セキュリティパッチはCloud Tools Suiteにバンドルできます。 これらの修正を受け取るには、スイートまたはCommerce バージョンをアップグレードしてください。
 
@@ -136,7 +134,7 @@ Adobe Commerce Cloudでのエラーログを監視するために、Adobeには�
 
 >[!TIP]
 >
->パッチの適用とセキュリティの維持について詳しくは、[&#x200B; セキュリティパッチリリースノート &#x200B;](../../../release/release-notes/security/overview.md)および[&#x200B; セキュリティパッチの適用方法](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches)を参照してください。 また、[&#x200B; サイト全体の分析ツール &#x200B;](/help/tools/site-wide-analysis-tool/access.md)のレポートを確認する必要があります。
+>調査が必要な問題を特定するには、[&#x200B; サイト全体の分析ツール レポート &#x200B;](/help/tools/site-wide-analysis-tool/access.md)を確認してください。
 
 #### PCI認定
 
@@ -146,9 +144,9 @@ Adobe Commerce CloudのPCI認定を維持するには、次の重要なベスト
 
 - **安全な送信プロトコルを使用**：暗号化と適切なキー管理を使用して、常にTLSなどの安全なプロトコルを介して支払いデータを送信します。
 
-- **Web アプリケーション ファイアウォール （WAF）**&#x200B;を利用する：Fastlyを搭載したWAF サービスは、PCI DSS 6.6の要件を満たすのに役立ち、悪意のあるトラフィックがサイトに到達する前にブロックすることで、一般的な脆弱性から保護します。 詳細については、[こちら](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md)および[こちら](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/fastly-waf-service)を参照してください。
+- **Web アプリケーションファイアウォール（WAF）**&#x200B;を利用する：PCI DSS 6.6要件のサポートに関するガイダンスについては、[通常のセキュリティモニタリング &#x200B;](#regular-security-monitoring)および[Fastly WAF サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/cdn/fastly-waf-service)を参照してください。
 
-- **アクセス制限**：許可された担当者のみが機密性の高い支払いデータにアクセスできるようにし、[&#x200B; アクセス制御を適用して露出リスクを低減します](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md)。
+- **アクセス制限**：機密性の高い支払いデータへのアクセスを制限します。 アカウントとアクセスの管理方法については、[通常のセキュリティ監視](#regular-security-monitoring)を参照してください。
 
 - **定期的なセキュリティスキャン**：定期的なPCI ASV スキャンを実行し、[環境を監視](/help/security-and-compliance/shared-responsibility.md)して、潜在的な脆弱性に対処します。
 

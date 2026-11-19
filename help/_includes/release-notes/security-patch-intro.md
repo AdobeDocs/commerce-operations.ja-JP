@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+source-git-commit: 28065887dc2539b1e594792cbbff3bfff146163a
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '138'
 ht-degree: 0%
-
 ---
 # セキュリティパッチリリースノートの概要
 
@@ -18,4 +17,5 @@ ht-degree: 0%
 セキュリティパッチリリースの詳細：
 
 * [Adobe Commerce セキュリティパッチリリースの概要](/help/release/release-notes/security/overview.md#about-security-patch-releases)
-* セキュリティパッチリリースのダウンロードと適用方法については、_Adobe Commerce ナレッジベース_&#x200B;の[&#x200B; セキュリティパッチの入手と適用方法](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches)を参照してください。
+* セキュリティパッチリリースへのアップグレードの手順については、[&#x200B; セキュリティパッチアップグレードの例](/help/upgrade/implementation/perform-upgrade.md#example---security-patch)を参照してください。
+* 個々のセキュリティパッチファイルを適用するには、[Adobe サポートおよびツールガイド _の「](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) Adobeが提供するコンポーザーパッチの適用方法」を参照してください。_
