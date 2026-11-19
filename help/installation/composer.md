@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 22c0b3cac685762f9c0d36f225a418a07ed5e1db
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1015'
 ht-degree: 0%
 ---
 # オンプレミスのクイックスタートインストール
@@ -102,7 +102,7 @@ Adobe Commerce メタパッケージを取得するには：
 
    >[!NOTE]
    >
-   > Commerce認証キーで構成されたComposer `[auth.json](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/authentication-keys)` ファイルまたは環境変数を使用する場合、認証キーを入力するメッセージは表示されません。
+   > Commerce認証キーで構成されたComposer [`auth.json`](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/authentication-keys) ファイルまたは環境変数を使用している場合、認証キーを入力するメッセージは表示されません。
 
    `Could not find package...`や`...no matching package found`などのエラーが発生した場合は、コマンドにタイプミスがないことを確認してください。 それでもエラーが発生する場合は、Adobe Commerceのダウンロードが許可されない場合があります。 ヘルプについては、[Adobe Commerce サポート &#x200B;](https://support.magento.com/hc/en-us)にお問い合わせください。
 

@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 3d95ebd821afb07c08b65e5e8b911ada2d9e58ae
+source-git-commit: d8a15da2f255c5cac40003ea677e49c5d288d36d
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '661'
 ht-degree: 0%
 ---
 # 概要：[!DNL Quality Patches Tool] （QPT） v1.1.84
@@ -34,10 +34,14 @@ QPT v1.1.84には、次のパッチが含まれています。
 
 1. **[ACP2E-5005](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)**：管理でバンドル製品を再設定し、数量を編集すると、交渉可能な見積もりのバンドル製品オプションの数量が以前の値に戻る問題を修正します。
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**：デッドロックにより出荷処理と請求処理が失敗する問題を修正します。
+1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)**: Magento Open SourceからAdobe Commerceへのデータ移行で、カテゴリのスケジュールされたデザイン変更と製品&#x200B;**[!UICONTROL Special Price]**&#x200B;のスケジュールされた更新が正しく移行されず、移行中に一部のスケジュールされた更新が欠落またはスキップされる問題が修正され、移行のパフォーマンスが向上します。
+1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**：お客様が会社に割り当てられていない場合に、GraphQLを通じてお客様`role`にクエリを実行すると&#x200B;*社内サーバーエラー*&#x200B;が返される問題を修正しました。
+1. **[ACP2E-5029](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5029.md)**：手動再同期が実行されるまで、**[!DNL Live Search]**&#x200B;でカタログ価格ルールの変更が表示されない問題を修正します。
+1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)**: ファイルのロックが有効になっている場合に、インデックスがループ内で停止したままになり、インデックス再作成が完了しない問題を修正します。
+1. **ACP2E-5041**：更新スケジュール中に製品を保存すると、ストアフロントで更新終了後に&#x200B;**[!UICONTROL Special Price]**&#x200B;ではなく通常価格が表示される問題を修正しました。
 1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)**: Magento Open SourceからAdobe Commerceへのデータ移行で、カテゴリのスケジュールされたデザイン変更と製品&#x200B;**[!UICONTROL Special Price]**&#x200B;のスケジュールされた更新が正しく移行されず、移行中に一部のスケジュールされた更新が欠落またはスキップする問題が修正され、移行のパフォーマンスが向上します。
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**：お客様が会社に割り当てられていない場合に、GraphQLを通じてお客様`role`に問い合わせると&#x200B;*社内サーバーエラー*&#x200B;が返される問題を修正しました。
 1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)**: ファイルのロックが有効になっている場合に、インデックスがループ内で停止したままになり、インデックス再作成が完了しない問題を修正します。
-1. **ACP2E-5029**: カタログ価格ルールの変更が&#x200B;**[!DNL Live Search]**&#x200B;に表示されない問題を修正して、手動再同期を実行します。
 1. **[ACP2E-5041](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041.md)**：更新スケジュール中に製品を保存すると、ストアフロントで更新終了後に&#x200B;**[!UICONTROL Special Price]**&#x200B;ではなく通常価格が表示される問題を修正しました。
 1. **[ACP2E-5183](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)**: `@magento_import` ディレクティブを使用する`LESS` ファイルのコンパイル中にPHP 8.5で静的コンテンツのデプロイメントが失敗する問題を修正します。
 1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**：顧客が同じ注文に対して重複した注文確認メールを受信する問題を修正します。
