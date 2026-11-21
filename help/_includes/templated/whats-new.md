@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9e7338e0be69b83b92210b6299d92cc688681f8d
+source-git-commit: 7096b5f4fa4f40ac33aab5c5cf2bd09c1d25539c
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2293'
 ht-degree: 0%
 ---
 # 新しいテンプレート
@@ -12,6 +12,10 @@ ht-degree: 0%
 
 | 説明 | タイプ | 日付/ソース |
 | --- | --- | --- |
+| [&#x200B; ドキュメントのフィードバックガイダンス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/documentation-updates#provide-feedback)を更新して、広い画面と狭い画面でExperience Leagueのフィードバックコントロールを見つける場所、コメントを残す方法、Experience LeagueとAdobe Developerの貢献度手順を見つける場所について説明しました。 | フィードバック、テクニカル | [2026年11月20日](https://github.com/AdobeDocs/commerce-operations.en/commit/def568dccb1ef329d82f8e7ea82c2611fbcc36f1) |
+| ドキュメントのフィードバックを送信する際に、フィードバック専用のビューとガイダンスを使用して、[&#x200B; ドキュメントの更新](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/documentation-updates)を追加し、Experience LeagueとAdobe Developerからの更新をまとめました。 | 新しいトピック | [2026年11月18日](https://github.com/AdobeDocs/commerce-operations.en/commit/bf4c4051a3aafc67c71c8fc6d87f7862d1905204) |
+| [概要：品質パッチツール （QPT） v1.1.86](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview)を追加しました。 | 新しいトピック、qpt | [2026年11月18日](https://github.com/AdobeDocs/commerce-operations.en/commit/f9f1054293854bd3423eed5166527640360afc0f) |
+| [概要：品質パッチツール （QPT） v1.1.85](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview)を追加しました。 | 新しいトピック、qpt | [2026年11月17日](https://github.com/AdobeDocs/commerce-operations.en/commit/01b82c10845afcd16db6c22563d65df24f48d340) |
 | 1.1.86品質パッチツール（QPT）パッケージリリースの[&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=ja)を公開しました。 | Qpt | [2026年11月13日](https://github.com/AdobeDocs/commerce-operations.en/commit/6a84f2ebcbbf8041bbe783b53eab5500a4b0acc2) |
 | [ACP2E-5041のQPT 1.1.84修正に関する詳細な説明を追加：古い製品フォームを保存すると、スケジュールされた更新の後に特別価格が期限切れになります](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041)。 | 新しいトピック、qpt | [2026年11月11日](https://github.com/AdobeDocs/commerce-operations.en/commit/d2b8ba35c866be25a0fbbebceeb9a7c68ba37293) |
 | [ACP2E-5034のQPT 1.1.84修正に関する詳細な説明を追加しました。B2B アイテムの割引では、交渉可能な引用符](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5034)で動的な価格バンドルの小計が減少しません。 | 新しいトピック、qpt | [2026年11月11日](https://github.com/AdobeDocs/commerce-operations.en/commit/974c6238c0e0008eaa36851449de97218bfca949) |
@@ -51,5 +55,3 @@ ht-degree: 0%
 | [AC-12854のQPT 1.1.83修正に関する詳細な説明を追加しました。管理者による並べ替えでは、元の注文番号と–1のサフィックス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854)が使用されます。 | 新しいトピック、qpt | [2026年10月8日](https://github.com/AdobeDocs/commerce-operations.en/commit/087b7f48c2864837d394c6a9a72f9b30d6db3d90) |
 | [概要：品質パッチツール （QPT） v1.1.84](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview)を追加しました。 | 新しいトピック、qpt | [2026年10月5日](https://github.com/AdobeDocs/commerce-operations.en/commit/7550eaff7dfabecaf2d5ace52e4f28d8da9ff45a) |
 | [概要：品質パッチツール （QPT） v1.1.83](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview)を追加しました。 | 新しいトピック、qpt | [2026年10月2日](https://github.com/AdobeDocs/commerce-operations.en/commit/266c8529352dac198568dca4676aebd88ce50fc1) |
-| 完全なセキュリティパッチリリース間のパッチ火曜日に、Adobe Commerceがターゲットを絞った個別CVE修正をどのように提供するか、またそれらを適用して検証する方法を説明する、[月間個別セキュリティパッチポリシー](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/monthly-isolated-security-patches)を追加しました。 | 新しいトピック | [2026年9月18日](https://github.com/AdobeDocs/commerce-operations.en/commit/681f7f0589aed8787aaf165d36ac00f670d751ce) |
-| [Redis/Valkey サービス設定](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) ガイドを修正して、`VALKEY_BACKEND`および`REDIS_BACKEND`のデプロイ変数で、Adobe Commerceが実際に使用するキャッシュサービスが決まらないこと、および`VALKEY_USE_SLAVE_CONNECTION`/`REDIS_USE_SLAVE_CONNECTION`が実際に利用可能なサービスと一致する必要があることを確認しました。 | テクニカル | [2026年9月15日](https://github.com/AdobeDocs/commerce-operations.en/commit/49781ad38a266fffa1be080b5a093327a28cf6a6) |
