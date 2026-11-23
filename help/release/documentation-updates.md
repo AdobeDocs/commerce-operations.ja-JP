@@ -16,7 +16,7 @@ ht-degree: 0%
 
 このページでは、[Adobe Experience League](https://experienceleague.adobe.com/en/docs/commerce)および[Adobe Developer](https://developer.adobe.com/commerce/docs/)に関するAdobe Commerce テクニカルドキュメントの更新情報を示します。 これらのリストを使用して、読者のフィードバックに応じて作成された新しいトピック、修正されたガイダンス、改善を見つけることができます。
 
-フィードバック主導の変更では、不明確な指示、詳細の欠落、不正確な情報など、読者によって提起された提案や問題に対処します。 例えば、フィードバックにより、[製品レコメンデーションのドキュメント ](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits)で、バンドルおよびグループ化された製品のサポートに関する修正が行われました。
+フィードバック主導の変更では、不明確な指示、詳細の欠落、不正確な情報など、読者によって提起された提案や問題に対処します。 例えば、フィードバックにより、[製品レコメンデーションのドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits)で、バンドルおよびグループ化された製品のサポートに関する修正が行われました。
 
 ## フィードバックの提供
 
