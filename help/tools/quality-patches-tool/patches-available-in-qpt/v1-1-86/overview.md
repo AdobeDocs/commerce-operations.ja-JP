@@ -4,7 +4,7 @@ description: このサブセクションでは、[!DNL Quality Patches Tool] （
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 95a2c8dc890366c96b6a8129e8ee25dd1b319190
+source-git-commit: f7162ccff3f6011af51e0b32eec4bf405633050b
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -15,9 +15,10 @@ ht-degree: 0%
 
 QPT v1.1.86には、次のパッチが含まれています。
 
-1. **ACP2E-3094**：多くの権限を持つカテゴリの&#x200B;**[!UICONTROL Category Permissions]**&#x200B;を表示または編集すると、ブラウザーが応答しなくなる問題を修正しました。
-1. **ACP2E-5046**：管理者で注文を作成する際にページを更新すると、同じSKUが複数回追加される問題を修正しました。
-1. **ACP2E-5050**：管理者でRMAを表示または保存すると、**[!UICONTROL Action Logs]** レポートにRMA番号が表示されない問題を修正します。
+
+1. **[ACP2E-5046](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5046.md)**：管理者で注文を作成する際にページを更新すると、同じSKUが複数回追加される問題を修正しました。
+1. **[ACP2E-3094](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)**：多くの権限を持つカテゴリの&#x200B;**[!UICONTROL Category Permissions]**&#x200B;を表示または編集すると、ブラウザーが応答しなくなる問題を修正しました。
+1. **[ACP2E-5050](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)**：管理者でRMAを表示または保存すると、**[!UICONTROL Action Logs]** レポートにRMA番号が表示されない問題を修正します。
 1. **ACP2E-5057**: **[!UICONTROL Catalog Price Scope]**&#x200B;が&#x200B;**[!UICONTROL Website]**&#x200B;に設定されている場合に、バンドル製品の[!DNL GraphQL]件のクエリで、web サイト固有の価格ではなくグローバルバンドルオプション価格が返される問題を修正しました。
 1. **ACP2E-5061**: カテゴリ マーチャンダイジング ルールが`AND`条件を複数の値のいずれかに一致する条件と組み合わせることができない問題を修正します。
 1. **ACP2E-5071**：買い物客の買い物かごに既に利用可能な全数量が含まれている場合に、在庫の利用不可メッセージが商品ページに必ずしも表示されない問題を修正します。

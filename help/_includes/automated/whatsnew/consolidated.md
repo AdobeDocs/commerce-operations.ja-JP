@@ -1,7 +1,7 @@
 ---
-source-git-commit: 63e52c8451f368e2d2a36096fc11c7ead62ee94e
+source-git-commit: 0a511094b4520c95e47992f33c1add8f990dd80b
 workflow-type: tm+mt
-source-wordcount: '6511'
+source-wordcount: '7445'
 ht-degree: 0%
 ---
 # 新機能の統合
@@ -14,6 +14,13 @@ ht-degree: 0%
 
 | 説明 | タイプ | 日付/ソース |
 | --- | --- | --- |
+| 2026年11月18日以降にオンボーディングするプロジェクトが、構成可能なカタログデータモデルでマーチャンダイジングサービスを使用するようにプロビジョニングされたことをお客様に通知するために、_Adobe Commerce as a Cloud Service ガイド_&#x200B;を更新しました。 | テクニカル | [2026年11月23日](https://github.com/AdobeDocs/commerce.en/commit/a3c7e121397281fae0b8e9fd05697d71243eeb9d) |
+| Adobe Commerce as a Cloud Serviceの実稼動[&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes)を追加しました。 | リリースノート | [2026年11月20日](https://github.com/AdobeDocs/commerce.en/commit/740feb6b01d0acc7c99fcbef5d91029d1a3cb15a) |
+| より明確な設定手順、SKU一致ガイダンス、エンドツーエンドの検証手順を使用して、[AEM Assets統合設定ガイダンス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/setup-synchronization)を更新しました。 オーサーAPI アクセス、API ドリブン型メタデータ統合、サポートされている一括操作とAPI ベースの自動化の違いなど、[製品ビジュアルの使用権限の境界](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)を明確にしました。 | メジャーアップデート | [2026年11月20日](https://github.com/AdobeDocs/commerce.en/commit/5e9c42e5c93ac81604aa38bf3e55c5df729650a0) |
+| 製品レベルのランキングアクションを設定せずに、指定された条件に一致する検索クエリ [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/add)のストアフロント結果を抑制できるようになりました。 クエリが一致すると、ストアフロントには商品がゼロの検索結果ページが表示されます。 | メジャーアップデート、テクニカル | [2026年11月18日](https://github.com/AdobeDocs/commerce.en/commit/c3d0ecebd6c2bcad189435bcddb7765c487e39ab) |
+| Adobe Commerce as a Cloud Serviceのライセンス制限とシステム境界を一覧表示する[制限と境界](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/boundaries-limits) トピックを追加しました。 | 新しいトピック | [2026年11月18日](https://github.com/AdobeDocs/commerce.en/commit/e0897ddc675f0281bec971e505585683b7ac7ed8) |
+| Adobe Commerce as a Cloud Serviceの管理者へのアクセスに関する問題を解決するために、[役割のトラブルシューティング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/user-management#troubleshooting-roles)情報を追加しました。 | フィードバック | [2026年11月17日](https://github.com/AdobeDocs/commerce.en/commit/b019c35fcb86c4c2b346c368234657981ae37a1e) |
+| [SaaS Data Export Extension バージョン 103.6.1](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/release-notes)のリリースノートを追加しました。 | リリースノート | [2026年11月16日](https://github.com/AdobeDocs/commerce.en/commit/3e18a278391e4352c7482557fa76f8bb9b3451c7) |
 | [&#x200B; ファセットの制限と境界](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits)を更新して、サポートリクエストを通じて最大構成ファセットを増やすことができることを反映しました。 | テクニカル | [2026年11月16日](https://github.com/AdobeDocs/commerce.en/commit/d21c7401d0111c3e6b8dd1d65b26d4b480008011) |
 | 2027年に[Agentic commerceを追加しました。コマースリーダーがAI支援のショッピングに備えるために、商品データの準備状況、見つけやすさ、エージェント対応コマースインフラストラクチャ、測定、および実験に重点を置いて、コマースリーダーがAI支援のショッピングに備えるのに役立つ5つの優先事項](https://experienceleague.adobe.com/ja/docs/commerce/information-center/insights-and-guidance/five-priorities-commerce-leaders-2027)記事です。 | 新しいトピック | [2026年11月16日](https://github.com/AdobeDocs/commerce.en/commit/b16b6868cabf8bfe6682c4e512c192713a408cfa) |
 | Adobe Commerce as a Cloud Serviceのサンドボックス [&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes)を追加しました。 | リリースノート | [2026年11月13日](https://github.com/AdobeDocs/commerce.en/commit/c109643e7791468bfae958025144c968e8595f95) |
@@ -44,8 +51,6 @@ ht-degree: 0%
 | Adobe Commerce as a Cloud Serviceのサンドボックス [&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes)を追加しました。 | メジャーアップデート | [2026年9月29日](https://github.com/AdobeDocs/commerce.en/commit/b1524825387c1d5fe061bdadf76f27b2f614879d) |
 | 同期中に[&#x200B; カスタム AEM イメージロール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/synchronize/custom-match)を保持する機能を追加しました。 また、Adobe Commerceの機能が[AEM Assets Integration拡張機能の更新を非同期で確認できるようになりました](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/check-for-updates)。 | メジャーアップデート | [2026年9月28日](https://github.com/AdobeDocs/commerce.en/commit/44272d96ca697d54cbbfbb9ed5a045da94652d75) |
 | [PaaS](https://experienceleague.adobe.com/ja/docs/commerce/product-recommendations/boundaries-limits)と[Commerce Optimizer](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/recommendations/create)の両方について、バンドルされた商品とグループ化された商品がサポートされていないと誤って記載されていた商品レコメンデーションのドキュメントを修正しました。 | フィードバック | [2026年9月25日](https://github.com/AdobeDocs/commerce.en/commit/55b17947196acfa459934e4ee373469b84e16ea1) |
-| Commerce Developer Agentが移行プロセスをどのように支援できるかを説明するため、[移行の概要](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/overview)を更新しました。 | メジャーアップデート | [2026年9月24日](https://github.com/AdobeDocs/commerce.en/commit/739eabe6f43412610862ab00516687ad5aeeac53) |
-| Adobe Commerce as a Cloud Serviceの実稼動[&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes)を追加しました。 | メジャーアップデート | [2026年9月23日](https://github.com/AdobeDocs/commerce.en/commit/d879d372a199c24d266abdfb79d1ff0af164d75b) |
 
 ## Adobe Commerce Merchant guides
 
@@ -53,6 +58,8 @@ ht-degree: 0%
 
 | 説明 | タイプ | 日付/ソース |
 | --- | --- | --- |
+| コンポーザブルカタログデータモデル（CCDM）Commerce管理ガイド _を使用した_ マーチャンダイジングサービスの検索抑制ルールに関するドキュメントを追加しました。<br/>- サポートされているクエリ条件や他のマーチャンダイジング機能とのインタラクション方法など、[検索抑制ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/overview)をマーチャンダイジングルールの概要に追加しました。<br/>-[&#x200B; マーチャンダイジングルールを作成、スケジュール、編集、有効、無効にする手順を追加しました。](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add)-<br/>- [&#x200B; マーチャンダイジングルールの検索抑制ユースケースベストプラクティスとのベストプラクティスベストプラクティスを](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/best-practice)に追加しました。 | テクニカル | [2026年11月20日](https://github.com/AdobeDocs/commerce-admin.en/commit/91364e6ae9a7b01bba983483f493a53648cf7f45) |
+| Adobe Commerce as a Cloud Serviceの製品レビュー設定情報を追加するため、[製品レビュー](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/merchandising/product-reviews/product-reviews)を更新しました。 | メジャーアップデート | [2026年11月20日](https://github.com/AdobeDocs/commerce-admin.en/commit/4f318e6901379b7afec8c1cca8f98a5f90e20e9d) |
 | Adobe Commerce as a Cloud Serviceのコンポーザブルカタログデータモデル（CCDM）を使用したマーチャンダイジングサービスに関するドキュメントを追加しました：<br/>- [&#x200B; マーチャンダイジングサービスの概要](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/overview)および[&#x200B; マーチャンダイジングサービスのタスクを役割](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/get-started-merchandising-ccdm)の参照で追加しました。<br/>- [&#x200B; カタログビュー](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view)および[価格表](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/setup/pricebooks)のトピックを追加しました。<br/>- CCDM ユーザーをマーチャンダイジングサービスに誘導するメモを追加しました。 | メジャーアップデート、新しいトピック | [2026年11月11日](https://github.com/AdobeDocs/commerce-admin.en/commit/f31ba4b981fb70f10cb0e1438dbd445550e6253b) |
 | リリースノート、新しいメニューナビゲーション、インストール手順を含むように、[&#x200B; カタログ強化](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/catalog-enrichment)を更新しました。 | リリースノート | [2026年11月2日](https://github.com/AdobeDocs/commerce-admin.en/commit/6809e8121b81b0565ce9767e3fcf444ad3342f8f) |
 | 管理者ユーザーがストアのクレジットを管理できる[&#x200B; ストアのクレジット役割リソース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customer-accounts/store-credit/store-credit-using#store-credit-role-resources)を追加しました。 | メジャーアップデート | [2026年10月29日](https://github.com/AdobeDocs/commerce-admin.en/commit/72b270ab3fd062fab4268bd4667d61ccab4d8676) |
@@ -70,6 +77,10 @@ ht-degree: 0%
 
 | 説明 | タイプ | 日付/ソース |
 | --- | --- | --- |
+| [&#x200B; ドキュメントのフィードバックガイダンス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/documentation-updates#provide-feedback)を更新して、広い画面と狭い画面でExperience Leagueのフィードバックコントロールを見つける場所、コメントを残す方法、Experience LeagueとAdobe Developerの貢献度手順を見つける場所について説明しました。 | フィードバック、テクニカル | [2026年11月20日](https://github.com/AdobeDocs/commerce-operations.en/commit/def568dccb1ef329d82f8e7ea82c2611fbcc36f1) |
+| ドキュメントのフィードバックを送信する際に、フィードバック専用のビューとガイダンスを使用して、[&#x200B; ドキュメントの更新](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/documentation-updates)を追加し、Experience LeagueとAdobe Developerからの更新をまとめました。 | 新しいトピック | [2026年11月18日](https://github.com/AdobeDocs/commerce-operations.en/commit/bf4c4051a3aafc67c71c8fc6d87f7862d1905204) |
+| [概要：品質パッチツール （QPT） v1.1.86](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview)を追加しました。 | 新しいトピック、qpt | [2026年11月18日](https://github.com/AdobeDocs/commerce-operations.en/commit/f9f1054293854bd3423eed5166527640360afc0f) |
+| [概要：品質パッチツール （QPT） v1.1.85](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview)を追加しました。 | 新しいトピック、qpt | [2026年11月17日](https://github.com/AdobeDocs/commerce-operations.en/commit/01b82c10845afcd16db6c22563d65df24f48d340) |
 | 1.1.86品質パッチツール（QPT）パッケージリリースの[&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=ja)を公開しました。 | Qpt | [2026年11月13日](https://github.com/AdobeDocs/commerce-operations.en/commit/6a84f2ebcbbf8041bbe783b53eab5500a4b0acc2) |
 | [ACP2E-5041のQPT 1.1.84修正に関する詳細な説明を追加：古い製品フォームを保存すると、スケジュールされた更新の後に特別価格が期限切れになります](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041)。 | 新しいトピック、qpt | [2026年11月11日](https://github.com/AdobeDocs/commerce-operations.en/commit/d2b8ba35c866be25a0fbbebceeb9a7c68ba37293) |
 | [ACP2E-5034のQPT 1.1.84修正に関する詳細な説明を追加しました。B2B アイテムの割引では、交渉可能な引用符](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5034)で動的な価格バンドルの小計が減少しません。 | 新しいトピック、qpt | [2026年11月11日](https://github.com/AdobeDocs/commerce-operations.en/commit/974c6238c0e0008eaa36851449de97218bfca949) |
@@ -109,8 +120,6 @@ ht-degree: 0%
 | [AC-12854のQPT 1.1.83修正に関する詳細な説明を追加しました。管理者による並べ替えでは、元の注文番号と–1のサフィックス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854)が使用されます。 | 新しいトピック、qpt | [2026年10月8日](https://github.com/AdobeDocs/commerce-operations.en/commit/087b7f48c2864837d394c6a9a72f9b30d6db3d90) |
 | [概要：品質パッチツール （QPT） v1.1.84](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview)を追加しました。 | 新しいトピック、qpt | [2026年10月5日](https://github.com/AdobeDocs/commerce-operations.en/commit/7550eaff7dfabecaf2d5ace52e4f28d8da9ff45a) |
 | [概要：品質パッチツール （QPT） v1.1.83](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview)を追加しました。 | 新しいトピック、qpt | [2026年10月2日](https://github.com/AdobeDocs/commerce-operations.en/commit/266c8529352dac198568dca4676aebd88ce50fc1) |
-| 完全なセキュリティパッチリリース間のパッチ火曜日に、Adobe Commerceがターゲットを絞った個別CVE修正をどのように提供するか、またそれらを適用して検証する方法を説明する、[月間個別セキュリティパッチポリシー](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/monthly-isolated-security-patches)を追加しました。 | 新しいトピック | [2026年9月18日](https://github.com/AdobeDocs/commerce-operations.en/commit/681f7f0589aed8787aaf165d36ac00f670d751ce) |
-| [Redis/Valkey サービス設定](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) ガイドを修正して、`VALKEY_BACKEND`および`REDIS_BACKEND`のデプロイ変数で、Adobe Commerceが実際に使用するキャッシュサービスが決まらないこと、および`VALKEY_USE_SLAVE_CONNECTION`/`REDIS_USE_SLAVE_CONNECTION`が実際に利用可能なサービスと一致する必要があることを確認しました。 | テクニカル | [2026年9月15日](https://github.com/AdobeDocs/commerce-operations.en/commit/49781ad38a266fffa1be080b5a093327a28cf6a6) |
 
 ## Commerce on Cloud Infrastructure
 
@@ -118,7 +127,10 @@ ht-degree: 0%
 
 | 説明 | タイプ | 日付/ソース |
 | --- | --- | --- |
+| 次のリリースドキュメントを更新しました：<br/>- [Cloud Docker for Commerce](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker#latest): nginx v1.30.7、PHP 8.1 FPMの基本イメージの更新、およびCloud Tools間のJava セキュリティ強化に関するv1.4.11 リリースノートを追加しました。<br/>- [Cloud Tools Suite](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite): Cloud Docker バージョンとソースタグリンクをv1.4.11に更新しました。 | リリースノート | [2026年11月20日](https://github.com/AdobeDocs/commerce-on-cloud.en/commit/d8b1e9b099c1c42094dc223248485b94d1c6a260) |
+| Commerce向け[&#x200B; クラウドパッチのリリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)を更新し、[Adobe Commerce セキュリティアップデート APSB26-153](https://www.adobe.com/trust/security/products/commerce/apsb26-153.html)で参照されているセキュリティの機能強化を含めました。 | リリースノート | [2026年10月13日](https://github.com/AdobeDocs/commerce-on-cloud.en/commit/287bd80401c6f3a3f0a0adc6d9d9019795207a56) |
 | ECE-Tools v2002.2.15 リリースの後、[CLI参照](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)および[&#x200B; エラーメッセージ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference)を更新しました。 | テクニカル | [2026年10月13日](https://github.com/AdobeDocs/commerce-on-cloud.en/commit/d27cc83271459bb3c8cb718fe72a1810d2f5a3c5) |
+| [ece-tools](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package) 2002.2.15および[Cloud Docker](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker) 1.4.10:<br/>のリリースノートを更新し、OpenSearch用の提供終了（EOL）エントリを追加しました。<br/>- ActiveMQ Artemis、OpenSearch、RabbitMQ、MariaDB、Valkeyの機能テスト範囲を文書化しました。<br/>-[Cloud Tools Suite version table](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)を更新し、新しいツールバージョンとCloud Docker バージョンを反映しました。 | リリースノート | [2026年10月8日](https://github.com/AdobeDocs/commerce-on-cloud.en/commit/ea6667f993821b605931d4be0cdd89cd3c8d0d30) |
 
 ## Adobe Commerceの拡張機能
 
@@ -126,11 +138,13 @@ ht-degree: 0%
 
 | 説明 | タイプ | 日付/ソース |
 | --- | --- | --- |
+| Adobe Commerce [webhook バージョン 1.22.0](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes)をリリースしました。 | メジャーアップデート、リリースノート | [2026年11月19日](https://github.com/AdobeDocs/commerce-extensibility/pull/640) |
+| [管理UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)の一般的な機能強化。 | メジャーアップデート、フィードバック | [2026年11月18日](https://github.com/AdobeDocs/commerce-extensibility/pull/487) |
+| アプリのランタイムアクションをAdobe Commerce GraphQL スキーマに統合する`commerce-app-api-mesh` [&#x200B; アプリ管理AI スキル &#x200B;](https://developer.adobe.com/commerce/extensibility/app-management/working-with-ai)を文書化しました。 | テクニカル | [2026年11月18日](https://github.com/AdobeDocs/commerce-extensibility/pull/605) |
 | 管理者UI SDK 5.2.0では、[返品ビューボタン &#x200B;](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/extension-points/v2/rma/view-button)および[&#x200B; クレジットメモのカスタム属性グリッド列](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/extension-points/v2/credit-memo/custom-attribute-grid-columns)、新しい返品フォームの[&#x200B; ネイティブ UI フォームの置き換え](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/extension-points/v2/native-ui#supported-targets)、および[失敗したリテンション &#x200B;](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/configuration#failed-request-retention)設定のV2拡張ポイントが追加されます。 詳細については、[&#x200B; リリースノート &#x200B;](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes)を参照してください。 | 新しいトピック、リリースノート | [2026年11月16日](https://github.com/AdobeDocs/commerce-extensibility/pull/626) |
 | Adobe Commerce 1.24.0[&#128279;](https://developer.adobe.com/commerce/extensibility/events/release-notes)用の[Adobe Commerce Webhook 1.21.0](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes)およびAdobe I/O Eventsをリリースしました。 | メジャーアップデート、リリースノート | [2026年11月12日](https://github.com/AdobeDocs/commerce-extensibility/pull/629) |
 | 次の[V2拡張ポイント &#x200B;](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/extension-points/v2/)のサポートを追加しました：請求書とクレジットビューボタン、ニュースレター購読者グリッド列、ネイティブ UI フォームの置き換え。 | メジャーアップデート、新しいトピック、リリースノート | [2026年11月3日](https://github.com/AdobeDocs/commerce-extensibility/pull/617) |
 | Adobe Commerce Optimizer環境を含めるように、[&#x200B; アプリ提出ガイドライン &#x200B;](https://developer.adobe.com/commerce/extensibility/app-development/app-submission-guidelines)を更新しました。 | テクニカル | [2026年9月22日](https://github.com/AdobeDocs/commerce-extensibility/pull/610) |
-| 拡張性[&#x200B; ランディングページ &#x200B;](https://developer.adobe.com/commerce/extensibility)を修正し、今日の開発ワークストリームを紹介しました。 | メジャーアップデート | [2026年9月21日](https://github.com/AdobeDocs/commerce-extensibility/pull/607) |
 
 ## Adobe Commerce web API
 
@@ -157,6 +171,15 @@ ht-degree: 0%
 | [publicRequisitionList](https://developer.adobe.com/commerce/webapi/graphql/schema/b2b/requisition-list/queries/public-requisition-list) クエリ、[addPublicRequisitionListItemsToCart](https://developer.adobe.com/commerce/webapi/graphql/schema/b2b/requisition-list/mutations/add-public-requisition-list-items-to-cart)変異、および[sharePublicRequisitionList](https://developer.adobe.com/commerce/webapi/graphql/schema/b2b/requisition-list/mutations/share-public-requisition-list)変異を使用したパブリック購買リストのサポートを追加しました。 | メジャーアップデート、新しいトピック | [2026年9月29日](https://github.com/AdobeDocs/commerce-webapi/pull/617) |
 | ストアフロント [requestReturn](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return#request-a-return-with-an-image-attachment) GraphQLの変更を通じて返品リクエストを送信する際に、ファイルと画像をアップロードできるようになりました。 | メジャーアップデート | [2026年9月23日](https://github.com/AdobeDocs/commerce-webapi/pull/613) |
 | Adobe Commerce as a Cloud Serviceの[REST](https://developer.adobe.com/commerce/webapi/reference/rest/saas)および[GraphQL](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/) スキーマを更新しました。 | メジャーアップデート | [2026年9月23日](https://github.com/AdobeDocs/commerce-webapi/pull/616) |
+
+## Adobe Commerceのマーチャンダイジングサービス
+
+これらの更新は、[Adobe Commerce マーチャンダイジングサービス &#x200B;](https://developer.adobe.com/commerce/services/) ホームページの&#x200B;*新機能* セクションから取得されます。
+
+| 説明 | タイプ | 日付/ソース |
+| --- | --- | --- |
+| [取り込みスキーマ &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#tag/ProductMetadata)の製品メタデータ `visibleIn` フィールドで、`MISC`の役割がサポートされるようになりました。 この役割を使用すると、属性をバックエンドや統合で使用できるようにし、製品詳細ページや製品リストページに表示しないようにします。 | テクニカル | [2026年11月20日](https://github.com/AdobeDocs/commerce-services/pull/373) |
+| 商品、カテゴリ、属性メタデータ、商品レイヤー、価格表、価格を取得するためのGET操作をAdobe Commerce Optimizer [&#x200B; データ取り込みREST API リファレンス &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/)に追加しました。 スキーマにビデオ、sortOrder、およびOBJECT データタイプを追加しました。 | メジャーアップデート | [2026年11月17日](https://github.com/AdobeDocs/commerce-services/pull/372) |
 
 ## ADOBE DEVELOPER APP BUILDER用API メッシュ
 
