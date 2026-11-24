@@ -13,7 +13,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: bce83371e9d510552b871005d591981b1d099f80
+source-git-commit: 0266f36925944eeb0e05b1d778b9a32560e16d7f
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
@@ -27,14 +27,14 @@ ht-degree: 1%
 
 **他の製品のリリースノート：**
 
-- [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes)
-- [Adobe Commerce Optimizer](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/release-notes)
+- [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+- [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes)
 
 >[!ENDSHADEBOX]
 
 >[!TIP]
 >
->- Adobe Commerceを初めて使用する場合は、[&#x200B; エンタープライズアーキテクチャ &#x200B;](../../implementation-playbook/architecture/enterprise-blueprint.md)および[Adobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/about)に関するトピックを参照して、方向性を確認してください。
+>- Adobe Commerceを初めて使用する場合は、[ エンタープライズアーキテクチャ ](../../implementation-playbook/architecture/enterprise-blueprint.md)および[Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about)に関するトピックを参照して、方向性を確認してください。
 >- アップグレードについて詳しくは、[推奨事項](../../upgrade/resources/recommended-reading.md)を参照してください。
 
 <table>
@@ -49,17 +49,17 @@ ht-degree: 1%
             <li><a href="../lifecycle-policy.md">ソフトウェアライフサイクルポリシー</a></li>
             <li><a href="../security-enforcement-policy.md">セキュリティとコンプライアンスに関する通知</a></li>
             <li><a href="https://www.adobe.com/trust/security/bulletins-and-advisories.html">Adobe セキュリティ情報とアドバイザリー</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=ja">B2B for Adobe Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B for Adobe Commerce</a></li>
           </ul>
         </td>
       <td><strong> クラウドインフラストラクチャ上のAdobe Commerce</strong>
         <p>Cloud PlatformでのAdobe Commerceのインストールとアップグレードのデプロイと管理を目的としたCloud Suite for Adobe Commerce パッケージの最新の機能強化について説明します。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/backward-incompatible-changes">後方互換性のない変更</a></li>
-            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Commerce用のクラウドパッチ</a></li>
-            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker">Cloud Docker for Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/cloud-components">Commerceのクラウドコンポーネント</a></li>
-            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package">ece-tools</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/backward-incompatible-changes">後方互換性のない変更</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Commerce用のクラウドパッチ</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker">Cloud Docker for Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-components">Commerceのクラウドコンポーネント</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package">ece-tools</a></li>
           </ul>
       </td>
     </tr>
@@ -71,12 +71,12 @@ ht-degree: 1%
             <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes">カタログサービス</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes">ライブサーチ</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes">決済サービス</a></li>
-            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/release-notes">Commerce/a&gt;用AEM Assetsの統合</li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">Commerce/a&gt;用AEM Assetsの統合</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes">商品レコメンデーション</a></li>
-            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/release-notes">SaaS データ書き出しサービス</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">SaaS データ書き出しサービス</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas">Commerce Services Connector</a></li>
-            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce/aco-optimizer-connector/release-notes">Commerce Optimizer Connector</a></li>
-            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce/data-connection/release-notes">Experience Platform Connector</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes">Commerce Optimizer Connector</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">Experience Platform Connector</a></li>
           </ul>
         </td>
       <td><strong> ツール </strong>
@@ -96,8 +96,8 @@ ht-degree: 1%
        <td><strong> ストアフロント体験</strong>
         <p>顧客にユニークな体験を提供するために利用できる、ストアフロントテクノロジーの最新の改善点について説明します。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/"">Adobe Commerce ストアフロント</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html?lang=ja">ページビルダー</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/">Adobe Commerce ストアフロント</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">ページビルダー</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
       </td>
