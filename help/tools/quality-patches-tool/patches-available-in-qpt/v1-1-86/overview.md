@@ -4,7 +4,7 @@ description: このサブセクションでは、[!DNL Quality Patches Tool] （
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: eb417e7d25291df12e4b35e4e581e3771cd9c55b
+source-git-commit: 50215e62371db397c96f9dbd2ff2b9a26ef3a131
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 QPT v1.1.86には、次のパッチが含まれています。
 
-1. **ACP2E-3094**：多くの権限を持つカテゴリの&#x200B;**[!UICONTROL Category Permissions]**&#x200B;を表示または編集すると、ブラウザーが応答しなくなる問題を修正しました。
+1. **[ACP2E-3094](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)**：多くの権限を持つカテゴリの&#x200B;**[!UICONTROL Category Permissions]**&#x200B;を表示または編集すると、ブラウザーが応答しなくなる問題を修正しました。
 1. **ACP2E-5046**：管理者で注文を作成する際にページを更新すると、同じSKUが複数回追加される問題を修正しました。
 1. **[ACP2E-5050](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)**：管理者でRMAを表示または保存すると、**[!UICONTROL Action Logs]** レポートにRMA番号が表示されない問題を修正します。
 1. **ACP2E-5057**: **[!UICONTROL Catalog Price Scope]**&#x200B;が&#x200B;**[!UICONTROL Website]**&#x200B;に設定されている場合に、バンドル製品の[!DNL GraphQL]件のクエリで、web サイト固有の価格ではなくグローバルバンドルオプション価格が返される問題を修正しました。
