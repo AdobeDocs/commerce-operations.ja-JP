@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 8070923142c6b28c5e34d47200d2f8995aae5dcb
+source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
 workflow-type: tm+mt
-source-wordcount: '11245'
+source-wordcount: '11262'
 ht-degree: 0%
 ---
 
@@ -1102,6 +1102,7 @@ ht-degree: 0%
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
     - v1.1.86 {#v1-1-86}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5134：共有カタログからバンドル製品を削除すると、バンドルがカートに残り、チェックアウト時にエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)
       - [ACP2E-5118：翻訳キャッシュが無効になっている場合、ページビルダーのプレビューがレンダリングされない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)
       - [ACP2E-5061: カテゴリ マーチャンダイジングルールは、複数の値に一致する条件とAND条件を組み合わせることができません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)
       - [ACP2E-5046：管理画面で注文作成中にページを更新すると、同じSKUが複数回追加される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5046.md)

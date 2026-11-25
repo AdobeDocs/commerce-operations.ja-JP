@@ -4,9 +4,9 @@ description: このサブセクションでは、[!DNL Quality Patches Tool] （
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8070923142c6b28c5e34d47200d2f8995aae5dcb
+source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '631'
 ht-degree: 0%
 ---
 # 概要：[!DNL Quality Patches Tool] （QPT） v1.1.86
@@ -23,8 +23,8 @@ QPT v1.1.86には、次のパッチが含まれています。
 1. **[ACP2E-5061](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)**: カテゴリ マーチャンダイジング ルールが、複数の値のいずれかに一致する条件とAND条件を組み合わせることができない問題を修正します。
 1. **ACP2E-5071**：買い物客の買い物かごに既に利用可能な全数量が含まれている場合に、在庫の利用不可メッセージが商品ページに必ずしも表示されない問題を修正します。
 1. **ACP2E-5094**: `MAGENTO_DC_*`環境変数が設定されている場合にページの読み込みが大幅に遅くなる問題を修正します。
+1. **[ACP2E-5134](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)**：企業の共有カタログからバンドルに含まれる製品を削除すると、バンドル製品がショッピングカートに残り、カートとチェックアウト時にエラーが発生する問題を修正します。
 1. **[ACP2E-5118](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)**: **[!UICONTROL Translations]** キャッシュが無効になっている場合、[!DNL Page Builder] プレビューがレンダリングされない問題を修正します。
-1. **ACP2E-5134**：企業の[!UICONTROL Shared Catalog]からバンドルのコンポーネント製品を削除すると、ショッピングカートにバンドル製品が残り、カートとチェックアウト中にエラーが発生する問題を修正します。
 1. **ACP2E-5146**：別のWeb サイトの顧客が管理者ユーザーと同じIDを持つ場合、特定のWeb サイトに制限された管理者ユーザーが顧客を削除できない問題を修正します。
 1. **ACP2E-5176**: [!DNL Google Analytics 4]から[!DNL Google Tag Manager]に送信されたe コマースイベントが[!DNL Universal Analytics]形式を使用し、複数のチェックアウトイベントを省略する問題を修正します。
 1. **ACP2E-5185**: カテゴリーツリー内のカテゴリを移動すると、エラー`There was a category move error`が表示されるか、ストアに多数のURL書き換えが行われた場合に完了するのに数分かかる問題を修正します。
