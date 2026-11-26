@@ -4,9 +4,9 @@ description: このサブセクションでは、[!DNL Quality Patches Tool] （
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
+source-git-commit: 22769f702de10db88f28a5d4218a4f4c5d91cf0a
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '639'
 ht-degree: 0%
 ---
 # 概要：[!DNL Quality Patches Tool] （QPT） v1.1.86
@@ -29,13 +29,13 @@ QPT v1.1.86には、次のパッチが含まれています。
 1. **ACP2E-5176**: [!DNL Google Analytics 4]から[!DNL Google Tag Manager]に送信されたe コマースイベントが[!DNL Universal Analytics]形式を使用し、複数のチェックアウトイベントを省略する問題を修正します。
 1. **ACP2E-5185**: カテゴリーツリー内のカテゴリを移動すると、エラー`There was a category move error`が表示されるか、ストアに多数のURL書き換えが行われた場合に完了するのに数分かかる問題を修正します。
 1. **ACP2E-4191**: **[!UICONTROL EAV types and attributes]** キャッシュが無効になっている場合に、特定のREST API リクエストが無限ループに入る問題を修正します。
-1. **ACP2E-4973**: **[!UICONTROL In-Store Delivery]**&#x200B;から別の配信方法に切り替えても、関連付けられているストア アドレスがカートからクリアされない問題を修正します。
+1. **[ACP2E-4973](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)**：店舗内配信から別の配信方法に切り替えても、関連付けられた店舗アドレスがカートからクリアされない問題を修正します。
 1. **ACP2E-5221**：多くのストアと顧客グループを含むインストールで&#x200B;**[!UICONTROL Quick Order]**&#x200B;が有効になっている場合、**[!UICONTROL Catalog Product Permissions]** インデクサーが大幅に長くなる問題を修正します。
-1. **ACP2E-5245**：最初の注文で同じ住所を使用して配送および請求を行う新規登録のお客様が、次回のチェックアウト時に、その住所が2回表示される問題を修正しました。
+1. **[ACP2E-5245](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)**：最初の注文で同じ住所を使用して配送および請求を行う新規登録のお客様が、次回のチェックアウト時に、その住所が2回表示される問題を修正しました。
 1. **ACP2E-5248**: [!DNL PHP] 8.5で&#x200B;**[!UICONTROL Add Product]** ページを開くときに&#x200B;**[!UICONTROL Edit Product Status]**&#x200B;権限のない管理者ユーザーに`null as array offset`非推奨エラーが表示される問題を修正しました。
 1. **ACP2E-5254**：顧客がリストを開いたときに、キャッシュがクリアされるまで、購買リストに追加された製品が表示されない問題を修正します。
 1. **ACP2E-5268**: **[!UICONTROL Enable Frontend Resize]**&#x200B;が&#x200B;**[!UICONTROL No]**&#x200B;に設定されている場合に設定可能な製品の作成が失敗する問題を修正します。
-1. **ACP2E-3752**：多数の製品インポート操作を作成すると、製品インポート処理でエラー`Undefined array key "apply_to"`がスローされる問題を修正します。
+1. **[ACP2E-3752](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)**：製品のインポート処理で多数の製品インポート操作が作成された場合にエラー&#x200B;*警告：未定義の配列キー「apply_to」*&#x200B;がスローされる問題を修正します。
 1. **ACP2E-5280**: **[!UICONTROL Category Permissions]**&#x200B;が有効になっている間にサインインする際にエラーが発生する問題を修正します。
 1. **ACP2E-5295**：同じプロセスで&#x200B;**[!UICONTROL Inventory]** インデクサーの後に実行すると、並列製品価格のインデックス再作成がエラー`Fail in child process`で失敗する問題を修正します。
 1. **ACP2E-5298**: カート価格ルールへの表示専用アクセス権を持つ管理者ユーザーがクーポンコードを生成または削除できる問題を修正しました。
