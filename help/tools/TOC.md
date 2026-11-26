@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
+source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
 workflow-type: tm+mt
-source-wordcount: '11262'
+source-wordcount: '11345'
 ht-degree: 0%
 ---
 
@@ -1100,8 +1100,13 @@ ht-degree: 0%
       - [ACP2E-4741：リンクされた商品を保存すると、カスタムストックを使用して別の商品がストアフロントから非表示になる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
     - v1.1.85 {#v1-1-85}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
+      - [ACP2E-3991：クライアント IP アドレスが正しく判断されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-3991.md)
+      - [ACP2E-4929：製品の比較ページの属性ラベルに、現在のストアビューではなく別のストアビューからの翻訳が表示される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
     - v1.1.86 {#v1-1-86}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5245：新規顧客が最初の注文の配送と請求に同じ住所を使用すると、チェックアウト時に住所が2回表示される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)
+      - [ACP2E-3752：多くのインポート操作を実行すると、製品のインポートで未定義の配列キーエラーがスローされる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)
+      - [ACP2E-4973：店舗内配送から別の配送方法に切り替えると、店舗の住所がカートからクリアされません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)
       - [ACP2E-5134：共有カタログからバンドル製品を削除すると、バンドルがカートに残り、チェックアウト時にエラーが発生する](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)
       - [ACP2E-5118：翻訳キャッシュが無効になっている場合、ページビルダーのプレビューがレンダリングされない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)
       - [ACP2E-5061: カテゴリ マーチャンダイジングルールは、複数の値に一致する条件とAND条件を組み合わせることができません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)

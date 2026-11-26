@@ -49,9 +49,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4d61208c23f1d1fe38664a838149ba51958eddac
+source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '353'
 ht-degree: 0%
 ---
 
@@ -61,11 +61,11 @@ ht-degree: 0%
 
 QPT v1.1.85には次のパッチが含まれています。
 
-1. **ACP2E-4929**: **[!UICONTROL Compare Products]** ページの属性ラベルに、現在のストアビューではなく、別のストアビューからの翻訳が表示される問題を修正しました。
+1. **[ACP2E-4929](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)**：製品の比較ページの属性ラベルに、現在のストアビューではなく、別のストアビューからの翻訳が表示される問題を修正しました。
 1. **ACP2E-5075**: カテゴリ条件を持つ固定金額カート価格ルールが、ルールがバンドル親製品のみに一致する場合に、動的価格バンドル製品のすべての子に誤って割引が適用される問題を修正します。
 1. **ACP2E-5077**：同時`customerCart`件のGraphQL クエリまたは`POST /V1/carts/mine`件のREST リクエストで、アクティブなカートを持たない顧客に対して、重複したアクティブなカートが作成される問題を修正します。
 1. **ACP2E-5088**：顧客のセッションの有効期限が切れると、顧客の永続的なショッピングカートがクリアされる問題を修正します。
-1. **ACP2E-3991**: クライアント IP アドレスが正しく決定されない問題を修正します。
+1. **[ACP2E-3991](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-3991.md)**: クライアント IP アドレスが正しく決定されない問題を修正します。
 1. **ACP2E-5092**: **[!UICONTROL Company Profile]** ページと管理者顧客編集ページで、地域なしで保存された会社のアドレスに後でその国に地域が追加された場合にエラーが表示される問題を修正します。
 1. **ACP2E-5124**: **[!UICONTROL Validation Strategy]**&#x200B;が&#x200B;**[!UICONTROL Stop on Error]**&#x200B;に設定されている場合に、検証後に検証結果で&#x200B;**[!UICONTROL Import]** ボタンが引き続き利用できる問題を修正します。
 1. **AC-17456**：管理パネルの&#x200B;**[!UICONTROL Design Configuration]** ページで&#x200B;**[!UICONTROL Global]** スコープを編集すると、PHP 8.4および8.5で&#x200B;*HTTP 500* エラーが返される問題を修正しました。
