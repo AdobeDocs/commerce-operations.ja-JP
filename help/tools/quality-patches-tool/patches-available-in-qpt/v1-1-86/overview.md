@@ -4,9 +4,9 @@ description: このサブセクションでは、[!DNL Quality Patches Tool] （
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 22769f702de10db88f28a5d4218a4f4c5d91cf0a
+source-git-commit: f8cefa66cb9be57ac6441be28ee0898dbc4810f7
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '692'
 ht-degree: 0%
 ---
 # 概要：[!DNL Quality Patches Tool] （QPT） v1.1.86
@@ -26,8 +26,10 @@ QPT v1.1.86には、次のパッチが含まれています。
 1. **[ACP2E-5134](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)**：企業の共有カタログからバンドルに含まれる製品を削除すると、バンドル製品がショッピングカートに残り、カートとチェックアウト時にエラーが発生する問題を修正します。
 1. **[ACP2E-5118](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)**: **[!UICONTROL Translations]** キャッシュが無効になっている場合、[!DNL Page Builder] プレビューがレンダリングされない問題を修正します。
 1. **ACP2E-5146**：別のWeb サイトの顧客が管理者ユーザーと同じIDを持つ場合、特定のWeb サイトに制限された管理者ユーザーが顧客を削除できない問題を修正します。
-1. **ACP2E-5176**: [!DNL Google Analytics 4]から[!DNL Google Tag Manager]に送信されたe コマースイベントが[!DNL Universal Analytics]形式を使用し、複数のチェックアウトイベントを省略する問題を修正します。
+1. **[ACP2E-5176](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5176.md)**: Google Tag Managerを通じてGoogle Analytics 4に送信されたe コマースイベントがUniversal Analytics フォーマットを使用し、複数のチェックアウトイベントを省略する問題を修正します。
 1. **ACP2E-5185**: カテゴリーツリー内のカテゴリを移動すると、エラー`There was a category move error`が表示されるか、ストアに多数のURL書き換えが行われた場合に完了するのに数分かかる問題を修正します。
+1. **[ACP2E-4191](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4191.md)**: EAV タイプと属性のキャッシュが無効になっている場合に、特定のREST API リクエストが無限ループに入る問題を修正しました。
+1. **ACP2E-4973**: **[!UICONTROL In-Store Delivery]**&#x200B;から別の配信方法に切り替えても、関連付けられているストア アドレスがカートからクリアされない問題を修正します。
 1. **ACP2E-4191**: **[!UICONTROL EAV types and attributes]** キャッシュが無効になっている場合に、特定のREST API リクエストが無限ループに入る問題を修正します。
 1. **[ACP2E-4973](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)**：店舗内配信から別の配信方法に切り替えても、関連付けられた店舗アドレスがカートからクリアされない問題を修正します。
 1. **ACP2E-5221**：多くのストアと顧客グループを含むインストールで&#x200B;**[!UICONTROL Quick Order]**&#x200B;が有効になっている場合、**[!UICONTROL Catalog Product Permissions]** インデクサーが大幅に長くなる問題を修正します。
