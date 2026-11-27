@@ -4,9 +4,9 @@ description: このサブセクションでは、[!DNL Quality Patches Tool] （
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f8cefa66cb9be57ac6441be28ee0898dbc4810f7
+source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '742'
 ht-degree: 0%
 ---
 # 概要：[!DNL Quality Patches Tool] （QPT） v1.1.86
@@ -20,6 +20,8 @@ QPT v1.1.86には、次のパッチが含まれています。
 1. **[ACP2E-3094](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)**：多くの権限を持つカテゴリの&#x200B;**[!UICONTROL Category Permissions]**&#x200B;を表示または編集すると、ブラウザーが応答しなくなる問題を修正しました。
 1. **[ACP2E-5050](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)**：管理者でRMAを表示または保存すると、**[!UICONTROL Action Logs]** レポートにRMA番号が表示されない問題を修正します。
 1. **ACP2E-5057**: **[!UICONTROL Catalog Price Scope]**&#x200B;が&#x200B;**[!UICONTROL Website]**&#x200B;に設定されている場合に、バンドル製品の[!DNL GraphQL]件のクエリで、web サイト固有の価格ではなくグローバルバンドルオプション価格が返される問題を修正しました。
+1. **ACP2E-5061**: カテゴリ マーチャンダイジング ルールが`AND`条件を複数の値のいずれかに一致する条件と組み合わせることができない問題を修正します。
+1. **[ACP2E-5071](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5071.md)**：買い物客の買い物かごに既に利用可能な全数量が含まれている場合に、在庫の利用不可メッセージが商品ページに必ずしも表示されない問題を修正します。
 1. **[ACP2E-5061](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)**: カテゴリ マーチャンダイジング ルールが、複数の値のいずれかに一致する条件とAND条件を組み合わせることができない問題を修正します。
 1. **ACP2E-5071**：買い物客の買い物かごに既に利用可能な全数量が含まれている場合に、在庫の利用不可メッセージが商品ページに必ずしも表示されない問題を修正します。
 1. **ACP2E-5094**: `MAGENTO_DC_*`環境変数が設定されている場合にページの読み込みが大幅に遅くなる問題を修正します。
