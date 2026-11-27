@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerceで使用できるさまざまなツール
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
+source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
 workflow-type: tm+mt
-source-wordcount: '11345'
+source-wordcount: '11399'
 ht-degree: 0%
 ---
 
@@ -1104,6 +1104,9 @@ ht-degree: 0%
       - [ACP2E-4929：製品の比較ページの属性ラベルに、現在のストアビューではなく別のストアビューからの翻訳が表示される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
     - v1.1.86 {#v1-1-86}
       - [概要： [!DNL Quality Patches Tool]  （QPT） v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5071：買い物客の買い物かごに利用可能な全数量が含まれている場合、商品ページに「在庫切れ」メッセージが必ずしも表示されない](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5071.md)
+      - [ACP2E-5176: Google Tag Managerを通じてGoogle Analytics 4に送信されたe コマースイベントは、ユニバーサル分析フォーマットを使用し、チェックアウトイベントを省略します](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5176.md)
+      - [ACP2E-4191: EAV タイプと属性キャッシュが無効になっている場合、REST API リクエストは無限ループに入ります](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4191.md)
       - [ACP2E-5245：新規顧客が最初の注文の配送と請求に同じ住所を使用すると、チェックアウト時に住所が2回表示される](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)
       - [ACP2E-3752：多くのインポート操作を実行すると、製品のインポートで未定義の配列キーエラーがスローされる](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)
       - [ACP2E-4973：店舗内配送から別の配送方法に切り替えると、店舗の住所がカートからクリアされません](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)
