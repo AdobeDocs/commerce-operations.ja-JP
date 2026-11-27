@@ -4,7 +4,7 @@ description: このサブセクションでは、[!DNL Quality Patches Tool] （
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
+source-git-commit: 9e453ce98ac552d883469e20e65516be8ef02b4f
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 0%
@@ -44,6 +44,6 @@ QPT v1.1.86には、次のパッチが含まれています。
 1. **ACP2E-5295**：同じプロセスで&#x200B;**[!UICONTROL Inventory]** インデクサーの後に実行すると、並列製品価格のインデックス再作成がエラー`Fail in child process`で失敗する問題を修正します。
 1. **ACP2E-5298**: カート価格ルールへの表示専用アクセス権を持つ管理者ユーザーがクーポンコードを生成または削除できる問題を修正しました。
 1. **ACP2E-5333**: **[!UICONTROL is not]**&#x200B;演算子を使用し、1つ以上の値を持つ&#x200B;**[!UICONTROL Total Number of Orders]**&#x200B;条件で顧客セグメントを更新すると、エラー`Unknown operator specified`で失敗する問題を修正します。
-1. **ACP2E-5425**：顧客が同じ注文に対して重複した注文確認メールを受信する問題を修正します。
+1. **[ACP2E-5425](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5425.md)**：顧客が同じ注文に対して重複した注文確認メールを受信する問題を修正します。
 
 左側のメニューを使用して、特定のパッチページに移動します。
